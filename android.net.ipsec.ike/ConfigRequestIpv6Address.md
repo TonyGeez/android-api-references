@@ -19,7 +19,7 @@ Represents an IPv6 Internal Address request
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Inet6Address](../java/net/Inet6Address.md)? | [getAddress](../android/net/ipsec/ike/TunnelModeChildSessionParams.ConfigRequestIpv6Address.md))`()` Retrieves the requested internal IPv6 address |
+| abstract [Inet6Address](../java.net/Inet6Address.md)? | [getAddress](../android/net/ipsec/ike/TunnelModeChildSessionParams.ConfigRequestIpv6Address.md))`()` Retrieves the requested internal IPv6 address |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPrefixLength](../android/net/ipsec/ike/TunnelModeChildSessionParams.ConfigRequestIpv6Address.md))`()` Retrieves the prefix length |
 
 ## Public methods
@@ -36,7 +36,7 @@ Retrieves the requested internal IPv6 address
 
 | Return ||
 |---------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| [Inet6Address](../java/net/Inet6Address.md)? | The requested IPv6 address, or null if no specific internal address was requested |
+| [Inet6Address](../java.net/Inet6Address.md)? | The requested IPv6 address, or null if no specific internal address was requested |
 
 ### getPrefixLength
 

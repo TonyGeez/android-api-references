@@ -4,7 +4,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # AltitudeConverter
 
-Kotlin| [Java](../android/location/altitude/AltitudeConverter.md) 
+Kotlin| [Java](AltitudeConverter.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class AltitudeConverter
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.location.altitude.AltitudeConverter](../android/location/altitude/AltitudeConverter.md) |
+| ↳ | [android.location.altitude.AltitudeConverter](AltitudeConverter.md) |
 
 Converts altitudes reported above the World Geodetic System 1984 (WGS84) reference ellipsoid into ones above Mean Sea Level.
 
@@ -30,12 +30,12 @@ Brian Julian and Michael Angermann.
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [AltitudeConverter](../android/location/altitude/AltitudeConverter.md))`()` Creates an instance that manages an independent cache to optimized conversions of locations in proximity to one another. |
+| [AltitudeConverter](AltitudeConverter.md))`()` Creates an instance that manages an independent cache to optimized conversions of locations in proximity to one another. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addMslAltitudeToLocation](../android/location/altitude/AltitudeConverter.md))`(`context:` ` [Context](../android/content/Context.md)`, `location:` ` [Location](../android/location/Location.md)`)` Adds a Mean Sea Level altitude to the`location`. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [tryAddMslAltitudeToLocation](../android/location/altitude/AltitudeConverter.md))`(`location:` ` [Location](../android/location/Location.md)`)` Same as [addMslAltitudeToLocation(android.content.Context,android.location.Location)](../android/location/altitude/AltitudeConverter.md))except that this method can be called on the main thread as data will not be loaded from raw assets. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addMslAltitudeToLocation](AltitudeConverter.md))`(`context:` ` [Context](../android.content/Context.md)`, `location:` ` [Location](../android.location/Location.md)`)` Adds a Mean Sea Level altitude to the`location`. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [tryAddMslAltitudeToLocation](AltitudeConverter.md))`(`location:` ` [Location](../android.location/Location.md)`)` Same as [addMslAltitudeToLocation(android.content.Context,android.location.Location)](AltitudeConverter.md))except that this method can be called on the main thread as data will not be loaded from raw assets. |
 
 ## Public constructors
 
@@ -69,8 +69,8 @@ This method may take several seconds to complete, so it should only be called fr
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](../android/content/Context.md):This value cannot be`null`. |
-| `location` | [Location](../android/location/Location.md):This value cannot be`null`. |
+| `context` | [Context](../android.content/Context.md):This value cannot be`null`. |
+| `location` | [Location](../android.location/Location.md):This value cannot be`null`. |
 
 | Exceptions ||
 |--------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -85,9 +85,9 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun tryAddMslAltitudeToLocation(location: Location): Boolean
 ```
 
-Same as [addMslAltitudeToLocation(android.content.Context,android.location.Location)](../android/location/altitude/AltitudeConverter.md))except that this method can be called on the main thread as data will not be loaded from raw assets. Returns true if a Mean Sea Level altitude is added to the`location`; otherwise, returns false and leaves the`location`unchanged.
+Same as [addMslAltitudeToLocation(android.content.Context,android.location.Location)](AltitudeConverter.md))except that this method can be called on the main thread as data will not be loaded from raw assets. Returns true if a Mean Sea Level altitude is added to the`location`; otherwise, returns false and leaves the`location`unchanged.
 
-Prior calls to [addMslAltitudeToLocation(android.content.Context,android.location.Location)](../android/location/altitude/AltitudeConverter.md))off the main thread are necessary to load data from raw assets. Example code on the main thread is as follows: 
+Prior calls to [addMslAltitudeToLocation(android.content.Context,android.location.Location)](AltitudeConverter.md))off the main thread are necessary to load data from raw assets. Example code on the main thread is as follows: 
 
 ```kotlin
 <code>if (!mAltitudeConverter.tryAddMslAltitudeToLocation(location)) {
@@ -110,4 +110,4 @@ Prior calls to [addMslAltitudeToLocation(android.content.Context,android.locatio
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------|
-| `location` | [Location](../android/location/Location.md):This value cannot be`null`. |
+| `location` | [Location](../android.location/Location.md):This value cannot be`null`. |

@@ -8,9 +8,9 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 interface CommonDataSource
 ```
 
-| [javax.sql.CommonDataSource](../javax/sql/CommonDataSource.md) |
+| [javax.sql.CommonDataSource](CommonDataSource.md) |
 
-| Known Direct Subclasses [ConnectionPoolDataSource](../javax/sql/ConnectionPoolDataSource.md), [DataSource](../javax/sql/DataSource.md) |---------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------| | [ConnectionPoolDataSource](../javax/sql/ConnectionPoolDataSource.md) | A factory for`PooledConnection`objects. | | [DataSource](../javax/sql/DataSource.md) | A factory for connections to the physical data source that this`DataSource`object represents. | |
+| Known Direct Subclasses [ConnectionPoolDataSource](ConnectionPoolDataSource.md), [DataSource](DataSource.md) |---------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------| | [ConnectionPoolDataSource](ConnectionPoolDataSource.md) | A factory for`PooledConnection`objects. | | [DataSource](DataSource.md) | A factory for connections to the physical data source that this`DataSource`object represents. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Interface that defines the methods which are common between`DataSource`,`XADataSource`and`ConnectionPoolDataSource`.
@@ -21,12 +21,12 @@ Interface that defines the methods which are common between`DataSource`,`XADataS
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [PrintWriter](../java/io/PrintWriter.md)! | [getLogWriter](../javax/sql/CommonDataSource.md))`()` Retrieves the log writer for this`DataSource`object. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLoginTimeout](../javax/sql/CommonDataSource.md))`()` Gets the maximum time in seconds that this data source can wait while attempting to connect to a database. |
-| abstract [Logger](../java/util/logging/Logger.md)! | [getParentLogger](../javax/sql/CommonDataSource.md))`()` Return the parent Logger of all the Loggers used by this data source. |
+| abstract [PrintWriter](../java.io/PrintWriter.md)! | [getLogWriter](CommonDataSource.md))`()` Retrieves the log writer for this`DataSource`object. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLoginTimeout](CommonDataSource.md))`()` Gets the maximum time in seconds that this data source can wait while attempting to connect to a database. |
+| abstract [Logger](../java.util.logging/Logger.md)! | [getParentLogger](CommonDataSource.md))`()` Return the parent Logger of all the Loggers used by this data source. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLogWriter](../javax/sql/CommonDataSource.md))`(`out:` ` [PrintWriter](../java/io/PrintWriter.md)!`)` Sets the log writer for this`DataSource`object to the given`java.io.PrintWriter`object. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLoginTimeout](../javax/sql/CommonDataSource.md))`(`seconds:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the maximum time in seconds that this data source will wait while attempting to connect to a database. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLogWriter](CommonDataSource.md))`(`out:` ` [PrintWriter](../java.io/PrintWriter.md)!`)` Sets the log writer for this`DataSource`object to the given`java.io.PrintWriter`object. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLoginTimeout](CommonDataSource.md))`(`seconds:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the maximum time in seconds that this data source will wait while attempting to connect to a database. |
 
 ## Public methods
 
@@ -44,7 +44,7 @@ The log writer is a character output stream to which all logging and tracing mes
 
 | Return ||
 |------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| [PrintWriter](../java/io/PrintWriter.md)! | the log writer for this data source or null if logging is disabled |
+| [PrintWriter](../java.io/PrintWriter.md)! | the log writer for this data source or null if logging is disabled |
 
 | Exceptions ||
 |-------------------------|-----------------------------------|
@@ -52,7 +52,7 @@ The log writer is a character output stream to which all logging and tracing mes
 
 **See Also**
 
-- [#setLogWriter](../javax/sql/CommonDataSource.md)) 
+- [#setLogWriter](CommonDataSource.md)) 
 
 ### getLoginTimeout
 
@@ -74,7 +74,7 @@ Gets the maximum time in seconds that this data source can wait while attempting
 
 **See Also**
 
-- [#setLoginTimeout](../javax/sql/CommonDataSource.md)) 
+- [#setLoginTimeout](CommonDataSource.md)) 
 
 ### getParentLogger
 
@@ -88,7 +88,7 @@ Return the parent Logger of all the Loggers used by this data source. This shoul
 
 | Return ||
 |------------------------------------------------------------------------------------------|----------------------------------------|
-| [Logger](../java/util/logging/Logger.md)! | the parent Logger for this data source |
+| [Logger](../java.util.logging/Logger.md)! | the parent Logger for this data source |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------------|
@@ -108,7 +108,7 @@ The log writer is a character output stream to which all logging and tracing mes
 
 | Parameters ||
 |-------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| `out` | [PrintWriter](../java/io/PrintWriter.md)!:the new log writer; to disable logging, set to null |
+| `out` | [PrintWriter](../java.io/PrintWriter.md)!:the new log writer; to disable logging, set to null |
 
 | Exceptions ||
 |-------------------------|-----------------------------------|
@@ -116,7 +116,7 @@ The log writer is a character output stream to which all logging and tracing mes
 
 **See Also**
 
-- [#getLogWriter](../javax/sql/CommonDataSource.md)) 
+- [#getLogWriter](CommonDataSource.md)) 
 
 ### setLoginTimeout
 
@@ -138,4 +138,4 @@ Sets the maximum time in seconds that this data source will wait while attemptin
 
 **See Also**
 
-- [#getLoginTimeout](../javax/sql/CommonDataSource.md))
+- [#getLoginTimeout](CommonDataSource.md))

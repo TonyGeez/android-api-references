@@ -4,7 +4,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 
 # AudioAttributes
 
-Kotlin| [Java](../android/media/AudioAttributes.md) 
+Kotlin| [Java](AudioAttributes.md) 
 | --- | --- |
 
 ```
@@ -13,92 +13,92 @@ class AudioAttributes : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.AudioAttributes](../android/media/AudioAttributes.md) |
+| ↳ | [android.media.AudioAttributes](AudioAttributes.md) |
 
 A class to encapsulate a collection of attributes describing information about an audio stream.
 
-`AudioAttributes`supersede the notion of stream types (see for instance [AudioManager.STREAM_MUSIC](../android/media/AudioManager.md) or [AudioManager.STREAM_ALARM](../android/media/AudioManager.md)) for defining the behavior of audio playback. Attributes allow an application to specify more information than is conveyed in a stream type by allowing the application to define:
+`AudioAttributes`supersede the notion of stream types (see for instance [AudioManager.STREAM_MUSIC](AudioManager.md) or [AudioManager.STREAM_ALARM](AudioManager.md)) for defining the behavior of audio playback. Attributes allow an application to specify more information than is conveyed in a stream type by allowing the application to define:
 
-- usage: "why" you are playing a sound, what is this sound used for. This is achieved with the "usage" information. Examples of usage are [USAGE_MEDIA](../android/media/AudioAttributes.md) and [USAGE_ALARM](../android/media/AudioAttributes.md). These two examples are the closest to stream types, but more detailed use cases are available. Usage information is more expressive than a stream type, and allows certain platforms or routing policies to use this information for more refined volume or routing decisions. Usage is the most important information to supply in`AudioAttributes`and it is recommended to build any instance with this information supplied, see [AudioAttributes.Builder](../android/media/AudioAttributes.Builder.md) for exceptions.
-- content type: "what" you are playing. The content type expresses the general category of the content. This information is optional. But in case it is known (for instance [CONTENT_TYPE_MOVIE](../android/media/AudioAttributes.md) for a movie streaming service or [CONTENT_TYPE_MUSIC](../android/media/AudioAttributes.md) for a music playback application) this information might be used by the audio framework to selectively configure some audio post-processing blocks.
+- usage: "why" you are playing a sound, what is this sound used for. This is achieved with the "usage" information. Examples of usage are [USAGE_MEDIA](AudioAttributes.md) and [USAGE_ALARM](AudioAttributes.md). These two examples are the closest to stream types, but more detailed use cases are available. Usage information is more expressive than a stream type, and allows certain platforms or routing policies to use this information for more refined volume or routing decisions. Usage is the most important information to supply in`AudioAttributes`and it is recommended to build any instance with this information supplied, see [AudioAttributes.Builder](../android/media/AudioAttributes.Builder.md) for exceptions.
+- content type: "what" you are playing. The content type expresses the general category of the content. This information is optional. But in case it is known (for instance [CONTENT_TYPE_MOVIE](AudioAttributes.md) for a movie streaming service or [CONTENT_TYPE_MUSIC](AudioAttributes.md) for a music playback application) this information might be used by the audio framework to selectively configure some audio post-processing blocks.
 - flags: "how" is playback to be affected, see the flag definitions for the specific playback behaviors they control.
 
-`AudioAttributes`are used for example in one of the [AudioTrack](../android/media/AudioTrack.md) constructors (see [AudioTrack.AudioTrack(AudioAttributes, AudioFormat, int, int, int)](../android/media/AudioTrack.md))), to configure a [MediaPlayer](../android/media/MediaPlayer.md)(see [MediaPlayer.setAudioAttributes(AudioAttributes)](../android/media/MediaPlayer.md))or a [android.app.Notification](../android/app/Notification.md)(see [android.app.Notification#audioAttributes](../android/app/Notification.md)). An`AudioAttributes`instance is built through its builder, [AudioAttributes.Builder](../android/media/AudioAttributes.Builder.md).
+`AudioAttributes`are used for example in one of the [AudioTrack](AudioTrack.md) constructors (see [AudioTrack.AudioTrack(AudioAttributes, AudioFormat, int, int, int)](AudioTrack.md))), to configure a [MediaPlayer](MediaPlayer.md)(see [MediaPlayer.setAudioAttributes(AudioAttributes)](MediaPlayer.md))or a [android.app.Notification](../android.app/Notification.md)(see [android.app.Notification#audioAttributes](../android.app/Notification.md)). An`AudioAttributes`instance is built through its builder, [AudioAttributes.Builder](../android/media/AudioAttributes.Builder.md).
 
 ## Summary
 
 | Nested classes ||
 |---|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](../android/media/AudioAttributes.Builder.md) Builder class for [AudioAttributes](../android/media/AudioAttributes.md) objects. |
+| | [Builder](../android/media/AudioAttributes.Builder.md) Builder class for [AudioAttributes](AudioAttributes.md) objects. |
 
 | Constants ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ALLOW_CAPTURE_BY_ALL](../android/media/AudioAttributes.md) Indicates that the audio may be captured by any app. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ALLOW_CAPTURE_BY_NONE](../android/media/AudioAttributes.md) Indicates that the audio is not to be recorded by any app, even if it is a system app. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ALLOW_CAPTURE_BY_SYSTEM](../android/media/AudioAttributes.md) Indicates that the audio may only be captured by system apps. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ALLOW_CAPTURE_BY_ALL](AudioAttributes.md) Indicates that the audio may be captured by any app. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ALLOW_CAPTURE_BY_NONE](AudioAttributes.md) Indicates that the audio is not to be recorded by any app, even if it is a system app. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ALLOW_CAPTURE_BY_SYSTEM](AudioAttributes.md) Indicates that the audio may only be captured by system apps. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENT_TYPE_MOVIE](../android/media/AudioAttributes.md) Content type value to use when the content type is the audio typically accompanying a movie or TV program, containing a mix of dialogue, music and sound effects. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENT_TYPE_MUSIC](../android/media/AudioAttributes.md) Content type value to use when the content type is music. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENT_TYPE_SONIFICATION](../android/media/AudioAttributes.md) Content type value to use when the content type is a sound used to accompany a user action, such as a beep or sound effect expressing a key click, or event, such as the type of a sound for a bonus being received in a game. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENT_TYPE_MOVIE](AudioAttributes.md) Content type value to use when the content type is the audio typically accompanying a movie or TV program, containing a mix of dialogue, music and sound effects. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENT_TYPE_MUSIC](AudioAttributes.md) Content type value to use when the content type is music. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENT_TYPE_SONIFICATION](AudioAttributes.md) Content type value to use when the content type is a sound used to accompany a user action, such as a beep or sound effect expressing a key click, or event, such as the type of a sound for a bonus being received in a game. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENT_TYPE_SPEECH](../android/media/AudioAttributes.md) Content type value to use when the content type is speech. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENT_TYPE_UNKNOWN](../android/media/AudioAttributes.md) Content type value to use when the content type is unknown, or other than the ones defined. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_AUDIBILITY_ENFORCED](../android/media/AudioAttributes.md) Flag defining a behavior where the audibility of the sound will be ensured by the system. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENT_TYPE_SPEECH](AudioAttributes.md) Content type value to use when the content type is speech. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENT_TYPE_UNKNOWN](AudioAttributes.md) Content type value to use when the content type is unknown, or other than the ones defined. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_AUDIBILITY_ENFORCED](AudioAttributes.md) Flag defining a behavior where the audibility of the sound will be ensured by the system. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_HW_AV_SYNC](../android/media/AudioAttributes.md) Flag requesting the use of an output stream supporting hardware A/V synchronization. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_LOW_LATENCY](../android/media/AudioAttributes.md) Flag requesting a low latency path when creating an AudioTrack. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SPATIALIZATION_BEHAVIOR_AUTO](../android/media/AudioAttributes.md) Constant indicating the audio content associated with these attributes will follow the default platform behavior with regards to which content will be spatialized or not. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_HW_AV_SYNC](AudioAttributes.md) Flag requesting the use of an output stream supporting hardware A/V synchronization. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_LOW_LATENCY](AudioAttributes.md) Flag requesting a low latency path when creating an AudioTrack. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SPATIALIZATION_BEHAVIOR_AUTO](AudioAttributes.md) Constant indicating the audio content associated with these attributes will follow the default platform behavior with regards to which content will be spatialized or not. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SPATIALIZATION_BEHAVIOR_NEVER](../android/media/AudioAttributes.md) Constant indicating the audio content associated with these attributes should never be virtualized. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USAGE_ALARM](../android/media/AudioAttributes.md) Usage value to use when the usage is an alarm (e.g. wake-up alarm). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USAGE_ASSISTANCE_ACCESSIBILITY](../android/media/AudioAttributes.md) Usage value to use when the usage is for accessibility, such as with a screen reader. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SPATIALIZATION_BEHAVIOR_NEVER](AudioAttributes.md) Constant indicating the audio content associated with these attributes should never be virtualized. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USAGE_ALARM](AudioAttributes.md) Usage value to use when the usage is an alarm (e.g. wake-up alarm). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USAGE_ASSISTANCE_ACCESSIBILITY](AudioAttributes.md) Usage value to use when the usage is for accessibility, such as with a screen reader. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USAGE_ASSISTANCE_NAVIGATION_GUIDANCE](../android/media/AudioAttributes.md) Usage value to use when the usage is driving or navigation directions. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USAGE_ASSISTANCE_SONIFICATION](../android/media/AudioAttributes.md) Usage value to use when the usage is sonification, such as with user interface sounds. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USAGE_ASSISTANT](../android/media/AudioAttributes.md) Usage value to use for audio responses to user queries, audio instructions or help utterances. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USAGE_ASSISTANCE_NAVIGATION_GUIDANCE](AudioAttributes.md) Usage value to use when the usage is driving or navigation directions. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USAGE_ASSISTANCE_SONIFICATION](AudioAttributes.md) Usage value to use when the usage is sonification, such as with user interface sounds. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USAGE_ASSISTANT](AudioAttributes.md) Usage value to use for audio responses to user queries, audio instructions or help utterances. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USAGE_GAME](../android/media/AudioAttributes.md) Usage value to use when the usage is for game audio. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USAGE_MEDIA](../android/media/AudioAttributes.md) Usage value to use when the usage is media, such as music, or movie soundtracks. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USAGE_NOTIFICATION](../android/media/AudioAttributes.md) Usage value to use when the usage is notification. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USAGE_GAME](AudioAttributes.md) Usage value to use when the usage is for game audio. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USAGE_MEDIA](AudioAttributes.md) Usage value to use when the usage is media, such as music, or movie soundtracks. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USAGE_NOTIFICATION](AudioAttributes.md) Usage value to use when the usage is notification. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USAGE_NOTIFICATION_COMMUNICATION_DELAYED](../android/media/AudioAttributes.md) Usage value to use when the usage is notification for a non-immediate type of communication such as e-mail. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USAGE_NOTIFICATION_COMMUNICATION_INSTANT](../android/media/AudioAttributes.md) Usage value to use when the usage is notification for an "instant" communication such as a chat, or SMS. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USAGE_NOTIFICATION_COMMUNICATION_REQUEST](../android/media/AudioAttributes.md) Usage value to use when the usage is a request to enter/end a communication, such as a VoIP communication or video-conference. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USAGE_NOTIFICATION_COMMUNICATION_DELAYED](AudioAttributes.md) Usage value to use when the usage is notification for a non-immediate type of communication such as e-mail. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USAGE_NOTIFICATION_COMMUNICATION_INSTANT](AudioAttributes.md) Usage value to use when the usage is notification for an "instant" communication such as a chat, or SMS. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USAGE_NOTIFICATION_COMMUNICATION_REQUEST](AudioAttributes.md) Usage value to use when the usage is a request to enter/end a communication, such as a VoIP communication or video-conference. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USAGE_NOTIFICATION_EVENT](../android/media/AudioAttributes.md) Usage value to use when the usage is to attract the user's attention, such as a reminder or low battery warning. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USAGE_NOTIFICATION_RINGTONE](../android/media/AudioAttributes.md) Usage value to use when the usage is telephony ringtone. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USAGE_UNKNOWN](../android/media/AudioAttributes.md) Usage value to use when the usage is unknown. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USAGE_NOTIFICATION_EVENT](AudioAttributes.md) Usage value to use when the usage is to attract the user's attention, such as a reminder or low battery warning. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USAGE_NOTIFICATION_RINGTONE](AudioAttributes.md) Usage value to use when the usage is telephony ringtone. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USAGE_UNKNOWN](AudioAttributes.md) Usage value to use when the usage is unknown. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USAGE_VOICE_COMMUNICATION](../android/media/AudioAttributes.md) Usage value to use when the usage is voice communications, such as telephony or VoIP. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USAGE_VOICE_COMMUNICATION_SIGNALLING](../android/media/AudioAttributes.md) Usage value to use when the usage is in-call signalling, such as with a "busy" beep, or DTMF tones. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USAGE_VOICE_COMMUNICATION](AudioAttributes.md) Usage value to use when the usage is voice communications, such as telephony or VoIP. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USAGE_VOICE_COMMUNICATION_SIGNALLING](AudioAttributes.md) Usage value to use when the usage is in-call signalling, such as with a "busy" beep, or DTMF tones. |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android.os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android.os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android.os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [areHapticChannelsMuted](../android/media/AudioAttributes.md))`()` Return if haptic channels are muted. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/media/AudioAttributes.md))`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/media/AudioAttributes.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [areHapticChannelsMuted](AudioAttributes.md))`()` Return if haptic channels are muted. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](AudioAttributes.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](AudioAttributes.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAllowedCapturePolicy](../android/media/AudioAttributes.md))`()` Return the capture policy. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getContentType](../android/media/AudioAttributes.md))`()` Return the content type. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFlags](../android/media/AudioAttributes.md))`()` Return the flags. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAllowedCapturePolicy](AudioAttributes.md))`()` Return the capture policy. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getContentType](AudioAttributes.md))`()` Return the content type. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFlags](AudioAttributes.md))`()` Return the flags. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSpatializationBehavior](../android/media/AudioAttributes.md))`()` Return the behavior affecting whether spatialization will be used. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getUsage](../android/media/AudioAttributes.md))`()` Return the usage. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getVolumeControlStream](../android/media/AudioAttributes.md))`()` Returns the stream type matching this`AudioAttributes`instance for volume control. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSpatializationBehavior](AudioAttributes.md))`()` Return the behavior affecting whether spatialization will be used. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getUsage](AudioAttributes.md))`()` Return the usage. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getVolumeControlStream](AudioAttributes.md))`()` Returns the stream type matching this`AudioAttributes`instance for volume control. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/media/AudioAttributes.md))`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isContentSpatialized](../android/media/AudioAttributes.md))`()` Return true if the audio content associated with these attributes has already been spatialized, that is it has already been processed to offer a binaural or transaural immersive audio experience. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/media/AudioAttributes.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](AudioAttributes.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isContentSpatialized](AudioAttributes.md))`()` Return true if the audio content associated with these attributes has already been spatialized, that is it has already been processed to offer a binaural or transaural immersive audio experience. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](AudioAttributes.md))`()` <br /> |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/media/AudioAttributes.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](AudioAttributes.md))`(`dest:` ` [Parcel](../android.os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [AudioAttributes](../android/media/AudioAttributes.md)!\> | [CREATOR](../android/media/AudioAttributes.md) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [AudioAttributes](AudioAttributes.md)!\> | [CREATOR](AudioAttributes.md) <br /> |
 
 ## Constants
 
@@ -110,7 +110,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 static val ALLOW_CAPTURE_BY_ALL: Int
 ```
 
-Indicates that the audio may be captured by any app. For privacy, the following usages cannot be recorded: VOICE_COMMUNICATION\*, USAGE_NOTIFICATION\*, USAGE_ASSISTANCE\* and USAGE_ASSISTANT. On [android.os.Build.VERSION_CODES#Q](../android/os/Build.VERSION_CODES.md), this means only [USAGE_UNKNOWN](../android/media/AudioAttributes.md), [USAGE_MEDIA](../android/media/AudioAttributes.md) and [USAGE_GAME](../android/media/AudioAttributes.md) may be captured. See [android.media.projection.MediaProjection](../android/media/projection/MediaProjection.md) and [Builder.setAllowedCapturePolicy](../android/media/AudioAttributes.Builder.md)). 
+Indicates that the audio may be captured by any app. For privacy, the following usages cannot be recorded: VOICE_COMMUNICATION\*, USAGE_NOTIFICATION\*, USAGE_ASSISTANCE\* and USAGE_ASSISTANT. On [android.os.Build.VERSION_CODES#Q](../android/os/Build.VERSION_CODES.md), this means only [USAGE_UNKNOWN](AudioAttributes.md), [USAGE_MEDIA](AudioAttributes.md) and [USAGE_GAME](AudioAttributes.md) may be captured. See [android.media.projection.MediaProjection](../android.media.projection/MediaProjection.md) and [Builder.setAllowedCapturePolicy](../android/media/AudioAttributes.Builder.md)). 
 
  Value: 1
 
@@ -122,7 +122,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 static val ALLOW_CAPTURE_BY_NONE: Int
 ```
 
-Indicates that the audio is not to be recorded by any app, even if it is a system app. It is encouraged to use [ALLOW_CAPTURE_BY_SYSTEM](../android/media/AudioAttributes.md) instead of this value as system apps provide significant and useful features for the user (such as live captioning and accessibility). See [Builder.setAllowedCapturePolicy](../android/media/AudioAttributes.Builder.md)). 
+Indicates that the audio is not to be recorded by any app, even if it is a system app. It is encouraged to use [ALLOW_CAPTURE_BY_SYSTEM](AudioAttributes.md) instead of this value as system apps provide significant and useful features for the user (such as live captioning and accessibility). See [Builder.setAllowedCapturePolicy](../android/media/AudioAttributes.Builder.md)). 
 
  Value: 3
 
@@ -233,9 +233,9 @@ Deprecated in [API level 26](https://developer.android.com/guide/topics/manifest
 static val FLAG_LOW_LATENCY: Int
 ```
 
-**Deprecated:** *Use [AudioTrack.Builder.setPerformanceMode(int)](../android/media/AudioTrack.Builder.md))with [AudioTrack.PERFORMANCE_MODE_LOW_LATENCY](../android/media/AudioTrack.md) to control performance.*
+**Deprecated:** *Use [AudioTrack.Builder.setPerformanceMode(int)](../android/media/AudioTrack.Builder.md))with [AudioTrack.PERFORMANCE_MODE_LOW_LATENCY](AudioTrack.md) to control performance.*
 
-Flag requesting a low latency path when creating an AudioTrack. When using this flag, the sample rate must match the native sample rate of the device. Effects processing is also unavailable. Note that if this flag is used without specifying a bufferSizeInBytes then the AudioTrack's actual buffer size may be too small. It is recommended that a fairly large buffer should be specified when the AudioTrack is created. Then the actual size can be reduced by calling [AudioTrack.setBufferSizeInFrames(int)](../android/media/AudioTrack.md)). The buffer size can be optimized by lowering it after each write() call until the audio glitches, which is detected by calling [AudioTrack.getUnderrunCount()](../android/media/AudioTrack.md)). Then the buffer size can be increased until there are no glitches. This tuning step should be done while playing silence. This technique provides a compromise between latency and glitch rate. 
+Flag requesting a low latency path when creating an AudioTrack. When using this flag, the sample rate must match the native sample rate of the device. Effects processing is also unavailable. Note that if this flag is used without specifying a bufferSizeInBytes then the AudioTrack's actual buffer size may be too small. It is recommended that a fairly large buffer should be specified when the AudioTrack is created. Then the actual size can be reduced by calling [AudioTrack.setBufferSizeInFrames(int)](AudioTrack.md)). The buffer size can be optimized by lowering it after each write() call until the audio glitches, which is detected by calling [AudioTrack.getUnderrunCount()](AudioTrack.md)). Then the buffer size can be increased until there are no glitches. This tuning step should be done while playing silence. This technique provides a compromise between latency and glitch rate. 
 
  Value: 256
 
@@ -254,7 +254,7 @@ Constant indicating the audio content associated with these attributes will foll
 **See Also**
 
 - <https://developer.android.com/reference/kotlin/android/media/AudioAttributes#getSpatializationBehavior()>
-- [android.media.Spatializer](../android/media/Spatializer.md) 
+- [android.media.Spatializer](Spatializer.md) 
 
 ### SPATIALIZATION_BEHAVIOR_NEVER
 
@@ -271,7 +271,7 @@ Constant indicating the audio content associated with these attributes should ne
 **See Also**
 
 - <https://developer.android.com/reference/kotlin/android/media/AudioAttributes#getSpatializationBehavior()>
-- [android.media.Spatializer](../android/media/Spatializer.md) 
+- [android.media.Spatializer](Spatializer.md) 
 
 ### USAGE_ALARM
 
@@ -378,7 +378,7 @@ Deprecated in [API level 33](https://developer.android.com/guide/topics/manifest
 static val USAGE_NOTIFICATION_COMMUNICATION_DELAYED: Int
 ```
 
-**Deprecated:** *Use [USAGE_NOTIFICATION](../android/media/AudioAttributes.md) which is handled the same way as this usage by the audio framework*
+**Deprecated:** *Use [USAGE_NOTIFICATION](AudioAttributes.md) which is handled the same way as this usage by the audio framework*
 
 Usage value to use when the usage is notification for a non-immediate type of communication such as e-mail. 
 
@@ -393,7 +393,7 @@ Deprecated in [API level 33](https://developer.android.com/guide/topics/manifest
 static val USAGE_NOTIFICATION_COMMUNICATION_INSTANT: Int
 ```
 
-**Deprecated:** *Use [USAGE_NOTIFICATION](../android/media/AudioAttributes.md) which is handled the same way as this usage by the audio framework*
+**Deprecated:** *Use [USAGE_NOTIFICATION](AudioAttributes.md) which is handled the same way as this usage by the audio framework*
 
 Usage value to use when the usage is notification for an "instant" communication such as a chat, or SMS. 
 
@@ -408,7 +408,7 @@ Deprecated in [API level 33](https://developer.android.com/guide/topics/manifest
 static val USAGE_NOTIFICATION_COMMUNICATION_REQUEST: Int
 ```
 
-**Deprecated:** *Use [USAGE_NOTIFICATION](../android/media/AudioAttributes.md) which is handled the same way as this usage by the audio framework*
+**Deprecated:** *Use [USAGE_NOTIFICATION](AudioAttributes.md) which is handled the same way as this usage by the audio framework*
 
 Usage value to use when the usage is a request to enter/end a communication, such as a VoIP communication or video-conference. 
 
@@ -500,7 +500,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) |
 
 ### equals
 
@@ -530,7 +530,7 @@ Return the capture policy.
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the capture policy set by [Builder.setAllowedCapturePolicy(int)](../android/media/AudioAttributes.Builder.md))or the default if it was not called. Value is [android.media.AudioAttributes#ALLOW_CAPTURE_BY_ALL](../android/media/AudioAttributes.md), [android.media.AudioAttributes#ALLOW_CAPTURE_BY_SYSTEM](../android/media/AudioAttributes.md), or [android.media.AudioAttributes#ALLOW_CAPTURE_BY_NONE](../android/media/AudioAttributes.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the capture policy set by [Builder.setAllowedCapturePolicy(int)](../android/media/AudioAttributes.Builder.md))or the default if it was not called. Value is [android.media.AudioAttributes#ALLOW_CAPTURE_BY_ALL](AudioAttributes.md), [android.media.AudioAttributes#ALLOW_CAPTURE_BY_SYSTEM](AudioAttributes.md), or [android.media.AudioAttributes#ALLOW_CAPTURE_BY_NONE](AudioAttributes.md) |
 
 ### getContentType
 
@@ -572,7 +572,7 @@ Return the behavior affecting whether spatialization will be used.
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the spatialization behavior Value is [android.media.AudioAttributes#SPATIALIZATION_BEHAVIOR_AUTO](../android/media/AudioAttributes.md), or [android.media.AudioAttributes#SPATIALIZATION_BEHAVIOR_NEVER](../android/media/AudioAttributes.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the spatialization behavior Value is [android.media.AudioAttributes#SPATIALIZATION_BEHAVIOR_AUTO](AudioAttributes.md), or [android.media.AudioAttributes#SPATIALIZATION_BEHAVIOR_NEVER](AudioAttributes.md) |
 
 ### getUsage
 
@@ -596,12 +596,12 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 fun getVolumeControlStream(): Int
 ```
 
-Returns the stream type matching this`AudioAttributes`instance for volume control. Use this method to derive the stream type needed to configure the volume control slider in an [android.app.Activity](../android/app/Activity.md) with [android.app.Activity#setVolumeControlStream(int)](../android/app/Activity.md))for playback conducted with these attributes. 
-Do not use this method to set the stream type on an audio player object (e.g. [AudioTrack](../android/media/AudioTrack.md), [MediaPlayer](../android/media/MediaPlayer.md)) as this is deprecated, use`AudioAttributes`instead.
+Returns the stream type matching this`AudioAttributes`instance for volume control. Use this method to derive the stream type needed to configure the volume control slider in an [android.app.Activity](../android.app/Activity.md) with [android.app.Activity#setVolumeControlStream(int)](../android.app/Activity.md))for playback conducted with these attributes. 
+Do not use this method to set the stream type on an audio player object (e.g. [AudioTrack](AudioTrack.md), [MediaPlayer](MediaPlayer.md)) as this is deprecated, use`AudioAttributes`instead.
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a valid stream type for`Activity`or stream volume control that matches the attributes, or [AudioManager.USE_DEFAULT_STREAM_TYPE](../android/media/AudioManager.md) if there isn't a direct match. Note that`USE_DEFAULT_STREAM_TYPE`is not a valid value for [AudioManager.setStreamVolume(int, int, int)](../android/media/AudioManager.md)). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a valid stream type for`Activity`or stream volume control that matches the attributes, or [AudioManager.USE_DEFAULT_STREAM_TYPE](AudioManager.md) if there isn't a direct match. Note that`USE_DEFAULT_STREAM_TYPE`is not a valid value for [AudioManager.setStreamVolume(int, int, int)](AudioManager.md)). |
 
 ### hashCode
 
@@ -654,8 +654,8 @@ fun writeToParcel(
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](../android/os/Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android.os/Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

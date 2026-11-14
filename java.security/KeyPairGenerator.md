@@ -10,8 +10,8 @@ abstract class KeyPairGenerator : KeyPairGeneratorSpi
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.security.KeyPairGeneratorSpi](../java/security/KeyPairGeneratorSpi.md) ||
-| | ↳ | [java.security.KeyPairGenerator](../java/security/KeyPairGenerator.md) |
+| ↳ | [java.security.KeyPairGeneratorSpi](KeyPairGeneratorSpi.md) ||
+| | ↳ | [java.security.KeyPairGenerator](KeyPairGenerator.md) |
 
 The KeyPairGenerator class is used to generate pairs of public and private keys. Key pair generators are constructed using the`getInstance`factory methods (static methods that return instances of a given class).
 
@@ -21,14 +21,14 @@ There are two ways to generate a key pair: in an algorithm-independent manner, a
 
 - **Algorithm-Independent Initialization**
 
- All key pair generators share the concepts of a keysize and a source of randomness. The keysize is interpreted differently for different algorithms (e.g., in the case of the*DSA* algorithm, the keysize corresponds to the length of the modulus). There is an [initialize](../java/security/KeyPairGenerator.md))method in this KeyPairGenerator class that takes these two universally shared types of arguments. There is also one that takes just a`keysize`argument, and uses the`SecureRandom`implementation of the highest-priority installed provider as the source of randomness. (If none of the installed providers supply an implementation of`SecureRandom`, a system-provided source of randomness is used.)
+ All key pair generators share the concepts of a keysize and a source of randomness. The keysize is interpreted differently for different algorithms (e.g., in the case of the*DSA* algorithm, the keysize corresponds to the length of the modulus). There is an [initialize](KeyPairGenerator.md))method in this KeyPairGenerator class that takes these two universally shared types of arguments. There is also one that takes just a`keysize`argument, and uses the`SecureRandom`implementation of the highest-priority installed provider as the source of randomness. (If none of the installed providers supply an implementation of`SecureRandom`, a system-provided source of randomness is used.)
 
  Since no other parameters are specified when you call the above algorithm-independent`initialize`methods, it is up to the provider what to do about the algorithm-specific parameters (if any) to be associated with each of the keys.
 
  If the algorithm is the*DSA* algorithm, and the keysize (modulus size) is 512, 768, 1024, or 2048, then the*Sun* provider uses a set of precomputed values for the`p`,`q`, and`g`parameters. If the modulus size is not one of the above values, the*Sun*provider creates a new set of parameters. Other providers might have precomputed parameter sets for more than just the modulus sizes mentioned above. Still others might not have a list of precomputed parameters at all and instead always create new parameter sets.
 - **Algorithm-Specific Initialization**
 
- For situations where a set of algorithm-specific parameters already exists (e.g., so-called*community parameters* in DSA), there are two [initialize](../java/security/KeyPairGenerator.md))methods that have an`AlgorithmParameterSpec`argument. One also has a`SecureRandom`argument, while the other uses the`SecureRandom`implementation of the highest-priority installed provider as the source of randomness. (If none of the installed providers supply an implementation of`SecureRandom`, a system-provided source of randomness is used.)
+ For situations where a set of algorithm-specific parameters already exists (e.g., so-called*community parameters* in DSA), there are two [initialize](KeyPairGenerator.md))methods that have an`AlgorithmParameterSpec`argument. One also has a`SecureRandom`argument, while the other uses the`SecureRandom`implementation of the highest-priority installed provider as the source of randomness. (If none of the installed providers supply an implementation of`SecureRandom`, a system-provided source of randomness is used.)
 
 In case the client does not explicitly initialize the KeyPairGenerator (via a call to an`initialize`method), each provider must supply (and document) a default initialization. For example, the*Sun*provider uses a default modulus size (keysize) of 1024 bits.
 
@@ -51,24 +51,24 @@ These algorithms are described in the [KeyPairGenerator section](https://docs.or
 
 | Protected constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [KeyPairGenerator](../java/security/KeyPairGenerator.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a KeyPairGenerator object for the specified algorithm. |
+| [KeyPairGenerator](KeyPairGenerator.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a KeyPairGenerator object for the specified algorithm. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [KeyPair](../java/security/KeyPair.md)! | [genKeyPair](../java/security/KeyPairGenerator.md))`()` Generates a key pair. |
-| open [KeyPair](../java/security/KeyPair.md)! | [generateKeyPair](../java/security/KeyPairGenerator.md))`()` Generates a key pair. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAlgorithm](../java/security/KeyPairGenerator.md))`()` Returns the standard name of the algorithm for this key pair generator. |
+| [KeyPair](KeyPair.md)! | [genKeyPair](KeyPairGenerator.md))`()` Generates a key pair. |
+| open [KeyPair](KeyPair.md)! | [generateKeyPair](KeyPairGenerator.md))`()` Generates a key pair. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAlgorithm](KeyPairGenerator.md))`()` Returns the standard name of the algorithm for this key pair generator. |
 | --- | --- |
-| openstatic [KeyPairGenerator](../java/security/KeyPairGenerator.md)! | [getInstance](../java/security/KeyPairGenerator.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a KeyPairGenerator object that generates public/private key pairs for the specified algorithm. |
-| openstatic [KeyPairGenerator](../java/security/KeyPairGenerator.md)! | [getInstance](../java/security/KeyPairGenerator.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a KeyPairGenerator object that generates public/private key pairs for the specified algorithm. |
-| openstatic [KeyPairGenerator](../java/security/KeyPairGenerator.md)! | [getInstance](../java/security/KeyPairGenerator.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [Provider](../java/security/Provider.md)!`)` Returns a KeyPairGenerator object that generates public/private key pairs for the specified algorithm. |
+| openstatic [KeyPairGenerator](KeyPairGenerator.md)! | [getInstance](KeyPairGenerator.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a KeyPairGenerator object that generates public/private key pairs for the specified algorithm. |
+| openstatic [KeyPairGenerator](KeyPairGenerator.md)! | [getInstance](KeyPairGenerator.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a KeyPairGenerator object that generates public/private key pairs for the specified algorithm. |
+| openstatic [KeyPairGenerator](KeyPairGenerator.md)! | [getInstance](KeyPairGenerator.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [Provider](Provider.md)!`)` Returns a KeyPairGenerator object that generates public/private key pairs for the specified algorithm. |
 | --- | --- |
-| [Provider](../java/security/Provider.md)! | [getProvider](../java/security/KeyPairGenerator.md))`()` Returns the provider of this key pair generator object. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [initialize](../java/security/KeyPairGenerator.md))`(`keysize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Initializes the key pair generator for a certain keysize using a default parameter set and the`SecureRandom`implementation of the highest-priority installed provider as the source of randomness. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [initialize](../java/security/KeyPairGenerator.md))`(`keysize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `random:` ` [SecureRandom](../java/security/SecureRandom.md)!`)` Initializes the key pair generator for a certain keysize with the given source of randomness (and a default parameter set). |
+| [Provider](Provider.md)! | [getProvider](KeyPairGenerator.md))`()` Returns the provider of this key pair generator object. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [initialize](KeyPairGenerator.md))`(`keysize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Initializes the key pair generator for a certain keysize using a default parameter set and the`SecureRandom`implementation of the highest-priority installed provider as the source of randomness. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [initialize](KeyPairGenerator.md))`(`keysize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `random:` ` [SecureRandom](SecureRandom.md)!`)` Initializes the key pair generator for a certain keysize with the given source of randomness (and a default parameter set). |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [initialize](../java/security/KeyPairGenerator.md))`(`params:` ` [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)!`)` Initializes the key pair generator using the specified parameter set and the`SecureRandom`implementation of the highest-priority installed provider as the source of randomness. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [initialize](../java/security/KeyPairGenerator.md))`(`params:` ` [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)!`, `random:` ` [SecureRandom](../java/security/SecureRandom.md)!`)` Initializes the key pair generator with the given parameter set and source of randomness. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [initialize](KeyPairGenerator.md))`(`params:` ` [AlgorithmParameterSpec](../java.security.spec/AlgorithmParameterSpec.md)!`)` Initializes the key pair generator using the specified parameter set and the`SecureRandom`implementation of the highest-priority installed provider as the source of randomness. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [initialize](KeyPairGenerator.md))`(`params:` ` [AlgorithmParameterSpec](../java.security.spec/AlgorithmParameterSpec.md)!`, `random:` ` [SecureRandom](SecureRandom.md)!`)` Initializes the key pair generator with the given parameter set and source of randomness. |
 
 ## Protected constructors
 
@@ -102,11 +102,11 @@ If this KeyPairGenerator has not been initialized explicitly, provider-specific 
 
 This will generate a new key pair every time it is called.
 
-This method is functionally equivalent to [generateKeyPair](../java/security/KeyPairGenerator.md)).
+This method is functionally equivalent to [generateKeyPair](KeyPairGenerator.md)).
 
 | Return ||
 |----------------------------------------------------------------------------------|------------------------|
-| [KeyPair](../java/security/KeyPair.md)! | the generated key pair |
+| [KeyPair](KeyPair.md)! | the generated key pair |
 
 ### generateKeyPair
 
@@ -122,11 +122,11 @@ If this KeyPairGenerator has not been initialized explicitly, provider-specific 
 
 This will generate a new key pair every time it is called.
 
-This method is functionally equivalent to [genKeyPair](../java/security/KeyPairGenerator.md)).
+This method is functionally equivalent to [genKeyPair](KeyPairGenerator.md)).
 
 | Return ||
 |----------------------------------------------------------------------------------|------------------------|
-| [KeyPair](../java/security/KeyPair.md)! | the generated key pair |
+| [KeyPair](KeyPair.md)! | the generated key pair |
 
 ### getAlgorithm
 
@@ -154,7 +154,7 @@ Returns a KeyPairGenerator object that generates public/private key pairs for th
 
 This method traverses the list of registered security Providers, starting with the most preferred Provider. A new KeyPairGenerator object encapsulating the KeyPairGeneratorSpi implementation from the first Provider that supports the specified algorithm is returned.
 
-Note that the list of registered providers may be retrieved via the [Security.getProviders()](../java/security/Security.md))method.
+Note that the list of registered providers may be retrieved via the [Security.getProviders()](Security.md))method.
 
 | Parameters ||
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -162,7 +162,7 @@ Note that the list of registered providers may be retrieved via the [Security.ge
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------|---------------------------------|
-| [KeyPairGenerator](../java/security/KeyPairGenerator.md)! | the new`KeyPairGenerator`object |
+| [KeyPairGenerator](KeyPairGenerator.md)! | the new`KeyPairGenerator`object |
 
 | Exceptions ||
 |------------------------------------------|------------------------------------------------------------------------------------------|
@@ -171,7 +171,7 @@ Note that the list of registered providers may be retrieved via the [Security.ge
 
 **See Also**
 
-- [java.security.Provider](../java/security/Provider.md) 
+- [java.security.Provider](Provider.md) 
 
 ### getInstance
 
@@ -188,7 +188,7 @@ Returns a KeyPairGenerator object that generates public/private key pairs for th
 
 A new KeyPairGenerator object encapsulating the KeyPairGeneratorSpi implementation from the specified provider is returned. The specified provider must be registered in the security provider list.
 
-Note that the list of registered providers may be retrieved via the [Security.getProviders()](../java/security/Security.md))method.
+Note that the list of registered providers may be retrieved via the [Security.getProviders()](Security.md))method.
 
 | Parameters ||
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -197,7 +197,7 @@ Note that the list of registered providers may be retrieved via the [Security.ge
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------|---------------------------------|
-| [KeyPairGenerator](../java/security/KeyPairGenerator.md)! | the new`KeyPairGenerator`object |
+| [KeyPairGenerator](KeyPairGenerator.md)! | the new`KeyPairGenerator`object |
 
 | Exceptions ||
 |------------------------------------------|------------------------------------------------------------------------------------------------------------------|
@@ -209,7 +209,7 @@ Note that the list of registered providers may be retrieved via the [Security.ge
 
 **See Also**
 
-- [java.security.Provider](../java/security/Provider.md) 
+- [java.security.Provider](Provider.md) 
 
 ### getInstance
 
@@ -229,11 +229,11 @@ A new KeyPairGenerator object encapsulating the KeyPairGeneratorSpi implementati
 | Parameters ||
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `algorithm` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the standard string name of the algorithm. See the KeyPairGenerator section in the [Java Security Standard Algorithm Names Specification](https://docs.oracle.com/en/java/javase/17/docs/specs/security/standard-names.html#keypairgenerator-algorithms) for information about standard algorithm names. |
-| `provider` | [Provider](../java/security/Provider.md)!:the provider. |
+| `provider` | [Provider](Provider.md)!:the provider. |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------|---------------------------------|
-| [KeyPairGenerator](../java/security/KeyPairGenerator.md)! | the new`KeyPairGenerator`object |
+| [KeyPairGenerator](KeyPairGenerator.md)! | the new`KeyPairGenerator`object |
 
 | Exceptions ||
 |------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
@@ -244,7 +244,7 @@ A new KeyPairGenerator object encapsulating the KeyPairGeneratorSpi implementati
 
 **See Also**
 
-- [java.security.Provider](../java/security/Provider.md) 
+- [java.security.Provider](Provider.md) 
 
 ### getProvider
 
@@ -258,7 +258,7 @@ Returns the provider of this key pair generator object.
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------------|
-| [Provider](../java/security/Provider.md)! | the provider of this key pair generator object |
+| [Provider](Provider.md)! | the provider of this key pair generator object |
 
 ### initialize
 
@@ -294,7 +294,7 @@ Initializes the key pair generator for a certain keysize with the given source o
 | Parameters ||
 |-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `keysize` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the keysize. This is an algorithm-specific metric, such as modulus length, specified in number of bits. |
-| `random` | [SecureRandom](../java/security/SecureRandom.md)!:the source of randomness. |
+| `random` | [SecureRandom](SecureRandom.md)!:the source of randomness. |
 
 | Exceptions ||
 |-------------------------------------------|------------------------------------------------------------------|
@@ -310,11 +310,11 @@ open fun initialize(params: AlgorithmParameterSpec!): Unit
 
 Initializes the key pair generator using the specified parameter set and the`SecureRandom`implementation of the highest-priority installed provider as the source of randomness. (If none of the installed providers supply an implementation of`SecureRandom`, a system-provided source of randomness is used.)
 
-This concrete method has been added to this previously-defined abstract class. This method calls the KeyPairGeneratorSpi [initialize](../java/security/KeyPairGeneratorSpi.md))method, passing it`params`and a source of randomness (obtained from the highest-priority installed provider or system-provided if none of the installed providers supply one). That`initialize`method always throws an UnsupportedOperationException if it is not overridden by the provider.
+This concrete method has been added to this previously-defined abstract class. This method calls the KeyPairGeneratorSpi [initialize](KeyPairGeneratorSpi.md))method, passing it`params`and a source of randomness (obtained from the highest-priority installed provider or system-provided if none of the installed providers supply one). That`initialize`method always throws an UnsupportedOperationException if it is not overridden by the provider.
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `params` | [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)!:the parameter set used to generate the keys. |
+| `params` | [AlgorithmParameterSpec](../java.security.spec/AlgorithmParameterSpec.md)!:the parameter set used to generate the keys. |
 
 | Exceptions ||
 |----------------------------------------------------|------------------------------------------------------------------------|
@@ -333,12 +333,12 @@ open fun initialize(
 
 Initializes the key pair generator with the given parameter set and source of randomness.
 
-This concrete method has been added to this previously-defined abstract class. This method calls the KeyPairGeneratorSpi [initialize](../java/security/KeyPairGeneratorSpi.md))method, passing it`params`and`random`. That`initialize`method always throws an UnsupportedOperationException if it is not overridden by the provider.
+This concrete method has been added to this previously-defined abstract class. This method calls the KeyPairGeneratorSpi [initialize](KeyPairGeneratorSpi.md))method, passing it`params`and`random`. That`initialize`method always throws an UnsupportedOperationException if it is not overridden by the provider.
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `params` | [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)!:the parameter set used to generate the keys. |
-| `random` | [SecureRandom](../java/security/SecureRandom.md)!:the source of randomness. |
+| `params` | [AlgorithmParameterSpec](../java.security.spec/AlgorithmParameterSpec.md)!:the parameter set used to generate the keys. |
+| `random` | [SecureRandom](SecureRandom.md)!:the source of randomness. |
 
 | Exceptions ||
 |----------------------------------------------------|------------------------------------------------------------------------|

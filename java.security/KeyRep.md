@@ -10,7 +10,7 @@ open class KeyRep : Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.KeyRep](../java/security/KeyRep.md) |
+| ↳ | [java.security.KeyRep](KeyRep.md) |
 
 Standardized representation for serialized Key objects.
 
@@ -24,11 +24,11 @@ Note that a serialized Key may contain sensitive information which should not be
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [KeyRep](../java/security/KeyRep.md))`(`type:` ` [KeyRep.Type](../java/security/KeyRep.Type.md)!`, `algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `format:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `encoded:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Construct the alternate Key class. |
+| [KeyRep](KeyRep.md))`(`type:` ` [KeyRep.Type](../java/security/KeyRep.Type.md)!`, `algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `format:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `encoded:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Construct the alternate Key class. |
 
 | Protected methods ||
 |---------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [readResolve](../java/security/KeyRep.md))`()` Resolve the Key object. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [readResolve](KeyRep.md))`()` Resolve the Key object. |
 
 ## Public constructors
 

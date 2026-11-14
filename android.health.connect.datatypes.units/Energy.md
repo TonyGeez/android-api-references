@@ -4,7 +4,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # Energy
 
-Kotlin| [Java](../android/health/connect/datatypes/units/Energy.md) 
+Kotlin| [Java](Energy.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class Energy : Comparable<Energy!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.health.connect.datatypes.units.Energy](../android/health/connect/datatypes/units/Energy.md) |
+| ↳ | [android.health.connect.datatypes.units.Energy](Energy.md) |
 
 Represents a unit of energy. Supported units: calories
 
@@ -21,13 +21,13 @@ Represents a unit of energy. Supported units: calories
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](../android/health/connect/datatypes/units/Energy.md))`(`other:` ` [Energy](../android/health/connect/datatypes/units/Energy.md)`)` Compares this object with the specified object for order. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/health/connect/datatypes/units/Energy.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| static [Energy](../android/health/connect/datatypes/units/Energy.md) | [fromCalories](../android/health/connect/datatypes/units/Energy.md))`(`value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Creates an Energy object with the specified value in calories. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](Energy.md))`(`other:` ` [Energy](Energy.md)`)` Compares this object with the specified object for order. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](Energy.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| static [Energy](Energy.md) | [fromCalories](Energy.md))`(`value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Creates an Energy object with the specified value in calories. |
 | --- | --- |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getInCalories](../android/health/connect/datatypes/units/Energy.md))`()` Returns energy in calories |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/health/connect/datatypes/units/Energy.md))`()` Returns a hash code value for the object. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/health/connect/datatypes/units/Energy.md))`()` <br /> |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getInCalories](Energy.md))`()` Returns energy in calories |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](Energy.md))`()` Returns a hash code value for the object. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](Energy.md))`()` <br /> |
 | --- | --- |
 
 ## Public methods
@@ -45,7 +45,7 @@ Compares this object with the specified object for order. Returns a negative int
 | Parameters ||
 |---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `o` | the object to be compared. |
-| `other` | [Energy](../android/health/connect/datatypes/units/Energy.md):the object to be compared. This value cannot be`null`. |
+| `other` | [Energy](Energy.md):the object to be compared. This value cannot be`null`. |
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
@@ -91,7 +91,7 @@ Creates an Energy object with the specified value in calories.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------|-----------------------------|
-| [Energy](../android/health/connect/datatypes/units/Energy.md) | This value cannot be`null`. |
+| [Energy](Energy.md) | This value cannot be`null`. |
 
 ### getInCalories
 

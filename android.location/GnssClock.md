@@ -2,7 +2,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # GnssClock
 
-Kotlin | [Java](../android/location/GnssClock.md)
+Kotlin | [Java](GnssClock.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class GnssClock : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.location.GnssClock](../android/location/GnssClock.md) |
+| ↳ | [android.location.GnssClock](GnssClock.md) |
 
 A class containing a GNSS clock timestamp.
 
@@ -66,7 +66,7 @@ It represents a measurement of the GNSS receiver's clock.
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [GnssClock](../android/location/GnssClock.md)!\> | `https://developer.android.com/reference/kotlin/android/location/GnssClock#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [GnssClock](GnssClock.md)!\> | `https://developer.android.com/reference/kotlin/android/location/GnssClock#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public methods
 

@@ -9,8 +9,8 @@ class L2capNetworkSpecifier : NetworkSpecifier, Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.net.NetworkSpecifier](../android/net/NetworkSpecifier.md) ||
-| | ↳ | [android.net.L2capNetworkSpecifier](../android/net/L2capNetworkSpecifier.md) |
+| ↳ | [android.net.NetworkSpecifier](NetworkSpecifier.md) ||
+| | ↳ | [android.net.L2capNetworkSpecifier](L2capNetworkSpecifier.md) |
 
 A `https://developer.android.com/reference/kotlin/android/net/NetworkSpecifier` used to identify an L2CAP network over BLE. An L2CAP network is not symmetrical, meaning there exists both a server (Bluetooth peripheral) and a client (Bluetooth central) node. This specifier contains the information required to request a client L2CAP network using android.net.ConnectivityManager#requestNetwork while specifying the remote MAC address, and Protocol/Service Multiplexer (PSM). It can also contain information allocated by the system when reserving a server network using `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager#reserveNetwork(android.net.NetworkRequest,%20android.os.Handler,%20android.net.ConnectivityManager.NetworkCallback)` such as the Protocol/Service Multiplexer (PSM). In both cases, the header compression option must be specified. An L2CAP server network allocates a Protocol/Service Multiplexer (PSM) to be advertised to the client. A new server network must always be reserved using `ConnectivityManager#reserveNetwork`. The subsequent `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager.NetworkCallback#onReserved(android.net.NetworkCapabilities)` callback includes an `L2CapNetworkSpecifier`. The `https://developer.android.com/reference/kotlin/android/net/L2capNetworkSpecifier#getPsm()` method will return the Protocol/Service Multiplexer (PSM) of the reserved network so that the server can advertise it to the client and the client can connect. An L2CAP server network is backed by a `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothServerSocket.html#` which can, in theory, accept many connections. However, before SDK version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#VANILLA_ICE_CREAM:kotlin.Int` Bluetooth APIs do not expose the channel ID, so these connections are indistinguishable. In practice, this means that the network matching semantics in ConnectivityService will tear down all but the first connection. When the connection between client and server completes, a `https://developer.android.com/reference/kotlin/android/net/Network` whose capabilities satisfy this `L2capNetworkSpecifier` will connect and the usual callbacks, such as NetworkCallback#onAvailable, will be called on the callback object passed to `ConnectivityManager#reserveNetwork` or `ConnectivityManager#requestNetwork`.
 
@@ -44,18 +44,18 @@ A `https://developer.android.com/reference/kotlin/android/net/NetworkSpecifier` 
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/L2capNetworkSpecifier#getHeaderCompression()()` Returns the compression mechanism for this network. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/L2capNetworkSpecifier#getPsm()()` Returns the Protocol/Service Multiplexer (PSM) for this network to connect to. |
-| [MacAddress](../android/net/MacAddress.md)? | `https://developer.android.com/reference/kotlin/android/net/L2capNetworkSpecifier#getRemoteAddress()()` Returns the remote MAC address for this network to connect to. |
+| [MacAddress](MacAddress.md)? | `https://developer.android.com/reference/kotlin/android/net/L2capNetworkSpecifier#getRemoteAddress()()` Returns the remote MAC address for this network to connect to. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/L2capNetworkSpecifier#getRole()()` Returns the role to be used for this network. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/L2capNetworkSpecifier#hashCode()()` Returns a hash code value for the object. |
-| [NetworkSpecifier](../android/net/NetworkSpecifier.md)? | `https://developer.android.com/reference/kotlin/android/net/L2capNetworkSpecifier#redact()()` <br /> |
+| [NetworkSpecifier](NetworkSpecifier.md)? | `https://developer.android.com/reference/kotlin/android/net/L2capNetworkSpecifier#redact()()` <br /> |
 | --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/L2capNetworkSpecifier#toString()()` Returns a string representation of the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/L2capNetworkSpecifier#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [L2capNetworkSpecifier](../android/net/L2capNetworkSpecifier.md)!\> | `https://developer.android.com/reference/kotlin/android/net/L2capNetworkSpecifier#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [L2capNetworkSpecifier](L2capNetworkSpecifier.md)!\> | `https://developer.android.com/reference/kotlin/android/net/L2capNetworkSpecifier#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -321,7 +321,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

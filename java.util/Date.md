@@ -10,9 +10,9 @@ open class Date : Cloneable, Comparable<Date!>, Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.util.Date](../java/util/Date.md) |
+| ↳ | [java.util.Date](Date.md) |
 
-| Known Direct Subclasses [Date](../java/sql/Date.md), [Time](../java/sql/Time.md), [Timestamp](../java/sql/Timestamp.md) |--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------| | [Date](../java/sql/Date.md) | A thin wrapper around a millisecond value that allows JDBC to identify this as an SQL`DATE`value. | | [Time](../java/sql/Time.md) | A thin wrapper around the`java.util.Date`class that allows the JDBC API to identify this as an SQL`TIME`value. | | [Timestamp](../java/sql/Timestamp.md) | A thin wrapper around`java.util.Date`that allows the JDBC API to identify this as an SQL`TIMESTAMP`value. | |
+| Known Direct Subclasses [Date](../java.sql/Date.md), [Time](../java.sql/Time.md), [Timestamp](../java.sql/Timestamp.md) |--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------| | [Date](../java.sql/Date.md) | A thin wrapper around a millisecond value that allows JDBC to identify this as an SQL`DATE`value. | | [Time](../java.sql/Time.md) | A thin wrapper around the`java.util.Date`class that allows the JDBC API to identify this as an SQL`TIME`value. | | [Timestamp](../java.sql/Timestamp.md) | A thin wrapper around`java.util.Date`that allows the JDBC API to identify this as an SQL`TIMESTAMP`value. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 The class`Date`represents a specific instant in time, with millisecond precision.
@@ -50,53 +50,53 @@ In all cases, arguments given to methods for these purposes need not fall within
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Date](../java/util/Date.md))`()` Allocates a`Date`object and initializes it so that it represents the time at which it was allocated, measured to the nearest millisecond. |
-| [Date](../java/util/Date.md))`(`year:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `month:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `date:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Allocates a`Date`object and initializes it so that it represents midnight, local time, at the beginning of the day specified by the`year`,`month`, and`date`arguments. |
-| [Date](../java/util/Date.md))`(`year:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `month:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `date:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `hrs:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `min:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Allocates a`Date`object and initializes it so that it represents the instant at the start of the minute specified by the`year`,`month`,`date`,`hrs`, and`min`arguments, in the local time zone. |
-| [Date](../java/util/Date.md))`(`year:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `month:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `date:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `hrs:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `min:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `sec:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Allocates a`Date`object and initializes it so that it represents the instant at the start of the second specified by the`year`,`month`,`date`,`hrs`,`min`, and`sec`arguments, in the local time zone. |
-| [Date](../java/util/Date.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Allocates a`Date`object and initializes it so that it represents the date and time indicated by the string`s`, which is interpreted as if by the [Date.parse](../java/util/Date.md))method. |
-| [Date](../java/util/Date.md))`(`date:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Allocates a`Date`object and initializes it to represent the specified number of milliseconds since the standard base time known as "the epoch", namely January 1, 1970, 00:00:00 GMT. |
+| [Date](Date.md))`()` Allocates a`Date`object and initializes it so that it represents the time at which it was allocated, measured to the nearest millisecond. |
+| [Date](Date.md))`(`year:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `month:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `date:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Allocates a`Date`object and initializes it so that it represents midnight, local time, at the beginning of the day specified by the`year`,`month`, and`date`arguments. |
+| [Date](Date.md))`(`year:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `month:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `date:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `hrs:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `min:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Allocates a`Date`object and initializes it so that it represents the instant at the start of the minute specified by the`year`,`month`,`date`,`hrs`, and`min`arguments, in the local time zone. |
+| [Date](Date.md))`(`year:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `month:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `date:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `hrs:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `min:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `sec:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Allocates a`Date`object and initializes it so that it represents the instant at the start of the second specified by the`year`,`month`,`date`,`hrs`,`min`, and`sec`arguments, in the local time zone. |
+| [Date](Date.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Allocates a`Date`object and initializes it so that it represents the date and time indicated by the string`s`, which is interpreted as if by the [Date.parse](Date.md))method. |
+| [Date](Date.md))`(`date:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Allocates a`Date`object and initializes it to represent the specified number of milliseconds since the standard base time known as "the epoch", namely January 1, 1970, 00:00:00 GMT. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [UTC](../java/util/Date.md))`(`year:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `month:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `date:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `hrs:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `min:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `sec:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Determines the date and time based on the arguments. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [after](../java/util/Date.md))`(`when:` ` [Date](../java/util/Date.md)!`)` Tests if this date is after the specified date. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [before](../java/util/Date.md))`(`when:` ` [Date](../java/util/Date.md)!`)` Tests if this date is before the specified date. |
+| openstatic [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [UTC](Date.md))`(`year:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `month:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `date:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `hrs:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `min:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `sec:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Determines the date and time based on the arguments. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [after](Date.md))`(`when:` ` [Date](Date.md)!`)` Tests if this date is after the specified date. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [before](Date.md))`(`when:` ` [Date](Date.md)!`)` Tests if this date is before the specified date. |
 | --- | --- |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](../java/util/Date.md))`()` Return a copy of this object. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](../java/util/Date.md))`(`other:` ` [Date](../java/util/Date.md)!`)` Compares two Dates for ordering. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/util/Date.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares two dates for equality. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](Date.md))`()` Return a copy of this object. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](Date.md))`(`other:` ` [Date](Date.md)!`)` Compares two Dates for ordering. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](Date.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares two dates for equality. |
 | --- | --- |
-| openstatic [Date](../java/util/Date.md)! | [from](../java/util/Date.md))`(`instant:` ` [Instant](../java/time/Instant.md)!`)` Obtains an instance of`Date`from an`Instant`object. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDate](../java/util/Date.md))`()` Returns the day of the month represented by this`Date`object. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDay](../java/util/Date.md))`()` Returns the day of the week represented by this date. |
+| openstatic [Date](Date.md)! | [from](Date.md))`(`instant:` ` [Instant](../java.time/Instant.md)!`)` Obtains an instance of`Date`from an`Instant`object. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDate](Date.md))`()` Returns the day of the month represented by this`Date`object. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDay](Date.md))`()` Returns the day of the week represented by this date. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHours](../java/util/Date.md))`()` Returns the hour represented by this`Date`object. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMinutes](../java/util/Date.md))`()` Returns the number of minutes past the hour represented by this date, as interpreted in the local time zone. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMonth](../java/util/Date.md))`()` Returns a number representing the month that contains or begins with the instant in time represented by this`Date`object. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHours](Date.md))`()` Returns the hour represented by this`Date`object. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMinutes](Date.md))`()` Returns the number of minutes past the hour represented by this date, as interpreted in the local time zone. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMonth](Date.md))`()` Returns a number representing the month that contains or begins with the instant in time represented by this`Date`object. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSeconds](../java/util/Date.md))`()` Returns the number of seconds past the minute represented by this date. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTime](../java/util/Date.md))`()` Returns the number of milliseconds since January 1, 1970, 00:00:00 GMT represented by this`Date`object. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTimezoneOffset](../java/util/Date.md))`()` Returns the offset, measured in minutes, for the local time zone relative to UTC that is appropriate for the time represented by this`Date`object. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSeconds](Date.md))`()` Returns the number of seconds past the minute represented by this date. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTime](Date.md))`()` Returns the number of milliseconds since January 1, 1970, 00:00:00 GMT represented by this`Date`object. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTimezoneOffset](Date.md))`()` Returns the offset, measured in minutes, for the local time zone relative to UTC that is appropriate for the time represented by this`Date`object. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getYear](../java/util/Date.md))`()` Returns a value that is the result of subtracting 1900 from the year that contains or begins with the instant in time represented by this`Date`object, as interpreted in the local time zone. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/util/Date.md))`()` Returns a hash code value for this object. |
-| openstatic [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [parse](../java/util/Date.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Attempts to interpret the string`s`as a representation of a date and time. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getYear](Date.md))`()` Returns a value that is the result of subtracting 1900 from the year that contains or begins with the instant in time represented by this`Date`object, as interpreted in the local time zone. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](Date.md))`()` Returns a hash code value for this object. |
+| openstatic [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [parse](Date.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Attempts to interpret the string`s`as a representation of a date and time. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDate](../java/util/Date.md))`(`date:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the day of the month of this`Date`object to the specified value. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setHours](../java/util/Date.md))`(`hours:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the hour of this`Date`object to the specified value. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMinutes](../java/util/Date.md))`(`minutes:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the minutes of this`Date`object to the specified value. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDate](Date.md))`(`date:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the day of the month of this`Date`object to the specified value. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setHours](Date.md))`(`hours:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the hour of this`Date`object to the specified value. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMinutes](Date.md))`(`minutes:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the minutes of this`Date`object to the specified value. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMonth](../java/util/Date.md))`(`month:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the month of this date to the specified value. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSeconds](../java/util/Date.md))`(`seconds:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the seconds of this`Date`to the specified value. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTime](../java/util/Date.md))`(`time:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets this`Date`object to represent a point in time that is`time`milliseconds after January 1, 1970 00:00:00 GMT. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMonth](Date.md))`(`month:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the month of this date to the specified value. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSeconds](Date.md))`(`seconds:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the seconds of this`Date`to the specified value. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTime](Date.md))`(`time:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets this`Date`object to represent a point in time that is`time`milliseconds after January 1, 1970 00:00:00 GMT. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setYear](../java/util/Date.md))`(`year:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the year of this`Date`object to be the specified value plus 1900. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toGMTString](../java/util/Date.md))`()` Creates a string representation of this`Date`object of the form: ```kotlin d mon yyyy hh:mm:ss GMT ``` where: - *d* is the day of the month (`1`through`31`), as one or two decimal digits. - *mon* is the month (`Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec`). - *yyyy*is the year, as four decimal digits. - *hh* is the hour of the day (`00`through`23`), as two decimal digits. - *mm* is the minute within the hour (`00`through`59`), as two decimal digits. - *ss* is the second within the minute (`00`through`61`), as two decimal digits. - *GMT* is exactly the ASCII letters "`GMT`" to indicate Greenwich Mean Time. <br /> |
-| open [Instant](../java/time/Instant.md)! | [toInstant](../java/util/Date.md))`()` Converts this`Date`object to an`Instant`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setYear](Date.md))`(`year:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the year of this`Date`object to be the specified value plus 1900. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toGMTString](Date.md))`()` Creates a string representation of this`Date`object of the form: ```kotlin d mon yyyy hh:mm:ss GMT ``` where: - *d* is the day of the month (`1`through`31`), as one or two decimal digits. - *mon* is the month (`Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec`). - *yyyy*is the year, as four decimal digits. - *hh* is the hour of the day (`00`through`23`), as two decimal digits. - *mm* is the minute within the hour (`00`through`59`), as two decimal digits. - *ss* is the second within the minute (`00`through`61`), as two decimal digits. - *GMT* is exactly the ASCII letters "`GMT`" to indicate Greenwich Mean Time. <br /> |
+| open [Instant](../java.time/Instant.md)! | [toInstant](Date.md))`()` Converts this`Date`object to an`Instant`. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toLocaleString](../java/util/Date.md))`()` Creates a string representation of this`Date`object in an implementation-dependent form. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/util/Date.md))`()` Converts this`Date`object to a`String`of the form: ```kotlin dow mon dd hh:mm:ss zzz yyyy ``` where: - `dow`is the day of the week (`Sun, Mon, Tue, Wed, Thu, Fri, Sat`). - `mon`is the month (`Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec`). - `dd`is the day of the month (`01`through`31`), as two decimal digits. - `hh`is the hour of the day (`00`through`23`), as two decimal digits. - `mm`is the minute within the hour (`00`through`59`), as two decimal digits. - `ss`is the second within the minute (`00`through`61`, as two decimal digits. - `zzz`is the time zone (and may reflect daylight saving time). Standard time zone abbreviations include those recognized by the method`parse`. If time zone information is not available, then`zzz`is empty - that is, it consists of no characters at all. - `yyyy`is the year, as four decimal digits. <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toLocaleString](Date.md))`()` Creates a string representation of this`Date`object in an implementation-dependent form. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](Date.md))`()` Converts this`Date`object to a`String`of the form: ```kotlin dow mon dd hh:mm:ss zzz yyyy ``` where: - `dow`is the day of the week (`Sun, Mon, Tue, Wed, Thu, Fri, Sat`). - `mon`is the month (`Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec`). - `dd`is the day of the month (`01`through`31`), as two decimal digits. - `hh`is the hour of the day (`00`through`23`), as two decimal digits. - `mm`is the minute within the hour (`00`through`59`), as two decimal digits. - `ss`is the second within the minute (`00`through`61`, as two decimal digits. - `zzz`is the time zone (and may reflect daylight saving time). Standard time zone abbreviations include those recognized by the method`parse`. If time zone information is not available, then`zzz`is empty - that is, it consists of no characters at all. - `yyyy`is the year, as four decimal digits. <br /> |
 
 ## Public constructors
 
@@ -111,7 +111,7 @@ Date()
 Allocates a`Date`object and initializes it so that it represents the time at which it was allocated, measured to the nearest millisecond. 
 **See Also**
 
-- [java.lang.System#currentTimeMillis()](../java/lang/System.md)) 
+- [java.lang.System#currentTimeMillis()](../java.lang/System.md)) 
 
 ### Date
 
@@ -137,7 +137,7 @@ Allocates a`Date`object and initializes it so that it represents midnight, local
 
 **See Also**
 
-- [java.util.Calendar](../java/util/Calendar.md) 
+- [java.util.Calendar](Calendar.md) 
 
 ### Date
 
@@ -167,7 +167,7 @@ Allocates a`Date`object and initializes it so that it represents the instant at 
 
 **See Also**
 
-- [java.util.Calendar](../java/util/Calendar.md) 
+- [java.util.Calendar](Calendar.md) 
 
 ### Date
 
@@ -200,7 +200,7 @@ Allocates a`Date`object and initializes it so that it represents the instant at 
 
 **See Also**
 
-- [java.util.Calendar](../java/util/Calendar.md) 
+- [java.util.Calendar](Calendar.md) 
 
 ### Date
 
@@ -212,7 +212,7 @@ Date(s: String!)
 
 **Deprecated:** *As of JDK version 1.1, replaced by`DateFormat.parse(String s)`.*
 
-Allocates a`Date`object and initializes it so that it represents the date and time indicated by the string`s`, which is interpreted as if by the [Date.parse](../java/util/Date.md))method.
+Allocates a`Date`object and initializes it so that it represents the date and time indicated by the string`s`, which is interpreted as if by the [Date.parse](Date.md))method.
 
 | Parameters ||
 |-----|------------------------------------------------------------------------------------------------------------------------|
@@ -224,8 +224,8 @@ Allocates a`Date`object and initializes it so that it represents the date and ti
 
 **See Also**
 
-- [java.text.DateFormat](../java/text/DateFormat.md)
-- [java.util.Date#parse(java.lang.String)](../java/util/Date.md)) 
+- [java.text.DateFormat](../java.text/DateFormat.md)
+- [java.util.Date#parse(java.lang.String)](Date.md)) 
 
 ### Date
 
@@ -243,7 +243,7 @@ Allocates a`Date`object and initializes it to represent the specified number of 
 
 **See Also**
 
-- [java.lang.System#currentTimeMillis()](../java/lang/System.md))
+- [java.lang.System#currentTimeMillis()](../java.lang/System.md))
 
 ## Public methods
 
@@ -284,7 +284,7 @@ Determines the date and time based on the arguments. The arguments are interpret
 
 **See Also**
 
-- [java.util.Calendar](../java/util/Calendar.md) 
+- [java.util.Calendar](Calendar.md) 
 
 ### after
 
@@ -298,7 +298,7 @@ Tests if this date is after the specified date.
 
 | Parameters ||
 |--------|---------------------------------------------------------------------------------|
-| `when` | [Date](../java/util/Date.md)!:a date. |
+| `when` | [Date](Date.md)!:a date. |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
@@ -320,7 +320,7 @@ Tests if this date is before the specified date.
 
 | Parameters ||
 |--------|---------------------------------------------------------------------------------|
-| `when` | [Date](../java/util/Date.md)!:a date. |
+| `when` | [Date](Date.md)!:a date. |
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -394,7 +394,7 @@ Thus, two`Date`objects are equal if and only if the`getTime`method returns the s
 
 **See Also**
 
-- [java.util.Date#getTime()](../java/util/Date.md)) 
+- [java.util.Date#getTime()](Date.md)) 
 
 ### from
 
@@ -412,11 +412,11 @@ Obtains an instance of`Date`from an`Instant`object.
 
 | Parameters ||
 |-----------|-----------------------------------------------------------------------------------------------------------|
-| `instant` | [Instant](../java/time/Instant.md)!:the instant to convert |
+| `instant` | [Instant](../java.time/Instant.md)!:the instant to convert |
 
 | Return ||
 |-------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| [Date](../java/util/Date.md)! | a`Date`representing the same point on the time-line as the provided instant |
+| [Date](Date.md)! | a`Date`representing the same point on the time-line as the provided instant |
 
 | Exceptions ||
 |--------------------------------------|-----------------------------------------------------|
@@ -442,7 +442,7 @@ Returns the day of the month represented by this`Date`object. The value returned
 
 **See Also**
 
-- [java.util.Calendar](../java/util/Calendar.md) 
+- [java.util.Calendar](Calendar.md) 
 
 ### getDay
 
@@ -463,7 +463,7 @@ Returns the day of the week represented by this date. The returned value (`0`= S
 
 **See Also**
 
-- [java.util.Calendar](../java/util/Calendar.md) 
+- [java.util.Calendar](Calendar.md) 
 
 ### getHours
 
@@ -484,7 +484,7 @@ Returns the hour represented by this`Date`object. The returned value is a number
 
 **See Also**
 
-- [java.util.Calendar](../java/util/Calendar.md) 
+- [java.util.Calendar](Calendar.md) 
 
 ### getMinutes
 
@@ -505,7 +505,7 @@ Returns the number of minutes past the hour represented by this date, as interpr
 
 **See Also**
 
-- [java.util.Calendar](../java/util/Calendar.md) 
+- [java.util.Calendar](Calendar.md) 
 
 ### getMonth
 
@@ -526,7 +526,7 @@ Returns a number representing the month that contains or begins with the instant
 
 **See Also**
 
-- [java.util.Calendar](../java/util/Calendar.md) 
+- [java.util.Calendar](Calendar.md) 
 
 ### getSeconds
 
@@ -547,7 +547,7 @@ Returns the number of seconds past the minute represented by this date. The valu
 
 **See Also**
 
-- [java.util.Calendar](../java/util/Calendar.md) 
+- [java.util.Calendar](Calendar.md) 
 
 ### getTime
 
@@ -606,9 +606,9 @@ This method produces the same result as if it computed:
 
 **See Also**
 
-- [java.util.Calendar#ZONE_OFFSET](../java/util/Calendar.md)
-- [java.util.Calendar#DST_OFFSET](../java/util/Calendar.md)
-- [java.util.TimeZone#getDefault](../java/util/TimeZone.md)) 
+- [java.util.Calendar#ZONE_OFFSET](Calendar.md)
+- [java.util.Calendar#DST_OFFSET](Calendar.md)
+- [java.util.TimeZone#getDefault](TimeZone.md)) 
 
 ### getYear
 
@@ -629,7 +629,7 @@ Returns a value that is the result of subtracting 1900 from the year that contai
 
 **See Also**
 
-- [java.util.Calendar](../java/util/Calendar.md) 
+- [java.util.Calendar](Calendar.md) 
 
 ### hashCode
 
@@ -639,7 +639,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun hashCode(): Int
 ```
 
-Returns a hash code value for this object. The result is the exclusive OR of the two halves of the primitive`long`value returned by the [Date.getTime](../java/util/Date.md))method. That is, the hash code is the value of the expression: 
+Returns a hash code value for this object. The result is the exclusive OR of the two halves of the primitive`long`value returned by the [Date.getTime](Date.md))method. That is, the hash code is the value of the expression: 
 
 ```kotlin
 <code>(int)(this.getTime()^(this.getTime() &gt;&gt;&gt; 32))
@@ -683,7 +683,7 @@ A consecutive sequence of decimal digits is treated as a decimal number:
  - The number is equal to or greater than 70 and followed by a space, comma, slash, or end of string
  - The number is less than 70, and both a month and a day of the month have already been recognized
 
- If the recognized year number is less than 100, it is interpreted as an abbreviated year relative to a century of which dates are within 80 years before and 19 years after the time when the Date class is initialized. After adjusting the year number, 1900 is subtracted from it. For example, if the current year is 1999 then years in the range 19 to 99 are assumed to mean 1919 to 1999, while years from 0 to 18 are assumed to mean 2000 to 2018. Note that this is slightly different from the interpretation of years less than 100 that is used in [java.text.SimpleDateFormat](../java/text/SimpleDateFormat.md).
+ If the recognized year number is less than 100, it is interpreted as an abbreviated year relative to a century of which dates are within 80 years before and 19 years after the time when the Date class is initialized. After adjusting the year number, 1900 is subtracted from it. For example, if the current year is 1999 then years in the range 19 to 99 are assumed to mean 1919 to 1999, while years from 0 to 18 are assumed to mean 2000 to 2018. Note that this is slightly different from the interpretation of years less than 100 that is used in [java.text.SimpleDateFormat](../java.text/SimpleDateFormat.md).
 - If the number is followed by a colon, it is regarded as an hour, unless an hour has already been recognized, in which case it is regarded as a minute.
 - If the number is followed by a slash, it is regarded as a month (it is decreased by 1 to produce a number in the range`0`to`11`), unless a month has already been recognized, in which case it is regarded as a day of the month.
 - If the number is followed by whitespace, a comma, a hyphen, or end of string, then if an hour has been recognized but not a minute, it is regarded as a minute; otherwise, if a minute has been recognized but not a second, it is regarded as a second; otherwise, it is regarded as a day of the month.
@@ -713,7 +713,7 @@ Once the entire string s has been scanned, it is converted to a time result in o
 
 **See Also**
 
-- [java.text.DateFormat](../java/text/DateFormat.md) 
+- [java.text.DateFormat](../java.text/DateFormat.md) 
 
 ### setDate
 
@@ -734,7 +734,7 @@ Sets the day of the month of this`Date`object to the specified value. This`Date`
 
 **See Also**
 
-- [java.util.Calendar](../java/util/Calendar.md) 
+- [java.util.Calendar](Calendar.md) 
 
 ### setHours
 
@@ -755,7 +755,7 @@ Sets the hour of this`Date`object to the specified value. This`Date`object is mo
 
 **See Also**
 
-- [java.util.Calendar](../java/util/Calendar.md) 
+- [java.util.Calendar](Calendar.md) 
 
 ### setMinutes
 
@@ -776,7 +776,7 @@ Sets the minutes of this`Date`object to the specified value. This`Date`object is
 
 **See Also**
 
-- [java.util.Calendar](../java/util/Calendar.md) 
+- [java.util.Calendar](Calendar.md) 
 
 ### setMonth
 
@@ -797,7 +797,7 @@ Sets the month of this date to the specified value. This`Date`object is modified
 
 **See Also**
 
-- [java.util.Calendar](../java/util/Calendar.md) 
+- [java.util.Calendar](Calendar.md) 
 
 ### setSeconds
 
@@ -818,7 +818,7 @@ Sets the seconds of this`Date`to the specified value. This`Date`object is modifi
 
 **See Also**
 
-- [java.util.Calendar](../java/util/Calendar.md) 
+- [java.util.Calendar](Calendar.md) 
 
 ### setTime
 
@@ -853,7 +853,7 @@ Sets the year of this`Date`object to be the specified value plus 1900. This`Date
 
 **See Also**
 
-- [java.util.Calendar](../java/util/Calendar.md) 
+- [java.util.Calendar](Calendar.md) 
 
 ### toGMTString
 
@@ -891,9 +891,9 @@ The result does not depend on the local time zone.
 
 **See Also**
 
-- [java.text.DateFormat](../java/text/DateFormat.md)
-- [java.util.Date#toString()](../java/util/Date.md))
-- [java.util.Date#toLocaleString()](../java/util/Date.md)) 
+- [java.text.DateFormat](../java.text/DateFormat.md)
+- [java.util.Date#toString()](Date.md))
+- [java.util.Date#toLocaleString()](Date.md)) 
 
 ### toInstant
 
@@ -909,7 +909,7 @@ The conversion creates an`Instant`that represents the same point on the time-lin
 
 | Return ||
 |------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| [Instant](../java/time/Instant.md)! | an instant representing the same point on the time-line as this`Date`object |
+| [Instant](../java.time/Instant.md)! | an instant representing the same point on the time-line as this`Date`object |
 
 ### toLocaleString
 
@@ -930,9 +930,9 @@ Creates a string representation of this`Date`object in an implementation-depende
 
 **See Also**
 
-- [java.text.DateFormat](../java/text/DateFormat.md)
-- [java.util.Date#toString()](../java/util/Date.md))
-- [java.util.Date#toGMTString()](../java/util/Date.md)) 
+- [java.text.DateFormat](../java.text/DateFormat.md)
+- [java.util.Date#toString()](Date.md))
+- [java.util.Date#toGMTString()](Date.md)) 
 
 ### toString
 
@@ -966,5 +966,5 @@ where:
 
 **See Also**
 
-- [java.util.Date#toLocaleString()](../java/util/Date.md))
-- [java.util.Date#toGMTString()](../java/util/Date.md))
+- [java.util.Date#toLocaleString()](Date.md))
+- [java.util.Date#toGMTString()](Date.md))

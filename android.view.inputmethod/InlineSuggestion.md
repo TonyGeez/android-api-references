@@ -2,7 +2,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 
 # InlineSuggestion
 
-Kotlin | [Java](../android/view/inputmethod/InlineSuggestion.md)
+Kotlin | [Java](InlineSuggestion.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class InlineSuggestion : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.inputmethod.InlineSuggestion](../android/view/inputmethod/InlineSuggestion.md) |
+| ↳ | [android.view.inputmethod.InlineSuggestion](InlineSuggestion.md) |
 
 This class represents an inline suggestion which is made by one app and can be embedded into the UI of another. Suggestions may contain sensitive information not known to the host app which needs to be protected from spoofing. To address that the suggestion view inflated on demand for embedding is created in such a way that the hosting app cannot introspect its content and cannot interact with it.
 
@@ -25,7 +25,7 @@ This class represents an inline suggestion which is made by one app and can be e
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestion#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestion#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [InlineSuggestionInfo](../android/view/inputmethod/InlineSuggestionInfo.md) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestion#getInfo()()` <br /> |
+| [InlineSuggestionInfo](InlineSuggestionInfo.md) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestion#getInfo()()` <br /> |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestion#hashCode()()` Returns a hash code value for the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestion#inflate(android.content.Context,%20android.util.Size,%20java.util.concurrent.Executor,%20java.util.function.Consumer)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, size: https://developer.android.com/reference/kotlin/android/util/Size.html#, callbackExecutor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://developer.android.com/reference/kotlin/android/widget/inline/InlineContentView.html#!>)` Inflates a view with the content of this suggestion at a specific size. |
@@ -35,7 +35,7 @@ This class represents an inline suggestion which is made by one app and can be e
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [InlineSuggestion](../android/view/inputmethod/InlineSuggestion.md)!\> | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestion#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [InlineSuggestion](InlineSuggestion.md)!\> | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InlineSuggestion#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public methods
 
@@ -140,11 +140,11 @@ The caller can attach an `https://developer.android.com/reference/kotlin/android
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md): Context in which to inflate the view. This value cannot be `null`. |
-| `size` | [Size](../android/util/Size.md): The size at which to inflate the suggestion. For each dimension, it maybe an exact value or `https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams.html#WRAP_CONTENT:kotlin.Int`. This value cannot be `null`. |
-| `callbackExecutor` | [Executor](../java/util/concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `context` | [Context](../android.content/Context.md): Context in which to inflate the view. This value cannot be `null`. |
+| `size` | [Size](../android.util/Size.md): The size at which to inflate the suggestion. For each dimension, it maybe an exact value or `https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams.html#WRAP_CONTENT:kotlin.Int`. This value cannot be `null`. |
+| `callbackExecutor` | [Executor](../java.util.concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | --- | --- |
-| `callback` | [Consumer](../java/util/function/Consumer.md)\< [InlineContentView](../android/widget/inline/InlineContentView.md)!\>: Callback for receiving the inflated view, where the `https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams.html#` of the view is set as the actual size of the underlying remote view. This value cannot be `null`. |
+| `callback` | [Consumer](../java.util.function/Consumer.md)\< [InlineContentView](../android.widget.inline/InlineContentView.md)!\>: Callback for receiving the inflated view, where the `https://developer.android.com/reference/kotlin/android/view/ViewGroup.LayoutParams.html#` of the view is set as the actual size of the underlying remote view. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -180,7 +180,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

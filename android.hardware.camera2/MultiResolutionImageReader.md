@@ -8,7 +8,7 @@ open class MultiResolutionImageReader : AutoCloseable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.hardware.camera2.MultiResolutionImageReader](../android/hardware/camera2/MultiResolutionImageReader.md) |
+| ↳ | [android.hardware.camera2.MultiResolutionImageReader](MultiResolutionImageReader.md) |
 
 The MultiResolutionImageReader class wraps a group of `https://developer.android.com/reference/kotlin/android/media/ImageReader.html#` with the same format and different sizes, source camera Id, or camera sensor modes.
 
@@ -38,8 +38,8 @@ Note that by default, for a MultiResolutionImageReader, each capture request pro
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/MultiResolutionImageReader#flush()()` Flush pending images from all internal ImageReaders |
 | open [MultiResolutionImageReader.OnActiveOutputSurfacesListener](../android/hardware/camera2/MultiResolutionImageReader.OnActiveOutputSurfacesListener.md)? | `https://developer.android.com/reference/kotlin/android/hardware/camera2/MultiResolutionImageReader#getOnActiveOutputSurfacesListener()()` Get the `https://developer.android.com/reference/kotlin/android/hardware/camera2/MultiResolutionImageReader.OnActiveOutputSurfacesListener` currently registered for this MultiResolutionImageReader. |
 | --- | --- |
-| open [MultiResolutionStreamInfo](../android/hardware/camera2/params/MultiResolutionStreamInfo.md) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/MultiResolutionImageReader#getStreamInfoForImageReader(android.media.ImageReader)(reader: https://developer.android.com/reference/kotlin/android/media/ImageReader.html#)` Get the MultiResolutionStreamInfo describing the ImageReader an image originates from |
-| open [Surface](../android/view/Surface.md) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/MultiResolutionImageReader#getSurface()()` Get the surface that is used as a target for `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest` |
+| open [MultiResolutionStreamInfo](../android.hardware.camera2.params/MultiResolutionStreamInfo.md) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/MultiResolutionImageReader#getStreamInfoForImageReader(android.media.ImageReader)(reader: https://developer.android.com/reference/kotlin/android/media/ImageReader.html#)` Get the MultiResolutionStreamInfo describing the ImageReader an image originates from |
+| open [Surface](../android.view/Surface.md) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/MultiResolutionImageReader#getSurface()()` Get the surface that is used as a target for `https://developer.android.com/reference/kotlin/android/hardware/camera2/CaptureRequest` |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/MultiResolutionImageReader#setOnActiveOutputSurfacesListener(java.util.concurrent.Executor,%20android.hardware.camera2.MultiResolutionImageReader.OnActiveOutputSurfacesListener)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, listener: https://developer.android.com/reference/kotlin/android/hardware/camera2/MultiResolutionImageReader.OnActiveOutputSurfacesListener)` Register a listener to be notified of active output surfaces for a concurrency-enabled MultiResolutionImageReader. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/MultiResolutionImageReader#setOnImageAvailableListener(android.media.ImageReader.OnImageAvailableListener,%20java.util.concurrent.Executor)(listener: https://developer.android.com/reference/kotlin/android/media/ImageReader.OnImageAvailableListener.html#?, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#?)` Set onImageAvailableListener callback. |
@@ -69,7 +69,7 @@ See `https://developer.android.com/reference/kotlin/android/hardware/camera2/Mul
 
 | Parameters ||
 |---|---|
-| `streams` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [MultiResolutionStreamInfo](../android/hardware/camera2/params/MultiResolutionStreamInfo.md)!\>: The group of multi-resolution stream info. This value cannot be `null`. |
+| `streams` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [MultiResolutionStreamInfo](../android.hardware.camera2.params/MultiResolutionStreamInfo.md)!\>: The group of multi-resolution stream info. This value cannot be `null`. |
 | `format` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The format of the Image that this multi-resolution reader will produce. |
 | `maxImages` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The maximum number of images the user will want to access simultaneously. Value is 1 or greater |
 | --- | --- |
@@ -96,7 +96,7 @@ Unlike the normal ImageReader, the MultiResolutionImageReader has a more complex
 
 | Parameters ||
 |---|---|
-| `streams` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [MultiResolutionStreamInfo](../android/hardware/camera2/params/MultiResolutionStreamInfo.md)!\>: The group of multi-resolution stream info, which is used to create a multi-resolution reader containing a number of ImageReader objects. Each ImageReader object represents a multi-resolution stream in the group. This value cannot be `null`. |
+| `streams` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [MultiResolutionStreamInfo](../android.hardware.camera2.params/MultiResolutionStreamInfo.md)!\>: The group of multi-resolution stream info, which is used to create a multi-resolution reader containing a number of ImageReader objects. Each ImageReader object represents a multi-resolution stream in the group. This value cannot be `null`. |
 | `format` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The format of the Image that this multi-resolution reader will produce. This must be one of the `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#` or `https://developer.android.com/reference/kotlin/android/graphics/PixelFormat.html#` constants. Note that not all formats are supported, like ImageFormat.NV21. The supported multi-resolution reader format can be queried by `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/MultiResolutionStreamConfigurationMap#getOutputFormats()`. |
 | `maxImages` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The maximum number of images the user will want to access simultaneously. This should be as small as possible to limit memory use. Once maxImages images are obtained by the user from any given internal ImageReader, one of them has to be released before a new Image will become available for access through the ImageReader's `https://developer.android.com/reference/kotlin/android/media/ImageReader.html#acquireLatestImage()` or `https://developer.android.com/reference/kotlin/android/media/ImageReader.html#acquireNextImage()`. Must be greater than 0. Value is 1 or greater |
 | --- | --- |
@@ -164,7 +164,7 @@ An image from a `MultiResolutionImageReader` is produced from one of the underly
 
 | Parameters ||
 |---|---|
-| `reader` | [ImageReader](../android/media/ImageReader.md): An internal ImageReader within `MultiResolutionImageReader`. This value cannot be `null`. |
+| `reader` | [ImageReader](../android.media/ImageReader.md): An internal ImageReader within `MultiResolutionImageReader`. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -205,7 +205,7 @@ See `https://developer.android.com/reference/kotlin/android/hardware/camera2/Mul
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): The executor which will be used to invoke the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor which will be used to invoke the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `listener` | [MultiResolutionImageReader.OnActiveOutputSurfacesListener](../android/hardware/camera2/MultiResolutionImageReader.OnActiveOutputSurfacesListener.md): The listener that will be run. This value cannot be `null`. |
 
 | Exceptions ||
@@ -233,7 +233,7 @@ For a multi-resolution ImageReader, the timestamps of images acquired in onImage
 | Parameters ||
 |---|---|
 | `listener` | [ImageReader.OnImageAvailableListener](../android/media/ImageReader.OnImageAvailableListener.md)?: The listener that will be run. This value may be `null`. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md)?: The executor which will be used when invoking the callback. This value may be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md)?: The executor which will be used when invoking the callback. This value may be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 
 ## Protected methods
 

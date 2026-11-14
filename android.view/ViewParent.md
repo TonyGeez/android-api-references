@@ -4,19 +4,19 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # ViewParent
 
-Kotlin| [Java](../android/view/ViewParent.md) 
+Kotlin| [Java](ViewParent.md) 
 | --- | --- |
 
 ```
 interface ViewParent
 ```
 
-| [android.view.ViewParent](../android/view/ViewParent.md) |
+| [android.view.ViewParent](ViewParent.md) |
 
-| Known Direct Subclasses [ViewGroup](../android/view/ViewGroup.md) |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------| | [ViewGroup](../android/view/ViewGroup.md) | A`ViewGroup`is a special view that can contain other views (called children.) The view group is the base class for layouts and views containers. | |
+| Known Direct Subclasses [ViewGroup](ViewGroup.md) |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------| | [ViewGroup](ViewGroup.md) | A`ViewGroup`is a special view that can contain other views (called children.) The view group is the base class for layouts and views containers. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [AbsListView](../android/widget/AbsListView.md), [AbsSpinner](../android/widget/AbsSpinner.md), [AbsoluteLayout](../android/widget/AbsoluteLayout.md), [ActionMenuView](../android/widget/ActionMenuView.md), [AdapterView](../android/widget/AdapterView.md), [AdapterViewAnimator](../android/widget/AdapterViewAnimator.md), [AdapterViewFlipper](../android/widget/AdapterViewFlipper.md), [AppWidgetHostView](../android/appwidget/AppWidgetHostView.md), [CalendarView](../android/widget/CalendarView.md), [DatePicker](../android/widget/DatePicker.md), [DialerFilter](../android/widget/DialerFilter.md), [ExpandableListView](../android/widget/ExpandableListView.md), and 37 others. |--------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [AbsListView](../android/widget/AbsListView.md) | Base class that can be used to implement virtualized lists of items. | | [AbsSpinner](../android/widget/AbsSpinner.md) | An abstract base class for spinner widgets. | | [AbsoluteLayout](../android/widget/AbsoluteLayout.md) | A layout that lets you specify exact locations (x/y coordinates) of its children. | | [ActionMenuView](../android/widget/ActionMenuView.md) | ActionMenuView is a presentation of a series of menu options as a View. | | [AdapterView](../android/widget/AdapterView.md) | An AdapterView is a view whose children are determined by an [Adapter](../android/widget/Adapter.md). | | [AdapterViewAnimator](../android/widget/AdapterViewAnimator.md) | Base class for a [AdapterView](../android/widget/AdapterView.md) that will perform animations when switching between its views. | | [AdapterViewFlipper](../android/widget/AdapterViewFlipper.md) | Simple [ViewAnimator](../android/widget/ViewAnimator.md) that will animate between two or more views that have been added to it. | | [AppWidgetHostView](../android/appwidget/AppWidgetHostView.md) | Provides the glue to show AppWidget views. | | [CalendarView](../android/widget/CalendarView.md) | This class is a calendar widget for displaying and selecting dates. | | [DatePicker](../android/widget/DatePicker.md) | Provides a widget for selecting a date. | | [DialerFilter](../android/widget/DialerFilter.md) | This widget is a layout that contains several specifically-named child views that handle keyboard entry interpreted as standard phone dialpad digits. | | [ExpandableListView](../android/widget/ExpandableListView.md) | A view that shows items in a vertically scrolling two-level list. | | [FragmentBreadCrumbs](../android/app/FragmentBreadCrumbs.md) | Helper class for showing "bread crumbs" representing the fragment stack in an activity. | | [FrameLayout](../android/widget/FrameLayout.md) | FrameLayout is designed to block out an area on the screen to display a single item. | | [Gallery](../android/widget/Gallery.md) | A view that shows items in a center-locked, horizontally scrolling list. | | [GestureOverlayView](../android/gesture/GestureOverlayView.md) | A transparent overlay for gesture input that can be placed on top of other widgets or contain other widgets. | | [GridLayout](../android/widget/GridLayout.md) | A layout that places its children in a rectangular*grid*. | | [GridView](../android/widget/GridView.md) | A view that shows items in two-dimensional scrolling grid. | | [HorizontalScrollView](../android/widget/HorizontalScrollView.md) | Layout container for a view hierarchy that can be scrolled by the user, allowing it to be larger than the physical display. | | [ImageSwitcher](../android/widget/ImageSwitcher.md) | [ViewSwitcher](../android/widget/ViewSwitcher.md) that switches between two ImageViews when a new image is set on it. | | [InlineContentView](../android/widget/inline/InlineContentView.md) | This class represents a view that holds opaque content from another app that you can inline in your UI. | | [LinearLayout](../android/widget/LinearLayout.md) | A layout that arranges other views either horizontally in a single column or vertically in a single row. | | [ListView](../android/widget/ListView.md) | Displays a vertically-scrollable collection of views, where each view is positioned immediately below the previous view in the list. | | [MediaController](../android/widget/MediaController.md) | A view containing controls for a MediaPlayer. | | [NumberPicker](../android/widget/NumberPicker.md) | A widget that enables the user to select a number from a predefined range. | | [RadioGroup](../android/widget/RadioGroup.md) | This class is used to create a multiple-exclusion scope for a set of radio buttons. | | [RelativeLayout](../android/widget/RelativeLayout.md) | A Layout where the positions of the children can be described in relation to each other or to the parent. | | [ScrollView](../android/widget/ScrollView.md) | A view group that allows the view hierarchy placed within it to be scrolled. | | [SearchView](../android/widget/SearchView.md) | A widget that provides a user interface for the user to enter a search query and submit a request to a search provider. | | [SlidingDrawer](../android/widget/SlidingDrawer.md) | SlidingDrawer hides content out of the screen and allows the user to drag a handle to bring the content on screen. | | [Spinner](../android/widget/Spinner.md) | A view that displays one child at a time and lets the user pick among them. | | [SplashScreenView](../android/window/SplashScreenView.md) | The view which allows an activity to customize its splash screen exit animation. | | [StackView](../android/widget/StackView.md) | <br /> | | [TabHost](../android/widget/TabHost.md) | Container for a tabbed window view. | | [TabWidget](../android/widget/TabWidget.md) | Displays a list of tab labels representing each page in the parent's tab collection. | | [TableLayout](../android/widget/TableLayout.md) | A layout that arranges its children into rows and columns. | | [TableRow](../android/widget/TableRow.md) | A layout that arranges its children horizontally. | | [TextSwitcher](../android/widget/TextSwitcher.md) | Specialized [android.widget.ViewSwitcher](../android/widget/ViewSwitcher.md) that contains only children of type [android.widget.TextView](../android/widget/TextView.md). | | [TimePicker](../android/widget/TimePicker.md) | A widget for selecting the time of day, in either 24-hour or AM/PM mode. | | [Toolbar](../android/widget/Toolbar.md) | A standard toolbar for use within application content. | | [TvAdView](../android/media/tv/ad/TvAdView.md) | Displays contents of TV advertisement services. | | [TvInteractiveAppView](../android/media/tv/interactive/TvInteractiveAppView.md) | Displays contents of interactive TV applications. | | [TvView](../android/media/tv/TvView.md) | Displays TV contents. | | [TwoLineListItem](../android/widget/TwoLineListItem.md) | A view group with two children, intended for use in ListViews. | | [ViewAnimator](../android/widget/ViewAnimator.md) | Base class for a [FrameLayout](../android/widget/FrameLayout.md) container that will perform animations when switching between its views. | | [ViewFlipper](../android/widget/ViewFlipper.md) | Simple [ViewAnimator](../android/widget/ViewAnimator.md) that will animate between two or more views that have been added to it. | | [ViewSwitcher](../android/widget/ViewSwitcher.md) | [ViewAnimator](../android/widget/ViewAnimator.md) that switches between two views, and has a factory from which these views are created. | | [WebView](../android/webkit/WebView.md) | A View that displays web pages. | | [ZoomControls](../android/widget/ZoomControls.md) | The`ZoomControls`class displays a simple set of controls used for zooming and provides callbacks to register for events. | |
+| Known Indirect Subclasses [AbsListView](../android.widget/AbsListView.md), [AbsSpinner](../android.widget/AbsSpinner.md), [AbsoluteLayout](../android.widget/AbsoluteLayout.md), [ActionMenuView](../android.widget/ActionMenuView.md), [AdapterView](../android.widget/AdapterView.md), [AdapterViewAnimator](../android.widget/AdapterViewAnimator.md), [AdapterViewFlipper](../android.widget/AdapterViewFlipper.md), [AppWidgetHostView](../android.appwidget/AppWidgetHostView.md), [CalendarView](../android.widget/CalendarView.md), [DatePicker](../android.widget/DatePicker.md), [DialerFilter](../android.widget/DialerFilter.md), [ExpandableListView](../android.widget/ExpandableListView.md), and 37 others. |--------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [AbsListView](../android.widget/AbsListView.md) | Base class that can be used to implement virtualized lists of items. | | [AbsSpinner](../android.widget/AbsSpinner.md) | An abstract base class for spinner widgets. | | [AbsoluteLayout](../android.widget/AbsoluteLayout.md) | A layout that lets you specify exact locations (x/y coordinates) of its children. | | [ActionMenuView](../android.widget/ActionMenuView.md) | ActionMenuView is a presentation of a series of menu options as a View. | | [AdapterView](../android.widget/AdapterView.md) | An AdapterView is a view whose children are determined by an [Adapter](../android.widget/Adapter.md). | | [AdapterViewAnimator](../android.widget/AdapterViewAnimator.md) | Base class for a [AdapterView](../android.widget/AdapterView.md) that will perform animations when switching between its views. | | [AdapterViewFlipper](../android.widget/AdapterViewFlipper.md) | Simple [ViewAnimator](../android.widget/ViewAnimator.md) that will animate between two or more views that have been added to it. | | [AppWidgetHostView](../android.appwidget/AppWidgetHostView.md) | Provides the glue to show AppWidget views. | | [CalendarView](../android.widget/CalendarView.md) | This class is a calendar widget for displaying and selecting dates. | | [DatePicker](../android.widget/DatePicker.md) | Provides a widget for selecting a date. | | [DialerFilter](../android.widget/DialerFilter.md) | This widget is a layout that contains several specifically-named child views that handle keyboard entry interpreted as standard phone dialpad digits. | | [ExpandableListView](../android.widget/ExpandableListView.md) | A view that shows items in a vertically scrolling two-level list. | | [FragmentBreadCrumbs](../android.app/FragmentBreadCrumbs.md) | Helper class for showing "bread crumbs" representing the fragment stack in an activity. | | [FrameLayout](../android.widget/FrameLayout.md) | FrameLayout is designed to block out an area on the screen to display a single item. | | [Gallery](../android.widget/Gallery.md) | A view that shows items in a center-locked, horizontally scrolling list. | | [GestureOverlayView](../android.gesture/GestureOverlayView.md) | A transparent overlay for gesture input that can be placed on top of other widgets or contain other widgets. | | [GridLayout](../android.widget/GridLayout.md) | A layout that places its children in a rectangular*grid*. | | [GridView](../android.widget/GridView.md) | A view that shows items in two-dimensional scrolling grid. | | [HorizontalScrollView](../android.widget/HorizontalScrollView.md) | Layout container for a view hierarchy that can be scrolled by the user, allowing it to be larger than the physical display. | | [ImageSwitcher](../android.widget/ImageSwitcher.md) | [ViewSwitcher](../android.widget/ViewSwitcher.md) that switches between two ImageViews when a new image is set on it. | | [InlineContentView](../android.widget.inline/InlineContentView.md) | This class represents a view that holds opaque content from another app that you can inline in your UI. | | [LinearLayout](../android.widget/LinearLayout.md) | A layout that arranges other views either horizontally in a single column or vertically in a single row. | | [ListView](../android.widget/ListView.md) | Displays a vertically-scrollable collection of views, where each view is positioned immediately below the previous view in the list. | | [MediaController](../android.widget/MediaController.md) | A view containing controls for a MediaPlayer. | | [NumberPicker](../android.widget/NumberPicker.md) | A widget that enables the user to select a number from a predefined range. | | [RadioGroup](../android.widget/RadioGroup.md) | This class is used to create a multiple-exclusion scope for a set of radio buttons. | | [RelativeLayout](../android.widget/RelativeLayout.md) | A Layout where the positions of the children can be described in relation to each other or to the parent. | | [ScrollView](../android.widget/ScrollView.md) | A view group that allows the view hierarchy placed within it to be scrolled. | | [SearchView](../android.widget/SearchView.md) | A widget that provides a user interface for the user to enter a search query and submit a request to a search provider. | | [SlidingDrawer](../android.widget/SlidingDrawer.md) | SlidingDrawer hides content out of the screen and allows the user to drag a handle to bring the content on screen. | | [Spinner](../android.widget/Spinner.md) | A view that displays one child at a time and lets the user pick among them. | | [SplashScreenView](../android.window/SplashScreenView.md) | The view which allows an activity to customize its splash screen exit animation. | | [StackView](../android.widget/StackView.md) | <br /> | | [TabHost](../android.widget/TabHost.md) | Container for a tabbed window view. | | [TabWidget](../android.widget/TabWidget.md) | Displays a list of tab labels representing each page in the parent's tab collection. | | [TableLayout](../android.widget/TableLayout.md) | A layout that arranges its children into rows and columns. | | [TableRow](../android.widget/TableRow.md) | A layout that arranges its children horizontally. | | [TextSwitcher](../android.widget/TextSwitcher.md) | Specialized [android.widget.ViewSwitcher](../android.widget/ViewSwitcher.md) that contains only children of type [android.widget.TextView](../android.widget/TextView.md). | | [TimePicker](../android.widget/TimePicker.md) | A widget for selecting the time of day, in either 24-hour or AM/PM mode. | | [Toolbar](../android.widget/Toolbar.md) | A standard toolbar for use within application content. | | [TvAdView](../android.media.tv.ad/TvAdView.md) | Displays contents of TV advertisement services. | | [TvInteractiveAppView](../android.media.tv.interactive/TvInteractiveAppView.md) | Displays contents of interactive TV applications. | | [TvView](../android.media.tv/TvView.md) | Displays TV contents. | | [TwoLineListItem](../android.widget/TwoLineListItem.md) | A view group with two children, intended for use in ListViews. | | [ViewAnimator](../android.widget/ViewAnimator.md) | Base class for a [FrameLayout](../android.widget/FrameLayout.md) container that will perform animations when switching between its views. | | [ViewFlipper](../android.widget/ViewFlipper.md) | Simple [ViewAnimator](../android.widget/ViewAnimator.md) that will animate between two or more views that have been added to it. | | [ViewSwitcher](../android.widget/ViewSwitcher.md) | [ViewAnimator](../android.widget/ViewAnimator.md) that switches between two views, and has a factory from which these views are created. | | [WebView](../android.webkit/WebView.md) | A View that displays web pages. | | [ZoomControls](../android.widget/ZoomControls.md) | The`ZoomControls`class displays a simple set of controls used for zooming and provides callbacks to register for events. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Defines the responsibilities for a class that will be a parent of a View. This is the API that a view sees when it wants to interact with its parent.
@@ -25,68 +25,68 @@ Defines the responsibilities for a class that will be a parent of a View. This i
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [bringChildToFront](../android/view/ViewParent.md))`(`child:` ` [View](../android/view/View.md)!`)` Change the z order of the child so it's on top of all other children. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [canResolveLayoutDirection](../android/view/ViewParent.md))`()` Tells if this view parent can resolve the layout direction. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [canResolveTextAlignment](../android/view/ViewParent.md))`()` Tells if this view parent can resolve the text alignment. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [bringChildToFront](ViewParent.md))`(`child:` ` [View](View.md)!`)` Change the z order of the child so it's on top of all other children. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [canResolveLayoutDirection](ViewParent.md))`()` Tells if this view parent can resolve the layout direction. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [canResolveTextAlignment](ViewParent.md))`()` Tells if this view parent can resolve the text alignment. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [canResolveTextDirection](../android/view/ViewParent.md))`()` Tells if this view parent can resolve the text direction. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [childDrawableStateChanged](../android/view/ViewParent.md))`(`child:` ` [View](../android/view/View.md)`)` This method is called on the parent when a child's drawable state has changed. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [childHasTransientStateChanged](../android/view/ViewParent.md))`(`child:` ` [View](../android/view/View.md)`, `hasTransientState:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Called when a child view now has or no longer is tracking transient state. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [canResolveTextDirection](ViewParent.md))`()` Tells if this view parent can resolve the text direction. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [childDrawableStateChanged](ViewParent.md))`(`child:` ` [View](View.md)`)` This method is called on the parent when a child's drawable state has changed. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [childHasTransientStateChanged](ViewParent.md))`(`child:` ` [View](View.md)`, `hasTransientState:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Called when a child view now has or no longer is tracking transient state. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearChildFocus](../android/view/ViewParent.md))`(`child:` ` [View](../android/view/View.md)!`)` Called when a child of this parent is giving up focus |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [createContextMenu](../android/view/ViewParent.md))`(`menu:` ` [ContextMenu](../android/view/ContextMenu.md)!`)` Have the parent populate the specified context menu if it has anything to add (and then recurse on its parent). |
-| open [OnBackInvokedDispatcher](../android/window/OnBackInvokedDispatcher.md)? | [findOnBackInvokedDispatcherForChild](../android/view/ViewParent.md))`(`child:` ` [View](../android/view/View.md)`, `requester:` ` [View](../android/view/View.md)`)` Walk up the View hierarchy to find the nearest [OnBackInvokedDispatcher](../android/window/OnBackInvokedDispatcher.md). |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearChildFocus](ViewParent.md))`(`child:` ` [View](View.md)!`)` Called when a child of this parent is giving up focus |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [createContextMenu](ViewParent.md))`(`menu:` ` [ContextMenu](ContextMenu.md)!`)` Have the parent populate the specified context menu if it has anything to add (and then recurse on its parent). |
+| open [OnBackInvokedDispatcher](../android.window/OnBackInvokedDispatcher.md)? | [findOnBackInvokedDispatcherForChild](ViewParent.md))`(`child:` ` [View](View.md)`, `requester:` ` [View](View.md)`)` Walk up the View hierarchy to find the nearest [OnBackInvokedDispatcher](../android.window/OnBackInvokedDispatcher.md). |
 | --- | --- |
-| abstract [View](../android/view/View.md)! | [focusSearch](../android/view/ViewParent.md))`(`v:` ` [View](../android/view/View.md)!`, `direction:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Find the nearest view in the specified direction that wants to take focus |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [focusableViewAvailable](../android/view/ViewParent.md))`(`v:` ` [View](../android/view/View.md)!`)` Tells the parent that a new focusable view has become available. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getChildVisibleRect](../android/view/ViewParent.md))`(`child:` ` [View](../android/view/View.md)!`, `r:` ` [Rect](../android/graphics/Rect.md)!`, `offset:` ` [Point](../android/graphics/Point.md)!`)` Compute the visible part of a rectangular region defined in terms of a child view's coordinates. |
+| abstract [View](View.md)! | [focusSearch](ViewParent.md))`(`v:` ` [View](View.md)!`, `direction:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Find the nearest view in the specified direction that wants to take focus |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [focusableViewAvailable](ViewParent.md))`(`v:` ` [View](View.md)!`)` Tells the parent that a new focusable view has become available. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getChildVisibleRect](ViewParent.md))`(`child:` ` [View](View.md)!`, `r:` ` [Rect](../android.graphics/Rect.md)!`, `offset:` ` [Point](../android.graphics/Point.md)!`)` Compute the visible part of a rectangular region defined in terms of a child view's coordinates. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLayoutDirection](../android/view/ViewParent.md))`()` Return this view parent layout direction. |
-| abstract [ViewParent](../android/view/ViewParent.md)! | [getParent](../android/view/ViewParent.md))`()` Returns the parent if it exists, or null. |
-| abstract [ViewParent](../android/view/ViewParent.md)! | [getParentForAccessibility](../android/view/ViewParent.md))`()` Gets the parent of a given View for accessibility. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLayoutDirection](ViewParent.md))`()` Return this view parent layout direction. |
+| abstract [ViewParent](ViewParent.md)! | [getParent](ViewParent.md))`()` Returns the parent if it exists, or null. |
+| abstract [ViewParent](ViewParent.md)! | [getParentForAccessibility](ViewParent.md))`()` Gets the parent of a given View for accessibility. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTextAlignment](../android/view/ViewParent.md))`()` Return this view parent text alignment. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTextDirection](../android/view/ViewParent.md))`()` Return this view parent text direction. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [invalidateChild](../android/view/ViewParent.md))`(`child:` ` [View](../android/view/View.md)!`, `r:` ` [Rect](../android/graphics/Rect.md)!`)` All or part of a child is dirty and needs to be redrawn. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTextAlignment](ViewParent.md))`()` Return this view parent text alignment. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTextDirection](ViewParent.md))`()` Return this view parent text direction. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [invalidateChild](ViewParent.md))`(`child:` ` [View](View.md)!`, `r:` ` [Rect](../android.graphics/Rect.md)!`)` All or part of a child is dirty and needs to be redrawn. |
 | --- | --- |
-| abstract [ViewParent](../android/view/ViewParent.md)! | [invalidateChildInParent](../android/view/ViewParent.md))`(`location:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `r:` ` [Rect](../android/graphics/Rect.md)!`)` All or part of a child is dirty and needs to be redrawn. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLayoutDirectionResolved](../android/view/ViewParent.md))`()` Tells if this view parent layout direction is resolved. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLayoutRequested](../android/view/ViewParent.md))`()` Indicates whether layout was requested on this view parent. |
+| abstract [ViewParent](ViewParent.md)! | [invalidateChildInParent](ViewParent.md))`(`location:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `r:` ` [Rect](../android.graphics/Rect.md)!`)` All or part of a child is dirty and needs to be redrawn. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLayoutDirectionResolved](ViewParent.md))`()` Tells if this view parent layout direction is resolved. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLayoutRequested](ViewParent.md))`()` Indicates whether layout was requested on this view parent. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isTextAlignmentResolved](../android/view/ViewParent.md))`()` Tells if this view parent text alignment is resolved. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isTextDirectionResolved](../android/view/ViewParent.md))`()` Tells if this view parent text direction is resolved. |
-| abstract [View](../android/view/View.md)! | [keyboardNavigationClusterSearch](../android/view/ViewParent.md))`(`currentCluster:` ` [View](../android/view/View.md)!`, `direction:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Find the nearest keyboard navigation cluster in the specified direction. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isTextAlignmentResolved](ViewParent.md))`()` Tells if this view parent text alignment is resolved. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isTextDirectionResolved](ViewParent.md))`()` Tells if this view parent text direction is resolved. |
+| abstract [View](View.md)! | [keyboardNavigationClusterSearch](ViewParent.md))`(`currentCluster:` ` [View](View.md)!`, `direction:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Find the nearest keyboard navigation cluster in the specified direction. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [notifySubtreeAccessibilityStateChanged](../android/view/ViewParent.md))`(`child:` ` [View](../android/view/View.md)`, `source:` ` [View](../android/view/View.md)`, `changeType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Notifies a view parent that the accessibility state of one of its descendants has changed and that the structure of the subtree is different. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDescendantInvalidated](../android/view/ViewParent.md))`(`child:` ` [View](../android/view/View.md)`, `target:` ` [View](../android/view/View.md)`)` The target View has been invalidated, or has had a drawing property changed that requires the hierarchy to re-render. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onNestedFling](../android/view/ViewParent.md))`(`target:` ` [View](../android/view/View.md)`, `velocityX:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `velocityY:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `consumed:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Request a fling from a nested scroll. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [notifySubtreeAccessibilityStateChanged](ViewParent.md))`(`child:` ` [View](View.md)`, `source:` ` [View](View.md)`, `changeType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Notifies a view parent that the accessibility state of one of its descendants has changed and that the structure of the subtree is different. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDescendantInvalidated](ViewParent.md))`(`child:` ` [View](View.md)`, `target:` ` [View](View.md)`)` The target View has been invalidated, or has had a drawing property changed that requires the hierarchy to re-render. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onNestedFling](ViewParent.md))`(`target:` ` [View](View.md)`, `velocityX:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `velocityY:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `consumed:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Request a fling from a nested scroll. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onNestedPreFling](../android/view/ViewParent.md))`(`target:` ` [View](../android/view/View.md)`, `velocityX:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `velocityY:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` React to a nested fling before the target view consumes it. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onNestedPrePerformAccessibilityAction](../android/view/ViewParent.md))`(`target:` ` [View](../android/view/View.md)`, `action:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `arguments:` ` [Bundle](../android/os/Bundle.md)?`)` React to an accessibility action delegated by a target descendant view before the target processes it. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onNestedPreScroll](../android/view/ViewParent.md))`(`target:` ` [View](../android/view/View.md)`, `dx:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dy:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `consumed:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)`)` React to a nested scroll in progress before the target view consumes a portion of the scroll. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onNestedPreFling](ViewParent.md))`(`target:` ` [View](View.md)`, `velocityX:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `velocityY:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` React to a nested fling before the target view consumes it. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onNestedPrePerformAccessibilityAction](ViewParent.md))`(`target:` ` [View](View.md)`, `action:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `arguments:` ` [Bundle](../android.os/Bundle.md)?`)` React to an accessibility action delegated by a target descendant view before the target processes it. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onNestedPreScroll](ViewParent.md))`(`target:` ` [View](View.md)`, `dx:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dy:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `consumed:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)`)` React to a nested scroll in progress before the target view consumes a portion of the scroll. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onNestedScroll](../android/view/ViewParent.md))`(`target:` ` [View](../android/view/View.md)`, `dxConsumed:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dyConsumed:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dxUnconsumed:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dyUnconsumed:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` React to a nested scroll in progress. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onNestedScrollAccepted](../android/view/ViewParent.md))`(`child:` ` [View](../android/view/View.md)`, `target:` ` [View](../android/view/View.md)`, `nestedScrollAxes:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` React to the successful claiming of a nested scroll operation. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onStartNestedScroll](../android/view/ViewParent.md))`(`child:` ` [View](../android/view/View.md)`, `target:` ` [View](../android/view/View.md)`, `nestedScrollAxes:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` React to a descendant view initiating a nestable scroll operation, claiming the nested scroll operation if appropriate. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onNestedScroll](ViewParent.md))`(`target:` ` [View](View.md)`, `dxConsumed:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dyConsumed:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dxUnconsumed:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dyUnconsumed:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` React to a nested scroll in progress. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onNestedScrollAccepted](ViewParent.md))`(`child:` ` [View](View.md)`, `target:` ` [View](View.md)`, `nestedScrollAxes:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` React to the successful claiming of a nested scroll operation. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onStartNestedScroll](ViewParent.md))`(`child:` ` [View](View.md)`, `target:` ` [View](View.md)`, `nestedScrollAxes:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` React to a descendant view initiating a nestable scroll operation, claiming the nested scroll operation if appropriate. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStopNestedScroll](../android/view/ViewParent.md))`(`target:` ` [View](../android/view/View.md)`)` React to a nested scroll operation ending. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [recomputeViewAttributes](../android/view/ViewParent.md))`(`child:` ` [View](../android/view/View.md)!`)` Tell view hierarchy that the global view attributes need to be re-evaluated. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [requestChildFocus](../android/view/ViewParent.md))`(`child:` ` [View](../android/view/View.md)!`, `focused:` ` [View](../android/view/View.md)!`)` Called when a child of this parent wants focus |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStopNestedScroll](ViewParent.md))`(`target:` ` [View](View.md)`)` React to a nested scroll operation ending. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [recomputeViewAttributes](ViewParent.md))`(`child:` ` [View](View.md)!`)` Tell view hierarchy that the global view attributes need to be re-evaluated. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [requestChildFocus](ViewParent.md))`(`child:` ` [View](View.md)!`, `focused:` ` [View](View.md)!`)` Called when a child of this parent wants focus |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [requestChildRectangleOnScreen](../android/view/ViewParent.md))`(`child:` ` [View](../android/view/View.md)`, `rectangle:` ` [Rect](../android/graphics/Rect.md)!`, `immediate:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Called when a child of this group wants a particular rectangle to be positioned onto the screen. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [requestChildRectangleOnScreen](../android/view/ViewParent.md))`(`child:` ` [View](../android/view/View.md)`, `rectangle:` ` [Rect](../android/graphics/Rect.md)`, `immediate:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `source:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when a child of this group wants a particular rectangle to be positioned onto the screen. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [requestDisallowInterceptTouchEvent](../android/view/ViewParent.md))`(`disallowIntercept:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Called when a child does not want this parent and its ancestors to intercept touch events with [ViewGroup.onInterceptTouchEvent(MotionEvent)](../android/view/ViewGroup.md)). |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [requestChildRectangleOnScreen](ViewParent.md))`(`child:` ` [View](View.md)`, `rectangle:` ` [Rect](../android.graphics/Rect.md)!`, `immediate:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Called when a child of this group wants a particular rectangle to be positioned onto the screen. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [requestChildRectangleOnScreen](ViewParent.md))`(`child:` ` [View](View.md)`, `rectangle:` ` [Rect](../android.graphics/Rect.md)`, `immediate:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `source:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when a child of this group wants a particular rectangle to be positioned onto the screen. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [requestDisallowInterceptTouchEvent](ViewParent.md))`(`disallowIntercept:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Called when a child does not want this parent and its ancestors to intercept touch events with [ViewGroup.onInterceptTouchEvent(MotionEvent)](ViewGroup.md)). |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [requestFitSystemWindows](../android/view/ViewParent.md))`()` Ask that a new dispatch of [View.fitSystemWindows(Rect)](../android/view/View.md))be performed. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [requestLayout](../android/view/ViewParent.md))`()` Called when something has changed which has invalidated the layout of a child of this view parent. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [requestSendAccessibilityEvent](../android/view/ViewParent.md))`(`child:` ` [View](../android/view/View.md)`, `event:` ` [AccessibilityEvent](../android/view/accessibility/AccessibilityEvent.md)!`)` Called by a child to request from its parent to send an [AccessibilityEvent](../android/view/accessibility/AccessibilityEvent.md). |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [requestFitSystemWindows](ViewParent.md))`()` Ask that a new dispatch of [View.fitSystemWindows(Rect)](View.md))be performed. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [requestLayout](ViewParent.md))`()` Called when something has changed which has invalidated the layout of a child of this view parent. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [requestSendAccessibilityEvent](ViewParent.md))`(`child:` ` [View](View.md)`, `event:` ` [AccessibilityEvent](../android.view.accessibility/AccessibilityEvent.md)!`)` Called by a child to request from its parent to send an [AccessibilityEvent](../android.view.accessibility/AccessibilityEvent.md). |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [requestTransparentRegion](../android/view/ViewParent.md))`(`child:` ` [View](../android/view/View.md)!`)` Called when a child wants the view hierarchy to gather and report transparent regions to the window compositor. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [showContextMenuForChild](../android/view/ViewParent.md))`(`originalView:` ` [View](../android/view/View.md)!`)` Shows the context menu for the specified view or its ancestors. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [showContextMenuForChild](../android/view/ViewParent.md))`(`originalView:` ` [View](../android/view/View.md)!`, `x:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `y:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Shows the context menu for the specified view or its ancestors anchored to the specified view-relative coordinate. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [requestTransparentRegion](ViewParent.md))`(`child:` ` [View](View.md)!`)` Called when a child wants the view hierarchy to gather and report transparent regions to the window compositor. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [showContextMenuForChild](ViewParent.md))`(`originalView:` ` [View](View.md)!`)` Shows the context menu for the specified view or its ancestors. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [showContextMenuForChild](ViewParent.md))`(`originalView:` ` [View](View.md)!`, `x:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `y:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Shows the context menu for the specified view or its ancestors anchored to the specified view-relative coordinate. |
 | --- | --- |
-| abstract [ActionMode](../android/view/ActionMode.md)! | [startActionModeForChild](../android/view/ViewParent.md))`(`originalView:` ` [View](../android/view/View.md)!`, `callback:` ` [ActionMode.Callback](../android/view/ActionMode.Callback.md)!`)` Start an action mode for the specified view with the default type [ActionMode.TYPE_PRIMARY](../android/view/ActionMode.md). |
-| abstract [ActionMode](../android/view/ActionMode.md)! | [startActionModeForChild](../android/view/ViewParent.md))`(`originalView:` ` [View](../android/view/View.md)!`, `callback:` ` [ActionMode.Callback](../android/view/ActionMode.Callback.md)!`, `type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Start an action mode of a specific type for the specified view. |
+| abstract [ActionMode](ActionMode.md)! | [startActionModeForChild](ViewParent.md))`(`originalView:` ` [View](View.md)!`, `callback:` ` [ActionMode.Callback](../android/view/ActionMode.Callback.md)!`)` Start an action mode for the specified view with the default type [ActionMode.TYPE_PRIMARY](ActionMode.md). |
+| abstract [ActionMode](ActionMode.md)! | [startActionModeForChild](ViewParent.md))`(`originalView:` ` [View](View.md)!`, `callback:` ` [ActionMode.Callback](../android/view/ActionMode.Callback.md)!`, `type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Start an action mode of a specific type for the specified view. |
 
 ## Public methods
 
@@ -98,11 +98,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun bringChildToFront(child: View!): Unit
 ```
 
-Change the z order of the child so it's on top of all other children. This ordering change may affect layout, if this container uses an order-dependent layout scheme (e.g., LinearLayout). Prior to [android.os.Build.VERSION_CODES#KITKAT](../android/os/Build.VERSION_CODES.md) this method should be followed by calls to [requestLayout()](../android/view/ViewParent.md))and [View.invalidate()](../android/view/View.md))on this parent to force the parent to redraw with the new child ordering.
+Change the z order of the child so it's on top of all other children. This ordering change may affect layout, if this container uses an order-dependent layout scheme (e.g., LinearLayout). Prior to [android.os.Build.VERSION_CODES#KITKAT](../android/os/Build.VERSION_CODES.md) this method should be followed by calls to [requestLayout()](ViewParent.md))and [View.invalidate()](View.md))on this parent to force the parent to redraw with the new child ordering.
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------------|
-| `child` | [View](../android/view/View.md)!:The child to bring to the top of the z order |
+| `child` | [View](View.md)!:The child to bring to the top of the z order |
 
 ### canResolveLayoutDirection
 
@@ -112,7 +112,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 abstract fun canResolveLayoutDirection(): Boolean
 ```
 
-Tells if this view parent can resolve the layout direction. See [View.setLayoutDirection(int)](../android/view/View.md))
+Tells if this view parent can resolve the layout direction. See [View.setLayoutDirection(int)](View.md))
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------------------------|
@@ -126,7 +126,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 abstract fun canResolveTextAlignment(): Boolean
 ```
 
-Tells if this view parent can resolve the text alignment. See [View.setTextAlignment(int)](../android/view/View.md))
+Tells if this view parent can resolve the text alignment. See [View.setTextAlignment(int)](View.md))
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------------------------------------------------|
@@ -140,7 +140,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 abstract fun canResolveTextDirection(): Boolean
 ```
 
-Tells if this view parent can resolve the text direction. See [View.setTextDirection(int)](../android/view/View.md))
+Tells if this view parent can resolve the text direction. See [View.setTextDirection(int)](View.md))
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------------------------------------------------|
@@ -158,7 +158,7 @@ This method is called on the parent when a child's drawable state has changed.
 
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| `child` | [View](../android/view/View.md):The child whose drawable state has changed. This value cannot be`null`. |
+| `child` | [View](View.md):The child whose drawable state has changed. This value cannot be`null`. |
 
 ### childHasTransientStateChanged
 
@@ -181,7 +181,7 @@ This method is called on a parent view when a child view or a view within its su
 
 | Parameters ||
 |---------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| `child` | [View](../android/view/View.md):Child view whose state has changed This value cannot be`null`. |
+| `child` | [View](View.md):Child view whose state has changed This value cannot be`null`. |
 | `hasTransientState` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):true if this child has transient state |
 
 ### clearChildFocus
@@ -196,7 +196,7 @@ Called when a child of this parent is giving up focus
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------|
-| `child` | [View](../android/view/View.md)!:The view that is giving up focus |
+| `child` | [View](View.md)!:The view that is giving up focus |
 
 ### createContextMenu
 
@@ -210,7 +210,7 @@ Have the parent populate the specified context menu if it has anything to add (a
 
 | Parameters ||
 |--------|--------------------------------------------------------------------------------------------------------------|
-| `menu` | [ContextMenu](../android/view/ContextMenu.md)!:The menu to populate |
+| `menu` | [ContextMenu](ContextMenu.md)!:The menu to populate |
 
 ### findOnBackInvokedDispatcherForChild
 
@@ -223,16 +223,16 @@ open fun findOnBackInvokedDispatcherForChild(
 ): OnBackInvokedDispatcher?
 ```
 
-Walk up the View hierarchy to find the nearest [OnBackInvokedDispatcher](../android/window/OnBackInvokedDispatcher.md).
+Walk up the View hierarchy to find the nearest [OnBackInvokedDispatcher](../android.window/OnBackInvokedDispatcher.md).
 
 | Parameters ||
 |-------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `child` | [View](../android/view/View.md):The direct child of this view for which to find a dispatcher. This value cannot be`null`. |
-| `requester` | [View](../android/view/View.md):The requester that will use the dispatcher. Can be the same as child. This value cannot be`null`. |
+| `child` | [View](View.md):The direct child of this view for which to find a dispatcher. This value cannot be`null`. |
+| `requester` | [View](View.md):The requester that will use the dispatcher. Can be the same as child. This value cannot be`null`. |
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [OnBackInvokedDispatcher](../android/window/OnBackInvokedDispatcher.md)? | The [OnBackInvokedDispatcher](../android/window/OnBackInvokedDispatcher.md) from this or the nearest ancestor, or null if the view is both not attached and have no ancestor providing an [OnBackInvokedDispatcher](../android/window/OnBackInvokedDispatcher.md). |
+| [OnBackInvokedDispatcher](../android.window/OnBackInvokedDispatcher.md)? | The [OnBackInvokedDispatcher](../android.window/OnBackInvokedDispatcher.md) from this or the nearest ancestor, or null if the view is both not attached and have no ancestor providing an [OnBackInvokedDispatcher](../android.window/OnBackInvokedDispatcher.md). |
 
 ### focusSearch
 
@@ -249,7 +249,7 @@ Find the nearest view in the specified direction that wants to take focus
 
 | Parameters ||
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| `v` | [View](../android/view/View.md)!:The view that currently has focus |
+| `v` | [View](View.md)!:The view that currently has focus |
 | `direction` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):One of FOCUS_UP, FOCUS_DOWN, FOCUS_LEFT, and FOCUS_RIGHT |
 
 ### focusableViewAvailable
@@ -264,7 +264,7 @@ Tells the parent that a new focusable view has become available. This is to hand
 
 | Parameters ||
 |-----|--------------------------------------------------------------------------------------------------------------------|
-| `v` | [View](../android/view/View.md)!:The view that has become newly focusable |
+| `v` | [View](View.md)!:The view that has become newly focusable |
 
 ### getChildVisibleRect
 
@@ -286,9 +286,9 @@ The resulting rectangle is always axis aligned. If a rotation is applied to a no
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `child` | [View](../android/view/View.md)!:A child View, whose rectangular visible region we want to compute |
-| `r` | [Rect](../android/graphics/Rect.md)!:The input rectangle, defined in the child coordinate system. Will be overwritten to contain the resulting visible rectangle, expressed in global (root) coordinates |
-| `offset` | [Point](../android/graphics/Point.md)!:The input coordinates of a point, defined in the child coordinate system. As with the`r`parameter, this will be overwritten to contain the global (root) coordinates of that point. A`null`value is valid (in case you are not interested in this result) |
+| `child` | [View](View.md)!:A child View, whose rectangular visible region we want to compute |
+| `r` | [Rect](../android.graphics/Rect.md)!:The input rectangle, defined in the child coordinate system. Will be overwritten to contain the resulting visible rectangle, expressed in global (root) coordinates |
+| `offset` | [Point](../android.graphics/Point.md)!:The input coordinates of a point, defined in the child coordinate system. As with the`r`parameter, this will be overwritten to contain the global (root) coordinates of that point. A`null`value is valid (in case you are not interested in this result) |
 | --- | --- |
 
 | Return ||
@@ -303,11 +303,11 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 abstract fun getLayoutDirection(): Int
 ```
 
-Return this view parent layout direction. See [View.getLayoutDirection()](../android/view/View.md))
+Return this view parent layout direction. See [View.getLayoutDirection()](View.md))
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [View.LAYOUT_DIRECTION_RTL](../android/view/View.md) if the layout direction is RTL or returns [View.LAYOUT_DIRECTION_LTR](../android/view/View.md) if the layout direction is not RTL. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [View.LAYOUT_DIRECTION_RTL](View.md) if the layout direction is RTL or returns [View.LAYOUT_DIRECTION_LTR](View.md) if the layout direction is not RTL. |
 
 ### getParent
 
@@ -321,7 +321,7 @@ Returns the parent if it exists, or null.
 
 | Return ||
 |----------------------------------------------------------------------------------------|----------------------------------------------------------------|
-| [ViewParent](../android/view/ViewParent.md)! | a ViewParent or null if this ViewParent does not have a parent |
+| [ViewParent](ViewParent.md)! | a ViewParent or null if this ViewParent does not have a parent |
 
 ### getParentForAccessibility
 
@@ -335,7 +335,7 @@ Gets the parent of a given View for accessibility. Since some Views are not expo
 
 | Return ||
 |----------------------------------------------------------------------------------------|-----------------------------------------|
-| [ViewParent](../android/view/ViewParent.md)! | The parent or`null`if no such is found. |
+| [ViewParent](ViewParent.md)! | The parent or`null`if no such is found. |
 
 ### getTextAlignment
 
@@ -345,11 +345,11 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 abstract fun getTextAlignment(): Int
 ```
 
-Return this view parent text alignment. See [android.view.View#getTextAlignment()](../android/view/View.md))
+Return this view parent text alignment. See [android.view.View#getTextAlignment()](View.md))
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the resolved text alignment. Returns one of: [View.TEXT_ALIGNMENT_GRAVITY](../android/view/View.md), [View.TEXT_ALIGNMENT_CENTER](../android/view/View.md), [View.TEXT_ALIGNMENT_TEXT_START](../android/view/View.md), [View.TEXT_ALIGNMENT_TEXT_END](../android/view/View.md), [View.TEXT_ALIGNMENT_VIEW_START](../android/view/View.md), [View.TEXT_ALIGNMENT_VIEW_END](../android/view/View.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the resolved text alignment. Returns one of: [View.TEXT_ALIGNMENT_GRAVITY](View.md), [View.TEXT_ALIGNMENT_CENTER](View.md), [View.TEXT_ALIGNMENT_TEXT_START](View.md), [View.TEXT_ALIGNMENT_TEXT_END](View.md), [View.TEXT_ALIGNMENT_VIEW_START](View.md), [View.TEXT_ALIGNMENT_VIEW_END](View.md) |
 
 ### getTextDirection
 
@@ -359,11 +359,11 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 abstract fun getTextDirection(): Int
 ```
 
-Return this view parent text direction. See [View.getTextDirection()](../android/view/View.md))
+Return this view parent text direction. See [View.getTextDirection()](View.md))
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the resolved text direction. Returns one of: [View.TEXT_DIRECTION_FIRST_STRONG](../android/view/View.md) [View.TEXT_DIRECTION_ANY_RTL](../android/view/View.md), [View.TEXT_DIRECTION_LTR](../android/view/View.md), [View.TEXT_DIRECTION_RTL](../android/view/View.md), [View.TEXT_DIRECTION_LOCALE](../android/view/View.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the resolved text direction. Returns one of: [View.TEXT_DIRECTION_FIRST_STRONG](View.md) [View.TEXT_DIRECTION_ANY_RTL](View.md), [View.TEXT_DIRECTION_LTR](View.md), [View.TEXT_DIRECTION_RTL](View.md), [View.TEXT_DIRECTION_LOCALE](View.md) |
 
 ### invalidateChild
 
@@ -377,14 +377,14 @@ abstract fun invalidateChild(
 ): Unit
 ```
 
-**Deprecated:** *Use [onDescendantInvalidated(android.view.View,android.view.View)](../android/view/ViewParent.md))instead.*
+**Deprecated:** *Use [onDescendantInvalidated(android.view.View,android.view.View)](ViewParent.md))instead.*
 
 All or part of a child is dirty and needs to be redrawn.
 
 | Parameters ||
 |---------|-------------------------------------------------------------------------------------------------------------------------------|
-| `child` | [View](../android/view/View.md)!:The child which is dirty |
-| `r` | [Rect](../android/graphics/Rect.md)!:The area within the child that is invalid |
+| `child` | [View](View.md)!:The child which is dirty |
+| `r` | [Rect](../android.graphics/Rect.md)!:The area within the child that is invalid |
 
 ### invalidateChildInParent
 
@@ -398,7 +398,7 @@ abstract fun invalidateChildInParent(
 ): ViewParent!
 ```
 
-**Deprecated:** *Use [onDescendantInvalidated(android.view.View,android.view.View)](../android/view/ViewParent.md))instead.*
+**Deprecated:** *Use [onDescendantInvalidated(android.view.View,android.view.View)](ViewParent.md))instead.*
 
 All or part of a child is dirty and needs to be redrawn.
 
@@ -411,11 +411,11 @@ When this method returns a non-null value, the location array must have been upd
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `location` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!:An array of 2 ints containing the left and top coordinates of the child to invalidate |
-| `r` | [Rect](../android/graphics/Rect.md)!:The area within the child that is invalid |
+| `r` | [Rect](../android.graphics/Rect.md)!:The area within the child that is invalid |
 
 | Return ||
 |----------------------------------------------------------------------------------------|---------------------------------------|
-| [ViewParent](../android/view/ViewParent.md)! | the parent of this ViewParent or null |
+| [ViewParent](ViewParent.md)! | the parent of this ViewParent or null |
 
 ### isLayoutDirectionResolved
 
@@ -425,7 +425,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 abstract fun isLayoutDirectionResolved(): Boolean
 ```
 
-Tells if this view parent layout direction is resolved. See [View.setLayoutDirection(int)](../android/view/View.md))
+Tells if this view parent layout direction is resolved. See [View.setLayoutDirection(int)](View.md))
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------------------------------|
@@ -453,7 +453,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 abstract fun isTextAlignmentResolved(): Boolean
 ```
 
-Tells if this view parent text alignment is resolved. See [View.setTextAlignment(int)](../android/view/View.md))
+Tells if this view parent text alignment is resolved. See [View.setTextAlignment(int)](View.md))
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------------------|
@@ -467,7 +467,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 abstract fun isTextDirectionResolved(): Boolean
 ```
 
-Tells if this view parent text direction is resolved. See [View.setTextDirection(int)](../android/view/View.md))
+Tells if this view parent text direction is resolved. See [View.setTextDirection(int)](View.md))
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------------------|
@@ -488,12 +488,12 @@ Find the nearest keyboard navigation cluster in the specified direction. This do
 
 | Parameters ||
 |------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `currentCluster` | [View](../android/view/View.md)!:The starting point of the search. Null means the current cluster is not found yet |
+| `currentCluster` | [View](View.md)!:The starting point of the search. Null means the current cluster is not found yet |
 | `direction` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Direction to look |
 
 | Return ||
 |---------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| [View](../android/view/View.md)! | The nearest keyboard navigation cluster in the specified direction, or null if none can be found |
+| [View](View.md)! | The nearest keyboard navigation cluster in the specified direction, or null if none can be found |
 
 ### notifySubtreeAccessibilityStateChanged
 
@@ -511,9 +511,9 @@ Notifies a view parent that the accessibility state of one of its descendants ha
 
 | Parameters ||
 |--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `child` | [View](../android/view/View.md):The direct child whose subtree has changed. This value cannot be`null`. |
-| `source` | [View](../android/view/View.md):The descendant view that changed. May not be`null`. |
-| `changeType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):A bit mask of the types of changes that occurred. One or more of: - [AccessibilityEvent.CONTENT_CHANGE_TYPE_CONTENT_DESCRIPTION](../android/view/accessibility/AccessibilityEvent.md) - [AccessibilityEvent.CONTENT_CHANGE_TYPE_STATE_DESCRIPTION](../android/view/accessibility/AccessibilityEvent.md) - [AccessibilityEvent.CONTENT_CHANGE_TYPE_SUBTREE](../android/view/accessibility/AccessibilityEvent.md) - [AccessibilityEvent.CONTENT_CHANGE_TYPE_TEXT](../android/view/accessibility/AccessibilityEvent.md) - [AccessibilityEvent.CONTENT_CHANGE_TYPE_UNDEFINED](../android/view/accessibility/AccessibilityEvent.md) - [AccessibilityEvent.CONTENT_CHANGE_TYPE_DRAG_STARTED](../android/view/accessibility/AccessibilityEvent.md) - [AccessibilityEvent.CONTENT_CHANGE_TYPE_DRAG_CANCELLED](../android/view/accessibility/AccessibilityEvent.md) - [AccessibilityEvent.CONTENT_CHANGE_TYPE_DRAG_DROPPED](../android/view/accessibility/AccessibilityEvent.md) |
+| `child` | [View](View.md):The direct child whose subtree has changed. This value cannot be`null`. |
+| `source` | [View](View.md):The descendant view that changed. May not be`null`. |
+| `changeType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):A bit mask of the types of changes that occurred. One or more of: - [AccessibilityEvent.CONTENT_CHANGE_TYPE_CONTENT_DESCRIPTION](../android.view.accessibility/AccessibilityEvent.md) - [AccessibilityEvent.CONTENT_CHANGE_TYPE_STATE_DESCRIPTION](../android.view.accessibility/AccessibilityEvent.md) - [AccessibilityEvent.CONTENT_CHANGE_TYPE_SUBTREE](../android.view.accessibility/AccessibilityEvent.md) - [AccessibilityEvent.CONTENT_CHANGE_TYPE_TEXT](../android.view.accessibility/AccessibilityEvent.md) - [AccessibilityEvent.CONTENT_CHANGE_TYPE_UNDEFINED](../android.view.accessibility/AccessibilityEvent.md) - [AccessibilityEvent.CONTENT_CHANGE_TYPE_DRAG_STARTED](../android.view.accessibility/AccessibilityEvent.md) - [AccessibilityEvent.CONTENT_CHANGE_TYPE_DRAG_CANCELLED](../android.view.accessibility/AccessibilityEvent.md) - [AccessibilityEvent.CONTENT_CHANGE_TYPE_DRAG_DROPPED](../android.view.accessibility/AccessibilityEvent.md) |
 | --- | --- |
 
 ### onDescendantInvalidated
@@ -531,8 +531,8 @@ The target View has been invalidated, or has had a drawing property changed that
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `child` | [View](../android/view/View.md):Direct child of this ViewParent containing target This value cannot be`null`. |
-| `target` | [View](../android/view/View.md):The view that needs to redraw This value cannot be`null`. |
+| `child` | [View](View.md):Direct child of this ViewParent containing target This value cannot be`null`. |
+| `target` | [View](View.md):The view that needs to redraw This value cannot be`null`. |
 
 ### onNestedFling
 
@@ -549,13 +549,13 @@ abstract fun onNestedFling(
 
 Request a fling from a nested scroll.
 
-This method signifies that a nested scrolling child has detected suitable conditions for a fling. Generally this means that a touch scroll has ended with a [velocity](../android/view/VelocityTracker.md) in the direction of scrolling that meets or exceeds the [minimum fling velocity](../android/view/ViewConfiguration.md))along a scrollable axis.
+This method signifies that a nested scrolling child has detected suitable conditions for a fling. Generally this means that a touch scroll has ended with a [velocity](VelocityTracker.md) in the direction of scrolling that meets or exceeds the [minimum fling velocity](ViewConfiguration.md))along a scrollable axis.
 
 If a nested scrolling child view would normally fling but it is at the edge of its own content, it can use this method to delegate the fling to its nested scrolling parent instead. The parent may optionally consume the fling or observe a child fling.
 
 | Parameters ||
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| `target` | [View](../android/view/View.md):View that initiated the nested scroll This value cannot be`null`. |
+| `target` | [View](View.md):View that initiated the nested scroll This value cannot be`null`. |
 | `velocityX` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):Horizontal velocity in pixels per second |
 | `velocityY` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):Vertical velocity in pixels per second |
 | --- | --- |
@@ -579,13 +579,13 @@ abstract fun onNestedPreFling(
 
 React to a nested fling before the target view consumes it.
 
-This method siginfies that a nested scrolling child has detected a fling with the given velocity along each axis. Generally this means that a touch scroll has ended with a [velocity](../android/view/VelocityTracker.md) in the direction of scrolling that meets or exceeds the [minimum fling velocity](../android/view/ViewConfiguration.md))along a scrollable axis.
+This method siginfies that a nested scrolling child has detected a fling with the given velocity along each axis. Generally this means that a touch scroll has ended with a [velocity](VelocityTracker.md) in the direction of scrolling that meets or exceeds the [minimum fling velocity](ViewConfiguration.md))along a scrollable axis.
 
-If a nested scrolling parent is consuming motion as part of a [pre-scroll](../android/view/ViewParent.md)), it may be appropriate for it to also consume the pre-fling to complete that same motion. By returning`true`from this method, the parent indicates that the child should not fling its own internal content as well.
+If a nested scrolling parent is consuming motion as part of a [pre-scroll](ViewParent.md)), it may be appropriate for it to also consume the pre-fling to complete that same motion. By returning`true`from this method, the parent indicates that the child should not fling its own internal content as well.
 
 | Parameters ||
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| `target` | [View](../android/view/View.md):View that initiated the nested scroll This value cannot be`null`. |
+| `target` | [View](View.md):View that initiated the nested scroll This value cannot be`null`. |
 | `velocityX` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):Horizontal velocity in pixels per second |
 | `velocityY` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):Vertical velocity in pixels per second |
 | --- | --- |
@@ -608,13 +608,13 @@ abstract fun onNestedPrePerformAccessibilityAction(
 
 React to an accessibility action delegated by a target descendant view before the target processes it.
 
-This method may be called by a target descendant view if the target wishes to give a view in its parent chain a chance to react to the event before normal processing occurs. Most commonly this will be a scroll event such as [android.view.accessibility.AccessibilityNodeInfo#ACTION_SCROLL_FORWARD](../android/view/accessibility/AccessibilityNodeInfo.md). A ViewParent that supports acting as a nested scrolling parent should override this method and act accordingly to implement scrolling via accesibility systems.
+This method may be called by a target descendant view if the target wishes to give a view in its parent chain a chance to react to the event before normal processing occurs. Most commonly this will be a scroll event such as [android.view.accessibility.AccessibilityNodeInfo#ACTION_SCROLL_FORWARD](../android.view.accessibility/AccessibilityNodeInfo.md). A ViewParent that supports acting as a nested scrolling parent should override this method and act accordingly to implement scrolling via accesibility systems.
 
 | Parameters ||
 |-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `target` | [View](../android/view/View.md):The target view dispatching this action This value cannot be`null`. |
-| `action` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Action being performed; see [android.view.accessibility.AccessibilityNodeInfo](../android/view/accessibility/AccessibilityNodeInfo.md) |
-| `arguments` | [Bundle](../android/os/Bundle.md)?:Optional action arguments This value may be`null`. |
+| `target` | [View](View.md):The target view dispatching this action This value cannot be`null`. |
+| `action` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Action being performed; see [android.view.accessibility.AccessibilityNodeInfo](../android.view.accessibility/AccessibilityNodeInfo.md) |
+| `arguments` | [Bundle](../android.os/Bundle.md)?:Optional action arguments This value may be`null`. |
 | --- | --- |
 
 | Return ||
@@ -642,7 +642,7 @@ When working with nested scrolling often the parent view may want an opportunity
 
 | Parameters ||
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `target` | [View](../android/view/View.md):View that initiated the nested scroll This value cannot be`null`. |
+| `target` | [View](View.md):View that initiated the nested scroll This value cannot be`null`. |
 | `dx` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Horizontal scroll distance in pixels |
 | `dy` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Vertical scroll distance in pixels |
 | --- | --- |
@@ -664,13 +664,13 @@ abstract fun onNestedScroll(
 
 React to a nested scroll in progress.
 
-This method will be called when the ViewParent's current nested scrolling child view dispatches a nested scroll event. To receive calls to this method the ViewParent must have previously returned`true`for a call to [onStartNestedScroll(android.view.View,android.view.View,int)](../android/view/ViewParent.md)).
+This method will be called when the ViewParent's current nested scrolling child view dispatches a nested scroll event. To receive calls to this method the ViewParent must have previously returned`true`for a call to [onStartNestedScroll(android.view.View,android.view.View,int)](ViewParent.md)).
 
 Both the consumed and unconsumed portions of the scroll distance are reported to the ViewParent. An implementation may choose to use the consumed portion to match or chase scroll position of multiple child elements, for example. The unconsumed portion may be used to allow continuous dragging of multiple scrolling or draggable elements, such as scrolling a list within a vertical drawer where the drawer begins dragging once the edge of inner scrolling content is reached.
 
 | Parameters ||
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `target` | [View](../android/view/View.md):The descendent view controlling the nested scroll This value cannot be`null`. |
+| `target` | [View](View.md):The descendent view controlling the nested scroll This value cannot be`null`. |
 | `dxConsumed` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Horizontal scroll distance in pixels already consumed by target |
 | `dyConsumed` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Vertical scroll distance in pixels already consumed by target |
 | --- | --- |
@@ -691,19 +691,19 @@ abstract fun onNestedScrollAccepted(
 
 React to the successful claiming of a nested scroll operation.
 
-This method will be called after [onStartNestedScroll](../android/view/ViewParent.md))returns true. It offers an opportunity for the view and its superclasses to perform initial configuration for the nested scroll. Implementations of this method should always call their superclass's implementation of this method if one is present.
+This method will be called after [onStartNestedScroll](ViewParent.md))returns true. It offers an opportunity for the view and its superclasses to perform initial configuration for the nested scroll. Implementations of this method should always call their superclass's implementation of this method if one is present.
 
 | Parameters ||
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `child` | [View](../android/view/View.md):Direct child of this ViewParent containing target This value cannot be`null`. |
-| `target` | [View](../android/view/View.md):View that initiated the nested scroll This value cannot be`null`. |
-| `nestedScrollAxes` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Flags consisting of [View.SCROLL_AXIS_HORIZONTAL](../android/view/View.md), [View.SCROLL_AXIS_VERTICAL](../android/view/View.md) or both |
+| `child` | [View](View.md):Direct child of this ViewParent containing target This value cannot be`null`. |
+| `target` | [View](View.md):View that initiated the nested scroll This value cannot be`null`. |
+| `nestedScrollAxes` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Flags consisting of [View.SCROLL_AXIS_HORIZONTAL](View.md), [View.SCROLL_AXIS_VERTICAL](View.md) or both |
 | --- | --- |
 
 **See Also**
 
-- [#onStartNestedScroll(View, View, int)](../android/view/ViewParent.md))
-- [#onStopNestedScroll(View)](../android/view/ViewParent.md)) 
+- [#onStartNestedScroll(View, View, int)](ViewParent.md))
+- [#onStopNestedScroll(View)](ViewParent.md)) 
 
 ### onStartNestedScroll
 
@@ -719,15 +719,15 @@ abstract fun onStartNestedScroll(
 
 React to a descendant view initiating a nestable scroll operation, claiming the nested scroll operation if appropriate.
 
-This method will be called in response to a descendant view invoking [View.startNestedScroll(int)](../android/view/View.md)). Each parent up the view hierarchy will be given an opportunity to respond and claim the nested scrolling operation by returning`true`.
+This method will be called in response to a descendant view invoking [View.startNestedScroll(int)](View.md)). Each parent up the view hierarchy will be given an opportunity to respond and claim the nested scrolling operation by returning`true`.
 
-This method may be overridden by ViewParent implementations to indicate when the view is willing to support a nested scrolling operation that is about to begin. If it returns true, this ViewParent will become the target view's nested scrolling parent for the duration of the scroll operation in progress. When the nested scroll is finished this ViewParent will receive a call to [onStopNestedScroll(android.view.View)](../android/view/ViewParent.md)).
+This method may be overridden by ViewParent implementations to indicate when the view is willing to support a nested scrolling operation that is about to begin. If it returns true, this ViewParent will become the target view's nested scrolling parent for the duration of the scroll operation in progress. When the nested scroll is finished this ViewParent will receive a call to [onStopNestedScroll(android.view.View)](ViewParent.md)).
 
 | Parameters ||
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `child` | [View](../android/view/View.md):Direct child of this ViewParent containing target This value cannot be`null`. |
-| `target` | [View](../android/view/View.md):View that initiated the nested scroll This value cannot be`null`. |
-| `nestedScrollAxes` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Flags consisting of [View.SCROLL_AXIS_HORIZONTAL](../android/view/View.md), [View.SCROLL_AXIS_VERTICAL](../android/view/View.md) or both |
+| `child` | [View](View.md):Direct child of this ViewParent containing target This value cannot be`null`. |
+| `target` | [View](View.md):View that initiated the nested scroll This value cannot be`null`. |
+| `nestedScrollAxes` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Flags consisting of [View.SCROLL_AXIS_HORIZONTAL](View.md), [View.SCROLL_AXIS_VERTICAL](View.md) or both |
 | --- | --- |
 
 | Return ||
@@ -744,11 +744,11 @@ abstract fun onStopNestedScroll(target: View): Unit
 
 React to a nested scroll operation ending.
 
-Perform cleanup after a nested scrolling operation. This method will be called when a nested scroll stops, for example when a nested touch scroll ends with a [MotionEvent.ACTION_UP](../android/view/MotionEvent.md) or [MotionEvent.ACTION_CANCEL](../android/view/MotionEvent.md) event. Implementations of this method should always call their superclass's implementation of this method if one is present.
+Perform cleanup after a nested scrolling operation. This method will be called when a nested scroll stops, for example when a nested touch scroll ends with a [MotionEvent.ACTION_UP](MotionEvent.md) or [MotionEvent.ACTION_CANCEL](MotionEvent.md) event. Implementations of this method should always call their superclass's implementation of this method if one is present.
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| `target` | [View](../android/view/View.md):View that initiated the nested scroll This value cannot be`null`. |
+| `target` | [View](View.md):View that initiated the nested scroll This value cannot be`null`. |
 
 ### recomputeViewAttributes
 
@@ -762,7 +762,7 @@ Tell view hierarchy that the global view attributes need to be re-evaluated.
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------|
-| `child` | [View](../android/view/View.md)!:View whose attributes have changed. |
+| `child` | [View](View.md)!:View whose attributes have changed. |
 
 ### requestChildFocus
 
@@ -779,8 +779,8 @@ Called when a child of this parent wants focus
 
 | Parameters ||
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `child` | [View](../android/view/View.md)!:The child of this ViewParent that wants focus. This view will contain the focused view. It is not necessarily the view that actually has focus. |
-| `focused` | [View](../android/view/View.md)!:The view that is a descendant of child that actually has focus |
+| `child` | [View](View.md)!:The child of this ViewParent that wants focus. This view will contain the focused view. It is not necessarily the view that actually has focus. |
+| `focused` | [View](View.md)!:The view that is a descendant of child that actually has focus |
 
 ### requestChildRectangleOnScreen
 
@@ -794,22 +794,22 @@ abstract fun requestChildRectangleOnScreen(
 ): Boolean
 ```
 
-Called when a child of this group wants a particular rectangle to be positioned onto the screen. [ViewGroup](../android/view/ViewGroup.md) s overriding this can trust that:
+Called when a child of this group wants a particular rectangle to be positioned onto the screen. [ViewGroup](ViewGroup.md) s overriding this can trust that:
 
 - `child`will be a direct child of this group
 - `rectangle`will be in the child's content coordinates
 
 <br />
 
-[ViewGroup](../android/view/ViewGroup.md) s overriding this should uphold the contract:
+[ViewGroup](ViewGroup.md) s overriding this should uphold the contract:
 
 - nothing will change if the rectangle is already visible
 - the view port will be scrolled only just enough to make the rectangle visible
 
 | Parameters ||
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `child` | [View](../android/view/View.md):The direct child making the request. This value cannot be`null`. |
-| `rectangle` | [Rect](../android/graphics/Rect.md)!:The rectangle in the child's coordinates the child wishes to be on the screen. |
+| `child` | [View](View.md):The direct child making the request. This value cannot be`null`. |
+| `rectangle` | [Rect](../android.graphics/Rect.md)!:The rectangle in the child's coordinates the child wishes to be on the screen. |
 | `immediate` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):True to forbid animated or delayed scrolling, false otherwise |
 | --- | --- |
 
@@ -830,25 +830,25 @@ open fun requestChildRectangleOnScreen(
 ): Boolean
 ```
 
-Called when a child of this group wants a particular rectangle to be positioned onto the screen. [ViewGroup](../android/view/ViewGroup.md) s overriding this can trust that:
+Called when a child of this group wants a particular rectangle to be positioned onto the screen. [ViewGroup](ViewGroup.md) s overriding this can trust that:
 
 - `child`will be a direct child of this group
 - `rectangle`will be in the child's content coordinates
 
 <br />
 
-[ViewGroup](../android/view/ViewGroup.md) s overriding this should uphold the contract:
+[ViewGroup](ViewGroup.md) s overriding this should uphold the contract:
 
 - nothing will change if the rectangle is already visible
 - the view port will be scrolled only just enough to make the rectangle visible
 
 | Parameters ||
 |-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `child` | [View](../android/view/View.md):The direct child making the request. This value cannot be`null`. |
-| `rectangle` | [Rect](../android/graphics/Rect.md):The rectangle in the child's coordinates the child wishes to be on the screen. This value cannot be`null`. |
+| `child` | [View](View.md):The direct child making the request. This value cannot be`null`. |
+| `rectangle` | [Rect](../android.graphics/Rect.md):The rectangle in the child's coordinates the child wishes to be on the screen. This value cannot be`null`. |
 | `immediate` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):True to forbid animated or delayed scrolling, false otherwise |
 | --- | --- |
-| `source` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The parameter for the source of this request. Value is [android.view.View#RECTANGLE_ON_SCREEN_REQUEST_SOURCE_UNDEFINED](../android/view/View.md), [android.view.View#RECTANGLE_ON_SCREEN_REQUEST_SOURCE_SCROLL_ONLY](../android/view/View.md), [android.view.View#RECTANGLE_ON_SCREEN_REQUEST_SOURCE_TEXT_CURSOR](../android/view/View.md), or [android.view.View#RECTANGLE_ON_SCREEN_REQUEST_SOURCE_INPUT_FOCUS](../android/view/View.md) |
+| `source` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The parameter for the source of this request. Value is [android.view.View#RECTANGLE_ON_SCREEN_REQUEST_SOURCE_UNDEFINED](View.md), [android.view.View#RECTANGLE_ON_SCREEN_REQUEST_SOURCE_SCROLL_ONLY](View.md), [android.view.View#RECTANGLE_ON_SCREEN_REQUEST_SOURCE_TEXT_CURSOR](View.md), or [android.view.View#RECTANGLE_ON_SCREEN_REQUEST_SOURCE_INPUT_FOCUS](View.md) |
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------------------------------------------|
@@ -862,7 +862,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun requestDisallowInterceptTouchEvent(disallowIntercept: Boolean): Unit
 ```
 
-Called when a child does not want this parent and its ancestors to intercept touch events with [ViewGroup.onInterceptTouchEvent(MotionEvent)](../android/view/ViewGroup.md)).
+Called when a child does not want this parent and its ancestors to intercept touch events with [ViewGroup.onInterceptTouchEvent(MotionEvent)](ViewGroup.md)).
 
 This parent should pass this call onto its parents. This parent must obey this request for the duration of the touch (that is, only clear the flag after this parent has received an up or a cancel.
 
@@ -878,7 +878,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 abstract fun requestFitSystemWindows(): Unit
 ```
 
-Ask that a new dispatch of [View.fitSystemWindows(Rect)](../android/view/View.md))be performed. 
+Ask that a new dispatch of [View.fitSystemWindows(Rect)](View.md))be performed. 
 
 ### requestLayout
 
@@ -901,14 +901,14 @@ abstract fun requestSendAccessibilityEvent(
 ): Boolean
 ```
 
-Called by a child to request from its parent to send an [AccessibilityEvent](../android/view/accessibility/AccessibilityEvent.md). The child has already populated a record for itself in the event and is delegating to its parent to send the event. The parent can optionally add a record for itself.
+Called by a child to request from its parent to send an [AccessibilityEvent](../android.view.accessibility/AccessibilityEvent.md). The child has already populated a record for itself in the event and is delegating to its parent to send the event. The parent can optionally add a record for itself.
 
 Note: An accessibility event is fired by an individual view which populates the event with a record for its state and requests from its parent to perform the sending. The parent can optionally add a record for itself before dispatching the request to its parent. A parent can also choose not to respect the request for sending the event. The accessibility event is sent by the topmost view in the view tree.
 
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| `child` | [View](../android/view/View.md):The child which requests sending the event. This value cannot be`null`. |
-| `event` | [AccessibilityEvent](../android/view/accessibility/AccessibilityEvent.md)!:The event to be sent. |
+| `child` | [View](View.md):The child which requests sending the event. This value cannot be`null`. |
+| `event` | [AccessibilityEvent](../android.view.accessibility/AccessibilityEvent.md)!:The event to be sent. |
 
 | Return ||
 |------------------------------------------------------------------------------------|-----------------------------|
@@ -926,7 +926,7 @@ Called when a child wants the view hierarchy to gather and report transparent re
 
 | Parameters ||
 |---------|----------------------------------------------------------------------------------------------------------------------------------|
-| `child` | [View](../android/view/View.md)!:the view requesting the transparent region computation |
+| `child` | [View](View.md)!:the view requesting the transparent region computation |
 
 ### showContextMenuForChild
 
@@ -938,11 +938,11 @@ abstract fun showContextMenuForChild(originalView: View!): Boolean
 
 Shows the context menu for the specified view or its ancestors.
 
-In most cases, a subclass does not need to override this. However, if the subclass is added directly to the window manager (for example, [ViewManager.addView(View, android.view.ViewGroup.LayoutParams)](../android/view/ViewManager.md))) then it should override this and show the context menu.
+In most cases, a subclass does not need to override this. However, if the subclass is added directly to the window manager (for example, [ViewManager.addView(View, android.view.ViewGroup.LayoutParams)](ViewManager.md))) then it should override this and show the context menu.
 
 | Parameters ||
 |----------------|------------------------------------------------------------------------------------------------------------------------------------|
-| `originalView` | [View](../android/view/View.md)!:the source view where the context menu was first invoked |
+| `originalView` | [View](View.md)!:the source view where the context menu was first invoked |
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------------------|
@@ -950,7 +950,7 @@ In most cases, a subclass does not need to override this. However, if the subcla
 
 **See Also**
 
-- [#showContextMenuForChild(View, float, float)](../android/view/ViewParent.md)) 
+- [#showContextMenuForChild(View, float, float)](ViewParent.md)) 
 
 ### showContextMenuForChild
 
@@ -966,15 +966,15 @@ abstract fun showContextMenuForChild(
 
 Shows the context menu for the specified view or its ancestors anchored to the specified view-relative coordinate.
 
-In most cases, a subclass does not need to override this. However, if the subclass is added directly to the window manager (for example, [ViewManager.addView(View, android.view.ViewGroup.LayoutParams)](../android/view/ViewManager.md))) then it should override this and show the context menu.
+In most cases, a subclass does not need to override this. However, if the subclass is added directly to the window manager (for example, [ViewManager.addView(View, android.view.ViewGroup.LayoutParams)](ViewManager.md))) then it should override this and show the context menu.
 
-If a subclass overrides this method it should also override [showContextMenuForChild(android.view.View)](../android/view/ViewParent.md)).
+If a subclass overrides this method it should also override [showContextMenuForChild(android.view.View)](ViewParent.md)).
 
 | Parameters ||
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `originalView` | [View](../android/view/View.md)!:the source view where the context menu was first invoked |
-| `x` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):the X coordinate in pixels relative to the original view to which the menu should be anchored, or [Float.NaN](../java/lang/Float.md) to disable anchoring |
-| `y` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):the Y coordinate in pixels relative to the original view to which the menu should be anchored, or [Float.NaN](../java/lang/Float.md) to disable anchoring |
+| `originalView` | [View](View.md)!:the source view where the context menu was first invoked |
+| `x` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):the X coordinate in pixels relative to the original view to which the menu should be anchored, or [Float.NaN](../java.lang/Float.md) to disable anchoring |
+| `y` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):the Y coordinate in pixels relative to the original view to which the menu should be anchored, or [Float.NaN](../java.lang/Float.md) to disable anchoring |
 | --- | --- |
 
 | Return ||
@@ -992,22 +992,22 @@ abstract fun startActionModeForChild(
 ): ActionMode!
 ```
 
-Start an action mode for the specified view with the default type [ActionMode.TYPE_PRIMARY](../android/view/ActionMode.md).
+Start an action mode for the specified view with the default type [ActionMode.TYPE_PRIMARY](ActionMode.md).
 
-In most cases, a subclass does not need to override this. However, if the subclass is added directly to the window manager (for example, [ViewManager.addView(View, android.view.ViewGroup.LayoutParams)](../android/view/ViewManager.md))) then it should override this and start the action mode.
+In most cases, a subclass does not need to override this. However, if the subclass is added directly to the window manager (for example, [ViewManager.addView(View, android.view.ViewGroup.LayoutParams)](ViewManager.md))) then it should override this and start the action mode.
 
 | Parameters ||
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `originalView` | [View](../android/view/View.md)!:The source view where the action mode was first invoked |
+| `originalView` | [View](View.md)!:The source view where the action mode was first invoked |
 | `callback` | [ActionMode.Callback](../android/view/ActionMode.Callback.md)!:The callback that will handle lifecycle events for the action mode |
 
 | Return ||
 |---------------------------------------------------------------------------------------|-------------------------------------------------------|
-| [ActionMode](../android/view/ActionMode.md)! | The new action mode if it was started, null otherwise |
+| [ActionMode](ActionMode.md)! | The new action mode if it was started, null otherwise |
 
 **See Also**
 
-- [#startActionModeForChild(View, android.view.ActionMode.Callback, int)](../android/view/ViewParent.md)) 
+- [#startActionModeForChild(View, android.view.ActionMode.Callback, int)](ViewParent.md)) 
 
 ### startActionModeForChild
 
@@ -1023,15 +1023,15 @@ abstract fun startActionModeForChild(
 
 Start an action mode of a specific type for the specified view.
 
-In most cases, a subclass does not need to override this. However, if the subclass is added directly to the window manager (for example, [ViewManager.addView(View, android.view.ViewGroup.LayoutParams)](../android/view/ViewManager.md))) then it should override this and start the action mode.
+In most cases, a subclass does not need to override this. However, if the subclass is added directly to the window manager (for example, [ViewManager.addView(View, android.view.ViewGroup.LayoutParams)](ViewManager.md))) then it should override this and start the action mode.
 
 | Parameters ||
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `originalView` | [View](../android/view/View.md)!:The source view where the action mode was first invoked |
+| `originalView` | [View](View.md)!:The source view where the action mode was first invoked |
 | `callback` | [ActionMode.Callback](../android/view/ActionMode.Callback.md)!:The callback that will handle lifecycle events for the action mode |
-| `type` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):One of [ActionMode.TYPE_PRIMARY](../android/view/ActionMode.md) or [ActionMode.TYPE_FLOATING](../android/view/ActionMode.md). |
+| `type` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):One of [ActionMode.TYPE_PRIMARY](ActionMode.md) or [ActionMode.TYPE_FLOATING](ActionMode.md). |
 | --- | --- |
 
 | Return ||
 |---------------------------------------------------------------------------------------|-------------------------------------------------------|
-| [ActionMode](../android/view/ActionMode.md)! | The new action mode if it was started, null otherwise |
+| [ActionMode](ActionMode.md)! | The new action mode if it was started, null otherwise |

@@ -5,7 +5,7 @@ Deprecated in [API level 30](https://developer.android.com/guide/topics/manifest
 
 # LoginFilter
 
-Kotlin| [Java](../android/text/LoginFilter.md) 
+Kotlin| [Java](LoginFilter.md) 
 | --- | --- |
 
 ```
@@ -14,7 +14,7 @@ abstract class LoginFilter : InputFilter
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.text.LoginFilter](../android/text/LoginFilter.md) |
+| ↳ | [android.text.LoginFilter](LoginFilter.md) |
 
 | Known Direct Subclasses [LoginFilter.PasswordFilterGMail](../android/text/LoginFilter.PasswordFilterGMail.md), [LoginFilter.UsernameFilterGMail](../android/text/LoginFilter.UsernameFilterGMail.md), [LoginFilter.UsernameFilterGeneric](../android/text/LoginFilter.UsernameFilterGeneric.md) |------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------| | [LoginFilter.PasswordFilterGMail](../android/text/LoginFilter.PasswordFilterGMail.md) | This filter is compatible with GMail passwords which restricts characters to the Latin-1 (ISO8859-1) char set. | | [LoginFilter.UsernameFilterGMail](../android/text/LoginFilter.UsernameFilterGMail.md) | This filter rejects characters in the user name that are not compatible with GMail account creation. | | [LoginFilter.UsernameFilterGeneric](../android/text/LoginFilter.UsernameFilterGeneric.md) | This filter rejects characters in the user name that are not compatible with Google login. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -36,12 +36,12 @@ Abstract class for filtering login-related text (user names and passwords)
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [filter](../android/text/LoginFilter.md))`(`source:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dest:` ` [Spanned](../android/text/Spanned.md)!`, `dstart:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dend:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` This method is called when the buffer is going to replace the range`dstart ... dend`of`dest`with the new text from the range`start ... end`of`source`. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAllowed](../android/text/LoginFilter.md))`(`c:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Returns whether or not we allow character c. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onInvalidCharacter](../android/text/LoginFilter.md))`(`c:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Called whenever we encounter an invalid character. |
+| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [filter](LoginFilter.md))`(`source:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dest:` ` [Spanned](Spanned.md)!`, `dstart:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dend:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` This method is called when the buffer is going to replace the range`dstart ... dend`of`dest`with the new text from the range`start ... end`of`source`. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAllowed](LoginFilter.md))`(`c:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Returns whether or not we allow character c. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onInvalidCharacter](LoginFilter.md))`(`c:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Called whenever we encounter an invalid character. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStart](../android/text/LoginFilter.md))`()` Called when we start processing filter. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStop](../android/text/LoginFilter.md))`()` Called when we're done processing filter |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStart](LoginFilter.md))`()` Called when we start processing filter. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStop](LoginFilter.md))`()` Called when we're done processing filter |
 
 ## Public methods
 

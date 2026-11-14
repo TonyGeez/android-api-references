@@ -2,7 +2,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 
 # FractionPrecision
 
-Kotlin | [Java](../android/icu/number/FractionPrecision.md)
+Kotlin | [Java](FractionPrecision.md)
 | --- | --- |
 
 ```
@@ -11,8 +11,8 @@ abstract class FractionPrecision : Precision
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.icu.number.Precision](../android/icu/number/Precision.md) ||
-| | ↳ | [android.icu.number.FractionPrecision](../android/icu/number/FractionPrecision.md) |
+| ↳ | [android.icu.number.Precision](Precision.md) ||
+| | ↳ | [android.icu.number.FractionPrecision](FractionPrecision.md) |
 
 A class that defines a rounding strategy based on a number of fraction places and optionally significant digits to be used when formatting numbers in NumberFormatter.
 
@@ -22,9 +22,9 @@ To create a FractionPrecision, use one of the factory methods on Precision.
 
 | Public methods ||
 |---|---|
-| open [Precision](../android/icu/number/Precision.md)! | `https://developer.android.com/reference/kotlin/android/icu/number/FractionPrecision#withMaxDigits(kotlin.Int)(maxSignificantDigits: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Ensure that no more than this number of significant digits are retained when rounding according to fraction rules. |
-| open [Precision](../android/icu/number/Precision.md)! | `https://developer.android.com/reference/kotlin/android/icu/number/FractionPrecision#withMinDigits(kotlin.Int)(minSignificantDigits: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Ensure that no less than this number of significant digits are retained when rounding according to fraction rules. |
-| open [Precision](../android/icu/number/Precision.md)! | `https://developer.android.com/reference/kotlin/android/icu/number/FractionPrecision#withSignificantDigits(kotlin.Int,%20kotlin.Int,%20android.icu.number.NumberFormatter.RoundingPriority)(minSignificantDigits: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, maxSignificantDigits: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, priority: https://developer.android.com/reference/kotlin/android/icu/number/NumberFormatter.RoundingPriority!)` Override maximum fraction digits with maximum significant digits depending on the magnitude of the number. |
+| open [Precision](Precision.md)! | `https://developer.android.com/reference/kotlin/android/icu/number/FractionPrecision#withMaxDigits(kotlin.Int)(maxSignificantDigits: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Ensure that no more than this number of significant digits are retained when rounding according to fraction rules. |
+| open [Precision](Precision.md)! | `https://developer.android.com/reference/kotlin/android/icu/number/FractionPrecision#withMinDigits(kotlin.Int)(minSignificantDigits: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Ensure that no less than this number of significant digits are retained when rounding according to fraction rules. |
+| open [Precision](Precision.md)! | `https://developer.android.com/reference/kotlin/android/icu/number/FractionPrecision#withSignificantDigits(kotlin.Int,%20kotlin.Int,%20android.icu.number.NumberFormatter.RoundingPriority)(minSignificantDigits: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, maxSignificantDigits: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, priority: https://developer.android.com/reference/kotlin/android/icu/number/NumberFormatter.RoundingPriority!)` Override maximum fraction digits with maximum significant digits depending on the magnitude of the number. |
 | --- | --- |
 
 | Inherited functions ||

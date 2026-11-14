@@ -2,7 +2,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 
 # ScaleGestureDetector
 
-Kotlin | [Java](../android/view/ScaleGestureDetector.md)
+Kotlin | [Java](ScaleGestureDetector.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ open class ScaleGestureDetector
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.ScaleGestureDetector](../android/view/ScaleGestureDetector.md) |
+| ↳ | [android.view.ScaleGestureDetector](ScaleGestureDetector.md) |
 
 Detects scaling transformation gestures using the supplied `https://developer.android.com/reference/kotlin/android/view/MotionEvent`s. The `https://developer.android.com/reference/kotlin/android/view/ScaleGestureDetector.OnScaleGestureListener` callback will notify users when a particular gesture event has occurred. This class should only be used with `https://developer.android.com/reference/kotlin/android/view/MotionEvent`s reported via touch. To use this class:
 
@@ -73,7 +73,7 @@ Creates a ScaleGestureDetector with the supplied listener. You may only use this
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md): the application's context. This value cannot be `null`. |
+| `context` | [Context](../android.content/Context.md): the application's context. This value cannot be `null`. |
 | `listener` | [ScaleGestureDetector.OnScaleGestureListener](../android/view/ScaleGestureDetector.OnScaleGestureListener.md): the listener invoked for all the callbacks, this must not be null. |
 
 | Exceptions ||
@@ -95,9 +95,9 @@ Creates a ScaleGestureDetector with the supplied listener.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md): the application's context. This value cannot be `null`. |
+| `context` | [Context](../android.content/Context.md): the application's context. This value cannot be `null`. |
 | `listener` | [ScaleGestureDetector.OnScaleGestureListener](../android/view/ScaleGestureDetector.OnScaleGestureListener.md): the listener invoked for all the callbacks, this must not be null. |
-| `handler` | [Handler](../android/os/Handler.md)?: the handler to use for running deferred listener events. This value may be `null`. |
+| `handler` | [Handler](../android.os/Handler.md)?: the handler to use for running deferred listener events. This value may be `null`. |
 | --- | --- |
 
 | Exceptions ||
@@ -314,7 +314,7 @@ Applications should pass a complete and consistent event stream to this method. 
 
 | Parameters ||
 |---|---|
-| `event` | [MotionEvent](../android/view/MotionEvent.md): The event to process. This value cannot be `null`. |
+| `event` | [MotionEvent](MotionEvent.md): The event to process. This value cannot be `null`. |
 
 | Return ||
 |---|---|

@@ -19,7 +19,7 @@ When # [VmPolicy.Builder#penaltyListener](../android/os/StrictMode.VmPolicy.Buil
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onVmViolation](../android/os/StrictMode.OnVmViolationListener.md))`(`v:` ` [Violation](../android/os/strictmode/Violation.md)!`)` Called on a VM policy violation. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onVmViolation](../android/os/StrictMode.OnVmViolationListener.md))`(`v:` ` [Violation](../android.os.strictmode/Violation.md)!`)` Called on a VM policy violation. |
 
 ## Public methods
 

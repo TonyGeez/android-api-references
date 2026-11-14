@@ -10,7 +10,7 @@ open class PasswordCallback : Callback, Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.security.auth.callback.PasswordCallback](../javax/security/auth/callback/PasswordCallback.md) |
+| ↳ | [javax.security.auth.callback.PasswordCallback](PasswordCallback.md) |
 
 Underlying security services instantiate and pass a`PasswordCallback`to the`handle`method of a`CallbackHandler`to retrieve password information.
 
@@ -18,16 +18,16 @@ Underlying security services instantiate and pass a`PasswordCallback`to the`hand
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [PasswordCallback](../javax/security/auth/callback/PasswordCallback.md))`(`prompt:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `echoOn:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Construct a`PasswordCallback`with a prompt and a boolean specifying whether the password should be displayed as it is being typed. |
+| [PasswordCallback](PasswordCallback.md))`(`prompt:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `echoOn:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Construct a`PasswordCallback`with a prompt and a boolean specifying whether the password should be displayed as it is being typed. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearPassword](../javax/security/auth/callback/PasswordCallback.md))`()` Clear the retrieved password. |
-| open [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)! | [getPassword](../javax/security/auth/callback/PasswordCallback.md))`()` Get the retrieved password. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPrompt](../javax/security/auth/callback/PasswordCallback.md))`()` Get the prompt. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearPassword](PasswordCallback.md))`()` Clear the retrieved password. |
+| open [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)! | [getPassword](PasswordCallback.md))`()` Get the retrieved password. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPrompt](PasswordCallback.md))`()` Get the prompt. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEchoOn](../javax/security/auth/callback/PasswordCallback.md))`()` Return whether the password should be displayed as it is being typed. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPassword](../javax/security/auth/callback/PasswordCallback.md))`(`password:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`)` Set the retrieved password. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEchoOn](PasswordCallback.md))`()` Return whether the password should be displayed as it is being typed. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPassword](PasswordCallback.md))`(`password:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`)` Set the retrieved password. |
 
 ## Public constructors
 
@@ -86,7 +86,7 @@ This method returns a copy of the retrieved password.
 
 **See Also**
 
-- [#setPassword](../javax/security/auth/callback/PasswordCallback.md)) 
+- [#setPassword](PasswordCallback.md)) 
 
 ### getPrompt
 
@@ -140,4 +140,4 @@ This method makes a copy of the input*password*before storing it.
 
 **See Also**
 
-- [#getPassword](../javax/security/auth/callback/PasswordCallback.md))
+- [#getPassword](PasswordCallback.md))

@@ -8,9 +8,9 @@ abstract class SaProposal
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.ipsec.ike.SaProposal](../android/net/ipsec/ike/SaProposal.md) |
+| ↳ | [android.net.ipsec.ike.SaProposal](SaProposal.md) |
 
-| Known Direct Subclasses [ChildSaProposal](../android/net/ipsec/ike/ChildSaProposal.md), [IkeSaProposal](../android/net/ipsec/ike/IkeSaProposal.md) |---|---| | [ChildSaProposal](../android/net/ipsec/ike/ChildSaProposal.md) | ChildSaProposal represents a proposed configuration to negotiate a Child SA. | | [IkeSaProposal](../android/net/ipsec/ike/IkeSaProposal.md) | IkeSaProposal represents a proposed configuration to negotiate an IKE SA. | |
+| Known Direct Subclasses [ChildSaProposal](ChildSaProposal.md), [IkeSaProposal](IkeSaProposal.md) |---|---| | [ChildSaProposal](ChildSaProposal.md) | ChildSaProposal represents a proposed configuration to negotiate a Child SA. | | [IkeSaProposal](IkeSaProposal.md) | IkeSaProposal represents a proposed configuration to negotiate an IKE SA. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 SaProposal represents a proposed configuration to negotiate an IKE or Child SA.
@@ -69,7 +69,7 @@ User must provide at least one valid SaProposal when they are creating a new IKE
 |---|---|
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/SaProposal#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/SaProposal#getDhGroups()()` Gets all proposed Diffie-Hellman groups |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Pair](../android/util/Pair.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!, [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>!\> | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/SaProposal#getEncryptionAlgorithms()()` Gets all proposed encryption algorithms |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Pair](../android.util/Pair.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!, [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>!\> | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/SaProposal#getEncryptionAlgorithms()()` Gets all proposed encryption algorithms |
 | --- | --- |
 | open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/SaProposal#getIntegrityAlgorithms()()` Gets all proposed integrity algorithms |
 | open static [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/SaProposal#getSupportedDhGroups()()` Returns supported DH groups for IKE and Child SA proposal negotiation. |

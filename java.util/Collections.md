@@ -10,7 +10,7 @@ open class Collections
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.util.Collections](../java/util/Collections.md) |
+| ↳ | [java.util.Collections](Collections.md) |
 
 This class consists exclusively of static methods that operate on or return collections. It contains polymorphic algorithms that operate on collections, "wrappers", which return a new collection backed by a specified collection, and a few other odds and ends.
 
@@ -26,106 +26,106 @@ This class is a member of the [Java Collections Framework](https://developer.and
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addAll](../java/util/Collections.md))`(`c:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<in` `T>`, `vararg` `elements:` `T`)` Adds all of the specified elements to the specified collection. |
-| openstatic [Queue](../java/util/Queue.md)\<T\> | [asLifoQueue](../java/util/Collections.md))`(`deque:` ` [Deque](../java/util/Deque.md)<T>`)` Returns a view of a [Deque](../java/util/Deque.md) as a Last-in-first-out (Lifo) [Queue](../java/util/Queue.md). |
-| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [binarySearch](../java/util/Collections.md))`(`list:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<out` ` [Comparable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-comparable/index.html)<T>!>`, `key:` `T`)` Searches the specified list for the specified object using the binary search algorithm. |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addAll](Collections.md))`(`c:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<in` `T>`, `vararg` `elements:` `T`)` Adds all of the specified elements to the specified collection. |
+| openstatic [Queue](Queue.md)\<T\> | [asLifoQueue](Collections.md))`(`deque:` ` [Deque](Deque.md)<T>`)` Returns a view of a [Deque](Deque.md) as a Last-in-first-out (Lifo) [Queue](Queue.md). |
+| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [binarySearch](Collections.md))`(`list:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<out` ` [Comparable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-comparable/index.html)<T>!>`, `key:` `T`)` Searches the specified list for the specified object using the binary search algorithm. |
 | --- | --- |
-| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [binarySearch](../java/util/Collections.md))`(`list:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<out` `T>`, `key:` `T`, `c:` ` [Comparator](../java/util/Comparator.md)<in` `T>?`)` Searches the specified list for the specified object using the binary search algorithm. |
-| openstatic [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<E\> | [checkedCollection](../java/util/Collections.md))`(`c:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<E>`, `type:` ` [Class](../java/lang/Class.md)<E>`)` Returns a dynamically typesafe view of the specified collection. |
-| openstatic [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<E\> | [checkedList](../java/util/Collections.md))`(`list:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<E>`, `type:` ` [Class](../java/lang/Class.md)<E>`)` Returns a dynamically typesafe view of the specified list. |
+| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [binarySearch](Collections.md))`(`list:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<out` `T>`, `key:` `T`, `c:` ` [Comparator](Comparator.md)<in` `T>?`)` Searches the specified list for the specified object using the binary search algorithm. |
+| openstatic [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<E\> | [checkedCollection](Collections.md))`(`c:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<E>`, `type:` ` [Class](../java.lang/Class.md)<E>`)` Returns a dynamically typesafe view of the specified collection. |
+| openstatic [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<E\> | [checkedList](Collections.md))`(`list:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<E>`, `type:` ` [Class](../java.lang/Class.md)<E>`)` Returns a dynamically typesafe view of the specified list. |
 | --- | --- |
-| openstatic [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\<K,V\> | [checkedMap](../java/util/Collections.md))`(`m:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)<K,` `V>`, `keyType:` ` [Class](../java/lang/Class.md)<K>`, `valueType:` ` [Class](../java/lang/Class.md)<V>`)` Returns a dynamically typesafe view of the specified map. |
-| openstatic [NavigableMap](../java/util/NavigableMap.md)\<K,V\> | [checkedNavigableMap](../java/util/Collections.md))`(`m:` ` [NavigableMap](../java/util/NavigableMap.md)<K,` `V>`, `keyType:` ` [Class](../java/lang/Class.md)<K>`, `valueType:` ` [Class](../java/lang/Class.md)<V>`)` Returns a dynamically typesafe view of the specified navigable map. |
-| openstatic [NavigableSet](../java/util/NavigableSet.md)\<E\> | [checkedNavigableSet](../java/util/Collections.md))`(`s:` ` [NavigableSet](../java/util/NavigableSet.md)<E>`, `type:` ` [Class](../java/lang/Class.md)<E>`)` Returns a dynamically typesafe view of the specified navigable set. |
+| openstatic [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\<K,V\> | [checkedMap](Collections.md))`(`m:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)<K,` `V>`, `keyType:` ` [Class](../java.lang/Class.md)<K>`, `valueType:` ` [Class](../java.lang/Class.md)<V>`)` Returns a dynamically typesafe view of the specified map. |
+| openstatic [NavigableMap](NavigableMap.md)\<K,V\> | [checkedNavigableMap](Collections.md))`(`m:` ` [NavigableMap](NavigableMap.md)<K,` `V>`, `keyType:` ` [Class](../java.lang/Class.md)<K>`, `valueType:` ` [Class](../java.lang/Class.md)<V>`)` Returns a dynamically typesafe view of the specified navigable map. |
+| openstatic [NavigableSet](NavigableSet.md)\<E\> | [checkedNavigableSet](Collections.md))`(`s:` ` [NavigableSet](NavigableSet.md)<E>`, `type:` ` [Class](../java.lang/Class.md)<E>`)` Returns a dynamically typesafe view of the specified navigable set. |
 | --- | --- |
-| openstatic [Queue](../java/util/Queue.md)\<E\> | [checkedQueue](../java/util/Collections.md))`(`queue:` ` [Queue](../java/util/Queue.md)<E>`, `type:` ` [Class](../java/lang/Class.md)<E>`)` Returns a dynamically typesafe view of the specified queue. |
-| openstatic [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<E\> | [checkedSet](../java/util/Collections.md))`(`s:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)<E>`, `type:` ` [Class](../java/lang/Class.md)<E>`)` Returns a dynamically typesafe view of the specified set. |
-| openstatic [SortedMap](../java/util/SortedMap.md)\<K,V\> | [checkedSortedMap](../java/util/Collections.md))`(`m:` ` [SortedMap](../java/util/SortedMap.md)<K,` `V>`, `keyType:` ` [Class](../java/lang/Class.md)<K>`, `valueType:` ` [Class](../java/lang/Class.md)<V>`)` Returns a dynamically typesafe view of the specified sorted map. |
+| openstatic [Queue](Queue.md)\<E\> | [checkedQueue](Collections.md))`(`queue:` ` [Queue](Queue.md)<E>`, `type:` ` [Class](../java.lang/Class.md)<E>`)` Returns a dynamically typesafe view of the specified queue. |
+| openstatic [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<E\> | [checkedSet](Collections.md))`(`s:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)<E>`, `type:` ` [Class](../java.lang/Class.md)<E>`)` Returns a dynamically typesafe view of the specified set. |
+| openstatic [SortedMap](SortedMap.md)\<K,V\> | [checkedSortedMap](Collections.md))`(`m:` ` [SortedMap](SortedMap.md)<K,` `V>`, `keyType:` ` [Class](../java.lang/Class.md)<K>`, `valueType:` ` [Class](../java.lang/Class.md)<V>`)` Returns a dynamically typesafe view of the specified sorted map. |
 | --- | --- |
-| openstatic [SortedSet](../java/util/SortedSet.md)\<E\> | [checkedSortedSet](../java/util/Collections.md))`(`s:` ` [SortedSet](../java/util/SortedSet.md)<E>`, `type:` ` [Class](../java/lang/Class.md)<E>`)` Returns a dynamically typesafe view of the specified sorted set. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [copy](../java/util/Collections.md))`(`dest:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<in` `T>`, `src:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<out` `T>`)` Copies all of the elements from one list into another. |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [disjoint](../java/util/Collections.md))`(`c1:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<*>`, `c2:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<*>`)` Returns`true`if the two specified collections have no elements in common. |
+| openstatic [SortedSet](SortedSet.md)\<E\> | [checkedSortedSet](Collections.md))`(`s:` ` [SortedSet](SortedSet.md)<E>`, `type:` ` [Class](../java.lang/Class.md)<E>`)` Returns a dynamically typesafe view of the specified sorted set. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [copy](Collections.md))`(`dest:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<in` `T>`, `src:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<out` `T>`)` Copies all of the elements from one list into another. |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [disjoint](Collections.md))`(`c1:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<*>`, `c2:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<*>`)` Returns`true`if the two specified collections have no elements in common. |
 | --- | --- |
-| openstatic [Enumeration](../java/util/Enumeration.md)\<T\> | [emptyEnumeration](../java/util/Collections.md))`()` Returns an enumeration that has no elements. |
-| openstatic [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\<T\> | [emptyIterator](../java/util/Collections.md))`()` Returns an iterator that has no elements. |
-| static [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<T\> | [emptyList](../java/util/Collections.md))`()` Returns an empty list (immutable). |
+| openstatic [Enumeration](Enumeration.md)\<T\> | [emptyEnumeration](Collections.md))`()` Returns an enumeration that has no elements. |
+| openstatic [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\<T\> | [emptyIterator](Collections.md))`()` Returns an iterator that has no elements. |
+| static [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<T\> | [emptyList](Collections.md))`()` Returns an empty list (immutable). |
 | --- | --- |
-| openstatic [MutableListIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list-iterator/index.html)\<T\> | [emptyListIterator](../java/util/Collections.md))`()` Returns a list iterator that has no elements. |
-| static [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\<K,V\> | [emptyMap](../java/util/Collections.md))`()` Returns an empty map (immutable). |
-| static [NavigableMap](../java/util/NavigableMap.md)\<K,V\> | [emptyNavigableMap](../java/util/Collections.md))`()` Returns an empty navigable map (immutable). |
+| openstatic [MutableListIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list-iterator/index.html)\<T\> | [emptyListIterator](Collections.md))`()` Returns a list iterator that has no elements. |
+| static [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\<K,V\> | [emptyMap](Collections.md))`()` Returns an empty map (immutable). |
+| static [NavigableMap](NavigableMap.md)\<K,V\> | [emptyNavigableMap](Collections.md))`()` Returns an empty navigable map (immutable). |
 | --- | --- |
-| openstatic [NavigableSet](../java/util/NavigableSet.md)\<E\> | [emptyNavigableSet](../java/util/Collections.md))`()` Returns an empty navigable set (immutable). |
-| static [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<T\> | [emptySet](../java/util/Collections.md))`()` Returns an empty set (immutable). |
-| static [SortedMap](../java/util/SortedMap.md)\<K,V\> | [emptySortedMap](../java/util/Collections.md))`()` Returns an empty sorted map (immutable). |
+| openstatic [NavigableSet](NavigableSet.md)\<E\> | [emptyNavigableSet](Collections.md))`()` Returns an empty navigable set (immutable). |
+| static [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<T\> | [emptySet](Collections.md))`()` Returns an empty set (immutable). |
+| static [SortedMap](SortedMap.md)\<K,V\> | [emptySortedMap](Collections.md))`()` Returns an empty sorted map (immutable). |
 | --- | --- |
-| openstatic [SortedSet](../java/util/SortedSet.md)\<E\> | [emptySortedSet](../java/util/Collections.md))`()` Returns an empty sorted set (immutable). |
-| openstatic [Enumeration](../java/util/Enumeration.md)\<T\> | [enumeration](../java/util/Collections.md))`(`c:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<T>`)` Returns an enumeration over the specified collection. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [fill](../java/util/Collections.md))`(`list:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<in` `T>`, `obj:` `T`)` Replaces all of the elements of the specified list with the specified element. |
+| openstatic [SortedSet](SortedSet.md)\<E\> | [emptySortedSet](Collections.md))`()` Returns an empty sorted set (immutable). |
+| openstatic [Enumeration](Enumeration.md)\<T\> | [enumeration](Collections.md))`(`c:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<T>`)` Returns an enumeration over the specified collection. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [fill](Collections.md))`(`list:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<in` `T>`, `obj:` `T`)` Replaces all of the elements of the specified list with the specified element. |
 | --- | --- |
-| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [frequency](../java/util/Collections.md))`(`c:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<*>`, `o:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Returns the number of elements in the specified collection equal to the specified object. |
-| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [indexOfSubList](../java/util/Collections.md))`(`source:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<*>`, `target:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<*>`)` Returns the starting position of the first occurrence of the specified target list within the specified source list, or -1 if there is no such occurrence. |
-| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [lastIndexOfSubList](../java/util/Collections.md))`(`source:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<*>`, `target:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<*>`)` Returns the starting position of the last occurrence of the specified target list within the specified source list, or -1 if there is no such occurrence. |
+| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [frequency](Collections.md))`(`c:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<*>`, `o:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Returns the number of elements in the specified collection equal to the specified object. |
+| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [indexOfSubList](Collections.md))`(`source:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<*>`, `target:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<*>`)` Returns the starting position of the first occurrence of the specified target list within the specified source list, or -1 if there is no such occurrence. |
+| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [lastIndexOfSubList](Collections.md))`(`source:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<*>`, `target:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<*>`)` Returns the starting position of the last occurrence of the specified target list within the specified source list, or -1 if there is no such occurrence. |
 | --- | --- |
-| openstatic [ArrayList](../java/util/ArrayList.md)\<T\> | [list](../java/util/Collections.md))`(`e:` ` [Enumeration](../java/util/Enumeration.md)<T>`)` Returns an array list containing the elements returned by the specified enumeration in the order they are returned by the enumeration. |
-| openstaticT | [max](../java/util/Collections.md))`(`coll:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` `T>`)` Returns the maximum element of the given collection, according to the*natural ordering*of its elements. |
-| openstaticT | [max](../java/util/Collections.md))`(`coll:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` `T>`, `comp:` ` [Comparator](../java/util/Comparator.md)<in` `T>?`)` Returns the maximum element of the given collection, according to the order induced by the specified comparator. |
+| openstatic [ArrayList](ArrayList.md)\<T\> | [list](Collections.md))`(`e:` ` [Enumeration](Enumeration.md)<T>`)` Returns an array list containing the elements returned by the specified enumeration in the order they are returned by the enumeration. |
+| openstaticT | [max](Collections.md))`(`coll:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` `T>`)` Returns the maximum element of the given collection, according to the*natural ordering*of its elements. |
+| openstaticT | [max](Collections.md))`(`coll:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` `T>`, `comp:` ` [Comparator](Comparator.md)<in` `T>?`)` Returns the maximum element of the given collection, according to the order induced by the specified comparator. |
 | --- | --- |
-| openstaticT | [min](../java/util/Collections.md))`(`coll:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` `T>`)` Returns the minimum element of the given collection, according to the*natural ordering*of its elements. |
-| openstaticT | [min](../java/util/Collections.md))`(`coll:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` `T>`, `comp:` ` [Comparator](../java/util/Comparator.md)<in` `T>?`)` Returns the minimum element of the given collection, according to the order induced by the specified comparator. |
-| openstatic [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<T\> | [nCopies](../java/util/Collections.md))`(`n:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `o:` `T`)` Returns an immutable list consisting of`n`copies of the specified object. |
+| openstaticT | [min](Collections.md))`(`coll:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` `T>`)` Returns the minimum element of the given collection, according to the*natural ordering*of its elements. |
+| openstaticT | [min](Collections.md))`(`coll:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` `T>`, `comp:` ` [Comparator](Comparator.md)<in` `T>?`)` Returns the minimum element of the given collection, according to the order induced by the specified comparator. |
+| openstatic [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<T\> | [nCopies](Collections.md))`(`n:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `o:` `T`)` Returns an immutable list consisting of`n`copies of the specified object. |
 | --- | --- |
-| openstatic [SequencedSet](../java/util/SequencedSet.md)\<E\> | [newSequencedSetFromMap](../java/util/Collections.md))`(`map:` ` [SequencedMap](../java/util/SequencedMap.md)<E,` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!>`)` Returns a sequenced set backed by the specified map. |
-| openstatic [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<E\> | [newSetFromMap](../java/util/Collections.md))`(`map:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)<E,` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!>`)` Returns a set backed by the specified map. |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [replaceAll](../java/util/Collections.md))`(`list:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<T>`, `oldVal:` `T`, `newVal:` `T`)` Replaces all occurrences of one specified value in a list with another. |
+| openstatic [SequencedSet](SequencedSet.md)\<E\> | [newSequencedSetFromMap](Collections.md))`(`map:` ` [SequencedMap](SequencedMap.md)<E,` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!>`)` Returns a sequenced set backed by the specified map. |
+| openstatic [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<E\> | [newSetFromMap](Collections.md))`(`map:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)<E,` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!>`)` Returns a set backed by the specified map. |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [replaceAll](Collections.md))`(`list:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<T>`, `oldVal:` `T`, `newVal:` `T`)` Replaces all occurrences of one specified value in a list with another. |
 | --- | --- |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reverse](../java/util/Collections.md))`(`list:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<*>`)` Reverses the order of the elements in the specified list. |
-| openstatic [Comparator](../java/util/Comparator.md)\<T\> | [reverseOrder](../java/util/Collections.md))`()` Returns a comparator that imposes the reverse of the*natural ordering* on a collection of objects that implement the`Comparable`interface. |
-| openstatic [Comparator](../java/util/Comparator.md)\<T\> | [reverseOrder](../java/util/Collections.md))`(`cmp:` ` [Comparator](../java/util/Comparator.md)<T>?`)` Returns a comparator that imposes the reverse ordering of the specified comparator. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reverse](Collections.md))`(`list:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<*>`)` Reverses the order of the elements in the specified list. |
+| openstatic [Comparator](Comparator.md)\<T\> | [reverseOrder](Collections.md))`()` Returns a comparator that imposes the reverse of the*natural ordering* on a collection of objects that implement the`Comparable`interface. |
+| openstatic [Comparator](Comparator.md)\<T\> | [reverseOrder](Collections.md))`(`cmp:` ` [Comparator](Comparator.md)<T>?`)` Returns a comparator that imposes the reverse ordering of the specified comparator. |
 | --- | --- |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [rotate](../java/util/Collections.md))`(`list:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<*>`, `distance:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Rotates the elements in the specified list by the specified distance. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [shuffle](../java/util/Collections.md))`(`list:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<*>`)` Randomly permutes the specified list using a default source of randomness. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [shuffle](../java/util/Collections.md))`(`list:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<*>`, `rnd:` ` [Random](../java/util/Random.md)`)` Randomly permute the specified list using the specified source of randomness. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [rotate](Collections.md))`(`list:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<*>`, `distance:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Rotates the elements in the specified list by the specified distance. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [shuffle](Collections.md))`(`list:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<*>`)` Randomly permutes the specified list using a default source of randomness. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [shuffle](Collections.md))`(`list:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<*>`, `rnd:` ` [Random](Random.md)`)` Randomly permute the specified list using the specified source of randomness. |
 | --- | --- |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [shuffle](../java/util/Collections.md))`(`list:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<*>`, `rnd:` ` [RandomGenerator](../java/util/random/RandomGenerator.md)`)` Randomly permute the specified list using the specified source of randomness. |
-| openstatic [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<T\> | [singleton](../java/util/Collections.md))`(`o:` `T`)` Returns an immutable set containing only the specified object. |
-| openstatic [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<T\> | [singletonList](../java/util/Collections.md))`(`o:` `T`)` Returns an immutable list containing only the specified object. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [shuffle](Collections.md))`(`list:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<*>`, `rnd:` ` [RandomGenerator](../java.util.random/RandomGenerator.md)`)` Randomly permute the specified list using the specified source of randomness. |
+| openstatic [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<T\> | [singleton](Collections.md))`(`o:` `T`)` Returns an immutable set containing only the specified object. |
+| openstatic [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<T\> | [singletonList](Collections.md))`(`o:` `T`)` Returns an immutable list containing only the specified object. |
 | --- | --- |
-| openstatic [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\<K,V\> | [singletonMap](../java/util/Collections.md))`(`key:` `K`, `value:` `V`)` Returns an immutable map, mapping only the specified key to the specified value. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [sort](../java/util/Collections.md))`(`list:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<T>`)` Sorts the specified list into ascending order, according to the [natural ordering](../java/lang/Comparable.md) of its elements. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [sort](../java/util/Collections.md))`(`list:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<T>`, `c:` ` [Comparator](../java/util/Comparator.md)<in` `T>?`)` Sorts the specified list according to the order induced by the specified comparator. |
+| openstatic [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\<K,V\> | [singletonMap](Collections.md))`(`key:` `K`, `value:` `V`)` Returns an immutable map, mapping only the specified key to the specified value. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [sort](Collections.md))`(`list:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<T>`)` Sorts the specified list into ascending order, according to the [natural ordering](../java.lang/Comparable.md) of its elements. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [sort](Collections.md))`(`list:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<T>`, `c:` ` [Comparator](Comparator.md)<in` `T>?`)` Sorts the specified list according to the order induced by the specified comparator. |
 | --- | --- |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [swap](../java/util/Collections.md))`(`list:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<*>`, `i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `j:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Swaps the elements at the specified positions in the specified list. |
-| openstatic [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<T\> | [synchronizedCollection](../java/util/Collections.md))`(`c:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<T>`)` Returns a synchronized (thread-safe) collection backed by the specified collection. |
-| openstatic [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<T\> | [synchronizedList](../java/util/Collections.md))`(`list:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<T>`)` Returns a synchronized (thread-safe) list backed by the specified list. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [swap](Collections.md))`(`list:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<*>`, `i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `j:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Swaps the elements at the specified positions in the specified list. |
+| openstatic [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<T\> | [synchronizedCollection](Collections.md))`(`c:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<T>`)` Returns a synchronized (thread-safe) collection backed by the specified collection. |
+| openstatic [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<T\> | [synchronizedList](Collections.md))`(`list:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<T>`)` Returns a synchronized (thread-safe) list backed by the specified list. |
 | --- | --- |
-| openstatic [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\<K,V\> | [synchronizedMap](../java/util/Collections.md))`(`m:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)<K,` `V>`)` Returns a synchronized (thread-safe) map backed by the specified map. |
-| openstatic [NavigableMap](../java/util/NavigableMap.md)\<K,V\> | [synchronizedNavigableMap](../java/util/Collections.md))`(`m:` ` [NavigableMap](../java/util/NavigableMap.md)<K,` `V>`)` Returns a synchronized (thread-safe) navigable map backed by the specified navigable map. |
-| openstatic [NavigableSet](../java/util/NavigableSet.md)\<T\> | [synchronizedNavigableSet](../java/util/Collections.md))`(`s:` ` [NavigableSet](../java/util/NavigableSet.md)<T>`)` Returns a synchronized (thread-safe) navigable set backed by the specified navigable set. |
+| openstatic [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\<K,V\> | [synchronizedMap](Collections.md))`(`m:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)<K,` `V>`)` Returns a synchronized (thread-safe) map backed by the specified map. |
+| openstatic [NavigableMap](NavigableMap.md)\<K,V\> | [synchronizedNavigableMap](Collections.md))`(`m:` ` [NavigableMap](NavigableMap.md)<K,` `V>`)` Returns a synchronized (thread-safe) navigable map backed by the specified navigable map. |
+| openstatic [NavigableSet](NavigableSet.md)\<T\> | [synchronizedNavigableSet](Collections.md))`(`s:` ` [NavigableSet](NavigableSet.md)<T>`)` Returns a synchronized (thread-safe) navigable set backed by the specified navigable set. |
 | --- | --- |
-| openstatic [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<T\> | [synchronizedSet](../java/util/Collections.md))`(`s:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)<T>`)` Returns a synchronized (thread-safe) set backed by the specified set. |
-| openstatic [SortedMap](../java/util/SortedMap.md)\<K,V\> | [synchronizedSortedMap](../java/util/Collections.md))`(`m:` ` [SortedMap](../java/util/SortedMap.md)<K,` `V>`)` Returns a synchronized (thread-safe) sorted map backed by the specified sorted map. |
-| openstatic [SortedSet](../java/util/SortedSet.md)\<T\> | [synchronizedSortedSet](../java/util/Collections.md))`(`s:` ` [SortedSet](../java/util/SortedSet.md)<T>`)` Returns a synchronized (thread-safe) sorted set backed by the specified sorted set. |
+| openstatic [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<T\> | [synchronizedSet](Collections.md))`(`s:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)<T>`)` Returns a synchronized (thread-safe) set backed by the specified set. |
+| openstatic [SortedMap](SortedMap.md)\<K,V\> | [synchronizedSortedMap](Collections.md))`(`m:` ` [SortedMap](SortedMap.md)<K,` `V>`)` Returns a synchronized (thread-safe) sorted map backed by the specified sorted map. |
+| openstatic [SortedSet](SortedSet.md)\<T\> | [synchronizedSortedSet](Collections.md))`(`s:` ` [SortedSet](SortedSet.md)<T>`)` Returns a synchronized (thread-safe) sorted set backed by the specified sorted set. |
 | --- | --- |
-| openstatic [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<T\> | [unmodifiableCollection](../java/util/Collections.md))`(`c:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` `T>`)` Returns an [unmodifiable view](../java/util/Collection.md) of the specified collection. |
-| openstatic [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<T\> | [unmodifiableList](../java/util/Collections.md))`(`list:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<out` `T>`)` Returns an [unmodifiable view](../java/util/Collection.md) of the specified list. |
-| openstatic [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\<K,V\> | [unmodifiableMap](../java/util/Collections.md))`(`m:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)<out` `K,` `out` `V>`)` Returns an [unmodifiable view](../java/util/Collection.md) of the specified map. |
+| openstatic [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<T\> | [unmodifiableCollection](Collections.md))`(`c:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` `T>`)` Returns an [unmodifiable view](Collection.md) of the specified collection. |
+| openstatic [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<T\> | [unmodifiableList](Collections.md))`(`list:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<out` `T>`)` Returns an [unmodifiable view](Collection.md) of the specified list. |
+| openstatic [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\<K,V\> | [unmodifiableMap](Collections.md))`(`m:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)<out` `K,` `out` `V>`)` Returns an [unmodifiable view](Collection.md) of the specified map. |
 | --- | --- |
-| openstatic [NavigableMap](../java/util/NavigableMap.md)\<K,V\> | [unmodifiableNavigableMap](../java/util/Collections.md))`(`m:` ` [NavigableMap](../java/util/NavigableMap.md)<K,` `out` `V>`)` Returns an [unmodifiable view](../java/util/Collection.md) of the specified navigable map. |
-| openstatic [NavigableSet](../java/util/NavigableSet.md)\<T\> | [unmodifiableNavigableSet](../java/util/Collections.md))`(`s:` ` [NavigableSet](../java/util/NavigableSet.md)<T>`)` Returns an [unmodifiable view](../java/util/Collection.md) of the specified navigable set. |
-| openstatic [SequencedCollection](../java/util/SequencedCollection.md)\<T\> | [unmodifiableSequencedCollection](../java/util/Collections.md))`(`c:` ` [SequencedCollection](../java/util/SequencedCollection.md)<out` `T>`)` Returns an [unmodifiable view](../java/util/Collection.md) of the specified`SequencedCollection`. |
+| openstatic [NavigableMap](NavigableMap.md)\<K,V\> | [unmodifiableNavigableMap](Collections.md))`(`m:` ` [NavigableMap](NavigableMap.md)<K,` `out` `V>`)` Returns an [unmodifiable view](Collection.md) of the specified navigable map. |
+| openstatic [NavigableSet](NavigableSet.md)\<T\> | [unmodifiableNavigableSet](Collections.md))`(`s:` ` [NavigableSet](NavigableSet.md)<T>`)` Returns an [unmodifiable view](Collection.md) of the specified navigable set. |
+| openstatic [SequencedCollection](SequencedCollection.md)\<T\> | [unmodifiableSequencedCollection](Collections.md))`(`c:` ` [SequencedCollection](SequencedCollection.md)<out` `T>`)` Returns an [unmodifiable view](Collection.md) of the specified`SequencedCollection`. |
 | --- | --- |
-| openstatic [SequencedMap](../java/util/SequencedMap.md)\<K,V\> | [unmodifiableSequencedMap](../java/util/Collections.md))`(`m:` ` [SequencedMap](../java/util/SequencedMap.md)<out` `K,` `out` `V>`)` Returns an [unmodifiable view](../java/util/Collection.md) of the specified`SequencedMap`. |
-| openstatic [SequencedSet](../java/util/SequencedSet.md)\<T\> | [unmodifiableSequencedSet](../java/util/Collections.md))`(`s:` ` [SequencedSet](../java/util/SequencedSet.md)<out` `T>`)` Returns an [unmodifiable view](../java/util/Collection.md) of the specified`SequencedSet`. |
-| openstatic [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<T\> | [unmodifiableSet](../java/util/Collections.md))`(`s:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)<out` `T>`)` Returns an [unmodifiable view](../java/util/Collection.md) of the specified set. |
+| openstatic [SequencedMap](SequencedMap.md)\<K,V\> | [unmodifiableSequencedMap](Collections.md))`(`m:` ` [SequencedMap](SequencedMap.md)<out` `K,` `out` `V>`)` Returns an [unmodifiable view](Collection.md) of the specified`SequencedMap`. |
+| openstatic [SequencedSet](SequencedSet.md)\<T\> | [unmodifiableSequencedSet](Collections.md))`(`s:` ` [SequencedSet](SequencedSet.md)<out` `T>`)` Returns an [unmodifiable view](Collection.md) of the specified`SequencedSet`. |
+| openstatic [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<T\> | [unmodifiableSet](Collections.md))`(`s:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)<out` `T>`)` Returns an [unmodifiable view](Collection.md) of the specified set. |
 | --- | --- |
-| openstatic [SortedMap](../java/util/SortedMap.md)\<K,V\> | [unmodifiableSortedMap](../java/util/Collections.md))`(`m:` ` [SortedMap](../java/util/SortedMap.md)<K,` `out` `V>`)` Returns an [unmodifiable view](../java/util/Collection.md) of the specified sorted map. |
-| openstatic [SortedSet](../java/util/SortedSet.md)\<T\> | [unmodifiableSortedSet](../java/util/Collections.md))`(`s:` ` [SortedSet](../java/util/SortedSet.md)<T>`)` Returns an [unmodifiable view](../java/util/Collection.md) of the specified sorted set. |
+| openstatic [SortedMap](SortedMap.md)\<K,V\> | [unmodifiableSortedMap](Collections.md))`(`m:` ` [SortedMap](SortedMap.md)<K,` `out` `V>`)` Returns an [unmodifiable view](Collection.md) of the specified sorted map. |
+| openstatic [SortedSet](SortedSet.md)\<T\> | [unmodifiableSortedSet](Collections.md))`(`s:` ` [SortedSet](SortedSet.md)<T>`)` Returns an [unmodifiable view](Collection.md) of the specified sorted set. |
 
 | Properties ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?\> | [EMPTY_LIST](../java/util/Collections.md) The empty list (immutable). |
-| static [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?, [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?\> | [EMPTY_MAP](../java/util/Collections.md) The empty map (immutable). |
-| static [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?\> | [EMPTY_SET](../java/util/Collections.md) The empty set (immutable). |
+| static [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?\> | [EMPTY_LIST](Collections.md) The empty list (immutable). |
+| static [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?, [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?\> | [EMPTY_MAP](Collections.md) The empty map (immutable). |
+| static [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?\> | [EMPTY_SET](Collections.md) The empty set (immutable). |
 | --- | --- |
 
 ## Public methods
@@ -170,7 +170,7 @@ Collections.addAll(flavors, "Peaches 'n Plutonium", "Rocky Racoon");
 
 **See Also**
 
-- [java.util.Collection#addAll(Collection)](../java/util/Collection.md)) 
+- [java.util.Collection#addAll(Collection)](Collection.md)) 
 
 ### asLifoQueue
 
@@ -180,18 +180,18 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 open static fun <T : Any!> asLifoQueue(deque: Deque<T>): Queue<T>
 ```
 
-Returns a view of a [Deque](../java/util/Deque.md) as a Last-in-first-out (Lifo) [Queue](../java/util/Queue.md). Method`add`is mapped to`push`,`remove`is mapped to`pop`and so on. This view can be useful when you would like to use a method requiring a`Queue`but you need Lifo ordering.
+Returns a view of a [Deque](Deque.md) as a Last-in-first-out (Lifo) [Queue](Queue.md). Method`add`is mapped to`push`,`remove`is mapped to`pop`and so on. This view can be useful when you would like to use a method requiring a`Queue`but you need Lifo ordering.
 
-Each method invocation on the queue returned by this method results in exactly one method invocation on the backing deque, with one exception. The [addAll](../java/util/Collection.md))method is implemented as a sequence of [addFirst](../java/util/Deque.md))invocations on the backing deque.
+Each method invocation on the queue returned by this method results in exactly one method invocation on the backing deque, with one exception. The [addAll](Collection.md))method is implemented as a sequence of [addFirst](Deque.md))invocations on the backing deque.
 
 | Parameters ||
 |---------|----------------------------------------------------------------------------------------|
 | `<T>` | the class of the objects in the deque |
-| `deque` | [Deque](../java/util/Deque.md)\<T\>:the deque |
+| `deque` | [Deque](Deque.md)\<T\>:the deque |
 
 | Return ||
 |----------------------------------------------------------------------------|-----------|
-| [Queue](../java/util/Queue.md)<T> | the queue |
+| [Queue](Queue.md)<T> | the queue |
 
 ### binarySearch
 
@@ -204,9 +204,9 @@ open static fun <T : Any!> binarySearch(
 ): Int
 ```
 
-Searches the specified list for the specified object using the binary search algorithm. The list must be sorted into ascending order according to the [natural ordering](../java/lang/Comparable.md) of its elements (as by the [sort(java.util.List)](../java/util/Collections.md))method) prior to making this call. If it is not sorted, the results are undefined. If the list contains multiple elements equal to the specified object, there is no guarantee which one will be found.
+Searches the specified list for the specified object using the binary search algorithm. The list must be sorted into ascending order according to the [natural ordering](../java.lang/Comparable.md) of its elements (as by the [sort(java.util.List)](Collections.md))method) prior to making this call. If it is not sorted, the results are undefined. If the list contains multiple elements equal to the specified object, there is no guarantee which one will be found.
 
-This method runs in log(n) time for a "random access" list (which provides near-constant-time positional access). If the specified list does not implement the [RandomAccess](../java/util/RandomAccess.md) interface and is large, this method will do an iterator-based binary search that performs O(n) link traversals and O(log n) element comparisons.
+This method runs in log(n) time for a "random access" list (which provides near-constant-time positional access). If the specified list does not implement the [RandomAccess](RandomAccess.md) interface and is large, this method will do an iterator-based binary search that performs O(n) link traversals and O(log n) element comparisons.
 
 | Parameters ||
 |--------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -235,9 +235,9 @@ open static fun <T : Any!> binarySearch(
 ): Int
 ```
 
-Searches the specified list for the specified object using the binary search algorithm. The list must be sorted into ascending order according to the specified comparator (as by the [sort(List, Comparator)](../java/util/Collections.md))method), prior to making this call. If it is not sorted, the results are undefined. If the list contains multiple elements equal to the specified object, there is no guarantee which one will be found.
+Searches the specified list for the specified object using the binary search algorithm. The list must be sorted into ascending order according to the specified comparator (as by the [sort(List, Comparator)](Collections.md))method), prior to making this call. If it is not sorted, the results are undefined. If the list contains multiple elements equal to the specified object, there is no guarantee which one will be found.
 
-This method runs in log(n) time for a "random access" list (which provides near-constant-time positional access). If the specified list does not implement the [RandomAccess](../java/util/RandomAccess.md) interface and is large, this method will do an iterator-based binary search that performs O(n) link traversals and O(log n) element comparisons.
+This method runs in log(n) time for a "random access" list (which provides near-constant-time positional access). If the specified list does not implement the [RandomAccess](RandomAccess.md) interface and is large, this method will do an iterator-based binary search that performs O(n) link traversals and O(log n) element comparisons.
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -245,7 +245,7 @@ This method runs in log(n) time for a "random access" list (which provides near-
 | `list` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<outT\>:the list to be searched. |
 | `key` | T:the key to be searched for. |
 | --- | --- |
-| `c` | [Comparator](../java/util/Comparator.md)\<inT\>?:the comparator by which the list is ordered. A`null`value indicates that the elements' [natural ordering](../java/lang/Comparable.md) should be used. |
+| `c` | [Comparator](Comparator.md)\<inT\>?:the comparator by which the list is ordered. A`null`value indicates that the elements' [natural ordering](../java.lang/Comparable.md) should be used. |
 
 | Return ||
 |----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -266,7 +266,7 @@ open static fun <E : Any!> checkedCollection(
 ): MutableCollection<E>
 ```
 
-Returns a dynamically typesafe view of the specified collection. Any attempt to insert an element of the wrong type will result in an immediate [ClassCastException](../java/lang/ClassCastException.md). Assuming a collection contains no incorrectly typed elements prior to the time a dynamically typesafe view is generated, and that all subsequent access to the collection takes place through the view, it is*guaranteed*that the collection cannot contain an incorrectly typed element.
+Returns a dynamically typesafe view of the specified collection. Any attempt to insert an element of the wrong type will result in an immediate [ClassCastException](../java.lang/ClassCastException.md). Assuming a collection contains no incorrectly typed elements prior to the time a dynamically typesafe view is generated, and that all subsequent access to the collection takes place through the view, it is*guaranteed*that the collection cannot contain an incorrectly typed element.
 
 The generics mechanism in the language provides compile-time (static) type checking, but it is possible to defeat this mechanism with unchecked casts. Usually this is not a problem, as the compiler issues warnings on all such unchecked operations. There are, however, times when static type checking alone is not sufficient. For example, suppose a collection is passed to a third-party library and it is imperative that the library code not corrupt the collection by inserting an element of the wrong type.
 
@@ -295,7 +295,7 @@ Since`null`is considered to be a value of any reference type, the returned colle
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `<E>` | the class of the objects in the collection |
 | `c` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<E\>:the collection for which a dynamically typesafe view is to be returned |
-| `type` | [Class](../java/lang/Class.md)\<E\>:the type of element that`c`is permitted to hold |
+| `type` | [Class](../java.lang/Class.md)\<E\>:the type of element that`c`is permitted to hold |
 | --- | --- |
 
 | Return ||
@@ -313,9 +313,9 @@ open static fun <E : Any!> checkedList(
 ): MutableList<E>
 ```
 
-Returns a dynamically typesafe view of the specified list. Any attempt to insert an element of the wrong type will result in an immediate [ClassCastException](../java/lang/ClassCastException.md). Assuming a list contains no incorrectly typed elements prior to the time a dynamically typesafe view is generated, and that all subsequent access to the list takes place through the view, it is*guaranteed*that the list cannot contain an incorrectly typed element.
+Returns a dynamically typesafe view of the specified list. Any attempt to insert an element of the wrong type will result in an immediate [ClassCastException](../java.lang/ClassCastException.md). Assuming a list contains no incorrectly typed elements prior to the time a dynamically typesafe view is generated, and that all subsequent access to the list takes place through the view, it is*guaranteed*that the list cannot contain an incorrectly typed element.
 
-A discussion of the use of dynamically typesafe views may be found in the documentation for the [checkedCollection](../java/util/Collections.md))method.
+A discussion of the use of dynamically typesafe views may be found in the documentation for the [checkedCollection](Collections.md))method.
 
 The returned list will be serializable if the specified list is serializable.
 
@@ -325,7 +325,7 @@ Since`null`is considered to be a value of any reference type, the returned list 
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `<E>` | the class of the objects in the list |
 | `list` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<E\>:the list for which a dynamically typesafe view is to be returned |
-| `type` | [Class](../java/lang/Class.md)\<E\>:the type of element that`list`is permitted to hold |
+| `type` | [Class](../java.lang/Class.md)\<E\>:the type of element that`list`is permitted to hold |
 | --- | --- |
 
 | Return ||
@@ -344,11 +344,11 @@ open static fun <K : Any!, V : Any!> checkedMap(
 ): MutableMap<K, V>
 ```
 
-Returns a dynamically typesafe view of the specified map. Any attempt to insert a mapping whose key or value have the wrong type will result in an immediate [ClassCastException](../java/lang/ClassCastException.md). Similarly, any attempt to modify the value currently associated with a key will result in an immediate [ClassCastException](../java/lang/ClassCastException.md), whether the modification is attempted directly through the map itself, or through a [Map.Entry](../java/util/Map.Entry.md) instance obtained from the map's [entry set](../java/util/Map.md))view.
+Returns a dynamically typesafe view of the specified map. Any attempt to insert a mapping whose key or value have the wrong type will result in an immediate [ClassCastException](../java.lang/ClassCastException.md). Similarly, any attempt to modify the value currently associated with a key will result in an immediate [ClassCastException](../java.lang/ClassCastException.md), whether the modification is attempted directly through the map itself, or through a [Map.Entry](../java/util/Map.Entry.md) instance obtained from the map's [entry set](Map.md))view.
 
 Assuming a map contains no incorrectly typed keys or values prior to the time a dynamically typesafe view is generated, and that all subsequent access to the map takes place through the view (or one of its collection views), it is*guaranteed*that the map cannot contain an incorrectly typed key or value.
 
-A discussion of the use of dynamically typesafe views may be found in the documentation for the [checkedCollection](../java/util/Collections.md))method.
+A discussion of the use of dynamically typesafe views may be found in the documentation for the [checkedCollection](Collections.md))method.
 
 The returned map will be serializable if the specified map is serializable.
 
@@ -360,8 +360,8 @@ Since`null`is considered to be a value of any reference type, the returned map p
 | `<V>` | the class of the map values |
 | `m` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\<K,V\>:the map for which a dynamically typesafe view is to be returned |
 | --- | --- |
-| `keyType` | [Class](../java/lang/Class.md)\<K\>:the type of key that`m`is permitted to hold |
-| `valueType` | [Class](../java/lang/Class.md)\<V\>:the type of value that`m`is permitted to hold |
+| `keyType` | [Class](../java.lang/Class.md)\<K\>:the type of key that`m`is permitted to hold |
+| `valueType` | [Class](../java.lang/Class.md)\<V\>:the type of value that`m`is permitted to hold |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------|--------------------------------------------------|
@@ -379,11 +379,11 @@ open static fun <K : Any!, V : Any!> checkedNavigableMap(
 ): NavigableMap<K, V>
 ```
 
-Returns a dynamically typesafe view of the specified navigable map. Any attempt to insert a mapping whose key or value have the wrong type will result in an immediate [ClassCastException](../java/lang/ClassCastException.md). Similarly, any attempt to modify the value currently associated with a key will result in an immediate [ClassCastException](../java/lang/ClassCastException.md), whether the modification is attempted directly through the map itself, or through a [Map.Entry](../java/util/Map.Entry.md) instance obtained from the map's [entry set](../java/util/Map.md))view.
+Returns a dynamically typesafe view of the specified navigable map. Any attempt to insert a mapping whose key or value have the wrong type will result in an immediate [ClassCastException](../java.lang/ClassCastException.md). Similarly, any attempt to modify the value currently associated with a key will result in an immediate [ClassCastException](../java.lang/ClassCastException.md), whether the modification is attempted directly through the map itself, or through a [Map.Entry](../java/util/Map.Entry.md) instance obtained from the map's [entry set](Map.md))view.
 
 Assuming a map contains no incorrectly typed keys or values prior to the time a dynamically typesafe view is generated, and that all subsequent access to the map takes place through the view (or one of its collection views), it is*guaranteed*that the map cannot contain an incorrectly typed key or value.
 
-A discussion of the use of dynamically typesafe views may be found in the documentation for the [checkedCollection](../java/util/Collections.md))method.
+A discussion of the use of dynamically typesafe views may be found in the documentation for the [checkedCollection](Collections.md))method.
 
 The returned map will be serializable if the specified map is serializable.
 
@@ -393,14 +393,14 @@ Since`null`is considered to be a value of any reference type, the returned map p
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `<K>` | type of map keys |
 | `<V>` | type of map values |
-| `m` | [NavigableMap](../java/util/NavigableMap.md)\<K,V\>:the map for which a dynamically typesafe view is to be returned |
+| `m` | [NavigableMap](NavigableMap.md)\<K,V\>:the map for which a dynamically typesafe view is to be returned |
 | --- | --- |
-| `keyType` | [Class](../java/lang/Class.md)\<K\>:the type of key that`m`is permitted to hold |
-| `valueType` | [Class](../java/lang/Class.md)\<V\>:the type of value that`m`is permitted to hold |
+| `keyType` | [Class](../java.lang/Class.md)\<K\>:the type of key that`m`is permitted to hold |
+| `valueType` | [Class](../java.lang/Class.md)\<V\>:the type of value that`m`is permitted to hold |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|--------------------------------------------------|
-| [NavigableMap](../java/util/NavigableMap.md)<K,` `V> | a dynamically typesafe view of the specified map |
+| [NavigableMap](NavigableMap.md)<K,` `V> | a dynamically typesafe view of the specified map |
 
 ### checkedNavigableSet
 
@@ -413,9 +413,9 @@ open static fun <E : Any!> checkedNavigableSet(
 ): NavigableSet<E>
 ```
 
-Returns a dynamically typesafe view of the specified navigable set. Any attempt to insert an element of the wrong type will result in an immediate [ClassCastException](../java/lang/ClassCastException.md). Assuming a navigable set contains no incorrectly typed elements prior to the time a dynamically typesafe view is generated, and that all subsequent access to the navigable set takes place through the view, it is*guaranteed*that the navigable set cannot contain an incorrectly typed element.
+Returns a dynamically typesafe view of the specified navigable set. Any attempt to insert an element of the wrong type will result in an immediate [ClassCastException](../java.lang/ClassCastException.md). Assuming a navigable set contains no incorrectly typed elements prior to the time a dynamically typesafe view is generated, and that all subsequent access to the navigable set takes place through the view, it is*guaranteed*that the navigable set cannot contain an incorrectly typed element.
 
-A discussion of the use of dynamically typesafe views may be found in the documentation for the [checkedCollection](../java/util/Collections.md))method.
+A discussion of the use of dynamically typesafe views may be found in the documentation for the [checkedCollection](Collections.md))method.
 
 The returned navigable set will be serializable if the specified navigable set is serializable.
 
@@ -424,13 +424,13 @@ Since`null`is considered to be a value of any reference type, the returned navig
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `<E>` | the class of the objects in the set |
-| `s` | [NavigableSet](../java/util/NavigableSet.md)\<E\>:the navigable set for which a dynamically typesafe view is to be returned |
-| `type` | [Class](../java/lang/Class.md)\<E\>:the type of element that`s`is permitted to hold |
+| `s` | [NavigableSet](NavigableSet.md)\<E\>:the navigable set for which a dynamically typesafe view is to be returned |
+| `type` | [Class](../java.lang/Class.md)\<E\>:the type of element that`s`is permitted to hold |
 | --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------------|------------------------------------------------------------|
-| [NavigableSet](../java/util/NavigableSet.md)<E> | a dynamically typesafe view of the specified navigable set |
+| [NavigableSet](NavigableSet.md)<E> | a dynamically typesafe view of the specified navigable set |
 
 ### checkedQueue
 
@@ -443,9 +443,9 @@ open static fun <E : Any!> checkedQueue(
 ): Queue<E>
 ```
 
-Returns a dynamically typesafe view of the specified queue. Any attempt to insert an element of the wrong type will result in an immediate [ClassCastException](../java/lang/ClassCastException.md). Assuming a queue contains no incorrectly typed elements prior to the time a dynamically typesafe view is generated, and that all subsequent access to the queue takes place through the view, it is*guaranteed*that the queue cannot contain an incorrectly typed element.
+Returns a dynamically typesafe view of the specified queue. Any attempt to insert an element of the wrong type will result in an immediate [ClassCastException](../java.lang/ClassCastException.md). Assuming a queue contains no incorrectly typed elements prior to the time a dynamically typesafe view is generated, and that all subsequent access to the queue takes place through the view, it is*guaranteed*that the queue cannot contain an incorrectly typed element.
 
-A discussion of the use of dynamically typesafe views may be found in the documentation for the [checkedCollection](../java/util/Collections.md))method.
+A discussion of the use of dynamically typesafe views may be found in the documentation for the [checkedCollection](Collections.md))method.
 
 The returned queue will be serializable if the specified queue is serializable.
 
@@ -454,13 +454,13 @@ Since`null`is considered to be a value of any reference type, the returned queue
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------------------------------------|
 | `<E>` | the class of the objects in the queue |
-| `queue` | [Queue](../java/util/Queue.md)\<E\>:the queue for which a dynamically typesafe view is to be returned |
-| `type` | [Class](../java/lang/Class.md)\<E\>:the type of element that`queue`is permitted to hold |
+| `queue` | [Queue](Queue.md)\<E\>:the queue for which a dynamically typesafe view is to be returned |
+| `type` | [Class](../java.lang/Class.md)\<E\>:the type of element that`queue`is permitted to hold |
 | --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------|
-| [Queue](../java/util/Queue.md)<E> | a dynamically typesafe view of the specified queue |
+| [Queue](Queue.md)<E> | a dynamically typesafe view of the specified queue |
 
 ### checkedSet
 
@@ -473,9 +473,9 @@ open static fun <E : Any!> checkedSet(
 ): MutableSet<E>
 ```
 
-Returns a dynamically typesafe view of the specified set. Any attempt to insert an element of the wrong type will result in an immediate [ClassCastException](../java/lang/ClassCastException.md). Assuming a set contains no incorrectly typed elements prior to the time a dynamically typesafe view is generated, and that all subsequent access to the set takes place through the view, it is*guaranteed*that the set cannot contain an incorrectly typed element.
+Returns a dynamically typesafe view of the specified set. Any attempt to insert an element of the wrong type will result in an immediate [ClassCastException](../java.lang/ClassCastException.md). Assuming a set contains no incorrectly typed elements prior to the time a dynamically typesafe view is generated, and that all subsequent access to the set takes place through the view, it is*guaranteed*that the set cannot contain an incorrectly typed element.
 
-A discussion of the use of dynamically typesafe views may be found in the documentation for the [checkedCollection](../java/util/Collections.md))method.
+A discussion of the use of dynamically typesafe views may be found in the documentation for the [checkedCollection](Collections.md))method.
 
 The returned set will be serializable if the specified set is serializable.
 
@@ -485,7 +485,7 @@ Since`null`is considered to be a value of any reference type, the returned set p
 |--------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `<E>` | the class of the objects in the set |
 | `s` | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<E\>:the set for which a dynamically typesafe view is to be returned |
-| `type` | [Class](../java/lang/Class.md)\<E\>:the type of element that`s`is permitted to hold |
+| `type` | [Class](../java.lang/Class.md)\<E\>:the type of element that`s`is permitted to hold |
 | --- | --- |
 
 | Return ||
@@ -504,11 +504,11 @@ open static fun <K : Any!, V : Any!> checkedSortedMap(
 ): SortedMap<K, V>
 ```
 
-Returns a dynamically typesafe view of the specified sorted map. Any attempt to insert a mapping whose key or value have the wrong type will result in an immediate [ClassCastException](../java/lang/ClassCastException.md). Similarly, any attempt to modify the value currently associated with a key will result in an immediate [ClassCastException](../java/lang/ClassCastException.md), whether the modification is attempted directly through the map itself, or through a [Map.Entry](../java/util/Map.Entry.md) instance obtained from the map's [entry set](../java/util/Map.md))view.
+Returns a dynamically typesafe view of the specified sorted map. Any attempt to insert a mapping whose key or value have the wrong type will result in an immediate [ClassCastException](../java.lang/ClassCastException.md). Similarly, any attempt to modify the value currently associated with a key will result in an immediate [ClassCastException](../java.lang/ClassCastException.md), whether the modification is attempted directly through the map itself, or through a [Map.Entry](../java/util/Map.Entry.md) instance obtained from the map's [entry set](Map.md))view.
 
 Assuming a map contains no incorrectly typed keys or values prior to the time a dynamically typesafe view is generated, and that all subsequent access to the map takes place through the view (or one of its collection views), it is*guaranteed*that the map cannot contain an incorrectly typed key or value.
 
-A discussion of the use of dynamically typesafe views may be found in the documentation for the [checkedCollection](../java/util/Collections.md))method.
+A discussion of the use of dynamically typesafe views may be found in the documentation for the [checkedCollection](Collections.md))method.
 
 The returned map will be serializable if the specified map is serializable.
 
@@ -518,14 +518,14 @@ Since`null`is considered to be a value of any reference type, the returned map p
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `<K>` | the class of the map keys |
 | `<V>` | the class of the map values |
-| `m` | [SortedMap](../java/util/SortedMap.md)\<K,V\>:the map for which a dynamically typesafe view is to be returned |
+| `m` | [SortedMap](SortedMap.md)\<K,V\>:the map for which a dynamically typesafe view is to be returned |
 | --- | --- |
-| `keyType` | [Class](../java/lang/Class.md)\<K\>:the type of key that`m`is permitted to hold |
-| `valueType` | [Class](../java/lang/Class.md)\<V\>:the type of value that`m`is permitted to hold |
+| `keyType` | [Class](../java.lang/Class.md)\<K\>:the type of key that`m`is permitted to hold |
+| `valueType` | [Class](../java.lang/Class.md)\<V\>:the type of value that`m`is permitted to hold |
 
 | Return ||
 |-----------------------------------------------------------------------------------------|--------------------------------------------------|
-| [SortedMap](../java/util/SortedMap.md)<K,` `V> | a dynamically typesafe view of the specified map |
+| [SortedMap](SortedMap.md)<K,` `V> | a dynamically typesafe view of the specified map |
 
 ### checkedSortedSet
 
@@ -538,9 +538,9 @@ open static fun <E : Any!> checkedSortedSet(
 ): SortedSet<E>
 ```
 
-Returns a dynamically typesafe view of the specified sorted set. Any attempt to insert an element of the wrong type will result in an immediate [ClassCastException](../java/lang/ClassCastException.md). Assuming a sorted set contains no incorrectly typed elements prior to the time a dynamically typesafe view is generated, and that all subsequent access to the sorted set takes place through the view, it is*guaranteed*that the sorted set cannot contain an incorrectly typed element.
+Returns a dynamically typesafe view of the specified sorted set. Any attempt to insert an element of the wrong type will result in an immediate [ClassCastException](../java.lang/ClassCastException.md). Assuming a sorted set contains no incorrectly typed elements prior to the time a dynamically typesafe view is generated, and that all subsequent access to the sorted set takes place through the view, it is*guaranteed*that the sorted set cannot contain an incorrectly typed element.
 
-A discussion of the use of dynamically typesafe views may be found in the documentation for the [checkedCollection](../java/util/Collections.md))method.
+A discussion of the use of dynamically typesafe views may be found in the documentation for the [checkedCollection](Collections.md))method.
 
 The returned sorted set will be serializable if the specified sorted set is serializable.
 
@@ -549,13 +549,13 @@ Since`null`is considered to be a value of any reference type, the returned sorte
 | Parameters ||
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `<E>` | the class of the objects in the set |
-| `s` | [SortedSet](../java/util/SortedSet.md)\<E\>:the sorted set for which a dynamically typesafe view is to be returned |
-| `type` | [Class](../java/lang/Class.md)\<E\>:the type of element that`s`is permitted to hold |
+| `s` | [SortedSet](SortedSet.md)\<E\>:the sorted set for which a dynamically typesafe view is to be returned |
+| `type` | [Class](../java.lang/Class.md)\<E\>:the type of element that`s`is permitted to hold |
 | --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------|
-| [SortedSet](../java/util/SortedSet.md)<E> | a dynamically typesafe view of the specified sorted set |
+| [SortedSet](SortedSet.md)<E> | a dynamically typesafe view of the specified sorted set |
 
 ### copy
 
@@ -597,7 +597,7 @@ open static fun disjoint(
 
 Returns`true`if the two specified collections have no elements in common.
 
-Care must be exercised if this method is used on collections that do not comply with the general contract for`Collection`. Implementations may elect to iterate over either collection and test for containment in the other collection (or to perform any equivalent computation). If either collection uses a nonstandard equality test (as does a [SortedSet](../java/util/SortedSet.md) whose ordering is not*compatible with equals* , or the key set of an [IdentityHashMap](../java/util/IdentityHashMap.md)), both collections must use the same nonstandard equality test, or the result of this method is undefined.
+Care must be exercised if this method is used on collections that do not comply with the general contract for`Collection`. Implementations may elect to iterate over either collection and test for containment in the other collection (or to perform any equivalent computation). If either collection uses a nonstandard equality test (as does a [SortedSet](SortedSet.md) whose ordering is not*compatible with equals* , or the key set of an [IdentityHashMap](IdentityHashMap.md)), both collections must use the same nonstandard equality test, or the result of this method is undefined.
 
 Care must also be exercised when using collections that have restrictions on the elements that they may contain. Collection implementations are allowed to throw exceptions for any operation involving elements they deem ineligible. For absolute safety the specified collections should contain only elements which are eligible elements for both collections.
 
@@ -614,8 +614,8 @@ Note that it is permissible to pass the same collection in both parameters, in w
 
 | Exceptions ||
 |----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.NullPointerException` | if one collection contains a`null`element and`null`is not an eligible element for the other collection. ([optional](../java/util/Collection.md)) |
-| `java.lang.ClassCastException` | if one collection contains an element that is of a type which is ineligible for the other collection. ([optional](../java/util/Collection.md)) |
+| `java.lang.NullPointerException` | if one collection contains a`null`element and`null`is not an eligible element for the other collection. ([optional](Collection.md)) |
+| `java.lang.ClassCastException` | if one collection contains an element that is of a type which is ineligible for the other collection. ([optional](Collection.md)) |
 
 ### emptyEnumeration
 
@@ -627,8 +627,8 @@ open static fun <T : Any!> emptyEnumeration(): Enumeration<T>
 
 Returns an enumeration that has no elements. More precisely,
 
-- [hasMoreElements](../java/util/Enumeration.md))always returns`false`.
-- [nextElement](../java/util/Enumeration.md))always throws [NoSuchElementException](../java/util/NoSuchElementException.md).
+- [hasMoreElements](Enumeration.md))always returns`false`.
+- [nextElement](Enumeration.md))always throws [NoSuchElementException](NoSuchElementException.md).
 
 <br />
 
@@ -640,7 +640,7 @@ Implementations of this method are permitted, but not required, to return the sa
 
 | Return ||
 |----------------------------------------------------------------------------------------|----------------------|
-| [Enumeration](../java/util/Enumeration.md)<T> | an empty enumeration |
+| [Enumeration](Enumeration.md)<T> | an empty enumeration |
 
 ### emptyIterator
 
@@ -652,9 +652,9 @@ open static fun <T : Any!> emptyIterator(): MutableIterator<T>
 
 Returns an iterator that has no elements. More precisely,
 
-- [hasNext](../java/util/Iterator.md))always returns`false`.
-- [next](../java/util/Iterator.md))always throws [NoSuchElementException](../java/util/NoSuchElementException.md).
-- [remove](../java/util/Iterator.md))always throws [IllegalStateException](../java/lang/IllegalStateException.md).
+- [hasNext](Iterator.md))always returns`false`.
+- [next](Iterator.md))always throws [NoSuchElementException](NoSuchElementException.md).
+- [remove](Iterator.md))always throws [IllegalStateException](../java.lang/IllegalStateException.md).
 
 <br />
 
@@ -695,7 +695,7 @@ List<String> s = Collections.emptyList();
 
 **See Also**
 
-- [#EMPTY_LIST](../java/util/Collections.md) 
+- [#EMPTY_LIST](Collections.md) 
 
 ### emptyListIterator
 
@@ -707,12 +707,12 @@ open static fun <T : Any!> emptyListIterator(): MutableListIterator<T>
 
 Returns a list iterator that has no elements. More precisely,
 
-- [hasNext](../java/util/Iterator.md))and [hasPrevious](../java/util/ListIterator.md))always return`false`.
-- [next](../java/util/Iterator.md))and [previous](../java/util/ListIterator.md))always throw [NoSuchElementException](../java/util/NoSuchElementException.md).
-- [remove](../java/util/Iterator.md))and [set](../java/util/ListIterator.md))always throw [IllegalStateException](../java/lang/IllegalStateException.md).
-- [add](../java/util/ListIterator.md))always throws [UnsupportedOperationException](../java/lang/UnsupportedOperationException.md).
-- [nextIndex](../java/util/ListIterator.md))always returns`0`.
-- [previousIndex](../java/util/ListIterator.md))always returns`-1`.
+- [hasNext](Iterator.md))and [hasPrevious](ListIterator.md))always return`false`.
+- [next](Iterator.md))and [previous](ListIterator.md))always throw [NoSuchElementException](NoSuchElementException.md).
+- [remove](Iterator.md))and [set](ListIterator.md))always throw [IllegalStateException](../java.lang/IllegalStateException.md).
+- [add](ListIterator.md))always throws [UnsupportedOperationException](../java.lang/UnsupportedOperationException.md).
+- [nextIndex](ListIterator.md))always returns`0`.
+- [previousIndex](ListIterator.md))always returns`-1`.
 
 <br />
 
@@ -754,7 +754,7 @@ Map<String, Date> s = Collections.emptyMap();
 
 **See Also**
 
-- [#EMPTY_MAP](../java/util/Collections.md) 
+- [#EMPTY_MAP](Collections.md) 
 
 ### emptyNavigableMap
 
@@ -780,7 +780,7 @@ This example illustrates the type-safe way to obtain an empty map:
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|------------------------|
-| [NavigableMap](../java/util/NavigableMap.md)<K,` `V> | an empty navigable map |
+| [NavigableMap](NavigableMap.md)<K,` `V> | an empty navigable map |
 
 ### emptyNavigableSet
 
@@ -805,7 +805,7 @@ This example illustrates the type-safe way to obtain an empty navigable set:
 
 | Return ||
 |------------------------------------------------------------------------------------------|-------------------------|
-| [NavigableSet](../java/util/NavigableSet.md)<E> | the empty navigable set |
+| [NavigableSet](NavigableSet.md)<E> | the empty navigable set |
 
 ### emptySet
 
@@ -834,7 +834,7 @@ Set<String> s = Collections.emptySet();
 
 **See Also**
 
-- [#EMPTY_SET](../java/util/Collections.md) 
+- [#EMPTY_SET](Collections.md) 
 
 ### emptySortedMap
 
@@ -860,7 +860,7 @@ This example illustrates the type-safe way to obtain an empty map:
 
 | Return ||
 |-----------------------------------------------------------------------------------------|---------------------|
-| [SortedMap](../java/util/SortedMap.md)<K,` `V> | an empty sorted map |
+| [SortedMap](SortedMap.md)<K,` `V> | an empty sorted map |
 
 ### emptySortedSet
 
@@ -885,7 +885,7 @@ This example illustrates the type-safe way to obtain an empty sorted set:
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------------|
-| [SortedSet](../java/util/SortedSet.md)<E> | the empty sorted set |
+| [SortedSet](SortedSet.md)<E> | the empty sorted set |
 
 ### enumeration
 
@@ -897,7 +897,7 @@ open static fun <T : Any!> enumeration(c: MutableCollection<T>): Enumeration<
 
 Returns an enumeration over the specified collection. This provides interoperability with legacy APIs that require an enumeration as input.
 
-The iterator returned from a call to [Enumeration.asIterator()](../java/util/Enumeration.md))does not support removal of elements from the specified collection. This is necessary to avoid unintentionally increasing the capabilities of the returned enumeration.
+The iterator returned from a call to [Enumeration.asIterator()](Enumeration.md))does not support removal of elements from the specified collection. This is necessary to avoid unintentionally increasing the capabilities of the returned enumeration.
 
 | Parameters ||
 |-------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -906,11 +906,11 @@ The iterator returned from a call to [Enumeration.asIterator()](../java/util/Enu
 
 | Return ||
 |----------------------------------------------------------------------------------------|-----------------------------------------------|
-| [Enumeration](../java/util/Enumeration.md)<T> | an enumeration over the specified collection. |
+| [Enumeration](Enumeration.md)<T> | an enumeration over the specified collection. |
 
 **See Also**
 
-- [java.util.Enumeration](../java/util/Enumeration.md) 
+- [java.util.Enumeration](Enumeration.md) 
 
 ### fill
 
@@ -1025,16 +1025,16 @@ Returns an array list containing the elements returned by the specified enumerat
 | Parameters ||
 |-------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
 | `<T>` | the class of the objects returned by the enumeration |
-| `e` | [Enumeration](../java/util/Enumeration.md)\<T\>:enumeration providing elements for the returned array list |
+| `e` | [Enumeration](Enumeration.md)\<T\>:enumeration providing elements for the returned array list |
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| [ArrayList](../java/util/ArrayList.md)<T> | an array list containing the elements returned by the specified enumeration. |
+| [ArrayList](ArrayList.md)<T> | an array list containing the elements returned by the specified enumeration. |
 
 **See Also**
 
-- [java.util.Enumeration](../java/util/Enumeration.md)
-- [java.util.ArrayList](../java/util/ArrayList.md) 
+- [java.util.Enumeration](Enumeration.md)
+- [java.util.ArrayList](ArrayList.md) 
 
 ### max
 
@@ -1064,7 +1064,7 @@ This method iterates over the entire collection, hence it requires time proporti
 
 **See Also**
 
-- [java.lang.Comparable](../java/lang/Comparable.md) 
+- [java.lang.Comparable](../java.lang/Comparable.md) 
 
 ### max
 
@@ -1085,7 +1085,7 @@ This method iterates over the entire collection, hence it requires time proporti
 |--------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `<T>` | the class of the objects in the collection |
 | `coll` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<outT\>:the collection whose maximum element is to be determined. |
-| `comp` | [Comparator](../java/util/Comparator.md)\<inT\>?:the comparator with which to determine the maximum element. A`null`value indicates that the elements'*natural ordering*should be used. |
+| `comp` | [Comparator](Comparator.md)\<inT\>?:the comparator with which to determine the maximum element. A`null`value indicates that the elements'*natural ordering*should be used. |
 | --- | --- |
 
 | Return ||
@@ -1099,7 +1099,7 @@ This method iterates over the entire collection, hence it requires time proporti
 
 **See Also**
 
-- [java.lang.Comparable](../java/lang/Comparable.md) 
+- [java.lang.Comparable](../java.lang/Comparable.md) 
 
 ### min
 
@@ -1129,7 +1129,7 @@ This method iterates over the entire collection, hence it requires time proporti
 
 **See Also**
 
-- [java.lang.Comparable](../java/lang/Comparable.md) 
+- [java.lang.Comparable](../java.lang/Comparable.md) 
 
 ### min
 
@@ -1150,7 +1150,7 @@ This method iterates over the entire collection, hence it requires time proporti
 |--------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `<T>` | the class of the objects in the collection |
 | `coll` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<outT\>:the collection whose minimum element is to be determined. |
-| `comp` | [Comparator](../java/util/Comparator.md)\<inT\>?:the comparator with which to determine the minimum element. A`null`value indicates that the elements'*natural ordering*should be used. |
+| `comp` | [Comparator](Comparator.md)\<inT\>?:the comparator with which to determine the minimum element. A`null`value indicates that the elements'*natural ordering*should be used. |
 | --- | --- |
 
 | Return ||
@@ -1164,7 +1164,7 @@ This method iterates over the entire collection, hence it requires time proporti
 
 **See Also**
 
-- [java.lang.Comparable](../java/lang/Comparable.md) 
+- [java.lang.Comparable](../java.lang/Comparable.md) 
 
 ### nCopies
 
@@ -1196,8 +1196,8 @@ Returns an immutable list consisting of`n`copies of the specified object. The ne
 
 **See Also**
 
-- [java.util.List#addAll(Collection)](../java/util/List.md))
-- [java.util.List#addAll(int, Collection)](../java/util/List.md)) 
+- [java.util.List#addAll(Collection)](List.md))
+- [java.util.List#addAll(int, Collection)](List.md)) 
 
 ### newSequencedSetFromMap
 
@@ -1207,7 +1207,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 open static fun <E : Any!> newSequencedSetFromMap(map: SequencedMap<E, Boolean!>): SequencedSet<E>
 ```
 
-Returns a sequenced set backed by the specified map. The resulting set displays the same ordering, concurrency, and performance characteristics as the backing map. In essence, this factory method provides a [SequencedSet](../java/util/SequencedSet.md) implementation corresponding to any [SequencedMap](../java/util/SequencedMap.md) implementation.
+Returns a sequenced set backed by the specified map. The resulting set displays the same ordering, concurrency, and performance characteristics as the backing map. In essence, this factory method provides a [SequencedSet](SequencedSet.md) implementation corresponding to any [SequencedMap](SequencedMap.md) implementation.
 
 Each method invocation on the set returned by this method results in exactly one method invocation on the backing map or its`keySet`view, with one exception. The`addAll`method is implemented as a sequence of`put`invocations on the backing map.
 
@@ -1216,11 +1216,11 @@ The specified map must be empty at the time this method is invoked, and should n
 | Parameters ||
 |-------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `<E>` | the class of the map keys and of the objects in the returned set |
-| `map` | [SequencedMap](../java/util/SequencedMap.md)\<E, [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>:the backing map |
+| `map` | [SequencedMap](SequencedMap.md)\<E, [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>:the backing map |
 
 | Return ||
 |------------------------------------------------------------------------------------------|---------------------------|
-| [SequencedSet](../java/util/SequencedSet.md)<E> | the set backed by the map |
+| [SequencedSet](SequencedSet.md)<E> | the set backed by the map |
 
 | Exceptions ||
 |--------------------------------------|---------------------|
@@ -1234,7 +1234,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 open static fun <E : Any!> newSetFromMap(map: MutableMap<E, Boolean!>): MutableSet<E>
 ```
 
-Returns a set backed by the specified map. The resulting set displays the same ordering, concurrency, and performance characteristics as the backing map. In essence, this factory method provides a [Set](../java/util/Set.md) implementation corresponding to any [Map](../java/util/Map.md) implementation. There is no need to use this method on a [Map](../java/util/Map.md) implementation that already has a corresponding [Set](../java/util/Set.md) implementation (such as [HashMap](../java/util/HashMap.md) or [TreeMap](../java/util/TreeMap.md)).
+Returns a set backed by the specified map. The resulting set displays the same ordering, concurrency, and performance characteristics as the backing map. In essence, this factory method provides a [Set](Set.md) implementation corresponding to any [Map](Map.md) implementation. There is no need to use this method on a [Map](Map.md) implementation that already has a corresponding [Set](Set.md) implementation (such as [HashMap](HashMap.md) or [TreeMap](TreeMap.md)).
 
 Each method invocation on the set returned by this method results in exactly one method invocation on the backing map or its`keySet`view, with one exception. The`addAll`method is implemented as a sequence of`put`invocations on the backing map.
 
@@ -1311,7 +1311,7 @@ This method runs in linear time.
 
 **See Also**
 
-- [java.util.List#reversed](../java/util/List.md)) 
+- [java.util.List#reversed](List.md)) 
 
 ### reverseOrder
 
@@ -1339,11 +1339,11 @@ The returned comparator is serializable.
 
 | Return ||
 |--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| [Comparator](../java/util/Comparator.md)<T> | A comparator that imposes the reverse of the*natural ordering* on a collection of objects that implement the`Comparable`interface. |
+| [Comparator](Comparator.md)<T> | A comparator that imposes the reverse of the*natural ordering* on a collection of objects that implement the`Comparable`interface. |
 
 **See Also**
 
-- [java.lang.Comparable](../java/lang/Comparable.md) 
+- [java.lang.Comparable](../java.lang/Comparable.md) 
 
 ### reverseOrder
 
@@ -1353,18 +1353,18 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open static fun <T : Any!> reverseOrder(cmp: Comparator<T>?): Comparator<T>
 ```
 
-Returns a comparator that imposes the reverse ordering of the specified comparator. If the specified comparator is`null`, this method is equivalent to [reverseOrder()](../java/util/Collections.md))(in other words, it returns a comparator that imposes the reverse of the*natural ordering*on a collection of objects that implement the Comparable interface).
+Returns a comparator that imposes the reverse ordering of the specified comparator. If the specified comparator is`null`, this method is equivalent to [reverseOrder()](Collections.md))(in other words, it returns a comparator that imposes the reverse of the*natural ordering*on a collection of objects that implement the Comparable interface).
 
 The returned comparator is serializable (assuming the specified comparator is also serializable or`null`).
 
 | Parameters ||
 |-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `<T>` | the class of the objects compared by the comparator |
-| `cmp` | [Comparator](../java/util/Comparator.md)\<T\>?:a comparator who's ordering is to be reversed by the returned comparator or`null` |
+| `cmp` | [Comparator](Comparator.md)\<T\>?:a comparator who's ordering is to be reversed by the returned comparator or`null` |
 
 | Return ||
 |--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| [Comparator](../java/util/Comparator.md)<T> | A comparator that imposes the reverse ordering of the specified comparator. |
+| [Comparator](Comparator.md)<T> | A comparator that imposes the reverse ordering of the specified comparator. |
 
 ### rotate
 
@@ -1397,7 +1397,7 @@ The resulting list is`[a, c, d, b, e]`.
 
 To move more than one element forward, increase the absolute value of the rotation distance. To move elements backward, use a positive shift distance.
 
-If the specified list is small or implements the [RandomAccess](../java/util/RandomAccess.md) interface, this implementation exchanges the first element into the location it should go, and then repeatedly exchanges the displaced element into the location it should go until a displaced element is swapped into the first element. If necessary, the process is repeated on the second and successive elements, until the rotation is complete. If the specified list is large and doesn't implement the`RandomAccess`interface, this implementation breaks the list into two sublist views around index`-distance mod size`. Then the [reverse(java.util.List)](../java/util/Collections.md))method is invoked on each sublist view, and finally it is invoked on the entire list. For a more complete description of both algorithms, see Section 2.3 of Jon Bentley's*Programming Pearls*(Addison-Wesley, 1986).
+If the specified list is small or implements the [RandomAccess](RandomAccess.md) interface, this implementation exchanges the first element into the location it should go, and then repeatedly exchanges the displaced element into the location it should go until a displaced element is swapped into the first element. If necessary, the process is repeated on the second and successive elements, until the rotation is complete. If the specified list is large and doesn't implement the`RandomAccess`interface, this implementation breaks the list into two sublist views around index`-distance mod size`. Then the [reverse(java.util.List)](Collections.md))method is invoked on each sublist view, and finally it is invoked on the entire list. For a more complete description of both algorithms, see Section 2.3 of Jon Bentley's*Programming Pearls*(Addison-Wesley, 1986).
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1443,12 +1443,12 @@ open static fun shuffle(
 
 Randomly permute the specified list using the specified source of randomness.
 
-This method is equivalent to [shuffle(java.util.List,java.util.random.RandomGenerator)](../java/util/Collections.md))and exists for backward compatibility. The [shuffle(java.util.List,java.util.random.RandomGenerator)](../java/util/Collections.md))method is preferred, as it is not limited to random generators that extend the [Random](../java/util/Random.md) class.
+This method is equivalent to [shuffle(java.util.List,java.util.random.RandomGenerator)](Collections.md))and exists for backward compatibility. The [shuffle(java.util.List,java.util.random.RandomGenerator)](Collections.md))method is preferred, as it is not limited to random generators that extend the [Random](Random.md) class.
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------------------------|
 | `list` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<\*\>:the list to be shuffled. |
-| `rnd` | [Random](../java/util/Random.md):the source of randomness to use to shuffle the list. |
+| `rnd` | [Random](Random.md):the source of randomness to use to shuffle the list. |
 
 | Exceptions ||
 |-------------------------------------------|--------------------------------------------------------------------------------|
@@ -1472,7 +1472,7 @@ This implementation traverses the list backwards, from the last element up to th
 | Parameters ||
 |--------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `list` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<\*\>:the list to be shuffled. |
-| `rnd` | [RandomGenerator](../java/util/random/RandomGenerator.md):the source of randomness to use to shuffle the list. |
+| `rnd` | [RandomGenerator](../java.util.random/RandomGenerator.md):the source of randomness to use to shuffle the list. |
 
 | Exceptions ||
 |-------------------------------------------|--------------------------------------------------------------------------------|
@@ -1549,7 +1549,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open static fun <T : Comparable<T>!> sort(list: MutableList<T>): Unit
 ```
 
-Sorts the specified list into ascending order, according to the [natural ordering](../java/lang/Comparable.md) of its elements. All elements in the list must implement the [Comparable](../java/lang/Comparable.md) interface. Furthermore, all elements in the list must be*mutually comparable* (that is,`e1.compareTo(e2)`must not throw a`ClassCastException`for any elements`e1`and`e2`in the list).
+Sorts the specified list into ascending order, according to the [natural ordering](../java.lang/Comparable.md) of its elements. All elements in the list must implement the [Comparable](../java.lang/Comparable.md) interface. Furthermore, all elements in the list must be*mutually comparable* (that is,`e1.compareTo(e2)`must not throw a`ClassCastException`for any elements`e1`and`e2`in the list).
 
 This sort is guaranteed to be*stable*: equal elements will not be reordered as a result of the sort.
 
@@ -1564,12 +1564,12 @@ The specified list must be modifiable, but need not be resizable.
 |-------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `java.lang.ClassCastException` | if the list contains elements that are not*mutually comparable*(for example, strings and integers). |
 | `java.lang.UnsupportedOperationException` | if the specified list's list-iterator does not support the`set`operation. |
-| `java.lang.IllegalArgumentException` | (optional) if the implementation detects that the natural ordering of the list elements is found to violate the [Comparable](../java/lang/Comparable.md) contract |
+| `java.lang.IllegalArgumentException` | (optional) if the implementation detects that the natural ordering of the list elements is found to violate the [Comparable](../java.lang/Comparable.md) contract |
 | --- | --- |
 
 **See Also**
 
-- [java.util.List#sort(Comparator)](../java/util/List.md)) 
+- [java.util.List#sort(Comparator)](List.md)) 
 
 ### sort
 
@@ -1592,19 +1592,19 @@ The specified list must be modifiable, but need not be resizable.
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `<T>` | the class of the objects in the list |
 | `list` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<T\>:the list to be sorted. |
-| `c` | [Comparator](../java/util/Comparator.md)\<inT\>?:the comparator to determine the order of the list. A`null`value indicates that the elements'*natural ordering*should be used. |
+| `c` | [Comparator](Comparator.md)\<inT\>?:the comparator to determine the order of the list. A`null`value indicates that the elements'*natural ordering*should be used. |
 | --- | --- |
 
 | Exceptions ||
 |-------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
 | `java.lang.ClassCastException` | if the list contains elements that are not*mutually comparable*using the specified comparator. |
 | `java.lang.UnsupportedOperationException` | if the specified list's list-iterator does not support the`set`operation. |
-| `java.lang.IllegalArgumentException` | (optional) if the comparator is found to violate the [Comparator](../java/util/Comparator.md) contract |
+| `java.lang.IllegalArgumentException` | (optional) if the comparator is found to violate the [Comparator](Comparator.md) contract |
 | --- | --- |
 
 **See Also**
 
-- [java.util.List#sort(Comparator)](../java/util/List.md)) 
+- [java.util.List#sort(Comparator)](List.md)) 
 
 ### swap
 
@@ -1641,7 +1641,7 @@ open static fun <T : Any!> synchronizedCollection(c: MutableCollection<T>): M
 
 Returns a synchronized (thread-safe) collection backed by the specified collection. In order to guarantee serial access, it is critical that**all**access to the backing collection is accomplished through the returned collection.
 
-It is imperative that the user manually synchronize on the returned collection when traversing it via [Iterator](../java/util/Iterator.md), [Spliterator](../java/util/Spliterator.md) or [Stream](../java/util/stream/Stream.md): 
+It is imperative that the user manually synchronize on the returned collection when traversing it via [Iterator](Iterator.md), [Spliterator](Spliterator.md) or [Stream](../java.util.stream/Stream.md): 
 
 ```kotlin
 Collection c = Collections.synchronizedCollection(myCollection);
@@ -1678,7 +1678,7 @@ open static fun <T : Any!> synchronizedList(list: MutableList<T>): MutableLis
 
 Returns a synchronized (thread-safe) list backed by the specified list. In order to guarantee serial access, it is critical that**all**access to the backing list is accomplished through the returned list.
 
-It is imperative that the user manually synchronize on the returned list when traversing it via [Iterator](../java/util/Iterator.md), [Spliterator](../java/util/Spliterator.md) or [Stream](../java/util/stream/Stream.md): 
+It is imperative that the user manually synchronize on the returned list when traversing it via [Iterator](Iterator.md), [Spliterator](Spliterator.md) or [Stream](../java.util.stream/Stream.md): 
 
 ```kotlin
 List list = Collections.synchronizedList(new ArrayList());
@@ -1713,7 +1713,7 @@ open static fun <K : Any!, V : Any!> synchronizedMap(m: MutableMap<K, V>):
 
 Returns a synchronized (thread-safe) map backed by the specified map. In order to guarantee serial access, it is critical that**all**access to the backing map is accomplished through the returned map.
 
-It is imperative that the user manually synchronize on the returned map when traversing any of its collection views via [Iterator](../java/util/Iterator.md), [Spliterator](../java/util/Spliterator.md) or [Stream](../java/util/stream/Stream.md): 
+It is imperative that the user manually synchronize on the returned map when traversing any of its collection views via [Iterator](Iterator.md), [Spliterator](Spliterator.md) or [Stream](../java.util.stream/Stream.md): 
 
 ```kotlin
 Map m = Collections.synchronizedMap(new HashMap());
@@ -1752,7 +1752,7 @@ open static fun <K : Any!, V : Any!> synchronizedNavigableMap(m: NavigableM
 
 Returns a synchronized (thread-safe) navigable map backed by the specified navigable map. In order to guarantee serial access, it is critical that**all**access to the backing navigable map is accomplished through the returned navigable map (or its views).
 
-It is imperative that the user manually synchronize on the returned navigable map when traversing any of its collection views, or the collections views of any of its`subMap`,`headMap`or`tailMap`views, via [Iterator](../java/util/Iterator.md), [Spliterator](../java/util/Spliterator.md) or [Stream](../java/util/stream/Stream.md): 
+It is imperative that the user manually synchronize on the returned navigable map when traversing any of its collection views, or the collections views of any of its`subMap`,`headMap`or`tailMap`views, via [Iterator](Iterator.md), [Spliterator](Spliterator.md) or [Stream](../java.util.stream/Stream.md): 
 
 ```kotlin
 NavigableMap m = Collections.synchronizedNavigableMap(new TreeMap());
@@ -1789,12 +1789,12 @@ The returned navigable map will be serializable if the specified navigable map i
 |-------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `<K>` | the class of the map keys |
 | `<V>` | the class of the map values |
-| `m` | [NavigableMap](../java/util/NavigableMap.md)\<K,V\>:the navigable map to be "wrapped" in a synchronized navigable map |
+| `m` | [NavigableMap](NavigableMap.md)\<K,V\>:the navigable map to be "wrapped" in a synchronized navigable map |
 | --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------|
-| [NavigableMap](../java/util/NavigableMap.md)<K,` `V> | a synchronized view of the specified navigable map. |
+| [NavigableMap](NavigableMap.md)<K,` `V> | a synchronized view of the specified navigable map. |
 
 ### synchronizedNavigableSet
 
@@ -1806,7 +1806,7 @@ open static fun <T : Any!> synchronizedNavigableSet(s: NavigableSet<T>): Navi
 
 Returns a synchronized (thread-safe) navigable set backed by the specified navigable set. In order to guarantee serial access, it is critical that**all**access to the backing navigable set is accomplished through the returned navigable set (or its views).
 
-It is imperative that the user manually synchronize on the returned navigable set when traversing it, or any of its`subSet`,`headSet`, or`tailSet`views, via [Iterator](../java/util/Iterator.md), [Spliterator](../java/util/Spliterator.md) or [Stream](../java/util/stream/Stream.md): 
+It is imperative that the user manually synchronize on the returned navigable set when traversing it, or any of its`subSet`,`headSet`, or`tailSet`views, via [Iterator](Iterator.md), [Spliterator](Spliterator.md) or [Stream](../java.util.stream/Stream.md): 
 
 ```kotlin
 NavigableSet s = Collections.synchronizedNavigableSet(new TreeSet());
@@ -1838,11 +1838,11 @@ The returned navigable set will be serializable if the specified navigable set i
 | Parameters ||
 |-------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `<T>` | the class of the objects in the set |
-| `s` | [NavigableSet](../java/util/NavigableSet.md)\<T\>:the navigable set to be "wrapped" in a synchronized navigable set |
+| `s` | [NavigableSet](NavigableSet.md)\<T\>:the navigable set to be "wrapped" in a synchronized navigable set |
 
 | Return ||
 |------------------------------------------------------------------------------------------|----------------------------------------------------|
-| [NavigableSet](../java/util/NavigableSet.md)<T> | a synchronized view of the specified navigable set |
+| [NavigableSet](NavigableSet.md)<T> | a synchronized view of the specified navigable set |
 
 ### synchronizedSet
 
@@ -1854,7 +1854,7 @@ open static fun <T : Any!> synchronizedSet(s: MutableSet<T>): MutableSet<T>
 
 Returns a synchronized (thread-safe) set backed by the specified set. In order to guarantee serial access, it is critical that**all**access to the backing set is accomplished through the returned set.
 
-It is imperative that the user manually synchronize on the returned collection when traversing it via [Iterator](../java/util/Iterator.md), [Spliterator](../java/util/Spliterator.md) or [Stream](../java/util/stream/Stream.md): 
+It is imperative that the user manually synchronize on the returned collection when traversing it via [Iterator](Iterator.md), [Spliterator](Spliterator.md) or [Stream](../java.util.stream/Stream.md): 
 
 ```kotlin
 Set s = Collections.synchronizedSet(new HashSet());
@@ -1889,7 +1889,7 @@ open static fun <K : Any!, V : Any!> synchronizedSortedMap(m: SortedMap<K,�
 
 Returns a synchronized (thread-safe) sorted map backed by the specified sorted map. In order to guarantee serial access, it is critical that**all**access to the backing sorted map is accomplished through the returned sorted map (or its views).
 
-It is imperative that the user manually synchronize on the returned sorted map when traversing any of its collection views, or the collections views of any of its`subMap`,`headMap`or`tailMap`views, via [Iterator](../java/util/Iterator.md), [Spliterator](../java/util/Spliterator.md) or [Stream](../java/util/stream/Stream.md): 
+It is imperative that the user manually synchronize on the returned sorted map when traversing any of its collection views, or the collections views of any of its`subMap`,`headMap`or`tailMap`views, via [Iterator](Iterator.md), [Spliterator](Spliterator.md) or [Stream](../java.util.stream/Stream.md): 
 
 ```kotlin
 SortedMap m = Collections.synchronizedSortedMap(new TreeMap());
@@ -1926,12 +1926,12 @@ The returned sorted map will be serializable if the specified sorted map is seri
 |-------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
 | `<K>` | the class of the map keys |
 | `<V>` | the class of the map values |
-| `m` | [SortedMap](../java/util/SortedMap.md)\<K,V\>:the sorted map to be "wrapped" in a synchronized sorted map. |
+| `m` | [SortedMap](SortedMap.md)\<K,V\>:the sorted map to be "wrapped" in a synchronized sorted map. |
 | --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------|--------------------------------------------------|
-| [SortedMap](../java/util/SortedMap.md)<K,` `V> | a synchronized view of the specified sorted map. |
+| [SortedMap](SortedMap.md)<K,` `V> | a synchronized view of the specified sorted map. |
 
 ### synchronizedSortedSet
 
@@ -1943,7 +1943,7 @@ open static fun <T : Any!> synchronizedSortedSet(s: SortedSet<T>): SortedSet<
 
 Returns a synchronized (thread-safe) sorted set backed by the specified sorted set. In order to guarantee serial access, it is critical that**all**access to the backing sorted set is accomplished through the returned sorted set (or its views).
 
-It is imperative that the user manually synchronize on the returned sorted set when traversing it or any of its`subSet`,`headSet`, or`tailSet`views via [Iterator](../java/util/Iterator.md), [Spliterator](../java/util/Spliterator.md) or [Stream](../java/util/stream/Stream.md): 
+It is imperative that the user manually synchronize on the returned sorted set when traversing it or any of its`subSet`,`headSet`, or`tailSet`views via [Iterator](Iterator.md), [Spliterator](Spliterator.md) or [Stream](../java.util.stream/Stream.md): 
 
 ```kotlin
 SortedSet s = Collections.synchronizedSortedSet(new TreeSet());
@@ -1975,11 +1975,11 @@ The returned sorted set will be serializable if the specified sorted set is seri
 | Parameters ||
 |-------|---------------------------------------------------------------------------------------------------------------------------------------------------|
 | `<T>` | the class of the objects in the set |
-| `s` | [SortedSet](../java/util/SortedSet.md)\<T\>:the sorted set to be "wrapped" in a synchronized sorted set. |
+| `s` | [SortedSet](SortedSet.md)\<T\>:the sorted set to be "wrapped" in a synchronized sorted set. |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------------------------|
-| [SortedSet](../java/util/SortedSet.md)<T> | a synchronized view of the specified sorted set. |
+| [SortedSet](SortedSet.md)<T> | a synchronized view of the specified sorted set. |
 
 ### unmodifiableCollection
 
@@ -1989,7 +1989,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open static fun <T : Any!> unmodifiableCollection(c: MutableCollection<out T>): MutableCollection<T>
 ```
 
-Returns an [unmodifiable view](../java/util/Collection.md) of the specified collection. Query operations on the returned collection "read through" to the specified collection, and attempts to modify the returned collection, whether direct or via its iterator, result in an`UnsupportedOperationException`.
+Returns an [unmodifiable view](Collection.md) of the specified collection. Query operations on the returned collection "read through" to the specified collection, and attempts to modify the returned collection, whether direct or via its iterator, result in an`UnsupportedOperationException`.
 
 The returned collection does*not* pass the hashCode and equals operations through to the backing collection, but relies on`Object`'s`equals`and`hashCode`methods. This is necessary to preserve the contracts of these operations in the case that the backing collection is a set or a list.
 
@@ -2012,9 +2012,9 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open static fun <T : Any!> unmodifiableList(list: MutableList<out T>): MutableList<T>
 ```
 
-Returns an [unmodifiable view](../java/util/Collection.md) of the specified list. Query operations on the returned list "read through" to the specified list, and attempts to modify the returned list, whether direct or via its iterator, result in an`UnsupportedOperationException`.
+Returns an [unmodifiable view](Collection.md) of the specified list. Query operations on the returned list "read through" to the specified list, and attempts to modify the returned list, whether direct or via its iterator, result in an`UnsupportedOperationException`.
 
-The returned list will be serializable if the specified list is serializable. Similarly, the returned list will implement [RandomAccess](../java/util/RandomAccess.md) if the specified list does.
+The returned list will be serializable if the specified list is serializable. Similarly, the returned list will implement [RandomAccess](RandomAccess.md) if the specified list does.
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -2033,7 +2033,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open static fun <K : Any!, V : Any!> unmodifiableMap(m: MutableMap<out K, out V>): MutableMap<K, V>
 ```
 
-Returns an [unmodifiable view](../java/util/Collection.md) of the specified map. Query operations on the returned map "read through" to the specified map, and attempts to modify the returned map, whether direct or via its collection views, result in an`UnsupportedOperationException`.
+Returns an [unmodifiable view](Collection.md) of the specified map. Query operations on the returned map "read through" to the specified map, and attempts to modify the returned map, whether direct or via its collection views, result in an`UnsupportedOperationException`.
 
 The returned map will be serializable if the specified map is serializable.
 
@@ -2056,7 +2056,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 open static fun <K : Any!, V : Any!> unmodifiableNavigableMap(m: NavigableMap<K, out V>): NavigableMap<K, V>
 ```
 
-Returns an [unmodifiable view](../java/util/Collection.md) of the specified navigable map. Query operations on the returned navigable map "read through" to the specified navigable map. Attempts to modify the returned navigable map, whether direct, via its collection views, or via its`subMap`,`headMap`, or`tailMap`views, result in an`UnsupportedOperationException`.
+Returns an [unmodifiable view](Collection.md) of the specified navigable map. Query operations on the returned navigable map "read through" to the specified navigable map. Attempts to modify the returned navigable map, whether direct, via its collection views, or via its`subMap`,`headMap`, or`tailMap`views, result in an`UnsupportedOperationException`.
 
 The returned navigable map will be serializable if the specified navigable map is serializable.
 
@@ -2064,12 +2064,12 @@ The returned navigable map will be serializable if the specified navigable map i
 |-------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `<K>` | the class of the map keys |
 | `<V>` | the class of the map values |
-| `m` | [NavigableMap](../java/util/NavigableMap.md)\<K,outV\>:the navigable map for which an unmodifiable view is to be returned |
+| `m` | [NavigableMap](NavigableMap.md)\<K,outV\>:the navigable map for which an unmodifiable view is to be returned |
 | --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------|
-| [NavigableMap](../java/util/NavigableMap.md)<K,` `V> | an unmodifiable view of the specified navigable map |
+| [NavigableMap](NavigableMap.md)<K,` `V> | an unmodifiable view of the specified navigable map |
 
 ### unmodifiableNavigableSet
 
@@ -2079,18 +2079,18 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 open static fun <T : Any!> unmodifiableNavigableSet(s: NavigableSet<T>): NavigableSet<T>
 ```
 
-Returns an [unmodifiable view](../java/util/Collection.md) of the specified navigable set. Query operations on the returned navigable set "read through" to the specified navigable set. Attempts to modify the returned navigable set, whether direct, via its iterator, or via its`subSet`,`headSet`, or`tailSet`views, result in an`UnsupportedOperationException`.
+Returns an [unmodifiable view](Collection.md) of the specified navigable set. Query operations on the returned navigable set "read through" to the specified navigable set. Attempts to modify the returned navigable set, whether direct, via its iterator, or via its`subSet`,`headSet`, or`tailSet`views, result in an`UnsupportedOperationException`.
 
 The returned navigable set will be serializable if the specified navigable set is serializable.
 
 | Parameters ||
 |-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `<T>` | the class of the objects in the set |
-| `s` | [NavigableSet](../java/util/NavigableSet.md)\<T\>:the navigable set for which an unmodifiable view is to be returned |
+| `s` | [NavigableSet](NavigableSet.md)\<T\>:the navigable set for which an unmodifiable view is to be returned |
 
 | Return ||
 |------------------------------------------------------------------------------------------|-----------------------------------------------------|
-| [NavigableSet](../java/util/NavigableSet.md)<T> | an unmodifiable view of the specified navigable set |
+| [NavigableSet](NavigableSet.md)<T> | an unmodifiable view of the specified navigable set |
 
 ### unmodifiableSequencedCollection
 
@@ -2100,7 +2100,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 open static fun <T : Any!> unmodifiableSequencedCollection(c: SequencedCollection<out T>): SequencedCollection<T>
 ```
 
-Returns an [unmodifiable view](../java/util/Collection.md) of the specified`SequencedCollection`. Query operations on the returned collection "read through" to the specified collection, and attempts to modify the returned collection, whether direct or via its iterator, result in an`UnsupportedOperationException`.
+Returns an [unmodifiable view](Collection.md) of the specified`SequencedCollection`. Query operations on the returned collection "read through" to the specified collection, and attempts to modify the returned collection, whether direct or via its iterator, result in an`UnsupportedOperationException`.
 
 The returned collection does*not* pass the`hashCode`and`equals`operations through to the backing collection, but relies on`Object`'s`equals`and`hashCode`methods. This is necessary to preserve the contracts of these operations in the case that the backing collection is a set or a list.
 
@@ -2109,11 +2109,11 @@ The returned collection will be serializable if the specified collection is seri
 | Parameters ||
 |-------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `<T>` | the class of the objects in the collection |
-| `c` | [SequencedCollection](../java/util/SequencedCollection.md)\<outT\>:the collection for which an unmodifiable view is to be returned. |
+| `c` | [SequencedCollection](SequencedCollection.md)\<outT\>:the collection for which an unmodifiable view is to be returned. |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------|---------------------------------------------------|
-| [SequencedCollection](../java/util/SequencedCollection.md)<T> | an unmodifiable view of the specified collection. |
+| [SequencedCollection](SequencedCollection.md)<T> | an unmodifiable view of the specified collection. |
 
 ### unmodifiableSequencedMap
 
@@ -2123,7 +2123,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 open static fun <K : Any!, V : Any!> unmodifiableSequencedMap(m: SequencedMap<out K, out V>): SequencedMap<K, V>
 ```
 
-Returns an [unmodifiable view](../java/util/Collection.md) of the specified`SequencedMap`. Query operations on the returned map "read through" to the specified map, and attempts to modify the returned map, whether direct or via its collection views, result in an`UnsupportedOperationException`.
+Returns an [unmodifiable view](Collection.md) of the specified`SequencedMap`. Query operations on the returned map "read through" to the specified map, and attempts to modify the returned map, whether direct or via its collection views, result in an`UnsupportedOperationException`.
 
 The returned map will be serializable if the specified map is serializable.
 
@@ -2131,12 +2131,12 @@ The returned map will be serializable if the specified map is serializable.
 |-------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `<K>` | the class of the map keys |
 | `<V>` | the class of the map values |
-| `m` | [SequencedMap](../java/util/SequencedMap.md)\<outK,outV\>:the map for which an unmodifiable view is to be returned. |
+| `m` | [SequencedMap](SequencedMap.md)\<outK,outV\>:the map for which an unmodifiable view is to be returned. |
 | --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|--------------------------------------------|
-| [SequencedMap](../java/util/SequencedMap.md)<K,` `V> | an unmodifiable view of the specified map. |
+| [SequencedMap](SequencedMap.md)<K,` `V> | an unmodifiable view of the specified map. |
 
 ### unmodifiableSequencedSet
 
@@ -2146,18 +2146,18 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 open static fun <T : Any!> unmodifiableSequencedSet(s: SequencedSet<out T>): SequencedSet<T>
 ```
 
-Returns an [unmodifiable view](../java/util/Collection.md) of the specified`SequencedSet`. Query operations on the returned set "read through" to the specified set, and attempts to modify the returned set, whether direct or via its iterator, result in an`UnsupportedOperationException`.
+Returns an [unmodifiable view](Collection.md) of the specified`SequencedSet`. Query operations on the returned set "read through" to the specified set, and attempts to modify the returned set, whether direct or via its iterator, result in an`UnsupportedOperationException`.
 
 The returned set will be serializable if the specified set is serializable.
 
 | Parameters ||
 |-------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `<T>` | the class of the objects in the set |
-| `s` | [SequencedSet](../java/util/SequencedSet.md)\<outT\>:the set for which an unmodifiable view is to be returned. |
+| `s` | [SequencedSet](SequencedSet.md)\<outT\>:the set for which an unmodifiable view is to be returned. |
 
 | Return ||
 |------------------------------------------------------------------------------------------|------------------------------------------------------|
-| [SequencedSet](../java/util/SequencedSet.md)<T> | an unmodifiable view of the specified sequenced set. |
+| [SequencedSet](SequencedSet.md)<T> | an unmodifiable view of the specified sequenced set. |
 
 ### unmodifiableSet
 
@@ -2167,7 +2167,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open static fun <T : Any!> unmodifiableSet(s: MutableSet<out T>): MutableSet<T>
 ```
 
-Returns an [unmodifiable view](../java/util/Collection.md) of the specified set. Query operations on the returned set "read through" to the specified set, and attempts to modify the returned set, whether direct or via its iterator, result in an`UnsupportedOperationException`.
+Returns an [unmodifiable view](Collection.md) of the specified set. Query operations on the returned set "read through" to the specified set, and attempts to modify the returned set, whether direct or via its iterator, result in an`UnsupportedOperationException`.
 
 The returned set will be serializable if the specified set is serializable.
 
@@ -2188,7 +2188,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open static fun <K : Any!, V : Any!> unmodifiableSortedMap(m: SortedMap<K, out V>): SortedMap<K, V>
 ```
 
-Returns an [unmodifiable view](../java/util/Collection.md) of the specified sorted map. Query operations on the returned sorted map "read through" to the specified sorted map. Attempts to modify the returned sorted map, whether direct, via its collection views, or via its`subMap`,`headMap`, or`tailMap`views, result in an`UnsupportedOperationException`.
+Returns an [unmodifiable view](Collection.md) of the specified sorted map. Query operations on the returned sorted map "read through" to the specified sorted map. Attempts to modify the returned sorted map, whether direct, via its collection views, or via its`subMap`,`headMap`, or`tailMap`views, result in an`UnsupportedOperationException`.
 
 The returned sorted map will be serializable if the specified sorted map is serializable.
 
@@ -2196,12 +2196,12 @@ The returned sorted map will be serializable if the specified sorted map is seri
 |-------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `<K>` | the class of the map keys |
 | `<V>` | the class of the map values |
-| `m` | [SortedMap](../java/util/SortedMap.md)\<K,outV\>:the sorted map for which an unmodifiable view is to be returned. |
+| `m` | [SortedMap](SortedMap.md)\<K,outV\>:the sorted map for which an unmodifiable view is to be returned. |
 | --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------|---------------------------------------------------|
-| [SortedMap](../java/util/SortedMap.md)<K,` `V> | an unmodifiable view of the specified sorted map. |
+| [SortedMap](SortedMap.md)<K,` `V> | an unmodifiable view of the specified sorted map. |
 
 ### unmodifiableSortedSet
 
@@ -2211,18 +2211,18 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open static fun <T : Any!> unmodifiableSortedSet(s: SortedSet<T>): SortedSet<T>
 ```
 
-Returns an [unmodifiable view](../java/util/Collection.md) of the specified sorted set. Query operations on the returned sorted set "read through" to the specified sorted set. Attempts to modify the returned sorted set, whether direct, via its iterator, or via its`subSet`,`headSet`, or`tailSet`views, result in an`UnsupportedOperationException`.
+Returns an [unmodifiable view](Collection.md) of the specified sorted set. Query operations on the returned sorted set "read through" to the specified sorted set. Attempts to modify the returned sorted set, whether direct, via its iterator, or via its`subSet`,`headSet`, or`tailSet`views, result in an`UnsupportedOperationException`.
 
 The returned sorted set will be serializable if the specified sorted set is serializable.
 
 | Parameters ||
 |-------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `<T>` | the class of the objects in the set |
-| `s` | [SortedSet](../java/util/SortedSet.md)\<T\>:the sorted set for which an unmodifiable view is to be returned. |
+| `s` | [SortedSet](SortedSet.md)\<T\>:the sorted set for which an unmodifiable view is to be returned. |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------------|
-| [SortedSet](../java/util/SortedSet.md)<T> | an unmodifiable view of the specified sorted set. |
+| [SortedSet](SortedSet.md)<T> | an unmodifiable view of the specified sorted set. |
 
 ## Properties
 

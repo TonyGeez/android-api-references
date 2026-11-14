@@ -10,7 +10,7 @@ open class ErrorManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.util.logging.ErrorManager](../java/util/logging/ErrorManager.md) |
+| ↳ | [java.util.logging.ErrorManager](ErrorManager.md) |
 
 ErrorManager objects can be attached to Handlers to process any error that occurs on a Handler during Logging.
 
@@ -20,22 +20,22 @@ When processing logging output, if a Handler encounters problems then rather tha
 
 | Constants ||
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CLOSE_FAILURE](../java/util/logging/ErrorManager.md) CLOSE_FAILURE is used when a close of an output stream fails. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLUSH_FAILURE](../java/util/logging/ErrorManager.md) FLUSH_FAILURE is used when a flush to an output stream fails. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_FAILURE](../java/util/logging/ErrorManager.md) FORMAT_FAILURE is used when formatting fails for any reason. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CLOSE_FAILURE](ErrorManager.md) CLOSE_FAILURE is used when a close of an output stream fails. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLUSH_FAILURE](ErrorManager.md) FLUSH_FAILURE is used when a flush to an output stream fails. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_FAILURE](ErrorManager.md) FORMAT_FAILURE is used when formatting fails for any reason. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GENERIC_FAILURE](../java/util/logging/ErrorManager.md) GENERIC_FAILURE is used for failure that don't fit into one of the other categories. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPEN_FAILURE](../java/util/logging/ErrorManager.md) OPEN_FAILURE is used when an open of an output stream fails. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WRITE_FAILURE](../java/util/logging/ErrorManager.md) WRITE_FAILURE is used when a write to an output stream fails. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GENERIC_FAILURE](ErrorManager.md) GENERIC_FAILURE is used for failure that don't fit into one of the other categories. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPEN_FAILURE](ErrorManager.md) OPEN_FAILURE is used when an open of an output stream fails. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WRITE_FAILURE](ErrorManager.md) WRITE_FAILURE is used when a write to an output stream fails. |
 | --- | --- |
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------|---|
-| [ErrorManager](../java/util/logging/ErrorManager.md))`()` <br /> |
+| [ErrorManager](ErrorManager.md))`()` <br /> |
 
 | Public methods ||
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [error](../java/util/logging/ErrorManager.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `ex:` ` [Exception](../java/lang/Exception.md)!`, `code:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` The error method is called when a Handler failure occurs. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [error](ErrorManager.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `ex:` ` [Exception](../java.lang/Exception.md)!`, `code:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` The error method is called when a Handler failure occurs. |
 
 ## Constants
 
@@ -142,6 +142,6 @@ This method may be overridden in subclasses. The default behavior in this base c
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------|
 | `msg` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:a descriptive string (may be null) |
-| `ex` | [Exception](../java/lang/Exception.md)!:an exception (may be null) |
+| `ex` | [Exception](../java.lang/Exception.md)!:an exception (may be null) |
 | `code` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):an error code defined in ErrorManager |
 | --- | --- |

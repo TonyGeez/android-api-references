@@ -9,9 +9,9 @@ class WheelchairPushesRecord : IntervalRecord
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.health.connect.datatypes.Record](../android/health/connect/datatypes/Record.md) |||
-| | ↳ | [android.health.connect.datatypes.IntervalRecord](../android/health/connect/datatypes/IntervalRecord.md) ||
-| | | ↳ | [android.health.connect.datatypes.WheelchairPushesRecord](../android/health/connect/datatypes/WheelchairPushesRecord.md) |
+| ↳ | [android.health.connect.datatypes.Record](Record.md) |||
+| | ↳ | [android.health.connect.datatypes.IntervalRecord](IntervalRecord.md) ||
+| | | ↳ | [android.health.connect.datatypes.WheelchairPushesRecord](WheelchairPushesRecord.md) |
 | --- | --- | --- | --- |
 
 Captures the number of wheelchair pushes done over a time interval. Each push is only reported once so records shouldn't have overlapping time. The start time of each record should represent the start of the interval in which pushes were made.
@@ -40,7 +40,7 @@ Captures the number of wheelchair pushes done over a time interval. Each push is
 
 | Properties ||
 |---|---|
-| static [AggregationType](../android/health/connect/datatypes/AggregationType.md)\< [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/WheelchairPushesRecord#WHEEL_CHAIR_PUSHES_COUNT_TOTAL:android.health.connect.datatypes.AggregationType` Metric identifier to get total wheelchair push count using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
+| static [AggregationType](AggregationType.md)\< [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/WheelchairPushesRecord#WHEEL_CHAIR_PUSHES_COUNT_TOTAL:android.health.connect.datatypes.AggregationType` Metric identifier to get total wheelchair push count using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
 
 ## Public methods
 

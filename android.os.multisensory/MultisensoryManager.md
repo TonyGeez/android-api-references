@@ -8,7 +8,7 @@ open class MultisensoryManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.os.multisensory.MultisensoryManager](../android/os/multisensory/MultisensoryManager.md) |
+| ↳ | [android.os.multisensory.MultisensoryManager](MultisensoryManager.md) |
 
 Provides capabilities to deliver audio-haptic feedback from the Multisensory Design System in Android.
 

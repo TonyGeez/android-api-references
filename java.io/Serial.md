@@ -8,9 +8,9 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 @Target([AnnotationTarget.FUNCTION, AnnotationTarget.PROPERTY_GETTER, AnnotationTarget.PROPERTY_SETTER, AnnotationTarget.FIELD]) class Serial
 ```
 
-| [java.io.Serial](../java/io/Serial.md) |
+| [java.io.Serial](Serial.md) |
 
-Indicates that an annotated field or method is part of the [serialization mechanism](../java/io/Serializable.md) defined by the Java Object Serialization Specification. This annotation type is intended to allow compile-time checking of serialization-related declarations, analogous to the checking enabled by the [java.lang.Override](../java/lang/Override.md) annotation type to validate method overriding. classes are encouraged to use annotations to help a compiler catch mis-declared serialization-related fields and methods, mis-declarations that may otherwise be difficult to detect.
+Indicates that an annotated field or method is part of the [serialization mechanism](Serializable.md) defined by the Java Object Serialization Specification. This annotation type is intended to allow compile-time checking of serialization-related declarations, analogous to the checking enabled by the [java.lang.Override](../java.lang/Override.md) annotation type to validate method overriding. classes are encouraged to use annotations to help a compiler catch mis-declared serialization-related fields and methods, mis-declarations that may otherwise be difficult to detect.
 
 Specifically, annotations of this type should be applied to serialization-related methods and fields in classes declared to be`Serializable`. The five serialization-related methods are:
 
@@ -45,7 +45,7 @@ Note that serialization mechanism accesses its designated fields and methods ref
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Serial](../java/io/Serial.md))`()` Indicates that an annotated field or method is part of the [serialization mechanism](../java/io/Serializable.md) defined by the Java Object Serialization Specification. |
+| [Serial](Serial.md))`()` Indicates that an annotated field or method is part of the [serialization mechanism](Serializable.md) defined by the Java Object Serialization Specification. |
 
 ## Public constructors
 
@@ -57,7 +57,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 Serial()
 ```
 
-Indicates that an annotated field or method is part of the [serialization mechanism](../java/io/Serializable.md) defined by the Java Object Serialization Specification. This annotation type is intended to allow compile-time checking of serialization-related declarations, analogous to the checking enabled by the [java.lang.Override](../java/lang/Override.md) annotation type to validate method overriding. classes are encouraged to use annotations to help a compiler catch mis-declared serialization-related fields and methods, mis-declarations that may otherwise be difficult to detect.
+Indicates that an annotated field or method is part of the [serialization mechanism](Serializable.md) defined by the Java Object Serialization Specification. This annotation type is intended to allow compile-time checking of serialization-related declarations, analogous to the checking enabled by the [java.lang.Override](../java.lang/Override.md) annotation type to validate method overriding. classes are encouraged to use annotations to help a compiler catch mis-declared serialization-related fields and methods, mis-declarations that may otherwise be difficult to detect.
 
 Specifically, annotations of this type should be applied to serialization-related methods and fields in classes declared to be`Serializable`. The five serialization-related methods are:
 
@@ -89,5 +89,5 @@ It is a semantic error to apply this annotation to other fields or methods, incl
 Note that serialization mechanism accesses its designated fields and methods reflectively and those fields and methods may appear otherwise unused in a`Serializable`class. 
 **See Also**
 
-- [java.io.Serializable](../java/io/Serializable.md)
-- [java.io.Externalizable](../java/io/Externalizable.md)
+- [java.io.Serializable](Serializable.md)
+- [java.io.Externalizable](Externalizable.md)

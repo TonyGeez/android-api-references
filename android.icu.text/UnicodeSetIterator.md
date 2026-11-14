@@ -4,7 +4,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # UnicodeSetIterator
 
-Kotlin| [Java](../android/icu/text/UnicodeSetIterator.md) 
+Kotlin| [Java](UnicodeSetIterator.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class UnicodeSetIterator
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.icu.text.UnicodeSetIterator](../android/icu/text/UnicodeSetIterator.md) |
+| ↳ | [android.icu.text.UnicodeSetIterator](UnicodeSetIterator.md) |
 
 UnicodeSetIterator iterates over the contents of a UnicodeSet. It iterates over either code points or code point ranges. After all code points or ranges have been returned, it returns the multicharacter strings of the UnicodeSet, if any.
 
@@ -49,27 +49,27 @@ To iterate over only the strings, start with`new UnicodeSetIterator(set).skipToS
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [UnicodeSetIterator](../android/icu/text/UnicodeSetIterator.md))`()` Create an iterator over nothing. |
-| [UnicodeSetIterator](../android/icu/text/UnicodeSetIterator.md))`(`set:` ` [UnicodeSet](../android/icu/text/UnicodeSet.md)!`)` Create an iterator over the given set. |
+| [UnicodeSetIterator](UnicodeSetIterator.md))`()` Create an iterator over nothing. |
+| [UnicodeSetIterator](UnicodeSetIterator.md))`(`set:` ` [UnicodeSet](UnicodeSet.md)!`)` Create an iterator over the given set. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getString](../android/icu/text/UnicodeSetIterator.md))`()` Gets the current string from the iterator. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [next](../android/icu/text/UnicodeSetIterator.md))`()` Returns the next element in the set, either a single code point or a string. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [nextRange](../android/icu/text/UnicodeSetIterator.md))`()` Returns the next element in the set, either a code point range or a string. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getString](UnicodeSetIterator.md))`()` Gets the current string from the iterator. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [next](UnicodeSetIterator.md))`()` Returns the next element in the set, either a single code point or a string. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [nextRange](UnicodeSetIterator.md))`()` Returns the next element in the set, either a code point range or a string. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](../android/icu/text/UnicodeSetIterator.md))`()` Resets this iterator to the start of the set. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](../android/icu/text/UnicodeSetIterator.md))`(`uset:` ` [UnicodeSet](../android/icu/text/UnicodeSet.md)!`)` Sets this iterator to visit the elements of the given set and resets it to the start of that set. |
-| open [UnicodeSetIterator](../android/icu/text/UnicodeSetIterator.md)! | [skipToStrings](../android/icu/text/UnicodeSetIterator.md))`()` Skips over the remaining code points/ranges, if any. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](UnicodeSetIterator.md))`()` Resets this iterator to the start of the set. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](UnicodeSetIterator.md))`(`uset:` ` [UnicodeSet](UnicodeSet.md)!`)` Sets this iterator to visit the elements of the given set and resets it to the start of that set. |
+| open [UnicodeSetIterator](UnicodeSetIterator.md)! | [skipToStrings](UnicodeSetIterator.md))`()` Skips over the remaining code points/ranges, if any. |
 | --- | --- |
 
 | Properties ||
 |-----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IS_STRING](../android/icu/text/UnicodeSetIterator.md) Value of codepoint if the iterator points to a string. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [codepoint](../android/icu/text/UnicodeSetIterator.md) Current code point, or the special value IS_STRING, if the iterator points to a string. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [codepointEnd](../android/icu/text/UnicodeSetIterator.md) When iterating over ranges using nextRange(), codepointEnd contains the inclusive end of the iteration range, if codepoint != IS_STRING. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IS_STRING](UnicodeSetIterator.md) Value of codepoint if the iterator points to a string. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [codepoint](UnicodeSetIterator.md) Current code point, or the special value IS_STRING, if the iterator points to a string. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [codepointEnd](UnicodeSetIterator.md) When iterating over ranges using nextRange(), codepointEnd contains the inclusive end of the iteration range, if codepoint != IS_STRING. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [string](../android/icu/text/UnicodeSetIterator.md) If codepoint == IS_STRING, then string points to the current string. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [string](UnicodeSetIterator.md) If codepoint == IS_STRING, then string points to the current string. |
 
 ## Public constructors
 
@@ -95,7 +95,7 @@ Create an iterator over the given set.
 
 | Parameters ||
 |-------|---------------------------------------------------------------------------------------------------------------|
-| `set` | [UnicodeSet](../android/icu/text/UnicodeSet.md)!:set to iterate over |
+| `set` | [UnicodeSet](UnicodeSet.md)!:set to iterate over |
 
 ## Public methods
 
@@ -165,7 +165,7 @@ Sets this iterator to visit the elements of the given set and resets it to the s
 
 | Parameters ||
 |--------|--------------------------------------------------------------------------------------------------------------------|
-| `uset` | [UnicodeSet](../android/icu/text/UnicodeSet.md)!:the set to iterate over. |
+| `uset` | [UnicodeSet](UnicodeSet.md)!:the set to iterate over. |
 
 ### skipToStrings
 
@@ -179,11 +179,11 @@ Skips over the remaining code points/ranges, if any. A following call to next() 
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------|------|
-| [UnicodeSetIterator](../android/icu/text/UnicodeSetIterator.md)! | this |
+| [UnicodeSetIterator](UnicodeSetIterator.md)! | this |
 
 **See Also**
 
-- [android.icu.text.UnicodeSet#strings()](../android/icu/text/UnicodeSet.md))
+- [android.icu.text.UnicodeSet#strings()](UnicodeSet.md))
 
 ## Properties
 

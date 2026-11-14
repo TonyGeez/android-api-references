@@ -10,7 +10,7 @@ class OpcodeInfo
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [dalvik.bytecode.OpcodeInfo](../dalvik/bytecode/OpcodeInfo.md) |
+| ↳ | [dalvik.bytecode.OpcodeInfo](OpcodeInfo.md) |
 
 Information about Dalvik opcodes.
 
@@ -18,8 +18,8 @@ Information about Dalvik opcodes.
 
 | Properties ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAXIMUM_PACKED_VALUE](../dalvik/bytecode/OpcodeInfo.md) The maximum possible "packed value" of a Dalvik opcode. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAXIMUM_VALUE](../dalvik/bytecode/OpcodeInfo.md) The maximum possible value of a Dalvik opcode. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAXIMUM_PACKED_VALUE](OpcodeInfo.md) The maximum possible "packed value" of a Dalvik opcode. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAXIMUM_VALUE](OpcodeInfo.md) The maximum possible value of a Dalvik opcode. |
 
 ## Properties
 

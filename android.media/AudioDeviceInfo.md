@@ -2,7 +2,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 
 # AudioDeviceInfo
 
-Kotlin | [Java](../android/media/AudioDeviceInfo.md)
+Kotlin | [Java](AudioDeviceInfo.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class AudioDeviceInfo
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.AudioDeviceInfo](../android/media/AudioDeviceInfo.md) |
+| ↳ | [android.media.AudioDeviceInfo](AudioDeviceInfo.md) |
 
 Provides information about an audio device.
 
@@ -66,9 +66,9 @@ Provides information about an audio device.
 |---|---|
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#getAddress()()` <br /> |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AudioDescriptor](../android/media/AudioDescriptor.md)!\> | `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#getAudioDescriptors()()` <br /> |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AudioDescriptor](AudioDescriptor.md)!\> | `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#getAudioDescriptors()()` <br /> |
 | --- | --- |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AudioProfile](../android/media/AudioProfile.md)!\> | `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#getAudioProfiles()()` <br /> |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AudioProfile](AudioProfile.md)!\> | `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#getAudioProfiles()()` <br /> |
 | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#getChannelCounts()()` <br /> |
 | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo#getChannelIndexMasks()()` <br /> |
 | --- | --- |

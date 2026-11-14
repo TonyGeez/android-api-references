@@ -10,27 +10,27 @@ open class CRC32 : Checksum
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.util.zip.CRC32](../java/util/zip/CRC32.md) |
+| ↳ | [java.util.zip.CRC32](CRC32.md) |
 
 A class that can be used to compute the CRC-32 of a data stream.
 
-Passing a`null`argument to a method in this class will cause a [NullPointerException](../java/lang/NullPointerException.md) to be thrown.
+Passing a`null`argument to a method in this class will cause a [NullPointerException](../java.lang/NullPointerException.md) to be thrown.
 
 ## Summary
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------|---|
-| [CRC32](../java/util/zip/CRC32.md))`()` Creates a new CRC32 object. |
+| [CRC32](CRC32.md))`()` Creates a new CRC32 object. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getValue](../java/util/zip/CRC32.md))`()` Returns CRC-32 value. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](../java/util/zip/CRC32.md))`()` Resets CRC-32 to initial value. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](../java/util/zip/CRC32.md))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Updates the CRC-32 checksum with the specified array of bytes. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getValue](CRC32.md))`()` Returns CRC-32 value. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](CRC32.md))`()` Resets CRC-32 to initial value. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](CRC32.md))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Updates the CRC-32 checksum with the specified array of bytes. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](../java/util/zip/CRC32.md))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Updates the CRC-32 checksum with the specified array of bytes. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](../java/util/zip/CRC32.md))`(`b:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Updates the CRC-32 checksum with the specified byte (the low eight bits of the argument b). |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](../java/util/zip/CRC32.md))`(`buffer:` ` [ByteBuffer](../java/nio/ByteBuffer.md)!`)` Updates the CRC-32 checksum with the bytes from the specified buffer. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](CRC32.md))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Updates the CRC-32 checksum with the specified array of bytes. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](CRC32.md))`(`b:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Updates the CRC-32 checksum with the specified byte (the low eight bits of the argument b). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](CRC32.md))`(`buffer:` ` [ByteBuffer](../java.nio/ByteBuffer.md)!`)` Updates the CRC-32 checksum with the bytes from the specified buffer. |
 | --- | --- |
 
 ## Public constructors
@@ -140,7 +140,7 @@ Updates the CRC-32 checksum with the bytes from the specified buffer. The checks
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------|
-| `buffer` | [ByteBuffer](../java/nio/ByteBuffer.md)!:the ByteBuffer to update the checksum with |
+| `buffer` | [ByteBuffer](../java.nio/ByteBuffer.md)!:the ByteBuffer to update the checksum with |
 
 | Exceptions ||
 |----------------------------------|--------------------|

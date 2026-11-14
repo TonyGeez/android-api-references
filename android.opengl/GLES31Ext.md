@@ -4,7 +4,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 
 # GLES31Ext
 
-Kotlin| [Java](../android/opengl/GLES31Ext.md) 
+Kotlin| [Java](GLES31Ext.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class GLES31Ext
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.opengl.GLES31Ext](../android/opengl/GLES31Ext.md) |
+| ↳ | [android.opengl.GLES31Ext](GLES31Ext.md) |
 
 ## Summary
 
@@ -23,338 +23,338 @@ open class GLES31Ext
 
 | Constants ||
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_BLEND_ADVANCED_COHERENT_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_BUFFER_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_CLAMP_TO_BORDER_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COLORBURN_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COLORDODGE_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COMPRESSED_RGBA_ASTC_10x10_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COMPRESSED_RGBA_ASTC_10x5_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COMPRESSED_RGBA_ASTC_10x6_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COMPRESSED_RGBA_ASTC_10x8_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COMPRESSED_RGBA_ASTC_12x10_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COMPRESSED_RGBA_ASTC_12x12_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COMPRESSED_RGBA_ASTC_4x4_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COMPRESSED_RGBA_ASTC_5x4_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COMPRESSED_RGBA_ASTC_5x5_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COMPRESSED_RGBA_ASTC_6x5_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COMPRESSED_RGBA_ASTC_6x6_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COMPRESSED_RGBA_ASTC_8x5_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COMPRESSED_RGBA_ASTC_8x6_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COMPRESSED_RGBA_ASTC_8x8_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COMPRESSED_SRGB8_ALPHA8_ASTC_10x10_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COMPRESSED_SRGB8_ALPHA8_ASTC_10x5_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COMPRESSED_SRGB8_ALPHA8_ASTC_10x6_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COMPRESSED_SRGB8_ALPHA8_ASTC_10x8_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COMPRESSED_SRGB8_ALPHA8_ASTC_12x10_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COMPRESSED_SRGB8_ALPHA8_ASTC_12x12_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COMPRESSED_SRGB8_ALPHA8_ASTC_4x4_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COMPRESSED_SRGB8_ALPHA8_ASTC_5x4_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COMPRESSED_SRGB8_ALPHA8_ASTC_5x5_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COMPRESSED_SRGB8_ALPHA8_ASTC_6x5_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COMPRESSED_SRGB8_ALPHA8_ASTC_6x6_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COMPRESSED_SRGB8_ALPHA8_ASTC_8x5_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COMPRESSED_SRGB8_ALPHA8_ASTC_8x6_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COMPRESSED_SRGB8_ALPHA8_ASTC_8x8_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_CONTEXT_FLAG_DEBUG_BIT_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DARKEN_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DEBUG_CALLBACK_FUNCTION_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DEBUG_CALLBACK_USER_PARAM_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DEBUG_GROUP_STACK_DEPTH_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DEBUG_LOGGED_MESSAGES_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DEBUG_NEXT_LOGGED_MESSAGE_LENGTH_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DEBUG_OUTPUT_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DEBUG_OUTPUT_SYNCHRONOUS_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DEBUG_SEVERITY_HIGH_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DEBUG_SEVERITY_LOW_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DEBUG_SEVERITY_MEDIUM_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DEBUG_SEVERITY_NOTIFICATION_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DEBUG_SOURCE_API_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DEBUG_SOURCE_APPLICATION_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DEBUG_SOURCE_OTHER_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DEBUG_SOURCE_SHADER_COMPILER_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DEBUG_SOURCE_THIRD_PARTY_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DEBUG_SOURCE_WINDOW_SYSTEM_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DEBUG_TYPE_DEPRECATED_BEHAVIOR_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DEBUG_TYPE_ERROR_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DEBUG_TYPE_MARKER_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DEBUG_TYPE_OTHER_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DEBUG_TYPE_PERFORMANCE_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DEBUG_TYPE_POP_GROUP_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DEBUG_TYPE_PORTABILITY_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DEBUG_TYPE_PUSH_GROUP_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DEBUG_TYPE_UNDEFINED_BEHAVIOR_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DECODE_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DIFFERENCE_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_EXCLUSION_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_FIRST_VERTEX_CONVENTION_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_FRACTIONAL_EVEN_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_FRACTIONAL_ODD_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_FRAGMENT_INTERPOLATION_OFFSET_BITS_OES](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_FRAMEBUFFER_ATTACHMENT_LAYERED_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_FRAMEBUFFER_DEFAULT_LAYERS_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_FRAMEBUFFER_INCOMPLETE_LAYER_TARGETS_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_GEOMETRY_LINKED_INPUT_TYPE_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_GEOMETRY_LINKED_OUTPUT_TYPE_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_GEOMETRY_LINKED_VERTICES_OUT_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_GEOMETRY_SHADER_BIT_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_GEOMETRY_SHADER_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_GEOMETRY_SHADER_INVOCATIONS_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_HARDLIGHT_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_HSL_COLOR_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_HSL_HUE_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_HSL_LUMINOSITY_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_HSL_SATURATION_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_IMAGE_BUFFER_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_IMAGE_CUBE_MAP_ARRAY_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_INT_IMAGE_BUFFER_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_INT_IMAGE_CUBE_MAP_ARRAY_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_INT_SAMPLER_2D_MULTISAMPLE_ARRAY_OES](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_INT_SAMPLER_BUFFER_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_INT_SAMPLER_CUBE_MAP_ARRAY_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_ISOLINES_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_IS_PER_PATCH_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_LAST_VERTEX_CONVENTION_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_LAYER_PROVOKING_VERTEX_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_LIGHTEN_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_LINES_ADJACENCY_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_LINE_STRIP_ADJACENCY_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_COMBINED_GEOMETRY_UNIFORM_COMPONENTS_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_COMBINED_TESS_CONTROL_UNIFORM_COMPONENTS_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_COMBINED_TESS_EVALUATION_UNIFORM_COMPONENTS_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_DEBUG_GROUP_STACK_DEPTH_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_DEBUG_LOGGED_MESSAGES_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_DEBUG_MESSAGE_LENGTH_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_FRAGMENT_INTERPOLATION_OFFSET_OES](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_FRAMEBUFFER_LAYERS_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_GEOMETRY_ATOMIC_COUNTERS_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_GEOMETRY_ATOMIC_COUNTER_BUFFERS_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_GEOMETRY_IMAGE_UNIFORMS_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_GEOMETRY_INPUT_COMPONENTS_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_GEOMETRY_OUTPUT_COMPONENTS_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_GEOMETRY_OUTPUT_VERTICES_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_GEOMETRY_SHADER_INVOCATIONS_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_GEOMETRY_SHADER_STORAGE_BLOCKS_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_GEOMETRY_TEXTURE_IMAGE_UNITS_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_GEOMETRY_TOTAL_OUTPUT_COMPONENTS_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_GEOMETRY_UNIFORM_BLOCKS_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_GEOMETRY_UNIFORM_COMPONENTS_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_LABEL_LENGTH_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_PATCH_VERTICES_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_TESS_CONTROL_ATOMIC_COUNTERS_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_TESS_CONTROL_ATOMIC_COUNTER_BUFFERS_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_TESS_CONTROL_IMAGE_UNIFORMS_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_TESS_CONTROL_INPUT_COMPONENTS_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_TESS_CONTROL_OUTPUT_COMPONENTS_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_TESS_CONTROL_SHADER_STORAGE_BLOCKS_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_TESS_CONTROL_TEXTURE_IMAGE_UNITS_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_TESS_CONTROL_TOTAL_OUTPUT_COMPONENTS_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_TESS_CONTROL_UNIFORM_BLOCKS_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_TESS_CONTROL_UNIFORM_COMPONENTS_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_TESS_EVALUATION_ATOMIC_COUNTERS_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_TESS_EVALUATION_ATOMIC_COUNTER_BUFFERS_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_TESS_EVALUATION_IMAGE_UNIFORMS_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_TESS_EVALUATION_INPUT_COMPONENTS_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_TESS_EVALUATION_OUTPUT_COMPONENTS_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_TESS_EVALUATION_SHADER_STORAGE_BLOCKS_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_TESS_EVALUATION_TEXTURE_IMAGE_UNITS_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_TESS_EVALUATION_UNIFORM_BLOCKS_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_TESS_EVALUATION_UNIFORM_COMPONENTS_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_TESS_GEN_LEVEL_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_TESS_PATCH_COMPONENTS_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_TEXTURE_BUFFER_SIZE_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MIN_FRAGMENT_INTERPOLATION_OFFSET_OES](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MIN_SAMPLE_SHADING_VALUE_OES](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MULTIPLY_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_OVERLAY_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_PATCHES_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_PATCH_VERTICES_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_PRIMITIVES_GENERATED_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_PRIMITIVE_BOUNDING_BOX_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_PRIMITIVE_RESTART_FOR_PATCHES_SUPPORTED](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_PROGRAM_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_QUADS_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_QUERY_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_REFERENCED_BY_GEOMETRY_SHADER_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_REFERENCED_BY_TESS_CONTROL_SHADER_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_REFERENCED_BY_TESS_EVALUATION_SHADER_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_SAMPLER_2D_MULTISAMPLE_ARRAY_OES](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_SAMPLER_BUFFER_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_SAMPLER_CUBE_MAP_ARRAY_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_SAMPLER_CUBE_MAP_ARRAY_SHADOW_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_SAMPLER_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_SAMPLE_SHADING_OES](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_SCREEN_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_SHADER_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_SKIP_DECODE_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_SOFTLIGHT_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_STACK_OVERFLOW_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_STACK_UNDERFLOW_KHR](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_STENCIL_INDEX8_OES](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_STENCIL_INDEX_OES](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_TESS_CONTROL_OUTPUT_VERTICES_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_TESS_CONTROL_SHADER_BIT_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_TESS_CONTROL_SHADER_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_TESS_EVALUATION_SHADER_BIT_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_TESS_EVALUATION_SHADER_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_TESS_GEN_MODE_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_TESS_GEN_POINT_MODE_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_TESS_GEN_SPACING_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_TESS_GEN_VERTEX_ORDER_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_TEXTURE_2D_MULTISAMPLE_ARRAY_OES](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_TEXTURE_BINDING_2D_MULTISAMPLE_ARRAY_OES](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_TEXTURE_BINDING_BUFFER_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_TEXTURE_BINDING_CUBE_MAP_ARRAY_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_TEXTURE_BORDER_COLOR_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_TEXTURE_BUFFER_BINDING_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_TEXTURE_BUFFER_DATA_STORE_BINDING_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_TEXTURE_BUFFER_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_TEXTURE_BUFFER_OFFSET_ALIGNMENT_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_TEXTURE_BUFFER_OFFSET_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_TEXTURE_BUFFER_SIZE_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_TEXTURE_CUBE_MAP_ARRAY_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_TEXTURE_SRGB_DECODE_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_TRIANGLES_ADJACENCY_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_TRIANGLE_STRIP_ADJACENCY_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_UNDEFINED_VERTEX_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_UNSIGNED_INT_IMAGE_BUFFER_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_UNSIGNED_INT_IMAGE_CUBE_MAP_ARRAY_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_UNSIGNED_INT_SAMPLER_2D_MULTISAMPLE_ARRAY_OES](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_UNSIGNED_INT_SAMPLER_BUFFER_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_UNSIGNED_INT_SAMPLER_CUBE_MAP_ARRAY_EXT](../android/opengl/GLES31Ext.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_VERTEX_ARRAY_KHR](../android/opengl/GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_BLEND_ADVANCED_COHERENT_KHR](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_BUFFER_KHR](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_CLAMP_TO_BORDER_EXT](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COLORBURN_KHR](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COLORDODGE_KHR](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COMPRESSED_RGBA_ASTC_10x10_KHR](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COMPRESSED_RGBA_ASTC_10x5_KHR](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COMPRESSED_RGBA_ASTC_10x6_KHR](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COMPRESSED_RGBA_ASTC_10x8_KHR](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COMPRESSED_RGBA_ASTC_12x10_KHR](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COMPRESSED_RGBA_ASTC_12x12_KHR](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COMPRESSED_RGBA_ASTC_4x4_KHR](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COMPRESSED_RGBA_ASTC_5x4_KHR](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COMPRESSED_RGBA_ASTC_5x5_KHR](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COMPRESSED_RGBA_ASTC_6x5_KHR](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COMPRESSED_RGBA_ASTC_6x6_KHR](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COMPRESSED_RGBA_ASTC_8x5_KHR](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COMPRESSED_RGBA_ASTC_8x6_KHR](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COMPRESSED_RGBA_ASTC_8x8_KHR](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COMPRESSED_SRGB8_ALPHA8_ASTC_10x10_KHR](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COMPRESSED_SRGB8_ALPHA8_ASTC_10x5_KHR](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COMPRESSED_SRGB8_ALPHA8_ASTC_10x6_KHR](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COMPRESSED_SRGB8_ALPHA8_ASTC_10x8_KHR](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COMPRESSED_SRGB8_ALPHA8_ASTC_12x10_KHR](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COMPRESSED_SRGB8_ALPHA8_ASTC_12x12_KHR](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COMPRESSED_SRGB8_ALPHA8_ASTC_4x4_KHR](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COMPRESSED_SRGB8_ALPHA8_ASTC_5x4_KHR](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COMPRESSED_SRGB8_ALPHA8_ASTC_5x5_KHR](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COMPRESSED_SRGB8_ALPHA8_ASTC_6x5_KHR](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COMPRESSED_SRGB8_ALPHA8_ASTC_6x6_KHR](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COMPRESSED_SRGB8_ALPHA8_ASTC_8x5_KHR](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COMPRESSED_SRGB8_ALPHA8_ASTC_8x6_KHR](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_COMPRESSED_SRGB8_ALPHA8_ASTC_8x8_KHR](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_CONTEXT_FLAG_DEBUG_BIT_KHR](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DARKEN_KHR](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DEBUG_CALLBACK_FUNCTION_KHR](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DEBUG_CALLBACK_USER_PARAM_KHR](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DEBUG_GROUP_STACK_DEPTH_KHR](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DEBUG_LOGGED_MESSAGES_KHR](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DEBUG_NEXT_LOGGED_MESSAGE_LENGTH_KHR](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DEBUG_OUTPUT_KHR](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DEBUG_OUTPUT_SYNCHRONOUS_KHR](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DEBUG_SEVERITY_HIGH_KHR](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DEBUG_SEVERITY_LOW_KHR](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DEBUG_SEVERITY_MEDIUM_KHR](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DEBUG_SEVERITY_NOTIFICATION_KHR](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DEBUG_SOURCE_API_KHR](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DEBUG_SOURCE_APPLICATION_KHR](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DEBUG_SOURCE_OTHER_KHR](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DEBUG_SOURCE_SHADER_COMPILER_KHR](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DEBUG_SOURCE_THIRD_PARTY_KHR](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DEBUG_SOURCE_WINDOW_SYSTEM_KHR](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DEBUG_TYPE_DEPRECATED_BEHAVIOR_KHR](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DEBUG_TYPE_ERROR_KHR](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DEBUG_TYPE_MARKER_KHR](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DEBUG_TYPE_OTHER_KHR](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DEBUG_TYPE_PERFORMANCE_KHR](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DEBUG_TYPE_POP_GROUP_KHR](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DEBUG_TYPE_PORTABILITY_KHR](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DEBUG_TYPE_PUSH_GROUP_KHR](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DEBUG_TYPE_UNDEFINED_BEHAVIOR_KHR](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DECODE_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_DIFFERENCE_KHR](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_EXCLUSION_KHR](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_FIRST_VERTEX_CONVENTION_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_FRACTIONAL_EVEN_EXT](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_FRACTIONAL_ODD_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_FRAGMENT_INTERPOLATION_OFFSET_BITS_OES](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_FRAMEBUFFER_ATTACHMENT_LAYERED_EXT](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_FRAMEBUFFER_DEFAULT_LAYERS_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_FRAMEBUFFER_INCOMPLETE_LAYER_TARGETS_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_GEOMETRY_LINKED_INPUT_TYPE_EXT](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_GEOMETRY_LINKED_OUTPUT_TYPE_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_GEOMETRY_LINKED_VERTICES_OUT_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_GEOMETRY_SHADER_BIT_EXT](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_GEOMETRY_SHADER_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_GEOMETRY_SHADER_INVOCATIONS_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_HARDLIGHT_KHR](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_HSL_COLOR_KHR](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_HSL_HUE_KHR](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_HSL_LUMINOSITY_KHR](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_HSL_SATURATION_KHR](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_IMAGE_BUFFER_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_IMAGE_CUBE_MAP_ARRAY_EXT](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_INT_IMAGE_BUFFER_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_INT_IMAGE_CUBE_MAP_ARRAY_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_INT_SAMPLER_2D_MULTISAMPLE_ARRAY_OES](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_INT_SAMPLER_BUFFER_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_INT_SAMPLER_CUBE_MAP_ARRAY_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_ISOLINES_EXT](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_IS_PER_PATCH_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_LAST_VERTEX_CONVENTION_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_LAYER_PROVOKING_VERTEX_EXT](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_LIGHTEN_KHR](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_LINES_ADJACENCY_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_LINE_STRIP_ADJACENCY_EXT](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_COMBINED_GEOMETRY_UNIFORM_COMPONENTS_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_COMBINED_TESS_CONTROL_UNIFORM_COMPONENTS_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_COMBINED_TESS_EVALUATION_UNIFORM_COMPONENTS_EXT](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_DEBUG_GROUP_STACK_DEPTH_KHR](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_DEBUG_LOGGED_MESSAGES_KHR](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_DEBUG_MESSAGE_LENGTH_KHR](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_FRAGMENT_INTERPOLATION_OFFSET_OES](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_FRAMEBUFFER_LAYERS_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_GEOMETRY_ATOMIC_COUNTERS_EXT](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_GEOMETRY_ATOMIC_COUNTER_BUFFERS_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_GEOMETRY_IMAGE_UNIFORMS_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_GEOMETRY_INPUT_COMPONENTS_EXT](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_GEOMETRY_OUTPUT_COMPONENTS_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_GEOMETRY_OUTPUT_VERTICES_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_GEOMETRY_SHADER_INVOCATIONS_EXT](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_GEOMETRY_SHADER_STORAGE_BLOCKS_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_GEOMETRY_TEXTURE_IMAGE_UNITS_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_GEOMETRY_TOTAL_OUTPUT_COMPONENTS_EXT](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_GEOMETRY_UNIFORM_BLOCKS_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_GEOMETRY_UNIFORM_COMPONENTS_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_LABEL_LENGTH_KHR](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_PATCH_VERTICES_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_TESS_CONTROL_ATOMIC_COUNTERS_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_TESS_CONTROL_ATOMIC_COUNTER_BUFFERS_EXT](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_TESS_CONTROL_IMAGE_UNIFORMS_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_TESS_CONTROL_INPUT_COMPONENTS_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_TESS_CONTROL_OUTPUT_COMPONENTS_EXT](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_TESS_CONTROL_SHADER_STORAGE_BLOCKS_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_TESS_CONTROL_TEXTURE_IMAGE_UNITS_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_TESS_CONTROL_TOTAL_OUTPUT_COMPONENTS_EXT](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_TESS_CONTROL_UNIFORM_BLOCKS_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_TESS_CONTROL_UNIFORM_COMPONENTS_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_TESS_EVALUATION_ATOMIC_COUNTERS_EXT](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_TESS_EVALUATION_ATOMIC_COUNTER_BUFFERS_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_TESS_EVALUATION_IMAGE_UNIFORMS_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_TESS_EVALUATION_INPUT_COMPONENTS_EXT](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_TESS_EVALUATION_OUTPUT_COMPONENTS_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_TESS_EVALUATION_SHADER_STORAGE_BLOCKS_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_TESS_EVALUATION_TEXTURE_IMAGE_UNITS_EXT](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_TESS_EVALUATION_UNIFORM_BLOCKS_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_TESS_EVALUATION_UNIFORM_COMPONENTS_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_TESS_GEN_LEVEL_EXT](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_TESS_PATCH_COMPONENTS_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MAX_TEXTURE_BUFFER_SIZE_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MIN_FRAGMENT_INTERPOLATION_OFFSET_OES](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MIN_SAMPLE_SHADING_VALUE_OES](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_MULTIPLY_KHR](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_OVERLAY_KHR](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_PATCHES_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_PATCH_VERTICES_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_PRIMITIVES_GENERATED_EXT](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_PRIMITIVE_BOUNDING_BOX_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_PRIMITIVE_RESTART_FOR_PATCHES_SUPPORTED](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_PROGRAM_KHR](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_QUADS_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_QUERY_KHR](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_REFERENCED_BY_GEOMETRY_SHADER_EXT](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_REFERENCED_BY_TESS_CONTROL_SHADER_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_REFERENCED_BY_TESS_EVALUATION_SHADER_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_SAMPLER_2D_MULTISAMPLE_ARRAY_OES](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_SAMPLER_BUFFER_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_SAMPLER_CUBE_MAP_ARRAY_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_SAMPLER_CUBE_MAP_ARRAY_SHADOW_EXT](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_SAMPLER_KHR](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_SAMPLE_SHADING_OES](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_SCREEN_KHR](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_SHADER_KHR](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_SKIP_DECODE_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_SOFTLIGHT_KHR](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_STACK_OVERFLOW_KHR](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_STACK_UNDERFLOW_KHR](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_STENCIL_INDEX8_OES](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_STENCIL_INDEX_OES](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_TESS_CONTROL_OUTPUT_VERTICES_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_TESS_CONTROL_SHADER_BIT_EXT](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_TESS_CONTROL_SHADER_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_TESS_EVALUATION_SHADER_BIT_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_TESS_EVALUATION_SHADER_EXT](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_TESS_GEN_MODE_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_TESS_GEN_POINT_MODE_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_TESS_GEN_SPACING_EXT](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_TESS_GEN_VERTEX_ORDER_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_TEXTURE_2D_MULTISAMPLE_ARRAY_OES](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_TEXTURE_BINDING_2D_MULTISAMPLE_ARRAY_OES](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_TEXTURE_BINDING_BUFFER_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_TEXTURE_BINDING_CUBE_MAP_ARRAY_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_TEXTURE_BORDER_COLOR_EXT](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_TEXTURE_BUFFER_BINDING_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_TEXTURE_BUFFER_DATA_STORE_BINDING_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_TEXTURE_BUFFER_EXT](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_TEXTURE_BUFFER_OFFSET_ALIGNMENT_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_TEXTURE_BUFFER_OFFSET_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_TEXTURE_BUFFER_SIZE_EXT](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_TEXTURE_CUBE_MAP_ARRAY_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_TEXTURE_SRGB_DECODE_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_TRIANGLES_ADJACENCY_EXT](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_TRIANGLE_STRIP_ADJACENCY_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_UNDEFINED_VERTEX_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_UNSIGNED_INT_IMAGE_BUFFER_EXT](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_UNSIGNED_INT_IMAGE_CUBE_MAP_ARRAY_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_UNSIGNED_INT_SAMPLER_2D_MULTISAMPLE_ARRAY_OES](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_UNSIGNED_INT_SAMPLER_BUFFER_EXT](GLES31Ext.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_UNSIGNED_INT_SAMPLER_CUBE_MAP_ARRAY_EXT](GLES31Ext.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GL_VERTEX_ARRAY_KHR](GLES31Ext.md) <br /> |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glBlendBarrierKHR](../android/opengl/GLES31Ext.md))`()` <br /> |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glBlendEquationSeparateiEXT](../android/opengl/GLES31Ext.md))`(`buf:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `modeRGB:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `modeAlpha:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glBlendEquationiEXT](../android/opengl/GLES31Ext.md))`(`buf:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `mode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glBlendBarrierKHR](GLES31Ext.md))`()` <br /> |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glBlendEquationSeparateiEXT](GLES31Ext.md))`(`buf:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `modeRGB:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `modeAlpha:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glBlendEquationiEXT](GLES31Ext.md))`(`buf:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `mode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glBlendFuncSeparateiEXT](../android/opengl/GLES31Ext.md))`(`buf:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `srcRGB:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dstRGB:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `srcAlpha:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dstAlpha:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glBlendFunciEXT](../android/opengl/GLES31Ext.md))`(`buf:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `src:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dst:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glColorMaskiEXT](../android/opengl/GLES31Ext.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `r:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `g:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `b:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `a:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` <br /> |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glBlendFuncSeparateiEXT](GLES31Ext.md))`(`buf:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `srcRGB:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dstRGB:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `srcAlpha:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dstAlpha:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glBlendFunciEXT](GLES31Ext.md))`(`buf:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `src:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dst:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glColorMaskiEXT](GLES31Ext.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `r:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `g:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `b:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `a:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` <br /> |
 | --- | --- |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glCopyImageSubDataEXT](../android/opengl/GLES31Ext.md))`(`srcName:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `srcTarget:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `srcLevel:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `srcX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `srcY:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `srcZ:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dstName:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dstTarget:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dstLevel:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dstX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dstY:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dstZ:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `srcWidth:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `srcHeight:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `srcDepth:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glDebugMessageCallbackKHR](../android/opengl/GLES31Ext.md))`(`callback:` ` [GLES31Ext.DebugProcKHR](../android/opengl/GLES31Ext.DebugProcKHR.md)!`)` <br /> |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glDebugMessageControlKHR](../android/opengl/GLES31Ext.md))`(`source:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `severity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `ids:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `enabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` <br /> |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glCopyImageSubDataEXT](GLES31Ext.md))`(`srcName:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `srcTarget:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `srcLevel:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `srcX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `srcY:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `srcZ:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dstName:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dstTarget:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dstLevel:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dstX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dstY:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dstZ:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `srcWidth:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `srcHeight:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `srcDepth:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glDebugMessageCallbackKHR](GLES31Ext.md))`(`callback:` ` [GLES31Ext.DebugProcKHR](../android/opengl/GLES31Ext.DebugProcKHR.md)!`)` <br /> |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glDebugMessageControlKHR](GLES31Ext.md))`(`source:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `severity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `ids:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `enabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` <br /> |
 | --- | --- |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glDebugMessageControlKHR](../android/opengl/GLES31Ext.md))`(`source:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `severity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `ids:` ` [IntBuffer](../java/nio/IntBuffer.md)!`, `enabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` <br /> |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glDebugMessageInsertKHR](../android/opengl/GLES31Ext.md))`(`source:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `severity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `buf:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glDisableiEXT](../android/opengl/GLES31Ext.md))`(`target:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glDebugMessageControlKHR](GLES31Ext.md))`(`source:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `severity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `ids:` ` [IntBuffer](../java.nio/IntBuffer.md)!`, `enabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` <br /> |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glDebugMessageInsertKHR](GLES31Ext.md))`(`source:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `severity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `buf:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glDisableiEXT](GLES31Ext.md))`(`target:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glEnableiEXT](../android/opengl/GLES31Ext.md))`(`target:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glFramebufferTextureEXT](../android/opengl/GLES31Ext.md))`(`target:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `attachment:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `texture:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `level:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| openstatic [GLES31Ext.DebugProcKHR](../android/opengl/GLES31Ext.DebugProcKHR.md)! | [glGetDebugMessageCallbackKHR](../android/opengl/GLES31Ext.md))`()` <br /> |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glEnableiEXT](GLES31Ext.md))`(`target:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glFramebufferTextureEXT](GLES31Ext.md))`(`target:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `attachment:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `texture:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `level:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| openstatic [GLES31Ext.DebugProcKHR](../android/opengl/GLES31Ext.DebugProcKHR.md)! | [glGetDebugMessageCallbackKHR](GLES31Ext.md))`()` <br /> |
 | --- | --- |
-| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [glGetDebugMessageLogKHR](../android/opengl/GLES31Ext.md))`(`count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `bufSize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `sources:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `sourcesOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `types:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `typesOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `ids:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `idsOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `severities:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `severitiesOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `lengths:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `lengthsOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `messageLog:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `messageLogOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| openstatic [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [glGetDebugMessageLogKHR](../android/opengl/GLES31Ext.md))`(`count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `sources:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `sourcesOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `types:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `typesOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `ids:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `idsOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `severities:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `severitiesOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| openstatic [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [glGetDebugMessageLogKHR](../android/opengl/GLES31Ext.md))`(`count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `sources:` ` [IntBuffer](../java/nio/IntBuffer.md)!`, `types:` ` [IntBuffer](../java/nio/IntBuffer.md)!`, `ids:` ` [IntBuffer](../java/nio/IntBuffer.md)!`, `severities:` ` [IntBuffer](../java/nio/IntBuffer.md)!`)` <br /> |
+| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [glGetDebugMessageLogKHR](GLES31Ext.md))`(`count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `bufSize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `sources:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `sourcesOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `types:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `typesOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `ids:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `idsOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `severities:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `severitiesOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `lengths:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `lengthsOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `messageLog:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `messageLogOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| openstatic [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [glGetDebugMessageLogKHR](GLES31Ext.md))`(`count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `sources:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `sourcesOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `types:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `typesOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `ids:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `idsOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `severities:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `severitiesOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| openstatic [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [glGetDebugMessageLogKHR](GLES31Ext.md))`(`count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `sources:` ` [IntBuffer](../java.nio/IntBuffer.md)!`, `types:` ` [IntBuffer](../java.nio/IntBuffer.md)!`, `ids:` ` [IntBuffer](../java.nio/IntBuffer.md)!`, `severities:` ` [IntBuffer](../java.nio/IntBuffer.md)!`)` <br /> |
 | --- | --- |
-| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [glGetDebugMessageLogKHR](../android/opengl/GLES31Ext.md))`(`count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `sources:` ` [IntBuffer](../java/nio/IntBuffer.md)!`, `types:` ` [IntBuffer](../java/nio/IntBuffer.md)!`, `ids:` ` [IntBuffer](../java/nio/IntBuffer.md)!`, `severities:` ` [IntBuffer](../java/nio/IntBuffer.md)!`, `lengths:` ` [IntBuffer](../java/nio/IntBuffer.md)!`, `messageLog:` ` [ByteBuffer](../java/nio/ByteBuffer.md)!`)` <br /> |
-| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [glGetObjectLabelKHR](../android/opengl/GLES31Ext.md))`(`identifier:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `name:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [glGetObjectPtrLabelKHR](../android/opengl/GLES31Ext.md))`(`ptr:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` <br /> |
+| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [glGetDebugMessageLogKHR](GLES31Ext.md))`(`count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `sources:` ` [IntBuffer](../java.nio/IntBuffer.md)!`, `types:` ` [IntBuffer](../java.nio/IntBuffer.md)!`, `ids:` ` [IntBuffer](../java.nio/IntBuffer.md)!`, `severities:` ` [IntBuffer](../java.nio/IntBuffer.md)!`, `lengths:` ` [IntBuffer](../java.nio/IntBuffer.md)!`, `messageLog:` ` [ByteBuffer](../java.nio/ByteBuffer.md)!`)` <br /> |
+| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [glGetObjectLabelKHR](GLES31Ext.md))`(`identifier:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `name:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [glGetObjectPtrLabelKHR](GLES31Ext.md))`(`ptr:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` <br /> |
 | --- | --- |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glGetSamplerParameterIivEXT](../android/opengl/GLES31Ext.md))`(`sampler:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pname:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `params:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glGetSamplerParameterIivEXT](../android/opengl/GLES31Ext.md))`(`sampler:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pname:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `params:` ` [IntBuffer](../java/nio/IntBuffer.md)!`)` <br /> |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glGetSamplerParameterIuivEXT](../android/opengl/GLES31Ext.md))`(`sampler:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pname:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `params:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glGetSamplerParameterIivEXT](GLES31Ext.md))`(`sampler:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pname:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `params:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glGetSamplerParameterIivEXT](GLES31Ext.md))`(`sampler:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pname:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `params:` ` [IntBuffer](../java.nio/IntBuffer.md)!`)` <br /> |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glGetSamplerParameterIuivEXT](GLES31Ext.md))`(`sampler:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pname:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `params:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glGetSamplerParameterIuivEXT](../android/opengl/GLES31Ext.md))`(`sampler:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pname:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `params:` ` [IntBuffer](../java/nio/IntBuffer.md)!`)` <br /> |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glGetTexParameterIivEXT](../android/opengl/GLES31Ext.md))`(`target:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pname:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `params:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glGetTexParameterIivEXT](../android/opengl/GLES31Ext.md))`(`target:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pname:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `params:` ` [IntBuffer](../java/nio/IntBuffer.md)!`)` <br /> |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glGetSamplerParameterIuivEXT](GLES31Ext.md))`(`sampler:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pname:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `params:` ` [IntBuffer](../java.nio/IntBuffer.md)!`)` <br /> |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glGetTexParameterIivEXT](GLES31Ext.md))`(`target:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pname:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `params:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glGetTexParameterIivEXT](GLES31Ext.md))`(`target:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pname:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `params:` ` [IntBuffer](../java.nio/IntBuffer.md)!`)` <br /> |
 | --- | --- |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glGetTexParameterIuivEXT](../android/opengl/GLES31Ext.md))`(`target:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pname:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `params:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glGetTexParameterIuivEXT](../android/opengl/GLES31Ext.md))`(`target:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pname:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `params:` ` [IntBuffer](../java/nio/IntBuffer.md)!`)` <br /> |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [glIsEnablediEXT](../android/opengl/GLES31Ext.md))`(`target:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glGetTexParameterIuivEXT](GLES31Ext.md))`(`target:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pname:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `params:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glGetTexParameterIuivEXT](GLES31Ext.md))`(`target:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pname:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `params:` ` [IntBuffer](../java.nio/IntBuffer.md)!`)` <br /> |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [glIsEnablediEXT](GLES31Ext.md))`(`target:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glMinSampleShadingOES](../android/opengl/GLES31Ext.md))`(`value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` <br /> |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glObjectLabelKHR](../android/opengl/GLES31Ext.md))`(`identifier:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `name:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `label:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glObjectPtrLabelKHR](../android/opengl/GLES31Ext.md))`(`ptr:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `label:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glMinSampleShadingOES](GLES31Ext.md))`(`value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` <br /> |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glObjectLabelKHR](GLES31Ext.md))`(`identifier:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `name:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `label:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glObjectPtrLabelKHR](GLES31Ext.md))`(`ptr:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `label:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
 | --- | --- |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glPatchParameteriEXT](../android/opengl/GLES31Ext.md))`(`pname:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glPopDebugGroupKHR](../android/opengl/GLES31Ext.md))`()` <br /> |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glPrimitiveBoundingBoxEXT](../android/opengl/GLES31Ext.md))`(`minX:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `minY:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `minZ:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `minW:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `maxX:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `maxY:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `maxZ:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `maxW:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` <br /> |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glPatchParameteriEXT](GLES31Ext.md))`(`pname:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glPopDebugGroupKHR](GLES31Ext.md))`()` <br /> |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glPrimitiveBoundingBoxEXT](GLES31Ext.md))`(`minX:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `minY:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `minZ:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `minW:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `maxX:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `maxY:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `maxZ:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `maxW:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` <br /> |
 | --- | --- |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glPushDebugGroupKHR](../android/opengl/GLES31Ext.md))`(`source:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glSamplerParameterIivEXT](../android/opengl/GLES31Ext.md))`(`sampler:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pname:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `param:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glSamplerParameterIivEXT](../android/opengl/GLES31Ext.md))`(`sampler:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pname:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `param:` ` [IntBuffer](../java/nio/IntBuffer.md)!`)` <br /> |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glPushDebugGroupKHR](GLES31Ext.md))`(`source:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glSamplerParameterIivEXT](GLES31Ext.md))`(`sampler:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pname:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `param:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glSamplerParameterIivEXT](GLES31Ext.md))`(`sampler:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pname:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `param:` ` [IntBuffer](../java.nio/IntBuffer.md)!`)` <br /> |
 | --- | --- |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glSamplerParameterIuivEXT](../android/opengl/GLES31Ext.md))`(`sampler:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pname:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `param:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glSamplerParameterIuivEXT](../android/opengl/GLES31Ext.md))`(`sampler:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pname:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `param:` ` [IntBuffer](../java/nio/IntBuffer.md)!`)` <br /> |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glTexBufferEXT](../android/opengl/GLES31Ext.md))`(`target:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `internalformat:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `buffer:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glSamplerParameterIuivEXT](GLES31Ext.md))`(`sampler:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pname:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `param:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glSamplerParameterIuivEXT](GLES31Ext.md))`(`sampler:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pname:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `param:` ` [IntBuffer](../java.nio/IntBuffer.md)!`)` <br /> |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glTexBufferEXT](GLES31Ext.md))`(`target:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `internalformat:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `buffer:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glTexBufferRangeEXT](../android/opengl/GLES31Ext.md))`(`target:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `internalformat:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `buffer:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glTexParameterIivEXT](../android/opengl/GLES31Ext.md))`(`target:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pname:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `params:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glTexParameterIivEXT](../android/opengl/GLES31Ext.md))`(`target:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pname:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `params:` ` [IntBuffer](../java/nio/IntBuffer.md)!`)` <br /> |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glTexBufferRangeEXT](GLES31Ext.md))`(`target:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `internalformat:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `buffer:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glTexParameterIivEXT](GLES31Ext.md))`(`target:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pname:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `params:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glTexParameterIivEXT](GLES31Ext.md))`(`target:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pname:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `params:` ` [IntBuffer](../java.nio/IntBuffer.md)!`)` <br /> |
 | --- | --- |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glTexParameterIuivEXT](../android/opengl/GLES31Ext.md))`(`target:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pname:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `params:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glTexParameterIuivEXT](../android/opengl/GLES31Ext.md))`(`target:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pname:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `params:` ` [IntBuffer](../java/nio/IntBuffer.md)!`)` <br /> |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glTexStorage3DMultisampleOES](../android/opengl/GLES31Ext.md))`(`target:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `samples:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `internalformat:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `height:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `depth:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `fixedsamplelocations:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` <br /> |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glTexParameterIuivEXT](GLES31Ext.md))`(`target:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pname:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `params:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glTexParameterIuivEXT](GLES31Ext.md))`(`target:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pname:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `params:` ` [IntBuffer](../java.nio/IntBuffer.md)!`)` <br /> |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [glTexStorage3DMultisampleOES](GLES31Ext.md))`(`target:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `samples:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `internalformat:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `height:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `depth:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `fixedsamplelocations:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` <br /> |
 | --- | --- |
 
 ## Constants

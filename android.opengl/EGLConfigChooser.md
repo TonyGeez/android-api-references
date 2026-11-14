@@ -15,13 +15,13 @@ interface EGLConfigChooser
 
 An interface for choosing an EGLConfig configuration from a list of potential configurations.
 
-This interface must be implemented by clients wishing to call [GLSurfaceView.setEGLConfigChooser(EGLConfigChooser)](../android/opengl/GLSurfaceView.md))
+This interface must be implemented by clients wishing to call [GLSurfaceView.setEGLConfigChooser(EGLConfigChooser)](GLSurfaceView.md))
 
 ## Summary
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [EGLConfig](../javax/microedition/khronos/egl/EGLConfig.md)! | [chooseConfig](../android/opengl/GLSurfaceView.EGLConfigChooser.md))`(`egl:` ` [EGL10](../javax/microedition/khronos/egl/EGL10.md)!`, `display:` ` [EGLDisplay](../javax/microedition/khronos/egl/EGLDisplay.md)!`)` Choose a configuration from the list. |
+| abstract [EGLConfig](../javax.microedition.khronos.egl/EGLConfig.md)! | [chooseConfig](../android/opengl/GLSurfaceView.EGLConfigChooser.md))`(`egl:` ` [EGL10](../javax.microedition.khronos.egl/EGL10.md)!`, `display:` ` [EGLDisplay](../javax.microedition.khronos.egl/EGLDisplay.md)!`)` Choose a configuration from the list. |
 
 ## Public methods
 
@@ -36,13 +36,13 @@ abstract fun chooseConfig(
 ): EGLConfig!
 ```
 
-Choose a configuration from the list. Implementors typically implement this method by calling [EGL10.eglChooseConfig](../javax/microedition/khronos/egl/EGL10.md))and iterating through the results. Please consult the EGL specification available from The Khronos Group to learn how to call eglChooseConfig.
+Choose a configuration from the list. Implementors typically implement this method by calling [EGL10.eglChooseConfig](../javax.microedition.khronos.egl/EGL10.md))and iterating through the results. Please consult the EGL specification available from The Khronos Group to learn how to call eglChooseConfig.
 
 | Parameters ||
 |-----------|----------------------------------------------------------------------------------------------------------------------------------------|
-| `egl` | [EGL10](../javax/microedition/khronos/egl/EGL10.md)!:the EGL10 for the current display. |
-| `display` | [EGLDisplay](../javax/microedition/khronos/egl/EGLDisplay.md)!:the current display. |
+| `egl` | [EGL10](../javax.microedition.khronos.egl/EGL10.md)!:the EGL10 for the current display. |
+| `display` | [EGLDisplay](../javax.microedition.khronos.egl/EGLDisplay.md)!:the current display. |
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------|---------------------------|
-| [EGLConfig](../javax/microedition/khronos/egl/EGLConfig.md)! | the chosen configuration. |
+| [EGLConfig](../javax.microedition.khronos.egl/EGLConfig.md)! | the chosen configuration. |

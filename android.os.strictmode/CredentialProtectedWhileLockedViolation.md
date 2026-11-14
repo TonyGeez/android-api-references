@@ -4,7 +4,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 
 # CredentialProtectedWhileLockedViolation
 
-Kotlin| [Java](../android/os/strictmode/CredentialProtectedWhileLockedViolation.md) 
+Kotlin| [Java](CredentialProtectedWhileLockedViolation.md) 
 | --- | --- |
 
 ```
@@ -14,8 +14,8 @@ class CredentialProtectedWhileLockedViolation : Violation
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
-| | ↳ | [android.os.strictmode.Violation](../android/os/strictmode/Violation.md) ||
-| | | ↳ | [android.os.strictmode.CredentialProtectedWhileLockedViolation](../android/os/strictmode/CredentialProtectedWhileLockedViolation.md) |
+| | ↳ | [android.os.strictmode.Violation](Violation.md) ||
+| | | ↳ | [android.os.strictmode.CredentialProtectedWhileLockedViolation](CredentialProtectedWhileLockedViolation.md) |
 | --- | --- | --- | --- |
 
 Subclass of`Violation`that is used when a process accesses filesystem paths stored in credential protected storage areas while the user is locked.
@@ -26,4 +26,4 @@ When a user is locked, credential protected storage is unavailable, and files st
 
 | Inherited functions ||
 |---|---|
-| From class [Violation](../android/os/strictmode/Violation.md) |----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) | [fillInStackTrace](../android/os/strictmode/Violation.md))`()` <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/os/strictmode/Violation.md))`()` <br /> | | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) | [initCause](../android/os/strictmode/Violation.md))`(`cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?`)` <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStackTrace](../android/os/strictmode/Violation.md))`(`stackTrace:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [StackTraceElement](../java/lang/StackTraceElement.md)!>`)` <br /> | ||
+| From class [Violation](Violation.md) |----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) | [fillInStackTrace](Violation.md))`()` <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](Violation.md))`()` <br /> | | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) | [initCause](Violation.md))`(`cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?`)` <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStackTrace](Violation.md))`(`stackTrace:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [StackTraceElement](../java.lang/StackTraceElement.md)!>`)` <br /> | ||

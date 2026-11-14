@@ -10,33 +10,33 @@ class Currency : Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.util.Currency](../java/util/Currency.md) |
+| ↳ | [java.util.Currency](Currency.md) |
 
 Represents a currency. Currencies are identified by their ISO 4217 currency codes. Visit the [ISO web site](http://www.iso.org/iso/home/standards/currency_codes.htm) for more information.
 
 The class is designed so that there's never more than one`Currency`instance for any given currency. Therefore, there's no public constructor. You obtain a`Currency`instance using the`getInstance`methods.
 
-It is recommended to use [java.math.BigDecimal](../java/math/BigDecimal.md) class while dealing with`Currency`or monetary values as it provides better handling of floating point numbers and their operations.
+It is recommended to use [java.math.BigDecimal](../java.math/BigDecimal.md) class while dealing with`Currency`or monetary values as it provides better handling of floating point numbers and their operations.
 
 ## Summary
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Currency](../java/util/Currency.md)!\>! | [getAvailableCurrencies](../java/util/Currency.md))`()` Gets the set of available currencies. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getCurrencyCode](../java/util/Currency.md))`()` Gets the ISO 4217 currency code of this currency. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDefaultFractionDigits](../java/util/Currency.md))`()` Gets the default number of fraction digits used with this currency. |
+| static [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Currency](Currency.md)!\>! | [getAvailableCurrencies](Currency.md))`()` Gets the set of available currencies. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getCurrencyCode](Currency.md))`()` Gets the ISO 4217 currency code of this currency. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDefaultFractionDigits](Currency.md))`()` Gets the default number of fraction digits used with this currency. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayName](../java/util/Currency.md))`()` Gets the name that is suitable for displaying this currency for the default [DISPLAY](../java/util/Locale.Category.md) locale. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayName](../java/util/Currency.md))`(`locale:` ` [Locale](../java/util/Locale.md)!`)` Gets the name that is suitable for displaying this currency for the specified locale. |
-| static [Currency](../java/util/Currency.md)! | [getInstance](../java/util/Currency.md))`(`currencyCode:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the`Currency`instance for the given currency code. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayName](Currency.md))`()` Gets the name that is suitable for displaying this currency for the default [DISPLAY](../java/util/Locale.Category.md) locale. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayName](Currency.md))`(`locale:` ` [Locale](Locale.md)!`)` Gets the name that is suitable for displaying this currency for the specified locale. |
+| static [Currency](Currency.md)! | [getInstance](Currency.md))`(`currencyCode:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the`Currency`instance for the given currency code. |
 | --- | --- |
-| static [Currency](../java/util/Currency.md)! | [getInstance](../java/util/Currency.md))`(`locale:` ` [Locale](../java/util/Locale.md)!`)` Returns the`Currency`instance for the country of the given locale. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getNumericCode](../java/util/Currency.md))`()` Returns the ISO 4217 numeric code of this currency. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getNumericCodeAsString](../java/util/Currency.md))`()` Returns the 3 digit ISO 4217 numeric code of this currency as a`String`. |
+| static [Currency](Currency.md)! | [getInstance](Currency.md))`(`locale:` ` [Locale](Locale.md)!`)` Returns the`Currency`instance for the country of the given locale. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getNumericCode](Currency.md))`()` Returns the ISO 4217 numeric code of this currency. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getNumericCodeAsString](Currency.md))`()` Returns the 3 digit ISO 4217 numeric code of this currency as a`String`. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSymbol](../java/util/Currency.md))`()` Gets the symbol of this currency for the default [DISPLAY](../java/util/Locale.Category.md) locale. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSymbol](../java/util/Currency.md))`(`locale:` ` [Locale](../java/util/Locale.md)!`)` Gets the symbol of this currency for the specified locale. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/util/Currency.md))`()` Returns the ISO 4217 currency code of this currency. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSymbol](Currency.md))`()` Gets the symbol of this currency for the default [DISPLAY](../java/util/Locale.Category.md) locale. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSymbol](Currency.md))`(`locale:` ` [Locale](Locale.md)!`)` Gets the symbol of this currency for the specified locale. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](Currency.md))`()` Returns the ISO 4217 currency code of this currency. |
 | --- | --- |
 
 ## Public methods
@@ -53,7 +53,7 @@ Gets the set of available currencies. The returned set of currencies contains al
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [Currency](../java/util/Currency.md)!>! | the set of available currencies. If there is no currency available in the runtime, the returned set is empty. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [Currency](Currency.md)!>! | the set of available currencies. If there is no currency available in the runtime, the returned set is empty. |
 
 ### getCurrencyCode
 
@@ -93,7 +93,7 @@ fun getDisplayName(): String!
 
 Gets the name that is suitable for displaying this currency for the default [DISPLAY](../java/util/Locale.Category.md) locale. If there is no suitable display name found for the default locale, the ISO 4217 currency code is returned.
 
-This is equivalent to calling [getDisplayName(Locale.getDefault(Locale.Category.DISPLAY))](../java/util/Currency.md)).
+This is equivalent to calling [getDisplayName(Locale.getDefault(Locale.Category.DISPLAY))](Currency.md)).
 
 | Return ||
 |-----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
@@ -111,7 +111,7 @@ Gets the name that is suitable for displaying this currency for the specified lo
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| `locale` | [Locale](../java/util/Locale.md)!:the locale for which a display name for this currency is needed |
+| `locale` | [Locale](Locale.md)!:the locale for which a display name for this currency is needed |
 
 | Return ||
 |-----------------------------------------------------------------------------------|------------------------------------------------------------|
@@ -137,7 +137,7 @@ Returns the`Currency`instance for the given currency code.
 
 | Return ||
 |---------------------------------------------------------------------------------|---------------------------------------------------|
-| [Currency](../java/util/Currency.md)! | the`Currency`instance for the given currency code |
+| [Currency](Currency.md)! | the`Currency`instance for the given currency code |
 
 | Exceptions ||
 |--------------------------------------|---------------------------------------------------|
@@ -160,11 +160,11 @@ The method returns`null`for territories that don't have a currency, such as Anta
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------------------------------|
-| `locale` | [Locale](../java/util/Locale.md)!:the locale for whose country a`Currency`instance is needed |
+| `locale` | [Locale](Locale.md)!:the locale for whose country a`Currency`instance is needed |
 
 | Return ||
 |---------------------------------------------------------------------------------|---------------------------------------------------------------------|
-| [Currency](../java/util/Currency.md)! | the`Currency`instance for the country of the given locale, or`null` |
+| [Currency](Currency.md)! | the`Currency`instance for the country of the given locale, or`null` |
 
 | Exceptions ||
 |--------------------------------------|------------------------------------------------------------------------------|
@@ -193,7 +193,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 fun getNumericCodeAsString(): String!
 ```
 
-Returns the 3 digit ISO 4217 numeric code of this currency as a`String`. Unlike [getNumericCode()](../java/util/Currency.md)), which returns the numeric code as`int`, this method always returns the numeric code as a 3 digit string. e.g. a numeric value of 32 would be returned as "032", and a numeric value of 6 would be returned as "006".
+Returns the 3 digit ISO 4217 numeric code of this currency as a`String`. Unlike [getNumericCode()](Currency.md)), which returns the numeric code as`int`, this method always returns the numeric code as a 3 digit string. e.g. a numeric value of 32 would be returned as "032", and a numeric value of 6 would be returned as "006".
 
 | Return ||
 |-----------------------------------------------------------------------------------|-----------------------------------------------------------------|
@@ -209,7 +209,7 @@ fun getSymbol(): String!
 
 Gets the symbol of this currency for the default [DISPLAY](../java/util/Locale.Category.md) locale. For example, for the US Dollar, the symbol is "$" if the default locale is the US, while for other locales it may be "US$". If no symbol can be determined, the ISO 4217 currency code is returned.
 
-This is equivalent to calling [getSymbol(Locale.getDefault(Locale.Category.DISPLAY))](../java/util/Currency.md)).
+This is equivalent to calling [getSymbol(Locale.getDefault(Locale.Category.DISPLAY))](Currency.md)).
 
 | Return ||
 |-----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
@@ -227,7 +227,7 @@ Gets the symbol of this currency for the specified locale. For example, for the 
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| `locale` | [Locale](../java/util/Locale.md)!:the locale for which a display name for this currency is needed |
+| `locale` | [Locale](Locale.md)!:the locale for which a display name for this currency is needed |
 
 | Return ||
 |-----------------------------------------------------------------------------------|------------------------------------------------------|

@@ -4,7 +4,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 
 # StructStat
 
-Kotlin| [Java](../android/system/StructStat.md) 
+Kotlin| [Java](StructStat.md) 
 | --- | --- |
 
 ```
@@ -13,44 +13,44 @@ class StructStat
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.system.StructStat](../android/system/StructStat.md) |
+| ↳ | [android.system.StructStat](StructStat.md) |
 
-File information returned by [Os.fstat](../android/system/Os.md)), [Os.lstat](../android/system/Os.md)), and [Os.stat](../android/system/Os.md)). Corresponds to C's`struct stat`from`<stat.h>`.
+File information returned by [Os.fstat](Os.md)), [Os.lstat](Os.md)), and [Os.stat](Os.md)). Corresponds to C's`struct stat`from`<stat.h>`.
 
 ## Summary
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [StructStat](../android/system/StructStat.md))`(`st_dev:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `st_ino:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `st_mode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `st_nlink:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `st_uid:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `st_gid:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `st_rdev:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `st_size:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `st_atim:` ` [StructTimespec](../android/system/StructTimespec.md)!`, `st_mtim:` ` [StructTimespec](../android/system/StructTimespec.md)!`, `st_ctim:` ` [StructTimespec](../android/system/StructTimespec.md)!`, `st_blksize:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `st_blocks:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Constructs an instance with the given field values. |
-| [StructStat](../android/system/StructStat.md))`(`st_dev:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `st_ino:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `st_mode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `st_nlink:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `st_uid:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `st_gid:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `st_rdev:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `st_size:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `st_atime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `st_mtime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `st_ctime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `st_blksize:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `st_blocks:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Constructs an instance with the given field values. |
+| [StructStat](StructStat.md))`(`st_dev:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `st_ino:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `st_mode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `st_nlink:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `st_uid:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `st_gid:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `st_rdev:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `st_size:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `st_atim:` ` [StructTimespec](StructTimespec.md)!`, `st_mtim:` ` [StructTimespec](StructTimespec.md)!`, `st_ctim:` ` [StructTimespec](StructTimespec.md)!`, `st_blksize:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `st_blocks:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Constructs an instance with the given field values. |
+| [StructStat](StructStat.md))`(`st_dev:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `st_ino:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `st_mode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `st_nlink:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `st_uid:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `st_gid:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `st_rdev:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `st_size:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `st_atime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `st_mtime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `st_ctime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `st_blksize:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `st_blocks:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Constructs an instance with the given field values. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/system/StructStat.md))`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](StructStat.md))`()` <br /> |
 
 | Properties ||
 |-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [StructTimespec](../android/system/StructTimespec.md)! | [st_atim](../android/system/StructStat.md) StructTimespec with time of last access. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [st_atime](../android/system/StructStat.md) Seconds part of time of last access. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [st_blksize](../android/system/StructStat.md) A file system-specific preferred I/O block size for this object. |
+| [StructTimespec](StructTimespec.md)! | [st_atim](StructStat.md) StructTimespec with time of last access. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [st_atime](StructStat.md) Seconds part of time of last access. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [st_blksize](StructStat.md) A file system-specific preferred I/O block size for this object. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [st_blocks](../android/system/StructStat.md) Number of blocks allocated for this object. |
-| [StructTimespec](../android/system/StructTimespec.md)! | [st_ctim](../android/system/StructStat.md) StructTimespec with time of last status change. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [st_ctime](../android/system/StructStat.md) Seconds part of time of last status change |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [st_blocks](StructStat.md) Number of blocks allocated for this object. |
+| [StructTimespec](StructTimespec.md)! | [st_ctim](StructStat.md) StructTimespec with time of last status change. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [st_ctime](StructStat.md) Seconds part of time of last status change |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [st_dev](../android/system/StructStat.md) Device ID of device containing file. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [st_gid](../android/system/StructStat.md) Group ID of file. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [st_ino](../android/system/StructStat.md) File serial number (inode). |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [st_dev](StructStat.md) Device ID of device containing file. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [st_gid](StructStat.md) Group ID of file. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [st_ino](StructStat.md) File serial number (inode). |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [st_mode](../android/system/StructStat.md) Mode (permissions) of file. |
-| [StructTimespec](../android/system/StructTimespec.md)! | [st_mtim](../android/system/StructStat.md) StructTimespec with time of last modification. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [st_mtime](../android/system/StructStat.md) Seconds part of time of last data modification. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [st_mode](StructStat.md) Mode (permissions) of file. |
+| [StructTimespec](StructTimespec.md)! | [st_mtim](StructStat.md) StructTimespec with time of last modification. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [st_mtime](StructStat.md) Seconds part of time of last data modification. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [st_nlink](../android/system/StructStat.md) Number of hard links to the file. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [st_rdev](../android/system/StructStat.md) Device ID (if file is character or block special). |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [st_size](../android/system/StructStat.md) For regular files, the file size in bytes. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [st_nlink](StructStat.md) Number of hard links to the file. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [st_rdev](StructStat.md) Device ID (if file is character or block special). |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [st_size](StructStat.md) For regular files, the file size in bytes. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [st_uid](../android/system/StructStat.md) User ID of file. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [st_uid](StructStat.md) User ID of file. |
 
 ## Public constructors
 

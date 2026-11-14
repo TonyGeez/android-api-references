@@ -4,7 +4,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # NetworkSliceInfo
 
-Kotlin| [Java](../android/telephony/data/NetworkSliceInfo.md) 
+Kotlin| [Java](NetworkSliceInfo.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class NetworkSliceInfo : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.telephony.data.NetworkSliceInfo](../android/telephony/data/NetworkSliceInfo.md) |
+| ↳ | [android.telephony.data.NetworkSliceInfo](NetworkSliceInfo.md) |
 
 Represents a S-NSSAI as defined in 3GPP TS 24.501, which represents a network slice. There are 2 main fields that define a slice, SliceServiceType and SliceDifferentiator. SliceServiceType defines the type of service provided by the slice, and SliceDifferentiator is used to differentiate between multiple slices of the same type. If the devices is not on HPLMN, the mappedHplmn versions of these 2 fields indicate the corresponding values in HPLMN.
 
@@ -21,48 +21,48 @@ Represents a S-NSSAI as defined in 3GPP TS 24.501, which represents a network sl
 
 | Nested classes ||
 |---|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](../android/telephony/data/NetworkSliceInfo.Builder.md) Provides a convenient way to set the fields of a [NetworkSliceInfo](../android/telephony/data/NetworkSliceInfo.md) when creating a new instance. |
+| | [Builder](../android/telephony/data/NetworkSliceInfo.Builder.md) Provides a convenient way to set the fields of a [NetworkSliceInfo](NetworkSliceInfo.md) when creating a new instance. |
 
 | Constants ||
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SLICE_DIFFERENTIATOR_NO_SLICE](../android/telephony/data/NetworkSliceInfo.md) When set on a Slice Differentiator, this value indicates that there is no corresponding Slice. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SLICE_SERVICE_TYPE_EMBB](../android/telephony/data/NetworkSliceInfo.md) Slice suitable for the handling of 5G enhanced Mobile Broadband. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SLICE_SERVICE_TYPE_MIOT](../android/telephony/data/NetworkSliceInfo.md) Slice suitable for the handling of massive IoT. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SLICE_DIFFERENTIATOR_NO_SLICE](NetworkSliceInfo.md) When set on a Slice Differentiator, this value indicates that there is no corresponding Slice. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SLICE_SERVICE_TYPE_EMBB](NetworkSliceInfo.md) Slice suitable for the handling of 5G enhanced Mobile Broadband. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SLICE_SERVICE_TYPE_MIOT](NetworkSliceInfo.md) Slice suitable for the handling of massive IoT. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SLICE_SERVICE_TYPE_NONE](../android/telephony/data/NetworkSliceInfo.md) Indicates that the service type is not present. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SLICE_SERVICE_TYPE_URLLC](../android/telephony/data/NetworkSliceInfo.md) Slice suitable for the handling of ultra-reliable low latency communications. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SLICE_STATUS_ALLOWED](../android/telephony/data/NetworkSliceInfo.md) The slice is allowed to be used. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SLICE_SERVICE_TYPE_NONE](NetworkSliceInfo.md) Indicates that the service type is not present. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SLICE_SERVICE_TYPE_URLLC](NetworkSliceInfo.md) Slice suitable for the handling of ultra-reliable low latency communications. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SLICE_STATUS_ALLOWED](NetworkSliceInfo.md) The slice is allowed to be used. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SLICE_STATUS_CONFIGURED](../android/telephony/data/NetworkSliceInfo.md) The slice is configured but not allowed or rejected yet. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SLICE_STATUS_DEFAULT_CONFIGURED](../android/telephony/data/NetworkSliceInfo.md) The slice is configured by home operator(HPLMN) in default and is used if configured/allowed slices are not available for the serving PLMN. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SLICE_STATUS_REJECTED_NOT_AVAILABLE_IN_PLMN](../android/telephony/data/NetworkSliceInfo.md) The slice is rejected because not available in PLMN. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SLICE_STATUS_CONFIGURED](NetworkSliceInfo.md) The slice is configured but not allowed or rejected yet. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SLICE_STATUS_DEFAULT_CONFIGURED](NetworkSliceInfo.md) The slice is configured by home operator(HPLMN) in default and is used if configured/allowed slices are not available for the serving PLMN. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SLICE_STATUS_REJECTED_NOT_AVAILABLE_IN_PLMN](NetworkSliceInfo.md) The slice is rejected because not available in PLMN. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SLICE_STATUS_REJECTED_NOT_AVAILABLE_IN_REGISTERED_AREA](../android/telephony/data/NetworkSliceInfo.md) The slice is rejected because not available in registered area. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SLICE_STATUS_UNKNOWN](../android/telephony/data/NetworkSliceInfo.md) The slice status is unknown. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SLICE_STATUS_REJECTED_NOT_AVAILABLE_IN_REGISTERED_AREA](NetworkSliceInfo.md) The slice is rejected because not available in registered area. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SLICE_STATUS_UNKNOWN](NetworkSliceInfo.md) The slice status is unknown. |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android.os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android.os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android.os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/telephony/data/NetworkSliceInfo.md))`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/telephony/data/NetworkSliceInfo.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMappedHplmnSliceDifferentiator](../android/telephony/data/NetworkSliceInfo.md))`()` This Slice Differentiator corresponds to a [NetworkSliceInfo](../android/telephony/data/NetworkSliceInfo.md)(S-NSSAI) of the HPLMN; [getSliceDifferentiator()](../android/telephony/data/NetworkSliceInfo.md))is mapped to this value. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](NetworkSliceInfo.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](NetworkSliceInfo.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMappedHplmnSliceDifferentiator](NetworkSliceInfo.md))`()` This Slice Differentiator corresponds to a [NetworkSliceInfo](NetworkSliceInfo.md)(S-NSSAI) of the HPLMN; [getSliceDifferentiator()](NetworkSliceInfo.md))is mapped to this value. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMappedHplmnSliceServiceType](../android/telephony/data/NetworkSliceInfo.md))`()` Corresponds to a Slice Info (S-NSSAI) of the HPLMN. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSliceDifferentiator](../android/telephony/data/NetworkSliceInfo.md))`()` Identifies the slice from others with the same Slice Service Type. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSliceServiceType](../android/telephony/data/NetworkSliceInfo.md))`()` The type of service provided by the slice. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMappedHplmnSliceServiceType](NetworkSliceInfo.md))`()` Corresponds to a Slice Info (S-NSSAI) of the HPLMN. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSliceDifferentiator](NetworkSliceInfo.md))`()` Identifies the slice from others with the same Slice Service Type. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSliceServiceType](NetworkSliceInfo.md))`()` The type of service provided by the slice. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStatus](../android/telephony/data/NetworkSliceInfo.md))`()` Field to indicate the current status of the slice. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/telephony/data/NetworkSliceInfo.md))`()` <br /> |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/telephony/data/NetworkSliceInfo.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStatus](NetworkSliceInfo.md))`()` Field to indicate the current status of the slice. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](NetworkSliceInfo.md))`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](NetworkSliceInfo.md))`()` <br /> |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/telephony/data/NetworkSliceInfo.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](NetworkSliceInfo.md))`(`dest:` ` [Parcel](../android.os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [NetworkSliceInfo](../android/telephony/data/NetworkSliceInfo.md)!\> | [CREATOR](../android/telephony/data/NetworkSliceInfo.md) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [NetworkSliceInfo](NetworkSliceInfo.md)!\> | [CREATOR](NetworkSliceInfo.md) <br /> |
 
 ## Constants
 
@@ -210,7 +210,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) |
 
 ### equals
 
@@ -236,14 +236,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 fun getMappedHplmnSliceDifferentiator(): Int
 ```
 
-This Slice Differentiator corresponds to a [NetworkSliceInfo](../android/telephony/data/NetworkSliceInfo.md)(S-NSSAI) of the HPLMN; [getSliceDifferentiator()](../android/telephony/data/NetworkSliceInfo.md))is mapped to this value.
+This Slice Differentiator corresponds to a [NetworkSliceInfo](NetworkSliceInfo.md)(S-NSSAI) of the HPLMN; [getSliceDifferentiator()](NetworkSliceInfo.md))is mapped to this value.
 
 <br />
 
-Returns [SLICE_DIFFERENTIATOR_NO_SLICE](../android/telephony/data/NetworkSliceInfo.md) if either of the following are true:
+Returns [SLICE_DIFFERENTIATOR_NO_SLICE](NetworkSliceInfo.md) if either of the following are true:
 
-- [getSliceDifferentiator()](../android/telephony/data/NetworkSliceInfo.md))returns [SLICE_DIFFERENTIATOR_NO_SLICE](../android/telephony/data/NetworkSliceInfo.md)
-- [getMappedHplmnSliceServiceType()](../android/telephony/data/NetworkSliceInfo.md))returns [SLICE_SERVICE_TYPE_NONE](../android/telephony/data/NetworkSliceInfo.md)
+- [getSliceDifferentiator()](NetworkSliceInfo.md))returns [SLICE_DIFFERENTIATOR_NO_SLICE](NetworkSliceInfo.md)
+- [getMappedHplmnSliceServiceType()](NetworkSliceInfo.md))returns [SLICE_SERVICE_TYPE_NONE](NetworkSliceInfo.md)
 
 <br />
 
@@ -269,7 +269,7 @@ see: 3GPP TS 24.501 Section 9.11.2.8.
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.telephony.data.NetworkSliceInfo#SLICE_SERVICE_TYPE_NONE](../android/telephony/data/NetworkSliceInfo.md), [android.telephony.data.NetworkSliceInfo#SLICE_SERVICE_TYPE_EMBB](../android/telephony/data/NetworkSliceInfo.md), [android.telephony.data.NetworkSliceInfo#SLICE_SERVICE_TYPE_URLLC](../android/telephony/data/NetworkSliceInfo.md), or [android.telephony.data.NetworkSliceInfo#SLICE_SERVICE_TYPE_MIOT](../android/telephony/data/NetworkSliceInfo.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.telephony.data.NetworkSliceInfo#SLICE_SERVICE_TYPE_NONE](NetworkSliceInfo.md), [android.telephony.data.NetworkSliceInfo#SLICE_SERVICE_TYPE_EMBB](NetworkSliceInfo.md), [android.telephony.data.NetworkSliceInfo#SLICE_SERVICE_TYPE_URLLC](NetworkSliceInfo.md), or [android.telephony.data.NetworkSliceInfo#SLICE_SERVICE_TYPE_MIOT](NetworkSliceInfo.md) |
 
 ### getSliceDifferentiator
 
@@ -283,7 +283,7 @@ Identifies the slice from others with the same Slice Service Type.
 
 <br />
 
-Returns [SLICE_DIFFERENTIATOR_NO_SLICE](../android/telephony/data/NetworkSliceInfo.md) if [getSliceServiceType](../android/telephony/data/NetworkSliceInfo.md))returns [SLICE_SERVICE_TYPE_NONE](../android/telephony/data/NetworkSliceInfo.md).
+Returns [SLICE_DIFFERENTIATOR_NO_SLICE](NetworkSliceInfo.md) if [getSliceServiceType](NetworkSliceInfo.md))returns [SLICE_SERVICE_TYPE_NONE](NetworkSliceInfo.md).
 
 <br />
 
@@ -309,7 +309,7 @@ see: 3GPP TS 24.501 Section 9.11.2.8.
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.telephony.data.NetworkSliceInfo#SLICE_SERVICE_TYPE_NONE](../android/telephony/data/NetworkSliceInfo.md), [android.telephony.data.NetworkSliceInfo#SLICE_SERVICE_TYPE_EMBB](../android/telephony/data/NetworkSliceInfo.md), [android.telephony.data.NetworkSliceInfo#SLICE_SERVICE_TYPE_URLLC](../android/telephony/data/NetworkSliceInfo.md), or [android.telephony.data.NetworkSliceInfo#SLICE_SERVICE_TYPE_MIOT](../android/telephony/data/NetworkSliceInfo.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.telephony.data.NetworkSliceInfo#SLICE_SERVICE_TYPE_NONE](NetworkSliceInfo.md), [android.telephony.data.NetworkSliceInfo#SLICE_SERVICE_TYPE_EMBB](NetworkSliceInfo.md), [android.telephony.data.NetworkSliceInfo#SLICE_SERVICE_TYPE_URLLC](NetworkSliceInfo.md), or [android.telephony.data.NetworkSliceInfo#SLICE_SERVICE_TYPE_MIOT](NetworkSliceInfo.md) |
 
 ### getStatus
 
@@ -323,7 +323,7 @@ Field to indicate the current status of the slice.
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the current status for this slice info. Value is [android.telephony.data.NetworkSliceInfo#SLICE_STATUS_UNKNOWN](../android/telephony/data/NetworkSliceInfo.md), [android.telephony.data.NetworkSliceInfo#SLICE_STATUS_CONFIGURED](../android/telephony/data/NetworkSliceInfo.md), [android.telephony.data.NetworkSliceInfo#SLICE_STATUS_ALLOWED](../android/telephony/data/NetworkSliceInfo.md), [android.telephony.data.NetworkSliceInfo#SLICE_STATUS_REJECTED_NOT_AVAILABLE_IN_PLMN](../android/telephony/data/NetworkSliceInfo.md), [android.telephony.data.NetworkSliceInfo#SLICE_STATUS_REJECTED_NOT_AVAILABLE_IN_REGISTERED_AREA](../android/telephony/data/NetworkSliceInfo.md), or [android.telephony.data.NetworkSliceInfo#SLICE_STATUS_DEFAULT_CONFIGURED](../android/telephony/data/NetworkSliceInfo.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the current status for this slice info. Value is [android.telephony.data.NetworkSliceInfo#SLICE_STATUS_UNKNOWN](NetworkSliceInfo.md), [android.telephony.data.NetworkSliceInfo#SLICE_STATUS_CONFIGURED](NetworkSliceInfo.md), [android.telephony.data.NetworkSliceInfo#SLICE_STATUS_ALLOWED](NetworkSliceInfo.md), [android.telephony.data.NetworkSliceInfo#SLICE_STATUS_REJECTED_NOT_AVAILABLE_IN_PLMN](NetworkSliceInfo.md), [android.telephony.data.NetworkSliceInfo#SLICE_STATUS_REJECTED_NOT_AVAILABLE_IN_REGISTERED_AREA](NetworkSliceInfo.md), or [android.telephony.data.NetworkSliceInfo#SLICE_STATUS_DEFAULT_CONFIGURED](NetworkSliceInfo.md) |
 
 ### hashCode
 
@@ -364,8 +364,8 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](../android/os/Parcel.md):This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android.os/Parcel.md):This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

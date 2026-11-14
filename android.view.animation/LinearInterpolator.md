@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # LinearInterpolator
 
-Kotlin| [Java](../android/view/animation/LinearInterpolator.md) 
+Kotlin| [Java](LinearInterpolator.md) 
 | --- | --- |
 
 ```
@@ -13,8 +13,8 @@ open class LinearInterpolator : BaseInterpolator
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.view.animation.BaseInterpolator](../android/view/animation/BaseInterpolator.md) ||
-| | ↳ | [android.view.animation.LinearInterpolator](../android/view/animation/LinearInterpolator.md) |
+| ↳ | [android.view.animation.BaseInterpolator](BaseInterpolator.md) ||
+| | ↳ | [android.view.animation.LinearInterpolator](LinearInterpolator.md) |
 
 An interpolator where the rate of change is constant
 
@@ -22,12 +22,12 @@ An interpolator where the rate of change is constant
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [LinearInterpolator](../android/view/animation/LinearInterpolator.md))`()` <br /> |
-| [LinearInterpolator](../android/view/animation/LinearInterpolator.md))`(`context:` ` [Context](../android/content/Context.md)!`, `attrs:` ` [AttributeSet](../android/util/AttributeSet.md)!`)` <br /> |
+| [LinearInterpolator](LinearInterpolator.md))`()` <br /> |
+| [LinearInterpolator](LinearInterpolator.md))`(`context:` ` [Context](../android.content/Context.md)!`, `attrs:` ` [AttributeSet](../android.util/AttributeSet.md)!`)` <br /> |
 
 | Public methods ||
 |------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getInterpolation](../android/view/animation/LinearInterpolator.md))`(`input:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` <br /> |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getInterpolation](LinearInterpolator.md))`(`input:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` <br /> |
 
 ## Public constructors
 

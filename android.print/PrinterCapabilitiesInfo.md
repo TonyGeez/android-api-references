@@ -4,7 +4,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 
 # PrinterCapabilitiesInfo
 
-Kotlin| [Java](../android/print/PrinterCapabilitiesInfo.md) 
+Kotlin| [Java](PrinterCapabilitiesInfo.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class PrinterCapabilitiesInfo : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.print.PrinterCapabilitiesInfo](../android/print/PrinterCapabilitiesInfo.md) |
+| ↳ | [android.print.PrinterCapabilitiesInfo](PrinterCapabilitiesInfo.md) |
 
 This class represents the capabilities of a printer. Instances of this class are created by a print service to report the capabilities of a printer it manages. The capabilities of a printer specify how it can print content. For example, what are the media sizes supported by the printer, what are the minimal margins of the printer based on its technical design, etc.
 
@@ -21,32 +21,32 @@ This class represents the capabilities of a printer. Instances of this class are
 
 | Nested classes ||
 |---|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](../android/print/PrinterCapabilitiesInfo.Builder.md) Builder for creating of a [PrinterCapabilitiesInfo](../android/print/PrinterCapabilitiesInfo.md). |
+| | [Builder](../android/print/PrinterCapabilitiesInfo.Builder.md) Builder for creating of a [PrinterCapabilitiesInfo](PrinterCapabilitiesInfo.md). |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android.os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android.os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android.os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/print/PrinterCapabilitiesInfo.md))`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/print/PrinterCapabilitiesInfo.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getColorModes](../android/print/PrinterCapabilitiesInfo.md))`()` Gets the bit mask of supported color modes. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](PrinterCapabilitiesInfo.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](PrinterCapabilitiesInfo.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getColorModes](PrinterCapabilitiesInfo.md))`()` Gets the bit mask of supported color modes. |
 | --- | --- |
-| [PrintAttributes](../android/print/PrintAttributes.md) | [getDefaults](../android/print/PrinterCapabilitiesInfo.md))`()` Gets the default print attributes. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDuplexModes](../android/print/PrinterCapabilitiesInfo.md))`()` Gets the bit mask of supported duplex modes. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PrintAttributes.MediaSize](../android/print/PrintAttributes.MediaSize.md)!\> | [getMediaSizes](../android/print/PrinterCapabilitiesInfo.md))`()` Gets the supported media sizes. |
+| [PrintAttributes](PrintAttributes.md) | [getDefaults](PrinterCapabilitiesInfo.md))`()` Gets the default print attributes. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDuplexModes](PrinterCapabilitiesInfo.md))`()` Gets the bit mask of supported duplex modes. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PrintAttributes.MediaSize](../android/print/PrintAttributes.MediaSize.md)!\> | [getMediaSizes](PrinterCapabilitiesInfo.md))`()` Gets the supported media sizes. |
 | --- | --- |
-| [PrintAttributes.Margins](../android/print/PrintAttributes.Margins.md) | [getMinMargins](../android/print/PrinterCapabilitiesInfo.md))`()` Gets the minimal margins. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PrintAttributes.Resolution](../android/print/PrintAttributes.Resolution.md)!\> | [getResolutions](../android/print/PrinterCapabilitiesInfo.md))`()` Gets the supported resolutions. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/print/PrinterCapabilitiesInfo.md))`()` <br /> |
+| [PrintAttributes.Margins](../android/print/PrintAttributes.Margins.md) | [getMinMargins](PrinterCapabilitiesInfo.md))`()` Gets the minimal margins. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PrintAttributes.Resolution](../android/print/PrintAttributes.Resolution.md)!\> | [getResolutions](PrinterCapabilitiesInfo.md))`()` Gets the supported resolutions. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](PrinterCapabilitiesInfo.md))`()` <br /> |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/print/PrinterCapabilitiesInfo.md))`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/print/PrinterCapabilitiesInfo.md))`(`parcel:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](PrinterCapabilitiesInfo.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](PrinterCapabilitiesInfo.md))`(`parcel:` ` [Parcel](../android.os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [PrinterCapabilitiesInfo](../android/print/PrinterCapabilitiesInfo.md)!\> | [CREATOR](../android/print/PrinterCapabilitiesInfo.md) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [PrinterCapabilitiesInfo](PrinterCapabilitiesInfo.md)!\> | [CREATOR](PrinterCapabilitiesInfo.md) <br /> |
 
 ## Public methods
 
@@ -60,7 +60,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) |
 
 ### equals
 
@@ -102,12 +102,12 @@ Gets the bit mask of supported color modes.
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The bit mask of supported color modes. Value is either`0`or a combination of [android.print.PrintAttributes#COLOR_MODE_MONOCHROME](../android/print/PrintAttributes.md), and [android.print.PrintAttributes#COLOR_MODE_COLOR](../android/print/PrintAttributes.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The bit mask of supported color modes. Value is either`0`or a combination of [android.print.PrintAttributes#COLOR_MODE_MONOCHROME](PrintAttributes.md), and [android.print.PrintAttributes#COLOR_MODE_COLOR](PrintAttributes.md) |
 
 **See Also**
 
-- [android.print.PrintAttributes#COLOR_MODE_COLOR](../android/print/PrintAttributes.md)
-- [android.print.PrintAttributes#COLOR_MODE_MONOCHROME](../android/print/PrintAttributes.md) 
+- [android.print.PrintAttributes#COLOR_MODE_COLOR](PrintAttributes.md)
+- [android.print.PrintAttributes#COLOR_MODE_MONOCHROME](PrintAttributes.md) 
 
 ### getDefaults
 
@@ -121,7 +121,7 @@ Gets the default print attributes.
 
 | Return ||
 |-------------------------------------------------------------------------------------------------|-----------------------------------------------------|
-| [PrintAttributes](../android/print/PrintAttributes.md) | The default attributes. This value cannot be`null`. |
+| [PrintAttributes](PrintAttributes.md) | The default attributes. This value cannot be`null`. |
 
 ### getDuplexModes
 
@@ -135,13 +135,13 @@ Gets the bit mask of supported duplex modes.
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The bit mask of supported duplex modes. Value is either`0`or a combination of [android.print.PrintAttributes#DUPLEX_MODE_NONE](../android/print/PrintAttributes.md), [android.print.PrintAttributes#DUPLEX_MODE_LONG_EDGE](../android/print/PrintAttributes.md), and [android.print.PrintAttributes#DUPLEX_MODE_SHORT_EDGE](../android/print/PrintAttributes.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The bit mask of supported duplex modes. Value is either`0`or a combination of [android.print.PrintAttributes#DUPLEX_MODE_NONE](PrintAttributes.md), [android.print.PrintAttributes#DUPLEX_MODE_LONG_EDGE](PrintAttributes.md), and [android.print.PrintAttributes#DUPLEX_MODE_SHORT_EDGE](PrintAttributes.md) |
 
 **See Also**
 
-- [android.print.PrintAttributes#DUPLEX_MODE_NONE](../android/print/PrintAttributes.md)
-- [android.print.PrintAttributes#DUPLEX_MODE_LONG_EDGE](../android/print/PrintAttributes.md)
-- [android.print.PrintAttributes#DUPLEX_MODE_SHORT_EDGE](../android/print/PrintAttributes.md) 
+- [android.print.PrintAttributes#DUPLEX_MODE_NONE](PrintAttributes.md)
+- [android.print.PrintAttributes#DUPLEX_MODE_LONG_EDGE](PrintAttributes.md)
+- [android.print.PrintAttributes#DUPLEX_MODE_SHORT_EDGE](PrintAttributes.md) 
 
 ### getMediaSizes
 
@@ -223,7 +223,7 @@ fun writeToParcel(
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `dest` | The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

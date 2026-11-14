@@ -4,7 +4,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # StructCmsghdr
 
-Kotlin| [Java](../android/system/StructCmsghdr.md) 
+Kotlin| [Java](StructCmsghdr.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class StructCmsghdr
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.system.StructCmsghdr](../android/system/StructCmsghdr.md) |
+| ↳ | [android.system.StructCmsghdr](StructCmsghdr.md) |
 
 Corresponds to C's`struct cmsghdr`.
 
@@ -21,14 +21,14 @@ Corresponds to C's`struct cmsghdr`.
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [StructCmsghdr](../android/system/StructCmsghdr.md))`(`cmsg_level:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `cmsg_type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`)` <br /> |
-| [StructCmsghdr](../android/system/StructCmsghdr.md))`(`cmsg_level:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `cmsg_type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` <br /> |
+| [StructCmsghdr](StructCmsghdr.md))`(`cmsg_level:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `cmsg_type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`)` <br /> |
+| [StructCmsghdr](StructCmsghdr.md))`(`cmsg_level:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `cmsg_type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` <br /> |
 
 | Properties ||
 |-----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [cmsg_data](../android/system/StructCmsghdr.md) message data sent/received |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [cmsg_level](../android/system/StructCmsghdr.md) Originating protocol |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [cmsg_type](../android/system/StructCmsghdr.md) Protocol-specific type |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [cmsg_data](StructCmsghdr.md) message data sent/received |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [cmsg_level](StructCmsghdr.md) Originating protocol |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [cmsg_type](StructCmsghdr.md) Protocol-specific type |
 | --- | --- |
 
 ## Public constructors

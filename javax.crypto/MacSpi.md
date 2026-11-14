@@ -10,7 +10,7 @@ abstract class MacSpi
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.crypto.MacSpi](../javax/crypto/MacSpi.md) |
+| ↳ | [javax.crypto.MacSpi](MacSpi.md) |
 
 This class defines the*Service Provider Interface* (**SPI** ) for the`Mac`class. All the abstract methods in this class must be implemented by each cryptographic service provider who wishes to supply the implementation of a particular MAC algorithm.
 
@@ -20,23 +20,23 @@ Implementations are free to implement the Cloneable interface.
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------|---|
-| [MacSpi](../javax/crypto/MacSpi.md))`()` <br /> |
+| [MacSpi](MacSpi.md))`()` <br /> |
 
 | Public methods ||
 |---------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [clone](../javax/crypto/MacSpi.md))`()` Returns a clone if the implementation is cloneable. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [clone](MacSpi.md))`()` Returns a clone if the implementation is cloneable. |
 
 | Protected methods ||
 |--------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [engineDoFinal](../javax/crypto/MacSpi.md))`()` Completes the MAC computation and resets the MAC for further use, maintaining the secret key that the MAC was initialized with. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [engineGetMacLength](../javax/crypto/MacSpi.md))`()` Returns the length of the MAC in bytes. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](../javax/crypto/MacSpi.md))`(`key:` ` [Key](../java/security/Key.md)!`, `params:` ` [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)!`)` Initializes the MAC with the given (secret) key and algorithm parameters. |
+| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [engineDoFinal](MacSpi.md))`()` Completes the MAC computation and resets the MAC for further use, maintaining the secret key that the MAC was initialized with. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [engineGetMacLength](MacSpi.md))`()` Returns the length of the MAC in bytes. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](MacSpi.md))`(`key:` ` [Key](../java.security/Key.md)!`, `params:` ` [AlgorithmParameterSpec](../java.security.spec/AlgorithmParameterSpec.md)!`)` Initializes the MAC with the given (secret) key and algorithm parameters. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineReset](../javax/crypto/MacSpi.md))`()` Resets the MAC for further use, maintaining the secret key that the MAC was initialized with. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineUpdate](../javax/crypto/MacSpi.md))`(`input:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Processes the given byte. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineUpdate](../javax/crypto/MacSpi.md))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Processes the first`len`bytes in`input`, starting at`offset`inclusive. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineReset](MacSpi.md))`()` Resets the MAC for further use, maintaining the secret key that the MAC was initialized with. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineUpdate](MacSpi.md))`(`input:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Processes the given byte. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineUpdate](MacSpi.md))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Processes the first`len`bytes in`input`, starting at`offset`inclusive. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineUpdate](../javax/crypto/MacSpi.md))`(`input:` ` [ByteBuffer](../java/nio/ByteBuffer.md)!`)` Processes`input.remaining()`bytes in the ByteBuffer`input`, starting at`input.position()`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineUpdate](MacSpi.md))`(`input:` ` [ByteBuffer](../java.nio/ByteBuffer.md)!`)` Processes`input.remaining()`bytes in the ByteBuffer`input`, starting at`input.position()`. |
 
 ## Public constructors
 
@@ -114,8 +114,8 @@ Initializes the MAC with the given (secret) key and algorithm parameters.
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| `key` | [Key](../java/security/Key.md)!:the (secret) key. |
-| `params` | [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)!:the algorithm parameters. |
+| `key` | [Key](../java.security/Key.md)!:the (secret) key. |
+| `params` | [AlgorithmParameterSpec](../java.security.spec/AlgorithmParameterSpec.md)!:the algorithm parameters. |
 
 | Exceptions ||
 |----------------------------------------------------|-------------------------------------------------------------------|
@@ -181,4 +181,4 @@ Subclasses should consider overriding this method if they can process ByteBuffer
 
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------|
-| `input` | [ByteBuffer](../java/nio/ByteBuffer.md)!:the ByteBuffer |
+| `input` | [ByteBuffer](../java.nio/ByteBuffer.md)!:the ByteBuffer |

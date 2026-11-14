@@ -8,10 +8,10 @@ open class ThreadPoolExecutor : AbstractExecutorService
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.util.concurrent.AbstractExecutorService](../java/util/concurrent/AbstractExecutorService.md) ||
-| | ↳ | [java.util.concurrent.ThreadPoolExecutor](../java/util/concurrent/ThreadPoolExecutor.md) |
+| ↳ | [java.util.concurrent.AbstractExecutorService](AbstractExecutorService.md) ||
+| | ↳ | [java.util.concurrent.ThreadPoolExecutor](ThreadPoolExecutor.md) |
 
-| Known Direct Subclasses [ScheduledThreadPoolExecutor](../java/util/concurrent/ScheduledThreadPoolExecutor.md) |---|---| | [ScheduledThreadPoolExecutor](../java/util/concurrent/ScheduledThreadPoolExecutor.md) | A `https://developer.android.com/reference/kotlin/java/util/concurrent/ThreadPoolExecutor#` that can additionally schedule commands to run after a given delay, or to execute periodically. | |
+| Known Direct Subclasses [ScheduledThreadPoolExecutor](ScheduledThreadPoolExecutor.md) |---|---| | [ScheduledThreadPoolExecutor](ScheduledThreadPoolExecutor.md) | A `https://developer.android.com/reference/kotlin/java/util/concurrent/ThreadPoolExecutor#` that can additionally schedule commands to run after a given delay, or to execute periodically. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 An `https://developer.android.com/reference/kotlin/java/util/concurrent/ExecutorService` that executes each submitted task using one of possibly several pooled threads, normally configured using `https://developer.android.com/reference/kotlin/java/util/concurrent/Executors` factory methods.
@@ -121,8 +121,8 @@ Reclamation
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/util/concurrent/ThreadPoolExecutor#ThreadPoolExecutor(kotlin.Int,%20kotlin.Int,%20kotlin.Long,%20java.util.concurrent.TimeUnit,%20java.util.concurrent.BlockingQueue)(corePoolSize: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, maximumPoolSize: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, keepAliveTime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, unit: https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit!, workQueue: https://developer.android.com/reference/kotlin/java/util/concurrent/BlockingQueue<https://developer.android.com/reference/kotlin/java/lang/Runnable.html#!>!)` Creates a new `ThreadPoolExecutor` with the given initial parameters, the [default thread factory](../java/util/concurrent/Executors.md)) and the [default rejected execution handler](../java/util/concurrent/ThreadPoolExecutor.AbortPolicy.md). |
-| `https://developer.android.com/reference/kotlin/java/util/concurrent/ThreadPoolExecutor#ThreadPoolExecutor(kotlin.Int,%20kotlin.Int,%20kotlin.Long,%20java.util.concurrent.TimeUnit,%20java.util.concurrent.BlockingQueue,%20java.util.concurrent.RejectedExecutionHandler)(corePoolSize: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, maximumPoolSize: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, keepAliveTime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, unit: https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit!, workQueue: https://developer.android.com/reference/kotlin/java/util/concurrent/BlockingQueue<https://developer.android.com/reference/kotlin/java/lang/Runnable.html#!>!, handler: https://developer.android.com/reference/kotlin/java/util/concurrent/RejectedExecutionHandler!)` Creates a new `ThreadPoolExecutor` with the given initial parameters and the [default thread factory](../java/util/concurrent/Executors.md)). |
+| `https://developer.android.com/reference/kotlin/java/util/concurrent/ThreadPoolExecutor#ThreadPoolExecutor(kotlin.Int,%20kotlin.Int,%20kotlin.Long,%20java.util.concurrent.TimeUnit,%20java.util.concurrent.BlockingQueue)(corePoolSize: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, maximumPoolSize: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, keepAliveTime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, unit: https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit!, workQueue: https://developer.android.com/reference/kotlin/java/util/concurrent/BlockingQueue<https://developer.android.com/reference/kotlin/java/lang/Runnable.html#!>!)` Creates a new `ThreadPoolExecutor` with the given initial parameters, the [default thread factory](Executors.md)) and the [default rejected execution handler](../java/util/concurrent/ThreadPoolExecutor.AbortPolicy.md). |
+| `https://developer.android.com/reference/kotlin/java/util/concurrent/ThreadPoolExecutor#ThreadPoolExecutor(kotlin.Int,%20kotlin.Int,%20kotlin.Long,%20java.util.concurrent.TimeUnit,%20java.util.concurrent.BlockingQueue,%20java.util.concurrent.RejectedExecutionHandler)(corePoolSize: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, maximumPoolSize: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, keepAliveTime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, unit: https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit!, workQueue: https://developer.android.com/reference/kotlin/java/util/concurrent/BlockingQueue<https://developer.android.com/reference/kotlin/java/lang/Runnable.html#!>!, handler: https://developer.android.com/reference/kotlin/java/util/concurrent/RejectedExecutionHandler!)` Creates a new `ThreadPoolExecutor` with the given initial parameters and the [default thread factory](Executors.md)). |
 | `https://developer.android.com/reference/kotlin/java/util/concurrent/ThreadPoolExecutor#ThreadPoolExecutor(kotlin.Int,%20kotlin.Int,%20kotlin.Long,%20java.util.concurrent.TimeUnit,%20java.util.concurrent.BlockingQueue,%20java.util.concurrent.ThreadFactory)(corePoolSize: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, maximumPoolSize: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, keepAliveTime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, unit: https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit!, workQueue: https://developer.android.com/reference/kotlin/java/util/concurrent/BlockingQueue<https://developer.android.com/reference/kotlin/java/lang/Runnable.html#!>!, threadFactory: https://developer.android.com/reference/kotlin/java/util/concurrent/ThreadFactory!)` Creates a new `ThreadPoolExecutor` with the given initial parameters and the [default rejected execution handler](../java/util/concurrent/ThreadPoolExecutor.AbortPolicy.md). |
 | `https://developer.android.com/reference/kotlin/java/util/concurrent/ThreadPoolExecutor#ThreadPoolExecutor(kotlin.Int,%20kotlin.Int,%20kotlin.Long,%20java.util.concurrent.TimeUnit,%20java.util.concurrent.BlockingQueue,%20java.util.concurrent.ThreadFactory,%20java.util.concurrent.RejectedExecutionHandler)(corePoolSize: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, maximumPoolSize: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, keepAliveTime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, unit: https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit!, workQueue: https://developer.android.com/reference/kotlin/java/util/concurrent/BlockingQueue<https://developer.android.com/reference/kotlin/java/lang/Runnable.html#!>!, threadFactory: https://developer.android.com/reference/kotlin/java/util/concurrent/ThreadFactory!, handler: https://developer.android.com/reference/kotlin/java/util/concurrent/RejectedExecutionHandler!)` Creates a new `ThreadPoolExecutor` with the given initial parameters. |
 
@@ -142,11 +142,11 @@ Reclamation
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ThreadPoolExecutor#getMaximumPoolSize()()` Returns the maximum allowed number of threads. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ThreadPoolExecutor#getPoolSize()()` Returns the current number of threads in the pool. |
-| open [BlockingQueue](../java/util/concurrent/BlockingQueue.md)\< [Runnable](../java/lang/Runnable.md)!\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/ThreadPoolExecutor#getQueue()()` Returns the task queue used by this executor. |
+| open [BlockingQueue](BlockingQueue.md)\< [Runnable](../java.lang/Runnable.md)!\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/ThreadPoolExecutor#getQueue()()` Returns the task queue used by this executor. |
 | --- | --- |
-| open [RejectedExecutionHandler](../java/util/concurrent/RejectedExecutionHandler.md)! | `https://developer.android.com/reference/kotlin/java/util/concurrent/ThreadPoolExecutor#getRejectedExecutionHandler()()` Returns the current handler for unexecutable tasks. |
+| open [RejectedExecutionHandler](RejectedExecutionHandler.md)! | `https://developer.android.com/reference/kotlin/java/util/concurrent/ThreadPoolExecutor#getRejectedExecutionHandler()()` Returns the current handler for unexecutable tasks. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ThreadPoolExecutor#getTaskCount()()` Returns the approximate total number of tasks that have ever been scheduled for execution. |
-| open [ThreadFactory](../java/util/concurrent/ThreadFactory.md)! | `https://developer.android.com/reference/kotlin/java/util/concurrent/ThreadPoolExecutor#getThreadFactory()()` Returns the thread factory used to create new threads. |
+| open [ThreadFactory](ThreadFactory.md)! | `https://developer.android.com/reference/kotlin/java/util/concurrent/ThreadPoolExecutor#getThreadFactory()()` Returns the thread factory used to create new threads. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ThreadPoolExecutor#isShutdown()()` Returns `true` if this executor has been shut down. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ThreadPoolExecutor#isTerminated()()` Returns `true` if all tasks have completed following shut down. |
@@ -165,7 +165,7 @@ Reclamation
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ThreadPoolExecutor#setThreadFactory(java.util.concurrent.ThreadFactory)(threadFactory: https://developer.android.com/reference/kotlin/java/util/concurrent/ThreadFactory!)` Sets the thread factory used to create new threads. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ThreadPoolExecutor#shutdown()()` Initiates an orderly shutdown in which previously submitted tasks are executed, but no new tasks will be accepted. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Runnable](../java/lang/Runnable.md)!\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/ThreadPoolExecutor#shutdownNow()()` Attempts to stop all actively executing tasks, halts the processing of waiting tasks, and returns a list of the tasks that were awaiting execution. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Runnable](../java.lang/Runnable.md)!\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/ThreadPoolExecutor#shutdownNow()()` Attempts to stop all actively executing tasks, halts the processing of waiting tasks, and returns a list of the tasks that were awaiting execution. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ThreadPoolExecutor#toString()()` Returns a string identifying this pool, as well as its state, including indications of run state and estimated worker and task counts. |
 | --- | --- |
 
@@ -199,7 +199,7 @@ ThreadPoolExecutor(
     workQueue: BlockingQueue<Runnable!>!)
 ```
 
-Creates a new `ThreadPoolExecutor` with the given initial parameters, the [default thread factory](../java/util/concurrent/Executors.md)) and the [default rejected execution handler](../java/util/concurrent/ThreadPoolExecutor.AbortPolicy.md).
+Creates a new `ThreadPoolExecutor` with the given initial parameters, the [default thread factory](Executors.md)) and the [default rejected execution handler](../java/util/concurrent/ThreadPoolExecutor.AbortPolicy.md).
 
 It may be more convenient to use one of the `https://developer.android.com/reference/kotlin/java/util/concurrent/Executors` factory methods instead of this general purpose constructor.
 
@@ -209,8 +209,8 @@ It may be more convenient to use one of the `https://developer.android.com/refer
 | `maximumPoolSize` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the maximum number of threads to allow in the pool |
 | `keepAliveTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): when the number of threads is greater than the core, this is the maximum time that excess idle threads will wait for new tasks before terminating. |
 | --- | --- |
-| `unit` | [TimeUnit](../java/util/concurrent/TimeUnit.md)!: the time unit for the `keepAliveTime` argument |
-| `workQueue` | [BlockingQueue](../java/util/concurrent/BlockingQueue.md)\< [Runnable](../java/lang/Runnable.md)!\>!: the queue to use for holding tasks before they are executed. This queue will hold only the `Runnable` tasks submitted by the `execute` method. |
+| `unit` | [TimeUnit](TimeUnit.md)!: the time unit for the `keepAliveTime` argument |
+| `workQueue` | [BlockingQueue](BlockingQueue.md)\< [Runnable](../java.lang/Runnable.md)!\>!: the queue to use for holding tasks before they are executed. This queue will hold only the `Runnable` tasks submitted by the `execute` method. |
 
 | Exceptions ||
 |---|---|
@@ -231,7 +231,7 @@ ThreadPoolExecutor(
     handler: RejectedExecutionHandler!)
 ```
 
-Creates a new `ThreadPoolExecutor` with the given initial parameters and the [default thread factory](../java/util/concurrent/Executors.md)).
+Creates a new `ThreadPoolExecutor` with the given initial parameters and the [default thread factory](Executors.md)).
 
 | Parameters ||
 |---|---|
@@ -239,9 +239,9 @@ Creates a new `ThreadPoolExecutor` with the given initial parameters and the [de
 | `maximumPoolSize` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the maximum number of threads to allow in the pool |
 | `keepAliveTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): when the number of threads is greater than the core, this is the maximum time that excess idle threads will wait for new tasks before terminating. |
 | --- | --- |
-| `unit` | [TimeUnit](../java/util/concurrent/TimeUnit.md)!: the time unit for the `keepAliveTime` argument |
-| `workQueue` | [BlockingQueue](../java/util/concurrent/BlockingQueue.md)\< [Runnable](../java/lang/Runnable.md)!\>!: the queue to use for holding tasks before they are executed. This queue will hold only the `Runnable` tasks submitted by the `execute` method. |
-| `handler` | [RejectedExecutionHandler](../java/util/concurrent/RejectedExecutionHandler.md)!: the handler to use when execution is blocked because the thread bounds and queue capacities are reached |
+| `unit` | [TimeUnit](TimeUnit.md)!: the time unit for the `keepAliveTime` argument |
+| `workQueue` | [BlockingQueue](BlockingQueue.md)\< [Runnable](../java.lang/Runnable.md)!\>!: the queue to use for holding tasks before they are executed. This queue will hold only the `Runnable` tasks submitted by the `execute` method. |
+| `handler` | [RejectedExecutionHandler](RejectedExecutionHandler.md)!: the handler to use when execution is blocked because the thread bounds and queue capacities are reached |
 | --- | --- |
 
 | Exceptions ||
@@ -271,9 +271,9 @@ Creates a new `ThreadPoolExecutor` with the given initial parameters and the [de
 | `maximumPoolSize` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the maximum number of threads to allow in the pool |
 | `keepAliveTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): when the number of threads is greater than the core, this is the maximum time that excess idle threads will wait for new tasks before terminating. |
 | --- | --- |
-| `unit` | [TimeUnit](../java/util/concurrent/TimeUnit.md)!: the time unit for the `keepAliveTime` argument |
-| `workQueue` | [BlockingQueue](../java/util/concurrent/BlockingQueue.md)\< [Runnable](../java/lang/Runnable.md)!\>!: the queue to use for holding tasks before they are executed. This queue will hold only the `Runnable` tasks submitted by the `execute` method. |
-| `threadFactory` | [ThreadFactory](../java/util/concurrent/ThreadFactory.md)!: the factory to use when the executor creates a new thread |
+| `unit` | [TimeUnit](TimeUnit.md)!: the time unit for the `keepAliveTime` argument |
+| `workQueue` | [BlockingQueue](BlockingQueue.md)\< [Runnable](../java.lang/Runnable.md)!\>!: the queue to use for holding tasks before they are executed. This queue will hold only the `Runnable` tasks submitted by the `execute` method. |
+| `threadFactory` | [ThreadFactory](ThreadFactory.md)!: the factory to use when the executor creates a new thread |
 | --- | --- |
 
 | Exceptions ||
@@ -304,11 +304,11 @@ Creates a new `ThreadPoolExecutor` with the given initial parameters.
 | `maximumPoolSize` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the maximum number of threads to allow in the pool |
 | `keepAliveTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): when the number of threads is greater than the core, this is the maximum time that excess idle threads will wait for new tasks before terminating. |
 | --- | --- |
-| `unit` | [TimeUnit](../java/util/concurrent/TimeUnit.md)!: the time unit for the `keepAliveTime` argument |
-| `workQueue` | [BlockingQueue](../java/util/concurrent/BlockingQueue.md)\< [Runnable](../java/lang/Runnable.md)!\>!: the queue to use for holding tasks before they are executed. This queue will hold only the `Runnable` tasks submitted by the `execute` method. |
-| `threadFactory` | [ThreadFactory](../java/util/concurrent/ThreadFactory.md)!: the factory to use when the executor creates a new thread |
+| `unit` | [TimeUnit](TimeUnit.md)!: the time unit for the `keepAliveTime` argument |
+| `workQueue` | [BlockingQueue](BlockingQueue.md)\< [Runnable](../java.lang/Runnable.md)!\>!: the queue to use for holding tasks before they are executed. This queue will hold only the `Runnable` tasks submitted by the `execute` method. |
+| `threadFactory` | [ThreadFactory](ThreadFactory.md)!: the factory to use when the executor creates a new thread |
 | --- | --- |
-| `handler` | [RejectedExecutionHandler](../java/util/concurrent/RejectedExecutionHandler.md)!: the handler to use when execution is blocked because the thread bounds and queue capacities are reached |
+| `handler` | [RejectedExecutionHandler](RejectedExecutionHandler.md)!: the handler to use when execution is blocked because the thread bounds and queue capacities are reached |
 
 | Exceptions ||
 |---|---|
@@ -365,7 +365,7 @@ Blocks until all tasks have completed execution after a shutdown request, or the
 | Parameters ||
 |---|---|
 | `timeout` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the maximum time to wait |
-| `unit` | [TimeUnit](../java/util/concurrent/TimeUnit.md)!: the time unit of the timeout argument |
+| `unit` | [TimeUnit](TimeUnit.md)!: the time unit of the timeout argument |
 
 | Return ||
 |---|---|
@@ -387,7 +387,7 @@ Executes the given task sometime in the future. The task may execute in a new th
 
 | Parameters ||
 |---|---|
-| `command` | [Runnable](../java/lang/Runnable.md)!: the task to execute |
+| `command` | [Runnable](../java.lang/Runnable.md)!: the task to execute |
 
 | Exceptions ||
 |---|---|
@@ -448,11 +448,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun getKeepAliveTime(unit: TimeUnit!): Long
 ```
 
-Returns the thread keep-alive time, which is the amount of time that threads may remain idle before being terminated. Threads that wait this amount of time without processing a task will be terminated if there are more than the core number of threads currently in the pool, or if this pool [allows core thread timeout](../java/util/concurrent/ThreadPoolExecutor.md)).
+Returns the thread keep-alive time, which is the amount of time that threads may remain idle before being terminated. Threads that wait this amount of time without processing a task will be terminated if there are more than the core number of threads currently in the pool, or if this pool [allows core thread timeout](ThreadPoolExecutor.md)).
 
 | Parameters ||
 |---|---|
-| `unit` | [TimeUnit](../java/util/concurrent/TimeUnit.md)!: the desired time unit of the result |
+| `unit` | [TimeUnit](TimeUnit.md)!: the desired time unit of the result |
 
 | Return ||
 |---|---|
@@ -666,7 +666,7 @@ This method may be useful as one part of a cancellation scheme. It may fail to r
 
 | Parameters ||
 |---|---|
-| `task` | [Runnable](../java/lang/Runnable.md)!: the task to remove |
+| `task` | [Runnable](../java.lang/Runnable.md)!: the task to remove |
 
 | Return ||
 |---|---|
@@ -705,12 +705,12 @@ open fun setKeepAliveTime(
 ): Unit
 ```
 
-Sets the thread keep-alive time, which is the amount of time that threads may remain idle before being terminated. Threads that wait this amount of time without processing a task will be terminated if there are more than the core number of threads currently in the pool, or if this pool [allows core thread timeout](../java/util/concurrent/ThreadPoolExecutor.md)). This overrides any value set in the constructor.
+Sets the thread keep-alive time, which is the amount of time that threads may remain idle before being terminated. Threads that wait this amount of time without processing a task will be terminated if there are more than the core number of threads currently in the pool, or if this pool [allows core thread timeout](ThreadPoolExecutor.md)). This overrides any value set in the constructor.
 
 | Parameters ||
 |---|---|
 | `time` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the time to wait. A time value of zero will cause excess threads to terminate immediately after executing tasks. |
-| `unit` | [TimeUnit](../java/util/concurrent/TimeUnit.md)!: the time unit of the `time` argument |
+| `unit` | [TimeUnit](TimeUnit.md)!: the time unit of the `time` argument |
 
 | Exceptions ||
 |---|---|
@@ -736,7 +736,7 @@ Sets the maximum allowed number of threads. This overrides any value set in the 
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalArgumentException` | if the new maximum is less than or equal to zero, or less than the [core pool size](../java/util/concurrent/ThreadPoolExecutor.md)) |
+| `java.lang.IllegalArgumentException` | if the new maximum is less than or equal to zero, or less than the [core pool size](ThreadPoolExecutor.md)) |
 
 **See Also**
 
@@ -754,7 +754,7 @@ Sets a new handler for unexecutable tasks.
 
 | Parameters ||
 |---|---|
-| `handler` | [RejectedExecutionHandler](../java/util/concurrent/RejectedExecutionHandler.md)!: the new handler |
+| `handler` | [RejectedExecutionHandler](RejectedExecutionHandler.md)!: the new handler |
 
 | Exceptions ||
 |---|---|
@@ -776,7 +776,7 @@ Sets the thread factory used to create new threads.
 
 | Parameters ||
 |---|---|
-| `threadFactory` | [ThreadFactory](../java/util/concurrent/ThreadFactory.md)!: the new thread factory |
+| `threadFactory` | [ThreadFactory](ThreadFactory.md)!: the new thread factory |
 
 | Exceptions ||
 |---|---|
@@ -876,7 +876,7 @@ This implementation does nothing, but may be customized in subclasses. Note: To 
 
 | Parameters ||
 |---|---|
-| `r` | [Runnable](../java/lang/Runnable.md)!: the runnable that has completed |
+| `r` | [Runnable](../java.lang/Runnable.md)!: the runnable that has completed |
 | `t` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!: the exception that caused termination, or null if execution completed normally |
 
 ### beforeExecute
@@ -896,8 +896,8 @@ This implementation does nothing, but may be customized in subclasses. Note: To 
 
 | Parameters ||
 |---|---|
-| `t` | [Thread](../java/lang/Thread.md)!: the thread that will run task `r` |
-| `r` | [Runnable](../java/lang/Runnable.md)!: the task that will be executed |
+| `t` | [Thread](../java.lang/Thread.md)!: the thread that will run task `r` |
+| `r` | [Runnable](../java.lang/Runnable.md)!: the task that will be executed |
 
 ### finalize
 

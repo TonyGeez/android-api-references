@@ -10,39 +10,39 @@ abstract class Selector : Closeable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.nio.channels.Selector](../java/nio/channels/Selector.md) |
+| ↳ | [java.nio.channels.Selector](Selector.md) |
 
-| Known Direct Subclasses [AbstractSelector](../java/nio/channels/spi/AbstractSelector.md) |-----------------------------------------------------------------------------------------------------------|------------------------------------------| | [AbstractSelector](../java/nio/channels/spi/AbstractSelector.md) | Base implementation class for selectors. | |
+| Known Direct Subclasses [AbstractSelector](../java.nio.channels.spi/AbstractSelector.md) |-----------------------------------------------------------------------------------------------------------|------------------------------------------| | [AbstractSelector](../java.nio.channels.spi/AbstractSelector.md) | Base implementation class for selectors. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
-A multiplexor of [SelectableChannel](../java/nio/channels/SelectableChannel.md) objects.
+A multiplexor of [SelectableChannel](SelectableChannel.md) objects.
 
-A selector may be created by invoking the [open](../java/nio/channels/Selector.md))method of this class, which will use the system's default to create a new selector. A selector may also be created by invoking the [openSelector](../java/nio/channels/spi/SelectorProvider.md))method of a custom selector provider. A selector remains open until it is closed via its #close method.
+A selector may be created by invoking the [open](Selector.md))method of this class, which will use the system's default to create a new selector. A selector may also be created by invoking the [openSelector](../java.nio.channels.spi/SelectorProvider.md))method of a custom selector provider. A selector remains open until it is closed via its #close method.
 
-A selectable channel's registration with a selector is represented by a [SelectionKey](../java/nio/channels/SelectionKey.md) object. A selector maintains three sets of selection keys:
+A selectable channel's registration with a selector is represented by a [SelectionKey](SelectionKey.md) object. A selector maintains three sets of selection keys:
 
-- The*key set* contains the keys representing the current channel registrations of this selector. This set is returned by the [keys](../java/nio/channels/Selector.md))method.
-- The*selected-key set* is the set of keys such that each key's channel was detected to be ready for at least one of the operations identified in the key's interest set during a prior selection operation that adds keys or updates keys in the set. This set is returned by the [selectedKeys](../java/nio/channels/Selector.md))method. The selected-key set is always a subset of the key set.
+- The*key set* contains the keys representing the current channel registrations of this selector. This set is returned by the [keys](Selector.md))method.
+- The*selected-key set* is the set of keys such that each key's channel was detected to be ready for at least one of the operations identified in the key's interest set during a prior selection operation that adds keys or updates keys in the set. This set is returned by the [selectedKeys](Selector.md))method. The selected-key set is always a subset of the key set.
 - The*cancelled-key*set is the set of keys that have been cancelled but whose channels have not yet been deregistered. This set is not directly accessible. The cancelled-key set is always a subset of the key set.
 
 All three sets are empty in a newly-created selector.
 
-A key is added to a selector's key set as a side effect of registering a channel via the channel's [register](../java/nio/channels/SelectableChannel.md))method. Cancelled keys are removed from the key set during selection operations. The key set itself is not directly modifiable.
+A key is added to a selector's key set as a side effect of registering a channel via the channel's [register](SelectableChannel.md))method. Cancelled keys are removed from the key set during selection operations. The key set itself is not directly modifiable.
 
-A key is added to its selector's cancelled-key set when it is cancelled, whether by closing its channel or by invoking its [cancel](../java/nio/channels/SelectionKey.md))method. Cancelling a key will cause its channel to be deregistered during the next selection operation, at which time the key will be removed from all of the selector's key sets.
+A key is added to its selector's cancelled-key set when it is cancelled, whether by closing its channel or by invoking its [cancel](SelectionKey.md))method. Cancelling a key will cause its channel to be deregistered during the next selection operation, at which time the key will be removed from all of the selector's key sets.
 
-Keys are added to the selected-key set by selection operations. A key may be removed directly from the selected-key set by invoking the set's [remove](../java/util/Set.md))method or by invoking the [remove](../java/util/Iterator.md))method of an [iterator](../java/util/Iterator.md) obtained from the set. All keys may be removed from the selected-key set by invoking the set's [clear](../java/util/Set.md))method. Keys may not be added directly to the selected-key set.
+Keys are added to the selected-key set by selection operations. A key may be removed directly from the selected-key set by invoking the set's [remove](../java.util/Set.md))method or by invoking the [remove](../java.util/Iterator.md))method of an [iterator](../java.util/Iterator.md) obtained from the set. All keys may be removed from the selected-key set by invoking the set's [clear](../java.util/Set.md))method. Keys may not be added directly to the selected-key set.
 
 ## Selection
 
 A selection operation queries the underlying operating system for an update as to the readiness of each registered channel to perform any of the operations identified by its key's interest set. There are two forms of selection operation:
 
-1. The [select()](../java/nio/channels/Selector.md)), [select(long)](../java/nio/channels/Selector.md)), and [selectNow()](../java/nio/channels/Selector.md))methods add the keys of channels ready to perform an operation to the selected-key set, or update the ready-operation set of keys already in the selected-key set.
-2. The [select(java.util.function.Consumer)](../java/nio/channels/Selector.md)), [select(java.util.function.Consumer,long)](../java/nio/channels/Selector.md)), and [selectNow(java.util.function.Consumer)](../java/nio/channels/Selector.md))methods perform an*action*on the key of each channel that is ready to perform an operation. These methods do not add to the selected-key set.
+1. The [select()](Selector.md)), [select(long)](Selector.md)), and [selectNow()](Selector.md))methods add the keys of channels ready to perform an operation to the selected-key set, or update the ready-operation set of keys already in the selected-key set.
+2. The [select(java.util.function.Consumer)](Selector.md)), [select(java.util.function.Consumer,long)](Selector.md)), and [selectNow(java.util.function.Consumer)](Selector.md))methods perform an*action*on the key of each channel that is ready to perform an operation. These methods do not add to the selected-key set.
 
 ### Selection operations that add to the selected-key set
 
-During each selection operation, keys may be added to and removed from a selector's selected-key set and may be removed from its key and cancelled-key sets. Selection is performed by the [select()](../java/nio/channels/Selector.md)), [select(long)](../java/nio/channels/Selector.md)), and [selectNow()](../java/nio/channels/Selector.md))methods, and involves three steps:
+During each selection operation, keys may be added to and removed from a selector's selected-key set and may be removed from its key and cancelled-key sets. Selection is performed by the [select()](Selector.md)), [select(long)](Selector.md)), and [selectNow()](Selector.md))methods, and involves three steps:
 
 1. Each key in the cancelled-key set is removed from each key set of which it is a member, and its channel is deregistered. This step leaves the cancelled-key set empty.
 2. The underlying operating system is queried for an update as to the readiness of each remaining channel to perform any of the operations identified by its key's interest set as of the moment that the selection operation began. For a channel that is ready for at least one such operation, one of the following two actions is performed:
@@ -56,7 +56,7 @@ Whether or not a selection operation blocks to wait for one or more channels to 
 
 ### Selection operations that perform an action on selected keys
 
-During each selection operation, keys may be removed from the selector's key, selected-key, and cancelled-key sets. Selection is performed by the [select(java.util.function.Consumer)](../java/nio/channels/Selector.md)), [select(java.util.function.Consumer,long)](../java/nio/channels/Selector.md)), and [selectNow(java.util.function.Consumer)](../java/nio/channels/Selector.md))methods, and involves three steps:
+During each selection operation, keys may be removed from the selector's key, selected-key, and cancelled-key sets. Selection is performed by the [select(java.util.function.Consumer)](Selector.md)), [select(java.util.function.Consumer,long)](Selector.md)), and [selectNow(java.util.function.Consumer)](Selector.md))methods, and involves three steps:
 
 1. Each key in the cancelled-key set is removed from each key set of which it is a member, and its channel is deregistered. This step leaves the cancelled-key set empty.
 2. The underlying operating system is queried for an update as to the readiness of each remaining channel to perform any of the operations identified by its key's interest set as of the moment that the selection operation began.
@@ -78,41 +78,41 @@ Keys may be cancelled and channels may be closed at any time. Hence the presence
 
 A thread blocked in a selection operation may be interrupted by some other thread in one of three ways:
 
-- By invoking the selector's [wakeup](../java/nio/channels/Selector.md))method,
+- By invoking the selector's [wakeup](Selector.md))method,
 - By invoking the selector's #close method, or
-- By invoking the blocked thread's [interrupt](../java/lang/Thread.md))method, in which case its interrupt status will be set and the selector's [wakeup](../java/nio/channels/Selector.md))method will be invoked.
+- By invoking the blocked thread's [interrupt](../java.lang/Thread.md))method, in which case its interrupt status will be set and the selector's [wakeup](Selector.md))method will be invoked.
 
 The #close method synchronizes on the selector and its selected-key set in the same order as in a selection operation.
 
-A Selector's key set is safe for use by multiple concurrent threads. Retrieval operations from the key set do not generally block and so may overlap with new registrations that add to the set, or with the cancellation steps of selection operations that remove keys from the set. Iterators and spliterators return elements reflecting the state of the set at some point at or since the creation of the iterator/spliterator. They do not throw [ConcurrentModificationException](../java/util/ConcurrentModificationException.md).
+A Selector's key set is safe for use by multiple concurrent threads. Retrieval operations from the key set do not generally block and so may overlap with new registrations that add to the set, or with the cancellation steps of selection operations that remove keys from the set. Iterators and spliterators return elements reflecting the state of the set at some point at or since the creation of the iterator/spliterator. They do not throw [ConcurrentModificationException](../java.util/ConcurrentModificationException.md).
 
-A selector's selected-key set is not, in general, safe for use by multiple concurrent threads. If such a thread might modify the set directly then access should be controlled by synchronizing on the set itself. The iterators returned by the set's java.util.Set#iterator() methods are*fail-fast:* If the set is modified after the iterator is created, in any way except by invoking the iterator's own [remove](../java/util/Iterator.md))method, then a will be thrown.
+A selector's selected-key set is not, in general, safe for use by multiple concurrent threads. If such a thread might modify the set directly then access should be controlled by synchronizing on the set itself. The iterators returned by the set's java.util.Set#iterator() methods are*fail-fast:* If the set is modified after the iterator is created, in any way except by invoking the iterator's own [remove](../java.util/Iterator.md))method, then a will be thrown.
 
 ## Summary
 
 | Protected constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Selector](../java/nio/channels/Selector.md))`()` Initializes a new instance of this class. |
+| [Selector](Selector.md))`()` Initializes a new instance of this class. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../java/nio/channels/Selector.md))`()` Closes this selector. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isOpen](../java/nio/channels/Selector.md))`()` Tells whether or not this selector is open. |
-| abstract [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [SelectionKey](../java/nio/channels/SelectionKey.md)!\>! | [keys](../java/nio/channels/Selector.md))`()` Returns this selector's key set. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](Selector.md))`()` Closes this selector. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isOpen](Selector.md))`()` Tells whether or not this selector is open. |
+| abstract [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [SelectionKey](SelectionKey.md)!\>! | [keys](Selector.md))`()` Returns this selector's key set. |
 | --- | --- |
-| openstatic [Selector](../java/nio/channels/Selector.md)! | [open](../java/nio/channels/Selector.md))`()` Opens a selector. |
-| abstract [SelectorProvider](../java/nio/channels/spi/SelectorProvider.md)! | [provider](../java/nio/channels/Selector.md))`()` Returns the provider that created this channel. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [select](../java/nio/channels/Selector.md))`()` Selects a set of keys whose corresponding channels are ready for I/O operations. |
+| openstatic [Selector](Selector.md)! | [open](Selector.md))`()` Opens a selector. |
+| abstract [SelectorProvider](../java.nio.channels.spi/SelectorProvider.md)! | [provider](Selector.md))`()` Returns the provider that created this channel. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [select](Selector.md))`()` Selects a set of keys whose corresponding channels are ready for I/O operations. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [select](../java/nio/channels/Selector.md))`(`action:` ` [Consumer](../java/util/function/Consumer.md)< [SelectionKey](../java/nio/channels/SelectionKey.md)!>!`)` Selects and performs an action on the keys whose corresponding channels are ready for I/O operations. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [select](../java/nio/channels/Selector.md))`(`action:` ` [Consumer](../java/util/function/Consumer.md)< [SelectionKey](../java/nio/channels/SelectionKey.md)!>!`, `timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Selects and performs an action on the keys whose corresponding channels are ready for I/O operations. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [select](../java/nio/channels/Selector.md))`(`timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Selects a set of keys whose corresponding channels are ready for I/O operations. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [select](Selector.md))`(`action:` ` [Consumer](../java.util.function/Consumer.md)< [SelectionKey](SelectionKey.md)!>!`)` Selects and performs an action on the keys whose corresponding channels are ready for I/O operations. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [select](Selector.md))`(`action:` ` [Consumer](../java.util.function/Consumer.md)< [SelectionKey](SelectionKey.md)!>!`, `timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Selects and performs an action on the keys whose corresponding channels are ready for I/O operations. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [select](Selector.md))`(`timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Selects a set of keys whose corresponding channels are ready for I/O operations. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [selectNow](../java/nio/channels/Selector.md))`()` Selects a set of keys whose corresponding channels are ready for I/O operations. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [selectNow](../java/nio/channels/Selector.md))`(`action:` ` [Consumer](../java/util/function/Consumer.md)< [SelectionKey](../java/nio/channels/SelectionKey.md)!>!`)` Selects and performs an action on the keys whose corresponding channels are ready for I/O operations. |
-| abstract [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [SelectionKey](../java/nio/channels/SelectionKey.md)!\>! | [selectedKeys](../java/nio/channels/Selector.md))`()` Returns this selector's selected-key set. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [selectNow](Selector.md))`()` Selects a set of keys whose corresponding channels are ready for I/O operations. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [selectNow](Selector.md))`(`action:` ` [Consumer](../java.util.function/Consumer.md)< [SelectionKey](SelectionKey.md)!>!`)` Selects and performs an action on the keys whose corresponding channels are ready for I/O operations. |
+| abstract [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [SelectionKey](SelectionKey.md)!\>! | [selectedKeys](Selector.md))`()` Returns this selector's selected-key set. |
 | --- | --- |
-| abstract [Selector](../java/nio/channels/Selector.md)! | [wakeup](../java/nio/channels/Selector.md))`()` Causes the first selection operation that has not yet returned to return immediately. |
+| abstract [Selector](Selector.md)! | [wakeup](Selector.md))`()` Causes the first selection operation that has not yet returned to return immediately. |
 
 ## Protected constructors
 
@@ -138,13 +138,13 @@ abstract fun close(): Unit
 
 Closes this selector.
 
-If a thread is currently blocked in one of this selector's selection methods then it is interrupted as if by invoking the selector's [wakeup](../java/nio/channels/Selector.md))method.
+If a thread is currently blocked in one of this selector's selection methods then it is interrupted as if by invoking the selector's [wakeup](Selector.md))method.
 
 Any uncancelled keys still associated with this selector are invalidated, their channels are deregistered, and any other resources associated with this selector are released.
 
 If this selector is already closed then invoking this method has no effect.
 
-After a selector is closed, any further attempt to use it, except by invoking this method or the [wakeup](../java/nio/channels/Selector.md))method, will cause a [ClosedSelectorException](../java/nio/channels/ClosedSelectorException.md) to be thrown.
+After a selector is closed, any further attempt to use it, except by invoking this method or the [wakeup](Selector.md))method, will cause a [ClosedSelectorException](ClosedSelectorException.md) to be thrown.
 
 | Exceptions ||
 |-----------------------|-----------------------------------|
@@ -175,13 +175,13 @@ abstract fun keys(): MutableSet<SelectionKey!>!
 
 Returns this selector's key set.
 
-The key set is not directly modifiable. A key is removed only after it has been cancelled and its channel has been deregistered. Any attempt to modify the key set will cause an [UnsupportedOperationException](../java/lang/UnsupportedOperationException.md) to be thrown.
+The key set is not directly modifiable. A key is removed only after it has been cancelled and its channel has been deregistered. Any attempt to modify the key set will cause an [UnsupportedOperationException](../java.lang/UnsupportedOperationException.md) to be thrown.
 
-The set is [safe](../java/nio/channels/Selector.md) for use by multiple concurrent threads.
+The set is [safe](Selector.md) for use by multiple concurrent threads.
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [SelectionKey](../java/nio/channels/SelectionKey.md)!>! | This selector's key set |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [SelectionKey](SelectionKey.md)!>! | This selector's key set |
 
 | Exceptions ||
 |---------------------------------------------|----------------------------|
@@ -197,11 +197,11 @@ open static fun open(): Selector!
 
 Opens a selector.
 
-The new selector is created by invoking the [openSelector](../java/nio/channels/spi/SelectorProvider.md))method of the system-wide default object.
+The new selector is created by invoking the [openSelector](../java.nio.channels.spi/SelectorProvider.md))method of the system-wide default object.
 
 | Return ||
 |-----------------------------------------------------------------------------------------|----------------|
-| [Selector](../java/nio/channels/Selector.md)! | A new selector |
+| [Selector](Selector.md)! | A new selector |
 
 | Exceptions ||
 |-----------------------|------------------------|
@@ -219,7 +219,7 @@ Returns the provider that created this channel.
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------|----------------------------------------|
-| [SelectorProvider](../java/nio/channels/spi/SelectorProvider.md)! | The provider that created this channel |
+| [SelectorProvider](../java.nio.channels.spi/SelectorProvider.md)! | The provider that created this channel |
 
 ### select
 
@@ -231,7 +231,7 @@ abstract fun select(): Int
 
 Selects a set of keys whose corresponding channels are ready for I/O operations.
 
-This method performs a blocking [selection operation](../java/nio/channels/Selector.md). It returns only after at least one channel is selected, this selector's [wakeup](../java/nio/channels/Selector.md))method is invoked, or the current thread is interrupted, whichever comes first.
+This method performs a blocking [selection operation](Selector.md). It returns only after at least one channel is selected, this selector's [wakeup](Selector.md))method is invoked, or the current thread is interrupted, whichever comes first.
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------|
@@ -252,13 +252,13 @@ open fun select(action: Consumer<SelectionKey!>!): Int
 
 Selects and performs an action on the keys whose corresponding channels are ready for I/O operations.
 
-This method performs a blocking [selection operation](../java/nio/channels/Selector.md). It wakes up from querying the operating system only when at least one channel is selected, this selector's [wakeup](../java/nio/channels/Selector.md))method is invoked, or the current thread is interrupted, whichever comes first.
+This method performs a blocking [selection operation](Selector.md). It wakes up from querying the operating system only when at least one channel is selected, this selector's [wakeup](Selector.md))method is invoked, or the current thread is interrupted, whichever comes first.
 
-This method is equivalent to invoking the 2-arg [select](../java/nio/channels/Selector.md))method with a timeout of`0`to block indefinitely.
+This method is equivalent to invoking the 2-arg [select](Selector.md))method with a timeout of`0`to block indefinitely.
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `action` | [Consumer](../java/util/function/Consumer.md)\< [SelectionKey](../java/nio/channels/SelectionKey.md)!\>!:The action to perform |
+| `action` | [Consumer](../java.util.function/Consumer.md)\< [SelectionKey](SelectionKey.md)!\>!:The action to perform |
 
 | Return ||
 |----------------------------------------------------------------------------|---------------------------------------------------|
@@ -282,15 +282,15 @@ open fun select(
 
 Selects and performs an action on the keys whose corresponding channels are ready for I/O operations.
 
-This method performs a blocking [selection operation](../java/nio/channels/Selector.md). It wakes up from querying the operating system only when at least one channel is selected, this selector's [wakeup](../java/nio/channels/Selector.md))method is invoked, the current thread is interrupted, or the given timeout period expires, whichever comes first.
+This method performs a blocking [selection operation](Selector.md). It wakes up from querying the operating system only when at least one channel is selected, this selector's [wakeup](Selector.md))method is invoked, the current thread is interrupted, or the given timeout period expires, whichever comes first.
 
-The specified*action* 's [accept](../java/util/function/Consumer.md))method is invoked with the key for each channel that is ready to perform an operation identified by its key's interest set. The`accept`method may be invoked more than once for the same key but with the ready-operation set containing a subset of the operations for which the channel is ready (as described above). The`accept`method is invoked while synchronized on the selector and its selected-key set. Great care must be taken to avoid deadlocking with other threads that also synchronize on these objects. Selection operations are not reentrant in general and consequently the*action* should take great care not to attempt a selection operation on the same selector. The behavior when attempting a reentrant selection operation is implementation specific and therefore not specified. If the*action* closes the selector then`ClosedSelectorException`is thrown when the action completes. The*action* is not prohibited from closing channels registered with the selector, nor prohibited from cancelling keys or changing a key's interest set. If a channel is selected but its key is cancelled or its interest set changed before the*action* is performed on the key then it is implementation specific as to whether the*action* is invoked (it may be invoked with an [invalid](../java/nio/channels/SelectionKey.md))key). Exceptions thrown by the action are relayed to the caller.
+The specified*action* 's [accept](../java.util.function/Consumer.md))method is invoked with the key for each channel that is ready to perform an operation identified by its key's interest set. The`accept`method may be invoked more than once for the same key but with the ready-operation set containing a subset of the operations for which the channel is ready (as described above). The`accept`method is invoked while synchronized on the selector and its selected-key set. Great care must be taken to avoid deadlocking with other threads that also synchronize on these objects. Selection operations are not reentrant in general and consequently the*action* should take great care not to attempt a selection operation on the same selector. The behavior when attempting a reentrant selection operation is implementation specific and therefore not specified. If the*action* closes the selector then`ClosedSelectorException`is thrown when the action completes. The*action* is not prohibited from closing channels registered with the selector, nor prohibited from cancelling keys or changing a key's interest set. If a channel is selected but its key is cancelled or its interest set changed before the*action* is performed on the key then it is implementation specific as to whether the*action* is invoked (it may be invoked with an [invalid](SelectionKey.md))key). Exceptions thrown by the action are relayed to the caller.
 
-This method does not offer real-time guarantees: It schedules the timeout as if by invoking the [Object.wait(long)](../java/lang/Object.md))method.
+This method does not offer real-time guarantees: It schedules the timeout as if by invoking the [Object.wait(long)](../java.lang/Object.md))method.
 
 | Parameters ||
 |-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `action` | [Consumer](../java/util/function/Consumer.md)\< [SelectionKey](../java/nio/channels/SelectionKey.md)!\>!:The action to perform |
+| `action` | [Consumer](../java.util.function/Consumer.md)\< [SelectionKey](SelectionKey.md)!\>!:The action to perform |
 | `timeout` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):If positive, block for up to`timeout`milliseconds, more or less, while waiting for a channel to become ready; if zero, block indefinitely; must not be negative |
 
 | Return ||
@@ -314,9 +314,9 @@ abstract fun select(timeout: Long): Int
 
 Selects a set of keys whose corresponding channels are ready for I/O operations.
 
-This method performs a blocking [selection operation](../java/nio/channels/Selector.md). It returns only after at least one channel is selected, this selector's [wakeup](../java/nio/channels/Selector.md))method is invoked, the current thread is interrupted, or the given timeout period expires, whichever comes first.
+This method performs a blocking [selection operation](Selector.md). It returns only after at least one channel is selected, this selector's [wakeup](Selector.md))method is invoked, the current thread is interrupted, or the given timeout period expires, whichever comes first.
 
-This method does not offer real-time guarantees: It schedules the timeout as if by invoking the [Object.wait(long)](../java/lang/Object.md))method.
+This method does not offer real-time guarantees: It schedules the timeout as if by invoking the [Object.wait(long)](../java.lang/Object.md))method.
 
 | Parameters ||
 |-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -343,9 +343,9 @@ abstract fun selectNow(): Int
 
 Selects a set of keys whose corresponding channels are ready for I/O operations.
 
-This method performs a non-blocking [selection operation](../java/nio/channels/Selector.md). If no channels have become selectable since the previous selection operation then this method immediately returns zero.
+This method performs a non-blocking [selection operation](Selector.md). If no channels have become selectable since the previous selection operation then this method immediately returns zero.
 
-Invoking this method clears the effect of any previous invocations of the [wakeup](../java/nio/channels/Selector.md))method.
+Invoking this method clears the effect of any previous invocations of the [wakeup](Selector.md))method.
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
@@ -366,13 +366,13 @@ open fun selectNow(action: Consumer<SelectionKey!>!): Int
 
 Selects and performs an action on the keys whose corresponding channels are ready for I/O operations.
 
-This method performs a non-blocking [selection operation](../java/nio/channels/Selector.md).
+This method performs a non-blocking [selection operation](Selector.md).
 
-Invoking this method clears the effect of any previous invocations of the [wakeup](../java/nio/channels/Selector.md))method.
+Invoking this method clears the effect of any previous invocations of the [wakeup](Selector.md))method.
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `action` | [Consumer](../java/util/function/Consumer.md)\< [SelectionKey](../java/nio/channels/SelectionKey.md)!\>!:The action to perform |
+| `action` | [Consumer](../java.util.function/Consumer.md)\< [SelectionKey](SelectionKey.md)!\>!:The action to perform |
 
 | Return ||
 |----------------------------------------------------------------------------|---------------------------------------------------|
@@ -393,13 +393,13 @@ abstract fun selectedKeys(): MutableSet<SelectionKey!>!
 
 Returns this selector's selected-key set.
 
-Keys may be removed from, but not directly added to, the selected-key set. Any attempt to add an object to the key set will cause an [UnsupportedOperationException](../java/lang/UnsupportedOperationException.md) to be thrown.
+Keys may be removed from, but not directly added to, the selected-key set. Any attempt to add an object to the key set will cause an [UnsupportedOperationException](../java.lang/UnsupportedOperationException.md) to be thrown.
 
-The selected-key set is [not thread-safe](../java/nio/channels/Selector.md).
+The selected-key set is [not thread-safe](Selector.md).
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------|
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [SelectionKey](../java/nio/channels/SelectionKey.md)!>! | This selector's selected-key set |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [SelectionKey](SelectionKey.md)!>! | This selector's selected-key set |
 
 | Exceptions ||
 |---------------------------------------------|----------------------------|
@@ -415,10 +415,10 @@ abstract fun wakeup(): Selector!
 
 Causes the first selection operation that has not yet returned to return immediately.
 
-If another thread is currently blocked in a selection operation then that invocation will return immediately. If no selection operation is currently in progress then the next invocation of a selection operation will return immediately unless [selectNow()](../java/nio/channels/Selector.md))or [selectNow(java.util.function.Consumer)](../java/nio/channels/Selector.md))is invoked in the meantime. In any case the value returned by that invocation may be non-zero. Subsequent selection operations will block as usual unless this method is invoked again in the meantime.
+If another thread is currently blocked in a selection operation then that invocation will return immediately. If no selection operation is currently in progress then the next invocation of a selection operation will return immediately unless [selectNow()](Selector.md))or [selectNow(java.util.function.Consumer)](Selector.md))is invoked in the meantime. In any case the value returned by that invocation may be non-zero. Subsequent selection operations will block as usual unless this method is invoked again in the meantime.
 
 Invoking this method more than once between two successive selection operations has the same effect as invoking it just once.
 
 | Return ||
 |-----------------------------------------------------------------------------------------|---------------|
-| [Selector](../java/nio/channels/Selector.md)! | This selector |
+| [Selector](Selector.md)! | This selector |

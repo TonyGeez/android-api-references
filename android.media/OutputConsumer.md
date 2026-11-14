@@ -13,7 +13,7 @@ interface OutputConsumer
 
 | [android.media.MediaParser.OutputConsumer](../android/media/MediaParser.OutputConsumer.md) |
 
-Receives extracted media sample data and metadata from [MediaParser](../android/media/MediaParser.md).
+Receives extracted media sample data and metadata from [MediaParser](MediaParser.md).
 
 ## Summary
 
@@ -51,7 +51,7 @@ Includes sample metadata, like presentation timestamp and flags.
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `trackIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The index of the track to which the sample corresponds. |
 | `timeMicros` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The media timestamp associated with the sample, in microseconds. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Flags associated with the sample. See the`SAMPLE_FLAG_*`constants. Value is either`0`or a combination of [android.media.MediaParser#SAMPLE_FLAG_KEY_FRAME](../android/media/MediaParser.md), [android.media.MediaParser#SAMPLE_FLAG_HAS_SUPPLEMENTAL_DATA](../android/media/MediaParser.md), [android.media.MediaParser#SAMPLE_FLAG_LAST_SAMPLE](../android/media/MediaParser.md), [android.media.MediaParser#SAMPLE_FLAG_ENCRYPTED](../android/media/MediaParser.md), and [android.media.MediaParser#SAMPLE_FLAG_DECODE_ONLY](../android/media/MediaParser.md) |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Flags associated with the sample. See the`SAMPLE_FLAG_*`constants. Value is either`0`or a combination of [android.media.MediaParser#SAMPLE_FLAG_KEY_FRAME](MediaParser.md), [android.media.MediaParser#SAMPLE_FLAG_HAS_SUPPLEMENTAL_DATA](MediaParser.md), [android.media.MediaParser#SAMPLE_FLAG_LAST_SAMPLE](MediaParser.md), [android.media.MediaParser#SAMPLE_FLAG_ENCRYPTED](MediaParser.md), and [android.media.MediaParser#SAMPLE_FLAG_DECODE_ONLY](MediaParser.md) |
 | --- | --- |
 | `size` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The size of the sample data, in bytes. |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The number of bytes that have been consumed by`onSampleDataFound(int, MediaParser.InputReader)`for the specified track, since the last byte belonging to the sample whose metadata is being passed. |
@@ -71,7 +71,7 @@ abstract fun onSampleDataFound(
 
 Called when sample data is found in the stream.
 
-If the invocation of this method returns before the entire`inputReader` [length](../android/media/MediaParser.InputReader.md))is consumed, the method will be called again for the implementer to read the remaining data. Implementers should surface any thrown [IOException](../java/io/IOException.md) caused by reading from`input`.
+If the invocation of this method returns before the entire`inputReader` [length](../android/media/MediaParser.InputReader.md))is consumed, the method will be called again for the implementer to read the remaining data. Implementers should surface any thrown [IOException](../java.io/IOException.md) caused by reading from`input`.
 
 | Parameters ||
 |---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

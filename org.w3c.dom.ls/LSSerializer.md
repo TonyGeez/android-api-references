@@ -8,7 +8,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 interface LSSerializer
 ```
 
-| [org.w3c.dom.ls.LSSerializer](../org/w3c/dom/ls/LSSerializer.md) |
+| [org.w3c.dom.ls.LSSerializer](LSSerializer.md) |
 
 A`LSSerializer`provides an API for serializing (writing) a DOM document out into XML. The XML data is written to a string or an output stream. Any changes or fixups made during the serialization affect only the serialized data. The`Document`object and its children are never altered by the serialization operation.
 
@@ -60,13 +60,13 @@ See also the [Document Object Model (DOM) Level 3 Load and Save Specification](h
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [DOMConfiguration](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-d-o-m-configuration/index.html)! | [getDomConfig](../org/w3c/dom/ls/LSSerializer.md))`()` The`DOMConfiguration`object used by the`LSSerializer`when serializing a DOM node. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getNewLine](../org/w3c/dom/ls/LSSerializer.md))`()` The end-of-line sequence of characters to be used in the XML being written out. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setNewLine](../org/w3c/dom/ls/LSSerializer.md))`(`newLine:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` The end-of-line sequence of characters to be used in the XML being written out. |
+| abstract [DOMConfiguration](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-d-o-m-configuration/index.html)! | [getDomConfig](LSSerializer.md))`()` The`DOMConfiguration`object used by the`LSSerializer`when serializing a DOM node. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getNewLine](LSSerializer.md))`()` The end-of-line sequence of characters to be used in the XML being written out. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setNewLine](LSSerializer.md))`(`newLine:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` The end-of-line sequence of characters to be used in the XML being written out. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [write](../org/w3c/dom/ls/LSSerializer.md))`(`nodeArg:` ` [Node](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-node/index.html)!`, `destination:` ` [LSOutput](../org/w3c/dom/ls/LSOutput.md)!`)` Serialize the specified node as described above in the general description of the`LSSerializer`interface. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [writeToString](../org/w3c/dom/ls/LSSerializer.md))`(`nodeArg:` ` [Node](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-node/index.html)!`)` Serialize the specified node as described above in the general description of the`LSSerializer`interface. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [writeToURI](../org/w3c/dom/ls/LSSerializer.md))`(`nodeArg:` ` [Node](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-node/index.html)!`, `uri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` A convenience method that acts as if`LSSerializer.write`was called with a`LSOutput`with no encoding specified and`LSOutput.systemId`set to the`uri`argument. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [write](LSSerializer.md))`(`nodeArg:` ` [Node](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-node/index.html)!`, `destination:` ` [LSOutput](LSOutput.md)!`)` Serialize the specified node as described above in the general description of the`LSSerializer`interface. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [writeToString](LSSerializer.md))`(`nodeArg:` ` [Node](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-node/index.html)!`)` Serialize the specified node as described above in the general description of the`LSSerializer`interface. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [writeToURI](LSSerializer.md))`(`nodeArg:` ` [Node](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-node/index.html)!`, `uri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` A convenience method that acts as if`LSSerializer.write`was called with a`LSOutput`with no encoding specified and`LSOutput.systemId`set to the`uri`argument. |
 | --- | --- |
 
 ## Public methods
@@ -184,7 +184,7 @@ When writing to a HTTP URI, a HTTP PUT is performed. When writing to other types
 | Parameters ||
 |---------------|-----------------------------------------------------------------------------------------------------------------------------|
 | `nodeArg` | [Node](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-node/index.html)!:The node to serialize. |
-| `destination` | [LSOutput](../org/w3c/dom/ls/LSOutput.md)!:The destination for the serialized DOM. |
+| `destination` | [LSOutput](LSOutput.md)!:The destination for the serialized DOM. |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

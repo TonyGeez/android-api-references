@@ -13,10 +13,10 @@ interface ECharacterCategory
 
 | [android.icu.lang.UCharacterEnums.ECharacterCategory](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) |
 
-| Known Direct Subclasses [UCharacter](../android/icu/lang/UCharacter.md), [UCharacterCategory](../android/icu/lang/UCharacterCategory.md) |----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------| | [UCharacter](../android/icu/lang/UCharacter.md) | **\[icu enhancement\]** ICU's replacement for [java.lang.Character](../java/lang/Character.md). | | [UCharacterCategory](../android/icu/lang/UCharacterCategory.md) | Enumerated Unicode category types from the UnicodeData. | |
+| Known Direct Subclasses [UCharacter](UCharacter.md), [UCharacterCategory](UCharacterCategory.md) |----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------| | [UCharacter](UCharacter.md) | **\[icu enhancement\]** ICU's replacement for [java.lang.Character](../java.lang/Character.md). | | [UCharacterCategory](UCharacterCategory.md) | Enumerated Unicode category types from the UnicodeData. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-'Enum' for the CharacterCategory constants. These constants are compatible in name**but not in value** with those defined in [java.lang.Character](../java/lang/Character.md).
+'Enum' for the CharacterCategory constants. These constants are compatible in name**but not in value** with those defined in [java.lang.Character](../java.lang/Character.md).
 
 ## Summary
 

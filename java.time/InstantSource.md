@@ -8,14 +8,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 interface InstantSource
 ```
 
-| [java.time.InstantSource](../java/time/InstantSource.md) |
+| [java.time.InstantSource](InstantSource.md) |
 
-| Known Direct Subclasses [Clock](../java/time/Clock.md) |-------------------------------------------------------------------------|-----------------------------------------------------------------------------------| | [Clock](../java/time/Clock.md) | A clock providing access to the current instant, date and time using a time-zone. | |
+| Known Direct Subclasses [Clock](Clock.md) |-------------------------------------------------------------------------|-----------------------------------------------------------------------------------| | [Clock](Clock.md) | A clock providing access to the current instant, date and time using a time-zone. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 Provides access to the current instant.
 
-Instances of this interface are used to access a pluggable representation of the current instant. For example,`InstantSource`can be used instead of [System.currentTimeMillis()](../java/lang/System.md)).
+Instances of this interface are used to access a pluggable representation of the current instant. For example,`InstantSource`can be used instead of [System.currentTimeMillis()](../java.lang/System.md)).
 
 The primary purpose of this abstraction is to allow alternate instant sources to be plugged in as and when required. Applications use an object to obtain the current time rather than a static method. This can simplify testing.
 
@@ -35,23 +35,23 @@ public class MyBean {
    }
   
 ```
-This approach allows an alternative source, such as [fixed](../java/time/InstantSource.md))or [offset](../java/time/InstantSource.md))to be used during testing.
+This approach allows an alternative source, such as [fixed](InstantSource.md))or [offset](InstantSource.md))to be used during testing.
 
-The`system`factory method provides a source based on the best available system clock. This may use [System.currentTimeMillis()](../java/lang/System.md)), or a higher resolution clock if one is available.
+The`system`factory method provides a source based on the best available system clock. This may use [System.currentTimeMillis()](../java.lang/System.md)), or a higher resolution clock if one is available.
 
 ## Summary
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [InstantSource](../java/time/InstantSource.md)! | [fixed](../java/time/InstantSource.md))`(`fixedInstant:` ` [Instant](../java/time/Instant.md)!`)` Obtains a source that always returns the same instant. |
-| abstract [Instant](../java/time/Instant.md)! | [instant](../java/time/InstantSource.md))`()` Gets the current instant of the source. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [millis](../java/time/InstantSource.md))`()` Gets the current millisecond instant of the source. |
+| openstatic [InstantSource](InstantSource.md)! | [fixed](InstantSource.md))`(`fixedInstant:` ` [Instant](Instant.md)!`)` Obtains a source that always returns the same instant. |
+| abstract [Instant](Instant.md)! | [instant](InstantSource.md))`()` Gets the current instant of the source. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [millis](InstantSource.md))`()` Gets the current millisecond instant of the source. |
 | --- | --- |
-| openstatic [InstantSource](../java/time/InstantSource.md)! | [offset](../java/time/InstantSource.md))`(`baseSource:` ` [InstantSource](../java/time/InstantSource.md)!`, `offsetDuration:` ` [Duration](../java/time/Duration.md)!`)` Obtains a source that returns instants from the specified source with the specified duration added. |
-| openstatic [InstantSource](../java/time/InstantSource.md)! | [system](../java/time/InstantSource.md))`()` Obtains a source that returns the current instant using the best available system clock. |
-| openstatic [InstantSource](../java/time/InstantSource.md)! | [tick](../java/time/InstantSource.md))`(`baseSource:` ` [InstantSource](../java/time/InstantSource.md)!`, `tickDuration:` ` [Duration](../java/time/Duration.md)!`)` Obtains a source that returns instants from the specified source truncated to the nearest occurrence of the specified duration. |
+| openstatic [InstantSource](InstantSource.md)! | [offset](InstantSource.md))`(`baseSource:` ` [InstantSource](InstantSource.md)!`, `offsetDuration:` ` [Duration](Duration.md)!`)` Obtains a source that returns instants from the specified source with the specified duration added. |
+| openstatic [InstantSource](InstantSource.md)! | [system](InstantSource.md))`()` Obtains a source that returns the current instant using the best available system clock. |
+| openstatic [InstantSource](InstantSource.md)! | [tick](InstantSource.md))`(`baseSource:` ` [InstantSource](InstantSource.md)!`, `tickDuration:` ` [Duration](Duration.md)!`)` Obtains a source that returns instants from the specified source truncated to the nearest occurrence of the specified duration. |
 | --- | --- |
-| open [Clock](../java/time/Clock.md)! | [withZone](../java/time/InstantSource.md))`(`zone:` ` [ZoneId](../java/time/ZoneId.md)!`)` Returns a clock with the specified time-zone. |
+| open [Clock](Clock.md)! | [withZone](InstantSource.md))`(`zone:` ` [ZoneId](ZoneId.md)!`)` Returns a clock with the specified time-zone. |
 
 ## Public methods
 
@@ -71,11 +71,11 @@ The returned implementation is immutable, thread-safe and`Serializable`.
 
 | Parameters ||
 |----------------|-----------------------------------------------------------------------------------------------------------|
-| `fixedInstant` | [Instant](../java/time/Instant.md)!:the instant to use, not null |
+| `fixedInstant` | [Instant](Instant.md)!:the instant to use, not null |
 
 | Return ||
 |-------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| [InstantSource](../java/time/InstantSource.md)! | a source that always returns the same instant, not null |
+| [InstantSource](InstantSource.md)! | a source that always returns the same instant, not null |
 
 ### instant
 
@@ -91,7 +91,7 @@ This returns an instant representing the current instant as defined by the sourc
 
 | Return ||
 |------------------------------------------------------------------------------|------------------------------------------------|
-| [Instant](../java/time/Instant.md)! | the current instant from this source, not null |
+| [Instant](Instant.md)! | the current instant from this source, not null |
 
 | Exceptions ||
 |-------------------------------|-----------------------------------------------------------------------|
@@ -107,9 +107,9 @@ open fun millis(): Long
 
 Gets the current millisecond instant of the source.
 
-This returns the millisecond-based instant, measured from 1970-01-01T00:00Z (UTC). This is equivalent to the definition of [System.currentTimeMillis()](../java/lang/System.md)).
+This returns the millisecond-based instant, measured from 1970-01-01T00:00Z (UTC). This is equivalent to the definition of [System.currentTimeMillis()](../java.lang/System.md)).
 
-Most applications should avoid this method and use [Instant](../java/time/Instant.md) to represent an instant on the time-line rather than a raw millisecond value. This method is provided to allow the use of the source in high performance use cases where the creation of an object would be unacceptable.
+Most applications should avoid this method and use [Instant](Instant.md) to represent an instant on the time-line rather than a raw millisecond value. This method is provided to allow the use of the source in high performance use cases where the creation of an object would be unacceptable.
 
 | Return ||
 |------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
@@ -140,12 +140,12 @@ The returned implementation is immutable, thread-safe and`Serializable`providing
 
 | Parameters ||
 |------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| `baseSource` | [InstantSource](../java/time/InstantSource.md)!:the base source to add the duration to, not null |
-| `offsetDuration` | [Duration](../java/time/Duration.md)!:the duration to add, not null |
+| `baseSource` | [InstantSource](InstantSource.md)!:the base source to add the duration to, not null |
+| `offsetDuration` | [Duration](Duration.md)!:the duration to add, not null |
 
 | Return ||
 |-------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
-| [InstantSource](../java/time/InstantSource.md)! | a source based on the base source with the duration added, not null |
+| [InstantSource](InstantSource.md)! | a source based on the base source with the duration added, not null |
 
 ### system
 
@@ -157,13 +157,13 @@ open static fun system(): InstantSource!
 
 Obtains a source that returns the current instant using the best available system clock.
 
-This source is based on the best available system clock. This may use [System.currentTimeMillis()](../java/lang/System.md)), or a higher resolution system clock if one is available.
+This source is based on the best available system clock. This may use [System.currentTimeMillis()](../java.lang/System.md)), or a higher resolution system clock if one is available.
 
 The returned implementation is immutable, thread-safe and`Serializable`.
 
 | Return ||
 |-------------------------------------------------------------------------------------------|--------------------------------------------------------------|
-| [InstantSource](../java/time/InstantSource.md)! | a source that uses the best available system clock, not null |
+| [InstantSource](InstantSource.md)! | a source that uses the best available system clock, not null |
 
 ### tick
 
@@ -190,12 +190,12 @@ The returned implementation is immutable, thread-safe and`Serializable`providing
 
 | Parameters ||
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| `baseSource` | [InstantSource](../java/time/InstantSource.md)!:the base source to base the ticking source on, not null |
-| `tickDuration` | [Duration](../java/time/Duration.md)!:the duration of each visible tick, not negative, not null |
+| `baseSource` | [InstantSource](InstantSource.md)!:the base source to base the ticking source on, not null |
+| `tickDuration` | [Duration](Duration.md)!:the duration of each visible tick, not negative, not null |
 
 | Return ||
 |-------------------------------------------------------------------------------------------|--------------------------------------------------------------|
-| [InstantSource](../java/time/InstantSource.md)! | a source that ticks in whole units of the duration, not null |
+| [InstantSource](InstantSource.md)! | a source that ticks in whole units of the duration, not null |
 
 | Exceptions ||
 |--------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
@@ -212,14 +212,14 @@ open fun withZone(zone: ZoneId!): Clock!
 
 Returns a clock with the specified time-zone.
 
-This returns a [Clock](../java/time/Clock.md), which is an extension of this interface that combines this source and the specified time-zone.
+This returns a [Clock](Clock.md), which is an extension of this interface that combines this source and the specified time-zone.
 
 The returned implementation is immutable, thread-safe and`Serializable`providing that this source is.
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------------|
-| `zone` | [ZoneId](../java/time/ZoneId.md)!:the time-zone to use, not null |
+| `zone` | [ZoneId](ZoneId.md)!:the time-zone to use, not null |
 
 | Return ||
 |--------------------------------------------------------------------------|---------------------------------------------------------------------|
-| [Clock](../java/time/Clock.md)! | a clock based on this source with the specified time-zone, not null |
+| [Clock](Clock.md)! | a clock based on this source with the specified time-zone, not null |

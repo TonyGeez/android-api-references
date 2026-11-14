@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # CursorJoiner
 
-Kotlin| [Java](../android/database/CursorJoiner.md) 
+Kotlin| [Java](CursorJoiner.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class CursorJoiner : MutableIterable<CursorJoiner.Result!>, MutableIterator<Cu
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.database.CursorJoiner](../android/database/CursorJoiner.md) |
+| ↳ | [android.database.CursorJoiner](CursorJoiner.md) |
 
 Does a join on two cursors using the specified columns. The cursors must already be sorted on each of the specified columns in ascending order. This joiner only supports the case where the tuple of key column values is unique.
 
@@ -45,15 +45,15 @@ CursorJoiner joiner = new CursorJoiner(cursorA, keyColumnsofA, cursorB, keyColum
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [CursorJoiner](../android/database/CursorJoiner.md))`(`cursorLeft:` ` [Cursor](../android/database/Cursor.md)!`, `columnNamesLeft:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `cursorRight:` ` [Cursor](../android/database/Cursor.md)!`, `columnNamesRight:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Initializes the CursorJoiner and resets the cursors to the first row. |
+| [CursorJoiner](CursorJoiner.md))`(`cursorLeft:` ` [Cursor](Cursor.md)!`, `columnNamesLeft:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `cursorRight:` ` [Cursor](Cursor.md)!`, `columnNamesRight:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Initializes the CursorJoiner and resets the cursors to the first row. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasNext](../android/database/CursorJoiner.md))`()` Returns whether or not there are more rows to compare using next(). |
-| [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\< [CursorJoiner.Result](../android/database/CursorJoiner.Result.md)!\> | [iterator](../android/database/CursorJoiner.md))`()` <br /> |
-| [CursorJoiner.Result](../android/database/CursorJoiner.Result.md)! | [next](../android/database/CursorJoiner.md))`()` Returns the comparison result of the next row from each cursor. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasNext](CursorJoiner.md))`()` Returns whether or not there are more rows to compare using next(). |
+| [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\< [CursorJoiner.Result](../android/database/CursorJoiner.Result.md)!\> | [iterator](CursorJoiner.md))`()` <br /> |
+| [CursorJoiner.Result](../android/database/CursorJoiner.Result.md)! | [next](CursorJoiner.md))`()` Returns the comparison result of the next row from each cursor. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [remove](../android/database/CursorJoiner.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [remove](CursorJoiner.md))`()` <br /> |
 
 ## Public constructors
 
@@ -73,9 +73,9 @@ Initializes the CursorJoiner and resets the cursors to the first row. The left a
 
 | Parameters ||
 |--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `cursorLeft` | [Cursor](../android/database/Cursor.md)!:The left cursor to compare |
+| `cursorLeft` | [Cursor](Cursor.md)!:The left cursor to compare |
 | `columnNamesLeft` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!:The column names to compare from the left cursor |
-| `cursorRight` | [Cursor](../android/database/Cursor.md)!:The right cursor to compare |
+| `cursorRight` | [Cursor](Cursor.md)!:The right cursor to compare |
 | --- | --- |
 | `columnNamesRight` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!:The column names to compare from the right cursor |
 

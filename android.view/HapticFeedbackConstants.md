@@ -4,7 +4,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 
 # HapticFeedbackConstants
 
-Kotlin| [Java](../android/view/HapticFeedbackConstants.md) 
+Kotlin| [Java](HapticFeedbackConstants.md) 
 | --- | --- |
 
 ```
@@ -13,44 +13,44 @@ open class HapticFeedbackConstants
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.HapticFeedbackConstants](../android/view/HapticFeedbackConstants.md) |
+| ↳ | [android.view.HapticFeedbackConstants](HapticFeedbackConstants.md) |
 
-Constants to be used to perform haptic feedback effects via [View.performHapticFeedback(int)](../android/view/View.md))
+Constants to be used to perform haptic feedback effects via [View.performHapticFeedback(int)](View.md))
 
 ## Summary
 
 | Constants ||
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CLOCK_TICK](../android/view/HapticFeedbackConstants.md) The user has pressed either an hour or minute tick of a Clock. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONFIRM](../android/view/HapticFeedbackConstants.md) A haptic effect to signal the confirmation or successful completion of a user interaction. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTEXT_CLICK](../android/view/HapticFeedbackConstants.md) The user has performed a context click on an object. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CLOCK_TICK](HapticFeedbackConstants.md) The user has pressed either an hour or minute tick of a Clock. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONFIRM](HapticFeedbackConstants.md) A haptic effect to signal the confirmation or successful completion of a user interaction. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTEXT_CLICK](HapticFeedbackConstants.md) The user has performed a context click on an object. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DRAG_START](../android/view/HapticFeedbackConstants.md) The user has started a drag-and-drop gesture. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_IGNORE_GLOBAL_SETTING](../android/view/HapticFeedbackConstants.md) Flag for [View.performHapticFeedback(int, int)](../android/view/View.md)): Ignore the global setting for whether to perform haptic feedback, do it always. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_IGNORE_VIEW_SETTING](../android/view/HapticFeedbackConstants.md) Flag for [View.performHapticFeedback(int, int)](../android/view/View.md)): Ignore the setting in the view for whether to perform haptic feedback, do it always. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DRAG_START](HapticFeedbackConstants.md) The user has started a drag-and-drop gesture. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_IGNORE_GLOBAL_SETTING](HapticFeedbackConstants.md) Flag for [View.performHapticFeedback(int, int)](View.md)): Ignore the global setting for whether to perform haptic feedback, do it always. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_IGNORE_VIEW_SETTING](HapticFeedbackConstants.md) Flag for [View.performHapticFeedback(int, int)](View.md)): Ignore the setting in the view for whether to perform haptic feedback, do it always. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GESTURE_END](../android/view/HapticFeedbackConstants.md) The user has finished a gesture (e.g. on the soft keyboard). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GESTURE_START](../android/view/HapticFeedbackConstants.md) The user has started a gesture (e.g. on the soft keyboard). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GESTURE_THRESHOLD_ACTIVATE](../android/view/HapticFeedbackConstants.md) The user is executing a swipe/drag-style gesture, such as pull-to-refresh, where the gesture action is "eligible" at a certain threshold of movement, and can be cancelled by moving back past the threshold. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GESTURE_END](HapticFeedbackConstants.md) The user has finished a gesture (e.g. on the soft keyboard). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GESTURE_START](HapticFeedbackConstants.md) The user has started a gesture (e.g. on the soft keyboard). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GESTURE_THRESHOLD_ACTIVATE](HapticFeedbackConstants.md) The user is executing a swipe/drag-style gesture, such as pull-to-refresh, where the gesture action is "eligible" at a certain threshold of movement, and can be cancelled by moving back past the threshold. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GESTURE_THRESHOLD_DEACTIVATE](../android/view/HapticFeedbackConstants.md) The user is executing a swipe/drag-style gesture, such as pull-to-refresh, where the gesture action is "eligible" at a certain threshold of movement, and can be cancelled by moving back past the threshold. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [KEYBOARD_PRESS](../android/view/HapticFeedbackConstants.md) The user has pressed a virtual or software keyboard key. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [KEYBOARD_RELEASE](../android/view/HapticFeedbackConstants.md) The user has released a virtual keyboard key. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GESTURE_THRESHOLD_DEACTIVATE](HapticFeedbackConstants.md) The user is executing a swipe/drag-style gesture, such as pull-to-refresh, where the gesture action is "eligible" at a certain threshold of movement, and can be cancelled by moving back past the threshold. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [KEYBOARD_PRESS](HapticFeedbackConstants.md) The user has pressed a virtual or software keyboard key. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [KEYBOARD_RELEASE](HapticFeedbackConstants.md) The user has released a virtual keyboard key. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [KEYBOARD_TAP](../android/view/HapticFeedbackConstants.md) The user has pressed a soft keyboard key. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LONG_PRESS](../android/view/HapticFeedbackConstants.md) The user has performed a long press on an object that is resulting in an action being performed. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NO_HAPTICS](../android/view/HapticFeedbackConstants.md) No haptic feedback should be performed. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [KEYBOARD_TAP](HapticFeedbackConstants.md) The user has pressed a soft keyboard key. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LONG_PRESS](HapticFeedbackConstants.md) The user has performed a long press on an object that is resulting in an action being performed. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NO_HAPTICS](HapticFeedbackConstants.md) No haptic feedback should be performed. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REJECT](../android/view/HapticFeedbackConstants.md) A haptic effect to signal the rejection or failure of a user interaction. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SEGMENT_FREQUENT_TICK](../android/view/HapticFeedbackConstants.md) The user is switching between a series of many potential choices, for example minutes on a clock face, or individual percentages. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SEGMENT_TICK](../android/view/HapticFeedbackConstants.md) The user is switching between a series of potential choices, for example items in a list or discrete points on a slider. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REJECT](HapticFeedbackConstants.md) A haptic effect to signal the rejection or failure of a user interaction. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SEGMENT_FREQUENT_TICK](HapticFeedbackConstants.md) The user is switching between a series of many potential choices, for example minutes on a clock face, or individual percentages. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SEGMENT_TICK](HapticFeedbackConstants.md) The user is switching between a series of potential choices, for example items in a list or discrete points on a slider. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TEXT_HANDLE_MOVE](../android/view/HapticFeedbackConstants.md) The user has performed a selection/insertion handle move on text field. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TOGGLE_OFF](../android/view/HapticFeedbackConstants.md) The user has toggled a switch or button into the off position. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TOGGLE_ON](../android/view/HapticFeedbackConstants.md) The user has toggled a switch or button into the on position. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TEXT_HANDLE_MOVE](HapticFeedbackConstants.md) The user has performed a selection/insertion handle move on text field. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TOGGLE_OFF](HapticFeedbackConstants.md) The user has toggled a switch or button into the off position. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TOGGLE_ON](HapticFeedbackConstants.md) The user has toggled a switch or button into the on position. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VIRTUAL_KEY](../android/view/HapticFeedbackConstants.md) The user has pressed on a virtual on-screen key. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VIRTUAL_KEY_RELEASE](../android/view/HapticFeedbackConstants.md) The user has released a virtual key. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VIRTUAL_KEY](HapticFeedbackConstants.md) The user has pressed on a virtual on-screen key. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VIRTUAL_KEY_RELEASE](HapticFeedbackConstants.md) The user has released a virtual key. |
 
 ## Constants
 
@@ -113,7 +113,7 @@ static val FLAG_IGNORE_GLOBAL_SETTING: Int
 
 **Deprecated:** *Starting from [android.os.Build.VERSION_CODES#TIRAMISU](../android/os/Build.VERSION_CODES.md) only privileged apps can ignore user settings for touch feedback.*
 
-Flag for [View.performHapticFeedback(int, int)](../android/view/View.md)): Ignore the global setting for whether to perform haptic feedback, do it always. 
+Flag for [View.performHapticFeedback(int, int)](View.md)): Ignore the global setting for whether to perform haptic feedback, do it always. 
 
  Value: 2
 
@@ -125,7 +125,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 static val FLAG_IGNORE_VIEW_SETTING: Int
 ```
 
-Flag for [View.performHapticFeedback(int, int)](../android/view/View.md)): Ignore the setting in the view for whether to perform haptic feedback, do it always. 
+Flag for [View.performHapticFeedback(int, int)](View.md)): Ignore the setting in the view for whether to perform haptic feedback, do it always. 
 
  Value: 1
 
@@ -167,7 +167,7 @@ The user is executing a swipe/drag-style gesture, such as pull-to-refresh, where
 
 **See Also**
 
-- [#GESTURE_THRESHOLD_DEACTIVATE](../android/view/HapticFeedbackConstants.md) 
+- [#GESTURE_THRESHOLD_DEACTIVATE](HapticFeedbackConstants.md) 
 
 ### GESTURE_THRESHOLD_DEACTIVATE
 
@@ -183,7 +183,7 @@ The user is executing a swipe/drag-style gesture, such as pull-to-refresh, where
 
 **See Also**
 
-- [#GESTURE_THRESHOLD_ACTIVATE](../android/view/HapticFeedbackConstants.md) 
+- [#GESTURE_THRESHOLD_ACTIVATE](HapticFeedbackConstants.md) 
 
 ### KEYBOARD_PRESS
 
@@ -267,9 +267,9 @@ static val SEGMENT_FREQUENT_TICK: Int
 
 The user is switching between a series of many potential choices, for example minutes on a clock face, or individual percentages. This constant is expected to be very soft, so as not to be uncomfortable when performed a lot in quick succession. If the device can't make a suitably soft vibration, then it may not make any vibration.
 
-Some specializations of this constant exist for specific actions, notably [CLOCK_TICK](../android/view/HapticFeedbackConstants.md) and [TEXT_HANDLE_MOVE](../android/view/HapticFeedbackConstants.md).
+Some specializations of this constant exist for specific actions, notably [CLOCK_TICK](HapticFeedbackConstants.md) and [TEXT_HANDLE_MOVE](HapticFeedbackConstants.md).
 
-See also [SEGMENT_TICK](../android/view/HapticFeedbackConstants.md). 
+See also [SEGMENT_TICK](HapticFeedbackConstants.md). 
 
  Value: 27
 
@@ -283,7 +283,7 @@ static val SEGMENT_TICK: Int
 
 The user is switching between a series of potential choices, for example items in a list or discrete points on a slider.
 
-See also [SEGMENT_FREQUENT_TICK](../android/view/HapticFeedbackConstants.md) for cases where density of choices is high, and the haptics should be lighter or suppressed for a better user experience. 
+See also [SEGMENT_FREQUENT_TICK](HapticFeedbackConstants.md) for cases where density of choices is high, and the haptics should be lighter or suppressed for a better user experience. 
 
  Value: 26
 

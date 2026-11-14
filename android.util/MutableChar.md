@@ -5,7 +5,7 @@ Deprecated in [API level 28](https://developer.android.com/guide/topics/manifest
 
 # MutableChar
 
-Kotlin| [Java](../android/util/MutableChar.md) 
+Kotlin| [Java](MutableChar.md) 
 | --- | --- |
 
 ```
@@ -14,7 +14,7 @@ class MutableChar
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.util.MutableChar](../android/util/MutableChar.md) |
+| ↳ | [android.util.MutableChar](MutableChar.md) |
 
 | **This class was deprecated in API level 28.**
 |
@@ -24,11 +24,11 @@ class MutableChar
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [MutableChar](../android/util/MutableChar.md))`(`value:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` <br /> |
+| [MutableChar](MutableChar.md))`(`value:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` <br /> |
 
 | Properties ||
 |------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [value](../android/util/MutableChar.md) <br /> |
+| [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [value](MutableChar.md) <br /> |
 
 ## Public constructors
 

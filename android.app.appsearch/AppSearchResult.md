@@ -4,7 +4,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # AppSearchResult
 
-Kotlin| [Java](../android/app/appsearch/AppSearchResult.md) 
+Kotlin| [Java](AppSearchResult.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class AppSearchResult<ValueType : Any!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.appsearch.AppSearchResult](../android/app/appsearch/AppSearchResult.md) |
+| ↳ | [android.app.appsearch.AppSearchResult](AppSearchResult.md) |
 
 Information about the success or failure of an AppSearch call.
 
@@ -21,36 +21,36 @@ Information about the success or failure of an AppSearch call.
 
 | Constants ||
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESULT_ALREADY_EXISTS](../android/app/appsearch/AppSearchResult.md) The operation is invalid because the resource already exists and can't be replaced. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESULT_DENIED](../android/app/appsearch/AppSearchResult.md) The requested operation is denied for the caller. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESULT_INTERNAL_ERROR](../android/app/appsearch/AppSearchResult.md) An internal error occurred within AppSearch, which the caller cannot address. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESULT_ALREADY_EXISTS](AppSearchResult.md) The operation is invalid because the resource already exists and can't be replaced. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESULT_DENIED](AppSearchResult.md) The requested operation is denied for the caller. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESULT_INTERNAL_ERROR](AppSearchResult.md) An internal error occurred within AppSearch, which the caller cannot address. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESULT_INVALID_ARGUMENT](../android/app/appsearch/AppSearchResult.md) The caller supplied invalid arguments to the call. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESULT_INVALID_SCHEMA](../android/app/appsearch/AppSearchResult.md) The caller supplied a schema which is invalid or incompatible with the previous schema. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESULT_IO_ERROR](../android/app/appsearch/AppSearchResult.md) An issue occurred reading or writing to storage. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESULT_INVALID_ARGUMENT](AppSearchResult.md) The caller supplied invalid arguments to the call. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESULT_INVALID_SCHEMA](AppSearchResult.md) The caller supplied a schema which is invalid or incompatible with the previous schema. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESULT_IO_ERROR](AppSearchResult.md) An issue occurred reading or writing to storage. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESULT_NOT_FOUND](../android/app/appsearch/AppSearchResult.md) An entity the caller requested to interact with does not exist in the system. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESULT_OK](../android/app/appsearch/AppSearchResult.md) The call was successful. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESULT_OUT_OF_SPACE](../android/app/appsearch/AppSearchResult.md) Storage is out of space, and no more space could be reclaimed. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESULT_NOT_FOUND](AppSearchResult.md) An entity the caller requested to interact with does not exist in the system. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESULT_OK](AppSearchResult.md) The call was successful. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESULT_OUT_OF_SPACE](AppSearchResult.md) Storage is out of space, and no more space could be reclaimed. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESULT_RATE_LIMITED](../android/app/appsearch/AppSearchResult.md) The caller has hit AppSearch's rate limit and the requested operation has been rejected. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESULT_SECURITY_ERROR](../android/app/appsearch/AppSearchResult.md) The caller requested an operation it does not have privileges for. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESULT_UNKNOWN_ERROR](../android/app/appsearch/AppSearchResult.md) An unknown error occurred while processing the call. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESULT_RATE_LIMITED](AppSearchResult.md) The caller has hit AppSearch's rate limit and the requested operation has been rejected. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESULT_SECURITY_ERROR](AppSearchResult.md) The caller requested an operation it does not have privileges for. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESULT_UNKNOWN_ERROR](AppSearchResult.md) An unknown error occurred while processing the call. |
 | --- | --- |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/app/appsearch/AppSearchResult.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getErrorMessage](../android/app/appsearch/AppSearchResult.md))`()` Returns the error message associated with this result. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getResultCode](../android/app/appsearch/AppSearchResult.md))`()` Returns one of the`RESULT`constants defined in [AppSearchResult](../android/app/appsearch/AppSearchResult.md). |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](AppSearchResult.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getErrorMessage](AppSearchResult.md))`()` Returns the error message associated with this result. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getResultCode](AppSearchResult.md))`()` Returns one of the`RESULT`constants defined in [AppSearchResult](AppSearchResult.md). |
 | --- | --- |
-| ValueType? | [getResultValue](../android/app/appsearch/AppSearchResult.md))`()` Returns the result value associated with this result, if it was successful. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/app/appsearch/AppSearchResult.md))`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSuccess](../android/app/appsearch/AppSearchResult.md))`()` Returns`true`if [getResultCode](../android/app/appsearch/AppSearchResult.md))equals [AppSearchResult.RESULT_OK](../android/app/appsearch/AppSearchResult.md). |
+| ValueType? | [getResultValue](AppSearchResult.md))`()` Returns the result value associated with this result, if it was successful. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](AppSearchResult.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSuccess](AppSearchResult.md))`()` Returns`true`if [getResultCode](AppSearchResult.md))equals [AppSearchResult.RESULT_OK](AppSearchResult.md). |
 | --- | --- |
-| static [AppSearchResult](../android/app/appsearch/AppSearchResult.md)\<ValueType\> | [newFailedResult](../android/app/appsearch/AppSearchResult.md))`(`resultCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `errorMessage:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Creates a new failed [AppSearchResult](../android/app/appsearch/AppSearchResult.md). |
-| static [AppSearchResult](../android/app/appsearch/AppSearchResult.md)\<ValueType\> | [newSuccessfulResult](../android/app/appsearch/AppSearchResult.md))`(`value:` `ValueType?`)` Creates a new successful [AppSearchResult](../android/app/appsearch/AppSearchResult.md). |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/app/appsearch/AppSearchResult.md))`()` Returns a string representation of the object. |
+| static [AppSearchResult](AppSearchResult.md)\<ValueType\> | [newFailedResult](AppSearchResult.md))`(`resultCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `errorMessage:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Creates a new failed [AppSearchResult](AppSearchResult.md). |
+| static [AppSearchResult](AppSearchResult.md)\<ValueType\> | [newSuccessfulResult](AppSearchResult.md))`(`value:` `ValueType?`)` Creates a new successful [AppSearchResult](AppSearchResult.md). |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](AppSearchResult.md))`()` Returns a string representation of the object. |
 | --- | --- |
 
 ## Constants
@@ -91,7 +91,7 @@ static val RESULT_INTERNAL_ERROR: Int
 
 An internal error occurred within AppSearch, which the caller cannot address.
 
-This error may be considered similar to [IllegalStateException](../java/lang/IllegalStateException.md) 
+This error may be considered similar to [IllegalStateException](../java.lang/IllegalStateException.md) 
 
  Value: 2
 
@@ -105,7 +105,7 @@ static val RESULT_INVALID_ARGUMENT: Int
 
 The caller supplied invalid arguments to the call.
 
-This error may be considered similar to [IllegalArgumentException](../java/lang/IllegalArgumentException.md). 
+This error may be considered similar to [IllegalArgumentException](../java.lang/IllegalArgumentException.md). 
 
  Value: 3
 
@@ -131,7 +131,7 @@ static val RESULT_IO_ERROR: Int
 
 An issue occurred reading or writing to storage. The call might succeed if repeated.
 
-This error may be considered similar to [java.io.IOException](../java/io/IOException.md). 
+This error may be considered similar to [java.io.IOException](../java.io/IOException.md). 
 
  Value: 4
 
@@ -249,7 +249,7 @@ fun getErrorMessage(): String?
 
 Returns the error message associated with this result.
 
-If [isSuccess](../android/app/appsearch/AppSearchResult.md))is`true`, the error message is always`null`. The error message may be`null`even if [isSuccess](../android/app/appsearch/AppSearchResult.md))is`false`. See the documentation of the particular [AppSearchSession](../android/app/appsearch/AppSearchSession.md) call producing this [AppSearchResult](../android/app/appsearch/AppSearchResult.md) for what is returned by [getErrorMessage](../android/app/appsearch/AppSearchResult.md)). 
+If [isSuccess](AppSearchResult.md))is`true`, the error message is always`null`. The error message may be`null`even if [isSuccess](AppSearchResult.md))is`false`. See the documentation of the particular [AppSearchSession](AppSearchSession.md) call producing this [AppSearchResult](AppSearchResult.md) for what is returned by [getErrorMessage](AppSearchResult.md)). 
 
 ### getResultCode
 
@@ -259,11 +259,11 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 fun getResultCode(): Int
 ```
 
-Returns one of the`RESULT`constants defined in [AppSearchResult](../android/app/appsearch/AppSearchResult.md).
+Returns one of the`RESULT`constants defined in [AppSearchResult](AppSearchResult.md).
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.app.appsearch.AppSearchResult#RESULT_OK](../android/app/appsearch/AppSearchResult.md), [android.app.appsearch.AppSearchResult#RESULT_UNKNOWN_ERROR](../android/app/appsearch/AppSearchResult.md), [android.app.appsearch.AppSearchResult#RESULT_INTERNAL_ERROR](../android/app/appsearch/AppSearchResult.md), [android.app.appsearch.AppSearchResult#RESULT_INVALID_ARGUMENT](../android/app/appsearch/AppSearchResult.md), [android.app.appsearch.AppSearchResult#RESULT_IO_ERROR](../android/app/appsearch/AppSearchResult.md), [android.app.appsearch.AppSearchResult#RESULT_OUT_OF_SPACE](../android/app/appsearch/AppSearchResult.md), [android.app.appsearch.AppSearchResult#RESULT_NOT_FOUND](../android/app/appsearch/AppSearchResult.md), [android.app.appsearch.AppSearchResult#RESULT_INVALID_SCHEMA](../android/app/appsearch/AppSearchResult.md), [android.app.appsearch.AppSearchResult#RESULT_SECURITY_ERROR](../android/app/appsearch/AppSearchResult.md), [android.app.appsearch.AppSearchResult#RESULT_DENIED](../android/app/appsearch/AppSearchResult.md), [android.app.appsearch.AppSearchResult#RESULT_RATE_LIMITED](../android/app/appsearch/AppSearchResult.md), [android.app.appsearch.AppSearchResult#RESULT_ALREADY_EXISTS](../android/app/appsearch/AppSearchResult.md), android.app.appsearch.AppSearchResult.RESULT_ABORTED, or android.app.appsearch.AppSearchResult.RESULT_UNAVAILABLE |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.app.appsearch.AppSearchResult#RESULT_OK](AppSearchResult.md), [android.app.appsearch.AppSearchResult#RESULT_UNKNOWN_ERROR](AppSearchResult.md), [android.app.appsearch.AppSearchResult#RESULT_INTERNAL_ERROR](AppSearchResult.md), [android.app.appsearch.AppSearchResult#RESULT_INVALID_ARGUMENT](AppSearchResult.md), [android.app.appsearch.AppSearchResult#RESULT_IO_ERROR](AppSearchResult.md), [android.app.appsearch.AppSearchResult#RESULT_OUT_OF_SPACE](AppSearchResult.md), [android.app.appsearch.AppSearchResult#RESULT_NOT_FOUND](AppSearchResult.md), [android.app.appsearch.AppSearchResult#RESULT_INVALID_SCHEMA](AppSearchResult.md), [android.app.appsearch.AppSearchResult#RESULT_SECURITY_ERROR](AppSearchResult.md), [android.app.appsearch.AppSearchResult#RESULT_DENIED](AppSearchResult.md), [android.app.appsearch.AppSearchResult#RESULT_RATE_LIMITED](AppSearchResult.md), [android.app.appsearch.AppSearchResult#RESULT_ALREADY_EXISTS](AppSearchResult.md), android.app.appsearch.AppSearchResult.RESULT_ABORTED, or android.app.appsearch.AppSearchResult.RESULT_UNAVAILABLE |
 
 ### getResultValue
 
@@ -275,7 +275,7 @@ fun getResultValue(): ValueType?
 
 Returns the result value associated with this result, if it was successful.
 
-See the documentation of the particular [AppSearchSession](../android/app/appsearch/AppSearchSession.md) call producing this [AppSearchResult](../android/app/appsearch/AppSearchResult.md) for what is placed in the result value by that call.
+See the documentation of the particular [AppSearchSession](AppSearchSession.md) call producing this [AppSearchResult](AppSearchResult.md) for what is placed in the result value by that call.
 
 | Return ||
 |------------|--------------------------|
@@ -283,7 +283,7 @@ See the documentation of the particular [AppSearchSession](../android/app/appsea
 
 | Exceptions ||
 |-----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.IllegalStateException` | if this [AppSearchResult](../android/app/appsearch/AppSearchResult.md) is not successful. |
+| `java.lang.IllegalStateException` | if this [AppSearchResult](AppSearchResult.md) is not successful. |
 
 ### hashCode
 
@@ -305,7 +305,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 fun isSuccess(): Boolean
 ```
 
-Returns`true`if [getResultCode](../android/app/appsearch/AppSearchResult.md))equals [AppSearchResult.RESULT_OK](../android/app/appsearch/AppSearchResult.md). 
+Returns`true`if [getResultCode](AppSearchResult.md))equals [AppSearchResult.RESULT_OK](AppSearchResult.md). 
 
 ### newFailedResult
 
@@ -318,16 +318,16 @@ static fun <ValueType : Any!> newFailedResult(
 ): AppSearchResult<ValueType>
 ```
 
-Creates a new failed [AppSearchResult](../android/app/appsearch/AppSearchResult.md).
+Creates a new failed [AppSearchResult](AppSearchResult.md).
 
 | Parameters ||
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `resultCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):One of the constants documented in [AppSearchResult.getResultCode](../android/app/appsearch/AppSearchResult.md)). Value is [android.app.appsearch.AppSearchResult#RESULT_OK](../android/app/appsearch/AppSearchResult.md), [android.app.appsearch.AppSearchResult#RESULT_UNKNOWN_ERROR](../android/app/appsearch/AppSearchResult.md), [android.app.appsearch.AppSearchResult#RESULT_INTERNAL_ERROR](../android/app/appsearch/AppSearchResult.md), [android.app.appsearch.AppSearchResult#RESULT_INVALID_ARGUMENT](../android/app/appsearch/AppSearchResult.md), [android.app.appsearch.AppSearchResult#RESULT_IO_ERROR](../android/app/appsearch/AppSearchResult.md), [android.app.appsearch.AppSearchResult#RESULT_OUT_OF_SPACE](../android/app/appsearch/AppSearchResult.md), [android.app.appsearch.AppSearchResult#RESULT_NOT_FOUND](../android/app/appsearch/AppSearchResult.md), [android.app.appsearch.AppSearchResult#RESULT_INVALID_SCHEMA](../android/app/appsearch/AppSearchResult.md), [android.app.appsearch.AppSearchResult#RESULT_SECURITY_ERROR](../android/app/appsearch/AppSearchResult.md), [android.app.appsearch.AppSearchResult#RESULT_DENIED](../android/app/appsearch/AppSearchResult.md), [android.app.appsearch.AppSearchResult#RESULT_RATE_LIMITED](../android/app/appsearch/AppSearchResult.md), [android.app.appsearch.AppSearchResult#RESULT_ALREADY_EXISTS](../android/app/appsearch/AppSearchResult.md), android.app.appsearch.AppSearchResult.RESULT_ABORTED, or android.app.appsearch.AppSearchResult.RESULT_UNAVAILABLE |
+| `resultCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):One of the constants documented in [AppSearchResult.getResultCode](AppSearchResult.md)). Value is [android.app.appsearch.AppSearchResult#RESULT_OK](AppSearchResult.md), [android.app.appsearch.AppSearchResult#RESULT_UNKNOWN_ERROR](AppSearchResult.md), [android.app.appsearch.AppSearchResult#RESULT_INTERNAL_ERROR](AppSearchResult.md), [android.app.appsearch.AppSearchResult#RESULT_INVALID_ARGUMENT](AppSearchResult.md), [android.app.appsearch.AppSearchResult#RESULT_IO_ERROR](AppSearchResult.md), [android.app.appsearch.AppSearchResult#RESULT_OUT_OF_SPACE](AppSearchResult.md), [android.app.appsearch.AppSearchResult#RESULT_NOT_FOUND](AppSearchResult.md), [android.app.appsearch.AppSearchResult#RESULT_INVALID_SCHEMA](AppSearchResult.md), [android.app.appsearch.AppSearchResult#RESULT_SECURITY_ERROR](AppSearchResult.md), [android.app.appsearch.AppSearchResult#RESULT_DENIED](AppSearchResult.md), [android.app.appsearch.AppSearchResult#RESULT_RATE_LIMITED](AppSearchResult.md), [android.app.appsearch.AppSearchResult#RESULT_ALREADY_EXISTS](AppSearchResult.md), android.app.appsearch.AppSearchResult.RESULT_ABORTED, or android.app.appsearch.AppSearchResult.RESULT_UNAVAILABLE |
 | `errorMessage` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:An optional string describing the reason or nature of the failure. This value may be`null`. |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [AppSearchResult](../android/app/appsearch/AppSearchResult.md)<ValueType> | This value cannot be`null`. |
+| [AppSearchResult](AppSearchResult.md)<ValueType> | This value cannot be`null`. |
 
 ### newSuccessfulResult
 
@@ -337,7 +337,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 static fun <ValueType : Any!> newSuccessfulResult(value: ValueType?): AppSearchResult<ValueType>
 ```
 
-Creates a new successful [AppSearchResult](../android/app/appsearch/AppSearchResult.md).
+Creates a new successful [AppSearchResult](AppSearchResult.md).
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------|
@@ -345,7 +345,7 @@ Creates a new successful [AppSearchResult](../android/app/appsearch/AppSearchRes
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [AppSearchResult](../android/app/appsearch/AppSearchResult.md)<ValueType> | This value cannot be`null`. |
+| [AppSearchResult](AppSearchResult.md)<ValueType> | This value cannot be`null`. |
 
 ### toString
 

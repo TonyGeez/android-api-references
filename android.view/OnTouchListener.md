@@ -13,7 +13,7 @@ interface OnTouchListener
 
 | [android.view.View.OnTouchListener](../android/view/View.OnTouchListener.md) |
 
-| Known Direct Subclasses [ZoomButtonsController](../android/widget/ZoomButtonsController.md) |--------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [ZoomButtonsController](../android/widget/ZoomButtonsController.md) | The [ZoomButtonsController](../android/widget/ZoomButtonsController.md) handles showing and hiding the zoom controls and positioning it relative to an owner view. | |
+| Known Direct Subclasses [ZoomButtonsController](../android.widget/ZoomButtonsController.md) |--------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [ZoomButtonsController](../android.widget/ZoomButtonsController.md) | The [ZoomButtonsController](../android.widget/ZoomButtonsController.md) handles showing and hiding the zoom controls and positioning it relative to an owner view. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 Interface definition for a callback to be invoked when a touch event is dispatched to this view. The callback will be invoked before the touch event is given to the view.
@@ -22,7 +22,7 @@ Interface definition for a callback to be invoked when a touch event is dispatch
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onTouch](../android/view/View.OnTouchListener.md))`(`v:` ` [View](../android/view/View.md)!`, `event:` ` [MotionEvent](../android/view/MotionEvent.md)!`)` Called when a touch event is dispatched to a view. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onTouch](../android/view/View.OnTouchListener.md))`(`v:` ` [View](View.md)!`, `event:` ` [MotionEvent](MotionEvent.md)!`)` Called when a touch event is dispatched to a view. |
 
 ## Public methods
 
@@ -41,8 +41,8 @@ Called when a touch event is dispatched to a view. This allows listeners to get 
 
 | Parameters ||
 |---------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `v` | [View](../android/view/View.md)!:The view the touch event has been dispatched to. |
-| `event` | [MotionEvent](../android/view/MotionEvent.md)!:The MotionEvent object containing full information about the event. |
+| `v` | [View](View.md)!:The view the touch event has been dispatched to. |
+| `event` | [MotionEvent](MotionEvent.md)!:The MotionEvent object containing full information about the event. |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------------|

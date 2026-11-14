@@ -8,11 +8,11 @@ abstract class CameraPrewarmService : Service
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](../android/content/Context.md) ||||
-| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) |||
-| | | ↳ | [android.app.Service](../android/app/Service.md) ||
+| ↳ | [android.content.Context](../android.content/Context.md) ||||
+| | ↳ | [android.content.ContextWrapper](../android.content/ContextWrapper.md) |||
+| | | ↳ | [android.app.Service](../android.app/Service.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.service.media.CameraPrewarmService](../android/service/media/CameraPrewarmService.md) |
+| | | | ↳ | [android.service.media.CameraPrewarmService](CameraPrewarmService.md) |
 
 Extend this class to implement a camera prewarm service. See `https://developer.android.com/reference/kotlin/android/provider/MediaStore.html#META_DATA_STILL_IMAGE_CAMERA_PREWARM_SERVICE:kotlin.String`.
 
@@ -1041,7 +1041,7 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 
 | Public methods ||
 |---|---|
-| open [IBinder](../android/os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/service/media/CameraPrewarmService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
+| open [IBinder](../android.os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/service/media/CameraPrewarmService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/media/CameraPrewarmService#onCooldown(kotlin.Boolean)(cameraIntentFired: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Called when prewarm phase is done, either because the camera launch intent has been fired at this point or prewarm is no longer needed. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/media/CameraPrewarmService#onPrewarm()()` Called when the camera should be prewarmed. |
 | --- | --- |
@@ -2756,7 +2756,7 @@ Return the communication channel to the service. May return null if clients can 
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
+| `intent` | [Intent](../android.content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
 
 | Return ||
 |---|---|
@@ -2800,7 +2800,7 @@ Called when all clients have disconnected from a particular interface published 
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
+| `intent` | [Intent](../android.content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
 
 | Return ||
 |---|---|

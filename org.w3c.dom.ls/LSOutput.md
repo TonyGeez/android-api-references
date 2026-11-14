@@ -8,7 +8,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 interface LSOutput
 ```
 
-| [org.w3c.dom.ls.LSOutput](../org/w3c/dom/ls/LSOutput.md) |
+| [org.w3c.dom.ls.LSOutput](LSOutput.md) |
 
 This interface represents an output destination for data.
 
@@ -32,16 +32,16 @@ See also the [Document Object Model (DOM) Level 3 Load and Save Specification](h
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [OutputStream](../java/io/OutputStream.md)! | [getByteStream](../org/w3c/dom/ls/LSOutput.md))`()` An attribute of a language and binding dependent type that represents a writable stream of bytes. |
-| abstract [Writer](../java/io/Writer.md)! | [getCharacterStream](../org/w3c/dom/ls/LSOutput.md))`()` An attribute of a language and binding dependent type that represents a writable stream to which 16-bit units can be output. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getEncoding](../org/w3c/dom/ls/LSOutput.md))`()` The character encoding to use for the output. |
+| abstract [OutputStream](../java.io/OutputStream.md)! | [getByteStream](LSOutput.md))`()` An attribute of a language and binding dependent type that represents a writable stream of bytes. |
+| abstract [Writer](../java.io/Writer.md)! | [getCharacterStream](LSOutput.md))`()` An attribute of a language and binding dependent type that represents a writable stream to which 16-bit units can be output. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getEncoding](LSOutput.md))`()` The character encoding to use for the output. |
 | --- | --- |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSystemId](../org/w3c/dom/ls/LSOutput.md))`()` The system identifier, a URI reference \ [[IETF RFC 2396](http://www.ietf.org/rfc/rfc2396.txt)\], for this output destination. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setByteStream](../org/w3c/dom/ls/LSOutput.md))`(`byteStream:` ` [OutputStream](../java/io/OutputStream.md)!`)` An attribute of a language and binding dependent type that represents a writable stream of bytes. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCharacterStream](../org/w3c/dom/ls/LSOutput.md))`(`characterStream:` ` [Writer](../java/io/Writer.md)!`)` An attribute of a language and binding dependent type that represents a writable stream to which 16-bit units can be output. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSystemId](LSOutput.md))`()` The system identifier, a URI reference \ [[IETF RFC 2396](http://www.ietf.org/rfc/rfc2396.txt)\], for this output destination. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setByteStream](LSOutput.md))`(`byteStream:` ` [OutputStream](../java.io/OutputStream.md)!`)` An attribute of a language and binding dependent type that represents a writable stream of bytes. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCharacterStream](LSOutput.md))`(`characterStream:` ` [Writer](../java.io/Writer.md)!`)` An attribute of a language and binding dependent type that represents a writable stream to which 16-bit units can be output. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEncoding](../org/w3c/dom/ls/LSOutput.md))`(`encoding:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` The character encoding to use for the output. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSystemId](../org/w3c/dom/ls/LSOutput.md))`(`systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` The system identifier, a URI reference \ [[IETF RFC 2396](http://www.ietf.org/rfc/rfc2396.txt)\], for this output destination. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEncoding](LSOutput.md))`(`encoding:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` The character encoding to use for the output. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSystemId](LSOutput.md))`(`systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` The system identifier, a URI reference \ [[IETF RFC 2396](http://www.ietf.org/rfc/rfc2396.txt)\], for this output destination. |
 
 ## Public methods
 

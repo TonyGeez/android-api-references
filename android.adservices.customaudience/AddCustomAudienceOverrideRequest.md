@@ -5,7 +5,7 @@ Also in [Ad Services Extensions 4](https://developer.android.com/sdkExtensions)
 
 # AddCustomAudienceOverrideRequest
 
-Kotlin| [Java](../android/adservices/customaudience/AddCustomAudienceOverrideRequest.md) 
+Kotlin| [Java](AddCustomAudienceOverrideRequest.md) 
 | --- | --- |
 
 ```
@@ -14,9 +14,9 @@ open class AddCustomAudienceOverrideRequest
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.adservices.customaudience.AddCustomAudienceOverrideRequest](../android/adservices/customaudience/AddCustomAudienceOverrideRequest.md) |
+| ↳ | [android.adservices.customaudience.AddCustomAudienceOverrideRequest](AddCustomAudienceOverrideRequest.md) |
 
-This POJO represents the [android.adservices.customaudience.TestCustomAudienceManager#overrideCustomAudienceRemoteInfo(android.adservices.customaudience.AddCustomAudienceOverrideRequest,java.util.concurrent.Executor,android.os.OutcomeReceiver)](../android/adservices/customaudience/TestCustomAudienceManager.md))request.
+This POJO represents the [android.adservices.customaudience.TestCustomAudienceManager#overrideCustomAudienceRemoteInfo(android.adservices.customaudience.AddCustomAudienceOverrideRequest,java.util.concurrent.Executor,android.os.OutcomeReceiver)](TestCustomAudienceManager.md))request.
 
 It contains fields`buyer`and`name`which will serve as the identifier for the override fields,`biddingLogicJs`and`trustedBiddingSignals`, which are used during ad selection instead of querying external servers.
 
@@ -24,20 +24,20 @@ It contains fields`buyer`and`name`which will serve as the identifier for the ove
 
 | Nested classes ||
 |---|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](../android/adservices/customaudience/AddCustomAudienceOverrideRequest.Builder.md) Builder for [AddCustomAudienceOverrideRequest](../android/adservices/customaudience/AddCustomAudienceOverrideRequest.md) objects. |
+| | [Builder](../android/adservices/customaudience/AddCustomAudienceOverrideRequest.Builder.md) Builder for [AddCustomAudienceOverrideRequest](AddCustomAudienceOverrideRequest.md) objects. |
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [AddCustomAudienceOverrideRequest](../android/adservices/customaudience/AddCustomAudienceOverrideRequest.md))`(`buyer:` ` [AdTechIdentifier](../android/adservices/common/AdTechIdentifier.md)`, `name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `biddingLogicJs:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `trustedBiddingSignals:` ` [AdSelectionSignals](../android/adservices/common/AdSelectionSignals.md)`)` <br /> |
+| [AddCustomAudienceOverrideRequest](AddCustomAudienceOverrideRequest.md))`(`buyer:` ` [AdTechIdentifier](../android.adservices.common/AdTechIdentifier.md)`, `name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `biddingLogicJs:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `trustedBiddingSignals:` ` [AdSelectionSignals](../android.adservices.common/AdSelectionSignals.md)`)` <br /> |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getBiddingLogicJs](../android/adservices/customaudience/AddCustomAudienceOverrideRequest.md))`()` <br /> |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getBiddingLogicJsVersion](../android/adservices/customaudience/AddCustomAudienceOverrideRequest.md))`()` Returns the value to return as version for JavaScript bidding logic. |
-| open [AdTechIdentifier](../android/adservices/common/AdTechIdentifier.md) | [getBuyer](../android/adservices/customaudience/AddCustomAudienceOverrideRequest.md))`()` <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getBiddingLogicJs](AddCustomAudienceOverrideRequest.md))`()` <br /> |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getBiddingLogicJsVersion](AddCustomAudienceOverrideRequest.md))`()` Returns the value to return as version for JavaScript bidding logic. |
+| open [AdTechIdentifier](../android.adservices.common/AdTechIdentifier.md) | [getBuyer](AddCustomAudienceOverrideRequest.md))`()` <br /> |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getName](../android/adservices/customaudience/AddCustomAudienceOverrideRequest.md))`()` <br /> |
-| open [AdSelectionSignals](../android/adservices/common/AdSelectionSignals.md) | [getTrustedBiddingSignals](../android/adservices/customaudience/AddCustomAudienceOverrideRequest.md))`()` <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getName](AddCustomAudienceOverrideRequest.md))`()` <br /> |
+| open [AdSelectionSignals](../android.adservices.common/AdSelectionSignals.md) | [getTrustedBiddingSignals](AddCustomAudienceOverrideRequest.md))`()` <br /> |
 
 ## Public constructors
 
@@ -56,11 +56,11 @@ AddCustomAudienceOverrideRequest(
 
 | Parameters ||
 |-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| `buyer` | [AdTechIdentifier](../android/adservices/common/AdTechIdentifier.md):This value cannot be`null`. |
+| `buyer` | [AdTechIdentifier](../android.adservices.common/AdTechIdentifier.md):This value cannot be`null`. |
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):This value cannot be`null`. |
 | `biddingLogicJs` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):This value cannot be`null`. |
 | --- | --- |
-| `trustedBiddingSignals` | [AdSelectionSignals](../android/adservices/common/AdSelectionSignals.md):This value cannot be`null`. |
+| `trustedBiddingSignals` | [AdSelectionSignals](../android.adservices.common/AdSelectionSignals.md):This value cannot be`null`. |
 
 ## Public methods
 
@@ -101,7 +101,7 @@ open fun getBuyer(): AdTechIdentifier
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [AdTechIdentifier](../android/adservices/common/AdTechIdentifier.md) | an [AdTechIdentifier](../android/adservices/common/AdTechIdentifier.md) representing the buyer This value cannot be`null`. |
+| [AdTechIdentifier](../android.adservices.common/AdTechIdentifier.md) | an [AdTechIdentifier](../android.adservices.common/AdTechIdentifier.md) representing the buyer This value cannot be`null`. |
 
 ### getName
 
@@ -127,4 +127,4 @@ open fun getTrustedBiddingSignals(): AdSelectionSignals
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-| [AdSelectionSignals](../android/adservices/common/AdSelectionSignals.md) | the override trusted bidding signals that should be served during ad selection This value cannot be`null`. |
+| [AdSelectionSignals](../android.adservices.common/AdSelectionSignals.md) | the override trusted bidding signals that should be served during ad selection This value cannot be`null`. |

@@ -10,8 +10,8 @@ open class StatementEvent : EventObject
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.util.EventObject](../java/util/EventObject.md) ||
-| | ↳ | [javax.sql.StatementEvent](../javax/sql/StatementEvent.md) |
+| ↳ | [java.util.EventObject](../java.util/EventObject.md) ||
+| | ↳ | [javax.sql.StatementEvent](StatementEvent.md) |
 
 A`StatementEvent`is sent to all`StatementEventListener`s which were registered with a`PooledConnection`. This occurs when the driver determines that a`PreparedStatement`that is associated with the`PooledConnection`has been closed or the driver determines is invalid.
 
@@ -21,21 +21,21 @@ A`StatementEvent`is sent to all`StatementEventListener`s which were registered w
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [StatementEvent](../javax/sql/StatementEvent.md))`(`con:` ` [PooledConnection](../javax/sql/PooledConnection.md)!`, `statement:` ` [PreparedStatement](../java/sql/PreparedStatement.md)!`)` Constructs a`StatementEvent`with the specified`PooledConnection`and`PreparedStatement`. |
-| [StatementEvent](../javax/sql/StatementEvent.md))`(`con:` ` [PooledConnection](../javax/sql/PooledConnection.md)!`, `statement:` ` [PreparedStatement](../java/sql/PreparedStatement.md)!`, `exception:` ` [SQLException](../java/sql/SQLException.md)!`)` Constructs a`StatementEvent`with the specified`PooledConnection`,`PreparedStatement`and`SQLException` |
+| [StatementEvent](StatementEvent.md))`(`con:` ` [PooledConnection](PooledConnection.md)!`, `statement:` ` [PreparedStatement](../java.sql/PreparedStatement.md)!`)` Constructs a`StatementEvent`with the specified`PooledConnection`and`PreparedStatement`. |
+| [StatementEvent](StatementEvent.md))`(`con:` ` [PooledConnection](PooledConnection.md)!`, `statement:` ` [PreparedStatement](../java.sql/PreparedStatement.md)!`, `exception:` ` [SQLException](../java.sql/SQLException.md)!`)` Constructs a`StatementEvent`with the specified`PooledConnection`,`PreparedStatement`and`SQLException` |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [SQLException](../java/sql/SQLException.md)! | [getSQLException](../javax/sql/StatementEvent.md))`()` Returns the`SQLException`the driver is about to throw |
-| open [PreparedStatement](../java/sql/PreparedStatement.md)! | [getStatement](../javax/sql/StatementEvent.md))`()` Returns the`PreparedStatement`that is being closed or is invalid |
+| open [SQLException](../java.sql/SQLException.md)! | [getSQLException](StatementEvent.md))`()` Returns the`SQLException`the driver is about to throw |
+| open [PreparedStatement](../java.sql/PreparedStatement.md)! | [getStatement](StatementEvent.md))`()` Returns the`PreparedStatement`that is being closed or is invalid |
 
 | Inherited functions ||
 |---|---|
-| From class [EventObject](../java/util/EventObject.md) |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getSource](../java/util/EventObject.md))`()` <br /> The object on which the Event initially occurred. <br /> | | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/util/EventObject.md))`()` <br /> Returns a String representation of this EventObject. <br /> | ||
+| From class [EventObject](../java.util/EventObject.md) |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getSource](../java.util/EventObject.md))`()` <br /> The object on which the Event initially occurred. <br /> | | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java.util/EventObject.md))`()` <br /> Returns a String representation of this EventObject. <br /> | ||
 
 | Inherited properties ||
 |---|---|
-| From class [EventObject](../java/util/EventObject.md) |-----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [source](../java/util/EventObject.md) <br /> The object on which the Event initially occurred. <br /> | ||
+| From class [EventObject](../java.util/EventObject.md) |-----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [source](../java.util/EventObject.md) <br /> The object on which the Event initially occurred. <br /> | ||
 
 ## Public constructors
 
@@ -55,8 +55,8 @@ Constructs a`StatementEvent`with the specified`PooledConnection`and`PreparedStat
 
 | Parameters ||
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `con` | [PooledConnection](../javax/sql/PooledConnection.md)!:The`PooledConnection`that the closed or invalid`PreparedStatement`is associated with. |
-| `statement` | [PreparedStatement](../java/sql/PreparedStatement.md)!:The`PreparedStatement`that is bieng closed or is invalid <br /> |
+| `con` | [PooledConnection](PooledConnection.md)!:The`PooledConnection`that the closed or invalid`PreparedStatement`is associated with. |
+| `statement` | [PreparedStatement](../java.sql/PreparedStatement.md)!:The`PreparedStatement`that is bieng closed or is invalid <br /> |
 
 | Exceptions ||
 |--------------------------------------|-----------------|
@@ -79,9 +79,9 @@ Constructs a`StatementEvent`with the specified`PooledConnection`,`PreparedStatem
 
 | Parameters ||
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `con` | [PooledConnection](../javax/sql/PooledConnection.md)!:The`PooledConnection`that the closed or invalid`PreparedStatement`is associated with. |
-| `statement` | [PreparedStatement](../java/sql/PreparedStatement.md)!:The`PreparedStatement`that is being closed or is invalid |
-| `exception` | [SQLException](../java/sql/SQLException.md)!:The`SQLException `the driver is about to throw to the application |
+| `con` | [PooledConnection](PooledConnection.md)!:The`PooledConnection`that the closed or invalid`PreparedStatement`is associated with. |
+| `statement` | [PreparedStatement](../java.sql/PreparedStatement.md)!:The`PreparedStatement`that is being closed or is invalid |
+| `exception` | [SQLException](../java.sql/SQLException.md)!:The`SQLException `the driver is about to throw to the application |
 | --- | --- |
 
 | Exceptions ||
@@ -104,7 +104,7 @@ Returns the`SQLException`the driver is about to throw
 
 | Return ||
 |---------------------------------------------------------------------------------------------|------------------------------------------------------|
-| [SQLException](../java/sql/SQLException.md)! | The`SQLException`the driver is about to throw <br /> |
+| [SQLException](../java.sql/SQLException.md)! | The`SQLException`the driver is about to throw <br /> |
 
 ### getStatement
 
@@ -120,4 +120,4 @@ Returns the`PreparedStatement`that is being closed or is invalid
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| [PreparedStatement](../java/sql/PreparedStatement.md)! | The`PreparedStatement`that is being closed or is invalid <br /> |
+| [PreparedStatement](../java.sql/PreparedStatement.md)! | The`PreparedStatement`that is being closed or is invalid <br /> |

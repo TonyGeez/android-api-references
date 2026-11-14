@@ -43,7 +43,7 @@ abstract fun onClientChange(clearing: Boolean): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Called whenever all information, previously received through the other methods of the listener, is no longer valid and is about to be refreshed. This is typically called whenever a new [RemoteControlClient](../android/media/RemoteControlClient.md) has been selected by the system to have its media information published.
+Called whenever all information, previously received through the other methods of the listener, is no longer valid and is about to be refreshed. This is typically called whenever a new [RemoteControlClient](RemoteControlClient.md) has been selected by the system to have its media information published.
 
 | Parameters ||
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -59,7 +59,7 @@ abstract fun onClientMetadataUpdate(metadataEditor: RemoteController.MetadataEd
 
 **Deprecated:** *Deprecated in Java.*
 
-Called whenever new metadata is available. See the [MediaMetadataEditor.putLong(int, long)](../android/media/MediaMetadataEditor.md)), [MediaMetadataEditor.putString(int, String)](../android/media/MediaMetadataEditor.md)), [MediaMetadataEditor.putBitmap(int, Bitmap)](../android/media/MediaMetadataEditor.md)), and [MediaMetadataEditor.putObject(int, Object)](../android/media/MediaMetadataEditor.md))methods for the various keys that can be queried.
+Called whenever new metadata is available. See the [MediaMetadataEditor.putLong(int, long)](MediaMetadataEditor.md)), [MediaMetadataEditor.putString(int, String)](MediaMetadataEditor.md)), [MediaMetadataEditor.putBitmap(int, Bitmap)](MediaMetadataEditor.md)), and [MediaMetadataEditor.putObject(int, Object)](MediaMetadataEditor.md))methods for the various keys that can be queried.
 
 | Parameters ||
 |------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -79,7 +79,7 @@ Called whenever the playback state has changed. It is called when no information
 
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `state` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):one of the playback states authorized in [RemoteControlClient.setPlaybackState(int)](../android/media/RemoteControlClient.md)). |
+| `state` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):one of the playback states authorized in [RemoteControlClient.setPlaybackState(int)](RemoteControlClient.md)). |
 
 ### onClientPlaybackStateUpdate
 
@@ -100,11 +100,11 @@ Called whenever the playback state has changed, and playback position and speed 
 
 | Parameters ||
 |---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `state` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):one of the playback states authorized in [RemoteControlClient.setPlaybackState(int)](../android/media/RemoteControlClient.md)). |
-| `stateChangeTimeMs` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the system time at which the state change was reported, expressed in ms. Based on [android.os.SystemClock#elapsedRealtime()](../android/os/SystemClock.md)). |
+| `state` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):one of the playback states authorized in [RemoteControlClient.setPlaybackState(int)](RemoteControlClient.md)). |
+| `stateChangeTimeMs` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the system time at which the state change was reported, expressed in ms. Based on [android.os.SystemClock#elapsedRealtime()](../android.os/SystemClock.md)). |
 | `currentPosMs` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):a positive value for the current media playback position expressed in ms, a negative value if the position is temporarily unknown. |
 | --- | --- |
-| `speed` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):a value expressed as a ratio of 1x playback: 1.0f is normal playback, 2.0f is 2x, 0.5f is half-speed, -2.0f is rewind at 2x speed. 0.0f means nothing is playing (e.g. when state is [RemoteControlClient.PLAYSTATE_ERROR](../android/media/RemoteControlClient.md)). |
+| `speed` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):a value expressed as a ratio of 1x playback: 1.0f is normal playback, 2.0f is 2x, 0.5f is half-speed, -2.0f is rewind at 2x speed. 0.0f means nothing is playing (e.g. when state is [RemoteControlClient.PLAYSTATE_ERROR](RemoteControlClient.md)). |
 
 ### onClientTransportControlUpdate
 
@@ -120,4 +120,4 @@ Called whenever the transport control flags have changed.
 
 | Parameters ||
 |-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `transportControlFlags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):one of the flags authorized in [RemoteControlClient.setTransportControlFlags(int)](../android/media/RemoteControlClient.md)). |
+| `transportControlFlags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):one of the flags authorized in [RemoteControlClient.setTransportControlFlags(int)](RemoteControlClient.md)). |

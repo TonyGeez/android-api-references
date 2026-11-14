@@ -3,7 +3,7 @@ Also in [U Extensions 7](https://developer.android.com/sdkExtensions)
 
 # ReadRecordsRequest
 
-Kotlin | [Java](../android/health/connect/ReadRecordsRequest.md)
+Kotlin | [Java](ReadRecordsRequest.md)
 | --- | --- |
 
 ```
@@ -12,9 +12,9 @@ abstract class ReadRecordsRequest<T : Record!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.health.connect.ReadRecordsRequest](../android/health/connect/ReadRecordsRequest.md) |
+| ↳ | [android.health.connect.ReadRecordsRequest](ReadRecordsRequest.md) |
 
-| Known Direct Subclasses [ReadRecordsRequestUsingFilters](../android/health/connect/ReadRecordsRequestUsingFilters.md), [ReadRecordsRequestUsingIds](../android/health/connect/ReadRecordsRequestUsingIds.md) |---|---| | [ReadRecordsRequestUsingFilters](../android/health/connect/ReadRecordsRequestUsingFilters.md) | Class to represent a request based on time range and data origin filters for `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager#readRecords(android.health.connect.ReadRecordsRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` | | [ReadRecordsRequestUsingIds](../android/health/connect/ReadRecordsRequestUsingIds.md) | A request class to represent request based on `https://developer.android.com/reference/kotlin/android/health/connect/RecordIdFilter` for `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager#readRecords(android.health.connect.ReadRecordsRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` | |
+| Known Direct Subclasses [ReadRecordsRequestUsingFilters](ReadRecordsRequestUsingFilters.md), [ReadRecordsRequestUsingIds](ReadRecordsRequestUsingIds.md) |---|---| | [ReadRecordsRequestUsingFilters](ReadRecordsRequestUsingFilters.md) | Class to represent a request based on time range and data origin filters for `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager#readRecords(android.health.connect.ReadRecordsRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` | | [ReadRecordsRequestUsingIds](ReadRecordsRequestUsingIds.md) | A request class to represent request based on `https://developer.android.com/reference/kotlin/android/health/connect/RecordIdFilter` for `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager#readRecords(android.health.connect.ReadRecordsRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 A Base class to represent a request for `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager#readRecords(android.health.connect.ReadRecordsRequest,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`
@@ -23,7 +23,7 @@ A Base class to represent a request for `https://developer.android.com/reference
 
 | Public methods ||
 |---|---|
-| open [Class](../java/lang/Class.md)\<T\> | `https://developer.android.com/reference/kotlin/android/health/connect/ReadRecordsRequest#getRecordType()()` Returns record type on which read is to be performed |
+| open [Class](../java.lang/Class.md)\<T\> | `https://developer.android.com/reference/kotlin/android/health/connect/ReadRecordsRequest#getRecordType()()` Returns record type on which read is to be performed |
 
 ## Public methods
 

@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # GLDebugHelper
 
-Kotlin| [Java](../android/opengl/GLDebugHelper.md) 
+Kotlin| [Java](GLDebugHelper.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class GLDebugHelper
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.opengl.GLDebugHelper](../android/opengl/GLDebugHelper.md) |
+| ↳ | [android.opengl.GLDebugHelper](GLDebugHelper.md) |
 
 A helper class for debugging OpenGL ES applications. Wraps the supplied GL interface with a new GL interface that adds support for error checking and logging.
 
@@ -21,20 +21,20 @@ A helper class for debugging OpenGL ES applications. Wraps the supplied GL inter
 
 | Constants ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONFIG_CHECK_GL_ERROR](../android/opengl/GLDebugHelper.md) Check glError() after every call. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONFIG_CHECK_THREAD](../android/opengl/GLDebugHelper.md) Check if all calls are on the same thread. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONFIG_LOG_ARGUMENT_NAMES](../android/opengl/GLDebugHelper.md) Print argument names when logging GL Calls. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONFIG_CHECK_GL_ERROR](GLDebugHelper.md) Check glError() after every call. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONFIG_CHECK_THREAD](GLDebugHelper.md) Check if all calls are on the same thread. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONFIG_LOG_ARGUMENT_NAMES](GLDebugHelper.md) Print argument names when logging GL Calls. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_WRONG_THREAD](../android/opengl/GLDebugHelper.md) The Error number used in the GLException that is thrown if CONFIG_CHECK_THREAD is enabled and you call OpenGL ES on the a different thread. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_WRONG_THREAD](GLDebugHelper.md) The Error number used in the GLException that is thrown if CONFIG_CHECK_THREAD is enabled and you call OpenGL ES on the a different thread. |
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------|---|
-| [GLDebugHelper](../android/opengl/GLDebugHelper.md))`()` <br /> |
+| [GLDebugHelper](GLDebugHelper.md))`()` <br /> |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [EGL](../javax/microedition/khronos/egl/EGL.md)! | [wrap](../android/opengl/GLDebugHelper.md))`(`egl:` ` [EGL](../javax/microedition/khronos/egl/EGL.md)!`, `configFlags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `log:` ` [Writer](../java/io/Writer.md)!`)` Wrap an existing EGL interface in a new EGL interface that adds support for error checking and/or logging. |
-| openstatic [GL](../javax/microedition/khronos/opengles/GL.md)! | [wrap](../android/opengl/GLDebugHelper.md))`(`gl:` ` [GL](../javax/microedition/khronos/opengles/GL.md)!`, `configFlags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `log:` ` [Writer](../java/io/Writer.md)!`)` <br /> |
+| openstatic [EGL](../javax.microedition.khronos.egl/EGL.md)! | [wrap](GLDebugHelper.md))`(`egl:` ` [EGL](../javax.microedition.khronos.egl/EGL.md)!`, `configFlags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `log:` ` [Writer](../java.io/Writer.md)!`)` Wrap an existing EGL interface in a new EGL interface that adds support for error checking and/or logging. |
+| openstatic [GL](../javax.microedition.khronos.opengles/GL.md)! | [wrap](GLDebugHelper.md))`(`gl:` ` [GL](../javax.microedition.khronos.opengles/GL.md)!`, `configFlags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `log:` ` [Writer](../java.io/Writer.md)!`)` <br /> |
 
 ## Constants
 
@@ -112,14 +112,14 @@ Wrap an existing EGL interface in a new EGL interface that adds support for erro
 
 | Parameters ||
 |---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `egl` | [EGL](../javax/microedition/khronos/egl/EGL.md)!:the existing GL interface. Must implement EGL and EGL10. May optionally implement EGL11 as well. |
+| `egl` | [EGL](../javax.microedition.khronos.egl/EGL.md)!:the existing GL interface. Must implement EGL and EGL10. May optionally implement EGL11 as well. |
 | `configFlags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):A bitmask of error checking flags. |
-| `log` | [Writer](../java/io/Writer.md)!:- null to disable logging, non-null to enable logging. |
+| `log` | [Writer](../java.io/Writer.md)!:- null to disable logging, non-null to enable logging. |
 | --- | --- |
 
 | Return ||
 |-------------------------------------------------------------------------------------------------|----------------------------|
-| [EGL](../javax/microedition/khronos/egl/EGL.md)! | the wrapped EGL interface. |
+| [EGL](../javax.microedition.khronos.egl/EGL.md)! | the wrapped EGL interface. |
 
 ### wrap
 

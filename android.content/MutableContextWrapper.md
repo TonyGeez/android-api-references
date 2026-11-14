@@ -8,9 +8,9 @@ open class MutableContextWrapper : ContextWrapper
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.content.Context](../android/content/Context.md) |||
-| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) ||
-| | | ↳ | [android.content.MutableContextWrapper](../android/content/MutableContextWrapper.md) |
+| ↳ | [android.content.Context](Context.md) |||
+| | ↳ | [android.content.ContextWrapper](ContextWrapper.md) ||
+| | | ↳ | [android.content.MutableContextWrapper](MutableContextWrapper.md) |
 | --- | --- | --- | --- |
 
 Special version of `https://developer.android.com/reference/kotlin/android/content/ContextWrapper` that allows the base context to be modified after it is initially set.
@@ -2441,4 +2441,4 @@ Change the base context for this ContextWrapper. All calls will then be delegate
 
 | Parameters ||
 |---|---|
-| `base` | [Context](../android/content/Context.md)!: The new base context for this wrapper. |
+| `base` | [Context](Context.md)!: The new base context for this wrapper. |

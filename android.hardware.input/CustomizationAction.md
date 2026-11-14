@@ -8,9 +8,9 @@ abstract class CustomizationAction
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.hardware.input.CustomizationAction](../android/hardware/input/CustomizationAction.md) |
+| ↳ | [android.hardware.input.CustomizationAction](CustomizationAction.md) |
 
-| Known Direct Subclasses [AppCustomizationAction](../android/hardware/input/AppCustomizationAction.md), [SimpleCustomizationAction](../android/hardware/input/SimpleCustomizationAction.md), [UriCustomizationAction](../android/hardware/input/UriCustomizationAction.md) |---|---| | [AppCustomizationAction](../android/hardware/input/AppCustomizationAction.md) | Represents an action that launches or sends an intent to a specific application component in response to a peripheral input customization trigger. | | [SimpleCustomizationAction](../android/hardware/input/SimpleCustomizationAction.md) | Represents predefined simple actions, such as Volume up/down, Screenshot, etc. | | [UriCustomizationAction](../android/hardware/input/UriCustomizationAction.md) | Represents an action that requires an accompanying URI to execute. | |
+| Known Direct Subclasses [AppCustomizationAction](AppCustomizationAction.md), [SimpleCustomizationAction](SimpleCustomizationAction.md), [UriCustomizationAction](UriCustomizationAction.md) |---|---| | [AppCustomizationAction](AppCustomizationAction.md) | Represents an action that launches or sends an intent to a specific application component in response to a peripheral input customization trigger. | | [SimpleCustomizationAction](SimpleCustomizationAction.md) | Represents predefined simple actions, such as Volume up/down, Screenshot, etc. | | [UriCustomizationAction](UriCustomizationAction.md) | Represents an action that requires an accompanying URI to execute. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Represents an action that can be associated with a peripheral customization trigger.

@@ -17,7 +17,7 @@ interface OnGesturePerformedListener
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onGesturePerformed](../android/gesture/GestureOverlayView.OnGesturePerformedListener.md))`(`overlay:` ` [GestureOverlayView](../android/gesture/GestureOverlayView.md)!`, `gesture:` ` [Gesture](../android/gesture/Gesture.md)!`)` <br /> |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onGesturePerformed](../android/gesture/GestureOverlayView.OnGesturePerformedListener.md))`(`overlay:` ` [GestureOverlayView](GestureOverlayView.md)!`, `gesture:` ` [Gesture](Gesture.md)!`)` <br /> |
 
 ## Public methods
 

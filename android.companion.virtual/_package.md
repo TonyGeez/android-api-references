@@ -2,7 +2,7 @@
 
 # android.companion.virtual
 
-Kotlin| [Java](../android/companion/virtual/_package.md)
+Kotlin| [Java](_package.md)
 | --- | --- |
 
 ## Interfaces
@@ -12,6 +12,6 @@ Kotlin| [Java](../android/companion/virtual/_package.md)
 
 ## Classes
 
-| [VirtualDevice](../android/companion/virtual/VirtualDevice.md) | Details of a particular virtual device. |
+| [VirtualDevice](VirtualDevice.md) | Details of a particular virtual device. |
 | --- | --- |
-| [VirtualDeviceManager](../android/companion/virtual/VirtualDeviceManager.md) | System level service for creation and management of virtual devices. |
+| [VirtualDeviceManager](VirtualDeviceManager.md) | System level service for creation and management of virtual devices. |

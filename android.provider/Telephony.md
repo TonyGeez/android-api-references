@@ -4,7 +4,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 
 # Telephony
 
-Kotlin| [Java](../android/provider/Telephony.md) 
+Kotlin| [Java](Telephony.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class Telephony
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.provider.Telephony](../android/provider/Telephony.md) |
+| ↳ | [android.provider.Telephony](Telephony.md) |
 
 The Telephony provider contains data related to phone operation, specifically SMS and MMS messages, access to the APN list, including the MMSC to use, and the service state.
 
@@ -31,10 +31,10 @@ Any app that wants to behave as the user's default SMS app must handle the follo
 - In a broadcast receiver, include an intent filter for [Sms.Intents#WAP_PUSH_DELIVER_ACTION](../android/provider/Telephony.Sms.Intents.md)} (`"android.provider.Telephony.WAP_PUSH_DELIVER"`) with the MIME type`"application/vnd.wap.mms-message"`. The broadcast receiver must also require the [android.Manifest.permission#BROADCAST_WAP_PUSH](../android/Manifest.permission.md) permission.
 
  This allows your app to directly receive incoming MMS messages.
-- In your activity that delivers new messages, include an intent filter for [android.content.Intent#ACTION_SENDTO](../android/content/Intent.md)(`"android.intent.action.SENDTO" `) with schemas,`sms:`,`smsto:`,`mms:`, and`mmsto:`.
+- In your activity that delivers new messages, include an intent filter for [android.content.Intent#ACTION_SENDTO](../android.content/Intent.md)(`"android.intent.action.SENDTO" `) with schemas,`sms:`,`smsto:`,`mms:`, and`mmsto:`.
 
  This allows your app to receive intents from other apps that want to deliver a message.
-- In a service, include an intent filter for [android.telephony.TelephonyManager#ACTION_RESPOND_VIA_MESSAGE](../android/telephony/TelephonyManager.md)(`"android.intent.action.RESPOND_VIA_MESSAGE"`) with schemas,`sms:`,`smsto:`,`mms:`, and`mmsto:`. This service must also require the [android.Manifest.permission#SEND_RESPOND_VIA_MESSAGE](../android/Manifest.permission.md) permission.
+- In a service, include an intent filter for [android.telephony.TelephonyManager#ACTION_RESPOND_VIA_MESSAGE](../android.telephony/TelephonyManager.md)(`"android.intent.action.RESPOND_VIA_MESSAGE"`) with schemas,`sms:`,`smsto:`,`mms:`, and`mmsto:`. This service must also require the [android.Manifest.permission#SEND_RESPOND_VIA_MESSAGE](../android/Manifest.permission.md) permission.
 
  This allows users to respond to incoming phone calls with an immediate text message using your app.
 
@@ -54,7 +54,7 @@ For more information about building SMS apps, read the blog post, [Getting Your 
 | | [Mms](../android/provider/Telephony.Mms.md) Contains all MMS messages. |
 | | [MmsSms](../android/provider/Telephony.MmsSms.md) Contains all MMS and SMS messages. |
 | --- | --- |
-| | [ServiceStateTable](../android/provider/Telephony.ServiceStateTable.md) Constants for interfacing with the ServiceStateProvider and the different fields of the [ServiceState](../android/telephony/ServiceState.md) class accessible through the provider. |
+| | [ServiceStateTable](../android/provider/Telephony.ServiceStateTable.md) Constants for interfacing with the ServiceStateProvider and the different fields of the [ServiceState](../android.telephony/ServiceState.md) class accessible through the provider. |
 | | [Sms](../android/provider/Telephony.Sms.md) Contains all text-based SMS messages. |
 | abstract | [TextBasedSmsColumns](../android/provider/Telephony.TextBasedSmsColumns.md) Base columns for tables that contain text-based SMSs. |
 | --- | --- |

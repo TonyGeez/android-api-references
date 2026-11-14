@@ -6,9 +6,9 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface IBinder
 ```
 
-| [android.os.IBinder](../android/os/IBinder.md) |
+| [android.os.IBinder](IBinder.md) |
 
-Known Direct Subclasses [Binder](../android/os/Binder.md) [Binder](../android/os/Binder.md) Base class for a remotable object, the core part of a lightweight remote procedure call mechanism defined by `https://developer.android.com/reference/kotlin/android/os/IBinder#`.
+Known Direct Subclasses [Binder](Binder.md) [Binder](Binder.md) Base class for a remotable object, the core part of a lightweight remote procedure call mechanism defined by `https://developer.android.com/reference/kotlin/android/os/IBinder#`.
 
 Base interface for a remotable object, the core part of a lightweight remote procedure call mechanism designed for high performance when performing in-process and cross-process calls. This interface describes the abstract protocol for interacting with a remotable object. Do not implement this interface directly, instead extend from `https://developer.android.com/reference/kotlin/android/os/Binder`.
 
@@ -58,7 +58,7 @@ When working with remote objects, you often want to find out when they are no lo
 | --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/IBinder#linkToDeath(android.os.IBinder.DeathRecipient,%20kotlin.Int)(recipient: https://developer.android.com/reference/kotlin/android/os/IBinder.DeathRecipient, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Register the recipient for a notification if this binder goes away. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/IBinder#pingBinder()()` Check to see if the object still exists. |
-| abstract [IInterface](../android/os/IInterface.md)? | `https://developer.android.com/reference/kotlin/android/os/IBinder#queryLocalInterface(kotlin.String)(descriptor: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Attempt to retrieve a local implementation of an interface for this Binder object. |
+| abstract [IInterface](IInterface.md)? | `https://developer.android.com/reference/kotlin/android/os/IBinder#queryLocalInterface(kotlin.String)(descriptor: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Attempt to retrieve a local implementation of an interface for this Binder object. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/IBinder#removeFrozenStateChangeCallback(android.os.IBinder.FrozenStateChangeCallback)(callback: https://developer.android.com/reference/kotlin/android/os/IBinder.FrozenStateChangeCallback)` Unregister a `https://developer.android.com/reference/kotlin/android/os/IBinder.FrozenStateChangeCallback`. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/IBinder#transact(kotlin.Int,%20android.os.Parcel,%20android.os.Parcel,%20kotlin.Int)(code: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, data: https://developer.android.com/reference/kotlin/android/os/Parcel, reply: https://developer.android.com/reference/kotlin/android/os/Parcel?, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Perform a generic operation with the object. |
@@ -192,7 +192,7 @@ You will only receive state change notifications for remote binders, as local bi
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): The executor on which to run the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor on which to run the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [IBinder.FrozenStateChangeCallback](../android/os/IBinder.FrozenStateChangeCallback.md): The callback used to deliver state change notifications. This value cannot be `null`. |
 
 | Exceptions ||
@@ -214,7 +214,7 @@ Print the object's state into the given stream.
 
 | Parameters ||
 |---|---|
-| `fd` | [FileDescriptor](../java/io/FileDescriptor.md): The raw file descriptor that the dump is being sent to. This value cannot be `null`. |
+| `fd` | [FileDescriptor](../java.io/FileDescriptor.md): The raw file descriptor that the dump is being sent to. This value cannot be `null`. |
 | `args` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?: additional arguments to the dump request. This value may be `null`. |
 
 ### dumpAsync
@@ -232,7 +232,7 @@ Like `https://developer.android.com/reference/kotlin/android/os/IBinder#dump(jav
 
 | Parameters ||
 |---|---|
-| `fd` | [FileDescriptor](../java/io/FileDescriptor.md): The raw file descriptor that the dump is being sent to. This value cannot be `null`. |
+| `fd` | [FileDescriptor](../java.io/FileDescriptor.md): The raw file descriptor that the dump is being sent to. This value cannot be `null`. |
 | `args` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?: additional arguments to the dump request. This value may be `null`. |
 
 ### getInterfaceDescriptor
@@ -362,8 +362,8 @@ Perform a generic operation with the object.
 | Parameters ||
 |---|---|
 | `code` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The action to perform. This should be a number between `https://developer.android.com/reference/kotlin/android/os/IBinder#FIRST_CALL_TRANSACTION:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/os/IBinder#LAST_CALL_TRANSACTION:kotlin.Int`. |
-| `data` | [Parcel](../android/os/Parcel.md): Marshalled data to send to the target. Must not be null. If you are not sending any data, you must create an empty Parcel that is given here. |
-| `reply` | [Parcel](../android/os/Parcel.md)?: Marshalled data to be received from the target. May be null if you are not interested in the return value. |
+| `data` | [Parcel](Parcel.md): Marshalled data to send to the target. Must not be null. If you are not sending any data, you must create an empty Parcel that is given here. |
+| `reply` | [Parcel](Parcel.md)?: Marshalled data to be received from the target. May be null if you are not interested in the return value. |
 | --- | --- |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional operation flags. Either 0 for a normal RPC, or `https://developer.android.com/reference/kotlin/android/os/IBinder#FLAG_ONEWAY:kotlin.Int` for a one-way RPC. |
 

@@ -8,7 +8,7 @@ class ApplicationExitInfo : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.ApplicationExitInfo](../android/app/ApplicationExitInfo.md) |
+| ↳ | [android.app.ApplicationExitInfo](ApplicationExitInfo.md) |
 
 Describes the information of an application process's death.
 
@@ -83,8 +83,8 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#getStatus()()` The exit status argument of exit() if the application calls it, or the signal number if the application is signaled. |
 | --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#getTimestamp()()` The timestamp of the process's death, in milliseconds since the epoch, as returned by `https://developer.android.com/reference/kotlin/java/lang/System.html#currentTimeMillis()`. |
-| [InputStream](../java/io/InputStream.md)? | `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#getTraceInputStream()()` Return the InputStream to the traces that was taken by the system prior to the death of the process; typically it'll be available when the reason is `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#REASON_ANR:kotlin.Int`, though if the process gets an ANR but recovers, and dies for another reason later, this trace will be included in the record of `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#` still. |
-| [UserHandle](../android/os/UserHandle.md) | `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#getUserHandle()()` Return the user id of the record on a multi-user system. |
+| [InputStream](../java.io/InputStream.md)? | `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#getTraceInputStream()()` Return the InputStream to the traces that was taken by the system prior to the death of the process; typically it'll be available when the reason is `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#REASON_ANR:kotlin.Int`, though if the process gets an ANR but recovers, and dies for another reason later, this trace will be included in the record of `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#` still. |
+| [UserHandle](../android.os/UserHandle.md) | `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#getUserHandle()()` Return the user id of the record on a multi-user system. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#hashCode()()` Returns a hash code value for the object. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#toString()()` Returns a string representation of the object. |
@@ -93,7 +93,7 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ApplicationExitInfo](../android/app/ApplicationExitInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ApplicationExitInfo](ApplicationExitInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/app/ApplicationExitInfo#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -632,7 +632,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

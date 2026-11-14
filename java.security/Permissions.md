@@ -10,27 +10,27 @@ class Permissions : PermissionCollection, Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.security.PermissionCollection](../java/security/PermissionCollection.md) ||
-| | ↳ | [java.security.Permissions](../java/security/Permissions.md) |
+| ↳ | [java.security.PermissionCollection](PermissionCollection.md) ||
+| | ↳ | [java.security.Permissions](Permissions.md) |
 
-Android doesn't support [SecurityManager](../java/lang/SecurityManager.md). Do not use this class.
+Android doesn't support [SecurityManager](../java.lang/SecurityManager.md). Do not use this class.
 
 ## Summary
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------|---|
-| [Permissions](../java/security/Permissions.md))`()` <br /> |
+| [Permissions](Permissions.md))`()` <br /> |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [add](../java/security/Permissions.md))`(`permission:` ` [Permission](../java/security/Permission.md)!`)` <br /> |
-| [Enumeration](../java/util/Enumeration.md)\< [Permission](../java/security/Permission.md)!\>! | [elements](../java/security/Permissions.md))`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [implies](../java/security/Permissions.md))`(`permission:` ` [Permission](../java/security/Permission.md)!`)` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [add](Permissions.md))`(`permission:` ` [Permission](Permission.md)!`)` <br /> |
+| [Enumeration](../java.util/Enumeration.md)\< [Permission](Permission.md)!\>! | [elements](Permissions.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [implies](Permissions.md))`(`permission:` ` [Permission](Permission.md)!`)` <br /> |
 | --- | --- |
 
 | Inherited functions ||
 |---|---|
-| From class [PermissionCollection](../java/security/PermissionCollection.md) |------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------| | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isReadOnly](../java/security/PermissionCollection.md))`()` <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setReadOnly](../java/security/PermissionCollection.md))`()` <br /> | ||
+| From class [PermissionCollection](PermissionCollection.md) |------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------| | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isReadOnly](PermissionCollection.md))`()` <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setReadOnly](PermissionCollection.md))`()` <br /> | ||
 
 ## Public constructors
 
@@ -54,7 +54,7 @@ fun add(permission: Permission!): Unit
 
 | Parameters ||
 |--------------|----------------------------------------------------------------------------------------------------------------------|
-| `permission` | [Permission](../java/security/Permission.md)!:the Permission object to add. |
+| `permission` | [Permission](Permission.md)!:the Permission object to add. |
 
 ### elements
 
@@ -66,7 +66,7 @@ fun elements(): Enumeration<Permission!>!
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------|
-| [Enumeration](../java/util/Enumeration.md)< [Permission](../java/security/Permission.md)!>! | an enumeration of all the Permissions. |
+| [Enumeration](../java.util/Enumeration.md)< [Permission](Permission.md)!>! | an enumeration of all the Permissions. |
 
 ### implies
 
@@ -78,7 +78,7 @@ fun implies(permission: Permission!): Boolean
 
 | Parameters ||
 |--------------|--------------------------------------------------------------------------------------------------------------------------|
-| `permission` | [Permission](../java/security/Permission.md)!:the Permission object to compare. |
+| `permission` | [Permission](Permission.md)!:the Permission object to compare. |
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|

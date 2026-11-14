@@ -11,8 +11,8 @@ open class TooManyListenersException : Exception
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||
-| | | ↳ | [java.util.TooManyListenersException](../java/util/TooManyListenersException.md) |
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) ||
+| | | ↳ | [java.util.TooManyListenersException](TooManyListenersException.md) |
 | --- | --- | --- | --- |
 
 The`TooManyListenersException `Exception is used as part of the Java Event model to annotate and implement a unicast special case of a multicast Event Source.
@@ -23,8 +23,8 @@ The presence of a "throws TooManyListenersException" clause on any given concret
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [TooManyListenersException](../java/util/TooManyListenersException.md))`()` Constructs a TooManyListenersException with no detail message. |
-| [TooManyListenersException](../java/util/TooManyListenersException.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a TooManyListenersException with the specified detail message. |
+| [TooManyListenersException](TooManyListenersException.md))`()` Constructs a TooManyListenersException with no detail message. |
+| [TooManyListenersException](TooManyListenersException.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a TooManyListenersException with the specified detail message. |
 
 ## Public constructors
 

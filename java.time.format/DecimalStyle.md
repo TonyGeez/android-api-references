@@ -10,7 +10,7 @@ class DecimalStyle
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.time.format.DecimalStyle](../java/time/format/DecimalStyle.md) |
+| ↳ | [java.time.format.DecimalStyle](DecimalStyle.md) |
 
 Localized decimal style used in date and time formatting.
 
@@ -20,28 +20,28 @@ A significant part of dealing with dates and times is the localization. This cla
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/time/format/DecimalStyle.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Checks if this DecimalStyle is equal to another DecimalStyle. |
-| static [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Locale](../java/util/Locale.md)!\>! | [getAvailableLocales](../java/time/format/DecimalStyle.md))`()` Lists all the locales that are supported. |
-| [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [getDecimalSeparator](../java/time/format/DecimalStyle.md))`()` Gets the character that represents the decimal point. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](DecimalStyle.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Checks if this DecimalStyle is equal to another DecimalStyle. |
+| static [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Locale](../java.util/Locale.md)!\>! | [getAvailableLocales](DecimalStyle.md))`()` Lists all the locales that are supported. |
+| [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [getDecimalSeparator](DecimalStyle.md))`()` Gets the character that represents the decimal point. |
 | --- | --- |
-| [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [getNegativeSign](../java/time/format/DecimalStyle.md))`()` Gets the character that represents the negative sign. |
-| [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [getPositiveSign](../java/time/format/DecimalStyle.md))`()` Gets the character that represents the positive sign. |
-| [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [getZeroDigit](../java/time/format/DecimalStyle.md))`()` Gets the character that represents zero. |
+| [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [getNegativeSign](DecimalStyle.md))`()` Gets the character that represents the negative sign. |
+| [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [getPositiveSign](DecimalStyle.md))`()` Gets the character that represents the positive sign. |
+| [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [getZeroDigit](DecimalStyle.md))`()` Gets the character that represents zero. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/time/format/DecimalStyle.md))`()` A hash code for this DecimalStyle. |
-| static [DecimalStyle](../java/time/format/DecimalStyle.md)! | [of](../java/time/format/DecimalStyle.md))`(`locale:` ` [Locale](../java/util/Locale.md)!`)` Obtains the DecimalStyle for the specified locale. |
-| static [DecimalStyle](../java/time/format/DecimalStyle.md)! | [ofDefaultLocale](../java/time/format/DecimalStyle.md))`()` Obtains the DecimalStyle for the default [FORMAT](../java/util/Locale.Category.md) locale. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](DecimalStyle.md))`()` A hash code for this DecimalStyle. |
+| static [DecimalStyle](DecimalStyle.md)! | [of](DecimalStyle.md))`(`locale:` ` [Locale](../java.util/Locale.md)!`)` Obtains the DecimalStyle for the specified locale. |
+| static [DecimalStyle](DecimalStyle.md)! | [ofDefaultLocale](DecimalStyle.md))`()` Obtains the DecimalStyle for the default [FORMAT](../java/util/Locale.Category.md) locale. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/time/format/DecimalStyle.md))`()` Returns a string describing this DecimalStyle. |
-| [DecimalStyle](../java/time/format/DecimalStyle.md)! | [withDecimalSeparator](../java/time/format/DecimalStyle.md))`(`decimalSeparator:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Returns a copy of the info with a new character that represents the decimal point. |
-| [DecimalStyle](../java/time/format/DecimalStyle.md)! | [withNegativeSign](../java/time/format/DecimalStyle.md))`(`negativeSign:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Returns a copy of the info with a new character that represents the negative sign. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](DecimalStyle.md))`()` Returns a string describing this DecimalStyle. |
+| [DecimalStyle](DecimalStyle.md)! | [withDecimalSeparator](DecimalStyle.md))`(`decimalSeparator:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Returns a copy of the info with a new character that represents the decimal point. |
+| [DecimalStyle](DecimalStyle.md)! | [withNegativeSign](DecimalStyle.md))`(`negativeSign:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Returns a copy of the info with a new character that represents the negative sign. |
 | --- | --- |
-| [DecimalStyle](../java/time/format/DecimalStyle.md)! | [withPositiveSign](../java/time/format/DecimalStyle.md))`(`positiveSign:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Returns a copy of the info with a new character that represents the positive sign. |
-| [DecimalStyle](../java/time/format/DecimalStyle.md)! | [withZeroDigit](../java/time/format/DecimalStyle.md))`(`zeroDigit:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Returns a copy of the info with a new character that represents zero. |
+| [DecimalStyle](DecimalStyle.md)! | [withPositiveSign](DecimalStyle.md))`(`positiveSign:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Returns a copy of the info with a new character that represents the positive sign. |
+| [DecimalStyle](DecimalStyle.md)! | [withZeroDigit](DecimalStyle.md))`(`zeroDigit:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Returns a copy of the info with a new character that represents zero. |
 
 | Properties ||
 |------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [DecimalStyle](../java/time/format/DecimalStyle.md)! | [STANDARD](../java/time/format/DecimalStyle.md) The standard set of non-localized decimal style symbols. |
+| static [DecimalStyle](DecimalStyle.md)! | [STANDARD](DecimalStyle.md) The standard set of non-localized decimal style symbols. |
 
 ## Public methods
 
@@ -77,7 +77,7 @@ The locale 'en_US' will always be present.
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [Locale](../java/util/Locale.md)!>! | a Set of Locales for which localization is supported |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [Locale](../java.util/Locale.md)!>! | a Set of Locales for which localization is supported |
 
 ### getDecimalSeparator
 
@@ -167,15 +167,15 @@ static fun of(locale: Locale!): DecimalStyle!
 
 Obtains the DecimalStyle for the specified locale.
 
-This method provides access to locale sensitive decimal style symbols. If the locale contains "nu" (Numbering System) [Unicode extensions](../java/util/Locale.md), returned instance will reflect the values specified with those extensions.
+This method provides access to locale sensitive decimal style symbols. If the locale contains "nu" (Numbering System) [Unicode extensions](../java.util/Locale.md), returned instance will reflect the values specified with those extensions.
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------|
-| `locale` | [Locale](../java/util/Locale.md)!:the locale, not null |
+| `locale` | [Locale](../java.util/Locale.md)!:the locale, not null |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|-----------------------------|
-| [DecimalStyle](../java/time/format/DecimalStyle.md)! | the decimal style, not null |
+| [DecimalStyle](DecimalStyle.md)! | the decimal style, not null |
 
 ### ofDefaultLocale
 
@@ -189,11 +189,11 @@ Obtains the DecimalStyle for the default [FORMAT](../java/util/Locale.Category.m
 
 This method provides access to locale sensitive decimal style symbols.
 
-This is equivalent to calling [of(Locale.getDefault(Locale.Category.FORMAT))](../java/time/format/DecimalStyle.md)).
+This is equivalent to calling [of(Locale.getDefault(Locale.Category.FORMAT))](DecimalStyle.md)).
 
 | Return ||
 |------------------------------------------------------------------------------------------------|-----------------------------|
-| [DecimalStyle](../java/time/format/DecimalStyle.md)! | the decimal style, not null |
+| [DecimalStyle](DecimalStyle.md)! | the decimal style, not null |
 
 **See Also**
 
@@ -231,7 +231,7 @@ The character used to represent a decimal point may vary by culture. This method
 
 | Return ||
 |------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| [DecimalStyle](../java/time/format/DecimalStyle.md)! | a copy with a new character that represents the decimal point, not null |
+| [DecimalStyle](DecimalStyle.md)! | a copy with a new character that represents the decimal point, not null |
 
 ### withNegativeSign
 
@@ -251,7 +251,7 @@ The character used to represent a negative number may vary by culture. This meth
 
 | Return ||
 |------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| [DecimalStyle](../java/time/format/DecimalStyle.md)! | a copy with a new character that represents the negative sign, not null |
+| [DecimalStyle](DecimalStyle.md)! | a copy with a new character that represents the negative sign, not null |
 
 ### withPositiveSign
 
@@ -271,7 +271,7 @@ The character used to represent a positive number may vary by culture. This meth
 
 | Return ||
 |------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| [DecimalStyle](../java/time/format/DecimalStyle.md)! | a copy with a new character that represents the positive sign, not null |
+| [DecimalStyle](DecimalStyle.md)! | a copy with a new character that represents the positive sign, not null |
 
 ### withZeroDigit
 
@@ -291,7 +291,7 @@ The character used to represent digits may vary by culture. This method specifie
 
 | Return ||
 |------------------------------------------------------------------------------------------------|------------------------------------------------------------|
-| [DecimalStyle](../java/time/format/DecimalStyle.md)! | a copy with a new character that represents zero, not null |
+| [DecimalStyle](DecimalStyle.md)! | a copy with a new character that represents zero, not null |
 
 ## Properties
 

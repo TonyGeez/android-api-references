@@ -19,7 +19,7 @@ Interface definition for a callback to be invoked when the media source is ready
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onPrepared](../android/media/MediaPlayer.OnPreparedListener.md))`(`mp:` ` [MediaPlayer](../android/media/MediaPlayer.md)!`)` Called when the media file is ready for playback. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onPrepared](../android/media/MediaPlayer.OnPreparedListener.md))`(`mp:` ` [MediaPlayer](MediaPlayer.md)!`)` Called when the media file is ready for playback. |
 
 ## Public methods
 
@@ -35,4 +35,4 @@ Called when the media file is ready for playback.
 
 | Parameters ||
 |------|-------------------------------------------------------------------------------------------------------------------------------------|
-| `mp` | [MediaPlayer](../android/media/MediaPlayer.md)!:the MediaPlayer that is ready for playback |
+| `mp` | [MediaPlayer](MediaPlayer.md)!:the MediaPlayer that is ready for playback |

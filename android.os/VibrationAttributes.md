@@ -2,7 +2,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 
 # VibrationAttributes
 
-Kotlin | [Java](../android/os/VibrationAttributes.md)
+Kotlin | [Java](VibrationAttributes.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class VibrationAttributes : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.os.VibrationAttributes](../android/os/VibrationAttributes.md) |
+| ↳ | [android.os.VibrationAttributes](VibrationAttributes.md) |
 
 Encapsulates a collection of attributes describing information about a vibration.
 
@@ -52,7 +52,7 @@ Encapsulates a collection of attributes describing information about a vibration
 
 | Public methods ||
 |---|---|
-| static [VibrationAttributes](../android/os/VibrationAttributes.md) | `https://developer.android.com/reference/kotlin/android/os/VibrationAttributes#createForUsage(kotlin.Int)(usage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a new `https://developer.android.com/reference/kotlin/android/os/VibrationAttributes#` instance with given usage. |
+| static [VibrationAttributes](VibrationAttributes.md) | `https://developer.android.com/reference/kotlin/android/os/VibrationAttributes#createForUsage(kotlin.Int)(usage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a new `https://developer.android.com/reference/kotlin/android/os/VibrationAttributes#` instance with given usage. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/VibrationAttributes#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/VibrationAttributes#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | --- | --- |
@@ -68,7 +68,7 @@ Encapsulates a collection of attributes describing information about a vibration
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [VibrationAttributes](../android/os/VibrationAttributes.md)!\> | `https://developer.android.com/reference/kotlin/android/os/VibrationAttributes#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [VibrationAttributes](VibrationAttributes.md)!\> | `https://developer.android.com/reference/kotlin/android/os/VibrationAttributes#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -458,7 +458,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
+| `dest` | [Parcel](Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

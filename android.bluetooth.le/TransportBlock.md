@@ -2,7 +2,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 
 # TransportBlock
 
-Kotlin | [Java](../android/bluetooth/le/TransportBlock.md)
+Kotlin | [Java](TransportBlock.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class TransportBlock : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.bluetooth.le.TransportBlock](../android/bluetooth/le/TransportBlock.md) |
+| ↳ | [android.bluetooth.le.TransportBlock](TransportBlock.md) |
 
 Wrapper for Transport Discovery Data Transport Blocks. This class represents a Transport Block from a Transport Discovery Data.
 
@@ -43,7 +43,7 @@ Wrapper for Transport Discovery Data Transport Blocks. This class represents a T
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [TransportBlock](../android/bluetooth/le/TransportBlock.md)!\> | `https://developer.android.com/reference/kotlin/android/bluetooth/le/TransportBlock#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [TransportBlock](TransportBlock.md)!\> | `https://developer.android.com/reference/kotlin/android/bluetooth/le/TransportBlock#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public constructors
 
@@ -218,7 +218,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

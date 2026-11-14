@@ -4,7 +4,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # TimeInstantRangeFilter
 
-Kotlin| [Java](../android/health/connect/TimeInstantRangeFilter.md) 
+Kotlin| [Java](TimeInstantRangeFilter.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class TimeInstantRangeFilter : TimeRangeFilter
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.health.connect.TimeInstantRangeFilter](../android/health/connect/TimeInstantRangeFilter.md) |
+| ↳ | [android.health.connect.TimeInstantRangeFilter](TimeInstantRangeFilter.md) |
 
 Specification of time range for read and delete requests. Internally represents a SQLLite argument that specifies start and end time to put in as SQLLite parameters. The filter must be bound at least at one of the ends, i.e., either the start or end time must be set, or else an IllegalArgumentException is thrown.
 
@@ -21,16 +21,16 @@ Specification of time range for read and delete requests. Internally represents 
 
 | Nested classes ||
 |---|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](../android/health/connect/TimeInstantRangeFilter.Builder.md) Builder class for [TimeInstantRangeFilter](../android/health/connect/TimeInstantRangeFilter.md) |
+| | [Builder](../android/health/connect/TimeInstantRangeFilter.Builder.md) Builder class for [TimeInstantRangeFilter](TimeInstantRangeFilter.md) |
 
 | Public methods ||
 |------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/health/connect/TimeInstantRangeFilter.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
-| [Instant](../java/time/Instant.md)? | [getEndTime](../android/health/connect/TimeInstantRangeFilter.md))`()` <br /> |
-| [Instant](../java/time/Instant.md)? | [getStartTime](../android/health/connect/TimeInstantRangeFilter.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](TimeInstantRangeFilter.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
+| [Instant](../java.time/Instant.md)? | [getEndTime](TimeInstantRangeFilter.md))`()` <br /> |
+| [Instant](../java.time/Instant.md)? | [getStartTime](TimeInstantRangeFilter.md))`()` <br /> |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/health/connect/TimeInstantRangeFilter.md))`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isBounded](../android/health/connect/TimeInstantRangeFilter.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](TimeInstantRangeFilter.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isBounded](TimeInstantRangeFilter.md))`()` <br /> |
 
 ## Public methods
 
@@ -60,7 +60,7 @@ fun getEndTime(): Instant?
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------------------------------------------------|
-| [Instant](../java/time/Instant.md)? | end time instant of this filter This value may be`null`. |
+| [Instant](../java.time/Instant.md)? | end time instant of this filter This value may be`null`. |
 
 ### getStartTime
 
@@ -72,7 +72,7 @@ fun getStartTime(): Instant?
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------------------------|
-| [Instant](../java/time/Instant.md)? | start time instant of this filter This value may be`null`. |
+| [Instant](../java.time/Instant.md)? | start time instant of this filter This value may be`null`. |
 
 ### hashCode
 

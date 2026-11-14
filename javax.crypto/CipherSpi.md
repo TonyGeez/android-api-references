@@ -10,11 +10,11 @@ abstract class CipherSpi
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.crypto.CipherSpi](../javax/crypto/CipherSpi.md) |
+| ↳ | [javax.crypto.CipherSpi](CipherSpi.md) |
 
 This class defines the*Service Provider Interface* (**SPI** ) for the`Cipher`class. All the abstract methods in this class must be implemented by each cryptographic service provider who wishes to supply the implementation of a particular cipher algorithm.
 
-In order to create an instance of`Cipher`, which encapsulates an instance of this`CipherSpi`class, an application calls one of the [getInstance](../javax/crypto/Cipher.md))factory methods of the [Cipher](../javax/crypto/Cipher.md) engine class and specifies the requested*transformation*. Optionally, the application may also specify the name of a provider.
+In order to create an instance of`Cipher`, which encapsulates an instance of this`CipherSpi`class, an application calls one of the [getInstance](Cipher.md))factory methods of the [Cipher](Cipher.md) engine class and specifies the requested*transformation*. Optionally, the application may also specify the name of a provider.
 
 A*transformation* is a string that describes the operation (or set of operations) to be performed on the given input, to produce some output. A transformation always includes the name of a cryptographic algorithm (e.g.,*DES*), and may be followed by a feedback mode and padding scheme.
 
@@ -30,7 +30,7 @@ A transformation is of the form:
   </code>
 ```
 
-A provider may supply a separate class for each combination of*algorithm/mode/padding* , or may decide to provide more generic classes representing sub-transformations corresponding to*algorithm* or*algorithm/mode* or*algorithm//padding* (note the double slashes), in which case the requested mode and/or padding are set automatically by the`getInstance`methods of`Cipher`, which invoke the [engineSetMode](../javax/crypto/CipherSpi.md))and [engineSetPadding](../javax/crypto/CipherSpi.md))methods of the provider's subclass of`CipherSpi`.
+A provider may supply a separate class for each combination of*algorithm/mode/padding* , or may decide to provide more generic classes representing sub-transformations corresponding to*algorithm* or*algorithm/mode* or*algorithm//padding* (note the double slashes), in which case the requested mode and/or padding are set automatically by the`getInstance`methods of`Cipher`, which invoke the [engineSetMode](CipherSpi.md))and [engineSetPadding](CipherSpi.md))methods of the provider's subclass of`CipherSpi`.
 
 A`Cipher`property in a provider master class may have one of the following formats:
 
@@ -129,36 +129,36 @@ The`getInstance`factory method of the`Cipher`engine class follows these rules in
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------|---|
-| [CipherSpi](../javax/crypto/CipherSpi.md))`()` <br /> |
+| [CipherSpi](CipherSpi.md))`()` <br /> |
 
 | Protected methods ||
 |------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [engineDoFinal](../javax/crypto/CipherSpi.md))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `inputOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `inputLen:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Encrypts or decrypts data in a single-part operation, or finishes a multiple-part operation. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [engineDoFinal](../javax/crypto/CipherSpi.md))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `inputOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `inputLen:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `output:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `outputOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Encrypts or decrypts data in a single-part operation, or finishes a multiple-part operation. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [engineDoFinal](../javax/crypto/CipherSpi.md))`(`input:` ` [ByteBuffer](../java/nio/ByteBuffer.md)!`, `output:` ` [ByteBuffer](../java/nio/ByteBuffer.md)!`)` Encrypts or decrypts data in a single-part operation, or finishes a multiple-part operation. |
+| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [engineDoFinal](CipherSpi.md))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `inputOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `inputLen:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Encrypts or decrypts data in a single-part operation, or finishes a multiple-part operation. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [engineDoFinal](CipherSpi.md))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `inputOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `inputLen:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `output:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `outputOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Encrypts or decrypts data in a single-part operation, or finishes a multiple-part operation. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [engineDoFinal](CipherSpi.md))`(`input:` ` [ByteBuffer](../java.nio/ByteBuffer.md)!`, `output:` ` [ByteBuffer](../java.nio/ByteBuffer.md)!`)` Encrypts or decrypts data in a single-part operation, or finishes a multiple-part operation. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [engineGetBlockSize](../javax/crypto/CipherSpi.md))`()` Returns the block size (in bytes). |
-| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [engineGetIV](../javax/crypto/CipherSpi.md))`()` Returns the initialization vector (IV) in a new buffer. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [engineGetKeySize](../javax/crypto/CipherSpi.md))`(`key:` ` [Key](../java/security/Key.md)!`)` Returns the key size of the given key object in bits. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [engineGetBlockSize](CipherSpi.md))`()` Returns the block size (in bytes). |
+| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [engineGetIV](CipherSpi.md))`()` Returns the initialization vector (IV) in a new buffer. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [engineGetKeySize](CipherSpi.md))`(`key:` ` [Key](../java.security/Key.md)!`)` Returns the key size of the given key object in bits. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [engineGetOutputSize](../javax/crypto/CipherSpi.md))`(`inputLen:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the length in bytes that an output buffer would need to be in order to hold the result of the next`update`or`doFinal`operation, given the input length`inputLen`(in bytes). |
-| abstract [AlgorithmParameters](../java/security/AlgorithmParameters.md)! | [engineGetParameters](../javax/crypto/CipherSpi.md))`()` Returns the parameters used with this cipher. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](../javax/crypto/CipherSpi.md))`(`opmode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `key:` ` [Key](../java/security/Key.md)!`, `params:` ` [AlgorithmParameters](../java/security/AlgorithmParameters.md)!`, `random:` ` [SecureRandom](../java/security/SecureRandom.md)!`)` Initializes this cipher with a key, a set of algorithm parameters, and a source of randomness. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [engineGetOutputSize](CipherSpi.md))`(`inputLen:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the length in bytes that an output buffer would need to be in order to hold the result of the next`update`or`doFinal`operation, given the input length`inputLen`(in bytes). |
+| abstract [AlgorithmParameters](../java.security/AlgorithmParameters.md)! | [engineGetParameters](CipherSpi.md))`()` Returns the parameters used with this cipher. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](CipherSpi.md))`(`opmode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `key:` ` [Key](../java.security/Key.md)!`, `params:` ` [AlgorithmParameters](../java.security/AlgorithmParameters.md)!`, `random:` ` [SecureRandom](../java.security/SecureRandom.md)!`)` Initializes this cipher with a key, a set of algorithm parameters, and a source of randomness. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](../javax/crypto/CipherSpi.md))`(`opmode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `key:` ` [Key](../java/security/Key.md)!`, `random:` ` [SecureRandom](../java/security/SecureRandom.md)!`)` Initializes this cipher with a key and a source of randomness. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](../javax/crypto/CipherSpi.md))`(`opmode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `key:` ` [Key](../java/security/Key.md)!`, `params:` ` [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)!`, `random:` ` [SecureRandom](../java/security/SecureRandom.md)!`)` Initializes this cipher with a key, a set of algorithm parameters, and a source of randomness. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineSetMode](../javax/crypto/CipherSpi.md))`(`mode:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the mode of this cipher. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](CipherSpi.md))`(`opmode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `key:` ` [Key](../java.security/Key.md)!`, `random:` ` [SecureRandom](../java.security/SecureRandom.md)!`)` Initializes this cipher with a key and a source of randomness. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](CipherSpi.md))`(`opmode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `key:` ` [Key](../java.security/Key.md)!`, `params:` ` [AlgorithmParameterSpec](../java.security.spec/AlgorithmParameterSpec.md)!`, `random:` ` [SecureRandom](../java.security/SecureRandom.md)!`)` Initializes this cipher with a key, a set of algorithm parameters, and a source of randomness. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineSetMode](CipherSpi.md))`(`mode:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the mode of this cipher. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineSetPadding](../javax/crypto/CipherSpi.md))`(`padding:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the padding mechanism of this cipher. |
-| open [Key](../java/security/Key.md)! | [engineUnwrap](../javax/crypto/CipherSpi.md))`(`wrappedKey:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `wrappedKeyAlgorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `wrappedKeyType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Unwrap a previously wrapped key. |
-| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [engineUpdate](../javax/crypto/CipherSpi.md))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `inputOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `inputLen:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Continues a multiple-part encryption or decryption operation (depending on how this cipher was initialized), processing another data part. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineSetPadding](CipherSpi.md))`(`padding:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the padding mechanism of this cipher. |
+| open [Key](../java.security/Key.md)! | [engineUnwrap](CipherSpi.md))`(`wrappedKey:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `wrappedKeyAlgorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `wrappedKeyType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Unwrap a previously wrapped key. |
+| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [engineUpdate](CipherSpi.md))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `inputOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `inputLen:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Continues a multiple-part encryption or decryption operation (depending on how this cipher was initialized), processing another data part. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [engineUpdate](../javax/crypto/CipherSpi.md))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `inputOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `inputLen:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `output:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `outputOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Continues a multiple-part encryption or decryption operation (depending on how this cipher was initialized), processing another data part. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [engineUpdate](../javax/crypto/CipherSpi.md))`(`input:` ` [ByteBuffer](../java/nio/ByteBuffer.md)!`, `output:` ` [ByteBuffer](../java/nio/ByteBuffer.md)!`)` Continues a multiple-part encryption or decryption operation (depending on how this cipher was initialized), processing another data part. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineUpdateAAD](../javax/crypto/CipherSpi.md))`(`src:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Continues a multi-part update of the Additional Authentication Data (AAD), using a subset of the provided buffer. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [engineUpdate](CipherSpi.md))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `inputOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `inputLen:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `output:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `outputOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Continues a multiple-part encryption or decryption operation (depending on how this cipher was initialized), processing another data part. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [engineUpdate](CipherSpi.md))`(`input:` ` [ByteBuffer](../java.nio/ByteBuffer.md)!`, `output:` ` [ByteBuffer](../java.nio/ByteBuffer.md)!`)` Continues a multiple-part encryption or decryption operation (depending on how this cipher was initialized), processing another data part. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineUpdateAAD](CipherSpi.md))`(`src:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Continues a multi-part update of the Additional Authentication Data (AAD), using a subset of the provided buffer. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineUpdateAAD](../javax/crypto/CipherSpi.md))`(`src:` ` [ByteBuffer](../java/nio/ByteBuffer.md)!`)` Continues a multi-part update of the Additional Authentication Data (AAD). |
-| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [engineWrap](../javax/crypto/CipherSpi.md))`(`key:` ` [Key](../java/security/Key.md)!`)` Wrap a key. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineUpdateAAD](CipherSpi.md))`(`src:` ` [ByteBuffer](../java.nio/ByteBuffer.md)!`)` Continues a multi-part update of the Additional Authentication Data (AAD). |
+| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [engineWrap](CipherSpi.md))`(`key:` ` [Key](../java.security/Key.md)!`)` Wrap a key. |
 
 ## Public constructors
 
@@ -280,8 +280,8 @@ Subclasses should consider overriding this method if they can process ByteBuffer
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------|
-| `input` | [ByteBuffer](../java/nio/ByteBuffer.md)!:the input ByteBuffer |
-| `output` | [ByteBuffer](../java/nio/ByteBuffer.md)!:the output ByteByffer |
+| `input` | [ByteBuffer](../java.nio/ByteBuffer.md)!:the input ByteBuffer |
+| `output` | [ByteBuffer](../java.nio/ByteBuffer.md)!:the output ByteByffer |
 
 | Return ||
 |----------------------------------------------------------------------------|---------------------------------------|
@@ -340,7 +340,7 @@ This concrete method has been added to this previously-defined abstract class. I
 
 | Parameters ||
 |-------|------------------------------------------------------------------------------------------------|
-| `key` | [Key](../java/security/Key.md)!:the key object. |
+| `key` | [Key](../java.security/Key.md)!:the key object. |
 
 | Return ||
 |----------------------------------------------------------------------------|---------------------------------------|
@@ -386,7 +386,7 @@ The returned parameters may be the same that were used to initialize this cipher
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
-| [AlgorithmParameters](../java/security/AlgorithmParameters.md)! | the parameters used with this cipher, or null if this cipher does not use any parameters. |
+| [AlgorithmParameters](../java.security/AlgorithmParameters.md)! | the parameters used with this cipher, or null if this cipher does not use any parameters. |
 
 ### engineInit
 
@@ -405,7 +405,7 @@ Initializes this cipher with a key, a set of algorithm parameters, and a source 
 
 The cipher is initialized for one of the following four operations: encryption, decryption, key wrapping or key unwrapping, depending on the value of`opmode`.
 
-If this cipher requires any algorithm parameters and`params`is null, the underlying cipher implementation is supposed to generate the required parameters itself (using provider-specific default or random values) if it is being initialized for encryption or key wrapping, and raise an`InvalidAlgorithmParameterException`if it is being initialized for decryption or key unwrapping. The generated parameters can be retrieved using [engineGetParameters](../javax/crypto/CipherSpi.md))or [engineGetIV](../javax/crypto/CipherSpi.md))(if the parameter is an IV).
+If this cipher requires any algorithm parameters and`params`is null, the underlying cipher implementation is supposed to generate the required parameters itself (using provider-specific default or random values) if it is being initialized for encryption or key wrapping, and raise an`InvalidAlgorithmParameterException`if it is being initialized for decryption or key unwrapping. The generated parameters can be retrieved using [engineGetParameters](CipherSpi.md))or [engineGetIV](CipherSpi.md))(if the parameter is an IV).
 
 If this cipher requires algorithm parameters that cannot be derived from the input parameters, and there are no reasonable provider-specific default values, initialization will necessarily fail.
 
@@ -416,10 +416,10 @@ Note that when a Cipher object is initialized, it loses all previously-acquired 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `opmode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the operation mode of this cipher (this is one of the following:`ENCRYPT_MODE`,`DECRYPT_MODE`,`WRAP_MODE`or`UNWRAP_MODE`) |
-| `key` | [Key](../java/security/Key.md)!:the encryption key |
-| `params` | [AlgorithmParameters](../java/security/AlgorithmParameters.md)!:the algorithm parameters |
+| `key` | [Key](../java.security/Key.md)!:the encryption key |
+| `params` | [AlgorithmParameters](../java.security/AlgorithmParameters.md)!:the algorithm parameters |
 | --- | --- |
-| `random` | [SecureRandom](../java/security/SecureRandom.md)!:the source of randomness |
+| `random` | [SecureRandom](../java.security/SecureRandom.md)!:the source of randomness |
 
 | Exceptions ||
 |----------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
@@ -444,7 +444,7 @@ Initializes this cipher with a key and a source of randomness.
 
 The cipher is initialized for one of the following four operations: encryption, decryption, key wrapping or key unwrapping, depending on the value of`opmode`.
 
-If this cipher requires any algorithm parameters that cannot be derived from the given`key`, the underlying cipher implementation is supposed to generate the required parameters itself (using provider-specific default or random values) if it is being initialized for encryption or key wrapping, and raise an`InvalidKeyException`if it is being initialized for decryption or key unwrapping. The generated parameters can be retrieved using [engineGetParameters](../javax/crypto/CipherSpi.md))or [engineGetIV](../javax/crypto/CipherSpi.md))(if the parameter is an IV).
+If this cipher requires any algorithm parameters that cannot be derived from the given`key`, the underlying cipher implementation is supposed to generate the required parameters itself (using provider-specific default or random values) if it is being initialized for encryption or key wrapping, and raise an`InvalidKeyException`if it is being initialized for decryption or key unwrapping. The generated parameters can be retrieved using [engineGetParameters](CipherSpi.md))or [engineGetIV](CipherSpi.md))(if the parameter is an IV).
 
 If this cipher requires algorithm parameters that cannot be derived from the input parameters, and there are no reasonable provider-specific default values, initialization will necessarily fail.
 
@@ -455,8 +455,8 @@ Note that when a Cipher object is initialized, it loses all previously-acquired 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `opmode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the operation mode of this cipher (this is one of the following:`ENCRYPT_MODE`,`DECRYPT_MODE`,`WRAP_MODE`or`UNWRAP_MODE`) |
-| `key` | [Key](../java/security/Key.md)!:the encryption key |
-| `random` | [SecureRandom](../java/security/SecureRandom.md)!:the source of randomness |
+| `key` | [Key](../java.security/Key.md)!:the encryption key |
+| `random` | [SecureRandom](../java.security/SecureRandom.md)!:the source of randomness |
 | --- | --- |
 
 | Exceptions ||
@@ -481,7 +481,7 @@ Initializes this cipher with a key, a set of algorithm parameters, and a source 
 
 The cipher is initialized for one of the following four operations: encryption, decryption, key wrapping or key unwrapping, depending on the value of`opmode`.
 
-If this cipher requires any algorithm parameters and`params`is null, the underlying cipher implementation is supposed to generate the required parameters itself (using provider-specific default or random values) if it is being initialized for encryption or key wrapping, and raise an`InvalidAlgorithmParameterException`if it is being initialized for decryption or key unwrapping. The generated parameters can be retrieved using [engineGetParameters](../javax/crypto/CipherSpi.md))or [engineGetIV](../javax/crypto/CipherSpi.md))(if the parameter is an IV).
+If this cipher requires any algorithm parameters and`params`is null, the underlying cipher implementation is supposed to generate the required parameters itself (using provider-specific default or random values) if it is being initialized for encryption or key wrapping, and raise an`InvalidAlgorithmParameterException`if it is being initialized for decryption or key unwrapping. The generated parameters can be retrieved using [engineGetParameters](CipherSpi.md))or [engineGetIV](CipherSpi.md))(if the parameter is an IV).
 
 If this cipher requires algorithm parameters that cannot be derived from the input parameters, and there are no reasonable provider-specific default values, initialization will necessarily fail.
 
@@ -492,10 +492,10 @@ Note that when a Cipher object is initialized, it loses all previously-acquired 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `opmode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the operation mode of this cipher (this is one of the following:`ENCRYPT_MODE`,`DECRYPT_MODE`,`WRAP_MODE`or`UNWRAP_MODE`) |
-| `key` | [Key](../java/security/Key.md)!:the encryption key |
-| `params` | [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)!:the algorithm parameters |
+| `key` | [Key](../java.security/Key.md)!:the encryption key |
+| `params` | [AlgorithmParameterSpec](../java.security.spec/AlgorithmParameterSpec.md)!:the algorithm parameters |
 | --- | --- |
-| `random` | [SecureRandom](../java/security/SecureRandom.md)!:the source of randomness |
+| `random` | [SecureRandom](../java.security/SecureRandom.md)!:the source of randomness |
 
 | Exceptions ||
 |----------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
@@ -565,7 +565,7 @@ This concrete method has been added to this previously-defined abstract class. (
 
 | Return ||
 |--------------------------------------------------------------------------------|--------------------|
-| [Key](../java/security/Key.md)! | the unwrapped key. |
+| [Key](../java.security/Key.md)! | the unwrapped key. |
 
 | Exceptions ||
 |-------------------------------------------|-----------------------------------------------------------------------------------------------------|
@@ -659,8 +659,8 @@ Subclasses should consider overriding this method if they can process ByteBuffer
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------|
-| `input` | [ByteBuffer](../java/nio/ByteBuffer.md)!:the input ByteBuffer |
-| `output` | [ByteBuffer](../java/nio/ByteBuffer.md)!:the output ByteByffer |
+| `input` | [ByteBuffer](../java.nio/ByteBuffer.md)!:the input ByteBuffer |
+| `output` | [ByteBuffer](../java.nio/ByteBuffer.md)!:the output ByteByffer |
 
 | Return ||
 |----------------------------------------------------------------------------|---------------------------------------|
@@ -715,7 +715,7 @@ All`src.remaining()`bytes starting at`src.position()`are processed. Upon return,
 
 | Parameters ||
 |-------|-----------------------------------------------------------------------------------------------------------------------|
-| `src` | [ByteBuffer](../java/nio/ByteBuffer.md)!:the buffer containing the AAD |
+| `src` | [ByteBuffer](../java.nio/ByteBuffer.md)!:the buffer containing the AAD |
 
 | Exceptions ||
 |-------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -736,7 +736,7 @@ This concrete method has been added to this previously-defined abstract class. (
 
 | Parameters ||
 |-------|-------------------------------------------------------------------------------------------------------|
-| `key` | [Key](../java/security/Key.md)!:the key to be wrapped. |
+| `key` | [Key](../java.security/Key.md)!:the key to be wrapped. |
 
 | Return ||
 |------------------------------------------------------------------------------------------|------------------|

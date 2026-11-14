@@ -8,11 +8,11 @@ abstract class ConnectionService : Service
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](../android/content/Context.md) ||||
-| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) |||
-| | | ↳ | [android.app.Service](../android/app/Service.md) ||
+| ↳ | [android.content.Context](../android.content/Context.md) ||||
+| | ↳ | [android.content.ContextWrapper](../android.content/ContextWrapper.md) |||
+| | | ↳ | [android.app.Service](../android.app/Service.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.telecom.ConnectionService](../android/telecom/ConnectionService.md) |
+| | | | ↳ | [android.telecom.ConnectionService](ConnectionService.md) |
 
 An abstract service that should be implemented by any apps which either:
 
@@ -1177,15 +1177,15 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#conferenceRemoteConnections(android.telecom.RemoteConnection,%20android.telecom.RemoteConnection)(remoteConnection1: https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection!, remoteConnection2: https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection!)` Indicates to the relevant `RemoteConnectionService` that the specified `https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection`s should be merged into a conference call. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#connectionServiceFocusReleased()()` Call to inform Telecom that your `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#` has released call resources (e.g microphone, camera). |
-| [RemoteConference](../android/telecom/RemoteConference.md)? | `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#createRemoteIncomingConference(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)(connectionManagerPhoneAccount: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle?, request: https://developer.android.com/reference/kotlin/android/telecom/ConnectionRequest?)` Ask some other `ConnectionService` to create a `RemoteConference` given an incoming request. |
+| [RemoteConference](RemoteConference.md)? | `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#createRemoteIncomingConference(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)(connectionManagerPhoneAccount: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle?, request: https://developer.android.com/reference/kotlin/android/telecom/ConnectionRequest?)` Ask some other `ConnectionService` to create a `RemoteConference` given an incoming request. |
 | --- | --- |
-| [RemoteConnection](../android/telecom/RemoteConnection.md)? | `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#createRemoteIncomingConnection(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)(connectionManagerPhoneAccount: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle, request: https://developer.android.com/reference/kotlin/android/telecom/ConnectionRequest)` Ask some other `ConnectionService` to create a `RemoteConnection` given an incoming request. |
-| [RemoteConference](../android/telecom/RemoteConference.md)? | `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#createRemoteOutgoingConference(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)(connectionManagerPhoneAccount: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle?, request: https://developer.android.com/reference/kotlin/android/telecom/ConnectionRequest?)` Ask some other `ConnectionService` to create a `RemoteConference` given an outgoing request. |
-| [RemoteConnection](../android/telecom/RemoteConnection.md)? | `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#createRemoteOutgoingConnection(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)(connectionManagerPhoneAccount: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle, request: https://developer.android.com/reference/kotlin/android/telecom/ConnectionRequest)` Ask some other `ConnectionService` to create a `RemoteConnection` given an outgoing request. |
+| [RemoteConnection](RemoteConnection.md)? | `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#createRemoteIncomingConnection(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)(connectionManagerPhoneAccount: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle, request: https://developer.android.com/reference/kotlin/android/telecom/ConnectionRequest)` Ask some other `ConnectionService` to create a `RemoteConnection` given an incoming request. |
+| [RemoteConference](RemoteConference.md)? | `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#createRemoteOutgoingConference(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)(connectionManagerPhoneAccount: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle?, request: https://developer.android.com/reference/kotlin/android/telecom/ConnectionRequest?)` Ask some other `ConnectionService` to create a `RemoteConference` given an outgoing request. |
+| [RemoteConnection](RemoteConnection.md)? | `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#createRemoteOutgoingConnection(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)(connectionManagerPhoneAccount: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle, request: https://developer.android.com/reference/kotlin/android/telecom/ConnectionRequest)` Ask some other `ConnectionService` to create a `RemoteConnection` given an outgoing request. |
 | --- | --- |
-| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Conference](../android/telecom/Conference.md)!\>! | `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#getAllConferences()()` Returns all the active `Conference`s for which this `ConnectionService` has taken responsibility. |
-| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Connection](../android/telecom/Connection.md)!\>! | `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#getAllConnections()()` Returns all the active `Connection`s for which this `ConnectionService` has taken responsibility. |
-| [IBinder](../android/os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
+| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Conference](Conference.md)!\>! | `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#getAllConferences()()` Returns all the active `Conference`s for which this `ConnectionService` has taken responsibility. |
+| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Connection](Connection.md)!\>! | `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#getAllConnections()()` Returns all the active `Connection`s for which this `ConnectionService` has taken responsibility. |
+| [IBinder](../android.os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onConference(android.telecom.Connection,%20android.telecom.Connection)(connection1: https://developer.android.com/reference/kotlin/android/telecom/Connection!, connection2: https://developer.android.com/reference/kotlin/android/telecom/Connection!)` Conference two specified connections. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onConferenceAdded(android.telecom.Conference)(conference: https://developer.android.com/reference/kotlin/android/telecom/Conference)` Called when a conference is added. |
@@ -1199,19 +1199,19 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onCreateConferenceComplete(android.telecom.Conference)(conference: https://developer.android.com/reference/kotlin/android/telecom/Conference)` Called by Telecom after the `https://developer.android.com/reference/kotlin/android/telecom/Conference` returned by `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onCreateIncomingConference(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)` or `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onCreateOutgoingConference(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)` has been added to the `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#` and sent to Telecom. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onCreateConnectionComplete(android.telecom.Connection)(connection: https://developer.android.com/reference/kotlin/android/telecom/Connection)` Called by Telecom after the `https://developer.android.com/reference/kotlin/android/telecom/Connection` returned by `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onCreateIncomingConnection(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)` or `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onCreateOutgoingConnection(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)` has been added to the `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#` and sent to Telecom. |
 | --- | --- |
-| open [Conference](../android/telecom/Conference.md)? | `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onCreateIncomingConference(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)(connectionManagerPhoneAccount: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle, request: https://developer.android.com/reference/kotlin/android/telecom/ConnectionRequest)` Create a `Conference` given an incoming request. |
+| open [Conference](Conference.md)? | `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onCreateIncomingConference(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)(connectionManagerPhoneAccount: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle, request: https://developer.android.com/reference/kotlin/android/telecom/ConnectionRequest)` Create a `Conference` given an incoming request. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onCreateIncomingConferenceFailed(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)(connectionManagerPhoneAccount: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle?, request: https://developer.android.com/reference/kotlin/android/telecom/ConnectionRequest?)` Called by Telecom to inform the `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#` that its request to create a new incoming `https://developer.android.com/reference/kotlin/android/telecom/Conference` was denied. |
-| open [Connection](../android/telecom/Connection.md)! | `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onCreateIncomingConnection(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)(connectionManagerPhoneAccount: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle!, request: https://developer.android.com/reference/kotlin/android/telecom/ConnectionRequest!)` Create a `Connection` given an incoming request. |
+| open [Connection](Connection.md)! | `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onCreateIncomingConnection(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)(connectionManagerPhoneAccount: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle!, request: https://developer.android.com/reference/kotlin/android/telecom/ConnectionRequest!)` Create a `Connection` given an incoming request. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onCreateIncomingConnectionFailed(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)(connectionManagerPhoneAccount: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle!, request: https://developer.android.com/reference/kotlin/android/telecom/ConnectionRequest!)` Called by Telecom to inform the `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#` that its request to create a new incoming `https://developer.android.com/reference/kotlin/android/telecom/Connection` was denied. |
-| open [Connection](../android/telecom/Connection.md)! | `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onCreateIncomingHandoverConnection(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)(fromPhoneAccountHandle: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle!, request: https://developer.android.com/reference/kotlin/android/telecom/ConnectionRequest!)` Called by Telecom to request that a `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#` creates an instance of an incoming handover `https://developer.android.com/reference/kotlin/android/telecom/Connection`. |
-| open [Conference](../android/telecom/Conference.md)? | `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onCreateOutgoingConference(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)(connectionManagerPhoneAccount: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle, request: https://developer.android.com/reference/kotlin/android/telecom/ConnectionRequest)` Create a `Conference` given an outgoing request. |
+| open [Connection](Connection.md)! | `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onCreateIncomingHandoverConnection(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)(fromPhoneAccountHandle: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle!, request: https://developer.android.com/reference/kotlin/android/telecom/ConnectionRequest!)` Called by Telecom to request that a `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#` creates an instance of an incoming handover `https://developer.android.com/reference/kotlin/android/telecom/Connection`. |
+| open [Conference](Conference.md)? | `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onCreateOutgoingConference(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)(connectionManagerPhoneAccount: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle, request: https://developer.android.com/reference/kotlin/android/telecom/ConnectionRequest)` Create a `Conference` given an outgoing request. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onCreateOutgoingConferenceFailed(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)(connectionManagerPhoneAccount: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle, request: https://developer.android.com/reference/kotlin/android/telecom/ConnectionRequest)` Called by Telecom to inform the `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#` that its request to create a new outgoing `https://developer.android.com/reference/kotlin/android/telecom/Conference` was denied. |
-| open [Connection](../android/telecom/Connection.md)! | `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onCreateOutgoingConnection(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)(connectionManagerPhoneAccount: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle!, request: https://developer.android.com/reference/kotlin/android/telecom/ConnectionRequest!)` Create a `Connection` given an outgoing request. |
+| open [Connection](Connection.md)! | `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onCreateOutgoingConnection(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)(connectionManagerPhoneAccount: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle!, request: https://developer.android.com/reference/kotlin/android/telecom/ConnectionRequest!)` Create a `Connection` given an outgoing request. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onCreateOutgoingConnectionFailed(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)(connectionManagerPhoneAccount: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle!, request: https://developer.android.com/reference/kotlin/android/telecom/ConnectionRequest!)` Called by Telecom to inform the `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#` that its request to create a new outgoing `https://developer.android.com/reference/kotlin/android/telecom/Connection` was denied. |
 | --- | --- |
-| open [Connection](../android/telecom/Connection.md)! | `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onCreateOutgoingHandoverConnection(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)(fromPhoneAccountHandle: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle!, request: https://developer.android.com/reference/kotlin/android/telecom/ConnectionRequest!)` Called by Telecom to request that a `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#` creates an instance of an outgoing handover `https://developer.android.com/reference/kotlin/android/telecom/Connection`. |
+| open [Connection](Connection.md)! | `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onCreateOutgoingHandoverConnection(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)(fromPhoneAccountHandle: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle!, request: https://developer.android.com/reference/kotlin/android/telecom/ConnectionRequest!)` Called by Telecom to request that a `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#` creates an instance of an outgoing handover `https://developer.android.com/reference/kotlin/android/telecom/Connection`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onHandoverFailed(android.telecom.ConnectionRequest,%20kotlin.Int)(request: https://developer.android.com/reference/kotlin/android/telecom/ConnectionRequest!, error: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called by Telecom in response to a `TelecomManager#acceptHandover()` invocation which failed. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onRemoteConferenceAdded(android.telecom.RemoteConference)(conference: https://developer.android.com/reference/kotlin/android/telecom/RemoteConference!)` Indicates that a remote conference has been created for existing `https://developer.android.com/reference/kotlin/android/telecom/RemoteConnection`s. |
 | --- | --- |
@@ -2941,7 +2941,7 @@ Adds a new conference call. When a conference call is created either as a result
 
 | Parameters ||
 |---|---|
-| `conference` | [Conference](../android/telecom/Conference.md)!: The new conference object. |
+| `conference` | [Conference](Conference.md)!: The new conference object. |
 
 ### addConferenceFromConnection
 
@@ -2958,8 +2958,8 @@ This is used to make a `https://developer.android.com/reference/kotlin/android/t
 
 | Parameters ||
 |---|---|
-| `conference` | [Conference](../android/telecom/Conference.md): The new conference object. This value cannot be `null`. |
-| `originalConnection` | [Connection](../android/telecom/Connection.md): The original connection object. This value cannot be `null`. |
+| `conference` | [Conference](Conference.md): The new conference object. This value cannot be `null`. |
+| `originalConnection` | [Connection](Connection.md): The original connection object. This value cannot be `null`. |
 
 ### addExistingConnection
 
@@ -2976,8 +2976,8 @@ Adds a connection created by the `https://developer.android.com/reference/kotlin
 
 | Parameters ||
 |---|---|
-| `phoneAccountHandle` | [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md)!: The phone account handle for the connection. |
-| `connection` | [Connection](../android/telecom/Connection.md)!: The connection to add. |
+| `phoneAccountHandle` | [PhoneAccountHandle](PhoneAccountHandle.md)!: The phone account handle for the connection. |
+| `connection` | [Connection](Connection.md)!: The connection to add. |
 
 ### conferenceRemoteConnections
 
@@ -2996,8 +2996,8 @@ If the conference request is successful, the method `https://developer.android.c
 
 | Parameters ||
 |---|---|
-| `remoteConnection1` | [RemoteConnection](../android/telecom/RemoteConnection.md)!: The first of the remote connections to conference. |
-| `remoteConnection2` | [RemoteConnection](../android/telecom/RemoteConnection.md)!: The second of the remote connections to conference. |
+| `remoteConnection1` | [RemoteConnection](RemoteConnection.md)!: The first of the remote connections to conference. |
+| `remoteConnection2` | [RemoteConnection](RemoteConnection.md)!: The second of the remote connections to conference. |
 
 ### connectionServiceFocusReleased
 
@@ -3029,8 +3029,8 @@ Ask some other `ConnectionService` to create a `RemoteConference` given an incom
 
 | Parameters ||
 |---|---|
-| `connectionManagerPhoneAccount` | [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md)?: See description at `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onCreateOutgoingConnection(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)`. This value may be `null`. |
-| `request` | [ConnectionRequest](../android/telecom/ConnectionRequest.md)?: Details about the incoming conference call. This value may be `null`. |
+| `connectionManagerPhoneAccount` | [PhoneAccountHandle](PhoneAccountHandle.md)?: See description at `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onCreateOutgoingConnection(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)`. This value may be `null`. |
+| `request` | [ConnectionRequest](ConnectionRequest.md)?: Details about the incoming conference call. This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -3051,8 +3051,8 @@ Ask some other `ConnectionService` to create a `RemoteConnection` given an incom
 
 | Parameters ||
 |---|---|
-| `connectionManagerPhoneAccount` | [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md): See description at `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onCreateOutgoingConnection(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)`. This value cannot be `null`. |
-| `request` | [ConnectionRequest](../android/telecom/ConnectionRequest.md): Details about the incoming call. This value cannot be `null`. |
+| `connectionManagerPhoneAccount` | [PhoneAccountHandle](PhoneAccountHandle.md): See description at `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onCreateOutgoingConnection(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)`. This value cannot be `null`. |
+| `request` | [ConnectionRequest](ConnectionRequest.md): Details about the incoming call. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -3073,8 +3073,8 @@ Ask some other `ConnectionService` to create a `RemoteConference` given an outgo
 
 | Parameters ||
 |---|---|
-| `connectionManagerPhoneAccount` | [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md)?: See description at `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onCreateOutgoingConnection(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)`. This value may be `null`. |
-| `request` | [ConnectionRequest](../android/telecom/ConnectionRequest.md)?: Details about the outgoing conference call. This value may be `null`. |
+| `connectionManagerPhoneAccount` | [PhoneAccountHandle](PhoneAccountHandle.md)?: See description at `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onCreateOutgoingConnection(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)`. This value may be `null`. |
+| `request` | [ConnectionRequest](ConnectionRequest.md)?: Details about the outgoing conference call. This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -3095,8 +3095,8 @@ Ask some other `ConnectionService` to create a `RemoteConnection` given an outgo
 
 | Parameters ||
 |---|---|
-| `connectionManagerPhoneAccount` | [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md): See description at `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onCreateOutgoingConnection(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)`. This value cannot be `null`. |
-| `request` | [ConnectionRequest](../android/telecom/ConnectionRequest.md): Details about the outgoing call. This value cannot be `null`. |
+| `connectionManagerPhoneAccount` | [PhoneAccountHandle](PhoneAccountHandle.md): See description at `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onCreateOutgoingConnection(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)`. This value cannot be `null`. |
+| `request` | [ConnectionRequest](ConnectionRequest.md): Details about the outgoing call. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -3144,7 +3144,7 @@ Return the communication channel to the service. May return null if clients can 
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
+| `intent` | [Intent](../android.content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
 
 | Return ||
 |---|---|
@@ -3165,8 +3165,8 @@ Conference two specified connections. Invoked when the user has made a request t
 
 | Parameters ||
 |---|---|
-| `connection1` | [Connection](../android/telecom/Connection.md)!: A connection to merge into a conference call. |
-| `connection2` | [Connection](../android/telecom/Connection.md)!: A connection to merge into a conference call. |
+| `connection1` | [Connection](Connection.md)!: A connection to merge into a conference call. |
+| `connection2` | [Connection](Connection.md)!: A connection to merge into a conference call. |
 
 ### onConferenceAdded
 
@@ -3180,7 +3180,7 @@ Called when a conference is added.
 
 | Parameters ||
 |---|---|
-| `conference` | [Conference](../android/telecom/Conference.md): This value cannot be `null`. |
+| `conference` | [Conference](Conference.md): This value cannot be `null`. |
 
 ### onConferenceRemoved
 
@@ -3194,7 +3194,7 @@ Called when a conference is removed.
 
 | Parameters ||
 |---|---|
-| `conference` | [Conference](../android/telecom/Conference.md): This value cannot be `null`. |
+| `conference` | [Conference](Conference.md): This value cannot be `null`. |
 
 ### onConnectionAdded
 
@@ -3208,7 +3208,7 @@ Called when a connection is added.
 
 | Parameters ||
 |---|---|
-| `connection` | [Connection](../android/telecom/Connection.md): This value cannot be `null`. |
+| `connection` | [Connection](Connection.md): This value cannot be `null`. |
 
 ### onConnectionRemoved
 
@@ -3222,7 +3222,7 @@ Called when a connection is removed.
 
 | Parameters ||
 |---|---|
-| `connection` | [Connection](../android/telecom/Connection.md): This value cannot be `null`. |
+| `connection` | [Connection](Connection.md): This value cannot be `null`. |
 
 ### onConnectionServiceFocusGained
 
@@ -3256,7 +3256,7 @@ Called by Telecom after the `https://developer.android.com/reference/kotlin/andr
 
 | Parameters ||
 |---|---|
-| `conference` | [Conference](../android/telecom/Conference.md): the `https://developer.android.com/reference/kotlin/android/telecom/Conference` which was added to Telecom. This value cannot be `null`. |
+| `conference` | [Conference](Conference.md): the `https://developer.android.com/reference/kotlin/android/telecom/Conference` which was added to Telecom. This value cannot be `null`. |
 
 ### onCreateConnectionComplete
 
@@ -3270,7 +3270,7 @@ Called by Telecom after the `https://developer.android.com/reference/kotlin/andr
 
 | Parameters ||
 |---|---|
-| `connection` | [Connection](../android/telecom/Connection.md): the `https://developer.android.com/reference/kotlin/android/telecom/Connection` which was added to Telecom. This value cannot be `null`. |
+| `connection` | [Connection](Connection.md): the `https://developer.android.com/reference/kotlin/android/telecom/Connection` which was added to Telecom. This value cannot be `null`. |
 
 ### onCreateIncomingConference
 
@@ -3287,8 +3287,8 @@ Create a `Conference` given an incoming request. This is used to attach to an in
 
 | Parameters ||
 |---|---|
-| `connectionManagerPhoneAccount` | [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md): See description at `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onCreateOutgoingConnection(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)`. This value cannot be `null`. |
-| `request` | [ConnectionRequest](../android/telecom/ConnectionRequest.md): Details about the incoming conference call. This value cannot be `null`. |
+| `connectionManagerPhoneAccount` | [PhoneAccountHandle](PhoneAccountHandle.md): See description at `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onCreateOutgoingConnection(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)`. This value cannot be `null`. |
+| `request` | [ConnectionRequest](ConnectionRequest.md): Details about the incoming conference call. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -3313,8 +3313,8 @@ See `https://developer.android.com/reference/kotlin/android/telecom/TelecomManag
 
 | Parameters ||
 |---|---|
-| `connectionManagerPhoneAccount` | [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md)?: See description at `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onCreateOutgoingConnection(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)`. This value may be `null`. |
-| `request` | [ConnectionRequest](../android/telecom/ConnectionRequest.md)?: The incoming connection request. This value may be `null`. |
+| `connectionManagerPhoneAccount` | [PhoneAccountHandle](PhoneAccountHandle.md)?: See description at `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onCreateOutgoingConnection(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)`. This value may be `null`. |
+| `request` | [ConnectionRequest](ConnectionRequest.md)?: The incoming connection request. This value may be `null`. |
 
 ### onCreateIncomingConnection
 
@@ -3331,8 +3331,8 @@ Create a `Connection` given an incoming request. This is used to attach to exist
 
 | Parameters ||
 |---|---|
-| `connectionManagerPhoneAccount` | [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md)!: See description at `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onCreateOutgoingConnection(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)`. |
-| `request` | [ConnectionRequest](../android/telecom/ConnectionRequest.md)!: Details about the incoming call. |
+| `connectionManagerPhoneAccount` | [PhoneAccountHandle](PhoneAccountHandle.md)!: See description at `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onCreateOutgoingConnection(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)`. |
+| `request` | [ConnectionRequest](ConnectionRequest.md)!: Details about the incoming call. |
 
 | Return ||
 |---|---|
@@ -3357,8 +3357,8 @@ See `https://developer.android.com/reference/kotlin/android/telecom/TelecomManag
 
 | Parameters ||
 |---|---|
-| `connectionManagerPhoneAccount` | [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md)!: See description at `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onCreateOutgoingConnection(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)`. |
-| `request` | [ConnectionRequest](../android/telecom/ConnectionRequest.md)!: The incoming connection request. |
+| `connectionManagerPhoneAccount` | [PhoneAccountHandle](PhoneAccountHandle.md)!: See description at `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onCreateOutgoingConnection(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)`. |
+| `request` | [ConnectionRequest](ConnectionRequest.md)!: The incoming connection request. |
 
 ### onCreateIncomingHandoverConnection
 
@@ -3397,8 +3397,8 @@ Implementations of this method should return an instance of `https://developer.a
 
 | Parameters ||
 |---|---|
-| `fromPhoneAccountHandle` | [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md)!: `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle` associated with the ConnectionService which needs to handover the call. |
-| `request` | [ConnectionRequest](../android/telecom/ConnectionRequest.md)!: Details about the call which needs to be handover. |
+| `fromPhoneAccountHandle` | [PhoneAccountHandle](PhoneAccountHandle.md)!: `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle` associated with the ConnectionService which needs to handover the call. |
+| `request` | [ConnectionRequest](ConnectionRequest.md)!: Details about the call which needs to be handover. |
 
 | Return ||
 |---|---|
@@ -3419,8 +3419,8 @@ Create a `Conference` given an outgoing request. This is used to initiate new ou
 
 | Parameters ||
 |---|---|
-| `connectionManagerPhoneAccount` | [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md): The connection manager account to use for managing this call. If this parameter is not `null`, it means that this `ConnectionService` has registered one or more `PhoneAccount`s having `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_CONNECTION_MANAGER:kotlin.Int`. This parameter will contain one of these `PhoneAccount`s, while the `request` will contain another (usually but not always distinct) `PhoneAccount` to be used for actually making the connection. If this parameter is `null`, it means that this `ConnectionService` is being asked to make a direct connection. The `https://developer.android.com/reference/kotlin/android/telecom/ConnectionRequest#getAccountHandle()` of parameter `request` will be a `PhoneAccount` registered by this `ConnectionService` to use for making the connection. |
-| `request` | [ConnectionRequest](../android/telecom/ConnectionRequest.md): Details about the outgoing call. This value cannot be `null`. |
+| `connectionManagerPhoneAccount` | [PhoneAccountHandle](PhoneAccountHandle.md): The connection manager account to use for managing this call. If this parameter is not `null`, it means that this `ConnectionService` has registered one or more `PhoneAccount`s having `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_CONNECTION_MANAGER:kotlin.Int`. This parameter will contain one of these `PhoneAccount`s, while the `request` will contain another (usually but not always distinct) `PhoneAccount` to be used for actually making the connection. If this parameter is `null`, it means that this `ConnectionService` is being asked to make a direct connection. The `https://developer.android.com/reference/kotlin/android/telecom/ConnectionRequest#getAccountHandle()` of parameter `request` will be a `PhoneAccount` registered by this `ConnectionService` to use for making the connection. |
+| `request` | [ConnectionRequest](ConnectionRequest.md): Details about the outgoing call. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -3445,8 +3445,8 @@ See `https://developer.android.com/reference/kotlin/android/telecom/TelecomManag
 
 | Parameters ||
 |---|---|
-| `connectionManagerPhoneAccount` | [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md): See description at `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onCreateOutgoingConnection(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)`. This value cannot be `null`. |
-| `request` | [ConnectionRequest](../android/telecom/ConnectionRequest.md): The outgoing connection request. This value cannot be `null`. |
+| `connectionManagerPhoneAccount` | [PhoneAccountHandle](PhoneAccountHandle.md): See description at `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onCreateOutgoingConnection(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)`. This value cannot be `null`. |
+| `request` | [ConnectionRequest](ConnectionRequest.md): The outgoing connection request. This value cannot be `null`. |
 
 ### onCreateOutgoingConnection
 
@@ -3463,8 +3463,8 @@ Create a `Connection` given an outgoing request. This is used to initiate new ou
 
 | Parameters ||
 |---|---|
-| `connectionManagerPhoneAccount` | [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md)!: The connection manager account to use for managing this call. If this parameter is not `null`, it means that this `ConnectionService` has registered one or more `PhoneAccount`s having `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_CONNECTION_MANAGER:kotlin.Int`. This parameter will contain one of these `PhoneAccount`s, while the `request` will contain another (usually but not always distinct) `PhoneAccount` to be used for actually making the connection. If this parameter is `null`, it means that this `ConnectionService` is being asked to make a direct connection. The `https://developer.android.com/reference/kotlin/android/telecom/ConnectionRequest#getAccountHandle()` of parameter `request` will be a `PhoneAccount` registered by this `ConnectionService` to use for making the connection. |
-| `request` | [ConnectionRequest](../android/telecom/ConnectionRequest.md)!: Details about the outgoing call. |
+| `connectionManagerPhoneAccount` | [PhoneAccountHandle](PhoneAccountHandle.md)!: The connection manager account to use for managing this call. If this parameter is not `null`, it means that this `ConnectionService` has registered one or more `PhoneAccount`s having `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CAPABILITY_CONNECTION_MANAGER:kotlin.Int`. This parameter will contain one of these `PhoneAccount`s, while the `request` will contain another (usually but not always distinct) `PhoneAccount` to be used for actually making the connection. If this parameter is `null`, it means that this `ConnectionService` is being asked to make a direct connection. The `https://developer.android.com/reference/kotlin/android/telecom/ConnectionRequest#getAccountHandle()` of parameter `request` will be a `PhoneAccount` registered by this `ConnectionService` to use for making the connection. |
+| `request` | [ConnectionRequest](ConnectionRequest.md)!: Details about the outgoing call. |
 
 | Return ||
 |---|---|
@@ -3489,8 +3489,8 @@ See `https://developer.android.com/reference/kotlin/android/telecom/TelecomManag
 
 | Parameters ||
 |---|---|
-| `connectionManagerPhoneAccount` | [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md)!: See description at `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onCreateOutgoingConnection(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)`. |
-| `request` | [ConnectionRequest](../android/telecom/ConnectionRequest.md)!: The outgoing connection request. |
+| `connectionManagerPhoneAccount` | [PhoneAccountHandle](PhoneAccountHandle.md)!: See description at `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onCreateOutgoingConnection(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)`. |
+| `request` | [ConnectionRequest](ConnectionRequest.md)!: The outgoing connection request. |
 
 ### onCreateOutgoingHandoverConnection
 
@@ -3531,8 +3531,8 @@ Implementations of this method should return an instance of `https://developer.a
 
 | Parameters ||
 |---|---|
-| `fromPhoneAccountHandle` | [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md)!: `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle` associated with the ConnectionService which needs to handover the call. |
-| `request` | [ConnectionRequest](../android/telecom/ConnectionRequest.md)!: Details about the call to handover. |
+| `fromPhoneAccountHandle` | [PhoneAccountHandle](PhoneAccountHandle.md)!: `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle` associated with the ConnectionService which needs to handover the call. |
+| `request` | [ConnectionRequest](ConnectionRequest.md)!: Details about the call to handover. |
 
 | Return ||
 |---|---|
@@ -3555,7 +3555,7 @@ For a full discussion of the handover process and the APIs involved, see `https:
 
 | Parameters ||
 |---|---|
-| `request` | [ConnectionRequest](../android/telecom/ConnectionRequest.md)!: Details about the call which failed to handover. |
+| `request` | [ConnectionRequest](ConnectionRequest.md)!: Details about the call which failed to handover. |
 | `error` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Reason for handover failure. Will be one of the. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/telecom/Call.Callback#HANDOVER_FAILURE_DEST_APP_REJECTED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telecom/Call.Callback#HANDOVER_FAILURE_NOT_SUPPORTED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telecom/Call.Callback#HANDOVER_FAILURE_USER_REJECTED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telecom/Call.Callback#HANDOVER_FAILURE_ONGOING_EMERGENCY_CALL:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telecom/Call.Callback#HANDOVER_FAILURE_UNKNOWN:kotlin.Int` |
 
 ### onRemoteConferenceAdded
@@ -3572,7 +3572,7 @@ This is only relevant to `https://developer.android.com/reference/kotlin/android
 
 | Parameters ||
 |---|---|
-| `conference` | [RemoteConference](../android/telecom/RemoteConference.md)!: The remote conference call. |
+| `conference` | [RemoteConference](RemoteConference.md)!: The remote conference call. |
 
 ### onRemoteExistingConnectionAdded
 
@@ -3586,7 +3586,7 @@ Called when an existing connection is added remotely.
 
 | Parameters ||
 |---|---|
-| `connection` | [RemoteConnection](../android/telecom/RemoteConnection.md)!: The existing connection which was added. |
+| `connection` | [RemoteConnection](RemoteConnection.md)!: The existing connection which was added. |
 
 ### onUnbind
 
@@ -3600,7 +3600,7 @@ Called when all clients have disconnected from a particular interface published 
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
+| `intent` | [Intent](../android.content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
 
 | Return ||
 |---|---|

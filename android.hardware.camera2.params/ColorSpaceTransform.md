@@ -2,7 +2,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 
 # ColorSpaceTransform
 
-Kotlin | [Java](../android/hardware/camera2/params/ColorSpaceTransform.md)
+Kotlin | [Java](ColorSpaceTransform.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class ColorSpaceTransform
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.hardware.camera2.params.ColorSpaceTransform](../android/hardware/camera2/params/ColorSpaceTransform.md) |
+| ↳ | [android.hardware.camera2.params.ColorSpaceTransform](ColorSpaceTransform.md) |
 
 Immutable class for describing a 3x3 matrix of `https://developer.android.com/reference/kotlin/android/util/Rational.html#` values in row-major order.
 
@@ -30,7 +30,7 @@ This matrix maps a transform from one color space to another. For the particular
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ColorSpaceTransform#copyElements(kotlin.IntArray,%20kotlin.Int)(destination: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html!, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Copy the `https://developer.android.com/reference/kotlin/android/util/Rational.html#` elements in row-major order from this matrix into the destination. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ColorSpaceTransform#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Check if this `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ColorSpaceTransform#` is equal to another `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ColorSpaceTransform#`. |
 | --- | --- |
-| [Rational](../android/util/Rational.md)! | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ColorSpaceTransform#getElement(kotlin.Int,%20kotlin.Int)(column: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, row: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get an element of this matrix by its row and column. |
+| [Rational](../android.util/Rational.md)! | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ColorSpaceTransform#getElement(kotlin.Int,%20kotlin.Int)(column: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, row: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get an element of this matrix by its row and column. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ColorSpaceTransform#hashCode()()` Returns a hash code value for the object. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/ColorSpaceTransform#toString()()` Return the color space transform as a string representation. |
 | --- | --- |
@@ -51,7 +51,7 @@ The elements must be stored in a row-major order.
 
 | Parameters ||
 |---|---|
-| `elements` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Rational](../android/util/Rational.md)!\>!: An array of `9` elements |
+| `elements` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Rational](../android.util/Rational.md)!\>!: An array of `9` elements |
 
 | Exceptions ||
 |---|---|
@@ -111,7 +111,7 @@ Copy the `https://developer.android.com/reference/kotlin/android/util/Rational.h
 
 | Parameters ||
 |---|---|
-| `destination` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Rational](../android/util/Rational.md)!\>!: an array big enough to hold at least `9` elements after the `offset` |
+| `destination` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Rational](../android.util/Rational.md)!\>!: an array big enough to hold at least `9` elements after the `offset` |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): a non-negative offset into the array |
 
 | Exceptions ||

@@ -13,13 +13,13 @@ interface OnDrawableLoadedListener
 
 | [android.graphics.drawable.Icon.OnDrawableLoadedListener](../android/graphics/drawable/Icon.OnDrawableLoadedListener.md) |
 
-Implement this interface to receive a callback when [loadDrawableAsync](../android/graphics/drawable/Icon.md))is finished and your Drawable is ready.
+Implement this interface to receive a callback when [loadDrawableAsync](Icon.md))is finished and your Drawable is ready.
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDrawableLoaded](../android/graphics/drawable/Icon.OnDrawableLoadedListener.md))`(`d:` ` [Drawable](../android/graphics/drawable/Drawable.md)!`)` <br /> |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDrawableLoaded](../android/graphics/drawable/Icon.OnDrawableLoadedListener.md))`(`d:` ` [Drawable](Drawable.md)!`)` <br /> |
 
 ## Public methods
 

@@ -4,7 +4,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 
 # CellIdentityNr
 
-Kotlin| [Java](../android/telephony/CellIdentityNr.md) 
+Kotlin| [Java](CellIdentityNr.md) 
 | --- | --- |
 
 ```
@@ -13,8 +13,8 @@ class CellIdentityNr : CellIdentity
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.telephony.CellIdentity](../android/telephony/CellIdentity.md) ||
-| | ↳ | [android.telephony.CellIdentityNr](../android/telephony/CellIdentityNr.md) |
+| ↳ | [android.telephony.CellIdentity](CellIdentity.md) ||
+| | ↳ | [android.telephony.CellIdentityNr](CellIdentityNr.md) |
 
 Information to represent a unique NR(New Radio 5G) cell.
 
@@ -22,34 +22,34 @@ Information to represent a unique NR(New Radio 5G) cell.
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android.os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android.os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android.os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/telephony/CellIdentityNr.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getAdditionalPlmns](../android/telephony/CellIdentityNr.md))`()` <br /> |
-| [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | [getBands](../android/telephony/CellIdentityNr.md))`()` Get bands of the cell Reference: TS 38. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](CellIdentityNr.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getAdditionalPlmns](CellIdentityNr.md))`()` <br /> |
+| [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | [getBands](CellIdentityNr.md))`()` Get bands of the cell Reference: TS 38. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getMccString](../android/telephony/CellIdentityNr.md))`()` <br /> |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getMncString](../android/telephony/CellIdentityNr.md))`()` <br /> |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getNci](../android/telephony/CellIdentityNr.md))`()` Get the NR(New Radio 5G) Cell Identity. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getMccString](CellIdentityNr.md))`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getMncString](CellIdentityNr.md))`()` <br /> |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getNci](CellIdentityNr.md))`()` Get the NR(New Radio 5G) Cell Identity. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getNrarfcn](../android/telephony/CellIdentityNr.md))`()` Get the New Radio Absolute Radio Frequency Channel Number. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPci](../android/telephony/CellIdentityNr.md))`()` Get the physical cell id. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTac](../android/telephony/CellIdentityNr.md))`()` Get the tracking area code. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getNrarfcn](CellIdentityNr.md))`()` Get the New Radio Absolute Radio Frequency Channel Number. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPci](CellIdentityNr.md))`()` Get the physical cell id. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTac](CellIdentityNr.md))`()` Get the tracking area code. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/telephony/CellIdentityNr.md))`()` <br /> |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/telephony/CellIdentityNr.md))`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/telephony/CellIdentityNr.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](CellIdentityNr.md))`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](CellIdentityNr.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](CellIdentityNr.md))`(`dest:` ` [Parcel](../android.os/Parcel.md)`, `type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
 
 | Inherited functions ||
 |---|---|
-| From class [CellIdentity](../android/telephony/CellIdentity.md) |------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/telephony/CellIdentity.md))`()` <br /> Implement the Parcelable interface <br /> | | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | [getOperatorAlphaLong](../android/telephony/CellIdentity.md))`()` <br /> | | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | [getOperatorAlphaShort](../android/telephony/CellIdentity.md))`()` <br /> | ||
+| From class [CellIdentity](CellIdentity.md) |------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](CellIdentity.md))`()` <br /> Implement the Parcelable interface <br /> | | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | [getOperatorAlphaLong](CellIdentity.md))`()` <br /> | | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | [getOperatorAlphaShort](CellIdentity.md))`()` <br /> | ||
 
 | Properties ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [CellIdentityNr](../android/telephony/CellIdentityNr.md)!\> | [CREATOR](../android/telephony/CellIdentityNr.md) Implement the Parcelable interface |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [CellIdentityNr](CellIdentityNr.md)!\> | [CREATOR](CellIdentityNr.md) Implement the Parcelable interface |
 
 ## Public methods
 
@@ -131,7 +131,7 @@ Get the NR(New Radio 5G) Cell Identity.
 
 | Return ||
 |------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | The 36-bit NR Cell Identity in range \[0, 68719476735\] or [CellInfo.UNAVAILABLE_LONG](../android/telephony/CellInfo.md) if unknown. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | The 36-bit NR Cell Identity in range \[0, 68719476735\] or [CellInfo.UNAVAILABLE_LONG](CellInfo.md) if unknown. |
 
 ### getNrarfcn
 
@@ -145,7 +145,7 @@ Get the New Radio Absolute Radio Frequency Channel Number. Reference: 3GPP TS 38
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Integer value in range \[0, 3279165\] or [CellInfo.UNAVAILABLE](../android/telephony/CellInfo.md) if unknown. Value is between 0 and 3279165 inclusive |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Integer value in range \[0, 3279165\] or [CellInfo.UNAVAILABLE](CellInfo.md) if unknown. Value is between 0 and 3279165 inclusive |
 
 ### getPci
 
@@ -159,7 +159,7 @@ Get the physical cell id.
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Integer value in range \[0, 1007\] or [CellInfo.UNAVAILABLE](../android/telephony/CellInfo.md) if unknown. Value is between 0 and 1007 inclusive |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Integer value in range \[0, 1007\] or [CellInfo.UNAVAILABLE](CellInfo.md) if unknown. Value is between 0 and 1007 inclusive |
 
 ### getTac
 
@@ -173,7 +173,7 @@ Get the tracking area code.
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a 24 bit integer or [CellInfo.UNAVAILABLE](../android/telephony/CellInfo.md) if unknown. Value is between 0 and 16777215 inclusive |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a 24 bit integer or [CellInfo.UNAVAILABLE](CellInfo.md) if unknown. Value is between 0 and 16777215 inclusive |
 
 ### hashCode
 
@@ -212,8 +212,8 @@ fun writeToParcel(
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](../android/os/Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android.os/Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
+| `flags` | Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

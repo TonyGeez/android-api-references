@@ -3,7 +3,7 @@ Also in [S Extensions 18](https://developer.android.com/sdkExtensions)
 
 # StampAnnotation
 
-Kotlin | [Java](../android/graphics/pdf/component/StampAnnotation.md)
+Kotlin | [Java](StampAnnotation.md)
 | --- | --- |
 
 ```
@@ -12,8 +12,8 @@ class StampAnnotation : PdfAnnotation
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.graphics.pdf.component.PdfAnnotation](../android/graphics/pdf/component/PdfAnnotation.md) ||
-| | ↳ | [android.graphics.pdf.component.StampAnnotation](../android/graphics/pdf/component/StampAnnotation.md) |
+| ↳ | [android.graphics.pdf.component.PdfAnnotation](PdfAnnotation.md) ||
+| | ↳ | [android.graphics.pdf.component.StampAnnotation](StampAnnotation.md) |
 
 Represents a stamp annotation in a PDF document.
 
@@ -28,8 +28,8 @@ Only path, image, or text objects created using the `https://developer.android.c
 | Public methods ||
 |---|---|
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/component/StampAnnotation#addObject(android.graphics.pdf.component.PdfPageObject)(pageObject: https://developer.android.com/reference/kotlin/android/graphics/pdf/component/PdfPageObject)` Adds a PDF page object to the stamp annotation. |
-| [RectF](../android/graphics/RectF.md) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/component/StampAnnotation#getBounds()()` Returns the bounding rectangle of the stamp annotation. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PdfPageObject](../android/graphics/pdf/component/PdfPageObject.md)!\> | `https://developer.android.com/reference/kotlin/android/graphics/pdf/component/StampAnnotation#getObjects()()` Returns all the known PDF page objects in the stamp annotation. |
+| [RectF](../android.graphics/RectF.md) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/component/StampAnnotation#getBounds()()` Returns the bounding rectangle of the stamp annotation. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PdfPageObject](PdfPageObject.md)!\> | `https://developer.android.com/reference/kotlin/android/graphics/pdf/component/StampAnnotation#getObjects()()` Returns all the known PDF page objects in the stamp annotation. |
 | --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/component/StampAnnotation#removeObject(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Remove the page object at the given index inside the stamp annotation. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/component/StampAnnotation#setBounds(android.graphics.RectF)(bounds: https://developer.android.com/reference/kotlin/android/graphics/RectF.html#)` Sets the bounding rectangle of the stamp annotation. |
@@ -55,7 +55,7 @@ The list of page objects inside the stamp annotation will be empty by default
 
 | Parameters ||
 |---|---|
-| `bounds` | [RectF](../android/graphics/RectF.md): The bounding rectangle of the annotation. This value cannot be `null`. |
+| `bounds` | [RectF](../android.graphics/RectF.md): The bounding rectangle of the annotation. This value cannot be `null`. |
 
 ## Public methods
 
@@ -74,7 +74,7 @@ The page object should be a path, text or an image.
 
 | Parameters ||
 |---|---|
-| `pageObject` | [PdfPageObject](../android/graphics/pdf/component/PdfPageObject.md): The PDF page object to add. This value cannot be `null`. |
+| `pageObject` | [PdfPageObject](PdfPageObject.md): The PDF page object to add. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -142,4 +142,4 @@ Sets the bounding rectangle of the stamp annotation.
 
 | Parameters ||
 |---|---|
-| `bounds` | [RectF](../android/graphics/RectF.md): The new bounding rectangle. This value cannot be `null`. |
+| `bounds` | [RectF](../android.graphics/RectF.md): The new bounding rectangle. This value cannot be `null`. |

@@ -4,7 +4,7 @@ Added in [API level 12](https://developer.android.com/guide/topics/manifest/uses
 
 # MtpConstants
 
-Kotlin| [Java](../android/mtp/MtpConstants.md) 
+Kotlin| [Java](MtpConstants.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class MtpConstants
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.mtp.MtpConstants](../android/mtp/MtpConstants.md) |
+| ↳ | [android.mtp.MtpConstants](MtpConstants.md) |
 
 A class containing constants in the MTP and PTP specifications.
 
@@ -21,146 +21,146 @@ A class containing constants in the MTP and PTP specifications.
 
 | Constants ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ASSOCIATION_TYPE_GENERIC_FOLDER](../android/mtp/MtpConstants.md) Association type for objects representing file system directories. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_3GP_CONTAINER](../android/mtp/MtpConstants.md) Format code for 3GP files |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_AAC](../android/mtp/MtpConstants.md) Format code for AAC audio files |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ASSOCIATION_TYPE_GENERIC_FOLDER](MtpConstants.md) Association type for objects representing file system directories. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_3GP_CONTAINER](MtpConstants.md) Format code for 3GP files |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_AAC](MtpConstants.md) Format code for AAC audio files |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_ABSTRACT_AUDIO_ALBUM](../android/mtp/MtpConstants.md) Format code for audio albums |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_ABSTRACT_AUDIO_PLAYLIST](../android/mtp/MtpConstants.md) Format code for abstract audio playlists |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_ABSTRACT_AV_PLAYLIST](../android/mtp/MtpConstants.md) Format code for abstract AV playlists |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_ABSTRACT_AUDIO_ALBUM](MtpConstants.md) Format code for audio albums |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_ABSTRACT_AUDIO_PLAYLIST](MtpConstants.md) Format code for abstract audio playlists |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_ABSTRACT_AV_PLAYLIST](MtpConstants.md) Format code for abstract AV playlists |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_ABSTRACT_DOCUMENT](../android/mtp/MtpConstants.md) Format code for abstract documents |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_ABSTRACT_IMAGE_ALBUM](../android/mtp/MtpConstants.md) Format code for image albums |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_ABSTRACT_MEDIACAST](../android/mtp/MtpConstants.md) Format code for abstract mediacasts |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_ABSTRACT_DOCUMENT](MtpConstants.md) Format code for abstract documents |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_ABSTRACT_IMAGE_ALBUM](MtpConstants.md) Format code for image albums |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_ABSTRACT_MEDIACAST](MtpConstants.md) Format code for abstract mediacasts |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_ABSTRACT_MULTIMEDIA_ALBUM](../android/mtp/MtpConstants.md) Format code for multimedia albums |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_ABSTRACT_VIDEO_ALBUM](../android/mtp/MtpConstants.md) Format code for video albums |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_ABSTRACT_VIDEO_PLAYLIST](../android/mtp/MtpConstants.md) Format code for abstract video playlists |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_ABSTRACT_MULTIMEDIA_ALBUM](MtpConstants.md) Format code for multimedia albums |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_ABSTRACT_VIDEO_ALBUM](MtpConstants.md) Format code for video albums |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_ABSTRACT_VIDEO_PLAYLIST](MtpConstants.md) Format code for abstract video playlists |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_AIFF](../android/mtp/MtpConstants.md) Format code for AIFF audio files |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_ASF](../android/mtp/MtpConstants.md) Format code for ASF files |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_ASSOCIATION](../android/mtp/MtpConstants.md) Format code for associations (folders and directories) |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_AIFF](MtpConstants.md) Format code for AIFF audio files |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_ASF](MtpConstants.md) Format code for ASF files |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_ASSOCIATION](MtpConstants.md) Format code for associations (folders and directories) |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_ASX_PLAYLIST](../android/mtp/MtpConstants.md) Format code for ASX playlist files |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_AUDIBLE](../android/mtp/MtpConstants.md) Format code for Audible audio files |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_AVI](../android/mtp/MtpConstants.md) Format code for AVI video files |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_ASX_PLAYLIST](MtpConstants.md) Format code for ASX playlist files |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_AUDIBLE](MtpConstants.md) Format code for Audible audio files |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_AVI](MtpConstants.md) Format code for AVI video files |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_BMP](../android/mtp/MtpConstants.md) Format code for BMP image files |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_DEFINED](../android/mtp/MtpConstants.md) Format code for unknown image files. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_DNG](../android/mtp/MtpConstants.md) Format code for DNG files |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_BMP](MtpConstants.md) Format code for BMP image files |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_DEFINED](MtpConstants.md) Format code for unknown image files. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_DNG](MtpConstants.md) Format code for DNG files |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_DPOF](../android/mtp/MtpConstants.md) Format code for DPOF files |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_EXECUTABLE](../android/mtp/MtpConstants.md) Format code for executable files |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_EXIF_JPEG](../android/mtp/MtpConstants.md) Format code for JPEG image files |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_DPOF](MtpConstants.md) Format code for DPOF files |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_EXECUTABLE](MtpConstants.md) Format code for executable files |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_EXIF_JPEG](MtpConstants.md) Format code for JPEG image files |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_FLAC](../android/mtp/MtpConstants.md) Format code for FLAC audio files |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_GIF](../android/mtp/MtpConstants.md) Format code for GIF image files |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_HTML](../android/mtp/MtpConstants.md) Format code for HTML files |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_FLAC](MtpConstants.md) Format code for FLAC audio files |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_GIF](MtpConstants.md) Format code for GIF image files |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_HTML](MtpConstants.md) Format code for HTML files |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_JFIF](../android/mtp/MtpConstants.md) Format code for JFIF image files |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_JP2](../android/mtp/MtpConstants.md) Format code for JP2 files |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_JPX](../android/mtp/MtpConstants.md) Format code for JPX files |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_JFIF](MtpConstants.md) Format code for JFIF image files |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_JP2](MtpConstants.md) Format code for JP2 files |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_JPX](MtpConstants.md) Format code for JPX files |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_M3U_PLAYLIST](../android/mtp/MtpConstants.md) Format code for M3u playlist files |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_MP2](../android/mtp/MtpConstants.md) Format code for MP2 files |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_MP3](../android/mtp/MtpConstants.md) Format code for MP3 audio files |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_M3U_PLAYLIST](MtpConstants.md) Format code for M3u playlist files |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_MP2](MtpConstants.md) Format code for MP2 files |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_MP3](MtpConstants.md) Format code for MP3 audio files |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_MP4_CONTAINER](../android/mtp/MtpConstants.md) Format code for MP4 files |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_MPEG](../android/mtp/MtpConstants.md) Format code for MPEG video files |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_MPL_PLAYLIST](../android/mtp/MtpConstants.md) Format code for MPL playlist files |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_MP4_CONTAINER](MtpConstants.md) Format code for MP4 files |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_MPEG](MtpConstants.md) Format code for MPEG video files |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_MPL_PLAYLIST](MtpConstants.md) Format code for MPL playlist files |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_MS_EXCEL_SPREADSHEET](../android/mtp/MtpConstants.md) Format code for MS Excel spreadsheets |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_MS_POWERPOINT_PRESENTATION](../android/mtp/MtpConstants.md) Format code for MS PowerPoint presentatiosn |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_MS_WORD_DOCUMENT](../android/mtp/MtpConstants.md) Format code for MS Word documents |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_MS_EXCEL_SPREADSHEET](MtpConstants.md) Format code for MS Excel spreadsheets |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_MS_POWERPOINT_PRESENTATION](MtpConstants.md) Format code for MS PowerPoint presentatiosn |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_MS_WORD_DOCUMENT](MtpConstants.md) Format code for MS Word documents |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_OGG](../android/mtp/MtpConstants.md) Format code for OGG audio files |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_PICT](../android/mtp/MtpConstants.md) Format code for PICT image files |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_PLS_PLAYLIST](../android/mtp/MtpConstants.md) Format code for PLS playlist files |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_OGG](MtpConstants.md) Format code for OGG audio files |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_PICT](MtpConstants.md) Format code for PICT image files |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_PLS_PLAYLIST](MtpConstants.md) Format code for PLS playlist files |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_PNG](../android/mtp/MtpConstants.md) Format code for PNG image files |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_SCRIPT](../android/mtp/MtpConstants.md) Format code for script files |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_TEXT](../android/mtp/MtpConstants.md) Format code for text files |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_PNG](MtpConstants.md) Format code for PNG image files |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_SCRIPT](MtpConstants.md) Format code for script files |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_TEXT](MtpConstants.md) Format code for text files |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_TIFF](../android/mtp/MtpConstants.md) Format code for TIFF image files |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_TIFF_EP](../android/mtp/MtpConstants.md) Format code for TIFF EP image files |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_UNDEFINED](../android/mtp/MtpConstants.md) Undefined format code |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_TIFF](MtpConstants.md) Format code for TIFF image files |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_TIFF_EP](MtpConstants.md) Format code for TIFF EP image files |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_UNDEFINED](MtpConstants.md) Undefined format code |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_UNDEFINED_AUDIO](../android/mtp/MtpConstants.md) Format code for undefined audio files files |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_UNDEFINED_COLLECTION](../android/mtp/MtpConstants.md) Format code for undefined collections |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_UNDEFINED_DOCUMENT](../android/mtp/MtpConstants.md) Format code for undefined document files |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_UNDEFINED_AUDIO](MtpConstants.md) Format code for undefined audio files files |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_UNDEFINED_COLLECTION](MtpConstants.md) Format code for undefined collections |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_UNDEFINED_DOCUMENT](MtpConstants.md) Format code for undefined document files |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_UNDEFINED_FIRMWARE](../android/mtp/MtpConstants.md) Format code for firmware files |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_UNDEFINED_VIDEO](../android/mtp/MtpConstants.md) Format code for undefined video files |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_WAV](../android/mtp/MtpConstants.md) Format code for WAV audio files |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_UNDEFINED_FIRMWARE](MtpConstants.md) Format code for firmware files |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_UNDEFINED_VIDEO](MtpConstants.md) Format code for undefined video files |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_WAV](MtpConstants.md) Format code for WAV audio files |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_WINDOWS_IMAGE_FORMAT](../android/mtp/MtpConstants.md) Format code for Windows image files |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_WMA](../android/mtp/MtpConstants.md) Format code for WMA audio files |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_WMV](../android/mtp/MtpConstants.md) Format code for WMV video files |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_WINDOWS_IMAGE_FORMAT](MtpConstants.md) Format code for Windows image files |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_WMA](MtpConstants.md) Format code for WMA audio files |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_WMV](MtpConstants.md) Format code for WMV video files |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_WPL_PLAYLIST](../android/mtp/MtpConstants.md) Format code for WPL playlist files |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_XML_DOCUMENT](../android/mtp/MtpConstants.md) Format code for XML documents |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_CLOSE_SESSION](../android/mtp/MtpConstants.md) Operation code for CloseSession |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_WPL_PLAYLIST](MtpConstants.md) Format code for WPL playlist files |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_XML_DOCUMENT](MtpConstants.md) Format code for XML documents |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_CLOSE_SESSION](MtpConstants.md) Operation code for CloseSession |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_COPY_OBJECT](../android/mtp/MtpConstants.md) Operation code for CopyObject |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_DELETE_OBJECT](../android/mtp/MtpConstants.md) Operation code for DeleteObject |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_FORMAT_STORE](../android/mtp/MtpConstants.md) Operation code for FormatStore |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_COPY_OBJECT](MtpConstants.md) Operation code for CopyObject |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_DELETE_OBJECT](MtpConstants.md) Operation code for DeleteObject |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_FORMAT_STORE](MtpConstants.md) Operation code for FormatStore |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_GET_DEVICE_INFO](../android/mtp/MtpConstants.md) Operation code for GetDeviceInfo |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_GET_DEVICE_PROP_DESC](../android/mtp/MtpConstants.md) Operation code for GetDevicePropDesc |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_GET_DEVICE_PROP_VALUE](../android/mtp/MtpConstants.md) Operation code for GetDevicePropValue |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_GET_DEVICE_INFO](MtpConstants.md) Operation code for GetDeviceInfo |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_GET_DEVICE_PROP_DESC](MtpConstants.md) Operation code for GetDevicePropDesc |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_GET_DEVICE_PROP_VALUE](MtpConstants.md) Operation code for GetDevicePropValue |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_GET_NUM_OBJECTS](../android/mtp/MtpConstants.md) Operation code for GetNumObjects |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_GET_OBJECT](../android/mtp/MtpConstants.md) Operation code for GetObject |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_GET_OBJECT_HANDLES](../android/mtp/MtpConstants.md) Operation code for GetObjectHandles |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_GET_NUM_OBJECTS](MtpConstants.md) Operation code for GetNumObjects |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_GET_OBJECT](MtpConstants.md) Operation code for GetObject |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_GET_OBJECT_HANDLES](MtpConstants.md) Operation code for GetObjectHandles |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_GET_OBJECT_INFO](../android/mtp/MtpConstants.md) Operation code for GetObjectInfo |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_GET_OBJECT_PROPS_SUPPORTED](../android/mtp/MtpConstants.md) Operation code for GetObjectPropsSupported |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_GET_OBJECT_PROP_DESC](../android/mtp/MtpConstants.md) Operation code for GetObjectPropDesc |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_GET_OBJECT_INFO](MtpConstants.md) Operation code for GetObjectInfo |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_GET_OBJECT_PROPS_SUPPORTED](MtpConstants.md) Operation code for GetObjectPropsSupported |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_GET_OBJECT_PROP_DESC](MtpConstants.md) Operation code for GetObjectPropDesc |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_GET_OBJECT_PROP_VALUE](../android/mtp/MtpConstants.md) Operation code for GetObjectPropValue |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_GET_OBJECT_REFERENCES](../android/mtp/MtpConstants.md) Operation code for GetObjectReferences |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_GET_PARTIAL_OBJECT](../android/mtp/MtpConstants.md) Operation code for GetPartialObject |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_GET_OBJECT_PROP_VALUE](MtpConstants.md) Operation code for GetObjectPropValue |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_GET_OBJECT_REFERENCES](MtpConstants.md) Operation code for GetObjectReferences |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_GET_PARTIAL_OBJECT](MtpConstants.md) Operation code for GetPartialObject |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_GET_PARTIAL_OBJECT_64](../android/mtp/MtpConstants.md) Operation code for GetPartialObject64 |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_GET_STORAGE_INFO](../android/mtp/MtpConstants.md) Operation code for GetStorageInfo |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_GET_STORAGE_I_DS](../android/mtp/MtpConstants.md) Operation code for GetStorageIDs |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_GET_PARTIAL_OBJECT_64](MtpConstants.md) Operation code for GetPartialObject64 |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_GET_STORAGE_INFO](MtpConstants.md) Operation code for GetStorageInfo |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_GET_STORAGE_I_DS](MtpConstants.md) Operation code for GetStorageIDs |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_GET_THUMB](../android/mtp/MtpConstants.md) Operation code for GetThumb |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_INITIATE_CAPTURE](../android/mtp/MtpConstants.md) Operation code for InitiateCapture |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_INITIATE_OPEN_CAPTURE](../android/mtp/MtpConstants.md) Operation code for InitiateOpenCapture |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_GET_THUMB](MtpConstants.md) Operation code for GetThumb |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_INITIATE_CAPTURE](MtpConstants.md) Operation code for InitiateCapture |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_INITIATE_OPEN_CAPTURE](MtpConstants.md) Operation code for InitiateOpenCapture |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_MOVE_OBJECT](../android/mtp/MtpConstants.md) Operation code for MoveObject |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_OPEN_SESSION](../android/mtp/MtpConstants.md) Operation code for OpenSession |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_POWER_DOWN](../android/mtp/MtpConstants.md) Operation code for PowerDown |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_MOVE_OBJECT](MtpConstants.md) Operation code for MoveObject |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_OPEN_SESSION](MtpConstants.md) Operation code for OpenSession |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_POWER_DOWN](MtpConstants.md) Operation code for PowerDown |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_RESET_DEVICE](../android/mtp/MtpConstants.md) Operation code for ResetDevice |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_RESET_DEVICE_PROP_VALUE](../android/mtp/MtpConstants.md) Operation code for ResetDevicePropValue |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_SELF_TEST](../android/mtp/MtpConstants.md) Operation code for SelfTest |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_RESET_DEVICE](MtpConstants.md) Operation code for ResetDevice |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_RESET_DEVICE_PROP_VALUE](MtpConstants.md) Operation code for ResetDevicePropValue |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_SELF_TEST](MtpConstants.md) Operation code for SelfTest |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_SEND_OBJECT](../android/mtp/MtpConstants.md) Operation code for SendObject |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_SEND_OBJECT_INFO](../android/mtp/MtpConstants.md) Operation code for SendObjectInfo |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_SET_DEVICE_PROP_VALUE](../android/mtp/MtpConstants.md) Operation code for SetDevicePropValue |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_SEND_OBJECT](MtpConstants.md) Operation code for SendObject |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_SEND_OBJECT_INFO](MtpConstants.md) Operation code for SendObjectInfo |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_SET_DEVICE_PROP_VALUE](MtpConstants.md) Operation code for SetDevicePropValue |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_SET_OBJECT_PROP_VALUE](../android/mtp/MtpConstants.md) Operation code for SetObjectPropValue |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_SET_OBJECT_PROTECTION](../android/mtp/MtpConstants.md) Operation code for SetObjectProtection |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_SET_OBJECT_REFERENCES](../android/mtp/MtpConstants.md) Operation code for SetObjectReferences |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_SET_OBJECT_PROP_VALUE](MtpConstants.md) Operation code for SetObjectPropValue |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_SET_OBJECT_PROTECTION](MtpConstants.md) Operation code for SetObjectProtection |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_SET_OBJECT_REFERENCES](MtpConstants.md) Operation code for SetObjectReferences |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_SKIP](../android/mtp/MtpConstants.md) Operation code for Skip |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_TERMINATE_OPEN_CAPTURE](../android/mtp/MtpConstants.md) Operation code for TerminateOpenCapture |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROTECTION_STATUS_NONE](../android/mtp/MtpConstants.md) Object is not protected. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_SKIP](MtpConstants.md) Operation code for Skip |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPERATION_TERMINATE_OPEN_CAPTURE](MtpConstants.md) Operation code for TerminateOpenCapture |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROTECTION_STATUS_NONE](MtpConstants.md) Object is not protected. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROTECTION_STATUS_NON_TRANSFERABLE_DATA](../android/mtp/MtpConstants.md) Object's contents can not be transfered from the device, but the object may be moved or deleted and its properties may be modified. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROTECTION_STATUS_READ_ONLY](../android/mtp/MtpConstants.md) Object can not be modified or deleted and its properties can not be modified. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROTECTION_STATUS_READ_ONLY_DATA](../android/mtp/MtpConstants.md) Object can not be modified or deleted but its properties are modifiable. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROTECTION_STATUS_NON_TRANSFERABLE_DATA](MtpConstants.md) Object's contents can not be transfered from the device, but the object may be moved or deleted and its properties may be modified. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROTECTION_STATUS_READ_ONLY](MtpConstants.md) Object can not be modified or deleted and its properties can not be modified. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROTECTION_STATUS_READ_ONLY_DATA](MtpConstants.md) Object can not be modified or deleted but its properties are modifiable. |
 | --- | --- |
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------|---|
-| [MtpConstants](../android/mtp/MtpConstants.md))`()` <br /> |
+| [MtpConstants](MtpConstants.md))`()` <br /> |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAbstractObject](../android/mtp/MtpConstants.md))`(`format:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns true if the object is abstract (that is, it has no representation in the underlying file system). |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAbstractObject](MtpConstants.md))`(`format:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns true if the object is abstract (that is, it has no representation in the underlying file system). |
 
 ## Constants
 

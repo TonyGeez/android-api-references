@@ -2,7 +2,7 @@
 
 # android.se.omapi
 
-Kotlin| [Java](../android/se/omapi/_package.md)
+Kotlin| [Java](_package.md)
 | --- | --- |
 
 ## Interfaces
@@ -12,9 +12,9 @@ Kotlin| [Java](../android/se/omapi/_package.md)
 
 ## Classes
 
-| [Channel](../android/se/omapi/Channel.md) | Instances of this class represent an ISO/IEC 7816-4 channel opened to a Secure Element. |
+| [Channel](Channel.md) | Instances of this class represent an ISO/IEC 7816-4 channel opened to a Secure Element. |
 | --- | --- |
-| [Reader](../android/se/omapi/Reader.md) | Instances of this class represent Secure Element Readers supported to this device. |
-| [SEService](../android/se/omapi/SEService.md) | The SEService realises the communication to available Secure Elements on the device. |
-| [Session](../android/se/omapi/Session.md) | Instances of this class represent a connection session to one of the Secure Elements available on the device. |
+| [Reader](Reader.md) | Instances of this class represent Secure Element Readers supported to this device. |
+| [SEService](SEService.md) | The SEService realises the communication to available Secure Elements on the device. |
+| [Session](Session.md) | Instances of this class represent a connection session to one of the Secure Elements available on the device. |
 | --- | --- |

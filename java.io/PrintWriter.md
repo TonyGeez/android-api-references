@@ -8,8 +8,8 @@ open class PrintWriter : Writer
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.io.Writer](../java/io/Writer.md) ||
-| | ↳ | [java.io.PrintWriter](../java/io/PrintWriter.md) |
+| ↳ | [java.io.Writer](Writer.md) ||
+| | ↳ | [java.io.PrintWriter](PrintWriter.md) |
 
 Prints formatted representations of objects to a text-output stream. This class implements all of the `print` methods found in `https://developer.android.com/reference/kotlin/java/io/PrintStream`. It does not contain methods for writing raw bytes, for which a program should use unencoded byte streams.
 
@@ -17,7 +17,7 @@ Unlike the `https://developer.android.com/reference/kotlin/java/io/PrintStream` 
 
 Methods in this class never throw I/O exceptions, although some of its constructors may. The client may inquire as to whether any errors have occurred by invoking `https://developer.android.com/reference/kotlin/java/io/PrintWriter#checkError()`.
 
-This class always replaces malformed and unmappable character sequences with the charset's default replacement string. The [java.nio.charset.CharsetEncoder](../java/nio/charset/CharsetEncoder.md) class should be used when more control over the encoding process is required.
+This class always replaces malformed and unmappable character sequences with the charset's default replacement string. The [java.nio.charset.CharsetEncoder](../java.nio.charset/CharsetEncoder.md) class should be used when more control over the encoding process is required.
 
 ## Summary
 
@@ -37,16 +37,16 @@ This class always replaces malformed and unmappable character sequences with the
 
 | Public methods ||
 |---|---|
-| open [PrintWriter](../java/io/PrintWriter.md) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#append(kotlin.Char)(c: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Appends the specified character to this writer. |
-| open [PrintWriter](../java/io/PrintWriter.md) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#append(kotlin.CharSequence)(csq: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html?)` Appends the specified character sequence to this writer. |
-| open [PrintWriter](../java/io/PrintWriter.md) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#append(kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int)(csq: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html?, start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Appends a subsequence of the specified character sequence to this writer. |
+| open [PrintWriter](PrintWriter.md) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#append(kotlin.Char)(c: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Appends the specified character to this writer. |
+| open [PrintWriter](PrintWriter.md) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#append(kotlin.CharSequence)(csq: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html?)` Appends the specified character sequence to this writer. |
+| open [PrintWriter](PrintWriter.md) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#append(kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int)(csq: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html?, start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Appends a subsequence of the specified character sequence to this writer. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#checkError()()` Flushes the stream if it's not closed and checks its error state. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#close()()` Closes the stream and releases any system resources associated with it. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#flush()()` Flushes the stream. |
 | --- | --- |
-| open [PrintWriter](../java/io/PrintWriter.md) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#format(kotlin.String,%20kotlin.Any)(format: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, vararg args: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Writes a formatted string to this writer using the specified format string and arguments. |
-| open [PrintWriter](../java/io/PrintWriter.md) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#format(java.util.Locale,%20kotlin.String,%20kotlin.Any)(l: https://developer.android.com/reference/kotlin/java/util/Locale.html#?, format: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, vararg args: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Writes a formatted string to this writer using the specified format string and arguments. |
+| open [PrintWriter](PrintWriter.md) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#format(kotlin.String,%20kotlin.Any)(format: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, vararg args: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Writes a formatted string to this writer using the specified format string and arguments. |
+| open [PrintWriter](PrintWriter.md) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#format(java.util.Locale,%20kotlin.String,%20kotlin.Any)(l: https://developer.android.com/reference/kotlin/java/util/Locale.html#?, format: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, vararg args: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Writes a formatted string to this writer using the specified format string and arguments. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#print(kotlin.Boolean)(b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Prints a boolean value. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#print(kotlin.Char)(c: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Prints a character. |
@@ -59,9 +59,9 @@ This class always replaces malformed and unmappable character sequences with the
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#print(kotlin.String)(s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Prints a string. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#print(kotlin.Long)(l: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Prints a long integer. |
-| open [PrintWriter](../java/io/PrintWriter.md) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#printf(kotlin.String,%20kotlin.Any)(format: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, vararg args: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` A convenience method to write a formatted string to this writer using the specified format string and arguments. |
+| open [PrintWriter](PrintWriter.md) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#printf(kotlin.String,%20kotlin.Any)(format: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, vararg args: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` A convenience method to write a formatted string to this writer using the specified format string and arguments. |
 | --- | --- |
-| open [PrintWriter](../java/io/PrintWriter.md) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#printf(java.util.Locale,%20kotlin.String,%20kotlin.Any)(l: https://developer.android.com/reference/kotlin/java/util/Locale.html#?, format: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, vararg args: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` A convenience method to write a formatted string to this writer using the specified format string and arguments. |
+| open [PrintWriter](PrintWriter.md) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#printf(java.util.Locale,%20kotlin.String,%20kotlin.Any)(l: https://developer.android.com/reference/kotlin/java/util/Locale.html#?, format: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, vararg args: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` A convenience method to write a formatted string to this writer using the specified format string and arguments. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#println()()` Terminates the current line by writing the line separator string. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#println(kotlin.Boolean)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Prints a boolean value and then terminates the line. |
 | --- | --- |
@@ -94,7 +94,7 @@ This class always replaces malformed and unmappable character sequences with the
 
 | Properties ||
 |---|---|
-| [Writer](../java/io/Writer.md)! | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#out:java.io.Writer` The underlying character-output stream of this `PrintWriter`. |
+| [Writer](Writer.md)! | `https://developer.android.com/reference/kotlin/java/io/PrintWriter#out:java.io.Writer` The underlying character-output stream of this `PrintWriter`. |
 
 | Inherited properties ||
 |---|---|
@@ -110,11 +110,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 PrintWriter(file: File)
 ```
 
-Creates a new PrintWriter, without automatic line flushing, with the specified file. This convenience constructor creates the necessary intermediate `https://developer.android.com/reference/kotlin/java/io/OutputStreamWriter`, which will encode characters using the [default charset](../java/nio/charset/Charset.md)) for this instance of the Java virtual machine.
+Creates a new PrintWriter, without automatic line flushing, with the specified file. This convenience constructor creates the necessary intermediate `https://developer.android.com/reference/kotlin/java/io/OutputStreamWriter`, which will encode characters using the [default charset](../java.nio.charset/Charset.md)) for this instance of the Java virtual machine.
 
 | Parameters ||
 |---|---|
-| `file` | [File](../java/io/File.md): The file to use as the destination of this writer. If the file exists then it will be truncated to zero size; otherwise, a new file will be created. The output will be written to the file and is buffered. |
+| `file` | [File](File.md): The file to use as the destination of this writer. If the file exists then it will be truncated to zero size; otherwise, a new file will be created. The output will be written to the file and is buffered. |
 
 | Exceptions ||
 |---|---|
@@ -135,8 +135,8 @@ Creates a new PrintWriter, without automatic line flushing, with the specified f
 
 | Parameters ||
 |---|---|
-| `file` | [File](../java/io/File.md): The file to use as the destination of this writer. If the file exists then it will be truncated to zero size; otherwise, a new file will be created. The output will be written to the file and is buffered. |
-| `csn` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The name of a supported [charset](../java/nio/charset/Charset.md) |
+| `file` | [File](File.md): The file to use as the destination of this writer. If the file exists then it will be truncated to zero size; otherwise, a new file will be created. The output will be written to the file and is buffered. |
+| `csn` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The name of a supported [charset](../java.nio.charset/Charset.md) |
 
 | Exceptions ||
 |---|---|
@@ -159,8 +159,8 @@ Creates a new PrintWriter, without automatic line flushing, with the specified f
 
 | Parameters ||
 |---|---|
-| `file` | [File](../java/io/File.md): The file to use as the destination of this writer. If the file exists then it will be truncated to zero size; otherwise, a new file will be created. The output will be written to the file and is buffered. |
-| `charset` | [Charset](../java/nio/charset/Charset.md): A [charset](../java/nio/charset/Charset.md) |
+| `file` | [File](File.md): The file to use as the destination of this writer. If the file exists then it will be truncated to zero size; otherwise, a new file will be created. The output will be written to the file and is buffered. |
+| `charset` | [Charset](../java.nio.charset/Charset.md): A [charset](../java.nio.charset/Charset.md) |
 
 | Exceptions ||
 |---|---|
@@ -179,7 +179,7 @@ Creates a new PrintWriter, without automatic line flushing, from an existing Out
 
 | Parameters ||
 |---|---|
-| `out` | [OutputStream](../java/io/OutputStream.md): An output stream |
+| `out` | [OutputStream](OutputStream.md): An output stream |
 
 **See Also**
 
@@ -199,7 +199,7 @@ Creates a new PrintWriter from an existing OutputStream. This convenience constr
 
 | Parameters ||
 |---|---|
-| `out` | [OutputStream](../java/io/OutputStream.md): An output stream |
+| `out` | [OutputStream](OutputStream.md): An output stream |
 | `autoFlush` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): A boolean; if true, the `println`, `printf`, or `format` methods will flush the output buffer |
 
 **See Also**
@@ -221,9 +221,9 @@ Creates a new PrintWriter from an existing OutputStream. This convenience constr
 
 | Parameters ||
 |---|---|
-| `out` | [OutputStream](../java/io/OutputStream.md): An output stream |
+| `out` | [OutputStream](OutputStream.md): An output stream |
 | `autoFlush` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): A boolean; if true, the `println`, `printf`, or `format` methods will flush the output buffer |
-| `charset` | [Charset](../java/nio/charset/Charset.md): A [charset](../java/nio/charset/Charset.md) |
+| `charset` | [Charset](../java.nio.charset/Charset.md): A [charset](../java.nio.charset/Charset.md) |
 | --- | --- |
 
 ### PrintWriter
@@ -238,7 +238,7 @@ Creates a new PrintWriter, without automatic line flushing.
 
 | Parameters ||
 |---|---|
-| `out` | [Writer](../java/io/Writer.md): A character-output stream |
+| `out` | [Writer](Writer.md): A character-output stream |
 
 ### PrintWriter
 
@@ -254,7 +254,7 @@ Creates a new PrintWriter.
 
 | Parameters ||
 |---|---|
-| `out` | [Writer](../java/io/Writer.md): A character-output stream |
+| `out` | [Writer](Writer.md): A character-output stream |
 | `autoFlush` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): A boolean; if true, the println, printf, or format methods will flush the output buffer |
 
 ### PrintWriter
@@ -265,7 +265,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 PrintWriter(fileName: String)
 ```
 
-Creates a new PrintWriter, without automatic line flushing, with the specified file name. This convenience constructor creates the necessary intermediate `https://developer.android.com/reference/kotlin/java/io/OutputStreamWriter`, which will encode characters using the [default charset](../java/nio/charset/Charset.md)) for this instance of the Java virtual machine.
+Creates a new PrintWriter, without automatic line flushing, with the specified file name. This convenience constructor creates the necessary intermediate `https://developer.android.com/reference/kotlin/java/io/OutputStreamWriter`, which will encode characters using the [default charset](../java.nio.charset/Charset.md)) for this instance of the Java virtual machine.
 
 | Parameters ||
 |---|---|
@@ -291,7 +291,7 @@ Creates a new PrintWriter, without automatic line flushing, with the specified f
 | Parameters ||
 |---|---|
 | `fileName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The name of the file to use as the destination of this writer. If the file exists then it will be truncated to zero size; otherwise, a new file will be created. The output will be written to the file and is buffered. |
-| `csn` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The name of a supported [charset](../java/nio/charset/Charset.md) |
+| `csn` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The name of a supported [charset](../java.nio.charset/Charset.md) |
 
 | Exceptions ||
 |---|---|
@@ -315,7 +315,7 @@ Creates a new PrintWriter, without automatic line flushing, with the specified f
 | Parameters ||
 |---|---|
 | `fileName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The name of the file to use as the destination of this writer. If the file exists then it will be truncated to zero size; otherwise, a new file will be created. The output will be written to the file and is buffered. |
-| `charset` | [Charset](../java/nio/charset/Charset.md): A [charset](../java/nio/charset/Charset.md) |
+| `charset` | [Charset](../java.nio.charset/Charset.md): A [charset](../java.nio.charset/Charset.md) |
 
 | Exceptions ||
 |---|---|
@@ -489,8 +489,8 @@ The locale always used is the one returned by `https://developer.android.com/ref
 
 | Parameters ||
 |---|---|
-| `format` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): A format string as described in [Format string syntax](../java/util/Formatter.md). |
-| `args` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!: Arguments referenced by the format specifiers in the format string. If there are more arguments than format specifiers, the extra arguments are ignored. The number of arguments is variable and may be zero. The maximum number of arguments is limited by the maximum dimension of a Java array as defined by The Java™ Virtual Machine Specification. The behaviour on a `null` argument depends on the [conversion](../java/util/Formatter.md). |
+| `format` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): A format string as described in [Format string syntax](../java.util/Formatter.md). |
+| `args` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!: Arguments referenced by the format specifiers in the format string. If there are more arguments than format specifiers, the extra arguments are ignored. The number of arguments is variable and may be zero. The maximum number of arguments is limited by the maximum dimension of a Java array as defined by The Java™ Virtual Machine Specification. The behaviour on a `null` argument depends on the [conversion](../java.util/Formatter.md). |
 
 | Return ||
 |---|---|
@@ -499,7 +499,7 @@ The locale always used is the one returned by `https://developer.android.com/ref
 | Exceptions ||
 |---|---|
 | `java.lang.NullPointerException` | If the `format` is `null` |
-| `java.util.IllegalFormatException` | If a format string contains an illegal syntax, a format specifier that is incompatible with the given arguments, insufficient arguments given the format string, or other illegal conditions. For specification of all possible formatting errors, see the [Details](../java/util/Formatter.md) section of the Formatter class specification. |
+| `java.util.IllegalFormatException` | If a format string contains an illegal syntax, a format specifier that is incompatible with the given arguments, insufficient arguments given the format string, or other illegal conditions. For specification of all possible formatting errors, see the [Details](../java.util/Formatter.md) section of the Formatter class specification. |
 
 ### format
 
@@ -517,9 +517,9 @@ Writes a formatted string to this writer using the specified format string and a
 
 | Parameters ||
 |---|---|
-| `l` | [Locale](../java/util/Locale.md)?: The [locale](../java/util/Locale.md) to apply during formatting. If `l` is `null` then no localization is applied. |
-| `format` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): A format string as described in [Format string syntax](../java/util/Formatter.md). |
-| `args` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!: Arguments referenced by the format specifiers in the format string. If there are more arguments than format specifiers, the extra arguments are ignored. The number of arguments is variable and may be zero. The maximum number of arguments is limited by the maximum dimension of a Java array as defined by The Java™ Virtual Machine Specification. The behaviour on a `null` argument depends on the [conversion](../java/util/Formatter.md). |
+| `l` | [Locale](../java.util/Locale.md)?: The [locale](../java.util/Locale.md) to apply during formatting. If `l` is `null` then no localization is applied. |
+| `format` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): A format string as described in [Format string syntax](../java.util/Formatter.md). |
+| `args` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!: Arguments referenced by the format specifiers in the format string. If there are more arguments than format specifiers, the extra arguments are ignored. The number of arguments is variable and may be zero. The maximum number of arguments is limited by the maximum dimension of a Java array as defined by The Java™ Virtual Machine Specification. The behaviour on a `null` argument depends on the [conversion](../java.util/Formatter.md). |
 | --- | --- |
 
 | Return ||
@@ -529,7 +529,7 @@ Writes a formatted string to this writer using the specified format string and a
 | Exceptions ||
 |---|---|
 | `java.lang.NullPointerException` | If the `format` is `null` |
-| `java.util.IllegalFormatException` | If a format string contains an illegal syntax, a format specifier that is incompatible with the given arguments, insufficient arguments given the format string, or other illegal conditions. For specification of all possible formatting errors, see the [Details](../java/util/Formatter.md) section of the formatter class specification. |
+| `java.util.IllegalFormatException` | If a format string contains an illegal syntax, a format specifier that is incompatible with the given arguments, insufficient arguments given the format string, or other illegal conditions. For specification of all possible formatting errors, see the [Details](../java.util/Formatter.md) section of the formatter class specification. |
 
 ### print
 
@@ -703,8 +703,8 @@ An invocation of this method of the form `out.printf(format, args)` behaves in e
 
 | Parameters ||
 |---|---|
-| `format` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): A format string as described in [Format string syntax](../java/util/Formatter.md). |
-| `args` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!: Arguments referenced by the format specifiers in the format string. If there are more arguments than format specifiers, the extra arguments are ignored. The number of arguments is variable and may be zero. The maximum number of arguments is limited by the maximum dimension of a Java array as defined by The Java™ Virtual Machine Specification. The behaviour on a `null` argument depends on the [conversion](../java/util/Formatter.md). |
+| `format` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): A format string as described in [Format string syntax](../java.util/Formatter.md). |
+| `args` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!: Arguments referenced by the format specifiers in the format string. If there are more arguments than format specifiers, the extra arguments are ignored. The number of arguments is variable and may be zero. The maximum number of arguments is limited by the maximum dimension of a Java array as defined by The Java™ Virtual Machine Specification. The behaviour on a `null` argument depends on the [conversion](../java.util/Formatter.md). |
 
 | Return ||
 |---|---|
@@ -713,7 +713,7 @@ An invocation of this method of the form `out.printf(format, args)` behaves in e
 | Exceptions ||
 |---|---|
 | `java.lang.NullPointerException` | If the `format` is `null` |
-| `java.util.IllegalFormatException` | If a format string contains an illegal syntax, a format specifier that is incompatible with the given arguments, insufficient arguments given the format string, or other illegal conditions. For specification of all possible formatting errors, see the [Details](../java/util/Formatter.md) section of the formatter class specification. |
+| `java.util.IllegalFormatException` | If a format string contains an illegal syntax, a format specifier that is incompatible with the given arguments, insufficient arguments given the format string, or other illegal conditions. For specification of all possible formatting errors, see the [Details](../java.util/Formatter.md) section of the formatter class specification. |
 
 ### printf
 
@@ -738,9 +738,9 @@ An invocation of this method of the form `out.printf(l, format, args)` behaves i
 
 | Parameters ||
 |---|---|
-| `l` | [Locale](../java/util/Locale.md)?: The [locale](../java/util/Locale.md) to apply during formatting. If `l` is `null` then no localization is applied. |
-| `format` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): A format string as described in [Format string syntax](../java/util/Formatter.md). |
-| `args` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!: Arguments referenced by the format specifiers in the format string. If there are more arguments than format specifiers, the extra arguments are ignored. The number of arguments is variable and may be zero. The maximum number of arguments is limited by the maximum dimension of a Java array as defined by The Java™ Virtual Machine Specification. The behaviour on a `null` argument depends on the [conversion](../java/util/Formatter.md). |
+| `l` | [Locale](../java.util/Locale.md)?: The [locale](../java.util/Locale.md) to apply during formatting. If `l` is `null` then no localization is applied. |
+| `format` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): A format string as described in [Format string syntax](../java.util/Formatter.md). |
+| `args` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!: Arguments referenced by the format specifiers in the format string. If there are more arguments than format specifiers, the extra arguments are ignored. The number of arguments is variable and may be zero. The maximum number of arguments is limited by the maximum dimension of a Java array as defined by The Java™ Virtual Machine Specification. The behaviour on a `null` argument depends on the [conversion](../java.util/Formatter.md). |
 | --- | --- |
 
 | Return ||
@@ -750,7 +750,7 @@ An invocation of this method of the form `out.printf(l, format, args)` behaves i
 | Exceptions ||
 |---|---|
 | `java.lang.NullPointerException` | If the `format` is `null` |
-| `java.util.IllegalFormatException` | If a format string contains an illegal syntax, a format specifier that is incompatible with the given arguments, insufficient arguments given the format string, or other illegal conditions. For specification of all possible formatting errors, see the [Details](../java/util/Formatter.md) section of the formatter class specification. |
+| `java.util.IllegalFormatException` | If a format string contains an illegal syntax, a format specifier that is incompatible with the given arguments, insufficient arguments given the format string, or other illegal conditions. For specification of all possible formatting errors, see the [Details](../java.util/Formatter.md) section of the formatter class specification. |
 
 ### println
 

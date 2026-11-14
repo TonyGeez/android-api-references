@@ -10,9 +10,9 @@ abstract class SNIServerName
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.net.ssl.SNIServerName](../javax/net/ssl/SNIServerName.md) |
+| ↳ | [javax.net.ssl.SNIServerName](SNIServerName.md) |
 
-| Known Direct Subclasses [SNIHostName](../javax/net/ssl/SNIHostName.md) |-----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [SNIHostName](../javax/net/ssl/SNIHostName.md) | Instances of this class represent a server name of type [host_name](../javax/net/ssl/StandardConstants.md) in a Server Name Indication (SNI) extension. | |
+| Known Direct Subclasses [SNIHostName](SNIHostName.md) |-----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [SNIHostName](SNIHostName.md) | Instances of this class represent a server name of type [host_name](StandardConstants.md) in a Server Name Indication (SNI) extension. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 Instances of this class represent a server name in a Server Name Indication (SNI) extension.
@@ -25,16 +25,16 @@ The SNI extension is a feature that extends the SSL/TLS protocols to indicate wh
 
 | Protected constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SNIServerName](../javax/net/ssl/SNIServerName.md))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `encoded:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Creates an`SNIServerName`using the specified name type and encoded value. |
+| [SNIServerName](SNIServerName.md))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `encoded:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Creates an`SNIServerName`using the specified name type and encoded value. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../javax/net/ssl/SNIServerName.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this server name. |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getEncoded](../javax/net/ssl/SNIServerName.md))`()` Returns a copy of the encoded server name value of this server name. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getType](../javax/net/ssl/SNIServerName.md))`()` Returns the name type of this server name. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](SNIServerName.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this server name. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getEncoded](SNIServerName.md))`()` Returns a copy of the encoded server name value of this server name. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getType](SNIServerName.md))`()` Returns the name type of this server name. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../javax/net/ssl/SNIServerName.md))`()` Returns a hash code value for this server name. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../javax/net/ssl/SNIServerName.md))`()` Returns a string representation of this server name, including the server name type and the encoded server name value in this`SNIServerName`object. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](SNIServerName.md))`()` Returns a hash code value for this server name. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](SNIServerName.md))`()` Returns a string representation of this server name, including the server name type and the encoded server name value in this`SNIServerName`object. |
 
 ## Protected constructors
 

@@ -11,10 +11,10 @@ open class ExemptionMechanismException : GeneralSecurityException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
-| | | ↳ | [java.security.GeneralSecurityException](../java/security/GeneralSecurityException.md) ||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) |||
+| | | ↳ | [java.security.GeneralSecurityException](../java.security/GeneralSecurityException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [javax.crypto.ExemptionMechanismException](../javax/crypto/ExemptionMechanismException.md) |
+| | | | ↳ | [javax.crypto.ExemptionMechanismException](ExemptionMechanismException.md) |
 
 This is the generic ExemptionMechanism exception.
 
@@ -22,8 +22,8 @@ This is the generic ExemptionMechanism exception.
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ExemptionMechanismException](../javax/crypto/ExemptionMechanismException.md))`()` Constructs a ExemptionMechanismException with no detailed message. |
-| [ExemptionMechanismException](../javax/crypto/ExemptionMechanismException.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a ExemptionMechanismException with the specified detailed message. |
+| [ExemptionMechanismException](ExemptionMechanismException.md))`()` Constructs a ExemptionMechanismException with no detailed message. |
+| [ExemptionMechanismException](ExemptionMechanismException.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a ExemptionMechanismException with the specified detailed message. |
 
 ## Public constructors
 

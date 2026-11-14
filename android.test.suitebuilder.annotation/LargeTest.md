@@ -5,14 +5,14 @@ Deprecated in [API level 24](https://developer.android.com/guide/topics/manifest
 
 # LargeTest
 
-Kotlin| [Java](../android/test/suitebuilder/annotation/LargeTest.md) 
+Kotlin| [Java](LargeTest.md) 
 | --- | --- |
 
 ```
 @Target([AnnotationTarget.FUNCTION, AnnotationTarget.PROPERTY_GETTER, AnnotationTarget.PROPERTY_SETTER, AnnotationTarget.CLASS, AnnotationTarget.FILE]) class LargeTest
 ```
 
-| [android.test.suitebuilder.annotation.LargeTest](../android/test/suitebuilder/annotation/LargeTest.md) |
+| [android.test.suitebuilder.annotation.LargeTest](LargeTest.md) |
 
 | **This annotation was deprecated in API level 24.**
 |
@@ -24,7 +24,7 @@ Marks a test that should run as part of the large tests.
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [LargeTest](../android/test/suitebuilder/annotation/LargeTest.md))`()` Marks a test that should run as part of the large tests. |
+| [LargeTest](LargeTest.md))`()` Marks a test that should run as part of the large tests. |
 
 ## Public constructors
 

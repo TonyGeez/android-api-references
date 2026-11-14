@@ -9,7 +9,7 @@ open class PersonalizationData
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.security.identity.PersonalizationData](../android/security/identity/PersonalizationData.md) |
+| ↳ | [android.security.identity.PersonalizationData](PersonalizationData.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 37.2.**

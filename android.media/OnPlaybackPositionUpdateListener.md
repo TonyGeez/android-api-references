@@ -19,8 +19,8 @@ Interface definition for a callback to be invoked when the playback head positio
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onMarkerReached](../android/media/AudioTrack.OnPlaybackPositionUpdateListener.md))`(`track:` ` [AudioTrack](../android/media/AudioTrack.md)!`)` Called on the listener to notify it that the previously set marker has been reached by the playback head. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onPeriodicNotification](../android/media/AudioTrack.OnPlaybackPositionUpdateListener.md))`(`track:` ` [AudioTrack](../android/media/AudioTrack.md)!`)` Called on the listener to periodically notify it that the playback head has reached a multiple of the notification period. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onMarkerReached](../android/media/AudioTrack.OnPlaybackPositionUpdateListener.md))`(`track:` ` [AudioTrack](AudioTrack.md)!`)` Called on the listener to notify it that the previously set marker has been reached by the playback head. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onPeriodicNotification](../android/media/AudioTrack.OnPlaybackPositionUpdateListener.md))`(`track:` ` [AudioTrack](AudioTrack.md)!`)` Called on the listener to periodically notify it that the playback head has reached a multiple of the notification period. |
 
 ## Public methods
 

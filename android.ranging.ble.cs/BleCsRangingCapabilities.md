@@ -8,7 +8,7 @@ class BleCsRangingCapabilities : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.ranging.ble.cs.BleCsRangingCapabilities](../android/ranging/ble/cs/BleCsRangingCapabilities.md) |
+| ↳ | [android.ranging.ble.cs.BleCsRangingCapabilities](BleCsRangingCapabilities.md) |
 
 Represents the capabilities of the Bluetooth-based Channel Sounding (CS) ranging.
 
@@ -44,7 +44,7 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [BleCsRangingCapabilities](../android/ranging/ble/cs/BleCsRangingCapabilities.md)!\> | `https://developer.android.com/reference/kotlin/android/ranging/ble/cs/BleCsRangingCapabilities#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [BleCsRangingCapabilities](BleCsRangingCapabilities.md)!\> | `https://developer.android.com/reference/kotlin/android/ranging/ble/cs/BleCsRangingCapabilities#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -179,7 +179,7 @@ For security reasons, do not write actual mac address to the parcel
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

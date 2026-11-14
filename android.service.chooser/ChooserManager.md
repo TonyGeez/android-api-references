@@ -4,7 +4,7 @@ Added in [API level 36.1](https://developer.android.com/guide/topics/manifest/us
 
 # ChooserManager
 
-Kotlin| [Java](../android/service/chooser/ChooserManager.md) 
+Kotlin| [Java](ChooserManager.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class ChooserManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.service.chooser.ChooserManager](../android/service/chooser/ChooserManager.md) |
+| ↳ | [android.service.chooser.ChooserManager](ChooserManager.md) |
 
 Manages the creation, tracking, and retrieval of chooser sessions.
 
@@ -52,8 +52,8 @@ An Interactive Chooser Session allows apps to invoke the system Chooser without 
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [ChooserSession](../android/service/chooser/ChooserSession.md)? | [getSession](../android/service/chooser/ChooserManager.md))`(`token:` ` [ChooserSessionToken](../android/service/chooser/ChooserSessionToken.md)`)` Returns a [ChooserSession](../android/service/chooser/ChooserSession.md) associated with this token or`null`if there is no active session. |
-| open [ChooserSession](../android/service/chooser/ChooserSession.md) | [startSession](../android/service/chooser/ChooserManager.md))`(`context:` ` [Context](../android/content/Context.md)`, `chooserIntent:` ` [Intent](../android/content/Intent.md)`)` Starts a new interactive Chooser session. |
+| open [ChooserSession](ChooserSession.md)? | [getSession](ChooserManager.md))`(`token:` ` [ChooserSessionToken](ChooserSessionToken.md)`)` Returns a [ChooserSession](ChooserSession.md) associated with this token or`null`if there is no active session. |
+| open [ChooserSession](ChooserSession.md) | [startSession](ChooserManager.md))`(`context:` ` [Context](../android.content/Context.md)`, `chooserIntent:` ` [Intent](../android.content/Intent.md)`)` Starts a new interactive Chooser session. |
 
 ## Public methods
 
@@ -65,15 +65,15 @@ Added in [API level 36.1](https://developer.android.com/guide/topics/manifest/us
 open fun getSession(token: ChooserSessionToken): ChooserSession?
 ```
 
-Returns a [ChooserSession](../android/service/chooser/ChooserSession.md) associated with this token or`null`if there is no active session.
+Returns a [ChooserSession](ChooserSession.md) associated with this token or`null`if there is no active session.
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `token` | [ChooserSessionToken](../android/service/chooser/ChooserSessionToken.md): [ChooserSessionToken](../android/service/chooser/ChooserSessionToken.md). This value cannot be`null`. |
+| `token` | [ChooserSessionToken](ChooserSessionToken.md): [ChooserSessionToken](ChooserSessionToken.md). This value cannot be`null`. |
 
 **See Also**
 
-- [android.service.chooser.ChooserSession#getToken()](../android/service/chooser/ChooserSession.md)) 
+- [android.service.chooser.ChooserSession#getToken()](ChooserSession.md)) 
 
 ### startSession
 
@@ -90,9 +90,9 @@ Starts a new interactive Chooser session. The method is idempotent and will star
 
 | Parameters ||
 |-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `chooserIntent` | [Intent](../android/content/Intent.md):an [Intent.ACTION_CHOOSER](../android/content/Intent.md) intent that will be used as a base for the new Chooser session. An interactive Chooser session also supports the following chooser parameters: - [Intent.EXTRA_ALTERNATE_INTENTS](../android/content/Intent.md) - [Intent.EXTRA_INITIAL_INTENTS](../android/content/Intent.md) - [Intent.EXTRA_EXCLUDE_COMPONENTS](../android/content/Intent.md) - [Intent.EXTRA_REPLACEMENT_EXTRAS](../android/content/Intent.md) - [Intent.EXTRA_CHOOSER_TARGETS](../android/content/Intent.md) - [Intent.EXTRA_CHOOSER_REFINEMENT_INTENT_SENDER](../android/content/Intent.md) - [Intent.EXTRA_CHOOSER_RESULT_INTENT_SENDER](../android/content/Intent.md) - [Intent.EXTRA_CHOSEN_COMPONENT_INTENT_SENDER](../android/content/Intent.md) <br /> See also [Intent.createChooser(Intent, CharSequence)](../android/content/Intent.md)). This value cannot be`null`. |
-| `context` | [Context](../android/content/Context.md):This value cannot be`null`. |
+| `chooserIntent` | [Intent](../android.content/Intent.md):an [Intent.ACTION_CHOOSER](../android.content/Intent.md) intent that will be used as a base for the new Chooser session. An interactive Chooser session also supports the following chooser parameters: - [Intent.EXTRA_ALTERNATE_INTENTS](../android.content/Intent.md) - [Intent.EXTRA_INITIAL_INTENTS](../android.content/Intent.md) - [Intent.EXTRA_EXCLUDE_COMPONENTS](../android.content/Intent.md) - [Intent.EXTRA_REPLACEMENT_EXTRAS](../android.content/Intent.md) - [Intent.EXTRA_CHOOSER_TARGETS](../android.content/Intent.md) - [Intent.EXTRA_CHOOSER_REFINEMENT_INTENT_SENDER](../android.content/Intent.md) - [Intent.EXTRA_CHOOSER_RESULT_INTENT_SENDER](../android.content/Intent.md) - [Intent.EXTRA_CHOSEN_COMPONENT_INTENT_SENDER](../android.content/Intent.md) <br /> See also [Intent.createChooser(Intent, CharSequence)](../android.content/Intent.md)). This value cannot be`null`. |
+| `context` | [Context](../android.content/Context.md):This value cannot be`null`. |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------|-----------------------------|
-| [ChooserSession](../android/service/chooser/ChooserSession.md) | This value cannot be`null`. |
+| [ChooserSession](ChooserSession.md) | This value cannot be`null`. |

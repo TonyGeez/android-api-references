@@ -19,7 +19,7 @@ Listener for filtering accessibility events.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [accept](../android/app/UiAutomation.AccessibilityEventFilter.md))`(`event:` ` [AccessibilityEvent](../android/view/accessibility/AccessibilityEvent.md)!`)` Callback for determining whether an event is accepted or it is filtered out. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [accept](../android/app/UiAutomation.AccessibilityEventFilter.md))`(`event:` ` [AccessibilityEvent](../android.view.accessibility/AccessibilityEvent.md)!`)` Callback for determining whether an event is accepted or it is filtered out. |
 
 ## Public methods
 
@@ -35,7 +35,7 @@ Callback for determining whether an event is accepted or it is filtered out.
 
 | Parameters ||
 |---------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| `event` | [AccessibilityEvent](../android/view/accessibility/AccessibilityEvent.md)!:The event to process. |
+| `event` | [AccessibilityEvent](../android.view.accessibility/AccessibilityEvent.md)!:The event to process. |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------------------------------|

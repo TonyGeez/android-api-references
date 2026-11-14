@@ -2,7 +2,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # Annotation
 
-Kotlin | [Java](../android/text/Annotation.md)
+Kotlin | [Java](Annotation.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ open class Annotation : ParcelableSpan
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.text.Annotation](../android/text/Annotation.md) |
+| ↳ | [android.text.Annotation](Annotation.md) |
 
 Annotations are simple key-value pairs that are preserved across TextView save/restore cycles and can be used to keep application-specific data that needs to be maintained for regions of text.
 
@@ -108,5 +108,5 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |

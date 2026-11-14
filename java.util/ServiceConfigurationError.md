@@ -11,8 +11,8 @@ open class ServiceConfigurationError : Error
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
-| | ↳ | [java.lang.Error](../java/lang/Error.md) ||
-| | | ↳ | [java.util.ServiceConfigurationError](../java/util/ServiceConfigurationError.md) |
+| | ↳ | [java.lang.Error](../java.lang/Error.md) ||
+| | | ↳ | [java.util.ServiceConfigurationError](ServiceConfigurationError.md) |
 | --- | --- | --- | --- |
 
 Error thrown when something goes wrong while locating, loading, or instantiating a service provider.
@@ -21,8 +21,8 @@ Error thrown when something goes wrong while locating, loading, or instantiating
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ServiceConfigurationError](../java/util/ServiceConfigurationError.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a new instance with the specified message. |
-| [ServiceConfigurationError](../java/util/ServiceConfigurationError.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a new instance with the specified message and cause. |
+| [ServiceConfigurationError](ServiceConfigurationError.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a new instance with the specified message. |
+| [ServiceConfigurationError](ServiceConfigurationError.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a new instance with the specified message and cause. |
 
 ## Public constructors
 

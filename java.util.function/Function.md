@@ -8,24 +8,24 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 @FunctionalInterface interface Function<T : Any!, R : Any!>
 ```
 
-| [java.util.function.Function](../java/util/function/Function.md) |
+| [java.util.function.Function](Function.md) |
 
-| Known Direct Subclasses [UnaryOperator](../java/util/function/UnaryOperator.md) |--------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------| | [UnaryOperator](../java/util/function/UnaryOperator.md) | Represents an operation on a single operand that produces a result of the same type as its operand. | |
+| Known Direct Subclasses [UnaryOperator](UnaryOperator.md) |--------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------| | [UnaryOperator](UnaryOperator.md) | Represents an operation on a single operand that produces a result of the same type as its operand. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 Represents a function that accepts one argument and produces a result.
 
-This is a [functional interface](../java/util/function/_package.md) whose functional method is [apply(java.lang.Object)](../java/util/function/Function.md)).
+This is a [functional interface](_package.md) whose functional method is [apply(java.lang.Object)](Function.md)).
 
 ## Summary
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Function](../java/util/function/Function.md)\<T,V\>! | [andThen](../java/util/function/Function.md))`(`after:` ` [Function](../java/util/function/Function.md)<in` `R,` `out` `V>!`)` Returns a composed function that first applies this function to its input, and then applies the`after`function to the result. |
-| abstractR | [apply](../java/util/function/Function.md))`(`t:` `T`)` Applies this function to the given argument. |
-| open [Function](../java/util/function/Function.md)\<V,R\>! | [compose](../java/util/function/Function.md))`(`before:` ` [Function](../java/util/function/Function.md)<in` `V,` `out` `T>!`)` Returns a composed function that first applies the`before`function to its input, and then applies this function to the result. |
+| open [Function](Function.md)\<T,V\>! | [andThen](Function.md))`(`after:` ` [Function](Function.md)<in` `R,` `out` `V>!`)` Returns a composed function that first applies this function to its input, and then applies the`after`function to the result. |
+| abstractR | [apply](Function.md))`(`t:` `T`)` Applies this function to the given argument. |
+| open [Function](Function.md)\<V,R\>! | [compose](Function.md))`(`before:` ` [Function](Function.md)<in` `V,` `out` `T>!`)` Returns a composed function that first applies the`before`function to its input, and then applies this function to the result. |
 | --- | --- |
-| openstatic [Function](../java/util/function/Function.md)\<T,T\>! | [identity](../java/util/function/Function.md))`()` Returns a function that always returns its input argument. |
+| openstatic [Function](Function.md)\<T,T\>! | [identity](Function.md))`()` Returns a function that always returns its input argument. |
 
 ## Public methods
 
@@ -42,11 +42,11 @@ Returns a composed function that first applies this function to its input, and t
 | Parameters ||
 |---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `<V>` | the type of output of the`after`function, and of the composed function |
-| `after` | [Function](../java/util/function/Function.md)\<inR,outV\>!:the function to apply after this function is applied |
+| `after` | [Function](Function.md)\<inR,outV\>!:the function to apply after this function is applied |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
-| [Function](../java/util/function/Function.md)<T,` `V>! | a composed function that first applies this function and then applies the`after`function |
+| [Function](Function.md)<T,` `V>! | a composed function that first applies this function and then applies the`after`function |
 
 | Exceptions ||
 |----------------------------------|------------------|
@@ -54,7 +54,7 @@ Returns a composed function that first applies this function to its input, and t
 
 **See Also**
 
-- [#compose(Function)](../java/util/function/Function.md)) 
+- [#compose(Function)](Function.md)) 
 
 ### apply
 
@@ -87,11 +87,11 @@ Returns a composed function that first applies the`before`function to its input,
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `<V>` | the type of input to the`before`function, and to the composed function |
-| `before` | [Function](../java/util/function/Function.md)\<inV,outT\>!:the function to apply before this function is applied |
+| `before` | [Function](Function.md)\<inV,outT\>!:the function to apply before this function is applied |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
-| [Function](../java/util/function/Function.md)<V,` `R>! | a composed function that first applies the`before`function and then applies this function |
+| [Function](Function.md)<V,` `R>! | a composed function that first applies the`before`function and then applies this function |
 
 | Exceptions ||
 |----------------------------------|-------------------|
@@ -99,7 +99,7 @@ Returns a composed function that first applies the`before`function to its input,
 
 **See Also**
 
-- [#andThen(Function)](../java/util/function/Function.md)) 
+- [#andThen(Function)](Function.md)) 
 
 ### identity
 
@@ -117,4 +117,4 @@ Returns a function that always returns its input argument.
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|---------------------------------------------------|
-| [Function](../java/util/function/Function.md)<T,` `T>! | a function that always returns its input argument |
+| [Function](Function.md)<T,` `T>! | a function that always returns its input argument |

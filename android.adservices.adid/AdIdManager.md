@@ -5,7 +5,7 @@ Also in [Ad Services Extensions 4](https://developer.android.com/sdkExtensions)
 
 # AdIdManager
 
-Kotlin| [Java](../android/adservices/adid/AdIdManager.md) 
+Kotlin| [Java](AdIdManager.md) 
 | --- | --- |
 
 ```
@@ -14,7 +14,7 @@ open class AdIdManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.adservices.adid.AdIdManager](../android/adservices/adid/AdIdManager.md) |
+| ↳ | [android.adservices.adid.AdIdManager](AdIdManager.md) |
 
 AdId Manager provides APIs for app and ad-SDKs to access advertising ID. The advertising ID is a unique, per-device, user-resettable ID for advertising. It gives users better controls and provides developers with a simple, standard system to continue to monetize their apps via personalized ads (formerly known as interest-based ads).
 
@@ -22,9 +22,9 @@ AdId Manager provides APIs for app and ad-SDKs to access advertising ID. The adv
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [AdIdManager](../android/adservices/adid/AdIdManager.md) | [get](../android/adservices/adid/AdIdManager.md))`(`context:` ` [Context](../android/content/Context.md)`)` Factory method for creating an instance of AdIdManager. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getAdId](../android/adservices/adid/AdIdManager.md))`(`executor:` ` [Executor](../java/util/concurrent/Executor.md)`, `callback:` ` [AdServicesOutcomeReceiver](../android/adservices/common/AdServicesOutcomeReceiver.md)< [AdId](../android/adservices/adid/AdId.md)!,` ` [Exception](../java/lang/Exception.md)!>`)` Return the AdId. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getAdId](../android/adservices/adid/AdIdManager.md))`(`executor:` ` [Executor](../java/util/concurrent/Executor.md)`, `callback:` ` [OutcomeReceiver](../android/os/OutcomeReceiver.md)< [AdId](../android/adservices/adid/AdId.md)!,` ` [Exception](../java/lang/Exception.md)!>`)` Return the AdId. |
+| openstatic [AdIdManager](AdIdManager.md) | [get](AdIdManager.md))`(`context:` ` [Context](../android.content/Context.md)`)` Factory method for creating an instance of AdIdManager. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getAdId](AdIdManager.md))`(`executor:` ` [Executor](../java.util.concurrent/Executor.md)`, `callback:` ` [AdServicesOutcomeReceiver](../android.adservices.common/AdServicesOutcomeReceiver.md)< [AdId](AdId.md)!,` ` [Exception](../java.lang/Exception.md)!>`)` Return the AdId. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getAdId](AdIdManager.md))`(`executor:` ` [Executor](../java.util.concurrent/Executor.md)`, `callback:` ` [OutcomeReceiver](../android.os/OutcomeReceiver.md)< [AdId](AdId.md)!,` ` [Exception](../java.lang/Exception.md)!>`)` Return the AdId. |
 | --- | --- |
 
 ## Public methods
@@ -42,11 +42,11 @@ Factory method for creating an instance of AdIdManager.
 
 | Parameters ||
 |-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](../android/content/Context.md):The [Context](../android/content/Context.md) to use This value cannot be`null`. |
+| `context` | [Context](../android.content/Context.md):The [Context](../android.content/Context.md) to use This value cannot be`null`. |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| [AdIdManager](../android/adservices/adid/AdIdManager.md) | A [AdIdManager](../android/adservices/adid/AdIdManager.md) instance This value cannot be`null`. |
+| [AdIdManager](AdIdManager.md) | A [AdIdManager](AdIdManager.md) instance This value cannot be`null`. |
 
 ### getAdId
 
@@ -61,15 +61,15 @@ open fun getAdId(
 ): Unit
 ```
 
-**Deprecated:** *use [getAdId(java.util.concurrent.Executor,android.os.OutcomeReceiver)](../android/adservices/adid/AdIdManager.md))instead. Android R is no longer supported.*
+**Deprecated:** *use [getAdId(java.util.concurrent.Executor,android.os.OutcomeReceiver)](AdIdManager.md))instead. Android R is no longer supported.*
 
 Return the AdId. For use on Android R or lower. 
-Requires [android.adservices.common.AdServicesPermissions#ACCESS_ADSERVICES_AD_ID](../android/adservices/common/AdServicesPermissions.md)
+Requires [android.adservices.common.AdServicesPermissions#ACCESS_ADSERVICES_AD_ID](../android.adservices.common/AdServicesPermissions.md)
 
 | Parameters ||
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `executor` | [Executor](../java/util/concurrent/Executor.md):The executor to run callback. This value cannot be`null`. Callback and listener events are dispatched through this [Executor](../java/util/concurrent/Executor.md), providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use [Context.getMainExecutor()](../android/content/Context.md)). Otherwise, provide an [Executor](../java/util/concurrent/Executor.md) that dispatches to an appropriate thread. |
-| `callback` | [AdServicesOutcomeReceiver](../android/adservices/common/AdServicesOutcomeReceiver.md)\< [AdId](../android/adservices/adid/AdId.md)!, [Exception](../java/lang/Exception.md)!\>:The callback that's called after adid are available or an error occurs. This value cannot be`null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md):The executor to run callback. This value cannot be`null`. Callback and listener events are dispatched through this [Executor](../java.util.concurrent/Executor.md), providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use [Context.getMainExecutor()](../android.content/Context.md)). Otherwise, provide an [Executor](../java.util.concurrent/Executor.md) that dispatches to an appropriate thread. |
+| `callback` | [AdServicesOutcomeReceiver](../android.adservices.common/AdServicesOutcomeReceiver.md)\< [AdId](AdId.md)!, [Exception](../java.lang/Exception.md)!\>:The callback that's called after adid are available or an error occurs. This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------|-----------------------------|
@@ -88,12 +88,12 @@ open fun getAdId(
 ```
 
 Return the AdId. 
-Requires [android.adservices.common.AdServicesPermissions#ACCESS_ADSERVICES_AD_ID](../android/adservices/common/AdServicesPermissions.md)
+Requires [android.adservices.common.AdServicesPermissions#ACCESS_ADSERVICES_AD_ID](../android.adservices.common/AdServicesPermissions.md)
 
 | Parameters ||
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `executor` | [Executor](../java/util/concurrent/Executor.md):The executor to run callback. This value cannot be`null`. Callback and listener events are dispatched through this [Executor](../java/util/concurrent/Executor.md), providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use [Context.getMainExecutor()](../android/content/Context.md)). Otherwise, provide an [Executor](../java/util/concurrent/Executor.md) that dispatches to an appropriate thread. |
-| `callback` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [AdId](../android/adservices/adid/AdId.md)!, [Exception](../java/lang/Exception.md)!\>:The callback that's called after adid are available or an error occurs. This value cannot be`null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md):The executor to run callback. This value cannot be`null`. Callback and listener events are dispatched through this [Executor](../java.util.concurrent/Executor.md), providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use [Context.getMainExecutor()](../android.content/Context.md)). Otherwise, provide an [Executor](../java.util.concurrent/Executor.md) that dispatches to an appropriate thread. |
+| `callback` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [AdId](AdId.md)!, [Exception](../java.lang/Exception.md)!\>:The callback that's called after adid are available or an error occurs. This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------|-----------------------------|

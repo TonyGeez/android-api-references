@@ -8,11 +8,11 @@ abstract class AutofillService : Service
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](../android/content/Context.md) ||||
-| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) |||
-| | | ↳ | [android.app.Service](../android/app/Service.md) ||
+| ↳ | [android.content.Context](../android.content/Context.md) ||||
+| | ↳ | [android.content.ContextWrapper](../android.content/ContextWrapper.md) |||
+| | | ↳ | [android.app.Service](../android.app/Service.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.service.autofill.AutofillService](../android/service/autofill/AutofillService.md) |
+| | | | ↳ | [android.service.autofill.AutofillService](AutofillService.md) |
 
 An `AutofillService` is a service used to automatically fill the contents of the screen on behalf of a given user - for more information about autofill, read [Autofill Framework](https://developer.android.com/preview/features/autofill.html).
 
@@ -173,7 +173,7 @@ private String getCertificatesHash(String packageName) throws Exception {
 </string>
 ```
 
-If the service did not store the signing certificates data the first time the data was saved --- for example, because the data was created by a previous version of the app that did not use the Autofill Framework --- the service should warn the user that the authenticity of the app cannot be confirmed (see an example on how to show such warning in the [Web security](../android/service/autofill/AutofillService.md) section below), and if the user agrees, then the service could save the data from the signing ceriticates for future use.
+If the service did not store the signing certificates data the first time the data was saved --- for example, because the data was created by a previous version of the app that did not use the Autofill Framework --- the service should warn the user that the authenticity of the app cannot be confirmed (see an example on how to show such warning in the [Web security](AutofillService.md) section below), and if the user agrees, then the service could save the data from the signing ceriticates for future use.
 
 ### Ignoring views
 
@@ -1360,8 +1360,8 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 
 | Public methods ||
 |---|---|
-| [FillEventHistory](../android/service/autofill/FillEventHistory.md)? | `https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService#getFillEventHistory()()` Gets the events that happened after the last `https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService#onFillRequest(android.service.autofill.FillRequest,%20android.os.CancellationSignal,%20android.service.autofill.FillCallback)` call. |
-| [IBinder](../android/os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
+| [FillEventHistory](FillEventHistory.md)? | `https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService#getFillEventHistory()()` Gets the events that happened after the last `https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService#onFillRequest(android.service.autofill.FillRequest,%20android.os.CancellationSignal,%20android.service.autofill.FillCallback)` call. |
+| [IBinder](../android.os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService#onConnected()()` Called when the Android system connects to service. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService#onCreate()()` Called by the system when the service is first created. |
@@ -3156,7 +3156,7 @@ Return the communication channel to the service. May return null if clients can 
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
+| `intent` | [Intent](../android.content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
 
 | Return ||
 |---|---|
@@ -3214,9 +3214,9 @@ Service must call one of the `https://developer.android.com/reference/kotlin/and
 
 | Parameters ||
 |---|---|
-| `request` | [FillRequest](../android/service/autofill/FillRequest.md): the `https://developer.android.com/reference/kotlin/android/service/autofill/FillRequest` to handle. See `https://developer.android.com/reference/kotlin/android/service/autofill/FillResponse` for examples of multiple-sections requests. This value cannot be `null`. |
-| `cancellationSignal` | [CancellationSignal](../android/os/CancellationSignal.md): signal for observing cancellation requests. The system will use this to notify you that the fill result is no longer needed and you should stop handling this fill request in order to save resources. This value cannot be `null`. |
-| `callback` | [FillCallback](../android/service/autofill/FillCallback.md): object used to notify the result of the request. This value cannot be `null`. |
+| `request` | [FillRequest](FillRequest.md): the `https://developer.android.com/reference/kotlin/android/service/autofill/FillRequest` to handle. See `https://developer.android.com/reference/kotlin/android/service/autofill/FillResponse` for examples of multiple-sections requests. This value cannot be `null`. |
+| `cancellationSignal` | [CancellationSignal](../android.os/CancellationSignal.md): signal for observing cancellation requests. The system will use this to notify you that the fill result is no longer needed and you should stop handling this fill request in order to save resources. This value cannot be `null`. |
+| `callback` | [FillCallback](FillCallback.md): object used to notify the result of the request. This value cannot be `null`. |
 | --- | --- |
 
 ### onSaveRequest
@@ -3238,8 +3238,8 @@ If the service could not handle the request right away---for example, because it
 
 | Parameters ||
 |---|---|
-| `request` | [SaveRequest](../android/service/autofill/SaveRequest.md): the `https://developer.android.com/reference/kotlin/android/service/autofill/SaveRequest` to handle. See `https://developer.android.com/reference/kotlin/android/service/autofill/FillResponse` for examples of multiple-sections requests. This value cannot be `null`. |
-| `callback` | [SaveCallback](../android/service/autofill/SaveCallback.md): object used to notify the result of the request. This value cannot be `null`. |
+| `request` | [SaveRequest](SaveRequest.md): the `https://developer.android.com/reference/kotlin/android/service/autofill/SaveRequest` to handle. See `https://developer.android.com/reference/kotlin/android/service/autofill/FillResponse` for examples of multiple-sections requests. This value cannot be `null`. |
+| `callback` | [SaveCallback](SaveCallback.md): object used to notify the result of the request. This value cannot be `null`. |
 
 ### onSavedDatasetsInfoRequest
 
@@ -3255,7 +3255,7 @@ There is no timeout for the request, but it's recommended to return the result w
 
 | Parameters ||
 |---|---|
-| `callback` | [SavedDatasetsInfoCallback](../android/service/autofill/SavedDatasetsInfoCallback.md): callback for responding to the request. This value cannot be `null`. |
+| `callback` | [SavedDatasetsInfoCallback](SavedDatasetsInfoCallback.md): callback for responding to the request. This value cannot be `null`. |
 
 ### onSessionDestroyed
 
@@ -3273,4 +3273,4 @@ This will usually happens whenever `https://developer.android.com/reference/kotl
 
 | Parameters ||
 |---|---|
-| `history` | [FillEventHistory](../android/service/autofill/FillEventHistory.md)?: This value may be `null`. |
+| `history` | [FillEventHistory](FillEventHistory.md)?: This value may be `null`. |

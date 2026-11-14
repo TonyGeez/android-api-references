@@ -8,91 +8,91 @@ open class View : AccessibilityEventSource, Drawable.Callback, KeyEvent.Callba
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.View](../android/view/View.md) |
+| ↳ | [android.view.View](View.md) |
 
-Known Direct Subclasses [AnalogClock](../android/widget/AnalogClock.md), [ImageView](../android/widget/ImageView.md), [KeyboardView](../android/inputmethodservice/KeyboardView.md), [MediaRouteButton](../android/app/MediaRouteButton.md), [ProgressBar](../android/widget/ProgressBar.md), [Space](../android/widget/Space.md), [SurfaceView](../android/view/SurfaceView.md), [TextView](../android/widget/TextView.md), [TextureView](../android/view/TextureView.md), [ViewGroup](../android/view/ViewGroup.md), [ViewStub](../android/view/ViewStub.md) [AnalogClock](../android/widget/AnalogClock.md) This widget displays an analogic clock with two hands for hours and minutes.
-[ImageView](../android/widget/ImageView.md) Displays image resources, for example `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#` or `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#` resources.
-[KeyboardView](../android/inputmethodservice/KeyboardView.md) A view that renders a virtual `https://developer.android.com/reference/kotlin/android/inputmethodservice/Keyboard.html#`.
-[MediaRouteButton](../android/app/MediaRouteButton.md) <br />
+Known Direct Subclasses [AnalogClock](../android.widget/AnalogClock.md), [ImageView](../android.widget/ImageView.md), [KeyboardView](../android.inputmethodservice/KeyboardView.md), [MediaRouteButton](../android.app/MediaRouteButton.md), [ProgressBar](../android.widget/ProgressBar.md), [Space](../android.widget/Space.md), [SurfaceView](SurfaceView.md), [TextView](../android.widget/TextView.md), [TextureView](TextureView.md), [ViewGroup](ViewGroup.md), [ViewStub](ViewStub.md) [AnalogClock](../android.widget/AnalogClock.md) This widget displays an analogic clock with two hands for hours and minutes.
+[ImageView](../android.widget/ImageView.md) Displays image resources, for example `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#` or `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#` resources.
+[KeyboardView](../android.inputmethodservice/KeyboardView.md) A view that renders a virtual `https://developer.android.com/reference/kotlin/android/inputmethodservice/Keyboard.html#`.
+[MediaRouteButton](../android.app/MediaRouteButton.md) <br />
 
-[ProgressBar](../android/widget/ProgressBar.md) A user interface element that indicates the progress of an operation.
-[Space](../android/widget/Space.md) Space is a lightweight View subclass that may be used to create gaps between components in general purpose layouts.
-[SurfaceView](../android/view/SurfaceView.md) Provides a dedicated drawing surface embedded inside of a view hierarchy.
-[TextView](../android/widget/TextView.md) A user interface element that displays text to the user.
-[TextureView](../android/view/TextureView.md) A TextureView can be used to display a content stream, such as that coming from a camera preview, a video, or an OpenGL scene.
-[ViewGroup](../android/view/ViewGroup.md) A `ViewGroup` is a special view that can contain other views (called children.) The view group is the base class for layouts and views containers.
-[ViewStub](../android/view/ViewStub.md) A ViewStub is an invisible, zero-sized View that can be used to lazily inflate layout resources at runtime.
-Known Indirect Subclasses [AbsListView](../android/widget/AbsListView.md), [AbsSeekBar](../android/widget/AbsSeekBar.md), [AbsSpinner](../android/widget/AbsSpinner.md), [AbsoluteLayout](../android/widget/AbsoluteLayout.md), [ActionMenuView](../android/widget/ActionMenuView.md), [AdapterView](../android/widget/AdapterView.md), [AdapterViewAnimator](../android/widget/AdapterViewAnimator.md), [AdapterViewFlipper](../android/widget/AdapterViewFlipper.md), [AppWidgetHostView](../android/appwidget/AppWidgetHostView.md), [AutoCompleteTextView](../android/widget/AutoCompleteTextView.md), [Button](../android/widget/Button.md), [CalendarView](../android/widget/CalendarView.md), and 59 others. [AbsListView](../android/widget/AbsListView.md) Base class that can be used to implement virtualized lists of items.
-[AbsSeekBar](../android/widget/AbsSeekBar.md) AbsSeekBar extends the capabilities of ProgressBar by adding a draggable thumb.
-[AbsSpinner](../android/widget/AbsSpinner.md) An abstract base class for spinner widgets.
-[AbsoluteLayout](../android/widget/AbsoluteLayout.md) A layout that lets you specify exact locations (x/y coordinates) of its children.
-[ActionMenuView](../android/widget/ActionMenuView.md) ActionMenuView is a presentation of a series of menu options as a View.
-[AdapterView](../android/widget/AdapterView.md) An AdapterView is a view whose children are determined by an `https://developer.android.com/reference/kotlin/android/widget/Adapter.html#`.
-[AdapterViewAnimator](../android/widget/AdapterViewAnimator.md) Base class for a `https://developer.android.com/reference/kotlin/android/widget/AdapterView.html#` that will perform animations when switching between its views.
-[AdapterViewFlipper](../android/widget/AdapterViewFlipper.md) Simple `https://developer.android.com/reference/kotlin/android/widget/ViewAnimator.html#` that will animate between two or more views that have been added to it.
-[AppWidgetHostView](../android/appwidget/AppWidgetHostView.md) Provides the glue to show AppWidget views.
-[AutoCompleteTextView](../android/widget/AutoCompleteTextView.md) An editable text view that shows completion suggestions automatically while the user is typing.
-[Button](../android/widget/Button.md) A user interface element the user can tap or click to perform an action.
-[CalendarView](../android/widget/CalendarView.md) This class is a calendar widget for displaying and selecting dates.
-[CheckBox](../android/widget/CheckBox.md) A checkbox is a specific type of two-states button that can be either checked or unchecked.
-[CheckedTextView](../android/widget/CheckedTextView.md) An extension to `https://developer.android.com/reference/kotlin/android/widget/TextView.html#` that supports the `https://developer.android.com/reference/kotlin/android/widget/Checkable.html#` interface and displays.
-[Chronometer](../android/widget/Chronometer.md) Class that implements a simple timer.
-[CompoundButton](../android/widget/CompoundButton.md) A button with two states, checked and unchecked.
-[DatePicker](../android/widget/DatePicker.md) Provides a widget for selecting a date.
-[DialerFilter](../android/widget/DialerFilter.md) This widget is a layout that contains several specifically-named child views that handle keyboard entry interpreted as standard phone dialpad digits.
-[DigitalClock](../android/widget/DigitalClock.md) Like AnalogClock, but digital.
-[EditText](../android/widget/EditText.md) A user interface element for entering and modifying text.
-[ExpandableListView](../android/widget/ExpandableListView.md) A view that shows items in a vertically scrolling two-level list.
-[ExtractEditText](../android/inputmethodservice/ExtractEditText.md) \* Specialization of `https://developer.android.com/reference/kotlin/android/widget/EditText.html#` for showing and interacting with the extracted text in a full-screen input method.
-[FragmentBreadCrumbs](../android/app/FragmentBreadCrumbs.md) Helper class for showing "bread crumbs" representing the fragment stack in an activity.
-[FrameLayout](../android/widget/FrameLayout.md) FrameLayout is designed to block out an area on the screen to display a single item.
-[GLSurfaceView](../android/opengl/GLSurfaceView.md) An implementation of SurfaceView that uses the dedicated surface for displaying OpenGL rendering.
-[Gallery](../android/widget/Gallery.md) A view that shows items in a center-locked, horizontally scrolling list.
-[GestureOverlayView](../android/gesture/GestureOverlayView.md) A transparent overlay for gesture input that can be placed on top of other widgets or contain other widgets.
-[GridLayout](../android/widget/GridLayout.md) A layout that places its children in a rectangular *grid*.
-[GridView](../android/widget/GridView.md) A view that shows items in two-dimensional scrolling grid.
-[HorizontalScrollView](../android/widget/HorizontalScrollView.md) Layout container for a view hierarchy that can be scrolled by the user, allowing it to be larger than the physical display.
-[ImageButton](../android/widget/ImageButton.md) Displays a button with an image (instead of text) that can be pressed or clicked by the user.
-[ImageSwitcher](../android/widget/ImageSwitcher.md) `https://developer.android.com/reference/kotlin/android/widget/ViewSwitcher.html#` that switches between two ImageViews when a new image is set on it.
-[InlineContentView](../android/widget/inline/InlineContentView.md) This class represents a view that holds opaque content from another app that you can inline in your UI.
-[LinearLayout](../android/widget/LinearLayout.md) A layout that arranges other views either horizontally in a single column or vertically in a single row.
-[ListView](../android/widget/ListView.md) Displays a vertically-scrollable collection of views, where each view is positioned immediately below the previous view in the list.
-[MediaController](../android/widget/MediaController.md) A view containing controls for a MediaPlayer.
-[MultiAutoCompleteTextView](../android/widget/MultiAutoCompleteTextView.md) An editable text view, extending `https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView.html#`, that can show completion suggestions for the substring of the text where the user is typing instead of necessarily for the entire thing.
-[NumberPicker](../android/widget/NumberPicker.md) A widget that enables the user to select a number from a predefined range.
-[QuickContactBadge](../android/widget/QuickContactBadge.md) Widget used to show an image with the standard QuickContact badge and on-click behavior.
-[RadioButton](../android/widget/RadioButton.md) A radio button is a two-states button that can be either checked or unchecked.
-[RadioGroup](../android/widget/RadioGroup.md) This class is used to create a multiple-exclusion scope for a set of radio buttons.
-[RatingBar](../android/widget/RatingBar.md) A RatingBar is an extension of SeekBar and ProgressBar that shows a rating in stars.
-[RelativeLayout](../android/widget/RelativeLayout.md) A Layout where the positions of the children can be described in relation to each other or to the parent.
-[ScrollView](../android/widget/ScrollView.md) A view group that allows the view hierarchy placed within it to be scrolled.
-[SearchView](../android/widget/SearchView.md) A widget that provides a user interface for the user to enter a search query and submit a request to a search provider.
-[SeekBar](../android/widget/SeekBar.md) A SeekBar is an extension of ProgressBar that adds a draggable thumb.
-[SlidingDrawer](../android/widget/SlidingDrawer.md) SlidingDrawer hides content out of the screen and allows the user to drag a handle to bring the content on screen.
-[Spinner](../android/widget/Spinner.md) A view that displays one child at a time and lets the user pick among them.
-[SplashScreenView](../android/window/SplashScreenView.md) The view which allows an activity to customize its splash screen exit animation.
-[StackView](../android/widget/StackView.md) A view that displays its children in a stack and allows users to discretely swipe through the children.
-[Switch](../android/widget/Switch.md) A Switch is a two-state toggle widget.
-[TabHost](../android/widget/TabHost.md) Container for a tabbed window view.
-[TabWidget](../android/widget/TabWidget.md) Displays a list of tab labels representing each page in the parent's tab collection.
-[TableLayout](../android/widget/TableLayout.md) A layout that arranges its children into rows and columns.
-[TableRow](../android/widget/TableRow.md) A layout that arranges its children horizontally.
-[TextClock](../android/widget/TextClock.md) `TextClock` can display the current date and/or time as a formatted string.
-[TextSwitcher](../android/widget/TextSwitcher.md) Specialized `https://developer.android.com/reference/kotlin/android/widget/ViewSwitcher.html#` that contains only children of type `https://developer.android.com/reference/kotlin/android/widget/TextView.html#`.
-[TimePicker](../android/widget/TimePicker.md) A widget for selecting the time of day, in either 24-hour or AM/PM mode.
-[ToggleButton](../android/widget/ToggleButton.md) Displays checked/unchecked states as a button with a "light" indicator and by default accompanied with the text "ON" or "OFF".
-[Toolbar](../android/widget/Toolbar.md) A standard toolbar for use within application content.
-[TvAdView](../android/media/tv/ad/TvAdView.md) Displays contents of TV advertisement services.
-[TvInteractiveAppView](../android/media/tv/interactive/TvInteractiveAppView.md) Displays contents of interactive TV applications.
-[TvView](../android/media/tv/TvView.md) Displays TV contents.
-[TwoLineListItem](../android/widget/TwoLineListItem.md) A view group with two children, intended for use in ListViews.
-[VideoView](../android/widget/VideoView.md) Displays a video file.
-[ViewAnimator](../android/widget/ViewAnimator.md) Base class for a `https://developer.android.com/reference/kotlin/android/widget/FrameLayout.html#` container that will perform animations when switching between its views.
-[ViewFlipper](../android/widget/ViewFlipper.md) Simple `https://developer.android.com/reference/kotlin/android/widget/ViewAnimator.html#` that will animate between two or more views that have been added to it.
-[ViewSwitcher](../android/widget/ViewSwitcher.md) `https://developer.android.com/reference/kotlin/android/widget/ViewAnimator.html#` that switches between two views, and has a factory from which these views are created.
-[WebView](../android/webkit/WebView.md) A View that displays web pages.
-[ZoomButton](../android/widget/ZoomButton.md) This widget provides a simple utility for turning a continued long-press event into a series of clicks at some set frequency.
-[ZoomControls](../android/widget/ZoomControls.md) The `ZoomControls` class displays a simple set of controls used for zooming and provides callbacks to register for events.
+[ProgressBar](../android.widget/ProgressBar.md) A user interface element that indicates the progress of an operation.
+[Space](../android.widget/Space.md) Space is a lightweight View subclass that may be used to create gaps between components in general purpose layouts.
+[SurfaceView](SurfaceView.md) Provides a dedicated drawing surface embedded inside of a view hierarchy.
+[TextView](../android.widget/TextView.md) A user interface element that displays text to the user.
+[TextureView](TextureView.md) A TextureView can be used to display a content stream, such as that coming from a camera preview, a video, or an OpenGL scene.
+[ViewGroup](ViewGroup.md) A `ViewGroup` is a special view that can contain other views (called children.) The view group is the base class for layouts and views containers.
+[ViewStub](ViewStub.md) A ViewStub is an invisible, zero-sized View that can be used to lazily inflate layout resources at runtime.
+Known Indirect Subclasses [AbsListView](../android.widget/AbsListView.md), [AbsSeekBar](../android.widget/AbsSeekBar.md), [AbsSpinner](../android.widget/AbsSpinner.md), [AbsoluteLayout](../android.widget/AbsoluteLayout.md), [ActionMenuView](../android.widget/ActionMenuView.md), [AdapterView](../android.widget/AdapterView.md), [AdapterViewAnimator](../android.widget/AdapterViewAnimator.md), [AdapterViewFlipper](../android.widget/AdapterViewFlipper.md), [AppWidgetHostView](../android.appwidget/AppWidgetHostView.md), [AutoCompleteTextView](../android.widget/AutoCompleteTextView.md), [Button](../android.widget/Button.md), [CalendarView](../android.widget/CalendarView.md), and 59 others. [AbsListView](../android.widget/AbsListView.md) Base class that can be used to implement virtualized lists of items.
+[AbsSeekBar](../android.widget/AbsSeekBar.md) AbsSeekBar extends the capabilities of ProgressBar by adding a draggable thumb.
+[AbsSpinner](../android.widget/AbsSpinner.md) An abstract base class for spinner widgets.
+[AbsoluteLayout](../android.widget/AbsoluteLayout.md) A layout that lets you specify exact locations (x/y coordinates) of its children.
+[ActionMenuView](../android.widget/ActionMenuView.md) ActionMenuView is a presentation of a series of menu options as a View.
+[AdapterView](../android.widget/AdapterView.md) An AdapterView is a view whose children are determined by an `https://developer.android.com/reference/kotlin/android/widget/Adapter.html#`.
+[AdapterViewAnimator](../android.widget/AdapterViewAnimator.md) Base class for a `https://developer.android.com/reference/kotlin/android/widget/AdapterView.html#` that will perform animations when switching between its views.
+[AdapterViewFlipper](../android.widget/AdapterViewFlipper.md) Simple `https://developer.android.com/reference/kotlin/android/widget/ViewAnimator.html#` that will animate between two or more views that have been added to it.
+[AppWidgetHostView](../android.appwidget/AppWidgetHostView.md) Provides the glue to show AppWidget views.
+[AutoCompleteTextView](../android.widget/AutoCompleteTextView.md) An editable text view that shows completion suggestions automatically while the user is typing.
+[Button](../android.widget/Button.md) A user interface element the user can tap or click to perform an action.
+[CalendarView](../android.widget/CalendarView.md) This class is a calendar widget for displaying and selecting dates.
+[CheckBox](../android.widget/CheckBox.md) A checkbox is a specific type of two-states button that can be either checked or unchecked.
+[CheckedTextView](../android.widget/CheckedTextView.md) An extension to `https://developer.android.com/reference/kotlin/android/widget/TextView.html#` that supports the `https://developer.android.com/reference/kotlin/android/widget/Checkable.html#` interface and displays.
+[Chronometer](../android.widget/Chronometer.md) Class that implements a simple timer.
+[CompoundButton](../android.widget/CompoundButton.md) A button with two states, checked and unchecked.
+[DatePicker](../android.widget/DatePicker.md) Provides a widget for selecting a date.
+[DialerFilter](../android.widget/DialerFilter.md) This widget is a layout that contains several specifically-named child views that handle keyboard entry interpreted as standard phone dialpad digits.
+[DigitalClock](../android.widget/DigitalClock.md) Like AnalogClock, but digital.
+[EditText](../android.widget/EditText.md) A user interface element for entering and modifying text.
+[ExpandableListView](../android.widget/ExpandableListView.md) A view that shows items in a vertically scrolling two-level list.
+[ExtractEditText](../android.inputmethodservice/ExtractEditText.md) \* Specialization of `https://developer.android.com/reference/kotlin/android/widget/EditText.html#` for showing and interacting with the extracted text in a full-screen input method.
+[FragmentBreadCrumbs](../android.app/FragmentBreadCrumbs.md) Helper class for showing "bread crumbs" representing the fragment stack in an activity.
+[FrameLayout](../android.widget/FrameLayout.md) FrameLayout is designed to block out an area on the screen to display a single item.
+[GLSurfaceView](../android.opengl/GLSurfaceView.md) An implementation of SurfaceView that uses the dedicated surface for displaying OpenGL rendering.
+[Gallery](../android.widget/Gallery.md) A view that shows items in a center-locked, horizontally scrolling list.
+[GestureOverlayView](../android.gesture/GestureOverlayView.md) A transparent overlay for gesture input that can be placed on top of other widgets or contain other widgets.
+[GridLayout](../android.widget/GridLayout.md) A layout that places its children in a rectangular *grid*.
+[GridView](../android.widget/GridView.md) A view that shows items in two-dimensional scrolling grid.
+[HorizontalScrollView](../android.widget/HorizontalScrollView.md) Layout container for a view hierarchy that can be scrolled by the user, allowing it to be larger than the physical display.
+[ImageButton](../android.widget/ImageButton.md) Displays a button with an image (instead of text) that can be pressed or clicked by the user.
+[ImageSwitcher](../android.widget/ImageSwitcher.md) `https://developer.android.com/reference/kotlin/android/widget/ViewSwitcher.html#` that switches between two ImageViews when a new image is set on it.
+[InlineContentView](../android.widget.inline/InlineContentView.md) This class represents a view that holds opaque content from another app that you can inline in your UI.
+[LinearLayout](../android.widget/LinearLayout.md) A layout that arranges other views either horizontally in a single column or vertically in a single row.
+[ListView](../android.widget/ListView.md) Displays a vertically-scrollable collection of views, where each view is positioned immediately below the previous view in the list.
+[MediaController](../android.widget/MediaController.md) A view containing controls for a MediaPlayer.
+[MultiAutoCompleteTextView](../android.widget/MultiAutoCompleteTextView.md) An editable text view, extending `https://developer.android.com/reference/kotlin/android/widget/AutoCompleteTextView.html#`, that can show completion suggestions for the substring of the text where the user is typing instead of necessarily for the entire thing.
+[NumberPicker](../android.widget/NumberPicker.md) A widget that enables the user to select a number from a predefined range.
+[QuickContactBadge](../android.widget/QuickContactBadge.md) Widget used to show an image with the standard QuickContact badge and on-click behavior.
+[RadioButton](../android.widget/RadioButton.md) A radio button is a two-states button that can be either checked or unchecked.
+[RadioGroup](../android.widget/RadioGroup.md) This class is used to create a multiple-exclusion scope for a set of radio buttons.
+[RatingBar](../android.widget/RatingBar.md) A RatingBar is an extension of SeekBar and ProgressBar that shows a rating in stars.
+[RelativeLayout](../android.widget/RelativeLayout.md) A Layout where the positions of the children can be described in relation to each other or to the parent.
+[ScrollView](../android.widget/ScrollView.md) A view group that allows the view hierarchy placed within it to be scrolled.
+[SearchView](../android.widget/SearchView.md) A widget that provides a user interface for the user to enter a search query and submit a request to a search provider.
+[SeekBar](../android.widget/SeekBar.md) A SeekBar is an extension of ProgressBar that adds a draggable thumb.
+[SlidingDrawer](../android.widget/SlidingDrawer.md) SlidingDrawer hides content out of the screen and allows the user to drag a handle to bring the content on screen.
+[Spinner](../android.widget/Spinner.md) A view that displays one child at a time and lets the user pick among them.
+[SplashScreenView](../android.window/SplashScreenView.md) The view which allows an activity to customize its splash screen exit animation.
+[StackView](../android.widget/StackView.md) A view that displays its children in a stack and allows users to discretely swipe through the children.
+[Switch](../android.widget/Switch.md) A Switch is a two-state toggle widget.
+[TabHost](../android.widget/TabHost.md) Container for a tabbed window view.
+[TabWidget](../android.widget/TabWidget.md) Displays a list of tab labels representing each page in the parent's tab collection.
+[TableLayout](../android.widget/TableLayout.md) A layout that arranges its children into rows and columns.
+[TableRow](../android.widget/TableRow.md) A layout that arranges its children horizontally.
+[TextClock](../android.widget/TextClock.md) `TextClock` can display the current date and/or time as a formatted string.
+[TextSwitcher](../android.widget/TextSwitcher.md) Specialized `https://developer.android.com/reference/kotlin/android/widget/ViewSwitcher.html#` that contains only children of type `https://developer.android.com/reference/kotlin/android/widget/TextView.html#`.
+[TimePicker](../android.widget/TimePicker.md) A widget for selecting the time of day, in either 24-hour or AM/PM mode.
+[ToggleButton](../android.widget/ToggleButton.md) Displays checked/unchecked states as a button with a "light" indicator and by default accompanied with the text "ON" or "OFF".
+[Toolbar](../android.widget/Toolbar.md) A standard toolbar for use within application content.
+[TvAdView](../android.media.tv.ad/TvAdView.md) Displays contents of TV advertisement services.
+[TvInteractiveAppView](../android.media.tv.interactive/TvInteractiveAppView.md) Displays contents of interactive TV applications.
+[TvView](../android.media.tv/TvView.md) Displays TV contents.
+[TwoLineListItem](../android.widget/TwoLineListItem.md) A view group with two children, intended for use in ListViews.
+[VideoView](../android.widget/VideoView.md) Displays a video file.
+[ViewAnimator](../android.widget/ViewAnimator.md) Base class for a `https://developer.android.com/reference/kotlin/android/widget/FrameLayout.html#` container that will perform animations when switching between its views.
+[ViewFlipper](../android.widget/ViewFlipper.md) Simple `https://developer.android.com/reference/kotlin/android/widget/ViewAnimator.html#` that will animate between two or more views that have been added to it.
+[ViewSwitcher](../android.widget/ViewSwitcher.md) `https://developer.android.com/reference/kotlin/android/widget/ViewAnimator.html#` that switches between two views, and has a factory from which these views are created.
+[WebView](../android.webkit/WebView.md) A View that displays web pages.
+[ZoomButton](../android.widget/ZoomButton.md) This widget provides a simple utility for turning a continued long-press event into a series of clicks at some set frequency.
+[ZoomControls](../android.widget/ZoomControls.md) The `ZoomControls` class displays a simple set of controls used for zooming and provides callbacks to register for events.
 
 This class represents the basic building block for user interface components. A View occupies a rectangular area on the screen and is responsible for drawing and event handling. View is the base class for *widgets* , which are used to create interactive UI components (buttons, text fields, etc.). The `https://developer.android.com/reference/kotlin/android/view/ViewGroup` subclass is the base class for *layouts*, which are invisible containers that hold other Views (or other ViewGroups) and define their layout properties.
 
@@ -177,13 +177,13 @@ The geometry of a view is that of a rectangle. A view has a location, expressed 
 
 It is possible to retrieve the location of a view by invoking the methods `https://developer.android.com/reference/kotlin/android/view/View#getLeft()` and `https://developer.android.com/reference/kotlin/android/view/View#getTop()`. The former returns the left, or X, coordinate of the rectangle representing the view. The latter returns the top, or Y, coordinate of the rectangle representing the view. These methods both return the location of the view relative to its parent. For instance, when getLeft() returns 20, that means the view is located 20 pixels to the right of the left edge of its direct parent.
 
-In addition, several convenience methods are offered to avoid unnecessary computations, namely `https://developer.android.com/reference/kotlin/android/view/View#getRight()` and `https://developer.android.com/reference/kotlin/android/view/View#getBottom()`. These methods return the coordinates of the right and bottom edges of the rectangle representing the view. For instance, calling `https://developer.android.com/reference/kotlin/android/view/View#getRight()` is similar to the following computation: `getLeft() + getWidth()` (see [Size](../android/view/View.md) for more information about the width.)
+In addition, several convenience methods are offered to avoid unnecessary computations, namely `https://developer.android.com/reference/kotlin/android/view/View#getRight()` and `https://developer.android.com/reference/kotlin/android/view/View#getBottom()`. These methods return the coordinates of the right and bottom edges of the rectangle representing the view. For instance, calling `https://developer.android.com/reference/kotlin/android/view/View#getRight()` is similar to the following computation: `getLeft() + getWidth()` (see [Size](View.md) for more information about the width.)
 
 ### Size, padding and margins
 
 The size of a view is expressed with a width and a height. A view actually possess two pairs of width and height values.
 
-The first pair is known as *measured width* and *measured height* . These dimensions define how big a view wants to be within its parent (see [Layout](../android/view/View.md) for more details.) The measured dimensions can be obtained by calling `https://developer.android.com/reference/kotlin/android/view/View#getMeasuredWidth()` and `https://developer.android.com/reference/kotlin/android/view/View#getMeasuredHeight()`.
+The first pair is known as *measured width* and *measured height* . These dimensions define how big a view wants to be within its parent (see [Layout](View.md) for more details.) The measured dimensions can be obtained by calling `https://developer.android.com/reference/kotlin/android/view/View#getMeasuredWidth()` and `https://developer.android.com/reference/kotlin/android/view/View#getMeasuredHeight()`.
 
 The second pair is simply known as *width* and *height* , or sometimes *drawing width* and *drawing height* . These dimensions define the actual size of the view on screen, at drawing time and after layout. These values may, but do not have to, be different from the measured width and height. The width and height can be obtained by calling `https://developer.android.com/reference/kotlin/android/view/View#getWidth()` and `https://developer.android.com/reference/kotlin/android/view/View#getHeight()`.
 
@@ -311,7 +311,7 @@ In the following example, both views will be created using the Material dark col
 
 ### Properties
 
-The View class exposes an `https://developer.android.com/reference/kotlin/android/view/View#ALPHA:android.util.Property` property, as well as several transform-related properties, such as `https://developer.android.com/reference/kotlin/android/view/View#TRANSLATION_X:android.util.Property` and `https://developer.android.com/reference/kotlin/android/view/View#TRANSLATION_Y:android.util.Property`. These properties are available both in the `https://developer.android.com/reference/kotlin/android/util/Property.html#` form as well as in similarly-named setter/getter methods (such as `https://developer.android.com/reference/kotlin/android/view/View#setAlpha(kotlin.Float)` for `https://developer.android.com/reference/kotlin/android/view/View#ALPHA:android.util.Property`). These properties can be used to set persistent state associated with these rendering-related properties on the view. The properties and methods can also be used in conjunction with `https://developer.android.com/reference/kotlin/android/animation/Animator.html#`-based animations, described more in the [Animation](../android/view/View.md) section.
+The View class exposes an `https://developer.android.com/reference/kotlin/android/view/View#ALPHA:android.util.Property` property, as well as several transform-related properties, such as `https://developer.android.com/reference/kotlin/android/view/View#TRANSLATION_X:android.util.Property` and `https://developer.android.com/reference/kotlin/android/view/View#TRANSLATION_Y:android.util.Property`. These properties are available both in the `https://developer.android.com/reference/kotlin/android/util/Property.html#` form as well as in similarly-named setter/getter methods (such as `https://developer.android.com/reference/kotlin/android/view/View#setAlpha(kotlin.Float)` for `https://developer.android.com/reference/kotlin/android/view/View#ALPHA:android.util.Property`). These properties can be used to set persistent state associated with these rendering-related properties on the view. The properties and methods can also be used in conjunction with `https://developer.android.com/reference/kotlin/android/animation/Animator.html#`-based animations, described more in the [Animation](View.md) section.
 
 ### Animation
 
@@ -363,107 +363,107 @@ For more fine-grained control over security, consider overriding the `https://de
 
 | XML attributes ||
 |---|---|
-| [`android:accessibilityHeading`](../android/view/View.md) | Whether or not this view is a heading for accessibility purposes. |
-| [`android:allowClickWhenDisabled`](../android/view/View.md) | Whether or not allow clicks on disabled view. |
-| [`android:alpha`](../android/view/View.md) | alpha property of the view, as a value between 0 (completely transparent) and 1 (completely opaque). |
+| [`android:accessibilityHeading`](View.md) | Whether or not this view is a heading for accessibility purposes. |
+| [`android:allowClickWhenDisabled`](View.md) | Whether or not allow clicks on disabled view. |
+| [`android:alpha`](View.md) | alpha property of the view, as a value between 0 (completely transparent) and 1 (completely opaque). |
 | --- | --- |
-| [`android:background`](../android/view/View.md) | A drawable to use as the background. |
-| [`android:clickable`](../android/view/View.md) | Defines whether this view reacts to click events. |
-| [`android:clipToOutline`](../android/view/View.md) | Whether the View's Outline should be used to clip the contents of the View. |
+| [`android:background`](View.md) | A drawable to use as the background. |
+| [`android:clickable`](View.md) | Defines whether this view reacts to click events. |
+| [`android:clipToOutline`](View.md) | Whether the View's Outline should be used to clip the contents of the View. |
 | --- | --- |
-| [`android:contentDescription`](../android/view/View.md) | Defines text that briefly describes content of the view. |
-| [`android:drawingCacheQuality`](../android/view/View.md) | Defines the quality of translucent drawing caches. |
-| [`android:duplicateParentState`](../android/view/View.md) | When this attribute is set to true, the view gets its drawable state (focused, pressed, etc.) from its direct parent rather than from itself. |
+| [`android:contentDescription`](View.md) | Defines text that briefly describes content of the view. |
+| [`android:drawingCacheQuality`](View.md) | Defines the quality of translucent drawing caches. |
+| [`android:duplicateParentState`](View.md) | When this attribute is set to true, the view gets its drawable state (focused, pressed, etc.) from its direct parent rather than from itself. |
 | --- | --- |
-| [`android:fadeScrollbars`](../android/view/View.md) | Defines whether to fade out scrollbars when they are not in use. |
-| [`android:fadingEdgeLength`](../android/view/View.md) | Defines the length of the fading edges. |
-| [`android:filterTouchesWhenObscured`](../android/view/View.md) | Specifies whether to filter touches when the view's window is obscured by another visible window. |
+| [`android:fadeScrollbars`](View.md) | Defines whether to fade out scrollbars when they are not in use. |
+| [`android:fadingEdgeLength`](View.md) | Defines the length of the fading edges. |
+| [`android:filterTouchesWhenObscured`](View.md) | Specifies whether to filter touches when the view's window is obscured by another visible window. |
 | --- | --- |
-| [`android:fitsSystemWindows`](../android/view/View.md) | Boolean internal attribute to adjust view layout based on system windows such as the status bar. |
-| [`android:focusable`](../android/view/View.md) | Controls whether a view can take focus. |
-| [`android:focusableInTouchMode`](../android/view/View.md) | Boolean that controls whether a view can take focus while in touch mode. |
+| [`android:fitsSystemWindows`](View.md) | Boolean internal attribute to adjust view layout based on system windows such as the status bar. |
+| [`android:focusable`](View.md) | Controls whether a view can take focus. |
+| [`android:focusableInTouchMode`](View.md) | Boolean that controls whether a view can take focus while in touch mode. |
 | --- | --- |
-| [`android:focusedByDefault`](../android/view/View.md) | Whether this view is a default-focus view. |
-| [`android:hapticFeedbackEnabled`](../android/view/View.md) | Boolean that controls whether a view should have haptic feedback enabled for events such as long presses. |
-| [`android:id`](../android/view/View.md) | Supply an identifier name for this view, to later retrieve it with View. |
+| [`android:focusedByDefault`](View.md) | Whether this view is a default-focus view. |
+| [`android:hapticFeedbackEnabled`](View.md) | Boolean that controls whether a view should have haptic feedback enabled for events such as long presses. |
+| [`android:id`](View.md) | Supply an identifier name for this view, to later retrieve it with View. |
 | --- | --- |
-| [`android:isScrollContainer`](../android/view/View.md) | Set this if the view will serve as a scrolling container, meaning that it can be resized to shrink its overall window so that there will be space for an input method. |
-| [`android:keepScreenOn`](../android/view/View.md) | Controls whether the view's window should keep the screen on while visible. |
-| [`android:keyboardNavigationCluster`](../android/view/View.md) | Whether this view is a root of a keyboard navigation cluster. |
+| [`android:isScrollContainer`](View.md) | Set this if the view will serve as a scrolling container, meaning that it can be resized to shrink its overall window so that there will be space for an input method. |
+| [`android:keepScreenOn`](View.md) | Controls whether the view's window should keep the screen on while visible. |
+| [`android:keyboardNavigationCluster`](View.md) | Whether this view is a root of a keyboard navigation cluster. |
 | --- | --- |
-| [`android:layerType`](../android/view/View.md) | Specifies the type of layer backing this view. |
-| [`android:layoutDirection`](../android/view/View.md) | Defines the direction of layout drawing. |
-| [`android:longClickable`](../android/view/View.md) | Defines whether this view reacts to long click events. |
+| [`android:layerType`](View.md) | Specifies the type of layer backing this view. |
+| [`android:layoutDirection`](View.md) | Defines the direction of layout drawing. |
+| [`android:longClickable`](View.md) | Defines whether this view reacts to long click events. |
 | --- | --- |
-| [`android:minHeight`](../android/view/View.md) | Defines the minimum height of the view. |
-| [`android:minWidth`](../android/view/View.md) | Defines the minimum width of the view. |
-| [`android:nextClusterForward`](../android/view/View.md) | Defines the next keyboard navigation cluster. |
+| [`android:minHeight`](View.md) | Defines the minimum height of the view. |
+| [`android:minWidth`](View.md) | Defines the minimum width of the view. |
+| [`android:nextClusterForward`](View.md) | Defines the next keyboard navigation cluster. |
 | --- | --- |
-| [`android:nextFocusDown`](../android/view/View.md) | Defines the next view to give focus to when the next focus is android. |
-| [`android:nextFocusLeft`](../android/view/View.md) | Defines the next view to give focus to when the next focus is android. |
-| [`android:nextFocusRight`](../android/view/View.md) | Defines the next view to give focus to when the next focus is android. |
+| [`android:nextFocusDown`](View.md) | Defines the next view to give focus to when the next focus is android. |
+| [`android:nextFocusLeft`](View.md) | Defines the next view to give focus to when the next focus is android. |
+| [`android:nextFocusRight`](View.md) | Defines the next view to give focus to when the next focus is android. |
 | --- | --- |
-| [`android:nextFocusUp`](../android/view/View.md) | Defines the next view to give focus to when the next focus is android. |
-| [`android:onClick`](../android/view/View.md) | Name of the method in this View's context to invoke when the view is clicked. |
-| [`android:outlineAmbientShadowColor`](../android/view/View.md) | Sets the color of the ambient shadow that is drawn when the view has a positive Z or elevation value. |
+| [`android:nextFocusUp`](View.md) | Defines the next view to give focus to when the next focus is android. |
+| [`android:onClick`](View.md) | Name of the method in this View's context to invoke when the view is clicked. |
+| [`android:outlineAmbientShadowColor`](View.md) | Sets the color of the ambient shadow that is drawn when the view has a positive Z or elevation value. |
 | --- | --- |
-| [`android:outlineSpotShadowColor`](../android/view/View.md) | Sets the color of the spot shadow that is drawn when the view has a positive Z or elevation value. |
-| [`android:padding`](../android/view/View.md) | Sets the padding, in pixels, of all four edges. |
-| [`android:paddingBottom`](../android/view/View.md) | Sets the padding, in pixels, of the bottom edge; see android. |
+| [`android:outlineSpotShadowColor`](View.md) | Sets the color of the spot shadow that is drawn when the view has a positive Z or elevation value. |
+| [`android:padding`](View.md) | Sets the padding, in pixels, of all four edges. |
+| [`android:paddingBottom`](View.md) | Sets the padding, in pixels, of the bottom edge; see android. |
 | --- | --- |
-| [`android:paddingEnd`](../android/view/View.md) | Sets the padding, in pixels, of the end edge; see android. |
-| [`android:paddingHorizontal`](../android/view/View.md) | Sets the padding, in pixels, of the left and right edges; see android. |
-| [`android:paddingLeft`](../android/view/View.md) | Sets the padding, in pixels, of the left edge; see android. |
+| [`android:paddingEnd`](View.md) | Sets the padding, in pixels, of the end edge; see android. |
+| [`android:paddingHorizontal`](View.md) | Sets the padding, in pixels, of the left and right edges; see android. |
+| [`android:paddingLeft`](View.md) | Sets the padding, in pixels, of the left edge; see android. |
 | --- | --- |
-| [`android:paddingRight`](../android/view/View.md) | Sets the padding, in pixels, of the right edge; see android. |
-| [`android:paddingStart`](../android/view/View.md) | Sets the padding, in pixels, of the start edge; see android. |
-| [`android:paddingTop`](../android/view/View.md) | Sets the padding, in pixels, of the top edge; see android. |
+| [`android:paddingRight`](View.md) | Sets the padding, in pixels, of the right edge; see android. |
+| [`android:paddingStart`](View.md) | Sets the padding, in pixels, of the start edge; see android. |
+| [`android:paddingTop`](View.md) | Sets the padding, in pixels, of the top edge; see android. |
 | --- | --- |
-| [`android:paddingVertical`](../android/view/View.md) | Sets the padding, in pixels, of the top and bottom edges; see android. |
-| [`android:requiresFadingEdge`](../android/view/View.md) | Defines which edges should be faded on scrolling. |
-| [`android:rotation`](../android/view/View.md) | rotation of the view, in degrees. |
+| [`android:paddingVertical`](View.md) | Sets the padding, in pixels, of the top and bottom edges; see android. |
+| [`android:requiresFadingEdge`](View.md) | Defines which edges should be faded on scrolling. |
+| [`android:rotation`](View.md) | rotation of the view, in degrees. |
 | --- | --- |
-| [`android:rotationX`](../android/view/View.md) | rotation of the view around the x axis, in degrees. |
-| [`android:rotationY`](../android/view/View.md) | rotation of the view around the y axis, in degrees. |
-| [`android:saveEnabled`](../android/view/View.md) | If false, no state will be saved for this view when it is being frozen. |
+| [`android:rotationX`](View.md) | rotation of the view around the x axis, in degrees. |
+| [`android:rotationY`](View.md) | rotation of the view around the y axis, in degrees. |
+| [`android:saveEnabled`](View.md) | If false, no state will be saved for this view when it is being frozen. |
 | --- | --- |
-| [`android:scaleX`](../android/view/View.md) | scale of the view in the x direction. |
-| [`android:scaleY`](../android/view/View.md) | scale of the view in the y direction. |
-| [`android:scrollX`](../android/view/View.md) | The initial horizontal scroll offset, in pixels. |
+| [`android:scaleX`](View.md) | scale of the view in the x direction. |
+| [`android:scaleY`](View.md) | scale of the view in the y direction. |
+| [`android:scrollX`](View.md) | The initial horizontal scroll offset, in pixels. |
 | --- | --- |
-| [`android:scrollY`](../android/view/View.md) | The initial vertical scroll offset, in pixels. |
-| [`android:scrollbarAlwaysDrawHorizontalTrack`](../android/view/View.md) | Defines whether the horizontal scrollbar track should always be drawn. |
-| [`android:scrollbarAlwaysDrawVerticalTrack`](../android/view/View.md) | Defines whether the vertical scrollbar track should always be drawn. |
+| [`android:scrollY`](View.md) | The initial vertical scroll offset, in pixels. |
+| [`android:scrollbarAlwaysDrawHorizontalTrack`](View.md) | Defines whether the horizontal scrollbar track should always be drawn. |
+| [`android:scrollbarAlwaysDrawVerticalTrack`](View.md) | Defines whether the vertical scrollbar track should always be drawn. |
 | --- | --- |
-| [`android:scrollbarDefaultDelayBeforeFade`](../android/view/View.md) | Defines the delay in milliseconds that a scrollbar waits before fade out. |
-| [`android:scrollbarFadeDuration`](../android/view/View.md) | Defines the delay in milliseconds that a scrollbar takes to fade out. |
-| [`android:scrollbarSize`](../android/view/View.md) | Sets the width of vertical scrollbars and height of horizontal scrollbars. |
+| [`android:scrollbarDefaultDelayBeforeFade`](View.md) | Defines the delay in milliseconds that a scrollbar waits before fade out. |
+| [`android:scrollbarFadeDuration`](View.md) | Defines the delay in milliseconds that a scrollbar takes to fade out. |
+| [`android:scrollbarSize`](View.md) | Sets the width of vertical scrollbars and height of horizontal scrollbars. |
 | --- | --- |
-| [`android:scrollbarStyle`](../android/view/View.md) | Controls the scrollbar style and position. |
-| [`android:scrollbarThumbHorizontal`](../android/view/View.md) | Defines the horizontal scrollbar thumb drawable. |
-| [`android:scrollbarThumbVertical`](../android/view/View.md) | Defines the vertical scrollbar thumb drawable. |
+| [`android:scrollbarStyle`](View.md) | Controls the scrollbar style and position. |
+| [`android:scrollbarThumbHorizontal`](View.md) | Defines the horizontal scrollbar thumb drawable. |
+| [`android:scrollbarThumbVertical`](View.md) | Defines the vertical scrollbar thumb drawable. |
 | --- | --- |
-| [`android:scrollbarTrackHorizontal`](../android/view/View.md) | Defines the horizontal scrollbar track drawable. |
-| [`android:scrollbarTrackVertical`](../android/view/View.md) | Defines the vertical scrollbar track drawable. |
-| [`android:scrollbars`](../android/view/View.md) | Defines which scrollbars should be displayed on scrolling or not. |
+| [`android:scrollbarTrackHorizontal`](View.md) | Defines the horizontal scrollbar track drawable. |
+| [`android:scrollbarTrackVertical`](View.md) | Defines the vertical scrollbar track drawable. |
+| [`android:scrollbars`](View.md) | Defines which scrollbars should be displayed on scrolling or not. |
 | --- | --- |
-| [`android:soundEffectsEnabled`](../android/view/View.md) | Boolean that controls whether a view should have sound effects enabled for events such as clicking and touching. |
-| [`android:stateListAnimator`](../android/view/View.md) | Sets the state-based animator for the View. |
-| [`android:tag`](../android/view/View.md) | Supply a tag for this view containing a String, to be retrieved later with android. |
+| [`android:soundEffectsEnabled`](View.md) | Boolean that controls whether a view should have sound effects enabled for events such as clicking and touching. |
+| [`android:stateListAnimator`](View.md) | Sets the state-based animator for the View. |
+| [`android:tag`](View.md) | Supply a tag for this view containing a String, to be retrieved later with android. |
 | --- | --- |
-| [`android:textAlignment`](../android/view/View.md) | Defines the alignment of the text. |
-| [`android:textDirection`](../android/view/View.md) | Defines the direction of the text. |
-| [`android:theme`](../android/view/View.md) | Specifies a theme override for a view. |
+| [`android:textAlignment`](View.md) | Defines the alignment of the text. |
+| [`android:textDirection`](View.md) | Defines the direction of the text. |
+| [`android:theme`](View.md) | Specifies a theme override for a view. |
 | --- | --- |
-| [`android:transformPivotX`](../android/view/View.md) | x location of the pivot point around which the view will rotate and scale. |
-| [`android:transformPivotY`](../android/view/View.md) | y location of the pivot point around which the view will rotate and scale. |
-| [`android:transitionName`](../android/view/View.md) | Names a View such that it can be identified for Transitions. |
+| [`android:transformPivotX`](View.md) | x location of the pivot point around which the view will rotate and scale. |
+| [`android:transformPivotY`](View.md) | y location of the pivot point around which the view will rotate and scale. |
+| [`android:transitionName`](View.md) | Names a View such that it can be identified for Transitions. |
 | --- | --- |
-| [`android:translationX`](../android/view/View.md) | translation in x of the view. |
-| [`android:translationY`](../android/view/View.md) | translation in y of the view. |
-| [`android:translationZ`](../android/view/View.md) | translation in z of the view. |
+| [`android:translationX`](View.md) | translation in x of the view. |
+| [`android:translationY`](View.md) | translation in y of the view. |
+| [`android:translationZ`](View.md) | translation in z of the view. |
 | --- | --- |
-| [`android:visibility`](../android/view/View.md) | Controls the initial visibility of the view. |
+| [`android:visibility`](View.md) | Controls the initial visibility of the view. |
 
 | Constants ||
 |---|---|
@@ -693,7 +693,7 @@ For more fine-grained control over security, consider overriding the `https://de
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#addOnUnhandledKeyEventListener(android.view.View.OnUnhandledKeyEventListener)(listener: https://developer.android.com/reference/kotlin/android/view/View.OnUnhandledKeyEventListener!)` Adds a listener which will receive unhandled `https://developer.android.com/reference/kotlin/android/view/KeyEvent`s. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#addTouchables(java.util.ArrayList)(views: https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://developer.android.com/reference/kotlin/android/view/View#!>!)` Add any touchable views that are descendants of this view (possibly including this view if it is touchable itself) to views. |
 | --- | --- |
-| open [ViewPropertyAnimator](../android/view/ViewPropertyAnimator.md)! | `https://developer.android.com/reference/kotlin/android/view/View#animate()()` This method returns a ViewPropertyAnimator object, which can be used to animate specific properties on this View. |
+| open [ViewPropertyAnimator](ViewPropertyAnimator.md)! | `https://developer.android.com/reference/kotlin/android/view/View#animate()()` This method returns a ViewPropertyAnimator object, which can be used to animate specific properties on this View. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#announceForAccessibility(kotlin.CharSequence)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Convenience method for sending a `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent#TYPE_ANNOUNCEMENT:kotlin.Int` `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent` to suggest that an accessibility service announce the specified text to its users. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#autofill(android.util.SparseArray)(values: https://developer.android.com/reference/kotlin/android/util/SparseArray.html#<https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue!>)` Automatically fills the content of the virtual children within this view. |
 | --- | --- |
@@ -725,12 +725,12 @@ For more fine-grained control over security, consider overriding the `https://de
 | open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#combineMeasuredStates(kotlin.Int,%20kotlin.Int)(curState: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, newState: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Merge two states as returned by `https://developer.android.com/reference/kotlin/android/view/View#getMeasuredState()`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#computeScroll()()` Called by a parent to request that a child update its values for mScrollX and mScrollY if necessary. |
 | --- | --- |
-| open [WindowInsets](../android/view/WindowInsets.md)! | `https://developer.android.com/reference/kotlin/android/view/View#computeSystemWindowInsets(android.view.WindowInsets,%20android.graphics.Rect)(in: https://developer.android.com/reference/kotlin/android/view/WindowInsets!, outLocalInsets: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#!)` Compute insets that should be consumed by this view and the ones that should propagate to those under it. |
-| open [AccessibilityNodeInfo](../android/view/accessibility/AccessibilityNodeInfo.md)! | `https://developer.android.com/reference/kotlin/android/view/View#createAccessibilityNodeInfo()()` Returns an `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo` representing this view from the point of view of an `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService.html#`. |
+| open [WindowInsets](WindowInsets.md)! | `https://developer.android.com/reference/kotlin/android/view/View#computeSystemWindowInsets(android.view.WindowInsets,%20android.graphics.Rect)(in: https://developer.android.com/reference/kotlin/android/view/WindowInsets!, outLocalInsets: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#!)` Compute insets that should be consumed by this view and the ones that should propagate to those under it. |
+| open [AccessibilityNodeInfo](../android.view.accessibility/AccessibilityNodeInfo.md)! | `https://developer.android.com/reference/kotlin/android/view/View#createAccessibilityNodeInfo()()` Returns an `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo` representing this view from the point of view of an `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService.html#`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#createContextMenu(android.view.ContextMenu)(menu: https://developer.android.com/reference/kotlin/android/view/ContextMenu!)` Show the context menu for this view. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#destroyDrawingCache()()` Frees the resources used by the drawing cache. |
-| open [WindowInsets](../android/view/WindowInsets.md)! | `https://developer.android.com/reference/kotlin/android/view/View#dispatchApplyWindowInsets(android.view.WindowInsets)(insets: https://developer.android.com/reference/kotlin/android/view/WindowInsets!)` Request to apply the given window insets to this view or another view in its subtree. |
+| open [WindowInsets](WindowInsets.md)! | `https://developer.android.com/reference/kotlin/android/view/View#dispatchApplyWindowInsets(android.view.WindowInsets)(insets: https://developer.android.com/reference/kotlin/android/view/WindowInsets!)` Request to apply the given window insets to this view or another view in its subtree. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#dispatchCapturedPointerEvent(android.view.MotionEvent)(event: https://developer.android.com/reference/kotlin/android/view/MotionEvent!)` Pass a captured pointer event down to the focused view. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#dispatchConfigurationChanged(android.content.res.Configuration)(newConfig: https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#!)` Dispatch a notification about a resource configuration change down the view hierarchy. |
@@ -770,7 +770,7 @@ For more fine-grained control over security, consider overriding the `https://de
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#dispatchWindowInsetsAnimationEnd(android.view.WindowInsetsAnimation)(animation: https://developer.android.com/reference/kotlin/android/view/WindowInsetsAnimation)` Dispatches `https://developer.android.com/reference/kotlin/android/view/WindowInsetsAnimation.Callback#onEnd(android.view.WindowInsetsAnimation)` when Window Insets animation ends. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#dispatchWindowInsetsAnimationPrepare(android.view.WindowInsetsAnimation)(animation: https://developer.android.com/reference/kotlin/android/view/WindowInsetsAnimation)` Dispatches `https://developer.android.com/reference/kotlin/android/view/WindowInsetsAnimation.Callback#onPrepare(android.view.WindowInsetsAnimation)` when Window Insets animation is being prepared. |
-| open [WindowInsets](../android/view/WindowInsets.md) | `https://developer.android.com/reference/kotlin/android/view/View#dispatchWindowInsetsAnimationProgress(android.view.WindowInsets,%20kotlin.collections.MutableList)(insets: https://developer.android.com/reference/kotlin/android/view/WindowInsets, runningAnimations: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/view/WindowInsetsAnimation!>)` Dispatches `https://developer.android.com/reference/kotlin/android/view/WindowInsetsAnimation.Callback#onProgress(android.view.WindowInsets,%20kotlin.collections.MutableList)` when Window Insets animation makes progress. |
+| open [WindowInsets](WindowInsets.md) | `https://developer.android.com/reference/kotlin/android/view/View#dispatchWindowInsetsAnimationProgress(android.view.WindowInsets,%20kotlin.collections.MutableList)(insets: https://developer.android.com/reference/kotlin/android/view/WindowInsets, runningAnimations: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/view/WindowInsetsAnimation!>)` Dispatches `https://developer.android.com/reference/kotlin/android/view/WindowInsetsAnimation.Callback#onProgress(android.view.WindowInsets,%20kotlin.collections.MutableList)` when Window Insets animation makes progress. |
 | open [WindowInsetsAnimation.Bounds](../android/view/WindowInsetsAnimation.Bounds.md) | `https://developer.android.com/reference/kotlin/android/view/View#dispatchWindowInsetsAnimationStart(android.view.WindowInsetsAnimation,%20android.view.WindowInsetsAnimation.Bounds)(animation: https://developer.android.com/reference/kotlin/android/view/WindowInsetsAnimation, bounds: https://developer.android.com/reference/kotlin/android/view/WindowInsetsAnimation.Bounds)` Dispatches `https://developer.android.com/reference/kotlin/android/view/WindowInsetsAnimation.Callback#onStart(android.view.WindowInsetsAnimation,%20android.view.WindowInsetsAnimation.Bounds)` when Window Insets animation is started. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#dispatchWindowSystemUiVisiblityChanged(kotlin.Int)(visible: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Dispatch callbacks to `https://developer.android.com/reference/kotlin/android/view/View#onWindowSystemUiVisibilityChanged(kotlin.Int)` down the view hierarchy. |
@@ -778,14 +778,14 @@ For more fine-grained control over security, consider overriding the `https://de
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#draw(android.graphics.Canvas)(canvas: https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)` Manually render this view (and all of its children) to the given Canvas. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#drawableHotspotChanged(kotlin.Float,%20kotlin.Float)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` This function is called whenever the view hotspot changes and needs to be propagated to drawables or child views managed by the view. |
-| open [View](../android/view/View.md)! | `https://developer.android.com/reference/kotlin/android/view/View#findFocus()()` Find the view in the hierarchy rooted at this view that currently has focus. |
-| [OnBackInvokedDispatcher](../android/window/OnBackInvokedDispatcher.md)? | `https://developer.android.com/reference/kotlin/android/view/View#findOnBackInvokedDispatcher()()` Walk up the View hierarchy to find the nearest `https://developer.android.com/reference/kotlin/android/window/OnBackInvokedDispatcher.html#`. |
+| open [View](View.md)! | `https://developer.android.com/reference/kotlin/android/view/View#findFocus()()` Find the view in the hierarchy rooted at this view that currently has focus. |
+| [OnBackInvokedDispatcher](../android.window/OnBackInvokedDispatcher.md)? | `https://developer.android.com/reference/kotlin/android/view/View#findOnBackInvokedDispatcher()()` Walk up the View hierarchy to find the nearest `https://developer.android.com/reference/kotlin/android/window/OnBackInvokedDispatcher.html#`. |
 | --- | --- |
 | T | `https://developer.android.com/reference/kotlin/android/view/View#findViewById(kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Finds the first descendant view with the given ID, the view itself if the ID matches `https://developer.android.com/reference/kotlin/android/view/View#getId()`, or `null` if the ID is invalid (\< 0) or there is no matching view in the hierarchy. |
 | T | `https://developer.android.com/reference/kotlin/android/view/View#findViewWithTag(kotlin.Any)(tag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Look for a child view with the given tag. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#findViewsWithText(java.util.ArrayList,%20kotlin.CharSequence,%20kotlin.Int)(outViews: https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://developer.android.com/reference/kotlin/android/view/View#!>!, searched: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Finds the Views that contain given text. |
 | --- | --- |
-| open [View](../android/view/View.md)! | `https://developer.android.com/reference/kotlin/android/view/View#focusSearch(kotlin.Int)(direction: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Find the nearest view in the specified direction that can take focus. |
+| open [View](View.md)! | `https://developer.android.com/reference/kotlin/android/view/View#focusSearch(kotlin.Int)(direction: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Find the nearest view in the specified direction that can take focus. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#forceHasOverlappingRendering(kotlin.Boolean)(hasOverlappingRendering: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets the behavior for overlapping rendering for this view (see `https://developer.android.com/reference/kotlin/android/view/View#hasOverlappingRendering()` for more details on this behavior). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#forceLayout()()` Forces this view to be laid out during the next layout pass. |
 | --- | --- |
@@ -797,7 +797,7 @@ For more fine-grained control over security, consider overriding the `https://de
 | open [View.AccessibilityDelegate](../android/view/View.AccessibilityDelegate.md)! | `https://developer.android.com/reference/kotlin/android/view/View#getAccessibilityDelegate()()` Returns the delegate for implementing accessibility support via composition. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getAccessibilityLiveRegion()()` Gets the live region mode for this View. |
 | --- | --- |
-| open [AccessibilityNodeProvider](../android/view/accessibility/AccessibilityNodeProvider.md)! | `https://developer.android.com/reference/kotlin/android/view/View#getAccessibilityNodeProvider()()` Gets the provider for managing a virtual view hierarchy rooted at this View and reported to `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService.html#`s that explore the window content. |
+| open [AccessibilityNodeProvider](../android.view.accessibility/AccessibilityNodeProvider.md)! | `https://developer.android.com/reference/kotlin/android/view/View#getAccessibilityNodeProvider()()` Gets the provider for managing a virtual view hierarchy rooted at this View and reported to `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService.html#`s that explore the window content. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/view/View#getAccessibilityPaneTitle()()` Get the title of the pane for purposes of accessibility. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getAccessibilityTraversalAfter()()` Gets the id of a view after which this one is visited in accessibility traversal. |
 | --- | --- |
@@ -806,44 +806,44 @@ For more fine-grained control over security, consider overriding the `https://de
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/view/View#getAllowedHandwritingDelegatorPackageName()()` Returns the allowed package for views which may act as a handwriting delegator for this delegate editor view, as set by `https://developer.android.com/reference/kotlin/android/view/View#setAllowedHandwritingDelegatorPackage(kotlin.String)`. |
 | --- | --- |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getAlpha()()` The opacity of the view. |
-| open [Animation](../android/view/animation/Animation.md)! | `https://developer.android.com/reference/kotlin/android/view/View#getAnimation()()` Get the animation currently associated with this view. |
-| open [Matrix](../android/graphics/Matrix.md)? | `https://developer.android.com/reference/kotlin/android/view/View#getAnimationMatrix()()` Return the current transformation matrix of the view. |
+| open [Animation](../android.view.animation/Animation.md)! | `https://developer.android.com/reference/kotlin/android/view/View#getAnimation()()` Get the animation currently associated with this view. |
+| open [Matrix](../android.graphics/Matrix.md)? | `https://developer.android.com/reference/kotlin/android/view/View#getAnimationMatrix()()` Return the current transformation matrix of the view. |
 | --- | --- |
-| open [IBinder](../android/os/IBinder.md)! | `https://developer.android.com/reference/kotlin/android/view/View#getApplicationWindowToken()()` Retrieve a unique token identifying the top-level "real" window of the window that this view is attached to. |
+| open [IBinder](../android.os/IBinder.md)! | `https://developer.android.com/reference/kotlin/android/view/View#getApplicationWindowToken()()` Retrieve a unique token identifying the top-level "real" window of the window that this view is attached to. |
 | open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getAttributeResolutionStack(kotlin.Int)(attribute: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the ordered list of resource ID that are considered when resolving attribute values for this `https://developer.android.com/reference/kotlin/android/view/View#`. |
 | open [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!, [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | `https://developer.android.com/reference/kotlin/android/view/View#getAttributeSourceResourceMap()()` Returns the mapping of attribute resource ID to source resource ID where the attribute value was set. |
 | --- | --- |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | `https://developer.android.com/reference/kotlin/android/view/View#getAutofillHints()()` Gets the hints that help an `https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService.html#` determine how to autofill the view with the user's data. |
-| [AutofillId](../android/view/autofill/AutofillId.md)! | `https://developer.android.com/reference/kotlin/android/view/View#getAutofillId()()` Gets the unique, logical identifier of this view in the activity, for autofill purposes. |
+| [AutofillId](../android.view.autofill/AutofillId.md)! | `https://developer.android.com/reference/kotlin/android/view/View#getAutofillId()()` Gets the unique, logical identifier of this view in the activity, for autofill purposes. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getAutofillType()()` Describes the autofill type of this view, so an `https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService.html#` can create the proper `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillValue` when autofilling the view. |
 | --- | --- |
-| open [AutofillValue](../android/view/autofill/AutofillValue.md)? | `https://developer.android.com/reference/kotlin/android/view/View#getAutofillValue()()` Gets the `https://developer.android.com/reference/kotlin/android/view/View#`'s current autofill value. |
-| open [Drawable](../android/graphics/drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/view/View#getBackground()()` Gets the background drawable |
-| open [BlendMode](../android/graphics/BlendMode.md)? | `https://developer.android.com/reference/kotlin/android/view/View#getBackgroundTintBlendMode()()` Return the blending mode used to apply the tint to the background drawable, if specified. |
+| open [AutofillValue](../android.view.autofill/AutofillValue.md)? | `https://developer.android.com/reference/kotlin/android/view/View#getAutofillValue()()` Gets the `https://developer.android.com/reference/kotlin/android/view/View#`'s current autofill value. |
+| open [Drawable](../android.graphics.drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/view/View#getBackground()()` Gets the background drawable |
+| open [BlendMode](../android.graphics/BlendMode.md)? | `https://developer.android.com/reference/kotlin/android/view/View#getBackgroundTintBlendMode()()` Return the blending mode used to apply the tint to the background drawable, if specified. |
 | --- | --- |
-| open [ColorStateList](../android/content/res/ColorStateList.md)? | `https://developer.android.com/reference/kotlin/android/view/View#getBackgroundTintList()()` Return the tint applied to the background drawable, if specified. |
+| open [ColorStateList](../android.content.res/ColorStateList.md)? | `https://developer.android.com/reference/kotlin/android/view/View#getBackgroundTintList()()` Return the tint applied to the background drawable, if specified. |
 | open [PorterDuff.Mode](../android/graphics/PorterDuff.Mode.md)? | `https://developer.android.com/reference/kotlin/android/view/View#getBackgroundTintMode()()` Return the blending mode used to apply the tint to the background drawable, if specified. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getBaseline()()` Return the offset of the widget's text baseline from the widget's top boundary. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getBottom()()` Bottom position of this view relative to its parent. |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getCameraDistance()()` Gets the distance along the Z axis from the camera to this view. |
-| open [Rect](../android/graphics/Rect.md)! | `https://developer.android.com/reference/kotlin/android/view/View#getClipBounds()()` Returns a copy of the current `https://developer.android.com/reference/kotlin/android/view/View#setClipBounds(android.graphics.Rect)`. |
+| open [Rect](../android.graphics/Rect.md)! | `https://developer.android.com/reference/kotlin/android/view/View#getClipBounds()()` Returns a copy of the current `https://developer.android.com/reference/kotlin/android/view/View#setClipBounds(android.graphics.Rect)`. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getClipBounds(android.graphics.Rect)(outRect: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#!)` Populates an output rectangle with the clip bounds of the view, returning `true` if successful or `false` if the view's clip bounds are `null`. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getClipToOutline()()` Returns whether the Outline should be used to clip the contents of the View. |
-| [ContentCaptureSession](../android/view/contentcapture/ContentCaptureSession.md)? | `https://developer.android.com/reference/kotlin/android/view/View#getContentCaptureSession()()` Gets the session used to notify content capture events. |
+| [ContentCaptureSession](../android.view.contentcapture/ContentCaptureSession.md)? | `https://developer.android.com/reference/kotlin/android/view/View#getContentCaptureSession()()` Gets the session used to notify content capture events. |
 | --- | --- |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/view/View#getContentDescription()()` Returns the `https://developer.android.com/reference/kotlin/android/view/View#`'s content description. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getContentSensitivity()()` Gets content sensitivity mode to determine whether this view displays sensitive content. |
-| [Context](../android/content/Context.md)! | `https://developer.android.com/reference/kotlin/android/view/View#getContext()()` Returns the context the view is running in, through which it can access the current theme, resources, etc. |
+| [Context](../android.content/Context.md)! | `https://developer.android.com/reference/kotlin/android/view/View#getContext()()` Returns the context the view is running in, through which it can access the current theme, resources, etc. |
 | --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getDefaultFocusHighlightEnabled()()` Returns whether this View should use a default focus highlight when it gets focused but doesn't have `https://developer.android.com/reference/kotlin/android/R.attr.html#state_focused:kotlin.Int` defined in its background. |
 | open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getDefaultSize(kotlin.Int,%20kotlin.Int)(size: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, measureSpec: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Utility to return a default size. |
-| open [Display](../android/view/Display.md)! | `https://developer.android.com/reference/kotlin/android/view/View#getDisplay()()` Gets the logical display to which the view's window has been attached. |
+| open [Display](Display.md)! | `https://developer.android.com/reference/kotlin/android/view/View#getDisplay()()` Gets the logical display to which the view's window has been attached. |
 | --- | --- |
 | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | `https://developer.android.com/reference/kotlin/android/view/View#getDrawableState()()` Return an array of resource IDs of the drawable states representing the current state of the view. |
-| open [Bitmap](../android/graphics/Bitmap.md)! | `https://developer.android.com/reference/kotlin/android/view/View#getDrawingCache()()` Calling this method is equivalent to calling `getDrawingCache(false)`. |
-| open [Bitmap](../android/graphics/Bitmap.md)! | `https://developer.android.com/reference/kotlin/android/view/View#getDrawingCache(kotlin.Boolean)(autoScale: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Returns the bitmap in which this view drawing is cached. |
+| open [Bitmap](../android.graphics/Bitmap.md)! | `https://developer.android.com/reference/kotlin/android/view/View#getDrawingCache()()` Calling this method is equivalent to calling `getDrawingCache(false)`. |
+| open [Bitmap](../android.graphics/Bitmap.md)! | `https://developer.android.com/reference/kotlin/android/view/View#getDrawingCache(kotlin.Boolean)(autoScale: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Returns the bitmap in which this view drawing is cached. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getDrawingCacheBackgroundColor()()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getDrawingCacheQuality()()` Returns the quality of the drawing cache. |
@@ -857,20 +857,20 @@ For more fine-grained control over security, consider overriding the `https://de
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getFitsSystemWindows()()` Check for state of `https://developer.android.com/reference/kotlin/android/view/View#setFitsSystemWindows(kotlin.Boolean)`. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getFocusable()()` Returns the focusable setting for this view. |
 | --- | --- |
-| open [ArrayList](../java/util/ArrayList.md)\< [View](../android/view/View.md)!\>! | `https://developer.android.com/reference/kotlin/android/view/View#getFocusables(kotlin.Int)(direction: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Find and return all focusable views that are descendants of this view, possibly including this view if it is focusable itself. |
+| open [ArrayList](../java.util/ArrayList.md)\< [View](View.md)!\>! | `https://developer.android.com/reference/kotlin/android/view/View#getFocusables(kotlin.Int)(direction: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Find and return all focusable views that are descendants of this view, possibly including this view if it is focusable itself. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getFocusedRect(android.graphics.Rect)(r: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#!)` When a view has focus and the user navigates away from it, the next view is searched for starting from the rectangle filled in by this method. |
-| open [Drawable](../android/graphics/drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/view/View#getForeground()()` Returns the drawable used as the foreground of this View. |
+| open [Drawable](../android.graphics.drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/view/View#getForeground()()` Returns the drawable used as the foreground of this View. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getForegroundGravity()()` Describes how the foreground is positioned. |
-| open [BlendMode](../android/graphics/BlendMode.md)? | `https://developer.android.com/reference/kotlin/android/view/View#getForegroundTintBlendMode()()` Return the blending mode used to apply the tint to the foreground drawable, if specified. |
-| open [ColorStateList](../android/content/res/ColorStateList.md)? | `https://developer.android.com/reference/kotlin/android/view/View#getForegroundTintList()()` Return the tint applied to the foreground drawable, if specified. |
+| open [BlendMode](../android.graphics/BlendMode.md)? | `https://developer.android.com/reference/kotlin/android/view/View#getForegroundTintBlendMode()()` Return the blending mode used to apply the tint to the foreground drawable, if specified. |
+| open [ColorStateList](../android.content.res/ColorStateList.md)? | `https://developer.android.com/reference/kotlin/android/view/View#getForegroundTintList()()` Return the tint applied to the foreground drawable, if specified. |
 | --- | --- |
 | open [PorterDuff.Mode](../android/graphics/PorterDuff.Mode.md)? | `https://developer.android.com/reference/kotlin/android/view/View#getForegroundTintMode()()` Return the blending mode used to apply the tint to the foreground drawable, if specified. |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getFrameContentVelocity()()` Get the current velocity of the View. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getGlobalVisibleRect(android.graphics.Rect)(r: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#!)` Sets `r` to the coordinates of the non-clipped area of this view in the coordinate space of the view's root view. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getGlobalVisibleRect(android.graphics.Rect,%20android.graphics.Point)(r: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#!, globalOffset: https://developer.android.com/reference/kotlin/android/graphics/Point.html#!)` Sets `r` to the coordinates of the non-clipped area of this view in the coordinate space of the view's root view. |
-| open [Handler](../android/os/Handler.md)! | `https://developer.android.com/reference/kotlin/android/view/View#getHandler()()` <br /> |
+| open [Handler](../android.os/Handler.md)! | `https://developer.android.com/reference/kotlin/android/view/View#getHandler()()` <br /> |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getHandwritingBoundsOffsetBottom()()` Return the amount of offset applied to the bottom edge of this view's handwriting bounds, in the unit of pixel. |
 | --- | --- |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getHandwritingBoundsOffsetLeft()()` Return the amount of offset applied to the left edge of this view's handwriting bounds, in the unit of pixel. |
@@ -878,15 +878,15 @@ For more fine-grained control over security, consider overriding the `https://de
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getHandwritingBoundsOffsetTop()()` Return the amount of offset applied to the top edge of this view's handwriting bounds, in the unit of pixel. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getHandwritingDelegateFlags()()` Returns flags configuring the handwriting delegation behavior for this delegate editor view, as set by `https://developer.android.com/reference/kotlin/android/view/View#setHandwritingDelegateFlags(kotlin.Int)`. |
-| open [Runnable](../java/lang/Runnable.md)? | `https://developer.android.com/reference/kotlin/android/view/View#getHandwritingDelegatorCallback()()` Returns the callback set by `https://developer.android.com/reference/kotlin/android/view/View#setHandwritingDelegatorCallback(java.lang.Runnable)` which should be called when a stylus `https://developer.android.com/reference/kotlin/android/view/MotionEvent` occurs within this view's bounds. |
+| open [Runnable](../java.lang/Runnable.md)? | `https://developer.android.com/reference/kotlin/android/view/View#getHandwritingDelegatorCallback()()` Returns the callback set by `https://developer.android.com/reference/kotlin/android/view/View#setHandwritingDelegatorCallback(java.lang.Runnable)` which should be called when a stylus `https://developer.android.com/reference/kotlin/android/view/MotionEvent` occurs within this view's bounds. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getHasOverlappingRendering()()` Returns the value for overlapping rendering that is used internally. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getHeight()()` Return the height of your view. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getHitRect(android.graphics.Rect)(outRect: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#!)` Hit rectangle in parent's coordinates |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getHorizontalFadingEdgeLength()()` Returns the size of the horizontal faded edges used to indicate that more content in this view is visible. |
 | --- | --- |
-| open [Drawable](../android/graphics/drawable/Drawable.md)? | `https://developer.android.com/reference/kotlin/android/view/View#getHorizontalScrollbarThumbDrawable()()` Returns the currently configured Drawable for the thumb of the horizontal scroll bar if it exists, null otherwise. |
-| open [Drawable](../android/graphics/drawable/Drawable.md)? | `https://developer.android.com/reference/kotlin/android/view/View#getHorizontalScrollbarTrackDrawable()()` Returns the currently configured Drawable for the track of the horizontal scroll bar if it exists, null otherwise. |
+| open [Drawable](../android.graphics.drawable/Drawable.md)? | `https://developer.android.com/reference/kotlin/android/view/View#getHorizontalScrollbarThumbDrawable()()` Returns the currently configured Drawable for the thumb of the horizontal scroll bar if it exists, null otherwise. |
+| open [Drawable](../android.graphics.drawable/Drawable.md)? | `https://developer.android.com/reference/kotlin/android/view/View#getHorizontalScrollbarTrackDrawable()()` Returns the currently configured Drawable for the track of the horizontal scroll bar if it exists, null otherwise. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getId()()` Returns this view's identifier. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getImportantForAccessibility()()` Gets the mode for determining whether this View is important for accessibility. |
@@ -907,7 +907,7 @@ For more fine-grained control over security, consider overriding the `https://de
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getLocationInWindow(kotlin.IntArray)(outLocation: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html!)` Gets the coordinates of this view in the coordinate space of the window that contains the view, irrespective of system decorations. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getLocationOnScreen(kotlin.IntArray)(outLocation: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html!)` Gets the coordinates of this view in the coordinate space of the device screen, irrespective of system decorations and whether the system is in multi-window mode. |
-| open [Matrix](../android/graphics/Matrix.md)! | `https://developer.android.com/reference/kotlin/android/view/View#getMatrix()()` The transform matrix of this view, which is calculated based on the current rotation, scale, and pivot properties. |
+| open [Matrix](../android.graphics/Matrix.md)! | `https://developer.android.com/reference/kotlin/android/view/View#getMatrix()()` The transform matrix of this view, which is calculated based on the current rotation, scale, and pivot properties. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getMeasuredHeight()()` Like `https://developer.android.com/reference/kotlin/android/view/View#getMeasuredHeightAndState()`, but only returns the raw height component (that is the result is masked by `https://developer.android.com/reference/kotlin/android/view/View#MEASURED_SIZE_MASK:kotlin.Int`). |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getMeasuredHeightAndState()()` Return the full height measurement information for this view as computed by the most recent call to `https://developer.android.com/reference/kotlin/android/view/View#measure(kotlin.Int,%20kotlin.Int)`. |
@@ -929,11 +929,11 @@ For more fine-grained control over security, consider overriding the `https://de
 | open [View.OnFocusChangeListener](../android/view/View.OnFocusChangeListener.md)! | `https://developer.android.com/reference/kotlin/android/view/View#getOnFocusChangeListener()()` Returns the focus-change callback registered for this view. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getOutlineAmbientShadowColor()()` <br /> |
 | --- | --- |
-| open [ViewOutlineProvider](../android/view/ViewOutlineProvider.md)! | `https://developer.android.com/reference/kotlin/android/view/View#getOutlineProvider()()` Returns the current `https://developer.android.com/reference/kotlin/android/view/ViewOutlineProvider` of the view, which generates the Outline that defines the shape of the shadow it casts, and enables outline clipping. |
+| open [ViewOutlineProvider](ViewOutlineProvider.md)! | `https://developer.android.com/reference/kotlin/android/view/View#getOutlineProvider()()` Returns the current `https://developer.android.com/reference/kotlin/android/view/ViewOutlineProvider` of the view, which generates the Outline that defines the shape of the shadow it casts, and enables outline clipping. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getOutlineSpotShadowColor()()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getOverScrollMode()()` Returns the over-scroll mode for this view. |
 | --- | --- |
-| open [ViewOverlay](../android/view/ViewOverlay.md)! | `https://developer.android.com/reference/kotlin/android/view/View#getOverlay()()` Returns the overlay for this view, creating it if it does not yet exist. |
+| open [ViewOverlay](ViewOverlay.md)! | `https://developer.android.com/reference/kotlin/android/view/View#getOverlay()()` Returns the overlay for this view, creating it if it does not yet exist. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getPaddingBottom()()` Returns the bottom padding of this view. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getPaddingEnd()()` Returns the end padding of this view depending on its resolved layout direction. |
 | --- | --- |
@@ -942,27 +942,27 @@ For more fine-grained control over security, consider overriding the `https://de
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getPaddingStart()()` Returns the start padding of this view depending on its resolved layout direction. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getPaddingTop()()` Returns the top padding of this view. |
-| [ViewParent](../android/view/ViewParent.md)! | `https://developer.android.com/reference/kotlin/android/view/View#getParent()()` Gets the parent of this view. |
-| open [ViewParent](../android/view/ViewParent.md)! | `https://developer.android.com/reference/kotlin/android/view/View#getParentForAccessibility()()` Gets the parent for accessibility purposes. |
+| [ViewParent](ViewParent.md)! | `https://developer.android.com/reference/kotlin/android/view/View#getParent()()` Gets the parent of this view. |
+| open [ViewParent](ViewParent.md)! | `https://developer.android.com/reference/kotlin/android/view/View#getParentForAccessibility()()` Gets the parent for accessibility purposes. |
 | --- | --- |
-| [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [GetCredentialResponse](../android/credentials/GetCredentialResponse.md)!, [GetCredentialException](../android/credentials/GetCredentialException.md)!\>? | `https://developer.android.com/reference/kotlin/android/view/View#getPendingCredentialCallback()()` Returns the callback that has previously been set up on this view through the `https://developer.android.com/reference/kotlin/android/view/View#setPendingCredentialRequest(android.credentials.GetCredentialRequest,%20android.os.OutcomeReceiver)` API. |
-| [GetCredentialRequest](../android/credentials/GetCredentialRequest.md)? | `https://developer.android.com/reference/kotlin/android/view/View#getPendingCredentialRequest()()` Returns the `https://developer.android.com/reference/kotlin/android/credentials/GetCredentialRequest.html#` associated with the view. |
+| [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [GetCredentialResponse](../android.credentials/GetCredentialResponse.md)!, [GetCredentialException](../android.credentials/GetCredentialException.md)!\>? | `https://developer.android.com/reference/kotlin/android/view/View#getPendingCredentialCallback()()` Returns the callback that has previously been set up on this view through the `https://developer.android.com/reference/kotlin/android/view/View#setPendingCredentialRequest(android.credentials.GetCredentialRequest,%20android.os.OutcomeReceiver)` API. |
+| [GetCredentialRequest](../android.credentials/GetCredentialRequest.md)? | `https://developer.android.com/reference/kotlin/android/view/View#getPendingCredentialRequest()()` Returns the `https://developer.android.com/reference/kotlin/android/credentials/GetCredentialRequest.html#` associated with the view. |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getPivotX()()` The x location of the point around which the view is `https://developer.android.com/reference/kotlin/android/view/View#setRotation(kotlin.Float)` and `https://developer.android.com/reference/kotlin/android/view/View#setScaleX(kotlin.Float)`. |
 | --- | --- |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getPivotY()()` The y location of the point around which the view is `https://developer.android.com/reference/kotlin/android/view/View#setRotation(kotlin.Float)` and `https://developer.android.com/reference/kotlin/android/view/View#setScaleY(kotlin.Float)`. |
-| open [PointerIcon](../android/view/PointerIcon.md)! | `https://developer.android.com/reference/kotlin/android/view/View#getPointerIcon()()` Gets the mouse pointer icon for the current view. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Rect](../android/graphics/Rect.md)!\> | `https://developer.android.com/reference/kotlin/android/view/View#getPreferKeepClearRects()()` <br /> |
+| open [PointerIcon](PointerIcon.md)! | `https://developer.android.com/reference/kotlin/android/view/View#getPointerIcon()()` Gets the mouse pointer icon for the current view. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Rect](../android.graphics/Rect.md)!\> | `https://developer.android.com/reference/kotlin/android/view/View#getPreferKeepClearRects()()` <br /> |
 | --- | --- |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | `https://developer.android.com/reference/kotlin/android/view/View#getReceiveContentMimeTypes()()` Returns the MIME types accepted by `https://developer.android.com/reference/kotlin/android/view/View#performReceiveContent(android.view.ContentInfo)` for this view, as configured via `https://developer.android.com/reference/kotlin/android/view/View#setOnReceiveContentListener(kotlin.Array,%20android.view.OnReceiveContentListener)`. |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getRequestedFrameRate()()` Get the current preferred frame rate of the View. |
-| open [Resources](../android/content/res/Resources.md)! | `https://developer.android.com/reference/kotlin/android/view/View#getResources()()` Returns the resources associated with this view. |
+| open [Resources](../android.content.res/Resources.md)! | `https://developer.android.com/reference/kotlin/android/view/View#getResources()()` Returns the resources associated with this view. |
 | --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getRevealOnFocusHint()()` Returns this view's preference for reveal behavior when it gains focus. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getRight()()` Right position of this view relative to its parent. |
-| open [AttachedSurfaceControl](../android/view/AttachedSurfaceControl.md)? | `https://developer.android.com/reference/kotlin/android/view/View#getRootSurfaceControl()()` The AttachedSurfaceControl itself is not a View, it is just the interface to the windowing-system object that contains the entire view hierarchy. |
+| open [AttachedSurfaceControl](AttachedSurfaceControl.md)? | `https://developer.android.com/reference/kotlin/android/view/View#getRootSurfaceControl()()` The AttachedSurfaceControl itself is not a View, it is just the interface to the windowing-system object that contains the entire view hierarchy. |
 | --- | --- |
-| open [View](../android/view/View.md)! | `https://developer.android.com/reference/kotlin/android/view/View#getRootView()()` Finds the topmost view in the current view hierarchy. |
-| open [WindowInsets](../android/view/WindowInsets.md)! | `https://developer.android.com/reference/kotlin/android/view/View#getRootWindowInsets()()` Provide original WindowInsets that are dispatched to the view hierarchy. |
+| open [View](View.md)! | `https://developer.android.com/reference/kotlin/android/view/View#getRootView()()` Finds the topmost view in the current view hierarchy. |
+| open [WindowInsets](WindowInsets.md)! | `https://developer.android.com/reference/kotlin/android/view/View#getRootWindowInsets()()` Provide original WindowInsets that are dispatched to the view hierarchy. |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getRotation()()` The degrees that the view is rotated around the pivot point. |
 | --- | --- |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getRotationX()()` The degrees that the view is rotated around the horizontal axis through the pivot point. |
@@ -985,9 +985,9 @@ For more fine-grained control over security, consider overriding the `https://de
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getSourceLayoutResId()()` A `https://developer.android.com/reference/kotlin/android/view/View#` can be inflated from an XML layout. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/view/View#getStateDescription()()` Returns the `https://developer.android.com/reference/kotlin/android/view/View#`'s state description. |
 | --- | --- |
-| open [StateListAnimator](../android/animation/StateListAnimator.md)! | `https://developer.android.com/reference/kotlin/android/view/View#getStateListAnimator()()` Returns the current StateListAnimator if exists. |
+| open [StateListAnimator](../android.animation/StateListAnimator.md)! | `https://developer.android.com/reference/kotlin/android/view/View#getStateListAnimator()()` Returns the current StateListAnimator if exists. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/view/View#getSupplementalDescription()()` Returns the `https://developer.android.com/reference/kotlin/android/view/View#`'s supplemental description. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Rect](../android/graphics/Rect.md)!\> | `https://developer.android.com/reference/kotlin/android/view/View#getSystemGestureExclusionRects()()` Retrieve the list of areas within this view's post-layout coordinate space where the system should not intercept touch or other pointing device gestures. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Rect](../android.graphics/Rect.md)!\> | `https://developer.android.com/reference/kotlin/android/view/View#getSystemGestureExclusionRects()()` Retrieve the list of areas within this view's post-layout coordinate space where the system should not intercept touch or other pointing device gestures. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getSystemUiVisibility()()` Returns the last `https://developer.android.com/reference/kotlin/android/view/View#setSystemUiVisibility(kotlin.Int)` that this view has requested. |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | `https://developer.android.com/reference/kotlin/android/view/View#getTag()()` Returns this view's tag. |
@@ -998,8 +998,8 @@ For more fine-grained control over security, consider overriding the `https://de
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/view/View#getTooltipText()()` Returns the view's tooltip text. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getTop()()` Top position of this view relative to its parent. |
-| open [TouchDelegate](../android/view/TouchDelegate.md)! | `https://developer.android.com/reference/kotlin/android/view/View#getTouchDelegate()()` Gets the TouchDelegate for this View. |
-| open [ArrayList](../java/util/ArrayList.md)\< [View](../android/view/View.md)!\>! | `https://developer.android.com/reference/kotlin/android/view/View#getTouchables()()` Find and return all touchable views that are descendants of this view, possibly including this view if it is touchable itself. |
+| open [TouchDelegate](TouchDelegate.md)! | `https://developer.android.com/reference/kotlin/android/view/View#getTouchDelegate()()` Gets the TouchDelegate for this View. |
+| open [ArrayList](../java.util/ArrayList.md)\< [View](View.md)!\>! | `https://developer.android.com/reference/kotlin/android/view/View#getTouchables()()` Find and return all touchable views that are descendants of this view, possibly including this view if it is touchable itself. |
 | --- | --- |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getTransitionAlpha()()` This property is intended only for use by the Fade transition, which animates it to produce a visual translucency that does not side-effect (or get affected by) the real alpha property. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/view/View#getTransitionName()()` Returns the name of the View to be used to identify Views in Transitions. |
@@ -1011,21 +1011,21 @@ For more fine-grained control over security, consider overriding the `https://de
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getVerticalFadingEdgeLength()()` Returns the size of the vertical faded edges used to indicate that more content in this view is visible. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getVerticalScrollbarPosition()()` <br /> |
-| open [Drawable](../android/graphics/drawable/Drawable.md)? | `https://developer.android.com/reference/kotlin/android/view/View#getVerticalScrollbarThumbDrawable()()` Returns the currently configured Drawable for the thumb of the vertical scroll bar if it exists, null otherwise. |
+| open [Drawable](../android.graphics.drawable/Drawable.md)? | `https://developer.android.com/reference/kotlin/android/view/View#getVerticalScrollbarThumbDrawable()()` Returns the currently configured Drawable for the thumb of the vertical scroll bar if it exists, null otherwise. |
 | --- | --- |
-| open [Drawable](../android/graphics/drawable/Drawable.md)? | `https://developer.android.com/reference/kotlin/android/view/View#getVerticalScrollbarTrackDrawable()()` Returns the currently configured Drawable for the track of the vertical scroll bar if it exists, null otherwise. |
+| open [Drawable](../android.graphics.drawable/Drawable.md)? | `https://developer.android.com/reference/kotlin/android/view/View#getVerticalScrollbarTrackDrawable()()` Returns the currently configured Drawable for the track of the vertical scroll bar if it exists, null otherwise. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getVerticalScrollbarWidth()()` Returns the width of the vertical scrollbar. |
-| open [ViewTranslationResponse](../android/view/translation/ViewTranslationResponse.md)? | `https://developer.android.com/reference/kotlin/android/view/View#getViewTranslationResponse()()` Returns the `https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationResponse` associated with this view. |
+| open [ViewTranslationResponse](../android.view.translation/ViewTranslationResponse.md)? | `https://developer.android.com/reference/kotlin/android/view/View#getViewTranslationResponse()()` Returns the `https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationResponse` associated with this view. |
 | --- | --- |
-| open [ViewTreeObserver](../android/view/ViewTreeObserver.md)! | `https://developer.android.com/reference/kotlin/android/view/View#getViewTreeObserver()()` Returns the ViewTreeObserver for this view's hierarchy. |
+| open [ViewTreeObserver](ViewTreeObserver.md)! | `https://developer.android.com/reference/kotlin/android/view/View#getViewTreeObserver()()` Returns the ViewTreeObserver for this view's hierarchy. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getVisibility()()` Returns the visibility status for this view. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getWidth()()` Return the width of your view. |
 | --- | --- |
-| open [WindowId](../android/view/WindowId.md)! | `https://developer.android.com/reference/kotlin/android/view/View#getWindowId()()` Retrieve the `https://developer.android.com/reference/kotlin/android/view/WindowId` for the window this view is currently attached to. |
-| open [WindowInsetsController](../android/view/WindowInsetsController.md)? | `https://developer.android.com/reference/kotlin/android/view/View#getWindowInsetsController()()` Retrieves the single `https://developer.android.com/reference/kotlin/android/view/WindowInsetsController` of the window this view is attached to. |
+| open [WindowId](WindowId.md)! | `https://developer.android.com/reference/kotlin/android/view/View#getWindowId()()` Retrieve the `https://developer.android.com/reference/kotlin/android/view/WindowId` for the window this view is currently attached to. |
+| open [WindowInsetsController](WindowInsetsController.md)? | `https://developer.android.com/reference/kotlin/android/view/View#getWindowInsetsController()()` Retrieves the single `https://developer.android.com/reference/kotlin/android/view/WindowInsetsController` of the window this view is attached to. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getWindowSystemUiVisibility()()` Returns the current system UI visibility that is currently set for the entire window. |
 | --- | --- |
-| open [IBinder](../android/os/IBinder.md)! | `https://developer.android.com/reference/kotlin/android/view/View#getWindowToken()()` Retrieve a unique token identifying the window this view is attached to. |
+| open [IBinder](../android.os/IBinder.md)! | `https://developer.android.com/reference/kotlin/android/view/View#getWindowToken()()` Retrieve a unique token identifying the window this view is attached to. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getWindowVisibility()()` Returns the current visibility of the window this view is attached to (either `https://developer.android.com/reference/kotlin/android/view/View#GONE:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/View#INVISIBLE:kotlin.Int`, or `https://developer.android.com/reference/kotlin/android/view/View#VISIBLE:kotlin.Int`). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#getWindowVisibleDisplayFrame(android.graphics.Rect)(outRect: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#!)` Retrieve the overall visible display size in which the window this view is attached to has been positioned in. |
 | --- | --- |
@@ -1046,7 +1046,7 @@ For more fine-grained control over security, consider overriding the `https://de
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#hasTransientState()()` Indicates whether the view is currently tracking transient state that the app should not need to concern itself with saving and restoring, but that the framework should take special note to preserve when possible. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#hasWindowFocus()()` Returns true if this view is in a window that currently has window focus. |
-| open static [View](../android/view/View.md)! | `https://developer.android.com/reference/kotlin/android/view/View#inflate(android.content.Context,%20kotlin.Int,%20android.view.ViewGroup)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, resource: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, root: https://developer.android.com/reference/kotlin/android/view/ViewGroup!)` Inflate a view from an XML resource. |
+| open static [View](View.md)! | `https://developer.android.com/reference/kotlin/android/view/View#inflate(android.content.Context,%20kotlin.Int,%20android.view.ViewGroup)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, resource: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, root: https://developer.android.com/reference/kotlin/android/view/ViewGroup!)` Inflate a view from an XML resource. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#invalidate()()` Invalidate the whole view. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#invalidate(android.graphics.Rect)(dirty: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#!)` Mark the area defined by dirty as needing to be drawn. |
@@ -1133,19 +1133,19 @@ For more fine-grained control over security, consider overriding the `https://de
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#isVisibleToUserForAutofill(kotlin.Int)(virtualId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Computes whether this virtual autofill view is visible to the user. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#jumpDrawablesToCurrentState()()` Call `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#jumpToCurrentState()` on all Drawable objects associated with this view. |
 | --- | --- |
-| open [View](../android/view/View.md)! | `https://developer.android.com/reference/kotlin/android/view/View#keyboardNavigationClusterSearch(android.view.View,%20kotlin.Int)(currentCluster: https://developer.android.com/reference/kotlin/android/view/View#!, direction: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Find the nearest keyboard navigation cluster in the specified direction. |
+| open [View](View.md)! | `https://developer.android.com/reference/kotlin/android/view/View#keyboardNavigationClusterSearch(android.view.View,%20kotlin.Int)(currentCluster: https://developer.android.com/reference/kotlin/android/view/View#!, direction: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Find the nearest keyboard navigation cluster in the specified direction. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#layout(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(l: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, t: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, r: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Assign a size and position to a view and all of its descendants |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#measure(kotlin.Int,%20kotlin.Int)(widthMeasureSpec: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, heightMeasureSpec: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` This is called to find out how big a view should be. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#offsetLeftAndRight(kotlin.Int)(offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Offset this view's horizontal location by the specified amount of pixels. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#offsetTopAndBottom(kotlin.Int)(offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Offset this view's vertical location by the specified number of pixels. |
-| open [WindowInsets](../android/view/WindowInsets.md)! | `https://developer.android.com/reference/kotlin/android/view/View#onApplyWindowInsets(android.view.WindowInsets)(insets: https://developer.android.com/reference/kotlin/android/view/WindowInsets!)` Called when the view should apply `https://developer.android.com/reference/kotlin/android/view/WindowInsets` according to its internal policy. |
+| open [WindowInsets](WindowInsets.md)! | `https://developer.android.com/reference/kotlin/android/view/View#onApplyWindowInsets(android.view.WindowInsets)(insets: https://developer.android.com/reference/kotlin/android/view/WindowInsets!)` Called when the view should apply `https://developer.android.com/reference/kotlin/android/view/WindowInsets` according to its internal policy. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#onCancelPendingInputEvents()()` Called as the result of a call to `https://developer.android.com/reference/kotlin/android/view/View#cancelPendingInputEvents()` on this view or a parent view. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#onCapturedPointerEvent(android.view.MotionEvent)(event: https://developer.android.com/reference/kotlin/android/view/MotionEvent!)` Implement this method to handle captured pointer events |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#onCheckIsTextEditor()()` Check whether the called view is a text editor, in which case it would make sense to automatically display a soft input window for it. |
 | --- | --- |
-| open [InputConnection](../android/view/inputmethod/InputConnection.md)! | `https://developer.android.com/reference/kotlin/android/view/View#onCreateInputConnection(android.view.inputmethod.EditorInfo)(outAttrs: https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo!)` Create a new InputConnection for an InputMethod to interact with the view. |
+| open [InputConnection](../android.view.inputmethod/InputConnection.md)! | `https://developer.android.com/reference/kotlin/android/view/View#onCreateInputConnection(android.view.inputmethod.EditorInfo)(outAttrs: https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo!)` Create a new InputConnection for an InputMethod to interact with the view. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#onCreateViewTranslationRequest(kotlin.IntArray,%20java.util.function.Consumer)(supportedFormats: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html, requestsCollector: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationRequest!>)` Collects a `https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationRequest` which represents the content to be translated in the view. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#onCreateVirtualViewTranslationRequests(kotlin.LongArray,%20kotlin.IntArray,%20java.util.function.Consumer)(virtualIds: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html, supportedFormats: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html, requestsCollector: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationRequest!>)` Collects `https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationRequest`s which represents the content to be translated for the virtual views in the host view. |
 | --- | --- |
@@ -1179,9 +1179,9 @@ For more fine-grained control over security, consider overriding the `https://de
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#onProvideStructure(android.view.ViewStructure)(structure: https://developer.android.com/reference/kotlin/android/view/ViewStructure!)` Called when assist structure is being retrieved from a view as part of `https://developer.android.com/reference/kotlin/android/app/Activity.html#onProvideAssistData(android.os.Bundle)`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#onProvideVirtualStructure(android.view.ViewStructure)(structure: https://developer.android.com/reference/kotlin/android/view/ViewStructure!)` Called when assist structure is being retrieved from a view as part of `https://developer.android.com/reference/kotlin/android/app/Activity.html#onProvideAssistData(android.os.Bundle)` to generate additional virtual structure under this view. |
-| open [ContentInfo](../android/view/ContentInfo.md)? | `https://developer.android.com/reference/kotlin/android/view/View#onReceiveContent(android.view.ContentInfo)(payload: https://developer.android.com/reference/kotlin/android/view/ContentInfo)` Implements the default behavior for receiving content for this type of view. |
+| open [ContentInfo](ContentInfo.md)? | `https://developer.android.com/reference/kotlin/android/view/View#onReceiveContent(android.view.ContentInfo)(payload: https://developer.android.com/reference/kotlin/android/view/ContentInfo)` Implements the default behavior for receiving content for this type of view. |
 | --- | --- |
-| open [PointerIcon](../android/view/PointerIcon.md)! | `https://developer.android.com/reference/kotlin/android/view/View#onResolvePointerIcon(android.view.MotionEvent,%20kotlin.Int)(event: https://developer.android.com/reference/kotlin/android/view/MotionEvent!, pointerIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Resolve the pointer icon that should be used for specified pointer in the motion event. |
+| open [PointerIcon](PointerIcon.md)! | `https://developer.android.com/reference/kotlin/android/view/View#onResolvePointerIcon(android.view.MotionEvent,%20kotlin.Int)(event: https://developer.android.com/reference/kotlin/android/view/MotionEvent!, pointerIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Resolve the pointer icon that should be used for specified pointer in the motion event. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#onRtlPropertiesChanged(kotlin.Int)(layoutDirection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called when any RTL property (layout direction or text direction or text alignment) has been changed. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#onScreenStateChanged(kotlin.Int)(screenState: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` This method is called whenever the state of the screen this view is attached to changes. |
 | --- | --- |
@@ -1209,7 +1209,7 @@ For more fine-grained control over security, consider overriding the `https://de
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#performLongClick()()` Calls this view's OnLongClickListener, if it is defined. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#performLongClick(kotlin.Float,%20kotlin.Float)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Calls this view's OnLongClickListener, if it is defined. |
 | --- | --- |
-| open [ContentInfo](../android/view/ContentInfo.md)? | `https://developer.android.com/reference/kotlin/android/view/View#performReceiveContent(android.view.ContentInfo)(payload: https://developer.android.com/reference/kotlin/android/view/ContentInfo)` Receives the given content. |
+| open [ContentInfo](ContentInfo.md)? | `https://developer.android.com/reference/kotlin/android/view/View#performReceiveContent(android.view.ContentInfo)(payload: https://developer.android.com/reference/kotlin/android/view/ContentInfo)` Receives the given content. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#playSoundEffect(kotlin.Int)(soundConstant: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Play a sound effect for this view. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#post(java.lang.Runnable)(action: https://developer.android.com/reference/kotlin/java/lang/Runnable.html#!)` Causes the Runnable to be added to the message queue. |
 | --- | --- |
@@ -1507,9 +1507,9 @@ For more fine-grained control over security, consider overriding the `https://de
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#showContextMenu()()` Shows the context menu for this view. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#showContextMenu(kotlin.Float,%20kotlin.Float)(x: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, y: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Shows the context menu for this view anchored to the specified view-relative coordinate. |
-| open [ActionMode](../android/view/ActionMode.md)! | `https://developer.android.com/reference/kotlin/android/view/View#startActionMode(android.view.ActionMode.Callback)(callback: https://developer.android.com/reference/kotlin/android/view/ActionMode.Callback!)` Start an action mode with the default type `https://developer.android.com/reference/kotlin/android/view/ActionMode#TYPE_PRIMARY:kotlin.Int`. |
+| open [ActionMode](ActionMode.md)! | `https://developer.android.com/reference/kotlin/android/view/View#startActionMode(android.view.ActionMode.Callback)(callback: https://developer.android.com/reference/kotlin/android/view/ActionMode.Callback!)` Start an action mode with the default type `https://developer.android.com/reference/kotlin/android/view/ActionMode#TYPE_PRIMARY:kotlin.Int`. |
 | --- | --- |
-| open [ActionMode](../android/view/ActionMode.md)! | `https://developer.android.com/reference/kotlin/android/view/View#startActionMode(android.view.ActionMode.Callback,%20kotlin.Int)(callback: https://developer.android.com/reference/kotlin/android/view/ActionMode.Callback!, type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Start an action mode with the given type. |
+| open [ActionMode](ActionMode.md)! | `https://developer.android.com/reference/kotlin/android/view/View#startActionMode(android.view.ActionMode.Callback,%20kotlin.Int)(callback: https://developer.android.com/reference/kotlin/android/view/ActionMode.Callback!, type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Start an action mode with the given type. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#startAnimation(android.view.animation.Animation)(animation: https://developer.android.com/reference/kotlin/android/view/animation/Animation!)` Start the specified animation now. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#startDrag(android.content.ClipData,%20android.view.View.DragShadowBuilder,%20kotlin.Any,%20kotlin.Int)(data: https://developer.android.com/reference/kotlin/android/content/ClipData.html#!, shadowBuilder: https://developer.android.com/reference/kotlin/android/view/View.DragShadowBuilder!, myLocalState: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
 | --- | --- |
@@ -1601,7 +1601,7 @@ For more fine-grained control over security, consider overriding the `https://de
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#onOverScrolled(kotlin.Int,%20kotlin.Int,%20kotlin.Boolean,%20kotlin.Boolean)(scrollX: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, scrollY: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, clampedX: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, clampedY: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Called by `https://developer.android.com/reference/kotlin/android/view/View#overScrollBy(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Boolean)` to respond to the results of an over-scroll operation. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#onRestoreInstanceState(android.os.Parcelable)(state: https://developer.android.com/reference/kotlin/android/os/Parcelable.html#!)` Hook allowing a view to re-apply a representation of its internal state that had previously been generated by `https://developer.android.com/reference/kotlin/android/view/View#onSaveInstanceState()`. |
-| open [Parcelable](../android/os/Parcelable.md)? | `https://developer.android.com/reference/kotlin/android/view/View#onSaveInstanceState()()` Hook allowing a view to generate a representation of its internal state that can later be used to create a new instance with that same state. |
+| open [Parcelable](../android.os/Parcelable.md)? | `https://developer.android.com/reference/kotlin/android/view/View#onSaveInstanceState()()` Hook allowing a view to generate a representation of its internal state that can later be used to create a new instance with that same state. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#onScrollChanged(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(l: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, t: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, oldl: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, oldt: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` This is called in response to an internal scroll in this view (i.e., the view scrolled its own contents). |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/View#onSetAlpha(kotlin.Int)(alpha: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Invoked if there is a Transform that involves alpha. |
@@ -1616,7 +1616,7 @@ For more fine-grained control over security, consider overriding the `https://de
 
 | Properties ||
 |---|---|
-| static [Property](../android/util/Property.md)\< [View](../android/view/View.md)!, [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/view/View#ALPHA:android.util.Property` A Property wrapper around the `alpha` functionality handled by the `https://developer.android.com/reference/kotlin/android/view/View#setAlpha(kotlin.Float)` and `https://developer.android.com/reference/kotlin/android/view/View#getAlpha()` methods. |
+| static [Property](../android.util/Property.md)\< [View](View.md)!, [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/view/View#ALPHA:android.util.Property` A Property wrapper around the `alpha` functionality handled by the `https://developer.android.com/reference/kotlin/android/view/View#setAlpha(kotlin.Float)` and `https://developer.android.com/reference/kotlin/android/view/View#getAlpha()` methods. |
 | static [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | `https://developer.android.com/reference/kotlin/android/view/View#EMPTY_STATE_SET:kotlin.IntArray` Indicates the view has no states set. |
 | static [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | `https://developer.android.com/reference/kotlin/android/view/View#ENABLED_FOCUSED_SELECTED_STATE_SET:kotlin.IntArray` Indicates the view is enabled, focused and selected. |
 | --- | --- |
@@ -1656,24 +1656,24 @@ For more fine-grained control over security, consider overriding the `https://de
 | static [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | `https://developer.android.com/reference/kotlin/android/view/View#PRESSED_STATE_SET:kotlin.IntArray` Indicates the view is pressed. |
 | static [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | `https://developer.android.com/reference/kotlin/android/view/View#PRESSED_WINDOW_FOCUSED_STATE_SET:kotlin.IntArray` Indicates the view is pressed and its window has the focus. |
 | --- | --- |
-| static [Property](../android/util/Property.md)\< [View](../android/view/View.md)!, [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/view/View#ROTATION:android.util.Property` A Property wrapper around the `rotation` functionality handled by the `https://developer.android.com/reference/kotlin/android/view/View#setRotation(kotlin.Float)` and `https://developer.android.com/reference/kotlin/android/view/View#getRotation()` methods. |
-| static [Property](../android/util/Property.md)\< [View](../android/view/View.md)!, [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/view/View#ROTATION_X:android.util.Property` A Property wrapper around the `rotationX` functionality handled by the `https://developer.android.com/reference/kotlin/android/view/View#setRotationX(kotlin.Float)` and `https://developer.android.com/reference/kotlin/android/view/View#getRotationX()` methods. |
-| static [Property](../android/util/Property.md)\< [View](../android/view/View.md)!, [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/view/View#ROTATION_Y:android.util.Property` A Property wrapper around the `rotationY` functionality handled by the `https://developer.android.com/reference/kotlin/android/view/View#setRotationY(kotlin.Float)` and `https://developer.android.com/reference/kotlin/android/view/View#getRotationY()` methods. |
+| static [Property](../android.util/Property.md)\< [View](View.md)!, [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/view/View#ROTATION:android.util.Property` A Property wrapper around the `rotation` functionality handled by the `https://developer.android.com/reference/kotlin/android/view/View#setRotation(kotlin.Float)` and `https://developer.android.com/reference/kotlin/android/view/View#getRotation()` methods. |
+| static [Property](../android.util/Property.md)\< [View](View.md)!, [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/view/View#ROTATION_X:android.util.Property` A Property wrapper around the `rotationX` functionality handled by the `https://developer.android.com/reference/kotlin/android/view/View#setRotationX(kotlin.Float)` and `https://developer.android.com/reference/kotlin/android/view/View#getRotationX()` methods. |
+| static [Property](../android.util/Property.md)\< [View](View.md)!, [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/view/View#ROTATION_Y:android.util.Property` A Property wrapper around the `rotationY` functionality handled by the `https://developer.android.com/reference/kotlin/android/view/View#setRotationY(kotlin.Float)` and `https://developer.android.com/reference/kotlin/android/view/View#getRotationY()` methods. |
 | --- | --- |
-| static [Property](../android/util/Property.md)\< [View](../android/view/View.md)!, [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/view/View#SCALE_X:android.util.Property` A Property wrapper around the `scaleX` functionality handled by the `https://developer.android.com/reference/kotlin/android/view/View#setScaleX(kotlin.Float)` and `https://developer.android.com/reference/kotlin/android/view/View#getScaleX()` methods. |
-| static [Property](../android/util/Property.md)\< [View](../android/view/View.md)!, [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/view/View#SCALE_Y:android.util.Property` A Property wrapper around the `scaleY` functionality handled by the `https://developer.android.com/reference/kotlin/android/view/View#setScaleY(kotlin.Float)` and `https://developer.android.com/reference/kotlin/android/view/View#getScaleY()` methods. |
+| static [Property](../android.util/Property.md)\< [View](View.md)!, [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/view/View#SCALE_X:android.util.Property` A Property wrapper around the `scaleX` functionality handled by the `https://developer.android.com/reference/kotlin/android/view/View#setScaleX(kotlin.Float)` and `https://developer.android.com/reference/kotlin/android/view/View#getScaleX()` methods. |
+| static [Property](../android.util/Property.md)\< [View](View.md)!, [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/view/View#SCALE_Y:android.util.Property` A Property wrapper around the `scaleY` functionality handled by the `https://developer.android.com/reference/kotlin/android/view/View#setScaleY(kotlin.Float)` and `https://developer.android.com/reference/kotlin/android/view/View#getScaleY()` methods. |
 | static [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | `https://developer.android.com/reference/kotlin/android/view/View#SELECTED_STATE_SET:kotlin.IntArray` Indicates the view is selected. |
 | --- | --- |
 | static [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | `https://developer.android.com/reference/kotlin/android/view/View#SELECTED_WINDOW_FOCUSED_STATE_SET:kotlin.IntArray` Indicates the view is selected and that its window has the focus. |
-| static [Property](../android/util/Property.md)\< [View](../android/view/View.md)!, [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/view/View#TRANSLATION_X:android.util.Property` A Property wrapper around the `translationX` functionality handled by the `https://developer.android.com/reference/kotlin/android/view/View#setTranslationX(kotlin.Float)` and `https://developer.android.com/reference/kotlin/android/view/View#getTranslationX()` methods. |
-| static [Property](../android/util/Property.md)\< [View](../android/view/View.md)!, [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/view/View#TRANSLATION_Y:android.util.Property` A Property wrapper around the `translationY` functionality handled by the `https://developer.android.com/reference/kotlin/android/view/View#setTranslationY(kotlin.Float)` and `https://developer.android.com/reference/kotlin/android/view/View#getTranslationY()` methods. |
+| static [Property](../android.util/Property.md)\< [View](View.md)!, [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/view/View#TRANSLATION_X:android.util.Property` A Property wrapper around the `translationX` functionality handled by the `https://developer.android.com/reference/kotlin/android/view/View#setTranslationX(kotlin.Float)` and `https://developer.android.com/reference/kotlin/android/view/View#getTranslationX()` methods. |
+| static [Property](../android.util/Property.md)\< [View](View.md)!, [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/view/View#TRANSLATION_Y:android.util.Property` A Property wrapper around the `translationY` functionality handled by the `https://developer.android.com/reference/kotlin/android/view/View#setTranslationY(kotlin.Float)` and `https://developer.android.com/reference/kotlin/android/view/View#getTranslationY()` methods. |
 | --- | --- |
-| static [Property](../android/util/Property.md)\< [View](../android/view/View.md)!, [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/view/View#TRANSLATION_Z:android.util.Property` A Property wrapper around the `translationZ` functionality handled by the `https://developer.android.com/reference/kotlin/android/view/View#setTranslationZ(kotlin.Float)` and `https://developer.android.com/reference/kotlin/android/view/View#getTranslationZ()` methods. |
+| static [Property](../android.util/Property.md)\< [View](View.md)!, [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/view/View#TRANSLATION_Z:android.util.Property` A Property wrapper around the `translationZ` functionality handled by the `https://developer.android.com/reference/kotlin/android/view/View#setTranslationZ(kotlin.Float)` and `https://developer.android.com/reference/kotlin/android/view/View#getTranslationZ()` methods. |
 | static [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | `https://developer.android.com/reference/kotlin/android/view/View#WINDOW_FOCUSED_STATE_SET:kotlin.IntArray` Indicates the view's window has focus. |
-| static [Property](../android/util/Property.md)\< [View](../android/view/View.md)!, [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/view/View#X:android.util.Property` A Property wrapper around the `x` functionality handled by the `https://developer.android.com/reference/kotlin/android/view/View#setX(kotlin.Float)` and `https://developer.android.com/reference/kotlin/android/view/View#getX()` methods. |
+| static [Property](../android.util/Property.md)\< [View](View.md)!, [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/view/View#X:android.util.Property` A Property wrapper around the `x` functionality handled by the `https://developer.android.com/reference/kotlin/android/view/View#setX(kotlin.Float)` and `https://developer.android.com/reference/kotlin/android/view/View#getX()` methods. |
 | --- | --- |
-| static [Property](../android/util/Property.md)\< [View](../android/view/View.md)!, [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/view/View#Y:android.util.Property` A Property wrapper around the `y` functionality handled by the `https://developer.android.com/reference/kotlin/android/view/View#setY(kotlin.Float)` and `https://developer.android.com/reference/kotlin/android/view/View#getY()` methods. |
-| static [Property](../android/util/Property.md)\< [View](../android/view/View.md)!, [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/view/View#Z:android.util.Property` A Property wrapper around the `z` functionality handled by the `https://developer.android.com/reference/kotlin/android/view/View#setZ(kotlin.Float)` and `https://developer.android.com/reference/kotlin/android/view/View#getZ()` methods. |
+| static [Property](../android.util/Property.md)\< [View](View.md)!, [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/view/View#Y:android.util.Property` A Property wrapper around the `y` functionality handled by the `https://developer.android.com/reference/kotlin/android/view/View#setY(kotlin.Float)` and `https://developer.android.com/reference/kotlin/android/view/View#getY()` methods. |
+| static [Property](../android.util/Property.md)\< [View](View.md)!, [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/view/View#Z:android.util.Property` A Property wrapper around the `z` functionality handled by the `https://developer.android.com/reference/kotlin/android/view/View#setZ(kotlin.Float)` and `https://developer.android.com/reference/kotlin/android/view/View#getZ()` methods. |
 
 ## XML attributes
 
@@ -2570,7 +2570,7 @@ Hint indicating that this view can be autofilled with a credit card expiration d
 
 It should be used when the credit card expiration date is represented by just one view; if it is represented by more than one (for example, one view for the month and another view for the year), then each of these views should use the hint specific for the unit (`https://developer.android.com/reference/kotlin/android/view/View#AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DAY:kotlin.String`, `https://developer.android.com/reference/kotlin/android/view/View#AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_MONTH:kotlin.String`, or `https://developer.android.com/reference/kotlin/android/view/View#AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_YEAR:kotlin.String`).
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DATE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DATE}`).
 
 When annotating a view with this hint, it's recommended to use a date autofill value to avoid ambiguity when the autofill service provides a value for it. To understand why a value can be ambiguous, consider "April of 2020", which could be represented as either of the following options:
 
@@ -2601,7 +2601,7 @@ static val AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DAY: String
 
 Hint indicating that this view can be autofilled with a credit card expiration day.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DAY}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DAY}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -2617,7 +2617,7 @@ static val AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_MONTH: String
 
 Hint indicating that this view can be autofilled with a credit card expiration month.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_MONTH}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_MONTH}`).
 
 When annotating a view with this hint, it's recommended to use a text autofill value whose value is the numerical representation of the month, starting on `1` to avoid ambiguity when the autofill service provides a value for it. To understand why a value can be ambiguous, consider "January", which could be represented as either of
 
@@ -2643,7 +2643,7 @@ static val AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_YEAR: String
 
 Hint indicating that this view can be autofilled with a credit card expiration year.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_YEAR}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_YEAR}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -2659,7 +2659,7 @@ static val AUTOFILL_HINT_CREDIT_CARD_NUMBER: String
 
 Hint indicating that this view can be autofilled with a credit card number.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_NUMBER}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_NUMBER}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -2675,7 +2675,7 @@ static val AUTOFILL_HINT_CREDIT_CARD_SECURITY_CODE: String
 
 Hint indicating that this view can be autofilled with a credit card security code.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_SECURITY_CODE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_SECURITY_CODE}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -2691,7 +2691,7 @@ static val AUTOFILL_HINT_EMAIL_ADDRESS: String
 
 Hint indicating that this view can be autofilled with an email address.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_EMAIL_ADDRESS}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](View.md) (in which case the value should be `{@value #AUTOFILL_HINT_EMAIL_ADDRESS}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -2707,7 +2707,7 @@ static val AUTOFILL_HINT_NAME: String
 
 Hint indicating that this view can be autofilled with a user's real name.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_NAME}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](View.md) (in which case the value should be `{@value #AUTOFILL_HINT_NAME}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -2723,7 +2723,7 @@ static val AUTOFILL_HINT_PASSWORD: String
 
 Hint indicating that this view can be autofilled with a password.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_PASSWORD}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](View.md) (in which case the value should be `{@value #AUTOFILL_HINT_PASSWORD}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -2739,7 +2739,7 @@ static val AUTOFILL_HINT_PHONE: String
 
 Hint indicating that this view can be autofilled with a phone number.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_PHONE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](View.md) (in which case the value should be `{@value #AUTOFILL_HINT_PHONE}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -2755,7 +2755,7 @@ static val AUTOFILL_HINT_POSTAL_ADDRESS: String
 
 Hint indicating that this view can be autofilled with a postal address.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_ADDRESS}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](View.md) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_ADDRESS}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -2771,7 +2771,7 @@ static val AUTOFILL_HINT_POSTAL_CODE: String
 
 Hint indicating that this view can be autofilled with a postal code.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_CODE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](View.md) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_CODE}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -2787,7 +2787,7 @@ static val AUTOFILL_HINT_USERNAME: String
 
 Hint indicating that this view can be autofilled with a username.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_USERNAME}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` or [`android:autofillHint`](View.md) (in which case the value should be `{@value #AUTOFILL_HINT_USERNAME}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -3166,7 +3166,7 @@ static val FOCUSABLE: Int
 
 This view wants keystrokes.
 
-Use with `https://developer.android.com/reference/kotlin/android/view/View#setFocusable(kotlin.Int)` and [`android:focusable`.](../android/view/View.md)
+Use with `https://developer.android.com/reference/kotlin/android/view/View#setFocusable(kotlin.Int)` and [`android:focusable`.](View.md)
 
  Value: 1
 
@@ -3204,7 +3204,7 @@ static val FOCUSABLE_AUTO: Int
 
 This view determines focusability automatically. This is the default.
 
-Use with `https://developer.android.com/reference/kotlin/android/view/View#setFocusable(kotlin.Int)` and [`android:focusable`.](../android/view/View.md)
+Use with `https://developer.android.com/reference/kotlin/android/view/View#setFocusable(kotlin.Int)` and [`android:focusable`.](View.md)
 
  Value: 16
 
@@ -3288,7 +3288,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val GONE: Int
 ```
 
-This view is invisible, and it doesn't take any space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View#setVisibility(kotlin.Int)` and [`android:visibility`.](../android/view/View.md)
+This view is invisible, and it doesn't take any space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View#setVisibility(kotlin.Int)` and [`android:visibility`.](View.md)
 
  Value: 8
 
@@ -3530,7 +3530,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val INVISIBLE: Int
 ```
 
-This view is invisible, but it still takes up space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View#setVisibility(kotlin.Int)` and [`android:visibility`.](../android/view/View.md)
+This view is invisible, but it still takes up space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View#setVisibility(kotlin.Int)` and [`android:visibility`.](View.md)
 
  Value: 4
 
@@ -3723,7 +3723,7 @@ static val NOT_FOCUSABLE: Int
 
 This view does not want keystrokes.
 
-Use with `https://developer.android.com/reference/kotlin/android/view/View#setFocusable(kotlin.Int)` and [`android:focusable`.](../android/view/View.md)
+Use with `https://developer.android.com/reference/kotlin/android/view/View#setFocusable(kotlin.Int)` and [`android:focusable`.](View.md)
 
  Value: 0
 
@@ -4764,7 +4764,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val VISIBLE: Int
 ```
 
-This view is visible. Use with `https://developer.android.com/reference/kotlin/android/view/View#setVisibility(kotlin.Int)` and [`android:visibility`.](../android/view/View.md)
+This view is visible. Use with `https://developer.android.com/reference/kotlin/android/view/View#setVisibility(kotlin.Int)` and [`android:visibility`.](View.md)
 
  Value: 0
 
@@ -4782,7 +4782,7 @@ Simple constructor to use when creating a view from code.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md)!: The Context the view is running in, through which it can access the current theme, resources, etc. |
+| `context` | [Context](../android.content/Context.md)!: The Context the view is running in, through which it can access the current theme, resources, etc. |
 
 ### View
 
@@ -4800,8 +4800,8 @@ The method onFinishInflate() will be called after all children have been added.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md)!: The Context the view is running in, through which it can access the current theme, resources, etc. |
-| `attrs` | [AttributeSet](../android/util/AttributeSet.md)?: The attributes of the XML tag that is inflating the view. This value may be `null`. |
+| `context` | [Context](../android.content/Context.md)!: The Context the view is running in, through which it can access the current theme, resources, etc. |
+| `attrs` | [AttributeSet](../android.util/AttributeSet.md)?: The attributes of the XML tag that is inflating the view. This value may be `null`. |
 
 **See Also**
 
@@ -4822,8 +4822,8 @@ Perform inflation from XML and apply a class-specific base style from a theme at
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md)!: The Context the view is running in, through which it can access the current theme, resources, etc. |
-| `attrs` | [AttributeSet](../android/util/AttributeSet.md)?: The attributes of the XML tag that is inflating the view. This value may be `null`. |
+| `context` | [Context](../android.content/Context.md)!: The Context the view is running in, through which it can access the current theme, resources, etc. |
+| `attrs` | [AttributeSet](../android.util/AttributeSet.md)?: The attributes of the XML tag that is inflating the view. This value may be `null`. |
 | `defStyleAttr` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): An attribute in the current theme that contains a reference to a style resource that supplies default values for the view. Can be 0 to not look for defaults. |
 | --- | --- |
 
@@ -4857,8 +4857,8 @@ Each of these inputs is considered in-order, with the first listed taking preced
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md)!: The Context the view is running in, through which it can access the current theme, resources, etc. |
-| `attrs` | [AttributeSet](../android/util/AttributeSet.md)?: The attributes of the XML tag that is inflating the view. This value may be `null`. |
+| `context` | [Context](../android.content/Context.md)!: The Context the view is running in, through which it can access the current theme, resources, etc. |
+| `attrs` | [AttributeSet](../android.util/AttributeSet.md)?: The attributes of the XML tag that is inflating the view. This value may be `null`. |
 | `defStyleAttr` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): An attribute in the current theme that contains a reference to a style resource that supplies default values for the view. Can be 0 to not look for defaults. |
 | --- | --- |
 | `defStyleRes` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): A resource identifier of a style resource that supplies default values for the view, used only if defStyleAttr is 0 or can not be found in the theme. Can be 0 to not look for defaults. |
@@ -4881,7 +4881,7 @@ Adds the children of this View relevant for accessibility to the given list as o
 
 | Parameters ||
 |---|---|
-| `outChildren` | [ArrayList](../java/util/ArrayList.md)\< [View](../android/view/View.md)!\>!: The output list that will receive children for accessibility. |
+| `outChildren` | [ArrayList](../java.util/ArrayList.md)\< [View](View.md)!\>!: The output list that will receive children for accessibility. |
 
 ### addExtraDataToAccessibilityNodeInfo
 
@@ -4903,9 +4903,9 @@ If you override this method you *must* call through to the superclass implementa
 
 | Parameters ||
 |---|---|
-| `info` | [AccessibilityNodeInfo](../android/view/accessibility/AccessibilityNodeInfo.md): The info to which to add the extra data. Never `null`. |
+| `info` | [AccessibilityNodeInfo](../android.view.accessibility/AccessibilityNodeInfo.md): The info to which to add the extra data. Never `null`. |
 | `extraDataKey` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): A key specifying the type of extra data to add to the info. The extra data should be added to the `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` returned by the info's `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo#getExtras()` method. Never `null`. |
-| `arguments` | [Bundle](../android/os/Bundle.md)?: A `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` holding any arguments relevant for this request. May be `null` if the service provided no arguments. |
+| `arguments` | [Bundle](../android.os/Bundle.md)?: A `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` holding any arguments relevant for this request. May be `null` if the service provided no arguments. |
 | --- | --- |
 
 **See Also**
@@ -4927,7 +4927,7 @@ Add any focusable views that are descendants of this view (possibly including th
 
 | Parameters ||
 |---|---|
-| `views` | [ArrayList](../java/util/ArrayList.md)\< [View](../android/view/View.md)!\>!: Focusable views found so far |
+| `views` | [ArrayList](../java.util/ArrayList.md)\< [View](View.md)!\>!: Focusable views found so far |
 | `direction` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The direction of the focus. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/view/View#FOCUS_BACKWARD:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View#FOCUS_FORWARD:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View#FOCUS_LEFT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View#FOCUS_UP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View#FOCUS_RIGHT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View#FOCUS_DOWN:kotlin.Int` |
 
 ### addFocusables
@@ -4946,7 +4946,7 @@ Adds any focusable views that are descendants of this view (possibly including t
 
 | Parameters ||
 |---|---|
-| `views` | [ArrayList](../java/util/ArrayList.md)\< [View](../android/view/View.md)!\>!: Focusable views found so far or null if all we are interested is the number of focusables. |
+| `views` | [ArrayList](../java.util/ArrayList.md)\< [View](View.md)!\>!: Focusable views found so far or null if all we are interested is the number of focusables. |
 | `direction` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The direction of the focus. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/view/View#FOCUS_BACKWARD:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View#FOCUS_FORWARD:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View#FOCUS_LEFT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View#FOCUS_UP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View#FOCUS_RIGHT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View#FOCUS_DOWN:kotlin.Int` |
 | `focusableMode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of focusables to be added. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/view/View#FOCUSABLES_ALL:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View#FOCUSABLES_TOUCH_MODE:kotlin.Int` |
 | --- | --- |
@@ -4971,7 +4971,7 @@ Adds any keyboard navigation cluster roots that are descendants of this view (po
 
 | Parameters ||
 |---|---|
-| `views` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [View](../android/view/View.md)!\>: Keyboard navigation cluster roots found so far. This value cannot be `null`. |
+| `views` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [View](View.md)!\>: Keyboard navigation cluster roots found so far. This value cannot be `null`. |
 | `direction` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Direction to look |
 
 ### addOnAttachStateChangeListener
@@ -5036,7 +5036,7 @@ Add any touchable views that are descendants of this view (possibly including th
 
 | Parameters ||
 |---|---|
-| `views` | [ArrayList](../java/util/ArrayList.md)\< [View](../android/view/View.md)!\>!: Touchable views found so far |
+| `views` | [ArrayList](../java.util/ArrayList.md)\< [View](View.md)!\>!: Touchable views found so far |
 
 ### animate
 
@@ -5104,7 +5104,7 @@ If a child value is updated asynchronously, the next call to `https://developer.
 
 | Parameters ||
 |---|---|
-| `values` | [SparseArray](../android/util/SparseArray.md)\< [AutofillValue](../android/view/autofill/AutofillValue.md)!\>: map of values to be autofilled, keyed by virtual child id. This value cannot be `null`. |
+| `values` | [SparseArray](../android.util/SparseArray.md)\< [AutofillValue](../android.view.autofill/AutofillValue.md)!\>: map of values to be autofilled, keyed by virtual child id. This value cannot be `null`. |
 
 ### autofill
 
@@ -5152,7 +5152,7 @@ If the value is updated asynchronously, the next call to `https://developer.andr
 
 | Parameters ||
 |---|---|
-| `value` | [AutofillValue](../android/view/autofill/AutofillValue.md)!: value to be autofilled. |
+| `value` | [AutofillValue](../android.view.autofill/AutofillValue.md)!: value to be autofilled. |
 
 ### bringToFront
 
@@ -5374,7 +5374,7 @@ Called by the `https://developer.android.com/reference/kotlin/android/view/input
 
 | Parameters ||
 |---|---|
-| `view` | [View](../android/view/View.md)!: The View that is making the InputMethodManager call. |
+| `view` | [View](View.md)!: The View that is making the InputMethodManager call. |
 
 | Return ||
 |---|---|
@@ -5472,8 +5472,8 @@ Compute insets that should be consumed by this view and the ones that should pro
 
 | Parameters ||
 |---|---|
-| `in` | [WindowInsets](../android/view/WindowInsets.md)!: Insets currently being processed by this View, likely received as a parameter to `https://developer.android.com/reference/kotlin/android/view/View#onApplyWindowInsets(android.view.WindowInsets)`. |
-| `outLocalInsets` | [Rect](../android/graphics/Rect.md)!: A Rect that will receive the insets that should be consumed by this view |
+| `in` | [WindowInsets](WindowInsets.md)!: Insets currently being processed by this View, likely received as a parameter to `https://developer.android.com/reference/kotlin/android/view/View#onApplyWindowInsets(android.view.WindowInsets)`. |
+| `outLocalInsets` | [Rect](../android.graphics/Rect.md)!: A Rect that will receive the insets that should be consumed by this view |
 
 | Return ||
 |---|---|
@@ -5511,7 +5511,7 @@ Show the context menu for this view. It is not safe to hold on to the menu after
 
 | Parameters ||
 |---|---|
-| `menu` | [ContextMenu](../android/view/ContextMenu.md)!: The context menu to populate |
+| `menu` | [ContextMenu](ContextMenu.md)!: The context menu to populate |
 
 ### destroyDrawingCache
 
@@ -5549,7 +5549,7 @@ This method replaces the older `https://developer.android.com/reference/kotlin/a
 
 | Parameters ||
 |---|---|
-| `insets` | [WindowInsets](../android/view/WindowInsets.md)!: Insets to apply |
+| `insets` | [WindowInsets](WindowInsets.md)!: Insets to apply |
 
 | Return ||
 |---|---|
@@ -5567,7 +5567,7 @@ Pass a captured pointer event down to the focused view.
 
 | Parameters ||
 |---|---|
-| `event` | [MotionEvent](../android/view/MotionEvent.md)!: The motion event to be dispatched. |
+| `event` | [MotionEvent](MotionEvent.md)!: The motion event to be dispatched. |
 
 | Return ||
 |---|---|
@@ -5585,7 +5585,7 @@ Dispatch a notification about a resource configuration change down the view hier
 
 | Parameters ||
 |---|---|
-| `newConfig` | [Configuration](../android/content/res/Configuration.md)!: The new resource configuration. |
+| `newConfig` | [Configuration](../android.content.res/Configuration.md)!: The new resource configuration. |
 
 **See Also**
 
@@ -5610,11 +5610,11 @@ The default implementation calls `https://developer.android.com/reference/kotlin
 
 | Parameters ||
 |---|---|
-| `viewIds` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [AutofillId](../android/view/autofill/AutofillId.md)!, [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)!\>: a map for the view's `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId` and its virtual child ids or `null` if the view doesn't have virtual child that should be translated. The virtual child ids are the same virtual ids provided by ContentCapture. |
+| `viewIds` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [AutofillId](../android.view.autofill/AutofillId.md)!, [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)!\>: a map for the view's `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId` and its virtual child ids or `null` if the view doesn't have virtual child that should be translated. The virtual child ids are the same virtual ids provided by ContentCapture. |
 | `supportedFormats` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html): the supported translation formats. For now, the only possible value is the `https://developer.android.com/reference/kotlin/android/view/translation/TranslationSpec#DATA_FORMAT_TEXT:kotlin.Int`. This value cannot be `null`. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/view/translation/TranslationSpec#DATA_FORMAT_TEXT:kotlin.Int` |
-| `capability` | [TranslationCapability](../android/view/translation/TranslationCapability.md): a `https://developer.android.com/reference/kotlin/android/view/translation/TranslationCapability` that holds translation capability. information, e.g. source spec, target spec. This value cannot be `null`. |
+| `capability` | [TranslationCapability](../android.view.translation/TranslationCapability.md): a `https://developer.android.com/reference/kotlin/android/view/translation/TranslationCapability` that holds translation capability. information, e.g. source spec, target spec. This value cannot be `null`. |
 | --- | --- |
-| `requests` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ViewTranslationRequest](../android/view/translation/ViewTranslationRequest.md)!\>: fill in with `https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationRequest`s for translation purpose. This value cannot be `null`. |
+| `requests` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ViewTranslationRequest](../android.view.translation/ViewTranslationRequest.md)!\>: fill in with `https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationRequest`s for translation purpose. This value cannot be `null`. |
 
 ### dispatchDisplayHint
 
@@ -5691,7 +5691,7 @@ Generic motion events with source class `https://developer.android.com/reference
 
 | Parameters ||
 |---|---|
-| `event` | [MotionEvent](../android/view/MotionEvent.md)!: The motion event to be dispatched. |
+| `event` | [MotionEvent](MotionEvent.md)!: The motion event to be dispatched. |
 
 | Return ||
 |---|---|
@@ -5714,7 +5714,7 @@ Dispatch a key event to the next view on the focus path. This path runs from the
 
 | Parameters ||
 |---|---|
-| `event` | [KeyEvent](../android/view/KeyEvent.md)!: The key event to be dispatched. |
+| `event` | [KeyEvent](KeyEvent.md)!: The key event to be dispatched. |
 
 | Return ||
 |---|---|
@@ -5732,7 +5732,7 @@ Dispatch a key event before it is processed by any input method associated with 
 
 | Parameters ||
 |---|---|
-| `event` | [KeyEvent](../android/view/KeyEvent.md)!: The key event to be dispatched. |
+| `event` | [KeyEvent](KeyEvent.md)!: The key event to be dispatched. |
 
 | Return ||
 |---|---|
@@ -5750,7 +5750,7 @@ Dispatches a key shortcut event.
 
 | Parameters ||
 |---|---|
-| `event` | [KeyEvent](../android/view/KeyEvent.md)!: The key event to be dispatched. |
+| `event` | [KeyEvent](KeyEvent.md)!: The key event to be dispatched. |
 
 | Return ||
 |---|---|
@@ -5836,7 +5836,7 @@ This method is useful for implementing nested scrolling child views. If `https:/
 | Parameters ||
 |---|---|
 | `action` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Accessibility action to delegate |
-| `arguments` | [Bundle](../android/os/Bundle.md)?: Optional action arguments. This value may be `null`. |
+| `arguments` | [Bundle](../android.os/Bundle.md)?: Optional action arguments. This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -5951,7 +5951,7 @@ If this view sets `https://developer.android.com/reference/kotlin/android/view/V
 
 | Parameters ||
 |---|---|
-| `event` | [AccessibilityEvent](../android/view/accessibility/AccessibilityEvent.md)!: The event. |
+| `event` | [AccessibilityEvent](../android.view.accessibility/AccessibilityEvent.md)!: The event. |
 
 | Return ||
 |---|---|
@@ -5985,7 +5985,7 @@ When overridden, it must:
 
 | Parameters ||
 |---|---|
-| `structure` | [ViewStructure](../android/view/ViewStructure.md): fill in with structured view data for autofill purposes. This value cannot be `null`. |
+| `structure` | [ViewStructure](ViewStructure.md): fill in with structured view data for autofill purposes. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): optional flags. Value is either `0` or - `https://developer.android.com/reference/kotlin/android/view/View#AUTOFILL_FLAG_INCLUDE_NOT_IMPORTANT_VIEWS:kotlin.Int` |
 
 **See Also**
@@ -6018,9 +6018,9 @@ Dispatch a scroll capture search request down the view hierarchy.
 
 | Parameters ||
 |---|---|
-| `localVisibleRect` | [Rect](../android/graphics/Rect.md): the visible area of this ViewGroup in local coordinates, according to the parent. This value cannot be `null`. |
-| `windowOffset` | [Point](../android/graphics/Point.md): the offset of this view within the window. This value cannot be `null`. |
-| `targets` | [Consumer](../java/util/function/Consumer.md)\< [ScrollCaptureTarget](../android/view/ScrollCaptureTarget.md)!\>: accepts potential scroll capture targets; `https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#accept(java.util.function.Consumer.T)` may be called zero or more times on the calling thread before onScrollCaptureSearch returns. This value cannot be `null`. |
+| `localVisibleRect` | [Rect](../android.graphics/Rect.md): the visible area of this ViewGroup in local coordinates, according to the parent. This value cannot be `null`. |
+| `windowOffset` | [Point](../android.graphics/Point.md): the offset of this view within the window. This value cannot be `null`. |
+| `targets` | [Consumer](../java.util.function/Consumer.md)\< [ScrollCaptureTarget](ScrollCaptureTarget.md)!\>: accepts potential scroll capture targets; `https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#accept(java.util.function.Consumer.T)` may be called zero or more times on the calling thread before onScrollCaptureSearch returns. This value cannot be `null`. |
 | --- | --- |
 
 ### dispatchStartTemporaryDetach
@@ -6059,7 +6059,7 @@ Pass the touch screen motion event down to the target view, or this view if it i
 
 | Parameters ||
 |---|---|
-| `event` | [MotionEvent](../android/view/MotionEvent.md)!: The motion event to be dispatched. |
+| `event` | [MotionEvent](MotionEvent.md)!: The motion event to be dispatched. |
 
 | Return ||
 |---|---|
@@ -6081,7 +6081,7 @@ Pass a trackball motion event down to the focused view.
 
 | Parameters ||
 |---|---|
-| `event` | [MotionEvent](../android/view/MotionEvent.md)!: The motion event to be dispatched. |
+| `event` | [MotionEvent](MotionEvent.md)!: The motion event to be dispatched. |
 
 | Return ||
 |---|---|
@@ -6106,7 +6106,7 @@ This method is the last chance for the focused view and its ancestors to respond
 
 | Parameters ||
 |---|---|
-| `focused` | [View](../android/view/View.md)!: The currently focused view. |
+| `focused` | [View](View.md)!: The currently focused view. |
 | `direction` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The direction focus wants to move. One of FOCUS_UP, FOCUS_DOWN, FOCUS_LEFT, and FOCUS_RIGHT. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/view/View#FOCUS_LEFT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View#FOCUS_UP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View#FOCUS_RIGHT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View#FOCUS_DOWN:kotlin.Int` |
 
 | Return ||
@@ -6139,7 +6139,7 @@ Dispatches `https://developer.android.com/reference/kotlin/android/view/WindowIn
 
 | Parameters ||
 |---|---|
-| `animation` | [WindowInsetsAnimation](../android/view/WindowInsetsAnimation.md): The current ongoing `https://developer.android.com/reference/kotlin/android/view/WindowInsetsAnimation`. This value cannot be `null`. |
+| `animation` | [WindowInsetsAnimation](WindowInsetsAnimation.md): The current ongoing `https://developer.android.com/reference/kotlin/android/view/WindowInsetsAnimation`. This value cannot be `null`. |
 
 ### dispatchWindowInsetsAnimationPrepare
 
@@ -6153,7 +6153,7 @@ Dispatches `https://developer.android.com/reference/kotlin/android/view/WindowIn
 
 | Parameters ||
 |---|---|
-| `animation` | [WindowInsetsAnimation](../android/view/WindowInsetsAnimation.md): current animation. This value cannot be `null`. |
+| `animation` | [WindowInsetsAnimation](WindowInsetsAnimation.md): current animation. This value cannot be `null`. |
 
 **See Also**
 
@@ -6174,8 +6174,8 @@ Dispatches `https://developer.android.com/reference/kotlin/android/view/WindowIn
 
 | Parameters ||
 |---|---|
-| `insets` | [WindowInsets](../android/view/WindowInsets.md): The current `https://developer.android.com/reference/kotlin/android/view/WindowInsets`. This value cannot be `null`. |
-| `runningAnimations` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [WindowInsetsAnimation](../android/view/WindowInsetsAnimation.md)!\>: The currently running `https://developer.android.com/reference/kotlin/android/view/WindowInsetsAnimation`s. This value cannot be `null`. |
+| `insets` | [WindowInsets](WindowInsets.md): The current `https://developer.android.com/reference/kotlin/android/view/WindowInsets`. This value cannot be `null`. |
+| `runningAnimations` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [WindowInsetsAnimation](WindowInsetsAnimation.md)!\>: The currently running `https://developer.android.com/reference/kotlin/android/view/WindowInsetsAnimation`s. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -6196,7 +6196,7 @@ Dispatches `https://developer.android.com/reference/kotlin/android/view/WindowIn
 
 | Parameters ||
 |---|---|
-| `animation` | [WindowInsetsAnimation](../android/view/WindowInsetsAnimation.md): current animation. This value cannot be `null`. |
+| `animation` | [WindowInsetsAnimation](WindowInsetsAnimation.md): current animation. This value cannot be `null`. |
 | `bounds` | [WindowInsetsAnimation.Bounds](../android/view/WindowInsetsAnimation.Bounds.md): the upper and lower `https://developer.android.com/reference/kotlin/android/view/WindowInsetsAnimation.Bounds` that provides range of `https://developer.android.com/reference/kotlin/android/view/WindowInsetsAnimation`. This value cannot be `null`. |
 
 | Return ||
@@ -6247,7 +6247,7 @@ If you override this method you *must* call through to the superclass implementa
 
 | Parameters ||
 |---|---|
-| `canvas` | [Canvas](../android/graphics/Canvas.md): The Canvas to which the View is rendered. This value cannot be `null`. |
+| `canvas` | [Canvas](../android.graphics/Canvas.md): The Canvas to which the View is rendered. This value cannot be `null`. |
 
 ### drawableHotspotChanged
 
@@ -6358,7 +6358,7 @@ Finds the Views that contain given text. The containment is case insensitive. Th
 
 | Parameters ||
 |---|---|
-| `outViews` | [ArrayList](../java/util/ArrayList.md)\< [View](../android/view/View.md)!\>!: The output list of matching Views. |
+| `outViews` | [ArrayList](../java.util/ArrayList.md)\< [View](View.md)!\>!: The output list of matching Views. |
 | `searched` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!: The text to match against. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/view/View#FIND_VIEWS_WITH_TEXT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View#FIND_VIEWS_WITH_CONTENT_DESCRIPTION:kotlin.Int` |
 | --- | --- |
@@ -6423,7 +6423,7 @@ This is used by the ViewRoot to perform an optimization when the view hierarchy 
 
 | Parameters ||
 |---|---|
-| `region` | [Region](../android/graphics/Region.md)?: The transparent region for this ViewAncestor (window). This value may be `null`. |
+| `region` | [Region](../android.graphics/Region.md)?: The transparent region for this ViewAncestor (window). This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -6447,10 +6447,10 @@ Called to generate a `https://developer.android.com/reference/kotlin/android/vie
 | Parameters ||
 |---|---|
 | `hashAlgorithm` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The hash algorithm to use when hashing the display. Must be one of the values returned from `https://developer.android.com/reference/kotlin/android/view/displayhash/DisplayHashManager#getSupportedHashAlgorithms()` This value cannot be `null`. |
-| `bounds` | [Rect](../android/graphics/Rect.md)?: The bounds for the content within the View to generate the hash for. If bounds are null, the entire View's bounds will be used. If empty, it will invoke the callback `https://developer.android.com/reference/kotlin/android/view/displayhash/DisplayHashResultCallback#onDisplayHashError(kotlin.Int)` with error `https://developer.android.com/reference/kotlin/android/view/displayhash/DisplayHashResultCallback#DISPLAY_HASH_ERROR_INVALID_BOUNDS:kotlin.Int` |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): The executor that the callback should be invoked on. This value cannot be `null`. |
+| `bounds` | [Rect](../android.graphics/Rect.md)?: The bounds for the content within the View to generate the hash for. If bounds are null, the entire View's bounds will be used. If empty, it will invoke the callback `https://developer.android.com/reference/kotlin/android/view/displayhash/DisplayHashResultCallback#onDisplayHashError(kotlin.Int)` with error `https://developer.android.com/reference/kotlin/android/view/displayhash/DisplayHashResultCallback#DISPLAY_HASH_ERROR_INVALID_BOUNDS:kotlin.Int` |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor that the callback should be invoked on. This value cannot be `null`. |
 | --- | --- |
-| `callback` | [DisplayHashResultCallback](../android/view/displayhash/DisplayHashResultCallback.md): The callback to handle the results of generating the display hash. This value cannot be `null`. |
+| `callback` | [DisplayHashResultCallback](../android.view.displayhash/DisplayHashResultCallback.md): The callback to handle the results of generating the display hash. This value cannot be `null`. |
 
 ### generateViewId
 
@@ -6917,7 +6917,7 @@ Populates an output rectangle with the clip bounds of the view, returning `true`
 
 | Parameters ||
 |---|---|
-| `outRect` | [Rect](../android/graphics/Rect.md)!: rectangle in which to place the clip bounds of the view |
+| `outRect` | [Rect](../android.graphics/Rect.md)!: rectangle in which to place the clip bounds of the view |
 
 | Return ||
 |---|---|
@@ -7178,7 +7178,7 @@ Return the visible drawing bounds of your view. Fills in the output rectangle wi
 
 | Parameters ||
 |---|---|
-| `outRect` | [Rect](../android/graphics/Rect.md)!: The (scrolled) drawing bounds of the view. |
+| `outRect` | [Rect](../android.graphics/Rect.md)!: The (scrolled) drawing bounds of the view. |
 
 ### getDrawingTime
 
@@ -7308,7 +7308,7 @@ When a view has focus and the user navigates away from it, the next view is sear
 
 | Parameters ||
 |---|---|
-| `r` | [Rect](../android/graphics/Rect.md)!: The rectangle to fill in, in this view's coordinates. |
+| `r` | [Rect](../android.graphics/Rect.md)!: The rectangle to fill in, in this view's coordinates. |
 
 ### getForeground
 
@@ -7428,7 +7428,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View#getGlobalV
 
 | Parameters ||
 |---|---|
-| `r` | [Rect](../android/graphics/Rect.md)!: If the method returns true, contains the coordinates of the visible portion of this view in the coordinate space of the view's root view. If the method returns false, the contents of `r` are undefined. |
+| `r` | [Rect](../android.graphics/Rect.md)!: If the method returns true, contains the coordinates of the visible portion of this view in the coordinate space of the view's root view. If the method returns false, the contents of `r` are undefined. |
 
 | Return ||
 |---|---|
@@ -7453,8 +7453,8 @@ To convert `r` to coordinates relative to the top left corner of this view (with
 
 | Parameters ||
 |---|---|
-| `r` | [Rect](../android/graphics/Rect.md)!: If the method returns true, contains the coordinates of the visible portion of this view in the coordinate space of the view's root view. If the method returns false, the contents of `r` are undefined. |
-| `globalOffset` | [Point](../android/graphics/Point.md)!: If the method returns true, contains the offset of the x and y coordinates of this view from the top left corner of the view's root view. If the method returns false, the contents of `globalOffset` are undefined. The argument can be null (see `https://developer.android.com/reference/kotlin/android/view/View#getGlobalVisibleRect(android.graphics.Rect)`. |
+| `r` | [Rect](../android.graphics/Rect.md)!: If the method returns true, contains the coordinates of the visible portion of this view in the coordinate space of the view's root view. If the method returns false, the contents of `r` are undefined. |
+| `globalOffset` | [Point](../android.graphics/Point.md)!: If the method returns true, contains the offset of the x and y coordinates of this view from the top left corner of the view's root view. If the method returns false, the contents of `globalOffset` are undefined. The argument can be null (see `https://developer.android.com/reference/kotlin/android/view/View#getGlobalVisibleRect(android.graphics.Rect)`. |
 
 | Return ||
 |---|---|
@@ -7600,7 +7600,7 @@ Hit rectangle in parent's coordinates
 
 | Parameters ||
 |---|---|
-| `outRect` | [Rect](../android/graphics/Rect.md)!: The hit rectangle of the view. |
+| `outRect` | [Rect](../android.graphics/Rect.md)!: The hit rectangle of the view. |
 
 ### getHorizontalFadingEdgeLength
 
@@ -7840,7 +7840,7 @@ If the view is clipped on the right or bottom, the right and bottom coordinates 
 
 | Parameters ||
 |---|---|
-| `r` | [Rect](../android/graphics/Rect.md)!: If the method returns true, contains the coordinates of the visible portion of this view relative to the top left corner of the view. If the method returns false, the contents of `r` are undefined. |
+| `r` | [Rect](../android.graphics/Rect.md)!: If the method returns true, contains the coordinates of the visible portion of this view relative to the top left corner of the view. If the method returns false, the contents of `r` are undefined. |
 
 | Return ||
 |---|---|
@@ -9319,7 +9319,7 @@ Retrieve the overall visible display size in which the window this view is attac
 
 | Parameters ||
 |---|---|
-| `outRect` | [Rect](../android/graphics/Rect.md)!: Filled in with the visible display frame. If the view is not attached to a window, this is simply the raw display size. |
+| `outRect` | [Rect](../android.graphics/Rect.md)!: Filled in with the visible display frame. If the view is not attached to a window, this is simply the raw display size. |
 
 ### getX
 
@@ -9538,9 +9538,9 @@ Inflate a view from an XML resource. This convenience method wraps the `https://
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md)!: The Context object for your activity or application. |
+| `context` | [Context](../android.content/Context.md)!: The Context object for your activity or application. |
 | `resource` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The resource ID to inflate |
-| `root` | [ViewGroup](../android/view/ViewGroup.md)!: A view group that will be the parent. Used to properly inflate the layout_\* parameters. |
+| `root` | [ViewGroup](ViewGroup.md)!: A view group that will be the parent. Used to properly inflate the layout_\* parameters. |
 | --- | --- |
 
 **See Also**
@@ -9578,7 +9578,7 @@ This must be called from a UI thread. To call from a non-UI thread, call `https:
 
 | Parameters ||
 |---|---|
-| `dirty` | [Rect](../android/graphics/Rect.md)!: the rectangle representing the bounds of the dirty region |
+| `dirty` | [Rect](../android.graphics/Rect.md)!: the rectangle representing the bounds of the dirty region |
 
 ### invalidate
 
@@ -9621,7 +9621,7 @@ Invalidates the specified Drawable.
 | Parameters ||
 |---|---|
 | `who` | The drawable that is requesting the update. This value cannot be `null`. |
-| `drawable` | [Drawable](../android/graphics/drawable/Drawable.md): the drawable to invalidate. This value cannot be `null`. |
+| `drawable` | [Drawable](../android.graphics.drawable/Drawable.md): the drawable to invalidate. This value cannot be `null`. |
 
 ### invalidateOutline
 
@@ -10645,7 +10645,7 @@ Find the nearest keyboard navigation cluster in the specified direction. This do
 
 | Parameters ||
 |---|---|
-| `currentCluster` | [View](../android/view/View.md)!: The starting point of the search. Null means the current cluster is not found yet |
+| `currentCluster` | [View](View.md)!: The starting point of the search. Null means the current cluster is not found yet |
 | `direction` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Direction to look. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/view/View#FOCUS_BACKWARD:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View#FOCUS_FORWARD:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View#FOCUS_LEFT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View#FOCUS_UP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View#FOCUS_RIGHT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View#FOCUS_DOWN:kotlin.Int` |
 
 | Return ||
@@ -10751,7 +10751,7 @@ By default if a view's `https://developer.android.com/reference/kotlin/android/v
 
 | Parameters ||
 |---|---|
-| `insets` | [WindowInsets](../android/view/WindowInsets.md)!: Insets to apply |
+| `insets` | [WindowInsets](WindowInsets.md)!: Insets to apply |
 
 | Return ||
 |---|---|
@@ -10781,7 +10781,7 @@ Implement this method to handle captured pointer events
 
 | Parameters ||
 |---|---|
-| `event` | [MotionEvent](../android/view/MotionEvent.md)!: The captured pointer event. |
+| `event` | [MotionEvent](MotionEvent.md)!: The captured pointer event. |
 
 | Return ||
 |---|---|
@@ -10823,7 +10823,7 @@ Also, take good care to fill in the `https://developer.android.com/reference/kot
 
 | Parameters ||
 |---|---|
-| `outAttrs` | [EditorInfo](../android/view/inputmethod/EditorInfo.md)!: Fill in with attribute information about the connection. |
+| `outAttrs` | [EditorInfo](../android.view.inputmethod/EditorInfo.md)!: Fill in with attribute information about the connection. |
 
 ### onCreateViewTranslationRequest
 
@@ -10843,7 +10843,7 @@ The default implementation does nothing.
 | Parameters ||
 |---|---|
 | `supportedFormats` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html): the supported translation formats. For now, the only possible value is the `https://developer.android.com/reference/kotlin/android/view/translation/TranslationSpec#DATA_FORMAT_TEXT:kotlin.Int`. This value cannot be `null`. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/view/translation/TranslationSpec#DATA_FORMAT_TEXT:kotlin.Int` |
-| `requestsCollector` | [Consumer](../java/util/function/Consumer.md)\< [ViewTranslationRequest](../android/view/translation/ViewTranslationRequest.md)!\>: a `https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationRequest` collector that can be used to collect the information to be translated in the view. The `requestsCollector` only accepts one request; an IllegalStateException is thrown if more than one `https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationRequest` is submitted to it. The `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId` must be set on the `https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationRequest`. This value cannot be `null`. |
+| `requestsCollector` | [Consumer](../java.util.function/Consumer.md)\< [ViewTranslationRequest](../android.view.translation/ViewTranslationRequest.md)!\>: a `https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationRequest` collector that can be used to collect the information to be translated in the view. The `requestsCollector` only accepts one request; an IllegalStateException is thrown if more than one `https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationRequest` is submitted to it. The `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId` must be set on the `https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationRequest`. This value cannot be `null`. |
 
 ### onCreateVirtualViewTranslationRequests
 
@@ -10865,7 +10865,7 @@ The default implementation does nothing.
 |---|---|
 | `virtualIds` | [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html): the virtual view ids which represents the virtual views in the host view. This value cannot be `null`. |
 | `supportedFormats` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html): the supported translation formats. For now, the only possible value is the `https://developer.android.com/reference/kotlin/android/view/translation/TranslationSpec#DATA_FORMAT_TEXT:kotlin.Int`. This value cannot be `null`. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/view/translation/TranslationSpec#DATA_FORMAT_TEXT:kotlin.Int` |
-| `requestsCollector` | [Consumer](../java/util/function/Consumer.md)\< [ViewTranslationRequest](../android/view/translation/ViewTranslationRequest.md)!\>: a `https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationRequest` collector that can be called multiple times to collect the information to be translated in the host view. One `https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationRequest` per virtual child. The `https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationRequest` must contains the `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId` corresponding to the virtualChildIds. Do not keep this Consumer after the method returns. This value cannot be `null`. |
+| `requestsCollector` | [Consumer](../java.util.function/Consumer.md)\< [ViewTranslationRequest](../android.view.translation/ViewTranslationRequest.md)!\>: a `https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationRequest` collector that can be called multiple times to collect the information to be translated in the host view. One `https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationRequest` per virtual child. The `https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationRequest` must contains the `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillId` corresponding to the virtualChildIds. Do not keep this Consumer after the method returns. This value cannot be `null`. |
 | --- | --- |
 
 ### onDragEvent
@@ -10888,7 +10888,7 @@ The default implementation returns `false` unless an `https://developer.android.
 
 | Parameters ||
 |---|---|
-| `event` | [DragEvent](../android/view/DragEvent.md)!: The `https://developer.android.com/reference/kotlin/android/view/DragEvent` object sent by the system. The `https://developer.android.com/reference/kotlin/android/view/DragEvent#getAction()` method returns an action type constant that indicates the type of drag event represented by this object. |
+| `event` | [DragEvent](DragEvent.md)!: The `https://developer.android.com/reference/kotlin/android/view/DragEvent` object sent by the system. The `https://developer.android.com/reference/kotlin/android/view/DragEvent#getAction()` method returns an action type constant that indicates the type of drag event represented by this object. |
 
 | Return ||
 |---|---|
@@ -10908,7 +10908,7 @@ Foreground content may consist of scroll bars, a `https://developer.android.com/
 
 | Parameters ||
 |---|---|
-| `canvas` | [Canvas](../android/graphics/Canvas.md): canvas to draw into. This value cannot be `null`. |
+| `canvas` | [Canvas](../android.graphics/Canvas.md): canvas to draw into. This value cannot be `null`. |
 
 ### onFilterTouchEventForSecurity
 
@@ -10922,7 +10922,7 @@ Filter the touch event to apply security policies.
 
 | Parameters ||
 |---|---|
-| `event` | [MotionEvent](../android/view/MotionEvent.md)!: The motion event to be filtered. |
+| `event` | [MotionEvent](MotionEvent.md)!: The motion event to be filtered. |
 
 | Return ||
 |---|---|
@@ -10980,7 +10980,7 @@ public boolean onGenericMotionEvent(MotionEvent event) {
 
 | Parameters ||
 |---|---|
-| `event` | [MotionEvent](../android/view/MotionEvent.md)!: The generic motion event being processed. |
+| `event` | [MotionEvent](MotionEvent.md)!: The generic motion event being processed. |
 
 | Return ||
 |---|---|
@@ -11029,7 +11029,7 @@ The default implementation calls `https://developer.android.com/reference/kotlin
 
 | Parameters ||
 |---|---|
-| `event` | [MotionEvent](../android/view/MotionEvent.md)!: The motion event that describes the hover. |
+| `event` | [MotionEvent](MotionEvent.md)!: The motion event that describes the hover. |
 
 | Return ||
 |---|---|
@@ -11068,7 +11068,7 @@ If you override this method you *must* call through to the superclass implementa
 
 | Parameters ||
 |---|---|
-| `event` | [AccessibilityEvent](../android/view/accessibility/AccessibilityEvent.md)!: The event to initialize. |
+| `event` | [AccessibilityEvent](../android.view.accessibility/AccessibilityEvent.md)!: The event to initialize. |
 
 **See Also**
 
@@ -11109,7 +11109,7 @@ If you override this method you *must* call through to the superclass implementa
 
 | Parameters ||
 |---|---|
-| `info` | [AccessibilityNodeInfo](../android/view/accessibility/AccessibilityNodeInfo.md)!: The instance to initialize. |
+| `info` | [AccessibilityNodeInfo](../android.view.accessibility/AccessibilityNodeInfo.md)!: The instance to initialize. |
 
 ### onKeyDown
 
@@ -11129,7 +11129,7 @@ Key presses in software keyboards will generally NOT trigger this listener, alth
 | Parameters ||
 |---|---|
 | `keyCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): a key code that represents the button pressed, from `https://developer.android.com/reference/kotlin/android/view/KeyEvent` |
-| `event` | [KeyEvent](../android/view/KeyEvent.md)!: the KeyEvent object that defines the button action |
+| `event` | [KeyEvent](KeyEvent.md)!: the KeyEvent object that defines the button action |
 
 | Return ||
 |---|---|
@@ -11153,7 +11153,7 @@ Key presses in software keyboards will generally NOT trigger this listener, alth
 | Parameters ||
 |---|---|
 | `keyCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The value in event.getKeyCode(). |
-| `event` | [KeyEvent](../android/view/KeyEvent.md)!: Description of the key event. |
+| `event` | [KeyEvent](KeyEvent.md)!: Description of the key event. |
 
 | Return ||
 |---|---|
@@ -11179,7 +11179,7 @@ Key presses in software keyboards will generally NOT trigger this listener, alth
 |---|---|
 | `keyCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): A key code that represents the button pressed, from `https://developer.android.com/reference/kotlin/android/view/KeyEvent`. |
 | `count` | Number of pairs as returned by event.getRepeatCount(). |
-| `event` | [KeyEvent](../android/view/KeyEvent.md)!: The KeyEvent object that defines the button action. |
+| `event` | [KeyEvent](KeyEvent.md)!: The KeyEvent object that defines the button action. |
 | --- | --- |
 | `repeatCount` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of times the action was made. |
 
@@ -11203,7 +11203,7 @@ Handle a key event before it is processed by any input method associated with th
 | Parameters ||
 |---|---|
 | `keyCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The value in event.getKeyCode(). |
-| `event` | [KeyEvent](../android/view/KeyEvent.md)!: Description of the key event. |
+| `event` | [KeyEvent](KeyEvent.md)!: Description of the key event. |
 
 | Return ||
 |---|---|
@@ -11225,7 +11225,7 @@ Called on the focused view when a key shortcut event is not handled. Override th
 | Parameters ||
 |---|---|
 | `keyCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The value in event.getKeyCode(). |
-| `event` | [KeyEvent](../android/view/KeyEvent.md)!: Description of the key event. |
+| `event` | [KeyEvent](KeyEvent.md)!: Description of the key event. |
 
 | Return ||
 |---|---|
@@ -11249,7 +11249,7 @@ Key presses in software keyboards will generally NOT trigger this listener, alth
 | Parameters ||
 |---|---|
 | `keyCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): A key code that represents the button pressed, from `https://developer.android.com/reference/kotlin/android/view/KeyEvent`. |
-| `event` | [KeyEvent](../android/view/KeyEvent.md)!: The KeyEvent object that defines the button action. |
+| `event` | [KeyEvent](KeyEvent.md)!: The KeyEvent object that defines the button action. |
 
 | Return ||
 |---|---|
@@ -11302,7 +11302,7 @@ If you override this method you *must* call through to the superclass implementa
 
 | Parameters ||
 |---|---|
-| `event` | [AccessibilityEvent](../android/view/accessibility/AccessibilityEvent.md)!: The accessibility event which to populate. |
+| `event` | [AccessibilityEvent](../android.view.accessibility/AccessibilityEvent.md)!: The accessibility event which to populate. |
 
 **See Also**
 
@@ -11357,7 +11357,7 @@ This method is responsible for the former; `https://developer.android.com/refere
 
 | Parameters ||
 |---|---|
-| `structure` | [ViewStructure](../android/view/ViewStructure.md)!: fill in with structured view data for autofill purposes. |
+| `structure` | [ViewStructure](ViewStructure.md)!: fill in with structured view data for autofill purposes. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): optional flags. Value is either `0` or - `https://developer.android.com/reference/kotlin/android/view/View#AUTOFILL_FLAG_INCLUDE_NOT_IMPORTANT_VIEWS:kotlin.Int` |
 
 **See Also**
@@ -11404,7 +11404,7 @@ This method is responsible for the former; `https://developer.android.com/refere
 
 | Parameters ||
 |---|---|
-| `structure` | [ViewStructure](../android/view/ViewStructure.md)!: fill in with virtual children data for autofill purposes. |
+| `structure` | [ViewStructure](ViewStructure.md)!: fill in with virtual children data for autofill purposes. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): optional flags. |
 
 **See Also**
@@ -11434,7 +11434,7 @@ The default implementation of this method computes and sets the most relevant pr
 
 | Parameters ||
 |---|---|
-| `properties` | [ContentCaptureNodeProperties](../android/view/contentcapture/ContentCaptureNodeProperties.md): This value cannot be `null`. |
+| `properties` | [ContentCaptureNodeProperties](../android.view.contentcapture/ContentCaptureNodeProperties.md): This value cannot be `null`. |
 
 **See Also**
 
@@ -11483,7 +11483,7 @@ When the virtual view hierarchy represents a web page, you should also:
 
 | Parameters ||
 |---|---|
-| `structure` | [ViewStructure](../android/view/ViewStructure.md): This value cannot be `null`. |
+| `structure` | [ViewStructure](ViewStructure.md): This value cannot be `null`. |
 
 ### onProvideStructure
 
@@ -11497,7 +11497,7 @@ Called when assist structure is being retrieved from a view as part of `https://
 
 | Parameters ||
 |---|---|
-| `structure` | [ViewStructure](../android/view/ViewStructure.md)!: Fill in with structured view data. The default implementation fills in all data that can be inferred from the view itself. |
+| `structure` | [ViewStructure](ViewStructure.md)!: Fill in with structured view data. The default implementation fills in all data that can be inferred from the view itself. |
 
 ### onProvideVirtualStructure
 
@@ -11525,7 +11525,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View#setOnRecei
 
 | Parameters ||
 |---|---|
-| `payload` | [ContentInfo](../android/view/ContentInfo.md): The content to insert and related metadata. This value cannot be `null`. |
+| `payload` | [ContentInfo](ContentInfo.md): The content to insert and related metadata. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -11568,7 +11568,7 @@ Resolve the pointer icon that should be used for specified pointer in the motion
 
 | Parameters ||
 |---|---|
-| `event` | [MotionEvent](../android/view/MotionEvent.md)!: The `https://developer.android.com/reference/kotlin/android/view/MotionEvent` that requires a pointer icon to be resolved for one of pointers. |
+| `event` | [MotionEvent](MotionEvent.md)!: The `https://developer.android.com/reference/kotlin/android/view/MotionEvent` that requires a pointer icon to be resolved for one of pointers. |
 | `pointerIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The index of the pointer in `event` for which to retrieve the `https://developer.android.com/reference/kotlin/android/view/PointerIcon`. This will be between 0 and `https://developer.android.com/reference/kotlin/android/view/MotionEvent#getPointerCount()`. |
 
 | Return ||
@@ -11629,9 +11629,9 @@ Called when scroll capture is requested, to search for appropriate content to sc
 
 | Parameters ||
 |---|---|
-| `localVisibleRect` | [Rect](../android/graphics/Rect.md): the local visible rect of this view. This value cannot be `null`. |
-| `windowOffset` | [Point](../android/graphics/Point.md): the offset of localVisibleRect within the window. This value cannot be `null`. |
-| `targets` | [Consumer](../java/util/function/Consumer.md)\< [ScrollCaptureTarget](../android/view/ScrollCaptureTarget.md)!\>: accepts potential scroll capture targets; `https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#accept(java.util.function.Consumer.T)` may be called zero or more times on the calling thread before onScrollCaptureSearch returns. This value cannot be `null`. |
+| `localVisibleRect` | [Rect](../android.graphics/Rect.md): the local visible rect of this view. This value cannot be `null`. |
+| `windowOffset` | [Point](../android.graphics/Point.md): the offset of localVisibleRect within the window. This value cannot be `null`. |
+| `targets` | [Consumer](../java.util.function/Consumer.md)\< [ScrollCaptureTarget](ScrollCaptureTarget.md)!\>: accepts potential scroll capture targets; `https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#accept(java.util.function.Consumer.T)` may be called zero or more times on the calling thread before onScrollCaptureSearch returns. This value cannot be `null`. |
 | --- | --- |
 
 | Exceptions ||
@@ -11668,7 +11668,7 @@ If this method is used to detect click actions, it is recommended that the actio
 
 | Parameters ||
 |---|---|
-| `event` | [MotionEvent](../android/view/MotionEvent.md)!: The motion event. |
+| `event` | [MotionEvent](MotionEvent.md)!: The motion event. |
 
 | Return ||
 |---|---|
@@ -11688,7 +11688,7 @@ The *relative* movement of the trackball since the last event can be retrieve wi
 
 | Parameters ||
 |---|---|
-| `event` | [MotionEvent](../android/view/MotionEvent.md)!: The motion event. |
+| `event` | [MotionEvent](MotionEvent.md)!: The motion event. |
 
 | Return ||
 |---|---|
@@ -11708,7 +11708,7 @@ The default implementation will set the ViewTranslationResponse that can be get 
 
 | Parameters ||
 |---|---|
-| `response` | [ViewTranslationResponse](../android/view/translation/ViewTranslationResponse.md): a `https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationResponse` that contains the translated information which can be shown in the view. This value cannot be `null`. |
+| `response` | [ViewTranslationResponse](../android.view.translation/ViewTranslationResponse.md): a `https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationResponse` that contains the translated information which can be shown in the view. This value cannot be `null`. |
 
 ### onVirtualViewTranslationResponses
 
@@ -11724,7 +11724,7 @@ The default implementation does nothing.
 
 | Parameters ||
 |---|---|
-| `response` | [LongSparseArray](../android/util/LongSparseArray.md)\< [ViewTranslationResponse](../android/view/translation/ViewTranslationResponse.md)!\>: a `https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationResponse` SparseArray for the request that send by `https://developer.android.com/reference/kotlin/android/view/View#onCreateVirtualViewTranslationRequests(kotlin.LongArray,%20kotlin.IntArray,%20java.util.function.Consumer)` that contains the translated information which can be shown in the view. The key of SparseArray is the virtual child ids. This value cannot be `null`. |
+| `response` | [LongSparseArray](../android.util/LongSparseArray.md)\< [ViewTranslationResponse](../android.view.translation/ViewTranslationResponse.md)!\>: a `https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationResponse` SparseArray for the request that send by `https://developer.android.com/reference/kotlin/android/view/View#onCreateVirtualViewTranslationRequests(kotlin.LongArray,%20kotlin.IntArray,%20java.util.function.Consumer)` that contains the translated information which can be shown in the view. The key of SparseArray is the virtual child ids. This value cannot be `null`. |
 
 ### onVisibilityAggregated
 
@@ -11790,7 +11790,7 @@ The default implementation will delegate `https://developer.android.com/referenc
 | Parameters ||
 |---|---|
 | `action` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The action to perform. |
-| `arguments` | [Bundle](../android/os/Bundle.md)?: Optional action arguments. This value may be `null`. |
+| `arguments` | [Bundle](../android.os/Bundle.md)?: Optional action arguments. This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -11866,7 +11866,7 @@ Note that, if you will be calling this API repeatedly and your `https://develope
 
 | Parameters ||
 |---|---|
-| `request` | [HapticFeedbackRequest](../android/os/vibrator/HapticFeedbackRequest.md): the `https://developer.android.com/reference/kotlin/android/os/vibrator/HapticFeedbackRequest.html#` encapsulating the request for haptic. This value cannot be `null`. |
+| `request` | [HapticFeedbackRequest](../android.os.vibrator/HapticFeedbackRequest.md): the `https://developer.android.com/reference/kotlin/android/os/vibrator/HapticFeedbackRequest.html#` encapsulating the request for haptic. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -11965,7 +11965,7 @@ Receives the given content. If no listener is set, invokes `https://developer.an
 
 | Parameters ||
 |---|---|
-| `payload` | [ContentInfo](../android/view/ContentInfo.md): The content to insert and related metadata. This value cannot be `null`. |
+| `payload` | [ContentInfo](ContentInfo.md): The content to insert and related metadata. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -12001,7 +12001,7 @@ Causes the Runnable to be added to the message queue. The runnable will be run o
 
 | Parameters ||
 |---|---|
-| `action` | [Runnable](../java/lang/Runnable.md)!: The Runnable that will be executed. |
+| `action` | [Runnable](../java.lang/Runnable.md)!: The Runnable that will be executed. |
 
 | Return ||
 |---|---|
@@ -12027,7 +12027,7 @@ Causes the Runnable to be added to the message queue, to be run after the specif
 
 | Parameters ||
 |---|---|
-| `action` | [Runnable](../java/lang/Runnable.md)!: The Runnable that will be executed. |
+| `action` | [Runnable](../java.lang/Runnable.md)!: The Runnable that will be executed. |
 | `delayMillis` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The delay (in milliseconds) until the Runnable will be executed. |
 
 | Return ||
@@ -12197,7 +12197,7 @@ Causes the Runnable to execute on the next animation time step. The runnable wil
 
 | Parameters ||
 |---|---|
-| `action` | [Runnable](../java/lang/Runnable.md)!: The Runnable that will be executed. |
+| `action` | [Runnable](../java.lang/Runnable.md)!: The Runnable that will be executed. |
 
 **See Also**
 
@@ -12219,7 +12219,7 @@ Causes the Runnable to execute on the next animation time step, after the specif
 
 | Parameters ||
 |---|---|
-| `action` | [Runnable](../java/lang/Runnable.md)!: The Runnable that will be executed. |
+| `action` | [Runnable](../java.lang/Runnable.md)!: The Runnable that will be executed. |
 | `delayMillis` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The delay (in milliseconds) until the Runnable will be executed. |
 
 **See Also**
@@ -12292,7 +12292,7 @@ Removes the specified Runnable from the message queue.
 
 | Parameters ||
 |---|---|
-| `action` | [Runnable](../java/lang/Runnable.md)!: The Runnable to remove from the message handling queue |
+| `action` | [Runnable](../java.lang/Runnable.md)!: The Runnable to remove from the message handling queue |
 
 | Return ||
 |---|---|
@@ -12367,7 +12367,7 @@ Called from apps when they want to report jank stats to the system.
 
 | Parameters ||
 |---|---|
-| `appJankStats` | [AppJankStats](../android/app/jank/AppJankStats.md): the stats that will be merged with the stats collected by the system. This value cannot be `null`. |
+| `appJankStats` | [AppJankStats](../android.app.jank/AppJankStats.md): the stats that will be merged with the stats collected by the system. This value cannot be `null`. |
 
 ### requestApplyInsets
 
@@ -12440,7 +12440,7 @@ Call this to try to give focus to a specific view or to one of its descendants a
 | Parameters ||
 |---|---|
 | `direction` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): One of FOCUS_UP, FOCUS_DOWN, FOCUS_LEFT, and FOCUS_RIGHT |
-| `previouslyFocusedRect` | [Rect](../android/graphics/Rect.md)!: The rectangle (in this View's coordinate system) to give a finer grained hint about where focus is coming from. May be null if there is no hint. |
+| `previouslyFocusedRect` | [Rect](../android.graphics/Rect.md)!: The rectangle (in this View's coordinate system) to give a finer grained hint about where focus is coming from. May be null if there is no hint. |
 
 | Return ||
 |---|---|
@@ -12549,7 +12549,7 @@ The Rectangle passed into this method should be in the View's content coordinate
 
 | Parameters ||
 |---|---|
-| `rectangle` | [Rect](../android/graphics/Rect.md)!: The rectangle in the View's content coordinate space |
+| `rectangle` | [Rect](../android.graphics/Rect.md)!: The rectangle in the View's content coordinate space |
 
 | Return ||
 |---|---|
@@ -12581,7 +12581,7 @@ When `immediate` is set to true, scrolling will not be animated.
 
 | Parameters ||
 |---|---|
-| `rectangle` | [Rect](../android/graphics/Rect.md)!: The rectangle in the View's content coordinate space |
+| `rectangle` | [Rect](../android.graphics/Rect.md)!: The rectangle in the View's content coordinate space |
 | `immediate` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): True to forbid animated scrolling, false otherwise |
 
 | Return ||
@@ -12620,7 +12620,7 @@ The `source` parameter is used to differentiate behaviors of certain system feat
 
 | Parameters ||
 |---|---|
-| `rectangle` | [Rect](../android/graphics/Rect.md): The rectangle in the View's content coordinate space. This value cannot be `null`. |
+| `rectangle` | [Rect](../android.graphics/Rect.md): The rectangle in the View's content coordinate space. This value cannot be `null`. |
 | `immediate` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): True to forbid animated scrolling, false otherwise |
 | `source` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of user interaction that requested this rectangle. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/view/View#RECTANGLE_ON_SCREEN_REQUEST_SOURCE_UNDEFINED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View#RECTANGLE_ON_SCREEN_REQUEST_SOURCE_SCROLL_ONLY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View#RECTANGLE_ON_SCREEN_REQUEST_SOURCE_TEXT_CURSOR:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View#RECTANGLE_ON_SCREEN_REQUEST_SOURCE_INPUT_FOCUS:kotlin.Int` |
 | --- | --- |
@@ -12762,7 +12762,7 @@ Restore this view hierarchy's frozen state from the given container.
 
 | Parameters ||
 |---|---|
-| `container` | [SparseArray](../android/util/SparseArray.md)\< [Parcelable](../android/os/Parcelable.md)!\>!: The SparseArray which holds previously frozen states. |
+| `container` | [SparseArray](../android.util/SparseArray.md)\< [Parcelable](../android.os/Parcelable.md)!\>!: The SparseArray which holds previously frozen states. |
 
 **See Also**
 
@@ -12789,11 +12789,11 @@ Stores debugging information about attributes. This should be called in a constr
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md): Context under which this view is created. This value cannot be `null`. |
+| `context` | [Context](../android.content/Context.md): Context under which this view is created. This value cannot be `null`. |
 | `styleable` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html): A reference to styleable array R.styleable.Foo. This value cannot be `null`. |
-| `attrs` | [AttributeSet](../android/util/AttributeSet.md)?: AttributeSet used to construct this view. This value may be `null`. |
+| `attrs` | [AttributeSet](../android.util/AttributeSet.md)?: AttributeSet used to construct this view. This value may be `null`. |
 | --- | --- |
-| `t` | [TypedArray](../android/content/res/TypedArray.md): Resolved `https://developer.android.com/reference/kotlin/android/content/res/TypedArray.html#` returned by a call to `https://developer.android.com/reference/kotlin/android/content/res/Resources.html#obtainAttributes(android.util.AttributeSet,%20kotlin.IntArray)`. This value cannot be `null`. |
+| `t` | [TypedArray](../android.content.res/TypedArray.md): Resolved `https://developer.android.com/reference/kotlin/android/content/res/TypedArray.html#` returned by a call to `https://developer.android.com/reference/kotlin/android/content/res/Resources.html#obtainAttributes(android.util.AttributeSet,%20kotlin.IntArray)`. This value cannot be `null`. |
 | `defStyleAttr` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Default style attribute passed into the view constructor. |
 | `defStyleRes` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Default style resource passed into the view constructor. |
 | --- | --- |
@@ -12810,7 +12810,7 @@ Store this view hierarchy's frozen state into the given container.
 
 | Parameters ||
 |---|---|
-| `container` | [SparseArray](../android/util/SparseArray.md)\< [Parcelable](../android/os/Parcelable.md)!\>!: The SparseArray in which to save the view's state. |
+| `container` | [SparseArray](../android.util/SparseArray.md)\< [Parcelable](../android.os/Parcelable.md)!\>!: The SparseArray in which to save the view's state. |
 
 **See Also**
 
@@ -12834,8 +12834,8 @@ Schedules an action on a drawable to occur at a specified time.
 
 | Parameters ||
 |---|---|
-| `who` | [Drawable](../android/graphics/drawable/Drawable.md): the recipient of the action. This value cannot be `null`. |
-| `what` | [Runnable](../java/lang/Runnable.md): the action to run on the drawable. This value cannot be `null`. |
+| `who` | [Drawable](../android.graphics.drawable/Drawable.md): the recipient of the action. This value cannot be `null`. |
+| `what` | [Runnable](../java.lang/Runnable.md): the action to run on the drawable. This value cannot be `null`. |
 | `when` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the time at which the action must occur. Uses the `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#uptimeMillis()` timebase. |
 | --- | --- |
 
@@ -12914,7 +12914,7 @@ If an `https://developer.android.com/reference/kotlin/android/view/View.Accessib
 
 | Parameters ||
 |---|---|
-| `event` | [AccessibilityEvent](../android/view/accessibility/AccessibilityEvent.md)!: The event to send. |
+| `event` | [AccessibilityEvent](../android.view.accessibility/AccessibilityEvent.md)!: The event to send. |
 
 **See Also**
 
@@ -13199,7 +13199,7 @@ Sets the next animation to play for this view. If you want the animation to play
 
 | Parameters ||
 |---|---|
-| `animation` | [Animation](../android/view/animation/Animation.md)!: The next animation, or null. |
+| `animation` | [Animation](../android.view.animation/Animation.md)!: The next animation, or null. |
 
 ### setAnimationMatrix
 
@@ -13213,7 +13213,7 @@ Changes the transformation matrix on the view. This is used in animation framewo
 
 | Parameters ||
 |---|---|
-| `matrix` | [Matrix](../android/graphics/Matrix.md)?: The matrix, null indicates that the matrix should be cleared. |
+| `matrix` | [Matrix](../android.graphics/Matrix.md)?: The matrix, null indicates that the matrix should be cleared. |
 
 **See Also**
 
@@ -13296,7 +13296,7 @@ NOTE: If this view is a descendant of an `https://developer.android.com/referenc
 
 | Parameters ||
 |---|---|
-| `id` | [AutofillId](../android/view/autofill/AutofillId.md)?: an autofill ID that is unique in the `https://developer.android.com/reference/kotlin/android/app/Activity.html#` hosting the view, or `null` to reset it. Usually it's an id previously allocated to another view (and obtained through `https://developer.android.com/reference/kotlin/android/view/View#getAutofillId()`), or a new value obtained through `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillManager#getNextAutofillId()`. |
+| `id` | [AutofillId](../android.view.autofill/AutofillId.md)?: an autofill ID that is unique in the `https://developer.android.com/reference/kotlin/android/app/Activity.html#` hosting the view, or `null` to reset it. Usually it's an id previously allocated to another view (and obtained through `https://developer.android.com/reference/kotlin/android/view/View#getAutofillId()`), or a new value obtained through `https://developer.android.com/reference/kotlin/android/view/autofill/AutofillManager#getNextAutofillId()`. |
 
 | Exceptions ||
 |---|---|
@@ -13315,7 +13315,7 @@ Configure the `https://developer.android.com/reference/kotlin/android/graphics/R
 
 | Parameters ||
 |---|---|
-| `renderEffect` | [RenderEffect](../android/graphics/RenderEffect.md)?: to be applied to the View. Passing null clears the previously configured `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect.html#` |
+| `renderEffect` | [RenderEffect](../android.graphics/RenderEffect.md)?: to be applied to the View. Passing null clears the previously configured `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect.html#` |
 
 ### setBackground
 
@@ -13329,7 +13329,7 @@ Set the background to a given Drawable, or remove the background. If the backgro
 
 | Parameters ||
 |---|---|
-| `background` | [Drawable](../android/graphics/drawable/Drawable.md)!: The Drawable to use as the background, or null to remove the background |
+| `background` | [Drawable](../android.graphics.drawable/Drawable.md)!: The Drawable to use as the background, or null to remove the background |
 
 ### setBackgroundColor
 
@@ -13382,7 +13382,7 @@ Specifies the blending mode used to apply the tint specified by `https://develop
 
 | Parameters ||
 |---|---|
-| `blendMode` | [BlendMode](../android/graphics/BlendMode.md)?: the blending mode used to apply the tint, may be `null` to clear tint |
+| `blendMode` | [BlendMode](../android.graphics/BlendMode.md)?: the blending mode used to apply the tint, may be `null` to clear tint |
 
 **See Also**
 
@@ -13403,7 +13403,7 @@ Subsequent calls to `https://developer.android.com/reference/kotlin/android/view
 
 | Parameters ||
 |---|---|
-| `tint` | [ColorStateList](../android/content/res/ColorStateList.md)?: the tint to apply, may be `null` to clear tint |
+| `tint` | [ColorStateList](../android.content.res/ColorStateList.md)?: the tint to apply, may be `null` to clear tint |
 
 **See Also**
 
@@ -13506,7 +13506,7 @@ Sets a rectangular area on this view to which the view will be clipped when it i
 
 | Parameters ||
 |---|---|
-| `clipBounds` | [Rect](../android/graphics/Rect.md)!: The rectangular area, in the local coordinates of this view, to which future drawing operations will be clipped. |
+| `clipBounds` | [Rect](../android.graphics/Rect.md)!: The rectangular area, in the local coordinates of this view, to which future drawing operations will be clipped. |
 
 ### setClipToOutline
 
@@ -13557,7 +13557,7 @@ ContentCaptureSession iframeSession = mainSession.createContentCaptureSession(
 
 | Parameters ||
 |---|---|
-| `contentCaptureSession` | [ContentCaptureSession](../android/view/contentcapture/ContentCaptureSession.md)?: a session created by `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#createContentCaptureSession(android.view.contentcapture.ContentCaptureContext)`. This value may be `null`. |
+| `contentCaptureSession` | [ContentCaptureSession](../android.view.contentcapture/ContentCaptureSession.md)?: a session created by `https://developer.android.com/reference/kotlin/android/view/contentcapture/ContentCaptureSession#createContentCaptureSession(android.view.contentcapture.ContentCaptureContext)`. This value may be `null`. |
 
 ### setContentDescription
 
@@ -13916,7 +13916,7 @@ Supply a Drawable that is to be rendered on top of all of the content in the vie
 
 | Parameters ||
 |---|---|
-| `foreground` | [Drawable](../android/graphics/drawable/Drawable.md)!: the Drawable to be drawn on top of the children |
+| `foreground` | [Drawable](../android.graphics.drawable/Drawable.md)!: the Drawable to be drawn on top of the children |
 
 ### setForegroundGravity
 
@@ -13948,7 +13948,7 @@ Specifies the blending mode used to apply the tint specified by `https://develop
 
 | Parameters ||
 |---|---|
-| `blendMode` | [BlendMode](../android/graphics/BlendMode.md)?: the blending mode used to apply the tint, may be `null` to clear tint |
+| `blendMode` | [BlendMode](../android.graphics/BlendMode.md)?: the blending mode used to apply the tint, may be `null` to clear tint |
 
 **See Also**
 
@@ -13969,7 +13969,7 @@ Subsequent calls to `https://developer.android.com/reference/kotlin/android/view
 
 | Parameters ||
 |---|---|
-| `tint` | [ColorStateList](../android/content/res/ColorStateList.md)?: the tint to apply, may be `null` to clear tint |
+| `tint` | [ColorStateList](../android.content.res/ColorStateList.md)?: the tint to apply, may be `null` to clear tint |
 
 **See Also**
 
@@ -14078,7 +14078,7 @@ If `null` is passed, this view will no longer act as a handwriting initiation de
 
 | Parameters ||
 |---|---|
-| `callback` | [Runnable](../java/lang/Runnable.md)?: a callback which should be called when a stylus `https://developer.android.com/reference/kotlin/android/view/MotionEvent` occurs within this view's bounds. This value may be `null`. |
+| `callback` | [Runnable](../java.lang/Runnable.md)?: a callback which should be called when a stylus `https://developer.android.com/reference/kotlin/android/view/MotionEvent` occurs within this view's bounds. This value may be `null`. |
 
 ### setHapticFeedbackEnabled
 
@@ -14165,7 +14165,7 @@ Defines the horizontal thumb drawable
 
 | Parameters ||
 |---|---|
-| `drawable` | [Drawable](../android/graphics/drawable/Drawable.md)?: This value may be `null`. |
+| `drawable` | [Drawable](../android.graphics.drawable/Drawable.md)?: This value may be `null`. |
 
 **See Also**
 
@@ -14185,7 +14185,7 @@ Defines the horizontal track drawable
 
 | Parameters ||
 |---|---|
-| `drawable` | [Drawable](../android/graphics/drawable/Drawable.md)?: This value may be `null`. |
+| `drawable` | [Drawable](../android.graphics.drawable/Drawable.md)?: This value may be `null`. |
 
 **See Also**
 
@@ -14398,7 +14398,7 @@ If this view has an alpha value set to \< 1.0 by calling `https://developer.andr
 
 | Parameters ||
 |---|---|
-| `paint` | [Paint](../android/graphics/Paint.md)?: The paint used to compose the layer. This argument is optional and can be null. It is ignored when the layer type is `https://developer.android.com/reference/kotlin/android/view/View#LAYER_TYPE_NONE:kotlin.Int` |
+| `paint` | [Paint](../android.graphics/Paint.md)?: The paint used to compose the layer. This argument is optional and can be null. It is ignored when the layer type is `https://developer.android.com/reference/kotlin/android/view/View#LAYER_TYPE_NONE:kotlin.Int` |
 
 **See Also**
 
@@ -14430,7 +14430,7 @@ Refer to the documentation of `https://developer.android.com/reference/kotlin/an
 | Parameters ||
 |---|---|
 | `layerType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of layer to use with this view, must be one of `https://developer.android.com/reference/kotlin/android/view/View#LAYER_TYPE_NONE:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/View#LAYER_TYPE_SOFTWARE:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/view/View#LAYER_TYPE_HARDWARE:kotlin.Int` Value is one of the following: - `https://developer.android.com/reference/kotlin/android/view/View#LAYER_TYPE_NONE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View#LAYER_TYPE_SOFTWARE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View#LAYER_TYPE_HARDWARE:kotlin.Int` |
-| `paint` | [Paint](../android/graphics/Paint.md)?: The paint used to compose the layer. This argument is optional and can be null. It is ignored when the layer type is `https://developer.android.com/reference/kotlin/android/view/View#LAYER_TYPE_NONE:kotlin.Int` |
+| `paint` | [Paint](../android.graphics/Paint.md)?: The paint used to compose the layer. This argument is optional and can be null. It is ignored when the layer type is `https://developer.android.com/reference/kotlin/android/view/View#LAYER_TYPE_NONE:kotlin.Int` |
 
 **See Also**
 
@@ -14868,7 +14868,7 @@ Note: MIME type matching in the Android framework is case-sensitive, unlike form
 | Parameters ||
 |---|---|
 | `mimeTypes` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?: The MIME types accepted by the given listener. These may use patterns such as "image/\*", but may not start with a wildcard. This argument must not be null or empty if a non-null listener is passed in. |
-| `listener` | [OnReceiveContentListener](../android/view/OnReceiveContentListener.md)?: The listener to use. This can be null to reset to the default behavior. |
+| `listener` | [OnReceiveContentListener](OnReceiveContentListener.md)?: The listener to use. This can be null to reset to the default behavior. |
 
 ### setOnScrollChangeListener
 
@@ -15058,8 +15058,8 @@ This API should be called at any point before the user focuses on the view, e.g.
 
 | Parameters ||
 |---|---|
-| `request` | [GetCredentialRequest](../android/credentials/GetCredentialRequest.md): the request to be fired when this view is entered. This value cannot be `null`. |
-| `callback` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [GetCredentialResponse](../android/credentials/GetCredentialResponse.md)!, [GetCredentialException](../android/credentials/GetCredentialException.md)!\>: to be invoked when either a response or an exception needs to be propagated for the given view. This value cannot be `null`. |
+| `request` | [GetCredentialRequest](../android.credentials/GetCredentialRequest.md): the request to be fired when this view is entered. This value cannot be `null`. |
+| `callback` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [GetCredentialResponse](../android.credentials/GetCredentialResponse.md)!, [GetCredentialException](../android.credentials/GetCredentialException.md)!\>: to be invoked when either a response or an exception needs to be propagated for the given view. This value cannot be `null`. |
 
 ### setPivotX
 
@@ -15115,7 +15115,7 @@ Set the pointer icon to be used for a mouse pointer in the current view. Passing
 
 | Parameters ||
 |---|---|
-| `pointerIcon` | [PointerIcon](../android/view/PointerIcon.md)!: A PointerIcon instance which will be shown when the mouse hovers. |
+| `pointerIcon` | [PointerIcon](PointerIcon.md)!: A PointerIcon instance which will be shown when the mouse hovers. |
 
 **See Also**
 
@@ -15161,7 +15161,7 @@ Note: This is independent from `https://developer.android.com/reference/kotlin/a
 
 | Parameters ||
 |---|---|
-| `rects` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Rect](../android/graphics/Rect.md)!\>: A list of rects in this view's local coordinate system. This value cannot be `null`. |
+| `rects` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Rect](../android.graphics/Rect.md)!\>: A list of rects in this view's local coordinate system. This value cannot be `null`. |
 
 **See Also**
 
@@ -15199,7 +15199,7 @@ Configure the `https://developer.android.com/reference/kotlin/android/graphics/R
 
 | Parameters ||
 |---|---|
-| `renderEffect` | [RenderEffect](../android/graphics/RenderEffect.md)?: to be applied to the View. Passing null clears the previously configured `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect.html#` |
+| `renderEffect` | [RenderEffect](../android.graphics/RenderEffect.md)?: to be applied to the View. Passing null clears the previously configured `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect.html#` |
 
 ### setRequestedFrameRate
 
@@ -15407,7 +15407,7 @@ open fun setScreenReaderFocusable(screenReaderFocusable: Boolean): Unit
 
 Sets whether this View should be a focusable element for screen readers and include non-focusable Views from its subtree when providing feedback.
 
-Note: this is similar to using [`android:focusable`, but does not impact input focus behavior.](../android/view/View.md)
+Note: this is similar to using [`android:focusable`, but does not impact input focus behavior.](View.md)
 
 | Parameters ||
 |---|---|
@@ -15492,7 +15492,7 @@ It is recommended to set the scroll capture hint `https://developer.android.com/
 
 | Parameters ||
 |---|---|
-| `callback` | [ScrollCaptureCallback](../android/view/ScrollCaptureCallback.md)?: the new callback to assign. This value may be `null`. |
+| `callback` | [ScrollCaptureCallback](ScrollCaptureCallback.md)?: the new callback to assign. This value may be `null`. |
 
 ### setScrollCaptureHint
 
@@ -15680,7 +15680,7 @@ Any previously attached StateListAnimator will be detached.
 
 | Parameters ||
 |---|---|
-| `stateListAnimator` | [StateListAnimator](../android/animation/StateListAnimator.md)!: The StateListAnimator to update the view |
+| `stateListAnimator` | [StateListAnimator](../android.animation/StateListAnimator.md)!: The StateListAnimator to update the view |
 
 **See Also**
 
@@ -15726,7 +15726,7 @@ Note: the system will put a limit of `200dp` on the vertical extent of the exclu
 
 | Parameters ||
 |---|---|
-| `rects` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Rect](../android/graphics/Rect.md)!\>: A list of precision gesture regions that this view needs to function correctly. This value cannot be `null`. |
+| `rects` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Rect](../android.graphics/Rect.md)!\>: A list of precision gesture regions that this view needs to function correctly. This value cannot be `null`. |
 
 ### setSystemUiVisibility
 
@@ -16020,7 +16020,7 @@ Defines the vertical scrollbar thumb drawable
 
 | Parameters ||
 |---|---|
-| `drawable` | [Drawable](../android/graphics/drawable/Drawable.md)?: This value may be `null`. |
+| `drawable` | [Drawable](../android.graphics.drawable/Drawable.md)?: This value may be `null`. |
 
 **See Also**
 
@@ -16040,7 +16040,7 @@ Defines the vertical scrollbar track drawable
 
 | Parameters ||
 |---|---|
-| `drawable` | [Drawable](../android/graphics/drawable/Drawable.md)?: This value may be `null`. |
+| `drawable` | [Drawable](../android.graphics.drawable/Drawable.md)?: This value may be `null`. |
 
 **See Also**
 
@@ -16060,7 +16060,7 @@ Sets a `https://developer.android.com/reference/kotlin/android/view/translation/
 
 | Parameters ||
 |---|---|
-| `callback` | [ViewTranslationCallback](../android/view/translation/ViewTranslationCallback.md): a `https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationCallback` that is used to control how to display the translated information. This value cannot be `null`. |
+| `callback` | [ViewTranslationCallback](../android.view.translation/ViewTranslationCallback.md): a `https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationCallback` that is used to control how to display the translated information. This value cannot be `null`. |
 
 ### setVisibility
 
@@ -16266,7 +16266,7 @@ Start the specified animation now.
 
 | Parameters ||
 |---|---|
-| `animation` | [Animation](../android/view/animation/Animation.md)!: the animation to start now |
+| `animation` | [Animation](../android.view.animation/Animation.md)!: the animation to start now |
 
 ### startDrag
 
@@ -16305,7 +16305,7 @@ Your application can invoke `https://developer.android.com/reference/kotlin/andr
 
 | Parameters ||
 |---|---|
-| `data` | [ClipData](../android/content/ClipData.md)!: A `https://developer.android.com/reference/kotlin/android/content/ClipData.html#` object pointing to the data to be transferred by the drag and drop operation. |
+| `data` | [ClipData](../android.content/ClipData.md)!: A `https://developer.android.com/reference/kotlin/android/content/ClipData.html#` object pointing to the data to be transferred by the drag and drop operation. |
 | `shadowBuilder` | [View.DragShadowBuilder](../android/view/View.DragShadowBuilder.md)!: A `https://developer.android.com/reference/kotlin/android/view/View.DragShadowBuilder` object for building the drag shadow. |
 | `myLocalState` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!: An `https://developer.android.com/reference/kotlin/java/lang/Object.html#` containing local data about the drag and drop operation. When dispatching drag events to views in the same activity this object will be available through `https://developer.android.com/reference/kotlin/android/view/DragEvent#getLocalState()`. Views in other activities will not have access to this data (`https://developer.android.com/reference/kotlin/android/view/DragEvent#getLocalState()` will return null). myLocalState is a lightweight mechanism for the sending information from the dragged View to the target Views. For example, it can contain flags that differentiate between a a copy operation and a move operation. |
 | --- | --- |
@@ -16390,7 +16390,7 @@ Modifies the input matrix such that it maps view-local coordinates to on-screen 
 
 | Parameters ||
 |---|---|
-| `matrix` | [Matrix](../android/graphics/Matrix.md): input matrix to modify. This value cannot be `null`. |
+| `matrix` | [Matrix](../android.graphics/Matrix.md): input matrix to modify. This value cannot be `null`. |
 
 ### transformMatrixToLocal
 
@@ -16404,7 +16404,7 @@ Modifies the input matrix such that it maps on-screen coordinates to view-local 
 
 | Parameters ||
 |---|---|
-| `matrix` | [Matrix](../android/graphics/Matrix.md): input matrix to modify. This value cannot be `null`. |
+| `matrix` | [Matrix](../android.graphics/Matrix.md): input matrix to modify. This value cannot be `null`. |
 
 ### unregisterCalledFromWrongThreadListener
 
@@ -16434,7 +16434,7 @@ Unschedule any events associated with the given Drawable. This can be used when 
 
 | Parameters ||
 |---|---|
-| `who` | [Drawable](../android/graphics/drawable/Drawable.md)!: The Drawable to unschedule. |
+| `who` | [Drawable](../android.graphics.drawable/Drawable.md)!: The Drawable to unschedule. |
 
 **See Also**
 
@@ -16455,8 +16455,8 @@ Cancels a scheduled action on a drawable.
 
 | Parameters ||
 |---|---|
-| `who` | [Drawable](../android/graphics/drawable/Drawable.md): the recipient of the action. This value cannot be `null`. |
-| `what` | [Runnable](../java/lang/Runnable.md): the action to cancel. This value cannot be `null`. |
+| `who` | [Drawable](../android.graphics.drawable/Drawable.md): the recipient of the action. This value cannot be `null`. |
+| `what` | [Runnable](../java.lang/Runnable.md): the action to cancel. This value cannot be `null`. |
 
 ### updateDragShadow
 
@@ -16749,7 +16749,7 @@ Called by draw to draw the child views. This may be overridden by derived classe
 
 | Parameters ||
 |---|---|
-| `canvas` | [Canvas](../android/graphics/Canvas.md): the canvas on which to draw the view. This value cannot be `null`. |
+| `canvas` | [Canvas](../android.graphics/Canvas.md): the canvas on which to draw the view. This value cannot be `null`. |
 
 ### dispatchGenericFocusedEvent
 
@@ -16765,7 +16765,7 @@ Do not call this method directly. Call `https://developer.android.com/reference/
 
 | Parameters ||
 |---|---|
-| `event` | [MotionEvent](../android/view/MotionEvent.md)!: The motion event to be dispatched. |
+| `event` | [MotionEvent](MotionEvent.md)!: The motion event to be dispatched. |
 
 | Return ||
 |---|---|
@@ -16785,7 +16785,7 @@ Do not call this method directly. Call `https://developer.android.com/reference/
 
 | Parameters ||
 |---|---|
-| `event` | [MotionEvent](../android/view/MotionEvent.md)!: The motion event to be dispatched. |
+| `event` | [MotionEvent](MotionEvent.md)!: The motion event to be dispatched. |
 
 | Return ||
 |---|---|
@@ -16805,7 +16805,7 @@ Do not call this method directly. Call `https://developer.android.com/reference/
 
 | Parameters ||
 |---|---|
-| `event` | [MotionEvent](../android/view/MotionEvent.md)!: The motion event to be dispatched. |
+| `event` | [MotionEvent](MotionEvent.md)!: The motion event to be dispatched. |
 
 | Return ||
 |---|---|
@@ -16823,7 +16823,7 @@ Called by `https://developer.android.com/reference/kotlin/android/view/View#rest
 
 | Parameters ||
 |---|---|
-| `container` | [SparseArray](../android/util/SparseArray.md)\< [Parcelable](../android/os/Parcelable.md)!\>!: The SparseArray which holds previously saved state. |
+| `container` | [SparseArray](../android.util/SparseArray.md)\< [Parcelable](../android.os/Parcelable.md)!\>!: The SparseArray which holds previously saved state. |
 
 **See Also**
 
@@ -16843,7 +16843,7 @@ Called by `https://developer.android.com/reference/kotlin/android/view/View#save
 
 | Parameters ||
 |---|---|
-| `container` | [SparseArray](../android/util/SparseArray.md)\< [Parcelable](../android/os/Parcelable.md)!\>!: The SparseArray in which to save the view's state. |
+| `container` | [SparseArray](../android.util/SparseArray.md)\< [Parcelable](../android.os/Parcelable.md)!\>!: The SparseArray in which to save the view's state. |
 
 **See Also**
 
@@ -16920,7 +16920,7 @@ Dispatch a view visibility change down the view hierarchy. ViewGroups should ove
 
 | Parameters ||
 |---|---|
-| `changedView` | [View](../android/view/View.md): The view whose visibility changed. Could be 'this' or an ancestor view. This value cannot be `null`. |
+| `changedView` | [View](View.md): The view whose visibility changed. Could be 'this' or an ancestor view. This value cannot be `null`. |
 | `visibility` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The new visibility of changedView: `https://developer.android.com/reference/kotlin/android/view/View#VISIBLE:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/View#INVISIBLE:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/view/View#GONE:kotlin.Int`. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/view/View#VISIBLE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View#INVISIBLE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View#GONE:kotlin.Int` |
 
 ### drawableStateChanged
@@ -16968,7 +16968,7 @@ Here is a sample layout that makes use of fitting system windows to have control
 
 | Parameters ||
 |---|---|
-| `insets` | [Rect](../android/graphics/Rect.md)!: Current content insets of the window. Prior to `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#JELLY_BEAN:kotlin.Int` you must not modify the insets or else you and Android will be unhappy. |
+| `insets` | [Rect](../android.graphics/Rect.md)!: Current content insets of the window. Prior to `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#JELLY_BEAN:kotlin.Int` you must not modify the insets or else you and Android will be unhappy. |
 
 | Return ||
 |---|---|
@@ -17283,7 +17283,7 @@ Called when the current configuration of the resources being used by the applica
 
 | Parameters ||
 |---|---|
-| `newConfig` | [Configuration](../android/content/res/Configuration.md)!: The new resource configuration. |
+| `newConfig` | [Configuration](../android.content.res/Configuration.md)!: The new resource configuration. |
 
 ### onCreateContextMenu
 
@@ -17297,7 +17297,7 @@ Views should implement this if the view itself is going to add items to the cont
 
 | Parameters ||
 |---|---|
-| `menu` | [ContextMenu](../android/view/ContextMenu.md)!: the context menu to populate |
+| `menu` | [ContextMenu](ContextMenu.md)!: the context menu to populate |
 
 ### onCreateDrawableState
 
@@ -17361,7 +17361,7 @@ Implement this to do your drawing.
 
 | Parameters ||
 |---|---|
-| `canvas` | [Canvas](../android/graphics/Canvas.md): the canvas on which the background will be drawn. This value cannot be `null`. |
+| `canvas` | [Canvas](../android.graphics/Canvas.md): the canvas on which the background will be drawn. This value cannot be `null`. |
 
 ### onDrawScrollBars
 
@@ -17375,7 +17375,7 @@ Request the drawing of the horizontal and the vertical scrollbar. The scrollbars
 
 | Parameters ||
 |---|---|
-| `canvas` | [Canvas](../android/graphics/Canvas.md): the canvas on which to draw the scrollbars. This value cannot be `null`. |
+| `canvas` | [Canvas](../android.graphics/Canvas.md): the canvas on which to draw the scrollbars. This value cannot be `null`. |
 
 **See Also**
 
@@ -17413,7 +17413,7 @@ If you override this method you *must* call through to the superclass implementa
 |---|---|
 | `gainFocus` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): True if the View has focus; false otherwise. |
 | `direction` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The direction focus has moved when requestFocus() is called to give this view focus. Values are `https://developer.android.com/reference/kotlin/android/view/View#FOCUS_UP:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/View#FOCUS_DOWN:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/View#FOCUS_LEFT:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/View#FOCUS_RIGHT:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/View#FOCUS_FORWARD:kotlin.Int`, or `https://developer.android.com/reference/kotlin/android/view/View#FOCUS_BACKWARD:kotlin.Int`. It may not always apply, in which case use the default. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/view/View#FOCUS_BACKWARD:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View#FOCUS_FORWARD:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View#FOCUS_LEFT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View#FOCUS_UP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View#FOCUS_RIGHT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View#FOCUS_DOWN:kotlin.Int` |
-| `previouslyFocusedRect` | [Rect](../android/graphics/Rect.md)?: The rectangle, in this view's coordinate system, of the previously focused view. If applicable, this will be passed in as finer grained information about where the focus is coming from (in addition to direction). Will be `null` otherwise. |
+| `previouslyFocusedRect` | [Rect](../android.graphics/Rect.md)?: The rectangle, in this view's coordinate system, of the previously focused view. If applicable, this will be passed in as finer grained information about where the focus is coming from (in addition to direction). Will be `null` otherwise. |
 | --- | --- |
 
 ### onLayout
@@ -17511,7 +17511,7 @@ If you override this method you *must* call through to the superclass implementa
 
 | Parameters ||
 |---|---|
-| `state` | [Parcelable](../android/os/Parcelable.md)!: The frozen state that had previously been returned by `https://developer.android.com/reference/kotlin/android/view/View#onSaveInstanceState()`. |
+| `state` | [Parcelable](../android.os/Parcelable.md)!: The frozen state that had previously been returned by `https://developer.android.com/reference/kotlin/android/view/View#onSaveInstanceState()`. |
 
 **See Also**
 
@@ -17622,7 +17622,7 @@ Called when the visibility of the view or an ancestor of the view has changed.
 
 | Parameters ||
 |---|---|
-| `changedView` | [View](../android/view/View.md): The view whose visibility changed. May be `this` or an ancestor view. This value cannot be `null`. |
+| `changedView` | [View](View.md): The view whose visibility changed. May be `this` or an ancestor view. This value cannot be `null`. |
 | `visibility` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The new visibility, one of `https://developer.android.com/reference/kotlin/android/view/View#VISIBLE:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/View#INVISIBLE:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/view/View#GONE:kotlin.Int`. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/view/View#VISIBLE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View#INVISIBLE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View#GONE:kotlin.Int` |
 
 ### onWindowVisibilityChanged
@@ -17711,7 +17711,7 @@ If you override this method you *must* call through to the superclass implementa
 
 | Parameters ||
 |---|---|
-| `who` | [Drawable](../android/graphics/drawable/Drawable.md): The Drawable to verify. Return true if it is one you are displaying, else return the result of calling through to the super class. This value cannot be `null`. |
+| `who` | [Drawable](../android.graphics.drawable/Drawable.md): The Drawable to verify. Return true if it is one you are displaying, else return the result of calling through to the super class. This value cannot be `null`. |
 
 | Return ||
 |---|---|

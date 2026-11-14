@@ -9,14 +9,14 @@ open class XPathException : Exception
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||
-| | | ↳ | [javax.xml.xpath.XPathException](../javax/xml/xpath/XPathException.md) |
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) ||
+| | | ↳ | [javax.xml.xpath.XPathException](XPathException.md) |
 | --- | --- | --- | --- |
 
-| Known Direct Subclasses [XPathExpressionException](../javax/xml/xpath/XPathExpressionException.md), [XPathFactoryConfigurationException](../javax/xml/xpath/XPathFactoryConfigurationException.md) |---|---| | [XPathExpressionException](../javax/xml/xpath/XPathExpressionException.md) | `XPathExpressionException` represents an error in an XPath expression. | | [XPathFactoryConfigurationException](../javax/xml/xpath/XPathFactoryConfigurationException.md) | `XPathFactoryConfigurationException` represents a configuration error in a `XPathFactory` environment. | |
+| Known Direct Subclasses [XPathExpressionException](XPathExpressionException.md), [XPathFactoryConfigurationException](XPathFactoryConfigurationException.md) |---|---| | [XPathExpressionException](XPathExpressionException.md) | `XPathExpressionException` represents an error in an XPath expression. | | [XPathFactoryConfigurationException](XPathFactoryConfigurationException.md) | `XPathFactoryConfigurationException` represents a configuration error in a `XPathFactory` environment. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [XPathFunctionException](../javax/xml/xpath/XPathFunctionException.md) |---|---| | [XPathFunctionException](../javax/xml/xpath/XPathFunctionException.md) | `XPathFunctionException` represents an error with an XPath function. | |
+| Known Indirect Subclasses [XPathFunctionException](XPathFunctionException.md) |---|---| | [XPathFunctionException](XPathFunctionException.md) | `XPathFunctionException` represents an error with an XPath function. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 `XPathException` represents a generic XPath exception.
@@ -239,7 +239,7 @@ Prints this throwable and its backtrace to the specified print stream.
 
 | Parameters ||
 |---|---|
-| `s` | [PrintStream](../java/io/PrintStream.md): `PrintStream` to use for output |
+| `s` | [PrintStream](../java.io/PrintStream.md): `PrintStream` to use for output |
 
 ### printStackTrace
 
@@ -253,7 +253,7 @@ Prints this throwable and its backtrace to the specified print writer.
 
 | Parameters ||
 |---|---|
-| `s` | [PrintWriter](../java/io/PrintWriter.md): `PrintWriter` to use for output |
+| `s` | [PrintWriter](../java.io/PrintWriter.md): `PrintWriter` to use for output |
 
 ## Properties
 

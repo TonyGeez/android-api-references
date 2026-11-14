@@ -5,7 +5,7 @@ Deprecated in [API level 28](https://developer.android.com/guide/topics/manifest
 
 # MutableFloat
 
-Kotlin| [Java](../android/util/MutableFloat.md) 
+Kotlin| [Java](MutableFloat.md) 
 | --- | --- |
 
 ```
@@ -14,7 +14,7 @@ class MutableFloat
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.util.MutableFloat](../android/util/MutableFloat.md) |
+| ↳ | [android.util.MutableFloat](MutableFloat.md) |
 
 | **This class was deprecated in API level 28.**
 |
@@ -24,11 +24,11 @@ class MutableFloat
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [MutableFloat](../android/util/MutableFloat.md))`(`value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` <br /> |
+| [MutableFloat](MutableFloat.md))`(`value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` <br /> |
 
 | Properties ||
 |--------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [value](../android/util/MutableFloat.md) <br /> |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [value](MutableFloat.md) <br /> |
 
 ## Public constructors
 

@@ -4,7 +4,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 
 # ApplicationErrorReport
 
-Kotlin| [Java](../android/app/ApplicationErrorReport.md) 
+Kotlin| [Java](ApplicationErrorReport.md) 
 | --- | --- |
 
 ```
@@ -13,15 +13,15 @@ open class ApplicationErrorReport : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.ApplicationErrorReport](../android/app/ApplicationErrorReport.md) |
+| ↳ | [android.app.ApplicationErrorReport](ApplicationErrorReport.md) |
 
 Describes an application error. A report has a type, which is one of
 
-- [TYPE_NONE](../android/app/ApplicationErrorReport.md) uninitialized instance of [ApplicationErrorReport](../android/app/ApplicationErrorReport.md).
-- [TYPE_CRASH](../android/app/ApplicationErrorReport.md) application crash. Information about the crash is stored in [crashInfo](../android/app/ApplicationErrorReport.md).
-- [TYPE_ANR](../android/app/ApplicationErrorReport.md) application not responding. Information about the ANR is stored in [anrInfo](../android/app/ApplicationErrorReport.md).
-- [TYPE_BATTERY](../android/app/ApplicationErrorReport.md) user reported application is using too much battery. Information about the battery use is stored in [batteryInfo](../android/app/ApplicationErrorReport.md).
-- [TYPE_RUNNING_SERVICE](../android/app/ApplicationErrorReport.md) user reported application is leaving an unneeded serive running. Information about the battery use is stored in [runningServiceInfo](../android/app/ApplicationErrorReport.md).
+- [TYPE_NONE](ApplicationErrorReport.md) uninitialized instance of [ApplicationErrorReport](ApplicationErrorReport.md).
+- [TYPE_CRASH](ApplicationErrorReport.md) application crash. Information about the crash is stored in [crashInfo](ApplicationErrorReport.md).
+- [TYPE_ANR](ApplicationErrorReport.md) application not responding. Information about the ANR is stored in [anrInfo](ApplicationErrorReport.md).
+- [TYPE_BATTERY](ApplicationErrorReport.md) user reported application is using too much battery. Information about the battery use is stored in [batteryInfo](ApplicationErrorReport.md).
+- [TYPE_RUNNING_SERVICE](ApplicationErrorReport.md) user reported application is leaving an unneeded serive running. Information about the battery use is stored in [runningServiceInfo](ApplicationErrorReport.md).
 
 <br />
 
@@ -37,46 +37,46 @@ Describes an application error. A report has a type, which is one of
 
 | Constants ||
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_ANR](../android/app/ApplicationErrorReport.md) An error report about an application that's not responding. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_BATTERY](../android/app/ApplicationErrorReport.md) An error report about an application that's consuming too much battery. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_CRASH](../android/app/ApplicationErrorReport.md) An error report about an application crash. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_ANR](ApplicationErrorReport.md) An error report about an application that's not responding. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_BATTERY](ApplicationErrorReport.md) An error report about an application that's consuming too much battery. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_CRASH](ApplicationErrorReport.md) An error report about an application crash. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_NONE](../android/app/ApplicationErrorReport.md) Uninitialized error report. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_RUNNING_SERVICE](../android/app/ApplicationErrorReport.md) A report from a user to a developer about a running service that the user doesn't think should be running. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_NONE](ApplicationErrorReport.md) Uninitialized error report. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_RUNNING_SERVICE](ApplicationErrorReport.md) A report from a user to a developer about a running service that the user doesn't think should be running. |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android.os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android.os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android.os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ApplicationErrorReport](../android/app/ApplicationErrorReport.md))`()` Create an uninitialized instance of [ApplicationErrorReport](../android/app/ApplicationErrorReport.md). |
+| [ApplicationErrorReport](ApplicationErrorReport.md))`()` Create an uninitialized instance of [ApplicationErrorReport](ApplicationErrorReport.md). |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/app/ApplicationErrorReport.md))`()` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dump](../android/app/ApplicationErrorReport.md))`(`pw:` ` [Printer](../android/util/Printer.md)!`, `prefix:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Dump the report to a Printer. |
-| openstatic [ComponentName](../android/content/ComponentName.md)! | [getErrorReportReceiver](../android/app/ApplicationErrorReport.md))`(`context:` ` [Context](../android/content/Context.md)!`, `packageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `appFlags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](ApplicationErrorReport.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dump](ApplicationErrorReport.md))`(`pw:` ` [Printer](../android.util/Printer.md)!`, `prefix:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Dump the report to a Printer. |
+| openstatic [ComponentName](../android.content/ComponentName.md)! | [getErrorReportReceiver](ApplicationErrorReport.md))`(`context:` ` [Context](../android.content/Context.md)!`, `packageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `appFlags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [readFromParcel](../android/app/ApplicationErrorReport.md))`(`in:` ` [Parcel](../android/os/Parcel.md)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/app/ApplicationErrorReport.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [readFromParcel](ApplicationErrorReport.md))`(`in:` ` [Parcel](../android.os/Parcel.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](ApplicationErrorReport.md))`(`dest:` ` [Parcel](../android.os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ApplicationErrorReport](../android/app/ApplicationErrorReport.md)!\> | [CREATOR](../android/app/ApplicationErrorReport.md) <br /> |
-| [ApplicationErrorReport.AnrInfo](../android/app/ApplicationErrorReport.AnrInfo.md)! | [anrInfo](../android/app/ApplicationErrorReport.md) If this report is of type [TYPE_ANR](../android/app/ApplicationErrorReport.md), contains an instance of AnrInfo describing the ANR; otherwise null. |
-| [ApplicationErrorReport.BatteryInfo](../android/app/ApplicationErrorReport.BatteryInfo.md)! | [batteryInfo](../android/app/ApplicationErrorReport.md) If this report is of type [TYPE_BATTERY](../android/app/ApplicationErrorReport.md), contains an instance of BatteryInfo; otherwise null. |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ApplicationErrorReport](ApplicationErrorReport.md)!\> | [CREATOR](ApplicationErrorReport.md) <br /> |
+| [ApplicationErrorReport.AnrInfo](../android/app/ApplicationErrorReport.AnrInfo.md)! | [anrInfo](ApplicationErrorReport.md) If this report is of type [TYPE_ANR](ApplicationErrorReport.md), contains an instance of AnrInfo describing the ANR; otherwise null. |
+| [ApplicationErrorReport.BatteryInfo](../android/app/ApplicationErrorReport.BatteryInfo.md)! | [batteryInfo](ApplicationErrorReport.md) If this report is of type [TYPE_BATTERY](ApplicationErrorReport.md), contains an instance of BatteryInfo; otherwise null. |
 | --- | --- |
-| [ApplicationErrorReport.CrashInfo](../android/app/ApplicationErrorReport.CrashInfo.md)! | [crashInfo](../android/app/ApplicationErrorReport.md) If this report is of type [TYPE_CRASH](../android/app/ApplicationErrorReport.md), contains an instance of CrashInfo describing the crash; otherwise null. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [installerPackageName](../android/app/ApplicationErrorReport.md) Package name of the application which installed the application this report pertains to. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [packageName](../android/app/ApplicationErrorReport.md) Package name of the application. |
+| [ApplicationErrorReport.CrashInfo](../android/app/ApplicationErrorReport.CrashInfo.md)! | [crashInfo](ApplicationErrorReport.md) If this report is of type [TYPE_CRASH](ApplicationErrorReport.md), contains an instance of CrashInfo describing the crash; otherwise null. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [installerPackageName](ApplicationErrorReport.md) Package name of the application which installed the application this report pertains to. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [packageName](ApplicationErrorReport.md) Package name of the application. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [processName](../android/app/ApplicationErrorReport.md) Process name of the application. |
-| [ApplicationErrorReport.RunningServiceInfo](../android/app/ApplicationErrorReport.RunningServiceInfo.md)! | [runningServiceInfo](../android/app/ApplicationErrorReport.md) If this report is of type [TYPE_RUNNING_SERVICE](../android/app/ApplicationErrorReport.md), contains an instance of RunningServiceInfo; otherwise null. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [systemApp](../android/app/ApplicationErrorReport.md) Set if the app is on the system image. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [processName](ApplicationErrorReport.md) Process name of the application. |
+| [ApplicationErrorReport.RunningServiceInfo](../android/app/ApplicationErrorReport.RunningServiceInfo.md)! | [runningServiceInfo](ApplicationErrorReport.md) If this report is of type [TYPE_RUNNING_SERVICE](ApplicationErrorReport.md), contains an instance of RunningServiceInfo; otherwise null. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [systemApp](ApplicationErrorReport.md) Set if the app is on the system image. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [time](../android/app/ApplicationErrorReport.md) Time at which the error occurred. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [type](../android/app/ApplicationErrorReport.md) Type of this report. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [time](ApplicationErrorReport.md) Time at which the error occurred. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [type](ApplicationErrorReport.md) Type of this report. |
 
 ## Constants
 
@@ -150,7 +150,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 ApplicationErrorReport()
 ```
 
-Create an uninitialized instance of [ApplicationErrorReport](../android/app/ApplicationErrorReport.md).
+Create an uninitialized instance of [ApplicationErrorReport](ApplicationErrorReport.md).
 
 ## Public methods
 
@@ -164,7 +164,7 @@ open fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) |
 
 ### dump
 
@@ -212,8 +212,8 @@ open fun writeToParcel(
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](../android/os/Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android.os/Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 
@@ -233,7 +233,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 var anrInfo: ApplicationErrorReport.AnrInfo!
 ```
 
-If this report is of type [TYPE_ANR](../android/app/ApplicationErrorReport.md), contains an instance of AnrInfo describing the ANR; otherwise null. 
+If this report is of type [TYPE_ANR](ApplicationErrorReport.md), contains an instance of AnrInfo describing the ANR; otherwise null. 
 
 ### batteryInfo
 
@@ -243,7 +243,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 var batteryInfo: ApplicationErrorReport.BatteryInfo!
 ```
 
-If this report is of type [TYPE_BATTERY](../android/app/ApplicationErrorReport.md), contains an instance of BatteryInfo; otherwise null. 
+If this report is of type [TYPE_BATTERY](ApplicationErrorReport.md), contains an instance of BatteryInfo; otherwise null. 
 
 ### crashInfo
 
@@ -253,7 +253,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 var crashInfo: ApplicationErrorReport.CrashInfo!
 ```
 
-If this report is of type [TYPE_CRASH](../android/app/ApplicationErrorReport.md), contains an instance of CrashInfo describing the crash; otherwise null. 
+If this report is of type [TYPE_CRASH](ApplicationErrorReport.md), contains an instance of CrashInfo describing the crash; otherwise null. 
 
 ### installerPackageName
 
@@ -293,7 +293,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 var runningServiceInfo: ApplicationErrorReport.RunningServiceInfo!
 ```
 
-If this report is of type [TYPE_RUNNING_SERVICE](../android/app/ApplicationErrorReport.md), contains an instance of RunningServiceInfo; otherwise null. 
+If this report is of type [TYPE_RUNNING_SERVICE](ApplicationErrorReport.md), contains an instance of RunningServiceInfo; otherwise null. 
 
 ### systemApp
 
@@ -323,4 +323,4 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 var type: Int
 ```
 
-Type of this report. Can be one of [TYPE_NONE](../android/app/ApplicationErrorReport.md), [TYPE_CRASH](../android/app/ApplicationErrorReport.md), [TYPE_ANR](../android/app/ApplicationErrorReport.md), [TYPE_BATTERY](../android/app/ApplicationErrorReport.md), or [TYPE_RUNNING_SERVICE](../android/app/ApplicationErrorReport.md).
+Type of this report. Can be one of [TYPE_NONE](ApplicationErrorReport.md), [TYPE_CRASH](ApplicationErrorReport.md), [TYPE_ANR](ApplicationErrorReport.md), [TYPE_BATTERY](ApplicationErrorReport.md), or [TYPE_RUNNING_SERVICE](ApplicationErrorReport.md).

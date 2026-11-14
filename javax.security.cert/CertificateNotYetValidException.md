@@ -11,10 +11,10 @@ open class CertificateNotYetValidException : CertificateException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
-| | | ↳ | [javax.security.cert.CertificateException](../javax/security/cert/CertificateException.md) ||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) |||
+| | | ↳ | [javax.security.cert.CertificateException](CertificateException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [javax.security.cert.CertificateNotYetValidException](../javax/security/cert/CertificateNotYetValidException.md) |
+| | | | ↳ | [javax.security.cert.CertificateNotYetValidException](CertificateNotYetValidException.md) |
 
 Certificate is not yet valid exception. This is thrown whenever the current`Date`or the specified`Date`is before the`notBefore`date/time in the Certificate validity period.
 
@@ -24,8 +24,8 @@ Certificate is not yet valid exception. This is thrown whenever the current`Date
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [CertificateNotYetValidException](../javax/security/cert/CertificateNotYetValidException.md))`()` Constructs a CertificateNotYetValidException with no detail message. |
-| [CertificateNotYetValidException](../javax/security/cert/CertificateNotYetValidException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a CertificateNotYetValidException with the specified detail message. |
+| [CertificateNotYetValidException](CertificateNotYetValidException.md))`()` Constructs a CertificateNotYetValidException with no detail message. |
+| [CertificateNotYetValidException](CertificateNotYetValidException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a CertificateNotYetValidException with the specified detail message. |
 
 ## Public constructors
 

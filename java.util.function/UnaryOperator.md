@@ -6,17 +6,17 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 @FunctionalInterface interface UnaryOperator<T : Any!> : Function<T, T>
 ```
 
-| [java.util.function.UnaryOperator](../java/util/function/UnaryOperator.md) |
+| [java.util.function.UnaryOperator](UnaryOperator.md) |
 
 Represents an operation on a single operand that produces a result of the same type as its operand. This is a specialization of `Function` for the case where the operand and result are of the same type.
 
-This is a [functional interface](../java/util/function/_package.md) whose functional method is `https://developer.android.com/reference/kotlin/java/util/function/Function#apply(java.util.function.Function.T)`.
+This is a [functional interface](_package.md) whose functional method is `https://developer.android.com/reference/kotlin/java/util/function/Function#apply(java.util.function.Function.T)`.
 
 ## Summary
 
 | Public methods ||
 |---|---|
-| open static [UnaryOperator](../java/util/function/UnaryOperator.md)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/function/UnaryOperator#identity()()` Returns a unary operator that always returns its input argument. |
+| open static [UnaryOperator](UnaryOperator.md)\<T\>! | `https://developer.android.com/reference/kotlin/java/util/function/UnaryOperator#identity()()` Returns a unary operator that always returns its input argument. |
 
 | Inherited functions ||
 |---|---|

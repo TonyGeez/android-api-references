@@ -8,10 +8,10 @@ open class HashMap<K : Any!, V : Any!> : AbstractMap<K, V>, Cloneable, Se
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.util.AbstractMap](../java/util/AbstractMap.md)\<K, V\> ||
-| | ↳ | [java.util.HashMap](../java/util/HashMap.md) |
+| ↳ | [java.util.AbstractMap](AbstractMap.md)\<K, V\> ||
+| | ↳ | [java.util.HashMap](HashMap.md) |
 
-| Known Direct Subclasses [LinkedHashMap](../java/util/LinkedHashMap.md) |---|---| | [LinkedHashMap](../java/util/LinkedHashMap.md) | Hash table and linked list implementation of the `Map` interface, with well-defined encounter order. | |
+| Known Direct Subclasses [LinkedHashMap](LinkedHashMap.md) |---|---| | [LinkedHashMap](LinkedHashMap.md) | Hash table and linked list implementation of the `Map` interface, with well-defined encounter order. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 Hash table based implementation of the `Map` interface. This implementation provides all of the optional map operations, and permits `null` values and the `null` key. (The `HashMap` class is roughly equivalent to `Hashtable`, except that it is unsynchronized and permits nulls.) This class makes no guarantees as to the order of the map; in particular, it does not guarantee that the order will remain constant over time.
@@ -67,7 +67,7 @@ This class is a member of the [Java Collections Framework](https://developer.and
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/HashMap#isEmpty()()` Returns `true` if this map contains no key-value mappings. |
 | open V? | `https://developer.android.com/reference/kotlin/java/util/HashMap#merge(java.util.HashMap.K,%20java.util.HashMap.V,%20java.util.function.BiFunction)(key: K, value: V, remappingFunction: https://developer.android.com/reference/kotlin/java/util/function/BiFunction<in V, in V, out V?>)` If the specified key is not already associated with a value or is associated with null, associates it with the given non-null value (optional operation). |
 | --- | --- |
-| open static [HashMap](../java/util/HashMap.md)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/HashMap#newHashMap(kotlin.Int)(numMappings: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a new, empty HashMap suitable for the expected number of mappings. |
+| open static [HashMap](HashMap.md)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/HashMap#newHashMap(kotlin.Int)(numMappings: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Creates a new, empty HashMap suitable for the expected number of mappings. |
 | open V? | `https://developer.android.com/reference/kotlin/java/util/HashMap#put(java.util.HashMap.K,%20java.util.HashMap.V)(key: K, value: V)` Associates the specified value with the specified key in this map. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/HashMap#putAll(kotlin.collections.Map)(from: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html<out K, V>)` Copies all of the mappings from the specified map to this map. |
 | --- | --- |
@@ -225,7 +225,7 @@ This method will, on a best-effort basis, throw a `https://developer.android.com
 | Parameters ||
 |---|---|
 | `key` | K: key with which the specified value is to be associated |
-| `remappingFunction` | [BiFunction](../java/util/function/BiFunction.md)\<in K, in V?, out V?\>: the remapping function to compute a value |
+| `remappingFunction` | [BiFunction](../java.util.function/BiFunction.md)\<in K, in V?, out V?\>: the remapping function to compute a value |
 
 | Return ||
 |---|---|
@@ -274,7 +274,7 @@ This method will, on a best-effort basis, throw a `https://developer.android.com
 | Parameters ||
 |---|---|
 | `key` | K: key with which the specified value is to be associated |
-| `mappingFunction` | [Function](../java/util/function/Function.md)\<in K, out V\>: the mapping function to compute a value |
+| `mappingFunction` | [Function](../java.util.function/Function.md)\<in K, out V\>: the mapping function to compute a value |
 
 | Return ||
 |---|---|
@@ -311,7 +311,7 @@ This method will, on a best-effort basis, throw a `https://developer.android.com
 | Parameters ||
 |---|---|
 | `key` | K: key with which the specified value is to be associated |
-| `remappingFunction` | [BiFunction](../java/util/function/BiFunction.md)\<in K, in V, out V?\>: the remapping function to compute a value |
+| `remappingFunction` | [BiFunction](../java.util.function/BiFunction.md)\<in K, in V, out V?\>: the remapping function to compute a value |
 
 | Return ||
 |---|---|
@@ -430,7 +430,7 @@ Performs the given action for each entry in this map until all entries have been
 
 | Parameters ||
 |---|---|
-| `action` | [BiConsumer](../java/util/function/BiConsumer.md)\<in K, in V\>: The action to be performed for each entry |
+| `action` | [BiConsumer](../java.util.function/BiConsumer.md)\<in K, in V\>: The action to be performed for each entry |
 
 | Exceptions ||
 |---|---|
@@ -571,7 +571,7 @@ This method will, on a best-effort basis, throw a `https://developer.android.com
 |---|---|
 | `key` | K: key with which the resulting value is to be associated |
 | `value` | V: the non-null value to be merged with the existing value associated with the key or, if no existing value or a null value is associated with the key, to be associated with the key |
-| `remappingFunction` | [BiFunction](../java/util/function/BiFunction.md)\<in V, in V, out V?\>: the remapping function to recompute a value if present |
+| `remappingFunction` | [BiFunction](../java.util.function/BiFunction.md)\<in V, in V, out V?\>: the remapping function to recompute a value if present |
 | --- | --- |
 
 | Return ||
@@ -848,7 +848,7 @@ Replaces each entry's value with the result of invoking the given function on th
 
 | Parameters ||
 |---|---|
-| `function` | [BiFunction](../java/util/function/BiFunction.md)\<in K, in V, out V\>: the function to apply to each entry |
+| `function` | [BiFunction](../java.util.function/BiFunction.md)\<in K, in V, out V\>: the function to apply to each entry |
 
 | Exceptions ||
 |---|---|

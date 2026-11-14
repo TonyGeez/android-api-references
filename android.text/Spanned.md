@@ -4,57 +4,57 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # Spanned
 
-Kotlin| [Java](../android/text/Spanned.md) 
+Kotlin| [Java](Spanned.md) 
 | --- | --- |
 
 ```
 interface Spanned : CharSequence
 ```
 
-| [android.text.Spanned](../android/text/Spanned.md) |
+| [android.text.Spanned](Spanned.md) |
 
-| Known Direct Subclasses [Spannable](../android/text/Spannable.md), [SpannedString](../android/text/SpannedString.md) |--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------| | [Spannable](../android/text/Spannable.md) | This is the interface for text to which markup objects can be attached and detached. | | [SpannedString](../android/text/SpannedString.md) | This is the class for text whose content and markup are immutable. | |
+| Known Direct Subclasses [Spannable](Spannable.md), [SpannedString](SpannedString.md) |--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------| | [Spannable](Spannable.md) | This is the interface for text to which markup objects can be attached and detached. | | [SpannedString](SpannedString.md) | This is the class for text whose content and markup are immutable. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [Editable](../android/text/Editable.md), [PrecomputedText](../android/text/PrecomputedText.md), [SpannableString](../android/text/SpannableString.md), [SpannableStringBuilder](../android/text/SpannableStringBuilder.md) [SpannableStringBuilder](../android/text/SpannableStringBuilder.md) |--------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------| | [Editable](../android/text/Editable.md) | This is the interface for text whose content and markup can be changed (as opposed to immutable text like Strings). | | [PrecomputedText](../android/text/PrecomputedText.md) | A text which has the character metrics data. | | [SpannableString](../android/text/SpannableString.md) | This is the class for text whose content is immutable but to which markup objects can be attached and detached. | | [SpannableStringBuilder](../android/text/SpannableStringBuilder.md) | This is the class for text whose content and markup can both be changed. | | [SpannableStringBuilder](../android/text/SpannableStringBuilder.md) | This is the class for text whose content and markup can both be changed. | |
+| Known Indirect Subclasses [Editable](Editable.md), [PrecomputedText](PrecomputedText.md), [SpannableString](SpannableString.md), [SpannableStringBuilder](SpannableStringBuilder.md) [SpannableStringBuilder](SpannableStringBuilder.md) |--------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------| | [Editable](Editable.md) | This is the interface for text whose content and markup can be changed (as opposed to immutable text like Strings). | | [PrecomputedText](PrecomputedText.md) | A text which has the character metrics data. | | [SpannableString](SpannableString.md) | This is the class for text whose content is immutable but to which markup objects can be attached and detached. | | [SpannableStringBuilder](SpannableStringBuilder.md) | This is the class for text whose content and markup can both be changed. | | [SpannableStringBuilder](SpannableStringBuilder.md) | This is the class for text whose content and markup can both be changed. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-This is the interface for text that has markup objects attached to ranges of it. Not all text classes have mutable markup or text; see [Spannable](../android/text/Spannable.md) for mutable markup and [Editable](../android/text/Editable.md) for mutable text.
+This is the interface for text that has markup objects attached to ranges of it. Not all text classes have mutable markup or text; see [Spannable](Spannable.md) for mutable markup and [Editable](Editable.md) for mutable text.
 
 ## Summary
 
 | Constants ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SPAN_COMPOSING](../android/text/Spanned.md) This flag is set on spans that are being used to apply temporary styling information on the composing text of an input method, so that they can be found and removed when the composing text is being replaced. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SPAN_EXCLUSIVE_EXCLUSIVE](../android/text/Spanned.md) Spans of type SPAN_EXCLUSIVE_EXCLUSIVE do not expand to include text inserted at either their starting or ending point. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SPAN_EXCLUSIVE_INCLUSIVE](../android/text/Spanned.md) Non-0-length spans of type SPAN_EXCLUSIVE_INCLUSIVE expand to include text inserted at their ending point but not at their starting point. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SPAN_COMPOSING](Spanned.md) This flag is set on spans that are being used to apply temporary styling information on the composing text of an input method, so that they can be found and removed when the composing text is being replaced. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SPAN_EXCLUSIVE_EXCLUSIVE](Spanned.md) Spans of type SPAN_EXCLUSIVE_EXCLUSIVE do not expand to include text inserted at either their starting or ending point. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SPAN_EXCLUSIVE_INCLUSIVE](Spanned.md) Non-0-length spans of type SPAN_EXCLUSIVE_INCLUSIVE expand to include text inserted at their ending point but not at their starting point. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SPAN_INCLUSIVE_EXCLUSIVE](../android/text/Spanned.md) Non-0-length spans of type SPAN_INCLUSIVE_EXCLUSIVE expand to include text inserted at their starting point but not at their ending point. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SPAN_INCLUSIVE_INCLUSIVE](../android/text/Spanned.md) Spans of type SPAN_INCLUSIVE_INCLUSIVE expand to include text inserted at either their starting or ending point. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SPAN_INTERMEDIATE](../android/text/Spanned.md) This flag will be set for intermediate span changes, meaning there is guaranteed to be another change following it. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SPAN_INCLUSIVE_EXCLUSIVE](Spanned.md) Non-0-length spans of type SPAN_INCLUSIVE_EXCLUSIVE expand to include text inserted at their starting point but not at their ending point. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SPAN_INCLUSIVE_INCLUSIVE](Spanned.md) Spans of type SPAN_INCLUSIVE_INCLUSIVE expand to include text inserted at either their starting or ending point. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SPAN_INTERMEDIATE](Spanned.md) This flag will be set for intermediate span changes, meaning there is guaranteed to be another change following it. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SPAN_MARK_MARK](../android/text/Spanned.md) 0-length spans with type SPAN_MARK_MARK behave like text marks: they remain at their original offset when text is inserted at that offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SPAN_MARK_POINT](../android/text/Spanned.md) SPAN_MARK_POINT is a synonym for [SPAN_INCLUSIVE_INCLUSIVE](../android/text/Spanned.md). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SPAN_PARAGRAPH](../android/text/Spanned.md) SPAN_PARAGRAPH behaves like SPAN_INCLUSIVE_EXCLUSIVE (SPAN_MARK_MARK), except that if either end of the span is at the end of the buffer, that end behaves like _POINT instead (so SPAN_INCLUSIVE_INCLUSIVE if it starts in the middle and ends at the end, or SPAN_EXCLUSIVE_INCLUSIVE if it both starts and ends at the end). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SPAN_MARK_MARK](Spanned.md) 0-length spans with type SPAN_MARK_MARK behave like text marks: they remain at their original offset when text is inserted at that offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SPAN_MARK_POINT](Spanned.md) SPAN_MARK_POINT is a synonym for [SPAN_INCLUSIVE_INCLUSIVE](Spanned.md). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SPAN_PARAGRAPH](Spanned.md) SPAN_PARAGRAPH behaves like SPAN_INCLUSIVE_EXCLUSIVE (SPAN_MARK_MARK), except that if either end of the span is at the end of the buffer, that end behaves like _POINT instead (so SPAN_INCLUSIVE_INCLUSIVE if it starts in the middle and ends at the end, or SPAN_EXCLUSIVE_INCLUSIVE if it both starts and ends at the end). |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SPAN_POINT_MARK](../android/text/Spanned.md) SPAN_POINT_MARK is a synonym for [SPAN_EXCLUSIVE_EXCLUSIVE](../android/text/Spanned.md). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SPAN_POINT_MARK_MASK](../android/text/Spanned.md) Bitmask of bits that are relevent for controlling point/mark behavior of spans. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SPAN_POINT_POINT](../android/text/Spanned.md) 0-length spans with type SPAN_POINT_POINT behave like cursors: they are pushed forward by the length of the insertion when text is inserted at their offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SPAN_POINT_MARK](Spanned.md) SPAN_POINT_MARK is a synonym for [SPAN_EXCLUSIVE_EXCLUSIVE](Spanned.md). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SPAN_POINT_MARK_MASK](Spanned.md) Bitmask of bits that are relevent for controlling point/mark behavior of spans. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SPAN_POINT_POINT](Spanned.md) 0-length spans with type SPAN_POINT_POINT behave like cursors: they are pushed forward by the length of the insertion when text is inserted at their offset. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SPAN_PRIORITY](../android/text/Spanned.md) The bits specified by the SPAN_PRIORITY bitmap determine the order of change notifications -- higher numbers go first. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SPAN_PRIORITY_SHIFT](../android/text/Spanned.md) The bits numbered just above SPAN_PRIORITY_SHIFT determine the order of change notifications -- higher numbers go first. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SPAN_USER](../android/text/Spanned.md) The bits specified by the SPAN_USER bitfield are available for callers to use to store scalar data associated with their span object. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SPAN_PRIORITY](Spanned.md) The bits specified by the SPAN_PRIORITY bitmap determine the order of change notifications -- higher numbers go first. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SPAN_PRIORITY_SHIFT](Spanned.md) The bits numbered just above SPAN_PRIORITY_SHIFT determine the order of change notifications -- higher numbers go first. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SPAN_USER](Spanned.md) The bits specified by the SPAN_USER bitfield are available for callers to use to store scalar data associated with their span object. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SPAN_USER_SHIFT](../android/text/Spanned.md) The bits numbered SPAN_USER_SHIFT and above are available for callers to use to store scalar data associated with their span object. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SPAN_USER_SHIFT](Spanned.md) The bits numbered SPAN_USER_SHIFT and above are available for callers to use to store scalar data associated with their span object. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSpanEnd](../android/text/Spanned.md))`(`tag:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Return the end of the range of text to which the specified markup object is attached, or -1 if the object is not attached. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSpanFlags](../android/text/Spanned.md))`(`tag:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Return the flags that were specified when [Spannable.setSpan](../android/text/Spannable.md))was used to attach the specified markup object, or 0 if the specified object has not been attached. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSpanStart](../android/text/Spanned.md))`(`tag:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Return the beginning of the range of text to which the specified markup object is attached, or -1 if the object is not attached. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSpanEnd](Spanned.md))`(`tag:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Return the end of the range of text to which the specified markup object is attached, or -1 if the object is not attached. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSpanFlags](Spanned.md))`(`tag:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Return the flags that were specified when [Spannable.setSpan](Spannable.md))was used to attach the specified markup object, or 0 if the specified object has not been attached. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSpanStart](Spanned.md))`(`tag:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Return the beginning of the range of text to which the specified markup object is attached, or -1 if the object is not attached. |
 | --- | --- |
-| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>! | [getSpans](../android/text/Spanned.md))`(`start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `type:` ` [Class](../java/lang/Class.md)<T>!`)` Return an array of the markup objects attached to the specified slice of this CharSequence and whose type is the specified type or a subclass of it. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [nextSpanTransition](../android/text/Spanned.md))`(`start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `limit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `type:` ` [Class](../java/lang/Class.md)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`)` Return the first offset greater than`start`where a markup object of class`type`begins or ends, or`limit`if there are no starts or ends greater than`start`but less than`limit`. |
+| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>! | [getSpans](Spanned.md))`(`start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `type:` ` [Class](../java.lang/Class.md)<T>!`)` Return an array of the markup objects attached to the specified slice of this CharSequence and whose type is the specified type or a subclass of it. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [nextSpanTransition](Spanned.md))`(`start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `limit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `type:` ` [Class](../java.lang/Class.md)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`)` Return the first offset greater than`start`where a markup object of class`type`begins or ends, or`limit`if there are no starts or ends greater than`start`but less than`limit`. |
 
 ## Constants
 
@@ -126,7 +126,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 static val SPAN_INTERMEDIATE: Int
 ```
 
-This flag will be set for intermediate span changes, meaning there is guaranteed to be another change following it. Typically it is used for [Selection](../android/text/Selection.md) which automatically uses this with the first offset it sets when updating the selection. 
+This flag will be set for intermediate span changes, meaning there is guaranteed to be another change following it. Typically it is used for [Selection](Selection.md) which automatically uses this with the first offset it sets when updating the selection. 
 
  Value: 512
 
@@ -150,7 +150,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val SPAN_MARK_POINT: Int
 ```
 
-SPAN_MARK_POINT is a synonym for [SPAN_INCLUSIVE_INCLUSIVE](../android/text/Spanned.md). 
+SPAN_MARK_POINT is a synonym for [SPAN_INCLUSIVE_INCLUSIVE](Spanned.md). 
 
  Value: 18
 
@@ -176,7 +176,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val SPAN_POINT_MARK: Int
 ```
 
-SPAN_POINT_MARK is a synonym for [SPAN_EXCLUSIVE_EXCLUSIVE](../android/text/Spanned.md). 
+SPAN_POINT_MARK is a synonym for [SPAN_EXCLUSIVE_EXCLUSIVE](Spanned.md). 
 
  Value: 33
 
@@ -272,7 +272,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun getSpanFlags(tag: Any!): Int
 ```
 
-Return the flags that were specified when [Spannable.setSpan](../android/text/Spannable.md))was used to attach the specified markup object, or 0 if the specified object has not been attached. 
+Return the flags that were specified when [Spannable.setSpan](Spannable.md))was used to attach the specified markup object, or 0 if the specified object has not been attached. 
 
 ### getSpanStart
 

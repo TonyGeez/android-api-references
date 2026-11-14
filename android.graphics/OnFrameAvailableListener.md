@@ -19,7 +19,7 @@ Callback interface for being notified that a new stream frame is available.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onFrameAvailable](../android/graphics/SurfaceTexture.OnFrameAvailableListener.md))`(`surfaceTexture:` ` [SurfaceTexture](../android/graphics/SurfaceTexture.md)!`)` <br /> |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onFrameAvailable](../android/graphics/SurfaceTexture.OnFrameAvailableListener.md))`(`surfaceTexture:` ` [SurfaceTexture](SurfaceTexture.md)!`)` <br /> |
 
 ## Public methods
 

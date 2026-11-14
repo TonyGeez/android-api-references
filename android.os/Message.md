@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # Message
 
-Kotlin| [Java](../android/os/Message.md) 
+Kotlin| [Java](Message.md) 
 | --- | --- |
 
 ```
@@ -13,9 +13,9 @@ class Message : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.os.Message](../android/os/Message.md) |
+| ↳ | [android.os.Message](Message.md) |
 
-Defines a message containing a description and arbitrary data object that can be sent to a [Handler](../android/os/Handler.md). This object contains two extra int fields and an extra object field that allow you to not do allocations in many cases.
+Defines a message containing a description and arbitrary data object that can be sent to a [Handler](Handler.md). This object contains two extra int fields and an extra object field that allow you to not do allocations in many cases.
 
 While the constructor of Message is public, the best way to get one of these is to call #obtain or one of the android.os.Handler#obtainMessage methods, which will pull them from a pool of recycled objects.
 
@@ -23,56 +23,56 @@ While the constructor of Message is public, the best way to get one of these is 
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](Parcelable.md) |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](Parcelable.md) <br /> Descriptor bit used with [describeContents()](Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](Parcelable.md) <br /> Flag for use with [writeToParcel](Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Message](../android/os/Message.md))`()` Constructor (but the preferred way to get a Message is to call [Message.obtain()](../android/os/Message.md))). |
+| [Message](Message.md))`()` Constructor (but the preferred way to get a Message is to call [Message.obtain()](Message.md))). |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [copyFrom](../android/os/Message.md))`(`o:` ` [Message](../android/os/Message.md)!`)` Make this message like o. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/os/Message.md))`()` <br /> |
-| [Runnable](../java/lang/Runnable.md)! | [getCallback](../android/os/Message.md))`()` Retrieve callback object that will execute when this message is handled. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [copyFrom](Message.md))`(`o:` ` [Message](Message.md)!`)` Make this message like o. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](Message.md))`()` <br /> |
+| [Runnable](../java.lang/Runnable.md)! | [getCallback](Message.md))`()` Retrieve callback object that will execute when this message is handled. |
 | --- | --- |
-| [Bundle](../android/os/Bundle.md)! | [getData](../android/os/Message.md))`()` Obtains a Bundle of arbitrary data associated with this event, lazily creating it if necessary. |
-| [Handler](../android/os/Handler.md)! | [getTarget](../android/os/Message.md))`()` Retrieve the [Handler](../android/os/Handler.md) implementation that will receive this message. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getWhen](../android/os/Message.md))`()` Return the targeted delivery time of this message, in milliseconds. |
+| [Bundle](Bundle.md)! | [getData](Message.md))`()` Obtains a Bundle of arbitrary data associated with this event, lazily creating it if necessary. |
+| [Handler](Handler.md)! | [getTarget](Message.md))`()` Retrieve the [Handler](Handler.md) implementation that will receive this message. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getWhen](Message.md))`()` Return the targeted delivery time of this message, in milliseconds. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAsynchronous](../android/os/Message.md))`()` Returns true if the message is asynchronous, meaning that it is not subject to [Looper](../android/os/Looper.md) synchronization barriers. |
-| static [Message](../android/os/Message.md)! | [obtain](../android/os/Message.md))`()` Return a new Message instance from the global pool. |
-| static [Message](../android/os/Message.md)! | [obtain](../android/os/Message.md))`(`h:` ` [Handler](../android/os/Handler.md)!`)` Same as [obtain()](../android/os/Message.md)), but sets the value for the*target*member on the Message returned. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAsynchronous](Message.md))`()` Returns true if the message is asynchronous, meaning that it is not subject to [Looper](Looper.md) synchronization barriers. |
+| static [Message](Message.md)! | [obtain](Message.md))`()` Return a new Message instance from the global pool. |
+| static [Message](Message.md)! | [obtain](Message.md))`(`h:` ` [Handler](Handler.md)!`)` Same as [obtain()](Message.md)), but sets the value for the*target*member on the Message returned. |
 | --- | --- |
-| static [Message](../android/os/Message.md)! | [obtain](../android/os/Message.md))`(`h:` ` [Handler](../android/os/Handler.md)!`, `what:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Same as [obtain()](../android/os/Message.md)), but sets the values for both*target* and*what*members on the Message. |
-| static [Message](../android/os/Message.md)! | [obtain](../android/os/Message.md))`(`h:` ` [Handler](../android/os/Handler.md)!`, `what:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `arg1:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `arg2:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Same as [obtain()](../android/os/Message.md)), but sets the values of the*target* ,*what* ,*arg1* , and*arg2*members. |
-| static [Message](../android/os/Message.md)! | [obtain](../android/os/Message.md))`(`h:` ` [Handler](../android/os/Handler.md)!`, `what:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `arg1:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `arg2:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Same as [obtain()](../android/os/Message.md)), but sets the values of the*target* ,*what* ,*arg1* ,*arg2* , and*obj*members. |
+| static [Message](Message.md)! | [obtain](Message.md))`(`h:` ` [Handler](Handler.md)!`, `what:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Same as [obtain()](Message.md)), but sets the values for both*target* and*what*members on the Message. |
+| static [Message](Message.md)! | [obtain](Message.md))`(`h:` ` [Handler](Handler.md)!`, `what:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `arg1:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `arg2:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Same as [obtain()](Message.md)), but sets the values of the*target* ,*what* ,*arg1* , and*arg2*members. |
+| static [Message](Message.md)! | [obtain](Message.md))`(`h:` ` [Handler](Handler.md)!`, `what:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `arg1:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `arg2:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Same as [obtain()](Message.md)), but sets the values of the*target* ,*what* ,*arg1* ,*arg2* , and*obj*members. |
 | --- | --- |
-| static [Message](../android/os/Message.md)! | [obtain](../android/os/Message.md))`(`h:` ` [Handler](../android/os/Handler.md)!`, `what:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Same as [obtain()](../android/os/Message.md)), but sets the values of the*target* ,*what* , and*obj*members. |
-| static [Message](../android/os/Message.md)! | [obtain](../android/os/Message.md))`(`h:` ` [Handler](../android/os/Handler.md)!`, `callback:` ` [Runnable](../java/lang/Runnable.md)!`)` Same as [obtain(android.os.Handler)](../android/os/Message.md)), but assigns a callback Runnable on the Message that is returned. |
-| static [Message](../android/os/Message.md)! | [obtain](../android/os/Message.md))`(`orig:` ` [Message](../android/os/Message.md)!`)` Same as [obtain()](../android/os/Message.md)), but copies the values of an existing message (including its target) into the new one. |
+| static [Message](Message.md)! | [obtain](Message.md))`(`h:` ` [Handler](Handler.md)!`, `what:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Same as [obtain()](Message.md)), but sets the values of the*target* ,*what* , and*obj*members. |
+| static [Message](Message.md)! | [obtain](Message.md))`(`h:` ` [Handler](Handler.md)!`, `callback:` ` [Runnable](../java.lang/Runnable.md)!`)` Same as [obtain(android.os.Handler)](Message.md)), but assigns a callback Runnable on the Message that is returned. |
+| static [Message](Message.md)! | [obtain](Message.md))`(`orig:` ` [Message](Message.md)!`)` Same as [obtain()](Message.md)), but copies the values of an existing message (including its target) into the new one. |
 | --- | --- |
-| [Bundle](../android/os/Bundle.md)? | [peekData](../android/os/Message.md))`()` Like getData(), but does not lazily create the Bundle. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [recycle](../android/os/Message.md))`()` Return a Message instance to the global pool. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [sendToTarget](../android/os/Message.md))`()` Sends this Message to the Handler specified by [getTarget](../android/os/Message.md)). |
+| [Bundle](Bundle.md)? | [peekData](Message.md))`()` Like getData(), but does not lazily create the Bundle. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [recycle](Message.md))`()` Return a Message instance to the global pool. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [sendToTarget](Message.md))`()` Sends this Message to the Handler specified by [getTarget](Message.md)). |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAsynchronous](../android/os/Message.md))`(`async:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets whether the message is asynchronous, meaning that it is not subject to [Looper](../android/os/Looper.md) synchronization barriers. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setData](../android/os/Message.md))`(`data:` ` [Bundle](../android/os/Bundle.md)!`)` Sets a Bundle of arbitrary data values. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTarget](../android/os/Message.md))`(`target:` ` [Handler](../android/os/Handler.md)!`)` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAsynchronous](Message.md))`(`async:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets whether the message is asynchronous, meaning that it is not subject to [Looper](Looper.md) synchronization barriers. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setData](Message.md))`(`data:` ` [Bundle](Bundle.md)!`)` Sets a Bundle of arbitrary data values. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTarget](Message.md))`(`target:` ` [Handler](Handler.md)!`)` <br /> |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/os/Message.md))`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/os/Message.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](Message.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](Message.md))`(`dest:` ` [Parcel](Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [Message](../android/os/Message.md)!\> | [CREATOR](../android/os/Message.md) <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [arg1](../android/os/Message.md) arg1 and arg2 are lower-cost alternatives to using [setData()](../android/os/Message.md))if you only need to store a few integer values. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [arg2](../android/os/Message.md) arg1 and arg2 are lower-cost alternatives to using [setData()](../android/os/Message.md))if you only need to store a few integer values. |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [Message](Message.md)!\> | [CREATOR](Message.md) <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [arg1](Message.md) arg1 and arg2 are lower-cost alternatives to using [setData()](Message.md))if you only need to store a few integer values. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [arg2](Message.md) arg1 and arg2 are lower-cost alternatives to using [setData()](Message.md))if you only need to store a few integer values. |
 | --- | --- |
-| [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [obj](../android/os/Message.md) An arbitrary object to send to the recipient. |
-| [Messenger](../android/os/Messenger.md)! | [replyTo](../android/os/Message.md) Optional Messenger where replies to this message can be sent. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [sendingUid](../android/os/Message.md) Optional field indicating the uid that sent the message. |
+| [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [obj](Message.md) An arbitrary object to send to the recipient. |
+| [Messenger](Messenger.md)! | [replyTo](Message.md) Optional Messenger where replies to this message can be sent. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [sendingUid](Message.md) Optional field indicating the uid that sent the message. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [what](../android/os/Message.md) User-defined message code so that the recipient can identify what this message is about. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [what](Message.md) User-defined message code so that the recipient can identify what this message is about. |
 
 ## Public constructors
 
@@ -84,7 +84,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 Message()
 ```
 
-Constructor (but the preferred way to get a Message is to call [Message.obtain()](../android/os/Message.md))).
+Constructor (but the preferred way to get a Message is to call [Message.obtain()](Message.md))).
 
 ## Public methods
 
@@ -108,7 +108,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](Parcelable.md) |
 
 ### getCallback
 
@@ -118,7 +118,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun getCallback(): Runnable!
 ```
 
-Retrieve callback object that will execute when this message is handled. This object must implement Runnable. This is called by the*target* [Handler](../android/os/Handler.md) that is receiving this Message to dispatch it. If not set, the message will be dispatched to the receiving Handler's [Handler.handleMessage(Message)](../android/os/Handler.md)). 
+Retrieve callback object that will execute when this message is handled. This object must implement Runnable. This is called by the*target* [Handler](Handler.md) that is receiving this Message to dispatch it. If not set, the message will be dispatched to the receiving Handler's [Handler.handleMessage(Message)](Handler.md)). 
 
 ### getData
 
@@ -128,11 +128,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun getData(): Bundle!
 ```
 
-Obtains a Bundle of arbitrary data associated with this event, lazily creating it if necessary. Set this value by calling [setData(android.os.Bundle)](../android/os/Message.md)). Note that when transferring data across processes via [Messenger](../android/os/Messenger.md), you will need to set your ClassLoader on the Bundle via [Bundle.setClassLoader()](../android/os/Bundle.md))so that it can instantiate your objects when you retrieve them. 
+Obtains a Bundle of arbitrary data associated with this event, lazily creating it if necessary. Set this value by calling [setData(android.os.Bundle)](Message.md)). Note that when transferring data across processes via [Messenger](Messenger.md), you will need to set your ClassLoader on the Bundle via [Bundle.setClassLoader()](Bundle.md))so that it can instantiate your objects when you retrieve them. 
 **See Also**
 
 - <https://developer.android.com/reference/kotlin/android/os/Message#peekData()>
-- [#setData(Bundle)](../android/os/Message.md)) 
+- [#setData(Bundle)](Message.md)) 
 
 ### getTarget
 
@@ -142,7 +142,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun getTarget(): Handler!
 ```
 
-Retrieve the [Handler](../android/os/Handler.md) implementation that will receive this message. The object must implement [Handler.handleMessage()](../android/os/Handler.md)). Each Handler has its own name-space for message codes, so you do not need to worry about yours conflicting with other handlers. 
+Retrieve the [Handler](Handler.md) implementation that will receive this message. The object must implement [Handler.handleMessage()](Handler.md)). Each Handler has its own name-space for message codes, so you do not need to worry about yours conflicting with other handlers. 
 
 ### getWhen
 
@@ -162,7 +162,7 @@ Added in [API level 22](https://developer.android.com/guide/topics/manifest/uses
 fun isAsynchronous(): Boolean
 ```
 
-Returns true if the message is asynchronous, meaning that it is not subject to [Looper](../android/os/Looper.md) synchronization barriers.
+Returns true if the message is asynchronous, meaning that it is not subject to [Looper](Looper.md) synchronization barriers.
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------------|
@@ -170,7 +170,7 @@ Returns true if the message is asynchronous, meaning that it is not subject to [
 
 **See Also**
 
-- [#setAsynchronous(boolean)](../android/os/Message.md)) 
+- [#setAsynchronous(boolean)](Message.md)) 
 
 ### obtain
 
@@ -190,15 +190,15 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static fun obtain(h: Handler!): Message!
 ```
 
-Same as [obtain()](../android/os/Message.md)), but sets the value for the*target*member on the Message returned.
+Same as [obtain()](Message.md)), but sets the value for the*target*member on the Message returned.
 
 | Parameters ||
 |-----|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| `h` | [Handler](../android/os/Handler.md)!:Handler to assign to the returned Message object's*target*member. |
+| `h` | [Handler](Handler.md)!:Handler to assign to the returned Message object's*target*member. |
 
 | Return ||
 |--------------------------------------------------------------------------------|----------------------------------------|
-| [Message](../android/os/Message.md)! | A Message object from the global pool. |
+| [Message](Message.md)! | A Message object from the global pool. |
 
 ### obtain
 
@@ -211,16 +211,16 @@ static fun obtain(
 ): Message!
 ```
 
-Same as [obtain()](../android/os/Message.md)), but sets the values for both*target* and*what*members on the Message.
+Same as [obtain()](Message.md)), but sets the values for both*target* and*what*members on the Message.
 
 | Parameters ||
 |--------|---------------------------------------------------------------------------------------------------------------------|
-| `h` | [Handler](../android/os/Handler.md)!:Value to assign to the*target*member. |
+| `h` | [Handler](Handler.md)!:Value to assign to the*target*member. |
 | `what` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value to assign to the*what*member. |
 
 | Return ||
 |--------------------------------------------------------------------------------|----------------------------------------|
-| [Message](../android/os/Message.md)! | A Message object from the global pool. |
+| [Message](Message.md)! | A Message object from the global pool. |
 
 ### obtain
 
@@ -235,11 +235,11 @@ static fun obtain(
 ): Message!
 ```
 
-Same as [obtain()](../android/os/Message.md)), but sets the values of the*target* ,*what* ,*arg1* , and*arg2*members.
+Same as [obtain()](Message.md)), but sets the values of the*target* ,*what* ,*arg1* , and*arg2*members.
 
 | Parameters ||
 |--------|--------------------------------------------------------------------------------------------------------|
-| `h` | [Handler](../android/os/Handler.md)!:The*target*value to set. |
+| `h` | [Handler](Handler.md)!:The*target*value to set. |
 | `what` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The*what*value to set. |
 | `arg1` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The*arg1*value to set. |
 | --- | --- |
@@ -247,7 +247,7 @@ Same as [obtain()](../android/os/Message.md)), but sets the values of the*target
 
 | Return ||
 |--------------------------------------------------------------------------------|----------------------------------------|
-| [Message](../android/os/Message.md)! | A Message object from the global pool. |
+| [Message](Message.md)! | A Message object from the global pool. |
 
 ### obtain
 
@@ -263,11 +263,11 @@ static fun obtain(
 ): Message!
 ```
 
-Same as [obtain()](../android/os/Message.md)), but sets the values of the*target* ,*what* ,*arg1* ,*arg2* , and*obj*members.
+Same as [obtain()](Message.md)), but sets the values of the*target* ,*what* ,*arg1* ,*arg2* , and*obj*members.
 
 | Parameters ||
 |--------|--------------------------------------------------------------------------------------------------------|
-| `h` | [Handler](../android/os/Handler.md)!:The*target*value to set. |
+| `h` | [Handler](Handler.md)!:The*target*value to set. |
 | `what` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The*what*value to set. |
 | `arg1` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The*arg1*value to set. |
 | --- | --- |
@@ -276,7 +276,7 @@ Same as [obtain()](../android/os/Message.md)), but sets the values of the*target
 
 | Return ||
 |--------------------------------------------------------------------------------|----------------------------------------|
-| [Message](../android/os/Message.md)! | A Message object from the global pool. |
+| [Message](Message.md)! | A Message object from the global pool. |
 
 ### obtain
 
@@ -290,18 +290,18 @@ static fun obtain(
 ): Message!
 ```
 
-Same as [obtain()](../android/os/Message.md)), but sets the values of the*target* ,*what* , and*obj*members.
+Same as [obtain()](Message.md)), but sets the values of the*target* ,*what* , and*obj*members.
 
 | Parameters ||
 |--------|--------------------------------------------------------------------------------------------------------|
-| `h` | [Handler](../android/os/Handler.md)!:The*target*value to set. |
+| `h` | [Handler](Handler.md)!:The*target*value to set. |
 | `what` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The*what*value to set. |
 | `obj` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:The*object*method to set. |
 | --- | --- |
 
 | Return ||
 |--------------------------------------------------------------------------------|----------------------------------------|
-| [Message](../android/os/Message.md)! | A Message object from the global pool. |
+| [Message](Message.md)! | A Message object from the global pool. |
 
 ### obtain
 
@@ -314,16 +314,16 @@ static fun obtain(
 ): Message!
 ```
 
-Same as [obtain(android.os.Handler)](../android/os/Message.md)), but assigns a callback Runnable on the Message that is returned.
+Same as [obtain(android.os.Handler)](Message.md)), but assigns a callback Runnable on the Message that is returned.
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| `h` | [Handler](../android/os/Handler.md)!:Handler to assign to the returned Message object's*target*member. |
-| `callback` | [Runnable](../java/lang/Runnable.md)!:Runnable that will execute when the message is handled. |
+| `h` | [Handler](Handler.md)!:Handler to assign to the returned Message object's*target*member. |
+| `callback` | [Runnable](../java.lang/Runnable.md)!:Runnable that will execute when the message is handled. |
 
 | Return ||
 |--------------------------------------------------------------------------------|----------------------------------------|
-| [Message](../android/os/Message.md)! | A Message object from the global pool. |
+| [Message](Message.md)! | A Message object from the global pool. |
 
 ### obtain
 
@@ -333,15 +333,15 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static fun obtain(orig: Message!): Message!
 ```
 
-Same as [obtain()](../android/os/Message.md)), but copies the values of an existing message (including its target) into the new one.
+Same as [obtain()](Message.md)), but copies the values of an existing message (including its target) into the new one.
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------|
-| `orig` | [Message](../android/os/Message.md)!:Original message to copy. |
+| `orig` | [Message](Message.md)!:Original message to copy. |
 
 | Return ||
 |--------------------------------------------------------------------------------|----------------------------------------|
-| [Message](../android/os/Message.md)! | A Message object from the global pool. |
+| [Message](Message.md)! | A Message object from the global pool. |
 
 ### peekData
 
@@ -351,11 +351,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun peekData(): Bundle?
 ```
 
-Like getData(), but does not lazily create the Bundle. A null is returned if the Bundle does not already exist. See [getData](../android/os/Message.md))for further information on this. 
+Like getData(), but does not lazily create the Bundle. A null is returned if the Bundle does not already exist. See [getData](Message.md))for further information on this. 
 **See Also**
 
 - <https://developer.android.com/reference/kotlin/android/os/Message#getData()>
-- [#setData(Bundle)](../android/os/Message.md)) 
+- [#setData(Bundle)](Message.md)) 
 
 ### recycle
 
@@ -377,7 +377,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun sendToTarget(): Unit
 ```
 
-Sends this Message to the Handler specified by [getTarget](../android/os/Message.md)). Throws a null pointer exception if this field has not been set. 
+Sends this Message to the Handler specified by [getTarget](Message.md)). Throws a null pointer exception if this field has not been set. 
 
 ### setAsynchronous
 
@@ -387,9 +387,9 @@ Added in [API level 22](https://developer.android.com/guide/topics/manifest/uses
 fun setAsynchronous(async: Boolean): Unit
 ```
 
-Sets whether the message is asynchronous, meaning that it is not subject to [Looper](../android/os/Looper.md) synchronization barriers.
+Sets whether the message is asynchronous, meaning that it is not subject to [Looper](Looper.md) synchronization barriers.
 
-Certain operations, such as view invalidation, may introduce synchronization barriers into the [Looper](../android/os/Looper.md)'s message queue to prevent subsequent messages from being delivered until some condition is met. In the case of view invalidation, messages which are posted after a call to android.view.View#invalidate are suspended by means of a synchronization barrier until the next frame is ready to be drawn. The synchronization barrier ensures that the invalidation request is completely handled before resuming.
+Certain operations, such as view invalidation, may introduce synchronization barriers into the [Looper](Looper.md)'s message queue to prevent subsequent messages from being delivered until some condition is met. In the case of view invalidation, messages which are posted after a call to android.view.View#invalidate are suspended by means of a synchronization barrier until the next frame is ready to be drawn. The synchronization barrier ensures that the invalidation request is completely handled before resuming.
 
 Asynchronous messages are exempt from synchronization barriers. They typically represent interrupts, input events, and other signals that must be handled independently even while other work has been suspended.
 
@@ -450,8 +450,8 @@ fun writeToParcel(
 
 | Parameters ||
 |---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](../android/os/Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 
@@ -471,7 +471,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 var arg1: Int
 ```
 
-arg1 and arg2 are lower-cost alternatives to using [setData()](../android/os/Message.md))if you only need to store a few integer values. 
+arg1 and arg2 are lower-cost alternatives to using [setData()](Message.md))if you only need to store a few integer values. 
 
 ### arg2
 
@@ -481,7 +481,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 var arg2: Int
 ```
 
-arg1 and arg2 are lower-cost alternatives to using [setData()](../android/os/Message.md))if you only need to store a few integer values. 
+arg1 and arg2 are lower-cost alternatives to using [setData()](Message.md))if you only need to store a few integer values. 
 
 ### obj
 
@@ -491,7 +491,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 var obj: Any!
 ```
 
-An arbitrary object to send to the recipient. When using [Messenger](../android/os/Messenger.md) to send the message across processes this can only be non-null if it contains a Parcelable of a framework class (not one implemented by the application). For other data transfer use [setData](../android/os/Message.md)).
+An arbitrary object to send to the recipient. When using [Messenger](Messenger.md) to send the message across processes this can only be non-null if it contains a Parcelable of a framework class (not one implemented by the application). For other data transfer use [setData](Message.md)).
 
 Note that Parcelable objects here are not supported prior to the [android.os.Build.VERSION_CODES#FROYO](../android/os/Build.VERSION_CODES.md) release. 
 
@@ -513,7 +513,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 var sendingUid: Int
 ```
 
-Optional field indicating the uid that sent the message. This is only valid for messages posted by a [Messenger](../android/os/Messenger.md); otherwise, it will be -1. 
+Optional field indicating the uid that sent the message. This is only valid for messages posted by a [Messenger](Messenger.md); otherwise, it will be -1. 
 
 ### what
 
@@ -523,4 +523,4 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 var what: Int
 ```
 
-User-defined message code so that the recipient can identify what this message is about. Each [Handler](../android/os/Handler.md) has its own name-space for message codes, so you do not need to worry about yours conflicting with other handlers. If not specified, this value is 0. Use values other than 0 to indicate custom message codes.
+User-defined message code so that the recipient can identify what this message is about. Each [Handler](Handler.md) has its own name-space for message codes, so you do not need to worry about yours conflicting with other handlers. If not specified, this value is 0. Use values other than 0 to indicate custom message codes.

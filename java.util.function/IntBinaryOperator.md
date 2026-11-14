@@ -8,17 +8,17 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 @FunctionalInterface interface IntBinaryOperator
 ```
 
-| [java.util.function.IntBinaryOperator](../java/util/function/IntBinaryOperator.md) |
+| [java.util.function.IntBinaryOperator](IntBinaryOperator.md) |
 
-Represents an operation upon two`int`-valued operands and producing an`int`-valued result. This is the primitive type specialization of [BinaryOperator](../java/util/function/BinaryOperator.md) for`int`.
+Represents an operation upon two`int`-valued operands and producing an`int`-valued result. This is the primitive type specialization of [BinaryOperator](BinaryOperator.md) for`int`.
 
-This is a [functional interface](../java/util/function/_package.md) whose functional method is [applyAsInt(int,int)](../java/util/function/IntBinaryOperator.md)).
+This is a [functional interface](_package.md) whose functional method is [applyAsInt(int,int)](IntBinaryOperator.md)).
 
 ## Summary
 
 | Public methods ||
 |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [applyAsInt](../java/util/function/IntBinaryOperator.md))`(`left:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `right:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Applies this operator to the given operands. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [applyAsInt](IntBinaryOperator.md))`(`left:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `right:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Applies this operator to the given operands. |
 
 ## Public methods
 

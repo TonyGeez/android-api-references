@@ -4,7 +4,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # SegmentFinder
 
-Kotlin| [Java](../android/text/SegmentFinder.md) 
+Kotlin| [Java](SegmentFinder.md) 
 | --- | --- |
 
 ```
@@ -13,12 +13,12 @@ abstract class SegmentFinder
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.text.SegmentFinder](../android/text/SegmentFinder.md) |
+| ↳ | [android.text.SegmentFinder](SegmentFinder.md) |
 
-| Known Direct Subclasses [GraphemeClusterSegmentFinder](../android/text/GraphemeClusterSegmentFinder.md), [SegmentFinder.PrescribedSegmentFinder](../android/text/SegmentFinder.PrescribedSegmentFinder.md), [WordSegmentFinder](../android/text/WordSegmentFinder.md) |--------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------| | [GraphemeClusterSegmentFinder](../android/text/GraphemeClusterSegmentFinder.md) | Implementation of`SegmentFinder`using grapheme clusters as the text segment. | | [SegmentFinder.PrescribedSegmentFinder](../android/text/SegmentFinder.PrescribedSegmentFinder.md) | The default [SegmentFinder](../android/text/SegmentFinder.md) implementation based on given segment ranges. | | [WordSegmentFinder](../android/text/WordSegmentFinder.md) | Implementation of [SegmentFinder](../android/text/SegmentFinder.md) using words as the text segment. | |
+| Known Direct Subclasses [GraphemeClusterSegmentFinder](GraphemeClusterSegmentFinder.md), [SegmentFinder.PrescribedSegmentFinder](../android/text/SegmentFinder.PrescribedSegmentFinder.md), [WordSegmentFinder](WordSegmentFinder.md) |--------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------| | [GraphemeClusterSegmentFinder](GraphemeClusterSegmentFinder.md) | Implementation of`SegmentFinder`using grapheme clusters as the text segment. | | [SegmentFinder.PrescribedSegmentFinder](../android/text/SegmentFinder.PrescribedSegmentFinder.md) | The default [SegmentFinder](SegmentFinder.md) implementation based on given segment ranges. | | [WordSegmentFinder](WordSegmentFinder.md) | Implementation of [SegmentFinder](SegmentFinder.md) using words as the text segment. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-Finds text segment boundaries within text. Subclasses can implement different types of text segments. Grapheme clusters and words are examples of possible text segments. These are implemented by [GraphemeClusterSegmentFinder](../android/text/GraphemeClusterSegmentFinder.md) and [WordSegmentFinder](../android/text/WordSegmentFinder.md).
+Finds text segment boundaries within text. Subclasses can implement different types of text segments. Grapheme clusters and words are examples of possible text segments. These are implemented by [GraphemeClusterSegmentFinder](GraphemeClusterSegmentFinder.md) and [WordSegmentFinder](WordSegmentFinder.md).
 
 Text segments may not overlap, so every character belongs to at most one text segment. A character may belong to no text segments.
 
@@ -28,23 +28,23 @@ For example, WordSegmentFinder subdivides the text "Hello, World!" into four tex
 
 | Nested classes ||
 |------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open | [PrescribedSegmentFinder](../android/text/SegmentFinder.PrescribedSegmentFinder.md) The default [SegmentFinder](../android/text/SegmentFinder.md) implementation based on given segment ranges. |
+| open | [PrescribedSegmentFinder](../android/text/SegmentFinder.PrescribedSegmentFinder.md) The default [SegmentFinder](SegmentFinder.md) implementation based on given segment ranges. |
 
 | Constants ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DONE](../android/text/SegmentFinder.md) Return value of previousStartBoundary(int), previousEndBoundary(int), nextStartBoundary(int), and nextEndBoundary(int) when there are no boundaries of the specified type in the specified direction. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DONE](SegmentFinder.md) Return value of previousStartBoundary(int), previousEndBoundary(int), nextStartBoundary(int), and nextEndBoundary(int) when there are no boundaries of the specified type in the specified direction. |
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------|---|
-| [SegmentFinder](../android/text/SegmentFinder.md))`()` <br /> |
+| [SegmentFinder](SegmentFinder.md))`()` <br /> |
 
 | Public methods ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [nextEndBoundary](../android/text/SegmentFinder.md))`(`offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the character offset of the next text segment end boundary after the specified character offset, or`DONE`if there are none. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [nextStartBoundary](../android/text/SegmentFinder.md))`(`offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the character offset of the next text segment start boundary after the specified character offset, or`DONE`if there are none. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [previousEndBoundary](../android/text/SegmentFinder.md))`(`offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the character offset of the previous text segment end boundary before the specified character offset, or`DONE`if there are none. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [nextEndBoundary](SegmentFinder.md))`(`offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the character offset of the next text segment end boundary after the specified character offset, or`DONE`if there are none. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [nextStartBoundary](SegmentFinder.md))`(`offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the character offset of the next text segment start boundary after the specified character offset, or`DONE`if there are none. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [previousEndBoundary](SegmentFinder.md))`(`offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the character offset of the previous text segment end boundary before the specified character offset, or`DONE`if there are none. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [previousStartBoundary](../android/text/SegmentFinder.md))`(`offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the character offset of the previous text segment start boundary before the specified character offset, or`DONE`if there are none. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [previousStartBoundary](SegmentFinder.md))`(`offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the character offset of the previous text segment start boundary before the specified character offset, or`DONE`if there are none. |
 
 ## Constants
 

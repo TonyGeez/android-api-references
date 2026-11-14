@@ -4,7 +4,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 
 # BidiClassifier
 
-Kotlin| [Java](../android/icu/text/BidiClassifier.md) 
+Kotlin| [Java](BidiClassifier.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class BidiClassifier
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.icu.text.BidiClassifier](../android/icu/text/BidiClassifier.md) |
+| ↳ | [android.icu.text.BidiClassifier](BidiClassifier.md) |
 
 Overrides default Bidi class values with custom ones.
 
@@ -27,13 +27,13 @@ To start using this customized classifier with a Bidi object, it must be specifi
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [BidiClassifier](../android/icu/text/BidiClassifier.md))`(`context:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` <br /> |
+| [BidiClassifier](BidiClassifier.md))`(`context:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` <br /> |
 
 | Public methods ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [classify](../android/icu/text/BidiClassifier.md))`(`c:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets customized Bidi class for the code point`c`. |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getContext](../android/icu/text/BidiClassifier.md))`()` Returns the current classifier context. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setContext](../android/icu/text/BidiClassifier.md))`(`context:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Sets classifier context, which can be used either by a caller or callee for various purposes. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [classify](BidiClassifier.md))`(`c:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets customized Bidi class for the code point`c`. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getContext](BidiClassifier.md))`()` Returns the current classifier context. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setContext](BidiClassifier.md))`(`context:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Sets classifier context, which can be used either by a caller or callee for various purposes. |
 | --- | --- |
 
 ## Public constructors

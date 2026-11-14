@@ -12,8 +12,8 @@ open class NotOwnerException : Exception
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||
-| | | ↳ | [java.security.acl.NotOwnerException](../java/security/acl/NotOwnerException.md) |
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) ||
+| | | ↳ | [java.security.acl.NotOwnerException](NotOwnerException.md) |
 | --- | --- | --- | --- |
 
 | **This exception was deprecated in API level 33.**
@@ -26,7 +26,7 @@ This is an exception that is thrown whenever the modification of an object (such
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [NotOwnerException](../java/security/acl/NotOwnerException.md))`()` Constructs a NotOwnerException. |
+| [NotOwnerException](NotOwnerException.md))`()` Constructs a NotOwnerException. |
 
 ## Public constructors
 

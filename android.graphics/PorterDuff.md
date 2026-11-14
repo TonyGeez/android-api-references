@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # PorterDuff
 
-Kotlin| [Java](../android/graphics/PorterDuff.md) 
+Kotlin| [Java](PorterDuff.md) 
 | --- | --- |
 
 ```
@@ -13,10 +13,10 @@ open class PorterDuff
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.graphics.PorterDuff](../android/graphics/PorterDuff.md) |
+| ↳ | [android.graphics.PorterDuff](PorterDuff.md) |
 
-This class contains the list of alpha compositing and blending modes that can be passed to [PorterDuffXfermode](../android/graphics/PorterDuffXfermode.md), a specialized implementation of [Paint](../android/graphics/Paint.md)'s [transfer mode](../android/graphics/Paint.md)). All the available modes can be found in the [Mode](../android/graphics/PorterDuff.Mode.md) enum.
-Consider using [BlendMode](../android/graphics/BlendMode.md) instead as it provides a wider variety of tinting options
+This class contains the list of alpha compositing and blending modes that can be passed to [PorterDuffXfermode](PorterDuffXfermode.md), a specialized implementation of [Paint](Paint.md)'s [transfer mode](Paint.md)). All the available modes can be found in the [Mode](../android/graphics/PorterDuff.Mode.md) enum.
+Consider using [BlendMode](BlendMode.md) instead as it provides a wider variety of tinting options
 
 ## Summary
 
@@ -26,7 +26,7 @@ Consider using [BlendMode](../android/graphics/BlendMode.md) instead as it provi
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------|---|
-| [PorterDuff](../android/graphics/PorterDuff.md))`()` <br /> |
+| [PorterDuff](PorterDuff.md))`()` <br /> |
 
 ## Public constructors
 

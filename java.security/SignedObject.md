@@ -10,7 +10,7 @@ class SignedObject : Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.SignedObject](../java/security/SignedObject.md) |
+| ↳ | [java.security.SignedObject](SignedObject.md) |
 
 SignedObject is a class for the purpose of creating authentic runtime objects whose integrity cannot be compromised without being detected.
 
@@ -58,15 +58,15 @@ Potential applications of SignedObject include:
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SignedObject](../java/security/SignedObject.md))`(`object:` ` [Serializable](../java/io/Serializable.md)!`, `signingKey:` ` [PrivateKey](../java/security/PrivateKey.md)!`, `signingEngine:` ` [Signature](../java/security/Signature.md)!`)` Constructs a SignedObject from any Serializable object. |
+| [SignedObject](SignedObject.md))`(`object:` ` [Serializable](../java.io/Serializable.md)!`, `signingKey:` ` [PrivateKey](PrivateKey.md)!`, `signingEngine:` ` [Signature](Signature.md)!`)` Constructs a SignedObject from any Serializable object. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAlgorithm](../java/security/SignedObject.md))`()` Retrieves the name of the signature algorithm. |
-| [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getObject](../java/security/SignedObject.md))`()` Retrieves the encapsulated object. |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getSignature](../java/security/SignedObject.md))`()` Retrieves the signature on the signed object, in the form of a byte array. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAlgorithm](SignedObject.md))`()` Retrieves the name of the signature algorithm. |
+| [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getObject](SignedObject.md))`()` Retrieves the encapsulated object. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getSignature](SignedObject.md))`()` Retrieves the signature on the signed object, in the form of a byte array. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [verify](../java/security/SignedObject.md))`(`verificationKey:` ` [PublicKey](../java/security/PublicKey.md)!`, `verificationEngine:` ` [Signature](../java/security/Signature.md)!`)` Verifies that the signature in this SignedObject is the valid signature for the object stored inside, with the given verification key, using the designated verification engine. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [verify](SignedObject.md))`(`verificationKey:` ` [PublicKey](PublicKey.md)!`, `verificationEngine:` ` [Signature](Signature.md)!`)` Verifies that the signature in this SignedObject is the valid signature for the object stored inside, with the given verification key, using the designated verification engine. |
 
 ## Public constructors
 
@@ -85,9 +85,9 @@ Constructs a SignedObject from any Serializable object. The given object is sign
 
 | Parameters ||
 |-----------------|---------------------------------------------------------------------------------------------------------------------|
-| `object` | [Serializable](../java/io/Serializable.md)!:the object to be signed. |
-| `signingKey` | [PrivateKey](../java/security/PrivateKey.md)!:the private key for signing. |
-| `signingEngine` | [Signature](../java/security/Signature.md)!:the signature signing engine. |
+| `object` | [Serializable](../java.io/Serializable.md)!:the object to be signed. |
+| `signingKey` | [PrivateKey](PrivateKey.md)!:the private key for signing. |
+| `signingEngine` | [Signature](Signature.md)!:the signature signing engine. |
 | --- | --- |
 
 | Exceptions ||
@@ -161,8 +161,8 @@ Verifies that the signature in this SignedObject is the valid signature for the 
 
 | Parameters ||
 |----------------------|-------------------------------------------------------------------------------------------------------------------------|
-| `verificationKey` | [PublicKey](../java/security/PublicKey.md)!:the public key for verification. |
-| `verificationEngine` | [Signature](../java/security/Signature.md)!:the signature verification engine. |
+| `verificationKey` | [PublicKey](PublicKey.md)!:the public key for verification. |
+| `verificationEngine` | [Signature](Signature.md)!:the signature verification engine. |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------------------------|

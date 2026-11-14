@@ -4,7 +4,7 @@ Added in [API level 17](https://developer.android.com/guide/topics/manifest/uses
 
 # CellSignalStrength
 
-Kotlin| [Java](../android/telephony/CellSignalStrength.md) 
+Kotlin| [Java](CellSignalStrength.md) 
 | --- | --- |
 
 ```
@@ -13,9 +13,9 @@ abstract class CellSignalStrength
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.telephony.CellSignalStrength](../android/telephony/CellSignalStrength.md) |
+| ↳ | [android.telephony.CellSignalStrength](CellSignalStrength.md) |
 
-| Known Direct Subclasses [CellSignalStrengthCdma](../android/telephony/CellSignalStrengthCdma.md), [CellSignalStrengthGsm](../android/telephony/CellSignalStrengthGsm.md), [CellSignalStrengthLte](../android/telephony/CellSignalStrengthLte.md), [CellSignalStrengthNr](../android/telephony/CellSignalStrengthNr.md), [CellSignalStrengthTdscdma](../android/telephony/CellSignalStrengthTdscdma.md), [CellSignalStrengthWcdma](../android/telephony/CellSignalStrengthWcdma.md) |-------------------------------------------------------------------------------------------------------------------------|----------------------------------------------| | [CellSignalStrengthCdma](../android/telephony/CellSignalStrengthCdma.md) | Signal strength related information. | | [CellSignalStrengthGsm](../android/telephony/CellSignalStrengthGsm.md) | GSM signal strength related information. | | [CellSignalStrengthLte](../android/telephony/CellSignalStrengthLte.md) | LTE signal strength related information. | | [CellSignalStrengthNr](../android/telephony/CellSignalStrengthNr.md) | 5G NR signal strength related information. | | [CellSignalStrengthTdscdma](../android/telephony/CellSignalStrengthTdscdma.md) | Tdscdma signal strength related information. | | [CellSignalStrengthWcdma](../android/telephony/CellSignalStrengthWcdma.md) | Wcdma signal strength related information. | |
+| Known Direct Subclasses [CellSignalStrengthCdma](CellSignalStrengthCdma.md), [CellSignalStrengthGsm](CellSignalStrengthGsm.md), [CellSignalStrengthLte](CellSignalStrengthLte.md), [CellSignalStrengthNr](CellSignalStrengthNr.md), [CellSignalStrengthTdscdma](CellSignalStrengthTdscdma.md), [CellSignalStrengthWcdma](CellSignalStrengthWcdma.md) |-------------------------------------------------------------------------------------------------------------------------|----------------------------------------------| | [CellSignalStrengthCdma](CellSignalStrengthCdma.md) | Signal strength related information. | | [CellSignalStrengthGsm](CellSignalStrengthGsm.md) | GSM signal strength related information. | | [CellSignalStrengthLte](CellSignalStrengthLte.md) | LTE signal strength related information. | | [CellSignalStrengthNr](CellSignalStrengthNr.md) | 5G NR signal strength related information. | | [CellSignalStrengthTdscdma](CellSignalStrengthTdscdma.md) | Tdscdma signal strength related information. | | [CellSignalStrengthWcdma](CellSignalStrengthWcdma.md) | Wcdma signal strength related information. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Abstract base class for cell phone signal strength related information.
@@ -24,21 +24,21 @@ Abstract base class for cell phone signal strength related information.
 
 | Constants ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIGNAL_STRENGTH_GOOD](../android/telephony/CellSignalStrength.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIGNAL_STRENGTH_GREAT](../android/telephony/CellSignalStrength.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIGNAL_STRENGTH_MODERATE](../android/telephony/CellSignalStrength.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIGNAL_STRENGTH_GOOD](CellSignalStrength.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIGNAL_STRENGTH_GREAT](CellSignalStrength.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIGNAL_STRENGTH_MODERATE](CellSignalStrength.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIGNAL_STRENGTH_NONE_OR_UNKNOWN](../android/telephony/CellSignalStrength.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIGNAL_STRENGTH_POOR](../android/telephony/CellSignalStrength.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIGNAL_STRENGTH_NONE_OR_UNKNOWN](CellSignalStrength.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIGNAL_STRENGTH_POOR](CellSignalStrength.md) <br /> |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/telephony/CellSignalStrength.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAsuLevel](../android/telephony/CellSignalStrength.md))`()` Get the technology-specific signal strength in Arbitrary Strength Units, calculated from the strength of the pilot signal or equivalent. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDbm](../android/telephony/CellSignalStrength.md))`()` Get the technology-specific signal strength in dBm, which is the signal strength of the pilot signal or equivalent. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](CellSignalStrength.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAsuLevel](CellSignalStrength.md))`()` Get the technology-specific signal strength in Arbitrary Strength Units, calculated from the strength of the pilot signal or equivalent. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDbm](CellSignalStrength.md))`()` Get the technology-specific signal strength in dBm, which is the signal strength of the pilot signal or equivalent. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLevel](../android/telephony/CellSignalStrength.md))`()` Retrieve an abstract level value for the overall signal quality. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/telephony/CellSignalStrength.md))`()` <br /> |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLevel](CellSignalStrength.md))`()` Retrieve an abstract level value for the overall signal quality. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](CellSignalStrength.md))`()` <br /> |
 
 ## Constants
 
@@ -142,7 +142,7 @@ Retrieve an abstract level value for the overall signal quality.
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a single integer from 0 to 4 representing the general signal quality. 0 represents very poor or unknown signal quality while 4 represents excellent signal quality. Value is between [android.telephony.CellSignalStrength#SIGNAL_STRENGTH_NONE_OR_UNKNOWN](../android/telephony/CellSignalStrength.md) and [android.telephony.CellSignalStrength#SIGNAL_STRENGTH_GREAT](../android/telephony/CellSignalStrength.md) inclusive |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a single integer from 0 to 4 representing the general signal quality. 0 represents very poor or unknown signal quality while 4 represents excellent signal quality. Value is between [android.telephony.CellSignalStrength#SIGNAL_STRENGTH_NONE_OR_UNKNOWN](CellSignalStrength.md) and [android.telephony.CellSignalStrength#SIGNAL_STRENGTH_GREAT](CellSignalStrength.md) inclusive |
 
 ### hashCode
 

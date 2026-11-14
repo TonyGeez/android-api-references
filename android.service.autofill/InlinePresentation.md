@@ -4,7 +4,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 
 # InlinePresentation
 
-Kotlin| [Java](../android/service/autofill/InlinePresentation.md) 
+Kotlin| [Java](InlinePresentation.md) 
 | --- | --- |
 
 ```
@@ -13,38 +13,38 @@ class InlinePresentation : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.service.autofill.InlinePresentation](../android/service/autofill/InlinePresentation.md) |
+| ↳ | [android.service.autofill.InlinePresentation](InlinePresentation.md) |
 
-Wrapper class holding a [Slice](../android/app/slice/Slice.md) and an [InlinePresentationSpec](../android/widget/inline/InlinePresentationSpec.md) for rendering UI for an Inline Suggestion.
+Wrapper class holding a [Slice](../android.app.slice/Slice.md) and an [InlinePresentationSpec](../android.widget.inline/InlinePresentationSpec.md) for rendering UI for an Inline Suggestion.
 
 ## Summary
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android.os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android.os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android.os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [InlinePresentation](../android/service/autofill/InlinePresentation.md))`(`slice:` ` [Slice](../android/app/slice/Slice.md)`, `inlinePresentationSpec:` ` [InlinePresentationSpec](../android/widget/inline/InlinePresentationSpec.md)`, `pinned:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Creates a new InlinePresentation. |
+| [InlinePresentation](InlinePresentation.md))`(`slice:` ` [Slice](../android.app.slice/Slice.md)`, `inlinePresentationSpec:` ` [InlinePresentationSpec](../android.widget.inline/InlinePresentationSpec.md)`, `pinned:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Creates a new InlinePresentation. |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [InlinePresentation](../android/service/autofill/InlinePresentation.md) | [createTooltipPresentation](../android/service/autofill/InlinePresentation.md))`(`slice:` ` [Slice](../android/app/slice/Slice.md)`, `spec:` ` [InlinePresentationSpec](../android/widget/inline/InlinePresentationSpec.md)`)` Creates a presentation for the inline suggestion tooltip |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/service/autofill/InlinePresentation.md))`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/service/autofill/InlinePresentation.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| static [InlinePresentation](InlinePresentation.md) | [createTooltipPresentation](InlinePresentation.md))`(`slice:` ` [Slice](../android.app.slice/Slice.md)`, `spec:` ` [InlinePresentationSpec](../android.widget.inline/InlinePresentationSpec.md)`)` Creates a presentation for the inline suggestion tooltip |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](InlinePresentation.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](InlinePresentation.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | --- | --- |
-| [InlinePresentationSpec](../android/widget/inline/InlinePresentationSpec.md) | [getInlinePresentationSpec](../android/service/autofill/InlinePresentation.md))`()` Specifies the UI specification for the inline suggestion. |
-| [Slice](../android/app/slice/Slice.md) | [getSlice](../android/service/autofill/InlinePresentation.md))`()` Represents the UI content and the action for the inline suggestion. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/service/autofill/InlinePresentation.md))`()` <br /> |
+| [InlinePresentationSpec](../android.widget.inline/InlinePresentationSpec.md) | [getInlinePresentationSpec](InlinePresentation.md))`()` Specifies the UI specification for the inline suggestion. |
+| [Slice](../android.app.slice/Slice.md) | [getSlice](InlinePresentation.md))`()` Represents the UI content and the action for the inline suggestion. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](InlinePresentation.md))`()` <br /> |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPinned](../android/service/autofill/InlinePresentation.md))`()` Indicates whether the UI should be pinned, hence non-scrollable and non-filterable, in the host. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/service/autofill/InlinePresentation.md))`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/service/autofill/InlinePresentation.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPinned](InlinePresentation.md))`()` Indicates whether the UI should be pinned, hence non-scrollable and non-filterable, in the host. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](InlinePresentation.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](InlinePresentation.md))`(`dest:` ` [Parcel](../android.os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 | --- | --- |
 
 | Properties ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [InlinePresentation](../android/service/autofill/InlinePresentation.md)!\> | [CREATOR](../android/service/autofill/InlinePresentation.md) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [InlinePresentation](InlinePresentation.md)!\> | [CREATOR](InlinePresentation.md) <br /> |
 
 ## Public constructors
 
@@ -63,9 +63,9 @@ Creates a new InlinePresentation.
 
 | Parameters ||
 |--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `slice` | [Slice](../android/app/slice/Slice.md):Represents the UI content and the action for the inline suggestion. The Slice should be constructed using the Content builder provided in the androidx autofill library e.g.`androidx.autofill.inline.v1.InlineSuggestionUi.Content.Builder`and then converted to a Slice with`androidx.autofill.inline.UiVersions.Content#getSlice()`. This value cannot be`null`. |
-| `inlinePresentationSpec` | [InlinePresentationSpec](../android/widget/inline/InlinePresentationSpec.md):Specifies the UI specification for the inline suggestion. This value cannot be`null`. |
-| `pinned` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):Indicates whether the UI should be pinned, hence non-scrollable and non-filterable, in the host. However, it's eventually up to the host whether the UI is pinned or not. Also a [Dataset](../android/service/autofill/Dataset.md) with a pinned inline presentation will not be replaced by the new data set returned from authentication intent. See [Dataset.Builder.setAuthentication(android.content.IntentSender)](../android/service/autofill/Dataset.Builder.md))for more information. |
+| `slice` | [Slice](../android.app.slice/Slice.md):Represents the UI content and the action for the inline suggestion. The Slice should be constructed using the Content builder provided in the androidx autofill library e.g.`androidx.autofill.inline.v1.InlineSuggestionUi.Content.Builder`and then converted to a Slice with`androidx.autofill.inline.UiVersions.Content#getSlice()`. This value cannot be`null`. |
+| `inlinePresentationSpec` | [InlinePresentationSpec](../android.widget.inline/InlinePresentationSpec.md):Specifies the UI specification for the inline suggestion. This value cannot be`null`. |
+| `pinned` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):Indicates whether the UI should be pinned, hence non-scrollable and non-filterable, in the host. However, it's eventually up to the host whether the UI is pinned or not. Also a [Dataset](Dataset.md) with a pinned inline presentation will not be replaced by the new data set returned from authentication intent. See [Dataset.Builder.setAuthentication(android.content.IntentSender)](../android/service/autofill/Dataset.Builder.md))for more information. |
 | --- | --- |
 
 ## Public methods
@@ -85,12 +85,12 @@ Creates a presentation for the inline suggestion tooltip
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `slice` | [Slice](../android/app/slice/Slice.md):Represents the UI content and the action for the inline suggestion tooltip. This value cannot be`null`. |
-| `spec` | [InlinePresentationSpec](../android/widget/inline/InlinePresentationSpec.md):Specifies the UI specification for the inline suggestion tooltip. This value cannot be`null`. |
+| `slice` | [Slice](../android.app.slice/Slice.md):Represents the UI content and the action for the inline suggestion tooltip. This value cannot be`null`. |
+| `spec` | [InlinePresentationSpec](../android.widget.inline/InlinePresentationSpec.md):Specifies the UI specification for the inline suggestion tooltip. This value cannot be`null`. |
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [InlinePresentation](../android/service/autofill/InlinePresentation.md) | An [InlinePresentation](../android/service/autofill/InlinePresentation.md) for the inline suggestion tooltip This value cannot be`null`. |
+| [InlinePresentation](InlinePresentation.md) | An [InlinePresentation](InlinePresentation.md) for the inline suggestion tooltip This value cannot be`null`. |
 
 ### describeContents
 
@@ -102,7 +102,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) |
 
 ### equals
 
@@ -145,7 +145,7 @@ Specifies the UI specification for the inline suggestion.
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [InlinePresentationSpec](../android/widget/inline/InlinePresentationSpec.md) | This value cannot be`null`. |
+| [InlinePresentationSpec](../android.widget.inline/InlinePresentationSpec.md) | This value cannot be`null`. |
 
 ### getSlice
 
@@ -161,7 +161,7 @@ The Slice should be constructed using the Content builder provided in the androi
 
 | Return ||
 |---------------------------------------------------------------------------------------|-----------------------------|
-| [Slice](../android/app/slice/Slice.md) | This value cannot be`null`. |
+| [Slice](../android.app.slice/Slice.md) | This value cannot be`null`. |
 
 ### hashCode
 
@@ -185,7 +185,7 @@ fun isPinned(): Boolean
 
 Indicates whether the UI should be pinned, hence non-scrollable and non-filterable, in the host. However, it's eventually up to the host whether the UI is pinned or not.
 
-Also a [Dataset](../android/service/autofill/Dataset.md) with a pinned inline presentation will not be replaced by the new data set returned from authentication intent. See [Dataset.Builder.setAuthentication(android.content.IntentSender)](../android/service/autofill/Dataset.Builder.md))for more information. 
+Also a [Dataset](Dataset.md) with a pinned inline presentation will not be replaced by the new data set returned from authentication intent. See [Dataset.Builder.setAuthentication(android.content.IntentSender)](../android/service/autofill/Dataset.Builder.md))for more information. 
 
 ### toString
 
@@ -214,8 +214,8 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](../android/os/Parcel.md):This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android.os/Parcel.md):This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

@@ -13,7 +13,7 @@ interface OnSuggestionListener
 
 | [android.widget.SearchView.OnSuggestionListener](../android/widget/SearchView.OnSuggestionListener.md) |
 
-Callback interface for selection events on suggestions. These callbacks are only relevant when a SearchableInfo has been specified by [setSearchableInfo](../android/widget/SearchView.md)).
+Callback interface for selection events on suggestions. These callbacks are only relevant when a SearchableInfo has been specified by [setSearchableInfo](SearchView.md)).
 
 ## Summary
 

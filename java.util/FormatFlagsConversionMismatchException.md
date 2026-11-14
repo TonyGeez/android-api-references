@@ -11,32 +11,32 @@ open class FormatFlagsConversionMismatchException : IllegalFormatException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||||
 | --- | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||||
-| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) ||||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) |||||
+| | | ↳ | [java.lang.RuntimeException](../java.lang/RuntimeException.md) ||||
 | --- | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.IllegalArgumentException](../java/lang/IllegalArgumentException.md) |||
-| | | | | ↳ | [java.util.IllegalFormatException](../java/util/IllegalFormatException.md) ||
-| | | | | | ↳ | [java.util.FormatFlagsConversionMismatchException](../java/util/FormatFlagsConversionMismatchException.md) |
+| | | | ↳ | [java.lang.IllegalArgumentException](../java.lang/IllegalArgumentException.md) |||
+| | | | | ↳ | [java.util.IllegalFormatException](IllegalFormatException.md) ||
+| | | | | | ↳ | [java.util.FormatFlagsConversionMismatchException](FormatFlagsConversionMismatchException.md) |
 | --- | --- | --- | --- | --- | --- | --- |
 
 Unchecked exception thrown when a conversion and flag are incompatible.
 
-Unless otherwise specified, passing a`null`argument to any method or constructor in this class will cause a [NullPointerException](../java/lang/NullPointerException.md) to be thrown.
+Unless otherwise specified, passing a`null`argument to any method or constructor in this class will cause a [NullPointerException](../java.lang/NullPointerException.md) to be thrown.
 
 ## Summary
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [FormatFlagsConversionMismatchException](../java/util/FormatFlagsConversionMismatchException.md))`(`f:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `c:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Constructs an instance of this class with the specified flag and conversion. |
+| [FormatFlagsConversionMismatchException](FormatFlagsConversionMismatchException.md))`(`f:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `c:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Constructs an instance of this class with the specified flag and conversion. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [getConversion](../java/util/FormatFlagsConversionMismatchException.md))`()` Returns the incompatible conversion. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getFlags](../java/util/FormatFlagsConversionMismatchException.md))`()` Returns the incompatible flag. |
+| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [getConversion](FormatFlagsConversionMismatchException.md))`()` Returns the incompatible conversion. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getFlags](FormatFlagsConversionMismatchException.md))`()` Returns the incompatible flag. |
 
 | Properties ||
 |---------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [message](../java/util/FormatFlagsConversionMismatchException.md) <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [message](FormatFlagsConversionMismatchException.md) <br /> |
 
 ## Public constructors
 

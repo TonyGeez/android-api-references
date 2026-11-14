@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # SubscriptSpan
 
-Kotlin| [Java](../android/text/style/SubscriptSpan.md) 
+Kotlin| [Java](SubscriptSpan.md) 
 | --- | --- |
 
 ```
@@ -13,9 +13,9 @@ open class SubscriptSpan : MetricAffectingSpan, ParcelableSpan
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.text.style.CharacterStyle](../android/text/style/CharacterStyle.md) |||
-| | ↳ | [android.text.style.MetricAffectingSpan](../android/text/style/MetricAffectingSpan.md) ||
-| | | ↳ | [android.text.style.SubscriptSpan](../android/text/style/SubscriptSpan.md) |
+| ↳ | [android.text.style.CharacterStyle](CharacterStyle.md) |||
+| | ↳ | [android.text.style.MetricAffectingSpan](MetricAffectingSpan.md) ||
+| | | ↳ | [android.text.style.SubscriptSpan](SubscriptSpan.md) |
 | --- | --- | --- | --- |
 
 The span that moves the position of the text baseline lower.
@@ -35,24 +35,24 @@ Text with`SubscriptSpan`. Note: Since the span affects the position of the text,
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SubscriptSpan](../android/text/style/SubscriptSpan.md))`()` Creates a [SubscriptSpan](../android/text/style/SubscriptSpan.md). |
-| [SubscriptSpan](../android/text/style/SubscriptSpan.md))`(`src:` ` [Parcel](../android/os/Parcel.md)`)` Creates a [SubscriptSpan](../android/text/style/SubscriptSpan.md) from a parcel. |
+| [SubscriptSpan](SubscriptSpan.md))`()` Creates a [SubscriptSpan](SubscriptSpan.md). |
+| [SubscriptSpan](SubscriptSpan.md))`(`src:` ` [Parcel](../android.os/Parcel.md)`)` Creates a [SubscriptSpan](SubscriptSpan.md) from a parcel. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/text/style/SubscriptSpan.md))`()` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSpanTypeId](../android/text/style/SubscriptSpan.md))`()` <br /> |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/text/style/SubscriptSpan.md))`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](SubscriptSpan.md))`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSpanTypeId](SubscriptSpan.md))`()` <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](SubscriptSpan.md))`()` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateDrawState](../android/text/style/SubscriptSpan.md))`(`textPaint:` ` [TextPaint](../android/text/TextPaint.md)`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateMeasureState](../android/text/style/SubscriptSpan.md))`(`textPaint:` ` [TextPaint](../android/text/TextPaint.md)`)` Classes that extend MetricAffectingSpan implement this method to update the text formatting in a way that can change the width or height of characters. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/text/style/SubscriptSpan.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateDrawState](SubscriptSpan.md))`(`textPaint:` ` [TextPaint](../android.text/TextPaint.md)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateMeasureState](SubscriptSpan.md))`(`textPaint:` ` [TextPaint](../android.text/TextPaint.md)`)` Classes that extend MetricAffectingSpan implement this method to update the text formatting in a way that can change the width or height of characters. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](SubscriptSpan.md))`(`dest:` ` [Parcel](../android.os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
 
 | Inherited functions ||
 |---|---|
-| From class [MetricAffectingSpan](../android/text/style/MetricAffectingSpan.md) |---------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [MetricAffectingSpan](../android/text/style/MetricAffectingSpan.md)! | [getUnderlying](../android/text/style/MetricAffectingSpan.md))`()` <br /> Returns "this" for most MetricAffectingSpans, but for MetricAffectingSpans that were generated by [wrap](../android/text/style/CharacterStyle.md)), returns the underlying MetricAffectingSpan. <br /> | ||
-| From class [CharacterStyle](../android/text/style/CharacterStyle.md) |-----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateDrawState](../android/text/style/CharacterStyle.md))`(`tp:` ` [TextPaint](../android/text/TextPaint.md)!`)` <br /> | | [CharacterStyle](../android/text/style/CharacterStyle.md)! | [wrap](../android/text/style/CharacterStyle.md))`(`cs:` ` [CharacterStyle](../android/text/style/CharacterStyle.md)!`)` <br /> A given CharacterStyle can only applied to a single region of a given Spanned. If you need to attach the same CharacterStyle to multiple regions, you can use this method to wrap it with a new object that will have the same effect but be a distinct object so that it can also be attached without conflict. <br /> | ||
+| From class [MetricAffectingSpan](MetricAffectingSpan.md) |---------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [MetricAffectingSpan](MetricAffectingSpan.md)! | [getUnderlying](MetricAffectingSpan.md))`()` <br /> Returns "this" for most MetricAffectingSpans, but for MetricAffectingSpans that were generated by [wrap](CharacterStyle.md)), returns the underlying MetricAffectingSpan. <br /> | ||
+| From class [CharacterStyle](CharacterStyle.md) |-----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateDrawState](CharacterStyle.md))`(`tp:` ` [TextPaint](../android.text/TextPaint.md)!`)` <br /> | | [CharacterStyle](CharacterStyle.md)! | [wrap](CharacterStyle.md))`(`cs:` ` [CharacterStyle](CharacterStyle.md)!`)` <br /> A given CharacterStyle can only applied to a single region of a given Spanned. If you need to attach the same CharacterStyle to multiple regions, you can use this method to wrap it with a new object that will have the same effect but be a distinct object so that it can also be attached without conflict. <br /> | ||
 
 ## Public constructors
 
@@ -64,7 +64,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 SubscriptSpan()
 ```
 
-Creates a [SubscriptSpan](../android/text/style/SubscriptSpan.md). 
+Creates a [SubscriptSpan](SubscriptSpan.md). 
 
 ### SubscriptSpan
 
@@ -74,11 +74,11 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 SubscriptSpan(src: Parcel)
 ```
 
-Creates a [SubscriptSpan](../android/text/style/SubscriptSpan.md) from a parcel.
+Creates a [SubscriptSpan](SubscriptSpan.md) from a parcel.
 
 | Parameters ||
 |-------|--------------------------------------------------------------------------------------------------------------|
-| `src` | [Parcel](../android/os/Parcel.md):This value cannot be`null`. |
+| `src` | [Parcel](../android.os/Parcel.md):This value cannot be`null`. |
 
 ## Public methods
 
@@ -92,7 +92,7 @@ open fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) |
 
 ### getSpanTypeId
 
@@ -124,7 +124,7 @@ open fun updateDrawState(textPaint: TextPaint): Unit
 
 | Parameters ||
 |-------------|----------------------------------------------------------------------------------------------------------------------|
-| `textPaint` | [TextPaint](../android/text/TextPaint.md):This value cannot be`null`. |
+| `textPaint` | [TextPaint](../android.text/TextPaint.md):This value cannot be`null`. |
 
 ### updateMeasureState
 
@@ -138,7 +138,7 @@ Classes that extend MetricAffectingSpan implement this method to update the text
 
 | Parameters ||
 |-------------|----------------------------------------------------------------------------------------------------------------------|
-| `textPaint` | [TextPaint](../android/text/TextPaint.md):This value cannot be`null`. |
+| `textPaint` | [TextPaint](../android.text/TextPaint.md):This value cannot be`null`. |
 
 ### writeToParcel
 
@@ -153,5 +153,5 @@ open fun writeToParcel(
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](../android/os/Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android.os/Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |

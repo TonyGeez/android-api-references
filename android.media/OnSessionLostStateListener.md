@@ -19,7 +19,7 @@ Interface definition for a callback to be invoked when the session state has bee
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSessionLostState](../android/media/MediaDrm.OnSessionLostStateListener.md))`(`md:` ` [MediaDrm](../android/media/MediaDrm.md)`, `sessionId:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`)` Called when session state has lost state, to inform the app about the condition so it can close the session and open a new one to resume operation. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSessionLostState](../android/media/MediaDrm.OnSessionLostStateListener.md))`(`md:` ` [MediaDrm](MediaDrm.md)`, `sessionId:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`)` Called when session state has lost state, to inform the app about the condition so it can close the session and open a new one to resume operation. |
 
 ## Public methods
 
@@ -38,5 +38,5 @@ Called when session state has lost state, to inform the app about the condition 
 
 | Parameters ||
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `md` | [MediaDrm](../android/media/MediaDrm.md):the MediaDrm object on which the event occurred This value cannot be`null`. |
+| `md` | [MediaDrm](MediaDrm.md):the MediaDrm object on which the event occurred This value cannot be`null`. |
 | `sessionId` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html):the DRM session ID on which the event occurred This value cannot be`null`. |

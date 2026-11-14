@@ -4,7 +4,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 
 # LensIntrinsicsSample
 
-Kotlin| [Java](../android/hardware/camera2/params/LensIntrinsicsSample.md) 
+Kotlin| [Java](LensIntrinsicsSample.md) 
 | --- | --- |
 
 ```
@@ -13,24 +13,24 @@ class LensIntrinsicsSample
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.hardware.camera2.params.LensIntrinsicsSample](../android/hardware/camera2/params/LensIntrinsicsSample.md) |
+| ↳ | [android.hardware.camera2.params.LensIntrinsicsSample](LensIntrinsicsSample.md) |
 
-Immutable class to store an [lens intrinsics intra-frame sample](../android/hardware/camera2/CaptureResult.md).
+Immutable class to store an [lens intrinsics intra-frame sample](../android.hardware.camera2/CaptureResult.md).
 
 ## Summary
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [LensIntrinsicsSample](../android/hardware/camera2/params/LensIntrinsicsSample.md))`(`timestampNs:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `lensIntrinsics:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)`)` Create a new [LensIntrinsicsSample](../android/hardware/camera2/params/LensIntrinsicsSample.md). |
+| [LensIntrinsicsSample](LensIntrinsicsSample.md))`(`timestampNs:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `lensIntrinsics:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)`)` Create a new [LensIntrinsicsSample](LensIntrinsicsSample.md). |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/hardware/camera2/params/LensIntrinsicsSample.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Check if this [LensIntrinsicsSample](../android/hardware/camera2/params/LensIntrinsicsSample.md) is equal to another [LensIntrinsicsSample](../android/hardware/camera2/params/LensIntrinsicsSample.md). |
-| [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html) | [getLensIntrinsics](../android/hardware/camera2/params/LensIntrinsicsSample.md))`()` Get the lens [intrinsics](../android/hardware/camera2/CaptureResult.md) calibration |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTimestampNanos](../android/hardware/camera2/params/LensIntrinsicsSample.md))`()` Get the timestamp in nanoseconds. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](LensIntrinsicsSample.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Check if this [LensIntrinsicsSample](LensIntrinsicsSample.md) is equal to another [LensIntrinsicsSample](LensIntrinsicsSample.md). |
+| [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html) | [getLensIntrinsics](LensIntrinsicsSample.md))`()` Get the lens [intrinsics](../android.hardware.camera2/CaptureResult.md) calibration |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTimestampNanos](LensIntrinsicsSample.md))`()` Get the timestamp in nanoseconds. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/hardware/camera2/params/LensIntrinsicsSample.md))`()` Returns a hash code value for the object. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/hardware/camera2/params/LensIntrinsicsSample.md))`()` Return the LensIntrinsicsSample as a string representation. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](LensIntrinsicsSample.md))`()` Returns a hash code value for the object. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](LensIntrinsicsSample.md))`()` Return the LensIntrinsicsSample as a string representation. |
 
 ## Public constructors
 
@@ -44,14 +44,14 @@ LensIntrinsicsSample(
     lensIntrinsics: FloatArray)
 ```
 
-Create a new [LensIntrinsicsSample](../android/hardware/camera2/params/LensIntrinsicsSample.md).
+Create a new [LensIntrinsicsSample](LensIntrinsicsSample.md).
 
-[LensIntrinsicsSample](../android/hardware/camera2/params/LensIntrinsicsSample.md) contains the timestamp and the [CaptureResult.LENS_INTRINSIC_CALIBRATION](../android/hardware/camera2/CaptureResult.md) sample.
+[LensIntrinsicsSample](LensIntrinsicsSample.md) contains the timestamp and the [CaptureResult.LENS_INTRINSIC_CALIBRATION](../android.hardware.camera2/CaptureResult.md) sample.
 
 | Parameters ||
 |------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `timestampNs` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):timestamp in nanoseconds of the lens intrinsics sample. This uses the same time basis as [CaptureResult.SENSOR_TIMESTAMP](../android/hardware/camera2/CaptureResult.md). |
-| `lensIntrinsics` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html):the lens [intrinsic](../android/hardware/camera2/CaptureResult.md) calibration for the sample. This value cannot be`null`. |
+| `timestampNs` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):timestamp in nanoseconds of the lens intrinsics sample. This uses the same time basis as [CaptureResult.SENSOR_TIMESTAMP](../android.hardware.camera2/CaptureResult.md). |
+| `lensIntrinsics` | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html):the lens [intrinsic](../android.hardware.camera2/CaptureResult.md) calibration for the sample. This value cannot be`null`. |
 
 | Exceptions ||
 |--------------------------------------|----------------------------------------------|
@@ -67,7 +67,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun equals(other: Any?): Boolean
 ```
 
-Check if this [LensIntrinsicsSample](../android/hardware/camera2/params/LensIntrinsicsSample.md) is equal to another [LensIntrinsicsSample](../android/hardware/camera2/params/LensIntrinsicsSample.md).
+Check if this [LensIntrinsicsSample](LensIntrinsicsSample.md) is equal to another [LensIntrinsicsSample](LensIntrinsicsSample.md).
 
 Two samples are only equal if and only if each of the lens intrinsics are equal.
 
@@ -87,7 +87,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun getLensIntrinsics(): FloatArray
 ```
 
-Get the lens [intrinsics](../android/hardware/camera2/CaptureResult.md) calibration
+Get the lens [intrinsics](../android.hardware.camera2/CaptureResult.md) calibration
 
 | Return ||
 |-------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
@@ -95,7 +95,7 @@ Get the lens [intrinsics](../android/hardware/camera2/CaptureResult.md) calibrat
 
 **See Also**
 
-- [android.hardware.camera2.CaptureResult#LENS_INTRINSIC_CALIBRATION](../android/hardware/camera2/CaptureResult.md) 
+- [android.hardware.camera2.CaptureResult#LENS_INTRINSIC_CALIBRATION](../android.hardware.camera2/CaptureResult.md) 
 
 ### getTimestampNanos
 
@@ -107,7 +107,7 @@ fun getTimestampNanos(): Long
 
 Get the timestamp in nanoseconds.
 
-The timestamps are in the same time basis as and comparable to [android.sensor.timestamp](../android/hardware/camera2/CaptureResult.md).
+The timestamps are in the same time basis as and comparable to [android.sensor.timestamp](../android.hardware.camera2/CaptureResult.md).
 
 | Return ||
 |------------------------------------------------------------------------------|----------------------------------------|
@@ -121,13 +121,13 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun hashCode(): Int
 ```
 
-Returns a hash code value for the object. This method is supported for the benefit of hash tables such as those provided by [java.util.HashMap](../java/util/HashMap.md).
+Returns a hash code value for the object. This method is supported for the benefit of hash tables such as those provided by [java.util.HashMap](../java.util/HashMap.md).
 
 The general contract of`hashCode`is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the`hashCode`method must consistently return the same integer, provided no information used in`equals`comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the [equals](../java/lang/Object.md))method, then calling the`hashCode`method on each of the two objects must produce the same integer result.
-- It is*not* required that if two objects are unequal according to the [equals](../java/lang/Object.md))method, then calling the`hashCode`method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the [equals](../java.lang/Object.md))method, then calling the`hashCode`method on each of the two objects must produce the same integer result.
+- It is*not* required that if two objects are unequal according to the [equals](../java.lang/Object.md))method, then calling the`hashCode`method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------|
@@ -147,4 +147,4 @@ Return the LensIntrinsicsSample as a string representation.
 
 | Return ||
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | string representation of [LensIntrinsicsSample](../android/hardware/camera2/params/LensIntrinsicsSample.md) |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | string representation of [LensIntrinsicsSample](LensIntrinsicsSample.md) |

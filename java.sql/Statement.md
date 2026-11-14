@@ -8,12 +8,12 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface Statement : AutoCloseable, Wrapper
 ```
 
-| [java.sql.Statement](../java/sql/Statement.md) |
+| [java.sql.Statement](Statement.md) |
 
-| Known Direct Subclasses [PreparedStatement](../java/sql/PreparedStatement.md) |------------------------------------------------------------------------------------------------|--------------------------------------------------------| | [PreparedStatement](../java/sql/PreparedStatement.md) | An object that represents a precompiled SQL statement. | |
+| Known Direct Subclasses [PreparedStatement](PreparedStatement.md) |------------------------------------------------------------------------------------------------|--------------------------------------------------------| | [PreparedStatement](PreparedStatement.md) | An object that represents a precompiled SQL statement. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [CallableStatement](../java/sql/CallableStatement.md) |------------------------------------------------------------------------------------------------|------------------------------------------------------| | [CallableStatement](../java/sql/CallableStatement.md) | The interface used to execute SQL stored procedures. | |
+| Known Indirect Subclasses [CallableStatement](CallableStatement.md) |------------------------------------------------------------------------------------------------|------------------------------------------------------| | [CallableStatement](CallableStatement.md) | The interface used to execute SQL stored procedures. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 The object used for executing a static SQL statement and returning the results it produces.
@@ -24,75 +24,75 @@ By default, only one`ResultSet`object per`Statement`object can be open at the sa
 
 | Constants ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CLOSE_ALL_RESULTS](../java/sql/Statement.md) The constant indicating that all`ResultSet`objects that have previously been kept open should be closed when calling`getMoreResults`. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CLOSE_CURRENT_RESULT](../java/sql/Statement.md) The constant indicating that the current`ResultSet`object should be closed when calling`getMoreResults`. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXECUTE_FAILED](../java/sql/Statement.md) The constant indicating that an error occured while executing a batch statement. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CLOSE_ALL_RESULTS](Statement.md) The constant indicating that all`ResultSet`objects that have previously been kept open should be closed when calling`getMoreResults`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CLOSE_CURRENT_RESULT](Statement.md) The constant indicating that the current`ResultSet`object should be closed when calling`getMoreResults`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXECUTE_FAILED](Statement.md) The constant indicating that an error occured while executing a batch statement. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [KEEP_CURRENT_RESULT](../java/sql/Statement.md) The constant indicating that the current`ResultSet`object should not be closed when calling`getMoreResults`. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NO_GENERATED_KEYS](../java/sql/Statement.md) The constant indicating that generated keys should not be made available for retrieval. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RETURN_GENERATED_KEYS](../java/sql/Statement.md) The constant indicating that generated keys should be made available for retrieval. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [KEEP_CURRENT_RESULT](Statement.md) The constant indicating that the current`ResultSet`object should not be closed when calling`getMoreResults`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NO_GENERATED_KEYS](Statement.md) The constant indicating that generated keys should not be made available for retrieval. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RETURN_GENERATED_KEYS](Statement.md) The constant indicating that generated keys should be made available for retrieval. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SUCCESS_NO_INFO](../java/sql/Statement.md) The constant indicating that a batch statement executed successfully but that no count of the number of rows it affected is available. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SUCCESS_NO_INFO](Statement.md) The constant indicating that a batch statement executed successfully but that no count of the number of rows it affected is available. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addBatch](../java/sql/Statement.md))`(`sql:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Adds the given SQL command to the current list of commmands for this`Statement`object. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [cancel](../java/sql/Statement.md))`()` Cancels this`Statement`object if both the DBMS and driver support aborting an SQL statement. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearBatch](../java/sql/Statement.md))`()` Empties this`Statement`object's current list of SQL commands. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addBatch](Statement.md))`(`sql:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Adds the given SQL command to the current list of commmands for this`Statement`object. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [cancel](Statement.md))`()` Cancels this`Statement`object if both the DBMS and driver support aborting an SQL statement. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearBatch](Statement.md))`()` Empties this`Statement`object's current list of SQL commands. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearWarnings](../java/sql/Statement.md))`()` Clears all the warnings reported on this`Statement`object. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../java/sql/Statement.md))`()` Releases this`Statement`object's database and JDBC resources immediately instead of waiting for this to happen when it is automatically closed. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [execute](../java/sql/Statement.md))`(`sql:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Executes the given SQL statement, which may return multiple results. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearWarnings](Statement.md))`()` Clears all the warnings reported on this`Statement`object. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](Statement.md))`()` Releases this`Statement`object's database and JDBC resources immediately instead of waiting for this to happen when it is automatically closed. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [execute](Statement.md))`(`sql:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Executes the given SQL statement, which may return multiple results. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [execute](../java/sql/Statement.md))`(`sql:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `autoGeneratedKeys:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Executes the given SQL statement, which may return multiple results, and signals the driver that any auto-generated keys should be made available for retrieval. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [execute](../java/sql/Statement.md))`(`sql:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `columnIndexes:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` Executes the given SQL statement, which may return multiple results, and signals the driver that the auto-generated keys indicated in the given array should be made available for retrieval. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [execute](../java/sql/Statement.md))`(`sql:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `columnNames:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Executes the given SQL statement, which may return multiple results, and signals the driver that the auto-generated keys indicated in the given array should be made available for retrieval. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [execute](Statement.md))`(`sql:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `autoGeneratedKeys:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Executes the given SQL statement, which may return multiple results, and signals the driver that any auto-generated keys should be made available for retrieval. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [execute](Statement.md))`(`sql:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `columnIndexes:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` Executes the given SQL statement, which may return multiple results, and signals the driver that the auto-generated keys indicated in the given array should be made available for retrieval. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [execute](Statement.md))`(`sql:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `columnNames:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Executes the given SQL statement, which may return multiple results, and signals the driver that the auto-generated keys indicated in the given array should be made available for retrieval. |
 | --- | --- |
-| abstract [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | [executeBatch](../java/sql/Statement.md))`()` Submits a batch of commands to the database for execution and if all commands execute successfully, returns an array of update counts. |
-| abstract [ResultSet](../java/sql/ResultSet.md)! | [executeQuery](../java/sql/Statement.md))`(`sql:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Executes the given SQL statement, which returns a single`ResultSet`object. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [executeUpdate](../java/sql/Statement.md))`(`sql:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Executes the given SQL statement, which may be an`INSERT`,`UPDATE`, or`DELETE`statement or an SQL statement that returns nothing, such as an SQL DDL statement. |
+| abstract [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | [executeBatch](Statement.md))`()` Submits a batch of commands to the database for execution and if all commands execute successfully, returns an array of update counts. |
+| abstract [ResultSet](ResultSet.md)! | [executeQuery](Statement.md))`(`sql:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Executes the given SQL statement, which returns a single`ResultSet`object. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [executeUpdate](Statement.md))`(`sql:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Executes the given SQL statement, which may be an`INSERT`,`UPDATE`, or`DELETE`statement or an SQL statement that returns nothing, such as an SQL DDL statement. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [executeUpdate](../java/sql/Statement.md))`(`sql:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `autoGeneratedKeys:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Executes the given SQL statement and signals the driver with the given flag about whether the auto-generated keys produced by this`Statement`object should be made available for retrieval. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [executeUpdate](../java/sql/Statement.md))`(`sql:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `columnIndexes:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` Executes the given SQL statement and signals the driver that the auto-generated keys indicated in the given array should be made available for retrieval. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [executeUpdate](../java/sql/Statement.md))`(`sql:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `columnNames:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Executes the given SQL statement and signals the driver that the auto-generated keys indicated in the given array should be made available for retrieval. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [executeUpdate](Statement.md))`(`sql:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `autoGeneratedKeys:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Executes the given SQL statement and signals the driver with the given flag about whether the auto-generated keys produced by this`Statement`object should be made available for retrieval. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [executeUpdate](Statement.md))`(`sql:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `columnIndexes:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` Executes the given SQL statement and signals the driver that the auto-generated keys indicated in the given array should be made available for retrieval. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [executeUpdate](Statement.md))`(`sql:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `columnNames:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Executes the given SQL statement and signals the driver that the auto-generated keys indicated in the given array should be made available for retrieval. |
 | --- | --- |
-| abstract [Connection](../java/sql/Connection.md)! | [getConnection](../java/sql/Statement.md))`()` Retrieves the`Connection`object that produced this`Statement`object. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFetchDirection](../java/sql/Statement.md))`()` Retrieves the direction for fetching rows from database tables that is the default for result sets generated from this`Statement`object. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFetchSize](../java/sql/Statement.md))`()` Retrieves the number of result set rows that is the default fetch size for`ResultSet`objects generated from this`Statement`object. |
+| abstract [Connection](Connection.md)! | [getConnection](Statement.md))`()` Retrieves the`Connection`object that produced this`Statement`object. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFetchDirection](Statement.md))`()` Retrieves the direction for fetching rows from database tables that is the default for result sets generated from this`Statement`object. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFetchSize](Statement.md))`()` Retrieves the number of result set rows that is the default fetch size for`ResultSet`objects generated from this`Statement`object. |
 | --- | --- |
-| abstract [ResultSet](../java/sql/ResultSet.md)! | [getGeneratedKeys](../java/sql/Statement.md))`()` Retrieves any auto-generated keys created as a result of executing this`Statement`object. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxFieldSize](../java/sql/Statement.md))`()` Retrieves the maximum number of bytes that can be returned for character and binary column values in a`ResultSet`object produced by this`Statement`object. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxRows](../java/sql/Statement.md))`()` Retrieves the maximum number of rows that a`ResultSet`object produced by this`Statement`object can contain. |
+| abstract [ResultSet](ResultSet.md)! | [getGeneratedKeys](Statement.md))`()` Retrieves any auto-generated keys created as a result of executing this`Statement`object. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxFieldSize](Statement.md))`()` Retrieves the maximum number of bytes that can be returned for character and binary column values in a`ResultSet`object produced by this`Statement`object. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxRows](Statement.md))`()` Retrieves the maximum number of rows that a`ResultSet`object produced by this`Statement`object can contain. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getMoreResults](../java/sql/Statement.md))`()` Moves to this`Statement`object's next result, returns`true`if it is a`ResultSet`object, and implicitly closes any current`ResultSet`object(s) obtained with the method`getResultSet`. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getMoreResults](../java/sql/Statement.md))`(`current:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Moves to this`Statement`object's next result, deals with any current`ResultSet`object(s) according to the instructions specified by the given flag, and returns`true`if the next result is a`ResultSet`object. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getQueryTimeout](../java/sql/Statement.md))`()` Retrieves the number of seconds the driver will wait for a`Statement`object to execute. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getMoreResults](Statement.md))`()` Moves to this`Statement`object's next result, returns`true`if it is a`ResultSet`object, and implicitly closes any current`ResultSet`object(s) obtained with the method`getResultSet`. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getMoreResults](Statement.md))`(`current:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Moves to this`Statement`object's next result, deals with any current`ResultSet`object(s) according to the instructions specified by the given flag, and returns`true`if the next result is a`ResultSet`object. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getQueryTimeout](Statement.md))`()` Retrieves the number of seconds the driver will wait for a`Statement`object to execute. |
 | --- | --- |
-| abstract [ResultSet](../java/sql/ResultSet.md)! | [getResultSet](../java/sql/Statement.md))`()` Retrieves the current result as a`ResultSet`object. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getResultSetConcurrency](../java/sql/Statement.md))`()` Retrieves the result set concurrency for`ResultSet`objects generated by this`Statement`object. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getResultSetHoldability](../java/sql/Statement.md))`()` Retrieves the result set holdability for`ResultSet`objects generated by this`Statement`object. |
+| abstract [ResultSet](ResultSet.md)! | [getResultSet](Statement.md))`()` Retrieves the current result as a`ResultSet`object. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getResultSetConcurrency](Statement.md))`()` Retrieves the result set concurrency for`ResultSet`objects generated by this`Statement`object. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getResultSetHoldability](Statement.md))`()` Retrieves the result set holdability for`ResultSet`objects generated by this`Statement`object. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getResultSetType](../java/sql/Statement.md))`()` Retrieves the result set type for`ResultSet`objects generated by this`Statement`object. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getUpdateCount](../java/sql/Statement.md))`()` Retrieves the current result as an update count; if the result is a`ResultSet`object or there are no more results, -1 is returned. |
-| abstract [SQLWarning](../java/sql/SQLWarning.md)! | [getWarnings](../java/sql/Statement.md))`()` Retrieves the first warning reported by calls on this`Statement`object. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getResultSetType](Statement.md))`()` Retrieves the result set type for`ResultSet`objects generated by this`Statement`object. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getUpdateCount](Statement.md))`()` Retrieves the current result as an update count; if the result is a`ResultSet`object or there are no more results, -1 is returned. |
+| abstract [SQLWarning](SQLWarning.md)! | [getWarnings](Statement.md))`()` Retrieves the first warning reported by calls on this`Statement`object. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isClosed](../java/sql/Statement.md))`()` Retrieves whether this`Statement`object has been closed. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPoolable](../java/sql/Statement.md))`()` Returns a value indicating whether the`Statement`is poolable or not. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCursorName](../java/sql/Statement.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the SQL cursor name to the given`String`, which will be used by subsequent`Statement`object`execute`methods. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isClosed](Statement.md))`()` Retrieves whether this`Statement`object has been closed. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPoolable](Statement.md))`()` Returns a value indicating whether the`Statement`is poolable or not. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCursorName](Statement.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the SQL cursor name to the given`String`, which will be used by subsequent`Statement`object`execute`methods. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEscapeProcessing](../java/sql/Statement.md))`(`enable:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets escape processing on or off. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFetchDirection](../java/sql/Statement.md))`(`direction:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gives the driver a hint as to the direction in which rows will be processed in`ResultSet`objects created using this`Statement`object. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFetchSize](../java/sql/Statement.md))`(`rows:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gives the JDBC driver a hint as to the number of rows that should be fetched from the database when more rows are needed for`ResultSet`objects genrated by this`Statement`. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEscapeProcessing](Statement.md))`(`enable:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets escape processing on or off. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFetchDirection](Statement.md))`(`direction:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gives the driver a hint as to the direction in which rows will be processed in`ResultSet`objects created using this`Statement`object. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFetchSize](Statement.md))`(`rows:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gives the JDBC driver a hint as to the number of rows that should be fetched from the database when more rows are needed for`ResultSet`objects genrated by this`Statement`. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMaxFieldSize](../java/sql/Statement.md))`(`max:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the limit for the maximum number of bytes that can be returned for character and binary column values in a`ResultSet`object produced by this`Statement`object. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMaxRows](../java/sql/Statement.md))`(`max:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the limit for the maximum number of rows that any`ResultSet`object generated by this`Statement`object can contain to the given number. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPoolable](../java/sql/Statement.md))`(`poolable:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Requests that a`Statement`be pooled or not pooled. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMaxFieldSize](Statement.md))`(`max:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the limit for the maximum number of bytes that can be returned for character and binary column values in a`ResultSet`object produced by this`Statement`object. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMaxRows](Statement.md))`(`max:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the limit for the maximum number of rows that any`ResultSet`object generated by this`Statement`object can contain to the given number. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPoolable](Statement.md))`(`poolable:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Requests that a`Statement`be pooled or not pooled. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setQueryTimeout](../java/sql/Statement.md))`(`seconds:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the number of seconds the driver will wait for a`Statement`object to execute to the given number of seconds. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setQueryTimeout](Statement.md))`(`seconds:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the number of seconds the driver will wait for a`Statement`object to execute to the given number of seconds. |
 
 | Inherited functions ||
 |---|---|
-| From class [Wrapper](../java/sql/Wrapper.md) |------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isWrapperFor](../java/sql/Wrapper.md))`(`iface:` ` [Class](../java/lang/Class.md)<*>!`)` <br /> Returns true if this either implements the interface argument or is directly or indirectly a wrapper for an object that does. Returns false otherwise. If this implements the interface then return true, else if this is a wrapper then return the result of recursively calling`isWrapperFor`on the wrapped object. If this does not implement the interface and is not a wrapper, return false. This method should be implemented as a low-cost operation compared to`unwrap`so that callers can use this method to avoid expensive`unwrap`calls that may fail. If this method returns true then calling`unwrap`with the same argument should succeed. <br /> | | T | [unwrap](../java/sql/Wrapper.md))`(`iface:` ` [Class](../java/lang/Class.md)<T>!`)` <br /> Returns an object that implements the given interface to allow access to non-standard methods, or standard methods not exposed by the proxy. If the receiver implements the interface then the result is the receiver or a proxy for the receiver. If the receiver is a wrapper and the wrapped object implements the interface then the result is the wrapped object or a proxy for the wrapped object. Otherwise return the the result of calling`unwrap`recursively on the wrapped object or a proxy for that result. If the receiver is not a wrapper and does not implement the interface, then an`SQLException`is thrown. <br /> | ||
+| From class [Wrapper](Wrapper.md) |------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isWrapperFor](Wrapper.md))`(`iface:` ` [Class](../java.lang/Class.md)<*>!`)` <br /> Returns true if this either implements the interface argument or is directly or indirectly a wrapper for an object that does. Returns false otherwise. If this implements the interface then return true, else if this is a wrapper then return the result of recursively calling`isWrapperFor`on the wrapped object. If this does not implement the interface and is not a wrapper, return false. This method should be implemented as a low-cost operation compared to`unwrap`so that callers can use this method to avoid expensive`unwrap`calls that may fail. If this method returns true then calling`unwrap`with the same argument should succeed. <br /> | | T | [unwrap](Wrapper.md))`(`iface:` ` [Class](../java.lang/Class.md)<T>!`)` <br /> Returns an object that implements the given interface to allow access to non-standard methods, or standard methods not exposed by the proxy. If the receiver implements the interface then the result is the receiver or a proxy for the receiver. If the receiver is a wrapper and the wrapped object implements the interface then the result is the wrapped object or a proxy for the wrapped object. Otherwise return the the result of calling`unwrap`recursively on the wrapped object or a proxy for that result. If the receiver is not a wrapper and does not implement the interface, then an`SQLException`is thrown. <br /> | ||
 
 ## Constants
 
@@ -204,8 +204,8 @@ Adds the given SQL command to the current list of commmands for this`Statement`o
 
 **See Also**
 
-- [#executeBatch](../java/sql/Statement.md))
-- [java.sql.DatabaseMetaData#supportsBatchUpdates](../java/sql/DatabaseMetaData.md)) 
+- [#executeBatch](Statement.md))
+- [java.sql.DatabaseMetaData#supportsBatchUpdates](DatabaseMetaData.md)) 
 
 ### cancel
 
@@ -240,8 +240,8 @@ Empties this`Statement`object's current list of SQL commands.
 
 **See Also**
 
-- [#addBatch](../java/sql/Statement.md))
-- [java.sql.DatabaseMetaData#supportsBatchUpdates](../java/sql/DatabaseMetaData.md)) 
+- [#addBatch](Statement.md))
+- [java.sql.DatabaseMetaData#supportsBatchUpdates](DatabaseMetaData.md)) 
 
 ### clearWarnings
 
@@ -305,8 +305,8 @@ The`execute`method executes an SQL statement and indicates the form of the first
 
 **See Also**
 
-- [#getResultSet](../java/sql/Statement.md))
-- [#getUpdateCount](../java/sql/Statement.md)) 
+- [#getResultSet](Statement.md))
+- [#getUpdateCount](Statement.md)) 
 
 ### execute
 
@@ -345,9 +345,9 @@ The`execute`method executes an SQL statement and indicates the form of the first
 
 **See Also**
 
-- [#getResultSet](../java/sql/Statement.md))
-- [#getUpdateCount](../java/sql/Statement.md))
-- [#getGeneratedKeys](../java/sql/Statement.md)) 
+- [#getResultSet](Statement.md))
+- [#getUpdateCount](Statement.md))
+- [#getGeneratedKeys](Statement.md)) 
 
 ### execute
 
@@ -386,8 +386,8 @@ The`execute`method executes an SQL statement and indicates the form of the first
 
 **See Also**
 
-- [#getResultSet](../java/sql/Statement.md))
-- [#getUpdateCount](../java/sql/Statement.md)) 
+- [#getResultSet](Statement.md))
+- [#getUpdateCount](Statement.md)) 
 
 ### execute
 
@@ -426,9 +426,9 @@ The`execute`method executes an SQL statement and indicates the form of the first
 
 **See Also**
 
-- [#getResultSet](../java/sql/Statement.md))
-- [#getUpdateCount](../java/sql/Statement.md))
-- [#getGeneratedKeys](../java/sql/Statement.md)) 
+- [#getResultSet](Statement.md))
+- [#getUpdateCount](Statement.md))
+- [#getGeneratedKeys](Statement.md)) 
 
 ### executeBatch
 
@@ -460,12 +460,12 @@ The possible implementations and return values have been modified in the Java 2 
 | Exceptions ||
 |--------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `java.sql.SQLTimeoutException` | when the driver has determined that the timeout value that was specified by the`setQueryTimeout`method has been exceeded and has at least attempted to cancel the currently running`Statement` |
-| `java.sql.SQLException` | if a database access error occurs, this method is called on a closed`Statement`or the driver does not support batch statements. Throws [BatchUpdateException](../java/sql/BatchUpdateException.md)(a subclass of`SQLException`) if one of the commands sent to the database fails to execute properly or attempts to return a result set. |
+| `java.sql.SQLException` | if a database access error occurs, this method is called on a closed`Statement`or the driver does not support batch statements. Throws [BatchUpdateException](BatchUpdateException.md)(a subclass of`SQLException`) if one of the commands sent to the database fails to execute properly or attempts to return a result set. |
 
 **See Also**
 
-- [#addBatch](../java/sql/Statement.md))
-- [java.sql.DatabaseMetaData#supportsBatchUpdates](../java/sql/DatabaseMetaData.md)) 
+- [#addBatch](Statement.md))
+- [java.sql.DatabaseMetaData#supportsBatchUpdates](DatabaseMetaData.md)) 
 
 ### executeQuery
 
@@ -485,7 +485,7 @@ Executes the given SQL statement, which returns a single`ResultSet`object.
 
 | Return ||
 |---------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| [ResultSet](../java/sql/ResultSet.md)! | a`ResultSet`object that contains the data produced by the given query; never`null` |
+| [ResultSet](ResultSet.md)! | a`ResultSet`object that contains the data produced by the given query; never`null` |
 
 | Exceptions ||
 |--------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -622,7 +622,7 @@ Retrieves the`Connection`object that produced this`Statement`object.
 
 | Return ||
 |-----------------------------------------------------------------------------------|---------------------------------------------|
-| [Connection](../java/sql/Connection.md)! | the connection that produced this statement |
+| [Connection](Connection.md)! | the connection that produced this statement |
 
 | Exceptions ||
 |-------------------------|-----------------------------------------------------------------------------------|
@@ -648,7 +648,7 @@ Retrieves the direction for fetching rows from database tables that is the defau
 
 **See Also**
 
-- [#setFetchDirection](../java/sql/Statement.md)) 
+- [#setFetchDirection](Statement.md)) 
 
 ### getFetchSize
 
@@ -670,7 +670,7 @@ Retrieves the number of result set rows that is the default fetch size for`Resul
 
 **See Also**
 
-- [#setFetchSize](../java/sql/Statement.md)) 
+- [#setFetchSize](Statement.md)) 
 
 ### getGeneratedKeys
 
@@ -686,7 +686,7 @@ Retrieves any auto-generated keys created as a result of executing this`Statemen
 
 | Return ||
 |---------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| [ResultSet](../java/sql/ResultSet.md)! | a`ResultSet`object containing the auto-generated key(s) generated by the execution of this`Statement`object |
+| [ResultSet](ResultSet.md)! | a`ResultSet`object containing the auto-generated key(s) generated by the execution of this`Statement`object |
 
 | Exceptions ||
 |--------------------------------------------|-----------------------------------------------------------------------------------|
@@ -713,7 +713,7 @@ Retrieves the maximum number of bytes that can be returned for character and bin
 
 **See Also**
 
-- [#setMaxFieldSize](../java/sql/Statement.md)) 
+- [#setMaxFieldSize](Statement.md)) 
 
 ### getMaxRows
 
@@ -735,7 +735,7 @@ Retrieves the maximum number of rows that a`ResultSet`object produced by this`St
 
 **See Also**
 
-- [#setMaxRows](../java/sql/Statement.md)) 
+- [#setMaxRows](Statement.md)) 
 
 ### getMoreResults
 
@@ -818,7 +818,7 @@ Retrieves the number of seconds the driver will wait for a`Statement`object to e
 
 **See Also**
 
-- [#setQueryTimeout](../java/sql/Statement.md)) 
+- [#setQueryTimeout](Statement.md)) 
 
 ### getResultSet
 
@@ -832,7 +832,7 @@ Retrieves the current result as a`ResultSet`object. This method should be called
 
 | Return ||
 |---------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| [ResultSet](../java/sql/ResultSet.md)! | the current result as a`ResultSet`object or`null`if the result is an update count or there are no more results |
+| [ResultSet](ResultSet.md)! | the current result as a`ResultSet`object or`null`if the result is an update count or there are no more results |
 
 | Exceptions ||
 |-------------------------|-----------------------------------------------------------------------------------|
@@ -930,7 +930,7 @@ The warning chain is automatically cleared each time a statement is (re)executed
 
 | Return ||
 |-----------------------------------------------------------------------------------|--------------------------------------------------------------|
-| [SQLWarning](../java/sql/SQLWarning.md)! | the first`SQLWarning`object or`null`if there are no warnings |
+| [SQLWarning](SQLWarning.md)! | the first`SQLWarning`object or`null`if there are no warnings |
 
 | Exceptions ||
 |-------------------------|-----------------------------------------------------------------------------------|
@@ -976,7 +976,7 @@ Returns a value indicating whether the`Statement`is poolable or not.
 
 **See Also**
 
-- [java.sql.Statement#setPoolable(boolean)](../java/sql/Statement.md)) 
+- [java.sql.Statement#setPoolable(boolean)](Statement.md)) 
 
 ### setCursorName
 
@@ -1039,7 +1039,7 @@ Note that this method sets the default fetch direction for result sets generated
 
 **See Also**
 
-- [#getFetchDirection](../java/sql/Statement.md)) 
+- [#getFetchDirection](Statement.md)) 
 
 ### setFetchSize
 
@@ -1061,7 +1061,7 @@ Gives the JDBC driver a hint as to the number of rows that should be fetched fro
 
 **See Also**
 
-- [#getFetchSize](../java/sql/Statement.md)) 
+- [#getFetchSize](Statement.md)) 
 
 ### setMaxFieldSize
 
@@ -1083,7 +1083,7 @@ Sets the limit for the maximum number of bytes that can be returned for characte
 
 **See Also**
 
-- [#getMaxFieldSize](../java/sql/Statement.md)) 
+- [#getMaxFieldSize](Statement.md)) 
 
 ### setMaxRows
 
@@ -1105,7 +1105,7 @@ Sets the limit for the maximum number of rows that any`ResultSet`object generate
 
 **See Also**
 
-- [#getMaxRows](../java/sql/Statement.md)) 
+- [#getMaxRows](Statement.md)) 
 
 ### setPoolable
 
@@ -1155,4 +1155,4 @@ Sets the number of seconds the driver will wait for a`Statement`object to execut
 
 **See Also**
 
-- [#getQueryTimeout](../java/sql/Statement.md))
+- [#getQueryTimeout](Statement.md))

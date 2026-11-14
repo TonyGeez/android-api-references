@@ -4,7 +4,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 
 # ArgbEvaluator
 
-Kotlin| [Java](../android/animation/ArgbEvaluator.md) 
+Kotlin| [Java](ArgbEvaluator.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class ArgbEvaluator : TypeEvaluator<Any!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.animation.ArgbEvaluator](../android/animation/ArgbEvaluator.md) |
+| ↳ | [android.animation.ArgbEvaluator](ArgbEvaluator.md) |
 
 This evaluator can be used to perform type interpolation between integer values that represent ARGB colors.
 
@@ -21,11 +21,11 @@ This evaluator can be used to perform type interpolation between integer values 
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------|---|
-| [ArgbEvaluator](../android/animation/ArgbEvaluator.md))`()` <br /> |
+| [ArgbEvaluator](ArgbEvaluator.md))`()` <br /> |
 
 | Public methods ||
 |---------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [evaluate](../android/animation/ArgbEvaluator.md))`(`fraction:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `startValue:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `endValue:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` This function returns the calculated in-between value for a color given integers that represent the start and end values in the four bytes of the 32-bit int. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [evaluate](ArgbEvaluator.md))`(`fraction:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `startValue:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `endValue:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` This function returns the calculated in-between value for a color given integers that represent the start and end values in the four bytes of the 32-bit int. |
 
 ## Public constructors
 

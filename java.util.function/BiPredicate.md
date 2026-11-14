@@ -8,21 +8,21 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 @FunctionalInterface interface BiPredicate<T : Any!, U : Any!>
 ```
 
-| [java.util.function.BiPredicate](../java/util/function/BiPredicate.md) |
+| [java.util.function.BiPredicate](BiPredicate.md) |
 
-Represents a predicate (boolean-valued function) of two arguments. This is the two-arity specialization of [Predicate](../java/util/function/Predicate.md).
+Represents a predicate (boolean-valued function) of two arguments. This is the two-arity specialization of [Predicate](Predicate.md).
 
-This is a [functional interface](../java/util/function/_package.md) whose functional method is [test(java.lang.Object,java.lang.Object)](../java/util/function/BiPredicate.md)).
+This is a [functional interface](_package.md) whose functional method is [test(java.lang.Object,java.lang.Object)](BiPredicate.md)).
 
 ## Summary
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [BiPredicate](../java/util/function/BiPredicate.md)\<T,U\>! | [and](../java/util/function/BiPredicate.md))`(`other:` ` [BiPredicate](../java/util/function/BiPredicate.md)<in` `T,` `in` `U>!`)` Returns a composed predicate that represents a short-circuiting logical AND of this predicate and another. |
-| open [BiPredicate](../java/util/function/BiPredicate.md)\<T,U\>! | [negate](../java/util/function/BiPredicate.md))`()` Returns a predicate that represents the logical negation of this predicate. |
-| open [BiPredicate](../java/util/function/BiPredicate.md)\<T,U\>! | [or](../java/util/function/BiPredicate.md))`(`other:` ` [BiPredicate](../java/util/function/BiPredicate.md)<in` `T,` `in` `U>!`)` Returns a composed predicate that represents a short-circuiting logical OR of this predicate and another. |
+| open [BiPredicate](BiPredicate.md)\<T,U\>! | [and](BiPredicate.md))`(`other:` ` [BiPredicate](BiPredicate.md)<in` `T,` `in` `U>!`)` Returns a composed predicate that represents a short-circuiting logical AND of this predicate and another. |
+| open [BiPredicate](BiPredicate.md)\<T,U\>! | [negate](BiPredicate.md))`()` Returns a predicate that represents the logical negation of this predicate. |
+| open [BiPredicate](BiPredicate.md)\<T,U\>! | [or](BiPredicate.md))`(`other:` ` [BiPredicate](BiPredicate.md)<in` `T,` `in` `U>!`)` Returns a composed predicate that represents a short-circuiting logical OR of this predicate and another. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [test](../java/util/function/BiPredicate.md))`(`t:` `T`, `u:` `U`)` Evaluates this predicate on the given arguments. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [test](BiPredicate.md))`(`t:` `T`, `u:` `U`)` Evaluates this predicate on the given arguments. |
 
 ## Public methods
 
@@ -40,11 +40,11 @@ Any exceptions thrown during evaluation of either predicate are relayed to the c
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `other` | [BiPredicate](../java/util/function/BiPredicate.md)\<inT,inU\>!:a predicate that will be logically-ANDed with this predicate |
+| `other` | [BiPredicate](BiPredicate.md)\<inT,inU\>!:a predicate that will be logically-ANDed with this predicate |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| [BiPredicate](../java/util/function/BiPredicate.md)<T,` `U>! | a composed predicate that represents the short-circuiting logical AND of this predicate and the`other`predicate |
+| [BiPredicate](BiPredicate.md)<T,` `U>! | a composed predicate that represents the short-circuiting logical AND of this predicate and the`other`predicate |
 
 | Exceptions ||
 |----------------------------------|------------------|
@@ -62,7 +62,7 @@ Returns a predicate that represents the logical negation of this predicate.
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| [BiPredicate](../java/util/function/BiPredicate.md)<T,` `U>! | a predicate that represents the logical negation of this predicate |
+| [BiPredicate](BiPredicate.md)<T,` `U>! | a predicate that represents the logical negation of this predicate |
 
 ### or
 
@@ -78,11 +78,11 @@ Any exceptions thrown during evaluation of either predicate are relayed to the c
 
 | Parameters ||
 |---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `other` | [BiPredicate](../java/util/function/BiPredicate.md)\<inT,inU\>!:a predicate that will be logically-ORed with this predicate |
+| `other` | [BiPredicate](BiPredicate.md)\<inT,inU\>!:a predicate that will be logically-ORed with this predicate |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| [BiPredicate](../java/util/function/BiPredicate.md)<T,` `U>! | a composed predicate that represents the short-circuiting logical OR of this predicate and the`other`predicate |
+| [BiPredicate](BiPredicate.md)<T,` `U>! | a composed predicate that represents the short-circuiting logical OR of this predicate and the`other`predicate |
 
 | Exceptions ||
 |----------------------------------|------------------|

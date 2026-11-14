@@ -10,10 +10,10 @@ class CryptoPrimitive
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.security.CryptoPrimitive](../java/security/CryptoPrimitive.md)\> ||
-| | ↳ | [java.security.CryptoPrimitive](../java/security/CryptoPrimitive.md) |
+| ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.security.CryptoPrimitive](CryptoPrimitive.md)\> ||
+| | ↳ | [java.security.CryptoPrimitive](CryptoPrimitive.md) |
 
-| Known Direct Subclasses [CryptoPrimitive.BLOCK_CIPHER](../java/security/CryptoPrimitive.md), [CryptoPrimitive.KEY_AGREEMENT](../java/security/CryptoPrimitive.md), [CryptoPrimitive.KEY_ENCAPSULATION](../java/security/CryptoPrimitive.md), [CryptoPrimitive.KEY_WRAP](../java/security/CryptoPrimitive.md), [CryptoPrimitive.MAC](../java/security/CryptoPrimitive.md), [CryptoPrimitive.MESSAGE_DIGEST](../java/security/CryptoPrimitive.md), [CryptoPrimitive.PUBLIC_KEY_ENCRYPTION](../java/security/CryptoPrimitive.md), [CryptoPrimitive.SECURE_RANDOM](../java/security/CryptoPrimitive.md), [CryptoPrimitive.SIGNATURE](../java/security/CryptoPrimitive.md), [CryptoPrimitive.STREAM_CIPHER](../java/security/CryptoPrimitive.md) |--------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------| | [CryptoPrimitive.BLOCK_CIPHER](../java/security/CryptoPrimitive.md) | Symmetric primitive: block cipher | | [CryptoPrimitive.KEY_AGREEMENT](../java/security/CryptoPrimitive.md) | Asymmetric primitive: key agreement and key distribution | | [CryptoPrimitive.KEY_ENCAPSULATION](../java/security/CryptoPrimitive.md) | Asymmetric primitive: key encapsulation mechanism | | [CryptoPrimitive.KEY_WRAP](../java/security/CryptoPrimitive.md) | Symmetric primitive: key wrap | | [CryptoPrimitive.MAC](../java/security/CryptoPrimitive.md) | Symmetric primitive: message authentication code | | [CryptoPrimitive.MESSAGE_DIGEST](../java/security/CryptoPrimitive.md) | Hash function | | [CryptoPrimitive.PUBLIC_KEY_ENCRYPTION](../java/security/CryptoPrimitive.md) | Asymmetric primitive: public key encryption | | [CryptoPrimitive.SECURE_RANDOM](../java/security/CryptoPrimitive.md) | Cryptographic random number generator | | [CryptoPrimitive.SIGNATURE](../java/security/CryptoPrimitive.md) | Asymmetric primitive: signature scheme | | [CryptoPrimitive.STREAM_CIPHER](../java/security/CryptoPrimitive.md) | Symmetric primitive: stream cipher | |
+| Known Direct Subclasses [CryptoPrimitive.BLOCK_CIPHER](CryptoPrimitive.md), [CryptoPrimitive.KEY_AGREEMENT](CryptoPrimitive.md), [CryptoPrimitive.KEY_ENCAPSULATION](CryptoPrimitive.md), [CryptoPrimitive.KEY_WRAP](CryptoPrimitive.md), [CryptoPrimitive.MAC](CryptoPrimitive.md), [CryptoPrimitive.MESSAGE_DIGEST](CryptoPrimitive.md), [CryptoPrimitive.PUBLIC_KEY_ENCRYPTION](CryptoPrimitive.md), [CryptoPrimitive.SECURE_RANDOM](CryptoPrimitive.md), [CryptoPrimitive.SIGNATURE](CryptoPrimitive.md), [CryptoPrimitive.STREAM_CIPHER](CryptoPrimitive.md) |--------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------| | [CryptoPrimitive.BLOCK_CIPHER](CryptoPrimitive.md) | Symmetric primitive: block cipher | | [CryptoPrimitive.KEY_AGREEMENT](CryptoPrimitive.md) | Asymmetric primitive: key agreement and key distribution | | [CryptoPrimitive.KEY_ENCAPSULATION](CryptoPrimitive.md) | Asymmetric primitive: key encapsulation mechanism | | [CryptoPrimitive.KEY_WRAP](CryptoPrimitive.md) | Symmetric primitive: key wrap | | [CryptoPrimitive.MAC](CryptoPrimitive.md) | Symmetric primitive: message authentication code | | [CryptoPrimitive.MESSAGE_DIGEST](CryptoPrimitive.md) | Hash function | | [CryptoPrimitive.PUBLIC_KEY_ENCRYPTION](CryptoPrimitive.md) | Asymmetric primitive: public key encryption | | [CryptoPrimitive.SECURE_RANDOM](CryptoPrimitive.md) | Cryptographic random number generator | | [CryptoPrimitive.SIGNATURE](CryptoPrimitive.md) | Asymmetric primitive: signature scheme | | [CryptoPrimitive.STREAM_CIPHER](CryptoPrimitive.md) | Symmetric primitive: stream cipher | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 An enumeration of cryptographic primitives.
@@ -22,16 +22,16 @@ An enumeration of cryptographic primitives.
 
 | Enum values ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [BLOCK_CIPHER](../java/security/CryptoPrimitive.md) Symmetric primitive: block cipher |
-| [KEY_AGREEMENT](../java/security/CryptoPrimitive.md) Asymmetric primitive: key agreement and key distribution |
-| [KEY_ENCAPSULATION](../java/security/CryptoPrimitive.md) Asymmetric primitive: key encapsulation mechanism |
-| [KEY_WRAP](../java/security/CryptoPrimitive.md) Symmetric primitive: key wrap |
-| [MAC](../java/security/CryptoPrimitive.md) Symmetric primitive: message authentication code |
-| [MESSAGE_DIGEST](../java/security/CryptoPrimitive.md) Hash function |
-| [PUBLIC_KEY_ENCRYPTION](../java/security/CryptoPrimitive.md) Asymmetric primitive: public key encryption |
-| [SECURE_RANDOM](../java/security/CryptoPrimitive.md) Cryptographic random number generator |
-| [SIGNATURE](../java/security/CryptoPrimitive.md) Asymmetric primitive: signature scheme |
-| [STREAM_CIPHER](../java/security/CryptoPrimitive.md) Symmetric primitive: stream cipher |
+| [BLOCK_CIPHER](CryptoPrimitive.md) Symmetric primitive: block cipher |
+| [KEY_AGREEMENT](CryptoPrimitive.md) Asymmetric primitive: key agreement and key distribution |
+| [KEY_ENCAPSULATION](CryptoPrimitive.md) Asymmetric primitive: key encapsulation mechanism |
+| [KEY_WRAP](CryptoPrimitive.md) Symmetric primitive: key wrap |
+| [MAC](CryptoPrimitive.md) Symmetric primitive: message authentication code |
+| [MESSAGE_DIGEST](CryptoPrimitive.md) Hash function |
+| [PUBLIC_KEY_ENCRYPTION](CryptoPrimitive.md) Asymmetric primitive: public key encryption |
+| [SECURE_RANDOM](CryptoPrimitive.md) Cryptographic random number generator |
+| [SIGNATURE](CryptoPrimitive.md) Asymmetric primitive: signature scheme |
+| [STREAM_CIPHER](CryptoPrimitive.md) Symmetric primitive: stream cipher |
 
 ## Enum values
 

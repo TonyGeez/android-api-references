@@ -8,7 +8,7 @@ class ProfilingManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.os.ProfilingManager](../android/os/ProfilingManager.md) |
+| ↳ | [android.os.ProfilingManager](ProfilingManager.md) |
 
 This class allows the caller to:
 
@@ -154,7 +154,7 @@ Apps can define their own per-trigger rate limiting to help ensure they receive 
 
 | Parameters ||
 |---|---|
-| `triggers` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ProfilingTrigger](../android/os/ProfilingTrigger.md)!\>: This value cannot be `null`. |
+| `triggers` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ProfilingTrigger](ProfilingTrigger.md)!\>: This value cannot be `null`. |
 
 ### clearProfilingTriggers
 
@@ -185,8 +185,8 @@ The provided executor may also be used for other tasks required by ProfilingMana
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): The executor to call back with. This value cannot be `null`. |
-| `listener` | [Consumer](../java/util/function/Consumer.md)\< [ProfilingResult](../android/os/ProfilingResult.md)!\>: Listener to be triggered with result. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor to call back with. This value cannot be `null`. |
+| `listener` | [Consumer](../java.util.function/Consumer.md)\< [ProfilingResult](ProfilingResult.md)!\>: Listener to be triggered with result. This value cannot be `null`. |
 
 ### removeProfilingTriggersByType
 
@@ -232,12 +232,12 @@ The provided executor may also be used to perform a cleanup of old delivered pro
 | Parameters ||
 |---|---|
 | `profilingType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Type of profiling to collect. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/os/ProfilingManager#PROFILING_TYPE_JAVA_HEAP_DUMP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/os/ProfilingManager#PROFILING_TYPE_HEAP_PROFILE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/os/ProfilingManager#PROFILING_TYPE_STACK_SAMPLING:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/os/ProfilingManager#PROFILING_TYPE_SYSTEM_TRACE:kotlin.Int` |
-| `parameters` | [Bundle](../android/os/Bundle.md)?: Bundle of request related parameters. If the bundle contains any unrecognized parameters, the request will be fail with `https://developer.android.com/reference/kotlin/android/os/ProfilingResult#ERROR_FAILED_INVALID_REQUEST:kotlin.Int`. If the values for the parameters are out of supported range, the closest possible in range value will be chosen. Use of [androidx wrappers](../androidx/core/os/Profiling.md) is recommended over generating this directly. This value may be `null`. |
+| `parameters` | [Bundle](Bundle.md)?: Bundle of request related parameters. If the bundle contains any unrecognized parameters, the request will be fail with `https://developer.android.com/reference/kotlin/android/os/ProfilingResult#ERROR_FAILED_INVALID_REQUEST:kotlin.Int`. If the values for the parameters are out of supported range, the closest possible in range value will be chosen. Use of [androidx wrappers](../androidx/core/os/Profiling.md) is recommended over generating this directly. This value may be `null`. |
 | `tag` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: Caller defined data to help identify the output. The first 20 alphanumeric characters, plus dashes, will be lowercased and included in the output filename. This value may be `null`. |
 | --- | --- |
-| `cancellationSignal` | [CancellationSignal](../android/os/CancellationSignal.md)?: for caller requested cancellation. Results will be returned if available. If this is null, the requesting app will not be able to stop the collection. The collection will stop after timing out with either the provided configurations or with system defaults |
-| `executor` | [Executor](../java/util/concurrent/Executor.md)?: The executor to call back with. Will only be used for the listener provided in this method. If this is null, and no global executor and listener combinations are registered at the time of the request, the request will be dropped. |
-| `listener` | [Consumer](../java/util/function/Consumer.md)\< [ProfilingResult](../android/os/ProfilingResult.md)!\>?: Listener to be triggered with result. Any global listeners registered via `https://developer.android.com/reference/kotlin/android/os/ProfilingManager#registerForAllProfilingResults(java.util.concurrent.Executor,%20java.util.function.Consumer)` will also be triggered. If this is null, and no global listener and executor combinations are registered at the time of the request, the request will be dropped. |
+| `cancellationSignal` | [CancellationSignal](CancellationSignal.md)?: for caller requested cancellation. Results will be returned if available. If this is null, the requesting app will not be able to stop the collection. The collection will stop after timing out with either the provided configurations or with system defaults |
+| `executor` | [Executor](../java.util.concurrent/Executor.md)?: The executor to call back with. Will only be used for the listener provided in this method. If this is null, and no global executor and listener combinations are registered at the time of the request, the request will be dropped. |
+| `listener` | [Consumer](../java.util.function/Consumer.md)\< [ProfilingResult](ProfilingResult.md)!\>?: Listener to be triggered with result. Any global listeners registered via `https://developer.android.com/reference/kotlin/android/os/ProfilingManager#registerForAllProfilingResults(java.util.concurrent.Executor,%20java.util.function.Consumer)` will also be triggered. If this is null, and no global listener and executor combinations are registered at the time of the request, the request will be dropped. |
 | --- | --- |
 
 ### requestRunningSystemTrace
@@ -268,4 +268,4 @@ Unregister a listener that was to be called for all profiling results. If no lis
 
 | Parameters ||
 |---|---|
-| `listener` | [Consumer](../java/util/function/Consumer.md)\< [ProfilingResult](../android/os/ProfilingResult.md)!\>?: Listener to unregister and no longer be triggered with the results. Null to remove all global listeners for this uid. This value may be `null`. |
+| `listener` | [Consumer](../java.util.function/Consumer.md)\< [ProfilingResult](ProfilingResult.md)!\>?: Listener to unregister and no longer be triggered with the results. Null to remove all global listeners for this uid. This value may be `null`. |

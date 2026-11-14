@@ -2,7 +2,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 
 # TimeAnimator
 
-Kotlin | [Java](../android/animation/TimeAnimator.md)
+Kotlin | [Java](TimeAnimator.md)
 | --- | --- |
 
 ```
@@ -11,9 +11,9 @@ open class TimeAnimator : ValueAnimator
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.animation.Animator](../android/animation/Animator.md) |||
-| | ↳ | [android.animation.ValueAnimator](../android/animation/ValueAnimator.md) ||
-| | | ↳ | [android.animation.TimeAnimator](../android/animation/TimeAnimator.md) |
+| ↳ | [android.animation.Animator](Animator.md) |||
+| | ↳ | [android.animation.ValueAnimator](ValueAnimator.md) ||
+| | | ↳ | [android.animation.TimeAnimator](TimeAnimator.md) |
 | --- | --- | --- | --- |
 
 This class provides a simple callback mechanism to listeners that is synchronized with all other animators in the system. There is no duration, interpolation, or object value-setting with this Animator. Instead, it is simply started, after which it proceeds to send out events on every animation frame to its TimeListener (if set), with information about this animator, the total elapsed time, and the elapsed time since the previous animation frame.

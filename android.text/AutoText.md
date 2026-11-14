@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # AutoText
 
-Kotlin| [Java](../android/text/AutoText.md) 
+Kotlin| [Java](AutoText.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class AutoText
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.text.AutoText](../android/text/AutoText.md) |
+| ↳ | [android.text.AutoText](AutoText.md) |
 
 This class accesses a dictionary of corrections to frequent misspellings.
 
@@ -21,8 +21,8 @@ This class accesses a dictionary of corrections to frequent misspellings.
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [get](../android/text/AutoText.md))`(`src:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `view:` ` [View](../android/view/View.md)!`)` Retrieves a possible spelling correction for the specified range of text. |
-| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSize](../android/text/AutoText.md))`(`view:` ` [View](../android/view/View.md)!`)` Returns the size of the auto text dictionary. |
+| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [get](AutoText.md))`(`src:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `view:` ` [View](../android.view/View.md)!`)` Retrieves a possible spelling correction for the specified range of text. |
+| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSize](AutoText.md))`(`view:` ` [View](../android.view/View.md)!`)` Returns the size of the auto text dictionary. |
 
 ## Public methods
 
@@ -53,7 +53,7 @@ Returns the size of the auto text dictionary. The return value can be zero if th
 
 | Parameters ||
 |--------|------------------------------------------------------------------------------------------------------------------------------------|
-| `view` | [View](../android/view/View.md)!:used to retrieve the current Locale and Resources. |
+| `view` | [View](../android.view/View.md)!:used to retrieve the current Locale and Resources. |
 
 | Return ||
 |----------------------------------------------------------------------------|---------------------------------------------------|

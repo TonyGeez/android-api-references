@@ -13,7 +13,7 @@ interface OnTimeChangedListener
 
 | [android.widget.TimePicker.OnTimeChangedListener](../android/widget/TimePicker.OnTimeChangedListener.md) |
 
-| Known Direct Subclasses [TimePickerDialog](../android/app/TimePickerDialog.md) |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------| | [TimePickerDialog](../android/app/TimePickerDialog.md) | A dialog that prompts the user for the time of day using a [TimePicker](../android/widget/TimePicker.md). | |
+| Known Direct Subclasses [TimePickerDialog](../android.app/TimePickerDialog.md) |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------| | [TimePickerDialog](../android.app/TimePickerDialog.md) | A dialog that prompts the user for the time of day using a [TimePicker](TimePicker.md). | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 The callback interface used to indicate the time has been adjusted.
@@ -22,7 +22,7 @@ The callback interface used to indicate the time has been adjusted.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTimeChanged](../android/widget/TimePicker.OnTimeChangedListener.md))`(`view:` ` [TimePicker](../android/widget/TimePicker.md)!`, `hourOfDay:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `minute:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTimeChanged](../android/widget/TimePicker.OnTimeChangedListener.md))`(`view:` ` [TimePicker](TimePicker.md)!`, `hourOfDay:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `minute:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 ## Public methods
 
@@ -40,7 +40,7 @@ abstract fun onTimeChanged(
 
 | Parameters ||
 |-------------|---------------------------------------------------------------------------------------------------------------------------------|
-| `view` | [TimePicker](../android/widget/TimePicker.md)!:The view associated with this listener. |
+| `view` | [TimePicker](TimePicker.md)!:The view associated with this listener. |
 | `hourOfDay` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The current hour. |
 | `minute` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The current minute. |
 | --- | --- |

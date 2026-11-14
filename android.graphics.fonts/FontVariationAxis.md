@@ -4,7 +4,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 
 # FontVariationAxis
 
-Kotlin| [Java](../android/graphics/fonts/FontVariationAxis.md) 
+Kotlin| [Java](FontVariationAxis.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class FontVariationAxis
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.graphics.fonts.FontVariationAxis](../android/graphics/fonts/FontVariationAxis.md) |
+| ↳ | [android.graphics.fonts.FontVariationAxis](FontVariationAxis.md) |
 
 Class that holds information about single font variation axis.
 
@@ -21,19 +21,19 @@ Class that holds information about single font variation axis.
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [FontVariationAxis](../android/graphics/fonts/FontVariationAxis.md))`(`tagString:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `styleValue:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Construct FontVariationAxis. |
+| [FontVariationAxis](FontVariationAxis.md))`(`tagString:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `styleValue:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Construct FontVariationAxis. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/graphics/fonts/FontVariationAxis.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [FontVariationAxis](../android/graphics/fonts/FontVariationAxis.md)!\>? | [fromFontVariationSettings](../android/graphics/fonts/FontVariationAxis.md))`(`settings:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Construct FontVariationAxis array from font variation settings. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getStyleValue](../android/graphics/fonts/FontVariationAxis.md))`()` Returns the style value associated to the given axis for this font. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](FontVariationAxis.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [FontVariationAxis](FontVariationAxis.md)!\>? | [fromFontVariationSettings](FontVariationAxis.md))`(`settings:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Construct FontVariationAxis array from font variation settings. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getStyleValue](FontVariationAxis.md))`()` Returns the style value associated to the given axis for this font. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getTag](../android/graphics/fonts/FontVariationAxis.md))`()` Returns the variable font axis tag associated to this axis. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/graphics/fonts/FontVariationAxis.md))`()` <br /> |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toFontVariationSettings](../android/graphics/fonts/FontVariationAxis.md))`(`axes:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [FontVariationAxis](../android/graphics/fonts/FontVariationAxis.md)!>?`)` Stringify the array of FontVariationAxis. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getTag](FontVariationAxis.md))`()` Returns the variable font axis tag associated to this axis. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](FontVariationAxis.md))`()` <br /> |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toFontVariationSettings](FontVariationAxis.md))`(`axes:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [FontVariationAxis](FontVariationAxis.md)!>?`)` Stringify the array of FontVariationAxis. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/graphics/fonts/FontVariationAxis.md))`()` Returns a valid font variation setting string for this object. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](FontVariationAxis.md))`()` Returns a valid font variation setting string for this object. |
 
 ## Public constructors
 
@@ -112,7 +112,7 @@ FontVariationAxis.fromFontVariationSettings("'wdth' 1.0");
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [FontVariationAxis](../android/graphics/fonts/FontVariationAxis.md)!>? | FontVariationAxis\[\] the array of parsed font variation axis.`null`if settings has no font variation settings. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [FontVariationAxis](FontVariationAxis.md)!>? | FontVariationAxis\[\] the array of parsed font variation axis.`null`if settings has no font variation settings. |
 
 | Exceptions ||
 |--------------------------------------|----------------------------------------------------------------|
@@ -162,7 +162,7 @@ Stringify the array of FontVariationAxis.
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `axes` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [FontVariationAxis](../android/graphics/fonts/FontVariationAxis.md)!\>?:an array of FontVariationAxis. This value may be`null`. |
+| `axes` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [FontVariationAxis](FontVariationAxis.md)!\>?:an array of FontVariationAxis. This value may be`null`. |
 
 | Return ||
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------|

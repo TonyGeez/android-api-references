@@ -5,7 +5,7 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 
 # Double2
 
-Kotlin| [Java](../android/renderscript/Double2.md) 
+Kotlin| [Java](Double2.md) 
 | --- | --- |
 
 ```
@@ -14,7 +14,7 @@ open class Double2
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.renderscript.Double2](../android/renderscript/Double2.md) |
+| ↳ | [android.renderscript.Double2](Double2.md) |
 
 | **This class was deprecated in API level 31.**
 |
@@ -26,13 +26,13 @@ Vector version of the basic double type. Provides two double fields packed.
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Double2](../android/renderscript/Double2.md))`()` <br /> |
-| [Double2](../android/renderscript/Double2.md))`(`x:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `y:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` <br /> |
+| [Double2](Double2.md))`()` <br /> |
+| [Double2](Double2.md))`(`x:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `y:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` <br /> |
 
 | Properties ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [x](../android/renderscript/Double2.md) <br /> |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [y](../android/renderscript/Double2.md) <br /> |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [x](Double2.md) <br /> |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [y](Double2.md) <br /> |
 
 ## Public constructors
 

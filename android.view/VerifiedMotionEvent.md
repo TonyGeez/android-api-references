@@ -2,7 +2,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 
 # VerifiedMotionEvent
 
-Kotlin | [Java](../android/view/VerifiedMotionEvent.md)
+Kotlin | [Java](VerifiedMotionEvent.md)
 | --- | --- |
 
 ```
@@ -11,8 +11,8 @@ class VerifiedMotionEvent : VerifiedInputEvent, Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.view.VerifiedInputEvent](../android/view/VerifiedInputEvent.md) ||
-| | ↳ | [android.view.VerifiedMotionEvent](../android/view/VerifiedMotionEvent.md) |
+| ↳ | [android.view.VerifiedInputEvent](VerifiedInputEvent.md) ||
+| | ↳ | [android.view.VerifiedMotionEvent](VerifiedMotionEvent.md) |
 
 MotionEvent that has been verified by the system. The data contained in this class is always a subset of a `https://developer.android.com/reference/kotlin/android/view/MotionEvent`. Use this class to check which data has been confirmed by the system to be authentic. Most applications do not need to use this class.
 
@@ -45,7 +45,7 @@ MotionEvent that has been verified by the system. The data contained in this cla
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [VerifiedMotionEvent](../android/view/VerifiedMotionEvent.md)!\> | `https://developer.android.com/reference/kotlin/android/view/VerifiedMotionEvent#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [VerifiedMotionEvent](VerifiedMotionEvent.md)!\> | `https://developer.android.com/reference/kotlin/android/view/VerifiedMotionEvent#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public methods
 
@@ -233,7 +233,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

@@ -8,7 +8,7 @@ open class LineBreaker
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.graphics.text.LineBreaker](../android/graphics/text/LineBreaker.md) |
+| ↳ | [android.graphics.text.LineBreaker](LineBreaker.md) |
 
 Provides automatic line breaking for a *single* paragraph.
 
@@ -218,7 +218,7 @@ Break paragraph into lines. The result is filled to out param.
 
 | Parameters ||
 |---|---|
-| `measuredPara` | [MeasuredText](../android/graphics/text/MeasuredText.md): a result of the text measurement. This value cannot be `null`. |
+| `measuredPara` | [MeasuredText](MeasuredText.md): a result of the text measurement. This value cannot be `null`. |
 | `constraints` | [LineBreaker.ParagraphConstraints](../android/graphics/text/LineBreaker.ParagraphConstraints.md): for a single paragraph. This value cannot be `null`. |
 | `lineNumber` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): a line number of this paragraph. Value is 0 or greater |
 | --- | --- |

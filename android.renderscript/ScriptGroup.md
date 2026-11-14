@@ -5,7 +5,7 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 
 # ScriptGroup
 
-Kotlin| [Java](../android/renderscript/ScriptGroup.md) 
+Kotlin| [Java](ScriptGroup.md) 
 | --- | --- |
 
 ```
@@ -14,8 +14,8 @@ class ScriptGroup : BaseObj
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.renderscript.BaseObj](../android/renderscript/BaseObj.md) ||
-| | ↳ | [android.renderscript.ScriptGroup](../android/renderscript/ScriptGroup.md) |
+| ↳ | [android.renderscript.BaseObj](BaseObj.md) ||
+| | ↳ | [android.renderscript.ScriptGroup](ScriptGroup.md) |
 
 | **This class was deprecated in API level 31.**
 |
@@ -42,16 +42,16 @@ Grouping kernels together allows for more efficient execution. For example, runt
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [destroy](../android/renderscript/ScriptGroup.md))`()` Destroy this ScriptGroup and all Closures in it |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [execute](../android/renderscript/ScriptGroup.md))`()` Execute the ScriptGroup. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | [execute](../android/renderscript/ScriptGroup.md))`(`vararg` `inputs:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Executes a script group |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [destroy](ScriptGroup.md))`()` Destroy this ScriptGroup and all Closures in it |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [execute](ScriptGroup.md))`()` Execute the ScriptGroup. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | [execute](ScriptGroup.md))`(`vararg` `inputs:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Executes a script group |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInput](../android/renderscript/ScriptGroup.md))`(`s:` ` [Script.KernelID](../android/renderscript/Script.KernelID.md)!`, `a:` ` [Allocation](../android/renderscript/Allocation.md)!`)` Sets an input of the ScriptGroup. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOutput](../android/renderscript/ScriptGroup.md))`(`s:` ` [Script.KernelID](../android/renderscript/Script.KernelID.md)!`, `a:` ` [Allocation](../android/renderscript/Allocation.md)!`)` Sets an output of the ScriptGroup. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInput](ScriptGroup.md))`(`s:` ` [Script.KernelID](../android/renderscript/Script.KernelID.md)!`, `a:` ` [Allocation](Allocation.md)!`)` Sets an input of the ScriptGroup. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOutput](ScriptGroup.md))`(`s:` ` [Script.KernelID](../android/renderscript/Script.KernelID.md)!`, `a:` ` [Allocation](Allocation.md)!`)` Sets an output of the ScriptGroup. |
 
 | Inherited functions ||
 |---|---|
-| From class [BaseObj](../android/renderscript/BaseObj.md) |------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/renderscript/BaseObj.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> Compare the current BaseObj with another BaseObj for equality. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](../android/renderscript/BaseObj.md))`()` <br /> | | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](../android/renderscript/BaseObj.md))`()` <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/renderscript/BaseObj.md))`()` <br /> Calculates the hash code value for a BaseObj. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setName](../android/renderscript/BaseObj.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> setName assigns a name to an object. This object can later be looked up by this name. <br /> | ||
+| From class [BaseObj](BaseObj.md) |------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](BaseObj.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> Compare the current BaseObj with another BaseObj for equality. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](BaseObj.md))`()` <br /> | | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](BaseObj.md))`()` <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](BaseObj.md))`()` <br /> Calculates the hash code value for a BaseObj. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setName](BaseObj.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> setName assigns a name to an object. This object can later be looked up by this name. <br /> | ||
 
 ## Public methods
 
@@ -113,14 +113,14 @@ fun setInput(
 ): Unit
 ```
 
-**Deprecated:** *Set arguments to [execute(java.lang.Object...)](../android/renderscript/ScriptGroup.md))instead.*
+**Deprecated:** *Set arguments to [execute(java.lang.Object...)](ScriptGroup.md))instead.*
 
 Sets an input of the ScriptGroup. This specifies an Allocation to be used for kernels that require an input Allocation provided from outside of the ScriptGroup.
 
 | Parameters ||
 |-----|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `s` | [Script.KernelID](../android/renderscript/Script.KernelID.md)!:The ID of the kernel where the allocation should be connected. |
-| `a` | [Allocation](../android/renderscript/Allocation.md)!:The allocation to connect. |
+| `a` | [Allocation](Allocation.md)!:The allocation to connect. |
 
 ### setOutput
 
@@ -134,11 +134,11 @@ fun setOutput(
 ): Unit
 ```
 
-**Deprecated:** *Use return value of [execute(java.lang.Object...)](../android/renderscript/ScriptGroup.md))instead.*
+**Deprecated:** *Use return value of [execute(java.lang.Object...)](ScriptGroup.md))instead.*
 
 Sets an output of the ScriptGroup. This specifies an Allocation to be used for the kernels that require an output Allocation visible after the ScriptGroup is executed.
 
 | Parameters ||
 |-----|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `s` | [Script.KernelID](../android/renderscript/Script.KernelID.md)!:The ID of the kernel where the allocation should be connected. |
-| `a` | [Allocation](../android/renderscript/Allocation.md)!:The allocation to connect. |
+| `a` | [Allocation](Allocation.md)!:The allocation to connect. |

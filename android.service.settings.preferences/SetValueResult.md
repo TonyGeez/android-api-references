@@ -8,7 +8,7 @@ class SetValueResult : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.service.settings.preferences.SetValueResult](../android/service/settings/preferences/SetValueResult.md) |
+| ↳ | [android.service.settings.preferences.SetValueResult](SetValueResult.md) |
 
 Result object given a corresponding `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SetValueRequest`.
 
@@ -52,7 +52,7 @@ Result object given a corresponding `https://developer.android.com/reference/kot
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [SetValueResult](../android/service/settings/preferences/SetValueResult.md)!\> | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SetValueResult#CREATOR:android.os.Parcelable.Creator` Parcelable Creator for `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SetValueResult#`. |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [SetValueResult](SetValueResult.md)!\> | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SetValueResult#CREATOR:android.os.Parcelable.Creator` Parcelable Creator for `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SetValueResult#`. |
 
 ## Constants
 
@@ -239,7 +239,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

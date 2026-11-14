@@ -4,7 +4,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # ApplicationMediaCapabilities
 
-Kotlin| [Java](../android/media/ApplicationMediaCapabilities.md) 
+Kotlin| [Java](ApplicationMediaCapabilities.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class ApplicationMediaCapabilities : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.ApplicationMediaCapabilities](../android/media/ApplicationMediaCapabilities.md) |
+| ↳ | [android.media.ApplicationMediaCapabilities](ApplicationMediaCapabilities.md) |
 
 ApplicationMediaCapabilities is an immutable class that encapsulates an application's capabilities for handling newer video codec format and media features.
 
@@ -31,7 +31,7 @@ The ApplicationMediaCapabilities class is generated from this xml and used by th
 
 <br />
 
-ApplicationMediaCapabilities objects can also be built by applications at runtime for use with [ContentResolver.openTypedAssetFileDescriptor(Uri, String, Bundle)](../android/content/ContentResolver.md))to provide more control over the transcoding that is built into the platform. ApplicationMediaCapabilities provided by applications at runtime like this override the default manifest capabilities for that media access.The object could be build either through [createFromXml(org.xmlpull.v1.XmlPullParser)](../android/media/ApplicationMediaCapabilities.md))or through the builder class [ApplicationMediaCapabilities.Builder](../android/media/ApplicationMediaCapabilities.Builder.md)
+ApplicationMediaCapabilities objects can also be built by applications at runtime for use with [ContentResolver.openTypedAssetFileDescriptor(Uri, String, Bundle)](../android.content/ContentResolver.md))to provide more control over the transcoding that is built into the platform. ApplicationMediaCapabilities provided by applications at runtime like this override the default manifest capabilities for that media access.The object could be build either through [createFromXml(org.xmlpull.v1.XmlPullParser)](ApplicationMediaCapabilities.md))or through the builder class [ApplicationMediaCapabilities.Builder](../android/media/ApplicationMediaCapabilities.Builder.md)
 
 ### Video Codec Support
 
@@ -45,32 +45,32 @@ There are four types of HDR video(Dolby-Vision, HDR10, HDR10+, HLG) supported by
 
 | Nested classes ||
 |---|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](../android/media/ApplicationMediaCapabilities.Builder.md) Builder class for [ApplicationMediaCapabilities](../android/media/ApplicationMediaCapabilities.md) objects. |
+| | [Builder](../android/media/ApplicationMediaCapabilities.Builder.md) Builder class for [ApplicationMediaCapabilities](ApplicationMediaCapabilities.md) objects. |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android.os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android.os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android.os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [ApplicationMediaCapabilities](../android/media/ApplicationMediaCapabilities.md) | [createFromXml](../android/media/ApplicationMediaCapabilities.md))`(`xmlParser:` ` [XmlPullParser](../org/xmlpull/v1/XmlPullParser.md)`)` Creates [ApplicationMediaCapabilities](../android/media/ApplicationMediaCapabilities.md) from an xml. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/media/ApplicationMediaCapabilities.md))`()` <br /> |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getSupportedHdrTypes](../android/media/ApplicationMediaCapabilities.md))`()` Query all hdr types that are supported by the application. |
+| static [ApplicationMediaCapabilities](ApplicationMediaCapabilities.md) | [createFromXml](ApplicationMediaCapabilities.md))`(`xmlParser:` ` [XmlPullParser](../org.xmlpull.v1/XmlPullParser.md)`)` Creates [ApplicationMediaCapabilities](ApplicationMediaCapabilities.md) from an xml. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](ApplicationMediaCapabilities.md))`()` <br /> |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getSupportedHdrTypes](ApplicationMediaCapabilities.md))`()` Query all hdr types that are supported by the application. |
 | --- | --- |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getSupportedVideoMimeTypes](../android/media/ApplicationMediaCapabilities.md))`()` Query the video codec mime types supported by the application. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getUnsupportedHdrTypes](../android/media/ApplicationMediaCapabilities.md))`()` Query all hdr types that are not supported by the application. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getUnsupportedVideoMimeTypes](../android/media/ApplicationMediaCapabilities.md))`()` Query the video codec mime types that are not supported by the application. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getSupportedVideoMimeTypes](ApplicationMediaCapabilities.md))`()` Query the video codec mime types supported by the application. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getUnsupportedHdrTypes](ApplicationMediaCapabilities.md))`()` Query all hdr types that are not supported by the application. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getUnsupportedVideoMimeTypes](ApplicationMediaCapabilities.md))`()` Query the video codec mime types that are not supported by the application. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFormatSpecified](../android/media/ApplicationMediaCapabilities.md))`(`format:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Query if a format is specified by the application. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isHdrTypeSupported](../android/media/ApplicationMediaCapabilities.md))`(`hdrType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Query if a HDR type is supported by the application. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isVideoMimeTypeSupported](../android/media/ApplicationMediaCapabilities.md))`(`videoMime:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Query if a video codec format is supported by the application. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFormatSpecified](ApplicationMediaCapabilities.md))`(`format:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Query if a format is specified by the application. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isHdrTypeSupported](ApplicationMediaCapabilities.md))`(`hdrType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Query if a HDR type is supported by the application. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isVideoMimeTypeSupported](ApplicationMediaCapabilities.md))`(`videoMime:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Query if a video codec format is supported by the application. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/media/ApplicationMediaCapabilities.md))`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/media/ApplicationMediaCapabilities.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](ApplicationMediaCapabilities.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](ApplicationMediaCapabilities.md))`(`dest:` ` [Parcel](../android.os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ApplicationMediaCapabilities](../android/media/ApplicationMediaCapabilities.md)!\> | [CREATOR](../android/media/ApplicationMediaCapabilities.md) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ApplicationMediaCapabilities](ApplicationMediaCapabilities.md)!\> | [CREATOR](ApplicationMediaCapabilities.md) <br /> |
 
 ## Public methods
 
@@ -82,7 +82,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 static fun createFromXml(xmlParser: XmlPullParser): ApplicationMediaCapabilities
 ```
 
-Creates [ApplicationMediaCapabilities](../android/media/ApplicationMediaCapabilities.md) from an xml. The xml's syntax is the same as the media_capabilities.xml used by the AndroidManifest.xml.
+Creates [ApplicationMediaCapabilities](ApplicationMediaCapabilities.md) from an xml. The xml's syntax is the same as the media_capabilities.xml used by the AndroidManifest.xml.
 
 Here is an example: 
 
@@ -99,11 +99,11 @@ Here is an example:
 
 | Parameters ||
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `xmlParser` | [XmlPullParser](../org/xmlpull/v1/XmlPullParser.md):The underlying [XmlPullParser](../org/xmlpull/v1/XmlPullParser.md) that will read the xml. This value cannot be`null`. |
+| `xmlParser` | [XmlPullParser](../org.xmlpull.v1/XmlPullParser.md):The underlying [XmlPullParser](../org.xmlpull.v1/XmlPullParser.md) that will read the xml. This value cannot be`null`. |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
-| [ApplicationMediaCapabilities](../android/media/ApplicationMediaCapabilities.md) | An ApplicationMediaCapabilities object. This value cannot be`null`. |
+| [ApplicationMediaCapabilities](ApplicationMediaCapabilities.md) | An ApplicationMediaCapabilities object. This value cannot be`null`. |
 
 | Exceptions ||
 |-------------------------------------------|----------------------------------------------------------------|
@@ -119,7 +119,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) |
 
 ### getSupportedHdrTypes
 
@@ -207,7 +207,7 @@ fun isHdrTypeSupported(hdrType: String): Boolean
 
 Query if a HDR type is supported by the application.
 
-If the application has not specified supporting the format or not, this will return false. Use [isFormatSpecified(java.lang.String)](../android/media/ApplicationMediaCapabilities.md))to query if a format is specified or not.
+If the application has not specified supporting the format or not, this will return false. Use [isFormatSpecified(java.lang.String)](ApplicationMediaCapabilities.md))to query if a format is specified or not.
 
 | Parameters ||
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -227,11 +227,11 @@ fun isVideoMimeTypeSupported(videoMime: String): Boolean
 
 Query if a video codec format is supported by the application.
 
-If the application has not specified supporting the format or not, this will return false. Use [isFormatSpecified(java.lang.String)](../android/media/ApplicationMediaCapabilities.md))to query if a format is specified or not.
+If the application has not specified supporting the format or not, this will return false. Use [isFormatSpecified(java.lang.String)](ApplicationMediaCapabilities.md))to query if a format is specified or not.
 
 | Parameters ||
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `videoMime` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The mime type of the video codec format. Must be the one used in [MediaFormat.KEY_MIME](../android/media/MediaFormat.md). This value cannot be`null`. |
+| `videoMime` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The mime type of the video codec format. Must be the one used in [MediaFormat.KEY_MIME](MediaFormat.md). This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
@@ -264,8 +264,8 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](../android/os/Parcel.md):This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android.os/Parcel.md):This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

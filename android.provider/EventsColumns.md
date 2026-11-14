@@ -35,7 +35,7 @@ Columns from the Events table that other tables join into themselves.
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AVAILABILITY_FREE](../android/provider/CalendarContract.EventsColumns.md) Indicates that this event is free time and will not conflict with other events. |
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AVAILABILITY_TENTATIVE](../android/provider/CalendarContract.EventsColumns.md) Indicates that the owner's availability may change, but should be considered busy time that will conflict. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CALENDAR_ID](../android/provider/CalendarContract.EventsColumns.md) The [Calendars._ID](../android/provider/BaseColumns.md) of the calendar the event belongs to. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CALENDAR_ID](../android/provider/CalendarContract.EventsColumns.md) The [Calendars._ID](BaseColumns.md) of the calendar the event belongs to. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CAN_INVITE_OTHERS](../android/provider/CalendarContract.EventsColumns.md) Whether the user can invite others to the event. |
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CUSTOM_APP_PACKAGE](../android/provider/CalendarContract.EventsColumns.md) The package name of the custom app that can provide a richer experience for the event. |
@@ -71,7 +71,7 @@ Columns from the Events table that other tables join into themselves.
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ORGANIZER](../android/provider/CalendarContract.EventsColumns.md) Email of the organizer (owner) of the event. |
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ORIGINAL_ALL_DAY](../android/provider/CalendarContract.EventsColumns.md) The allDay status (true or false) of the original recurring event for which this event is an exception. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ORIGINAL_ID](../android/provider/CalendarContract.EventsColumns.md) The [Events._ID](../android/provider/BaseColumns.md) of the original recurring event for which this event is an exception. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ORIGINAL_ID](../android/provider/CalendarContract.EventsColumns.md) The [Events._ID](BaseColumns.md) of the original recurring event for which this event is an exception. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ORIGINAL_INSTANCE_TIME](../android/provider/CalendarContract.EventsColumns.md) The original instance time of the recurring event for which this event is an exception. |
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ORIGINAL_SYNC_ID](../android/provider/CalendarContract.EventsColumns.md) The _sync_id of the original recurring event for which this event is an exception. |
@@ -237,7 +237,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 static val CALENDAR_ID: String
 ```
 
-The [Calendars._ID](../android/provider/BaseColumns.md) of the calendar the event belongs to. Column name.
+The [Calendars._ID](BaseColumns.md) of the calendar the event belongs to. Column name.
 
 Type: INTEGER 
 
@@ -265,7 +265,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 static val CUSTOM_APP_PACKAGE: String
 ```
 
-The package name of the custom app that can provide a richer experience for the event. See the ACTION TYPE [CalendarContract.ACTION_HANDLE_CUSTOM_EVENT](../android/provider/CalendarContract.md) for details. Column name.
+The package name of the custom app that can provide a richer experience for the event. See the ACTION TYPE [CalendarContract.ACTION_HANDLE_CUSTOM_EVENT](CalendarContract.md) for details. Column name.
 
 Type: TEXT 
 
@@ -615,7 +615,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 static val ORIGINAL_ID: String
 ```
 
-The [Events._ID](../android/provider/BaseColumns.md) of the original recurring event for which this event is an exception. Column name.
+The [Events._ID](BaseColumns.md) of the original recurring event for which this event is an exception. Column name.
 
 Type: TEXT 
 

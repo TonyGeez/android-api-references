@@ -2,7 +2,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # MediaScannerConnection
 
-Kotlin | [Java](../android/media/MediaScannerConnection.md)
+Kotlin | [Java](MediaScannerConnection.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ open class MediaScannerConnection : ServiceConnection
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.MediaScannerConnection](../android/media/MediaScannerConnection.md) |
+| ↳ | [android.media.MediaScannerConnection](MediaScannerConnection.md) |
 
 MediaScannerConnection provides a way for applications to pass a newly created or downloaded media file to the media scanner service. The media scanner service will read metadata from the file and add the file to the media content provider. The MediaScannerConnectionClient provides an interface for the media scanner service to return the Uri for a newly scanned file to the client of the MediaScannerConnection class.
 
@@ -58,7 +58,7 @@ Constructs a new MediaScannerConnection object.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md)!: the Context object, required for establishing a connection to the media scanner service. |
+| `context` | [Context](../android.content/Context.md)!: the Context object, required for establishing a connection to the media scanner service. |
 | `client` | [MediaScannerConnection.MediaScannerConnectionClient](../android/media/MediaScannerConnection.MediaScannerConnectionClient.md)!: an optional object implementing the MediaScannerConnectionClient interface, for receiving notifications from the media scanner. |
 
 ## Public methods
@@ -113,7 +113,7 @@ Part of the ServiceConnection interface. Do not call.
 | Parameters ||
 |---|---|
 | `name` | The concrete component name of the service that has been connected. |
-| `service` | [IBinder](../android/os/IBinder.md)!: The IBinder of the Service's communication channel, which you can now make calls on. |
+| `service` | [IBinder](../android.os/IBinder.md)!: The IBinder of the Service's communication channel, which you can now make calls on. |
 
 ### onServiceDisconnected
 
@@ -164,7 +164,7 @@ Convenience for constructing a `https://developer.android.com/reference/kotlin/a
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md)!: The caller's Context, required for establishing a connection to the media scanner service. Success or failure of the scanning operation cannot be determined until `https://developer.android.com/reference/kotlin/android/media/MediaScannerConnection.OnScanCompletedListener#onScanCompleted(kotlin.String,%20android.net.Uri)` is called. |
+| `context` | [Context](../android.content/Context.md)!: The caller's Context, required for establishing a connection to the media scanner service. Success or failure of the scanning operation cannot be determined until `https://developer.android.com/reference/kotlin/android/media/MediaScannerConnection.OnScanCompletedListener#onScanCompleted(kotlin.String,%20android.net.Uri)` is called. |
 | `paths` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!: Array of paths to be scanned. |
 | `mimeTypes` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!: Optional array of MIME types for each path. If mimeType is null, then the mimeType will be inferred from the file extension. |
 | --- | --- |

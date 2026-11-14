@@ -10,12 +10,12 @@ abstract class MessageDigest : MessageDigestSpi
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.security.MessageDigestSpi](../java/security/MessageDigestSpi.md) ||
-| | ↳ | [java.security.MessageDigest](../java/security/MessageDigest.md) |
+| ↳ | [java.security.MessageDigestSpi](MessageDigestSpi.md) ||
+| | ↳ | [java.security.MessageDigest](MessageDigest.md) |
 
 This MessageDigest class provides applications the functionality of a message digest algorithm, such as SHA-1 or SHA-256. Message digests are secure one-way hash functions that take arbitrary-sized data and output a fixed-length hash value.
 
-A MessageDigest object starts out initialized. The data is processed through it using the [update](../java/security/MessageDigest.md))methods. At any point [reset](../java/security/MessageDigest.md))can be called to reset the digest. Once all the data to be updated has been updated, one of the [digest](../java/security/MessageDigest.md))methods should be called to complete the hash computation.
+A MessageDigest object starts out initialized. The data is processed through it using the [update](MessageDigest.md))methods. At any point [reset](MessageDigest.md))can be called to reset the digest. Once all the data to be updated has been updated, one of the [digest](MessageDigest.md))methods should be called to complete the hash computation.
 
 The`digest`method can be called once for a given number of updates. After`digest`has been called, the MessageDigest object is reset to its initialized state.
 
@@ -59,36 +59,36 @@ These algorithms are described in the [MessageDigest section](https://docs.oracl
 
 | Protected constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [MessageDigest](../java/security/MessageDigest.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Creates a message digest with the specified algorithm name. |
+| [MessageDigest](MessageDigest.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Creates a message digest with the specified algorithm name. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](../java/security/MessageDigest.md))`()` Returns a clone if the implementation is cloneable. |
-| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [digest](../java/security/MessageDigest.md))`()` Completes the hash computation by performing final operations such as padding. |
-| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [digest](../java/security/MessageDigest.md))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`)` Performs a final update on the digest using the specified array of bytes, then completes the digest computation. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](MessageDigest.md))`()` Returns a clone if the implementation is cloneable. |
+| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [digest](MessageDigest.md))`()` Completes the hash computation by performing final operations such as padding. |
+| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [digest](MessageDigest.md))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`)` Performs a final update on the digest using the specified array of bytes, then completes the digest computation. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [digest](../java/security/MessageDigest.md))`(`buf:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Completes the hash computation by performing final operations such as padding. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getAlgorithm](../java/security/MessageDigest.md))`()` Returns a string that identifies the algorithm, independent of implementation details. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDigestLength](../java/security/MessageDigest.md))`()` Returns the length of the digest in bytes, or 0 if this operation is not supported by the provider and the implementation is not cloneable. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [digest](MessageDigest.md))`(`buf:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Completes the hash computation by performing final operations such as padding. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getAlgorithm](MessageDigest.md))`()` Returns a string that identifies the algorithm, independent of implementation details. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDigestLength](MessageDigest.md))`()` Returns the length of the digest in bytes, or 0 if this operation is not supported by the provider and the implementation is not cloneable. |
 | --- | --- |
-| openstatic [MessageDigest](../java/security/MessageDigest.md) | [getInstance](../java/security/MessageDigest.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns a MessageDigest object that implements the specified digest algorithm. |
-| openstatic [MessageDigest](../java/security/MessageDigest.md) | [getInstance](../java/security/MessageDigest.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `provider:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns a MessageDigest object that implements the specified digest algorithm. |
-| openstatic [MessageDigest](../java/security/MessageDigest.md) | [getInstance](../java/security/MessageDigest.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `provider:` ` [Provider](../java/security/Provider.md)`)` Returns a MessageDigest object that implements the specified digest algorithm. |
+| openstatic [MessageDigest](MessageDigest.md) | [getInstance](MessageDigest.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns a MessageDigest object that implements the specified digest algorithm. |
+| openstatic [MessageDigest](MessageDigest.md) | [getInstance](MessageDigest.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `provider:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns a MessageDigest object that implements the specified digest algorithm. |
+| openstatic [MessageDigest](MessageDigest.md) | [getInstance](MessageDigest.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `provider:` ` [Provider](Provider.md)`)` Returns a MessageDigest object that implements the specified digest algorithm. |
 | --- | --- |
-| [Provider](../java/security/Provider.md) | [getProvider](../java/security/MessageDigest.md))`()` Returns the provider of this message digest object. |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEqual](../java/security/MessageDigest.md))`(`digesta:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?`, `digestb:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?`)` Compares two digests for equality. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](../java/security/MessageDigest.md))`()` Resets the digest for further use. |
+| [Provider](Provider.md) | [getProvider](MessageDigest.md))`()` Returns the provider of this message digest object. |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEqual](MessageDigest.md))`(`digesta:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?`, `digestb:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?`)` Compares two digests for equality. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](MessageDigest.md))`()` Resets the digest for further use. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/security/MessageDigest.md))`()` Returns a string representation of this message digest object. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](../java/security/MessageDigest.md))`(`input:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Updates the digest using the specified byte. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](../java/security/MessageDigest.md))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`)` Updates the digest using the specified array of bytes. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](MessageDigest.md))`()` Returns a string representation of this message digest object. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](MessageDigest.md))`(`input:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Updates the digest using the specified byte. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](MessageDigest.md))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`)` Updates the digest using the specified array of bytes. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](../java/security/MessageDigest.md))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Updates the digest using the specified array of bytes, starting at the specified offset. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](../java/security/MessageDigest.md))`(`input:` ` [ByteBuffer](../java/nio/ByteBuffer.md)`)` Update the digest using the specified ByteBuffer. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](MessageDigest.md))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Updates the digest using the specified array of bytes, starting at the specified offset. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](MessageDigest.md))`(`input:` ` [ByteBuffer](../java.nio/ByteBuffer.md)`)` Update the digest using the specified ByteBuffer. |
 
 | Inherited functions ||
 |---|---|
-| From class [MessageDigestSpi](../java/security/MessageDigestSpi.md) |------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [engineDigest](../java/security/MessageDigestSpi.md))`()` <br /> Completes the hash computation by performing final operations such as padding. Once`engineDigest`has been called, the engine should be reset (see [engineReset](../java/security/MessageDigestSpi.md))). Resetting is the responsibility of the engine implementor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [engineDigest](../java/security/MessageDigestSpi.md))`(`buf:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> Completes the hash computation by performing final operations such as padding. Once`engineDigest`has been called, the engine should be reset (see [engineReset](../java/security/MessageDigestSpi.md))). Resetting is the responsibility of the engine implementor. This method should be abstract, but we leave it concrete for binary compatibility. Knowledgeable providers should override this method. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [engineGetDigestLength](../java/security/MessageDigestSpi.md))`()` <br /> Returns the digest length in bytes. This concrete method has been added to this previously-defined abstract class. (For backwards compatibility, it cannot be abstract.) The default behavior is to return 0. This method may be overridden by a provider to return the digest length. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineReset](../java/security/MessageDigestSpi.md))`()` <br /> Resets the digest for further use. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineUpdate](../java/security/MessageDigestSpi.md))`(`input:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` <br /> Updates the digest using the specified byte. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineUpdate](../java/security/MessageDigestSpi.md))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> Updates the digest using the specified array of bytes, starting at the specified offset. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineUpdate](../java/security/MessageDigestSpi.md))`(`input:` ` [ByteBuffer](../java/nio/ByteBuffer.md)!`)` <br /> Update the digest using the specified ByteBuffer. The digest is updated using the`input.remaining()`bytes starting at`input.position()`. Upon return, the buffer's position will be equal to its limit; its limit will not have changed. <br /> | ||
+| From class [MessageDigestSpi](MessageDigestSpi.md) |------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [engineDigest](MessageDigestSpi.md))`()` <br /> Completes the hash computation by performing final operations such as padding. Once`engineDigest`has been called, the engine should be reset (see [engineReset](MessageDigestSpi.md))). Resetting is the responsibility of the engine implementor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [engineDigest](MessageDigestSpi.md))`(`buf:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> Completes the hash computation by performing final operations such as padding. Once`engineDigest`has been called, the engine should be reset (see [engineReset](MessageDigestSpi.md))). Resetting is the responsibility of the engine implementor. This method should be abstract, but we leave it concrete for binary compatibility. Knowledgeable providers should override this method. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [engineGetDigestLength](MessageDigestSpi.md))`()` <br /> Returns the digest length in bytes. This concrete method has been added to this previously-defined abstract class. (For backwards compatibility, it cannot be abstract.) The default behavior is to return 0. This method may be overridden by a provider to return the digest length. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineReset](MessageDigestSpi.md))`()` <br /> Resets the digest for further use. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineUpdate](MessageDigestSpi.md))`(`input:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` <br /> Updates the digest using the specified byte. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineUpdate](MessageDigestSpi.md))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> Updates the digest using the specified array of bytes, starting at the specified offset. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineUpdate](MessageDigestSpi.md))`(`input:` ` [ByteBuffer](../java.nio/ByteBuffer.md)!`)` <br /> Update the digest using the specified ByteBuffer. The digest is updated using the`input.remaining()`bytes starting at`input.position()`. Upon return, the buffer's position will be equal to its limit; its limit will not have changed. <br /> | ||
 
 ## Protected constructors
 
@@ -149,7 +149,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun digest(input: ByteArray): ByteArray
 ```
 
-Performs a final update on the digest using the specified array of bytes, then completes the digest computation. That is, this method first calls [update(input)](../java/security/MessageDigest.md)), passing the*input* array to the`update`method, then calls [digest()](../java/security/MessageDigest.md)).
+Performs a final update on the digest using the specified array of bytes, then completes the digest computation. That is, this method first calls [update(input)](MessageDigest.md)), passing the*input* array to the`update`method, then calls [digest()](MessageDigest.md)).
 
 | Parameters ||
 |---------|-------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -228,7 +228,7 @@ Returns a MessageDigest object that implements the specified digest algorithm.
 
 This method traverses the list of registered security Providers, starting with the most preferred Provider. A new MessageDigest object encapsulating the MessageDigestSpi implementation from the first Provider that supports the specified algorithm is returned.
 
-Note that the list of registered providers may be retrieved via the [Security.getProviders()](../java/security/Security.md))method.
+Note that the list of registered providers may be retrieved via the [Security.getProviders()](Security.md))method.
 
 | Parameters ||
 |-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -236,7 +236,7 @@ Note that the list of registered providers may be retrieved via the [Security.ge
 
 | Return ||
 |----------------------------------------------------------------------------------------------|----------------------------------------------------------------|
-| [MessageDigest](../java/security/MessageDigest.md) | a`MessageDigest`object that implements the specified algorithm |
+| [MessageDigest](MessageDigest.md) | a`MessageDigest`object that implements the specified algorithm |
 
 | Exceptions ||
 |------------------------------------------|---------------------------------------------------------------------------------------|
@@ -245,7 +245,7 @@ Note that the list of registered providers may be retrieved via the [Security.ge
 
 **See Also**
 
-- [java.security.Provider](../java/security/Provider.md) 
+- [java.security.Provider](Provider.md) 
 
 ### getInstance
 
@@ -262,7 +262,7 @@ Returns a MessageDigest object that implements the specified digest algorithm.
 
 A new MessageDigest object encapsulating the MessageDigestSpi implementation from the specified provider is returned. The specified provider must be registered in the security provider list.
 
-Note that the list of registered providers may be retrieved via the [Security.getProviders()](../java/security/Security.md))method.
+Note that the list of registered providers may be retrieved via the [Security.getProviders()](Security.md))method.
 
 | Parameters ||
 |-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -271,7 +271,7 @@ Note that the list of registered providers may be retrieved via the [Security.ge
 
 | Return ||
 |----------------------------------------------------------------------------------------------|----------------------------------------------------------------|
-| [MessageDigest](../java/security/MessageDigest.md) | a`MessageDigest`object that implements the specified algorithm |
+| [MessageDigest](MessageDigest.md) | a`MessageDigest`object that implements the specified algorithm |
 
 | Exceptions ||
 |------------------------------------------|---------------------------------------------------------------------------------------------------------------|
@@ -283,7 +283,7 @@ Note that the list of registered providers may be retrieved via the [Security.ge
 
 **See Also**
 
-- [java.security.Provider](../java/security/Provider.md) 
+- [java.security.Provider](Provider.md) 
 
 ### getInstance
 
@@ -303,11 +303,11 @@ A new MessageDigest object encapsulating the MessageDigestSpi implementation fro
 | Parameters ||
 |-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `algorithm` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):the name of the algorithm requested. See the MessageDigest section in the [Java Security Standard Algorithm Names Specification](https://docs.oracle.com/en/java/javase/17/docs/specs/security/standard-names.html#messagedigest-algorithms) for information about standard algorithm names. |
-| `provider` | [Provider](../java/security/Provider.md):the provider. |
+| `provider` | [Provider](Provider.md):the provider. |
 
 | Return ||
 |----------------------------------------------------------------------------------------------|----------------------------------------------------------------|
-| [MessageDigest](../java/security/MessageDigest.md) | a`MessageDigest`object that implements the specified algorithm |
+| [MessageDigest](MessageDigest.md) | a`MessageDigest`object that implements the specified algorithm |
 
 | Exceptions ||
 |------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
@@ -318,7 +318,7 @@ A new MessageDigest object encapsulating the MessageDigestSpi implementation fro
 
 **See Also**
 
-- [java.security.Provider](../java/security/Provider.md) 
+- [java.security.Provider](Provider.md) 
 
 ### getProvider
 
@@ -332,7 +332,7 @@ Returns the provider of this message digest object.
 
 | Return ||
 |-----------------------------------------------------------------------------------|--------------------------------------------|
-| [Provider](../java/security/Provider.md) | the provider of this message digest object |
+| [Provider](Provider.md) | the provider of this message digest object |
 
 ### isEqual
 
@@ -441,4 +441,4 @@ Update the digest using the specified ByteBuffer. The digest is updated using th
 
 | Parameters ||
 |---------|-------------------------------------------------------------------------------------------------------|
-| `input` | [ByteBuffer](../java/nio/ByteBuffer.md):the ByteBuffer |
+| `input` | [ByteBuffer](../java.nio/ByteBuffer.md):the ByteBuffer |

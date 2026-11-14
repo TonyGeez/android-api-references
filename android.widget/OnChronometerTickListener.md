@@ -19,7 +19,7 @@ A callback that notifies when the chronometer has incremented on its own.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onChronometerTick](../android/widget/Chronometer.OnChronometerTickListener.md))`(`chronometer:` ` [Chronometer](../android/widget/Chronometer.md)!`)` Notification that the chronometer has changed. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onChronometerTick](../android/widget/Chronometer.OnChronometerTickListener.md))`(`chronometer:` ` [Chronometer](Chronometer.md)!`)` Notification that the chronometer has changed. |
 
 ## Public methods
 

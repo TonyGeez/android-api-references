@@ -5,7 +5,7 @@ Deprecated in [API level 24](https://developer.android.com/guide/topics/manifest
 
 # TouchUtils
 
-Kotlin| [Java](../android/test/TouchUtils.md) 
+Kotlin| [Java](TouchUtils.md) 
 | --- | --- |
 
 ```
@@ -14,7 +14,7 @@ open class TouchUtils
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.test.TouchUtils](../android/test/TouchUtils.md) |
+| ↳ | [android.test.TouchUtils](TouchUtils.md) |
 
 | **This class was deprecated in API level 24.**
 |
@@ -26,51 +26,51 @@ Reusable methods for generating touch events. These methods can be used with Ins
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------|---|
-| [TouchUtils](../android/test/TouchUtils.md))`()` <br /> |
+| [TouchUtils](TouchUtils.md))`()` <br /> |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clickView](../android/test/TouchUtils.md))`(`test:` ` [InstrumentationTestCase](../android/test/InstrumentationTestCase.md)!`, `v:` ` [View](../android/view/View.md)!`)` Simulate touching the center of a view and releasing. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [drag](../android/test/TouchUtils.md))`(`test:` ` [ActivityInstrumentationTestCase](../android/test/ActivityInstrumentationTestCase.md)< [Activity](../android/app/Activity.md)!>!`, `fromX:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `toX:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `fromY:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `toY:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `stepCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Simulate touching a specific location and dragging to a new location. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [drag](../android/test/TouchUtils.md))`(`test:` ` [InstrumentationTestCase](../android/test/InstrumentationTestCase.md)!`, `fromX:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `toX:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `fromY:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `toY:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `stepCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Simulate touching a specific location and dragging to a new location. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clickView](TouchUtils.md))`(`test:` ` [InstrumentationTestCase](InstrumentationTestCase.md)!`, `v:` ` [View](../android.view/View.md)!`)` Simulate touching the center of a view and releasing. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [drag](TouchUtils.md))`(`test:` ` [ActivityInstrumentationTestCase](ActivityInstrumentationTestCase.md)< [Activity](../android.app/Activity.md)!>!`, `fromX:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `toX:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `fromY:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `toY:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `stepCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Simulate touching a specific location and dragging to a new location. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [drag](TouchUtils.md))`(`test:` ` [InstrumentationTestCase](InstrumentationTestCase.md)!`, `fromX:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `toX:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `fromY:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `toY:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `stepCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Simulate touching a specific location and dragging to a new location. |
 | --- | --- |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dragQuarterScreenDown](../android/test/TouchUtils.md))`(`test:` ` [ActivityInstrumentationTestCase](../android/test/ActivityInstrumentationTestCase.md)< [Activity](../android/app/Activity.md)!>!`)` Simulate touching in the center of the screen and dragging one quarter of the way down |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dragQuarterScreenDown](../android/test/TouchUtils.md))`(`test:` ` [InstrumentationTestCase](../android/test/InstrumentationTestCase.md)!`, `activity:` ` [Activity](../android/app/Activity.md)!`)` Simulate touching in the center of the screen and dragging one quarter of the way down |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dragQuarterScreenUp](../android/test/TouchUtils.md))`(`test:` ` [ActivityInstrumentationTestCase](../android/test/ActivityInstrumentationTestCase.md)< [Activity](../android/app/Activity.md)!>!`)` Simulate touching in the center of the screen and dragging one quarter of the way up |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dragQuarterScreenDown](TouchUtils.md))`(`test:` ` [ActivityInstrumentationTestCase](ActivityInstrumentationTestCase.md)< [Activity](../android.app/Activity.md)!>!`)` Simulate touching in the center of the screen and dragging one quarter of the way down |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dragQuarterScreenDown](TouchUtils.md))`(`test:` ` [InstrumentationTestCase](InstrumentationTestCase.md)!`, `activity:` ` [Activity](../android.app/Activity.md)!`)` Simulate touching in the center of the screen and dragging one quarter of the way down |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dragQuarterScreenUp](TouchUtils.md))`(`test:` ` [ActivityInstrumentationTestCase](ActivityInstrumentationTestCase.md)< [Activity](../android.app/Activity.md)!>!`)` Simulate touching in the center of the screen and dragging one quarter of the way up |
 | --- | --- |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dragQuarterScreenUp](../android/test/TouchUtils.md))`(`test:` ` [InstrumentationTestCase](../android/test/InstrumentationTestCase.md)!`, `activity:` ` [Activity](../android/app/Activity.md)!`)` Simulate touching in the center of the screen and dragging one quarter of the way up |
-| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [dragViewBy](../android/test/TouchUtils.md))`(`test:` ` [ActivityInstrumentationTestCase](../android/test/ActivityInstrumentationTestCase.md)< [Activity](../android/app/Activity.md)!>!`, `v:` ` [View](../android/view/View.md)!`, `gravity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `deltaX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `deltaY:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Simulate touching a view and dragging it by the specified amount. |
-| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [dragViewBy](../android/test/TouchUtils.md))`(`test:` ` [InstrumentationTestCase](../android/test/InstrumentationTestCase.md)!`, `v:` ` [View](../android/view/View.md)!`, `gravity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `deltaX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `deltaY:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Simulate touching a view and dragging it by the specified amount. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dragQuarterScreenUp](TouchUtils.md))`(`test:` ` [InstrumentationTestCase](InstrumentationTestCase.md)!`, `activity:` ` [Activity](../android.app/Activity.md)!`)` Simulate touching in the center of the screen and dragging one quarter of the way up |
+| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [dragViewBy](TouchUtils.md))`(`test:` ` [ActivityInstrumentationTestCase](ActivityInstrumentationTestCase.md)< [Activity](../android.app/Activity.md)!>!`, `v:` ` [View](../android.view/View.md)!`, `gravity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `deltaX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `deltaY:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Simulate touching a view and dragging it by the specified amount. |
+| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [dragViewBy](TouchUtils.md))`(`test:` ` [InstrumentationTestCase](InstrumentationTestCase.md)!`, `v:` ` [View](../android.view/View.md)!`, `gravity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `deltaX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `deltaY:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Simulate touching a view and dragging it by the specified amount. |
 | --- | --- |
-| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [dragViewTo](../android/test/TouchUtils.md))`(`test:` ` [ActivityInstrumentationTestCase](../android/test/ActivityInstrumentationTestCase.md)< [Activity](../android/app/Activity.md)!>!`, `v:` ` [View](../android/view/View.md)!`, `gravity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `toX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `toY:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Simulate touching a view and dragging it to a specified location. |
-| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [dragViewTo](../android/test/TouchUtils.md))`(`test:` ` [InstrumentationTestCase](../android/test/InstrumentationTestCase.md)!`, `v:` ` [View](../android/view/View.md)!`, `gravity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `toX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `toY:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Simulate touching a view and dragging it to a specified location. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dragViewToBottom](../android/test/TouchUtils.md))`(`test:` ` [ActivityInstrumentationTestCase](../android/test/ActivityInstrumentationTestCase.md)< [Activity](../android/app/Activity.md)!>!`, `v:` ` [View](../android/view/View.md)!`)` Simulate touching the center of a view and dragging to the bottom of the screen. |
+| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [dragViewTo](TouchUtils.md))`(`test:` ` [ActivityInstrumentationTestCase](ActivityInstrumentationTestCase.md)< [Activity](../android.app/Activity.md)!>!`, `v:` ` [View](../android.view/View.md)!`, `gravity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `toX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `toY:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Simulate touching a view and dragging it to a specified location. |
+| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [dragViewTo](TouchUtils.md))`(`test:` ` [InstrumentationTestCase](InstrumentationTestCase.md)!`, `v:` ` [View](../android.view/View.md)!`, `gravity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `toX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `toY:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Simulate touching a view and dragging it to a specified location. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dragViewToBottom](TouchUtils.md))`(`test:` ` [ActivityInstrumentationTestCase](ActivityInstrumentationTestCase.md)< [Activity](../android.app/Activity.md)!>!`, `v:` ` [View](../android.view/View.md)!`)` Simulate touching the center of a view and dragging to the bottom of the screen. |
 | --- | --- |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dragViewToBottom](../android/test/TouchUtils.md))`(`test:` ` [ActivityInstrumentationTestCase](../android/test/ActivityInstrumentationTestCase.md)< [Activity](../android/app/Activity.md)!>!`, `v:` ` [View](../android/view/View.md)!`, `stepCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Simulate touching the center of a view and dragging to the bottom of the screen. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dragViewToBottom](../android/test/TouchUtils.md))`(`test:` ` [InstrumentationTestCase](../android/test/InstrumentationTestCase.md)!`, `activity:` ` [Activity](../android/app/Activity.md)!`, `v:` ` [View](../android/view/View.md)!`)` Simulate touching the center of a view and dragging to the bottom of the screen. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dragViewToBottom](../android/test/TouchUtils.md))`(`test:` ` [InstrumentationTestCase](../android/test/InstrumentationTestCase.md)!`, `activity:` ` [Activity](../android/app/Activity.md)!`, `v:` ` [View](../android/view/View.md)!`, `stepCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Simulate touching the center of a view and dragging to the bottom of the screen. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dragViewToBottom](TouchUtils.md))`(`test:` ` [ActivityInstrumentationTestCase](ActivityInstrumentationTestCase.md)< [Activity](../android.app/Activity.md)!>!`, `v:` ` [View](../android.view/View.md)!`, `stepCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Simulate touching the center of a view and dragging to the bottom of the screen. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dragViewToBottom](TouchUtils.md))`(`test:` ` [InstrumentationTestCase](InstrumentationTestCase.md)!`, `activity:` ` [Activity](../android.app/Activity.md)!`, `v:` ` [View](../android.view/View.md)!`)` Simulate touching the center of a view and dragging to the bottom of the screen. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dragViewToBottom](TouchUtils.md))`(`test:` ` [InstrumentationTestCase](InstrumentationTestCase.md)!`, `activity:` ` [Activity](../android.app/Activity.md)!`, `v:` ` [View](../android.view/View.md)!`, `stepCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Simulate touching the center of a view and dragging to the bottom of the screen. |
 | --- | --- |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dragViewToTop](../android/test/TouchUtils.md))`(`test:` ` [ActivityInstrumentationTestCase](../android/test/ActivityInstrumentationTestCase.md)< [Activity](../android/app/Activity.md)!>!`, `v:` ` [View](../android/view/View.md)!`)` Simulate touching the center of a view and dragging to the top of the screen. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dragViewToTop](../android/test/TouchUtils.md))`(`test:` ` [ActivityInstrumentationTestCase](../android/test/ActivityInstrumentationTestCase.md)< [Activity](../android/app/Activity.md)!>!`, `v:` ` [View](../android/view/View.md)!`, `stepCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Simulate touching the center of a view and dragging to the top of the screen. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dragViewToTop](../android/test/TouchUtils.md))`(`test:` ` [InstrumentationTestCase](../android/test/InstrumentationTestCase.md)!`, `v:` ` [View](../android/view/View.md)!`)` Simulate touching the center of a view and dragging to the top of the screen. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dragViewToTop](TouchUtils.md))`(`test:` ` [ActivityInstrumentationTestCase](ActivityInstrumentationTestCase.md)< [Activity](../android.app/Activity.md)!>!`, `v:` ` [View](../android.view/View.md)!`)` Simulate touching the center of a view and dragging to the top of the screen. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dragViewToTop](TouchUtils.md))`(`test:` ` [ActivityInstrumentationTestCase](ActivityInstrumentationTestCase.md)< [Activity](../android.app/Activity.md)!>!`, `v:` ` [View](../android.view/View.md)!`, `stepCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Simulate touching the center of a view and dragging to the top of the screen. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dragViewToTop](TouchUtils.md))`(`test:` ` [InstrumentationTestCase](InstrumentationTestCase.md)!`, `v:` ` [View](../android.view/View.md)!`)` Simulate touching the center of a view and dragging to the top of the screen. |
 | --- | --- |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dragViewToTop](../android/test/TouchUtils.md))`(`test:` ` [InstrumentationTestCase](../android/test/InstrumentationTestCase.md)!`, `v:` ` [View](../android/view/View.md)!`, `stepCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Simulate touching the center of a view and dragging to the top of the screen. |
-| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [dragViewToX](../android/test/TouchUtils.md))`(`test:` ` [ActivityInstrumentationTestCase](../android/test/ActivityInstrumentationTestCase.md)< [Activity](../android/app/Activity.md)!>!`, `v:` ` [View](../android/view/View.md)!`, `gravity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `toX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Simulate touching a view and dragging it to a specified location. |
-| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [dragViewToX](../android/test/TouchUtils.md))`(`test:` ` [InstrumentationTestCase](../android/test/InstrumentationTestCase.md)!`, `v:` ` [View](../android/view/View.md)!`, `gravity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `toX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Simulate touching a view and dragging it to a specified location. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dragViewToTop](TouchUtils.md))`(`test:` ` [InstrumentationTestCase](InstrumentationTestCase.md)!`, `v:` ` [View](../android.view/View.md)!`, `stepCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Simulate touching the center of a view and dragging to the top of the screen. |
+| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [dragViewToX](TouchUtils.md))`(`test:` ` [ActivityInstrumentationTestCase](ActivityInstrumentationTestCase.md)< [Activity](../android.app/Activity.md)!>!`, `v:` ` [View](../android.view/View.md)!`, `gravity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `toX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Simulate touching a view and dragging it to a specified location. |
+| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [dragViewToX](TouchUtils.md))`(`test:` ` [InstrumentationTestCase](InstrumentationTestCase.md)!`, `v:` ` [View](../android.view/View.md)!`, `gravity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `toX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Simulate touching a view and dragging it to a specified location. |
 | --- | --- |
-| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [dragViewToY](../android/test/TouchUtils.md))`(`test:` ` [ActivityInstrumentationTestCase](../android/test/ActivityInstrumentationTestCase.md)< [Activity](../android/app/Activity.md)!>!`, `v:` ` [View](../android/view/View.md)!`, `gravity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `toY:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Simulate touching a view and dragging it to a specified location. |
-| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [dragViewToY](../android/test/TouchUtils.md))`(`test:` ` [InstrumentationTestCase](../android/test/InstrumentationTestCase.md)!`, `v:` ` [View](../android/view/View.md)!`, `gravity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `toY:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Simulate touching a view and dragging it to a specified location. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [longClickView](../android/test/TouchUtils.md))`(`test:` ` [ActivityInstrumentationTestCase](../android/test/ActivityInstrumentationTestCase.md)< [Activity](../android/app/Activity.md)!>!`, `v:` ` [View](../android/view/View.md)!`)` Simulate touching the center of a view, holding until it is a long press, and then releasing. |
+| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [dragViewToY](TouchUtils.md))`(`test:` ` [ActivityInstrumentationTestCase](ActivityInstrumentationTestCase.md)< [Activity](../android.app/Activity.md)!>!`, `v:` ` [View](../android.view/View.md)!`, `gravity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `toY:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Simulate touching a view and dragging it to a specified location. |
+| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [dragViewToY](TouchUtils.md))`(`test:` ` [InstrumentationTestCase](InstrumentationTestCase.md)!`, `v:` ` [View](../android.view/View.md)!`, `gravity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `toY:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Simulate touching a view and dragging it to a specified location. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [longClickView](TouchUtils.md))`(`test:` ` [ActivityInstrumentationTestCase](ActivityInstrumentationTestCase.md)< [Activity](../android.app/Activity.md)!>!`, `v:` ` [View](../android.view/View.md)!`)` Simulate touching the center of a view, holding until it is a long press, and then releasing. |
 | --- | --- |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [longClickView](../android/test/TouchUtils.md))`(`test:` ` [InstrumentationTestCase](../android/test/InstrumentationTestCase.md)!`, `v:` ` [View](../android/view/View.md)!`)` Simulate touching the center of a view, holding until it is a long press, and then releasing. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [scrollToBottom](../android/test/TouchUtils.md))`(`test:` ` [ActivityInstrumentationTestCase](../android/test/ActivityInstrumentationTestCase.md)< [Activity](../android/app/Activity.md)!>!`, `v:` ` [ViewGroup](../android/view/ViewGroup.md)!`)` Scroll a ViewGroup to the bottom by repeatedly calling [dragQuarterScreenUp(android.test.InstrumentationTestCase,android.app.Activity)](../android/test/TouchUtils.md)) |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [scrollToBottom](../android/test/TouchUtils.md))`(`test:` ` [InstrumentationTestCase](../android/test/InstrumentationTestCase.md)!`, `activity:` ` [Activity](../android/app/Activity.md)!`, `v:` ` [ViewGroup](../android/view/ViewGroup.md)!`)` Scroll a ViewGroup to the bottom by repeatedly calling [dragQuarterScreenUp(android.test.InstrumentationTestCase,android.app.Activity)](../android/test/TouchUtils.md)) |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [longClickView](TouchUtils.md))`(`test:` ` [InstrumentationTestCase](InstrumentationTestCase.md)!`, `v:` ` [View](../android.view/View.md)!`)` Simulate touching the center of a view, holding until it is a long press, and then releasing. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [scrollToBottom](TouchUtils.md))`(`test:` ` [ActivityInstrumentationTestCase](ActivityInstrumentationTestCase.md)< [Activity](../android.app/Activity.md)!>!`, `v:` ` [ViewGroup](../android.view/ViewGroup.md)!`)` Scroll a ViewGroup to the bottom by repeatedly calling [dragQuarterScreenUp(android.test.InstrumentationTestCase,android.app.Activity)](TouchUtils.md)) |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [scrollToBottom](TouchUtils.md))`(`test:` ` [InstrumentationTestCase](InstrumentationTestCase.md)!`, `activity:` ` [Activity](../android.app/Activity.md)!`, `v:` ` [ViewGroup](../android.view/ViewGroup.md)!`)` Scroll a ViewGroup to the bottom by repeatedly calling [dragQuarterScreenUp(android.test.InstrumentationTestCase,android.app.Activity)](TouchUtils.md)) |
 | --- | --- |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [scrollToTop](../android/test/TouchUtils.md))`(`test:` ` [ActivityInstrumentationTestCase](../android/test/ActivityInstrumentationTestCase.md)< [Activity](../android/app/Activity.md)!>!`, `v:` ` [ViewGroup](../android/view/ViewGroup.md)!`)` Scroll a ViewGroup to the top by repeatedly calling [dragQuarterScreenDown(android.test.InstrumentationTestCase,android.app.Activity)](../android/test/TouchUtils.md)) |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [scrollToTop](../android/test/TouchUtils.md))`(`test:` ` [InstrumentationTestCase](../android/test/InstrumentationTestCase.md)!`, `activity:` ` [Activity](../android/app/Activity.md)!`, `v:` ` [ViewGroup](../android/view/ViewGroup.md)!`)` Scroll a ViewGroup to the top by repeatedly calling [dragQuarterScreenDown(android.test.InstrumentationTestCase,android.app.Activity)](../android/test/TouchUtils.md)) |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [tapView](../android/test/TouchUtils.md))`(`test:` ` [InstrumentationTestCase](../android/test/InstrumentationTestCase.md)!`, `v:` ` [View](../android/view/View.md)!`)` Simulate touching the center of a view and releasing quickly (before the tap timeout). |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [scrollToTop](TouchUtils.md))`(`test:` ` [ActivityInstrumentationTestCase](ActivityInstrumentationTestCase.md)< [Activity](../android.app/Activity.md)!>!`, `v:` ` [ViewGroup](../android.view/ViewGroup.md)!`)` Scroll a ViewGroup to the top by repeatedly calling [dragQuarterScreenDown(android.test.InstrumentationTestCase,android.app.Activity)](TouchUtils.md)) |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [scrollToTop](TouchUtils.md))`(`test:` ` [InstrumentationTestCase](InstrumentationTestCase.md)!`, `activity:` ` [Activity](../android.app/Activity.md)!`, `v:` ` [ViewGroup](../android.view/ViewGroup.md)!`)` Scroll a ViewGroup to the top by repeatedly calling [dragQuarterScreenDown(android.test.InstrumentationTestCase,android.app.Activity)](TouchUtils.md)) |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [tapView](TouchUtils.md))`(`test:` ` [InstrumentationTestCase](InstrumentationTestCase.md)!`, `v:` ` [View](../android.view/View.md)!`)` Simulate touching the center of a view and releasing quickly (before the tap timeout). |
 | --- | --- |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [touchAndCancelView](../android/test/TouchUtils.md))`(`test:` ` [InstrumentationTestCase](../android/test/InstrumentationTestCase.md)!`, `v:` ` [View](../android/view/View.md)!`)` Simulate touching the center of a view and cancelling (so no onClick should fire, etc). |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [touchAndCancelView](TouchUtils.md))`(`test:` ` [InstrumentationTestCase](InstrumentationTestCase.md)!`, `v:` ` [View](../android.view/View.md)!`)` Simulate touching the center of a view and cancelling (so no onClick should fire, etc). |
 
 ## Public constructors
 
@@ -99,8 +99,8 @@ Simulate touching the center of a view and releasing.
 
 | Parameters ||
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| `test` | [InstrumentationTestCase](../android/test/InstrumentationTestCase.md)!:The test case that is being run |
-| `v` | [View](../android/view/View.md)!:The view that should be clicked |
+| `test` | [InstrumentationTestCase](InstrumentationTestCase.md)!:The test case that is being run |
+| `v` | [View](../android.view/View.md)!:The view that should be clicked |
 
 ### drag
 
@@ -118,13 +118,13 @@ open static fun drag(
 ): Unit
 ```
 
-**Deprecated:** * [android.test.ActivityInstrumentationTestCase](../android/test/ActivityInstrumentationTestCase.md) is deprecated in favor of [android.test.ActivityInstrumentationTestCase2](../android/test/ActivityInstrumentationTestCase2.md), which provides more options for configuring the Activity under test*
+**Deprecated:** * [android.test.ActivityInstrumentationTestCase](ActivityInstrumentationTestCase.md) is deprecated in favor of [android.test.ActivityInstrumentationTestCase2](ActivityInstrumentationTestCase2.md), which provides more options for configuring the Activity under test*
 
 Simulate touching a specific location and dragging to a new location.
 
 | Parameters ||
 |-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `test` | [ActivityInstrumentationTestCase](../android/test/ActivityInstrumentationTestCase.md)\< [Activity](../android/app/Activity.md)!\>!:The test case that is being run |
+| `test` | [ActivityInstrumentationTestCase](ActivityInstrumentationTestCase.md)\< [Activity](../android.app/Activity.md)!\>!:The test case that is being run |
 | `fromX` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):X coordinate of the initial touch, in screen coordinates |
 | `toX` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):Xcoordinate of the drag destination, in screen coordinates |
 | --- | --- |
@@ -155,7 +155,7 @@ Simulate touching a specific location and dragging to a new location.
 
 | Parameters ||
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| `test` | [InstrumentationTestCase](../android/test/InstrumentationTestCase.md)!:The test case that is being run |
+| `test` | [InstrumentationTestCase](InstrumentationTestCase.md)!:The test case that is being run |
 | `fromX` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):X coordinate of the initial touch, in screen coordinates |
 | `toX` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):Xcoordinate of the drag destination, in screen coordinates |
 | --- | --- |
@@ -173,13 +173,13 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 open static fun dragQuarterScreenDown(test: ActivityInstrumentationTestCase<Activity!>!): Unit
 ```
 
-**Deprecated:** * [android.test.ActivityInstrumentationTestCase](../android/test/ActivityInstrumentationTestCase.md) is deprecated in favor of [android.test.ActivityInstrumentationTestCase2](../android/test/ActivityInstrumentationTestCase2.md), which provides more options for configuring the Activity under test*
+**Deprecated:** * [android.test.ActivityInstrumentationTestCase](ActivityInstrumentationTestCase.md) is deprecated in favor of [android.test.ActivityInstrumentationTestCase2](ActivityInstrumentationTestCase2.md), which provides more options for configuring the Activity under test*
 
 Simulate touching in the center of the screen and dragging one quarter of the way down
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `test` | [ActivityInstrumentationTestCase](../android/test/ActivityInstrumentationTestCase.md)\< [Activity](../android/app/Activity.md)!\>!:The test case that is being run |
+| `test` | [ActivityInstrumentationTestCase](ActivityInstrumentationTestCase.md)\< [Activity](../android.app/Activity.md)!\>!:The test case that is being run |
 
 ### dragQuarterScreenDown
 
@@ -199,8 +199,8 @@ Simulate touching in the center of the screen and dragging one quarter of the wa
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| `test` | [InstrumentationTestCase](../android/test/InstrumentationTestCase.md)!:The test case that is being run |
-| `activity` | [Activity](../android/app/Activity.md)!:The activity that is in the foreground of the test case |
+| `test` | [InstrumentationTestCase](InstrumentationTestCase.md)!:The test case that is being run |
+| `activity` | [Activity](../android.app/Activity.md)!:The activity that is in the foreground of the test case |
 
 ### dragQuarterScreenUp
 
@@ -211,13 +211,13 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 open static fun dragQuarterScreenUp(test: ActivityInstrumentationTestCase<Activity!>!): Unit
 ```
 
-**Deprecated:** * [android.test.ActivityInstrumentationTestCase](../android/test/ActivityInstrumentationTestCase.md) is deprecated in favor of [android.test.ActivityInstrumentationTestCase2](../android/test/ActivityInstrumentationTestCase2.md), which provides more options for configuring the Activity under test*
+**Deprecated:** * [android.test.ActivityInstrumentationTestCase](ActivityInstrumentationTestCase.md) is deprecated in favor of [android.test.ActivityInstrumentationTestCase2](ActivityInstrumentationTestCase2.md), which provides more options for configuring the Activity under test*
 
 Simulate touching in the center of the screen and dragging one quarter of the way up
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `test` | [ActivityInstrumentationTestCase](../android/test/ActivityInstrumentationTestCase.md)\< [Activity](../android/app/Activity.md)!\>!:The test case that is being run |
+| `test` | [ActivityInstrumentationTestCase](ActivityInstrumentationTestCase.md)\< [Activity](../android.app/Activity.md)!\>!:The test case that is being run |
 
 ### dragQuarterScreenUp
 
@@ -237,8 +237,8 @@ Simulate touching in the center of the screen and dragging one quarter of the wa
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| `test` | [InstrumentationTestCase](../android/test/InstrumentationTestCase.md)!:The test case that is being run |
-| `activity` | [Activity](../android/app/Activity.md)!:The activity that is in the foreground of the test case |
+| `test` | [InstrumentationTestCase](InstrumentationTestCase.md)!:The test case that is being run |
+| `activity` | [Activity](../android.app/Activity.md)!:The activity that is in the foreground of the test case |
 
 ### dragViewBy
 
@@ -255,14 +255,14 @@ open static fun dragViewBy(
 ): Int
 ```
 
-**Deprecated:** * [android.test.ActivityInstrumentationTestCase](../android/test/ActivityInstrumentationTestCase.md) is deprecated in favor of [android.test.ActivityInstrumentationTestCase2](../android/test/ActivityInstrumentationTestCase2.md), which provides more options for configuring the Activity under test*
+**Deprecated:** * [android.test.ActivityInstrumentationTestCase](ActivityInstrumentationTestCase.md) is deprecated in favor of [android.test.ActivityInstrumentationTestCase2](ActivityInstrumentationTestCase2.md), which provides more options for configuring the Activity under test*
 
 Simulate touching a view and dragging it by the specified amount.
 
 | Parameters ||
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `test` | [ActivityInstrumentationTestCase](../android/test/ActivityInstrumentationTestCase.md)\< [Activity](../android/app/Activity.md)!\>!:The test case that is being run |
-| `v` | [View](../android/view/View.md)!:The view that should be dragged |
+| `test` | [ActivityInstrumentationTestCase](ActivityInstrumentationTestCase.md)\< [Activity](../android.app/Activity.md)!\>!:The test case that is being run |
+| `v` | [View](../android.view/View.md)!:The view that should be dragged |
 | `gravity` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Which part of the view to use for the initial down event. A combination of (TOP, CENTER_VERTICAL, BOTTOM) and (LEFT, CENTER_HORIZONTAL, RIGHT) |
 | --- | --- |
 | `deltaX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Amount to drag horizontally in pixels |
@@ -287,14 +287,14 @@ open static fun dragViewBy(
 ): Int
 ```
 
-**Deprecated:** * [android.test.ActivityInstrumentationTestCase](../android/test/ActivityInstrumentationTestCase.md) is deprecated in favor of [android.test.ActivityInstrumentationTestCase2](../android/test/ActivityInstrumentationTestCase2.md), which provides more options for configuring the Activity under test*
+**Deprecated:** * [android.test.ActivityInstrumentationTestCase](ActivityInstrumentationTestCase.md) is deprecated in favor of [android.test.ActivityInstrumentationTestCase2](ActivityInstrumentationTestCase2.md), which provides more options for configuring the Activity under test*
 
 Simulate touching a view and dragging it by the specified amount.
 
 | Parameters ||
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `test` | [InstrumentationTestCase](../android/test/InstrumentationTestCase.md)!:The test case that is being run |
-| `v` | [View](../android/view/View.md)!:The view that should be dragged |
+| `test` | [InstrumentationTestCase](InstrumentationTestCase.md)!:The test case that is being run |
+| `v` | [View](../android.view/View.md)!:The view that should be dragged |
 | `gravity` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Which part of the view to use for the initial down event. A combination of (TOP, CENTER_VERTICAL, BOTTOM) and (LEFT, CENTER_HORIZONTAL, RIGHT) |
 | --- | --- |
 | `deltaX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Amount to drag horizontally in pixels |
@@ -319,14 +319,14 @@ open static fun dragViewTo(
 ): Int
 ```
 
-**Deprecated:** * [android.test.ActivityInstrumentationTestCase](../android/test/ActivityInstrumentationTestCase.md) is deprecated in favor of [android.test.ActivityInstrumentationTestCase2](../android/test/ActivityInstrumentationTestCase2.md), which provides more options for configuring the Activity under test*
+**Deprecated:** * [android.test.ActivityInstrumentationTestCase](ActivityInstrumentationTestCase.md) is deprecated in favor of [android.test.ActivityInstrumentationTestCase2](ActivityInstrumentationTestCase2.md), which provides more options for configuring the Activity under test*
 
 Simulate touching a view and dragging it to a specified location.
 
 | Parameters ||
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `test` | [ActivityInstrumentationTestCase](../android/test/ActivityInstrumentationTestCase.md)\< [Activity](../android/app/Activity.md)!\>!:The test case that is being run |
-| `v` | [View](../android/view/View.md)!:The view that should be dragged |
+| `test` | [ActivityInstrumentationTestCase](ActivityInstrumentationTestCase.md)\< [Activity](../android.app/Activity.md)!\>!:The test case that is being run |
+| `v` | [View](../android.view/View.md)!:The view that should be dragged |
 | `gravity` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Which part of the view to use for the initial down event. A combination of (TOP, CENTER_VERTICAL, BOTTOM) and (LEFT, CENTER_HORIZONTAL, RIGHT) |
 | --- | --- |
 | `toX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Final location of the view after dragging |
@@ -357,8 +357,8 @@ Simulate touching a view and dragging it to a specified location.
 
 | Parameters ||
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `test` | [InstrumentationTestCase](../android/test/InstrumentationTestCase.md)!:The test case that is being run |
-| `v` | [View](../android/view/View.md)!:The view that should be dragged |
+| `test` | [InstrumentationTestCase](InstrumentationTestCase.md)!:The test case that is being run |
+| `v` | [View](../android.view/View.md)!:The view that should be dragged |
 | `gravity` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Which part of the view to use for the initial down event. A combination of (TOP, CENTER_VERTICAL, BOTTOM) and (LEFT, CENTER_HORIZONTAL, RIGHT) |
 | --- | --- |
 | `toX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Final location of the view after dragging |
@@ -380,14 +380,14 @@ open static fun dragViewToBottom(
 ): Unit
 ```
 
-**Deprecated:** * [android.test.ActivityInstrumentationTestCase](../android/test/ActivityInstrumentationTestCase.md) is deprecated in favor of [android.test.ActivityInstrumentationTestCase2](../android/test/ActivityInstrumentationTestCase2.md), which provides more options for configuring the Activity under test*
+**Deprecated:** * [android.test.ActivityInstrumentationTestCase](ActivityInstrumentationTestCase.md) is deprecated in favor of [android.test.ActivityInstrumentationTestCase2](ActivityInstrumentationTestCase2.md), which provides more options for configuring the Activity under test*
 
 Simulate touching the center of a view and dragging to the bottom of the screen.
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `test` | [ActivityInstrumentationTestCase](../android/test/ActivityInstrumentationTestCase.md)\< [Activity](../android/app/Activity.md)!\>!:The test case that is being run |
-| `v` | [View](../android/view/View.md)!:The view that should be dragged |
+| `test` | [ActivityInstrumentationTestCase](ActivityInstrumentationTestCase.md)\< [Activity](../android.app/Activity.md)!\>!:The test case that is being run |
+| `v` | [View](../android.view/View.md)!:The view that should be dragged |
 
 ### dragViewToBottom
 
@@ -402,14 +402,14 @@ open static fun dragViewToBottom(
 ): Unit
 ```
 
-**Deprecated:** * [android.test.ActivityInstrumentationTestCase](../android/test/ActivityInstrumentationTestCase.md) is deprecated in favor of [android.test.ActivityInstrumentationTestCase2](../android/test/ActivityInstrumentationTestCase2.md), which provides more options for configuring the Activity under test*
+**Deprecated:** * [android.test.ActivityInstrumentationTestCase](ActivityInstrumentationTestCase.md) is deprecated in favor of [android.test.ActivityInstrumentationTestCase2](ActivityInstrumentationTestCase2.md), which provides more options for configuring the Activity under test*
 
 Simulate touching the center of a view and dragging to the bottom of the screen.
 
 | Parameters ||
 |-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `test` | [ActivityInstrumentationTestCase](../android/test/ActivityInstrumentationTestCase.md)\< [Activity](../android/app/Activity.md)!\>!:The test case that is being run |
-| `v` | [View](../android/view/View.md)!:The view that should be dragged |
+| `test` | [ActivityInstrumentationTestCase](ActivityInstrumentationTestCase.md)\< [Activity](../android.app/Activity.md)!\>!:The test case that is being run |
+| `v` | [View](../android.view/View.md)!:The view that should be dragged |
 | `stepCount` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):How many move steps to include in the drag |
 | --- | --- |
 
@@ -432,9 +432,9 @@ Simulate touching the center of a view and dragging to the bottom of the screen.
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| `test` | [InstrumentationTestCase](../android/test/InstrumentationTestCase.md)!:The test case that is being run |
-| `activity` | [Activity](../android/app/Activity.md)!:The activity that is in the foreground of the test case |
-| `v` | [View](../android/view/View.md)!:The view that should be dragged |
+| `test` | [InstrumentationTestCase](InstrumentationTestCase.md)!:The test case that is being run |
+| `activity` | [Activity](../android.app/Activity.md)!:The activity that is in the foreground of the test case |
+| `v` | [View](../android.view/View.md)!:The view that should be dragged |
 | --- | --- |
 
 ### dragViewToBottom
@@ -457,9 +457,9 @@ Simulate touching the center of a view and dragging to the bottom of the screen.
 
 | Parameters ||
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| `test` | [InstrumentationTestCase](../android/test/InstrumentationTestCase.md)!:The test case that is being run |
-| `activity` | [Activity](../android/app/Activity.md)!:The activity that is in the foreground of the test case |
-| `v` | [View](../android/view/View.md)!:The view that should be dragged |
+| `test` | [InstrumentationTestCase](InstrumentationTestCase.md)!:The test case that is being run |
+| `activity` | [Activity](../android.app/Activity.md)!:The activity that is in the foreground of the test case |
+| `v` | [View](../android.view/View.md)!:The view that should be dragged |
 | --- | --- |
 | `stepCount` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):How many move steps to include in the drag |
 
@@ -475,14 +475,14 @@ open static fun dragViewToTop(
 ): Unit
 ```
 
-**Deprecated:** * [android.test.ActivityInstrumentationTestCase](../android/test/ActivityInstrumentationTestCase.md) is deprecated in favor of [android.test.ActivityInstrumentationTestCase2](../android/test/ActivityInstrumentationTestCase2.md), which provides more options for configuring the Activity under test*
+**Deprecated:** * [android.test.ActivityInstrumentationTestCase](ActivityInstrumentationTestCase.md) is deprecated in favor of [android.test.ActivityInstrumentationTestCase2](ActivityInstrumentationTestCase2.md), which provides more options for configuring the Activity under test*
 
 Simulate touching the center of a view and dragging to the top of the screen.
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `test` | [ActivityInstrumentationTestCase](../android/test/ActivityInstrumentationTestCase.md)\< [Activity](../android/app/Activity.md)!\>!:The test case that is being run |
-| `v` | [View](../android/view/View.md)!:The view that should be dragged |
+| `test` | [ActivityInstrumentationTestCase](ActivityInstrumentationTestCase.md)\< [Activity](../android.app/Activity.md)!\>!:The test case that is being run |
+| `v` | [View](../android.view/View.md)!:The view that should be dragged |
 
 ### dragViewToTop
 
@@ -497,14 +497,14 @@ open static fun dragViewToTop(
 ): Unit
 ```
 
-**Deprecated:** * [android.test.ActivityInstrumentationTestCase](../android/test/ActivityInstrumentationTestCase.md) is deprecated in favor of [android.test.ActivityInstrumentationTestCase2](../android/test/ActivityInstrumentationTestCase2.md), which provides more options for configuring the Activity under test*
+**Deprecated:** * [android.test.ActivityInstrumentationTestCase](ActivityInstrumentationTestCase.md) is deprecated in favor of [android.test.ActivityInstrumentationTestCase2](ActivityInstrumentationTestCase2.md), which provides more options for configuring the Activity under test*
 
 Simulate touching the center of a view and dragging to the top of the screen.
 
 | Parameters ||
 |-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `test` | [ActivityInstrumentationTestCase](../android/test/ActivityInstrumentationTestCase.md)\< [Activity](../android/app/Activity.md)!\>!:The test case that is being run |
-| `v` | [View](../android/view/View.md)!:The view that should be dragged |
+| `test` | [ActivityInstrumentationTestCase](ActivityInstrumentationTestCase.md)\< [Activity](../android.app/Activity.md)!\>!:The test case that is being run |
+| `v` | [View](../android.view/View.md)!:The view that should be dragged |
 | `stepCount` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):How many move steps to include in the drag |
 | --- | --- |
 
@@ -526,8 +526,8 @@ Simulate touching the center of a view and dragging to the top of the screen.
 
 | Parameters ||
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| `test` | [InstrumentationTestCase](../android/test/InstrumentationTestCase.md)!:The test case that is being run |
-| `v` | [View](../android/view/View.md)!:The view that should be dragged |
+| `test` | [InstrumentationTestCase](InstrumentationTestCase.md)!:The test case that is being run |
+| `v` | [View](../android.view/View.md)!:The view that should be dragged |
 
 ### dragViewToTop
 
@@ -548,8 +548,8 @@ Simulate touching the center of a view and dragging to the top of the screen.
 
 | Parameters ||
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| `test` | [InstrumentationTestCase](../android/test/InstrumentationTestCase.md)!:The test case that is being run |
-| `v` | [View](../android/view/View.md)!:The view that should be dragged |
+| `test` | [InstrumentationTestCase](InstrumentationTestCase.md)!:The test case that is being run |
+| `v` | [View](../android.view/View.md)!:The view that should be dragged |
 | `stepCount` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):How many move steps to include in the drag |
 | --- | --- |
 
@@ -567,14 +567,14 @@ open static fun dragViewToX(
 ): Int
 ```
 
-**Deprecated:** * [android.test.ActivityInstrumentationTestCase](../android/test/ActivityInstrumentationTestCase.md) is deprecated in favor of [android.test.ActivityInstrumentationTestCase2](../android/test/ActivityInstrumentationTestCase2.md), which provides more options for configuring the Activity under test*
+**Deprecated:** * [android.test.ActivityInstrumentationTestCase](ActivityInstrumentationTestCase.md) is deprecated in favor of [android.test.ActivityInstrumentationTestCase2](ActivityInstrumentationTestCase2.md), which provides more options for configuring the Activity under test*
 
 Simulate touching a view and dragging it to a specified location. Only moves horizontally.
 
 | Parameters ||
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `test` | [ActivityInstrumentationTestCase](../android/test/ActivityInstrumentationTestCase.md)\< [Activity](../android/app/Activity.md)!\>!:The test case that is being run |
-| `v` | [View](../android/view/View.md)!:The view that should be dragged |
+| `test` | [ActivityInstrumentationTestCase](ActivityInstrumentationTestCase.md)\< [Activity](../android.app/Activity.md)!\>!:The test case that is being run |
+| `v` | [View](../android.view/View.md)!:The view that should be dragged |
 | `gravity` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Which part of the view to use for the initial down event. A combination of (TOP, CENTER_VERTICAL, BOTTOM) and (LEFT, CENTER_HORIZONTAL, RIGHT) |
 | --- | --- |
 | `toX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Final location of the view after dragging |
@@ -603,8 +603,8 @@ Simulate touching a view and dragging it to a specified location. Only moves hor
 
 | Parameters ||
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `test` | [InstrumentationTestCase](../android/test/InstrumentationTestCase.md)!:The test case that is being run |
-| `v` | [View](../android/view/View.md)!:The view that should be dragged |
+| `test` | [InstrumentationTestCase](InstrumentationTestCase.md)!:The test case that is being run |
+| `v` | [View](../android.view/View.md)!:The view that should be dragged |
 | `gravity` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Which part of the view to use for the initial down event. A combination of (TOP, CENTER_VERTICAL, BOTTOM) and (LEFT, CENTER_HORIZONTAL, RIGHT) |
 | --- | --- |
 | `toX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Final location of the view after dragging |
@@ -627,14 +627,14 @@ open static fun dragViewToY(
 ): Int
 ```
 
-**Deprecated:** * [android.test.ActivityInstrumentationTestCase](../android/test/ActivityInstrumentationTestCase.md) is deprecated in favor of [android.test.ActivityInstrumentationTestCase2](../android/test/ActivityInstrumentationTestCase2.md), which provides more options for configuring the Activity under test*
+**Deprecated:** * [android.test.ActivityInstrumentationTestCase](ActivityInstrumentationTestCase.md) is deprecated in favor of [android.test.ActivityInstrumentationTestCase2](ActivityInstrumentationTestCase2.md), which provides more options for configuring the Activity under test*
 
 Simulate touching a view and dragging it to a specified location. Only moves vertically.
 
 | Parameters ||
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `test` | [ActivityInstrumentationTestCase](../android/test/ActivityInstrumentationTestCase.md)\< [Activity](../android/app/Activity.md)!\>!:The test case that is being run |
-| `v` | [View](../android/view/View.md)!:The view that should be dragged |
+| `test` | [ActivityInstrumentationTestCase](ActivityInstrumentationTestCase.md)\< [Activity](../android.app/Activity.md)!\>!:The test case that is being run |
+| `v` | [View](../android.view/View.md)!:The view that should be dragged |
 | `gravity` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Which part of the view to use for the initial down event. A combination of (TOP, CENTER_VERTICAL, BOTTOM) and (LEFT, CENTER_HORIZONTAL, RIGHT) |
 | --- | --- |
 | `toY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Final location of the view after dragging |
@@ -663,8 +663,8 @@ Simulate touching a view and dragging it to a specified location. Only moves ver
 
 | Parameters ||
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `test` | [InstrumentationTestCase](../android/test/InstrumentationTestCase.md)!:The test case that is being run |
-| `v` | [View](../android/view/View.md)!:The view that should be dragged |
+| `test` | [InstrumentationTestCase](InstrumentationTestCase.md)!:The test case that is being run |
+| `v` | [View](../android.view/View.md)!:The view that should be dragged |
 | `gravity` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Which part of the view to use for the initial down event. A combination of (TOP, CENTER_VERTICAL, BOTTOM) and (LEFT, CENTER_HORIZONTAL, RIGHT) |
 | --- | --- |
 | `toY` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Final location of the view after dragging |
@@ -685,14 +685,14 @@ open static fun longClickView(
 ): Unit
 ```
 
-**Deprecated:** * [android.test.ActivityInstrumentationTestCase](../android/test/ActivityInstrumentationTestCase.md) is deprecated in favor of [android.test.ActivityInstrumentationTestCase2](../android/test/ActivityInstrumentationTestCase2.md), which provides more options for configuring the Activity under test*
+**Deprecated:** * [android.test.ActivityInstrumentationTestCase](ActivityInstrumentationTestCase.md) is deprecated in favor of [android.test.ActivityInstrumentationTestCase2](ActivityInstrumentationTestCase2.md), which provides more options for configuring the Activity under test*
 
 Simulate touching the center of a view, holding until it is a long press, and then releasing.
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `test` | [ActivityInstrumentationTestCase](../android/test/ActivityInstrumentationTestCase.md)\< [Activity](../android/app/Activity.md)!\>!:The test case that is being run |
-| `v` | [View](../android/view/View.md)!:The view that should be clicked |
+| `test` | [ActivityInstrumentationTestCase](ActivityInstrumentationTestCase.md)\< [Activity](../android.app/Activity.md)!\>!:The test case that is being run |
+| `v` | [View](../android.view/View.md)!:The view that should be clicked |
 
 ### longClickView
 
@@ -712,8 +712,8 @@ Simulate touching the center of a view, holding until it is a long press, and th
 
 | Parameters ||
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| `test` | [InstrumentationTestCase](../android/test/InstrumentationTestCase.md)!:The test case that is being run |
-| `v` | [View](../android/view/View.md)!:The view that should be clicked |
+| `test` | [InstrumentationTestCase](InstrumentationTestCase.md)!:The test case that is being run |
+| `v` | [View](../android.view/View.md)!:The view that should be clicked |
 
 ### scrollToBottom
 
@@ -727,14 +727,14 @@ open static fun scrollToBottom(
 ): Unit
 ```
 
-**Deprecated:** * [android.test.ActivityInstrumentationTestCase](../android/test/ActivityInstrumentationTestCase.md) is deprecated in favor of [android.test.ActivityInstrumentationTestCase2](../android/test/ActivityInstrumentationTestCase2.md), which provides more options for configuring the Activity under test*
+**Deprecated:** * [android.test.ActivityInstrumentationTestCase](ActivityInstrumentationTestCase.md) is deprecated in favor of [android.test.ActivityInstrumentationTestCase2](ActivityInstrumentationTestCase2.md), which provides more options for configuring the Activity under test*
 
-Scroll a ViewGroup to the bottom by repeatedly calling [dragQuarterScreenUp(android.test.InstrumentationTestCase,android.app.Activity)](../android/test/TouchUtils.md))
+Scroll a ViewGroup to the bottom by repeatedly calling [dragQuarterScreenUp(android.test.InstrumentationTestCase,android.app.Activity)](TouchUtils.md))
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `test` | [ActivityInstrumentationTestCase](../android/test/ActivityInstrumentationTestCase.md)\< [Activity](../android/app/Activity.md)!\>!:The test case that is being run |
-| `v` | [ViewGroup](../android/view/ViewGroup.md)!:The ViewGroup that should be dragged |
+| `test` | [ActivityInstrumentationTestCase](ActivityInstrumentationTestCase.md)\< [Activity](../android.app/Activity.md)!\>!:The test case that is being run |
+| `v` | [ViewGroup](../android.view/ViewGroup.md)!:The ViewGroup that should be dragged |
 
 ### scrollToBottom
 
@@ -751,13 +751,13 @@ open static fun scrollToBottom(
 
 **Deprecated:** *Deprecated in Java.*
 
-Scroll a ViewGroup to the bottom by repeatedly calling [dragQuarterScreenUp(android.test.InstrumentationTestCase,android.app.Activity)](../android/test/TouchUtils.md))
+Scroll a ViewGroup to the bottom by repeatedly calling [dragQuarterScreenUp(android.test.InstrumentationTestCase,android.app.Activity)](TouchUtils.md))
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| `test` | [InstrumentationTestCase](../android/test/InstrumentationTestCase.md)!:The test case that is being run |
-| `activity` | [Activity](../android/app/Activity.md)!:The activity that is in the foreground of the test case |
-| `v` | [ViewGroup](../android/view/ViewGroup.md)!:The ViewGroup that should be dragged |
+| `test` | [InstrumentationTestCase](InstrumentationTestCase.md)!:The test case that is being run |
+| `activity` | [Activity](../android.app/Activity.md)!:The activity that is in the foreground of the test case |
+| `v` | [ViewGroup](../android.view/ViewGroup.md)!:The ViewGroup that should be dragged |
 | --- | --- |
 
 ### scrollToTop
@@ -772,14 +772,14 @@ open static fun scrollToTop(
 ): Unit
 ```
 
-**Deprecated:** * [android.test.ActivityInstrumentationTestCase](../android/test/ActivityInstrumentationTestCase.md) is deprecated in favor of [android.test.ActivityInstrumentationTestCase2](../android/test/ActivityInstrumentationTestCase2.md), which provides more options for configuring the Activity under test*
+**Deprecated:** * [android.test.ActivityInstrumentationTestCase](ActivityInstrumentationTestCase.md) is deprecated in favor of [android.test.ActivityInstrumentationTestCase2](ActivityInstrumentationTestCase2.md), which provides more options for configuring the Activity under test*
 
-Scroll a ViewGroup to the top by repeatedly calling [dragQuarterScreenDown(android.test.InstrumentationTestCase,android.app.Activity)](../android/test/TouchUtils.md))
+Scroll a ViewGroup to the top by repeatedly calling [dragQuarterScreenDown(android.test.InstrumentationTestCase,android.app.Activity)](TouchUtils.md))
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `test` | [ActivityInstrumentationTestCase](../android/test/ActivityInstrumentationTestCase.md)\< [Activity](../android/app/Activity.md)!\>!:The test case that is being run |
-| `v` | [ViewGroup](../android/view/ViewGroup.md)!:The ViewGroup that should be dragged |
+| `test` | [ActivityInstrumentationTestCase](ActivityInstrumentationTestCase.md)\< [Activity](../android.app/Activity.md)!\>!:The test case that is being run |
+| `v` | [ViewGroup](../android.view/ViewGroup.md)!:The ViewGroup that should be dragged |
 
 ### scrollToTop
 
@@ -796,13 +796,13 @@ open static fun scrollToTop(
 
 **Deprecated:** *Deprecated in Java.*
 
-Scroll a ViewGroup to the top by repeatedly calling [dragQuarterScreenDown(android.test.InstrumentationTestCase,android.app.Activity)](../android/test/TouchUtils.md))
+Scroll a ViewGroup to the top by repeatedly calling [dragQuarterScreenDown(android.test.InstrumentationTestCase,android.app.Activity)](TouchUtils.md))
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| `test` | [InstrumentationTestCase](../android/test/InstrumentationTestCase.md)!:The test case that is being run |
-| `activity` | [Activity](../android/app/Activity.md)!:The activity that is in the foreground of the test case |
-| `v` | [ViewGroup](../android/view/ViewGroup.md)!:The ViewGroup that should be dragged |
+| `test` | [InstrumentationTestCase](InstrumentationTestCase.md)!:The test case that is being run |
+| `activity` | [Activity](../android.app/Activity.md)!:The activity that is in the foreground of the test case |
+| `v` | [ViewGroup](../android.view/ViewGroup.md)!:The ViewGroup that should be dragged |
 | --- | --- |
 
 ### tapView
@@ -822,8 +822,8 @@ Simulate touching the center of a view and releasing quickly (before the tap tim
 
 | Parameters ||
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| `test` | [InstrumentationTestCase](../android/test/InstrumentationTestCase.md)!:The test case that is being run |
-| `v` | [View](../android/view/View.md)!:The view that should be clicked |
+| `test` | [InstrumentationTestCase](InstrumentationTestCase.md)!:The test case that is being run |
+| `v` | [View](../android.view/View.md)!:The view that should be clicked |
 
 ### touchAndCancelView
 
@@ -842,5 +842,5 @@ Simulate touching the center of a view and cancelling (so no onClick should fire
 
 | Parameters ||
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| `test` | [InstrumentationTestCase](../android/test/InstrumentationTestCase.md)!:The test case that is being run |
-| `v` | [View](../android/view/View.md)!:The view that should be clicked |
+| `test` | [InstrumentationTestCase](InstrumentationTestCase.md)!:The test case that is being run |
+| `v` | [View](../android.view/View.md)!:The view that should be clicked |

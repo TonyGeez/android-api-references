@@ -9,9 +9,9 @@ class BloodPressureRecord : InstantRecord
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.health.connect.datatypes.Record](../android/health/connect/datatypes/Record.md) |||
-| | ↳ | [android.health.connect.datatypes.InstantRecord](../android/health/connect/datatypes/InstantRecord.md) ||
-| | | ↳ | [android.health.connect.datatypes.BloodPressureRecord](../android/health/connect/datatypes/BloodPressureRecord.md) |
+| ↳ | [android.health.connect.datatypes.Record](Record.md) |||
+| | ↳ | [android.health.connect.datatypes.InstantRecord](InstantRecord.md) ||
+| | | ↳ | [android.health.connect.datatypes.BloodPressureRecord](BloodPressureRecord.md) |
 | --- | --- | --- | --- |
 
 Captures the blood pressure of a user. Each record represents a single instantaneous blood pressure reading.
@@ -33,10 +33,10 @@ Captures the blood pressure of a user. Each record represents a single instantan
 |---|---|
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BloodPressureRecord#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BloodPressureRecord#getBodyPosition()()` <br /> |
-| [Pressure](../android/health/connect/datatypes/units/Pressure.md) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BloodPressureRecord#getDiastolic()()` <br /> |
+| [Pressure](../android.health.connect.datatypes.units/Pressure.md) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BloodPressureRecord#getDiastolic()()` <br /> |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BloodPressureRecord#getMeasurementLocation()()` <br /> |
-| [Pressure](../android/health/connect/datatypes/units/Pressure.md) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BloodPressureRecord#getSystolic()()` <br /> |
+| [Pressure](../android.health.connect.datatypes.units/Pressure.md) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BloodPressureRecord#getSystolic()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BloodPressureRecord#hashCode()()` Returns a hash code value for the object. |
 | --- | --- |
 
@@ -47,13 +47,13 @@ Captures the blood pressure of a user. Each record represents a single instantan
 
 | Properties ||
 |---|---|
-| static [AggregationType](../android/health/connect/datatypes/AggregationType.md)\< [Pressure](../android/health/connect/datatypes/units/Pressure.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BloodPressureRecord#DIASTOLIC_AVG:android.health.connect.datatypes.AggregationType` Metric identifier to get average diastolic pressure using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
-| static [AggregationType](../android/health/connect/datatypes/AggregationType.md)\< [Pressure](../android/health/connect/datatypes/units/Pressure.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BloodPressureRecord#DIASTOLIC_MAX:android.health.connect.datatypes.AggregationType` Metric identifier to get maximum diastolic pressure using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
-| static [AggregationType](../android/health/connect/datatypes/AggregationType.md)\< [Pressure](../android/health/connect/datatypes/units/Pressure.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BloodPressureRecord#DIASTOLIC_MIN:android.health.connect.datatypes.AggregationType` Metric identifier to get minimum diastolic pressure using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
+| static [AggregationType](AggregationType.md)\< [Pressure](../android.health.connect.datatypes.units/Pressure.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BloodPressureRecord#DIASTOLIC_AVG:android.health.connect.datatypes.AggregationType` Metric identifier to get average diastolic pressure using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
+| static [AggregationType](AggregationType.md)\< [Pressure](../android.health.connect.datatypes.units/Pressure.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BloodPressureRecord#DIASTOLIC_MAX:android.health.connect.datatypes.AggregationType` Metric identifier to get maximum diastolic pressure using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
+| static [AggregationType](AggregationType.md)\< [Pressure](../android.health.connect.datatypes.units/Pressure.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BloodPressureRecord#DIASTOLIC_MIN:android.health.connect.datatypes.AggregationType` Metric identifier to get minimum diastolic pressure using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
 | --- | --- |
-| static [AggregationType](../android/health/connect/datatypes/AggregationType.md)\< [Pressure](../android/health/connect/datatypes/units/Pressure.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BloodPressureRecord#SYSTOLIC_AVG:android.health.connect.datatypes.AggregationType` Metric identifier to get average systolic pressure using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
-| static [AggregationType](../android/health/connect/datatypes/AggregationType.md)\< [Pressure](../android/health/connect/datatypes/units/Pressure.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BloodPressureRecord#SYSTOLIC_MAX:android.health.connect.datatypes.AggregationType` Metric identifier to get maximum systolic pressure using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
-| static [AggregationType](../android/health/connect/datatypes/AggregationType.md)\< [Pressure](../android/health/connect/datatypes/units/Pressure.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BloodPressureRecord#SYSTOLIC_MIN:android.health.connect.datatypes.AggregationType` Metric identifier to get minimum systolic pressure using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
+| static [AggregationType](AggregationType.md)\< [Pressure](../android.health.connect.datatypes.units/Pressure.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BloodPressureRecord#SYSTOLIC_AVG:android.health.connect.datatypes.AggregationType` Metric identifier to get average systolic pressure using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
+| static [AggregationType](AggregationType.md)\< [Pressure](../android.health.connect.datatypes.units/Pressure.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BloodPressureRecord#SYSTOLIC_MAX:android.health.connect.datatypes.AggregationType` Metric identifier to get maximum systolic pressure using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
+| static [AggregationType](AggregationType.md)\< [Pressure](../android.health.connect.datatypes.units/Pressure.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BloodPressureRecord#SYSTOLIC_MIN:android.health.connect.datatypes.AggregationType` Metric identifier to get minimum systolic pressure using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
 | --- | --- |
 
 ## Public methods

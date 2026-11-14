@@ -8,7 +8,7 @@ class AccessibilityWindowInfo : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.accessibility.AccessibilityWindowInfo](../android/view/accessibility/AccessibilityWindowInfo.md) |
+| ↳ | [android.view.accessibility.AccessibilityWindowInfo](AccessibilityWindowInfo.md) |
 
 This class represents a state snapshot of a window for accessibility purposes. The screen content contains one or more windows where some windows can be descendants of other windows, which is the windows are hierarchically ordered. Note that there is no root window. Hence, the screen content can be seen as a collection of window trees.
 
@@ -47,26 +47,26 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [AccessibilityNodeInfo](../android/view/accessibility/AccessibilityNodeInfo.md)! | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#getAnchor()()` Gets the node that anchors this window to another. |
+| [AccessibilityNodeInfo](AccessibilityNodeInfo.md)! | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#getAnchor()()` Gets the node that anchors this window to another. |
 | --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#getBoundsInScreen(android.graphics.Rect)(outBounds: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#!)` Gets the bounds of this window in the screen. |
-| [AccessibilityWindowInfo](../android/view/accessibility/AccessibilityWindowInfo.md)! | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#getChild(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the child window at a given index. |
+| [AccessibilityWindowInfo](AccessibilityWindowInfo.md)! | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#getChild(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the child window at a given index. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#getChildCount()()` Gets the number of child windows. |
 | --- | --- |
-| [AccessibilityWindowInfo](../android/view/accessibility/AccessibilityWindowInfo.md)? | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#getControlledWindow(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the controlled window at the given index. |
+| [AccessibilityWindowInfo](AccessibilityWindowInfo.md)? | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#getControlledWindow(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the controlled window at the given index. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#getControlledWindowsCount()()` Gets the number of windows which are controlled by this window, if there are any. |
-| [AccessibilityWindowInfo](../android/view/accessibility/AccessibilityWindowInfo.md)? | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#getControllingWindow()()` Gets the system window which has the functionality to control this window. |
+| [AccessibilityWindowInfo](AccessibilityWindowInfo.md)? | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#getControllingWindow()()` Gets the system window which has the functionality to control this window. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#getDisplayId()()` Returns the ID of the display this window is on, for use with `https://developer.android.com/reference/kotlin/android/hardware/display/DisplayManager.html#getDisplay(kotlin.Int)`. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#getId()()` Gets the unique window id. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#getLayer()()` Gets the layer which determines the Z-order of the window. |
 | --- | --- |
-| [LocaleList](../android/os/LocaleList.md) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#getLocales()()` Return the `https://developer.android.com/reference/kotlin/android/os/LocaleList.html#` of the window. |
-| [AccessibilityWindowInfo](../android/view/accessibility/AccessibilityWindowInfo.md)! | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#getParent()()` Gets the parent window. |
+| [LocaleList](../android.os/LocaleList.md) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#getLocales()()` Return the `https://developer.android.com/reference/kotlin/android/os/LocaleList.html#` of the window. |
+| [AccessibilityWindowInfo](AccessibilityWindowInfo.md)! | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#getParent()()` Gets the parent window. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#getRegionInScreen(android.graphics.Region)(outRegion: https://developer.android.com/reference/kotlin/android/graphics/Region.html#)` Gets the touchable region of this window in the screen. |
 | --- | --- |
-| [AccessibilityNodeInfo](../android/view/accessibility/AccessibilityNodeInfo.md)! | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#getRoot()()` Gets the root node in the window's hierarchy. |
-| [AccessibilityNodeInfo](../android/view/accessibility/AccessibilityNodeInfo.md)? | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#getRoot(kotlin.Int)(prefetchingStrategy: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the root node in the window's hierarchy. |
+| [AccessibilityNodeInfo](AccessibilityNodeInfo.md)! | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#getRoot()()` Gets the root node in the window's hierarchy. |
+| [AccessibilityNodeInfo](AccessibilityNodeInfo.md)? | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#getRoot(kotlin.Int)(prefetchingStrategy: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the root node in the window's hierarchy. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#getTitle()()` Gets the title of the window. |
 | --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#getTransitionTimeMillis()()` Return the `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#uptimeMillis()` at which the last transition happens. |
@@ -78,8 +78,8 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#isFocused()()` Gets if this window has input focus. |
 | --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#isInPictureInPictureMode()()` Check if the window is in picture-in-picture mode. |
-| static [AccessibilityWindowInfo](../android/view/accessibility/AccessibilityWindowInfo.md)! | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#obtain()()` Returns a cached instance if such is available or a new one is created. |
-| static [AccessibilityWindowInfo](../android/view/accessibility/AccessibilityWindowInfo.md)! | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#obtain(android.view.accessibility.AccessibilityWindowInfo)(info: https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#!)` Returns a cached instance if such is available or a new one is created. |
+| static [AccessibilityWindowInfo](AccessibilityWindowInfo.md)! | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#obtain()()` Returns a cached instance if such is available or a new one is created. |
+| static [AccessibilityWindowInfo](AccessibilityWindowInfo.md)! | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#obtain(android.view.accessibility.AccessibilityWindowInfo)(info: https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#!)` Returns a cached instance if such is available or a new one is created. |
 | --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#recycle()()` Return an instance back to be reused. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#refresh()()` Refreshes this window with the latest state of the window it represents. |
@@ -89,7 +89,7 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [AccessibilityWindowInfo](../android/view/accessibility/AccessibilityWindowInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [AccessibilityWindowInfo](AccessibilityWindowInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -203,7 +203,7 @@ Copy constructor. Creates a new `https://developer.android.com/reference/kotlin/
 
 | Parameters ||
 |---|---|
-| `info` | [AccessibilityWindowInfo](../android/view/accessibility/AccessibilityWindowInfo.md): The other info. This value cannot be `null`. |
+| `info` | [AccessibilityWindowInfo](AccessibilityWindowInfo.md): The other info. This value cannot be `null`. |
 
 ## Public methods
 
@@ -275,7 +275,7 @@ Gets the bounds of this window in the screen. This is equivalent to get the boun
 
 | Parameters ||
 |---|---|
-| `outBounds` | [Rect](../android/graphics/Rect.md)!: The out window bounds. |
+| `outBounds` | [Rect](../android.graphics/Rect.md)!: The out window bounds. |
 
 ### getChild
 
@@ -447,7 +447,7 @@ Gets the touchable region of this window in the screen.
 
 | Parameters ||
 |---|---|
-| `outRegion` | [Region](../android/graphics/Region.md): The out window region. This value cannot be `null`. |
+| `outRegion` | [Region](../android.graphics/Region.md): The out window region. This value cannot be `null`. |
 
 ### getRoot
 
@@ -649,7 +649,7 @@ In most situations object pooling is not beneficial. Create a new instance using
 
 | Parameters ||
 |---|---|
-| `info` | [AccessibilityWindowInfo](../android/view/accessibility/AccessibilityWindowInfo.md)!: The other info. |
+| `info` | [AccessibilityWindowInfo](AccessibilityWindowInfo.md)!: The other info. |
 
 | Return ||
 |---|---|

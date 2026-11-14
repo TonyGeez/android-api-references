@@ -8,14 +8,14 @@ open class ImageView : View
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.view.View](../android/view/View.md) ||
-| | ↳ | [android.widget.ImageView](../android/widget/ImageView.md) |
+| ↳ | [android.view.View](../android.view/View.md) ||
+| | ↳ | [android.widget.ImageView](ImageView.md) |
 
-Known Direct Subclasses [ImageButton](../android/widget/ImageButton.md), [QuickContactBadge](../android/widget/QuickContactBadge.md) [ImageButton](../android/widget/ImageButton.md) Displays a button with an image (instead of text) that can be pressed or clicked by the user.
-[QuickContactBadge](../android/widget/QuickContactBadge.md) Widget used to show an image with the standard QuickContact badge and on-click behavior.
-Known Indirect Subclasses [ZoomButton](../android/widget/ZoomButton.md) [ZoomButton](../android/widget/ZoomButton.md) This widget provides a simple utility for turning a continued long-press event into a series of clicks at some set frequency.
+Known Direct Subclasses [ImageButton](ImageButton.md), [QuickContactBadge](QuickContactBadge.md) [ImageButton](ImageButton.md) Displays a button with an image (instead of text) that can be pressed or clicked by the user.
+[QuickContactBadge](QuickContactBadge.md) Widget used to show an image with the standard QuickContact badge and on-click behavior.
+Known Indirect Subclasses [ZoomButton](ZoomButton.md) [ZoomButton](ZoomButton.md) This widget provides a simple utility for turning a continued long-press event into a series of clicks at some set frequency.
 
-Displays image resources, for example `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#` or `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#` resources. ImageView is also commonly used to [apply tints to an image](../android/widget/ImageView.md)) and handle [image scaling](../android/widget/ImageView.md)).
+Displays image resources, for example `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.html#` or `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#` resources. ImageView is also commonly used to [apply tints to an image](ImageView.md)) and handle [image scaling](ImageView.md)).
 
 The following XML snippet is a common example of using an ImageView to display an image resource:
 
@@ -44,15 +44,15 @@ To learn more about Drawables, see: [Drawable Resources](https://developer.andro
 
 | XML attributes ||
 |---|---|
-| [`android:adjustViewBounds`](../android/widget/ImageView.md) | Set this to true if you want the ImageView to adjust its bounds to preserve the aspect ratio of its drawable. |
-| [`android:cropToPadding`](../android/widget/ImageView.md) | If true, the image will be cropped to fit within its padding. |
-| [`android:maxHeight`](../android/widget/ImageView.md) | An optional argument to supply a maximum height for this view. |
+| [`android:adjustViewBounds`](ImageView.md) | Set this to true if you want the ImageView to adjust its bounds to preserve the aspect ratio of its drawable. |
+| [`android:cropToPadding`](ImageView.md) | If true, the image will be cropped to fit within its padding. |
+| [`android:maxHeight`](ImageView.md) | An optional argument to supply a maximum height for this view. |
 | --- | --- |
-| [`android:maxWidth`](../android/widget/ImageView.md) | An optional argument to supply a maximum width for this view. |
-| [`android:scaleType`](../android/widget/ImageView.md) | Controls how the image should be resized or moved to match the size of this ImageView. |
-| [`android:src`](../android/widget/ImageView.md) | Sets a drawable as the content of this ImageView. |
+| [`android:maxWidth`](ImageView.md) | An optional argument to supply a maximum width for this view. |
+| [`android:scaleType`](ImageView.md) | Controls how the image should be resized or moved to match the size of this ImageView. |
+| [`android:src`](ImageView.md) | Sets a drawable as the content of this ImageView. |
 | --- | --- |
-| [`android:tint`](../android/widget/ImageView.md) | The tinting color for the image. |
+| [`android:tint`](ImageView.md) | The tinting color for the image. |
 
 Inherited XML attributes From class `https://developer.android.com/reference/kotlin/android/view/View.html#` `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Whether or not this view is a heading for accessibility purposes.
 
@@ -595,7 +595,7 @@ Hint indicating that this view can be autofilled with a credit card expiration d
 
 It should be used when the credit card expiration date is represented by just one view; if it is represented by more than one (for example, one view for the month and another view for the year), then each of these views should use the hint specific for the unit (`https://developer.android.com/reference/kotlin/android/view/View.html#AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DAY:kotlin.String`, `https://developer.android.com/reference/kotlin/android/view/View.html#AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_MONTH:kotlin.String`, or `https://developer.android.com/reference/kotlin/android/view/View.html#AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_YEAR:kotlin.String`).
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DATE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DATE}`).
 
 When annotating a view with this hint, it's recommended to use a date autofill value to avoid ambiguity when the autofill service provides a value for it. To understand why a value can be ambiguous, consider "April of 2020", which could be represented as either of the following options:
 
@@ -620,7 +620,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card expiration day.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DAY}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DAY}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -630,7 +630,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card expiration month.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_MONTH}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_MONTH}`).
 
 When annotating a view with this hint, it's recommended to use a text autofill value whose value is the numerical representation of the month, starting on `1` to avoid ambiguity when the autofill service provides a value for it. To understand why a value can be ambiguous, consider "January", which could be represented as either of
 
@@ -650,7 +650,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card expiration year.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_YEAR}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_YEAR}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -660,7 +660,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card number.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_NUMBER}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_NUMBER}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -670,7 +670,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card security code.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_SECURITY_CODE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_SECURITY_CODE}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -680,7 +680,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with an email address.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_EMAIL_ADDRESS}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_EMAIL_ADDRESS}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -690,7 +690,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a user's real name.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_NAME}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_NAME}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -700,7 +700,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a password.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_PASSWORD}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_PASSWORD}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -710,7 +710,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a phone number.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_PHONE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_PHONE}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -720,7 +720,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a postal address.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_ADDRESS}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_ADDRESS}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -730,7 +730,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a postal code.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_CODE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_CODE}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -740,7 +740,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a username.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_USERNAME}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_USERNAME}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -910,7 +910,7 @@ Find views that render the specified text.
 
 This view wants keystrokes.
 
-Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android/view/View.md)
+Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android.view/View.md)
 
 <br />
 
@@ -930,7 +930,7 @@ View flag indicating whether `https://developer.android.com/reference/kotlin/and
 
 This view determines focusability automatically. This is the default.
 
-Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android/view/View.md)
+Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android.view/View.md)
 
 <br />
 
@@ -972,7 +972,7 @@ Use with `https://developer.android.com/reference/kotlin/android/view/View.html#
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/view/View.html#GONE:kotlin.Int`
 
-This view is invisible, and it doesn't take any space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android/view/View.md)
+This view is invisible, and it doesn't take any space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android.view/View.md)
 
 <br />
 
@@ -1068,7 +1068,7 @@ The view is important for content capture, but its children (if any) will not be
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/view/View.html#INVISIBLE:kotlin.Int`
 
-This view is invisible, but it still takes up space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android/view/View.md)
+This view is invisible, but it still takes up space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android.view/View.md)
 
 <br />
 
@@ -1162,7 +1162,7 @@ Bit of `https://developer.android.com/reference/kotlin/android/view/View.html#ge
 
 This view does not want keystrokes.
 
-Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android/view/View.md)
+Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android.view/View.md)
 
 <br />
 
@@ -1619,7 +1619,7 @@ The logging tag used by this class with android.util.Log.
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/view/View.html#VISIBLE:kotlin.Int`
 
-This view is visible. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android/view/View.md)
+This view is visible. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android.view/View.md)
 
 <br />
 
@@ -1641,15 +1641,15 @@ This view is visible. Use with `https://developer.android.com/reference/kotlin/a
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ImageView#getBaseline()()` Return the offset of the widget's text baseline from the widget's top boundary. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ImageView#getBaselineAlignBottom()()` Checks whether this view's baseline is considered the bottom of the view. |
-| open [ColorFilter](../android/graphics/ColorFilter.md)! | `https://developer.android.com/reference/kotlin/android/widget/ImageView#getColorFilter()()` Returns the active color filter for this ImageView. |
+| open [ColorFilter](../android.graphics/ColorFilter.md)! | `https://developer.android.com/reference/kotlin/android/widget/ImageView#getColorFilter()()` Returns the active color filter for this ImageView. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ImageView#getCropToPadding()()` Return whether this ImageView crops to padding. |
 | --- | --- |
-| open [Drawable](../android/graphics/drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/widget/ImageView#getDrawable()()` Gets the current Drawable, or null if no Drawable has been assigned. |
+| open [Drawable](../android.graphics.drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/widget/ImageView#getDrawable()()` Gets the current Drawable, or null if no Drawable has been assigned. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ImageView#getImageAlpha()()` Returns the alpha that will be applied to the drawable of this ImageView. |
-| open [Matrix](../android/graphics/Matrix.md)! | `https://developer.android.com/reference/kotlin/android/widget/ImageView#getImageMatrix()()` Returns the view's optional matrix. |
+| open [Matrix](../android.graphics/Matrix.md)! | `https://developer.android.com/reference/kotlin/android/widget/ImageView#getImageMatrix()()` Returns the view's optional matrix. |
 | --- | --- |
-| open [BlendMode](../android/graphics/BlendMode.md)? | `https://developer.android.com/reference/kotlin/android/widget/ImageView#getImageTintBlendMode()()` Gets the blending mode used to apply the tint to the image Drawable |
-| open [ColorStateList](../android/content/res/ColorStateList.md)? | `https://developer.android.com/reference/kotlin/android/widget/ImageView#getImageTintList()()` Get the current `https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#` used to tint the image Drawable, or null if no tint is applied. |
+| open [BlendMode](../android.graphics/BlendMode.md)? | `https://developer.android.com/reference/kotlin/android/widget/ImageView#getImageTintBlendMode()()` Gets the blending mode used to apply the tint to the image Drawable |
+| open [ColorStateList](../android.content.res/ColorStateList.md)? | `https://developer.android.com/reference/kotlin/android/widget/ImageView#getImageTintList()()` Get the current `https://developer.android.com/reference/kotlin/android/content/res/ColorStateList.html#` used to tint the image Drawable, or null if no tint is applied. |
 | open [PorterDuff.Mode](../android/graphics/PorterDuff.Mode.md)? | `https://developer.android.com/reference/kotlin/android/widget/ImageView#getImageTintMode()()` Gets the blending mode used to apply the tint to the image Drawable |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ImageView#getMaxHeight()()` The maximum height of this view. |
@@ -6453,7 +6453,7 @@ Sets the amount that the view is scaled in Y around the pivot point, as a propor
 
 Sets whether this View should be a focusable element for screen readers and include non-focusable Views from its subtree when providing feedback.
 
-Note: this is similar to using [`android:focusable`, but does not impact input focus behavior.](../android/view/View.md)
+Note: this is similar to using [`android:focusable`, but does not impact input focus behavior.](../android.view/View.md)
 
 <br />
 
@@ -7248,7 +7248,7 @@ ImageView(
 
 | Parameters ||
 |---|---|
-| `attrs` | [AttributeSet](../android/util/AttributeSet.md)?: This value may be `null`. |
+| `attrs` | [AttributeSet](../android.util/AttributeSet.md)?: This value may be `null`. |
 
 ### ImageView
 
@@ -7263,7 +7263,7 @@ ImageView(
 
 | Parameters ||
 |---|---|
-| `attrs` | [AttributeSet](../android/util/AttributeSet.md)?: This value may be `null`. |
+| `attrs` | [AttributeSet](../android.util/AttributeSet.md)?: This value may be `null`. |
 
 ### ImageView
 
@@ -7279,7 +7279,7 @@ ImageView(
 
 | Parameters ||
 |---|---|
-| `attrs` | [AttributeSet](../android/util/AttributeSet.md)?: This value may be `null`. |
+| `attrs` | [AttributeSet](../android.util/AttributeSet.md)?: This value may be `null`. |
 
 ## Public methods
 
@@ -7295,7 +7295,7 @@ Applies a temporary transformation `https://developer.android.com/reference/kotl
 
 | Parameters ||
 |---|---|
-| `matrix` | [Matrix](../android/graphics/Matrix.md)?: The transformation parameters in matrix form. This value may be `null`. |
+| `matrix` | [Matrix](../android.graphics/Matrix.md)?: The transformation parameters in matrix form. This value may be `null`. |
 
 ### clearColorFilter
 
@@ -7612,7 +7612,7 @@ Invalidates the specified Drawable.
 |---|---|
 | `who` | The drawable that is requesting the update. This value cannot be `null`. |
 | `drawable` | the drawable to invalidate. This value cannot be `null`. |
-| `dr` | [Drawable](../android/graphics/drawable/Drawable.md): This value cannot be `null`. |
+| `dr` | [Drawable](../android.graphics.drawable/Drawable.md): This value cannot be `null`. |
 | --- | --- |
 
 ### isOpaque
@@ -7770,7 +7770,7 @@ Apply an arbitrary colorfilter to the image.
 
 | Parameters ||
 |---|---|
-| `cf` | [ColorFilter](../android/graphics/ColorFilter.md)!: the colorfilter to apply (may be null) |
+| `cf` | [ColorFilter](../android.graphics/ColorFilter.md)!: the colorfilter to apply (may be null) |
 
 **See Also**
 
@@ -7856,7 +7856,7 @@ Sets a Bitmap as the content of this ImageView.
 
 | Parameters ||
 |---|---|
-| `bm` | [Bitmap](../android/graphics/Bitmap.md)!: The bitmap to set |
+| `bm` | [Bitmap](../android.graphics/Bitmap.md)!: The bitmap to set |
 
 ### setImageDrawable
 
@@ -7870,7 +7870,7 @@ Sets a drawable as the content of this ImageView.
 
 | Parameters ||
 |---|---|
-| `drawable` | [Drawable](../android/graphics/drawable/Drawable.md)?: the Drawable to set, or `null` to clear the content |
+| `drawable` | [Drawable](../android.graphics.drawable/Drawable.md)?: the Drawable to set, or `null` to clear the content |
 
 ### setImageIcon
 
@@ -7886,7 +7886,7 @@ Depending on the Icon type, this may do Bitmap reading and decoding on the UI th
 
 | Parameters ||
 |---|---|
-| `icon` | [Icon](../android/graphics/drawable/Icon.md)?: an Icon holding the desired image, or `null` to clear the content |
+| `icon` | [Icon](../android.graphics.drawable/Icon.md)?: an Icon holding the desired image, or `null` to clear the content |
 
 ### setImageLevel
 
@@ -7914,7 +7914,7 @@ Adds a transformation `https://developer.android.com/reference/kotlin/android/gr
 
 | Parameters ||
 |---|---|
-| `matrix` | [Matrix](../android/graphics/Matrix.md)!: The transformation parameters in matrix form. |
+| `matrix` | [Matrix](../android.graphics/Matrix.md)!: The transformation parameters in matrix form. |
 
 ### setImageResource
 
@@ -7962,7 +7962,7 @@ Specifies the blending mode used to apply the tint specified by `https://develop
 
 | Parameters ||
 |---|---|
-| `blendMode` | [BlendMode](../android/graphics/BlendMode.md)?: the blending mode used to apply the tint, may be `null` to clear tint |
+| `blendMode` | [BlendMode](../android.graphics/BlendMode.md)?: the blending mode used to apply the tint, may be `null` to clear tint |
 
 **See Also**
 
@@ -7985,7 +7985,7 @@ Subsequent calls to `https://developer.android.com/reference/kotlin/android/widg
 
 | Parameters ||
 |---|---|
-| `tint` | [ColorStateList](../android/content/res/ColorStateList.md)?: the tint to apply, may be `null` to clear tint |
+| `tint` | [ColorStateList](../android.content.res/ColorStateList.md)?: the tint to apply, may be `null` to clear tint |
 
 **See Also**
 
@@ -8033,7 +8033,7 @@ On devices running SDK \< 24, this method will fail to apply correct density sca
 
 | Parameters ||
 |---|---|
-| `uri` | [Uri](../android/net/Uri.md)?: the Uri of an image, or `null` to clear the content |
+| `uri` | [Uri](../android.net/Uri.md)?: the Uri of an image, or `null` to clear the content |
 
 ### setMaxHeight
 
@@ -8168,7 +8168,7 @@ Implement this to do your drawing.
 
 | Parameters ||
 |---|---|
-| `canvas` | [Canvas](../android/graphics/Canvas.md): the canvas on which the background will be drawn. This value cannot be `null`. |
+| `canvas` | [Canvas](../android.graphics/Canvas.md): the canvas on which the background will be drawn. This value cannot be `null`. |
 
 ### onMeasure
 
@@ -8223,7 +8223,7 @@ If you override this method you *must* call through to the superclass implementa
 | Parameters ||
 |---|---|
 | `who` | The Drawable to verify. Return true if it is one you are displaying, else return the result of calling through to the super class. This value cannot be `null`. |
-| `dr` | [Drawable](../android/graphics/drawable/Drawable.md): This value cannot be `null`. |
+| `dr` | [Drawable](../android.graphics.drawable/Drawable.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|

@@ -2,7 +2,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # TrafficDescriptor
 
-Kotlin | [Java](../android/telephony/data/TrafficDescriptor.md)
+Kotlin | [Java](TrafficDescriptor.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class TrafficDescriptor : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.telephony.data.TrafficDescriptor](../android/telephony/data/TrafficDescriptor.md) |
+| ↳ | [android.telephony.data.TrafficDescriptor](TrafficDescriptor.md) |
 
 A traffic descriptor, as defined in 3GPP TS 24.526 Section 5.2. It is used for UE Route Selection Policy(URSP) traffic matching as described in 3GPP TS 24.526 Section 4.2.2. It includes optional components like Data Network Name (DNN), an OS/App ID, and/or Connection Capabilities, which, if present, must be used for traffic matching. This descriptor does not specify the end point to be used for the data call.
 
@@ -65,7 +65,7 @@ A traffic descriptor, as defined in 3GPP TS 24.526 Section 5.2. It is used for U
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [TrafficDescriptor](../android/telephony/data/TrafficDescriptor.md)!\> | `https://developer.android.com/reference/kotlin/android/telephony/data/TrafficDescriptor#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [TrafficDescriptor](TrafficDescriptor.md)!\> | `https://developer.android.com/reference/kotlin/android/telephony/data/TrafficDescriptor#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -417,7 +417,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

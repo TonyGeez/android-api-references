@@ -10,10 +10,10 @@ class AclEntryType
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.nio.file.attribute.AclEntryType](../java/nio/file/attribute/AclEntryType.md)\> ||
-| | ↳ | [java.nio.file.attribute.AclEntryType](../java/nio/file/attribute/AclEntryType.md) |
+| ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.nio.file.attribute.AclEntryType](AclEntryType.md)\> ||
+| | ↳ | [java.nio.file.attribute.AclEntryType](AclEntryType.md) |
 
-| Known Direct Subclasses [AclEntryType.ALARM](../java/nio/file/attribute/AclEntryType.md), [AclEntryType.ALLOW](../java/nio/file/attribute/AclEntryType.md), [AclEntryType.AUDIT](../java/nio/file/attribute/AclEntryType.md), [AclEntryType.DENY](../java/nio/file/attribute/AclEntryType.md) |----------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------| | [AclEntryType.ALARM](../java/nio/file/attribute/AclEntryType.md) | Generate an alarm, in a system dependent way, the access specified in the permissions component of the ACL entry. | | [AclEntryType.ALLOW](../java/nio/file/attribute/AclEntryType.md) | Explicitly grants access to a file or directory. | | [AclEntryType.AUDIT](../java/nio/file/attribute/AclEntryType.md) | Log, in a system dependent way, the access specified in the permissions component of the ACL entry. | | [AclEntryType.DENY](../java/nio/file/attribute/AclEntryType.md) | Explicitly denies access to a file or directory. | |
+| Known Direct Subclasses [AclEntryType.ALARM](AclEntryType.md), [AclEntryType.ALLOW](AclEntryType.md), [AclEntryType.AUDIT](AclEntryType.md), [AclEntryType.DENY](AclEntryType.md) |----------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------| | [AclEntryType.ALARM](AclEntryType.md) | Generate an alarm, in a system dependent way, the access specified in the permissions component of the ACL entry. | | [AclEntryType.ALLOW](AclEntryType.md) | Explicitly grants access to a file or directory. | | [AclEntryType.AUDIT](AclEntryType.md) | Log, in a system dependent way, the access specified in the permissions component of the ACL entry. | | [AclEntryType.DENY](AclEntryType.md) | Explicitly denies access to a file or directory. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 A typesafe enumeration of the access control entry types.
@@ -22,10 +22,10 @@ A typesafe enumeration of the access control entry types.
 
 | Enum values ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ALARM](../java/nio/file/attribute/AclEntryType.md) Generate an alarm, in a system dependent way, the access specified in the permissions component of the ACL entry. |
-| [ALLOW](../java/nio/file/attribute/AclEntryType.md) Explicitly grants access to a file or directory. |
-| [AUDIT](../java/nio/file/attribute/AclEntryType.md) Log, in a system dependent way, the access specified in the permissions component of the ACL entry. |
-| [DENY](../java/nio/file/attribute/AclEntryType.md) Explicitly denies access to a file or directory. |
+| [ALARM](AclEntryType.md) Generate an alarm, in a system dependent way, the access specified in the permissions component of the ACL entry. |
+| [ALLOW](AclEntryType.md) Explicitly grants access to a file or directory. |
+| [AUDIT](AclEntryType.md) Log, in a system dependent way, the access specified in the permissions component of the ACL entry. |
+| [DENY](AclEntryType.md) Explicitly denies access to a file or directory. |
 
 ## Enum values
 

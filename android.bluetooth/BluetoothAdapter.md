@@ -8,7 +8,7 @@ class BluetoothAdapter
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.bluetooth.BluetoothAdapter](../android/bluetooth/BluetoothAdapter.md) |
+| ↳ | [android.bluetooth.BluetoothAdapter](BluetoothAdapter.md) |
 
 Represents the local device Bluetooth adapter. The `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter#` lets you perform fundamental Bluetooth tasks, such as initiate device discovery, query a list of bonded (paired) devices, instantiate a `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice` using a known MAC address, and create a `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothServerSocket` to listen for connection requests from other devices, and start a scan for Bluetooth LE devices.
 
@@ -80,12 +80,12 @@ This class is thread safe.
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter#enable()()` Turn on the local Bluetooth adapter---do not use without explicit user action to turn on Bluetooth. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter#getAddress()()` Returns the hardware address of the local Bluetooth adapter. |
 | --- | --- |
-| [BluetoothLeAdvertiser](../android/bluetooth/le/BluetoothLeAdvertiser.md)? | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter#getBluetoothLeAdvertiser()()` Returns a `https://developer.android.com/reference/kotlin/android/bluetooth/le/BluetoothLeAdvertiser` object for Bluetooth LE Advertising operations. |
-| [BluetoothLeScanner](../android/bluetooth/le/BluetoothLeScanner.md)? | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter#getBluetoothLeScanner()()` Returns a `https://developer.android.com/reference/kotlin/android/bluetooth/le/BluetoothLeScanner` object for Bluetooth LE scan operations. |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [BluetoothDevice](../android/bluetooth/BluetoothDevice.md)!\>! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter#getBondedDevices()()` Return the set of `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice` objects that are bonded (paired) to the local adapter. |
+| [BluetoothLeAdvertiser](../android.bluetooth.le/BluetoothLeAdvertiser.md)? | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter#getBluetoothLeAdvertiser()()` Returns a `https://developer.android.com/reference/kotlin/android/bluetooth/le/BluetoothLeAdvertiser` object for Bluetooth LE Advertising operations. |
+| [BluetoothLeScanner](../android.bluetooth.le/BluetoothLeScanner.md)? | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter#getBluetoothLeScanner()()` Returns a `https://developer.android.com/reference/kotlin/android/bluetooth/le/BluetoothLeScanner` object for Bluetooth LE scan operations. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [BluetoothDevice](BluetoothDevice.md)!\>! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter#getBondedDevices()()` Return the set of `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice` objects that are bonded (paired) to the local adapter. |
 | --- | --- |
-| static [BluetoothAdapter](../android/bluetooth/BluetoothAdapter.md)! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter#getDefaultAdapter()()` Get a handle to the default local Bluetooth adapter. |
-| [Duration](../java/time/Duration.md)? | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter#getDiscoverableTimeout()()` Get the timeout duration of the `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter#SCAN_MODE_CONNECTABLE_DISCOVERABLE:kotlin.Int`. |
+| static [BluetoothAdapter](BluetoothAdapter.md)! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter#getDefaultAdapter()()` Get a handle to the default local Bluetooth adapter. |
+| [Duration](../java.time/Duration.md)? | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter#getDiscoverableTimeout()()` Get the timeout duration of the `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter#SCAN_MODE_CONNECTABLE_DISCOVERABLE:kotlin.Int`. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter#getLeMaximumAdvertisingDataLength()()` Return the maximum LE advertising data length in bytes, if LE Extended Advertising feature is supported, 0 otherwise. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter#getMaxConnectedAudioDevices()()` Get the maximum number of connected devices per audio profile for this device. |
@@ -93,10 +93,10 @@ This class is thread safe.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter#getProfileConnectionState(kotlin.Int)(profile: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get the current connection state of a profile. |
 | --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter#getProfileProxy(android.content.Context,%20android.bluetooth.BluetoothProfile.ServiceListener,%20kotlin.Int)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, listener: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothProfile.ServiceListener!, profile: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get the profile proxy object associated with the profile. |
-| [BluetoothDevice](../android/bluetooth/BluetoothDevice.md)! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter#getRemoteDevice(kotlin.ByteArray)(address: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!)` Get a `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice` object for the given Bluetooth hardware address. |
-| [BluetoothDevice](../android/bluetooth/BluetoothDevice.md)! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter#getRemoteDevice(kotlin.String)(address: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Get a `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice` object for the given Bluetooth hardware address. |
+| [BluetoothDevice](BluetoothDevice.md)! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter#getRemoteDevice(kotlin.ByteArray)(address: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!)` Get a `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice` object for the given Bluetooth hardware address. |
+| [BluetoothDevice](BluetoothDevice.md)! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter#getRemoteDevice(kotlin.String)(address: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Get a `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice` object for the given Bluetooth hardware address. |
 | --- | --- |
-| [BluetoothDevice](../android/bluetooth/BluetoothDevice.md) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter#getRemoteLeDevice(kotlin.String,%20kotlin.Int)(address: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, addressType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get a `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice` object for the given Bluetooth hardware address and addressType. |
+| [BluetoothDevice](BluetoothDevice.md) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter#getRemoteLeDevice(kotlin.String,%20kotlin.Int)(address: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, addressType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get a `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice` object for the given Bluetooth hardware address and addressType. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter#getScanMode()()` Get the current Bluetooth scan mode of the local Bluetooth adapter. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter#getState()()` Get the current state of the local Bluetooth adapter. |
 | --- | --- |
@@ -117,12 +117,12 @@ This class is thread safe.
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter#isOffloadedFilteringSupported()()` Return true if offloaded filters are supported. |
 | --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter#isOffloadedScanBatchingSupported()()` Return true if offloaded scan batching is supported. |
-| [BluetoothServerSocket](../android/bluetooth/BluetoothServerSocket.md) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter#listenUsingInsecureL2capChannel()()` Create an insecure L2CAP Connection-oriented Channel (CoC) `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothServerSocket` and assign a dynamic PSM value. |
-| [BluetoothServerSocket](../android/bluetooth/BluetoothServerSocket.md)! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter#listenUsingInsecureRfcommWithServiceRecord(kotlin.String,%20java.util.UUID)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, uuid: https://developer.android.com/reference/kotlin/java/util/UUID.html#!)` Create a listening, insecure RFCOMM Bluetooth socket with Service Record. |
+| [BluetoothServerSocket](BluetoothServerSocket.md) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter#listenUsingInsecureL2capChannel()()` Create an insecure L2CAP Connection-oriented Channel (CoC) `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothServerSocket` and assign a dynamic PSM value. |
+| [BluetoothServerSocket](BluetoothServerSocket.md)! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter#listenUsingInsecureRfcommWithServiceRecord(kotlin.String,%20java.util.UUID)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, uuid: https://developer.android.com/reference/kotlin/java/util/UUID.html#!)` Create a listening, insecure RFCOMM Bluetooth socket with Service Record. |
 | --- | --- |
-| [BluetoothServerSocket](../android/bluetooth/BluetoothServerSocket.md) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter#listenUsingL2capChannel()()` Create a secure L2CAP Connection-oriented Channel (CoC) `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothServerSocket` and assign a dynamic protocol/service multiplexer (PSM) value. |
-| [BluetoothServerSocket](../android/bluetooth/BluetoothServerSocket.md)! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter#listenUsingRfcommWithServiceRecord(kotlin.String,%20java.util.UUID)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, uuid: https://developer.android.com/reference/kotlin/java/util/UUID.html#!)` Create a listening, secure RFCOMM Bluetooth socket with Service Record. |
-| [BluetoothServerSocket](../android/bluetooth/BluetoothServerSocket.md) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter#listenUsingSocketSettings(android.bluetooth.BluetoothSocketSettings)(settings: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocketSettings)` Creates a listening server channel for Bluetooth connections with the specified socket settings `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocketSettings`. |
+| [BluetoothServerSocket](BluetoothServerSocket.md) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter#listenUsingL2capChannel()()` Create a secure L2CAP Connection-oriented Channel (CoC) `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothServerSocket` and assign a dynamic protocol/service multiplexer (PSM) value. |
+| [BluetoothServerSocket](BluetoothServerSocket.md)! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter#listenUsingRfcommWithServiceRecord(kotlin.String,%20java.util.UUID)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, uuid: https://developer.android.com/reference/kotlin/java/util/UUID.html#!)` Create a listening, secure RFCOMM Bluetooth socket with Service Record. |
+| [BluetoothServerSocket](BluetoothServerSocket.md) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter#listenUsingSocketSettings(android.bluetooth.BluetoothSocketSettings)(settings: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocketSettings)` Creates a listening server channel for Bluetooth connections with the specified socket settings `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocketSettings`. |
 | --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter#setName(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Set the friendly Bluetooth name of the local Bluetooth adapter. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter#startDiscovery()()` Start the remote device discovery process. |
@@ -599,7 +599,7 @@ Clients should call this when they are no longer using the proxy obtained from `
 
 | Parameters ||
 |---|---|
-| `proxy` | [BluetoothProfile](../android/bluetooth/BluetoothProfile.md)!: Profile proxy object |
+| `proxy` | [BluetoothProfile](BluetoothProfile.md)!: Profile proxy object |
 
 ### disable
 
@@ -848,7 +848,7 @@ The ServiceListener's methods will be invoked on the application's main looper
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md)!: Context of the application |
+| `context` | [Context](../android.content/Context.md)!: Context of the application |
 | `listener` | [BluetoothProfile.ServiceListener](../android/bluetooth/BluetoothProfile.ServiceListener.md)!: The service listener for connection callbacks. |
 | `profile` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The Bluetooth profile to listen for status change |
 | --- | --- |
@@ -1232,7 +1232,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 | Parameters ||
 |---|---|
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: service name for SDP record |
-| `uuid` | [UUID](../java/util/UUID.md)!: uuid for SDP record |
+| `uuid` | [UUID](../java.util/UUID.md)!: uuid for SDP record |
 
 | Return ||
 |---|---|
@@ -1302,7 +1302,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 | Parameters ||
 |---|---|
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: service name for SDP record |
-| `uuid` | [UUID](../java/util/UUID.md)!: uuid for SDP record |
+| `uuid` | [UUID](../java.util/UUID.md)!: uuid for SDP record |
 
 | Return ||
 |---|---|
@@ -1336,7 +1336,7 @@ This API supports `https://developer.android.com/reference/kotlin/android/blueto
 
 | Parameters ||
 |---|---|
-| `settings` | [BluetoothSocketSettings](../android/bluetooth/BluetoothSocketSettings.md): Bluetooth socket settings `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocketSettings`. This value cannot be `null`. |
+| `settings` | [BluetoothSocketSettings](BluetoothSocketSettings.md): Bluetooth socket settings `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocketSettings`. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -1464,7 +1464,7 @@ In addition, this requires the `https://developer.android.com/reference/kotlin/a
 
 | Parameters ||
 |---|---|
-| `serviceUuids` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [UUID](../java/util/UUID.md)!\>!: Array of services to look for |
+| `serviceUuids` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [UUID](../java.util/UUID.md)!\>!: Array of services to look for |
 | `callback` | [BluetoothAdapter.LeScanCallback](../android/bluetooth/BluetoothAdapter.LeScanCallback.md)!: the callback LE scan results are delivered |
 
 | Return ||

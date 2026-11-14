@@ -4,7 +4,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 
 # WebTriggerInput
 
-Kotlin| [Java](../android/adservices/ondevicepersonalization/WebTriggerInput.md) 
+Kotlin| [Java](WebTriggerInput.md) 
 | --- | --- |
 
 ```
@@ -13,24 +13,24 @@ class WebTriggerInput
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.adservices.ondevicepersonalization.WebTriggerInput](../android/adservices/ondevicepersonalization/WebTriggerInput.md) |
+| ↳ | [android.adservices.ondevicepersonalization.WebTriggerInput](WebTriggerInput.md) |
 
-The input data for [IsolatedWorker.onWebTrigger(WebTriggerInput, android.os.OutcomeReceiver)](../android/adservices/ondevicepersonalization/IsolatedWorker.md)).
+The input data for [IsolatedWorker.onWebTrigger(WebTriggerInput, android.os.OutcomeReceiver)](IsolatedWorker.md)).
 
 ## Summary
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [WebTriggerInput](../android/adservices/ondevicepersonalization/WebTriggerInput.md))`(`destinationUrl:` ` [Uri](../android/net/Uri.md)`, `appPackageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `data:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`)` Creates a new WebTriggerInput. |
+| [WebTriggerInput](WebTriggerInput.md))`(`destinationUrl:` ` [Uri](../android.net/Uri.md)`, `appPackageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `data:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`)` Creates a new WebTriggerInput. |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/adservices/ondevicepersonalization/WebTriggerInput.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getAppPackageName](../android/adservices/ondevicepersonalization/WebTriggerInput.md))`()` The package name of the app where the trigger event occurred |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [getData](../android/adservices/ondevicepersonalization/WebTriggerInput.md))`()` Additional data returned by the server as part of the web trigger registration to be sent to the [IsolatedService](../android/adservices/ondevicepersonalization/IsolatedService.md). |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](WebTriggerInput.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getAppPackageName](WebTriggerInput.md))`()` The package name of the app where the trigger event occurred |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [getData](WebTriggerInput.md))`()` Additional data returned by the server as part of the web trigger registration to be sent to the [IsolatedService](IsolatedService.md). |
 | --- | --- |
-| [Uri](../android/net/Uri.md) | [getDestinationUrl](../android/adservices/ondevicepersonalization/WebTriggerInput.md))`()` The destination URL (landing page) where the trigger event occurred. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/adservices/ondevicepersonalization/WebTriggerInput.md))`()` <br /> |
+| [Uri](../android.net/Uri.md) | [getDestinationUrl](WebTriggerInput.md))`()` The destination URL (landing page) where the trigger event occurred. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](WebTriggerInput.md))`()` <br /> |
 
 ## Public constructors
 
@@ -49,9 +49,9 @@ Creates a new WebTriggerInput.
 
 | Parameters ||
 |------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `destinationUrl` | [Uri](../android/net/Uri.md):The destination URL (landing page) where the trigger event occurred. This value cannot be`null`. |
+| `destinationUrl` | [Uri](../android.net/Uri.md):The destination URL (landing page) where the trigger event occurred. This value cannot be`null`. |
 | `appPackageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The package name of the app where the trigger event occurred This value cannot be`null`. |
-| `data` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html):Additional data returned by the server as part of the web trigger registration to be sent to the [IsolatedService](../android/adservices/ondevicepersonalization/IsolatedService.md). This can be`null`if the server does not need to send data to the service for processing web triggers. |
+| `data` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html):Additional data returned by the server as part of the web trigger registration to be sent to the [IsolatedService](IsolatedService.md). This can be`null`if the server does not need to send data to the service for processing web triggers. |
 | --- | --- |
 
 ## Public methods
@@ -107,7 +107,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun getData(): ByteArray
 ```
 
-Additional data returned by the server as part of the web trigger registration to be sent to the [IsolatedService](../android/adservices/ondevicepersonalization/IsolatedService.md). This can be`null`if the server does not need to send data to the service for processing web triggers. 
+Additional data returned by the server as part of the web trigger registration to be sent to the [IsolatedService](IsolatedService.md). This can be`null`if the server does not need to send data to the service for processing web triggers. 
 
 ### getDestinationUrl
 
@@ -121,7 +121,7 @@ The destination URL (landing page) where the trigger event occurred.
 
 | Return ||
 |-----------------------------------------------------------------------------|-----------------------------|
-| [Uri](../android/net/Uri.md) | This value cannot be`null`. |
+| [Uri](../android.net/Uri.md) | This value cannot be`null`. |
 
 ### hashCode
 

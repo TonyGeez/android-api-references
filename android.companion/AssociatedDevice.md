@@ -2,7 +2,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # AssociatedDevice
 
-Kotlin | [Java](../android/companion/AssociatedDevice.md)
+Kotlin | [Java](AssociatedDevice.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class AssociatedDevice : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.companion.AssociatedDevice](../android/companion/AssociatedDevice.md) |
+| ↳ | [android.companion.AssociatedDevice](AssociatedDevice.md) |
 
 Container for device info from an association that is not self-managed. Device can be one of three types:
 
@@ -31,10 +31,10 @@ Container for device info from an association that is not self-managed. Device c
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/companion/AssociatedDevice#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/companion/AssociatedDevice#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [ScanResult](../android/bluetooth/le/ScanResult.md)? | `https://developer.android.com/reference/kotlin/android/companion/AssociatedDevice#getBleDevice()()` Return bluetooth LE device info. |
+| [ScanResult](../android.bluetooth.le/ScanResult.md)? | `https://developer.android.com/reference/kotlin/android/companion/AssociatedDevice#getBleDevice()()` Return bluetooth LE device info. |
 | --- | --- |
-| [BluetoothDevice](../android/bluetooth/BluetoothDevice.md)? | `https://developer.android.com/reference/kotlin/android/companion/AssociatedDevice#getBluetoothDevice()()` Return bluetooth device info. |
-| [ScanResult](../android/net/wifi/ScanResult.md)? | `https://developer.android.com/reference/kotlin/android/companion/AssociatedDevice#getWifiDevice()()` Return Wi-Fi device info. |
+| [BluetoothDevice](../android.bluetooth/BluetoothDevice.md)? | `https://developer.android.com/reference/kotlin/android/companion/AssociatedDevice#getBluetoothDevice()()` Return bluetooth device info. |
+| [ScanResult](../android.net.wifi/ScanResult.md)? | `https://developer.android.com/reference/kotlin/android/companion/AssociatedDevice#getWifiDevice()()` Return Wi-Fi device info. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/companion/AssociatedDevice#hashCode()()` Returns a hash code value for the object. |
 | --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/companion/AssociatedDevice#toString()()` Returns a string representation of the object. |
@@ -42,7 +42,7 @@ Container for device info from an association that is not self-managed. Device c
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [AssociatedDevice](../android/companion/AssociatedDevice.md)!\> | `https://developer.android.com/reference/kotlin/android/companion/AssociatedDevice#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [AssociatedDevice](AssociatedDevice.md)!\> | `https://developer.android.com/reference/kotlin/android/companion/AssociatedDevice#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public methods
 
@@ -179,7 +179,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

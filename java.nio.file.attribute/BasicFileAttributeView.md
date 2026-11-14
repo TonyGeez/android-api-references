@@ -8,43 +8,43 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 interface BasicFileAttributeView : FileAttributeView
 ```
 
-| [java.nio.file.attribute.BasicFileAttributeView](../java/nio/file/attribute/BasicFileAttributeView.md) |
+| [java.nio.file.attribute.BasicFileAttributeView](BasicFileAttributeView.md) |
 
-| Known Direct Subclasses [DosFileAttributeView](../java/nio/file/attribute/DosFileAttributeView.md), [PosixFileAttributeView](../java/nio/file/attribute/PosixFileAttributeView.md) |-------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [DosFileAttributeView](../java/nio/file/attribute/DosFileAttributeView.md) | A file attribute view that provides a view of the legacy "DOS" file attributes. | | [PosixFileAttributeView](../java/nio/file/attribute/PosixFileAttributeView.md) | A file attribute view that provides a view of the file attributes commonly associated with files on file systems used by operating systems that implement the Portable Operating System Interface (POSIX) family of standards. | |
+| Known Direct Subclasses [DosFileAttributeView](DosFileAttributeView.md), [PosixFileAttributeView](PosixFileAttributeView.md) |-------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [DosFileAttributeView](DosFileAttributeView.md) | A file attribute view that provides a view of the legacy "DOS" file attributes. | | [PosixFileAttributeView](PosixFileAttributeView.md) | A file attribute view that provides a view of the file attributes commonly associated with files on file systems used by operating systems that implement the Portable Operating System Interface (POSIX) family of standards. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-A file attribute view that provides a view of a*basic set* of file attributes common to many file systems. The basic set of file attributes consist of*mandatory* and*optional* file attributes as defined by the [BasicFileAttributes](../java/nio/file/attribute/BasicFileAttributes.md) interface.
+A file attribute view that provides a view of a*basic set* of file attributes common to many file systems. The basic set of file attributes consist of*mandatory* and*optional* file attributes as defined by the [BasicFileAttributes](BasicFileAttributes.md) interface.
 
-The file attributes are retrieved from the file system as a*bulk operation* by invoking the [readAttributes](../java/nio/file/attribute/BasicFileAttributeView.md))method. This class also defines the [setTimes](../java/nio/file/attribute/BasicFileAttributeView.md))method to update the file's time attributes.
+The file attributes are retrieved from the file system as a*bulk operation* by invoking the [readAttributes](BasicFileAttributeView.md))method. This class also defines the [setTimes](BasicFileAttributeView.md))method to update the file's time attributes.
 
 Where dynamic access to file attributes is required, the attributes supported by this attribute view have the following names and types:
 
 | Name | Type |
 | --- | --- |
-| "lastModifiedTime" | [FileTime](../java/nio/file/attribute/FileTime.md) |
-| "lastAccessTime" | [FileTime](../java/nio/file/attribute/FileTime.md) |
-| "creationTime" | [FileTime](../java/nio/file/attribute/FileTime.md) |
+| "lastModifiedTime" | [FileTime](FileTime.md) |
+| "lastAccessTime" | [FileTime](FileTime.md) |
+| "creationTime" | [FileTime](FileTime.md) |
 | --- | --- |
-| "size" | [Long](../java/lang/Long.md) |
-| "isRegularFile" | [Boolean](../java/lang/Boolean.md) |
-| "isDirectory" | [Boolean](../java/lang/Boolean.md) |
+| "size" | [Long](../java.lang/Long.md) |
+| "isRegularFile" | [Boolean](../java.lang/Boolean.md) |
+| "isDirectory" | [Boolean](../java.lang/Boolean.md) |
 | --- | --- |
-| "isSymbolicLink" | [Boolean](../java/lang/Boolean.md) |
-| "isOther" | [Boolean](../java/lang/Boolean.md) |
-| "fileKey" | [Object](../java/lang/Object.md) |
+| "isSymbolicLink" | [Boolean](../java.lang/Boolean.md) |
+| "isOther" | [Boolean](../java.lang/Boolean.md) |
+| "fileKey" | [Object](../java.lang/Object.md) |
 |--------------------|---------------------------------------------------------------------------------------------|
 
-The [getAttribute](../java/nio/file/Files.md))method may be used to read any of these attributes as if by invoking the [readAttributes()](../java/nio/file/attribute/BasicFileAttributeView.md))method.
+The [getAttribute](../java.nio.file/Files.md))method may be used to read any of these attributes as if by invoking the [readAttributes()](BasicFileAttributeView.md))method.
 
-The [setAttribute](../java/nio/file/Files.md))method may be used to update the file's last modified time, last access time or create time attributes as if by invoking the [setTimes](../java/nio/file/attribute/BasicFileAttributeView.md))method.
+The [setAttribute](../java.nio.file/Files.md))method may be used to update the file's last modified time, last access time or create time attributes as if by invoking the [setTimes](BasicFileAttributeView.md))method.
 
 ## Summary
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [name](../java/nio/file/attribute/BasicFileAttributeView.md))`()` Returns the name of the attribute view. |
-| abstract [BasicFileAttributes](../java/nio/file/attribute/BasicFileAttributes.md)! | [readAttributes](../java/nio/file/attribute/BasicFileAttributeView.md))`()` Reads the basic file attributes as a bulk operation. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTimes](../java/nio/file/attribute/BasicFileAttributeView.md))`(`lastModifiedTime:` ` [FileTime](../java/nio/file/attribute/FileTime.md)!`, `lastAccessTime:` ` [FileTime](../java/nio/file/attribute/FileTime.md)!`, `createTime:` ` [FileTime](../java/nio/file/attribute/FileTime.md)!`)` Updates any or all of the file's last modified time, last access time, and create time attributes. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [name](BasicFileAttributeView.md))`()` Returns the name of the attribute view. |
+| abstract [BasicFileAttributes](BasicFileAttributes.md)! | [readAttributes](BasicFileAttributeView.md))`()` Reads the basic file attributes as a bulk operation. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTimes](BasicFileAttributeView.md))`(`lastModifiedTime:` ` [FileTime](FileTime.md)!`, `lastAccessTime:` ` [FileTime](FileTime.md)!`, `createTime:` ` [FileTime](FileTime.md)!`)` Updates any or all of the file's last modified time, last access time, and create time attributes. |
 | --- | --- |
 
 ## Public methods
@@ -77,12 +77,12 @@ It is implementation specific if all file attributes are read as an atomic opera
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------|---------------------|
-| [BasicFileAttributes](../java/nio/file/attribute/BasicFileAttributes.md)! | the file attributes |
+| [BasicFileAttributes](BasicFileAttributes.md)! | the file attributes |
 
 | Exceptions ||
 |-------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `java.io.IOException` | if an I/O error occurs |
-| `java.lang.SecurityException` | In the case of the default provider, a security manager is installed, its [checkRead](../java/lang/SecurityManager.md))method is invoked to check read access to the file |
+| `java.lang.SecurityException` | In the case of the default provider, a security manager is installed, its [checkRead](../java.lang/SecurityManager.md))method is invoked to check read access to the file |
 
 ### setTimes
 
@@ -113,16 +113,16 @@ Path path = ...
 
 | Parameters ||
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `lastModifiedTime` | [FileTime](../java/nio/file/attribute/FileTime.md)!:the new last modified time, or`null`to not change the value |
-| `lastAccessTime` | [FileTime](../java/nio/file/attribute/FileTime.md)!:the last access time, or`null`to not change the value |
-| `createTime` | [FileTime](../java/nio/file/attribute/FileTime.md)!:the file's create time, or`null`to not change the value |
+| `lastModifiedTime` | [FileTime](FileTime.md)!:the new last modified time, or`null`to not change the value |
+| `lastAccessTime` | [FileTime](FileTime.md)!:the last access time, or`null`to not change the value |
+| `createTime` | [FileTime](FileTime.md)!:the file's create time, or`null`to not change the value |
 | --- | --- |
 
 | Exceptions ||
 |-------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `java.io.IOException` | if an I/O error occurs |
-| `java.lang.SecurityException` | In the case of the default provider, a security manager is installed, its [checkWrite](../java/lang/SecurityManager.md))method is invoked to check write access to the file |
+| `java.lang.SecurityException` | In the case of the default provider, a security manager is installed, its [checkWrite](../java.lang/SecurityManager.md))method is invoked to check write access to the file |
 
 **See Also**
 
-- [java.nio.file.Files#setLastModifiedTime](../java/nio/file/Files.md))
+- [java.nio.file.Files#setLastModifiedTime](../java.nio.file/Files.md))

@@ -5,7 +5,7 @@ Deprecated in [API level 28](https://developer.android.com/guide/topics/manifest
 
 # MutableInt
 
-Kotlin| [Java](../android/util/MutableInt.md) 
+Kotlin| [Java](MutableInt.md) 
 | --- | --- |
 
 ```
@@ -14,7 +14,7 @@ class MutableInt
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.util.MutableInt](../android/util/MutableInt.md) |
+| ↳ | [android.util.MutableInt](MutableInt.md) |
 
 | **This class was deprecated in API level 28.**
 |
@@ -24,11 +24,11 @@ class MutableInt
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [MutableInt](../android/util/MutableInt.md))`(`value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [MutableInt](MutableInt.md))`(`value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||
 |----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [value](../android/util/MutableInt.md) <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [value](MutableInt.md) <br /> |
 
 ## Public constructors
 

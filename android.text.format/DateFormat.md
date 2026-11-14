@@ -4,7 +4,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 
 # DateFormat
 
-Kotlin| [Java](../android/text/format/DateFormat.md) 
+Kotlin| [Java](DateFormat.md) 
 | --- | --- |
 
 ```
@@ -13,39 +13,39 @@ open class DateFormat
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.text.format.DateFormat](../android/text/format/DateFormat.md) |
+| ↳ | [android.text.format.DateFormat](DateFormat.md) |
 
 Utility class for producing strings with formatted date/time.
 
-Most callers should avoid supplying their own format strings to this class'`format`methods and rely on the correctly localized ones supplied by the system. This class' factory methods return appropriately-localized [java.text.DateFormat](../java/text/DateFormat.md) instances, suitable for both formatting and parsing dates. For the canonical documentation of format strings, see [java.text.SimpleDateFormat](../java/text/SimpleDateFormat.md).
+Most callers should avoid supplying their own format strings to this class'`format`methods and rely on the correctly localized ones supplied by the system. This class' factory methods return appropriately-localized [java.text.DateFormat](../java.text/DateFormat.md) instances, suitable for both formatting and parsing dates. For the canonical documentation of format strings, see [java.text.SimpleDateFormat](../java.text/SimpleDateFormat.md).
 
-In cases where the system does not provide a suitable pattern, this class offers the [getBestDateTimePattern](../android/text/format/DateFormat.md))method.
+In cases where the system does not provide a suitable pattern, this class offers the [getBestDateTimePattern](DateFormat.md))method.
 
 The`format`methods in this class implement a subset of Unicode [UTS #35](http://www.unicode.org/reports/tr35/#Date_Format_Patterns) patterns. The subset currently supported by this class includes the following format characters:`acdEHhLKkLMmsyz`. Up to API level 17, only`adEhkMmszy`were supported. Note that this class incorrectly implements`k`as if it were`H`for backwards compatibility.
 
-See [java.text.SimpleDateFormat](../java/text/SimpleDateFormat.md) for more documentation about patterns, or if you need a more complete or correct implementation. Note that the non-`format`methods in this class are implemented by`SimpleDateFormat`.
+See [java.text.SimpleDateFormat](../java.text/SimpleDateFormat.md) for more documentation about patterns, or if you need a more complete or correct implementation. Note that the non-`format`methods in this class are implemented by`SimpleDateFormat`.
 
 ## Summary
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------|---|
-| [DateFormat](../android/text/format/DateFormat.md))`()` <br /> |
+| [DateFormat](DateFormat.md))`()` <br /> |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [format](../android/text/format/DateFormat.md))`(`inFormat:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `inDate:` ` [Calendar](../java/util/Calendar.md)!`)` Given a format string and a [java.util.Calendar](../java/util/Calendar.md) object, returns a CharSequence containing the requested date. |
-| openstatic [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [format](../android/text/format/DateFormat.md))`(`inFormat:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `inDate:` ` [Date](../java/util/Date.md)!`)` Given a format string and a [java.util.Date](../java/util/Date.md) object, returns a CharSequence containing the requested date. |
-| openstatic [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [format](../android/text/format/DateFormat.md))`(`inFormat:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `inTimeInMillis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Given a format string and a time in milliseconds since Jan 1, 1970 GMT, returns a CharSequence containing the requested date. |
+| openstatic [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [format](DateFormat.md))`(`inFormat:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `inDate:` ` [Calendar](../java.util/Calendar.md)!`)` Given a format string and a [java.util.Calendar](../java.util/Calendar.md) object, returns a CharSequence containing the requested date. |
+| openstatic [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [format](DateFormat.md))`(`inFormat:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `inDate:` ` [Date](../java.util/Date.md)!`)` Given a format string and a [java.util.Date](../java.util/Date.md) object, returns a CharSequence containing the requested date. |
+| openstatic [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [format](DateFormat.md))`(`inFormat:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `inTimeInMillis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Given a format string and a time in milliseconds since Jan 1, 1970 GMT, returns a CharSequence containing the requested date. |
 | --- | --- |
-| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getBestDateTimePattern](../android/text/format/DateFormat.md))`(`locale:` ` [Locale](../java/util/Locale.md)!`, `skeleton:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the best possible localized form of the given skeleton for the given locale. |
-| openstatic [DateFormat](../java/text/DateFormat.md)! | [getDateFormat](../android/text/format/DateFormat.md))`(`context:` ` [Context](../android/content/Context.md)!`)` Returns a [java.text.DateFormat](../java/text/DateFormat.md) object that can format the date in short form according to the context's locale. |
-| openstatic [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)! | [getDateFormatOrder](../android/text/format/DateFormat.md))`(`context:` ` [Context](../android/content/Context.md)!`)` Gets the current date format stored as a char array. |
+| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getBestDateTimePattern](DateFormat.md))`(`locale:` ` [Locale](../java.util/Locale.md)!`, `skeleton:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the best possible localized form of the given skeleton for the given locale. |
+| openstatic [DateFormat](../java.text/DateFormat.md)! | [getDateFormat](DateFormat.md))`(`context:` ` [Context](../android.content/Context.md)!`)` Returns a [java.text.DateFormat](../java.text/DateFormat.md) object that can format the date in short form according to the context's locale. |
+| openstatic [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)! | [getDateFormatOrder](DateFormat.md))`(`context:` ` [Context](../android.content/Context.md)!`)` Gets the current date format stored as a char array. |
 | --- | --- |
-| openstatic [DateFormat](../java/text/DateFormat.md)! | [getLongDateFormat](../android/text/format/DateFormat.md))`(`context:` ` [Context](../android/content/Context.md)!`)` Returns a [java.text.DateFormat](../java/text/DateFormat.md) object that can format the date in long form (such as`Monday, January 3, 2000`) for the context's locale. |
-| openstatic [DateFormat](../java/text/DateFormat.md)! | [getMediumDateFormat](../android/text/format/DateFormat.md))`(`context:` ` [Context](../android/content/Context.md)!`)` Returns a [java.text.DateFormat](../java/text/DateFormat.md) object that can format the date in medium form (such as`Jan 3, 2000`) for the context's locale. |
-| openstatic [DateFormat](../java/text/DateFormat.md)! | [getTimeFormat](../android/text/format/DateFormat.md))`(`context:` ` [Context](../android/content/Context.md)!`)` Returns a [java.text.DateFormat](../java/text/DateFormat.md) object that can format the time according to the context's locale and the user's 12-/24-hour clock preference. |
+| openstatic [DateFormat](../java.text/DateFormat.md)! | [getLongDateFormat](DateFormat.md))`(`context:` ` [Context](../android.content/Context.md)!`)` Returns a [java.text.DateFormat](../java.text/DateFormat.md) object that can format the date in long form (such as`Monday, January 3, 2000`) for the context's locale. |
+| openstatic [DateFormat](../java.text/DateFormat.md)! | [getMediumDateFormat](DateFormat.md))`(`context:` ` [Context](../android.content/Context.md)!`)` Returns a [java.text.DateFormat](../java.text/DateFormat.md) object that can format the date in medium form (such as`Jan 3, 2000`) for the context's locale. |
+| openstatic [DateFormat](../java.text/DateFormat.md)! | [getTimeFormat](DateFormat.md))`(`context:` ` [Context](../android.content/Context.md)!`)` Returns a [java.text.DateFormat](../java.text/DateFormat.md) object that can format the time according to the context's locale and the user's 12-/24-hour clock preference. |
 | --- | --- |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [is24HourFormat](../android/text/format/DateFormat.md))`(`context:` ` [Context](../android/content/Context.md)!`)` Returns true if times should be formatted as 24 hour times, false if times should be formatted as 12 hour (AM/PM) times. |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [is24HourFormat](DateFormat.md))`(`context:` ` [Context](../android.content/Context.md)!`)` Returns true if times should be formatted as 24 hour times, false if times should be formatted as 12 hour (AM/PM) times. |
 
 ## Public constructors
 
@@ -68,16 +68,16 @@ open static fun format(
 ): CharSequence!
 ```
 
-Given a format string and a [java.util.Calendar](../java/util/Calendar.md) object, returns a CharSequence containing the requested date.
+Given a format string and a [java.util.Calendar](../java.util/Calendar.md) object, returns a CharSequence containing the requested date.
 
 | Parameters ||
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `inFormat` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!:the format string, as described in [android.text.format.DateFormat](../android/text/format/DateFormat.md) |
-| `inDate` | [Calendar](../java/util/Calendar.md)!:the date to format |
+| `inFormat` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!:the format string, as described in [android.text.format.DateFormat](DateFormat.md) |
+| `inDate` | [Calendar](../java.util/Calendar.md)!:the date to format |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | a [CharSequence](../java/lang/CharSequence.md) containing the requested text |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | a [CharSequence](../java.lang/CharSequence.md) containing the requested text |
 
 ### format
 
@@ -90,16 +90,16 @@ open static fun format(
 ): CharSequence!
 ```
 
-Given a format string and a [java.util.Date](../java/util/Date.md) object, returns a CharSequence containing the requested date.
+Given a format string and a [java.util.Date](../java.util/Date.md) object, returns a CharSequence containing the requested date.
 
 | Parameters ||
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `inFormat` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!:the format string, as described in [android.text.format.DateFormat](../android/text/format/DateFormat.md) |
-| `inDate` | [Date](../java/util/Date.md)!:the date to format |
+| `inFormat` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!:the format string, as described in [android.text.format.DateFormat](DateFormat.md) |
+| `inDate` | [Date](../java.util/Date.md)!:the date to format |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | a [CharSequence](../java/lang/CharSequence.md) containing the requested text |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | a [CharSequence](../java.lang/CharSequence.md) containing the requested text |
 
 ### format
 
@@ -116,12 +116,12 @@ Given a format string and a time in milliseconds since Jan 1, 1970 GMT, returns 
 
 | Parameters ||
 |------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `inFormat` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!:the format string, as described in [android.text.format.DateFormat](../android/text/format/DateFormat.md) |
+| `inFormat` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!:the format string, as described in [android.text.format.DateFormat](DateFormat.md) |
 | `inTimeInMillis` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):in milliseconds since Jan 1, 1970 GMT |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | a [CharSequence](../java/lang/CharSequence.md) containing the requested text |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | a [CharSequence](../java.lang/CharSequence.md) containing the requested text |
 
 ### getBestDateTimePattern
 
@@ -146,12 +146,12 @@ This method will only return patterns that are in CLDR, and is useful whenever y
 
 | Parameters ||
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| `locale` | [Locale](../java/util/Locale.md)!:the locale into which the skeleton should be localized |
+| `locale` | [Locale](../java.util/Locale.md)!:the locale into which the skeleton should be localized |
 | `skeleton` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:a skeleton as described above |
 
 | Return ||
 |-----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | a string pattern suitable for use with [java.text.SimpleDateFormat](../java/text/SimpleDateFormat.md). |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | a string pattern suitable for use with [java.text.SimpleDateFormat](../java.text/SimpleDateFormat.md). |
 
 ### getDateFormat
 
@@ -161,15 +161,15 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 open static fun getDateFormat(context: Context!): DateFormat!
 ```
 
-Returns a [java.text.DateFormat](../java/text/DateFormat.md) object that can format the date in short form according to the context's locale.
+Returns a [java.text.DateFormat](../java.text/DateFormat.md) object that can format the date in short form according to the context's locale.
 
 | Parameters ||
 |-----------|------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](../android/content/Context.md)!:the application context |
+| `context` | [Context](../android.content/Context.md)!:the application context |
 
 | Return ||
 |------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| [DateFormat](../java/text/DateFormat.md)! | the [java.text.DateFormat](../java/text/DateFormat.md) object that properly formats the date. |
+| [DateFormat](../java.text/DateFormat.md)! | the [java.text.DateFormat](../java.text/DateFormat.md) object that properly formats the date. |
 
 ### getDateFormatOrder
 
@@ -189,15 +189,15 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 open static fun getLongDateFormat(context: Context!): DateFormat!
 ```
 
-Returns a [java.text.DateFormat](../java/text/DateFormat.md) object that can format the date in long form (such as`Monday, January 3, 2000`) for the context's locale.
+Returns a [java.text.DateFormat](../java.text/DateFormat.md) object that can format the date in long form (such as`Monday, January 3, 2000`) for the context's locale.
 
 | Parameters ||
 |-----------|------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](../android/content/Context.md)!:the application context |
+| `context` | [Context](../android.content/Context.md)!:the application context |
 
 | Return ||
 |------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| [DateFormat](../java/text/DateFormat.md)! | the [java.text.DateFormat](../java/text/DateFormat.md) object that formats the date in long form. |
+| [DateFormat](../java.text/DateFormat.md)! | the [java.text.DateFormat](../java.text/DateFormat.md) object that formats the date in long form. |
 
 ### getMediumDateFormat
 
@@ -207,15 +207,15 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 open static fun getMediumDateFormat(context: Context!): DateFormat!
 ```
 
-Returns a [java.text.DateFormat](../java/text/DateFormat.md) object that can format the date in medium form (such as`Jan 3, 2000`) for the context's locale.
+Returns a [java.text.DateFormat](../java.text/DateFormat.md) object that can format the date in medium form (such as`Jan 3, 2000`) for the context's locale.
 
 | Parameters ||
 |-----------|------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](../android/content/Context.md)!:the application context |
+| `context` | [Context](../android.content/Context.md)!:the application context |
 
 | Return ||
 |------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| [DateFormat](../java/text/DateFormat.md)! | the [java.text.DateFormat](../java/text/DateFormat.md) object that formats the date in long form. |
+| [DateFormat](../java.text/DateFormat.md)! | the [java.text.DateFormat](../java.text/DateFormat.md) object that formats the date in long form. |
 
 ### getTimeFormat
 
@@ -225,15 +225,15 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 open static fun getTimeFormat(context: Context!): DateFormat!
 ```
 
-Returns a [java.text.DateFormat](../java/text/DateFormat.md) object that can format the time according to the context's locale and the user's 12-/24-hour clock preference.
+Returns a [java.text.DateFormat](../java.text/DateFormat.md) object that can format the time according to the context's locale and the user's 12-/24-hour clock preference.
 
 | Parameters ||
 |-----------|------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](../android/content/Context.md)!:the application context |
+| `context` | [Context](../android.content/Context.md)!:the application context |
 
 | Return ||
 |------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| [DateFormat](../java/text/DateFormat.md)! | the [java.text.DateFormat](../java/text/DateFormat.md) object that properly formats the time. |
+| [DateFormat](../java.text/DateFormat.md)! | the [java.text.DateFormat](../java.text/DateFormat.md) object that properly formats the time. |
 
 ### is24HourFormat
 
@@ -247,7 +247,7 @@ Returns true if times should be formatted as 24 hour times, false if times shoul
 
 | Parameters ||
 |-----------|--------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](../android/content/Context.md)!:the context to use for the content resolver |
+| `context` | [Context](../android.content/Context.md)!:the context to use for the content resolver |
 
 | Return ||
 |------------------------------------------------------------------------------------|-----------------------------------------------------------|

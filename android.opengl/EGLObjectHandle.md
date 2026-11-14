@@ -4,7 +4,7 @@ Added in [API level 17](https://developer.android.com/guide/topics/manifest/uses
 
 # EGLObjectHandle
 
-Kotlin| [Java](../android/opengl/EGLObjectHandle.md) 
+Kotlin| [Java](EGLObjectHandle.md) 
 | --- | --- |
 
 ```
@@ -13,9 +13,9 @@ abstract class EGLObjectHandle
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.opengl.EGLObjectHandle](../android/opengl/EGLObjectHandle.md) |
+| ↳ | [android.opengl.EGLObjectHandle](EGLObjectHandle.md) |
 
-| Known Direct Subclasses [EGLConfig](../android/opengl/EGLConfig.md), [EGLContext](../android/opengl/EGLContext.md), [EGLDisplay](../android/opengl/EGLDisplay.md), [EGLImage](../android/opengl/EGLImage.md), [EGLSurface](../android/opengl/EGLSurface.md), [EGLSync](../android/opengl/EGLSync.md) |----------------------------------------------------------------------------------------|----------------------------------------------| | [EGLConfig](../android/opengl/EGLConfig.md) | Wrapper class for native EGLConfig objects. | | [EGLContext](../android/opengl/EGLContext.md) | Wrapper class for native EGLContext objects. | | [EGLDisplay](../android/opengl/EGLDisplay.md) | Wrapper class for native EGLDisplay objects. | | [EGLImage](../android/opengl/EGLImage.md) | Wrapper class for native EGLImage objects. | | [EGLSurface](../android/opengl/EGLSurface.md) | Wrapper class for native EGLSurface objects. | | [EGLSync](../android/opengl/EGLSync.md) | Wrapper class for native EGLSync objects. | |
+| Known Direct Subclasses [EGLConfig](EGLConfig.md), [EGLContext](EGLContext.md), [EGLDisplay](EGLDisplay.md), [EGLImage](EGLImage.md), [EGLSurface](EGLSurface.md), [EGLSync](EGLSync.md) |----------------------------------------------------------------------------------------|----------------------------------------------| | [EGLConfig](EGLConfig.md) | Wrapper class for native EGLConfig objects. | | [EGLContext](EGLContext.md) | Wrapper class for native EGLContext objects. | | [EGLDisplay](EGLDisplay.md) | Wrapper class for native EGLDisplay objects. | | [EGLImage](EGLImage.md) | Wrapper class for native EGLImage objects. | | [EGLSurface](EGLSurface.md) | Wrapper class for native EGLSurface objects. | | [EGLSync](EGLSync.md) | Wrapper class for native EGLSync objects. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Base class for wrapped EGL objects.
@@ -24,14 +24,14 @@ Base class for wrapped EGL objects.
 
 | Protected constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [EGLObjectHandle](../android/opengl/EGLObjectHandle.md))`(`handle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| [EGLObjectHandle](../android/opengl/EGLObjectHandle.md))`(`handle:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` <br /> |
+| [EGLObjectHandle](EGLObjectHandle.md))`(`handle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [EGLObjectHandle](EGLObjectHandle.md))`(`handle:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` <br /> |
 
 | Public methods ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHandle](../android/opengl/EGLObjectHandle.md))`()` <br /> |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getNativeHandle](../android/opengl/EGLObjectHandle.md))`()` Returns the native handle of the wrapped EGL object. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/opengl/EGLObjectHandle.md))`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHandle](EGLObjectHandle.md))`()` <br /> |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getNativeHandle](EGLObjectHandle.md))`()` Returns the native handle of the wrapped EGL object. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](EGLObjectHandle.md))`()` <br /> |
 | --- | --- |
 
 ## Protected constructors
@@ -44,7 +44,7 @@ Added in [API level 17](https://developer.android.com/guide/topics/manifest/uses
 protected EGLObjectHandle(handle: Int)
 ```
 
-**Deprecated:** *Use [EGLObjectHandle(long)](../android/opengl/EGLObjectHandle.md))instead. Handles on 64 bit platforms will be wider than java ints.* 
+**Deprecated:** *Use [EGLObjectHandle(long)](EGLObjectHandle.md))instead. Handles on 64 bit platforms will be wider than java ints.* 
 
 ### EGLObjectHandle
 
@@ -65,7 +65,7 @@ Deprecated in [API level 21](https://developer.android.com/guide/topics/manifest
 open fun getHandle(): Int
 ```
 
-**Deprecated:** *Use [getNativeHandle()](../android/opengl/EGLObjectHandle.md))instead. Handles on 64 bit platforms will be wider than java ints.* 
+**Deprecated:** *Use [getNativeHandle()](EGLObjectHandle.md))instead. Handles on 64 bit platforms will be wider than java ints.* 
 
 ### getNativeHandle
 

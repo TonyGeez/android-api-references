@@ -5,14 +5,14 @@ Deprecated in [API level 24](https://developer.android.com/guide/topics/manifest
 
 # Smoke
 
-Kotlin| [Java](../android/test/suitebuilder/annotation/Smoke.md) 
+Kotlin| [Java](Smoke.md) 
 | --- | --- |
 
 ```
 @Target([AnnotationTarget.FUNCTION, AnnotationTarget.PROPERTY_GETTER, AnnotationTarget.PROPERTY_SETTER, AnnotationTarget.CLASS, AnnotationTarget.FILE]) class Smoke
 ```
 
-| [android.test.suitebuilder.annotation.Smoke](../android/test/suitebuilder/annotation/Smoke.md) |
+| [android.test.suitebuilder.annotation.Smoke](Smoke.md) |
 
 | **This annotation was deprecated in API level 24.**
 |
@@ -24,7 +24,7 @@ Marks a test that should run as part of the smoke tests. The`android.test.suiteb
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Smoke](../android/test/suitebuilder/annotation/Smoke.md))`()` Marks a test that should run as part of the smoke tests. |
+| [Smoke](Smoke.md))`()` Marks a test that should run as part of the smoke tests. |
 
 ## Public constructors
 

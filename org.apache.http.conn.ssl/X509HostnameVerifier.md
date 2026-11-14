@@ -7,12 +7,12 @@ Deprecated in [API level 22](https://developer.android.com/guide/topics/manifest
 interface X509HostnameVerifier : HostnameVerifier
 ```
 
-| [org.apache.http.conn.ssl.X509HostnameVerifier](../org/apache/http/conn/ssl/X509HostnameVerifier.md) |
+| [org.apache.http.conn.ssl.X509HostnameVerifier](X509HostnameVerifier.md) |
 
-| Known Direct Subclasses [AbstractVerifier](../org/apache/http/conn/ssl/AbstractVerifier.md) |---|---| | [AbstractVerifier](../org/apache/http/conn/ssl/AbstractVerifier.md) | Abstract base class for all standard `https://developer.android.com/reference/kotlin/org/apache/http/conn/ssl/X509HostnameVerifier#` implementations. | |
+| Known Direct Subclasses [AbstractVerifier](AbstractVerifier.md) |---|---| | [AbstractVerifier](AbstractVerifier.md) | Abstract base class for all standard `https://developer.android.com/reference/kotlin/org/apache/http/conn/ssl/X509HostnameVerifier#` implementations. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [AllowAllHostnameVerifier](../org/apache/http/conn/ssl/AllowAllHostnameVerifier.md), [BrowserCompatHostnameVerifier](../org/apache/http/conn/ssl/BrowserCompatHostnameVerifier.md), [StrictHostnameVerifier](../org/apache/http/conn/ssl/StrictHostnameVerifier.md) |---|---| | [AllowAllHostnameVerifier](../org/apache/http/conn/ssl/AllowAllHostnameVerifier.md) | The ALLOW_ALL HostnameVerifier essentially turns hostname verification off. | | [BrowserCompatHostnameVerifier](../org/apache/http/conn/ssl/BrowserCompatHostnameVerifier.md) | The HostnameVerifier that works the same way as Curl and Firefox. | | [StrictHostnameVerifier](../org/apache/http/conn/ssl/StrictHostnameVerifier.md) | The Strict HostnameVerifier works the same way as Sun Java 1. | |
+| Known Indirect Subclasses [AllowAllHostnameVerifier](AllowAllHostnameVerifier.md), [BrowserCompatHostnameVerifier](BrowserCompatHostnameVerifier.md), [StrictHostnameVerifier](StrictHostnameVerifier.md) |---|---| | [AllowAllHostnameVerifier](AllowAllHostnameVerifier.md) | The ALLOW_ALL HostnameVerifier essentially turns hostname verification off. | | [BrowserCompatHostnameVerifier](BrowserCompatHostnameVerifier.md) | The HostnameVerifier that works the same way as Curl and Firefox. | | [StrictHostnameVerifier](StrictHostnameVerifier.md) | The Strict HostnameVerifier works the same way as Sun Java 1. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | **This interface was deprecated in API level 22.**
@@ -99,7 +99,7 @@ Verify that the host name is an acceptable match with the server's authenticatio
 | Parameters ||
 |---|---|
 | `hostname` | the host name |
-| `session` | [SSLSession](../javax/net/ssl/SSLSession.md)!: SSLSession used on the connection to host |
+| `session` | [SSLSession](../javax.net.ssl/SSLSession.md)!: SSLSession used on the connection to host |
 
 | Return ||
 |---|---|

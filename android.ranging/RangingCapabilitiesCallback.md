@@ -21,7 +21,7 @@ This interface is used to asynchronously provide information about the supported
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onRangingCapabilities](../android/ranging/RangingManager.RangingCapabilitiesCallback.md))`(`capabilities:` ` [RangingCapabilities](../android/ranging/RangingCapabilities.md)`)` Called when the ranging capabilities are available. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onRangingCapabilities](../android/ranging/RangingManager.RangingCapabilitiesCallback.md))`(`capabilities:` ` [RangingCapabilities](RangingCapabilities.md)`)` Called when the ranging capabilities are available. |
 
 ## Public methods
 
@@ -37,4 +37,4 @@ Called when the ranging capabilities are available.
 
 | Parameters ||
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `capabilities` | [RangingCapabilities](../android/ranging/RangingCapabilities.md):the [RangingCapabilities](../android/ranging/RangingCapabilities.md) object containing detailed information about the supported features and limitations of the ranging technology. This value cannot be`null`. |
+| `capabilities` | [RangingCapabilities](RangingCapabilities.md):the [RangingCapabilities](RangingCapabilities.md) object containing detailed information about the supported features and limitations of the ranging technology. This value cannot be`null`. |

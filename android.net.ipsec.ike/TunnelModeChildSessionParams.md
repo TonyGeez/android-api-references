@@ -2,7 +2,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # TunnelModeChildSessionParams
 
-Kotlin | [Java](../android/net/ipsec/ike/TunnelModeChildSessionParams.md)
+Kotlin | [Java](TunnelModeChildSessionParams.md)
 | --- | --- |
 
 ```
@@ -11,8 +11,8 @@ class TunnelModeChildSessionParams : ChildSessionParams
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.net.ipsec.ike.ChildSessionParams](../android/net/ipsec/ike/ChildSessionParams.md) ||
-| | ↳ | [android.net.ipsec.ike.TunnelModeChildSessionParams](../android/net/ipsec/ike/TunnelModeChildSessionParams.md) |
+| ↳ | [android.net.ipsec.ike.ChildSessionParams](ChildSessionParams.md) ||
+| | ↳ | [android.net.ipsec.ike.TunnelModeChildSessionParams](TunnelModeChildSessionParams.md) |
 
 TunnelModeChildSessionParams represents proposed configurations for negotiating a tunnel mode Child Session.
 

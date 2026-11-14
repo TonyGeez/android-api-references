@@ -17,11 +17,11 @@ interface OnGestureListener
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onGesture](../android/gesture/GestureOverlayView.OnGestureListener.md))`(`overlay:` ` [GestureOverlayView](../android/gesture/GestureOverlayView.md)!`, `event:` ` [MotionEvent](../android/view/MotionEvent.md)!`)` <br /> |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onGestureCancelled](../android/gesture/GestureOverlayView.OnGestureListener.md))`(`overlay:` ` [GestureOverlayView](../android/gesture/GestureOverlayView.md)!`, `event:` ` [MotionEvent](../android/view/MotionEvent.md)!`)` <br /> |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onGestureEnded](../android/gesture/GestureOverlayView.OnGestureListener.md))`(`overlay:` ` [GestureOverlayView](../android/gesture/GestureOverlayView.md)!`, `event:` ` [MotionEvent](../android/view/MotionEvent.md)!`)` <br /> |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onGesture](../android/gesture/GestureOverlayView.OnGestureListener.md))`(`overlay:` ` [GestureOverlayView](GestureOverlayView.md)!`, `event:` ` [MotionEvent](../android.view/MotionEvent.md)!`)` <br /> |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onGestureCancelled](../android/gesture/GestureOverlayView.OnGestureListener.md))`(`overlay:` ` [GestureOverlayView](GestureOverlayView.md)!`, `event:` ` [MotionEvent](../android.view/MotionEvent.md)!`)` <br /> |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onGestureEnded](../android/gesture/GestureOverlayView.OnGestureListener.md))`(`overlay:` ` [GestureOverlayView](GestureOverlayView.md)!`, `event:` ` [MotionEvent](../android.view/MotionEvent.md)!`)` <br /> |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onGestureStarted](../android/gesture/GestureOverlayView.OnGestureListener.md))`(`overlay:` ` [GestureOverlayView](../android/gesture/GestureOverlayView.md)!`, `event:` ` [MotionEvent](../android/view/MotionEvent.md)!`)` <br /> |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onGestureStarted](../android/gesture/GestureOverlayView.OnGestureListener.md))`(`overlay:` ` [GestureOverlayView](GestureOverlayView.md)!`, `event:` ` [MotionEvent](../android.view/MotionEvent.md)!`)` <br /> |
 
 ## Public methods
 

@@ -4,7 +4,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 
 # NumberRangeFormatter
 
-Kotlin| [Java](../android/icu/number/NumberRangeFormatter.md) 
+Kotlin| [Java](NumberRangeFormatter.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ abstract class NumberRangeFormatter
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.icu.number.NumberRangeFormatter](../android/icu/number/NumberRangeFormatter.md) |
+| ↳ | [android.icu.number.NumberRangeFormatter](NumberRangeFormatter.md) |
 
 The main entrypoint to the formatting of ranges of numbers, including currencies and other units of measurement.
 
@@ -44,9 +44,9 @@ Like NumberFormatter, NumberRangeFormatter instances (i.e., LocalizedNumberRange
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [UnlocalizedNumberRangeFormatter](../android/icu/number/UnlocalizedNumberRangeFormatter.md)! | [with](../android/icu/number/NumberRangeFormatter.md))`()` Call this method at the beginning of a NumberRangeFormatter fluent chain in which the locale is not currently known at the call site. |
-| openstatic [LocalizedNumberRangeFormatter](../android/icu/number/LocalizedNumberRangeFormatter.md)! | [withLocale](../android/icu/number/NumberRangeFormatter.md))`(`locale:` ` [ULocale](../android/icu/util/ULocale.md)!`)` Call this method at the beginning of a NumberRangeFormatter fluent chain in which the locale is known at the call site. |
-| openstatic [LocalizedNumberRangeFormatter](../android/icu/number/LocalizedNumberRangeFormatter.md)! | [withLocale](../android/icu/number/NumberRangeFormatter.md))`(`locale:` ` [Locale](../java/util/Locale.md)!`)` Call this method at the beginning of a NumberRangeFormatter fluent chain in which the locale is known at the call site. |
+| openstatic [UnlocalizedNumberRangeFormatter](UnlocalizedNumberRangeFormatter.md)! | [with](NumberRangeFormatter.md))`()` Call this method at the beginning of a NumberRangeFormatter fluent chain in which the locale is not currently known at the call site. |
+| openstatic [LocalizedNumberRangeFormatter](LocalizedNumberRangeFormatter.md)! | [withLocale](NumberRangeFormatter.md))`(`locale:` ` [ULocale](../android.icu.util/ULocale.md)!`)` Call this method at the beginning of a NumberRangeFormatter fluent chain in which the locale is known at the call site. |
+| openstatic [LocalizedNumberRangeFormatter](LocalizedNumberRangeFormatter.md)! | [withLocale](NumberRangeFormatter.md))`(`locale:` ` [Locale](../java.util/Locale.md)!`)` Call this method at the beginning of a NumberRangeFormatter fluent chain in which the locale is known at the call site. |
 | --- | --- |
 
 ## Public methods
@@ -63,7 +63,7 @@ Call this method at the beginning of a NumberRangeFormatter fluent chain in whic
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [UnlocalizedNumberRangeFormatter](../android/icu/number/UnlocalizedNumberRangeFormatter.md)! | An [UnlocalizedNumberRangeFormatter](../android/icu/number/UnlocalizedNumberRangeFormatter.md), to be used for chaining. |
+| [UnlocalizedNumberRangeFormatter](UnlocalizedNumberRangeFormatter.md)! | An [UnlocalizedNumberRangeFormatter](UnlocalizedNumberRangeFormatter.md), to be used for chaining. |
 
 ### withLocale
 
@@ -77,11 +77,11 @@ Call this method at the beginning of a NumberRangeFormatter fluent chain in whic
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `locale` | [ULocale](../android/icu/util/ULocale.md)!:The locale from which to load formats and symbols for number range formatting. |
+| `locale` | [ULocale](../android.icu.util/ULocale.md)!:The locale from which to load formats and symbols for number range formatting. |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [LocalizedNumberRangeFormatter](../android/icu/number/LocalizedNumberRangeFormatter.md)! | A [LocalizedNumberRangeFormatter](../android/icu/number/LocalizedNumberRangeFormatter.md), to be used for chaining. |
+| [LocalizedNumberRangeFormatter](LocalizedNumberRangeFormatter.md)! | A [LocalizedNumberRangeFormatter](LocalizedNumberRangeFormatter.md), to be used for chaining. |
 
 ### withLocale
 
@@ -95,8 +95,8 @@ Call this method at the beginning of a NumberRangeFormatter fluent chain in whic
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `locale` | [Locale](../java/util/Locale.md)!:The locale from which to load formats and symbols for number range formatting. |
+| `locale` | [Locale](../java.util/Locale.md)!:The locale from which to load formats and symbols for number range formatting. |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [LocalizedNumberRangeFormatter](../android/icu/number/LocalizedNumberRangeFormatter.md)! | A [LocalizedNumberRangeFormatter](../android/icu/number/LocalizedNumberRangeFormatter.md), to be used for chaining. |
+| [LocalizedNumberRangeFormatter](LocalizedNumberRangeFormatter.md)! | A [LocalizedNumberRangeFormatter](LocalizedNumberRangeFormatter.md), to be used for chaining. |

@@ -8,7 +8,7 @@ open class WifiAwareSession : AutoCloseable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.wifi.aware.WifiAwareSession](../android/net/wifi/aware/WifiAwareSession.md) |
+| ↳ | [android.net.wifi.aware.WifiAwareSession](WifiAwareSession.md) |
 
 This class represents a Wi-Fi Aware session - an attachment to the Wi-Fi Aware service through which the app can execute discovery operations.
 
@@ -17,8 +17,8 @@ This class represents a Wi-Fi Aware session - an attachment to the Wi-Fi Aware s
 | Public methods ||
 |---|---|
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareSession#close()()` Destroy the Wi-Fi Aware service session and, if no other applications are attached to Aware, also disable Aware. |
-| open [NetworkSpecifier](../android/net/NetworkSpecifier.md)! | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareSession#createNetworkSpecifierOpen(kotlin.Int,%20kotlin.ByteArray)(role: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, peer: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)` Create a `https://developer.android.com/reference/kotlin/android/net/NetworkRequest.Builder.html#setNetworkSpecifier(android.net.NetworkSpecifier)` for an unencrypted WiFi Aware connection (link) to the specified peer. |
-| open [NetworkSpecifier](../android/net/NetworkSpecifier.md)! | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareSession#createNetworkSpecifierPassphrase(kotlin.Int,%20kotlin.ByteArray,%20kotlin.String)(role: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, peer: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html, passphrase: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Create a `https://developer.android.com/reference/kotlin/android/net/NetworkRequest.Builder.html#setNetworkSpecifier(android.net.NetworkSpecifier)` for an encrypted WiFi Aware connection (link) to the specified peer. |
+| open [NetworkSpecifier](../android.net/NetworkSpecifier.md)! | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareSession#createNetworkSpecifierOpen(kotlin.Int,%20kotlin.ByteArray)(role: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, peer: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)` Create a `https://developer.android.com/reference/kotlin/android/net/NetworkRequest.Builder.html#setNetworkSpecifier(android.net.NetworkSpecifier)` for an unencrypted WiFi Aware connection (link) to the specified peer. |
+| open [NetworkSpecifier](../android.net/NetworkSpecifier.md)! | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareSession#createNetworkSpecifierPassphrase(kotlin.Int,%20kotlin.ByteArray,%20kotlin.String)(role: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, peer: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html, passphrase: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Create a `https://developer.android.com/reference/kotlin/android/net/NetworkRequest.Builder.html#setNetworkSpecifier(android.net.NetworkSpecifier)` for an encrypted WiFi Aware connection (link) to the specified peer. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareSession#publish(android.net.wifi.aware.PublishConfig,%20android.net.wifi.aware.DiscoverySessionCallback,%20android.os.Handler)(publishConfig: https://developer.android.com/reference/kotlin/android/net/wifi/aware/PublishConfig, callback: https://developer.android.com/reference/kotlin/android/net/wifi/aware/DiscoverySessionCallback, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#?)` Issue a request to the Aware service to create a new Aware publish discovery session, using the specified `publishConfig` configuration. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareSession#subscribe(android.net.wifi.aware.SubscribeConfig,%20android.net.wifi.aware.DiscoverySessionCallback,%20android.os.Handler)(subscribeConfig: https://developer.android.com/reference/kotlin/android/net/wifi/aware/SubscribeConfig, callback: https://developer.android.com/reference/kotlin/android/net/wifi/aware/DiscoverySessionCallback, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#?)` Issue a request to the Aware service to create a new Aware subscribe discovery session, using the specified `subscribeConfig` configuration. |
@@ -133,9 +133,9 @@ If targeting `https://developer.android.com/reference/kotlin/android/os/Build.VE
 
 | Parameters ||
 |---|---|
-| `publishConfig` | [PublishConfig](../android/net/wifi/aware/PublishConfig.md): The `https://developer.android.com/reference/kotlin/android/net/wifi/aware/PublishConfig` specifying the configuration of the requested publish session. This value cannot be `null`. |
-| `callback` | [DiscoverySessionCallback](../android/net/wifi/aware/DiscoverySessionCallback.md): A `https://developer.android.com/reference/kotlin/android/net/wifi/aware/DiscoverySessionCallback` derived object to be used for session event callbacks. This value cannot be `null`. |
-| `handler` | [Handler](../android/os/Handler.md)?: The Handler on whose thread to execute the callbacks of the `callback` object. If a null is provided then the application's main thread will be used. |
+| `publishConfig` | [PublishConfig](PublishConfig.md): The `https://developer.android.com/reference/kotlin/android/net/wifi/aware/PublishConfig` specifying the configuration of the requested publish session. This value cannot be `null`. |
+| `callback` | [DiscoverySessionCallback](DiscoverySessionCallback.md): A `https://developer.android.com/reference/kotlin/android/net/wifi/aware/DiscoverySessionCallback` derived object to be used for session event callbacks. This value cannot be `null`. |
+| `handler` | [Handler](../android.os/Handler.md)?: The Handler on whose thread to execute the callbacks of the `callback` object. If a null is provided then the application's main thread will be used. |
 | --- | --- |
 
 ### subscribe
@@ -167,9 +167,9 @@ If targeting `https://developer.android.com/reference/kotlin/android/os/Build.VE
 
 | Parameters ||
 |---|---|
-| `subscribeConfig` | [SubscribeConfig](../android/net/wifi/aware/SubscribeConfig.md): The `https://developer.android.com/reference/kotlin/android/net/wifi/aware/SubscribeConfig` specifying the configuration of the requested subscribe session. This value cannot be `null`. |
-| `callback` | [DiscoverySessionCallback](../android/net/wifi/aware/DiscoverySessionCallback.md): A `https://developer.android.com/reference/kotlin/android/net/wifi/aware/DiscoverySessionCallback` derived object to be used for session event callbacks. This value cannot be `null`. |
-| `handler` | [Handler](../android/os/Handler.md)?: The Handler on whose thread to execute the callbacks of the `callback` object. If a null is provided then the application's main thread will be used. |
+| `subscribeConfig` | [SubscribeConfig](SubscribeConfig.md): The `https://developer.android.com/reference/kotlin/android/net/wifi/aware/SubscribeConfig` specifying the configuration of the requested subscribe session. This value cannot be `null`. |
+| `callback` | [DiscoverySessionCallback](DiscoverySessionCallback.md): A `https://developer.android.com/reference/kotlin/android/net/wifi/aware/DiscoverySessionCallback` derived object to be used for session event callbacks. This value cannot be `null`. |
+| `handler` | [Handler](../android.os/Handler.md)?: The Handler on whose thread to execute the callbacks of the `callback` object. If a null is provided then the application's main thread will be used. |
 | --- | --- |
 
 ## Protected methods

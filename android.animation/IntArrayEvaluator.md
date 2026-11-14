@@ -4,7 +4,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 
 # IntArrayEvaluator
 
-Kotlin| [Java](../android/animation/IntArrayEvaluator.md) 
+Kotlin| [Java](IntArrayEvaluator.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class IntArrayEvaluator : TypeEvaluator<IntArray!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.animation.IntArrayEvaluator](../android/animation/IntArrayEvaluator.md) |
+| ↳ | [android.animation.IntArrayEvaluator](IntArrayEvaluator.md) |
 
 This evaluator can be used to perform type interpolation between`int[]`values. Each index into the array is treated as a separate value to interpolate. For example, evaluating`{100, 200}`and`{300, 400}`will interpolate the value at the first index between 100 and 300 and the value at the second index value between 200 and 400.
 
@@ -21,12 +21,12 @@ This evaluator can be used to perform type interpolation between`int[]`values. E
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [IntArrayEvaluator](../android/animation/IntArrayEvaluator.md))`()` Create an IntArrayEvaluator that does not reuse the animated value. |
-| [IntArrayEvaluator](../android/animation/IntArrayEvaluator.md))`(`reuseArray:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` Create an IntArrayEvaluator that reuses`reuseArray`for every evaluate() call. |
+| [IntArrayEvaluator](IntArrayEvaluator.md))`()` Create an IntArrayEvaluator that does not reuse the animated value. |
+| [IntArrayEvaluator](IntArrayEvaluator.md))`(`reuseArray:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` Create an IntArrayEvaluator that reuses`reuseArray`for every evaluate() call. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | [evaluate](../android/animation/IntArrayEvaluator.md))`(`fraction:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `startValue:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `endValue:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` Interpolates the value at each index by the fraction. |
+| open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | [evaluate](IntArrayEvaluator.md))`(`fraction:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `startValue:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `endValue:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` Interpolates the value at each index by the fraction. |
 
 ## Public constructors
 
@@ -51,7 +51,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 IntArrayEvaluator(reuseArray: IntArray!)
 ```
 
-Create an IntArrayEvaluator that reuses`reuseArray`for every evaluate() call. Caution must be taken to ensure that the value returned from [android.animation.ValueAnimator#getAnimatedValue()](../android/animation/ValueAnimator.md))is not cached, modified, or used across threads. The value will be modified on each`evaluate()`call.
+Create an IntArrayEvaluator that reuses`reuseArray`for every evaluate() call. Caution must be taken to ensure that the value returned from [android.animation.ValueAnimator#getAnimatedValue()](ValueAnimator.md))is not cached, modified, or used across threads. The value will be modified on each`evaluate()`call.
 
 | Parameters ||
 |--------------|---------------------------------------------------------------------------------------------------------------------------------------|

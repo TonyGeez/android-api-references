@@ -8,11 +8,11 @@ open class WebView : AbsoluteLayout, ViewGroup.OnHierarchyChangeListener, View
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.view.View](../android/view/View.md) ||||
-| | ↳ | [android.view.ViewGroup](../android/view/ViewGroup.md) |||
-| | | ↳ | [android.widget.AbsoluteLayout](../android/widget/AbsoluteLayout.md) ||
+| ↳ | [android.view.View](../android.view/View.md) ||||
+| | ↳ | [android.view.ViewGroup](../android.view/ViewGroup.md) |||
+| | | ↳ | [android.widget.AbsoluteLayout](../android.widget/AbsoluteLayout.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.webkit.WebView](../android/webkit/WebView.md) |
+| | | | ↳ | [android.webkit.WebView](WebView.md) |
 
 A View that displays web pages.
 
@@ -659,7 +659,7 @@ Hint indicating that this view can be autofilled with a credit card expiration d
 
 It should be used when the credit card expiration date is represented by just one view; if it is represented by more than one (for example, one view for the month and another view for the year), then each of these views should use the hint specific for the unit (`https://developer.android.com/reference/kotlin/android/view/View.html#AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DAY:kotlin.String`, `https://developer.android.com/reference/kotlin/android/view/View.html#AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_MONTH:kotlin.String`, or `https://developer.android.com/reference/kotlin/android/view/View.html#AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_YEAR:kotlin.String`).
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DATE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DATE}`).
 
 When annotating a view with this hint, it's recommended to use a date autofill value to avoid ambiguity when the autofill service provides a value for it. To understand why a value can be ambiguous, consider "April of 2020", which could be represented as either of the following options:
 
@@ -684,7 +684,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card expiration day.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DAY}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DAY}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -694,7 +694,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card expiration month.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_MONTH}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_MONTH}`).
 
 When annotating a view with this hint, it's recommended to use a text autofill value whose value is the numerical representation of the month, starting on `1` to avoid ambiguity when the autofill service provides a value for it. To understand why a value can be ambiguous, consider "January", which could be represented as either of
 
@@ -714,7 +714,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card expiration year.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_YEAR}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_YEAR}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -724,7 +724,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card number.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_NUMBER}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_NUMBER}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -734,7 +734,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card security code.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_SECURITY_CODE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_SECURITY_CODE}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -744,7 +744,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with an email address.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_EMAIL_ADDRESS}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_EMAIL_ADDRESS}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -754,7 +754,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a user's real name.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_NAME}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_NAME}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -764,7 +764,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a password.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_PASSWORD}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_PASSWORD}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -774,7 +774,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a phone number.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_PHONE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_PHONE}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -784,7 +784,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a postal address.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_ADDRESS}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_ADDRESS}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -794,7 +794,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a postal code.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_CODE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_CODE}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -804,7 +804,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a username.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_USERNAME}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_USERNAME}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -974,7 +974,7 @@ Find views that render the specified text.
 
 This view wants keystrokes.
 
-Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android/view/View.md)
+Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android.view/View.md)
 
 <br />
 
@@ -994,7 +994,7 @@ View flag indicating whether `https://developer.android.com/reference/kotlin/and
 
 This view determines focusability automatically. This is the default.
 
-Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android/view/View.md)
+Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android.view/View.md)
 
 <br />
 
@@ -1036,7 +1036,7 @@ Use with `https://developer.android.com/reference/kotlin/android/view/View.html#
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/view/View.html#GONE:kotlin.Int`
 
-This view is invisible, and it doesn't take any space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android/view/View.md)
+This view is invisible, and it doesn't take any space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android.view/View.md)
 
 <br />
 
@@ -1132,7 +1132,7 @@ The view is important for content capture, but its children (if any) will not be
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/view/View.html#INVISIBLE:kotlin.Int`
 
-This view is invisible, but it still takes up space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android/view/View.md)
+This view is invisible, but it still takes up space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android.view/View.md)
 
 <br />
 
@@ -1226,7 +1226,7 @@ Bit of `https://developer.android.com/reference/kotlin/android/view/View.html#ge
 
 This view does not want keystrokes.
 
-Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android/view/View.md)
+Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android.view/View.md)
 
 <br />
 
@@ -1683,7 +1683,7 @@ The logging tag used by this class with android.util.Log.
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/view/View.html#VISIBLE:kotlin.Int`
 
-This view is visible. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android/view/View.md)
+This view is visible. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android.view/View.md)
 
 <br />
 
@@ -1766,7 +1766,7 @@ Used to indicate that the scrolling drawing cache should be kept in memory.
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#canZoomIn()()` Gets whether this WebView can be zoomed in. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#canZoomOut()()` Gets whether this WebView can be zoomed out. |
-| open [Picture](../android/graphics/Picture.md)! | `https://developer.android.com/reference/kotlin/android/webkit/WebView#capturePicture()()` Gets a new picture that captures the current contents of this WebView. |
+| open [Picture](../android.graphics/Picture.md)! | `https://developer.android.com/reference/kotlin/android/webkit/WebView#capturePicture()()` Gets a new picture that captures the current contents of this WebView. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#clearCache(kotlin.Boolean)(includeDiskFiles: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Clears the resource cache. |
 | --- | --- |
 | open static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#clearClientCertPreferences(java.lang.Runnable)(onCleared: https://developer.android.com/reference/kotlin/java/lang/Runnable.html#?)` Clears the client certificate preferences stored in response to proceeding/cancelling client cert requests. |
@@ -1778,11 +1778,11 @@ Used to indicate that the scrolling drawing cache should be kept in memory.
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#clearView()()` Clears this WebView so that onDraw() will draw nothing but white background, and onMeasure() will return 0 if MeasureSpec is not MeasureSpec. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#computeScroll()()` Called by a parent to request that a child update its values for mScrollX and mScrollY if necessary. |
-| open [WebBackForwardList](../android/webkit/WebBackForwardList.md) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#copyBackForwardList()()` Gets the WebBackForwardList for this WebView. |
-| open [PrintDocumentAdapter](../android/print/PrintDocumentAdapter.md)! | `https://developer.android.com/reference/kotlin/android/webkit/WebView#createPrintDocumentAdapter()()` This method must be called on the thread that originally created this UI element. |
+| open [WebBackForwardList](WebBackForwardList.md) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#copyBackForwardList()()` Gets the WebBackForwardList for this WebView. |
+| open [PrintDocumentAdapter](../android.print/PrintDocumentAdapter.md)! | `https://developer.android.com/reference/kotlin/android/webkit/WebView#createPrintDocumentAdapter()()` This method must be called on the thread that originally created this UI element. |
 | --- | --- |
-| open [PrintDocumentAdapter](../android/print/PrintDocumentAdapter.md) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#createPrintDocumentAdapter(kotlin.String)(documentName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Creates a PrintDocumentAdapter that provides the content of this WebView for printing. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [WebMessagePort](../android/webkit/WebMessagePort.md)!\> | `https://developer.android.com/reference/kotlin/android/webkit/WebView#createWebMessageChannel()()` Creates a message channel to communicate with JS and returns the message ports that represent the endpoints of this message channel. |
+| open [PrintDocumentAdapter](../android.print/PrintDocumentAdapter.md) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#createPrintDocumentAdapter(kotlin.String)(documentName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Creates a PrintDocumentAdapter that provides the content of this WebView for printing. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [WebMessagePort](WebMessagePort.md)!\> | `https://developer.android.com/reference/kotlin/android/webkit/WebView#createWebMessageChannel()()` Creates a message channel to communicate with JS and returns the message ports that represent the endpoints of this message channel. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#destroy()()` Destroys the internal state of this WebView. |
 | --- | --- |
 | open static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#disableWebView()()` Indicate that the current process does not intend to use WebView, and that an exception should be thrown if a WebView is created or any other methods in the android. |
@@ -1797,20 +1797,20 @@ Used to indicate that the scrolling drawing cache should be kept in memory.
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#findAll(kotlin.String)(find: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Finds all instances of find on the page and highlights them. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#findAllAsync(kotlin.String)(find: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Finds all instances of find on the page and highlights them, asynchronously. |
 | --- | --- |
-| open [View](../android/view/View.md)! | `https://developer.android.com/reference/kotlin/android/webkit/WebView#findFocus()()` Find the view in the hierarchy rooted at this view that currently has focus. |
+| open [View](../android.view/View.md)! | `https://developer.android.com/reference/kotlin/android/webkit/WebView#findFocus()()` Find the view in the hierarchy rooted at this view that currently has focus. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#findNext(kotlin.Boolean)(forward: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Highlights and scrolls to the next match found by `https://developer.android.com/reference/kotlin/android/webkit/WebView#findAllAsync(kotlin.String)`, wrapping around page boundaries as necessary. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#flingScroll(kotlin.Int,%20kotlin.Int)(vx: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, vy: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` This method must be called on the thread that originally created this UI element. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#freeMemory()()` Informs this WebView that memory is low so that it can free any available memory. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getAccessibilityClassName()()` Return the class name of this object to be used for accessibility purposes. |
-| open [AccessibilityNodeProvider](../android/view/accessibility/AccessibilityNodeProvider.md)! | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getAccessibilityNodeProvider()()` Gets the provider for managing a virtual view hierarchy rooted at this View and reported to `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService.html#`s that explore the window content. |
+| open [AccessibilityNodeProvider](../android.view.accessibility/AccessibilityNodeProvider.md)! | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getAccessibilityNodeProvider()()` Gets the provider for managing a virtual view hierarchy rooted at this View and reported to `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService.html#`s that explore the window content. |
 | --- | --- |
-| open [SslCertificate](../android/net/http/SslCertificate.md)? | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getCertificate()()` Gets the SSL certificate for the main top-level page or `null` if there is no certificate (the site is not secure). |
+| open [SslCertificate](../android.net.http/SslCertificate.md)? | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getCertificate()()` Gets the SSL certificate for the main top-level page or `null` if there is no certificate (the site is not secure). |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getContentHeight()()` Gets the height of the HTML content. |
-| open static [PackageInfo](../android/content/pm/PackageInfo.md)? | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getCurrentWebViewPackage()()` If WebView has already been loaded into the current process this method will return the package that was used to load it. |
+| open static [PackageInfo](../android.content.pm/PackageInfo.md)? | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getCurrentWebViewPackage()()` If WebView has already been loaded into the current process this method will return the package that was used to load it. |
 | --- | --- |
-| open [Bitmap](../android/graphics/Bitmap.md)? | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getFavicon()()` Gets the favicon for the current page. |
-| open [Handler](../android/os/Handler.md)! | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getHandler()()` <br /> |
+| open [Bitmap](../android.graphics/Bitmap.md)? | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getFavicon()()` Gets the favicon for the current page. |
+| open [Handler](../android.os/Handler.md)! | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getHandler()()` <br /> |
 | open [WebView.HitTestResult](../android/webkit/WebView.HitTestResult.md) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getHitTestResult()()` Gets a HitTestResult based on the current cursor node. |
 | --- | --- |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getHttpAuthUsernamePassword(kotlin.String,%20kotlin.String)(host: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, realm: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Retrieves HTTP authentication credentials for a given host and realm from the `https://developer.android.com/reference/kotlin/android/webkit/WebViewDatabase` instance. |
@@ -1819,22 +1819,22 @@ Used to indicate that the scrolling drawing cache should be kept in memory.
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getRendererPriorityWaivedWhenNotVisible()()` Return whether this WebView requests a priority of `https://developer.android.com/reference/kotlin/android/webkit/WebView#RENDERER_PRIORITY_WAIVED:kotlin.Int` when not visible. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getRendererRequestedPriority()()` Get the requested renderer priority for this WebView. |
-| open static [Uri](../android/net/Uri.md) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getSafeBrowsingPrivacyPolicyUrl()()` Returns a URL pointing to the privacy policy for Safe Browsing reporting. |
+| open static [Uri](../android.net/Uri.md) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getSafeBrowsingPrivacyPolicyUrl()()` Returns a URL pointing to the privacy policy for Safe Browsing reporting. |
 | --- | --- |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getScale()()` Gets the current scale of this WebView. |
-| open [WebSettings](../android/webkit/WebSettings.md) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getSettings()()` Gets the WebSettings object used to control the settings for this WebView. |
-| open [TextClassifier](../android/view/textclassifier/TextClassifier.md) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getTextClassifier()()` Returns the `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier.html#` used by this WebView. |
+| open [WebSettings](WebSettings.md) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getSettings()()` Gets the WebSettings object used to control the settings for this WebView. |
+| open [TextClassifier](../android.view.textclassifier/TextClassifier.md) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getTextClassifier()()` Returns the `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier.html#` used by this WebView. |
 | --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getTitle()()` Gets the title for the current page. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getUrl()()` Gets the URL for the current page. |
-| open [WebChromeClient](../android/webkit/WebChromeClient.md)? | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getWebChromeClient()()` Gets the chrome handler. |
+| open [WebChromeClient](WebChromeClient.md)? | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getWebChromeClient()()` Gets the chrome handler. |
 | --- | --- |
-| open static [ClassLoader](../java/lang/ClassLoader.md) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getWebViewClassLoader()()` Returns the `https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#` used to load internal WebView classes. |
-| open [WebViewClient](../android/webkit/WebViewClient.md) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getWebViewClient()()` Gets the WebViewClient. |
-| open [Looper](../android/os/Looper.md) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getWebViewLooper()()` Returns the `https://developer.android.com/reference/kotlin/android/os/Looper.html#` corresponding to the thread on which WebView calls must be made. |
+| open static [ClassLoader](../java.lang/ClassLoader.md) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getWebViewClassLoader()()` Returns the `https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#` used to load internal WebView classes. |
+| open [WebViewClient](WebViewClient.md) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getWebViewClient()()` Gets the WebViewClient. |
+| open [Looper](../android.os/Looper.md) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getWebViewLooper()()` Returns the `https://developer.android.com/reference/kotlin/android/os/Looper.html#` corresponding to the thread on which WebView calls must be made. |
 | --- | --- |
-| open [WebViewRenderProcess](../android/webkit/WebViewRenderProcess.md)? | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getWebViewRenderProcess()()` Gets a handle to the WebView renderer process associated with this WebView. |
-| open [WebViewRenderProcessClient](../android/webkit/WebViewRenderProcessClient.md)? | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getWebViewRenderProcessClient()()` Gets the renderer client object associated with this WebView. |
+| open [WebViewRenderProcess](WebViewRenderProcess.md)? | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getWebViewRenderProcess()()` Gets a handle to the WebView renderer process associated with this WebView. |
+| open [WebViewRenderProcessClient](WebViewRenderProcessClient.md)? | `https://developer.android.com/reference/kotlin/android/webkit/WebView#getWebViewRenderProcessClient()()` Gets the renderer client object associated with this WebView. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#goBack()()` Goes back in the history of this WebView. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#goBackOrForward(kotlin.Int)(steps: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Goes to the history item that is the number of steps away from the current item. |
@@ -1849,12 +1849,12 @@ Used to indicate that the scrolling drawing cache should be kept in memory.
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#loadUrl(kotlin.String)(url: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Loads the given URL. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#loadUrl(kotlin.String,%20kotlin.collections.MutableMap)(url: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, additionalHttpHeaders: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>)` Loads the given URL with additional HTTP headers, specified as a map from name to value. |
 | --- | --- |
-| open [WindowInsets](../android/view/WindowInsets.md)! | `https://developer.android.com/reference/kotlin/android/webkit/WebView#onApplyWindowInsets(android.view.WindowInsets)(insets: https://developer.android.com/reference/kotlin/android/view/WindowInsets.html#!)` Called when the view should apply `https://developer.android.com/reference/kotlin/android/view/WindowInsets.html#` according to its internal policy. |
+| open [WindowInsets](../android.view/WindowInsets.md)! | `https://developer.android.com/reference/kotlin/android/webkit/WebView#onApplyWindowInsets(android.view.WindowInsets)(insets: https://developer.android.com/reference/kotlin/android/view/WindowInsets.html#!)` Called when the view should apply `https://developer.android.com/reference/kotlin/android/view/WindowInsets.html#` according to its internal policy. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#onCheckIsTextEditor()()` Check whether the called view is a text editor, in which case it would make sense to automatically display a soft input window for it. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#onChildViewAdded(android.view.View,%20android.view.View)(parent: https://developer.android.com/reference/kotlin/android/view/View.html#!, child: https://developer.android.com/reference/kotlin/android/view/View.html#!)` <br /> |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#onChildViewRemoved(android.view.View,%20android.view.View)(p: https://developer.android.com/reference/kotlin/android/view/View.html#!, child: https://developer.android.com/reference/kotlin/android/view/View.html#!)` <br /> |
-| open [InputConnection](../android/view/inputmethod/InputConnection.md)! | `https://developer.android.com/reference/kotlin/android/webkit/WebView#onCreateInputConnection(android.view.inputmethod.EditorInfo)(outAttrs: https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo.html#!)` Creates a new InputConnection for an InputMethod to interact with the WebView. |
+| open [InputConnection](../android.view.inputmethod/InputConnection.md)! | `https://developer.android.com/reference/kotlin/android/webkit/WebView#onCreateInputConnection(android.view.inputmethod.EditorInfo)(outAttrs: https://developer.android.com/reference/kotlin/android/view/inputmethod/EditorInfo.html#!)` Creates a new InputConnection for an InputMethod to interact with the WebView. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#onCreateVirtualViewTranslationRequests(kotlin.LongArray,%20kotlin.IntArray,%20java.util.function.Consumer)(virtualIds: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html, supportedFormats: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html, requestsCollector: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationRequest.html#!>)` Collects `https://developer.android.com/reference/kotlin/android/view/translation/ViewTranslationRequest.html#`s which represents the content to be translated for the virtual views in the host view. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#onDragEvent(android.view.DragEvent)(event: https://developer.android.com/reference/kotlin/android/view/DragEvent.html#!)` Handles drag events sent by the system following a call to `https://developer.android.com/reference/kotlin/android/view/View.html#startDragAndDrop(android.content.ClipData,%20android.view.View.DragShadowBuilder,%20kotlin.Any,%20kotlin.Int)`. |
@@ -1873,7 +1873,7 @@ Used to indicate that the scrolling drawing cache should be kept in memory.
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#onProvideContentCaptureStructure(android.view.ViewStructure,%20kotlin.Int)(structure: https://developer.android.com/reference/kotlin/android/view/ViewStructure.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Populates a `https://developer.android.com/reference/kotlin/android/view/ViewStructure.html#` for content capture. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#onProvideVirtualStructure(android.view.ViewStructure)(structure: https://developer.android.com/reference/kotlin/android/view/ViewStructure.html#!)` Called when assist structure is being retrieved from a view as part of `https://developer.android.com/reference/kotlin/android/app/Activity.html#onProvideAssistData(android.os.Bundle)` to generate additional virtual structure under this view. |
 | --- | --- |
-| open [PointerIcon](../android/view/PointerIcon.md)? | `https://developer.android.com/reference/kotlin/android/webkit/WebView#onResolvePointerIcon(android.view.MotionEvent,%20kotlin.Int)(event: https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#, pointerIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Resolve the pointer icon that should be used for specified pointer in the motion event. |
+| open [PointerIcon](../android.view/PointerIcon.md)? | `https://developer.android.com/reference/kotlin/android/webkit/WebView#onResolvePointerIcon(android.view.MotionEvent,%20kotlin.Int)(event: https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#, pointerIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Resolve the pointer icon that should be used for specified pointer in the motion event. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#onResume()()` Resumes a WebView after a previous call to `https://developer.android.com/reference/kotlin/android/webkit/WebView#onPause()`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#onStartTemporaryDetach()()` This is called when a container is going to temporarily detach a child, with `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#detachViewFromParent(android.view.View)`. |
 | --- | --- |
@@ -1902,11 +1902,11 @@ Used to indicate that the scrolling drawing cache should be kept in memory.
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#requestFocusNodeHref(android.os.Message)(hrefMsg: https://developer.android.com/reference/kotlin/android/os/Message.html#?)` Requests the anchor or image element URL at the last tapped point. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#requestImageRef(android.os.Message)(msg: https://developer.android.com/reference/kotlin/android/os/Message.html#)` Requests the URL of the image last touched by the user. |
-| open [WebBackForwardList](../android/webkit/WebBackForwardList.md)? | `https://developer.android.com/reference/kotlin/android/webkit/WebView#restoreState(android.os.Bundle)(inState: https://developer.android.com/reference/kotlin/android/os/Bundle.html#)` Restores the state of this WebView from the given Bundle. |
+| open [WebBackForwardList](WebBackForwardList.md)? | `https://developer.android.com/reference/kotlin/android/webkit/WebView#restoreState(android.os.Bundle)(inState: https://developer.android.com/reference/kotlin/android/os/Bundle.html#)` Restores the state of this WebView from the given Bundle. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#resumeTimers()()` Resumes all layout, parsing, and JavaScript timers for all WebViews. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#savePassword(kotlin.String,%20kotlin.String,%20kotlin.String)(host: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, username: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, password: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Sets a username and password pair for the specified host. |
-| open [WebBackForwardList](../android/webkit/WebBackForwardList.md)? | `https://developer.android.com/reference/kotlin/android/webkit/WebView#saveState(android.os.Bundle)(outState: https://developer.android.com/reference/kotlin/android/os/Bundle.html#)` Saves the state of this WebView used in android. |
+| open [WebBackForwardList](WebBackForwardList.md)? | `https://developer.android.com/reference/kotlin/android/webkit/WebView#saveState(android.os.Bundle)(outState: https://developer.android.com/reference/kotlin/android/os/Bundle.html#)` Saves the state of this WebView used in android. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#saveWebArchive(kotlin.String)(filename: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Saves the current view as a web archive. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/WebView#saveWebArchive(kotlin.String,%20kotlin.Boolean,%20android.webkit.ValueCallback)(basename: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, autoname: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, callback: https://developer.android.com/reference/kotlin/android/webkit/ValueCallback<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?)` Saves the current view as a web archive. |
@@ -7705,7 +7705,7 @@ Sets the amount that the view is scaled in Y around the pivot point, as a propor
 
 Sets whether this View should be a focusable element for screen readers and include non-focusable Views from its subtree when providing feedback.
 
-Note: this is similar to using [`android:focusable`, but does not impact input focus behavior.](../android/view/View.md)
+Note: this is similar to using [`android:focusable`, but does not impact input focus behavior.](../android.view/View.md)
 
 <br />
 
@@ -8547,11 +8547,11 @@ WebView(context: Context)
 Constructs a new WebView with an Activity Context object.
 
 **Note:** WebView should always be instantiated with an Activity Context. If instantiated with an Application Context, WebView will be unable to provide several features, such as JavaScript dialogs and autofill. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md): an Activity Context to access application assets. This value cannot be `null`. |
+| `context` | [Context](../android.content/Context.md): an Activity Context to access application assets. This value cannot be `null`. |
 
 ### WebView
 
@@ -8564,12 +8564,12 @@ WebView(
 ```
 
 Constructs a new WebView with layout parameters. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md): an Activity Context to access application assets. This value cannot be `null`. |
-| `attrs` | [AttributeSet](../android/util/AttributeSet.md)?: an AttributeSet passed to our parent. This value may be `null`. |
+| `context` | [Context](../android.content/Context.md): an Activity Context to access application assets. This value cannot be `null`. |
+| `attrs` | [AttributeSet](../android.util/AttributeSet.md)?: an AttributeSet passed to our parent. This value may be `null`. |
 
 ### WebView
 
@@ -8583,12 +8583,12 @@ WebView(
 ```
 
 Constructs a new WebView with layout parameters and a default style. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md): an Activity Context to access application assets. This value cannot be `null`. |
-| `attrs` | [AttributeSet](../android/util/AttributeSet.md)?: an AttributeSet passed to our parent. This value may be `null`. |
+| `context` | [Context](../android.content/Context.md): an Activity Context to access application assets. This value cannot be `null`. |
+| `attrs` | [AttributeSet](../android.util/AttributeSet.md)?: an AttributeSet passed to our parent. This value may be `null`. |
 | `defStyleAttr` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): an attribute in the current theme that contains a reference to a style resource that supplies default values for the view. Can be 0 to not look for defaults. |
 | --- | --- |
 
@@ -8607,12 +8607,12 @@ WebView(
 **Deprecated:** *Private browsing is no longer supported directly via WebView and will be removed in a future release. Prefer using `https://developer.android.com/reference/kotlin/android/webkit/WebSettings`, `https://developer.android.com/reference/kotlin/android/webkit/WebViewDatabase`, `https://developer.android.com/reference/kotlin/android/webkit/CookieManager` and `https://developer.android.com/reference/kotlin/android/webkit/WebStorage` for fine-grained control of privacy data.*
 
 Constructs a new WebView with layout parameters and a default style. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md): an Activity Context to access application assets. This value cannot be `null`. |
-| `attrs` | [AttributeSet](../android/util/AttributeSet.md)?: an AttributeSet passed to our parent. This value may be `null`. |
+| `context` | [Context](../android.content/Context.md): an Activity Context to access application assets. This value cannot be `null`. |
+| `attrs` | [AttributeSet](../android.util/AttributeSet.md)?: an AttributeSet passed to our parent. This value may be `null`. |
 | `defStyleAttr` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): an attribute in the current theme that contains a reference to a style resource that supplies default values for the view. Can be 0 to not look for defaults. |
 | --- | --- |
 | `privateBrowsing` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): whether this WebView will be initialized in private mode |
@@ -8630,12 +8630,12 @@ WebView(
 ```
 
 Constructs a new WebView with layout parameters and a default style. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md): an Activity Context to access application assets. This value cannot be `null`. |
-| `attrs` | [AttributeSet](../android/util/AttributeSet.md)?: an AttributeSet passed to our parent. This value may be `null`. |
+| `context` | [Context](../android.content/Context.md): an Activity Context to access application assets. This value cannot be `null`. |
+| `attrs` | [AttributeSet](../android.util/AttributeSet.md)?: an AttributeSet passed to our parent. This value may be `null`. |
 | `defStyleAttr` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): an attribute in the current theme that contains a reference to a style resource that supplies default values for the view. Can be 0 to not look for defaults. |
 | --- | --- |
 | `defStyleRes` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): a resource identifier of a style resource that supplies default values for the view, used only if defStyleAttr is 0 or can not be found in the theme. Can be 0 to not look for defaults. |
@@ -8677,7 +8677,7 @@ class JsObject {
 - For applications targeted to API level `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#LOLLIPOP:kotlin.Int` and above, methods of injected Java objects are enumerable from JavaScript.
 
 . 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Parameters ||
 |---|---|
@@ -8707,7 +8707,7 @@ If a child value is updated asynchronously, the next call to `https://developer.
 
 | Parameters ||
 |---|---|
-| `values` | [SparseArray](../android/util/SparseArray.md)\< [AutofillValue](../android/view/autofill/AutofillValue.md)!\>: map of values to be autofilled, keyed by virtual child id. This value cannot be `null`. |
+| `values` | [SparseArray](../android.util/SparseArray.md)\< [AutofillValue](../android.view.autofill/AutofillValue.md)!\>: map of values to be autofilled, keyed by virtual child id. This value cannot be `null`. |
 
 ### canGoBack
 
@@ -8718,7 +8718,7 @@ open fun canGoBack(): Boolean
 ```
 
 Gets whether this WebView has a back history item. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Return ||
 |---|---|
@@ -8733,7 +8733,7 @@ open fun canGoBackOrForward(steps: Int): Boolean
 ```
 
 Gets whether the page can go back or forward the given number of steps. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Parameters ||
 |---|---|
@@ -8748,7 +8748,7 @@ open fun canGoForward(): Boolean
 ```
 
 Gets whether this WebView has a forward history item. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Return ||
 |---|---|
@@ -8766,7 +8766,7 @@ open fun canZoomIn(): Boolean
 **Deprecated:** *This method is prone to inaccuracy due to race conditions between the web rendering and UI threads; prefer `https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#onScaleChanged(android.webkit.WebView,%20kotlin.Float,%20kotlin.Float)`.*
 
 Gets whether this WebView can be zoomed in. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Return ||
 |---|---|
@@ -8784,7 +8784,7 @@ open fun canZoomOut(): Boolean
 **Deprecated:** *This method is prone to inaccuracy due to race conditions between the web rendering and UI threads; prefer `https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#onScaleChanged(android.webkit.WebView,%20kotlin.Float,%20kotlin.Float)`.*
 
 Gets whether this WebView can be zoomed out. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Return ||
 |---|---|
@@ -8806,7 +8806,7 @@ Gets a new picture that captures the current contents of this WebView. The pictu
 Note that due to internal changes, for API levels between `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#HONEYCOMB:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#ICE_CREAM_SANDWICH:kotlin.Int` inclusive, the picture does not include fixed position elements or scrollable divs.
 
 Note that from `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#JELLY_BEAN_MR1:kotlin.Int` the returned picture should only be drawn into bitmap-backed Canvas - using any other type of Canvas will involve additional conversion at a cost in memory and performance. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Return ||
 |---|---|
@@ -8821,7 +8821,7 @@ open fun clearCache(includeDiskFiles: Boolean): Unit
 ```
 
 Clears the resource cache. Note that the cache is per-application, so this will clear the cache for all WebViews used. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Parameters ||
 |---|---|
@@ -8839,7 +8839,7 @@ Clears the client certificate preferences stored in response to proceeding/cance
 
 | Parameters ||
 |---|---|
-| `onCleared` | [Runnable](../java/lang/Runnable.md)?: A runnable to be invoked when client certs are cleared. The runnable will be called in UI thread. This value may be `null`. |
+| `onCleared` | [Runnable](../java.lang/Runnable.md)?: A runnable to be invoked when client certs are cleared. The runnable will be called in UI thread. This value may be `null`. |
 
 ### clearFormData
 
@@ -8850,7 +8850,7 @@ open fun clearFormData(): Unit
 ```
 
 Removes the autocomplete popup from the currently focused form field, if present. Note this only affects the display of the autocomplete popup, it does not remove any saved form data from this WebView's store. To do that, use `https://developer.android.com/reference/kotlin/android/webkit/WebViewDatabase#clearFormData()`. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 ### clearHistory
 
@@ -8861,7 +8861,7 @@ open fun clearHistory(): Unit
 ```
 
 Tells this WebView to clear its internal back/forward list. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 ### clearMatches
 
@@ -8872,7 +8872,7 @@ open fun clearMatches(): Unit
 ```
 
 Clears the highlighting surrounding text matches created by `https://developer.android.com/reference/kotlin/android/webkit/WebView#findAllAsync(kotlin.String)`. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 ### clearSslPreferences
 
@@ -8883,7 +8883,7 @@ open fun clearSslPreferences(): Unit
 ```
 
 Clears the SSL preferences table stored in response to proceeding with SSL certificate errors. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 ### clearView
 
@@ -8897,7 +8897,7 @@ open fun clearView(): Unit
 **Deprecated:** *Use WebView.loadUrl("about:blank") to reliably reset the view state and release page resources (including any running JavaScript).*
 
 Clears this WebView so that onDraw() will draw nothing but white background, and onMeasure() will return 0 if MeasureSpec is not MeasureSpec.EXACTLY. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 ### computeScroll
 
@@ -8918,7 +8918,7 @@ open fun copyBackForwardList(): WebBackForwardList
 ```
 
 Gets the WebBackForwardList for this WebView. This contains the back/forward list for use in querying each item in the history stack. This is a copy of the private WebBackForwardList so it contains only a snapshot of the current state. Multiple calls to this method may return different objects. The object returned from this method will not be updated to reflect any new state. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Return ||
 |---|---|
@@ -8935,7 +8935,7 @@ open fun createPrintDocumentAdapter(): PrintDocumentAdapter!
 
 **Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/webkit/WebView#createPrintDocumentAdapter(kotlin.String)` which requires user to provide a print document name.*
 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 ### createPrintDocumentAdapter
 
@@ -8946,7 +8946,7 @@ open fun createPrintDocumentAdapter(documentName: String): PrintDocumentAdapter
 ```
 
 Creates a PrintDocumentAdapter that provides the content of this WebView for printing. The adapter works by converting the WebView contents to a PDF stream. The WebView cannot be drawn during the conversion process - any such draws are undefined. It is recommended to use a dedicated off screen WebView for the printing. If necessary, an application may temporarily hide a visible WebView by using a custom PrintDocumentAdapter instance wrapped around the object returned and observing the onStart and onFinish methods. See `https://developer.android.com/reference/kotlin/android/print/PrintDocumentAdapter.html#` for more information. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Parameters ||
 |---|---|
@@ -8967,7 +8967,7 @@ open fun createWebMessageChannel(): Array<WebMessagePort!>
 Creates a message channel to communicate with JS and returns the message ports that represent the endpoints of this message channel. The HTML5 message channel functionality is described [here](https://html.spec.whatwg.org/multipage/comms.html#messagechannel)
 
 The returned message channels are entangled and already in started state. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Return ||
 |---|---|
@@ -8982,7 +8982,7 @@ open fun destroy(): Unit
 ```
 
 Destroys the internal state of this WebView. This method should be called after this WebView has been removed from the view system. No other methods may be called on this WebView after destroy. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 ### disableWebView
 
@@ -9022,11 +9022,11 @@ The implementation calls `https://developer.android.com/reference/kotlin/android
 
 | Parameters ||
 |---|---|
-| `viewIds` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [AutofillId](../android/view/autofill/AutofillId.md)!, [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)!\>: This value cannot be `null`. |
+| `viewIds` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [AutofillId](../android.view.autofill/AutofillId.md)!, [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)!\>: This value cannot be `null`. |
 | `supportedFormats` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html): This value cannot be `null`. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/view/translation/TranslationSpec.html#DATA_FORMAT_TEXT:kotlin.Int` |
-| `capability` | [TranslationCapability](../android/view/translation/TranslationCapability.md)?: This value may be `null`. |
+| `capability` | [TranslationCapability](../android.view.translation/TranslationCapability.md)?: This value may be `null`. |
 | --- | --- |
-| `requests` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ViewTranslationRequest](../android/view/translation/ViewTranslationRequest.md)!\>: This value cannot be `null`. |
+| `requests` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ViewTranslationRequest](../android.view.translation/ViewTranslationRequest.md)!\>: This value cannot be `null`. |
 
 ### dispatchKeyEvent
 
@@ -9040,7 +9040,7 @@ Dispatch a key event to the next view on the focus path. This path runs from the
 
 | Parameters ||
 |---|---|
-| `event` | [KeyEvent](../android/view/KeyEvent.md)!: The key event to be dispatched. |
+| `event` | [KeyEvent](../android.view/KeyEvent.md)!: The key event to be dispatched. |
 
 | Return ||
 |---|---|
@@ -9055,11 +9055,11 @@ open fun documentHasImages(response: Message): Unit
 ```
 
 Queries the document to see if it contains any image references. The message object will be dispatched with arg1 being set to 1 if images were found and 0 if the document does not reference any images. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Parameters ||
 |---|---|
-| `response` | [Message](../android/os/Message.md): the message that will be dispatched with the result. This value cannot be `null`. |
+| `response` | [Message](../android.os/Message.md): the message that will be dispatched with the result. This value cannot be `null`. |
 
 ### enableSlowWholeDocumentDraw
 
@@ -9092,12 +9092,12 @@ open fun evaluateJavascript(
 Asynchronously evaluates JavaScript in the context of the currently displayed page. If non-null, `resultCallback` will be invoked with any result returned from that execution. This method must be called on the UI thread and the callback will be made on the UI thread.
 
 Compatibility note. Applications targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#N:kotlin.Int` or later, JavaScript state from an empty WebView is no longer persisted across navigations like `https://developer.android.com/reference/kotlin/android/webkit/WebView#loadUrl(kotlin.String)`. For example, global variables and functions defined before calling `https://developer.android.com/reference/kotlin/android/webkit/WebView#loadUrl(kotlin.String)` will not exist in the loaded page. Applications should use `https://developer.android.com/reference/kotlin/android/webkit/WebView#addJavascriptInterface(kotlin.Any,%20kotlin.String)` instead to persist JavaScript objects across navigations. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Parameters ||
 |---|---|
 | `script` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): the JavaScript to execute. This value cannot be `null`. |
-| `resultCallback` | [ValueCallback](../android/webkit/ValueCallback.md)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?: A callback to be invoked when the script execution completes with the result of the execution (if any). May be `null` if no notification of the result is required. |
+| `resultCallback` | [ValueCallback](ValueCallback.md)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?: A callback to be invoked when the script execution completes with the result of the execution (if any). May be `null` if no notification of the result is required. |
 
 ### findAddress
 
@@ -9145,7 +9145,7 @@ open fun findAll(find: String!): Int
 **Deprecated:** *`https://developer.android.com/reference/kotlin/android/webkit/WebView#findAllAsync(kotlin.String)` is preferred.*
 
 Finds all instances of find on the page and highlights them. Notifies any registered `https://developer.android.com/reference/kotlin/android/webkit/WebView.FindListener`. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Parameters ||
 |---|---|
@@ -9168,7 +9168,7 @@ open fun findAllAsync(find: String): Unit
 ```
 
 Finds all instances of find on the page and highlights them, asynchronously. Notifies any registered `https://developer.android.com/reference/kotlin/android/webkit/WebView.FindListener`. Successive calls to this will cancel any pending searches. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Parameters ||
 |---|---|
@@ -9201,7 +9201,7 @@ open fun findNext(forward: Boolean): Unit
 ```
 
 Highlights and scrolls to the next match found by `https://developer.android.com/reference/kotlin/android/webkit/WebView#findAllAsync(kotlin.String)`, wrapping around page boundaries as necessary. Notifies any registered `https://developer.android.com/reference/kotlin/android/webkit/WebView.FindListener`. If `https://developer.android.com/reference/kotlin/android/webkit/WebView#findAllAsync(kotlin.String)` has not been called yet, or if `https://developer.android.com/reference/kotlin/android/webkit/WebView#clearMatches()` has been called since the last find operation, this function does nothing. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Parameters ||
 |---|---|
@@ -9222,7 +9222,7 @@ open fun flingScroll(
 ): Unit
 ```
 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 ### freeMemory
 
@@ -9236,7 +9236,7 @@ open fun freeMemory(): Unit
 **Deprecated:** *Memory caches are automatically dropped when no longer needed, and in response to system memory pressure.*
 
 Informs this WebView that memory is low so that it can free any available memory. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 ### getAccessibilityClassName
 
@@ -9275,7 +9275,7 @@ open fun getCertificate(): SslCertificate?
 ```
 
 Gets the SSL certificate for the main top-level page or `null` if there is no certificate (the site is not secure). 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Return ||
 |---|---|
@@ -9290,7 +9290,7 @@ open fun getContentHeight(): Int
 ```
 
 Gets the height of the HTML content. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Return ||
 |---|---|
@@ -9319,7 +9319,7 @@ open fun getFavicon(): Bitmap?
 ```
 
 Gets the favicon for the current page. This is the favicon of the current page until WebViewClient.onReceivedIcon is called. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Return ||
 |---|---|
@@ -9346,7 +9346,7 @@ open fun getHitTestResult(): WebView.HitTestResult
 ```
 
 Gets a HitTestResult based on the current cursor node. If a HTML::a tag is found and the anchor has a non-JavaScript URL, the HitTestResult type is set to SRC_ANCHOR_TYPE and the URL is set in the "extra" field. If the anchor does not have a URL or if it is a JavaScript URL, the type will be UNKNOWN_TYPE and the URL has to be retrieved through `https://developer.android.com/reference/kotlin/android/webkit/WebView#requestFocusNodeHref(android.os.Message)` asynchronously. If a HTML::img tag is found, the HitTestResult type is set to IMAGE_TYPE and the URL is set in the "extra" field. A type of SRC_IMAGE_ANCHOR_TYPE indicates an anchor with a URL that has an image as a child node. If a phone number is found, the HitTestResult type is set to PHONE_TYPE and the phone number is set in the "extra" field of HitTestResult. If a map address is found, the HitTestResult type is set to GEO_TYPE and the address is set in the "extra" field of HitTestResult. If an email address is found, the HitTestResult type is set to EMAIL_TYPE and the email is set in the "extra" field of HitTestResult. Otherwise, HitTestResult type is set to UNKNOWN_TYPE. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Return ||
 |---|---|
@@ -9367,7 +9367,7 @@ open fun getHttpAuthUsernamePassword(
 **Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/webkit/WebViewDatabase#getHttpAuthUsernamePassword(kotlin.String,%20kotlin.String)` instead*
 
 Retrieves HTTP authentication credentials for a given host and realm from the `https://developer.android.com/reference/kotlin/android/webkit/WebViewDatabase` instance. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Parameters ||
 |---|---|
@@ -9387,7 +9387,7 @@ open fun getOriginalUrl(): String?
 ```
 
 Gets the original URL for the current page. This is not always the same as the URL passed to WebViewClient.onPageStarted because although the load for that URL has begun, the current page may not have changed. Also, there may have been redirects resulting in a different URL to that originally requested. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Return ||
 |---|---|
@@ -9402,7 +9402,7 @@ open fun getProgress(): Int
 ```
 
 Gets the progress for the current page. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Return ||
 |---|---|
@@ -9467,7 +9467,7 @@ open fun getScale(): Float
 **Deprecated:** *This method is prone to inaccuracy due to race conditions between the web rendering and UI threads; prefer `https://developer.android.com/reference/kotlin/android/webkit/WebViewClient#onScaleChanged(android.webkit.WebView,%20kotlin.Float,%20kotlin.Float)`.*
 
 Gets the current scale of this WebView. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Return ||
 |---|---|
@@ -9482,7 +9482,7 @@ open fun getSettings(): WebSettings
 ```
 
 Gets the WebSettings object used to control the settings for this WebView. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Return ||
 |---|---|
@@ -9511,7 +9511,7 @@ open fun getTitle(): String?
 ```
 
 Gets the title for the current page. This is the title of the current page until WebViewClient.onReceivedTitle is called. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Return ||
 |---|---|
@@ -9526,7 +9526,7 @@ open fun getUrl(): String?
 ```
 
 Gets the URL for the current page. This is not always the same as the URL passed to WebViewClient.onPageStarted because although the load for that URL has begun, the current page may not have changed. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Return ||
 |---|---|
@@ -9541,7 +9541,7 @@ open fun getWebChromeClient(): WebChromeClient?
 ```
 
 Gets the chrome handler. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Return ||
 |---|---|
@@ -9574,7 +9574,7 @@ open fun getWebViewClient(): WebViewClient
 ```
 
 Gets the WebViewClient. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Return ||
 |---|---|
@@ -9611,7 +9611,7 @@ Gets a handle to the WebView renderer process associated with this WebView.
 In `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int` and above, WebView may run in "multiprocess" mode. In multiprocess mode, rendering of web content is performed by a sandboxed renderer process separate to the application process. This renderer process may be shared with other WebViews in the application, but is not shared with other application processes.
 
 If WebView is running in multiprocess mode, this method returns a handle to the renderer process associated with the WebView, which can be used to control the renderer process. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Return ||
 |---|---|
@@ -9626,7 +9626,7 @@ open fun getWebViewRenderProcessClient(): WebViewRenderProcessClient?
 ```
 
 Gets the renderer client object associated with this WebView. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Return ||
 |---|---|
@@ -9641,7 +9641,7 @@ open fun goBack(): Unit
 ```
 
 Goes back in the history of this WebView. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 ### goBackOrForward
 
@@ -9652,7 +9652,7 @@ open fun goBackOrForward(steps: Int): Unit
 ```
 
 Goes to the history item that is the number of steps away from the current item. Steps is negative if backward and positive if forward. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Parameters ||
 |---|---|
@@ -9667,7 +9667,7 @@ open fun goForward(): Unit
 ```
 
 Goes forward in the history of this WebView. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 ### invokeZoomPicker
 
@@ -9678,7 +9678,7 @@ open fun invokeZoomPicker(): Unit
 ```
 
 Invokes the graphical zoom picker widget for this WebView. This will result in the zoom widget appearing on the screen to control the zoom level of this WebView. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 ### isPrivateBrowsingEnabled
 
@@ -9689,7 +9689,7 @@ open fun isPrivateBrowsingEnabled(): Boolean
 ```
 
 Gets whether private browsing is enabled in this WebView. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 ### isVisibleToUserForAutofill
 
@@ -9740,7 +9740,7 @@ The `mimeType` parameter specifies the format of the data. If WebView can't hand
 The 'data' scheme URL formed by this method uses the default US-ASCII charset. If you need to set a different charset, you should form a 'data' scheme URL which explicitly specifies a charset parameter in the mediatype portion of the URL and call `https://developer.android.com/reference/kotlin/android/webkit/WebView#loadUrl(kotlin.String)` instead. Note that the charset obtained from the mediatype portion of a data URL always overrides that specified in the HTML or XML document itself.
 
 Content loaded using this method will have a `window.origin` value of `"null"`. This must not be considered to be a trusted origin by the application or by any JavaScript code running inside the WebView (for example, event sources in DOM event handlers or web messages), because malicious content can also create frames with a null origin. If you need to identify the main frame's origin in a trustworthy way, you should use `https://developer.android.com/reference/kotlin/android/webkit/WebView#loadDataWithBaseURL(kotlin.String,%20kotlin.String,%20kotlin.String,%20kotlin.String,%20kotlin.String)` with a valid HTTP or HTTPS base URL to set the origin. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Parameters ||
 |---|---|
@@ -9774,7 +9774,7 @@ If the base URL uses the data scheme, this method is equivalent to calling `http
 Note that the baseUrl is sent in the 'Referer' HTTP header when requesting subresources (images, etc.) of the page loaded using this method.
 
 If a valid HTTP or HTTPS base URL is not specified in `baseUrl`, then content loaded using this method will have a `window.origin` value of `"null"`. This must not be considered to be a trusted origin by the application or by any JavaScript code running inside the WebView (for example, event sources in DOM event handlers or web messages), because malicious content can also create frames with a null origin. If you need to identify the main frame's origin in a trustworthy way, you should use a valid HTTP or HTTPS base URL to set the origin. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Parameters ||
 |---|---|
@@ -9796,7 +9796,7 @@ open fun loadUrl(url: String): Unit
 Loads the given URL.
 
 Also see compatibility note on `https://developer.android.com/reference/kotlin/android/webkit/WebView#evaluateJavascript(kotlin.String,%20android.webkit.ValueCallback)`. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Parameters ||
 |---|---|
@@ -9818,7 +9818,7 @@ Loads the given URL with additional HTTP headers, specified as a map from name t
 Some older WebView implementations require `additionalHttpHeaders` to be mutable.
 
 Also see compatibility note on `https://developer.android.com/reference/kotlin/android/webkit/WebView#evaluateJavascript(kotlin.String,%20android.webkit.ValueCallback)`. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Parameters ||
 |---|---|
@@ -9845,7 +9845,7 @@ By default if a view's `https://developer.android.com/reference/kotlin/android/v
 
 | Parameters ||
 |---|---|
-| `insets` | [WindowInsets](../android/view/WindowInsets.md)!: Insets to apply |
+| `insets` | [WindowInsets](../android.view/WindowInsets.md)!: Insets to apply |
 
 | Return ||
 |---|---|
@@ -9882,8 +9882,8 @@ open fun onChildViewAdded(
 
 | Parameters ||
 |---|---|
-| `parent` | [View](../android/view/View.md)!: the view in which a child was added |
-| `child` | [View](../android/view/View.md)!: the new child view added in the hierarchy |
+| `parent` | [View](../android.view/View.md)!: the view in which a child was added |
+| `child` | [View](../android.view/View.md)!: the new child view added in the hierarchy |
 
 ### onChildViewRemoved
 
@@ -9901,7 +9901,7 @@ open fun onChildViewRemoved(
 | Parameters ||
 |---|---|
 | `parent` | the view from which the child was removed |
-| `child` | [View](../android/view/View.md)!: the child removed from the hierarchy |
+| `child` | [View](../android.view/View.md)!: the child removed from the hierarchy |
 
 ### onCreateInputConnection
 
@@ -9915,7 +9915,7 @@ Creates a new InputConnection for an InputMethod to interact with the WebView. T
 
 | Parameters ||
 |---|---|
-| `outAttrs` | [EditorInfo](../android/view/inputmethod/EditorInfo.md)!: Fill in with attribute information about the connection. |
+| `outAttrs` | [EditorInfo](../android.view.inputmethod/EditorInfo.md)!: Fill in with attribute information about the connection. |
 
 ### onCreateVirtualViewTranslationRequests
 
@@ -9937,7 +9937,7 @@ The default implementation does nothing.
 |---|---|
 | `virtualIds` | [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html): This value cannot be `null`. |
 | `supportedFormats` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html): This value cannot be `null`. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/view/translation/TranslationSpec.html#DATA_FORMAT_TEXT:kotlin.Int` |
-| `requestsCollector` | [Consumer](../java/util/function/Consumer.md)\< [ViewTranslationRequest](../android/view/translation/ViewTranslationRequest.md)!\>: This value cannot be `null`. |
+| `requestsCollector` | [Consumer](../java.util.function/Consumer.md)\< [ViewTranslationRequest](../android.view.translation/ViewTranslationRequest.md)!\>: This value cannot be `null`. |
 | --- | --- |
 
 | Return ||
@@ -9964,7 +9964,7 @@ The default implementation returns `false` unless an `https://developer.android.
 
 | Parameters ||
 |---|---|
-| `event` | [DragEvent](../android/view/DragEvent.md)!: The `https://developer.android.com/reference/kotlin/android/view/DragEvent.html#` object sent by the system. The `https://developer.android.com/reference/kotlin/android/view/DragEvent.html#getAction()` method returns an action type constant that indicates the type of drag event represented by this object. |
+| `event` | [DragEvent](../android.view/DragEvent.md)!: The `https://developer.android.com/reference/kotlin/android/view/DragEvent.html#` object sent by the system. The `https://developer.android.com/reference/kotlin/android/view/DragEvent.html#getAction()` method returns an action type constant that indicates the type of drag event represented by this object. |
 
 | Return ||
 |---|---|
@@ -10018,7 +10018,7 @@ public boolean onGenericMotionEvent(MotionEvent event) {
 
 | Parameters ||
 |---|---|
-| `event` | [MotionEvent](../android/view/MotionEvent.md)!: The generic motion event being processed. |
+| `event` | [MotionEvent](../android.view/MotionEvent.md)!: The generic motion event being processed. |
 
 | Return ||
 |---|---|
@@ -10039,8 +10039,8 @@ open fun onGlobalFocusChanged(
 
 | Parameters ||
 |---|---|
-| `oldFocus` | [View](../android/view/View.md)!: The previously focused view, if any. |
-| `newFocus` | [View](../android/view/View.md)!: The newly focused View, if any. |
+| `oldFocus` | [View](../android.view/View.md)!: The previously focused view, if any. |
+| `newFocus` | [View](../android.view/View.md)!: The newly focused View, if any. |
 
 ### onHoverEvent
 
@@ -10064,7 +10064,7 @@ The default implementation calls `https://developer.android.com/reference/kotlin
 
 | Parameters ||
 |---|---|
-| `event` | [MotionEvent](../android/view/MotionEvent.md)!: The motion event that describes the hover. |
+| `event` | [MotionEvent](../android.view/MotionEvent.md)!: The motion event that describes the hover. |
 
 | Return ||
 |---|---|
@@ -10088,7 +10088,7 @@ Key presses in software keyboards will generally NOT trigger this listener, alth
 | Parameters ||
 |---|---|
 | `keyCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): a key code that represents the button pressed, from `https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#` |
-| `event` | [KeyEvent](../android/view/KeyEvent.md)!: the KeyEvent object that defines the button action |
+| `event` | [KeyEvent](../android.view/KeyEvent.md)!: the KeyEvent object that defines the button action |
 
 | Return ||
 |---|---|
@@ -10114,7 +10114,7 @@ Key presses in software keyboards will generally NOT trigger this listener, alth
 |---|---|
 | `keyCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): A key code that represents the button pressed, from `https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#`. |
 | `count` | Number of pairs as returned by event.getRepeatCount(). |
-| `event` | [KeyEvent](../android/view/KeyEvent.md)!: The KeyEvent object that defines the button action. |
+| `event` | [KeyEvent](../android.view/KeyEvent.md)!: The KeyEvent object that defines the button action. |
 | --- | --- |
 | `repeatCount` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of times the action was made. |
 
@@ -10140,7 +10140,7 @@ Key presses in software keyboards will generally NOT trigger this listener, alth
 | Parameters ||
 |---|---|
 | `keyCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): A key code that represents the button pressed, from `https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#`. |
-| `event` | [KeyEvent](../android/view/KeyEvent.md)!: The KeyEvent object that defines the button action. |
+| `event` | [KeyEvent](../android.view/KeyEvent.md)!: The KeyEvent object that defines the button action. |
 
 | Return ||
 |---|---|
@@ -10155,7 +10155,7 @@ open fun onPause(): Unit
 ```
 
 Does a best-effort attempt to pause any processing that can be paused safely, such as animations and geolocation. Note that this call does not pause JavaScript. To pause JavaScript globally, use `https://developer.android.com/reference/kotlin/android/webkit/WebView#pauseTimers()`. To resume WebView, call `https://developer.android.com/reference/kotlin/android/webkit/WebView#onResume()`. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 ### onProvideAutofillVirtualStructure
 
@@ -10251,7 +10251,7 @@ int index = structure.addChildCount(2);
 
 | Parameters ||
 |---|---|
-| `structure` | [ViewStructure](../android/view/ViewStructure.md)!: fill in with virtual children data for autofill purposes. |
+| `structure` | [ViewStructure](../android.view/ViewStructure.md)!: fill in with virtual children data for autofill purposes. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): optional flags. |
 
 ### onProvideContentCaptureStructure
@@ -10296,7 +10296,7 @@ When the virtual view hierarchy represents a web page, you should also:
 
 | Parameters ||
 |---|---|
-| `structure` | [ViewStructure](../android/view/ViewStructure.md): This value cannot be `null`. |
+| `structure` | [ViewStructure](../android.view/ViewStructure.md): This value cannot be `null`. |
 
 ### onProvideVirtualStructure
 
@@ -10345,7 +10345,7 @@ Resolve the pointer icon that should be used for specified pointer in the motion
 
 | Parameters ||
 |---|---|
-| `event` | [MotionEvent](../android/view/MotionEvent.md): This value cannot be `null`. |
+| `event` | [MotionEvent](../android.view/MotionEvent.md): This value cannot be `null`. |
 | `pointerIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The index of the pointer in `event` for which to retrieve the `https://developer.android.com/reference/kotlin/android/view/PointerIcon.html#`. This will be between 0 and `https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#getPointerCount()`. |
 
 | Return ||
@@ -10361,7 +10361,7 @@ open fun onResume(): Unit
 ```
 
 Resumes a WebView after a previous call to `https://developer.android.com/reference/kotlin/android/webkit/WebView#onPause()`. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 ### onStartTemporaryDetach
 
@@ -10393,7 +10393,7 @@ If this method is used to detect click actions, it is recommended that the actio
 
 | Parameters ||
 |---|---|
-| `event` | [MotionEvent](../android/view/MotionEvent.md)!: The motion event. |
+| `event` | [MotionEvent](../android.view/MotionEvent.md)!: The motion event. |
 
 | Return ||
 |---|---|
@@ -10413,7 +10413,7 @@ The *relative* movement of the trackball since the last event can be retrieve wi
 
 | Parameters ||
 |---|---|
-| `event` | [MotionEvent](../android/view/MotionEvent.md)!: The motion event. |
+| `event` | [MotionEvent](../android.view/MotionEvent.md)!: The motion event. |
 
 | Return ||
 |---|---|
@@ -10433,7 +10433,7 @@ The default implementation does nothing.
 
 | Parameters ||
 |---|---|
-| `response` | [LongSparseArray](../android/util/LongSparseArray.md)\< [ViewTranslationResponse](../android/view/translation/ViewTranslationResponse.md)!\>: This value cannot be `null`. |
+| `response` | [LongSparseArray](../android.util/LongSparseArray.md)\< [ViewTranslationResponse](../android.view.translation/ViewTranslationResponse.md)!\>: This value cannot be `null`. |
 
 ### onWindowFocusChanged
 
@@ -10492,7 +10492,7 @@ open fun pageDown(bottom: Boolean): Boolean
 ```
 
 Scrolls the contents of this WebView down by half the page size. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Parameters ||
 |---|---|
@@ -10511,7 +10511,7 @@ open fun pageUp(top: Boolean): Boolean
 ```
 
 Scrolls the contents of this WebView up by half the view size. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Parameters ||
 |---|---|
@@ -10530,7 +10530,7 @@ open fun pauseTimers(): Unit
 ```
 
 Pauses all layout, parsing, and JavaScript timers for all WebViews. This is a global requests, not restricted to just this WebView. This can be useful if the application has been paused. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 ### performLongClick
 
@@ -10558,7 +10558,7 @@ open fun postUrl(
 ```
 
 Loads the URL with postData using "POST" method into this WebView. If url is not a network URL, it will be loaded with `https://developer.android.com/reference/kotlin/android/webkit/WebView#loadUrl(kotlin.String)` instead, ignoring the postData param. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Parameters ||
 |---|---|
@@ -10603,7 +10603,7 @@ To guarantee that the `https://developer.android.com/reference/kotlin/android/we
 - If the `https://developer.android.com/reference/kotlin/android/webkit/WebView#`'s visibility is set to `https://developer.android.com/reference/kotlin/android/view/View.html#GONE:kotlin.Int` then the `https://developer.android.com/reference/kotlin/android/webkit/WebView#` must be attached to the view hierarchy and its `https://developer.android.com/reference/kotlin/android/widget/AbsoluteLayout.LayoutParams.html#`'s width and height need to be set to fixed values and must be made `https://developer.android.com/reference/kotlin/android/view/View.html#VISIBLE:kotlin.Int` from the `https://developer.android.com/reference/kotlin/android/webkit/WebView.VisualStateCallback#onComplete(kotlin.Long)` method.
 
 When using this API it is also recommended to enable pre-rasterization if the `https://developer.android.com/reference/kotlin/android/webkit/WebView#` is off screen to avoid flickering. See `https://developer.android.com/reference/kotlin/android/webkit/WebSettings#setOffscreenPreRaster(kotlin.Boolean)` for more details and do consider its caveats. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Parameters ||
 |---|---|
@@ -10626,12 +10626,12 @@ Post a message to main frame. The embedded application can restrict the messages
 A target origin can be set as a wildcard ("\*"). However this is not recommended. See the page above for security issues.
 
 Content loaded via `https://developer.android.com/reference/kotlin/android/webkit/WebView#loadData(kotlin.String,%20kotlin.String,%20kotlin.String)` will not have a valid origin, and thus cannot be sent messages securely. If you need to send messages using this function, you should use `https://developer.android.com/reference/kotlin/android/webkit/WebView#loadDataWithBaseURL(kotlin.String,%20kotlin.String,%20kotlin.String,%20kotlin.String,%20kotlin.String)` with a valid HTTP or HTTPS `baseUrl` to define a valid origin that can be used for messaging. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Parameters ||
 |---|---|
-| `message` | [WebMessage](../android/webkit/WebMessage.md): the WebMessage. This value cannot be `null`. |
-| `targetOrigin` | [Uri](../android/net/Uri.md): the target origin. This value cannot be `null`. |
+| `message` | [WebMessage](WebMessage.md): the WebMessage. This value cannot be `null`. |
+| `targetOrigin` | [Uri](../android.net/Uri.md): the target origin. This value cannot be `null`. |
 
 ### reload
 
@@ -10642,7 +10642,7 @@ open fun reload(): Unit
 ```
 
 Reloads the current URL. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 ### removeJavascriptInterface
 
@@ -10653,7 +10653,7 @@ open fun removeJavascriptInterface(name: String): Unit
 ```
 
 Removes a previously injected Java object from this WebView. Note that the removal will not be reflected in JavaScript until the page is next (re)loaded. See `https://developer.android.com/reference/kotlin/android/webkit/WebView#addJavascriptInterface(kotlin.Any,%20kotlin.String)`. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Parameters ||
 |---|---|
@@ -10685,7 +10685,7 @@ Called when a child of this group wants a particular rectangle to be positioned 
 
 | Parameters ||
 |---|---|
-| `child` | [View](../android/view/View.md): The direct child making the request. This value cannot be `null`. |
+| `child` | [View](../android.view/View.md): The direct child making the request. This value cannot be `null`. |
 | `rectangle` | The rectangle in the child's coordinates the child wishes to be on the screen. |
 | `immediate` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): True to forbid animated or delayed scrolling, false otherwise |
 | --- | --- |
@@ -10710,7 +10710,7 @@ Call this to try to give focus to a specific view or to one of its descendants a
 | Parameters ||
 |---|---|
 | `direction` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): One of FOCUS_UP, FOCUS_DOWN, FOCUS_LEFT, and FOCUS_RIGHT |
-| `previouslyFocusedRect` | [Rect](../android/graphics/Rect.md)!: The rectangle (in this View's coordinate system) to give a finer grained hint about where focus is coming from. May be null if there is no hint. |
+| `previouslyFocusedRect` | [Rect](../android.graphics/Rect.md)!: The rectangle (in this View's coordinate system) to give a finer grained hint about where focus is coming from. May be null if there is no hint. |
 
 | Return ||
 |---|---|
@@ -10725,11 +10725,11 @@ open fun requestFocusNodeHref(hrefMsg: Message?): Unit
 ```
 
 Requests the anchor or image element URL at the last tapped point. If hrefMsg is `null`, this method returns immediately and does not dispatch hrefMsg to its target. If the tapped point hits an image, an anchor, or an image in an anchor, the message associates strings in named keys in its data. The value paired with the key may be an empty string. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Parameters ||
 |---|---|
-| `hrefMsg` | [Message](../android/os/Message.md)?: the message to be dispatched with the result of the request. The message data contains three keys. "url" returns the anchor's href attribute. "title" returns the anchor's text. "src" returns the image's src attribute. This value may be `null`. |
+| `hrefMsg` | [Message](../android.os/Message.md)?: the message to be dispatched with the result of the request. The message data contains three keys. "url" returns the anchor's href attribute. "title" returns the anchor's text. "src" returns the image's src attribute. This value may be `null`. |
 
 ### requestImageRef
 
@@ -10740,11 +10740,11 @@ open fun requestImageRef(msg: Message): Unit
 ```
 
 Requests the URL of the image last touched by the user. msg will be sent to its target with a String representing the URL as its object. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Parameters ||
 |---|---|
-| `msg` | [Message](../android/os/Message.md): the message to be dispatched with the result of the request as the data member with "url" as key. The result can be `null`. |
+| `msg` | [Message](../android.os/Message.md): the message to be dispatched with the result of the request as the data member with "url" as key. The result can be `null`. |
 
 ### restoreState
 
@@ -10755,11 +10755,11 @@ open fun restoreState(inState: Bundle): WebBackForwardList?
 ```
 
 Restores the state of this WebView from the given Bundle. This method is intended for use in android.app.Activity#onRestoreInstanceState and should be called to restore the state of this WebView. If it is called after this WebView has had a chance to build state (load pages, create a back/forward list, etc.) there may be undesirable side-effects. Please note that this method no longer restores the display data for this WebView. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Parameters ||
 |---|---|
-| `inState` | [Bundle](../android/os/Bundle.md): the incoming Bundle of state. This value cannot be `null`. |
+| `inState` | [Bundle](../android.os/Bundle.md): the incoming Bundle of state. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -10774,7 +10774,7 @@ open fun resumeTimers(): Unit
 ```
 
 Resumes all layout, parsing, and JavaScript timers for all WebViews. This will resume dispatching all timers. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 ### savePassword
 
@@ -10792,7 +10792,7 @@ open fun savePassword(
 **Deprecated:** *Saving passwords in WebView will not be supported in future versions.*
 
 Sets a username and password pair for the specified host. This data is used by the WebView to autocomplete username and password fields in web forms. Note that this is unrelated to the credentials used for HTTP authentication. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Parameters ||
 |---|---|
@@ -10815,11 +10815,11 @@ open fun saveState(outState: Bundle): WebBackForwardList?
 ```
 
 Saves the state of this WebView used in android.app.Activity#onSaveInstanceState. Please note that this method no longer stores the display data for this WebView. The previous behavior could potentially leak files if `https://developer.android.com/reference/kotlin/android/webkit/WebView#restoreState(android.os.Bundle)` was never called. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Parameters ||
 |---|---|
-| `outState` | [Bundle](../android/os/Bundle.md): the Bundle to store this WebView's state. This value cannot be `null`. |
+| `outState` | [Bundle](../android.os/Bundle.md): the Bundle to store this WebView's state. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -10834,7 +10834,7 @@ open fun saveWebArchive(filename: String): Unit
 ```
 
 Saves the current view as a web archive. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Parameters ||
 |---|---|
@@ -10853,13 +10853,13 @@ open fun saveWebArchive(
 ```
 
 Saves the current view as a web archive. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Parameters ||
 |---|---|
 | `basename` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): the filename where the archive should be placed. This value cannot be `null`. |
 | `autoname` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): if `false`, takes basename to be a file. If `true`, basename is assumed to be a directory in which a filename will be chosen according to the URL of the current page. |
-| `callback` | [ValueCallback](../android/webkit/ValueCallback.md)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?: called after the web archive has been saved. The parameter for onReceiveValue will either be the filename under which the file was saved, or `null` if saving the file failed. |
+| `callback` | [ValueCallback](ValueCallback.md)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?: called after the web archive has been saved. The parameter for onReceiveValue will either be the filename under which the file was saved, or `null` if saving the file failed. |
 | --- | --- |
 
 ### setBackgroundColor
@@ -10888,7 +10888,7 @@ open fun setCertificate(certificate: SslCertificate!): Unit
 **Deprecated:** *Calling this function has no useful effect, and will be ignored in future releases.*
 
 Sets the SSL certificate for the main top-level page. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 ### setDataDirectorySuffix
 
@@ -10924,11 +10924,11 @@ open fun setDownloadListener(listener: DownloadListener?): Unit
 ```
 
 Registers the interface to be used when content can not be handled by the rendering engine, and should be downloaded instead. This will replace the current handler. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Parameters ||
 |---|---|
-| `listener` | [DownloadListener](../android/webkit/DownloadListener.md)?: an implementation of DownloadListener. This value may be `null`. |
+| `listener` | [DownloadListener](DownloadListener.md)?: an implementation of DownloadListener. This value may be `null`. |
 
 ### setFindListener
 
@@ -10939,7 +10939,7 @@ open fun setFindListener(listener: WebView.FindListener?): Unit
 ```
 
 Registers the listener to be notified as find-on-page operations progress. This will replace the current listener. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Parameters ||
 |---|---|
@@ -10979,7 +10979,7 @@ open fun setHttpAuthUsernamePassword(
 **Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/webkit/WebViewDatabase#setHttpAuthUsernamePassword(kotlin.String,%20kotlin.String,%20kotlin.String,%20kotlin.String)` instead*
 
 Stores HTTP authentication credentials for a given host and realm to the `https://developer.android.com/reference/kotlin/android/webkit/WebViewDatabase` instance. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Parameters ||
 |---|---|
@@ -10998,7 +10998,7 @@ open fun setInitialScale(scaleInPercent: Int): Unit
 ```
 
 Sets the initial scale for this WebView. 0 means default. The behavior for the default scale depends on the state of `https://developer.android.com/reference/kotlin/android/webkit/WebSettings#getUseWideViewPort()` and `https://developer.android.com/reference/kotlin/android/webkit/WebSettings#getLoadWithOverviewMode()`. If the content fits into the WebView control by width, then the zoom is set to 100%. For wide content, the behavior depends on the state of `https://developer.android.com/reference/kotlin/android/webkit/WebSettings#getLoadWithOverviewMode()`. If its value is `true`, the content will be zoomed out to be fit by width into the WebView control, otherwise not. If initial scale is greater than 0, WebView starts with this value as initial scale. Please note that unlike the scale properties in the viewport meta tag, this method doesn't take the screen density into account. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Parameters ||
 |---|---|
@@ -11030,7 +11030,7 @@ Refer to the documentation of `https://developer.android.com/reference/kotlin/an
 | Parameters ||
 |---|---|
 | `layerType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of layer to use with this view, must be one of `https://developer.android.com/reference/kotlin/android/view/View.html#LAYER_TYPE_NONE:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/View.html#LAYER_TYPE_SOFTWARE:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/view/View.html#LAYER_TYPE_HARDWARE:kotlin.Int` Value is one of the following: - `https://developer.android.com/reference/kotlin/android/view/View.html#LAYER_TYPE_NONE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View.html#LAYER_TYPE_SOFTWARE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View.html#LAYER_TYPE_HARDWARE:kotlin.Int` |
-| `paint` | [Paint](../android/graphics/Paint.md)?: The paint used to compose the layer. This argument is optional and can be null. It is ignored when the layer type is `https://developer.android.com/reference/kotlin/android/view/View.html#LAYER_TYPE_NONE:kotlin.Int` |
+| `paint` | [Paint](../android.graphics/Paint.md)?: The paint used to compose the layer. This argument is optional and can be null. It is ignored when the layer type is `https://developer.android.com/reference/kotlin/android/view/View.html#LAYER_TYPE_NONE:kotlin.Int` |
 
 ### setLayoutParams
 
@@ -11057,7 +11057,7 @@ open fun setMapTrackballToArrowKeys(setMap: Boolean): Unit
 
 **Deprecated:** *Only the default case, `true`, will be supported in a future version.*
 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 ### setNetworkAvailable
 
@@ -11068,7 +11068,7 @@ open fun setNetworkAvailable(networkUp: Boolean): Unit
 ```
 
 Informs WebView of the network state. This is used to set the JavaScript property window.navigator.isOnline and generates the online/offline event as specified in HTML5, sec. 5.7.7. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Parameters ||
 |---|---|
@@ -11082,7 +11082,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 open fun setOverScrollMode(mode: Int): Unit
 ```
 
-Set the over-scroll mode for this view. Valid over-scroll modes are `https://developer.android.com/reference/kotlin/android/view/View.html#OVER_SCROLL_ALWAYS:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/View.html#OVER_SCROLL_IF_CONTENT_SCROLLS:kotlin.Int` (allow over-scrolling only if the view content is larger than the container), or `https://developer.android.com/reference/kotlin/android/view/View.html#OVER_SCROLL_NEVER:kotlin.Int`. Setting the over-scroll mode of a view will have an effect only if the view is capable of scrolling. This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+Set the over-scroll mode for this view. Valid over-scroll modes are `https://developer.android.com/reference/kotlin/android/view/View.html#OVER_SCROLL_ALWAYS:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/View.html#OVER_SCROLL_IF_CONTENT_SCROLLS:kotlin.Int` (allow over-scrolling only if the view content is larger than the container), or `https://developer.android.com/reference/kotlin/android/view/View.html#OVER_SCROLL_NEVER:kotlin.Int`. Setting the over-scroll mode of a view will have an effect only if the view is capable of scrolling. This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Parameters ||
 |---|---|
@@ -11100,7 +11100,7 @@ open fun setPictureListener(listener: WebView.PictureListener!): Unit
 **Deprecated:** *This method is now obsolete.*
 
 Sets the Picture listener. This is an interface used to receive notifications of a new Picture. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Parameters ||
 |---|---|
@@ -11162,7 +11162,7 @@ The correct syntax for hosts is defined by [RFC 3986](https://tools.ietf.org/htm
 | Parameters ||
 |---|---|
 | `hosts` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>: the list of hosts. This value cannot be `null`. |
-| `callback` | [ValueCallback](../android/webkit/ValueCallback.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>?: will be called with `true` if hosts are successfully added to the allowlist. It will be called with `false` if any hosts are malformed. The callback will be run on the UI thread. This value may be `null`. |
+| `callback` | [ValueCallback](ValueCallback.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>?: will be called with `true` if hosts are successfully added to the allowlist. It will be called with `false` if any hosts are malformed. The callback will be run on the UI thread. This value may be `null`. |
 
 ### setScrollBarStyle
 
@@ -11190,7 +11190,7 @@ Sets the `https://developer.android.com/reference/kotlin/android/view/textclassi
 
 | Parameters ||
 |---|---|
-| `textClassifier` | [TextClassifier](../android/view/textclassifier/TextClassifier.md)?: This value may be `null`. |
+| `textClassifier` | [TextClassifier](../android.view.textclassifier/TextClassifier.md)?: This value may be `null`. |
 
 ### setVerticalScrollbarOverlay
 
@@ -11218,11 +11218,11 @@ open fun setWebChromeClient(client: WebChromeClient?): Unit
 ```
 
 Sets the chrome handler. This is an implementation of WebChromeClient for use in handling JavaScript dialogs, favicons, titles, and the progress. This will replace the current handler. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Parameters ||
 |---|---|
-| `client` | [WebChromeClient](../android/webkit/WebChromeClient.md)?: an implementation of WebChromeClient. This value may be `null`. |
+| `client` | [WebChromeClient](WebChromeClient.md)?: an implementation of WebChromeClient. This value may be `null`. |
 
 **See Also**
 
@@ -11255,11 +11255,11 @@ open fun setWebViewClient(client: WebViewClient): Unit
 ```
 
 Sets the WebViewClient that will receive various notifications and requests. This will replace the current handler. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Parameters ||
 |---|---|
-| `client` | [WebViewClient](../android/webkit/WebViewClient.md): an implementation of WebViewClient. This value cannot be `null`. |
+| `client` | [WebViewClient](WebViewClient.md): an implementation of WebViewClient. This value cannot be `null`. |
 
 **See Also**
 
@@ -11276,11 +11276,11 @@ open fun setWebViewRenderProcessClient(webViewRenderProcessClient: WebViewRende
 Sets the renderer client object associated with this WebView. See `https://developer.android.com/reference/kotlin/android/webkit/WebView#setWebViewRenderProcessClient(java.util.concurrent.Executor,%20android.webkit.WebViewRenderProcessClient)` for details.
 
 `https://developer.android.com/reference/kotlin/android/webkit/WebViewRenderProcessClient` callbacks will run on the thread that this WebView was initialized on. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Parameters ||
 |---|---|
-| `webViewRenderProcessClient` | [WebViewRenderProcessClient](../android/webkit/WebViewRenderProcessClient.md)?: the `https://developer.android.com/reference/kotlin/android/webkit/WebViewRenderProcessClient` object. This value may be `null`. |
+| `webViewRenderProcessClient` | [WebViewRenderProcessClient](WebViewRenderProcessClient.md)?: the `https://developer.android.com/reference/kotlin/android/webkit/WebViewRenderProcessClient` object. This value may be `null`. |
 
 ### setWebViewRenderProcessClient
 
@@ -11298,12 +11298,12 @@ Sets the renderer client object associated with this WebView.
 The renderer client encapsulates callbacks relevant to WebView renderer state. See `https://developer.android.com/reference/kotlin/android/webkit/WebViewRenderProcessClient` for details.
 
 Although many WebView instances may share a single underlying renderer, and renderers may live either in the application process, or in a sandboxed process that is isolated from the application process, instances of `https://developer.android.com/reference/kotlin/android/webkit/WebViewRenderProcessClient` are set per-WebView. Callbacks represent renderer events from the perspective of this WebView, and may or may not be correlated with renderer events affecting other WebViews. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): the Executor on which `https://developer.android.com/reference/kotlin/android/webkit/WebViewRenderProcessClient` callbacks will execute. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `webViewRenderProcessClient` | [WebViewRenderProcessClient](../android/webkit/WebViewRenderProcessClient.md): the `https://developer.android.com/reference/kotlin/android/webkit/WebViewRenderProcessClient` object. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): the Executor on which `https://developer.android.com/reference/kotlin/android/webkit/WebViewRenderProcessClient` callbacks will execute. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `webViewRenderProcessClient` | [WebViewRenderProcessClient](WebViewRenderProcessClient.md): the `https://developer.android.com/reference/kotlin/android/webkit/WebViewRenderProcessClient` object. This value cannot be `null`. |
 
 ### shouldDelayChildPressedState
 
@@ -11332,7 +11332,7 @@ open fun showFindDialog(
 **Deprecated:** *This method does not work reliably on all Android versions; implementing a custom find dialog using WebView.findAllAsync() provides a more robust solution.*
 
 Starts an ActionMode for finding text in this WebView. Only works if this WebView is attached to the view system. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Parameters ||
 |---|---|
@@ -11367,8 +11367,8 @@ This should be called with the Application Context (and will always use the Appl
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md): Application Context. This value cannot be `null`. |
-| `callback` | [ValueCallback](../android/webkit/ValueCallback.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>?: will be called on the UI thread with `true` if initialization is successful, `false` otherwise. This value may be `null`. |
+| `context` | [Context](../android.content/Context.md): Application Context. This value cannot be `null`. |
+| `callback` | [ValueCallback](ValueCallback.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>?: will be called on the UI thread with `true` if initialization is successful, `false` otherwise. This value may be `null`. |
 
 ### stopLoading
 
@@ -11379,7 +11379,7 @@ open fun stopLoading(): Unit
 ```
 
 Stops the current load. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 ### zoomBy
 
@@ -11390,7 +11390,7 @@ open fun zoomBy(zoomFactor: Float): Unit
 ```
 
 Performs a zoom operation in this WebView. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Parameters ||
 |---|---|
@@ -11405,7 +11405,7 @@ open fun zoomIn(): Boolean
 ```
 
 Performs zoom in in this WebView. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Return ||
 |---|---|
@@ -11420,7 +11420,7 @@ open fun zoomOut(): Boolean
 ```
 
 Performs zoom out in this WebView. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Return ||
 |---|---|
@@ -11528,7 +11528,7 @@ Called by draw to draw the child views. This may be overridden by derived classe
 
 | Parameters ||
 |---|---|
-| `canvas` | [Canvas](../android/graphics/Canvas.md): This value cannot be `null`. |
+| `canvas` | [Canvas](../android.graphics/Canvas.md): This value cannot be `null`. |
 
 ### onAttachedToWindow
 
@@ -11553,7 +11553,7 @@ Called when the current configuration of the resources being used by the applica
 
 | Parameters ||
 |---|---|
-| `newConfig` | [Configuration](../android/content/res/Configuration.md)!: The new resource configuration. |
+| `newConfig` | [Configuration](../android.content.res/Configuration.md)!: The new resource configuration. |
 
 ### onDraw
 
@@ -11567,7 +11567,7 @@ Implement this to do your drawing.
 
 | Parameters ||
 |---|---|
-| `canvas` | [Canvas](../android/graphics/Canvas.md): the canvas on which the background will be drawn. This value cannot be `null`. |
+| `canvas` | [Canvas](../android.graphics/Canvas.md): the canvas on which the background will be drawn. This value cannot be `null`. |
 
 ### onFocusChanged
 
@@ -11588,7 +11588,7 @@ If you override this method you *must* call through to the superclass implementa
 |---|---|
 | `gainFocus` | True if the View has focus; false otherwise. |
 | `direction` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The direction focus has moved when requestFocus() is called to give this view focus. Values are `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_UP:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_DOWN:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_LEFT:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_RIGHT:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_FORWARD:kotlin.Int`, or `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_BACKWARD:kotlin.Int`. It may not always apply, in which case use the default. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_BACKWARD:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_FORWARD:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_LEFT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_UP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_RIGHT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View.html#FOCUS_DOWN:kotlin.Int` |
-| `previouslyFocusedRect` | [Rect](../android/graphics/Rect.md)?: The rectangle, in this view's coordinate system, of the previously focused view. If applicable, this will be passed in as finer grained information about where the focus is coming from (in addition to direction). Will be `null` otherwise. |
+| `previouslyFocusedRect` | [Rect](../android.graphics/Rect.md)?: The rectangle, in this view's coordinate system, of the previously focused view. If applicable, this will be passed in as finer grained information about where the focus is coming from (in addition to direction). Will be `null` otherwise. |
 | --- | --- |
 
 ### onMeasure
@@ -11695,11 +11695,11 @@ protected open fun onVisibilityChanged(
 ): Unit
 ```
 
-Called when the visibility of the view or an ancestor of the view has changed. This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+Called when the visibility of the view or an ancestor of the view has changed. This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.
 
 | Parameters ||
 |---|---|
-| `changedView` | [View](../android/view/View.md): The view whose visibility changed. May be `this` or an ancestor view. This value cannot be `null`. |
+| `changedView` | [View](../android.view/View.md): The view whose visibility changed. May be `this` or an ancestor view. This value cannot be `null`. |
 | `visibility` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The new visibility, one of `https://developer.android.com/reference/kotlin/android/view/View.html#VISIBLE:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/View.html#INVISIBLE:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/view/View.html#GONE:kotlin.Int`. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/view/View.html#VISIBLE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View.html#INVISIBLE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View.html#GONE:kotlin.Int` |
 
 ### onWindowVisibilityChanged

@@ -8,7 +8,7 @@ class RenderNode
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.graphics.RenderNode](../android/graphics/RenderNode.md) |
+| ↳ | [android.graphics.RenderNode](RenderNode.md) |
 
 RenderNode is used to build hardware accelerated rendering hierarchies. Each RenderNode contains both a display list as well as a set of properties that affect the rendering of the display list. RenderNodes are used internally for all Views by default and are not typically used directly.
 
@@ -148,8 +148,8 @@ This is marginally faster than doing a more explicit up-front check if the value
 
 | Public methods ||
 |---|---|
-| [RecordingCanvas](../android/graphics/RecordingCanvas.md) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#beginRecording()()` Same as `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#beginRecording(kotlin.Int,%20kotlin.Int)` with the width \& height set to the RenderNode's own width \& height. |
-| [RecordingCanvas](../android/graphics/RecordingCanvas.md) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#beginRecording(kotlin.Int,%20kotlin.Int)(width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, height: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Starts recording a display list for the render node. |
+| [RecordingCanvas](RecordingCanvas.md) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#beginRecording()()` Same as `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#beginRecording(kotlin.Int,%20kotlin.Int)` with the width \& height set to the RenderNode's own width \& height. |
+| [RecordingCanvas](RecordingCanvas.md) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#beginRecording(kotlin.Int,%20kotlin.Int)(width: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, height: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Starts recording a display list for the render node. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#computeApproximateMemoryUsage()()` Gets the approximate memory usage of the RenderNode for debug purposes. |
 | --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#discardDisplayList()()` Reset native resources. |
@@ -482,7 +482,7 @@ Gets the current transform inverted. This is a faster way to do the otherwise eq
 
 | Parameters ||
 |---|---|
-| `outMatrix` | [Matrix](../android/graphics/Matrix.md): The matrix to store the inverse transform of the RenderNode. This value cannot be `null`. |
+| `outMatrix` | [Matrix](Matrix.md): The matrix to store the inverse transform of the RenderNode. This value cannot be `null`. |
 
 ### getLeft
 
@@ -510,7 +510,7 @@ Gets the current transform matrix
 
 | Parameters ||
 |---|---|
-| `outMatrix` | [Matrix](../android/graphics/Matrix.md): The matrix to store the transform of the RenderNode. This value cannot be `null`. |
+| `outMatrix` | [Matrix](Matrix.md): The matrix to store the transform of the RenderNode. This value cannot be `null`. |
 
 ### getPivotX
 
@@ -917,7 +917,7 @@ Configure the `https://developer.android.com/reference/kotlin/android/graphics/R
 
 | Parameters ||
 |---|---|
-| `renderEffect` | [RenderEffect](../android/graphics/RenderEffect.md)?: to be applied to the backdrop contents of this RenderNode. Passing null clears all previously configured RenderEffects |
+| `renderEffect` | [RenderEffect](RenderEffect.md)?: to be applied to the backdrop contents of this RenderNode. Passing null clears all previously configured RenderEffects |
 
 | Return ||
 |---|---|
@@ -964,7 +964,7 @@ This is equivalent to do a `https://developer.android.com/reference/kotlin/andro
 
 | Parameters ||
 |---|---|
-| `rect` | [Rect](../android/graphics/Rect.md)?: the bounds to clip to. If null, the additional clip is removed. |
+| `rect` | [Rect](Rect.md)?: the bounds to clip to. If null, the additional clip is removed. |
 
 | Return ||
 |---|---|
@@ -1073,7 +1073,7 @@ Sets the outline, defining the shape that casts a shadow, and the path to be cli
 
 | Parameters ||
 |---|---|
-| `outline` | [Outline](../android/graphics/Outline.md)?: The outline to use for this RenderNode. This value may be `null`. |
+| `outline` | [Outline](Outline.md)?: The outline to use for this RenderNode. This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -1137,7 +1137,7 @@ Sets the position of the RenderNode.
 
 | Parameters ||
 |---|---|
-| `position` | [Rect](../android/graphics/Rect.md): The position rectangle in pixels. This value cannot be `null`. |
+| `position` | [Rect](Rect.md): The position rectangle in pixels. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -1242,7 +1242,7 @@ Configure the `https://developer.android.com/reference/kotlin/android/graphics/R
 
 | Parameters ||
 |---|---|
-| `renderEffect` | [RenderEffect](../android/graphics/RenderEffect.md)?: to be applied to the RenderNode. Passing null clears all previously configured RenderEffects |
+| `renderEffect` | [RenderEffect](RenderEffect.md)?: to be applied to the RenderNode. Passing null clears all previously configured RenderEffects |
 
 | Return ||
 |---|---|
@@ -1470,7 +1470,7 @@ Note: When a RenderNode is using a compositing layer it will also result in clip
 | Parameters ||
 |---|---|
 | `forceToLayer` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): if true this forces the RenderNode to use an intermediate buffer. Default \& generally recommended value is false. |
-| `paint` | [Paint](../android/graphics/Paint.md)?: The blend mode, alpha, and ColorFilter to apply to the compositing layer. Only applies if forceToLayer is true. The paint's alpha is multiplied with `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#getAlpha()` to resolve the final alpha of the RenderNode. If null then no additional composition effects are applied on top of the composition layer. |
+| `paint` | [Paint](Paint.md)?: The blend mode, alpha, and ColorFilter to apply to the compositing layer. Only applies if forceToLayer is true. The paint's alpha is multiplied with `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#getAlpha()` to resolve the final alpha of the RenderNode. If null then no additional composition effects are applied on top of the composition layer. |
 
 | Return ||
 |---|---|

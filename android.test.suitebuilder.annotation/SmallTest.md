@@ -5,14 +5,14 @@ Deprecated in [API level 24](https://developer.android.com/guide/topics/manifest
 
 # SmallTest
 
-Kotlin| [Java](../android/test/suitebuilder/annotation/SmallTest.md) 
+Kotlin| [Java](SmallTest.md) 
 | --- | --- |
 
 ```
 @Target([AnnotationTarget.FUNCTION, AnnotationTarget.PROPERTY_GETTER, AnnotationTarget.PROPERTY_SETTER, AnnotationTarget.CLASS, AnnotationTarget.FILE]) class SmallTest
 ```
 
-| [android.test.suitebuilder.annotation.SmallTest](../android/test/suitebuilder/annotation/SmallTest.md) |
+| [android.test.suitebuilder.annotation.SmallTest](SmallTest.md) |
 
 | **This annotation was deprecated in API level 24.**
 |
@@ -24,7 +24,7 @@ Marks a test that should run as part of the small tests.
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SmallTest](../android/test/suitebuilder/annotation/SmallTest.md))`()` Marks a test that should run as part of the small tests. |
+| [SmallTest](SmallTest.md))`()` Marks a test that should run as part of the small tests. |
 
 ## Public constructors
 

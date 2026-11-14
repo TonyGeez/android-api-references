@@ -8,7 +8,7 @@ class ViewTreeObserver
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.ViewTreeObserver](../android/view/ViewTreeObserver.md) |
+| ↳ | [android.view.ViewTreeObserver](ViewTreeObserver.md) |
 
 A view tree observer is used to register listeners that can be notified of global changes in the view tree. Such global events include, but are not limited to, layout of the whole tree, beginning of the drawing pass, touch mode change.... A ViewTreeObserver should never be instantiated by applications as it is provided by the views hierarchy. Refer to `https://developer.android.com/reference/kotlin/android/view/View#getViewTreeObserver()` for more information.
 
@@ -169,7 +169,7 @@ Add a listener to be notified when the tree's *transformed* gesture exclusion re
 
 | Parameters ||
 |---|---|
-| `listener` | [Consumer](../java/util/function/Consumer.md)\< [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Rect](../android/graphics/Rect.md)!\>!\>: listener to add. This value cannot be `null`. |
+| `listener` | [Consumer](../java.util.function/Consumer.md)\< [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Rect](../android.graphics/Rect.md)!\>!\>: listener to add. This value cannot be `null`. |
 
 **See Also**
 
@@ -335,7 +335,7 @@ Adds a frame commit callback. This callback will be invoked when the current ren
 
 | Parameters ||
 |---|---|
-| `callback` | [Runnable](../java/lang/Runnable.md): The callback to invoke when the frame is committed. This value cannot be `null`. |
+| `callback` | [Runnable](../java.lang/Runnable.md): The callback to invoke when the frame is committed. This value cannot be `null`. |
 
 ### removeGlobalOnLayoutListener
 
@@ -486,7 +486,7 @@ Unsubscribe the given listener from gesture exclusion rect changes.
 
 | Parameters ||
 |---|---|
-| `listener` | [Consumer](../java/util/function/Consumer.md)\< [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Rect](../android/graphics/Rect.md)!\>!\>: This value cannot be `null`. |
+| `listener` | [Consumer](../java.util.function/Consumer.md)\< [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Rect](../android.graphics/Rect.md)!\>!\>: This value cannot be `null`. |
 
 **See Also**
 
@@ -611,7 +611,7 @@ Attempts to remove the given callback from the list of pending frame complete ca
 
 | Parameters ||
 |---|---|
-| `callback` | [Runnable](../java/lang/Runnable.md): The callback to remove. This value cannot be `null`. |
+| `callback` | [Runnable](../java.lang/Runnable.md): The callback to remove. This value cannot be `null`. |
 
 | Return ||
 |---|---|

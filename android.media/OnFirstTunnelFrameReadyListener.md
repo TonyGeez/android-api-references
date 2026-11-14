@@ -19,7 +19,7 @@ Listener to be called when the first output frame has been decoded and is ready 
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onFirstTunnelFrameReady](../android/media/MediaCodec.OnFirstTunnelFrameReadyListener.md))`(`codec:` ` [MediaCodec](../android/media/MediaCodec.md)`)` Called when the first output frame has been decoded and is ready to be rendered. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onFirstTunnelFrameReady](../android/media/MediaCodec.OnFirstTunnelFrameReadyListener.md))`(`codec:` ` [MediaCodec](MediaCodec.md)`)` Called when the first output frame has been decoded and is ready to be rendered. |
 
 ## Public methods
 
@@ -35,4 +35,4 @@ Called when the first output frame has been decoded and is ready to be rendered.
 
 | Parameters ||
 |---------|-------------------------------------------------------------------------------------------------------------------|
-| `codec` | [MediaCodec](../android/media/MediaCodec.md):This value cannot be`null`. |
+| `codec` | [MediaCodec](MediaCodec.md):This value cannot be`null`. |

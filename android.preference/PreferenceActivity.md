@@ -9,13 +9,13 @@ abstract class PreferenceActivity : ListActivity, PreferenceFragment.OnPrefere
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||||
 | --- | --- | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](../android/content/Context.md) ||||||
-| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) |||||
-| | | ↳ | [android.view.ContextThemeWrapper](../android/view/ContextThemeWrapper.md) ||||
+| ↳ | [android.content.Context](../android.content/Context.md) ||||||
+| | ↳ | [android.content.ContextWrapper](../android.content/ContextWrapper.md) |||||
+| | | ↳ | [android.view.ContextThemeWrapper](../android.view/ContextThemeWrapper.md) ||||
 | --- | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.app.Activity](../android/app/Activity.md) |||
-| | | | | ↳ | [android.app.ListActivity](../android/app/ListActivity.md) ||
-| | | | | | ↳ | [android.preference.PreferenceActivity](../android/preference/PreferenceActivity.md) |
+| | | | ↳ | [android.app.Activity](../android.app/Activity.md) |||
+| | | | | ↳ | [android.app.ListActivity](../android.app/ListActivity.md) ||
+| | | | | | ↳ | [android.preference.PreferenceActivity](PreferenceActivity.md) |
 | --- | --- | --- | --- | --- | --- | --- |
 
 > [!CAUTION]
@@ -1092,11 +1092,11 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 |---|---|
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/preference/PreferenceActivity#addPreferencesFromIntent(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Adds preferences from activities that match the given `https://developer.android.com/reference/kotlin/android/content/Intent.html#`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/preference/PreferenceActivity#addPreferencesFromResource(kotlin.Int)(preferencesResId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Inflates the given XML resource and adds the preference hierarchy to the current preference hierarchy. |
-| open [Preference](../android/preference/Preference.md)! | `https://developer.android.com/reference/kotlin/android/preference/PreferenceActivity#findPreference(kotlin.CharSequence)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Finds a `https://developer.android.com/reference/kotlin/android/preference/Preference` based on its key. |
+| open [Preference](Preference.md)! | `https://developer.android.com/reference/kotlin/android/preference/PreferenceActivity#findPreference(kotlin.CharSequence)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Finds a `https://developer.android.com/reference/kotlin/android/preference/Preference` based on its key. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/preference/PreferenceActivity#finishPreferencePanel(android.app.Fragment,%20kotlin.Int,%20android.content.Intent)(caller: https://developer.android.com/reference/kotlin/android/app/Fragment.html#!, resultCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, resultData: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Called by a preference panel fragment to finish itself. |
-| open [PreferenceManager](../android/preference/PreferenceManager.md)! | `https://developer.android.com/reference/kotlin/android/preference/PreferenceActivity#getPreferenceManager()()` Returns the `https://developer.android.com/reference/kotlin/android/preference/PreferenceManager` used by this activity. |
-| open [PreferenceScreen](../android/preference/PreferenceScreen.md)! | `https://developer.android.com/reference/kotlin/android/preference/PreferenceActivity#getPreferenceScreen()()` Gets the root of the preference hierarchy that this activity is showing. |
+| open [PreferenceManager](PreferenceManager.md)! | `https://developer.android.com/reference/kotlin/android/preference/PreferenceActivity#getPreferenceManager()()` Returns the `https://developer.android.com/reference/kotlin/android/preference/PreferenceManager` used by this activity. |
+| open [PreferenceScreen](PreferenceScreen.md)! | `https://developer.android.com/reference/kotlin/android/preference/PreferenceActivity#getPreferenceScreen()()` Gets the root of the preference hierarchy that this activity is showing. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/preference/PreferenceActivity#hasHeaders()()` Returns true if this activity is currently showing the header list. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/preference/PreferenceActivity#invalidateHeaders()()` Call when you need to change the headers being displayed. |
@@ -1106,7 +1106,7 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/preference/PreferenceActivity#onBackPressed()()` Called when the activity has detected the user's press of the back key. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/preference/PreferenceActivity#onBuildHeaders(kotlin.collections.MutableList)(target: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/preference/PreferenceActivity.Header!>!)` Called when the activity needs its list of headers build. |
 | --- | --- |
-| open [Intent](../android/content/Intent.md)! | `https://developer.android.com/reference/kotlin/android/preference/PreferenceActivity#onBuildStartFragmentIntent(kotlin.String,%20android.os.Bundle,%20kotlin.Int,%20kotlin.Int)(fragmentName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, args: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!, titleRes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, shortTitleRes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called by `https://developer.android.com/reference/kotlin/android/preference/PreferenceActivity#startWithFragment(kotlin.String,%20android.os.Bundle,%20android.app.Fragment,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)` when in single-pane mode, to build an Intent to launch a new activity showing the selected fragment. |
+| open [Intent](../android.content/Intent.md)! | `https://developer.android.com/reference/kotlin/android/preference/PreferenceActivity#onBuildStartFragmentIntent(kotlin.String,%20android.os.Bundle,%20kotlin.Int,%20kotlin.Int)(fragmentName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, args: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!, titleRes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, shortTitleRes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called by `https://developer.android.com/reference/kotlin/android/preference/PreferenceActivity#startWithFragment(kotlin.String,%20android.os.Bundle,%20android.app.Fragment,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)` when in single-pane mode, to build an Intent to launch a new activity showing the selected fragment. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/preference/PreferenceActivity#onContentChanged()()` Updates the screen state (current list and other views) when the content changes. |
 | open [PreferenceActivity.Header](../android/preference/PreferenceActivity.Header.md)! | `https://developer.android.com/reference/kotlin/android/preference/PreferenceActivity#onGetInitialHeader()()` Called to determine the initial header to be shown. |
 | --- | --- |
@@ -5090,7 +5090,7 @@ Adds preferences from activities that match the given `https://developer.android
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md)!: The `https://developer.android.com/reference/kotlin/android/content/Intent.html#` to query activities. |
+| `intent` | [Intent](../android.content/Intent.md)!: The `https://developer.android.com/reference/kotlin/android/content/Intent.html#` to query activities. |
 
 ### addPreferencesFromResource
 
@@ -5153,9 +5153,9 @@ Called by a preference panel fragment to finish itself.
 
 | Parameters ||
 |---|---|
-| `caller` | [Fragment](../android/app/Fragment.md)!: The fragment that is asking to be finished. |
+| `caller` | [Fragment](../android.app/Fragment.md)!: The fragment that is asking to be finished. |
 | `resultCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Optional result code to send back to the original launching fragment. |
-| `resultData` | [Intent](../android/content/Intent.md)!: Optional result data to send back to the original launching fragment. |
+| `resultData` | [Intent](../android.content/Intent.md)!: Optional result data to send back to the original launching fragment. |
 | --- | --- |
 
 ### getPreferenceManager
@@ -5314,7 +5314,7 @@ Called by `https://developer.android.com/reference/kotlin/android/preference/Pre
 | Parameters ||
 |---|---|
 | `fragmentName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The name of the fragment to display. |
-| `args` | [Bundle](../android/os/Bundle.md)!: Optional arguments to supply to the fragment. |
+| `args` | [Bundle](../android.os/Bundle.md)!: Optional arguments to supply to the fragment. |
 | `titleRes` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Optional resource ID of title to show for this item. |
 | --- | --- |
 | `shortTitleRes` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Optional resource ID of short title to show for this item. |
@@ -5424,7 +5424,7 @@ Derived classes should call through to the base class for it to perform the defa
 
 | Parameters ||
 |---|---|
-| `item` | [MenuItem](../android/view/MenuItem.md): The menu item that was selected. This value cannot be `null`. |
+| `item` | [MenuItem](../android.view/MenuItem.md): The menu item that was selected. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -5510,7 +5510,7 @@ Sets the root of the preference hierarchy that this activity is showing.
 
 | Parameters ||
 |---|---|
-| `preferenceScreen` | [PreferenceScreen](../android/preference/PreferenceScreen.md)!: The root `https://developer.android.com/reference/kotlin/android/preference/PreferenceScreen` of the preference hierarchy. |
+| `preferenceScreen` | [PreferenceScreen](PreferenceScreen.md)!: The root `https://developer.android.com/reference/kotlin/android/preference/PreferenceScreen` of the preference hierarchy. |
 
 ### showBreadCrumbs
 
@@ -5546,7 +5546,7 @@ Start a new fragment.
 
 | Parameters ||
 |---|---|
-| `fragment` | [Fragment](../android/app/Fragment.md)!: The fragment to start |
+| `fragment` | [Fragment](../android.app/Fragment.md)!: The fragment to start |
 | `push` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): If true, the current fragment will be pushed onto the back stack. If false, the current fragment will be replaced. |
 
 ### startPreferencePanel
@@ -5572,11 +5572,11 @@ Start a new fragment containing a preference panel. If the preferences are being
 | Parameters ||
 |---|---|
 | `fragmentClass` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: Full name of the class implementing the fragment. |
-| `args` | [Bundle](../android/os/Bundle.md)!: Any desired arguments to supply to the fragment. |
+| `args` | [Bundle](../android.os/Bundle.md)!: Any desired arguments to supply to the fragment. |
 | `titleRes` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Optional resource identifier of the title of this fragment. |
 | --- | --- |
 | `titleText` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!: Optional text of the title of this fragment. |
-| `resultTo` | [Fragment](../android/app/Fragment.md)!: Optional fragment that result data should be sent to. If non-null, resultTo.onActivityResult() will be called when this preference panel is done. The launched panel must use `https://developer.android.com/reference/kotlin/android/preference/PreferenceActivity#finishPreferencePanel(android.app.Fragment,%20kotlin.Int,%20android.content.Intent)` when done. |
+| `resultTo` | [Fragment](../android.app/Fragment.md)!: Optional fragment that result data should be sent to. If non-null, resultTo.onActivityResult() will be called when this preference panel is done. The launched panel must use `https://developer.android.com/reference/kotlin/android/preference/PreferenceActivity#finishPreferencePanel(android.app.Fragment,%20kotlin.Int,%20android.content.Intent)` when done. |
 | `resultRequestCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): If resultTo is non-null, this is the caller's request code to be received with the result. |
 | --- | --- |
 
@@ -5621,8 +5621,8 @@ Start a new instance of this activity, showing only the given preference fragmen
 | Parameters ||
 |---|---|
 | `fragmentName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The name of the fragment to display. |
-| `args` | [Bundle](../android/os/Bundle.md)!: Optional arguments to supply to the fragment. |
-| `resultTo` | [Fragment](../android/app/Fragment.md)!: Option fragment that should receive the result of the activity launch. |
+| `args` | [Bundle](../android.os/Bundle.md)!: Optional arguments to supply to the fragment. |
+| `resultTo` | [Fragment](../android.app/Fragment.md)!: Option fragment that should receive the result of the activity launch. |
 | --- | --- |
 | `resultRequestCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): If resultTo is non-null, this is the request code in which to report the result. |
 | `titleRes` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Resource ID of string to display for the title of this set of preferences. |
@@ -5665,7 +5665,7 @@ When in two-pane mode, switch the fragment pane to show the given preference fra
 | Parameters ||
 |---|---|
 | `fragmentName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The name of the fragment to display. |
-| `args` | [Bundle](../android/os/Bundle.md)!: Optional arguments to supply to the fragment. |
+| `args` | [Bundle](../android.os/Bundle.md)!: Optional arguments to supply to the fragment. |
 
 ## Protected methods
 
@@ -5714,7 +5714,7 @@ This method is never invoked if your activity sets `https://developer.android.co
 |---|---|
 | `requestCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The integer request code originally supplied to startActivityForResult(), allowing you to identify who this result came from. |
 | `resultCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The integer result code returned by the child activity through its setResult(). |
-| `data` | [Intent](../android/content/Intent.md)!: An Intent, which can return result data to the caller (various data can be attached to Intent "extras"). |
+| `data` | [Intent](../android.content/Intent.md)!: An Intent, which can return result data to the caller (various data can be attached to Intent "extras"). |
 | --- | --- |
 
 ### onCreate
@@ -5738,7 +5738,7 @@ If you override this method you *must* call through to the superclass implementa
 
 | Parameters ||
 |---|---|
-| `savedInstanceState` | [Bundle](../android/os/Bundle.md)?: This value may be `null`. |
+| `savedInstanceState` | [Bundle](../android.os/Bundle.md)?: This value may be `null`. |
 
 ### onDestroy
 
@@ -5777,8 +5777,8 @@ This method will be called when an item in the list is selected. Subclasses shou
 
 | Parameters ||
 |---|---|
-| `l` | [ListView](../android/widget/ListView.md)!: The ListView where the click happened |
-| `v` | [View](../android/view/View.md)!: The view that was clicked within the ListView |
+| `l` | [ListView](../android.widget/ListView.md)!: The ListView where the click happened |
+| `v` | [View](../android.view/View.md)!: The view that was clicked within the ListView |
 | `position` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The position of the view in the list |
 | --- | --- |
 | `id` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The row id of the item that was clicked |
@@ -5801,7 +5801,7 @@ Note that `https://developer.android.com/reference/kotlin/android/app/Activity.h
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md)!: The new intent that was used to start the activity |
+| `intent` | [Intent](../android.content/Intent.md)!: The new intent that was used to start the activity |
 
 ### onRestoreInstanceState
 
@@ -5841,7 +5841,7 @@ If called, this method will occur after `https://developer.android.com/reference
 
 | Parameters ||
 |---|---|
-| `outState` | [Bundle](../android/os/Bundle.md): Bundle in which to place your saved state. This value cannot be `null`. |
+| `outState` | [Bundle](../android.os/Bundle.md): Bundle in which to place your saved state. This value cannot be `null`. |
 
 ### onStop
 

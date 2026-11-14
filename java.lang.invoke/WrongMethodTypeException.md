@@ -11,10 +11,10 @@ open class WrongMethodTypeException : RuntimeException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
-| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) ||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) |||
+| | | ↳ | [java.lang.RuntimeException](../java.lang/RuntimeException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.invoke.WrongMethodTypeException](../java/lang/invoke/WrongMethodTypeException.md) |
+| | | | ↳ | [java.lang.invoke.WrongMethodTypeException](WrongMethodTypeException.md) |
 
 Thrown to indicate that code has attempted to call a method handle via the wrong method type. As with the bytecode representation of normal Java method calls, method handle calls are strongly typed to a specific type descriptor associated with a call site.
 
@@ -24,8 +24,8 @@ This exception may also be thrown when two method handles are composed, and the 
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [WrongMethodTypeException](../java/lang/invoke/WrongMethodTypeException.md))`()` Constructs a`WrongMethodTypeException`with no detail message. |
-| [WrongMethodTypeException](../java/lang/invoke/WrongMethodTypeException.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a`WrongMethodTypeException`with the specified detail message. |
+| [WrongMethodTypeException](WrongMethodTypeException.md))`()` Constructs a`WrongMethodTypeException`with no detail message. |
+| [WrongMethodTypeException](WrongMethodTypeException.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a`WrongMethodTypeException`with the specified detail message. |
 
 ## Public constructors
 

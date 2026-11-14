@@ -11,12 +11,12 @@ open class ClassFormatError : LinkageError
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Error](../java/lang/Error.md) |||
-| | | ↳ | [java.lang.LinkageError](../java/lang/LinkageError.md) ||
+| | ↳ | [java.lang.Error](Error.md) |||
+| | | ↳ | [java.lang.LinkageError](LinkageError.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.ClassFormatError](../java/lang/ClassFormatError.md) |
+| | | | ↳ | [java.lang.ClassFormatError](ClassFormatError.md) |
 
-| Known Direct Subclasses [GenericSignatureFormatError](../java/lang/reflect/GenericSignatureFormatError.md), [UnsupportedClassVersionError](../java/lang/UnsupportedClassVersionError.md) |-----------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [GenericSignatureFormatError](../java/lang/reflect/GenericSignatureFormatError.md) | Thrown when a syntactically malformed signature attribute is encountered by a reflective method that needs to interpret the generic signature information for a type, method or constructor. | | [UnsupportedClassVersionError](../java/lang/UnsupportedClassVersionError.md) | Thrown when the Java Virtual Machine attempts to read a class file and determines that the major and minor version numbers in the file are not supported. | |
+| Known Direct Subclasses [GenericSignatureFormatError](../java.lang.reflect/GenericSignatureFormatError.md), [UnsupportedClassVersionError](UnsupportedClassVersionError.md) |-----------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [GenericSignatureFormatError](../java.lang.reflect/GenericSignatureFormatError.md) | Thrown when a syntactically malformed signature attribute is encountered by a reflective method that needs to interpret the generic signature information for a type, method or constructor. | | [UnsupportedClassVersionError](UnsupportedClassVersionError.md) | Thrown when the Java Virtual Machine attempts to read a class file and determines that the major and minor version numbers in the file are not supported. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Thrown when the Java Virtual Machine attempts to read a class file and determines that the file is malformed or otherwise cannot be interpreted as a class file.
@@ -25,8 +25,8 @@ Thrown when the Java Virtual Machine attempts to read a class file and determine
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ClassFormatError](../java/lang/ClassFormatError.md))`()` Constructs a`ClassFormatError`with no detail message. |
-| [ClassFormatError](../java/lang/ClassFormatError.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a`ClassFormatError`with the specified detail message. |
+| [ClassFormatError](ClassFormatError.md))`()` Constructs a`ClassFormatError`with no detail message. |
+| [ClassFormatError](ClassFormatError.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a`ClassFormatError`with the specified detail message. |
 
 ## Public constructors
 

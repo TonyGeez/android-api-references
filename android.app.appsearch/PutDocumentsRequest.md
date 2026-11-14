@@ -4,7 +4,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # PutDocumentsRequest
 
-Kotlin| [Java](../android/app/appsearch/PutDocumentsRequest.md) 
+Kotlin| [Java](PutDocumentsRequest.md) 
 | --- | --- |
 
 ```
@@ -13,20 +13,20 @@ class PutDocumentsRequest
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.appsearch.PutDocumentsRequest](../android/app/appsearch/PutDocumentsRequest.md) |
+| ↳ | [android.app.appsearch.PutDocumentsRequest](PutDocumentsRequest.md) |
 
-Encapsulates a request to index documents into an [AppSearchSession](../android/app/appsearch/AppSearchSession.md) database.
+Encapsulates a request to index documents into an [AppSearchSession](AppSearchSession.md) database.
 
 ## Summary
 
 | Nested classes ||
 |---|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](../android/app/appsearch/PutDocumentsRequest.Builder.md) Builder for [PutDocumentsRequest](../android/app/appsearch/PutDocumentsRequest.md) objects. |
+| | [Builder](../android/app/appsearch/PutDocumentsRequest.Builder.md) Builder for [PutDocumentsRequest](PutDocumentsRequest.md) objects. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [GenericDocument](../android/app/appsearch/GenericDocument.md)!\> | [getGenericDocuments](../android/app/appsearch/PutDocumentsRequest.md))`()` Returns a list of [GenericDocument](../android/app/appsearch/GenericDocument.md) objects that are part of this request. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [GenericDocument](../android/app/appsearch/GenericDocument.md)!\> | [getTakenActionGenericDocuments](../android/app/appsearch/PutDocumentsRequest.md))`()` Returns a list of [GenericDocument](../android/app/appsearch/GenericDocument.md) objects containing taken action metrics that are part of this request. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [GenericDocument](GenericDocument.md)!\> | [getGenericDocuments](PutDocumentsRequest.md))`()` Returns a list of [GenericDocument](GenericDocument.md) objects that are part of this request. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [GenericDocument](GenericDocument.md)!\> | [getTakenActionGenericDocuments](PutDocumentsRequest.md))`()` Returns a list of [GenericDocument](GenericDocument.md) objects containing taken action metrics that are part of this request. |
 
 ## Public methods
 
@@ -38,11 +38,11 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 fun getGenericDocuments(): MutableList<GenericDocument!>
 ```
 
-Returns a list of [GenericDocument](../android/app/appsearch/GenericDocument.md) objects that are part of this request.
+Returns a list of [GenericDocument](GenericDocument.md) objects that are part of this request.
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [GenericDocument](../android/app/appsearch/GenericDocument.md)!> | This value cannot be`null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [GenericDocument](GenericDocument.md)!> | This value cannot be`null`. |
 
 ### getTakenActionGenericDocuments
 
@@ -53,10 +53,10 @@ Also in [T Extensions 13](https://developer.android.com/sdkExtensions)
 fun getTakenActionGenericDocuments(): MutableList<GenericDocument!>
 ```
 
-Returns a list of [GenericDocument](../android/app/appsearch/GenericDocument.md) objects containing taken action metrics that are part of this request.
+Returns a list of [GenericDocument](GenericDocument.md) objects containing taken action metrics that are part of this request.
 
 See [Builder.addTakenActionGenericDocuments(GenericDocument...)](../android/app/appsearch/PutDocumentsRequest.Builder.md)).
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [GenericDocument](../android/app/appsearch/GenericDocument.md)!> | This value cannot be`null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [GenericDocument](GenericDocument.md)!> | This value cannot be`null`. |

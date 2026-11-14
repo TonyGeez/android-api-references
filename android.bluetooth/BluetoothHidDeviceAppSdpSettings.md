@@ -2,7 +2,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 
 # BluetoothHidDeviceAppSdpSettings
 
-Kotlin | [Java](../android/bluetooth/BluetoothHidDeviceAppSdpSettings.md)
+Kotlin | [Java](BluetoothHidDeviceAppSdpSettings.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class BluetoothHidDeviceAppSdpSettings : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.bluetooth.BluetoothHidDeviceAppSdpSettings](../android/bluetooth/BluetoothHidDeviceAppSdpSettings.md) |
+| ↳ | [android.bluetooth.BluetoothHidDeviceAppSdpSettings](BluetoothHidDeviceAppSdpSettings.md) |
 
 Represents the Service Discovery Protocol (SDP) settings for a Bluetooth HID Device application.
 
@@ -41,7 +41,7 @@ The BluetoothHidDevice framework adds the SDP record during app registration, so
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [BluetoothHidDeviceAppSdpSettings](../android/bluetooth/BluetoothHidDeviceAppSdpSettings.md)!\> | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHidDeviceAppSdpSettings#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [BluetoothHidDeviceAppSdpSettings](BluetoothHidDeviceAppSdpSettings.md)!\> | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHidDeviceAppSdpSettings#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public constructors
 

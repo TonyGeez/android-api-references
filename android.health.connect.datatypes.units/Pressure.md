@@ -3,7 +3,7 @@ Also in [U Extensions 7](https://developer.android.com/sdkExtensions)
 
 # Pressure
 
-Kotlin | [Java](../android/health/connect/datatypes/units/Pressure.md)
+Kotlin | [Java](Pressure.md)
 | --- | --- |
 
 ```
@@ -12,7 +12,7 @@ class Pressure : Comparable<Pressure!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.health.connect.datatypes.units.Pressure](../android/health/connect/datatypes/units/Pressure.md) |
+| ↳ | [android.health.connect.datatypes.units.Pressure](Pressure.md) |
 
 Represents a unit of pressure. Supported units: millimeters of Mercury (mmHg)
 
@@ -22,7 +22,7 @@ Represents a unit of pressure. Supported units: millimeters of Mercury (mmHg)
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Pressure#compareTo(android.health.connect.datatypes.units.Pressure)(other: https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Pressure#)` Compares this object with the specified object for order. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Pressure#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| static [Pressure](../android/health/connect/datatypes/units/Pressure.md) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Pressure#fromMillimetersOfMercury(kotlin.Double)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Creates a Pressure object with the specified value in millimeters of Mercury (mmHg). |
+| static [Pressure](Pressure.md) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Pressure#fromMillimetersOfMercury(kotlin.Double)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)` Creates a Pressure object with the specified value in millimeters of Mercury (mmHg). |
 | --- | --- |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Pressure#getInMillimetersOfMercury()()` Returns pressure in millimeters of mercury |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/units/Pressure#hashCode()()` Returns a hash code value for the object. |
@@ -45,7 +45,7 @@ Compares this object with the specified object for order. Returns a negative int
 | Parameters ||
 |---|---|
 | `o` | the object to be compared. |
-| `other` | [Pressure](../android/health/connect/datatypes/units/Pressure.md): the object to be compared. This value cannot be `null`. |
+| `other` | [Pressure](Pressure.md): the object to be compared. This value cannot be `null`. |
 
 | Return ||
 |---|---|

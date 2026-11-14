@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # ContentResolver
 
-Kotlin| [Java](../android/content/ContentResolver.md) 
+Kotlin| [Java](ContentResolver.md) 
 | --- | --- |
 
 ```
@@ -13,9 +13,9 @@ abstract class ContentResolver
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.content.ContentResolver](../android/content/ContentResolver.md) |
+| ↳ | [android.content.ContentResolver](ContentResolver.md) |
 
-| Known Direct Subclasses [MockContentResolver](../android/test/mock/MockContentResolver.md) |-------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------| | [MockContentResolver](../android/test/mock/MockContentResolver.md) | An extension of [android.content.ContentResolver](../android/content/ContentResolver.md) that is designed for testing. | |
+| Known Direct Subclasses [MockContentResolver](../android.test.mock/MockContentResolver.md) |-------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------| | [MockContentResolver](../android.test.mock/MockContentResolver.md) | An extension of [android.content.ContentResolver](ContentResolver.md) that is designed for testing. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 This class provides applications access to the content model.
@@ -34,168 +34,168 @@ This class provides applications access to the content model.
 
 | Constants ||
 |----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ANY_CURSOR_ITEM_TYPE](../android/content/ContentResolver.md) This is the Android platform's generic MIME type to match any MIME type of the form " [CURSOR_ITEM_BASE_TYPE](../android/content/ContentResolver.md)/`SUB_TYPE`". |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CURSOR_DIR_BASE_TYPE](../android/content/ContentResolver.md) This is the Android platform's base MIME type for a content: URI containing a Cursor of zero or more items. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CURSOR_ITEM_BASE_TYPE](../android/content/ContentResolver.md) This is the Android platform's base MIME type for a content: URI containing a Cursor of a single item. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ANY_CURSOR_ITEM_TYPE](ContentResolver.md) This is the Android platform's generic MIME type to match any MIME type of the form " [CURSOR_ITEM_BASE_TYPE](ContentResolver.md)/`SUB_TYPE`". |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CURSOR_DIR_BASE_TYPE](ContentResolver.md) This is the Android platform's base MIME type for a content: URI containing a Cursor of zero or more items. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CURSOR_ITEM_BASE_TYPE](ContentResolver.md) This is the Android platform's base MIME type for a content: URI containing a Cursor of a single item. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_HONORED_ARGS](../android/content/ContentResolver.md) Allows provider to report back to client which query keys are honored in a Cursor. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_REFRESH_SUPPORTED](../android/content/ContentResolver.md) An extra boolean describing whether a particular provider supports refresh or not. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_SIZE](../android/content/ContentResolver.md) An extra [Point](../android/graphics/Point.md) describing the optimal size for a requested image resource, in pixels. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_HONORED_ARGS](ContentResolver.md) Allows provider to report back to client which query keys are honored in a Cursor. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_REFRESH_SUPPORTED](ContentResolver.md) An extra boolean describing whether a particular provider supports refresh or not. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_SIZE](ContentResolver.md) An extra [Point](../android.graphics/Point.md) describing the optimal size for a requested image resource, in pixels. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_TOTAL_COUNT](../android/content/ContentResolver.md) Added to [Cursor](../android/database/Cursor.md) extras [Bundle](../android/os/Bundle.md) to indicate total row count of recordset when paging is supported. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NOTIFY_DELETE](../android/content/ContentResolver.md) Flag for [notifyChange(android.net.Uri,android.database.ContentObserver,int)](../android/content/ContentResolver.md)): typically set by a [ContentProvider](../android/content/ContentProvider.md) to indicate that this notification is the result of a android. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NOTIFY_INSERT](../android/content/ContentResolver.md) Flag for [notifyChange(android.net.Uri,android.database.ContentObserver,int)](../android/content/ContentResolver.md)): typically set by a [ContentProvider](../android/content/ContentProvider.md) to indicate that this notification is the result of an android. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_TOTAL_COUNT](ContentResolver.md) Added to [Cursor](../android.database/Cursor.md) extras [Bundle](../android.os/Bundle.md) to indicate total row count of recordset when paging is supported. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NOTIFY_DELETE](ContentResolver.md) Flag for [notifyChange(android.net.Uri,android.database.ContentObserver,int)](ContentResolver.md)): typically set by a [ContentProvider](ContentProvider.md) to indicate that this notification is the result of a android. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NOTIFY_INSERT](ContentResolver.md) Flag for [notifyChange(android.net.Uri,android.database.ContentObserver,int)](ContentResolver.md)): typically set by a [ContentProvider](ContentProvider.md) to indicate that this notification is the result of an android. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NOTIFY_SKIP_NOTIFY_FOR_DESCENDANTS](../android/content/ContentResolver.md) Flag for [notifyChange(android.net.Uri,android.database.ContentObserver,int)](../android/content/ContentResolver.md)): if set, this notification will be skipped if it is being delivered to the root URI of a ContentObserver that is using "notify for descendants. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NOTIFY_SYNC_TO_NETWORK](../android/content/ContentResolver.md) Flag for [notifyChange(android.net.Uri,android.database.ContentObserver,int)](../android/content/ContentResolver.md)): attempt to sync the change to the network. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NOTIFY_UPDATE](../android/content/ContentResolver.md) Flag for [notifyChange(android.net.Uri,android.database.ContentObserver,int)](../android/content/ContentResolver.md)): typically set by a [ContentProvider](../android/content/ContentProvider.md) to indicate that this notification is the result of an android. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NOTIFY_SKIP_NOTIFY_FOR_DESCENDANTS](ContentResolver.md) Flag for [notifyChange(android.net.Uri,android.database.ContentObserver,int)](ContentResolver.md)): if set, this notification will be skipped if it is being delivered to the root URI of a ContentObserver that is using "notify for descendants. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NOTIFY_SYNC_TO_NETWORK](ContentResolver.md) Flag for [notifyChange(android.net.Uri,android.database.ContentObserver,int)](ContentResolver.md)): attempt to sync the change to the network. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NOTIFY_UPDATE](ContentResolver.md) Flag for [notifyChange(android.net.Uri,android.database.ContentObserver,int)](ContentResolver.md)): typically set by a [ContentProvider](ContentProvider.md) to indicate that this notification is the result of an android. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [QUERY_ARG_GROUP_COLUMNS](../android/content/ContentResolver.md) Specifies the list of columns (stored as a`String[]`) against which to group results. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [QUERY_ARG_LIMIT](../android/content/ContentResolver.md) Specifies the max number of rows to include in a Cursor. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [QUERY_ARG_OFFSET](../android/content/ContentResolver.md) Specifies the offset row index within a Cursor. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [QUERY_ARG_GROUP_COLUMNS](ContentResolver.md) Specifies the list of columns (stored as a`String[]`) against which to group results. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [QUERY_ARG_LIMIT](ContentResolver.md) Specifies the max number of rows to include in a Cursor. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [QUERY_ARG_OFFSET](ContentResolver.md) Specifies the offset row index within a Cursor. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [QUERY_ARG_SORT_COLLATION](../android/content/ContentResolver.md) Allows client to specify a hint to the provider declaring which collation to use when sorting values. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [QUERY_ARG_SORT_COLUMNS](../android/content/ContentResolver.md) Specifies the list of columns (stored as a`String[]`) against which to sort results. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [QUERY_ARG_SORT_DIRECTION](../android/content/ContentResolver.md) Specifies desired sort order. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [QUERY_ARG_SORT_COLLATION](ContentResolver.md) Allows client to specify a hint to the provider declaring which collation to use when sorting values. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [QUERY_ARG_SORT_COLUMNS](ContentResolver.md) Specifies the list of columns (stored as a`String[]`) against which to sort results. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [QUERY_ARG_SORT_DIRECTION](ContentResolver.md) Specifies desired sort order. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [QUERY_ARG_SORT_LOCALE](../android/content/ContentResolver.md) Allows client to specify a hint to the provider declaring which locale to use when sorting values. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [QUERY_ARG_SQL_GROUP_BY](../android/content/ContentResolver.md) Key for an SQL style`GROUP BY`string that may be present in the query Bundle argument passed to[ContentProvider.query(Uri, String[], Bundle, CancellationSignal)](https://developer.android.com/reference/kotlin/android/content/ContentProvider#query(android.net.Uri,%20kotlin.Array,%20android.os.Bundle,%20android.os.CancellationSignal)). |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [QUERY_ARG_SQL_HAVING](../android/content/ContentResolver.md) Key for an SQL style`HAVING`string that may be present in the query Bundle argument passed to[ContentProvider.query(Uri, String[], Bundle, CancellationSignal)](https://developer.android.com/reference/kotlin/android/content/ContentProvider#query(android.net.Uri,%20kotlin.Array,%20android.os.Bundle,%20android.os.CancellationSignal)). |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [QUERY_ARG_SORT_LOCALE](ContentResolver.md) Allows client to specify a hint to the provider declaring which locale to use when sorting values. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [QUERY_ARG_SQL_GROUP_BY](ContentResolver.md) Key for an SQL style`GROUP BY`string that may be present in the query Bundle argument passed to[ContentProvider.query(Uri, String[], Bundle, CancellationSignal)](https://developer.android.com/reference/kotlin/android/content/ContentProvider#query(android.net.Uri,%20kotlin.Array,%20android.os.Bundle,%20android.os.CancellationSignal)). |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [QUERY_ARG_SQL_HAVING](ContentResolver.md) Key for an SQL style`HAVING`string that may be present in the query Bundle argument passed to[ContentProvider.query(Uri, String[], Bundle, CancellationSignal)](https://developer.android.com/reference/kotlin/android/content/ContentProvider#query(android.net.Uri,%20kotlin.Array,%20android.os.Bundle,%20android.os.CancellationSignal)). |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [QUERY_ARG_SQL_LIMIT](../android/content/ContentResolver.md) Key for an SQL style`LIMIT`string that may be present in the query Bundle argument passed to[ContentProvider.query(Uri, String[], Bundle, CancellationSignal)](https://developer.android.com/reference/kotlin/android/content/ContentProvider#query(android.net.Uri,%20kotlin.Array,%20android.os.Bundle,%20android.os.CancellationSignal)). |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [QUERY_ARG_SQL_SELECTION](../android/content/ContentResolver.md) Key for an SQL style selection string that may be present in the query Bundle argument passed to[ContentProvider.query(Uri, String[], Bundle, CancellationSignal)](https://developer.android.com/reference/kotlin/android/content/ContentProvider#query(android.net.Uri,%20kotlin.Array,%20android.os.Bundle,%20android.os.CancellationSignal))when called by a legacy client. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [QUERY_ARG_SQL_SELECTION_ARGS](../android/content/ContentResolver.md) Key for SQL selection string arguments list. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [QUERY_ARG_SQL_LIMIT](ContentResolver.md) Key for an SQL style`LIMIT`string that may be present in the query Bundle argument passed to[ContentProvider.query(Uri, String[], Bundle, CancellationSignal)](https://developer.android.com/reference/kotlin/android/content/ContentProvider#query(android.net.Uri,%20kotlin.Array,%20android.os.Bundle,%20android.os.CancellationSignal)). |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [QUERY_ARG_SQL_SELECTION](ContentResolver.md) Key for an SQL style selection string that may be present in the query Bundle argument passed to[ContentProvider.query(Uri, String[], Bundle, CancellationSignal)](https://developer.android.com/reference/kotlin/android/content/ContentProvider#query(android.net.Uri,%20kotlin.Array,%20android.os.Bundle,%20android.os.CancellationSignal))when called by a legacy client. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [QUERY_ARG_SQL_SELECTION_ARGS](ContentResolver.md) Key for SQL selection string arguments list. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [QUERY_ARG_SQL_SORT_ORDER](../android/content/ContentResolver.md) Key for an SQL style sort string that may be present in the query Bundle argument passed to[ContentProvider.query(Uri, String[], Bundle, CancellationSignal)](https://developer.android.com/reference/kotlin/android/content/ContentProvider#query(android.net.Uri,%20kotlin.Array,%20android.os.Bundle,%20android.os.CancellationSignal))when called by a legacy client. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUERY_SORT_DIRECTION_ASCENDING](../android/content/ContentResolver.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUERY_SORT_DIRECTION_DESCENDING](../android/content/ContentResolver.md) <br /> |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [QUERY_ARG_SQL_SORT_ORDER](ContentResolver.md) Key for an SQL style sort string that may be present in the query Bundle argument passed to[ContentProvider.query(Uri, String[], Bundle, CancellationSignal)](https://developer.android.com/reference/kotlin/android/content/ContentProvider#query(android.net.Uri,%20kotlin.Array,%20android.os.Bundle,%20android.os.CancellationSignal))when called by a legacy client. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUERY_SORT_DIRECTION_ASCENDING](ContentResolver.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUERY_SORT_DIRECTION_DESCENDING](ContentResolver.md) <br /> |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SCHEME_ANDROID_RESOURCE](../android/content/ContentResolver.md) <br /> |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SCHEME_CONTENT](../android/content/ContentResolver.md) <br /> |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SCHEME_FILE](../android/content/ContentResolver.md) <br /> |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SCHEME_ANDROID_RESOURCE](ContentResolver.md) <br /> |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SCHEME_CONTENT](ContentResolver.md) <br /> |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SCHEME_FILE](ContentResolver.md) <br /> |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SYNC_EXTRAS_ACCOUNT](../android/content/ContentResolver.md) <br /> |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SYNC_EXTRAS_DISCARD_LOCAL_DELETIONS](../android/content/ContentResolver.md) Indicates that the sync adapter should not proceed with the delete operations, if it determines that there are too many. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SYNC_EXTRAS_DO_NOT_RETRY](../android/content/ContentResolver.md) If this extra is set to true then the request will not be retried if it fails. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SYNC_EXTRAS_ACCOUNT](ContentResolver.md) <br /> |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SYNC_EXTRAS_DISCARD_LOCAL_DELETIONS](ContentResolver.md) Indicates that the sync adapter should not proceed with the delete operations, if it determines that there are too many. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SYNC_EXTRAS_DO_NOT_RETRY](ContentResolver.md) If this extra is set to true then the request will not be retried if it fails. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SYNC_EXTRAS_EXPEDITED](../android/content/ContentResolver.md) If this extra is set to true, the sync request will be scheduled at the front of the sync request queue, but it is still subject to JobScheduler quota and throttling due to App Standby buckets. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SYNC_EXTRAS_FORCE](../android/content/ContentResolver.md) <br /> |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SYNC_EXTRAS_IGNORE_BACKOFF](../android/content/ContentResolver.md) If this extra is set to true then any backoffs for the initial attempt (e.g. due to retries) are ignored by the sync scheduler. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SYNC_EXTRAS_EXPEDITED](ContentResolver.md) If this extra is set to true, the sync request will be scheduled at the front of the sync request queue, but it is still subject to JobScheduler quota and throttling due to App Standby buckets. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SYNC_EXTRAS_FORCE](ContentResolver.md) <br /> |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SYNC_EXTRAS_IGNORE_BACKOFF](ContentResolver.md) If this extra is set to true then any backoffs for the initial attempt (e.g. due to retries) are ignored by the sync scheduler. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SYNC_EXTRAS_IGNORE_SETTINGS](../android/content/ContentResolver.md) If this extra is set to true then the sync settings (like getSyncAutomatically()) are ignored by the sync scheduler. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SYNC_EXTRAS_INITIALIZE](../android/content/ContentResolver.md) Set by the SyncManager to request that the SyncAdapter initialize itself for the given account/authority pair. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SYNC_EXTRAS_MANUAL](../android/content/ContentResolver.md) Setting this extra is the equivalent of setting both [SYNC_EXTRAS_IGNORE_SETTINGS](../android/content/ContentResolver.md) and [SYNC_EXTRAS_IGNORE_BACKOFF](../android/content/ContentResolver.md) |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SYNC_EXTRAS_IGNORE_SETTINGS](ContentResolver.md) If this extra is set to true then the sync settings (like getSyncAutomatically()) are ignored by the sync scheduler. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SYNC_EXTRAS_INITIALIZE](ContentResolver.md) Set by the SyncManager to request that the SyncAdapter initialize itself for the given account/authority pair. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SYNC_EXTRAS_MANUAL](ContentResolver.md) Setting this extra is the equivalent of setting both [SYNC_EXTRAS_IGNORE_SETTINGS](ContentResolver.md) and [SYNC_EXTRAS_IGNORE_BACKOFF](ContentResolver.md) |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SYNC_EXTRAS_OVERRIDE_TOO_MANY_DELETIONS](../android/content/ContentResolver.md) Indicates that the sync adapter should proceed with the delete operations, even if it determines that there are too many. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SYNC_EXTRAS_REQUIRE_CHARGING](../android/content/ContentResolver.md) If this extra is set to true, the sync request will be scheduled only when the device is plugged in. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SYNC_EXTRAS_SCHEDULE_AS_EXPEDITED_JOB](../android/content/ContentResolver.md) Run this sync operation as an "expedited job" (see [android.app.job.JobInfo.Builder#setExpedited(boolean)](../android/app/job/JobInfo.Builder.md))). |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SYNC_EXTRAS_OVERRIDE_TOO_MANY_DELETIONS](ContentResolver.md) Indicates that the sync adapter should proceed with the delete operations, even if it determines that there are too many. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SYNC_EXTRAS_REQUIRE_CHARGING](ContentResolver.md) If this extra is set to true, the sync request will be scheduled only when the device is plugged in. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SYNC_EXTRAS_SCHEDULE_AS_EXPEDITED_JOB](ContentResolver.md) Run this sync operation as an "expedited job" (see [android.app.job.JobInfo.Builder#setExpedited(boolean)](../android/app/job/JobInfo.Builder.md))). |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SYNC_EXTRAS_UPLOAD](../android/content/ContentResolver.md) Indicates that this sync is intended to only upload local changes to the server. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SYNC_OBSERVER_TYPE_ACTIVE](../android/content/ContentResolver.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SYNC_OBSERVER_TYPE_PENDING](../android/content/ContentResolver.md) <br /> |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SYNC_EXTRAS_UPLOAD](ContentResolver.md) Indicates that this sync is intended to only upload local changes to the server. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SYNC_OBSERVER_TYPE_ACTIVE](ContentResolver.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SYNC_OBSERVER_TYPE_PENDING](ContentResolver.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SYNC_OBSERVER_TYPE_SETTINGS](../android/content/ContentResolver.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SYNC_OBSERVER_TYPE_SETTINGS](ContentResolver.md) <br /> |
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ContentResolver](../android/content/ContentResolver.md))`(`context:` ` [Context](../android/content/Context.md)?`)` Note: passing a`null`context here could lead to unexpected behavior in certain ContentResolver APIs so it is highly recommended to pass a non-null context here. |
+| [ContentResolver](ContentResolver.md))`(`context:` ` [Context](Context.md)?`)` Note: passing a`null`context here could lead to unexpected behavior in certain ContentResolver APIs so it is highly recommended to pass a non-null context here. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [ContentProviderClient](../android/content/ContentProviderClient.md)? | [acquireContentProviderClient](../android/content/ContentResolver.md))`(`uri:` ` [Uri](../android/net/Uri.md)`)` Returns a [ContentProviderClient](../android/content/ContentProviderClient.md) that is associated with the [ContentProvider](../android/content/ContentProvider.md) that services the content at uri, starting the provider if necessary. |
-| [ContentProviderClient](../android/content/ContentProviderClient.md)? | [acquireContentProviderClient](../android/content/ContentResolver.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns a [ContentProviderClient](../android/content/ContentProviderClient.md) that is associated with the [ContentProvider](../android/content/ContentProvider.md) with the authority of name, starting the provider if necessary. |
-| [ContentProviderClient](../android/content/ContentProviderClient.md)? | [acquireUnstableContentProviderClient](../android/content/ContentResolver.md))`(`uri:` ` [Uri](../android/net/Uri.md)`)` Like [acquireContentProviderClient(android.net.Uri)](../android/content/ContentResolver.md)), but for use when you do not trust the stability of the target content provider. |
+| [ContentProviderClient](ContentProviderClient.md)? | [acquireContentProviderClient](ContentResolver.md))`(`uri:` ` [Uri](../android.net/Uri.md)`)` Returns a [ContentProviderClient](ContentProviderClient.md) that is associated with the [ContentProvider](ContentProvider.md) that services the content at uri, starting the provider if necessary. |
+| [ContentProviderClient](ContentProviderClient.md)? | [acquireContentProviderClient](ContentResolver.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns a [ContentProviderClient](ContentProviderClient.md) that is associated with the [ContentProvider](ContentProvider.md) with the authority of name, starting the provider if necessary. |
+| [ContentProviderClient](ContentProviderClient.md)? | [acquireUnstableContentProviderClient](ContentResolver.md))`(`uri:` ` [Uri](../android.net/Uri.md)`)` Like [acquireContentProviderClient(android.net.Uri)](ContentResolver.md)), but for use when you do not trust the stability of the target content provider. |
 | --- | --- |
-| [ContentProviderClient](../android/content/ContentProviderClient.md)? | [acquireUnstableContentProviderClient](../android/content/ContentResolver.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Like [acquireContentProviderClient(java.lang.String)](../android/content/ContentResolver.md)), but for use when you do not trust the stability of the target content provider. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addPeriodicSync](../android/content/ContentResolver.md))`(`account:` ` [Account](../android/accounts/Account.md)!`, `authority:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `extras:` ` [Bundle](../android/os/Bundle.md)!`, `pollFrequency:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Specifies that a sync should be requested with the specified the account, authority, and extras at the given frequency. |
-| openstatic [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [addStatusChangeListener](../android/content/ContentResolver.md))`(`mask:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `callback:` ` [SyncStatusObserver](../android/content/SyncStatusObserver.md)!`)` Request notifications when the different aspects of the SyncManager change. |
+| [ContentProviderClient](ContentProviderClient.md)? | [acquireUnstableContentProviderClient](ContentResolver.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Like [acquireContentProviderClient(java.lang.String)](ContentResolver.md)), but for use when you do not trust the stability of the target content provider. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addPeriodicSync](ContentResolver.md))`(`account:` ` [Account](../android.accounts/Account.md)!`, `authority:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `extras:` ` [Bundle](../android.os/Bundle.md)!`, `pollFrequency:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Specifies that a sync should be requested with the specified the account, authority, and extras at the given frequency. |
+| openstatic [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [addStatusChangeListener](ContentResolver.md))`(`mask:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `callback:` ` [SyncStatusObserver](SyncStatusObserver.md)!`)` Request notifications when the different aspects of the SyncManager change. |
 | --- | --- |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ContentProviderResult](../android/content/ContentProviderResult.md)!\> | [applyBatch](../android/content/ContentResolver.md))`(`authority:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `operations:` ` [ArrayList](../java/util/ArrayList.md)< [ContentProviderOperation](../android/content/ContentProviderOperation.md)!>`)` Applies each of the [ContentProviderOperation](../android/content/ContentProviderOperation.md) objects and returns an array of their results. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [bulkInsert](../android/content/ContentResolver.md))`(`url:` ` [Uri](../android/net/Uri.md)`, `values:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ContentValues](../android/content/ContentValues.md)!>`)` Inserts multiple rows into a table at the given URL. |
-| [Bundle](../android/os/Bundle.md)? | [call](../android/content/ContentResolver.md))`(`uri:` ` [Uri](../android/net/Uri.md)`, `method:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `arg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `extras:` ` [Bundle](../android/os/Bundle.md)?`)` Call a provider-defined method. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ContentProviderResult](ContentProviderResult.md)!\> | [applyBatch](ContentResolver.md))`(`authority:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `operations:` ` [ArrayList](../java.util/ArrayList.md)< [ContentProviderOperation](ContentProviderOperation.md)!>`)` Applies each of the [ContentProviderOperation](ContentProviderOperation.md) objects and returns an array of their results. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [bulkInsert](ContentResolver.md))`(`url:` ` [Uri](../android.net/Uri.md)`, `values:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ContentValues](ContentValues.md)!>`)` Inserts multiple rows into a table at the given URL. |
+| [Bundle](../android.os/Bundle.md)? | [call](ContentResolver.md))`(`uri:` ` [Uri](../android.net/Uri.md)`, `method:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `arg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `extras:` ` [Bundle](../android.os/Bundle.md)?`)` Call a provider-defined method. |
 | --- | --- |
-| [Bundle](../android/os/Bundle.md)? | [call](../android/content/ContentResolver.md))`(`authority:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `method:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `arg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `extras:` ` [Bundle](../android/os/Bundle.md)?`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [cancelSync](../android/content/ContentResolver.md))`(`uri:` ` [Uri](../android/net/Uri.md)!`)` Cancel any active or pending syncs that match the Uri. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [cancelSync](../android/content/ContentResolver.md))`(`account:` ` [Account](../android/accounts/Account.md)!`, `authority:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Cancel any active or pending syncs that match account and authority. |
+| [Bundle](../android.os/Bundle.md)? | [call](ContentResolver.md))`(`authority:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `method:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `arg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `extras:` ` [Bundle](../android.os/Bundle.md)?`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [cancelSync](ContentResolver.md))`(`uri:` ` [Uri](../android.net/Uri.md)!`)` Cancel any active or pending syncs that match the Uri. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [cancelSync](ContentResolver.md))`(`account:` ` [Account](../android.accounts/Account.md)!`, `authority:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Cancel any active or pending syncs that match account and authority. |
 | --- | --- |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [cancelSync](../android/content/ContentResolver.md))`(`request:` ` [SyncRequest](../android/content/SyncRequest.md)!`)` Remove the specified sync. |
-| [Uri](../android/net/Uri.md)? | [canonicalize](../android/content/ContentResolver.md))`(`url:` ` [Uri](../android/net/Uri.md)`)` Transform the given url to a canonical representation of its referenced resource, which can be used across devices, persisted, backed up and restored, etc. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [delete](../android/content/ContentResolver.md))`(`url:` ` [Uri](../android/net/Uri.md)`, `extras:` ` [Bundle](../android/os/Bundle.md)?`)` Deletes row(s) specified by a content URI. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [cancelSync](ContentResolver.md))`(`request:` ` [SyncRequest](SyncRequest.md)!`)` Remove the specified sync. |
+| [Uri](../android.net/Uri.md)? | [canonicalize](ContentResolver.md))`(`url:` ` [Uri](../android.net/Uri.md)`)` Transform the given url to a canonical representation of its referenced resource, which can be used across devices, persisted, backed up and restored, etc. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [delete](ContentResolver.md))`(`url:` ` [Uri](../android.net/Uri.md)`, `extras:` ` [Bundle](../android.os/Bundle.md)?`)` Deletes row(s) specified by a content URI. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [delete](../android/content/ContentResolver.md))`(`url:` ` [Uri](../android/net/Uri.md)`, `where:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `selectionArgs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>?`)` Deletes row(s) specified by a content URI. |
-| openstatic [SyncInfo](../android/content/SyncInfo.md)! | [getCurrentSync](../android/content/ContentResolver.md))`()` If a sync is active returns the information about it, otherwise returns null. |
-| openstatic [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SyncInfo](../android/content/SyncInfo.md)!\>! | [getCurrentSyncs](../android/content/ContentResolver.md))`()` Returns a list with information about all the active syncs. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [delete](ContentResolver.md))`(`url:` ` [Uri](../android.net/Uri.md)`, `where:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `selectionArgs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>?`)` Deletes row(s) specified by a content URI. |
+| openstatic [SyncInfo](SyncInfo.md)! | [getCurrentSync](ContentResolver.md))`()` If a sync is active returns the information about it, otherwise returns null. |
+| openstatic [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SyncInfo](SyncInfo.md)!\>! | [getCurrentSyncs](ContentResolver.md))`()` Returns a list with information about all the active syncs. |
 | --- | --- |
-| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIsSyncable](../android/content/ContentResolver.md))`(`account:` ` [Account](../android/accounts/Account.md)!`, `authority:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Check if this account/provider is syncable. |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getMasterSyncAutomatically](../android/content/ContentResolver.md))`()` Gets the global auto-sync setting that applies to all the providers and accounts. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [UriPermission](../android/content/UriPermission.md)!\> | [getOutgoingPersistedUriPermissions](../android/content/ContentResolver.md))`()` Return list of all persisted URI permission grants that are hosted by the calling app. |
+| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIsSyncable](ContentResolver.md))`(`account:` ` [Account](../android.accounts/Account.md)!`, `authority:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Check if this account/provider is syncable. |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getMasterSyncAutomatically](ContentResolver.md))`()` Gets the global auto-sync setting that applies to all the providers and accounts. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [UriPermission](UriPermission.md)!\> | [getOutgoingPersistedUriPermissions](ContentResolver.md))`()` Return list of all persisted URI permission grants that are hosted by the calling app. |
 | --- | --- |
-| openstatic [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PeriodicSync](../android/content/PeriodicSync.md)!\>! | [getPeriodicSyncs](../android/content/ContentResolver.md))`(`account:` ` [Account](../android/accounts/Account.md)!`, `authority:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Get the list of information about the periodic syncs for the given account and authority. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [UriPermission](../android/content/UriPermission.md)!\> | [getPersistedUriPermissions](../android/content/ContentResolver.md))`()` Return list of all URI permission grants that have been persisted by the calling app. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | [getStreamTypes](../android/content/ContentResolver.md))`(`url:` ` [Uri](../android/net/Uri.md)`, `mimeTypeFilter:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Query for the possible MIME types for the representations the given content URL can be returned when opened as as stream with #openTypedAssetFileDescriptor. |
+| openstatic [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PeriodicSync](PeriodicSync.md)!\>! | [getPeriodicSyncs](ContentResolver.md))`(`account:` ` [Account](../android.accounts/Account.md)!`, `authority:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Get the list of information about the periodic syncs for the given account and authority. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [UriPermission](UriPermission.md)!\> | [getPersistedUriPermissions](ContentResolver.md))`()` Return list of all URI permission grants that have been persisted by the calling app. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | [getStreamTypes](ContentResolver.md))`(`url:` ` [Uri](../android.net/Uri.md)`, `mimeTypeFilter:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Query for the possible MIME types for the representations the given content URL can be returned when opened as as stream with #openTypedAssetFileDescriptor. |
 | --- | --- |
-| openstatic [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [SyncAdapterType](../android/content/SyncAdapterType.md)!\>! | [getSyncAdapterTypes](../android/content/ContentResolver.md))`()` Get information about the SyncAdapters that are known to the system. |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getSyncAutomatically](../android/content/ContentResolver.md))`(`account:` ` [Account](../android/accounts/Account.md)!`, `authority:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Check if the provider should be synced when a network tickle is received |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getType](../android/content/ContentResolver.md))`(`url:` ` [Uri](../android/net/Uri.md)`)` Return the MIME type of the given content URL. |
+| openstatic [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [SyncAdapterType](SyncAdapterType.md)!\>! | [getSyncAdapterTypes](ContentResolver.md))`()` Get information about the SyncAdapters that are known to the system. |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getSyncAutomatically](ContentResolver.md))`(`account:` ` [Account](../android.accounts/Account.md)!`, `authority:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Check if the provider should be synced when a network tickle is received |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getType](ContentResolver.md))`(`url:` ` [Uri](../android.net/Uri.md)`)` Return the MIME type of the given content URL. |
 | --- | --- |
-| [ContentResolver.MimeTypeInfo](../android/content/ContentResolver.MimeTypeInfo.md) | [getTypeInfo](../android/content/ContentResolver.md))`(`mimeType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Return a detailed description of the given MIME type, including an icon and label that describe the type. |
-| [Uri](../android/net/Uri.md)? | [insert](../android/content/ContentResolver.md))`(`url:` ` [Uri](../android/net/Uri.md)`, `values:` ` [ContentValues](../android/content/ContentValues.md)?`)` Inserts a row into a table at the given URL. |
-| [Uri](../android/net/Uri.md)? | [insert](../android/content/ContentResolver.md))`(`url:` ` [Uri](../android/net/Uri.md)`, `values:` ` [ContentValues](../android/content/ContentValues.md)?`, `extras:` ` [Bundle](../android/os/Bundle.md)?`)` Inserts a row into a table at the given URL. |
+| [ContentResolver.MimeTypeInfo](../android/content/ContentResolver.MimeTypeInfo.md) | [getTypeInfo](ContentResolver.md))`(`mimeType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Return a detailed description of the given MIME type, including an icon and label that describe the type. |
+| [Uri](../android.net/Uri.md)? | [insert](ContentResolver.md))`(`url:` ` [Uri](../android.net/Uri.md)`, `values:` ` [ContentValues](ContentValues.md)?`)` Inserts a row into a table at the given URL. |
+| [Uri](../android.net/Uri.md)? | [insert](ContentResolver.md))`(`url:` ` [Uri](../android.net/Uri.md)`, `values:` ` [ContentValues](ContentValues.md)?`, `extras:` ` [Bundle](../android.os/Bundle.md)?`)` Inserts a row into a table at the given URL. |
 | --- | --- |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSyncActive](../android/content/ContentResolver.md))`(`account:` ` [Account](../android/accounts/Account.md)!`, `authority:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns true if there is currently a sync operation for the given account or authority actively being processed. |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSyncPending](../android/content/ContentResolver.md))`(`account:` ` [Account](../android/accounts/Account.md)!`, `authority:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Return true if the pending status is true of any matching authorities. |
-| open [Bitmap](../android/graphics/Bitmap.md) | [loadThumbnail](../android/content/ContentResolver.md))`(`uri:` ` [Uri](../android/net/Uri.md)`, `size:` ` [Size](../android/util/Size.md)`, `signal:` ` [CancellationSignal](../android/os/CancellationSignal.md)?`)` Convenience method that efficiently loads a visual thumbnail for the given [Uri](../android/net/Uri.md). |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSyncActive](ContentResolver.md))`(`account:` ` [Account](../android.accounts/Account.md)!`, `authority:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns true if there is currently a sync operation for the given account or authority actively being processed. |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSyncPending](ContentResolver.md))`(`account:` ` [Account](../android.accounts/Account.md)!`, `authority:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Return true if the pending status is true of any matching authorities. |
+| open [Bitmap](../android.graphics/Bitmap.md) | [loadThumbnail](ContentResolver.md))`(`uri:` ` [Uri](../android.net/Uri.md)`, `size:` ` [Size](../android.util/Size.md)`, `signal:` ` [CancellationSignal](../android.os/CancellationSignal.md)?`)` Convenience method that efficiently loads a visual thumbnail for the given [Uri](../android.net/Uri.md). |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [notifyChange](../android/content/ContentResolver.md))`(`uri:` ` [Uri](../android/net/Uri.md)`, `observer:` ` [ContentObserver](../android/database/ContentObserver.md)?`)` Notify registered observers that a row was updated and attempt to sync changes to the network. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [notifyChange](../android/content/ContentResolver.md))`(`uri:` ` [Uri](../android/net/Uri.md)`, `observer:` ` [ContentObserver](../android/database/ContentObserver.md)?`, `syncToNetwork:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Notify registered observers that a row was updated. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [notifyChange](../android/content/ContentResolver.md))`(`uri:` ` [Uri](../android/net/Uri.md)`, `observer:` ` [ContentObserver](../android/database/ContentObserver.md)?`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Notify registered observers that a row was updated. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [notifyChange](ContentResolver.md))`(`uri:` ` [Uri](../android.net/Uri.md)`, `observer:` ` [ContentObserver](../android.database/ContentObserver.md)?`)` Notify registered observers that a row was updated and attempt to sync changes to the network. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [notifyChange](ContentResolver.md))`(`uri:` ` [Uri](../android.net/Uri.md)`, `observer:` ` [ContentObserver](../android.database/ContentObserver.md)?`, `syncToNetwork:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Notify registered observers that a row was updated. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [notifyChange](ContentResolver.md))`(`uri:` ` [Uri](../android.net/Uri.md)`, `observer:` ` [ContentObserver](../android.database/ContentObserver.md)?`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Notify registered observers that a row was updated. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [notifyChange](../android/content/ContentResolver.md))`(`uris:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)< [Uri](../android/net/Uri.md)!>`, `observer:` ` [ContentObserver](../android/database/ContentObserver.md)?`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Notify registered observers that several rows have been updated. |
-| [AssetFileDescriptor](../android/content/res/AssetFileDescriptor.md)? | [openAssetFile](../android/content/ContentResolver.md))`(`uri:` ` [Uri](../android/net/Uri.md)`, `mode:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `signal:` ` [CancellationSignal](../android/os/CancellationSignal.md)?`)` <br /> |
-| [AssetFileDescriptor](../android/content/res/AssetFileDescriptor.md)? | [openAssetFileDescriptor](../android/content/ContentResolver.md))`(`uri:` ` [Uri](../android/net/Uri.md)`, `mode:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Open a raw file descriptor to access data under a URI. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [notifyChange](ContentResolver.md))`(`uris:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)< [Uri](../android.net/Uri.md)!>`, `observer:` ` [ContentObserver](../android.database/ContentObserver.md)?`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Notify registered observers that several rows have been updated. |
+| [AssetFileDescriptor](../android.content.res/AssetFileDescriptor.md)? | [openAssetFile](ContentResolver.md))`(`uri:` ` [Uri](../android.net/Uri.md)`, `mode:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `signal:` ` [CancellationSignal](../android.os/CancellationSignal.md)?`)` <br /> |
+| [AssetFileDescriptor](../android.content.res/AssetFileDescriptor.md)? | [openAssetFileDescriptor](ContentResolver.md))`(`uri:` ` [Uri](../android.net/Uri.md)`, `mode:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Open a raw file descriptor to access data under a URI. |
 | --- | --- |
-| [AssetFileDescriptor](../android/content/res/AssetFileDescriptor.md)? | [openAssetFileDescriptor](../android/content/ContentResolver.md))`(`uri:` ` [Uri](../android/net/Uri.md)`, `mode:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `cancellationSignal:` ` [CancellationSignal](../android/os/CancellationSignal.md)?`)` Open a raw file descriptor to access data under a URI. |
-| [ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md)? | [openFile](../android/content/ContentResolver.md))`(`uri:` ` [Uri](../android/net/Uri.md)`, `mode:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `signal:` ` [CancellationSignal](../android/os/CancellationSignal.md)?`)` <br /> |
-| [ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md)? | [openFileDescriptor](../android/content/ContentResolver.md))`(`uri:` ` [Uri](../android/net/Uri.md)`, `mode:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Open a raw file descriptor to access data under a URI. |
+| [AssetFileDescriptor](../android.content.res/AssetFileDescriptor.md)? | [openAssetFileDescriptor](ContentResolver.md))`(`uri:` ` [Uri](../android.net/Uri.md)`, `mode:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `cancellationSignal:` ` [CancellationSignal](../android.os/CancellationSignal.md)?`)` Open a raw file descriptor to access data under a URI. |
+| [ParcelFileDescriptor](../android.os/ParcelFileDescriptor.md)? | [openFile](ContentResolver.md))`(`uri:` ` [Uri](../android.net/Uri.md)`, `mode:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `signal:` ` [CancellationSignal](../android.os/CancellationSignal.md)?`)` <br /> |
+| [ParcelFileDescriptor](../android.os/ParcelFileDescriptor.md)? | [openFileDescriptor](ContentResolver.md))`(`uri:` ` [Uri](../android.net/Uri.md)`, `mode:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Open a raw file descriptor to access data under a URI. |
 | --- | --- |
-| [ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md)? | [openFileDescriptor](../android/content/ContentResolver.md))`(`uri:` ` [Uri](../android/net/Uri.md)`, `mode:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `cancellationSignal:` ` [CancellationSignal](../android/os/CancellationSignal.md)?`)` Open a raw file descriptor to access data under a URI. |
-| [InputStream](../java/io/InputStream.md)? | [openInputStream](../android/content/ContentResolver.md))`(`uri:` ` [Uri](../android/net/Uri.md)`)` Open a stream on to the content associated with a content URI. |
-| [OutputStream](../java/io/OutputStream.md)? | [openOutputStream](../android/content/ContentResolver.md))`(`uri:` ` [Uri](../android/net/Uri.md)`)` Synonym for [openOutputStream(uri, "w")](../android/content/ContentResolver.md)). |
+| [ParcelFileDescriptor](../android.os/ParcelFileDescriptor.md)? | [openFileDescriptor](ContentResolver.md))`(`uri:` ` [Uri](../android.net/Uri.md)`, `mode:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `cancellationSignal:` ` [CancellationSignal](../android.os/CancellationSignal.md)?`)` Open a raw file descriptor to access data under a URI. |
+| [InputStream](../java.io/InputStream.md)? | [openInputStream](ContentResolver.md))`(`uri:` ` [Uri](../android.net/Uri.md)`)` Open a stream on to the content associated with a content URI. |
+| [OutputStream](../java.io/OutputStream.md)? | [openOutputStream](ContentResolver.md))`(`uri:` ` [Uri](../android.net/Uri.md)`)` Synonym for [openOutputStream(uri, "w")](ContentResolver.md)). |
 | --- | --- |
-| [OutputStream](../java/io/OutputStream.md)? | [openOutputStream](../android/content/ContentResolver.md))`(`uri:` ` [Uri](../android/net/Uri.md)`, `mode:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Open a stream on to the content associated with a content URI. |
-| [AssetFileDescriptor](../android/content/res/AssetFileDescriptor.md)? | [openTypedAssetFile](../android/content/ContentResolver.md))`(`uri:` ` [Uri](../android/net/Uri.md)`, `mimeTypeFilter:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `opts:` ` [Bundle](../android/os/Bundle.md)?`, `signal:` ` [CancellationSignal](../android/os/CancellationSignal.md)?`)` <br /> |
-| [AssetFileDescriptor](../android/content/res/AssetFileDescriptor.md)? | [openTypedAssetFileDescriptor](../android/content/ContentResolver.md))`(`uri:` ` [Uri](../android/net/Uri.md)`, `mimeType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `opts:` ` [Bundle](../android/os/Bundle.md)?`)` Open a raw file descriptor to access (potentially type transformed) data from a "content:" URI. |
+| [OutputStream](../java.io/OutputStream.md)? | [openOutputStream](ContentResolver.md))`(`uri:` ` [Uri](../android.net/Uri.md)`, `mode:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Open a stream on to the content associated with a content URI. |
+| [AssetFileDescriptor](../android.content.res/AssetFileDescriptor.md)? | [openTypedAssetFile](ContentResolver.md))`(`uri:` ` [Uri](../android.net/Uri.md)`, `mimeTypeFilter:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `opts:` ` [Bundle](../android.os/Bundle.md)?`, `signal:` ` [CancellationSignal](../android.os/CancellationSignal.md)?`)` <br /> |
+| [AssetFileDescriptor](../android.content.res/AssetFileDescriptor.md)? | [openTypedAssetFileDescriptor](ContentResolver.md))`(`uri:` ` [Uri](../android.net/Uri.md)`, `mimeType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `opts:` ` [Bundle](../android.os/Bundle.md)?`)` Open a raw file descriptor to access (potentially type transformed) data from a "content:" URI. |
 | --- | --- |
-| [AssetFileDescriptor](../android/content/res/AssetFileDescriptor.md)? | [openTypedAssetFileDescriptor](../android/content/ContentResolver.md))`(`uri:` ` [Uri](../android/net/Uri.md)`, `mimeType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `opts:` ` [Bundle](../android/os/Bundle.md)?`, `cancellationSignal:` ` [CancellationSignal](../android/os/CancellationSignal.md)?`)` Open a raw file descriptor to access (potentially type transformed) data from a "content:" URI. |
-| [Cursor](../android/database/Cursor.md)? | [query](../android/content/ContentResolver.md))`(`uri:` ` [Uri](../android/net/Uri.md)`, `projection:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>?`, `queryArgs:` ` [Bundle](../android/os/Bundle.md)?`, `cancellationSignal:` ` [CancellationSignal](../android/os/CancellationSignal.md)?`)` Query the given URI, returning a [Cursor](../android/database/Cursor.md) over the result set with support for cancellation. |
-| [Cursor](../android/database/Cursor.md)? | [query](../android/content/ContentResolver.md))`(`uri:` ` [Uri](../android/net/Uri.md)`, `projection:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>?`, `selection:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `selectionArgs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>?`, `sortOrder:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Query the given URI, returning a [Cursor](../android/database/Cursor.md) over the result set. |
+| [AssetFileDescriptor](../android.content.res/AssetFileDescriptor.md)? | [openTypedAssetFileDescriptor](ContentResolver.md))`(`uri:` ` [Uri](../android.net/Uri.md)`, `mimeType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `opts:` ` [Bundle](../android.os/Bundle.md)?`, `cancellationSignal:` ` [CancellationSignal](../android.os/CancellationSignal.md)?`)` Open a raw file descriptor to access (potentially type transformed) data from a "content:" URI. |
+| [Cursor](../android.database/Cursor.md)? | [query](ContentResolver.md))`(`uri:` ` [Uri](../android.net/Uri.md)`, `projection:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>?`, `queryArgs:` ` [Bundle](../android.os/Bundle.md)?`, `cancellationSignal:` ` [CancellationSignal](../android.os/CancellationSignal.md)?`)` Query the given URI, returning a [Cursor](../android.database/Cursor.md) over the result set with support for cancellation. |
+| [Cursor](../android.database/Cursor.md)? | [query](ContentResolver.md))`(`uri:` ` [Uri](../android.net/Uri.md)`, `projection:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>?`, `selection:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `selectionArgs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>?`, `sortOrder:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Query the given URI, returning a [Cursor](../android.database/Cursor.md) over the result set. |
 | --- | --- |
-| [Cursor](../android/database/Cursor.md)? | [query](../android/content/ContentResolver.md))`(`uri:` ` [Uri](../android/net/Uri.md)`, `projection:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>?`, `selection:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `selectionArgs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>?`, `sortOrder:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `cancellationSignal:` ` [CancellationSignal](../android/os/CancellationSignal.md)?`)` Query the given URI, returning a [Cursor](../android/database/Cursor.md) over the result set with optional support for cancellation. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [refresh](../android/content/ContentResolver.md))`(`url:` ` [Uri](../android/net/Uri.md)`, `extras:` ` [Bundle](../android/os/Bundle.md)?`, `cancellationSignal:` ` [CancellationSignal](../android/os/CancellationSignal.md)?`)` This allows clients to request an explicit refresh of content identified by`uri`. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerContentObserver](../android/content/ContentResolver.md))`(`uri:` ` [Uri](../android/net/Uri.md)`, `notifyForDescendants:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `observer:` ` [ContentObserver](../android/database/ContentObserver.md)`)` Register an observer class that gets callbacks when data identified by a given content URI changes. |
+| [Cursor](../android.database/Cursor.md)? | [query](ContentResolver.md))`(`uri:` ` [Uri](../android.net/Uri.md)`, `projection:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>?`, `selection:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `selectionArgs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>?`, `sortOrder:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `cancellationSignal:` ` [CancellationSignal](../android.os/CancellationSignal.md)?`)` Query the given URI, returning a [Cursor](../android.database/Cursor.md) over the result set with optional support for cancellation. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [refresh](ContentResolver.md))`(`url:` ` [Uri](../android.net/Uri.md)`, `extras:` ` [Bundle](../android.os/Bundle.md)?`, `cancellationSignal:` ` [CancellationSignal](../android.os/CancellationSignal.md)?`)` This allows clients to request an explicit refresh of content identified by`uri`. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerContentObserver](ContentResolver.md))`(`uri:` ` [Uri](../android.net/Uri.md)`, `notifyForDescendants:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `observer:` ` [ContentObserver](../android.database/ContentObserver.md)`)` Register an observer class that gets callbacks when data identified by a given content URI changes. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [releasePersistableUriPermission](../android/content/ContentResolver.md))`(`uri:` ` [Uri](../android/net/Uri.md)`, `modeFlags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Relinquish a persisted URI permission grant. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removePeriodicSync](../android/content/ContentResolver.md))`(`account:` ` [Account](../android/accounts/Account.md)!`, `authority:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `extras:` ` [Bundle](../android/os/Bundle.md)!`)` Remove a periodic sync. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeStatusChangeListener](../android/content/ContentResolver.md))`(`handle:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Remove a previously registered status change listener. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [releasePersistableUriPermission](ContentResolver.md))`(`uri:` ` [Uri](../android.net/Uri.md)`, `modeFlags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Relinquish a persisted URI permission grant. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removePeriodicSync](ContentResolver.md))`(`account:` ` [Account](../android.accounts/Account.md)!`, `authority:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `extras:` ` [Bundle](../android.os/Bundle.md)!`)` Remove a periodic sync. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeStatusChangeListener](ContentResolver.md))`(`handle:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Remove a previously registered status change listener. |
 | --- | --- |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [requestSync](../android/content/ContentResolver.md))`(`account:` ` [Account](../android/accounts/Account.md)!`, `authority:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `extras:` ` [Bundle](../android/os/Bundle.md)!`)` Start an asynchronous sync operation. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [requestSync](../android/content/ContentResolver.md))`(`request:` ` [SyncRequest](../android/content/SyncRequest.md)!`)` Register a sync with the SyncManager. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setIsSyncable](../android/content/ContentResolver.md))`(`account:` ` [Account](../android/accounts/Account.md)!`, `authority:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `syncable:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set whether this account/provider is syncable. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [requestSync](ContentResolver.md))`(`account:` ` [Account](../android.accounts/Account.md)!`, `authority:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `extras:` ` [Bundle](../android.os/Bundle.md)!`)` Start an asynchronous sync operation. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [requestSync](ContentResolver.md))`(`request:` ` [SyncRequest](SyncRequest.md)!`)` Register a sync with the SyncManager. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setIsSyncable](ContentResolver.md))`(`account:` ` [Account](../android.accounts/Account.md)!`, `authority:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `syncable:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set whether this account/provider is syncable. |
 | --- | --- |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMasterSyncAutomatically](../android/content/ContentResolver.md))`(`sync:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets the global auto-sync setting that applies to all the providers and accounts. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSyncAutomatically](../android/content/ContentResolver.md))`(`account:` ` [Account](../android/accounts/Account.md)!`, `authority:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `sync:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Set whether or not the provider is synced when it receives a network tickle. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startSync](../android/content/ContentResolver.md))`(`uri:` ` [Uri](../android/net/Uri.md)!`, `extras:` ` [Bundle](../android/os/Bundle.md)!`)` Start an asynchronous sync operation. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMasterSyncAutomatically](ContentResolver.md))`(`sync:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets the global auto-sync setting that applies to all the providers and accounts. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSyncAutomatically](ContentResolver.md))`(`account:` ` [Account](../android.accounts/Account.md)!`, `authority:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `sync:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Set whether or not the provider is synced when it receives a network tickle. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startSync](ContentResolver.md))`(`uri:` ` [Uri](../android.net/Uri.md)!`, `extras:` ` [Bundle](../android.os/Bundle.md)!`)` Start an asynchronous sync operation. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [takePersistableUriPermission](../android/content/ContentResolver.md))`(`uri:` ` [Uri](../android/net/Uri.md)`, `modeFlags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Take a persistable URI permission grant that has been offered. |
-| [Uri](../android/net/Uri.md)? | [uncanonicalize](../android/content/ContentResolver.md))`(`url:` ` [Uri](../android/net/Uri.md)`)` Given a canonical Uri previously generated by [canonicalize](../android/content/ContentResolver.md)), convert it to its local non-canonical form. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterContentObserver](../android/content/ContentResolver.md))`(`observer:` ` [ContentObserver](../android/database/ContentObserver.md)`)` Unregisters a change observer. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [takePersistableUriPermission](ContentResolver.md))`(`uri:` ` [Uri](../android.net/Uri.md)`, `modeFlags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Take a persistable URI permission grant that has been offered. |
+| [Uri](../android.net/Uri.md)? | [uncanonicalize](ContentResolver.md))`(`url:` ` [Uri](../android.net/Uri.md)`)` Given a canonical Uri previously generated by [canonicalize](ContentResolver.md)), convert it to its local non-canonical form. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterContentObserver](ContentResolver.md))`(`observer:` ` [ContentObserver](../android.database/ContentObserver.md)`)` Unregisters a change observer. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [update](../android/content/ContentResolver.md))`(`uri:` ` [Uri](../android/net/Uri.md)`, `values:` ` [ContentValues](../android/content/ContentValues.md)?`, `extras:` ` [Bundle](../android/os/Bundle.md)?`)` Update row(s) in a content URI. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [update](../android/content/ContentResolver.md))`(`uri:` ` [Uri](../android/net/Uri.md)`, `values:` ` [ContentValues](../android/content/ContentValues.md)?`, `where:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `selectionArgs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>?`)` Update row(s) in a content URI. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [validateSyncExtrasBundle](../android/content/ContentResolver.md))`(`extras:` ` [Bundle](../android/os/Bundle.md)!`)` Check that only values of the following types are in the Bundle: - Integer - Long - Boolean - Float - Double - String - Account - null <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [update](ContentResolver.md))`(`uri:` ` [Uri](../android.net/Uri.md)`, `values:` ` [ContentValues](ContentValues.md)?`, `extras:` ` [Bundle](../android.os/Bundle.md)?`)` Update row(s) in a content URI. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [update](ContentResolver.md))`(`uri:` ` [Uri](../android.net/Uri.md)`, `values:` ` [ContentValues](ContentValues.md)?`, `where:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `selectionArgs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>?`)` Update row(s) in a content URI. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [validateSyncExtrasBundle](ContentResolver.md))`(`extras:` ` [Bundle](../android.os/Bundle.md)!`)` Check that only values of the following types are in the Bundle: - Integer - Long - Boolean - Float - Double - String - Account - null <br /> |
 | --- | --- |
-| openstatic [ContentResolver](../android/content/ContentResolver.md) | [wrap](../android/content/ContentResolver.md))`(`wrapped:` ` [ContentProvider](../android/content/ContentProvider.md)`)` Create a [ContentResolver](../android/content/ContentResolver.md) instance that redirects all its methods to the given [ContentProvider](../android/content/ContentProvider.md). |
-| openstatic [ContentResolver](../android/content/ContentResolver.md) | [wrap](../android/content/ContentResolver.md))`(`wrapped:` ` [ContentProviderClient](../android/content/ContentProviderClient.md)`)` Create a [ContentResolver](../android/content/ContentResolver.md) instance that redirects all its methods to the given [ContentProviderClient](../android/content/ContentProviderClient.md). |
+| openstatic [ContentResolver](ContentResolver.md) | [wrap](ContentResolver.md))`(`wrapped:` ` [ContentProvider](ContentProvider.md)`)` Create a [ContentResolver](ContentResolver.md) instance that redirects all its methods to the given [ContentProvider](ContentProvider.md). |
+| openstatic [ContentResolver](ContentResolver.md) | [wrap](ContentResolver.md))`(`wrapped:` ` [ContentProviderClient](ContentProviderClient.md)`)` Create a [ContentResolver](ContentResolver.md) instance that redirects all its methods to the given [ContentProviderClient](ContentProviderClient.md). |
 
 ## Constants
 
@@ -207,7 +207,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val ANY_CURSOR_ITEM_TYPE: String
 ```
 
-This is the Android platform's generic MIME type to match any MIME type of the form " [CURSOR_ITEM_BASE_TYPE](../android/content/ContentResolver.md)/`SUB_TYPE`".`SUB_TYPE`is the sub-type of the application-dependent content, e.g., "audio", "video", "playlist". 
+This is the Android platform's generic MIME type to match any MIME type of the form " [CURSOR_ITEM_BASE_TYPE](ContentResolver.md)/`SUB_TYPE`".`SUB_TYPE`is the sub-type of the application-dependent content, e.g., "audio", "video", "playlist". 
 
  Value: "vnd.android.cursor.item/*"
 
@@ -221,7 +221,7 @@ static val CURSOR_DIR_BASE_TYPE: String
 
 This is the Android platform's base MIME type for a content: URI containing a Cursor of zero or more items. Applications should use this as the base type along with their own sub-type of their content: URIs that represent a directory of items. For example, hypothetical IMAP email client may have a URI`content://com.company.provider.imap/inbox`for all of the messages in its inbox, whose MIME type would be reported as`CURSOR_DIR_BASE_TYPE + "/vnd.company.imap-msg"`
 
-Note how the base MIME type varies between this and [CURSOR_ITEM_BASE_TYPE](../android/content/ContentResolver.md) depending on whether there is one single item or multiple items in the data set, while the sub-type remains the same because in either case the data structure contained in the cursor is the same. 
+Note how the base MIME type varies between this and [CURSOR_ITEM_BASE_TYPE](ContentResolver.md) depending on whether there is one single item or multiple items in the data set, while the sub-type remains the same because in either case the data structure contained in the cursor is the same. 
 
  Value: "vnd.android.cursor.dir"
 
@@ -235,7 +235,7 @@ static val CURSOR_ITEM_BASE_TYPE: String
 
 This is the Android platform's base MIME type for a content: URI containing a Cursor of a single item. Applications should use this as the base type along with their own sub-type of their content: URIs that represent a particular item. For example, hypothetical IMAP email client may have a URI`content://com.company.provider.imap/inbox/1`for a particular message in the inbox, whose MIME type would be reported as`CURSOR_ITEM_BASE_TYPE + "/vnd.company.imap-msg"`
 
-Compare with [CURSOR_DIR_BASE_TYPE](../android/content/ContentResolver.md). 
+Compare with [CURSOR_DIR_BASE_TYPE](ContentResolver.md). 
 
  Value: "vnd.android.cursor.item"
 
@@ -249,7 +249,7 @@ static val EXTRA_HONORED_ARGS: String
 
 Allows provider to report back to client which query keys are honored in a Cursor.
 
-Key identifying a`String[]`containing all QUERY_ARG_SORT\* arguments honored by the provider. Include this in [Cursor](../android/database/Cursor.md) extras [Bundle](../android/os/Bundle.md) when any QUERY_ARG_SORT\* value was honored during the preparation of the results [Cursor](../android/database/Cursor.md).
+Key identifying a`String[]`containing all QUERY_ARG_SORT\* arguments honored by the provider. Include this in [Cursor](../android.database/Cursor.md) extras [Bundle](../android.os/Bundle.md) when any QUERY_ARG_SORT\* value was honored during the preparation of the results [Cursor](../android.database/Cursor.md).
 
 If present, ALL honored arguments are enumerated in this extra's payload. 
 
@@ -257,11 +257,11 @@ If present, ALL honored arguments are enumerated in this extra's payload.
 
 **See Also**
 
-- [#QUERY_ARG_SORT_COLUMNS](../android/content/ContentResolver.md)
-- [#QUERY_ARG_SORT_DIRECTION](../android/content/ContentResolver.md)
-- [#QUERY_ARG_SORT_COLLATION](../android/content/ContentResolver.md)
-- [#QUERY_ARG_SORT_LOCALE](../android/content/ContentResolver.md)
-- [#QUERY_ARG_GROUP_COLUMNS](../android/content/ContentResolver.md) 
+- [#QUERY_ARG_SORT_COLUMNS](ContentResolver.md)
+- [#QUERY_ARG_SORT_DIRECTION](ContentResolver.md)
+- [#QUERY_ARG_SORT_COLLATION](ContentResolver.md)
+- [#QUERY_ARG_SORT_LOCALE](ContentResolver.md)
+- [#QUERY_ARG_GROUP_COLUMNS](ContentResolver.md) 
 
 ### EXTRA_REFRESH_SUPPORTED
 
@@ -283,15 +283,15 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_SIZE: String
 ```
 
-An extra [Point](../android/graphics/Point.md) describing the optimal size for a requested image resource, in pixels. If a provider has multiple sizes of the image, it should return the image closest to this size. 
+An extra [Point](../android.graphics/Point.md) describing the optimal size for a requested image resource, in pixels. If a provider has multiple sizes of the image, it should return the image closest to this size. 
 
  Value: "android.content.extra.SIZE"
 
 **See Also**
 
-- [#openTypedAssetFileDescriptor(Uri, String, Bundle)](../android/content/ContentResolver.md))
+- [#openTypedAssetFileDescriptor(Uri, String, Bundle)](ContentResolver.md))
 - [#openTypedAssetFileDescriptor(Uri, String, Bundle,
-* CancellationSignal)](../android/content/ContentResolver.md)) 
+* CancellationSignal)](ContentResolver.md)) 
 
 ### EXTRA_TOTAL_COUNT
 
@@ -301,7 +301,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_TOTAL_COUNT: String
 ```
 
-Added to [Cursor](../android/database/Cursor.md) extras [Bundle](../android/os/Bundle.md) to indicate total row count of recordset when paging is supported. Providers must include this when implementing paging support.
+Added to [Cursor](../android.database/Cursor.md) extras [Bundle](../android.os/Bundle.md) to indicate total row count of recordset when paging is supported. Providers must include this when implementing paging support.
 
 A provider may return -1 that row count of the recordset is unknown.
 
@@ -317,7 +317,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 static val NOTIFY_DELETE: Int
 ```
 
-Flag for [notifyChange(android.net.Uri,android.database.ContentObserver,int)](../android/content/ContentResolver.md)): typically set by a [ContentProvider](../android/content/ContentProvider.md) to indicate that this notification is the result of a android.content.ContentProvider#delete call.
+Flag for [notifyChange(android.net.Uri,android.database.ContentObserver,int)](ContentResolver.md)): typically set by a [ContentProvider](ContentProvider.md) to indicate that this notification is the result of a android.content.ContentProvider#delete call.
 
 Sending these detailed flags are optional, but providers are strongly recommended to send them. 
 
@@ -331,7 +331,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 static val NOTIFY_INSERT: Int
 ```
 
-Flag for [notifyChange(android.net.Uri,android.database.ContentObserver,int)](../android/content/ContentResolver.md)): typically set by a [ContentProvider](../android/content/ContentProvider.md) to indicate that this notification is the result of an android.content.ContentProvider#insert call.
+Flag for [notifyChange(android.net.Uri,android.database.ContentObserver,int)](ContentResolver.md)): typically set by a [ContentProvider](ContentProvider.md) to indicate that this notification is the result of an android.content.ContentProvider#insert call.
 
 Sending these detailed flags are optional, but providers are strongly recommended to send them. 
 
@@ -345,7 +345,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val NOTIFY_SKIP_NOTIFY_FOR_DESCENDANTS: Int
 ```
 
-Flag for [notifyChange(android.net.Uri,android.database.ContentObserver,int)](../android/content/ContentResolver.md)): if set, this notification will be skipped if it is being delivered to the root URI of a ContentObserver that is using "notify for descendants." The purpose of this is to allow the provide to send a general notification of "something under X" changed that observers of that specific URI can receive, while also sending a specific URI under X. It would use this flag when sending the former, so that observers of "X and descendants" only see the latter. 
+Flag for [notifyChange(android.net.Uri,android.database.ContentObserver,int)](ContentResolver.md)): if set, this notification will be skipped if it is being delivered to the root URI of a ContentObserver that is using "notify for descendants." The purpose of this is to allow the provide to send a general notification of "something under X" changed that observers of that specific URI can receive, while also sending a specific URI under X. It would use this flag when sending the former, so that observers of "X and descendants" only see the latter. 
 
  Value: 2
 
@@ -357,7 +357,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val NOTIFY_SYNC_TO_NETWORK: Int
 ```
 
-Flag for [notifyChange(android.net.Uri,android.database.ContentObserver,int)](../android/content/ContentResolver.md)): attempt to sync the change to the network. 
+Flag for [notifyChange(android.net.Uri,android.database.ContentObserver,int)](ContentResolver.md)): attempt to sync the change to the network. 
 
  Value: 1
 
@@ -369,7 +369,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 static val NOTIFY_UPDATE: Int
 ```
 
-Flag for [notifyChange(android.net.Uri,android.database.ContentObserver,int)](../android/content/ContentResolver.md)): typically set by a [ContentProvider](../android/content/ContentProvider.md) to indicate that this notification is the result of an android.content.ContentProvider#update call.
+Flag for [notifyChange(android.net.Uri,android.database.ContentObserver,int)](ContentResolver.md)): typically set by a [ContentProvider](ContentProvider.md) to indicate that this notification is the result of an android.content.ContentProvider#update call.
 
 Sending these detailed flags are optional, but providers are strongly recommended to send them. 
 
@@ -388,8 +388,8 @@ Specifies the list of columns (stored as a`String[]`) against which to group res
 Columns present in this list must also be included in the projection supplied to[ContentResolver.query(Uri, String[], Bundle, CancellationSignal)](https://developer.android.com/reference/kotlin/android/content/ContentResolver#query(android.net.Uri,%20kotlin.Array,%20android.os.Bundle,%20android.os.CancellationSignal)).
 
 Apps targeting [android.os.Build.VERSION_CODES#R](../android/os/Build.VERSION_CODES.md) or higher:
-- [ContentProvider](../android/content/ContentProvider.md) implementations: When preparing data in[ContentProvider.query(Uri, String[], Bundle, CancellationSignal)](https://developer.android.com/reference/kotlin/android/content/ContentProvider#query(android.net.Uri,%20kotlin.Array,%20android.os.Bundle,%20android.os.CancellationSignal)), if group columns is reflected in the returned Cursor, it is strongly recommended that [QUERY_ARG_SORT_COLUMNS](../android/content/ContentResolver.md) then be included in the array of honored arguments reflected in [Cursor](../android/database/Cursor.md) extras [Bundle](../android/os/Bundle.md) under [EXTRA_HONORED_ARGS](../android/content/ContentResolver.md).
-- When querying a provider, where no QUERY_ARG_SQL\* otherwise exists in the arguments [Bundle](../android/os/Bundle.md), the Content framework will attempt to synthesize an QUERY_ARG_SQL\* argument using the corresponding QUERY_ARG_SORT\* values. 
+- [ContentProvider](ContentProvider.md) implementations: When preparing data in[ContentProvider.query(Uri, String[], Bundle, CancellationSignal)](https://developer.android.com/reference/kotlin/android/content/ContentProvider#query(android.net.Uri,%20kotlin.Array,%20android.os.Bundle,%20android.os.CancellationSignal)), if group columns is reflected in the returned Cursor, it is strongly recommended that [QUERY_ARG_SORT_COLUMNS](ContentResolver.md) then be included in the array of honored arguments reflected in [Cursor](../android.database/Cursor.md) extras [Bundle](../android.os/Bundle.md) under [EXTRA_HONORED_ARGS](ContentResolver.md).
+- When querying a provider, where no QUERY_ARG_SQL\* otherwise exists in the arguments [Bundle](../android.os/Bundle.md), the Content framework will attempt to synthesize an QUERY_ARG_SQL\* argument using the corresponding QUERY_ARG_SORT\* values. 
 
  Value: "android:query-arg-group-columns"
 
@@ -429,18 +429,18 @@ Allows client to specify a hint to the provider declaring which collation to use
 
 Providers may support custom collators. When specifying a custom collator the value is determined by the Provider.
 
-[ContentProvider](../android/content/ContentProvider.md) implementations: When preparing data in[ContentProvider.query(Uri, String[], Bundle, CancellationSignal)](https://developer.android.com/reference/kotlin/android/content/ContentProvider#query(android.net.Uri,%20kotlin.Array,%20android.os.Bundle,%20android.os.CancellationSignal)), if sort collation is reflected in the returned Cursor, it is strongly recommended that [QUERY_ARG_SORT_COLLATION](../android/content/ContentResolver.md) then be included in the array of honored arguments reflected in [Cursor](../android/database/Cursor.md) extras [Bundle](../android/os/Bundle.md) under [EXTRA_HONORED_ARGS](../android/content/ContentResolver.md).
+[ContentProvider](ContentProvider.md) implementations: When preparing data in[ContentProvider.query(Uri, String[], Bundle, CancellationSignal)](https://developer.android.com/reference/kotlin/android/content/ContentProvider#query(android.net.Uri,%20kotlin.Array,%20android.os.Bundle,%20android.os.CancellationSignal)), if sort collation is reflected in the returned Cursor, it is strongly recommended that [QUERY_ARG_SORT_COLLATION](ContentResolver.md) then be included in the array of honored arguments reflected in [Cursor](../android.database/Cursor.md) extras [Bundle](../android.os/Bundle.md) under [EXTRA_HONORED_ARGS](ContentResolver.md).
 
-When querying a provider, where no QUERY_ARG_SQL\* otherwise exists in the arguments [Bundle](../android/os/Bundle.md), the Content framework will attempt to synthesize a QUERY_ARG_SQL\* argument using the corresponding QUERY_ARG_SORT\* values. 
+When querying a provider, where no QUERY_ARG_SQL\* otherwise exists in the arguments [Bundle](../android.os/Bundle.md), the Content framework will attempt to synthesize a QUERY_ARG_SQL\* argument using the corresponding QUERY_ARG_SORT\* values. 
 
  Value: "android:query-arg-sort-collation"
 
 **See Also**
 
-- [java.text.Collator#PRIMARY](../java/text/Collator.md)
-- [java.text.Collator#SECONDARY](../java/text/Collator.md)
-- [java.text.Collator#TERTIARY](../java/text/Collator.md)
-- [java.text.Collator#IDENTICAL](../java/text/Collator.md) 
+- [java.text.Collator#PRIMARY](../java.text/Collator.md)
+- [java.text.Collator#SECONDARY](../java.text/Collator.md)
+- [java.text.Collator#TERTIARY](../java.text/Collator.md)
+- [java.text.Collator#IDENTICAL](../java.text/Collator.md) 
 
 ### QUERY_ARG_SORT_COLUMNS
 
@@ -455,8 +455,8 @@ Specifies the list of columns (stored as a`String[]`) against which to sort resu
 Columns present in this list must also be included in the projection supplied to[ContentResolver.query(Uri, String[], Bundle, CancellationSignal)](https://developer.android.com/reference/kotlin/android/content/ContentResolver#query(android.net.Uri,%20kotlin.Array,%20android.os.Bundle,%20android.os.CancellationSignal)).
 
 Apps targeting [android.os.Build.VERSION_CODES#O](../android/os/Build.VERSION_CODES.md) or higher:
-- [ContentProvider](../android/content/ContentProvider.md) implementations: When preparing data in[ContentProvider.query(Uri, String[], Bundle, CancellationSignal)](https://developer.android.com/reference/kotlin/android/content/ContentProvider#query(android.net.Uri,%20kotlin.Array,%20android.os.Bundle,%20android.os.CancellationSignal)), if sort columns is reflected in the returned Cursor, it is strongly recommended that [QUERY_ARG_SORT_COLUMNS](../android/content/ContentResolver.md) then be included in the array of honored arguments reflected in [Cursor](../android/database/Cursor.md) extras [Bundle](../android/os/Bundle.md) under [EXTRA_HONORED_ARGS](../android/content/ContentResolver.md).
-- When querying a provider, where no QUERY_ARG_SQL\* otherwise exists in the arguments [Bundle](../android/os/Bundle.md), the Content framework will attempt to synthesize a QUERY_ARG_SQL\* argument using the corresponding QUERY_ARG_SORT\* values. 
+- [ContentProvider](ContentProvider.md) implementations: When preparing data in[ContentProvider.query(Uri, String[], Bundle, CancellationSignal)](https://developer.android.com/reference/kotlin/android/content/ContentProvider#query(android.net.Uri,%20kotlin.Array,%20android.os.Bundle,%20android.os.CancellationSignal)), if sort columns is reflected in the returned Cursor, it is strongly recommended that [QUERY_ARG_SORT_COLUMNS](ContentResolver.md) then be included in the array of honored arguments reflected in [Cursor](../android.database/Cursor.md) extras [Bundle](../android.os/Bundle.md) under [EXTRA_HONORED_ARGS](ContentResolver.md).
+- When querying a provider, where no QUERY_ARG_SQL\* otherwise exists in the arguments [Bundle](../android.os/Bundle.md), the Content framework will attempt to synthesize a QUERY_ARG_SQL\* argument using the corresponding QUERY_ARG_SORT\* values. 
 
  Value: "android:query-arg-sort-columns"
 
@@ -471,15 +471,15 @@ static val QUERY_ARG_SORT_DIRECTION: String
 Specifies desired sort order. When unspecified a provider may provide a default sort direction, or choose to return unsorted results.
 
 Apps targeting [android.os.Build.VERSION_CODES#O](../android/os/Build.VERSION_CODES.md) or higher:
-- [ContentProvider](../android/content/ContentProvider.md) implementations: When preparing data in[ContentProvider.query(Uri, String[], Bundle, CancellationSignal)](https://developer.android.com/reference/kotlin/android/content/ContentProvider#query(android.net.Uri,%20kotlin.Array,%20android.os.Bundle,%20android.os.CancellationSignal)), if sort direction is reflected in the returned Cursor, it is strongly recommended that [QUERY_ARG_SORT_DIRECTION](../android/content/ContentResolver.md) then be included in the array of honored arguments reflected in [Cursor](../android/database/Cursor.md) extras [Bundle](../android/os/Bundle.md) under [EXTRA_HONORED_ARGS](../android/content/ContentResolver.md).
-- When querying a provider, where no QUERY_ARG_SQL\* otherwise exists in the arguments [Bundle](../android/os/Bundle.md), the Content framework will attempt to synthesize a QUERY_ARG_SQL\* argument using the corresponding QUERY_ARG_SORT\* values. 
+- [ContentProvider](ContentProvider.md) implementations: When preparing data in[ContentProvider.query(Uri, String[], Bundle, CancellationSignal)](https://developer.android.com/reference/kotlin/android/content/ContentProvider#query(android.net.Uri,%20kotlin.Array,%20android.os.Bundle,%20android.os.CancellationSignal)), if sort direction is reflected in the returned Cursor, it is strongly recommended that [QUERY_ARG_SORT_DIRECTION](ContentResolver.md) then be included in the array of honored arguments reflected in [Cursor](../android.database/Cursor.md) extras [Bundle](../android.os/Bundle.md) under [EXTRA_HONORED_ARGS](ContentResolver.md).
+- When querying a provider, where no QUERY_ARG_SQL\* otherwise exists in the arguments [Bundle](../android.os/Bundle.md), the Content framework will attempt to synthesize a QUERY_ARG_SQL\* argument using the corresponding QUERY_ARG_SORT\* values. 
 
  Value: "android:query-arg-sort-direction"
 
 **See Also**
 
-- [#QUERY_SORT_DIRECTION_ASCENDING](../android/content/ContentResolver.md)
-- [#QUERY_SORT_DIRECTION_DESCENDING](../android/content/ContentResolver.md)
+- [#QUERY_SORT_DIRECTION_ASCENDING](ContentResolver.md)
+- [#QUERY_SORT_DIRECTION_DESCENDING](ContentResolver.md)
 
 ### QUERY_ARG_SORT_LOCALE
 
@@ -491,16 +491,16 @@ static val QUERY_ARG_SORT_LOCALE: String
 
 Allows client to specify a hint to the provider declaring which locale to use when sorting values.
 
-The value is defined as a RFC 3066 locale ID followed by an optional keyword list, which is the locale format used to configure ICU through classes like [android.icu.util.ULocale](../android/icu/util/ULocale.md). This supports requesting advanced sorting options, such as`de@collation=phonebook`,`zh@collation=pinyin`, etc.
+The value is defined as a RFC 3066 locale ID followed by an optional keyword list, which is the locale format used to configure ICU through classes like [android.icu.util.ULocale](../android.icu.util/ULocale.md). This supports requesting advanced sorting options, such as`de@collation=phonebook`,`zh@collation=pinyin`, etc.
 
-[ContentProvider](../android/content/ContentProvider.md) implementations: When preparing data in[ContentProvider.query(Uri, String[], Bundle, CancellationSignal)](https://developer.android.com/reference/kotlin/android/content/ContentProvider#query(android.net.Uri,%20kotlin.Array,%20android.os.Bundle,%20android.os.CancellationSignal)), if sort locale is reflected in the returned Cursor, it is strongly recommended that [QUERY_ARG_SORT_LOCALE](../android/content/ContentResolver.md) then be included in the array of honored arguments reflected in [Cursor](../android/database/Cursor.md) extras [Bundle](../android/os/Bundle.md) under [EXTRA_HONORED_ARGS](../android/content/ContentResolver.md). 
+[ContentProvider](ContentProvider.md) implementations: When preparing data in[ContentProvider.query(Uri, String[], Bundle, CancellationSignal)](https://developer.android.com/reference/kotlin/android/content/ContentProvider#query(android.net.Uri,%20kotlin.Array,%20android.os.Bundle,%20android.os.CancellationSignal)), if sort locale is reflected in the returned Cursor, it is strongly recommended that [QUERY_ARG_SORT_LOCALE](ContentResolver.md) then be included in the array of honored arguments reflected in [Cursor](../android.database/Cursor.md) extras [Bundle](../android.os/Bundle.md) under [EXTRA_HONORED_ARGS](ContentResolver.md). 
 
  Value: "android:query-arg-sort-locale"
 
 **See Also**
 
-- [java.util.Locale#Locale(String)](../java/util/Locale.md))
-- [android.icu.util.ULocale#ULocale(String)](../android/icu/util/ULocale.md)) 
+- [java.util.Locale#Locale(String)](../java.util/Locale.md))
+- [android.icu.util.ULocale#ULocale(String)](../android.icu.util/ULocale.md)) 
 
 ### QUERY_ARG_SQL_GROUP_BY
 
@@ -518,7 +518,7 @@ Key for an SQL style`GROUP BY`string that may be present in the query Bundle arg
 
 **See Also**
 
-- [#QUERY_ARG_GROUP_COLUMNS](../android/content/ContentResolver.md) 
+- [#QUERY_ARG_GROUP_COLUMNS](ContentResolver.md) 
 
 ### QUERY_ARG_SQL_HAVING
 
@@ -550,8 +550,8 @@ Key for an SQL style`LIMIT`string that may be present in the query Bundle argume
 
 **See Also**
 
-- [#QUERY_ARG_LIMIT](../android/content/ContentResolver.md)
-- [#QUERY_ARG_OFFSET](../android/content/ContentResolver.md) 
+- [#QUERY_ARG_LIMIT](ContentResolver.md)
+- [#QUERY_ARG_OFFSET](ContentResolver.md) 
 
 ### QUERY_ARG_SQL_SELECTION
 
@@ -571,10 +571,10 @@ Clients should never include user supplied values directly in the selection stri
 
 **See Also**
 
-- [#QUERY_ARG_SORT_COLUMNS](../android/content/ContentResolver.md)
-- [#QUERY_ARG_SORT_DIRECTION](../android/content/ContentResolver.md)
-- [#QUERY_ARG_SORT_COLLATION](../android/content/ContentResolver.md)
-- [#QUERY_ARG_SORT_LOCALE](../android/content/ContentResolver.md) 
+- [#QUERY_ARG_SORT_COLUMNS](ContentResolver.md)
+- [#QUERY_ARG_SORT_DIRECTION](ContentResolver.md)
+- [#QUERY_ARG_SORT_COLLATION](ContentResolver.md)
+- [#QUERY_ARG_SORT_LOCALE](ContentResolver.md) 
 
 ### QUERY_ARG_SQL_SELECTION_ARGS
 
@@ -594,10 +594,10 @@ Clients should never include user supplied values directly in the selection stri
 
 **See Also**
 
-- [#QUERY_ARG_SORT_COLUMNS](../android/content/ContentResolver.md)
-- [#QUERY_ARG_SORT_DIRECTION](../android/content/ContentResolver.md)
-- [#QUERY_ARG_SORT_COLLATION](../android/content/ContentResolver.md)
-- [#QUERY_ARG_SORT_LOCALE](../android/content/ContentResolver.md) 
+- [#QUERY_ARG_SORT_COLUMNS](ContentResolver.md)
+- [#QUERY_ARG_SORT_DIRECTION](ContentResolver.md)
+- [#QUERY_ARG_SORT_COLLATION](ContentResolver.md)
+- [#QUERY_ARG_SORT_LOCALE](ContentResolver.md) 
 
 ### QUERY_ARG_SQL_SORT_ORDER
 
@@ -615,10 +615,10 @@ Key for an SQL style sort string that may be present in the query Bundle argumen
 
 **See Also**
 
-- [#QUERY_ARG_SORT_COLUMNS](../android/content/ContentResolver.md)
-- [#QUERY_ARG_SORT_DIRECTION](../android/content/ContentResolver.md)
-- [#QUERY_ARG_SORT_COLLATION](../android/content/ContentResolver.md)
-- [#QUERY_ARG_SORT_LOCALE](../android/content/ContentResolver.md) 
+- [#QUERY_ARG_SORT_COLUMNS](ContentResolver.md)
+- [#QUERY_ARG_SORT_DIRECTION](ContentResolver.md)
+- [#QUERY_ARG_SORT_COLLATION](ContentResolver.md)
+- [#QUERY_ARG_SORT_LOCALE](ContentResolver.md) 
 
 ### QUERY_SORT_DIRECTION_ASCENDING
 
@@ -679,7 +679,7 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 static val SYNC_EXTRAS_ACCOUNT: String
 ```
 
-**Deprecated:** *instead use [requestSync(android.accounts.Account,java.lang.String,android.os.Bundle)](../android/content/ContentResolver.md))* 
+**Deprecated:** *instead use [requestSync(android.accounts.Account,java.lang.String,android.os.Bundle)](ContentResolver.md))* 
 
  Value: "account"
 
@@ -691,7 +691,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val SYNC_EXTRAS_DISCARD_LOCAL_DELETIONS: String
 ```
 
-Indicates that the sync adapter should not proceed with the delete operations, if it determines that there are too many. See [SyncResult.tooManyDeletions](../android/content/SyncResult.md) 
+Indicates that the sync adapter should not proceed with the delete operations, if it determines that there are too many. See [SyncResult.tooManyDeletions](SyncResult.md) 
 
  Value: "discard_deletions"
 
@@ -717,7 +717,7 @@ static val SYNC_EXTRAS_EXPEDITED: String
 
 If this extra is set to true, the sync request will be scheduled at the front of the sync request queue, but it is still subject to JobScheduler quota and throttling due to App Standby buckets.
 
-This is different from [SYNC_EXTRAS_SCHEDULE_AS_EXPEDITED_JOB](../android/content/ContentResolver.md). 
+This is different from [SYNC_EXTRAS_SCHEDULE_AS_EXPEDITED_JOB](ContentResolver.md). 
 
  Value: "expedited"
 
@@ -730,7 +730,7 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 static val SYNC_EXTRAS_FORCE: String
 ```
 
-**Deprecated:** *instead use [SYNC_EXTRAS_MANUAL](../android/content/ContentResolver.md)* 
+**Deprecated:** *instead use [SYNC_EXTRAS_MANUAL](ContentResolver.md)* 
 
  Value: "force"
 
@@ -766,7 +766,7 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 static val SYNC_EXTRAS_INITIALIZE: String
 ```
 
-Set by the SyncManager to request that the SyncAdapter initialize itself for the given account/authority pair. One required initialization step is to ensure that [setIsSyncable(android.accounts.Account,java.lang.String,int)](../android/content/ContentResolver.md))has been called with a \>= 0 value. When this flag is set the SyncAdapter does not need to do a full sync, though it is allowed to do so. 
+Set by the SyncManager to request that the SyncAdapter initialize itself for the given account/authority pair. One required initialization step is to ensure that [setIsSyncable(android.accounts.Account,java.lang.String,int)](ContentResolver.md))has been called with a \>= 0 value. When this flag is set the SyncAdapter does not need to do a full sync, though it is allowed to do so. 
 
  Value: "initialize"
 
@@ -778,7 +778,7 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 static val SYNC_EXTRAS_MANUAL: String
 ```
 
-Setting this extra is the equivalent of setting both [SYNC_EXTRAS_IGNORE_SETTINGS](../android/content/ContentResolver.md) and [SYNC_EXTRAS_IGNORE_BACKOFF](../android/content/ContentResolver.md) 
+Setting this extra is the equivalent of setting both [SYNC_EXTRAS_IGNORE_SETTINGS](ContentResolver.md) and [SYNC_EXTRAS_IGNORE_BACKOFF](ContentResolver.md) 
 
  Value: "force"
 
@@ -790,7 +790,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val SYNC_EXTRAS_OVERRIDE_TOO_MANY_DELETIONS: String
 ```
 
-Indicates that the sync adapter should proceed with the delete operations, even if it determines that there are too many. See [SyncResult.tooManyDeletions](../android/content/SyncResult.md) 
+Indicates that the sync adapter should proceed with the delete operations, even if it determines that there are too many. See [SyncResult.tooManyDeletions](SyncResult.md) 
 
  Value: "deletions_override"
 
@@ -802,7 +802,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val SYNC_EXTRAS_REQUIRE_CHARGING: String
 ```
 
-If this extra is set to true, the sync request will be scheduled only when the device is plugged in. This is equivalent to calling setRequiresCharging(true) on [SyncRequest](../android/content/SyncRequest.md). 
+If this extra is set to true, the sync request will be scheduled only when the device is plugged in. This is equivalent to calling setRequiresCharging(true) on [SyncRequest](SyncRequest.md). 
 
  Value: "require_charging"
 
@@ -814,16 +814,16 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 static val SYNC_EXTRAS_SCHEDULE_AS_EXPEDITED_JOB: String
 ```
 
-Run this sync operation as an "expedited job" (see [android.app.job.JobInfo.Builder#setExpedited(boolean)](../android/app/job/JobInfo.Builder.md))). Normally (if this flag isn't specified), sync operations are executed as regular [android.app.job.JobService](../android/app/job/JobService.md) jobs.
+Run this sync operation as an "expedited job" (see [android.app.job.JobInfo.Builder#setExpedited(boolean)](../android/app/job/JobInfo.Builder.md))). Normally (if this flag isn't specified), sync operations are executed as regular [android.app.job.JobService](../android.app.job/JobService.md) jobs.
 
 Because Expedited Jobs have various restrictions compared to regular jobs, this flag cannot be combined with certain other flags, otherwise an`IllegalArgumentException`will be thrown. Notably, because Expedited Jobs do not support various constraints, the following restriction apply:
 
-- Can't be used with [SYNC_EXTRAS_REQUIRE_CHARGING](../android/content/ContentResolver.md)
-- Can't be used with [SYNC_EXTRAS_EXPEDITED](../android/content/ContentResolver.md)
+- Can't be used with [SYNC_EXTRAS_REQUIRE_CHARGING](ContentResolver.md)
+- Can't be used with [SYNC_EXTRAS_EXPEDITED](ContentResolver.md)
 - Can't be used on periodic syncs.
-- When an expedited-job-sync fails and a retry is scheduled, the retried sync will be scheduled as a regular job unless [SYNC_EXTRAS_IGNORE_BACKOFF](../android/content/ContentResolver.md) is set.
+- When an expedited-job-sync fails and a retry is scheduled, the retried sync will be scheduled as a regular job unless [SYNC_EXTRAS_IGNORE_BACKOFF](ContentResolver.md) is set.
 
-This is different from [SYNC_EXTRAS_EXPEDITED](../android/content/ContentResolver.md). 
+This is different from [SYNC_EXTRAS_EXPEDITED](ContentResolver.md). 
 
  Value: "schedule_as_expedited_job"
 
@@ -835,7 +835,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val SYNC_EXTRAS_UPLOAD: String
 ```
 
-Indicates that this sync is intended to only upload local changes to the server. For example, this will be set to true if the sync is initiated by a call to [ContentResolver.notifyChange(android.net.Uri, android.database.ContentObserver, boolean)](../android/content/ContentResolver.md)) 
+Indicates that this sync is intended to only upload local changes to the server. For example, this will be set to true if the sync is initiated by a call to [ContentResolver.notifyChange(android.net.Uri, android.database.ContentObserver, boolean)](ContentResolver.md)) 
 
  Value: "upload"
 
@@ -883,7 +883,7 @@ Note: passing a`null`context here could lead to unexpected behavior in certain C
 
 | Parameters ||
 |-----------|-------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](../android/content/Context.md)?:This value may be`null`. |
+| `context` | [Context](Context.md)?:This value may be`null`. |
 
 ## Public methods
 
@@ -895,15 +895,15 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 fun acquireContentProviderClient(uri: Uri): ContentProviderClient?
 ```
 
-Returns a [ContentProviderClient](../android/content/ContentProviderClient.md) that is associated with the [ContentProvider](../android/content/ContentProvider.md) that services the content at uri, starting the provider if necessary. Returns null if there is no provider associated wih the uri. The caller must indicate that they are done with the provider by calling [ContentProviderClient.release](../android/content/ContentProviderClient.md))which will allow the system to release the provider if it determines that there is no other reason for keeping it active.
+Returns a [ContentProviderClient](ContentProviderClient.md) that is associated with the [ContentProvider](ContentProvider.md) that services the content at uri, starting the provider if necessary. Returns null if there is no provider associated wih the uri. The caller must indicate that they are done with the provider by calling [ContentProviderClient.release](ContentProviderClient.md))which will allow the system to release the provider if it determines that there is no other reason for keeping it active.
 
 | Parameters ||
 |-------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| `uri` | [Uri](../android/net/Uri.md):specifies which provider should be acquired This value cannot be`null`. |
+| `uri` | [Uri](../android.net/Uri.md):specifies which provider should be acquired This value cannot be`null`. |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [ContentProviderClient](../android/content/ContentProviderClient.md)? | a [ContentProviderClient](../android/content/ContentProviderClient.md) that is associated with the [ContentProvider](../android/content/ContentProvider.md) that services the content at uri or null if there isn't one. |
+| [ContentProviderClient](ContentProviderClient.md)? | a [ContentProviderClient](ContentProviderClient.md) that is associated with the [ContentProvider](ContentProvider.md) that services the content at uri or null if there isn't one. |
 
 ### acquireContentProviderClient
 
@@ -913,7 +913,7 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 fun acquireContentProviderClient(name: String): ContentProviderClient?
 ```
 
-Returns a [ContentProviderClient](../android/content/ContentProviderClient.md) that is associated with the [ContentProvider](../android/content/ContentProvider.md) with the authority of name, starting the provider if necessary. Returns null if there is no provider associated wih the uri. The caller must indicate that they are done with the provider by calling [ContentProviderClient.release](../android/content/ContentProviderClient.md))which will allow the system to release the provider if it determines that there is no other reason for keeping it active.
+Returns a [ContentProviderClient](ContentProviderClient.md) that is associated with the [ContentProvider](ContentProvider.md) with the authority of name, starting the provider if necessary. Returns null if there is no provider associated wih the uri. The caller must indicate that they are done with the provider by calling [ContentProviderClient.release](ContentProviderClient.md))which will allow the system to release the provider if it determines that there is no other reason for keeping it active.
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -921,7 +921,7 @@ Returns a [ContentProviderClient](../android/content/ContentProviderClient.md) t
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [ContentProviderClient](../android/content/ContentProviderClient.md)? | a [ContentProviderClient](../android/content/ContentProviderClient.md) that is associated with the [ContentProvider](../android/content/ContentProvider.md) with the authority of name or null if there isn't one. |
+| [ContentProviderClient](ContentProviderClient.md)? | a [ContentProviderClient](ContentProviderClient.md) that is associated with the [ContentProvider](ContentProvider.md) with the authority of name or null if there isn't one. |
 
 ### acquireUnstableContentProviderClient
 
@@ -931,15 +931,15 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 fun acquireUnstableContentProviderClient(uri: Uri): ContentProviderClient?
 ```
 
-Like [acquireContentProviderClient(android.net.Uri)](../android/content/ContentResolver.md)), but for use when you do not trust the stability of the target content provider. This turns off the mechanism in the platform clean up processes that are dependent on a content provider if that content provider's process goes away. Normally you can safely assume that once you have acquired a provider, you can freely use it as needed and it won't disappear, even if your process is in the background. If using this method, you need to take care to deal with any failures when communicating with the provider, and be sure to close it so that it can be re-opened later. In particular, catching a [android.os.DeadObjectException](../android/os/DeadObjectException.md) from the calls there will let you know that the content provider has gone away; at that point the current ContentProviderClient object is invalid, and you should release it. You can acquire a new one if you would like to try to restart the provider and perform new operations on it.
+Like [acquireContentProviderClient(android.net.Uri)](ContentResolver.md)), but for use when you do not trust the stability of the target content provider. This turns off the mechanism in the platform clean up processes that are dependent on a content provider if that content provider's process goes away. Normally you can safely assume that once you have acquired a provider, you can freely use it as needed and it won't disappear, even if your process is in the background. If using this method, you need to take care to deal with any failures when communicating with the provider, and be sure to close it so that it can be re-opened later. In particular, catching a [android.os.DeadObjectException](../android.os/DeadObjectException.md) from the calls there will let you know that the content provider has gone away; at that point the current ContentProviderClient object is invalid, and you should release it. You can acquire a new one if you would like to try to restart the provider and perform new operations on it.
 
 | Parameters ||
 |-------|---------------------------------------------------------------------------------------------------------|
-| `uri` | [Uri](../android/net/Uri.md):This value cannot be`null`. |
+| `uri` | [Uri](../android.net/Uri.md):This value cannot be`null`. |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------|--------------------------|
-| [ContentProviderClient](../android/content/ContentProviderClient.md)? | This value may be`null`. |
+| [ContentProviderClient](ContentProviderClient.md)? | This value may be`null`. |
 
 ### acquireUnstableContentProviderClient
 
@@ -949,7 +949,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 fun acquireUnstableContentProviderClient(name: String): ContentProviderClient?
 ```
 
-Like [acquireContentProviderClient(java.lang.String)](../android/content/ContentResolver.md)), but for use when you do not trust the stability of the target content provider. This turns off the mechanism in the platform clean up processes that are dependent on a content provider if that content provider's process goes away. Normally you can safely assume that once you have acquired a provider, you can freely use it as needed and it won't disappear, even if your process is in the background. If using this method, you need to take care to deal with any failures when communicating with the provider, and be sure to close it so that it can be re-opened later. In particular, catching a [android.os.DeadObjectException](../android/os/DeadObjectException.md) from the calls there will let you know that the content provider has gone away; at that point the current ContentProviderClient object is invalid, and you should release it. You can acquire a new one if you would like to try to restart the provider and perform new operations on it.
+Like [acquireContentProviderClient(java.lang.String)](ContentResolver.md)), but for use when you do not trust the stability of the target content provider. This turns off the mechanism in the platform clean up processes that are dependent on a content provider if that content provider's process goes away. Normally you can safely assume that once you have acquired a provider, you can freely use it as needed and it won't disappear, even if your process is in the background. If using this method, you need to take care to deal with any failures when communicating with the provider, and be sure to close it so that it can be re-opened later. In particular, catching a [android.os.DeadObjectException](../android.os/DeadObjectException.md) from the calls there will let you know that the content provider has gone away; at that point the current ContentProviderClient object is invalid, and you should release it. You can acquire a new one if you would like to try to restart the provider and perform new operations on it.
 
 | Parameters ||
 |--------|--------------------------------------------------------------------------------------------------------------|
@@ -957,7 +957,7 @@ Like [acquireContentProviderClient(java.lang.String)](../android/content/Content
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------|--------------------------|
-| [ContentProviderClient](../android/content/ContentProviderClient.md)? | This value may be`null`. |
+| [ContentProviderClient](ContentProviderClient.md)? | This value may be`null`. |
 
 ### addPeriodicSync
 
@@ -976,17 +976,17 @@ Specifies that a sync should be requested with the specified the account, author
 
 These periodic syncs honor the "syncAutomatically" and "masterSyncAutomatically" settings. Although these sync are scheduled at the specified frequency, it may take longer for it to actually be started if other syncs are ahead of it in the sync operation queue. This means that the actual start time may drift.
 
-Periodic syncs are not allowed to have any of [SYNC_EXTRAS_DO_NOT_RETRY](../android/content/ContentResolver.md), [SYNC_EXTRAS_IGNORE_BACKOFF](../android/content/ContentResolver.md), [SYNC_EXTRAS_IGNORE_SETTINGS](../android/content/ContentResolver.md), [SYNC_EXTRAS_INITIALIZE](../android/content/ContentResolver.md), [SYNC_EXTRAS_FORCE](../android/content/ContentResolver.md), [SYNC_EXTRAS_EXPEDITED](../android/content/ContentResolver.md), [SYNC_EXTRAS_MANUAL](../android/content/ContentResolver.md), [SYNC_EXTRAS_SCHEDULE_AS_EXPEDITED_JOB](../android/content/ContentResolver.md) set to true. If any are supplied then an [IllegalArgumentException](../java/lang/IllegalArgumentException.md) will be thrown.
+Periodic syncs are not allowed to have any of [SYNC_EXTRAS_DO_NOT_RETRY](ContentResolver.md), [SYNC_EXTRAS_IGNORE_BACKOFF](ContentResolver.md), [SYNC_EXTRAS_IGNORE_SETTINGS](ContentResolver.md), [SYNC_EXTRAS_INITIALIZE](ContentResolver.md), [SYNC_EXTRAS_FORCE](ContentResolver.md), [SYNC_EXTRAS_EXPEDITED](ContentResolver.md), [SYNC_EXTRAS_MANUAL](ContentResolver.md), [SYNC_EXTRAS_SCHEDULE_AS_EXPEDITED_JOB](ContentResolver.md) set to true. If any are supplied then an [IllegalArgumentException](../java.lang/IllegalArgumentException.md) will be thrown.
 
 This method requires the caller to hold the permission [android.Manifest.permission#WRITE_SYNC_SETTINGS](../android/Manifest.permission.md).
 
-The bundle for a periodic sync can be queried by applications with the correct permissions using [ContentResolver.getPeriodicSyncs(Account account, String provider)](../android/content/ContentResolver.md)), so no sensitive data should be transferred here.
+The bundle for a periodic sync can be queried by applications with the correct permissions using [ContentResolver.getPeriodicSyncs(Account account, String provider)](ContentResolver.md)), so no sensitive data should be transferred here.
 
 | Parameters ||
 |-----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `account` | [Account](../android/accounts/Account.md)!:the account to specify in the sync |
+| `account` | [Account](../android.accounts/Account.md)!:the account to specify in the sync |
 | `authority` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the provider to specify in the sync request |
-| `extras` | [Bundle](../android/os/Bundle.md)!:extra parameters to go along with the sync request |
+| `extras` | [Bundle](../android.os/Bundle.md)!:extra parameters to go along with the sync request |
 | --- | --- |
 | `pollFrequency` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):how frequently the sync should be performed, in seconds. On Android API level 24 and above, a minimum interval of 15 minutes is enforced. On previous versions, the minimum interval is 1 hour. |
 
@@ -1007,9 +1007,9 @@ open static fun addStatusChangeListener(
 
 Request notifications when the different aspects of the SyncManager change. The different items that can be requested are:
 
-- [SYNC_OBSERVER_TYPE_PENDING](../android/content/ContentResolver.md)
-- [SYNC_OBSERVER_TYPE_ACTIVE](../android/content/ContentResolver.md)
-- [SYNC_OBSERVER_TYPE_SETTINGS](../android/content/ContentResolver.md)
+- [SYNC_OBSERVER_TYPE_PENDING](ContentResolver.md)
+- [SYNC_OBSERVER_TYPE_ACTIVE](ContentResolver.md)
+- [SYNC_OBSERVER_TYPE_SETTINGS](ContentResolver.md)
 
 The caller can set one or more of the status types in the mask for any given listener registration.
 
@@ -1018,7 +1018,7 @@ The caller can set one or more of the status types in the mask for any given lis
 | Parameters ||
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `mask` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the status change types that will cause the callback to be invoked |
-| `callback` | [SyncStatusObserver](../android/content/SyncStatusObserver.md)!:observer to be invoked when the status changes |
+| `callback` | [SyncStatusObserver](SyncStatusObserver.md)!:observer to be invoked when the status changes |
 
 | Return ||
 |-----------------------------------------------------------------------------|------------------------------------------------------------------|
@@ -1035,20 +1035,20 @@ open fun applyBatch(
 ): Array<ContentProviderResult!>
 ```
 
-Applies each of the [ContentProviderOperation](../android/content/ContentProviderOperation.md) objects and returns an array of their results. Passes through OperationApplicationException, which may be thrown by the call to [ContentProviderOperation.apply](../android/content/ContentProviderOperation.md)). If all the applications succeed then a [ContentProviderResult](../android/content/ContentProviderResult.md) array with the same number of elements as the operations will be returned. It is implementation-specific how many, if any, operations will have been successfully applied if a call to apply results in a [OperationApplicationException](../android/content/OperationApplicationException.md).
+Applies each of the [ContentProviderOperation](ContentProviderOperation.md) objects and returns an array of their results. Passes through OperationApplicationException, which may be thrown by the call to [ContentProviderOperation.apply](ContentProviderOperation.md)). If all the applications succeed then a [ContentProviderResult](ContentProviderResult.md) array with the same number of elements as the operations will be returned. It is implementation-specific how many, if any, operations will have been successfully applied if a call to apply results in a [OperationApplicationException](OperationApplicationException.md).
 
 | Parameters ||
 |--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `authority` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):the authority of the ContentProvider to which this batch should be applied This value cannot be`null`. |
-| `operations` | [ArrayList](../java/util/ArrayList.md)\< [ContentProviderOperation](../android/content/ContentProviderOperation.md)!\>:the operations to apply This value cannot be`null`. |
+| `operations` | [ArrayList](../java.util/ArrayList.md)\< [ContentProviderOperation](ContentProviderOperation.md)!\>:the operations to apply This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ContentProviderResult](../android/content/ContentProviderResult.md)!> | the results of the applications This value cannot be`null`. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ContentProviderResult](ContentProviderResult.md)!> | the results of the applications This value cannot be`null`. |
 
 | Exceptions ||
 |-------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `android.content.OperationApplicationException` | thrown if an application fails. See [ContentProviderOperation.apply](../android/content/ContentProviderOperation.md))for more information. |
+| `android.content.OperationApplicationException` | thrown if an application fails. See [ContentProviderOperation.apply](ContentProviderOperation.md))for more information. |
 | `android.os.RemoteException` | thrown if a RemoteException is encountered while attempting to communicate with a remote provider. |
 
 ### bulkInsert
@@ -1066,8 +1066,8 @@ Inserts multiple rows into a table at the given URL. This function make no guara
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `url` | [Uri](../android/net/Uri.md):The URL of the table to insert into. This value cannot be`null`. |
-| `values` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ContentValues](../android/content/ContentValues.md)!\>:The initial values for the newly inserted rows. The key is the column name for the field. Passing null will create an empty row. |
+| `url` | [Uri](../android.net/Uri.md):The URL of the table to insert into. This value cannot be`null`. |
+| `values` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ContentValues](ContentValues.md)!\>:The initial values for the newly inserted rows. The key is the column name for the field. Passing null will create an empty row. |
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------|
@@ -1092,13 +1092,13 @@ Call a provider-defined method. This can be used to implement read or write inte
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `method` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):provider-defined method name to call. Opaque to framework, but must be non-null. |
 | `arg` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:provider-defined String argument. May be null. |
-| `extras` | [Bundle](../android/os/Bundle.md)?:provider-defined Bundle argument. May be null. |
+| `extras` | [Bundle](../android.os/Bundle.md)?:provider-defined Bundle argument. May be null. |
 | --- | --- |
-| `uri` | [Uri](../android/net/Uri.md):This value cannot be`null`. |
+| `uri` | [Uri](../android.net/Uri.md):This value cannot be`null`. |
 
 | Return ||
 |-----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
-| [Bundle](../android/os/Bundle.md)? | a result Bundle, possibly null. Will be null if the ContentProvider does not implement call. |
+| [Bundle](../android.os/Bundle.md)? | a result Bundle, possibly null. Will be null if the ContentProvider does not implement call. |
 
 | Exceptions ||
 |--------------------------------------|--------------------------|
@@ -1124,11 +1124,11 @@ fun call(
 | `method` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):This value cannot be`null`. |
 | `arg` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:This value may be`null`. |
 | --- | --- |
-| `extras` | [Bundle](../android/os/Bundle.md)?:This value may be`null`. |
+| `extras` | [Bundle](../android.os/Bundle.md)?:This value may be`null`. |
 
 | Return ||
 |-----------------------------------------------------------------------------------|--------------------------|
-| [Bundle](../android/os/Bundle.md)? | This value may be`null`. |
+| [Bundle](../android.os/Bundle.md)? | This value may be`null`. |
 
 ### cancelSync
 
@@ -1139,13 +1139,13 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 open fun cancelSync(uri: Uri!): Unit
 ```
 
-**Deprecated:** *instead use [cancelSync(android.accounts.Account,java.lang.String)](../android/content/ContentResolver.md))*
+**Deprecated:** *instead use [cancelSync(android.accounts.Account,java.lang.String)](ContentResolver.md))*
 
 Cancel any active or pending syncs that match the Uri. If the uri is null then all syncs will be canceled.
 
 | Parameters ||
 |-------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| `uri` | [Uri](../android/net/Uri.md)!:the uri of the provider to sync or null to sync all providers. |
+| `uri` | [Uri](../android.net/Uri.md)!:the uri of the provider to sync or null to sync all providers. |
 
 ### cancelSync
 
@@ -1162,7 +1162,7 @@ Cancel any active or pending syncs that match account and authority. The account
 
 | Parameters ||
 |-------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| `account` | [Account](../android/accounts/Account.md)!:filters the syncs that match by this account |
+| `account` | [Account](../android.accounts/Account.md)!:filters the syncs that match by this account |
 | `authority` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:filters the syncs that match by this authority |
 
 ### cancelSync
@@ -1180,7 +1180,7 @@ It is possible to cancel a sync using a SyncRequest object that is not the same 
 
 | Parameters ||
 |-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `request` | [SyncRequest](../android/content/SyncRequest.md)!:SyncRequest object containing information about sync to cancel. |
+| `request` | [SyncRequest](SyncRequest.md)!:SyncRequest object containing information about sync to cancel. |
 
 ### canonicalize
 
@@ -1190,21 +1190,21 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 fun canonicalize(url: Uri): Uri?
 ```
 
-Transform the given url to a canonical representation of its referenced resource, which can be used across devices, persisted, backed up and restored, etc. The returned Uri is still a fully capable Uri for use with its content provider, allowing you to do all of the same content provider operations as with the original Uri -- #query, [openInputStream(android.net.Uri)](../android/content/ContentResolver.md)), etc. The only difference in behavior between the original and new Uris is that the content provider may need to do some additional work at each call using it to resolve it to the correct resource, especially if the canonical Uri has been moved to a different environment.
+Transform the given url to a canonical representation of its referenced resource, which can be used across devices, persisted, backed up and restored, etc. The returned Uri is still a fully capable Uri for use with its content provider, allowing you to do all of the same content provider operations as with the original Uri -- #query, [openInputStream(android.net.Uri)](ContentResolver.md)), etc. The only difference in behavior between the original and new Uris is that the content provider may need to do some additional work at each call using it to resolve it to the correct resource, especially if the canonical Uri has been moved to a different environment.
 
-If you are moving a canonical Uri between environments, you should perform another call to [canonicalize](../android/content/ContentResolver.md))with that original Uri to re-canonicalize it for the current environment. Alternatively, you may want to use [uncanonicalize](../android/content/ContentResolver.md))to transform it to a non-canonical Uri that works only in the current environment but potentially more efficiently than the canonical representation.
+If you are moving a canonical Uri between environments, you should perform another call to [canonicalize](ContentResolver.md))with that original Uri to re-canonicalize it for the current environment. Alternatively, you may want to use [uncanonicalize](ContentResolver.md))to transform it to a non-canonical Uri that works only in the current environment but potentially more efficiently than the canonical representation.
 
 | Parameters ||
 |-------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `url` | [Uri](../android/net/Uri.md):The [Uri](../android/net/Uri.md) that is to be transformed to a canonical representation. Like all resolver calls, the input can be either a non-canonical or canonical Uri. This value cannot be`null`. |
+| `url` | [Uri](../android.net/Uri.md):The [Uri](../android.net/Uri.md) that is to be transformed to a canonical representation. Like all resolver calls, the input can be either a non-canonical or canonical Uri. This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Uri](../android/net/Uri.md)? | Returns the official canonical representation of url, or null if the content provider does not support a canonical representation of the given Uri. Many providers may not support canonicalization of some or all of their Uris. |
+| [Uri](../android.net/Uri.md)? | Returns the official canonical representation of url, or null if the content provider does not support a canonical representation of the given Uri. Many providers may not support canonicalization of some or all of their Uris. |
 
 **See Also**
 
-- [#uncanonicalize](../android/content/ContentResolver.md)) 
+- [#uncanonicalize](ContentResolver.md)) 
 
 ### delete
 
@@ -1221,8 +1221,8 @@ Deletes row(s) specified by a content URI. If the content provider supports tran
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `url` | [Uri](../android/net/Uri.md):The URL of the row to delete. This value cannot be`null`. |
-| `extras` | [Bundle](../android/os/Bundle.md)?:A Bundle containing additional information necessary for the operation. Arguments may include SQL style arguments, such as [ContentResolver.QUERY_ARG_SQL_LIMIT](../android/content/ContentResolver.md), but note that the documentation for each individual provider will indicate which arguments they support. This value may be`null`. |
+| `url` | [Uri](../android.net/Uri.md):The URL of the row to delete. This value cannot be`null`. |
+| `extras` | [Bundle](../android.os/Bundle.md)?:A Bundle containing additional information necessary for the operation. Arguments may include SQL style arguments, such as [ContentResolver.QUERY_ARG_SQL_LIMIT](ContentResolver.md), but note that the documentation for each individual provider will indicate which arguments they support. This value may be`null`. |
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------|
@@ -1248,7 +1248,7 @@ Deletes row(s) specified by a content URI. If the content provider supports tran
 
 | Parameters ||
 |-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `url` | [Uri](../android/net/Uri.md):The URL of the row to delete. This value cannot be`null`. |
+| `url` | [Uri](../android.net/Uri.md):The URL of the row to delete. This value cannot be`null`. |
 | `where` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:A filter to apply to rows before deleting, formatted as an SQL WHERE clause (excluding the WHERE itself). This value may be`null`. |
 | `selectionArgs` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?:This value may be`null`. |
 | --- | --- |
@@ -1266,7 +1266,7 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 open static fun getCurrentSync(): SyncInfo!
 ```
 
-**Deprecated:** *Since multiple concurrent syncs are now supported you should use [getCurrentSyncs()](../android/content/ContentResolver.md))to get the accurate list of current syncs. This method returns the first item from the list of current syncs or null if there are none.*
+**Deprecated:** *Since multiple concurrent syncs are now supported you should use [getCurrentSyncs()](ContentResolver.md))to get the accurate list of current syncs. This method returns the first item from the list of current syncs or null if there are none.*
 
 If a sync is active returns the information about it, otherwise returns null.
 
@@ -1276,7 +1276,7 @@ This method requires the caller to hold the permission [android.Manifest.permiss
 
 | Return ||
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-| [SyncInfo](../android/content/SyncInfo.md)! | the SyncInfo for the currently active sync or null if one is not active. |
+| [SyncInfo](SyncInfo.md)! | the SyncInfo for the currently active sync or null if one is not active. |
 
 ### getCurrentSyncs
 
@@ -1294,7 +1294,7 @@ This method requires the caller to hold the permission [android.Manifest.permiss
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [SyncInfo](../android/content/SyncInfo.md)!>! | a List of SyncInfo objects for the currently active syncs. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [SyncInfo](SyncInfo.md)!>! | a List of SyncInfo objects for the currently active syncs. |
 
 ### getIsSyncable
 
@@ -1339,13 +1339,13 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 open fun getOutgoingPersistedUriPermissions(): MutableList<UriPermission!>
 ```
 
-Return list of all persisted URI permission grants that are hosted by the calling app. That is, the returned permissions have been granted*from* the calling app. Only grants taken with [takePersistableUriPermission(android.net.Uri,int)](../android/content/ContentResolver.md))are returned.
+Return list of all persisted URI permission grants that are hosted by the calling app. That is, the returned permissions have been granted*from* the calling app. Only grants taken with [takePersistableUriPermission(android.net.Uri,int)](ContentResolver.md))are returned.
 
 Note: Some of the returned URIs may not be usable until after the user is unlocked.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [UriPermission](../android/content/UriPermission.md)!> | This value cannot be`null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [UriPermission](UriPermission.md)!> | This value cannot be`null`. |
 
 ### getPeriodicSyncs
 
@@ -1364,12 +1364,12 @@ This method requires the caller to hold the permission [android.Manifest.permiss
 
 | Parameters ||
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| `account` | [Account](../android/accounts/Account.md)!:the account whose periodic syncs we are querying |
+| `account` | [Account](../android.accounts/Account.md)!:the account whose periodic syncs we are querying |
 | `authority` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the provider whose periodic syncs we are querying |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [PeriodicSync](../android/content/PeriodicSync.md)!>! | a list of PeriodicSync objects. This list may be empty but will never be null. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [PeriodicSync](PeriodicSync.md)!>! | a list of PeriodicSync objects. This list may be empty but will never be null. |
 
 ### getPersistedUriPermissions
 
@@ -1379,18 +1379,18 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 open fun getPersistedUriPermissions(): MutableList<UriPermission!>
 ```
 
-Return list of all URI permission grants that have been persisted by the calling app. That is, the returned permissions have been granted*to* the calling app. Only persistable grants taken with [takePersistableUriPermission(android.net.Uri,int)](../android/content/ContentResolver.md))are returned.
+Return list of all URI permission grants that have been persisted by the calling app. That is, the returned permissions have been granted*to* the calling app. Only persistable grants taken with [takePersistableUriPermission(android.net.Uri,int)](ContentResolver.md))are returned.
 
 Note: Some of the returned URIs may not be usable until after the user is unlocked.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [UriPermission](../android/content/UriPermission.md)!> | This value cannot be`null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [UriPermission](UriPermission.md)!> | This value cannot be`null`. |
 
 **See Also**
 
-- [#takePersistableUriPermission(Uri, int)](../android/content/ContentResolver.md))
-- [#releasePersistableUriPermission(Uri, int)](../android/content/ContentResolver.md)) 
+- [#takePersistableUriPermission(Uri, int)](ContentResolver.md))
+- [#releasePersistableUriPermission(Uri, int)](ContentResolver.md)) 
 
 ### getStreamTypes
 
@@ -1403,11 +1403,11 @@ open fun getStreamTypes(
 ): Array<String!>?
 ```
 
-Query for the possible MIME types for the representations the given content URL can be returned when opened as as stream with #openTypedAssetFileDescriptor. Note that the types here are not necessarily a superset of the type returned by [getType](../android/content/ContentResolver.md))-- many content providers cannot return a raw stream for the structured data that they contain.
+Query for the possible MIME types for the representations the given content URL can be returned when opened as as stream with #openTypedAssetFileDescriptor. Note that the types here are not necessarily a superset of the type returned by [getType](ContentResolver.md))-- many content providers cannot return a raw stream for the structured data that they contain.
 
 | Parameters ||
 |------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `url` | [Uri](../android/net/Uri.md):A Uri identifying content (either a list or specific type), using the content:// scheme. This value cannot be`null`. |
+| `url` | [Uri](../android.net/Uri.md):A Uri identifying content (either a list or specific type), using the content:// scheme. This value cannot be`null`. |
 | `mimeTypeFilter` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The desired MIME type. This may be a pattern, such as \*/\*, to query for all available MIME types that match the pattern. This value cannot be`null`. |
 
 | Return ||
@@ -1426,7 +1426,7 @@ Get information about the SyncAdapters that are known to the system.
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [SyncAdapterType](../android/content/SyncAdapterType.md)!>! | an array of SyncAdapters that have registered with the system |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [SyncAdapterType](SyncAdapterType.md)!>! | an array of SyncAdapters that have registered with the system |
 
 ### getSyncAutomatically
 
@@ -1445,7 +1445,7 @@ This method requires the caller to hold the permission [android.Manifest.permiss
 
 | Parameters ||
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| `account` | [Account](../android/accounts/Account.md)!:the account whose setting we are querying |
+| `account` | [Account](../android.accounts/Account.md)!:the account whose setting we are querying |
 | `authority` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the provider whose setting we are querying |
 
 | Return ||
@@ -1464,7 +1464,7 @@ Return the MIME type of the given content URL.
 
 | Parameters ||
 |-------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `url` | [Uri](../android/net/Uri.md):A Uri identifying content (either a list or specific type), using the content:// scheme. This value cannot be`null`. |
+| `url` | [Uri](../android.net/Uri.md):A Uri identifying content (either a list or specific type), using the content:// scheme. This value cannot be`null`. |
 
 | Return ||
 |-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
@@ -1503,12 +1503,12 @@ Inserts a row into a table at the given URL. If the content provider supports tr
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `url` | [Uri](../android/net/Uri.md):The URL of the table to insert into. This value cannot be`null`. |
-| `values` | [ContentValues](../android/content/ContentValues.md)?:The initial values for the newly inserted row. The key is the column name for the field. Passing an empty ContentValues will create an empty row. This value may be`null`. |
+| `url` | [Uri](../android.net/Uri.md):The URL of the table to insert into. This value cannot be`null`. |
+| `values` | [ContentValues](ContentValues.md)?:The initial values for the newly inserted row. The key is the column name for the field. Passing an empty ContentValues will create an empty row. This value may be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| [Uri](../android/net/Uri.md)? | the URL of the newly created row. May return`null`if the underlying content provider returns`null`, or if it crashes. |
+| [Uri](../android.net/Uri.md)? | the URL of the newly created row. May return`null`if the underlying content provider returns`null`, or if it crashes. |
 
 ### insert
 
@@ -1526,14 +1526,14 @@ Inserts a row into a table at the given URL. If the content provider supports tr
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `url` | [Uri](../android/net/Uri.md):The URL of the table to insert into. This value cannot be`null`. |
-| `values` | [ContentValues](../android/content/ContentValues.md)?:The initial values for the newly inserted row. The key is the column name for the field. Passing an empty ContentValues will create an empty row. This value may be`null`. |
-| `extras` | [Bundle](../android/os/Bundle.md)?:A Bundle containing additional information necessary for the operation. Arguments may include SQL style arguments, such as [ContentResolver.QUERY_ARG_SQL_LIMIT](../android/content/ContentResolver.md), but note that the documentation for each individual provider will indicate which arguments they support. This value may be`null`. |
+| `url` | [Uri](../android.net/Uri.md):The URL of the table to insert into. This value cannot be`null`. |
+| `values` | [ContentValues](ContentValues.md)?:The initial values for the newly inserted row. The key is the column name for the field. Passing an empty ContentValues will create an empty row. This value may be`null`. |
+| `extras` | [Bundle](../android.os/Bundle.md)?:A Bundle containing additional information necessary for the operation. Arguments may include SQL style arguments, such as [ContentResolver.QUERY_ARG_SQL_LIMIT](ContentResolver.md), but note that the documentation for each individual provider will indicate which arguments they support. This value may be`null`. |
 | --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| [Uri](../android/net/Uri.md)? | the URL of the newly created row. May return`null`if the underlying content provider returns`null`, or if it crashes. |
+| [Uri](../android.net/Uri.md)? | the URL of the newly created row. May return`null`if the underlying content provider returns`null`, or if it crashes. |
 
 | Exceptions ||
 |--------------------------------------|------------------------------------------------------------------------|
@@ -1556,7 +1556,7 @@ This method requires the caller to hold the permission [android.Manifest.permiss
 
 | Parameters ||
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| `account` | [Account](../android/accounts/Account.md)!:the account whose setting we are querying |
+| `account` | [Account](../android.accounts/Account.md)!:the account whose setting we are querying |
 | `authority` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the provider whose behavior is being queried |
 
 | Return ||
@@ -1580,7 +1580,7 @@ This method requires the caller to hold the permission [android.Manifest.permiss
 
 | Parameters ||
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| `account` | [Account](../android/accounts/Account.md)!:the account whose setting we are querying |
+| `account` | [Account](../android.accounts/Account.md)!:the account whose setting we are querying |
 | `authority` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the provider whose behavior is being queried |
 
 | Return ||
@@ -1599,22 +1599,22 @@ open fun loadThumbnail(
 ): Bitmap
 ```
 
-Convenience method that efficiently loads a visual thumbnail for the given [Uri](../android/net/Uri.md). Internally calls android.content.ContentProvider#openTypedAssetFile on the remote provider, but also defensively resizes any returned content to match the requested target size.
+Convenience method that efficiently loads a visual thumbnail for the given [Uri](../android.net/Uri.md). Internally calls android.content.ContentProvider#openTypedAssetFile on the remote provider, but also defensively resizes any returned content to match the requested target size.
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `uri` | [Uri](../android/net/Uri.md):The item that should be visualized as a thumbnail. This value cannot be`null`. |
-| `size` | [Size](../android/util/Size.md):The target area on the screen where this thumbnail will be shown. This is passed to the provider as [EXTRA_SIZE](../android/content/ContentResolver.md) to help it avoid downloading or generating heavy resources. This value cannot be`null`. |
-| `signal` | [CancellationSignal](../android/os/CancellationSignal.md)?:A signal to cancel the operation in progress. This value may be`null`. |
+| `uri` | [Uri](../android.net/Uri.md):The item that should be visualized as a thumbnail. This value cannot be`null`. |
+| `size` | [Size](../android.util/Size.md):The target area on the screen where this thumbnail will be shown. This is passed to the provider as [EXTRA_SIZE](ContentResolver.md) to help it avoid downloading or generating heavy resources. This value cannot be`null`. |
+| `signal` | [CancellationSignal](../android.os/CancellationSignal.md)?:A signal to cancel the operation in progress. This value may be`null`. |
 | --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Bitmap](../android/graphics/Bitmap.md) | Valid [Bitmap](../android/graphics/Bitmap.md) which is a visual thumbnail. This value cannot be`null`. |
+| [Bitmap](../android.graphics/Bitmap.md) | Valid [Bitmap](../android.graphics/Bitmap.md) which is a visual thumbnail. This value cannot be`null`. |
 
 | Exceptions ||
 |-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.io.IOException` | If any trouble was encountered while generating or loading the thumbnail, or if [CancellationSignal.cancel()](../android/os/CancellationSignal.md))was invoked. |
+| `java.io.IOException` | If any trouble was encountered while generating or loading the thumbnail, or if [CancellationSignal.cancel()](../android.os/CancellationSignal.md))was invoked. |
 
 ### notifyChange
 
@@ -1629,14 +1629,14 @@ open fun notifyChange(
 
 Notify registered observers that a row was updated and attempt to sync changes to the network.
 
-To observe events sent through this call, use [registerContentObserver(android.net.Uri,boolean,android.database.ContentObserver)](../android/content/ContentResolver.md)).
+To observe events sent through this call, use [registerContentObserver(android.net.Uri,boolean,android.database.ContentObserver)](ContentResolver.md)).
 
-Starting in [android.os.Build.VERSION_CODES#O](../android/os/Build.VERSION_CODES.md), all content notifications must be backed by a valid [ContentProvider](../android/content/ContentProvider.md).
+Starting in [android.os.Build.VERSION_CODES#O](../android/os/Build.VERSION_CODES.md), all content notifications must be backed by a valid [ContentProvider](ContentProvider.md).
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `uri` | [Uri](../android/net/Uri.md):The uri of the content that was changed. This value cannot be`null`. |
-| `observer` | [ContentObserver](../android/database/ContentObserver.md)?:The observer that originated the change, may be`null. The observer that originated the change will only receive the notification if it has requested to receive self-change notifications by implementing ` [ContentObserver.deliverSelfNotifications()](../android/database/ContentObserver.md))` to return true.` |
+| `uri` | [Uri](../android.net/Uri.md):The uri of the content that was changed. This value cannot be`null`. |
+| `observer` | [ContentObserver](../android.database/ContentObserver.md)?:The observer that originated the change, may be`null. The observer that originated the change will only receive the notification if it has requested to receive self-change notifications by implementing ` [ContentObserver.deliverSelfNotifications()](../android.database/ContentObserver.md))` to return true.` |
 
 ### notifyChange
 
@@ -1651,26 +1651,26 @@ open fun notifyChange(
 ): Unit
 ```
 
-**Deprecated:** *callers should consider migrating to [notifyChange(android.net.Uri,android.database.ContentObserver,int)](../android/content/ContentResolver.md)), as it offers support for many more options than just [NOTIFY_SYNC_TO_NETWORK](../android/content/ContentResolver.md).*
+**Deprecated:** *callers should consider migrating to [notifyChange(android.net.Uri,android.database.ContentObserver,int)](ContentResolver.md)), as it offers support for many more options than just [NOTIFY_SYNC_TO_NETWORK](ContentResolver.md).*
 
 Notify registered observers that a row was updated.
 
-To observe events sent through this call, use [registerContentObserver(android.net.Uri,boolean,android.database.ContentObserver)](../android/content/ContentResolver.md)).
+To observe events sent through this call, use [registerContentObserver(android.net.Uri,boolean,android.database.ContentObserver)](ContentResolver.md)).
 
 If syncToNetwork is true, this will attempt to schedule a local sync using the sync adapter that's registered for the authority of the provided uri. No account will be passed to the sync adapter, so all matching accounts will be synchronized.
 
-Starting in [android.os.Build.VERSION_CODES#O](../android/os/Build.VERSION_CODES.md), all content notifications must be backed by a valid [ContentProvider](../android/content/ContentProvider.md).
+Starting in [android.os.Build.VERSION_CODES#O](../android/os/Build.VERSION_CODES.md), all content notifications must be backed by a valid [ContentProvider](ContentProvider.md).
 
 | Parameters ||
 |-----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `uri` | [Uri](../android/net/Uri.md):The uri of the content that was changed. This value cannot be`null`. |
-| `observer` | [ContentObserver](../android/database/ContentObserver.md)?:The observer that originated the change, may be`null. The observer that originated the change will only receive the notification if it has requested to receive self-change notifications by implementing ` [ContentObserver.deliverSelfNotifications()](../android/database/ContentObserver.md))` to return true.` |
-| `syncToNetwork` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):If true, same as [NOTIFY_SYNC_TO_NETWORK](../android/content/ContentResolver.md). |
+| `uri` | [Uri](../android.net/Uri.md):The uri of the content that was changed. This value cannot be`null`. |
+| `observer` | [ContentObserver](../android.database/ContentObserver.md)?:The observer that originated the change, may be`null. The observer that originated the change will only receive the notification if it has requested to receive self-change notifications by implementing ` [ContentObserver.deliverSelfNotifications()](../android.database/ContentObserver.md))` to return true.` |
+| `syncToNetwork` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):If true, same as [NOTIFY_SYNC_TO_NETWORK](ContentResolver.md). |
 | --- | --- |
 
 **See Also**
 
-- [#requestSync(android.accounts.Account, String, android.os.Bundle)](../android/content/ContentResolver.md)) 
+- [#requestSync(android.accounts.Account, String, android.os.Bundle)](ContentResolver.md)) 
 
 ### notifyChange
 
@@ -1686,22 +1686,22 @@ open fun notifyChange(
 
 Notify registered observers that a row was updated.
 
-To observe events sent through this call, use [registerContentObserver(android.net.Uri,boolean,android.database.ContentObserver)](../android/content/ContentResolver.md)).
+To observe events sent through this call, use [registerContentObserver(android.net.Uri,boolean,android.database.ContentObserver)](ContentResolver.md)).
 
-If [NOTIFY_SYNC_TO_NETWORK](../android/content/ContentResolver.md) is set, this will attempt to schedule a local sync using the sync adapter that's registered for the authority of the provided uri. No account will be passed to the sync adapter, so all matching accounts will be synchronized.
+If [NOTIFY_SYNC_TO_NETWORK](ContentResolver.md) is set, this will attempt to schedule a local sync using the sync adapter that's registered for the authority of the provided uri. No account will be passed to the sync adapter, so all matching accounts will be synchronized.
 
-Starting in [android.os.Build.VERSION_CODES#O](../android/os/Build.VERSION_CODES.md), all content notifications must be backed by a valid [ContentProvider](../android/content/ContentProvider.md).
+Starting in [android.os.Build.VERSION_CODES#O](../android/os/Build.VERSION_CODES.md), all content notifications must be backed by a valid [ContentProvider](ContentProvider.md).
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `uri` | [Uri](../android/net/Uri.md):The uri of the content that was changed. This value cannot be`null`. |
-| `observer` | [ContentObserver](../android/database/ContentObserver.md)?:The observer that originated the change, may be`null. The observer that originated the change will only receive the notification if it has requested to receive self-change notifications by implementing ` [ContentObserver.deliverSelfNotifications()](../android/database/ContentObserver.md))` to return true.` |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags: [NOTIFY_SYNC_TO_NETWORK](../android/content/ContentResolver.md). Value is either`0`or a combination of [android.content.ContentResolver#NOTIFY_SYNC_TO_NETWORK](../android/content/ContentResolver.md), [android.content.ContentResolver#NOTIFY_SKIP_NOTIFY_FOR_DESCENDANTS](../android/content/ContentResolver.md), [android.content.ContentResolver#NOTIFY_INSERT](../android/content/ContentResolver.md), [android.content.ContentResolver#NOTIFY_UPDATE](../android/content/ContentResolver.md), and [android.content.ContentResolver#NOTIFY_DELETE](../android/content/ContentResolver.md) |
+| `uri` | [Uri](../android.net/Uri.md):The uri of the content that was changed. This value cannot be`null`. |
+| `observer` | [ContentObserver](../android.database/ContentObserver.md)?:The observer that originated the change, may be`null. The observer that originated the change will only receive the notification if it has requested to receive self-change notifications by implementing ` [ContentObserver.deliverSelfNotifications()](../android.database/ContentObserver.md))` to return true.` |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags: [NOTIFY_SYNC_TO_NETWORK](ContentResolver.md). Value is either`0`or a combination of [android.content.ContentResolver#NOTIFY_SYNC_TO_NETWORK](ContentResolver.md), [android.content.ContentResolver#NOTIFY_SKIP_NOTIFY_FOR_DESCENDANTS](ContentResolver.md), [android.content.ContentResolver#NOTIFY_INSERT](ContentResolver.md), [android.content.ContentResolver#NOTIFY_UPDATE](ContentResolver.md), and [android.content.ContentResolver#NOTIFY_DELETE](ContentResolver.md) |
 | --- | --- |
 
 **See Also**
 
-- [#requestSync(android.accounts.Account, String, android.os.Bundle)](../android/content/ContentResolver.md)) 
+- [#requestSync(android.accounts.Account, String, android.os.Bundle)](ContentResolver.md)) 
 
 ### notifyChange
 
@@ -1717,17 +1717,17 @@ open fun notifyChange(
 
 Notify registered observers that several rows have been updated.
 
-To observe events sent through this call, use [registerContentObserver(android.net.Uri,boolean,android.database.ContentObserver)](../android/content/ContentResolver.md)).
+To observe events sent through this call, use [registerContentObserver(android.net.Uri,boolean,android.database.ContentObserver)](ContentResolver.md)).
 
-If [NOTIFY_SYNC_TO_NETWORK](../android/content/ContentResolver.md) is set, this will attempt to schedule a local sync using the sync adapter that's registered for the authority of the provided uri. No account will be passed to the sync adapter, so all matching accounts will be synchronized.
+If [NOTIFY_SYNC_TO_NETWORK](ContentResolver.md) is set, this will attempt to schedule a local sync using the sync adapter that's registered for the authority of the provided uri. No account will be passed to the sync adapter, so all matching accounts will be synchronized.
 
-Starting in [android.os.Build.VERSION_CODES#O](../android/os/Build.VERSION_CODES.md), all content notifications must be backed by a valid [ContentProvider](../android/content/ContentProvider.md).
+Starting in [android.os.Build.VERSION_CODES#O](../android/os/Build.VERSION_CODES.md), all content notifications must be backed by a valid [ContentProvider](ContentProvider.md).
 
 | Parameters ||
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `uris` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Uri](../android/net/Uri.md)!\>:The uris of the content that was changed. This value cannot be`null`. |
-| `observer` | [ContentObserver](../android/database/ContentObserver.md)?:The observer that originated the change, may be`null. The observer that originated the change will only receive the notification if it has requested to receive self-change notifications by implementing ` [ContentObserver.deliverSelfNotifications()](../android/database/ContentObserver.md))` to return true.` |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Flags such as [NOTIFY_SYNC_TO_NETWORK](../android/content/ContentResolver.md) or [NOTIFY_SKIP_NOTIFY_FOR_DESCENDANTS](../android/content/ContentResolver.md). Value is either`0`or a combination of [android.content.ContentResolver#NOTIFY_SYNC_TO_NETWORK](../android/content/ContentResolver.md), [android.content.ContentResolver#NOTIFY_SKIP_NOTIFY_FOR_DESCENDANTS](../android/content/ContentResolver.md), [android.content.ContentResolver#NOTIFY_INSERT](../android/content/ContentResolver.md), [android.content.ContentResolver#NOTIFY_UPDATE](../android/content/ContentResolver.md), and [android.content.ContentResolver#NOTIFY_DELETE](../android/content/ContentResolver.md) |
+| `uris` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Uri](../android.net/Uri.md)!\>:The uris of the content that was changed. This value cannot be`null`. |
+| `observer` | [ContentObserver](../android.database/ContentObserver.md)?:The observer that originated the change, may be`null. The observer that originated the change will only receive the notification if it has requested to receive self-change notifications by implementing ` [ContentObserver.deliverSelfNotifications()](../android.database/ContentObserver.md))` to return true.` |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Flags such as [NOTIFY_SYNC_TO_NETWORK](ContentResolver.md) or [NOTIFY_SKIP_NOTIFY_FOR_DESCENDANTS](ContentResolver.md). Value is either`0`or a combination of [android.content.ContentResolver#NOTIFY_SYNC_TO_NETWORK](ContentResolver.md), [android.content.ContentResolver#NOTIFY_SKIP_NOTIFY_FOR_DESCENDANTS](ContentResolver.md), [android.content.ContentResolver#NOTIFY_INSERT](ContentResolver.md), [android.content.ContentResolver#NOTIFY_UPDATE](ContentResolver.md), and [android.content.ContentResolver#NOTIFY_DELETE](ContentResolver.md) |
 | --- | --- |
 
 ### openAssetFile
@@ -1744,14 +1744,14 @@ fun openAssetFile(
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------|
-| `uri` | [Uri](../android/net/Uri.md):This value cannot be`null`. |
+| `uri` | [Uri](../android.net/Uri.md):This value cannot be`null`. |
 | `mode` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):This value cannot be`null`. |
-| `signal` | [CancellationSignal](../android/os/CancellationSignal.md)?:This value may be`null`. |
+| `signal` | [CancellationSignal](../android.os/CancellationSignal.md)?:This value may be`null`. |
 | --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------|--------------------------|
-| [AssetFileDescriptor](../android/content/res/AssetFileDescriptor.md)? | This value may be`null`. |
+| [AssetFileDescriptor](../android.content.res/AssetFileDescriptor.md)? | This value may be`null`. |
 
 ### openAssetFileDescriptor
 
@@ -1768,11 +1768,11 @@ Open a raw file descriptor to access data under a URI. This interacts with the u
 
 ##### Accepts the following URI schemes:
 
-- content ([SCHEME_CONTENT](../android/content/ContentResolver.md))
-- android.resource ([SCHEME_ANDROID_RESOURCE](../android/content/ContentResolver.md))
-- file ([SCHEME_FILE](../android/content/ContentResolver.md))
+- content ([SCHEME_CONTENT](ContentResolver.md))
+- android.resource ([SCHEME_ANDROID_RESOURCE](ContentResolver.md))
+- file ([SCHEME_FILE](ContentResolver.md))
 
-##### The android.resource ([SCHEME_ANDROID_RESOURCE](../android/content/ContentResolver.md)) Scheme
+##### The android.resource ([SCHEME_ANDROID_RESOURCE](ContentResolver.md)) Scheme
 
 <br />
 
@@ -1798,12 +1798,12 @@ Note that if this function is called for read-only input (mode is "r") on a cont
 
 | Parameters ||
 |--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `uri` | [Uri](../android/net/Uri.md):The desired URI to open. This value cannot be`null`. |
+| `uri` | [Uri](../android.net/Uri.md):The desired URI to open. This value cannot be`null`. |
 | `mode` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The string representation of the file mode. Can be "r", "w", "wt", "wa", "rw" or "rwt". Please note the exact implementation of these may differ for each Provider implementation - for example, "w" may or may not truncate. This value cannot be`null`. |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [AssetFileDescriptor](../android/content/res/AssetFileDescriptor.md)? | Returns a new ParcelFileDescriptor pointing to the file or`null`if the provider recently crashed. You own this descriptor and are responsible for closing it when done. |
+| [AssetFileDescriptor](../android.content.res/AssetFileDescriptor.md)? | Returns a new ParcelFileDescriptor pointing to the file or`null`if the provider recently crashed. You own this descriptor and are responsible for closing it when done. |
 
 | Exceptions ||
 |---------------------------------|--------------------------------------------------------------------------------------|
@@ -1825,11 +1825,11 @@ Open a raw file descriptor to access data under a URI. This interacts with the u
 
 ##### Accepts the following URI schemes:
 
-- content ([SCHEME_CONTENT](../android/content/ContentResolver.md))
-- android.resource ([SCHEME_ANDROID_RESOURCE](../android/content/ContentResolver.md))
-- file ([SCHEME_FILE](../android/content/ContentResolver.md))
+- content ([SCHEME_CONTENT](ContentResolver.md))
+- android.resource ([SCHEME_ANDROID_RESOURCE](ContentResolver.md))
+- file ([SCHEME_FILE](ContentResolver.md))
 
-##### The android.resource ([SCHEME_ANDROID_RESOURCE](../android/content/ContentResolver.md)) Scheme
+##### The android.resource ([SCHEME_ANDROID_RESOURCE](ContentResolver.md)) Scheme
 
 <br />
 
@@ -1855,14 +1855,14 @@ Note that if this function is called for read-only input (mode is "r") on a cont
 
 | Parameters ||
 |----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `uri` | [Uri](../android/net/Uri.md):The desired URI to open. This value cannot be`null`. |
-| `mode` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The string representation of the file mode. Can be "r", "w", "wt", "wa", "rw" or "rwt". Please note "w" is write only and "wt" is write and truncate. See [ParcelFileDescriptor.parseMode](../android/os/ParcelFileDescriptor.md))for more details. This value cannot be`null`. |
-| `cancellationSignal` | [CancellationSignal](../android/os/CancellationSignal.md)?:A signal to cancel the operation in progress, or null if none. If the operation is canceled, then [OperationCanceledException](../android/os/OperationCanceledException.md) will be thrown. |
+| `uri` | [Uri](../android.net/Uri.md):The desired URI to open. This value cannot be`null`. |
+| `mode` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The string representation of the file mode. Can be "r", "w", "wt", "wa", "rw" or "rwt". Please note "w" is write only and "wt" is write and truncate. See [ParcelFileDescriptor.parseMode](../android.os/ParcelFileDescriptor.md))for more details. This value cannot be`null`. |
+| `cancellationSignal` | [CancellationSignal](../android.os/CancellationSignal.md)?:A signal to cancel the operation in progress, or null if none. If the operation is canceled, then [OperationCanceledException](../android.os/OperationCanceledException.md) will be thrown. |
 | --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [AssetFileDescriptor](../android/content/res/AssetFileDescriptor.md)? | Returns a new ParcelFileDescriptor pointing to the file or`null`if the provider recently crashed. You own this descriptor and are responsible for closing it when done. |
+| [AssetFileDescriptor](../android.content.res/AssetFileDescriptor.md)? | Returns a new ParcelFileDescriptor pointing to the file or`null`if the provider recently crashed. You own this descriptor and are responsible for closing it when done. |
 
 | Exceptions ||
 |---------------------------------|--------------------------------------------------------------------------------------|
@@ -1882,14 +1882,14 @@ fun openFile(
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------|
-| `uri` | [Uri](../android/net/Uri.md):This value cannot be`null`. |
+| `uri` | [Uri](../android.net/Uri.md):This value cannot be`null`. |
 | `mode` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):This value cannot be`null`. |
-| `signal` | [CancellationSignal](../android/os/CancellationSignal.md)?:This value may be`null`. |
+| `signal` | [CancellationSignal](../android.os/CancellationSignal.md)?:This value may be`null`. |
 | --- | --- |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------|--------------------------|
-| [ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md)? | This value may be`null`. |
+| [ParcelFileDescriptor](../android.os/ParcelFileDescriptor.md)? | This value may be`null`. |
 
 ### openFileDescriptor
 
@@ -1902,29 +1902,29 @@ fun openFileDescriptor(
 ): ParcelFileDescriptor?
 ```
 
-Open a raw file descriptor to access data under a URI. This is like [openAssetFileDescriptor(android.net.Uri,java.lang.String)](../android/content/ContentResolver.md)), but uses the underlying android.content.ContentProvider#openFile ContentProvider.openFile()} method, so will*not* work with providers that return sub-sections of files. If at all possible, you should use [openAssetFileDescriptor(android.net.Uri,java.lang.String)](../android/content/ContentResolver.md)). You will receive a FileNotFoundException exception if the provider returns a sub-section of a file.
+Open a raw file descriptor to access data under a URI. This is like [openAssetFileDescriptor(android.net.Uri,java.lang.String)](ContentResolver.md)), but uses the underlying android.content.ContentProvider#openFile ContentProvider.openFile()} method, so will*not* work with providers that return sub-sections of files. If at all possible, you should use [openAssetFileDescriptor(android.net.Uri,java.lang.String)](ContentResolver.md)). You will receive a FileNotFoundException exception if the provider returns a sub-section of a file.
 
 ##### Accepts the following URI schemes:
 
-- content ([SCHEME_CONTENT](../android/content/ContentResolver.md))
-- file ([SCHEME_FILE](../android/content/ContentResolver.md))
+- content ([SCHEME_CONTENT](ContentResolver.md))
+- file ([SCHEME_FILE](ContentResolver.md))
 
 <br />
 
-See [openAssetFileDescriptor(android.net.Uri,java.lang.String)](../android/content/ContentResolver.md))for more information on these schemes.
+See [openAssetFileDescriptor(android.net.Uri,java.lang.String)](ContentResolver.md))for more information on these schemes.
 
-If opening with the exclusive "r" or "w" modes, the returned ParcelFileDescriptor could be a pipe or socket pair to enable streaming of data. Opening with the "rw" mode implies a file on disk that supports seeking. If possible, always use an exclusive mode to give the underlying [ContentProvider](../android/content/ContentProvider.md) the most flexibility.
+If opening with the exclusive "r" or "w" modes, the returned ParcelFileDescriptor could be a pipe or socket pair to enable streaming of data. Opening with the "rw" mode implies a file on disk that supports seeking. If possible, always use an exclusive mode to give the underlying [ContentProvider](ContentProvider.md) the most flexibility.
 
-If you are writing a file, and need to communicate an error to the provider, use [ParcelFileDescriptor.closeWithError(String)](../android/os/ParcelFileDescriptor.md)).
+If you are writing a file, and need to communicate an error to the provider, use [ParcelFileDescriptor.closeWithError(String)](../android.os/ParcelFileDescriptor.md)).
 
 | Parameters ||
 |--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `uri` | [Uri](../android/net/Uri.md):The desired URI to open. This value cannot be`null`. |
+| `uri` | [Uri](../android.net/Uri.md):The desired URI to open. This value cannot be`null`. |
 | `mode` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The string representation of the file mode. Can be "r", "w", "wt", "wa", "rw" or "rwt". Please note the exact implementation of these may differ for each Provider implementation - for example, "w" may or may not truncate. This value cannot be`null`. |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md)? | Returns a new ParcelFileDescriptor pointing to the file or`null`if the provider recently crashed. You own this descriptor and are responsible for closing it when done. |
+| [ParcelFileDescriptor](../android.os/ParcelFileDescriptor.md)? | Returns a new ParcelFileDescriptor pointing to the file or`null`if the provider recently crashed. You own this descriptor and are responsible for closing it when done. |
 
 | Exceptions ||
 |---------------------------------|--------------------------------------------------------------------------------------|
@@ -1932,7 +1932,7 @@ If you are writing a file, and need to communicate an error to the provider, use
 
 **See Also**
 
-- [#openAssetFileDescriptor(Uri, String)](../android/content/ContentResolver.md)) 
+- [#openAssetFileDescriptor(Uri, String)](ContentResolver.md)) 
 
 ### openFileDescriptor
 
@@ -1946,31 +1946,31 @@ fun openFileDescriptor(
 ): ParcelFileDescriptor?
 ```
 
-Open a raw file descriptor to access data under a URI. This is like [openAssetFileDescriptor(android.net.Uri,java.lang.String)](../android/content/ContentResolver.md)), but uses the underlying android.content.ContentProvider#openFile ContentProvider.openFile()} method, so will*not* work with providers that return sub-sections of files. If at all possible, you should use [openAssetFileDescriptor(android.net.Uri,java.lang.String)](../android/content/ContentResolver.md)). You will receive a FileNotFoundException exception if the provider returns a sub-section of a file.
+Open a raw file descriptor to access data under a URI. This is like [openAssetFileDescriptor(android.net.Uri,java.lang.String)](ContentResolver.md)), but uses the underlying android.content.ContentProvider#openFile ContentProvider.openFile()} method, so will*not* work with providers that return sub-sections of files. If at all possible, you should use [openAssetFileDescriptor(android.net.Uri,java.lang.String)](ContentResolver.md)). You will receive a FileNotFoundException exception if the provider returns a sub-section of a file.
 
 ##### Accepts the following URI schemes:
 
-- content ([SCHEME_CONTENT](../android/content/ContentResolver.md))
-- file ([SCHEME_FILE](../android/content/ContentResolver.md))
+- content ([SCHEME_CONTENT](ContentResolver.md))
+- file ([SCHEME_FILE](ContentResolver.md))
 
 <br />
 
-See [openAssetFileDescriptor(android.net.Uri,java.lang.String)](../android/content/ContentResolver.md))for more information on these schemes.
+See [openAssetFileDescriptor(android.net.Uri,java.lang.String)](ContentResolver.md))for more information on these schemes.
 
-If opening with the exclusive "r" or "w" modes, the returned ParcelFileDescriptor could be a pipe or socket pair to enable streaming of data. Opening with the "rw" mode implies a file on disk that supports seeking. If possible, always use an exclusive mode to give the underlying [ContentProvider](../android/content/ContentProvider.md) the most flexibility.
+If opening with the exclusive "r" or "w" modes, the returned ParcelFileDescriptor could be a pipe or socket pair to enable streaming of data. Opening with the "rw" mode implies a file on disk that supports seeking. If possible, always use an exclusive mode to give the underlying [ContentProvider](ContentProvider.md) the most flexibility.
 
-If you are writing a file, and need to communicate an error to the provider, use [ParcelFileDescriptor.closeWithError(String)](../android/os/ParcelFileDescriptor.md)).
+If you are writing a file, and need to communicate an error to the provider, use [ParcelFileDescriptor.closeWithError(String)](../android.os/ParcelFileDescriptor.md)).
 
 | Parameters ||
 |----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `uri` | [Uri](../android/net/Uri.md):The desired URI to open. This value cannot be`null`. |
+| `uri` | [Uri](../android.net/Uri.md):The desired URI to open. This value cannot be`null`. |
 | `mode` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The string representation of the file mode. Can be "r", "w", "wt", "wa", "rw" or "rwt". Please note the exact implementation of these may differ for each Provider implementation - for example, "w" may or may not truncate. This value cannot be`null`. |
-| `cancellationSignal` | [CancellationSignal](../android/os/CancellationSignal.md)?:A signal to cancel the operation in progress, or null if none. If the operation is canceled, then [OperationCanceledException](../android/os/OperationCanceledException.md) will be thrown. |
+| `cancellationSignal` | [CancellationSignal](../android.os/CancellationSignal.md)?:A signal to cancel the operation in progress, or null if none. If the operation is canceled, then [OperationCanceledException](../android.os/OperationCanceledException.md) will be thrown. |
 | --- | --- |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md)? | Returns a new ParcelFileDescriptor pointing to the file or`null`if the provider recently crashed. You own this descriptor and are responsible for closing it when done. |
+| [ParcelFileDescriptor](../android.os/ParcelFileDescriptor.md)? | Returns a new ParcelFileDescriptor pointing to the file or`null`if the provider recently crashed. You own this descriptor and are responsible for closing it when done. |
 
 | Exceptions ||
 |---------------------------------|--------------------------------------------------------------------------------------|
@@ -1978,7 +1978,7 @@ If you are writing a file, and need to communicate an error to the provider, use
 
 **See Also**
 
-- [#openAssetFileDescriptor(Uri, String)](../android/content/ContentResolver.md)) 
+- [#openAssetFileDescriptor(Uri, String)](ContentResolver.md)) 
 
 ### openInputStream
 
@@ -1992,21 +1992,21 @@ Open a stream on to the content associated with a content URI. If there is no da
 
 ##### Accepts the following URI schemes:
 
-- content ([SCHEME_CONTENT](../android/content/ContentResolver.md))
-- android.resource ([SCHEME_ANDROID_RESOURCE](../android/content/ContentResolver.md))
-- file ([SCHEME_FILE](../android/content/ContentResolver.md))
+- content ([SCHEME_CONTENT](ContentResolver.md))
+- android.resource ([SCHEME_ANDROID_RESOURCE](ContentResolver.md))
+- file ([SCHEME_FILE](ContentResolver.md))
 
 <br />
 
-See [openAssetFileDescriptor(android.net.Uri,java.lang.String)](../android/content/ContentResolver.md))for more information on these schemes.
+See [openAssetFileDescriptor(android.net.Uri,java.lang.String)](ContentResolver.md))for more information on these schemes.
 
 | Parameters ||
 |-------|--------------------------------------------------------------------------------------------------------------------------|
-| `uri` | [Uri](../android/net/Uri.md):The desired URI. This value cannot be`null`. |
+| `uri` | [Uri](../android.net/Uri.md):The desired URI. This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------------|-------------------------------------------------------|
-| [InputStream](../java/io/InputStream.md)? | InputStream or`null`if the provider recently crashed. |
+| [InputStream](../java.io/InputStream.md)? | InputStream or`null`if the provider recently crashed. |
 
 | Exceptions ||
 |---------------------------------|------------------------------------------|
@@ -2014,7 +2014,7 @@ See [openAssetFileDescriptor(android.net.Uri,java.lang.String)](../android/conte
 
 **See Also**
 
-- [#openAssetFileDescriptor(Uri, String)](../android/content/ContentResolver.md)) 
+- [#openAssetFileDescriptor(Uri, String)](ContentResolver.md)) 
 
 ### openOutputStream
 
@@ -2024,15 +2024,15 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun openOutputStream(uri: Uri): OutputStream?
 ```
 
-Synonym for [openOutputStream(uri, "w")](../android/content/ContentResolver.md)). Please note the implementation of "w" is up to each Provider implementation and it may or may not truncate.
+Synonym for [openOutputStream(uri, "w")](ContentResolver.md)). Please note the implementation of "w" is up to each Provider implementation and it may or may not truncate.
 
 | Parameters ||
 |-------|--------------------------------------------------------------------------------------------------------------------------|
-| `uri` | [Uri](../android/net/Uri.md):The desired URI. This value cannot be`null`. |
+| `uri` | [Uri](../android.net/Uri.md):The desired URI. This value cannot be`null`. |
 
 | Return ||
 |--------------------------------------------------------------------------------------------|-----------------------------------------------------------|
-| [OutputStream](../java/io/OutputStream.md)? | an OutputStream or`null`if the provider recently crashed. |
+| [OutputStream](../java.io/OutputStream.md)? | an OutputStream or`null`if the provider recently crashed. |
 
 | Exceptions ||
 |---------------------------------|------------------------------------------|
@@ -2053,21 +2053,21 @@ Open a stream on to the content associated with a content URI. If there is no da
 
 ##### Accepts the following URI schemes:
 
-- content ([SCHEME_CONTENT](../android/content/ContentResolver.md))
-- file ([SCHEME_FILE](../android/content/ContentResolver.md))
+- content ([SCHEME_CONTENT](ContentResolver.md))
+- file ([SCHEME_FILE](ContentResolver.md))
 
 <br />
 
-See [openAssetFileDescriptor(android.net.Uri,java.lang.String)](../android/content/ContentResolver.md))for more information on these schemes.
+See [openAssetFileDescriptor(android.net.Uri,java.lang.String)](ContentResolver.md))for more information on these schemes.
 
 | Parameters ||
 |--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `uri` | [Uri](../android/net/Uri.md):The desired URI. This value cannot be`null`. |
+| `uri` | [Uri](../android.net/Uri.md):The desired URI. This value cannot be`null`. |
 | `mode` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The string representation of the file mode. Can be "r", "w", "wt", "wa", "rw" or "rwt". Please note the exact implementation of these may differ for each Provider implementation - for example, "w" may or may not truncate. This value cannot be`null`. |
 
 | Return ||
 |--------------------------------------------------------------------------------------------|-----------------------------------------------------------|
-| [OutputStream](../java/io/OutputStream.md)? | an OutputStream or`null`if the provider recently crashed. |
+| [OutputStream](../java.io/OutputStream.md)? | an OutputStream or`null`if the provider recently crashed. |
 
 | Exceptions ||
 |---------------------------------|------------------------------------------|
@@ -2075,7 +2075,7 @@ See [openAssetFileDescriptor(android.net.Uri,java.lang.String)](../android/conte
 
 **See Also**
 
-- [#openAssetFileDescriptor(Uri, String)](../android/content/ContentResolver.md)) 
+- [#openAssetFileDescriptor(Uri, String)](ContentResolver.md)) 
 
 ### openTypedAssetFile
 
@@ -2092,15 +2092,15 @@ fun openTypedAssetFile(
 
 | Parameters ||
 |------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| `uri` | [Uri](../android/net/Uri.md):This value cannot be`null`. |
+| `uri` | [Uri](../android.net/Uri.md):This value cannot be`null`. |
 | `mimeTypeFilter` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):This value cannot be`null`. |
-| `opts` | [Bundle](../android/os/Bundle.md)?:This value may be`null`. |
+| `opts` | [Bundle](../android.os/Bundle.md)?:This value may be`null`. |
 | --- | --- |
-| `signal` | [CancellationSignal](../android/os/CancellationSignal.md)?:This value may be`null`. |
+| `signal` | [CancellationSignal](../android.os/CancellationSignal.md)?:This value may be`null`. |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------|--------------------------|
-| [AssetFileDescriptor](../android/content/res/AssetFileDescriptor.md)? | This value may be`null`. |
+| [AssetFileDescriptor](../android.content.res/AssetFileDescriptor.md)? | This value may be`null`. |
 
 ### openTypedAssetFileDescriptor
 
@@ -2122,14 +2122,14 @@ All text/\* streams are encoded in UTF-8.
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `uri` | [Uri](../android/net/Uri.md):The desired URI to open. This value cannot be`null`. |
+| `uri` | [Uri](../android.net/Uri.md):The desired URI to open. This value cannot be`null`. |
 | `mimeType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The desired MIME type of the returned data. This can be a pattern such as \*/\*, which will allow the content provider to select a type, though there is no way for you to determine what type it is returning. This value cannot be`null`. |
-| `opts` | [Bundle](../android/os/Bundle.md)?:Additional provider-dependent options. This value may be`null`. |
+| `opts` | [Bundle](../android.os/Bundle.md)?:Additional provider-dependent options. This value may be`null`. |
 | --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [AssetFileDescriptor](../android/content/res/AssetFileDescriptor.md)? | Returns a new ParcelFileDescriptor from which you can read the data stream from the provider or`null`if the provider recently crashed. Note that this may be a pipe, meaning you can't seek in it. The only seek you should do is if the AssetFileDescriptor contains an offset, to move to that offset before reading. You own this descriptor and are responsible for closing it when done. |
+| [AssetFileDescriptor](../android.content.res/AssetFileDescriptor.md)? | Returns a new ParcelFileDescriptor from which you can read the data stream from the provider or`null`if the provider recently crashed. Note that this may be a pipe, meaning you can't seek in it. The only seek you should do is if the AssetFileDescriptor contains an offset, to move to that offset before reading. You own this descriptor and are responsible for closing it when done. |
 
 | Exceptions ||
 |---------------------------------|-----------------------------------------------------------------------------------|
@@ -2156,15 +2156,15 @@ All text/\* streams are encoded in UTF-8.
 
 | Parameters ||
 |----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `uri` | [Uri](../android/net/Uri.md):The desired URI to open. This value cannot be`null`. |
+| `uri` | [Uri](../android.net/Uri.md):The desired URI to open. This value cannot be`null`. |
 | `mimeType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The desired MIME type of the returned data. This can be a pattern such as \*/\*, which will allow the content provider to select a type, though there is no way for you to determine what type it is returning. This value cannot be`null`. |
-| `opts` | [Bundle](../android/os/Bundle.md)?:Additional provider-dependent options. This value may be`null`. |
+| `opts` | [Bundle](../android.os/Bundle.md)?:Additional provider-dependent options. This value may be`null`. |
 | --- | --- |
-| `cancellationSignal` | [CancellationSignal](../android/os/CancellationSignal.md)?:A signal to cancel the operation in progress, or null if none. If the operation is canceled, then [OperationCanceledException](../android/os/OperationCanceledException.md) will be thrown. |
+| `cancellationSignal` | [CancellationSignal](../android.os/CancellationSignal.md)?:A signal to cancel the operation in progress, or null if none. If the operation is canceled, then [OperationCanceledException](../android.os/OperationCanceledException.md) will be thrown. |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [AssetFileDescriptor](../android/content/res/AssetFileDescriptor.md)? | Returns a new ParcelFileDescriptor from which you can read the data stream from the provider or`null`if the provider recently crashed. Note that this may be a pipe, meaning you can't seek in it. The only seek you should do is if the AssetFileDescriptor contains an offset, to move to that offset before reading. You own this descriptor and are responsible for closing it when done. |
+| [AssetFileDescriptor](../android.content.res/AssetFileDescriptor.md)? | Returns a new ParcelFileDescriptor from which you can read the data stream from the provider or`null`if the provider recently crashed. Note that this may be a pipe, meaning you can't seek in it. The only seek you should do is if the AssetFileDescriptor contains an offset, to move to that offset before reading. You own this descriptor and are responsible for closing it when done. |
 
 | Exceptions ||
 |---------------------------------|-----------------------------------------------------------------------------------|
@@ -2183,29 +2183,29 @@ fun query(
 ): Cursor?
 ```
 
-Query the given URI, returning a [Cursor](../android/database/Cursor.md) over the result set with support for cancellation.
+Query the given URI, returning a [Cursor](../android.database/Cursor.md) over the result set with support for cancellation.
 
 For best performance, the caller should follow these guidelines:
-- Provide an explicit projection, to prevent reading data from storage that aren't going to be used. Provider must identify which QUERY_ARG_SORT\* arguments were honored during the preparation of the result set by including the respective argument keys in the [Cursor](../android/database/Cursor.md) extras [Bundle](../android/os/Bundle.md). See [EXTRA_HONORED_ARGS](../android/content/ContentResolver.md) for details.
+- Provide an explicit projection, to prevent reading data from storage that aren't going to be used. Provider must identify which QUERY_ARG_SORT\* arguments were honored during the preparation of the result set by including the respective argument keys in the [Cursor](../android.database/Cursor.md) extras [Bundle](../android.os/Bundle.md). See [EXTRA_HONORED_ARGS](ContentResolver.md) for details.
 
 | Parameters ||
 |----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `uri` | [Uri](../android/net/Uri.md):The URI, using the content:// scheme, for the content to retrieve. This value cannot be`null`. |
+| `uri` | [Uri](../android.net/Uri.md):The URI, using the content:// scheme, for the content to retrieve. This value cannot be`null`. |
 | `projection` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?:A list of which columns to return. Passing null will return all columns, which is inefficient. |
-| `queryArgs` | [Bundle](../android/os/Bundle.md)?:A Bundle containing additional information necessary for the operation. Arguments may include SQL style arguments, such as [ContentResolver.QUERY_ARG_SQL_LIMIT](../android/content/ContentResolver.md), but note that the documentation for each individual provider will indicate which arguments they support. This value may be`null`. |
+| `queryArgs` | [Bundle](../android.os/Bundle.md)?:A Bundle containing additional information necessary for the operation. Arguments may include SQL style arguments, such as [ContentResolver.QUERY_ARG_SQL_LIMIT](ContentResolver.md), but note that the documentation for each individual provider will indicate which arguments they support. This value may be`null`. |
 | --- | --- |
-| `cancellationSignal` | [CancellationSignal](../android/os/CancellationSignal.md)?:A signal to cancel the operation in progress, or null if none. If the operation is canceled, then [OperationCanceledException](../android/os/OperationCanceledException.md) will be thrown when the query is executed. |
+| `cancellationSignal` | [CancellationSignal](../android.os/CancellationSignal.md)?:A signal to cancel the operation in progress, or null if none. If the operation is canceled, then [OperationCanceledException](../android.os/OperationCanceledException.md) will be thrown when the query is executed. |
 
 | Return ||
 |-----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Cursor](../android/database/Cursor.md)? | A Cursor object, which is positioned before the first entry. May return`null`if the underlying content provider returns`null`, or if it crashes. |
+| [Cursor](../android.database/Cursor.md)? | A Cursor object, which is positioned before the first entry. May return`null`if the underlying content provider returns`null`, or if it crashes. |
 
 **See Also**
 
-- [#QUERY_ARG_SORT_COLUMNS](../android/content/ContentResolver.md)
-- [#QUERY_ARG_SORT_DIRECTION](../android/content/ContentResolver.md)
-- [#QUERY_ARG_SORT_COLLATION](../android/content/ContentResolver.md)
-- [android.database.Cursor](../android/database/Cursor.md)
+- [#QUERY_ARG_SORT_COLUMNS](ContentResolver.md)
+- [#QUERY_ARG_SORT_DIRECTION](ContentResolver.md)
+- [#QUERY_ARG_SORT_COLLATION](ContentResolver.md)
+- [android.database.Cursor](../android.database/Cursor.md)
 
 ### query
 
@@ -2221,7 +2221,7 @@ fun query(
 ): Cursor?
 ```
 
-Query the given URI, returning a [Cursor](../android/database/Cursor.md) over the result set.
+Query the given URI, returning a [Cursor](../android.database/Cursor.md) over the result set.
 
 For best performance, the caller should follow these guidelines:
 
@@ -2232,7 +2232,7 @@ For best performance, the caller should follow these guidelines:
 
 | Parameters ||
 |-----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `uri` | [Uri](../android/net/Uri.md):The URI, using the content:// scheme, for the content to retrieve. This value cannot be`null`. |
+| `uri` | [Uri](../android.net/Uri.md):The URI, using the content:// scheme, for the content to retrieve. This value cannot be`null`. |
 | `projection` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?:A list of which columns to return. Passing null will return all columns, which is inefficient. |
 | `selection` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:A filter declaring which rows to return, formatted as an SQL WHERE clause (excluding the WHERE itself). Passing null will return all rows for the given URI. |
 | --- | --- |
@@ -2241,11 +2241,11 @@ For best performance, the caller should follow these guidelines:
 
 | Return ||
 |-----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Cursor](../android/database/Cursor.md)? | A Cursor object, which is positioned before the first entry. May return`null`if the underlying content provider returns`null`, or if it crashes. |
+| [Cursor](../android.database/Cursor.md)? | A Cursor object, which is positioned before the first entry. May return`null`if the underlying content provider returns`null`, or if it crashes. |
 
 **See Also**
 
-- [android.database.Cursor](../android/database/Cursor.md) 
+- [android.database.Cursor](../android.database/Cursor.md) 
 
 ### query
 
@@ -2262,7 +2262,7 @@ fun query(
 ): Cursor?
 ```
 
-Query the given URI, returning a [Cursor](../android/database/Cursor.md) over the result set with optional support for cancellation.
+Query the given URI, returning a [Cursor](../android.database/Cursor.md) over the result set with optional support for cancellation.
 
 For best performance, the caller should follow these guidelines:
 
@@ -2273,22 +2273,22 @@ For best performance, the caller should follow these guidelines:
 
 | Parameters ||
 |----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `uri` | [Uri](../android/net/Uri.md):The URI, using the content:// scheme, for the content to retrieve. This value cannot be`null`. |
+| `uri` | [Uri](../android.net/Uri.md):The URI, using the content:// scheme, for the content to retrieve. This value cannot be`null`. |
 | `projection` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?:A list of which columns to return. Passing null will return all columns, which is inefficient. |
 | `selection` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:A filter declaring which rows to return, formatted as an SQL WHERE clause (excluding the WHERE itself). Passing null will return all rows for the given URI. |
 | --- | --- |
 | `selectionArgs` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?:You may include ?s in selection, which will be replaced by the values from selectionArgs, in the order that they appear in the selection. The values will be bound as Strings. This value may be`null`. |
 | `sortOrder` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:How to order the rows, formatted as an SQL ORDER BY clause (excluding the ORDER BY itself). Passing null will use the default sort order, which may be unordered. |
-| `cancellationSignal` | [CancellationSignal](../android/os/CancellationSignal.md)?:A signal to cancel the operation in progress, or null if none. If the operation is canceled, then [OperationCanceledException](../android/os/OperationCanceledException.md) will be thrown when the query is executed. |
+| `cancellationSignal` | [CancellationSignal](../android.os/CancellationSignal.md)?:A signal to cancel the operation in progress, or null if none. If the operation is canceled, then [OperationCanceledException](../android.os/OperationCanceledException.md) will be thrown when the query is executed. |
 | --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Cursor](../android/database/Cursor.md)? | A Cursor object, which is positioned before the first entry. May return`null`if the underlying content provider returns`null`, or if it crashes. |
+| [Cursor](../android.database/Cursor.md)? | A Cursor object, which is positioned before the first entry. May return`null`if the underlying content provider returns`null`, or if it crashes. |
 
 **See Also**
 
-- [android.database.Cursor](../android/database/Cursor.md) 
+- [android.database.Cursor](../android.database/Cursor.md) 
 
 ### refresh
 
@@ -2310,9 +2310,9 @@ Client code should only invoke this method when there is a strong indication (su
 
 | Parameters ||
 |----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `url` | [Uri](../android/net/Uri.md):The Uri identifying the data to refresh. This value cannot be`null`. |
-| `extras` | [Bundle](../android/os/Bundle.md)?:Additional options from the client. The definitions of these are specific to the content provider being called. This value may be`null`. |
-| `cancellationSignal` | [CancellationSignal](../android/os/CancellationSignal.md)?:A signal to cancel the operation in progress, or`null`if none. For example, if you called refresh on a particular uri, you should call [CancellationSignal.throwIfCanceled()](../android/os/CancellationSignal.md))to check whether the client has canceled the refresh request. |
+| `url` | [Uri](../android.net/Uri.md):The Uri identifying the data to refresh. This value cannot be`null`. |
+| `extras` | [Bundle](../android.os/Bundle.md)?:Additional options from the client. The definitions of these are specific to the content provider being called. This value may be`null`. |
+| `cancellationSignal` | [CancellationSignal](../android.os/CancellationSignal.md)?:A signal to cancel the operation in progress, or`null`if none. For example, if you called refresh on a particular uri, you should call [CancellationSignal.throwIfCanceled()](../android.os/CancellationSignal.md))to check whether the client has canceled the refresh request. |
 | --- | --- |
 
 | Return ||
@@ -2333,18 +2333,18 @@ fun registerContentObserver(
 
 Register an observer class that gets callbacks when data identified by a given content URI changes.
 
-Starting in [android.os.Build.VERSION_CODES#O](../android/os/Build.VERSION_CODES.md), all content notifications must be backed by a valid [ContentProvider](../android/content/ContentProvider.md).
+Starting in [android.os.Build.VERSION_CODES#O](../android/os/Build.VERSION_CODES.md), all content notifications must be backed by a valid [ContentProvider](ContentProvider.md).
 
 | Parameters ||
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `uri` | [Uri](../android/net/Uri.md):The URI to watch for changes. This can be a specific row URI, or a base URI for a whole class of content. This value cannot be`null`. |
+| `uri` | [Uri](../android.net/Uri.md):The URI to watch for changes. This can be a specific row URI, or a base URI for a whole class of content. This value cannot be`null`. |
 | `notifyForDescendants` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):When false, the observer will be notified whenever a change occurs to the exact URI specified by`uri`or to one of the URI's ancestors in the path hierarchy. When true, the observer will also be notified whenever a change occurs to the URI's descendants in the path hierarchy. |
-| `observer` | [ContentObserver](../android/database/ContentObserver.md):The object that receives callbacks when changes occur. This value cannot be`null`. |
+| `observer` | [ContentObserver](../android.database/ContentObserver.md):The object that receives callbacks when changes occur. This value cannot be`null`. |
 | --- | --- |
 
 **See Also**
 
-- [#unregisterContentObserver](../android/content/ContentResolver.md)) 
+- [#unregisterContentObserver](ContentResolver.md)) 
 
 ### releasePersistableUriPermission
 
@@ -2357,12 +2357,12 @@ open fun releasePersistableUriPermission(
 ): Unit
 ```
 
-Relinquish a persisted URI permission grant. The URI must have been previously made persistent with [takePersistableUriPermission(android.net.Uri,int)](../android/content/ContentResolver.md)). Any non-persistent grants to the calling package will remain intact.
+Relinquish a persisted URI permission grant. The URI must have been previously made persistent with [takePersistableUriPermission(android.net.Uri,int)](ContentResolver.md)). Any non-persistent grants to the calling package will remain intact.
 
 | Parameters ||
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `uri` | [Uri](../android/net/Uri.md):This value cannot be`null`. |
-| `modeFlags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is either`0`or a combination of [android.content.Intent#FLAG_GRANT_READ_URI_PERMISSION](../android/content/Intent.md), and [android.content.Intent#FLAG_GRANT_WRITE_URI_PERMISSION](../android/content/Intent.md) |
+| `uri` | [Uri](../android.net/Uri.md):This value cannot be`null`. |
+| `modeFlags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is either`0`or a combination of [android.content.Intent#FLAG_GRANT_READ_URI_PERMISSION](Intent.md), and [android.content.Intent#FLAG_GRANT_WRITE_URI_PERMISSION](Intent.md) |
 
 **See Also**
 
@@ -2386,9 +2386,9 @@ This method requires the caller to hold the permission [android.Manifest.permiss
 
 | Parameters ||
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------|
-| `account` | [Account](../android/accounts/Account.md)!:the account of the periodic sync to remove |
+| `account` | [Account](../android.accounts/Account.md)!:the account of the periodic sync to remove |
 | `authority` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the provider of the periodic sync to remove |
-| `extras` | [Bundle](../android/os/Bundle.md)!:the extras of the periodic sync to remove |
+| `extras` | [Bundle](../android.os/Bundle.md)!:the extras of the periodic sync to remove |
 | --- | --- |
 
 ### removeStatusChangeListener
@@ -2403,7 +2403,7 @@ Remove a previously registered status change listener.
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `handle` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:the handle that was returned by [addStatusChangeListener](../android/content/ContentResolver.md)) |
+| `handle` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:the handle that was returned by [addStatusChangeListener](ContentResolver.md)) |
 
 ### requestSync
 
@@ -2432,9 +2432,9 @@ Start an asynchronous sync operation. If you want to monitor the progress of the
 
 | Parameters ||
 |-------------|--------------------------------------------------------------------------------------------------------------------------|
-| `account` | [Account](../android/accounts/Account.md)!:which account should be synced |
+| `account` | [Account](../android.accounts/Account.md)!:which account should be synced |
 | `authority` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:which authority should be synced |
-| `extras` | [Bundle](../android/os/Bundle.md)!:any extras to pass to the SyncAdapter. |
+| `extras` | [Bundle](../android.os/Bundle.md)!:any extras to pass to the SyncAdapter. |
 | --- | --- |
 
 ### requestSync
@@ -2501,7 +2501,7 @@ This method requires the caller to hold the permission [android.Manifest.permiss
 
 | Parameters ||
 |-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `account` | [Account](../android/accounts/Account.md)!:the account whose setting we are querying |
+| `account` | [Account](../android.accounts/Account.md)!:the account whose setting we are querying |
 | `authority` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the provider whose behavior is being controlled |
 | `sync` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):true if the provider should be synced when tickles are received for it |
 | --- | --- |
@@ -2518,7 +2518,7 @@ open fun startSync(
 ): Unit
 ```
 
-**Deprecated:** *instead use [requestSync(android.accounts.Account,java.lang.String,android.os.Bundle)](../android/content/ContentResolver.md))*
+**Deprecated:** *instead use [requestSync(android.accounts.Account,java.lang.String,android.os.Bundle)](ContentResolver.md))*
 
 Start an asynchronous sync operation. If you want to monitor the progress of the sync you may register a SyncObserver. Only values of the following types may be used in the extras bundle:
 
@@ -2535,8 +2535,8 @@ Start an asynchronous sync operation. If you want to monitor the progress of the
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| `uri` | [Uri](../android/net/Uri.md)!:the uri of the provider to sync or null to sync all providers. |
-| `extras` | [Bundle](../android/os/Bundle.md)!:any extras to pass to the SyncAdapter. |
+| `uri` | [Uri](../android.net/Uri.md)!:the uri of the provider to sync or null to sync all providers. |
+| `extras` | [Bundle](../android.os/Bundle.md)!:any extras to pass to the SyncAdapter. |
 
 ### takePersistableUriPermission
 
@@ -2549,12 +2549,12 @@ open fun takePersistableUriPermission(
 ): Unit
 ```
 
-Take a persistable URI permission grant that has been offered. Once taken, the permission grant will be remembered across device reboots. Only URI permissions granted with [Intent.FLAG_GRANT_PERSISTABLE_URI_PERMISSION](../android/content/Intent.md) can be persisted. If the grant has already been persisted, taking it again will touch [UriPermission.getPersistedTime()](../android/content/UriPermission.md)).
+Take a persistable URI permission grant that has been offered. Once taken, the permission grant will be remembered across device reboots. Only URI permissions granted with [Intent.FLAG_GRANT_PERSISTABLE_URI_PERMISSION](Intent.md) can be persisted. If the grant has already been persisted, taking it again will touch [UriPermission.getPersistedTime()](UriPermission.md)).
 
 | Parameters ||
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `uri` | [Uri](../android/net/Uri.md):This value cannot be`null`. |
-| `modeFlags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is either`0`or a combination of [android.content.Intent#FLAG_GRANT_READ_URI_PERMISSION](../android/content/Intent.md), and [android.content.Intent#FLAG_GRANT_WRITE_URI_PERMISSION](../android/content/Intent.md) |
+| `uri` | [Uri](../android.net/Uri.md):This value cannot be`null`. |
+| `modeFlags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is either`0`or a combination of [android.content.Intent#FLAG_GRANT_READ_URI_PERMISSION](Intent.md), and [android.content.Intent#FLAG_GRANT_WRITE_URI_PERMISSION](Intent.md) |
 
 **See Also**
 
@@ -2568,19 +2568,19 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 fun uncanonicalize(url: Uri): Uri?
 ```
 
-Given a canonical Uri previously generated by [canonicalize](../android/content/ContentResolver.md)), convert it to its local non-canonical form. This can be useful in some cases where you know that you will only be using the Uri in the current environment and want to avoid any possible overhead when using it with the content provider or want to verify that the referenced data exists at all in the new environment.
+Given a canonical Uri previously generated by [canonicalize](ContentResolver.md)), convert it to its local non-canonical form. This can be useful in some cases where you know that you will only be using the Uri in the current environment and want to avoid any possible overhead when using it with the content provider or want to verify that the referenced data exists at all in the new environment.
 
 | Parameters ||
 |-------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `url` | [Uri](../android/net/Uri.md):The canonical [Uri](../android/net/Uri.md) that is to be convered back to its non-canonical form. This value cannot be`null`. |
+| `url` | [Uri](../android.net/Uri.md):The canonical [Uri](../android.net/Uri.md) that is to be convered back to its non-canonical form. This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Uri](../android/net/Uri.md)? | Returns the non-canonical representation of url. This will return null if data identified by the canonical Uri can not be found in the current environment; callers must always check for null and deal with that by appropriately falling back to an alternative. |
+| [Uri](../android.net/Uri.md)? | Returns the non-canonical representation of url. This will return null if data identified by the canonical Uri can not be found in the current environment; callers must always check for null and deal with that by appropriately falling back to an alternative. |
 
 **See Also**
 
-- [#canonicalize](../android/content/ContentResolver.md)) 
+- [#canonicalize](ContentResolver.md)) 
 
 ### unregisterContentObserver
 
@@ -2594,11 +2594,11 @@ Unregisters a change observer.
 
 | Parameters ||
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `observer` | [ContentObserver](../android/database/ContentObserver.md):The previously registered observer that is no longer needed. This value cannot be`null`. |
+| `observer` | [ContentObserver](../android.database/ContentObserver.md):The previously registered observer that is no longer needed. This value cannot be`null`. |
 
 **See Also**
 
-- [#registerContentObserver](../android/content/ContentResolver.md)) 
+- [#registerContentObserver](ContentResolver.md)) 
 
 ### update
 
@@ -2616,9 +2616,9 @@ Update row(s) in a content URI. If the content provider supports transactions th
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `uri` | [Uri](../android/net/Uri.md):The URI to modify. This value cannot be`null`. |
-| `values` | [ContentValues](../android/content/ContentValues.md)?:The new field values. The key is the column name for the field. A null value will remove an existing field value. |
-| `extras` | [Bundle](../android/os/Bundle.md)?:A Bundle containing additional information necessary for the operation. Arguments may include SQL style arguments, such as [ContentResolver.QUERY_ARG_SQL_LIMIT](../android/content/ContentResolver.md), but note that the documentation for each individual provider will indicate which arguments they support. This value may be`null`. |
+| `uri` | [Uri](../android.net/Uri.md):The URI to modify. This value cannot be`null`. |
+| `values` | [ContentValues](ContentValues.md)?:The new field values. The key is the column name for the field. A null value will remove an existing field value. |
+| `extras` | [Bundle](../android.os/Bundle.md)?:A Bundle containing additional information necessary for the operation. Arguments may include SQL style arguments, such as [ContentResolver.QUERY_ARG_SQL_LIMIT](ContentResolver.md), but note that the documentation for each individual provider will indicate which arguments they support. This value may be`null`. |
 | --- | --- |
 
 | Return ||
@@ -2647,8 +2647,8 @@ Update row(s) in a content URI. If the content provider supports transactions th
 
 | Parameters ||
 |-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `uri` | [Uri](../android/net/Uri.md):The URI to modify. This value cannot be`null`. |
-| `values` | [ContentValues](../android/content/ContentValues.md)?:The new field values. The key is the column name for the field. A null value will remove an existing field value. |
+| `uri` | [Uri](../android.net/Uri.md):The URI to modify. This value cannot be`null`. |
+| `values` | [ContentValues](ContentValues.md)?:The new field values. The key is the column name for the field. A null value will remove an existing field value. |
 | `where` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:A filter to apply to rows before updating, formatted as an SQL WHERE clause (excluding the WHERE itself). This value may be`null`. |
 | --- | --- |
 | `selectionArgs` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?:This value may be`null`. |
@@ -2684,7 +2684,7 @@ Check that only values of the following types are in the Bundle:
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------|
-| `extras` | [Bundle](../android/os/Bundle.md)!:the Bundle to check |
+| `extras` | [Bundle](../android.os/Bundle.md)!:the Bundle to check |
 
 ### wrap
 
@@ -2694,15 +2694,15 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 open static fun wrap(wrapped: ContentProvider): ContentResolver
 ```
 
-Create a [ContentResolver](../android/content/ContentResolver.md) instance that redirects all its methods to the given [ContentProvider](../android/content/ContentProvider.md).
+Create a [ContentResolver](ContentResolver.md) instance that redirects all its methods to the given [ContentProvider](ContentProvider.md).
 
 | Parameters ||
 |-----------|-------------------------------------------------------------------------------------------------------------------------------|
-| `wrapped` | [ContentProvider](../android/content/ContentProvider.md):This value cannot be`null`. |
+| `wrapped` | [ContentProvider](ContentProvider.md):This value cannot be`null`. |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------|-----------------------------|
-| [ContentResolver](../android/content/ContentResolver.md) | This value cannot be`null`. |
+| [ContentResolver](ContentResolver.md) | This value cannot be`null`. |
 
 ### wrap
 
@@ -2712,12 +2712,12 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 open static fun wrap(wrapped: ContentProviderClient): ContentResolver
 ```
 
-Create a [ContentResolver](../android/content/ContentResolver.md) instance that redirects all its methods to the given [ContentProviderClient](../android/content/ContentProviderClient.md).
+Create a [ContentResolver](ContentResolver.md) instance that redirects all its methods to the given [ContentProviderClient](ContentProviderClient.md).
 
 | Parameters ||
 |-----------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| `wrapped` | [ContentProviderClient](../android/content/ContentProviderClient.md):This value cannot be`null`. |
+| `wrapped` | [ContentProviderClient](ContentProviderClient.md):This value cannot be`null`. |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------|-----------------------------|
-| [ContentResolver](../android/content/ContentResolver.md) | This value cannot be`null`. |
+| [ContentResolver](ContentResolver.md) | This value cannot be`null`. |

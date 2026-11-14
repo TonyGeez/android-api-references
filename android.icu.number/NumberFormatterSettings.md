@@ -8,9 +8,9 @@ abstract class NumberFormatterSettings<T : NumberFormatterSettings<*>!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.icu.number.NumberFormatterSettings](../android/icu/number/NumberFormatterSettings.md) |
+| ↳ | [android.icu.number.NumberFormatterSettings](NumberFormatterSettings.md) |
 
-| Known Direct Subclasses [LocalizedNumberFormatter](../android/icu/number/LocalizedNumberFormatter.md), [UnlocalizedNumberFormatter](../android/icu/number/UnlocalizedNumberFormatter.md) |---|---| | [LocalizedNumberFormatter](../android/icu/number/LocalizedNumberFormatter.md) | A NumberFormatter that has a locale associated with it; this means . | | [UnlocalizedNumberFormatter](../android/icu/number/UnlocalizedNumberFormatter.md) | A NumberFormatter that does not yet have a locale. | |
+| Known Direct Subclasses [LocalizedNumberFormatter](LocalizedNumberFormatter.md), [UnlocalizedNumberFormatter](UnlocalizedNumberFormatter.md) |---|---| | [LocalizedNumberFormatter](LocalizedNumberFormatter.md) | A NumberFormatter that has a locale associated with it; this means . | | [UnlocalizedNumberFormatter](UnlocalizedNumberFormatter.md) | A NumberFormatter that does not yet have a locale. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 An abstract base class for specifying settings related to number formatting. This class is implemented by `https://developer.android.com/reference/kotlin/android/icu/number/UnlocalizedNumberFormatter` and `https://developer.android.com/reference/kotlin/android/icu/number/LocalizedNumberFormatter`. This class is not intended for public subclassing.
@@ -208,7 +208,7 @@ The default is to have one minimum integer digit.
 
 | Parameters ||
 |---|---|
-| `style` | [IntegerWidth](../android/icu/number/IntegerWidth.md)!: The integer width to use. |
+| `style` | [IntegerWidth](IntegerWidth.md)!: The integer width to use. |
 
 | Return ||
 |---|---|
@@ -246,7 +246,7 @@ The default is to use simple notation.
 
 | Parameters ||
 |---|---|
-| `notation` | [Notation](../android/icu/number/Notation.md)!: The notation strategy to use. |
+| `notation` | [Notation](Notation.md)!: The notation strategy to use. |
 
 | Return ||
 |---|---|
@@ -279,7 +279,7 @@ If a per-unit is specified without a primary unit via `https://developer.android
 
 | Parameters ||
 |---|---|
-| `perUnit` | [MeasureUnit](../android/icu/util/MeasureUnit.md)!: The unit to render in the denominator. |
+| `perUnit` | [MeasureUnit](../android.icu.util/MeasureUnit.md)!: The unit to render in the denominator. |
 
 | Return ||
 |---|---|
@@ -317,7 +317,7 @@ In most cases, the default rounding precision is to round to 6 fraction places; 
 
 | Parameters ||
 |---|---|
-| `precision` | [Precision](../android/icu/number/Precision.md)!: The rounding precision to use. |
+| `precision` | [Precision](Precision.md)!: The rounding precision to use. |
 
 | Return ||
 |---|---|
@@ -347,7 +347,7 @@ The default is HALF_EVEN. For more information on rounding mode, see the ICU use
 
 | Parameters ||
 |---|---|
-| `roundingMode` | [RoundingMode](../java/math/RoundingMode.md)!: The rounding mode to use. |
+| `roundingMode` | [RoundingMode](../java.math/RoundingMode.md)!: The rounding mode to use. |
 
 | Return ||
 |---|---|
@@ -383,7 +383,7 @@ The default is to not apply any multiplier.
 
 | Parameters ||
 |---|---|
-| `scale` | [Scale](../android/icu/number/Scale.md)!: An amount to be multiplied against numbers before formatting. |
+| `scale` | [Scale](Scale.md)!: An amount to be multiplied against numbers before formatting. |
 
 | Return ||
 |---|---|
@@ -464,7 +464,7 @@ The default is to choose the symbols based on the locale specified in the fluent
 
 | Parameters ||
 |---|---|
-| `symbols` | [DecimalFormatSymbols](../android/icu/text/DecimalFormatSymbols.md)!: The DecimalFormatSymbols to use. |
+| `symbols` | [DecimalFormatSymbols](../android.icu.text/DecimalFormatSymbols.md)!: The DecimalFormatSymbols to use. |
 
 | Return ||
 |---|---|
@@ -503,7 +503,7 @@ The default is to choose the best numbering system for the locale.
 
 | Parameters ||
 |---|---|
-| `ns` | [NumberingSystem](../android/icu/text/NumberingSystem.md)!: The NumberingSystem to use. |
+| `ns` | [NumberingSystem](../android.icu.text/NumberingSystem.md)!: The NumberingSystem to use. |
 
 | Return ||
 |---|---|
@@ -576,7 +576,7 @@ If the input usage is correctly set the output unit **will change** according to
 
 | Parameters ||
 |---|---|
-| `unit` | [MeasureUnit](../android/icu/util/MeasureUnit.md)!: The unit to render. |
+| `unit` | [MeasureUnit](../android.icu.util/MeasureUnit.md)!: The unit to render. |
 
 | Return ||
 |---|---|

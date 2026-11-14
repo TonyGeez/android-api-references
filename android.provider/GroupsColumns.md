@@ -19,7 +19,7 @@ interface GroupsColumns
 
 | **This interface was deprecated in API level 5.**
 |
-| see [android.provider.ContactsContract](../android/provider/ContactsContract.md)
+| see [android.provider.ContactsContract](ContactsContract.md)
 
 Columns from the groups table.
 
@@ -43,7 +43,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val NAME: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)*
 
 The group name.
 
@@ -59,7 +59,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val NOTES: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)*
 
 Notes about the group.
 
@@ -75,7 +75,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val SHOULD_SYNC: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)*
 
 Whether this group should be synced if the SYNC_EVERYTHING settings is false for this group's account.
 
@@ -91,7 +91,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val SYSTEM_ID: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)*
 
 The ID of this group if it is a System Group, null otherwise.
 

@@ -24,7 +24,7 @@ Vendors are allowed to implement this`Key`interface for their debugging or priva
 | Public methods ||
 |--------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getName](../android/media/AudioMetadata.Key.md))`()` Returns the internal name of the key. |
-| abstract [Class](../java/lang/Class.md)\<T\> | [getValueClass](../android/media/AudioMetadata.Key.md))`()` Returns the class type`T`of the associated value. |
+| abstract [Class](../java.lang/Class.md)\<T\> | [getValueClass](../android/media/AudioMetadata.Key.md))`()` Returns the class type`T`of the associated value. |
 
 ## Public methods
 
@@ -54,4 +54,4 @@ Returns the class type`T`of the associated value. Valid class types for [android
 
 | Return ||
 |----------------------------------------------------------------------------------|-----------------------------|
-| [Class](../java/lang/Class.md)<T> | This value cannot be`null`. |
+| [Class](../java.lang/Class.md)<T> | This value cannot be`null`. |

@@ -4,7 +4,7 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 
 # ExifInterface
 
-Kotlin| [Java](../android/media/ExifInterface.md) 
+Kotlin| [Java](ExifInterface.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class ExifInterface
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.ExifInterface](../android/media/ExifInterface.md) |
+| ↳ | [android.media.ExifInterface](ExifInterface.md) |
 
 This is a class for reading and writing Exif tags in various image file formats.
 
@@ -31,252 +31,252 @@ Note: JPEG and HEIF files may contain XMP data either inside the Exif data chunk
 
 | Constants ||
 |----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ORIENTATION_FLIP_HORIZONTAL](../android/media/ExifInterface.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ORIENTATION_FLIP_VERTICAL](../android/media/ExifInterface.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ORIENTATION_NORMAL](../android/media/ExifInterface.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ORIENTATION_FLIP_HORIZONTAL](ExifInterface.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ORIENTATION_FLIP_VERTICAL](ExifInterface.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ORIENTATION_NORMAL](ExifInterface.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ORIENTATION_ROTATE_180](../android/media/ExifInterface.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ORIENTATION_ROTATE_270](../android/media/ExifInterface.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ORIENTATION_ROTATE_90](../android/media/ExifInterface.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ORIENTATION_ROTATE_180](ExifInterface.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ORIENTATION_ROTATE_270](ExifInterface.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ORIENTATION_ROTATE_90](ExifInterface.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ORIENTATION_TRANSPOSE](../android/media/ExifInterface.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ORIENTATION_TRANSVERSE](../android/media/ExifInterface.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ORIENTATION_UNDEFINED](../android/media/ExifInterface.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ORIENTATION_TRANSPOSE](ExifInterface.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ORIENTATION_TRANSVERSE](ExifInterface.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ORIENTATION_UNDEFINED](ExifInterface.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STREAM_TYPE_EXIF_DATA_ONLY](../android/media/ExifInterface.md) Constant used to indicate that the input stream contains only Exif data. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STREAM_TYPE_FULL_IMAGE_DATA](../android/media/ExifInterface.md) Constant used to indicate that the input stream contains the full image data. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_APERTURE](../android/media/ExifInterface.md) Type is double. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STREAM_TYPE_EXIF_DATA_ONLY](ExifInterface.md) Constant used to indicate that the input stream contains only Exif data. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STREAM_TYPE_FULL_IMAGE_DATA](ExifInterface.md) Constant used to indicate that the input stream contains the full image data. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_APERTURE](ExifInterface.md) Type is double. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_APERTURE_VALUE](../android/media/ExifInterface.md) Type is rational. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_ARTIST](../android/media/ExifInterface.md) Type is String. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_BITS_PER_SAMPLE](../android/media/ExifInterface.md) Type is int. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_APERTURE_VALUE](ExifInterface.md) Type is rational. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_ARTIST](ExifInterface.md) Type is String. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_BITS_PER_SAMPLE](ExifInterface.md) Type is int. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_BRIGHTNESS_VALUE](../android/media/ExifInterface.md) Type is rational. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_CFA_PATTERN](../android/media/ExifInterface.md) Type is String. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_COLOR_SPACE](../android/media/ExifInterface.md) Type is int. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_BRIGHTNESS_VALUE](ExifInterface.md) Type is rational. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_CFA_PATTERN](ExifInterface.md) Type is String. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_COLOR_SPACE](ExifInterface.md) Type is int. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_COMPONENTS_CONFIGURATION](../android/media/ExifInterface.md) Type is String. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_COMPRESSED_BITS_PER_PIXEL](../android/media/ExifInterface.md) Type is rational. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_COMPRESSION](../android/media/ExifInterface.md) Type is int. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_COMPONENTS_CONFIGURATION](ExifInterface.md) Type is String. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_COMPRESSED_BITS_PER_PIXEL](ExifInterface.md) Type is rational. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_COMPRESSION](ExifInterface.md) Type is int. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_CONTRAST](../android/media/ExifInterface.md) Type is int. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_COPYRIGHT](../android/media/ExifInterface.md) Type is String. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_CUSTOM_RENDERED](../android/media/ExifInterface.md) Type is int. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_CONTRAST](ExifInterface.md) Type is int. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_COPYRIGHT](ExifInterface.md) Type is String. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_CUSTOM_RENDERED](ExifInterface.md) Type is int. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_DATETIME](../android/media/ExifInterface.md) Type is String. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_DATETIME_DIGITIZED](../android/media/ExifInterface.md) Type is String. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_DATETIME_ORIGINAL](../android/media/ExifInterface.md) Type is String. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_DATETIME](ExifInterface.md) Type is String. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_DATETIME_DIGITIZED](ExifInterface.md) Type is String. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_DATETIME_ORIGINAL](ExifInterface.md) Type is String. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_DEFAULT_CROP_SIZE](../android/media/ExifInterface.md) Type is int. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_DEVICE_SETTING_DESCRIPTION](../android/media/ExifInterface.md) Type is String. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_DIGITAL_ZOOM_RATIO](../android/media/ExifInterface.md) Type is double. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_DEFAULT_CROP_SIZE](ExifInterface.md) Type is int. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_DEVICE_SETTING_DESCRIPTION](ExifInterface.md) Type is String. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_DIGITAL_ZOOM_RATIO](ExifInterface.md) Type is double. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_DNG_VERSION](../android/media/ExifInterface.md) Type is int. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_EXIF_VERSION](../android/media/ExifInterface.md) Type is String. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_EXPOSURE_BIAS_VALUE](../android/media/ExifInterface.md) Type is double. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_DNG_VERSION](ExifInterface.md) Type is int. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_EXIF_VERSION](ExifInterface.md) Type is String. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_EXPOSURE_BIAS_VALUE](ExifInterface.md) Type is double. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_EXPOSURE_INDEX](../android/media/ExifInterface.md) Type is rational. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_EXPOSURE_MODE](../android/media/ExifInterface.md) Type is int. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_EXPOSURE_PROGRAM](../android/media/ExifInterface.md) Type is int. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_EXPOSURE_INDEX](ExifInterface.md) Type is rational. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_EXPOSURE_MODE](ExifInterface.md) Type is int. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_EXPOSURE_PROGRAM](ExifInterface.md) Type is int. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_EXPOSURE_TIME](../android/media/ExifInterface.md) Type is double. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_FILE_SOURCE](../android/media/ExifInterface.md) Type is String. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_FLASH](../android/media/ExifInterface.md) Type is int. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_EXPOSURE_TIME](ExifInterface.md) Type is double. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_FILE_SOURCE](ExifInterface.md) Type is String. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_FLASH](ExifInterface.md) Type is int. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_FLASHPIX_VERSION](../android/media/ExifInterface.md) Type is String. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_FLASH_ENERGY](../android/media/ExifInterface.md) Type is rational. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_FOCAL_LENGTH](../android/media/ExifInterface.md) Type is rational. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_FLASHPIX_VERSION](ExifInterface.md) Type is String. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_FLASH_ENERGY](ExifInterface.md) Type is rational. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_FOCAL_LENGTH](ExifInterface.md) Type is rational. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_FOCAL_LENGTH_IN_35MM_FILM](../android/media/ExifInterface.md) Type is int. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_FOCAL_PLANE_RESOLUTION_UNIT](../android/media/ExifInterface.md) Type is int. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_FOCAL_PLANE_X_RESOLUTION](../android/media/ExifInterface.md) Type is rational. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_FOCAL_LENGTH_IN_35MM_FILM](ExifInterface.md) Type is int. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_FOCAL_PLANE_RESOLUTION_UNIT](ExifInterface.md) Type is int. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_FOCAL_PLANE_X_RESOLUTION](ExifInterface.md) Type is rational. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_FOCAL_PLANE_Y_RESOLUTION](../android/media/ExifInterface.md) Type is rational. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_F_NUMBER](../android/media/ExifInterface.md) Type is double. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GAIN_CONTROL](../android/media/ExifInterface.md) Type is int. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_FOCAL_PLANE_Y_RESOLUTION](ExifInterface.md) Type is rational. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_F_NUMBER](ExifInterface.md) Type is double. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GAIN_CONTROL](ExifInterface.md) Type is int. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_ALTITUDE](../android/media/ExifInterface.md) The altitude (in meters) based on the reference in TAG_GPS_ALTITUDE_REF. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_ALTITUDE_REF](../android/media/ExifInterface.md) 0 if the altitude is above sea level. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_AREA_INFORMATION](../android/media/ExifInterface.md) Type is String. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_ALTITUDE](ExifInterface.md) The altitude (in meters) based on the reference in TAG_GPS_ALTITUDE_REF. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_ALTITUDE_REF](ExifInterface.md) 0 if the altitude is above sea level. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_AREA_INFORMATION](ExifInterface.md) Type is String. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_DATESTAMP](../android/media/ExifInterface.md) Type is String. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_DEST_BEARING](../android/media/ExifInterface.md) Type is rational. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_DEST_BEARING_REF](../android/media/ExifInterface.md) Type is String. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_DATESTAMP](ExifInterface.md) Type is String. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_DEST_BEARING](ExifInterface.md) Type is rational. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_DEST_BEARING_REF](ExifInterface.md) Type is String. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_DEST_DISTANCE](../android/media/ExifInterface.md) Type is rational. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_DEST_DISTANCE_REF](../android/media/ExifInterface.md) Type is String. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_DEST_LATITUDE](../android/media/ExifInterface.md) Type is rational. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_DEST_DISTANCE](ExifInterface.md) Type is rational. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_DEST_DISTANCE_REF](ExifInterface.md) Type is String. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_DEST_LATITUDE](ExifInterface.md) Type is rational. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_DEST_LATITUDE_REF](../android/media/ExifInterface.md) Type is String. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_DEST_LONGITUDE](../android/media/ExifInterface.md) Type is rational. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_DEST_LONGITUDE_REF](../android/media/ExifInterface.md) Type is String. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_DEST_LATITUDE_REF](ExifInterface.md) Type is String. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_DEST_LONGITUDE](ExifInterface.md) Type is rational. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_DEST_LONGITUDE_REF](ExifInterface.md) Type is String. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_DIFFERENTIAL](../android/media/ExifInterface.md) Type is int. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_DOP](../android/media/ExifInterface.md) Type is rational. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_IMG_DIRECTION](../android/media/ExifInterface.md) Type is rational. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_DIFFERENTIAL](ExifInterface.md) Type is int. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_DOP](ExifInterface.md) Type is rational. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_IMG_DIRECTION](ExifInterface.md) Type is rational. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_IMG_DIRECTION_REF](../android/media/ExifInterface.md) Type is String. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_LATITUDE](../android/media/ExifInterface.md) Type is rational. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_LATITUDE_REF](../android/media/ExifInterface.md) Type is String. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_IMG_DIRECTION_REF](ExifInterface.md) Type is String. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_LATITUDE](ExifInterface.md) Type is rational. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_LATITUDE_REF](ExifInterface.md) Type is String. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_LONGITUDE](../android/media/ExifInterface.md) Type is rational. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_LONGITUDE_REF](../android/media/ExifInterface.md) Type is String. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_MAP_DATUM](../android/media/ExifInterface.md) Type is String. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_LONGITUDE](ExifInterface.md) Type is rational. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_LONGITUDE_REF](ExifInterface.md) Type is String. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_MAP_DATUM](ExifInterface.md) Type is String. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_MEASURE_MODE](../android/media/ExifInterface.md) Type is String. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_PROCESSING_METHOD](../android/media/ExifInterface.md) Type is String. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_SATELLITES](../android/media/ExifInterface.md) Type is String. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_MEASURE_MODE](ExifInterface.md) Type is String. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_PROCESSING_METHOD](ExifInterface.md) Type is String. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_SATELLITES](ExifInterface.md) Type is String. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_SPEED](../android/media/ExifInterface.md) Type is rational. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_SPEED_REF](../android/media/ExifInterface.md) Type is String. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_STATUS](../android/media/ExifInterface.md) Type is String. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_SPEED](ExifInterface.md) Type is rational. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_SPEED_REF](ExifInterface.md) Type is String. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_STATUS](ExifInterface.md) Type is String. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_TIMESTAMP](../android/media/ExifInterface.md) Type is String. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_TRACK](../android/media/ExifInterface.md) Type is rational. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_TRACK_REF](../android/media/ExifInterface.md) Type is String. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_TIMESTAMP](ExifInterface.md) Type is String. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_TRACK](ExifInterface.md) Type is rational. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_TRACK_REF](ExifInterface.md) Type is String. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_VERSION_ID](../android/media/ExifInterface.md) Type is String. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_IMAGE_DESCRIPTION](../android/media/ExifInterface.md) Type is String. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_IMAGE_LENGTH](../android/media/ExifInterface.md) Type is int. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_GPS_VERSION_ID](ExifInterface.md) Type is String. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_IMAGE_DESCRIPTION](ExifInterface.md) Type is String. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_IMAGE_LENGTH](ExifInterface.md) Type is int. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_IMAGE_UNIQUE_ID](../android/media/ExifInterface.md) Type is String. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_IMAGE_WIDTH](../android/media/ExifInterface.md) Type is int. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_INTEROPERABILITY_INDEX](../android/media/ExifInterface.md) Type is String. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_IMAGE_UNIQUE_ID](ExifInterface.md) Type is String. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_IMAGE_WIDTH](ExifInterface.md) Type is int. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_INTEROPERABILITY_INDEX](ExifInterface.md) Type is String. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_ISO](../android/media/ExifInterface.md) Type is int. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_ISO_SPEED_RATINGS](../android/media/ExifInterface.md) Type is int. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_JPEG_INTERCHANGE_FORMAT](../android/media/ExifInterface.md) Type is int. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_ISO](ExifInterface.md) Type is int. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_ISO_SPEED_RATINGS](ExifInterface.md) Type is int. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_JPEG_INTERCHANGE_FORMAT](ExifInterface.md) Type is int. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_JPEG_INTERCHANGE_FORMAT_LENGTH](../android/media/ExifInterface.md) Type is int. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_LIGHT_SOURCE](../android/media/ExifInterface.md) Type is int. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_MAKE](../android/media/ExifInterface.md) Type is String. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_JPEG_INTERCHANGE_FORMAT_LENGTH](ExifInterface.md) Type is int. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_LIGHT_SOURCE](ExifInterface.md) Type is int. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_MAKE](ExifInterface.md) Type is String. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_MAKER_NOTE](../android/media/ExifInterface.md) Type is String. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_MAX_APERTURE_VALUE](../android/media/ExifInterface.md) Type is rational. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_METERING_MODE](../android/media/ExifInterface.md) Type is int. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_MAKER_NOTE](ExifInterface.md) Type is String. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_MAX_APERTURE_VALUE](ExifInterface.md) Type is rational. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_METERING_MODE](ExifInterface.md) Type is int. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_MODEL](../android/media/ExifInterface.md) Type is String. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_NEW_SUBFILE_TYPE](../android/media/ExifInterface.md) Type is int. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_OECF](../android/media/ExifInterface.md) Type is String. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_MODEL](ExifInterface.md) Type is String. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_NEW_SUBFILE_TYPE](ExifInterface.md) Type is int. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_OECF](ExifInterface.md) Type is String. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_OFFSET_TIME](../android/media/ExifInterface.md) A tag used to record the offset from UTC (the time difference from Universal Time Coordinated including daylight saving time) of the time of DateTime tag. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_OFFSET_TIME_DIGITIZED](../android/media/ExifInterface.md) A tag used to record the offset from UTC (the time difference from Universal Time Coordinated including daylight saving time) of the time of DateTimeDigitized tag. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_OFFSET_TIME_ORIGINAL](../android/media/ExifInterface.md) A tag used to record the offset from UTC (the time difference from Universal Time Coordinated including daylight saving time) of the time of DateTimeOriginal tag. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_OFFSET_TIME](ExifInterface.md) A tag used to record the offset from UTC (the time difference from Universal Time Coordinated including daylight saving time) of the time of DateTime tag. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_OFFSET_TIME_DIGITIZED](ExifInterface.md) A tag used to record the offset from UTC (the time difference from Universal Time Coordinated including daylight saving time) of the time of DateTimeDigitized tag. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_OFFSET_TIME_ORIGINAL](ExifInterface.md) A tag used to record the offset from UTC (the time difference from Universal Time Coordinated including daylight saving time) of the time of DateTimeOriginal tag. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_ORF_ASPECT_FRAME](../android/media/ExifInterface.md) Type is int. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_ORF_PREVIEW_IMAGE_LENGTH](../android/media/ExifInterface.md) Type is int. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_ORF_PREVIEW_IMAGE_START](../android/media/ExifInterface.md) Type is int. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_ORF_ASPECT_FRAME](ExifInterface.md) Type is int. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_ORF_PREVIEW_IMAGE_LENGTH](ExifInterface.md) Type is int. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_ORF_PREVIEW_IMAGE_START](ExifInterface.md) Type is int. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_ORF_THUMBNAIL_IMAGE](../android/media/ExifInterface.md) Type is undefined. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_ORIENTATION](../android/media/ExifInterface.md) Type is int. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_PHOTOMETRIC_INTERPRETATION](../android/media/ExifInterface.md) Type is int. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_ORF_THUMBNAIL_IMAGE](ExifInterface.md) Type is undefined. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_ORIENTATION](ExifInterface.md) Type is int. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_PHOTOMETRIC_INTERPRETATION](ExifInterface.md) Type is int. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_PIXEL_X_DIMENSION](../android/media/ExifInterface.md) Type is int. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_PIXEL_Y_DIMENSION](../android/media/ExifInterface.md) Type is int. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_PLANAR_CONFIGURATION](../android/media/ExifInterface.md) Type is int. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_PIXEL_X_DIMENSION](ExifInterface.md) Type is int. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_PIXEL_Y_DIMENSION](ExifInterface.md) Type is int. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_PLANAR_CONFIGURATION](ExifInterface.md) Type is int. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_PRIMARY_CHROMATICITIES](../android/media/ExifInterface.md) Type is rational. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_REFERENCE_BLACK_WHITE](../android/media/ExifInterface.md) Type is rational. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_RELATED_SOUND_FILE](../android/media/ExifInterface.md) Type is String. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_PRIMARY_CHROMATICITIES](ExifInterface.md) Type is rational. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_REFERENCE_BLACK_WHITE](ExifInterface.md) Type is rational. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_RELATED_SOUND_FILE](ExifInterface.md) Type is String. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_RESOLUTION_UNIT](../android/media/ExifInterface.md) Type is int. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_ROWS_PER_STRIP](../android/media/ExifInterface.md) Type is int. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_RW2_ISO](../android/media/ExifInterface.md) Type is int. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_RESOLUTION_UNIT](ExifInterface.md) Type is int. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_ROWS_PER_STRIP](ExifInterface.md) Type is int. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_RW2_ISO](ExifInterface.md) Type is int. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_RW2_JPG_FROM_RAW](../android/media/ExifInterface.md) Type is undefined. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_RW2_SENSOR_BOTTOM_BORDER](../android/media/ExifInterface.md) Type is int. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_RW2_SENSOR_LEFT_BORDER](../android/media/ExifInterface.md) Type is int. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_RW2_JPG_FROM_RAW](ExifInterface.md) Type is undefined. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_RW2_SENSOR_BOTTOM_BORDER](ExifInterface.md) Type is int. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_RW2_SENSOR_LEFT_BORDER](ExifInterface.md) Type is int. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_RW2_SENSOR_RIGHT_BORDER](../android/media/ExifInterface.md) Type is int. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_RW2_SENSOR_TOP_BORDER](../android/media/ExifInterface.md) Type is int. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SAMPLES_PER_PIXEL](../android/media/ExifInterface.md) Type is int. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_RW2_SENSOR_RIGHT_BORDER](ExifInterface.md) Type is int. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_RW2_SENSOR_TOP_BORDER](ExifInterface.md) Type is int. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SAMPLES_PER_PIXEL](ExifInterface.md) Type is int. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SATURATION](../android/media/ExifInterface.md) Type is int. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SCENE_CAPTURE_TYPE](../android/media/ExifInterface.md) Type is int. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SCENE_TYPE](../android/media/ExifInterface.md) Type is String. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SATURATION](ExifInterface.md) Type is int. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SCENE_CAPTURE_TYPE](ExifInterface.md) Type is int. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SCENE_TYPE](ExifInterface.md) Type is String. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SENSING_METHOD](../android/media/ExifInterface.md) Type is int. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SHARPNESS](../android/media/ExifInterface.md) Type is int. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SHUTTER_SPEED_VALUE](../android/media/ExifInterface.md) Type is rational. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SENSING_METHOD](ExifInterface.md) Type is int. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SHARPNESS](ExifInterface.md) Type is int. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SHUTTER_SPEED_VALUE](ExifInterface.md) Type is rational. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SOFTWARE](../android/media/ExifInterface.md) Type is String. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SPATIAL_FREQUENCY_RESPONSE](../android/media/ExifInterface.md) Type is String. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SPECTRAL_SENSITIVITY](../android/media/ExifInterface.md) Type is String. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SOFTWARE](ExifInterface.md) Type is String. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SPATIAL_FREQUENCY_RESPONSE](ExifInterface.md) Type is String. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SPECTRAL_SENSITIVITY](ExifInterface.md) Type is String. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_STRIP_BYTE_COUNTS](../android/media/ExifInterface.md) Type is int. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_STRIP_OFFSETS](../android/media/ExifInterface.md) Type is int. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SUBFILE_TYPE](../android/media/ExifInterface.md) Type is int. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_STRIP_BYTE_COUNTS](ExifInterface.md) Type is int. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_STRIP_OFFSETS](ExifInterface.md) Type is int. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SUBFILE_TYPE](ExifInterface.md) Type is int. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SUBJECT_AREA](../android/media/ExifInterface.md) Type is int. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SUBJECT_DISTANCE](../android/media/ExifInterface.md) Type is double. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SUBJECT_DISTANCE_RANGE](../android/media/ExifInterface.md) Type is int. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SUBJECT_AREA](ExifInterface.md) Type is int. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SUBJECT_DISTANCE](ExifInterface.md) Type is double. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SUBJECT_DISTANCE_RANGE](ExifInterface.md) Type is int. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SUBJECT_LOCATION](../android/media/ExifInterface.md) Type is int. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SUBSEC_TIME](../android/media/ExifInterface.md) Type is String. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SUBSEC_TIME_DIG](../android/media/ExifInterface.md) Type is String. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SUBJECT_LOCATION](ExifInterface.md) Type is int. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SUBSEC_TIME](ExifInterface.md) Type is String. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SUBSEC_TIME_DIG](ExifInterface.md) Type is String. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SUBSEC_TIME_DIGITIZED](../android/media/ExifInterface.md) Type is String. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SUBSEC_TIME_ORIG](../android/media/ExifInterface.md) Type is String. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SUBSEC_TIME_ORIGINAL](../android/media/ExifInterface.md) Type is String. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SUBSEC_TIME_DIGITIZED](ExifInterface.md) Type is String. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SUBSEC_TIME_ORIG](ExifInterface.md) Type is String. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_SUBSEC_TIME_ORIGINAL](ExifInterface.md) Type is String. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_THUMBNAIL_IMAGE_LENGTH](../android/media/ExifInterface.md) Type is int. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_THUMBNAIL_IMAGE_WIDTH](../android/media/ExifInterface.md) Type is int. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_THUMBNAIL_ORIENTATION](../android/media/ExifInterface.md) Type is int. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_THUMBNAIL_IMAGE_LENGTH](ExifInterface.md) Type is int. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_THUMBNAIL_IMAGE_WIDTH](ExifInterface.md) Type is int. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_THUMBNAIL_ORIENTATION](ExifInterface.md) Type is int. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_TRANSFER_FUNCTION](../android/media/ExifInterface.md) Type is int. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_USER_COMMENT](../android/media/ExifInterface.md) Type is String. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_WHITE_BALANCE](../android/media/ExifInterface.md) Type is int. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_TRANSFER_FUNCTION](ExifInterface.md) Type is int. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_USER_COMMENT](ExifInterface.md) Type is String. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_WHITE_BALANCE](ExifInterface.md) Type is int. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_WHITE_POINT](../android/media/ExifInterface.md) Type is rational. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_XMP](../android/media/ExifInterface.md) Type is byte\[\]. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_X_RESOLUTION](../android/media/ExifInterface.md) Type is rational. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_WHITE_POINT](ExifInterface.md) Type is rational. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_XMP](ExifInterface.md) Type is byte\[\]. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_X_RESOLUTION](ExifInterface.md) Type is rational. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_Y_CB_CR_COEFFICIENTS](../android/media/ExifInterface.md) Type is rational. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_Y_CB_CR_POSITIONING](../android/media/ExifInterface.md) Type is int. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_Y_CB_CR_SUB_SAMPLING](../android/media/ExifInterface.md) Type is int. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_Y_CB_CR_COEFFICIENTS](ExifInterface.md) Type is rational. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_Y_CB_CR_POSITIONING](ExifInterface.md) Type is int. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_Y_CB_CR_SUB_SAMPLING](ExifInterface.md) Type is int. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_Y_RESOLUTION](../android/media/ExifInterface.md) Type is rational. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WHITEBALANCE_AUTO](../android/media/ExifInterface.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WHITEBALANCE_MANUAL](../android/media/ExifInterface.md) <br /> |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TAG_Y_RESOLUTION](ExifInterface.md) Type is rational. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WHITEBALANCE_AUTO](ExifInterface.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WHITEBALANCE_MANUAL](ExifInterface.md) <br /> |
 | --- | --- |
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ExifInterface](../android/media/ExifInterface.md))`(`file:` ` [File](../java/io/File.md)`)` Reads Exif tags from the specified image file. |
-| [ExifInterface](../android/media/ExifInterface.md))`(`fileDescriptor:` ` [FileDescriptor](../java/io/FileDescriptor.md)`)` Reads Exif tags from the specified image file descriptor. |
-| [ExifInterface](../android/media/ExifInterface.md))`(`inputStream:` ` [InputStream](../java/io/InputStream.md)`)` Reads Exif tags from the specified image input stream. |
-| [ExifInterface](../android/media/ExifInterface.md))`(`inputStream:` ` [InputStream](../java/io/InputStream.md)`, `streamType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Reads Exif tags from the specified image input stream based on the stream type. |
-| [ExifInterface](../android/media/ExifInterface.md))`(`filename:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Reads Exif tags from the specified image file. |
+| [ExifInterface](ExifInterface.md))`(`file:` ` [File](../java.io/File.md)`)` Reads Exif tags from the specified image file. |
+| [ExifInterface](ExifInterface.md))`(`fileDescriptor:` ` [FileDescriptor](../java.io/FileDescriptor.md)`)` Reads Exif tags from the specified image file descriptor. |
+| [ExifInterface](ExifInterface.md))`(`inputStream:` ` [InputStream](../java.io/InputStream.md)`)` Reads Exif tags from the specified image input stream. |
+| [ExifInterface](ExifInterface.md))`(`inputStream:` ` [InputStream](../java.io/InputStream.md)`, `streamType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Reads Exif tags from the specified image input stream based on the stream type. |
+| [ExifInterface](ExifInterface.md))`(`filename:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Reads Exif tags from the specified image file. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getAltitude](../android/media/ExifInterface.md))`(`defaultValue:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Return the altitude in meters. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getAttribute](../android/media/ExifInterface.md))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns the value of the specified tag or`null`if there is no such tag in the image file. |
-| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | [getAttributeBytes](../android/media/ExifInterface.md))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns the raw bytes for the value of the requested tag inside the image file, or`null`if the tag is not contained. |
+| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getAltitude](ExifInterface.md))`(`defaultValue:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Return the altitude in meters. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getAttribute](ExifInterface.md))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns the value of the specified tag or`null`if there is no such tag in the image file. |
+| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | [getAttributeBytes](ExifInterface.md))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns the raw bytes for the value of the requested tag inside the image file, or`null`if the tag is not contained. |
 | --- | --- |
-| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getAttributeDouble](../android/media/ExifInterface.md))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `defaultValue:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Returns the double value of the tag that is specified as rational or contains a double-formatted value. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAttributeInt](../android/media/ExifInterface.md))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `defaultValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the integer value of the specified tag. |
-| open [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)? | [getAttributeRange](../android/media/ExifInterface.md))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns the offset and length of the requested tag inside the image file, or`null`if the tag is not contained. |
+| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getAttributeDouble](ExifInterface.md))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `defaultValue:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Returns the double value of the tag that is specified as rational or contains a double-formatted value. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAttributeInt](ExifInterface.md))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `defaultValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the integer value of the specified tag. |
+| open [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)? | [getAttributeRange](ExifInterface.md))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns the offset and length of the requested tag inside the image file, or`null`if the tag is not contained. |
 | --- | --- |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getDateTime](../android/media/ExifInterface.md))`()` Returns parsed [TAG_DATETIME](../android/media/ExifInterface.md) value, or -1 if unavailable or invalid. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getDateTimeDigitized](../android/media/ExifInterface.md))`()` Returns parsed [TAG_DATETIME_DIGITIZED](../android/media/ExifInterface.md) value, or -1 if unavailable or invalid. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getDateTimeOriginal](../android/media/ExifInterface.md))`()` Returns parsed [TAG_DATETIME_ORIGINAL](../android/media/ExifInterface.md) value, or -1 if unavailable or invalid. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getDateTime](ExifInterface.md))`()` Returns parsed [TAG_DATETIME](ExifInterface.md) value, or -1 if unavailable or invalid. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getDateTimeDigitized](ExifInterface.md))`()` Returns parsed [TAG_DATETIME_DIGITIZED](ExifInterface.md) value, or -1 if unavailable or invalid. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getDateTimeOriginal](ExifInterface.md))`()` Returns parsed [TAG_DATETIME_ORIGINAL](ExifInterface.md) value, or -1 if unavailable or invalid. |
 | --- | --- |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getGpsDateTime](../android/media/ExifInterface.md))`()` Returns number of milliseconds since Jan. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getLatLong](../android/media/ExifInterface.md))`(`output:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`)` Stores the latitude and longitude value in a float array. |
-| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getThumbnail](../android/media/ExifInterface.md))`()` Returns the JPEG compressed thumbnail inside the image file, or`null`if there is no JPEG compressed thumbnail. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getGpsDateTime](ExifInterface.md))`()` Returns number of milliseconds since Jan. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getLatLong](ExifInterface.md))`(`output:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`)` Stores the latitude and longitude value in a float array. |
+| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getThumbnail](ExifInterface.md))`()` Returns the JPEG compressed thumbnail inside the image file, or`null`if there is no JPEG compressed thumbnail. |
 | --- | --- |
-| open [Bitmap](../android/graphics/Bitmap.md)! | [getThumbnailBitmap](../android/media/ExifInterface.md))`()` Creates and returns a Bitmap object of the thumbnail image based on the byte array and the thumbnail compression value, or`null`if the compression type is unsupported. |
-| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getThumbnailBytes](../android/media/ExifInterface.md))`()` Returns the thumbnail bytes inside the image file, regardless of the compression type of the thumbnail image. |
-| open [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)? | [getThumbnailRange](../android/media/ExifInterface.md))`()` Returns the offset and length of thumbnail inside the image file, or`null`if either there is no thumbnail or the thumbnail bytes are stored non-consecutively. |
+| open [Bitmap](../android.graphics/Bitmap.md)! | [getThumbnailBitmap](ExifInterface.md))`()` Creates and returns a Bitmap object of the thumbnail image based on the byte array and the thumbnail compression value, or`null`if the compression type is unsupported. |
+| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getThumbnailBytes](ExifInterface.md))`()` Returns the thumbnail bytes inside the image file, regardless of the compression type of the thumbnail image. |
+| open [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)? | [getThumbnailRange](ExifInterface.md))`()` Returns the offset and length of thumbnail inside the image file, or`null`if either there is no thumbnail or the thumbnail bytes are stored non-consecutively. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasAttribute](../android/media/ExifInterface.md))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns true if the image file has the given attribute defined. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasThumbnail](../android/media/ExifInterface.md))`()` Returns true if the image file has a thumbnail. |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSupportedMimeType](../android/media/ExifInterface.md))`(`mimeType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns whether ExifInterface currently supports reading data from the specified mime type or not. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasAttribute](ExifInterface.md))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns true if the image file has the given attribute defined. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasThumbnail](ExifInterface.md))`()` Returns true if the image file has a thumbnail. |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSupportedMimeType](ExifInterface.md))`(`mimeType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns whether ExifInterface currently supports reading data from the specified mime type or not. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isThumbnailCompressed](../android/media/ExifInterface.md))`()` Returns true if thumbnail image is JPEG Compressed, or false if either thumbnail image does not exist or thumbnail image is uncompressed. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [saveAttributes](../android/media/ExifInterface.md))`()` Save the tag data into the original image file. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAttribute](../android/media/ExifInterface.md))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Set the value of the specified tag. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isThumbnailCompressed](ExifInterface.md))`()` Returns true if thumbnail image is JPEG Compressed, or false if either thumbnail image does not exist or thumbnail image is uncompressed. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [saveAttributes](ExifInterface.md))`()` Save the tag data into the original image file. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAttribute](ExifInterface.md))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Set the value of the specified tag. |
 | --- | --- |
 
 ## Constants
@@ -408,7 +408,7 @@ Deprecated in [API level 24](https://developer.android.com/guide/topics/manifest
 static val TAG_APERTURE: String
 ```
 
-**Deprecated:** *use [TAG_F_NUMBER](../android/media/ExifInterface.md) instead*
+**Deprecated:** *use [TAG_F_NUMBER](ExifInterface.md) instead*
 
 Type is double. 
 
@@ -1287,7 +1287,7 @@ Deprecated in [API level 24](https://developer.android.com/guide/topics/manifest
 static val TAG_ISO: String
 ```
 
-**Deprecated:** *use [TAG_ISO_SPEED_RATINGS](../android/media/ExifInterface.md) instead*
+**Deprecated:** *use [TAG_ISO_SPEED_RATINGS](ExifInterface.md) instead*
 
 Type is int. 
 
@@ -1941,7 +1941,7 @@ Deprecated in [API level 24](https://developer.android.com/guide/topics/manifest
 static val TAG_SUBSEC_TIME_DIG: String
 ```
 
-**Deprecated:** *use [TAG_SUBSEC_TIME_DIGITIZED](../android/media/ExifInterface.md) instead*
+**Deprecated:** *use [TAG_SUBSEC_TIME_DIGITIZED](ExifInterface.md) instead*
 
 Type is String. 
 
@@ -1968,7 +1968,7 @@ Deprecated in [API level 24](https://developer.android.com/guide/topics/manifest
 static val TAG_SUBSEC_TIME_ORIG: String
 ```
 
-**Deprecated:** *use [TAG_SUBSEC_TIME_ORIGINAL](../android/media/ExifInterface.md) instead*
+**Deprecated:** *use [TAG_SUBSEC_TIME_ORIGINAL](ExifInterface.md) instead*
 
 Type is String. 
 
@@ -2176,12 +2176,12 @@ Reads Exif tags from the specified image file.
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------------------|
-| `file` | [File](../java/io/File.md):the file of the image data This value cannot be`null`. |
+| `file` | [File](../java.io/File.md):the file of the image data This value cannot be`null`. |
 
 | Exceptions ||
 |----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `java.lang.NullPointerException` | if file is null |
-| `java.io.IOException` | if an I/O error occurs while retrieving file descriptor via [FileInputStream.getFD()](../java/io/FileInputStream.md)). |
+| `java.io.IOException` | if an I/O error occurs while retrieving file descriptor via [FileInputStream.getFD()](../java.io/FileInputStream.md)). |
 
 ### ExifInterface
 
@@ -2195,12 +2195,12 @@ Reads Exif tags from the specified image file descriptor. Attribute mutation is 
 
 | Parameters ||
 |------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `fileDescriptor` | [FileDescriptor](../java/io/FileDescriptor.md):the file descriptor of the image data This value cannot be`null`. |
+| `fileDescriptor` | [FileDescriptor](../java.io/FileDescriptor.md):the file descriptor of the image data This value cannot be`null`. |
 
 | Exceptions ||
 |----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `java.lang.NullPointerException` | if file descriptor is null |
-| `java.io.IOException` | if an error occurs while duplicating the file descriptor via [Os.dup(FileDescriptor)](../android/system/Os.md)). |
+| `java.io.IOException` | if an error occurs while duplicating the file descriptor via [Os.dup(FileDescriptor)](../android.system/Os.md)). |
 
 ### ExifInterface
 
@@ -2214,7 +2214,7 @@ Reads Exif tags from the specified image input stream. Attribute mutation is not
 
 | Parameters ||
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `inputStream` | [InputStream](../java/io/InputStream.md):the input stream that contains the image data This value cannot be`null`. |
+| `inputStream` | [InputStream](../java.io/InputStream.md):the input stream that contains the image data This value cannot be`null`. |
 
 | Exceptions ||
 |----------------------------------|-----------------------------|
@@ -2234,13 +2234,13 @@ Reads Exif tags from the specified image input stream based on the stream type. 
 
 | Parameters ||
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `inputStream` | [InputStream](../java/io/InputStream.md):the input stream that contains the image data This value cannot be`null`. |
-| `streamType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the type of input stream Value is [android.media.ExifInterface#STREAM_TYPE_FULL_IMAGE_DATA](../android/media/ExifInterface.md), or [android.media.ExifInterface#STREAM_TYPE_EXIF_DATA_ONLY](../android/media/ExifInterface.md) |
+| `inputStream` | [InputStream](../java.io/InputStream.md):the input stream that contains the image data This value cannot be`null`. |
+| `streamType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the type of input stream Value is [android.media.ExifInterface#STREAM_TYPE_FULL_IMAGE_DATA](ExifInterface.md), or [android.media.ExifInterface#STREAM_TYPE_EXIF_DATA_ONLY](ExifInterface.md) |
 
 | Exceptions ||
 |----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `java.lang.NullPointerException` | if the input stream is null |
-| `java.io.IOException` | if an I/O error occurs while retrieving file descriptor via [FileInputStream.getFD()](../java/io/FileInputStream.md)). |
+| `java.io.IOException` | if an I/O error occurs while retrieving file descriptor via [FileInputStream.getFD()](../java.io/FileInputStream.md)). |
 
 ### ExifInterface
 
@@ -2259,7 +2259,7 @@ Reads Exif tags from the specified image file.
 | Exceptions ||
 |----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `java.lang.NullPointerException` | if file name is null |
-| `java.io.IOException` | if an I/O error occurs while retrieving file descriptor via [FileInputStream.getFD()](../java/io/FileInputStream.md)). |
+| `java.io.IOException` | if an I/O error occurs while retrieving file descriptor via [FileInputStream.getFD()](../java.io/FileInputStream.md)). |
 
 ## Public methods
 
@@ -2365,7 +2365,7 @@ Returns the offset and length of the requested tag inside the image file, or`nul
 
 | Exceptions ||
 |-----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.IllegalStateException` | if [saveAttributes()](../android/media/ExifInterface.md))has been called since the underlying file was initially parsed, since that means offsets may have changed. |
+| `java.lang.IllegalStateException` | if [saveAttributes()](ExifInterface.md))has been called since the underlying file was initially parsed, since that means offsets may have changed. |
 
 ### getDateTime
 
@@ -2375,7 +2375,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 open fun getDateTime(): Long
 ```
 
-Returns parsed [TAG_DATETIME](../android/media/ExifInterface.md) value, or -1 if unavailable or invalid. 
+Returns parsed [TAG_DATETIME](ExifInterface.md) value, or -1 if unavailable or invalid. 
 Value is a non-negative timestamp measured as the number of milliseconds since 1970-01-01T00:00:00Z.
 
 | Return ||
@@ -2390,7 +2390,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 open fun getDateTimeDigitized(): Long
 ```
 
-Returns parsed [TAG_DATETIME_DIGITIZED](../android/media/ExifInterface.md) value, or -1 if unavailable or invalid. 
+Returns parsed [TAG_DATETIME_DIGITIZED](ExifInterface.md) value, or -1 if unavailable or invalid. 
 Value is a non-negative timestamp measured as the number of milliseconds since 1970-01-01T00:00:00Z.
 
 | Return ||
@@ -2405,7 +2405,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 open fun getDateTimeOriginal(): Long
 ```
 
-Returns parsed [TAG_DATETIME_ORIGINAL](../android/media/ExifInterface.md) value, or -1 if unavailable or invalid. 
+Returns parsed [TAG_DATETIME_ORIGINAL](ExifInterface.md) value, or -1 if unavailable or invalid. 
 Value is a non-negative timestamp measured as the number of milliseconds since 1970-01-01T00:00:00Z.
 
 | Return ||
@@ -2478,7 +2478,7 @@ Returns the offset and length of thumbnail inside the image file, or`null`if eit
 
 | Exceptions ||
 |-----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.IllegalStateException` | if [saveAttributes()](../android/media/ExifInterface.md))has been called since the underlying file was initially parsed, since that means offsets may have changed. |
+| `java.lang.IllegalStateException` | if [saveAttributes()](ExifInterface.md))has been called since the underlying file was initially parsed, since that means offsets may have changed. |
 
 ### hasAttribute
 
@@ -2536,11 +2536,11 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 open fun saveAttributes(): Unit
 ```
 
-Save the tag data into the original image file. This is expensive because it involves copying all the data from one file to another and deleting the old file and renaming the other. It's best to use [setAttribute(java.lang.String,java.lang.String)](../android/media/ExifInterface.md))to set all attributes to write and make a single call rather than multiple calls for each attribute.
+Save the tag data into the original image file. This is expensive because it involves copying all the data from one file to another and deleting the old file and renaming the other. It's best to use [setAttribute(java.lang.String,java.lang.String)](ExifInterface.md))to set all attributes to write and make a single call rather than multiple calls for each attribute.
 
 This method is supported for JPEG, PNG, and WebP files.
 
-Note: after calling this method, any attempts to obtain range information from [getAttributeRange(java.lang.String)](../android/media/ExifInterface.md))or [getThumbnailRange()](../android/media/ExifInterface.md))will throw [IllegalStateException](../java/lang/IllegalStateException.md), since the offsets may have changed in the newly written file.
+Note: after calling this method, any attempts to obtain range information from [getAttributeRange(java.lang.String)](ExifInterface.md))or [getThumbnailRange()](ExifInterface.md))will throw [IllegalStateException](../java.lang/IllegalStateException.md), since the offsets may have changed in the newly written file.
 
 For WebP format, the Exif data will be stored as an Extended File Format, and it may not be supported for older readers.
 

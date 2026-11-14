@@ -9,11 +9,11 @@ abstract class IsolatedService : Service
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](../android/content/Context.md) ||||
-| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) |||
-| | | ↳ | [android.app.Service](../android/app/Service.md) ||
+| ↳ | [android.content.Context](../android.content/Context.md) ||||
+| | ↳ | [android.content.ContextWrapper](../android.content/ContextWrapper.md) |||
+| | | ↳ | [android.app.Service](../android.app/Service.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.adservices.ondevicepersonalization.IsolatedService](../android/adservices/ondevicepersonalization/IsolatedService.md) |
+| | | | ↳ | [android.adservices.ondevicepersonalization.IsolatedService](IsolatedService.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 37.**
@@ -1047,19 +1047,19 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 
 | Public methods ||
 |---|---|
-| [EventUrlProvider](../android/adservices/ondevicepersonalization/EventUrlProvider.md) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService#getEventUrlProvider(android.adservices.ondevicepersonalization.RequestToken)(requestToken: https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RequestToken)` Returns an `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/EventUrlProvider` for the current request. |
-| [FederatedComputeScheduler](../android/adservices/ondevicepersonalization/FederatedComputeScheduler.md) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService#getFederatedComputeScheduler(android.adservices.ondevicepersonalization.RequestToken)(requestToken: https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RequestToken)` Returns an `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/FederatedComputeScheduler` for the current request. |
-| [MutableKeyValueStore](../android/adservices/ondevicepersonalization/MutableKeyValueStore.md) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService#getLocalData(android.adservices.ondevicepersonalization.RequestToken)(requestToken: https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RequestToken)` Returns a Data Access Object for the LOCAL_DATA table. |
+| [EventUrlProvider](EventUrlProvider.md) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService#getEventUrlProvider(android.adservices.ondevicepersonalization.RequestToken)(requestToken: https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RequestToken)` Returns an `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/EventUrlProvider` for the current request. |
+| [FederatedComputeScheduler](FederatedComputeScheduler.md) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService#getFederatedComputeScheduler(android.adservices.ondevicepersonalization.RequestToken)(requestToken: https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RequestToken)` Returns an `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/FederatedComputeScheduler` for the current request. |
+| [MutableKeyValueStore](MutableKeyValueStore.md) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService#getLocalData(android.adservices.ondevicepersonalization.RequestToken)(requestToken: https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RequestToken)` Returns a Data Access Object for the LOCAL_DATA table. |
 | --- | --- |
-| [LogReader](../android/adservices/ondevicepersonalization/LogReader.md) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService#getLogReader(android.adservices.ondevicepersonalization.RequestToken)(requestToken: https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RequestToken)` Returns a DAO for the REQUESTS and EVENTS tables that provides access to the rows that are readable by the IsolatedService. |
-| [ModelManager](../android/adservices/ondevicepersonalization/ModelManager.md) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService#getModelManager(android.adservices.ondevicepersonalization.RequestToken)(requestToken: https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RequestToken)` Returns an `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/ModelManager` for the current request. |
-| [KeyValueStore](../android/adservices/ondevicepersonalization/KeyValueStore.md) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService#getRemoteData(android.adservices.ondevicepersonalization.RequestToken)(requestToken: https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RequestToken)` Returns a Data Access Object for the REMOTE_DATA table. |
+| [LogReader](LogReader.md) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService#getLogReader(android.adservices.ondevicepersonalization.RequestToken)(requestToken: https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RequestToken)` Returns a DAO for the REQUESTS and EVENTS tables that provides access to the rows that are readable by the IsolatedService. |
+| [ModelManager](ModelManager.md) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService#getModelManager(android.adservices.ondevicepersonalization.RequestToken)(requestToken: https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RequestToken)` Returns an `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/ModelManager` for the current request. |
+| [KeyValueStore](KeyValueStore.md) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService#getRemoteData(android.adservices.ondevicepersonalization.RequestToken)(requestToken: https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RequestToken)` Returns a Data Access Object for the REMOTE_DATA table. |
 | --- | --- |
-| [UserData](../android/adservices/ondevicepersonalization/UserData.md)? | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService#getUserData(android.adservices.ondevicepersonalization.RequestToken)(requestToken: https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RequestToken)` Returns the platform-provided `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/UserData` for the current request. |
-| open [IBinder](../android/os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Handles binding to the `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService#`. |
+| [UserData](UserData.md)? | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService#getUserData(android.adservices.ondevicepersonalization.RequestToken)(requestToken: https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RequestToken)` Returns the platform-provided `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/UserData` for the current request. |
+| open [IBinder](../android.os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Handles binding to the `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService#`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService#onCreate()()` Creates a binder for an `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService#`. |
 | --- | --- |
-| abstract [IsolatedWorker](../android/adservices/ondevicepersonalization/IsolatedWorker.md) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService#onRequest(android.adservices.ondevicepersonalization.RequestToken)(requestToken: https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RequestToken)` Return an instance of an `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedWorker` that handles client requests. |
+| abstract [IsolatedWorker](IsolatedWorker.md) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService#onRequest(android.adservices.ondevicepersonalization.RequestToken)(requestToken: https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/RequestToken)` Return an instance of an `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedWorker` that handles client requests. |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/app/Service.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/app/Service.html#attachBaseContext(android.content.Context)(newBase: https://developer.android.com/reference/kotlin/android/content/Context.html#!)`
 
@@ -2772,7 +2772,7 @@ Returns an `https://developer.android.com/reference/kotlin/android/adservices/on
 
 | Parameters ||
 |---|---|
-| `requestToken` | [RequestToken](../android/adservices/ondevicepersonalization/RequestToken.md): an opaque token that identifies the current request to the service. This value cannot be `null`. |
+| `requestToken` | [RequestToken](RequestToken.md): an opaque token that identifies the current request to the service. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -2796,7 +2796,7 @@ Returns an `https://developer.android.com/reference/kotlin/android/adservices/on
 
 | Parameters ||
 |---|---|
-| `requestToken` | [RequestToken](../android/adservices/ondevicepersonalization/RequestToken.md): an opaque token that identifies the current request to the service. This value cannot be `null`. |
+| `requestToken` | [RequestToken](RequestToken.md): an opaque token that identifies the current request to the service. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -2820,7 +2820,7 @@ Returns a Data Access Object for the LOCAL_DATA table. The LOCAL_DATA table is a
 
 | Parameters ||
 |---|---|
-| `requestToken` | [RequestToken](../android/adservices/ondevicepersonalization/RequestToken.md): an opaque token that identifies the current request to the service. This value cannot be `null`. |
+| `requestToken` | [RequestToken](RequestToken.md): an opaque token that identifies the current request to the service. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -2844,7 +2844,7 @@ Returns a DAO for the REQUESTS and EVENTS tables that provides access to the row
 
 | Parameters ||
 |---|---|
-| `requestToken` | [RequestToken](../android/adservices/ondevicepersonalization/RequestToken.md): an opaque token that identifies the current request to the service. This value cannot be `null`. |
+| `requestToken` | [RequestToken](RequestToken.md): an opaque token that identifies the current request to the service. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -2868,7 +2868,7 @@ Returns an `https://developer.android.com/reference/kotlin/android/adservices/on
 
 | Parameters ||
 |---|---|
-| `requestToken` | [RequestToken](../android/adservices/ondevicepersonalization/RequestToken.md): an opaque token that identifies the current request to the service. This value cannot be `null`. |
+| `requestToken` | [RequestToken](RequestToken.md): an opaque token that identifies the current request to the service. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -2904,7 +2904,7 @@ Returns a Data Access Object for the REMOTE_DATA table. The REMOTE_DATA table is
 
 | Parameters ||
 |---|---|
-| `requestToken` | [RequestToken](../android/adservices/ondevicepersonalization/RequestToken.md): an opaque token that identifies the current request to the service. This value cannot be `null`. |
+| `requestToken` | [RequestToken](RequestToken.md): an opaque token that identifies the current request to the service. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -2928,7 +2928,7 @@ Returns the platform-provided `https://developer.android.com/reference/kotlin/an
 
 | Parameters ||
 |---|---|
-| `requestToken` | [RequestToken](../android/adservices/ondevicepersonalization/RequestToken.md): an opaque token that identifies the current request to the service. This value cannot be `null`. |
+| `requestToken` | [RequestToken](RequestToken.md): an opaque token that identifies the current request to the service. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -2952,7 +2952,7 @@ Handles binding to the `https://developer.android.com/reference/kotlin/android/a
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md): The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. This value cannot be `null`. |
+| `intent` | [Intent](../android.content/Intent.md): The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -2984,7 +2984,7 @@ Return an instance of an `https://developer.android.com/reference/kotlin/android
 
 | Parameters ||
 |---|---|
-| `requestToken` | [RequestToken](../android/adservices/ondevicepersonalization/RequestToken.md): an opaque token that identifies the current request to the service that must be passed to service methods that depend on per-request state. This value cannot be `null`. |
+| `requestToken` | [RequestToken](RequestToken.md): an opaque token that identifies the current request to the service that must be passed to service methods that depend on per-request state. This value cannot be `null`. |
 
 | Return ||
 |---|---|

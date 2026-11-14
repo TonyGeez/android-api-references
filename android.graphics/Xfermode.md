@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # Xfermode
 
-Kotlin| [Java](../android/graphics/Xfermode.md) 
+Kotlin| [Java](Xfermode.md) 
 | --- | --- |
 
 ```
@@ -13,9 +13,9 @@ open class Xfermode
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.graphics.Xfermode](../android/graphics/Xfermode.md) |
+| ↳ | [android.graphics.Xfermode](Xfermode.md) |
 
-| Known Direct Subclasses [PorterDuffXfermode](../android/graphics/PorterDuffXfermode.md), [RuntimeXfermode](../android/graphics/RuntimeXfermode.md) |----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [PorterDuffXfermode](../android/graphics/PorterDuffXfermode.md) | Specialized implementation of [Paint](../android/graphics/Paint.md)'s [transfer mode](../android/graphics/Paint.md)). | | [RuntimeXfermode](../android/graphics/RuntimeXfermode.md) | A [RuntimeXfermode](../android/graphics/RuntimeXfermode.md) calculates a per-pixel color based on the output of a user \* defined Android Graphics Shading Language (AGSL) function. | |
+| Known Direct Subclasses [PorterDuffXfermode](PorterDuffXfermode.md), [RuntimeXfermode](RuntimeXfermode.md) |----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [PorterDuffXfermode](PorterDuffXfermode.md) | Specialized implementation of [Paint](Paint.md)'s [transfer mode](Paint.md)). | | [RuntimeXfermode](RuntimeXfermode.md) | A [RuntimeXfermode](RuntimeXfermode.md) calculates a per-pixel color based on the output of a user \* defined Android Graphics Shading Language (AGSL) function. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Xfermode is the base class for objects that are called to implement custom "transfer-modes" in the drawing pipeline. The static function Create(Modes) can be called to return an instance of any of the predefined subclasses as specified in the Modes enum. When an Xfermode is assigned to a Paint, then objects drawn with that paint have the xfermode applied.
@@ -24,7 +24,7 @@ Xfermode is the base class for objects that are called to implement custom "tran
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------|---|
-| [Xfermode](../android/graphics/Xfermode.md))`()` <br /> |
+| [Xfermode](Xfermode.md))`()` <br /> |
 
 ## Public constructors
 

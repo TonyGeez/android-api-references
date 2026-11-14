@@ -10,13 +10,13 @@ open class Hashtable<K : Any!, V : Any!> : Dictionary<K, V>, Cloneable, M
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.util.Dictionary](../java/util/Dictionary.md)\<K, V\> ||
-| | ↳ | [java.util.Hashtable](../java/util/Hashtable.md) |
+| ↳ | [java.util.Dictionary](Dictionary.md)\<K, V\> ||
+| | ↳ | [java.util.Hashtable](Hashtable.md) |
 
-| Known Direct Subclasses [Properties](../java/util/Properties.md) |-----------------------------------------------------------------------------------|-----------------------------------------------------------------| | [Properties](../java/util/Properties.md) | The`Properties`class represents a persistent set of properties. | |
+| Known Direct Subclasses [Properties](Properties.md) |-----------------------------------------------------------------------------------|-----------------------------------------------------------------| | [Properties](Properties.md) | The`Properties`class represents a persistent set of properties. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [AuthProvider](../java/security/AuthProvider.md), [Provider](../java/security/Provider.md) |-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------| | [AuthProvider](../java/security/AuthProvider.md) | Legacy security code; do not use. | | [Provider](../java/security/Provider.md) | This class represents a "provider" for the Java Security API, where a provider implements some or all parts of Java Security. | |
+| Known Indirect Subclasses [AuthProvider](../java.security/AuthProvider.md), [Provider](../java.security/Provider.md) |-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------| | [AuthProvider](../java.security/AuthProvider.md) | Legacy security code; do not use. | | [Provider](../java.security/Provider.md) | This class represents a "provider" for the Java Security API, where a provider implements some or all parts of Java Security. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 This class implements a hash table, which maps keys to values. Any non-`null`object can be used as a key or as a value.
@@ -50,69 +50,69 @@ To retrieve a number, use the following code:
     }</code>
 ```
 
-The iterators returned by the`iterator`method of the collections returned by all of this class's "collection view methods" are*fail-fast* : if the Hashtable is structurally modified at any time after the iterator is created, in any way except through the iterator's own`remove`method, the iterator will throw a [ConcurrentModificationException](../java/util/ConcurrentModificationException.md). Thus, in the face of concurrent modification, the iterator fails quickly and cleanly, rather than risking arbitrary, non-deterministic behavior at an undetermined time in the future. The Enumerations returned by Hashtable's [keys](../java/util/Hashtable.md))and [elements](../java/util/Hashtable.md))methods are*not*fail-fast; if the Hashtable is structurally modified at any time after the enumeration is created then the results of enumerating are undefined.
+The iterators returned by the`iterator`method of the collections returned by all of this class's "collection view methods" are*fail-fast* : if the Hashtable is structurally modified at any time after the iterator is created, in any way except through the iterator's own`remove`method, the iterator will throw a [ConcurrentModificationException](ConcurrentModificationException.md). Thus, in the face of concurrent modification, the iterator fails quickly and cleanly, rather than risking arbitrary, non-deterministic behavior at an undetermined time in the future. The Enumerations returned by Hashtable's [keys](Hashtable.md))and [elements](Hashtable.md))methods are*not*fail-fast; if the Hashtable is structurally modified at any time after the enumeration is created then the results of enumerating are undefined.
 
 Note that the fail-fast behavior of an iterator cannot be guaranteed as it is, generally speaking, impossible to make any hard guarantees in the presence of unsynchronized concurrent modification. Fail-fast iterators throw`ConcurrentModificationException`on a best-effort basis. Therefore, it would be wrong to write a program that depended on this exception for its correctness:*the fail-fast behavior of iterators should be used only to detect bugs.*
 
-As of the Java 2 platform v1.2, this class was retrofitted to implement the [Map](../java/util/Map.md) interface, making it a member of the [Java Collections Framework](https://developer.android.com//reference/java/util/package-summary.html#CollectionsFramework). Unlike the new collection implementations,`Hashtable`is synchronized. If a thread-safe implementation is not needed, it is recommended to use [HashMap](../java/util/HashMap.md) in place of`Hashtable`. If a thread-safe highly-concurrent implementation is desired, then it is recommended to use [java.util.concurrent.ConcurrentHashMap](../java/util/concurrent/ConcurrentHashMap.md) in place of`Hashtable`.
+As of the Java 2 platform v1.2, this class was retrofitted to implement the [Map](Map.md) interface, making it a member of the [Java Collections Framework](https://developer.android.com//reference/java/util/package-summary.html#CollectionsFramework). Unlike the new collection implementations,`Hashtable`is synchronized. If a thread-safe implementation is not needed, it is recommended to use [HashMap](HashMap.md) in place of`Hashtable`. If a thread-safe highly-concurrent implementation is desired, then it is recommended to use [java.util.concurrent.ConcurrentHashMap](../java.util.concurrent/ConcurrentHashMap.md) in place of`Hashtable`.
 
 ## Summary
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Hashtable](../java/util/Hashtable.md))`()` Constructs a new, empty hashtable with a default initial capacity (11) and load factor (0.75). |
-| [Hashtable](../java/util/Hashtable.md))`(`initialCapacity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a new, empty hashtable with the specified initial capacity and default load factor (0.75). |
-| [Hashtable](../java/util/Hashtable.md))`(`initialCapacity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `loadFactor:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Constructs a new, empty hashtable with the specified initial capacity and the specified load factor. |
-| [Hashtable](../java/util/Hashtable.md))`(`t:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)<out` `K,` `out` `V>!`)` Constructs a new hashtable with the same mappings as the given Map. |
+| [Hashtable](Hashtable.md))`()` Constructs a new, empty hashtable with a default initial capacity (11) and load factor (0.75). |
+| [Hashtable](Hashtable.md))`(`initialCapacity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a new, empty hashtable with the specified initial capacity and default load factor (0.75). |
+| [Hashtable](Hashtable.md))`(`initialCapacity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `loadFactor:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Constructs a new, empty hashtable with the specified initial capacity and the specified load factor. |
+| [Hashtable](Hashtable.md))`(`t:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)<out` `K,` `out` `V>!`)` Constructs a new hashtable with the same mappings as the given Map. |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](../java/util/Hashtable.md))`()` Clears this hashtable so that it contains no keys. |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](../java/util/Hashtable.md))`()` Creates a shallow copy of this hashtable. |
-| openV? | [compute](../java/util/Hashtable.md))`(`key:` `K`, `remappingFunction:` ` [BiFunction](../java/util/function/BiFunction.md)<in` `K,` `in` `V?,` `out` `V?>`)` Attempts to compute a mapping for the specified key and its current mapped value (or`null`if there is no current mapping). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](Hashtable.md))`()` Clears this hashtable so that it contains no keys. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](Hashtable.md))`()` Creates a shallow copy of this hashtable. |
+| openV? | [compute](Hashtable.md))`(`key:` `K`, `remappingFunction:` ` [BiFunction](../java.util.function/BiFunction.md)<in` `K,` `in` `V?,` `out` `V?>`)` Attempts to compute a mapping for the specified key and its current mapped value (or`null`if there is no current mapping). |
 | --- | --- |
-| openV | [computeIfAbsent](../java/util/Hashtable.md))`(`key:` `K`, `mappingFunction:` ` [Function](../java/util/function/Function.md)<in` `K,` `out` `V>`)` If the specified key is not already associated with a value (or is mapped to`null`), attempts to compute its value using the given mapping function and enters it into this map unless`null`. |
-| openV? | [computeIfPresent](../java/util/Hashtable.md))`(`key:` `K`, `remappingFunction:` ` [BiFunction](../java/util/function/BiFunction.md)<in` `K,` `in` `V,` `out` `V?>`)` If the value for the specified key is present and non-null, attempts to compute a new mapping given the key and its current mapped value. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [contains](../java/util/Hashtable.md))`(`value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Tests if some key maps into the specified value in this hashtable. |
+| openV | [computeIfAbsent](Hashtable.md))`(`key:` `K`, `mappingFunction:` ` [Function](../java.util.function/Function.md)<in` `K,` `out` `V>`)` If the specified key is not already associated with a value (or is mapped to`null`), attempts to compute its value using the given mapping function and enters it into this map unless`null`. |
+| openV? | [computeIfPresent](Hashtable.md))`(`key:` `K`, `remappingFunction:` ` [BiFunction](../java.util.function/BiFunction.md)<in` `K,` `in` `V,` `out` `V?>`)` If the value for the specified key is present and non-null, attempts to compute a new mapping given the key and its current mapped value. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [contains](Hashtable.md))`(`value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Tests if some key maps into the specified value in this hashtable. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsKey](../java/util/Hashtable.md))`(`key:` `K`)` Tests if the specified object is a key in this hashtable. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsValue](../java/util/Hashtable.md))`(`value:` `V`)` Returns true if this hashtable maps one or more keys to this value. |
-| open [Enumeration](../java/util/Enumeration.md)\<V\>! | [elements](../java/util/Hashtable.md))`()` Returns an enumeration of the values in this hashtable. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsKey](Hashtable.md))`(`key:` `K`)` Tests if the specified object is a key in this hashtable. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsValue](Hashtable.md))`(`value:` `V`)` Returns true if this hashtable maps one or more keys to this value. |
+| open [Enumeration](Enumeration.md)\<V\>! | [elements](Hashtable.md))`()` Returns an enumeration of the values in this hashtable. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/util/Hashtable.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares the specified Object with this Map for equality, as per the definition in the Map interface. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](../java/util/Hashtable.md))`(`action:` ` [BiConsumer](../java/util/function/BiConsumer.md)<in` `K,` `in` `V>`)` <br /> |
-| openV? | [get](../java/util/Hashtable.md))`(`key:` `K`)` Returns the value to which the specified key is mapped, or`null`if this map contains no mapping for the key. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](Hashtable.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares the specified Object with this Map for equality, as per the definition in the Map interface. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](Hashtable.md))`(`action:` ` [BiConsumer](../java.util.function/BiConsumer.md)<in` `K,` `in` `V>`)` <br /> |
+| openV? | [get](Hashtable.md))`(`key:` `K`)` Returns the value to which the specified key is mapped, or`null`if this map contains no mapping for the key. |
 | --- | --- |
-| openV | [getOrDefault](../java/util/Hashtable.md))`(`key:` `K`, `defaultValue:` `V`)` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/util/Hashtable.md))`()` Returns the hash code value for this Map as per the definition in the Map interface. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](../java/util/Hashtable.md))`()` Tests if this hashtable maps no keys to values. |
+| openV | [getOrDefault](Hashtable.md))`(`key:` `K`, `defaultValue:` `V`)` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](Hashtable.md))`()` Returns the hash code value for this Map as per the definition in the Map interface. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](Hashtable.md))`()` Tests if this hashtable maps no keys to values. |
 | --- | --- |
-| open [Enumeration](../java/util/Enumeration.md)\<K\>! | [keys](../java/util/Hashtable.md))`()` Returns an enumeration of the keys in this hashtable. |
-| openV? | [merge](../java/util/Hashtable.md))`(`key:` `K`, `value:` `V`, `remappingFunction:` ` [BiFunction](../java/util/function/BiFunction.md)<in` `V,` `in` `V,` `out` `V?>`)` If the specified key is not already associated with a value or is associated with null, associates it with the given non-null value. |
-| openV? | [put](../java/util/Hashtable.md))`(`key:` `K`, `value:` `V`)` Maps the specified`key`to the specified`value`in this hashtable. |
+| open [Enumeration](Enumeration.md)\<K\>! | [keys](Hashtable.md))`()` Returns an enumeration of the keys in this hashtable. |
+| openV? | [merge](Hashtable.md))`(`key:` `K`, `value:` `V`, `remappingFunction:` ` [BiFunction](../java.util.function/BiFunction.md)<in` `V,` `in` `V,` `out` `V?>`)` If the specified key is not already associated with a value or is associated with null, associates it with the given non-null value. |
+| openV? | [put](Hashtable.md))`(`key:` `K`, `value:` `V`)` Maps the specified`key`to the specified`value`in this hashtable. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [putAll](../java/util/Hashtable.md))`(`from:` ` [Map](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html)<out` `K,` `V>`)` Copies all of the mappings from the specified map to this hashtable. |
-| openV? | [putIfAbsent](../java/util/Hashtable.md))`(`key:` `K`, `value:` `V`)` <br /> |
-| openV? | [remove](../java/util/Hashtable.md))`(`key:` `K`)` Removes the key (and its corresponding value) from this hashtable. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [putAll](Hashtable.md))`(`from:` ` [Map](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html)<out` `K,` `V>`)` Copies all of the mappings from the specified map to this hashtable. |
+| openV? | [putIfAbsent](Hashtable.md))`(`key:` `K`, `value:` `V`)` <br /> |
+| openV? | [remove](Hashtable.md))`(`key:` `K`)` Removes the key (and its corresponding value) from this hashtable. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [remove](../java/util/Hashtable.md))`(`key:` `K`, `value:` `V`)` <br /> |
-| openV? | [replace](../java/util/Hashtable.md))`(`key:` `K`, `value:` `V`)` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [replace](../java/util/Hashtable.md))`(`key:` `K`, `oldValue:` `V`, `newValue:` `V`)` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [remove](Hashtable.md))`(`key:` `K`, `value:` `V`)` <br /> |
+| openV? | [replace](Hashtable.md))`(`key:` `K`, `value:` `V`)` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [replace](Hashtable.md))`(`key:` `K`, `oldValue:` `V`, `newValue:` `V`)` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [replaceAll](../java/util/Hashtable.md))`(`function:` ` [BiFunction](../java/util/function/BiFunction.md)<in` `K,` `in` `V,` `out` `V>`)` <br /> |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/util/Hashtable.md))`()` Returns a string representation of this`Hashtable`object in the form of a set of entries, enclosed in braces and separated by the ASCII characters "` , `" (comma and space). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [replaceAll](Hashtable.md))`(`function:` ` [BiFunction](../java.util.function/BiFunction.md)<in` `K,` `in` `V,` `out` `V>`)` <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](Hashtable.md))`()` Returns a string representation of this`Hashtable`object in the form of a set of entries, enclosed in braces and separated by the ASCII characters "` , `" (comma and space). |
 
 | Protected methods ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [rehash](../java/util/Hashtable.md))`()` Increases the capacity of and internally reorganizes this hashtable, in order to accommodate and access its entries more efficiently. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [rehash](Hashtable.md))`()` Increases the capacity of and internally reorganizes this hashtable, in order to accommodate and access its entries more efficiently. |
 
 | Properties ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K,V\>\> | [entries](../java/util/Hashtable.md) Returns a [Set](../java/util/Set.md) view of the mappings contained in this map. |
-| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<K\> | [keys](../java/util/Hashtable.md) Returns a [Set](../java/util/Set.md) view of the keys contained in this map. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [size](../java/util/Hashtable.md) Returns the number of keys in this hashtable. |
+| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K,V\>\> | [entries](Hashtable.md) Returns a [Set](Set.md) view of the mappings contained in this map. |
+| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<K\> | [keys](Hashtable.md) Returns a [Set](Set.md) view of the keys contained in this map. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [size](Hashtable.md) Returns the number of keys in this hashtable. |
 | --- | --- |
-| open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<V\> | [values](../java/util/Hashtable.md) Returns a [Collection](../java/util/Collection.md) view of the values contained in this map. |
+| open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<V\> | [values](Hashtable.md) Returns a [Collection](Collection.md) view of the values contained in this map. |
 
 ## Public constructors
 
@@ -233,7 +233,7 @@ Attempts to compute a mapping for the specified key and its current mapped value
 ```kotlin
 <code>map.compute(key, (k, v) -&gt; (v == null) ? msg : v.concat(msg))</code>
 ```
-(Method [merge()](../java/util/Map.md))is often simpler to use for such purposes.)
+(Method [merge()](Map.md))is often simpler to use for such purposes.)
 
 <br />
 
@@ -241,12 +241,12 @@ If the remapping function returns`null`, the mapping is removed (or remains abse
 
 The remapping function should not modify this map during computation.
 
-This method will, on a best-effort basis, throw a [java.util.ConcurrentModificationException](../java/util/ConcurrentModificationException.md) if the remapping function modified this map during computation.
+This method will, on a best-effort basis, throw a [java.util.ConcurrentModificationException](ConcurrentModificationException.md) if the remapping function modified this map during computation.
 
 | Parameters ||
 |---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `key` | K:key with which the specified value is to be associated |
-| `remappingFunction` | [BiFunction](../java/util/function/BiFunction.md)\<inK,inV?,outV?\>:the remapping function to compute a value |
+| `remappingFunction` | [BiFunction](../java.util.function/BiFunction.md)\<inK,inV?,outV?\>:the remapping function to compute a value |
 
 | Return ||
 |----|------------------------------------------------------------------|
@@ -290,12 +290,12 @@ Or to implement a multi-value map,`Map<K,Collection<V>>`, supporting multiple va
 
 The mapping function should not modify this map during computation.
 
-This method will, on a best-effort basis, throw a [java.util.ConcurrentModificationException](../java/util/ConcurrentModificationException.md) if the mapping function modified this map during computation.
+This method will, on a best-effort basis, throw a [java.util.ConcurrentModificationException](ConcurrentModificationException.md) if the mapping function modified this map during computation.
 
 | Parameters ||
 |-------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
 | `key` | K:key with which the specified value is to be associated |
-| `mappingFunction` | [Function](../java/util/function/Function.md)\<inK,outV\>:the mapping function to compute a value |
+| `mappingFunction` | [Function](../java.util.function/Function.md)\<inK,outV\>:the mapping function to compute a value |
 
 | Return ||
 |---|-------------------------------------------------------------------------------------------------------------------|
@@ -327,12 +327,12 @@ If the remapping function returns`null`, the mapping is removed. If the remappin
 
 The remapping function should not modify this map during computation.
 
-This method will, on a best-effort basis, throw a [java.util.ConcurrentModificationException](../java/util/ConcurrentModificationException.md) if the remapping function modified this map during computation.
+This method will, on a best-effort basis, throw a [java.util.ConcurrentModificationException](ConcurrentModificationException.md) if the remapping function modified this map during computation.
 
 | Parameters ||
 |---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `key` | K:key with which the specified value is to be associated |
-| `remappingFunction` | [BiFunction](../java/util/function/BiFunction.md)\<inK,inV,outV?\>:the remapping function to compute a value |
+| `remappingFunction` | [BiFunction](../java.util.function/BiFunction.md)\<inK,inV,outV?\>:the remapping function to compute a value |
 
 | Return ||
 |----|------------------------------------------------------------------|
@@ -355,9 +355,9 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun contains(value: Any!): Boolean
 ```
 
-Tests if some key maps into the specified value in this hashtable. This operation is more expensive than the [containsKey](../java/util/Hashtable.md))method.
+Tests if some key maps into the specified value in this hashtable. This operation is more expensive than the [containsKey](Hashtable.md))method.
 
-Note that this method is identical in functionality to [containsValue](../java/util/Hashtable.md)), (which is part of the [Map](../java/util/Map.md) interface in the collections framework).
+Note that this method is identical in functionality to [containsValue](Hashtable.md)), (which is part of the [Map](Map.md) interface in the collections framework).
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------|
@@ -396,7 +396,7 @@ Tests if the specified object is a key in this hashtable.
 
 **See Also**
 
-- [#contains(Object)](../java/util/Hashtable.md)) 
+- [#contains(Object)](Hashtable.md)) 
 
 ### containsValue
 
@@ -408,7 +408,7 @@ open fun containsValue(value: V): Boolean
 
 Returns true if this hashtable maps one or more keys to this value.
 
-Note that this method is identical in functionality to [contains](../java/util/Hashtable.md))(which predates the [Map](../java/util/Map.md) interface).
+Note that this method is identical in functionality to [contains](Hashtable.md))(which predates the [Map](Map.md) interface).
 
 | Parameters ||
 |---------|----------------------------------------------------------|
@@ -435,14 +435,14 @@ Returns an enumeration of the values in this hashtable. Use the Enumeration meth
 
 | Return ||
 |-----------------------------------------------------------------------------------------|-------------------------------------------------|
-| [Enumeration](../java/util/Enumeration.md)<V>! | an enumeration of the values in this hashtable. |
+| [Enumeration](Enumeration.md)<V>! | an enumeration of the values in this hashtable. |
 
 **See Also**
 
-- [java.util.Enumeration](../java/util/Enumeration.md)
+- [java.util.Enumeration](Enumeration.md)
 - <https://developer.android.com/reference/kotlin/java/util/Hashtable#keys()>
-- [#values()](../java/util/Hashtable.md)
-- [java.util.Map](../java/util/Map.md) 
+- [#values()](Hashtable.md)
+- [java.util.Map](Map.md) 
 
 ### equals
 
@@ -465,7 +465,7 @@ Compares the specified Object with this Map for equality, as per the definition 
 
 **See Also**
 
-- [java.util.Map#equals(Object)](../java/util/Hashtable.md) 
+- [java.util.Map#equals(Object)](Hashtable.md) 
 
 ### forEach
 
@@ -477,7 +477,7 @@ open fun forEach(action: BiConsumer<in K, in V>): Unit
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| `action` | [BiConsumer](../java/util/function/BiConsumer.md)\<inK,inV\>:The action to be performed for each entry |
+| `action` | [BiConsumer](../java.util.function/BiConsumer.md)\<inK,inV\>:The action to be performed for each entry |
 
 | Exceptions ||
 |---------------------------------------------|-----------------------------------------------------|
@@ -511,7 +511,7 @@ More formally, if this map contains a mapping from a key`k`to a value`v`such tha
 
 **See Also**
 
-- [#put(Object, Object)](../java/util/Hashtable.md)) 
+- [#put(Object, Object)](Hashtable.md)) 
 
 ### getOrDefault
 
@@ -554,7 +554,7 @@ Returns the hash code value for this Map as per the definition in the Map interf
 
 **See Also**
 
-- [java.util.Map#hashCode()](../java/util/Hashtable.md) 
+- [java.util.Map#hashCode()](Hashtable.md) 
 
 ### isEmpty
 
@@ -582,14 +582,14 @@ Returns an enumeration of the keys in this hashtable. Use the Enumeration method
 
 | Return ||
 |-----------------------------------------------------------------------------------------|-----------------------------------------------|
-| [Enumeration](../java/util/Enumeration.md)<K>! | an enumeration of the keys in this hashtable. |
+| [Enumeration](Enumeration.md)<K>! | an enumeration of the keys in this hashtable. |
 
 **See Also**
 
-- [java.util.Enumeration](../java/util/Enumeration.md)
+- [java.util.Enumeration](Enumeration.md)
 - <https://developer.android.com/reference/kotlin/java/util/Hashtable#elements()>
-- [#keySet()](../java/util/Hashtable.md)
-- [java.util.Map](../java/util/Map.md) 
+- [#keySet()](Hashtable.md)
+- [java.util.Map](Map.md) 
 
 ### merge
 
@@ -616,13 +616,13 @@ If the remapping function returns`null`, the mapping is removed. If the remappin
 
 The remapping function should not modify this map during computation.
 
-This method will, on a best-effort basis, throw a [java.util.ConcurrentModificationException](../java/util/ConcurrentModificationException.md) if the remapping function modified this map during computation.
+This method will, on a best-effort basis, throw a [java.util.ConcurrentModificationException](ConcurrentModificationException.md) if the remapping function modified this map during computation.
 
 | Parameters ||
 |---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `key` | K:key with which the resulting value is to be associated |
 | `value` | V:the non-null value to be merged with the existing value associated with the key or, if no existing value or a null value is associated with the key, to be associated with the key |
-| `remappingFunction` | [BiFunction](../java/util/function/BiFunction.md)\<inV,inV,outV?\>:the remapping function to recompute a value if present |
+| `remappingFunction` | [BiFunction](../java.util.function/BiFunction.md)\<inV,inV,outV?\>:the remapping function to recompute a value if present |
 | --- | --- |
 
 | Return ||
@@ -672,8 +672,8 @@ The value can be retrieved by calling the`get`method with a key that is equal to
 
 **See Also**
 
-- [java.lang.Object#equals(Object)](../java/lang/Object.md))
-- [#get(Object)](../java/util/Hashtable.md)) 
+- [java.lang.Object#equals(Object)](../java.lang/Object.md))
+- [#get(Object)](Hashtable.md)) 
 
 ### putAll
 
@@ -847,7 +847,7 @@ open fun replaceAll(function: BiFunction<in K, in V, out V>): Unit
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| `function` | [BiFunction](../java/util/function/BiFunction.md)\<inK,inV,outV\>:the function to apply to each entry |
+| `function` | [BiFunction](../java.util.function/BiFunction.md)\<inK,inV,outV\>:the function to apply to each entry |
 
 | Exceptions ||
 |---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
@@ -894,7 +894,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open val entries: MutableSet<MutableEntry<K, V>>
 ```
 
-Returns a [Set](../java/util/Set.md) view of the mappings contained in this map. The set is backed by the map, so changes to the map are reflected in the set, and vice-versa. If the map is modified while an iteration over the set is in progress (except through the iterator's own`remove`operation, or through the`setValue`operation on a map entry returned by the iterator) the results of the iteration are undefined. The set supports element removal, which removes the corresponding mapping from the map, via the`Iterator.remove`,`Set.remove`,`removeAll`,`retainAll`and`clear`operations. It does not support the`add`or`addAll`operations.
+Returns a [Set](Set.md) view of the mappings contained in this map. The set is backed by the map, so changes to the map are reflected in the set, and vice-versa. If the map is modified while an iteration over the set is in progress (except through the iterator's own`remove`operation, or through the`setValue`operation on a map entry returned by the iterator) the results of the iteration are undefined. The set supports element removal, which removes the corresponding mapping from the map, via the`Iterator.remove`,`Set.remove`,`removeAll`,`retainAll`and`clear`operations. It does not support the`add`or`addAll`operations.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|
@@ -908,7 +908,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open val keys: MutableSet<K>
 ```
 
-Returns a [Set](../java/util/Set.md) view of the keys contained in this map. The set is backed by the map, so changes to the map are reflected in the set, and vice-versa. If the map is modified while an iteration over the set is in progress (except through the iterator's own`remove`operation), the results of the iteration are undefined. The set supports element removal, which removes the corresponding mapping from the map, via the`Iterator.remove`,`Set.remove`,`removeAll`,`retainAll`, and`clear`operations. It does not support the`add`or`addAll`operations.
+Returns a [Set](Set.md) view of the keys contained in this map. The set is backed by the map, so changes to the map are reflected in the set, and vice-versa. If the map is modified while an iteration over the set is in progress (except through the iterator's own`remove`operation), the results of the iteration are undefined. The set supports element removal, which removes the corresponding mapping from the map, via the`Iterator.remove`,`Set.remove`,`removeAll`,`retainAll`, and`clear`operations. It does not support the`add`or`addAll`operations.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------|----------------------------------------------|
@@ -936,7 +936,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open val values: MutableCollection<V>
 ```
 
-Returns a [Collection](../java/util/Collection.md) view of the values contained in this map. The collection is backed by the map, so changes to the map are reflected in the collection, and vice-versa. If the map is modified while an iteration over the collection is in progress (except through the iterator's own`remove`operation), the results of the iteration are undefined. The collection supports element removal, which removes the corresponding mapping from the map, via the`Iterator.remove`,`Collection.remove`,`removeAll`,`retainAll`and`clear`operations. It does not support the`add`or`addAll`operations.
+Returns a [Collection](Collection.md) view of the values contained in this map. The collection is backed by the map, so changes to the map are reflected in the collection, and vice-versa. If the map is modified while an iteration over the collection is in progress (except through the iterator's own`remove`operation), the results of the iteration are undefined. The collection supports element removal, which removes the corresponding mapping from the map, via the`Iterator.remove`,`Collection.remove`,`removeAll`,`retainAll`and`clear`operations. It does not support the`add`or`addAll`operations.
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------|

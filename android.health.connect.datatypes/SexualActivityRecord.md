@@ -9,9 +9,9 @@ class SexualActivityRecord : InstantRecord
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.health.connect.datatypes.Record](../android/health/connect/datatypes/Record.md) |||
-| | ↳ | [android.health.connect.datatypes.InstantRecord](../android/health/connect/datatypes/InstantRecord.md) ||
-| | | ↳ | [android.health.connect.datatypes.SexualActivityRecord](../android/health/connect/datatypes/SexualActivityRecord.md) |
+| ↳ | [android.health.connect.datatypes.Record](Record.md) |||
+| | ↳ | [android.health.connect.datatypes.InstantRecord](InstantRecord.md) ||
+| | | ↳ | [android.health.connect.datatypes.SexualActivityRecord](SexualActivityRecord.md) |
 | --- | --- | --- | --- |
 
 Captures an occurrence of sexual activity. Each record is a single occurrence. ProtectionUsed field is optional.

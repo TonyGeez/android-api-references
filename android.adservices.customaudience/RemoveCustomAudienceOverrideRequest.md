@@ -10,7 +10,7 @@ open class RemoveCustomAudienceOverrideRequest
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.adservices.customaudience.RemoveCustomAudienceOverrideRequest](../android/adservices/customaudience/RemoveCustomAudienceOverrideRequest.md) |
+| ↳ | [android.adservices.customaudience.RemoveCustomAudienceOverrideRequest](RemoveCustomAudienceOverrideRequest.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 37.**
@@ -33,7 +33,7 @@ It contains fields `buyer` and `name` which will serve as the identifier for the
 
 | Public methods ||
 |---|---|
-| open [AdTechIdentifier](../android/adservices/common/AdTechIdentifier.md) | `https://developer.android.com/reference/kotlin/android/adservices/customaudience/RemoveCustomAudienceOverrideRequest#getBuyer()()` <br /> |
+| open [AdTechIdentifier](../android.adservices.common/AdTechIdentifier.md) | `https://developer.android.com/reference/kotlin/android/adservices/customaudience/RemoveCustomAudienceOverrideRequest#getBuyer()()` <br /> |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/customaudience/RemoveCustomAudienceOverrideRequest#getName()()` <br /> |
 
 ## Public constructors
@@ -51,7 +51,7 @@ RemoveCustomAudienceOverrideRequest(
 
 | Parameters ||
 |---|---|
-| `buyer` | [AdTechIdentifier](../android/adservices/common/AdTechIdentifier.md): This value cannot be `null`. |
+| `buyer` | [AdTechIdentifier](../android.adservices.common/AdTechIdentifier.md): This value cannot be `null`. |
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): This value cannot be `null`. |
 
 ## Public methods

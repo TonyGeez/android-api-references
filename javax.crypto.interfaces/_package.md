@@ -4,9 +4,9 @@
 
 ## Interfaces
 
-| [DHKey](../javax/crypto/interfaces/DHKey.md) | The interface to a Diffie-Hellman key. |
+| [DHKey](DHKey.md) | The interface to a Diffie-Hellman key. |
 | --- | --- |
-| [DHPrivateKey](../javax/crypto/interfaces/DHPrivateKey.md) | The interface to a Diffie-Hellman private key. |
-| [DHPublicKey](../javax/crypto/interfaces/DHPublicKey.md) | The interface to a Diffie-Hellman public key. |
-| [PBEKey](../javax/crypto/interfaces/PBEKey.md) | The interface to a PBE key. |
+| [DHPrivateKey](DHPrivateKey.md) | The interface to a Diffie-Hellman private key. |
+| [DHPublicKey](DHPublicKey.md) | The interface to a Diffie-Hellman public key. |
+| [PBEKey](PBEKey.md) | The interface to a PBE key. |
 | --- | --- |

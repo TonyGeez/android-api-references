@@ -10,32 +10,32 @@ class CRC32C : Checksum
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.util.zip.CRC32C](../java/util/zip/CRC32C.md) |
+| ↳ | [java.util.zip.CRC32C](CRC32C.md) |
 
 A class that can be used to compute the CRC-32C of a data stream.
 
 CRC-32C is defined in [RFC 3720](http://www.ietf.org/rfc/rfc3720.txt): Internet Small Computer Systems Interface (iSCSI).
 
-Passing a`null`argument to a method in this class will cause a [NullPointerException](../java/lang/NullPointerException.md) to be thrown.
+Passing a`null`argument to a method in this class will cause a [NullPointerException](../java.lang/NullPointerException.md) to be thrown.
 
 ## Summary
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------|---|
-| [CRC32C](../java/util/zip/CRC32C.md))`()` Creates a new CRC32C object. |
+| [CRC32C](CRC32C.md))`()` Creates a new CRC32C object. |
 
 | Public methods ||
 |------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getValue](../java/util/zip/CRC32C.md))`()` Returns CRC-32C value. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](../java/util/zip/CRC32C.md))`()` Resets CRC-32C to initial value. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](../java/util/zip/CRC32C.md))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Updates the CRC-32C checksum with the specified array of bytes. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getValue](CRC32C.md))`()` Returns CRC-32C value. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](CRC32C.md))`()` Resets CRC-32C to initial value. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](CRC32C.md))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Updates the CRC-32C checksum with the specified array of bytes. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](../java/util/zip/CRC32C.md))`(`b:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Updates the CRC-32C checksum with the specified byte (the low eight bits of the argument b). |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](../java/util/zip/CRC32C.md))`(`buffer:` ` [ByteBuffer](../java/nio/ByteBuffer.md)!`)` Updates the CRC-32C checksum with the bytes from the specified buffer. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](CRC32C.md))`(`b:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Updates the CRC-32C checksum with the specified byte (the low eight bits of the argument b). |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](CRC32C.md))`(`buffer:` ` [ByteBuffer](../java.nio/ByteBuffer.md)!`)` Updates the CRC-32C checksum with the bytes from the specified buffer. |
 
 | Inherited functions ||
 |---|---|
-| From class [Checksum](../java/util/zip/Checksum.md) |------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](../java/util/zip/Checksum.md))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` <br /> Updates the current checksum with the specified array of bytes. <br /> | ||
+| From class [Checksum](Checksum.md) |------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](Checksum.md))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` <br /> Updates the current checksum with the specified array of bytes. <br /> | ||
 
 ## Public constructors
 
@@ -126,7 +126,7 @@ Updates the CRC-32C checksum with the bytes from the specified buffer. The check
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------|
-| `buffer` | [ByteBuffer](../java/nio/ByteBuffer.md)!:the ByteBuffer to update the checksum with |
+| `buffer` | [ByteBuffer](../java.nio/ByteBuffer.md)!:the ByteBuffer to update the checksum with |
 
 | Exceptions ||
 |----------------------------------|--------------------|

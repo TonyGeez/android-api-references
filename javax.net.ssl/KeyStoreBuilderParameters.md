@@ -10,7 +10,7 @@ open class KeyStoreBuilderParameters : ManagerFactoryParameters
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.net.ssl.KeyStoreBuilderParameters](../javax/net/ssl/KeyStoreBuilderParameters.md) |
+| ↳ | [javax.net.ssl.KeyStoreBuilderParameters](KeyStoreBuilderParameters.md) |
 
 A parameters object for X509KeyManagers that encapsulates a List of KeyStore.Builders.
 
@@ -18,12 +18,12 @@ A parameters object for X509KeyManagers that encapsulates a List of KeyStore.Bui
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [KeyStoreBuilderParameters](../javax/net/ssl/KeyStoreBuilderParameters.md))`(`builder:` ` [KeyStore.Builder](../java/security/KeyStore.Builder.md)!`)` Construct new KeyStoreBuilderParameters from the specified [java.security.KeyStore.Builder](../java/security/KeyStore.Builder.md). |
-| [KeyStoreBuilderParameters](../javax/net/ssl/KeyStoreBuilderParameters.md))`(`parameters:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [KeyStore.Builder](../java/security/KeyStore.Builder.md)!>!`)` Construct new KeyStoreBuilderParameters from a List of [java.security.KeyStore.Builder](../java/security/KeyStore.Builder.md) s. |
+| [KeyStoreBuilderParameters](KeyStoreBuilderParameters.md))`(`builder:` ` [KeyStore.Builder](../java/security/KeyStore.Builder.md)!`)` Construct new KeyStoreBuilderParameters from the specified [java.security.KeyStore.Builder](../java/security/KeyStore.Builder.md). |
+| [KeyStoreBuilderParameters](KeyStoreBuilderParameters.md))`(`parameters:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [KeyStore.Builder](../java/security/KeyStore.Builder.md)!>!`)` Construct new KeyStoreBuilderParameters from a List of [java.security.KeyStore.Builder](../java/security/KeyStore.Builder.md) s. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [KeyStore.Builder](../java/security/KeyStore.Builder.md)!\>! | [getParameters](../javax/net/ssl/KeyStoreBuilderParameters.md))`()` Return the unmodifiable List of the [java.security.KeyStore.Builder](../java/security/KeyStore.Builder.md) s encapsulated by this object. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [KeyStore.Builder](../java/security/KeyStore.Builder.md)!\>! | [getParameters](KeyStoreBuilderParameters.md))`()` Return the unmodifiable List of the [java.security.KeyStore.Builder](../java/security/KeyStore.Builder.md) s encapsulated by this object. |
 
 ## Public constructors
 

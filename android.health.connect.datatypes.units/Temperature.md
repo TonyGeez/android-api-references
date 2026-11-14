@@ -4,7 +4,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # Temperature
 
-Kotlin| [Java](../android/health/connect/datatypes/units/Temperature.md) 
+Kotlin| [Java](Temperature.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class Temperature : Comparable<Temperature!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.health.connect.datatypes.units.Temperature](../android/health/connect/datatypes/units/Temperature.md) |
+| ↳ | [android.health.connect.datatypes.units.Temperature](Temperature.md) |
 
 Represents a unit of temperature. Supported units: Celsius
 
@@ -21,13 +21,13 @@ Represents a unit of temperature. Supported units: Celsius
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](../android/health/connect/datatypes/units/Temperature.md))`(`other:` ` [Temperature](../android/health/connect/datatypes/units/Temperature.md)`)` Compares this object with the specified object for order. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/health/connect/datatypes/units/Temperature.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| static [Temperature](../android/health/connect/datatypes/units/Temperature.md) | [fromCelsius](../android/health/connect/datatypes/units/Temperature.md))`(`value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Creates a Temperature object with the specified value in Celsius degrees. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](Temperature.md))`(`other:` ` [Temperature](Temperature.md)`)` Compares this object with the specified object for order. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](Temperature.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| static [Temperature](Temperature.md) | [fromCelsius](Temperature.md))`(`value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Creates a Temperature object with the specified value in Celsius degrees. |
 | --- | --- |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getInCelsius](../android/health/connect/datatypes/units/Temperature.md))`()` Returns temperature in celsius |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/health/connect/datatypes/units/Temperature.md))`()` Returns a hash code value for the object. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/health/connect/datatypes/units/Temperature.md))`()` <br /> |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getInCelsius](Temperature.md))`()` Returns temperature in celsius |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](Temperature.md))`()` Returns a hash code value for the object. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](Temperature.md))`()` <br /> |
 | --- | --- |
 
 ## Public methods
@@ -45,7 +45,7 @@ Compares this object with the specified object for order. Returns a negative int
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `o` | the object to be compared. |
-| `other` | [Temperature](../android/health/connect/datatypes/units/Temperature.md):the object to be compared. This value cannot be`null`. |
+| `other` | [Temperature](Temperature.md):the object to be compared. This value cannot be`null`. |
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
@@ -91,7 +91,7 @@ Creates a Temperature object with the specified value in Celsius degrees.
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [Temperature](../android/health/connect/datatypes/units/Temperature.md) | This value cannot be`null`. |
+| [Temperature](Temperature.md) | This value cannot be`null`. |
 
 ### getInCelsius
 

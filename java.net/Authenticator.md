@@ -10,13 +10,13 @@ abstract class Authenticator
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.net.Authenticator](../java/net/Authenticator.md) |
+| ↳ | [java.net.Authenticator](Authenticator.md) |
 
 The class Authenticator represents an object that knows how to obtain authentication for a network connection. Usually, it will do this by prompting the user for information.
 
-Applications use this class by overriding [getPasswordAuthentication()](../java/net/Authenticator.md)) in a sub-class. This method will typically use the various getXXX() accessor methods to get information about the entity requesting authentication. It must then acquire a username and password either by interacting with the user or through some other non-interactive means. The credentials are then returned as a [PasswordAuthentication](../java/net/PasswordAuthentication.md) return value.
+Applications use this class by overriding [getPasswordAuthentication()](Authenticator.md)) in a sub-class. This method will typically use the various getXXX() accessor methods to get information about the entity requesting authentication. It must then acquire a username and password either by interacting with the user or through some other non-interactive means. The credentials are then returned as a [PasswordAuthentication](PasswordAuthentication.md) return value.
 
-An instance of this concrete sub-class is then registered with the system by calling [setDefault(java.net.Authenticator)](../java/net/Authenticator.md)). When authentication is required, the system will invoke one of the requestPasswordAuthentication() methods which in turn will call the getPasswordAuthentication() method of the registered object.
+An instance of this concrete sub-class is then registered with the system by calling [setDefault(java.net.Authenticator)](Authenticator.md)). When authentication is required, the system will invoke one of the requestPasswordAuthentication() methods which in turn will call the getPasswordAuthentication() method of the registered object.
 
 All methods that request authentication have a default implementation that fails.
 
@@ -28,29 +28,29 @@ All methods that request authentication have a default implementation that fails
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------|---|
-| [Authenticator](../java/net/Authenticator.md))`()` <br /> |
+| [Authenticator](Authenticator.md))`()` <br /> |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open static [PasswordAuthentication](../java/net/PasswordAuthentication.md)! | [requestPasswordAuthentication](../java/net/Authenticator.md))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `addr:` ` [InetAddress](../java/net/InetAddress.md)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `protocol:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `prompt:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `scheme:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Ask the authenticator that has been registered with the system for a password. |
-| open static [PasswordAuthentication](../java/net/PasswordAuthentication.md)! | [requestPasswordAuthentication](../java/net/Authenticator.md))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `addr:` ` [InetAddress](../java/net/InetAddress.md)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `protocol:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `prompt:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `scheme:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `url:` ` [URL](../java/net/URL.md)!`, `reqType:` ` [Authenticator.RequestorType](../java/net/Authenticator.RequestorType.md)!`)` Ask the authenticator that has been registered with the system for a password. |
-| open static [PasswordAuthentication](../java/net/PasswordAuthentication.md)! | [requestPasswordAuthentication](../java/net/Authenticator.md))`(`addr:` ` [InetAddress](../java/net/InetAddress.md)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `protocol:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `prompt:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `scheme:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Ask the authenticator that has been registered with the system for a password. |
+| open static [PasswordAuthentication](PasswordAuthentication.md)! | [requestPasswordAuthentication](Authenticator.md))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `addr:` ` [InetAddress](InetAddress.md)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `protocol:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `prompt:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `scheme:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Ask the authenticator that has been registered with the system for a password. |
+| open static [PasswordAuthentication](PasswordAuthentication.md)! | [requestPasswordAuthentication](Authenticator.md))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `addr:` ` [InetAddress](InetAddress.md)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `protocol:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `prompt:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `scheme:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `url:` ` [URL](URL.md)!`, `reqType:` ` [Authenticator.RequestorType](../java/net/Authenticator.RequestorType.md)!`)` Ask the authenticator that has been registered with the system for a password. |
+| open static [PasswordAuthentication](PasswordAuthentication.md)! | [requestPasswordAuthentication](Authenticator.md))`(`addr:` ` [InetAddress](InetAddress.md)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `protocol:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `prompt:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `scheme:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Ask the authenticator that has been registered with the system for a password. |
 | --- | --- |
-| open static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDefault](../java/net/Authenticator.md))`(`a:` ` [Authenticator](../java/net/Authenticator.md)!`)` Sets the authenticator that will be used by the networking code when a proxy or an HTTP server asks for authentication. |
+| open static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDefault](Authenticator.md))`(`a:` ` [Authenticator](Authenticator.md)!`)` Sets the authenticator that will be used by the networking code when a proxy or an HTTP server asks for authentication. |
 
 | Protected methods ||
 |--------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [PasswordAuthentication](../java/net/PasswordAuthentication.md)! | [getPasswordAuthentication](../java/net/Authenticator.md))`()` Called when password authorization is needed. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getRequestingHost](../java/net/Authenticator.md))`()` Gets the `hostname` of the site or proxy requesting authentication, or `null` if not available. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRequestingPort](../java/net/Authenticator.md))`()` Gets the port number for the requested connection. |
+| open [PasswordAuthentication](PasswordAuthentication.md)! | [getPasswordAuthentication](Authenticator.md))`()` Called when password authorization is needed. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getRequestingHost](Authenticator.md))`()` Gets the `hostname` of the site or proxy requesting authentication, or `null` if not available. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRequestingPort](Authenticator.md))`()` Gets the port number for the requested connection. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getRequestingPrompt](../java/net/Authenticator.md))`()` Gets the prompt string given by the requestor. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getRequestingProtocol](../java/net/Authenticator.md))`()` Give the protocol that's requesting the connection. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getRequestingScheme](../java/net/Authenticator.md))`()` Gets the scheme of the requestor (the HTTP scheme for an HTTP firewall, for example). |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getRequestingPrompt](Authenticator.md))`()` Gets the prompt string given by the requestor. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getRequestingProtocol](Authenticator.md))`()` Give the protocol that's requesting the connection. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getRequestingScheme](Authenticator.md))`()` Gets the scheme of the requestor (the HTTP scheme for an HTTP firewall, for example). |
 | --- | --- |
-| [InetAddress](../java/net/InetAddress.md)! | [getRequestingSite](../java/net/Authenticator.md))`()` Gets the `InetAddress` of the site requesting authorization, or `null` if not available. |
-| open [URL](../java/net/URL.md)! | [getRequestingURL](../java/net/Authenticator.md))`()` Returns the URL that resulted in this request for authentication. |
-| open [Authenticator.RequestorType](../java/net/Authenticator.RequestorType.md)! | [getRequestorType](../java/net/Authenticator.md))`()` Returns whether the requestor is a Proxy or a Server. |
+| [InetAddress](InetAddress.md)! | [getRequestingSite](Authenticator.md))`()` Gets the `InetAddress` of the site requesting authorization, or `null` if not available. |
+| open [URL](URL.md)! | [getRequestingURL](Authenticator.md))`()` Returns the URL that resulted in this request for authentication. |
+| open [Authenticator.RequestorType](../java/net/Authenticator.RequestorType.md)! | [getRequestorType](Authenticator.md))`()` Returns whether the requestor is a Proxy or a Server. |
 | --- | --- |
 
 ## Public constructors
@@ -87,17 +87,17 @@ First, if there is a security manager, its `checkPermission` method is called wi
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `host` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The hostname of the site requesting authentication. |
-| `addr` | [InetAddress](../java/net/InetAddress.md)!: The InetAddress of the site requesting authentication, or null if not known. |
+| `addr` | [InetAddress](InetAddress.md)!: The InetAddress of the site requesting authentication, or null if not known. |
 | `port` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the port for the requested connection. |
 | --- | --- |
-| `protocol` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The protocol that's requesting the connection ([java.net.Authenticator#getRequestingProtocol()](../java/net/Authenticator.md))) |
+| `protocol` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The protocol that's requesting the connection ([java.net.Authenticator#getRequestingProtocol()](Authenticator.md))) |
 | `prompt` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: A prompt string for the user which identifies the authentication realm. |
 | `scheme` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The authentication scheme |
 | --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|--------------------------------------------------------|
-| [PasswordAuthentication](../java/net/PasswordAuthentication.md)! | The username/password, or null if one can't be gotten. |
+| [PasswordAuthentication](PasswordAuthentication.md)! | The username/password, or null if one can't be gotten. |
 
 | Exceptions ||
 |-------------------------------|------------------------------------------------------------------------------------------------------------------|
@@ -105,7 +105,7 @@ First, if there is a security manager, its `checkPermission` method is called wi
 
 **See Also**
 
-- [java.net.NetPermission](../java/net/NetPermission.md) 
+- [java.net.NetPermission](NetPermission.md) 
 
 ### requestPasswordAuthentication
 
@@ -131,19 +131,19 @@ First, if there is a security manager, its `checkPermission` method is called wi
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `host` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The hostname of the site requesting authentication. |
-| `addr` | [InetAddress](../java/net/InetAddress.md)!: The InetAddress of the site requesting authorization, or null if not known. |
+| `addr` | [InetAddress](InetAddress.md)!: The InetAddress of the site requesting authorization, or null if not known. |
 | `port` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the port for the requested connection |
 | --- | --- |
-| `protocol` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The protocol that's requesting the connection ([java.net.Authenticator#getRequestingProtocol()](../java/net/Authenticator.md))) |
+| `protocol` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The protocol that's requesting the connection ([java.net.Authenticator#getRequestingProtocol()](Authenticator.md))) |
 | `prompt` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: A prompt string for the user |
 | `scheme` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The authentication scheme |
 | --- | --- |
-| `url` | [URL](../java/net/URL.md)!: The requesting URL that caused the authentication |
+| `url` | [URL](URL.md)!: The requesting URL that caused the authentication |
 | `reqType` | [Authenticator.RequestorType](../java/net/Authenticator.RequestorType.md)!: The type (server or proxy) of the entity requesting authentication. |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|--------------------------------------------------------|
-| [PasswordAuthentication](../java/net/PasswordAuthentication.md)! | The username/password, or null if one can't be gotten. |
+| [PasswordAuthentication](PasswordAuthentication.md)! | The username/password, or null if one can't be gotten. |
 
 | Exceptions ||
 |-------------------------------|------------------------------------------------------------------------------------------------------------------|
@@ -151,7 +151,7 @@ First, if there is a security manager, its `checkPermission` method is called wi
 
 **See Also**
 
-- [java.net.NetPermission](../java/net/NetPermission.md) 
+- [java.net.NetPermission](NetPermission.md) 
 
 ### requestPasswordAuthentication
 
@@ -173,16 +173,16 @@ First, if there is a security manager, its `checkPermission` method is called wi
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `addr` | [InetAddress](../java/net/InetAddress.md)!: The InetAddress of the site requesting authorization, or null if not known. |
+| `addr` | [InetAddress](InetAddress.md)!: The InetAddress of the site requesting authorization, or null if not known. |
 | `port` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the port for the requested connection |
-| `protocol` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The protocol that's requesting the connection ([java.net.Authenticator#getRequestingProtocol()](../java/net/Authenticator.md))) |
+| `protocol` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The protocol that's requesting the connection ([java.net.Authenticator#getRequestingProtocol()](Authenticator.md))) |
 | --- | --- |
 | `prompt` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: A prompt string for the user |
 | `scheme` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The authentication scheme |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|--------------------------------------------------------|
-| [PasswordAuthentication](../java/net/PasswordAuthentication.md)! | The username/password, or null if one can't be gotten. |
+| [PasswordAuthentication](PasswordAuthentication.md)! | The username/password, or null if one can't be gotten. |
 
 | Exceptions ||
 |-------------------------------|------------------------------------------------------------------------------------------------------------------|
@@ -190,7 +190,7 @@ First, if there is a security manager, its `checkPermission` method is called wi
 
 **See Also**
 
-- [java.net.NetPermission](../java/net/NetPermission.md) 
+- [java.net.NetPermission](NetPermission.md) 
 
 ### setDefault
 
@@ -206,7 +206,7 @@ First, if there is a security manager, its `checkPermission` method is called wi
 
 | Parameters ||
 |-----|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `a` | [Authenticator](../java/net/Authenticator.md)!: The authenticator to be set. If a is `null` then any previously set authenticator is removed. |
+| `a` | [Authenticator](Authenticator.md)!: The authenticator to be set. If a is `null` then any previously set authenticator is removed. |
 
 | Exceptions ||
 |-------------------------------|----------------------------------------------------------------------------------------------------------------|
@@ -214,7 +214,7 @@ First, if there is a security manager, its `checkPermission` method is called wi
 
 **See Also**
 
-- [java.net.NetPermission](../java/net/NetPermission.md)
+- [java.net.NetPermission](NetPermission.md)
 
 ## Protected methods
 
@@ -230,7 +230,7 @@ Called when password authorization is needed. Subclasses should override the def
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
-| [PasswordAuthentication](../java/net/PasswordAuthentication.md)! | The PasswordAuthentication collected from the user, or null if none is provided. |
+| [PasswordAuthentication](PasswordAuthentication.md)! | The PasswordAuthentication collected from the user, or null if none is provided. |
 
 ### getRequestingHost
 
@@ -290,7 +290,7 @@ Give the protocol that's requesting the connection. Often this will be based on 
 
 **See Also**
 
-- [java.net.URL#getProtocol()](../java/net/URL.md)) 
+- [java.net.URL#getProtocol()](URL.md)) 
 
 ### getRequestingScheme
 
@@ -318,7 +318,7 @@ Gets the `InetAddress` of the site requesting authorization, or `null` if not av
 
 | Return ||
 |-------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
-| [InetAddress](../java/net/InetAddress.md)! | the InetAddress of the site requesting authorization, or null if it's not available. |
+| [InetAddress](InetAddress.md)! | the InetAddress of the site requesting authorization, or null if it's not available. |
 
 ### getRequestingURL
 
@@ -332,7 +332,7 @@ Returns the URL that resulted in this request for authentication.
 
 | Return ||
 |---------------------------------------------------------------------|--------------------|
-| [URL](../java/net/URL.md)! | the requesting URL |
+| [URL](URL.md)! | the requesting URL |
 
 ### getRequestorType
 

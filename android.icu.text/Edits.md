@@ -4,7 +4,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 
 # Edits
 
-Kotlin| [Java](../android/icu/text/Edits.md) 
+Kotlin| [Java](Edits.md) 
 | --- | --- |
 
 ```
@@ -13,20 +13,20 @@ class Edits
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.icu.text.Edits](../android/icu/text/Edits.md) |
+| ↳ | [android.icu.text.Edits](Edits.md) |
 
 Records lengths of string edits but not replacement text. Supports replacements, insertions, deletions in linear progression. Does not support moving/reordering of text.
 
-There are two types of edits:*change edits* and*no-change edits* . Add edits to instances of this class using [addReplace(int,int)](../android/icu/text/Edits.md))(for change edits) and [addUnchanged(int)](../android/icu/text/Edits.md))(for no-change edits). Change edits are retained with full granularity, whereas adjacent no-change edits are always merged together. In no-change edits, there is a one-to-one mapping between code points in the source and destination strings.
+There are two types of edits:*change edits* and*no-change edits* . Add edits to instances of this class using [addReplace(int,int)](Edits.md))(for change edits) and [addUnchanged(int)](Edits.md))(for no-change edits). Change edits are retained with full granularity, whereas adjacent no-change edits are always merged together. In no-change edits, there is a one-to-one mapping between code points in the source and destination strings.
 
 After all edits have been added, instances of this class should be considered immutable, and an [Edits.Iterator](../android/icu/text/Edits.Iterator.md) can be used for queries.
 
 There are four flavors of Edits.Iterator:
 
-- [getFineIterator()](../android/icu/text/Edits.md))retains full granularity of change edits.
-- [getFineChangesIterator()](../android/icu/text/Edits.md))retains full granularity of change edits, and when calling next() on the iterator, skips over no-change edits (unchanged regions).
-- [getCoarseIterator()](../android/icu/text/Edits.md))treats adjacent change edits as a single edit. (Adjacent no-change edits are automatically merged during the construction phase.)
-- [getCoarseChangesIterator()](../android/icu/text/Edits.md))treats adjacent change edits as a single edit, and when calling next() on the iterator, skips over no-change edits (unchanged regions).
+- [getFineIterator()](Edits.md))retains full granularity of change edits.
+- [getFineChangesIterator()](Edits.md))retains full granularity of change edits, and when calling next() on the iterator, skips over no-change edits (unchanged regions).
+- [getCoarseIterator()](Edits.md))treats adjacent change edits as a single edit. (Adjacent no-change edits are automatically merged during the construction phase.)
+- [getCoarseChangesIterator()](Edits.md))treats adjacent change edits as a single edit, and when calling next() on the iterator, skips over no-change edits (unchanged regions).
 
 For example, consider the string "abcßDeF", which case-folds to "abcssdef". This string has the following fine edits:
 
@@ -57,24 +57,24 @@ For examples of how to use this class, see the test`TestCaseMapEditsIteratorDocs
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------|---|
-| [Edits](../android/icu/text/Edits.md))`()` Constructs an empty object. |
+| [Edits](Edits.md))`()` Constructs an empty object. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addReplace](../android/icu/text/Edits.md))`(`oldLength:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `newLength:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Adds a change edit: a record for a text replacement/insertion/deletion. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addUnchanged](../android/icu/text/Edits.md))`(`unchangedLength:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Adds a no-change edit: a record for an unchanged segment of text. |
-| [Edits.Iterator](../android/icu/text/Edits.Iterator.md)! | [getCoarseChangesIterator](../android/icu/text/Edits.md))`()` Returns an Iterator for coarse-grained change edits (adjacent change edits are treated as one). |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addReplace](Edits.md))`(`oldLength:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `newLength:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Adds a change edit: a record for a text replacement/insertion/deletion. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addUnchanged](Edits.md))`(`unchangedLength:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Adds a no-change edit: a record for an unchanged segment of text. |
+| [Edits.Iterator](../android/icu/text/Edits.Iterator.md)! | [getCoarseChangesIterator](Edits.md))`()` Returns an Iterator for coarse-grained change edits (adjacent change edits are treated as one). |
 | --- | --- |
-| [Edits.Iterator](../android/icu/text/Edits.Iterator.md)! | [getCoarseIterator](../android/icu/text/Edits.md))`()` Returns an Iterator for coarse-grained change and no-change edits (adjacent change edits are treated as one). |
-| [Edits.Iterator](../android/icu/text/Edits.Iterator.md)! | [getFineChangesIterator](../android/icu/text/Edits.md))`()` Returns an Iterator for fine-grained change edits (full granularity of change edits is retained). |
-| [Edits.Iterator](../android/icu/text/Edits.Iterator.md)! | [getFineIterator](../android/icu/text/Edits.md))`()` Returns an Iterator for fine-grained change and no-change edits (full granularity of change edits is retained). |
+| [Edits.Iterator](../android/icu/text/Edits.Iterator.md)! | [getCoarseIterator](Edits.md))`()` Returns an Iterator for coarse-grained change and no-change edits (adjacent change edits are treated as one). |
+| [Edits.Iterator](../android/icu/text/Edits.Iterator.md)! | [getFineChangesIterator](Edits.md))`()` Returns an Iterator for fine-grained change edits (full granularity of change edits is retained). |
+| [Edits.Iterator](../android/icu/text/Edits.Iterator.md)! | [getFineIterator](Edits.md))`()` Returns an Iterator for fine-grained change and no-change edits (full granularity of change edits is retained). |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasChanges](../android/icu/text/Edits.md))`()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [lengthDelta](../android/icu/text/Edits.md))`()` How much longer is the new text compared with the old text? |
-| [Edits](../android/icu/text/Edits.md)! | [mergeAndAppend](../android/icu/text/Edits.md))`(`ab:` ` [Edits](../android/icu/text/Edits.md)!`, `bc:` ` [Edits](../android/icu/text/Edits.md)!`)` Merges the two input Edits and appends the result to this object. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasChanges](Edits.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [lengthDelta](Edits.md))`()` How much longer is the new text compared with the old text? |
+| [Edits](Edits.md)! | [mergeAndAppend](Edits.md))`(`ab:` ` [Edits](Edits.md)!`, `bc:` ` [Edits](Edits.md)!`)` Merges the two input Edits and appends the result to this object. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [numberOfChanges](../android/icu/text/Edits.md))`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](../android/icu/text/Edits.md))`()` Resets the data but may not release memory. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [numberOfChanges](Edits.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](Edits.md))`()` Resets the data but may not release memory. |
 
 ## Public constructors
 
@@ -217,12 +217,12 @@ If unrelated Edits are passed in where the output string of the first has a diff
 
 | Parameters ||
 |------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `ab` | [Edits](../android/icu/text/Edits.md)!:reflects how substrings of input string a map to substrings of intermediate string b. |
-| `bc` | [Edits](../android/icu/text/Edits.md)!:reflects how substrings of intermediate string b map to substrings of output string c. |
+| `ab` | [Edits](Edits.md)!:reflects how substrings of input string a map to substrings of intermediate string b. |
+| `bc` | [Edits](Edits.md)!:reflects how substrings of intermediate string b map to substrings of output string c. |
 
 | Return ||
 |----------------------------------------------------------------------------------|--------------------------------------|
-| [Edits](../android/icu/text/Edits.md)! | this, with the merged edits appended |
+| [Edits](Edits.md)! | this, with the merged edits appended |
 
 ### numberOfChanges
 

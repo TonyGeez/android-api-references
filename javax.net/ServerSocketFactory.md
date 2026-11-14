@@ -8,9 +8,9 @@ abstract class ServerSocketFactory
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.net.ServerSocketFactory](../javax/net/ServerSocketFactory.md) |
+| ↳ | [javax.net.ServerSocketFactory](ServerSocketFactory.md) |
 
-| Known Direct Subclasses [SSLServerSocketFactory](../javax/net/ssl/SSLServerSocketFactory.md) |---|---| | [SSLServerSocketFactory](../javax/net/ssl/SSLServerSocketFactory.md) | `SSLServerSocketFactory`s create `SSLServerSocket`s. | |
+| Known Direct Subclasses [SSLServerSocketFactory](../javax.net.ssl/SSLServerSocketFactory.md) |---|---| | [SSLServerSocketFactory](../javax.net.ssl/SSLServerSocketFactory.md) | `SSLServerSocketFactory`s create `SSLServerSocket`s. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 This class creates server sockets. It may be subclassed by other factories, which create particular types of server sockets. This provides a general framework for the addition of public socket-level functionality. It is the server side analogue of a socket factory, and similarly provides a way to capture a variety of policies related to the sockets being constructed.
@@ -25,12 +25,12 @@ Like socket factories, server Socket factory instances have methods used to crea
 
 | Public methods ||
 |---|---|
-| open [ServerSocket](../java/net/ServerSocket.md)! | `https://developer.android.com/reference/kotlin/javax/net/ServerSocketFactory#createServerSocket()()` Returns an unbound server socket. |
-| abstract [ServerSocket](../java/net/ServerSocket.md)! | `https://developer.android.com/reference/kotlin/javax/net/ServerSocketFactory#createServerSocket(kotlin.Int)(port: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a server socket bound to the specified port. |
-| abstract [ServerSocket](../java/net/ServerSocket.md)! | `https://developer.android.com/reference/kotlin/javax/net/ServerSocketFactory#createServerSocket(kotlin.Int,%20kotlin.Int)(port: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, backlog: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a server socket bound to the specified port, and uses the specified connection backlog. |
+| open [ServerSocket](../java.net/ServerSocket.md)! | `https://developer.android.com/reference/kotlin/javax/net/ServerSocketFactory#createServerSocket()()` Returns an unbound server socket. |
+| abstract [ServerSocket](../java.net/ServerSocket.md)! | `https://developer.android.com/reference/kotlin/javax/net/ServerSocketFactory#createServerSocket(kotlin.Int)(port: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a server socket bound to the specified port. |
+| abstract [ServerSocket](../java.net/ServerSocket.md)! | `https://developer.android.com/reference/kotlin/javax/net/ServerSocketFactory#createServerSocket(kotlin.Int,%20kotlin.Int)(port: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, backlog: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a server socket bound to the specified port, and uses the specified connection backlog. |
 | --- | --- |
-| abstract [ServerSocket](../java/net/ServerSocket.md)! | `https://developer.android.com/reference/kotlin/javax/net/ServerSocketFactory#createServerSocket(kotlin.Int,%20kotlin.Int,%20java.net.InetAddress)(port: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, backlog: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, ifAddress: https://developer.android.com/reference/kotlin/java/net/InetAddress.html#!)` Returns a server socket bound to the specified port, with a specified listen backlog and local IP. |
-| open static [ServerSocketFactory](../javax/net/ServerSocketFactory.md)! | `https://developer.android.com/reference/kotlin/javax/net/ServerSocketFactory#getDefault()()` Returns a copy of the environment's default socket factory. |
+| abstract [ServerSocket](../java.net/ServerSocket.md)! | `https://developer.android.com/reference/kotlin/javax/net/ServerSocketFactory#createServerSocket(kotlin.Int,%20kotlin.Int,%20java.net.InetAddress)(port: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, backlog: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, ifAddress: https://developer.android.com/reference/kotlin/java/net/InetAddress.html#!)` Returns a server socket bound to the specified port, with a specified listen backlog and local IP. |
+| open static [ServerSocketFactory](ServerSocketFactory.md)! | `https://developer.android.com/reference/kotlin/javax/net/ServerSocketFactory#getDefault()()` Returns a copy of the environment's default socket factory. |
 
 ## Protected constructors
 
@@ -164,7 +164,7 @@ If there is a security manager, its `checkListen` method is called with the `por
 |---|---|
 | `port` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the port to listen to |
 | `backlog` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): how many connections are queued |
-| `ifAddress` | [InetAddress](../java/net/InetAddress.md)!: the network interface address to use |
+| `ifAddress` | [InetAddress](../java.net/InetAddress.md)!: the network interface address to use |
 | --- | --- |
 
 | Return ||

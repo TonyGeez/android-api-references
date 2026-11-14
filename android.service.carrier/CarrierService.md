@@ -8,11 +8,11 @@ abstract class CarrierService : Service
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](../android/content/Context.md) ||||
-| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) |||
-| | | ↳ | [android.app.Service](../android/app/Service.md) ||
+| ↳ | [android.content.Context](../android.content/Context.md) ||||
+| | ↳ | [android.content.ContextWrapper](../android.content/ContextWrapper.md) |||
+| | | ↳ | [android.app.Service](../android.app/Service.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.service.carrier.CarrierService](../android/service/carrier/CarrierService.md) |
+| | | | ↳ | [android.service.carrier.CarrierService](CarrierService.md) |
 
 A service that exposes carrier-specific functionality to the system.
 
@@ -1062,10 +1062,10 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 |---|---|
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierService#notifyCarrierNetworkChange(kotlin.Boolean)(active: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Informs the system of an intentional upcoming carrier network change by a carrier app. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierService#notifyCarrierNetworkChange(kotlin.Int,%20kotlin.Boolean)(subscriptionId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, active: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Informs the system of an intentional upcoming carrier network change by a carrier app on the given `subscriptionId`. |
-| open [IBinder](../android/os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` If overriding this method, call through to the super method for any unknown actions. |
+| open [IBinder](../android.os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` If overriding this method, call through to the super method for any unknown actions. |
 | --- | --- |
-| abstract [PersistableBundle](../android/os/PersistableBundle.md)! | `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierService#onLoadConfig(android.service.carrier.CarrierIdentifier)(id: https://developer.android.com/reference/kotlin/android/service/carrier/CarrierIdentifier!)` Override this method to set carrier configuration. |
-| open [PersistableBundle](../android/os/PersistableBundle.md)? | `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierService#onLoadConfig(kotlin.Int,%20android.service.carrier.CarrierIdentifier)(subscriptionId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, id: https://developer.android.com/reference/kotlin/android/service/carrier/CarrierIdentifier?)` Override this method to set carrier configuration on the given `subscriptionId`. |
+| abstract [PersistableBundle](../android.os/PersistableBundle.md)! | `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierService#onLoadConfig(android.service.carrier.CarrierIdentifier)(id: https://developer.android.com/reference/kotlin/android/service/carrier/CarrierIdentifier!)` Override this method to set carrier configuration. |
+| open [PersistableBundle](../android.os/PersistableBundle.md)? | `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierService#onLoadConfig(kotlin.Int,%20android.service.carrier.CarrierIdentifier)(subscriptionId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, id: https://developer.android.com/reference/kotlin/android/service/carrier/CarrierIdentifier?)` Override this method to set carrier configuration on the given `subscriptionId`. |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/app/Service.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/app/Service.html#attachBaseContext(android.content.Context)(newBase: https://developer.android.com/reference/kotlin/android/content/Context.html#!)`
 
@@ -2849,7 +2849,7 @@ If you override this method you *must* call through to the superclass implementa
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
+| `intent` | [Intent](../android.content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
 
 | Return ||
 |---|---|
@@ -2883,7 +2883,7 @@ Implementations should use the keys defined in `https://developer.android.com/re
 
 | Parameters ||
 |---|---|
-| `id` | [CarrierIdentifier](../android/service/carrier/CarrierIdentifier.md)!: contains details about the current carrier that can be used to decide what configuration values to return. Instead of using details like MCCMNC to decide current carrier, it also contains subscription carrier id `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager.html#getSimCarrierId()`, a platform-wide unique identifier for each carrier, CarrierConfigService can directly use carrier id as the key to look up the carrier info. |
+| `id` | [CarrierIdentifier](CarrierIdentifier.md)!: contains details about the current carrier that can be used to decide what configuration values to return. Instead of using details like MCCMNC to decide current carrier, it also contains subscription carrier id `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager.html#getSimCarrierId()`, a platform-wide unique identifier for each carrier, CarrierConfigService can directly use carrier id as the key to look up the carrier info. |
 
 | Return ||
 |---|---|
@@ -2920,7 +2920,7 @@ By default, this method just calls `https://developer.android.com/reference/kotl
 | Parameters ||
 |---|---|
 | `subscriptionId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the subscription on which the carrier app should load configuration |
-| `id` | [CarrierIdentifier](../android/service/carrier/CarrierIdentifier.md)?: contains details about the current carrier that can be used to decide what configuration values to return. Instead of using details like MCCMNC to decide current carrier, it also contains subscription carrier id `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager.html#getSimCarrierId()`, a platform-wide unique identifier for each carrier, CarrierConfigService can directly use carrier id as the key to look up the carrier info. This value may be `null`. |
+| `id` | [CarrierIdentifier](CarrierIdentifier.md)?: contains details about the current carrier that can be used to decide what configuration values to return. Instead of using details like MCCMNC to decide current carrier, it also contains subscription carrier id `https://developer.android.com/reference/kotlin/android/telephony/TelephonyManager.html#getSimCarrierId()`, a platform-wide unique identifier for each carrier, CarrierConfigService can directly use carrier id as the key to look up the carrier info. This value may be `null`. |
 
 | Return ||
 |---|---|

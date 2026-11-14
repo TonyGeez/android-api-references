@@ -10,7 +10,7 @@ abstract class KeyGeneratorSpi
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.crypto.KeyGeneratorSpi](../javax/crypto/KeyGeneratorSpi.md) |
+| ↳ | [javax.crypto.KeyGeneratorSpi](KeyGeneratorSpi.md) |
 
 This class defines the*Service Provider Interface* (**SPI** ) for the`KeyGenerator`class. All the abstract methods in this class must be implemented by each cryptographic service provider who wishes to supply the implementation of a key generator for a particular algorithm.
 
@@ -18,15 +18,15 @@ This class defines the*Service Provider Interface* (**SPI** ) for the`KeyGenerat
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------|---|
-| [KeyGeneratorSpi](../javax/crypto/KeyGeneratorSpi.md))`()` <br /> |
+| [KeyGeneratorSpi](KeyGeneratorSpi.md))`()` <br /> |
 
 | Protected methods ||
 |---------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [SecretKey](../javax/crypto/SecretKey.md)! | [engineGenerateKey](../javax/crypto/KeyGeneratorSpi.md))`()` Generates a secret key. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](../javax/crypto/KeyGeneratorSpi.md))`(`keysize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `random:` ` [SecureRandom](../java/security/SecureRandom.md)!`)` Initializes this key generator for a certain keysize, using the given source of randomness. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](../javax/crypto/KeyGeneratorSpi.md))`(`random:` ` [SecureRandom](../java/security/SecureRandom.md)!`)` Initializes the key generator. |
+| abstract [SecretKey](SecretKey.md)! | [engineGenerateKey](KeyGeneratorSpi.md))`()` Generates a secret key. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](KeyGeneratorSpi.md))`(`keysize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `random:` ` [SecureRandom](../java.security/SecureRandom.md)!`)` Initializes this key generator for a certain keysize, using the given source of randomness. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](KeyGeneratorSpi.md))`(`random:` ` [SecureRandom](../java.security/SecureRandom.md)!`)` Initializes the key generator. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](../javax/crypto/KeyGeneratorSpi.md))`(`params:` ` [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)!`, `random:` ` [SecureRandom](../java/security/SecureRandom.md)!`)` Initializes the key generator with the specified parameter set and a user-provided source of randomness. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](KeyGeneratorSpi.md))`(`params:` ` [AlgorithmParameterSpec](../java.security.spec/AlgorithmParameterSpec.md)!`, `random:` ` [SecureRandom](../java.security/SecureRandom.md)!`)` Initializes the key generator with the specified parameter set and a user-provided source of randomness. |
 
 ## Public constructors
 
@@ -52,7 +52,7 @@ Generates a secret key.
 
 | Return ||
 |-------------------------------------------------------------------------------------|-------------|
-| [SecretKey](../javax/crypto/SecretKey.md)! | the new key |
+| [SecretKey](SecretKey.md)! | the new key |
 
 ### engineInit
 
@@ -70,7 +70,7 @@ Initializes this key generator for a certain keysize, using the given source of 
 | Parameters ||
 |-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `keysize` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the keysize. This is an algorithm-specific metric, specified in number of bits. |
-| `random` | [SecureRandom](../java/security/SecureRandom.md)!:the source of randomness for this key generator |
+| `random` | [SecureRandom](../java.security/SecureRandom.md)!:the source of randomness for this key generator |
 
 | Exceptions ||
 |-------------------------------------------|-------------------------------------------|
@@ -88,7 +88,7 @@ Initializes the key generator.
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| `random` | [SecureRandom](../java/security/SecureRandom.md)!:the source of randomness for this generator |
+| `random` | [SecureRandom](../java.security/SecureRandom.md)!:the source of randomness for this generator |
 
 ### engineInit
 
@@ -105,8 +105,8 @@ Initializes the key generator with the specified parameter set and a user-provid
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `params` | [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)!:the key generation parameters |
-| `random` | [SecureRandom](../java/security/SecureRandom.md)!:the source of randomness for this key generator |
+| `params` | [AlgorithmParameterSpec](../java.security.spec/AlgorithmParameterSpec.md)!:the key generation parameters |
+| `random` | [SecureRandom](../java.security/SecureRandom.md)!:the source of randomness for this key generator |
 
 | Exceptions ||
 |----------------------------------------------------|---------------------------------------------------|

@@ -4,7 +4,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 
 # MediaTimestamp
 
-Kotlin| [Java](../android/media/MediaTimestamp.md) 
+Kotlin| [Java](MediaTimestamp.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class MediaTimestamp
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.MediaTimestamp](../android/media/MediaTimestamp.md) |
+| ↳ | [android.media.MediaTimestamp](MediaTimestamp.md) |
 
 An immutable object that represents the linear correlation between the media time and the system time. It contains the media clock rate, together with the media timestamp of an anchor frame and the system time when that frame was presented or is committed to be presented.
 
@@ -23,22 +23,22 @@ The phrase "present" means that audio/video produced on device is detectable by 
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [MediaTimestamp](../android/media/MediaTimestamp.md))`(`mediaTimeUs:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `nanoTimeNs:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `clockRate:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Constructor. |
+| [MediaTimestamp](MediaTimestamp.md))`(`mediaTimeUs:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `nanoTimeNs:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `clockRate:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Constructor. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/media/MediaTimestamp.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAnchorMediaTimeUs](../android/media/MediaTimestamp.md))`()` Get the media time of the anchor in microseconds. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAnchorSystemNanoTime](../android/media/MediaTimestamp.md))`()` Get the [system time](../java/lang/System.md))corresponding to the media time in nanoseconds. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](MediaTimestamp.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAnchorMediaTimeUs](MediaTimestamp.md))`()` Get the media time of the anchor in microseconds. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAnchorSystemNanoTime](MediaTimestamp.md))`()` Get the [system time](../java.lang/System.md))corresponding to the media time in nanoseconds. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAnchorSytemNanoTime](../android/media/MediaTimestamp.md))`()` Get the [system time](../java/lang/System.md))corresponding to the media time in nanoseconds. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getMediaClockRate](../android/media/MediaTimestamp.md))`()` Get the rate of the media clock in relation to the system time. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/media/MediaTimestamp.md))`()` <br /> |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAnchorSytemNanoTime](MediaTimestamp.md))`()` Get the [system time](../java.lang/System.md))corresponding to the media time in nanoseconds. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getMediaClockRate](MediaTimestamp.md))`()` Get the rate of the media clock in relation to the system time. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](MediaTimestamp.md))`()` <br /> |
 | --- | --- |
 
 | Properties ||
 |-------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [MediaTimestamp](../android/media/MediaTimestamp.md)! | [TIMESTAMP_UNKNOWN](../android/media/MediaTimestamp.md) An unknown media timestamp value |
+| static [MediaTimestamp](MediaTimestamp.md)! | [TIMESTAMP_UNKNOWN](MediaTimestamp.md) An unknown media timestamp value |
 
 ## Public constructors
 
@@ -58,8 +58,8 @@ Constructor.
 | Parameters ||
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `mediaTimeUs` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the media time of the anchor in microseconds |
-| `nanoTimeNs` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the [system time](../java/lang/System.md))corresponding to the media time in nanoseconds. |
-| `clockRate` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):the rate of the media clock in relation to the system time. Value is between 0.0f and [java.lang.Float#MAX_VALUE](../java/lang/Float.md) inclusive |
+| `nanoTimeNs` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the [system time](../java.lang/System.md))corresponding to the media time in nanoseconds. |
+| `clockRate` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):the rate of the media clock in relation to the system time. Value is between 0.0f and [java.lang.Float#MAX_VALUE](../java.lang/Float.md) inclusive |
 | --- | --- |
 
 ## Public methods
@@ -98,7 +98,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 fun getAnchorSystemNanoTime(): Long
 ```
 
-Get the [system time](../java/lang/System.md))corresponding to the media time in nanoseconds. 
+Get the [system time](../java.lang/System.md))corresponding to the media time in nanoseconds. 
 
 ### getAnchorSytemNanoTime
 
@@ -109,9 +109,9 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 fun getAnchorSytemNanoTime(): Long
 ```
 
-**Deprecated:** *use [getAnchorSystemNanoTime](../android/media/MediaTimestamp.md))instead.*
+**Deprecated:** *use [getAnchorSystemNanoTime](MediaTimestamp.md))instead.*
 
-Get the [system time](../java/lang/System.md))corresponding to the media time in nanoseconds. 
+Get the [system time](../java.lang/System.md))corresponding to the media time in nanoseconds. 
 
 ### getMediaClockRate
 
@@ -127,7 +127,7 @@ It is 1.0 if media clock advances in sync with the system clock; greater than 1.
 
 | Return ||
 |--------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | Value is between 0.0f and [java.lang.Float#MAX_VALUE](../java/lang/Float.md) inclusive |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | Value is between 0.0f and [java.lang.Float#MAX_VALUE](../java.lang/Float.md) inclusive |
 
 ### toString
 

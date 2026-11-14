@@ -9,7 +9,7 @@ class JoinSpec : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.appsearch.JoinSpec](../android/app/appsearch/JoinSpec.md) |
+| ↳ | [android.app.appsearch.JoinSpec](JoinSpec.md) |
 
 This class represents the specifications for the joining operation in search.
 
@@ -85,13 +85,13 @@ Referring to "this.childrenRankingSignals()" in the ranking signal of the outer 
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/JoinSpec#getMaxJoinedResultCount()()` Returns the max amount of `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchResult` objects to return with the parent document, with a default of 10 SearchResults. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/JoinSpec#getNestedQuery()()` Returns the query to run on the joined documents. |
-| [SearchSpec](../android/app/appsearch/SearchSpec.md) | `https://developer.android.com/reference/kotlin/android/app/appsearch/JoinSpec#getNestedSearchSpec()()` Returns the search spec used to retrieve the joined documents. |
+| [SearchSpec](SearchSpec.md) | `https://developer.android.com/reference/kotlin/android/app/appsearch/JoinSpec#getNestedSearchSpec()()` Returns the search spec used to retrieve the joined documents. |
 | --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/JoinSpec#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [JoinSpec](../android/app/appsearch/JoinSpec.md)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/JoinSpec#CREATOR:android.os.Parcelable.Creator` Creator class for `https://developer.android.com/reference/kotlin/android/app/appsearch/JoinSpec#`. |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [JoinSpec](JoinSpec.md)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/JoinSpec#CREATOR:android.os.Parcelable.Creator` Creator class for `https://developer.android.com/reference/kotlin/android/app/appsearch/JoinSpec#`. |
 
 ## Constants
 
@@ -287,7 +287,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

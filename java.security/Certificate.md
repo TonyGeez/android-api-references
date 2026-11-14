@@ -7,7 +7,7 @@ Deprecated in [API level 3](https://developer.android.com/guide/topics/manifest/
 interface Certificate
 ```
 
-| [java.security.Certificate](../java/security/Certificate.md) |
+| [java.security.Certificate](Certificate.md) |
 
 | **This interface was deprecated in API level 3.**
 |
@@ -27,9 +27,9 @@ In particular, this interface is intended to be a common abstraction for constru
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/Certificate#encode(java.io.OutputStream)(stream: https://developer.android.com/reference/kotlin/java/io/OutputStream.html#!)` Encodes the certificate to an output stream in a format that can be decoded by the `decode` method. |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/security/Certificate#getFormat()()` Returns the name of the coding format. |
 | --- | --- |
-| abstract [Principal](../java/security/Principal.md)! | `https://developer.android.com/reference/kotlin/java/security/Certificate#getGuarantor()()` Returns the guarantor of the certificate, that is, the principal guaranteeing that the public key associated with this certificate is that of the principal associated with this certificate. |
-| abstract [Principal](../java/security/Principal.md)! | `https://developer.android.com/reference/kotlin/java/security/Certificate#getPrincipal()()` Returns the principal of the principal-key pair being guaranteed by the guarantor. |
-| abstract [PublicKey](../java/security/PublicKey.md)! | `https://developer.android.com/reference/kotlin/java/security/Certificate#getPublicKey()()` Returns the key of the principal-key pair being guaranteed by the guarantor. |
+| abstract [Principal](Principal.md)! | `https://developer.android.com/reference/kotlin/java/security/Certificate#getGuarantor()()` Returns the guarantor of the certificate, that is, the principal guaranteeing that the public key associated with this certificate is that of the principal associated with this certificate. |
+| abstract [Principal](Principal.md)! | `https://developer.android.com/reference/kotlin/java/security/Certificate#getPrincipal()()` Returns the principal of the principal-key pair being guaranteed by the guarantor. |
+| abstract [PublicKey](PublicKey.md)! | `https://developer.android.com/reference/kotlin/java/security/Certificate#getPublicKey()()` Returns the key of the principal-key pair being guaranteed by the guarantor. |
 | --- | --- |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/security/Certificate#toString(kotlin.Boolean)(detailed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Returns a string that represents the contents of the certificate. |
 
@@ -49,7 +49,7 @@ Decodes a certificate from an input stream. The format should be that returned b
 
 | Parameters ||
 |---|---|
-| `stream` | [InputStream](../java/io/InputStream.md)!: the input stream from which to fetch the data being decoded. |
+| `stream` | [InputStream](../java.io/InputStream.md)!: the input stream from which to fetch the data being decoded. |
 
 | Exceptions ||
 |---|---|
@@ -75,7 +75,7 @@ Encodes the certificate to an output stream in a format that can be decoded by t
 
 | Parameters ||
 |---|---|
-| `stream` | [OutputStream](../java/io/OutputStream.md)!: the output stream to which to encode the certificate. |
+| `stream` | [OutputStream](../java.io/OutputStream.md)!: the output stream to which to encode the certificate. |
 
 | Exceptions ||
 |---|---|

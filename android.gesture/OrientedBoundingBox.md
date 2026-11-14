@@ -4,7 +4,7 @@ Added in [API level 4](https://developer.android.com/guide/topics/manifest/uses-
 
 # OrientedBoundingBox
 
-Kotlin| [Java](../android/gesture/OrientedBoundingBox.md) 
+Kotlin| [Java](OrientedBoundingBox.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class OrientedBoundingBox
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.gesture.OrientedBoundingBox](../android/gesture/OrientedBoundingBox.md) |
+| ↳ | [android.gesture.OrientedBoundingBox](OrientedBoundingBox.md) |
 
 An oriented bounding box
 
@@ -21,13 +21,13 @@ An oriented bounding box
 
 | Properties ||
 |--------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [centerX](../android/gesture/OrientedBoundingBox.md) <br /> |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [centerY](../android/gesture/OrientedBoundingBox.md) <br /> |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [height](../android/gesture/OrientedBoundingBox.md) <br /> |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [centerX](OrientedBoundingBox.md) <br /> |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [centerY](OrientedBoundingBox.md) <br /> |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [height](OrientedBoundingBox.md) <br /> |
 | --- | --- |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [orientation](../android/gesture/OrientedBoundingBox.md) <br /> |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [squareness](../android/gesture/OrientedBoundingBox.md) <br /> |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [width](../android/gesture/OrientedBoundingBox.md) <br /> |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [orientation](OrientedBoundingBox.md) <br /> |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [squareness](OrientedBoundingBox.md) <br /> |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [width](OrientedBoundingBox.md) <br /> |
 | --- | --- |
 
 ## Properties

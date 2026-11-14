@@ -5,7 +5,7 @@ Deprecated in [API level 35](https://developer.android.com/guide/topics/manifest
 
 # PhoneNumberFormattingTextWatcher
 
-Kotlin| [Java](../android/telephony/PhoneNumberFormattingTextWatcher.md) 
+Kotlin| [Java](PhoneNumberFormattingTextWatcher.md) 
 | --- | --- |
 
 ```
@@ -14,13 +14,13 @@ open class PhoneNumberFormattingTextWatcher : TextWatcher
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.telephony.PhoneNumberFormattingTextWatcher](../android/telephony/PhoneNumberFormattingTextWatcher.md) |
+| ↳ | [android.telephony.PhoneNumberFormattingTextWatcher](PhoneNumberFormattingTextWatcher.md) |
 
 | **This class was deprecated in API level 35.**
 |
 | This is a thin wrapper on a \`libphonenumber\` \`AsYouTypeFormatter\`; it is recommended to use that instead.
 
-Watches a [android.widget.TextView](../android/widget/TextView.md) and if a phone number is entered will format it.
+Watches a [android.widget.TextView](../android.widget/TextView.md) and if a phone number is entered will format it.
 
 Stop formatting when the user
 
@@ -33,14 +33,14 @@ The formatting will be restarted once the text is cleared.
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [PhoneNumberFormattingTextWatcher](../android/telephony/PhoneNumberFormattingTextWatcher.md))`()` The formatting is based on the current system locale and future locale changes may not take effect on this instance. |
-| [PhoneNumberFormattingTextWatcher](../android/telephony/PhoneNumberFormattingTextWatcher.md))`(`countryCode:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` The formatting is based on the given`countryCode`. |
+| [PhoneNumberFormattingTextWatcher](PhoneNumberFormattingTextWatcher.md))`()` The formatting is based on the current system locale and future locale changes may not take effect on this instance. |
+| [PhoneNumberFormattingTextWatcher](PhoneNumberFormattingTextWatcher.md))`(`countryCode:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` The formatting is based on the given`countryCode`. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [afterTextChanged](../android/telephony/PhoneNumberFormattingTextWatcher.md))`(`s:` ` [Editable](../android/text/Editable.md)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [beforeTextChanged](../android/telephony/PhoneNumberFormattingTextWatcher.md))`(`s:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `after:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTextChanged](../android/telephony/PhoneNumberFormattingTextWatcher.md))`(`s:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `before:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [afterTextChanged](PhoneNumberFormattingTextWatcher.md))`(`s:` ` [Editable](../android.text/Editable.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [beforeTextChanged](PhoneNumberFormattingTextWatcher.md))`(`s:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `after:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTextChanged](PhoneNumberFormattingTextWatcher.md))`(`s:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `before:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
 
 ## Public constructors

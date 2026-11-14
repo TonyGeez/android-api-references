@@ -19,7 +19,7 @@ Interface definition of a callback to be invoked indicating the completion of a 
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSeekComplete](../android/media/MediaPlayer.OnSeekCompleteListener.md))`(`mp:` ` [MediaPlayer](../android/media/MediaPlayer.md)!`)` Called to indicate the completion of a seek operation. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSeekComplete](../android/media/MediaPlayer.OnSeekCompleteListener.md))`(`mp:` ` [MediaPlayer](MediaPlayer.md)!`)` Called to indicate the completion of a seek operation. |
 
 ## Public methods
 
@@ -35,4 +35,4 @@ Called to indicate the completion of a seek operation.
 
 | Parameters ||
 |------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| `mp` | [MediaPlayer](../android/media/MediaPlayer.md)!:the MediaPlayer that issued the seek operation |
+| `mp` | [MediaPlayer](MediaPlayer.md)!:the MediaPlayer that issued the seek operation |

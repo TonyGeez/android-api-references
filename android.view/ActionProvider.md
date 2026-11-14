@@ -2,7 +2,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 
 # ActionProvider
 
-Kotlin | [Java](../android/view/ActionProvider.md)
+Kotlin | [Java](ActionProvider.md)
 | --- | --- |
 
 ```
@@ -11,9 +11,9 @@ abstract class ActionProvider
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.ActionProvider](../android/view/ActionProvider.md) |
+| ↳ | [android.view.ActionProvider](ActionProvider.md) |
 
-| Known Direct Subclasses [MediaRouteActionProvider](../android/app/MediaRouteActionProvider.md), [ShareActionProvider](../android/widget/ShareActionProvider.md) |---|---| | [MediaRouteActionProvider](../android/app/MediaRouteActionProvider.md) | The media route action provider displays a `https://developer.android.com/reference/kotlin/android/app/MediaRouteButton.html#` in the application's `https://developer.android.com/reference/kotlin/android/app/ActionBar.html#` to allow the user to select routes and to control the currently selected route. | | [ShareActionProvider](../android/widget/ShareActionProvider.md) | This is a provider for a share action. | |
+| Known Direct Subclasses [MediaRouteActionProvider](../android.app/MediaRouteActionProvider.md), [ShareActionProvider](../android.widget/ShareActionProvider.md) |---|---| | [MediaRouteActionProvider](../android.app/MediaRouteActionProvider.md) | The media route action provider displays a `https://developer.android.com/reference/kotlin/android/app/MediaRouteButton.html#` in the application's `https://developer.android.com/reference/kotlin/android/app/ActionBar.html#` to allow the user to select routes and to control the currently selected route. | | [ShareActionProvider](../android.widget/ShareActionProvider.md) | This is a provider for a share action. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 An ActionProvider defines rich menu interaction in a single component. ActionProvider can generate action views for use in the action bar, dynamically populate submenus of a MenuItem, and handle default menu item invocations.
@@ -51,9 +51,9 @@ There are two ways to use an action provider:
 |---|---|
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ActionProvider#hasSubMenu()()` Determines if this ActionProvider has a submenu associated with it. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ActionProvider#isVisible()()` If `https://developer.android.com/reference/kotlin/android/view/ActionProvider#overridesItemVisibility()` returns true, the return value of this method will help determine the visibility of the `https://developer.android.com/reference/kotlin/android/view/MenuItem` this ActionProvider is bound to. |
-| abstract [View](../android/view/View.md) | `https://developer.android.com/reference/kotlin/android/view/ActionProvider#onCreateActionView()()` Factory method called by the Android framework to create new action views. |
+| abstract [View](View.md) | `https://developer.android.com/reference/kotlin/android/view/ActionProvider#onCreateActionView()()` Factory method called by the Android framework to create new action views. |
 | --- | --- |
-| open [View](../android/view/View.md) | `https://developer.android.com/reference/kotlin/android/view/ActionProvider#onCreateActionView(android.view.MenuItem)(forItem: https://developer.android.com/reference/kotlin/android/view/MenuItem)` Factory method called by the Android framework to create new action views. |
+| open [View](View.md) | `https://developer.android.com/reference/kotlin/android/view/ActionProvider#onCreateActionView(android.view.MenuItem)(forItem: https://developer.android.com/reference/kotlin/android/view/MenuItem)` Factory method called by the Android framework to create new action views. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/ActionProvider#onPerformDefaultAction()()` Performs an optional default action. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ActionProvider#onPrepareSubMenu(android.view.SubMenu)(subMenu: https://developer.android.com/reference/kotlin/android/view/SubMenu)` Called to prepare an associated submenu for the menu item backed by this ActionProvider. |
 | --- | --- |
@@ -76,7 +76,7 @@ Creates a new instance. ActionProvider classes should always implement a constru
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md): Context for accessing resources. This value cannot be `null`. |
+| `context` | [Context](../android.content/Context.md): Context for accessing resources. This value cannot be `null`. |
 
 ## Public methods
 
@@ -145,7 +145,7 @@ If your ActionProvider implementation overrides the deprecated no-argument overl
 
 | Parameters ||
 |---|---|
-| `forItem` | [MenuItem](../android/view/MenuItem.md): MenuItem to create the action view for. This value cannot be `null`. |
+| `forItem` | [MenuItem](MenuItem.md): MenuItem to create the action view for. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -189,7 +189,7 @@ if `https://developer.android.com/reference/kotlin/android/view/ActionProvider#h
 
 | Parameters ||
 |---|---|
-| `subMenu` | [SubMenu](../android/view/SubMenu.md): Submenu that will be displayed. This value cannot be `null`. |
+| `subMenu` | [SubMenu](SubMenu.md): Submenu that will be displayed. This value cannot be `null`. |
 
 ### overridesItemVisibility
 

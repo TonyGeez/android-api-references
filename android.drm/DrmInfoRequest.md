@@ -5,7 +5,7 @@ Deprecated in [API level 30](https://developer.android.com/guide/topics/manifest
 
 # DrmInfoRequest
 
-Kotlin| [Java](../android/drm/DrmInfoRequest.md) 
+Kotlin| [Java](DrmInfoRequest.md) 
 | --- | --- |
 
 ```
@@ -14,40 +14,40 @@ open class DrmInfoRequest
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.drm.DrmInfoRequest](../android/drm/DrmInfoRequest.md) |
+| ↳ | [android.drm.DrmInfoRequest](DrmInfoRequest.md) |
 
 | **This class was deprecated in API level 30.**
 |
-| Please use [android.media.MediaDrm](../android/media/MediaDrm.md)
+| Please use [android.media.MediaDrm](../android.media/MediaDrm.md)
 
-An entity class that is used to pass information to an online DRM server. An instance of this class is passed to the [acquireDrmInfo()](../android/drm/DrmManagerClient.md))method to get an instance of a [DrmInfo](../android/drm/DrmInfo.md).
+An entity class that is used to pass information to an online DRM server. An instance of this class is passed to the [acquireDrmInfo()](DrmManagerClient.md))method to get an instance of a [DrmInfo](DrmInfo.md).
 
 ## Summary
 
 | Constants ||
 |----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACCOUNT_ID](../android/drm/DrmInfoRequest.md) Key that is used to pass the unique session ID for the account or the user. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUBSCRIPTION_ID](../android/drm/DrmInfoRequest.md) Key that is used to pass the unique session ID for the subscription. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_REGISTRATION_INFO](../android/drm/DrmInfoRequest.md) Acquires DRM server registration information. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACCOUNT_ID](DrmInfoRequest.md) Key that is used to pass the unique session ID for the account or the user. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SUBSCRIPTION_ID](DrmInfoRequest.md) Key that is used to pass the unique session ID for the subscription. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_REGISTRATION_INFO](DrmInfoRequest.md) Acquires DRM server registration information. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_RIGHTS_ACQUISITION_INFO](../android/drm/DrmInfoRequest.md) Acquires rights information. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_RIGHTS_ACQUISITION_PROGRESS_INFO](../android/drm/DrmInfoRequest.md) Acquires the progress of the rights acquisition. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_UNREGISTRATION_INFO](../android/drm/DrmInfoRequest.md) Acquires information for unregistering the DRM server. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_RIGHTS_ACQUISITION_INFO](DrmInfoRequest.md) Acquires rights information. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_RIGHTS_ACQUISITION_PROGRESS_INFO](DrmInfoRequest.md) Acquires the progress of the rights acquisition. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_UNREGISTRATION_INFO](DrmInfoRequest.md) Acquires information for unregistering the DRM server. |
 | --- | --- |
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [DrmInfoRequest](../android/drm/DrmInfoRequest.md))`(`infoType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `mimeType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a`DrmInfoRequest`object with type and MIME type. |
+| [DrmInfoRequest](DrmInfoRequest.md))`(`infoType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `mimeType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a`DrmInfoRequest`object with type and MIME type. |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [get](../android/drm/DrmInfoRequest.md))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Retrieves the value of a given key. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInfoType](../android/drm/DrmInfoRequest.md))`()` Retrieves the information type associated with this object. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getMimeType](../android/drm/DrmInfoRequest.md))`()` Retrieves the MIME type associated with this object. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [get](DrmInfoRequest.md))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Retrieves the value of a given key. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInfoType](DrmInfoRequest.md))`()` Retrieves the information type associated with this object. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getMimeType](DrmInfoRequest.md))`()` Retrieves the MIME type associated with this object. |
 | --- | --- |
-| open [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | [iterator](../android/drm/DrmInfoRequest.md))`()` Retrieves an iterator object that you can use to iterate over the values associated with this`DrmInfoRequest`object. |
-| open [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [keyIterator](../android/drm/DrmInfoRequest.md))`()` Retrieves an iterator object that you can use to iterate over the keys associated with this`DrmInfoRequest`object. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [put](../android/drm/DrmInfoRequest.md))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Adds optional information as key-value pairs to this object. |
+| open [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | [iterator](DrmInfoRequest.md))`()` Retrieves an iterator object that you can use to iterate over the values associated with this`DrmInfoRequest`object. |
+| open [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [keyIterator](DrmInfoRequest.md))`()` Retrieves an iterator object that you can use to iterate over the keys associated with this`DrmInfoRequest`object. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [put](DrmInfoRequest.md))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Adds optional information as key-value pairs to this object. |
 | --- | --- |
 
 ## Constants

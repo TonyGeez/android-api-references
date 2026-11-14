@@ -13,7 +13,7 @@ interface AudioDescriptionRequestedChangeListener
 
 | [android.view.accessibility.AccessibilityManager.AudioDescriptionRequestedChangeListener](../android/view/accessibility/AccessibilityManager.AudioDescriptionRequestedChangeListener.md) |
 
-Listener for the audio description by default state. To listen for changes to the audio description by default state on the device, implement this interface and register it with the system by calling [addAudioDescriptionRequestedChangeListener](../android/view/accessibility/AccessibilityManager.md)).
+Listener for the audio description by default state. To listen for changes to the audio description by default state on the device, implement this interface and register it with the system by calling [addAudioDescriptionRequestedChangeListener](AccessibilityManager.md)).
 
 ## Summary
 

@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # FileObserver
 
-Kotlin| [Java](../android/os/FileObserver.md) 
+Kotlin| [Java](FileObserver.md) 
 | --- | --- |
 
 ```
@@ -13,9 +13,9 @@ abstract class FileObserver
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.os.FileObserver](../android/os/FileObserver.md) |
+| ↳ | [android.os.FileObserver](FileObserver.md) |
 
-Monitors files (using [inotify](http://en.wikipedia.org/wiki/Inotify)) to fire an event after files are accessed or changed by any process on the device (including this one). FileObserver is an abstract class; subclasses must implement the event handler [onEvent(int,java.lang.String)](../android/os/FileObserver.md)).
+Monitors files (using [inotify](http://en.wikipedia.org/wiki/Inotify)) to fire an event after files are accessed or changed by any process on the device (including this one). FileObserver is an abstract class; subclasses must implement the event handler [onEvent(int,java.lang.String)](FileObserver.md)).
 
 Each FileObserver instance can monitor multiple files or directories. If a directory is monitored, events will be triggered for all files and subdirectories inside the monitored directory.
 
@@ -27,43 +27,43 @@ An event mask is used to specify which changes or actions to report. Event type 
 
 | Constants ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACCESS](../android/os/FileObserver.md) Event type: Data was read from a file |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ALL_EVENTS](../android/os/FileObserver.md) Event mask: All valid event types, combined Value is either`0`or a combination of [android.os.FileObserver#ACCESS](../android/os/FileObserver.md), [android.os.FileObserver#MODIFY](../android/os/FileObserver.md), [android.os.FileObserver#ATTRIB](../android/os/FileObserver.md), [android.os.FileObserver#CLOSE_WRITE](../android/os/FileObserver.md), [android.os.FileObserver#CLOSE_NOWRITE](../android/os/FileObserver.md), [android.os.FileObserver#OPEN](../android/os/FileObserver.md), [android.os.FileObserver#MOVED_FROM](../android/os/FileObserver.md), [android.os.FileObserver#MOVED_TO](../android/os/FileObserver.md), [android.os.FileObserver#CREATE](../android/os/FileObserver.md), [android.os.FileObserver#DELETE](../android/os/FileObserver.md), [android.os.FileObserver#DELETE_SELF](../android/os/FileObserver.md), and [android.os.FileObserver#MOVE_SELF](../android/os/FileObserver.md) |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ATTRIB](../android/os/FileObserver.md) Event type: Metadata (permissions, owner, timestamp) was changed explicitly |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACCESS](FileObserver.md) Event type: Data was read from a file |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ALL_EVENTS](FileObserver.md) Event mask: All valid event types, combined Value is either`0`or a combination of [android.os.FileObserver#ACCESS](FileObserver.md), [android.os.FileObserver#MODIFY](FileObserver.md), [android.os.FileObserver#ATTRIB](FileObserver.md), [android.os.FileObserver#CLOSE_WRITE](FileObserver.md), [android.os.FileObserver#CLOSE_NOWRITE](FileObserver.md), [android.os.FileObserver#OPEN](FileObserver.md), [android.os.FileObserver#MOVED_FROM](FileObserver.md), [android.os.FileObserver#MOVED_TO](FileObserver.md), [android.os.FileObserver#CREATE](FileObserver.md), [android.os.FileObserver#DELETE](FileObserver.md), [android.os.FileObserver#DELETE_SELF](FileObserver.md), and [android.os.FileObserver#MOVE_SELF](FileObserver.md) |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ATTRIB](FileObserver.md) Event type: Metadata (permissions, owner, timestamp) was changed explicitly |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CLOSE_NOWRITE](../android/os/FileObserver.md) Event type: Someone had a file or directory open read-only, and closed it |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CLOSE_WRITE](../android/os/FileObserver.md) Event type: Someone had a file or directory open for writing, and closed it |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CREATE](../android/os/FileObserver.md) Event type: A new file or subdirectory was created under the monitored directory |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CLOSE_NOWRITE](FileObserver.md) Event type: Someone had a file or directory open read-only, and closed it |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CLOSE_WRITE](FileObserver.md) Event type: Someone had a file or directory open for writing, and closed it |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CREATE](FileObserver.md) Event type: A new file or subdirectory was created under the monitored directory |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DELETE](../android/os/FileObserver.md) Event type: A file was deleted from the monitored directory |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DELETE_SELF](../android/os/FileObserver.md) Event type: The monitored file or directory was deleted; monitoring effectively stops |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MODIFY](../android/os/FileObserver.md) Event type: Data was written to a file |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DELETE](FileObserver.md) Event type: A file was deleted from the monitored directory |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DELETE_SELF](FileObserver.md) Event type: The monitored file or directory was deleted; monitoring effectively stops |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MODIFY](FileObserver.md) Event type: Data was written to a file |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MOVED_FROM](../android/os/FileObserver.md) Event type: A file or subdirectory was moved from the monitored directory |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MOVED_TO](../android/os/FileObserver.md) Event type: A file or subdirectory was moved to the monitored directory |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MOVE_SELF](../android/os/FileObserver.md) Event type: The monitored file or directory was moved; monitoring continues |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MOVED_FROM](FileObserver.md) Event type: A file or subdirectory was moved from the monitored directory |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MOVED_TO](FileObserver.md) Event type: A file or subdirectory was moved to the monitored directory |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MOVE_SELF](FileObserver.md) Event type: The monitored file or directory was moved; monitoring continues |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPEN](../android/os/FileObserver.md) Event type: A file or directory was opened |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPEN](FileObserver.md) Event type: A file or directory was opened |
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [FileObserver](../android/os/FileObserver.md))`(`file:` ` [File](../java/io/File.md)`)` Equivalent to FileObserver(file, FileObserver.ALL_EVENTS). |
-| [FileObserver](../android/os/FileObserver.md))`(`file:` ` [File](../java/io/File.md)`, `mask:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a new file observer for a certain file or directory. |
-| [FileObserver](../android/os/FileObserver.md))`(`path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Equivalent to FileObserver(path, FileObserver.ALL_EVENTS). |
-| [FileObserver](../android/os/FileObserver.md))`(`path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `mask:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a new file observer for a certain file or directory. |
-| [FileObserver](../android/os/FileObserver.md))`(`files:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [File](../java/io/File.md)!>`)` Equivalent to FileObserver(paths, FileObserver.ALL_EVENTS). |
-| [FileObserver](../android/os/FileObserver.md))`(`files:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [File](../java/io/File.md)!>`, `mask:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Version of [FileObserver(java.io.File,int)](../android/os/FileObserver.md))that allows callers to monitor multiple files or directories. |
+| [FileObserver](FileObserver.md))`(`file:` ` [File](../java.io/File.md)`)` Equivalent to FileObserver(file, FileObserver.ALL_EVENTS). |
+| [FileObserver](FileObserver.md))`(`file:` ` [File](../java.io/File.md)`, `mask:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a new file observer for a certain file or directory. |
+| [FileObserver](FileObserver.md))`(`path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Equivalent to FileObserver(path, FileObserver.ALL_EVENTS). |
+| [FileObserver](FileObserver.md))`(`path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `mask:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a new file observer for a certain file or directory. |
+| [FileObserver](FileObserver.md))`(`files:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [File](../java.io/File.md)!>`)` Equivalent to FileObserver(paths, FileObserver.ALL_EVENTS). |
+| [FileObserver](FileObserver.md))`(`files:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [File](../java.io/File.md)!>`, `mask:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Version of [FileObserver(java.io.File,int)](FileObserver.md))that allows callers to monitor multiple files or directories. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onEvent](../android/os/FileObserver.md))`(`event:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` The event handler, which must be implemented by subclasses. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startWatching](../android/os/FileObserver.md))`()` Start watching for events. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [stopWatching](../android/os/FileObserver.md))`()` Stop watching for events. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onEvent](FileObserver.md))`(`event:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` The event handler, which must be implemented by subclasses. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startWatching](FileObserver.md))`()` Start watching for events. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [stopWatching](FileObserver.md))`()` Stop watching for events. |
 | --- | --- |
 
 | Protected methods ||
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](../android/os/FileObserver.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](FileObserver.md))`()` <br /> |
 
 ## Constants
 
@@ -88,7 +88,7 @@ static val ALL_EVENTS: Int
 ```
 
 Event mask: All valid event types, combined 
-Value is either`0`or a combination of [android.os.FileObserver#ACCESS](../android/os/FileObserver.md), [android.os.FileObserver#MODIFY](../android/os/FileObserver.md), [android.os.FileObserver#ATTRIB](../android/os/FileObserver.md), [android.os.FileObserver#CLOSE_WRITE](../android/os/FileObserver.md), [android.os.FileObserver#CLOSE_NOWRITE](../android/os/FileObserver.md), [android.os.FileObserver#OPEN](../android/os/FileObserver.md), [android.os.FileObserver#MOVED_FROM](../android/os/FileObserver.md), [android.os.FileObserver#MOVED_TO](../android/os/FileObserver.md), [android.os.FileObserver#CREATE](../android/os/FileObserver.md), [android.os.FileObserver#DELETE](../android/os/FileObserver.md), [android.os.FileObserver#DELETE_SELF](../android/os/FileObserver.md), and [android.os.FileObserver#MOVE_SELF](../android/os/FileObserver.md) 
+Value is either`0`or a combination of [android.os.FileObserver#ACCESS](FileObserver.md), [android.os.FileObserver#MODIFY](FileObserver.md), [android.os.FileObserver#ATTRIB](FileObserver.md), [android.os.FileObserver#CLOSE_WRITE](FileObserver.md), [android.os.FileObserver#CLOSE_NOWRITE](FileObserver.md), [android.os.FileObserver#OPEN](FileObserver.md), [android.os.FileObserver#MOVED_FROM](FileObserver.md), [android.os.FileObserver#MOVED_TO](FileObserver.md), [android.os.FileObserver#CREATE](FileObserver.md), [android.os.FileObserver#DELETE](FileObserver.md), [android.os.FileObserver#DELETE_SELF](FileObserver.md), and [android.os.FileObserver#MOVE_SELF](FileObserver.md) 
 
  Value: 4095
 
@@ -238,7 +238,7 @@ Equivalent to FileObserver(file, FileObserver.ALL_EVENTS).
 
 | Parameters ||
 |--------|-------------------------------------------------------------------------------------------------------|
-| `file` | [File](../java/io/File.md):This value cannot be`null`. |
+| `file` | [File](../java.io/File.md):This value cannot be`null`. |
 
 ### FileObserver
 
@@ -250,12 +250,12 @@ FileObserver(
     mask: Int)
 ```
 
-Create a new file observer for a certain file or directory. Monitoring does not start on creation! You must call [startWatching()](../android/os/FileObserver.md))before you will receive events.
+Create a new file observer for a certain file or directory. Monitoring does not start on creation! You must call [startWatching()](FileObserver.md))before you will receive events.
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `file` | [File](../java/io/File.md):The file or directory to monitor This value cannot be`null`. |
-| `mask` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The event or events (added together) to watch for Value is either`0`or a combination of [android.os.FileObserver#ACCESS](../android/os/FileObserver.md), [android.os.FileObserver#MODIFY](../android/os/FileObserver.md), [android.os.FileObserver#ATTRIB](../android/os/FileObserver.md), [android.os.FileObserver#CLOSE_WRITE](../android/os/FileObserver.md), [android.os.FileObserver#CLOSE_NOWRITE](../android/os/FileObserver.md), [android.os.FileObserver#OPEN](../android/os/FileObserver.md), [android.os.FileObserver#MOVED_FROM](../android/os/FileObserver.md), [android.os.FileObserver#MOVED_TO](../android/os/FileObserver.md), [android.os.FileObserver#CREATE](../android/os/FileObserver.md), [android.os.FileObserver#DELETE](../android/os/FileObserver.md), [android.os.FileObserver#DELETE_SELF](../android/os/FileObserver.md), and [android.os.FileObserver#MOVE_SELF](../android/os/FileObserver.md) |
+| `file` | [File](../java.io/File.md):The file or directory to monitor This value cannot be`null`. |
+| `mask` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The event or events (added together) to watch for Value is either`0`or a combination of [android.os.FileObserver#ACCESS](FileObserver.md), [android.os.FileObserver#MODIFY](FileObserver.md), [android.os.FileObserver#ATTRIB](FileObserver.md), [android.os.FileObserver#CLOSE_WRITE](FileObserver.md), [android.os.FileObserver#CLOSE_NOWRITE](FileObserver.md), [android.os.FileObserver#OPEN](FileObserver.md), [android.os.FileObserver#MOVED_FROM](FileObserver.md), [android.os.FileObserver#MOVED_TO](FileObserver.md), [android.os.FileObserver#CREATE](FileObserver.md), [android.os.FileObserver#DELETE](FileObserver.md), [android.os.FileObserver#DELETE_SELF](FileObserver.md), and [android.os.FileObserver#MOVE_SELF](FileObserver.md) |
 
 ### FileObserver
 
@@ -265,7 +265,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 FileObserver(path: String!)
 ```
 
-**Deprecated:** *use [FileObserver(java.io.File)](../android/os/FileObserver.md))instead.*
+**Deprecated:** *use [FileObserver(java.io.File)](FileObserver.md))instead.*
 
 Equivalent to FileObserver(path, FileObserver.ALL_EVENTS). 
 
@@ -279,14 +279,14 @@ FileObserver(
     mask: Int)
 ```
 
-**Deprecated:** *use [FileObserver(java.io.File,int)](../android/os/FileObserver.md))instead.*
+**Deprecated:** *use [FileObserver(java.io.File,int)](FileObserver.md))instead.*
 
-Create a new file observer for a certain file or directory. Monitoring does not start on creation! You must call [startWatching()](../android/os/FileObserver.md))before you will receive events.
+Create a new file observer for a certain file or directory. Monitoring does not start on creation! You must call [startWatching()](FileObserver.md))before you will receive events.
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `path` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The file or directory to monitor |
-| `mask` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The event or events (added together) to watch for Value is either`0`or a combination of [android.os.FileObserver#ACCESS](../android/os/FileObserver.md), [android.os.FileObserver#MODIFY](../android/os/FileObserver.md), [android.os.FileObserver#ATTRIB](../android/os/FileObserver.md), [android.os.FileObserver#CLOSE_WRITE](../android/os/FileObserver.md), [android.os.FileObserver#CLOSE_NOWRITE](../android/os/FileObserver.md), [android.os.FileObserver#OPEN](../android/os/FileObserver.md), [android.os.FileObserver#MOVED_FROM](../android/os/FileObserver.md), [android.os.FileObserver#MOVED_TO](../android/os/FileObserver.md), [android.os.FileObserver#CREATE](../android/os/FileObserver.md), [android.os.FileObserver#DELETE](../android/os/FileObserver.md), [android.os.FileObserver#DELETE_SELF](../android/os/FileObserver.md), and [android.os.FileObserver#MOVE_SELF](../android/os/FileObserver.md) |
+| `mask` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The event or events (added together) to watch for Value is either`0`or a combination of [android.os.FileObserver#ACCESS](FileObserver.md), [android.os.FileObserver#MODIFY](FileObserver.md), [android.os.FileObserver#ATTRIB](FileObserver.md), [android.os.FileObserver#CLOSE_WRITE](FileObserver.md), [android.os.FileObserver#CLOSE_NOWRITE](FileObserver.md), [android.os.FileObserver#OPEN](FileObserver.md), [android.os.FileObserver#MOVED_FROM](FileObserver.md), [android.os.FileObserver#MOVED_TO](FileObserver.md), [android.os.FileObserver#CREATE](FileObserver.md), [android.os.FileObserver#DELETE](FileObserver.md), [android.os.FileObserver#DELETE_SELF](FileObserver.md), and [android.os.FileObserver#MOVE_SELF](FileObserver.md) |
 
 ### FileObserver
 
@@ -300,7 +300,7 @@ Equivalent to FileObserver(paths, FileObserver.ALL_EVENTS).
 
 | Parameters ||
 |---------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `files` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [File](../java/io/File.md)!\>:The files or directories to monitor This value cannot be`null`. |
+| `files` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [File](../java.io/File.md)!\>:The files or directories to monitor This value cannot be`null`. |
 
 ### FileObserver
 
@@ -312,12 +312,12 @@ FileObserver(
     mask: Int)
 ```
 
-Version of [FileObserver(java.io.File,int)](../android/os/FileObserver.md))that allows callers to monitor multiple files or directories.
+Version of [FileObserver(java.io.File,int)](FileObserver.md))that allows callers to monitor multiple files or directories.
 
 | Parameters ||
 |---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `files` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [File](../java/io/File.md)!\>:The files or directories to monitor This value cannot be`null`. |
-| `mask` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The event or events (added together) to watch for Value is either`0`or a combination of [android.os.FileObserver#ACCESS](../android/os/FileObserver.md), [android.os.FileObserver#MODIFY](../android/os/FileObserver.md), [android.os.FileObserver#ATTRIB](../android/os/FileObserver.md), [android.os.FileObserver#CLOSE_WRITE](../android/os/FileObserver.md), [android.os.FileObserver#CLOSE_NOWRITE](../android/os/FileObserver.md), [android.os.FileObserver#OPEN](../android/os/FileObserver.md), [android.os.FileObserver#MOVED_FROM](../android/os/FileObserver.md), [android.os.FileObserver#MOVED_TO](../android/os/FileObserver.md), [android.os.FileObserver#CREATE](../android/os/FileObserver.md), [android.os.FileObserver#DELETE](../android/os/FileObserver.md), [android.os.FileObserver#DELETE_SELF](../android/os/FileObserver.md), and [android.os.FileObserver#MOVE_SELF](../android/os/FileObserver.md) |
+| `files` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [File](../java.io/File.md)!\>:The files or directories to monitor This value cannot be`null`. |
+| `mask` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The event or events (added together) to watch for Value is either`0`or a combination of [android.os.FileObserver#ACCESS](FileObserver.md), [android.os.FileObserver#MODIFY](FileObserver.md), [android.os.FileObserver#ATTRIB](FileObserver.md), [android.os.FileObserver#CLOSE_WRITE](FileObserver.md), [android.os.FileObserver#CLOSE_NOWRITE](FileObserver.md), [android.os.FileObserver#OPEN](FileObserver.md), [android.os.FileObserver#MOVED_FROM](FileObserver.md), [android.os.FileObserver#MOVED_TO](FileObserver.md), [android.os.FileObserver#CREATE](FileObserver.md), [android.os.FileObserver#DELETE](FileObserver.md), [android.os.FileObserver#DELETE_SELF](FileObserver.md), and [android.os.FileObserver#MOVE_SELF](FileObserver.md) |
 
 ## Public methods
 
@@ -334,14 +334,14 @@ abstract fun onEvent(
 
 The event handler, which must be implemented by subclasses.
 
-This method is invoked on a special FileObserver thread. It runs independently of any threads, so take care to use appropriate synchronization! Consider using [Handler.post(Runnable)](../android/os/Handler.md))to shift event handling work to the main thread to avoid concurrency problems.
+This method is invoked on a special FileObserver thread. It runs independently of any threads, so take care to use appropriate synchronization! Consider using [Handler.post(Runnable)](Handler.md))to shift event handling work to the main thread to avoid concurrency problems.
 
 Event handlers must not throw exceptions.
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `event` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The type of event which happened |
-| `path` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:The path, relative to the main monitored file or directory, of the file or directory which triggered the event. This value can be`null`for certain events, such as [MOVE_SELF](../android/os/FileObserver.md). |
+| `path` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:The path, relative to the main monitored file or directory, of the file or directory which triggered the event. This value can be`null`for certain events, such as [MOVE_SELF](FileObserver.md). |
 
 ### startWatching
 

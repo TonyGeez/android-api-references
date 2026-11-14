@@ -5,7 +5,7 @@ Also in [S Extensions 18](https://developer.android.com/sdkExtensions)
 
 # FreeTextAnnotation
 
-Kotlin| [Java](../android/graphics/pdf/component/FreeTextAnnotation.md) 
+Kotlin| [Java](FreeTextAnnotation.md) 
 | --- | --- |
 
 ```
@@ -14,37 +14,37 @@ class FreeTextAnnotation : PdfAnnotation
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.graphics.pdf.component.PdfAnnotation](../android/graphics/pdf/component/PdfAnnotation.md) ||
-| | ↳ | [android.graphics.pdf.component.FreeTextAnnotation](../android/graphics/pdf/component/FreeTextAnnotation.md) |
+| ↳ | [android.graphics.pdf.component.PdfAnnotation](PdfAnnotation.md) ||
+| | ↳ | [android.graphics.pdf.component.FreeTextAnnotation](FreeTextAnnotation.md) |
 
 Represents a free text annotation in a PDF document.
 
 This class allows creating and manipulating free text annotations. A free text annotation in a PDF is a type of annotation that allows you to add text directly onto the page.
 
-If text color is not set using [setTextColor(int)](../android/graphics/pdf/component/FreeTextAnnotation.md)), the default text color is black and if the background color is not set using [setBackgroundColor(int)](../android/graphics/pdf/component/FreeTextAnnotation.md)), the default background color is white.
+If text color is not set using [setTextColor(int)](FreeTextAnnotation.md)), the default text color is black and if the background color is not set using [setBackgroundColor(int)](FreeTextAnnotation.md)), the default background color is white.
 
 ## Summary
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [FreeTextAnnotation](../android/graphics/pdf/component/FreeTextAnnotation.md))`(`bounds:` ` [RectF](../android/graphics/RectF.md)`, `textContent:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Creates a new free text annotation with the specified bounds and text content. |
+| [FreeTextAnnotation](FreeTextAnnotation.md))`(`bounds:` ` [RectF](../android.graphics/RectF.md)`, `textContent:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Creates a new free text annotation with the specified bounds and text content. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBackgroundColor](../android/graphics/pdf/component/FreeTextAnnotation.md))`()` Returns the background color of the freetext annotation. |
-| [RectF](../android/graphics/RectF.md) | [getBounds](../android/graphics/pdf/component/FreeTextAnnotation.md))`()` Returns the bounding rectangle of the freetext annotation. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTextColor](../android/graphics/pdf/component/FreeTextAnnotation.md))`()` Returns the text color of the freetext annotation. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBackgroundColor](FreeTextAnnotation.md))`()` Returns the background color of the freetext annotation. |
+| [RectF](../android.graphics/RectF.md) | [getBounds](FreeTextAnnotation.md))`()` Returns the bounding rectangle of the freetext annotation. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTextColor](FreeTextAnnotation.md))`()` Returns the text color of the freetext annotation. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getTextContent](../android/graphics/pdf/component/FreeTextAnnotation.md))`()` Returns the text content of the freetext annotation. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setBackgroundColor](../android/graphics/pdf/component/FreeTextAnnotation.md))`(`color:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the background color of the freetext annotation. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setBounds](../android/graphics/pdf/component/FreeTextAnnotation.md))`(`bounds:` ` [RectF](../android/graphics/RectF.md)`)` Sets the bounding rectangle of the freetext annotation. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getTextContent](FreeTextAnnotation.md))`()` Returns the text content of the freetext annotation. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setBackgroundColor](FreeTextAnnotation.md))`(`color:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the background color of the freetext annotation. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setBounds](FreeTextAnnotation.md))`(`bounds:` ` [RectF](../android.graphics/RectF.md)`)` Sets the bounding rectangle of the freetext annotation. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTextColor](../android/graphics/pdf/component/FreeTextAnnotation.md))`(`color:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the text color of the annotation. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTextContent](../android/graphics/pdf/component/FreeTextAnnotation.md))`(`text:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Sets the text content of the annotation. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTextColor](FreeTextAnnotation.md))`(`color:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the text color of the annotation. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTextContent](FreeTextAnnotation.md))`(`text:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Sets the text content of the annotation. |
 
 | Inherited functions ||
 |---|---|
-| From class [PdfAnnotation](../android/graphics/pdf/component/PdfAnnotation.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPdfAnnotationType](../android/graphics/pdf/component/PdfAnnotation.md))`()` <br /> Returns the type of the annotation. <br /> | ||
+| From class [PdfAnnotation](PdfAnnotation.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPdfAnnotationType](PdfAnnotation.md))`()` <br /> Returns the type of the annotation. <br /> | ||
 
 ## Public constructors
 
@@ -65,7 +65,7 @@ The default text color and background color will be black and white respectively
 
 | Parameters ||
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `bounds` | [RectF](../android/graphics/RectF.md):The bounding rectangle of the annotation. This value cannot be`null`. |
+| `bounds` | [RectF](../android.graphics/RectF.md):The bounding rectangle of the annotation. This value cannot be`null`. |
 | `textContent` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The text content of the annotation This value cannot be`null`. |
 
 ## Public methods
@@ -98,7 +98,7 @@ Returns the bounding rectangle of the freetext annotation.
 
 | Return ||
 |--------------------------------------------------------------------------------------|-----------------------------------------------------|
-| [RectF](../android/graphics/RectF.md) | The bounding rectangle. This value cannot be`null`. |
+| [RectF](../android.graphics/RectF.md) | The bounding rectangle. This value cannot be`null`. |
 
 ### getTextColor
 
@@ -158,7 +158,7 @@ Sets the bounding rectangle of the freetext annotation.
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| `bounds` | [RectF](../android/graphics/RectF.md):The new bounding rectangle. This value cannot be`null`. |
+| `bounds` | [RectF](../android.graphics/RectF.md):The new bounding rectangle. This value cannot be`null`. |
 
 ### setTextColor
 

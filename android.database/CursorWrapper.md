@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # CursorWrapper
 
-Kotlin| [Java](../android/database/CursorWrapper.md) 
+Kotlin| [Java](CursorWrapper.md) 
 | --- | --- |
 
 ```
@@ -13,9 +13,9 @@ open class CursorWrapper : Cursor
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.database.CursorWrapper](../android/database/CursorWrapper.md) |
+| ↳ | [android.database.CursorWrapper](CursorWrapper.md) |
 
-| Known Direct Subclasses [CrossProcessCursorWrapper](../android/database/CrossProcessCursorWrapper.md) |------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------| | [CrossProcessCursorWrapper](../android/database/CrossProcessCursorWrapper.md) | Cursor wrapper that implements [CrossProcessCursor](../android/database/CrossProcessCursor.md). | |
+| Known Direct Subclasses [CrossProcessCursorWrapper](CrossProcessCursorWrapper.md) |------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------| | [CrossProcessCursorWrapper](CrossProcessCursorWrapper.md) | Cursor wrapper that implements [CrossProcessCursor](CrossProcessCursor.md). | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 Wrapper class for Cursor that delegates all calls to the actual cursor object. The primary use for this class is to extend a cursor while overriding only a subset of its methods.
@@ -24,72 +24,72 @@ Wrapper class for Cursor that delegates all calls to the actual cursor object. T
 
 | Inherited constants ||
 |---|---|
-| From class [Cursor](../android/database/Cursor.md) |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FIELD_TYPE_BLOB](../android/database/Cursor.md) <br /> Value returned by [getType(int)](../android/database/Cursor.md))if the specified column type is blob <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FIELD_TYPE_FLOAT](../android/database/Cursor.md) <br /> Value returned by [getType(int)](../android/database/Cursor.md))if the specified column type is float <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FIELD_TYPE_INTEGER](../android/database/Cursor.md) <br /> Value returned by [getType(int)](../android/database/Cursor.md))if the specified column type is integer <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FIELD_TYPE_NULL](../android/database/Cursor.md) <br /> Value returned by [getType(int)](../android/database/Cursor.md))if the specified column is null <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FIELD_TYPE_STRING](../android/database/Cursor.md) <br /> Value returned by [getType(int)](../android/database/Cursor.md))if the specified column type is string <br /> | ||
+| From class [Cursor](Cursor.md) |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FIELD_TYPE_BLOB](Cursor.md) <br /> Value returned by [getType(int)](Cursor.md))if the specified column type is blob <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FIELD_TYPE_FLOAT](Cursor.md) <br /> Value returned by [getType(int)](Cursor.md))if the specified column type is float <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FIELD_TYPE_INTEGER](Cursor.md) <br /> Value returned by [getType(int)](Cursor.md))if the specified column type is integer <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FIELD_TYPE_NULL](Cursor.md) <br /> Value returned by [getType(int)](Cursor.md))if the specified column is null <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FIELD_TYPE_STRING](Cursor.md) <br /> Value returned by [getType(int)](Cursor.md))if the specified column type is string <br /> | ||
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [CursorWrapper](../android/database/CursorWrapper.md))`(`cursor:` ` [Cursor](../android/database/Cursor.md)!`)` Creates a cursor wrapper. |
+| [CursorWrapper](CursorWrapper.md))`(`cursor:` ` [Cursor](Cursor.md)!`)` Creates a cursor wrapper. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../android/database/CursorWrapper.md))`()` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [copyStringToBuffer](../android/database/CursorWrapper.md))`(`columnIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `buffer:` ` [CharArrayBuffer](../android/database/CharArrayBuffer.md)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [deactivate](../android/database/CursorWrapper.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](CursorWrapper.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [copyStringToBuffer](CursorWrapper.md))`(`columnIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `buffer:` ` [CharArrayBuffer](CharArrayBuffer.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [deactivate](CursorWrapper.md))`()` <br /> |
 | --- | --- |
-| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getBlob](../android/database/CursorWrapper.md))`(`columnIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getColumnCount](../android/database/CursorWrapper.md))`()` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getColumnIndex](../android/database/CursorWrapper.md))`(`columnName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getBlob](CursorWrapper.md))`(`columnIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getColumnCount](CursorWrapper.md))`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getColumnIndex](CursorWrapper.md))`(`columnName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getColumnIndexOrThrow](../android/database/CursorWrapper.md))`(`columnName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getColumnName](../android/database/CursorWrapper.md))`(`columnIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getColumnNames](../android/database/CursorWrapper.md))`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getColumnIndexOrThrow](CursorWrapper.md))`(`columnName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getColumnName](CursorWrapper.md))`(`columnIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getColumnNames](CursorWrapper.md))`()` <br /> |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCount](../android/database/CursorWrapper.md))`()` <br /> |
-| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getDouble](../android/database/CursorWrapper.md))`(`columnIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| open [Bundle](../android/os/Bundle.md)! | [getExtras](../android/database/CursorWrapper.md))`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCount](CursorWrapper.md))`()` <br /> |
+| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getDouble](CursorWrapper.md))`(`columnIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Bundle](../android.os/Bundle.md)! | [getExtras](CursorWrapper.md))`()` <br /> |
 | --- | --- |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getFloat](../android/database/CursorWrapper.md))`(`columnIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInt](../android/database/CursorWrapper.md))`(`columnIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getLong](../android/database/CursorWrapper.md))`(`columnIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getFloat](CursorWrapper.md))`(`columnIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInt](CursorWrapper.md))`(`columnIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getLong](CursorWrapper.md))`(`columnIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
-| open [Uri](../android/net/Uri.md)! | [getNotificationUri](../android/database/CursorWrapper.md))`()` <br /> |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Uri](../android/net/Uri.md)!\>? | [getNotificationUris](../android/database/CursorWrapper.md))`()` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPosition](../android/database/CursorWrapper.md))`()` <br /> |
+| open [Uri](../android.net/Uri.md)! | [getNotificationUri](CursorWrapper.md))`()` <br /> |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Uri](../android.net/Uri.md)!\>? | [getNotificationUris](CursorWrapper.md))`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPosition](CursorWrapper.md))`()` <br /> |
 | --- | --- |
-| open [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [getShort](../android/database/CursorWrapper.md))`(`columnIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getString](../android/database/CursorWrapper.md))`(`columnIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getType](../android/database/CursorWrapper.md))`(`columnIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [getShort](CursorWrapper.md))`(`columnIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getString](CursorWrapper.md))`(`columnIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getType](CursorWrapper.md))`(`columnIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getWantsAllOnMoveCalls](../android/database/CursorWrapper.md))`()` <br /> |
-| open [Cursor](../android/database/Cursor.md)! | [getWrappedCursor](../android/database/CursorWrapper.md))`()` Gets the underlying cursor that is wrapped by this instance. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAfterLast](../android/database/CursorWrapper.md))`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getWantsAllOnMoveCalls](CursorWrapper.md))`()` <br /> |
+| open [Cursor](Cursor.md)! | [getWrappedCursor](CursorWrapper.md))`()` Gets the underlying cursor that is wrapped by this instance. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAfterLast](CursorWrapper.md))`()` <br /> |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isBeforeFirst](../android/database/CursorWrapper.md))`()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isClosed](../android/database/CursorWrapper.md))`()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFirst](../android/database/CursorWrapper.md))`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isBeforeFirst](CursorWrapper.md))`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isClosed](CursorWrapper.md))`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFirst](CursorWrapper.md))`()` <br /> |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLast](../android/database/CursorWrapper.md))`()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isNull](../android/database/CursorWrapper.md))`(`columnIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [move](../android/database/CursorWrapper.md))`(`offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLast](CursorWrapper.md))`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isNull](CursorWrapper.md))`(`columnIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [move](CursorWrapper.md))`(`offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [moveToFirst](../android/database/CursorWrapper.md))`()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [moveToLast](../android/database/CursorWrapper.md))`()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [moveToNext](../android/database/CursorWrapper.md))`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [moveToFirst](CursorWrapper.md))`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [moveToLast](CursorWrapper.md))`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [moveToNext](CursorWrapper.md))`()` <br /> |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [moveToPosition](../android/database/CursorWrapper.md))`(`position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [moveToPrevious](../android/database/CursorWrapper.md))`()` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerContentObserver](../android/database/CursorWrapper.md))`(`observer:` ` [ContentObserver](../android/database/ContentObserver.md)!`)` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [moveToPosition](CursorWrapper.md))`(`position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [moveToPrevious](CursorWrapper.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerContentObserver](CursorWrapper.md))`(`observer:` ` [ContentObserver](ContentObserver.md)!`)` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerDataSetObserver](../android/database/CursorWrapper.md))`(`observer:` ` [DataSetObserver](../android/database/DataSetObserver.md)!`)` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [requery](../android/database/CursorWrapper.md))`()` <br /> |
-| open [Bundle](../android/os/Bundle.md)! | [respond](../android/database/CursorWrapper.md))`(`extras:` ` [Bundle](../android/os/Bundle.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerDataSetObserver](CursorWrapper.md))`(`observer:` ` [DataSetObserver](DataSetObserver.md)!`)` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [requery](CursorWrapper.md))`()` <br /> |
+| open [Bundle](../android.os/Bundle.md)! | [respond](CursorWrapper.md))`(`extras:` ` [Bundle](../android.os/Bundle.md)!`)` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setExtras](../android/database/CursorWrapper.md))`(`extras:` ` [Bundle](../android/os/Bundle.md)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setNotificationUri](../android/database/CursorWrapper.md))`(`cr:` ` [ContentResolver](../android/content/ContentResolver.md)!`, `uri:` ` [Uri](../android/net/Uri.md)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setNotificationUris](../android/database/CursorWrapper.md))`(`cr:` ` [ContentResolver](../android/content/ContentResolver.md)`, `uris:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Uri](../android/net/Uri.md)!>`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setExtras](CursorWrapper.md))`(`extras:` ` [Bundle](../android.os/Bundle.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setNotificationUri](CursorWrapper.md))`(`cr:` ` [ContentResolver](../android.content/ContentResolver.md)!`, `uri:` ` [Uri](../android.net/Uri.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setNotificationUris](CursorWrapper.md))`(`cr:` ` [ContentResolver](../android.content/ContentResolver.md)`, `uris:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Uri](../android.net/Uri.md)!>`)` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterContentObserver](../android/database/CursorWrapper.md))`(`observer:` ` [ContentObserver](../android/database/ContentObserver.md)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterDataSetObserver](../android/database/CursorWrapper.md))`(`observer:` ` [DataSetObserver](../android/database/DataSetObserver.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterContentObserver](CursorWrapper.md))`(`observer:` ` [ContentObserver](ContentObserver.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterDataSetObserver](CursorWrapper.md))`(`observer:` ` [DataSetObserver](DataSetObserver.md)!`)` <br /> |
 
 ## Public constructors
 
@@ -105,7 +105,7 @@ Creates a cursor wrapper.
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------|
-| `cursor` | [Cursor](../android/database/Cursor.md)!:The underlying cursor to wrap. |
+| `cursor` | [Cursor](Cursor.md)!:The underlying cursor to wrap. |
 
 ## Public methods
 
@@ -136,7 +136,7 @@ open fun copyStringToBuffer(
 | Parameters ||
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `columnIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the zero-based index of the target column. if the target column is null, return buffer Value is 0 or greater |
-| `buffer` | [CharArrayBuffer](../android/database/CharArrayBuffer.md)!:the buffer to copy the text into. |
+| `buffer` | [CharArrayBuffer](CharArrayBuffer.md)!:the buffer to copy the text into. |
 
 ### deactivate
 
@@ -278,7 +278,7 @@ open fun getExtras(): Bundle!
 
 | Return ||
 |-----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Bundle](../android/os/Bundle.md)! | cursor-defined values, or [Bundle.EMPTY](../android/os/Bundle.md) if there are no values. Never`null`. |
+| [Bundle](../android.os/Bundle.md)! | cursor-defined values, or [Bundle.EMPTY](../android.os/Bundle.md) if there are no values. Never`null`. |
 
 ### getFloat
 
@@ -338,7 +338,7 @@ open fun getNotificationUri(): Uri!
 
 | Return ||
 |------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Uri](../android/net/Uri.md)! | Returns a URI that can be used with [ContentResolver.registerContentObserver](../android/content/ContentResolver.md))to find out about changes to this Cursor's data. May be null if no notification URI has been set. |
+| [Uri](../android.net/Uri.md)! | Returns a URI that can be used with [ContentResolver.registerContentObserver](../android.content/ContentResolver.md))to find out about changes to this Cursor's data. May be null if no notification URI has been set. |
 
 ### getNotificationUris
 
@@ -350,7 +350,7 @@ open fun getNotificationUris(): MutableList<Uri!>?
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Uri](../android/net/Uri.md)!>? | Returns URIs that can be used with [ContentResolver.registerContentObserver](../android/content/ContentResolver.md))to find out about changes to this Cursor's data. May be null if no notification URI has been set. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Uri](../android.net/Uri.md)!>? | Returns URIs that can be used with [ContentResolver.registerContentObserver](../android.content/ContentResolver.md))to find out about changes to this Cursor's data. May be null if no notification URI has been set. |
 
 ### getPosition
 
@@ -410,7 +410,7 @@ open fun getType(columnIndex: Int): Int
 
 | Return ||
 |----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | column value type Value is [android.database.Cursor#FIELD_TYPE_NULL](../android/database/Cursor.md), [android.database.Cursor#FIELD_TYPE_INTEGER](../android/database/Cursor.md), [android.database.Cursor#FIELD_TYPE_FLOAT](../android/database/Cursor.md), [android.database.Cursor#FIELD_TYPE_STRING](../android/database/Cursor.md), or [android.database.Cursor#FIELD_TYPE_BLOB](../android/database/Cursor.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | column value type Value is [android.database.Cursor#FIELD_TYPE_NULL](Cursor.md), [android.database.Cursor#FIELD_TYPE_INTEGER](Cursor.md), [android.database.Cursor#FIELD_TYPE_FLOAT](Cursor.md), [android.database.Cursor#FIELD_TYPE_STRING](Cursor.md), or [android.database.Cursor#FIELD_TYPE_BLOB](Cursor.md) |
 
 ### getWantsAllOnMoveCalls
 
@@ -436,7 +436,7 @@ Gets the underlying cursor that is wrapped by this instance.
 
 | Return ||
 |-----------------------------------------------------------------------------------|---------------------|
-| [Cursor](../android/database/Cursor.md)! | The wrapped cursor. |
+| [Cursor](Cursor.md)! | The wrapped cursor. |
 
 ### isAfterLast
 
@@ -604,7 +604,7 @@ open fun registerContentObserver(observer: ContentObserver!): Unit
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `observer` | [ContentObserver](../android/database/ContentObserver.md)!:the object that gets notified when the content backing the cursor changes. |
+| `observer` | [ContentObserver](ContentObserver.md)!:the object that gets notified when the content backing the cursor changes. |
 
 ### registerDataSetObserver
 
@@ -616,7 +616,7 @@ open fun registerDataSetObserver(observer: DataSetObserver!): Unit
 
 | Parameters ||
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `observer` | [DataSetObserver](../android/database/DataSetObserver.md)!:the object that gets notified when the cursors data set changes. |
+| `observer` | [DataSetObserver](DataSetObserver.md)!:the object that gets notified when the cursors data set changes. |
 
 ### requery
 
@@ -642,11 +642,11 @@ open fun respond(extras: Bundle!): Bundle!
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `extras` | [Bundle](../android/os/Bundle.md)!:extra values, or [Bundle.EMPTY](../android/os/Bundle.md). Never`null`. |
+| `extras` | [Bundle](../android.os/Bundle.md)!:extra values, or [Bundle.EMPTY](../android.os/Bundle.md). Never`null`. |
 
 | Return ||
 |-----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| [Bundle](../android/os/Bundle.md)! | extra values, or [Bundle.EMPTY](../android/os/Bundle.md). Never`null`. |
+| [Bundle](../android.os/Bundle.md)! | extra values, or [Bundle.EMPTY](../android.os/Bundle.md). Never`null`. |
 
 ### setExtras
 
@@ -658,7 +658,7 @@ open fun setExtras(extras: Bundle!): Unit
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `extras` | [Bundle](../android/os/Bundle.md)!: [Bundle](../android/os/Bundle.md) to set, or null to set an empty bundle. |
+| `extras` | [Bundle](../android.os/Bundle.md)!: [Bundle](../android.os/Bundle.md) to set, or null to set an empty bundle. |
 
 ### setNotificationUri
 
@@ -673,8 +673,8 @@ open fun setNotificationUri(
 
 | Parameters ||
 |-------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `cr` | [ContentResolver](../android/content/ContentResolver.md)!:The content resolver from the caller's context. The listener attached to this resolver will be notified. |
-| `uri` | [Uri](../android/net/Uri.md)!:The content URI to watch. |
+| `cr` | [ContentResolver](../android.content/ContentResolver.md)!:The content resolver from the caller's context. The listener attached to this resolver will be notified. |
+| `uri` | [Uri](../android.net/Uri.md)!:The content URI to watch. |
 
 ### setNotificationUris
 
@@ -689,8 +689,8 @@ open fun setNotificationUris(
 
 | Parameters ||
 |--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `cr` | [ContentResolver](../android/content/ContentResolver.md):The content resolver from the caller's context. The listener attached to this resolver will be notified. This value cannot be`null`. |
-| `uris` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Uri](../android/net/Uri.md)!\>:The content URIs to watch. This value cannot be`null`. |
+| `cr` | [ContentResolver](../android.content/ContentResolver.md):The content resolver from the caller's context. The listener attached to this resolver will be notified. This value cannot be`null`. |
+| `uris` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Uri](../android.net/Uri.md)!\>:The content URIs to watch. This value cannot be`null`. |
 
 ### unregisterContentObserver
 
@@ -702,7 +702,7 @@ open fun unregisterContentObserver(observer: ContentObserver!): Unit
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------|
-| `observer` | [ContentObserver](../android/database/ContentObserver.md)!:the object to unregister. |
+| `observer` | [ContentObserver](ContentObserver.md)!:the object to unregister. |
 
 ### unregisterDataSetObserver
 
@@ -714,4 +714,4 @@ open fun unregisterDataSetObserver(observer: DataSetObserver!): Unit
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------|
-| `observer` | [DataSetObserver](../android/database/DataSetObserver.md)!:the object to unregister. |
+| `observer` | [DataSetObserver](DataSetObserver.md)!:the object to unregister. |

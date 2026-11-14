@@ -4,6 +4,6 @@
 
 ## Classes
 
-| [FileSystemProvider](../java/nio/file/spi/FileSystemProvider.md) | Service-provider class for file systems. |
+| [FileSystemProvider](FileSystemProvider.md) | Service-provider class for file systems. |
 | --- | --- |
-| [FileTypeDetector](../java/nio/file/spi/FileTypeDetector.md) | A file type detector for probing a file to guess its file type. |
+| [FileTypeDetector](FileTypeDetector.md) | A file type detector for probing a file to guess its file type. |

@@ -13,7 +13,7 @@ interface P2pStateListener
 
 | [android.net.wifi.p2p.WifiP2pManager.P2pStateListener](../android/net/wifi/p2p/WifiP2pManager.P2pStateListener.md) |
 
-Interface for callback invocation when p2p state is available in response to [requestP2pState](../android/net/wifi/p2p/WifiP2pManager.md)).
+Interface for callback invocation when p2p state is available in response to [requestP2pState](WifiP2pManager.md)).
 
 ## Summary
 
@@ -35,9 +35,9 @@ The requested p2p state is available.
 
 | Parameters ||
 |---------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `state` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Wi-Fi p2p state Value is [android.net.wifi.p2p.WifiP2pManager#WIFI_P2P_STATE_DISABLED](../android/net/wifi/p2p/WifiP2pManager.md), or [android.net.wifi.p2p.WifiP2pManager#WIFI_P2P_STATE_ENABLED](../android/net/wifi/p2p/WifiP2pManager.md) |
+| `state` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Wi-Fi p2p state Value is [android.net.wifi.p2p.WifiP2pManager#WIFI_P2P_STATE_DISABLED](WifiP2pManager.md), or [android.net.wifi.p2p.WifiP2pManager#WIFI_P2P_STATE_ENABLED](WifiP2pManager.md) |
 
 **See Also**
 
-- [#WIFI_P2P_STATE_DISABLED](../android/net/wifi/p2p/WifiP2pManager.md)
-- [#WIFI_P2P_STATE_ENABLED](../android/net/wifi/p2p/WifiP2pManager.md)
+- [#WIFI_P2P_STATE_DISABLED](WifiP2pManager.md)
+- [#WIFI_P2P_STATE_ENABLED](WifiP2pManager.md)

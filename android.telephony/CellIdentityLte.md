@@ -4,7 +4,7 @@ Added in [API level 17](https://developer.android.com/guide/topics/manifest/uses
 
 # CellIdentityLte
 
-Kotlin| [Java](../android/telephony/CellIdentityLte.md) 
+Kotlin| [Java](CellIdentityLte.md) 
 | --- | --- |
 
 ```
@@ -13,8 +13,8 @@ class CellIdentityLte : CellIdentity
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.telephony.CellIdentity](../android/telephony/CellIdentity.md) ||
-| | ↳ | [android.telephony.CellIdentityLte](../android/telephony/CellIdentityLte.md) |
+| ↳ | [android.telephony.CellIdentity](CellIdentity.md) ||
+| | ↳ | [android.telephony.CellIdentityLte](CellIdentityLte.md) |
 
 CellIdentity is to represent a unique LTE cell
 
@@ -22,40 +22,40 @@ CellIdentity is to represent a unique LTE cell
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android.os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android.os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android.os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/telephony/CellIdentityLte.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getAdditionalPlmns](../android/telephony/CellIdentityLte.md))`()` <br /> |
-| [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | [getBands](../android/telephony/CellIdentityLte.md))`()` Get bands of the cell Reference: 3GPP TS 36. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](CellIdentityLte.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getAdditionalPlmns](CellIdentityLte.md))`()` <br /> |
+| [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | [getBands](CellIdentityLte.md))`()` Get bands of the cell Reference: 3GPP TS 36. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBandwidth](../android/telephony/CellIdentityLte.md))`()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCi](../android/telephony/CellIdentityLte.md))`()` <br /> |
-| [ClosedSubscriberGroupInfo](../android/telephony/ClosedSubscriberGroupInfo.md)? | [getClosedSubscriberGroupInfo](../android/telephony/CellIdentityLte.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBandwidth](CellIdentityLte.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCi](CellIdentityLte.md))`()` <br /> |
+| [ClosedSubscriberGroupInfo](ClosedSubscriberGroupInfo.md)? | [getClosedSubscriberGroupInfo](CellIdentityLte.md))`()` <br /> |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEarfcn](../android/telephony/CellIdentityLte.md))`()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMcc](../android/telephony/CellIdentityLte.md))`()` <br /> |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getMccString](../android/telephony/CellIdentityLte.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEarfcn](CellIdentityLte.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMcc](CellIdentityLte.md))`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getMccString](CellIdentityLte.md))`()` <br /> |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMnc](../android/telephony/CellIdentityLte.md))`()` <br /> |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getMncString](../android/telephony/CellIdentityLte.md))`()` <br /> |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getMobileNetworkOperator](../android/telephony/CellIdentityLte.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMnc](CellIdentityLte.md))`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getMncString](CellIdentityLte.md))`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getMobileNetworkOperator](CellIdentityLte.md))`()` <br /> |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPci](../android/telephony/CellIdentityLte.md))`()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTac](../android/telephony/CellIdentityLte.md))`()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/telephony/CellIdentityLte.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPci](CellIdentityLte.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTac](CellIdentityLte.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](CellIdentityLte.md))`()` <br /> |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/telephony/CellIdentityLte.md))`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/telephony/CellIdentityLte.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Implement the Parcelable interface |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](CellIdentityLte.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](CellIdentityLte.md))`(`dest:` ` [Parcel](../android.os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Implement the Parcelable interface |
 
 | Inherited functions ||
 |---|---|
-| From class [CellIdentity](../android/telephony/CellIdentity.md) |------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/telephony/CellIdentity.md))`()` <br /> Implement the Parcelable interface <br /> | | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | [getOperatorAlphaLong](../android/telephony/CellIdentity.md))`()` <br /> | | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | [getOperatorAlphaShort](../android/telephony/CellIdentity.md))`()` <br /> | ||
+| From class [CellIdentity](CellIdentity.md) |------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](CellIdentity.md))`()` <br /> Implement the Parcelable interface <br /> | | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | [getOperatorAlphaLong](CellIdentity.md))`()` <br /> | | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | [getOperatorAlphaShort](CellIdentity.md))`()` <br /> | ||
 
 | Properties ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [CellIdentityLte](../android/telephony/CellIdentityLte.md)!\> | [CREATOR](../android/telephony/CellIdentityLte.md) Implement the Parcelable interface |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [CellIdentityLte](CellIdentityLte.md)!\> | [CREATOR](CellIdentityLte.md) Implement the Parcelable interface |
 
 ## Public methods
 
@@ -111,7 +111,7 @@ fun getBandwidth(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Cell bandwidth in kHz, [UNAVAILABLE](../android/telephony/CellInfo.md) if unavailable. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Cell bandwidth in kHz, [UNAVAILABLE](CellInfo.md) if unavailable. |
 
 ### getCi
 
@@ -123,7 +123,7 @@ fun getCi(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | 28-bit Cell Identity, [UNAVAILABLE](../android/telephony/CellInfo.md) if unavailable. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | 28-bit Cell Identity, [UNAVAILABLE](CellInfo.md) if unavailable. |
 
 ### getClosedSubscriberGroupInfo
 
@@ -135,7 +135,7 @@ fun getClosedSubscriberGroupInfo(): ClosedSubscriberGroupInfo?
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
-| [ClosedSubscriberGroupInfo](../android/telephony/ClosedSubscriberGroupInfo.md)? | closed subscriber group information about the cell if available, otherwise null. |
+| [ClosedSubscriberGroupInfo](ClosedSubscriberGroupInfo.md)? | closed subscriber group information about the cell if available, otherwise null. |
 
 ### getEarfcn
 
@@ -147,7 +147,7 @@ fun getEarfcn(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | 18-bit Absolute RF Channel Number, [UNAVAILABLE](../android/telephony/CellInfo.md) if unavailable. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | 18-bit Absolute RF Channel Number, [UNAVAILABLE](CellInfo.md) if unavailable. |
 
 ### getMcc
 
@@ -158,11 +158,11 @@ Deprecated in [API level 28](https://developer.android.com/guide/topics/manifest
 fun getMcc(): Int
 ```
 
-**Deprecated:** *Use [getMccString](../android/telephony/CellIdentityLte.md))instead.*
+**Deprecated:** *Use [getMccString](CellIdentityLte.md))instead.*
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | 3-digit Mobile Country Code, 0..999, [UNAVAILABLE](../android/telephony/CellInfo.md) if unavailable. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | 3-digit Mobile Country Code, 0..999, [UNAVAILABLE](CellInfo.md) if unavailable. |
 
 ### getMccString
 
@@ -185,11 +185,11 @@ Deprecated in [API level 28](https://developer.android.com/guide/topics/manifest
 fun getMnc(): Int
 ```
 
-**Deprecated:** *Use [getMncString](../android/telephony/CellIdentityLte.md))instead.*
+**Deprecated:** *Use [getMncString](CellIdentityLte.md))instead.*
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | 2 or 3-digit Mobile Network Code, 0..999, [UNAVAILABLE](../android/telephony/CellInfo.md) if unavailable. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | 2 or 3-digit Mobile Network Code, 0..999, [UNAVAILABLE](CellInfo.md) if unavailable. |
 
 ### getMncString
 
@@ -225,7 +225,7 @@ fun getPci(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Physical Cell Id 0..503, [UNAVAILABLE](../android/telephony/CellInfo.md) if unavailable. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Physical Cell Id 0..503, [UNAVAILABLE](CellInfo.md) if unavailable. |
 
 ### getTac
 
@@ -237,7 +237,7 @@ fun getTac(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | 16-bit Tracking Area Code, [UNAVAILABLE](../android/telephony/CellInfo.md) if unavailable. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | 16-bit Tracking Area Code, [UNAVAILABLE](CellInfo.md) if unavailable. |
 
 ### hashCode
 
@@ -278,8 +278,8 @@ Implement the Parcelable interface
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](../android/os/Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android.os/Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

@@ -8,7 +8,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 interface RowId
 ```
 
-| [java.sql.RowId](../java/sql/RowId.md) |
+| [java.sql.RowId](RowId.md) |
 
 The representation (mapping) in the Java programming language of an SQL ROWID value. An SQL ROWID is a built-in type, a value of which can be thought of as an address for its identified row in a database table. Whether that address is logical or, in any respects, physical is determined by its originating data source.
 
@@ -22,7 +22,7 @@ All methods on the`RowId`interface must be fully implemented if the JDBC driver 
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getBytes](../java/sql/RowId.md))`()` Returns an array of bytes representing the value of the SQL`ROWID`designated by this`java.sql.RowId`object. |
+| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getBytes](RowId.md))`()` Returns an array of bytes representing the value of the SQL`ROWID`designated by this`java.sql.RowId`object. |
 
 ## Public methods
 

@@ -4,7 +4,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 
 # ProxyFileDescriptorCallback
 
-Kotlin| [Java](../android/os/ProxyFileDescriptorCallback.md) 
+Kotlin| [Java](ProxyFileDescriptorCallback.md) 
 | --- | --- |
 
 ```
@@ -13,14 +13,14 @@ abstract class ProxyFileDescriptorCallback
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.os.ProxyFileDescriptorCallback](../android/os/ProxyFileDescriptorCallback.md) |
+| ↳ | [android.os.ProxyFileDescriptorCallback](ProxyFileDescriptorCallback.md) |
 
-Callback that handles file system requests from ProxyFileDescriptor. All callback methods except for onRelease should throw [android.system.ErrnoException](../android/system/ErrnoException.md) with proper errno on errors. See [errno(3)](http://man7.org/linux/man-pages/man3/errno.3.html) and [android.system.OsConstants](../android/system/OsConstants.md). Typical errnos are
+Callback that handles file system requests from ProxyFileDescriptor. All callback methods except for onRelease should throw [android.system.ErrnoException](../android.system/ErrnoException.md) with proper errno on errors. See [errno(3)](http://man7.org/linux/man-pages/man3/errno.3.html) and [android.system.OsConstants](../android.system/OsConstants.md). Typical errnos are
 
-- [android.system.OsConstants#EIO](../android/system/OsConstants.md) for general I/O issues
-- [android.system.OsConstants#ENOENT](../android/system/OsConstants.md) when the file is not found
-- [android.system.OsConstants#EBADF](../android/system/OsConstants.md) if the file doesn't allow read/write operations based on how it was opened. (For example, trying to write a file that was opened read-only.)
-- [android.system.OsConstants#ENOSPC](../android/system/OsConstants.md) if you cannot handle a write operation to space/quota limitations.
+- [android.system.OsConstants#EIO](../android.system/OsConstants.md) for general I/O issues
+- [android.system.OsConstants#ENOENT](../android.system/OsConstants.md) when the file is not found
+- [android.system.OsConstants#EBADF](../android.system/OsConstants.md) if the file doesn't allow read/write operations based on how it was opened. (For example, trying to write a file that was opened read-only.)
+- [android.system.OsConstants#ENOSPC](../android.system/OsConstants.md) if you cannot handle a write operation to space/quota limitations.
 
 <br />
 
@@ -28,16 +28,16 @@ Callback that handles file system requests from ProxyFileDescriptor. All callbac
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ProxyFileDescriptorCallback](../android/os/ProxyFileDescriptorCallback.md))`()` <br /> |
+| [ProxyFileDescriptorCallback](ProxyFileDescriptorCallback.md))`()` <br /> |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onFsync](../android/os/ProxyFileDescriptorCallback.md))`()` Ensures all the written data are stored in permanent storage device. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [onGetSize](../android/os/ProxyFileDescriptorCallback.md))`()` Returns size of bytes provided by the file descriptor. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [onRead](../android/os/ProxyFileDescriptorCallback.md))`(`offset:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `data:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Provides bytes read from file descriptor. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onFsync](ProxyFileDescriptorCallback.md))`()` Ensures all the written data are stored in permanent storage device. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [onGetSize](ProxyFileDescriptorCallback.md))`()` Returns size of bytes provided by the file descriptor. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [onRead](ProxyFileDescriptorCallback.md))`(`offset:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `data:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Provides bytes read from file descriptor. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onRelease](../android/os/ProxyFileDescriptorCallback.md))`()` Invoked after the file is closed. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [onWrite](../android/os/ProxyFileDescriptorCallback.md))`(`offset:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `data:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Handles bytes written to file descriptor. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onRelease](ProxyFileDescriptorCallback.md))`()` Invoked after the file is closed. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [onWrite](ProxyFileDescriptorCallback.md))`(`offset:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `data:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Handles bytes written to file descriptor. |
 
 ## Public constructors
 

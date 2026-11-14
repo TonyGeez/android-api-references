@@ -4,7 +4,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 
 # PatternPathMotion
 
-Kotlin| [Java](../android/transition/PatternPathMotion.md) 
+Kotlin| [Java](PatternPathMotion.md) 
 | --- | --- |
 
 ```
@@ -13,8 +13,8 @@ open class PatternPathMotion : PathMotion
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.transition.PathMotion](../android/transition/PathMotion.md) ||
-| | ↳ | [android.transition.PatternPathMotion](../android/transition/PatternPathMotion.md) |
+| ↳ | [android.transition.PathMotion](PathMotion.md) ||
+| | ↳ | [android.transition.PatternPathMotion](PatternPathMotion.md) |
 
 A PathMotion that takes a Path pattern and applies it to the separation between two points. The starting point of the Path will be moved to the origin and the end point will be scaled and rotated so that it matches with the target end point.
 
@@ -30,15 +30,15 @@ This may be used in XML as an element inside a transition.
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [PatternPathMotion](../android/transition/PatternPathMotion.md))`()` Constructs a PatternPathMotion with a straight-line pattern. |
-| [PatternPathMotion](../android/transition/PatternPathMotion.md))`(`context:` ` [Context](../android/content/Context.md)!`, `attrs:` ` [AttributeSet](../android/util/AttributeSet.md)!`)` <br /> |
-| [PatternPathMotion](../android/transition/PatternPathMotion.md))`(`patternPath:` ` [Path](../android/graphics/Path.md)!`)` Creates a PatternPathMotion with the Path defining a pattern of motion between two coordinates. |
+| [PatternPathMotion](PatternPathMotion.md))`()` Constructs a PatternPathMotion with a straight-line pattern. |
+| [PatternPathMotion](PatternPathMotion.md))`(`context:` ` [Context](../android.content/Context.md)!`, `attrs:` ` [AttributeSet](../android.util/AttributeSet.md)!`)` <br /> |
+| [PatternPathMotion](PatternPathMotion.md))`(`patternPath:` ` [Path](../android.graphics/Path.md)!`)` Creates a PatternPathMotion with the Path defining a pattern of motion between two coordinates. |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Path](../android/graphics/Path.md)! | [getPath](../android/transition/PatternPathMotion.md))`(`startX:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `startY:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `endX:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `endY:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` <br /> |
-| open [Path](../android/graphics/Path.md)! | [getPatternPath](../android/transition/PatternPathMotion.md))`()` Returns the Path defining a pattern of motion between two coordinates. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPatternPath](../android/transition/PatternPathMotion.md))`(`patternPath:` ` [Path](../android/graphics/Path.md)!`)` Sets the Path defining a pattern of motion between two coordinates. |
+| open [Path](../android.graphics/Path.md)! | [getPath](PatternPathMotion.md))`(`startX:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `startY:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `endX:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `endY:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` <br /> |
+| open [Path](../android.graphics/Path.md)! | [getPatternPath](PatternPathMotion.md))`()` Returns the Path defining a pattern of motion between two coordinates. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPatternPath](PatternPathMotion.md))`(`patternPath:` ` [Path](../android.graphics/Path.md)!`)` Sets the Path defining a pattern of motion between two coordinates. |
 | --- | --- |
 
 ## Public constructors
@@ -75,7 +75,7 @@ Creates a PatternPathMotion with the Path defining a pattern of motion between t
 
 | Parameters ||
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| `patternPath` | [Path](../android/graphics/Path.md)!:A Path to be used as a pattern for two-dimensional motion. |
+| `patternPath` | [Path](../android.graphics/Path.md)!:A Path to be used as a pattern for two-dimensional motion. |
 
 ## Public methods
 
@@ -102,7 +102,7 @@ open fun getPath(
 
 | Return ||
 |-------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Path](../android/graphics/Path.md)! | A Path along which the points should be interpolated. The returned Path must start at point`(startX, startY)`, typically using [android.graphics.Path#moveTo(float, float)](../android/graphics/Path.md))and end at`(endX, endY)`. |
+| [Path](../android.graphics/Path.md)! | A Path along which the points should be interpolated. The returned Path must start at point`(startX, startY)`, typically using [android.graphics.Path#moveTo(float, float)](../android.graphics/Path.md))and end at`(endX, endY)`. |
 
 ### getPatternPath
 
@@ -116,7 +116,7 @@ Returns the Path defining a pattern of motion between two coordinates. The patte
 
 | Return ||
 |-------------------------------------------------------------------------------------|----------------------------------------------------------------|
-| [Path](../android/graphics/Path.md)! | the Path defining a pattern of motion between two coordinates. |
+| [Path](../android.graphics/Path.md)! | the Path defining a pattern of motion between two coordinates. |
 
 ### setPatternPath
 
@@ -130,4 +130,4 @@ Sets the Path defining a pattern of motion between two coordinates. The pattern 
 
 | Parameters ||
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| `patternPath` | [Path](../android/graphics/Path.md)!:A Path to be used as a pattern for two-dimensional motion. |
+| `patternPath` | [Path](../android.graphics/Path.md)!:A Path to be used as a pattern for two-dimensional motion. |

@@ -8,9 +8,9 @@ abstract class Charset : Comparable<Charset!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.nio.charset.Charset](../java/nio/charset/Charset.md) |
+| ↳ | [java.nio.charset.Charset](Charset.md) |
 
-A named mapping between sequences of sixteen-bit Unicode [code units](../java/lang/Character.md) and sequences of bytes. This class defines methods for creating decoders and encoders and for retrieving the various names associated with a charset. Instances of this class are immutable.
+A named mapping between sequences of sixteen-bit Unicode [code units](../java.lang/Character.md) and sequences of bytes. This class defines methods for creating decoders and encoders and for retrieving the various names associated with a charset. Instances of this class are immutable.
 
 This class also defines static methods for testing whether a particular charset is supported, for locating charset instances by name, and for constructing a map that contains every charset for which support is available in the current Java virtual machine. Support for new charsets can be added via the service-provider interface defined in the `https://developer.android.com/reference/kotlin/java/nio/charset/spi/CharsetProvider` class.
 
@@ -92,31 +92,31 @@ The native character encoding of the Java programming language is UTF-16. A char
 | Public methods ||
 |---|---|
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/nio/charset/Charset#aliases()()` Returns a set containing this charset's aliases. |
-| open static [SortedMap](../java/util/SortedMap.md)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Charset](../java/nio/charset/Charset.md)!\>! | `https://developer.android.com/reference/kotlin/java/nio/charset/Charset#availableCharsets()()` Constructs a sorted map from canonical charset names to charset objects. |
+| open static [SortedMap](../java.util/SortedMap.md)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Charset](Charset.md)!\>! | `https://developer.android.com/reference/kotlin/java/nio/charset/Charset#availableCharsets()()` Constructs a sorted map from canonical charset names to charset objects. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/nio/charset/Charset#canEncode()()` Tells whether or not this charset supports encoding. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/nio/charset/Charset#compareTo(java.nio.charset.Charset)(other: https://developer.android.com/reference/kotlin/java/nio/charset/Charset#!)` Compares this charset to another. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/nio/charset/Charset#contains(java.nio.charset.Charset)(cs: https://developer.android.com/reference/kotlin/java/nio/charset/Charset#!)` Tells whether or not this charset contains the given charset. |
-| [CharBuffer](../java/nio/CharBuffer.md)! | `https://developer.android.com/reference/kotlin/java/nio/charset/Charset#decode(java.nio.ByteBuffer)(bb: https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#!)` Convenience method that decodes bytes in this charset into Unicode characters. |
+| [CharBuffer](../java.nio/CharBuffer.md)! | `https://developer.android.com/reference/kotlin/java/nio/charset/Charset#decode(java.nio.ByteBuffer)(bb: https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#!)` Convenience method that decodes bytes in this charset into Unicode characters. |
 | --- | --- |
-| open static [Charset](../java/nio/charset/Charset.md)! | `https://developer.android.com/reference/kotlin/java/nio/charset/Charset#defaultCharset()()` Returns the default charset of this Java virtual machine. |
+| open static [Charset](Charset.md)! | `https://developer.android.com/reference/kotlin/java/nio/charset/Charset#defaultCharset()()` Returns the default charset of this Java virtual machine. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/nio/charset/Charset#displayName()()` Returns this charset's human-readable name for the default locale. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/nio/charset/Charset#displayName(java.util.Locale)(locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Returns this charset's human-readable name for the given locale. |
 | --- | --- |
-| [ByteBuffer](../java/nio/ByteBuffer.md)! | `https://developer.android.com/reference/kotlin/java/nio/charset/Charset#encode(kotlin.String)(str: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Convenience method that encodes a string into bytes in this charset. |
-| [ByteBuffer](../java/nio/ByteBuffer.md)! | `https://developer.android.com/reference/kotlin/java/nio/charset/Charset#encode(java.nio.CharBuffer)(cb: https://developer.android.com/reference/kotlin/java/nio/CharBuffer.html#!)` Convenience method that encodes Unicode characters into bytes in this charset. |
+| [ByteBuffer](../java.nio/ByteBuffer.md)! | `https://developer.android.com/reference/kotlin/java/nio/charset/Charset#encode(kotlin.String)(str: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Convenience method that encodes a string into bytes in this charset. |
+| [ByteBuffer](../java.nio/ByteBuffer.md)! | `https://developer.android.com/reference/kotlin/java/nio/charset/Charset#encode(java.nio.CharBuffer)(cb: https://developer.android.com/reference/kotlin/java/nio/CharBuffer.html#!)` Convenience method that encodes Unicode characters into bytes in this charset. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/nio/charset/Charset#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Tells whether or not this object is equal to another. |
 | --- | --- |
-| open static [Charset](../java/nio/charset/Charset.md)! | `https://developer.android.com/reference/kotlin/java/nio/charset/Charset#forName(kotlin.String)(charsetName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns a charset object for the named charset. |
-| open static [Charset](../java/nio/charset/Charset.md)! | `https://developer.android.com/reference/kotlin/java/nio/charset/Charset#forName(kotlin.String,%20java.nio.charset.Charset)(charsetName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, fallback: https://developer.android.com/reference/kotlin/java/nio/charset/Charset#!)` Returns a charset object for the named charset. |
+| open static [Charset](Charset.md)! | `https://developer.android.com/reference/kotlin/java/nio/charset/Charset#forName(kotlin.String)(charsetName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns a charset object for the named charset. |
+| open static [Charset](Charset.md)! | `https://developer.android.com/reference/kotlin/java/nio/charset/Charset#forName(kotlin.String,%20java.nio.charset.Charset)(charsetName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, fallback: https://developer.android.com/reference/kotlin/java/nio/charset/Charset#!)` Returns a charset object for the named charset. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/nio/charset/Charset#hashCode()()` Computes a hashcode for this charset. |
 | --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/nio/charset/Charset#isRegistered()()` Tells whether or not this charset is registered in the [IANA Charset Registry](http://www.iana.org/assignments/character-sets). |
 | open static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/nio/charset/Charset#isSupported(kotlin.String)(charsetName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Tells whether the named charset is supported. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/nio/charset/Charset#name()()` Returns this charset's canonical name. |
 | --- | --- |
-| abstract [CharsetDecoder](../java/nio/charset/CharsetDecoder.md)! | `https://developer.android.com/reference/kotlin/java/nio/charset/Charset#newDecoder()()` Constructs a new decoder for this charset. |
-| abstract [CharsetEncoder](../java/nio/charset/CharsetEncoder.md)! | `https://developer.android.com/reference/kotlin/java/nio/charset/Charset#newEncoder()()` Constructs a new encoder for this charset. |
+| abstract [CharsetDecoder](CharsetDecoder.md)! | `https://developer.android.com/reference/kotlin/java/nio/charset/Charset#newDecoder()()` Constructs a new decoder for this charset. |
+| abstract [CharsetEncoder](CharsetEncoder.md)! | `https://developer.android.com/reference/kotlin/java/nio/charset/Charset#newEncoder()()` Constructs a new encoder for this charset. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/nio/charset/Charset#toString()()` Returns a string describing this charset. |
 | --- | --- |
 
@@ -241,7 +241,7 @@ This method computes an approximation of the containment relation: If it returns
 
 | Parameters ||
 |---|---|
-| `cs` | [Charset](../java/nio/charset/Charset.md)!: The given charset |
+| `cs` | [Charset](Charset.md)!: The given charset |
 
 | Return ||
 |---|---|
@@ -271,7 +271,7 @@ This method always replaces malformed-input and unmappable-character sequences w
 
 | Parameters ||
 |---|---|
-| `bb` | [ByteBuffer](../java/nio/ByteBuffer.md)!: The byte buffer to be decoded |
+| `bb` | [ByteBuffer](../java.nio/ByteBuffer.md)!: The byte buffer to be decoded |
 
 | Return ||
 |---|---|
@@ -323,7 +323,7 @@ The default implementation of this method simply returns this charset's canonica
 
 | Parameters ||
 |---|---|
-| `locale` | [Locale](../java/util/Locale.md)!: The locale for which the display name is to be retrieved |
+| `locale` | [Locale](../java.util/Locale.md)!: The locale for which the display name is to be retrieved |
 
 | Return ||
 |---|---|
@@ -377,7 +377,7 @@ This method always replaces malformed-input and unmappable-character sequences w
 
 | Parameters ||
 |---|---|
-| `cb` | [CharBuffer](../java/nio/CharBuffer.md)!: The char buffer to be encoded |
+| `cb` | [CharBuffer](../java.nio/CharBuffer.md)!: The char buffer to be encoded |
 
 | Return ||
 |---|---|
@@ -444,7 +444,7 @@ Returns a charset object for the named charset. If the charset object for the na
 | Parameters ||
 |---|---|
 | `charsetName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The name of the requested charset; may be either a canonical name or an alias |
-| `fallback` | [Charset](../java/nio/charset/Charset.md)!: fallback charset in case the charset object for the named charset is not available or `charsetName` is not a legal charset name. May be `null` |
+| `fallback` | [Charset](Charset.md)!: fallback charset in case the charset object for the named charset is not available or `charsetName` is not a legal charset name. May be `null` |
 
 | Return ||
 |---|---|

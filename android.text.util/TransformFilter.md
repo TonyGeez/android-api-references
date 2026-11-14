@@ -19,7 +19,7 @@ TransformFilter enables client code to have more control over how matched patter
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [transformUrl](../android/text/util/Linkify.TransformFilter.md))`(`match:` ` [Matcher](../java/util/regex/Matcher.md)!`, `url:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Examines the matched text and either passes it through or uses the data in the Matcher state to produce a replacement. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [transformUrl](../android/text/util/Linkify.TransformFilter.md))`(`match:` ` [Matcher](../java.util.regex/Matcher.md)!`, `url:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Examines the matched text and either passes it through or uses the data in the Matcher state to produce a replacement. |
 
 ## Public methods
 
@@ -38,7 +38,7 @@ Examines the matched text and either passes it through or uses the data in the M
 
 | Parameters ||
 |---------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| `match` | [Matcher](../java/util/regex/Matcher.md)!:The regex matcher state that found this URL text |
+| `match` | [Matcher](../java.util.regex/Matcher.md)!:The regex matcher state that found this URL text |
 | `url` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The text that was matched |
 
 | Return ||

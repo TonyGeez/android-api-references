@@ -10,37 +10,37 @@ class OptionalInt
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.util.OptionalInt](../java/util/OptionalInt.md) |
+| ↳ | [java.util.OptionalInt](OptionalInt.md) |
 
 A container object which may or may not contain an`int`value. If a value is present,`isPresent()`returns`true`. If no value is present, the object is considered*empty* and`isPresent()`returns`false`.
 
-Additional methods that depend on the presence or absence of a contained value are provided, such as [orElse()](../java/util/OptionalInt.md))(returns a default value if no value is present) and [ifPresent()](../java/util/OptionalInt.md))(performs an action if a value is present).
+Additional methods that depend on the presence or absence of a contained value are provided, such as [orElse()](OptionalInt.md))(returns a default value if no value is present) and [ifPresent()](OptionalInt.md))(performs an action if a value is present).
 
-This is a [value-based](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/doc-files/ValueBased.html) class; programmers should treat instances that are [equal](../java/util/OptionalInt.md))as interchangeable and should not use instances for synchronization, or unpredictable behavior may occur. For example, in a future release, synchronization may fail.
+This is a [value-based](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/doc-files/ValueBased.html) class; programmers should treat instances that are [equal](OptionalInt.md))as interchangeable and should not use instances for synchronization, or unpredictable behavior may occur. For example, in a future release, synchronization may fail.
 
 ## Summary
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [OptionalInt](../java/util/OptionalInt.md)! | [empty](../java/util/OptionalInt.md))`()` Returns an empty`OptionalInt`instance. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/util/OptionalInt.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this`OptionalInt`. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAsInt](../java/util/OptionalInt.md))`()` If a value is present, returns the value, otherwise throws`NoSuchElementException`. |
+| static [OptionalInt](OptionalInt.md)! | [empty](OptionalInt.md))`()` Returns an empty`OptionalInt`instance. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](OptionalInt.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this`OptionalInt`. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAsInt](OptionalInt.md))`()` If a value is present, returns the value, otherwise throws`NoSuchElementException`. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/util/OptionalInt.md))`()` Returns the hash code of the value, if present, otherwise`0`(zero) if no value is present. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [ifPresent](../java/util/OptionalInt.md))`(`action:` ` [IntConsumer](../java/util/function/IntConsumer.md)!`)` If a value is present, performs the given action with the value, otherwise does nothing. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [ifPresentOrElse](../java/util/OptionalInt.md))`(`action:` ` [IntConsumer](../java/util/function/IntConsumer.md)!`, `emptyAction:` ` [Runnable](../java/lang/Runnable.md)!`)` If a value is present, performs the given action with the value, otherwise performs the given empty-based action. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](OptionalInt.md))`()` Returns the hash code of the value, if present, otherwise`0`(zero) if no value is present. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [ifPresent](OptionalInt.md))`(`action:` ` [IntConsumer](../java.util.function/IntConsumer.md)!`)` If a value is present, performs the given action with the value, otherwise does nothing. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [ifPresentOrElse](OptionalInt.md))`(`action:` ` [IntConsumer](../java.util.function/IntConsumer.md)!`, `emptyAction:` ` [Runnable](../java.lang/Runnable.md)!`)` If a value is present, performs the given action with the value, otherwise performs the given empty-based action. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](../java/util/OptionalInt.md))`()` If a value is not present, returns`true`, otherwise`false`. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPresent](../java/util/OptionalInt.md))`()` If a value is present, returns`true`, otherwise`false`. |
-| static [OptionalInt](../java/util/OptionalInt.md)! | [of](../java/util/OptionalInt.md))`(`value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns an`OptionalInt`describing the given value. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](OptionalInt.md))`()` If a value is not present, returns`true`, otherwise`false`. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPresent](OptionalInt.md))`()` If a value is present, returns`true`, otherwise`false`. |
+| static [OptionalInt](OptionalInt.md)! | [of](OptionalInt.md))`(`value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns an`OptionalInt`describing the given value. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [orElse](../java/util/OptionalInt.md))`(`other:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` If a value is present, returns the value, otherwise returns`other`. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [orElseGet](../java/util/OptionalInt.md))`(`supplier:` ` [IntSupplier](../java/util/function/IntSupplier.md)!`)` If a value is present, returns the value, otherwise returns the result produced by the supplying function. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [orElseThrow](../java/util/OptionalInt.md))`()` If a value is present, returns the value, otherwise throws`NoSuchElementException`. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [orElse](OptionalInt.md))`(`other:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` If a value is present, returns the value, otherwise returns`other`. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [orElseGet](OptionalInt.md))`(`supplier:` ` [IntSupplier](../java.util.function/IntSupplier.md)!`)` If a value is present, returns the value, otherwise returns the result produced by the supplying function. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [orElseThrow](OptionalInt.md))`()` If a value is present, returns the value, otherwise throws`NoSuchElementException`. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [orElseThrow](../java/util/OptionalInt.md))`(`exceptionSupplier:` ` [Supplier](../java/util/function/Supplier.md)<out` `X>!`)` If a value is present, returns the value, otherwise throws an exception produced by the exception supplying function. |
-| [IntStream](../java/util/stream/IntStream.md)! | [stream](../java/util/OptionalInt.md))`()` If a value is present, returns a sequential [IntStream](../java/util/stream/IntStream.md) containing only that value, otherwise returns an empty`IntStream`. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/util/OptionalInt.md))`()` Returns a non-empty string representation of this`OptionalInt`suitable for debugging. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [orElseThrow](OptionalInt.md))`(`exceptionSupplier:` ` [Supplier](../java.util.function/Supplier.md)<out` `X>!`)` If a value is present, returns the value, otherwise throws an exception produced by the exception supplying function. |
+| [IntStream](../java.util.stream/IntStream.md)! | [stream](OptionalInt.md))`()` If a value is present, returns a sequential [IntStream](../java.util.stream/IntStream.md) containing only that value, otherwise returns an empty`IntStream`. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](OptionalInt.md))`()` Returns a non-empty string representation of this`OptionalInt`suitable for debugging. |
 | --- | --- |
 
 ## Public methods
@@ -57,7 +57,7 @@ Returns an empty`OptionalInt`instance. No value is present for this`OptionalInt`
 
 | Return ||
 |---------------------------------------------------------------------------------------|-----------------------|
-| [OptionalInt](../java/util/OptionalInt.md)! | an empty`OptionalInt` |
+| [OptionalInt](OptionalInt.md)! | an empty`OptionalInt` |
 
 ### equals
 
@@ -127,7 +127,7 @@ If a value is present, performs the given action with the value, otherwise does 
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| `action` | [IntConsumer](../java/util/function/IntConsumer.md)!:the action to be performed, if a value is present |
+| `action` | [IntConsumer](../java.util.function/IntConsumer.md)!:the action to be performed, if a value is present |
 
 | Exceptions ||
 |----------------------------------|---------------------------------------------------|
@@ -148,8 +148,8 @@ If a value is present, performs the given action with the value, otherwise perfo
 
 | Parameters ||
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| `action` | [IntConsumer](../java/util/function/IntConsumer.md)!:the action to be performed, if a value is present |
-| `emptyAction` | [Runnable](../java/lang/Runnable.md)!:the empty-based action to be performed, if no value is present |
+| `action` | [IntConsumer](../java.util.function/IntConsumer.md)!:the action to be performed, if a value is present |
+| `emptyAction` | [Runnable](../java.lang/Runnable.md)!:the empty-based action to be performed, if no value is present |
 
 | Exceptions ||
 |----------------------------------|------------------------------------------------------------------------------------------------------------------------|
@@ -199,7 +199,7 @@ Returns an`OptionalInt`describing the given value.
 
 | Return ||
 |---------------------------------------------------------------------------------------|---------------------------------------|
-| [OptionalInt](../java/util/OptionalInt.md)! | an`OptionalInt`with the value present |
+| [OptionalInt](OptionalInt.md)! | an`OptionalInt`with the value present |
 
 ### orElse
 
@@ -231,7 +231,7 @@ If a value is present, returns the value, otherwise returns the result produced 
 
 | Parameters ||
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `supplier` | [IntSupplier](../java/util/function/IntSupplier.md)!:the supplying function that produces a value to be returned |
+| `supplier` | [IntSupplier](../java.util.function/IntSupplier.md)!:the supplying function that produces a value to be returned |
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------|
@@ -272,7 +272,7 @@ If a value is present, returns the value, otherwise throws an exception produced
 | Parameters ||
 |---------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `<X>` | Type of the exception to be thrown |
-| `exceptionSupplier` | [Supplier](../java/util/function/Supplier.md)\<outX\>!:the supplying function that produces an exception to be thrown |
+| `exceptionSupplier` | [Supplier](../java.util.function/Supplier.md)\<outX\>!:the supplying function that produces an exception to be thrown |
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------|
@@ -291,11 +291,11 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 fun stream(): IntStream!
 ```
 
-If a value is present, returns a sequential [IntStream](../java/util/stream/IntStream.md) containing only that value, otherwise returns an empty`IntStream`.
+If a value is present, returns a sequential [IntStream](../java.util.stream/IntStream.md) containing only that value, otherwise returns an empty`IntStream`.
 
 | Return ||
 |-----------------------------------------------------------------------------------------|-------------------------------------|
-| [IntStream](../java/util/stream/IntStream.md)! | the optional value as an`IntStream` |
+| [IntStream](../java.util.stream/IntStream.md)! | the optional value as an`IntStream` |
 
 ### toString
 

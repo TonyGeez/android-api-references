@@ -19,7 +19,7 @@ Retrieves images for HTML \<img\> tags.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Drawable](../android/graphics/drawable/Drawable.md)! | [getDrawable](../android/text/Html.ImageGetter.md))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` This method is called when the HTML parser encounters an \<img\> tag. |
+| abstract [Drawable](../android.graphics.drawable/Drawable.md)! | [getDrawable](../android/text/Html.ImageGetter.md))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` This method is called when the HTML parser encounters an \<img\> tag. |
 
 ## Public methods
 

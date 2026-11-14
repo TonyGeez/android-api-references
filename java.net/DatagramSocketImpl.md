@@ -8,7 +8,7 @@ abstract class DatagramSocketImpl : SocketOptions
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.net.DatagramSocketImpl](../java/net/DatagramSocketImpl.md) |
+| ↳ | [java.net.DatagramSocketImpl](DatagramSocketImpl.md) |
 
 Abstract datagram and multicast socket implementation base class.
 
@@ -30,7 +30,7 @@ Abstract datagram and multicast socket implementation base class.
 | --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/net/DatagramSocketImpl#create()()` Creates a datagram socket. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/net/DatagramSocketImpl#disconnect()()` Disconnects a datagram socket from its remote destination. |
-| open [FileDescriptor](../java/io/FileDescriptor.md)! | `https://developer.android.com/reference/kotlin/java/net/DatagramSocketImpl#getFileDescriptor()()` Gets the datagram socket file descriptor. |
+| open [FileDescriptor](../java.io/FileDescriptor.md)! | `https://developer.android.com/reference/kotlin/java/net/DatagramSocketImpl#getFileDescriptor()()` Gets the datagram socket file descriptor. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/DatagramSocketImpl#getLocalPort()()` Gets the local port. |
 | open T | `https://developer.android.com/reference/kotlin/java/net/DatagramSocketImpl#getOption(java.net.SocketOption)(name: https://developer.android.com/reference/kotlin/java/net/SocketOption<T>!)` Called to get a socket option. |
@@ -52,7 +52,7 @@ Abstract datagram and multicast socket implementation base class.
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/net/DatagramSocketImpl#setTTL(kotlin.Byte)(ttl: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)` Set the TTL (time-to-live) option. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/net/DatagramSocketImpl#setTimeToLive(kotlin.Int)(ttl: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the TTL (time-to-live) option. |
 | --- | --- |
-| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [SocketOption](../java/net/SocketOption.md)\<\*\>!\>! | `https://developer.android.com/reference/kotlin/java/net/DatagramSocketImpl#supportedOptions()()` Returns a set of SocketOptions supported by this impl and by this impl's socket (DatagramSocket or MulticastSocket) |
+| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [SocketOption](SocketOption.md)\<\*\>!\>! | `https://developer.android.com/reference/kotlin/java/net/DatagramSocketImpl#supportedOptions()()` Returns a set of SocketOptions supported by this impl and by this impl's socket (DatagramSocket or MulticastSocket) |
 
 | Inherited functions ||
 |---|---|
@@ -60,7 +60,7 @@ Abstract datagram and multicast socket implementation base class.
 
 | Properties ||
 |---|---|
-| [FileDescriptor](../java/io/FileDescriptor.md)! | `https://developer.android.com/reference/kotlin/java/net/DatagramSocketImpl#fd:java.io.FileDescriptor` The file descriptor object. |
+| [FileDescriptor](../java.io/FileDescriptor.md)! | `https://developer.android.com/reference/kotlin/java/net/DatagramSocketImpl#fd:java.io.FileDescriptor` The file descriptor object. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/DatagramSocketImpl#localPort:kotlin.Int` The local port number. |
 
 ## Public constructors
@@ -91,7 +91,7 @@ Binds a datagram socket to a local port and address.
 | Parameters ||
 |---|---|
 | `lport` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the local port |
-| `laddr` | [InetAddress](../java/net/InetAddress.md)!: the local address |
+| `laddr` | [InetAddress](InetAddress.md)!: the local address |
 
 | Exceptions ||
 |---|---|
@@ -124,7 +124,7 @@ If the remote destination to which the socket is connected does not exist, or is
 
 | Parameters ||
 |---|---|
-| `address` | [InetAddress](../java/net/InetAddress.md)!: the remote InetAddress to connect to |
+| `address` | [InetAddress](InetAddress.md)!: the remote InetAddress to connect to |
 | `port` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the remote port number |
 
 | Exceptions ||
@@ -196,7 +196,7 @@ Called to get a socket option.
 | Parameters ||
 |---|---|
 | `<T>` | The type of the socket option value |
-| `name` | [SocketOption](../java/net/SocketOption.md)\<T\>!: The socket option |
+| `name` | [SocketOption](SocketOption.md)\<T\>!: The socket option |
 
 | Return ||
 |---|---|
@@ -268,7 +268,7 @@ Join the multicast group.
 
 | Parameters ||
 |---|---|
-| `inetaddr` | [InetAddress](../java/net/InetAddress.md)!: multicast address to join. |
+| `inetaddr` | [InetAddress](InetAddress.md)!: multicast address to join. |
 
 | Exceptions ||
 |---|---|
@@ -289,8 +289,8 @@ Join the multicast group.
 
 | Parameters ||
 |---|---|
-| `mcastaddr` | [SocketAddress](../java/net/SocketAddress.md)!: address to join. |
-| `netIf` | [NetworkInterface](../java/net/NetworkInterface.md)!: specifies the local interface to receive multicast datagram packets |
+| `mcastaddr` | [SocketAddress](SocketAddress.md)!: address to join. |
+| `netIf` | [NetworkInterface](NetworkInterface.md)!: specifies the local interface to receive multicast datagram packets |
 
 | Exceptions ||
 |---|---|
@@ -308,7 +308,7 @@ Leave the multicast group.
 
 | Parameters ||
 |---|---|
-| `inetaddr` | [InetAddress](../java/net/InetAddress.md)!: multicast address to leave. |
+| `inetaddr` | [InetAddress](InetAddress.md)!: multicast address to leave. |
 
 | Exceptions ||
 |---|---|
@@ -329,8 +329,8 @@ Leave the multicast group.
 
 | Parameters ||
 |---|---|
-| `mcastaddr` | [SocketAddress](../java/net/SocketAddress.md)!: address to leave. |
-| `netIf` | [NetworkInterface](../java/net/NetworkInterface.md)!: specified the local interface to leave the group at |
+| `mcastaddr` | [SocketAddress](SocketAddress.md)!: address to leave. |
+| `netIf` | [NetworkInterface](NetworkInterface.md)!: specified the local interface to leave the group at |
 
 | Exceptions ||
 |---|---|
@@ -348,7 +348,7 @@ Peek at the packet to see who it is from. Updates the specified `InetAddress` to
 
 | Parameters ||
 |---|---|
-| `i` | [InetAddress](../java/net/InetAddress.md)!: an InetAddress object |
+| `i` | [InetAddress](InetAddress.md)!: an InetAddress object |
 
 | Return ||
 |---|---|
@@ -371,7 +371,7 @@ Peek at the packet to see who it is from. The data is copied into the specified 
 
 | Parameters ||
 |---|---|
-| `p` | [DatagramPacket](../java/net/DatagramPacket.md)!: the Packet Received. |
+| `p` | [DatagramPacket](DatagramPacket.md)!: the Packet Received. |
 
 | Return ||
 |---|---|
@@ -394,7 +394,7 @@ Receive the datagram packet.
 
 | Parameters ||
 |---|---|
-| `p` | [DatagramPacket](../java/net/DatagramPacket.md)!: the Packet Received. |
+| `p` | [DatagramPacket](DatagramPacket.md)!: the Packet Received. |
 
 | Exceptions ||
 |---|---|
@@ -413,7 +413,7 @@ Sends a datagram packet. The packet contains the data and the destination addres
 
 | Parameters ||
 |---|---|
-| `p` | [DatagramPacket](../java/net/DatagramPacket.md)!: the packet to be sent. |
+| `p` | [DatagramPacket](DatagramPacket.md)!: the packet to be sent. |
 
 | Exceptions ||
 |---|---|
@@ -436,7 +436,7 @@ Called to set a socket option.
 | Parameters ||
 |---|---|
 | `<T>` | The type of the socket option value |
-| `name` | [SocketOption](../java/net/SocketOption.md)\<T\>!: The socket option |
+| `name` | [SocketOption](SocketOption.md)\<T\>!: The socket option |
 | `value` | T: The value of the socket option. A value of `null` may be valid for some options. |
 | --- | --- |
 

@@ -6,7 +6,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface ParameterizedType : Type
 ```
 
-| [java.lang.reflect.ParameterizedType](../java/lang/reflect/ParameterizedType.md) |
+| [java.lang.reflect.ParameterizedType](ParameterizedType.md) |
 
 ParameterizedType represents a parameterized type such as Collection\<String\>.
 
@@ -18,9 +18,9 @@ Instances of classes that implement this interface must implement an equals() me
 
 | Public methods ||
 |---|---|
-| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Type](../java/lang/reflect/Type.md)!\> | `https://developer.android.com/reference/kotlin/java/lang/reflect/ParameterizedType#getActualTypeArguments()()` Returns an array of `Type` objects representing the actual type arguments to this type. |
-| abstract [Type](../java/lang/reflect/Type.md)? | `https://developer.android.com/reference/kotlin/java/lang/reflect/ParameterizedType#getOwnerType()()` Returns a `Type` object representing the type that this type is a member of. |
-| abstract [Type](../java/lang/reflect/Type.md) | `https://developer.android.com/reference/kotlin/java/lang/reflect/ParameterizedType#getRawType()()` Returns the `Type` object representing the class or interface that declared this type. |
+| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Type](Type.md)!\> | `https://developer.android.com/reference/kotlin/java/lang/reflect/ParameterizedType#getActualTypeArguments()()` Returns an array of `Type` objects representing the actual type arguments to this type. |
+| abstract [Type](Type.md)? | `https://developer.android.com/reference/kotlin/java/lang/reflect/ParameterizedType#getOwnerType()()` Returns a `Type` object representing the type that this type is a member of. |
+| abstract [Type](Type.md) | `https://developer.android.com/reference/kotlin/java/lang/reflect/ParameterizedType#getRawType()()` Returns the `Type` object representing the class or interface that declared this type. |
 | --- | --- |
 
 | Inherited functions ||

@@ -19,7 +19,7 @@ interface ExtensionsColumns
 
 | **This interface was deprecated in API level 5.**
 |
-| see [android.provider.ContactsContract](../android/provider/ContactsContract.md)
+| see [android.provider.ContactsContract](ContactsContract.md)
 
 ## Summary
 
@@ -38,7 +38,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val NAME: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)*
 
 The name of this extension. May not be null. There may be at most one row for each name.
 
@@ -54,7 +54,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val VALUE: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)*
 
 The value of this extension. May not be null.
 

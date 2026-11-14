@@ -10,7 +10,7 @@ class Void
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.lang.Void](../java/lang/Void.md) |
+| ↳ | [java.lang.Void](Void.md) |
 
 The`Void`class is an uninstantiable placeholder class to hold a reference to the`Class`object representing the Java keyword void.
 
@@ -18,7 +18,7 @@ The`Void`class is an uninstantiable placeholder class to hold a reference to the
 
 | Properties ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Class](../java/lang/Class.md)\< [Void](../java/lang/Void.md)!\>! | [TYPE](../java/lang/Void.md) The`Class`object representing the pseudo-type corresponding to the keyword`void`. |
+| static [Class](Class.md)\< [Void](Void.md)!\>! | [TYPE](Void.md) The`Class`object representing the pseudo-type corresponding to the keyword`void`. |
 
 ## Properties
 

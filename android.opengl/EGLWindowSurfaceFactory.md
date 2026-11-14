@@ -15,14 +15,14 @@ interface EGLWindowSurfaceFactory
 
 An interface for customizing the eglCreateWindowSurface and eglDestroySurface calls.
 
-This interface must be implemented by clients wishing to call [GLSurfaceView.setEGLWindowSurfaceFactory(EGLWindowSurfaceFactory)](../android/opengl/GLSurfaceView.md))
+This interface must be implemented by clients wishing to call [GLSurfaceView.setEGLWindowSurfaceFactory(EGLWindowSurfaceFactory)](GLSurfaceView.md))
 
 ## Summary
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [EGLSurface](../javax/microedition/khronos/egl/EGLSurface.md)! | [createWindowSurface](../android/opengl/GLSurfaceView.EGLWindowSurfaceFactory.md))`(`egl:` ` [EGL10](../javax/microedition/khronos/egl/EGL10.md)!`, `display:` ` [EGLDisplay](../javax/microedition/khronos/egl/EGLDisplay.md)!`, `config:` ` [EGLConfig](../javax/microedition/khronos/egl/EGLConfig.md)!`, `nativeWindow:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` <br /> |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [destroySurface](../android/opengl/GLSurfaceView.EGLWindowSurfaceFactory.md))`(`egl:` ` [EGL10](../javax/microedition/khronos/egl/EGL10.md)!`, `display:` ` [EGLDisplay](../javax/microedition/khronos/egl/EGLDisplay.md)!`, `surface:` ` [EGLSurface](../javax/microedition/khronos/egl/EGLSurface.md)!`)` <br /> |
+| abstract [EGLSurface](../javax.microedition.khronos.egl/EGLSurface.md)! | [createWindowSurface](../android/opengl/GLSurfaceView.EGLWindowSurfaceFactory.md))`(`egl:` ` [EGL10](../javax.microedition.khronos.egl/EGL10.md)!`, `display:` ` [EGLDisplay](../javax.microedition.khronos.egl/EGLDisplay.md)!`, `config:` ` [EGLConfig](../javax.microedition.khronos.egl/EGLConfig.md)!`, `nativeWindow:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` <br /> |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [destroySurface](../android/opengl/GLSurfaceView.EGLWindowSurfaceFactory.md))`(`egl:` ` [EGL10](../javax.microedition.khronos.egl/EGL10.md)!`, `display:` ` [EGLDisplay](../javax.microedition.khronos.egl/EGLDisplay.md)!`, `surface:` ` [EGLSurface](../javax.microedition.khronos.egl/EGLSurface.md)!`)` <br /> |
 
 ## Public methods
 
@@ -41,7 +41,7 @@ abstract fun createWindowSurface(
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------|--------------------------------------------|
-| [EGLSurface](../javax/microedition/khronos/egl/EGLSurface.md)! | null if the surface cannot be constructed. |
+| [EGLSurface](../javax.microedition.khronos.egl/EGLSurface.md)! | null if the surface cannot be constructed. |
 
 ### destroySurface
 

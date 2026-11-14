@@ -14,7 +14,7 @@ interface OnPreferenceStartFragmentCallback
 
 | [android.preference.PreferenceFragment.OnPreferenceStartFragmentCallback](../android/preference/PreferenceFragment.OnPreferenceStartFragmentCallback.md) |
 
-| Known Direct Subclasses [PreferenceActivity](../android/preference/PreferenceActivity.md) |------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------| | [PreferenceActivity](../android/preference/PreferenceActivity.md) | This is the base class for an activity to show a hierarchy of preferences to the user. | |
+| Known Direct Subclasses [PreferenceActivity](PreferenceActivity.md) |------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------| | [PreferenceActivity](PreferenceActivity.md) | This is the base class for an activity to show a hierarchy of preferences to the user. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 | **This interface was deprecated in API level 28.**
@@ -27,7 +27,7 @@ Interface that PreferenceFragment's containing activity should implement to be a
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onPreferenceStartFragment](../android/preference/PreferenceFragment.OnPreferenceStartFragmentCallback.md))`(`caller:` ` [PreferenceFragment](../android/preference/PreferenceFragment.md)!`, `pref:` ` [Preference](../android/preference/Preference.md)!`)` Called when the user has clicked on a Preference that has a fragment class name associated with it. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onPreferenceStartFragment](../android/preference/PreferenceFragment.OnPreferenceStartFragmentCallback.md))`(`caller:` ` [PreferenceFragment](PreferenceFragment.md)!`, `pref:` ` [Preference](Preference.md)!`)` Called when the user has clicked on a Preference that has a fragment class name associated with it. |
 
 ## Public methods
 

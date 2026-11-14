@@ -4,7 +4,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 
 # ValueAnimator
 
-Kotlin| [Java](../android/animation/ValueAnimator.md) 
+Kotlin| [Java](ValueAnimator.md) 
 | --- | --- |
 
 ```
@@ -13,21 +13,21 @@ open class ValueAnimator : Animator
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.animation.Animator](../android/animation/Animator.md) ||
-| | ↳ | [android.animation.ValueAnimator](../android/animation/ValueAnimator.md) |
+| ↳ | [android.animation.Animator](Animator.md) ||
+| | ↳ | [android.animation.ValueAnimator](ValueAnimator.md) |
 
-| Known Direct Subclasses [ObjectAnimator](../android/animation/ObjectAnimator.md), [TimeAnimator](../android/animation/TimeAnimator.md) |---------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [ObjectAnimator](../android/animation/ObjectAnimator.md) | This subclass of [ValueAnimator](../android/animation/ValueAnimator.md) provides support for animating properties on target objects. | | [TimeAnimator](../android/animation/TimeAnimator.md) | This class provides a simple callback mechanism to listeners that is synchronized with all other animators in the system. | |
+| Known Direct Subclasses [ObjectAnimator](ObjectAnimator.md), [TimeAnimator](TimeAnimator.md) |---------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [ObjectAnimator](ObjectAnimator.md) | This subclass of [ValueAnimator](ValueAnimator.md) provides support for animating properties on target objects. | | [TimeAnimator](TimeAnimator.md) | This class provides a simple callback mechanism to listeners that is synchronized with all other animators in the system. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 This class provides a simple timing engine for running animations which calculate animated values and set them on target objects.
 
 There is a single timing pulse that all animations use. It runs in a custom handler to ensure that property changes happen on the UI thread.
 
-By default, ValueAnimator uses non-linear time interpolation, via the [AccelerateDecelerateInterpolator](../android/view/animation/AccelerateDecelerateInterpolator.md) class, which accelerates into and decelerates out of an animation. This behavior can be changed by calling [ValueAnimator.setInterpolator(TimeInterpolator)](../android/animation/ValueAnimator.md)).
+By default, ValueAnimator uses non-linear time interpolation, via the [AccelerateDecelerateInterpolator](../android.view.animation/AccelerateDecelerateInterpolator.md) class, which accelerates into and decelerates out of an animation. This behavior can be changed by calling [ValueAnimator.setInterpolator(TimeInterpolator)](ValueAnimator.md)).
 
 Animators can be created from either code or resource files. Here is an example of a ValueAnimator resource file:
 
-Starting from API 23, it is also possible to use a combination of [PropertyValuesHolder](../android/animation/PropertyValuesHolder.md) and [Keyframe](../android/animation/Keyframe.md) resource tags to create a multi-step animation. Note that you can specify explicit fractional values (from 0 to 1) for each keyframe to determine when, in the overall duration, the animation should arrive at that value. Alternatively, you can leave the fractions off and the keyframes will be equally distributed within the total duration:
+Starting from API 23, it is also possible to use a combination of [PropertyValuesHolder](PropertyValuesHolder.md) and [Keyframe](Keyframe.md) resource tags to create a multi-step animation. Note that you can specify explicit fractional values (from 0 to 1) for each keyframe to determine when, in the overall duration, the animation should arrive at that value. Alternatively, you can leave the fractions off and the keyframes will be equally distributed within the total duration:
 |
 | ### Developer Guides
 |
@@ -42,87 +42,87 @@ Starting from API 23, it is also possible to use a combination of [PropertyValue
 
 | Constants ||
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INFINITE](../android/animation/ValueAnimator.md) This value used used with the [setRepeatCount(int)](../android/animation/ValueAnimator.md))property to repeat the animation indefinitely. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESTART](../android/animation/ValueAnimator.md) When the animation reaches the end and`repeatCount`is INFINITE or a positive value, the animation restarts from the beginning. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REVERSE](../android/animation/ValueAnimator.md) When the animation reaches the end and`repeatCount`is INFINITE or a positive value, the animation reverses direction on every iteration. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INFINITE](ValueAnimator.md) This value used used with the [setRepeatCount(int)](ValueAnimator.md))property to repeat the animation indefinitely. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESTART](ValueAnimator.md) When the animation reaches the end and`repeatCount`is INFINITE or a positive value, the animation restarts from the beginning. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REVERSE](ValueAnimator.md) When the animation reaches the end and`repeatCount`is INFINITE or a positive value, the animation reverses direction on every iteration. |
 | --- | --- |
 
 | Inherited constants ||
 |---|---|
-| From class [Animator](../android/animation/Animator.md) |------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [DURATION_INFINITE](../android/animation/Animator.md) <br /> The value used to indicate infinite duration (e.g. when Animators repeat infinitely). <br /> | ||
+| From class [Animator](Animator.md) |------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [DURATION_INFINITE](Animator.md) <br /> The value used to indicate infinite duration (e.g. when Animators repeat infinitely). <br /> | ||
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ValueAnimator](../android/animation/ValueAnimator.md))`()` Creates a new ValueAnimator object. |
+| [ValueAnimator](ValueAnimator.md))`()` Creates a new ValueAnimator object. |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addUpdateListener](../android/animation/ValueAnimator.md))`(`listener:` ` [ValueAnimator.AnimatorUpdateListener](../android/animation/ValueAnimator.AnimatorUpdateListener.md)!`)` Adds a listener to the set of listeners that are sent update events through the life of an animation. |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [areAnimatorsEnabled](../android/animation/ValueAnimator.md))`()` Returns whether animators are currently enabled, system-wide. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [cancel](../android/animation/ValueAnimator.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addUpdateListener](ValueAnimator.md))`(`listener:` ` [ValueAnimator.AnimatorUpdateListener](../android/animation/ValueAnimator.AnimatorUpdateListener.md)!`)` Adds a listener to the set of listeners that are sent update events through the life of an animation. |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [areAnimatorsEnabled](ValueAnimator.md))`()` Returns whether animators are currently enabled, system-wide. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [cancel](ValueAnimator.md))`()` <br /> |
 | --- | --- |
-| open [ValueAnimator](../android/animation/ValueAnimator.md) | [clone](../android/animation/ValueAnimator.md))`()` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [end](../android/animation/ValueAnimator.md))`()` <br /> |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getAnimatedFraction](../android/animation/ValueAnimator.md))`()` Returns the current animation fraction, which is the elapsed/interpolated fraction used in the most recent frame update on the animation. |
+| open [ValueAnimator](ValueAnimator.md) | [clone](ValueAnimator.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [end](ValueAnimator.md))`()` <br /> |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getAnimatedFraction](ValueAnimator.md))`()` Returns the current animation fraction, which is the elapsed/interpolated fraction used in the most recent frame update on the animation. |
 | --- | --- |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getAnimatedValue](../android/animation/ValueAnimator.md))`()` The most recent value calculated by this`ValueAnimator`when there is just one property being animated. |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getAnimatedValue](../android/animation/ValueAnimator.md))`(`propertyName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` The most recent value calculated by this`ValueAnimator`for`propertyName`. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getCurrentPlayTime](../android/animation/ValueAnimator.md))`()` Gets the current position of the animation in time, which is equal to the current time minus the time that the animation started. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getAnimatedValue](ValueAnimator.md))`()` The most recent value calculated by this`ValueAnimator`when there is just one property being animated. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getAnimatedValue](ValueAnimator.md))`(`propertyName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` The most recent value calculated by this`ValueAnimator`for`propertyName`. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getCurrentPlayTime](ValueAnimator.md))`()` Gets the current position of the animation in time, which is equal to the current time minus the time that the animation started. |
 | --- | --- |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getDuration](../android/animation/ValueAnimator.md))`()` Gets the length of the animation. |
-| openstatic [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getDurationScale](../android/animation/ValueAnimator.md))`()` Returns the system-wide scaling factor for Animator-based animations. |
-| openstatic [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getFrameDelay](../android/animation/ValueAnimator.md))`()` The amount of time, in milliseconds, between each frame of the animation. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getDuration](ValueAnimator.md))`()` Gets the length of the animation. |
+| openstatic [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getDurationScale](ValueAnimator.md))`()` Returns the system-wide scaling factor for Animator-based animations. |
+| openstatic [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getFrameDelay](ValueAnimator.md))`()` The amount of time, in milliseconds, between each frame of the animation. |
 | --- | --- |
-| open [TimeInterpolator](../android/animation/TimeInterpolator.md)! | [getInterpolator](../android/animation/ValueAnimator.md))`()` Returns the timing interpolator that this ValueAnimator uses. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRepeatCount](../android/animation/ValueAnimator.md))`()` Defines how many times the animation should repeat. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRepeatMode](../android/animation/ValueAnimator.md))`()` Defines what this animation should do when it reaches the end. |
+| open [TimeInterpolator](TimeInterpolator.md)! | [getInterpolator](ValueAnimator.md))`()` Returns the timing interpolator that this ValueAnimator uses. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRepeatCount](ValueAnimator.md))`()` Defines how many times the animation should repeat. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRepeatMode](ValueAnimator.md))`()` Defines what this animation should do when it reaches the end. |
 | --- | --- |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getStartDelay](../android/animation/ValueAnimator.md))`()` The amount of time, in milliseconds, to delay starting the animation after [start()](../android/animation/ValueAnimator.md))is called. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTotalDuration](../android/animation/ValueAnimator.md))`()` <br /> |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [PropertyValuesHolder](../android/animation/PropertyValuesHolder.md)!\>! | [getValues](../android/animation/ValueAnimator.md))`()` Returns the values that this ValueAnimator animates between. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getStartDelay](ValueAnimator.md))`()` The amount of time, in milliseconds, to delay starting the animation after [start()](ValueAnimator.md))is called. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTotalDuration](ValueAnimator.md))`()` <br /> |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [PropertyValuesHolder](PropertyValuesHolder.md)!\>! | [getValues](ValueAnimator.md))`()` Returns the values that this ValueAnimator animates between. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRunning](../android/animation/ValueAnimator.md))`()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isStarted](../android/animation/ValueAnimator.md))`()` <br /> |
-| openstatic [ValueAnimator](../android/animation/ValueAnimator.md)! | [ofArgb](../android/animation/ValueAnimator.md))`(`vararg` `values:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs and returns a ValueAnimator that animates between color values. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRunning](ValueAnimator.md))`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isStarted](ValueAnimator.md))`()` <br /> |
+| openstatic [ValueAnimator](ValueAnimator.md)! | [ofArgb](ValueAnimator.md))`(`vararg` `values:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs and returns a ValueAnimator that animates between color values. |
 | --- | --- |
-| openstatic [ValueAnimator](../android/animation/ValueAnimator.md)! | [ofFloat](../android/animation/ValueAnimator.md))`(`vararg` `values:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Constructs and returns a ValueAnimator that animates between float values. |
-| openstatic [ValueAnimator](../android/animation/ValueAnimator.md)! | [ofInt](../android/animation/ValueAnimator.md))`(`vararg` `values:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs and returns a ValueAnimator that animates between int values. |
-| openstatic [ValueAnimator](../android/animation/ValueAnimator.md)! | [ofObject](../android/animation/ValueAnimator.md))`(`evaluator:` ` [TypeEvaluator](../android/animation/TypeEvaluator.md)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`, `vararg` `values:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Constructs and returns a ValueAnimator that animates between Object values. |
+| openstatic [ValueAnimator](ValueAnimator.md)! | [ofFloat](ValueAnimator.md))`(`vararg` `values:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Constructs and returns a ValueAnimator that animates between float values. |
+| openstatic [ValueAnimator](ValueAnimator.md)! | [ofInt](ValueAnimator.md))`(`vararg` `values:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs and returns a ValueAnimator that animates between int values. |
+| openstatic [ValueAnimator](ValueAnimator.md)! | [ofObject](ValueAnimator.md))`(`evaluator:` ` [TypeEvaluator](TypeEvaluator.md)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`, `vararg` `values:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Constructs and returns a ValueAnimator that animates between Object values. |
 | --- | --- |
-| openstatic [ValueAnimator](../android/animation/ValueAnimator.md)! | [ofPropertyValuesHolder](../android/animation/ValueAnimator.md))`(`vararg` `values:` ` [PropertyValuesHolder](../android/animation/PropertyValuesHolder.md)!`)` Constructs and returns a ValueAnimator that animates between the values specified in the PropertyValuesHolder objects. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [pause](../android/animation/ValueAnimator.md))`()` <br /> |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [registerDurationScaleChangeListener](../android/animation/ValueAnimator.md))`(`listener:` ` [ValueAnimator.DurationScaleChangeListener](../android/animation/ValueAnimator.DurationScaleChangeListener.md)`)` Registers a [DurationScaleChangeListener](../android/animation/ValueAnimator.DurationScaleChangeListener.md) This listens for changes to the system-wide scaling factor for Animator-based animations. |
+| openstatic [ValueAnimator](ValueAnimator.md)! | [ofPropertyValuesHolder](ValueAnimator.md))`(`vararg` `values:` ` [PropertyValuesHolder](PropertyValuesHolder.md)!`)` Constructs and returns a ValueAnimator that animates between the values specified in the PropertyValuesHolder objects. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [pause](ValueAnimator.md))`()` <br /> |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [registerDurationScaleChangeListener](ValueAnimator.md))`(`listener:` ` [ValueAnimator.DurationScaleChangeListener](../android/animation/ValueAnimator.DurationScaleChangeListener.md)`)` Registers a [DurationScaleChangeListener](../android/animation/ValueAnimator.DurationScaleChangeListener.md) This listens for changes to the system-wide scaling factor for Animator-based animations. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeAllUpdateListeners](../android/animation/ValueAnimator.md))`()` Removes all listeners from the set listening to frame updates for this animation. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeUpdateListener](../android/animation/ValueAnimator.md))`(`listener:` ` [ValueAnimator.AnimatorUpdateListener](../android/animation/ValueAnimator.AnimatorUpdateListener.md)!`)` Removes a listener from the set listening to frame updates for this animation. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resume](../android/animation/ValueAnimator.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeAllUpdateListeners](ValueAnimator.md))`()` Removes all listeners from the set listening to frame updates for this animation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeUpdateListener](ValueAnimator.md))`(`listener:` ` [ValueAnimator.AnimatorUpdateListener](../android/animation/ValueAnimator.AnimatorUpdateListener.md)!`)` Removes a listener from the set listening to frame updates for this animation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resume](ValueAnimator.md))`()` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reverse](../android/animation/ValueAnimator.md))`()` Plays the ValueAnimator in reverse. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCurrentFraction](../android/animation/ValueAnimator.md))`(`fraction:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the position of the animation to the specified fraction. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCurrentPlayTime](../android/animation/ValueAnimator.md))`(`playTime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the position of the animation to the specified point in time. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reverse](ValueAnimator.md))`()` Plays the ValueAnimator in reverse. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCurrentFraction](ValueAnimator.md))`(`fraction:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the position of the animation to the specified fraction. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCurrentPlayTime](ValueAnimator.md))`(`playTime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the position of the animation to the specified point in time. |
 | --- | --- |
-| open [ValueAnimator](../android/animation/ValueAnimator.md)! | [setDuration](../android/animation/ValueAnimator.md))`(`duration:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the length of the animation. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEvaluator](../android/animation/ValueAnimator.md))`(`value:` ` [TypeEvaluator](../android/animation/TypeEvaluator.md)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`)` The type evaluator to be used when calculating the animated values of this animation. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFloatValues](../android/animation/ValueAnimator.md))`(`vararg` `values:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets float values that will be animated between. |
+| open [ValueAnimator](ValueAnimator.md)! | [setDuration](ValueAnimator.md))`(`duration:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the length of the animation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEvaluator](ValueAnimator.md))`(`value:` ` [TypeEvaluator](TypeEvaluator.md)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`)` The type evaluator to be used when calculating the animated values of this animation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFloatValues](ValueAnimator.md))`(`vararg` `values:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets float values that will be animated between. |
 | --- | --- |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFrameDelay](../android/animation/ValueAnimator.md))`(`frameDelay:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` The amount of time, in milliseconds, between each frame of the animation. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setIntValues](../android/animation/ValueAnimator.md))`(`vararg` `values:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets int values that will be animated between. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInterpolator](../android/animation/ValueAnimator.md))`(`value:` ` [TimeInterpolator](../android/animation/TimeInterpolator.md)!`)` The time interpolator used in calculating the elapsed fraction of this animation. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFrameDelay](ValueAnimator.md))`(`frameDelay:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` The amount of time, in milliseconds, between each frame of the animation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setIntValues](ValueAnimator.md))`(`vararg` `values:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets int values that will be animated between. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInterpolator](ValueAnimator.md))`(`value:` ` [TimeInterpolator](TimeInterpolator.md)!`)` The time interpolator used in calculating the elapsed fraction of this animation. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setObjectValues](../android/animation/ValueAnimator.md))`(`vararg` `values:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Sets the values to animate between for this animation. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRepeatCount](../android/animation/ValueAnimator.md))`(`value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets how many times the animation should be repeated. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRepeatMode](../android/animation/ValueAnimator.md))`(`value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Defines what this animation should do when it reaches the end. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setObjectValues](ValueAnimator.md))`(`vararg` `values:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Sets the values to animate between for this animation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRepeatCount](ValueAnimator.md))`(`value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets how many times the animation should be repeated. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRepeatMode](ValueAnimator.md))`(`value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Defines what this animation should do when it reaches the end. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStartDelay](../android/animation/ValueAnimator.md))`(`startDelay:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` The amount of time, in milliseconds, to delay starting the animation after [start()](../android/animation/ValueAnimator.md))is called. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setValues](../android/animation/ValueAnimator.md))`(`vararg` `values:` ` [PropertyValuesHolder](../android/animation/PropertyValuesHolder.md)!`)` Sets the values, per property, being animated between. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [start](../android/animation/ValueAnimator.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStartDelay](ValueAnimator.md))`(`startDelay:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` The amount of time, in milliseconds, to delay starting the animation after [start()](ValueAnimator.md))is called. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setValues](ValueAnimator.md))`(`vararg` `values:` ` [PropertyValuesHolder](PropertyValuesHolder.md)!`)` Sets the values, per property, being animated between. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [start](ValueAnimator.md))`()` <br /> |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/animation/ValueAnimator.md))`()` <br /> |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [unregisterDurationScaleChangeListener](../android/animation/ValueAnimator.md))`(`listener:` ` [ValueAnimator.DurationScaleChangeListener](../android/animation/ValueAnimator.DurationScaleChangeListener.md)`)` Unregisters a DurationScaleChangeListener. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](ValueAnimator.md))`()` <br /> |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [unregisterDurationScaleChangeListener](ValueAnimator.md))`(`listener:` ` [ValueAnimator.DurationScaleChangeListener](../android/animation/ValueAnimator.DurationScaleChangeListener.md)`)` Unregisters a DurationScaleChangeListener. |
 
 | Inherited functions ||
 |---|---|
-| From class [Animator](../android/animation/Animator.md) |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addListener](../android/animation/Animator.md))`(`listener:` ` [Animator.AnimatorListener](../android/animation/Animator.AnimatorListener.md)!`)` <br /> Adds a listener to the set of listeners that are sent events through the life of an animation, such as start, repeat, and end. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addPauseListener](../android/animation/Animator.md))`(`listener:` ` [Animator.AnimatorPauseListener](../android/animation/Animator.AnimatorPauseListener.md)!`)` <br /> Adds a pause listener to this animator. <br /> | | [ArrayList](../java/util/ArrayList.md)< [Animator.AnimatorListener](../android/animation/Animator.AnimatorListener.md)!>! | [getListeners](../android/animation/Animator.md))`()` <br /> Gets the set of [android.animation.Animator.AnimatorListener](../android/animation/Animator.AnimatorListener.md) objects that are currently listening for events on this`Animator`object. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPaused](../android/animation/Animator.md))`()` <br /> Returns whether this animator is currently in a paused state. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeAllListeners](../android/animation/Animator.md))`()` <br /> Removes all [listeners](../android/animation/Animator.md))and [pauseListeners](../android/animation/Animator.md))from this object. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeListener](../android/animation/Animator.md))`(`listener:` ` [Animator.AnimatorListener](../android/animation/Animator.AnimatorListener.md)!`)` <br /> Removes a listener from the set listening to this animation. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removePauseListener](../android/animation/Animator.md))`(`listener:` ` [Animator.AnimatorPauseListener](../android/animation/Animator.AnimatorPauseListener.md)!`)` <br /> Removes a pause listener from the set listening to this animation. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTarget](../android/animation/Animator.md))`(`target:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> Sets the target object whose property will be animated by this animation. Not all subclasses operate on target objects (for example, [ValueAnimator](../android/animation/ValueAnimator.md), but this method is on the superclass for the convenience of dealing generically with those subclasses that do handle targets. **Note:**The target is stored as a weak reference internally to avoid leaking resources by having animators directly reference old targets. Therefore, you should ensure that animator targets always have a hard reference elsewhere. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setupEndValues](../android/animation/Animator.md))`()` <br /> This method tells the object to use appropriate information to extract ending values for the animation. For example, a AnimatorSet object will pass this call to its child objects to tell them to set up the values. A ObjectAnimator object will use the information it has about its target object and PropertyValuesHolder objects to get the start values for its properties. A ValueAnimator object will ignore the request since it does not have enough information (such as a target object) to gather these values. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setupStartValues](../android/animation/Animator.md))`()` <br /> This method tells the object to use appropriate information to extract starting values for the animation. For example, a AnimatorSet object will pass this call to its child objects to tell them to set up the values. A ObjectAnimator object will use the information it has about its target object and PropertyValuesHolder objects to get the start values for its properties. A ValueAnimator object will ignore the request since it does not have enough information (such as a target object) to gather these values. <br /> | ||
+| From class [Animator](Animator.md) |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addListener](Animator.md))`(`listener:` ` [Animator.AnimatorListener](../android/animation/Animator.AnimatorListener.md)!`)` <br /> Adds a listener to the set of listeners that are sent events through the life of an animation, such as start, repeat, and end. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addPauseListener](Animator.md))`(`listener:` ` [Animator.AnimatorPauseListener](../android/animation/Animator.AnimatorPauseListener.md)!`)` <br /> Adds a pause listener to this animator. <br /> | | [ArrayList](../java.util/ArrayList.md)< [Animator.AnimatorListener](../android/animation/Animator.AnimatorListener.md)!>! | [getListeners](Animator.md))`()` <br /> Gets the set of [android.animation.Animator.AnimatorListener](../android/animation/Animator.AnimatorListener.md) objects that are currently listening for events on this`Animator`object. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPaused](Animator.md))`()` <br /> Returns whether this animator is currently in a paused state. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeAllListeners](Animator.md))`()` <br /> Removes all [listeners](Animator.md))and [pauseListeners](Animator.md))from this object. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeListener](Animator.md))`(`listener:` ` [Animator.AnimatorListener](../android/animation/Animator.AnimatorListener.md)!`)` <br /> Removes a listener from the set listening to this animation. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removePauseListener](Animator.md))`(`listener:` ` [Animator.AnimatorPauseListener](../android/animation/Animator.AnimatorPauseListener.md)!`)` <br /> Removes a pause listener from the set listening to this animation. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTarget](Animator.md))`(`target:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> Sets the target object whose property will be animated by this animation. Not all subclasses operate on target objects (for example, [ValueAnimator](ValueAnimator.md), but this method is on the superclass for the convenience of dealing generically with those subclasses that do handle targets. **Note:**The target is stored as a weak reference internally to avoid leaking resources by having animators directly reference old targets. Therefore, you should ensure that animator targets always have a hard reference elsewhere. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setupEndValues](Animator.md))`()` <br /> This method tells the object to use appropriate information to extract ending values for the animation. For example, a AnimatorSet object will pass this call to its child objects to tell them to set up the values. A ObjectAnimator object will use the information it has about its target object and PropertyValuesHolder objects to get the start values for its properties. A ValueAnimator object will ignore the request since it does not have enough information (such as a target object) to gather these values. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setupStartValues](Animator.md))`()` <br /> This method tells the object to use appropriate information to extract starting values for the animation. For example, a AnimatorSet object will pass this call to its child objects to tell them to set up the values. A ObjectAnimator object will use the information it has about its target object and PropertyValuesHolder objects to get the start values for its properties. A ValueAnimator object will ignore the request since it does not have enough information (such as a target object) to gather these values. <br /> | ||
 
 ## Constants
 
@@ -134,7 +134,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 static val INFINITE: Int
 ```
 
-This value used used with the [setRepeatCount(int)](../android/animation/ValueAnimator.md))property to repeat the animation indefinitely. 
+This value used used with the [setRepeatCount(int)](ValueAnimator.md))property to repeat the animation indefinitely. 
 
  Value: -1
 
@@ -224,7 +224,7 @@ open fun clone(): ValueAnimator
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|---------------------------|
-| [ValueAnimator](../android/animation/ValueAnimator.md) | a clone of this instance. |
+| [ValueAnimator](ValueAnimator.md) | a clone of this instance. |
 
 | Exceptions ||
 |----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -288,7 +288,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 open fun getCurrentPlayTime(): Long
 ```
 
-Gets the current position of the animation in time, which is equal to the current time minus the time that the animation started. An animation that is not yet started will return a value of zero, unless the animation has has its play time set via [setCurrentPlayTime(long)](../android/animation/ValueAnimator.md))or [setCurrentFraction(float)](../android/animation/ValueAnimator.md)), in which case it will return the time that was set.
+Gets the current position of the animation in time, which is equal to the current time minus the time that the animation started. An animation that is not yet started will return a value of zero, unless the animation has has its play time set via [setCurrentPlayTime(long)](ValueAnimator.md))or [setCurrentFraction(float)](ValueAnimator.md)), in which case it will return the time that was set.
 
 | Return ||
 |------------------------------------------------------------------------------|------------------------------------------------|
@@ -330,7 +330,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 open static fun getFrameDelay(): Long
 ```
 
-The amount of time, in milliseconds, between each frame of the animation. This is a requested time that the animation will attempt to honor, but the actual delay between frames may be different, depending on system load and capabilities. This is a static function because the same delay will be applied to all animations, since they are all run off of a single timing loop. The frame delay may be ignored when the animation system uses an external timing source, such as the display refresh rate (vsync), to govern animations. Note that this method should be called from the same thread that [start()](../android/animation/ValueAnimator.md))is called in order to check the frame delay for that animation. A runtime exception will be thrown if the calling thread does not have a Looper.
+The amount of time, in milliseconds, between each frame of the animation. This is a requested time that the animation will attempt to honor, but the actual delay between frames may be different, depending on system load and capabilities. This is a static function because the same delay will be applied to all animations, since they are all run off of a single timing loop. The frame delay may be ignored when the animation system uses an external timing source, such as the display refresh rate (vsync), to govern animations. Note that this method should be called from the same thread that [start()](ValueAnimator.md))is called in order to check the frame delay for that animation. A runtime exception will be thrown if the calling thread does not have a Looper.
 
 | Return ||
 |------------------------------------------------------------------------------|----------------------------------------------------|
@@ -348,7 +348,7 @@ Returns the timing interpolator that this ValueAnimator uses.
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------|-------------------------------------------------|
-| [TimeInterpolator](../android/animation/TimeInterpolator.md)! | The timing interpolator for this ValueAnimator. |
+| [TimeInterpolator](TimeInterpolator.md)! | The timing interpolator for this ValueAnimator. |
 
 ### getRepeatCount
 
@@ -362,7 +362,7 @@ Defines how many times the animation should repeat. The default value is 0.
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the number of times the animation should repeat, or [INFINITE](../android/animation/ValueAnimator.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the number of times the animation should repeat, or [INFINITE](ValueAnimator.md) |
 
 ### getRepeatMode
 
@@ -376,7 +376,7 @@ Defines what this animation should do when it reaches the end.
 
 | Return ||
 |----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | either one of [REVERSE](../android/animation/ValueAnimator.md) or [RESTART](../android/animation/ValueAnimator.md) Value is [android.animation.ValueAnimator#RESTART](../android/animation/ValueAnimator.md), or [android.animation.ValueAnimator#REVERSE](../android/animation/ValueAnimator.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | either one of [REVERSE](ValueAnimator.md) or [RESTART](ValueAnimator.md) Value is [android.animation.ValueAnimator#RESTART](ValueAnimator.md), or [android.animation.ValueAnimator#REVERSE](ValueAnimator.md) |
 
 ### getStartDelay
 
@@ -386,7 +386,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 open fun getStartDelay(): Long
 ```
 
-The amount of time, in milliseconds, to delay starting the animation after [start()](../android/animation/ValueAnimator.md))is called.
+The amount of time, in milliseconds, to delay starting the animation after [start()](ValueAnimator.md))is called.
 
 | Return ||
 |------------------------------------------------------------------------------|-----------------------------------------------------------|
@@ -402,7 +402,7 @@ open fun getTotalDuration(): Long
 
 | Return ||
 |------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | Total time an animation takes to finish, starting from the time [start()](../android/animation/Animator.md))is called. [DURATION_INFINITE](../android/animation/Animator.md) will be returned if the animation or any child animation repeats infinite times. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | Total time an animation takes to finish, starting from the time [start()](Animator.md))is called. [DURATION_INFINITE](Animator.md) will be returned if the animation or any child animation repeats infinite times. |
 
 ### getValues
 
@@ -416,7 +416,7 @@ Returns the values that this ValueAnimator animates between. These values are st
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [PropertyValuesHolder](../android/animation/PropertyValuesHolder.md)!>! | PropertyValuesHolder\[\] An array of PropertyValuesHolder objects which hold the values, per property, that define the animation. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [PropertyValuesHolder](PropertyValuesHolder.md)!>! | PropertyValuesHolder\[\] An array of PropertyValuesHolder objects which hold the values, per property, that define the animation. |
 
 ### isRunning
 
@@ -458,7 +458,7 @@ Constructs and returns a ValueAnimator that animates between color values. A sin
 
 | Return ||
 |---------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| [ValueAnimator](../android/animation/ValueAnimator.md)! | A ValueAnimator object that is set up to animate between the given values. |
+| [ValueAnimator](ValueAnimator.md)! | A ValueAnimator object that is set up to animate between the given values. |
 
 ### ofFloat
 
@@ -476,7 +476,7 @@ Constructs and returns a ValueAnimator that animates between float values. A sin
 
 | Return ||
 |---------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| [ValueAnimator](../android/animation/ValueAnimator.md)! | A ValueAnimator object that is set up to animate between the given values. |
+| [ValueAnimator](ValueAnimator.md)! | A ValueAnimator object that is set up to animate between the given values. |
 
 ### ofInt
 
@@ -494,7 +494,7 @@ Constructs and returns a ValueAnimator that animates between int values. A singl
 
 | Return ||
 |---------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| [ValueAnimator](../android/animation/ValueAnimator.md)! | A ValueAnimator object that is set up to animate between the given values. |
+| [ValueAnimator](ValueAnimator.md)! | A ValueAnimator object that is set up to animate between the given values. |
 
 ### ofObject
 
@@ -515,12 +515,12 @@ Since ValueAnimator does not know how to animate between arbitrary Objects, this
 
 | Parameters ||
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `evaluator` | [TypeEvaluator](../android/animation/TypeEvaluator.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>!:A TypeEvaluator that will be called on each animation frame to provide the ncessry interpolation between the Object values to derive the animated value. |
+| `evaluator` | [TypeEvaluator](TypeEvaluator.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>!:A TypeEvaluator that will be called on each animation frame to provide the ncessry interpolation between the Object values to derive the animated value. |
 | `values` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:A set of values that the animation will animate between over time. |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| [ValueAnimator](../android/animation/ValueAnimator.md)! | A ValueAnimator object that is set up to animate between the given values. |
+| [ValueAnimator](ValueAnimator.md)! | A ValueAnimator object that is set up to animate between the given values. |
 
 ### ofPropertyValuesHolder
 
@@ -534,11 +534,11 @@ Constructs and returns a ValueAnimator that animates between the values specifie
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `values` | [PropertyValuesHolder](../android/animation/PropertyValuesHolder.md)!:A set of PropertyValuesHolder objects whose values will be animated between over time. |
+| `values` | [PropertyValuesHolder](PropertyValuesHolder.md)!:A set of PropertyValuesHolder objects whose values will be animated between over time. |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| [ValueAnimator](../android/animation/ValueAnimator.md)! | A ValueAnimator object that is set up to animate between the given values. |
+| [ValueAnimator](ValueAnimator.md)! | A ValueAnimator object that is set up to animate between the given values. |
 
 ### pause
 
@@ -652,7 +652,7 @@ Sets the length of the animation. The default duration is 300 milliseconds.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [ValueAnimator](../android/animation/ValueAnimator.md)! | ValueAnimator The object called with setDuration(). This return value makes it easier to compose statements together that construct and then set the duration, as in`ValueAnimator.ofInt(0, 10).setDuration(500).start()`. |
+| [ValueAnimator](ValueAnimator.md)! | ValueAnimator The object called with setDuration(). This return value makes it easier to compose statements together that construct and then set the duration, as in`ValueAnimator.ofInt(0, 10).setDuration(500).start()`. |
 
 ### setEvaluator
 
@@ -662,13 +662,13 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 open fun setEvaluator(value: TypeEvaluator<Any!>!): Unit
 ```
 
-The type evaluator to be used when calculating the animated values of this animation. The system will automatically assign a float or int evaluator based on the type of`startValue`and`endValue`in the constructor. But if these values are not one of these primitive types, or if different evaluation is desired (such as is necessary with int values that represent colors), a custom evaluator needs to be assigned. For example, when running an animation on color values, the [ArgbEvaluator](../android/animation/ArgbEvaluator.md) should be used to get correct RGB color interpolation.
+The type evaluator to be used when calculating the animated values of this animation. The system will automatically assign a float or int evaluator based on the type of`startValue`and`endValue`in the constructor. But if these values are not one of these primitive types, or if different evaluation is desired (such as is necessary with int values that represent colors), a custom evaluator needs to be assigned. For example, when running an animation on color values, the [ArgbEvaluator](ArgbEvaluator.md) should be used to get correct RGB color interpolation.
 
 If this ValueAnimator has only one set of values being animated between, this evaluator will be used for that set. If there are several sets of values being animated, which is the case if PropertyValuesHolder objects were set on the ValueAnimator, then the evaluator is assigned just to the first PropertyValuesHolder object.
 
 | Parameters ||
 |---------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `value` | [TypeEvaluator](../android/animation/TypeEvaluator.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>!:the evaluator to be used this animation |
+| `value` | [TypeEvaluator](TypeEvaluator.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>!:the evaluator to be used this animation |
 
 ### setFloatValues
 
@@ -694,7 +694,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 open static fun setFrameDelay(frameDelay: Long): Unit
 ```
 
-The amount of time, in milliseconds, between each frame of the animation. This is a requested time that the animation will attempt to honor, but the actual delay between frames may be different, depending on system load and capabilities. This is a static function because the same delay will be applied to all animations, since they are all run off of a single timing loop. The frame delay may be ignored when the animation system uses an external timing source, such as the display refresh rate (vsync), to govern animations. Note that this method should be called from the same thread that [start()](../android/animation/ValueAnimator.md))is called in order to have the new frame delay take effect on that animation. A runtime exception will be thrown if the calling thread does not have a Looper.
+The amount of time, in milliseconds, between each frame of the animation. This is a requested time that the animation will attempt to honor, but the actual delay between frames may be different, depending on system load and capabilities. This is a static function because the same delay will be applied to all animations, since they are all run off of a single timing loop. The frame delay may be ignored when the animation system uses an external timing source, such as the display refresh rate (vsync), to govern animations. Note that this method should be called from the same thread that [start()](ValueAnimator.md))is called in order to have the new frame delay take effect on that animation. A runtime exception will be thrown if the calling thread does not have a Looper.
 
 | Parameters ||
 |--------------|---------------------------------------------------------------------------------------------------------------------------------|
@@ -724,11 +724,11 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 open fun setInterpolator(value: TimeInterpolator!): Unit
 ```
 
-The time interpolator used in calculating the elapsed fraction of this animation. The interpolator determines whether the animation runs with linear or non-linear motion, such as acceleration and deceleration. The default value is [android.view.animation.AccelerateDecelerateInterpolator](../android/view/animation/AccelerateDecelerateInterpolator.md)
+The time interpolator used in calculating the elapsed fraction of this animation. The interpolator determines whether the animation runs with linear or non-linear motion, such as acceleration and deceleration. The default value is [android.view.animation.AccelerateDecelerateInterpolator](../android.view.animation/AccelerateDecelerateInterpolator.md)
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `value` | [TimeInterpolator](../android/animation/TimeInterpolator.md)!:the interpolator to be used by this animation. A value of`null`will result in linear interpolation. |
+| `value` | [TimeInterpolator](TimeInterpolator.md)!:the interpolator to be used by this animation. A value of`null`will result in linear interpolation. |
 
 ### setObjectValues
 
@@ -758,7 +758,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 open fun setRepeatCount(value: Int): Unit
 ```
 
-Sets how many times the animation should be repeated. If the repeat count is 0, the animation is never repeated. If the repeat count is greater than 0 or [INFINITE](../android/animation/ValueAnimator.md), the repeat mode will be taken into account. The repeat count is 0 by default.
+Sets how many times the animation should be repeated. If the repeat count is 0, the animation is never repeated. If the repeat count is greater than 0 or [INFINITE](ValueAnimator.md), the repeat mode will be taken into account. The repeat count is 0 by default.
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------|
@@ -772,11 +772,11 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 open fun setRepeatMode(value: Int): Unit
 ```
 
-Defines what this animation should do when it reaches the end. This setting is applied only when the repeat count is either greater than 0 or [INFINITE](../android/animation/ValueAnimator.md). Defaults to [RESTART](../android/animation/ValueAnimator.md).
+Defines what this animation should do when it reaches the end. This setting is applied only when the repeat count is either greater than 0 or [INFINITE](ValueAnimator.md). Defaults to [RESTART](ValueAnimator.md).
 
 | Parameters ||
 |---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `value` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): [RESTART](../android/animation/ValueAnimator.md) or [REVERSE](../android/animation/ValueAnimator.md) Value is [android.animation.ValueAnimator#RESTART](../android/animation/ValueAnimator.md), or [android.animation.ValueAnimator#REVERSE](../android/animation/ValueAnimator.md) |
+| `value` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): [RESTART](ValueAnimator.md) or [REVERSE](ValueAnimator.md) Value is [android.animation.ValueAnimator#RESTART](ValueAnimator.md), or [android.animation.ValueAnimator#REVERSE](ValueAnimator.md) |
 
 ### setStartDelay
 
@@ -786,7 +786,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 open fun setStartDelay(startDelay: Long): Unit
 ```
 
-The amount of time, in milliseconds, to delay starting the animation after [start()](../android/animation/ValueAnimator.md))is called. Note that the start delay should always be non-negative. Any negative start delay will be clamped to 0 on N and above.
+The amount of time, in milliseconds, to delay starting the animation after [start()](ValueAnimator.md))is called. Note that the start delay should always be non-negative. Any negative start delay will be clamped to 0 on N and above.
 
 | Parameters ||
 |--------------|-----------------------------------------------------------------------------------------------------------------------|
@@ -804,7 +804,7 @@ Sets the values, per property, being animated between. This function is called i
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `values` | [PropertyValuesHolder](../android/animation/PropertyValuesHolder.md)!:The set of values, per property, being animated between. |
+| `values` | [PropertyValuesHolder](PropertyValuesHolder.md)!:The set of values, per property, being animated between. |
 
 ### start
 
@@ -846,4 +846,4 @@ Unregisters a DurationScaleChangeListener.
 
 **See Also**
 
-- [#registerDurationScaleChangeListener(DurationScaleChangeListener)](../android/animation/ValueAnimator.md))
+- [#registerDurationScaleChangeListener(DurationScaleChangeListener)](ValueAnimator.md))

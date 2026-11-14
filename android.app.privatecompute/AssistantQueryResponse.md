@@ -8,8 +8,8 @@ class AssistantQueryResponse : EgressResponse, Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.app.privatecompute.EgressResponse](../android/app/privatecompute/EgressResponse.md) ||
-| | ↳ | [android.app.privatecompute.AssistantQueryResponse](../android/app/privatecompute/AssistantQueryResponse.md) |
+| ↳ | [android.app.privatecompute.EgressResponse](EgressResponse.md) ||
+| | ↳ | [android.app.privatecompute.AssistantQueryResponse](AssistantQueryResponse.md) |
 
 Specialized response for Assistant Query use-cases. Includes the specific query ID and the generated response payload.
 
@@ -30,7 +30,7 @@ Specialized response for Assistant Query use-cases. Includes the specific query 
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [AssistantQueryResponse](../android/app/privatecompute/AssistantQueryResponse.md)!\> | `https://developer.android.com/reference/kotlin/android/app/privatecompute/AssistantQueryResponse#CREATOR:android.os.Parcelable.Creator` Creator for `https://developer.android.com/reference/kotlin/android/app/privatecompute/AssistantQueryResponse#` instance. |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [AssistantQueryResponse](AssistantQueryResponse.md)!\> | `https://developer.android.com/reference/kotlin/android/app/privatecompute/AssistantQueryResponse#CREATOR:android.os.Parcelable.Creator` Creator for `https://developer.android.com/reference/kotlin/android/app/privatecompute/AssistantQueryResponse#` instance. |
 
 ## Public methods
 
@@ -107,7 +107,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

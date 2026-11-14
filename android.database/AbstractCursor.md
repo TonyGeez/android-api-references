@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # AbstractCursor
 
-Kotlin| [Java](../android/database/AbstractCursor.md) 
+Kotlin| [Java](AbstractCursor.md) 
 | --- | --- |
 
 ```
@@ -13,12 +13,12 @@ abstract class AbstractCursor : CrossProcessCursor
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.database.AbstractCursor](../android/database/AbstractCursor.md) |
+| ↳ | [android.database.AbstractCursor](AbstractCursor.md) |
 
-| Known Direct Subclasses [AbstractWindowedCursor](../android/database/AbstractWindowedCursor.md), [MatrixCursor](../android/database/MatrixCursor.md), [MergeCursor](../android/database/MergeCursor.md) |------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------| | [AbstractWindowedCursor](../android/database/AbstractWindowedCursor.md) | A base class for Cursors that store their data in [CursorWindow](../android/database/CursorWindow.md) s. | | [MatrixCursor](../android/database/MatrixCursor.md) | A mutable cursor implementation backed by an array of`Object`s. | | [MergeCursor](../android/database/MergeCursor.md) | A convenience class that lets you present an array of Cursors as a single linear Cursor. | |
+| Known Direct Subclasses [AbstractWindowedCursor](AbstractWindowedCursor.md), [MatrixCursor](MatrixCursor.md), [MergeCursor](MergeCursor.md) |------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------| | [AbstractWindowedCursor](AbstractWindowedCursor.md) | A base class for Cursors that store their data in [CursorWindow](CursorWindow.md) s. | | [MatrixCursor](MatrixCursor.md) | A mutable cursor implementation backed by an array of`Object`s. | | [MergeCursor](MergeCursor.md) | A convenience class that lets you present an array of Cursors as a single linear Cursor. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [SQLiteCursor](../android/database/sqlite/SQLiteCursor.md) |-----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [SQLiteCursor](../android/database/sqlite/SQLiteCursor.md) | A Cursor implementation that exposes results from a query on a [SQLiteDatabase](../android/database/sqlite/SQLiteDatabase.md). | |
+| Known Indirect Subclasses [SQLiteCursor](../android.database.sqlite/SQLiteCursor.md) |-----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [SQLiteCursor](../android.database.sqlite/SQLiteCursor.md) | A Cursor implementation that exposes results from a query on a [SQLiteDatabase](../android.database.sqlite/SQLiteDatabase.md). | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 This is an abstract cursor class that handles a lot of the common code that all cursors need to deal with and is provided for convenience reasons.
@@ -31,86 +31,86 @@ This is an abstract cursor class that handles a lot of the common code that all 
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------|---|
-| [AbstractCursor](../android/database/AbstractCursor.md))`()` <br /> |
+| [AbstractCursor](AbstractCursor.md))`()` <br /> |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../android/database/AbstractCursor.md))`()` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [copyStringToBuffer](../android/database/AbstractCursor.md))`(`columnIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `buffer:` ` [CharArrayBuffer](../android/database/CharArrayBuffer.md)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [deactivate](../android/database/AbstractCursor.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](AbstractCursor.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [copyStringToBuffer](AbstractCursor.md))`(`columnIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `buffer:` ` [CharArrayBuffer](CharArrayBuffer.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [deactivate](AbstractCursor.md))`()` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [fillWindow](../android/database/AbstractCursor.md))`(`position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `window:` ` [CursorWindow](../android/database/CursorWindow.md)!`)` <br /> |
-| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getBlob](../android/database/AbstractCursor.md))`(`column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getColumnCount](../android/database/AbstractCursor.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [fillWindow](AbstractCursor.md))`(`position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `window:` ` [CursorWindow](CursorWindow.md)!`)` <br /> |
+| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getBlob](AbstractCursor.md))`(`column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getColumnCount](AbstractCursor.md))`()` <br /> |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getColumnIndex](../android/database/AbstractCursor.md))`(`columnName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getColumnIndexOrThrow](../android/database/AbstractCursor.md))`(`columnName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getColumnName](../android/database/AbstractCursor.md))`(`columnIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getColumnIndex](AbstractCursor.md))`(`columnName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getColumnIndexOrThrow](AbstractCursor.md))`(`columnName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getColumnName](AbstractCursor.md))`(`columnIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
-| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getColumnNames](../android/database/AbstractCursor.md))`()` <br /> |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCount](../android/database/AbstractCursor.md))`()` <br /> |
-| abstract [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getDouble](../android/database/AbstractCursor.md))`(`column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getColumnNames](AbstractCursor.md))`()` <br /> |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCount](AbstractCursor.md))`()` <br /> |
+| abstract [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getDouble](AbstractCursor.md))`(`column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
-| open [Bundle](../android/os/Bundle.md)! | [getExtras](../android/database/AbstractCursor.md))`()` <br /> |
-| abstract [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getFloat](../android/database/AbstractCursor.md))`(`column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInt](../android/database/AbstractCursor.md))`(`column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Bundle](../android.os/Bundle.md)! | [getExtras](AbstractCursor.md))`()` <br /> |
+| abstract [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getFloat](AbstractCursor.md))`(`column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInt](AbstractCursor.md))`(`column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
-| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getLong](../android/database/AbstractCursor.md))`(`column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| open [Uri](../android/net/Uri.md)! | [getNotificationUri](../android/database/AbstractCursor.md))`()` <br /> |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Uri](../android/net/Uri.md)!\>? | [getNotificationUris](../android/database/AbstractCursor.md))`()` <br /> |
+| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getLong](AbstractCursor.md))`(`column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Uri](../android.net/Uri.md)! | [getNotificationUri](AbstractCursor.md))`()` <br /> |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Uri](../android.net/Uri.md)!\>? | [getNotificationUris](AbstractCursor.md))`()` <br /> |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPosition](../android/database/AbstractCursor.md))`()` <br /> |
-| abstract [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [getShort](../android/database/AbstractCursor.md))`(`column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getString](../android/database/AbstractCursor.md))`(`column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPosition](AbstractCursor.md))`()` <br /> |
+| abstract [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [getShort](AbstractCursor.md))`(`column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getString](AbstractCursor.md))`(`column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getType](../android/database/AbstractCursor.md))`(`column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getWantsAllOnMoveCalls](../android/database/AbstractCursor.md))`()` <br /> |
-| open [CursorWindow](../android/database/CursorWindow.md)! | [getWindow](../android/database/AbstractCursor.md))`()` If the cursor is backed by a [CursorWindow](../android/database/CursorWindow.md), returns a pre-filled window with the contents of the cursor, otherwise null. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getType](AbstractCursor.md))`(`column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getWantsAllOnMoveCalls](AbstractCursor.md))`()` <br /> |
+| open [CursorWindow](CursorWindow.md)! | [getWindow](AbstractCursor.md))`()` If the cursor is backed by a [CursorWindow](CursorWindow.md), returns a pre-filled window with the contents of the cursor, otherwise null. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAfterLast](../android/database/AbstractCursor.md))`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isBeforeFirst](../android/database/AbstractCursor.md))`()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isClosed](../android/database/AbstractCursor.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAfterLast](AbstractCursor.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isBeforeFirst](AbstractCursor.md))`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isClosed](AbstractCursor.md))`()` <br /> |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFirst](../android/database/AbstractCursor.md))`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLast](../android/database/AbstractCursor.md))`()` <br /> |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isNull](../android/database/AbstractCursor.md))`(`column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFirst](AbstractCursor.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLast](AbstractCursor.md))`()` <br /> |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isNull](AbstractCursor.md))`(`column:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [move](../android/database/AbstractCursor.md))`(`offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [moveToFirst](../android/database/AbstractCursor.md))`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [moveToLast](../android/database/AbstractCursor.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [move](AbstractCursor.md))`(`offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [moveToFirst](AbstractCursor.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [moveToLast](AbstractCursor.md))`()` <br /> |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [moveToNext](../android/database/AbstractCursor.md))`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [moveToPosition](../android/database/AbstractCursor.md))`(`position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [moveToPrevious](../android/database/AbstractCursor.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [moveToNext](AbstractCursor.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [moveToPosition](AbstractCursor.md))`(`position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [moveToPrevious](AbstractCursor.md))`()` <br /> |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onMove](../android/database/AbstractCursor.md))`(`oldPosition:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `newPosition:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` This function is called every time the cursor is successfully scrolled to a new position, giving the subclass a chance to update any state it may have. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerContentObserver](../android/database/AbstractCursor.md))`(`observer:` ` [ContentObserver](../android/database/ContentObserver.md)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerDataSetObserver](../android/database/AbstractCursor.md))`(`observer:` ` [DataSetObserver](../android/database/DataSetObserver.md)!`)` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onMove](AbstractCursor.md))`(`oldPosition:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `newPosition:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` This function is called every time the cursor is successfully scrolled to a new position, giving the subclass a chance to update any state it may have. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerContentObserver](AbstractCursor.md))`(`observer:` ` [ContentObserver](ContentObserver.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerDataSetObserver](AbstractCursor.md))`(`observer:` ` [DataSetObserver](DataSetObserver.md)!`)` <br /> |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [requery](../android/database/AbstractCursor.md))`()` <br /> |
-| open [Bundle](../android/os/Bundle.md)! | [respond](../android/database/AbstractCursor.md))`(`extras:` ` [Bundle](../android/os/Bundle.md)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setExtras](../android/database/AbstractCursor.md))`(`extras:` ` [Bundle](../android/os/Bundle.md)!`)` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [requery](AbstractCursor.md))`()` <br /> |
+| open [Bundle](../android.os/Bundle.md)! | [respond](AbstractCursor.md))`(`extras:` ` [Bundle](../android.os/Bundle.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setExtras](AbstractCursor.md))`(`extras:` ` [Bundle](../android.os/Bundle.md)!`)` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setNotificationUri](../android/database/AbstractCursor.md))`(`cr:` ` [ContentResolver](../android/content/ContentResolver.md)!`, `notifyUri:` ` [Uri](../android/net/Uri.md)!`)` Specifies a content URI to watch for changes. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setNotificationUris](../android/database/AbstractCursor.md))`(`cr:` ` [ContentResolver](../android/content/ContentResolver.md)`, `notifyUris:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Uri](../android/net/Uri.md)!>`)` Similar to [setNotificationUri(android.content.ContentResolver,android.net.Uri)](../android/database/Cursor.md)), except this version allows to watch multiple content URIs for changes. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterContentObserver](../android/database/AbstractCursor.md))`(`observer:` ` [ContentObserver](../android/database/ContentObserver.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setNotificationUri](AbstractCursor.md))`(`cr:` ` [ContentResolver](../android.content/ContentResolver.md)!`, `notifyUri:` ` [Uri](../android.net/Uri.md)!`)` Specifies a content URI to watch for changes. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setNotificationUris](AbstractCursor.md))`(`cr:` ` [ContentResolver](../android.content/ContentResolver.md)`, `notifyUris:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Uri](../android.net/Uri.md)!>`)` Similar to [setNotificationUri(android.content.ContentResolver,android.net.Uri)](Cursor.md)), except this version allows to watch multiple content URIs for changes. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterContentObserver](AbstractCursor.md))`(`observer:` ` [ContentObserver](ContentObserver.md)!`)` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterDataSetObserver](../android/database/AbstractCursor.md))`(`observer:` ` [DataSetObserver](../android/database/DataSetObserver.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterDataSetObserver](AbstractCursor.md))`(`observer:` ` [DataSetObserver](DataSetObserver.md)!`)` <br /> |
 
 | Protected methods ||
 |----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkPosition](../android/database/AbstractCursor.md))`()` This function throws CursorIndexOutOfBoundsException if the cursor position is out of bounds. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](../android/database/AbstractCursor.md))`()` <br /> |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getUpdatedField](../android/database/AbstractCursor.md))`(`columnIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkPosition](AbstractCursor.md))`()` This function throws CursorIndexOutOfBoundsException if the cursor position is out of bounds. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](AbstractCursor.md))`()` <br /> |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getUpdatedField](AbstractCursor.md))`(`columnIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFieldUpdated](../android/database/AbstractCursor.md))`(`columnIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onChange](../android/database/AbstractCursor.md))`(`selfChange:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Subclasses must call this method when they finish committing updates to notify all observers. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFieldUpdated](AbstractCursor.md))`(`columnIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onChange](AbstractCursor.md))`(`selfChange:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Subclasses must call this method when they finish committing updates to notify all observers. |
 
 | Properties ||
 |----------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [mClosed](../android/database/AbstractCursor.md) <br /> |
-| [ContentResolver](../android/content/ContentResolver.md)! | [mContentResolver](../android/database/AbstractCursor.md) <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [mPos](../android/database/AbstractCursor.md) <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [mClosed](AbstractCursor.md) <br /> |
+| [ContentResolver](../android.content/ContentResolver.md)! | [mContentResolver](AbstractCursor.md) <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [mPos](AbstractCursor.md) <br /> |
 | --- | --- |
 
 ## Public constructors
@@ -152,7 +152,7 @@ open fun copyStringToBuffer(
 | Parameters ||
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `columnIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the zero-based index of the target column. if the target column is null, return buffer Value is 0 or greater |
-| `buffer` | [CharArrayBuffer](../android/database/CharArrayBuffer.md)!:the buffer to copy the text into. |
+| `buffer` | [CharArrayBuffer](CharArrayBuffer.md)!:the buffer to copy the text into. |
 
 ### deactivate
 
@@ -176,7 +176,7 @@ open fun fillWindow(
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------|
 | `position` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The zero-based index of the first row to copy into the window. |
-| `window` | [CursorWindow](../android/database/CursorWindow.md)!:The window to fill. |
+| `window` | [CursorWindow](CursorWindow.md)!:The window to fill. |
 
 ### getBlob
 
@@ -308,7 +308,7 @@ open fun getExtras(): Bundle!
 
 | Return ||
 |-----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Bundle](../android/os/Bundle.md)! | cursor-defined values, or [Bundle.EMPTY](../android/os/Bundle.md) if there are no values. Never`null`. |
+| [Bundle](../android.os/Bundle.md)! | cursor-defined values, or [Bundle.EMPTY](../android.os/Bundle.md) if there are no values. Never`null`. |
 
 ### getFloat
 
@@ -368,7 +368,7 @@ open fun getNotificationUri(): Uri!
 
 | Return ||
 |------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Uri](../android/net/Uri.md)! | Returns a URI that can be used with [ContentResolver.registerContentObserver](../android/content/ContentResolver.md))to find out about changes to this Cursor's data. May be null if no notification URI has been set. |
+| [Uri](../android.net/Uri.md)! | Returns a URI that can be used with [ContentResolver.registerContentObserver](../android.content/ContentResolver.md))to find out about changes to this Cursor's data. May be null if no notification URI has been set. |
 
 ### getNotificationUris
 
@@ -380,7 +380,7 @@ open fun getNotificationUris(): MutableList<Uri!>?
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Uri](../android/net/Uri.md)!>? | Returns URIs that can be used with [ContentResolver.registerContentObserver](../android/content/ContentResolver.md))to find out about changes to this Cursor's data. May be null if no notification URI has been set. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Uri](../android.net/Uri.md)!>? | Returns URIs that can be used with [ContentResolver.registerContentObserver](../android.content/ContentResolver.md))to find out about changes to this Cursor's data. May be null if no notification URI has been set. |
 
 ### getPosition
 
@@ -440,7 +440,7 @@ open fun getType(column: Int): Int
 
 | Return ||
 |----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | column value type Value is [android.database.Cursor#FIELD_TYPE_NULL](../android/database/Cursor.md), [android.database.Cursor#FIELD_TYPE_INTEGER](../android/database/Cursor.md), [android.database.Cursor#FIELD_TYPE_FLOAT](../android/database/Cursor.md), [android.database.Cursor#FIELD_TYPE_STRING](../android/database/Cursor.md), or [android.database.Cursor#FIELD_TYPE_BLOB](../android/database/Cursor.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | column value type Value is [android.database.Cursor#FIELD_TYPE_NULL](Cursor.md), [android.database.Cursor#FIELD_TYPE_INTEGER](Cursor.md), [android.database.Cursor#FIELD_TYPE_FLOAT](Cursor.md), [android.database.Cursor#FIELD_TYPE_STRING](Cursor.md), or [android.database.Cursor#FIELD_TYPE_BLOB](Cursor.md) |
 
 ### getWantsAllOnMoveCalls
 
@@ -462,11 +462,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun getWindow(): CursorWindow!
 ```
 
-If the cursor is backed by a [CursorWindow](../android/database/CursorWindow.md), returns a pre-filled window with the contents of the cursor, otherwise null.
+If the cursor is backed by a [CursorWindow](CursorWindow.md), returns a pre-filled window with the contents of the cursor, otherwise null.
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|----------------------------------------------------------------|
-| [CursorWindow](../android/database/CursorWindow.md)! | The pre-filled window that backs this cursor, or null if none. |
+| [CursorWindow](CursorWindow.md)! | The pre-filled window that backs this cursor, or null if none. |
 
 ### isAfterLast
 
@@ -656,7 +656,7 @@ open fun registerContentObserver(observer: ContentObserver!): Unit
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `observer` | [ContentObserver](../android/database/ContentObserver.md)!:the object that gets notified when the content backing the cursor changes. |
+| `observer` | [ContentObserver](ContentObserver.md)!:the object that gets notified when the content backing the cursor changes. |
 
 ### registerDataSetObserver
 
@@ -668,7 +668,7 @@ open fun registerDataSetObserver(observer: DataSetObserver!): Unit
 
 | Parameters ||
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `observer` | [DataSetObserver](../android/database/DataSetObserver.md)!:the object that gets notified when the cursors data set changes. |
+| `observer` | [DataSetObserver](DataSetObserver.md)!:the object that gets notified when the cursors data set changes. |
 
 ### requery
 
@@ -692,11 +692,11 @@ open fun respond(extras: Bundle!): Bundle!
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `extras` | [Bundle](../android/os/Bundle.md)!:extra values, or [Bundle.EMPTY](../android/os/Bundle.md). Never`null`. |
+| `extras` | [Bundle](../android.os/Bundle.md)!:extra values, or [Bundle.EMPTY](../android.os/Bundle.md). Never`null`. |
 
 | Return ||
 |-----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| [Bundle](../android/os/Bundle.md)! | extra values, or [Bundle.EMPTY](../android/os/Bundle.md). Never`null`. |
+| [Bundle](../android.os/Bundle.md)! | extra values, or [Bundle.EMPTY](../android.os/Bundle.md). Never`null`. |
 
 ### setExtras
 
@@ -708,7 +708,7 @@ open fun setExtras(extras: Bundle!): Unit
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `extras` | [Bundle](../android/os/Bundle.md)!: [Bundle](../android/os/Bundle.md) to set, or null to set an empty bundle. |
+| `extras` | [Bundle](../android.os/Bundle.md)!: [Bundle](../android.os/Bundle.md) to set, or null to set an empty bundle. |
 
 ### setNotificationUri
 
@@ -725,9 +725,9 @@ Specifies a content URI to watch for changes.
 
 | Parameters ||
 |-------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `cr` | [ContentResolver](../android/content/ContentResolver.md)!:The content resolver from the caller's context. |
+| `cr` | [ContentResolver](../android.content/ContentResolver.md)!:The content resolver from the caller's context. |
 | `uri` | The content URI to watch. |
-| `notifyUri` | [Uri](../android/net/Uri.md)!:The URI to watch for changes. This can be a specific row URI, or a base URI for a whole class of content. |
+| `notifyUri` | [Uri](../android.net/Uri.md)!:The URI to watch for changes. This can be a specific row URI, or a base URI for a whole class of content. |
 | --- | --- |
 
 ### setNotificationUris
@@ -741,17 +741,17 @@ open fun setNotificationUris(
 ): Unit
 ```
 
-Similar to [setNotificationUri(android.content.ContentResolver,android.net.Uri)](../android/database/Cursor.md)), except this version allows to watch multiple content URIs for changes.
+Similar to [setNotificationUri(android.content.ContentResolver,android.net.Uri)](Cursor.md)), except this version allows to watch multiple content URIs for changes.
 
-If this is not implemented, this is equivalent to calling [setNotificationUri(android.content.ContentResolver,android.net.Uri)](../android/database/Cursor.md))with the first URI in`uris`.
+If this is not implemented, this is equivalent to calling [setNotificationUri(android.content.ContentResolver,android.net.Uri)](Cursor.md))with the first URI in`uris`.
 
-Calling this overrides any previous call to [setNotificationUri(android.content.ContentResolver,android.net.Uri)](../android/database/Cursor.md)).
+Calling this overrides any previous call to [setNotificationUri(android.content.ContentResolver,android.net.Uri)](Cursor.md)).
 
 | Parameters ||
 |--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `cr` | [ContentResolver](../android/content/ContentResolver.md):This value cannot be`null`. |
+| `cr` | [ContentResolver](../android.content/ContentResolver.md):This value cannot be`null`. |
 | `uris` | The content URIs to watch. This value cannot be`null`. |
-| `notifyUris` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Uri](../android/net/Uri.md)!\>:This value cannot be`null`. |
+| `notifyUris` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Uri](../android.net/Uri.md)!\>:This value cannot be`null`. |
 | --- | --- |
 
 ### unregisterContentObserver
@@ -764,7 +764,7 @@ open fun unregisterContentObserver(observer: ContentObserver!): Unit
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------|
-| `observer` | [ContentObserver](../android/database/ContentObserver.md)!:the object to unregister. |
+| `observer` | [ContentObserver](ContentObserver.md)!:the object to unregister. |
 
 ### unregisterDataSetObserver
 
@@ -776,7 +776,7 @@ open fun unregisterDataSetObserver(observer: DataSetObserver!): Unit
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------|
-| `observer` | [DataSetObserver](../android/database/DataSetObserver.md)!:the object to unregister. |
+| `observer` | [DataSetObserver](DataSetObserver.md)!:the object to unregister. |
 
 ## Protected methods
 
@@ -853,7 +853,7 @@ Deprecated in [API level 23](https://developer.android.com/guide/topics/manifest
 protected var mClosed: Boolean
 ```
 
-**Deprecated:** *Use [isClosed()](../android/database/AbstractCursor.md))instead.* 
+**Deprecated:** *Use [isClosed()](AbstractCursor.md))instead.* 
 
 ### mContentResolver
 
@@ -875,4 +875,4 @@ Deprecated in [API level 23](https://developer.android.com/guide/topics/manifest
 protected var mPos: Int
 ```
 
-**Deprecated:** *Use [getPosition()](../android/database/AbstractCursor.md))instead.*
+**Deprecated:** *Use [getPosition()](AbstractCursor.md))instead.*

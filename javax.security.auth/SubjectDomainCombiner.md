@@ -10,7 +10,7 @@ open class SubjectDomainCombiner : DomainCombiner
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.security.auth.SubjectDomainCombiner](../javax/security/auth/SubjectDomainCombiner.md) |
+| ↳ | [javax.security.auth.SubjectDomainCombiner](SubjectDomainCombiner.md) |
 
 Legacy security code; do not use.
 
@@ -18,12 +18,12 @@ Legacy security code; do not use.
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SubjectDomainCombiner](../javax/security/auth/SubjectDomainCombiner.md))`(`subject:` ` [Subject](../javax/security/auth/Subject.md)!`)` <br /> |
+| [SubjectDomainCombiner](SubjectDomainCombiner.md))`(`subject:` ` [Subject](Subject.md)!`)` <br /> |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ProtectionDomain](../java/security/ProtectionDomain.md)!\>! | [combine](../javax/security/auth/SubjectDomainCombiner.md))`(`currentDomains:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ProtectionDomain](../java/security/ProtectionDomain.md)!>!`, `assignedDomains:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ProtectionDomain](../java/security/ProtectionDomain.md)!>!`)` <br /> |
-| open [Subject](../javax/security/auth/Subject.md)! | [getSubject](../javax/security/auth/SubjectDomainCombiner.md))`()` <br /> |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ProtectionDomain](../java.security/ProtectionDomain.md)!\>! | [combine](SubjectDomainCombiner.md))`(`currentDomains:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ProtectionDomain](../java.security/ProtectionDomain.md)!>!`, `assignedDomains:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ProtectionDomain](../java.security/ProtectionDomain.md)!>!`)` <br /> |
+| open [Subject](Subject.md)! | [getSubject](SubjectDomainCombiner.md))`()` <br /> |
 
 ## Public constructors
 

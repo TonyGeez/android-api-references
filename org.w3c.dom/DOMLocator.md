@@ -8,7 +8,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 interface DOMLocator
 ```
 
-| [org.w3c.dom.DOMLocator](../org/w3c/dom/DOMLocator.md) |
+| [org.w3c.dom.DOMLocator](DOMLocator.md) |
 
 `DOMLocator`is an interface that describes a location (e.g. where an error occurred).
 
@@ -18,13 +18,13 @@ See also the [Document Object Model (DOM) Level 3 Core Specification](http://www
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getByteOffset](../org/w3c/dom/DOMLocator.md))`()` The byte offset into the input source this locator is pointing to or`-1`if there is no byte offset available. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getColumnNumber](../org/w3c/dom/DOMLocator.md))`()` The column number this locator is pointing to, or`-1`if there is no column number available. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLineNumber](../org/w3c/dom/DOMLocator.md))`()` The line number this locator is pointing to, or`-1`if there is no column number available. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getByteOffset](DOMLocator.md))`()` The byte offset into the input source this locator is pointing to or`-1`if there is no byte offset available. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getColumnNumber](DOMLocator.md))`()` The column number this locator is pointing to, or`-1`if there is no column number available. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLineNumber](DOMLocator.md))`()` The line number this locator is pointing to, or`-1`if there is no column number available. |
 | --- | --- |
-| abstract [Node](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-node/index.html)! | [getRelatedNode](../org/w3c/dom/DOMLocator.md))`()` The node this locator is pointing to, or`null`if no node is available. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getUri](../org/w3c/dom/DOMLocator.md))`()` The URI this locator is pointing to, or`null`if no URI is available. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getUtf16Offset](../org/w3c/dom/DOMLocator.md))`()` The UTF-16, as defined in \[Unicode\] and Amendment 1 of \[ISO/IEC 10646\], offset into the input source this locator is pointing to or`-1`if there is no UTF-16 offset available. |
+| abstract [Node](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-node/index.html)! | [getRelatedNode](DOMLocator.md))`()` The node this locator is pointing to, or`null`if no node is available. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getUri](DOMLocator.md))`()` The URI this locator is pointing to, or`null`if no URI is available. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getUtf16Offset](DOMLocator.md))`()` The UTF-16, as defined in \[Unicode\] and Amendment 1 of \[ISO/IEC 10646\], offset into the input source this locator is pointing to or`-1`if there is no UTF-16 offset available. |
 | --- | --- |
 
 ## Public methods

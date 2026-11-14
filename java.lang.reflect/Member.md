@@ -8,12 +8,12 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface Member
 ```
 
-| [java.lang.reflect.Member](../java/lang/reflect/Member.md) |
+| [java.lang.reflect.Member](Member.md) |
 
-| Known Direct Subclasses [Executable](../java/lang/reflect/Executable.md), [Field](../java/lang/reflect/Field.md) |-------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Executable](../java/lang/reflect/Executable.md) | A shared superclass for the common functionality of [Method](../java/lang/reflect/Method.md) and [Constructor](../java/lang/reflect/Constructor.md). | | [Field](../java/lang/reflect/Field.md) | A`Field`provides information about, and dynamic access to, a single field of a class or an interface. | |
+| Known Direct Subclasses [Executable](Executable.md), [Field](Field.md) |-------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Executable](Executable.md) | A shared superclass for the common functionality of [Method](Method.md) and [Constructor](Constructor.md). | | [Field](Field.md) | A`Field`provides information about, and dynamic access to, a single field of a class or an interface. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [Constructor](../java/lang/reflect/Constructor.md), [Method](../java/lang/reflect/Method.md) |---------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------| | [Constructor](../java/lang/reflect/Constructor.md) | `Constructor`provides information about, and access to, a single constructor for a class. | | [Method](../java/lang/reflect/Method.md) | A`Method`provides information about, and access to, a single method on a class or interface. | |
+| Known Indirect Subclasses [Constructor](Constructor.md), [Method](Method.md) |---------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------| | [Constructor](Constructor.md) | `Constructor`provides information about, and access to, a single constructor for a class. | | [Method](Method.md) | A`Method`provides information about, and access to, a single method on a class or interface. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Member is an interface that reflects identifying information about a single member (a field or a method) or a constructor.
@@ -22,16 +22,16 @@ Member is an interface that reflects identifying information about a single memb
 
 | Constants ||
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DECLARED](../java/lang/reflect/Member.md) Identifies the set of declared members of a class or interface. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PUBLIC](../java/lang/reflect/Member.md) Identifies the set of all public members of a class or interface, including inherited members. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DECLARED](Member.md) Identifies the set of declared members of a class or interface. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PUBLIC](Member.md) Identifies the set of all public members of a class or interface, including inherited members. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Class](../java/lang/Class.md)\<\*\> | [getDeclaringClass](../java/lang/reflect/Member.md))`()` Returns the Class object representing the class or interface that declares the member or constructor represented by this Member. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getModifiers](../java/lang/reflect/Member.md))`()` Returns the Java language modifiers for the member or constructor represented by this Member, as an integer. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getName](../java/lang/reflect/Member.md))`()` Returns the simple name of the underlying member or constructor represented by this Member. |
+| abstract [Class](../java.lang/Class.md)\<\*\> | [getDeclaringClass](Member.md))`()` Returns the Class object representing the class or interface that declares the member or constructor represented by this Member. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getModifiers](Member.md))`()` Returns the Java language modifiers for the member or constructor represented by this Member, as an integer. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getName](Member.md))`()` Returns the simple name of the underlying member or constructor represented by this Member. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSynthetic](../java/lang/reflect/Member.md))`()` Returns`true`if this member was introduced by the compiler; returns`false`otherwise. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSynthetic](Member.md))`()` Returns`true`if this member was introduced by the compiler; returns`false`otherwise. |
 
 ## Constants
 
@@ -73,7 +73,7 @@ Returns the Class object representing the class or interface that declares the m
 
 | Return ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------|
-| [Class](../java/lang/Class.md)<*> | an object representing the declaring class of the underlying member |
+| [Class](../java.lang/Class.md)<*> | an object representing the declaring class of the underlying member |
 
 ### getModifiers
 
@@ -91,7 +91,7 @@ Returns the Java language modifiers for the member or constructor represented by
 
 **See Also**
 
-- [java.lang.reflect.Modifier](../java/lang/reflect/Modifier.md) 
+- [java.lang.reflect.Modifier](Modifier.md) 
 
 ### getName
 

@@ -4,7 +4,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 
 # LocaleManager
 
-Kotlin| [Java](../android/app/LocaleManager.md) 
+Kotlin| [Java](LocaleManager.md) 
 | --- | --- |
 
 ```
@@ -13,23 +13,23 @@ open class LocaleManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.LocaleManager](../android/app/LocaleManager.md) |
+| ↳ | [android.app.LocaleManager](LocaleManager.md) |
 
 This class gives access to system locale services. These services allow applications to control granular locale settings (such as per-app locales) or override their list of supported locales while running.
 
-Third party applications should treat this as a write-side surface, and continue reading locales via their in-process [LocaleList](../android/os/LocaleList.md) s.
+Third party applications should treat this as a write-side surface, and continue reading locales via their in-process [LocaleList](../android.os/LocaleList.md) s.
 
 ## Summary
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [LocaleList](../android/os/LocaleList.md) | [getApplicationLocales](../android/app/LocaleManager.md))`()` Returns the UI locales for the calling app. |
-| open [LocaleList](../android/os/LocaleList.md) | [getApplicationLocales](../android/app/LocaleManager.md))`(`appPackageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns the current UI locales for a specified app (described by package name). |
-| open [LocaleConfig](../android/app/LocaleConfig.md)? | [getOverrideLocaleConfig](../android/app/LocaleManager.md))`()` Returns the override LocaleConfig for the calling app. |
+| open [LocaleList](../android.os/LocaleList.md) | [getApplicationLocales](LocaleManager.md))`()` Returns the UI locales for the calling app. |
+| open [LocaleList](../android.os/LocaleList.md) | [getApplicationLocales](LocaleManager.md))`(`appPackageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns the current UI locales for a specified app (described by package name). |
+| open [LocaleConfig](LocaleConfig.md)? | [getOverrideLocaleConfig](LocaleManager.md))`()` Returns the override LocaleConfig for the calling app. |
 | --- | --- |
-| open [LocaleList](../android/os/LocaleList.md) | [getSystemLocales](../android/app/LocaleManager.md))`()` Returns the current system locales, ignoring app-specific overrides. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setApplicationLocales](../android/app/LocaleManager.md))`(`locales:` ` [LocaleList](../android/os/LocaleList.md)`)` Sets the UI locales for the calling app. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOverrideLocaleConfig](../android/app/LocaleManager.md))`(`localeConfig:` ` [LocaleConfig](../android/app/LocaleConfig.md)?`)` Sets the override LocaleConfig for the calling app. |
+| open [LocaleList](../android.os/LocaleList.md) | [getSystemLocales](LocaleManager.md))`()` Returns the current system locales, ignoring app-specific overrides. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setApplicationLocales](LocaleManager.md))`(`locales:` ` [LocaleList](../android.os/LocaleList.md)`)` Sets the UI locales for the calling app. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOverrideLocaleConfig](LocaleManager.md))`(`localeConfig:` ` [LocaleConfig](LocaleConfig.md)?`)` Sets the override LocaleConfig for the calling app. |
 | --- | --- |
 
 ## Public methods
@@ -44,11 +44,11 @@ open fun getApplicationLocales(): LocaleList
 
 Returns the UI locales for the calling app.
 
-Returns a [LocaleList.getEmptyLocaleList()](../android/os/LocaleList.md))if no app-specific locales are set.
+Returns a [LocaleList.getEmptyLocaleList()](../android.os/LocaleList.md))if no app-specific locales are set.
 
 | Return ||
 |------------------------------------------------------------------------------------------|-----------------------------|
-| [LocaleList](../android/os/LocaleList.md) | This value cannot be`null`. |
+| [LocaleList](../android.os/LocaleList.md) | This value cannot be`null`. |
 
 ### getApplicationLocales
 
@@ -60,11 +60,11 @@ open fun getApplicationLocales(appPackageName: String): LocaleList
 
 Returns the current UI locales for a specified app (described by package name).
 
-Returns a [LocaleList.getEmptyLocaleList()](../android/os/LocaleList.md))if no app-specific locales are set.
+Returns a [LocaleList.getEmptyLocaleList()](../android.os/LocaleList.md))if no app-specific locales are set.
 
-This API can be used by an app's installer (per [android.content.pm.InstallSourceInfo#getInstallingPackageName](../android/content/pm/InstallSourceInfo.md))) to retrieve the app's locales.
+This API can be used by an app's installer (per [android.content.pm.InstallSourceInfo#getInstallingPackageName](../android.content.pm/InstallSourceInfo.md))) to retrieve the app's locales.
 
-This API can be used by the current input method to retrieve locales of another packages. All other cases require`android.Manifest.permission#READ_APP_SPECIFIC_LOCALES`. Apps should generally retrieve their own locales via their in-process LocaleLists, or by calling [getApplicationLocales()](../android/app/LocaleManager.md)).
+This API can be used by the current input method to retrieve locales of another packages. All other cases require`android.Manifest.permission#READ_APP_SPECIFIC_LOCALES`. Apps should generally retrieve their own locales via their in-process LocaleLists, or by calling [getApplicationLocales()](LocaleManager.md)).
 
 | Parameters ||
 |------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -72,7 +72,7 @@ This API can be used by the current input method to retrieve locales of another 
 
 | Return ||
 |------------------------------------------------------------------------------------------|-----------------------------|
-| [LocaleList](../android/os/LocaleList.md) | This value cannot be`null`. |
+| [LocaleList](../android.os/LocaleList.md) | This value cannot be`null`. |
 
 ### getOverrideLocaleConfig
 
@@ -86,7 +86,7 @@ Returns the override LocaleConfig for the calling app.
 
 | Return ||
 |------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-| [LocaleConfig](../android/app/LocaleConfig.md)? | the override LocaleConfig, or`null`if the LocaleConfig isn't overridden. |
+| [LocaleConfig](LocaleConfig.md)? | the override LocaleConfig, or`null`if the LocaleConfig isn't overridden. |
 
 ### getSystemLocales
 
@@ -98,13 +98,13 @@ open fun getSystemLocales(): LocaleList
 
 Returns the current system locales, ignoring app-specific overrides.
 
-**Note:** Apps should generally access the user's locale preferences as indicated in their in-process [LocaleList](../android/os/LocaleList.md) s. However, in case an app-specific locale is set, this method helps cater to rare use-cases which might require specifically knowing the system locale.
+**Note:** Apps should generally access the user's locale preferences as indicated in their in-process [LocaleList](../android.os/LocaleList.md) s. However, in case an app-specific locale is set, this method helps cater to rare use-cases which might require specifically knowing the system locale.
 
 **Note:**This API is not user-aware. It returns the system locales for the foreground user.
 
 | Return ||
 |------------------------------------------------------------------------------------------|-----------------------------|
-| [LocaleList](../android/os/LocaleList.md) | This value cannot be`null`. |
+| [LocaleList](../android.os/LocaleList.md) | This value cannot be`null`. |
 
 ### setApplicationLocales
 
@@ -116,7 +116,7 @@ open fun setApplicationLocales(locales: LocaleList): Unit
 
 Sets the UI locales for the calling app.
 
-Pass a [LocaleList.getEmptyLocaleList()](../android/os/LocaleList.md))to reset to the system locale.
+Pass a [LocaleList.getEmptyLocaleList()](../android.os/LocaleList.md))to reset to the system locale.
 
 **Note:** Changes to app locales will result in a configuration change (and potentially an Activity lifecycle event) being applied to the calling application. For more information, see the [section on handling configuration changes](https://developer.android.com/guide/topics/resources/runtime-changes). The set locales are persisted; they are backed up if the user has enabled Backup \& Restore.
 
@@ -124,7 +124,7 @@ Pass a [LocaleList.getEmptyLocaleList()](../android/os/LocaleList.md))to reset t
 
 | Parameters ||
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `locales` | [LocaleList](../android/os/LocaleList.md):the desired locales for the calling app. This value cannot be`null`. |
+| `locales` | [LocaleList](../android.os/LocaleList.md):the desired locales for the calling app. This value cannot be`null`. |
 
 ### setOverrideLocaleConfig
 
@@ -138,7 +138,7 @@ Sets the override LocaleConfig for the calling app.
 
 **Note:**Only the app itself with the same user can override its own LocaleConfig.
 
-**Note:** This function takes in a [LocaleConfig](../android/app/LocaleConfig.md) which is intended to override the original config in the application's resources. This LocaleConfig will become the override config, and stored in a system file for future access.
+**Note:** This function takes in a [LocaleConfig](LocaleConfig.md) which is intended to override the original config in the application's resources. This LocaleConfig will become the override config, and stored in a system file for future access.
 
 **Note:** Using this function, applications can update their list of supported locales while running, without an update of the application's software. For more information, see the [section on dynamic updates for an app's localeConfig](https://developer.android.com/about/versions/14/features#app-languages).
 
@@ -146,4 +146,4 @@ Applications can remove the override LocaleConfig with a`null`object.
 
 | Parameters ||
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `localeConfig` | [LocaleConfig](../android/app/LocaleConfig.md)?:the desired [LocaleConfig](../android/app/LocaleConfig.md) for the calling app. This value may be`null`. |
+| `localeConfig` | [LocaleConfig](LocaleConfig.md)?:the desired [LocaleConfig](LocaleConfig.md) for the calling app. This value may be`null`. |

@@ -8,7 +8,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 interface LSResourceResolver
 ```
 
-| [org.w3c.dom.ls.LSResourceResolver](../org/w3c/dom/ls/LSResourceResolver.md) |
+| [org.w3c.dom.ls.LSResourceResolver](LSResourceResolver.md) |
 
 `LSResourceResolver`provides a way for applications to redirect references to external resources.
 
@@ -26,7 +26,7 @@ See also the [Document Object Model (DOM) Level 3 Load and Save Specification](h
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [LSInput](../org/w3c/dom/ls/LSInput.md)! | [resolveResource](../org/w3c/dom/ls/LSResourceResolver.md))`(`type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `namespaceURI:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `publicId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `baseURI:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Allow the application to resolve external resources. |
+| abstract [LSInput](LSInput.md)! | [resolveResource](LSResourceResolver.md))`(`type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `namespaceURI:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `publicId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `baseURI:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Allow the application to resolve external resources. |
 
 ## Public methods
 
@@ -59,4 +59,4 @@ Application writers can use this method to redirect external system identifiers 
 
 | Return ||
 |-----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| [LSInput](../org/w3c/dom/ls/LSInput.md)! | A`LSInput`object describing the new input source, or`null`to request that the parser open a regular URI connection to the resource. |
+| [LSInput](LSInput.md)! | A`LSInput`object describing the new input source, or`null`to request that the parser open a regular URI connection to the resource. |

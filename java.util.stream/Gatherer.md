@@ -8,13 +8,13 @@ Added in [API level 36.1](https://developer.android.com/guide/topics/manifest/us
 interface Gatherer<T : Any!, A : Any!, R : Any!>
 ```
 
-| [java.util.stream.Gatherer](../java/util/stream/Gatherer.md) |
+| [java.util.stream.Gatherer](Gatherer.md) |
 
 An intermediate operation that transforms a stream of input elements into a stream of output elements, optionally applying a final action when the end of the upstream is reached. The transformation may be stateless or stateful, and may buffer input before producing any output.
 
 Gatherer operations can be performed either sequentially, or be parallelized -- if a combiner function is supplied.
 
-There are many examples of gathering operations, including but not limited to: grouping elements into batches (windowing functions); de-duplicating consecutively similar elements; incremental accumulation functions (prefix scan); incremental reordering functions, etc. The class [java.util.stream.Gatherers](../java/util/stream/Gatherers.md) provides implementations of common gathering operations.
+There are many examples of gathering operations, including but not limited to: grouping elements into batches (windowing functions); de-duplicating consecutively similar elements; incremental accumulation functions (prefix scan); incremental reordering functions, etc. The class [java.util.stream.Gatherers](Gatherers.md) provides implementations of common gathering operations.
 
 ## Summary
 
@@ -25,25 +25,25 @@ There are many examples of gathering operations, including but not limited to: g
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Gatherer](../java/util/stream/Gatherer.md)\<T,\*,RR\>! | [andThen](../java/util/stream/Gatherer.md))`(`that:` ` [Gatherer](../java/util/stream/Gatherer.md)<in` `R,` `*,` `out` `RR>!`)` Returns a composed Gatherer which connects the output of this Gatherer to the input of that Gatherer. |
-| open [BinaryOperator](../java/util/function/BinaryOperator.md)\<A\>! | [combiner](../java/util/stream/Gatherer.md))`()` A function which accepts two intermediate states and combines them into one. |
-| openstatic [BinaryOperator](../java/util/function/BinaryOperator.md)\<A\>! | [defaultCombiner](../java/util/stream/Gatherer.md))`()` Returns a combiner which is the default combiner of a Gatherer. |
+| open [Gatherer](Gatherer.md)\<T,\*,RR\>! | [andThen](Gatherer.md))`(`that:` ` [Gatherer](Gatherer.md)<in` `R,` `*,` `out` `RR>!`)` Returns a composed Gatherer which connects the output of this Gatherer to the input of that Gatherer. |
+| open [BinaryOperator](../java.util.function/BinaryOperator.md)\<A\>! | [combiner](Gatherer.md))`()` A function which accepts two intermediate states and combines them into one. |
+| openstatic [BinaryOperator](../java.util.function/BinaryOperator.md)\<A\>! | [defaultCombiner](Gatherer.md))`()` Returns a combiner which is the default combiner of a Gatherer. |
 | --- | --- |
-| openstatic [BiConsumer](../java/util/function/BiConsumer.md)\<A, [Gatherer.Downstream](../java/util/stream/Gatherer.Downstream.md)\<inR\>!\>! | [defaultFinisher](../java/util/stream/Gatherer.md))`()` Returns a`finisher`which is the default finisher of a`Gatherer`. |
-| openstatic [Supplier](../java/util/function/Supplier.md)\<A\>! | [defaultInitializer](../java/util/stream/Gatherer.md))`()` Returns an initializer which is the default initializer of a Gatherer. |
-| open [BiConsumer](../java/util/function/BiConsumer.md)\<A, [Gatherer.Downstream](../java/util/stream/Gatherer.Downstream.md)\<inR\>!\>! | [finisher](../java/util/stream/Gatherer.md))`()` A function which accepts the final intermediate state and a [Downstream](../java/util/stream/Gatherer.Downstream.md) object, allowing to perform a final action at the end of input elements. |
+| openstatic [BiConsumer](../java.util.function/BiConsumer.md)\<A, [Gatherer.Downstream](../java/util/stream/Gatherer.Downstream.md)\<inR\>!\>! | [defaultFinisher](Gatherer.md))`()` Returns a`finisher`which is the default finisher of a`Gatherer`. |
+| openstatic [Supplier](../java.util.function/Supplier.md)\<A\>! | [defaultInitializer](Gatherer.md))`()` Returns an initializer which is the default initializer of a Gatherer. |
+| open [BiConsumer](../java.util.function/BiConsumer.md)\<A, [Gatherer.Downstream](../java/util/stream/Gatherer.Downstream.md)\<inR\>!\>! | [finisher](Gatherer.md))`()` A function which accepts the final intermediate state and a [Downstream](../java/util/stream/Gatherer.Downstream.md) object, allowing to perform a final action at the end of input elements. |
 | --- | --- |
-| open [Supplier](../java/util/function/Supplier.md)\<A\>! | [initializer](../java/util/stream/Gatherer.md))`()` A function that produces an instance of the intermediate state used for this gathering operation. |
-| abstract [Gatherer.Integrator](../java/util/stream/Gatherer.Integrator.md)\<A,T,R\>! | [integrator](../java/util/stream/Gatherer.md))`()` A function which integrates provided elements, potentially using the provided intermediate state, optionally producing output to the provided [Downstream](../java/util/stream/Gatherer.Downstream.md). |
-| openstatic [Gatherer](../java/util/stream/Gatherer.md)\<T,A,R\>! | [of](../java/util/stream/Gatherer.md))`(`initializer:` ` [Supplier](../java/util/function/Supplier.md)<A>!`, `integrator:` ` [Gatherer.Integrator](../java/util/stream/Gatherer.Integrator.md)<A,` `T,` `R>!`, `combiner:` ` [BinaryOperator](../java/util/function/BinaryOperator.md)<A>!`, `finisher:` ` [BiConsumer](../java/util/function/BiConsumer.md)<A,` ` [Gatherer.Downstream](../java/util/stream/Gatherer.Downstream.md)<in` `R>!>!`)` Returns a new, parallelizable,`Gatherer`described by the given`initializer`,`integrator`,`combiner`and`finisher`. |
+| open [Supplier](../java.util.function/Supplier.md)\<A\>! | [initializer](Gatherer.md))`()` A function that produces an instance of the intermediate state used for this gathering operation. |
+| abstract [Gatherer.Integrator](../java/util/stream/Gatherer.Integrator.md)\<A,T,R\>! | [integrator](Gatherer.md))`()` A function which integrates provided elements, potentially using the provided intermediate state, optionally producing output to the provided [Downstream](../java/util/stream/Gatherer.Downstream.md). |
+| openstatic [Gatherer](Gatherer.md)\<T,A,R\>! | [of](Gatherer.md))`(`initializer:` ` [Supplier](../java.util.function/Supplier.md)<A>!`, `integrator:` ` [Gatherer.Integrator](../java/util/stream/Gatherer.Integrator.md)<A,` `T,` `R>!`, `combiner:` ` [BinaryOperator](../java.util.function/BinaryOperator.md)<A>!`, `finisher:` ` [BiConsumer](../java.util.function/BiConsumer.md)<A,` ` [Gatherer.Downstream](../java/util/stream/Gatherer.Downstream.md)<in` `R>!>!`)` Returns a new, parallelizable,`Gatherer`described by the given`initializer`,`integrator`,`combiner`and`finisher`. |
 | --- | --- |
-| openstatic [Gatherer](../java/util/stream/Gatherer.md)\<T, [Void](../java/lang/Void.md)!,R\>! | [of](../java/util/stream/Gatherer.md))`(`integrator:` ` [Gatherer.Integrator](../java/util/stream/Gatherer.Integrator.md)< [Void](../java/lang/Void.md)!,` `T,` `R>!`)` Returns a new, parallelizable, and stateless`Gatherer`described by the given`integrator`. |
-| openstatic [Gatherer](../java/util/stream/Gatherer.md)\<T, [Void](../java/lang/Void.md)!,R\>! | [of](../java/util/stream/Gatherer.md))`(`integrator:` ` [Gatherer.Integrator](../java/util/stream/Gatherer.Integrator.md)< [Void](../java/lang/Void.md)!,` `T,` `R>!`, `finisher:` ` [BiConsumer](../java/util/function/BiConsumer.md)< [Void](../java/lang/Void.md)!,` ` [Gatherer.Downstream](../java/util/stream/Gatherer.Downstream.md)<in` `R>!>!`)` Returns a new, parallelizable, and stateless`Gatherer`described by the given`integrator`and`finisher`. |
-| openstatic [Gatherer](../java/util/stream/Gatherer.md)\<T,A,R\>! | [ofSequential](../java/util/stream/Gatherer.md))`(`initializer:` ` [Supplier](../java/util/function/Supplier.md)<A>!`, `integrator:` ` [Gatherer.Integrator](../java/util/stream/Gatherer.Integrator.md)<A,` `T,` `R>!`)` Returns a new, sequential,`Gatherer`described by the given`initializer`and`integrator`. |
+| openstatic [Gatherer](Gatherer.md)\<T, [Void](../java.lang/Void.md)!,R\>! | [of](Gatherer.md))`(`integrator:` ` [Gatherer.Integrator](../java/util/stream/Gatherer.Integrator.md)< [Void](../java.lang/Void.md)!,` `T,` `R>!`)` Returns a new, parallelizable, and stateless`Gatherer`described by the given`integrator`. |
+| openstatic [Gatherer](Gatherer.md)\<T, [Void](../java.lang/Void.md)!,R\>! | [of](Gatherer.md))`(`integrator:` ` [Gatherer.Integrator](../java/util/stream/Gatherer.Integrator.md)< [Void](../java.lang/Void.md)!,` `T,` `R>!`, `finisher:` ` [BiConsumer](../java.util.function/BiConsumer.md)< [Void](../java.lang/Void.md)!,` ` [Gatherer.Downstream](../java/util/stream/Gatherer.Downstream.md)<in` `R>!>!`)` Returns a new, parallelizable, and stateless`Gatherer`described by the given`integrator`and`finisher`. |
+| openstatic [Gatherer](Gatherer.md)\<T,A,R\>! | [ofSequential](Gatherer.md))`(`initializer:` ` [Supplier](../java.util.function/Supplier.md)<A>!`, `integrator:` ` [Gatherer.Integrator](../java/util/stream/Gatherer.Integrator.md)<A,` `T,` `R>!`)` Returns a new, sequential,`Gatherer`described by the given`initializer`and`integrator`. |
 | --- | --- |
-| openstatic [Gatherer](../java/util/stream/Gatherer.md)\<T,A,R\>! | [ofSequential](../java/util/stream/Gatherer.md))`(`initializer:` ` [Supplier](../java/util/function/Supplier.md)<A>!`, `integrator:` ` [Gatherer.Integrator](../java/util/stream/Gatherer.Integrator.md)<A,` `T,` `R>!`, `finisher:` ` [BiConsumer](../java/util/function/BiConsumer.md)<A,` ` [Gatherer.Downstream](../java/util/stream/Gatherer.Downstream.md)<in` `R>!>!`)` Returns a new, sequential,`Gatherer`described by the given`initializer`,`integrator`, and`finisher`. |
-| openstatic [Gatherer](../java/util/stream/Gatherer.md)\<T, [Void](../java/lang/Void.md)!,R\>! | [ofSequential](../java/util/stream/Gatherer.md))`(`integrator:` ` [Gatherer.Integrator](../java/util/stream/Gatherer.Integrator.md)< [Void](../java/lang/Void.md)!,` `T,` `R>!`)` Returns a new, sequential, and stateless`Gatherer`described by the given`integrator`. |
-| openstatic [Gatherer](../java/util/stream/Gatherer.md)\<T, [Void](../java/lang/Void.md)!,R\>! | [ofSequential](../java/util/stream/Gatherer.md))`(`integrator:` ` [Gatherer.Integrator](../java/util/stream/Gatherer.Integrator.md)< [Void](../java/lang/Void.md)!,` `T,` `R>!`, `finisher:` ` [BiConsumer](../java/util/function/BiConsumer.md)< [Void](../java/lang/Void.md)!,` ` [Gatherer.Downstream](../java/util/stream/Gatherer.Downstream.md)<in` `R>!>!`)` Returns a new, sequential, and stateless`Gatherer`described by the given`integrator`and`finisher`. |
+| openstatic [Gatherer](Gatherer.md)\<T,A,R\>! | [ofSequential](Gatherer.md))`(`initializer:` ` [Supplier](../java.util.function/Supplier.md)<A>!`, `integrator:` ` [Gatherer.Integrator](../java/util/stream/Gatherer.Integrator.md)<A,` `T,` `R>!`, `finisher:` ` [BiConsumer](../java.util.function/BiConsumer.md)<A,` ` [Gatherer.Downstream](../java/util/stream/Gatherer.Downstream.md)<in` `R>!>!`)` Returns a new, sequential,`Gatherer`described by the given`initializer`,`integrator`, and`finisher`. |
+| openstatic [Gatherer](Gatherer.md)\<T, [Void](../java.lang/Void.md)!,R\>! | [ofSequential](Gatherer.md))`(`integrator:` ` [Gatherer.Integrator](../java/util/stream/Gatherer.Integrator.md)< [Void](../java.lang/Void.md)!,` `T,` `R>!`)` Returns a new, sequential, and stateless`Gatherer`described by the given`integrator`. |
+| openstatic [Gatherer](Gatherer.md)\<T, [Void](../java.lang/Void.md)!,R\>! | [ofSequential](Gatherer.md))`(`integrator:` ` [Gatherer.Integrator](../java/util/stream/Gatherer.Integrator.md)< [Void](../java.lang/Void.md)!,` `T,` `R>!`, `finisher:` ` [BiConsumer](../java.util.function/BiConsumer.md)< [Void](../java.lang/Void.md)!,` ` [Gatherer.Downstream](../java/util/stream/Gatherer.Downstream.md)<in` `R>!>!`)` Returns a new, sequential, and stateless`Gatherer`described by the given`integrator`and`finisher`. |
 | --- | --- |
 
 ## Public methods
@@ -60,12 +60,12 @@ Returns a composed Gatherer which connects the output of this Gatherer to the in
 
 | Parameters ||
 |--------|---------------------------------------------------------------------------------------------------------------------------|
-| `that` | [Gatherer](../java/util/stream/Gatherer.md)\<inR,\*,outRR\>!:the other gatherer |
+| `that` | [Gatherer](Gatherer.md)\<inR,\*,outRR\>!:the other gatherer |
 | `<RR>` | The type of output of that Gatherer |
 
 | Return ||
 |------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-| [Gatherer](../java/util/stream/Gatherer.md)<T,` `*,` `RR>! | returns a composed Gatherer which connects the output of this Gatherer as input that Gatherer |
+| [Gatherer](Gatherer.md)<T,` `*,` `RR>! | returns a composed Gatherer which connects the output of this Gatherer as input that Gatherer |
 
 | Exceptions ||
 |----------------------------------|--------------------------|
@@ -83,7 +83,7 @@ A function which accepts two intermediate states and combines them into one.
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| [BinaryOperator](../java/util/function/BinaryOperator.md)<A>! | a function which accepts two intermediate states and combines them into one |
+| [BinaryOperator](../java.util.function/BinaryOperator.md)<A>! | a function which accepts two intermediate states and combines them into one |
 
 ### defaultCombiner
 
@@ -101,11 +101,11 @@ Returns a combiner which is the default combiner of a Gatherer. The returned com
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------|--------------------------------------|
-| [BinaryOperator](../java/util/function/BinaryOperator.md)<A>! | the instance of the default combiner |
+| [BinaryOperator](../java.util.function/BinaryOperator.md)<A>! | the instance of the default combiner |
 
 **See Also**
 
-- [java.util.stream.Gatherer#combiner()](../java/util/stream/Gatherer.md)) 
+- [java.util.stream.Gatherer#combiner()](Gatherer.md)) 
 
 ### defaultFinisher
 
@@ -124,11 +124,11 @@ Returns a`finisher`which is the default finisher of a`Gatherer`. The returned fi
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|
-| [BiConsumer](../java/util/function/BiConsumer.md)<A,` ` [Gatherer.Downstream](../java/util/stream/Gatherer.Downstream.md)<in` `R>!>! | the instance of the default finisher |
+| [BiConsumer](../java.util.function/BiConsumer.md)<A,` ` [Gatherer.Downstream](../java/util/stream/Gatherer.Downstream.md)<in` `R>!>! | the instance of the default finisher |
 
 **See Also**
 
-- [java.util.stream.Gatherer#finisher()](../java/util/stream/Gatherer.md)) 
+- [java.util.stream.Gatherer#finisher()](Gatherer.md)) 
 
 ### defaultInitializer
 
@@ -146,11 +146,11 @@ Returns an initializer which is the default initializer of a Gatherer. The retur
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|-----------------------------------------|
-| [Supplier](../java/util/function/Supplier.md)<A>! | the instance of the default initializer |
+| [Supplier](../java.util.function/Supplier.md)<A>! | the instance of the default initializer |
 
 **See Also**
 
-- [java.util.stream.Gatherer#initializer()](../java/util/stream/Gatherer.md)) 
+- [java.util.stream.Gatherer#initializer()](Gatherer.md)) 
 
 ### finisher
 
@@ -164,7 +164,7 @@ A function which accepts the final intermediate state and a [Downstream](../java
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| [BiConsumer](../java/util/function/BiConsumer.md)<A,` ` [Gatherer.Downstream](../java/util/stream/Gatherer.Downstream.md)<in` `R>!>! | a function which transforms the intermediate result to the final result(s) which are then passed on to the provided Downstream |
+| [BiConsumer](../java.util.function/BiConsumer.md)<A,` ` [Gatherer.Downstream](../java/util/stream/Gatherer.Downstream.md)<in` `R>!>! | a function which transforms the intermediate result to the final result(s) which are then passed on to the provided Downstream |
 
 ### initializer
 
@@ -178,7 +178,7 @@ A function that produces an instance of the intermediate state used for this gat
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| [Supplier](../java/util/function/Supplier.md)<A>! | A function that produces an instance of the intermediate state used for this gathering operation |
+| [Supplier](../java.util.function/Supplier.md)<A>! | A function that produces an instance of the intermediate state used for this gathering operation |
 
 ### integrator
 
@@ -211,11 +211,11 @@ Returns a new, parallelizable,`Gatherer`described by the given`initializer`,`int
 
 | Parameters ||
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `initializer` | [Supplier](../java/util/function/Supplier.md)\<A\>!:the initializer function for the new gatherer |
+| `initializer` | [Supplier](../java.util.function/Supplier.md)\<A\>!:the initializer function for the new gatherer |
 | `integrator` | [Gatherer.Integrator](../java/util/stream/Gatherer.Integrator.md)\<A,T,R\>!:the integrator function for the new gatherer |
-| `combiner` | [BinaryOperator](../java/util/function/BinaryOperator.md)\<A\>!:the combiner function for the new gatherer |
+| `combiner` | [BinaryOperator](../java.util.function/BinaryOperator.md)\<A\>!:the combiner function for the new gatherer |
 | --- | --- |
-| `finisher` | [BiConsumer](../java/util/function/BiConsumer.md)\<A, [Gatherer.Downstream](../java/util/stream/Gatherer.Downstream.md)\<inR\>!\>!:the finisher function for the new gatherer |
+| `finisher` | [BiConsumer](../java.util.function/BiConsumer.md)\<A, [Gatherer.Downstream](../java/util/stream/Gatherer.Downstream.md)\<inR\>!\>!:the finisher function for the new gatherer |
 | `<T>` | the type of input elements for the new gatherer |
 | `<A>` | the type of state for the new gatherer |
 | --- | --- |
@@ -223,7 +223,7 @@ Returns a new, parallelizable,`Gatherer`described by the given`initializer`,`int
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------|-------------------|
-| [Gatherer](../java/util/stream/Gatherer.md)<T,` `A,` `R>! | the new`Gatherer` |
+| [Gatherer](Gatherer.md)<T,` `A,` `R>! | the new`Gatherer` |
 
 | Exceptions ||
 |----------------------------------|--------------------------|
@@ -241,14 +241,14 @@ Returns a new, parallelizable, and stateless`Gatherer`described by the given`int
 
 | Parameters ||
 |--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `integrator` | [Gatherer.Integrator](../java/util/stream/Gatherer.Integrator.md)\< [Void](../java/lang/Void.md)!,T,R\>!:the integrator function for the new gatherer |
+| `integrator` | [Gatherer.Integrator](../java/util/stream/Gatherer.Integrator.md)\< [Void](../java.lang/Void.md)!,T,R\>!:the integrator function for the new gatherer |
 | `<T>` | the type of input elements for the new gatherer |
 | `<R>` | the type of results for the new gatherer |
 | --- | --- |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|
-| [Gatherer](../java/util/stream/Gatherer.md)<T,` ` [Void](../java/lang/Void.md)!,` `R>! | the new`Gatherer` |
+| [Gatherer](Gatherer.md)<T,` ` [Void](../java.lang/Void.md)!,` `R>! | the new`Gatherer` |
 
 | Exceptions ||
 |----------------------------------|--------------------------|
@@ -269,15 +269,15 @@ Returns a new, parallelizable, and stateless`Gatherer`described by the given`int
 
 | Parameters ||
 |--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `integrator` | [Gatherer.Integrator](../java/util/stream/Gatherer.Integrator.md)\< [Void](../java/lang/Void.md)!,T,R\>!:the integrator function for the new gatherer |
-| `finisher` | [BiConsumer](../java/util/function/BiConsumer.md)\< [Void](../java/lang/Void.md)!, [Gatherer.Downstream](../java/util/stream/Gatherer.Downstream.md)\<inR\>!\>!:the finisher function for the new gatherer |
+| `integrator` | [Gatherer.Integrator](../java/util/stream/Gatherer.Integrator.md)\< [Void](../java.lang/Void.md)!,T,R\>!:the integrator function for the new gatherer |
+| `finisher` | [BiConsumer](../java.util.function/BiConsumer.md)\< [Void](../java.lang/Void.md)!, [Gatherer.Downstream](../java/util/stream/Gatherer.Downstream.md)\<inR\>!\>!:the finisher function for the new gatherer |
 | `<T>` | the type of input elements for the new gatherer |
 | --- | --- |
 | `<R>` | the type of results for the new gatherer |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|
-| [Gatherer](../java/util/stream/Gatherer.md)<T,` ` [Void](../java/lang/Void.md)!,` `R>! | the new`Gatherer` |
+| [Gatherer](Gatherer.md)<T,` ` [Void](../java.lang/Void.md)!,` `R>! | the new`Gatherer` |
 
 | Exceptions ||
 |----------------------------------|--------------------------|
@@ -298,7 +298,7 @@ Returns a new, sequential,`Gatherer`described by the given`initializer`and`integ
 
 | Parameters ||
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `initializer` | [Supplier](../java/util/function/Supplier.md)\<A\>!:the initializer function for the new gatherer |
+| `initializer` | [Supplier](../java.util.function/Supplier.md)\<A\>!:the initializer function for the new gatherer |
 | `integrator` | [Gatherer.Integrator](../java/util/stream/Gatherer.Integrator.md)\<A,T,R\>!:the integrator function for the new gatherer |
 | `<T>` | the type of input elements for the new gatherer |
 | --- | --- |
@@ -307,7 +307,7 @@ Returns a new, sequential,`Gatherer`described by the given`initializer`and`integ
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------|-------------------|
-| [Gatherer](../java/util/stream/Gatherer.md)<T,` `A,` `R>! | the new`Gatherer` |
+| [Gatherer](Gatherer.md)<T,` `A,` `R>! | the new`Gatherer` |
 
 | Exceptions ||
 |----------------------------------|--------------------------|
@@ -329,9 +329,9 @@ Returns a new, sequential,`Gatherer`described by the given`initializer`,`integra
 
 | Parameters ||
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `initializer` | [Supplier](../java/util/function/Supplier.md)\<A\>!:the initializer function for the new gatherer |
+| `initializer` | [Supplier](../java.util.function/Supplier.md)\<A\>!:the initializer function for the new gatherer |
 | `integrator` | [Gatherer.Integrator](../java/util/stream/Gatherer.Integrator.md)\<A,T,R\>!:the integrator function for the new gatherer |
-| `finisher` | [BiConsumer](../java/util/function/BiConsumer.md)\<A, [Gatherer.Downstream](../java/util/stream/Gatherer.Downstream.md)\<inR\>!\>!:the finisher function for the new gatherer |
+| `finisher` | [BiConsumer](../java.util.function/BiConsumer.md)\<A, [Gatherer.Downstream](../java/util/stream/Gatherer.Downstream.md)\<inR\>!\>!:the finisher function for the new gatherer |
 | --- | --- |
 | `<T>` | the type of input elements for the new gatherer |
 | `<A>` | the type of state for the new gatherer |
@@ -340,7 +340,7 @@ Returns a new, sequential,`Gatherer`described by the given`initializer`,`integra
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------|-------------------|
-| [Gatherer](../java/util/stream/Gatherer.md)<T,` `A,` `R>! | the new`Gatherer` |
+| [Gatherer](Gatherer.md)<T,` `A,` `R>! | the new`Gatherer` |
 
 | Exceptions ||
 |----------------------------------|--------------------------|
@@ -358,14 +358,14 @@ Returns a new, sequential, and stateless`Gatherer`described by the given`integra
 
 | Parameters ||
 |--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `integrator` | [Gatherer.Integrator](../java/util/stream/Gatherer.Integrator.md)\< [Void](../java/lang/Void.md)!,T,R\>!:the integrator function for the new gatherer |
+| `integrator` | [Gatherer.Integrator](../java/util/stream/Gatherer.Integrator.md)\< [Void](../java.lang/Void.md)!,T,R\>!:the integrator function for the new gatherer |
 | `<T>` | the type of input elements for the new gatherer |
 | `<R>` | the type of results for the new gatherer |
 | --- | --- |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|
-| [Gatherer](../java/util/stream/Gatherer.md)<T,` ` [Void](../java/lang/Void.md)!,` `R>! | the new`Gatherer` |
+| [Gatherer](Gatherer.md)<T,` ` [Void](../java.lang/Void.md)!,` `R>! | the new`Gatherer` |
 
 | Exceptions ||
 |----------------------------------|--------------------------|
@@ -386,15 +386,15 @@ Returns a new, sequential, and stateless`Gatherer`described by the given`integra
 
 | Parameters ||
 |--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `integrator` | [Gatherer.Integrator](../java/util/stream/Gatherer.Integrator.md)\< [Void](../java/lang/Void.md)!,T,R\>!:the integrator function for the new gatherer |
-| `finisher` | [BiConsumer](../java/util/function/BiConsumer.md)\< [Void](../java/lang/Void.md)!, [Gatherer.Downstream](../java/util/stream/Gatherer.Downstream.md)\<inR\>!\>!:the finisher function for the new gatherer |
+| `integrator` | [Gatherer.Integrator](../java/util/stream/Gatherer.Integrator.md)\< [Void](../java.lang/Void.md)!,T,R\>!:the integrator function for the new gatherer |
+| `finisher` | [BiConsumer](../java.util.function/BiConsumer.md)\< [Void](../java.lang/Void.md)!, [Gatherer.Downstream](../java/util/stream/Gatherer.Downstream.md)\<inR\>!\>!:the finisher function for the new gatherer |
 | `<T>` | the type of input elements for the new gatherer |
 | --- | --- |
 | `<R>` | the type of results for the new gatherer |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|
-| [Gatherer](../java/util/stream/Gatherer.md)<T,` ` [Void](../java/lang/Void.md)!,` `R>! | the new`Gatherer` |
+| [Gatherer](Gatherer.md)<T,` ` [Void](../java.lang/Void.md)!,` `R>! | the new`Gatherer` |
 
 | Exceptions ||
 |----------------------------------|--------------------------|

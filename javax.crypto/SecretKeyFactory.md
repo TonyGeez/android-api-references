@@ -10,7 +10,7 @@ open class SecretKeyFactory
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.crypto.SecretKeyFactory](../javax/crypto/SecretKeyFactory.md) |
+| ↳ | [javax.crypto.SecretKeyFactory](SecretKeyFactory.md) |
 
 This class represents a factory for secret keys.
 
@@ -18,7 +18,7 @@ Key factories are used to convert*keys* (opaque cryptographic keys of type`Key`)
 
 Key factories are bi-directional, i.e., they allow to build an opaque key object from a given key specification (key material), or to retrieve the underlying key material of a key object in a suitable format.
 
-Application developers should refer to their provider's documentation to find out which key specifications are supported by the [generateSecret](../javax/crypto/SecretKeyFactory.md))and [getKeySpec](../javax/crypto/SecretKeyFactory.md))methods. For example, the DES secret-key factory supplied by the "SunJCE" provider supports`DESKeySpec`as a transparent representation of DES keys, and that provider's secret-key factory for Triple DES keys supports`DESedeKeySpec`as a transparent representation of Triple DES keys.
+Application developers should refer to their provider's documentation to find out which key specifications are supported by the [generateSecret](SecretKeyFactory.md))and [getKeySpec](SecretKeyFactory.md))methods. For example, the DES secret-key factory supplied by the "SunJCE" provider supports`DESKeySpec`as a transparent representation of DES keys, and that provider's secret-key factory for Triple DES keys supports`DESedeKeySpec`as a transparent representation of Triple DES keys.
 
 Android provides the following`SecretKeyFactory`algorithms:
 
@@ -91,20 +91,20 @@ These algorithms are described in the [SecretKeyFactory section](https://docs.or
 
 | Protected constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SecretKeyFactory](../javax/crypto/SecretKeyFactory.md))`(`keyFacSpi:` ` [SecretKeyFactorySpi](../javax/crypto/SecretKeyFactorySpi.md)!`, `provider:` ` [Provider](../java/security/Provider.md)!`, `algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a SecretKeyFactory object. |
+| [SecretKeyFactory](SecretKeyFactory.md))`(`keyFacSpi:` ` [SecretKeyFactorySpi](SecretKeyFactorySpi.md)!`, `provider:` ` [Provider](../java.security/Provider.md)!`, `algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a SecretKeyFactory object. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [SecretKey](../javax/crypto/SecretKey.md)! | [generateSecret](../javax/crypto/SecretKeyFactory.md))`(`keySpec:` ` [KeySpec](../java/security/spec/KeySpec.md)!`)` Generates a`SecretKey`object from the provided key specification (key material). |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAlgorithm](../javax/crypto/SecretKeyFactory.md))`()` Returns the algorithm name of this`SecretKeyFactory`object. |
-| static [SecretKeyFactory](../javax/crypto/SecretKeyFactory.md)! | [getInstance](../javax/crypto/SecretKeyFactory.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a`SecretKeyFactory`object that converts secret keys of the specified algorithm. |
+| [SecretKey](SecretKey.md)! | [generateSecret](SecretKeyFactory.md))`(`keySpec:` ` [KeySpec](../java.security.spec/KeySpec.md)!`)` Generates a`SecretKey`object from the provided key specification (key material). |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAlgorithm](SecretKeyFactory.md))`()` Returns the algorithm name of this`SecretKeyFactory`object. |
+| static [SecretKeyFactory](SecretKeyFactory.md)! | [getInstance](SecretKeyFactory.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a`SecretKeyFactory`object that converts secret keys of the specified algorithm. |
 | --- | --- |
-| static [SecretKeyFactory](../javax/crypto/SecretKeyFactory.md)! | [getInstance](../javax/crypto/SecretKeyFactory.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a`SecretKeyFactory`object that converts secret keys of the specified algorithm. |
-| static [SecretKeyFactory](../javax/crypto/SecretKeyFactory.md)! | [getInstance](../javax/crypto/SecretKeyFactory.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [Provider](../java/security/Provider.md)!`)` Returns a`SecretKeyFactory`object that converts secret keys of the specified algorithm. |
-| [KeySpec](../java/security/spec/KeySpec.md)! | [getKeySpec](../javax/crypto/SecretKeyFactory.md))`(`key:` ` [SecretKey](../javax/crypto/SecretKey.md)!`, `keySpec:` ` [Class](../java/lang/Class.md)<*>!`)` Returns a specification (key material) of the given key object in the requested format. |
+| static [SecretKeyFactory](SecretKeyFactory.md)! | [getInstance](SecretKeyFactory.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a`SecretKeyFactory`object that converts secret keys of the specified algorithm. |
+| static [SecretKeyFactory](SecretKeyFactory.md)! | [getInstance](SecretKeyFactory.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [Provider](../java.security/Provider.md)!`)` Returns a`SecretKeyFactory`object that converts secret keys of the specified algorithm. |
+| [KeySpec](../java.security.spec/KeySpec.md)! | [getKeySpec](SecretKeyFactory.md))`(`key:` ` [SecretKey](SecretKey.md)!`, `keySpec:` ` [Class](../java.lang/Class.md)<*>!`)` Returns a specification (key material) of the given key object in the requested format. |
 | --- | --- |
-| [Provider](../java/security/Provider.md)! | [getProvider](../javax/crypto/SecretKeyFactory.md))`()` Returns the provider of this`SecretKeyFactory`object. |
-| [SecretKey](../javax/crypto/SecretKey.md)! | [translateKey](../javax/crypto/SecretKeyFactory.md))`(`key:` ` [SecretKey](../javax/crypto/SecretKey.md)!`)` Translates a key object, whose provider may be unknown or potentially untrusted, into a corresponding key object of this secret-key factory. |
+| [Provider](../java.security/Provider.md)! | [getProvider](SecretKeyFactory.md))`()` Returns the provider of this`SecretKeyFactory`object. |
+| [SecretKey](SecretKey.md)! | [translateKey](SecretKeyFactory.md))`(`key:` ` [SecretKey](SecretKey.md)!`)` Translates a key object, whose provider may be unknown or potentially untrusted, into a corresponding key object of this secret-key factory. |
 
 ## Protected constructors
 
@@ -123,8 +123,8 @@ Creates a SecretKeyFactory object.
 
 | Parameters ||
 |-------------|----------------------------------------------------------------------------------------------------------------------|
-| `keyFacSpi` | [SecretKeyFactorySpi](../javax/crypto/SecretKeyFactorySpi.md)!:the delegate |
-| `provider` | [Provider](../java/security/Provider.md)!:the provider |
+| `keyFacSpi` | [SecretKeyFactorySpi](SecretKeyFactorySpi.md)!:the delegate |
+| `provider` | [Provider](../java.security/Provider.md)!:the provider |
 | `algorithm` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the secret-key algorithm |
 | --- | --- |
 
@@ -142,11 +142,11 @@ Generates a`SecretKey`object from the provided key specification (key material).
 
 | Parameters ||
 |-----------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| `keySpec` | [KeySpec](../java/security/spec/KeySpec.md)!:the specification (key material) of the secret key |
+| `keySpec` | [KeySpec](../java.security.spec/KeySpec.md)!:the specification (key material) of the secret key |
 
 | Return ||
 |-------------------------------------------------------------------------------------|----------------|
-| [SecretKey](../javax/crypto/SecretKey.md)! | the secret key |
+| [SecretKey](SecretKey.md)! | the secret key |
 
 | Exceptions ||
 |----------------------------------------------|------------------------------------------------------------------------------------------------------|
@@ -180,7 +180,7 @@ Returns a`SecretKeyFactory`object that converts secret keys of the specified alg
 
 This method traverses the list of registered security Providers, starting with the most preferred Provider. A new SecretKeyFactory object encapsulating the SecretKeyFactorySpi implementation from the first Provider that supports the specified algorithm is returned.
 
-Note that the list of registered providers may be retrieved via the [Security.getProviders()](../java/security/Security.md))method.
+Note that the list of registered providers may be retrieved via the [Security.getProviders()](../java.security/Security.md))method.
 
 | Parameters ||
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -188,7 +188,7 @@ Note that the list of registered providers may be retrieved via the [Security.ge
 
 | Return ||
 |----------------------------------------------------------------------------------------------------|----------------------------------|
-| [SecretKeyFactory](../javax/crypto/SecretKeyFactory.md)! | the new`SecretKeyFactory`object. |
+| [SecretKeyFactory](SecretKeyFactory.md)! | the new`SecretKeyFactory`object. |
 
 | Exceptions ||
 |------------------------------------------|-------------------------------------------------------------------------------------------|
@@ -197,7 +197,7 @@ Note that the list of registered providers may be retrieved via the [Security.ge
 
 **See Also**
 
-- [java.security.Provider](../java/security/Provider.md) 
+- [java.security.Provider](../java.security/Provider.md) 
 
 ### getInstance
 
@@ -214,7 +214,7 @@ Returns a`SecretKeyFactory`object that converts secret keys of the specified alg
 
 A new SecretKeyFactory object encapsulating the SecretKeyFactorySpi implementation from the specified provider is returned. The specified provider must be registered in the security provider list.
 
-Note that the list of registered providers may be retrieved via the [Security.getProviders()](../java/security/Security.md))method.
+Note that the list of registered providers may be retrieved via the [Security.getProviders()](../java.security/Security.md))method.
 
 | Parameters ||
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -223,7 +223,7 @@ Note that the list of registered providers may be retrieved via the [Security.ge
 
 | Return ||
 |----------------------------------------------------------------------------------------------------|----------------------------------|
-| [SecretKeyFactory](../javax/crypto/SecretKeyFactory.md)! | the new`SecretKeyFactory`object. |
+| [SecretKeyFactory](SecretKeyFactory.md)! | the new`SecretKeyFactory`object. |
 
 | Exceptions ||
 |------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
@@ -235,7 +235,7 @@ Note that the list of registered providers may be retrieved via the [Security.ge
 
 **See Also**
 
-- [java.security.Provider](../java/security/Provider.md) 
+- [java.security.Provider](../java.security/Provider.md) 
 
 ### getInstance
 
@@ -255,11 +255,11 @@ A new SecretKeyFactory object encapsulating the SecretKeyFactorySpi implementati
 | Parameters ||
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `algorithm` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the standard name of the requested secret-key algorithm. See the SecretKeyFactory section in the [Java Cryptography Architecture Standard Algorithm Name Documentation](https://docs.oracle.com/javase/8/docs/technotes/guides/security/StandardNames.html#SecretKeyFactory) for information about standard algorithm names. |
-| `provider` | [Provider](../java/security/Provider.md)!:the provider. |
+| `provider` | [Provider](../java.security/Provider.md)!:the provider. |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------|----------------------------------|
-| [SecretKeyFactory](../javax/crypto/SecretKeyFactory.md)! | the new`SecretKeyFactory`object. |
+| [SecretKeyFactory](SecretKeyFactory.md)! | the new`SecretKeyFactory`object. |
 
 | Exceptions ||
 |------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
@@ -270,7 +270,7 @@ A new SecretKeyFactory object encapsulating the SecretKeyFactorySpi implementati
 
 **See Also**
 
-- [java.security.Provider](../java/security/Provider.md) 
+- [java.security.Provider](../java.security/Provider.md) 
 
 ### getKeySpec
 
@@ -287,12 +287,12 @@ Returns a specification (key material) of the given key object in the requested 
 
 | Parameters ||
 |-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `key` | [SecretKey](../javax/crypto/SecretKey.md)!:the key |
-| `keySpec` | [Class](../java/lang/Class.md)\<\*\>!:the requested format in which the key material shall be returned |
+| `key` | [SecretKey](SecretKey.md)!:the key |
+| `keySpec` | [Class](../java.lang/Class.md)\<\*\>!:the requested format in which the key material shall be returned |
 
 | Return ||
 |---------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| [KeySpec](../java/security/spec/KeySpec.md)! | the underlying key specification (key material) in the requested format |
+| [KeySpec](../java.security.spec/KeySpec.md)! | the underlying key specification (key material) in the requested format |
 
 | Exceptions ||
 |----------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -310,7 +310,7 @@ Returns the provider of this`SecretKeyFactory`object.
 
 | Return ||
 |------------------------------------------------------------------------------------------|----------------------------------------------|
-| [Provider](../java/security/Provider.md)! | the provider of this`SecretKeyFactory`object |
+| [Provider](../java.security/Provider.md)! | the provider of this`SecretKeyFactory`object |
 
 ### translateKey
 
@@ -324,11 +324,11 @@ Translates a key object, whose provider may be unknown or potentially untrusted,
 
 | Parameters ||
 |-------|------------------------------------------------------------------------------------------------------------------------------------|
-| `key` | [SecretKey](../javax/crypto/SecretKey.md)!:the key whose provider is unknown or untrusted |
+| `key` | [SecretKey](SecretKey.md)!:the key whose provider is unknown or untrusted |
 
 | Return ||
 |-------------------------------------------------------------------------------------|--------------------|
-| [SecretKey](../javax/crypto/SecretKey.md)! | the translated key |
+| [SecretKey](SecretKey.md)! | the translated key |
 
 | Exceptions ||
 |-------------------------------------|------------------------------------------------------------------|

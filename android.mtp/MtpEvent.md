@@ -4,7 +4,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # MtpEvent
 
-Kotlin| [Java](../android/mtp/MtpEvent.md) 
+Kotlin| [Java](MtpEvent.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class MtpEvent
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.mtp.MtpEvent](../android/mtp/MtpEvent.md) |
+| ↳ | [android.mtp.MtpEvent](MtpEvent.md) |
 
 This class encapsulates information about a MTP event. This corresponds to the events described in appendix G of the MTP specification.
 
@@ -21,46 +21,46 @@ This class encapsulates information about a MTP event. This corresponds to the e
 
 | Constants ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVENT_CANCEL_TRANSACTION](../android/mtp/MtpEvent.md) Event code for CANCEL_TRANSACTION event |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVENT_CAPTURE_COMPLETE](../android/mtp/MtpEvent.md) Event code for CAPTURE_COMPLETE event |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVENT_DEVICE_INFO_CHANGED](../android/mtp/MtpEvent.md) Event code for DEVICE_INFO_CHANGED event |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVENT_CANCEL_TRANSACTION](MtpEvent.md) Event code for CANCEL_TRANSACTION event |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVENT_CAPTURE_COMPLETE](MtpEvent.md) Event code for CAPTURE_COMPLETE event |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVENT_DEVICE_INFO_CHANGED](MtpEvent.md) Event code for DEVICE_INFO_CHANGED event |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVENT_DEVICE_PROP_CHANGED](../android/mtp/MtpEvent.md) Event code for DEVICE_PROP_CHANGED event |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVENT_DEVICE_RESET](../android/mtp/MtpEvent.md) Event code for DEVICE_RESET event |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVENT_OBJECT_ADDED](../android/mtp/MtpEvent.md) Event code for OBJECT_ADDED event |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVENT_DEVICE_PROP_CHANGED](MtpEvent.md) Event code for DEVICE_PROP_CHANGED event |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVENT_DEVICE_RESET](MtpEvent.md) Event code for DEVICE_RESET event |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVENT_OBJECT_ADDED](MtpEvent.md) Event code for OBJECT_ADDED event |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVENT_OBJECT_INFO_CHANGED](../android/mtp/MtpEvent.md) Event code for OBJECT_INFO_CHANGED event |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVENT_OBJECT_PROP_CHANGED](../android/mtp/MtpEvent.md) Event code for OBJECT_PROP_CHANGED event |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVENT_OBJECT_PROP_DESC_CHANGED](../android/mtp/MtpEvent.md) Event code for OBJECT_PROP_DESC_CHANGED event |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVENT_OBJECT_INFO_CHANGED](MtpEvent.md) Event code for OBJECT_INFO_CHANGED event |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVENT_OBJECT_PROP_CHANGED](MtpEvent.md) Event code for OBJECT_PROP_CHANGED event |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVENT_OBJECT_PROP_DESC_CHANGED](MtpEvent.md) Event code for OBJECT_PROP_DESC_CHANGED event |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVENT_OBJECT_REFERENCES_CHANGED](../android/mtp/MtpEvent.md) Event code for OBJECT_REFERENCES_CHANGED event |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVENT_OBJECT_REMOVED](../android/mtp/MtpEvent.md) Event code for OBJECT_REMOVED event |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVENT_REQUEST_OBJECT_TRANSFER](../android/mtp/MtpEvent.md) Event code for REQUEST_OBJECT_TRANSFER event |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVENT_OBJECT_REFERENCES_CHANGED](MtpEvent.md) Event code for OBJECT_REFERENCES_CHANGED event |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVENT_OBJECT_REMOVED](MtpEvent.md) Event code for OBJECT_REMOVED event |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVENT_REQUEST_OBJECT_TRANSFER](MtpEvent.md) Event code for REQUEST_OBJECT_TRANSFER event |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVENT_STORAGE_INFO_CHANGED](../android/mtp/MtpEvent.md) Event code for STORAGE_INFO_CHANGED event |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVENT_STORE_ADDED](../android/mtp/MtpEvent.md) Event code for STORE_ADDED event |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVENT_STORE_FULL](../android/mtp/MtpEvent.md) Event code for STORE_FULL event |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVENT_STORAGE_INFO_CHANGED](MtpEvent.md) Event code for STORAGE_INFO_CHANGED event |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVENT_STORE_ADDED](MtpEvent.md) Event code for STORE_ADDED event |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVENT_STORE_FULL](MtpEvent.md) Event code for STORE_FULL event |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVENT_STORE_REMOVED](../android/mtp/MtpEvent.md) Event code for STORE_REMOVED event |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVENT_UNDEFINED](../android/mtp/MtpEvent.md) Event code for UNDEFINED event |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVENT_UNREPORTED_STATUS](../android/mtp/MtpEvent.md) Event code for UNREPORTED_STATUS event |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVENT_STORE_REMOVED](MtpEvent.md) Event code for STORE_REMOVED event |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVENT_UNDEFINED](MtpEvent.md) Event code for UNDEFINED event |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVENT_UNREPORTED_STATUS](MtpEvent.md) Event code for UNREPORTED_STATUS event |
 | --- | --- |
 
 | Public methods ||
 |--------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDevicePropCode](../android/mtp/MtpEvent.md))`()` Obtains devicePropCode event parameter. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEventCode](../android/mtp/MtpEvent.md))`()` Returns event code of MTP event. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getObjectFormatCode](../android/mtp/MtpEvent.md))`()` Obtains objectFormatCode event parameter. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDevicePropCode](MtpEvent.md))`()` Obtains devicePropCode event parameter. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEventCode](MtpEvent.md))`()` Returns event code of MTP event. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getObjectFormatCode](MtpEvent.md))`()` Obtains objectFormatCode event parameter. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getObjectHandle](../android/mtp/MtpEvent.md))`()` Obtains objectHandle event parameter. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getObjectPropCode](../android/mtp/MtpEvent.md))`()` Obtains objectPropCode event parameter. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getParameter1](../android/mtp/MtpEvent.md))`()` Obtains the first event parameter. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getObjectHandle](MtpEvent.md))`()` Obtains objectHandle event parameter. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getObjectPropCode](MtpEvent.md))`()` Obtains objectPropCode event parameter. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getParameter1](MtpEvent.md))`()` Obtains the first event parameter. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getParameter2](../android/mtp/MtpEvent.md))`()` Obtains the second event parameter. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getParameter3](../android/mtp/MtpEvent.md))`()` Obtains the third event parameter. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStorageId](../android/mtp/MtpEvent.md))`()` Obtains storageID event parameter. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getParameter2](MtpEvent.md))`()` Obtains the second event parameter. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getParameter3](MtpEvent.md))`()` Obtains the third event parameter. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStorageId](MtpEvent.md))`()` Obtains storageID event parameter. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTransactionId](../android/mtp/MtpEvent.md))`()` Obtains transactionID event parameter. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTransactionId](MtpEvent.md))`()` Obtains transactionID event parameter. |
 
 ## Constants
 
@@ -293,7 +293,7 @@ open fun getDevicePropCode(): Int
 Obtains devicePropCode event parameter. 
 **See Also**
 
-- [#EVENT_DEVICE_PROP_CHANGED](../android/mtp/MtpEvent.md) 
+- [#EVENT_DEVICE_PROP_CHANGED](MtpEvent.md) 
 
 ### getEventCode
 
@@ -320,7 +320,7 @@ open fun getObjectFormatCode(): Int
 Obtains objectFormatCode event parameter. 
 **See Also**
 
-- [#EVENT_OBJECT_PROP_DESC_CHANGED](../android/mtp/MtpEvent.md) 
+- [#EVENT_OBJECT_PROP_DESC_CHANGED](MtpEvent.md) 
 
 ### getObjectHandle
 
@@ -333,12 +333,12 @@ open fun getObjectHandle(): Int
 Obtains objectHandle event parameter. 
 **See Also**
 
-- [#EVENT_OBJECT_ADDED](../android/mtp/MtpEvent.md)
-- [#EVENT_OBJECT_REMOVED](../android/mtp/MtpEvent.md)
-- [#EVENT_OBJECT_INFO_CHANGED](../android/mtp/MtpEvent.md)
-- [#EVENT_REQUEST_OBJECT_TRANSFER](../android/mtp/MtpEvent.md)
-- [#EVENT_OBJECT_PROP_CHANGED](../android/mtp/MtpEvent.md)
-- [#EVENT_OBJECT_REFERENCES_CHANGED](../android/mtp/MtpEvent.md) 
+- [#EVENT_OBJECT_ADDED](MtpEvent.md)
+- [#EVENT_OBJECT_REMOVED](MtpEvent.md)
+- [#EVENT_OBJECT_INFO_CHANGED](MtpEvent.md)
+- [#EVENT_REQUEST_OBJECT_TRANSFER](MtpEvent.md)
+- [#EVENT_OBJECT_PROP_CHANGED](MtpEvent.md)
+- [#EVENT_OBJECT_REFERENCES_CHANGED](MtpEvent.md) 
 
 ### getObjectPropCode
 
@@ -351,8 +351,8 @@ open fun getObjectPropCode(): Int
 Obtains objectPropCode event parameter. 
 **See Also**
 
-- [#EVENT_OBJECT_PROP_CHANGED](../android/mtp/MtpEvent.md)
-- [#EVENT_OBJECT_PROP_DESC_CHANGED](../android/mtp/MtpEvent.md) 
+- [#EVENT_OBJECT_PROP_CHANGED](MtpEvent.md)
+- [#EVENT_OBJECT_PROP_DESC_CHANGED](MtpEvent.md) 
 
 ### getParameter1
 
@@ -395,10 +395,10 @@ open fun getStorageId(): Int
 Obtains storageID event parameter. 
 **See Also**
 
-- [#EVENT_STORE_ADDED](../android/mtp/MtpEvent.md)
-- [#EVENT_STORE_REMOVED](../android/mtp/MtpEvent.md)
-- [#EVENT_STORE_FULL](../android/mtp/MtpEvent.md)
-- [#EVENT_STORAGE_INFO_CHANGED](../android/mtp/MtpEvent.md) 
+- [#EVENT_STORE_ADDED](MtpEvent.md)
+- [#EVENT_STORE_REMOVED](MtpEvent.md)
+- [#EVENT_STORE_FULL](MtpEvent.md)
+- [#EVENT_STORAGE_INFO_CHANGED](MtpEvent.md) 
 
 ### getTransactionId
 
@@ -411,4 +411,4 @@ open fun getTransactionId(): Int
 Obtains transactionID event parameter. 
 **See Also**
 
-- [#EVENT_CAPTURE_COMPLETE](../android/mtp/MtpEvent.md)
+- [#EVENT_CAPTURE_COMPLETE](MtpEvent.md)

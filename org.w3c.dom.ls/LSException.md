@@ -11,10 +11,10 @@ open class LSException : RuntimeException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
-| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) ||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) |||
+| | | ↳ | [java.lang.RuntimeException](../java.lang/RuntimeException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [org.w3c.dom.ls.LSException](../org/w3c/dom/ls/LSException.md) |
+| | | | ↳ | [org.w3c.dom.ls.LSException](LSException.md) |
 
 Parser or write operations may throw an `LSException` if the processing is stopped. The processing can be stopped due to a `DOMError` with a severity of `DOMError.SEVERITY_FATAL_ERROR` or a non recovered `DOMError.SEVERITY_ERROR`, or if `DOMErrorHandler.handleError()` returned `false`.
 
@@ -26,16 +26,16 @@ See also the [Document Object Model (DOM) Level 3 Load and Save Specification](h
 
 | Constants ||
 |---------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [PARSE_ERR](../org/w3c/dom/ls/LSException.md) If an attempt was made to load a document, or an XML Fragment, using `LSParser` and the processing has been stopped. |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [SERIALIZE_ERR](../org/w3c/dom/ls/LSException.md) If an attempt was made to serialize a `Node` using `LSSerializer` and the processing has been stopped. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [PARSE_ERR](LSException.md) If an attempt was made to load a document, or an XML Fragment, using `LSParser` and the processing has been stopped. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [SERIALIZE_ERR](LSException.md) If an attempt was made to serialize a `Node` using `LSSerializer` and the processing has been stopped. |
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [LSException](../org/w3c/dom/ls/LSException.md))`(`code:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`, `message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| [LSException](LSException.md))`(`code:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`, `message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
 
 | Properties ||
 |--------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-| [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [code](../org/w3c/dom/ls/LSException.md) <br /> |
+| [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [code](LSException.md) <br /> |
 
 ## Constants
 

@@ -3,7 +3,7 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 
 # BluetoothHealthAppConfiguration
 
-Kotlin | [Java](../android/bluetooth/BluetoothHealthAppConfiguration.md)
+Kotlin | [Java](BluetoothHealthAppConfiguration.md)
 | --- | --- |
 
 ```
@@ -12,7 +12,7 @@ class BluetoothHealthAppConfiguration : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.bluetooth.BluetoothHealthAppConfiguration](../android/bluetooth/BluetoothHealthAppConfiguration.md) |
+| ↳ | [android.bluetooth.BluetoothHealthAppConfiguration](BluetoothHealthAppConfiguration.md) |
 
 | **This class was deprecated in API level 29.**
 |
@@ -37,7 +37,7 @@ The Bluetooth Health Application Configuration that is used in conjunction with 
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [BluetoothHealthAppConfiguration](../android/bluetooth/BluetoothHealthAppConfiguration.md)!\> | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHealthAppConfiguration#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [BluetoothHealthAppConfiguration](BluetoothHealthAppConfiguration.md)!\> | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHealthAppConfiguration#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public methods
 

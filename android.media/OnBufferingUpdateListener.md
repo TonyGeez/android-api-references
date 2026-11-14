@@ -19,7 +19,7 @@ Interface definition of a callback to be invoked indicating buffering status of 
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onBufferingUpdate](../android/media/MediaPlayer.OnBufferingUpdateListener.md))`(`mp:` ` [MediaPlayer](../android/media/MediaPlayer.md)!`, `percent:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called to update status in buffering a media stream received through progressive HTTP download. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onBufferingUpdate](../android/media/MediaPlayer.OnBufferingUpdateListener.md))`(`mp:` ` [MediaPlayer](MediaPlayer.md)!`, `percent:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called to update status in buffering a media stream received through progressive HTTP download. |
 
 ## Public methods
 
@@ -38,5 +38,5 @@ Called to update status in buffering a media stream received through progressive
 
 | Parameters ||
 |-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `mp` | [MediaPlayer](../android/media/MediaPlayer.md)!:the MediaPlayer the update pertains to |
+| `mp` | [MediaPlayer](MediaPlayer.md)!:the MediaPlayer the update pertains to |
 | `percent` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the percentage (0-100) of the content that has been buffered or played thus far |

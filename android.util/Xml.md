@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # Xml
 
-Kotlin| [Java](../android/util/Xml.md) 
+Kotlin| [Java](Xml.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class Xml
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.util.Xml](../android/util/Xml.md) |
+| ↳ | [android.util.Xml](Xml.md) |
 
 XML utility methods.
 
@@ -25,19 +25,19 @@ XML utility methods.
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [AttributeSet](../android/util/AttributeSet.md)! | [asAttributeSet](../android/util/Xml.md))`(`parser:` ` [XmlPullParser](../org/xmlpull/v1/XmlPullParser.md)!`)` Return an AttributeSet interface for use with the given XmlPullParser. |
-| openstatic [Xml.Encoding](../android/util/Xml.Encoding.md)! | [findEncodingByName](../android/util/Xml.md))`(`encodingName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Finds an encoding by name. |
-| openstatic [XmlPullParser](../org/xmlpull/v1/XmlPullParser.md)! | [newPullParser](../android/util/Xml.md))`()` Returns a new pull parser with namespace support. |
+| openstatic [AttributeSet](AttributeSet.md)! | [asAttributeSet](Xml.md))`(`parser:` ` [XmlPullParser](../org.xmlpull.v1/XmlPullParser.md)!`)` Return an AttributeSet interface for use with the given XmlPullParser. |
+| openstatic [Xml.Encoding](../android/util/Xml.Encoding.md)! | [findEncodingByName](Xml.md))`(`encodingName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Finds an encoding by name. |
+| openstatic [XmlPullParser](../org.xmlpull.v1/XmlPullParser.md)! | [newPullParser](Xml.md))`()` Returns a new pull parser with namespace support. |
 | --- | --- |
-| openstatic [XmlSerializer](../org/xmlpull/v1/XmlSerializer.md)! | [newSerializer](../android/util/Xml.md))`()` Creates a new xml serializer. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parse](../android/util/Xml.md))`(`in:` ` [InputStream](../java/io/InputStream.md)!`, `encoding:` ` [Xml.Encoding](../android/util/Xml.Encoding.md)!`, `contentHandler:` ` [ContentHandler](../org/xml/sax/ContentHandler.md)!`)` Parses xml from the given input stream and fires events on the given SAX handler. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parse](../android/util/Xml.md))`(`in:` ` [Reader](../java/io/Reader.md)!`, `contentHandler:` ` [ContentHandler](../org/xml/sax/ContentHandler.md)!`)` Parses xml from the given reader and fires events on the given SAX handler. |
+| openstatic [XmlSerializer](../org.xmlpull.v1/XmlSerializer.md)! | [newSerializer](Xml.md))`()` Creates a new xml serializer. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parse](Xml.md))`(`in:` ` [InputStream](../java.io/InputStream.md)!`, `encoding:` ` [Xml.Encoding](../android/util/Xml.Encoding.md)!`, `contentHandler:` ` [ContentHandler](../org.xml.sax/ContentHandler.md)!`)` Parses xml from the given input stream and fires events on the given SAX handler. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parse](Xml.md))`(`in:` ` [Reader](../java.io/Reader.md)!`, `contentHandler:` ` [ContentHandler](../org.xml.sax/ContentHandler.md)!`)` Parses xml from the given reader and fires events on the given SAX handler. |
 | --- | --- |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parse](../android/util/Xml.md))`(`xml:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `contentHandler:` ` [ContentHandler](../org/xml/sax/ContentHandler.md)!`)` Parses the given xml string and fires events on the given SAX handler. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parse](Xml.md))`(`xml:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `contentHandler:` ` [ContentHandler](../org.xml.sax/ContentHandler.md)!`)` Parses the given xml string and fires events on the given SAX handler. |
 
 | Properties ||
 |-----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [FEATURE_RELAXED](../android/util/Xml.md) [org.xmlpull.v1.XmlPullParser](../org/xmlpull/v1/XmlPullParser.md)"relaxed" feature name. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [FEATURE_RELAXED](Xml.md) [org.xmlpull.v1.XmlPullParser](../org.xmlpull.v1/XmlPullParser.md)"relaxed" feature name. |
 
 ## Public methods
 
@@ -53,15 +53,15 @@ Return an AttributeSet interface for use with the given XmlPullParser. If the gi
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `parser` | [XmlPullParser](../org/xmlpull/v1/XmlPullParser.md)!:The existing parser for which you would like an AttributeSet. |
+| `parser` | [XmlPullParser](../org.xmlpull.v1/XmlPullParser.md)!:The existing parser for which you would like an AttributeSet. |
 
 | Return ||
 |-------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| [AttributeSet](../android/util/AttributeSet.md)! | An AttributeSet you can use to retrieve the attribute values at each of the tags as the parser moves through its XML document. |
+| [AttributeSet](AttributeSet.md)! | An AttributeSet you can use to retrieve the attribute values at each of the tags as the parser moves through its XML document. |
 
 **See Also**
 
-- [android.util.AttributeSet](../android/util/AttributeSet.md) 
+- [android.util.AttributeSet](AttributeSet.md) 
 
 ### findEncodingByName
 
@@ -143,5 +143,5 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static var FEATURE_RELAXED: String!
 ```
 
-[org.xmlpull.v1.XmlPullParser](../org/xmlpull/v1/XmlPullParser.md)"relaxed" feature name. 
+[org.xmlpull.v1.XmlPullParser](../org.xmlpull.v1/XmlPullParser.md)"relaxed" feature name. 
 **See Also**

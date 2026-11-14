@@ -8,9 +8,9 @@ open class DateIntervalFormat : UFormat
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [java.text.Format](../java/text/Format.md) |||
-| | ↳ | [android.icu.text.UFormat](../android/icu/text/UFormat.md) ||
-| | | ↳ | [android.icu.text.DateIntervalFormat](../android/icu/text/DateIntervalFormat.md) |
+| ↳ | [java.text.Format](../java.text/Format.md) |||
+| | ↳ | [android.icu.text.UFormat](UFormat.md) ||
+| | | ↳ | [android.icu.text.DateIntervalFormat](DateIntervalFormat.md) |
 | --- | --- | --- | --- |
 
 DateIntervalFormat is a class for formatting and parsing date intervals in a language-independent manner. Only formatting is supported. Parsing is not supported.
@@ -126,28 +126,28 @@ The format methods of DateIntervalFormat may be used concurrently from multiple 
 | Public methods ||
 |---|---|
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalFormat#clone()()` Clone this Format object polymorphically. |
-| [StringBuffer](../java/lang/StringBuffer.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalFormat#format(android.icu.util.Calendar,%20android.icu.util.Calendar,%20java.lang.StringBuffer,%20java.text.FieldPosition)(fromCalendar: https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#!, toCalendar: https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#!, appendTo: https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#!, pos: https://developer.android.com/reference/kotlin/java/text/FieldPosition.html#!)` Format 2 Calendars to produce a string. |
-| [StringBuffer](../java/lang/StringBuffer.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalFormat#format(android.icu.util.DateInterval,%20java.lang.StringBuffer,%20java.text.FieldPosition)(dtInterval: https://developer.android.com/reference/kotlin/android/icu/util/DateInterval.html#!, appendTo: https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#!, fieldPosition: https://developer.android.com/reference/kotlin/java/text/FieldPosition.html#!)` Format a DateInterval to produce a string. |
+| [StringBuffer](../java.lang/StringBuffer.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalFormat#format(android.icu.util.Calendar,%20android.icu.util.Calendar,%20java.lang.StringBuffer,%20java.text.FieldPosition)(fromCalendar: https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#!, toCalendar: https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#!, appendTo: https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#!, pos: https://developer.android.com/reference/kotlin/java/text/FieldPosition.html#!)` Format 2 Calendars to produce a string. |
+| [StringBuffer](../java.lang/StringBuffer.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalFormat#format(android.icu.util.DateInterval,%20java.lang.StringBuffer,%20java.text.FieldPosition)(dtInterval: https://developer.android.com/reference/kotlin/android/icu/util/DateInterval.html#!, appendTo: https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#!, fieldPosition: https://developer.android.com/reference/kotlin/java/text/FieldPosition.html#!)` Format a DateInterval to produce a string. |
 | --- | --- |
-| [StringBuffer](../java/lang/StringBuffer.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalFormat#format(kotlin.Any,%20java.lang.StringBuffer,%20java.text.FieldPosition)(obj: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, appendTo: https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#!, fieldPosition: https://developer.android.com/reference/kotlin/java/text/FieldPosition.html#!)` Format an object to produce a string. |
-| [StringBuffer](../java/lang/StringBuffer.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalFormat#format(java.time.temporal.Temporal,%20java.time.temporal.Temporal,%20java.lang.StringBuffer,%20java.text.FieldPosition)(fromTemporal: https://developer.android.com/reference/kotlin/java/time/temporal/Temporal.html#!, toTemporal: https://developer.android.com/reference/kotlin/java/time/temporal/Temporal.html#!, appendTo: https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#!, pos: https://developer.android.com/reference/kotlin/java/text/FieldPosition.html#!)` Format two `https://developer.android.com/reference/kotlin/java/time/temporal/Temporal.html#`s to produce a string. |
+| [StringBuffer](../java.lang/StringBuffer.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalFormat#format(kotlin.Any,%20java.lang.StringBuffer,%20java.text.FieldPosition)(obj: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, appendTo: https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#!, fieldPosition: https://developer.android.com/reference/kotlin/java/text/FieldPosition.html#!)` Format an object to produce a string. |
+| [StringBuffer](../java.lang/StringBuffer.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalFormat#format(java.time.temporal.Temporal,%20java.time.temporal.Temporal,%20java.lang.StringBuffer,%20java.text.FieldPosition)(fromTemporal: https://developer.android.com/reference/kotlin/java/time/temporal/Temporal.html#!, toTemporal: https://developer.android.com/reference/kotlin/java/time/temporal/Temporal.html#!, appendTo: https://developer.android.com/reference/kotlin/java/lang/StringBuffer.html#!, pos: https://developer.android.com/reference/kotlin/java/text/FieldPosition.html#!)` Format two `https://developer.android.com/reference/kotlin/java/time/temporal/Temporal.html#`s to produce a string. |
 | open [DateIntervalFormat.FormattedDateInterval](../android/icu/text/DateIntervalFormat.FormattedDateInterval.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalFormat#formatToValue(android.icu.util.Calendar,%20android.icu.util.Calendar)(fromCalendar: https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#!, toCalendar: https://developer.android.com/reference/kotlin/android/icu/util/Calendar.html#!)` Format 2 Calendars to produce a FormattedDateInterval. |
 | --- | --- |
 | open [DateIntervalFormat.FormattedDateInterval](../android/icu/text/DateIntervalFormat.FormattedDateInterval.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalFormat#formatToValue(android.icu.util.DateInterval)(dtInterval: https://developer.android.com/reference/kotlin/android/icu/util/DateInterval.html#!)` Format a DateInterval to produce a FormattedDateInterval. |
 | open [DateIntervalFormat.FormattedDateInterval](../android/icu/text/DateIntervalFormat.FormattedDateInterval.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalFormat#formatToValue(java.time.temporal.Temporal,%20java.time.temporal.Temporal)(fromTemporal: https://developer.android.com/reference/kotlin/java/time/temporal/Temporal.html#!, toTemporal: https://developer.android.com/reference/kotlin/java/time/temporal/Temporal.html#!)` Format two `https://developer.android.com/reference/kotlin/java/time/temporal/Temporal.html#`s to produce a FormattedDateInterval. |
-| open [DisplayContext](../android/icu/text/DisplayContext.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalFormat#getContext(android.icu.text.DisplayContext.Type)(type: https://developer.android.com/reference/kotlin/android/icu/text/DisplayContext.Type!)` **\[icu\]** Get the formatter's DisplayContext value for the specified DisplayContext. |
+| open [DisplayContext](DisplayContext.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalFormat#getContext(android.icu.text.DisplayContext.Type)(type: https://developer.android.com/reference/kotlin/android/icu/text/DisplayContext.Type!)` **\[icu\]** Get the formatter's DisplayContext value for the specified DisplayContext. |
 | --- | --- |
-| open [DateFormat](../android/icu/text/DateFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalFormat#getDateFormat()()` Gets the date formatter |
-| open [DateIntervalInfo](../android/icu/text/DateIntervalInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalFormat#getDateIntervalInfo()()` Gets the date time interval patterns. |
-| static [DateIntervalFormat](../android/icu/text/DateIntervalFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalFormat#getInstance(kotlin.String)(skeleton: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Construct a DateIntervalFormat from skeleton and the default `FORMAT` locale. |
+| open [DateFormat](DateFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalFormat#getDateFormat()()` Gets the date formatter |
+| open [DateIntervalInfo](DateIntervalInfo.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalFormat#getDateIntervalInfo()()` Gets the date time interval patterns. |
+| static [DateIntervalFormat](DateIntervalFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalFormat#getInstance(kotlin.String)(skeleton: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Construct a DateIntervalFormat from skeleton and the default `FORMAT` locale. |
 | --- | --- |
-| static [DateIntervalFormat](../android/icu/text/DateIntervalFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalFormat#getInstance(kotlin.String,%20android.icu.text.DateIntervalInfo)(skeleton: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, dtitvinf: https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalInfo!)` Construct a DateIntervalFormat from skeleton DateIntervalInfo, and the default `FORMAT` locale. |
-| static [DateIntervalFormat](../android/icu/text/DateIntervalFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalFormat#getInstance(kotlin.String,%20android.icu.util.ULocale)(skeleton: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, locale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#!)` Construct a DateIntervalFormat from skeleton and a given locale. |
-| static [DateIntervalFormat](../android/icu/text/DateIntervalFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalFormat#getInstance(kotlin.String,%20android.icu.util.ULocale,%20android.icu.text.DateIntervalInfo)(skeleton: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, locale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#!, dtitvinf: https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalInfo!)` Construct a DateIntervalFormat from skeleton a DateIntervalInfo, and the given locale. |
+| static [DateIntervalFormat](DateIntervalFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalFormat#getInstance(kotlin.String,%20android.icu.text.DateIntervalInfo)(skeleton: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, dtitvinf: https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalInfo!)` Construct a DateIntervalFormat from skeleton DateIntervalInfo, and the default `FORMAT` locale. |
+| static [DateIntervalFormat](DateIntervalFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalFormat#getInstance(kotlin.String,%20android.icu.util.ULocale)(skeleton: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, locale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#!)` Construct a DateIntervalFormat from skeleton and a given locale. |
+| static [DateIntervalFormat](DateIntervalFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalFormat#getInstance(kotlin.String,%20android.icu.util.ULocale,%20android.icu.text.DateIntervalInfo)(skeleton: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, locale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale.html#!, dtitvinf: https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalInfo!)` Construct a DateIntervalFormat from skeleton a DateIntervalInfo, and the given locale. |
 | --- | --- |
-| static [DateIntervalFormat](../android/icu/text/DateIntervalFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalFormat#getInstance(kotlin.String,%20java.util.Locale)(skeleton: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Construct a DateIntervalFormat from skeleton and a given locale. |
-| static [DateIntervalFormat](../android/icu/text/DateIntervalFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalFormat#getInstance(kotlin.String,%20java.util.Locale,%20android.icu.text.DateIntervalInfo)(skeleton: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!, dtitvinf: https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalInfo!)` Construct a DateIntervalFormat from skeleton a DateIntervalInfo, and the given locale. |
-| open [TimeZone](../android/icu/util/TimeZone.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalFormat#getTimeZone()()` Get the TimeZone |
+| static [DateIntervalFormat](DateIntervalFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalFormat#getInstance(kotlin.String,%20java.util.Locale)(skeleton: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Construct a DateIntervalFormat from skeleton and a given locale. |
+| static [DateIntervalFormat](DateIntervalFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalFormat#getInstance(kotlin.String,%20java.util.Locale,%20android.icu.text.DateIntervalInfo)(skeleton: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!, dtitvinf: https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalInfo!)` Construct a DateIntervalFormat from skeleton a DateIntervalInfo, and the given locale. |
+| open [TimeZone](../android.icu.util/TimeZone.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalFormat#getTimeZone()()` Get the TimeZone |
 | --- | --- |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalFormat#parseObject(kotlin.String,%20java.text.ParsePosition)(source: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, parse_pos: https://developer.android.com/reference/kotlin/java/text/ParsePosition.html#!)` Date interval parsing is not supported. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/DateIntervalFormat#setContext(android.icu.text.DisplayContext)(context: https://developer.android.com/reference/kotlin/android/icu/text/DisplayContext!)` **\[icu\]** Set a particular DisplayContext value in the formatter, such as CAPITALIZATION_FOR_STANDALONE. |
@@ -192,11 +192,11 @@ Format 2 Calendars to produce a string.
 
 | Parameters ||
 |---|---|
-| `fromCalendar` | [Calendar](../android/icu/util/Calendar.md)!: calendar set to the from date in date interval to be formatted into date interval string |
-| `toCalendar` | [Calendar](../android/icu/util/Calendar.md)!: calendar set to the to date in date interval to be formatted into date interval string |
-| `appendTo` | [StringBuffer](../java/lang/StringBuffer.md)!: Output parameter to receive result. Result is appended to existing contents. |
+| `fromCalendar` | [Calendar](../android.icu.util/Calendar.md)!: calendar set to the from date in date interval to be formatted into date interval string |
+| `toCalendar` | [Calendar](../android.icu.util/Calendar.md)!: calendar set to the to date in date interval to be formatted into date interval string |
+| `appendTo` | [StringBuffer](../java.lang/StringBuffer.md)!: Output parameter to receive result. Result is appended to existing contents. |
 | --- | --- |
-| `pos` | [FieldPosition](../java/text/FieldPosition.md)!: On input: an alignment field, if desired. On output: the offsets of the alignment field. There may be multiple instances of a given field type in an interval format; in this case the fieldPosition offsets refer to the first instance. |
+| `pos` | [FieldPosition](../java.text/FieldPosition.md)!: On input: an alignment field, if desired. On output: the offsets of the alignment field. There may be multiple instances of a given field type in an interval format; in this case the fieldPosition offsets refer to the first instance. |
 
 | Return ||
 |---|---|
@@ -222,9 +222,9 @@ Format a DateInterval to produce a string.
 
 | Parameters ||
 |---|---|
-| `dtInterval` | [DateInterval](../android/icu/util/DateInterval.md)!: DateInterval to be formatted. |
-| `appendTo` | [StringBuffer](../java/lang/StringBuffer.md)!: Output parameter to receive result. Result is appended to existing contents. |
-| `fieldPosition` | [FieldPosition](../java/text/FieldPosition.md)!: On input: an alignment field, if desired. On output: the offsets of the alignment field. There may be multiple instances of a given field type in an interval format; in this case the fieldPosition offsets refer to the first instance. |
+| `dtInterval` | [DateInterval](../android.icu.util/DateInterval.md)!: DateInterval to be formatted. |
+| `appendTo` | [StringBuffer](../java.lang/StringBuffer.md)!: Output parameter to receive result. Result is appended to existing contents. |
+| `fieldPosition` | [FieldPosition](../java.text/FieldPosition.md)!: On input: an alignment field, if desired. On output: the offsets of the alignment field. There may be multiple instances of a given field type in an interval format; in this case the fieldPosition offsets refer to the first instance. |
 | --- | --- |
 
 | Return ||
@@ -251,8 +251,8 @@ Format an object to produce a string. This method handles Formattable objects wi
 | `toAppendTo` | where the text is to be appended |
 | `pos` | A `FieldPosition` identifying a field in the formatted text |
 | --- | --- |
-| `appendTo` | [StringBuffer](../java/lang/StringBuffer.md)!: Output parameter to receive result. Result is appended to existing contents. |
-| `fieldPosition` | [FieldPosition](../java/text/FieldPosition.md)!: On input: an alignment field, if desired. On output: the offsets of the alignment field. There may be multiple instances of a given field type in an interval format; in this case the fieldPosition offsets refer to the first instance. |
+| `appendTo` | [StringBuffer](../java.lang/StringBuffer.md)!: Output parameter to receive result. Result is appended to existing contents. |
+| `fieldPosition` | [FieldPosition](../java.text/FieldPosition.md)!: On input: an alignment field, if desired. On output: the offsets of the alignment field. There may be multiple instances of a given field type in an interval format; in this case the fieldPosition offsets refer to the first instance. |
 
 | Return ||
 |---|---|
@@ -280,11 +280,11 @@ Format two `https://developer.android.com/reference/kotlin/java/time/temporal/Te
 
 | Parameters ||
 |---|---|
-| `fromTemporal` | [Temporal](../java/time/temporal/Temporal.md)!: temporal set to the start of the interval to be formatted into a string |
-| `toTemporal` | [Temporal](../java/time/temporal/Temporal.md)!: temporal set to the end of the interval to be formatted into a string |
-| `appendTo` | [StringBuffer](../java/lang/StringBuffer.md)!: Output parameter to receive result. Result is appended to existing contents. |
+| `fromTemporal` | [Temporal](../java.time.temporal/Temporal.md)!: temporal set to the start of the interval to be formatted into a string |
+| `toTemporal` | [Temporal](../java.time.temporal/Temporal.md)!: temporal set to the end of the interval to be formatted into a string |
+| `appendTo` | [StringBuffer](../java.lang/StringBuffer.md)!: Output parameter to receive result. Result is appended to existing contents. |
 | --- | --- |
-| `pos` | [FieldPosition](../java/text/FieldPosition.md)!: On input: an alignment field, if desired. On output: the offsets of the alignment field. There may be multiple instances of a given field type in an interval format; in this case the fieldPosition offsets refer to the first instance. |
+| `pos` | [FieldPosition](../java.text/FieldPosition.md)!: On input: an alignment field, if desired. On output: the offsets of the alignment field. There may be multiple instances of a given field type in an interval format; in this case the fieldPosition offsets refer to the first instance. |
 
 | Return ||
 |---|---|
@@ -309,8 +309,8 @@ Format 2 Calendars to produce a FormattedDateInterval. The FormattedDateInterval
 
 | Parameters ||
 |---|---|
-| `fromCalendar` | [Calendar](../android/icu/util/Calendar.md)!: calendar set to the from date in date interval to be formatted into date interval string |
-| `toCalendar` | [Calendar](../android/icu/util/Calendar.md)!: calendar set to the to date in date interval to be formatted into date interval string |
+| `fromCalendar` | [Calendar](../android.icu.util/Calendar.md)!: calendar set to the from date in date interval to be formatted into date interval string |
+| `toCalendar` | [Calendar](../android.icu.util/Calendar.md)!: calendar set to the to date in date interval to be formatted into date interval string |
 
 | Return ||
 |---|---|
@@ -328,7 +328,7 @@ Format a DateInterval to produce a FormattedDateInterval. The FormattedDateInter
 
 | Parameters ||
 |---|---|
-| `dtInterval` | [DateInterval](../android/icu/util/DateInterval.md)!: DateInterval to be formatted. |
+| `dtInterval` | [DateInterval](../android.icu.util/DateInterval.md)!: DateInterval to be formatted. |
 
 | Return ||
 |---|---|
@@ -349,8 +349,8 @@ Format two `https://developer.android.com/reference/kotlin/java/time/temporal/Te
 
 | Parameters ||
 |---|---|
-| `fromTemporal` | [Temporal](../java/time/temporal/Temporal.md)!: temporal set to the start of the interval to be formatted into a string |
-| `toTemporal` | [Temporal](../java/time/temporal/Temporal.md)!: temporal set to the end of the interval to be formatted into a string |
+| `fromTemporal` | [Temporal](../java.time.temporal/Temporal.md)!: temporal set to the start of the interval to be formatted into a string |
+| `toTemporal` | [Temporal](../java.time.temporal/Temporal.md)!: temporal set to the end of the interval to be formatted into a string |
 
 | Return ||
 |---|---|
@@ -440,7 +440,7 @@ Construct a DateIntervalFormat from skeleton DateIntervalInfo, and the default `
 | Parameters ||
 |---|---|
 | `skeleton` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the skeleton on which interval format based. |
-| `dtitvinf` | [DateIntervalInfo](../android/icu/text/DateIntervalInfo.md)!: the DateIntervalInfo object to be adopted. |
+| `dtitvinf` | [DateIntervalInfo](DateIntervalInfo.md)!: the DateIntervalInfo object to be adopted. |
 
 | Return ||
 |---|---|
@@ -470,7 +470,7 @@ There are pre-defined skeletons in DateFormat, such as MONTH_DAY, YEAR_MONTH_WEE
 | Parameters ||
 |---|---|
 | `skeleton` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the skeleton on which interval format based. |
-| `locale` | [ULocale](../android/icu/util/ULocale.md)!: the given locale |
+| `locale` | [ULocale](../android.icu.util/ULocale.md)!: the given locale |
 
 | Return ||
 |---|---|
@@ -497,8 +497,8 @@ There are pre-defined skeleton in DateFormat, such as MONTH_DAY, YEAR_MONTH_WEEK
 | Parameters ||
 |---|---|
 | `skeleton` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the skeleton on which interval format based. |
-| `locale` | [ULocale](../android/icu/util/ULocale.md)!: the given locale |
-| `dtitvinf` | [DateIntervalInfo](../android/icu/text/DateIntervalInfo.md)!: the DateIntervalInfo object to be adopted. |
+| `locale` | [ULocale](../android.icu.util/ULocale.md)!: the given locale |
+| `dtitvinf` | [DateIntervalInfo](DateIntervalInfo.md)!: the DateIntervalInfo object to be adopted. |
 | --- | --- |
 
 | Return ||
@@ -568,7 +568,7 @@ import java.util.Date;
 | Parameters ||
 |---|---|
 | `skeleton` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the skeleton on which interval format based. |
-| `locale` | [Locale](../java/util/Locale.md)!: the given locale |
+| `locale` | [Locale](../java.util/Locale.md)!: the given locale |
 
 | Return ||
 |---|---|
@@ -634,8 +634,8 @@ final Date date[] = {
 | Parameters ||
 |---|---|
 | `skeleton` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the skeleton on which interval format based. |
-| `locale` | [Locale](../java/util/Locale.md)!: the given locale |
-| `dtitvinf` | [DateIntervalInfo](../android/icu/text/DateIntervalInfo.md)!: the DateIntervalInfo object to be adopted. |
+| `locale` | [Locale](../java.util/Locale.md)!: the given locale |
+| `dtitvinf` | [DateIntervalInfo](DateIntervalInfo.md)!: the DateIntervalInfo object to be adopted. |
 | --- | --- |
 
 | Return ||
@@ -683,7 +683,7 @@ See Format.parseObject() for more.
 |---|---|
 | `source` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The string to be parsed into an object. |
 | `pos` | A `ParsePosition` object with index and error index information as described above. |
-| `parse_pos` | [ParsePosition](../java/text/ParsePosition.md)!: The position to start parsing at. Since no parsing is supported, upon return this param is unchanged. |
+| `parse_pos` | [ParsePosition](../java.text/ParsePosition.md)!: The position to start parsing at. Since no parsing is supported, upon return this param is unchanged. |
 | --- | --- |
 
 | Return ||
@@ -706,7 +706,7 @@ open fun setContext(context: DisplayContext!): Unit
 
 | Parameters ||
 |---|---|
-| `context` | [DisplayContext](../android/icu/text/DisplayContext.md)!: The DisplayContext value to set. |
+| `context` | [DisplayContext](DisplayContext.md)!: The DisplayContext value to set. |
 
 ### setDateIntervalInfo
 
@@ -720,7 +720,7 @@ Set the date time interval patterns.
 
 | Parameters ||
 |---|---|
-| `newItvPattern` | [DateIntervalInfo](../android/icu/text/DateIntervalInfo.md)!: the given interval patterns to copy. |
+| `newItvPattern` | [DateIntervalInfo](DateIntervalInfo.md)!: the given interval patterns to copy. |
 
 ### setTimeZone
 
@@ -734,4 +734,4 @@ Set the TimeZone for the calendar used by this DateIntervalFormat object.
 
 | Parameters ||
 |---|---|
-| `zone` | [TimeZone](../android/icu/util/TimeZone.md)!: The new TimeZone, will be cloned for use by this DateIntervalFormat. |
+| `zone` | [TimeZone](../android.icu.util/TimeZone.md)!: The new TimeZone, will be cloned for use by this DateIntervalFormat. |

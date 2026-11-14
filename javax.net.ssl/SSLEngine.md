@@ -10,7 +10,7 @@ abstract class SSLEngine
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.net.ssl.SSLEngine](../javax/net/ssl/SSLEngine.md) |
+| ↳ | [javax.net.ssl.SSLEngine](SSLEngine.md) |
 
 A class which enables secure communications using protocols such as the Secure Sockets Layer (SSL) or [IETF RFC 2246 "Transport Layer Security" (TLS)](http://www.ietf.org/rfc/rfc2246.txt) protocols, but is transport independent.
 
@@ -22,11 +22,11 @@ The secure communications modes include:
 
 These kinds of protection are specified by a "cipher suite", which is a combination of cryptographic algorithms used by a given SSL connection. During the negotiation process, the two endpoints must agree on a cipher suite that is available in both environments. If there is no such suite in common, no SSL connection can be established, and no data can be exchanged.
 
-The cipher suite used is established by a negotiation process called "handshaking". The goal of this process is to create or rejoin a "session", which may protect many connections over time. After handshaking has completed, you can access session attributes by using the [getSession()](../javax/net/ssl/SSLEngine.md))method.
+The cipher suite used is established by a negotiation process called "handshaking". The goal of this process is to create or rejoin a "session", which may protect many connections over time. After handshaking has completed, you can access session attributes by using the [getSession()](SSLEngine.md))method.
 
 The`SSLSocket`class provides much of the same security functionality, but all of the inbound and outbound data is automatically transported using the underlying , which by design uses a blocking model. While this is appropriate for many applications, this model does not provide the scalability required by large servers.
 
-The primary distinction of an`SSLEngine`is that it operates on inbound and outbound byte streams, independent of the transport mechanism. It is the responsibility of the`SSLEngine`user to arrange for reliable I/O transport to the peer. By separating the SSL/TLS abstraction from the I/O transport mechanism, the`SSLEngine`can be used for a wide variety of I/O types, such as [non-blocking I/O (polling)](../java/nio/channels/spi/AbstractSelectableChannel.md)), [selectable non-blocking I/O](../java/nio/channels/Selector.md), [Socket](../java/net/Socket.md) and the traditional Input/OutputStreams, local [ByteBuffers](../java/nio/ByteBuffer.md) or byte arrays, [future asynchronous I/O models](http://www.jcp.org/en/jsr/detail?id=203), and so on.
+The primary distinction of an`SSLEngine`is that it operates on inbound and outbound byte streams, independent of the transport mechanism. It is the responsibility of the`SSLEngine`user to arrange for reliable I/O transport to the peer. By separating the SSL/TLS abstraction from the I/O transport mechanism, the`SSLEngine`can be used for a wide variety of I/O types, such as [non-blocking I/O (polling)](../java.nio.channels.spi/AbstractSelectableChannel.md)), [selectable non-blocking I/O](../java.nio.channels/Selector.md), [Socket](../java.net/Socket.md) and the traditional Input/OutputStreams, local [ByteBuffers](../java.nio/ByteBuffer.md) or byte arrays, [future asynchronous I/O models](http://www.jcp.org/en/jsr/detail?id=203), and so on.
 
 At a high level, the`SSLEngine`appears thus: 
 
@@ -62,15 +62,15 @@ There are five distinct phases to an`SSLEngine`.
 4. Rehandshaking - Either side may request a renegotiation of the session at any time during the Application Data phase. New handshaking data can be intermixed among the application data. Before starting the rehandshake phase, the application may reset the SSL/TLS communication parameters such as the list of enabled ciphersuites and whether to use client authentication, but can not change between client/server modes. As before, once handshaking has begun, any new`SSLEngine`configuration settings will not be used until the next handshake.
 5. Closure - When the connection is no longer needed, the application should close the`SSLEngine`and should send/receive any remaining messages to the peer before closing the underlying transport mechanism. Once an engine is closed, it is not reusable: a new`SSLEngine`must be created.
 
-An`SSLEngine`is created by calling [javax.net.ssl.SSLContext#createSSLEngine()](../javax/net/ssl/SSLContext.md))from an initialized`SSLContext`. Any configuration parameters should be set before making the first call to`wrap()`,`unwrap()`, or`beginHandshake()`. These methods all trigger the initial handshake.
+An`SSLEngine`is created by calling [javax.net.ssl.SSLContext#createSSLEngine()](SSLContext.md))from an initialized`SSLContext`. Any configuration parameters should be set before making the first call to`wrap()`,`unwrap()`, or`beginHandshake()`. These methods all trigger the initial handshake.
 
-Data moves through the engine by calling [wrap()](../javax/net/ssl/SSLEngine.md))or [unwrap()](../javax/net/ssl/SSLEngine.md))on outbound or inbound data, respectively. Depending on the state of the`SSLEngine`, a`wrap()`call may consume application data from the source buffer and may produce network data in the destination buffer. The outbound data may contain application and/or handshake data. A call to`unwrap()`will examine the source buffer and may advance the handshake if the data is handshaking information, or may place application data in the destination buffer if the data is application. The state of the underlying SSL/TLS algorithm will determine when data is consumed and produced.
+Data moves through the engine by calling [wrap()](SSLEngine.md))or [unwrap()](SSLEngine.md))on outbound or inbound data, respectively. Depending on the state of the`SSLEngine`, a`wrap()`call may consume application data from the source buffer and may produce network data in the destination buffer. The outbound data may contain application and/or handshake data. A call to`unwrap()`will examine the source buffer and may advance the handshake if the data is handshaking information, or may place application data in the destination buffer if the data is application. The state of the underlying SSL/TLS algorithm will determine when data is consumed and produced.
 
 Calls to`wrap()`and`unwrap()`return an`SSLEngineResult`which indicates the status of the operation, and (optionally) how to interact with the engine to make progress.
 
-The`SSLEngine`produces/consumes complete SSL/TLS packets only, and does not store application data internally between calls to`wrap()/unwrap()`. Thus input and output`ByteBuffer`s must be sized appropriately to hold the maximum record that can be produced. Calls to [javax.net.ssl.SSLSession#getPacketBufferSize()](../javax/net/ssl/SSLSession.md))and [javax.net.ssl.SSLSession#getApplicationBufferSize()](../javax/net/ssl/SSLSession.md))should be used to determine the appropriate buffer sizes. The size of the outbound application data buffer generally does not matter. If buffer conditions do not allow for the proper consumption/production of data, the application must determine (via [SSLEngineResult](../javax/net/ssl/SSLEngineResult.md)) and correct the problem, and then try the call again.
+The`SSLEngine`produces/consumes complete SSL/TLS packets only, and does not store application data internally between calls to`wrap()/unwrap()`. Thus input and output`ByteBuffer`s must be sized appropriately to hold the maximum record that can be produced. Calls to [javax.net.ssl.SSLSession#getPacketBufferSize()](SSLSession.md))and [javax.net.ssl.SSLSession#getApplicationBufferSize()](SSLSession.md))should be used to determine the appropriate buffer sizes. The size of the outbound application data buffer generally does not matter. If buffer conditions do not allow for the proper consumption/production of data, the application must determine (via [SSLEngineResult](SSLEngineResult.md)) and correct the problem, and then try the call again.
 
-For example,`unwrap()`will return a [javax.net.ssl.SSLEngineResult.Status#BUFFER_OVERFLOW](../javax/net/ssl/SSLEngineResult.Status.md) result if the engine determines that there is not enough destination buffer space available. Applications should call [SSLSession.getApplicationBufferSize()](../javax/net/ssl/SSLSession.md))and compare that value with the space available in the destination buffer, enlarging the buffer if necessary. Similarly, if`unwrap()`were to return a [SSLEngineResult.Status.BUFFER_UNDERFLOW](../javax/net/ssl/SSLEngineResult.Status.md), the application should call [SSLSession.getPacketBufferSize()](../javax/net/ssl/SSLSession.md))to ensure that the source buffer has enough room to hold a record (enlarging if necessary), and then obtain more inbound data. 
+For example,`unwrap()`will return a [javax.net.ssl.SSLEngineResult.Status#BUFFER_OVERFLOW](../javax/net/ssl/SSLEngineResult.Status.md) result if the engine determines that there is not enough destination buffer space available. Applications should call [SSLSession.getApplicationBufferSize()](SSLSession.md))and compare that value with the space available in the destination buffer, enlarging the buffer if necessary. Similarly, if`unwrap()`were to return a [SSLEngineResult.Status.BUFFER_UNDERFLOW](../javax/net/ssl/SSLEngineResult.Status.md), the application should call [SSLSession.getPacketBufferSize()](SSLSession.md))to ensure that the source buffer has enough room to hold a record (enlarging if necessary), and then obtain more inbound data. 
 
 ```kotlin
 <code>SSLEngineResult r = engine.unwrap(src, dst);
@@ -104,24 +104,24 @@ For example,`unwrap()`will return a [javax.net.ssl.SSLEngineResult.Status#BUFFER
 
 Unlike`SSLSocket`, all methods of SSLEngine are non-blocking.`SSLEngine`implementations may require the results of tasks that may take an extended period of time to complete, or may even block. For example, a TrustManager may need to connect to a remote certificate validation service, or a KeyManager might need to prompt a user to determine which certificate to use as part of client authentication. Additionally, creating cryptographic signatures and verifying them can be slow, seemingly blocking.
 
-For any operation which may potentially block, the`SSLEngine`will create a [java.lang.Runnable](../java/lang/Runnable.md) delegated task. When`SSLEngineResult`indicates that a delegated task result is needed, the application must call [getDelegatedTask()](../javax/net/ssl/SSLEngine.md))to obtain an outstanding delegated task and call its [run()](../java/lang/Runnable.md))method (possibly using a different thread depending on the compute strategy). The application should continue obtaining delegated tasks until no more exist, and try the original operation again.
+For any operation which may potentially block, the`SSLEngine`will create a [java.lang.Runnable](../java.lang/Runnable.md) delegated task. When`SSLEngineResult`indicates that a delegated task result is needed, the application must call [getDelegatedTask()](SSLEngine.md))to obtain an outstanding delegated task and call its [run()](../java.lang/Runnable.md))method (possibly using a different thread depending on the compute strategy). The application should continue obtaining delegated tasks until no more exist, and try the original operation again.
 
-At the end of a communication session, applications should properly close the SSL/TLS link. The SSL/TLS protocols have closure handshake messages, and these messages should be communicated to the peer before releasing the`SSLEngine`and closing the underlying transport mechanism. A close can be initiated by one of: an SSLException, an inbound closure handshake message, or one of the close methods. In all cases, closure handshake messages are generated by the engine, and`wrap()`should be repeatedly called until the resulting`SSLEngineResult`'s status returns "CLOSED", or [isOutboundDone()](../javax/net/ssl/SSLEngine.md))returns true. All data obtained from the`wrap()`method should be sent to the peer.
+At the end of a communication session, applications should properly close the SSL/TLS link. The SSL/TLS protocols have closure handshake messages, and these messages should be communicated to the peer before releasing the`SSLEngine`and closing the underlying transport mechanism. A close can be initiated by one of: an SSLException, an inbound closure handshake message, or one of the close methods. In all cases, closure handshake messages are generated by the engine, and`wrap()`should be repeatedly called until the resulting`SSLEngineResult`'s status returns "CLOSED", or [isOutboundDone()](SSLEngine.md))returns true. All data obtained from the`wrap()`method should be sent to the peer.
 
-[closeOutbound()](../javax/net/ssl/SSLEngine.md))is used to signal the engine that the application will not be sending any more data.
+[closeOutbound()](SSLEngine.md))is used to signal the engine that the application will not be sending any more data.
 
-A peer will signal its intent to close by sending its own closure handshake message. After this message has been received and processed by the local`SSLEngine`'s`unwrap()`call, the application can detect the close by calling`unwrap()`and looking for a`SSLEngineResult`with status "CLOSED", or if [isInboundDone()](../javax/net/ssl/SSLEngine.md))returns true. If for some reason the peer closes the communication link without sending the proper SSL/TLS closure message, the application can detect the end-of-stream and can signal the engine via [closeInbound()](../javax/net/ssl/SSLEngine.md))that there will no more inbound messages to process. Some applications might choose to require orderly shutdown messages from a peer, in which case they can check that the closure was generated by a handshake message and not by an end-of-stream condition.
+A peer will signal its intent to close by sending its own closure handshake message. After this message has been received and processed by the local`SSLEngine`'s`unwrap()`call, the application can detect the close by calling`unwrap()`and looking for a`SSLEngineResult`with status "CLOSED", or if [isInboundDone()](SSLEngine.md))returns true. If for some reason the peer closes the communication link without sending the proper SSL/TLS closure message, the application can detect the end-of-stream and can signal the engine via [closeInbound()](SSLEngine.md))that there will no more inbound messages to process. Some applications might choose to require orderly shutdown messages from a peer, in which case they can check that the closure was generated by a handshake message and not by an end-of-stream condition.
 
 There are two groups of cipher suites which you will need to know about when managing cipher suites:
 
-- *Supported* cipher suites: all the suites which are supported by the SSL implementation. This list is reported using [getSupportedCipherSuites()](../javax/net/ssl/SSLEngine.md)).
-- *Enabled* cipher suites, which may be fewer than the full set of supported suites. This group is set using the[setEnabledCipherSuites(java.lang.String[])](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine#setEnabledCipherSuites(kotlin.Array))method, and queried using the [getEnabledCipherSuites()](../javax/net/ssl/SSLEngine.md))method. Initially, a default set of cipher suites will be enabled on a new engine that represents the minimum suggested configuration.
+- *Supported* cipher suites: all the suites which are supported by the SSL implementation. This list is reported using [getSupportedCipherSuites()](SSLEngine.md)).
+- *Enabled* cipher suites, which may be fewer than the full set of supported suites. This group is set using the[setEnabledCipherSuites(java.lang.String[])](https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine#setEnabledCipherSuites(kotlin.Array))method, and queried using the [getEnabledCipherSuites()](SSLEngine.md))method. Initially, a default set of cipher suites will be enabled on a new engine that represents the minimum suggested configuration.
 
 Implementation defaults require that only cipher suites which authenticate servers and provide confidentiality be enabled by default. Only if both sides explicitly agree to unauthenticated and/or non-private (unencrypted) communications will such a cipher suite be selected.
 
-Each SSL/TLS connection must have one client and one server, thus each endpoint must decide which role to assume. This choice determines who begins the handshaking process as well as which type of messages should be sent by each party. The method [setUseClientMode(boolean)](../javax/net/ssl/SSLEngine.md))configures the mode. Once the initial handshaking has started, an`SSLEngine`can not switch between client and server modes, even when performing renegotiations.
+Each SSL/TLS connection must have one client and one server, thus each endpoint must decide which role to assume. This choice determines who begins the handshaking process as well as which type of messages should be sent by each party. The method [setUseClientMode(boolean)](SSLEngine.md))configures the mode. Once the initial handshaking has started, an`SSLEngine`can not switch between client and server modes, even when performing renegotiations.
 
-Applications might choose to process delegated tasks in different threads. When an`SSLEngine`is created, the current [java.security.AccessControlContext](../java/security/AccessControlContext.md) is saved. All future delegated tasks will be processed using this context: that is, all access control decisions will be made using the context captured at engine creation.
+Applications might choose to process delegated tasks in different threads. When an`SSLEngine`is created, the current [java.security.AccessControlContext](../java.security/AccessControlContext.md) is saved. All future delegated tasks will be processed using this context: that is, all access control decisions will be made using the context captured at engine creation.
 **Concurrency Notes** : There are two concurrency issues to be aware of:
 
 1. The`wrap()`and`unwrap()`methods may execute concurrently of each other.
@@ -138,7 +138,7 @@ Applications might choose to process delegated tasks in different threads. When 
 
 ### Default configuration for different Android versions
 
-`SSLEngine`instances obtained from the default [SSLContext](../javax/net/ssl/SSLContext.md) are configured as follows:
+`SSLEngine`instances obtained from the default [SSLContext](SSLContext.md) are configured as follows:
 
 #### Protocols
 
@@ -322,60 +322,60 @@ Applications might choose to process delegated tasks in different threads. When 
 
 | Protected constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SSLEngine](../javax/net/ssl/SSLEngine.md))`()` Constructor for an`SSLEngine`providing no hints for an internal session reuse strategy. |
-| [SSLEngine](../javax/net/ssl/SSLEngine.md))`(`peerHost:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `peerPort:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructor for an`SSLEngine`. |
+| [SSLEngine](SSLEngine.md))`()` Constructor for an`SSLEngine`providing no hints for an internal session reuse strategy. |
+| [SSLEngine](SSLEngine.md))`(`peerHost:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `peerPort:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructor for an`SSLEngine`. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [beginHandshake](../javax/net/ssl/SSLEngine.md))`()` Initiates handshaking (initial or renegotiation) on this SSLEngine. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [closeInbound](../javax/net/ssl/SSLEngine.md))`()` Signals that no more inbound network data will be sent to this`SSLEngine`. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [closeOutbound](../javax/net/ssl/SSLEngine.md))`()` Signals that no more outbound application data will be sent on this`SSLEngine`. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [beginHandshake](SSLEngine.md))`()` Initiates handshaking (initial or renegotiation) on this SSLEngine. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [closeInbound](SSLEngine.md))`()` Signals that no more inbound network data will be sent to this`SSLEngine`. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [closeOutbound](SSLEngine.md))`()` Signals that no more outbound application data will be sent on this`SSLEngine`. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getApplicationProtocol](../javax/net/ssl/SSLEngine.md))`()` Returns the most recent application protocol value negotiated for this connection. |
-| abstract [Runnable](../java/lang/Runnable.md)! | [getDelegatedTask](../javax/net/ssl/SSLEngine.md))`()` Returns a delegated`Runnable`task for this`SSLEngine`. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getEnableSessionCreation](../javax/net/ssl/SSLEngine.md))`()` Returns true if new SSL sessions may be established by this engine. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getApplicationProtocol](SSLEngine.md))`()` Returns the most recent application protocol value negotiated for this connection. |
+| abstract [Runnable](../java.lang/Runnable.md)! | [getDelegatedTask](SSLEngine.md))`()` Returns a delegated`Runnable`task for this`SSLEngine`. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getEnableSessionCreation](SSLEngine.md))`()` Returns true if new SSL sessions may be established by this engine. |
 | --- | --- |
-| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getEnabledCipherSuites](../javax/net/ssl/SSLEngine.md))`()` Returns the names of the SSL cipher suites which are currently enabled for use on this engine. |
-| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getEnabledProtocols](../javax/net/ssl/SSLEngine.md))`()` Returns the names of the protocol versions which are currently enabled for use with this`SSLEngine`. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getHandshakeApplicationProtocol](../javax/net/ssl/SSLEngine.md))`()` Returns the application protocol value negotiated on a SSL/TLS handshake currently in progress. |
+| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getEnabledCipherSuites](SSLEngine.md))`()` Returns the names of the SSL cipher suites which are currently enabled for use on this engine. |
+| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getEnabledProtocols](SSLEngine.md))`()` Returns the names of the protocol versions which are currently enabled for use with this`SSLEngine`. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getHandshakeApplicationProtocol](SSLEngine.md))`()` Returns the application protocol value negotiated on a SSL/TLS handshake currently in progress. |
 | --- | --- |
-| open [BiFunction](../java/util/function/BiFunction.md)\< [SSLEngine](../javax/net/ssl/SSLEngine.md)!, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getHandshakeApplicationProtocolSelector](../javax/net/ssl/SSLEngine.md))`()` Retrieves the callback function that selects an application protocol value during a SSL/TLS handshake. |
-| open [SSLSession](../javax/net/ssl/SSLSession.md)! | [getHandshakeSession](../javax/net/ssl/SSLEngine.md))`()` Returns the`SSLSession`being constructed during a SSL/TLS handshake. |
-| abstract [SSLEngineResult.HandshakeStatus](../javax/net/ssl/SSLEngineResult.HandshakeStatus.md)! | [getHandshakeStatus](../javax/net/ssl/SSLEngine.md))`()` Returns the current handshake status for this`SSLEngine`. |
+| open [BiFunction](../java.util.function/BiFunction.md)\< [SSLEngine](SSLEngine.md)!, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getHandshakeApplicationProtocolSelector](SSLEngine.md))`()` Retrieves the callback function that selects an application protocol value during a SSL/TLS handshake. |
+| open [SSLSession](SSLSession.md)! | [getHandshakeSession](SSLEngine.md))`()` Returns the`SSLSession`being constructed during a SSL/TLS handshake. |
+| abstract [SSLEngineResult.HandshakeStatus](../javax/net/ssl/SSLEngineResult.HandshakeStatus.md)! | [getHandshakeStatus](SSLEngine.md))`()` Returns the current handshake status for this`SSLEngine`. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getNeedClientAuth](../javax/net/ssl/SSLEngine.md))`()` Returns true if the engine will*require*client authentication. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPeerHost](../javax/net/ssl/SSLEngine.md))`()` Returns the host name of the peer. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPeerPort](../javax/net/ssl/SSLEngine.md))`()` Returns the port number of the peer. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getNeedClientAuth](SSLEngine.md))`()` Returns true if the engine will*require*client authentication. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPeerHost](SSLEngine.md))`()` Returns the host name of the peer. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPeerPort](SSLEngine.md))`()` Returns the port number of the peer. |
 | --- | --- |
-| open [SSLParameters](../javax/net/ssl/SSLParameters.md)! | [getSSLParameters](../javax/net/ssl/SSLEngine.md))`()` Returns the SSLParameters in effect for this SSLEngine. |
-| abstract [SSLSession](../javax/net/ssl/SSLSession.md)! | [getSession](../javax/net/ssl/SSLEngine.md))`()` Returns the`SSLSession`in use in this`SSLEngine`. |
-| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getSupportedCipherSuites](../javax/net/ssl/SSLEngine.md))`()` Returns the names of the cipher suites which could be enabled for use on this engine. |
+| open [SSLParameters](SSLParameters.md)! | [getSSLParameters](SSLEngine.md))`()` Returns the SSLParameters in effect for this SSLEngine. |
+| abstract [SSLSession](SSLSession.md)! | [getSession](SSLEngine.md))`()` Returns the`SSLSession`in use in this`SSLEngine`. |
+| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getSupportedCipherSuites](SSLEngine.md))`()` Returns the names of the cipher suites which could be enabled for use on this engine. |
 | --- | --- |
-| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getSupportedProtocols](../javax/net/ssl/SSLEngine.md))`()` Returns the names of the protocols which could be enabled for use with this`SSLEngine`. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getUseClientMode](../javax/net/ssl/SSLEngine.md))`()` Returns true if the engine is set to use client mode when handshaking. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getWantClientAuth](../javax/net/ssl/SSLEngine.md))`()` Returns true if the engine will*request*client authentication. |
+| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getSupportedProtocols](SSLEngine.md))`()` Returns the names of the protocols which could be enabled for use with this`SSLEngine`. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getUseClientMode](SSLEngine.md))`()` Returns true if the engine is set to use client mode when handshaking. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getWantClientAuth](SSLEngine.md))`()` Returns true if the engine will*request*client authentication. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isInboundDone](../javax/net/ssl/SSLEngine.md))`()` Returns whether [unwrap(java.nio.ByteBuffer,java.nio.ByteBuffer)](../javax/net/ssl/SSLEngine.md))will accept any more inbound data messages. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isOutboundDone](../javax/net/ssl/SSLEngine.md))`()` Returns whether [wrap(java.nio.ByteBuffer,java.nio.ByteBuffer)](../javax/net/ssl/SSLEngine.md))will produce any more outbound data messages. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEnableSessionCreation](../javax/net/ssl/SSLEngine.md))`(`flag:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Controls whether new SSL sessions may be established by this engine. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isInboundDone](SSLEngine.md))`()` Returns whether [unwrap(java.nio.ByteBuffer,java.nio.ByteBuffer)](SSLEngine.md))will accept any more inbound data messages. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isOutboundDone](SSLEngine.md))`()` Returns whether [wrap(java.nio.ByteBuffer,java.nio.ByteBuffer)](SSLEngine.md))will produce any more outbound data messages. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEnableSessionCreation](SSLEngine.md))`(`flag:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Controls whether new SSL sessions may be established by this engine. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEnabledCipherSuites](../javax/net/ssl/SSLEngine.md))`(`suites:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Sets the cipher suites enabled for use on this engine. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEnabledProtocols](../javax/net/ssl/SSLEngine.md))`(`protocols:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Set the protocol versions enabled for use on this engine. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setHandshakeApplicationProtocolSelector](../javax/net/ssl/SSLEngine.md))`(`selector:` ` [BiFunction](../java/util/function/BiFunction.md)< [SSLEngine](../javax/net/ssl/SSLEngine.md)!,` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!,` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Registers a callback function that selects an application protocol value for a SSL/TLS handshake. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEnabledCipherSuites](SSLEngine.md))`(`suites:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Sets the cipher suites enabled for use on this engine. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEnabledProtocols](SSLEngine.md))`(`protocols:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Set the protocol versions enabled for use on this engine. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setHandshakeApplicationProtocolSelector](SSLEngine.md))`(`selector:` ` [BiFunction](../java.util.function/BiFunction.md)< [SSLEngine](SSLEngine.md)!,` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!,` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Registers a callback function that selects an application protocol value for a SSL/TLS handshake. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setNeedClientAuth](../javax/net/ssl/SSLEngine.md))`(`need:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Configures the engine to*require*client authentication. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSSLParameters](../javax/net/ssl/SSLEngine.md))`(`params:` ` [SSLParameters](../javax/net/ssl/SSLParameters.md)!`)` Applies SSLParameters to this engine. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setUseClientMode](../javax/net/ssl/SSLEngine.md))`(`mode:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Configures the engine to use client (or server) mode when handshaking. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setNeedClientAuth](SSLEngine.md))`(`need:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Configures the engine to*require*client authentication. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSSLParameters](SSLEngine.md))`(`params:` ` [SSLParameters](SSLParameters.md)!`)` Applies SSLParameters to this engine. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setUseClientMode](SSLEngine.md))`(`mode:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Configures the engine to use client (or server) mode when handshaking. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setWantClientAuth](../javax/net/ssl/SSLEngine.md))`(`want:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Configures the engine to*request*client authentication. |
-| open [SSLEngineResult](../javax/net/ssl/SSLEngineResult.md)! | [unwrap](../javax/net/ssl/SSLEngine.md))`(`src:` ` [ByteBuffer](../java/nio/ByteBuffer.md)!`, `dst:` ` [ByteBuffer](../java/nio/ByteBuffer.md)!`)` Attempts to decode SSL/TLS network data into a plaintext application data buffer. |
-| open [SSLEngineResult](../javax/net/ssl/SSLEngineResult.md)! | [unwrap](../javax/net/ssl/SSLEngine.md))`(`src:` ` [ByteBuffer](../java/nio/ByteBuffer.md)!`, `dsts:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ByteBuffer](../java/nio/ByteBuffer.md)!>!`)` Attempts to decode SSL/TLS network data into a sequence of plaintext application data buffers. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setWantClientAuth](SSLEngine.md))`(`want:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Configures the engine to*request*client authentication. |
+| open [SSLEngineResult](SSLEngineResult.md)! | [unwrap](SSLEngine.md))`(`src:` ` [ByteBuffer](../java.nio/ByteBuffer.md)!`, `dst:` ` [ByteBuffer](../java.nio/ByteBuffer.md)!`)` Attempts to decode SSL/TLS network data into a plaintext application data buffer. |
+| open [SSLEngineResult](SSLEngineResult.md)! | [unwrap](SSLEngine.md))`(`src:` ` [ByteBuffer](../java.nio/ByteBuffer.md)!`, `dsts:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ByteBuffer](../java.nio/ByteBuffer.md)!>!`)` Attempts to decode SSL/TLS network data into a sequence of plaintext application data buffers. |
 | --- | --- |
-| abstract [SSLEngineResult](../javax/net/ssl/SSLEngineResult.md)! | [unwrap](../javax/net/ssl/SSLEngine.md))`(`src:` ` [ByteBuffer](../java/nio/ByteBuffer.md)!`, `dsts:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ByteBuffer](../java/nio/ByteBuffer.md)!>!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Attempts to decode SSL/TLS network data into a subsequence of plaintext application data buffers. |
-| open [SSLEngineResult](../javax/net/ssl/SSLEngineResult.md)! | [wrap](../javax/net/ssl/SSLEngine.md))`(`src:` ` [ByteBuffer](../java/nio/ByteBuffer.md)!`, `dst:` ` [ByteBuffer](../java/nio/ByteBuffer.md)!`)` Attempts to encode a buffer of plaintext application data into SSL/TLS network data. |
-| abstract [SSLEngineResult](../javax/net/ssl/SSLEngineResult.md)! | [wrap](../javax/net/ssl/SSLEngine.md))`(`srcs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ByteBuffer](../java/nio/ByteBuffer.md)!>!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dst:` ` [ByteBuffer](../java/nio/ByteBuffer.md)!`)` Attempts to encode plaintext bytes from a subsequence of data buffers into SSL/TLS network data. |
+| abstract [SSLEngineResult](SSLEngineResult.md)! | [unwrap](SSLEngine.md))`(`src:` ` [ByteBuffer](../java.nio/ByteBuffer.md)!`, `dsts:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ByteBuffer](../java.nio/ByteBuffer.md)!>!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Attempts to decode SSL/TLS network data into a subsequence of plaintext application data buffers. |
+| open [SSLEngineResult](SSLEngineResult.md)! | [wrap](SSLEngine.md))`(`src:` ` [ByteBuffer](../java.nio/ByteBuffer.md)!`, `dst:` ` [ByteBuffer](../java.nio/ByteBuffer.md)!`)` Attempts to encode a buffer of plaintext application data into SSL/TLS network data. |
+| abstract [SSLEngineResult](SSLEngineResult.md)! | [wrap](SSLEngine.md))`(`srcs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ByteBuffer](../java.nio/ByteBuffer.md)!>!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dst:` ` [ByteBuffer](../java.nio/ByteBuffer.md)!`)` Attempts to encode plaintext bytes from a subsequence of data buffers into SSL/TLS network data. |
 | --- | --- |
-| open [SSLEngineResult](../javax/net/ssl/SSLEngineResult.md)! | [wrap](../javax/net/ssl/SSLEngine.md))`(`srcs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ByteBuffer](../java/nio/ByteBuffer.md)!>!`, `dst:` ` [ByteBuffer](../java/nio/ByteBuffer.md)!`)` Attempts to encode plaintext bytes from a sequence of data buffers into SSL/TLS network data. |
+| open [SSLEngineResult](SSLEngineResult.md)! | [wrap](SSLEngine.md))`(`srcs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ByteBuffer](../java.nio/ByteBuffer.md)!>!`, `dst:` ` [ByteBuffer](../java.nio/ByteBuffer.md)!`)` Attempts to encode plaintext bytes from a sequence of data buffers into SSL/TLS network data. |
 
 ## Protected constructors
 
@@ -390,8 +390,8 @@ protected SSLEngine()
 Constructor for an`SSLEngine`providing no hints for an internal session reuse strategy. 
 **See Also**
 
-- [javax.net.ssl.SSLContext#createSSLEngine()](../javax/net/ssl/SSLContext.md))
-- [javax.net.ssl.SSLSessionContext](../javax/net/ssl/SSLSessionContext.md) 
+- [javax.net.ssl.SSLContext#createSSLEngine()](SSLContext.md))
+- [javax.net.ssl.SSLSessionContext](SSLSessionContext.md) 
 
 ### SSLEngine
 
@@ -418,8 +418,8 @@ The parameters are not authenticated by the`SSLEngine`.
 
 **See Also**
 
-- [javax.net.ssl.SSLContext#createSSLEngine(String, int)](../javax/net/ssl/SSLContext.md))
-- [javax.net.ssl.SSLSessionContext](../javax/net/ssl/SSLSessionContext.md)
+- [javax.net.ssl.SSLContext#createSSLEngine(String, int)](SSLContext.md))
+- [javax.net.ssl.SSLSessionContext](SSLSessionContext.md)
 
 ## Public methods
 
@@ -437,7 +437,7 @@ This method is not needed for the initial handshake, as the`wrap()`and`unwrap()`
 
 Note that the peer may also request a session renegotiation with this`SSLEngine`by sending the appropriate session renegotiate handshake message.
 
-Unlike the [SSLSocket#startHandshake()](../javax/net/ssl/SSLSocket.md))method, this method does not block until handshaking is completed.
+Unlike the [SSLSocket#startHandshake()](SSLSocket.md))method, this method does not block until handshaking is completed.
 
 To force a complete SSL/TLS session renegotiation, the current session should be invalidated prior to calling this method.
 
@@ -450,7 +450,7 @@ Some protocols may not support multiple handshakes on an existing engine and may
 
 **See Also**
 
-- [javax.net.ssl.SSLSession#invalidate()](../javax/net/ssl/SSLSession.md)) 
+- [javax.net.ssl.SSLSession#invalidate()](SSLSession.md)) 
 
 ### closeInbound
 
@@ -462,13 +462,13 @@ abstract fun closeInbound(): Unit
 
 Signals that no more inbound network data will be sent to this`SSLEngine`.
 
-If the application initiated the closing process by calling [closeOutbound()](../javax/net/ssl/SSLEngine.md)), under some circumstances it is not required that the initiator wait for the peer's corresponding close message. (See section 7.2.1 of the TLS specification ([RFC 2246](http://www.ietf.org/rfc/rfc2246.txt)) for more information on waiting for closure alerts.) In such cases, this method need not be called.
+If the application initiated the closing process by calling [closeOutbound()](SSLEngine.md)), under some circumstances it is not required that the initiator wait for the peer's corresponding close message. (See section 7.2.1 of the TLS specification ([RFC 2246](http://www.ietf.org/rfc/rfc2246.txt)) for more information on waiting for closure alerts.) In such cases, this method need not be called.
 
 But if the application did not initiate the closure process, or if the circumstances above do not apply, this method should be called whenever the end of the SSL/TLS data stream is reached. This ensures closure of the inbound side, and checks that the peer followed the SSL/TLS close procedure properly, thus detecting possible truncation attacks.
 
 This method is idempotent: if the inbound side has already been closed, this method does not do anything.
 
-[wrap()](../javax/net/ssl/SSLEngine.md))should be called to flush any remaining handshake data.
+[wrap()](SSLEngine.md))should be called to flush any remaining handshake data.
 
 | Exceptions ||
 |------------------------------|----------------------------------------------------------------------------------------------|
@@ -491,7 +491,7 @@ Signals that no more outbound application data will be sent on this`SSLEngine`.
 
 This method is idempotent: if the outbound side has already been closed, this method does not do anything.
 
-[wrap(java.nio.ByteBuffer,java.nio.ByteBuffer)](../javax/net/ssl/SSLEngine.md))should be called to flush any remaining handshake data. 
+[wrap(java.nio.ByteBuffer,java.nio.ByteBuffer)](SSLEngine.md))should be called to flush any remaining handshake data. 
 **See Also**
 
 - <https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine#isOutboundDone()> 
@@ -528,7 +528,7 @@ abstract fun getDelegatedTask(): Runnable!
 
 Returns a delegated`Runnable`task for this`SSLEngine`.
 
-`SSLEngine`operations may require the results of operations that block, or may take an extended period of time to complete. This method is used to obtain an outstanding operation (task). Each task must be assigned a thread (possibly the current) to perform the [run](../java/lang/Runnable.md))operation. Once the`run`method returns, the`Runnable`object is no longer needed and may be discarded.
+`SSLEngine`operations may require the results of operations that block, or may take an extended period of time to complete. This method is used to obtain an outstanding operation (task). Each task must be assigned a thread (possibly the current) to perform the [run](../java.lang/Runnable.md))operation. Once the`run`method returns, the`Runnable`object is no longer needed and may be discarded.
 
 Delegated tasks run in the`AccessControlContext`in place when this object was created.
 
@@ -538,7 +538,7 @@ Multiple delegated tasks can be run in parallel.
 
 | Return ||
 |--------------------------------------------------------------------------------------|-----------------------------------------------------------|
-| [Runnable](../java/lang/Runnable.md)! | a delegated`Runnable`task, or null if none are available. |
+| [Runnable](../java.lang/Runnable.md)! | a delegated`Runnable`task, or null if none are available. |
 
 ### getEnableSessionCreation
 
@@ -556,7 +556,7 @@ Returns true if new SSL sessions may be established by this engine.
 
 **See Also**
 
-- [#setEnableSessionCreation(boolean)](../javax/net/ssl/SSLEngine.md)) 
+- [#setEnableSessionCreation(boolean)](SSLEngine.md)) 
 
 ### getEnabledCipherSuites
 
@@ -604,7 +604,7 @@ open fun getHandshakeApplicationProtocol(): String!
 
 Returns the application protocol value negotiated on a SSL/TLS handshake currently in progress.
 
-Like [getHandshakeSession()](../javax/net/ssl/SSLEngine.md)), a connection may be in the middle of a handshake. The application protocol may or may not yet be available.
+Like [getHandshakeSession()](SSLEngine.md)), a connection may be in the middle of a handshake. The application protocol may or may not yet be available.
 
 <br />
 
@@ -624,11 +624,11 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 open fun getHandshakeApplicationProtocolSelector(): BiFunction<SSLEngine!, MutableList<String!>!, String!>!
 ```
 
-Retrieves the callback function that selects an application protocol value during a SSL/TLS handshake. See [setHandshakeApplicationProtocolSelector](../javax/net/ssl/SSLEngine.md))for the function's type parameters.
+Retrieves the callback function that selects an application protocol value during a SSL/TLS handshake. See [setHandshakeApplicationProtocolSelector](SSLEngine.md))for the function's type parameters.
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
-| [BiFunction](../java/util/function/BiFunction.md)< [SSLEngine](../javax/net/ssl/SSLEngine.md)!,` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!,` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>! | the callback function, or null if none has been set. |
+| [BiFunction](../java.util.function/BiFunction.md)< [SSLEngine](SSLEngine.md)!,` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!,` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>! | the callback function, or null if none has been set. |
 
 | Exceptions ||
 |-------------------------------------------|--------------------------------------------------------------|
@@ -650,7 +650,7 @@ This method provides early access to the`SSLSession`being constructed. Depending
 
 | Return ||
 |----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [SSLSession](../javax/net/ssl/SSLSession.md)! | null if this instance is not currently handshaking, or if the current handshake has not progressed far enough to create a basic SSLSession. Otherwise, this method returns the`SSLSession`currently being negotiated. |
+| [SSLSession](SSLSession.md)! | null if this instance is not currently handshaking, or if the current handshake has not progressed far enough to create a basic SSLSession. Otherwise, this method returns the`SSLSession`currently being negotiated. |
 
 | Exceptions ||
 |-------------------------------------------|--------------------------------------------------------------|
@@ -658,11 +658,11 @@ This method provides early access to the`SSLSession`being constructed. Depending
 
 **See Also**
 
-- [javax.net.ssl.SSLSocket](../javax/net/ssl/SSLSocket.md)
-- [javax.net.ssl.SSLSession](../javax/net/ssl/SSLSession.md)
-- [javax.net.ssl.ExtendedSSLSession](../javax/net/ssl/ExtendedSSLSession.md)
-- [javax.net.ssl.X509ExtendedKeyManager](../javax/net/ssl/X509ExtendedKeyManager.md)
-- [javax.net.ssl.X509ExtendedTrustManager](../javax/net/ssl/X509ExtendedTrustManager.md) 
+- [javax.net.ssl.SSLSocket](SSLSocket.md)
+- [javax.net.ssl.SSLSession](SSLSession.md)
+- [javax.net.ssl.ExtendedSSLSession](ExtendedSSLSession.md)
+- [javax.net.ssl.X509ExtendedKeyManager](X509ExtendedKeyManager.md)
+- [javax.net.ssl.X509ExtendedTrustManager](X509ExtendedTrustManager.md) 
 
 ### getHandshakeStatus
 
@@ -694,10 +694,10 @@ Returns true if the engine will*require*client authentication. This option is on
 
 **See Also**
 
-- [#setNeedClientAuth(boolean)](../javax/net/ssl/SSLEngine.md))
-- [#setWantClientAuth(boolean)](../javax/net/ssl/SSLEngine.md))
+- [#setNeedClientAuth(boolean)](SSLEngine.md))
+- [#setWantClientAuth(boolean)](SSLEngine.md))
 - <https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine#getWantClientAuth()>
-- [#setUseClientMode(boolean)](../javax/net/ssl/SSLEngine.md)) 
+- [#setUseClientMode(boolean)](SSLEngine.md)) 
 
 ### getPeerHost
 
@@ -743,7 +743,7 @@ Returns the SSLParameters in effect for this SSLEngine. The ciphersuites and pro
 
 | Return ||
 |----------------------------------------------------------------------------------------------|-------------------------------------------------|
-| [SSLParameters](../javax/net/ssl/SSLParameters.md)! | the SSLParameters in effect for this SSLEngine. |
+| [SSLParameters](SSLParameters.md)! | the SSLParameters in effect for this SSLEngine. |
 
 ### getSession
 
@@ -757,17 +757,17 @@ Returns the`SSLSession`in use in this`SSLEngine`.
 
 These can be long lived, and frequently correspond to an entire login session for some user. The session specifies a particular cipher suite which is being actively used by all connections in that session, as well as the identities of the session's client and server.
 
-Unlike [SSLSocket.getSession()](../javax/net/ssl/SSLSocket.md))this method does not block until handshaking is complete.
+Unlike [SSLSocket.getSession()](SSLSocket.md))this method does not block until handshaking is complete.
 
 Until the initial handshake has completed, this method returns a session object which reports an invalid cipher suite of "SSL_NULL_WITH_NULL_NULL".
 
 | Return ||
 |----------------------------------------------------------------------------------------|------------------------------------|
-| [SSLSession](../javax/net/ssl/SSLSession.md)! | the`SSLSession`for this`SSLEngine` |
+| [SSLSession](SSLSession.md)! | the`SSLSession`for this`SSLEngine` |
 
 **See Also**
 
-- [javax.net.ssl.SSLSession](../javax/net/ssl/SSLSession.md) 
+- [javax.net.ssl.SSLSession](SSLSession.md) 
 
 ### getSupportedCipherSuites
 
@@ -821,7 +821,7 @@ Returns true if the engine is set to use client mode when handshaking.
 
 **See Also**
 
-- [#setUseClientMode(boolean)](../javax/net/ssl/SSLEngine.md)) 
+- [#setUseClientMode(boolean)](SSLEngine.md)) 
 
 ### getWantClientAuth
 
@@ -839,10 +839,10 @@ Returns true if the engine will*request*client authentication. This option is on
 
 **See Also**
 
-- [#setNeedClientAuth(boolean)](../javax/net/ssl/SSLEngine.md))
+- [#setNeedClientAuth(boolean)](SSLEngine.md))
 - <https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine#getNeedClientAuth()>
-- [#setWantClientAuth(boolean)](../javax/net/ssl/SSLEngine.md))
-- [#setUseClientMode(boolean)](../javax/net/ssl/SSLEngine.md)) 
+- [#setWantClientAuth(boolean)](SSLEngine.md))
+- [#setUseClientMode(boolean)](SSLEngine.md)) 
 
 ### isInboundDone
 
@@ -852,7 +852,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun isInboundDone(): Boolean
 ```
 
-Returns whether [unwrap(java.nio.ByteBuffer,java.nio.ByteBuffer)](../javax/net/ssl/SSLEngine.md))will accept any more inbound data messages.
+Returns whether [unwrap(java.nio.ByteBuffer,java.nio.ByteBuffer)](SSLEngine.md))will accept any more inbound data messages.
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
@@ -870,7 +870,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun isOutboundDone(): Boolean
 ```
 
-Returns whether [wrap(java.nio.ByteBuffer,java.nio.ByteBuffer)](../javax/net/ssl/SSLEngine.md))will produce any more outbound data messages.
+Returns whether [wrap(java.nio.ByteBuffer,java.nio.ByteBuffer)](SSLEngine.md))will produce any more outbound data messages.
 
 Note that during the closure phase, a`SSLEngine`may generate handshake closure data that must be sent to the peer.`wrap()`must be called to generate this data. When this method returns true, no more outbound data will be created.
 
@@ -913,7 +913,7 @@ Sets the cipher suites enabled for use on this engine.
 
 Each cipher suite in the`suites`parameter must have been listed by getSupportedCipherSuites(), or the method will fail. Following a successful call to this method, only suites listed in the`suites`parameter are enabled for use.
 
-See [getEnabledCipherSuites()](../javax/net/ssl/SSLEngine.md))for more information on why a specific cipher suite may never be used on a engine.
+See [getEnabledCipherSuites()](SSLEngine.md))for more information on why a specific cipher suite may never be used on a engine.
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -962,7 +962,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 open fun setHandshakeApplicationProtocolSelector(selector: BiFunction<SSLEngine!, MutableList<String!>!, String!>!): Unit
 ```
 
-Registers a callback function that selects an application protocol value for a SSL/TLS handshake. The function overrides any values supplied using [SSLParameters.setApplicationProtocols](../javax/net/ssl/SSLParameters.md))and it supports the following type parameters:
+Registers a callback function that selects an application protocol value for a SSL/TLS handshake. The function overrides any values supplied using [SSLParameters.setApplicationProtocols](SSLParameters.md))and it supports the following type parameters:
 
 `SSLEngine`
 : The function's first argument allows the current`SSLEngine`to be inspected, including the handshake session and configuration settings.
@@ -991,7 +991,7 @@ For example, the following call registers a callback function that examines the 
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `selector` | [BiFunction](../java/util/function/BiFunction.md)\< [SSLEngine](../javax/net/ssl/SSLEngine.md)!, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!:the callback function, or null to disable the callback functionality. |
+| `selector` | [BiFunction](../java.util.function/BiFunction.md)\< [SSLEngine](SSLEngine.md)!, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!:the callback function, or null to disable the callback functionality. |
 
 | Exceptions ||
 |-------------------------------------------|--------------------------------------------------------------|
@@ -1013,9 +1013,9 @@ An engine's client authentication setting is one of the following:
 - client authentication requested
 - no client authentication desired
 
-Unlike [setWantClientAuth(boolean)](../javax/net/ssl/SSLEngine.md)), if this option is set and the client chooses not to provide authentication information about itself,*the negotiations will stop and the engine will begin its closure procedure*.
+Unlike [setWantClientAuth(boolean)](SSLEngine.md)), if this option is set and the client chooses not to provide authentication information about itself,*the negotiations will stop and the engine will begin its closure procedure*.
 
-Calling this method overrides any previous setting made by this method or [setWantClientAuth(boolean)](../javax/net/ssl/SSLEngine.md)).
+Calling this method overrides any previous setting made by this method or [setWantClientAuth(boolean)](SSLEngine.md)).
 
 | Parameters ||
 |--------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1024,9 +1024,9 @@ Calling this method overrides any previous setting made by this method or [setWa
 **See Also**
 
 - <https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine#getNeedClientAuth()>
-- [#setWantClientAuth(boolean)](../javax/net/ssl/SSLEngine.md))
+- [#setWantClientAuth(boolean)](SSLEngine.md))
 - <https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine#getWantClientAuth()>
-- [#setUseClientMode(boolean)](../javax/net/ssl/SSLEngine.md)) 
+- [#setUseClientMode(boolean)](SSLEngine.md)) 
 
 ### setSSLParameters
 
@@ -1048,7 +1048,7 @@ This means:
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------|
-| `params` | [SSLParameters](../javax/net/ssl/SSLParameters.md)!:the parameters |
+| `params` | [SSLParameters](SSLParameters.md)!:the parameters |
 
 | Exceptions ||
 |--------------------------------------|-------------------------------------------------------------------------|
@@ -1096,9 +1096,9 @@ An engine's client authentication setting is one of the following:
 - client authentication requested
 - no client authentication desired
 
-Unlike [setNeedClientAuth(boolean)](../javax/net/ssl/SSLEngine.md)), if this option is set and the client chooses not to provide authentication information about itself,*the negotiations will continue*.
+Unlike [setNeedClientAuth(boolean)](SSLEngine.md)), if this option is set and the client chooses not to provide authentication information about itself,*the negotiations will continue*.
 
-Calling this method overrides any previous setting made by this method or [setNeedClientAuth(boolean)](../javax/net/ssl/SSLEngine.md)).
+Calling this method overrides any previous setting made by this method or [setNeedClientAuth(boolean)](SSLEngine.md)).
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1107,9 +1107,9 @@ Calling this method overrides any previous setting made by this method or [setNe
 **See Also**
 
 - <https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine#getWantClientAuth()>
-- [#setNeedClientAuth(boolean)](../javax/net/ssl/SSLEngine.md))
+- [#setNeedClientAuth(boolean)](SSLEngine.md))
 - <https://developer.android.com/reference/kotlin/javax/net/ssl/SSLEngine#getNeedClientAuth()>
-- [#setUseClientMode(boolean)](../javax/net/ssl/SSLEngine.md)) 
+- [#setUseClientMode(boolean)](SSLEngine.md)) 
 
 ### unwrap
 
@@ -1132,12 +1132,12 @@ An invocation of this method behaves in exactly the same manner as the invocatio
 
 | Parameters ||
 |-------|----------------------------------------------------------------------------------------------------------------------------------------|
-| `src` | [ByteBuffer](../java/nio/ByteBuffer.md)!:a`ByteBuffer`containing inbound network data. |
-| `dst` | [ByteBuffer](../java/nio/ByteBuffer.md)!:a`ByteBuffer`to hold inbound application data. |
+| `src` | [ByteBuffer](../java.nio/ByteBuffer.md)!:a`ByteBuffer`containing inbound network data. |
+| `dst` | [ByteBuffer](../java.nio/ByteBuffer.md)!:a`ByteBuffer`to hold inbound application data. |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
-| [SSLEngineResult](../javax/net/ssl/SSLEngineResult.md)! | an`SSLEngineResult`describing the result of this operation. |
+| [SSLEngineResult](SSLEngineResult.md)! | an`SSLEngineResult`describing the result of this operation. |
 
 | Exceptions ||
 |--------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1170,12 +1170,12 @@ An invocation of this method behaves in exactly the same manner as the invocatio
 
 | Parameters ||
 |--------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `src` | [ByteBuffer](../java/nio/ByteBuffer.md)!:a`ByteBuffer`containing inbound network data. |
-| `dsts` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ByteBuffer](../java/nio/ByteBuffer.md)!\>!:an array of`ByteBuffer`s to hold inbound application data. |
+| `src` | [ByteBuffer](../java.nio/ByteBuffer.md)!:a`ByteBuffer`containing inbound network data. |
+| `dsts` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ByteBuffer](../java.nio/ByteBuffer.md)!\>!:an array of`ByteBuffer`s to hold inbound application data. |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
-| [SSLEngineResult](../javax/net/ssl/SSLEngineResult.md)! | an`SSLEngineResult`describing the result of this operation. |
+| [SSLEngineResult](SSLEngineResult.md)! | an`SSLEngineResult`describing the result of this operation. |
 
 | Exceptions ||
 |--------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1200,7 +1200,7 @@ abstract fun unwrap(
 ): SSLEngineResult!
 ```
 
-Attempts to decode SSL/TLS network data into a subsequence of plaintext application data buffers. This*"scattering"* operation decodes, in a single invocation, a sequence of bytes into one or more of a given sequence of buffers. Scattering unwraps are often useful when implementing network protocols or file formats that, for example, group data into segments consisting of one or more fixed-length headers followed by a variable-length body. See [java.nio.channels.ScatteringByteChannel](../java/nio/channels/ScatteringByteChannel.md) for more information on scattering, and[java.nio.channels.ScatteringByteChannel#read(ByteBuffer[], * int, int)](https://developer.android.com/reference/kotlin/java/nio/channels/ScatteringByteChannel.html#read(kotlin.Array,%20kotlin.Int,%20kotlin.Int))for more information on the subsequence behavior.
+Attempts to decode SSL/TLS network data into a subsequence of plaintext application data buffers. This*"scattering"* operation decodes, in a single invocation, a sequence of bytes into one or more of a given sequence of buffers. Scattering unwraps are often useful when implementing network protocols or file formats that, for example, group data into segments consisting of one or more fixed-length headers followed by a variable-length body. See [java.nio.channels.ScatteringByteChannel](../java.nio.channels/ScatteringByteChannel.md) for more information on scattering, and[java.nio.channels.ScatteringByteChannel#read(ByteBuffer[], * int, int)](https://developer.android.com/reference/kotlin/java/nio/channels/ScatteringByteChannel.html#read(kotlin.Array,%20kotlin.Int,%20kotlin.Int))for more information on the subsequence behavior.
 
 Depending on the state of the SSLEngine, this method may consume network data without producing any application data (for example, it may consume handshake data.)
 
@@ -1218,15 +1218,15 @@ See the class description for more information on engine closure.
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `src` | [ByteBuffer](../java/nio/ByteBuffer.md)!:a`ByteBuffer`containing inbound network data. |
-| `dsts` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ByteBuffer](../java/nio/ByteBuffer.md)!\>!:an array of`ByteBuffer`s to hold inbound application data. |
+| `src` | [ByteBuffer](../java.nio/ByteBuffer.md)!:a`ByteBuffer`containing inbound network data. |
+| `dsts` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ByteBuffer](../java.nio/ByteBuffer.md)!\>!:an array of`ByteBuffer`s to hold inbound application data. |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The offset within the buffer array of the first buffer from which bytes are to be transferred; it must be non-negative and no larger than`dsts.length`. |
 | --- | --- |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The maximum number of buffers to be accessed; it must be non-negative and no larger than`dsts.length`-`offset`. |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
-| [SSLEngineResult](../javax/net/ssl/SSLEngineResult.md)! | an`SSLEngineResult`describing the result of this operation. |
+| [SSLEngineResult](SSLEngineResult.md)! | an`SSLEngineResult`describing the result of this operation. |
 
 | Exceptions ||
 |---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1239,7 +1239,7 @@ See the class description for more information on engine closure.
 
 **See Also**
 
-- [java.nio.channels.ScatteringByteChannel](../java/nio/channels/ScatteringByteChannel.md)
+- [java.nio.channels.ScatteringByteChannel](../java.nio.channels/ScatteringByteChannel.md)
 - [java.nio.channels.ScatteringByteChannel#read(
 * ByteBuffer[], int, int)](https://developer.android.com/reference/kotlin/java/nio/channels/ScatteringByteChannel.html#read(kotlin.Array,%20kotlin.Int,%20kotlin.Int)) 
 
@@ -1264,12 +1264,12 @@ An invocation of this method behaves in exactly the same manner as the invocatio
 
 | Parameters ||
 |-------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| `src` | [ByteBuffer](../java/nio/ByteBuffer.md)!:a`ByteBuffer`containing outbound application data |
-| `dst` | [ByteBuffer](../java/nio/ByteBuffer.md)!:a`ByteBuffer`to hold outbound network data |
+| `src` | [ByteBuffer](../java.nio/ByteBuffer.md)!:a`ByteBuffer`containing outbound application data |
+| `dst` | [ByteBuffer](../java.nio/ByteBuffer.md)!:a`ByteBuffer`to hold outbound network data |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
-| [SSLEngineResult](../javax/net/ssl/SSLEngineResult.md)! | an`SSLEngineResult`describing the result of this operation. |
+| [SSLEngineResult](SSLEngineResult.md)! | an`SSLEngineResult`describing the result of this operation. |
 
 | Exceptions ||
 |--------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1294,7 +1294,7 @@ abstract fun wrap(
 ): SSLEngineResult!
 ```
 
-Attempts to encode plaintext bytes from a subsequence of data buffers into SSL/TLS network data. This*"gathering"* operation encodes, in a single invocation, a sequence of bytes from one or more of a given sequence of buffers. Gathering wraps are often useful when implementing network protocols or file formats that, for example, group data into segments consisting of one or more fixed-length headers followed by a variable-length body. See [java.nio.channels.GatheringByteChannel](../java/nio/channels/GatheringByteChannel.md) for more information on gathering, and[java.nio.channels.GatheringByteChannel#write(ByteBuffer[], * int, int)](https://developer.android.com/reference/kotlin/java/nio/channels/GatheringByteChannel.html#write(kotlin.Array,%20kotlin.Int,%20kotlin.Int))for more information on the subsequence behavior.
+Attempts to encode plaintext bytes from a subsequence of data buffers into SSL/TLS network data. This*"gathering"* operation encodes, in a single invocation, a sequence of bytes from one or more of a given sequence of buffers. Gathering wraps are often useful when implementing network protocols or file formats that, for example, group data into segments consisting of one or more fixed-length headers followed by a variable-length body. See [java.nio.channels.GatheringByteChannel](../java.nio.channels/GatheringByteChannel.md) for more information on gathering, and[java.nio.channels.GatheringByteChannel#write(ByteBuffer[], * int, int)](https://developer.android.com/reference/kotlin/java/nio/channels/GatheringByteChannel.html#write(kotlin.Array,%20kotlin.Int,%20kotlin.Int))for more information on the subsequence behavior.
 
 Depending on the state of the SSLEngine, this method may produce network data without consuming any application data (for example, it may generate handshake data.)
 
@@ -1310,15 +1310,15 @@ See the class description for more information on engine closure.
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `srcs` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ByteBuffer](../java/nio/ByteBuffer.md)!\>!:an array of`ByteBuffers`containing the outbound application data |
+| `srcs` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ByteBuffer](../java.nio/ByteBuffer.md)!\>!:an array of`ByteBuffers`containing the outbound application data |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The offset within the buffer array of the first buffer from which bytes are to be retrieved; it must be non-negative and no larger than`srcs.length` |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The maximum number of buffers to be accessed; it must be non-negative and no larger than`srcs.length`-`offset` |
 | --- | --- |
-| `dst` | [ByteBuffer](../java/nio/ByteBuffer.md)!:a`ByteBuffer`to hold outbound network data |
+| `dst` | [ByteBuffer](../java.nio/ByteBuffer.md)!:a`ByteBuffer`to hold outbound network data |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
-| [SSLEngineResult](../javax/net/ssl/SSLEngineResult.md)! | an`SSLEngineResult`describing the result of this operation. |
+| [SSLEngineResult](SSLEngineResult.md)! | an`SSLEngineResult`describing the result of this operation. |
 
 | Exceptions ||
 |---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1331,7 +1331,7 @@ See the class description for more information on engine closure.
 
 **See Also**
 
-- [java.nio.channels.GatheringByteChannel](../java/nio/channels/GatheringByteChannel.md)
+- [java.nio.channels.GatheringByteChannel](../java.nio.channels/GatheringByteChannel.md)
 - [java.nio.channels.GatheringByteChannel#write(
 * ByteBuffer[], int, int)](https://developer.android.com/reference/kotlin/java/nio/channels/GatheringByteChannel.html#write(kotlin.Array,%20kotlin.Int,%20kotlin.Int)) 
 
@@ -1356,12 +1356,12 @@ An invocation of this method behaves in exactly the same manner as the invocatio
 
 | Parameters ||
 |--------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `srcs` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ByteBuffer](../java/nio/ByteBuffer.md)!\>!:an array of`ByteBuffers`containing the outbound application data |
-| `dst` | [ByteBuffer](../java/nio/ByteBuffer.md)!:a`ByteBuffer`to hold outbound network data |
+| `srcs` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ByteBuffer](../java.nio/ByteBuffer.md)!\>!:an array of`ByteBuffers`containing the outbound application data |
+| `dst` | [ByteBuffer](../java.nio/ByteBuffer.md)!:a`ByteBuffer`to hold outbound network data |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
-| [SSLEngineResult](../javax/net/ssl/SSLEngineResult.md)! | an`SSLEngineResult`describing the result of this operation. |
+| [SSLEngineResult](SSLEngineResult.md)! | an`SSLEngineResult`describing the result of this operation. |
 
 | Exceptions ||
 |--------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|

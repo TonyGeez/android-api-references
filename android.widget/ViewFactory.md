@@ -19,7 +19,7 @@ Creates views in a ViewSwitcher.
 
 | Public methods ||
 |------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [View](../android/view/View.md)! | [makeView](../android/widget/ViewSwitcher.ViewFactory.md))`()` Creates a new [android.view.View](../android/view/View.md) to be added in a [android.widget.ViewSwitcher](../android/widget/ViewSwitcher.md). |
+| abstract [View](../android.view/View.md)! | [makeView](../android/widget/ViewSwitcher.ViewFactory.md))`()` Creates a new [android.view.View](../android.view/View.md) to be added in a [android.widget.ViewSwitcher](ViewSwitcher.md). |
 
 ## Public methods
 
@@ -31,8 +31,8 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun makeView(): View!
 ```
 
-Creates a new [android.view.View](../android/view/View.md) to be added in a [android.widget.ViewSwitcher](../android/widget/ViewSwitcher.md).
+Creates a new [android.view.View](../android.view/View.md) to be added in a [android.widget.ViewSwitcher](ViewSwitcher.md).
 
 | Return ||
 |---------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-| [View](../android/view/View.md)! | a [android.view.View](../android/view/View.md) |
+| [View](../android.view/View.md)! | a [android.view.View](../android.view/View.md) |

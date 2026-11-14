@@ -8,11 +8,11 @@ abstract class InCallService : Service
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](../android/content/Context.md) ||||
-| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) |||
-| | | ↳ | [android.app.Service](../android/app/Service.md) ||
+| ↳ | [android.content.Context](../android.content/Context.md) ||||
+| | ↳ | [android.content.ContextWrapper](../android.content/ContextWrapper.md) |||
+| | | ↳ | [android.app.Service](../android.app/Service.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.telecom.InCallService](../android/telecom/InCallService.md) |
+| | | | ↳ | [android.telecom.InCallService](InCallService.md) |
 
 This service is implemented by an app that wishes to provide functionality for managing phone calls.
 
@@ -35,7 +35,7 @@ Note: If your app fills `https://developer.android.com/reference/kotlin/android/
 
 The preloaded dialer will ALWAYS be used when the user places an emergency call, even if your app fills the `https://developer.android.com/reference/kotlin/android/app/role/RoleManager.html#ROLE_DIALER:kotlin.String` role. To ensure an optimal experience when placing an emergency call, the default dialer should ALWAYS use `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#placeCall(android.net.Uri,%20android.os.Bundle)` to place calls (including emergency calls). This ensures that the platform is able to verify that the request came from the default dialer. If a non-preloaded dialer app uses `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_CALL:kotlin.String` to place an emergency call, it will be raised to the preloaded dialer app using `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_DIAL:kotlin.String` for confirmation; this is a suboptimal user experience.
 
-Below is an example manifest registration for an `InCallService`. The meta-data `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#METADATA_IN_CALL_SERVICE_UI:kotlin.String` indicates that this particular `InCallService` implementation intends to replace the built-in in-call UI. The meta-data `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#METADATA_IN_CALL_SERVICE_RINGING:kotlin.String` indicates that this `https://developer.android.com/reference/kotlin/android/telecom/InCallService#` will play the ringtone for incoming calls. See [below](../android/telecom/InCallService.md) for more information on showing the incoming call UI and playing the ringtone in your app.
+Below is an example manifest registration for an `InCallService`. The meta-data `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#METADATA_IN_CALL_SERVICE_UI:kotlin.String` indicates that this particular `InCallService` implementation intends to replace the built-in in-call UI. The meta-data `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#METADATA_IN_CALL_SERVICE_RINGING:kotlin.String` indicates that this `https://developer.android.com/reference/kotlin/android/telecom/InCallService#` will play the ringtone for incoming calls. See [below](InCallService.md) for more information on showing the incoming call UI and playing the ringtone in your app.
 
 ```kotlin
 <code>&lt;service android:name="your.package.YourInCallServiceImplementation"
@@ -1175,12 +1175,12 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | Public methods ||
 |---|---|
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/InCallService#canAddCall()()` Returns if the device can support additional calls. |
-| [CallAudioState](../android/telecom/CallAudioState.md)! | `https://developer.android.com/reference/kotlin/android/telecom/InCallService#getCallAudioState()()` Obtains the current phone call audio state. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Call](../android/telecom/Call.md)!\>! | `https://developer.android.com/reference/kotlin/android/telecom/InCallService#getCalls()()` Obtains the current list of `Call`s to be displayed by this in-call service. |
+| [CallAudioState](CallAudioState.md)! | `https://developer.android.com/reference/kotlin/android/telecom/InCallService#getCallAudioState()()` Obtains the current phone call audio state. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Call](Call.md)!\>! | `https://developer.android.com/reference/kotlin/android/telecom/InCallService#getCalls()()` Obtains the current list of `Call`s to be displayed by this in-call service. |
 | --- | --- |
-| [CallEndpoint](../android/telecom/CallEndpoint.md) | `https://developer.android.com/reference/kotlin/android/telecom/InCallService#getCurrentCallEndpoint()()` Obtains the current CallEndpoint. |
+| [CallEndpoint](CallEndpoint.md) | `https://developer.android.com/reference/kotlin/android/telecom/InCallService#getCurrentCallEndpoint()()` Obtains the current CallEndpoint. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/InCallService#onAvailableCallEndpointsChanged(kotlin.collections.MutableList)(availableEndpoints: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/telecom/CallEndpoint!>)` Called when the available CallEndpoint changes. |
-| open [IBinder](../android/os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/telecom/InCallService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
+| open [IBinder](../android.os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/telecom/InCallService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/InCallService#onBringToForeground(kotlin.Boolean)(showDialpad: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Called to bring the in-call screen to the foreground. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/InCallService#onCallAdded(android.telecom.Call)(call: https://developer.android.com/reference/kotlin/android/telecom/Call!)` Called when a `Call` has been added to this in-call session. |
@@ -2985,7 +2985,7 @@ Called when the available CallEndpoint changes.
 
 | Parameters ||
 |---|---|
-| `availableEndpoints` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [CallEndpoint](../android/telecom/CallEndpoint.md)!\>: The set of available CallEndpoint `https://developer.android.com/reference/kotlin/android/telecom/CallEndpoint`. This value cannot be `null`. |
+| `availableEndpoints` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [CallEndpoint](CallEndpoint.md)!\>: The set of available CallEndpoint `https://developer.android.com/reference/kotlin/android/telecom/CallEndpoint`. This value cannot be `null`. |
 
 ### onBind
 
@@ -3001,7 +3001,7 @@ Return the communication channel to the service. May return null if clients can 
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
+| `intent` | [Intent](../android.content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
 
 | Return ||
 |---|---|
@@ -3033,7 +3033,7 @@ Called when a `Call` has been added to this in-call session. The in-call user ex
 
 | Parameters ||
 |---|---|
-| `call` | [Call](../android/telecom/Call.md)!: A newly added `Call`. |
+| `call` | [Call](Call.md)!: A newly added `Call`. |
 
 ### onCallAudioStateChanged
 
@@ -3050,7 +3050,7 @@ Called when the audio state changes.
 
 | Parameters ||
 |---|---|
-| `audioState` | [CallAudioState](../android/telecom/CallAudioState.md)!: The new `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState`. |
+| `audioState` | [CallAudioState](CallAudioState.md)!: The new `https://developer.android.com/reference/kotlin/android/telecom/CallAudioState`. |
 
 ### onCallEndpointChanged
 
@@ -3064,7 +3064,7 @@ Called when the current CallEndpoint changes.
 
 | Parameters ||
 |---|---|
-| `callEndpoint` | [CallEndpoint](../android/telecom/CallEndpoint.md): The current CallEndpoint `https://developer.android.com/reference/kotlin/android/telecom/CallEndpoint`. This value cannot be `null`. |
+| `callEndpoint` | [CallEndpoint](CallEndpoint.md): The current CallEndpoint `https://developer.android.com/reference/kotlin/android/telecom/CallEndpoint`. This value cannot be `null`. |
 
 ### onCallEndpointRequested
 
@@ -3078,7 +3078,7 @@ Called by the platform when an `https://developer.android.com/reference/kotlin/a
 
 | Parameters ||
 |---|---|
-| `callEndpoint` | [CallEndpoint](../android/telecom/CallEndpoint.md): The requested `https://developer.android.com/reference/kotlin/android/telecom/CallEndpoint`. This value cannot be `null`. |
+| `callEndpoint` | [CallEndpoint](CallEndpoint.md): The requested `https://developer.android.com/reference/kotlin/android/telecom/CallEndpoint`. This value cannot be `null`. |
 
 ### onCallRemoved
 
@@ -3092,7 +3092,7 @@ Called when a `Call` has been removed from this in-call session. The in-call use
 
 | Parameters ||
 |---|---|
-| `call` | [Call](../android/telecom/Call.md)!: A newly removed `Call`. |
+| `call` | [Call](Call.md)!: A newly removed `Call`. |
 
 ### onCanAddCallChanged
 
@@ -3126,9 +3126,9 @@ See `https://developer.android.com/reference/kotlin/android/telecom/Connection#s
 
 | Parameters ||
 |---|---|
-| `call` | [Call](../android/telecom/Call.md)!: The call the event is associated with. |
+| `call` | [Call](Call.md)!: The call the event is associated with. |
 | `event` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The event. |
-| `extras` | [Bundle](../android/os/Bundle.md)!: Any associated extras. |
+| `extras` | [Bundle](../android.os/Bundle.md)!: Any associated extras. |
 | --- | --- |
 
 ### onMuteStateChanged
@@ -3167,7 +3167,7 @@ Called when all clients have disconnected from a particular interface published 
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
+| `intent` | [Intent](../android.content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
 
 | Return ||
 |---|---|
@@ -3188,7 +3188,7 @@ Request audio routing to a specific bluetooth device. Calling this method may re
 
 | Parameters ||
 |---|---|
-| `bluetoothDevice` | [BluetoothDevice](../android/bluetooth/BluetoothDevice.md): The bluetooth device to connect to. This value cannot be `null`. |
+| `bluetoothDevice` | [BluetoothDevice](../android.bluetooth/BluetoothDevice.md): The bluetooth device to connect to. This value cannot be `null`. |
 
 ### requestCallEndpointChange
 
@@ -3206,9 +3206,9 @@ Request audio routing to a specific CallEndpoint. Clients should not define thei
 
 | Parameters ||
 |---|---|
-| `endpoint` | [CallEndpoint](../android/telecom/CallEndpoint.md): The call endpoint to use. This value cannot be `null`. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): The executor of where the callback will execute. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `callback` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [Void](../java/lang/Void.md)!, [CallEndpointException](../android/telecom/CallEndpointException.md)!\>: The callback to notify the result of the endpoint change. This value cannot be `null`. |
+| `endpoint` | [CallEndpoint](CallEndpoint.md): The call endpoint to use. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor of where the callback will execute. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `callback` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [Void](../java.lang/Void.md)!, [CallEndpointException](CallEndpointException.md)!\>: The callback to notify the result of the endpoint change. This value cannot be `null`. |
 | --- | --- |
 
 ### setAudioRoute

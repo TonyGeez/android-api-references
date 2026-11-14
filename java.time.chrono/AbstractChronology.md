@@ -8,13 +8,13 @@ abstract class AbstractChronology : Chronology
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.time.chrono.AbstractChronology](../java/time/chrono/AbstractChronology.md) |
+| ↳ | [java.time.chrono.AbstractChronology](AbstractChronology.md) |
 
-Known Direct Subclasses [HijrahChronology](../java/time/chrono/HijrahChronology.md), [IsoChronology](../java/time/chrono/IsoChronology.md), [JapaneseChronology](../java/time/chrono/JapaneseChronology.md), [MinguoChronology](../java/time/chrono/MinguoChronology.md), [ThaiBuddhistChronology](../java/time/chrono/ThaiBuddhistChronology.md) [HijrahChronology](../java/time/chrono/HijrahChronology.md) The Hijrah calendar is a lunar calendar supporting Islamic calendars.
-[IsoChronology](../java/time/chrono/IsoChronology.md) The ISO calendar system.
-[JapaneseChronology](../java/time/chrono/JapaneseChronology.md) The Japanese Imperial calendar system.
-[MinguoChronology](../java/time/chrono/MinguoChronology.md) The Minguo calendar system.
-[ThaiBuddhistChronology](../java/time/chrono/ThaiBuddhistChronology.md) The Thai Buddhist calendar system.
+Known Direct Subclasses [HijrahChronology](HijrahChronology.md), [IsoChronology](IsoChronology.md), [JapaneseChronology](JapaneseChronology.md), [MinguoChronology](MinguoChronology.md), [ThaiBuddhistChronology](ThaiBuddhistChronology.md) [HijrahChronology](HijrahChronology.md) The Hijrah calendar is a lunar calendar supporting Islamic calendars.
+[IsoChronology](IsoChronology.md) The ISO calendar system.
+[JapaneseChronology](JapaneseChronology.md) The Japanese Imperial calendar system.
+[MinguoChronology](MinguoChronology.md) The Minguo calendar system.
+[ThaiBuddhistChronology](ThaiBuddhistChronology.md) The Thai Buddhist calendar system.
 
 An abstract implementation of a calendar system, used to organize and identify dates.
 
@@ -34,7 +34,7 @@ See `https://developer.android.com/reference/kotlin/java/time/chrono/Chronology`
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/time/chrono/AbstractChronology#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Checks if this chronology is equal to another chronology. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/chrono/AbstractChronology#hashCode()()` A hash code for this chronology. |
 | --- | --- |
-| open [ChronoLocalDate](../java/time/chrono/ChronoLocalDate.md)! | `https://developer.android.com/reference/kotlin/java/time/chrono/AbstractChronology#resolveDate(kotlin.collections.MutableMap,%20java.time.format.ResolverStyle)(fieldValues: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#!, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html!>!, resolverStyle: https://developer.android.com/reference/kotlin/java/time/format/ResolverStyle.html#!)` Resolves parsed `ChronoField` values into a date during parsing. |
+| open [ChronoLocalDate](ChronoLocalDate.md)! | `https://developer.android.com/reference/kotlin/java/time/chrono/AbstractChronology#resolveDate(kotlin.collections.MutableMap,%20java.time.format.ResolverStyle)(fieldValues: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#!, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html!>!, resolverStyle: https://developer.android.com/reference/kotlin/java/time/format/ResolverStyle.html#!)` Resolves parsed `ChronoField` values into a date during parsing. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/time/chrono/AbstractChronology#toString()()` Outputs this chronology as a `String`, using the chronology ID. |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/java/time/chrono/Chronology` `https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate!` `https://developer.android.com/reference/kotlin/java/time/chrono/Chronology#date(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(prolepticYear: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, month: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dayOfMonth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`
@@ -282,7 +282,7 @@ The comparison order first by the chronology ID string, then by any additional i
 | Parameters ||
 |---|---|
 | `o` | the object to be compared. |
-| `other` | [Chronology](../java/time/chrono/Chronology.md)!: the other chronology to compare to, not null |
+| `other` | [Chronology](Chronology.md)!: the other chronology to compare to, not null |
 
 | Return ||
 |---|---|
@@ -360,8 +360,8 @@ The default implementation is suitable for most calendar systems. If `https://de
 
 | Parameters ||
 |---|---|
-| `fieldValues` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [TemporalField](../java/time/temporal/TemporalField.md)!, [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)!\>!: the map of fields to values, which can be updated, not null |
-| `resolverStyle` | [ResolverStyle](../java/time/format/ResolverStyle.md)!: the requested type of resolve, not null |
+| `fieldValues` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [TemporalField](../java.time.temporal/TemporalField.md)!, [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)!\>!: the map of fields to values, which can be updated, not null |
+| `resolverStyle` | [ResolverStyle](../java.time.format/ResolverStyle.md)!: the requested type of resolve, not null |
 
 | Return ||
 |---|---|

@@ -2,7 +2,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 
 # PrintDocumentAdapter
 
-Kotlin | [Java](../android/print/PrintDocumentAdapter.md)
+Kotlin | [Java](PrintDocumentAdapter.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ abstract class PrintDocumentAdapter
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.print.PrintDocumentAdapter](../android/print/PrintDocumentAdapter.md) |
+| ↳ | [android.print.PrintDocumentAdapter](PrintDocumentAdapter.md) |
 
 Base class that provides the content of a document to be printed.
 
@@ -135,12 +135,12 @@ cancellationSignal.setOnCancelListener(new OnCancelListener() {
 
 | Parameters ||
 |---|---|
-| `oldAttributes` | [PrintAttributes](../android/print/PrintAttributes.md)!: The old print attributes. |
-| `newAttributes` | [PrintAttributes](../android/print/PrintAttributes.md)!: The new print attributes. |
-| `cancellationSignal` | [CancellationSignal](../android/os/CancellationSignal.md)!: Signal for observing cancel layout requests. |
+| `oldAttributes` | [PrintAttributes](PrintAttributes.md)!: The old print attributes. |
+| `newAttributes` | [PrintAttributes](PrintAttributes.md)!: The new print attributes. |
+| `cancellationSignal` | [CancellationSignal](../android.os/CancellationSignal.md)!: Signal for observing cancel layout requests. |
 | --- | --- |
 | `callback` | [PrintDocumentAdapter.LayoutResultCallback](../android/print/PrintDocumentAdapter.LayoutResultCallback.md)!: Callback to inform the system for the layout result. |
-| `extras` | [Bundle](../android/os/Bundle.md)!: Additional information about how to layout the content. |
+| `extras` | [Bundle](../android.os/Bundle.md)!: Additional information about how to layout the content. |
 
 **See Also**
 
@@ -191,9 +191,9 @@ cancellationSignal.setOnCancelListener(new OnCancelListener() {
 
 | Parameters ||
 |---|---|
-| `pages` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [PageRange](../android/print/PageRange.md)!\>!: The pages whose content to print - non-overlapping in ascending order. |
-| `destination` | [ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md)!: The destination file descriptor to which to write. |
-| `cancellationSignal` | [CancellationSignal](../android/os/CancellationSignal.md)!: Signal for observing cancel writing requests. |
+| `pages` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [PageRange](PageRange.md)!\>!: The pages whose content to print - non-overlapping in ascending order. |
+| `destination` | [ParcelFileDescriptor](../android.os/ParcelFileDescriptor.md)!: The destination file descriptor to which to write. |
+| `cancellationSignal` | [CancellationSignal](../android.os/CancellationSignal.md)!: Signal for observing cancel writing requests. |
 | --- | --- |
 | `callback` | [PrintDocumentAdapter.WriteResultCallback](../android/print/PrintDocumentAdapter.WriteResultCallback.md)!: Callback to inform the system for the write result. |
 

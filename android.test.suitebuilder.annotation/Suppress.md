@@ -5,14 +5,14 @@ Deprecated in [API level 24](https://developer.android.com/guide/topics/manifest
 
 # Suppress
 
-Kotlin| [Java](../android/test/suitebuilder/annotation/Suppress.md) 
+Kotlin| [Java](Suppress.md) 
 | --- | --- |
 
 ```
 @Target([AnnotationTarget.FUNCTION, AnnotationTarget.PROPERTY_GETTER, AnnotationTarget.PROPERTY_SETTER, AnnotationTarget.CLASS, AnnotationTarget.FILE]) class Suppress
 ```
 
-| [android.test.suitebuilder.annotation.Suppress](../android/test/suitebuilder/annotation/Suppress.md) |
+| [android.test.suitebuilder.annotation.Suppress](Suppress.md) |
 
 | **This annotation was deprecated in API level 24.**
 |
@@ -24,7 +24,7 @@ Use this annotation on test classes or test methods that should not be included 
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Suppress](../android/test/suitebuilder/annotation/Suppress.md))`()` Use this annotation on test classes or test methods that should not be included in a test suite. |
+| [Suppress](Suppress.md))`()` Use this annotation on test classes or test methods that should not be included in a test suite. |
 
 ## Public constructors
 

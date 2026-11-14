@@ -11,10 +11,10 @@ open class NoSuchProviderException : GeneralSecurityException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
-| | | ↳ | [java.security.GeneralSecurityException](../java/security/GeneralSecurityException.md) ||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) |||
+| | | ↳ | [java.security.GeneralSecurityException](GeneralSecurityException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.security.NoSuchProviderException](../java/security/NoSuchProviderException.md) |
+| | | | ↳ | [java.security.NoSuchProviderException](NoSuchProviderException.md) |
 
 This exception is thrown when a particular security provider is requested but is not available in the environment.
 
@@ -22,8 +22,8 @@ This exception is thrown when a particular security provider is requested but is
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [NoSuchProviderException](../java/security/NoSuchProviderException.md))`()` Constructs a NoSuchProviderException with no detail message. |
-| [NoSuchProviderException](../java/security/NoSuchProviderException.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a NoSuchProviderException with the specified detail message. |
+| [NoSuchProviderException](NoSuchProviderException.md))`()` Constructs a NoSuchProviderException with no detail message. |
+| [NoSuchProviderException](NoSuchProviderException.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a NoSuchProviderException with the specified detail message. |
 
 ## Public constructors
 

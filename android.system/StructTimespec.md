@@ -4,7 +4,7 @@ Added in [API level 27](https://developer.android.com/guide/topics/manifest/uses
 
 # StructTimespec
 
-Kotlin| [Java](../android/system/StructTimespec.md) 
+Kotlin| [Java](StructTimespec.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class StructTimespec : Comparable<StructTimespec!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.system.StructTimespec](../android/system/StructTimespec.md) |
+| ↳ | [android.system.StructTimespec](StructTimespec.md) |
 
 Corresponds to C's`struct timespec`from`<time.h>`.
 
@@ -21,20 +21,20 @@ Corresponds to C's`struct timespec`from`<time.h>`.
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [StructTimespec](../android/system/StructTimespec.md))`(`tv_sec:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `tv_nsec:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` <br /> |
+| [StructTimespec](StructTimespec.md))`(`tv_sec:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `tv_nsec:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` <br /> |
 
 | Public methods ||
 |------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](../android/system/StructTimespec.md))`(`other:` ` [StructTimespec](../android/system/StructTimespec.md)!`)` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/system/StructTimespec.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/system/StructTimespec.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](StructTimespec.md))`(`other:` ` [StructTimespec](StructTimespec.md)!`)` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](StructTimespec.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](StructTimespec.md))`()` <br /> |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/system/StructTimespec.md))`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](StructTimespec.md))`()` <br /> |
 
 | Properties ||
 |------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [tv_nsec](../android/system/StructTimespec.md) Nanoseconds (values are \[0, 999999999\]). |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [tv_sec](../android/system/StructTimespec.md) Seconds part of time of last data modification. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [tv_nsec](StructTimespec.md) Nanoseconds (values are \[0, 999999999\]). |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [tv_sec](StructTimespec.md) Seconds part of time of last data modification. |
 
 ## Public constructors
 

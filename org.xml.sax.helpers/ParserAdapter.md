@@ -10,11 +10,11 @@ open class ParserAdapter : DocumentHandler, XMLReader
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [org.xml.sax.helpers.ParserAdapter](../org/xml/sax/helpers/ParserAdapter.md) |
+| ↳ | [org.xml.sax.helpers.ParserAdapter](ParserAdapter.md) |
 
 Adapt a SAX1 Parser as a SAX2 XMLReader.*This module, both source code and documentation, is in the Public Domain, and comes with**NO WARRANTY**.* See<http://www.saxproject.org>for further information.
 
-This class wraps a SAX1 [Parser](../org/xml/sax/Parser.md) and makes it act as a SAX2 [XMLReader](../org/xml/sax/XMLReader.md), with feature, property, and Namespace support. Note that it is not possible to report [skippedEntity](../org/xml/sax/ContentHandler.md))events, since SAX1 does not make that information available.
+This class wraps a SAX1 [Parser](../org.xml.sax/Parser.md) and makes it act as a SAX2 [XMLReader](../org.xml.sax/XMLReader.md), with feature, property, and Namespace support. Note that it is not possible to report [skippedEntity](../org.xml.sax/ContentHandler.md))events, since SAX1 does not make that information available.
 
 This adapter does not test for duplicate Namespace-qualified attribute names.
 
@@ -22,40 +22,40 @@ This adapter does not test for duplicate Namespace-qualified attribute names.
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ParserAdapter](../org/xml/sax/helpers/ParserAdapter.md))`()` Construct a new parser adapter. |
-| [ParserAdapter](../org/xml/sax/helpers/ParserAdapter.md))`(`parser:` ` [Parser](../org/xml/sax/Parser.md)!`)` Construct a new parser adapter. |
+| [ParserAdapter](ParserAdapter.md))`()` Construct a new parser adapter. |
+| [ParserAdapter](ParserAdapter.md))`(`parser:` ` [Parser](../org.xml.sax/Parser.md)!`)` Construct a new parser adapter. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [characters](../org/xml/sax/helpers/ParserAdapter.md))`(`ch:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Adapter implementation method; do not call. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [endDocument](../org/xml/sax/helpers/ParserAdapter.md))`()` Adapter implementation method; do not call. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [endElement](../org/xml/sax/helpers/ParserAdapter.md))`(`qName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Adapter implementation method; do not call. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [characters](ParserAdapter.md))`(`ch:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Adapter implementation method; do not call. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [endDocument](ParserAdapter.md))`()` Adapter implementation method; do not call. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [endElement](ParserAdapter.md))`(`qName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Adapter implementation method; do not call. |
 | --- | --- |
-| open [ContentHandler](../org/xml/sax/ContentHandler.md)! | [getContentHandler](../org/xml/sax/helpers/ParserAdapter.md))`()` Return the current content handler. |
-| open [DTDHandler](../org/xml/sax/DTDHandler.md)! | [getDTDHandler](../org/xml/sax/helpers/ParserAdapter.md))`()` Return the current DTD handler. |
-| open [EntityResolver](../org/xml/sax/EntityResolver.md)! | [getEntityResolver](../org/xml/sax/helpers/ParserAdapter.md))`()` Return the current entity resolver. |
+| open [ContentHandler](../org.xml.sax/ContentHandler.md)! | [getContentHandler](ParserAdapter.md))`()` Return the current content handler. |
+| open [DTDHandler](../org.xml.sax/DTDHandler.md)! | [getDTDHandler](ParserAdapter.md))`()` Return the current DTD handler. |
+| open [EntityResolver](../org.xml.sax/EntityResolver.md)! | [getEntityResolver](ParserAdapter.md))`()` Return the current entity resolver. |
 | --- | --- |
-| open [ErrorHandler](../org/xml/sax/ErrorHandler.md)! | [getErrorHandler](../org/xml/sax/helpers/ParserAdapter.md))`()` Return the current error handler. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getFeature](../org/xml/sax/helpers/ParserAdapter.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Check a parser feature flag. |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getProperty](../org/xml/sax/helpers/ParserAdapter.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Get a parser property. |
+| open [ErrorHandler](../org.xml.sax/ErrorHandler.md)! | [getErrorHandler](ParserAdapter.md))`()` Return the current error handler. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getFeature](ParserAdapter.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Check a parser feature flag. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getProperty](ParserAdapter.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Get a parser property. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [ignorableWhitespace](../org/xml/sax/helpers/ParserAdapter.md))`(`ch:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Adapter implementation method; do not call. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parse](../org/xml/sax/helpers/ParserAdapter.md))`(`systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Parse an XML document. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parse](../org/xml/sax/helpers/ParserAdapter.md))`(`input:` ` [InputSource](../org/xml/sax/InputSource.md)!`)` Parse an XML document. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [ignorableWhitespace](ParserAdapter.md))`(`ch:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Adapter implementation method; do not call. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parse](ParserAdapter.md))`(`systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Parse an XML document. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parse](ParserAdapter.md))`(`input:` ` [InputSource](../org.xml.sax/InputSource.md)!`)` Parse an XML document. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [processingInstruction](../org/xml/sax/helpers/ParserAdapter.md))`(`target:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `data:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Adapter implementation method; do not call. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setContentHandler](../org/xml/sax/helpers/ParserAdapter.md))`(`handler:` ` [ContentHandler](../org/xml/sax/ContentHandler.md)!`)` Set the content handler. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDTDHandler](../org/xml/sax/helpers/ParserAdapter.md))`(`handler:` ` [DTDHandler](../org/xml/sax/DTDHandler.md)!`)` Set the DTD handler. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [processingInstruction](ParserAdapter.md))`(`target:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `data:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Adapter implementation method; do not call. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setContentHandler](ParserAdapter.md))`(`handler:` ` [ContentHandler](../org.xml.sax/ContentHandler.md)!`)` Set the content handler. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDTDHandler](ParserAdapter.md))`(`handler:` ` [DTDHandler](../org.xml.sax/DTDHandler.md)!`)` Set the DTD handler. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDocumentLocator](../org/xml/sax/helpers/ParserAdapter.md))`(`locator:` ` [Locator](../org/xml/sax/Locator.md)!`)` Adapter implementation method; do not call. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEntityResolver](../org/xml/sax/helpers/ParserAdapter.md))`(`resolver:` ` [EntityResolver](../org/xml/sax/EntityResolver.md)!`)` Set the entity resolver. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setErrorHandler](../org/xml/sax/helpers/ParserAdapter.md))`(`handler:` ` [ErrorHandler](../org/xml/sax/ErrorHandler.md)!`)` Set the error handler. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDocumentLocator](ParserAdapter.md))`(`locator:` ` [Locator](../org.xml.sax/Locator.md)!`)` Adapter implementation method; do not call. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEntityResolver](ParserAdapter.md))`(`resolver:` ` [EntityResolver](../org.xml.sax/EntityResolver.md)!`)` Set the entity resolver. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setErrorHandler](ParserAdapter.md))`(`handler:` ` [ErrorHandler](../org.xml.sax/ErrorHandler.md)!`)` Set the error handler. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFeature](../org/xml/sax/helpers/ParserAdapter.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Set a feature flag for the parser. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setProperty](../org/xml/sax/helpers/ParserAdapter.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Set a parser property. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startDocument](../org/xml/sax/helpers/ParserAdapter.md))`()` Adapter implementation method; do not call. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFeature](ParserAdapter.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Set a feature flag for the parser. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setProperty](ParserAdapter.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Set a parser property. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startDocument](ParserAdapter.md))`()` Adapter implementation method; do not call. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startElement](../org/xml/sax/helpers/ParserAdapter.md))`(`qName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `qAtts:` ` [AttributeList](../org/xml/sax/AttributeList.md)!`)` Adapter implementation method; do not call. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startElement](ParserAdapter.md))`(`qName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `qAtts:` ` [AttributeList](../org.xml.sax/AttributeList.md)!`)` Adapter implementation method; do not call. |
 
 ## Public constructors
 
@@ -89,7 +89,7 @@ Note that the embedded parser cannot be changed once the adapter is created; to 
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------|
-| `parser` | [Parser](../org/xml/sax/Parser.md)!:The SAX1 parser to embed. |
+| `parser` | [Parser](../org.xml.sax/Parser.md)!:The SAX1 parser to embed. |
 
 | Exceptions ||
 |----------------------------------|----------------------------------|
@@ -124,7 +124,7 @@ Adapter implementation method; do not call. Adapt a SAX1 characters event.
 
 **See Also**
 
-- [org.xml.sax.DocumentHandler#characters](../org/xml/sax/DocumentHandler.md)) 
+- [org.xml.sax.DocumentHandler#characters](../org.xml.sax/DocumentHandler.md)) 
 
 ### endDocument
 
@@ -142,7 +142,7 @@ Adapter implementation method; do not call. Adapt a SAX1 end document event.
 
 **See Also**
 
-- [org.xml.sax.DocumentHandler#endDocument](../org/xml/sax/DocumentHandler.md)) 
+- [org.xml.sax.DocumentHandler#endDocument](../org.xml.sax/DocumentHandler.md)) 
 
 ### endElement
 
@@ -165,7 +165,7 @@ Adapter implementation method; do not call. Adapt a SAX1 end element event.
 
 **See Also**
 
-- [org.xml.sax.DocumentHandler#endElement](../org/xml/sax/DocumentHandler.md)) 
+- [org.xml.sax.DocumentHandler#endElement](../org.xml.sax/DocumentHandler.md)) 
 
 ### getContentHandler
 
@@ -179,11 +179,11 @@ Return the current content handler.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------|------------------------------------------------------------|
-| [ContentHandler](../org/xml/sax/ContentHandler.md)! | The current content handler, or null if none was supplied. |
+| [ContentHandler](../org.xml.sax/ContentHandler.md)! | The current content handler, or null if none was supplied. |
 
 **See Also**
 
-- [org.xml.sax.XMLReader#getEntityResolver](../org/xml/sax/XMLReader.md)) 
+- [org.xml.sax.XMLReader#getEntityResolver](../org.xml.sax/XMLReader.md)) 
 
 ### getDTDHandler
 
@@ -197,11 +197,11 @@ Return the current DTD handler.
 
 | Return ||
 |--------------------------------------------------------------------------------------------|-------------------------------------------------------|
-| [DTDHandler](../org/xml/sax/DTDHandler.md)! | the current DTD handler, or null if none was supplied |
+| [DTDHandler](../org.xml.sax/DTDHandler.md)! | the current DTD handler, or null if none was supplied |
 
 **See Also**
 
-- [org.xml.sax.XMLReader#getEntityResolver](../org/xml/sax/XMLReader.md)) 
+- [org.xml.sax.XMLReader#getEntityResolver](../org.xml.sax/XMLReader.md)) 
 
 ### getEntityResolver
 
@@ -215,11 +215,11 @@ Return the current entity resolver.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------|------------------------------------------------------------|
-| [EntityResolver](../org/xml/sax/EntityResolver.md)! | The current entity resolver, or null if none was supplied. |
+| [EntityResolver](../org.xml.sax/EntityResolver.md)! | The current entity resolver, or null if none was supplied. |
 
 **See Also**
 
-- [org.xml.sax.XMLReader#getEntityResolver](../org/xml/sax/XMLReader.md)) 
+- [org.xml.sax.XMLReader#getEntityResolver](../org.xml.sax/XMLReader.md)) 
 
 ### getErrorHandler
 
@@ -233,11 +233,11 @@ Return the current error handler.
 
 | Return ||
 |------------------------------------------------------------------------------------------------|----------------------------------------------------------|
-| [ErrorHandler](../org/xml/sax/ErrorHandler.md)! | The current error handler, or null if none was supplied. |
+| [ErrorHandler](../org.xml.sax/ErrorHandler.md)! | The current error handler, or null if none was supplied. |
 
 **See Also**
 
-- [org.xml.sax.XMLReader#getEntityResolver](../org/xml/sax/XMLReader.md)) 
+- [org.xml.sax.XMLReader#getEntityResolver](../org.xml.sax/XMLReader.md)) 
 
 ### getFeature
 
@@ -266,7 +266,7 @@ The only features recognized are namespaces and namespace-prefixes.
 
 **See Also**
 
-- [org.xml.sax.XMLReader#setFeature](../org/xml/sax/XMLReader.md)) 
+- [org.xml.sax.XMLReader#setFeature](../org.xml.sax/XMLReader.md)) 
 
 ### getProperty
 
@@ -295,7 +295,7 @@ No properties are currently recognized.
 
 **See Also**
 
-- [org.xml.sax.XMLReader#getProperty](../org/xml/sax/XMLReader.md)) 
+- [org.xml.sax.XMLReader#getProperty](../org.xml.sax/XMLReader.md)) 
 
 ### ignorableWhitespace
 
@@ -324,7 +324,7 @@ Adapter implementation method; do not call. Adapt a SAX1 ignorable whitespace ev
 
 **See Also**
 
-- [org.xml.sax.DocumentHandler#ignorableWhitespace](../org/xml/sax/DocumentHandler.md)) 
+- [org.xml.sax.DocumentHandler#ignorableWhitespace](../org.xml.sax/DocumentHandler.md)) 
 
 ### parse
 
@@ -348,7 +348,7 @@ Parse an XML document.
 **See Also**
 
 - <https://developer.android.com/reference/kotlin/org/xml/sax/helpers/ParserAdapter#parse(org.xml.sax.InputSource)>
-- [org.xml.sax.Parser#parse(java.lang.String)](../org/xml/sax/Parser.md)) 
+- [org.xml.sax.Parser#parse(java.lang.String)](../org.xml.sax/Parser.md)) 
 
 ### parse
 
@@ -362,7 +362,7 @@ Parse an XML document.
 
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------------------------------|
-| `input` | [InputSource](../org/xml/sax/InputSource.md)!:An input source for the document. |
+| `input` | [InputSource](../org.xml.sax/InputSource.md)!:An input source for the document. |
 
 | Exceptions ||
 |----------------------------|----------------------------------------------------------------|
@@ -371,8 +371,8 @@ Parse an XML document.
 
 **See Also**
 
-- [#parse(java.lang.String)](../org/xml/sax/helpers/ParserAdapter.md))
-- [org.xml.sax.Parser#parse(org.xml.sax.InputSource)](../org/xml/sax/Parser.md)) 
+- [#parse(java.lang.String)](ParserAdapter.md))
+- [org.xml.sax.Parser#parse(org.xml.sax.InputSource)](../org.xml.sax/Parser.md)) 
 
 ### processingInstruction
 
@@ -398,7 +398,7 @@ Adapter implementation method; do not call. Adapt a SAX1 processing instruction 
 
 **See Also**
 
-- [org.xml.sax.DocumentHandler#processingInstruction](../org/xml/sax/DocumentHandler.md)) 
+- [org.xml.sax.DocumentHandler#processingInstruction](../org.xml.sax/DocumentHandler.md)) 
 
 ### setContentHandler
 
@@ -412,11 +412,11 @@ Set the content handler.
 
 | Parameters ||
 |-----------|----------------------------------------------------------------------------------------------------------------------------|
-| `handler` | [ContentHandler](../org/xml/sax/ContentHandler.md)!:the new content handler |
+| `handler` | [ContentHandler](../org.xml.sax/ContentHandler.md)!:the new content handler |
 
 **See Also**
 
-- [org.xml.sax.XMLReader#setEntityResolver](../org/xml/sax/XMLReader.md)) 
+- [org.xml.sax.XMLReader#setEntityResolver](../org.xml.sax/XMLReader.md)) 
 
 ### setDTDHandler
 
@@ -430,11 +430,11 @@ Set the DTD handler.
 
 | Parameters ||
 |-----------|----------------------------------------------------------------------------------------------------------------|
-| `handler` | [DTDHandler](../org/xml/sax/DTDHandler.md)!:the new DTD handler |
+| `handler` | [DTDHandler](../org.xml.sax/DTDHandler.md)!:the new DTD handler |
 
 **See Also**
 
-- [org.xml.sax.XMLReader#setEntityResolver](../org/xml/sax/XMLReader.md)) 
+- [org.xml.sax.XMLReader#setEntityResolver](../org.xml.sax/XMLReader.md)) 
 
 ### setDocumentLocator
 
@@ -448,11 +448,11 @@ Adapter implementation method; do not call. Adapt a SAX1 document locator event.
 
 | Parameters ||
 |-----------|----------------------------------------------------------------------------------------------------------|
-| `locator` | [Locator](../org/xml/sax/Locator.md)!:A document locator. |
+| `locator` | [Locator](../org.xml.sax/Locator.md)!:A document locator. |
 
 **See Also**
 
-- [org.xml.sax.ContentHandler#setDocumentLocator](../org/xml/sax/ContentHandler.md)) 
+- [org.xml.sax.ContentHandler#setDocumentLocator](../org.xml.sax/ContentHandler.md)) 
 
 ### setEntityResolver
 
@@ -466,11 +466,11 @@ Set the entity resolver.
 
 | Parameters ||
 |------------|-----------------------------------------------------------------------------------------------------------------------------|
-| `resolver` | [EntityResolver](../org/xml/sax/EntityResolver.md)!:The new entity resolver. |
+| `resolver` | [EntityResolver](../org.xml.sax/EntityResolver.md)!:The new entity resolver. |
 
 **See Also**
 
-- [org.xml.sax.XMLReader#setEntityResolver](../org/xml/sax/XMLReader.md)) 
+- [org.xml.sax.XMLReader#setEntityResolver](../org.xml.sax/XMLReader.md)) 
 
 ### setErrorHandler
 
@@ -484,11 +484,11 @@ Set the error handler.
 
 | Parameters ||
 |-----------|-----------------------------------------------------------------------------------------------------------------------|
-| `handler` | [ErrorHandler](../org/xml/sax/ErrorHandler.md)!:The new error handler. |
+| `handler` | [ErrorHandler](../org.xml.sax/ErrorHandler.md)!:The new error handler. |
 
 **See Also**
 
-- [org.xml.sax.XMLReader#setEntityResolver](../org/xml/sax/XMLReader.md)) 
+- [org.xml.sax.XMLReader#setEntityResolver](../org.xml.sax/XMLReader.md)) 
 
 ### setFeature
 
@@ -517,7 +517,7 @@ The only features recognized are namespaces and namespace-prefixes.
 
 **See Also**
 
-- [org.xml.sax.XMLReader#setFeature](../org/xml/sax/XMLReader.md)) 
+- [org.xml.sax.XMLReader#setFeature](../org.xml.sax/XMLReader.md)) 
 
 ### setProperty
 
@@ -546,7 +546,7 @@ No properties are currently recognized.
 
 **See Also**
 
-- [org.xml.sax.XMLReader#setProperty](../org/xml/sax/XMLReader.md)) 
+- [org.xml.sax.XMLReader#setProperty](../org.xml.sax/XMLReader.md)) 
 
 ### startDocument
 
@@ -564,7 +564,7 @@ Adapter implementation method; do not call. Adapt a SAX1 start document event.
 
 **See Also**
 
-- [org.xml.sax.DocumentHandler#startDocument](../org/xml/sax/DocumentHandler.md)) 
+- [org.xml.sax.DocumentHandler#startDocument](../org.xml.sax/DocumentHandler.md)) 
 
 ### startElement
 
@@ -587,7 +587,7 @@ If necessary, perform Namespace processing.
 | `atts` | The attributes attached to the element, if any. |
 | `qName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The qualified (prefixed) name. |
 | --- | --- |
-| `qAtts` | [AttributeList](../org/xml/sax/AttributeList.md)!:The XML attribute list (with qnames). |
+| `qAtts` | [AttributeList](../org.xml.sax/AttributeList.md)!:The XML attribute list (with qnames). |
 
 | Exceptions ||
 |----------------------------|----------------------------------------------|

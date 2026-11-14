@@ -8,7 +8,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 interface DOMConfiguration
 ```
 
-| [org.w3c.dom.DOMConfiguration](../org/w3c/dom/DOMConfiguration.md) |
+| [org.w3c.dom.DOMConfiguration](DOMConfiguration.md) |
 
 The`DOMConfiguration`interface represents the configuration of a document and maintains a table of recognized parameters. Using the configuration, it is possible to change`Document.normalizeDocument()`behavior, such as replacing the`CDATASection`nodes with`Text`nodes or specifying the type of the schema that must be used when the validation of the`Document`is requested.`DOMConfiguration`objects are also used in \ [[DOM Level 3 Load and Save](http://www.w3.org/TR/2004/REC-DOM-Level-3-LS-20040407)\] in the`DOMParser`and`DOMSerializer`interfaces.
 
@@ -191,11 +191,11 @@ See also the [Document Object Model (DOM) Level 3 Core Specification](http://www
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [canSetParameter](../org/w3c/dom/DOMConfiguration.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Check if setting a parameter to a specific value is supported. |
-| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getParameter](../org/w3c/dom/DOMConfiguration.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Return the value of a parameter if known. |
-| abstract [DOMStringList](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-d-o-m-string-list/index.html)! | [getParameterNames](../org/w3c/dom/DOMConfiguration.md))`()` The list of the parameters supported by this`DOMConfiguration`object and for which at least one value can be set by the application. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [canSetParameter](DOMConfiguration.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Check if setting a parameter to a specific value is supported. |
+| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getParameter](DOMConfiguration.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Return the value of a parameter if known. |
+| abstract [DOMStringList](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-d-o-m-string-list/index.html)! | [getParameterNames](DOMConfiguration.md))`()` The list of the parameters supported by this`DOMConfiguration`object and for which at least one value can be set by the application. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setParameter](../org/w3c/dom/DOMConfiguration.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Set the value of a parameter. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setParameter](DOMConfiguration.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Set the value of a parameter. |
 
 ## Public methods
 

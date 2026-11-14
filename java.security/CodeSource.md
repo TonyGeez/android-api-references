@@ -10,7 +10,7 @@ open class CodeSource : Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.CodeSource](../java/security/CodeSource.md) |
+| ↳ | [java.security.CodeSource](CodeSource.md) |
 
 Legacy security code; do not use.
 
@@ -18,16 +18,16 @@ Legacy security code; do not use.
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [CodeSource](../java/security/CodeSource.md))`(`url:` ` [URL](../java/net/URL.md)!`, `certs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Certificate](../java/security/cert/Certificate.md)!>!`)` <br /> |
-| [CodeSource](../java/security/CodeSource.md))`(`url:` ` [URL](../java/net/URL.md)!`, `signers:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [CodeSigner](../java/security/CodeSigner.md)!>!`)` <br /> |
+| [CodeSource](CodeSource.md))`(`url:` ` [URL](../java.net/URL.md)!`, `certs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Certificate](../java.security.cert/Certificate.md)!>!`)` <br /> |
+| [CodeSource](CodeSource.md))`(`url:` ` [URL](../java.net/URL.md)!`, `signers:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [CodeSigner](CodeSigner.md)!>!`)` <br /> |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Certificate](../java/security/cert/Certificate.md)!\>! | [getCertificates](../java/security/CodeSource.md))`()` <br /> |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [CodeSigner](../java/security/CodeSigner.md)!\>! | [getCodeSigners](../java/security/CodeSource.md))`()` <br /> |
-| [URL](../java/net/URL.md)! | [getLocation](../java/security/CodeSource.md))`()` <br /> |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Certificate](../java.security.cert/Certificate.md)!\>! | [getCertificates](CodeSource.md))`()` <br /> |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [CodeSigner](CodeSigner.md)!\>! | [getCodeSigners](CodeSource.md))`()` <br /> |
+| [URL](../java.net/URL.md)! | [getLocation](CodeSource.md))`()` <br /> |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [implies](../java/security/CodeSource.md))`(`codesource:` ` [CodeSource](../java/security/CodeSource.md)!`)` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [implies](CodeSource.md))`(`codesource:` ` [CodeSource](CodeSource.md)!`)` <br /> |
 
 ## Public constructors
 

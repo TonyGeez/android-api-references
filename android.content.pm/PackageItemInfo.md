@@ -8,16 +8,16 @@ open class PackageItemInfo
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.content.pm.PackageItemInfo](../android/content/pm/PackageItemInfo.md) |
+| ↳ | [android.content.pm.PackageItemInfo](PackageItemInfo.md) |
 
-Known Direct Subclasses [ApplicationInfo](../android/content/pm/ApplicationInfo.md), [ComponentInfo](../android/content/pm/ComponentInfo.md), [InstrumentationInfo](../android/content/pm/InstrumentationInfo.md), [PermissionGroupInfo](../android/content/pm/PermissionGroupInfo.md), [PermissionInfo](../android/content/pm/PermissionInfo.md) [ApplicationInfo](../android/content/pm/ApplicationInfo.md) Information you can retrieve about a particular application.
-[ComponentInfo](../android/content/pm/ComponentInfo.md) Base class containing information common to all application components (`https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo`, `https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo`).
-[InstrumentationInfo](../android/content/pm/InstrumentationInfo.md) Information you can retrieve about a particular piece of test instrumentation.
-[PermissionGroupInfo](../android/content/pm/PermissionGroupInfo.md) Information you can retrieve about a particular security permission group known to the system.
-[PermissionInfo](../android/content/pm/PermissionInfo.md) Information you can retrieve about a particular security permission known to the system.
-Known Indirect Subclasses [ActivityInfo](../android/content/pm/ActivityInfo.md), [ProviderInfo](../android/content/pm/ProviderInfo.md), [ServiceInfo](../android/content/pm/ServiceInfo.md) [ActivityInfo](../android/content/pm/ActivityInfo.md) Information you can retrieve about a particular application activity or receiver.
-[ProviderInfo](../android/content/pm/ProviderInfo.md) Holds information about a specific `https://developer.android.com/reference/kotlin/android/content/ContentProvider.html#`.
-[ServiceInfo](../android/content/pm/ServiceInfo.md) Information you can retrieve about a particular application service.
+Known Direct Subclasses [ApplicationInfo](ApplicationInfo.md), [ComponentInfo](ComponentInfo.md), [InstrumentationInfo](InstrumentationInfo.md), [PermissionGroupInfo](PermissionGroupInfo.md), [PermissionInfo](PermissionInfo.md) [ApplicationInfo](ApplicationInfo.md) Information you can retrieve about a particular application.
+[ComponentInfo](ComponentInfo.md) Base class containing information common to all application components (`https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo`, `https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo`).
+[InstrumentationInfo](InstrumentationInfo.md) Information you can retrieve about a particular piece of test instrumentation.
+[PermissionGroupInfo](PermissionGroupInfo.md) Information you can retrieve about a particular security permission group known to the system.
+[PermissionInfo](PermissionInfo.md) Information you can retrieve about a particular security permission known to the system.
+Known Indirect Subclasses [ActivityInfo](ActivityInfo.md), [ProviderInfo](ProviderInfo.md), [ServiceInfo](ServiceInfo.md) [ActivityInfo](ActivityInfo.md) Information you can retrieve about a particular application activity or receiver.
+[ProviderInfo](ProviderInfo.md) Holds information about a specific `https://developer.android.com/reference/kotlin/android/content/ContentProvider.html#`.
+[ServiceInfo](ServiceInfo.md) Information you can retrieve about a particular application service.
 
 Base class containing information common to all package items held by the package manager. This provides a very common basic set of attributes: a label, icon, and meta-data. This class is not intended to be used by itself; it is simply here to share common definitions between all items returned by the package manager. As such, it does not itself implement Parcelable, but does provide convenience methods to assist in the implementation of Parcelable in subclasses.
 
@@ -38,13 +38,13 @@ Base class containing information common to all package items held by the packag
 
 | Public methods ||
 |---|---|
-| open [Drawable](../android/graphics/drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#loadBanner(android.content.pm.PackageManager)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager!)` Retrieve the current graphical banner associated with this item. |
-| open [Drawable](../android/graphics/drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#loadIcon(android.content.pm.PackageManager)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager!)` Retrieve the current graphical icon associated with this item. |
+| open [Drawable](../android.graphics.drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#loadBanner(android.content.pm.PackageManager)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager!)` Retrieve the current graphical banner associated with this item. |
+| open [Drawable](../android.graphics.drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#loadIcon(android.content.pm.PackageManager)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager!)` Retrieve the current graphical icon associated with this item. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#loadLabel(android.content.pm.PackageManager)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager)` Retrieve the current textual label associated with this item. |
 | --- | --- |
-| open [Drawable](../android/graphics/drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#loadLogo(android.content.pm.PackageManager)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager!)` Retrieve the current graphical logo associated with this item. |
-| open [Drawable](../android/graphics/drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#loadUnbadgedIcon(android.content.pm.PackageManager)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager!)` Retrieve the current graphical icon associated with this item without the addition of a work badge if applicable. |
-| open [XmlResourceParser](../android/content/res/XmlResourceParser.md)! | `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#loadXmlMetaData(android.content.pm.PackageManager,%20kotlin.String)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager!, name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Load an XML resource attached to the meta-data of this item. |
+| open [Drawable](../android.graphics.drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#loadLogo(android.content.pm.PackageManager)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager!)` Retrieve the current graphical logo associated with this item. |
+| open [Drawable](../android.graphics.drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#loadUnbadgedIcon(android.content.pm.PackageManager)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager!)` Retrieve the current graphical icon associated with this item without the addition of a work badge if applicable. |
+| open [XmlResourceParser](../android.content.res/XmlResourceParser.md)! | `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#loadXmlMetaData(android.content.pm.PackageManager,%20kotlin.String)(pm: https://developer.android.com/reference/kotlin/android/content/pm/PackageManager!, name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Load an XML resource attached to the meta-data of this item. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#!, parcelableFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
 
@@ -61,7 +61,7 @@ Base class containing information common to all package items held by the packag
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#labelRes:kotlin.Int` A string resource identifier (in the package's resources) of this component's label. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#logo:kotlin.Int` A drawable resource identifier (in the package's resources) of this component's logo. |
-| [Bundle](../android/os/Bundle.md)! | `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#metaData:android.os.Bundle` Additional meta-data associated with this component. |
+| [Bundle](../android.os/Bundle.md)! | `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#metaData:android.os.Bundle` Additional meta-data associated with this component. |
 | --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#name:kotlin.String` Public name of this item. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/content/pm/PackageItemInfo#nonLocalizedLabel:kotlin.CharSequence` The string provided in the AndroidManifest file, if any. |
@@ -112,7 +112,7 @@ The returned drawable is subject to the same size capping limits as described in
 
 | Parameters ||
 |---|---|
-| `pm` | [PackageManager](../android/content/pm/PackageManager.md)!: A PackageManager from which the banner can be loaded; usually the PackageManager from which you originally retrieved this item. |
+| `pm` | [PackageManager](PackageManager.md)!: A PackageManager from which the banner can be loaded; usually the PackageManager from which you originally retrieved this item. |
 
 | Return ||
 |---|---|
@@ -132,7 +132,7 @@ The returned drawable is subject to the same size capping limits as described in
 
 | Parameters ||
 |---|---|
-| `pm` | [PackageManager](../android/content/pm/PackageManager.md)!: A PackageManager from which the icon can be loaded; usually the PackageManager from which you originally retrieved this item. |
+| `pm` | [PackageManager](PackageManager.md)!: A PackageManager from which the icon can be loaded; usually the PackageManager from which you originally retrieved this item. |
 
 | Return ||
 |---|---|
@@ -150,7 +150,7 @@ Retrieve the current textual label associated with this item. This will call bac
 
 | Parameters ||
 |---|---|
-| `pm` | [PackageManager](../android/content/pm/PackageManager.md): A PackageManager from which the label can be loaded; usually the PackageManager from which you originally retrieved this item. This value cannot be `null`. |
+| `pm` | [PackageManager](PackageManager.md): A PackageManager from which the label can be loaded; usually the PackageManager from which you originally retrieved this item. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -170,7 +170,7 @@ The returned drawable is subject to the same size capping limits as described in
 
 | Parameters ||
 |---|---|
-| `pm` | [PackageManager](../android/content/pm/PackageManager.md)!: A PackageManager from which the logo can be loaded; usually the PackageManager from which you originally retrieved this item. |
+| `pm` | [PackageManager](PackageManager.md)!: A PackageManager from which the logo can be loaded; usually the PackageManager from which you originally retrieved this item. |
 
 | Return ||
 |---|---|
@@ -190,7 +190,7 @@ The returned drawable is subject to the same size capping limits as described in
 
 | Parameters ||
 |---|---|
-| `pm` | [PackageManager](../android/content/pm/PackageManager.md)!: A PackageManager from which the icon can be loaded; usually the PackageManager from which you originally retrieved this item. |
+| `pm` | [PackageManager](PackageManager.md)!: A PackageManager from which the icon can be loaded; usually the PackageManager from which you originally retrieved this item. |
 
 | Return ||
 |---|---|
@@ -211,7 +211,7 @@ Load an XML resource attached to the meta-data of this item. This will retrieved
 
 | Parameters ||
 |---|---|
-| `pm` | [PackageManager](../android/content/pm/PackageManager.md)!: A PackageManager from which the XML can be loaded; usually the PackageManager from which you originally retrieved this item. |
+| `pm` | [PackageManager](PackageManager.md)!: A PackageManager from which the XML can be loaded; usually the PackageManager from which you originally retrieved this item. |
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: Name of the meta-date you would like to load. |
 
 | Return ||

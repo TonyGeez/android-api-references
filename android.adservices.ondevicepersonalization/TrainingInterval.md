@@ -2,7 +2,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 
 # TrainingInterval
 
-Kotlin | [Java](../android/adservices/ondevicepersonalization/TrainingInterval.md)
+Kotlin | [Java](TrainingInterval.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class TrainingInterval
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.adservices.ondevicepersonalization.TrainingInterval](../android/adservices/ondevicepersonalization/TrainingInterval.md) |
+| ↳ | [android.adservices.ondevicepersonalization.TrainingInterval](TrainingInterval.md) |
 
 Training interval settings required for federated computation jobs.
 
@@ -29,7 +29,7 @@ Training interval settings required for federated computation jobs.
 | Public methods ||
 |---|---|
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/TrainingInterval#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [Duration](../java/time/Duration.md) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/TrainingInterval#getMinimumInterval()()` Sets the minimum time interval between two training runs. |
+| [Duration](../java.time/Duration.md) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/TrainingInterval#getMinimumInterval()()` Sets the minimum time interval between two training runs. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/TrainingInterval#getSchedulingMode()()` The scheduling mode for this task, either `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/TrainingInterval#SCHEDULING_MODE_ONE_TIME:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/TrainingInterval#SCHEDULING_MODE_RECURRENT:kotlin.Int`. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/TrainingInterval#hashCode()()` Returns a hash code value for the object. |

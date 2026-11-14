@@ -11,12 +11,12 @@ open class IllegalFormatPrecisionException : IllegalFormatException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||||
 | --- | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||||
-| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) ||||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) |||||
+| | | ↳ | [java.lang.RuntimeException](../java.lang/RuntimeException.md) ||||
 | --- | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.IllegalArgumentException](../java/lang/IllegalArgumentException.md) |||
-| | | | | ↳ | [java.util.IllegalFormatException](../java/util/IllegalFormatException.md) ||
-| | | | | | ↳ | [java.util.IllegalFormatPrecisionException](../java/util/IllegalFormatPrecisionException.md) |
+| | | | ↳ | [java.lang.IllegalArgumentException](../java.lang/IllegalArgumentException.md) |||
+| | | | | ↳ | [java.util.IllegalFormatException](IllegalFormatException.md) ||
+| | | | | | ↳ | [java.util.IllegalFormatPrecisionException](IllegalFormatPrecisionException.md) |
 | --- | --- | --- | --- | --- | --- | --- |
 
 Unchecked exception thrown when the precision is a negative value other than `-1`, the conversion does not support a precision, or the value is otherwise unsupported. If the precision is not representable by an `int` type, then the value `Integer.MIN_VALUE` will be used in the exception.
@@ -25,15 +25,15 @@ Unchecked exception thrown when the precision is a negative value other than `-1
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [IllegalFormatPrecisionException](../java/util/IllegalFormatPrecisionException.md))`(`p:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs an instance of this class with the specified precision. |
+| [IllegalFormatPrecisionException](IllegalFormatPrecisionException.md))`(`p:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs an instance of this class with the specified precision. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPrecision](../java/util/IllegalFormatPrecisionException.md))`()` Returns the precision. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPrecision](IllegalFormatPrecisionException.md))`()` Returns the precision. |
 
 | Properties ||
 |----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [message](../java/util/IllegalFormatPrecisionException.md) <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [message](IllegalFormatPrecisionException.md) <br /> |
 
 ## Public constructors
 

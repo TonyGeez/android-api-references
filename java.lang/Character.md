@@ -8,7 +8,7 @@ class Character : Comparable<Char!>, Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.lang.Character](../java/lang/Character.md) |
+| ↳ | [java.lang.Character](Character.md) |
 
 The `Character` class is the java.lang# for values of the primitive type `char`. An object of type `Character` contains a single field whose type is `char`.
 
@@ -178,7 +178,7 @@ In the Java SE API documentation, *Unicode code point* is used for character val
 | static [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#highSurrogate(kotlin.Int)(codePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the leading surrogate (a [high surrogate code unit](http://www.unicode.org/glossary/#high_surrogate_code_unit)) of the [surrogate pair](http://www.unicode.org/glossary/#surrogate_pair) representing the specified supplementary character (Unicode code point) in the UTF-16 encoding. |
 | --- | --- |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isAlphabetic(kotlin.Int)(codePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determines if the specified character (Unicode code point) is alphabetic. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isBmpCodePoint(kotlin.Int)(codePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determines whether the specified character (Unicode code point) is in the [Basic Multilingual Plane (BMP)](../java/lang/Character.md). |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isBmpCodePoint(kotlin.Int)(codePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determines whether the specified character (Unicode code point) is in the [Basic Multilingual Plane (BMP)](Character.md). |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isDefined(kotlin.Char)(ch: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Determines if a character is defined in Unicode. |
 | --- | --- |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isDefined(kotlin.Int)(codePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determines if a character (Unicode code point) is defined in Unicode. |
@@ -225,7 +225,7 @@ In the Java SE API documentation, *Unicode code point* is used for character val
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isSpaceChar(kotlin.Char)(ch: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Determines if the specified character is a Unicode space character. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isSpaceChar(kotlin.Int)(codePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determines if the specified character (Unicode code point) is a Unicode space character. |
 | --- | --- |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isSupplementaryCodePoint(kotlin.Int)(codePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determines whether the specified character (Unicode code point) is in the [supplementary character](../java/lang/Character.md) range. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isSupplementaryCodePoint(kotlin.Int)(codePoint: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determines whether the specified character (Unicode code point) is in the [supplementary character](Character.md) range. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isSurrogate(kotlin.Char)(ch: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Determines if the given `char` value is a Unicode *surrogate code unit*. |
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Character#isSurrogatePair(kotlin.Char,%20kotlin.Char)(high: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html, low: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Determines whether the specified pair of `char` values is a valid [Unicode surrogate pair](http://www.unicode.org/glossary/#surrogate_pair). |
 | --- | --- |
@@ -269,7 +269,7 @@ In the Java SE API documentation, *Unicode code point* is used for character val
 
 | Properties ||
 |---|---|
-| static [Class](../java/lang/Class.md)\< [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/lang/Character#TYPE:java.lang.Class` The `Class` instance representing the primitive type `char`. |
+| static [Class](Class.md)\< [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/lang/Character#TYPE:java.lang.Class` The `Class` instance representing the primitive type `char`. |
 
 ## Constants
 
@@ -1503,7 +1503,7 @@ If the radix is not in the range `MIN_RADIX` ≤ `radix` ≤ `MAX_RADIX` or if t
 - The character is one of the fullwidth uppercase Latin letters A (`'\u005CuFF21'`) through Z (`'\u005CuFF3A'`) and its code is less than `radix + '\u005CuFF21' - 10`. In this case, `ch - '\u005CuFF21' + 10` is returned.
 - The character is one of the fullwidth lowercase Latin letters a (`'\u005CuFF41'`) through z (`'\u005CuFF5A'`) and its code is less than `radix + '\u005CuFF41' - 10`. In this case, `ch - '\u005CuFF41' + 10` is returned.
 
-**Note:** This method cannot handle [supplementary characters](../java/lang/Character.md). To support all Unicode characters, including supplementary characters, use the `https://developer.android.com/reference/kotlin/java/lang/Character#digit(kotlin.Int,%20kotlin.Int)` method.
+**Note:** This method cannot handle [supplementary characters](Character.md). To support all Unicode characters, including supplementary characters, use the `https://developer.android.com/reference/kotlin/java/lang/Character#digit(kotlin.Int,%20kotlin.Int)` method.
 
 | Parameters ||
 |---|---|
@@ -1614,7 +1614,7 @@ static fun getDirectionality(ch: Char): Byte
 
 Returns the Unicode directionality property for the given character. Character directionality is used to calculate the visual ordering of text. The directionality value of undefined `char` values is `DIRECTIONALITY_UNDEFINED`.
 
-**Note:** This method cannot handle [supplementary characters](../java/lang/Character.md). To support all Unicode characters, including supplementary characters, use the `https://developer.android.com/reference/kotlin/java/lang/Character#getDirectionality(kotlin.Int)` method.
+**Note:** This method cannot handle [supplementary characters](Character.md). To support all Unicode characters, including supplementary characters, use the `https://developer.android.com/reference/kotlin/java/lang/Character#getDirectionality(kotlin.Int)` method.
 
 | Parameters ||
 |---|---|
@@ -1735,7 +1735,7 @@ The letters A-Z in their uppercase (`'\u005Cu0041'` through `'\u005Cu005A'`), lo
 
 If the character does not have a numeric value, then -1 is returned. If the character has a numeric value that cannot be represented as a nonnegative integer (for example, a fractional value), then -2 is returned.
 
-**Note:** This method cannot handle [supplementary characters](../java/lang/Character.md). To support all Unicode characters, including supplementary characters, use the `https://developer.android.com/reference/kotlin/java/lang/Character#getNumericValue(kotlin.Int)` method.
+**Note:** This method cannot handle [supplementary characters](Character.md). To support all Unicode characters, including supplementary characters, use the `https://developer.android.com/reference/kotlin/java/lang/Character#getNumericValue(kotlin.Int)` method.
 
 | Parameters ||
 |---|---|
@@ -1787,7 +1787,7 @@ static fun getType(ch: Char): Int
 
 Returns a value indicating a character's general category.
 
-**Note:** This method cannot handle [supplementary characters](../java/lang/Character.md). To support all Unicode characters, including supplementary characters, use the `https://developer.android.com/reference/kotlin/java/lang/Character#getType(kotlin.Int)` method.
+**Note:** This method cannot handle [supplementary characters](Character.md). To support all Unicode characters, including supplementary characters, use the `https://developer.android.com/reference/kotlin/java/lang/Character#getType(kotlin.Int)` method.
 
 | Parameters ||
 |---|---|
@@ -1921,7 +1921,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 static fun highSurrogate(codePoint: Int): Char
 ```
 
-Returns the leading surrogate (a [high surrogate code unit](http://www.unicode.org/glossary/#high_surrogate_code_unit)) of the [surrogate pair](http://www.unicode.org/glossary/#surrogate_pair) representing the specified supplementary character (Unicode code point) in the UTF-16 encoding. If the specified character is not a [supplementary character](../java/lang/Character.md), an unspecified `char` is returned.
+Returns the leading surrogate (a [high surrogate code unit](http://www.unicode.org/glossary/#high_surrogate_code_unit)) of the [surrogate pair](http://www.unicode.org/glossary/#surrogate_pair) representing the specified supplementary character (Unicode code point) in the UTF-16 encoding. If the specified character is not a [supplementary character](Character.md), an unspecified `char` is returned.
 
 If `https://developer.android.com/reference/kotlin/java/lang/Character#isSupplementaryCodePoint(kotlin.Int)` is `true`, then `https://developer.android.com/reference/kotlin/java/lang/Character#isHighSurrogate(kotlin.Char)``(highSurrogate(x))` and `https://developer.android.com/reference/kotlin/java/lang/Character#toCodePoint(kotlin.Char,%20kotlin.Char)``(highSurrogate(x), ``https://developer.android.com/reference/kotlin/java/lang/Character#lowSurrogate(kotlin.Int)``(x)) == x` are also always `true`.
 
@@ -1970,7 +1970,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 static fun isBmpCodePoint(codePoint: Int): Boolean
 ```
 
-Determines whether the specified character (Unicode code point) is in the [Basic Multilingual Plane (BMP)](../java/lang/Character.md). Such code points can be represented using a single `char`.
+Determines whether the specified character (Unicode code point) is in the [Basic Multilingual Plane (BMP)](Character.md). Such code points can be represented using a single `char`.
 
 | Parameters ||
 |---|---|
@@ -1995,7 +1995,7 @@ A character is defined if at least one of the following is true:
 - It has an entry in the UnicodeData file.
 - It has a value in a range defined by the UnicodeData file.
 
-**Note:** This method cannot handle [supplementary characters](../java/lang/Character.md). To support all Unicode characters, including supplementary characters, use the `https://developer.android.com/reference/kotlin/java/lang/Character#isDefined(kotlin.Int)` method.
+**Note:** This method cannot handle [supplementary characters](Character.md). To support all Unicode characters, including supplementary characters, use the `https://developer.android.com/reference/kotlin/java/lang/Character#isDefined(kotlin.Int)` method.
 
 | Parameters ||
 |---|---|
@@ -2068,7 +2068,7 @@ Some Unicode character ranges that contain digits:
 
 Many other character ranges contain digits as well.
 
-**Note:** This method cannot handle [supplementary characters](../java/lang/Character.md). To support all Unicode characters, including supplementary characters, use the `https://developer.android.com/reference/kotlin/java/lang/Character#isDigit(kotlin.Int)` method.
+**Note:** This method cannot handle [supplementary characters](Character.md). To support all Unicode characters, including supplementary characters, use the `https://developer.android.com/reference/kotlin/java/lang/Character#isDigit(kotlin.Int)` method.
 
 | Parameters ||
 |---|---|
@@ -2249,7 +2249,7 @@ static fun isHighSurrogate(ch: Char): Boolean
 
 Determines if the given `char` value is a [Unicode high-surrogate code unit](http://www.unicode.org/glossary/#high_surrogate_code_unit) (also known as *leading-surrogate code unit*).
 
-Such values do not represent characters by themselves, but are used in the representation of [supplementary characters](../java/lang/Character.md) in the UTF-16 encoding.
+Such values do not represent characters by themselves, but are used in the representation of [supplementary characters](Character.md) in the UTF-16 encoding.
 
 | Parameters ||
 |---|---|
@@ -2274,7 +2274,7 @@ static fun isISOControl(ch: Char): Boolean
 
 Determines if the specified character is an ISO control character. A character is considered to be an ISO control character if its code is in the range `'\u005Cu0000'` through `'\u005Cu001F'` or in the range `'\u005Cu007F'` through `'\u005Cu009F'`.
 
-**Note:** This method cannot handle [supplementary characters](../java/lang/Character.md). To support all Unicode characters, including supplementary characters, use the `https://developer.android.com/reference/kotlin/java/lang/Character#isISOControl(kotlin.Int)` method.
+**Note:** This method cannot handle [supplementary characters](Character.md). To support all Unicode characters, including supplementary characters, use the `https://developer.android.com/reference/kotlin/java/lang/Character#isISOControl(kotlin.Int)` method.
 
 | Parameters ||
 |---|---|
@@ -2330,7 +2330,7 @@ The following Unicode characters are ignorable in a Java identifier or a Unicode
  - `'\u005Cu007F'` through `'\u005Cu009F'`
 - all characters that have the `FORMAT` general category value
 
-**Note:** This method cannot handle [supplementary characters](../java/lang/Character.md). To support all Unicode characters, including supplementary characters, use the `https://developer.android.com/reference/kotlin/java/lang/Character#isIdentifierIgnorable(kotlin.Int)` method.
+**Note:** This method cannot handle [supplementary characters](Character.md). To support all Unicode characters, including supplementary characters, use the `https://developer.android.com/reference/kotlin/java/lang/Character#isIdentifierIgnorable(kotlin.Int)` method.
 
 | Parameters ||
 |---|---|
@@ -2415,7 +2415,7 @@ A character may be part of a Java identifier if any of the following conditions 
 - it is a non-spacing mark
 - `isIdentifierIgnorable` returns `true` for the character
 
-**Note:** This method cannot handle [supplementary characters](../java/lang/Character.md). To support all Unicode characters, including supplementary characters, use the `https://developer.android.com/reference/kotlin/java/lang/Character#isJavaIdentifierPart(kotlin.Int)` method.
+**Note:** This method cannot handle [supplementary characters](Character.md). To support all Unicode characters, including supplementary characters, use the `https://developer.android.com/reference/kotlin/java/lang/Character#isJavaIdentifierPart(kotlin.Int)` method.
 
 | Parameters ||
 |---|---|
@@ -2485,7 +2485,7 @@ A character may start a Java identifier if and only if one of the following cond
 - `ch` is a currency symbol (such as `'$'`)
 - `ch` is a connecting punctuation character (such as `'_'`).
 
-**Note:** This method cannot handle [supplementary characters](../java/lang/Character.md). To support all Unicode characters, including supplementary characters, use the `https://developer.android.com/reference/kotlin/java/lang/Character#isJavaIdentifierStart(kotlin.Int)` method.
+**Note:** This method cannot handle [supplementary characters](Character.md). To support all Unicode characters, including supplementary characters, use the `https://developer.android.com/reference/kotlin/java/lang/Character#isJavaIdentifierStart(kotlin.Int)` method.
 
 | Parameters ||
 |---|---|
@@ -2631,7 +2631,7 @@ A character is considered to be a letter if its general category type, provided 
 
 Not all letters have case. Many characters are letters but are neither uppercase nor lowercase nor titlecase.
 
-**Note:** This method cannot handle [supplementary characters](../java/lang/Character.md). To support all Unicode characters, including supplementary characters, use the `https://developer.android.com/reference/kotlin/java/lang/Character#isLetter(kotlin.Int)` method.
+**Note:** This method cannot handle [supplementary characters](Character.md). To support all Unicode characters, including supplementary characters, use the `https://developer.android.com/reference/kotlin/java/lang/Character#isLetter(kotlin.Int)` method.
 
 | Parameters ||
 |---|---|
@@ -2703,7 +2703,7 @@ Determines if the specified character is a letter or digit.
 
 A character is considered to be a letter or digit if either `Character.isLetter(char ch)` or `Character.isDigit(char ch)` returns `true` for the character.
 
-**Note:** This method cannot handle [supplementary characters](../java/lang/Character.md). To support all Unicode characters, including supplementary characters, use the `https://developer.android.com/reference/kotlin/java/lang/Character#isLetterOrDigit(kotlin.Int)` method.
+**Note:** This method cannot handle [supplementary characters](Character.md). To support all Unicode characters, including supplementary characters, use the `https://developer.android.com/reference/kotlin/java/lang/Character#isLetterOrDigit(kotlin.Int)` method.
 
 | Parameters ||
 |---|---|
@@ -2759,7 +2759,7 @@ static fun isLowSurrogate(ch: Char): Boolean
 
 Determines if the given `char` value is a [Unicode low-surrogate code unit](http://www.unicode.org/glossary/#low_surrogate_code_unit) (also known as *trailing-surrogate code unit*).
 
-Such values do not represent characters by themselves, but are used in the representation of [supplementary characters](../java/lang/Character.md) in the UTF-16 encoding.
+Such values do not represent characters by themselves, but are used in the representation of [supplementary characters](Character.md) in the UTF-16 encoding.
 
 | Parameters ||
 |---|---|
@@ -2798,7 +2798,7 @@ a b c d e f g h i j k l m n o p q r s t u v w x y z
 
 Many other Unicode characters are lowercase too.
 
-**Note:** This method cannot handle [supplementary characters](../java/lang/Character.md). To support all Unicode characters, including supplementary characters, use the `https://developer.android.com/reference/kotlin/java/lang/Character#isLowerCase(kotlin.Int)` method.
+**Note:** This method cannot handle [supplementary characters](Character.md). To support all Unicode characters, including supplementary characters, use the `https://developer.android.com/reference/kotlin/java/lang/Character#isLowerCase(kotlin.Int)` method.
 
 | Parameters ||
 |---|---|
@@ -2865,7 +2865,7 @@ static fun isMirrored(ch: Char): Boolean
 
 Determines whether the character is mirrored according to the Unicode specification. Mirrored characters should have their glyphs horizontally mirrored when displayed in text that is right-to-left. For example, `'\u005Cu0028'` LEFT PARENTHESIS is semantically defined to be an *opening parenthesis*. This will appear as a "(" in text that is left-to-right but as a ")" in text that is right-to-left.
 
-**Note:** This method cannot handle [supplementary characters](../java/lang/Character.md). To support all Unicode characters, including supplementary characters, use the `https://developer.android.com/reference/kotlin/java/lang/Character#isMirrored(kotlin.Int)` method.
+**Note:** This method cannot handle [supplementary characters](Character.md). To support all Unicode characters, including supplementary characters, use the `https://developer.android.com/reference/kotlin/java/lang/Character#isMirrored(kotlin.Int)` method.
 
 | Parameters ||
 |---|---|
@@ -2947,7 +2947,7 @@ Determines if the specified character is a Unicode space character. A character 
 
 <br />
 
-**Note:** This method cannot handle [supplementary characters](../java/lang/Character.md). To support all Unicode characters, including supplementary characters, use the `https://developer.android.com/reference/kotlin/java/lang/Character#isSpaceChar(kotlin.Int)` method.
+**Note:** This method cannot handle [supplementary characters](Character.md). To support all Unicode characters, including supplementary characters, use the `https://developer.android.com/reference/kotlin/java/lang/Character#isSpaceChar(kotlin.Int)` method.
 
 | Parameters ||
 |---|---|
@@ -2997,7 +2997,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static fun isSupplementaryCodePoint(codePoint: Int): Boolean
 ```
 
-Determines whether the specified character (Unicode code point) is in the [supplementary character](../java/lang/Character.md) range.
+Determines whether the specified character (Unicode code point) is in the [supplementary character](Character.md) range.
 
 | Parameters ||
 |---|---|
@@ -3017,9 +3017,9 @@ static fun isSurrogate(ch: Char): Boolean
 
 Determines if the given `char` value is a Unicode *surrogate code unit*.
 
-Such values do not represent characters by themselves, but are used in the representation of [supplementary characters](../java/lang/Character.md) in the UTF-16 encoding.
+Such values do not represent characters by themselves, but are used in the representation of [supplementary characters](Character.md) in the UTF-16 encoding.
 
-A char value is a surrogate code unit if and only if it is either a [low-surrogate code unit](../java/lang/Character.md)) or a [high-surrogate code unit](../java/lang/Character.md)).
+A char value is a surrogate code unit if and only if it is either a [low-surrogate code unit](Character.md)) or a [high-surrogate code unit](Character.md)).
 
 | Parameters ||
 |---|---|
@@ -3081,7 +3081,7 @@ These are some of the Unicode characters for which this method returns `true`:
 
 Many other Unicode characters are titlecase too.
 
-**Note:** This method cannot handle [supplementary characters](../java/lang/Character.md). To support all Unicode characters, including supplementary characters, use the `https://developer.android.com/reference/kotlin/java/lang/Character#isTitleCase(kotlin.Int)` method.
+**Note:** This method cannot handle [supplementary characters](Character.md). To support all Unicode characters, including supplementary characters, use the `https://developer.android.com/reference/kotlin/java/lang/Character#isTitleCase(kotlin.Int)` method.
 
 | Parameters ||
 |---|---|
@@ -3168,7 +3168,7 @@ Continue := Start + ID_Continue + ignorable
 ```
 `ignorable` is added to `Continue` for backward compatibility.
 
-**Note:** This method cannot handle [supplementary characters](../java/lang/Character.md). To support all Unicode characters, including supplementary characters, use the `https://developer.android.com/reference/kotlin/java/lang/Character#isUnicodeIdentifierPart(kotlin.Int)` method.
+**Note:** This method cannot handle [supplementary characters](Character.md). To support all Unicode characters, including supplementary characters, use the `https://developer.android.com/reference/kotlin/java/lang/Character#isUnicodeIdentifierPart(kotlin.Int)` method.
 
 | Parameters ||
 |---|---|
@@ -3256,7 +3256,7 @@ Start := ID_Start + 'VERTICAL TILDE' (U+2E2F)
 ```
 `'VERTICAL TILDE'` is added to `Start` for backward compatibility.
 
-**Note:** This method cannot handle [supplementary characters](../java/lang/Character.md). To support all Unicode characters, including supplementary characters, use the `https://developer.android.com/reference/kotlin/java/lang/Character#isUnicodeIdentifierStart(kotlin.Int)` method.
+**Note:** This method cannot handle [supplementary characters](Character.md). To support all Unicode characters, including supplementary characters, use the `https://developer.android.com/reference/kotlin/java/lang/Character#isUnicodeIdentifierStart(kotlin.Int)` method.
 
 | Parameters ||
 |---|---|
@@ -3335,7 +3335,7 @@ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
 
 Many other Unicode characters are uppercase too.
 
-**Note:** This method cannot handle [supplementary characters](../java/lang/Character.md). To support all Unicode characters, including supplementary characters, use the `https://developer.android.com/reference/kotlin/java/lang/Character#isUpperCase(kotlin.Int)` method.
+**Note:** This method cannot handle [supplementary characters](Character.md). To support all Unicode characters, including supplementary characters, use the `https://developer.android.com/reference/kotlin/java/lang/Character#isUpperCase(kotlin.Int)` method.
 
 | Parameters ||
 |---|---|
@@ -3433,7 +3433,7 @@ Determines if the specified character is white space according to Java. A charac
 
 <br />
 
-**Note:** This method cannot handle [supplementary characters](../java/lang/Character.md). To support all Unicode characters, including supplementary characters, use the `https://developer.android.com/reference/kotlin/java/lang/Character#isWhitespace(kotlin.Int)` method.
+**Note:** This method cannot handle [supplementary characters](Character.md). To support all Unicode characters, including supplementary characters, use the `https://developer.android.com/reference/kotlin/java/lang/Character#isWhitespace(kotlin.Int)` method.
 
 | Parameters ||
 |---|---|
@@ -3490,7 +3490,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 static fun lowSurrogate(codePoint: Int): Char
 ```
 
-Returns the trailing surrogate (a [low surrogate code unit](http://www.unicode.org/glossary/#low_surrogate_code_unit)) of the [surrogate pair](http://www.unicode.org/glossary/#surrogate_pair) representing the specified supplementary character (Unicode code point) in the UTF-16 encoding. If the specified character is not a [supplementary character](../java/lang/Character.md), an unspecified `char` is returned.
+Returns the trailing surrogate (a [low surrogate code unit](http://www.unicode.org/glossary/#low_surrogate_code_unit)) of the [surrogate pair](http://www.unicode.org/glossary/#surrogate_pair) representing the specified supplementary character (Unicode code point) in the UTF-16 encoding. If the specified character is not a [supplementary character](Character.md), an unspecified `char` is returned.
 
 If `https://developer.android.com/reference/kotlin/java/lang/Character#isSupplementaryCodePoint(kotlin.Int)` is `true`, then `https://developer.android.com/reference/kotlin/java/lang/Character#isLowSurrogate(kotlin.Char)``(lowSurrogate(x))` and `https://developer.android.com/reference/kotlin/java/lang/Character#toCodePoint(kotlin.Char,%20kotlin.Char)``(``https://developer.android.com/reference/kotlin/java/lang/Character#highSurrogate(kotlin.Int)``(x), lowSurrogate(x)) == x` are also always `true`.
 
@@ -3674,7 +3674,7 @@ Note that `Character.isLowerCase(Character.toLowerCase(ch))` does not always ret
 
 In general, `https://developer.android.com/reference/kotlin/java/lang/String#toLowerCase()` should be used to map characters to lowercase. `String` case mapping methods have several benefits over `Character` case mapping methods. `String` case mapping methods can perform locale-sensitive mappings, context-sensitive mappings, and 1:M character mappings, whereas the `Character` case mapping methods cannot.
 
-**Note:** This method cannot handle [supplementary characters](../java/lang/Character.md). To support all Unicode characters, including supplementary characters, use the `https://developer.android.com/reference/kotlin/java/lang/Character#toLowerCase(kotlin.Int)` method.
+**Note:** This method cannot handle [supplementary characters](Character.md). To support all Unicode characters, including supplementary characters, use the `https://developer.android.com/reference/kotlin/java/lang/Character#toLowerCase(kotlin.Int)` method.
 
 | Parameters ||
 |---|---|
@@ -3768,7 +3768,7 @@ Returns a `String` object representing the specified character (Unicode code poi
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalArgumentException` | if the specified `codePoint` is not a [valid Unicode code point](../java/lang/Character.md)). |
+| `java.lang.IllegalArgumentException` | if the specified `codePoint` is not a [valid Unicode code point](Character.md)). |
 
 ### toTitleCase
 
@@ -3782,7 +3782,7 @@ Converts the character argument to titlecase using case mapping information from
 
 Note that `Character.isTitleCase(Character.toTitleCase(ch))` does not always return `true` for some ranges of characters.
 
-**Note:** This method cannot handle [supplementary characters](../java/lang/Character.md). To support all Unicode characters, including supplementary characters, use the `https://developer.android.com/reference/kotlin/java/lang/Character#toTitleCase(kotlin.Int)` method.
+**Note:** This method cannot handle [supplementary characters](Character.md). To support all Unicode characters, including supplementary characters, use the `https://developer.android.com/reference/kotlin/java/lang/Character#toTitleCase(kotlin.Int)` method.
 
 | Parameters ||
 |---|---|
@@ -3838,7 +3838,7 @@ Note that `Character.isUpperCase(Character.toUpperCase(ch))` does not always ret
 
 In general, `https://developer.android.com/reference/kotlin/java/lang/String#toUpperCase()` should be used to map characters to uppercase. `String` case mapping methods have several benefits over `Character` case mapping methods. `String` case mapping methods can perform locale-sensitive mappings, context-sensitive mappings, and 1:M character mappings, whereas the `Character` case mapping methods cannot.
 
-**Note:** This method cannot handle [supplementary characters](../java/lang/Character.md). To support all Unicode characters, including supplementary characters, use the `https://developer.android.com/reference/kotlin/java/lang/Character#toUpperCase(kotlin.Int)` method.
+**Note:** This method cannot handle [supplementary characters](Character.md). To support all Unicode characters, including supplementary characters, use the `https://developer.android.com/reference/kotlin/java/lang/Character#toUpperCase(kotlin.Int)` method.
 
 | Parameters ||
 |---|---|

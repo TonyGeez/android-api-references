@@ -10,13 +10,13 @@ interface ForkJoinWorkerThreadFactory
 
 | [java.util.concurrent.ForkJoinPool.ForkJoinWorkerThreadFactory](../java/util/concurrent/ForkJoinPool.ForkJoinWorkerThreadFactory.md) |
 
-Factory for creating new [ForkJoinWorkerThread](../java/util/concurrent/ForkJoinWorkerThread.md) s. A`ForkJoinWorkerThreadFactory`must be defined and used for`ForkJoinWorkerThread`subclasses that extend base functionality or initialize threads with different contexts.
+Factory for creating new [ForkJoinWorkerThread](ForkJoinWorkerThread.md) s. A`ForkJoinWorkerThreadFactory`must be defined and used for`ForkJoinWorkerThread`subclasses that extend base functionality or initialize threads with different contexts.
 
 ## Summary
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [ForkJoinWorkerThread](../java/util/concurrent/ForkJoinWorkerThread.md)! | [newThread](../java/util/concurrent/ForkJoinPool.ForkJoinWorkerThreadFactory.md))`(`pool:` ` [ForkJoinPool](../java/util/concurrent/ForkJoinPool.md)!`)` Returns a new worker thread operating in the given pool. |
+| abstract [ForkJoinWorkerThread](ForkJoinWorkerThread.md)! | [newThread](../java/util/concurrent/ForkJoinPool.ForkJoinWorkerThreadFactory.md))`(`pool:` ` [ForkJoinPool](ForkJoinPool.md)!`)` Returns a new worker thread operating in the given pool. |
 
 ## Public methods
 
@@ -32,11 +32,11 @@ Returns a new worker thread operating in the given pool. Returning null or throw
 
 | Parameters ||
 |--------|---------------------------------------------------------------------------------------------------------------------------------|
-| `pool` | [ForkJoinPool](../java/util/concurrent/ForkJoinPool.md)!:the pool this thread works in |
+| `pool` | [ForkJoinPool](ForkJoinPool.md)!:the pool this thread works in |
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| [ForkJoinWorkerThread](../java/util/concurrent/ForkJoinWorkerThread.md)! | the new worker thread, or`null`if the request to create a thread is rejected |
+| [ForkJoinWorkerThread](ForkJoinWorkerThread.md)! | the new worker thread, or`null`if the request to create a thread is rejected |
 
 | Exceptions ||
 |----------------------------------|---------------------|

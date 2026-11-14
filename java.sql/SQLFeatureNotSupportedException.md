@@ -11,13 +11,13 @@ open class SQLFeatureNotSupportedException : SQLNonTransientException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
-| | | ↳ | [java.sql.SQLException](../java/sql/SQLException.md) |||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) ||||
+| | | ↳ | [java.sql.SQLException](SQLException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.sql.SQLNonTransientException](../java/sql/SQLNonTransientException.md) ||
-| | | | | ↳ | [java.sql.SQLFeatureNotSupportedException](../java/sql/SQLFeatureNotSupportedException.md) |
+| | | | ↳ | [java.sql.SQLNonTransientException](SQLNonTransientException.md) ||
+| | | | | ↳ | [java.sql.SQLFeatureNotSupportedException](SQLFeatureNotSupportedException.md) |
 
-The subclass of [SQLException](../java/sql/SQLException.md) thrown when the SQLState class value is '*0A*' ( the value is 'zero' A). This indicates that the JDBC driver does not support an optional JDBC feature. Optional JDBC features can fall into the fallowing categories:
+The subclass of [SQLException](SQLException.md) thrown when the SQLState class value is '*0A*' ( the value is 'zero' A). This indicates that the JDBC driver does not support an optional JDBC feature. Optional JDBC features can fall into the fallowing categories:
 
 <br />
 
@@ -29,14 +29,14 @@ The subclass of [SQLException](../java/sql/SQLException.md) thrown when the SQLS
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SQLFeatureNotSupportedException](../java/sql/SQLFeatureNotSupportedException.md))`()` Constructs a`SQLFeatureNotSupportedException`object. |
-| [SQLFeatureNotSupportedException](../java/sql/SQLFeatureNotSupportedException.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a`SQLFeatureNotSupportedException`object with a given`reason`. |
-| [SQLFeatureNotSupportedException](../java/sql/SQLFeatureNotSupportedException.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `SQLState:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a`SQLFeatureNotSupportedException`object with a given`reason`and`SQLState`. |
-| [SQLFeatureNotSupportedException](../java/sql/SQLFeatureNotSupportedException.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `SQLState:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `vendorCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a`SQLFeatureNotSupportedException`object with a given`reason`,`SQLState`and`vendorCode`. |
-| [SQLFeatureNotSupportedException](../java/sql/SQLFeatureNotSupportedException.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `SQLState:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `vendorCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a`SQLFeatureNotSupportedException`object with a given`reason`,`SQLState`,`vendorCode`and`cause`. |
-| [SQLFeatureNotSupportedException](../java/sql/SQLFeatureNotSupportedException.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `SQLState:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a`SQLFeatureNotSupportedException`object with a given`reason`,`SQLState`and`cause`. |
-| [SQLFeatureNotSupportedException](../java/sql/SQLFeatureNotSupportedException.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a`SQLFeatureNotSupportedException`object with a given`reason`and`cause`. |
-| [SQLFeatureNotSupportedException](../java/sql/SQLFeatureNotSupportedException.md))`(`cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a`SQLFeatureNotSupportedException`object with a given`cause`. |
+| [SQLFeatureNotSupportedException](SQLFeatureNotSupportedException.md))`()` Constructs a`SQLFeatureNotSupportedException`object. |
+| [SQLFeatureNotSupportedException](SQLFeatureNotSupportedException.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a`SQLFeatureNotSupportedException`object with a given`reason`. |
+| [SQLFeatureNotSupportedException](SQLFeatureNotSupportedException.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `SQLState:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a`SQLFeatureNotSupportedException`object with a given`reason`and`SQLState`. |
+| [SQLFeatureNotSupportedException](SQLFeatureNotSupportedException.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `SQLState:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `vendorCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a`SQLFeatureNotSupportedException`object with a given`reason`,`SQLState`and`vendorCode`. |
+| [SQLFeatureNotSupportedException](SQLFeatureNotSupportedException.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `SQLState:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `vendorCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a`SQLFeatureNotSupportedException`object with a given`reason`,`SQLState`,`vendorCode`and`cause`. |
+| [SQLFeatureNotSupportedException](SQLFeatureNotSupportedException.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `SQLState:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a`SQLFeatureNotSupportedException`object with a given`reason`,`SQLState`and`cause`. |
+| [SQLFeatureNotSupportedException](SQLFeatureNotSupportedException.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a`SQLFeatureNotSupportedException`object with a given`reason`and`cause`. |
+| [SQLFeatureNotSupportedException](SQLFeatureNotSupportedException.md))`(`cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a`SQLFeatureNotSupportedException`object with a given`cause`. |
 
 ## Public constructors
 
@@ -48,7 +48,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 SQLFeatureNotSupportedException()
 ```
 
-Constructs a`SQLFeatureNotSupportedException`object. The`reason`,`SQLState`are initialized to`null`and the vendor code is initialized to 0. The`cause`is not initialized, and may subsequently be initialized by a call to the [Throwable.initCause(java.lang.Throwable)](../java/lang/Throwable.md))method.
+Constructs a`SQLFeatureNotSupportedException`object. The`reason`,`SQLState`are initialized to`null`and the vendor code is initialized to 0. The`cause`is not initialized, and may subsequently be initialized by a call to the [Throwable.initCause(java.lang.Throwable)](../java.lang/Throwable.md))method.
 
 <br />
 
@@ -60,7 +60,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 SQLFeatureNotSupportedException(reason: String!)
 ```
 
-Constructs a`SQLFeatureNotSupportedException`object with a given`reason`. The`SQLState`is initialized to`null`and the vender code is initialized to 0. The`cause`is not initialized, and may subsequently be initialized by a call to the [Throwable.initCause(java.lang.Throwable)](../java/lang/Throwable.md))method.
+Constructs a`SQLFeatureNotSupportedException`object with a given`reason`. The`SQLState`is initialized to`null`and the vender code is initialized to 0. The`cause`is not initialized, and may subsequently be initialized by a call to the [Throwable.initCause(java.lang.Throwable)](../java.lang/Throwable.md))method.
 
 <br />
 
@@ -78,7 +78,7 @@ SQLFeatureNotSupportedException(
     SQLState: String!)
 ```
 
-Constructs a`SQLFeatureNotSupportedException`object with a given`reason`and`SQLState`. The`cause`is not initialized, and may subsequently be initialized by a call to the [Throwable.initCause(java.lang.Throwable)](../java/lang/Throwable.md))method. The vendor code is initialized to 0.
+Constructs a`SQLFeatureNotSupportedException`object with a given`reason`and`SQLState`. The`cause`is not initialized, and may subsequently be initialized by a call to the [Throwable.initCause(java.lang.Throwable)](../java.lang/Throwable.md))method. The vendor code is initialized to 0.
 
 <br />
 
@@ -98,7 +98,7 @@ SQLFeatureNotSupportedException(
     vendorCode: Int)
 ```
 
-Constructs a`SQLFeatureNotSupportedException`object with a given`reason`,`SQLState`and`vendorCode`. The`cause`is not initialized, and may subsequently be initialized by a call to the [Throwable.initCause(java.lang.Throwable)](../java/lang/Throwable.md))method.
+Constructs a`SQLFeatureNotSupportedException`object with a given`reason`,`SQLState`and`vendorCode`. The`cause`is not initialized, and may subsequently be initialized by a call to the [Throwable.initCause(java.lang.Throwable)](../java.lang/Throwable.md))method.
 
 <br />
 

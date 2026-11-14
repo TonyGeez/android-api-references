@@ -4,6 +4,6 @@
 
 ## Classes
 
-| [NumericShaper](../java/awt/font/NumericShaper.md) | The class is used to convert Latin-1 (European) digits to other Unicode decimal digits. |
+| [NumericShaper](NumericShaper.md) | The class is used to convert Latin-1 (European) digits to other Unicode decimal digits. |
 | --- | --- |
-| [TextAttribute](../java/awt/font/TextAttribute.md) | The`TextAttribute`class defines attribute keys and attribute values used for text rendering. |
+| [TextAttribute](TextAttribute.md) | The`TextAttribute`class defines attribute keys and attribute values used for text rendering. |

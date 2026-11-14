@@ -10,19 +10,19 @@ class Gatherers
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.util.stream.Gatherers](../java/util/stream/Gatherers.md) |
+| ↳ | [java.util.stream.Gatherers](Gatherers.md) |
 
-Implementations of [Gatherer](../java/util/stream/Gatherer.md) that provide useful intermediate operations, such as windowing functions, folding functions, transforming elements concurrently, etc.
+Implementations of [Gatherer](Gatherer.md) that provide useful intermediate operations, such as windowing functions, folding functions, transforming elements concurrently, etc.
 
 ## Summary
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Gatherer](../java/util/stream/Gatherer.md)\<T, \*, R\>! | [fold](../java/util/stream/Gatherers.md))`(`initial:` ` [Supplier](../java/util/function/Supplier.md)<R>!`, `folder:` ` [BiFunction](../java/util/function/BiFunction.md)<in` `R,` `in` `T,` `out` `R>!`)` Returns a Gatherer that performs an ordered, *reduction-like*, transformation for scenarios where no combiner-function can be implemented, or for reductions which are intrinsically order-dependent. |
-| static [Gatherer](../java/util/stream/Gatherer.md)\<T, \*, R\>! | [scan](../java/util/stream/Gatherers.md))`(`initial:` ` [Supplier](../java/util/function/Supplier.md)<R>!`, `scanner:` ` [BiFunction](../java/util/function/BiFunction.md)<in` `R,` `in` `T,` `out` `R>!`)` Returns a Gatherer that performs a Prefix Scan -- an incremental accumulation -- using the provided functions. |
-| static [Gatherer](../java/util/stream/Gatherer.md)\<TR, \*, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<TR\>!\>! | [windowFixed](../java/util/stream/Gatherers.md))`(`windowSize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a Gatherer that gathers elements into windows -- encounter-ordered groups of elements -- of a fixed size. |
+| static [Gatherer](Gatherer.md)\<T, \*, R\>! | [fold](Gatherers.md))`(`initial:` ` [Supplier](../java.util.function/Supplier.md)<R>!`, `folder:` ` [BiFunction](../java.util.function/BiFunction.md)<in` `R,` `in` `T,` `out` `R>!`)` Returns a Gatherer that performs an ordered, *reduction-like*, transformation for scenarios where no combiner-function can be implemented, or for reductions which are intrinsically order-dependent. |
+| static [Gatherer](Gatherer.md)\<T, \*, R\>! | [scan](Gatherers.md))`(`initial:` ` [Supplier](../java.util.function/Supplier.md)<R>!`, `scanner:` ` [BiFunction](../java.util.function/BiFunction.md)<in` `R,` `in` `T,` `out` `R>!`)` Returns a Gatherer that performs a Prefix Scan -- an incremental accumulation -- using the provided functions. |
+| static [Gatherer](Gatherer.md)\<TR, \*, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<TR\>!\>! | [windowFixed](Gatherers.md))`(`windowSize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a Gatherer that gathers elements into windows -- encounter-ordered groups of elements -- of a fixed size. |
 | --- | --- |
-| static [Gatherer](../java/util/stream/Gatherer.md)\<TR, \*, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<TR\>!\>! | [windowSliding](../java/util/stream/Gatherers.md))`(`windowSize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a Gatherer that gathers elements into windows -- encounter-ordered groups of elements -- of a given size, where each subsequent window includes all elements of the previous window except for the least recent, and adds the next element in the stream. |
+| static [Gatherer](Gatherer.md)\<TR, \*, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<TR\>!\>! | [windowSliding](Gatherers.md))`(`windowSize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a Gatherer that gathers elements into windows -- encounter-ordered groups of elements -- of a given size, where each subsequent window includes all elements of the previous window except for the least recent, and adds the next element in the stream. |
 
 ## Public methods
 
@@ -41,15 +41,15 @@ Returns a Gatherer that performs an ordered, *reduction-like*, transformation fo
 
 | Parameters ||
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| `initial` | [Supplier](../java/util/function/Supplier.md)\<R\>!: the identity value for the fold operation |
-| `folder` | [BiFunction](../java/util/function/BiFunction.md)\<in R, in T, out R\>!: the folding function |
+| `initial` | [Supplier](../java.util.function/Supplier.md)\<R\>!: the identity value for the fold operation |
+| `folder` | [BiFunction](../java.util.function/BiFunction.md)\<in R, in T, out R\>!: the folding function |
 | `<T>` | the type of elements the returned gatherer consumes |
 | --- | --- |
 | `<R>` | the type of elements the returned gatherer produces |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------|----------------|
-| [Gatherer](../java/util/stream/Gatherer.md)<T,` `*,` `R>! | a new Gatherer |
+| [Gatherer](Gatherer.md)<T,` `*,` `R>! | a new Gatherer |
 
 | Exceptions ||
 |----------------------------------|-------------------------------------|
@@ -57,7 +57,7 @@ Returns a Gatherer that performs an ordered, *reduction-like*, transformation fo
 
 **See Also**
 
-- [java.util.stream.Stream#reduce(Object, BinaryOperator)](../java/util/stream/Stream.md)) 
+- [java.util.stream.Stream#reduce(Object, BinaryOperator)](Stream.md)) 
 
 ### scan
 
@@ -76,15 +76,15 @@ Example: {@snippet lang = java: \* // will contain: \["1", "12", "123", "1234", 
 
 | Parameters ||
 |-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `initial` | [Supplier](../java/util/function/Supplier.md)\<R\>!: the supplier of the initial value for the scanner |
-| `scanner` | [BiFunction](../java/util/function/BiFunction.md)\<in R, in T, out R\>!: the function to apply for each element |
+| `initial` | [Supplier](../java.util.function/Supplier.md)\<R\>!: the supplier of the initial value for the scanner |
+| `scanner` | [BiFunction](../java.util.function/BiFunction.md)\<in R, in T, out R\>!: the function to apply for each element |
 | `<T>` | the type of element which this gatherer consumes |
 | --- | --- |
 | `<R>` | the type of element which this gatherer produces |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------|---------------------------------------------|
-| [Gatherer](../java/util/stream/Gatherer.md)<T,` `*,` `R>! | a new Gatherer which performs a prefix scan |
+| [Gatherer](Gatherer.md)<T,` `*,` `R>! | a new Gatherer which performs a prefix scan |
 
 | Exceptions ||
 |----------------------------------|-------------------------------------|
@@ -109,7 +109,7 @@ Example: {@snippet lang = java: \* // will contain: \[\[1, 2, 3\], \[4, 5, 6\], 
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|
-| [Gatherer](../java/util/stream/Gatherer.md)<TR,` `*,` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<TR>!>! | a new gatherer which groups elements into fixed-size windows |
+| [Gatherer](Gatherer.md)<TR,` `*,` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<TR>!>! | a new gatherer which groups elements into fixed-size windows |
 
 | Exceptions ||
 |--------------------------------------|----------------------------------|
@@ -134,7 +134,7 @@ Example: {@snippet lang = java: \* // will contain: \[\[1, 2\], \[2, 3\], \[3, 4
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------|
-| [Gatherer](../java/util/stream/Gatherer.md)<TR,` `*,` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<TR>!>! | a new gatherer which groups elements into sliding windows |
+| [Gatherer](Gatherer.md)<TR,` `*,` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<TR>!>! | a new gatherer which groups elements into sliding windows |
 
 | Exceptions ||
 |--------------------------------------|--------------------------------|

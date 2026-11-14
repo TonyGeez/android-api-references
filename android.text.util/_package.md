@@ -2,7 +2,7 @@
 
 # android.text.util
 
-Kotlin| [Java](../android/text/util/_package.md)
+Kotlin| [Java](_package.md)
 | --- | --- |
 
 ## Interfaces
@@ -13,7 +13,7 @@ Kotlin| [Java](../android/text/util/_package.md)
 
 ## Classes
 
-| [Linkify](../android/text/util/Linkify.md) | Linkify take a piece of text and a regular expression and turns all of the regex matches in the text into clickable links. |
+| [Linkify](Linkify.md) | Linkify take a piece of text and a regular expression and turns all of the regex matches in the text into clickable links. |
 | --- | --- |
-| [Rfc822Token](../android/text/util/Rfc822Token.md) | This class stores an RFC 822-like name, address, and comment, and provides methods to convert them to quoted strings. |
-| [Rfc822Tokenizer](../android/text/util/Rfc822Tokenizer.md) | This class works as a Tokenizer for MultiAutoCompleteTextView for address list fields, and also provides a method for converting a string of addresses (such as might be typed into such a field) into a series of Rfc822Tokens. |
+| [Rfc822Token](Rfc822Token.md) | This class stores an RFC 822-like name, address, and comment, and provides methods to convert them to quoted strings. |
+| [Rfc822Tokenizer](Rfc822Tokenizer.md) | This class works as a Tokenizer for MultiAutoCompleteTextView for address list fields, and also provides a method for converting a string of addresses (such as might be typed into such a field) into a series of Rfc822Tokens. |

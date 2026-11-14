@@ -2,7 +2,7 @@
 
 # android.media.quality
 
-Kotlin| [Java](../android/media/quality/_package.md)
+Kotlin| [Java](_package.md)
 | --- | --- |
 
 ## Interfaces
@@ -12,15 +12,15 @@ Kotlin| [Java](../android/media/quality/_package.md)
 
 ## Classes
 
-| [ActiveProcessingPicture](../android/media/quality/ActiveProcessingPicture.md) | Active picture represents an image or video undergoing picture processing which uses a picture profile. |
+| [ActiveProcessingPicture](ActiveProcessingPicture.md) | Active picture represents an image or video undergoing picture processing which uses a picture profile. |
 | --- | --- |
-| [AmbientBacklightEvent](../android/media/quality/AmbientBacklightEvent.md) | Ambient backlight event |
-| [AmbientBacklightMetadata](../android/media/quality/AmbientBacklightMetadata.md) | Metadata of ambient backlight. |
-| [AmbientBacklightSettings](../android/media/quality/AmbientBacklightSettings.md) | Settings to configure ambient backlight hardware. |
+| [AmbientBacklightEvent](AmbientBacklightEvent.md) | Ambient backlight event |
+| [AmbientBacklightMetadata](AmbientBacklightMetadata.md) | Metadata of ambient backlight. |
+| [AmbientBacklightSettings](AmbientBacklightSettings.md) | Settings to configure ambient backlight hardware. |
 | --- | --- |
-| [MediaQualityContract](../android/media/quality/MediaQualityContract.md) | The contract between the media quality service and applications. |
-| [MediaQualityManager](../android/media/quality/MediaQualityManager.md) | Central system API to the overall media quality, which arbitrates interaction between applications and media quality service. |
-| [ParameterCapability](../android/media/quality/ParameterCapability.md) | Capability info of media quality parameters |
+| [MediaQualityContract](MediaQualityContract.md) | The contract between the media quality service and applications. |
+| [MediaQualityManager](MediaQualityManager.md) | Central system API to the overall media quality, which arbitrates interaction between applications and media quality service. |
+| [ParameterCapability](ParameterCapability.md) | Capability info of media quality parameters |
 | --- | --- |
-| [PictureProfile](../android/media/quality/PictureProfile.md) | Profile for picture quality. |
-| [SoundProfile](../android/media/quality/SoundProfile.md) | Profile for sound quality. |
+| [PictureProfile](PictureProfile.md) | Profile for picture quality. |
+| [SoundProfile](SoundProfile.md) | Profile for sound quality. |

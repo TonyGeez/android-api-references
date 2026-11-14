@@ -13,7 +13,7 @@ interface NfcEventCallback
 
 | [android.nfc.cardemulation.CardEmulation.NfcEventCallback](../android/nfc/cardemulation/CardEmulation.NfcEventCallback.md) |
 
-Callback interface for NFC-related events. These callbacks will be called when registered with [registerNfcEventCallback(java.util.concurrent.Executor,android.nfc.cardemulation.CardEmulation.NfcEventCallback)](../android/nfc/cardemulation/CardEmulation.md))and while the registered caller is still alive. When you are done listening to the callbacks, you should unregister it with [unregisterNfcEventCallback(android.nfc.cardemulation.CardEmulation.NfcEventCallback)](../android/nfc/cardemulation/CardEmulation.md)).
+Callback interface for NFC-related events. These callbacks will be called when registered with [registerNfcEventCallback(java.util.concurrent.Executor,android.nfc.cardemulation.CardEmulation.NfcEventCallback)](CardEmulation.md))and while the registered caller is still alive. When you are done listening to the callbacks, you should unregister it with [unregisterNfcEventCallback(android.nfc.cardemulation.CardEmulation.NfcEventCallback)](CardEmulation.md)).
 
 ## Summary
 
@@ -40,7 +40,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 open fun onAidConflictOccurred(aid: String): Unit
 ```
 
-This method is called when an AID conflict is detected during an NFC transaction. This can happen when multiple services are registered for the same AID. If your service is registered for this AID you may want to instruct users to bring your app to the foreground and ensure you call [setPreferredService(android.app.Activity,android.content.ComponentName)](../android/nfc/cardemulation/CardEmulation.md))to ensure the transaction is routed to your service.
+This method is called when an AID conflict is detected during an NFC transaction. This can happen when multiple services are registered for the same AID. If your service is registered for this AID you may want to instruct users to bring your app to the foreground and ensure you call [setPreferredService(android.app.Activity,android.content.ComponentName)](CardEmulation.md))to ensure the transaction is routed to your service.
 
 | Parameters ||
 |-------|------------------------------------------------------------------------------------------------------------------------------------------|
@@ -72,7 +72,7 @@ This method is called when an internal error is reported by the NFC stack. No ac
 
 | Parameters ||
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `errorType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The type of the internal error Value is [android.nfc.cardemulation.CardEmulation#NFC_INTERNAL_ERROR_UNKNOWN](../android/nfc/cardemulation/CardEmulation.md), [android.nfc.cardemulation.CardEmulation#NFC_INTERNAL_ERROR_NFC_CRASH_RESTART](../android/nfc/cardemulation/CardEmulation.md), [android.nfc.cardemulation.CardEmulation#NFC_INTERNAL_ERROR_NFC_HARDWARE_ERROR](../android/nfc/cardemulation/CardEmulation.md), or [android.nfc.cardemulation.CardEmulation#NFC_INTERNAL_ERROR_COMMAND_TIMEOUT](../android/nfc/cardemulation/CardEmulation.md) |
+| `errorType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The type of the internal error Value is [android.nfc.cardemulation.CardEmulation#NFC_INTERNAL_ERROR_UNKNOWN](CardEmulation.md), [android.nfc.cardemulation.CardEmulation#NFC_INTERNAL_ERROR_NFC_CRASH_RESTART](CardEmulation.md), [android.nfc.cardemulation.CardEmulation#NFC_INTERNAL_ERROR_NFC_HARDWARE_ERROR](CardEmulation.md), or [android.nfc.cardemulation.CardEmulation#NFC_INTERNAL_ERROR_COMMAND_TIMEOUT](CardEmulation.md) |
 
 ### onNfcStateChanged
 
@@ -86,7 +86,7 @@ This method is called when the NFC adapter state changes.
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `state` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The new NFC adapter state Value is [android.nfc.NfcAdapter#STATE_OFF](../android/nfc/NfcAdapter.md), [android.nfc.NfcAdapter#STATE_TURNING_ON](../android/nfc/NfcAdapter.md), [android.nfc.NfcAdapter#STATE_ON](../android/nfc/NfcAdapter.md), or [android.nfc.NfcAdapter#STATE_TURNING_OFF](../android/nfc/NfcAdapter.md) |
+| `state` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The new NFC adapter state Value is [android.nfc.NfcAdapter#STATE_OFF](../android.nfc/NfcAdapter.md), [android.nfc.NfcAdapter#STATE_TURNING_ON](../android.nfc/NfcAdapter.md), [android.nfc.NfcAdapter#STATE_ON](../android.nfc/NfcAdapter.md), or [android.nfc.NfcAdapter#STATE_TURNING_OFF](../android.nfc/NfcAdapter.md) |
 
 ### onObserveModeStateChanged
 
@@ -118,7 +118,7 @@ This method is called when an off-host AID is selected. This indicates that an o
 | Parameters ||
 |------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `aid` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The AID that was selected This value cannot be`null`. |
-| `offHostSecureElement` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):Secure Element on which the AID was routed to. Will be string with prefix SIM or prefix eSE ([Reader.getName()](../android/se/omapi/Reader.md))). Ref: GSMA TS.26 - NFC Handset Requirements TS26_NFC_REQ_069: For UICC, Secure Element Name SHALL be SIM\[smartcard slot\] (e.g. SIM/SIM1, SIM2... SIMn). TS26_NFC_REQ_070: For embedded SE, Secure Element Name SHALL be eSE\[number\] (e.g. eSE/eSE1, eSE2, etc.). This value cannot be`null`. |
+| `offHostSecureElement` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):Secure Element on which the AID was routed to. Will be string with prefix SIM or prefix eSE ([Reader.getName()](../android.se.omapi/Reader.md))). Ref: GSMA TS.26 - NFC Handset Requirements TS26_NFC_REQ_069: For UICC, Secure Element Name SHALL be SIM\[smartcard slot\] (e.g. SIM/SIM1, SIM2... SIMn). TS26_NFC_REQ_070: For embedded SE, Secure Element Name SHALL be eSE\[number\] (e.g. eSE/eSE1, eSE2, etc.). This value cannot be`null`. |
 
 ### onPreferredServiceChanged
 
@@ -128,7 +128,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 open fun onPreferredServiceChanged(isPreferred: Boolean): Unit
 ```
 
-This method is called when this package gains or loses preferred NFC service status. This can happen by way of either it becoming the default wallet role holder (see [android.app.role.RoleManager#ROLE_WALLET](../android/app/role/RoleManager.md)) or the preferred service of the foreground activity, set with [setPreferredService(android.app.Activity,android.content.ComponentName)](../android/nfc/cardemulation/CardEmulation.md)).
+This method is called when this package gains or loses preferred NFC service status. This can happen by way of either it becoming the default wallet role holder (see [android.app.role.RoleManager#ROLE_WALLET](../android.app.role/RoleManager.md)) or the preferred service of the foreground activity, set with [setPreferredService(android.app.Activity,android.content.ComponentName)](CardEmulation.md)).
 
 | Parameters ||
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

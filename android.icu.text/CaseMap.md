@@ -4,7 +4,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 
 # CaseMap
 
-Kotlin| [Java](../android/icu/text/CaseMap.md) 
+Kotlin| [Java](CaseMap.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ abstract class CaseMap
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.icu.text.CaseMap](../android/icu/text/CaseMap.md) |
+| ↳ | [android.icu.text.CaseMap](CaseMap.md) |
 
 | Known Direct Subclasses [CaseMap.Fold](../android/icu/text/CaseMap.Fold.md), [CaseMap.Lower](../android/icu/text/CaseMap.Lower.md), [CaseMap.Title](../android/icu/text/CaseMap.Title.md), [CaseMap.Upper](../android/icu/text/CaseMap.Upper.md) |------------------------------------------------------------------------------------------------|-----------------------------------| | [CaseMap.Fold](../android/icu/text/CaseMap.Fold.md) | Case folding options and methods. | | [CaseMap.Lower](../android/icu/text/CaseMap.Lower.md) | Lowercasing options and methods. | | [CaseMap.Title](../android/icu/text/CaseMap.Title.md) | Titlecasing options and methods. | | [CaseMap.Upper](../android/icu/text/CaseMap.Upper.md) | Uppercasing options and methods. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -32,12 +32,12 @@ Low-level case mapping options and methods. Immutable. "Setters" return instance
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [CaseMap.Fold](../android/icu/text/CaseMap.Fold.md)! | [fold](../android/icu/text/CaseMap.md))`()` <br /> |
-| abstract [CaseMap](../android/icu/text/CaseMap.md)! | [omitUnchangedText](../android/icu/text/CaseMap.md))`()` Returns an instance that behaves like this one but omits unchanged text when case-mapping with [Edits](../android/icu/text/Edits.md). |
-| openstatic [CaseMap.Lower](../android/icu/text/CaseMap.Lower.md)! | [toLower](../android/icu/text/CaseMap.md))`()` <br /> |
+| openstatic [CaseMap.Fold](../android/icu/text/CaseMap.Fold.md)! | [fold](CaseMap.md))`()` <br /> |
+| abstract [CaseMap](CaseMap.md)! | [omitUnchangedText](CaseMap.md))`()` Returns an instance that behaves like this one but omits unchanged text when case-mapping with [Edits](Edits.md). |
+| openstatic [CaseMap.Lower](../android/icu/text/CaseMap.Lower.md)! | [toLower](CaseMap.md))`()` <br /> |
 | --- | --- |
-| openstatic [CaseMap.Title](../android/icu/text/CaseMap.Title.md)! | [toTitle](../android/icu/text/CaseMap.md))`()` <br /> |
-| openstatic [CaseMap.Upper](../android/icu/text/CaseMap.Upper.md)! | [toUpper](../android/icu/text/CaseMap.md))`()` <br /> |
+| openstatic [CaseMap.Title](../android/icu/text/CaseMap.Title.md)! | [toTitle](CaseMap.md))`()` <br /> |
+| openstatic [CaseMap.Upper](../android/icu/text/CaseMap.Upper.md)! | [toUpper](CaseMap.md))`()` <br /> |
 
 ## Public methods
 
@@ -61,11 +61,11 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 abstract fun omitUnchangedText(): CaseMap!
 ```
 
-Returns an instance that behaves like this one but omits unchanged text when case-mapping with [Edits](../android/icu/text/Edits.md).
+Returns an instance that behaves like this one but omits unchanged text when case-mapping with [Edits](Edits.md).
 
 | Return ||
 |--------------------------------------------------------------------------------------|-------------------------------------|
-| [CaseMap](../android/icu/text/CaseMap.md)! | an options object with this option. |
+| [CaseMap](CaseMap.md)! | an options object with this option. |
 
 ### toLower
 

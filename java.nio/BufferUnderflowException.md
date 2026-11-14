@@ -11,10 +11,10 @@ open class BufferUnderflowException : RuntimeException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
-| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) ||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) |||
+| | | ↳ | [java.lang.RuntimeException](../java.lang/RuntimeException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.nio.BufferUnderflowException](../java/nio/BufferUnderflowException.md) |
+| | | | ↳ | [java.nio.BufferUnderflowException](BufferUnderflowException.md) |
 
 Unchecked exception thrown when a relative*get*operation reaches the source buffer's limit.
 
@@ -22,7 +22,7 @@ Unchecked exception thrown when a relative*get*operation reaches the source buff
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [BufferUnderflowException](../java/nio/BufferUnderflowException.md))`()` Constructs an instance of this class. |
+| [BufferUnderflowException](BufferUnderflowException.md))`()` Constructs an instance of this class. |
 
 ## Public constructors
 

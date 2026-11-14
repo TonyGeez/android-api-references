@@ -6,7 +6,7 @@ Added in [API level 37](https://developer.android.com/guide/topics/manifest/uses
 interface AppFunctionObserver
 ```
 
-| [android.app.appfunctions.AppFunctionObserver](../android/app/appfunctions/AppFunctionObserver.md) |
+| [android.app.appfunctions.AppFunctionObserver](AppFunctionObserver.md) |
 
 Interface for observing changes to app functions provided to `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionManager#observeAppFunctions(java.util.concurrent.Executor,%20android.app.appfunctions.AppFunctionObserver)`.
 

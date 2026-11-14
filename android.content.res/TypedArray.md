@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # TypedArray
 
-Kotlin| [Java](../android/content/res/TypedArray.md) 
+Kotlin| [Java](TypedArray.md) 
 | --- | --- |
 
 ```
@@ -13,59 +13,59 @@ open class TypedArray : AutoCloseable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.content.res.TypedArray](../android/content/res/TypedArray.md) |
+| ↳ | [android.content.res.TypedArray](TypedArray.md) |
 
-Container for an array of values that were retrieved with[Resources.Theme.obtainStyledAttributes(AttributeSet, int[], int, int)](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme#obtainStyledAttributes(android.util.AttributeSet,%20kotlin.IntArray,%20kotlin.Int,%20kotlin.Int))or [Resources.obtainAttributes](../android/content/res/Resources.md)). Be sure to call [recycle](../android/content/res/TypedArray.md))when done with them. The indices used to retrieve values from this structure correspond to the positions of the attributes given to obtainStyledAttributes.
+Container for an array of values that were retrieved with[Resources.Theme.obtainStyledAttributes(AttributeSet, int[], int, int)](https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme#obtainStyledAttributes(android.util.AttributeSet,%20kotlin.IntArray,%20kotlin.Int,%20kotlin.Int))or [Resources.obtainAttributes](Resources.md)). Be sure to call [recycle](TypedArray.md))when done with them. The indices used to retrieve values from this structure correspond to the positions of the attributes given to obtainStyledAttributes.
 
 ## Summary
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../android/content/res/TypedArray.md))`()` Recycles the TypedArray, to be re-used by a later caller. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getBoolean](../android/content/res/TypedArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `defValue:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Retrieve the boolean value for the attribute at index. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getChangingConfigurations](../android/content/res/TypedArray.md))`()` Return a mask of the configuration parameters for which the values in this typed array may change. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](TypedArray.md))`()` Recycles the TypedArray, to be re-used by a later caller. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getBoolean](TypedArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `defValue:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Retrieve the boolean value for the attribute at index. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getChangingConfigurations](TypedArray.md))`()` Return a mask of the configuration parameters for which the values in this typed array may change. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getColor](../android/content/res/TypedArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `defValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieve the color value for the attribute at index. |
-| open [ColorStateList](../android/content/res/ColorStateList.md)? | [getColorStateList](../android/content/res/TypedArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieve the ColorStateList for the attribute at index. |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getDimension](../android/content/res/TypedArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `defValue:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Retrieve a dimensional unit attribute at index. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getColor](TypedArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `defValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieve the color value for the attribute at index. |
+| open [ColorStateList](ColorStateList.md)? | [getColorStateList](TypedArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieve the ColorStateList for the attribute at index. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getDimension](TypedArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `defValue:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Retrieve a dimensional unit attribute at index. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDimensionPixelOffset](../android/content/res/TypedArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `defValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieve a dimensional unit attribute at index for use as an offset in raw pixels. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDimensionPixelSize](../android/content/res/TypedArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `defValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieve a dimensional unit attribute at index for use as a size in raw pixels. |
-| open [Drawable](../android/graphics/drawable/Drawable.md)? | [getDrawable](../android/content/res/TypedArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieve the Drawable for the attribute at index. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDimensionPixelOffset](TypedArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `defValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieve a dimensional unit attribute at index for use as an offset in raw pixels. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDimensionPixelSize](TypedArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `defValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieve a dimensional unit attribute at index for use as a size in raw pixels. |
+| open [Drawable](../android.graphics.drawable/Drawable.md)? | [getDrawable](TypedArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieve the Drawable for the attribute at index. |
 | --- | --- |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getFloat](../android/content/res/TypedArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `defValue:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Retrieve the float value for the attribute at index. |
-| open [Typeface](../android/graphics/Typeface.md)? | [getFont](../android/content/res/TypedArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieve the Typeface for the attribute at index. |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getFraction](../android/content/res/TypedArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `base:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pbase:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `defValue:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Retrieves a fractional unit attribute at index. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getFloat](TypedArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `defValue:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Retrieve the float value for the attribute at index. |
+| open [Typeface](../android.graphics/Typeface.md)? | [getFont](TypedArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieve the Typeface for the attribute at index. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getFraction](TypedArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `base:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pbase:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `defValue:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Retrieves a fractional unit attribute at index. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIndex](../android/content/res/TypedArray.md))`(`at:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns an index in the array that has data. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIndexCount](../android/content/res/TypedArray.md))`()` Returns the number of indices in the array that actually have data. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInt](../android/content/res/TypedArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `defValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieve the integer value for the attribute at index. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIndex](TypedArray.md))`(`at:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns an index in the array that has data. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIndexCount](TypedArray.md))`()` Returns the number of indices in the array that actually have data. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInt](TypedArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `defValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieve the integer value for the attribute at index. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInteger](../android/content/res/TypedArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `defValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieve the integer value for the attribute at index. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLayoutDimension](../android/content/res/TypedArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `defValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Special version of [getDimensionPixelSize](../android/content/res/TypedArray.md))for retrieving [android.view.ViewGroup](../android/view/ViewGroup.md)'s layout_width and layout_height attributes. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLayoutDimension](../android/content/res/TypedArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Special version of [getDimensionPixelSize](../android/content/res/TypedArray.md))for retrieving [android.view.ViewGroup](../android/view/ViewGroup.md)'s layout_width and layout_height attributes. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInteger](TypedArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `defValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieve the integer value for the attribute at index. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLayoutDimension](TypedArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `defValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Special version of [getDimensionPixelSize](TypedArray.md))for retrieving [android.view.ViewGroup](../android.view/ViewGroup.md)'s layout_width and layout_height attributes. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLayoutDimension](TypedArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Special version of [getDimensionPixelSize](TypedArray.md))for retrieving [android.view.ViewGroup](../android.view/ViewGroup.md)'s layout_width and layout_height attributes. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getNonResourceString](../android/content/res/TypedArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves the string value for the attribute at index, but only if that string comes from an immediate value in an XML file. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPositionDescription](../android/content/res/TypedArray.md))`()` Returns a message about the parser state suitable for printing error messages. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getResourceId](../android/content/res/TypedArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `defValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves the resource identifier for the attribute at index. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getNonResourceString](TypedArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves the string value for the attribute at index, but only if that string comes from an immediate value in an XML file. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPositionDescription](TypedArray.md))`()` Returns a message about the parser state suitable for printing error messages. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getResourceId](TypedArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `defValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves the resource identifier for the attribute at index. |
 | --- | --- |
-| open [Resources](../android/content/res/Resources.md)! | [getResources](../android/content/res/TypedArray.md))`()` Returns the Resources object this array was loaded from. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSourceResourceId](../android/content/res/TypedArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `defaultValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the resource ID of the style or layout against which the specified attribute was resolved, otherwise returns defValue. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getString](../android/content/res/TypedArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves the string value for the attribute at index. |
+| open [Resources](Resources.md)! | [getResources](TypedArray.md))`()` Returns the Resources object this array was loaded from. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSourceResourceId](TypedArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `defaultValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the resource ID of the style or layout against which the specified attribute was resolved, otherwise returns defValue. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getString](TypedArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves the string value for the attribute at index. |
 | --- | --- |
-| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [getText](../android/content/res/TypedArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves the styled string value for the attribute at index. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!\>! | [getTextArray](../android/content/res/TypedArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieve the CharSequence\[\] for the attribute at index. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getType](../android/content/res/TypedArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the type of attribute at the specified index. |
+| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [getText](TypedArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves the styled string value for the attribute at index. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!\>! | [getTextArray](TypedArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieve the CharSequence\[\] for the attribute at index. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getType](TypedArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the type of attribute at the specified index. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getValue](../android/content/res/TypedArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `outValue:` ` [TypedValue](../android/util/TypedValue.md)!`)` Retrieve the raw TypedValue for the attribute at index. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasValue](../android/content/res/TypedArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Determines whether there is an attribute at index. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasValueOrEmpty](../android/content/res/TypedArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Determines whether there is an attribute at index, returning`true`if the attribute was explicitly set to`@empty`and`false`only if the attribute was undefined. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getValue](TypedArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `outValue:` ` [TypedValue](../android.util/TypedValue.md)!`)` Retrieve the raw TypedValue for the attribute at index. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasValue](TypedArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Determines whether there is an attribute at index. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasValueOrEmpty](TypedArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Determines whether there is an attribute at index, returning`true`if the attribute was explicitly set to`@empty`and`false`only if the attribute was undefined. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [length](../android/content/res/TypedArray.md))`()` Returns the number of values in this array. |
-| open [TypedValue](../android/util/TypedValue.md)! | [peekValue](../android/content/res/TypedArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieve the raw TypedValue for the attribute at index and return a temporary object holding its data. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [recycle](../android/content/res/TypedArray.md))`()` Recycles the TypedArray, to be re-used by a later caller. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [length](TypedArray.md))`()` Returns the number of values in this array. |
+| open [TypedValue](../android.util/TypedValue.md)! | [peekValue](TypedArray.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieve the raw TypedValue for the attribute at index and return a temporary object holding its data. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [recycle](TypedArray.md))`()` Recycles the TypedArray, to be re-used by a later caller. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/content/res/TypedArray.md))`()` <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](TypedArray.md))`()` <br /> |
 
 ## Public methods
 
@@ -101,7 +101,7 @@ open fun getBoolean(
 
 Retrieve the boolean value for the attribute at index.
 
-If the attribute is an integer value, this method returns false if the attribute is equal to zero, and true otherwise. If the attribute is not a boolean or integer value, this method will attempt to coerce it to an integer using [Integer.decode(String)](../java/lang/Integer.md))and return whether it is equal to zero.
+If the attribute is an integer value, this method returns false if the attribute is equal to zero, and true otherwise. If the attribute is not a boolean or integer value, this method will attempt to coerce it to an integer using [Integer.decode(String)](../java.lang/Integer.md))and return whether it is equal to zero.
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -128,7 +128,7 @@ Return a mask of the configuration parameters for which the values in this typed
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Returns a mask of the changing configuration parameters, as defined by [android.content.pm.ActivityInfo](../android/content/pm/ActivityInfo.md). Value is either`0`or a combination of [android.content.pm.ActivityInfo#CONFIG_MCC](../android/content/pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_MNC](../android/content/pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_LOCALE](../android/content/pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_TOUCHSCREEN](../android/content/pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_KEYBOARD](../android/content/pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_KEYBOARD_HIDDEN](../android/content/pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_NAVIGATION](../android/content/pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_ORIENTATION](../android/content/pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_SCREEN_LAYOUT](../android/content/pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_UI_MODE](../android/content/pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_SCREEN_SIZE](../android/content/pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_SMALLEST_SCREEN_SIZE](../android/content/pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_DENSITY](../android/content/pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_LAYOUT_DIRECTION](../android/content/pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_COLOR_MODE](../android/content/pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_FONT_SCALE](../android/content/pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_GRAMMATICAL_GENDER](../android/content/pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_FONT_WEIGHT_ADJUSTMENT](../android/content/pm/ActivityInfo.md), android.content.pm.ActivityInfo.CONFIG_WINDOW_CONFIGURATION, [android.content.pm.ActivityInfo#CONFIG_ASSETS_PATHS](../android/content/pm/ActivityInfo.md), and [android.content.pm.ActivityInfo#CONFIG_RESOURCES_UNUSED](../android/content/pm/ActivityInfo.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Returns a mask of the changing configuration parameters, as defined by [android.content.pm.ActivityInfo](../android.content.pm/ActivityInfo.md). Value is either`0`or a combination of [android.content.pm.ActivityInfo#CONFIG_MCC](../android.content.pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_MNC](../android.content.pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_LOCALE](../android.content.pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_TOUCHSCREEN](../android.content.pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_KEYBOARD](../android.content.pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_KEYBOARD_HIDDEN](../android.content.pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_NAVIGATION](../android.content.pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_ORIENTATION](../android.content.pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_SCREEN_LAYOUT](../android.content.pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_UI_MODE](../android.content.pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_SCREEN_SIZE](../android.content.pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_SMALLEST_SCREEN_SIZE](../android.content.pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_DENSITY](../android.content.pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_LAYOUT_DIRECTION](../android.content.pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_COLOR_MODE](../android.content.pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_FONT_SCALE](../android.content.pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_GRAMMATICAL_GENDER](../android.content.pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_FONT_WEIGHT_ADJUSTMENT](../android.content.pm/ActivityInfo.md), android.content.pm.ActivityInfo.CONFIG_WINDOW_CONFIGURATION, [android.content.pm.ActivityInfo#CONFIG_ASSETS_PATHS](../android.content.pm/ActivityInfo.md), and [android.content.pm.ActivityInfo#CONFIG_RESOURCES_UNUSED](../android.content.pm/ActivityInfo.md) |
 
 | Exceptions ||
 |------------------------------|----------------------------------------------|
@@ -136,7 +136,7 @@ Return a mask of the configuration parameters for which the values in this typed
 
 **See Also**
 
-- [android.content.pm.ActivityInfo](../android/content/pm/ActivityInfo.md) 
+- [android.content.pm.ActivityInfo](../android.content.pm/ActivityInfo.md) 
 
 ### getColor
 
@@ -149,7 +149,7 @@ open fun getColor(
 ): Int
 ```
 
-Retrieve the color value for the attribute at index. If the attribute references a color resource holding a complex [android.content.res.ColorStateList](../android/content/res/ColorStateList.md), then the default color from the set is returned.
+Retrieve the color value for the attribute at index. If the attribute references a color resource holding a complex [android.content.res.ColorStateList](ColorStateList.md), then the default color from the set is returned.
 
 This method will throw an exception if the attribute is defined but is not an integer color or color state list.
 
@@ -175,7 +175,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun getColorStateList(index: Int): ColorStateList?
 ```
 
-Retrieve the ColorStateList for the attribute at index. The value may be either a single solid color or a reference to a color or complex [android.content.res.ColorStateList](../android/content/res/ColorStateList.md) description.
+Retrieve the ColorStateList for the attribute at index. The value may be either a single solid color or a reference to a color or complex [android.content.res.ColorStateList](ColorStateList.md) description.
 
 This method will return`null`if the attribute is not defined or is not an integer color or color state list.
 
@@ -185,7 +185,7 @@ This method will return`null`if the attribute is not defined or is not an intege
 
 | Return ||
 |------------------------------------------------------------------------------------------------------|-----------------------------------------------------------|
-| [ColorStateList](../android/content/res/ColorStateList.md)? | ColorStateList for the attribute, or`null`if not defined. |
+| [ColorStateList](ColorStateList.md)? | ColorStateList for the attribute, or`null`if not defined. |
 
 | Exceptions ||
 |-------------------------------------------|------------------------------------------------------------------------------|
@@ -203,7 +203,7 @@ open fun getDimension(
 ): Float
 ```
 
-Retrieve a dimensional unit attribute at index. Unit conversions are based on the current [DisplayMetrics](../android/util/DisplayMetrics.md) associated with the resources this [TypedArray](../android/content/res/TypedArray.md) object came from.
+Retrieve a dimensional unit attribute at index. Unit conversions are based on the current [DisplayMetrics](../android.util/DisplayMetrics.md) associated with the resources this [TypedArray](TypedArray.md) object came from.
 
 This method will throw an exception if the attribute is defined but is not a dimension.
 
@@ -223,8 +223,8 @@ This method will throw an exception if the attribute is defined but is not a dim
 
 **See Also**
 
-- [#getDimensionPixelOffset](../android/content/res/TypedArray.md))
-- [#getDimensionPixelSize](../android/content/res/TypedArray.md)) 
+- [#getDimensionPixelOffset](TypedArray.md))
+- [#getDimensionPixelSize](TypedArray.md)) 
 
 ### getDimensionPixelOffset
 
@@ -237,7 +237,7 @@ open fun getDimensionPixelOffset(
 ): Int
 ```
 
-Retrieve a dimensional unit attribute at index for use as an offset in raw pixels. This is the same as [getDimension](../android/content/res/TypedArray.md)), except the returned value is converted to integer pixels for you. An offset conversion involves simply truncating the base value to an integer.
+Retrieve a dimensional unit attribute at index for use as an offset in raw pixels. This is the same as [getDimension](TypedArray.md)), except the returned value is converted to integer pixels for you. An offset conversion involves simply truncating the base value to an integer.
 
 This method will throw an exception if the attribute is defined but is not a dimension.
 
@@ -257,8 +257,8 @@ This method will throw an exception if the attribute is defined but is not a dim
 
 **See Also**
 
-- [#getDimension](../android/content/res/TypedArray.md))
-- [#getDimensionPixelSize](../android/content/res/TypedArray.md)) 
+- [#getDimension](TypedArray.md))
+- [#getDimensionPixelSize](TypedArray.md)) 
 
 ### getDimensionPixelSize
 
@@ -271,7 +271,7 @@ open fun getDimensionPixelSize(
 ): Int
 ```
 
-Retrieve a dimensional unit attribute at index for use as a size in raw pixels. This is the same as [getDimension](../android/content/res/TypedArray.md)), except the returned value is converted to integer pixels for use as a size. A size conversion involves rounding the base value, and ensuring that a non-zero base value is at least one pixel in size.
+Retrieve a dimensional unit attribute at index for use as a size in raw pixels. This is the same as [getDimension](TypedArray.md)), except the returned value is converted to integer pixels for use as a size. A size conversion involves rounding the base value, and ensuring that a non-zero base value is at least one pixel in size.
 
 This method will throw an exception if the attribute is defined but is not a dimension.
 
@@ -291,8 +291,8 @@ This method will throw an exception if the attribute is defined but is not a dim
 
 **See Also**
 
-- [#getDimension](../android/content/res/TypedArray.md))
-- [#getDimensionPixelOffset](../android/content/res/TypedArray.md)) 
+- [#getDimension](TypedArray.md))
+- [#getDimensionPixelOffset](TypedArray.md)) 
 
 ### getDrawable
 
@@ -312,7 +312,7 @@ This method will throw an exception if the attribute is defined but is not a col
 
 | Return ||
 |------------------------------------------------------------------------------------------------------|-----------------------------------------------------|
-| [Drawable](../android/graphics/drawable/Drawable.md)? | Drawable for the attribute, or`null`if not defined. |
+| [Drawable](../android.graphics.drawable/Drawable.md)? | Drawable for the attribute, or`null`if not defined. |
 
 | Exceptions ||
 |-------------------------------------------|----------------------------------------------------------------------|
@@ -332,7 +332,7 @@ open fun getFloat(
 
 Retrieve the float value for the attribute at index.
 
-If the attribute is not a float or an integer, this method will attempt to coerce it to a float using [Float.parseFloat(String)](../java/lang/Float.md)).
+If the attribute is not a float or an integer, this method will attempt to coerce it to a float using [Float.parseFloat(String)](../java.lang/Float.md)).
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------|
@@ -364,7 +364,7 @@ This method will throw an exception if the attribute is defined but is not a fon
 
 | Return ||
 |---------------------------------------------------------------------------------------------|-----------------------------------------------------|
-| [Typeface](../android/graphics/Typeface.md)? | Typeface for the attribute, or`null`if not defined. |
+| [Typeface](../android.graphics/Typeface.md)? | Typeface for the attribute, or`null`if not defined. |
 
 | Exceptions ||
 |-------------------------------------------|---------------------------------------------------------|
@@ -415,11 +415,11 @@ Returns an index in the array that has data. Attributes with a value of @empty a
 
 | Parameters ||
 |------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `at` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The index you would like to returned, ranging from 0 to [getIndexCount()](../android/content/res/TypedArray.md)). |
+| `at` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The index you would like to returned, ranging from 0 to [getIndexCount()](TypedArray.md)). |
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The index at the given offset, which can be used with [getValue](../android/content/res/TypedArray.md))and related APIs. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The index at the given offset, which can be used with [getValue](TypedArray.md))and related APIs. |
 
 | Exceptions ||
 |------------------------------|----------------------------------------------|
@@ -452,7 +452,7 @@ open fun getInt(
 
 Retrieve the integer value for the attribute at index.
 
-If the attribute is not an integer, this method will attempt to coerce it to an integer using [Integer.decode(String)](../java/lang/Integer.md)).
+If the attribute is not an integer, this method will attempt to coerce it to an integer using [Integer.decode(String)](../java.lang/Integer.md)).
 
 | Parameters ||
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -480,7 +480,7 @@ open fun getInteger(
 
 Retrieve the integer value for the attribute at index.
 
-Unlike [getInt(int,int)](../android/content/res/TypedArray.md)), this method will throw an exception if the attribute is defined but is not an integer.
+Unlike [getInt(int,int)](TypedArray.md)), this method will throw an exception if the attribute is defined but is not an integer.
 
 | Parameters ||
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
@@ -507,7 +507,7 @@ open fun getLayoutDimension(
 ): Int
 ```
 
-Special version of [getDimensionPixelSize](../android/content/res/TypedArray.md))for retrieving [android.view.ViewGroup](../android/view/ViewGroup.md)'s layout_width and layout_height attributes. This is only here for performance reasons; applications should use [getDimensionPixelSize](../android/content/res/TypedArray.md)).
+Special version of [getDimensionPixelSize](TypedArray.md))for retrieving [android.view.ViewGroup](../android.view/ViewGroup.md)'s layout_width and layout_height attributes. This is only here for performance reasons; applications should use [getDimensionPixelSize](TypedArray.md)).
 
 | Parameters ||
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -533,7 +533,7 @@ open fun getLayoutDimension(
 ): Int
 ```
 
-Special version of [getDimensionPixelSize](../android/content/res/TypedArray.md))for retrieving [android.view.ViewGroup](../android/view/ViewGroup.md)'s layout_width and layout_height attributes. This is only here for performance reasons; applications should use [getDimensionPixelSize](../android/content/res/TypedArray.md)).
+Special version of [getDimensionPixelSize](TypedArray.md))for retrieving [android.view.ViewGroup](../android.view/ViewGroup.md)'s layout_width and layout_height attributes. This is only here for performance reasons; applications should use [getDimensionPixelSize](TypedArray.md)).
 
 This method will throw an exception if the attribute is defined but is not a dimension or integer (enum).
 
@@ -602,7 +602,7 @@ open fun getResourceId(
 ): Int
 ```
 
-Retrieves the resource identifier for the attribute at index. Note that attribute resource as resolved when the overall [TypedArray](../android/content/res/TypedArray.md) object is retrieved. As a result, this function will return the resource identifier of the final resource value that was found,*not*necessarily the original resource that was specified by the attribute.
+Retrieves the resource identifier for the attribute at index. Note that attribute resource as resolved when the overall [TypedArray](TypedArray.md) object is retrieved. As a result, this function will return the resource identifier of the final resource value that was found,*not*necessarily the original resource that was specified by the attribute.
 
 | Parameters ||
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
@@ -642,7 +642,7 @@ open fun getSourceResourceId(
 ): Int
 ```
 
-Returns the resource ID of the style or layout against which the specified attribute was resolved, otherwise returns defValue. For example, if you we resolving two attributes`android:attribute1`and`android:attribute2`and you were inflating a [android.view.View](../android/view/View.md) from`layout/my_layout.xml`: 
+Returns the resource ID of the style or layout against which the specified attribute was resolved, otherwise returns defValue. For example, if you we resolving two attributes`android:attribute1`and`android:attribute2`and you were inflating a [android.view.View](../android.view/View.md) from`layout/my_layout.xml`: 
 
 ```kotlin
 <View
@@ -660,7 +660,7 @@ and`@style/viewStyle`is:
       <style/>
   
 ```
-then resolved [TypedArray](../android/content/res/TypedArray.md) will have values that return source resource ID of`R.layout.my_layout`for`android:attribute1`and`R.style.viewStyle`for`android:attribute2`.
+then resolved [TypedArray](TypedArray.md) will have values that return source resource ID of`R.layout.my_layout`for`android:attribute1`and`R.style.viewStyle`for`android:attribute2`.
 
 <br />
 
@@ -733,7 +733,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun getTextArray(index: Int): Array<CharSequence!>!
 ```
 
-Retrieve the CharSequence\[\] for the attribute at index. This gets the resource ID of the selected attribute, and uses [Resources.getTextArray](../android/content/res/Resources.md))of the owning Resources object to retrieve its String\[\].
+Retrieve the CharSequence\[\] for the attribute at index. This gets the resource ID of the selected attribute, and uses [Resources.getTextArray](Resources.md))of the owning Resources object to retrieve its String\[\].
 
 This method will throw an exception if the attribute is defined but is not a text array resource.
 
@@ -787,7 +787,7 @@ Retrieve the raw TypedValue for the attribute at index.
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Index of attribute to retrieve. |
-| `outValue` | [TypedValue](../android/util/TypedValue.md)!:TypedValue object in which to place the attribute's data. |
+| `outValue` | [TypedValue](../android.util/TypedValue.md)!:TypedValue object in which to place the attribute's data. |
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------------------------------------------------|
@@ -865,7 +865,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun peekValue(index: Int): TypedValue!
 ```
 
-Retrieve the raw TypedValue for the attribute at index and return a temporary object holding its data. This object is only valid until the next call on to [TypedArray](../android/content/res/TypedArray.md).
+Retrieve the raw TypedValue for the attribute at index and return a temporary object holding its data. This object is only valid until the next call on to [TypedArray](TypedArray.md).
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------|
@@ -873,7 +873,7 @@ Retrieve the raw TypedValue for the attribute at index and return a temporary ob
 
 | Return ||
 |---------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [TypedValue](../android/util/TypedValue.md)! | Returns a TypedValue object if the attribute is defined, containing its data; otherwise returns null. (You will not receive a TypedValue whose type is TYPE_NULL.) |
+| [TypedValue](../android.util/TypedValue.md)! | Returns a TypedValue object if the attribute is defined, containing its data; otherwise returns null. (You will not receive a TypedValue whose type is TYPE_NULL.) |
 
 | Exceptions ||
 |------------------------------|----------------------------------------------|

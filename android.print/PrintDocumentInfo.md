@@ -4,7 +4,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 
 # PrintDocumentInfo
 
-Kotlin| [Java](../android/print/PrintDocumentInfo.md) 
+Kotlin| [Java](PrintDocumentInfo.md) 
 | --- | --- |
 
 ```
@@ -13,11 +13,11 @@ class PrintDocumentInfo : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.print.PrintDocumentInfo](../android/print/PrintDocumentInfo.md) |
+| ↳ | [android.print.PrintDocumentInfo](PrintDocumentInfo.md) |
 
 This class encapsulates information about a document for printing purposes. This meta-data is used by the platform and print services, components that interact with printers. For example, this class contains the number of pages contained in the document it describes and this number of pages is shown to the user allowing them to select the range to print. Also a print service may optimize the printing process based on the content type, such as document or photo.
 
-Instances of this class are created by the printing application and passed to the [PrintDocumentInfo, boolean)](../android/print/PrintDocumentAdapter.LayoutResultCallback.md))callback after successfully laying out the content which is performed in [PrintDocumentAdapter.LayoutResultCallback, android.os.Bundle)](../android/print/PrintDocumentAdapter.md)).
+Instances of this class are created by the printing application and passed to the [PrintDocumentInfo, boolean)](../android/print/PrintDocumentAdapter.LayoutResultCallback.md))callback after successfully laying out the content which is performed in [PrintDocumentAdapter.LayoutResultCallback, android.os.Bundle)](PrintDocumentAdapter.md)).
 
 An example usage looks like this: 
 
@@ -52,38 +52,38 @@ An example usage looks like this:
 
 | Nested classes ||
 |---|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](../android/print/PrintDocumentInfo.Builder.md) Builder for creating a [PrintDocumentInfo](../android/print/PrintDocumentInfo.md). |
+| | [Builder](../android/print/PrintDocumentInfo.Builder.md) Builder for creating a [PrintDocumentInfo](PrintDocumentInfo.md). |
 
 | Constants ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENT_TYPE_DOCUMENT](../android/print/PrintDocumentInfo.md) Content type: document. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENT_TYPE_PHOTO](../android/print/PrintDocumentInfo.md) Content type: photo. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENT_TYPE_UNKNOWN](../android/print/PrintDocumentInfo.md) Content type: unknown. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENT_TYPE_DOCUMENT](PrintDocumentInfo.md) Content type: document. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENT_TYPE_PHOTO](PrintDocumentInfo.md) Content type: photo. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENT_TYPE_UNKNOWN](PrintDocumentInfo.md) Content type: unknown. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PAGE_COUNT_UNKNOWN](../android/print/PrintDocumentInfo.md) Constant for unknown page count. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PAGE_COUNT_UNKNOWN](PrintDocumentInfo.md) Constant for unknown page count. |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android.os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android.os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android.os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/print/PrintDocumentInfo.md))`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/print/PrintDocumentInfo.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getContentType](../android/print/PrintDocumentInfo.md))`()` Gets the content type. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](PrintDocumentInfo.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](PrintDocumentInfo.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getContentType](PrintDocumentInfo.md))`()` Gets the content type. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getDataSize](../android/print/PrintDocumentInfo.md))`()` Gets the document data size in bytes. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getName](../android/print/PrintDocumentInfo.md))`()` Gets the document name. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPageCount](../android/print/PrintDocumentInfo.md))`()` Gets the total number of pages. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getDataSize](PrintDocumentInfo.md))`()` Gets the document data size in bytes. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getName](PrintDocumentInfo.md))`()` Gets the document name. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPageCount](PrintDocumentInfo.md))`()` Gets the total number of pages. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/print/PrintDocumentInfo.md))`()` <br /> |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/print/PrintDocumentInfo.md))`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/print/PrintDocumentInfo.md))`(`parcel:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](PrintDocumentInfo.md))`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](PrintDocumentInfo.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](PrintDocumentInfo.md))`(`parcel:` ` [Parcel](../android.os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
 
 | Properties ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [PrintDocumentInfo](../android/print/PrintDocumentInfo.md)!\> | [CREATOR](../android/print/PrintDocumentInfo.md) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [PrintDocumentInfo](PrintDocumentInfo.md)!\> | [CREATOR](PrintDocumentInfo.md) <br /> |
 
 ## Constants
 
@@ -151,7 +151,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) |
 
 ### equals
 
@@ -197,9 +197,9 @@ Gets the content type.
 
 **See Also**
 
-- [#CONTENT_TYPE_UNKNOWN](../android/print/PrintDocumentInfo.md)
-- [#CONTENT_TYPE_DOCUMENT](../android/print/PrintDocumentInfo.md)
-- [#CONTENT_TYPE_PHOTO](../android/print/PrintDocumentInfo.md) 
+- [#CONTENT_TYPE_UNKNOWN](PrintDocumentInfo.md)
+- [#CONTENT_TYPE_DOCUMENT](PrintDocumentInfo.md)
+- [#CONTENT_TYPE_PHOTO](PrintDocumentInfo.md) 
 
 ### getDataSize
 
@@ -245,7 +245,7 @@ Gets the total number of pages.
 
 **See Also**
 
-- [#PAGE_COUNT_UNKNOWN](../android/print/PrintDocumentInfo.md) 
+- [#PAGE_COUNT_UNKNOWN](PrintDocumentInfo.md) 
 
 ### hashCode
 
@@ -285,7 +285,7 @@ fun writeToParcel(
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `dest` | The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

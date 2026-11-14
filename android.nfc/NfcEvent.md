@@ -4,7 +4,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 
 # NfcEvent
 
-Kotlin| [Java](../android/nfc/NfcEvent.md) 
+Kotlin| [Java](NfcEvent.md) 
 | --- | --- |
 
 ```
@@ -13,13 +13,13 @@ class NfcEvent
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.nfc.NfcEvent](../android/nfc/NfcEvent.md) |
+| ↳ | [android.nfc.NfcEvent](NfcEvent.md) |
 
 Wraps information associated with any NFC event.
 
 Immutable object, with direct access to the (final) fields.
 
-An [NfcEvent](../android/nfc/NfcEvent.md) object is usually included in callbacks from [NfcAdapter](../android/nfc/NfcAdapter.md). Check the documentation of the callback to see which fields may be set.
+An [NfcEvent](NfcEvent.md) object is usually included in callbacks from [NfcAdapter](NfcAdapter.md). Check the documentation of the callback to see which fields may be set.
 
 This wrapper object is used (instead of parameters in the callback) because it allows new fields to be added without breaking API compatibility.
 
@@ -27,9 +27,9 @@ This wrapper object is used (instead of parameters in the callback) because it a
 
 | Properties ||
 |--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [NfcAdapter](../android/nfc/NfcAdapter.md)! | [nfcAdapter](../android/nfc/NfcEvent.md) The [NfcAdapter](../android/nfc/NfcAdapter.md) associated with the NFC event. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [peerLlcpMajorVersion](../android/nfc/NfcEvent.md) The major LLCP version number of the peer associated with the NFC event. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [peerLlcpMinorVersion](../android/nfc/NfcEvent.md) The minor LLCP version number of the peer associated with the NFC event. |
+| [NfcAdapter](NfcAdapter.md)! | [nfcAdapter](NfcEvent.md) The [NfcAdapter](NfcAdapter.md) associated with the NFC event. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [peerLlcpMajorVersion](NfcEvent.md) The major LLCP version number of the peer associated with the NFC event. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [peerLlcpMinorVersion](NfcEvent.md) The minor LLCP version number of the peer associated with the NFC event. |
 | --- | --- |
 
 ## Properties
@@ -42,7 +42,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 val nfcAdapter: NfcAdapter!
 ```
 
-The [NfcAdapter](../android/nfc/NfcAdapter.md) associated with the NFC event. 
+The [NfcAdapter](NfcAdapter.md) associated with the NFC event. 
 
 ### peerLlcpMajorVersion
 

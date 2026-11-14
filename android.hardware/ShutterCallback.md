@@ -16,7 +16,7 @@ interface ShutterCallback
 
 | **This interface was deprecated in API level 21.**
 |
-| We recommend using the new [android.hardware.camera2](../android/hardware/camera2/_package.md) API for new applications.
+| We recommend using the new [android.hardware.camera2](../android.hardware.camera2/_package.md) API for new applications.
 
 Callback interface used to signal the moment of actual image capture.
 

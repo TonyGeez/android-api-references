@@ -5,7 +5,7 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 
 # ScriptIntrinsicHistogram
 
-Kotlin| [Java](../android/renderscript/ScriptIntrinsicHistogram.md) 
+Kotlin| [Java](ScriptIntrinsicHistogram.md) 
 | --- | --- |
 
 ```
@@ -14,11 +14,11 @@ class ScriptIntrinsicHistogram : ScriptIntrinsic
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.renderscript.BaseObj](../android/renderscript/BaseObj.md) ||||
-| | ↳ | [android.renderscript.Script](../android/renderscript/Script.md) |||
-| | | ↳ | [android.renderscript.ScriptIntrinsic](../android/renderscript/ScriptIntrinsic.md) ||
+| ↳ | [android.renderscript.BaseObj](BaseObj.md) ||||
+| | ↳ | [android.renderscript.Script](Script.md) |||
+| | | ↳ | [android.renderscript.ScriptIntrinsic](ScriptIntrinsic.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.renderscript.ScriptIntrinsicHistogram](../android/renderscript/ScriptIntrinsicHistogram.md) |
+| | | | ↳ | [android.renderscript.ScriptIntrinsicHistogram](ScriptIntrinsicHistogram.md) |
 
 | **This class was deprecated in API level 31.**
 |
@@ -30,17 +30,17 @@ Intrinsic Histogram filter.
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [ScriptIntrinsicHistogram](../android/renderscript/ScriptIntrinsicHistogram.md)! | [create](../android/renderscript/ScriptIntrinsicHistogram.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`, `e:` ` [Element](../android/renderscript/Element.md)!`)` Create an intrinsic for calculating the histogram of an uchar or uchar4 image. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](../android/renderscript/ScriptIntrinsicHistogram.md))`(`ain:` ` [Allocation](../android/renderscript/Allocation.md)!`)` Process an input buffer and place the histogram into the output allocation. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](../android/renderscript/ScriptIntrinsicHistogram.md))`(`ain:` ` [Allocation](../android/renderscript/Allocation.md)!`, `opt:` ` [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!`)` Process an input buffer and place the histogram into the output allocation. |
+| static [ScriptIntrinsicHistogram](ScriptIntrinsicHistogram.md)! | [create](ScriptIntrinsicHistogram.md))`(`rs:` ` [RenderScript](RenderScript.md)!`, `e:` ` [Element](Element.md)!`)` Create an intrinsic for calculating the histogram of an uchar or uchar4 image. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](ScriptIntrinsicHistogram.md))`(`ain:` ` [Allocation](Allocation.md)!`)` Process an input buffer and place the histogram into the output allocation. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](ScriptIntrinsicHistogram.md))`(`ain:` ` [Allocation](Allocation.md)!`, `opt:` ` [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!`)` Process an input buffer and place the histogram into the output allocation. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach_Dot](../android/renderscript/ScriptIntrinsicHistogram.md))`(`ain:` ` [Allocation](../android/renderscript/Allocation.md)!`)` Process an input buffer and place the histogram into the output allocation. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach_Dot](../android/renderscript/ScriptIntrinsicHistogram.md))`(`ain:` ` [Allocation](../android/renderscript/Allocation.md)!`, `opt:` ` [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!`)` Process an input buffer and place the histogram into the output allocation. |
-| [Script.FieldID](../android/renderscript/Script.FieldID.md)! | [getFieldID_Input](../android/renderscript/ScriptIntrinsicHistogram.md))`()` Get a FieldID for the input field of this intrinsic. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach_Dot](ScriptIntrinsicHistogram.md))`(`ain:` ` [Allocation](Allocation.md)!`)` Process an input buffer and place the histogram into the output allocation. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach_Dot](ScriptIntrinsicHistogram.md))`(`ain:` ` [Allocation](Allocation.md)!`, `opt:` ` [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!`)` Process an input buffer and place the histogram into the output allocation. |
+| [Script.FieldID](../android/renderscript/Script.FieldID.md)! | [getFieldID_Input](ScriptIntrinsicHistogram.md))`()` Get a FieldID for the input field of this intrinsic. |
 | --- | --- |
-| [Script.KernelID](../android/renderscript/Script.KernelID.md)! | [getKernelID_Separate](../android/renderscript/ScriptIntrinsicHistogram.md))`()` Get a KernelID for this intrinsic kernel. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDotCoefficients](../android/renderscript/ScriptIntrinsicHistogram.md))`(`r:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `g:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `b:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `a:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Set the coefficients used for the RGBA to Luminocity calculation. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOutput](../android/renderscript/ScriptIntrinsicHistogram.md))`(`aout:` ` [Allocation](../android/renderscript/Allocation.md)!`)` Set the output of the histogram. |
+| [Script.KernelID](../android/renderscript/Script.KernelID.md)! | [getKernelID_Separate](ScriptIntrinsicHistogram.md))`()` Get a KernelID for this intrinsic kernel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDotCoefficients](ScriptIntrinsicHistogram.md))`(`r:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `g:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `b:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `a:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Set the coefficients used for the RGBA to Luminocity calculation. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOutput](ScriptIntrinsicHistogram.md))`(`aout:` ` [Allocation](Allocation.md)!`)` Set the output of the histogram. |
 | --- | --- |
 
 ## Public methods
@@ -58,16 +58,16 @@ static fun create(
 
 **Deprecated:** *Deprecated in Java.*
 
-Create an intrinsic for calculating the histogram of an uchar or uchar4 image. Supported elements types are [Element.U8_4](../android/renderscript/Element.md)), [Element.U8_3](../android/renderscript/Element.md)), [Element.U8_2](../android/renderscript/Element.md)), [Element.U8](../android/renderscript/Element.md))
+Create an intrinsic for calculating the histogram of an uchar or uchar4 image. Supported elements types are [Element.U8_4](Element.md)), [Element.U8_3](Element.md)), [Element.U8_2](Element.md)), [Element.U8](Element.md))
 
 | Parameters ||
 |------|----------------------------------------------------------------------------------------------------------------------------|
-| `rs` | [RenderScript](../android/renderscript/RenderScript.md)!:The RenderScript context |
-| `e` | [Element](../android/renderscript/Element.md)!:Element type for inputs |
+| `rs` | [RenderScript](RenderScript.md)!:The RenderScript context |
+| `e` | [Element](Element.md)!:Element type for inputs |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------|--------------------------|
-| [ScriptIntrinsicHistogram](../android/renderscript/ScriptIntrinsicHistogram.md)! | ScriptIntrinsicHistogram |
+| [ScriptIntrinsicHistogram](ScriptIntrinsicHistogram.md)! | ScriptIntrinsicHistogram |
 
 ### forEach
 
@@ -83,7 +83,7 @@ Process an input buffer and place the histogram into the output allocation. The 
 
 | Parameters ||
 |-------|---------------------------------------------------------------------------------------------------------------|
-| `ain` | [Allocation](../android/renderscript/Allocation.md)!:The input image |
+| `ain` | [Allocation](Allocation.md)!:The input image |
 
 ### forEach
 
@@ -103,7 +103,7 @@ Process an input buffer and place the histogram into the output allocation. The 
 
 | Parameters ||
 |-------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| `ain` | [Allocation](../android/renderscript/Allocation.md)!:The input image |
+| `ain` | [Allocation](Allocation.md)!:The input image |
 | `opt` | [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!:LaunchOptions for clipping |
 
 ### forEach_Dot
@@ -120,7 +120,7 @@ Process an input buffer and place the histogram into the output allocation. The 
 
 | Parameters ||
 |-------|---------------------------------------------------------------------------------------------------------------|
-| `ain` | [Allocation](../android/renderscript/Allocation.md)!:The input image |
+| `ain` | [Allocation](Allocation.md)!:The input image |
 
 ### forEach_Dot
 
@@ -140,7 +140,7 @@ Process an input buffer and place the histogram into the output allocation. The 
 
 | Parameters ||
 |-------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| `ain` | [Allocation](../android/renderscript/Allocation.md)!:The input image |
+| `ain` | [Allocation](Allocation.md)!:The input image |
 | `opt` | [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!:LaunchOptions for clipping |
 
 ### getFieldID_Input
@@ -214,4 +214,4 @@ Set the output of the histogram. 32 bit integer types are supported.
 
 | Parameters ||
 |--------|---------------------------------------------------------------------------------------------------------------------|
-| `aout` | [Allocation](../android/renderscript/Allocation.md)!:The output allocation |
+| `aout` | [Allocation](Allocation.md)!:The output allocation |

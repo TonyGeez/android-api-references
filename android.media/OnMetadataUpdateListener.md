@@ -18,7 +18,7 @@ interface OnMetadataUpdateListener
 |
 | Deprecated in Java.
 
-Interface definition for a callback to be invoked when one of the metadata values has been updated. Implement this interface to receive metadata updates after registering your listener through [RemoteControlClient.setMetadataUpdateListener(OnMetadataUpdateListener)](../android/media/RemoteControlClient.md)).
+Interface definition for a callback to be invoked when one of the metadata values has been updated. Implement this interface to receive metadata updates after registering your listener through [RemoteControlClient.setMetadataUpdateListener(OnMetadataUpdateListener)](RemoteControlClient.md)).
 
 ## Summary
 

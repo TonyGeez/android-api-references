@@ -10,29 +10,29 @@ class PosixFilePermission
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.nio.file.attribute.PosixFilePermission](../java/nio/file/attribute/PosixFilePermission.md)\> ||
-| | ↳ | [java.nio.file.attribute.PosixFilePermission](../java/nio/file/attribute/PosixFilePermission.md) |
+| ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.nio.file.attribute.PosixFilePermission](PosixFilePermission.md)\> ||
+| | ↳ | [java.nio.file.attribute.PosixFilePermission](PosixFilePermission.md) |
 
-| Known Direct Subclasses [PosixFilePermission.GROUP_EXECUTE](../java/nio/file/attribute/PosixFilePermission.md), [PosixFilePermission.GROUP_READ](../java/nio/file/attribute/PosixFilePermission.md), [PosixFilePermission.GROUP_WRITE](../java/nio/file/attribute/PosixFilePermission.md), [PosixFilePermission.OTHERS_EXECUTE](../java/nio/file/attribute/PosixFilePermission.md), [PosixFilePermission.OTHERS_READ](../java/nio/file/attribute/PosixFilePermission.md), [PosixFilePermission.OTHERS_WRITE](../java/nio/file/attribute/PosixFilePermission.md), [PosixFilePermission.OWNER_EXECUTE](../java/nio/file/attribute/PosixFilePermission.md), [PosixFilePermission.OWNER_READ](../java/nio/file/attribute/PosixFilePermission.md), [PosixFilePermission.OWNER_WRITE](../java/nio/file/attribute/PosixFilePermission.md) |------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------| | [PosixFilePermission.GROUP_EXECUTE](../java/nio/file/attribute/PosixFilePermission.md) | Execute/search permission, group. | | [PosixFilePermission.GROUP_READ](../java/nio/file/attribute/PosixFilePermission.md) | Read permission, group. | | [PosixFilePermission.GROUP_WRITE](../java/nio/file/attribute/PosixFilePermission.md) | Write permission, group. | | [PosixFilePermission.OTHERS_EXECUTE](../java/nio/file/attribute/PosixFilePermission.md) | Execute/search permission, others. | | [PosixFilePermission.OTHERS_READ](../java/nio/file/attribute/PosixFilePermission.md) | Read permission, others. | | [PosixFilePermission.OTHERS_WRITE](../java/nio/file/attribute/PosixFilePermission.md) | Write permission, others. | | [PosixFilePermission.OWNER_EXECUTE](../java/nio/file/attribute/PosixFilePermission.md) | Execute/search permission, owner. | | [PosixFilePermission.OWNER_READ](../java/nio/file/attribute/PosixFilePermission.md) | Read permission, owner. | | [PosixFilePermission.OWNER_WRITE](../java/nio/file/attribute/PosixFilePermission.md) | Write permission, owner. | |
+| Known Direct Subclasses [PosixFilePermission.GROUP_EXECUTE](PosixFilePermission.md), [PosixFilePermission.GROUP_READ](PosixFilePermission.md), [PosixFilePermission.GROUP_WRITE](PosixFilePermission.md), [PosixFilePermission.OTHERS_EXECUTE](PosixFilePermission.md), [PosixFilePermission.OTHERS_READ](PosixFilePermission.md), [PosixFilePermission.OTHERS_WRITE](PosixFilePermission.md), [PosixFilePermission.OWNER_EXECUTE](PosixFilePermission.md), [PosixFilePermission.OWNER_READ](PosixFilePermission.md), [PosixFilePermission.OWNER_WRITE](PosixFilePermission.md) |------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------| | [PosixFilePermission.GROUP_EXECUTE](PosixFilePermission.md) | Execute/search permission, group. | | [PosixFilePermission.GROUP_READ](PosixFilePermission.md) | Read permission, group. | | [PosixFilePermission.GROUP_WRITE](PosixFilePermission.md) | Write permission, group. | | [PosixFilePermission.OTHERS_EXECUTE](PosixFilePermission.md) | Execute/search permission, others. | | [PosixFilePermission.OTHERS_READ](PosixFilePermission.md) | Read permission, others. | | [PosixFilePermission.OTHERS_WRITE](PosixFilePermission.md) | Write permission, others. | | [PosixFilePermission.OWNER_EXECUTE](PosixFilePermission.md) | Execute/search permission, owner. | | [PosixFilePermission.OWNER_READ](PosixFilePermission.md) | Read permission, owner. | | [PosixFilePermission.OWNER_WRITE](PosixFilePermission.md) | Write permission, owner. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-Defines the bits for use with the [permissions](../java/nio/file/attribute/PosixFileAttributes.md))attribute.
+Defines the bits for use with the [permissions](PosixFileAttributes.md))attribute.
 
-The [PosixFilePermissions](../java/nio/file/attribute/PosixFilePermissions.md) class defines methods for manipulating set of permissions.
+The [PosixFilePermissions](PosixFilePermissions.md) class defines methods for manipulating set of permissions.
 
 ## Summary
 
 | Enum values ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [GROUP_EXECUTE](../java/nio/file/attribute/PosixFilePermission.md) Execute/search permission, group. |
-| [GROUP_READ](../java/nio/file/attribute/PosixFilePermission.md) Read permission, group. |
-| [GROUP_WRITE](../java/nio/file/attribute/PosixFilePermission.md) Write permission, group. |
-| [OTHERS_EXECUTE](../java/nio/file/attribute/PosixFilePermission.md) Execute/search permission, others. |
-| [OTHERS_READ](../java/nio/file/attribute/PosixFilePermission.md) Read permission, others. |
-| [OTHERS_WRITE](../java/nio/file/attribute/PosixFilePermission.md) Write permission, others. |
-| [OWNER_EXECUTE](../java/nio/file/attribute/PosixFilePermission.md) Execute/search permission, owner. |
-| [OWNER_READ](../java/nio/file/attribute/PosixFilePermission.md) Read permission, owner. |
-| [OWNER_WRITE](../java/nio/file/attribute/PosixFilePermission.md) Write permission, owner. |
+| [GROUP_EXECUTE](PosixFilePermission.md) Execute/search permission, group. |
+| [GROUP_READ](PosixFilePermission.md) Read permission, group. |
+| [GROUP_WRITE](PosixFilePermission.md) Write permission, group. |
+| [OTHERS_EXECUTE](PosixFilePermission.md) Execute/search permission, others. |
+| [OTHERS_READ](PosixFilePermission.md) Read permission, others. |
+| [OTHERS_WRITE](PosixFilePermission.md) Write permission, others. |
+| [OWNER_EXECUTE](PosixFilePermission.md) Execute/search permission, owner. |
+| [OWNER_READ](PosixFilePermission.md) Read permission, owner. |
+| [OWNER_WRITE](PosixFilePermission.md) Write permission, owner. |
 
 ## Enum values
 

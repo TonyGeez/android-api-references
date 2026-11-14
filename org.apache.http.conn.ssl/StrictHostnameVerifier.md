@@ -9,8 +9,8 @@ open class StrictHostnameVerifier : AbstractVerifier
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [org.apache.http.conn.ssl.AbstractVerifier](../org/apache/http/conn/ssl/AbstractVerifier.md) ||
-| | ↳ | [org.apache.http.conn.ssl.StrictHostnameVerifier](../org/apache/http/conn/ssl/StrictHostnameVerifier.md) |
+| ↳ | [org.apache.http.conn.ssl.AbstractVerifier](AbstractVerifier.md) ||
+| | ↳ | [org.apache.http.conn.ssl.StrictHostnameVerifier](StrictHostnameVerifier.md) |
 
 | **This class was deprecated in API level 22.**
 |

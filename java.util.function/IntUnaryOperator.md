@@ -8,21 +8,21 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 @FunctionalInterface interface IntUnaryOperator
 ```
 
-| [java.util.function.IntUnaryOperator](../java/util/function/IntUnaryOperator.md) |
+| [java.util.function.IntUnaryOperator](IntUnaryOperator.md) |
 
-Represents an operation on a single`int`-valued operand that produces an`int`-valued result. This is the primitive type specialization of [UnaryOperator](../java/util/function/UnaryOperator.md) for`int`.
+Represents an operation on a single`int`-valued operand that produces an`int`-valued result. This is the primitive type specialization of [UnaryOperator](UnaryOperator.md) for`int`.
 
-This is a [functional interface](../java/util/function/_package.md) whose functional method is [applyAsInt(int)](../java/util/function/IntUnaryOperator.md)).
+This is a [functional interface](_package.md) whose functional method is [applyAsInt(int)](IntUnaryOperator.md)).
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [IntUnaryOperator](../java/util/function/IntUnaryOperator.md)! | [andThen](../java/util/function/IntUnaryOperator.md))`(`after:` ` [IntUnaryOperator](../java/util/function/IntUnaryOperator.md)!`)` Returns a composed operator that first applies this operator to its input, and then applies the`after`operator to the result. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [applyAsInt](../java/util/function/IntUnaryOperator.md))`(`operand:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Applies this operator to the given operand. |
-| open [IntUnaryOperator](../java/util/function/IntUnaryOperator.md)! | [compose](../java/util/function/IntUnaryOperator.md))`(`before:` ` [IntUnaryOperator](../java/util/function/IntUnaryOperator.md)!`)` Returns a composed operator that first applies the`before`operator to its input, and then applies this operator to the result. |
+| open [IntUnaryOperator](IntUnaryOperator.md)! | [andThen](IntUnaryOperator.md))`(`after:` ` [IntUnaryOperator](IntUnaryOperator.md)!`)` Returns a composed operator that first applies this operator to its input, and then applies the`after`operator to the result. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [applyAsInt](IntUnaryOperator.md))`(`operand:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Applies this operator to the given operand. |
+| open [IntUnaryOperator](IntUnaryOperator.md)! | [compose](IntUnaryOperator.md))`(`before:` ` [IntUnaryOperator](IntUnaryOperator.md)!`)` Returns a composed operator that first applies the`before`operator to its input, and then applies this operator to the result. |
 | --- | --- |
-| openstatic [IntUnaryOperator](../java/util/function/IntUnaryOperator.md)! | [identity](../java/util/function/IntUnaryOperator.md))`()` Returns a unary operator that always returns its input argument. |
+| openstatic [IntUnaryOperator](IntUnaryOperator.md)! | [identity](IntUnaryOperator.md))`()` Returns a unary operator that always returns its input argument. |
 
 ## Public methods
 
@@ -38,11 +38,11 @@ Returns a composed operator that first applies this operator to its input, and t
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `after` | [IntUnaryOperator](../java/util/function/IntUnaryOperator.md)!:the operator to apply after this operator is applied |
+| `after` | [IntUnaryOperator](IntUnaryOperator.md)!:the operator to apply after this operator is applied |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
-| [IntUnaryOperator](../java/util/function/IntUnaryOperator.md)! | a composed operator that first applies this operator and then applies the`after`operator |
+| [IntUnaryOperator](IntUnaryOperator.md)! | a composed operator that first applies this operator and then applies the`after`operator |
 
 | Exceptions ||
 |----------------------------------|------------------|
@@ -50,7 +50,7 @@ Returns a composed operator that first applies this operator to its input, and t
 
 **See Also**
 
-- [#compose(IntUnaryOperator)](../java/util/function/IntUnaryOperator.md)) 
+- [#compose(IntUnaryOperator)](IntUnaryOperator.md)) 
 
 ### applyAsInt
 
@@ -82,11 +82,11 @@ Returns a composed operator that first applies the`before`operator to its input,
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `before` | [IntUnaryOperator](../java/util/function/IntUnaryOperator.md)!:the operator to apply before this operator is applied |
+| `before` | [IntUnaryOperator](IntUnaryOperator.md)!:the operator to apply before this operator is applied |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
-| [IntUnaryOperator](../java/util/function/IntUnaryOperator.md)! | a composed operator that first applies the`before`operator and then applies this operator |
+| [IntUnaryOperator](IntUnaryOperator.md)! | a composed operator that first applies the`before`operator and then applies this operator |
 
 | Exceptions ||
 |----------------------------------|-------------------|
@@ -94,7 +94,7 @@ Returns a composed operator that first applies the`before`operator to its input,
 
 **See Also**
 
-- [#andThen(IntUnaryOperator)](../java/util/function/IntUnaryOperator.md)) 
+- [#andThen(IntUnaryOperator)](IntUnaryOperator.md)) 
 
 ### identity
 
@@ -108,4 +108,4 @@ Returns a unary operator that always returns its input argument.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| [IntUnaryOperator](../java/util/function/IntUnaryOperator.md)! | a unary operator that always returns its input argument |
+| [IntUnaryOperator](IntUnaryOperator.md)! | a unary operator that always returns its input argument |

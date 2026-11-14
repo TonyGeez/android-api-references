@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # WebViewDatabase
 
-Kotlin| [Java](../android/webkit/WebViewDatabase.md) 
+Kotlin| [Java](WebViewDatabase.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ abstract class WebViewDatabase
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.webkit.WebViewDatabase](../android/webkit/WebViewDatabase.md) |
+| ↳ | [android.webkit.WebViewDatabase](WebViewDatabase.md) |
 
 This class allows developers to determine whether any WebView used in the application has stored any of the following types of browsing data and to clear any such stored data for all WebViews in the application.
 
@@ -27,21 +27,21 @@ This class allows developers to determine whether any WebView used in the applic
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------|---|
-| [WebViewDatabase](../android/webkit/WebViewDatabase.md))`()` <br /> |
+| [WebViewDatabase](WebViewDatabase.md))`()` <br /> |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearFormData](../android/webkit/WebViewDatabase.md))`()` Clears any saved data for web forms. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearHttpAuthUsernamePassword](../android/webkit/WebViewDatabase.md))`()` Clears any saved credentials for HTTP authentication. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearUsernamePassword](../android/webkit/WebViewDatabase.md))`()` Clears any saved username/password pairs for web forms. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearFormData](WebViewDatabase.md))`()` Clears any saved data for web forms. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearHttpAuthUsernamePassword](WebViewDatabase.md))`()` Clears any saved credentials for HTTP authentication. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearUsernamePassword](WebViewDatabase.md))`()` Clears any saved username/password pairs for web forms. |
 | --- | --- |
-| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | [getHttpAuthUsernamePassword](../android/webkit/WebViewDatabase.md))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `realm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Retrieves HTTP authentication credentials for a given host and realm from the [WebViewDatabase](../android/webkit/WebViewDatabase.md) instance. |
-| openstatic [WebViewDatabase](../android/webkit/WebViewDatabase.md)! | [getInstance](../android/webkit/WebViewDatabase.md))`(`context:` ` [Context](../android/content/Context.md)!`)` <br /> |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasFormData](../android/webkit/WebViewDatabase.md))`()` Gets whether there is any saved data for web forms. |
+| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | [getHttpAuthUsernamePassword](WebViewDatabase.md))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `realm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Retrieves HTTP authentication credentials for a given host and realm from the [WebViewDatabase](WebViewDatabase.md) instance. |
+| openstatic [WebViewDatabase](WebViewDatabase.md)! | [getInstance](WebViewDatabase.md))`(`context:` ` [Context](../android.content/Context.md)!`)` <br /> |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasFormData](WebViewDatabase.md))`()` Gets whether there is any saved data for web forms. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasHttpAuthUsernamePassword](../android/webkit/WebViewDatabase.md))`()` Gets whether there are any saved credentials for HTTP authentication. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasUsernamePassword](../android/webkit/WebViewDatabase.md))`()` Gets whether there are any saved username/password pairs for web forms. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setHttpAuthUsernamePassword](../android/webkit/WebViewDatabase.md))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `realm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `username:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `password:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Stores HTTP authentication credentials for a given host and realm to the [WebViewDatabase](../android/webkit/WebViewDatabase.md) instance. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasHttpAuthUsernamePassword](WebViewDatabase.md))`()` Gets whether there are any saved credentials for HTTP authentication. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasUsernamePassword](WebViewDatabase.md))`()` Gets whether there are any saved username/password pairs for web forms. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setHttpAuthUsernamePassword](WebViewDatabase.md))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `realm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `username:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `password:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Stores HTTP authentication credentials for a given host and realm to the [WebViewDatabase](WebViewDatabase.md) instance. |
 | --- | --- |
 
 ## Public constructors
@@ -54,7 +54,7 @@ Added in [API level 22](https://developer.android.com/guide/topics/manifest/uses
 WebViewDatabase()
 ```
 
-**Deprecated:** *This class should not be constructed by applications, use [getInstance(android.content.Context)](../android/webkit/WebViewDatabase.md))instead to fetch the singleton instance.*
+**Deprecated:** *This class should not be constructed by applications, use [getInstance(android.content.Context)](WebViewDatabase.md))instead to fetch the singleton instance.*
 
 ## Public methods
 
@@ -72,7 +72,7 @@ abstract fun clearFormData(): Unit
 Clears any saved data for web forms. 
 **See Also**
 
-- [#hasFormData](../android/webkit/WebViewDatabase.md)) 
+- [#hasFormData](WebViewDatabase.md)) 
 
 ### clearHttpAuthUsernamePassword
 
@@ -82,14 +82,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun clearHttpAuthUsernamePassword(): Unit
 ```
 
-Clears any saved credentials for HTTP authentication. This method only clears the username and password stored in WebViewDatabase instance. The username and password are not read from the [WebViewDatabase](../android/webkit/WebViewDatabase.md) during [WebViewClient.onReceivedHttpAuthRequest](../android/webkit/WebViewClient.md)). It is up to the app to do this or not.
+Clears any saved credentials for HTTP authentication. This method only clears the username and password stored in WebViewDatabase instance. The username and password are not read from the [WebViewDatabase](WebViewDatabase.md) during [WebViewClient.onReceivedHttpAuthRequest](WebViewClient.md)). It is up to the app to do this or not.
 
 The username and password used for http authentication might be cached in the network stack itself, and are not cleared when this method is called. WebView does not provide a special mechanism to clear HTTP authentication for implementing client logout. The client logout mechanism should be implemented by the Web site designer (such as server sending a HTTP 401 for invalidating credentials). 
 **See Also**
 
-- [#getHttpAuthUsernamePassword](../android/webkit/WebViewDatabase.md))
-- [#setHttpAuthUsernamePassword](../android/webkit/WebViewDatabase.md))
-- [#hasHttpAuthUsernamePassword](../android/webkit/WebViewDatabase.md)) 
+- [#getHttpAuthUsernamePassword](WebViewDatabase.md))
+- [#setHttpAuthUsernamePassword](WebViewDatabase.md))
+- [#hasHttpAuthUsernamePassword](WebViewDatabase.md)) 
 
 ### clearUsernamePassword
 
@@ -105,8 +105,8 @@ abstract fun clearUsernamePassword(): Unit
 Clears any saved username/password pairs for web forms. Note that these are unrelated to HTTP authentication credentials. 
 **See Also**
 
-- [android.webkit.WebView#savePassword](../android/webkit/WebView.md))
-- [#hasUsernamePassword](../android/webkit/WebViewDatabase.md)) 
+- [android.webkit.WebView#savePassword](WebView.md))
+- [#hasUsernamePassword](WebViewDatabase.md)) 
 
 ### getHttpAuthUsernamePassword
 
@@ -119,7 +119,7 @@ abstract fun getHttpAuthUsernamePassword(
 ): Array<String!>?
 ```
 
-Retrieves HTTP authentication credentials for a given host and realm from the [WebViewDatabase](../android/webkit/WebViewDatabase.md) instance.
+Retrieves HTTP authentication credentials for a given host and realm from the [WebViewDatabase](WebViewDatabase.md) instance.
 
 | Parameters ||
 |---------|----------------------------------------------------------------------------------------------------------------------------|
@@ -132,9 +132,9 @@ Retrieves HTTP authentication credentials for a given host and realm from the [W
 
 **See Also**
 
-- [#setHttpAuthUsernamePassword](../android/webkit/WebViewDatabase.md))
-- [#hasHttpAuthUsernamePassword](../android/webkit/WebViewDatabase.md))
-- [#clearHttpAuthUsernamePassword](../android/webkit/WebViewDatabase.md)) 
+- [#setHttpAuthUsernamePassword](WebViewDatabase.md))
+- [#hasHttpAuthUsernamePassword](WebViewDatabase.md))
+- [#clearHttpAuthUsernamePassword](WebViewDatabase.md)) 
 
 ### getInstance
 
@@ -163,7 +163,7 @@ Gets whether there is any saved data for web forms.
 
 **See Also**
 
-- [#clearFormData](../android/webkit/WebViewDatabase.md)) 
+- [#clearFormData](WebViewDatabase.md)) 
 
 ### hasHttpAuthUsernamePassword
 
@@ -181,9 +181,9 @@ Gets whether there are any saved credentials for HTTP authentication.
 
 **See Also**
 
-- [#getHttpAuthUsernamePassword](../android/webkit/WebViewDatabase.md))
-- [#setHttpAuthUsernamePassword](../android/webkit/WebViewDatabase.md))
-- [#clearHttpAuthUsernamePassword](../android/webkit/WebViewDatabase.md)) 
+- [#getHttpAuthUsernamePassword](WebViewDatabase.md))
+- [#setHttpAuthUsernamePassword](WebViewDatabase.md))
+- [#clearHttpAuthUsernamePassword](WebViewDatabase.md)) 
 
 ### hasUsernamePassword
 
@@ -204,8 +204,8 @@ Gets whether there are any saved username/password pairs for web forms. Note tha
 
 **See Also**
 
-- [android.webkit.WebView#savePassword](../android/webkit/WebView.md))
-- [#clearUsernamePassword](../android/webkit/WebViewDatabase.md)) 
+- [android.webkit.WebView#savePassword](WebView.md))
+- [#clearUsernamePassword](WebViewDatabase.md)) 
 
 ### setHttpAuthUsernamePassword
 
@@ -220,14 +220,14 @@ abstract fun setHttpAuthUsernamePassword(
 ): Unit
 ```
 
-Stores HTTP authentication credentials for a given host and realm to the [WebViewDatabase](../android/webkit/WebViewDatabase.md) instance.
+Stores HTTP authentication credentials for a given host and realm to the [WebViewDatabase](WebViewDatabase.md) instance.
 
-To use HTTP authentication, the embedder application has to implement [WebViewClient.onReceivedHttpAuthRequest](../android/webkit/WebViewClient.md)), and call [HttpAuthHandler.proceed](../android/webkit/HttpAuthHandler.md))with the correct username and password.
+To use HTTP authentication, the embedder application has to implement [WebViewClient.onReceivedHttpAuthRequest](WebViewClient.md)), and call [HttpAuthHandler.proceed](HttpAuthHandler.md))with the correct username and password.
 
-The embedder app can get the username and password any way it chooses, and does not have to use [WebViewDatabase](../android/webkit/WebViewDatabase.md).
+The embedder app can get the username and password any way it chooses, and does not have to use [WebViewDatabase](WebViewDatabase.md).
 
 Notes:
-- [WebViewDatabase](../android/webkit/WebViewDatabase.md) is provided only as a convenience to store and retrieve http authentication credentials. WebView does not read from it during HTTP authentication.
+- [WebViewDatabase](WebViewDatabase.md) is provided only as a convenience to store and retrieve http authentication credentials. WebView does not read from it during HTTP authentication.
 - WebView does not provide a special mechanism to clear HTTP authentication credentials for implementing client logout. The client logout mechanism should be implemented by the Web site designer (such as server sending a HTTP 401 for invalidating credentials).
 
 | Parameters ||
@@ -240,6 +240,6 @@ Notes:
 
 **See Also**
 
-- [#getHttpAuthUsernamePassword](../android/webkit/WebViewDatabase.md))
-- [#hasHttpAuthUsernamePassword](../android/webkit/WebViewDatabase.md))
-- [#clearHttpAuthUsernamePassword](../android/webkit/WebViewDatabase.md))
+- [#getHttpAuthUsernamePassword](WebViewDatabase.md))
+- [#hasHttpAuthUsernamePassword](WebViewDatabase.md))
+- [#clearHttpAuthUsernamePassword](WebViewDatabase.md))

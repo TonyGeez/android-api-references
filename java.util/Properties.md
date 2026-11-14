@@ -8,13 +8,13 @@ open class Properties : Hashtable<Any!, Any!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [java.util.Dictionary](../java/util/Dictionary.md)\<K, V\> |||
-| | ↳ | [java.util.Hashtable](../java/util/Hashtable.md)\< [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html), [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)\> ||
-| | | ↳ | [java.util.Properties](../java/util/Properties.md) |
+| ↳ | [java.util.Dictionary](Dictionary.md)\<K, V\> |||
+| | ↳ | [java.util.Hashtable](Hashtable.md)\< [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html), [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)\> ||
+| | | ↳ | [java.util.Properties](Properties.md) |
 | --- | --- | --- | --- |
 
-Known Direct Subclasses [Provider](../java/security/Provider.md) [Provider](../java/security/Provider.md) This class represents a "provider" for the Java Security API, where a provider implements some or all parts of Java Security.
-Known Indirect Subclasses [AuthProvider](../java/security/AuthProvider.md) [AuthProvider](../java/security/AuthProvider.md) Legacy security code; do not use.
+Known Direct Subclasses [Provider](../java.security/Provider.md) [Provider](../java.security/Provider.md) This class represents a "provider" for the Java Security API, where a provider implements some or all parts of Java Security.
+Known Indirect Subclasses [AuthProvider](../java.security/AuthProvider.md) [AuthProvider](../java.security/AuthProvider.md) Legacy security code; do not use.
 
 The `Properties` class represents a persistent set of properties. The `Properties` can be saved to a stream or loaded from a stream. Each key and its corresponding value in the property list is a string.
 
@@ -73,7 +73,7 @@ This class is thread-safe: multiple threads can share a single `Properties` obje
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Properties#containsKey(kotlin.Any)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Tests if the specified object is a key in this hashtable. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Properties#containsValue(kotlin.Any)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Returns true if this hashtable maps one or more keys to this value. |
-| open [Enumeration](../java/util/Enumeration.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/util/Properties#elements()()` Returns an enumeration of the values in this hashtable. |
+| open [Enumeration](Enumeration.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/util/Properties#elements()()` Returns an enumeration of the values in this hashtable. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Properties#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Compares the specified Object with this Map for equality, as per the definition in the Map interface. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Properties#forEach(java.util.function.BiConsumer)(action: https://developer.android.com/reference/kotlin/java/util/function/BiConsumer<in https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, in https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!>)` Performs the given action for each entry in this map until all entries have been processed or the action throws an exception. |
@@ -85,7 +85,7 @@ This class is thread-safe: multiple threads can share a single `Properties` obje
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/Properties#hashCode()()` Returns the hash code value for this Map as per the definition in the Map interface. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Properties#isEmpty()()` Tests if this hashtable maps no keys to values. |
-| open [Enumeration](../java/util/Enumeration.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/util/Properties#keys()()` Returns an enumeration of the keys in this hashtable. |
+| open [Enumeration](Enumeration.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/util/Properties#keys()()` Returns an enumeration of the keys in this hashtable. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Properties#list(java.io.PrintStream)(out: https://developer.android.com/reference/kotlin/java/io/PrintStream.html#!)` Prints this property list out to the specified output stream. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Properties#list(java.io.PrintWriter)(out: https://developer.android.com/reference/kotlin/java/io/PrintWriter.html#!)` Prints this property list out to the specified output stream. |
@@ -95,7 +95,7 @@ This class is thread-safe: multiple threads can share a single `Properties` obje
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Properties#loadFromXML(java.io.InputStream)(in: https://developer.android.com/reference/kotlin/java/io/InputStream.html#!)` Loads all of the properties represented by the XML document on the specified input stream into this properties table. |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? | `https://developer.android.com/reference/kotlin/java/util/Properties#merge(kotlin.Any,%20kotlin.Any,%20java.util.function.BiFunction)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html, remappingFunction: https://developer.android.com/reference/kotlin/java/util/function/BiFunction<in https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html, in https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html, *>)` If the specified key is not already associated with a value or is associated with null, associates it with the given non-null value (optional operation). |
 | --- | --- |
-| open [Enumeration](../java/util/Enumeration.md)\<\*\>! | `https://developer.android.com/reference/kotlin/java/util/Properties#propertyNames()()` Returns an enumeration of all the keys in this property list, including distinct keys in the default property list if a key of the same name has not already been found from the main properties list. |
+| open [Enumeration](Enumeration.md)\<\*\>! | `https://developer.android.com/reference/kotlin/java/util/Properties#propertyNames()()` Returns an enumeration of all the keys in this property list, including distinct keys in the default property list if a key of the same name has not already been found from the main properties list. |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? | `https://developer.android.com/reference/kotlin/java/util/Properties#put(kotlin.Any,%20kotlin.Any)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Maps the specified `key` to the specified `value` in this hashtable. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/Properties#putAll(kotlin.collections.Map)(from: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html<*, *>)` Copies all of the mappings from the specified map to this hashtable. |
 | --- | --- |
@@ -126,7 +126,7 @@ This class is thread-safe: multiple threads can share a single `Properties` obje
 
 | Properties ||
 |---|---|
-| [Properties](../java/util/Properties.md)! | `https://developer.android.com/reference/kotlin/java/util/Properties#defaults:java.util.Properties` A property list that contains default values for any keys not found in this property list. |
+| [Properties](Properties.md)! | `https://developer.android.com/reference/kotlin/java/util/Properties#defaults:java.util.Properties` A property list that contains default values for any keys not found in this property list. |
 | open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>\> | `https://developer.android.com/reference/kotlin/java/util/Properties#entries:kotlin.collections.MutableSet` Returns a `https://developer.android.com/reference/kotlin/java/util/Set` view of the mappings contained in this map. |
 | open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\> | `https://developer.android.com/reference/kotlin/java/util/Properties#keys:kotlin.collections.MutableSet` Returns a `https://developer.android.com/reference/kotlin/java/util/Set` view of the keys contained in this map. |
 | --- | --- |
@@ -175,7 +175,7 @@ Creates an empty property list with the specified defaults.
 
 | Parameters ||
 |---|---|
-| `defaults` | [Properties](../java/util/Properties.md)!: the defaults. |
+| `defaults` | [Properties](Properties.md)!: the defaults. |
 
 ## Public methods
 
@@ -240,7 +240,7 @@ This method will, on a best-effort basis, throw a `https://developer.android.com
 | Parameters ||
 |---|---|
 | `key` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!: key with which the specified value is to be associated |
-| `remappingFunction` | [BiFunction](../java/util/function/BiFunction.md)\<in [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, in [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?, \*\>: the remapping function to compute a value |
+| `remappingFunction` | [BiFunction](../java.util.function/BiFunction.md)\<in [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, in [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?, \*\>: the remapping function to compute a value |
 
 | Return ||
 |---|---|
@@ -289,7 +289,7 @@ This method will, on a best-effort basis, throw a `https://developer.android.com
 | Parameters ||
 |---|---|
 | `key` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!: key with which the specified value is to be associated |
-| `mappingFunction` | [Function](../java/util/function/Function.md)\<in [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, \*\>: the mapping function to compute a value |
+| `mappingFunction` | [Function](../java.util.function/Function.md)\<in [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, \*\>: the mapping function to compute a value |
 
 | Return ||
 |---|---|
@@ -326,7 +326,7 @@ This method will, on a best-effort basis, throw a `https://developer.android.com
 | Parameters ||
 |---|---|
 | `key` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!: key with which the specified value is to be associated |
-| `remappingFunction` | [BiFunction](../java/util/function/BiFunction.md)\<in [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, in [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html), \*\>: the remapping function to compute a value |
+| `remappingFunction` | [BiFunction](../java.util.function/BiFunction.md)\<in [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, in [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html), \*\>: the remapping function to compute a value |
 
 | Return ||
 |---|---|
@@ -458,7 +458,7 @@ Performs the given action for each entry in this map until all entries have been
 
 | Parameters ||
 |---|---|
-| `action` | [BiConsumer](../java/util/function/BiConsumer.md)\<in [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, in [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>: The action to be performed for each entry |
+| `action` | [BiConsumer](../java.util.function/BiConsumer.md)\<in [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, in [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>: The action to be performed for each entry |
 
 | Exceptions ||
 |---|---|
@@ -621,7 +621,7 @@ Prints this property list out to the specified output stream. This method is use
 
 | Parameters ||
 |---|---|
-| `out` | [PrintStream](../java/io/PrintStream.md)!: an output stream. |
+| `out` | [PrintStream](../java.io/PrintStream.md)!: an output stream. |
 
 | Exceptions ||
 |---|---|
@@ -639,7 +639,7 @@ Prints this property list out to the specified output stream. This method is use
 
 | Parameters ||
 |---|---|
-| `out` | [PrintWriter](../java/io/PrintWriter.md)!: an output stream. |
+| `out` | [PrintWriter](../java.io/PrintWriter.md)!: an output stream. |
 
 | Exceptions ||
 |---|---|
@@ -659,7 +659,7 @@ The specified stream remains open after this method returns.
 
 | Parameters ||
 |---|---|
-| `inStream` | [InputStream](../java/io/InputStream.md)!: the input stream. |
+| `inStream` | [InputStream](../java.io/InputStream.md)!: the input stream. |
 
 | Exceptions ||
 |---|---|
@@ -733,7 +733,7 @@ The specified stream remains open after this method returns.
 
 | Parameters ||
 |---|---|
-| `reader` | [Reader](../java/io/Reader.md)!: the input character stream. |
+| `reader` | [Reader](../java.io/Reader.md)!: the input character stream. |
 
 | Exceptions ||
 |---|---|
@@ -766,7 +766,7 @@ The specified stream is closed after this method returns.
 
 | Parameters ||
 |---|---|
-| `in` | [InputStream](../java/io/InputStream.md)!: the input stream from which to read the XML document. |
+| `in` | [InputStream](../java.io/InputStream.md)!: the input stream from which to read the XML document. |
 
 | Exceptions ||
 |---|---|
@@ -811,7 +811,7 @@ This method will, on a best-effort basis, throw a `https://developer.android.com
 |---|---|
 | `key` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!: key with which the resulting value is to be associated |
 | `value` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html): the non-null value to be merged with the existing value associated with the key or, if no existing value or a null value is associated with the key, to be associated with the key |
-| `remappingFunction` | [BiFunction](../java/util/function/BiFunction.md)\<in [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html), in [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html), \*\>: the remapping function to recompute a value if present |
+| `remappingFunction` | [BiFunction](../java.util.function/BiFunction.md)\<in [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html), in [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html), \*\>: the remapping function to recompute a value if present |
 | --- | --- |
 
 | Return ||
@@ -1065,7 +1065,7 @@ Replaces each entry's value with the result of invoking the given function on th
 
 | Parameters ||
 |---|---|
-| `function` | [BiFunction](../java/util/function/BiFunction.md)\<in [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, in [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, \*\>: the function to apply to each entry |
+| `function` | [BiFunction](../java.util.function/BiFunction.md)\<in [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, in [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!, \*\>: the function to apply to each entry |
 
 | Exceptions ||
 |---|---|
@@ -1094,7 +1094,7 @@ Calls the `store(OutputStream out, String comments)` method and suppresses IOExc
 
 | Parameters ||
 |---|---|
-| `out` | [OutputStream](../java/io/OutputStream.md)!: an output stream. |
+| `out` | [OutputStream](../java.io/OutputStream.md)!: an output stream. |
 | `comments` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: a description of the property list. |
 
 | Exceptions ||
@@ -1150,7 +1150,7 @@ After the entries have been written, the output stream is flushed. The output st
 
 | Parameters ||
 |---|---|
-| `out` | [OutputStream](../java/io/OutputStream.md)!: an output stream. |
+| `out` | [OutputStream](../java.io/OutputStream.md)!: an output stream. |
 | `comments` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: a description of the property list. |
 
 | Exceptions ||
@@ -1185,7 +1185,7 @@ After the entries have been written, the output stream is flushed. The output st
 
 | Parameters ||
 |---|---|
-| `writer` | [Writer](../java/io/Writer.md)!: an output character stream writer. |
+| `writer` | [Writer](../java.io/Writer.md)!: an output character stream writer. |
 | `comments` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: a description of the property list. |
 
 | Exceptions ||
@@ -1212,7 +1212,7 @@ An invocation of this method of the form `props.storeToXML(os, comment)` behaves
 
 | Parameters ||
 |---|---|
-| `os` | [OutputStream](../java/io/OutputStream.md)!: the output stream on which to emit the XML document. |
+| `os` | [OutputStream](../java.io/OutputStream.md)!: the output stream on which to emit the XML document. |
 | `comment` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: a description of the property list, or `null` if no comment is desired. |
 
 | Exceptions ||
@@ -1253,13 +1253,13 @@ An implementation is required to support writing of XML documents that use the "
 
 The specified stream remains open after this method returns.
 
-This method behaves the same as [storeToXML(OutputStream,String,Charset)](../java/util/Properties.md)) except that it will java.nio.charset.Charset#forName using the given encoding name.
+This method behaves the same as [storeToXML(OutputStream,String,Charset)](Properties.md)) except that it will java.nio.charset.Charset#forName using the given encoding name.
 
 | Parameters ||
 |---|---|
-| `os` | [OutputStream](../java/io/OutputStream.md)!: the output stream on which to emit the XML document. |
+| `os` | [OutputStream](../java.io/OutputStream.md)!: the output stream on which to emit the XML document. |
 | `comment` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: a description of the property list, or `null` if no comment is desired. |
-| `encoding` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the name of a supported [character encoding](../java/lang/_package.md) |
+| `encoding` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the name of a supported [character encoding](../java.lang/_package.md) |
 | --- | --- |
 
 | Exceptions ||
@@ -1305,9 +1305,9 @@ The specified stream remains open after this method returns.
 
 | Parameters ||
 |---|---|
-| `os` | [OutputStream](../java/io/OutputStream.md)!: the output stream on which to emit the XML document. |
+| `os` | [OutputStream](../java.io/OutputStream.md)!: the output stream on which to emit the XML document. |
 | `comment` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: a description of the property list, or `null` if no comment is desired. |
-| `charset` | [Charset](../java/nio/charset/Charset.md)!: the charset |
+| `charset` | [Charset](../java.nio.charset/Charset.md)!: the charset |
 | --- | --- |
 
 | Exceptions ||

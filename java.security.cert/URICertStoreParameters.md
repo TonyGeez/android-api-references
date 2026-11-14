@@ -10,7 +10,7 @@ class URICertStoreParameters : CertStoreParameters
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.cert.URICertStoreParameters](../java/security/cert/URICertStoreParameters.md) |
+| ↳ | [java.security.cert.URICertStoreParameters](URICertStoreParameters.md) |
 
 Parameters used as input for`CertStore`algorithms which use information contained in a URI to retrieve certificates and CRLs.
 
@@ -24,16 +24,16 @@ Unless otherwise specified, the methods defined in this class are not thread-saf
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [URICertStoreParameters](../java/security/cert/URICertStoreParameters.md))`(`uri:` ` [URI](../java/net/URI.md)!`)` Creates an instance of`URICertStoreParameters`with the specified URI. |
+| [URICertStoreParameters](URICertStoreParameters.md))`(`uri:` ` [URI](../java.net/URI.md)!`)` Creates an instance of`URICertStoreParameters`with the specified URI. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [URICertStoreParameters](../java/security/cert/URICertStoreParameters.md) | [clone](../java/security/cert/URICertStoreParameters.md))`()` Returns a copy of this object. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/security/cert/URICertStoreParameters.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares the specified object with this parameters object for equality. |
-| [URI](../java/net/URI.md)! | [getURI](../java/security/cert/URICertStoreParameters.md))`()` Returns the URI used to construct this`URICertStoreParameters`object. |
+| [URICertStoreParameters](URICertStoreParameters.md) | [clone](URICertStoreParameters.md))`()` Returns a copy of this object. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](URICertStoreParameters.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares the specified object with this parameters object for equality. |
+| [URI](../java.net/URI.md)! | [getURI](URICertStoreParameters.md))`()` Returns the URI used to construct this`URICertStoreParameters`object. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/security/cert/URICertStoreParameters.md))`()` Returns a hash code value for this parameters object. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/security/cert/URICertStoreParameters.md))`()` Returns a formatted string describing the parameters including the URI used to construct this object. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](URICertStoreParameters.md))`()` Returns a hash code value for this parameters object. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](URICertStoreParameters.md))`()` Returns a formatted string describing the parameters including the URI used to construct this object. |
 
 ## Public constructors
 
@@ -49,7 +49,7 @@ Creates an instance of`URICertStoreParameters`with the specified URI.
 
 | Parameters ||
 |-------|-----------------------------------------------------------------------------------------------------------------------------|
-| `uri` | [URI](../java/net/URI.md)!:the URI which contains configuration information. |
+| `uri` | [URI](../java.net/URI.md)!:the URI which contains configuration information. |
 
 | Exceptions ||
 |----------------------------------|----------------|
@@ -69,7 +69,7 @@ Returns a copy of this object. Changes to the copy will not affect the original 
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------|----------|
-| [URICertStoreParameters](../java/security/cert/URICertStoreParameters.md) | the copy |
+| [URICertStoreParameters](URICertStoreParameters.md) | the copy |
 
 | Exceptions ||
 |----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -106,7 +106,7 @@ Returns the URI used to construct this`URICertStoreParameters`object.
 
 | Return ||
 |---------------------------------------------------------------------------|----------|
-| [URI](../java/net/URI.md)! | the URI. |
+| [URI](../java.net/URI.md)! | the URI. |
 
 ### hashCode
 

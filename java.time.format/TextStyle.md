@@ -8,10 +8,10 @@ class TextStyle
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.time.format.TextStyle](../java/time/format/TextStyle.md)\> ||
-| | ↳ | [java.time.format.TextStyle](../java/time/format/TextStyle.md) |
+| ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.time.format.TextStyle](TextStyle.md)\> ||
+| | ↳ | [java.time.format.TextStyle](TextStyle.md) |
 
-| Known Direct Subclasses [TextStyle.FULL](../java/time/format/TextStyle.md), [TextStyle.FULL_STANDALONE](../java/time/format/TextStyle.md), [TextStyle.NARROW](../java/time/format/TextStyle.md), [TextStyle.NARROW_STANDALONE](../java/time/format/TextStyle.md), [TextStyle.SHORT](../java/time/format/TextStyle.md), [TextStyle.SHORT_STANDALONE](../java/time/format/TextStyle.md) |---|---| | [TextStyle.FULL](../java/time/format/TextStyle.md) | Full text, typically the full description. | | [TextStyle.FULL_STANDALONE](../java/time/format/TextStyle.md) | Full text for stand-alone use, typically the full description. | | [TextStyle.NARROW](../java/time/format/TextStyle.md) | Narrow text, typically a single letter. | | [TextStyle.NARROW_STANDALONE](../java/time/format/TextStyle.md) | Narrow text for stand-alone use, typically a single letter. | | [TextStyle.SHORT](../java/time/format/TextStyle.md) | Short text, typically an abbreviation. | | [TextStyle.SHORT_STANDALONE](../java/time/format/TextStyle.md) | Short text for stand-alone use, typically an abbreviation. | |
+| Known Direct Subclasses [TextStyle.FULL](TextStyle.md), [TextStyle.FULL_STANDALONE](TextStyle.md), [TextStyle.NARROW](TextStyle.md), [TextStyle.NARROW_STANDALONE](TextStyle.md), [TextStyle.SHORT](TextStyle.md), [TextStyle.SHORT_STANDALONE](TextStyle.md) |---|---| | [TextStyle.FULL](TextStyle.md) | Full text, typically the full description. | | [TextStyle.FULL_STANDALONE](TextStyle.md) | Full text for stand-alone use, typically the full description. | | [TextStyle.NARROW](TextStyle.md) | Narrow text, typically a single letter. | | [TextStyle.NARROW_STANDALONE](TextStyle.md) | Narrow text for stand-alone use, typically a single letter. | | [TextStyle.SHORT](TextStyle.md) | Short text, typically an abbreviation. | | [TextStyle.SHORT_STANDALONE](TextStyle.md) | Short text for stand-alone use, typically an abbreviation. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Enumeration of the style of text formatting and parsing.
@@ -35,8 +35,8 @@ The difference between the 'standard' and 'stand-alone' forms is trickier to des
 
 | Public methods ||
 |---|---|
-| [TextStyle](../java/time/format/TextStyle.md)! | `https://developer.android.com/reference/kotlin/java/time/format/TextStyle#asNormal()()` Returns the normal style with the same size. |
-| [TextStyle](../java/time/format/TextStyle.md)! | `https://developer.android.com/reference/kotlin/java/time/format/TextStyle#asStandalone()()` {@return the stand-alone style with the same size} |
+| [TextStyle](TextStyle.md)! | `https://developer.android.com/reference/kotlin/java/time/format/TextStyle#asNormal()()` Returns the normal style with the same size. |
+| [TextStyle](TextStyle.md)! | `https://developer.android.com/reference/kotlin/java/time/format/TextStyle#asStandalone()()` {@return the stand-alone style with the same size} |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/time/format/TextStyle#isStandalone()()` Returns true if the Style is a stand-alone style. |
 | --- | --- |
 

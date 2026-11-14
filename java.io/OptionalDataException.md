@@ -11,11 +11,11 @@ open class OptionalDataException : ObjectStreamException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
-| | | ↳ | [java.io.IOException](../java/io/IOException.md) |||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) ||||
+| | | ↳ | [java.io.IOException](IOException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.io.ObjectStreamException](../java/io/ObjectStreamException.md) ||
-| | | | | ↳ | [java.io.OptionalDataException](../java/io/OptionalDataException.md) |
+| | | | ↳ | [java.io.ObjectStreamException](ObjectStreamException.md) ||
+| | | | | ↳ | [java.io.OptionalDataException](OptionalDataException.md) |
 
 Exception indicating the failure of an object read operation due to unread primitive data, or the end of data belonging to a serialized object in the stream. This exception may be thrown in two cases:
 
@@ -28,8 +28,8 @@ Exception indicating the failure of an object read operation due to unread primi
 
 | Properties ||
 |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eof](../java/io/OptionalDataException.md) True if there is no more data in the buffered part of the stream. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [length](../java/io/OptionalDataException.md) The number of bytes of primitive data available to be read in the current buffer. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eof](OptionalDataException.md) True if there is no more data in the buffered part of the stream. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [length](OptionalDataException.md) The number of bytes of primitive data available to be read in the current buffer. |
 
 ## Properties
 

@@ -19,7 +19,7 @@ This class can be used by external clients of SimpleCursorAdapter to define how 
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [convertToString](../android/widget/SimpleCursorAdapter.CursorToStringConverter.md))`(`cursor:` ` [Cursor](../android/database/Cursor.md)!`)` Returns a CharSequence representing the specified Cursor. |
+| abstract [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [convertToString](../android/widget/SimpleCursorAdapter.CursorToStringConverter.md))`(`cursor:` ` [Cursor](../android.database/Cursor.md)!`)` Returns a CharSequence representing the specified Cursor. |
 
 ## Public methods
 
@@ -35,7 +35,7 @@ Returns a CharSequence representing the specified Cursor.
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `cursor` | [Cursor](../android/database/Cursor.md)!:the cursor for which a CharSequence representation is requested |
+| `cursor` | [Cursor](../android.database/Cursor.md)!:the cursor for which a CharSequence representation is requested |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|-------------------------------------------------|

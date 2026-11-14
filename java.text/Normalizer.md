@@ -10,7 +10,7 @@ class Normalizer
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.text.Normalizer](../java/text/Normalizer.md) |
+| ↳ | [java.text.Normalizer](Normalizer.md) |
 
 This class provides the method`normalize`which transforms Unicode text into an equivalent composed or decomposed form, allowing for easier sorting and searching of text. The`normalize`method supports the standard normalization forms described in [Unicode Standard Annex #15 --- Unicode Normalization Forms](https://www.unicode.org/reports/tr15/).
 
@@ -53,8 +53,8 @@ The W3C generally recommends to exchange texts in NFC. Note also that most legac
 
 | Public methods ||
 |------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isNormalized](../java/text/Normalizer.md))`(`src:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `form:` ` [Normalizer.Form](../java/text/Normalizer.Form.md)!`)` Determines if the given sequence of char values is normalized. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [normalize](../java/text/Normalizer.md))`(`src:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `form:` ` [Normalizer.Form](../java/text/Normalizer.Form.md)!`)` Normalize a sequence of char values. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isNormalized](Normalizer.md))`(`src:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `form:` ` [Normalizer.Form](../java/text/Normalizer.Form.md)!`)` Determines if the given sequence of char values is normalized. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [normalize](Normalizer.md))`(`src:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `form:` ` [Normalizer.Form](../java/text/Normalizer.Form.md)!`)` Normalize a sequence of char values. |
 
 ## Public methods
 

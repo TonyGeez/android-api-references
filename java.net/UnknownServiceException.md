@@ -11,10 +11,10 @@ open class UnknownServiceException : IOException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
-| | | ↳ | [java.io.IOException](../java/io/IOException.md) ||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) |||
+| | | ↳ | [java.io.IOException](../java.io/IOException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.net.UnknownServiceException](../java/net/UnknownServiceException.md) |
+| | | | ↳ | [java.net.UnknownServiceException](UnknownServiceException.md) |
 
 Thrown to indicate that an unknown service exception has occurred. Either the MIME type returned by a URL connection does not make sense, or the application is attempting to write to a read-only URL connection.
 
@@ -22,8 +22,8 @@ Thrown to indicate that an unknown service exception has occurred. Either the MI
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [UnknownServiceException](../java/net/UnknownServiceException.md))`()` Constructs a new`UnknownServiceException`with no detail message. |
-| [UnknownServiceException](../java/net/UnknownServiceException.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a new`UnknownServiceException`with the specified detail message. |
+| [UnknownServiceException](UnknownServiceException.md))`()` Constructs a new`UnknownServiceException`with no detail message. |
+| [UnknownServiceException](UnknownServiceException.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a new`UnknownServiceException`with the specified detail message. |
 
 ## Public constructors
 

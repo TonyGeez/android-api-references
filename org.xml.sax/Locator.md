@@ -8,31 +8,31 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface Locator
 ```
 
-| [org.xml.sax.Locator](../org/xml/sax/Locator.md) |
+| [org.xml.sax.Locator](Locator.md) |
 
-| Known Direct Subclasses [Driver](../org/xmlpull/v1/sax2/Driver.md), [Locator2](../org/xml/sax/ext/Locator2.md), [LocatorImpl](../org/xml/sax/helpers/LocatorImpl.md) |-----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------| | [Driver](../org/xmlpull/v1/sax2/Driver.md) | SAX2 Driver that pulls events from XmlPullParser and converts them into SAX2 callbacks. | | [Locator2](../org/xml/sax/ext/Locator2.md) | SAX2 extension to augment the entity information provided though a [Locator](../org/xml/sax/Locator.md). | | [LocatorImpl](../org/xml/sax/helpers/LocatorImpl.md) | Provide an optional convenience implementation of Locator. | |
+| Known Direct Subclasses [Driver](../org.xmlpull.v1.sax2/Driver.md), [Locator2](../org.xml.sax.ext/Locator2.md), [LocatorImpl](../org.xml.sax.helpers/LocatorImpl.md) |-----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------| | [Driver](../org.xmlpull.v1.sax2/Driver.md) | SAX2 Driver that pulls events from XmlPullParser and converts them into SAX2 callbacks. | | [Locator2](../org.xml.sax.ext/Locator2.md) | SAX2 extension to augment the entity information provided though a [Locator](Locator.md). | | [LocatorImpl](../org.xml.sax.helpers/LocatorImpl.md) | Provide an optional convenience implementation of Locator. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [Locator2Impl](../org/xml/sax/ext/Locator2Impl.md) [Locator2Impl](../org/xml/sax/ext/Locator2Impl.md) |---------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Locator2Impl](../org/xml/sax/ext/Locator2Impl.md) | SAX2 extension helper for holding additional Entity information, implementing the [Locator2](../org/xml/sax/ext/Locator2.md) interface. | | [Locator2Impl](../org/xml/sax/ext/Locator2Impl.md) | SAX2 extension helper for holding additional Entity information, implementing the [Locator2](../org/xml/sax/ext/Locator2.md) interface. | |
+| Known Indirect Subclasses [Locator2Impl](../org.xml.sax.ext/Locator2Impl.md) [Locator2Impl](../org.xml.sax.ext/Locator2Impl.md) |---------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Locator2Impl](../org.xml.sax.ext/Locator2Impl.md) | SAX2 extension helper for holding additional Entity information, implementing the [Locator2](../org.xml.sax.ext/Locator2.md) interface. | | [Locator2Impl](../org.xml.sax.ext/Locator2Impl.md) | SAX2 extension helper for holding additional Entity information, implementing the [Locator2](../org.xml.sax.ext/Locator2.md) interface. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Interface for associating a SAX event with a document location.*This module, both source code and documentation, is in the Public Domain, and comes with**NO WARRANTY**.* See<http://www.saxproject.org>for further information.
 
-If a SAX parser provides location information to the SAX application, it does so by implementing this interface and then passing an instance to the application using the content handler's [setDocumentLocator](../org/xml/sax/ContentHandler.md))method. The application can use the object to obtain the location of any other SAX event in the XML source document.
+If a SAX parser provides location information to the SAX application, it does so by implementing this interface and then passing an instance to the application using the content handler's [setDocumentLocator](ContentHandler.md))method. The application can use the object to obtain the location of any other SAX event in the XML source document.
 
 Note that the results returned by the object will be valid only during the scope of each callback method: the application will receive unpredictable results if it attempts to use the locator at any other time, or after parsing completes.
 
-SAX parsers are not required to supply a locator, but they are very strongly encouraged to do so. If the parser supplies a locator, it must do so before reporting any other document events. If no locator has been set by the time the application receives the [startDocument](../org/xml/sax/ContentHandler.md))event, the application should assume that a locator is not available.
+SAX parsers are not required to supply a locator, but they are very strongly encouraged to do so. If the parser supplies a locator, it must do so before reporting any other document events. If no locator has been set by the time the application receives the [startDocument](ContentHandler.md))event, the application should assume that a locator is not available.
 
 ## Summary
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getColumnNumber](../org/xml/sax/Locator.md))`()` Return the column number where the current document event ends. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLineNumber](../org/xml/sax/Locator.md))`()` Return the line number where the current document event ends. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPublicId](../org/xml/sax/Locator.md))`()` Return the public identifier for the current document event. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getColumnNumber](Locator.md))`()` Return the column number where the current document event ends. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLineNumber](Locator.md))`()` Return the line number where the current document event ends. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPublicId](Locator.md))`()` Return the public identifier for the current document event. |
 | --- | --- |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSystemId](../org/xml/sax/Locator.md))`()` Return the system identifier for the current document event. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSystemId](Locator.md))`()` Return the system identifier for the current document event. |
 
 ## Public methods
 
@@ -58,7 +58,7 @@ If possible, the SAX driver should provide the line position of the first charac
 
 **See Also**
 
-- [#getLineNumber](../org/xml/sax/Locator.md)) 
+- [#getLineNumber](Locator.md)) 
 
 ### getLineNumber
 
@@ -82,7 +82,7 @@ If possible, the SAX driver should provide the line position of the first charac
 
 **See Also**
 
-- [#getColumnNumber](../org/xml/sax/Locator.md)) 
+- [#getColumnNumber](Locator.md)) 
 
 ### getPublicId
 
@@ -102,7 +102,7 @@ The return value is the public identifier of the document entity or of the exter
 
 **See Also**
 
-- [#getSystemId](../org/xml/sax/Locator.md)) 
+- [#getSystemId](Locator.md)) 
 
 ### getSystemId
 
@@ -124,4 +124,4 @@ If the system identifier is a URL, the parser must resolve it fully before passi
 
 **See Also**
 
-- [#getPublicId](../org/xml/sax/Locator.md))
+- [#getPublicId](Locator.md))

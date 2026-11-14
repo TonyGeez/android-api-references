@@ -10,13 +10,13 @@ abstract class ProxySelector
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.net.ProxySelector](../java/net/ProxySelector.md) |
+| ↳ | [java.net.ProxySelector](ProxySelector.md) |
 
-Selects the proxy server to use, if any, when connecting to the network resource referenced by a URL. A proxy selector is a concrete sub-class of this class and is registered by invoking the [setDefault](../java/net/ProxySelector.md))method. The currently registered proxy selector can be retrieved by calling [getDefault](../java/net/ProxySelector.md))method.
+Selects the proxy server to use, if any, when connecting to the network resource referenced by a URL. A proxy selector is a concrete sub-class of this class and is registered by invoking the [setDefault](ProxySelector.md))method. The currently registered proxy selector can be retrieved by calling [getDefault](ProxySelector.md))method.
 
-When a proxy selector is registered, for instance, a subclass of URLConnection class should call the [select](../java/net/ProxySelector.md))method for each URL request so that the proxy selector can decide if a direct, or proxied connection should be used. The [select](../java/net/ProxySelector.md))method returns an iterator over a collection with the preferred connection approach.
+When a proxy selector is registered, for instance, a subclass of URLConnection class should call the [select](ProxySelector.md))method for each URL request so that the proxy selector can decide if a direct, or proxied connection should be used. The [select](ProxySelector.md))method returns an iterator over a collection with the preferred connection approach.
 
-If a connection cannot be established to a proxy (PROXY or SOCKS) servers then the caller should call the proxy selector's [connectFailed](../java/net/ProxySelector.md))method to notify the proxy selector that the proxy server is unavailable.
+If a connection cannot be established to a proxy (PROXY or SOCKS) servers then the caller should call the proxy selector's [connectFailed](ProxySelector.md))method to notify the proxy selector that the proxy server is unavailable.
 
 The default proxy selector does enforce a [set of System Properties](../java/net/doc-files/net-properties.md) related to proxy settings.
 
@@ -24,15 +24,15 @@ The default proxy selector does enforce a [set of System Properties](../java/net
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------|---|
-| [ProxySelector](../java/net/ProxySelector.md))`()` <br /> |
+| [ProxySelector](ProxySelector.md))`()` <br /> |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [connectFailed](../java/net/ProxySelector.md))`(`uri:` ` [URI](../java/net/URI.md)!`, `sa:` ` [SocketAddress](../java/net/SocketAddress.md)!`, `ioe:` ` [IOException](../java/io/IOException.md)!`)` Called to indicate that a connection could not be established to a proxy/socks server. |
-| openstatic [ProxySelector](../java/net/ProxySelector.md)! | [getDefault](../java/net/ProxySelector.md))`()` Gets the system-wide proxy selector. |
-| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Proxy](../java/net/Proxy.md)!\>! | [select](../java/net/ProxySelector.md))`(`uri:` ` [URI](../java/net/URI.md)!`)` Selects all the applicable proxies based on the protocol to access the resource with and a destination address to access the resource at. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [connectFailed](ProxySelector.md))`(`uri:` ` [URI](URI.md)!`, `sa:` ` [SocketAddress](SocketAddress.md)!`, `ioe:` ` [IOException](../java.io/IOException.md)!`)` Called to indicate that a connection could not be established to a proxy/socks server. |
+| openstatic [ProxySelector](ProxySelector.md)! | [getDefault](ProxySelector.md))`()` Gets the system-wide proxy selector. |
+| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Proxy](Proxy.md)!\>! | [select](ProxySelector.md))`(`uri:` ` [URI](URI.md)!`)` Selects all the applicable proxies based on the protocol to access the resource with and a destination address to access the resource at. |
 | --- | --- |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDefault](../java/net/ProxySelector.md))`(`ps:` ` [ProxySelector](../java/net/ProxySelector.md)!`)` Sets (or unsets) the system-wide proxy selector. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDefault](ProxySelector.md))`(`ps:` ` [ProxySelector](ProxySelector.md)!`)` Sets (or unsets) the system-wide proxy selector. |
 
 ## Public constructors
 
@@ -58,13 +58,13 @@ abstract fun connectFailed(
 ): Unit
 ```
 
-Called to indicate that a connection could not be established to a proxy/socks server. An implementation of this method can temporarily remove the proxies or reorder the sequence of proxies returned by [select(java.net.URI)](../java/net/ProxySelector.md)), using the address and the IOException caught when trying to connect.
+Called to indicate that a connection could not be established to a proxy/socks server. An implementation of this method can temporarily remove the proxies or reorder the sequence of proxies returned by [select(java.net.URI)](ProxySelector.md)), using the address and the IOException caught when trying to connect.
 
 | Parameters ||
 |-------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| `uri` | [URI](../java/net/URI.md)!:The URI that the proxy at sa failed to serve. |
-| `sa` | [SocketAddress](../java/net/SocketAddress.md)!:The socket address of the proxy/SOCKS server |
-| `ioe` | [IOException](../java/io/IOException.md)!:The I/O exception thrown when the connect failed. |
+| `uri` | [URI](URI.md)!:The URI that the proxy at sa failed to serve. |
+| `sa` | [SocketAddress](SocketAddress.md)!:The socket address of the proxy/SOCKS server |
+| `ioe` | [IOException](../java.io/IOException.md)!:The I/O exception thrown when the connect failed. |
 | --- | --- |
 
 | Exceptions ||
@@ -83,15 +83,15 @@ Gets the system-wide proxy selector.
 
 | Return ||
 |------------------------------------------------------------------------------------------|--------------------------------|
-| [ProxySelector](../java/net/ProxySelector.md)! | the system-wide`ProxySelector` |
+| [ProxySelector](ProxySelector.md)! | the system-wide`ProxySelector` |
 
 | Exceptions ||
 |-------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.SecurityException` | If a security manager has been installed and it denies [NetPermission](../java/net/NetPermission.md)`("getProxySelector")` |
+| `java.lang.SecurityException` | If a security manager has been installed and it denies [NetPermission](NetPermission.md)`("getProxySelector")` |
 
 **See Also**
 
-- [#setDefault(ProxySelector)](../java/net/ProxySelector.md)) 
+- [#setDefault(ProxySelector)](ProxySelector.md)) 
 
 ### select
 
@@ -112,11 +112,11 @@ Selects all the applicable proxies based on the protocol to access the resource 
 
 | Parameters ||
 |-------|--------------------------------------------------------------------------------------------------------------|
-| `uri` | [URI](../java/net/URI.md)!:The URI that a connection is required to |
+| `uri` | [URI](URI.md)!:The URI that a connection is required to |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Proxy](../java/net/Proxy.md)!>! | a List of Proxies. Each element in the the List is of type [Proxy](../java/net/Proxy.md); when no proxy is available, the list will contain one element of type [Proxy](../java/net/Proxy.md) that represents a direct connection. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Proxy](Proxy.md)!>! | a List of Proxies. Each element in the the List is of type [Proxy](Proxy.md); when no proxy is available, the list will contain one element of type [Proxy](Proxy.md) that represents a direct connection. |
 
 | Exceptions ||
 |--------------------------------------|-------------------------|
@@ -134,11 +134,11 @@ Sets (or unsets) the system-wide proxy selector. Note: non-standard protocol han
 
 | Parameters ||
 |------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `ps` | [ProxySelector](../java/net/ProxySelector.md)!:The HTTP proxy selector, or`null`to unset the proxy selector. |
+| `ps` | [ProxySelector](ProxySelector.md)!:The HTTP proxy selector, or`null`to unset the proxy selector. |
 
 | Exceptions ||
 |-------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.SecurityException` | If a security manager has been installed and it denies [NetPermission](../java/net/NetPermission.md)`("setProxySelector")` |
+| `java.lang.SecurityException` | If a security manager has been installed and it denies [NetPermission](NetPermission.md)`("setProxySelector")` |
 
 **See Also**
 

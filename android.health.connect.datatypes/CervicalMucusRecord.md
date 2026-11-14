@@ -9,9 +9,9 @@ class CervicalMucusRecord : InstantRecord
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.health.connect.datatypes.Record](../android/health/connect/datatypes/Record.md) |||
-| | ↳ | [android.health.connect.datatypes.InstantRecord](../android/health/connect/datatypes/InstantRecord.md) ||
-| | | ↳ | [android.health.connect.datatypes.CervicalMucusRecord](../android/health/connect/datatypes/CervicalMucusRecord.md) |
+| ↳ | [android.health.connect.datatypes.Record](Record.md) |||
+| | ↳ | [android.health.connect.datatypes.InstantRecord](InstantRecord.md) ||
+| | | ↳ | [android.health.connect.datatypes.CervicalMucusRecord](CervicalMucusRecord.md) |
 | --- | --- | --- | --- |
 
 Captures the description of cervical mucus. Each record represents a self-assessed description of cervical mucus for a user. All fields are optional and can be used to describe the look and feel of cervical mucus.

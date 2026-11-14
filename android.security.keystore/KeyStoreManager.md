@@ -4,7 +4,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 
 # KeyStoreManager
 
-Kotlin| [Java](../android/security/keystore/KeyStoreManager.md) 
+Kotlin| [Java](KeyStoreManager.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class KeyStoreManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.security.keystore.KeyStoreManager](../android/security/keystore/KeyStoreManager.md) |
+| ↳ | [android.security.keystore.KeyStoreManager](KeyStoreManager.md) |
 
 This class provides methods for interacting with keys stored within the [Android Keystore](../privacy-and-security/keystore.md).
 
@@ -21,17 +21,17 @@ This class provides methods for interacting with keys stored within the [Android
 
 | Constants ||
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MODULE_HASH](../android/security/keystore/KeyStoreManager.md) When passed into getSupplementaryAttestationInfo, getSupplementaryAttestationInfo returns the DER-encoded structure corresponding to the \`Modules\` schema described in the KeyMint HAL's KeyCreationResult. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MODULE_HASH](KeyStoreManager.md) When passed into getSupplementaryAttestationInfo, getSupplementaryAttestationInfo returns the DER-encoded structure corresponding to the \`Modules\` schema described in the KeyMint HAL's KeyCreationResult. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [X509Certificate](../java/security/cert/X509Certificate.md)!\> | [getGrantedCertificateChainFromId](../android/security/keystore/KeyStoreManager.md))`(`id:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a [List](../java/util/List.md) of [X509Certificate](../java/security/cert/X509Certificate.md) instances representing the certificate chain for the key that was previously shared with the app under the provided`id`. |
-| [Key](../java/security/Key.md) | [getGrantedKeyFromId](../android/security/keystore/KeyStoreManager.md))`(`id:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the key with the specified`id`that was previously shared with the app. |
-| [KeyPair](../java/security/KeyPair.md) | [getGrantedKeyPairFromId](../android/security/keystore/KeyStoreManager.md))`(`id:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a [KeyPair](../java/security/KeyPair.md) containing the public and private key associated with the key that was previously shared with the app under the provided`id`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [X509Certificate](../java.security.cert/X509Certificate.md)!\> | [getGrantedCertificateChainFromId](KeyStoreManager.md))`(`id:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a [List](../java.util/List.md) of [X509Certificate](../java.security.cert/X509Certificate.md) instances representing the certificate chain for the key that was previously shared with the app under the provided`id`. |
+| [Key](../java.security/Key.md) | [getGrantedKeyFromId](KeyStoreManager.md))`(`id:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the key with the specified`id`that was previously shared with the app. |
+| [KeyPair](../java.security/KeyPair.md) | [getGrantedKeyPairFromId](KeyStoreManager.md))`(`id:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a [KeyPair](../java.security/KeyPair.md) containing the public and private key associated with the key that was previously shared with the app under the provided`id`. |
 | --- | --- |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [getSupplementaryAttestationInfo](../android/security/keystore/KeyStoreManager.md))`(`tag:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns tag-specific data required to interpret a tag's attested value. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [grantKeyAccess](../android/security/keystore/KeyStoreManager.md))`(`alias:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `uid:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Grants access to the key owned by the calling app stored under the specified`alias`to another app on the device with the provided`uid`. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [revokeKeyAccess](../android/security/keystore/KeyStoreManager.md))`(`alias:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `uid:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Revokes access to the key in the app's namespace stored under the specified`alias`that was previously granted to another app on the device with the provided`uid`. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [getSupplementaryAttestationInfo](KeyStoreManager.md))`(`tag:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns tag-specific data required to interpret a tag's attested value. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [grantKeyAccess](KeyStoreManager.md))`(`alias:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `uid:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Grants access to the key owned by the calling app stored under the specified`alias`to another app on the device with the provided`uid`. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [revokeKeyAccess](KeyStoreManager.md))`(`alias:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `uid:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Revokes access to the key in the app's namespace stored under the specified`alias`that was previously granted to another app on the device with the provided`uid`. |
 | --- | --- |
 
 ## Constants
@@ -58,9 +58,9 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 fun getGrantedCertificateChainFromId(id: Long): MutableList<X509Certificate!>
 ```
 
-Returns a [List](../java/util/List.md) of [X509Certificate](../java/security/cert/X509Certificate.md) instances representing the certificate chain for the key that was previously shared with the app under the provided`id`.
+Returns a [List](../java.util/List.md) of [X509Certificate](../java.security.cert/X509Certificate.md) instances representing the certificate chain for the key that was previously shared with the app under the provided`id`.
 
-If a [java.security.PrivateKey](../java/security/PrivateKey.md) has not been granted to the caller with the specified`id`, then an [UnrecoverableKeyException](../java/security/UnrecoverableKeyException.md) is thrown.
+If a [java.security.PrivateKey](../java.security/PrivateKey.md) has not been granted to the caller with the specified`id`, then an [UnrecoverableKeyException](../java.security/UnrecoverableKeyException.md) is thrown.
 
 | Parameters ||
 |------|----------------------------------------------------------------------------------------------------------------------------------------|
@@ -68,7 +68,7 @@ If a [java.security.PrivateKey](../java/security/PrivateKey.md) has not been gra
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [X509Certificate](../java/security/cert/X509Certificate.md)!> | a List of X509Certificates with the certificate at index 0 corresponding to the private key shared with the app This value cannot be`null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [X509Certificate](../java.security.cert/X509Certificate.md)!> | a List of X509Certificates with the certificate at index 0 corresponding to the private key shared with the app This value cannot be`null`. |
 
 | Exceptions ||
 |----------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -77,7 +77,7 @@ If a [java.security.PrivateKey](../java/security/PrivateKey.md) has not been gra
 
 **See Also**
 
-- [#grantKeyAccess(String, int)](../android/security/keystore/KeyStoreManager.md)) 
+- [#grantKeyAccess(String, int)](KeyStoreManager.md)) 
 
 ### getGrantedKeyFromId
 
@@ -89,7 +89,7 @@ fun getGrantedKeyFromId(id: Long): Key
 
 Returns the key with the specified`id`that was previously shared with the app.
 
-This method can return instances of both [javax.crypto.SecretKey](../javax/crypto/SecretKey.md) and . If a key with the provide`id`has not been granted to the caller, then an [UnrecoverableKeyException](../java/security/UnrecoverableKeyException.md) is thrown.
+This method can return instances of both [javax.crypto.SecretKey](../javax.crypto/SecretKey.md) and . If a key with the provide`id`has not been granted to the caller, then an [UnrecoverableKeyException](../java.security/UnrecoverableKeyException.md) is thrown.
 
 | Parameters ||
 |------|-----------------------------------------------------------------------------------------------------------------------------|
@@ -97,7 +97,7 @@ This method can return instances of both [javax.crypto.SecretKey](../javax/crypt
 
 | Return ||
 |-------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| [Key](../java/security/Key.md) | the [Key](../java/security/Key.md) that was shared with the app This value cannot be`null`. |
+| [Key](../java.security/Key.md) | the [Key](../java.security/Key.md) that was shared with the app This value cannot be`null`. |
 
 | Exceptions ||
 |----------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -106,7 +106,7 @@ This method can return instances of both [javax.crypto.SecretKey](../javax/crypt
 
 **See Also**
 
-- [#grantKeyAccess(String, int)](../android/security/keystore/KeyStoreManager.md)) 
+- [#grantKeyAccess(String, int)](KeyStoreManager.md)) 
 
 ### getGrantedKeyPairFromId
 
@@ -116,9 +116,9 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 fun getGrantedKeyPairFromId(id: Long): KeyPair
 ```
 
-Returns a [KeyPair](../java/security/KeyPair.md) containing the public and private key associated with the key that was previously shared with the app under the provided`id`.
+Returns a [KeyPair](../java.security/KeyPair.md) containing the public and private key associated with the key that was previously shared with the app under the provided`id`.
 
-If a [java.security.PrivateKey](../java/security/PrivateKey.md) has not been granted to the caller with the specified`id`, then an [UnrecoverableKeyException](../java/security/UnrecoverableKeyException.md) is thrown.
+If a [java.security.PrivateKey](../java.security/PrivateKey.md) has not been granted to the caller with the specified`id`, then an [UnrecoverableKeyException](../java.security/UnrecoverableKeyException.md) is thrown.
 
 | Parameters ||
 |------|-------------------------------------------------------------------------------------------------------------------------------------|
@@ -126,7 +126,7 @@ If a [java.security.PrivateKey](../java/security/PrivateKey.md) has not been gra
 
 | Return ||
 |---------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| [KeyPair](../java/security/KeyPair.md) | a KeyPair containing the public and private key shared with the app This value cannot be`null`. |
+| [KeyPair](../java.security/KeyPair.md) | a KeyPair containing the public and private key shared with the app This value cannot be`null`. |
 
 | Exceptions ||
 |----------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -145,7 +145,7 @@ Returns tag-specific data required to interpret a tag's attested value. When per
 
 | Parameters ||
 |-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `tag` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):tag for which info is being requested Value is [android.security.keystore.KeyStoreManager#MODULE_HASH](../android/security/keystore/KeyStoreManager.md) |
+| `tag` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):tag for which info is being requested Value is [android.security.keystore.KeyStoreManager#MODULE_HASH](KeyStoreManager.md) |
 
 | Return ||
 |-----------------------------------------------------------------------------------------|-----------------------------------------------|
@@ -168,9 +168,9 @@ fun grantKeyAccess(
 
 Grants access to the key owned by the calling app stored under the specified`alias`to another app on the device with the provided`uid`.
 
-This method supports granting access to instances of both [javax.crypto.SecretKey](../javax/crypto/SecretKey.md) and [java.security.PrivateKey](../java/security/PrivateKey.md). The resulting ID will persist across reboots and can be used by the grantee app for the life of the key or until access is revoked with [revokeKeyAccess(java.lang.String,int)](../android/security/keystore/KeyStoreManager.md)).
+This method supports granting access to instances of both [javax.crypto.SecretKey](../javax.crypto/SecretKey.md) and [java.security.PrivateKey](../java.security/PrivateKey.md). The resulting ID will persist across reboots and can be used by the grantee app for the life of the key or until access is revoked with [revokeKeyAccess(java.lang.String,int)](KeyStoreManager.md)).
 
-If the provided`alias`does not correspond to a key in the Android KeyStore, then an [UnrecoverableKeyException](../java/security/UnrecoverableKeyException.md) is thrown.
+If the provided`alias`does not correspond to a key in the Android KeyStore, then an [UnrecoverableKeyException](../java.security/UnrecoverableKeyException.md) is thrown.
 
 | Parameters ||
 |---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -179,7 +179,7 @@ If the provided`alias`does not correspond to a key in the Android KeyStore, then
 
 | Return ||
 |------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | the ID of the granted key; this can be shared with the specified app, and that app can use [getGrantedKeyFromId(long)](../android/security/keystore/KeyStoreManager.md))to access the key |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | the ID of the granted key; this can be shared with the specified app, and that app can use [getGrantedKeyFromId(long)](KeyStoreManager.md))to access the key |
 
 | Exceptions ||
 |-------------------------------------------|-----------------------------------------------------------------------|
@@ -188,7 +188,7 @@ If the provided`alias`does not correspond to a key in the Android KeyStore, then
 
 **See Also**
 
-- [#getGrantedKeyFromId(long)](../android/security/keystore/KeyStoreManager.md)) 
+- [#getGrantedKeyFromId(long)](KeyStoreManager.md)) 
 
 ### revokeKeyAccess
 
@@ -203,7 +203,7 @@ fun revokeKeyAccess(
 
 Revokes access to the key in the app's namespace stored under the specified`alias`that was previously granted to another app on the device with the provided`uid`.
 
-If the provided`alias`does not correspond to a key in the Android KeyStore, then an [UnrecoverableKeyException](../java/security/UnrecoverableKeyException.md) is thrown.
+If the provided`alias`does not correspond to a key in the Android KeyStore, then an [UnrecoverableKeyException](../java.security/UnrecoverableKeyException.md) is thrown.
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|

@@ -10,16 +10,16 @@ class Paths
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.nio.file.Paths](../java/nio/file/Paths.md) |
+| ↳ | [java.nio.file.Paths](Paths.md) |
 
-This class consists exclusively of static methods that return a [Path](../java/nio/file/Path.md) by converting a path string or [URI](../java/net/URI.md).
+This class consists exclusively of static methods that return a [Path](Path.md) by converting a path string or [URI](../java.net/URI.md).
 
 ## Summary
 
 | Public methods ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Path](../java/nio/file/Path.md)! | [get](../java/nio/file/Paths.md))`(`first:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `vararg` `more:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Converts a path string, or a sequence of strings that when joined form a path string, to a`Path`. |
-| static [Path](../java/nio/file/Path.md)! | [get](../java/nio/file/Paths.md))`(`uri:` ` [URI](../java/net/URI.md)!`)` Converts the given URI to a [Path](../java/nio/file/Path.md) object. |
+| static [Path](Path.md)! | [get](Paths.md))`(`first:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `vararg` `more:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Converts a path string, or a sequence of strings that when joined form a path string, to a`Path`. |
+| static [Path](Path.md)! | [get](Paths.md))`(`uri:` ` [URI](../java.net/URI.md)!`)` Converts the given URI to a [Path](Path.md) object. |
 
 ## Public methods
 
@@ -43,7 +43,7 @@ Converts a path string, or a sequence of strings that when joined form a path st
 
 | Return ||
 |----------------------------------------------------------------------------|---------------------|
-| [Path](../java/nio/file/Path.md)! | the resulting`Path` |
+| [Path](Path.md)! | the resulting`Path` |
 
 | Exceptions ||
 |--------------------------------------|---------------------------------------------------|
@@ -51,8 +51,8 @@ Converts a path string, or a sequence of strings that when joined form a path st
 
 **See Also**
 
-- [java.nio.file.FileSystem#getPath](../java/nio/file/FileSystem.md))
-- [java.nio.file.Path#of(String,String...)](../java/nio/file/Path.md)) 
+- [java.nio.file.FileSystem#getPath](FileSystem.md))
+- [java.nio.file.Path#of(String,String...)](Path.md)) 
 
 ### get
 
@@ -62,15 +62,15 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 static fun get(uri: URI!): Path!
 ```
 
-Converts the given URI to a [Path](../java/nio/file/Path.md) object.
+Converts the given URI to a [Path](Path.md) object.
 
 | Parameters ||
 |-------|----------------------------------------------------------------------------------------------|
-| `uri` | [URI](../java/net/URI.md)!:the URI to convert |
+| `uri` | [URI](../java.net/URI.md)!:the URI to convert |
 
 | Return ||
 |----------------------------------------------------------------------------|---------------------|
-| [Path](../java/nio/file/Path.md)! | the resulting`Path` |
+| [Path](Path.md)! | the resulting`Path` |
 
 | Exceptions ||
 |---------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -81,4 +81,4 @@ Converts the given URI to a [Path](../java/nio/file/Path.md) object.
 
 **See Also**
 
-- [java.nio.file.Path#of(URI)](../java/nio/file/Path.md))
+- [java.nio.file.Path#of(URI)](Path.md))

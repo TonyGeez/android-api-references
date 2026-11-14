@@ -10,8 +10,8 @@ open class ObjectOutputStream : OutputStream, ObjectOutput, ObjectStreamConsta
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.io.OutputStream](../java/io/OutputStream.md) ||
-| | ↳ | [java.io.ObjectOutputStream](../java/io/ObjectOutputStream.md) |
+| ↳ | [java.io.OutputStream](OutputStream.md) ||
+| | ↳ | [java.io.ObjectOutputStream](ObjectOutputStream.md) |
 
 An ObjectOutputStream writes primitive data types and graphs of Java objects to an OutputStream. The objects can be read (reconstituted) using an ObjectInputStream. Persistent storage of objects can be accomplished by using a file for the stream. If the stream is a network socket stream, the objects can be reconstituted on another host or in another process.
 
@@ -69,69 +69,69 @@ Primitive data, excluding serializable fields and externalizable data, is writte
 
 | Inherited constants ||
 |---|---|
-| From class [ObjectStreamConstants](../java/io/ObjectStreamConstants.md) |--------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROTOCOL_VERSION_1](../java/io/ObjectStreamConstants.md) <br /> A Stream Protocol Version. All externalizable data is written in JDK 1.1 external data format after calling this method. This version is needed to write streams containing Externalizable data that can be read by pre-JDK 1.1.6 JVMs. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROTOCOL_VERSION_2](../java/io/ObjectStreamConstants.md) <br /> A Stream Protocol Version. This protocol is written by JVM 1.2. Externalizable data is written in block data mode and is terminated with TC_ENDBLOCKDATA. Externalizable class descriptor flags has SC_BLOCK_DATA enabled. JVM 1.1.6 and greater can read this format change. Enables writing a nonSerializable class descriptor into the stream. The serialVersionUID of a nonSerializable class is set to 0L. <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [SC_BLOCK_DATA](../java/io/ObjectStreamConstants.md) <br /> Bit mask for ObjectStreamClass flag. Indicates Externalizable data written in Block Data mode. Added for PROTOCOL_VERSION_2. <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [SC_ENUM](../java/io/ObjectStreamConstants.md) <br /> Bit mask for ObjectStreamClass flag. Indicates class is an enum type. <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [SC_EXTERNALIZABLE](../java/io/ObjectStreamConstants.md) <br /> Bit mask for ObjectStreamClass flag. Indicates class is Externalizable. <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [SC_SERIALIZABLE](../java/io/ObjectStreamConstants.md) <br /> Bit mask for ObjectStreamClass flag. Indicates class is Serializable. <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [SC_WRITE_METHOD](../java/io/ObjectStreamConstants.md) <br /> Bit mask for ObjectStreamClass flag. Indicates a Serializable class defines its own writeObject method. <br /> | | [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [STREAM_MAGIC](../java/io/ObjectStreamConstants.md) <br /> Magic number that is written to the stream header. <br /> | | [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [STREAM_VERSION](../java/io/ObjectStreamConstants.md) <br /> Version number that is written to the stream header. <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_ARRAY](../java/io/ObjectStreamConstants.md) <br /> new Array. <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_BASE](../java/io/ObjectStreamConstants.md) <br /> First tag value. <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_BLOCKDATA](../java/io/ObjectStreamConstants.md) <br /> Block of optional data. Byte following tag indicates number of bytes in this block data. <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_BLOCKDATALONG](../java/io/ObjectStreamConstants.md) <br /> long Block data. The long following the tag indicates the number of bytes in this block data. <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_CLASS](../java/io/ObjectStreamConstants.md) <br /> Reference to Class. <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_CLASSDESC](../java/io/ObjectStreamConstants.md) <br /> new Class Descriptor. <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_ENDBLOCKDATA](../java/io/ObjectStreamConstants.md) <br /> End of optional block data blocks for an object. <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_ENUM](../java/io/ObjectStreamConstants.md) <br /> new Enum constant. <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_EXCEPTION](../java/io/ObjectStreamConstants.md) <br /> Exception during write. <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_LONGSTRING](../java/io/ObjectStreamConstants.md) <br /> Long string. <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_MAX](../java/io/ObjectStreamConstants.md) <br /> Last tag value. <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_NULL](../java/io/ObjectStreamConstants.md) <br /> Null object reference. <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_OBJECT](../java/io/ObjectStreamConstants.md) <br /> new Object. <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_PROXYCLASSDESC](../java/io/ObjectStreamConstants.md) <br /> new Proxy Class Descriptor. <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_REFERENCE](../java/io/ObjectStreamConstants.md) <br /> Reference to an object already written into the stream. <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_RESET](../java/io/ObjectStreamConstants.md) <br /> Reset stream context. All handles written into stream are reset. <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_STRING](../java/io/ObjectStreamConstants.md) <br /> new String. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [baseWireHandle](../java/io/ObjectStreamConstants.md) <br /> First wire handle to be assigned. <br /> | ||
+| From class [ObjectStreamConstants](ObjectStreamConstants.md) |--------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROTOCOL_VERSION_1](ObjectStreamConstants.md) <br /> A Stream Protocol Version. All externalizable data is written in JDK 1.1 external data format after calling this method. This version is needed to write streams containing Externalizable data that can be read by pre-JDK 1.1.6 JVMs. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROTOCOL_VERSION_2](ObjectStreamConstants.md) <br /> A Stream Protocol Version. This protocol is written by JVM 1.2. Externalizable data is written in block data mode and is terminated with TC_ENDBLOCKDATA. Externalizable class descriptor flags has SC_BLOCK_DATA enabled. JVM 1.1.6 and greater can read this format change. Enables writing a nonSerializable class descriptor into the stream. The serialVersionUID of a nonSerializable class is set to 0L. <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [SC_BLOCK_DATA](ObjectStreamConstants.md) <br /> Bit mask for ObjectStreamClass flag. Indicates Externalizable data written in Block Data mode. Added for PROTOCOL_VERSION_2. <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [SC_ENUM](ObjectStreamConstants.md) <br /> Bit mask for ObjectStreamClass flag. Indicates class is an enum type. <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [SC_EXTERNALIZABLE](ObjectStreamConstants.md) <br /> Bit mask for ObjectStreamClass flag. Indicates class is Externalizable. <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [SC_SERIALIZABLE](ObjectStreamConstants.md) <br /> Bit mask for ObjectStreamClass flag. Indicates class is Serializable. <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [SC_WRITE_METHOD](ObjectStreamConstants.md) <br /> Bit mask for ObjectStreamClass flag. Indicates a Serializable class defines its own writeObject method. <br /> | | [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [STREAM_MAGIC](ObjectStreamConstants.md) <br /> Magic number that is written to the stream header. <br /> | | [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [STREAM_VERSION](ObjectStreamConstants.md) <br /> Version number that is written to the stream header. <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_ARRAY](ObjectStreamConstants.md) <br /> new Array. <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_BASE](ObjectStreamConstants.md) <br /> First tag value. <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_BLOCKDATA](ObjectStreamConstants.md) <br /> Block of optional data. Byte following tag indicates number of bytes in this block data. <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_BLOCKDATALONG](ObjectStreamConstants.md) <br /> long Block data. The long following the tag indicates the number of bytes in this block data. <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_CLASS](ObjectStreamConstants.md) <br /> Reference to Class. <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_CLASSDESC](ObjectStreamConstants.md) <br /> new Class Descriptor. <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_ENDBLOCKDATA](ObjectStreamConstants.md) <br /> End of optional block data blocks for an object. <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_ENUM](ObjectStreamConstants.md) <br /> new Enum constant. <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_EXCEPTION](ObjectStreamConstants.md) <br /> Exception during write. <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_LONGSTRING](ObjectStreamConstants.md) <br /> Long string. <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_MAX](ObjectStreamConstants.md) <br /> Last tag value. <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_NULL](ObjectStreamConstants.md) <br /> Null object reference. <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_OBJECT](ObjectStreamConstants.md) <br /> new Object. <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_PROXYCLASSDESC](ObjectStreamConstants.md) <br /> new Proxy Class Descriptor. <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_REFERENCE](ObjectStreamConstants.md) <br /> Reference to an object already written into the stream. <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_RESET](ObjectStreamConstants.md) <br /> Reset stream context. All handles written into stream are reset. <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TC_STRING](ObjectStreamConstants.md) <br /> new String. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [baseWireHandle](ObjectStreamConstants.md) <br /> First wire handle to be assigned. <br /> | ||
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ObjectOutputStream](../java/io/ObjectOutputStream.md))`(`out:` ` [OutputStream](../java/io/OutputStream.md)!`)` Creates an ObjectOutputStream that writes to the specified OutputStream. |
+| [ObjectOutputStream](ObjectOutputStream.md))`(`out:` ` [OutputStream](OutputStream.md)!`)` Creates an ObjectOutputStream that writes to the specified OutputStream. |
 
 | Protected constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ObjectOutputStream](../java/io/ObjectOutputStream.md))`()` Provide a way for subclasses that are completely reimplementing ObjectOutputStream to not have to allocate private data just used by this implementation of ObjectOutputStream. |
+| [ObjectOutputStream](ObjectOutputStream.md))`()` Provide a way for subclasses that are completely reimplementing ObjectOutputStream to not have to allocate private data just used by this implementation of ObjectOutputStream. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../java/io/ObjectOutputStream.md))`()` Closes the stream. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [defaultWriteObject](../java/io/ObjectOutputStream.md))`()` Write the non-static and non-transient fields of the current class to this stream. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [flush](../java/io/ObjectOutputStream.md))`()` Flushes the stream. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](ObjectOutputStream.md))`()` Closes the stream. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [defaultWriteObject](ObjectOutputStream.md))`()` Write the non-static and non-transient fields of the current class to this stream. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [flush](ObjectOutputStream.md))`()` Flushes the stream. |
 | --- | --- |
-| open [ObjectOutputStream.PutField](../java/io/ObjectOutputStream.PutField.md)! | [putFields](../java/io/ObjectOutputStream.md))`()` Retrieve the object used to buffer persistent fields to be written to the stream. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](../java/io/ObjectOutputStream.md))`()` Reset will disregard the state of any objects already written to the stream. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [useProtocolVersion](../java/io/ObjectOutputStream.md))`(`version:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Specify stream protocol version to use when writing the stream. |
+| open [ObjectOutputStream.PutField](../java/io/ObjectOutputStream.PutField.md)! | [putFields](ObjectOutputStream.md))`()` Retrieve the object used to buffer persistent fields to be written to the stream. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](ObjectOutputStream.md))`()` Reset will disregard the state of any objects already written to the stream. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [useProtocolVersion](ObjectOutputStream.md))`(`version:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Specify stream protocol version to use when writing the stream. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](../java/io/ObjectOutputStream.md))`(`buf:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Writes an array of bytes. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](../java/io/ObjectOutputStream.md))`(`buf:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes a sub array of bytes. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](../java/io/ObjectOutputStream.md))`(`val:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes a byte. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](ObjectOutputStream.md))`(`buf:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Writes an array of bytes. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](ObjectOutputStream.md))`(`buf:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes a sub array of bytes. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](ObjectOutputStream.md))`(`val:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes a byte. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeBoolean](../java/io/ObjectOutputStream.md))`(`val:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Writes a boolean. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeByte](../java/io/ObjectOutputStream.md))`(`val:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes an 8 bit byte. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeBytes](../java/io/ObjectOutputStream.md))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Writes a String as a sequence of bytes. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeBoolean](ObjectOutputStream.md))`(`val:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Writes a boolean. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeByte](ObjectOutputStream.md))`(`val:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes an 8 bit byte. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeBytes](ObjectOutputStream.md))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Writes a String as a sequence of bytes. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeChar](../java/io/ObjectOutputStream.md))`(`val:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes a 16 bit char. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeChars](../java/io/ObjectOutputStream.md))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Writes a String as a sequence of chars. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeDouble](../java/io/ObjectOutputStream.md))`(`val:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Writes a 64 bit double. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeChar](ObjectOutputStream.md))`(`val:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes a 16 bit char. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeChars](ObjectOutputStream.md))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Writes a String as a sequence of chars. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeDouble](ObjectOutputStream.md))`(`val:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Writes a 64 bit double. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeFields](../java/io/ObjectOutputStream.md))`()` Write the buffered fields to the stream. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeFloat](../java/io/ObjectOutputStream.md))`(`val:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Writes a 32 bit float. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeInt](../java/io/ObjectOutputStream.md))`(`val:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes a 32 bit int. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeFields](ObjectOutputStream.md))`()` Write the buffered fields to the stream. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeFloat](ObjectOutputStream.md))`(`val:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Writes a 32 bit float. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeInt](ObjectOutputStream.md))`(`val:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes a 32 bit int. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeLong](../java/io/ObjectOutputStream.md))`(`val:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Writes a 64 bit long. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeObject](../java/io/ObjectOutputStream.md))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Write the specified object to the ObjectOutputStream. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeShort](../java/io/ObjectOutputStream.md))`(`val:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes a 16 bit short. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeLong](ObjectOutputStream.md))`(`val:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Writes a 64 bit long. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeObject](ObjectOutputStream.md))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Write the specified object to the ObjectOutputStream. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeShort](ObjectOutputStream.md))`(`val:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes a 16 bit short. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeUTF](../java/io/ObjectOutputStream.md))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Primitive data write of this String in [modified UTF-8](../java/io/DataInput.md) format. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeUnshared](../java/io/ObjectOutputStream.md))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Writes an "unshared" object to the ObjectOutputStream. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeUTF](ObjectOutputStream.md))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Primitive data write of this String in [modified UTF-8](DataInput.md) format. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeUnshared](ObjectOutputStream.md))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Writes an "unshared" object to the ObjectOutputStream. |
 
 | Protected methods ||
 |----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [annotateClass](../java/io/ObjectOutputStream.md))`(`cl:` ` [Class](../java/lang/Class.md)<*>!`)` Subclasses may implement this method to allow class data to be stored in the stream. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [annotateProxyClass](../java/io/ObjectOutputStream.md))`(`cl:` ` [Class](../java/lang/Class.md)<*>!`)` Subclasses may implement this method to store custom data in the stream along with descriptors for dynamic proxy classes. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [drain](../java/io/ObjectOutputStream.md))`()` Drain any buffered data in ObjectOutputStream. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [annotateClass](ObjectOutputStream.md))`(`cl:` ` [Class](../java.lang/Class.md)<*>!`)` Subclasses may implement this method to allow class data to be stored in the stream. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [annotateProxyClass](ObjectOutputStream.md))`(`cl:` ` [Class](../java.lang/Class.md)<*>!`)` Subclasses may implement this method to store custom data in the stream along with descriptors for dynamic proxy classes. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [drain](ObjectOutputStream.md))`()` Drain any buffered data in ObjectOutputStream. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [enableReplaceObject](../java/io/ObjectOutputStream.md))`(`enable:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Enable the stream to do replacement of objects in the stream. |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [replaceObject](../java/io/ObjectOutputStream.md))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` This method will allow trusted subclasses of ObjectOutputStream to substitute one object for another during serialization. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeClassDescriptor](../java/io/ObjectOutputStream.md))`(`desc:` ` [ObjectStreamClass](../java/io/ObjectStreamClass.md)!`)` Write the specified class descriptor to the ObjectOutputStream. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [enableReplaceObject](ObjectOutputStream.md))`(`enable:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Enable the stream to do replacement of objects in the stream. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [replaceObject](ObjectOutputStream.md))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` This method will allow trusted subclasses of ObjectOutputStream to substitute one object for another during serialization. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeClassDescriptor](ObjectOutputStream.md))`(`desc:` ` [ObjectStreamClass](ObjectStreamClass.md)!`)` Write the specified class descriptor to the ObjectOutputStream. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeObjectOverride](../java/io/ObjectOutputStream.md))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Method used by subclasses to override the default writeObject method. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeStreamHeader](../java/io/ObjectOutputStream.md))`()` The writeStreamHeader method is provided so subclasses can append or prepend their own header to the stream. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeObjectOverride](ObjectOutputStream.md))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Method used by subclasses to override the default writeObject method. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeStreamHeader](ObjectOutputStream.md))`()` The writeStreamHeader method is provided so subclasses can append or prepend their own header to the stream. |
 
 | Inherited functions ||
 |---|---|
-| From class [OutputStream](../java/io/OutputStream.md) |--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [OutputStream](../java/io/OutputStream.md)! | [nullOutputStream](../java/io/OutputStream.md))`()` <br /> Returns a new`OutputStream`which discards all bytes. The returned stream is initially open. The stream is closed by calling the`close()`method. Subsequent calls to`close()`have no effect. While the stream is open, the`write(int)`,`write(byte[])`, and`write(byte[], int, int)`methods do nothing. After the stream has been closed, these methods all throw`IOException`. The`flush()`method does nothing. <br /> | ||
+| From class [OutputStream](OutputStream.md) |--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [OutputStream](OutputStream.md)! | [nullOutputStream](OutputStream.md))`()` <br /> Returns a new`OutputStream`which discards all bytes. The returned stream is initially open. The stream is closed by calling the`close()`method. Subsequent calls to`close()`have no effect. While the stream is open, the`write(int)`,`write(byte[])`, and`write(byte[], int, int)`methods do nothing. After the stream has been closed, these methods all throw`IOException`. The`flush()`method does nothing. <br /> | ||
 
 | Inherited properties ||
 |---|---|
-| From class [ObjectStreamConstants](../java/io/ObjectStreamConstants.md) |----------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [SerializablePermission](../java/io/SerializablePermission.md)! | [SUBCLASS_IMPLEMENTATION_PERMISSION](../java/io/ObjectStreamConstants.md) <br /> Enable overriding of readObject and writeObject. <br /> | | [SerializablePermission](../java/io/SerializablePermission.md)! | [SUBSTITUTION_PERMISSION](../java/io/ObjectStreamConstants.md) <br /> Enable substitution of one object for another during serialization/deserialization. <br /> | ||
+| From class [ObjectStreamConstants](ObjectStreamConstants.md) |----------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [SerializablePermission](SerializablePermission.md)! | [SUBCLASS_IMPLEMENTATION_PERMISSION](ObjectStreamConstants.md) <br /> Enable overriding of readObject and writeObject. <br /> | | [SerializablePermission](SerializablePermission.md)! | [SUBSTITUTION_PERMISSION](ObjectStreamConstants.md) <br /> Enable substitution of one object for another during serialization/deserialization. <br /> | ||
 
 ## Public constructors
 
@@ -149,7 +149,7 @@ If a security manager is installed, this constructor will check for the "enableS
 
 | Parameters ||
 |-------|----------------------------------------------------------------------------------------------------------------|
-| `out` | [OutputStream](../java/io/OutputStream.md)!:output stream to write to |
+| `out` | [OutputStream](OutputStream.md)!:output stream to write to |
 
 | Exceptions ||
 |----------------------------------|----------------------------------------------------------------------|
@@ -160,9 +160,9 @@ If a security manager is installed, this constructor will check for the "enableS
 
 **See Also**
 
-- [java.io.ObjectOutputStream#ObjectOutputStream()](../java/io/ObjectOutputStream.md))
-- [java.io.ObjectOutputStream#putFields()](../java/io/ObjectOutputStream.md))
-- [java.io.ObjectInputStream#ObjectInputStream(InputStream)](../java/io/ObjectInputStream.md))
+- [java.io.ObjectOutputStream#ObjectOutputStream()](ObjectOutputStream.md))
+- [java.io.ObjectOutputStream#putFields()](ObjectOutputStream.md))
+- [java.io.ObjectInputStream#ObjectInputStream(InputStream)](ObjectInputStream.md))
 
 ## Protected constructors
 
@@ -185,7 +185,7 @@ If there is a security manager installed, this method first calls the security m
 
 **See Also**
 
-- [java.io.SerializablePermission](../java/io/SerializablePermission.md)
+- [java.io.SerializablePermission](SerializablePermission.md)
 
 ## Public methods
 
@@ -291,8 +291,8 @@ Every effort will be made to avoid introducing additional backwards incompatibil
 
 **See Also**
 
-- [java.io.ObjectStreamConstants#PROTOCOL_VERSION_1](../java/io/ObjectStreamConstants.md)
-- [java.io.ObjectStreamConstants#PROTOCOL_VERSION_2](../java/io/ObjectStreamConstants.md) 
+- [java.io.ObjectStreamConstants#PROTOCOL_VERSION_1](ObjectStreamConstants.md)
+- [java.io.ObjectStreamConstants#PROTOCOL_VERSION_2](ObjectStreamConstants.md) 
 
 ### write
 
@@ -594,7 +594,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun writeUTF(str: String!): Unit
 ```
 
-Primitive data write of this String in [modified UTF-8](../java/io/DataInput.md) format. Note that there is a significant difference between writing a String into the stream as primitive data or as an Object. A String instance written by writeObject is written into the stream as a String initially. Future writeObject() calls write references to the string into the stream.
+Primitive data write of this String in [modified UTF-8](DataInput.md) format. Note that there is a significant difference between writing a String into the stream as primitive data or as an Object. A String instance written by writeObject is written into the stream as a String initially. Future writeObject() calls write references to the string into the stream.
 
 | Parameters ||
 |-------|------------------------------------------------------------------------------------------------------------|
@@ -649,7 +649,7 @@ Subclasses may implement this method to allow class data to be stored in the str
 
 | Parameters ||
 |------|----------------------------------------------------------------------------------------------------------------------------|
-| `cl` | [Class](../java/lang/Class.md)\<\*\>!:the class to annotate custom data for |
+| `cl` | [Class](../java.lang/Class.md)\<\*\>!:the class to annotate custom data for |
 
 | Exceptions ||
 |-----------------------|------------------------------------------------------|
@@ -671,7 +671,7 @@ The corresponding method in`ObjectInputStream`is`resolveProxyClass`. For a given
 
 | Parameters ||
 |------|----------------------------------------------------------------------------------------------------------------------------------|
-| `cl` | [Class](../java/lang/Class.md)\<\*\>!:the proxy class to annotate custom data for |
+| `cl` | [Class](../java.lang/Class.md)\<\*\>!:the proxy class to annotate custom data for |
 
 | Exceptions ||
 |-----------------------|------------------------------------------------------|
@@ -721,7 +721,7 @@ If`enable`is true, and there is a security manager installed, this method first 
 
 **See Also**
 
-- [java.io.SerializablePermission](../java/io/SerializablePermission.md) 
+- [java.io.SerializablePermission](SerializablePermission.md) 
 
 ### replaceObject
 
@@ -767,7 +767,7 @@ Note that this method will only be called if the ObjectOutputStream is not using
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------------------------|
-| `desc` | [ObjectStreamClass](../java/io/ObjectStreamClass.md)!:class descriptor to write to the stream |
+| `desc` | [ObjectStreamClass](ObjectStreamClass.md)!:class descriptor to write to the stream |
 
 | Exceptions ||
 |-----------------------|-------------------------------|
@@ -775,9 +775,9 @@ Note that this method will only be called if the ObjectOutputStream is not using
 
 **See Also**
 
-- [java.io.ObjectInputStream#readClassDescriptor()](../java/io/ObjectInputStream.md))
-- [#useProtocolVersion(int)](../java/io/ObjectOutputStream.md))
-- [java.io.ObjectStreamConstants#PROTOCOL_VERSION_1](../java/io/ObjectStreamConstants.md) 
+- [java.io.ObjectInputStream#readClassDescriptor()](ObjectInputStream.md))
+- [#useProtocolVersion(int)](ObjectOutputStream.md))
+- [java.io.ObjectStreamConstants#PROTOCOL_VERSION_1](ObjectStreamConstants.md) 
 
 ### writeObjectOverride
 
@@ -800,7 +800,7 @@ Method used by subclasses to override the default writeObject method. This metho
 **See Also**
 
 - <https://developer.android.com/reference/kotlin/java/io/ObjectOutputStream#ObjectOutputStream()>
-- [#writeObject(Object)](../java/io/ObjectOutputStream.md)) 
+- [#writeObject(Object)](ObjectOutputStream.md)) 
 
 ### writeStreamHeader
 

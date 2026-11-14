@@ -4,7 +4,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # StructMsghdr
 
-Kotlin | [Java](../android/system/StructMsghdr.md) 
+Kotlin | [Java](StructMsghdr.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class StructMsghdr
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.system.StructMsghdr](../android/system/StructMsghdr.md) |
+| ↳ | [android.system.StructMsghdr](StructMsghdr.md) |
 
 Corresponds to C's `struct msghdr`
 
@@ -21,15 +21,15 @@ Corresponds to C's `struct msghdr`
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [StructMsghdr](../android/system/StructMsghdr.md))`(`msg_name:` ` [SocketAddress](../java/net/SocketAddress.md)?`, `msg_iov:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ByteBuffer](../java/nio/ByteBuffer.md)!>`, `msg_control:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [StructCmsghdr](../android/system/StructCmsghdr.md)!>?`, `msg_flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs an instance with the given field values |
+| [StructMsghdr](StructMsghdr.md))`(`msg_name:` ` [SocketAddress](../java.net/SocketAddress.md)?`, `msg_iov:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ByteBuffer](../java.nio/ByteBuffer.md)!>`, `msg_control:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [StructCmsghdr](StructCmsghdr.md)!>?`, `msg_flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs an instance with the given field values |
 
 | Properties ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [StructCmsghdr](../android/system/StructCmsghdr.md)!\>? | [msg_control](../android/system/StructMsghdr.md) Ancillary data |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [msg_flags](../android/system/StructMsghdr.md) Flags on received message. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ByteBuffer](../java/nio/ByteBuffer.md)!\> | [msg_iov](../android/system/StructMsghdr.md) Scatter/gather array |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [StructCmsghdr](StructCmsghdr.md)!\>? | [msg_control](StructMsghdr.md) Ancillary data |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [msg_flags](StructMsghdr.md) Flags on received message. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ByteBuffer](../java.nio/ByteBuffer.md)!\> | [msg_iov](StructMsghdr.md) Scatter/gather array |
 | --- | --- |
-| [SocketAddress](../java/net/SocketAddress.md)? | [msg_name](../android/system/StructMsghdr.md) Optional address. |
+| [SocketAddress](../java.net/SocketAddress.md)? | [msg_name](StructMsghdr.md) Optional address. |
 
 ## Public constructors
 
@@ -49,9 +49,9 @@ Constructs an instance with the given field values
 
 | Parameters ||
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `msg_name` | [SocketAddress](../java/net/SocketAddress.md)?: This value may be `null`. |
-| `msg_iov` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ByteBuffer](../java/nio/ByteBuffer.md)!\>: This value cannot be `null`. |
-| `msg_control` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [StructCmsghdr](../android/system/StructCmsghdr.md)!\>?: This value may be `null`. |
+| `msg_name` | [SocketAddress](../java.net/SocketAddress.md)?: This value may be `null`. |
+| `msg_iov` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ByteBuffer](../java.nio/ByteBuffer.md)!\>: This value cannot be `null`. |
+| `msg_control` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [StructCmsghdr](StructCmsghdr.md)!\>?: This value may be `null`. |
 | --- | --- |
 
 ## Properties

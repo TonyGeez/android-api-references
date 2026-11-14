@@ -5,7 +5,7 @@ Also in [U Extensions 13](https://developer.android.com/sdkExtensions)
 
 # PlannedExerciseBlock
 
-Kotlin| [Java](../android/health/connect/datatypes/PlannedExerciseBlock.md) 
+Kotlin| [Java](PlannedExerciseBlock.md) 
 | --- | --- |
 
 ```
@@ -14,24 +14,24 @@ class PlannedExerciseBlock
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.health.connect.datatypes.PlannedExerciseBlock](../android/health/connect/datatypes/PlannedExerciseBlock.md) |
+| ↳ | [android.health.connect.datatypes.PlannedExerciseBlock](PlannedExerciseBlock.md) |
 
-Represents a series of [PlannedExerciseStep](../android/health/connect/datatypes/PlannedExerciseStep.md). Part of a [PlannedExerciseSessionRecord](../android/health/connect/datatypes/PlannedExerciseSessionRecord.md).
+Represents a series of [PlannedExerciseStep](PlannedExerciseStep.md). Part of a [PlannedExerciseSessionRecord](PlannedExerciseSessionRecord.md).
 
 ## Summary
 
 | Nested classes ||
 |---|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](../android/health/connect/datatypes/PlannedExerciseBlock.Builder.md) Builder of [PlannedExerciseBlock](../android/health/connect/datatypes/PlannedExerciseBlock.md). |
+| | [Builder](../android/health/connect/datatypes/PlannedExerciseBlock.Builder.md) Builder of [PlannedExerciseBlock](PlannedExerciseBlock.md). |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/health/connect/datatypes/PlannedExerciseBlock.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | [getDescription](../android/health/connect/datatypes/PlannedExerciseBlock.md))`()` A description for this block, e. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRepetitions](../android/health/connect/datatypes/PlannedExerciseBlock.md))`()` The number of times this block should be repeated by the user. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](PlannedExerciseBlock.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | [getDescription](PlannedExerciseBlock.md))`()` A description for this block, e. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRepetitions](PlannedExerciseBlock.md))`()` The number of times this block should be repeated by the user. |
 | --- | --- |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PlannedExerciseStep](../android/health/connect/datatypes/PlannedExerciseStep.md)!\> | [getSteps](../android/health/connect/datatypes/PlannedExerciseBlock.md))`()` The steps associated with this block. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/health/connect/datatypes/PlannedExerciseBlock.md))`()` <br /> |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PlannedExerciseStep](PlannedExerciseStep.md)!\> | [getSteps](PlannedExerciseBlock.md))`()` The steps associated with this block. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](PlannedExerciseBlock.md))`()` <br /> |
 
 ## Public methods
 
@@ -103,7 +103,7 @@ The steps associated with this block.
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [PlannedExerciseStep](../android/health/connect/datatypes/PlannedExerciseStep.md)!> | An unmodifiable list of [PlannedExerciseStep](../android/health/connect/datatypes/PlannedExerciseStep.md). This value cannot be`null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [PlannedExerciseStep](PlannedExerciseStep.md)!> | An unmodifiable list of [PlannedExerciseStep](PlannedExerciseStep.md). This value cannot be`null`. |
 
 ### hashCode
 

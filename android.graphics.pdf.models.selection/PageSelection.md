@@ -3,7 +3,7 @@ Also in [S Extensions 13](https://developer.android.com/sdkExtensions)
 
 # PageSelection
 
-Kotlin | [Java](../android/graphics/pdf/models/selection/PageSelection.md)
+Kotlin | [Java](PageSelection.md)
 | --- | --- |
 
 ```
@@ -12,7 +12,7 @@ class PageSelection : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.graphics.pdf.models.selection.PageSelection](../android/graphics/pdf/models/selection/PageSelection.md) |
+| ↳ | [android.graphics.pdf.models.selection.PageSelection](PageSelection.md) |
 
 Represents the list of selected content on a particular page of the PDF document. By default, the selection boundary is represented from left to right. **Note:**Currently supports text selection only.
 
@@ -30,16 +30,16 @@ Represents the list of selected content on a particular page of the PDF document
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/selection/PageSelection#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/selection/PageSelection#getPage()()` Gets the particular page for which the selection is highlighted. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PdfPageTextContent](../android/graphics/pdf/content/PdfPageTextContent.md)!\> | `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/selection/PageSelection#getSelectedTextContents()()` Returns the text content within the selection boundaries on the page. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PdfPageTextContent](../android.graphics.pdf.content/PdfPageTextContent.md)!\> | `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/selection/PageSelection#getSelectedTextContents()()` Returns the text content within the selection boundaries on the page. |
 | --- | --- |
-| [SelectionBoundary](../android/graphics/pdf/models/selection/SelectionBoundary.md) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/selection/PageSelection#getStart()()` Gets the edge from where the selection starts- index is inclusive. |
-| [SelectionBoundary](../android/graphics/pdf/models/selection/SelectionBoundary.md) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/selection/PageSelection#getStop()()` Gets the edge where the selection stops - index is inclusive. |
+| [SelectionBoundary](SelectionBoundary.md) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/selection/PageSelection#getStart()()` Gets the edge from where the selection starts- index is inclusive. |
+| [SelectionBoundary](SelectionBoundary.md) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/selection/PageSelection#getStop()()` Gets the edge where the selection stops - index is inclusive. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/selection/PageSelection#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 | --- | --- |
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [PageSelection](../android/graphics/pdf/models/selection/PageSelection.md)!\> | `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/selection/PageSelection#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [PageSelection](PageSelection.md)!\> | `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/selection/PageSelection#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public constructors
 
@@ -61,10 +61,10 @@ Creates a new instance of `https://developer.android.com/reference/kotlin/androi
 | Parameters ||
 |---|---|
 | `page` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The page number of the selection. |
-| `start` | [SelectionBoundary](../android/graphics/pdf/models/selection/SelectionBoundary.md): Boundary where the selection starts. This value cannot be `null`. |
-| `stop` | [SelectionBoundary](../android/graphics/pdf/models/selection/SelectionBoundary.md): Boundary where the selection stops. This value cannot be `null`. |
+| `start` | [SelectionBoundary](SelectionBoundary.md): Boundary where the selection starts. This value cannot be `null`. |
+| `stop` | [SelectionBoundary](SelectionBoundary.md): Boundary where the selection stops. This value cannot be `null`. |
 | --- | --- |
-| `selectedContents` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PdfPageTextContent](../android/graphics/pdf/content/PdfPageTextContent.md)!\>: list of segments of selected text content. This value cannot be `null`. |
+| `selectedContents` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PdfPageTextContent](../android.graphics.pdf.content/PdfPageTextContent.md)!\>: list of segments of selected text content. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -162,7 +162,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

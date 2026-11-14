@@ -10,37 +10,37 @@ class OptionalLong
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.util.OptionalLong](../java/util/OptionalLong.md) |
+| ↳ | [java.util.OptionalLong](OptionalLong.md) |
 
 A container object which may or may not contain a`long`value. If a value is present,`isPresent()`returns`true`. If no value is present, the object is considered*empty* and`isPresent()`returns`false`.
 
-Additional methods that depend on the presence or absence of a contained value are provided, such as [orElse()](../java/util/OptionalLong.md))(returns a default value if no value is present) and [ifPresent()](../java/util/OptionalLong.md))(performs an action if a value is present).
+Additional methods that depend on the presence or absence of a contained value are provided, such as [orElse()](OptionalLong.md))(returns a default value if no value is present) and [ifPresent()](OptionalLong.md))(performs an action if a value is present).
 
-This is a [value-based](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/doc-files/ValueBased.html) class; programmers should treat instances that are [equal](../java/util/OptionalLong.md))as interchangeable and should not use instances for synchronization, or unpredictable behavior may occur. For example, in a future release, synchronization may fail.
+This is a [value-based](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/doc-files/ValueBased.html) class; programmers should treat instances that are [equal](OptionalLong.md))as interchangeable and should not use instances for synchronization, or unpredictable behavior may occur. For example, in a future release, synchronization may fail.
 
 ## Summary
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [OptionalLong](../java/util/OptionalLong.md)! | [empty](../java/util/OptionalLong.md))`()` Returns an empty`OptionalLong`instance. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/util/OptionalLong.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this`OptionalLong`. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAsLong](../java/util/OptionalLong.md))`()` If a value is present, returns the value, otherwise throws`NoSuchElementException`. |
+| static [OptionalLong](OptionalLong.md)! | [empty](OptionalLong.md))`()` Returns an empty`OptionalLong`instance. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](OptionalLong.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this`OptionalLong`. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAsLong](OptionalLong.md))`()` If a value is present, returns the value, otherwise throws`NoSuchElementException`. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/util/OptionalLong.md))`()` Returns the hash code of the value, if present, otherwise`0`(zero) if no value is present. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [ifPresent](../java/util/OptionalLong.md))`(`action:` ` [LongConsumer](../java/util/function/LongConsumer.md)!`)` If a value is present, performs the given action with the value, otherwise does nothing. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [ifPresentOrElse](../java/util/OptionalLong.md))`(`action:` ` [LongConsumer](../java/util/function/LongConsumer.md)!`, `emptyAction:` ` [Runnable](../java/lang/Runnable.md)!`)` If a value is present, performs the given action with the value, otherwise performs the given empty-based action. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](OptionalLong.md))`()` Returns the hash code of the value, if present, otherwise`0`(zero) if no value is present. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [ifPresent](OptionalLong.md))`(`action:` ` [LongConsumer](../java.util.function/LongConsumer.md)!`)` If a value is present, performs the given action with the value, otherwise does nothing. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [ifPresentOrElse](OptionalLong.md))`(`action:` ` [LongConsumer](../java.util.function/LongConsumer.md)!`, `emptyAction:` ` [Runnable](../java.lang/Runnable.md)!`)` If a value is present, performs the given action with the value, otherwise performs the given empty-based action. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](../java/util/OptionalLong.md))`()` If a value is not present, returns`true`, otherwise`false`. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPresent](../java/util/OptionalLong.md))`()` If a value is present, returns`true`, otherwise`false`. |
-| static [OptionalLong](../java/util/OptionalLong.md)! | [of](../java/util/OptionalLong.md))`(`value:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns an`OptionalLong`describing the given value. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](OptionalLong.md))`()` If a value is not present, returns`true`, otherwise`false`. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPresent](OptionalLong.md))`()` If a value is present, returns`true`, otherwise`false`. |
+| static [OptionalLong](OptionalLong.md)! | [of](OptionalLong.md))`(`value:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns an`OptionalLong`describing the given value. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [orElse](../java/util/OptionalLong.md))`(`other:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` If a value is present, returns the value, otherwise returns`other`. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [orElseGet](../java/util/OptionalLong.md))`(`supplier:` ` [LongSupplier](../java/util/function/LongSupplier.md)!`)` If a value is present, returns the value, otherwise returns the result produced by the supplying function. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [orElseThrow](../java/util/OptionalLong.md))`()` If a value is present, returns the value, otherwise throws`NoSuchElementException`. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [orElse](OptionalLong.md))`(`other:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` If a value is present, returns the value, otherwise returns`other`. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [orElseGet](OptionalLong.md))`(`supplier:` ` [LongSupplier](../java.util.function/LongSupplier.md)!`)` If a value is present, returns the value, otherwise returns the result produced by the supplying function. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [orElseThrow](OptionalLong.md))`()` If a value is present, returns the value, otherwise throws`NoSuchElementException`. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [orElseThrow](../java/util/OptionalLong.md))`(`exceptionSupplier:` ` [Supplier](../java/util/function/Supplier.md)<out` `X>!`)` If a value is present, returns the value, otherwise throws an exception produced by the exception supplying function. |
-| [LongStream](../java/util/stream/LongStream.md)! | [stream](../java/util/OptionalLong.md))`()` If a value is present, returns a sequential [LongStream](../java/util/stream/LongStream.md) containing only that value, otherwise returns an empty`LongStream`. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/util/OptionalLong.md))`()` Returns a non-empty string representation of this`OptionalLong`suitable for debugging. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [orElseThrow](OptionalLong.md))`(`exceptionSupplier:` ` [Supplier](../java.util.function/Supplier.md)<out` `X>!`)` If a value is present, returns the value, otherwise throws an exception produced by the exception supplying function. |
+| [LongStream](../java.util.stream/LongStream.md)! | [stream](OptionalLong.md))`()` If a value is present, returns a sequential [LongStream](../java.util.stream/LongStream.md) containing only that value, otherwise returns an empty`LongStream`. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](OptionalLong.md))`()` Returns a non-empty string representation of this`OptionalLong`suitable for debugging. |
 | --- | --- |
 
 ## Public methods
@@ -57,7 +57,7 @@ Returns an empty`OptionalLong`instance. No value is present for this`OptionalLon
 
 | Return ||
 |-----------------------------------------------------------------------------------------|-------------------------|
-| [OptionalLong](../java/util/OptionalLong.md)! | an empty`OptionalLong`. |
+| [OptionalLong](OptionalLong.md)! | an empty`OptionalLong`. |
 
 ### equals
 
@@ -127,7 +127,7 @@ If a value is present, performs the given action with the value, otherwise does 
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| `action` | [LongConsumer](../java/util/function/LongConsumer.md)!:the action to be performed, if a value is present |
+| `action` | [LongConsumer](../java.util.function/LongConsumer.md)!:the action to be performed, if a value is present |
 
 | Exceptions ||
 |----------------------------------|---------------------------------------------------|
@@ -148,8 +148,8 @@ If a value is present, performs the given action with the value, otherwise perfo
 
 | Parameters ||
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| `action` | [LongConsumer](../java/util/function/LongConsumer.md)!:the action to be performed, if a value is present |
-| `emptyAction` | [Runnable](../java/lang/Runnable.md)!:the empty-based action to be performed, if no value is present |
+| `action` | [LongConsumer](../java.util.function/LongConsumer.md)!:the action to be performed, if a value is present |
+| `emptyAction` | [Runnable](../java.lang/Runnable.md)!:the empty-based action to be performed, if no value is present |
 
 | Exceptions ||
 |----------------------------------|------------------------------------------------------------------------------------------------------------------------|
@@ -199,7 +199,7 @@ Returns an`OptionalLong`describing the given value.
 
 | Return ||
 |-----------------------------------------------------------------------------------------|----------------------------------------|
-| [OptionalLong](../java/util/OptionalLong.md)! | an`OptionalLong`with the value present |
+| [OptionalLong](OptionalLong.md)! | an`OptionalLong`with the value present |
 
 ### orElse
 
@@ -231,7 +231,7 @@ If a value is present, returns the value, otherwise returns the result produced 
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `supplier` | [LongSupplier](../java/util/function/LongSupplier.md)!:the supplying function that produces a value to be returned |
+| `supplier` | [LongSupplier](../java.util.function/LongSupplier.md)!:the supplying function that produces a value to be returned |
 
 | Return ||
 |------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
@@ -272,7 +272,7 @@ If a value is present, returns the value, otherwise throws an exception produced
 | Parameters ||
 |---------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `<X>` | Type of the exception to be thrown |
-| `exceptionSupplier` | [Supplier](../java/util/function/Supplier.md)\<outX\>!:the supplying function that produces an exception to be thrown |
+| `exceptionSupplier` | [Supplier](../java.util.function/Supplier.md)\<outX\>!:the supplying function that produces an exception to be thrown |
 
 | Return ||
 |------------------------------------------------------------------------------|-----------------------|
@@ -291,11 +291,11 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 fun stream(): LongStream!
 ```
 
-If a value is present, returns a sequential [LongStream](../java/util/stream/LongStream.md) containing only that value, otherwise returns an empty`LongStream`.
+If a value is present, returns a sequential [LongStream](../java.util.stream/LongStream.md) containing only that value, otherwise returns an empty`LongStream`.
 
 | Return ||
 |-------------------------------------------------------------------------------------------|--------------------------------------|
-| [LongStream](../java/util/stream/LongStream.md)! | the optional value as an`LongStream` |
+| [LongStream](../java.util.stream/LongStream.md)! | the optional value as an`LongStream` |
 
 ### toString
 

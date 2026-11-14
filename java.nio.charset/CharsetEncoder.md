@@ -8,7 +8,7 @@ abstract class CharsetEncoder
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.nio.charset.CharsetEncoder](../java/nio/charset/CharsetEncoder.md) |
+| ↳ | [java.nio.charset.CharsetEncoder](CharsetEncoder.md) |
 
 An engine that can transform a sequence of sixteen-bit Unicode characters into a sequence of bytes in a specific charset.
 
@@ -23,9 +23,9 @@ Each invocation of the #encode method will encode as many characters as possible
 
 There are two general types of encoding errors. If the input character sequence is not a legal sixteen-bit Unicode sequence then the input is considered *malformed* . If the input character sequence is legal but cannot be mapped to a valid byte sequence in the given charset then an *unmappable character* has been encountered.
 
-How an encoding error is handled depends upon the action requested for that type of error, which is described by an instance of the `https://developer.android.com/reference/kotlin/java/nio/charset/CodingErrorAction` class. The possible error actions are to [ignore](../java/nio/charset/CodingErrorAction.md) the erroneous input, [report](../java/nio/charset/CodingErrorAction.md) the error to the invoker via the returned `https://developer.android.com/reference/kotlin/java/nio/charset/CoderResult` object, or [replace](../java/nio/charset/CodingErrorAction.md) the erroneous input with the current value of the replacement byte array. The replacement is initially set to the encoder's default replacement, which often (but not always) has the initial value `{` `(byte)'?'` `}`; its value may be changed via the `https://developer.android.com/reference/kotlin/java/nio/charset/CharsetEncoder#replaceWith(kotlin.ByteArray)` method.
+How an encoding error is handled depends upon the action requested for that type of error, which is described by an instance of the `https://developer.android.com/reference/kotlin/java/nio/charset/CodingErrorAction` class. The possible error actions are to [ignore](CodingErrorAction.md) the erroneous input, [report](CodingErrorAction.md) the error to the invoker via the returned `https://developer.android.com/reference/kotlin/java/nio/charset/CoderResult` object, or [replace](CodingErrorAction.md) the erroneous input with the current value of the replacement byte array. The replacement is initially set to the encoder's default replacement, which often (but not always) has the initial value `{` `(byte)'?'` `}`; its value may be changed via the `https://developer.android.com/reference/kotlin/java/nio/charset/CharsetEncoder#replaceWith(kotlin.ByteArray)` method.
 
-The default action for malformed-input and unmappable-character errors is to [report](../java/nio/charset/CodingErrorAction.md) them. The malformed-input error action may be changed via the `https://developer.android.com/reference/kotlin/java/nio/charset/CharsetEncoder#onMalformedInput(java.nio.charset.CodingErrorAction)` method; the unmappable-character action may be changed via the `https://developer.android.com/reference/kotlin/java/nio/charset/CharsetEncoder#onUnmappableCharacter(java.nio.charset.CodingErrorAction)` method.
+The default action for malformed-input and unmappable-character errors is to [report](CodingErrorAction.md) them. The malformed-input error action may be changed via the `https://developer.android.com/reference/kotlin/java/nio/charset/CharsetEncoder#onMalformedInput(java.nio.charset.CodingErrorAction)` method; the unmappable-character action may be changed via the `https://developer.android.com/reference/kotlin/java/nio/charset/CharsetEncoder#onUnmappableCharacter(java.nio.charset.CodingErrorAction)` method.
 
 This class is designed to handle many of the details of the encoding process, including the implementation of error actions. An encoder for a specific charset, which is a concrete subclass of this class, need only implement the abstract `https://developer.android.com/reference/kotlin/java/nio/charset/CharsetEncoder#encodeLoop(java.nio.CharBuffer,%20java.nio.ByteBuffer)` method, which encapsulates the basic encoding loop. A subclass that maintains internal state should, additionally, override the `https://developer.android.com/reference/kotlin/java/nio/charset/CharsetEncoder#implFlush(java.nio.ByteBuffer)` and `https://developer.android.com/reference/kotlin/java/nio/charset/CharsetEncoder#implReset()` methods.
 
@@ -44,28 +44,28 @@ Instances of this class are not safe for use by multiple concurrent threads.
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/nio/charset/CharsetEncoder#canEncode(kotlin.Char)(c: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)` Tells whether or not this encoder can encode the given character. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/nio/charset/CharsetEncoder#canEncode(kotlin.CharSequence)(cs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Tells whether or not this encoder can encode the given character sequence. |
 | --- | --- |
-| [Charset](../java/nio/charset/Charset.md)! | `https://developer.android.com/reference/kotlin/java/nio/charset/CharsetEncoder#charset()()` Returns the charset that created this encoder. |
-| [ByteBuffer](../java/nio/ByteBuffer.md)! | `https://developer.android.com/reference/kotlin/java/nio/charset/CharsetEncoder#encode(java.nio.CharBuffer)(in: https://developer.android.com/reference/kotlin/java/nio/CharBuffer.html#!)` Convenience method that encodes the remaining content of a single input character buffer into a newly-allocated byte buffer. |
-| [CoderResult](../java/nio/charset/CoderResult.md)! | `https://developer.android.com/reference/kotlin/java/nio/charset/CharsetEncoder#encode(java.nio.CharBuffer,%20java.nio.ByteBuffer,%20kotlin.Boolean)(in: https://developer.android.com/reference/kotlin/java/nio/CharBuffer.html#!, out: https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#!, endOfInput: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Encodes as many characters as possible from the given input buffer, writing the results to the given output buffer. |
+| [Charset](Charset.md)! | `https://developer.android.com/reference/kotlin/java/nio/charset/CharsetEncoder#charset()()` Returns the charset that created this encoder. |
+| [ByteBuffer](../java.nio/ByteBuffer.md)! | `https://developer.android.com/reference/kotlin/java/nio/charset/CharsetEncoder#encode(java.nio.CharBuffer)(in: https://developer.android.com/reference/kotlin/java/nio/CharBuffer.html#!)` Convenience method that encodes the remaining content of a single input character buffer into a newly-allocated byte buffer. |
+| [CoderResult](CoderResult.md)! | `https://developer.android.com/reference/kotlin/java/nio/charset/CharsetEncoder#encode(java.nio.CharBuffer,%20java.nio.ByteBuffer,%20kotlin.Boolean)(in: https://developer.android.com/reference/kotlin/java/nio/CharBuffer.html#!, out: https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#!, endOfInput: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Encodes as many characters as possible from the given input buffer, writing the results to the given output buffer. |
 | --- | --- |
-| [CoderResult](../java/nio/charset/CoderResult.md)! | `https://developer.android.com/reference/kotlin/java/nio/charset/CharsetEncoder#flush(java.nio.ByteBuffer)(out: https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#!)` Flushes this encoder. |
+| [CoderResult](CoderResult.md)! | `https://developer.android.com/reference/kotlin/java/nio/charset/CharsetEncoder#flush(java.nio.ByteBuffer)(out: https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#!)` Flushes this encoder. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/nio/charset/CharsetEncoder#isLegalReplacement(kotlin.ByteArray)(repl: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!)` Tells whether or not the given byte array is a legal replacement value for this encoder. |
-| open [CodingErrorAction](../java/nio/charset/CodingErrorAction.md)! | `https://developer.android.com/reference/kotlin/java/nio/charset/CharsetEncoder#malformedInputAction()()` Returns this encoder's current action for malformed-input errors. |
+| open [CodingErrorAction](CodingErrorAction.md)! | `https://developer.android.com/reference/kotlin/java/nio/charset/CharsetEncoder#malformedInputAction()()` Returns this encoder's current action for malformed-input errors. |
 | --- | --- |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/java/nio/charset/CharsetEncoder#maxBytesPerChar()()` Returns the maximum number of bytes that will be produced for each character of input. |
-| [CharsetEncoder](../java/nio/charset/CharsetEncoder.md)! | `https://developer.android.com/reference/kotlin/java/nio/charset/CharsetEncoder#onMalformedInput(java.nio.charset.CodingErrorAction)(newAction: https://developer.android.com/reference/kotlin/java/nio/charset/CodingErrorAction!)` Changes this encoder's action for malformed-input errors. |
-| [CharsetEncoder](../java/nio/charset/CharsetEncoder.md)! | `https://developer.android.com/reference/kotlin/java/nio/charset/CharsetEncoder#onUnmappableCharacter(java.nio.charset.CodingErrorAction)(newAction: https://developer.android.com/reference/kotlin/java/nio/charset/CodingErrorAction!)` Changes this encoder's action for unmappable-character errors. |
+| [CharsetEncoder](CharsetEncoder.md)! | `https://developer.android.com/reference/kotlin/java/nio/charset/CharsetEncoder#onMalformedInput(java.nio.charset.CodingErrorAction)(newAction: https://developer.android.com/reference/kotlin/java/nio/charset/CodingErrorAction!)` Changes this encoder's action for malformed-input errors. |
+| [CharsetEncoder](CharsetEncoder.md)! | `https://developer.android.com/reference/kotlin/java/nio/charset/CharsetEncoder#onUnmappableCharacter(java.nio.charset.CodingErrorAction)(newAction: https://developer.android.com/reference/kotlin/java/nio/charset/CodingErrorAction!)` Changes this encoder's action for unmappable-character errors. |
 | --- | --- |
-| [CharsetEncoder](../java/nio/charset/CharsetEncoder.md)! | `https://developer.android.com/reference/kotlin/java/nio/charset/CharsetEncoder#replaceWith(kotlin.ByteArray)(newReplacement: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!)` Changes this encoder's replacement value. |
+| [CharsetEncoder](CharsetEncoder.md)! | `https://developer.android.com/reference/kotlin/java/nio/charset/CharsetEncoder#replaceWith(kotlin.ByteArray)(newReplacement: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!)` Changes this encoder's replacement value. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | `https://developer.android.com/reference/kotlin/java/nio/charset/CharsetEncoder#replacement()()` Returns this encoder's replacement value. |
-| [CharsetEncoder](../java/nio/charset/CharsetEncoder.md)! | `https://developer.android.com/reference/kotlin/java/nio/charset/CharsetEncoder#reset()()` Resets this encoder, clearing any internal state. |
+| [CharsetEncoder](CharsetEncoder.md)! | `https://developer.android.com/reference/kotlin/java/nio/charset/CharsetEncoder#reset()()` Resets this encoder, clearing any internal state. |
 | --- | --- |
-| open [CodingErrorAction](../java/nio/charset/CodingErrorAction.md)! | `https://developer.android.com/reference/kotlin/java/nio/charset/CharsetEncoder#unmappableCharacterAction()()` Returns this encoder's current action for unmappable-character errors. |
+| open [CodingErrorAction](CodingErrorAction.md)! | `https://developer.android.com/reference/kotlin/java/nio/charset/CharsetEncoder#unmappableCharacterAction()()` Returns this encoder's current action for unmappable-character errors. |
 
 | Protected methods ||
 |---|---|
-| abstract [CoderResult](../java/nio/charset/CoderResult.md)! | `https://developer.android.com/reference/kotlin/java/nio/charset/CharsetEncoder#encodeLoop(java.nio.CharBuffer,%20java.nio.ByteBuffer)(in: https://developer.android.com/reference/kotlin/java/nio/CharBuffer.html#!, out: https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#!)` Encodes one or more characters into one or more bytes. |
-| open [CoderResult](../java/nio/charset/CoderResult.md)! | `https://developer.android.com/reference/kotlin/java/nio/charset/CharsetEncoder#implFlush(java.nio.ByteBuffer)(out: https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#!)` Flushes this encoder. |
+| abstract [CoderResult](CoderResult.md)! | `https://developer.android.com/reference/kotlin/java/nio/charset/CharsetEncoder#encodeLoop(java.nio.CharBuffer,%20java.nio.ByteBuffer)(in: https://developer.android.com/reference/kotlin/java/nio/CharBuffer.html#!, out: https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#!)` Encodes one or more characters into one or more bytes. |
+| open [CoderResult](CoderResult.md)! | `https://developer.android.com/reference/kotlin/java/nio/charset/CharsetEncoder#implFlush(java.nio.ByteBuffer)(out: https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#!)` Flushes this encoder. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/nio/charset/CharsetEncoder#implOnMalformedInput(java.nio.charset.CodingErrorAction)(newAction: https://developer.android.com/reference/kotlin/java/nio/charset/CodingErrorAction!)` Reports a change to this encoder's malformed-input action. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/nio/charset/CharsetEncoder#implOnUnmappableCharacter(java.nio.charset.CodingErrorAction)(newAction: https://developer.android.com/reference/kotlin/java/nio/charset/CodingErrorAction!)` Reports a change to this encoder's unmappable-character action. |
@@ -90,7 +90,7 @@ Initializes a new encoder. The new encoder will have the given bytes-per-char va
 
 | Parameters ||
 |---|---|
-| `cs` | [Charset](../java/nio/charset/Charset.md)!: The charset that created this encoder |
+| `cs` | [Charset](Charset.md)!: The charset that created this encoder |
 | `averageBytesPerChar` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): A positive float value indicating the expected number of bytes that will be produced for each input character |
 | `maxBytesPerChar` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): A positive float value indicating the maximum number of bytes that will be produced for each input character |
 | --- | --- |
@@ -115,11 +115,11 @@ Initializes a new encoder. The new encoder will have the given bytes-per-char an
 
 | Parameters ||
 |---|---|
-| `cs` | [Charset](../java/nio/charset/Charset.md)!: The charset that created this encoder |
+| `cs` | [Charset](Charset.md)!: The charset that created this encoder |
 | `averageBytesPerChar` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): A positive float value indicating the expected number of bytes that will be produced for each input character |
 | `maxBytesPerChar` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): A positive float value indicating the maximum number of bytes that will be produced for each input character |
 | --- | --- |
-| `replacement` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!: The initial replacement; must not be `null`, must have non-zero length, must not be longer than maxBytesPerChar, and must be [legal](../java/nio/charset/CharsetEncoder.md)) |
+| `replacement` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!: The initial replacement; must not be `null`, must have non-zero length, must not be longer than maxBytesPerChar, and must be [legal](CharsetEncoder.md)) |
 
 | Exceptions ||
 |---|---|
@@ -153,7 +153,7 @@ Tells whether or not this encoder can encode the given character.
 
 This method returns `false` if the given character is a surrogate character; such characters can be interpreted only when they are members of a pair consisting of a high surrogate followed by a low surrogate. The `https://developer.android.com/reference/kotlin/java/nio/charset/CharsetEncoder#canEncode(kotlin.CharSequence)` method may be used to test whether or not a character sequence can be encoded.
 
-This method may modify this encoder's state; it should therefore not be invoked if an [encoding operation](../java/nio/charset/CharsetEncoder.md) is already in progress.
+This method may modify this encoder's state; it should therefore not be invoked if an [encoding operation](CharsetEncoder.md) is already in progress.
 
 The default implementation of this method is not very efficient; it should generally be overridden to improve performance.
 
@@ -179,7 +179,7 @@ open fun canEncode(cs: CharSequence!): Boolean
 
 Tells whether or not this encoder can encode the given character sequence.
 
-If this method returns `false` for a particular character sequence then more information about why the sequence cannot be encoded may be obtained by performing a full [encoding operation](../java/nio/charset/CharsetEncoder.md).
+If this method returns `false` for a particular character sequence then more information about why the sequence cannot be encoded may be obtained by performing a full [encoding operation](CharsetEncoder.md).
 
 This method may modify this encoder's state; it should therefore not be invoked if an encoding operation is already in progress.
 
@@ -221,11 +221,11 @@ fun encode(in: CharBuffer!): ByteBuffer!
 
 Convenience method that encodes the remaining content of a single input character buffer into a newly-allocated byte buffer.
 
-This method implements an entire [encoding operation](../java/nio/charset/CharsetEncoder.md); that is, it resets this encoder, then it encodes the characters in the given character buffer, and finally it flushes this encoder. This method should therefore not be invoked if an encoding operation is already in progress.
+This method implements an entire [encoding operation](CharsetEncoder.md); that is, it resets this encoder, then it encodes the characters in the given character buffer, and finally it flushes this encoder. This method should therefore not be invoked if an encoding operation is already in progress.
 
 | Parameters ||
 |---|---|
-| `in` | [CharBuffer](../java/nio/CharBuffer.md)!: The input character buffer |
+| `in` | [CharBuffer](../java.nio/CharBuffer.md)!: The input character buffer |
 
 | Return ||
 |---|---|
@@ -258,10 +258,10 @@ The buffers are read from, and written to, starting at their current positions. 
 
 In addition to reading characters from the input buffer and writing bytes to the output buffer, this method returns a `https://developer.android.com/reference/kotlin/java/nio/charset/CoderResult` object to describe its reason for termination:
 
-- `https://developer.android.com/reference/kotlin/java/nio/charset/CoderResult#UNDERFLOW:java.nio.charset.CoderResult` indicates that as much of the input buffer as possible has been encoded. If there is no further input then the invoker can proceed to the next step of the [encoding operation](../java/nio/charset/CharsetEncoder.md). Otherwise this method should be invoked again with further input.
-- `https://developer.android.com/reference/kotlin/java/nio/charset/CoderResult#OVERFLOW:java.nio.charset.CoderResult` indicates that there is insufficient space in the output buffer to encode any more characters. This method should be invoked again with an output buffer that has more [remaining](../java/nio/Buffer.md)) bytes. This is typically done by draining any encoded bytes from the output buffer.
-- A [malformed-input](../java/nio/charset/CoderResult.md)) result indicates that a malformed-input error has been detected. The malformed characters begin at the input buffer's (possibly incremented) position; the number of malformed characters may be determined by invoking the result object's `https://developer.android.com/reference/kotlin/java/nio/charset/CoderResult#length()` method. This case applies only if the [malformed action](../java/nio/charset/CharsetEncoder.md)) of this encoder is `https://developer.android.com/reference/kotlin/java/nio/charset/CodingErrorAction#REPORT:java.nio.charset.CodingErrorAction`; otherwise the malformed input will be ignored or replaced, as requested.
-- An [unmappable-character](../java/nio/charset/CoderResult.md)) result indicates that an unmappable-character error has been detected. The characters that encode the unmappable character begin at the input buffer's (possibly incremented) position; the number of such characters may be determined by invoking the result object's `https://developer.android.com/reference/kotlin/java/nio/charset/CoderResult#length()` method. This case applies only if the [unmappable action](../java/nio/charset/CharsetEncoder.md)) of this encoder is `https://developer.android.com/reference/kotlin/java/nio/charset/CodingErrorAction#REPORT:java.nio.charset.CodingErrorAction`; otherwise the unmappable character will be ignored or replaced, as requested.
+- `https://developer.android.com/reference/kotlin/java/nio/charset/CoderResult#UNDERFLOW:java.nio.charset.CoderResult` indicates that as much of the input buffer as possible has been encoded. If there is no further input then the invoker can proceed to the next step of the [encoding operation](CharsetEncoder.md). Otherwise this method should be invoked again with further input.
+- `https://developer.android.com/reference/kotlin/java/nio/charset/CoderResult#OVERFLOW:java.nio.charset.CoderResult` indicates that there is insufficient space in the output buffer to encode any more characters. This method should be invoked again with an output buffer that has more [remaining](../java.nio/Buffer.md)) bytes. This is typically done by draining any encoded bytes from the output buffer.
+- A [malformed-input](CoderResult.md)) result indicates that a malformed-input error has been detected. The malformed characters begin at the input buffer's (possibly incremented) position; the number of malformed characters may be determined by invoking the result object's `https://developer.android.com/reference/kotlin/java/nio/charset/CoderResult#length()` method. This case applies only if the [malformed action](CharsetEncoder.md)) of this encoder is `https://developer.android.com/reference/kotlin/java/nio/charset/CodingErrorAction#REPORT:java.nio.charset.CodingErrorAction`; otherwise the malformed input will be ignored or replaced, as requested.
+- An [unmappable-character](CoderResult.md)) result indicates that an unmappable-character error has been detected. The characters that encode the unmappable character begin at the input buffer's (possibly incremented) position; the number of such characters may be determined by invoking the result object's `https://developer.android.com/reference/kotlin/java/nio/charset/CoderResult#length()` method. This case applies only if the [unmappable action](CharsetEncoder.md)) of this encoder is `https://developer.android.com/reference/kotlin/java/nio/charset/CodingErrorAction#REPORT:java.nio.charset.CodingErrorAction`; otherwise the unmappable character will be ignored or replaced, as requested.
 
 In any case, if this method is to be reinvoked in the same encoding operation then care should be taken to preserve any characters remaining in the input buffer so that they are available to the next invocation.
 
@@ -271,8 +271,8 @@ This method works by invoking the `https://developer.android.com/reference/kotli
 
 | Parameters ||
 |---|---|
-| `in` | [CharBuffer](../java/nio/CharBuffer.md)!: The input character buffer |
-| `out` | [ByteBuffer](../java/nio/ByteBuffer.md)!: The output byte buffer |
+| `in` | [CharBuffer](../java.nio/CharBuffer.md)!: The input character buffer |
+| `out` | [ByteBuffer](../java.nio/ByteBuffer.md)!: The output byte buffer |
 | `endOfInput` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): `true` if, and only if, the invoker can provide no additional input characters beyond those in the given buffer |
 | --- | --- |
 
@@ -301,7 +301,7 @@ Some encoders maintain internal state and may need to write some final bytes to 
 
 Any additional output is written to the output buffer beginning at its current position. At most `https://developer.android.com/reference/kotlin/java/nio/Buffer.html#remaining()` bytes will be written. The buffer's position will be advanced appropriately, but its mark and limit will not be modified.
 
-If this method completes successfully then it returns `https://developer.android.com/reference/kotlin/java/nio/charset/CoderResult#UNDERFLOW:java.nio.charset.CoderResult`. If there is insufficient room in the output buffer then it returns `https://developer.android.com/reference/kotlin/java/nio/charset/CoderResult#OVERFLOW:java.nio.charset.CoderResult`. If this happens then this method must be invoked again, with an output buffer that has more room, in order to complete the current [encoding operation](../java/nio/charset/CharsetEncoder.md).
+If this method completes successfully then it returns `https://developer.android.com/reference/kotlin/java/nio/charset/CoderResult#UNDERFLOW:java.nio.charset.CoderResult`. If there is insufficient room in the output buffer then it returns `https://developer.android.com/reference/kotlin/java/nio/charset/CoderResult#OVERFLOW:java.nio.charset.CoderResult`. If this happens then this method must be invoked again, with an output buffer that has more room, in order to complete the current [encoding operation](CharsetEncoder.md).
 
 If this encoder has already been flushed then invoking this method has no effect.
 
@@ -309,7 +309,7 @@ This method invokes the `https://developer.android.com/reference/kotlin/java/nio
 
 | Parameters ||
 |---|---|
-| `out` | [ByteBuffer](../java/nio/ByteBuffer.md)!: The output byte buffer |
+| `out` | [ByteBuffer](../java.nio/ByteBuffer.md)!: The output byte buffer |
 
 | Return ||
 |---|---|
@@ -383,7 +383,7 @@ This method invokes the `https://developer.android.com/reference/kotlin/java/nio
 
 | Parameters ||
 |---|---|
-| `newAction` | [CodingErrorAction](../java/nio/charset/CodingErrorAction.md)!: The new action; must not be `null` |
+| `newAction` | [CodingErrorAction](CodingErrorAction.md)!: The new action; must not be `null` |
 
 | Return ||
 |---|---|
@@ -407,7 +407,7 @@ This method invokes the `https://developer.android.com/reference/kotlin/java/nio
 
 | Parameters ||
 |---|---|
-| `newAction` | [CodingErrorAction](../java/nio/charset/CodingErrorAction.md)!: The new action; must not be `null` |
+| `newAction` | [CodingErrorAction](CodingErrorAction.md)!: The new action; must not be `null` |
 
 | Return ||
 |---|---|
@@ -510,8 +510,8 @@ An implementation of this method may perform arbitrary lookahead by returning `h
 
 | Parameters ||
 |---|---|
-| `in` | [CharBuffer](../java/nio/CharBuffer.md)!: The input character buffer |
-| `out` | [ByteBuffer](../java/nio/ByteBuffer.md)!: The output byte buffer |
+| `in` | [CharBuffer](../java.nio/CharBuffer.md)!: The input character buffer |
+| `out` | [ByteBuffer](../java.nio/ByteBuffer.md)!: The output byte buffer |
 
 | Return ||
 |---|---|
@@ -531,7 +531,7 @@ The default implementation of this method does nothing, and always returns `http
 
 | Parameters ||
 |---|---|
-| `out` | [ByteBuffer](../java/nio/ByteBuffer.md)!: The output byte buffer |
+| `out` | [ByteBuffer](../java.nio/ByteBuffer.md)!: The output byte buffer |
 
 | Return ||
 |---|---|
@@ -551,7 +551,7 @@ The default implementation of this method does nothing. This method should be ov
 
 | Parameters ||
 |---|---|
-| `newAction` | [CodingErrorAction](../java/nio/charset/CodingErrorAction.md)!: The new action |
+| `newAction` | [CodingErrorAction](CodingErrorAction.md)!: The new action |
 
 ### implOnUnmappableCharacter
 
@@ -567,7 +567,7 @@ The default implementation of this method does nothing. This method should be ov
 
 | Parameters ||
 |---|---|
-| `newAction` | [CodingErrorAction](../java/nio/charset/CodingErrorAction.md)!: The new action |
+| `newAction` | [CodingErrorAction](CodingErrorAction.md)!: The new action |
 
 ### implReplaceWith
 

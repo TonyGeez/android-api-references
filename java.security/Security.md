@@ -10,7 +10,7 @@ class Security
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.Security](../java/security/Security.md) |
+| ↳ | [java.security.Security](Security.md) |
 
 This class centralizes all security properties and common security methods. One of its primary uses is to manage providers.
 
@@ -20,20 +20,20 @@ The default values of security properties are read from an implementation-specif
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [addProvider](../java/security/Security.md))`(`provider:` ` [Provider](../java/security/Provider.md)!`)` Adds a provider to the next position available. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAlgorithmProperty](../java/security/Security.md))`(`algName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `propName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Gets a specified property for an algorithm. |
-| static [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getAlgorithms](../java/security/Security.md))`(`serviceName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a Set of Strings containing the names of all available algorithms or types for the specified Java cryptographic service (e.g., Signature, MessageDigest, Cipher, Mac, KeyStore). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [addProvider](Security.md))`(`provider:` ` [Provider](Provider.md)!`)` Adds a provider to the next position available. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAlgorithmProperty](Security.md))`(`algName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `propName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Gets a specified property for an algorithm. |
+| static [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getAlgorithms](Security.md))`(`serviceName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a Set of Strings containing the names of all available algorithms or types for the specified Java cryptographic service (e.g., Signature, MessageDigest, Cipher, Mac, KeyStore). |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getProperty](../java/security/Security.md))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Gets a security property value. |
-| static [Provider](../java/security/Provider.md)! | [getProvider](../java/security/Security.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the provider installed with the specified name, if any. |
-| static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Provider](../java/security/Provider.md)!\>! | [getProviders](../java/security/Security.md))`()` Returns an array containing all the installed providers. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getProperty](Security.md))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Gets a security property value. |
+| static [Provider](Provider.md)! | [getProvider](Security.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the provider installed with the specified name, if any. |
+| static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Provider](Provider.md)!\>! | [getProviders](Security.md))`()` Returns an array containing all the installed providers. |
 | --- | --- |
-| static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Provider](../java/security/Provider.md)!\>! | [getProviders](../java/security/Security.md))`(`filter:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns an array containing all installed providers that satisfy the specified selection criterion, or null if no such providers have been installed. |
-| static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Provider](../java/security/Provider.md)!\>! | [getProviders](../java/security/Security.md))`(`filter:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Returns an array containing all installed providers that satisfy the specified\* selection criteria, or null if no such providers have been installed. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [insertProviderAt](../java/security/Security.md))`(`provider:` ` [Provider](../java/security/Provider.md)!`, `position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Adds a new provider, at a specified position. |
+| static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Provider](Provider.md)!\>! | [getProviders](Security.md))`(`filter:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns an array containing all installed providers that satisfy the specified selection criterion, or null if no such providers have been installed. |
+| static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Provider](Provider.md)!\>! | [getProviders](Security.md))`(`filter:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Returns an array containing all installed providers that satisfy the specified\* selection criteria, or null if no such providers have been installed. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [insertProviderAt](Security.md))`(`provider:` ` [Provider](Provider.md)!`, `position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Adds a new provider, at a specified position. |
 | --- | --- |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeProvider](../java/security/Security.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Removes the provider with the specified name. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setProperty](../java/security/Security.md))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `datum:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets a security property value. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeProvider](Security.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Removes the provider with the specified name. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setProperty](Security.md))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `datum:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets a security property value. |
 
 ## Public methods
 
@@ -47,11 +47,11 @@ static fun addProvider(provider: Provider!): Int
 
 Adds a provider to the next position available.
 
-If there is a security manager, the [java.lang.SecurityManager#checkSecurityAccess](../java/lang/SecurityManager.md))method is called with the`"insertProvider"`permission target name to see if it's ok to add a new provider. If this permission check is denied,`checkSecurityAccess`is called again with the`"insertProvider."+provider.getName()`permission target name. If both checks are denied, a`SecurityException`is thrown.
+If there is a security manager, the [java.lang.SecurityManager#checkSecurityAccess](../java.lang/SecurityManager.md))method is called with the`"insertProvider"`permission target name to see if it's ok to add a new provider. If this permission check is denied,`checkSecurityAccess`is called again with the`"insertProvider."+provider.getName()`permission target name. If both checks are denied, a`SecurityException`is thrown.
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------|
-| `provider` | [Provider](../java/security/Provider.md)!:the provider to be added. |
+| `provider` | [Provider](Provider.md)!:the provider to be added. |
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
@@ -60,13 +60,13 @@ If there is a security manager, the [java.lang.SecurityManager#checkSecurityAcce
 | Exceptions ||
 |----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `java.lang.NullPointerException` | if provider is null |
-| `java.lang.SecurityException` | if a security manager exists and its [java.lang.SecurityManager#checkSecurityAccess](../java/lang/SecurityManager.md))method denies access to add a new provider |
+| `java.lang.SecurityException` | if a security manager exists and its [java.lang.SecurityManager#checkSecurityAccess](../java.lang/SecurityManager.md))method denies access to add a new provider |
 
 **See Also**
 
-- [#getProvider](../java/security/Security.md))
-- [#removeProvider](../java/security/Security.md))
-- [java.security.SecurityPermission](../java/security/SecurityPermission.md) 
+- [#getProvider](Security.md))
+- [#removeProvider](Security.md))
+- [java.security.SecurityPermission](SecurityPermission.md) 
 
 ### getAlgorithmProperty
 
@@ -138,8 +138,8 @@ First, if there is a security manager, its`checkPermission`method is called with
 
 **See Also**
 
-- [#setProperty](../java/security/Security.md))
-- [java.security.SecurityPermission](../java/security/SecurityPermission.md) 
+- [#setProperty](Security.md))
+- [java.security.SecurityPermission](SecurityPermission.md) 
 
 ### getProvider
 
@@ -157,12 +157,12 @@ Returns the provider installed with the specified name, if any. Returns null if 
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------------------|
-| [Provider](../java/security/Provider.md)! | the provider of the specified name. |
+| [Provider](Provider.md)! | the provider of the specified name. |
 
 **See Also**
 
-- [#removeProvider](../java/security/Security.md))
-- [#addProvider](../java/security/Security.md)) 
+- [#removeProvider](Security.md))
+- [#addProvider](Security.md)) 
 
 ### getProviders
 
@@ -176,7 +176,7 @@ Returns an array containing all the installed providers. The order of the provid
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Provider](../java/security/Provider.md)!>! | an array of all the installed providers. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Provider](Provider.md)!>! | an array of all the installed providers. |
 
 ### getProviders
 
@@ -186,7 +186,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static fun getProviders(filter: String!): Array<Provider!>!
 ```
 
-Returns an array containing all installed providers that satisfy the specified selection criterion, or null if no such providers have been installed. The returned providers are ordered according to their [preference order](../java/security/Security.md)).
+Returns an array containing all installed providers that satisfy the specified selection criterion, or null if no such providers have been installed. The returned providers are ordered according to their [preference order](Security.md)).
 
 A cryptographic service is always associated with a particular algorithm or type. For example, a digital signature service is always associated with a particular algorithm (e.g., DSA), and a CertificateFactory service is always associated with a particular certificate type (e.g., X.509).
 
@@ -215,7 +215,7 @@ See the [Java Cryptography Architecture Standard Algorithm Name Documentation](h
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Provider](../java/security/Provider.md)!>! | all the installed providers that satisfy the selection criterion, or null if no such providers have been installed. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Provider](Provider.md)!>! | all the installed providers that satisfy the selection criterion, or null if no such providers have been installed. |
 
 | Exceptions ||
 |-------------------------------------------|---------------------------------------------|
@@ -224,7 +224,7 @@ See the [Java Cryptography Architecture Standard Algorithm Name Documentation](h
 
 **See Also**
 
-- [#getProviders(java.util.Map)](../java/security/Security.md)) 
+- [#getProviders(java.util.Map)](Security.md)) 
 
 ### getProviders
 
@@ -234,7 +234,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static fun getProviders(filter: MutableMap<String!, String!>!): Array<Provider!>!
 ```
 
-Returns an array containing all installed providers that satisfy the specified\* selection criteria, or null if no such providers have been installed. The returned providers are ordered according to their [preference order](../java/security/Security.md)).
+Returns an array containing all installed providers that satisfy the specified\* selection criteria, or null if no such providers have been installed. The returned providers are ordered according to their [preference order](Security.md)).
 
 The selection criteria are represented by a map. Each map entry represents a selection criterion. A provider is selected iff it satisfies all selection criteria. The key for any entry in such a map must be in one of the following two formats:
 
@@ -259,7 +259,7 @@ See the [Java Cryptography Architecture Standard Algorithm Name Documentation](h
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Provider](../java/security/Provider.md)!>! | all the installed providers that satisfy the selection criteria, or null if no such providers have been installed. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Provider](Provider.md)!>! | all the installed providers that satisfy the selection criteria, or null if no such providers have been installed. |
 
 | Exceptions ||
 |-------------------------------------------|---------------------------------------------|
@@ -268,7 +268,7 @@ See the [Java Cryptography Architecture Standard Algorithm Name Documentation](h
 
 **See Also**
 
-- [#getProviders(java.lang.String)](../java/security/Security.md)) 
+- [#getProviders(java.lang.String)](Security.md)) 
 
 ### insertProviderAt
 
@@ -287,11 +287,11 @@ If the given provider is installed at the requested position, the provider that 
 
 A provider cannot be added if it is already installed.
 
-If there is a security manager, the [java.lang.SecurityManager#checkSecurityAccess](../java/lang/SecurityManager.md))method is called with the`"insertProvider"`permission target name to see if it's ok to add a new provider. If this permission check is denied,`checkSecurityAccess`is called again with the`"insertProvider."+provider.getName()`permission target name. If both checks are denied, a`SecurityException`is thrown.
+If there is a security manager, the [java.lang.SecurityManager#checkSecurityAccess](../java.lang/SecurityManager.md))method is called with the`"insertProvider"`permission target name to see if it's ok to add a new provider. If this permission check is denied,`checkSecurityAccess`is called again with the`"insertProvider."+provider.getName()`permission target name. If both checks are denied, a`SecurityException`is thrown.
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| `provider` | [Provider](../java/security/Provider.md)!:the provider to be added. |
+| `provider` | [Provider](Provider.md)!:the provider to be added. |
 | `position` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the preference position that the caller would like for this provider. |
 
 | Return ||
@@ -301,13 +301,13 @@ If there is a security manager, the [java.lang.SecurityManager#checkSecurityAcce
 | Exceptions ||
 |----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `java.lang.NullPointerException` | if provider is null |
-| `java.lang.SecurityException` | if a security manager exists and its [java.lang.SecurityManager#checkSecurityAccess](../java/lang/SecurityManager.md))method denies access to add a new provider |
+| `java.lang.SecurityException` | if a security manager exists and its [java.lang.SecurityManager#checkSecurityAccess](../java.lang/SecurityManager.md))method denies access to add a new provider |
 
 **See Also**
 
-- [#getProvider](../java/security/Security.md))
-- [#removeProvider](../java/security/Security.md))
-- [java.security.SecurityPermission](../java/security/SecurityPermission.md) 
+- [#getProvider](Security.md))
+- [#removeProvider](Security.md))
+- [java.security.SecurityPermission](SecurityPermission.md) 
 
 ### removeProvider
 
@@ -331,12 +331,12 @@ First, if there is a security manager, its`checkSecurityAccess`method is called 
 
 | Exceptions ||
 |-------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.SecurityException` | if a security manager exists and its [java.lang.SecurityManager#checkSecurityAccess](../java/lang/SecurityManager.md))method denies access to remove the provider |
+| `java.lang.SecurityException` | if a security manager exists and its [java.lang.SecurityManager#checkSecurityAccess](../java.lang/SecurityManager.md))method denies access to remove the provider |
 
 **See Also**
 
-- [#getProvider](../java/security/Security.md))
-- [#addProvider](../java/security/Security.md)) 
+- [#getProvider](Security.md))
+- [#addProvider](Security.md)) 
 
 ### setProperty
 
@@ -365,5 +365,5 @@ First, if there is a security manager, its`checkPermission`method is called with
 
 **See Also**
 
-- [#getProperty](../java/security/Security.md))
-- [java.security.SecurityPermission](../java/security/SecurityPermission.md)
+- [#getProperty](Security.md))
+- [java.security.SecurityPermission](SecurityPermission.md)

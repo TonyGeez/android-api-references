@@ -4,7 +4,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 
 # PrintJob
 
-Kotlin| [Java](../android/print/PrintJob.md) 
+Kotlin| [Java](PrintJob.md) 
 | --- | --- |
 
 ```
@@ -13,29 +13,29 @@ class PrintJob
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.print.PrintJob](../android/print/PrintJob.md) |
+| ↳ | [android.print.PrintJob](PrintJob.md) |
 
-This class represents a print job from the perspective of an application. It contains behavior methods for performing operations on it as well as methods for querying its state. A snapshot of the print job state is represented by the [PrintJobInfo](../android/print/PrintJobInfo.md) class. The state of a print job may change over time. An application receives instances of this class when creating a print job or querying for its print jobs.
+This class represents a print job from the perspective of an application. It contains behavior methods for performing operations on it as well as methods for querying its state. A snapshot of the print job state is represented by the [PrintJobInfo](PrintJobInfo.md) class. The state of a print job may change over time. An application receives instances of this class when creating a print job or querying for its print jobs.
 
 ## Summary
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [cancel](../android/print/PrintJob.md))`()` Cancels this print job. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/print/PrintJob.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [PrintJobId](../android/print/PrintJobId.md)? | [getId](../android/print/PrintJob.md))`()` Gets the unique print job id. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [cancel](PrintJob.md))`()` Cancels this print job. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](PrintJob.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [PrintJobId](PrintJobId.md)? | [getId](PrintJob.md))`()` Gets the unique print job id. |
 | --- | --- |
-| [PrintJobInfo](../android/print/PrintJobInfo.md) | [getInfo](../android/print/PrintJob.md))`()` Gets the [PrintJobInfo](../android/print/PrintJobInfo.md) that describes this job. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/print/PrintJob.md))`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isBlocked](../android/print/PrintJob.md))`()` Gets whether this print job is blocked. |
+| [PrintJobInfo](PrintJobInfo.md) | [getInfo](PrintJob.md))`()` Gets the [PrintJobInfo](PrintJobInfo.md) that describes this job. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](PrintJob.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isBlocked](PrintJob.md))`()` Gets whether this print job is blocked. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isCancelled](../android/print/PrintJob.md))`()` Gets whether this print job is cancelled. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isCompleted](../android/print/PrintJob.md))`()` Gets whether this print job is completed. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFailed](../android/print/PrintJob.md))`()` Gets whether this print job is failed. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isCancelled](PrintJob.md))`()` Gets whether this print job is cancelled. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isCompleted](PrintJob.md))`()` Gets whether this print job is completed. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFailed](PrintJob.md))`()` Gets whether this print job is failed. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isQueued](../android/print/PrintJob.md))`()` Gets whether this print job is queued. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isStarted](../android/print/PrintJob.md))`()` Gets whether this print job is started. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [restart](../android/print/PrintJob.md))`()` Restarts this print job. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isQueued](PrintJob.md))`()` Gets whether this print job is queued. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isStarted](PrintJob.md))`()` Gets whether this print job is started. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [restart](PrintJob.md))`()` Restarts this print job. |
 | --- | --- |
 
 ## Public methods
@@ -96,7 +96,7 @@ Gets the unique print job id.
 
 | Return ||
 |----------------------------------------------------------------------------------------|----------------------------------|
-| [PrintJobId](../android/print/PrintJobId.md)? | The id. This value may be`null`. |
+| [PrintJobId](PrintJobId.md)? | The id. This value may be`null`. |
 
 ### getInfo
 
@@ -106,13 +106,13 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 fun getInfo(): PrintJobInfo
 ```
 
-Gets the [PrintJobInfo](../android/print/PrintJobInfo.md) that describes this job.
+Gets the [PrintJobInfo](PrintJobInfo.md) that describes this job.
 
 **Node:**The returned info object is a snapshot of the current print job state. Every call to this method returns a fresh info object that reflects the current print job state.
 
 | Return ||
 |-------------------------------------------------------------------------------------------|-------------------------------------------------|
-| [PrintJobInfo](../android/print/PrintJobInfo.md) | The print job info. This value cannot be`null`. |
+| [PrintJobInfo](PrintJobInfo.md) | The print job info. This value cannot be`null`. |
 
 ### hashCode
 
@@ -134,7 +134,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 fun isBlocked(): Boolean
 ```
 
-Gets whether this print job is blocked. Such a print job is halted due to an abnormal condition. You can request a cancellation via [cancel()](../android/print/PrintJob.md)).
+Gets whether this print job is blocked. Such a print job is halted due to an abnormal condition. You can request a cancellation via [cancel()](PrintJob.md)).
 
 | Return ||
 |------------------------------------------------------------------------------------|-----------------------------------|
@@ -180,7 +180,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 fun isFailed(): Boolean
 ```
 
-Gets whether this print job is failed. Such a print job is not successfully printed due to an error. You can request a restart via [restart()](../android/print/PrintJob.md))or cancel via [cancel()](../android/print/PrintJob.md)).
+Gets whether this print job is failed. Such a print job is not successfully printed due to an error. You can request a restart via [restart()](PrintJob.md))or cancel via [cancel()](PrintJob.md)).
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------------------------|
@@ -199,7 +199,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 fun isQueued(): Boolean
 ```
 
-Gets whether this print job is queued. Such a print job is ready to be printed. You can request a cancellation via [cancel()](../android/print/PrintJob.md)).
+Gets whether this print job is queued. Such a print job is ready to be printed. You can request a cancellation via [cancel()](PrintJob.md)).
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------------------------|
@@ -217,7 +217,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 fun isStarted(): Boolean
 ```
 
-Gets whether this print job is started. Such a print job is being printed. You can request a cancellation via [cancel()](../android/print/PrintJob.md)).
+Gets whether this print job is started. Such a print job is being printed. You can request a cancellation via [cancel()](PrintJob.md)).
 
 | Return ||
 |------------------------------------------------------------------------------------|-----------------------------------|

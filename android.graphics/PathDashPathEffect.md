@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # PathDashPathEffect
 
-Kotlin | [Java](../android/graphics/PathDashPathEffect.md) 
+Kotlin | [Java](PathDashPathEffect.md) 
 | --- | --- |
 
 ```
@@ -13,8 +13,8 @@ open class PathDashPathEffect : PathEffect
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.graphics.PathEffect](../android/graphics/PathEffect.md) ||
-| | ↳ | [android.graphics.PathDashPathEffect](../android/graphics/PathDashPathEffect.md) |
+| ↳ | [android.graphics.PathEffect](PathEffect.md) ||
+| | ↳ | [android.graphics.PathDashPathEffect](PathDashPathEffect.md) |
 
 ## Summary
 
@@ -24,11 +24,11 @@ open class PathDashPathEffect : PathEffect
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [PathDashPathEffect](../android/graphics/PathDashPathEffect.md))`(`shape:` ` [Path](../android/graphics/Path.md)!`, `advance:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `phase:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `style:` ` [PathDashPathEffect.Style](../android/graphics/PathDashPathEffect.Style.md)!`)` Dash the drawn path by stamping it with the specified shape. |
+| [PathDashPathEffect](PathDashPathEffect.md))`(`shape:` ` [Path](Path.md)!`, `advance:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `phase:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `style:` ` [PathDashPathEffect.Style](../android/graphics/PathDashPathEffect.Style.md)!`)` Dash the drawn path by stamping it with the specified shape. |
 
 | Inherited functions ||
 |---|---|
-| From class [PathEffect](../android/graphics/PathEffect.md) |------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](../android/graphics/PathEffect.md))`()` <br /> | ||
+| From class [PathEffect](PathEffect.md) |------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](PathEffect.md))`()` <br /> | ||
 
 ## Public constructors
 
@@ -48,7 +48,7 @@ Dash the drawn path by stamping it with the specified shape. This only applies t
 
 | Parameters ||
 |-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `shape` | [Path](../android/graphics/Path.md)!: The path to stamp along |
+| `shape` | [Path](Path.md)!: The path to stamp along |
 | `advance` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): spacing between each stamp of shape |
 | `phase` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): amount to offset before the first shape is stamped |
 | --- | --- |

@@ -8,8 +8,8 @@ class SimpleCustomizationAction : CustomizationAction
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.hardware.input.CustomizationAction](../android/hardware/input/CustomizationAction.md) ||
-| | ↳ | [android.hardware.input.SimpleCustomizationAction](../android/hardware/input/SimpleCustomizationAction.md) |
+| ↳ | [android.hardware.input.CustomizationAction](CustomizationAction.md) ||
+| | ↳ | [android.hardware.input.SimpleCustomizationAction](SimpleCustomizationAction.md) |
 
 Represents predefined simple actions, such as Volume up/down, Screenshot, etc.
 

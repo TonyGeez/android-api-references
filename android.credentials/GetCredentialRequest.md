@@ -2,7 +2,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # GetCredentialRequest
 
-Kotlin | [Java](../android/credentials/GetCredentialRequest.md)
+Kotlin | [Java](GetCredentialRequest.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class GetCredentialRequest : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.credentials.GetCredentialRequest](../android/credentials/GetCredentialRequest.md) |
+| ↳ | [android.credentials.GetCredentialRequest](GetCredentialRequest.md) |
 
 A request to retrieve the user credential, potentially launching UI flows to let the user pick from different credential sources.
 
@@ -29,9 +29,9 @@ A request to retrieve the user credential, potentially launching UI flows to let
 |---|---|
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/credentials/GetCredentialRequest#alwaysSendAppInfoToProvider()()` Returns a value to determine if the calling app info should be always sent to the provider in every phase (if true), or should be removed from the query phase, and only sent as part of the request in the final phase, after the user has made a selection on the UI (if false). |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/credentials/GetCredentialRequest#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [CredentialOption](../android/credentials/CredentialOption.md)!\> | `https://developer.android.com/reference/kotlin/android/credentials/GetCredentialRequest#getCredentialOptions()()` Returns the list of credential options to be requested. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [CredentialOption](CredentialOption.md)!\> | `https://developer.android.com/reference/kotlin/android/credentials/GetCredentialRequest#getCredentialOptions()()` Returns the list of credential options to be requested. |
 | --- | --- |
-| [Bundle](../android/os/Bundle.md) | `https://developer.android.com/reference/kotlin/android/credentials/GetCredentialRequest#getData()()` Returns the top request level data. |
+| [Bundle](../android.os/Bundle.md) | `https://developer.android.com/reference/kotlin/android/credentials/GetCredentialRequest#getData()()` Returns the top request level data. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/credentials/GetCredentialRequest#getOrigin()()` Returns the origin of the calling app if set otherwise returns null. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/credentials/GetCredentialRequest#toString()()` Returns a string representation of the object. |
 | --- | --- |
@@ -39,7 +39,7 @@ A request to retrieve the user credential, potentially launching UI flows to let
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [GetCredentialRequest](../android/credentials/GetCredentialRequest.md)!\> | `https://developer.android.com/reference/kotlin/android/credentials/GetCredentialRequest#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [GetCredentialRequest](GetCredentialRequest.md)!\> | `https://developer.android.com/reference/kotlin/android/credentials/GetCredentialRequest#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public methods
 
@@ -134,7 +134,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

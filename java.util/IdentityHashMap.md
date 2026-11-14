@@ -10,8 +10,8 @@ open class IdentityHashMap<K : Any!, V : Any!> : AbstractMap<K, V>, Clone
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.util.AbstractMap](../java/util/AbstractMap.md)\<K, V\> ||
-| | ↳ | [java.util.IdentityHashMap](../java/util/IdentityHashMap.md) |
+| ↳ | [java.util.AbstractMap](AbstractMap.md)\<K, V\> ||
+| | ↳ | [java.util.IdentityHashMap](IdentityHashMap.md) |
 
 This class implements the`Map`interface with a hash table, using reference-equality in place of object-equality when comparing keys (and values). In other words, in an`IdentityHashMap`, two keys`k1`and`k2`are considered equal if and only if`(k1==k2)`. (In normal`Map`implementations (like`HashMap`) two keys`k1`and`k2`are considered equal if and only if`(k1==null ? k2==null : k1.equals(k2))`.)
 
@@ -23,19 +23,19 @@ A typical use of this class is*topology-preserving object graph transformations*
 
 This class provides all of the optional map operations, and permits`null`values and the`null`key. This class makes no guarantees as to the order of the map; in particular, it does not guarantee that the order will remain constant over time.
 
-This class provides constant-time performance for the basic operations (`get`and`put`), assuming the system identity hash function ([System.identityHashCode(Object)](../java/lang/System.md))) disperses elements properly among the buckets.
+This class provides constant-time performance for the basic operations (`get`and`put`), assuming the system identity hash function ([System.identityHashCode(Object)](../java.lang/System.md))) disperses elements properly among the buckets.
 
 This class has one tuning parameter (which affects performance but not semantics):*expected maximum size*. This parameter is the maximum number of key-value mappings that the map is expected to hold. Internally, this parameter is used to determine the number of buckets initially comprising the hash table. The precise relationship between the expected maximum size and the number of buckets is unspecified.
 
 If the size of the map (the number of key-value mappings) sufficiently exceeds the expected maximum size, the number of buckets is increased. Increasing the number of buckets ("rehashing") may be fairly expensive, so it pays to create identity hash maps with a sufficiently large expected maximum size. On the other hand, iteration over collection views requires time proportional to the number of buckets in the hash table, so it pays not to set the expected maximum size too high if you are especially concerned with iteration performance or memory usage.
 
-**Note that this implementation is not synchronized.** If multiple threads access an identity hash map concurrently, and at least one of the threads modifies the map structurally, it*must* be synchronized externally. (A structural modification is any operation that adds or deletes one or more mappings; merely changing the value associated with a key that an instance already contains is not a structural modification.) This is typically accomplished by synchronizing on some object that naturally encapsulates the map. If no such object exists, the map should be "wrapped" using the [Collections.synchronizedMap](../java/util/Collections.md))method. This is best done at creation time, to prevent accidental unsynchronized access to the map: 
+**Note that this implementation is not synchronized.** If multiple threads access an identity hash map concurrently, and at least one of the threads modifies the map structurally, it*must* be synchronized externally. (A structural modification is any operation that adds or deletes one or more mappings; merely changing the value associated with a key that an instance already contains is not a structural modification.) This is typically accomplished by synchronizing on some object that naturally encapsulates the map. If no such object exists, the map should be "wrapped" using the [Collections.synchronizedMap](Collections.md))method. This is best done at creation time, to prevent accidental unsynchronized access to the map: 
 
 ```kotlin
 Map m = Collections.synchronizedMap(new IdentityHashMap(...));
 ```
 
-The iterators returned by the`iterator`method of the collections returned by all of this class's "collection view methods" are*fail-fast* : if the map is structurally modified at any time after the iterator is created, in any way except through the iterator's own`remove`method, the iterator will throw a [ConcurrentModificationException](../java/util/ConcurrentModificationException.md). Thus, in the face of concurrent modification, the iterator fails quickly and cleanly, rather than risking arbitrary, non-deterministic behavior at an undetermined time in the future.
+The iterators returned by the`iterator`method of the collections returned by all of this class's "collection view methods" are*fail-fast* : if the map is structurally modified at any time after the iterator is created, in any way except through the iterator's own`remove`method, the iterator will throw a [ConcurrentModificationException](ConcurrentModificationException.md). Thus, in the face of concurrent modification, the iterator fails quickly and cleanly, rather than risking arbitrary, non-deterministic behavior at an undetermined time in the future.
 
 Note that the fail-fast behavior of an iterator cannot be guaranteed as it is, generally speaking, impossible to make any hard guarantees in the presence of unsynchronized concurrent modification. Fail-fast iterators throw`ConcurrentModificationException`on a best-effort basis. Therefore, it would be wrong to write a program that depended on this exception for its correctness:*fail-fast iterators should be used only to detect bugs.*
 
@@ -45,44 +45,44 @@ This class is a member of the [Java Collections Framework](https://developer.and
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [IdentityHashMap](../java/util/IdentityHashMap.md))`()` Constructs a new, empty identity hash map with a default expected maximum size (21). |
-| [IdentityHashMap](../java/util/IdentityHashMap.md))`(`expectedMaxSize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a new, empty map with the specified expected maximum size. |
-| [IdentityHashMap](../java/util/IdentityHashMap.md))`(`m:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)<out` `K,` `out` `V>!`)` Constructs a new identity hash map containing the keys-value mappings in the specified map. |
+| [IdentityHashMap](IdentityHashMap.md))`()` Constructs a new, empty identity hash map with a default expected maximum size (21). |
+| [IdentityHashMap](IdentityHashMap.md))`(`expectedMaxSize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a new, empty map with the specified expected maximum size. |
+| [IdentityHashMap](IdentityHashMap.md))`(`m:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)<out` `K,` `out` `V>!`)` Constructs a new identity hash map containing the keys-value mappings in the specified map. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](../java/util/IdentityHashMap.md))`()` Removes all of the mappings from this map. |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](../java/util/IdentityHashMap.md))`()` Returns a shallow copy of this identity hash map: the keys and values themselves are not cloned. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsKey](../java/util/IdentityHashMap.md))`(`key:` `K?`)` Tests whether the specified object reference is a key in this identity hash map. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](IdentityHashMap.md))`()` Removes all of the mappings from this map. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](IdentityHashMap.md))`()` Returns a shallow copy of this identity hash map: the keys and values themselves are not cloned. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsKey](IdentityHashMap.md))`(`key:` `K?`)` Tests whether the specified object reference is a key in this identity hash map. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsValue](../java/util/IdentityHashMap.md))`(`value:` `V?`)` Tests whether the specified object reference is a value in this identity hash map. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/util/IdentityHashMap.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares the specified object with this map for equality. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](../java/util/IdentityHashMap.md))`(`action:` ` [BiConsumer](../java/util/function/BiConsumer.md)<in` `K,` `in` `V>`)` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsValue](IdentityHashMap.md))`(`value:` `V?`)` Tests whether the specified object reference is a value in this identity hash map. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](IdentityHashMap.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares the specified object with this map for equality. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](IdentityHashMap.md))`(`action:` ` [BiConsumer](../java.util.function/BiConsumer.md)<in` `K,` `in` `V>`)` <br /> |
 | --- | --- |
-| openV? | [get](../java/util/IdentityHashMap.md))`(`key:` `K?`)` Returns the value to which the specified key is mapped, or`null`if this map contains no mapping for the key. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/util/IdentityHashMap.md))`()` Returns the hash code value for this map. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](../java/util/IdentityHashMap.md))`()` Returns`true`if this identity hash map contains no key-value mappings. |
+| openV? | [get](IdentityHashMap.md))`(`key:` `K?`)` Returns the value to which the specified key is mapped, or`null`if this map contains no mapping for the key. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](IdentityHashMap.md))`()` Returns the hash code value for this map. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](IdentityHashMap.md))`()` Returns`true`if this identity hash map contains no key-value mappings. |
 | --- | --- |
-| openV? | [put](../java/util/IdentityHashMap.md))`(`key:` `K`, `value:` `V`)` Associates the specified value with the specified key in this identity hash map. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [putAll](../java/util/IdentityHashMap.md))`(`from:` ` [Map](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html)<out` `K,` `V>`)` Copies all of the mappings from the specified map to this map. |
-| openV? | [remove](../java/util/IdentityHashMap.md))`(`key:` `K?`)` Removes the mapping for this key from this map if present. |
+| openV? | [put](IdentityHashMap.md))`(`key:` `K`, `value:` `V`)` Associates the specified value with the specified key in this identity hash map. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [putAll](IdentityHashMap.md))`(`from:` ` [Map](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html)<out` `K,` `V>`)` Copies all of the mappings from the specified map to this map. |
+| openV? | [remove](IdentityHashMap.md))`(`key:` `K?`)` Removes the mapping for this key from this map if present. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [remove](../java/util/IdentityHashMap.md))`(`key:` `K`, `value:` `V`)` Removes the entry for the specified key only if it is currently mapped to the specified value. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [replace](../java/util/IdentityHashMap.md))`(`key:` `K`, `oldValue:` `V`, `newValue:` `V`)` Replaces the entry for the specified key only if currently mapped to the specified value. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [replaceAll](../java/util/IdentityHashMap.md))`(`function:` ` [BiFunction](../java/util/function/BiFunction.md)<in` `K,` `in` `V,` `out` `V>`)` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [remove](IdentityHashMap.md))`(`key:` `K`, `value:` `V`)` Removes the entry for the specified key only if it is currently mapped to the specified value. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [replace](IdentityHashMap.md))`(`key:` `K`, `oldValue:` `V`, `newValue:` `V`)` Replaces the entry for the specified key only if currently mapped to the specified value. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [replaceAll](IdentityHashMap.md))`(`function:` ` [BiFunction](../java.util.function/BiFunction.md)<in` `K,` `in` `V,` `out` `V>`)` <br /> |
 | --- | --- |
 
 | Inherited functions ||
 |---|---|
-| From class [AbstractMap](../java/util/AbstractMap.md) |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/util/AbstractMap.md))`()` <br /> Returns a string representation of this map. The string representation consists of a list of key-value mappings in the order returned by the map's`entrySet`view's iterator, enclosed in braces (`"{}"`). Adjacent mappings are separated by the characters`", "`(comma and space). Each key-value mapping is rendered as the key followed by an equals sign (`"="`) followed by the associated value. Keys and values are converted to strings as by [String.valueOf(Object)](../java/lang/String.md)). <br /> | ||
+| From class [AbstractMap](AbstractMap.md) |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](AbstractMap.md))`()` <br /> Returns a string representation of this map. The string representation consists of a list of key-value mappings in the order returned by the map's`entrySet`view's iterator, enclosed in braces (`"{}"`). Adjacent mappings are separated by the characters`", "`(comma and space). Each key-value mapping is rendered as the key followed by an equals sign (`"="`) followed by the associated value. Keys and values are converted to strings as by [String.valueOf(Object)](../java.lang/String.md)). <br /> | ||
 
 | Properties ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K,V\>\> | [entries](../java/util/IdentityHashMap.md) Returns a [Set](../java/util/Set.md) view of the mappings contained in this map. |
-| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<K\> | [keys](../java/util/IdentityHashMap.md) Returns an identity-based set view of the keys contained in this map. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [size](../java/util/IdentityHashMap.md) Returns the number of key-value mappings in this identity hash map. |
+| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K,V\>\> | [entries](IdentityHashMap.md) Returns a [Set](Set.md) view of the mappings contained in this map. |
+| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<K\> | [keys](IdentityHashMap.md) Returns an identity-based set view of the keys contained in this map. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [size](IdentityHashMap.md) Returns the number of key-value mappings in this identity hash map. |
 | --- | --- |
-| open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<V\> | [values](../java/util/IdentityHashMap.md) Returns a [Collection](../java/util/Collection.md) view of the values contained in this map. |
+| open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<V\> | [values](IdentityHashMap.md) Returns a [Collection](Collection.md) view of the values contained in this map. |
 
 ## Public constructors
 
@@ -191,7 +191,7 @@ Tests whether the specified object reference is a key in this identity hash map.
 
 **See Also**
 
-- [#containsValue(Object)](../java/util/IdentityHashMap.md)) 
+- [#containsValue(Object)](IdentityHashMap.md)) 
 
 ### containsValue
 
@@ -218,7 +218,7 @@ Tests whether the specified object reference is a value in this identity hash ma
 
 **See Also**
 
-- [#containsKey(Object)](../java/util/IdentityHashMap.md)) 
+- [#containsKey(Object)](IdentityHashMap.md)) 
 
 ### equals
 
@@ -243,7 +243,7 @@ Compares the specified object with this map for equality. Returns`true`if the gi
 
 **See Also**
 
-- [java.lang.Object#equals(Object)](../java/lang/Object.md)) 
+- [java.lang.Object#equals(Object)](../java.lang/Object.md)) 
 
 ### forEach
 
@@ -255,7 +255,7 @@ open fun forEach(action: BiConsumer<in K, in V>): Unit
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| `action` | [BiConsumer](../java/util/function/BiConsumer.md)\<inK,inV\>:The action to be performed for each entry |
+| `action` | [BiConsumer](../java.util.function/BiConsumer.md)\<inK,inV\>:The action to be performed for each entry |
 
 | Exceptions ||
 |---------------------------------------------|-----------------------------------------------------|
@@ -274,7 +274,7 @@ Returns the value to which the specified key is mapped, or`null`if this map cont
 
 More formally, if this map contains a mapping from a key`k`to a value`v`such that`(key == k)`, then this method returns`v`; otherwise it returns`null`. (There can be at most one such mapping.)
 
-A return value of`null`does not*necessarily* indicate that the map contains no mapping for the key; it's also possible that the map explicitly maps the key to`null`. The [containsKey](../java/util/IdentityHashMap.md))operation may be used to distinguish these two cases.
+A return value of`null`does not*necessarily* indicate that the map contains no mapping for the key; it's also possible that the map explicitly maps the key to`null`. The [containsKey](IdentityHashMap.md))operation may be used to distinguish these two cases.
 
 | Parameters ||
 |-------|-----------------------------------------------------|
@@ -291,7 +291,7 @@ A return value of`null`does not*necessarily* indicate that the map contains no m
 
 **See Also**
 
-- [#put(Object, Object)](../java/util/IdentityHashMap.md)) 
+- [#put(Object, Object)](IdentityHashMap.md)) 
 
 ### hashCode
 
@@ -303,7 +303,7 @@ open fun hashCode(): Int
 
 Returns the hash code value for this map. The hash code of a map is defined to be the sum of the hash codes of each entry of this map. See the ( method for a specification of the hash code of this map's entries.
 
-This specification ensures that`m1.equals(m2)`implies that`m1.hashCode()==m2.hashCode()`for any two`IdentityHashMap`instances`m1`and`m2`, as required by the general contract of [Object.hashCode](../java/lang/Object.md)).
+This specification ensures that`m1.equals(m2)`implies that`m1.hashCode()==m2.hashCode()`for any two`IdentityHashMap`instances`m1`and`m2`, as required by the general contract of [Object.hashCode](../java.lang/Object.md)).
 
 **Owing to the reference-equality-based semantics of the`Map.Entry`instances in the set returned by this map's`entrySet`method, it is possible that the contractual requirement of`Object.hashCode`mentioned in the previous paragraph will be violated if one of the two objects being compared is an`IdentityHashMap`instance and the other is a normal map.**
 
@@ -313,8 +313,8 @@ This specification ensures that`m1.equals(m2)`implies that`m1.hashCode()==m2.has
 
 **See Also**
 
-- [java.lang.Object#equals(Object)](../java/lang/Object.md))
-- [#equals(Object)](../java/util/IdentityHashMap.md)) 
+- [java.lang.Object#equals(Object)](../java.lang/Object.md))
+- [#equals(Object)](IdentityHashMap.md)) 
 
 ### isEmpty
 
@@ -362,9 +362,9 @@ Associates the specified value with the specified key in this identity hash map.
 
 **See Also**
 
-- [java.lang.Object#equals(Object)](../java/lang/Object.md))
-- [#get(Object)](../java/util/IdentityHashMap.md))
-- [#containsKey(Object)](../java/util/IdentityHashMap.md)) 
+- [java.lang.Object#equals(Object)](../java.lang/Object.md))
+- [#get(Object)](IdentityHashMap.md))
+- [#containsKey(Object)](IdentityHashMap.md)) 
 
 ### putAll
 
@@ -489,7 +489,7 @@ open fun replaceAll(function: BiFunction<in K, in V, out V>): Unit
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| `function` | [BiFunction](../java/util/function/BiFunction.md)\<inK,inV,outV\>:the function to apply to each entry |
+| `function` | [BiFunction](../java.util.function/BiFunction.md)\<inK,inV,outV\>:the function to apply to each entry |
 
 | Exceptions ||
 |---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
@@ -510,11 +510,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open val entries: MutableSet<MutableEntry<K, V>>
 ```
 
-Returns a [Set](../java/util/Set.md) view of the mappings contained in this map. Each element in the returned set is a reference-equality-based`Map.Entry`. The set is backed by the map, so changes to the map are reflected in the set, and vice-versa. If the map is modified while an iteration over the set is in progress, the results of the iteration are undefined. The set supports element removal, which removes the corresponding mapping from the map, via the`Iterator.remove`,`Set.remove`,`removeAll`,`retainAll`and`clear`methods. It does not support the`add`or`addAll`methods.
+Returns a [Set](Set.md) view of the mappings contained in this map. Each element in the returned set is a reference-equality-based`Map.Entry`. The set is backed by the map, so changes to the map are reflected in the set, and vice-versa. If the map is modified while an iteration over the set is in progress, the results of the iteration are undefined. The set supports element removal, which removes the corresponding mapping from the map, via the`Iterator.remove`,`Set.remove`,`removeAll`,`retainAll`and`clear`methods. It does not support the`add`or`addAll`methods.
 
 Like the backing map, the`Map.Entry`objects in the set returned by this method define key and value equality as reference-equality rather than object-equality. This affects the behavior of the`equals`and`hashCode`methods of these`Map.Entry`objects. A reference-equality based`Map.Entry e`is equal to an object`o`if and only if`o`is a`Map.Entry`and`e.getKey()==o.getKey() && e.getValue()==o.getValue()`. To accommodate these equals semantics, the`hashCode`method returns`System.identityHashCode(e.getKey()) ^ System.identityHashCode(e.getValue())`. (While the keys and values are compared using reference equality, the`Map.Entry`objects themselves are not.)
 
-**Owing to the reference-equality-based semantics of the`Map.Entry`instances in the set returned by this method, it is possible that the symmetry and transitivity requirements of the [Object.equals(Object)](../java/lang/Object.md))contract may be violated if any of the entries in the set is compared to a normal map entry, or if the set returned by this method is compared to a set of normal map entries (such as would be returned by a call to this method on a normal map). However, the`Object.equals`contract is guaranteed to hold among identity-based map entries, and among sets of such entries.**
+**Owing to the reference-equality-based semantics of the`Map.Entry`instances in the set returned by this method, it is possible that the symmetry and transitivity requirements of the [Object.equals(Object)](../java.lang/Object.md))contract may be violated if any of the entries in the set is compared to a normal map entry, or if the set returned by this method is compared to a set of normal map entries (such as would be returned by a call to this method on a normal map). However, the`Object.equals`contract is guaranteed to hold among identity-based map entries, and among sets of such entries.**
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------|
@@ -542,8 +542,8 @@ The`hashCode`method of the returned set returns the sum of the*identity hashcode
 
 **See Also**
 
-- [java.lang.Object#equals(Object)](../java/lang/Object.md))
-- [java.lang.System#identityHashCode(Object)](../java/lang/System.md)) 
+- [java.lang.Object#equals(Object)](../java.lang/Object.md))
+- [java.lang.System#identityHashCode(Object)](../java.lang/System.md)) 
 
 ### size
 
@@ -567,7 +567,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open val values: MutableCollection<V>
 ```
 
-Returns a [Collection](../java/util/Collection.md) view of the values contained in this map. The collection is backed by the map, so changes to the map are reflected in the collection, and vice-versa. If the map is modified while an iteration over the collection is in progress, the results of the iteration are undefined. The collection supports element removal, which removes the corresponding mapping from the map, via the`Iterator.remove`,`Collection.remove`,`removeAll`,`retainAll`and`clear`methods. It does not support the`add`or`addAll`methods.
+Returns a [Collection](Collection.md) view of the values contained in this map. The collection is backed by the map, so changes to the map are reflected in the collection, and vice-versa. If the map is modified while an iteration over the collection is in progress, the results of the iteration are undefined. The collection supports element removal, which removes the corresponding mapping from the map, via the`Iterator.remove`,`Collection.remove`,`removeAll`,`retainAll`and`clear`methods. It does not support the`add`or`addAll`methods.
 
 **While the object returned by this method implements the`Collection`interface, it does*not* obey`Collection's`general contract. Like its backing map, the collection returned by this method defines element equality as reference-equality rather than object-equality. This affects the behavior of its`contains`,`remove`and`containsAll`methods.**
 

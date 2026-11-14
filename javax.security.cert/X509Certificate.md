@@ -10,8 +10,8 @@ abstract class X509Certificate : Certificate
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [javax.security.cert.Certificate](../javax/security/cert/Certificate.md) ||
-| | ↳ | [javax.security.cert.X509Certificate](../javax/security/cert/X509Certificate.md) |
+| ↳ | [javax.security.cert.Certificate](Certificate.md) ||
+| | ↳ | [javax.security.cert.X509Certificate](X509Certificate.md) |
 
 Abstract class for X.509 v1 certificates. This provides a standard way to access all the version 1 attributes of an X.509 certificate. Attributes that are specific to X.509 v2 or v3 are not available through this interface. Future API evolution will provide full access to complete X.509 v3 attributes.
 
@@ -77,31 +77,31 @@ The value of this`cert.provider.x509v1`property has to be changed to instantiate
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------|---|
-| [X509Certificate](../javax/security/cert/X509Certificate.md))`()` <br /> |
+| [X509Certificate](X509Certificate.md))`()` <br /> |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkValidity](../javax/security/cert/X509Certificate.md))`()` Checks that the certificate is currently valid. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkValidity](../javax/security/cert/X509Certificate.md))`(`date:` ` [Date](../java/util/Date.md)!`)` Checks that the specified date is within the certificate's validity period. |
-| static [X509Certificate](../javax/security/cert/X509Certificate.md)! | [getInstance](../javax/security/cert/X509Certificate.md))`(`certData:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Instantiates an X509Certificate object, and initializes it with the specified byte array. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkValidity](X509Certificate.md))`()` Checks that the certificate is currently valid. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkValidity](X509Certificate.md))`(`date:` ` [Date](../java.util/Date.md)!`)` Checks that the specified date is within the certificate's validity period. |
+| static [X509Certificate](X509Certificate.md)! | [getInstance](X509Certificate.md))`(`certData:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Instantiates an X509Certificate object, and initializes it with the specified byte array. |
 | --- | --- |
-| static [X509Certificate](../javax/security/cert/X509Certificate.md)! | [getInstance](../javax/security/cert/X509Certificate.md))`(`inStream:` ` [InputStream](../java/io/InputStream.md)!`)` Instantiates an X509Certificate object, and initializes it with the data read from the input stream`inStream`. |
-| abstract [Principal](../java/security/Principal.md)! | [getIssuerDN](../javax/security/cert/X509Certificate.md))`()` Gets the`issuer`(issuer distinguished name) value from the certificate. |
-| abstract [Date](../java/util/Date.md)! | [getNotAfter](../javax/security/cert/X509Certificate.md))`()` Gets the`notAfter`date from the validity period of the certificate. |
+| static [X509Certificate](X509Certificate.md)! | [getInstance](X509Certificate.md))`(`inStream:` ` [InputStream](../java.io/InputStream.md)!`)` Instantiates an X509Certificate object, and initializes it with the data read from the input stream`inStream`. |
+| abstract [Principal](../java.security/Principal.md)! | [getIssuerDN](X509Certificate.md))`()` Gets the`issuer`(issuer distinguished name) value from the certificate. |
+| abstract [Date](../java.util/Date.md)! | [getNotAfter](X509Certificate.md))`()` Gets the`notAfter`date from the validity period of the certificate. |
 | --- | --- |
-| abstract [Date](../java/util/Date.md)! | [getNotBefore](../javax/security/cert/X509Certificate.md))`()` Gets the`notBefore`date from the validity period of the certificate. |
-| abstract [BigInteger](../java/math/BigInteger.md)! | [getSerialNumber](../javax/security/cert/X509Certificate.md))`()` Gets the`serialNumber`value from the certificate. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSigAlgName](../javax/security/cert/X509Certificate.md))`()` Gets the signature algorithm name for the certificate signature algorithm. |
+| abstract [Date](../java.util/Date.md)! | [getNotBefore](X509Certificate.md))`()` Gets the`notBefore`date from the validity period of the certificate. |
+| abstract [BigInteger](../java.math/BigInteger.md)! | [getSerialNumber](X509Certificate.md))`()` Gets the`serialNumber`value from the certificate. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSigAlgName](X509Certificate.md))`()` Gets the signature algorithm name for the certificate signature algorithm. |
 | --- | --- |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSigAlgOID](../javax/security/cert/X509Certificate.md))`()` Gets the signature algorithm OID string from the certificate. |
-| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getSigAlgParams](../javax/security/cert/X509Certificate.md))`()` Gets the DER-encoded signature algorithm parameters from this certificate's signature algorithm. |
-| abstract [Principal](../java/security/Principal.md)! | [getSubjectDN](../javax/security/cert/X509Certificate.md))`()` Gets the`subject`(subject distinguished name) value from the certificate. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSigAlgOID](X509Certificate.md))`()` Gets the signature algorithm OID string from the certificate. |
+| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getSigAlgParams](X509Certificate.md))`()` Gets the DER-encoded signature algorithm parameters from this certificate's signature algorithm. |
+| abstract [Principal](../java.security/Principal.md)! | [getSubjectDN](X509Certificate.md))`()` Gets the`subject`(subject distinguished name) value from the certificate. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getVersion](../javax/security/cert/X509Certificate.md))`()` Gets the`version`(version number) value from the certificate. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getVersion](X509Certificate.md))`()` Gets the`version`(version number) value from the certificate. |
 
 | Inherited functions ||
 |---|---|
-| From class [Certificate](../javax/security/cert/Certificate.md) |--------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../javax/security/cert/Certificate.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> Compares this certificate for equality with the specified object. If the`other`object is an`instanceof``Certificate`, then its encoded form is retrieved and compared with the encoded form of this certificate. <br /> | | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getEncoded](../javax/security/cert/Certificate.md))`()` <br /> Returns the encoded form of this certificate. It is assumed that each certificate type would have only a single form of encoding; for example, X.509 certificates would be encoded as ASN.1 DER. <br /> | | [PublicKey](../java/security/PublicKey.md)! | [getPublicKey](../javax/security/cert/Certificate.md))`()` <br /> Gets the public key from this certificate. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../javax/security/cert/Certificate.md))`()` <br /> Returns a hashcode value for this certificate from its encoded form. <br /> | | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../javax/security/cert/Certificate.md))`()` <br /> Returns a string representation of this certificate. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [verify](../javax/security/cert/Certificate.md))`(`key:` ` [PublicKey](../java/security/PublicKey.md)!`)` <br /> Verifies that this certificate was signed using the private key that corresponds to the specified public key. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [verify](../javax/security/cert/Certificate.md))`(`key:` ` [PublicKey](../java/security/PublicKey.md)!`, `sigProvider:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> Verifies that this certificate was signed using the private key that corresponds to the specified public key. This method uses the signature verification engine supplied by the specified provider. <br /> | ||
+| From class [Certificate](Certificate.md) |--------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](Certificate.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> Compares this certificate for equality with the specified object. If the`other`object is an`instanceof``Certificate`, then its encoded form is retrieved and compared with the encoded form of this certificate. <br /> | | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getEncoded](Certificate.md))`()` <br /> Returns the encoded form of this certificate. It is assumed that each certificate type would have only a single form of encoding; for example, X.509 certificates would be encoded as ASN.1 DER. <br /> | | [PublicKey](../java.security/PublicKey.md)! | [getPublicKey](Certificate.md))`()` <br /> Gets the public key from this certificate. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](Certificate.md))`()` <br /> Returns a hashcode value for this certificate from its encoded form. <br /> | | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](Certificate.md))`()` <br /> Returns a string representation of this certificate. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [verify](Certificate.md))`(`key:` ` [PublicKey](../java.security/PublicKey.md)!`)` <br /> Verifies that this certificate was signed using the private key that corresponds to the specified public key. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [verify](Certificate.md))`(`key:` ` [PublicKey](../java.security/PublicKey.md)!`, `sigProvider:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> Verifies that this certificate was signed using the private key that corresponds to the specified public key. This method uses the signature verification engine supplied by the specified provider. <br /> | ||
 
 ## Public constructors
 
@@ -157,7 +157,7 @@ Checks that the specified date is within the certificate's validity period. In o
 
 | Parameters ||
 |--------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `date` | [Date](../java/util/Date.md)!:the Date to check against to see if this certificate is valid at that date/time. |
+| `date` | [Date](../java.util/Date.md)!:the Date to check against to see if this certificate is valid at that date/time. |
 
 | Exceptions ||
 |-------------------------------------------------------|------------------------------------------------------------------------|
@@ -191,7 +191,7 @@ Note: All X509Certificate subclasses must provide a constructor of the form:
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
-| [X509Certificate](../javax/security/cert/X509Certificate.md)! | an X509Certificate object initialized with the data from`certData`. |
+| [X509Certificate](X509Certificate.md)! | an X509Certificate object initialized with the data from`certData`. |
 
 | Exceptions ||
 |--------------------------------------------|----------------------------------------------------------------|
@@ -216,11 +216,11 @@ Note: Only one DER-encoded certificate is expected to be in the input stream. Al
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `inStream` | [InputStream](../java/io/InputStream.md)!:an input stream with the data to be read to initialize the certificate. |
+| `inStream` | [InputStream](../java.io/InputStream.md)!:an input stream with the data to be read to initialize the certificate. |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| [X509Certificate](../javax/security/cert/X509Certificate.md)! | an X509Certificate object initialized with the data from the input stream. |
+| [X509Certificate](X509Certificate.md)! | an X509Certificate object initialized with the data from the input stream. |
 
 | Exceptions ||
 |--------------------------------------------|----------------------------------------------------------------|
@@ -257,7 +257,7 @@ The`Name`describes a hierarchical name composed of attributes, such as country n
 
 | Return ||
 |--------------------------------------------------------------------------------------------|----------------------------------------------------------|
-| [Principal](../java/security/Principal.md)! | a Principal whose name is the issuer distinguished name. |
+| [Principal](../java.security/Principal.md)! | a Principal whose name is the issuer distinguished name. |
 
 ### getNotAfter
 
@@ -267,11 +267,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun getNotAfter(): Date!
 ```
 
-Gets the`notAfter`date from the validity period of the certificate. See [getNotBefore](../javax/security/cert/X509Certificate.md))for relevant ASN.1 definitions.
+Gets the`notAfter`date from the validity period of the certificate. See [getNotBefore](X509Certificate.md))for relevant ASN.1 definitions.
 
 | Return ||
 |------------------------------------------------------------------------------|--------------------------------------|
-| [Date](../java/util/Date.md)! | the end date of the validity period. |
+| [Date](../java.util/Date.md)! | the end date of the validity period. |
 
 **See Also**
 
@@ -304,7 +304,7 @@ validity             Validity
 
 | Return ||
 |------------------------------------------------------------------------------|----------------------------------------|
-| [Date](../java/util/Date.md)! | the start date of the validity period. |
+| [Date](../java.util/Date.md)! | the start date of the validity period. |
 
 **See Also**
 
@@ -331,7 +331,7 @@ serialNumber     CertificateSerialNumber
 
 | Return ||
 |------------------------------------------------------------------------------------------|--------------------|
-| [BigInteger](../java/math/BigInteger.md)! | the serial number. |
+| [BigInteger](../java.math/BigInteger.md)! | the serial number. |
 
 ### getSigAlgName
 
@@ -373,7 +373,7 @@ abstract fun getSigAlgOID(): String!
 
 Gets the signature algorithm OID string from the certificate. An OID is represented by a set of positive whole numbers separated by periods. For example, the string "1.2.840.10040.4.3" identifies the SHA-1 with DSA signature algorithm, as per the PKIX part I.
 
-See [getSigAlgName](../javax/security/cert/X509Certificate.md))for relevant ASN.1 definitions.
+See [getSigAlgName](X509Certificate.md))for relevant ASN.1 definitions.
 
 | Return ||
 |-----------------------------------------------------------------------------------|-------------------------------------|
@@ -389,7 +389,7 @@ abstract fun getSigAlgParams(): ByteArray!
 
 Gets the DER-encoded signature algorithm parameters from this certificate's signature algorithm. In most cases, the signature algorithm parameters are null; the parameters are usually supplied with the certificate's public key.
 
-See [getSigAlgName](../javax/security/cert/X509Certificate.md))for relevant ASN.1 definitions.
+See [getSigAlgName](X509Certificate.md))for relevant ASN.1 definitions.
 
 | Return ||
 |------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
@@ -412,11 +412,11 @@ subject    Name
 
 <br />
 
-See [getIssuerDN](../javax/security/cert/X509Certificate.md))for`Name`and other relevant definitions.
+See [getIssuerDN](X509Certificate.md))for`Name`and other relevant definitions.
 
 | Return ||
 |--------------------------------------------------------------------------------------------|---------------------------------------------|
-| [Principal](../java/security/Principal.md)! | a Principal whose name is the subject name. |
+| [Principal](../java.security/Principal.md)! | a Principal whose name is the subject name. |
 
 **See Also**
 

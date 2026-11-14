@@ -10,7 +10,7 @@ class ZoneOffsetTransitionRule : Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.time.zone.ZoneOffsetTransitionRule](../java/time/zone/ZoneOffsetTransitionRule.md) |
+| ↳ | [java.time.zone.ZoneOffsetTransitionRule](ZoneOffsetTransitionRule.md) |
 
 A rule expressing how to create a transition.
 
@@ -31,24 +31,24 @@ These different rule types can be expressed and queried.
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [ZoneOffsetTransition](../java/time/zone/ZoneOffsetTransition.md)! | [createTransition](../java/time/zone/ZoneOffsetTransitionRule.md))`(`year:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a transition instance for the specified year. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/time/zone/ZoneOffsetTransitionRule.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Checks if this object equals another. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDayOfMonthIndicator](../java/time/zone/ZoneOffsetTransitionRule.md))`()` Gets the indicator of the day-of-month of the transition. |
+| [ZoneOffsetTransition](ZoneOffsetTransition.md)! | [createTransition](ZoneOffsetTransitionRule.md))`(`year:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a transition instance for the specified year. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](ZoneOffsetTransitionRule.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Checks if this object equals another. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDayOfMonthIndicator](ZoneOffsetTransitionRule.md))`()` Gets the indicator of the day-of-month of the transition. |
 | --- | --- |
-| [DayOfWeek](../java/time/DayOfWeek.md)! | [getDayOfWeek](../java/time/zone/ZoneOffsetTransitionRule.md))`()` Gets the day-of-week of the transition. |
-| [LocalTime](../java/time/LocalTime.md)! | [getLocalTime](../java/time/zone/ZoneOffsetTransitionRule.md))`()` Gets the local time of day of the transition which must be checked with [isMidnightEndOfDay()](../java/time/zone/ZoneOffsetTransitionRule.md)). |
-| [Month](../java/time/Month.md)! | [getMonth](../java/time/zone/ZoneOffsetTransitionRule.md))`()` Gets the month of the transition. |
+| [DayOfWeek](../java.time/DayOfWeek.md)! | [getDayOfWeek](ZoneOffsetTransitionRule.md))`()` Gets the day-of-week of the transition. |
+| [LocalTime](../java.time/LocalTime.md)! | [getLocalTime](ZoneOffsetTransitionRule.md))`()` Gets the local time of day of the transition which must be checked with [isMidnightEndOfDay()](ZoneOffsetTransitionRule.md)). |
+| [Month](../java.time/Month.md)! | [getMonth](ZoneOffsetTransitionRule.md))`()` Gets the month of the transition. |
 | --- | --- |
-| [ZoneOffset](../java/time/ZoneOffset.md)! | [getOffsetAfter](../java/time/zone/ZoneOffsetTransitionRule.md))`()` Gets the offset after the transition. |
-| [ZoneOffset](../java/time/ZoneOffset.md)! | [getOffsetBefore](../java/time/zone/ZoneOffsetTransitionRule.md))`()` Gets the offset before the transition. |
-| [ZoneOffset](../java/time/ZoneOffset.md)! | [getStandardOffset](../java/time/zone/ZoneOffsetTransitionRule.md))`()` Gets the standard offset in force at the transition. |
+| [ZoneOffset](../java.time/ZoneOffset.md)! | [getOffsetAfter](ZoneOffsetTransitionRule.md))`()` Gets the offset after the transition. |
+| [ZoneOffset](../java.time/ZoneOffset.md)! | [getOffsetBefore](ZoneOffsetTransitionRule.md))`()` Gets the offset before the transition. |
+| [ZoneOffset](../java.time/ZoneOffset.md)! | [getStandardOffset](ZoneOffsetTransitionRule.md))`()` Gets the standard offset in force at the transition. |
 | --- | --- |
-| [ZoneOffsetTransitionRule.TimeDefinition](../java/time/zone/ZoneOffsetTransitionRule.TimeDefinition.md)! | [getTimeDefinition](../java/time/zone/ZoneOffsetTransitionRule.md))`()` Gets the time definition, specifying how to convert the time to an instant. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/time/zone/ZoneOffsetTransitionRule.md))`()` Returns a suitable hash code. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMidnightEndOfDay](../java/time/zone/ZoneOffsetTransitionRule.md))`()` Is the transition local time midnight at the end of day. |
+| [ZoneOffsetTransitionRule.TimeDefinition](../java/time/zone/ZoneOffsetTransitionRule.TimeDefinition.md)! | [getTimeDefinition](ZoneOffsetTransitionRule.md))`()` Gets the time definition, specifying how to convert the time to an instant. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](ZoneOffsetTransitionRule.md))`()` Returns a suitable hash code. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMidnightEndOfDay](ZoneOffsetTransitionRule.md))`()` Is the transition local time midnight at the end of day. |
 | --- | --- |
-| static [ZoneOffsetTransitionRule](../java/time/zone/ZoneOffsetTransitionRule.md)! | [of](../java/time/zone/ZoneOffsetTransitionRule.md))`(`month:` ` [Month](../java/time/Month.md)!`, `dayOfMonthIndicator:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dayOfWeek:` ` [DayOfWeek](../java/time/DayOfWeek.md)!`, `time:` ` [LocalTime](../java/time/LocalTime.md)!`, `timeEndOfDay:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `timeDefinition:` ` [ZoneOffsetTransitionRule.TimeDefinition](../java/time/zone/ZoneOffsetTransitionRule.TimeDefinition.md)!`, `standardOffset:` ` [ZoneOffset](../java/time/ZoneOffset.md)!`, `offsetBefore:` ` [ZoneOffset](../java/time/ZoneOffset.md)!`, `offsetAfter:` ` [ZoneOffset](../java/time/ZoneOffset.md)!`)` Obtains an instance defining the yearly rule to create transitions between two offsets. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/time/zone/ZoneOffsetTransitionRule.md))`()` Returns a string describing this object. |
+| static [ZoneOffsetTransitionRule](ZoneOffsetTransitionRule.md)! | [of](ZoneOffsetTransitionRule.md))`(`month:` ` [Month](../java.time/Month.md)!`, `dayOfMonthIndicator:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dayOfWeek:` ` [DayOfWeek](../java.time/DayOfWeek.md)!`, `time:` ` [LocalTime](../java.time/LocalTime.md)!`, `timeEndOfDay:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `timeDefinition:` ` [ZoneOffsetTransitionRule.TimeDefinition](../java/time/zone/ZoneOffsetTransitionRule.TimeDefinition.md)!`, `standardOffset:` ` [ZoneOffset](../java.time/ZoneOffset.md)!`, `offsetBefore:` ` [ZoneOffset](../java.time/ZoneOffset.md)!`, `offsetAfter:` ` [ZoneOffset](../java.time/ZoneOffset.md)!`)` Obtains an instance defining the yearly rule to create transitions between two offsets. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](ZoneOffsetTransitionRule.md))`()` Returns a string describing this object. |
 
 ## Public methods
 
@@ -70,7 +70,7 @@ Calculations are performed using the ISO-8601 chronology.
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------|-----------------------------------|
-| [ZoneOffsetTransition](../java/time/zone/ZoneOffsetTransition.md)! | the transition instance, not null |
+| [ZoneOffsetTransition](ZoneOffsetTransition.md)! | the transition instance, not null |
 
 ### equals
 
@@ -131,7 +131,7 @@ If the rule defines a week where the cutover might occur, then this method retur
 
 | Return ||
 |----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| [DayOfWeek](../java/time/DayOfWeek.md)! | the day-of-week that the transition occurs, null if the rule defines an exact date |
+| [DayOfWeek](../java.time/DayOfWeek.md)! | the day-of-week that the transition occurs, null if the rule defines an exact date |
 
 ### getLocalTime
 
@@ -141,13 +141,13 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 fun getLocalTime(): LocalTime!
 ```
 
-Gets the local time of day of the transition which must be checked with [isMidnightEndOfDay()](../java/time/zone/ZoneOffsetTransitionRule.md)).
+Gets the local time of day of the transition which must be checked with [isMidnightEndOfDay()](ZoneOffsetTransitionRule.md)).
 
 The time is converted into an instant using the time definition.
 
 | Return ||
 |----------------------------------------------------------------------------------------|---------------------------------------------------|
-| [LocalTime](../java/time/LocalTime.md)! | the local time of day of the transition, not null |
+| [LocalTime](../java.time/LocalTime.md)! | the local time of day of the transition, not null |
 
 ### getMonth
 
@@ -165,7 +165,7 @@ If the rule defines a week where the transition might occur, then the month if t
 
 | Return ||
 |--------------------------------------------------------------------------------|---------------------------------------|
-| [Month](../java/time/Month.md)! | the month of the transition, not null |
+| [Month](../java.time/Month.md)! | the month of the transition, not null |
 
 ### getOffsetAfter
 
@@ -179,7 +179,7 @@ Gets the offset after the transition.
 
 | Return ||
 |------------------------------------------------------------------------------------------|----------------------------|
-| [ZoneOffset](../java/time/ZoneOffset.md)! | the offset after, not null |
+| [ZoneOffset](../java.time/ZoneOffset.md)! | the offset after, not null |
 
 ### getOffsetBefore
 
@@ -193,7 +193,7 @@ Gets the offset before the transition.
 
 | Return ||
 |------------------------------------------------------------------------------------------|-----------------------------|
-| [ZoneOffset](../java/time/ZoneOffset.md)! | the offset before, not null |
+| [ZoneOffset](../java.time/ZoneOffset.md)! | the offset before, not null |
 
 ### getStandardOffset
 
@@ -207,7 +207,7 @@ Gets the standard offset in force at the transition.
 
 | Return ||
 |------------------------------------------------------------------------------------------|-------------------------------|
-| [ZoneOffset](../java/time/ZoneOffset.md)! | the standard offset, not null |
+| [ZoneOffset](../java.time/ZoneOffset.md)! | the standard offset, not null |
 
 ### getTimeDefinition
 
@@ -275,26 +275,26 @@ static fun of(
 
 Obtains an instance defining the yearly rule to create transitions between two offsets.
 
-Applications should normally obtain an instance from [ZoneRules](../java/time/zone/ZoneRules.md). This factory is only intended for use when creating [ZoneRules](../java/time/zone/ZoneRules.md).
+Applications should normally obtain an instance from [ZoneRules](ZoneRules.md). This factory is only intended for use when creating [ZoneRules](ZoneRules.md).
 
 | Parameters ||
 |-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `month` | [Month](../java/time/Month.md)!:the month of the month-day of the first day of the cutover week, not null |
+| `month` | [Month](../java.time/Month.md)!:the month of the month-day of the first day of the cutover week, not null |
 | `dayOfMonthIndicator` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the day of the month-day of the cutover week, positive if the week is that day or later, negative if the week is that day or earlier, counting from the last day of the month, from -28 to 31 excluding 0 |
-| `dayOfWeek` | [DayOfWeek](../java/time/DayOfWeek.md)!:the required day-of-week, null if the month-day should not be changed |
+| `dayOfWeek` | [DayOfWeek](../java.time/DayOfWeek.md)!:the required day-of-week, null if the month-day should not be changed |
 | --- | --- |
-| `time` | [LocalTime](../java/time/LocalTime.md)!:the cutover time in the 'before' offset, not null |
+| `time` | [LocalTime](../java.time/LocalTime.md)!:the cutover time in the 'before' offset, not null |
 | `timeEndOfDay` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):whether the time is midnight at the end of day |
 | `timeDefinition` | [ZoneOffsetTransitionRule.TimeDefinition](../java/time/zone/ZoneOffsetTransitionRule.TimeDefinition.md)!:how to interpret the cutover |
 | --- | --- |
-| `standardOffset` | [ZoneOffset](../java/time/ZoneOffset.md)!:the standard offset in force at the cutover, not null |
-| `offsetBefore` | [ZoneOffset](../java/time/ZoneOffset.md)!:the offset before the cutover, not null |
-| `offsetAfter` | [ZoneOffset](../java/time/ZoneOffset.md)!:the offset after the cutover, not null |
+| `standardOffset` | [ZoneOffset](../java.time/ZoneOffset.md)!:the standard offset in force at the cutover, not null |
+| `offsetBefore` | [ZoneOffset](../java.time/ZoneOffset.md)!:the offset before the cutover, not null |
+| `offsetAfter` | [ZoneOffset](../java.time/ZoneOffset.md)!:the offset after the cutover, not null |
 | --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------|--------------------|
-| [ZoneOffsetTransitionRule](../java/time/zone/ZoneOffsetTransitionRule.md)! | the rule, not null |
+| [ZoneOffsetTransitionRule](ZoneOffsetTransitionRule.md)! | the rule, not null |
 
 | Exceptions ||
 |--------------------------------------|------------------------------------------|

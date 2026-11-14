@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # ColorFilter
 
-Kotlin | [Java](../android/graphics/ColorFilter.md) 
+Kotlin | [Java](ColorFilter.md) 
 | --- | --- |
 
 ```
@@ -13,18 +13,18 @@ open class ColorFilter
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.graphics.ColorFilter](../android/graphics/ColorFilter.md) |
+| ↳ | [android.graphics.ColorFilter](ColorFilter.md) |
 
-| Known Direct Subclasses [BlendModeColorFilter](../android/graphics/BlendModeColorFilter.md), [ColorMatrixColorFilter](../android/graphics/ColorMatrixColorFilter.md), [LightingColorFilter](../android/graphics/LightingColorFilter.md), [PorterDuffColorFilter](../android/graphics/PorterDuffColorFilter.md), [RuntimeColorFilter](../android/graphics/RuntimeColorFilter.md) |------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [BlendModeColorFilter](../android/graphics/BlendModeColorFilter.md) | A color filter that can be used to tint the source pixels using a single color and a specific [BlendMode](../android/graphics/BlendMode.md). | | [ColorMatrixColorFilter](../android/graphics/ColorMatrixColorFilter.md) | A color filter that transforms colors through a 4x5 color matrix. | | [LightingColorFilter](../android/graphics/LightingColorFilter.md) | A color filter that can be used to simulate simple lighting effects. | | [PorterDuffColorFilter](../android/graphics/PorterDuffColorFilter.md) | A color filter that can be used to tint the source pixels using a single color and a specific [Porter-Duff composite mode](../android/graphics/PorterDuff.md). | | [RuntimeColorFilter](../android/graphics/RuntimeColorFilter.md) | A [RuntimeColorFilter](../android/graphics/RuntimeColorFilter.md) calculates a per-pixel color based on the output of a user \* defined Android Graphics Shading Language (AGSL) function. | |
+| Known Direct Subclasses [BlendModeColorFilter](BlendModeColorFilter.md), [ColorMatrixColorFilter](ColorMatrixColorFilter.md), [LightingColorFilter](LightingColorFilter.md), [PorterDuffColorFilter](PorterDuffColorFilter.md), [RuntimeColorFilter](RuntimeColorFilter.md) |------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [BlendModeColorFilter](BlendModeColorFilter.md) | A color filter that can be used to tint the source pixels using a single color and a specific [BlendMode](BlendMode.md). | | [ColorMatrixColorFilter](ColorMatrixColorFilter.md) | A color filter that transforms colors through a 4x5 color matrix. | | [LightingColorFilter](LightingColorFilter.md) | A color filter that can be used to simulate simple lighting effects. | | [PorterDuffColorFilter](PorterDuffColorFilter.md) | A color filter that can be used to tint the source pixels using a single color and a specific [Porter-Duff composite mode](PorterDuff.md). | | [RuntimeColorFilter](RuntimeColorFilter.md) | A [RuntimeColorFilter](RuntimeColorFilter.md) calculates a per-pixel color based on the output of a user \* defined Android Graphics Shading Language (AGSL) function. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-A color filter can be used with a [Paint](../android/graphics/Paint.md) to modify the color of each pixel drawn with that paint. This is an abstract class that should never be used directly.
+A color filter can be used with a [Paint](Paint.md) to modify the color of each pixel drawn with that paint. This is an abstract class that should never be used directly.
 
 ## Summary
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------|---|
-| [ColorFilter](../android/graphics/ColorFilter.md))`()` <br /> |
+| [ColorFilter](ColorFilter.md))`()` <br /> |
 
 ## Public constructors
 

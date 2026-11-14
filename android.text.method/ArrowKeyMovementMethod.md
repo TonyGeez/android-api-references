@@ -2,7 +2,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # ArrowKeyMovementMethod
 
-Kotlin | [Java](../android/text/method/ArrowKeyMovementMethod.md)
+Kotlin | [Java](ArrowKeyMovementMethod.md)
 | --- | --- |
 
 ```
@@ -11,8 +11,8 @@ open class ArrowKeyMovementMethod : BaseMovementMethod, MovementMethod
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.text.method.BaseMovementMethod](../android/text/method/BaseMovementMethod.md) ||
-| | ↳ | [android.text.method.ArrowKeyMovementMethod](../android/text/method/ArrowKeyMovementMethod.md) |
+| ↳ | [android.text.method.BaseMovementMethod](BaseMovementMethod.md) ||
+| | ↳ | [android.text.method.ArrowKeyMovementMethod](ArrowKeyMovementMethod.md) |
 
 A movement method that provides cursor movement and selection. Supports displaying the context menu on DPad Center.
 
@@ -25,7 +25,7 @@ A movement method that provides cursor movement and selection. Supports displayi
 | Public methods ||
 |---|---|
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/text/method/ArrowKeyMovementMethod#canSelectArbitrarily()()` Returns true if this movement method allows arbitrary selection of any text; false if it has no selection (like a movement method that only scrolls) or a constrained selection (for example limited to links. The "Select All" menu item is disabled if arbitrary selection is not allowed. |
-| open static [MovementMethod](../android/text/method/MovementMethod.md)! | `https://developer.android.com/reference/kotlin/android/text/method/ArrowKeyMovementMethod#getInstance()()` <br /> |
+| open static [MovementMethod](MovementMethod.md)! | `https://developer.android.com/reference/kotlin/android/text/method/ArrowKeyMovementMethod#getInstance()()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/text/method/ArrowKeyMovementMethod#initialize(android.widget.TextView,%20android.text.Spannable)(widget: https://developer.android.com/reference/kotlin/android/widget/TextView.html#!, text: https://developer.android.com/reference/kotlin/android/text/Spannable.html#!)` <br /> |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/text/method/ArrowKeyMovementMethod#nextParagraph(android.widget.TextView,%20android.text.Spannable)(widget: https://developer.android.com/reference/kotlin/android/widget/TextView.html#, buffer: https://developer.android.com/reference/kotlin/android/text/Spannable.html#)` Performs a next paragraph movement action. |
@@ -112,8 +112,8 @@ Performs a next paragraph movement action.
 
 | Parameters ||
 |---|---|
-| `widget` | [TextView](../android/widget/TextView.md): This value cannot be `null`. |
-| `buffer` | [Spannable](../android/text/Spannable.md): This value cannot be `null`. |
+| `widget` | [TextView](../android.widget/TextView.md): This value cannot be `null`. |
+| `buffer` | [Spannable](../android.text/Spannable.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -158,8 +158,8 @@ Performs a previous paragraph movement action.
 
 | Parameters ||
 |---|---|
-| `widget` | [TextView](../android/widget/TextView.md): This value cannot be `null`. |
-| `buffer` | [Spannable](../android/text/Spannable.md): This value cannot be `null`. |
+| `widget` | [TextView](../android.widget/TextView.md): This value cannot be `null`. |
+| `buffer` | [Spannable](../android.text/Spannable.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -182,8 +182,8 @@ Performs a bottom movement action. Moves the cursor or scrolls to the bottom of 
 
 | Parameters ||
 |---|---|
-| `widget` | [TextView](../android/widget/TextView.md)!: The text view. |
-| `buffer` | [Spannable](../android/text/Spannable.md)!: The text buffer. |
+| `widget` | [TextView](../android.widget/TextView.md)!: The text view. |
+| `buffer` | [Spannable](../android.text/Spannable.md)!: The text buffer. |
 
 | Return ||
 |---|---|
@@ -204,8 +204,8 @@ Performs a down movement action. Moves the cursor or scrolls down by one line.
 
 | Parameters ||
 |---|---|
-| `widget` | [TextView](../android/widget/TextView.md)!: The text view. |
-| `buffer` | [Spannable](../android/text/Spannable.md)!: The text buffer. |
+| `widget` | [TextView](../android.widget/TextView.md)!: The text view. |
+| `buffer` | [Spannable](../android.text/Spannable.md)!: The text buffer. |
 
 | Return ||
 |---|---|
@@ -226,8 +226,8 @@ Performs an end movement action. Moves the cursor or scrolls to the start of the
 
 | Parameters ||
 |---|---|
-| `widget` | [TextView](../android/widget/TextView.md)!: The text view. |
-| `buffer` | [Spannable](../android/text/Spannable.md)!: The text buffer. |
+| `widget` | [TextView](../android.widget/TextView.md)!: The text view. |
+| `buffer` | [Spannable](../android.text/Spannable.md)!: The text buffer. |
 
 | Return ||
 |---|---|
@@ -251,12 +251,12 @@ Performs a movement key action. The default implementation decodes the key down 
 
 | Parameters ||
 |---|---|
-| `widget` | [TextView](../android/widget/TextView.md)!: The text view. |
-| `buffer` | [Spannable](../android/text/Spannable.md)!: The text buffer. |
+| `widget` | [TextView](../android.widget/TextView.md)!: The text view. |
+| `buffer` | [Spannable](../android.text/Spannable.md)!: The text buffer. |
 | `keyCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The key code. |
 | --- | --- |
 | `movementMetaState` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The keyboard meta states used for movement. |
-| `event` | [KeyEvent](../android/view/KeyEvent.md)!: The key event. |
+| `event` | [KeyEvent](../android.view/KeyEvent.md)!: The key event. |
 
 | Return ||
 |---|---|
@@ -277,8 +277,8 @@ Performs a home movement action. Moves the cursor or scrolls to the start of the
 
 | Parameters ||
 |---|---|
-| `widget` | [TextView](../android/widget/TextView.md)!: The text view. |
-| `buffer` | [Spannable](../android/text/Spannable.md)!: The text buffer. |
+| `widget` | [TextView](../android.widget/TextView.md)!: The text view. |
+| `buffer` | [Spannable](../android.text/Spannable.md)!: The text buffer. |
 
 | Return ||
 |---|---|
@@ -299,8 +299,8 @@ Performs a left movement action. Moves the cursor or scrolls left by one charact
 
 | Parameters ||
 |---|---|
-| `widget` | [TextView](../android/widget/TextView.md)!: The text view. |
-| `buffer` | [Spannable](../android/text/Spannable.md)!: The text buffer. |
+| `widget` | [TextView](../android.widget/TextView.md)!: The text view. |
+| `buffer` | [Spannable](../android.text/Spannable.md)!: The text buffer. |
 
 | Return ||
 |---|---|
@@ -321,8 +321,8 @@ Performs a line-end movement action. Moves the cursor or scrolls to the end of t
 
 | Parameters ||
 |---|---|
-| `widget` | [TextView](../android/widget/TextView.md)!: The text view. |
-| `buffer` | [Spannable](../android/text/Spannable.md)!: The text buffer. |
+| `widget` | [TextView](../android.widget/TextView.md)!: The text view. |
+| `buffer` | [Spannable](../android.text/Spannable.md)!: The text buffer. |
 
 | Return ||
 |---|---|
@@ -343,8 +343,8 @@ Performs a line-start movement action. Moves the cursor or scrolls to the start 
 
 | Parameters ||
 |---|---|
-| `widget` | [TextView](../android/widget/TextView.md)!: The text view. |
-| `buffer` | [Spannable](../android/text/Spannable.md)!: The text buffer. |
+| `widget` | [TextView](../android.widget/TextView.md)!: The text view. |
+| `buffer` | [Spannable](../android.text/Spannable.md)!: The text buffer. |
 
 | Return ||
 |---|---|
@@ -365,8 +365,8 @@ Performs a page-down movement action. Moves the cursor or scrolls down by one pa
 
 | Parameters ||
 |---|---|
-| `widget` | [TextView](../android/widget/TextView.md)!: The text view. |
-| `buffer` | [Spannable](../android/text/Spannable.md)!: The text buffer. |
+| `widget` | [TextView](../android.widget/TextView.md)!: The text view. |
+| `buffer` | [Spannable](../android.text/Spannable.md)!: The text buffer. |
 
 | Return ||
 |---|---|
@@ -387,8 +387,8 @@ Performs a page-up movement action. Moves the cursor or scrolls up by one page.
 
 | Parameters ||
 |---|---|
-| `widget` | [TextView](../android/widget/TextView.md)!: The text view. |
-| `buffer` | [Spannable](../android/text/Spannable.md)!: The text buffer. |
+| `widget` | [TextView](../android.widget/TextView.md)!: The text view. |
+| `buffer` | [Spannable](../android.text/Spannable.md)!: The text buffer. |
 
 | Return ||
 |---|---|
@@ -409,8 +409,8 @@ Performs a right movement action. Moves the cursor or scrolls right by one chara
 
 | Parameters ||
 |---|---|
-| `widget` | [TextView](../android/widget/TextView.md)!: The text view. |
-| `buffer` | [Spannable](../android/text/Spannable.md)!: The text buffer. |
+| `widget` | [TextView](../android.widget/TextView.md)!: The text view. |
+| `buffer` | [Spannable](../android.text/Spannable.md)!: The text buffer. |
 
 | Return ||
 |---|---|
@@ -431,8 +431,8 @@ Performs a top movement action. Moves the cursor or scrolls to the top of the bu
 
 | Parameters ||
 |---|---|
-| `widget` | [TextView](../android/widget/TextView.md)!: The text view. |
-| `buffer` | [Spannable](../android/text/Spannable.md)!: The text buffer. |
+| `widget` | [TextView](../android.widget/TextView.md)!: The text view. |
+| `buffer` | [Spannable](../android.text/Spannable.md)!: The text buffer. |
 
 | Return ||
 |---|---|
@@ -453,8 +453,8 @@ Performs an up movement action. Moves the cursor or scrolls up by one line.
 
 | Parameters ||
 |---|---|
-| `widget` | [TextView](../android/widget/TextView.md)!: The text view. |
-| `buffer` | [Spannable](../android/text/Spannable.md)!: The text buffer. |
+| `widget` | [TextView](../android.widget/TextView.md)!: The text view. |
+| `buffer` | [Spannable](../android.text/Spannable.md)!: The text buffer. |
 
 | Return ||
 |---|---|

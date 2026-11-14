@@ -9,9 +9,9 @@ class PlannedExerciseSessionRecord : IntervalRecord
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.health.connect.datatypes.Record](../android/health/connect/datatypes/Record.md) |||
-| | ↳ | [android.health.connect.datatypes.IntervalRecord](../android/health/connect/datatypes/IntervalRecord.md) ||
-| | | ↳ | [android.health.connect.datatypes.PlannedExerciseSessionRecord](../android/health/connect/datatypes/PlannedExerciseSessionRecord.md) |
+| ↳ | [android.health.connect.datatypes.Record](Record.md) |||
+| | ↳ | [android.health.connect.datatypes.IntervalRecord](IntervalRecord.md) ||
+| | | ↳ | [android.health.connect.datatypes.PlannedExerciseSessionRecord](PlannedExerciseSessionRecord.md) |
 | --- | --- | --- | --- |
 
 Captures a planned exercise session, also commonly referred to as a training plan.
@@ -31,14 +31,14 @@ Each record contains a start time, end time, an exercise type and a list of `htt
 | Public methods ||
 |---|---|
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseSessionRecord#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PlannedExerciseBlock](../android/health/connect/datatypes/PlannedExerciseBlock.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseSessionRecord#getBlocks()()` Returns the exercise blocks for this step. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PlannedExerciseBlock](PlannedExerciseBlock.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseSessionRecord#getBlocks()()` Returns the exercise blocks for this step. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseSessionRecord#getCompletedExerciseSessionId()()` Returns the id of exercise session that completed this planned session. |
 | --- | --- |
-| [Duration](../java/time/Duration.md) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseSessionRecord#getDuration()()` Returns the expected duration of the planned session. |
+| [Duration](../java.time/Duration.md) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseSessionRecord#getDuration()()` Returns the expected duration of the planned session. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseSessionRecord#getExerciseType()()` Returns the exercise type of this planned session. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseSessionRecord#getNotes()()` Returns notes for this planned session. |
 | --- | --- |
-| [LocalDate](../java/time/LocalDate.md) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseSessionRecord#getStartDate()()` Returns the start date of the planned session. |
+| [LocalDate](../java.time/LocalDate.md) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseSessionRecord#getStartDate()()` Returns the start date of the planned session. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseSessionRecord#getTitle()()` Returns title of this planned session. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/PlannedExerciseSessionRecord#hasExplicitTime()()` Returns whether this planned session has an explicit time. |
 | --- | --- |

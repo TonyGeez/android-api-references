@@ -16,7 +16,7 @@ interface NmeaListener
 
 | **This interface was deprecated in API level 24.**
 |
-| use [OnNmeaMessageListener](../android/location/OnNmeaMessageListener.md) instead.
+| use [OnNmeaMessageListener](OnNmeaMessageListener.md) instead.
 
 Used for receiving NMEA sentences from the GPS. NMEA 0183 is a standard for communicating with marine electronic devices and is a common method for receiving data from a GPS, typically over a serial port. See [NMEA 0183](http://en.wikipedia.org/wiki/NMEA_0183) for more details. You can implement this interface and call android.location.LocationManager#addNmeaListener to receive NMEA data from the GPS engine.
 

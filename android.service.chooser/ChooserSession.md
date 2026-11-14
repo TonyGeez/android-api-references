@@ -4,7 +4,7 @@ Added in [API level 36.1](https://developer.android.com/guide/topics/manifest/us
 
 # ChooserSession
 
-Kotlin| [Java](../android/service/chooser/ChooserSession.md) 
+Kotlin| [Java](ChooserSession.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class ChooserSession
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.service.chooser.ChooserSession](../android/service/chooser/ChooserSession.md) |
+| ↳ | [android.service.chooser.ChooserSession](ChooserSession.md) |
 
 A class that represents an interactive Chooser session.
 
@@ -27,23 +27,23 @@ A [StateListener](../android/service/chooser/ChooserSession.StateListener.md) ca
 
 | Constants ||
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_CLOSED](../android/service/chooser/ChooserSession.md) The session is closed by either side. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_INITIALIZED](../android/service/chooser/ChooserSession.md) The initial state: the session is initialized but the Chooser has not yet connected. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_STARTED](../android/service/chooser/ChooserSession.md) The chooser is connected and can be updated. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_CLOSED](ChooserSession.md) The session is closed by either side. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_INITIALIZED](ChooserSession.md) The initial state: the session is initialized but the Chooser has not yet connected. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_STARTED](ChooserSession.md) The chooser is connected and can be updated. |
 | --- | --- |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addStateListener](../android/service/chooser/ChooserSession.md))`(`executor:` ` [Executor](../java/util/concurrent/Executor.md)`, `listener:` ` [ChooserSession.StateListener](../android/service/chooser/ChooserSession.StateListener.md)`)` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [endSession](../android/service/chooser/ChooserSession.md))`()` Terminates the session and closes Chooser. |
-| [Rect](../android/graphics/Rect.md)? | [getBounds](../android/service/chooser/ChooserSession.md))`()` Gets the last bounds reported by the Chooser. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addStateListener](ChooserSession.md))`(`executor:` ` [Executor](../java.util.concurrent/Executor.md)`, `listener:` ` [ChooserSession.StateListener](../android/service/chooser/ChooserSession.StateListener.md)`)` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [endSession](ChooserSession.md))`()` Terminates the session and closes Chooser. |
+| [Rect](../android.graphics/Rect.md)? | [getBounds](ChooserSession.md))`()` Gets the last bounds reported by the Chooser. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getState](../android/service/chooser/ChooserSession.md))`()` <br /> |
-| [ChooserSessionToken](../android/service/chooser/ChooserSessionToken.md) | [getToken](../android/service/chooser/ChooserSession.md))`()` Returns this session's token. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeStateListener](../android/service/chooser/ChooserSession.md))`(`listener:` ` [ChooserSession.StateListener](../android/service/chooser/ChooserSession.StateListener.md)`)` Removes a previously added UpdateListener callback. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getState](ChooserSession.md))`()` <br /> |
+| [ChooserSessionToken](ChooserSessionToken.md) | [getToken](ChooserSession.md))`()` Returns this session's token. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeStateListener](ChooserSession.md))`(`listener:` ` [ChooserSession.StateListener](../android/service/chooser/ChooserSession.StateListener.md)`)` Removes a previously added UpdateListener callback. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTargetsEnabled](../android/service/chooser/ChooserSession.md))`(`isEnabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets whether the targets in the chooser UI are enabled. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateIntent](../android/service/chooser/ChooserSession.md))`(`intent:` ` [Intent](../android/content/Intent.md)`)` Updates the chooser intent in an active Chooser session, causing Chooser to refresh its state and targets. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTargetsEnabled](ChooserSession.md))`(`isEnabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets whether the targets in the chooser UI are enabled. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateIntent](ChooserSession.md))`(`intent:` ` [Intent](../android.content/Intent.md)`)` Updates the chooser intent in an active Chooser session, causing Chooser to refresh its state and targets. |
 
 ## Constants
 
@@ -99,7 +99,7 @@ fun addStateListener(
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `listener` | [ChooserSession.StateListener](../android/service/chooser/ChooserSession.StateListener.md):make sure that the callback is cleared at the end of a component's lifecycle (e.g. Activity) or provide a properly maintained WeakReference wrapper to avoid memory leaks. This value cannot be`null`. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md):This value cannot be`null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md):This value cannot be`null`. |
 
 ### endSession
 
@@ -123,7 +123,7 @@ Gets the last bounds reported by the Chooser.
 
 | Return ||
 |-------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Rect](../android/graphics/Rect.md)? | the most recently reported Chooser bounds, or`null`if bounds have not yet been received via [ChooserSession.StateListener.onBoundsChanged(Rect)](../android/service/chooser/ChooserSession.StateListener.md)). |
+| [Rect](../android.graphics/Rect.md)? | the most recently reported Chooser bounds, or`null`if bounds have not yet been received via [ChooserSession.StateListener.onBoundsChanged(Rect)](../android/service/chooser/ChooserSession.StateListener.md)). |
 
 ### getState
 
@@ -135,13 +135,13 @@ fun getState(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | current session state. Value is [android.service.chooser.ChooserSession#STATE_INITIALIZED](../android/service/chooser/ChooserSession.md), [android.service.chooser.ChooserSession#STATE_STARTED](../android/service/chooser/ChooserSession.md), or [android.service.chooser.ChooserSession#STATE_CLOSED](../android/service/chooser/ChooserSession.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | current session state. Value is [android.service.chooser.ChooserSession#STATE_INITIALIZED](ChooserSession.md), [android.service.chooser.ChooserSession#STATE_STARTED](ChooserSession.md), or [android.service.chooser.ChooserSession#STATE_CLOSED](ChooserSession.md) |
 
 **See Also**
 
-- [android.service.chooser.ChooserSession#STATE_INITIALIZED](../android/service/chooser/ChooserSession.md)
-- [android.service.chooser.ChooserSession#STATE_STARTED](../android/service/chooser/ChooserSession.md)
-- [android.service.chooser.ChooserSession#STATE_CLOSED](../android/service/chooser/ChooserSession.md) 
+- [android.service.chooser.ChooserSession#STATE_INITIALIZED](ChooserSession.md)
+- [android.service.chooser.ChooserSession#STATE_STARTED](ChooserSession.md)
+- [android.service.chooser.ChooserSession#STATE_CLOSED](ChooserSession.md) 
 
 ### getToken
 
@@ -151,11 +151,11 @@ Added in [API level 36.1](https://developer.android.com/guide/topics/manifest/us
 fun getToken(): ChooserSessionToken
 ```
 
-Returns this session's token. A token serves as a session identifier and can be used to retrieve an active session from the [ChooserManager](../android/service/chooser/ChooserManager.md).
+Returns this session's token. A token serves as a session identifier and can be used to retrieve an active session from the [ChooserManager](ChooserManager.md).
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [ChooserSessionToken](../android/service/chooser/ChooserSessionToken.md) | This value cannot be`null`. |
+| [ChooserSessionToken](ChooserSessionToken.md) | This value cannot be`null`. |
 
 ### removeStateListener
 
@@ -183,7 +183,7 @@ Sets whether the targets in the chooser UI are enabled. By default targets are e
 
 This method is primarily intended to allow for managing a transient state, particularly useful during long-running operations. By disabling targets, launching application can prevent unintended interactions.
 
-A no-op when the session is not in the [STATE_STARTED](../android/service/chooser/ChooserSession.md). 
+A no-op when the session is not in the [STATE_STARTED](ChooserSession.md). 
 
 ### updateIntent
 
@@ -197,17 +197,17 @@ Updates the chooser intent in an active Chooser session, causing Chooser to refr
 
 Only updates to the following extras in the provided intent are respected:
 
-- [Intent.EXTRA_INTENT](../android/content/Intent.md)
-- [Intent.EXTRA_EXCLUDE_COMPONENTS](../android/content/Intent.md)
-- [Intent.EXTRA_CHOOSER_TARGETS](../android/content/Intent.md)
-- [Intent.EXTRA_ALTERNATE_INTENTS](../android/content/Intent.md)
-- [Intent.EXTRA_REPLACEMENT_EXTRAS](../android/content/Intent.md)
-- [Intent.EXTRA_INITIAL_INTENTS](../android/content/Intent.md)
-- [Intent.EXTRA_CHOOSER_RESULT_INTENT_SENDER](../android/content/Intent.md)
-- [Intent.EXTRA_CHOOSER_REFINEMENT_INTENT_SENDER](../android/content/Intent.md)
+- [Intent.EXTRA_INTENT](../android.content/Intent.md)
+- [Intent.EXTRA_EXCLUDE_COMPONENTS](../android.content/Intent.md)
+- [Intent.EXTRA_CHOOSER_TARGETS](../android.content/Intent.md)
+- [Intent.EXTRA_ALTERNATE_INTENTS](../android.content/Intent.md)
+- [Intent.EXTRA_REPLACEMENT_EXTRAS](../android.content/Intent.md)
+- [Intent.EXTRA_INITIAL_INTENTS](../android.content/Intent.md)
+- [Intent.EXTRA_CHOOSER_RESULT_INTENT_SENDER](../android.content/Intent.md)
+- [Intent.EXTRA_CHOOSER_REFINEMENT_INTENT_SENDER](../android.content/Intent.md)
 
-This method is a no-op if the session is not in the [STATE_STARTED](../android/service/chooser/ChooserSession.md) state.
+This method is a no-op if the session is not in the [STATE_STARTED](ChooserSession.md) state.
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `intent` | [Intent](../android/content/Intent.md):The new intent to apply to the session. This value cannot be`null`. |
+| `intent` | [Intent](../android.content/Intent.md):The new intent to apply to the session. This value cannot be`null`. |

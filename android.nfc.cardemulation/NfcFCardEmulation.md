@@ -4,7 +4,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # NfcFCardEmulation
 
-Kotlin | [Java](../android/nfc/cardemulation/NfcFCardEmulation.md) 
+Kotlin | [Java](NfcFCardEmulation.md) 
 | --- | --- |
 
 ```
@@ -13,28 +13,28 @@ class NfcFCardEmulation
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.nfc.cardemulation.NfcFCardEmulation](../android/nfc/cardemulation/NfcFCardEmulation.md) |
+| ↳ | [android.nfc.cardemulation.NfcFCardEmulation](NfcFCardEmulation.md) |
 
 This class can be used to query the state of NFC-F card emulation services. For a general introduction into NFC card emulation, please read the [NFC card emulation developer guide](https://developer.android.com/guide/topics/connectivity/nfc/hce.html).
 
 <br />
 
-Use of this class requires the [PackageManager.FEATURE_NFC_HOST_CARD_EMULATION_NFCF](../android/content/pm/PackageManager.md) to be present on the device.
+Use of this class requires the [PackageManager.FEATURE_NFC_HOST_CARD_EMULATION_NFCF](../android.content.pm/PackageManager.md) to be present on the device.
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [disableService](../android/nfc/cardemulation/NfcFCardEmulation.md))`(`activity:` ` [Activity](../android/app/Activity.md)!`)` Disables the service for the specified Activity. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [enableService](../android/nfc/cardemulation/NfcFCardEmulation.md))`(`activity:` ` [Activity](../android/app/Activity.md)!`, `service:` ` [ComponentName](../android/content/ComponentName.md)!`)` Allows a foreground application to specify which card emulation service should be enabled while a specific Activity is in the foreground. |
-| static [NfcFCardEmulation](../android/nfc/cardemulation/NfcFCardEmulation.md)! | [getInstance](../android/nfc/cardemulation/NfcFCardEmulation.md))`(`adapter:` ` [NfcAdapter](../android/nfc/NfcAdapter.md)!`)` Helper to get an instance of this class. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [disableService](NfcFCardEmulation.md))`(`activity:` ` [Activity](../android.app/Activity.md)!`)` Disables the service for the specified Activity. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [enableService](NfcFCardEmulation.md))`(`activity:` ` [Activity](../android.app/Activity.md)!`, `service:` ` [ComponentName](../android.content/ComponentName.md)!`)` Allows a foreground application to specify which card emulation service should be enabled while a specific Activity is in the foreground. |
+| static [NfcFCardEmulation](NfcFCardEmulation.md)! | [getInstance](NfcFCardEmulation.md))`(`adapter:` ` [NfcAdapter](../android.nfc/NfcAdapter.md)!`)` Helper to get an instance of this class. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getNfcid2ForService](../android/nfc/cardemulation/NfcFCardEmulation.md))`(`service:` ` [ComponentName](../android/content/ComponentName.md)!`)` Retrieves the current NFCID2 for the specified service. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSystemCodeForService](../android/nfc/cardemulation/NfcFCardEmulation.md))`(`service:` ` [ComponentName](../android/content/ComponentName.md)!`)` Retrieves the current System Code for the specified service. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [registerSystemCodeForService](../android/nfc/cardemulation/NfcFCardEmulation.md))`(`service:` ` [ComponentName](../android/content/ComponentName.md)!`, `systemCode:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Registers a System Code for the specified service. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getNfcid2ForService](NfcFCardEmulation.md))`(`service:` ` [ComponentName](../android.content/ComponentName.md)!`)` Retrieves the current NFCID2 for the specified service. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSystemCodeForService](NfcFCardEmulation.md))`(`service:` ` [ComponentName](../android.content/ComponentName.md)!`)` Retrieves the current System Code for the specified service. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [registerSystemCodeForService](NfcFCardEmulation.md))`(`service:` ` [ComponentName](../android.content/ComponentName.md)!`, `systemCode:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Registers a System Code for the specified service. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [setNfcid2ForService](../android/nfc/cardemulation/NfcFCardEmulation.md))`(`service:` ` [ComponentName](../android/content/ComponentName.md)!`, `nfcid2:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set a NFCID2 for the specified service. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [unregisterSystemCodeForService](../android/nfc/cardemulation/NfcFCardEmulation.md))`(`service:` ` [ComponentName](../android/content/ComponentName.md)!`)` Removes a registered System Code for the specified service. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [setNfcid2ForService](NfcFCardEmulation.md))`(`service:` ` [ComponentName](../android.content/ComponentName.md)!`, `nfcid2:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set a NFCID2 for the specified service. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [unregisterSystemCodeForService](NfcFCardEmulation.md))`(`service:` ` [ComponentName](../android.content/ComponentName.md)!`)` Removes a registered System Code for the specified service. |
 
 ## Public methods
 
@@ -48,11 +48,11 @@ fun disableService(activity: Activity!): Boolean
 
 Disables the service for the specified Activity.
 
-Note that the specified Activity must still be in resumed state at the time of this call. A good place to call this method is in your [Activity.onPause](../android/app/Activity.md)) implementation.
+Note that the specified Activity must still be in resumed state at the time of this call. A good place to call this method is in your [Activity.onPause](../android.app/Activity.md)) implementation.
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| `activity` | [Activity](../android/app/Activity.md)!: The activity which the service was registered for |
+| `activity` | [Activity](../android.app/Activity.md)!: The activity which the service was registered for |
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------------|
@@ -71,16 +71,16 @@ fun enableService(
 
 Allows a foreground application to specify which card emulation service should be enabled while a specific Activity is in the foreground.
 
-The specified HCE-F service is only enabled when the corresponding application is in the foreground and this method has been called. When the application is moved to the background, [disableService(android.app.Activity)](../android/nfc/cardemulation/NfcFCardEmulation.md)) is called, or NFCID2 or System Code is replaced, the HCE-F service is disabled.
+The specified HCE-F service is only enabled when the corresponding application is in the foreground and this method has been called. When the application is moved to the background, [disableService(android.app.Activity)](NfcFCardEmulation.md)) is called, or NFCID2 or System Code is replaced, the HCE-F service is disabled.
 
-The specified Activity must currently be in resumed state. A good paradigm is to call this method in your [Activity.onResume](../android/app/Activity.md)), and to call [disableService(android.app.Activity)](../android/nfc/cardemulation/NfcFCardEmulation.md)) in your [Activity.onPause](../android/app/Activity.md)).
+The specified Activity must currently be in resumed state. A good paradigm is to call this method in your [Activity.onResume](../android.app/Activity.md)), and to call [disableService(android.app.Activity)](NfcFCardEmulation.md)) in your [Activity.onPause](../android.app/Activity.md)).
 
 Note that this preference is not persisted by the OS, and hence must be called every time the Activity is resumed.
 
 | Parameters ||
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `activity` | [Activity](../android/app/Activity.md)!: The activity which prefers this service to be invoked |
-| `service` | [ComponentName](../android/content/ComponentName.md)!: The service to be preferred while this activity is in the foreground |
+| `activity` | [Activity](../android.app/Activity.md)!: The activity which prefers this service to be invoked |
+| `service` | [ComponentName](../android.content/ComponentName.md)!: The service to be preferred while this activity is in the foreground |
 
 | Return ||
 |------------------------------------------------------------------------------------|-----------------------------------------|
@@ -98,11 +98,11 @@ Helper to get an instance of this class.
 
 | Parameters ||
 |-----------|----------------------------------------------------------------------------------------------------------------------------------|
-| `adapter` | [NfcAdapter](../android/nfc/NfcAdapter.md)!: A reference to an NfcAdapter object. |
+| `adapter` | [NfcAdapter](../android.nfc/NfcAdapter.md)!: A reference to an NfcAdapter object. |
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------|---|
-| [NfcFCardEmulation](../android/nfc/cardemulation/NfcFCardEmulation.md)! | |
+| [NfcFCardEmulation](NfcFCardEmulation.md)! | |
 
 ### getNfcid2ForService
 
@@ -114,11 +114,11 @@ fun getNfcid2ForService(service: ComponentName!): String!
 
 Retrieves the current NFCID2 for the specified service.
 
-Before calling [setNfcid2ForService(android.content.ComponentName,java.lang.String)](../android/nfc/cardemulation/NfcFCardEmulation.md)), the NFCID2 contained in the Manifest file is returned. If "random" is specified in the Manifest file, a random number assigned by the system at installation time is returned. After setting an NFCID2 with [setNfcid2ForService(android.content.ComponentName,java.lang.String)](../android/nfc/cardemulation/NfcFCardEmulation.md)), this NFCID2 is returned.
+Before calling [setNfcid2ForService(android.content.ComponentName,java.lang.String)](NfcFCardEmulation.md)), the NFCID2 contained in the Manifest file is returned. If "random" is specified in the Manifest file, a random number assigned by the system at installation time is returned. After setting an NFCID2 with [setNfcid2ForService(android.content.ComponentName,java.lang.String)](NfcFCardEmulation.md)), this NFCID2 is returned.
 
 | Parameters ||
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| `service` | [ComponentName](../android/content/ComponentName.md)!: The component name of the service |
+| `service` | [ComponentName](../android.content/ComponentName.md)!: The component name of the service |
 
 | Return ||
 |-----------------------------------------------------------------------------------|--------------------|
@@ -134,11 +134,11 @@ fun getSystemCodeForService(service: ComponentName!): String!
 
 Retrieves the current System Code for the specified service.
 
-Before calling [registerSystemCodeForService(android.content.ComponentName,java.lang.String)](../android/nfc/cardemulation/NfcFCardEmulation.md)), the System Code contained in the Manifest file is returned. After calling [registerSystemCodeForService(android.content.ComponentName,java.lang.String)](../android/nfc/cardemulation/NfcFCardEmulation.md)), the System Code registered there is returned. After calling [unregisterSystemCodeForService(android.content.ComponentName)](../android/nfc/cardemulation/NfcFCardEmulation.md)), "null" is returned.
+Before calling [registerSystemCodeForService(android.content.ComponentName,java.lang.String)](NfcFCardEmulation.md)), the System Code contained in the Manifest file is returned. After calling [registerSystemCodeForService(android.content.ComponentName,java.lang.String)](NfcFCardEmulation.md)), the System Code registered there is returned. After calling [unregisterSystemCodeForService(android.content.ComponentName)](NfcFCardEmulation.md)), "null" is returned.
 
 | Parameters ||
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| `service` | [ComponentName](../android/content/ComponentName.md)!: The component name of the service |
+| `service` | [ComponentName](../android.content/ComponentName.md)!: The component name of the service |
 
 | Return ||
 |-----------------------------------------------------------------------------------|-------------------------|
@@ -167,7 +167,7 @@ Note that you can only register a System Code for a service that is running unde
 
 | Parameters ||
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| `service` | [ComponentName](../android/content/ComponentName.md)!: The component name of the service |
+| `service` | [ComponentName](../android.content/ComponentName.md)!: The component name of the service |
 | `systemCode` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The System Code to be registered |
 
 | Return ||
@@ -195,7 +195,7 @@ Note that you can only set the NFCID2 for a service that is running under the sa
 
 | Parameters ||
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| `service` | [ComponentName](../android/content/ComponentName.md)!: The component name of the service |
+| `service` | [ComponentName](../android.content/ComponentName.md)!: The component name of the service |
 | `nfcid2` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The NFCID2 to be registered |
 
 | Return ||
@@ -214,7 +214,7 @@ Removes a registered System Code for the specified service.
 
 | Parameters ||
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| `service` | [ComponentName](../android/content/ComponentName.md)!: The component name of the service |
+| `service` | [ComponentName](../android.content/ComponentName.md)!: The component name of the service |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------------|

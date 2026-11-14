@@ -4,7 +4,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 
 # AppWidgetHost
 
-Kotlin| [Java](../android/appwidget/AppWidgetHost.md) 
+Kotlin| [Java](AppWidgetHost.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class AppWidgetHost
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.appwidget.AppWidgetHost](../android/appwidget/AppWidgetHost.md) |
+| ↳ | [android.appwidget.AppWidgetHost](AppWidgetHost.md) |
 
 AppWidgetHost provides the interaction with the AppWidget service for apps, like the home screen, that want to embed AppWidgets in their UI.
 
@@ -21,31 +21,31 @@ AppWidgetHost provides the interaction with the AppWidget service for apps, like
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [AppWidgetHost](../android/appwidget/AppWidgetHost.md))`(`context:` ` [Context](../android/content/Context.md)!`, `hostId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [AppWidgetHost](AppWidgetHost.md))`(`context:` ` [Context](../android.content/Context.md)!`, `hostId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [allocateAppWidgetId](../android/appwidget/AppWidgetHost.md))`()` Get a appWidgetId for a host in the calling process. |
-| [AppWidgetHostView](../android/appwidget/AppWidgetHostView.md)! | [createView](../android/appwidget/AppWidgetHost.md))`(`context:` ` [Context](../android/content/Context.md)!`, `appWidgetId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `appWidget:` ` [AppWidgetProviderInfo](../android/appwidget/AppWidgetProviderInfo.md)!`)` Create the AppWidgetHostView for the given widget. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [deleteAllHosts](../android/appwidget/AppWidgetHost.md))`()` Remove all records about all hosts for your package. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [allocateAppWidgetId](AppWidgetHost.md))`()` Get a appWidgetId for a host in the calling process. |
+| [AppWidgetHostView](AppWidgetHostView.md)! | [createView](AppWidgetHost.md))`(`context:` ` [Context](../android.content/Context.md)!`, `appWidgetId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `appWidget:` ` [AppWidgetProviderInfo](AppWidgetProviderInfo.md)!`)` Create the AppWidgetHostView for the given widget. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [deleteAllHosts](AppWidgetHost.md))`()` Remove all records about all hosts for your package. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [deleteAppWidgetId](../android/appwidget/AppWidgetHost.md))`(`appWidgetId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Stop listening to changes for this AppWidget. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [deleteHost](../android/appwidget/AppWidgetHost.md))`()` Remove all records about this host from the AppWidget manager. |
-| open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | [getAppWidgetIds](../android/appwidget/AppWidgetHost.md))`()` Gets a list of all the appWidgetIds that are bound to the current host |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [deleteAppWidgetId](AppWidgetHost.md))`(`appWidgetId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Stop listening to changes for this AppWidget. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [deleteHost](AppWidgetHost.md))`()` Remove all records about this host from the AppWidget manager. |
+| open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | [getAppWidgetIds](AppWidgetHost.md))`()` Gets a list of all the appWidgetIds that are bound to the current host |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAppWidgetRemoved](../android/appwidget/AppWidgetHost.md))`(`appWidgetId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when the app widget is removed for appWidgetId |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startAppWidgetConfigureActivityForResult](../android/appwidget/AppWidgetHost.md))`(`activity:` ` [Activity](../android/app/Activity.md)`, `appWidgetId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `intentFlags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `requestCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `options:` ` [Bundle](../android/os/Bundle.md)?`)` Starts an app widget provider configure activity for result on behalf of the caller. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startListening](../android/appwidget/AppWidgetHost.md))`()` Start receiving onAppWidgetChanged calls for your AppWidgets. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAppWidgetRemoved](AppWidgetHost.md))`(`appWidgetId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when the app widget is removed for appWidgetId |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startAppWidgetConfigureActivityForResult](AppWidgetHost.md))`(`activity:` ` [Activity](../android.app/Activity.md)`, `appWidgetId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `intentFlags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `requestCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `options:` ` [Bundle](../android.os/Bundle.md)?`)` Starts an app widget provider configure activity for result on behalf of the caller. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startListening](AppWidgetHost.md))`()` Start receiving onAppWidgetChanged calls for your AppWidgets. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [stopListening](../android/appwidget/AppWidgetHost.md))`()` Stop receiving onAppWidgetChanged calls for your AppWidgets. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [stopListening](AppWidgetHost.md))`()` Stop receiving onAppWidgetChanged calls for your AppWidgets. |
 
 | Protected methods ||
 |--------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearViews](../android/appwidget/AppWidgetHost.md))`()` Clear the list of Views that have been created by this AppWidgetHost. |
-| open [AppWidgetHostView](../android/appwidget/AppWidgetHostView.md)! | [onCreateView](../android/appwidget/AppWidgetHost.md))`(`context:` ` [Context](../android/content/Context.md)!`, `appWidgetId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `appWidget:` ` [AppWidgetProviderInfo](../android/appwidget/AppWidgetProviderInfo.md)!`)` Called to create the AppWidgetHostView. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onProviderChanged](../android/appwidget/AppWidgetHost.md))`(`appWidgetId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `appWidget:` ` [AppWidgetProviderInfo](../android/appwidget/AppWidgetProviderInfo.md)!`)` Called when the AppWidget provider for a AppWidget has been upgraded to a new apk. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearViews](AppWidgetHost.md))`()` Clear the list of Views that have been created by this AppWidgetHost. |
+| open [AppWidgetHostView](AppWidgetHostView.md)! | [onCreateView](AppWidgetHost.md))`(`context:` ` [Context](../android.content/Context.md)!`, `appWidgetId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `appWidget:` ` [AppWidgetProviderInfo](AppWidgetProviderInfo.md)!`)` Called to create the AppWidgetHostView. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onProviderChanged](AppWidgetHost.md))`(`appWidgetId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `appWidget:` ` [AppWidgetProviderInfo](AppWidgetProviderInfo.md)!`)` Called when the AppWidget provider for a AppWidget has been upgraded to a new apk. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onProvidersChanged](../android/appwidget/AppWidgetHost.md))`()` Called when the set of available widgets changes (ie. widget containing packages are added, updated or removed, or widget components are enabled or disabled.) |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onProvidersChanged](AppWidgetHost.md))`()` Called when the set of available widgets changes (ie. widget containing packages are added, updated or removed, or widget components are enabled or disabled.) |
 
 ## Public constructors
 
@@ -167,18 +167,18 @@ fun startAppWidgetConfigureActivityForResult(
 ): Unit
 ```
 
-Starts an app widget provider configure activity for result on behalf of the caller. Use this method if the provider is in another profile as you are not allowed to start an activity in another profile. You can optionally provide a request code that is returned in [Activity.onActivityResult(int, int, android.content.Intent)](../android/app/Activity.md))and an options bundle to be passed to the started activity.
+Starts an app widget provider configure activity for result on behalf of the caller. Use this method if the provider is in another profile as you are not allowed to start an activity in another profile. You can optionally provide a request code that is returned in [Activity.onActivityResult(int, int, android.content.Intent)](../android.app/Activity.md))and an options bundle to be passed to the started activity.
 
 Note that the provided app widget has to be bound for this method to work.
 
 | Parameters ||
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `activity` | [Activity](../android/app/Activity.md):The activity from which to start the configure one. This value cannot be`null`. |
+| `activity` | [Activity](../android.app/Activity.md):The activity from which to start the configure one. This value cannot be`null`. |
 | `appWidgetId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The bound app widget whose provider's config activity to start. |
 | `requestCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Optional request code retuned with the result. |
 | --- | --- |
 | `intentFlags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Optional intent flags. |
-| `options` | [Bundle](../android/os/Bundle.md)?:This value may be`null`. |
+| `options` | [Bundle](../android.os/Bundle.md)?:This value may be`null`. |
 
 | Exceptions ||
 |---------------------------------------------|-------------------------------|
@@ -186,7 +186,7 @@ Note that the provided app widget has to be bound for this method to work.
 
 **See Also**
 
-- [android.appwidget.AppWidgetProviderInfo#getProfile()](../android/appwidget/AppWidgetProviderInfo.md)) 
+- [android.appwidget.AppWidgetProviderInfo#getProfile()](AppWidgetProviderInfo.md)) 
 
 ### startListening
 

@@ -8,7 +8,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 interface XPathVariableResolver
 ```
 
-| [javax.xml.xpath.XPathVariableResolver](../javax/xml/xpath/XPathVariableResolver.md) |
+| [javax.xml.xpath.XPathVariableResolver](XPathVariableResolver.md) |
 
 `XPathVariableResolver`provides access to the set of user defined XPath variables.
 
@@ -18,7 +18,7 @@ The`XPathVariableResolver`and the XPath evaluator must adhere to a contract that
 
 | Public methods ||
 |-------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [resolveVariable](../javax/xml/xpath/XPathVariableResolver.md))`(`variableName:` ` [QName](../javax/xml/namespace/QName.md)!`)` Find a variable in the set of available variables. |
+| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [resolveVariable](XPathVariableResolver.md))`(`variableName:` ` [QName](../javax.xml.namespace/QName.md)!`)` Find a variable in the set of available variables. |
 
 ## Public methods
 
@@ -36,7 +36,7 @@ If`variableName`is`null`, then a`NullPointerException`is thrown.
 
 | Parameters ||
 |----------------|--------------------------------------------------------------------------------------------------------------------------|
-| `variableName` | [QName](../javax/xml/namespace/QName.md)!:The`QName`of the variable name. |
+| `variableName` | [QName](../javax.xml.namespace/QName.md)!:The`QName`of the variable name. |
 
 | Return ||
 |-----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|

@@ -2,7 +2,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # Animation
 
-Kotlin | [Java](../android/view/animation/Animation.md)
+Kotlin | [Java](Animation.md)
 | --- | --- |
 
 ```
@@ -11,9 +11,9 @@ abstract class Animation : Cloneable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.animation.Animation](../android/view/animation/Animation.md) |
+| ↳ | [android.view.animation.Animation](Animation.md) |
 
-| Known Direct Subclasses [AlphaAnimation](../android/view/animation/AlphaAnimation.md), [AnimationSet](../android/view/animation/AnimationSet.md), [RotateAnimation](../android/view/animation/RotateAnimation.md), [ScaleAnimation](../android/view/animation/ScaleAnimation.md), [TranslateAnimation](../android/view/animation/TranslateAnimation.md) |---|---| | [AlphaAnimation](../android/view/animation/AlphaAnimation.md) | An animation that controls the alpha level of an object. | | [AnimationSet](../android/view/animation/AnimationSet.md) | Represents a group of Animations that should be played together. | | [RotateAnimation](../android/view/animation/RotateAnimation.md) | An animation that controls the rotation of an object. | | [ScaleAnimation](../android/view/animation/ScaleAnimation.md) | An animation that controls the scale of an object. | | [TranslateAnimation](../android/view/animation/TranslateAnimation.md) | An animation that controls the position of an object. | |
+| Known Direct Subclasses [AlphaAnimation](AlphaAnimation.md), [AnimationSet](AnimationSet.md), [RotateAnimation](RotateAnimation.md), [ScaleAnimation](ScaleAnimation.md), [TranslateAnimation](TranslateAnimation.md) |---|---| | [AlphaAnimation](AlphaAnimation.md) | An animation that controls the alpha level of an object. | | [AnimationSet](AnimationSet.md) | Represents a group of Animations that should be played together. | | [RotateAnimation](RotateAnimation.md) | An animation that controls the rotation of an object. | | [ScaleAnimation](ScaleAnimation.md) | An animation that controls the scale of an object. | | [TranslateAnimation](TranslateAnimation.md) | An animation that controls the position of an object. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Abstraction for an Animation that can be applied to Views, Surfaces, or other objects. See the `https://developer.android.com/reference/kotlin/android/view/animation/package-summary`.
@@ -58,7 +58,7 @@ Abstraction for an Animation that can be applied to Views, Surfaces, or other ob
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#getFillAfter()()` If fillAfter is true, this animation will apply its transformation after the end time of the animation. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#getFillBefore()()` If fillBefore is true, this animation will apply its transformation before the start time of the animation. |
-| open [Interpolator](../android/view/animation/Interpolator.md)! | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#getInterpolator()()` Gets the acceleration curve type for this animation. |
+| open [Interpolator](Interpolator.md)! | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#getInterpolator()()` Gets the acceleration curve type for this animation. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#getRepeatCount()()` Defines how many times the animation should repeat. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#getRepeatMode()()` Defines what this animation should do when it reaches the end. |
@@ -112,7 +112,7 @@ Abstraction for an Animation that can be applied to Views, Surfaces, or other ob
 | Protected methods ||
 |---|---|
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#applyTransformation(kotlin.Float,%20android.view.animation.Transformation)(interpolatedTime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, t: https://developer.android.com/reference/kotlin/android/view/animation/Transformation!)` Helper for getTransformation. |
-| open [Animation](../android/view/animation/Animation.md) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#clone()()` Creates and returns a copy of this object. |
+| open [Animation](Animation.md) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#clone()()` Creates and returns a copy of this object. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#ensureInterpolator()()` Gurantees that this animation has an interpolator. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/animation/Animation#finalize()()` Called by the garbage collector on an object when garbage collection determines that there are no more references to the object. |
@@ -268,8 +268,8 @@ Creates a new animation whose parameters come from the specified context and att
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md)!: the application environment |
-| `attrs` | [AttributeSet](../android/util/AttributeSet.md)!: the set of attributes holding the animation parameters |
+| `context` | [Context](../android.content/Context.md)!: the application environment |
+| `attrs` | [AttributeSet](../android.util/AttributeSet.md)!: the set of attributes holding the animation parameters |
 
 ## Public methods
 
@@ -483,7 +483,7 @@ Gets the transformation to apply at a specified point in time. Implementations o
 | Parameters ||
 |---|---|
 | `currentTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): Where we are in the animation. This is wall clock time. |
-| `outTransformation` | [Transformation](../android/view/animation/Transformation.md)!: A transformation object that is provided by the caller and will be filled in by the animation. |
+| `outTransformation` | [Transformation](Transformation.md)!: A transformation object that is provided by the caller and will be filled in by the animation. |
 
 | Return ||
 |---|---|
@@ -506,7 +506,7 @@ Gets the transformation to apply at a specified point in time. Implementations o
 | Parameters ||
 |---|---|
 | `currentTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): Where we are in the animation. This is wall clock time. |
-| `outTransformation` | [Transformation](../android/view/animation/Transformation.md)!: A transformation object that is provided by the caller and will be filled in by the animation. |
+| `outTransformation` | [Transformation](Transformation.md)!: A transformation object that is provided by the caller and will be filled in by the animation. |
 | `scale` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): Scaling factor to apply to any inputs to the transform operation, such pivot points being rotated or scaled around. |
 | --- | --- |
 
@@ -808,7 +808,7 @@ Sets the acceleration curve for this animation. The interpolator is loaded as a 
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md)!: The application environment |
+| `context` | [Context](../android.content/Context.md)!: The application environment |
 | `resID` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The resource identifier of the interpolator to load |
 
 ### setInterpolator
@@ -823,7 +823,7 @@ Sets the acceleration curve for this animation. Defaults to a linear interpolati
 
 | Parameters ||
 |---|---|
-| `i` | [Interpolator](../android/view/animation/Interpolator.md)!: The interpolator which defines the acceleration curve |
+| `i` | [Interpolator](Interpolator.md)!: The interpolator which defines the acceleration curve |
 
 ### setRepeatCount
 
@@ -975,7 +975,7 @@ Helper for getTransformation. Subclasses should implement this to apply their tr
 | Parameters ||
 |---|---|
 | `interpolatedTime` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The value of the normalized time (0.0 to 1.0) after it has been run through the interpolation function. |
-| `t` | [Transformation](../android/view/animation/Transformation.md)!: The Transformation object to fill in with the current transforms. |
+| `t` | [Transformation](Transformation.md)!: The Transformation object to fill in with the current transforms. |
 
 ### clone
 

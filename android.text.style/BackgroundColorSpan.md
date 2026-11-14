@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # BackgroundColorSpan
 
-Kotlin| [Java](../android/text/style/BackgroundColorSpan.md) 
+Kotlin| [Java](BackgroundColorSpan.md) 
 | --- | --- |
 
 ```
@@ -13,8 +13,8 @@ open class BackgroundColorSpan : CharacterStyle, ParcelableSpan, UpdateAppeara
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.text.style.CharacterStyle](../android/text/style/CharacterStyle.md) ||
-| | ↳ | [android.text.style.BackgroundColorSpan](../android/text/style/BackgroundColorSpan.md) |
+| ↳ | [android.text.style.CharacterStyle](CharacterStyle.md) ||
+| | ↳ | [android.text.style.BackgroundColorSpan](BackgroundColorSpan.md) |
 
 Changes the background color of the text to which the span is attached.
 
@@ -30,23 +30,23 @@ Set a background color for the text.
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [BackgroundColorSpan](../android/text/style/BackgroundColorSpan.md))`(`src:` ` [Parcel](../android/os/Parcel.md)`)` Creates a [BackgroundColorSpan](../android/text/style/BackgroundColorSpan.md) from a parcel. |
-| [BackgroundColorSpan](../android/text/style/BackgroundColorSpan.md))`(`color:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a [BackgroundColorSpan](../android/text/style/BackgroundColorSpan.md) from a color integer. |
+| [BackgroundColorSpan](BackgroundColorSpan.md))`(`src:` ` [Parcel](../android.os/Parcel.md)`)` Creates a [BackgroundColorSpan](BackgroundColorSpan.md) from a parcel. |
+| [BackgroundColorSpan](BackgroundColorSpan.md))`(`color:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a [BackgroundColorSpan](BackgroundColorSpan.md) from a color integer. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/text/style/BackgroundColorSpan.md))`()` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBackgroundColor](../android/text/style/BackgroundColorSpan.md))`()` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSpanTypeId](../android/text/style/BackgroundColorSpan.md))`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](BackgroundColorSpan.md))`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBackgroundColor](BackgroundColorSpan.md))`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSpanTypeId](BackgroundColorSpan.md))`()` <br /> |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/text/style/BackgroundColorSpan.md))`()` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateDrawState](../android/text/style/BackgroundColorSpan.md))`(`textPaint:` ` [TextPaint](../android/text/TextPaint.md)`)` Updates the background color of the TextPaint. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/text/style/BackgroundColorSpan.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](BackgroundColorSpan.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateDrawState](BackgroundColorSpan.md))`(`textPaint:` ` [TextPaint](../android.text/TextPaint.md)`)` Updates the background color of the TextPaint. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](BackgroundColorSpan.md))`(`dest:` ` [Parcel](../android.os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 | --- | --- |
 
 | Inherited functions ||
 |---|---|
-| From class [CharacterStyle](../android/text/style/CharacterStyle.md) |-----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [CharacterStyle](../android/text/style/CharacterStyle.md)! | [getUnderlying](../android/text/style/CharacterStyle.md))`()` <br /> Returns "this" for most CharacterStyles, but for CharacterStyles that were generated by [wrap](../android/text/style/CharacterStyle.md)), returns the underlying CharacterStyle. <br /> | | [CharacterStyle](../android/text/style/CharacterStyle.md)! | [wrap](../android/text/style/CharacterStyle.md))`(`cs:` ` [CharacterStyle](../android/text/style/CharacterStyle.md)!`)` <br /> A given CharacterStyle can only applied to a single region of a given Spanned. If you need to attach the same CharacterStyle to multiple regions, you can use this method to wrap it with a new object that will have the same effect but be a distinct object so that it can also be attached without conflict. <br /> | ||
+| From class [CharacterStyle](CharacterStyle.md) |-----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [CharacterStyle](CharacterStyle.md)! | [getUnderlying](CharacterStyle.md))`()` <br /> Returns "this" for most CharacterStyles, but for CharacterStyles that were generated by [wrap](CharacterStyle.md)), returns the underlying CharacterStyle. <br /> | | [CharacterStyle](CharacterStyle.md)! | [wrap](CharacterStyle.md))`(`cs:` ` [CharacterStyle](CharacterStyle.md)!`)` <br /> A given CharacterStyle can only applied to a single region of a given Spanned. If you need to attach the same CharacterStyle to multiple regions, you can use this method to wrap it with a new object that will have the same effect but be a distinct object so that it can also be attached without conflict. <br /> | ||
 
 ## Public constructors
 
@@ -58,11 +58,11 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 BackgroundColorSpan(src: Parcel)
 ```
 
-Creates a [BackgroundColorSpan](../android/text/style/BackgroundColorSpan.md) from a parcel.
+Creates a [BackgroundColorSpan](BackgroundColorSpan.md) from a parcel.
 
 | Parameters ||
 |-------|--------------------------------------------------------------------------------------------------------------|
-| `src` | [Parcel](../android/os/Parcel.md):This value cannot be`null`. |
+| `src` | [Parcel](../android.os/Parcel.md):This value cannot be`null`. |
 
 ### BackgroundColorSpan
 
@@ -72,7 +72,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 BackgroundColorSpan(color: Int)
 ```
 
-Creates a [BackgroundColorSpan](../android/text/style/BackgroundColorSpan.md) from a color integer.
+Creates a [BackgroundColorSpan](BackgroundColorSpan.md) from a color integer.
 
 <br />
 
@@ -94,7 +94,7 @@ open fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) |
 
 ### getBackgroundColor
 
@@ -110,7 +110,7 @@ open fun getBackgroundColor(): Int
 
 **See Also**
 
-- [android.text.style.BackgroundColorSpan#BackgroundColorSpan(int)](../android/text/style/BackgroundColorSpan.md)) 
+- [android.text.style.BackgroundColorSpan#BackgroundColorSpan(int)](BackgroundColorSpan.md)) 
 
 ### getSpanTypeId
 
@@ -144,7 +144,7 @@ Updates the background color of the TextPaint.
 
 | Parameters ||
 |-------------|----------------------------------------------------------------------------------------------------------------------|
-| `textPaint` | [TextPaint](../android/text/TextPaint.md):This value cannot be`null`. |
+| `textPaint` | [TextPaint](../android.text/TextPaint.md):This value cannot be`null`. |
 
 ### writeToParcel
 
@@ -161,5 +161,5 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](../android/os/Parcel.md):This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android.os/Parcel.md):This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |

@@ -2,7 +2,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 
 # ImsReasonInfo
 
-Kotlin | [Java](../android/telephony/ims/ImsReasonInfo.md)
+Kotlin | [Java](ImsReasonInfo.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class ImsReasonInfo : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.telephony.ims.ImsReasonInfo](../android/telephony/ims/ImsReasonInfo.md) |
+| ↳ | [android.telephony.ims.ImsReasonInfo](ImsReasonInfo.md) |
 
 Provides details on why an IMS call failed. Applications can use the methods in this class to get local or network fault behind an IMS services failure. For example, if the code is CODE_CALL_BARRED, then the call was blocked by network call barring configuration and it is not the device's bug and the user can retry the call when network lift the barring. Typical use case includes call backs when IMS call state changed with this class as a param containing details on why IMS call changed state/failed.
 
@@ -274,7 +274,7 @@ Provides details on why an IMS call failed. Applications can use the methods in 
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ImsReasonInfo](../android/telephony/ims/ImsReasonInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/telephony/ims/ImsReasonInfo#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ImsReasonInfo](ImsReasonInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/telephony/ims/ImsReasonInfo#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -2499,7 +2499,7 @@ Flatten this object in to a Parcel.
 |---|---|
 | `dest` | The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
-| `out` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
+| `out` | [Parcel](../android.os/Parcel.md): This value cannot be `null`. |
 | --- | --- |
 
 ## Properties

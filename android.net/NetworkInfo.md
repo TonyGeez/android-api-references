@@ -5,7 +5,7 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 
 # NetworkInfo
 
-Kotlin| [Java](../android/net/NetworkInfo.md) 
+Kotlin| [Java](NetworkInfo.md) 
 | --- | --- |
 
 ```
@@ -14,15 +14,15 @@ open class NetworkInfo : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.NetworkInfo](../android/net/NetworkInfo.md) |
+| ↳ | [android.net.NetworkInfo](NetworkInfo.md) |
 
 | **This class was deprecated in API level 29.**
 |
-| Callers should instead use the [ConnectivityManager.NetworkCallback](../android/net/ConnectivityManager.NetworkCallback.md) API to learn about connectivity changes, or switch to use [ConnectivityManager.getNetworkCapabilities](../android/net/ConnectivityManager.md))or [ConnectivityManager.getLinkProperties](../android/net/ConnectivityManager.md))to get information synchronously. Keep in mind that while callbacks are guaranteed to be called for every event in order, synchronous calls have no such constraints, and as such it is unadvisable to use the synchronous methods inside the callbacks as they will often not offer a view of networking that is consistent (that is: they may return a past or a future state with respect to the event being processed by the callback). Instead, callers are advised to only use the arguments of the callbacks, possibly memorizing the specific bits of information they need to keep from one callback to another.
+| Callers should instead use the [ConnectivityManager.NetworkCallback](../android/net/ConnectivityManager.NetworkCallback.md) API to learn about connectivity changes, or switch to use [ConnectivityManager.getNetworkCapabilities](ConnectivityManager.md))or [ConnectivityManager.getLinkProperties](ConnectivityManager.md))to get information synchronously. Keep in mind that while callbacks are guaranteed to be called for every event in order, synchronous calls have no such constraints, and as such it is unadvisable to use the synchronous methods inside the callbacks as they will often not offer a view of networking that is consistent (that is: they may return a past or a future state with respect to the event being processed by the callback). Instead, callers are advised to only use the arguments of the callbacks, possibly memorizing the specific bits of information they need to keep from one callback to another.
 
 Describes the status of a network interface.
 
-Use [ConnectivityManager.getActiveNetworkInfo()](../android/net/ConnectivityManager.md))to get an instance that represents the current network connection.
+Use [ConnectivityManager.getActiveNetworkInfo()](ConnectivityManager.md))to get an instance that represents the current network connection.
 
 ## Summary
 
@@ -33,40 +33,40 @@ Use [ConnectivityManager.getActiveNetworkInfo()](../android/net/ConnectivityMana
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android.os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android.os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android.os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [NetworkInfo](../android/net/NetworkInfo.md))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `subtype:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `typeName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `subtypeName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Create a new instance of NetworkInfo. |
+| [NetworkInfo](NetworkInfo.md))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `subtype:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `typeName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `subtypeName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Create a new instance of NetworkInfo. |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/net/NetworkInfo.md))`()` <br /> |
-| open [NetworkInfo.DetailedState](../android/net/NetworkInfo.DetailedState.md) | [getDetailedState](../android/net/NetworkInfo.md))`()` Reports the current fine-grained state of the network. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getExtraInfo](../android/net/NetworkInfo.md))`()` Report the extra information about the network state, if any was provided by the lower networking layers. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](NetworkInfo.md))`()` <br /> |
+| open [NetworkInfo.DetailedState](../android/net/NetworkInfo.DetailedState.md) | [getDetailedState](NetworkInfo.md))`()` Reports the current fine-grained state of the network. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getExtraInfo](NetworkInfo.md))`()` Report the extra information about the network state, if any was provided by the lower networking layers. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getReason](../android/net/NetworkInfo.md))`()` Report the reason an attempt to establish connectivity failed, if one is available. |
-| open [NetworkInfo.State](../android/net/NetworkInfo.State.md)! | [getState](../android/net/NetworkInfo.md))`()` Reports the current coarse-grained state of the network. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSubtype](../android/net/NetworkInfo.md))`()` Return a network-type-specific integer describing the subtype of the network. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getReason](NetworkInfo.md))`()` Report the reason an attempt to establish connectivity failed, if one is available. |
+| open [NetworkInfo.State](../android/net/NetworkInfo.State.md)! | [getState](NetworkInfo.md))`()` Reports the current coarse-grained state of the network. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSubtype](NetworkInfo.md))`()` Return a network-type-specific integer describing the subtype of the network. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSubtypeName](../android/net/NetworkInfo.md))`()` Return a human-readable name describing the subtype of the network. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getType](../android/net/NetworkInfo.md))`()` Reports the type of network to which the info in this`NetworkInfo`pertains. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getTypeName](../android/net/NetworkInfo.md))`()` Return a human-readable name describe the type of the network, for example "WIFI" or "MOBILE". |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSubtypeName](NetworkInfo.md))`()` Return a human-readable name describing the subtype of the network. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getType](NetworkInfo.md))`()` Reports the type of network to which the info in this`NetworkInfo`pertains. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getTypeName](NetworkInfo.md))`()` Return a human-readable name describe the type of the network, for example "WIFI" or "MOBILE". |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAvailable](../android/net/NetworkInfo.md))`()` Indicates whether network connectivity is possible. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isConnected](../android/net/NetworkInfo.md))`()` Indicates whether network connectivity exists and it is possible to establish connections and pass data. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isConnectedOrConnecting](../android/net/NetworkInfo.md))`()` Indicates whether network connectivity exists or is in the process of being established. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAvailable](NetworkInfo.md))`()` Indicates whether network connectivity is possible. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isConnected](NetworkInfo.md))`()` Indicates whether network connectivity exists and it is possible to establish connections and pass data. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isConnectedOrConnecting](NetworkInfo.md))`()` Indicates whether network connectivity exists or is in the process of being established. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFailover](../android/net/NetworkInfo.md))`()` Indicates whether the current attempt to connect to the network resulted from the ConnectivityManager trying to fail over to this network following a disconnect from another network. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRoaming](../android/net/NetworkInfo.md))`()` Indicates whether the device is currently roaming on this network. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDetailedState](../android/net/NetworkInfo.md))`(`detailedState:` ` [NetworkInfo.DetailedState](../android/net/NetworkInfo.DetailedState.md)`, `reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `extraInfo:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Sets the fine-grained state of the network. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFailover](NetworkInfo.md))`()` Indicates whether the current attempt to connect to the network resulted from the ConnectivityManager trying to fail over to this network following a disconnect from another network. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRoaming](NetworkInfo.md))`()` Indicates whether the device is currently roaming on this network. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDetailedState](NetworkInfo.md))`(`detailedState:` ` [NetworkInfo.DetailedState](../android/net/NetworkInfo.DetailedState.md)`, `reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `extraInfo:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Sets the fine-grained state of the network. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/net/NetworkInfo.md))`()` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/net/NetworkInfo.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](NetworkInfo.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](NetworkInfo.md))`(`dest:` ` [Parcel](../android.os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [NetworkInfo](../android/net/NetworkInfo.md)!\> | [CREATOR](../android/net/NetworkInfo.md) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [NetworkInfo](NetworkInfo.md)!\> | [CREATOR](NetworkInfo.md) <br /> |
 
 ## Public constructors
 
@@ -106,7 +106,7 @@ open fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) |
 
 ### getDetailedState
 
@@ -183,7 +183,7 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 open fun getSubtype(): Int
 ```
 
-**Deprecated:** *Use [android.telephony.TelephonyManager#getDataNetworkType](../android/telephony/TelephonyManager.md))instead.*
+**Deprecated:** *Use [android.telephony.TelephonyManager#getDataNetworkType](../android.telephony/TelephonyManager.md))instead.*
 
 Return a network-type-specific integer describing the subtype of the network.
 
@@ -200,7 +200,7 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 open fun getSubtypeName(): String!
 ```
 
-**Deprecated:** *Use [android.telephony.TelephonyManager#getDataNetworkType](../android/telephony/TelephonyManager.md))instead.*
+**Deprecated:** *Use [android.telephony.TelephonyManager#getDataNetworkType](../android.telephony/TelephonyManager.md))instead.*
 
 Return a human-readable name describing the subtype of the network.
 
@@ -217,13 +217,13 @@ Deprecated in [API level 28](https://developer.android.com/guide/topics/manifest
 open fun getType(): Int
 ```
 
-**Deprecated:** *Callers should switch to checking [NetworkCapabilities.hasTransport](../android/net/NetworkCapabilities.md))instead with one of the NetworkCapabilities#TRANSPORT_\* constants : [getType](../android/net/NetworkInfo.md))and [getTypeName](../android/net/NetworkInfo.md))cannot account for networks using multiple transports. Note that generally apps should not care about transport; [NetworkCapabilities.NET_CAPABILITY_NOT_METERED](../android/net/NetworkCapabilities.md) and [NetworkCapabilities.getLinkDownstreamBandwidthKbps](../android/net/NetworkCapabilities.md))are calls that apps concerned with meteredness or bandwidth should be looking at, as they offer this information with much better accuracy.*
+**Deprecated:** *Callers should switch to checking [NetworkCapabilities.hasTransport](NetworkCapabilities.md))instead with one of the NetworkCapabilities#TRANSPORT_\* constants : [getType](NetworkInfo.md))and [getTypeName](NetworkInfo.md))cannot account for networks using multiple transports. Note that generally apps should not care about transport; [NetworkCapabilities.NET_CAPABILITY_NOT_METERED](NetworkCapabilities.md) and [NetworkCapabilities.getLinkDownstreamBandwidthKbps](NetworkCapabilities.md))are calls that apps concerned with meteredness or bandwidth should be looking at, as they offer this information with much better accuracy.*
 
 Reports the type of network to which the info in this`NetworkInfo`pertains.
 
 | Return ||
 |----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | one of [ConnectivityManager.TYPE_MOBILE](../android/net/ConnectivityManager.md), [android.net.ConnectivityManager#TYPE_WIFI](../android/net/ConnectivityManager.md), [ConnectivityManager.TYPE_WIMAX](../android/net/ConnectivityManager.md), [android.net.ConnectivityManager#TYPE_ETHERNET](../android/net/ConnectivityManager.md), [ConnectivityManager.TYPE_BLUETOOTH](../android/net/ConnectivityManager.md), or other types defined by [ConnectivityManager](../android/net/ConnectivityManager.md). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | one of [ConnectivityManager.TYPE_MOBILE](ConnectivityManager.md), [android.net.ConnectivityManager#TYPE_WIFI](ConnectivityManager.md), [ConnectivityManager.TYPE_WIMAX](ConnectivityManager.md), [android.net.ConnectivityManager#TYPE_ETHERNET](ConnectivityManager.md), [ConnectivityManager.TYPE_BLUETOOTH](ConnectivityManager.md), or other types defined by [ConnectivityManager](ConnectivityManager.md). |
 
 ### getTypeName
 
@@ -234,7 +234,7 @@ Deprecated in [API level 28](https://developer.android.com/guide/topics/manifest
 open fun getTypeName(): String!
 ```
 
-**Deprecated:** *Callers should switch to checking [NetworkCapabilities.hasTransport](../android/net/NetworkCapabilities.md))instead with one of the NetworkCapabilities#TRANSPORT_\* constants : [getType](../android/net/NetworkInfo.md))and [getTypeName](../android/net/NetworkInfo.md))cannot account for networks using multiple transports. Note that generally apps should not care about transport; [NetworkCapabilities.NET_CAPABILITY_NOT_METERED](../android/net/NetworkCapabilities.md) and [NetworkCapabilities.getLinkDownstreamBandwidthKbps](../android/net/NetworkCapabilities.md))are calls that apps concerned with meteredness or bandwidth should be looking at, as they offer this information with much better accuracy.*
+**Deprecated:** *Callers should switch to checking [NetworkCapabilities.hasTransport](NetworkCapabilities.md))instead with one of the NetworkCapabilities#TRANSPORT_\* constants : [getType](NetworkInfo.md))and [getTypeName](NetworkInfo.md))cannot account for networks using multiple transports. Note that generally apps should not care about transport; [NetworkCapabilities.NET_CAPABILITY_NOT_METERED](NetworkCapabilities.md) and [NetworkCapabilities.getLinkDownstreamBandwidthKbps](NetworkCapabilities.md))are calls that apps concerned with meteredness or bandwidth should be looking at, as they offer this information with much better accuracy.*
 
 Return a human-readable name describe the type of the network, for example "WIFI" or "MOBILE".
 
@@ -296,7 +296,7 @@ open fun isConnectedOrConnecting(): Boolean
 
 **Deprecated:** *Apps should instead use the [android.net.ConnectivityManager.NetworkCallback](../android/net/ConnectivityManager.NetworkCallback.md) API to learn about connectivity changes. android.net.ConnectivityManager#registerDefaultNetworkCallback and android.net.ConnectivityManager#registerNetworkCallback. These will give a more accurate picture of the connectivity state of the device and let apps react more easily and quickly to changes.*
 
-Indicates whether network connectivity exists or is in the process of being established. This is good for applications that need to do anything related to the network other than read or write data. For the latter, call [isConnected()](../android/net/NetworkInfo.md))instead, which guarantees that the network is fully usable.
+Indicates whether network connectivity exists or is in the process of being established. This is good for applications that need to do anything related to the network other than read or write data. For the latter, call [isConnected()](NetworkInfo.md))instead, which guarantees that the network is fully usable.
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
@@ -328,7 +328,7 @@ Deprecated in [API level 28](https://developer.android.com/guide/topics/manifest
 open fun isRoaming(): Boolean
 ```
 
-**Deprecated:** *Callers should switch to checking [NetworkCapabilities.NET_CAPABILITY_NOT_ROAMING](../android/net/NetworkCapabilities.md) instead, since that handles more complex situations, such as VPNs.*
+**Deprecated:** *Callers should switch to checking [NetworkCapabilities.NET_CAPABILITY_NOT_ROAMING](NetworkCapabilities.md) instead, since that handles more complex situations, such as VPNs.*
 
 Indicates whether the device is currently roaming on this network. When`true`, it suggests that use of data on this network may incur extra costs.
 
@@ -349,7 +349,7 @@ open fun setDetailedState(
 ): Unit
 ```
 
-**Deprecated:** *Use [NetworkCapabilities](../android/net/NetworkCapabilities.md) instead.*
+**Deprecated:** *Use [NetworkCapabilities](NetworkCapabilities.md) instead.*
 
 Sets the fine-grained state of the network. This is only useful for testing.
 
@@ -389,8 +389,8 @@ open fun writeToParcel(
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](../android/os/Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android.os/Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

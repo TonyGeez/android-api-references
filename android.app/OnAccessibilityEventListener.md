@@ -13,13 +13,13 @@ interface OnAccessibilityEventListener
 
 | [android.app.UiAutomation.OnAccessibilityEventListener](../android/app/UiAutomation.OnAccessibilityEventListener.md) |
 
-Listener for observing the [AccessibilityEvent](../android/view/accessibility/AccessibilityEvent.md) stream.
+Listener for observing the [AccessibilityEvent](../android.view.accessibility/AccessibilityEvent.md) stream.
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAccessibilityEvent](../android/app/UiAutomation.OnAccessibilityEventListener.md))`(`event:` ` [AccessibilityEvent](../android/view/accessibility/AccessibilityEvent.md)!`)` Callback for receiving an [AccessibilityEvent](../android/view/accessibility/AccessibilityEvent.md). |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAccessibilityEvent](../android/app/UiAutomation.OnAccessibilityEventListener.md))`(`event:` ` [AccessibilityEvent](../android.view.accessibility/AccessibilityEvent.md)!`)` Callback for receiving an [AccessibilityEvent](../android.view.accessibility/AccessibilityEvent.md). |
 
 ## Public methods
 
@@ -31,7 +31,7 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 abstract fun onAccessibilityEvent(event: AccessibilityEvent!): Unit
 ```
 
-Callback for receiving an [AccessibilityEvent](../android/view/accessibility/AccessibilityEvent.md).
+Callback for receiving an [AccessibilityEvent](../android.view.accessibility/AccessibilityEvent.md).
 
 **Note:** This method is**NOT**executed on the main test thread. The client is responsible for proper synchronization.
 
@@ -39,4 +39,4 @@ Callback for receiving an [AccessibilityEvent](../android/view/accessibility/Acc
 
 | Parameters ||
 |---------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| `event` | [AccessibilityEvent](../android/view/accessibility/AccessibilityEvent.md)!:The received event. |
+| `event` | [AccessibilityEvent](../android.view.accessibility/AccessibilityEvent.md)!:The received event. |

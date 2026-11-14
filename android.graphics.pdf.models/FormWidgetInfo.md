@@ -5,7 +5,7 @@ Also in [S Extensions 13](https://developer.android.com/sdkExtensions)
 
 # FormWidgetInfo
 
-Kotlin| [Java](../android/graphics/pdf/models/FormWidgetInfo.md) 
+Kotlin| [Java](FormWidgetInfo.md) 
 | --- | --- |
 
 ```
@@ -14,7 +14,7 @@ class FormWidgetInfo : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.graphics.pdf.models.FormWidgetInfo](../android/graphics/pdf/models/FormWidgetInfo.md) |
+| ↳ | [android.graphics.pdf.models.FormWidgetInfo](FormWidgetInfo.md) |
 
 Information about a form widget of a PDF document.
 
@@ -22,53 +22,53 @@ Information about a form widget of a PDF document.
 
 | Nested classes ||
 |---|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](../android/graphics/pdf/models/FormWidgetInfo.Builder.md) Builder for [FormWidgetInfo](../android/graphics/pdf/models/FormWidgetInfo.md) |
+| | [Builder](../android/graphics/pdf/models/FormWidgetInfo.Builder.md) Builder for [FormWidgetInfo](FormWidgetInfo.md) |
 
 | Constants ||
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIDGET_TYPE_CHECKBOX](../android/graphics/pdf/models/FormWidgetInfo.md) Represents a checkbox type form widget |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIDGET_TYPE_COMBOBOX](../android/graphics/pdf/models/FormWidgetInfo.md) Represents a combobox type form widget |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIDGET_TYPE_LISTBOX](../android/graphics/pdf/models/FormWidgetInfo.md) Represents a listbox type form widget |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIDGET_TYPE_CHECKBOX](FormWidgetInfo.md) Represents a checkbox type form widget |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIDGET_TYPE_COMBOBOX](FormWidgetInfo.md) Represents a combobox type form widget |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIDGET_TYPE_LISTBOX](FormWidgetInfo.md) Represents a listbox type form widget |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIDGET_TYPE_PUSHBUTTON](../android/graphics/pdf/models/FormWidgetInfo.md) Represents a push button type form widget |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIDGET_TYPE_RADIOBUTTON](../android/graphics/pdf/models/FormWidgetInfo.md) Represents a radio button type form widget |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIDGET_TYPE_SIGNATURE](../android/graphics/pdf/models/FormWidgetInfo.md) Represents a signature type form widget |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIDGET_TYPE_PUSHBUTTON](FormWidgetInfo.md) Represents a push button type form widget |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIDGET_TYPE_RADIOBUTTON](FormWidgetInfo.md) Represents a radio button type form widget |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIDGET_TYPE_SIGNATURE](FormWidgetInfo.md) Represents a signature type form widget |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIDGET_TYPE_TEXTFIELD](../android/graphics/pdf/models/FormWidgetInfo.md) Represents a text field type form widget |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIDGET_TYPE_UNKNOWN](../android/graphics/pdf/models/FormWidgetInfo.md) Represents a form widget type that is unknown |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIDGET_TYPE_TEXTFIELD](FormWidgetInfo.md) Represents a text field type form widget |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIDGET_TYPE_UNKNOWN](FormWidgetInfo.md) Represents a form widget type that is unknown |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android.os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android.os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android.os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/graphics/pdf/models/FormWidgetInfo.md))`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/graphics/pdf/models/FormWidgetInfo.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getAccessibilityLabel](../android/graphics/pdf/models/FormWidgetInfo.md))`()` Returns the field's accessibility label, if present |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](FormWidgetInfo.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](FormWidgetInfo.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getAccessibilityLabel](FormWidgetInfo.md))`()` Returns the field's accessibility label, if present |
 | --- | --- |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getFontSize](../android/graphics/pdf/models/FormWidgetInfo.md))`()` Returns the font size in pixels for text input, or 0 for text inputs without a specified font size and widgets that are not text inputs. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ListItem](../android/graphics/pdf/models/ListItem.md)!\> | [getListItems](../android/graphics/pdf/models/FormWidgetInfo.md))`()` Returns the list of choice options in the order that it was passed in, or an empty list for widgets without choice options. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxLength](../android/graphics/pdf/models/FormWidgetInfo.md))`()` Returns the maximum length of text supported by a text input widget, or -1 for text inputs without a maximum length and widgets that are not text inputs. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getFontSize](FormWidgetInfo.md))`()` Returns the font size in pixels for text input, or 0 for text inputs without a specified font size and widgets that are not text inputs. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ListItem](ListItem.md)!\> | [getListItems](FormWidgetInfo.md))`()` Returns the list of choice options in the order that it was passed in, or an empty list for widgets without choice options. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxLength](FormWidgetInfo.md))`()` Returns the maximum length of text supported by a text input widget, or -1 for text inputs without a maximum length and widgets that are not text inputs. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getTextValue](../android/graphics/pdf/models/FormWidgetInfo.md))`()` Returns the field's text value, if present |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWidgetIndex](../android/graphics/pdf/models/FormWidgetInfo.md))`()` Returns the index of the widget within the page's "Annot" array in the PDF document |
-| [Rect](../android/graphics/Rect.md) | [getWidgetRect](../android/graphics/pdf/models/FormWidgetInfo.md))`()` Returns the [Rect](../android/graphics/Rect.md) in page coordinates occupied by the widget |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getTextValue](FormWidgetInfo.md))`()` Returns the field's text value, if present |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWidgetIndex](FormWidgetInfo.md))`()` Returns the index of the widget within the page's "Annot" array in the PDF document |
+| [Rect](../android.graphics/Rect.md) | [getWidgetRect](FormWidgetInfo.md))`()` Returns the [Rect](../android.graphics/Rect.md) in page coordinates occupied by the widget |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWidgetType](../android/graphics/pdf/models/FormWidgetInfo.md))`()` Returns the type of this widget |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/graphics/pdf/models/FormWidgetInfo.md))`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEditableText](../android/graphics/pdf/models/FormWidgetInfo.md))`()` Returns`true`if the widget is editable text |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWidgetType](FormWidgetInfo.md))`()` Returns the type of this widget |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](FormWidgetInfo.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEditableText](FormWidgetInfo.md))`()` Returns`true`if the widget is editable text |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMultiLineText](../android/graphics/pdf/models/FormWidgetInfo.md))`()` Returns true if the widget supports multiple lines of text input |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMultiSelect](../android/graphics/pdf/models/FormWidgetInfo.md))`()` Returns`true`if the widget supports selecting multiple values |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isReadOnly](../android/graphics/pdf/models/FormWidgetInfo.md))`()` Returns`true`if the widget is read-only |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMultiLineText](FormWidgetInfo.md))`()` Returns true if the widget supports multiple lines of text input |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMultiSelect](FormWidgetInfo.md))`()` Returns`true`if the widget supports selecting multiple values |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isReadOnly](FormWidgetInfo.md))`()` Returns`true`if the widget is read-only |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/graphics/pdf/models/FormWidgetInfo.md))`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/graphics/pdf/models/FormWidgetInfo.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](FormWidgetInfo.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](FormWidgetInfo.md))`(`dest:` ` [Parcel](../android.os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [FormWidgetInfo](../android/graphics/pdf/models/FormWidgetInfo.md)!\> | [CREATOR](../android/graphics/pdf/models/FormWidgetInfo.md) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [FormWidgetInfo](FormWidgetInfo.md)!\> | [CREATOR](FormWidgetInfo.md) <br /> |
 
 ## Constants
 
@@ -188,7 +188,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) |
 
 ### equals
 
@@ -251,7 +251,7 @@ Returns the list of choice options in the order that it was passed in, or an emp
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [ListItem](../android/graphics/pdf/models/ListItem.md)!> | This value cannot be`null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [ListItem](ListItem.md)!> | This value cannot be`null`. |
 
 ### getMaxLength
 
@@ -309,11 +309,11 @@ Also in [S Extensions 13](https://developer.android.com/sdkExtensions)
 fun getWidgetRect(): Rect
 ```
 
-Returns the [Rect](../android/graphics/Rect.md) in page coordinates occupied by the widget
+Returns the [Rect](../android.graphics/Rect.md) in page coordinates occupied by the widget
 
 | Return ||
 |------------------------------------------------------------------------------------|-----------------------------|
-| [Rect](../android/graphics/Rect.md) | This value cannot be`null`. |
+| [Rect](../android.graphics/Rect.md) | This value cannot be`null`. |
 
 ### getWidgetType
 
@@ -328,7 +328,7 @@ Returns the type of this widget
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.graphics.pdf.models.FormWidgetInfo#WIDGET_TYPE_UNKNOWN](../android/graphics/pdf/models/FormWidgetInfo.md), [android.graphics.pdf.models.FormWidgetInfo#WIDGET_TYPE_PUSHBUTTON](../android/graphics/pdf/models/FormWidgetInfo.md), [android.graphics.pdf.models.FormWidgetInfo#WIDGET_TYPE_CHECKBOX](../android/graphics/pdf/models/FormWidgetInfo.md), [android.graphics.pdf.models.FormWidgetInfo#WIDGET_TYPE_RADIOBUTTON](../android/graphics/pdf/models/FormWidgetInfo.md), [android.graphics.pdf.models.FormWidgetInfo#WIDGET_TYPE_COMBOBOX](../android/graphics/pdf/models/FormWidgetInfo.md), [android.graphics.pdf.models.FormWidgetInfo#WIDGET_TYPE_LISTBOX](../android/graphics/pdf/models/FormWidgetInfo.md), [android.graphics.pdf.models.FormWidgetInfo#WIDGET_TYPE_TEXTFIELD](../android/graphics/pdf/models/FormWidgetInfo.md), or [android.graphics.pdf.models.FormWidgetInfo#WIDGET_TYPE_SIGNATURE](../android/graphics/pdf/models/FormWidgetInfo.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.graphics.pdf.models.FormWidgetInfo#WIDGET_TYPE_UNKNOWN](FormWidgetInfo.md), [android.graphics.pdf.models.FormWidgetInfo#WIDGET_TYPE_PUSHBUTTON](FormWidgetInfo.md), [android.graphics.pdf.models.FormWidgetInfo#WIDGET_TYPE_CHECKBOX](FormWidgetInfo.md), [android.graphics.pdf.models.FormWidgetInfo#WIDGET_TYPE_RADIOBUTTON](FormWidgetInfo.md), [android.graphics.pdf.models.FormWidgetInfo#WIDGET_TYPE_COMBOBOX](FormWidgetInfo.md), [android.graphics.pdf.models.FormWidgetInfo#WIDGET_TYPE_LISTBOX](FormWidgetInfo.md), [android.graphics.pdf.models.FormWidgetInfo#WIDGET_TYPE_TEXTFIELD](FormWidgetInfo.md), or [android.graphics.pdf.models.FormWidgetInfo#WIDGET_TYPE_SIGNATURE](FormWidgetInfo.md) |
 
 ### hashCode
 
@@ -413,8 +413,8 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](../android/os/Parcel.md):This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android.os/Parcel.md):This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

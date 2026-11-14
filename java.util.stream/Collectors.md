@@ -8,7 +8,7 @@ class Collectors
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.util.stream.Collectors](../java/util/stream/Collectors.md) |
+| ↳ | [java.util.stream.Collectors](Collectors.md) |
 
 Implementations of `https://developer.android.com/reference/kotlin/java/util/stream/Collector` that implement various useful reduction operations, such as accumulating elements into collections, summarizing elements according to various criteria, etc.
 
@@ -54,64 +54,64 @@ The following are examples of using the predefined collectors to perform common 
 
 | Public methods ||
 |---|---|
-| static [Collector](../java/util/stream/Collector.md)\<T, \*, [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#averagingDouble(java.util.function.ToDoubleFunction)(mapper: https://developer.android.com/reference/kotlin/java/util/function/ToDoubleFunction.html#<in T>!)` Returns a `Collector` that produces the arithmetic mean of a double-valued function applied to the input elements. |
-| static [Collector](../java/util/stream/Collector.md)\<T, \*, [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#averagingInt(java.util.function.ToIntFunction)(mapper: https://developer.android.com/reference/kotlin/java/util/function/ToIntFunction.html#<in T>!)` Returns a `Collector` that produces the arithmetic mean of an integer-valued function applied to the input elements. |
-| static [Collector](../java/util/stream/Collector.md)\<T, \*, [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#averagingLong(java.util.function.ToLongFunction)(mapper: https://developer.android.com/reference/kotlin/java/util/function/ToLongFunction.html#<in T>!)` Returns a `Collector` that produces the arithmetic mean of a long-valued function applied to the input elements. |
+| static [Collector](Collector.md)\<T, \*, [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#averagingDouble(java.util.function.ToDoubleFunction)(mapper: https://developer.android.com/reference/kotlin/java/util/function/ToDoubleFunction.html#<in T>!)` Returns a `Collector` that produces the arithmetic mean of a double-valued function applied to the input elements. |
+| static [Collector](Collector.md)\<T, \*, [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#averagingInt(java.util.function.ToIntFunction)(mapper: https://developer.android.com/reference/kotlin/java/util/function/ToIntFunction.html#<in T>!)` Returns a `Collector` that produces the arithmetic mean of an integer-valued function applied to the input elements. |
+| static [Collector](Collector.md)\<T, \*, [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#averagingLong(java.util.function.ToLongFunction)(mapper: https://developer.android.com/reference/kotlin/java/util/function/ToLongFunction.html#<in T>!)` Returns a `Collector` that produces the arithmetic mean of a long-valued function applied to the input elements. |
 | --- | --- |
-| static [Collector](../java/util/stream/Collector.md)\<T, A, RR\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#collectingAndThen(java.util.stream.Collector,%20java.util.function.Function)(downstream: https://developer.android.com/reference/kotlin/java/util/stream/Collector<T, A, R>!, finisher: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<R, RR>!)` Adapts a `Collector` to perform an additional finishing transformation. |
-| static [Collector](../java/util/stream/Collector.md)\<T, \*, [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#counting()()` Returns a `Collector` accepting elements of type `T` that counts the number of input elements. |
-| static [Collector](../java/util/stream/Collector.md)\<T, \*, R\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#filtering(java.util.function.Predicate,%20java.util.stream.Collector)(predicate: https://developer.android.com/reference/kotlin/java/util/function/Predicate.html#<in T>!, downstream: https://developer.android.com/reference/kotlin/java/util/stream/Collector<in T, A, R>!)` Adapts a `Collector` to one accepting elements of the same type `T` by applying the predicate to each input element and only accumulating if the predicate returns `true`. |
+| static [Collector](Collector.md)\<T, A, RR\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#collectingAndThen(java.util.stream.Collector,%20java.util.function.Function)(downstream: https://developer.android.com/reference/kotlin/java/util/stream/Collector<T, A, R>!, finisher: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<R, RR>!)` Adapts a `Collector` to perform an additional finishing transformation. |
+| static [Collector](Collector.md)\<T, \*, [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#counting()()` Returns a `Collector` accepting elements of type `T` that counts the number of input elements. |
+| static [Collector](Collector.md)\<T, \*, R\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#filtering(java.util.function.Predicate,%20java.util.stream.Collector)(predicate: https://developer.android.com/reference/kotlin/java/util/function/Predicate.html#<in T>!, downstream: https://developer.android.com/reference/kotlin/java/util/stream/Collector<in T, A, R>!)` Adapts a `Collector` to one accepting elements of the same type `T` by applying the predicate to each input element and only accumulating if the predicate returns `true`. |
 | --- | --- |
-| static [Collector](../java/util/stream/Collector.md)\<T, \*, R\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#flatMapping(java.util.function.Function,%20java.util.stream.Collector)(mapper: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out https://developer.android.com/reference/kotlin/java/util/stream/Stream<out U>!>!, downstream: https://developer.android.com/reference/kotlin/java/util/stream/Collector<in U, A, R>!)` Adapts a `Collector` accepting elements of type `U` to one accepting elements of type `T` by applying a flat mapping function to each input element before accumulation. |
-| static [Collector](../java/util/stream/Collector.md)\<T, \*, [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\<K, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<T\>!\>!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#groupingBy(java.util.function.Function)(classifier: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out K>!)` Returns a `Collector` implementing a "group by" operation on input elements of type `T`, grouping elements according to a classification function, and returning the results in a `Map`. |
-| static [Collector](../java/util/stream/Collector.md)\<T, \*, M\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#groupingBy(java.util.function.Function,%20java.util.function.Supplier,%20java.util.stream.Collector)(classifier: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out K>!, mapFactory: https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#<M>!, downstream: https://developer.android.com/reference/kotlin/java/util/stream/Collector<in T, A, D>!)` Returns a `Collector` implementing a cascaded "group by" operation on input elements of type `T`, grouping elements according to a classification function, and then performing a reduction operation on the values associated with a given key using the specified downstream `Collector`. |
+| static [Collector](Collector.md)\<T, \*, R\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#flatMapping(java.util.function.Function,%20java.util.stream.Collector)(mapper: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out https://developer.android.com/reference/kotlin/java/util/stream/Stream<out U>!>!, downstream: https://developer.android.com/reference/kotlin/java/util/stream/Collector<in U, A, R>!)` Adapts a `Collector` accepting elements of type `U` to one accepting elements of type `T` by applying a flat mapping function to each input element before accumulation. |
+| static [Collector](Collector.md)\<T, \*, [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\<K, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<T\>!\>!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#groupingBy(java.util.function.Function)(classifier: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out K>!)` Returns a `Collector` implementing a "group by" operation on input elements of type `T`, grouping elements according to a classification function, and returning the results in a `Map`. |
+| static [Collector](Collector.md)\<T, \*, M\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#groupingBy(java.util.function.Function,%20java.util.function.Supplier,%20java.util.stream.Collector)(classifier: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out K>!, mapFactory: https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#<M>!, downstream: https://developer.android.com/reference/kotlin/java/util/stream/Collector<in T, A, D>!)` Returns a `Collector` implementing a cascaded "group by" operation on input elements of type `T`, grouping elements according to a classification function, and then performing a reduction operation on the values associated with a given key using the specified downstream `Collector`. |
 | --- | --- |
-| static [Collector](../java/util/stream/Collector.md)\<T, \*, [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\<K, D\>!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#groupingBy(java.util.function.Function,%20java.util.stream.Collector)(classifier: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out K>!, downstream: https://developer.android.com/reference/kotlin/java/util/stream/Collector<in T, A, D>!)` Returns a `Collector` implementing a cascaded "group by" operation on input elements of type `T`, grouping elements according to a classification function, and then performing a reduction operation on the values associated with a given key using the specified downstream `Collector`. |
-| static [Collector](../java/util/stream/Collector.md)\<T, \*, [ConcurrentMap](../java/util/concurrent/ConcurrentMap.md)\<K, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<T\>!\>!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#groupingByConcurrent(java.util.function.Function)(classifier: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out K>!)` Returns a concurrent `Collector` implementing a "group by" operation on input elements of type `T`, grouping elements according to a classification function. |
-| static [Collector](../java/util/stream/Collector.md)\<T, \*, M\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#groupingByConcurrent(java.util.function.Function,%20java.util.function.Supplier,%20java.util.stream.Collector)(classifier: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out K>!, mapFactory: https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#<M>!, downstream: https://developer.android.com/reference/kotlin/java/util/stream/Collector<in T, A, D>!)` Returns a concurrent `Collector` implementing a cascaded "group by" operation on input elements of type `T`, grouping elements according to a classification function, and then performing a reduction operation on the values associated with a given key using the specified downstream `Collector`. |
+| static [Collector](Collector.md)\<T, \*, [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\<K, D\>!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#groupingBy(java.util.function.Function,%20java.util.stream.Collector)(classifier: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out K>!, downstream: https://developer.android.com/reference/kotlin/java/util/stream/Collector<in T, A, D>!)` Returns a `Collector` implementing a cascaded "group by" operation on input elements of type `T`, grouping elements according to a classification function, and then performing a reduction operation on the values associated with a given key using the specified downstream `Collector`. |
+| static [Collector](Collector.md)\<T, \*, [ConcurrentMap](../java.util.concurrent/ConcurrentMap.md)\<K, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<T\>!\>!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#groupingByConcurrent(java.util.function.Function)(classifier: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out K>!)` Returns a concurrent `Collector` implementing a "group by" operation on input elements of type `T`, grouping elements according to a classification function. |
+| static [Collector](Collector.md)\<T, \*, M\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#groupingByConcurrent(java.util.function.Function,%20java.util.function.Supplier,%20java.util.stream.Collector)(classifier: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out K>!, mapFactory: https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#<M>!, downstream: https://developer.android.com/reference/kotlin/java/util/stream/Collector<in T, A, D>!)` Returns a concurrent `Collector` implementing a cascaded "group by" operation on input elements of type `T`, grouping elements according to a classification function, and then performing a reduction operation on the values associated with a given key using the specified downstream `Collector`. |
 | --- | --- |
-| static [Collector](../java/util/stream/Collector.md)\<T, \*, [ConcurrentMap](../java/util/concurrent/ConcurrentMap.md)\<K, D\>!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#groupingByConcurrent(java.util.function.Function,%20java.util.stream.Collector)(classifier: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out K>!, downstream: https://developer.android.com/reference/kotlin/java/util/stream/Collector<in T, A, D>!)` Returns a concurrent `Collector` implementing a cascaded "group by" operation on input elements of type `T`, grouping elements according to a classification function, and then performing a reduction operation on the values associated with a given key using the specified downstream `Collector`. |
-| static [Collector](../java/util/stream/Collector.md)\< [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!, \*, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#joining()()` Returns a `Collector` that concatenates the input elements into a `String`, in encounter order. |
-| static [Collector](../java/util/stream/Collector.md)\< [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!, \*, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#joining(kotlin.CharSequence)(delimiter: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Returns a `Collector` that concatenates the input elements, separated by the specified delimiter, in encounter order. |
+| static [Collector](Collector.md)\<T, \*, [ConcurrentMap](../java.util.concurrent/ConcurrentMap.md)\<K, D\>!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#groupingByConcurrent(java.util.function.Function,%20java.util.stream.Collector)(classifier: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out K>!, downstream: https://developer.android.com/reference/kotlin/java/util/stream/Collector<in T, A, D>!)` Returns a concurrent `Collector` implementing a cascaded "group by" operation on input elements of type `T`, grouping elements according to a classification function, and then performing a reduction operation on the values associated with a given key using the specified downstream `Collector`. |
+| static [Collector](Collector.md)\< [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!, \*, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#joining()()` Returns a `Collector` that concatenates the input elements into a `String`, in encounter order. |
+| static [Collector](Collector.md)\< [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!, \*, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#joining(kotlin.CharSequence)(delimiter: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Returns a `Collector` that concatenates the input elements, separated by the specified delimiter, in encounter order. |
 | --- | --- |
-| static [Collector](../java/util/stream/Collector.md)\< [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!, \*, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#joining(kotlin.CharSequence,%20kotlin.CharSequence,%20kotlin.CharSequence)(delimiter: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, prefix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, suffix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Returns a `Collector` that concatenates the input elements, separated by the specified delimiter, with the specified prefix and suffix, in encounter order. |
-| static [Collector](../java/util/stream/Collector.md)\<T, \*, R\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#mapping(java.util.function.Function,%20java.util.stream.Collector)(mapper: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out U>!, downstream: https://developer.android.com/reference/kotlin/java/util/stream/Collector<in U, A, R>!)` Adapts a `Collector` accepting elements of type `U` to one accepting elements of type `T` by applying a mapping function to each input element before accumulation. |
-| static [Collector](../java/util/stream/Collector.md)\<T, \*, [Optional](../java/util/Optional.md)\<T\>!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#maxBy(java.util.Comparator)(comparator: https://developer.android.com/reference/kotlin/java/util/Comparator.html#<in T>!)` Returns a `Collector` that produces the maximal element according to a given `Comparator`, described as an `Optional<T>`. |
+| static [Collector](Collector.md)\< [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!, \*, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#joining(kotlin.CharSequence,%20kotlin.CharSequence,%20kotlin.CharSequence)(delimiter: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, prefix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, suffix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Returns a `Collector` that concatenates the input elements, separated by the specified delimiter, with the specified prefix and suffix, in encounter order. |
+| static [Collector](Collector.md)\<T, \*, R\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#mapping(java.util.function.Function,%20java.util.stream.Collector)(mapper: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out U>!, downstream: https://developer.android.com/reference/kotlin/java/util/stream/Collector<in U, A, R>!)` Adapts a `Collector` accepting elements of type `U` to one accepting elements of type `T` by applying a mapping function to each input element before accumulation. |
+| static [Collector](Collector.md)\<T, \*, [Optional](../java.util/Optional.md)\<T\>!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#maxBy(java.util.Comparator)(comparator: https://developer.android.com/reference/kotlin/java/util/Comparator.html#<in T>!)` Returns a `Collector` that produces the maximal element according to a given `Comparator`, described as an `Optional<T>`. |
 | --- | --- |
-| static [Collector](../java/util/stream/Collector.md)\<T, \*, [Optional](../java/util/Optional.md)\<T\>!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#minBy(java.util.Comparator)(comparator: https://developer.android.com/reference/kotlin/java/util/Comparator.html#<in T>!)` Returns a `Collector` that produces the minimal element according to a given `Comparator`, described as an `Optional<T>`. |
-| static [Collector](../java/util/stream/Collector.md)\<T, \*, [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<T\>!\>!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#partitioningBy(java.util.function.Predicate)(predicate: https://developer.android.com/reference/kotlin/java/util/function/Predicate.html#<in T>!)` Returns a `Collector` which partitions the input elements according to a `Predicate`, and organizes them into a `Map<Boolean, List<T>>`. |
-| static [Collector](../java/util/stream/Collector.md)\<T, \*, [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!, D\>!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#partitioningBy(java.util.function.Predicate,%20java.util.stream.Collector)(predicate: https://developer.android.com/reference/kotlin/java/util/function/Predicate.html#<in T>!, downstream: https://developer.android.com/reference/kotlin/java/util/stream/Collector<in T, A, D>!)` Returns a `Collector` which partitions the input elements according to a `Predicate`, reduces the values in each partition according to another `Collector`, and organizes them into a `Map<Boolean, D>` whose values are the result of the downstream reduction. |
+| static [Collector](Collector.md)\<T, \*, [Optional](../java.util/Optional.md)\<T\>!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#minBy(java.util.Comparator)(comparator: https://developer.android.com/reference/kotlin/java/util/Comparator.html#<in T>!)` Returns a `Collector` that produces the minimal element according to a given `Comparator`, described as an `Optional<T>`. |
+| static [Collector](Collector.md)\<T, \*, [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<T\>!\>!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#partitioningBy(java.util.function.Predicate)(predicate: https://developer.android.com/reference/kotlin/java/util/function/Predicate.html#<in T>!)` Returns a `Collector` which partitions the input elements according to a `Predicate`, and organizes them into a `Map<Boolean, List<T>>`. |
+| static [Collector](Collector.md)\<T, \*, [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!, D\>!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#partitioningBy(java.util.function.Predicate,%20java.util.stream.Collector)(predicate: https://developer.android.com/reference/kotlin/java/util/function/Predicate.html#<in T>!, downstream: https://developer.android.com/reference/kotlin/java/util/stream/Collector<in T, A, D>!)` Returns a `Collector` which partitions the input elements according to a `Predicate`, reduces the values in each partition according to another `Collector`, and organizes them into a `Map<Boolean, D>` whose values are the result of the downstream reduction. |
 | --- | --- |
-| static [Collector](../java/util/stream/Collector.md)\<T, \*, [Optional](../java/util/Optional.md)\<T\>!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#reducing(java.util.function.BinaryOperator)(op: https://developer.android.com/reference/kotlin/java/util/function/BinaryOperator.html#<T>!)` Returns a `Collector` which performs a reduction of its input elements under a specified `BinaryOperator`. |
-| static [Collector](../java/util/stream/Collector.md)\<T, \*, T\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#reducing(java.util.stream.Collectors.reducing.T,%20java.util.function.BinaryOperator)(identity: T, op: https://developer.android.com/reference/kotlin/java/util/function/BinaryOperator.html#<T>!)` Returns a `Collector` which performs a reduction of its input elements under a specified `BinaryOperator` using the provided identity. |
-| static [Collector](../java/util/stream/Collector.md)\<T, \*, U\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#reducing(java.util.stream.Collectors.reducing.U,%20java.util.function.Function,%20java.util.function.BinaryOperator)(identity: U, mapper: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out U>!, op: https://developer.android.com/reference/kotlin/java/util/function/BinaryOperator.html#<U>!)` Returns a `Collector` which performs a reduction of its input elements under a specified mapping function and `BinaryOperator`. |
+| static [Collector](Collector.md)\<T, \*, [Optional](../java.util/Optional.md)\<T\>!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#reducing(java.util.function.BinaryOperator)(op: https://developer.android.com/reference/kotlin/java/util/function/BinaryOperator.html#<T>!)` Returns a `Collector` which performs a reduction of its input elements under a specified `BinaryOperator`. |
+| static [Collector](Collector.md)\<T, \*, T\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#reducing(java.util.stream.Collectors.reducing.T,%20java.util.function.BinaryOperator)(identity: T, op: https://developer.android.com/reference/kotlin/java/util/function/BinaryOperator.html#<T>!)` Returns a `Collector` which performs a reduction of its input elements under a specified `BinaryOperator` using the provided identity. |
+| static [Collector](Collector.md)\<T, \*, U\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#reducing(java.util.stream.Collectors.reducing.U,%20java.util.function.Function,%20java.util.function.BinaryOperator)(identity: U, mapper: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out U>!, op: https://developer.android.com/reference/kotlin/java/util/function/BinaryOperator.html#<U>!)` Returns a `Collector` which performs a reduction of its input elements under a specified mapping function and `BinaryOperator`. |
 | --- | --- |
-| static [Collector](../java/util/stream/Collector.md)\<T, \*, [DoubleSummaryStatistics](../java/util/DoubleSummaryStatistics.md)!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#summarizingDouble(java.util.function.ToDoubleFunction)(mapper: https://developer.android.com/reference/kotlin/java/util/function/ToDoubleFunction.html#<in T>!)` Returns a `Collector` which applies an `double`-producing mapping function to each input element, and returns summary statistics for the resulting values. |
-| static [Collector](../java/util/stream/Collector.md)\<T, \*, [IntSummaryStatistics](../java/util/IntSummaryStatistics.md)!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#summarizingInt(java.util.function.ToIntFunction)(mapper: https://developer.android.com/reference/kotlin/java/util/function/ToIntFunction.html#<in T>!)` Returns a `Collector` which applies an `int`-producing mapping function to each input element, and returns summary statistics for the resulting values. |
-| static [Collector](../java/util/stream/Collector.md)\<T, \*, [LongSummaryStatistics](../java/util/LongSummaryStatistics.md)!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#summarizingLong(java.util.function.ToLongFunction)(mapper: https://developer.android.com/reference/kotlin/java/util/function/ToLongFunction.html#<in T>!)` Returns a `Collector` which applies an `long`-producing mapping function to each input element, and returns summary statistics for the resulting values. |
+| static [Collector](Collector.md)\<T, \*, [DoubleSummaryStatistics](../java.util/DoubleSummaryStatistics.md)!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#summarizingDouble(java.util.function.ToDoubleFunction)(mapper: https://developer.android.com/reference/kotlin/java/util/function/ToDoubleFunction.html#<in T>!)` Returns a `Collector` which applies an `double`-producing mapping function to each input element, and returns summary statistics for the resulting values. |
+| static [Collector](Collector.md)\<T, \*, [IntSummaryStatistics](../java.util/IntSummaryStatistics.md)!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#summarizingInt(java.util.function.ToIntFunction)(mapper: https://developer.android.com/reference/kotlin/java/util/function/ToIntFunction.html#<in T>!)` Returns a `Collector` which applies an `int`-producing mapping function to each input element, and returns summary statistics for the resulting values. |
+| static [Collector](Collector.md)\<T, \*, [LongSummaryStatistics](../java.util/LongSummaryStatistics.md)!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#summarizingLong(java.util.function.ToLongFunction)(mapper: https://developer.android.com/reference/kotlin/java/util/function/ToLongFunction.html#<in T>!)` Returns a `Collector` which applies an `long`-producing mapping function to each input element, and returns summary statistics for the resulting values. |
 | --- | --- |
-| static [Collector](../java/util/stream/Collector.md)\<T, \*, [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#summingDouble(java.util.function.ToDoubleFunction)(mapper: https://developer.android.com/reference/kotlin/java/util/function/ToDoubleFunction.html#<in T>!)` Returns a `Collector` that produces the sum of a double-valued function applied to the input elements. |
-| static [Collector](../java/util/stream/Collector.md)\<T, \*, [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#summingInt(java.util.function.ToIntFunction)(mapper: https://developer.android.com/reference/kotlin/java/util/function/ToIntFunction.html#<in T>!)` Returns a `Collector` that produces the sum of an integer-valued function applied to the input elements. |
-| static [Collector](../java/util/stream/Collector.md)\<T, \*, [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#summingLong(java.util.function.ToLongFunction)(mapper: https://developer.android.com/reference/kotlin/java/util/function/ToLongFunction.html#<in T>!)` Returns a `Collector` that produces the sum of a long-valued function applied to the input elements. |
+| static [Collector](Collector.md)\<T, \*, [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#summingDouble(java.util.function.ToDoubleFunction)(mapper: https://developer.android.com/reference/kotlin/java/util/function/ToDoubleFunction.html#<in T>!)` Returns a `Collector` that produces the sum of a double-valued function applied to the input elements. |
+| static [Collector](Collector.md)\<T, \*, [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#summingInt(java.util.function.ToIntFunction)(mapper: https://developer.android.com/reference/kotlin/java/util/function/ToIntFunction.html#<in T>!)` Returns a `Collector` that produces the sum of an integer-valued function applied to the input elements. |
+| static [Collector](Collector.md)\<T, \*, [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#summingLong(java.util.function.ToLongFunction)(mapper: https://developer.android.com/reference/kotlin/java/util/function/ToLongFunction.html#<in T>!)` Returns a `Collector` that produces the sum of a long-valued function applied to the input elements. |
 | --- | --- |
-| static [Collector](../java/util/stream/Collector.md)\<T, \*, R\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#teeing(java.util.stream.Collector,%20java.util.stream.Collector,%20java.util.function.BiFunction)(downstream1: https://developer.android.com/reference/kotlin/java/util/stream/Collector<in T, *, R1>!, downstream2: https://developer.android.com/reference/kotlin/java/util/stream/Collector<in T, *, R2>!, merger: https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#<in R1, in R2, R>!)` Returns a `Collector` that is a composite of two downstream collectors. |
-| static [Collector](../java/util/stream/Collector.md)\<T, \*, C\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#toCollection(java.util.function.Supplier)(collectionFactory: https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#<C>!)` Returns a `Collector` that accumulates the input elements into a new `Collection`, in encounter order. |
-| static [Collector](../java/util/stream/Collector.md)\<T, \*, [ConcurrentMap](../java/util/concurrent/ConcurrentMap.md)\<K, U\>!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#toConcurrentMap(java.util.function.Function,%20java.util.function.Function)(keyMapper: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out K>!, valueMapper: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out U>!)` Returns a concurrent `Collector` that accumulates elements into a `ConcurrentMap` whose keys and values are the result of applying the provided mapping functions to the input elements. |
+| static [Collector](Collector.md)\<T, \*, R\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#teeing(java.util.stream.Collector,%20java.util.stream.Collector,%20java.util.function.BiFunction)(downstream1: https://developer.android.com/reference/kotlin/java/util/stream/Collector<in T, *, R1>!, downstream2: https://developer.android.com/reference/kotlin/java/util/stream/Collector<in T, *, R2>!, merger: https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#<in R1, in R2, R>!)` Returns a `Collector` that is a composite of two downstream collectors. |
+| static [Collector](Collector.md)\<T, \*, C\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#toCollection(java.util.function.Supplier)(collectionFactory: https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#<C>!)` Returns a `Collector` that accumulates the input elements into a new `Collection`, in encounter order. |
+| static [Collector](Collector.md)\<T, \*, [ConcurrentMap](../java.util.concurrent/ConcurrentMap.md)\<K, U\>!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#toConcurrentMap(java.util.function.Function,%20java.util.function.Function)(keyMapper: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out K>!, valueMapper: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out U>!)` Returns a concurrent `Collector` that accumulates elements into a `ConcurrentMap` whose keys and values are the result of applying the provided mapping functions to the input elements. |
 | --- | --- |
-| static [Collector](../java/util/stream/Collector.md)\<T, \*, [ConcurrentMap](../java/util/concurrent/ConcurrentMap.md)\<K, U\>!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#toConcurrentMap(java.util.function.Function,%20java.util.function.Function,%20java.util.function.BinaryOperator)(keyMapper: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out K>!, valueMapper: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out U>!, mergeFunction: https://developer.android.com/reference/kotlin/java/util/function/BinaryOperator.html#<U>!)` Returns a concurrent `Collector` that accumulates elements into a `ConcurrentMap` whose keys and values are the result of applying the provided mapping functions to the input elements. |
-| static [Collector](../java/util/stream/Collector.md)\<T, \*, M\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#toConcurrentMap(java.util.function.Function,%20java.util.function.Function,%20java.util.function.BinaryOperator,%20java.util.function.Supplier)(keyMapper: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out K>!, valueMapper: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out U>!, mergeFunction: https://developer.android.com/reference/kotlin/java/util/function/BinaryOperator.html#<U>!, mapFactory: https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#<M>!)` Returns a concurrent `Collector` that accumulates elements into a `ConcurrentMap` whose keys and values are the result of applying the provided mapping functions to the input elements. |
-| static [Collector](../java/util/stream/Collector.md)\<T, \*, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<T\>!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#toList()()` Returns a `Collector` that accumulates the input elements into a new `List`. |
+| static [Collector](Collector.md)\<T, \*, [ConcurrentMap](../java.util.concurrent/ConcurrentMap.md)\<K, U\>!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#toConcurrentMap(java.util.function.Function,%20java.util.function.Function,%20java.util.function.BinaryOperator)(keyMapper: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out K>!, valueMapper: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out U>!, mergeFunction: https://developer.android.com/reference/kotlin/java/util/function/BinaryOperator.html#<U>!)` Returns a concurrent `Collector` that accumulates elements into a `ConcurrentMap` whose keys and values are the result of applying the provided mapping functions to the input elements. |
+| static [Collector](Collector.md)\<T, \*, M\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#toConcurrentMap(java.util.function.Function,%20java.util.function.Function,%20java.util.function.BinaryOperator,%20java.util.function.Supplier)(keyMapper: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out K>!, valueMapper: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out U>!, mergeFunction: https://developer.android.com/reference/kotlin/java/util/function/BinaryOperator.html#<U>!, mapFactory: https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#<M>!)` Returns a concurrent `Collector` that accumulates elements into a `ConcurrentMap` whose keys and values are the result of applying the provided mapping functions to the input elements. |
+| static [Collector](Collector.md)\<T, \*, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<T\>!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#toList()()` Returns a `Collector` that accumulates the input elements into a new `List`. |
 | --- | --- |
-| static [Collector](../java/util/stream/Collector.md)\<T, \*, [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\<K, U\>!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#toMap(java.util.function.Function,%20java.util.function.Function)(keyMapper: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out K>!, valueMapper: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out U>!)` Returns a `Collector` that accumulates elements into a `Map` whose keys and values are the result of applying the provided mapping functions to the input elements. |
-| static [Collector](../java/util/stream/Collector.md)\<T, \*, [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\<K, U\>!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#toMap(java.util.function.Function,%20java.util.function.Function,%20java.util.function.BinaryOperator)(keyMapper: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out K>!, valueMapper: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out U>!, mergeFunction: https://developer.android.com/reference/kotlin/java/util/function/BinaryOperator.html#<U>!)` Returns a `Collector` that accumulates elements into a `Map` whose keys and values are the result of applying the provided mapping functions to the input elements. |
-| static [Collector](../java/util/stream/Collector.md)\<T, \*, M\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#toMap(java.util.function.Function,%20java.util.function.Function,%20java.util.function.BinaryOperator,%20java.util.function.Supplier)(keyMapper: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out K>!, valueMapper: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out U>!, mergeFunction: https://developer.android.com/reference/kotlin/java/util/function/BinaryOperator.html#<U>!, mapFactory: https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#<M>!)` Returns a `Collector` that accumulates elements into a `Map` whose keys and values are the result of applying the provided mapping functions to the input elements. |
+| static [Collector](Collector.md)\<T, \*, [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\<K, U\>!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#toMap(java.util.function.Function,%20java.util.function.Function)(keyMapper: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out K>!, valueMapper: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out U>!)` Returns a `Collector` that accumulates elements into a `Map` whose keys and values are the result of applying the provided mapping functions to the input elements. |
+| static [Collector](Collector.md)\<T, \*, [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\<K, U\>!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#toMap(java.util.function.Function,%20java.util.function.Function,%20java.util.function.BinaryOperator)(keyMapper: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out K>!, valueMapper: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out U>!, mergeFunction: https://developer.android.com/reference/kotlin/java/util/function/BinaryOperator.html#<U>!)` Returns a `Collector` that accumulates elements into a `Map` whose keys and values are the result of applying the provided mapping functions to the input elements. |
+| static [Collector](Collector.md)\<T, \*, M\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#toMap(java.util.function.Function,%20java.util.function.Function,%20java.util.function.BinaryOperator,%20java.util.function.Supplier)(keyMapper: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out K>!, valueMapper: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out U>!, mergeFunction: https://developer.android.com/reference/kotlin/java/util/function/BinaryOperator.html#<U>!, mapFactory: https://developer.android.com/reference/kotlin/java/util/function/Supplier.html#<M>!)` Returns a `Collector` that accumulates elements into a `Map` whose keys and values are the result of applying the provided mapping functions to the input elements. |
 | --- | --- |
-| static [Collector](../java/util/stream/Collector.md)\<T, \*, [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<T\>!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#toSet()()` Returns a `Collector` that accumulates the input elements into a new `Set`. |
-| static [Collector](../java/util/stream/Collector.md)\<T, \*, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<T\>!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#toUnmodifiableList()()` Returns a `Collector` that accumulates the input elements into an [unmodifiable List](../java/util/List.md) in encounter order. |
-| static [Collector](../java/util/stream/Collector.md)\<T, \*, [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\<K, U\>!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#toUnmodifiableMap(java.util.function.Function,%20java.util.function.Function)(keyMapper: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out K>!, valueMapper: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out U>!)` Returns a `Collector` that accumulates the input elements into an [unmodifiable Map](../java/util/Map.md), whose keys and values are the result of applying the provided mapping functions to the input elements. |
+| static [Collector](Collector.md)\<T, \*, [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<T\>!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#toSet()()` Returns a `Collector` that accumulates the input elements into a new `Set`. |
+| static [Collector](Collector.md)\<T, \*, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<T\>!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#toUnmodifiableList()()` Returns a `Collector` that accumulates the input elements into an [unmodifiable List](../java.util/List.md) in encounter order. |
+| static [Collector](Collector.md)\<T, \*, [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\<K, U\>!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#toUnmodifiableMap(java.util.function.Function,%20java.util.function.Function)(keyMapper: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out K>!, valueMapper: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out U>!)` Returns a `Collector` that accumulates the input elements into an [unmodifiable Map](../java.util/Map.md), whose keys and values are the result of applying the provided mapping functions to the input elements. |
 | --- | --- |
-| static [Collector](../java/util/stream/Collector.md)\<T, \*, [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\<K, U\>!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#toUnmodifiableMap(java.util.function.Function,%20java.util.function.Function,%20java.util.function.BinaryOperator)(keyMapper: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out K>!, valueMapper: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out U>!, mergeFunction: https://developer.android.com/reference/kotlin/java/util/function/BinaryOperator.html#<U>!)` Returns a `Collector` that accumulates the input elements into an [unmodifiable Map](../java/util/Map.md), whose keys and values are the result of applying the provided mapping functions to the input elements. |
-| static [Collector](../java/util/stream/Collector.md)\<T, \*, [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<T\>!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#toUnmodifiableSet()()` Returns a `Collector` that accumulates the input elements into an [unmodifiable Set](../java/util/Set.md). |
+| static [Collector](Collector.md)\<T, \*, [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\<K, U\>!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#toUnmodifiableMap(java.util.function.Function,%20java.util.function.Function,%20java.util.function.BinaryOperator)(keyMapper: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out K>!, valueMapper: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in T, out U>!, mergeFunction: https://developer.android.com/reference/kotlin/java/util/function/BinaryOperator.html#<U>!)` Returns a `Collector` that accumulates the input elements into an [unmodifiable Map](../java.util/Map.md), whose keys and values are the result of applying the provided mapping functions to the input elements. |
+| static [Collector](Collector.md)\<T, \*, [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<T\>!\>! | `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#toUnmodifiableSet()()` Returns a `Collector` that accumulates the input elements into an [unmodifiable Set](../java.util/Set.md). |
 
 ## Public methods
 
@@ -130,7 +130,7 @@ The average returned can vary depending upon the order in which values are recor
 | Parameters ||
 |---|---|
 | `<T>` | the type of the input elements |
-| `mapper` | [ToDoubleFunction](../java/util/function/ToDoubleFunction.md)\<in T\>!: a function extracting the property to be averaged |
+| `mapper` | [ToDoubleFunction](../java.util.function/ToDoubleFunction.md)\<in T\>!: a function extracting the property to be averaged |
 
 | Return ||
 |---|---|
@@ -149,7 +149,7 @@ Returns a `Collector` that produces the arithmetic mean of an integer-valued fun
 | Parameters ||
 |---|---|
 | `<T>` | the type of the input elements |
-| `mapper` | [ToIntFunction](../java/util/function/ToIntFunction.md)\<in T\>!: a function extracting the property to be averaged |
+| `mapper` | [ToIntFunction](../java.util.function/ToIntFunction.md)\<in T\>!: a function extracting the property to be averaged |
 
 | Return ||
 |---|---|
@@ -168,7 +168,7 @@ Returns a `Collector` that produces the arithmetic mean of a long-valued functio
 | Parameters ||
 |---|---|
 | `<T>` | the type of the input elements |
-| `mapper` | [ToLongFunction](../java/util/function/ToLongFunction.md)\<in T\>!: a function extracting the property to be averaged |
+| `mapper` | [ToLongFunction](../java.util.function/ToLongFunction.md)\<in T\>!: a function extracting the property to be averaged |
 
 | Return ||
 |---|---|
@@ -203,8 +203,8 @@ Adapts a `Collector` to perform an additional finishing transformation. For exam
 | `<R>` | result type of the downstream collector |
 | --- | --- |
 | `<RR>` | result type of the resulting collector |
-| `downstream` | [Collector](../java/util/stream/Collector.md)\<T, A, R\>!: a collector |
-| `finisher` | [Function](../java/util/function/Function.md)\<R, RR\>!: a function to be applied to the final result of the downstream collector |
+| `downstream` | [Collector](Collector.md)\<T, A, R\>!: a collector |
+| `finisher` | [Function](../java.util.function/Function.md)\<R, RR\>!: a function to be applied to the final result of the downstream collector |
 | --- | --- |
 
 | Return ||
@@ -248,8 +248,8 @@ Adapts a `Collector` to one accepting elements of the same type `T` by applying 
 | `<A>` | intermediate accumulation type of the downstream collector |
 | `<R>` | result type of collector |
 | --- | --- |
-| `predicate` | [Predicate](../java/util/function/Predicate.md)\<in T\>!: a predicate to be applied to the input elements |
-| `downstream` | [Collector](../java/util/stream/Collector.md)\<in T, A, R\>!: a collector which will accept values that match the predicate |
+| `predicate` | [Predicate](../java.util.function/Predicate.md)\<in T\>!: a predicate to be applied to the input elements |
+| `downstream` | [Collector](Collector.md)\<in T, A, R\>!: a collector which will accept values that match the predicate |
 
 | Return ||
 |---|---|
@@ -275,8 +275,8 @@ Adapts a `Collector` accepting elements of type `U` to one accepting elements of
 | `<A>` | intermediate accumulation type of the downstream collector |
 | --- | --- |
 | `<R>` | result type of collector |
-| `mapper` | [Function](../java/util/function/Function.md)\<in T, out [Stream](../java/util/stream/Stream.md)\<out U\>!\>!: a function to be applied to the input elements, which returns a stream of results |
-| `downstream` | [Collector](../java/util/stream/Collector.md)\<in U, A, R\>!: a collector which will receive the elements of the stream returned by mapper |
+| `mapper` | [Function](../java.util.function/Function.md)\<in T, out [Stream](Stream.md)\<out U\>!\>!: a function to be applied to the input elements, which returns a stream of results |
+| `downstream` | [Collector](Collector.md)\<in U, A, R\>!: a collector which will receive the elements of the stream returned by mapper |
 | --- | --- |
 
 | Return ||
@@ -301,7 +301,7 @@ There are no guarantees on the type, mutability, serializability, or thread-safe
 |---|---|
 | `<T>` | the type of the input elements |
 | `<K>` | the type of the keys |
-| `classifier` | [Function](../java/util/function/Function.md)\<in T, out K\>!: the classifier function mapping input elements to keys |
+| `classifier` | [Function](../java.util.function/Function.md)\<in T, out K\>!: the classifier function mapping input elements to keys |
 | --- | --- |
 
 | Return ||
@@ -350,10 +350,10 @@ For example, to compute the set of last names of people in each city, where the 
 | --- | --- |
 | `<A>` | the intermediate accumulation type of the downstream collector |
 | `<M>` | the type of the resulting `Map` |
-| `classifier` | [Function](../java/util/function/Function.md)\<in T, out K\>!: a classifier function mapping input elements to keys |
+| `classifier` | [Function](../java.util.function/Function.md)\<in T, out K\>!: a classifier function mapping input elements to keys |
 | --- | --- |
-| `mapFactory` | [Supplier](../java/util/function/Supplier.md)\<M\>!: a supplier providing a new empty `Map` into which the results will be inserted |
-| `downstream` | [Collector](../java/util/stream/Collector.md)\<in T, A, D\>!: a `Collector` implementing the downstream reduction |
+| `mapFactory` | [Supplier](../java.util.function/Supplier.md)\<M\>!: a supplier providing a new empty `Map` into which the results will be inserted |
+| `downstream` | [Collector](Collector.md)\<in T, A, D\>!: a `Collector` implementing the downstream reduction |
 
 | Return ||
 |---|---|
@@ -400,8 +400,8 @@ For example, to compute the set of last names of people in each city:
 | `<A>` | the intermediate accumulation type of the downstream collector |
 | --- | --- |
 | `<D>` | the result type of the downstream reduction |
-| `classifier` | [Function](../java/util/function/Function.md)\<in T, out K\>!: a classifier function mapping input elements to keys |
-| `downstream` | [Collector](../java/util/stream/Collector.md)\<in T, A, D\>!: a `Collector` implementing the downstream reduction |
+| `classifier` | [Function](../java.util.function/Function.md)\<in T, out K\>!: a classifier function mapping input elements to keys |
+| `downstream` | [Collector](Collector.md)\<in T, A, D\>!: a `Collector` implementing the downstream reduction |
 | --- | --- |
 
 | Return ||
@@ -434,7 +434,7 @@ There are no guarantees on the type, mutability, or serializability of the `Conc
 |---|---|
 | `<T>` | the type of the input elements |
 | `<K>` | the type of the keys |
-| `classifier` | [Function](../java/util/function/Function.md)\<in T, out K\>!: a classifier function mapping input elements to keys |
+| `classifier` | [Function](../java.util.function/Function.md)\<in T, out K\>!: a classifier function mapping input elements to keys |
 | --- | --- |
 
 | Return ||
@@ -485,10 +485,10 @@ For example, to compute the set of last names of people in each city, where the 
 | --- | --- |
 | `<D>` | the result type of the downstream reduction |
 | `<M>` | the type of the resulting `ConcurrentMap` |
-| `classifier` | [Function](../java/util/function/Function.md)\<in T, out K\>!: a classifier function mapping input elements to keys |
+| `classifier` | [Function](../java.util.function/Function.md)\<in T, out K\>!: a classifier function mapping input elements to keys |
 | --- | --- |
-| `mapFactory` | [Supplier](../java/util/function/Supplier.md)\<M\>!: a supplier providing a new empty `ConcurrentMap` into which the results will be inserted |
-| `downstream` | [Collector](../java/util/stream/Collector.md)\<in T, A, D\>!: a `Collector` implementing the downstream reduction |
+| `mapFactory` | [Supplier](../java.util.function/Supplier.md)\<M\>!: a supplier providing a new empty `ConcurrentMap` into which the results will be inserted |
+| `downstream` | [Collector](Collector.md)\<in T, A, D\>!: a `Collector` implementing the downstream reduction |
 
 | Return ||
 |---|---|
@@ -537,8 +537,8 @@ For example, to compute the set of last names of people in each city, where the 
 | `<A>` | the intermediate accumulation type of the downstream collector |
 | --- | --- |
 | `<D>` | the result type of the downstream reduction |
-| `classifier` | [Function](../java/util/function/Function.md)\<in T, out K\>!: a classifier function mapping input elements to keys |
-| `downstream` | [Collector](../java/util/stream/Collector.md)\<in T, A, D\>!: a `Collector` implementing the downstream reduction |
+| `classifier` | [Function](../java.util.function/Function.md)\<in T, out K\>!: a classifier function mapping input elements to keys |
+| `downstream` | [Collector](Collector.md)\<in T, A, D\>!: a `Collector` implementing the downstream reduction |
 | --- | --- |
 
 | Return ||
@@ -628,8 +628,8 @@ Adapts a `Collector` accepting elements of type `U` to one accepting elements of
 | `<A>` | intermediate accumulation type of the downstream collector |
 | --- | --- |
 | `<R>` | result type of collector |
-| `mapper` | [Function](../java/util/function/Function.md)\<in T, out U\>!: a function to be applied to the input elements |
-| `downstream` | [Collector](../java/util/stream/Collector.md)\<in U, A, R\>!: a collector which will accept mapped values |
+| `mapper` | [Function](../java.util.function/Function.md)\<in T, out U\>!: a function to be applied to the input elements |
+| `downstream` | [Collector](Collector.md)\<in U, A, R\>!: a collector which will accept mapped values |
 | --- | --- |
 
 | Return ||
@@ -649,7 +649,7 @@ Returns a `Collector` that produces the maximal element according to a given `Co
 | Parameters ||
 |---|---|
 | `<T>` | the type of the input elements |
-| `comparator` | [Comparator](../java/util/Comparator.md)\<in T\>!: a `Comparator` for comparing elements |
+| `comparator` | [Comparator](../java.util/Comparator.md)\<in T\>!: a `Comparator` for comparing elements |
 
 | Return ||
 |---|---|
@@ -668,7 +668,7 @@ Returns a `Collector` that produces the minimal element according to a given `Co
 | Parameters ||
 |---|---|
 | `<T>` | the type of the input elements |
-| `comparator` | [Comparator](../java/util/Comparator.md)\<in T\>!: a `Comparator` for comparing elements |
+| `comparator` | [Comparator](../java.util/Comparator.md)\<in T\>!: a `Comparator` for comparing elements |
 
 | Return ||
 |---|---|
@@ -687,7 +687,7 @@ Returns a `Collector` which partitions the input elements according to a `Predic
 | Parameters ||
 |---|---|
 | `<T>` | the type of the input elements |
-| `predicate` | [Predicate](../java/util/function/Predicate.md)\<in T\>!: a predicate used for classifying input elements |
+| `predicate` | [Predicate](../java.util.function/Predicate.md)\<in T\>!: a predicate used for classifying input elements |
 
 | Return ||
 |---|---|
@@ -718,8 +718,8 @@ The returned `Map` always contains mappings for both `false` and `true` keys. Th
 | `<D>` | the result type of the downstream reduction |
 | `<A>` | the intermediate accumulation type of the downstream collector |
 | --- | --- |
-| `predicate` | [Predicate](../java/util/function/Predicate.md)\<in T\>!: a predicate used for classifying input elements |
-| `downstream` | [Collector](../java/util/stream/Collector.md)\<in T, A, D\>!: a `Collector` implementing the downstream reduction |
+| `predicate` | [Predicate](../java.util.function/Predicate.md)\<in T\>!: a predicate used for classifying input elements |
+| `downstream` | [Collector](Collector.md)\<in T, A, D\>!: a `Collector` implementing the downstream reduction |
 
 | Return ||
 |---|---|
@@ -742,7 +742,7 @@ Returns a `Collector` which performs a reduction of its input elements under a s
 | Parameters ||
 |---|---|
 | `<T>` | element type for the input and output of the reduction |
-| `op` | [BinaryOperator](../java/util/function/BinaryOperator.md)\<T\>!: a `BinaryOperator<T>` used to reduce the input elements |
+| `op` | [BinaryOperator](../java.util.function/BinaryOperator.md)\<T\>!: a `BinaryOperator<T>` used to reduce the input elements |
 
 | Return ||
 |---|---|
@@ -770,7 +770,7 @@ Returns a `Collector` which performs a reduction of its input elements under a s
 |---|---|
 | `<T>` | element type for the input and output of the reduction |
 | `identity` | T: the identity value for the reduction (also, the value that is returned when there are no input elements) |
-| `op` | [BinaryOperator](../java/util/function/BinaryOperator.md)\<T\>!: a `BinaryOperator<T>` used to reduce the input elements |
+| `op` | [BinaryOperator](../java.util.function/BinaryOperator.md)\<T\>!: a `BinaryOperator<T>` used to reduce the input elements |
 | --- | --- |
 
 | Return ||
@@ -802,8 +802,8 @@ Returns a `Collector` which performs a reduction of its input elements under a s
 | `<U>` | the type of the mapped values |
 | `identity` | U: the identity value for the reduction (also, the value that is returned when there are no input elements) |
 | --- | --- |
-| `mapper` | [Function](../java/util/function/Function.md)\<in T, out U\>!: a mapping function to apply to each input value |
-| `op` | [BinaryOperator](../java/util/function/BinaryOperator.md)\<U\>!: a `BinaryOperator<U>` used to reduce the mapped values |
+| `mapper` | [Function](../java.util.function/Function.md)\<in T, out U\>!: a mapping function to apply to each input value |
+| `op` | [BinaryOperator](../java.util.function/BinaryOperator.md)\<U\>!: a `BinaryOperator<U>` used to reduce the mapped values |
 
 | Return ||
 |---|---|
@@ -827,7 +827,7 @@ Returns a `Collector` which applies an `double`-producing mapping function to ea
 | Parameters ||
 |---|---|
 | `<T>` | the type of the input elements |
-| `mapper` | [ToDoubleFunction](../java/util/function/ToDoubleFunction.md)\<in T\>!: a mapping function to apply to each element |
+| `mapper` | [ToDoubleFunction](../java.util.function/ToDoubleFunction.md)\<in T\>!: a mapping function to apply to each element |
 
 | Return ||
 |---|---|
@@ -851,7 +851,7 @@ Returns a `Collector` which applies an `int`-producing mapping function to each 
 | Parameters ||
 |---|---|
 | `<T>` | the type of the input elements |
-| `mapper` | [ToIntFunction](../java/util/function/ToIntFunction.md)\<in T\>!: a mapping function to apply to each element |
+| `mapper` | [ToIntFunction](../java.util.function/ToIntFunction.md)\<in T\>!: a mapping function to apply to each element |
 
 | Return ||
 |---|---|
@@ -875,7 +875,7 @@ Returns a `Collector` which applies an `long`-producing mapping function to each
 | Parameters ||
 |---|---|
 | `<T>` | the type of the input elements |
-| `mapper` | [ToLongFunction](../java/util/function/ToLongFunction.md)\<in T\>!: the mapping function to apply to each element |
+| `mapper` | [ToLongFunction](../java.util.function/ToLongFunction.md)\<in T\>!: the mapping function to apply to each element |
 
 | Return ||
 |---|---|
@@ -901,7 +901,7 @@ The sum returned can vary depending upon the order in which values are recorded,
 | Parameters ||
 |---|---|
 | `<T>` | the type of the input elements |
-| `mapper` | [ToDoubleFunction](../java/util/function/ToDoubleFunction.md)\<in T\>!: a function extracting the property to be summed |
+| `mapper` | [ToDoubleFunction](../java.util.function/ToDoubleFunction.md)\<in T\>!: a function extracting the property to be summed |
 
 | Return ||
 |---|---|
@@ -920,7 +920,7 @@ Returns a `Collector` that produces the sum of an integer-valued function applie
 | Parameters ||
 |---|---|
 | `<T>` | the type of the input elements |
-| `mapper` | [ToIntFunction](../java/util/function/ToIntFunction.md)\<in T\>!: a function extracting the property to be summed |
+| `mapper` | [ToIntFunction](../java.util.function/ToIntFunction.md)\<in T\>!: a function extracting the property to be summed |
 
 | Return ||
 |---|---|
@@ -939,7 +939,7 @@ Returns a `Collector` that produces the sum of a long-valued function applied to
 | Parameters ||
 |---|---|
 | `<T>` | the type of the input elements |
-| `mapper` | [ToLongFunction](../java/util/function/ToLongFunction.md)\<in T\>!: a function extracting the property to be summed |
+| `mapper` | [ToLongFunction](../java.util.function/ToLongFunction.md)\<in T\>!: a function extracting the property to be summed |
 
 | Return ||
 |---|---|
@@ -975,10 +975,10 @@ The resulting collector is `https://developer.android.com/reference/kotlin/java/
 | `<R2>` | the result type of the second collector |
 | --- | --- |
 | `<R>` | the final result type |
-| `downstream1` | [Collector](../java/util/stream/Collector.md)\<in T, \*, R1\>!: the first downstream collector |
-| `downstream2` | [Collector](../java/util/stream/Collector.md)\<in T, \*, R2\>!: the second downstream collector |
+| `downstream1` | [Collector](Collector.md)\<in T, \*, R1\>!: the first downstream collector |
+| `downstream2` | [Collector](Collector.md)\<in T, \*, R2\>!: the second downstream collector |
 | --- | --- |
-| `merger` | [BiFunction](../java/util/function/BiFunction.md)\<in R1, in R2, R\>!: the function which merges two results into the single one |
+| `merger` | [BiFunction](../java.util.function/BiFunction.md)\<in R1, in R2, R\>!: the function which merges two results into the single one |
 
 | Return ||
 |---|---|
@@ -998,7 +998,7 @@ Returns a `Collector` that accumulates the input elements into a new `Collection
 |---|---|
 | `<T>` | the type of the input elements |
 | `<C>` | the type of the resulting `Collection` |
-| `collectionFactory` | [Supplier](../java/util/function/Supplier.md)\<C\>!: a supplier providing a new empty `Collection` into which the results will be inserted |
+| `collectionFactory` | [Supplier](../java.util.function/Supplier.md)\<C\>!: a supplier providing a new empty `Collection` into which the results will be inserted |
 | --- | --- |
 
 | Return ||
@@ -1028,8 +1028,8 @@ There are no guarantees on the type, mutability, or serializability of the `Conc
 | `<K>` | the output type of the key mapping function |
 | `<U>` | the output type of the value mapping function |
 | --- | --- |
-| `keyMapper` | [Function](../java/util/function/Function.md)\<in T, out K\>!: the mapping function to produce keys |
-| `valueMapper` | [Function](../java/util/function/Function.md)\<in T, out U\>!: the mapping function to produce values |
+| `keyMapper` | [Function](../java.util.function/Function.md)\<in T, out K\>!: the mapping function to produce keys |
+| `valueMapper` | [Function](../java.util.function/Function.md)\<in T, out U\>!: the mapping function to produce values |
 
 | Return ||
 |---|---|
@@ -1065,9 +1065,9 @@ There are no guarantees on the type, mutability, or serializability of the `Conc
 | `<K>` | the output type of the key mapping function |
 | `<U>` | the output type of the value mapping function |
 | --- | --- |
-| `keyMapper` | [Function](../java/util/function/Function.md)\<in T, out K\>!: a mapping function to produce keys |
-| `valueMapper` | [Function](../java/util/function/Function.md)\<in T, out U\>!: a mapping function to produce values |
-| `mergeFunction` | [BinaryOperator](../java/util/function/BinaryOperator.md)\<U\>!: a merge function, used to resolve collisions between values associated with the same key, as supplied to `https://developer.android.com/reference/kotlin/java/util/Map.html#merge(java.util.Map.K,%20java.util.Map.V,%20java.util.function.BiFunction)` |
+| `keyMapper` | [Function](../java.util.function/Function.md)\<in T, out K\>!: a mapping function to produce keys |
+| `valueMapper` | [Function](../java.util.function/Function.md)\<in T, out U\>!: a mapping function to produce values |
+| `mergeFunction` | [BinaryOperator](../java.util.function/BinaryOperator.md)\<U\>!: a merge function, used to resolve collisions between values associated with the same key, as supplied to `https://developer.android.com/reference/kotlin/java/util/Map.html#merge(java.util.Map.K,%20java.util.Map.V,%20java.util.function.BiFunction)` |
 | --- | --- |
 
 | Return ||
@@ -1106,11 +1106,11 @@ This is a `https://developer.android.com/reference/kotlin/java/util/stream/Colle
 | `<U>` | the output type of the value mapping function |
 | --- | --- |
 | `<M>` | the type of the resulting `ConcurrentMap` |
-| `keyMapper` | [Function](../java/util/function/Function.md)\<in T, out K\>!: a mapping function to produce keys |
-| `valueMapper` | [Function](../java/util/function/Function.md)\<in T, out U\>!: a mapping function to produce values |
+| `keyMapper` | [Function](../java.util.function/Function.md)\<in T, out K\>!: a mapping function to produce keys |
+| `valueMapper` | [Function](../java.util.function/Function.md)\<in T, out U\>!: a mapping function to produce values |
 | --- | --- |
-| `mergeFunction` | [BinaryOperator](../java/util/function/BinaryOperator.md)\<U\>!: a merge function, used to resolve collisions between values associated with the same key, as supplied to `https://developer.android.com/reference/kotlin/java/util/Map.html#merge(java.util.Map.K,%20java.util.Map.V,%20java.util.function.BiFunction)` |
-| `mapFactory` | [Supplier](../java/util/function/Supplier.md)\<M\>!: a supplier providing a new empty `ConcurrentMap` into which the results will be inserted |
+| `mergeFunction` | [BinaryOperator](../java.util.function/BinaryOperator.md)\<U\>!: a merge function, used to resolve collisions between values associated with the same key, as supplied to `https://developer.android.com/reference/kotlin/java/util/Map.html#merge(java.util.Map.K,%20java.util.Map.V,%20java.util.function.BiFunction)` |
+| `mapFactory` | [Supplier](../java.util.function/Supplier.md)\<M\>!: a supplier providing a new empty `ConcurrentMap` into which the results will be inserted |
 
 | Return ||
 |---|---|
@@ -1163,8 +1163,8 @@ There are no guarantees on the type, mutability, serializability, or thread-safe
 | `<K>` | the output type of the key mapping function |
 | `<U>` | the output type of the value mapping function |
 | --- | --- |
-| `keyMapper` | [Function](../java/util/function/Function.md)\<in T, out K\>!: a mapping function to produce keys |
-| `valueMapper` | [Function](../java/util/function/Function.md)\<in T, out U\>!: a mapping function to produce values |
+| `keyMapper` | [Function](../java.util.function/Function.md)\<in T, out K\>!: a mapping function to produce keys |
+| `valueMapper` | [Function](../java.util.function/Function.md)\<in T, out U\>!: a mapping function to produce values |
 
 | Return ||
 |---|---|
@@ -1200,9 +1200,9 @@ There are no guarantees on the type, mutability, serializability, or thread-safe
 | `<K>` | the output type of the key mapping function |
 | `<U>` | the output type of the value mapping function |
 | --- | --- |
-| `keyMapper` | [Function](../java/util/function/Function.md)\<in T, out K\>!: a mapping function to produce keys |
-| `valueMapper` | [Function](../java/util/function/Function.md)\<in T, out U\>!: a mapping function to produce values |
-| `mergeFunction` | [BinaryOperator](../java/util/function/BinaryOperator.md)\<U\>!: a merge function, used to resolve collisions between values associated with the same key, as supplied to `https://developer.android.com/reference/kotlin/java/util/Map.html#merge(java.util.Map.K,%20java.util.Map.V,%20java.util.function.BiFunction)` |
+| `keyMapper` | [Function](../java.util.function/Function.md)\<in T, out K\>!: a mapping function to produce keys |
+| `valueMapper` | [Function](../java.util.function/Function.md)\<in T, out U\>!: a mapping function to produce values |
+| `mergeFunction` | [BinaryOperator](../java.util.function/BinaryOperator.md)\<U\>!: a merge function, used to resolve collisions between values associated with the same key, as supplied to `https://developer.android.com/reference/kotlin/java/util/Map.html#merge(java.util.Map.K,%20java.util.Map.V,%20java.util.function.BiFunction)` |
 | --- | --- |
 
 | Return ||
@@ -1239,11 +1239,11 @@ If the mapped keys contain duplicates (according to `https://developer.android.c
 | `<U>` | the output type of the value mapping function |
 | --- | --- |
 | `<M>` | the type of the resulting `Map` |
-| `keyMapper` | [Function](../java/util/function/Function.md)\<in T, out K\>!: a mapping function to produce keys |
-| `valueMapper` | [Function](../java/util/function/Function.md)\<in T, out U\>!: a mapping function to produce values |
+| `keyMapper` | [Function](../java.util.function/Function.md)\<in T, out K\>!: a mapping function to produce keys |
+| `valueMapper` | [Function](../java.util.function/Function.md)\<in T, out U\>!: a mapping function to produce values |
 | --- | --- |
-| `mergeFunction` | [BinaryOperator](../java/util/function/BinaryOperator.md)\<U\>!: a merge function, used to resolve collisions between values associated with the same key, as supplied to `https://developer.android.com/reference/kotlin/java/util/Map.html#merge(java.util.Map.K,%20java.util.Map.V,%20java.util.function.BiFunction)` |
-| `mapFactory` | [Supplier](../java/util/function/Supplier.md)\<M\>!: a supplier providing a new empty `Map` into which the results will be inserted |
+| `mergeFunction` | [BinaryOperator](../java.util.function/BinaryOperator.md)\<U\>!: a merge function, used to resolve collisions between values associated with the same key, as supplied to `https://developer.android.com/reference/kotlin/java/util/Map.html#merge(java.util.Map.K,%20java.util.Map.V,%20java.util.function.BiFunction)` |
+| `mapFactory` | [Supplier](../java.util.function/Supplier.md)\<M\>!: a supplier providing a new empty `Map` into which the results will be inserted |
 
 | Return ||
 |---|---|
@@ -1283,7 +1283,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 static fun <T : Any!> toUnmodifiableList(): Collector<T, *, MutableList<T>!>!
 ```
 
-Returns a `Collector` that accumulates the input elements into an [unmodifiable List](../java/util/List.md) in encounter order. The returned Collector disallows null values and will throw `NullPointerException` if it is presented with a null value.
+Returns a `Collector` that accumulates the input elements into an [unmodifiable List](../java.util/List.md) in encounter order. The returned Collector disallows null values and will throw `NullPointerException` if it is presented with a null value.
 
 | Parameters ||
 |---|---|
@@ -1291,7 +1291,7 @@ Returns a `Collector` that accumulates the input elements into an [unmodifiable 
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/util/stream/Collector<T, *, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<T>!>!` | a `Collector` that accumulates the input elements into an [unmodifiable List](../java/util/List.md) in encounter order |
+| `https://developer.android.com/reference/kotlin/java/util/stream/Collector<T, *, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<T>!>!` | a `Collector` that accumulates the input elements into an [unmodifiable List](../java.util/List.md) in encounter order |
 
 ### toUnmodifiableMap
 
@@ -1304,7 +1304,7 @@ static fun <T : Any!, K : Any!, U : Any!> toUnmodifiableMap(
 ): Collector<T, *, MutableMap<K, U>!>!
 ```
 
-Returns a `Collector` that accumulates the input elements into an [unmodifiable Map](../java/util/Map.md), whose keys and values are the result of applying the provided mapping functions to the input elements.
+Returns a `Collector` that accumulates the input elements into an [unmodifiable Map](../java.util/Map.md), whose keys and values are the result of applying the provided mapping functions to the input elements.
 
 If the mapped keys contain duplicates (according to `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)`), an `IllegalStateException` is thrown when the collection operation is performed. If the mapped keys might have duplicates, use `https://developer.android.com/reference/kotlin/java/util/stream/Collectors#toUnmodifiableMap(java.util.function.Function,%20java.util.function.Function,%20java.util.function.BinaryOperator)` to handle merging of the values.
 
@@ -1316,12 +1316,12 @@ The returned Collector disallows null keys and values. If either mapping functio
 | `<K>` | the output type of the key mapping function |
 | `<U>` | the output type of the value mapping function |
 | --- | --- |
-| `keyMapper` | [Function](../java/util/function/Function.md)\<in T, out K\>!: a mapping function to produce keys, must be non-null |
-| `valueMapper` | [Function](../java/util/function/Function.md)\<in T, out U\>!: a mapping function to produce values, must be non-null |
+| `keyMapper` | [Function](../java.util.function/Function.md)\<in T, out K\>!: a mapping function to produce keys, must be non-null |
+| `valueMapper` | [Function](../java.util.function/Function.md)\<in T, out U\>!: a mapping function to produce values, must be non-null |
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/util/stream/Collector<T, *, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<K, U>!>!` | a `Collector` that accumulates the input elements into an [unmodifiable Map](../java/util/Map.md), whose keys and values are the result of applying the provided mapping functions to the input elements |
+| `https://developer.android.com/reference/kotlin/java/util/stream/Collector<T, *, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<K, U>!>!` | a `Collector` that accumulates the input elements into an [unmodifiable Map](../java.util/Map.md), whose keys and values are the result of applying the provided mapping functions to the input elements |
 
 | Exceptions ||
 |---|---|
@@ -1343,7 +1343,7 @@ static fun <T : Any!, K : Any!, U : Any!> toUnmodifiableMap(
 ): Collector<T, *, MutableMap<K, U>!>!
 ```
 
-Returns a `Collector` that accumulates the input elements into an [unmodifiable Map](../java/util/Map.md), whose keys and values are the result of applying the provided mapping functions to the input elements.
+Returns a `Collector` that accumulates the input elements into an [unmodifiable Map](../java.util/Map.md), whose keys and values are the result of applying the provided mapping functions to the input elements.
 
 If the mapped keys contain duplicates (according to `https://developer.android.com/reference/kotlin/java/lang/Object.html#equals(kotlin.Any)`), the value mapping function is applied to each equal element, and the results are merged using the provided merging function.
 
@@ -1355,14 +1355,14 @@ The returned Collector disallows null keys and values. If either mapping functio
 | `<K>` | the output type of the key mapping function |
 | `<U>` | the output type of the value mapping function |
 | --- | --- |
-| `keyMapper` | [Function](../java/util/function/Function.md)\<in T, out K\>!: a mapping function to produce keys, must be non-null |
-| `valueMapper` | [Function](../java/util/function/Function.md)\<in T, out U\>!: a mapping function to produce values, must be non-null |
-| `mergeFunction` | [BinaryOperator](../java/util/function/BinaryOperator.md)\<U\>!: a merge function, used to resolve collisions between values associated with the same key, as supplied to `https://developer.android.com/reference/kotlin/java/util/Map.html#merge(java.util.Map.K,%20java.util.Map.V,%20java.util.function.BiFunction)`, must be non-null |
+| `keyMapper` | [Function](../java.util.function/Function.md)\<in T, out K\>!: a mapping function to produce keys, must be non-null |
+| `valueMapper` | [Function](../java.util.function/Function.md)\<in T, out U\>!: a mapping function to produce values, must be non-null |
+| `mergeFunction` | [BinaryOperator](../java.util.function/BinaryOperator.md)\<U\>!: a merge function, used to resolve collisions between values associated with the same key, as supplied to `https://developer.android.com/reference/kotlin/java/util/Map.html#merge(java.util.Map.K,%20java.util.Map.V,%20java.util.function.BiFunction)`, must be non-null |
 | --- | --- |
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/util/stream/Collector<T, *, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<K, U>!>!` | a `Collector` that accumulates the input elements into an [unmodifiable Map](../java/util/Map.md), whose keys and values are the result of applying the provided mapping functions to the input elements |
+| `https://developer.android.com/reference/kotlin/java/util/stream/Collector<T, *, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<K, U>!>!` | a `Collector` that accumulates the input elements into an [unmodifiable Map](../java.util/Map.md), whose keys and values are the result of applying the provided mapping functions to the input elements |
 
 | Exceptions ||
 |---|---|
@@ -1380,7 +1380,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 static fun <T : Any!> toUnmodifiableSet(): Collector<T, *, MutableSet<T>!>!
 ```
 
-Returns a `Collector` that accumulates the input elements into an [unmodifiable Set](../java/util/Set.md). The returned Collector disallows null values and will throw `NullPointerException` if it is presented with a null value. If the input contains duplicate elements, an arbitrary element of the duplicates is preserved.
+Returns a `Collector` that accumulates the input elements into an [unmodifiable Set](../java.util/Set.md). The returned Collector disallows null values and will throw `NullPointerException` if it is presented with a null value. If the input contains duplicate elements, an arbitrary element of the duplicates is preserved.
 
 This is an `https://developer.android.com/reference/kotlin/java/util/stream/Collector.Characteristics` Collector.
 
@@ -1390,4 +1390,4 @@ This is an `https://developer.android.com/reference/kotlin/java/util/stream/Coll
 
 | Return ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/util/stream/Collector<T, *, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<T>!>!` | a `Collector` that accumulates the input elements into an [unmodifiable Set](../java/util/Set.md) |
+| `https://developer.android.com/reference/kotlin/java/util/stream/Collector<T, *, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html<T>!>!` | a `Collector` that accumulates the input elements into an [unmodifiable Set](../java.util/Set.md) |

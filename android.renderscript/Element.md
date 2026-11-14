@@ -5,7 +5,7 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 
 # Element
 
-Kotlin| [Java](../android/renderscript/Element.md) 
+Kotlin| [Java](Element.md) 
 | --- | --- |
 
 ```
@@ -14,8 +14,8 @@ open class Element : BaseObj
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.renderscript.BaseObj](../android/renderscript/BaseObj.md) ||
-| | ↳ | [android.renderscript.Element](../android/renderscript/Element.md) |
+| ↳ | [android.renderscript.BaseObj](BaseObj.md) ||
+| | ↳ | [android.renderscript.Element](Element.md) |
 
 | **This class was deprecated in API level 31.**
 |
@@ -30,7 +30,7 @@ An Element represents one item within an . An Element is roughly equivalent to a
 
 A complex element is roughly equivalent to a C struct and contains a number of basic or complex Elements. From Java code, a complex element contains a list of sub-elements and names that represents a particular data structure. Structs used in RS scripts are available to Java code by using the`ScriptField_structname`class that is reflected from a particular script.
 
-Basic Elements are comprised of a and a . The DataType encodes C type information of an Element, while the DataKind encodes how that Element should be interpreted by a [android.renderscript.Sampler](../android/renderscript/Sampler.md). Note that objects with DataKind [android.renderscript.Element.DataKind#USER](../android/renderscript/Element.DataKind.md) cannot be used as input for a [android.renderscript.Sampler](../android/renderscript/Sampler.md). In general, objects that are intended for use with a [android.renderscript.Sampler](../android/renderscript/Sampler.md) should use bitmap-derived Elements such as [android.renderscript.Element#RGBA_8888](../android/renderscript/Element.md))or android.renderscript#Element.A_8.
+Basic Elements are comprised of a and a . The DataType encodes C type information of an Element, while the DataKind encodes how that Element should be interpreted by a [android.renderscript.Sampler](Sampler.md). Note that objects with DataKind [android.renderscript.Element.DataKind#USER](../android/renderscript/Element.DataKind.md) cannot be used as input for a [android.renderscript.Sampler](Sampler.md). In general, objects that are intended for use with a [android.renderscript.Sampler](Sampler.md) should use bitmap-derived Elements such as [android.renderscript.Element#RGBA_8888](Element.md))or android.renderscript#Element.A_8.
 |
 | ### Developer Guides
 |
@@ -47,116 +47,116 @@ Basic Elements are comprised of a and a . The DataType encodes C type informatio
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [Element](../android/renderscript/Element.md)! | [ALLOCATION](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
-| openstatic [Element](../android/renderscript/Element.md)! | [A_8](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
-| openstatic [Element](../android/renderscript/Element.md)! | [BOOLEAN](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` Utility function for returning an Element containing a single Boolean. |
+| openstatic [Element](Element.md)! | [ALLOCATION](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [A_8](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [BOOLEAN](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` Utility function for returning an Element containing a single Boolean. |
 | --- | --- |
-| openstatic [Element](../android/renderscript/Element.md)! | [ELEMENT](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
-| openstatic [Element](../android/renderscript/Element.md)! | [F16](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
-| openstatic [Element](../android/renderscript/Element.md)! | [F16_2](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [ELEMENT](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [F16](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [F16_2](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
 | --- | --- |
-| openstatic [Element](../android/renderscript/Element.md)! | [F16_3](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
-| openstatic [Element](../android/renderscript/Element.md)! | [F16_4](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
-| openstatic [Element](../android/renderscript/Element.md)! | [F32](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [F16_3](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [F16_4](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [F32](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
 | --- | --- |
-| openstatic [Element](../android/renderscript/Element.md)! | [F32_2](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
-| openstatic [Element](../android/renderscript/Element.md)! | [F32_3](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
-| openstatic [Element](../android/renderscript/Element.md)! | [F32_4](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [F32_2](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [F32_3](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [F32_4](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
 | --- | --- |
-| openstatic [Element](../android/renderscript/Element.md)! | [F64](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
-| openstatic [Element](../android/renderscript/Element.md)! | [F64_2](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
-| openstatic [Element](../android/renderscript/Element.md)! | [F64_3](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [F64](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [F64_2](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [F64_3](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
 | --- | --- |
-| openstatic [Element](../android/renderscript/Element.md)! | [F64_4](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
-| openstatic [Element](../android/renderscript/Element.md)! | [FONT](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
-| openstatic [Element](../android/renderscript/Element.md)! | [I16](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [F64_4](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [FONT](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [I16](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
 | --- | --- |
-| openstatic [Element](../android/renderscript/Element.md)! | [I16_2](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
-| openstatic [Element](../android/renderscript/Element.md)! | [I16_3](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
-| openstatic [Element](../android/renderscript/Element.md)! | [I16_4](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [I16_2](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [I16_3](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [I16_4](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
 | --- | --- |
-| openstatic [Element](../android/renderscript/Element.md)! | [I32](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
-| openstatic [Element](../android/renderscript/Element.md)! | [I32_2](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
-| openstatic [Element](../android/renderscript/Element.md)! | [I32_3](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [I32](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [I32_2](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [I32_3](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
 | --- | --- |
-| openstatic [Element](../android/renderscript/Element.md)! | [I32_4](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
-| openstatic [Element](../android/renderscript/Element.md)! | [I64](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
-| openstatic [Element](../android/renderscript/Element.md)! | [I64_2](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [I32_4](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [I64](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [I64_2](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
 | --- | --- |
-| openstatic [Element](../android/renderscript/Element.md)! | [I64_3](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
-| openstatic [Element](../android/renderscript/Element.md)! | [I64_4](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
-| openstatic [Element](../android/renderscript/Element.md)! | [I8](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` Utility function for returning an Element containing a single SIGNED_8. |
+| openstatic [Element](Element.md)! | [I64_3](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [I64_4](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [I8](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` Utility function for returning an Element containing a single SIGNED_8. |
 | --- | --- |
-| openstatic [Element](../android/renderscript/Element.md)! | [I8_2](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
-| openstatic [Element](../android/renderscript/Element.md)! | [I8_3](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
-| openstatic [Element](../android/renderscript/Element.md)! | [I8_4](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [I8_2](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [I8_3](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [I8_4](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
 | --- | --- |
-| openstatic [Element](../android/renderscript/Element.md)! | [MATRIX4X4](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
-| openstatic [Element](../android/renderscript/Element.md)! | [MATRIX_2X2](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
-| openstatic [Element](../android/renderscript/Element.md)! | [MATRIX_3X3](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [MATRIX4X4](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [MATRIX_2X2](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [MATRIX_3X3](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
 | --- | --- |
-| openstatic [Element](../android/renderscript/Element.md)! | [MATRIX_4X4](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
-| openstatic [Element](../android/renderscript/Element.md)! | [MESH](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
-| openstatic [Element](../android/renderscript/Element.md)! | [PROGRAM_FRAGMENT](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [MATRIX_4X4](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [MESH](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [PROGRAM_FRAGMENT](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
 | --- | --- |
-| openstatic [Element](../android/renderscript/Element.md)! | [PROGRAM_RASTER](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
-| openstatic [Element](../android/renderscript/Element.md)! | [PROGRAM_STORE](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
-| openstatic [Element](../android/renderscript/Element.md)! | [PROGRAM_VERTEX](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [PROGRAM_RASTER](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [PROGRAM_STORE](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [PROGRAM_VERTEX](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
 | --- | --- |
-| openstatic [Element](../android/renderscript/Element.md)! | [RGBA_4444](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
-| openstatic [Element](../android/renderscript/Element.md)! | [RGBA_5551](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
-| openstatic [Element](../android/renderscript/Element.md)! | [RGBA_8888](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [RGBA_4444](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [RGBA_5551](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [RGBA_8888](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
 | --- | --- |
-| openstatic [Element](../android/renderscript/Element.md)! | [RGB_565](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
-| openstatic [Element](../android/renderscript/Element.md)! | [RGB_888](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
-| openstatic [Element](../android/renderscript/Element.md)! | [SAMPLER](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [RGB_565](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [RGB_888](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [SAMPLER](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
 | --- | --- |
-| openstatic [Element](../android/renderscript/Element.md)! | [SCRIPT](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
-| openstatic [Element](../android/renderscript/Element.md)! | [TYPE](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
-| openstatic [Element](../android/renderscript/Element.md)! | [U16](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [SCRIPT](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [TYPE](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [U16](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
 | --- | --- |
-| openstatic [Element](../android/renderscript/Element.md)! | [U16_2](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
-| openstatic [Element](../android/renderscript/Element.md)! | [U16_3](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
-| openstatic [Element](../android/renderscript/Element.md)! | [U16_4](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [U16_2](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [U16_3](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [U16_4](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
 | --- | --- |
-| openstatic [Element](../android/renderscript/Element.md)! | [U32](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
-| openstatic [Element](../android/renderscript/Element.md)! | [U32_2](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
-| openstatic [Element](../android/renderscript/Element.md)! | [U32_3](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [U32](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [U32_2](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [U32_3](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
 | --- | --- |
-| openstatic [Element](../android/renderscript/Element.md)! | [U32_4](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
-| openstatic [Element](../android/renderscript/Element.md)! | [U64](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
-| openstatic [Element](../android/renderscript/Element.md)! | [U64_2](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [U32_4](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [U64](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [U64_2](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
 | --- | --- |
-| openstatic [Element](../android/renderscript/Element.md)! | [U64_3](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
-| openstatic [Element](../android/renderscript/Element.md)! | [U64_4](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
-| openstatic [Element](../android/renderscript/Element.md)! | [U8](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` Utility function for returning an Element containing a single UNSIGNED_8. |
+| openstatic [Element](Element.md)! | [U64_3](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [U64_4](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [U8](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` Utility function for returning an Element containing a single UNSIGNED_8. |
 | --- | --- |
-| openstatic [Element](../android/renderscript/Element.md)! | [U8_2](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
-| openstatic [Element](../android/renderscript/Element.md)! | [U8_3](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
-| openstatic [Element](../android/renderscript/Element.md)! | [U8_4](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [U8_2](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [U8_3](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [U8_4](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
 | --- | --- |
-| openstatic [Element](../android/renderscript/Element.md)! | [YUV](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` <br /> |
-| openstatic [Element](../android/renderscript/Element.md)! | [createPixel](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`, `dt:` ` [Element.DataType](../android/renderscript/Element.DataType.md)!`, `dk:` ` [Element.DataKind](../android/renderscript/Element.DataKind.md)!`)` Create a new pixel Element type. |
-| openstatic [Element](../android/renderscript/Element.md)! | [createVector](../android/renderscript/Element.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`, `dt:` ` [Element.DataType](../android/renderscript/Element.DataType.md)!`, `size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a custom vector element of the specified DataType and vector size. |
+| openstatic [Element](Element.md)! | [YUV](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` <br /> |
+| openstatic [Element](Element.md)! | [createPixel](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`, `dt:` ` [Element.DataType](../android/renderscript/Element.DataType.md)!`, `dk:` ` [Element.DataKind](../android/renderscript/Element.DataKind.md)!`)` Create a new pixel Element type. |
+| openstatic [Element](Element.md)! | [createVector](Element.md))`(`rs:` ` [RenderScript](RenderScript.md)!`, `dt:` ` [Element.DataType](../android/renderscript/Element.DataType.md)!`, `size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a custom vector element of the specified DataType and vector size. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBytesSize](../android/renderscript/Element.md))`()` <br /> |
-| open [Element.DataKind](../android/renderscript/Element.DataKind.md)! | [getDataKind](../android/renderscript/Element.md))`()` <br /> |
-| open [Element.DataType](../android/renderscript/Element.DataType.md)! | [getDataType](../android/renderscript/Element.md))`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBytesSize](Element.md))`()` <br /> |
+| open [Element.DataKind](../android/renderscript/Element.DataKind.md)! | [getDataKind](Element.md))`()` <br /> |
+| open [Element.DataType](../android/renderscript/Element.DataType.md)! | [getDataType](Element.md))`()` <br /> |
 | --- | --- |
-| open [Element](../android/renderscript/Element.md)! | [getSubElement](../android/renderscript/Element.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` For complex elements, this function will return the sub-element at index |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSubElementArraySize](../android/renderscript/Element.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` For complex elements, some sub-elements could be statically sized arrays. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSubElementCount](../android/renderscript/Element.md))`()` Elements could be simple, such as an int or a float, or a structure with multiple sub elements, such as a collection of floats, float2, float4. |
+| open [Element](Element.md)! | [getSubElement](Element.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` For complex elements, this function will return the sub-element at index |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSubElementArraySize](Element.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` For complex elements, some sub-elements could be statically sized arrays. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSubElementCount](Element.md))`()` Elements could be simple, such as an int or a float, or a structure with multiple sub elements, such as a collection of floats, float2, float4. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSubElementName](../android/renderscript/Element.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` For complex elements, this function will return the sub-element name at index |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSubElementOffsetBytes](../android/renderscript/Element.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` This function specifies the location of a sub-element within the element |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getVectorSize](../android/renderscript/Element.md))`()` Returns the number of vector components. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSubElementName](Element.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` For complex elements, this function will return the sub-element name at index |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSubElementOffsetBytes](Element.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` This function specifies the location of a sub-element within the element |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getVectorSize](Element.md))`()` Returns the number of vector components. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isCompatible](../android/renderscript/Element.md))`(`e:` ` [Element](../android/renderscript/Element.md)!`)` Check if the current Element is compatible with another Element. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isComplex](../android/renderscript/Element.md))`()` Return if a element is too complex for use as a data source for a Mesh or a Program. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isCompatible](Element.md))`(`e:` ` [Element](Element.md)!`)` Check if the current Element is compatible with another Element. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isComplex](Element.md))`()` Return if a element is too complex for use as a data source for a Mesh or a Program. |
 
 | Inherited functions ||
 |---|---|
-| From class [BaseObj](../android/renderscript/BaseObj.md) |------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [destroy](../android/renderscript/BaseObj.md))`()` <br /> Frees any native resources associated with this object. The primary use is to force immediate cleanup of resources when it is believed the GC will not respond quickly enough. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/renderscript/BaseObj.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> Compare the current BaseObj with another BaseObj for equality. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](../android/renderscript/BaseObj.md))`()` <br /> | | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](../android/renderscript/BaseObj.md))`()` <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/renderscript/BaseObj.md))`()` <br /> Calculates the hash code value for a BaseObj. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setName](../android/renderscript/BaseObj.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> setName assigns a name to an object. This object can later be looked up by this name. <br /> | ||
+| From class [BaseObj](BaseObj.md) |------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [destroy](BaseObj.md))`()` <br /> Frees any native resources associated with this object. The primary use is to force immediate cleanup of resources when it is believed the GC will not respond quickly enough. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](BaseObj.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> Compare the current BaseObj with another BaseObj for equality. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](BaseObj.md))`()` <br /> | | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](BaseObj.md))`()` <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](BaseObj.md))`()` <br /> Calculates the hash code value for a BaseObj. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setName](BaseObj.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> setName assigns a name to an object. This object can later be looked up by this name. <br /> | ||
 
 ## Public methods
 
@@ -194,11 +194,11 @@ Utility function for returning an Element containing a single Boolean.
 
 | Parameters ||
 |------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| `rs` | [RenderScript](../android/renderscript/RenderScript.md)!:Context to which the element will belong. |
+| `rs` | [RenderScript](RenderScript.md)!:Context to which the element will belong. |
 
 | Return ||
 |------------------------------------------------------------------------------------------|---------|
-| [Element](../android/renderscript/Element.md)! | Element |
+| [Element](Element.md)! | Element |
 
 ### ELEMENT
 
@@ -491,11 +491,11 @@ Utility function for returning an Element containing a single SIGNED_8.
 
 | Parameters ||
 |------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| `rs` | [RenderScript](../android/renderscript/RenderScript.md)!:Context to which the element will belong. |
+| `rs` | [RenderScript](RenderScript.md)!:Context to which the element will belong. |
 
 | Return ||
 |------------------------------------------------------------------------------------------|---------|
-| [Element](../android/renderscript/Element.md)! | Element |
+| [Element](Element.md)! | Element |
 
 ### I8_2
 
@@ -844,11 +844,11 @@ Utility function for returning an Element containing a single UNSIGNED_8.
 
 | Parameters ||
 |------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| `rs` | [RenderScript](../android/renderscript/RenderScript.md)!:Context to which the element will belong. |
+| `rs` | [RenderScript](RenderScript.md)!:Context to which the element will belong. |
 
 | Return ||
 |------------------------------------------------------------------------------------------|---------|
-| [Element](../android/renderscript/Element.md)! | Element |
+| [Element](Element.md)! | Element |
 
 ### U8_2
 
@@ -911,14 +911,14 @@ Create a new pixel Element type. A matching DataType and DataKind must be provid
 
 | Parameters ||
 |------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `rs` | [RenderScript](../android/renderscript/RenderScript.md)!:The context associated with the new Element. |
+| `rs` | [RenderScript](RenderScript.md)!:The context associated with the new Element. |
 | `dt` | [Element.DataType](../android/renderscript/Element.DataType.md)!:The DataType for the new element. |
 | `dk` | [Element.DataKind](../android/renderscript/Element.DataKind.md)!:The DataKind to specify the mapping of each component in the DataType. |
 | --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------------|---------|
-| [Element](../android/renderscript/Element.md)! | Element |
+| [Element](Element.md)! | Element |
 
 ### createVector
 
@@ -938,14 +938,14 @@ Create a custom vector element of the specified DataType and vector size. DataKi
 
 | Parameters ||
 |--------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| `rs` | [RenderScript](../android/renderscript/RenderScript.md)!:The context associated with the new Element. |
+| `rs` | [RenderScript](RenderScript.md)!:The context associated with the new Element. |
 | `dt` | [Element.DataType](../android/renderscript/Element.DataType.md)!:The DataType for the new Element. |
 | `size` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Vector size for the new Element. Range 2-4 inclusive supported. |
 | --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------------|---------|
-| [Element](../android/renderscript/Element.md)! | Element |
+| [Element](Element.md)! | Element |
 
 ### getBytesSize
 
@@ -1011,7 +1011,7 @@ For complex elements, this function will return the sub-element at index
 
 | Return ||
 |------------------------------------------------------------------------------------------|--------------------------------------------|
-| [Element](../android/renderscript/Element.md)! | sub-element in this element at given index |
+| [Element](Element.md)! | sub-element in this element at given index |
 
 ### getSubElementArraySize
 
@@ -1125,7 +1125,7 @@ Check if the current Element is compatible with another Element. Primitive Eleme
 
 | Parameters ||
 |-----|-----------------------------------------------------------------------------------------------------------------------------------|
-| `e` | [Element](../android/renderscript/Element.md)!:The Element to check compatibility with. |
+| `e` | [Element](Element.md)!:The Element to check compatibility with. |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------------|

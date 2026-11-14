@@ -10,7 +10,7 @@ class AdFilters : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.adservices.common.AdFilters](../android/adservices/common/AdFilters.md) |
+| ↳ | [android.adservices.common.AdFilters](AdFilters.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 37.**
@@ -35,9 +35,9 @@ If any of the filters in an `https://developer.android.com/reference/kotlin/andr
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/common/AdFilters#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/common/AdFilters#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Checks whether the `https://developer.android.com/reference/kotlin/android/adservices/common/AdFilters#` objects represent the same set of filters. |
-| [AppInstallFilters](../android/adservices/common/AppInstallFilters.md)? | `https://developer.android.com/reference/kotlin/android/adservices/common/AdFilters#getAppInstallFilters()()` Gets the `https://developer.android.com/reference/kotlin/android/adservices/common/AppInstallFilters` instance that represents all app install filters for the ad. |
+| [AppInstallFilters](AppInstallFilters.md)? | `https://developer.android.com/reference/kotlin/android/adservices/common/AdFilters#getAppInstallFilters()()` Gets the `https://developer.android.com/reference/kotlin/android/adservices/common/AppInstallFilters` instance that represents all app install filters for the ad. |
 | --- | --- |
-| [FrequencyCapFilters](../android/adservices/common/FrequencyCapFilters.md)? | `https://developer.android.com/reference/kotlin/android/adservices/common/AdFilters#getFrequencyCapFilters()()` Gets the `https://developer.android.com/reference/kotlin/android/adservices/common/FrequencyCapFilters` instance that represents all frequency cap filters for the ad. |
+| [FrequencyCapFilters](FrequencyCapFilters.md)? | `https://developer.android.com/reference/kotlin/android/adservices/common/AdFilters#getFrequencyCapFilters()()` Gets the `https://developer.android.com/reference/kotlin/android/adservices/common/FrequencyCapFilters` instance that represents all frequency cap filters for the ad. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/common/AdFilters#hashCode()()` Returns the hash of the `https://developer.android.com/reference/kotlin/android/adservices/common/AdFilters#` object's data. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/common/AdFilters#toString()()` Returns a string representation of the object. |
 | --- | --- |
@@ -45,7 +45,7 @@ If any of the filters in an `https://developer.android.com/reference/kotlin/andr
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [AdFilters](../android/adservices/common/AdFilters.md)!\> | `https://developer.android.com/reference/kotlin/android/adservices/common/AdFilters#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [AdFilters](AdFilters.md)!\> | `https://developer.android.com/reference/kotlin/android/adservices/common/AdFilters#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public methods
 
@@ -171,7 +171,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

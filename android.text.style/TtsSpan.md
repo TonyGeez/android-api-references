@@ -2,7 +2,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 
 # TtsSpan
 
-Kotlin | [Java](../android/text/style/TtsSpan.md)
+Kotlin | [Java](TtsSpan.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ open class TtsSpan : ParcelableSpan
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.text.style.TtsSpan](../android/text/style/TtsSpan.md) |
+| ↳ | [android.text.style.TtsSpan](TtsSpan.md) |
 
 A span that supplies additional meta-data for the associated text intended for text-to-speech engines. If the text is being processed by a text-to-speech engine, the engine may use the data in this span in addition to or instead of its associated text. Each instance of a TtsSpan has a type, for example `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#TYPE_DATE:kotlin.String` or `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#TYPE_MEASURE:kotlin.String`. And a list of arguments, provided as key-value pairs in a bundle. The inner classes are there for convenience and provide builders for each TtsSpan type.
 
@@ -161,7 +161,7 @@ A span that supplies additional meta-data for the associated text intended for t
 | Public methods ||
 |---|---|
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| open [PersistableBundle](../android/os/PersistableBundle.md)! | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#getArgs()()` Returns a bundle of the arguments set. |
+| open [PersistableBundle](../android.os/PersistableBundle.md)! | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#getArgs()()` Returns a bundle of the arguments set. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#getSpanTypeId()()` Return a special type identifier for this span class. |
 | --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/text/style/TtsSpan#getType()()` Returns the type. |
@@ -1172,5 +1172,5 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |

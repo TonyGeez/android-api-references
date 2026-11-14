@@ -8,11 +8,11 @@ abstract class VoiceInteractionSessionService : Service
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](../android/content/Context.md) ||||
-| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) |||
-| | | ↳ | [android.app.Service](../android/app/Service.md) ||
+| ↳ | [android.content.Context](../android.content/Context.md) ||||
+| | ↳ | [android.content.ContextWrapper](../android.content/ContextWrapper.md) |||
+| | | ↳ | [android.app.Service](../android.app/Service.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.service.voice.VoiceInteractionSessionService](../android/service/voice/VoiceInteractionSessionService.md) |
+| | | | ↳ | [android.service.voice.VoiceInteractionSessionService](VoiceInteractionSessionService.md) |
 
 An active voice interaction session, initiated by a `https://developer.android.com/reference/kotlin/android/service/voice/VoiceInteractionService`.
 
@@ -1041,12 +1041,12 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 
 | Public methods ||
 |---|---|
-| open [IBinder](../android/os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/service/voice/VoiceInteractionSessionService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
+| open [IBinder](../android.os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/service/voice/VoiceInteractionSessionService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/voice/VoiceInteractionSessionService#onConfigurationChanged(android.content.res.Configuration)(newConfig: https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#)` Called by the system when the device configuration changes while your component is running. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/voice/VoiceInteractionSessionService#onCreate()()` Called by the system when the service is first created. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/voice/VoiceInteractionSessionService#onLowMemory()()` This is called when the overall system is running low on memory, and actively running processes should trim their memory usage. |
-| abstract [VoiceInteractionSession](../android/service/voice/VoiceInteractionSession.md)! | `https://developer.android.com/reference/kotlin/android/service/voice/VoiceInteractionSessionService#onNewSession(android.os.Bundle)(args: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` <br /> |
+| abstract [VoiceInteractionSession](VoiceInteractionSession.md)! | `https://developer.android.com/reference/kotlin/android/service/voice/VoiceInteractionSessionService#onNewSession(android.os.Bundle)(args: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/voice/VoiceInteractionSessionService#onTrimMemory(kotlin.Int)(level: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called when the operating system has determined that it is a good time for a process to trim unneeded memory from its process. |
 | --- | --- |
 
@@ -2733,7 +2733,7 @@ Return the communication channel to the service. May return null if clients can 
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
+| `intent` | [Intent](../android.content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
 
 | Return ||
 |---|---|
@@ -2755,7 +2755,7 @@ For more information, read [Handling Runtime Changes](https://developer.android.
 
 | Parameters ||
 |---|---|
-| `newConfig` | [Configuration](../android/content/res/Configuration.md): The new device configuration. This value cannot be `null`. |
+| `newConfig` | [Configuration](../android.content.res/Configuration.md): The new device configuration. This value cannot be `null`. |
 
 ### onCreate
 
@@ -2819,7 +2819,7 @@ Print the Service's state into the given stream. This gets invoked if you run "a
 
 | Parameters ||
 |---|---|
-| `fd` | [FileDescriptor](../java/io/FileDescriptor.md)!: The raw file descriptor that the dump is being sent to. |
-| `writer` | [PrintWriter](../java/io/PrintWriter.md)!: The PrintWriter to which you should dump your state. This will be closed for you after you return. |
+| `fd` | [FileDescriptor](../java.io/FileDescriptor.md)!: The raw file descriptor that the dump is being sent to. |
+| `writer` | [PrintWriter](../java.io/PrintWriter.md)!: The PrintWriter to which you should dump your state. This will be closed for you after you return. |
 | `args` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!: additional arguments to the dump request. |
 | --- | --- |

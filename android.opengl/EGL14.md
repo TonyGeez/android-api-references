@@ -4,7 +4,7 @@ Added in [API level 17](https://developer.android.com/guide/topics/manifest/uses
 
 # EGL14
 
-Kotlin| [Java](../android/opengl/EGL14.md) 
+Kotlin| [Java](EGL14.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class EGL14
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.opengl.EGL14](../android/opengl/EGL14.md) |
+| ↳ | [android.opengl.EGL14](EGL14.md) |
 
 EGL 1.4
 
@@ -21,211 +21,211 @@ EGL 1.4
 
 | Constants ||
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_ALPHA_MASK_SIZE](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_ALPHA_SIZE](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BACK_BUFFER](../android/opengl/EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_ALPHA_MASK_SIZE](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_ALPHA_SIZE](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BACK_BUFFER](EGL14.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BAD_ACCESS](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BAD_ALLOC](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BAD_ATTRIBUTE](../android/opengl/EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BAD_ACCESS](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BAD_ALLOC](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BAD_ATTRIBUTE](EGL14.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BAD_CONFIG](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BAD_CONTEXT](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BAD_CURRENT_SURFACE](../android/opengl/EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BAD_CONFIG](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BAD_CONTEXT](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BAD_CURRENT_SURFACE](EGL14.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BAD_DISPLAY](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BAD_MATCH](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BAD_NATIVE_PIXMAP](../android/opengl/EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BAD_DISPLAY](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BAD_MATCH](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BAD_NATIVE_PIXMAP](EGL14.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BAD_NATIVE_WINDOW](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BAD_PARAMETER](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BAD_SURFACE](../android/opengl/EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BAD_NATIVE_WINDOW](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BAD_PARAMETER](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BAD_SURFACE](EGL14.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BIND_TO_TEXTURE_RGB](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BIND_TO_TEXTURE_RGBA](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BLUE_SIZE](../android/opengl/EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BIND_TO_TEXTURE_RGB](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BIND_TO_TEXTURE_RGBA](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BLUE_SIZE](EGL14.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BUFFER_DESTROYED](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BUFFER_PRESERVED](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BUFFER_SIZE](../android/opengl/EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BUFFER_DESTROYED](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BUFFER_PRESERVED](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BUFFER_SIZE](EGL14.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_CLIENT_APIS](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_COLOR_BUFFER_TYPE](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_CONFIG_CAVEAT](../android/opengl/EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_CLIENT_APIS](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_COLOR_BUFFER_TYPE](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_CONFIG_CAVEAT](EGL14.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_CONFIG_ID](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_CONFORMANT](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_CONTEXT_CLIENT_TYPE](../android/opengl/EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_CONFIG_ID](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_CONFORMANT](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_CONTEXT_CLIENT_TYPE](EGL14.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_CONTEXT_CLIENT_VERSION](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_CONTEXT_LOST](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_CORE_NATIVE_ENGINE](../android/opengl/EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_CONTEXT_CLIENT_VERSION](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_CONTEXT_LOST](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_CORE_NATIVE_ENGINE](EGL14.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_DEFAULT_DISPLAY](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_DEPTH_SIZE](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_DISPLAY_SCALING](../android/opengl/EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_DEFAULT_DISPLAY](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_DEPTH_SIZE](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_DISPLAY_SCALING](EGL14.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_DRAW](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_EXTENSIONS](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_FALSE](../android/opengl/EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_DRAW](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_EXTENSIONS](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_FALSE](EGL14.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_GREEN_SIZE](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_HEIGHT](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_HORIZONTAL_RESOLUTION](../android/opengl/EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_GREEN_SIZE](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_HEIGHT](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_HORIZONTAL_RESOLUTION](EGL14.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_LARGEST_PBUFFER](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_LEVEL](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_LUMINANCE_BUFFER](../android/opengl/EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_LARGEST_PBUFFER](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_LEVEL](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_LUMINANCE_BUFFER](EGL14.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_LUMINANCE_SIZE](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_MATCH_NATIVE_PIXMAP](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_MAX_PBUFFER_HEIGHT](../android/opengl/EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_LUMINANCE_SIZE](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_MATCH_NATIVE_PIXMAP](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_MAX_PBUFFER_HEIGHT](EGL14.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_MAX_PBUFFER_PIXELS](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_MAX_PBUFFER_WIDTH](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_MAX_SWAP_INTERVAL](../android/opengl/EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_MAX_PBUFFER_PIXELS](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_MAX_PBUFFER_WIDTH](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_MAX_SWAP_INTERVAL](EGL14.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_MIN_SWAP_INTERVAL](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_MIPMAP_LEVEL](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_MIPMAP_TEXTURE](../android/opengl/EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_MIN_SWAP_INTERVAL](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_MIPMAP_LEVEL](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_MIPMAP_TEXTURE](EGL14.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_MULTISAMPLE_RESOLVE](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_MULTISAMPLE_RESOLVE_BOX](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_MULTISAMPLE_RESOLVE_BOX_BIT](../android/opengl/EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_MULTISAMPLE_RESOLVE](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_MULTISAMPLE_RESOLVE_BOX](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_MULTISAMPLE_RESOLVE_BOX_BIT](EGL14.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_MULTISAMPLE_RESOLVE_DEFAULT](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_NATIVE_RENDERABLE](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_NATIVE_VISUAL_ID](../android/opengl/EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_MULTISAMPLE_RESOLVE_DEFAULT](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_NATIVE_RENDERABLE](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_NATIVE_VISUAL_ID](EGL14.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_NATIVE_VISUAL_TYPE](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_NONE](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_NON_CONFORMANT_CONFIG](../android/opengl/EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_NATIVE_VISUAL_TYPE](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_NONE](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_NON_CONFORMANT_CONFIG](EGL14.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_NOT_INITIALIZED](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_NO_TEXTURE](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_OPENGL_API](../android/opengl/EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_NOT_INITIALIZED](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_NO_TEXTURE](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_OPENGL_API](EGL14.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_OPENGL_BIT](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_OPENGL_ES2_BIT](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_OPENGL_ES_API](../android/opengl/EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_OPENGL_BIT](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_OPENGL_ES2_BIT](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_OPENGL_ES_API](EGL14.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_OPENGL_ES_BIT](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_OPENVG_API](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_OPENVG_BIT](../android/opengl/EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_OPENGL_ES_BIT](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_OPENVG_API](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_OPENVG_BIT](EGL14.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_OPENVG_IMAGE](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_PBUFFER_BIT](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_PIXEL_ASPECT_RATIO](../android/opengl/EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_OPENVG_IMAGE](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_PBUFFER_BIT](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_PIXEL_ASPECT_RATIO](EGL14.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_PIXMAP_BIT](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_READ](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_RED_SIZE](../android/opengl/EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_PIXMAP_BIT](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_READ](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_RED_SIZE](EGL14.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_RENDERABLE_TYPE](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_RENDER_BUFFER](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_RGB_BUFFER](../android/opengl/EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_RENDERABLE_TYPE](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_RENDER_BUFFER](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_RGB_BUFFER](EGL14.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_SAMPLES](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_SAMPLE_BUFFERS](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_SINGLE_BUFFER](../android/opengl/EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_SAMPLES](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_SAMPLE_BUFFERS](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_SINGLE_BUFFER](EGL14.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_SLOW_CONFIG](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_STENCIL_SIZE](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_SUCCESS](../android/opengl/EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_SLOW_CONFIG](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_STENCIL_SIZE](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_SUCCESS](EGL14.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_SURFACE_TYPE](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_SWAP_BEHAVIOR](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_SWAP_BEHAVIOR_PRESERVED_BIT](../android/opengl/EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_SURFACE_TYPE](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_SWAP_BEHAVIOR](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_SWAP_BEHAVIOR_PRESERVED_BIT](EGL14.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_TEXTURE_2D](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_TEXTURE_FORMAT](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_TEXTURE_RGB](../android/opengl/EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_TEXTURE_2D](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_TEXTURE_FORMAT](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_TEXTURE_RGB](EGL14.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_TEXTURE_RGBA](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_TEXTURE_TARGET](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_TRANSPARENT_BLUE_VALUE](../android/opengl/EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_TEXTURE_RGBA](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_TEXTURE_TARGET](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_TRANSPARENT_BLUE_VALUE](EGL14.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_TRANSPARENT_GREEN_VALUE](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_TRANSPARENT_RED_VALUE](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_TRANSPARENT_RGB](../android/opengl/EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_TRANSPARENT_GREEN_VALUE](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_TRANSPARENT_RED_VALUE](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_TRANSPARENT_RGB](EGL14.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_TRANSPARENT_TYPE](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_TRUE](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_VENDOR](../android/opengl/EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_TRANSPARENT_TYPE](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_TRUE](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_VENDOR](EGL14.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_VERSION](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_VERTICAL_RESOLUTION](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_VG_ALPHA_FORMAT](../android/opengl/EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_VERSION](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_VERTICAL_RESOLUTION](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_VG_ALPHA_FORMAT](EGL14.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_VG_ALPHA_FORMAT_NONPRE](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_VG_ALPHA_FORMAT_PRE](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_VG_ALPHA_FORMAT_PRE_BIT](../android/opengl/EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_VG_ALPHA_FORMAT_NONPRE](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_VG_ALPHA_FORMAT_PRE](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_VG_ALPHA_FORMAT_PRE_BIT](EGL14.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_VG_COLORSPACE](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_VG_COLORSPACE_LINEAR](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_VG_COLORSPACE_LINEAR_BIT](../android/opengl/EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_VG_COLORSPACE](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_VG_COLORSPACE_LINEAR](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_VG_COLORSPACE_LINEAR_BIT](EGL14.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_VG_COLORSPACE_sRGB](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_WIDTH](../android/opengl/EGL14.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_WINDOW_BIT](../android/opengl/EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_VG_COLORSPACE_sRGB](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_WIDTH](EGL14.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_WINDOW_BIT](EGL14.md) <br /> |
 | --- | --- |
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------|---|
-| [EGL14](../android/opengl/EGL14.md))`()` <br /> |
+| [EGL14](EGL14.md))`()` <br /> |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglBindAPI](../android/opengl/EGL14.md))`(`api:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglBindTexImage](../android/opengl/EGL14.md))`(`dpy:` ` [EGLDisplay](../android/opengl/EGLDisplay.md)!`, `surface:` ` [EGLSurface](../android/opengl/EGLSurface.md)!`, `buffer:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglChooseConfig](../android/opengl/EGL14.md))`(`dpy:` ` [EGLDisplay](../android/opengl/EGLDisplay.md)!`, `attrib_list:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `attrib_listOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `configs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [EGLConfig](../android/opengl/EGLConfig.md)!>!`, `configsOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `config_size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `num_config:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `num_configOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglBindAPI](EGL14.md))`(`api:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglBindTexImage](EGL14.md))`(`dpy:` ` [EGLDisplay](EGLDisplay.md)!`, `surface:` ` [EGLSurface](EGLSurface.md)!`, `buffer:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglChooseConfig](EGL14.md))`(`dpy:` ` [EGLDisplay](EGLDisplay.md)!`, `attrib_list:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `attrib_listOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `configs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [EGLConfig](EGLConfig.md)!>!`, `configsOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `config_size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `num_config:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `num_configOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglCopyBuffers](../android/opengl/EGL14.md))`(`dpy:` ` [EGLDisplay](../android/opengl/EGLDisplay.md)!`, `surface:` ` [EGLSurface](../android/opengl/EGLSurface.md)!`, `target:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| openstatic [EGLContext](../android/opengl/EGLContext.md)! | [eglCreateContext](../android/opengl/EGL14.md))`(`dpy:` ` [EGLDisplay](../android/opengl/EGLDisplay.md)!`, `config:` ` [EGLConfig](../android/opengl/EGLConfig.md)!`, `share_context:` ` [EGLContext](../android/opengl/EGLContext.md)!`, `attrib_list:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| openstatic [EGLSurface](../android/opengl/EGLSurface.md)! | [eglCreatePbufferFromClientBuffer](../android/opengl/EGL14.md))`(`dpy:` ` [EGLDisplay](../android/opengl/EGLDisplay.md)!`, `buftype:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `buffer:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `config:` ` [EGLConfig](../android/opengl/EGLConfig.md)!`, `attrib_list:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglCopyBuffers](EGL14.md))`(`dpy:` ` [EGLDisplay](EGLDisplay.md)!`, `surface:` ` [EGLSurface](EGLSurface.md)!`, `target:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| openstatic [EGLContext](EGLContext.md)! | [eglCreateContext](EGL14.md))`(`dpy:` ` [EGLDisplay](EGLDisplay.md)!`, `config:` ` [EGLConfig](EGLConfig.md)!`, `share_context:` ` [EGLContext](EGLContext.md)!`, `attrib_list:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| openstatic [EGLSurface](EGLSurface.md)! | [eglCreatePbufferFromClientBuffer](EGL14.md))`(`dpy:` ` [EGLDisplay](EGLDisplay.md)!`, `buftype:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `buffer:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `config:` ` [EGLConfig](EGLConfig.md)!`, `attrib_list:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
-| openstatic [EGLSurface](../android/opengl/EGLSurface.md)! | [eglCreatePbufferSurface](../android/opengl/EGL14.md))`(`dpy:` ` [EGLDisplay](../android/opengl/EGLDisplay.md)!`, `config:` ` [EGLConfig](../android/opengl/EGLConfig.md)!`, `attrib_list:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| openstatic [EGLSurface](../android/opengl/EGLSurface.md)! | [eglCreatePixmapSurface](../android/opengl/EGL14.md))`(`dpy:` ` [EGLDisplay](../android/opengl/EGLDisplay.md)!`, `config:` ` [EGLConfig](../android/opengl/EGLConfig.md)!`, `pixmap:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `attrib_list:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| openstatic [EGLSurface](../android/opengl/EGLSurface.md)! | [eglCreateWindowSurface](../android/opengl/EGL14.md))`(`dpy:` ` [EGLDisplay](../android/opengl/EGLDisplay.md)!`, `config:` ` [EGLConfig](../android/opengl/EGLConfig.md)!`, `win:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `attrib_list:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| openstatic [EGLSurface](EGLSurface.md)! | [eglCreatePbufferSurface](EGL14.md))`(`dpy:` ` [EGLDisplay](EGLDisplay.md)!`, `config:` ` [EGLConfig](EGLConfig.md)!`, `attrib_list:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| openstatic [EGLSurface](EGLSurface.md)! | [eglCreatePixmapSurface](EGL14.md))`(`dpy:` ` [EGLDisplay](EGLDisplay.md)!`, `config:` ` [EGLConfig](EGLConfig.md)!`, `pixmap:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `attrib_list:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| openstatic [EGLSurface](EGLSurface.md)! | [eglCreateWindowSurface](EGL14.md))`(`dpy:` ` [EGLDisplay](EGLDisplay.md)!`, `config:` ` [EGLConfig](EGLConfig.md)!`, `win:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `attrib_list:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglDestroyContext](../android/opengl/EGL14.md))`(`dpy:` ` [EGLDisplay](../android/opengl/EGLDisplay.md)!`, `ctx:` ` [EGLContext](../android/opengl/EGLContext.md)!`)` <br /> |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglDestroySurface](../android/opengl/EGL14.md))`(`dpy:` ` [EGLDisplay](../android/opengl/EGLDisplay.md)!`, `surface:` ` [EGLSurface](../android/opengl/EGLSurface.md)!`)` <br /> |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglGetConfigAttrib](../android/opengl/EGL14.md))`(`dpy:` ` [EGLDisplay](../android/opengl/EGLDisplay.md)!`, `config:` ` [EGLConfig](../android/opengl/EGLConfig.md)!`, `attribute:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglDestroyContext](EGL14.md))`(`dpy:` ` [EGLDisplay](EGLDisplay.md)!`, `ctx:` ` [EGLContext](EGLContext.md)!`)` <br /> |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglDestroySurface](EGL14.md))`(`dpy:` ` [EGLDisplay](EGLDisplay.md)!`, `surface:` ` [EGLSurface](EGLSurface.md)!`)` <br /> |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglGetConfigAttrib](EGL14.md))`(`dpy:` ` [EGLDisplay](EGLDisplay.md)!`, `config:` ` [EGLConfig](EGLConfig.md)!`, `attribute:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglGetConfigs](../android/opengl/EGL14.md))`(`dpy:` ` [EGLDisplay](../android/opengl/EGLDisplay.md)!`, `configs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [EGLConfig](../android/opengl/EGLConfig.md)!>!`, `configsOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `config_size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `num_config:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `num_configOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| openstatic [EGLContext](../android/opengl/EGLContext.md)! | [eglGetCurrentContext](../android/opengl/EGL14.md))`()` <br /> |
-| openstatic [EGLDisplay](../android/opengl/EGLDisplay.md)! | [eglGetCurrentDisplay](../android/opengl/EGL14.md))`()` <br /> |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglGetConfigs](EGL14.md))`(`dpy:` ` [EGLDisplay](EGLDisplay.md)!`, `configs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [EGLConfig](EGLConfig.md)!>!`, `configsOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `config_size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `num_config:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `num_configOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| openstatic [EGLContext](EGLContext.md)! | [eglGetCurrentContext](EGL14.md))`()` <br /> |
+| openstatic [EGLDisplay](EGLDisplay.md)! | [eglGetCurrentDisplay](EGL14.md))`()` <br /> |
 | --- | --- |
-| openstatic [EGLSurface](../android/opengl/EGLSurface.md)! | [eglGetCurrentSurface](../android/opengl/EGL14.md))`(`readdraw:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| openstatic [EGLDisplay](../android/opengl/EGLDisplay.md)! | [eglGetDisplay](../android/opengl/EGL14.md))`(`display_id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [eglGetError](../android/opengl/EGL14.md))`()` <br /> |
+| openstatic [EGLSurface](EGLSurface.md)! | [eglGetCurrentSurface](EGL14.md))`(`readdraw:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| openstatic [EGLDisplay](EGLDisplay.md)! | [eglGetDisplay](EGL14.md))`(`display_id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [eglGetError](EGL14.md))`()` <br /> |
 | --- | --- |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglInitialize](../android/opengl/EGL14.md))`(`dpy:` ` [EGLDisplay](../android/opengl/EGLDisplay.md)!`, `major:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `majorOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `minor:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `minorOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglMakeCurrent](../android/opengl/EGL14.md))`(`dpy:` ` [EGLDisplay](../android/opengl/EGLDisplay.md)!`, `draw:` ` [EGLSurface](../android/opengl/EGLSurface.md)!`, `read:` ` [EGLSurface](../android/opengl/EGLSurface.md)!`, `ctx:` ` [EGLContext](../android/opengl/EGLContext.md)!`)` <br /> |
-| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [eglQueryAPI](../android/opengl/EGL14.md))`()` <br /> |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglInitialize](EGL14.md))`(`dpy:` ` [EGLDisplay](EGLDisplay.md)!`, `major:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `majorOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `minor:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `minorOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglMakeCurrent](EGL14.md))`(`dpy:` ` [EGLDisplay](EGLDisplay.md)!`, `draw:` ` [EGLSurface](EGLSurface.md)!`, `read:` ` [EGLSurface](EGLSurface.md)!`, `ctx:` ` [EGLContext](EGLContext.md)!`)` <br /> |
+| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [eglQueryAPI](EGL14.md))`()` <br /> |
 | --- | --- |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglQueryContext](../android/opengl/EGL14.md))`(`dpy:` ` [EGLDisplay](../android/opengl/EGLDisplay.md)!`, `ctx:` ` [EGLContext](../android/opengl/EGLContext.md)!`, `attribute:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [eglQueryString](../android/opengl/EGL14.md))`(`dpy:` ` [EGLDisplay](../android/opengl/EGLDisplay.md)!`, `name:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglQuerySurface](../android/opengl/EGL14.md))`(`dpy:` ` [EGLDisplay](../android/opengl/EGLDisplay.md)!`, `surface:` ` [EGLSurface](../android/opengl/EGLSurface.md)!`, `attribute:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglQueryContext](EGL14.md))`(`dpy:` ` [EGLDisplay](EGLDisplay.md)!`, `ctx:` ` [EGLContext](EGLContext.md)!`, `attribute:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [eglQueryString](EGL14.md))`(`dpy:` ` [EGLDisplay](EGLDisplay.md)!`, `name:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglQuerySurface](EGL14.md))`(`dpy:` ` [EGLDisplay](EGLDisplay.md)!`, `surface:` ` [EGLSurface](EGLSurface.md)!`, `attribute:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglReleaseTexImage](../android/opengl/EGL14.md))`(`dpy:` ` [EGLDisplay](../android/opengl/EGLDisplay.md)!`, `surface:` ` [EGLSurface](../android/opengl/EGLSurface.md)!`, `buffer:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglReleaseThread](../android/opengl/EGL14.md))`()` <br /> |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglSurfaceAttrib](../android/opengl/EGL14.md))`(`dpy:` ` [EGLDisplay](../android/opengl/EGLDisplay.md)!`, `surface:` ` [EGLSurface](../android/opengl/EGLSurface.md)!`, `attribute:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglReleaseTexImage](EGL14.md))`(`dpy:` ` [EGLDisplay](EGLDisplay.md)!`, `surface:` ` [EGLSurface](EGLSurface.md)!`, `buffer:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglReleaseThread](EGL14.md))`()` <br /> |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglSurfaceAttrib](EGL14.md))`(`dpy:` ` [EGLDisplay](EGLDisplay.md)!`, `surface:` ` [EGLSurface](EGLSurface.md)!`, `attribute:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglSwapBuffers](../android/opengl/EGL14.md))`(`dpy:` ` [EGLDisplay](../android/opengl/EGLDisplay.md)!`, `surface:` ` [EGLSurface](../android/opengl/EGLSurface.md)!`)` <br /> |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglSwapInterval](../android/opengl/EGL14.md))`(`dpy:` ` [EGLDisplay](../android/opengl/EGLDisplay.md)!`, `interval:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglTerminate](../android/opengl/EGL14.md))`(`dpy:` ` [EGLDisplay](../android/opengl/EGLDisplay.md)!`)` <br /> |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglSwapBuffers](EGL14.md))`(`dpy:` ` [EGLDisplay](EGLDisplay.md)!`, `surface:` ` [EGLSurface](EGLSurface.md)!`)` <br /> |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglSwapInterval](EGL14.md))`(`dpy:` ` [EGLDisplay](EGLDisplay.md)!`, `interval:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglTerminate](EGL14.md))`(`dpy:` ` [EGLDisplay](EGLDisplay.md)!`)` <br /> |
 | --- | --- |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglWaitClient](../android/opengl/EGL14.md))`()` <br /> |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglWaitGL](../android/opengl/EGL14.md))`()` <br /> |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglWaitNative](../android/opengl/EGL14.md))`(`engine:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglWaitClient](EGL14.md))`()` <br /> |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglWaitGL](EGL14.md))`()` <br /> |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglWaitNative](EGL14.md))`(`engine:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
 
 | Properties ||
 |-----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| static [EGLContext](../android/opengl/EGLContext.md)! | [EGL_NO_CONTEXT](../android/opengl/EGL14.md) <br /> |
-| static [EGLDisplay](../android/opengl/EGLDisplay.md)! | [EGL_NO_DISPLAY](../android/opengl/EGL14.md) <br /> |
-| static [EGLSurface](../android/opengl/EGLSurface.md)! | [EGL_NO_SURFACE](../android/opengl/EGL14.md) <br /> |
+| static [EGLContext](EGLContext.md)! | [EGL_NO_CONTEXT](EGL14.md) <br /> |
+| static [EGLDisplay](EGLDisplay.md)! | [EGL_NO_DISPLAY](EGL14.md) <br /> |
+| static [EGLSurface](EGLSurface.md)! | [EGL_NO_SURFACE](EGL14.md) <br /> |
 | --- | --- |
 
 ## Constants

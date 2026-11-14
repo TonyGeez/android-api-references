@@ -2,7 +2,7 @@
 
 # android.icu.lang
 
-Kotlin| [Java](../android/icu/lang/_package.md)
+Kotlin| [Java](_package.md)
 | --- | --- |
 
 ## Interfaces
@@ -29,14 +29,14 @@ Kotlin| [Java](../android/icu/lang/_package.md)
 | [ECharacterCategory](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) | 'Enum' for the CharacterCategory constants. |
 | [ECharacterDirection](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) | 'Enum' for the CharacterDirection constants. |
 | --- | --- |
-| [UProperty](../android/icu/lang/UProperty.md) | Selection constants for Unicode properties. |
+| [UProperty](UProperty.md) | Selection constants for Unicode properties. |
 
 ## Classes
 
-| [UCharacter](../android/icu/lang/UCharacter.md) | **\[icu enhancement\]** ICU's replacement for [java.lang.Character](../java/lang/Character.md). |
+| [UCharacter](UCharacter.md) | **\[icu enhancement\]** ICU's replacement for [java.lang.Character](../java.lang/Character.md). |
 | --- | --- |
-| [UCharacterCategory](../android/icu/lang/UCharacterCategory.md) | Enumerated Unicode category types from the UnicodeData. |
-| [UCharacterDirection](../android/icu/lang/UCharacterDirection.md) | Enumerated Unicode character linguistic direction constants. |
-| [UCharacterEnums](../android/icu/lang/UCharacterEnums.md) | A container for the different 'enumerated types' used by UCharacter. |
+| [UCharacterCategory](UCharacterCategory.md) | Enumerated Unicode category types from the UnicodeData. |
+| [UCharacterDirection](UCharacterDirection.md) | Enumerated Unicode character linguistic direction constants. |
+| [UCharacterEnums](UCharacterEnums.md) | A container for the different 'enumerated types' used by UCharacter. |
 | --- | --- |
-| [UScript](../android/icu/lang/UScript.md) | Constants for ISO 15924 script codes, and related functions. |
+| [UScript](UScript.md) | Constants for ISO 15924 script codes, and related functions. |

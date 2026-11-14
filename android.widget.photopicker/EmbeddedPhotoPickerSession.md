@@ -5,16 +5,16 @@ Also in [U Extensions 15](https://developer.android.com/sdkExtensions)
 
 # EmbeddedPhotoPickerSession
 
-Kotlin | [Java](../android/widget/photopicker/EmbeddedPhotoPickerSession.md) 
+Kotlin | [Java](EmbeddedPhotoPickerSession.md) 
 | --- | --- |
 
 ```
 interface EmbeddedPhotoPickerSession
 ```
 
-| [android.widget.photopicker.EmbeddedPhotoPickerSession](../android/widget/photopicker/EmbeddedPhotoPickerSession.md) |
+| [android.widget.photopicker.EmbeddedPhotoPickerSession](EmbeddedPhotoPickerSession.md) |
 
-Class that holds the embedded photopicker view wrapped in [SurfaceControlViewHost.SurfacePackage](../android/view/SurfaceControlViewHost.SurfacePackage.md) that can be embedded by the caller in their view hierarchy by placing it in a [SurfaceView](../android/view/SurfaceView.md) via its [SurfaceView.setChildSurfacePackage](../android/view/SurfaceView.md)) api. Callers of [EmbeddedPhotoPickerProvider.openSession](../android/widget/photopicker/EmbeddedPhotoPickerProvider.md)) will asynchronously receive instance of this class from the service upon its successful execution via [EmbeddedPhotoPickerClient.onSessionOpened](../android/widget/photopicker/EmbeddedPhotoPickerClient.md)) callback.
+Class that holds the embedded photopicker view wrapped in [SurfaceControlViewHost.SurfacePackage](../android/view/SurfaceControlViewHost.SurfacePackage.md) that can be embedded by the caller in their view hierarchy by placing it in a [SurfaceView](../android.view/SurfaceView.md) via its [SurfaceView.setChildSurfacePackage](../android.view/SurfaceView.md)) api. Callers of [EmbeddedPhotoPickerProvider.openSession](EmbeddedPhotoPickerProvider.md)) will asynchronously receive instance of this class from the service upon its successful execution via [EmbeddedPhotoPickerClient.onSessionOpened](EmbeddedPhotoPickerClient.md)) callback.
 
 Instance of this class can be then used by callers to notify PhotoPicker about different events for service to act upon them.
 
@@ -24,15 +24,15 @@ When a session is no longer being used, it should be closed by callers to help s
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../android/widget/photopicker/EmbeddedPhotoPickerSession.md))`()` Close the session, i. |
-| abstract [SurfaceControlViewHost.SurfacePackage](../android/view/SurfaceControlViewHost.SurfacePackage.md) | [getSurfacePackage](../android/widget/photopicker/EmbeddedPhotoPickerSession.md))`()` Returns the [SurfaceControlViewHost.SurfacePackage](../android/view/SurfaceControlViewHost.SurfacePackage.md) that contains view representing embedded picker. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [notifyConfigurationChanged](../android/widget/photopicker/EmbeddedPhotoPickerSession.md))`(`configuration:` ` [Configuration](../android/content/res/Configuration.md)`)` Notifies photopicker that host side configuration has changed. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](EmbeddedPhotoPickerSession.md))`()` Close the session, i. |
+| abstract [SurfaceControlViewHost.SurfacePackage](../android/view/SurfaceControlViewHost.SurfacePackage.md) | [getSurfacePackage](EmbeddedPhotoPickerSession.md))`()` Returns the [SurfaceControlViewHost.SurfacePackage](../android/view/SurfaceControlViewHost.SurfacePackage.md) that contains view representing embedded picker. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [notifyConfigurationChanged](EmbeddedPhotoPickerSession.md))`(`configuration:` ` [Configuration](../android.content.res/Configuration.md)`)` Notifies photopicker that host side configuration has changed. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [notifyPhotoPickerExpanded](../android/widget/photopicker/EmbeddedPhotoPickerSession.md))`(`isExpanded:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Notify that user switched photopicker between expanded/collapsed state. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [notifyResized](../android/widget/photopicker/EmbeddedPhotoPickerSession.md))`(`width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `height:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Notify that caller's presentation area has changed and photopicker's dimensions should change accordingly. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [notifyVisibilityChanged](../android/widget/photopicker/EmbeddedPhotoPickerSession.md))`(`isVisible:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Notify that embedded photopicker view is visible or not to the user. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [notifyPhotoPickerExpanded](EmbeddedPhotoPickerSession.md))`(`isExpanded:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Notify that user switched photopicker between expanded/collapsed state. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [notifyResized](EmbeddedPhotoPickerSession.md))`(`width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `height:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Notify that caller's presentation area has changed and photopicker's dimensions should change accordingly. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [notifyVisibilityChanged](EmbeddedPhotoPickerSession.md))`(`isVisible:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Notify that embedded photopicker view is visible or not to the user. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [requestRevokeUriPermission](../android/widget/photopicker/EmbeddedPhotoPickerSession.md))`(`uris:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Uri](../android/net/Uri.md)!>`)` Notify that the user deselected some items. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [requestRevokeUriPermission](EmbeddedPhotoPickerSession.md))`(`uris:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Uri](../android.net/Uri.md)!>`)` Notify that the user deselected some items. |
 
 ## Public methods
 
@@ -58,7 +58,7 @@ abstract fun getSurfacePackage(): SurfaceControlViewHost.SurfacePackage
 
 Returns the [SurfaceControlViewHost.SurfacePackage](../android/view/SurfaceControlViewHost.SurfacePackage.md) that contains view representing embedded picker.
 
-Callers can attach this view in their hierarchy using [SurfaceView.setChildSurfacePackage](../android/view/SurfaceView.md)) api.
+Callers can attach this view in their hierarchy using [SurfaceView.setChildSurfacePackage](../android.view/SurfaceView.md)) api.
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------|
@@ -77,7 +77,7 @@ Notifies photopicker that host side configuration has changed.
 
 | Parameters ||
 |-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `configuration` | [Configuration](../android/content/res/Configuration.md): new configuration of caller This value cannot be `null`. |
+| `configuration` | [Configuration](../android.content.res/Configuration.md): new configuration of caller This value cannot be `null`. |
 
 ### notifyPhotoPickerExpanded
 
@@ -145,4 +145,4 @@ Notify that the user deselected some items.
 
 | Parameters ||
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `uris` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Uri](../android/net/Uri.md)!\>: The [Uri](../android/net/Uri.md) list of the deselected items. This value cannot be `null`. |
+| `uris` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Uri](../android.net/Uri.md)!\>: The [Uri](../android.net/Uri.md) list of the deselected items. This value cannot be `null`. |

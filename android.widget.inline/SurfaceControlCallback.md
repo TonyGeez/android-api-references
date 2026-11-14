@@ -19,8 +19,8 @@ Callback for observing the lifecycle of the surface control that manipulates the
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onCreated](../android/widget/inline/InlineContentView.SurfaceControlCallback.md))`(`surfaceControl:` ` [SurfaceControl](../android/view/SurfaceControl.md)`)` Called when the backing surface is being created. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDestroyed](../android/widget/inline/InlineContentView.SurfaceControlCallback.md))`(`surfaceControl:` ` [SurfaceControl](../android/view/SurfaceControl.md)`)` Called when the backing surface is being destroyed. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onCreated](../android/widget/inline/InlineContentView.SurfaceControlCallback.md))`(`surfaceControl:` ` [SurfaceControl](../android.view/SurfaceControl.md)`)` Called when the backing surface is being created. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDestroyed](../android/widget/inline/InlineContentView.SurfaceControlCallback.md))`(`surfaceControl:` ` [SurfaceControl](../android.view/SurfaceControl.md)`)` Called when the backing surface is being destroyed. |
 
 ## Public methods
 
@@ -36,7 +36,7 @@ Called when the backing surface is being created.
 
 | Parameters ||
 |------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `surfaceControl` | [SurfaceControl](../android/view/SurfaceControl.md):The surface control to manipulate the surface. This value cannot be`null`. |
+| `surfaceControl` | [SurfaceControl](../android.view/SurfaceControl.md):The surface control to manipulate the surface. This value cannot be`null`. |
 
 ### onDestroyed
 
@@ -50,4 +50,4 @@ Called when the backing surface is being destroyed.
 
 | Parameters ||
 |------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `surfaceControl` | [SurfaceControl](../android/view/SurfaceControl.md):The surface control to manipulate the surface. This value cannot be`null`. |
+| `surfaceControl` | [SurfaceControl](../android.view/SurfaceControl.md):The surface control to manipulate the surface. This value cannot be`null`. |

@@ -4,14 +4,14 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 
 # TextDirectionHeuristic
 
-Kotlin| [Java](../android/text/TextDirectionHeuristic.md) 
+Kotlin| [Java](TextDirectionHeuristic.md) 
 | --- | --- |
 
 ```
 interface TextDirectionHeuristic
 ```
 
-| [android.text.TextDirectionHeuristic](../android/text/TextDirectionHeuristic.md) |
+| [android.text.TextDirectionHeuristic](TextDirectionHeuristic.md) |
 
 Interface for objects that use a heuristic for guessing at the paragraph direction by examining text.
 
@@ -19,8 +19,8 @@ Interface for objects that use a heuristic for guessing at the paragraph directi
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRtl](../android/text/TextDirectionHeuristic.md))`(`array:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Guess if a chars array is in the RTL direction or not. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRtl](../android/text/TextDirectionHeuristic.md))`(`cs:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Guess if a`CharSequence`is in the RTL direction or not. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRtl](TextDirectionHeuristic.md))`(`array:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Guess if a chars array is in the RTL direction or not. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRtl](TextDirectionHeuristic.md))`(`cs:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Guess if a`CharSequence`is in the RTL direction or not. |
 
 ## Public methods
 

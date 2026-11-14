@@ -2,7 +2,7 @@ Added in [API level 32](https://developer.android.com/guide/topics/manifest/uses
 
 # Spatializer
 
-Kotlin | [Java](../android/media/Spatializer.md)
+Kotlin | [Java](Spatializer.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ open class Spatializer
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.Spatializer](../android/media/Spatializer.md) |
+| ↳ | [android.media.Spatializer](Spatializer.md) |
 
 Spatializer provides access to querying capabilities and behavior of sound spatialization on the device. Sound spatialization simulates sounds originating around the listener as if they were coming from virtual speakers placed around the listener. 
 Support for spatialization is optional, use `https://developer.android.com/reference/kotlin/android/media/AudioManager#getSpatializer()` to obtain an instance of this class if the feature is supported.
@@ -113,7 +113,7 @@ Adds a listener to be notified of changes to the availability of a head tracker.
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): the `Executor` handling the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): the `Executor` handling the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `listener` | [Spatializer.OnHeadTrackerAvailableListener](../android/media/Spatializer.OnHeadTrackerAvailableListener.md): the listener to receive availability updates. This value cannot be `null`. |
 
 **See Also**
@@ -135,7 +135,7 @@ Adds a listener to be notified of changes to the enabled state of the `Spatializ
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): the `Executor` handling the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): the `Executor` handling the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `listener` | [Spatializer.OnSpatializerStateChangedListener](../android/media/Spatializer.OnSpatializerStateChangedListener.md): the listener to receive enabled state updates. This value cannot be `null`. |
 
 **See Also**
@@ -157,8 +157,8 @@ Returns whether audio of the given `https://developer.android.com/reference/kotl
 
 | Parameters ||
 |---|---|
-| `attributes` | [AudioAttributes](../android/media/AudioAttributes.md): the `AudioAttributes` of the content as used for playback. This value cannot be `null`. |
-| `format` | [AudioFormat](../android/media/AudioFormat.md): the `AudioFormat` of the content as used for playback. This value cannot be `null`. |
+| `attributes` | [AudioAttributes](AudioAttributes.md): the `AudioAttributes` of the content as used for playback. This value cannot be `null`. |
+| `format` | [AudioFormat](AudioFormat.md): the `AudioFormat` of the content as used for playback. This value cannot be `null`. |
 
 | Return ||
 |---|---|

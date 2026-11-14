@@ -4,7 +4,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 
 # MloLink
 
-Kotlin| [Java](../android/net/wifi/MloLink.md) 
+Kotlin| [Java](MloLink.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class MloLink : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.wifi.MloLink](../android/net/wifi/MloLink.md) |
+| ↳ | [android.net.wifi.MloLink](MloLink.md) |
 
 Data structure class representing a Wi-Fi Multi-Link Operation (MLO) link This is only used by 802.11be capable devices
 
@@ -21,45 +21,45 @@ Data structure class representing a Wi-Fi Multi-Link Operation (MLO) link This i
 
 | Constants ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INVALID_MLO_LINK_ID](../android/net/wifi/MloLink.md) Invalid link id. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MLO_LINK_STATE_ACTIVE](../android/net/wifi/MloLink.md) MLO link state: Link is associated to the access point and mapped to at least one traffic stream. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MLO_LINK_STATE_IDLE](../android/net/wifi/MloLink.md) MLO link state: Link is associated to the access point but not mapped to any traffic stream. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INVALID_MLO_LINK_ID](MloLink.md) Invalid link id. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MLO_LINK_STATE_ACTIVE](MloLink.md) MLO link state: Link is associated to the access point and mapped to at least one traffic stream. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MLO_LINK_STATE_IDLE](MloLink.md) MLO link state: Link is associated to the access point but not mapped to any traffic stream. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MLO_LINK_STATE_INVALID](../android/net/wifi/MloLink.md) MLO link state: Invalid link state. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MLO_LINK_STATE_UNASSOCIATED](../android/net/wifi/MloLink.md) MLO link state: Link is not associated with the access point. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MLO_LINK_STATE_INVALID](MloLink.md) MLO link state: Invalid link state. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MLO_LINK_STATE_UNASSOCIATED](MloLink.md) MLO link state: Link is not associated with the access point. |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android.os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android.os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android.os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------|---|
-| [MloLink](../android/net/wifi/MloLink.md))`()` Constructor for a MloLInk. |
+| [MloLink](MloLink.md))`()` Constructor for a MloLInk. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/net/wifi/MloLink.md))`()` Implement the Parcelable interface |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/net/wifi/MloLink.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [MacAddress](../android/net/MacAddress.md)? | [getApMacAddress](../android/net/wifi/MloLink.md))`()` Returns the AP MAC address of this link. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](MloLink.md))`()` Implement the Parcelable interface |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](MloLink.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [MacAddress](../android.net/MacAddress.md)? | [getApMacAddress](MloLink.md))`()` Returns the AP MAC address of this link. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBand](../android/net/wifi/MloLink.md))`()` Returns the Wi-Fi band of this link. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getChannel](../android/net/wifi/MloLink.md))`()` Returns the channel number of this link. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLinkId](../android/net/wifi/MloLink.md))`()` Returns the link id of this link. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBand](MloLink.md))`()` Returns the Wi-Fi band of this link. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getChannel](MloLink.md))`()` Returns the channel number of this link. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLinkId](MloLink.md))`()` Returns the link id of this link. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRssi](../android/net/wifi/MloLink.md))`()` Returns the RSSI of the link. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRxLinkSpeedMbps](../android/net/wifi/MloLink.md))`()` Returns the current receive link speed in Mbps. |
-| [MacAddress](../android/net/MacAddress.md)? | [getStaMacAddress](../android/net/wifi/MloLink.md))`()` Returns the STA MAC address of this link. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRssi](MloLink.md))`()` Returns the RSSI of the link. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRxLinkSpeedMbps](MloLink.md))`()` Returns the current receive link speed in Mbps. |
+| [MacAddress](../android.net/MacAddress.md)? | [getStaMacAddress](MloLink.md))`()` Returns the STA MAC address of this link. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getState](../android/net/wifi/MloLink.md))`()` Returns the state of this link as one of: [MLO_LINK_STATE_INVALID](../android/net/wifi/MloLink.md) [MLO_LINK_STATE_UNASSOCIATED](../android/net/wifi/MloLink.md) [MLO_LINK_STATE_IDLE](../android/net/wifi/MloLink.md) [MLO_LINK_STATE_ACTIVE](../android/net/wifi/MloLink.md) |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTxLinkSpeedMbps](../android/net/wifi/MloLink.md))`()` Returns the current transmit link speed in Mbps. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/net/wifi/MloLink.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getState](MloLink.md))`()` Returns the state of this link as one of: [MLO_LINK_STATE_INVALID](MloLink.md) [MLO_LINK_STATE_UNASSOCIATED](MloLink.md) [MLO_LINK_STATE_IDLE](MloLink.md) [MLO_LINK_STATE_ACTIVE](MloLink.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTxLinkSpeedMbps](MloLink.md))`()` Returns the current transmit link speed in Mbps. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](MloLink.md))`()` <br /> |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/net/wifi/MloLink.md))`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/net/wifi/MloLink.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Implement the Parcelable interface |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](MloLink.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](MloLink.md))`(`dest:` ` [Parcel](../android.os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Implement the Parcelable interface |
 
 | Properties ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [MloLink](../android/net/wifi/MloLink.md)!\> | [CREATOR](../android/net/wifi/MloLink.md) Implement the Parcelable interface |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [MloLink](MloLink.md)!\> | [CREATOR](MloLink.md) Implement the Parcelable interface |
 
 ## Constants
 
@@ -149,7 +149,7 @@ Implement the Parcelable interface
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) |
 
 ### equals
 
@@ -192,7 +192,7 @@ Returns the AP MAC address of this link.
 
 | Return ||
 |--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| [MacAddress](../android/net/MacAddress.md)? | AP MAC address for this link or null when the caller has insufficient permissions to access the access point MAC Address. |
+| [MacAddress](../android.net/MacAddress.md)? | AP MAC address for this link or null when the caller has insufficient permissions to access the access point MAC Address. |
 
 ### getBand
 
@@ -206,7 +206,7 @@ Returns the Wi-Fi band of this link.
 
 | Return ||
 |----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.net.wifi.ScanResult#UNSPECIFIED](../android/net/wifi/ScanResult.md), [android.net.wifi.ScanResult#WIFI_BAND_24_GHZ](../android/net/wifi/ScanResult.md), [android.net.wifi.ScanResult#WIFI_BAND_5_GHZ](../android/net/wifi/ScanResult.md), [android.net.wifi.ScanResult#WIFI_BAND_6_GHZ](../android/net/wifi/ScanResult.md), or [android.net.wifi.ScanResult#WIFI_BAND_60_GHZ](../android/net/wifi/ScanResult.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.net.wifi.ScanResult#UNSPECIFIED](ScanResult.md), [android.net.wifi.ScanResult#WIFI_BAND_24_GHZ](ScanResult.md), [android.net.wifi.ScanResult#WIFI_BAND_5_GHZ](ScanResult.md), [android.net.wifi.ScanResult#WIFI_BAND_6_GHZ](ScanResult.md), or [android.net.wifi.ScanResult#WIFI_BAND_60_GHZ](ScanResult.md) |
 
 ### getChannel
 
@@ -234,7 +234,7 @@ Returns the link id of this link. Valid values are 0-15, as described in IEEE 80
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INVALID_MLO_LINK_ID](../android/net/wifi/MloLink.md) or a valid value (0-15). Value is between [android.net.wifi.MloLink#INVALID_MLO_LINK_ID](../android/net/wifi/MloLink.md) and android.net.wifi.MloLink#MAX_MLO_LINK_ID inclusive |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INVALID_MLO_LINK_ID](MloLink.md) or a valid value (0-15). Value is between [android.net.wifi.MloLink#INVALID_MLO_LINK_ID](MloLink.md) and android.net.wifi.MloLink#MAX_MLO_LINK_ID inclusive |
 
 ### getRssi
 
@@ -264,11 +264,11 @@ Returns the current receive link speed in Mbps.
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the Rx link speed or [WifiInfo.LINK_SPEED_UNKNOWN](../android/net/wifi/WifiInfo.md) if link speed is unknown. Value is -1 or greater |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the Rx link speed or [WifiInfo.LINK_SPEED_UNKNOWN](WifiInfo.md) if link speed is unknown. Value is -1 or greater |
 
 **See Also**
 
-- [android.net.wifi.WifiInfo#LINK_SPEED_UNKNOWN](../android/net/wifi/WifiInfo.md) 
+- [android.net.wifi.WifiInfo#LINK_SPEED_UNKNOWN](WifiInfo.md) 
 
 ### getStaMacAddress
 
@@ -282,7 +282,7 @@ Returns the STA MAC address of this link.
 
 | Return ||
 |--------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [MacAddress](../android/net/MacAddress.md)? | STA MAC address assigned for this link, or null in the following cases: - The caller has insufficient permissions to access the STA MAC Address - Link is not associated, hence no MAC address is assigned to it by STA |
+| [MacAddress](../android.net/MacAddress.md)? | STA MAC address assigned for this link, or null in the following cases: - The caller has insufficient permissions to access the STA MAC Address - Link is not associated, hence no MAC address is assigned to it by STA |
 
 ### getState
 
@@ -292,11 +292,11 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 fun getState(): Int
 ```
 
-Returns the state of this link as one of: [MLO_LINK_STATE_INVALID](../android/net/wifi/MloLink.md) [MLO_LINK_STATE_UNASSOCIATED](../android/net/wifi/MloLink.md) [MLO_LINK_STATE_IDLE](../android/net/wifi/MloLink.md) [MLO_LINK_STATE_ACTIVE](../android/net/wifi/MloLink.md)
+Returns the state of this link as one of: [MLO_LINK_STATE_INVALID](MloLink.md) [MLO_LINK_STATE_UNASSOCIATED](MloLink.md) [MLO_LINK_STATE_IDLE](MloLink.md) [MLO_LINK_STATE_ACTIVE](MloLink.md)
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.net.wifi.MloLink#MLO_LINK_STATE_INVALID](../android/net/wifi/MloLink.md), [android.net.wifi.MloLink#MLO_LINK_STATE_UNASSOCIATED](../android/net/wifi/MloLink.md), [android.net.wifi.MloLink#MLO_LINK_STATE_IDLE](../android/net/wifi/MloLink.md), or [android.net.wifi.MloLink#MLO_LINK_STATE_ACTIVE](../android/net/wifi/MloLink.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.net.wifi.MloLink#MLO_LINK_STATE_INVALID](MloLink.md), [android.net.wifi.MloLink#MLO_LINK_STATE_UNASSOCIATED](MloLink.md), [android.net.wifi.MloLink#MLO_LINK_STATE_IDLE](MloLink.md), or [android.net.wifi.MloLink#MLO_LINK_STATE_ACTIVE](MloLink.md) |
 
 ### getTxLinkSpeedMbps
 
@@ -310,11 +310,11 @@ Returns the current transmit link speed in Mbps.
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the Tx link speed or [WifiInfo.LINK_SPEED_UNKNOWN](../android/net/wifi/WifiInfo.md) if link speed is unknown. Value is -1 or greater |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the Tx link speed or [WifiInfo.LINK_SPEED_UNKNOWN](WifiInfo.md) if link speed is unknown. Value is -1 or greater |
 
 **See Also**
 
-- [android.net.wifi.WifiInfo#LINK_SPEED_UNKNOWN](../android/net/wifi/WifiInfo.md) 
+- [android.net.wifi.WifiInfo#LINK_SPEED_UNKNOWN](WifiInfo.md) 
 
 ### hashCode
 
@@ -355,8 +355,8 @@ Implement the Parcelable interface
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](../android/os/Parcel.md):This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android.os/Parcel.md):This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

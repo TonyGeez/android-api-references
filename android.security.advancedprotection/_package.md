@@ -2,7 +2,7 @@
 
 # android.security.advancedprotection
 
-Kotlin| [Java](../android/security/advancedprotection/_package.md)
+Kotlin| [Java](_package.md)
 | --- | --- |
 
 ## Interfaces
@@ -12,5 +12,5 @@ Kotlin| [Java](../android/security/advancedprotection/_package.md)
 
 ## Classes
 
-| [AdvancedProtectionManager](../android/security/advancedprotection/AdvancedProtectionManager.md) | Advanced Protection is a mode that users can enroll their device into, that enhances security by enabling features and restrictions across both the platform and user apps. |
+| [AdvancedProtectionManager](AdvancedProtectionManager.md) | Advanced Protection is a mode that users can enroll their device into, that enhances security by enabling features and restrictions across both the platform and user apps. |
 | --- | --- |

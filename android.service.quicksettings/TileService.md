@@ -8,11 +8,11 @@ open class TileService : Service
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](../android/content/Context.md) ||||
-| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) |||
-| | | ↳ | [android.app.Service](../android/app/Service.md) ||
+| ↳ | [android.content.Context](../android.content/Context.md) ||||
+| | ↳ | [android.content.ContextWrapper](../android.content/ContextWrapper.md) |||
+| | | ↳ | [android.app.Service](../android.app/Service.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.service.quicksettings.TileService](../android/service/quicksettings/TileService.md) |
+| | | | ↳ | [android.service.quicksettings.TileService](TileService.md) |
 
 A TileService provides the user a tile that can be added to Quick Settings. Quick Settings is a space provided that allows the user to change settings and take quick actions without leaving the context of their current app.
 
@@ -1079,11 +1079,11 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 
 | Public methods ||
 |---|---|
-| [Tile](../android/service/quicksettings/Tile.md)! | `https://developer.android.com/reference/kotlin/android/service/quicksettings/TileService#getQsTile()()` Gets the `https://developer.android.com/reference/kotlin/android/service/quicksettings/Tile` for this service. |
+| [Tile](Tile.md)! | `https://developer.android.com/reference/kotlin/android/service/quicksettings/TileService#getQsTile()()` Gets the `https://developer.android.com/reference/kotlin/android/service/quicksettings/Tile` for this service. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/service/quicksettings/TileService#isLocked()()` Checks if the lock screen is showing. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/service/quicksettings/TileService#isSecure()()` Checks if the device is in a secure state. |
 | --- | --- |
-| open [IBinder](../android/os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/service/quicksettings/TileService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
+| open [IBinder](../android.os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/service/quicksettings/TileService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/quicksettings/TileService#onClick()()` Called when the user clicks on this tile. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/quicksettings/TileService#onDestroy()()` Called by the system to notify a Service that it is no longer used and is being removed. |
 | --- | --- |
@@ -3006,7 +3006,7 @@ Return the communication channel to the service. May return null if clients can 
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
+| `intent` | [Intent](../android.content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
 
 | Return ||
 |---|---|
@@ -3114,7 +3114,7 @@ Used to show a dialog. This will collapse the Quick Settings panel and show the 
 
 | Parameters ||
 |---|---|
-| `dialog` | [Dialog](../android/app/Dialog.md)!: Dialog to show. |
+| `dialog` | [Dialog](../android.app/Dialog.md)!: Dialog to show. |
 
 **See Also**
 
@@ -3132,7 +3132,7 @@ Starts an `https://developer.android.com/reference/kotlin/android/app/Activity.h
 
 | Parameters ||
 |---|---|
-| `pendingIntent` | [PendingIntent](../android/app/PendingIntent.md): A PendingIntent for an Activity to be launched immediately. This value cannot be `null`. |
+| `pendingIntent` | [PendingIntent](../android.app/PendingIntent.md): A PendingIntent for an Activity to be launched immediately. This value cannot be `null`. |
 
 ### startActivityAndCollapse
 

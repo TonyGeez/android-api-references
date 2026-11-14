@@ -4,7 +4,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # SensorEventCallback
 
-Kotlin| [Java](../android/hardware/SensorEventCallback.md) 
+Kotlin| [Java](SensorEventCallback.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ abstract class SensorEventCallback : SensorEventListener2
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.hardware.SensorEventCallback](../android/hardware/SensorEventCallback.md) |
+| ↳ | [android.hardware.SensorEventCallback](SensorEventCallback.md) |
 
 Used for receiving sensor additional information frames.
 
@@ -21,15 +21,15 @@ Used for receiving sensor additional information frames.
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SensorEventCallback](../android/hardware/SensorEventCallback.md))`()` <br /> |
+| [SensorEventCallback](SensorEventCallback.md))`()` <br /> |
 
 | Public methods ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAccuracyChanged](../android/hardware/SensorEventCallback.md))`(`sensor:` ` [Sensor](../android/hardware/Sensor.md)!`, `accuracy:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when the accuracy of the registered sensor has changed. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onFlushCompleted](../android/hardware/SensorEventCallback.md))`(`sensor:` ` [Sensor](../android/hardware/Sensor.md)!`)` Called after flush() is completed. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSensorAdditionalInfo](../android/hardware/SensorEventCallback.md))`(`info:` ` [SensorAdditionalInfo](../android/hardware/SensorAdditionalInfo.md)!`)` Called when a sensor additional information frame is available. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAccuracyChanged](SensorEventCallback.md))`(`sensor:` ` [Sensor](Sensor.md)!`, `accuracy:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when the accuracy of the registered sensor has changed. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onFlushCompleted](SensorEventCallback.md))`(`sensor:` ` [Sensor](Sensor.md)!`)` Called after flush() is completed. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSensorAdditionalInfo](SensorEventCallback.md))`(`info:` ` [SensorAdditionalInfo](SensorAdditionalInfo.md)!`)` Called when a sensor additional information frame is available. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSensorChanged](../android/hardware/SensorEventCallback.md))`(`event:` ` [SensorEvent](../android/hardware/SensorEvent.md)!`)` Called when sensor values have changed. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSensorChanged](SensorEventCallback.md))`(`event:` ` [SensorEvent](SensorEvent.md)!`)` Called when sensor values have changed. |
 
 ## Public constructors
 
@@ -60,7 +60,7 @@ Called when the accuracy of the registered sensor has changed.
 
 **See Also**
 
-- [android.hardware.SensorEventListener#onAccuracyChanged(Sensor, int)](../android/hardware/SensorEventListener.md)) 
+- [android.hardware.SensorEventListener#onAccuracyChanged(Sensor, int)](SensorEventListener.md)) 
 
 ### onFlushCompleted
 
@@ -74,11 +74,11 @@ Called after flush() is completed.
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `sensor` | [Sensor](../android/hardware/Sensor.md)!:The [Sensor](../android/hardware/Sensor.md) on which flush was called. |
+| `sensor` | [Sensor](Sensor.md)!:The [Sensor](Sensor.md) on which flush was called. |
 
 **See Also**
 
-- [android.hardware.SensorEventListener2#onFlushCompleted(Sensor)](../android/hardware/SensorEventListener2.md)) 
+- [android.hardware.SensorEventListener2#onFlushCompleted(Sensor)](SensorEventListener2.md)) 
 
 ### onSensorAdditionalInfo
 
@@ -92,7 +92,7 @@ Called when a sensor additional information frame is available.
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `info` | [SensorAdditionalInfo](../android/hardware/SensorAdditionalInfo.md)!:A [SensorAdditionalInfo](../android/hardware/SensorAdditionalInfo.md) frame reported from sensor hardware. |
+| `info` | [SensorAdditionalInfo](SensorAdditionalInfo.md)!:A [SensorAdditionalInfo](SensorAdditionalInfo.md) frame reported from sensor hardware. |
 
 ### onSensorChanged
 
@@ -106,8 +106,8 @@ Called when sensor values have changed.
 
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `event` | [SensorEvent](../android/hardware/SensorEvent.md)!:the [SensorEvent](../android/hardware/SensorEvent.md). |
+| `event` | [SensorEvent](SensorEvent.md)!:the [SensorEvent](SensorEvent.md). |
 
 **See Also**
 
-- [android.hardware.SensorEventListener#onSensorChanged(SensorEvent)](../android/hardware/SensorEventListener.md))
+- [android.hardware.SensorEventListener#onSensorChanged(SensorEvent)](SensorEventListener.md))

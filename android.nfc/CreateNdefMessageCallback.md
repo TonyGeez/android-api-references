@@ -20,13 +20,13 @@ interface CreateNdefMessageCallback
 
 A callback to be invoked when another NFC device capable of NDEF push (Android Beam) is within range.
 
-Implement this interface and pass it to`NfcAdapter#setNdefPushMessageCallback setNdefPushMessageCallback()`in order to create an [NdefMessage](../android/nfc/NdefMessage.md) at the moment that another device is within range for NFC. Using this callback allows you to create a message with data that might vary based on the content currently visible to the user. Alternatively, you can call`setNdefPushMessage setNdefPushMessage()`if the [NdefMessage](../android/nfc/NdefMessage.md) always contains the same data.
+Implement this interface and pass it to`NfcAdapter#setNdefPushMessageCallback setNdefPushMessageCallback()`in order to create an [NdefMessage](NdefMessage.md) at the moment that another device is within range for NFC. Using this callback allows you to create a message with data that might vary based on the content currently visible to the user. Alternatively, you can call`setNdefPushMessage setNdefPushMessage()`if the [NdefMessage](NdefMessage.md) always contains the same data.
 
 ## Summary
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [NdefMessage](../android/nfc/NdefMessage.md)! | [createNdefMessage](../android/nfc/NfcAdapter.CreateNdefMessageCallback.md))`(`event:` ` [NfcEvent](../android/nfc/NfcEvent.md)!`)` Called to provide a [NdefMessage](../android/nfc/NdefMessage.md) to push. |
+| abstract [NdefMessage](NdefMessage.md)! | [createNdefMessage](../android/nfc/NfcAdapter.CreateNdefMessageCallback.md))`(`event:` ` [NfcEvent](NfcEvent.md)!`)` Called to provide a [NdefMessage](NdefMessage.md) to push. |
 
 ## Public methods
 
@@ -40,7 +40,7 @@ abstract fun createNdefMessage(event: NfcEvent!): NdefMessage!
 
 **Deprecated:** *Deprecated in Java.*
 
-Called to provide a [NdefMessage](../android/nfc/NdefMessage.md) to push.
+Called to provide a [NdefMessage](NdefMessage.md) to push.
 
 This callback is usually made on a binder thread (not the UI thread).
 
@@ -52,8 +52,8 @@ The Android operating system will usually show a system UI on top of your activi
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `event` | [NfcEvent](../android/nfc/NfcEvent.md)!: [NfcEvent](../android/nfc/NfcEvent.md) with the [NfcEvent.nfcAdapter](../android/nfc/NfcEvent.md) field set |
+| `event` | [NfcEvent](NfcEvent.md)!: [NfcEvent](NfcEvent.md) with the [NfcEvent.nfcAdapter](NfcEvent.md) field set |
 
 | Return ||
 |----------------------------------------------------------------------------------------|--------------------------------------------------------|
-| [NdefMessage](../android/nfc/NdefMessage.md)! | NDEF message to push, or null to not provide a message |
+| [NdefMessage](NdefMessage.md)! | NDEF message to push, or null to not provide a message |

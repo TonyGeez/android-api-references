@@ -4,7 +4,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 
 # GeomagneticField
 
-Kotlin| [Java](../android/hardware/GeomagneticField.md) 
+Kotlin| [Java](GeomagneticField.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class GeomagneticField
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.hardware.GeomagneticField](../android/hardware/GeomagneticField.md) |
+| ↳ | [android.hardware.GeomagneticField](GeomagneticField.md) |
 
 Estimates magnetic field at a given point on Earth, and in particular, to compute the magnetic declination from true north.
 
@@ -23,19 +23,19 @@ This uses the World Magnetic Model produced by the United States National Geospa
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [GeomagneticField](../android/hardware/GeomagneticField.md))`(`gdLatitudeDeg:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `gdLongitudeDeg:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `altitudeMeters:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `timeMillis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Estimate the magnetic field at a given point and time. |
+| [GeomagneticField](GeomagneticField.md))`(`gdLatitudeDeg:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `gdLongitudeDeg:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `altitudeMeters:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `timeMillis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Estimate the magnetic field at a given point and time. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getDeclination](../android/hardware/GeomagneticField.md))`()` <br /> |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getFieldStrength](../android/hardware/GeomagneticField.md))`()` <br /> |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getHorizontalStrength](../android/hardware/GeomagneticField.md))`()` <br /> |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getDeclination](GeomagneticField.md))`()` <br /> |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getFieldStrength](GeomagneticField.md))`()` <br /> |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getHorizontalStrength](GeomagneticField.md))`()` <br /> |
 | --- | --- |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getInclination](../android/hardware/GeomagneticField.md))`()` <br /> |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getX](../android/hardware/GeomagneticField.md))`()` <br /> |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getY](../android/hardware/GeomagneticField.md))`()` <br /> |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getInclination](GeomagneticField.md))`()` <br /> |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getX](GeomagneticField.md))`()` <br /> |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getY](GeomagneticField.md))`()` <br /> |
 | --- | --- |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getZ](../android/hardware/GeomagneticField.md))`()` <br /> |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getZ](GeomagneticField.md))`()` <br /> |
 
 ## Public constructors
 

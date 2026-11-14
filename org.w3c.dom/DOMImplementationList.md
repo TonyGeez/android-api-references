@@ -8,7 +8,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 interface DOMImplementationList
 ```
 
-| [org.w3c.dom.DOMImplementationList](../org/w3c/dom/DOMImplementationList.md) |
+| [org.w3c.dom.DOMImplementationList](DOMImplementationList.md) |
 
 The`DOMImplementationList`interface provides the abstraction of an ordered collection of DOM implementations, without defining or constraining how this collection is implemented. The items in the`DOMImplementationList`are accessible via an integral index, starting from 0.
 
@@ -18,8 +18,8 @@ See also the [Document Object Model (DOM) Level 3 Core Specification](http://www
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLength](../org/w3c/dom/DOMImplementationList.md))`()` The number of`DOMImplementation`s in the list. |
-| abstract [DOMImplementation](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-d-o-m-implementation/index.html)! | [item](../org/w3c/dom/DOMImplementationList.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the`index`th item in the collection. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLength](DOMImplementationList.md))`()` The number of`DOMImplementation`s in the list. |
+| abstract [DOMImplementation](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-d-o-m-implementation/index.html)! | [item](DOMImplementationList.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the`index`th item in the collection. |
 
 ## Public methods
 

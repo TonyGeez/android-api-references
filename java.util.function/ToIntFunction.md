@@ -8,17 +8,17 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 @FunctionalInterface interface ToIntFunction<T : Any!>
 ```
 
-| [java.util.function.ToIntFunction](../java/util/function/ToIntFunction.md) |
+| [java.util.function.ToIntFunction](ToIntFunction.md) |
 
-Represents a function that produces an int-valued result. This is the`int`-producing primitive specialization for [Function](../java/util/function/Function.md).
+Represents a function that produces an int-valued result. This is the`int`-producing primitive specialization for [Function](Function.md).
 
-This is a [functional interface](../java/util/function/_package.md) whose functional method is [applyAsInt(java.lang.Object)](../java/util/function/ToIntFunction.md)).
+This is a [functional interface](_package.md) whose functional method is [applyAsInt(java.lang.Object)](ToIntFunction.md)).
 
 ## Summary
 
 | Public methods ||
 |------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [applyAsInt](../java/util/function/ToIntFunction.md))`(`value:` `T`)` Applies this function to the given argument. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [applyAsInt](ToIntFunction.md))`(`value:` `T`)` Applies this function to the given argument. |
 
 ## Public methods
 

@@ -5,7 +5,7 @@ Also in [S Extensions 13](https://developer.android.com/sdkExtensions)
 
 # LoadParams
 
-Kotlin| [Java](../android/graphics/pdf/LoadParams.md) 
+Kotlin| [Java](LoadParams.md) 
 | --- | --- |
 
 ```
@@ -14,7 +14,7 @@ class LoadParams
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.graphics.pdf.LoadParams](../android/graphics/pdf/LoadParams.md) |
+| ↳ | [android.graphics.pdf.LoadParams](LoadParams.md) |
 
 Represents a set of parameters to load the PDF document.
 
@@ -22,11 +22,11 @@ Represents a set of parameters to load the PDF document.
 
 | Nested classes ||
 |---|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](../android/graphics/pdf/LoadParams.Builder.md) Builder for constructing [LoadParams](../android/graphics/pdf/LoadParams.md). |
+| | [Builder](../android/graphics/pdf/LoadParams.Builder.md) Builder for constructing [LoadParams](LoadParams.md). |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getPassword](../android/graphics/pdf/LoadParams.md))`()` Gets the password for the loaded document. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getPassword](LoadParams.md))`()` Gets the password for the loaded document. |
 
 ## Public methods
 

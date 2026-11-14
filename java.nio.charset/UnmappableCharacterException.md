@@ -11,11 +11,11 @@ open class UnmappableCharacterException : CharacterCodingException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
-| | | ↳ | [java.io.IOException](../java/io/IOException.md) |||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) ||||
+| | | ↳ | [java.io.IOException](../java.io/IOException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.nio.charset.CharacterCodingException](../java/nio/charset/CharacterCodingException.md) ||
-| | | | | ↳ | [java.nio.charset.UnmappableCharacterException](../java/nio/charset/UnmappableCharacterException.md) |
+| | | | ↳ | [java.nio.charset.CharacterCodingException](CharacterCodingException.md) ||
+| | | | | ↳ | [java.nio.charset.UnmappableCharacterException](UnmappableCharacterException.md) |
 
 Checked exception thrown when an input character (or byte) sequence is valid but cannot be mapped to an output byte (or character) sequence.
 
@@ -23,15 +23,15 @@ Checked exception thrown when an input character (or byte) sequence is valid but
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [UnmappableCharacterException](../java/nio/charset/UnmappableCharacterException.md))`(`inputLength:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs an`UnmappableCharacterException`with the given length. |
+| [UnmappableCharacterException](UnmappableCharacterException.md))`(`inputLength:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs an`UnmappableCharacterException`with the given length. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInputLength](../java/nio/charset/UnmappableCharacterException.md))`()` Returns the length of the input. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInputLength](UnmappableCharacterException.md))`()` Returns the length of the input. |
 
 | Properties ||
 |---------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [message](../java/nio/charset/UnmappableCharacterException.md) Returns the message. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [message](UnmappableCharacterException.md) Returns the message. |
 
 ## Public constructors
 

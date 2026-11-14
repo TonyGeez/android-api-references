@@ -10,11 +10,11 @@ class URI : Comparable<URI!>, Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.net.URI](../java/net/URI.md) |
+| ↳ | [java.net.URI](URI.md) |
 
 Represents a Uniform Resource Identifier (URI) reference.
 
-Aside from some minor deviations noted below, an instance of this class represents a URI reference as defined by [*RFC 2396: Uniform Resource Identifiers (URI): Generic Syntax*](http://www.ietf.org/rfc/rfc2396.txt), amended by [*RFC 2732: Format for Literal IPv6 Addresses in URLs*](http://www.ietf.org/rfc/rfc2732.txt). The Literal IPv6 address format also supports scope_ids. The syntax and usage of scope_ids is described [here](../java/net/Inet6Address.md). This class provides constructors for creating URI instances from their components or by parsing their string forms, methods for accessing the various components of an instance, and methods for normalizing, resolving, and relativizing URI instances. Instances of this class are immutable.
+Aside from some minor deviations noted below, an instance of this class represents a URI reference as defined by [*RFC 2396: Uniform Resource Identifiers (URI): Generic Syntax*](http://www.ietf.org/rfc/rfc2396.txt), amended by [*RFC 2732: Format for Literal IPv6 Addresses in URLs*](http://www.ietf.org/rfc/rfc2732.txt). The Literal IPv6 address format also supports scope_ids. The syntax and usage of scope_ids is described [here](Inet6Address.md). This class provides constructors for creating URI instances from their components or by parsing their string forms, methods for accessing the various components of an instance, and methods for normalizing, resolving, and relativizing URI instances. Instances of this class are immutable.
 
 ### URI syntax and components
 
@@ -92,7 +92,7 @@ RFC 2396 specifies precisely which characters are permitted in the various compo
 | *reserved* | All*punct* characters together with those in the string`"?/[]@"` |
 | *escaped* | Escaped octets, that is, triplets consisting of the percent character (`'%'`) followed by two hexadecimal digits (`'0'`-`'9'`,`'A'`-`'F'`, and`'a'`-`'f'`) |
 | --- | --- |
-| *other* | The Unicode characters that are not in the US-ASCII character set, are not control characters (according to the [Character.isISOControl](../java/lang/Character.md))method), and are not space characters (according to the [Character.isSpaceChar](../java/lang/Character.md))method)*(**Deviation from RFC 2396**, which is limited to US-ASCII)* |
+| *other* | The Unicode characters that are not in the US-ASCII character set, are not control characters (according to the [Character.isISOControl](../java.lang/Character.md))method), and are not space characters (according to the [Character.isSpaceChar](../java.lang/Character.md))method)*(**Deviation from RFC 2396**, which is limited to US-ASCII)* |
 |--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
 The set of all legal URI characters consists of the*unreserved* ,*reserved* ,*escaped* , and*other*characters.
@@ -110,18 +110,18 @@ These purposes are served in this class by three related operations:
 
 - A character is*encoded* by replacing it with the sequence of escaped octets that represent that character in the UTF-8 character set. The Euro currency symbol (`'\u005Cu20AC'`), for example, is encoded as`"%E2%82%AC"`.*(**Deviation from RFC 2396**, which does not specify any particular character set.)*
 - An illegal character is*quoted* simply by encoding it. The space character, for example, is quoted by replacing it with`"%20"`. UTF-8 contains US-ASCII, hence for US-ASCII characters this transformation has exactly the effect required by RFC 2396.
-- A sequence of escaped octets is*decoded* by replacing it with the sequence of characters that it represents in the UTF-8 character set. UTF-8 contains US-ASCII, hence decoding has the effect of de-quoting any quoted US-ASCII characters as well as that of decoding any encoded non-US-ASCII characters. If a [decoding error](../java/nio/charset/CharsetDecoder.md) occurs when decoding the escaped octets then the erroneous octets are replaced by`'\u005CuFFFD'`, the Unicode replacement character.
+- A sequence of escaped octets is*decoded* by replacing it with the sequence of characters that it represents in the UTF-8 character set. UTF-8 contains US-ASCII, hence decoding has the effect of de-quoting any quoted US-ASCII characters as well as that of decoding any encoded non-US-ASCII characters. If a [decoding error](../java.nio.charset/CharsetDecoder.md) occurs when decoding the escaped octets then the erroneous octets are replaced by`'\u005CuFFFD'`, the Unicode replacement character.
 
 These operations are exposed in the constructors and methods of this class as follows:
 
 <!-- -->
 
-- The [single-argument](../java/net/URI.md))requires any illegal characters in its argument to be quoted and preserves any escaped octets and*other*characters that are present.
-- The [multi-argument constructors](../java/net/URI.md))quote illegal characters as required by the components in which they appear. The percent character (`'%'`) is always quoted by these constructors. Any*other*characters are preserved.
-- The [getRawUserInfo](../java/net/URI.md)), [getRawPath](../java/net/URI.md)), [getRawQuery](../java/net/URI.md)), [getRawFragment](../java/net/URI.md)), [getRawAuthority](../java/net/URI.md)), and [getRawSchemeSpecificPart](../java/net/URI.md))methods return the values of their corresponding components in raw form, without interpreting any escaped octets. The strings returned by these methods may contain both escaped octets and*other*characters, and will not contain any illegal characters.
-- The [getUserInfo](../java/net/URI.md)), [getPath](../java/net/URI.md)), [getQuery](../java/net/URI.md)), [getFragment](../java/net/URI.md)), [getAuthority](../java/net/URI.md)), and [getSchemeSpecificPart](../java/net/URI.md))methods decode any escaped octets in their corresponding components. The strings returned by these methods may contain both*other*characters and illegal characters, and will not contain any escaped octets.
-- The [toString](../java/net/URI.md))method returns a URI string with all necessary quotation but which may contain*other*characters.
-- The [toASCIIString](../java/net/URI.md))method returns a fully quoted and encoded URI string that does not contain any*other*characters.
+- The [single-argument](URI.md))requires any illegal characters in its argument to be quoted and preserves any escaped octets and*other*characters that are present.
+- The [multi-argument constructors](URI.md))quote illegal characters as required by the components in which they appear. The percent character (`'%'`) is always quoted by these constructors. Any*other*characters are preserved.
+- The [getRawUserInfo](URI.md)), [getRawPath](URI.md)), [getRawQuery](URI.md)), [getRawFragment](URI.md)), [getRawAuthority](URI.md)), and [getRawSchemeSpecificPart](URI.md))methods return the values of their corresponding components in raw form, without interpreting any escaped octets. The strings returned by these methods may contain both escaped octets and*other*characters, and will not contain any illegal characters.
+- The [getUserInfo](URI.md)), [getPath](URI.md)), [getQuery](URI.md)), [getFragment](URI.md)), [getAuthority](URI.md)), and [getSchemeSpecificPart](URI.md))methods decode any escaped octets in their corresponding components. The strings returned by these methods may contain both*other*characters and illegal characters, and will not contain any escaped octets.
+- The [toString](URI.md))method returns a URI string with all necessary quotation but which may contain*other*characters.
+- The [toASCIIString](URI.md))method returns a fully quoted and encoded URI string that does not contain any*other*characters.
 
 #### Identities
 
@@ -157,62 +157,62 @@ if*u* is hierarchical and has either no authority or a server-based authority.
 
 A URI is a uniform resource*identifier* while a URL is a uniform resource*locator* . Hence every URL is a URI, abstractly speaking, but not every URI is a URL. This is because there is another subcategory of URIs, uniform resource*names* (URNs), which name resources but do not specify how to locate them. The`mailto`,`news`, and`isbn`URIs shown above are examples of URNs.
 
-The conceptual distinction between URIs and URLs is reflected in the differences between this class and the [URL](../java/net/URL.md) class.
+The conceptual distinction between URIs and URLs is reflected in the differences between this class and the [URL](URL.md) class.
 
 An instance of this class represents a URI reference in the syntactic sense defined by RFC 2396. A URI may be either absolute or relative. A URI string is parsed according to the generic syntax without regard to the scheme, if any, that it specifies. No lookup of the host, if any, is performed, and no scheme-dependent stream handler is constructed. Equality, hashing, and comparison are defined strictly in terms of the character content of the instance. In other words, a URI instance is little more than a structured string that supports the syntactic, scheme-independent operations of comparison, normalization, resolution, and relativization.
 
-An instance of the [URL](../java/net/URL.md) class, by contrast, represents the syntactic components of a URL together with some of the information required to access the resource that it describes. A URL must be absolute, that is, it must always specify a scheme. A URL string is parsed according to its scheme. A stream handler is always established for a URL, and in fact it is impossible to create a URL instance for a scheme for which no handler is available. Equality and hashing depend upon both the scheme and the Internet address of the host, if any; comparison is not defined. In other words, a URL is a structured string that supports the syntactic operation of resolution as well as the network I/O operations of looking up the host and opening a connection to the specified resource.
+An instance of the [URL](URL.md) class, by contrast, represents the syntactic components of a URL together with some of the information required to access the resource that it describes. A URL must be absolute, that is, it must always specify a scheme. A URL string is parsed according to its scheme. A stream handler is always established for a URL, and in fact it is impossible to create a URL instance for a scheme for which no handler is available. Equality and hashing depend upon both the scheme and the Internet address of the host, if any; comparison is not defined. In other words, a URL is a structured string that supports the syntactic operation of resolution as well as the network I/O operations of looking up the host and opening a connection to the specified resource.
 
 ## Summary
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [URI](../java/net/URI.md))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a URI by parsing the given string. |
-| [URI](../java/net/URI.md))`(`scheme:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `ssp:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `fragment:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a URI from the given components. |
-| [URI](../java/net/URI.md))`(`scheme:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `userInfo:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `query:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `fragment:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a hierarchical URI from the given components. |
-| [URI](../java/net/URI.md))`(`scheme:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `fragment:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a hierarchical URI from the given components. |
-| [URI](../java/net/URI.md))`(`scheme:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `authority:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `query:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `fragment:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a hierarchical URI from the given components. |
+| [URI](URI.md))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a URI by parsing the given string. |
+| [URI](URI.md))`(`scheme:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `ssp:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `fragment:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a URI from the given components. |
+| [URI](URI.md))`(`scheme:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `userInfo:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `query:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `fragment:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a hierarchical URI from the given components. |
+| [URI](URI.md))`(`scheme:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `fragment:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a hierarchical URI from the given components. |
+| [URI](URI.md))`(`scheme:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `authority:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `query:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `fragment:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a hierarchical URI from the given components. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](../java/net/URI.md))`(`other:` ` [URI](../java/net/URI.md)!`)` Compares this URI to another object, which must be a URI. |
-| static [URI](../java/net/URI.md)! | [create](../java/net/URI.md))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a URI by parsing the given string. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/net/URI.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Tests this URI for equality with another object. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](URI.md))`(`other:` ` [URI](URI.md)!`)` Compares this URI to another object, which must be a URI. |
+| static [URI](URI.md)! | [create](URI.md))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a URI by parsing the given string. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](URI.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Tests this URI for equality with another object. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAuthority](../java/net/URI.md))`()` Returns the decoded authority component of this URI. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getFragment](../java/net/URI.md))`()` Returns the decoded fragment component of this URI. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getHost](../java/net/URI.md))`()` Returns the host component of this URI. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAuthority](URI.md))`()` Returns the decoded authority component of this URI. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getFragment](URI.md))`()` Returns the decoded fragment component of this URI. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getHost](URI.md))`()` Returns the host component of this URI. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPath](../java/net/URI.md))`()` Returns the decoded path component of this URI. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPort](../java/net/URI.md))`()` Returns the port number of this URI. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getQuery](../java/net/URI.md))`()` Returns the decoded query component of this URI. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPath](URI.md))`()` Returns the decoded path component of this URI. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPort](URI.md))`()` Returns the port number of this URI. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getQuery](URI.md))`()` Returns the decoded query component of this URI. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getRawAuthority](../java/net/URI.md))`()` Returns the raw authority component of this URI. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getRawFragment](../java/net/URI.md))`()` Returns the raw fragment component of this URI. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getRawPath](../java/net/URI.md))`()` Returns the raw path component of this URI. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getRawAuthority](URI.md))`()` Returns the raw authority component of this URI. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getRawFragment](URI.md))`()` Returns the raw fragment component of this URI. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getRawPath](URI.md))`()` Returns the raw path component of this URI. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getRawQuery](../java/net/URI.md))`()` Returns the raw query component of this URI. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getRawSchemeSpecificPart](../java/net/URI.md))`()` Returns the raw scheme-specific part of this URI. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getRawUserInfo](../java/net/URI.md))`()` Returns the raw user-information component of this URI. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getRawQuery](URI.md))`()` Returns the raw query component of this URI. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getRawSchemeSpecificPart](URI.md))`()` Returns the raw scheme-specific part of this URI. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getRawUserInfo](URI.md))`()` Returns the raw user-information component of this URI. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getScheme](../java/net/URI.md))`()` Returns the scheme component of this URI. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSchemeSpecificPart](../java/net/URI.md))`()` Returns the decoded scheme-specific part of this URI. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getUserInfo](../java/net/URI.md))`()` Returns the decoded user-information component of this URI. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getScheme](URI.md))`()` Returns the scheme component of this URI. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSchemeSpecificPart](URI.md))`()` Returns the decoded scheme-specific part of this URI. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getUserInfo](URI.md))`()` Returns the decoded user-information component of this URI. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/net/URI.md))`()` Returns a hash-code value for this URI. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAbsolute](../java/net/URI.md))`()` Tells whether or not this URI is absolute. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isOpaque](../java/net/URI.md))`()` Tells whether or not this URI is opaque. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](URI.md))`()` Returns a hash-code value for this URI. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAbsolute](URI.md))`()` Tells whether or not this URI is absolute. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isOpaque](URI.md))`()` Tells whether or not this URI is opaque. |
 | --- | --- |
-| [URI](../java/net/URI.md)! | [normalize](../java/net/URI.md))`()` Normalizes this URI's path. |
-| [URI](../java/net/URI.md)! | [parseServerAuthority](../java/net/URI.md))`()` Attempts to parse this URI's authority component, if defined, into user-information, host, and port components. |
-| [URI](../java/net/URI.md)! | [relativize](../java/net/URI.md))`(`uri:` ` [URI](../java/net/URI.md)!`)` Relativizes the given URI against this URI. |
+| [URI](URI.md)! | [normalize](URI.md))`()` Normalizes this URI's path. |
+| [URI](URI.md)! | [parseServerAuthority](URI.md))`()` Attempts to parse this URI's authority component, if defined, into user-information, host, and port components. |
+| [URI](URI.md)! | [relativize](URI.md))`(`uri:` ` [URI](URI.md)!`)` Relativizes the given URI against this URI. |
 | --- | --- |
-| [URI](../java/net/URI.md)! | [resolve](../java/net/URI.md))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a new URI by parsing the given string and then resolving it against this URI. |
-| [URI](../java/net/URI.md)! | [resolve](../java/net/URI.md))`(`uri:` ` [URI](../java/net/URI.md)!`)` Resolves the given URI against this URI. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toASCIIString](../java/net/URI.md))`()` Returns the content of this URI as a US-ASCII string. |
+| [URI](URI.md)! | [resolve](URI.md))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a new URI by parsing the given string and then resolving it against this URI. |
+| [URI](URI.md)! | [resolve](URI.md))`(`uri:` ` [URI](URI.md)!`)` Resolves the given URI against this URI. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toASCIIString](URI.md))`()` Returns the content of this URI as a US-ASCII string. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/net/URI.md))`()` Returns the content of this URI as a string. |
-| [URL](../java/net/URL.md)! | [toURL](../java/net/URI.md))`()` Constructs a URL from this URI. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](URI.md))`()` Returns the content of this URI as a string. |
+| [URL](URL.md)! | [toURL](URI.md))`()` Constructs a URL from this URI. |
 
 ## Public constructors
 
@@ -229,7 +229,7 @@ Constructs a URI by parsing the given string.
 This constructor parses the given string exactly as specified by the grammar in [RFC 2396](http://www.ietf.org/rfc/rfc2396.txt), Appendix A,***except for the following deviations:***
 
 - An empty authority component is permitted as long as it is followed by a non-empty path, a query component, or a fragment component. This allows the parsing of URIs such as`"file:///foo/bar"`, which seems to be the intent of RFC 2396 although the grammar does not permit it. If the authority component is empty then the user-information, host, and port components are undefined.
-- Empty relative paths are permitted; this seems to be the intent of RFC 2396 although the grammar does not permit it. The primary consequence of this deviation is that a standalone fragment such as`"#foo"`parses as a relative URI with an empty path and the given fragment, and can be usefully [resolved](../java/net/URI.md) against a base URI.
+- Empty relative paths are permitted; this seems to be the intent of RFC 2396 although the grammar does not permit it. The primary consequence of this deviation is that a standalone fragment such as`"#foo"`parses as a relative URI with an empty path and the given fragment, and can be usefully [resolved](URI.md) against a base URI.
 - IPv4 addresses in host components are parsed rigorously, as specified by [RFC 2732](http://www.ietf.org/rfc/rfc2732.txt): Each element of a dotted-quad address must contain no more than three decimal digits. Each element is further constrained to have a value no greater than 255.
 - Hostnames in host components that comprise only a single domain label are permitted to start with an*alphanum* character. This seems to be the intent of [RFC 2396](http://www.ietf.org/rfc/rfc2396.txt) section 3.2.2 although the grammar does not permit it. The consequence of this deviation is that the authority component of a hierarchical URI such as`s://123`, will parse as a server-based authority.
 
@@ -264,10 +264,10 @@ This constructor first builds a URI in string form using the given components as
 
 1. Initially, the result string is empty.
 2. If a scheme is given then it is appended to the result, followed by a colon character (`':'`).
-3. If a scheme-specific part is given then it is appended. Any character that is not a [legal URI character](../java/net/URI.md) is [quoted](../java/net/URI.md).
+3. If a scheme-specific part is given then it is appended. Any character that is not a [legal URI character](URI.md) is [quoted](URI.md).
 4. Finally, if a fragment is given then a hash character (`'#'`) is appended to the string, followed by the fragment. Any character that is not a legal URI character is quoted.
 
-The resulting URI string is then parsed in order to create the new URI instance as if by invoking the [URI(java.lang.String)](../java/net/URI.md))constructor; this may cause a [URISyntaxException](../java/net/URISyntaxException.md) to be thrown.
+The resulting URI string is then parsed in order to create the new URI instance as if by invoking the [URI(java.lang.String)](URI.md))constructor; this may cause a [URISyntaxException](URISyntaxException.md) to be thrown.
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------|
@@ -304,14 +304,14 @@ This constructor first builds a URI string from the given components according t
 1. Initially, the result string is empty.
 2. If a scheme is given then it is appended to the result, followed by a colon character (`':'`).
 3. If user information, a host, or a port are given then the string`"//"`is appended.
-4. If user information is given then it is appended, followed by a commercial-at character (`'@'`). Any character not in the*unreserved* ,*punct* ,*escaped* , or*other* categories is [quoted](../java/net/URI.md).
+4. If user information is given then it is appended, followed by a commercial-at character (`'@'`). Any character not in the*unreserved* ,*punct* ,*escaped* , or*other* categories is [quoted](URI.md).
 5. If a host is given then it is appended. If the host is a literal IPv6 address but is not enclosed in square brackets (`'['`and`']'`) then the square brackets are added.
 6. If a port number is given then a colon character (`':'`) is appended, followed by the port number in decimal.
 7. If a path is given then it is appended. Any character not in the*unreserved* ,*punct* ,*escaped* , or*other* categories, and not equal to the slash character (`'/'`) or the commercial-at character (`'@'`), is quoted.
-8. If a query is given then a question-mark character (`'?'`) is appended, followed by the query. Any character that is not a [legal URI character](../java/net/URI.md) is quoted.
+8. If a query is given then a question-mark character (`'?'`) is appended, followed by the query. Any character that is not a [legal URI character](URI.md) is quoted.
 9. Finally, if a fragment is given then a hash character (`'#'`) is appended, followed by the fragment. Any character that is not a legal URI character is quoted.
 
-The resulting URI string is then parsed as if by invoking the [URI(java.lang.String)](../java/net/URI.md))constructor and then invoking the [parseServerAuthority()](../java/net/URI.md))method upon the result; this may cause a [URISyntaxException](../java/net/URISyntaxException.md) to be thrown.
+The resulting URI string is then parsed as if by invoking the [URI(java.lang.String)](URI.md))constructor and then invoking the [parseServerAuthority()](URI.md))method upon the result; this may cause a [URISyntaxException](URISyntaxException.md) to be thrown.
 
 | Parameters ||
 |------------|---------------------------------------------------------------------------------------------------------------------------|
@@ -346,7 +346,7 @@ Constructs a hierarchical URI from the given components.
 A component may be left undefined by passing`null`.
 
 This convenience constructor works as if by invoking the seven-argument constructor as follows:
-`new` [URI](../java/net/URI.md))`(scheme, null, host, -1, path, null, fragment);`
+`new` [URI](URI.md))`(scheme, null, host, -1, path, null, fragment);`
 
 | Parameters ||
 |------------|-----------------------------------------------------------------------------------------------|
@@ -381,12 +381,12 @@ This constructor first builds a URI string from the given components according t
 
 1. Initially, the result string is empty.
 2. If a scheme is given then it is appended to the result, followed by a colon character (`':'`).
-3. If an authority is given then the string`"//"`is appended, followed by the authority. If the authority contains a literal IPv6 address then the address must be enclosed in square brackets (`'['`and`']'`). Any character not in the*unreserved* ,*punct* ,*escaped* , or*other* categories, and not equal to the commercial-at character (`'@'`), is [quoted](../java/net/URI.md).
+3. If an authority is given then the string`"//"`is appended, followed by the authority. If the authority contains a literal IPv6 address then the address must be enclosed in square brackets (`'['`and`']'`). Any character not in the*unreserved* ,*punct* ,*escaped* , or*other* categories, and not equal to the commercial-at character (`'@'`), is [quoted](URI.md).
 4. If a path is given then it is appended. Any character not in the*unreserved* ,*punct* ,*escaped* , or*other* categories, and not equal to the slash character (`'/'`) or the commercial-at character (`'@'`), is quoted.
-5. If a query is given then a question-mark character (`'?'`) is appended, followed by the query. Any character that is not a [legal URI character](../java/net/URI.md) is quoted.
+5. If a query is given then a question-mark character (`'?'`) is appended, followed by the query. Any character that is not a [legal URI character](URI.md) is quoted.
 6. Finally, if a fragment is given then a hash character (`'#'`) is appended, followed by the fragment. Any character that is not a legal URI character is quoted.
 
-The resulting URI string is then parsed as if by invoking the [URI(java.lang.String)](../java/net/URI.md))constructor and then invoking the [parseServerAuthority()](../java/net/URI.md))method upon the result; this may cause a [URISyntaxException](../java/net/URISyntaxException.md) to be thrown.
+The resulting URI string is then parsed as if by invoking the [URI(java.lang.String)](URI.md))constructor and then invoking the [parseServerAuthority()](URI.md))method upon the result; this may cause a [URISyntaxException](URISyntaxException.md) to be thrown.
 
 | Parameters ||
 |-------------|-----------------------------------------------------------------------------------------------|
@@ -427,7 +427,7 @@ The ordering of URIs is defined as follows:
  - If one or both authority components are registry-based then the URIs are ordered according to the ordering of their authority components.
 - Finally, two hierarchical URIs with identical schemes and authority components are ordered according to the ordering of their paths; if their paths are identical then they are ordered according to the ordering of their queries; if the queries are identical then they are ordered according to the order of their fragments.
 
-This method satisfies the general contract of the [Comparable.compareTo](../java/lang/Comparable.md))method.
+This method satisfies the general contract of the [Comparable.compareTo](../java.lang/Comparable.md))method.
 
 | Parameters ||
 |--------|------------------------------------------------|
@@ -453,9 +453,9 @@ static fun create(str: String!): URI!
 
 Creates a URI by parsing the given string.
 
-This convenience factory method works as if by invoking the [URI(java.lang.String)](../java/net/URI.md))constructor; any [URISyntaxException](../java/net/URISyntaxException.md) thrown by the constructor is caught and wrapped in a new [IllegalArgumentException](../java/lang/IllegalArgumentException.md) object, which is then thrown.
+This convenience factory method works as if by invoking the [URI(java.lang.String)](URI.md))constructor; any [URISyntaxException](URISyntaxException.md) thrown by the constructor is caught and wrapped in a new [IllegalArgumentException](../java.lang/IllegalArgumentException.md) object, which is then thrown.
 
-This method is provided for use in situations where it is known that the given string is a legal URI, for example for URI constants declared within in a program, and so it would be considered a programming error for the string not to parse as such. The constructors, which throw [URISyntaxException](../java/net/URISyntaxException.md) directly, should be used situations where a URI is being constructed from user input or from some other source that may be prone to errors.
+This method is provided for use in situations where it is known that the given string is a legal URI, for example for URI constants declared within in a program, and so it would be considered a programming error for the string not to parse as such. The constructors, which throw [URISyntaxException](URISyntaxException.md) directly, should be used situations where a URI is being constructed from user input or from some other source that may be prone to errors.
 
 | Parameters ||
 |-------|----------------------------------------------------------------------------------------------------------------------|
@@ -463,7 +463,7 @@ This method is provided for use in situations where it is known that the given s
 
 | Return ||
 |----------------------------------------------------------------------|-------------|
-| [URI](../java/net/URI.md)! | The new URI |
+| [URI](URI.md)! | The new URI |
 
 | Exceptions ||
 |--------------------------------------|---------------------------------------|
@@ -490,7 +490,7 @@ For two hierarchical URIs to be considered equal, their paths must be equal and 
 
 When testing the user-information, path, query, fragment, authority, or scheme-specific parts of two URIs for equality, the raw forms rather than the encoded forms of these components are compared and the hexadecimal digits of escaped octets are compared without regard to case.
 
-This method satisfies the general contract of the [Object.equals](../java/lang/Object.md))method.
+This method satisfies the general contract of the [Object.equals](../java.lang/Object.md))method.
 
 | Parameters ||
 |-------|---------------------------------------------------|
@@ -511,7 +511,7 @@ fun getAuthority(): String!
 
 Returns the decoded authority component of this URI.
 
-The string returned by this method is equal to that returned by the [getRawAuthority](../java/net/URI.md))method except that all sequences of escaped octets are [decoded](../java/net/URI.md).
+The string returned by this method is equal to that returned by the [getRawAuthority](URI.md))method except that all sequences of escaped octets are [decoded](URI.md).
 
 | Return ||
 |-----------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
@@ -527,7 +527,7 @@ fun getFragment(): String!
 
 Returns the decoded fragment component of this URI.
 
-The string returned by this method is equal to that returned by the [getRawFragment](../java/net/URI.md))method except that all sequences of escaped octets are [decoded](../java/net/URI.md).
+The string returned by this method is equal to that returned by the [getRawFragment](URI.md))method except that all sequences of escaped octets are [decoded](URI.md).
 
 | Return ||
 |-----------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
@@ -565,7 +565,7 @@ fun getPath(): String!
 
 Returns the decoded path component of this URI.
 
-The string returned by this method is equal to that returned by the [getRawPath](../java/net/URI.md))method except that all sequences of escaped octets are [decoded](../java/net/URI.md).
+The string returned by this method is equal to that returned by the [getRawPath](URI.md))method except that all sequences of escaped octets are [decoded](URI.md).
 
 | Return ||
 |-----------------------------------------------------------------------------------|--------------------------------------------------------------------------|
@@ -597,7 +597,7 @@ fun getQuery(): String!
 
 Returns the decoded query component of this URI.
 
-The string returned by this method is equal to that returned by the [getRawQuery](../java/net/URI.md))method except that all sequences of escaped octets are [decoded](../java/net/URI.md).
+The string returned by this method is equal to that returned by the [getRawQuery](URI.md))method except that all sequences of escaped octets are [decoded](URI.md).
 
 | Return ||
 |-----------------------------------------------------------------------------------|----------------------------------------------------------------------------|
@@ -727,7 +727,7 @@ fun getSchemeSpecificPart(): String!
 
 Returns the decoded scheme-specific part of this URI.
 
-The string returned by this method is equal to that returned by the [getRawSchemeSpecificPart](../java/net/URI.md))method except that all sequences of escaped octets are [decoded](../java/net/URI.md).
+The string returned by this method is equal to that returned by the [getRawSchemeSpecificPart](URI.md))method except that all sequences of escaped octets are [decoded](URI.md).
 
 | Return ||
 |-----------------------------------------------------------------------------------|------------------------------------------------------------|
@@ -743,7 +743,7 @@ fun getUserInfo(): String!
 
 Returns the decoded user-information component of this URI.
 
-The string returned by this method is equal to that returned by the [getRawUserInfo](../java/net/URI.md))method except that all sequences of escaped octets are [decoded](../java/net/URI.md).
+The string returned by this method is equal to that returned by the [getRawUserInfo](URI.md))method except that all sequences of escaped octets are [decoded](URI.md).
 
 | Return ||
 |-----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
@@ -757,7 +757,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun hashCode(): Int
 ```
 
-Returns a hash-code value for this URI. The hash code is based upon all of the URI's components, and satisfies the general contract of the [Object.hashCode](../java/lang/Object.md))method.
+Returns a hash-code value for this URI. The hash code is based upon all of the URI's components, and satisfies the general contract of the [Object.hashCode](../java.lang/Object.md))method.
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------|
@@ -815,7 +815,7 @@ A normalized path will begin with one or more`".."`segments if there were insuff
 
 | Return ||
 |----------------------------------------------------------------------|----------------------------------------------------------------|
-| [URI](../java/net/URI.md)! | A URI equivalent to this URI, but whose path is in normal form |
+| [URI](URI.md)! | A URI equivalent to this URI, but whose path is in normal form |
 
 ### parseServerAuthority
 
@@ -840,7 +840,7 @@ can be used to ensure that*u*always refers to a URI that, if it has an authority
 
 | Return ||
 |----------------------------------------------------------------------|-------------------------------------------------------------------------|
-| [URI](../java/net/URI.md)! | A URI whose authority field has been parsed as a server-based authority |
+| [URI](URI.md)! | A URI whose authority field has been parsed as a server-based authority |
 
 | Exceptions ||
 |-------------------------------|--------------------------------------------------------------------------------------------------------------------------|
@@ -863,11 +863,11 @@ The relativization of the given URI against this URI is computed as follows:
 
 | Parameters ||
 |-------|-----------------------------------------------------------------------------------------------------------------|
-| `uri` | [URI](../java/net/URI.md)!:The URI to be relativized against this URI |
+| `uri` | [URI](URI.md)!:The URI to be relativized against this URI |
 
 | Return ||
 |----------------------------------------------------------------------|-------------------|
-| [URI](../java/net/URI.md)! | The resulting URI |
+| [URI](URI.md)! | The resulting URI |
 
 | Exceptions ||
 |----------------------------------|-----------------|
@@ -883,7 +883,7 @@ fun resolve(str: String!): URI!
 
 Constructs a new URI by parsing the given string and then resolving it against this URI.
 
-This convenience method works as if invoking it were equivalent to evaluating the expression [resolve](../java/net/URI.md))`(URI.` [create](../java/net/URI.md))`(str))`.
+This convenience method works as if invoking it were equivalent to evaluating the expression [resolve](URI.md))`(URI.` [create](URI.md))`(str))`.
 
 | Parameters ||
 |-------|----------------------------------------------------------------------------------------------------------------------|
@@ -891,7 +891,7 @@ This convenience method works as if invoking it were equivalent to evaluating th
 
 | Return ||
 |----------------------------------------------------------------------|-------------------|
-| [URI](../java/net/URI.md)! | The resulting URI |
+| [URI](URI.md)! | The resulting URI |
 
 | Exceptions ||
 |--------------------------------------|---------------------------------------|
@@ -919,17 +919,17 @@ Otherwise this method constructs a new hierarchical URI in a manner consistent w
 3. Otherwise the new URI's authority component is copied from this URI, and its path is computed as follows:
 
  1. If the given URI's path is absolute then the new URI's path is taken from the given URI.
- 2. Otherwise the given URI's path is relative, and so the new URI's path is computed by resolving the path of the given URI against the path of this URI. This is done by concatenating all but the last segment of this URI's path, if any, with the given URI's path and then normalizing the result as if by invoking the [normalize](../java/net/URI.md))method.
+ 2. Otherwise the given URI's path is relative, and so the new URI's path is computed by resolving the path of the given URI against the path of this URI. This is done by concatenating all but the last segment of this URI's path, if any, with the given URI's path and then normalizing the result as if by invoking the [normalize](URI.md))method.
 
 The result of this method is absolute if, and only if, either this URI is absolute or the given URI is absolute.
 
 | Parameters ||
 |-------|--------------------------------------------------------------------------------------------------------------|
-| `uri` | [URI](../java/net/URI.md)!:The URI to be resolved against this URI |
+| `uri` | [URI](URI.md)!:The URI to be resolved against this URI |
 
 | Return ||
 |----------------------------------------------------------------------|-------------------|
-| [URI](../java/net/URI.md)! | The resulting URI |
+| [URI](URI.md)! | The resulting URI |
 
 | Exceptions ||
 |----------------------------------|-----------------|
@@ -945,7 +945,7 @@ fun toASCIIString(): String!
 
 Returns the content of this URI as a US-ASCII string.
 
-If this URI does not contain any characters in the*other* category then an invocation of this method will return the same value as an invocation of the [toString](../java/net/URI.md))method. Otherwise this method works as if by invoking that method and then [encoding](../java/net/URI.md) the result.
+If this URI does not contain any characters in the*other* category then an invocation of this method will return the same value as an invocation of the [toString](URI.md))method. Otherwise this method works as if by invoking that method and then [encoding](URI.md) the result.
 
 | Return ||
 |-----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
@@ -981,7 +981,7 @@ This convenience method works as if invoking it were equivalent to evaluating th
 
 | Return ||
 |---------------------------------------------------------------------|---------------------------------|
-| [URL](../java/net/URL.md)! | A URL constructed from this URI |
+| [URL](URL.md)! | A URL constructed from this URI |
 
 | Exceptions ||
 |--------------------------------------|------------------------------------------------------------------------------------------------------------------|

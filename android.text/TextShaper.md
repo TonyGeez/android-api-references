@@ -8,7 +8,7 @@ open class TextShaper
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.text.TextShaper](../android/text/TextShaper.md) |
+| ↳ | [android.text.TextShaper](TextShaper.md) |
 
 Provides text shaping for multi-styled text. Here is an example of animating text size and letter spacing for simple text.
 
@@ -188,7 +188,7 @@ Shape multi-styled text. In the LTR context, the shape result will go from left 
 | `start` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): a start index of shaping target in the text. Value is 0 or greater |
 | `count` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): a length of shaping target in the text. Value is 0 or greater |
 | --- | --- |
-| `dir` | [TextDirectionHeuristic](../android/text/TextDirectionHeuristic.md): a text direction. This value cannot be `null`. |
-| `paint` | [TextPaint](../android/text/TextPaint.md): a paint. This value cannot be `null`. |
+| `dir` | [TextDirectionHeuristic](TextDirectionHeuristic.md): a text direction. This value cannot be `null`. |
+| `paint` | [TextPaint](TextPaint.md): a paint. This value cannot be `null`. |
 | `consumer` | [TextShaper.GlyphsConsumer](../android/text/TextShaper.GlyphsConsumer.md): a consumer of the shape result. This value cannot be `null`. |
 | --- | --- |

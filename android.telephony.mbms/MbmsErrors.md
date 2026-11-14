@@ -4,7 +4,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 
 # MbmsErrors
 
-Kotlin| [Java](../android/telephony/mbms/MbmsErrors.md) 
+Kotlin| [Java](MbmsErrors.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class MbmsErrors
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.telephony.mbms.MbmsErrors](../android/telephony/mbms/MbmsErrors.md) |
+| ↳ | [android.telephony.mbms.MbmsErrors](MbmsErrors.md) |
 
 ## Summary
 
@@ -28,12 +28,12 @@ open class MbmsErrors
 
 | Constants ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_MIDDLEWARE_LOST](../android/telephony/mbms/MbmsErrors.md) Indicates that the middleware has died and the requested operation was not completed. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_MIDDLEWARE_NOT_BOUND](../android/telephony/mbms/MbmsErrors.md) Indicates that the app attempted to perform an operation on an instance of [android.telephony.MbmsDownloadSession](../android/telephony/MbmsDownloadSession.md) or [MbmsStreamingSession](../android/telephony/MbmsStreamingSession.md) without being bound to the middleware. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_NO_UNIQUE_MIDDLEWARE](../android/telephony/mbms/MbmsErrors.md) Indicates that either no MBMS middleware app is installed on the device or multiple middleware apps are installed on the device. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_MIDDLEWARE_LOST](MbmsErrors.md) Indicates that the middleware has died and the requested operation was not completed. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_MIDDLEWARE_NOT_BOUND](MbmsErrors.md) Indicates that the app attempted to perform an operation on an instance of [android.telephony.MbmsDownloadSession](../android.telephony/MbmsDownloadSession.md) or [MbmsStreamingSession](../android.telephony/MbmsStreamingSession.md) without being bound to the middleware. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_NO_UNIQUE_MIDDLEWARE](MbmsErrors.md) Indicates that either no MBMS middleware app is installed on the device or multiple middleware apps are installed on the device. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SUCCESS](../android/telephony/mbms/MbmsErrors.md) Indicates that the operation was successful. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNKNOWN](../android/telephony/mbms/MbmsErrors.md) Indicates that the middleware has sent an error code that is not defined in the version of the SDK targeted by your app. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SUCCESS](MbmsErrors.md) Indicates that the operation was successful. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNKNOWN](MbmsErrors.md) Indicates that the middleware has sent an error code that is not defined in the version of the SDK targeted by your app. |
 
 ## Constants
 
@@ -57,7 +57,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 static val ERROR_MIDDLEWARE_NOT_BOUND: Int
 ```
 
-Indicates that the app attempted to perform an operation on an instance of [android.telephony.MbmsDownloadSession](../android/telephony/MbmsDownloadSession.md) or [MbmsStreamingSession](../android/telephony/MbmsStreamingSession.md) without being bound to the middleware. 
+Indicates that the app attempted to perform an operation on an instance of [android.telephony.MbmsDownloadSession](../android.telephony/MbmsDownloadSession.md) or [MbmsStreamingSession](../android.telephony/MbmsStreamingSession.md) without being bound to the middleware. 
 
  Value: 2
 

@@ -10,7 +10,7 @@ open class AlgorithmParameterGenerator
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.AlgorithmParameterGenerator](../java/security/AlgorithmParameterGenerator.md) |
+| ↳ | [java.security.AlgorithmParameterGenerator](AlgorithmParameterGenerator.md) |
 
 The`AlgorithmParameterGenerator`class is used to generate a set of parameters to be used with a certain algorithm. Parameter generators are constructed using the`getInstance`factory methods (static methods that return instances of a given class).
 
@@ -36,23 +36,23 @@ Android provides the following`AlgorithmParameterGenerator`algorithms:
 
 | Protected constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [AlgorithmParameterGenerator](../java/security/AlgorithmParameterGenerator.md))`(`paramGenSpi:` ` [AlgorithmParameterGeneratorSpi](../java/security/AlgorithmParameterGeneratorSpi.md)!`, `provider:` ` [Provider](../java/security/Provider.md)!`, `algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates an AlgorithmParameterGenerator object. |
+| [AlgorithmParameterGenerator](AlgorithmParameterGenerator.md))`(`paramGenSpi:` ` [AlgorithmParameterGeneratorSpi](AlgorithmParameterGeneratorSpi.md)!`, `provider:` ` [Provider](Provider.md)!`, `algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates an AlgorithmParameterGenerator object. |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [AlgorithmParameters](../java/security/AlgorithmParameters.md)! | [generateParameters](../java/security/AlgorithmParameterGenerator.md))`()` Generates the parameters. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAlgorithm](../java/security/AlgorithmParameterGenerator.md))`()` Returns the standard name of the algorithm this parameter generator is associated with. |
-| openstatic [AlgorithmParameterGenerator](../java/security/AlgorithmParameterGenerator.md)! | [getInstance](../java/security/AlgorithmParameterGenerator.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns an AlgorithmParameterGenerator object for generating a set of parameters to be used with the specified algorithm. |
+| [AlgorithmParameters](AlgorithmParameters.md)! | [generateParameters](AlgorithmParameterGenerator.md))`()` Generates the parameters. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAlgorithm](AlgorithmParameterGenerator.md))`()` Returns the standard name of the algorithm this parameter generator is associated with. |
+| openstatic [AlgorithmParameterGenerator](AlgorithmParameterGenerator.md)! | [getInstance](AlgorithmParameterGenerator.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns an AlgorithmParameterGenerator object for generating a set of parameters to be used with the specified algorithm. |
 | --- | --- |
-| openstatic [AlgorithmParameterGenerator](../java/security/AlgorithmParameterGenerator.md)! | [getInstance](../java/security/AlgorithmParameterGenerator.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns an AlgorithmParameterGenerator object for generating a set of parameters to be used with the specified algorithm. |
-| openstatic [AlgorithmParameterGenerator](../java/security/AlgorithmParameterGenerator.md)! | [getInstance](../java/security/AlgorithmParameterGenerator.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [Provider](../java/security/Provider.md)!`)` Returns an AlgorithmParameterGenerator object for generating a set of parameters to be used with the specified algorithm. |
-| [Provider](../java/security/Provider.md)! | [getProvider](../java/security/AlgorithmParameterGenerator.md))`()` Returns the provider of this algorithm parameter generator object. |
+| openstatic [AlgorithmParameterGenerator](AlgorithmParameterGenerator.md)! | [getInstance](AlgorithmParameterGenerator.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns an AlgorithmParameterGenerator object for generating a set of parameters to be used with the specified algorithm. |
+| openstatic [AlgorithmParameterGenerator](AlgorithmParameterGenerator.md)! | [getInstance](AlgorithmParameterGenerator.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [Provider](Provider.md)!`)` Returns an AlgorithmParameterGenerator object for generating a set of parameters to be used with the specified algorithm. |
+| [Provider](Provider.md)! | [getProvider](AlgorithmParameterGenerator.md))`()` Returns the provider of this algorithm parameter generator object. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](../java/security/AlgorithmParameterGenerator.md))`(`size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Initializes this parameter generator for a certain size. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](../java/security/AlgorithmParameterGenerator.md))`(`size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `random:` ` [SecureRandom](../java/security/SecureRandom.md)!`)` Initializes this parameter generator for a certain size and source of randomness. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](../java/security/AlgorithmParameterGenerator.md))`(`genParamSpec:` ` [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)!`)` Initializes this parameter generator with a set of algorithm-specific parameter generation values. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](AlgorithmParameterGenerator.md))`(`size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Initializes this parameter generator for a certain size. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](AlgorithmParameterGenerator.md))`(`size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `random:` ` [SecureRandom](SecureRandom.md)!`)` Initializes this parameter generator for a certain size and source of randomness. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](AlgorithmParameterGenerator.md))`(`genParamSpec:` ` [AlgorithmParameterSpec](../java.security.spec/AlgorithmParameterSpec.md)!`)` Initializes this parameter generator with a set of algorithm-specific parameter generation values. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](../java/security/AlgorithmParameterGenerator.md))`(`genParamSpec:` ` [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)!`, `random:` ` [SecureRandom](../java/security/SecureRandom.md)!`)` Initializes this parameter generator with a set of algorithm-specific parameter generation values. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](AlgorithmParameterGenerator.md))`(`genParamSpec:` ` [AlgorithmParameterSpec](../java.security.spec/AlgorithmParameterSpec.md)!`, `random:` ` [SecureRandom](SecureRandom.md)!`)` Initializes this parameter generator with a set of algorithm-specific parameter generation values. |
 
 ## Protected constructors
 
@@ -71,8 +71,8 @@ Creates an AlgorithmParameterGenerator object.
 
 | Parameters ||
 |---------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| `paramGenSpi` | [AlgorithmParameterGeneratorSpi](../java/security/AlgorithmParameterGeneratorSpi.md)!:the delegate |
-| `provider` | [Provider](../java/security/Provider.md)!:the provider |
+| `paramGenSpi` | [AlgorithmParameterGeneratorSpi](AlgorithmParameterGeneratorSpi.md)!:the delegate |
+| `provider` | [Provider](Provider.md)!:the provider |
 | `algorithm` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the algorithm |
 | --- | --- |
 
@@ -90,7 +90,7 @@ Generates the parameters.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------|-------------------------------------|
-| [AlgorithmParameters](../java/security/AlgorithmParameters.md)! | the new AlgorithmParameters object. |
+| [AlgorithmParameters](AlgorithmParameters.md)! | the new AlgorithmParameters object. |
 
 ### getAlgorithm
 
@@ -118,7 +118,7 @@ Returns an AlgorithmParameterGenerator object for generating a set of parameters
 
 This method traverses the list of registered security Providers, starting with the most preferred Provider. A new AlgorithmParameterGenerator object encapsulating the AlgorithmParameterGeneratorSpi implementation from the first Provider that supports the specified algorithm is returned.
 
-Note that the list of registered providers may be retrieved via the [Security.getProviders()](../java/security/Security.md))method.
+Note that the list of registered providers may be retrieved via the [Security.getProviders()](Security.md))method.
 
 | Parameters ||
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -126,7 +126,7 @@ Note that the list of registered providers may be retrieved via the [Security.ge
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------|--------------------------------------------|
-| [AlgorithmParameterGenerator](../java/security/AlgorithmParameterGenerator.md)! | the new`AlgorithmParameterGenerator`object |
+| [AlgorithmParameterGenerator](AlgorithmParameterGenerator.md)! | the new`AlgorithmParameterGenerator`object |
 
 | Exceptions ||
 |------------------------------------------|------------------------------------------------------------------------------------------------------|
@@ -135,7 +135,7 @@ Note that the list of registered providers may be retrieved via the [Security.ge
 
 **See Also**
 
-- [java.security.Provider](../java/security/Provider.md) 
+- [java.security.Provider](Provider.md) 
 
 ### getInstance
 
@@ -152,7 +152,7 @@ Returns an AlgorithmParameterGenerator object for generating a set of parameters
 
 A new AlgorithmParameterGenerator object encapsulating the AlgorithmParameterGeneratorSpi implementation from the specified provider is returned. The specified provider must be registered in the security provider list.
 
-Note that the list of registered providers may be retrieved via the [Security.getProviders()](../java/security/Security.md))method.
+Note that the list of registered providers may be retrieved via the [Security.getProviders()](Security.md))method.
 
 | Parameters ||
 |-------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -161,7 +161,7 @@ Note that the list of registered providers may be retrieved via the [Security.ge
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------|--------------------------------------------|
-| [AlgorithmParameterGenerator](../java/security/AlgorithmParameterGenerator.md)! | the new`AlgorithmParameterGenerator`object |
+| [AlgorithmParameterGenerator](AlgorithmParameterGenerator.md)! | the new`AlgorithmParameterGenerator`object |
 
 | Exceptions ||
 |------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
@@ -173,7 +173,7 @@ Note that the list of registered providers may be retrieved via the [Security.ge
 
 **See Also**
 
-- [java.security.Provider](../java/security/Provider.md) 
+- [java.security.Provider](Provider.md) 
 
 ### getInstance
 
@@ -193,11 +193,11 @@ A new AlgorithmParameterGenerator object encapsulating the AlgorithmParameterGen
 | Parameters ||
 |-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `algorithm` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the string name of the algorithm this parameter generator is associated with. |
-| `provider` | [Provider](../java/security/Provider.md)!:the`Provider`object. |
+| `provider` | [Provider](Provider.md)!:the`Provider`object. |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------|--------------------------------------------|
-| [AlgorithmParameterGenerator](../java/security/AlgorithmParameterGenerator.md)! | the new`AlgorithmParameterGenerator`object |
+| [AlgorithmParameterGenerator](AlgorithmParameterGenerator.md)! | the new`AlgorithmParameterGenerator`object |
 
 | Exceptions ||
 |------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
@@ -208,7 +208,7 @@ A new AlgorithmParameterGenerator object encapsulating the AlgorithmParameterGen
 
 **See Also**
 
-- [java.security.Provider](../java/security/Provider.md) 
+- [java.security.Provider](Provider.md) 
 
 ### getProvider
 
@@ -222,7 +222,7 @@ Returns the provider of this algorithm parameter generator object.
 
 | Return ||
 |------------------------------------------------------------------------------------|-----------------------------------------------------------|
-| [Provider](../java/security/Provider.md)! | the provider of this algorithm parameter generator object |
+| [Provider](Provider.md)! | the provider of this algorithm parameter generator object |
 
 ### init
 
@@ -254,7 +254,7 @@ Initializes this parameter generator for a certain size and source of randomness
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------|
 | `size` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the size (number of bits). |
-| `random` | [SecureRandom](../java/security/SecureRandom.md)!:the source of randomness. |
+| `random` | [SecureRandom](SecureRandom.md)!:the source of randomness. |
 
 ### init
 
@@ -268,7 +268,7 @@ Initializes this parameter generator with a set of algorithm-specific parameter 
 
 | Parameters ||
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `genParamSpec` | [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)!:the set of algorithm-specific parameter generation values. |
+| `genParamSpec` | [AlgorithmParameterSpec](../java.security.spec/AlgorithmParameterSpec.md)!:the set of algorithm-specific parameter generation values. |
 
 | Exceptions ||
 |----------------------------------------------------|------------------------------------------------------------------------------------------|
@@ -289,8 +289,8 @@ Initializes this parameter generator with a set of algorithm-specific parameter 
 
 | Parameters ||
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `genParamSpec` | [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)!:the set of algorithm-specific parameter generation values. |
-| `random` | [SecureRandom](../java/security/SecureRandom.md)!:the source of randomness. |
+| `genParamSpec` | [AlgorithmParameterSpec](../java.security.spec/AlgorithmParameterSpec.md)!:the set of algorithm-specific parameter generation values. |
+| `random` | [SecureRandom](SecureRandom.md)!:the source of randomness. |
 
 | Exceptions ||
 |----------------------------------------------------|------------------------------------------------------------------------------------------|

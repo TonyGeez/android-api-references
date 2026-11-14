@@ -8,7 +8,7 @@ class PlaybackSession : AutoCloseable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.metrics.PlaybackSession](../android/media/metrics/PlaybackSession.md) |
+| ↳ | [android.media.metrics.PlaybackSession](PlaybackSession.md) |
 
 An instance of this class represents a session of media playback used to report playback metrics and events. Create a new instance using `https://developer.android.com/reference/kotlin/android/media/metrics/MediaMetricsManager#createPlaybackSession()`.
 
@@ -18,7 +18,7 @@ An instance of this class represents a session of media playback used to report 
 |---|---|
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackSession#close()()` Closes this resource, relinquishing any underlying resources. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackSession#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [LogSessionId](../android/media/metrics/LogSessionId.md) | `https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackSession#getSessionId()()` <br /> |
+| [LogSessionId](LogSessionId.md) | `https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackSession#getSessionId()()` <br /> |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackSession#hashCode()()` Returns a hash code value for the object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/metrics/PlaybackSession#reportBundleMetrics(android.os.PersistableBundle)(metrics: https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#)` <br /> |
@@ -117,7 +117,7 @@ fun reportBundleMetrics(metrics: PersistableBundle): Unit
 
 | Parameters ||
 |---|---|
-| `metrics` | [PersistableBundle](../android/os/PersistableBundle.md): This value cannot be `null`. |
+| `metrics` | [PersistableBundle](../android.os/PersistableBundle.md): This value cannot be `null`. |
 
 ### reportNetworkEvent
 
@@ -131,7 +131,7 @@ Reports network event.
 
 | Parameters ||
 |---|---|
-| `event` | [NetworkEvent](../android/media/metrics/NetworkEvent.md): This value cannot be `null`. |
+| `event` | [NetworkEvent](NetworkEvent.md): This value cannot be `null`. |
 
 ### reportPlaybackErrorEvent
 
@@ -145,7 +145,7 @@ Reports error event.
 
 | Parameters ||
 |---|---|
-| `event` | [PlaybackErrorEvent](../android/media/metrics/PlaybackErrorEvent.md): This value cannot be `null`. |
+| `event` | [PlaybackErrorEvent](PlaybackErrorEvent.md): This value cannot be `null`. |
 
 ### reportPlaybackMetrics
 
@@ -159,7 +159,7 @@ Reports playback metrics.
 
 | Parameters ||
 |---|---|
-| `metrics` | [PlaybackMetrics](../android/media/metrics/PlaybackMetrics.md): This value cannot be `null`. |
+| `metrics` | [PlaybackMetrics](PlaybackMetrics.md): This value cannot be `null`. |
 
 ### reportPlaybackStateEvent
 
@@ -173,7 +173,7 @@ Reports playback state event.
 
 | Parameters ||
 |---|---|
-| `event` | [PlaybackStateEvent](../android/media/metrics/PlaybackStateEvent.md): This value cannot be `null`. |
+| `event` | [PlaybackStateEvent](PlaybackStateEvent.md): This value cannot be `null`. |
 
 ### reportTrackChangeEvent
 
@@ -187,4 +187,4 @@ Reports track change event.
 
 | Parameters ||
 |---|---|
-| `event` | [TrackChangeEvent](../android/media/metrics/TrackChangeEvent.md): This value cannot be `null`. |
+| `event` | [TrackChangeEvent](TrackChangeEvent.md): This value cannot be `null`. |

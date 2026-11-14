@@ -8,17 +8,17 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 @FunctionalInterface interface ObjLongConsumer<T : Any!>
 ```
 
-| [java.util.function.ObjLongConsumer](../java/util/function/ObjLongConsumer.md) |
+| [java.util.function.ObjLongConsumer](ObjLongConsumer.md) |
 
-Represents an operation that accepts an object-valued and a`long`-valued argument, and returns no result. This is the`(reference, long)`specialization of [BiConsumer](../java/util/function/BiConsumer.md). Unlike most other functional interfaces,`ObjLongConsumer`is expected to operate via side-effects.
+Represents an operation that accepts an object-valued and a`long`-valued argument, and returns no result. This is the`(reference, long)`specialization of [BiConsumer](BiConsumer.md). Unlike most other functional interfaces,`ObjLongConsumer`is expected to operate via side-effects.
 
-This is a [functional interface](../java/util/function/_package.md) whose functional method is [accept(java.lang.Object,long)](../java/util/function/ObjLongConsumer.md)).
+This is a [functional interface](_package.md) whose functional method is [accept(java.lang.Object,long)](ObjLongConsumer.md)).
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [accept](../java/util/function/ObjLongConsumer.md))`(`t:` `T`, `value:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Performs this operation on the given arguments. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [accept](ObjLongConsumer.md))`(`t:` `T`, `value:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Performs this operation on the given arguments. |
 
 ## Public methods
 

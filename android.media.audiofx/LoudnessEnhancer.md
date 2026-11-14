@@ -2,7 +2,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 
 # LoudnessEnhancer
 
-Kotlin | [Java](../android/media/audiofx/LoudnessEnhancer.md)
+Kotlin | [Java](LoudnessEnhancer.md)
 | --- | --- |
 
 ```
@@ -11,8 +11,8 @@ open class LoudnessEnhancer : AudioEffect
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.media.audiofx.AudioEffect](../android/media/audiofx/AudioEffect.md) ||
-| | ↳ | [android.media.audiofx.LoudnessEnhancer](../android/media/audiofx/LoudnessEnhancer.md) |
+| ↳ | [android.media.audiofx.AudioEffect](AudioEffect.md) ||
+| | ↳ | [android.media.audiofx.LoudnessEnhancer](LoudnessEnhancer.md) |
 
 LoudnessEnhancer is an audio effect for increasing audio loudness. The processing is parametrized by a target gain value, which determines the maximum amount by which an audio signal will be amplified; signals amplified outside of the sample range supported by the platform are compressed. An application creates a LoudnessEnhancer object to instantiate and control a this audio effect in the audio framework. To attach the LoudnessEnhancer to a particular AudioTrack or MediaPlayer, specify the audio session ID of this AudioTrack or MediaPlayer when constructing the effect (see `https://developer.android.com/reference/kotlin/android/media/AudioTrack.html#getAudioSessionId()` and `https://developer.android.com/reference/kotlin/android/media/MediaPlayer.html#getAudioSessionId()`).
 

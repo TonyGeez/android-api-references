@@ -16,13 +16,13 @@ interface OnContextClickListener
 | Known Direct Subclasses [GestureDetector.SimpleOnGestureListener](../android/view/GestureDetector.SimpleOnGestureListener.md) |------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------| | [GestureDetector.SimpleOnGestureListener](../android/view/GestureDetector.SimpleOnGestureListener.md) | A convenience class to extend when you only want to listen for a subset of all the gestures. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
-The listener that is used to notify when a context click occurs. When listening for a context click ensure that you call [onGenericMotionEvent(android.view.MotionEvent)](../android/view/GestureDetector.md))in [View.onGenericMotionEvent(MotionEvent)](../android/view/View.md)).
+The listener that is used to notify when a context click occurs. When listening for a context click ensure that you call [onGenericMotionEvent(android.view.MotionEvent)](GestureDetector.md))in [View.onGenericMotionEvent(MotionEvent)](View.md)).
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onContextClick](../android/view/GestureDetector.OnContextClickListener.md))`(`e:` ` [MotionEvent](../android/view/MotionEvent.md)`)` Notified when a context click occurs. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onContextClick](../android/view/GestureDetector.OnContextClickListener.md))`(`e:` ` [MotionEvent](MotionEvent.md)`)` Notified when a context click occurs. |
 
 ## Public methods
 
@@ -38,7 +38,7 @@ Notified when a context click occurs.
 
 | Parameters ||
 |-----|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `e` | [MotionEvent](../android/view/MotionEvent.md):The motion event that occurred during the context click. This value cannot be`null`. |
+| `e` | [MotionEvent](MotionEvent.md):The motion event that occurred during the context click. This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------------------------|

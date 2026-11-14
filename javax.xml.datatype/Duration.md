@@ -10,7 +10,7 @@ abstract class Duration
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.xml.datatype.Duration](../javax/xml/datatype/Duration.md) |
+| ↳ | [javax.xml.datatype.Duration](Duration.md) |
 
 Immutable representation of a time span as defined in the W3C XML Schema 1.0 specification.
 
@@ -29,9 +29,9 @@ Duration objects only have partial order, where two values A and B maybe either:
 3. A==B (A and B are of the same duration)
 4. A\<\>B (Comparison between A and B is indeterminate)
 
-For example, 30 days cannot be meaningfully compared to one month. The [compare(javax.xml.datatype.Duration)](../javax/xml/datatype/Duration.md))method implements this relationship.
+For example, 30 days cannot be meaningfully compared to one month. The [compare(javax.xml.datatype.Duration)](Duration.md))method implements this relationship.
 
-See the [isLongerThan(javax.xml.datatype.Duration)](../javax/xml/datatype/Duration.md))method for details about the order relationship among`Duration`objects.
+See the [isLongerThan(javax.xml.datatype.Duration)](Duration.md))method for details about the order relationship among`Duration`objects.
 
 ## Operations over Duration
 
@@ -43,50 +43,50 @@ However, you could substitute a division by 3 with multiplying by numbers such a
 
 ## Range of allowed values
 
-Because some operations of`Duration`rely on [Calendar](../java/util/Calendar.md) even though [Duration](../javax/xml/datatype/Duration.md) can hold very large or very small values, some of the methods may not work correctly on such`Duration`s. The impacted methods document their dependency on [Calendar](../java/util/Calendar.md).
+Because some operations of`Duration`rely on [Calendar](../java.util/Calendar.md) even though [Duration](Duration.md) can hold very large or very small values, some of the methods may not work correctly on such`Duration`s. The impacted methods document their dependency on [Calendar](../java.util/Calendar.md).
 
 ## Summary
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------|---|
-| [Duration](../javax/xml/datatype/Duration.md))`()` <br /> |
+| [Duration](Duration.md))`()` <br /> |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Duration](../javax/xml/datatype/Duration.md)! | [add](../javax/xml/datatype/Duration.md))`(`rhs:` ` [Duration](../javax/xml/datatype/Duration.md)!`)` Computes a new duration whose value is`this+rhs`. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addTo](../javax/xml/datatype/Duration.md))`(`calendar:` ` [Calendar](../java/util/Calendar.md)!`)` Adds this duration to a [Calendar](../java/util/Calendar.md) object. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addTo](../javax/xml/datatype/Duration.md))`(`date:` ` [Date](../java/util/Date.md)!`)` Adds this duration to a [Date](../java/util/Date.md) object. |
+| abstract [Duration](Duration.md)! | [add](Duration.md))`(`rhs:` ` [Duration](Duration.md)!`)` Computes a new duration whose value is`this+rhs`. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addTo](Duration.md))`(`calendar:` ` [Calendar](../java.util/Calendar.md)!`)` Adds this duration to a [Calendar](../java.util/Calendar.md) object. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addTo](Duration.md))`(`date:` ` [Date](../java.util/Date.md)!`)` Adds this duration to a [Date](../java.util/Date.md) object. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compare](../javax/xml/datatype/Duration.md))`(`duration:` ` [Duration](../javax/xml/datatype/Duration.md)!`)` Partial order relation comparison with this`Duration`instance. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../javax/xml/datatype/Duration.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Checks if this duration object has the same duration as another`Duration`object. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDays](../javax/xml/datatype/Duration.md))`()` Obtains the value of the DAYS field as an integer value, or 0 if not present. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compare](Duration.md))`(`duration:` ` [Duration](Duration.md)!`)` Partial order relation comparison with this`Duration`instance. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](Duration.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Checks if this duration object has the same duration as another`Duration`object. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDays](Duration.md))`()` Obtains the value of the DAYS field as an integer value, or 0 if not present. |
 | --- | --- |
-| abstract [Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html)! | [getField](../javax/xml/datatype/Duration.md))`(`field:` ` [DatatypeConstants.Field](../javax/xml/datatype/DatatypeConstants.Field.md)!`)` Gets the value of a field. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHours](../javax/xml/datatype/Duration.md))`()` Obtains the value of the HOURS field as an integer value, or 0 if not present. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMinutes](../javax/xml/datatype/Duration.md))`()` Obtains the value of the MINUTES field as an integer value, or 0 if not present. |
+| abstract [Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html)! | [getField](Duration.md))`(`field:` ` [DatatypeConstants.Field](../javax/xml/datatype/DatatypeConstants.Field.md)!`)` Gets the value of a field. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHours](Duration.md))`()` Obtains the value of the HOURS field as an integer value, or 0 if not present. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMinutes](Duration.md))`()` Obtains the value of the MINUTES field as an integer value, or 0 if not present. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMonths](../javax/xml/datatype/Duration.md))`()` Obtains the value of the MONTHS field as an integer value, or 0 if not present. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSeconds](../javax/xml/datatype/Duration.md))`()` Obtains the value of the SECONDS field as an integer value, or 0 if not present. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSign](../javax/xml/datatype/Duration.md))`()` Returns the sign of this duration in -1,0, or 1. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMonths](Duration.md))`()` Obtains the value of the MONTHS field as an integer value, or 0 if not present. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSeconds](Duration.md))`()` Obtains the value of the SECONDS field as an integer value, or 0 if not present. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSign](Duration.md))`()` Returns the sign of this duration in -1,0, or 1. |
 | --- | --- |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTimeInMillis](../javax/xml/datatype/Duration.md))`(`startInstant:` ` [Calendar](../java/util/Calendar.md)!`)` Returns the length of the duration in milliseconds. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTimeInMillis](../javax/xml/datatype/Duration.md))`(`startInstant:` ` [Date](../java/util/Date.md)!`)` Returns the length of the duration in milliseconds. |
-| open [QName](../javax/xml/namespace/QName.md)! | [getXMLSchemaType](../javax/xml/datatype/Duration.md))`()` Return the name of the XML Schema date/time type that this instance maps to. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTimeInMillis](Duration.md))`(`startInstant:` ` [Calendar](../java.util/Calendar.md)!`)` Returns the length of the duration in milliseconds. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTimeInMillis](Duration.md))`(`startInstant:` ` [Date](../java.util/Date.md)!`)` Returns the length of the duration in milliseconds. |
+| open [QName](../javax.xml.namespace/QName.md)! | [getXMLSchemaType](Duration.md))`()` Return the name of the XML Schema date/time type that this instance maps to. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getYears](../javax/xml/datatype/Duration.md))`()` Get the years value of this`Duration`as an`int`or`0`if not present. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../javax/xml/datatype/Duration.md))`()` Returns a hash code consistent with the definition of the equals method. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLongerThan](../javax/xml/datatype/Duration.md))`(`duration:` ` [Duration](../javax/xml/datatype/Duration.md)!`)` Checks if this duration object is strictly longer than another`Duration`object. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getYears](Duration.md))`()` Get the years value of this`Duration`as an`int`or`0`if not present. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](Duration.md))`()` Returns a hash code consistent with the definition of the equals method. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLongerThan](Duration.md))`(`duration:` ` [Duration](Duration.md)!`)` Checks if this duration object is strictly longer than another`Duration`object. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSet](../javax/xml/datatype/Duration.md))`(`field:` ` [DatatypeConstants.Field](../javax/xml/datatype/DatatypeConstants.Field.md)!`)` Checks if a field is set. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isShorterThan](../javax/xml/datatype/Duration.md))`(`duration:` ` [Duration](../javax/xml/datatype/Duration.md)!`)` Checks if this duration object is strictly shorter than another`Duration`object. |
-| open [Duration](../javax/xml/datatype/Duration.md)! | [multiply](../javax/xml/datatype/Duration.md))`(`factor:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Computes a new duration whose value is`factor`times longer than the value of this duration. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSet](Duration.md))`(`field:` ` [DatatypeConstants.Field](../javax/xml/datatype/DatatypeConstants.Field.md)!`)` Checks if a field is set. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isShorterThan](Duration.md))`(`duration:` ` [Duration](Duration.md)!`)` Checks if this duration object is strictly shorter than another`Duration`object. |
+| open [Duration](Duration.md)! | [multiply](Duration.md))`(`factor:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Computes a new duration whose value is`factor`times longer than the value of this duration. |
 | --- | --- |
-| abstract [Duration](../javax/xml/datatype/Duration.md)! | [multiply](../javax/xml/datatype/Duration.md))`(`factor:` ` [BigDecimal](../java/math/BigDecimal.md)!`)` Computes a new duration whose value is`factor`times longer than the value of this duration. |
-| abstract [Duration](../javax/xml/datatype/Duration.md)! | [negate](../javax/xml/datatype/Duration.md))`()` Returns a new`Duration`object whose value is`-this`. |
-| abstract [Duration](../javax/xml/datatype/Duration.md)! | [normalizeWith](../javax/xml/datatype/Duration.md))`(`startTimeInstant:` ` [Calendar](../java/util/Calendar.md)!`)` Converts the years and months fields into the days field by using a specific time instant as the reference point. |
+| abstract [Duration](Duration.md)! | [multiply](Duration.md))`(`factor:` ` [BigDecimal](../java.math/BigDecimal.md)!`)` Computes a new duration whose value is`factor`times longer than the value of this duration. |
+| abstract [Duration](Duration.md)! | [negate](Duration.md))`()` Returns a new`Duration`object whose value is`-this`. |
+| abstract [Duration](Duration.md)! | [normalizeWith](Duration.md))`(`startTimeInstant:` ` [Calendar](../java.util/Calendar.md)!`)` Converts the years and months fields into the days field by using a specific time instant as the reference point. |
 | --- | --- |
-| open [Duration](../javax/xml/datatype/Duration.md)! | [subtract](../javax/xml/datatype/Duration.md))`(`rhs:` ` [Duration](../javax/xml/datatype/Duration.md)!`)` Computes a new duration whose value is`this-rhs`. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../javax/xml/datatype/Duration.md))`()` Returns a`String`representation of this`Duration``Object`. |
+| open [Duration](Duration.md)! | [subtract](Duration.md))`(`rhs:` ` [Duration](Duration.md)!`)` Computes a new duration whose value is`this-rhs`. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](Duration.md))`()` Returns a`String`representation of this`Duration``Object`. |
 
 ## Public constructors
 
@@ -121,7 +121,7 @@ For example,
   
 ```
 
-Since there's no way to meaningfully subtract 1 day from 1 month, there are cases where the operation fails in [IllegalStateException](../java/lang/IllegalStateException.md).
+Since there's no way to meaningfully subtract 1 day from 1 month, there are cases where the operation fails in [IllegalStateException](../java.lang/IllegalStateException.md).
 
 Formally, the computation is defined as follows.
 
@@ -135,11 +135,11 @@ Note that`lhs.add(rhs)`will be always successful if`lhs.signum()*rhs.signum()!=-
 
 | Parameters ||
 |-------|-----------------------------------------------------------------------------------------------------------------------------|
-| `rhs` | [Duration](../javax/xml/datatype/Duration.md)!:`Duration`to add to this`Duration` |
+| `rhs` | [Duration](Duration.md)!:`Duration`to add to this`Duration` |
 
 | Return ||
 |------------------------------------------------------------------------------------------|---------------------------------|
-| [Duration](../javax/xml/datatype/Duration.md)! | non-null valid Duration object. |
+| [Duration](Duration.md)! | non-null valid Duration object. |
 
 | Exceptions ||
 |-----------------------------------|-------------------------------------------------------------------------------------------------------------------------|
@@ -148,7 +148,7 @@ Note that`lhs.add(rhs)`will be always successful if`lhs.signum()*rhs.signum()!=-
 
 **See Also**
 
-- [#subtract(Duration)](../javax/xml/datatype/Duration.md)) 
+- [#subtract(Duration)](Duration.md)) 
 
 ### addTo
 
@@ -158,19 +158,19 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun addTo(calendar: Calendar!): Unit
 ```
 
-Adds this duration to a [Calendar](../java/util/Calendar.md) object.
+Adds this duration to a [Calendar](../java.util/Calendar.md) object.
 
-Calls [java.util.Calendar#add(int,int)](../java/util/Calendar.md))in the order of YEARS, MONTHS, DAYS, HOURS, MINUTES, SECONDS, and MILLISECONDS if those fields are present. Because the [Calendar](../java/util/Calendar.md) class uses int to hold values, there are cases where this method won't work correctly (for example if values of fields exceed the range of int.)
+Calls [java.util.Calendar#add(int,int)](../java.util/Calendar.md))in the order of YEARS, MONTHS, DAYS, HOURS, MINUTES, SECONDS, and MILLISECONDS if those fields are present. Because the [Calendar](../java.util/Calendar.md) class uses int to hold values, there are cases where this method won't work correctly (for example if values of fields exceed the range of int.)
 
-Also, since this duration class is a Gregorian duration, this method will not work correctly if the given [Calendar](../java/util/Calendar.md) object is based on some other calendar systems.
+Also, since this duration class is a Gregorian duration, this method will not work correctly if the given [Calendar](../java.util/Calendar.md) object is based on some other calendar systems.
 
 Any fractional parts of this`Duration`object beyond milliseconds will be simply ignored. For example, if this duration is "P1.23456S", then 1 is added to SECONDS, 234 is added to MILLISECONDS, and the rest will be unused.
 
-Note that because [Calendar.add(int, int)](../java/util/Calendar.md))is using int,`Duration`with values beyond the range of int in its fields will cause overflow/underflow to the given [Calendar](../java/util/Calendar.md). [XMLGregorianCalendar.add(Duration)](../javax/xml/datatype/XMLGregorianCalendar.md))provides the same basic operation as this method while avoiding the overflow/underflow issues.
+Note that because [Calendar.add(int, int)](../java.util/Calendar.md))is using int,`Duration`with values beyond the range of int in its fields will cause overflow/underflow to the given [Calendar](../java.util/Calendar.md). [XMLGregorianCalendar.add(Duration)](XMLGregorianCalendar.md))provides the same basic operation as this method while avoiding the overflow/underflow issues.
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------------------|
-| `calendar` | [Calendar](../java/util/Calendar.md)!:A calendar object whose value will be modified. |
+| `calendar` | [Calendar](../java.util/Calendar.md)!:A calendar object whose value will be modified. |
 
 | Exceptions ||
 |----------------------------------|------------------------------------|
@@ -184,17 +184,17 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 open fun addTo(date: Date!): Unit
 ```
 
-Adds this duration to a [Date](../java/util/Date.md) object.
+Adds this duration to a [Date](../java.util/Date.md) object.
 
-The given date is first converted into a [java.util.GregorianCalendar](../java/util/GregorianCalendar.md), then the duration is added exactly like the [addTo(java.util.Calendar)](../javax/xml/datatype/Duration.md))method.
+The given date is first converted into a [java.util.GregorianCalendar](../java.util/GregorianCalendar.md), then the duration is added exactly like the [addTo(java.util.Calendar)](Duration.md))method.
 
-The updated time instant is then converted back into a [Date](../java/util/Date.md) object and used to update the given [Date](../java/util/Date.md) object.
+The updated time instant is then converted back into a [Date](../java.util/Date.md) object and used to update the given [Date](../java.util/Date.md) object.
 
 This somewhat redundant computation is necessary to unambiguously determine the duration of months and years.
 
 | Parameters ||
 |--------|--------------------------------------------------------------------------------------------------------------------------|
-| `date` | [Date](../java/util/Date.md)!:A date object whose value will be modified. |
+| `date` | [Date](../java.util/Date.md)!:A date object whose value will be modified. |
 
 | Exceptions ||
 |----------------------------------|--------------------------------|
@@ -214,18 +214,18 @@ Comparison result must be in accordance with [W3C XML Schema 1.0 Part 2, Section
 
 Return:
 
-- [DatatypeConstants.LESSER](../javax/xml/datatype/DatatypeConstants.md) if this`Duration`is shorter than`duration`parameter
-- [DatatypeConstants.EQUAL](../javax/xml/datatype/DatatypeConstants.md) if this`Duration`is equal to`duration`parameter
-- [DatatypeConstants.GREATER](../javax/xml/datatype/DatatypeConstants.md) if this`Duration`is longer than`duration`parameter
-- [DatatypeConstants.INDETERMINATE](../javax/xml/datatype/DatatypeConstants.md) if a conclusive partial order relation cannot be determined
+- [DatatypeConstants.LESSER](DatatypeConstants.md) if this`Duration`is shorter than`duration`parameter
+- [DatatypeConstants.EQUAL](DatatypeConstants.md) if this`Duration`is equal to`duration`parameter
+- [DatatypeConstants.GREATER](DatatypeConstants.md) if this`Duration`is longer than`duration`parameter
+- [DatatypeConstants.INDETERMINATE](DatatypeConstants.md) if a conclusive partial order relation cannot be determined
 
 | Parameters ||
 |------------|-----------------------------------------------------------------------------------------------------|
-| `duration` | [Duration](../javax/xml/datatype/Duration.md)!:to compare |
+| `duration` | [Duration](Duration.md)!:to compare |
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the relationship between`this``Duration`and`duration`parameter as [DatatypeConstants.LESSER](../javax/xml/datatype/DatatypeConstants.md), [DatatypeConstants.EQUAL](../javax/xml/datatype/DatatypeConstants.md), [DatatypeConstants.GREATER](../javax/xml/datatype/DatatypeConstants.md) or [DatatypeConstants.INDETERMINATE](../javax/xml/datatype/DatatypeConstants.md). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the relationship between`this``Duration`and`duration`parameter as [DatatypeConstants.LESSER](DatatypeConstants.md), [DatatypeConstants.EQUAL](DatatypeConstants.md), [DatatypeConstants.GREATER](DatatypeConstants.md) or [DatatypeConstants.INDETERMINATE](DatatypeConstants.md). |
 
 | Exceptions ||
 |-------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -234,8 +234,8 @@ Return:
 
 **See Also**
 
-- [#isShorterThan(Duration)](../javax/xml/datatype/Duration.md))
-- [#isLongerThan(Duration)](../javax/xml/datatype/Duration.md)) 
+- [#isShorterThan(Duration)](Duration.md))
+- [#isLongerThan(Duration)](Duration.md)) 
 
 ### equals
 
@@ -275,7 +275,7 @@ Note that there are cases where two`Duration`s are "incomparable" to each other,
 
 **See Also**
 
-- [#compare(Duration duration)](../javax/xml/datatype/Duration.md)) 
+- [#compare(Duration duration)](Duration.md)) 
 
 ### getDays
 
@@ -285,7 +285,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 open fun getDays(): Int
 ```
 
-Obtains the value of the DAYS field as an integer value, or 0 if not present. This method works just like [getYears()](../javax/xml/datatype/Duration.md))except that this method works on the DAYS field.
+Obtains the value of the DAYS field as an integer value, or 0 if not present. This method works just like [getYears()](Duration.md))except that this method works on the DAYS field.
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------|
@@ -299,7 +299,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun getField(field: DatatypeConstants.Field!): Number!
 ```
 
-Gets the value of a field. Fields of a duration object may contain arbitrary large value. Therefore this method is designed to return a [Number](../java/lang/Number.md) object. In case of YEARS, MONTHS, DAYS, HOURS, and MINUTES, the returned number will be a non-negative integer. In case of seconds, the returned number may be a non-negative decimal value.
+Gets the value of a field. Fields of a duration object may contain arbitrary large value. Therefore this method is designed to return a [Number](../java.lang/Number.md) object. In case of YEARS, MONTHS, DAYS, HOURS, and MINUTES, the returned number will be a non-negative integer. In case of seconds, the returned number may be a non-negative decimal value.
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -307,7 +307,7 @@ Gets the value of a field. Fields of a duration object may contain arbitrary lar
 
 | Return ||
 |-----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html)! | If the specified field is present, this method returns a non-null non-negative [Number](../java/lang/Number.md) object that represents its value. If it is not present, return null. For YEARS, MONTHS, DAYS, HOURS, and MINUTES, this method returns a [java.math.BigInteger](../java/math/BigInteger.md) object. For SECONDS, this method returns a [java.math.BigDecimal](../java/math/BigDecimal.md). |
+| [Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html)! | If the specified field is present, this method returns a non-null non-negative [Number](../java.lang/Number.md) object that represents its value. If it is not present, return null. For YEARS, MONTHS, DAYS, HOURS, and MINUTES, this method returns a [java.math.BigInteger](../java.math/BigInteger.md) object. For SECONDS, this method returns a [java.math.BigDecimal](../java.math/BigDecimal.md). |
 
 | Exceptions ||
 |----------------------------------|------------------------|
@@ -321,7 +321,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 open fun getHours(): Int
 ```
 
-Obtains the value of the HOURS field as an integer value, or 0 if not present. This method works just like [getYears()](../javax/xml/datatype/Duration.md))except that this method works on the HOURS field.
+Obtains the value of the HOURS field as an integer value, or 0 if not present. This method works just like [getYears()](Duration.md))except that this method works on the HOURS field.
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------|
@@ -335,7 +335,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 open fun getMinutes(): Int
 ```
 
-Obtains the value of the MINUTES field as an integer value, or 0 if not present. This method works just like [getYears()](../javax/xml/datatype/Duration.md))except that this method works on the MINUTES field.
+Obtains the value of the MINUTES field as an integer value, or 0 if not present. This method works just like [getYears()](Duration.md))except that this method works on the MINUTES field.
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------|
@@ -349,7 +349,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 open fun getMonths(): Int
 ```
 
-Obtains the value of the MONTHS field as an integer value, or 0 if not present. This method works just like [getYears()](../javax/xml/datatype/Duration.md))except that this method works on the MONTHS field.
+Obtains the value of the MONTHS field as an integer value, or 0 if not present. This method works just like [getYears()](Duration.md))except that this method works on the MONTHS field.
 
 | Return ||
 |----------------------------------------------------------------------------|---------------------------|
@@ -363,7 +363,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 open fun getSeconds(): Int
 ```
 
-Obtains the value of the SECONDS field as an integer value, or 0 if not present. This method works just like [getYears()](../javax/xml/datatype/Duration.md))except that this method works on the SECONDS field.
+Obtains the value of the SECONDS field as an integer value, or 0 if not present. This method works just like [getYears()](Duration.md))except that this method works on the SECONDS field.
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
@@ -401,11 +401,11 @@ If the seconds field carries more digits than millisecond order, those will be s
   
 ```
 
-Note that this method uses the [addTo(java.util.Calendar)](../javax/xml/datatype/Duration.md))method, which may work incorrectly with`Duration`objects with very large values in its fields. See the [addTo(java.util.Calendar)](../javax/xml/datatype/Duration.md))method for details.
+Note that this method uses the [addTo(java.util.Calendar)](Duration.md))method, which may work incorrectly with`Duration`objects with very large values in its fields. See the [addTo(java.util.Calendar)](Duration.md))method for details.
 
 | Parameters ||
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `startInstant` | [Calendar](../java/util/Calendar.md)!:The length of a month/year varies. The`startInstant`is used to disambiguate this variance. Specifically, this method returns the difference between`startInstant`and`startInstant+duration` |
+| `startInstant` | [Calendar](../java.util/Calendar.md)!:The length of a month/year varies. The`startInstant`is used to disambiguate this variance. Specifically, this method returns the difference between`startInstant`and`startInstant+duration` |
 
 | Return ||
 |------------------------------------------------------------------------------|------------------------------------------------------------------------|
@@ -433,11 +433,11 @@ If the seconds field carries more digits than millisecond order, those will be s
   
 ```
 
-Note that this method uses the [addTo(java.util.Date)](../javax/xml/datatype/Duration.md))method, which may work incorrectly with`Duration`objects with very large values in its fields. See the [addTo(java.util.Date)](../javax/xml/datatype/Duration.md))method for details.
+Note that this method uses the [addTo(java.util.Date)](Duration.md))method, which may work incorrectly with`Duration`objects with very large values in its fields. See the [addTo(java.util.Date)](Duration.md))method for details.
 
 | Parameters ||
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `startInstant` | [Date](../java/util/Date.md)!:The length of a month/year varies. The`startInstant`is used to disambiguate this variance. Specifically, this method returns the difference between`startInstant`and`startInstant+duration`. |
+| `startInstant` | [Date](../java.util/Date.md)!:The length of a month/year varies. The`startInstant`is used to disambiguate this variance. Specifically, this method returns the difference between`startInstant`and`startInstant+duration`. |
 
 | Return ||
 |------------------------------------------------------------------------------|------------------------------------------------------------------------|
@@ -449,7 +449,7 @@ Note that this method uses the [addTo(java.util.Date)](../javax/xml/datatype/Dur
 
 **See Also**
 
-- [#getTimeInMillis(Calendar)](../javax/xml/datatype/Duration.md)) 
+- [#getTimeInMillis(Calendar)](Duration.md)) 
 
 ### getXMLSchemaType
 
@@ -459,19 +459,19 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 open fun getXMLSchemaType(): QName!
 ```
 
-Return the name of the XML Schema date/time type that this instance maps to. Type is computed based on fields that are set, i.e. [isSet(javax.xml.datatype.DatatypeConstants.Field)](../javax/xml/datatype/Duration.md))==`true`.
+Return the name of the XML Schema date/time type that this instance maps to. Type is computed based on fields that are set, i.e. [isSet(javax.xml.datatype.DatatypeConstants.Field)](Duration.md))==`true`.
 
 | Required fields for XML Schema 1.0 Date/Time Datatypes. *(timezone is optional for all date/time datatypes)* |||||||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------|-------|-----|------|--------|--------|
 | Datatype | year | month | day | hour | minute | second |
-| [DatatypeConstants.DURATION](../javax/xml/datatype/DatatypeConstants.md) | X | X | X | X | X | X |
-| [DatatypeConstants.DURATION_DAYTIME](../javax/xml/datatype/DatatypeConstants.md) | | | X | X | X | X |
+| [DatatypeConstants.DURATION](DatatypeConstants.md) | X | X | X | X | X | X |
+| [DatatypeConstants.DURATION_DAYTIME](DatatypeConstants.md) | | | X | X | X | X |
 | --- | --- | --- | --- | --- | --- | --- |
-| [DatatypeConstants.DURATION_YEARMONTH](../javax/xml/datatype/DatatypeConstants.md) | X | X | | | | |
+| [DatatypeConstants.DURATION_YEARMONTH](DatatypeConstants.md) | X | X | | | | |
 
 | Return ||
 |------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [QName](../javax/xml/namespace/QName.md)! | one of the following constants: [DatatypeConstants.DURATION](../javax/xml/datatype/DatatypeConstants.md), [DatatypeConstants.DURATION_DAYTIME](../javax/xml/datatype/DatatypeConstants.md) or [DatatypeConstants.DURATION_YEARMONTH](../javax/xml/datatype/DatatypeConstants.md). |
+| [QName](../javax.xml.namespace/QName.md)! | one of the following constants: [DatatypeConstants.DURATION](DatatypeConstants.md), [DatatypeConstants.DURATION_DAYTIME](DatatypeConstants.md) or [DatatypeConstants.DURATION_YEARMONTH](DatatypeConstants.md). |
 
 | Exceptions ||
 |-----------------------------------|--------------------------------------------------------------------------------------------|
@@ -487,9 +487,9 @@ open fun getYears(): Int
 
 Get the years value of this`Duration`as an`int`or`0`if not present.
 
-`getYears()`is a convenience method for [getField(DatatypeConstants.YEARS)](../javax/xml/datatype/Duration.md)).
+`getYears()`is a convenience method for [getField(DatatypeConstants.YEARS)](Duration.md)).
 
-As the return value is an`int`, an incorrect value will be returned for`Duration`s with years that go beyond the range of an`int`. Use [getField(DatatypeConstants.YEARS)](../javax/xml/datatype/Duration.md))to avoid possible loss of precision.
+As the return value is an`int`, an incorrect value will be returned for`Duration`s with years that go beyond the range of an`int`. Use [getField(DatatypeConstants.YEARS)](Duration.md))to avoid possible loss of precision.
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------|
@@ -511,7 +511,7 @@ Returns a hash code consistent with the definition of the equals method.
 
 **See Also**
 
-- [java.lang.Object#hashCode()](../java/lang/Object.md)) 
+- [java.lang.Object#hashCode()](../java.lang/Object.md)) 
 
 ### isLongerThan
 
@@ -529,7 +529,7 @@ For example, "P1D" (one day) \> "PT12H" (12 hours) and "P2Y" (two years) \> "P23
 
 | Parameters ||
 |------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| `duration` | [Duration](../javax/xml/datatype/Duration.md)!:`Duration`to test this`Duration`against. |
+| `duration` | [Duration](Duration.md)!:`Duration`to test this`Duration`against. |
 
 | Return ||
 |------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
@@ -542,8 +542,8 @@ For example, "P1D" (one day) \> "PT12H" (12 hours) and "P2Y" (two years) \> "P23
 
 **See Also**
 
-- [#isShorterThan(Duration)](../javax/xml/datatype/Duration.md))
-- [#compare(Duration duration)](../javax/xml/datatype/Duration.md)) 
+- [#isShorterThan(Duration)](Duration.md))
+- [#compare(Duration duration)](Duration.md)) 
 
 ### isSet
 
@@ -579,7 +579,7 @@ Checks if this duration object is strictly shorter than another`Duration`object.
 
 | Parameters ||
 |------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| `duration` | [Duration](../javax/xml/datatype/Duration.md)!:`Duration`to test this`Duration`against. |
+| `duration` | [Duration](Duration.md)!:`Duration`to test this`Duration`against. |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
@@ -592,8 +592,8 @@ Checks if this duration object is strictly shorter than another`Duration`object.
 
 **See Also**
 
-- [#isLongerThan(Duration duration)](../javax/xml/datatype/Duration.md))
-- [#compare(Duration duration)](../javax/xml/datatype/Duration.md)) 
+- [#isLongerThan(Duration duration)](Duration.md))
+- [#compare(Duration duration)](Duration.md)) 
 
 ### multiply
 
@@ -618,11 +618,11 @@ multiply(new BigDecimal(String.valueOf(factor)))
 
 | Return ||
 |------------------------------------------------------------------------------------------|---------------------------------------------------------------|
-| [Duration](../javax/xml/datatype/Duration.md)! | New`Duration`that is`factor`times longer than this`Duration`. |
+| [Duration](Duration.md)! | New`Duration`that is`factor`times longer than this`Duration`. |
 
 **See Also**
 
-- [#multiply(BigDecimal)](../javax/xml/datatype/Duration.md)) 
+- [#multiply(BigDecimal)](Duration.md)) 
 
 ### multiply
 
@@ -645,17 +645,17 @@ For example,
 
 Since the`Duration`class is immutable, this method doesn't change the value of this object. It simply computes a new Duration object and returns it.
 
-The operation will be performed field by field with the precision of [BigDecimal](../java/math/BigDecimal.md). Since all the fields except seconds are restricted to hold integers, any fraction produced by the computation will be carried down toward the next lower unit. For example, if you multiply "P1D" (1 day) with "0.5", then it will be 0.5 day, which will be carried down to "PT12H" (12 hours). When fractions of month cannot be meaningfully carried down to days, or year to months, this will cause an [IllegalStateException](../java/lang/IllegalStateException.md) to be thrown. For example if you multiple one month by 0.5.
+The operation will be performed field by field with the precision of [BigDecimal](../java.math/BigDecimal.md). Since all the fields except seconds are restricted to hold integers, any fraction produced by the computation will be carried down toward the next lower unit. For example, if you multiply "P1D" (1 day) with "0.5", then it will be 0.5 day, which will be carried down to "PT12H" (12 hours). When fractions of month cannot be meaningfully carried down to days, or year to months, this will cause an [IllegalStateException](../java.lang/IllegalStateException.md) to be thrown. For example if you multiple one month by 0.5.
 
-To avoid [IllegalStateException](../java/lang/IllegalStateException.md), use the [normalizeWith(java.util.Calendar)](../javax/xml/datatype/Duration.md))method to remove the years and months fields.
+To avoid [IllegalStateException](../java.lang/IllegalStateException.md), use the [normalizeWith(java.util.Calendar)](Duration.md))method to remove the years and months fields.
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------|
-| `factor` | [BigDecimal](../java/math/BigDecimal.md)!:to multiply by |
+| `factor` | [BigDecimal](../java.math/BigDecimal.md)!:to multiply by |
 
 | Return ||
 |------------------------------------------------------------------------------------------|------------------------------------------|
-| [Duration](../javax/xml/datatype/Duration.md)! | returns a non-null valid`Duration`object |
+| [Duration](Duration.md)! | returns a non-null valid`Duration`object |
 
 | Exceptions ||
 |-----------------------------------|-----------------------------------------------------|
@@ -676,7 +676,7 @@ Since the`Duration`class is immutable, this method doesn't change the value of t
 
 | Return ||
 |------------------------------------------------------------------------------------------|-------------------------------------------------|
-| [Duration](../javax/xml/datatype/Duration.md)! | always return a non-null valid`Duration`object. |
+| [Duration](Duration.md)! | always return a non-null valid`Duration`object. |
 
 ### normalizeWith
 
@@ -693,7 +693,7 @@ For example, duration of one month normalizes to 31 days given the start time in
 Formally, the computation is done as follows:
 
 1. the given Calendar object is cloned
-2. the years, months and days fields will be added to the [Calendar](../java/util/Calendar.md) object by using the [Calendar.add(int,int)](../java/util/Calendar.md))method
+2. the years, months and days fields will be added to the [Calendar](../java.util/Calendar.md) object by using the [Calendar.add(int,int)](../java.util/Calendar.md))method
 3. the difference between the two Calendars in computed in milliseconds and converted to days, if a remainder occurs due to Daylight Savings Time, it is discarded
 4. the computed days, along with the hours, minutes and seconds fields of this duration object is used to construct a new Duration object.
 
@@ -701,11 +701,11 @@ Note that since the Calendar class uses`int`to hold the value of year and month,
 
 | Parameters ||
 |--------------------|-----------------------------------------------------------------------------------------------------------------|
-| `startTimeInstant` | [Calendar](../java/util/Calendar.md)!:`Calendar`reference point. |
+| `startTimeInstant` | [Calendar](../java.util/Calendar.md)!:`Calendar`reference point. |
 
 | Return ||
 |------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| [Duration](../javax/xml/datatype/Duration.md)! | `Duration`of years and months of this`Duration`as days. |
+| [Duration](Duration.md)! | `Duration`of years and months of this`Duration`as days. |
 
 | Exceptions ||
 |----------------------------------|--------------------------------------------|
@@ -732,7 +732,7 @@ For example:
   
 ```
 
-Since there's no way to meaningfully subtract 1 day from 1 month, there are cases where the operation fails in [IllegalStateException](../java/lang/IllegalStateException.md).
+Since there's no way to meaningfully subtract 1 day from 1 month, there are cases where the operation fails in [IllegalStateException](../java.lang/IllegalStateException.md).
 
 Formally the computation is defined as follows. First, we can assume that two`Duration`s are both positive without losing generality. (i.e.,`(-X)-Y=-(X+Y)`,`X-(-Y)=X+Y`,`(-X)-(-Y)=-(X-Y)`)
 
@@ -740,15 +740,15 @@ Then two durations are subtracted field by field. If the sign of any non-zero fi
 
 This process is repeated until all the non-zero fields have the same sign.
 
-If a borrow occurs in the days field (in other words, if the computation needs to borrow 1 or -1 month to compensate days), then the computation fails by throwing an [IllegalStateException](../java/lang/IllegalStateException.md).
+If a borrow occurs in the days field (in other words, if the computation needs to borrow 1 or -1 month to compensate days), then the computation fails by throwing an [IllegalStateException](../java.lang/IllegalStateException.md).
 
 | Parameters ||
 |-------|-------------------------------------------------------------------------------------------------------------------------------------|
-| `rhs` | [Duration](../javax/xml/datatype/Duration.md)!:`Duration`to subtract from this`Duration`. |
+| `rhs` | [Duration](Duration.md)!:`Duration`to subtract from this`Duration`. |
 
 | Return ||
 |------------------------------------------------------------------------------------------|----------------------------------------------------------------|
-| [Duration](../javax/xml/datatype/Duration.md)! | New`Duration`created from subtracting`rhs`from this`Duration`. |
+| [Duration](Duration.md)! | New`Duration`created from subtracting`rhs`from this`Duration`. |
 
 | Exceptions ||
 |-----------------------------------|----------------------------------------------------------------------------------------------------------------------------|
@@ -757,7 +757,7 @@ If a borrow occurs in the days field (in other words, if the computation needs t
 
 **See Also**
 
-- [#add(Duration)](../javax/xml/datatype/Duration.md)) 
+- [#add(Duration)](Duration.md)) 
 
 ### toString
 
@@ -769,7 +769,7 @@ open fun toString(): String
 
 Returns a`String`representation of this`Duration``Object`.
 
-The result is formatted according to the XML Schema 1.0 specification and can be always parsed back later into the equivalent`Duration``Object`by [DatatypeFactory.newDuration(String lexicalRepresentation)](../javax/xml/datatype/DatatypeFactory.md)).
+The result is formatted according to the XML Schema 1.0 specification and can be always parsed back later into the equivalent`Duration``Object`by [DatatypeFactory.newDuration(String lexicalRepresentation)](DatatypeFactory.md)).
 
 Formally, the following holds for any`Duration``Object`x: 
 

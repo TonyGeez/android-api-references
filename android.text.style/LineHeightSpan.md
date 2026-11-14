@@ -4,16 +4,16 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # LineHeightSpan
 
-Kotlin| [Java](../android/text/style/LineHeightSpan.md) 
+Kotlin| [Java](LineHeightSpan.md) 
 | --- | --- |
 
 ```
 interface LineHeightSpan : ParagraphStyle, WrapTogetherSpan
 ```
 
-| [android.text.style.LineHeightSpan](../android/text/style/LineHeightSpan.md) |
+| [android.text.style.LineHeightSpan](LineHeightSpan.md) |
 
-| Known Direct Subclasses [DrawableMarginSpan](../android/text/style/DrawableMarginSpan.md), [IconMarginSpan](../android/text/style/IconMarginSpan.md), [LineHeightSpan.Standard](../android/text/style/LineHeightSpan.Standard.md), [LineHeightSpan.WithDensity](../android/text/style/LineHeightSpan.WithDensity.md) |----------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [DrawableMarginSpan](../android/text/style/DrawableMarginSpan.md) | A span which adds a drawable and a padding to the paragraph it's attached to. | | [IconMarginSpan](../android/text/style/IconMarginSpan.md) | Paragraph affecting span, that draws a bitmap at the beginning of a text. | | [LineHeightSpan.Standard](../android/text/style/LineHeightSpan.Standard.md) | Default implementation of the [LineHeightSpan](../android/text/style/LineHeightSpan.md), which changes the line height of the attached paragraph. | | [LineHeightSpan.WithDensity](../android/text/style/LineHeightSpan.WithDensity.md) | The classes that affect the line height of paragraph with respect to density, should implement this interface. | |
+| Known Direct Subclasses [DrawableMarginSpan](DrawableMarginSpan.md), [IconMarginSpan](IconMarginSpan.md), [LineHeightSpan.Standard](../android/text/style/LineHeightSpan.Standard.md), [LineHeightSpan.WithDensity](../android/text/style/LineHeightSpan.WithDensity.md) |----------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [DrawableMarginSpan](DrawableMarginSpan.md) | A span which adds a drawable and a padding to the paragraph it's attached to. | | [IconMarginSpan](IconMarginSpan.md) | Paragraph affecting span, that draws a bitmap at the beginning of a text. | | [LineHeightSpan.Standard](../android/text/style/LineHeightSpan.Standard.md) | Default implementation of the [LineHeightSpan](LineHeightSpan.md), which changes the line height of the attached paragraph. | | [LineHeightSpan.WithDensity](../android/text/style/LineHeightSpan.WithDensity.md) | The classes that affect the line height of paragraph with respect to density, should implement this interface. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 The classes that affect the line height of paragraph should implement this interface.
@@ -22,12 +22,12 @@ The classes that affect the line height of paragraph should implement this inter
 
 | Nested classes ||
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open | [Standard](../android/text/style/LineHeightSpan.Standard.md) Default implementation of the [LineHeightSpan](../android/text/style/LineHeightSpan.md), which changes the line height of the attached paragraph. |
+| open | [Standard](../android/text/style/LineHeightSpan.Standard.md) Default implementation of the [LineHeightSpan](LineHeightSpan.md), which changes the line height of the attached paragraph. |
 | abstract | [WithDensity](../android/text/style/LineHeightSpan.WithDensity.md) The classes that affect the line height of paragraph with respect to density, should implement this interface. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [chooseHeight](../android/text/style/LineHeightSpan.md))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `spanstartv:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `lineHeight:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `fm:` ` [Paint.FontMetricsInt](../android/graphics/Paint.FontMetricsInt.md)!`)` Classes that implement this should define how the height is being calculated. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [chooseHeight](LineHeightSpan.md))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `spanstartv:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `lineHeight:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `fm:` ` [Paint.FontMetricsInt](../android/graphics/Paint.FontMetricsInt.md)!`)` Classes that implement this should define how the height is being calculated. |
 
 ## Public methods
 

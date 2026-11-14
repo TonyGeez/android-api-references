@@ -8,11 +8,11 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 interface WatchEvent<T : Any!>
 ```
 
-| [java.nio.file.WatchEvent](../java/nio/file/WatchEvent.md) |
+| [java.nio.file.WatchEvent](WatchEvent.md) |
 
-An event or a repeated event for an object that is registered with a [WatchService](../java/nio/file/WatchService.md).
+An event or a repeated event for an object that is registered with a [WatchService](WatchService.md).
 
-An event is classified by its [kind](../java/nio/file/WatchEvent.md))and has a [count](../java/nio/file/WatchEvent.md))to indicate the number of times that the event has been observed. This allows for efficient representation of repeated events. The [context](../java/nio/file/WatchEvent.md))method returns any context associated with the event. In the case of a repeated event then the context is the same for all events.
+An event is classified by its [kind](WatchEvent.md))and has a [count](WatchEvent.md))to indicate the number of times that the event has been observed. This allows for efficient representation of repeated events. The [context](WatchEvent.md))method returns any context associated with the event. In the case of a repeated event then the context is the same for all events.
 
 Watch events are immutable and safe for use by multiple concurrent threads.
 
@@ -21,13 +21,13 @@ Watch events are immutable and safe for use by multiple concurrent threads.
 | Nested classes ||
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | abstract | [Kind](../java/nio/file/WatchEvent.Kind.md) An event kind, for the purposes of identification. |
-| abstract | [Modifier](../java/nio/file/WatchEvent.Modifier.md) An event modifier that qualifies how a [Watchable](../java/nio/file/Watchable.md) is registered with a [WatchService](../java/nio/file/WatchService.md). |
+| abstract | [Modifier](../java/nio/file/WatchEvent.Modifier.md) An event modifier that qualifies how a [Watchable](Watchable.md) is registered with a [WatchService](WatchService.md). |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| abstractT | [context](../java/nio/file/WatchEvent.md))`()` Returns the context for the event. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [count](../java/nio/file/WatchEvent.md))`()` Returns the event count. |
-| abstract [WatchEvent.Kind](../java/nio/file/WatchEvent.Kind.md)\<T\>! | [kind](../java/nio/file/WatchEvent.md))`()` Returns the event kind. |
+| abstractT | [context](WatchEvent.md))`()` Returns the context for the event. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [count](WatchEvent.md))`()` Returns the event count. |
+| abstract [WatchEvent.Kind](../java/nio/file/WatchEvent.Kind.md)\<T\>! | [kind](WatchEvent.md))`()` Returns the event kind. |
 | --- | --- |
 
 ## Public methods
@@ -42,7 +42,7 @@ abstract fun context(): T
 
 Returns the context for the event.
 
-In the case of [ENTRY_CREATE](../java/nio/file/StandardWatchEventKinds.md), [ENTRY_DELETE](../java/nio/file/StandardWatchEventKinds.md), and [ENTRY_MODIFY](../java/nio/file/StandardWatchEventKinds.md) events the context is a`Path`that is the [relative](../java/nio/file/Path.md))path between the directory registered with the watch service, and the entry that is created, deleted, or modified.
+In the case of [ENTRY_CREATE](StandardWatchEventKinds.md), [ENTRY_DELETE](StandardWatchEventKinds.md), and [ENTRY_MODIFY](StandardWatchEventKinds.md) events the context is a`Path`that is the [relative](Path.md))path between the directory registered with the watch service, and the entry that is created, deleted, or modified.
 
 | Return ||
 |---|---------------------------------|

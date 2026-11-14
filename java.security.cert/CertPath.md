@@ -10,7 +10,7 @@ abstract class CertPath : Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.cert.CertPath](../java/security/cert/CertPath.md) |
+| ↳ | [java.security.cert.CertPath](CertPath.md) |
 
 An immutable sequence of certificates (a certification path).
 
@@ -22,13 +22,13 @@ The type is a`String`that identifies the type of`Certificate`s in the certificat
 
 The list of`Certificate`s is an ordered`List`of zero or more`Certificate`s. This`List`and all of the`Certificate`s contained in it must be immutable.
 
-Each`CertPath`object must support one or more encodings so that the object can be translated into a byte array for storage or transmission to other parties. Preferably, these encodings should be well-documented standards (such as PKCS#7). One of the encodings supported by a`CertPath`is considered the default encoding. This encoding is used if no encoding is explicitly requested (for the [getEncoded()](../java/security/cert/CertPath.md))method, for instance).
+Each`CertPath`object must support one or more encodings so that the object can be translated into a byte array for storage or transmission to other parties. Preferably, these encodings should be well-documented standards (such as PKCS#7). One of the encodings supported by a`CertPath`is considered the default encoding. This encoding is used if no encoding is explicitly requested (for the [getEncoded()](CertPath.md))method, for instance).
 
 All`CertPath`objects are also`Serializable`.`CertPath`objects are resolved into an alternate [CertPathRep](../java/security/cert/CertPath.CertPathRep.md) object during serialization. This allows a`CertPath`object to be serialized into an equivalent representation regardless of its underlying implementation.
 
 `CertPath`objects can be created with a`CertificateFactory`or they can be returned by other classes, such as a`CertPathBuilder`.
 
-By convention, X.509`CertPath`s (consisting of`X509Certificate`s), are ordered starting with the target certificate and ending with a certificate issued by the trust anchor. That is, the issuer of one certificate is the subject of the following one. The certificate representing the [TrustAnchor](../java/security/cert/TrustAnchor.md) should not be included in the certification path. Unvalidated X.509`CertPath`s may not follow these conventions. PKIX`CertPathValidator`s will detect any departure from these conventions that cause the certification path to be invalid and throw a`CertPathValidatorException`.
+By convention, X.509`CertPath`s (consisting of`X509Certificate`s), are ordered starting with the target certificate and ending with a certificate issued by the trust anchor. That is, the issuer of one certificate is the subject of the following one. The certificate representing the [TrustAnchor](TrustAnchor.md) should not be included in the certification path. Unvalidated X.509`CertPath`s may not follow these conventions. PKIX`CertPathValidator`s will detect any departure from these conventions that cause the certification path to be invalid and throw a`CertPathValidatorException`.
 
 Every implementation of the Java platform is required to support the following standard`CertPath`encodings:
 
@@ -51,24 +51,24 @@ Requiring`CertPath`objects to be immutable and thread-safe allows them to be pas
 
 | Protected constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [CertPath](../java/security/cert/CertPath.md))`(`type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a`CertPath`of the specified type. |
+| [CertPath](CertPath.md))`(`type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a`CertPath`of the specified type. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/security/cert/CertPath.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this certification path for equality with the specified object. |
-| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<out [Certificate](../java/security/cert/Certificate.md)!\>! | [getCertificates](../java/security/cert/CertPath.md))`()` Returns the list of certificates in this certification path. |
-| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getEncoded](../java/security/cert/CertPath.md))`()` Returns the encoded form of this certification path, using the default encoding. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](CertPath.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this certification path for equality with the specified object. |
+| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<out [Certificate](Certificate.md)!\>! | [getCertificates](CertPath.md))`()` Returns the list of certificates in this certification path. |
+| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getEncoded](CertPath.md))`()` Returns the encoded form of this certification path, using the default encoding. |
 | --- | --- |
-| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getEncoded](../java/security/cert/CertPath.md))`(`encoding:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the encoded form of this certification path, using the specified encoding. |
-| abstract [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getEncodings](../java/security/cert/CertPath.md))`()` Returns an iteration of the encodings supported by this certification path, with the default encoding first. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getType](../java/security/cert/CertPath.md))`()` Returns the type of`Certificate`s in this certification path. |
+| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getEncoded](CertPath.md))`(`encoding:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the encoded form of this certification path, using the specified encoding. |
+| abstract [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getEncodings](CertPath.md))`()` Returns an iteration of the encodings supported by this certification path, with the default encoding first. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getType](CertPath.md))`()` Returns the type of`Certificate`s in this certification path. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/security/cert/CertPath.md))`()` Returns the hashcode for this certification path. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/security/cert/CertPath.md))`()` Returns a string representation of this certification path. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](CertPath.md))`()` Returns the hashcode for this certification path. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](CertPath.md))`()` Returns a string representation of this certification path. |
 
 | Protected methods ||
 |---------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [writeReplace](../java/security/cert/CertPath.md))`()` Replaces the`CertPath`to be serialized with a`CertPathRep`object. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [writeReplace](CertPath.md))`()` Replaces the`CertPath`to be serialized with a`CertPathRep`object. |
 
 ## Protected constructors
 
@@ -123,7 +123,7 @@ Returns the list of certificates in this certification path. The`List`returned m
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<out` ` [Certificate](../java/security/cert/Certificate.md)!>! | an immutable`List`of`Certificate`s (may be empty, but not null) |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<out` ` [Certificate](Certificate.md)!>! | an immutable`List`of`Certificate`s (may be empty, but not null) |
 
 ### getEncoded
 
@@ -187,7 +187,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun getType(): String!
 ```
 
-Returns the type of`Certificate`s in this certification path. This is the same string that would be returned by [cert.getType()](../java/security/cert/Certificate.md))for all`Certificate`s in the certification path.
+Returns the type of`Certificate`s in this certification path. This is the same string that would be returned by [cert.getType()](Certificate.md))for all`Certificate`s in the certification path.
 
 | Return ||
 |-----------------------------------------------------------------------------------|-------------------------------------------------------------------|

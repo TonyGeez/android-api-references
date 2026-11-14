@@ -2,7 +2,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 
 # BackupDataInputStream
 
-Kotlin | [Java](../android/app/backup/BackupDataInputStream.md)
+Kotlin | [Java](BackupDataInputStream.md)
 | --- | --- |
 
 ```
@@ -11,8 +11,8 @@ open class BackupDataInputStream : InputStream
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.io.InputStream](../java/io/InputStream.md) ||
-| | ↳ | [android.app.backup.BackupDataInputStream](../android/app/backup/BackupDataInputStream.md) |
+| ↳ | [java.io.InputStream](../java.io/InputStream.md) ||
+| | ↳ | [android.app.backup.BackupDataInputStream](BackupDataInputStream.md) |
 
 Provides an `https://developer.android.com/reference/kotlin/java/io/InputStream.html#`-like interface for accessing an entity's data during a restore operation. Used by `https://developer.android.com/reference/kotlin/android/app/backup/BackupHelper` classes within the `https://developer.android.com/reference/kotlin/android/app/backup/BackupAgentHelper` mechanism.
 

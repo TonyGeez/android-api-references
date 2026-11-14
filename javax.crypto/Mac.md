@@ -10,7 +10,7 @@ open class Mac : Cloneable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.crypto.Mac](../javax/crypto/Mac.md) |
+| ↳ | [javax.crypto.Mac](Mac.md) |
 
 This class provides the functionality of a "Message Authentication Code" (MAC) algorithm.
 
@@ -55,32 +55,32 @@ These algorithms are described in the [Mac section](https://docs.oracle.com/java
 
 | Protected constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Mac](../javax/crypto/Mac.md))`(`macSpi:` ` [MacSpi](../javax/crypto/MacSpi.md)!`, `provider:` ` [Provider](../java/security/Provider.md)!`, `algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a MAC object. |
+| [Mac](Mac.md))`(`macSpi:` ` [MacSpi](MacSpi.md)!`, `provider:` ` [Provider](../java.security/Provider.md)!`, `algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a MAC object. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](../javax/crypto/Mac.md))`()` Returns a clone if the provider implementation is cloneable. |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [doFinal](../javax/crypto/Mac.md))`()` Finishes the MAC operation. |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [doFinal](../javax/crypto/Mac.md))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Processes the given array of bytes and finishes the MAC operation. |
+| [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](Mac.md))`()` Returns a clone if the provider implementation is cloneable. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [doFinal](Mac.md))`()` Finishes the MAC operation. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [doFinal](Mac.md))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Processes the given array of bytes and finishes the MAC operation. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [doFinal](../javax/crypto/Mac.md))`(`output:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `outOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Finishes the MAC operation. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAlgorithm](../javax/crypto/Mac.md))`()` Returns the algorithm name of this`Mac`object. |
-| static [Mac](../javax/crypto/Mac.md)! | [getInstance](../javax/crypto/Mac.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a`Mac`object that implements the specified MAC algorithm. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [doFinal](Mac.md))`(`output:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `outOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Finishes the MAC operation. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAlgorithm](Mac.md))`()` Returns the algorithm name of this`Mac`object. |
+| static [Mac](Mac.md)! | [getInstance](Mac.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a`Mac`object that implements the specified MAC algorithm. |
 | --- | --- |
-| static [Mac](../javax/crypto/Mac.md)! | [getInstance](../javax/crypto/Mac.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a`Mac`object that implements the specified MAC algorithm. |
-| static [Mac](../javax/crypto/Mac.md)! | [getInstance](../javax/crypto/Mac.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [Provider](../java/security/Provider.md)!`)` Returns a`Mac`object that implements the specified MAC algorithm. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMacLength](../javax/crypto/Mac.md))`()` Returns the length of the MAC in bytes. |
+| static [Mac](Mac.md)! | [getInstance](Mac.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a`Mac`object that implements the specified MAC algorithm. |
+| static [Mac](Mac.md)! | [getInstance](Mac.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [Provider](../java.security/Provider.md)!`)` Returns a`Mac`object that implements the specified MAC algorithm. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMacLength](Mac.md))`()` Returns the length of the MAC in bytes. |
 | --- | --- |
-| [Provider](../java/security/Provider.md)! | [getProvider](../javax/crypto/Mac.md))`()` Returns the provider of this`Mac`object. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](../javax/crypto/Mac.md))`(`key:` ` [Key](../java/security/Key.md)!`)` Initializes this`Mac`object with the given key. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](../javax/crypto/Mac.md))`(`key:` ` [Key](../java/security/Key.md)!`, `params:` ` [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)!`)` Initializes this`Mac`object with the given key and algorithm parameters. |
+| [Provider](../java.security/Provider.md)! | [getProvider](Mac.md))`()` Returns the provider of this`Mac`object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](Mac.md))`(`key:` ` [Key](../java.security/Key.md)!`)` Initializes this`Mac`object with the given key. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](Mac.md))`(`key:` ` [Key](../java.security/Key.md)!`, `params:` ` [AlgorithmParameterSpec](../java.security.spec/AlgorithmParameterSpec.md)!`)` Initializes this`Mac`object with the given key and algorithm parameters. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](../javax/crypto/Mac.md))`()` Resets this`Mac`object. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](../javax/crypto/Mac.md))`(`input:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Processes the given byte. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](../javax/crypto/Mac.md))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Processes the given array of bytes. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](Mac.md))`()` Resets this`Mac`object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](Mac.md))`(`input:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Processes the given byte. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](Mac.md))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Processes the given array of bytes. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](../javax/crypto/Mac.md))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Processes the first`len`bytes in`input`, starting at`offset`inclusive. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](../javax/crypto/Mac.md))`(`input:` ` [ByteBuffer](../java/nio/ByteBuffer.md)!`)` Processes`input.remaining()`bytes in the ByteBuffer`input`, starting at`input.position()`. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](Mac.md))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Processes the first`len`bytes in`input`, starting at`offset`inclusive. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](Mac.md))`(`input:` ` [ByteBuffer](../java.nio/ByteBuffer.md)!`)` Processes`input.remaining()`bytes in the ByteBuffer`input`, starting at`input.position()`. |
 
 ## Protected constructors
 
@@ -99,8 +99,8 @@ Creates a MAC object.
 
 | Parameters ||
 |-------------|-------------------------------------------------------------------------------------------------------|
-| `macSpi` | [MacSpi](../javax/crypto/MacSpi.md)!:the delegate |
-| `provider` | [Provider](../java/security/Provider.md)!:the provider |
+| `macSpi` | [MacSpi](MacSpi.md)!:the delegate |
+| `provider` | [Provider](../java.security/Provider.md)!:the provider |
 | `algorithm` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the algorithm |
 | --- | --- |
 
@@ -224,7 +224,7 @@ Returns a`Mac`object that implements the specified MAC algorithm.
 
 This method traverses the list of registered security Providers, starting with the most preferred Provider. A new Mac object encapsulating the MacSpi implementation from the first Provider that supports the specified algorithm is returned.
 
-Note that the list of registered providers may be retrieved via the [Security.getProviders()](../java/security/Security.md))method.
+Note that the list of registered providers may be retrieved via the [Security.getProviders()](../java.security/Security.md))method.
 
 | Parameters ||
 |-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -232,7 +232,7 @@ Note that the list of registered providers may be retrieved via the [Security.ge
 
 | Return ||
 |--------------------------------------------------------------------------|---------------------|
-| [Mac](../javax/crypto/Mac.md)! | the new`Mac`object. |
+| [Mac](Mac.md)! | the new`Mac`object. |
 
 | Exceptions ||
 |------------------------------------------|------------------------------------------------------------------------------|
@@ -240,7 +240,7 @@ Note that the list of registered providers may be retrieved via the [Security.ge
 
 **See Also**
 
-- [java.security.Provider](../java/security/Provider.md) 
+- [java.security.Provider](../java.security/Provider.md) 
 
 ### getInstance
 
@@ -257,7 +257,7 @@ Returns a`Mac`object that implements the specified MAC algorithm.
 
 A new Mac object encapsulating the MacSpi implementation from the specified provider is returned. The specified provider must be registered in the security provider list.
 
-Note that the list of registered providers may be retrieved via the [Security.getProviders()](../java/security/Security.md))method.
+Note that the list of registered providers may be retrieved via the [Security.getProviders()](../java.security/Security.md))method.
 
 | Parameters ||
 |-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -266,7 +266,7 @@ Note that the list of registered providers may be retrieved via the [Security.ge
 
 | Return ||
 |--------------------------------------------------------------------------|---------------------|
-| [Mac](../javax/crypto/Mac.md)! | the new`Mac`object. |
+| [Mac](Mac.md)! | the new`Mac`object. |
 
 | Exceptions ||
 |------------------------------------------|------------------------------------------------------------------------------------------------------|
@@ -277,7 +277,7 @@ Note that the list of registered providers may be retrieved via the [Security.ge
 
 **See Also**
 
-- [java.security.Provider](../java/security/Provider.md) 
+- [java.security.Provider](../java.security/Provider.md) 
 
 ### getInstance
 
@@ -297,11 +297,11 @@ A new Mac object encapsulating the MacSpi implementation from the specified Prov
 | Parameters ||
 |-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `algorithm` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the standard name of the requested MAC algorithm. See the Mac section in the [Java Cryptography Architecture Standard Algorithm Name Documentation](https://docs.oracle.com/javase/8/docs/technotes/guides/security/StandardNames.html#Mac) for information about standard algorithm names. |
-| `provider` | [Provider](../java/security/Provider.md)!:the provider. |
+| `provider` | [Provider](../java.security/Provider.md)!:the provider. |
 
 | Return ||
 |--------------------------------------------------------------------------|---------------------|
-| [Mac](../javax/crypto/Mac.md)! | the new`Mac`object. |
+| [Mac](Mac.md)! | the new`Mac`object. |
 
 | Exceptions ||
 |------------------------------------------|-------------------------------------------------------------------------------------------------------------|
@@ -310,7 +310,7 @@ A new Mac object encapsulating the MacSpi implementation from the specified Prov
 
 **See Also**
 
-- [java.security.Provider](../java/security/Provider.md) 
+- [java.security.Provider](../java.security/Provider.md) 
 
 ### getMacLength
 
@@ -338,7 +338,7 @@ Returns the provider of this`Mac`object.
 
 | Return ||
 |------------------------------------------------------------------------------------------|----------------------------------|
-| [Provider](../java/security/Provider.md)! | the provider of this`Mac`object. |
+| [Provider](../java.security/Provider.md)! | the provider of this`Mac`object. |
 
 ### init
 
@@ -352,7 +352,7 @@ Initializes this`Mac`object with the given key.
 
 | Parameters ||
 |-------|-----------------------------------------------------------------------------------------|
-| `key` | [Key](../java/security/Key.md)!:the key. |
+| `key` | [Key](../java.security/Key.md)!:the key. |
 
 | Exceptions ||
 |-------------------------------------|--------------------------------------------------------------|
@@ -373,8 +373,8 @@ Initializes this`Mac`object with the given key and algorithm parameters.
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| `key` | [Key](../java/security/Key.md)!:the key. |
-| `params` | [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)!:the algorithm parameters. |
+| `key` | [Key](../java.security/Key.md)!:the key. |
+| `params` | [AlgorithmParameterSpec](../java.security.spec/AlgorithmParameterSpec.md)!:the algorithm parameters. |
 
 | Exceptions ||
 |----------------------------------------------------|-------------------------------------------------------------------|
@@ -466,7 +466,7 @@ Processes`input.remaining()`bytes in the ByteBuffer`input`, starting at`input.po
 
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------|
-| `input` | [ByteBuffer](../java/nio/ByteBuffer.md)!:the ByteBuffer |
+| `input` | [ByteBuffer](../java.nio/ByteBuffer.md)!:the ByteBuffer |
 
 | Exceptions ||
 |-----------------------------------|---------------------------------------|

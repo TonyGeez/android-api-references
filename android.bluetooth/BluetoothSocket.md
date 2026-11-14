@@ -4,7 +4,7 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 
 # BluetoothSocket
 
-Kotlin| [Java](../android/bluetooth/BluetoothSocket.md) 
+Kotlin| [Java](BluetoothSocket.md) 
 | --- | --- |
 
 ```
@@ -13,21 +13,21 @@ class BluetoothSocket : Closeable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.bluetooth.BluetoothSocket](../android/bluetooth/BluetoothSocket.md) |
+| ↳ | [android.bluetooth.BluetoothSocket](BluetoothSocket.md) |
 
 A connected or connecting Bluetooth socket.
 
-The interface for Bluetooth Sockets is similar to that of TCP sockets: [java.net.Socket](../java/net/Socket.md) and [java.net.ServerSocket](../java/net/ServerSocket.md). On the server side, use a [BluetoothServerSocket](../android/bluetooth/BluetoothServerSocket.md) to create a listening server socket. When a connection is accepted by the [BluetoothServerSocket](../android/bluetooth/BluetoothServerSocket.md), it will return a new [BluetoothSocket](../android/bluetooth/BluetoothSocket.md) to manage the connection. On the client side, use a single [BluetoothSocket](../android/bluetooth/BluetoothSocket.md) to both initiate an outgoing connection and to manage the connection.
+The interface for Bluetooth Sockets is similar to that of TCP sockets: [java.net.Socket](../java.net/Socket.md) and [java.net.ServerSocket](../java.net/ServerSocket.md). On the server side, use a [BluetoothServerSocket](BluetoothServerSocket.md) to create a listening server socket. When a connection is accepted by the [BluetoothServerSocket](BluetoothServerSocket.md), it will return a new [BluetoothSocket](BluetoothSocket.md) to manage the connection. On the client side, use a single [BluetoothSocket](BluetoothSocket.md) to both initiate an outgoing connection and to manage the connection.
 
 The most common type of Bluetooth socket is RFCOMM, which is the type supported by the Android APIs. RFCOMM is a connection-oriented, streaming transport over Bluetooth. It is also known as the Serial Port Profile (SPP).
 
-To create a [BluetoothSocket](../android/bluetooth/BluetoothSocket.md) for connecting to a known device, use [BluetoothDevice.createRfcommSocketToServiceRecord()](../android/bluetooth/BluetoothDevice.md)). Then call [connect()](../android/bluetooth/BluetoothSocket.md))to attempt a connection to the remote device. This call will block until a connection is established or the connection fails.
+To create a [BluetoothSocket](BluetoothSocket.md) for connecting to a known device, use [BluetoothDevice.createRfcommSocketToServiceRecord()](BluetoothDevice.md)). Then call [connect()](BluetoothSocket.md))to attempt a connection to the remote device. This call will block until a connection is established or the connection fails.
 
-To create a [BluetoothSocket](../android/bluetooth/BluetoothSocket.md) as a server (or "host"), see the [BluetoothServerSocket](../android/bluetooth/BluetoothServerSocket.md) documentation.
+To create a [BluetoothSocket](BluetoothSocket.md) as a server (or "host"), see the [BluetoothServerSocket](BluetoothServerSocket.md) documentation.
 
-Once the socket is connected, whether initiated as a client or accepted as a server, open the IO streams by calling [getInputStream](../android/bluetooth/BluetoothSocket.md))and [getOutputStream](../android/bluetooth/BluetoothSocket.md))in order to retrieve [java.io.InputStream](../java/io/InputStream.md) and [java.io.OutputStream](../java/io/OutputStream.md) objects, respectively, which are automatically connected to the socket.
+Once the socket is connected, whether initiated as a client or accepted as a server, open the IO streams by calling [getInputStream](BluetoothSocket.md))and [getOutputStream](BluetoothSocket.md))in order to retrieve [java.io.InputStream](../java.io/InputStream.md) and [java.io.OutputStream](../java.io/OutputStream.md) objects, respectively, which are automatically connected to the socket.
 
-[BluetoothSocket](../android/bluetooth/BluetoothSocket.md) is thread safe. In particular, #close will always immediately abort ongoing operations and close the socket.
+[BluetoothSocket](BluetoothSocket.md) is thread safe. In particular, #close will always immediately abort ongoing operations and close the socket.
 
 <br />
 
@@ -39,27 +39,27 @@ Once the socket is connected, whether initiated as a client or accepted as a ser
 
 | Constants ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_L2CAP](../android/bluetooth/BluetoothSocket.md) L2CAP socket |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_LE](../android/bluetooth/BluetoothSocket.md) L2CAP socket on LE transport |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_RFCOMM](../android/bluetooth/BluetoothSocket.md) RFCOMM socket |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_L2CAP](BluetoothSocket.md) L2CAP socket |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_LE](BluetoothSocket.md) L2CAP socket on LE transport |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_RFCOMM](BluetoothSocket.md) RFCOMM socket |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_SCO](../android/bluetooth/BluetoothSocket.md) SCO socket |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_SCO](BluetoothSocket.md) SCO socket |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../android/bluetooth/BluetoothSocket.md))`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [connect](../android/bluetooth/BluetoothSocket.md))`()` Attempt to connect to a remote device. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getConnectionType](../android/bluetooth/BluetoothSocket.md))`()` Get the type of the underlying connection. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](BluetoothSocket.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [connect](BluetoothSocket.md))`()` Attempt to connect to a remote device. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getConnectionType](BluetoothSocket.md))`()` Get the type of the underlying connection. |
 | --- | --- |
-| [InputStream](../java/io/InputStream.md)! | [getInputStream](../android/bluetooth/BluetoothSocket.md))`()` Get the input stream associated with this socket. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxReceivePacketSize](../android/bluetooth/BluetoothSocket.md))`()` Get the maximum supported Receive packet size for the underlying transport. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxTransmitPacketSize](../android/bluetooth/BluetoothSocket.md))`()` Get the maximum supported Transmit packet size for the underlying transport. |
+| [InputStream](../java.io/InputStream.md)! | [getInputStream](BluetoothSocket.md))`()` Get the input stream associated with this socket. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxReceivePacketSize](BluetoothSocket.md))`()` Get the maximum supported Receive packet size for the underlying transport. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxTransmitPacketSize](BluetoothSocket.md))`()` Get the maximum supported Transmit packet size for the underlying transport. |
 | --- | --- |
-| [OutputStream](../java/io/OutputStream.md)! | [getOutputStream](../android/bluetooth/BluetoothSocket.md))`()` Get the output stream associated with this socket. |
-| [BluetoothDevice](../android/bluetooth/BluetoothDevice.md)! | [getRemoteDevice](../android/bluetooth/BluetoothSocket.md))`()` Get the remote device this socket is connecting, or connected, to. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isConnected](../android/bluetooth/BluetoothSocket.md))`()` Get the connection status of this socket, ie, whether there is an active connection with remote device. |
+| [OutputStream](../java.io/OutputStream.md)! | [getOutputStream](BluetoothSocket.md))`()` Get the output stream associated with this socket. |
+| [BluetoothDevice](BluetoothDevice.md)! | [getRemoteDevice](BluetoothSocket.md))`()` Get the remote device this socket is connecting, or connected, to. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isConnected](BluetoothSocket.md))`()` Get the connection status of this socket, ie, whether there is an active connection with remote device. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/bluetooth/BluetoothSocket.md))`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](BluetoothSocket.md))`()` <br /> |
 
 ## Constants
 
@@ -138,7 +138,7 @@ Attempt to connect to a remote device.
 
 This method will block until a connection is made or the connection fails. If this method returns without an exception then this socket is now connected.
 
-Creating new connections to remote Bluetooth devices should not be attempted while device discovery is in progress. Device discovery is a heavyweight procedure on the Bluetooth adapter and will significantly slow a device connection. Use [android.bluetooth.BluetoothAdapter#cancelDiscovery()](../android/bluetooth/BluetoothAdapter.md))to cancel an ongoing discovery. Discovery is not managed by the Activity, but is run as a system service, so an application should always call [android.bluetooth.BluetoothAdapter#cancelDiscovery()](../android/bluetooth/BluetoothAdapter.md))even if it did not directly request a discovery, just to be sure.
+Creating new connections to remote Bluetooth devices should not be attempted while device discovery is in progress. Device discovery is a heavyweight procedure on the Bluetooth adapter and will significantly slow a device connection. Use [android.bluetooth.BluetoothAdapter#cancelDiscovery()](BluetoothAdapter.md))to cancel an ongoing discovery. Discovery is not managed by the Activity, but is run as a system service, so an application should always call [android.bluetooth.BluetoothAdapter#cancelDiscovery()](BluetoothAdapter.md))even if it did not directly request a discovery, just to be sure.
 
 close can be used to abort this call from another thread.
 
@@ -162,7 +162,7 @@ Get the type of the underlying connection.
 
 | Return ||
 |----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | one of [TYPE_RFCOMM](../android/bluetooth/BluetoothSocket.md), [TYPE_SCO](../android/bluetooth/BluetoothSocket.md) or [TYPE_L2CAP](../android/bluetooth/BluetoothSocket.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | one of [TYPE_RFCOMM](BluetoothSocket.md), [TYPE_SCO](BluetoothSocket.md) or [TYPE_L2CAP](BluetoothSocket.md) |
 
 ### getInputStream
 
@@ -178,7 +178,7 @@ The input stream will be returned even if the socket is not yet connected, but o
 
 | Return ||
 |------------------------------------------------------------------------------------------|-------------|
-| [InputStream](../java/io/InputStream.md)! | InputStream |
+| [InputStream](../java.io/InputStream.md)! | InputStream |
 
 ### getMaxReceivePacketSize
 
@@ -222,7 +222,7 @@ The output stream will be returned even if the socket is not yet connected, but 
 
 | Return ||
 |--------------------------------------------------------------------------------------------|--------------|
-| [OutputStream](../java/io/OutputStream.md)! | OutputStream |
+| [OutputStream](../java.io/OutputStream.md)! | OutputStream |
 
 ### getRemoteDevice
 
@@ -236,7 +236,7 @@ Get the remote device this socket is connecting, or connected, to.
 
 | Return ||
 |------------------------------------------------------------------------------------------------------|---------------|
-| [BluetoothDevice](../android/bluetooth/BluetoothDevice.md)! | remote device |
+| [BluetoothDevice](BluetoothDevice.md)! | remote device |
 
 ### isConnected
 

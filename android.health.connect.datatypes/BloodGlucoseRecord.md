@@ -9,9 +9,9 @@ class BloodGlucoseRecord : InstantRecord
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.health.connect.datatypes.Record](../android/health/connect/datatypes/Record.md) |||
-| | ↳ | [android.health.connect.datatypes.InstantRecord](../android/health/connect/datatypes/InstantRecord.md) ||
-| | | ↳ | [android.health.connect.datatypes.BloodGlucoseRecord](../android/health/connect/datatypes/BloodGlucoseRecord.md) |
+| ↳ | [android.health.connect.datatypes.Record](Record.md) |||
+| | ↳ | [android.health.connect.datatypes.InstantRecord](InstantRecord.md) ||
+| | | ↳ | [android.health.connect.datatypes.BloodGlucoseRecord](BloodGlucoseRecord.md) |
 | --- | --- | --- | --- |
 
 Captures the concentration of glucose in the blood. Each record represents a single instantaneous blood glucose reading.
@@ -32,7 +32,7 @@ Captures the concentration of glucose in the blood. Each record represents a sin
 | Public methods ||
 |---|---|
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BloodGlucoseRecord#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [BloodGlucose](../android/health/connect/datatypes/units/BloodGlucose.md) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BloodGlucoseRecord#getLevel()()` <br /> |
+| [BloodGlucose](../android.health.connect.datatypes.units/BloodGlucose.md) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BloodGlucoseRecord#getLevel()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BloodGlucoseRecord#getMealType()()` <br /> |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BloodGlucoseRecord#getRelationToMeal()()` <br /> |

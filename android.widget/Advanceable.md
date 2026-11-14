@@ -6,12 +6,12 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 interface Advanceable
 ```
 
-| [android.widget.Advanceable](../android/widget/Advanceable.md) |
+| [android.widget.Advanceable](Advanceable.md) |
 
-| Known Direct Subclasses [AdapterViewAnimator](../android/widget/AdapterViewAnimator.md) |---|---| | [AdapterViewAnimator](../android/widget/AdapterViewAnimator.md) | Base class for a `https://developer.android.com/reference/kotlin/android/widget/AdapterView` that will perform animations when switching between its views. | |
+| Known Direct Subclasses [AdapterViewAnimator](AdapterViewAnimator.md) |---|---| | [AdapterViewAnimator](AdapterViewAnimator.md) | Base class for a `https://developer.android.com/reference/kotlin/android/widget/AdapterView` that will perform animations when switching between its views. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [AdapterViewFlipper](../android/widget/AdapterViewFlipper.md), [StackView](../android/widget/StackView.md) |---|---| | [AdapterViewFlipper](../android/widget/AdapterViewFlipper.md) | Simple `https://developer.android.com/reference/kotlin/android/widget/ViewAnimator` that will animate between two or more views that have been added to it. | | [StackView](../android/widget/StackView.md) | A view that displays its children in a stack and allows users to discretely swipe through the children. | |
+| Known Indirect Subclasses [AdapterViewFlipper](AdapterViewFlipper.md), [StackView](StackView.md) |---|---| | [AdapterViewFlipper](AdapterViewFlipper.md) | Simple `https://developer.android.com/reference/kotlin/android/widget/ViewAnimator` that will animate between two or more views that have been added to it. | | [StackView](StackView.md) | A view that displays its children in a stack and allows users to discretely swipe through the children. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 This interface can be implemented by any collection-type view which has a notion of progressing through its set of children. The interface exists to give AppWidgetHosts a way of taking responsibility for automatically advancing such collections.

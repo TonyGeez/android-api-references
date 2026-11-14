@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # MediaRecorder
 
-Kotlin| [Java](../android/media/MediaRecorder.md) 
+Kotlin| [Java](MediaRecorder.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class MediaRecorder : AudioRecordingMonitor, AudioRouting, MicrophoneDire
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.MediaRecorder](../android/media/MediaRecorder.md) |
+| ↳ | [android.media.MediaRecorder](MediaRecorder.md) |
 
 Used to record audio and video. The recording control is based on a simple state machine (see below).
 
@@ -36,7 +36,7 @@ MediaRecorder recorder = new MediaRecorder(context);
   
 ```
 
-Applications may want to register for informational and error events in order to be informed of some internal update and possible runtime errors during recording. Registration for such events is done by setting the appropriate listeners (via calls (to [setOnInfoListener(android.media.MediaRecorder.OnInfoListener)](../android/media/MediaRecorder.md))setOnInfoListener and/or [setOnErrorListener(android.media.MediaRecorder.OnErrorListener)](../android/media/MediaRecorder.md))setOnErrorListener). In order to receive the respective callback associated with these listeners, applications are required to create MediaRecorder objects on threads with a Looper running (the main UI thread by default already has a Looper running).
+Applications may want to register for informational and error events in order to be informed of some internal update and possible runtime errors during recording. Registration for such events is done by setting the appropriate listeners (via calls (to [setOnInfoListener(android.media.MediaRecorder.OnInfoListener)](MediaRecorder.md))setOnInfoListener and/or [setOnErrorListener(android.media.MediaRecorder.OnErrorListener)](MediaRecorder.md))setOnErrorListener). In order to receive the respective callback associated with these listeners, applications are required to create MediaRecorder objects on threads with a Looper running (the main UI thread by default already has a Looper running).
 
 **Note:**Currently, MediaRecorder does not work on the emulator.
 |
@@ -61,107 +61,107 @@ Applications may want to register for informational and error events in order to
 
 | Constants ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEDIA_ERROR_SERVER_DIED](../android/media/MediaRecorder.md) Media server died. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEDIA_RECORDER_ERROR_UNKNOWN](../android/media/MediaRecorder.md) Unspecified media recorder error. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEDIA_RECORDER_INFO_MAX_DURATION_REACHED](../android/media/MediaRecorder.md) A maximum duration had been setup and has now been reached. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEDIA_ERROR_SERVER_DIED](MediaRecorder.md) Media server died. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEDIA_RECORDER_ERROR_UNKNOWN](MediaRecorder.md) Unspecified media recorder error. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEDIA_RECORDER_INFO_MAX_DURATION_REACHED](MediaRecorder.md) A maximum duration had been setup and has now been reached. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEDIA_RECORDER_INFO_MAX_FILESIZE_APPROACHING](../android/media/MediaRecorder.md) A maximum filesize had been setup and current recorded file size has reached 90% of the limit. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEDIA_RECORDER_INFO_MAX_FILESIZE_REACHED](../android/media/MediaRecorder.md) A maximum filesize had been setup and has now been reached. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEDIA_RECORDER_INFO_NEXT_OUTPUT_FILE_STARTED](../android/media/MediaRecorder.md) A maximum filesize had been reached and MediaRecorder has switched output to a new file set by application #setNextOutputFile. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEDIA_RECORDER_INFO_MAX_FILESIZE_APPROACHING](MediaRecorder.md) A maximum filesize had been setup and current recorded file size has reached 90% of the limit. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEDIA_RECORDER_INFO_MAX_FILESIZE_REACHED](MediaRecorder.md) A maximum filesize had been setup and has now been reached. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEDIA_RECORDER_INFO_NEXT_OUTPUT_FILE_STARTED](MediaRecorder.md) A maximum filesize had been reached and MediaRecorder has switched output to a new file set by application #setNextOutputFile. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEDIA_RECORDER_INFO_UNKNOWN](../android/media/MediaRecorder.md) Unspecified media recorder info. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEDIA_RECORDER_INFO_UNKNOWN](MediaRecorder.md) Unspecified media recorder info. |
 
 | Inherited constants ||
 |---|---|
-| From class [MicrophoneDirection](../android/media/MicrophoneDirection.md) |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIC_DIRECTION_AWAY_FROM_USER](../android/media/MicrophoneDirection.md) <br /> Optimize capture for audio coming from the side of the device pointing away from the user. In the typical case, a device with a single screen, screen-side camera/microphone and non-screen-side camera/microphone, this will be the non-screen side. For a different device geometry, it is the side for which the expectation is to be facing away from the user. This is the "taking a video of something else" case. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIC_DIRECTION_EXTERNAL](../android/media/MicrophoneDirection.md) <br /> Optimize capture for audio coming from an off-device microphone. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIC_DIRECTION_TOWARDS_USER](../android/media/MicrophoneDirection.md) <br /> Optimize capture for audio coming from the side of the device facing the user. In the typical case, a device with a single screen, screen-side camera/microphone and non-screen-side camera/microphone, this will be the screen side (as in a "selfie"). For a different device geometry, it is the side for which the expectation is to be facing the user. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIC_DIRECTION_UNSPECIFIED](../android/media/MicrophoneDirection.md) <br /> Don't do any directionality processing of the activated microphone(s). <br /> | ||
+| From class [MicrophoneDirection](MicrophoneDirection.md) |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIC_DIRECTION_AWAY_FROM_USER](MicrophoneDirection.md) <br /> Optimize capture for audio coming from the side of the device pointing away from the user. In the typical case, a device with a single screen, screen-side camera/microphone and non-screen-side camera/microphone, this will be the non-screen side. For a different device geometry, it is the side for which the expectation is to be facing away from the user. This is the "taking a video of something else" case. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIC_DIRECTION_EXTERNAL](MicrophoneDirection.md) <br /> Optimize capture for audio coming from an off-device microphone. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIC_DIRECTION_TOWARDS_USER](MicrophoneDirection.md) <br /> Optimize capture for audio coming from the side of the device facing the user. In the typical case, a device with a single screen, screen-side camera/microphone and non-screen-side camera/microphone, this will be the screen side (as in a "selfie"). For a different device geometry, it is the side for which the expectation is to be facing the user. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIC_DIRECTION_UNSPECIFIED](MicrophoneDirection.md) <br /> Don't do any directionality processing of the activated microphone(s). <br /> | ||
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [MediaRecorder](../android/media/MediaRecorder.md))`()` Default constructor. |
-| [MediaRecorder](../android/media/MediaRecorder.md))`(`context:` ` [Context](../android/content/Context.md)`)` Default constructor. |
+| [MediaRecorder](MediaRecorder.md))`()` Default constructor. |
+| [MediaRecorder](MediaRecorder.md))`(`context:` ` [Context](../android.content/Context.md)`)` Default constructor. |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addOnRoutingChangedListener](../android/media/MediaRecorder.md))`(`listener:` ` [AudioRouting.OnRoutingChangedListener](../android/media/AudioRouting.OnRoutingChangedListener.md)!`, `handler:` ` [Handler](../android/os/Handler.md)!`)` Adds an [AudioRouting.OnRoutingChangedListener](../android/media/AudioRouting.OnRoutingChangedListener.md) to receive notifications of routing changes on this MediaRecorder. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MicrophoneInfo](../android/media/MicrophoneInfo.md)!\>! | [getActiveMicrophones](../android/media/MediaRecorder.md))`()` Return A lists of [MicrophoneInfo](../android/media/MicrophoneInfo.md) representing the active microphones. |
-| open [AudioRecordingConfiguration](../android/media/AudioRecordingConfiguration.md)? | [getActiveRecordingConfiguration](../android/media/MediaRecorder.md))`()` Returns the current active audio recording for this audio recorder. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addOnRoutingChangedListener](MediaRecorder.md))`(`listener:` ` [AudioRouting.OnRoutingChangedListener](../android/media/AudioRouting.OnRoutingChangedListener.md)!`, `handler:` ` [Handler](../android.os/Handler.md)!`)` Adds an [AudioRouting.OnRoutingChangedListener](../android/media/AudioRouting.OnRoutingChangedListener.md) to receive notifications of routing changes on this MediaRecorder. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MicrophoneInfo](MicrophoneInfo.md)!\>! | [getActiveMicrophones](MediaRecorder.md))`()` Return A lists of [MicrophoneInfo](MicrophoneInfo.md) representing the active microphones. |
+| open [AudioRecordingConfiguration](AudioRecordingConfiguration.md)? | [getActiveRecordingConfiguration](MediaRecorder.md))`()` Returns the current active audio recording for this audio recorder. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAudioSourceMax](../android/media/MediaRecorder.md))`()` Gets the maximum value for audio sources. |
-| open [LogSessionId](../android/media/metrics/LogSessionId.md) | [getLogSessionId](../android/media/MediaRecorder.md))`()` Returns the [LogSessionId](../android/media/metrics/LogSessionId.md) for MediaRecorder. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxAmplitude](../android/media/MediaRecorder.md))`()` Returns the maximum absolute amplitude that was sampled since the last call to this method. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAudioSourceMax](MediaRecorder.md))`()` Gets the maximum value for audio sources. |
+| open [LogSessionId](../android.media.metrics/LogSessionId.md) | [getLogSessionId](MediaRecorder.md))`()` Returns the [LogSessionId](../android.media.metrics/LogSessionId.md) for MediaRecorder. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxAmplitude](MediaRecorder.md))`()` Returns the maximum absolute amplitude that was sampled since the last call to this method. |
 | --- | --- |
-| open [PersistableBundle](../android/os/PersistableBundle.md)! | [getMetrics](../android/media/MediaRecorder.md))`()` Return Metrics data about the current Mediarecorder instance. |
-| open [AudioDeviceInfo](../android/media/AudioDeviceInfo.md)! | [getPreferredDevice](../android/media/MediaRecorder.md))`()` Returns the selected input device specified by [setPreferredDevice](../android/media/MediaRecorder.md)). |
-| open [AudioDeviceInfo](../android/media/AudioDeviceInfo.md)! | [getRoutedDevice](../android/media/MediaRecorder.md))`()` Returns an [AudioDeviceInfo](../android/media/AudioDeviceInfo.md) identifying the current routing of this MediaRecorder Note: The query is only valid if the MediaRecorder is currently recording. |
+| open [PersistableBundle](../android.os/PersistableBundle.md)! | [getMetrics](MediaRecorder.md))`()` Return Metrics data about the current Mediarecorder instance. |
+| open [AudioDeviceInfo](AudioDeviceInfo.md)! | [getPreferredDevice](MediaRecorder.md))`()` Returns the selected input device specified by [setPreferredDevice](MediaRecorder.md)). |
+| open [AudioDeviceInfo](AudioDeviceInfo.md)! | [getRoutedDevice](MediaRecorder.md))`()` Returns an [AudioDeviceInfo](AudioDeviceInfo.md) identifying the current routing of this MediaRecorder Note: The query is only valid if the MediaRecorder is currently recording. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AudioDeviceInfo](../android/media/AudioDeviceInfo.md)!\> | [getRoutedDevices](../android/media/MediaRecorder.md))`()` Returns a List of [AudioDeviceInfo](../android/media/AudioDeviceInfo.md) identifying the current routing of this MediaRecorder. |
-| open [Surface](../android/view/Surface.md)! | [getSurface](../android/media/MediaRecorder.md))`()` Gets the surface to record from when using SURFACE video source. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPrivacySensitive](../android/media/MediaRecorder.md))`()` Returns whether this MediaRecorder is marked as privacy sensitive or not with regard to audio capture. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AudioDeviceInfo](AudioDeviceInfo.md)!\> | [getRoutedDevices](MediaRecorder.md))`()` Returns a List of [AudioDeviceInfo](AudioDeviceInfo.md) identifying the current routing of this MediaRecorder. |
+| open [Surface](../android.view/Surface.md)! | [getSurface](MediaRecorder.md))`()` Gets the surface to record from when using SURFACE video source. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPrivacySensitive](MediaRecorder.md))`()` Returns whether this MediaRecorder is marked as privacy sensitive or not with regard to audio capture. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [pause](../android/media/MediaRecorder.md))`()` Pauses recording. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [prepare](../android/media/MediaRecorder.md))`()` Prepares the recorder to begin capturing and encoding data. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerAudioRecordingCallback](../android/media/MediaRecorder.md))`(`executor:` ` [Executor](../java/util/concurrent/Executor.md)`, `cb:` ` [AudioManager.AudioRecordingCallback](../android/media/AudioManager.AudioRecordingCallback.md)`)` Register a callback to be notified of audio capture changes via a [AudioManager.AudioRecordingCallback](../android/media/AudioManager.AudioRecordingCallback.md). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [pause](MediaRecorder.md))`()` Pauses recording. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [prepare](MediaRecorder.md))`()` Prepares the recorder to begin capturing and encoding data. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerAudioRecordingCallback](MediaRecorder.md))`(`executor:` ` [Executor](../java.util.concurrent/Executor.md)`, `cb:` ` [AudioManager.AudioRecordingCallback](../android/media/AudioManager.AudioRecordingCallback.md)`)` Register a callback to be notified of audio capture changes via a [AudioManager.AudioRecordingCallback](../android/media/AudioManager.AudioRecordingCallback.md). |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [release](../android/media/MediaRecorder.md))`()` Releases resources associated with this MediaRecorder object. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeOnRoutingChangedListener](../android/media/MediaRecorder.md))`(`listener:` ` [AudioRouting.OnRoutingChangedListener](../android/media/AudioRouting.OnRoutingChangedListener.md)!`)` Removes an [AudioRouting.OnRoutingChangedListener](../android/media/AudioRouting.OnRoutingChangedListener.md) which has been previously added to receive rerouting notifications. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](../android/media/MediaRecorder.md))`()` Restarts the MediaRecorder to its idle state. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [release](MediaRecorder.md))`()` Releases resources associated with this MediaRecorder object. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeOnRoutingChangedListener](MediaRecorder.md))`(`listener:` ` [AudioRouting.OnRoutingChangedListener](../android/media/AudioRouting.OnRoutingChangedListener.md)!`)` Removes an [AudioRouting.OnRoutingChangedListener](../android/media/AudioRouting.OnRoutingChangedListener.md) which has been previously added to receive rerouting notifications. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](MediaRecorder.md))`()` Restarts the MediaRecorder to its idle state. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resume](../android/media/MediaRecorder.md))`()` Resumes recording. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAudioChannels](../android/media/MediaRecorder.md))`(`numChannels:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the number of audio channels for recording. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAudioEncoder](../android/media/MediaRecorder.md))`(`audio_encoder:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the audio encoder to be used for recording. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resume](MediaRecorder.md))`()` Resumes recording. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAudioChannels](MediaRecorder.md))`(`numChannels:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the number of audio channels for recording. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAudioEncoder](MediaRecorder.md))`(`audio_encoder:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the audio encoder to be used for recording. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAudioEncodingBitRate](../android/media/MediaRecorder.md))`(`bitRate:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the audio encoding bit rate for recording. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAudioProfile](../android/media/MediaRecorder.md))`(`profile:` ` [EncoderProfiles.AudioProfile](../android/media/EncoderProfiles.AudioProfile.md)`)` Uses the settings from an AudioProfile for recording. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAudioSamplingRate](../android/media/MediaRecorder.md))`(`samplingRate:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the audio sampling rate for recording. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAudioEncodingBitRate](MediaRecorder.md))`(`bitRate:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the audio encoding bit rate for recording. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAudioProfile](MediaRecorder.md))`(`profile:` ` [EncoderProfiles.AudioProfile](../android/media/EncoderProfiles.AudioProfile.md)`)` Uses the settings from an AudioProfile for recording. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAudioSamplingRate](MediaRecorder.md))`(`samplingRate:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the audio sampling rate for recording. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAudioSource](../android/media/MediaRecorder.md))`(`audioSource:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the audio source to be used for recording. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCamera](../android/media/MediaRecorder.md))`(`c:` ` [Camera](../android/hardware/Camera.md)!`)` Sets a [android.hardware.Camera](../android/hardware/Camera.md) to use for recording. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCaptureRate](../android/media/MediaRecorder.md))`(`fps:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Set video frame capture rate. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAudioSource](MediaRecorder.md))`(`audioSource:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the audio source to be used for recording. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCamera](MediaRecorder.md))`(`c:` ` [Camera](../android.hardware/Camera.md)!`)` Sets a [android.hardware.Camera](../android.hardware/Camera.md) to use for recording. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCaptureRate](MediaRecorder.md))`(`fps:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Set video frame capture rate. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInputSurface](../android/media/MediaRecorder.md))`(`surface:` ` [Surface](../android/view/Surface.md)`)` Configures the recorder to use a persistent surface when using SURFACE video source. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLocation](../android/media/MediaRecorder.md))`(`latitude:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `longitude:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Set and store the geodata (latitude and longitude) in the output file. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLogSessionId](../android/media/MediaRecorder.md))`(`id:` ` [LogSessionId](../android/media/metrics/LogSessionId.md)`)` Sets the [LogSessionId](../android/media/metrics/LogSessionId.md) for MediaRecorder. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInputSurface](MediaRecorder.md))`(`surface:` ` [Surface](../android.view/Surface.md)`)` Configures the recorder to use a persistent surface when using SURFACE video source. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLocation](MediaRecorder.md))`(`latitude:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `longitude:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Set and store the geodata (latitude and longitude) in the output file. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLogSessionId](MediaRecorder.md))`(`id:` ` [LogSessionId](../android.media.metrics/LogSessionId.md)`)` Sets the [LogSessionId](../android.media.metrics/LogSessionId.md) for MediaRecorder. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMaxDuration](../android/media/MediaRecorder.md))`(`max_duration_ms:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the maximum duration (in ms) of the recording session. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMaxFileSize](../android/media/MediaRecorder.md))`(`max_filesize_bytes:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the maximum filesize (in bytes) of the recording session. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setNextOutputFile](../android/media/MediaRecorder.md))`(`file:` ` [File](../java/io/File.md)!`)` Sets the next output file to be used when the maximum filesize is reached on the prior output #setOutputFile or #setNextOutputFile). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMaxDuration](MediaRecorder.md))`(`max_duration_ms:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the maximum duration (in ms) of the recording session. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMaxFileSize](MediaRecorder.md))`(`max_filesize_bytes:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the maximum filesize (in bytes) of the recording session. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setNextOutputFile](MediaRecorder.md))`(`file:` ` [File](../java.io/File.md)!`)` Sets the next output file to be used when the maximum filesize is reached on the prior output #setOutputFile or #setNextOutputFile). |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setNextOutputFile](../android/media/MediaRecorder.md))`(`fd:` ` [FileDescriptor](../java/io/FileDescriptor.md)!`)` Sets the next output file descriptor to be used when the maximum filesize is reached on the prior output #setOutputFile or #setNextOutputFile). |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOnErrorListener](../android/media/MediaRecorder.md))`(`l:` ` [MediaRecorder.OnErrorListener](../android/media/MediaRecorder.OnErrorListener.md)!`)` Register a callback to be invoked when an error occurs while recording. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOnInfoListener](../android/media/MediaRecorder.md))`(`listener:` ` [MediaRecorder.OnInfoListener](../android/media/MediaRecorder.OnInfoListener.md)!`)` Register a callback to be invoked when an informational event occurs while recording. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setNextOutputFile](MediaRecorder.md))`(`fd:` ` [FileDescriptor](../java.io/FileDescriptor.md)!`)` Sets the next output file descriptor to be used when the maximum filesize is reached on the prior output #setOutputFile or #setNextOutputFile). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOnErrorListener](MediaRecorder.md))`(`l:` ` [MediaRecorder.OnErrorListener](../android/media/MediaRecorder.OnErrorListener.md)!`)` Register a callback to be invoked when an error occurs while recording. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOnInfoListener](MediaRecorder.md))`(`listener:` ` [MediaRecorder.OnInfoListener](../android/media/MediaRecorder.OnInfoListener.md)!`)` Register a callback to be invoked when an informational event occurs while recording. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOrientationHint](../android/media/MediaRecorder.md))`(`degrees:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the orientation hint for output video playback. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOutputFile](../android/media/MediaRecorder.md))`(`file:` ` [File](../java/io/File.md)!`)` Pass in the file object to be written. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOutputFile](../android/media/MediaRecorder.md))`(`fd:` ` [FileDescriptor](../java/io/FileDescriptor.md)!`)` Pass in the file descriptor of the file to be written. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOrientationHint](MediaRecorder.md))`(`degrees:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the orientation hint for output video playback. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOutputFile](MediaRecorder.md))`(`file:` ` [File](../java.io/File.md)!`)` Pass in the file object to be written. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOutputFile](MediaRecorder.md))`(`fd:` ` [FileDescriptor](../java.io/FileDescriptor.md)!`)` Pass in the file descriptor of the file to be written. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOutputFile](../android/media/MediaRecorder.md))`(`path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the path of the output file to be produced. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOutputFormat](../android/media/MediaRecorder.md))`(`output_format:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the format of the output file produced during recording. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [setPreferredDevice](../android/media/MediaRecorder.md))`(`deviceInfo:` ` [AudioDeviceInfo](../android/media/AudioDeviceInfo.md)!`)` Specifies an audio device (via an [AudioDeviceInfo](../android/media/AudioDeviceInfo.md) object) to route the input from this MediaRecorder. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOutputFile](MediaRecorder.md))`(`path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the path of the output file to be produced. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOutputFormat](MediaRecorder.md))`(`output_format:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the format of the output file produced during recording. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [setPreferredDevice](MediaRecorder.md))`(`deviceInfo:` ` [AudioDeviceInfo](AudioDeviceInfo.md)!`)` Specifies an audio device (via an [AudioDeviceInfo](AudioDeviceInfo.md) object) to route the input from this MediaRecorder. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [setPreferredMicrophoneDirection](../android/media/MediaRecorder.md))`(`direction:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Specifies the logical microphone (for processing). |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [setPreferredMicrophoneFieldDimension](../android/media/MediaRecorder.md))`(`zoom:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Specifies the zoom factor (i.e. the field dimension) for the selected microphone (for processing). |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPreviewDisplay](../android/media/MediaRecorder.md))`(`sv:` ` [Surface](../android/view/Surface.md)!`)` Sets a Surface to show a preview of recorded media (video). |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [setPreferredMicrophoneDirection](MediaRecorder.md))`(`direction:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Specifies the logical microphone (for processing). |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [setPreferredMicrophoneFieldDimension](MediaRecorder.md))`(`zoom:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Specifies the zoom factor (i.e. the field dimension) for the selected microphone (for processing). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPreviewDisplay](MediaRecorder.md))`(`sv:` ` [Surface](../android.view/Surface.md)!`)` Sets a Surface to show a preview of recorded media (video). |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPrivacySensitive](../android/media/MediaRecorder.md))`(`privacySensitive:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Indicates that this capture request is privacy sensitive and that any concurrent capture is not permitted. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setProfile](../android/media/MediaRecorder.md))`(`profile:` ` [CamcorderProfile](../android/media/CamcorderProfile.md)!`)` Uses the settings from a CamcorderProfile object for recording. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setVideoEncoder](../android/media/MediaRecorder.md))`(`video_encoder:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the video encoder to be used for recording. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPrivacySensitive](MediaRecorder.md))`(`privacySensitive:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Indicates that this capture request is privacy sensitive and that any concurrent capture is not permitted. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setProfile](MediaRecorder.md))`(`profile:` ` [CamcorderProfile](CamcorderProfile.md)!`)` Uses the settings from a CamcorderProfile object for recording. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setVideoEncoder](MediaRecorder.md))`(`video_encoder:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the video encoder to be used for recording. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setVideoEncodingBitRate](../android/media/MediaRecorder.md))`(`bitRate:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the video encoding bit rate for recording. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setVideoEncodingProfileLevel](../android/media/MediaRecorder.md))`(`profile:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `level:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the desired video encoding profile and level for recording. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setVideoFrameRate](../android/media/MediaRecorder.md))`(`rate:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the frame rate of the video to be captured. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setVideoEncodingBitRate](MediaRecorder.md))`(`bitRate:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the video encoding bit rate for recording. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setVideoEncodingProfileLevel](MediaRecorder.md))`(`profile:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `level:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the desired video encoding profile and level for recording. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setVideoFrameRate](MediaRecorder.md))`(`rate:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the frame rate of the video to be captured. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setVideoProfile](../android/media/MediaRecorder.md))`(`profile:` ` [EncoderProfiles.VideoProfile](../android/media/EncoderProfiles.VideoProfile.md)`)` Uses the settings from a VideoProfile object for recording. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setVideoSize](../android/media/MediaRecorder.md))`(`width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `height:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the width and height of the video to be captured. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setVideoSource](../android/media/MediaRecorder.md))`(`video_source:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the video source to be used for recording. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setVideoProfile](MediaRecorder.md))`(`profile:` ` [EncoderProfiles.VideoProfile](../android/media/EncoderProfiles.VideoProfile.md)`)` Uses the settings from a VideoProfile object for recording. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setVideoSize](MediaRecorder.md))`(`width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `height:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the width and height of the video to be captured. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setVideoSource](MediaRecorder.md))`(`video_source:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the video source to be used for recording. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [start](../android/media/MediaRecorder.md))`()` Begins capturing and encoding data to the file specified with setOutputFile(). |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [stop](../android/media/MediaRecorder.md))`()` Stops recording. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterAudioRecordingCallback](../android/media/MediaRecorder.md))`(`cb:` ` [AudioManager.AudioRecordingCallback](../android/media/AudioManager.AudioRecordingCallback.md)`)` Unregister an audio recording callback previously registered with [registerAudioRecordingCallback(java.util.concurrent.Executor,android.media.AudioManager.AudioRecordingCallback)](../android/media/MediaRecorder.md)). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [start](MediaRecorder.md))`()` Begins capturing and encoding data to the file specified with setOutputFile(). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [stop](MediaRecorder.md))`()` Stops recording. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterAudioRecordingCallback](MediaRecorder.md))`(`cb:` ` [AudioManager.AudioRecordingCallback](../android/media/AudioManager.AudioRecordingCallback.md)`)` Unregister an audio recording callback previously registered with [registerAudioRecordingCallback(java.util.concurrent.Executor,android.media.AudioManager.AudioRecordingCallback)](MediaRecorder.md)). |
 | --- | --- |
 
 | Protected methods ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](../android/media/MediaRecorder.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](MediaRecorder.md))`()` <br /> |
 
 ## Constants
 
@@ -287,7 +287,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 MediaRecorder()
 ```
 
-**Deprecated:** *Use [MediaRecorder(android.content.Context)](../android/media/MediaRecorder.md))instead*
+**Deprecated:** *Use [MediaRecorder(android.content.Context)](MediaRecorder.md))instead*
 
 Default constructor. 
 
@@ -303,7 +303,7 @@ Default constructor.
 
 | Parameters ||
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](../android/content/Context.md):Context the recorder belongs to This value cannot be`null`. |
+| `context` | [Context](../android.content/Context.md):Context the recorder belongs to This value cannot be`null`. |
 
 ## Public methods
 
@@ -323,7 +323,7 @@ Adds an [AudioRouting.OnRoutingChangedListener](../android/media/AudioRouting.On
 | Parameters ||
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `listener` | [AudioRouting.OnRoutingChangedListener](../android/media/AudioRouting.OnRoutingChangedListener.md)!:The [AudioRouting.OnRoutingChangedListener](../android/media/AudioRouting.OnRoutingChangedListener.md) interface to receive notifications of rerouting events. |
-| `handler` | [Handler](../android/os/Handler.md)!:Specifies the [Handler](../android/os/Handler.md) object for the thread on which to execute the callback. If`null`, the handler on the main looper will be used. |
+| `handler` | [Handler](../android.os/Handler.md)!:Specifies the [Handler](../android.os/Handler.md) object for the thread on which to execute the callback. If`null`, the handler on the main looper will be used. |
 
 ### getActiveMicrophones
 
@@ -333,11 +333,11 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 open fun getActiveMicrophones(): MutableList<MicrophoneInfo!>!
 ```
 
-Return A lists of [MicrophoneInfo](../android/media/MicrophoneInfo.md) representing the active microphones. By querying channel mapping for each active microphone, developer can know how the microphone is used by each channels or a capture stream.
+Return A lists of [MicrophoneInfo](MicrophoneInfo.md) representing the active microphones. By querying channel mapping for each active microphone, developer can know how the microphone is used by each channels or a capture stream.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [MicrophoneInfo](../android/media/MicrophoneInfo.md)!>! | a lists of [MicrophoneInfo](../android/media/MicrophoneInfo.md) representing the active microphones |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [MicrophoneInfo](MicrophoneInfo.md)!>! | a lists of [MicrophoneInfo](MicrophoneInfo.md) representing the active microphones |
 
 | Exceptions ||
 |-----------------------|--------------------|
@@ -355,11 +355,11 @@ Returns the current active audio recording for this audio recorder.
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [AudioRecordingConfiguration](../android/media/AudioRecordingConfiguration.md)? | a valid [AudioRecordingConfiguration](../android/media/AudioRecordingConfiguration.md) if this recorder is active or null otherwise. |
+| [AudioRecordingConfiguration](AudioRecordingConfiguration.md)? | a valid [AudioRecordingConfiguration](AudioRecordingConfiguration.md) if this recorder is active or null otherwise. |
 
 **See Also**
 
-- [android.media.AudioRecordingConfiguration](../android/media/AudioRecordingConfiguration.md) 
+- [android.media.AudioRecordingConfiguration](AudioRecordingConfiguration.md) 
 
 ### getAudioSourceMax
 
@@ -382,11 +382,11 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 open fun getLogSessionId(): LogSessionId
 ```
 
-Returns the [LogSessionId](../android/media/metrics/LogSessionId.md) for MediaRecorder.
+Returns the [LogSessionId](../android.media.metrics/LogSessionId.md) for MediaRecorder.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| [LogSessionId](../android/media/metrics/LogSessionId.md) | the global ID for monitoring the MediaRecorder performance This value cannot be`null`. |
+| [LogSessionId](../android.media.metrics/LogSessionId.md) | the global ID for monitoring the MediaRecorder performance This value cannot be`null`. |
 
 ### getMaxAmplitude
 
@@ -418,7 +418,7 @@ Return Metrics data about the current Mediarecorder instance.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [PersistableBundle](../android/os/PersistableBundle.md)! | a [PersistableBundle](../android/os/PersistableBundle.md) containing the set of attributes and values available for the media being generated by this instance of MediaRecorder. The attributes are descibed in [MetricsConstants](../android/media/MediaRecorder.MetricsConstants.md). Additional vendor-specific fields may also be present in the return value. |
+| [PersistableBundle](../android.os/PersistableBundle.md)! | a [PersistableBundle](../android.os/PersistableBundle.md) containing the set of attributes and values available for the media being generated by this instance of MediaRecorder. The attributes are descibed in [MetricsConstants](../android/media/MediaRecorder.MetricsConstants.md). Additional vendor-specific fields may also be present in the return value. |
 
 ### getPreferredDevice
 
@@ -428,7 +428,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 open fun getPreferredDevice(): AudioDeviceInfo!
 ```
 
-Returns the selected input device specified by [setPreferredDevice](../android/media/MediaRecorder.md)). Note that this is not guaranteed to correspond to the actual device being used for recording. 
+Returns the selected input device specified by [setPreferredDevice](MediaRecorder.md)). Note that this is not guaranteed to correspond to the actual device being used for recording. 
 
 ### getRoutedDevice
 
@@ -438,7 +438,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 open fun getRoutedDevice(): AudioDeviceInfo!
 ```
 
-Returns an [AudioDeviceInfo](../android/media/AudioDeviceInfo.md) identifying the current routing of this MediaRecorder Note: The query is only valid if the MediaRecorder is currently recording. If the recorder is not recording, the returned device can be null or correspond to previously selected device when the recorder was last active. 
+Returns an [AudioDeviceInfo](AudioDeviceInfo.md) identifying the current routing of this MediaRecorder Note: The query is only valid if the MediaRecorder is currently recording. If the recorder is not recording, the returned device can be null or correspond to previously selected device when the recorder was last active. 
 
 ### getRoutedDevices
 
@@ -448,11 +448,11 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 open fun getRoutedDevices(): MutableList<AudioDeviceInfo!>
 ```
 
-Returns a List of [AudioDeviceInfo](../android/media/AudioDeviceInfo.md) identifying the current routing of this MediaRecorder. Note: The query is only valid if the MediaRecorder is currently recording. If the recorder is not recording, the returned devices can be empty or correspond to previously selected devices when the recorder was last active.
+Returns a List of [AudioDeviceInfo](AudioDeviceInfo.md) identifying the current routing of this MediaRecorder. Note: The query is only valid if the MediaRecorder is currently recording. If the recorder is not recording, the returned devices can be empty or correspond to previously selected devices when the recorder was last active.
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [AudioDeviceInfo](../android/media/AudioDeviceInfo.md)!> | This value cannot be`null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [AudioDeviceInfo](AudioDeviceInfo.md)!> | This value cannot be`null`. |
 
 ### getSurface
 
@@ -464,11 +464,11 @@ open fun getSurface(): Surface!
 
 Gets the surface to record from when using SURFACE video source.
 
-May only be called after [prepare](../android/media/MediaRecorder.md)). Frames rendered to the Surface before [start](../android/media/MediaRecorder.md))will be discarded.
+May only be called after [prepare](MediaRecorder.md)). Frames rendered to the Surface before [start](MediaRecorder.md))will be discarded.
 
 | Exceptions ||
 |-----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.IllegalStateException` | if it is called before [prepare](../android/media/MediaRecorder.md)), after [stop](../android/media/MediaRecorder.md)), or is called when VideoSource is not set to SURFACE. |
+| `java.lang.IllegalStateException` | if it is called before [prepare](MediaRecorder.md)), after [stop](MediaRecorder.md)), or is called when VideoSource is not set to SURFACE. |
 
 **See Also**
 
@@ -484,7 +484,7 @@ open fun isPrivacySensitive(): Boolean
 
 Returns whether this MediaRecorder is marked as privacy sensitive or not with regard to audio capture.
 
-See [setPrivacySensitive(boolean)](../android/media/MediaRecorder.md))
+See [setPrivacySensitive(boolean)](MediaRecorder.md))
 
 <br />
 
@@ -536,7 +536,7 @@ Register a callback to be notified of audio capture changes via a [AudioManager.
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): [Executor](../java/util/concurrent/Executor.md) to handle the callbacks. This value cannot be`null`. Callback and listener events are dispatched through this [Executor](../java/util/concurrent/Executor.md), providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use [Context.getMainExecutor()](../android/content/Context.md)). Otherwise, provide an [Executor](../java/util/concurrent/Executor.md) that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): [Executor](../java.util.concurrent/Executor.md) to handle the callbacks. This value cannot be`null`. Callback and listener events are dispatched through this [Executor](../java.util.concurrent/Executor.md), providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use [Context.getMainExecutor()](../android.content/Context.md)). Otherwise, provide an [Executor](../java.util.concurrent/Executor.md) that dispatches to an appropriate thread. |
 | `cb` | [AudioManager.AudioRecordingCallback](../android/media/AudioManager.AudioRecordingCallback.md):non-null callback to register |
 
 ### release
@@ -589,7 +589,7 @@ Resumes recording. Call this after start(). It does nothing if the recording is 
 
 **See Also**
 
-- [android.media.MediaRecorder#pause](../android/media/MediaRecorder.md)) 
+- [android.media.MediaRecorder#pause](MediaRecorder.md)) 
 
 ### setAudioChannels
 
@@ -653,7 +653,7 @@ Uses the settings from an AudioProfile for recording.
 
 This method should be called after the video AND audio sources are set, and before setOutputFile().
 
-This method can be used instead of [setProfile](../android/media/MediaRecorder.md))when using EncoderProfiles.
+This method can be used instead of [setProfile](MediaRecorder.md))when using EncoderProfiles.
 
 | Parameters ||
 |-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -661,8 +661,8 @@ This method can be used instead of [setProfile](../android/media/MediaRecorder.m
 
 **See Also**
 
-- [android.media.EncoderProfiles](../android/media/EncoderProfiles.md)
-- [android.media.CamcorderProfile#getAll](../android/media/CamcorderProfile.md)) 
+- [android.media.EncoderProfiles](EncoderProfiles.md)
+- [android.media.CamcorderProfile#getAll](CamcorderProfile.md)) 
 
 ### setAudioSamplingRate
 
@@ -709,15 +709,15 @@ Deprecated in [API level 21](https://developer.android.com/guide/topics/manifest
 open fun setCamera(c: Camera!): Unit
 ```
 
-**Deprecated:** *Use [getSurface](../android/media/MediaRecorder.md))and the [android.hardware.camera2](../android/hardware/camera2/_package.md) API instead.*
+**Deprecated:** *Use [getSurface](MediaRecorder.md))and the [android.hardware.camera2](../android.hardware.camera2/_package.md) API instead.*
 
-Sets a [android.hardware.Camera](../android/hardware/Camera.md) to use for recording.
+Sets a [android.hardware.Camera](../android.hardware/Camera.md) to use for recording.
 
-Use this function to switch quickly between preview and capture mode without a teardown of the camera object. [android.hardware.Camera#unlock()](../android/hardware/Camera.md))should be called before this. Must call before [prepare](../android/media/MediaRecorder.md)).
+Use this function to switch quickly between preview and capture mode without a teardown of the camera object. [android.hardware.Camera#unlock()](../android.hardware/Camera.md))should be called before this. Must call before [prepare](MediaRecorder.md)).
 
 | Parameters ||
 |-----|-------------------------------------------------------------------------------------------------------------------------|
-| `c` | [Camera](../android/hardware/Camera.md)!:the Camera to use for recording |
+| `c` | [Camera](../android.hardware/Camera.md)!:the Camera to use for recording |
 
 ### setCaptureRate
 
@@ -743,20 +743,20 @@ open fun setInputSurface(surface: Surface): Unit
 
 Configures the recorder to use a persistent surface when using SURFACE video source.
 
-May only be called before [prepare](../android/media/MediaRecorder.md)). If called, [getSurface](../android/media/MediaRecorder.md))should not be used and will throw IllegalStateException. Frames rendered to the Surface before [start](../android/media/MediaRecorder.md))will be discarded.
+May only be called before [prepare](MediaRecorder.md)). If called, [getSurface](MediaRecorder.md))should not be used and will throw IllegalStateException. Frames rendered to the Surface before [start](MediaRecorder.md))will be discarded.
 
 | Parameters ||
 |-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `surface` | [Surface](../android/view/Surface.md):a persistent input surface created by [MediaCodec.createPersistentInputSurface](../android/media/MediaCodec.md))This value cannot be`null`. |
+| `surface` | [Surface](../android.view/Surface.md):a persistent input surface created by [MediaCodec.createPersistentInputSurface](MediaCodec.md))This value cannot be`null`. |
 
 | Exceptions ||
 |--------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.IllegalStateException` | if it is called after [prepare](../android/media/MediaRecorder.md))and before [stop](../android/media/MediaRecorder.md)). |
-| `java.lang.IllegalArgumentException` | if the surface was not created by [MediaCodec.createPersistentInputSurface](../android/media/MediaCodec.md)). |
+| `java.lang.IllegalStateException` | if it is called after [prepare](MediaRecorder.md))and before [stop](MediaRecorder.md)). |
+| `java.lang.IllegalArgumentException` | if the surface was not created by [MediaCodec.createPersistentInputSurface](MediaCodec.md)). |
 
 **See Also**
 
-- [android.media.MediaCodec#createPersistentInputSurface](../android/media/MediaCodec.md))
+- [android.media.MediaCodec#createPersistentInputSurface](MediaCodec.md))
 - [android.media.MediaRecorder.VideoSource](../android/media/MediaRecorder.VideoSource.md) 
 
 ### setLocation
@@ -789,13 +789,13 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 open fun setLogSessionId(id: LogSessionId): Unit
 ```
 
-Sets the [LogSessionId](../android/media/metrics/LogSessionId.md) for MediaRecorder.
+Sets the [LogSessionId](../android.media.metrics/LogSessionId.md) for MediaRecorder.
 
 The log session ID is a random 32-byte hexadecimal string that is used for monitoring the MediaRecorder performance.
 
 | Parameters ||
 |------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `id` | [LogSessionId](../android/media/metrics/LogSessionId.md):the global ID for monitoring the MediaRecorder performance This value cannot be`null`. |
+| `id` | [LogSessionId](../android.media.metrics/LogSessionId.md):the global ID for monitoring the MediaRecorder performance This value cannot be`null`. |
 
 ### setMaxDuration
 
@@ -805,9 +805,9 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 open fun setMaxDuration(max_duration_ms: Int): Unit
 ```
 
-Sets the maximum duration (in ms) of the recording session. Call this after setOutputFormat() but before prepare(). After recording reaches the specified duration, a notification will be sent to the [android.media.MediaRecorder.OnInfoListener](../android/media/MediaRecorder.OnInfoListener.md) with a "what" code of [MEDIA_RECORDER_INFO_MAX_DURATION_REACHED](../android/media/MediaRecorder.md) and recording will be stopped. Stopping happens asynchronously, there is no guarantee that the recorder will have stopped by the time the listener is notified.
+Sets the maximum duration (in ms) of the recording session. Call this after setOutputFormat() but before prepare(). After recording reaches the specified duration, a notification will be sent to the [android.media.MediaRecorder.OnInfoListener](../android/media/MediaRecorder.OnInfoListener.md) with a "what" code of [MEDIA_RECORDER_INFO_MAX_DURATION_REACHED](MediaRecorder.md) and recording will be stopped. Stopping happens asynchronously, there is no guarantee that the recorder will have stopped by the time the listener is notified.
 
-When using MPEG-4 container ([setOutputFormat(int)](../android/media/MediaRecorder.md))with [OutputFormat.MPEG_4](../android/media/MediaRecorder.OutputFormat.md)), it is recommended to set maximum duration that fits the use case. Setting a larger than required duration may result in a larger than needed output file because of space reserved for MOOV box expecting large movie data in this recording session. Unused space of MOOV box is turned into FREE box in the output file.
+When using MPEG-4 container ([setOutputFormat(int)](MediaRecorder.md))with [OutputFormat.MPEG_4](../android/media/MediaRecorder.OutputFormat.md)), it is recommended to set maximum duration that fits the use case. Setting a larger than required duration may result in a larger than needed output file because of space reserved for MOOV box expecting large movie data in this recording session. Unused space of MOOV box is turned into FREE box in the output file.
 
 | Parameters ||
 |-------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -821,9 +821,9 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 open fun setMaxFileSize(max_filesize_bytes: Long): Unit
 ```
 
-Sets the maximum filesize (in bytes) of the recording session. Call this after setOutputFormat() but before prepare(). After recording reaches the specified filesize, a notification will be sent to the [android.media.MediaRecorder.OnInfoListener](../android/media/MediaRecorder.OnInfoListener.md) with a "what" code of [MEDIA_RECORDER_INFO_MAX_FILESIZE_REACHED](../android/media/MediaRecorder.md) and recording will be stopped. Stopping happens asynchronously, there is no guarantee that the recorder will have stopped by the time the listener is notified.
+Sets the maximum filesize (in bytes) of the recording session. Call this after setOutputFormat() but before prepare(). After recording reaches the specified filesize, a notification will be sent to the [android.media.MediaRecorder.OnInfoListener](../android/media/MediaRecorder.OnInfoListener.md) with a "what" code of [MEDIA_RECORDER_INFO_MAX_FILESIZE_REACHED](MediaRecorder.md) and recording will be stopped. Stopping happens asynchronously, there is no guarantee that the recorder will have stopped by the time the listener is notified.
 
-When using MPEG-4 container ([setOutputFormat(int)](../android/media/MediaRecorder.md))with [OutputFormat.MPEG_4](../android/media/MediaRecorder.OutputFormat.md)), it is recommended to set maximum filesize that fits the use case. Setting a larger than required filesize may result in a larger than needed output file because of space reserved for MOOV box expecting large movie data in this recording session. Unused space of MOOV box is turned into FREE box in the output file.
+When using MPEG-4 container ([setOutputFormat(int)](MediaRecorder.md))with [OutputFormat.MPEG_4](../android/media/MediaRecorder.OutputFormat.md)), it is recommended to set maximum filesize that fits the use case. Setting a larger than required filesize may result in a larger than needed output file because of space reserved for MOOV box expecting large movie data in this recording session. Unused space of MOOV box is turned into FREE box in the output file.
 
 | Parameters ||
 |----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -837,11 +837,11 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 open fun setNextOutputFile(file: File!): Unit
 ```
 
-Sets the next output file to be used when the maximum filesize is reached on the prior output #setOutputFile or #setNextOutputFile). File should be seekable. After setting the next output file, application should not use the file until [stop](../android/media/MediaRecorder.md)). Application must call this after receiving on the [android.media.MediaRecorder.OnInfoListener](../android/media/MediaRecorder.OnInfoListener.md) a "what" code of [MEDIA_RECORDER_INFO_MAX_FILESIZE_APPROACHING](../android/media/MediaRecorder.md) and before receiving a "what" code of [MEDIA_RECORDER_INFO_MAX_FILESIZE_REACHED](../android/media/MediaRecorder.md). The file is not used until switching to that output. Application will receive [MEDIA_RECORDER_INFO_NEXT_OUTPUT_FILE_STARTED](../android/media/MediaRecorder.md) when the next output file is used. Application will not be able to set a new output file if the previous one has not been used. Application is responsible for cleaning up unused files after [stop](../android/media/MediaRecorder.md))is called.
+Sets the next output file to be used when the maximum filesize is reached on the prior output #setOutputFile or #setNextOutputFile). File should be seekable. After setting the next output file, application should not use the file until [stop](MediaRecorder.md)). Application must call this after receiving on the [android.media.MediaRecorder.OnInfoListener](../android/media/MediaRecorder.OnInfoListener.md) a "what" code of [MEDIA_RECORDER_INFO_MAX_FILESIZE_APPROACHING](MediaRecorder.md) and before receiving a "what" code of [MEDIA_RECORDER_INFO_MAX_FILESIZE_REACHED](MediaRecorder.md). The file is not used until switching to that output. Application will receive [MEDIA_RECORDER_INFO_NEXT_OUTPUT_FILE_STARTED](MediaRecorder.md) when the next output file is used. Application will not be able to set a new output file if the previous one has not been used. Application is responsible for cleaning up unused files after [stop](MediaRecorder.md))is called.
 
 | Parameters ||
 |--------|---------------------------------------------------------------------------------------------|
-| `file` | [File](../java/io/File.md)!:The file to use. |
+| `file` | [File](../java.io/File.md)!:The file to use. |
 
 | Exceptions ||
 |-----------------------------------|---------------------------------------|
@@ -856,11 +856,11 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 open fun setNextOutputFile(fd: FileDescriptor!): Unit
 ```
 
-Sets the next output file descriptor to be used when the maximum filesize is reached on the prior output #setOutputFile or #setNextOutputFile). File descriptor must be seekable and writable. After setting the next output file, application should not use the file referenced by this file descriptor until [stop](../android/media/MediaRecorder.md)). It is the application's responsibility to close the file descriptor. It is safe to do so as soon as this call returns. Application must call this after receiving on the [android.media.MediaRecorder.OnInfoListener](../android/media/MediaRecorder.OnInfoListener.md) a "what" code of [MEDIA_RECORDER_INFO_MAX_FILESIZE_APPROACHING](../android/media/MediaRecorder.md) and before receiving a "what" code of [MEDIA_RECORDER_INFO_MAX_FILESIZE_REACHED](../android/media/MediaRecorder.md). The file is not used until switching to that output. Application will receive [MEDIA_RECORDER_INFO_NEXT_OUTPUT_FILE_STARTED](../android/media/MediaRecorder.md) when the next output file is used. Application will not be able to set a new output file if the previous one has not been used. Application is responsible for cleaning up unused files after [stop](../android/media/MediaRecorder.md))is called.
+Sets the next output file descriptor to be used when the maximum filesize is reached on the prior output #setOutputFile or #setNextOutputFile). File descriptor must be seekable and writable. After setting the next output file, application should not use the file referenced by this file descriptor until [stop](MediaRecorder.md)). It is the application's responsibility to close the file descriptor. It is safe to do so as soon as this call returns. Application must call this after receiving on the [android.media.MediaRecorder.OnInfoListener](../android/media/MediaRecorder.OnInfoListener.md) a "what" code of [MEDIA_RECORDER_INFO_MAX_FILESIZE_APPROACHING](MediaRecorder.md) and before receiving a "what" code of [MEDIA_RECORDER_INFO_MAX_FILESIZE_REACHED](MediaRecorder.md). The file is not used until switching to that output. Application will receive [MEDIA_RECORDER_INFO_NEXT_OUTPUT_FILE_STARTED](MediaRecorder.md) when the next output file is used. Application will not be able to set a new output file if the previous one has not been used. Application is responsible for cleaning up unused files after [stop](MediaRecorder.md))is called.
 
 | Parameters ||
 |------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| `fd` | [FileDescriptor](../java/io/FileDescriptor.md)!:an open file descriptor to be written into. |
+| `fd` | [FileDescriptor](../java.io/FileDescriptor.md)!:an open file descriptor to be written into. |
 
 | Exceptions ||
 |-----------------------------------|---------------------------------------|
@@ -921,11 +921,11 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 open fun setOutputFile(file: File!): Unit
 ```
 
-Pass in the file object to be written. Call this after setOutputFormat() but before prepare(). File should be seekable. After setting the next output file, application should not use the file until [stop](../android/media/MediaRecorder.md)). Application is responsible for cleaning up unused files after [stop](../android/media/MediaRecorder.md))is called.
+Pass in the file object to be written. Call this after setOutputFormat() but before prepare(). File should be seekable. After setting the next output file, application should not use the file until [stop](MediaRecorder.md)). Application is responsible for cleaning up unused files after [stop](MediaRecorder.md))is called.
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------|
-| `file` | [File](../java/io/File.md)!:the file object to be written into. |
+| `file` | [File](../java.io/File.md)!:the file object to be written into. |
 
 ### setOutputFile
 
@@ -939,7 +939,7 @@ Pass in the file descriptor of the file to be written. Call this after setOutput
 
 | Parameters ||
 |------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| `fd` | [FileDescriptor](../java/io/FileDescriptor.md)!:an open file descriptor to be written into. |
+| `fd` | [FileDescriptor](../java.io/FileDescriptor.md)!:an open file descriptor to be written into. |
 
 | Exceptions ||
 |-----------------------------------|-------------------------------------------------------------|
@@ -995,15 +995,15 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 open fun setPreferredDevice(deviceInfo: AudioDeviceInfo!): Boolean
 ```
 
-Specifies an audio device (via an [AudioDeviceInfo](../android/media/AudioDeviceInfo.md) object) to route the input from this MediaRecorder.
+Specifies an audio device (via an [AudioDeviceInfo](AudioDeviceInfo.md) object) to route the input from this MediaRecorder.
 
 | Parameters ||
 |--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `deviceInfo` | [AudioDeviceInfo](../android/media/AudioDeviceInfo.md)!:The [AudioDeviceInfo](../android/media/AudioDeviceInfo.md) specifying the audio source. If deviceInfo is null, default routing is restored. |
+| `deviceInfo` | [AudioDeviceInfo](AudioDeviceInfo.md)!:The [AudioDeviceInfo](AudioDeviceInfo.md) specifying the audio source. If deviceInfo is null, default routing is restored. |
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | true if succesful, false if the specified [AudioDeviceInfo](../android/media/AudioDeviceInfo.md) is non-null and does not correspond to a valid audio input device. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | true if succesful, false if the specified [AudioDeviceInfo](AudioDeviceInfo.md) is non-null and does not correspond to a valid audio input device. |
 
 ### setPreferredMicrophoneDirection
 
@@ -1017,7 +1017,7 @@ Specifies the logical microphone (for processing).
 
 | Parameters ||
 |-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `direction` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Direction constant. Value is [android.media.MicrophoneDirection#MIC_DIRECTION_UNSPECIFIED](../android/media/MicrophoneDirection.md), [android.media.MicrophoneDirection#MIC_DIRECTION_TOWARDS_USER](../android/media/MicrophoneDirection.md), [android.media.MicrophoneDirection#MIC_DIRECTION_AWAY_FROM_USER](../android/media/MicrophoneDirection.md), or [android.media.MicrophoneDirection#MIC_DIRECTION_EXTERNAL](../android/media/MicrophoneDirection.md) |
+| `direction` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Direction constant. Value is [android.media.MicrophoneDirection#MIC_DIRECTION_UNSPECIFIED](MicrophoneDirection.md), [android.media.MicrophoneDirection#MIC_DIRECTION_TOWARDS_USER](MicrophoneDirection.md), [android.media.MicrophoneDirection#MIC_DIRECTION_AWAY_FROM_USER](MicrophoneDirection.md), or [android.media.MicrophoneDirection#MIC_DIRECTION_EXTERNAL](MicrophoneDirection.md) |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------|
@@ -1049,15 +1049,15 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun setPreviewDisplay(sv: Surface!): Unit
 ```
 
-Sets a Surface to show a preview of recorded media (video). Calls this before prepare() to make sure that the desirable preview display is set. If [setCamera(android.hardware.Camera)](../android/media/MediaRecorder.md))is used and the surface has been already set to the camera, application do not need to call this. If this is called with non-null surface, the preview surface of the camera will be replaced by the new surface. If this method is called with null surface or not called at all, media recorder will not change the preview surface of the camera.
+Sets a Surface to show a preview of recorded media (video). Calls this before prepare() to make sure that the desirable preview display is set. If [setCamera(android.hardware.Camera)](MediaRecorder.md))is used and the surface has been already set to the camera, application do not need to call this. If this is called with non-null surface, the preview surface of the camera will be replaced by the new surface. If this method is called with null surface or not called at all, media recorder will not change the preview surface of the camera.
 
 | Parameters ||
 |------|--------------------------------------------------------------------------------------------------------------------------|
-| `sv` | [Surface](../android/view/Surface.md)!:the Surface to use for the preview |
+| `sv` | [Surface](../android.view/Surface.md)!:the Surface to use for the preview |
 
 **See Also**
 
-- [android.hardware.Camera#setPreviewDisplay(android.view.SurfaceHolder)](../android/hardware/Camera.md)) 
+- [android.hardware.Camera#setPreviewDisplay(android.view.SurfaceHolder)](../android.hardware/Camera.md)) 
 
 ### setPrivacySensitive
 
@@ -1069,7 +1069,7 @@ open fun setPrivacySensitive(privacySensitive: Boolean): Unit
 
 Indicates that this capture request is privacy sensitive and that any concurrent capture is not permitted.
 
-The default is not privacy sensitive except when the audio source set with [setAudioSource(int)](../android/media/MediaRecorder.md))is [AudioSource.VOICE_COMMUNICATION](../android/media/MediaRecorder.AudioSource.md) or [AudioSource.CAMCORDER](../android/media/MediaRecorder.AudioSource.md).
+The default is not privacy sensitive except when the audio source set with [setAudioSource(int)](MediaRecorder.md))is [AudioSource.VOICE_COMMUNICATION](../android/media/MediaRecorder.AudioSource.md) or [AudioSource.CAMCORDER](../android/media/MediaRecorder.AudioSource.md).
 
 Always takes precedence over default from audio source when set explicitly.
 
@@ -1082,9 +1082,9 @@ Using this API is only permitted when the audio source is one of:
 - [AudioSource.UNPROCESSED](../android/media/MediaRecorder.AudioSource.md)
 - [AudioSource.VOICE_PERFORMANCE](../android/media/MediaRecorder.AudioSource.md)
 
-Invoking [prepare()](../android/media/MediaRecorder.md))will throw an IOException if this condition is not met.
+Invoking [prepare()](MediaRecorder.md))will throw an IOException if this condition is not met.
 
-Must be called after [setAudioSource(int)](../android/media/MediaRecorder.md))and before [setOutputFormat(int)](../android/media/MediaRecorder.md)).
+Must be called after [setAudioSource(int)](MediaRecorder.md))and before [setOutputFormat(int)](MediaRecorder.md)).
 
 | Parameters ||
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1092,7 +1092,7 @@ Must be called after [setAudioSource(int)](../android/media/MediaRecorder.md))an
 
 | Exceptions ||
 |-----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.IllegalStateException` | if called before [setAudioSource(int)](../android/media/MediaRecorder.md))or after [setOutputFormat(int)](../android/media/MediaRecorder.md)) |
+| `java.lang.IllegalStateException` | if called before [setAudioSource(int)](MediaRecorder.md))or after [setOutputFormat(int)](MediaRecorder.md)) |
 
 ### setProfile
 
@@ -1106,11 +1106,11 @@ Uses the settings from a CamcorderProfile object for recording. This method shou
 
 | Parameters ||
 |-----------|--------------------------------------------------------------------------------------------------------------------------------|
-| `profile` | [CamcorderProfile](../android/media/CamcorderProfile.md)!:the CamcorderProfile to use |
+| `profile` | [CamcorderProfile](CamcorderProfile.md)!:the CamcorderProfile to use |
 
 **See Also**
 
-- [android.media.CamcorderProfile](../android/media/CamcorderProfile.md) 
+- [android.media.CamcorderProfile](CamcorderProfile.md) 
 
 ### setVideoEncoder
 
@@ -1144,7 +1144,7 @@ open fun setVideoEncodingBitRate(bitRate: Int): Unit
 
 Sets the video encoding bit rate for recording. Call this method before prepare(). Prepare() may perform additional checks on the parameter to make sure whether the specified bit rate is applicable, and sometimes the passed bitRate will be clipped internally to ensure the video recording can proceed smoothly based on the capabilities of the platform.
 
-NB: the actual bitrate and other encoding characteristics may be affected by the minimum quality floor behavior introduced in [android.os.Build.VERSION_CODES#S](../android/os/Build.VERSION_CODES.md). More detail on how and where this impacts video encoding can be found in the [MediaCodec](../android/media/MediaCodec.md) page and looking for "quality floor" (near the top of the page).
+NB: the actual bitrate and other encoding characteristics may be affected by the minimum quality floor behavior introduced in [android.os.Build.VERSION_CODES#S](../android/os/Build.VERSION_CODES.md). More detail on how and where this impacts video encoding can be found in the [MediaCodec](MediaCodec.md) page and looking for "quality floor" (near the top of the page).
 
 | Parameters ||
 |-----------|----------------------------------------------------------------------------------------------------------------------------|
@@ -1161,7 +1161,7 @@ open fun setVideoEncodingProfileLevel(
 ): Unit
 ```
 
-Sets the desired video encoding profile and level for recording. The profile and level must be valid for the video encoder set by [setVideoEncoder](../android/media/MediaRecorder.md)). This method can called before or after [setVideoEncoder](../android/media/MediaRecorder.md))but it must be called before [prepare](../android/media/MediaRecorder.md)).`prepare()`may perform additional checks on the parameter to make sure that the specified profile and level are applicable, and sometimes the passed profile or level will be discarded due to codec capablity or to ensure the video recording can proceed smoothly based on the capabilities of the platform. 
+Sets the desired video encoding profile and level for recording. The profile and level must be valid for the video encoder set by [setVideoEncoder](MediaRecorder.md)). This method can called before or after [setVideoEncoder](MediaRecorder.md))but it must be called before [prepare](MediaRecorder.md)).`prepare()`may perform additional checks on the parameter to make sure that the specified profile and level are applicable, and sometimes the passed profile or level will be discarded due to codec capablity or to ensure the video recording can proceed smoothly based on the capabilities of the platform. 
 Application can also use the [MediaCodecInfo.CodecCapabilities.profileLevels](../android/media/MediaCodecInfo.CodecCapabilities.md) to query applicable combination of profile and level for the corresponding format. Note that the requested profile/level may not be supported by the codec that is actually being used by this MediaRecorder instance.
 
 | Parameters ||
@@ -1205,7 +1205,7 @@ Uses the settings from a VideoProfile object for recording.
 
 This method should be called after the video AND audio sources are set, and before setOutputFile().
 
-This method can be used instead of [setProfile](../android/media/MediaRecorder.md))when using EncoderProfiles.
+This method can be used instead of [setProfile](MediaRecorder.md))when using EncoderProfiles.
 
 | Parameters ||
 |-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1213,8 +1213,8 @@ This method can be used instead of [setProfile](../android/media/MediaRecorder.m
 
 **See Also**
 
-- [android.media.EncoderProfiles](../android/media/EncoderProfiles.md)
-- [android.media.CamcorderProfile#getAll](../android/media/CamcorderProfile.md)) 
+- [android.media.EncoderProfiles](EncoderProfiles.md)
+- [android.media.CamcorderProfile#getAll](CamcorderProfile.md)) 
 
 ### setVideoSize
 
@@ -1270,7 +1270,7 @@ open fun start(): Unit
 
 Begins capturing and encoding data to the file specified with setOutputFile(). Call this after prepare().
 
-Since API level 13, if applications set a camera via [setCamera(android.hardware.Camera)](../android/media/MediaRecorder.md)), the apps can use the camera after this method call. The apps do not need to lock the camera again. However, if this method fails, the apps should still lock the camera back. The apps should not start another recording session during recording.
+Since API level 13, if applications set a camera via [setCamera(android.hardware.Camera)](MediaRecorder.md)), the apps can use the camera after this method call. The apps do not need to lock the camera again. However, if this method fails, the apps should still lock the camera back. The apps should not start another recording session during recording.
 
 | Exceptions ||
 |-----------------------------------|---------------------------------------------------------------------------------------|
@@ -1298,7 +1298,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 open fun unregisterAudioRecordingCallback(cb: AudioManager.AudioRecordingCallback): Unit
 ```
 
-Unregister an audio recording callback previously registered with [registerAudioRecordingCallback(java.util.concurrent.Executor,android.media.AudioManager.AudioRecordingCallback)](../android/media/MediaRecorder.md)).
+Unregister an audio recording callback previously registered with [registerAudioRecordingCallback(java.util.concurrent.Executor,android.media.AudioManager.AudioRecordingCallback)](MediaRecorder.md)).
 
 | Parameters ||
 |------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

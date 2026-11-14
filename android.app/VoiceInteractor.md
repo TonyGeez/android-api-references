@@ -4,7 +4,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 
 # VoiceInteractor
 
-Kotlin| [Java](../android/app/VoiceInteractor.md) 
+Kotlin| [Java](VoiceInteractor.md) 
 | --- | --- |
 
 ```
@@ -13,9 +13,9 @@ class VoiceInteractor
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.VoiceInteractor](../android/app/VoiceInteractor.md) |
+| ↳ | [android.app.VoiceInteractor](VoiceInteractor.md) |
 
-Interface for an [Activity](../android/app/Activity.md) to interact with the user through voice. Use [Activity.getVoiceInteractor](../android/app/Activity.md))to retrieve the interface, if the activity is currently involved in a voice interaction.
+Interface for an [Activity](Activity.md) to interact with the user through voice. Use [Activity.getVoiceInteractor](Activity.md))to retrieve the interface, if the activity is currently involved in a voice interaction.
 
 The voice interactor revolves around submitting voice interaction requests to the back-end voice interaction service that is working with the user. These requests are submitted with #submitRequest, providing a new instance of a [Request](../android/app/VoiceInteractor.Request.md) subclass describing the type of operation to perform -- currently the possible requests are [ConfirmationRequest](../android/app/VoiceInteractor.ConfirmationRequest.md) and [CommandRequest](../android/app/VoiceInteractor.CommandRequest.md).
 
@@ -39,19 +39,19 @@ The VoiceInteractor is integrated with Activity's state saving mechanism, so tha
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [VoiceInteractor.Request](../android/app/VoiceInteractor.Request.md)! | [getActiveRequest](../android/app/VoiceInteractor.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Return any currently active request that was submitted with the given name. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [VoiceInteractor.Request](../android/app/VoiceInteractor.Request.md)!\>! | [getActiveRequests](../android/app/VoiceInteractor.md))`()` Return all currently active requests. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getPackageName](../android/app/VoiceInteractor.md))`()` <br /> |
+| [VoiceInteractor.Request](../android/app/VoiceInteractor.Request.md)! | [getActiveRequest](VoiceInteractor.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Return any currently active request that was submitted with the given name. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [VoiceInteractor.Request](../android/app/VoiceInteractor.Request.md)!\>! | [getActiveRequests](VoiceInteractor.md))`()` Return all currently active requests. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getPackageName](VoiceInteractor.md))`()` <br /> |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDestroyed](../android/app/VoiceInteractor.md))`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [notifyDirectActionsChanged](../android/app/VoiceInteractor.md))`()` Notifies the assist framework that the direct actions supported by the app changed. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [registerOnDestroyedCallback](../android/app/VoiceInteractor.md))`(`executor:` ` [Executor](../java/util/concurrent/Executor.md)`, `callback:` ` [Runnable](../java/lang/Runnable.md)`)` Registers a callback to be called when the VoiceInteractor is destroyed. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDestroyed](VoiceInteractor.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [notifyDirectActionsChanged](VoiceInteractor.md))`()` Notifies the assist framework that the direct actions supported by the app changed. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [registerOnDestroyedCallback](VoiceInteractor.md))`(`executor:` ` [Executor](../java.util.concurrent/Executor.md)`, `callback:` ` [Runnable](../java.lang/Runnable.md)`)` Registers a callback to be called when the VoiceInteractor is destroyed. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [submitRequest](../android/app/VoiceInteractor.md))`(`request:` ` [VoiceInteractor.Request](../android/app/VoiceInteractor.Request.md)!`)` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [submitRequest](../android/app/VoiceInteractor.md))`(`request:` ` [VoiceInteractor.Request](../android/app/VoiceInteractor.Request.md)!`, `name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Submit a new [Request](../android/app/VoiceInteractor.Request.md) to the voice interaction service. |
-| [BooleanArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html)! | [supportsCommands](../android/app/VoiceInteractor.md))`(`commands:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Queries the supported commands available from the VoiceInteractionService. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [submitRequest](VoiceInteractor.md))`(`request:` ` [VoiceInteractor.Request](../android/app/VoiceInteractor.Request.md)!`)` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [submitRequest](VoiceInteractor.md))`(`request:` ` [VoiceInteractor.Request](../android/app/VoiceInteractor.Request.md)!`, `name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Submit a new [Request](../android/app/VoiceInteractor.Request.md) to the voice interaction service. |
+| [BooleanArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean-array/index.html)! | [supportsCommands](VoiceInteractor.md))`(`commands:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Queries the supported commands available from the VoiceInteractionService. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [unregisterOnDestroyedCallback](../android/app/VoiceInteractor.md))`(`callback:` ` [Runnable](../java/lang/Runnable.md)`)` Unregisters a previously registered onDestroy callback |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [unregisterOnDestroyedCallback](VoiceInteractor.md))`(`callback:` ` [Runnable](../java.lang/Runnable.md)`)` Unregisters a previously registered onDestroy callback |
 
 ## Public methods
 
@@ -67,7 +67,7 @@ Return any currently active request that was submitted with the given name.
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The name used to submit the request, as per [submitRequest(android.app.VoiceInteractor.Request,java.lang.String)](../android/app/VoiceInteractor.md)). |
+| `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The name used to submit the request, as per [submitRequest(android.app.VoiceInteractor.Request,java.lang.String)](VoiceInteractor.md)). |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
@@ -132,8 +132,8 @@ Registers a callback to be called when the VoiceInteractor is destroyed.
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `executor` | [Executor](../java/util/concurrent/Executor.md):Executor on which to run the callback. This value cannot be`null`. Callback and listener events are dispatched through this [Executor](../java/util/concurrent/Executor.md), providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use [Context.getMainExecutor()](../android/content/Context.md)). Otherwise, provide an [Executor](../java/util/concurrent/Executor.md) that dispatches to an appropriate thread. |
-| `callback` | [Runnable](../java/lang/Runnable.md):The callback to run. This value cannot be`null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md):Executor on which to run the callback. This value cannot be`null`. Callback and listener events are dispatched through this [Executor](../java.util.concurrent/Executor.md), providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use [Context.getMainExecutor()](../android.content/Context.md)). Otherwise, provide an [Executor](../java.util.concurrent/Executor.md) that dispatches to an appropriate thread. |
+| `callback` | [Runnable](../java.lang/Runnable.md):The callback to run. This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------------|
@@ -163,7 +163,7 @@ Submit a new [Request](../android/app/VoiceInteractor.Request.md) to the voice i
 | Parameters ||
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `request` | [VoiceInteractor.Request](../android/app/VoiceInteractor.Request.md)!:The desired request to submit. |
-| `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:An optional name for this request, or null. This can be used later with [getActiveRequests](../android/app/VoiceInteractor.md))and [getActiveRequest](../android/app/VoiceInteractor.md))to find the request. |
+| `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:An optional name for this request, or null. This can be used later with [getActiveRequests](VoiceInteractor.md))and [getActiveRequest](VoiceInteractor.md))to find the request. |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------------------|
@@ -199,7 +199,7 @@ Unregisters a previously registered onDestroy callback
 
 | Parameters ||
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| `callback` | [Runnable](../java/lang/Runnable.md):The callback to remove. This value cannot be`null`. |
+| `callback` | [Runnable](../java.lang/Runnable.md):The callback to remove. This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------------------------------|

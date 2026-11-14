@@ -33,7 +33,7 @@ class MyGLWrapper implements GLWrapper {
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [GL](../javax/microedition/khronos/opengles/GL.md)! | [wrap](../android/opengl/GLSurfaceView.GLWrapper.md))`(`gl:` ` [GL](../javax/microedition/khronos/opengles/GL.md)!`)` Wraps a gl interface in another gl interface. |
+| abstract [GL](../javax.microedition.khronos.opengles/GL.md)! | [wrap](../android/opengl/GLSurfaceView.GLWrapper.md))`(`gl:` ` [GL](../javax.microedition.khronos.opengles/GL.md)!`)` Wraps a gl interface in another gl interface. |
 
 ## Public methods
 
@@ -49,8 +49,8 @@ Wraps a gl interface in another gl interface.
 
 | Parameters ||
 |------|------------------------------------------------------------------------------------------------------------------------------------------|
-| `gl` | [GL](../javax/microedition/khronos/opengles/GL.md)!:a GL interface that is to be wrapped. |
+| `gl` | [GL](../javax.microedition.khronos.opengles/GL.md)!:a GL interface that is to be wrapped. |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
-| [GL](../javax/microedition/khronos/opengles/GL.md)! | either the input argument or another GL object that wraps the input argument. |
+| [GL](../javax.microedition.khronos.opengles/GL.md)! | either the input argument or another GL object that wraps the input argument. |

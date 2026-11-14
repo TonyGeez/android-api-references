@@ -8,7 +8,7 @@ class Outline
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.graphics.Outline](../android/graphics/Outline.md) |
+| ↳ | [android.graphics.Outline](Outline.md) |
 
 Defines a simple shape, used for bounding graphical regions.
 
@@ -73,7 +73,7 @@ Constructs an Outline with a copy of the data in src.
 
 | Parameters ||
 |---|---|
-| `src` | [Outline](../android/graphics/Outline.md): This value cannot be `null`. |
+| `src` | [Outline](Outline.md): This value cannot be `null`. |
 
 ## Public methods
 
@@ -128,7 +128,7 @@ Populates `outBounds` with the outline bounds, if set, and returns `true`. If no
 
 | Parameters ||
 |---|---|
-| `outRect` | [Rect](../android/graphics/Rect.md): the rect to populate with the outline bounds, if set. This value cannot be `null`. |
+| `outRect` | [Rect](Rect.md): the rect to populate with the outline bounds, if set. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -188,7 +188,7 @@ Replace the contents of this Outline with the contents of src.
 
 | Parameters ||
 |---|---|
-| `src` | [Outline](../android/graphics/Outline.md): Source outline to copy from. This value cannot be `null`. |
+| `src` | [Outline](Outline.md): Source outline to copy from. This value cannot be `null`. |
 
 ### setAlpha
 
@@ -223,7 +223,7 @@ Sets the Outline to a `https://developer.android.com/reference/kotlin/android/gr
 
 | Parameters ||
 |---|---|
-| `convexPath` | [Path](../android/graphics/Path.md): used to construct the Outline. As of `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#Q:kotlin.Int`, it is no longer required to be convex. This value cannot be `null`. |
+| `convexPath` | [Path](Path.md): used to construct the Outline. As of `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#Q:kotlin.Int`, it is no longer required to be convex. This value cannot be `null`. |
 
 ### setEmpty
 
@@ -266,7 +266,7 @@ Convenience for `https://developer.android.com/reference/kotlin/android/graphics
 
 | Parameters ||
 |---|---|
-| `rect` | [Rect](../android/graphics/Rect.md): This value cannot be `null`. |
+| `rect` | [Rect](Rect.md): This value cannot be `null`. |
 
 ### setOval
 
@@ -295,7 +295,7 @@ Sets the Outline to a `https://developer.android.com/reference/kotlin/android/gr
 
 | Parameters ||
 |---|---|
-| `path` | [Path](../android/graphics/Path.md): used to construct the Outline. This value cannot be `null`. |
+| `path` | [Path](Path.md): used to construct the Outline. This value cannot be `null`. |
 
 ### setRect
 
@@ -309,7 +309,7 @@ Convenience for `https://developer.android.com/reference/kotlin/android/graphics
 
 | Parameters ||
 |---|---|
-| `rect` | [Rect](../android/graphics/Rect.md): This value cannot be `null`. |
+| `rect` | [Rect](Rect.md): This value cannot be `null`. |
 
 ### setRect
 
@@ -341,7 +341,7 @@ Convenience for `https://developer.android.com/reference/kotlin/android/graphics
 
 | Parameters ||
 |---|---|
-| `rect` | [Rect](../android/graphics/Rect.md): This value cannot be `null`. |
+| `rect` | [Rect](Rect.md): This value cannot be `null`. |
 
 ### setRoundRect
 

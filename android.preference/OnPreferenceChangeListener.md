@@ -18,13 +18,13 @@ interface OnPreferenceChangeListener
 |
 | Use the [AndroidX](https://developer.android.com/jetpack/androidx.html) [Preference Library](../androidx/preference/_package.md) for consistent behavior across all devices. For more information on using the AndroidX Preference Library see [Settings](https://developer.android.com/guide/topics/ui/settings.html).
 
-Interface definition for a callback to be invoked when the value of this [Preference](../android/preference/Preference.md) has been changed by the user and is about to be set and/or persisted. This gives the client a chance to prevent setting and/or persisting the value.
+Interface definition for a callback to be invoked when the value of this [Preference](Preference.md) has been changed by the user and is about to be set and/or persisted. This gives the client a chance to prevent setting and/or persisting the value.
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onPreferenceChange](../android/preference/Preference.OnPreferenceChangeListener.md))`(`preference:` ` [Preference](../android/preference/Preference.md)!`, `newValue:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Called when a Preference has been changed by the user. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onPreferenceChange](../android/preference/Preference.OnPreferenceChangeListener.md))`(`preference:` ` [Preference](Preference.md)!`, `newValue:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Called when a Preference has been changed by the user. |
 
 ## Public methods
 
@@ -45,7 +45,7 @@ Called when a Preference has been changed by the user. This is called before the
 
 | Parameters ||
 |--------------|---------------------------------------------------------------------------------------------------------------------|
-| `preference` | [Preference](../android/preference/Preference.md)!:The changed Preference. |
+| `preference` | [Preference](Preference.md)!:The changed Preference. |
 | `newValue` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:The new value of the Preference. |
 
 | Return ||

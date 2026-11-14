@@ -6,10 +6,10 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 interface InputConnection
 ```
 
-| [android.view.inputmethod.InputConnection](../android/view/inputmethod/InputConnection.md) |
+| [android.view.inputmethod.InputConnection](InputConnection.md) |
 
-Known Direct Subclasses [BaseInputConnection](../android/view/inputmethod/BaseInputConnection.md), [InputConnectionWrapper](../android/view/inputmethod/InputConnectionWrapper.md) [BaseInputConnection](../android/view/inputmethod/BaseInputConnection.md) Base class for implementors of the InputConnection interface, taking care of most of the common behavior for providing a connection to an Editable.
-[InputConnectionWrapper](../android/view/inputmethod/InputConnectionWrapper.md) Wrapper class for proxying calls to another InputConnection.
+Known Direct Subclasses [BaseInputConnection](BaseInputConnection.md), [InputConnectionWrapper](InputConnectionWrapper.md) [BaseInputConnection](BaseInputConnection.md) Base class for implementors of the InputConnection interface, taking care of most of the common behavior for providing a connection to an Editable.
+[InputConnectionWrapper](InputConnectionWrapper.md) Wrapper class for proxying calls to another InputConnection.
 
 The InputConnection interface is the communication channel from an `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethod` back to the application that is receiving its input. It is used to perform such things as reading text around the cursor, committing text to the text box, and sending raw key events to the application.
 
@@ -83,11 +83,11 @@ An editor needs to be able to keep track of a currently "composing" region, like
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#finishComposingText()()` Have the text editor finish whatever composing text is currently active. |
 | --- | --- |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#getCursorCapsMode(kotlin.Int)(reqModes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve the current capitalization mode in effect at the current cursor position in the text. |
-| abstract [ExtractedText](../android/view/inputmethod/ExtractedText.md)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#getExtractedText(android.view.inputmethod.ExtractedTextRequest,%20kotlin.Int)(request: https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedTextRequest!, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve the current text in the input connection's editor, and monitor for any changes to it. |
-| abstract [Handler](../android/os/Handler.md)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#getHandler()()` Called by the system to enable application developers to specify a dedicated thread on which `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#` methods are called back. |
+| abstract [ExtractedText](ExtractedText.md)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#getExtractedText(android.view.inputmethod.ExtractedTextRequest,%20kotlin.Int)(request: https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedTextRequest!, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve the current text in the input connection's editor, and monitor for any changes to it. |
+| abstract [Handler](../android.os/Handler.md)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#getHandler()()` Called by the system to enable application developers to specify a dedicated thread on which `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#` methods are called back. |
 | --- | --- |
 | abstract [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#getSelectedText(kotlin.Int)(flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the selected text, if any. |
-| open [SurroundingText](../android/view/inputmethod/SurroundingText.md)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#getSurroundingText(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(beforeLength: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, afterLength: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the surrounding text around the current cursor, with beforeLength characters of text before the cursor (start of the selection), afterLength characters of text after the cursor (end of the selection), and all of the selected text. |
+| open [SurroundingText](SurroundingText.md)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#getSurroundingText(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(beforeLength: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, afterLength: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the surrounding text around the current cursor, with beforeLength characters of text before the cursor (start of the selection), afterLength characters of text after the cursor (end of the selection), and all of the selected text. |
 | abstract [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#getTextAfterCursor(kotlin.Int,%20kotlin.Int)(n: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get n characters of text after the current cursor position. |
 | --- | --- |
 | abstract [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#getTextBeforeCursor(kotlin.Int,%20kotlin.Int)(n: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get n characters of text before the current cursor position. |
@@ -115,7 +115,7 @@ An editor needs to be able to keep track of a currently "composing" region, like
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#setImeConsumesInput(kotlin.Boolean)(imeConsumesInput: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Called by the input method to indicate that it consumes all input for itself, or no longer does so. |
 | --- | --- |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#setSelection(kotlin.Int,%20kotlin.Int)(start: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, end: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set the selection of the text editor. |
-| open [TextSnapshot](../android/view/inputmethod/TextSnapshot.md)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#takeSnapshot()()` Called by the system when it needs to take a snapshot of multiple text-related data in an atomic manner. |
+| open [TextSnapshot](TextSnapshot.md)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#takeSnapshot()()` Called by the system when it needs to take a snapshot of multiple text-related data in an atomic manner. |
 
 ## Constants
 
@@ -403,7 +403,7 @@ Calling this method (with a valid `https://developer.android.com/reference/kotli
 
 | Parameters ||
 |---|---|
-| `text` | [CompletionInfo](../android/view/inputmethod/CompletionInfo.md)!: The committed completion. |
+| `text` | [CompletionInfo](CompletionInfo.md)!: The committed completion. |
 
 | Return ||
 |---|---|
@@ -435,9 +435,9 @@ In order to avoid a variety of compatibility issues, this focuses on a simple us
 
 | Parameters ||
 |---|---|
-| `inputContentInfo` | [InputContentInfo](../android/view/inputmethod/InputContentInfo.md): Content to be inserted. This value cannot be `null`. |
+| `inputContentInfo` | [InputContentInfo](InputContentInfo.md): Content to be inserted. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#INPUT_CONTENT_GRANT_READ_URI_PERMISSION:kotlin.Int` if the content provider allows `https://developer.android.com/reference/kotlin/android/R.styleable.html#AndroidManifestProvider_grantUriPermissions:kotlin.Int` or `0` if the application does not need to call `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputContentInfo#requestPermission()`. |
-| `opts` | [Bundle](../android/os/Bundle.md)?: optional bundle data. This can be `null`. |
+| `opts` | [Bundle](../android.os/Bundle.md)?: optional bundle data. This can be `null`. |
 | --- | --- |
 
 | Return ||
@@ -458,7 +458,7 @@ Calling this method will cause the editor to call `https://developer.android.com
 
 | Parameters ||
 |---|---|
-| `correctionInfo` | [CorrectionInfo](../android/view/inputmethod/CorrectionInfo.md)!: Detailed information about the correction. |
+| `correctionInfo` | [CorrectionInfo](CorrectionInfo.md)!: Detailed information about the correction. |
 
 | Return ||
 |---|---|
@@ -508,7 +508,7 @@ The variant of `https://developer.android.com/reference/kotlin/android/view/inpu
 |---|---|
 | `text` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html): The text to commit. This may include styles. This value cannot be `null`. |
 | `newCursorPosition` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The new cursor position around the text, in Java characters. If \> 0, this is relative to the end of the text - 1; if \<= 0, this is relative to the start of the text. So a value of 1 will always advance the cursor to the position after the full text being inserted. Note that this means you can't position the cursor within the text, because the editor can make modifications to the text you are providing so it is not possible to correctly specify locations there. |
-| `textAttribute` | [TextAttribute](../android/view/inputmethod/TextAttribute.md)?: The extra information about the text. This value may be `null`. |
+| `textAttribute` | [TextAttribute](TextAttribute.md)?: The extra information about the text. This value may be `null`. |
 | --- | --- |
 
 | Return ||
@@ -657,7 +657,7 @@ Editor authors: as a general rule, try to comply with the fields in `request` fo
 
 | Parameters ||
 |---|---|
-| `request` | [ExtractedTextRequest](../android/view/inputmethod/ExtractedTextRequest.md)!: Description of how the text should be returned. `https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedTextRequest` |
+| `request` | [ExtractedTextRequest](ExtractedTextRequest.md)!: Description of how the text should be returned. `https://developer.android.com/reference/kotlin/android/view/inputmethod/ExtractedTextRequest` |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional options to control the client, either `0` or `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#GET_EXTRACTED_TEXT_MONITOR:kotlin.Int`. |
 
 | Return ||
@@ -865,9 +865,9 @@ Note: A supported gesture `https://developer.android.com/reference/kotlin/androi
 
 | Parameters ||
 |---|---|
-| `gesture` | [HandwritingGesture](../android/view/inputmethod/HandwritingGesture.md): the gesture to perform. This value cannot be `null`. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md)?: The executor to run the callback on. This value may be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `consumer` | [IntConsumer](../java/util/function/IntConsumer.md)?: if the caller passes a non-null consumer, the editor must invoke this with one of `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#HANDWRITING_GESTURE_RESULT_UNKNOWN:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#HANDWRITING_GESTURE_RESULT_SUCCESS:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#HANDWRITING_GESTURE_RESULT_FAILED:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#HANDWRITING_GESTURE_RESULT_CANCELLED:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#HANDWRITING_GESTURE_RESULT_FALLBACK:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#HANDWRITING_GESTURE_RESULT_UNSUPPORTED:kotlin.Int` after applying the `gesture` has completed. Will be invoked on the given `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`. Default implementation provides a callback to `https://developer.android.com/reference/kotlin/java/util/function/IntConsumer.html#` with `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#HANDWRITING_GESTURE_RESULT_UNSUPPORTED:kotlin.Int`. |
+| `gesture` | [HandwritingGesture](HandwritingGesture.md): the gesture to perform. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md)?: The executor to run the callback on. This value may be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `consumer` | [IntConsumer](../java.util.function/IntConsumer.md)?: if the caller passes a non-null consumer, the editor must invoke this with one of `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#HANDWRITING_GESTURE_RESULT_UNKNOWN:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#HANDWRITING_GESTURE_RESULT_SUCCESS:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#HANDWRITING_GESTURE_RESULT_FAILED:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#HANDWRITING_GESTURE_RESULT_CANCELLED:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#HANDWRITING_GESTURE_RESULT_FALLBACK:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#HANDWRITING_GESTURE_RESULT_UNSUPPORTED:kotlin.Int` after applying the `gesture` has completed. Will be invoked on the given `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`. Default implementation provides a callback to `https://developer.android.com/reference/kotlin/java/util/function/IntConsumer.html#` with `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#HANDWRITING_GESTURE_RESULT_UNSUPPORTED:kotlin.Int`. |
 | --- | --- |
 
 **See Also**
@@ -890,7 +890,7 @@ API to send private commands from an input method to its connected editor. This 
 | Parameters ||
 |---|---|
 | `action` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: Name of the command to be performed. This *must* be a scoped name, i.e. prefixed with a package name you own, so that different developers will not create conflicting commands. |
-| `data` | [Bundle](../android/os/Bundle.md)!: Any data to include with the command. |
+| `data` | [Bundle](../android.os/Bundle.md)!: Any data to include with the command. |
 
 | Return ||
 |---|---|
@@ -929,8 +929,8 @@ Note: A supported gesture `https://developer.android.com/reference/kotlin/androi
 
 | Parameters ||
 |---|---|
-| `gesture` | [PreviewableHandwritingGesture](../android/view/inputmethod/PreviewableHandwritingGesture.md): the gesture to preview. Preview support for a gesture (regardless of whether implemented by editor) can be determined if gesture subclasses `https://developer.android.com/reference/kotlin/android/view/inputmethod/PreviewableHandwritingGesture`. Supported previewable gestures include `https://developer.android.com/reference/kotlin/android/view/inputmethod/SelectGesture`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/SelectRangeGesture`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/DeleteGesture` and `https://developer.android.com/reference/kotlin/android/view/inputmethod/DeleteRangeGesture`. This value cannot be `null`. |
-| `cancellationSignal` | [CancellationSignal](../android/os/CancellationSignal.md)?: signal to cancel an ongoing preview. This value may be `null`. |
+| `gesture` | [PreviewableHandwritingGesture](PreviewableHandwritingGesture.md): the gesture to preview. Preview support for a gesture (regardless of whether implemented by editor) can be determined if gesture subclasses `https://developer.android.com/reference/kotlin/android/view/inputmethod/PreviewableHandwritingGesture`. Supported previewable gestures include `https://developer.android.com/reference/kotlin/android/view/inputmethod/SelectGesture`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/SelectRangeGesture`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/DeleteGesture` and `https://developer.android.com/reference/kotlin/android/view/inputmethod/DeleteRangeGesture`. This value cannot be `null`. |
+| `cancellationSignal` | [CancellationSignal](../android.os/CancellationSignal.md)?: signal to cancel an ongoing preview. This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -967,7 +967,7 @@ Similar to `https://developer.android.com/reference/kotlin/android/view/inputmet
 | `text` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html): the text to replace. This may include styles. This value cannot be `null`. |
 | --- | --- |
 | `newCursorPosition` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the new cursor position around the text. If \> 0, this is relative to the end of the text - 1; if \<= 0, this is relative to the start of the text. So a value of 1 will always advance you to the position after the full text being inserted. Note that this means you can't position the cursor within the text. |
-| `textAttribute` | [TextAttribute](../android/view/inputmethod/TextAttribute.md)?: The extra information about the text. This value may be null. |
+| `textAttribute` | [TextAttribute](TextAttribute.md)?: The extra information about the text. This value may be null. |
 
 | Return ||
 |---|---|
@@ -1059,9 +1059,9 @@ Called by input method to request the `https://developer.android.com/reference/k
 
 | Parameters ||
 |---|---|
-| `bounds` | [RectF](../android/graphics/RectF.md): the interested area where the text bounds are requested, in the screen coordinates. This value cannot be `null`. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): the executor to run the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `consumer` | [Consumer](../java/util/function/Consumer.md)\< [TextBoundsInfoResult](../android/view/inputmethod/TextBoundsInfoResult.md)!\>: the callback invoked by editor to return the result. It must return a non-null object. |
+| `bounds` | [RectF](../android.graphics/RectF.md): the interested area where the text bounds are requested, in the screen coordinates. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): the executor to run the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `consumer` | [Consumer](../java.util.function/Consumer.md)\< [TextBoundsInfoResult](TextBoundsInfoResult.md)!\>: the callback invoked by editor to return the result. It must return a non-null object. |
 | --- | --- |
 
 **See Also**
@@ -1087,7 +1087,7 @@ Note that it's discouraged to send such key events in normal operation; this is 
 
 | Parameters ||
 |---|---|
-| `event` | [KeyEvent](../android/view/KeyEvent.md)!: The key event. |
+| `event` | [KeyEvent](../android.view/KeyEvent.md)!: The key event. |
 
 | Return ||
 |---|---|
@@ -1146,7 +1146,7 @@ The variant of `https://developer.android.com/reference/kotlin/android/view/inpu
 |---|---|
 | `start` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the position in the text at which the composing region begins |
 | `end` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the position in the text at which the composing region ends |
-| `textAttribute` | [TextAttribute](../android/view/inputmethod/TextAttribute.md)?: The extra information about the text. This value may be `null`. |
+| `textAttribute` | [TextAttribute](TextAttribute.md)?: The extra information about the text. This value may be `null`. |
 | --- | --- |
 
 | Return ||
@@ -1199,7 +1199,7 @@ The variant of `https://developer.android.com/reference/kotlin/android/view/inpu
 |---|---|
 | `text` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html): The composing text with styles if necessary. If no style object attached to the text, the default style for composing text is used. See `https://developer.android.com/reference/kotlin/android/text/Spanned.html#` for how to attach style object to the text. `https://developer.android.com/reference/kotlin/android/text/SpannableString.html#` and `https://developer.android.com/reference/kotlin/android/text/SpannableStringBuilder.html#` are two implementations of the interface `https://developer.android.com/reference/kotlin/android/text/Spanned.html#`. This value cannot be `null`. |
 | `newCursorPosition` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The new cursor position around the text. If \> 0, this is relative to the end of the text - 1; if \<= 0, this is relative to the start of the text. So a value of 1 will always advance you to the position after the full text being inserted. Note that this means you can't position the cursor within the text, because the editor can make modifications to the text you are providing so it is not possible to correctly specify locations there. |
-| `textAttribute` | [TextAttribute](../android/view/inputmethod/TextAttribute.md)?: The extra information about the text. This value may be `null`. |
+| `textAttribute` | [TextAttribute](TextAttribute.md)?: The extra information about the text. This value may be `null`. |
 | --- | --- |
 
 | Return ||

@@ -5,7 +5,7 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 
 # RSIllegalArgumentException
 
-Kotlin| [Java](../android/renderscript/RSIllegalArgumentException.md) 
+Kotlin| [Java](RSIllegalArgumentException.md) 
 | --- | --- |
 
 ```
@@ -15,11 +15,11 @@ open class RSIllegalArgumentException : RSRuntimeException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
-| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) |||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) ||||
+| | | ↳ | [java.lang.RuntimeException](../java.lang/RuntimeException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.renderscript.RSRuntimeException](../android/renderscript/RSRuntimeException.md) ||
-| | | | | ↳ | [android.renderscript.RSIllegalArgumentException](../android/renderscript/RSIllegalArgumentException.md) |
+| | | | ↳ | [android.renderscript.RSRuntimeException](RSRuntimeException.md) ||
+| | | | | ↳ | [android.renderscript.RSIllegalArgumentException](RSIllegalArgumentException.md) |
 
 | **This exception was deprecated in API level 31.**
 |
@@ -31,7 +31,7 @@ Base class for all exceptions thrown by the Android RenderScript
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [RSIllegalArgumentException](../android/renderscript/RSIllegalArgumentException.md))`(`string:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| [RSIllegalArgumentException](RSIllegalArgumentException.md))`(`string:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
 
 ## Public constructors
 

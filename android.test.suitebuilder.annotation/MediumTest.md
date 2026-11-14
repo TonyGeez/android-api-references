@@ -5,14 +5,14 @@ Deprecated in [API level 24](https://developer.android.com/guide/topics/manifest
 
 # MediumTest
 
-Kotlin| [Java](../android/test/suitebuilder/annotation/MediumTest.md) 
+Kotlin| [Java](MediumTest.md) 
 | --- | --- |
 
 ```
 @Target([AnnotationTarget.FUNCTION, AnnotationTarget.PROPERTY_GETTER, AnnotationTarget.PROPERTY_SETTER, AnnotationTarget.CLASS, AnnotationTarget.FILE]) class MediumTest
 ```
 
-| [android.test.suitebuilder.annotation.MediumTest](../android/test/suitebuilder/annotation/MediumTest.md) |
+| [android.test.suitebuilder.annotation.MediumTest](MediumTest.md) |
 
 | **This annotation was deprecated in API level 24.**
 |
@@ -24,7 +24,7 @@ Marks a test that should run as part of the medium tests.
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [MediumTest](../android/test/suitebuilder/annotation/MediumTest.md))`()` Marks a test that should run as part of the medium tests. |
+| [MediumTest](MediumTest.md))`()` Marks a test that should run as part of the medium tests. |
 
 ## Public constructors
 

@@ -4,7 +4,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # UCharacterIterator
 
-Kotlin| [Java](../android/icu/text/UCharacterIterator.md) 
+Kotlin| [Java](UCharacterIterator.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ abstract class UCharacterIterator : Cloneable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.icu.text.UCharacterIterator](../android/icu/text/UCharacterIterator.md) |
+| ↳ | [android.icu.text.UCharacterIterator](UCharacterIterator.md) |
 
 Abstract class that defines an API for iteration on text objects.This is an interface for forward and backward iteration and random access into a text object. Forward iteration is done with post-increment and backward iteration is done with pre-decrement semantics, while the`java.text.CharacterIterator`interface methods provided forward iteration with "pre-increment" and backward iteration with pre-decrement semantics. This API is more efficient for forward iteration over code points. The other major difference is that this API can do both code unit and code point iteration,`java.text.CharacterIterator`can only iterate over code units and is limited to BMP (0 - 0xFFFF)
 
@@ -21,45 +21,45 @@ Abstract class that defines an API for iteration on text objects.This is an inte
 
 | Constants ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DONE](../android/icu/text/UCharacterIterator.md) Indicator that we have reached the ends of the UTF16 text. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DONE](UCharacterIterator.md) Indicator that we have reached the ends of the UTF16 text. |
 
 | Protected constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [UCharacterIterator](../android/icu/text/UCharacterIterator.md))`()` Protected default constructor for the subclasses |
+| [UCharacterIterator](UCharacterIterator.md))`()` Protected default constructor for the subclasses |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](../android/icu/text/UCharacterIterator.md))`()` Creates a copy of this iterator, independent from other iterators. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [current](../android/icu/text/UCharacterIterator.md))`()` Returns the code unit at the current index. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [currentCodePoint](../android/icu/text/UCharacterIterator.md))`()` Returns the codepoint at the current index. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](UCharacterIterator.md))`()` Creates a copy of this iterator, independent from other iterators. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [current](UCharacterIterator.md))`()` Returns the code unit at the current index. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [currentCodePoint](UCharacterIterator.md))`()` Returns the codepoint at the current index. |
 | --- | --- |
-| open [CharacterIterator](../java/text/CharacterIterator.md)! | [getCharacterIterator](../android/icu/text/UCharacterIterator.md))`()` Returns a`java.text.CharacterIterator`object for the underlying text of this iterator. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIndex](../android/icu/text/UCharacterIterator.md))`()` Gets the current index in text. |
-| static [UCharacterIterator](../android/icu/text/UCharacterIterator.md)! | [getInstance](../android/icu/text/UCharacterIterator.md))`(`source:` ` [Replaceable](../android/icu/text/Replaceable.md)!`)` Returns a`UCharacterIterator`object given a`Replaceable`object. |
+| open [CharacterIterator](../java.text/CharacterIterator.md)! | [getCharacterIterator](UCharacterIterator.md))`()` Returns a`java.text.CharacterIterator`object for the underlying text of this iterator. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIndex](UCharacterIterator.md))`()` Gets the current index in text. |
+| static [UCharacterIterator](UCharacterIterator.md)! | [getInstance](UCharacterIterator.md))`(`source:` ` [Replaceable](Replaceable.md)!`)` Returns a`UCharacterIterator`object given a`Replaceable`object. |
 | --- | --- |
-| static [UCharacterIterator](../android/icu/text/UCharacterIterator.md)! | [getInstance](../android/icu/text/UCharacterIterator.md))`(`source:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`)` Returns a`UCharacterIterator`object given a source character array. |
-| static [UCharacterIterator](../android/icu/text/UCharacterIterator.md)! | [getInstance](../android/icu/text/UCharacterIterator.md))`(`source:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `limit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a`UCharacterIterator`object given a source character array. |
-| static [UCharacterIterator](../android/icu/text/UCharacterIterator.md)! | [getInstance](../android/icu/text/UCharacterIterator.md))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a`UCharacterIterator`object given a source string. |
+| static [UCharacterIterator](UCharacterIterator.md)! | [getInstance](UCharacterIterator.md))`(`source:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`)` Returns a`UCharacterIterator`object given a source character array. |
+| static [UCharacterIterator](UCharacterIterator.md)! | [getInstance](UCharacterIterator.md))`(`source:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `limit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a`UCharacterIterator`object given a source character array. |
+| static [UCharacterIterator](UCharacterIterator.md)! | [getInstance](UCharacterIterator.md))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a`UCharacterIterator`object given a source string. |
 | --- | --- |
-| static [UCharacterIterator](../android/icu/text/UCharacterIterator.md)! | [getInstance](../android/icu/text/UCharacterIterator.md))`(`source:` ` [StringBuffer](../java/lang/StringBuffer.md)!`)` Returns a`UCharacterIterator`object given a source StringBuffer. |
-| static [UCharacterIterator](../android/icu/text/UCharacterIterator.md)! | [getInstance](../android/icu/text/UCharacterIterator.md))`(`source:` ` [CharacterIterator](../java/text/CharacterIterator.md)!`)` Returns a`UCharacterIterator`object given a CharacterIterator. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLength](../android/icu/text/UCharacterIterator.md))`()` Returns the length of the text |
+| static [UCharacterIterator](UCharacterIterator.md)! | [getInstance](UCharacterIterator.md))`(`source:` ` [StringBuffer](../java.lang/StringBuffer.md)!`)` Returns a`UCharacterIterator`object given a source StringBuffer. |
+| static [UCharacterIterator](UCharacterIterator.md)! | [getInstance](UCharacterIterator.md))`(`source:` ` [CharacterIterator](../java.text/CharacterIterator.md)!`)` Returns a`UCharacterIterator`object given a CharacterIterator. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLength](UCharacterIterator.md))`()` Returns the length of the text |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getText](../android/icu/text/UCharacterIterator.md))`()` Convenience method for returning the underlying text storage as as string |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getText](../android/icu/text/UCharacterIterator.md))`(`fillIn:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`)` Convenience override for`getText(char[], int)`that provides an offset of 0. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getText](../android/icu/text/UCharacterIterator.md))`(`fillIn:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Fills the buffer with the underlying text storage of the iterator If the buffer capacity is not enough a exception is thrown. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getText](UCharacterIterator.md))`()` Convenience method for returning the underlying text storage as as string |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getText](UCharacterIterator.md))`(`fillIn:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`)` Convenience override for`getText(char[], int)`that provides an offset of 0. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getText](UCharacterIterator.md))`(`fillIn:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Fills the buffer with the underlying text storage of the iterator If the buffer capacity is not enough a exception is thrown. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [moveCodePointIndex](../android/icu/text/UCharacterIterator.md))`(`delta:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Moves the current position by the number of code points specified, either forward or backward depending on the sign of delta (positive or negative respectively). |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [moveIndex](../android/icu/text/UCharacterIterator.md))`(`delta:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Moves the current position by the number of code units specified, either forward or backward depending on the sign of delta (positive or negative respectively). |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [next](../android/icu/text/UCharacterIterator.md))`()` Returns the UTF16 code unit at index, and increments to the next code unit (post-increment semantics). |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [moveCodePointIndex](UCharacterIterator.md))`(`delta:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Moves the current position by the number of code points specified, either forward or backward depending on the sign of delta (positive or negative respectively). |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [moveIndex](UCharacterIterator.md))`(`delta:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Moves the current position by the number of code units specified, either forward or backward depending on the sign of delta (positive or negative respectively). |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [next](UCharacterIterator.md))`()` Returns the UTF16 code unit at index, and increments to the next code unit (post-increment semantics). |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [nextCodePoint](../android/icu/text/UCharacterIterator.md))`()` Returns the code point at index, and increments to the next code point (post-increment semantics). |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [previous](../android/icu/text/UCharacterIterator.md))`()` Decrement to the position of the previous code unit in the text, and return it (pre-decrement semantics). |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [previousCodePoint](../android/icu/text/UCharacterIterator.md))`()` Retreat to the start of the previous code point in the text, and return it (pre-decrement semantics). |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [nextCodePoint](UCharacterIterator.md))`()` Returns the code point at index, and increments to the next code point (post-increment semantics). |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [previous](UCharacterIterator.md))`()` Decrement to the position of the previous code unit in the text, and return it (pre-decrement semantics). |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [previousCodePoint](UCharacterIterator.md))`()` Retreat to the start of the previous code point in the text, and return it (pre-decrement semantics). |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setIndex](../android/icu/text/UCharacterIterator.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the index to the specified index in the text. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setToLimit](../android/icu/text/UCharacterIterator.md))`()` Sets the current index to the limit. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setToStart](../android/icu/text/UCharacterIterator.md))`()` Sets the current index to the start. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setIndex](UCharacterIterator.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the index to the specified index in the text. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setToLimit](UCharacterIterator.md))`()` Sets the current index to the limit. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setToStart](UCharacterIterator.md))`()` Sets the current index to the start. |
 | --- | --- |
 
 ## Constants
@@ -148,7 +148,7 @@ Returns a`java.text.CharacterIterator`object for the underlying text of this ite
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------|------------------------------------|
-| [CharacterIterator](../java/text/CharacterIterator.md)! | java.text.CharacterIterator object |
+| [CharacterIterator](../java.text/CharacterIterator.md)! | java.text.CharacterIterator object |
 
 ### getIndex
 
@@ -176,11 +176,11 @@ Returns a`UCharacterIterator`object given a`Replaceable`object.
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------|
-| `source` | [Replaceable](../android/icu/text/Replaceable.md)!:a valid source as a`Replaceable`object |
+| `source` | [Replaceable](Replaceable.md)!:a valid source as a`Replaceable`object |
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------|---------------------------|
-| [UCharacterIterator](../android/icu/text/UCharacterIterator.md)! | UCharacterIterator object |
+| [UCharacterIterator](UCharacterIterator.md)! | UCharacterIterator object |
 
 | Exceptions ||
 |--------------------------------------|-------------------------|
@@ -202,7 +202,7 @@ Returns a`UCharacterIterator`object given a source character array.
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------|---------------------------|
-| [UCharacterIterator](../android/icu/text/UCharacterIterator.md)! | UCharacterIterator object |
+| [UCharacterIterator](UCharacterIterator.md)! | UCharacterIterator object |
 
 | Exceptions ||
 |--------------------------------------|-------------------------|
@@ -228,7 +228,7 @@ Returns a`UCharacterIterator`object given a source character array.
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------|---------------------------|
-| [UCharacterIterator](../android/icu/text/UCharacterIterator.md)! | UCharacterIterator object |
+| [UCharacterIterator](UCharacterIterator.md)! | UCharacterIterator object |
 
 | Exceptions ||
 |--------------------------------------|-------------------------|
@@ -250,7 +250,7 @@ Returns a`UCharacterIterator`object given a source string.
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------|---------------------------|
-| [UCharacterIterator](../android/icu/text/UCharacterIterator.md)! | UCharacterIterator object |
+| [UCharacterIterator](UCharacterIterator.md)! | UCharacterIterator object |
 
 | Exceptions ||
 |--------------------------------------|-------------------------|
@@ -268,11 +268,11 @@ Returns a`UCharacterIterator`object given a source StringBuffer.
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------|
-| `source` | [StringBuffer](../java/lang/StringBuffer.md)!:an string buffer of UTF-16 code units |
+| `source` | [StringBuffer](../java.lang/StringBuffer.md)!:an string buffer of UTF-16 code units |
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------|---------------------------|
-| [UCharacterIterator](../android/icu/text/UCharacterIterator.md)! | UCharacterIterator object |
+| [UCharacterIterator](UCharacterIterator.md)! | UCharacterIterator object |
 
 | Exceptions ||
 |--------------------------------------|-------------------------|
@@ -290,11 +290,11 @@ Returns a`UCharacterIterator`object given a CharacterIterator.
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------|
-| `source` | [CharacterIterator](../java/text/CharacterIterator.md)!:a valid CharacterIterator object. |
+| `source` | [CharacterIterator](../java.text/CharacterIterator.md)!:a valid CharacterIterator object. |
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------|---------------------------|
-| [UCharacterIterator](../android/icu/text/UCharacterIterator.md)! | UCharacterIterator object |
+| [UCharacterIterator](UCharacterIterator.md)! | UCharacterIterator object |
 
 | Exceptions ||
 |--------------------------------------|-------------------------|

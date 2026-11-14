@@ -4,7 +4,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 
 # InferenceOutput
 
-Kotlin| [Java](../android/adservices/ondevicepersonalization/InferenceOutput.md) 
+Kotlin| [Java](InferenceOutput.md) 
 | --- | --- |
 
 ```
@@ -13,23 +13,23 @@ class InferenceOutput
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.adservices.ondevicepersonalization.InferenceOutput](../android/adservices/ondevicepersonalization/InferenceOutput.md) |
+| ↳ | [android.adservices.ondevicepersonalization.InferenceOutput](InferenceOutput.md) |
 
-The result returned by [ModelManager.run](../android/adservices/ondevicepersonalization/ModelManager.md)).
+The result returned by [ModelManager.run](ModelManager.md)).
 
 ## Summary
 
 | Nested classes ||
 |---|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](../android/adservices/ondevicepersonalization/InferenceOutput.Builder.md) A builder for [InferenceOutput](../android/adservices/ondevicepersonalization/InferenceOutput.md) |
+| | [Builder](../android/adservices/ondevicepersonalization/InferenceOutput.Builder.md) A builder for [InferenceOutput](InferenceOutput.md) |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/adservices/ondevicepersonalization/InferenceOutput.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [getData](../android/adservices/ondevicepersonalization/InferenceOutput.md))`()` A byte array that holds input data. |
-| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!, [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\> | [getDataOutputs](../android/adservices/ondevicepersonalization/InferenceOutput.md))`()` Note: use [InferenceOutput.getData()](../android/adservices/ondevicepersonalization/InferenceOutput.md))instead. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](InferenceOutput.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [getData](InferenceOutput.md))`()` A byte array that holds input data. |
+| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!, [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\> | [getDataOutputs](InferenceOutput.md))`()` Note: use [InferenceOutput.getData()](InferenceOutput.md))instead. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/adservices/ondevicepersonalization/InferenceOutput.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](InferenceOutput.md))`()` <br /> |
 
 ## Public methods
 
@@ -88,7 +88,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun getDataOutputs(): MutableMap<Int!, Any!>
 ```
 
-Note: use [InferenceOutput.getData()](../android/adservices/ondevicepersonalization/InferenceOutput.md))instead.
+Note: use [InferenceOutput.getData()](InferenceOutput.md))instead.
 
 A map mapping output indices to multidimensional arrays of output.
 

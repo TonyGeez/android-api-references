@@ -5,7 +5,7 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 
 # ScriptIntrinsicResize
 
-Kotlin| [Java](../android/renderscript/ScriptIntrinsicResize.md) 
+Kotlin| [Java](ScriptIntrinsicResize.md) 
 | --- | --- |
 
 ```
@@ -14,11 +14,11 @@ class ScriptIntrinsicResize : ScriptIntrinsic
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.renderscript.BaseObj](../android/renderscript/BaseObj.md) ||||
-| | ↳ | [android.renderscript.Script](../android/renderscript/Script.md) |||
-| | | ↳ | [android.renderscript.ScriptIntrinsic](../android/renderscript/ScriptIntrinsic.md) ||
+| ↳ | [android.renderscript.BaseObj](BaseObj.md) ||||
+| | ↳ | [android.renderscript.Script](Script.md) |||
+| | | ↳ | [android.renderscript.ScriptIntrinsic](ScriptIntrinsic.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.renderscript.ScriptIntrinsicResize](../android/renderscript/ScriptIntrinsicResize.md) |
+| | | | ↳ | [android.renderscript.ScriptIntrinsicResize](ScriptIntrinsicResize.md) |
 
 | **This class was deprecated in API level 31.**
 |
@@ -30,13 +30,13 @@ Intrinsic for performing a resize of a 2D allocation.
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [ScriptIntrinsicResize](../android/renderscript/ScriptIntrinsicResize.md)! | [create](../android/renderscript/ScriptIntrinsicResize.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` Supported elements types are [Element.U8](../android/renderscript/Element.md)), [android.renderscript.Element#U8_2](../android/renderscript/Element.md)), [Element.U8_3](../android/renderscript/Element.md)), [Element.U8_4](../android/renderscript/Element.md)) [Element.F32](../android/renderscript/Element.md)), [Element.F32_2](../android/renderscript/Element.md)), [android.renderscript.Element#F32_3](../android/renderscript/Element.md)), [Element.F32_4](../android/renderscript/Element.md)) |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach_bicubic](../android/renderscript/ScriptIntrinsicResize.md))`(`aout:` ` [Allocation](../android/renderscript/Allocation.md)!`)` Resize copy the input allocation to the output specified. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach_bicubic](../android/renderscript/ScriptIntrinsicResize.md))`(`aout:` ` [Allocation](../android/renderscript/Allocation.md)!`, `opt:` ` [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!`)` Resize copy the input allocation to the output specified. |
+| static [ScriptIntrinsicResize](ScriptIntrinsicResize.md)! | [create](ScriptIntrinsicResize.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` Supported elements types are [Element.U8](Element.md)), [android.renderscript.Element#U8_2](Element.md)), [Element.U8_3](Element.md)), [Element.U8_4](Element.md)) [Element.F32](Element.md)), [Element.F32_2](Element.md)), [android.renderscript.Element#F32_3](Element.md)), [Element.F32_4](Element.md)) |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach_bicubic](ScriptIntrinsicResize.md))`(`aout:` ` [Allocation](Allocation.md)!`)` Resize copy the input allocation to the output specified. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach_bicubic](ScriptIntrinsicResize.md))`(`aout:` ` [Allocation](Allocation.md)!`, `opt:` ` [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!`)` Resize copy the input allocation to the output specified. |
 | --- | --- |
-| [Script.FieldID](../android/renderscript/Script.FieldID.md)! | [getFieldID_Input](../android/renderscript/ScriptIntrinsicResize.md))`()` Get a FieldID for the input field of this intrinsic. |
-| [Script.KernelID](../android/renderscript/Script.KernelID.md)! | [getKernelID_bicubic](../android/renderscript/ScriptIntrinsicResize.md))`()` Get a KernelID for this intrinsic kernel. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInput](../android/renderscript/ScriptIntrinsicResize.md))`(`ain:` ` [Allocation](../android/renderscript/Allocation.md)!`)` Set the input of the resize. |
+| [Script.FieldID](../android/renderscript/Script.FieldID.md)! | [getFieldID_Input](ScriptIntrinsicResize.md))`()` Get a FieldID for the input field of this intrinsic. |
+| [Script.KernelID](../android/renderscript/Script.KernelID.md)! | [getKernelID_bicubic](ScriptIntrinsicResize.md))`()` Get a KernelID for this intrinsic kernel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInput](ScriptIntrinsicResize.md))`(`ain:` ` [Allocation](Allocation.md)!`)` Set the input of the resize. |
 | --- | --- |
 
 ## Public methods
@@ -51,15 +51,15 @@ static fun create(rs: RenderScript!): ScriptIntrinsicResize!
 
 **Deprecated:** *Deprecated in Java.*
 
-Supported elements types are [Element.U8](../android/renderscript/Element.md)), [android.renderscript.Element#U8_2](../android/renderscript/Element.md)), [Element.U8_3](../android/renderscript/Element.md)), [Element.U8_4](../android/renderscript/Element.md)) [Element.F32](../android/renderscript/Element.md)), [Element.F32_2](../android/renderscript/Element.md)), [android.renderscript.Element#F32_3](../android/renderscript/Element.md)), [Element.F32_4](../android/renderscript/Element.md))
+Supported elements types are [Element.U8](Element.md)), [android.renderscript.Element#U8_2](Element.md)), [Element.U8_3](Element.md)), [Element.U8_4](Element.md)) [Element.F32](Element.md)), [Element.F32_2](Element.md)), [android.renderscript.Element#F32_3](Element.md)), [Element.F32_4](Element.md))
 
 | Parameters ||
 |------|----------------------------------------------------------------------------------------------------------------------------|
-| `rs` | [RenderScript](../android/renderscript/RenderScript.md)!:The RenderScript context |
+| `rs` | [RenderScript](RenderScript.md)!:The RenderScript context |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------|-----------------------|
-| [ScriptIntrinsicResize](../android/renderscript/ScriptIntrinsicResize.md)! | ScriptIntrinsicResize |
+| [ScriptIntrinsicResize](ScriptIntrinsicResize.md)! | ScriptIntrinsicResize |
 
 ### forEach_bicubic
 
@@ -75,7 +75,7 @@ Resize copy the input allocation to the output specified. The Allocation is resc
 
 | Parameters ||
 |--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `aout` | [Allocation](../android/renderscript/Allocation.md)!:Output allocation. Element type must match current input. Must not be same as input. |
+| `aout` | [Allocation](Allocation.md)!:Output allocation. Element type must match current input. Must not be same as input. |
 
 ### forEach_bicubic
 
@@ -94,7 +94,7 @@ Resize copy the input allocation to the output specified. The Allocation is resc
 
 | Parameters ||
 |--------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `aout` | [Allocation](../android/renderscript/Allocation.md)!:Output allocation. Element type must match current input. |
+| `aout` | [Allocation](Allocation.md)!:Output allocation. Element type must match current input. |
 | `opt` | [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!:LaunchOptions for clipping |
 
 ### getFieldID_Input
@@ -143,4 +143,4 @@ Set the input of the resize. Must match the element type supplied during create.
 
 | Parameters ||
 |-------|---------------------------------------------------------------------------------------------------------------------|
-| `ain` | [Allocation](../android/renderscript/Allocation.md)!:The input allocation. |
+| `ain` | [Allocation](Allocation.md)!:The input allocation. |

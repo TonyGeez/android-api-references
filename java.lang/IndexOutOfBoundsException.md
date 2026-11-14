@@ -11,12 +11,12 @@ open class IndexOutOfBoundsException : RuntimeException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
-| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) ||
+| | ↳ | [java.lang.Exception](Exception.md) |||
+| | | ↳ | [java.lang.RuntimeException](RuntimeException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.IndexOutOfBoundsException](../java/lang/IndexOutOfBoundsException.md) |
+| | | | ↳ | [java.lang.IndexOutOfBoundsException](IndexOutOfBoundsException.md) |
 
-| Known Direct Subclasses [ArrayIndexOutOfBoundsException](../java/lang/ArrayIndexOutOfBoundsException.md), [CursorIndexOutOfBoundsException](../android/database/CursorIndexOutOfBoundsException.md), [StringIndexOutOfBoundsException](../java/lang/StringIndexOutOfBoundsException.md) |------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------| | [ArrayIndexOutOfBoundsException](../java/lang/ArrayIndexOutOfBoundsException.md) | Thrown to indicate that an array has been accessed with an illegal index. | | [CursorIndexOutOfBoundsException](../android/database/CursorIndexOutOfBoundsException.md) | An exception indicating that a cursor is out of bounds. | | [StringIndexOutOfBoundsException](../java/lang/StringIndexOutOfBoundsException.md) | Thrown by`String`methods to indicate that an index is either negative or greater than the size of the string. | |
+| Known Direct Subclasses [ArrayIndexOutOfBoundsException](ArrayIndexOutOfBoundsException.md), [CursorIndexOutOfBoundsException](../android.database/CursorIndexOutOfBoundsException.md), [StringIndexOutOfBoundsException](StringIndexOutOfBoundsException.md) |------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------| | [ArrayIndexOutOfBoundsException](ArrayIndexOutOfBoundsException.md) | Thrown to indicate that an array has been accessed with an illegal index. | | [CursorIndexOutOfBoundsException](../android.database/CursorIndexOutOfBoundsException.md) | An exception indicating that a cursor is out of bounds. | | [StringIndexOutOfBoundsException](StringIndexOutOfBoundsException.md) | Thrown by`String`methods to indicate that an index is either negative or greater than the size of the string. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Thrown to indicate that an index of some sort (such as to an array, to a string, or to a vector) is out of range.
@@ -27,10 +27,10 @@ Applications can subclass this class to indicate similar exceptions.
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [IndexOutOfBoundsException](../java/lang/IndexOutOfBoundsException.md))`()` Constructs an`IndexOutOfBoundsException`with no detail message. |
-| [IndexOutOfBoundsException](../java/lang/IndexOutOfBoundsException.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a new`IndexOutOfBoundsException`class with an argument indicating the illegal index. |
-| [IndexOutOfBoundsException](../java/lang/IndexOutOfBoundsException.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an`IndexOutOfBoundsException`with the specified detail message. |
-| [IndexOutOfBoundsException](../java/lang/IndexOutOfBoundsException.md))`(`index:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Constructs a new`IndexOutOfBoundsException`class with an argument indicating the illegal index. |
+| [IndexOutOfBoundsException](IndexOutOfBoundsException.md))`()` Constructs an`IndexOutOfBoundsException`with no detail message. |
+| [IndexOutOfBoundsException](IndexOutOfBoundsException.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a new`IndexOutOfBoundsException`class with an argument indicating the illegal index. |
+| [IndexOutOfBoundsException](IndexOutOfBoundsException.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an`IndexOutOfBoundsException`with the specified detail message. |
+| [IndexOutOfBoundsException](IndexOutOfBoundsException.md))`(`index:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Constructs a new`IndexOutOfBoundsException`class with an argument indicating the illegal index. |
 
 ## Public constructors
 

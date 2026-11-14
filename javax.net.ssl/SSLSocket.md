@@ -8,8 +8,8 @@ abstract class SSLSocket : Socket
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.net.Socket](../java/net/Socket.md) ||
-| | ↳ | [javax.net.ssl.SSLSocket](../javax/net/ssl/SSLSocket.md) |
+| ↳ | [java.net.Socket](../java.net/Socket.md) ||
+| | ↳ | [javax.net.ssl.SSLSocket](SSLSocket.md) |
 
 This class extends `Socket`s and provides secure socket using protocols such as the "Secure Sockets Layer" (SSL) or IETF "Transport Layer Security" (TLS) protocols.
 
@@ -265,12 +265,12 @@ API Levels 1 to 8 use OpenSSL names for cipher suites. The table below lists the
 | abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getEnabledProtocols()()` Returns the names of the protocol versions which are currently enabled for use on this connection. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getHandshakeApplicationProtocol()()` Returns the application protocol value negotiated on a SSL/TLS handshake currently in progress. |
 | --- | --- |
-| open [BiFunction](../java/util/function/BiFunction.md)\< [SSLSocket](../javax/net/ssl/SSLSocket.md)!, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getHandshakeApplicationProtocolSelector()()` Retrieves the callback function that selects an application protocol value during a SSL/TLS handshake. |
-| open [SSLSession](../javax/net/ssl/SSLSession.md)! | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getHandshakeSession()()` Returns the `SSLSession` being constructed during a SSL/TLS handshake. |
+| open [BiFunction](../java.util.function/BiFunction.md)\< [SSLSocket](SSLSocket.md)!, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getHandshakeApplicationProtocolSelector()()` Retrieves the callback function that selects an application protocol value during a SSL/TLS handshake. |
+| open [SSLSession](SSLSession.md)! | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getHandshakeSession()()` Returns the `SSLSession` being constructed during a SSL/TLS handshake. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getNeedClientAuth()()` Returns true if the socket will *require* client authentication. |
 | --- | --- |
-| open [SSLParameters](../javax/net/ssl/SSLParameters.md)! | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getSSLParameters()()` Returns the SSLParameters in effect for this SSLSocket. |
-| abstract [SSLSession](../javax/net/ssl/SSLSession.md)! | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getSession()()` Returns the SSL Session in use by this connection. |
+| open [SSLParameters](SSLParameters.md)! | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getSSLParameters()()` Returns the SSLParameters in effect for this SSLSocket. |
+| abstract [SSLSession](SSLSession.md)! | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getSession()()` Returns the SSL Session in use by this connection. |
 | abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getSupportedCipherSuites()()` Returns the names of the cipher suites which could be enabled for use on this connection. |
 | --- | --- |
 | abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLSocket#getSupportedProtocols()()` Returns the names of the protocols which could be enabled for use on an SSL connection. |
@@ -717,7 +717,7 @@ If there is a security manager, its `checkConnect` method is called with the hos
 |---|---|
 | `host` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: name of the host with which to connect, or `null` for the loopback address. |
 | `port` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): number of the server's port |
-| `clientAddress` | [InetAddress](../java/net/InetAddress.md)!: the client's address the socket is bound to, or `null` for the `anyLocal` address. |
+| `clientAddress` | [InetAddress](../java.net/InetAddress.md)!: the client's address the socket is bound to, or `null` for the `anyLocal` address. |
 | --- | --- |
 | `clientPort` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the client's port the socket is bound to, or `zero` for a system selected free port. |
 
@@ -747,7 +747,7 @@ If there is a security manager, its `checkConnect` method is called with the hos
 
 | Parameters ||
 |---|---|
-| `address` | [InetAddress](../java/net/InetAddress.md)!: the server's host |
+| `address` | [InetAddress](../java.net/InetAddress.md)!: the server's host |
 | `port` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): its port |
 
 | Exceptions ||
@@ -778,9 +778,9 @@ If there is a security manager, its `checkConnect` method is called with the hos
 
 | Parameters ||
 |---|---|
-| `address` | [InetAddress](../java/net/InetAddress.md)!: the server's host |
+| `address` | [InetAddress](../java.net/InetAddress.md)!: the server's host |
 | `port` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): its port |
-| `clientAddress` | [InetAddress](../java/net/InetAddress.md)!: the client's address the socket is bound to, or `null` for the `anyLocal` address. |
+| `clientAddress` | [InetAddress](../java.net/InetAddress.md)!: the client's address the socket is bound to, or `null` for the `anyLocal` address. |
 | --- | --- |
 | `clientPort` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the client's port the socket is bound to, or `zero` for a system selected free port. |
 
@@ -808,7 +808,7 @@ Registers an event listener to receive notifications that an SSL handshake has c
 
 | Parameters ||
 |---|---|
-| `listener` | [HandshakeCompletedListener](../javax/net/ssl/HandshakeCompletedListener.md)!: the HandShake Completed event listener |
+| `listener` | [HandshakeCompletedListener](HandshakeCompletedListener.md)!: the HandShake Completed event listener |
 
 | Exceptions ||
 |---|---|
@@ -1111,7 +1111,7 @@ Removes a previously registered handshake completion listener.
 
 | Parameters ||
 |---|---|
-| `listener` | [HandshakeCompletedListener](../javax/net/ssl/HandshakeCompletedListener.md)!: the HandShake Completed event listener |
+| `listener` | [HandshakeCompletedListener](HandshakeCompletedListener.md)!: the HandShake Completed event listener |
 
 | Exceptions ||
 |---|---|
@@ -1231,7 +1231,7 @@ For example, the following call registers a callback function that examines the 
 
 | Parameters ||
 |---|---|
-| `selector` | [BiFunction](../java/util/function/BiFunction.md)\< [SSLSocket](../javax/net/ssl/SSLSocket.md)!, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!: the callback function, or null to de-register. |
+| `selector` | [BiFunction](../java.util.function/BiFunction.md)\< [SSLSocket](SSLSocket.md)!, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!: the callback function, or null to de-register. |
 
 | Exceptions ||
 |---|---|
@@ -1288,7 +1288,7 @@ This means:
 
 | Parameters ||
 |---|---|
-| `params` | [SSLParameters](../javax/net/ssl/SSLParameters.md)!: the parameters |
+| `params` | [SSLParameters](SSLParameters.md)!: the parameters |
 
 | Exceptions ||
 |---|---|

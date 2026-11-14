@@ -9,11 +9,11 @@ abstract class IntentService : Service
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](../android/content/Context.md) ||||
-| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) |||
-| | | ↳ | [android.app.Service](../android/app/Service.md) ||
+| ↳ | [android.content.Context](../android.content/Context.md) ||||
+| | ↳ | [android.content.ContextWrapper](../android.content/ContextWrapper.md) |||
+| | | ↳ | [android.app.Service](Service.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.app.IntentService](../android/app/IntentService.md) |
+| | | | ↳ | [android.app.IntentService](IntentService.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 30.**
@@ -1057,7 +1057,7 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 
 | Public methods ||
 |---|---|
-| open [IBinder](../android/os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/app/IntentService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Unless you provide binding for your service, you don't need to implement this method, because the default implementation returns null. |
+| open [IBinder](../android.os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/app/IntentService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Unless you provide binding for your service, you don't need to implement this method, because the default implementation returns null. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/IntentService#onCreate()()` Called by the system when the service is first created. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/IntentService#onDestroy()()` Called by the system to notify a Service that it is no longer used and is being removed. |
 | --- | --- |
@@ -2767,7 +2767,7 @@ Unless you provide binding for your service, you don't need to implement this me
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
+| `intent` | [Intent](../android.content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
 
 | Return ||
 |---|---|
@@ -2816,7 +2816,7 @@ open fun onStart(
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md)?: This value may be `null`. |
+| `intent` | [Intent](../android.content/Intent.md)?: This value may be `null`. |
 
 ### onStartCommand
 
@@ -2837,7 +2837,7 @@ You should not override this method for your IntentService. Instead, override `h
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md)?: This value may be `null`. |
+| `intent` | [Intent](../android.content/Intent.md)?: This value may be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional data about this start request. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/app/Service#START_FLAG_REDELIVERY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/Service#START_FLAG_RETRY:kotlin.Int` |
 | `startId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): A unique integer representing this specific request to start. Use with `https://developer.android.com/reference/kotlin/android/app/Service#stopSelfResult(kotlin.Int)`. |
 | --- | --- |
@@ -2884,4 +2884,4 @@ This method may take several seconds to complete, so it should only be called fr
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md)?: The value passed to `https://developer.android.com/reference/kotlin/android/content/Context.html#startService(android.content.Intent)`. This may be null if the service is being restarted after its process has gone away; see `https://developer.android.com/reference/kotlin/android/app/Service#onStartCommand(android.content.Intent,%20kotlin.Int,%20kotlin.Int)` for details. |
+| `intent` | [Intent](../android.content/Intent.md)?: The value passed to `https://developer.android.com/reference/kotlin/android/content/Context.html#startService(android.content.Intent)`. This may be null if the service is being restarted after its process has gone away; see `https://developer.android.com/reference/kotlin/android/app/Service#onStartCommand(android.content.Intent,%20kotlin.Int,%20kotlin.Int)` for details. |

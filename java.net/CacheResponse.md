@@ -10,9 +10,9 @@ abstract class CacheResponse
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.net.CacheResponse](../java/net/CacheResponse.md) |
+| ↳ | [java.net.CacheResponse](CacheResponse.md) |
 
-| Known Direct Subclasses [SecureCacheResponse](../java/net/SecureCacheResponse.md) |----------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------| | [SecureCacheResponse](../java/net/SecureCacheResponse.md) | Represents a cache response originally retrieved through secure means, such as TLS. | |
+| Known Direct Subclasses [SecureCacheResponse](SecureCacheResponse.md) |----------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------| | [SecureCacheResponse](SecureCacheResponse.md) | Represents a cache response originally retrieved through secure means, such as TLS. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 Represent channels for retrieving resources from the ResponseCache. Instances of such a class provide an InputStream that returns the entity body, and also a getHeaders() method which returns the associated response headers.
@@ -21,12 +21,12 @@ Represent channels for retrieving resources from the ResponseCache. Instances of
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------|---|
-| [CacheResponse](../java/net/CacheResponse.md))`()` <br /> |
+| [CacheResponse](CacheResponse.md))`()` <br /> |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [InputStream](../java/io/InputStream.md)! | [getBody](../java/net/CacheResponse.md))`()` Returns the response body as an InputStream. |
-| abstract [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!\>! | [getHeaders](../java/net/CacheResponse.md))`()` Returns the response headers as a Map. |
+| abstract [InputStream](../java.io/InputStream.md)! | [getBody](CacheResponse.md))`()` Returns the response body as an InputStream. |
+| abstract [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!\>! | [getHeaders](CacheResponse.md))`()` Returns the response headers as a Map. |
 
 ## Public constructors
 
@@ -52,7 +52,7 @@ Returns the response body as an InputStream.
 
 | Return ||
 |------------------------------------------------------------------------------------------|-------------------------------------------------------------|
-| [InputStream](../java/io/InputStream.md)! | an InputStream from which the response body can be accessed |
+| [InputStream](../java.io/InputStream.md)! | an InputStream from which the response body can be accessed |
 
 | Exceptions ||
 |-----------------------|--------------------------------------------------------|

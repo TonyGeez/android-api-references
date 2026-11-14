@@ -2,7 +2,7 @@ Added in [API level 36.1](https://developer.android.com/guide/topics/manifest/us
 
 # SuggestedDeviceInfo
 
-Kotlin | [Java](../android/media/SuggestedDeviceInfo.md)
+Kotlin | [Java](SuggestedDeviceInfo.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class SuggestedDeviceInfo : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.SuggestedDeviceInfo](../android/media/SuggestedDeviceInfo.md) |
+| ↳ | [android.media.SuggestedDeviceInfo](SuggestedDeviceInfo.md) |
 
 Allows applications to suggest routes to the system UI (for example, in the System UI Output Switcher).
 
@@ -33,7 +33,7 @@ Suggested devices are used to transfer the current media session from one device
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/SuggestedDeviceInfo#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/SuggestedDeviceInfo#getDeviceDisplayName()()` Returns the name to be displayed to the user. |
 | --- | --- |
-| [Bundle](../android/os/Bundle.md) | `https://developer.android.com/reference/kotlin/android/media/SuggestedDeviceInfo#getExtras()()` Returns the extras associated with the suggestion. |
+| [Bundle](../android.os/Bundle.md) | `https://developer.android.com/reference/kotlin/android/media/SuggestedDeviceInfo#getExtras()()` Returns the extras associated with the suggestion. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/media/SuggestedDeviceInfo#getRouteId()()` Returns the route ID associated with the suggestion. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/SuggestedDeviceInfo#getType()()` Returns the device type associated with the suggestion. |
 | --- | --- |
@@ -44,7 +44,7 @@ Suggested devices are used to transfer the current media session from one device
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [SuggestedDeviceInfo](../android/media/SuggestedDeviceInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/media/SuggestedDeviceInfo#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [SuggestedDeviceInfo](SuggestedDeviceInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/media/SuggestedDeviceInfo#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public methods
 
@@ -195,7 +195,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

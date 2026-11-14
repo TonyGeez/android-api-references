@@ -10,15 +10,15 @@ open class CertPathBuilder
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.cert.CertPathBuilder](../java/security/cert/CertPathBuilder.md) |
+| ↳ | [java.security.cert.CertPathBuilder](CertPathBuilder.md) |
 
 A class for building certification paths (also known as certificate chains).
 
 This class uses a provider-based architecture. To create a`CertPathBuilder`, call one of the static`getInstance`methods, passing in the algorithm name of the`CertPathBuilder`desired and optionally the name of the provider desired.
 
-Once a`CertPathBuilder`object has been created, certification paths can be constructed by calling the [build](../java/security/cert/CertPathBuilder.md))method and passing it an algorithm-specific set of parameters. If successful, the result (including the`CertPath`that was built) is returned in an object that implements the`CertPathBuilderResult`interface.
+Once a`CertPathBuilder`object has been created, certification paths can be constructed by calling the [build](CertPathBuilder.md))method and passing it an algorithm-specific set of parameters. If successful, the result (including the`CertPath`that was built) is returned in an object that implements the`CertPathBuilderResult`interface.
 
-The [getRevocationChecker](../java/security/cert/CertPathBuilder.md))method allows an application to specify additional algorithm-specific parameters and options used by the`CertPathBuilder`when checking the revocation status of certificates. Here is an example demonstrating how it is used with the PKIX algorithm: 
+The [getRevocationChecker](CertPathBuilder.md))method allows an application to specify additional algorithm-specific parameters and options used by the`CertPathBuilder`when checking the revocation status of certificates. Here is an example demonstrating how it is used with the PKIX algorithm: 
 
 ```kotlin
 CertPathBuilder cpb = CertPathBuilder.getInstance("PKIX");
@@ -45,20 +45,20 @@ However, this is not true for the non-static methods defined by this class. Unle
 
 | Protected constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [CertPathBuilder](../java/security/cert/CertPathBuilder.md))`(`builderSpi:` ` [CertPathBuilderSpi](../java/security/cert/CertPathBuilderSpi.md)!`, `provider:` ` [Provider](../java/security/Provider.md)!`, `algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a`CertPathBuilder`object of the given algorithm, and encapsulates the given provider implementation (SPI object) in it. |
+| [CertPathBuilder](CertPathBuilder.md))`(`builderSpi:` ` [CertPathBuilderSpi](CertPathBuilderSpi.md)!`, `provider:` ` [Provider](../java.security/Provider.md)!`, `algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a`CertPathBuilder`object of the given algorithm, and encapsulates the given provider implementation (SPI object) in it. |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [CertPathBuilderResult](../java/security/cert/CertPathBuilderResult.md)! | [build](../java/security/cert/CertPathBuilder.md))`(`params:` ` [CertPathParameters](../java/security/cert/CertPathParameters.md)!`)` Attempts to build a certification path using the specified algorithm parameter set. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAlgorithm](../java/security/cert/CertPathBuilder.md))`()` Returns the name of the algorithm of this`CertPathBuilder`. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDefaultType](../java/security/cert/CertPathBuilder.md))`()` Returns the default`CertPathBuilder`type as specified by the`certpathbuilder.type`security property, or the string "PKIX" if no such property exists. |
+| [CertPathBuilderResult](CertPathBuilderResult.md)! | [build](CertPathBuilder.md))`(`params:` ` [CertPathParameters](CertPathParameters.md)!`)` Attempts to build a certification path using the specified algorithm parameter set. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAlgorithm](CertPathBuilder.md))`()` Returns the name of the algorithm of this`CertPathBuilder`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDefaultType](CertPathBuilder.md))`()` Returns the default`CertPathBuilder`type as specified by the`certpathbuilder.type`security property, or the string "PKIX" if no such property exists. |
 | --- | --- |
-| openstatic [CertPathBuilder](../java/security/cert/CertPathBuilder.md)! | [getInstance](../java/security/cert/CertPathBuilder.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a`CertPathBuilder`object that implements the specified algorithm. |
-| openstatic [CertPathBuilder](../java/security/cert/CertPathBuilder.md)! | [getInstance](../java/security/cert/CertPathBuilder.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a`CertPathBuilder`object that implements the specified algorithm. |
-| openstatic [CertPathBuilder](../java/security/cert/CertPathBuilder.md)! | [getInstance](../java/security/cert/CertPathBuilder.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [Provider](../java/security/Provider.md)!`)` Returns a`CertPathBuilder`object that implements the specified algorithm. |
+| openstatic [CertPathBuilder](CertPathBuilder.md)! | [getInstance](CertPathBuilder.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a`CertPathBuilder`object that implements the specified algorithm. |
+| openstatic [CertPathBuilder](CertPathBuilder.md)! | [getInstance](CertPathBuilder.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a`CertPathBuilder`object that implements the specified algorithm. |
+| openstatic [CertPathBuilder](CertPathBuilder.md)! | [getInstance](CertPathBuilder.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [Provider](../java.security/Provider.md)!`)` Returns a`CertPathBuilder`object that implements the specified algorithm. |
 | --- | --- |
-| [Provider](../java/security/Provider.md)! | [getProvider](../java/security/cert/CertPathBuilder.md))`()` Returns the provider of this`CertPathBuilder`. |
-| [CertPathChecker](../java/security/cert/CertPathChecker.md)! | [getRevocationChecker](../java/security/cert/CertPathBuilder.md))`()` Returns a`CertPathChecker`that the encapsulated`CertPathBuilderSpi`implementation uses to check the revocation status of certificates. |
+| [Provider](../java.security/Provider.md)! | [getProvider](CertPathBuilder.md))`()` Returns the provider of this`CertPathBuilder`. |
+| [CertPathChecker](CertPathChecker.md)! | [getRevocationChecker](CertPathBuilder.md))`()` Returns a`CertPathChecker`that the encapsulated`CertPathBuilderSpi`implementation uses to check the revocation status of certificates. |
 
 ## Protected constructors
 
@@ -77,8 +77,8 @@ Creates a`CertPathBuilder`object of the given algorithm, and encapsulates the gi
 
 | Parameters ||
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| `builderSpi` | [CertPathBuilderSpi](../java/security/cert/CertPathBuilderSpi.md)!:the provider implementation |
-| `provider` | [Provider](../java/security/Provider.md)!:the provider |
+| `builderSpi` | [CertPathBuilderSpi](CertPathBuilderSpi.md)!:the provider implementation |
+| `provider` | [Provider](../java.security/Provider.md)!:the provider |
 | `algorithm` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the algorithm name |
 | --- | --- |
 
@@ -96,11 +96,11 @@ Attempts to build a certification path using the specified algorithm parameter s
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------------------------------|
-| `params` | [CertPathParameters](../java/security/cert/CertPathParameters.md)!:the algorithm parameters |
+| `params` | [CertPathParameters](CertPathParameters.md)!:the algorithm parameters |
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------|-----------------------------------|
-| [CertPathBuilderResult](../java/security/cert/CertPathBuilderResult.md)! | the result of the build algorithm |
+| [CertPathBuilderResult](CertPathBuilderResult.md)! | the result of the build algorithm |
 
 | Exceptions ||
 |----------------------------------------------------|----------------------------------------------------------------------------------------------------|
@@ -141,7 +141,7 @@ The default`CertPathBuilder`type can be changed by setting the value of the`cert
 
 **See Also**
 
-- [java.security.Security](../java/security/Security.md) 
+- [java.security.Security](../java.security/Security.md) 
 
 ### getInstance
 
@@ -155,7 +155,7 @@ Returns a`CertPathBuilder`object that implements the specified algorithm.
 
 This method traverses the list of registered security Providers, starting with the most preferred Provider. A new CertPathBuilder object encapsulating the CertPathBuilderSpi implementation from the first Provider that supports the specified algorithm is returned.
 
-Note that the list of registered providers may be retrieved via the [Security.getProviders()](../java/security/Security.md))method.
+Note that the list of registered providers may be retrieved via the [Security.getProviders()](../java.security/Security.md))method.
 
 | Parameters ||
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -163,7 +163,7 @@ Note that the list of registered providers may be retrieved via the [Security.ge
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|
-| [CertPathBuilder](../java/security/cert/CertPathBuilder.md)! | a`CertPathBuilder`object that implements the specified algorithm |
+| [CertPathBuilder](CertPathBuilder.md)! | a`CertPathBuilder`object that implements the specified algorithm |
 
 | Exceptions ||
 |------------------------------------------|-----------------------------------------------------------------------------------------|
@@ -172,7 +172,7 @@ Note that the list of registered providers may be retrieved via the [Security.ge
 
 **See Also**
 
-- [java.security.Provider](../java/security/Provider.md) 
+- [java.security.Provider](../java.security/Provider.md) 
 
 ### getInstance
 
@@ -189,7 +189,7 @@ Returns a`CertPathBuilder`object that implements the specified algorithm.
 
 A new CertPathBuilder object encapsulating the CertPathBuilderSpi implementation from the specified provider is returned. The specified provider must be registered in the security provider list.
 
-Note that the list of registered providers may be retrieved via the [Security.getProviders()](../java/security/Security.md))method.
+Note that the list of registered providers may be retrieved via the [Security.getProviders()](../java.security/Security.md))method.
 
 | Parameters ||
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -198,7 +198,7 @@ Note that the list of registered providers may be retrieved via the [Security.ge
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|
-| [CertPathBuilder](../java/security/cert/CertPathBuilder.md)! | a`CertPathBuilder`object that implements the specified algorithm |
+| [CertPathBuilder](CertPathBuilder.md)! | a`CertPathBuilder`object that implements the specified algorithm |
 
 | Exceptions ||
 |------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
@@ -210,7 +210,7 @@ Note that the list of registered providers may be retrieved via the [Security.ge
 
 **See Also**
 
-- [java.security.Provider](../java/security/Provider.md) 
+- [java.security.Provider](../java.security/Provider.md) 
 
 ### getInstance
 
@@ -230,11 +230,11 @@ A new CertPathBuilder object encapsulating the CertPathBuilderSpi implementation
 | Parameters ||
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `algorithm` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the name of the requested`CertPathBuilder`algorithm. See the CertPathBuilder section in the [Java Security Standard Algorithm Names Specification](https://docs.oracle.com/en/java/javase/17/docs/specs/security/standard-names.html#certpathbuilder-algorithms) for information about standard algorithm names. |
-| `provider` | [Provider](../java/security/Provider.md)!:the provider. |
+| `provider` | [Provider](../java.security/Provider.md)!:the provider. |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|
-| [CertPathBuilder](../java/security/cert/CertPathBuilder.md)! | a`CertPathBuilder`object that implements the specified algorithm |
+| [CertPathBuilder](CertPathBuilder.md)! | a`CertPathBuilder`object that implements the specified algorithm |
 
 | Exceptions ||
 |------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
@@ -245,7 +245,7 @@ A new CertPathBuilder object encapsulating the CertPathBuilderSpi implementation
 
 **See Also**
 
-- [java.security.Provider](../java/security/Provider.md) 
+- [java.security.Provider](../java.security/Provider.md) 
 
 ### getProvider
 
@@ -259,7 +259,7 @@ Returns the provider of this`CertPathBuilder`.
 
 | Return ||
 |------------------------------------------------------------------------------------------|---------------------------------------|
-| [Provider](../java/security/Provider.md)! | the provider of this`CertPathBuilder` |
+| [Provider](../java.security/Provider.md)! | the provider of this`CertPathBuilder` |
 
 ### getRevocationChecker
 
@@ -275,7 +275,7 @@ The primary purpose of this method is to allow callers to specify additional inp
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------|--------------------|
-| [CertPathChecker](../java/security/cert/CertPathChecker.md)! | a`CertPathChecker` |
+| [CertPathChecker](CertPathChecker.md)! | a`CertPathChecker` |
 
 | Exceptions ||
 |-------------------------------------------|------------------------------------------------------|

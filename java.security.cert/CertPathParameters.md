@@ -8,12 +8,12 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface CertPathParameters : Cloneable
 ```
 
-| [java.security.cert.CertPathParameters](../java/security/cert/CertPathParameters.md) |
+| [java.security.cert.CertPathParameters](CertPathParameters.md) |
 
-| Known Direct Subclasses [PKIXParameters](../java/security/cert/PKIXParameters.md) |----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------| | [PKIXParameters](../java/security/cert/PKIXParameters.md) | Parameters used as input for the PKIX`CertPathValidator`algorithm. | |
+| Known Direct Subclasses [PKIXParameters](PKIXParameters.md) |----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------| | [PKIXParameters](PKIXParameters.md) | Parameters used as input for the PKIX`CertPathValidator`algorithm. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [PKIXBuilderParameters](../java/security/cert/PKIXBuilderParameters.md) |------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------| | [PKIXBuilderParameters](../java/security/cert/PKIXBuilderParameters.md) | Parameters used as input for the PKIX`CertPathBuilder`algorithm. | |
+| Known Indirect Subclasses [PKIXBuilderParameters](PKIXBuilderParameters.md) |------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------| | [PKIXBuilderParameters](PKIXBuilderParameters.md) | Parameters used as input for the PKIX`CertPathBuilder`algorithm. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 A specification of certification path algorithm parameters. The purpose of this interface is to group (and provide type safety for) all`CertPath`parameter specifications. All`CertPath`parameter specifications must implement this interface.
@@ -22,7 +22,7 @@ A specification of certification path algorithm parameters. The purpose of this 
 
 | Public methods ||
 |------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](../java/security/cert/CertPathParameters.md))`()` Makes a copy of this`CertPathParameters`. |
+| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](CertPathParameters.md))`()` Makes a copy of this`CertPathParameters`. |
 
 ## Public methods
 

@@ -10,10 +10,10 @@ class TimeUnit
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.util.concurrent.TimeUnit](../java/util/concurrent/TimeUnit.md)\> ||
-| | ↳ | [java.util.concurrent.TimeUnit](../java/util/concurrent/TimeUnit.md) |
+| ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.util.concurrent.TimeUnit](TimeUnit.md)\> ||
+| | ↳ | [java.util.concurrent.TimeUnit](TimeUnit.md) |
 
-| Known Direct Subclasses [TimeUnit.DAYS](../java/util/concurrent/TimeUnit.md), [TimeUnit.HOURS](../java/util/concurrent/TimeUnit.md), [TimeUnit.MICROSECONDS](../java/util/concurrent/TimeUnit.md), [TimeUnit.MILLISECONDS](../java/util/concurrent/TimeUnit.md), [TimeUnit.MINUTES](../java/util/concurrent/TimeUnit.md), [TimeUnit.NANOSECONDS](../java/util/concurrent/TimeUnit.md), [TimeUnit.SECONDS](../java/util/concurrent/TimeUnit.md) |-------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------| | [TimeUnit.DAYS](../java/util/concurrent/TimeUnit.md) | Time unit representing twenty four hours. | | [TimeUnit.HOURS](../java/util/concurrent/TimeUnit.md) | Time unit representing sixty minutes. | | [TimeUnit.MICROSECONDS](../java/util/concurrent/TimeUnit.md) | Time unit representing one thousandth of a millisecond. | | [TimeUnit.MILLISECONDS](../java/util/concurrent/TimeUnit.md) | Time unit representing one thousandth of a second. | | [TimeUnit.MINUTES](../java/util/concurrent/TimeUnit.md) | Time unit representing sixty seconds. | | [TimeUnit.NANOSECONDS](../java/util/concurrent/TimeUnit.md) | Time unit representing one thousandth of a microsecond. | | [TimeUnit.SECONDS](../java/util/concurrent/TimeUnit.md) | Time unit representing one second. | |
+| Known Direct Subclasses [TimeUnit.DAYS](TimeUnit.md), [TimeUnit.HOURS](TimeUnit.md), [TimeUnit.MICROSECONDS](TimeUnit.md), [TimeUnit.MILLISECONDS](TimeUnit.md), [TimeUnit.MINUTES](TimeUnit.md), [TimeUnit.NANOSECONDS](TimeUnit.md), [TimeUnit.SECONDS](TimeUnit.md) |-------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------| | [TimeUnit.DAYS](TimeUnit.md) | Time unit representing twenty four hours. | | [TimeUnit.HOURS](TimeUnit.md) | Time unit representing sixty minutes. | | [TimeUnit.MICROSECONDS](TimeUnit.md) | Time unit representing one thousandth of a millisecond. | | [TimeUnit.MILLISECONDS](TimeUnit.md) | Time unit representing one thousandth of a second. | | [TimeUnit.MINUTES](TimeUnit.md) | Time unit representing sixty seconds. | | [TimeUnit.NANOSECONDS](TimeUnit.md) | Time unit representing one thousandth of a microsecond. | | [TimeUnit.SECONDS](TimeUnit.md) | Time unit representing one second. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 A represents time durations at a given unit of granularity and provides utility methods to convert across units, and to perform timing and delay operations in these units. A does not maintain time information, but only helps organize and use time representations that may be maintained separately across various contexts. A nanosecond is defined as one thousandth of a microsecond, a microsecond as one thousandth of a millisecond, a millisecond as one thousandth of a second, a minute as sixty seconds, an hour as sixty minutes, and a day as twenty four hours.
@@ -36,34 +36,34 @@ Note however, that there is no guarantee that a particular timeout implementatio
 
 | Enum values ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [DAYS](../java/util/concurrent/TimeUnit.md) Time unit representing twenty four hours. |
-| [HOURS](../java/util/concurrent/TimeUnit.md) Time unit representing sixty minutes. |
-| [MICROSECONDS](../java/util/concurrent/TimeUnit.md) Time unit representing one thousandth of a millisecond. |
-| [MILLISECONDS](../java/util/concurrent/TimeUnit.md) Time unit representing one thousandth of a second. |
-| [MINUTES](../java/util/concurrent/TimeUnit.md) Time unit representing sixty seconds. |
-| [NANOSECONDS](../java/util/concurrent/TimeUnit.md) Time unit representing one thousandth of a microsecond. |
-| [SECONDS](../java/util/concurrent/TimeUnit.md) Time unit representing one second. |
+| [DAYS](TimeUnit.md) Time unit representing twenty four hours. |
+| [HOURS](TimeUnit.md) Time unit representing sixty minutes. |
+| [MICROSECONDS](TimeUnit.md) Time unit representing one thousandth of a millisecond. |
+| [MILLISECONDS](TimeUnit.md) Time unit representing one thousandth of a second. |
+| [MINUTES](TimeUnit.md) Time unit representing sixty seconds. |
+| [NANOSECONDS](TimeUnit.md) Time unit representing one thousandth of a microsecond. |
+| [SECONDS](TimeUnit.md) Time unit representing one second. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [convert](../java/util/concurrent/TimeUnit.md))`(`duration:` ` [Duration](../java/time/Duration.md)!`)` Converts the given time duration to this unit. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [convert](../java/util/concurrent/TimeUnit.md))`(`sourceDuration:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `sourceUnit:` ` [TimeUnit](../java/util/concurrent/TimeUnit.md)!`)` Converts the given time duration in the given unit to this unit. |
-| static [TimeUnit](../java/util/concurrent/TimeUnit.md)! | [of](../java/util/concurrent/TimeUnit.md))`(`chronoUnit:` ` [ChronoUnit](../java/time/temporal/ChronoUnit.md)!`)` Converts a`ChronoUnit`to the equivalent`TimeUnit`. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [convert](TimeUnit.md))`(`duration:` ` [Duration](../java.time/Duration.md)!`)` Converts the given time duration to this unit. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [convert](TimeUnit.md))`(`sourceDuration:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `sourceUnit:` ` [TimeUnit](TimeUnit.md)!`)` Converts the given time duration in the given unit to this unit. |
+| static [TimeUnit](TimeUnit.md)! | [of](TimeUnit.md))`(`chronoUnit:` ` [ChronoUnit](../java.time.temporal/ChronoUnit.md)!`)` Converts a`ChronoUnit`to the equivalent`TimeUnit`. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [sleep](../java/util/concurrent/TimeUnit.md))`(`timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Performs a [Thread.sleep](../java/lang/Thread.md))using this time unit. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [timedJoin](../java/util/concurrent/TimeUnit.md))`(`thread:` ` [Thread](../java/lang/Thread.md)!`, `timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Performs a timed [Thread.join](../java/lang/Thread.md))using this time unit. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [timedWait](../java/util/concurrent/TimeUnit.md))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Performs a timed [Object.wait](../java/lang/Object.md))using this time unit. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [sleep](TimeUnit.md))`(`timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Performs a [Thread.sleep](../java.lang/Thread.md))using this time unit. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [timedJoin](TimeUnit.md))`(`thread:` ` [Thread](../java.lang/Thread.md)!`, `timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Performs a timed [Thread.join](../java.lang/Thread.md))using this time unit. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [timedWait](TimeUnit.md))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Performs a timed [Object.wait](../java.lang/Object.md))using this time unit. |
 | --- | --- |
-| [ChronoUnit](../java/time/temporal/ChronoUnit.md)! | [toChronoUnit](../java/util/concurrent/TimeUnit.md))`()` Converts this`TimeUnit`to the equivalent`ChronoUnit`. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toDays](../java/util/concurrent/TimeUnit.md))`(`duration:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Equivalent to [DAYS.convert(duration, this)](../java/util/concurrent/TimeUnit.md)). |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toHours](../java/util/concurrent/TimeUnit.md))`(`duration:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Equivalent to [HOURS.convert(duration, this)](../java/util/concurrent/TimeUnit.md)). |
+| [ChronoUnit](../java.time.temporal/ChronoUnit.md)! | [toChronoUnit](TimeUnit.md))`()` Converts this`TimeUnit`to the equivalent`ChronoUnit`. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toDays](TimeUnit.md))`(`duration:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Equivalent to [DAYS.convert(duration, this)](TimeUnit.md)). |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toHours](TimeUnit.md))`(`duration:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Equivalent to [HOURS.convert(duration, this)](TimeUnit.md)). |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toMicros](../java/util/concurrent/TimeUnit.md))`(`duration:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Equivalent to [MICROSECONDS.convert(duration, this)](../java/util/concurrent/TimeUnit.md)). |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toMillis](../java/util/concurrent/TimeUnit.md))`(`duration:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Equivalent to [MILLISECONDS.convert(duration, this)](../java/util/concurrent/TimeUnit.md)). |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toMinutes](../java/util/concurrent/TimeUnit.md))`(`duration:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Equivalent to [MINUTES.convert(duration, this)](../java/util/concurrent/TimeUnit.md)). |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toMicros](TimeUnit.md))`(`duration:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Equivalent to [MICROSECONDS.convert(duration, this)](TimeUnit.md)). |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toMillis](TimeUnit.md))`(`duration:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Equivalent to [MILLISECONDS.convert(duration, this)](TimeUnit.md)). |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toMinutes](TimeUnit.md))`(`duration:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Equivalent to [MINUTES.convert(duration, this)](TimeUnit.md)). |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toNanos](../java/util/concurrent/TimeUnit.md))`(`duration:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Equivalent to [NANOSECONDS.convert(duration, this)](../java/util/concurrent/TimeUnit.md)). |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toSeconds](../java/util/concurrent/TimeUnit.md))`(`duration:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Equivalent to [SECONDS.convert(duration, this)](../java/util/concurrent/TimeUnit.md)). |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toNanos](TimeUnit.md))`(`duration:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Equivalent to [NANOSECONDS.convert(duration, this)](TimeUnit.md)). |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toSeconds](TimeUnit.md))`(`duration:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Equivalent to [SECONDS.convert(duration, this)](TimeUnit.md)). |
 
 ## Enum values
 
@@ -153,7 +153,7 @@ For any TimeUnit`unit`,`unit.convert(Duration.ofNanos(n))`is equivalent to`unit.
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------|
-| `duration` | [Duration](../java/time/Duration.md)!:the time duration |
+| `duration` | [Duration](../java.time/Duration.md)!:the time duration |
 
 | Return ||
 |------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -183,7 +183,7 @@ For example, to convert 10 minutes to milliseconds, use:`TimeUnit.MILLISECONDS.c
 | Parameters ||
 |------------------|------------------------------------------------------------------------------------------------------------------------------------|
 | `sourceDuration` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the time duration in the given`sourceUnit` |
-| `sourceUnit` | [TimeUnit](../java/util/concurrent/TimeUnit.md)!:the unit of the`sourceDuration`argument |
+| `sourceUnit` | [TimeUnit](TimeUnit.md)!:the unit of the`sourceDuration`argument |
 
 | Return ||
 |------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -201,11 +201,11 @@ Converts a`ChronoUnit`to the equivalent`TimeUnit`.
 
 | Parameters ||
 |--------------|-----------------------------------------------------------------------------------------------------------------------------|
-| `chronoUnit` | [ChronoUnit](../java/time/temporal/ChronoUnit.md)!:the ChronoUnit to convert |
+| `chronoUnit` | [ChronoUnit](../java.time.temporal/ChronoUnit.md)!:the ChronoUnit to convert |
 
 | Return ||
 |--------------------------------------------------------------------------------------------|-----------------------------------|
-| [TimeUnit](../java/util/concurrent/TimeUnit.md)! | the converted equivalent TimeUnit |
+| [TimeUnit](TimeUnit.md)! | the converted equivalent TimeUnit |
 
 | Exceptions ||
 |--------------------------------------|------------------------------------------|
@@ -220,7 +220,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun sleep(timeout: Long): Unit
 ```
 
-Performs a [Thread.sleep](../java/lang/Thread.md))using this time unit. This is a convenience method that converts time arguments into the form required by the`Thread.sleep`method.
+Performs a [Thread.sleep](../java.lang/Thread.md))using this time unit. This is a convenience method that converts time arguments into the form required by the`Thread.sleep`method.
 
 | Parameters ||
 |-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -241,11 +241,11 @@ fun timedJoin(
 ): Unit
 ```
 
-Performs a timed [Thread.join](../java/lang/Thread.md))using this time unit. This is a convenience method that converts time arguments into the form required by the`Thread.join`method.
+Performs a timed [Thread.join](../java.lang/Thread.md))using this time unit. This is a convenience method that converts time arguments into the form required by the`Thread.join`method.
 
 | Parameters ||
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `thread` | [Thread](../java/lang/Thread.md)!:the thread to wait for |
+| `thread` | [Thread](../java.lang/Thread.md)!:the thread to wait for |
 | `timeout` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the maximum time to wait. If less than or equal to zero, do not wait at all. |
 
 | Exceptions ||
@@ -263,9 +263,9 @@ fun timedWait(
 ): Unit
 ```
 
-Performs a timed [Object.wait](../java/lang/Object.md))using this time unit. This is a convenience method that converts timeout arguments into the form required by the`Object.wait`method.
+Performs a timed [Object.wait](../java.lang/Object.md))using this time unit. This is a convenience method that converts timeout arguments into the form required by the`Object.wait`method.
 
-For example, you could implement a blocking`poll`method (see [BlockingQueue.poll](../java/util/concurrent/BlockingQueue.md))) using: 
+For example, you could implement a blocking`poll`method (see [BlockingQueue.poll](BlockingQueue.md))) using: 
 
 ```kotlin
 <code>public E poll(long timeout, TimeUnit unit)
@@ -300,7 +300,7 @@ Converts this`TimeUnit`to the equivalent`ChronoUnit`.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------|-------------------------------------|
-| [ChronoUnit](../java/time/temporal/ChronoUnit.md)! | the converted equivalent ChronoUnit |
+| [ChronoUnit](../java.time.temporal/ChronoUnit.md)! | the converted equivalent ChronoUnit |
 
 ### toDays
 
@@ -310,7 +310,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 fun toDays(duration: Long): Long
 ```
 
-Equivalent to [DAYS.convert(duration, this)](../java/util/concurrent/TimeUnit.md)).
+Equivalent to [DAYS.convert(duration, this)](TimeUnit.md)).
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------|
@@ -328,7 +328,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 fun toHours(duration: Long): Long
 ```
 
-Equivalent to [HOURS.convert(duration, this)](../java/util/concurrent/TimeUnit.md)).
+Equivalent to [HOURS.convert(duration, this)](TimeUnit.md)).
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------|
@@ -346,7 +346,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun toMicros(duration: Long): Long
 ```
 
-Equivalent to [MICROSECONDS.convert(duration, this)](../java/util/concurrent/TimeUnit.md)).
+Equivalent to [MICROSECONDS.convert(duration, this)](TimeUnit.md)).
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------|
@@ -364,7 +364,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun toMillis(duration: Long): Long
 ```
 
-Equivalent to [MILLISECONDS.convert(duration, this)](../java/util/concurrent/TimeUnit.md)).
+Equivalent to [MILLISECONDS.convert(duration, this)](TimeUnit.md)).
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------|
@@ -382,7 +382,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 fun toMinutes(duration: Long): Long
 ```
 
-Equivalent to [MINUTES.convert(duration, this)](../java/util/concurrent/TimeUnit.md)).
+Equivalent to [MINUTES.convert(duration, this)](TimeUnit.md)).
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------|
@@ -400,7 +400,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun toNanos(duration: Long): Long
 ```
 
-Equivalent to [NANOSECONDS.convert(duration, this)](../java/util/concurrent/TimeUnit.md)).
+Equivalent to [NANOSECONDS.convert(duration, this)](TimeUnit.md)).
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------|
@@ -418,7 +418,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun toSeconds(duration: Long): Long
 ```
 
-Equivalent to [SECONDS.convert(duration, this)](../java/util/concurrent/TimeUnit.md)).
+Equivalent to [SECONDS.convert(duration, this)](TimeUnit.md)).
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------|

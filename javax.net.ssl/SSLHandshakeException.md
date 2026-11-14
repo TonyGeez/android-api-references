@@ -11,11 +11,11 @@ open class SSLHandshakeException : SSLException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
-| | | ↳ | [java.io.IOException](../java/io/IOException.md) |||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) ||||
+| | | ↳ | [java.io.IOException](../java.io/IOException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [javax.net.ssl.SSLException](../javax/net/ssl/SSLException.md) ||
-| | | | | ↳ | [javax.net.ssl.SSLHandshakeException](../javax/net/ssl/SSLHandshakeException.md) |
+| | | | ↳ | [javax.net.ssl.SSLException](SSLException.md) ||
+| | | | | ↳ | [javax.net.ssl.SSLHandshakeException](SSLHandshakeException.md) |
 
 Indicates that the client and server could not negotiate the desired level of security. The connection is no longer usable.
 
@@ -23,7 +23,7 @@ Indicates that the client and server could not negotiate the desired level of se
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SSLHandshakeException](../javax/net/ssl/SSLHandshakeException.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an exception reporting an error found by an SSL subsystem during handshaking. |
+| [SSLHandshakeException](SSLHandshakeException.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an exception reporting an error found by an SSL subsystem during handshaking. |
 
 ## Public constructors
 

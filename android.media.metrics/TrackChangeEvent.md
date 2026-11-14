@@ -4,7 +4,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # TrackChangeEvent
 
-Kotlin| [Java](../android/media/metrics/TrackChangeEvent.md) 
+Kotlin| [Java](TrackChangeEvent.md) 
 | --- | --- |
 
 ```
@@ -13,8 +13,8 @@ class TrackChangeEvent : Event, Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.media.metrics.Event](../android/media/metrics/Event.md) ||
-| | ↳ | [android.media.metrics.TrackChangeEvent](../android/media/metrics/TrackChangeEvent.md) |
+| ↳ | [android.media.metrics.Event](Event.md) ||
+| | ↳ | [android.media.metrics.TrackChangeEvent](TrackChangeEvent.md) |
 
 Playback track change event.
 
@@ -22,62 +22,62 @@ Playback track change event.
 
 | Nested classes ||
 |---|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](../android/media/metrics/TrackChangeEvent.Builder.md) A builder for [TrackChangeEvent](../android/media/metrics/TrackChangeEvent.md) |
+| | [Builder](../android/media/metrics/TrackChangeEvent.Builder.md) A builder for [TrackChangeEvent](TrackChangeEvent.md) |
 
 | Constants ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRACK_CHANGE_REASON_ADAPTIVE](../android/media/metrics/TrackChangeEvent.md) Track change reason for adaptive changes. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRACK_CHANGE_REASON_INITIAL](../android/media/metrics/TrackChangeEvent.md) Track change reason for initial state. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRACK_CHANGE_REASON_MANUAL](../android/media/metrics/TrackChangeEvent.md) Track change reason for manual changes. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRACK_CHANGE_REASON_ADAPTIVE](TrackChangeEvent.md) Track change reason for adaptive changes. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRACK_CHANGE_REASON_INITIAL](TrackChangeEvent.md) Track change reason for initial state. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRACK_CHANGE_REASON_MANUAL](TrackChangeEvent.md) Track change reason for manual changes. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRACK_CHANGE_REASON_OTHER](../android/media/metrics/TrackChangeEvent.md) Other track change reason. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRACK_CHANGE_REASON_UNKNOWN](../android/media/metrics/TrackChangeEvent.md) Unknown track change reason. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRACK_STATE_OFF](../android/media/metrics/TrackChangeEvent.md) The track is off. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRACK_CHANGE_REASON_OTHER](TrackChangeEvent.md) Other track change reason. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRACK_CHANGE_REASON_UNKNOWN](TrackChangeEvent.md) Unknown track change reason. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRACK_STATE_OFF](TrackChangeEvent.md) The track is off. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRACK_STATE_ON](../android/media/metrics/TrackChangeEvent.md) The track is on. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRACK_TYPE_AUDIO](../android/media/metrics/TrackChangeEvent.md) Audio track. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRACK_TYPE_TEXT](../android/media/metrics/TrackChangeEvent.md) Text track. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRACK_STATE_ON](TrackChangeEvent.md) The track is on. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRACK_TYPE_AUDIO](TrackChangeEvent.md) Audio track. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRACK_TYPE_TEXT](TrackChangeEvent.md) Text track. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRACK_TYPE_VIDEO](../android/media/metrics/TrackChangeEvent.md) Video track. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRACK_TYPE_VIDEO](TrackChangeEvent.md) Video track. |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android.os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android.os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android.os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/media/metrics/TrackChangeEvent.md))`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/media/metrics/TrackChangeEvent.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAudioSampleRate](../android/media/metrics/TrackChangeEvent.md))`()` Gets audio sample rate. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](TrackChangeEvent.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](TrackChangeEvent.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAudioSampleRate](TrackChangeEvent.md))`()` Gets audio sample rate. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBitrate](../android/media/metrics/TrackChangeEvent.md))`()` Gets bitrate. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getChannelCount](../android/media/metrics/TrackChangeEvent.md))`()` Gets channel count. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getCodecName](../android/media/metrics/TrackChangeEvent.md))`()` Gets codec name. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBitrate](TrackChangeEvent.md))`()` Gets bitrate. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getChannelCount](TrackChangeEvent.md))`()` Gets channel count. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getCodecName](TrackChangeEvent.md))`()` Gets codec name. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getContainerMimeType](../android/media/metrics/TrackChangeEvent.md))`()` Gets container MIME type. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHeight](../android/media/metrics/TrackChangeEvent.md))`()` Gets video height. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getLanguage](../android/media/metrics/TrackChangeEvent.md))`()` Gets language code. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getContainerMimeType](TrackChangeEvent.md))`()` Gets container MIME type. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHeight](TrackChangeEvent.md))`()` Gets video height. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getLanguage](TrackChangeEvent.md))`()` Gets language code. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getLanguageRegion](../android/media/metrics/TrackChangeEvent.md))`()` Gets language region code. |
-| [Bundle](../android/os/Bundle.md) | [getMetricsBundle](../android/media/metrics/TrackChangeEvent.md))`()` Gets metrics-related information that is not supported by dedicated methods. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getSampleMimeType](../android/media/metrics/TrackChangeEvent.md))`()` Gets the MIME type of the video/audio/text samples. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getLanguageRegion](TrackChangeEvent.md))`()` Gets language region code. |
+| [Bundle](../android.os/Bundle.md) | [getMetricsBundle](TrackChangeEvent.md))`()` Gets metrics-related information that is not supported by dedicated methods. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getSampleMimeType](TrackChangeEvent.md))`()` Gets the MIME type of the video/audio/text samples. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTimeSinceCreatedMillis](../android/media/metrics/TrackChangeEvent.md))`()` Gets timestamp since the creation of the log session in milliseconds. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTrackChangeReason](../android/media/metrics/TrackChangeEvent.md))`()` Gets track change reason. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTrackState](../android/media/metrics/TrackChangeEvent.md))`()` Gets track state. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTimeSinceCreatedMillis](TrackChangeEvent.md))`()` Gets timestamp since the creation of the log session in milliseconds. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTrackChangeReason](TrackChangeEvent.md))`()` Gets track change reason. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTrackState](TrackChangeEvent.md))`()` Gets track state. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTrackType](../android/media/metrics/TrackChangeEvent.md))`()` Gets the track type. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getVideoFrameRate](../android/media/metrics/TrackChangeEvent.md))`()` Gets video frame rate. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWidth](../android/media/metrics/TrackChangeEvent.md))`()` Gets video width. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTrackType](TrackChangeEvent.md))`()` Gets the track type. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getVideoFrameRate](TrackChangeEvent.md))`()` Gets video frame rate. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWidth](TrackChangeEvent.md))`()` Gets video width. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/media/metrics/TrackChangeEvent.md))`()` <br /> |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/media/metrics/TrackChangeEvent.md))`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/media/metrics/TrackChangeEvent.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](TrackChangeEvent.md))`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](TrackChangeEvent.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](TrackChangeEvent.md))`(`dest:` ` [Parcel](../android.os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 | --- | --- |
 
 | Properties ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [TrackChangeEvent](../android/media/metrics/TrackChangeEvent.md)!\> | [CREATOR](../android/media/metrics/TrackChangeEvent.md) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [TrackChangeEvent](TrackChangeEvent.md)!\> | [CREATOR](TrackChangeEvent.md) <br /> |
 
 ## Constants
 
@@ -213,7 +213,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) |
 
 ### equals
 
@@ -256,7 +256,7 @@ Gets audio sample rate.
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the sample rate, or -1 if unknown. Value is between -1 and [java.lang.Integer#MAX_VALUE](../java/lang/Integer.md) inclusive |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the sample rate, or -1 if unknown. Value is between -1 and [java.lang.Integer#MAX_VALUE](../java.lang/Integer.md) inclusive |
 
 ### getBitrate
 
@@ -270,7 +270,7 @@ Gets bitrate.
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the bitrate, or -1 if unknown. Value is between -1 and [java.lang.Integer#MAX_VALUE](../java/lang/Integer.md) inclusive |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the bitrate, or -1 if unknown. Value is between -1 and [java.lang.Integer#MAX_VALUE](../java.lang/Integer.md) inclusive |
 
 ### getChannelCount
 
@@ -284,7 +284,7 @@ Gets channel count.
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the channel count, or -1 if unknown. Value is between -1 and [java.lang.Integer#MAX_VALUE](../java/lang/Integer.md) inclusive |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the channel count, or -1 if unknown. Value is between -1 and [java.lang.Integer#MAX_VALUE](../java.lang/Integer.md) inclusive |
 
 ### getCodecName
 
@@ -326,7 +326,7 @@ Gets video height.
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the video height, or -1 if unknown. Value is between -1 and [java.lang.Integer#MAX_VALUE](../java/lang/Integer.md) inclusive |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the video height, or -1 if unknown. Value is between -1 and [java.lang.Integer#MAX_VALUE](../java.lang/Integer.md) inclusive |
 
 ### getLanguage
 
@@ -370,7 +370,7 @@ It is intended to be used for backwards compatibility by the metrics infrastruct
 
 | Return ||
 |----------------------------------------------------------------------------------|-----------------------------|
-| [Bundle](../android/os/Bundle.md) | This value cannot be`null`. |
+| [Bundle](../android.os/Bundle.md) | This value cannot be`null`. |
 
 ### getSampleMimeType
 
@@ -402,9 +402,9 @@ Gets timestamp since the creation of the log session in milliseconds.
 
 **See Also**
 
-- [android.media.metrics.LogSessionId](../android/media/metrics/LogSessionId.md)
-- [android.media.metrics.PlaybackSession](../android/media/metrics/PlaybackSession.md)
-- [android.media.metrics.RecordingSession](../android/media/metrics/RecordingSession.md) 
+- [android.media.metrics.LogSessionId](LogSessionId.md)
+- [android.media.metrics.PlaybackSession](PlaybackSession.md)
+- [android.media.metrics.RecordingSession](RecordingSession.md) 
 
 ### getTrackChangeReason
 
@@ -418,7 +418,7 @@ Gets track change reason.
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.media.metrics.TrackChangeEvent#TRACK_CHANGE_REASON_UNKNOWN](../android/media/metrics/TrackChangeEvent.md), [android.media.metrics.TrackChangeEvent#TRACK_CHANGE_REASON_OTHER](../android/media/metrics/TrackChangeEvent.md), [android.media.metrics.TrackChangeEvent#TRACK_CHANGE_REASON_INITIAL](../android/media/metrics/TrackChangeEvent.md), [android.media.metrics.TrackChangeEvent#TRACK_CHANGE_REASON_MANUAL](../android/media/metrics/TrackChangeEvent.md), or [android.media.metrics.TrackChangeEvent#TRACK_CHANGE_REASON_ADAPTIVE](../android/media/metrics/TrackChangeEvent.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.media.metrics.TrackChangeEvent#TRACK_CHANGE_REASON_UNKNOWN](TrackChangeEvent.md), [android.media.metrics.TrackChangeEvent#TRACK_CHANGE_REASON_OTHER](TrackChangeEvent.md), [android.media.metrics.TrackChangeEvent#TRACK_CHANGE_REASON_INITIAL](TrackChangeEvent.md), [android.media.metrics.TrackChangeEvent#TRACK_CHANGE_REASON_MANUAL](TrackChangeEvent.md), or [android.media.metrics.TrackChangeEvent#TRACK_CHANGE_REASON_ADAPTIVE](TrackChangeEvent.md) |
 
 ### getTrackState
 
@@ -432,7 +432,7 @@ Gets track state.
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.media.metrics.TrackChangeEvent#TRACK_STATE_OFF](../android/media/metrics/TrackChangeEvent.md), or [android.media.metrics.TrackChangeEvent#TRACK_STATE_ON](../android/media/metrics/TrackChangeEvent.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.media.metrics.TrackChangeEvent#TRACK_STATE_OFF](TrackChangeEvent.md), or [android.media.metrics.TrackChangeEvent#TRACK_STATE_ON](TrackChangeEvent.md) |
 
 ### getTrackType
 
@@ -444,11 +444,11 @@ fun getTrackType(): Int
 
 Gets the track type.
 
-The track type must be one of [TRACK_TYPE_AUDIO](../android/media/metrics/TrackChangeEvent.md), [TRACK_TYPE_VIDEO](../android/media/metrics/TrackChangeEvent.md), [TRACK_TYPE_TEXT](../android/media/metrics/TrackChangeEvent.md).
+The track type must be one of [TRACK_TYPE_AUDIO](TrackChangeEvent.md), [TRACK_TYPE_VIDEO](TrackChangeEvent.md), [TRACK_TYPE_TEXT](TrackChangeEvent.md).
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.media.metrics.TrackChangeEvent#TRACK_TYPE_AUDIO](../android/media/metrics/TrackChangeEvent.md), [android.media.metrics.TrackChangeEvent#TRACK_TYPE_VIDEO](../android/media/metrics/TrackChangeEvent.md), or [android.media.metrics.TrackChangeEvent#TRACK_TYPE_TEXT](../android/media/metrics/TrackChangeEvent.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.media.metrics.TrackChangeEvent#TRACK_TYPE_AUDIO](TrackChangeEvent.md), [android.media.metrics.TrackChangeEvent#TRACK_TYPE_VIDEO](TrackChangeEvent.md), or [android.media.metrics.TrackChangeEvent#TRACK_TYPE_TEXT](TrackChangeEvent.md) |
 
 ### getVideoFrameRate
 
@@ -462,7 +462,7 @@ Gets video frame rate.
 
 | Return ||
 |--------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | the video frame rate, or -1 if unknown. Value is between -1.0f and [java.lang.Float#MAX_VALUE](../java/lang/Float.md) inclusive |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | the video frame rate, or -1 if unknown. Value is between -1.0f and [java.lang.Float#MAX_VALUE](../java.lang/Float.md) inclusive |
 
 ### getWidth
 
@@ -476,7 +476,7 @@ Gets video width.
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the video width, or -1 if unknown. Value is between -1 and [java.lang.Integer#MAX_VALUE](../java/lang/Integer.md) inclusive |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the video width, or -1 if unknown. Value is between -1 and [java.lang.Integer#MAX_VALUE](../java.lang/Integer.md) inclusive |
 
 ### hashCode
 
@@ -517,8 +517,8 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](../android/os/Parcel.md):This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android.os/Parcel.md):This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

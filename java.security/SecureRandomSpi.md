@@ -10,9 +10,9 @@ abstract class SecureRandomSpi : Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.SecureRandomSpi](../java/security/SecureRandomSpi.md) |
+| ↳ | [java.security.SecureRandomSpi](SecureRandomSpi.md) |
 
-This class defines the*Service Provider Interface* (**SPI** ) for the [SecureRandom](../java/security/SecureRandom.md) class.
+This class defines the*Service Provider Interface* (**SPI** ) for the [SecureRandom](SecureRandom.md) class.
 
 All the abstract methods in this class must be implemented by each service provider who wishes to supply the implementation of a cryptographically strong pseudo-random number generator.
 
@@ -20,25 +20,25 @@ All the abstract methods in this class must be implemented by each service provi
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SecureRandomSpi](../java/security/SecureRandomSpi.md))`()` Constructor without a parameter. |
+| [SecureRandomSpi](SecureRandomSpi.md))`()` Constructor without a parameter. |
 
 | Protected constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SecureRandomSpi](../java/security/SecureRandomSpi.md))`(`params:` ` [SecureRandomParameters](../java/security/SecureRandomParameters.md)!`)` Constructor with a parameter. |
+| [SecureRandomSpi](SecureRandomSpi.md))`(`params:` ` [SecureRandomParameters](SecureRandomParameters.md)!`)` Constructor with a parameter. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/security/SecureRandomSpi.md))`()` Returns a Human-readable string representation of this`SecureRandom`. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](SecureRandomSpi.md))`()` Returns a Human-readable string representation of this`SecureRandom`. |
 
 | Protected methods ||
 |--------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [engineGenerateSeed](../java/security/SecureRandomSpi.md))`(`numBytes:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the given number of seed bytes. |
-| open [SecureRandomParameters](../java/security/SecureRandomParameters.md)! | [engineGetParameters](../java/security/SecureRandomSpi.md))`()` Returns the effective [SecureRandomParameters](../java/security/SecureRandomParameters.md) for this`SecureRandom`instance. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineNextBytes](../java/security/SecureRandomSpi.md))`(`bytes:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Generates a user-specified number of random bytes. |
+| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [engineGenerateSeed](SecureRandomSpi.md))`(`numBytes:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the given number of seed bytes. |
+| open [SecureRandomParameters](SecureRandomParameters.md)! | [engineGetParameters](SecureRandomSpi.md))`()` Returns the effective [SecureRandomParameters](SecureRandomParameters.md) for this`SecureRandom`instance. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineNextBytes](SecureRandomSpi.md))`(`bytes:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Generates a user-specified number of random bytes. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineNextBytes](../java/security/SecureRandomSpi.md))`(`bytes:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `params:` ` [SecureRandomParameters](../java/security/SecureRandomParameters.md)!`)` Generates a user-specified number of random bytes with additional parameters. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineReseed](../java/security/SecureRandomSpi.md))`(`params:` ` [SecureRandomParameters](../java/security/SecureRandomParameters.md)!`)` Reseeds this random object with entropy input read from its entropy source with additional parameters. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineSetSeed](../java/security/SecureRandomSpi.md))`(`seed:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Reseeds this random object with the given seed. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineNextBytes](SecureRandomSpi.md))`(`bytes:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `params:` ` [SecureRandomParameters](SecureRandomParameters.md)!`)` Generates a user-specified number of random bytes with additional parameters. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineReseed](SecureRandomSpi.md))`(`params:` ` [SecureRandomParameters](SecureRandomParameters.md)!`)` Reseeds this random object with entropy input read from its entropy source with additional parameters. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineSetSeed](SecureRandomSpi.md))`(`seed:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Reseeds this random object with the given seed. |
 | --- | --- |
 
 ## Public constructors
@@ -67,7 +67,7 @@ Constructor with a parameter.
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `params` | [SecureRandomParameters](../java/security/SecureRandomParameters.md)!:the [SecureRandomParameters](../java/security/SecureRandomParameters.md) object. This argument can be`null`. |
+| `params` | [SecureRandomParameters](SecureRandomParameters.md)!:the [SecureRandomParameters](SecureRandomParameters.md) object. This argument can be`null`. |
 
 | Exceptions ||
 |--------------------------------------|------------------------------------------------------------------|
@@ -117,11 +117,11 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 protected open fun engineGetParameters(): SecureRandomParameters!
 ```
 
-Returns the effective [SecureRandomParameters](../java/security/SecureRandomParameters.md) for this`SecureRandom`instance.
+Returns the effective [SecureRandomParameters](SecureRandomParameters.md) for this`SecureRandom`instance.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [SecureRandomParameters](../java/security/SecureRandomParameters.md)! | the effective [SecureRandomParameters](../java/security/SecureRandomParameters.md) parameters, or`null`if no parameters were used. |
+| [SecureRandomParameters](SecureRandomParameters.md)! | the effective [SecureRandomParameters](SecureRandomParameters.md) parameters, or`null`if no parameters were used. |
 
 ### engineNextBytes
 
@@ -157,7 +157,7 @@ Some random number generators can only generate a limited amount of random bytes
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------------------------------|
 | `bytes` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the array to be filled in with random bytes |
-| `params` | [SecureRandomParameters](../java/security/SecureRandomParameters.md)!:additional parameters |
+| `params` | [SecureRandomParameters](SecureRandomParameters.md)!:additional parameters |
 
 | Exceptions ||
 |-------------------------------------------|------------------------------------------------------------------|
@@ -174,13 +174,13 @@ protected open fun engineReseed(params: SecureRandomParameters!): Unit
 
 Reseeds this random object with entropy input read from its entropy source with additional parameters.
 
-If this method is called by [SecureRandom.reseed()](../java/security/SecureRandom.md)),`params`will be`null`.
+If this method is called by [SecureRandom.reseed()](SecureRandom.md)),`params`will be`null`.
 
 Do not override this method if the implementation does not support reseeding.
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| `params` | [SecureRandomParameters](../java/security/SecureRandomParameters.md)!:extra parameters, can be`null`. |
+| `params` | [SecureRandomParameters](SecureRandomParameters.md)!:extra parameters, can be`null`. |
 
 | Exceptions ||
 |-------------------------------------------|-----------------------------------------------------------|

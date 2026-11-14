@@ -8,11 +8,11 @@ open class DreamService : Service, Window.Callback
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](../android/content/Context.md) ||||
-| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) |||
-| | | ↳ | [android.app.Service](../android/app/Service.md) ||
+| ↳ | [android.content.Context](../android.content/Context.md) ||||
+| | ↳ | [android.content.ContextWrapper](../android.content/ContextWrapper.md) |||
+| | | ↳ | [android.app.Service](../android.app/Service.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.service.dreams.DreamService](../android/service/dreams/DreamService.md) |
+| | | | ↳ | [android.service.dreams.DreamService](DreamService.md) |
 
 Extend this class to implement a custom dream (available to the user as a "Daydream").
 
@@ -1136,8 +1136,8 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | open T | `https://developer.android.com/reference/kotlin/android/service/dreams/DreamService#findViewById(kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Finds a view that was identified by the id attribute from the XML that was processed in `https://developer.android.com/reference/kotlin/android/service/dreams/DreamService#onCreate()`. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/dreams/DreamService#finish()()` Stops the dream and detaches from the window. |
 | --- | --- |
-| open [Window](../android/view/Window.md)! | `https://developer.android.com/reference/kotlin/android/service/dreams/DreamService#getWindow()()` Retrieves the current `https://developer.android.com/reference/kotlin/android/view/Window.html#` for the dream. |
-| open [WindowManager](../android/view/WindowManager.md)! | `https://developer.android.com/reference/kotlin/android/service/dreams/DreamService#getWindowManager()()` Retrieves the current `https://developer.android.com/reference/kotlin/android/view/WindowManager.html#` for the dream. |
+| open [Window](../android.view/Window.md)! | `https://developer.android.com/reference/kotlin/android/service/dreams/DreamService#getWindow()()` Retrieves the current `https://developer.android.com/reference/kotlin/android/view/Window.html#` for the dream. |
+| open [WindowManager](../android.view/WindowManager.md)! | `https://developer.android.com/reference/kotlin/android/service/dreams/DreamService#getWindowManager()()` Retrieves the current `https://developer.android.com/reference/kotlin/android/view/WindowManager.html#` for the dream. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/service/dreams/DreamService#isFullscreen()()` Returns whether this dream is in fullscreen mode. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/service/dreams/DreamService#isInteractive()()` Returns whether this dream is interactive. |
@@ -1146,13 +1146,13 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/dreams/DreamService#onActionModeStarted(android.view.ActionMode)(mode: https://developer.android.com/reference/kotlin/android/view/ActionMode.html#!)` Called when an action mode has been started. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/dreams/DreamService#onAttachedToWindow()()` Called when the window has been attached to the window manager. |
-| [IBinder](../android/os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/service/dreams/DreamService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
+| [IBinder](../android.os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/service/dreams/DreamService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/dreams/DreamService#onContentChanged()()` This hook is called whenever the content view of the screen changes (due to a call to `https://developer.android.com/reference/kotlin/android/view/Window.html#setContentView(android.view.View,%20android.view.ViewGroup.LayoutParams)` or `https://developer.android.com/reference/kotlin/android/view/Window.html#addContentView(android.view.View,%20android.view.ViewGroup.LayoutParams)`). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/dreams/DreamService#onCreate()()` Called when this Dream is constructed. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/service/dreams/DreamService#onCreatePanelMenu(kotlin.Int,%20android.view.Menu)(featureId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, menu: https://developer.android.com/reference/kotlin/android/view/Menu.html#)` Initialize the contents of the menu for panel 'featureId'. |
 | --- | --- |
-| open [View](../android/view/View.md)? | `https://developer.android.com/reference/kotlin/android/service/dreams/DreamService#onCreatePanelView(kotlin.Int)(featureId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Instantiate the view to display in the panel for 'featureId'. |
+| open [View](../android.view/View.md)? | `https://developer.android.com/reference/kotlin/android/service/dreams/DreamService#onCreatePanelView(kotlin.Int)(featureId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Instantiate the view to display in the panel for 'featureId'. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/dreams/DreamService#onDestroy()()` Called by the system to notify a Service that it is no longer used and is being removed. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/dreams/DreamService#onDetachedFromWindow()()` Called when the window has been detached from the window manager. |
 | --- | --- |
@@ -1172,8 +1172,8 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/dreams/DreamService#onWindowAttributesChanged(android.view.WindowManager.LayoutParams)(attrs: https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#!)` This is called whenever the current window attributes change. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/dreams/DreamService#onWindowFocusChanged(kotlin.Boolean)(hasFocus: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` This hook is called whenever the window focus changes. |
 | --- | --- |
-| open [ActionMode](../android/view/ActionMode.md)? | `https://developer.android.com/reference/kotlin/android/service/dreams/DreamService#onWindowStartingActionMode(android.view.ActionMode.Callback)(callback: https://developer.android.com/reference/kotlin/android/view/ActionMode.Callback.html#!)` Called when an action mode is being started for this window. |
-| open [ActionMode](../android/view/ActionMode.md)? | `https://developer.android.com/reference/kotlin/android/service/dreams/DreamService#onWindowStartingActionMode(android.view.ActionMode.Callback,%20kotlin.Int)(callback: https://developer.android.com/reference/kotlin/android/view/ActionMode.Callback.html#!, type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called when an action mode is being started for this window. |
+| open [ActionMode](../android.view/ActionMode.md)? | `https://developer.android.com/reference/kotlin/android/service/dreams/DreamService#onWindowStartingActionMode(android.view.ActionMode.Callback)(callback: https://developer.android.com/reference/kotlin/android/view/ActionMode.Callback.html#!)` Called when an action mode is being started for this window. |
+| open [ActionMode](../android.view/ActionMode.md)? | `https://developer.android.com/reference/kotlin/android/service/dreams/DreamService#onWindowStartingActionMode(android.view.ActionMode.Callback,%20kotlin.Int)(callback: https://developer.android.com/reference/kotlin/android/view/ActionMode.Callback.html#!, type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called when an action mode is being started for this window. |
 | T | `https://developer.android.com/reference/kotlin/android/service/dreams/DreamService#requireViewById(kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Finds a view that was identified by the id attribute from the XML that was processed in `https://developer.android.com/reference/kotlin/android/service/dreams/DreamService#onCreate()`, or throws an IllegalArgumentException if the ID is invalid or there is no matching view in the hierarchy. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/dreams/DreamService#setContentView(android.view.View)(view: https://developer.android.com/reference/kotlin/android/view/View.html#!)` Sets a view to be the content view for this Dream. |
@@ -2924,7 +2924,7 @@ Note: Requires a window, do not call before `https://developer.android.com/refer
 
 | Parameters ||
 |---|---|
-| `view` | [View](../android/view/View.md)!: The desired content to display. |
+| `view` | [View](../android.view/View.md)!: The desired content to display. |
 | `params` | [ViewGroup.LayoutParams](../android/view/ViewGroup.LayoutParams.md)!: Layout parameters for the view. |
 
 ### dispatchGenericMotionEvent
@@ -2939,7 +2939,7 @@ Called to process generic motion events. At the very least your implementation m
 
 | Parameters ||
 |---|---|
-| `event` | [MotionEvent](../android/view/MotionEvent.md)!: The generic motion event. |
+| `event` | [MotionEvent](../android.view/MotionEvent.md)!: The generic motion event. |
 
 | Return ||
 |---|---|
@@ -2957,7 +2957,7 @@ Called to process key events. At the very least your implementation must call `h
 
 | Parameters ||
 |---|---|
-| `event` | [KeyEvent](../android/view/KeyEvent.md)!: The key event. |
+| `event` | [KeyEvent](../android.view/KeyEvent.md)!: The key event. |
 
 | Return ||
 |---|---|
@@ -2975,7 +2975,7 @@ Called to process a key shortcut event. At the very least your implementation mu
 
 | Parameters ||
 |---|---|
-| `event` | [KeyEvent](../android/view/KeyEvent.md)!: The key shortcut event. |
+| `event` | [KeyEvent](../android.view/KeyEvent.md)!: The key shortcut event. |
 
 | Return ||
 |---|---|
@@ -2993,7 +2993,7 @@ Called to process population of `https://developer.android.com/reference/kotlin/
 
 | Parameters ||
 |---|---|
-| `event` | [AccessibilityEvent](../android/view/accessibility/AccessibilityEvent.md)!: The event. |
+| `event` | [AccessibilityEvent](../android.view.accessibility/AccessibilityEvent.md)!: The event. |
 
 | Return ||
 |---|---|
@@ -3011,7 +3011,7 @@ Called to process touch screen events. At the very least your implementation mus
 
 | Parameters ||
 |---|---|
-| `event` | [MotionEvent](../android/view/MotionEvent.md)!: The touch screen event. |
+| `event` | [MotionEvent](../android.view/MotionEvent.md)!: The touch screen event. |
 
 | Return ||
 |---|---|
@@ -3029,7 +3029,7 @@ Called to process trackball events. At the very least your implementation must c
 
 | Parameters ||
 |---|---|
-| `event` | [MotionEvent](../android/view/MotionEvent.md)!: The trackball event. |
+| `event` | [MotionEvent](../android.view/MotionEvent.md)!: The trackball event. |
 
 | Return ||
 |---|---|
@@ -3153,7 +3153,7 @@ Called when an action mode has been finished. The appropriate mode callback meth
 
 | Parameters ||
 |---|---|
-| `mode` | [ActionMode](../android/view/ActionMode.md)!: The mode that was just finished. |
+| `mode` | [ActionMode](../android.view/ActionMode.md)!: The mode that was just finished. |
 
 ### onActionModeStarted
 
@@ -3167,7 +3167,7 @@ Called when an action mode has been started. The appropriate mode callback metho
 
 | Parameters ||
 |---|---|
-| `mode` | [ActionMode](../android/view/ActionMode.md)!: The new mode that has just been started. |
+| `mode` | [ActionMode](../android.view/ActionMode.md)!: The new mode that has just been started. |
 
 ### onAttachedToWindow
 
@@ -3193,7 +3193,7 @@ Return the communication channel to the service. May return null if clients can 
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
+| `intent` | [Intent](../android.content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
 
 | Return ||
 |---|---|
@@ -3237,7 +3237,7 @@ You can safely hold on to menu (and any items created from it), making modificat
 | Parameters ||
 |---|---|
 | `featureId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The panel being created. |
-| `menu` | [Menu](../android/view/Menu.md): The menu inside the panel. This value cannot be `null`. |
+| `menu` | [Menu](../android.view/Menu.md): The menu inside the panel. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -3317,7 +3317,7 @@ Called when a panel's menu item has been selected by the user.
 | Parameters ||
 |---|---|
 | `featureId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The panel that the menu is in. |
-| `item` | [MenuItem](../android/view/MenuItem.md): The menu item that was selected. This value cannot be `null`. |
+| `item` | [MenuItem](../android.view/MenuItem.md): The menu item that was selected. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -3339,7 +3339,7 @@ Called when a panel's menu is opened by the user. This may also be called when t
 | Parameters ||
 |---|---|
 | `featureId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The panel that the menu is in. |
-| `menu` | [Menu](../android/view/Menu.md): The menu that is opened. This value cannot be `null`. |
+| `menu` | [Menu](../android.view/Menu.md): The menu that is opened. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -3361,7 +3361,7 @@ Called when a panel is being closed. If another logical subsequent panel is bein
 | Parameters ||
 |---|---|
 | `featureId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The panel that is being displayed. |
-| `menu` | [Menu](../android/view/Menu.md): If onCreatePanelView() returned null, this is the Menu being displayed in the panel. |
+| `menu` | [Menu](../android.view/Menu.md): If onCreatePanelView() returned null, this is the Menu being displayed in the panel. |
 
 ### onPreparePanel
 
@@ -3380,8 +3380,8 @@ Prepare a panel to be displayed. This is called right before the panel window is
 | Parameters ||
 |---|---|
 | `featureId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The panel that is being displayed. |
-| `view` | [View](../android/view/View.md)?: The View that was returned by onCreatePanelView(). This value may be `null`. |
-| `menu` | [Menu](../android/view/Menu.md): If onCreatePanelView() returned null, this is the Menu being displayed in the panel. |
+| `view` | [View](../android.view/View.md)?: The View that was returned by onCreatePanelView(). This value may be `null`. |
+| `menu` | [Menu](../android.view/Menu.md): If onCreatePanelView() returned null, this is the Menu being displayed in the panel. |
 | --- | --- |
 
 | Return ||
@@ -3432,7 +3432,7 @@ Called when all clients have disconnected from a particular interface published 
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
+| `intent` | [Intent](../android.content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
 
 | Return ||
 |---|---|
@@ -3576,7 +3576,7 @@ Note: This requires a window, so you should usually call it during `https://deve
 
 | Parameters ||
 |---|---|
-| `view` | [View](../android/view/View.md)!: The desired content to display. |
+| `view` | [View](../android.view/View.md)!: The desired content to display. |
 | `params` | [ViewGroup.LayoutParams](../android/view/ViewGroup.LayoutParams.md)!: Layout parameters for the view. |
 
 **See Also**
@@ -3681,7 +3681,7 @@ Print the Service's state into the given stream. This gets invoked if you run "a
 
 | Parameters ||
 |---|---|
-| `fd` | [FileDescriptor](../java/io/FileDescriptor.md)!: The raw file descriptor that the dump is being sent to. |
+| `fd` | [FileDescriptor](../java.io/FileDescriptor.md)!: The raw file descriptor that the dump is being sent to. |
 | `writer` | The PrintWriter to which you should dump your state. This will be closed for you after you return. |
 | `args` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!: additional arguments to the dump request. |
 | --- | --- |

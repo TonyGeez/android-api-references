@@ -2,7 +2,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # AdBuffer
 
-Kotlin | [Java](../android/media/tv/AdBuffer.md)
+Kotlin | [Java](AdBuffer.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class AdBuffer : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.tv.AdBuffer](../android/media/tv/AdBuffer.md) |
+| ↳ | [android.media.tv.AdBuffer](AdBuffer.md) |
 
 Buffer for advertisement data.
 
@@ -36,13 +36,13 @@ Buffer for advertisement data.
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/AdBuffer#getOffset()()` Gets the offset into the shared memory to begin mapping. |
 | --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/AdBuffer#getPresentationTimeUs()()` Gets the presentation time. |
-| [SharedMemory](../android/os/SharedMemory.md) | `https://developer.android.com/reference/kotlin/android/media/tv/AdBuffer#getSharedMemory()()` Gets the `https://developer.android.com/reference/kotlin/android/os/SharedMemory.html#` which stores the data. |
+| [SharedMemory](../android.os/SharedMemory.md) | `https://developer.android.com/reference/kotlin/android/media/tv/AdBuffer#getSharedMemory()()` Gets the `https://developer.android.com/reference/kotlin/android/os/SharedMemory.html#` which stores the data. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/AdBuffer#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 | --- | --- |
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [AdBuffer](../android/media/tv/AdBuffer.md)!\> | `https://developer.android.com/reference/kotlin/android/media/tv/AdBuffer#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [AdBuffer](AdBuffer.md)!\> | `https://developer.android.com/reference/kotlin/android/media/tv/AdBuffer#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public constructors
 
@@ -64,7 +64,7 @@ AdBuffer(
 | Parameters ||
 |---|---|
 | `mimeType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): This value cannot be `null`. |
-| `buffer` | [SharedMemory](../android/os/SharedMemory.md): This value cannot be `null`. |
+| `buffer` | [SharedMemory](../android.os/SharedMemory.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/media/MediaCodec.html#BUFFER_FLAG_SYNC_FRAME:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/MediaCodec.html#BUFFER_FLAG_KEY_FRAME:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/MediaCodec.html#BUFFER_FLAG_CODEC_CONFIG:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/MediaCodec.html#BUFFER_FLAG_END_OF_STREAM:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/MediaCodec.html#BUFFER_FLAG_PARTIAL_FRAME:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/MediaCodec.html#BUFFER_FLAG_DECODE_ONLY:kotlin.Int` |
 | --- | --- |
 
@@ -213,7 +213,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

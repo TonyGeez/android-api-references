@@ -11,11 +11,11 @@ open class ShutdownChannelGroupException : IllegalStateException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
-| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) |||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) ||||
+| | | ↳ | [java.lang.RuntimeException](../java.lang/RuntimeException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.IllegalStateException](../java/lang/IllegalStateException.md) ||
-| | | | | ↳ | [java.nio.channels.ShutdownChannelGroupException](../java/nio/channels/ShutdownChannelGroupException.md) |
+| | | | ↳ | [java.lang.IllegalStateException](../java.lang/IllegalStateException.md) ||
+| | | | | ↳ | [java.nio.channels.ShutdownChannelGroupException](ShutdownChannelGroupException.md) |
 
 Unchecked exception thrown when an attempt is made to construct a channel in a group that is shutdown or the completion handler for an I/O operation cannot be invoked because the channel group has terminated.
 
@@ -23,7 +23,7 @@ Unchecked exception thrown when an attempt is made to construct a channel in a g
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ShutdownChannelGroupException](../java/nio/channels/ShutdownChannelGroupException.md))`()` Constructs an instance of this class. |
+| [ShutdownChannelGroupException](ShutdownChannelGroupException.md))`()` Constructs an instance of this class. |
 
 ## Public constructors
 

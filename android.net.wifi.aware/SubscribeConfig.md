@@ -8,7 +8,7 @@ class SubscribeConfig : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.wifi.aware.SubscribeConfig](../android/net/wifi/aware/SubscribeConfig.md) |
+| ↳ | [android.net.wifi.aware.SubscribeConfig](SubscribeConfig.md) |
 
 Defines the configuration of an Aware subscribe session. Built using `https://developer.android.com/reference/kotlin/android/net/wifi/aware/SubscribeConfig.Builder`. Subscribe is done using `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareSession#subscribe(android.net.wifi.aware.SubscribeConfig,%20android.net.wifi.aware.DiscoverySessionCallback,%20android.os.Handler)` or `https://developer.android.com/reference/kotlin/android/net/wifi/aware/SubscribeDiscoverySession#updateSubscribe(android.net.wifi.aware.SubscribeConfig)`.
 
@@ -43,7 +43,7 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/SubscribeConfig#getIngressDistanceMm()()` Get the ingress distance in mm. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/SubscribeConfig#getInstantCommunicationBand()()` Check if enable instant mode on 5G for this subscribe session |
-| [AwarePairingConfig](../android/net/wifi/aware/AwarePairingConfig.md)? | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/SubscribeConfig#getPairingConfig()()` Get the Aware Pairing config for this subscribe session |
+| [AwarePairingConfig](AwarePairingConfig.md)? | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/SubscribeConfig#getPairingConfig()()` Get the Aware Pairing config for this subscribe session |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/SubscribeConfig#hashCode()()` Returns a hash code value for the object. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/SubscribeConfig#isFrameworkOffloadedPairingEnabled()()` Get whether framework offloaded pairing is enabled for this subscribe config. |
@@ -54,7 +54,7 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [SubscribeConfig](../android/net/wifi/aware/SubscribeConfig.md)!\> | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/SubscribeConfig#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [SubscribeConfig](SubscribeConfig.md)!\> | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/SubscribeConfig#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -283,7 +283,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

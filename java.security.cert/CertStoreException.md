@@ -11,14 +11,14 @@ open class CertStoreException : GeneralSecurityException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
-| | | ↳ | [java.security.GeneralSecurityException](../java/security/GeneralSecurityException.md) ||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) |||
+| | | ↳ | [java.security.GeneralSecurityException](../java.security/GeneralSecurityException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.security.cert.CertStoreException](../java/security/cert/CertStoreException.md) |
+| | | | ↳ | [java.security.cert.CertStoreException](CertStoreException.md) |
 
 An exception indicating one of a variety of problems retrieving certificates and CRLs from a`CertStore`.
 
-A`CertStoreException`provides support for wrapping exceptions. The [getCause](../java/lang/Throwable.md))method returns the throwable, if any, that caused this exception to be thrown.
+A`CertStoreException`provides support for wrapping exceptions. The [getCause](../java.lang/Throwable.md))method returns the throwable, if any, that caused this exception to be thrown.
 
 **Concurrent Access**
 
@@ -28,10 +28,10 @@ Unless otherwise specified, the methods defined in this class are not thread-saf
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [CertStoreException](../java/security/cert/CertStoreException.md))`()` Creates a`CertStoreException`with`null`as its detail message. |
-| [CertStoreException](../java/security/cert/CertStoreException.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a`CertStoreException`with the given detail message. |
-| [CertStoreException](../java/security/cert/CertStoreException.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Creates a`CertStoreException`with the specified detail message and cause. |
-| [CertStoreException](../java/security/cert/CertStoreException.md))`(`cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Creates a`CertStoreException`that wraps the specified throwable. |
+| [CertStoreException](CertStoreException.md))`()` Creates a`CertStoreException`with`null`as its detail message. |
+| [CertStoreException](CertStoreException.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a`CertStoreException`with the given detail message. |
+| [CertStoreException](CertStoreException.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Creates a`CertStoreException`with the specified detail message and cause. |
+| [CertStoreException](CertStoreException.md))`(`cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Creates a`CertStoreException`that wraps the specified throwable. |
 
 ## Public constructors
 
@@ -74,7 +74,7 @@ Creates a`CertStoreException`with the specified detail message and cause.
 | Parameters ||
 |---------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `msg` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the detail message |
-| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!:the cause (which is saved for later retrieval by the [getCause()](../java/lang/Throwable.md))method). (A`null`value is permitted, and indicates that the cause is nonexistent or unknown.) |
+| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!:the cause (which is saved for later retrieval by the [getCause()](../java.lang/Throwable.md))method). (A`null`value is permitted, and indicates that the cause is nonexistent or unknown.) |
 
 ### CertStoreException
 
@@ -88,4 +88,4 @@ Creates a`CertStoreException`that wraps the specified throwable. This allows any
 
 | Parameters ||
 |---------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!:the cause (which is saved for later retrieval by the [getCause()](../java/lang/Throwable.md))method). (A`null`value is permitted, and indicates that the cause is nonexistent or unknown.) |
+| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!:the cause (which is saved for later retrieval by the [getCause()](../java.lang/Throwable.md))method). (A`null`value is permitted, and indicates that the cause is nonexistent or unknown.) |

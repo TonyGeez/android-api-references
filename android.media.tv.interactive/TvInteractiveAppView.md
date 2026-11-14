@@ -8,9 +8,9 @@ open class TvInteractiveAppView : ViewGroup
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.view.View](../android/view/View.md) |||
-| | ↳ | [android.view.ViewGroup](../android/view/ViewGroup.md) ||
-| | | ↳ | [android.media.tv.interactive.TvInteractiveAppView](../android/media/tv/interactive/TvInteractiveAppView.md) |
+| ↳ | [android.view.View](../android.view/View.md) |||
+| | ↳ | [android.view.ViewGroup](../android.view/ViewGroup.md) ||
+| | | ↳ | [android.media.tv.interactive.TvInteractiveAppView](TvInteractiveAppView.md) |
 | --- | --- | --- | --- |
 
 Displays contents of interactive TV applications.
@@ -644,7 +644,7 @@ Hint indicating that this view can be autofilled with a credit card expiration d
 
 It should be used when the credit card expiration date is represented by just one view; if it is represented by more than one (for example, one view for the month and another view for the year), then each of these views should use the hint specific for the unit (`https://developer.android.com/reference/kotlin/android/view/View.html#AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DAY:kotlin.String`, `https://developer.android.com/reference/kotlin/android/view/View.html#AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_MONTH:kotlin.String`, or `https://developer.android.com/reference/kotlin/android/view/View.html#AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_YEAR:kotlin.String`).
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DATE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DATE}`).
 
 When annotating a view with this hint, it's recommended to use a date autofill value to avoid ambiguity when the autofill service provides a value for it. To understand why a value can be ambiguous, consider "April of 2020", which could be represented as either of the following options:
 
@@ -669,7 +669,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card expiration day.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DAY}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DAY}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -679,7 +679,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card expiration month.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_MONTH}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_MONTH}`).
 
 When annotating a view with this hint, it's recommended to use a text autofill value whose value is the numerical representation of the month, starting on `1` to avoid ambiguity when the autofill service provides a value for it. To understand why a value can be ambiguous, consider "January", which could be represented as either of
 
@@ -699,7 +699,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card expiration year.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_YEAR}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_YEAR}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -709,7 +709,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card number.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_NUMBER}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_NUMBER}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -719,7 +719,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card security code.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_SECURITY_CODE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_SECURITY_CODE}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -729,7 +729,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with an email address.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_EMAIL_ADDRESS}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_EMAIL_ADDRESS}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -739,7 +739,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a user's real name.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_NAME}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_NAME}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -749,7 +749,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a password.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_PASSWORD}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_PASSWORD}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -759,7 +759,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a phone number.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_PHONE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_PHONE}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -769,7 +769,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a postal address.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_ADDRESS}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_ADDRESS}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -779,7 +779,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a postal code.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_CODE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_CODE}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -789,7 +789,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a username.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_USERNAME}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_USERNAME}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -959,7 +959,7 @@ Find views that render the specified text.
 
 This view wants keystrokes.
 
-Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android/view/View.md)
+Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android.view/View.md)
 
 <br />
 
@@ -979,7 +979,7 @@ View flag indicating whether `https://developer.android.com/reference/kotlin/and
 
 This view determines focusability automatically. This is the default.
 
-Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android/view/View.md)
+Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android.view/View.md)
 
 <br />
 
@@ -1021,7 +1021,7 @@ Use with `https://developer.android.com/reference/kotlin/android/view/View.html#
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/view/View.html#GONE:kotlin.Int`
 
-This view is invisible, and it doesn't take any space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android/view/View.md)
+This view is invisible, and it doesn't take any space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android.view/View.md)
 
 <br />
 
@@ -1117,7 +1117,7 @@ The view is important for content capture, but its children (if any) will not be
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/view/View.html#INVISIBLE:kotlin.Int`
 
-This view is invisible, but it still takes up space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android/view/View.md)
+This view is invisible, but it still takes up space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android.view/View.md)
 
 <br />
 
@@ -1211,7 +1211,7 @@ Bit of `https://developer.android.com/reference/kotlin/android/view/View.html#ge
 
 This view does not want keystrokes.
 
-Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android/view/View.md)
+Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android.view/View.md)
 
 <br />
 
@@ -1668,7 +1668,7 @@ The logging tag used by this class with android.util.Log.
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/view/View.html#VISIBLE:kotlin.Int`
 
-This view is visible. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android/view/View.md)
+This view is visible. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android.view/View.md)
 
 <br />
 
@@ -7540,7 +7540,7 @@ Sets the amount that the view is scaled in Y around the pivot point, as a propor
 
 Sets whether this View should be a focusable element for screen readers and include non-focusable Views from its subtree when providing feedback.
 
-Note: this is similar to using [`android:focusable`, but does not impact input focus behavior.](../android/view/View.md)
+Note: this is similar to using [`android:focusable`, but does not impact input focus behavior.](../android.view/View.md)
 
 <br />
 
@@ -8361,7 +8361,7 @@ TvInteractiveAppView(context: Context)
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md): This value cannot be `null`. |
+| `context` | [Context](../android.content/Context.md): This value cannot be `null`. |
 
 ### TvInteractiveAppView
 
@@ -8375,8 +8375,8 @@ TvInteractiveAppView(
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md): This value cannot be `null`. |
-| `attrs` | [AttributeSet](../android/util/AttributeSet.md)?: This value may be `null`. |
+| `context` | [Context](../android.content/Context.md): This value cannot be `null`. |
+| `attrs` | [AttributeSet](../android.util/AttributeSet.md)?: This value may be `null`. |
 
 ### TvInteractiveAppView
 
@@ -8391,8 +8391,8 @@ TvInteractiveAppView(
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md): This value cannot be `null`. |
-| `attrs` | [AttributeSet](../android/util/AttributeSet.md)?: This value may be `null`. |
+| `context` | [Context](../android.content/Context.md): This value cannot be `null`. |
+| `attrs` | [AttributeSet](../android.util/AttributeSet.md)?: This value may be `null`. |
 
 ## Public methods
 
@@ -8436,8 +8436,8 @@ Creates broadcast-independent(BI) interactive application.
 
 | Parameters ||
 |---|---|
-| `biIAppUri` | [Uri](../android/net/Uri.md): URI associated this BI interactive app. This value cannot be `null`. |
-| `params` | [Bundle](../android/os/Bundle.md)?: optional parameters for broadcast-independent interactive application, such as `https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppView#BI_INTERACTIVE_APP_KEY_CERTIFICATE:kotlin.String`. This value may be `null`. |
+| `biIAppUri` | [Uri](../android.net/Uri.md): URI associated this BI interactive app. This value cannot be `null`. |
+| `params` | [Bundle](../android.os/Bundle.md)?: optional parameters for broadcast-independent interactive application, such as `https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppView#BI_INTERACTIVE_APP_KEY_CERTIFICATE:kotlin.String`. This value may be `null`. |
 
 **See Also**
 
@@ -8476,7 +8476,7 @@ Dispatch a key event to the next view on the focus path. This path runs from the
 
 | Parameters ||
 |---|---|
-| `event` | [KeyEvent](../android/view/KeyEvent.md): This value cannot be `null`. |
+| `event` | [KeyEvent](../android.view/KeyEvent.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -8494,7 +8494,7 @@ Dispatches an unhandled input event to the next receiver. It gives the host appl
 
 | Parameters ||
 |---|---|
-| `event` | [InputEvent](../android/view/InputEvent.md): The input event. This value cannot be `null`. |
+| `event` | [InputEvent](../android.view/InputEvent.md): The input event. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -8532,7 +8532,7 @@ Notifies the corresponding `https://developer.android.com/reference/kotlin/andro
 | Parameters ||
 |---|---|
 | `errMsg` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): the message of the error. This value cannot be `null`. |
-| `params` | [Bundle](../android/os/Bundle.md): additional parameters of the error. For example, the signingId of `https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppView.TvInteractiveAppCallback#onRequestSigning(kotlin.String,%20kotlin.String,%20kotlin.String,%20kotlin.String,%20kotlin.ByteArray)` can be included to identify the related signing request, and the method name "onRequestSigning" can also be added to the params. This value cannot be `null`. |
+| `params` | [Bundle](../android.os/Bundle.md): additional parameters of the error. For example, the signingId of `https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppView.TvInteractiveAppCallback#onRequestSigning(kotlin.String,%20kotlin.String,%20kotlin.String,%20kotlin.String,%20kotlin.ByteArray)` can be included to identify the related signing request, and the method name "onRequestSigning" can also be added to the params. This value cannot be `null`. |
 
 **See Also**
 
@@ -8630,7 +8630,7 @@ Notifies the corresponding `https://developer.android.com/reference/kotlin/andro
 
 | Parameters ||
 |---|---|
-| `params` | [PlaybackParams](../android/media/PlaybackParams.md): The new `https://developer.android.com/reference/kotlin/android/media/PlaybackParams.html#` that was set or changed. This value cannot be `null`. |
+| `params` | [PlaybackParams](../android.media/PlaybackParams.md): The new `https://developer.android.com/reference/kotlin/android/media/PlaybackParams.html#` that was set or changed. This value cannot be `null`. |
 
 **See Also**
 
@@ -8697,7 +8697,7 @@ This is called to notify the corresponding interactive app service when a new TV
 | Parameters ||
 |---|---|
 | `type` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of message received, such as `https://developer.android.com/reference/kotlin/android/media/tv/TvInputManager.html#TV_MESSAGE_TYPE_WATERMARK:kotlin.Int` This value cannot be `null`. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/media/tv/TvInputManager.html#TV_MESSAGE_TYPE_WATERMARK:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/tv/TvInputManager.html#TV_MESSAGE_TYPE_CLOSED_CAPTION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/tv/TvInputManager.html#TV_MESSAGE_TYPE_OTHER:kotlin.Int` |
-| `data` | [Bundle](../android/os/Bundle.md): The raw data of the message. The bundle keys are: `https://developer.android.com/reference/kotlin/android/media/tv/TvInputManager.html#TV_MESSAGE_KEY_STREAM_ID:kotlin.String`, `https://developer.android.com/reference/kotlin/android/media/tv/TvInputManager.html#TV_MESSAGE_KEY_GROUP_ID:kotlin.String`, `https://developer.android.com/reference/kotlin/android/media/tv/TvInputManager.html#TV_MESSAGE_KEY_SUBTYPE:kotlin.String`, `https://developer.android.com/reference/kotlin/android/media/tv/TvInputManager.html#TV_MESSAGE_KEY_RAW_DATA:kotlin.String`. See `https://developer.android.com/reference/kotlin/android/media/tv/TvInputManager.html#TV_MESSAGE_KEY_SUBTYPE:kotlin.String` for more information on how to parse this data. This value cannot be `null`. |
+| `data` | [Bundle](../android.os/Bundle.md): The raw data of the message. The bundle keys are: `https://developer.android.com/reference/kotlin/android/media/tv/TvInputManager.html#TV_MESSAGE_KEY_STREAM_ID:kotlin.String`, `https://developer.android.com/reference/kotlin/android/media/tv/TvInputManager.html#TV_MESSAGE_KEY_GROUP_ID:kotlin.String`, `https://developer.android.com/reference/kotlin/android/media/tv/TvInputManager.html#TV_MESSAGE_KEY_SUBTYPE:kotlin.String`, `https://developer.android.com/reference/kotlin/android/media/tv/TvInputManager.html#TV_MESSAGE_KEY_RAW_DATA:kotlin.String`. See `https://developer.android.com/reference/kotlin/android/media/tv/TvInputManager.html#TV_MESSAGE_KEY_SUBTYPE:kotlin.String` for more information on how to parse this data. This value cannot be `null`. |
 
 ### notifyVideoFreezeUpdated
 
@@ -8796,7 +8796,7 @@ Called when an unhandled input event also has not been handled by the user provi
 
 | Parameters ||
 |---|---|
-| `event` | [InputEvent](../android/view/InputEvent.md): The input event. This value cannot be `null`. |
+| `event` | [InputEvent](../android.view/InputEvent.md): The input event. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -8817,7 +8817,7 @@ Called when the visibility of the view or an ancestor of the view has changed.
 
 | Parameters ||
 |---|---|
-| `changedView` | [View](../android/view/View.md): This value cannot be `null`. |
+| `changedView` | [View](../android.view/View.md): This value cannot be `null`. |
 | `visibility` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The new visibility, one of `https://developer.android.com/reference/kotlin/android/view/View.html#VISIBLE:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/View.html#INVISIBLE:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/view/View.html#GONE:kotlin.Int`. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/view/View.html#VISIBLE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View.html#INVISIBLE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/View.html#GONE:kotlin.Int` |
 
 ### prepareInteractiveApp
@@ -8902,7 +8902,7 @@ Sends the requested SSL certificate to the TV Interactive App
 |---|---|
 | `host` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): the host name of the SSL authentication server. This value cannot be `null`. |
 | `port` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the port of the SSL authentication server. E.g., 443 |
-| `cert` | [SslCertificate](../android/net/http/SslCertificate.md): the SSL certificate requested. This value cannot be `null`. |
+| `cert` | [SslCertificate](../android.net.http/SslCertificate.md): the SSL certificate requested. This value cannot be `null`. |
 | --- | --- |
 
 ### sendCurrentChannelLcn
@@ -8927,7 +8927,7 @@ Sends current channel URI to related TV interactive app.
 
 | Parameters ||
 |---|---|
-| `channelUri` | [Uri](../android/net/Uri.md)?: The current channel URI; `null` if there is no currently tuned channel. |
+| `channelUri` | [Uri](../android.net/Uri.md)?: The current channel URI; `null` if there is no currently tuned channel. |
 
 ### sendCurrentTvInputId
 
@@ -8959,7 +8959,7 @@ Sends current video bounds to related TV interactive app.
 
 | Parameters ||
 |---|---|
-| `bounds` | [Rect](../android/graphics/Rect.md): the rectangle area for rendering the current video. This value cannot be `null`. |
+| `bounds` | [Rect](../android.graphics/Rect.md): the rectangle area for rendering the current video. This value cannot be `null`. |
 
 ### sendSelectedTrackInfo
 
@@ -8973,7 +8973,7 @@ Sends the currently selected track info to the TV Interactive App in response to
 
 | Parameters ||
 |---|---|
-| `tracks` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [TvTrackInfo](../android/media/tv/TvTrackInfo.md)!\>?: list of `https://developer.android.com/reference/kotlin/android/media/tv/TvTrackInfo.html#` of the currently selected track(s). This value may be `null`. |
+| `tracks` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [TvTrackInfo](../android.media.tv/TvTrackInfo.md)!\>?: list of `https://developer.android.com/reference/kotlin/android/media/tv/TvTrackInfo.html#` of the currently selected track(s). This value may be `null`. |
 
 ### sendSigningResult
 
@@ -9035,7 +9035,7 @@ Sends track info list to related TV interactive app.
 
 | Parameters ||
 |---|---|
-| `tracks` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [TvTrackInfo](../android/media/tv/TvTrackInfo.md)!\>?: This value may be `null`. |
+| `tracks` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [TvTrackInfo](../android.media.tv/TvTrackInfo.md)!\>?: This value may be `null`. |
 
 ### sendTvRecordingInfo
 
@@ -9049,7 +9049,7 @@ Sends the requested `https://developer.android.com/reference/kotlin/android/medi
 
 | Parameters ||
 |---|---|
-| `recordingInfo` | [TvRecordingInfo](../android/media/tv/TvRecordingInfo.md)?: The recording info requested. `null` if no recording found. |
+| `recordingInfo` | [TvRecordingInfo](../android.media.tv/TvRecordingInfo.md)?: The recording info requested. `null` if no recording found. |
 
 **See Also**
 
@@ -9067,7 +9067,7 @@ Sends the requested `https://developer.android.com/reference/kotlin/android/medi
 
 | Parameters ||
 |---|---|
-| `recordingInfoList` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [TvRecordingInfo](../android/media/tv/TvRecordingInfo.md)!\>: The list of recording info requested. Returns an empty list if no matching recording info found. This value cannot be `null`. |
+| `recordingInfoList` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [TvRecordingInfo](../android.media.tv/TvRecordingInfo.md)!\>: The list of recording info requested. Returns an empty list if no matching recording info found. This value cannot be `null`. |
 
 **See Also**
 
@@ -9088,7 +9088,7 @@ Sets the callback to be invoked when an event is dispatched to this TvInteractiv
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [TvInteractiveAppView.TvInteractiveAppCallback](../android/media/tv/interactive/TvInteractiveAppView.TvInteractiveAppCallback.md): the callback to receive events. MUST NOT be `null`. |
 
 **See Also**
@@ -9110,7 +9110,7 @@ Sets a listener to be invoked when an input event is not handled by the TV Inter
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `listener` | [TvInteractiveAppView.OnUnhandledInputEventListener](../android/media/tv/interactive/TvInteractiveAppView.OnUnhandledInputEventListener.md): The callback to be invoked when the unhandled input event is received. This value cannot be `null`. |
 
 ### setTeletextAppEnabled
@@ -9141,7 +9141,7 @@ Sets the TvInteractiveAppView to receive events from TIS. This method links the 
 
 | Parameters ||
 |---|---|
-| `tvView` | [TvView](../android/media/tv/TvView.md)?: the TvView to be linked to this TvInteractiveAppView via linking of Sessions. This value may be `null`. |
+| `tvView` | [TvView](../android.media.tv/TvView.md)?: the TvView to be linked to this TvInteractiveAppView via linking of Sessions. This value may be `null`. |
 
 | Return ||
 |---|---|

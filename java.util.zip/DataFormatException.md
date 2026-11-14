@@ -11,8 +11,8 @@ open class DataFormatException : Exception
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||
-| | | ↳ | [java.util.zip.DataFormatException](../java/util/zip/DataFormatException.md) |
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) ||
+| | | ↳ | [java.util.zip.DataFormatException](DataFormatException.md) |
 | --- | --- | --- | --- |
 
 Signals that a data format error has occurred.
@@ -21,8 +21,8 @@ Signals that a data format error has occurred.
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [DataFormatException](../java/util/zip/DataFormatException.md))`()` Constructs a DataFormatException with no detail message. |
-| [DataFormatException](../java/util/zip/DataFormatException.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a DataFormatException with the specified detail message. |
+| [DataFormatException](DataFormatException.md))`()` Constructs a DataFormatException with no detail message. |
+| [DataFormatException](DataFormatException.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a DataFormatException with the specified detail message. |
 
 ## Public constructors
 

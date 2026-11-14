@@ -18,7 +18,7 @@ interface OnKeyguardExitResult
 |
 | Use [KeyguardDismissCallback](../android/app/KeyguardManager.KeyguardDismissCallback.md)
 
-Callback passed to [KeyguardManager.exitKeyguardSecurely](../android/app/KeyguardManager.md))to notify caller of result.
+Callback passed to [KeyguardManager.exitKeyguardSecurely](KeyguardManager.md))to notify caller of result.
 
 ## Summary
 

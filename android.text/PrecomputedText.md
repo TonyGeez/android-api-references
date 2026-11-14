@@ -4,7 +4,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 
 # PrecomputedText
 
-Kotlin| [Java](../android/text/PrecomputedText.md) 
+Kotlin| [Java](PrecomputedText.md) 
 | --- | --- |
 
 ```
@@ -13,9 +13,9 @@ open class PrecomputedText : Spannable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.text.PrecomputedText](../android/text/PrecomputedText.md) |
+| ↳ | [android.text.PrecomputedText](PrecomputedText.md) |
 
-A text which has the character metrics data. A text object that contains the character metrics data and can be used to improve the performance of text layout operations. When a PrecomputedText is created with a given [CharSequence](../java/lang/CharSequence.md), it will measure the text metrics during the creation. This PrecomputedText instance can be set on [android.widget.TextView](../android/widget/TextView.md) or [StaticLayout](../android/text/StaticLayout.md). Since the text layout information will be included in this instance, [android.widget.TextView](../android/widget/TextView.md) or [StaticLayout](../android/text/StaticLayout.md) will not have to recalculate this information. Note that the [PrecomputedText](../android/text/PrecomputedText.md) created from different parameters of the target will be rejected internally and compute the text layout again with the current [android.widget.TextView](../android/widget/TextView.md) parameters. 
+A text which has the character metrics data. A text object that contains the character metrics data and can be used to improve the performance of text layout operations. When a PrecomputedText is created with a given [CharSequence](../java.lang/CharSequence.md), it will measure the text metrics during the creation. This PrecomputedText instance can be set on [android.widget.TextView](../android.widget/TextView.md) or [StaticLayout](StaticLayout.md). Since the text layout information will be included in this instance, [android.widget.TextView](../android.widget/TextView.md) or [StaticLayout](StaticLayout.md) will not have to recalculate this information. Note that the [PrecomputedText](PrecomputedText.md) created from different parameters of the target will be rejected internally and compute the text layout again with the current [android.widget.TextView](../android.widget/TextView.md) parameters. 
 
 ```kotlin
 An example usage is:
@@ -37,7 +37,7 @@ An example usage is:
    }
   </code>
 ```
-Note that the [PrecomputedText](../android/text/PrecomputedText.md) created from different parameters of the target [android.widget.TextView](../android/widget/TextView.md) will be rejected. Note that any [android.text.NoCopySpan](../android/text/NoCopySpan.md) attached to the original text won't be passed to PrecomputedText.
+Note that the [PrecomputedText](PrecomputedText.md) created from different parameters of the target [android.widget.TextView](../android.widget/TextView.md) will be rejected. Note that any [android.text.NoCopySpan](NoCopySpan.md) attached to the original text won't be passed to PrecomputedText.
 
 <br />
 
@@ -45,38 +45,38 @@ Note that the [PrecomputedText](../android/text/PrecomputedText.md) created from
 
 | Nested classes ||
 |---|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Params](../android/text/PrecomputedText.Params.md) The information required for building [PrecomputedText](../android/text/PrecomputedText.md). |
+| | [Params](../android/text/PrecomputedText.Params.md) The information required for building [PrecomputedText](PrecomputedText.md). |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [PrecomputedText](../android/text/PrecomputedText.md)! | [create](../android/text/PrecomputedText.md))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)`, `params:` ` [PrecomputedText.Params](../android/text/PrecomputedText.Params.md)`)` Create a new [PrecomputedText](../android/text/PrecomputedText.md) which will pre-compute text measurement and glyph positioning information. |
-| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [get](../android/text/PrecomputedText.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getBounds](../android/text/PrecomputedText.md))`(`start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `bounds:` ` [Rect](../android/graphics/Rect.md)`)` Retrieves the text bounding box for the given range. |
+| openstatic [PrecomputedText](PrecomputedText.md)! | [create](PrecomputedText.md))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)`, `params:` ` [PrecomputedText.Params](../android/text/PrecomputedText.Params.md)`)` Create a new [PrecomputedText](PrecomputedText.md) which will pre-compute text measurement and glyph positioning information. |
+| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [get](PrecomputedText.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getBounds](PrecomputedText.md))`(`start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `bounds:` ` [Rect](../android.graphics/Rect.md)`)` Retrieves the text bounding box for the given range. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getFontMetricsInt](../android/text/PrecomputedText.md))`(`start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `outMetrics:` ` [Paint.FontMetricsInt](../android/graphics/Paint.FontMetricsInt.md)`)` Retrieves the text font metrics for the given range. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getParagraphCount](../android/text/PrecomputedText.md))`()` Returns the count of paragraphs. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getParagraphEnd](../android/text/PrecomputedText.md))`(`paraIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the paragraph end offset of the text. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getFontMetricsInt](PrecomputedText.md))`(`start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `outMetrics:` ` [Paint.FontMetricsInt](../android/graphics/Paint.FontMetricsInt.md)`)` Retrieves the text font metrics for the given range. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getParagraphCount](PrecomputedText.md))`()` Returns the count of paragraphs. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getParagraphEnd](PrecomputedText.md))`(`paraIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the paragraph end offset of the text. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getParagraphStart](../android/text/PrecomputedText.md))`(`paraIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the paragraph start offset of the text. |
-| open [PrecomputedText.Params](../android/text/PrecomputedText.Params.md) | [getParams](../android/text/PrecomputedText.md))`()` Returns the layout parameters used to measure this text. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSpanEnd](../android/text/PrecomputedText.md))`(`tag:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getParagraphStart](PrecomputedText.md))`(`paraIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the paragraph start offset of the text. |
+| open [PrecomputedText.Params](../android/text/PrecomputedText.Params.md) | [getParams](PrecomputedText.md))`()` Returns the layout parameters used to measure this text. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSpanEnd](PrecomputedText.md))`(`tag:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` <br /> |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSpanFlags](../android/text/PrecomputedText.md))`(`tag:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSpanStart](../android/text/PrecomputedText.md))`(`tag:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` <br /> |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>! | [getSpans](../android/text/PrecomputedText.md))`(`start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `type:` ` [Class](../java/lang/Class.md)<T>!`)` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSpanFlags](PrecomputedText.md))`(`tag:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSpanStart](PrecomputedText.md))`(`tag:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` <br /> |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>! | [getSpans](PrecomputedText.md))`(`start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `type:` ` [Class](../java.lang/Class.md)<T>!`)` <br /> |
 | --- | --- |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getWidth](../android/text/PrecomputedText.md))`(`start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns text width for the given range. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [nextSpanTransition](../android/text/PrecomputedText.md))`(`start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `limit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `type:` ` [Class](../java/lang/Class.md)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeSpan](../android/text/PrecomputedText.md))`(`what:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` <br /> |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getWidth](PrecomputedText.md))`(`start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns text width for the given range. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [nextSpanTransition](PrecomputedText.md))`(`start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `limit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `type:` ` [Class](../java.lang/Class.md)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeSpan](PrecomputedText.md))`(`what:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSpan](../android/text/PrecomputedText.md))`(`what:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | [subSequence](../android/text/PrecomputedText.md))`(`startIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `endIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/text/PrecomputedText.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSpan](PrecomputedText.md))`(`what:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | [subSequence](PrecomputedText.md))`(`startIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `endIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](PrecomputedText.md))`()` <br /> |
 | --- | --- |
 
 | Properties ||
 |--------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [length](../android/text/PrecomputedText.md) <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [length](PrecomputedText.md) <br /> |
 
 ## Public methods
 
@@ -91,10 +91,10 @@ open static fun create(
 ): PrecomputedText!
 ```
 
-Create a new [PrecomputedText](../android/text/PrecomputedText.md) which will pre-compute text measurement and glyph positioning information.
+Create a new [PrecomputedText](PrecomputedText.md) which will pre-compute text measurement and glyph positioning information.
 
 This can be expensive, so computing this on a background thread before your text will be presented can save work on the UI thread.
-Note that any [android.text.NoCopySpan](../android/text/NoCopySpan.md) attached to the text won't be passed to the created PrecomputedText.
+Note that any [android.text.NoCopySpan](NoCopySpan.md) attached to the text won't be passed to the created PrecomputedText.
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -103,7 +103,7 @@ Note that any [android.text.NoCopySpan](../android/text/NoCopySpan.md) attached 
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| [PrecomputedText](../android/text/PrecomputedText.md)! | A [PrecomputedText](../android/text/PrecomputedText.md) |
+| [PrecomputedText](PrecomputedText.md)! | A [PrecomputedText](PrecomputedText.md) |
 
 ### get
 
@@ -143,7 +143,7 @@ Retrieves the text bounding box for the given range. Both`start`and`end`offset n
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------|
 | `start` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the inclusive start offset in the text Value is 0 or greater |
 | `end` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the exclusive end offset in the text Value is 0 or greater |
-| `bounds` | [Rect](../android/graphics/Rect.md):the output rectangle This value cannot be`null`. |
+| `bounds` | [Rect](../android.graphics/Rect.md):the output rectangle This value cannot be`null`. |
 | --- | --- |
 
 | Exceptions ||
@@ -323,7 +323,7 @@ open fun removeSpan(what: Any!): Unit
 
 | Exceptions ||
 |--------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.IllegalArgumentException` | if [MetricAffectingSpan](../android/text/style/MetricAffectingSpan.md) is specified. |
+| `java.lang.IllegalArgumentException` | if [MetricAffectingSpan](../android.text.style/MetricAffectingSpan.md) is specified. |
 
 ### setSpan
 
@@ -340,7 +340,7 @@ open fun setSpan(
 
 | Exceptions ||
 |--------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.IllegalArgumentException` | if [MetricAffectingSpan](../android/text/style/MetricAffectingSpan.md) is specified. |
+| `java.lang.IllegalArgumentException` | if [MetricAffectingSpan](../android.text.style/MetricAffectingSpan.md) is specified. |
 
 ### subSequence
 

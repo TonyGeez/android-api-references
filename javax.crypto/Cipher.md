@@ -10,9 +10,9 @@ open class Cipher
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.crypto.Cipher](../javax/crypto/Cipher.md) |
+| ↳ | [javax.crypto.Cipher](Cipher.md) |
 
-| Known Direct Subclasses [NullCipher](../javax/crypto/NullCipher.md) |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------| | [NullCipher](../javax/crypto/NullCipher.md) | The NullCipher class is a class that provides an "identity cipher" -- one that does not transform the plain text. | |
+| Known Direct Subclasses [NullCipher](NullCipher.md) |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------| | [NullCipher](NullCipher.md) | The NullCipher class is a class that provides an "identity cipher" -- one that does not transform the plain text. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 This class provides the functionality of a cryptographic cipher for encryption and decryption. It forms the core of the Java Cryptographic Extension (JCE) framework.
@@ -34,7 +34,7 @@ A transformation is of the form:
 ```
 Using modes such as`CFB`and`OFB`, block ciphers can encrypt data in units smaller than the cipher's actual block size. When requesting such a mode, you may optionally specify the number of bits to be processed at a time by appending this number to the mode name as shown in the "`DES/CFB8/NoPadding`" and "`DES/OFB32/PKCS5Padding`" transformations. If no such number is specified, a provider-specific default is used. (For example, the SunJCE provider uses a default of 64 bits for DES.) Thus, block ciphers can be turned into byte-oriented stream ciphers by using an 8 bit mode such as CFB8 or OFB8.
 
-Modes such as Authenticated Encryption with Associated Data (AEAD) provide authenticity assurances for both confidential data and Additional Associated Data (AAD) that is not encrypted. (Please see [RFC 5116](http://www.ietf.org/rfc/rfc5116.txt) for more information on AEAD and AEAD algorithms such as GCM/CCM.) Both confidential and AAD data can be used when calculating the authentication tag (similar to a [Mac](../javax/crypto/Mac.md)). This tag is appended to the ciphertext during encryption, and is verified on decryption.
+Modes such as Authenticated Encryption with Associated Data (AEAD) provide authenticity assurances for both confidential data and Additional Associated Data (AAD) that is not encrypted. (Please see [RFC 5116](http://www.ietf.org/rfc/rfc5116.txt) for more information on AEAD and AEAD algorithms such as GCM/CCM.) Both confidential and AAD data can be used when calculating the authentication tag (similar to a [Mac](Mac.md)). This tag is appended to the ciphertext during encryption, and is verified on decryption.
 
 AEAD modes such as GCM/CCM perform all AAD authenticity calculations before starting the ciphertext authenticity calculations. To avoid implementations having to internally buffer ciphertext, all AAD data must be supplied to GCM/CCM implementations (via the`updateAAD`methods)**before** the ciphertext is processed (via the`update`and`doFinal`methods).
 
@@ -96,71 +96,71 @@ These transformations are described in the [Cipher section](https://docs.oracle.
 
 | Constants ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DECRYPT_MODE](../javax/crypto/Cipher.md) Constant used to initialize cipher to decryption mode. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENCRYPT_MODE](../javax/crypto/Cipher.md) Constant used to initialize cipher to encryption mode. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PRIVATE_KEY](../javax/crypto/Cipher.md) Constant used to indicate the to-be-unwrapped key is a "private key". |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DECRYPT_MODE](Cipher.md) Constant used to initialize cipher to decryption mode. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENCRYPT_MODE](Cipher.md) Constant used to initialize cipher to encryption mode. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PRIVATE_KEY](Cipher.md) Constant used to indicate the to-be-unwrapped key is a "private key". |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PUBLIC_KEY](../javax/crypto/Cipher.md) Constant used to indicate the to-be-unwrapped key is a "public key". |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECRET_KEY](../javax/crypto/Cipher.md) Constant used to indicate the to-be-unwrapped key is a "secret key". |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNWRAP_MODE](../javax/crypto/Cipher.md) Constant used to initialize cipher to key-unwrapping mode. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PUBLIC_KEY](Cipher.md) Constant used to indicate the to-be-unwrapped key is a "public key". |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECRET_KEY](Cipher.md) Constant used to indicate the to-be-unwrapped key is a "secret key". |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNWRAP_MODE](Cipher.md) Constant used to initialize cipher to key-unwrapping mode. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WRAP_MODE](../javax/crypto/Cipher.md) Constant used to initialize cipher to key-wrapping mode. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WRAP_MODE](Cipher.md) Constant used to initialize cipher to key-wrapping mode. |
 
 | Protected constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Cipher](../javax/crypto/Cipher.md))`(`cipherSpi:` ` [CipherSpi](../javax/crypto/CipherSpi.md)!`, `provider:` ` [Provider](../java/security/Provider.md)!`, `transformation:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a Cipher object. |
+| [Cipher](Cipher.md))`(`cipherSpi:` ` [CipherSpi](CipherSpi.md)!`, `provider:` ` [Provider](../java.security/Provider.md)!`, `transformation:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a Cipher object. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [doFinal](../javax/crypto/Cipher.md))`()` Finishes a multiple-part encryption or decryption operation, depending on how this cipher was initialized. |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [doFinal](../javax/crypto/Cipher.md))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Encrypts or decrypts data in a single-part operation, or finishes a multiple-part operation. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [doFinal](../javax/crypto/Cipher.md))`(`output:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `outputOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Finishes a multiple-part encryption or decryption operation, depending on how this cipher was initialized. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [doFinal](Cipher.md))`()` Finishes a multiple-part encryption or decryption operation, depending on how this cipher was initialized. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [doFinal](Cipher.md))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Encrypts or decrypts data in a single-part operation, or finishes a multiple-part operation. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [doFinal](Cipher.md))`(`output:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `outputOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Finishes a multiple-part encryption or decryption operation, depending on how this cipher was initialized. |
 | --- | --- |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [doFinal](../javax/crypto/Cipher.md))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `inputOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `inputLen:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Encrypts or decrypts data in a single-part operation, or finishes a multiple-part operation. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [doFinal](../javax/crypto/Cipher.md))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `inputOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `inputLen:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `output:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Encrypts or decrypts data in a single-part operation, or finishes a multiple-part operation. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [doFinal](../javax/crypto/Cipher.md))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `inputOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `inputLen:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `output:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `outputOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Encrypts or decrypts data in a single-part operation, or finishes a multiple-part operation. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [doFinal](Cipher.md))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `inputOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `inputLen:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Encrypts or decrypts data in a single-part operation, or finishes a multiple-part operation. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [doFinal](Cipher.md))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `inputOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `inputLen:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `output:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Encrypts or decrypts data in a single-part operation, or finishes a multiple-part operation. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [doFinal](Cipher.md))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `inputOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `inputLen:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `output:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `outputOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Encrypts or decrypts data in a single-part operation, or finishes a multiple-part operation. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [doFinal](../javax/crypto/Cipher.md))`(`input:` ` [ByteBuffer](../java/nio/ByteBuffer.md)!`, `output:` ` [ByteBuffer](../java/nio/ByteBuffer.md)!`)` Encrypts or decrypts data in a single-part operation, or finishes a multiple-part operation. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAlgorithm](../javax/crypto/Cipher.md))`()` Returns the algorithm name of this`Cipher`object. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBlockSize](../javax/crypto/Cipher.md))`()` Returns the block size (in bytes). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [doFinal](Cipher.md))`(`input:` ` [ByteBuffer](../java.nio/ByteBuffer.md)!`, `output:` ` [ByteBuffer](../java.nio/ByteBuffer.md)!`)` Encrypts or decrypts data in a single-part operation, or finishes a multiple-part operation. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAlgorithm](Cipher.md))`()` Returns the algorithm name of this`Cipher`object. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBlockSize](Cipher.md))`()` Returns the block size (in bytes). |
 | --- | --- |
-| [ExemptionMechanism](../javax/crypto/ExemptionMechanism.md)! | [getExemptionMechanism](../javax/crypto/Cipher.md))`()` Returns the exemption mechanism object used with this cipher. |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getIV](../javax/crypto/Cipher.md))`()` Returns the initialization vector (IV) in a new buffer. |
-| static [Cipher](../javax/crypto/Cipher.md)! | [getInstance](../javax/crypto/Cipher.md))`(`transformation:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a`Cipher`object that implements the specified transformation. |
+| [ExemptionMechanism](ExemptionMechanism.md)! | [getExemptionMechanism](Cipher.md))`()` Returns the exemption mechanism object used with this cipher. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getIV](Cipher.md))`()` Returns the initialization vector (IV) in a new buffer. |
+| static [Cipher](Cipher.md)! | [getInstance](Cipher.md))`(`transformation:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a`Cipher`object that implements the specified transformation. |
 | --- | --- |
-| static [Cipher](../javax/crypto/Cipher.md)! | [getInstance](../javax/crypto/Cipher.md))`(`transformation:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a`Cipher`object that implements the specified transformation. |
-| static [Cipher](../javax/crypto/Cipher.md)! | [getInstance](../javax/crypto/Cipher.md))`(`transformation:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [Provider](../java/security/Provider.md)!`)` Returns a`Cipher`object that implements the specified transformation. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxAllowedKeyLength](../javax/crypto/Cipher.md))`(`transformation:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the maximum key length for the specified transformation according to the installed JCE jurisdiction policy files. |
+| static [Cipher](Cipher.md)! | [getInstance](Cipher.md))`(`transformation:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a`Cipher`object that implements the specified transformation. |
+| static [Cipher](Cipher.md)! | [getInstance](Cipher.md))`(`transformation:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [Provider](../java.security/Provider.md)!`)` Returns a`Cipher`object that implements the specified transformation. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxAllowedKeyLength](Cipher.md))`(`transformation:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the maximum key length for the specified transformation according to the installed JCE jurisdiction policy files. |
 | --- | --- |
-| static [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)! | [getMaxAllowedParameterSpec](../javax/crypto/Cipher.md))`(`transformation:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns an AlgorithmParameterSpec object which contains the maximum cipher parameter value according to the jurisdiction policy file. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOutputSize](../javax/crypto/Cipher.md))`(`inputLen:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the length in bytes that an output buffer would need to be in order to hold the result of the next`update`or`doFinal`operation, given the input length`inputLen`(in bytes). |
-| [AlgorithmParameters](../java/security/AlgorithmParameters.md)! | [getParameters](../javax/crypto/Cipher.md))`()` Returns the parameters used with this cipher. |
+| static [AlgorithmParameterSpec](../java.security.spec/AlgorithmParameterSpec.md)! | [getMaxAllowedParameterSpec](Cipher.md))`(`transformation:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns an AlgorithmParameterSpec object which contains the maximum cipher parameter value according to the jurisdiction policy file. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOutputSize](Cipher.md))`(`inputLen:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the length in bytes that an output buffer would need to be in order to hold the result of the next`update`or`doFinal`operation, given the input length`inputLen`(in bytes). |
+| [AlgorithmParameters](../java.security/AlgorithmParameters.md)! | [getParameters](Cipher.md))`()` Returns the parameters used with this cipher. |
 | --- | --- |
-| [Provider](../java/security/Provider.md)! | [getProvider](../javax/crypto/Cipher.md))`()` Returns the provider of this`Cipher`object. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](../javax/crypto/Cipher.md))`(`opmode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `certificate:` ` [Certificate](../java/security/cert/Certificate.md)!`)` Initializes this cipher with the public key from the given certificate. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](../javax/crypto/Cipher.md))`(`opmode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `certificate:` ` [Certificate](../java/security/cert/Certificate.md)!`, `random:` ` [SecureRandom](../java/security/SecureRandom.md)!`)` Initializes this cipher with the public key from the given certificate and a source of randomness. |
+| [Provider](../java.security/Provider.md)! | [getProvider](Cipher.md))`()` Returns the provider of this`Cipher`object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](Cipher.md))`(`opmode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `certificate:` ` [Certificate](../java.security.cert/Certificate.md)!`)` Initializes this cipher with the public key from the given certificate. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](Cipher.md))`(`opmode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `certificate:` ` [Certificate](../java.security.cert/Certificate.md)!`, `random:` ` [SecureRandom](../java.security/SecureRandom.md)!`)` Initializes this cipher with the public key from the given certificate and a source of randomness. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](../javax/crypto/Cipher.md))`(`opmode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `key:` ` [Key](../java/security/Key.md)!`)` Initializes this cipher with a key. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](../javax/crypto/Cipher.md))`(`opmode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `key:` ` [Key](../java/security/Key.md)!`, `params:` ` [AlgorithmParameters](../java/security/AlgorithmParameters.md)!`)` Initializes this cipher with a key and a set of algorithm parameters. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](../javax/crypto/Cipher.md))`(`opmode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `key:` ` [Key](../java/security/Key.md)!`, `params:` ` [AlgorithmParameters](../java/security/AlgorithmParameters.md)!`, `random:` ` [SecureRandom](../java/security/SecureRandom.md)!`)` Initializes this cipher with a key, a set of algorithm parameters, and a source of randomness. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](Cipher.md))`(`opmode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `key:` ` [Key](../java.security/Key.md)!`)` Initializes this cipher with a key. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](Cipher.md))`(`opmode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `key:` ` [Key](../java.security/Key.md)!`, `params:` ` [AlgorithmParameters](../java.security/AlgorithmParameters.md)!`)` Initializes this cipher with a key and a set of algorithm parameters. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](Cipher.md))`(`opmode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `key:` ` [Key](../java.security/Key.md)!`, `params:` ` [AlgorithmParameters](../java.security/AlgorithmParameters.md)!`, `random:` ` [SecureRandom](../java.security/SecureRandom.md)!`)` Initializes this cipher with a key, a set of algorithm parameters, and a source of randomness. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](../javax/crypto/Cipher.md))`(`opmode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `key:` ` [Key](../java/security/Key.md)!`, `random:` ` [SecureRandom](../java/security/SecureRandom.md)!`)` Initializes this cipher with a key and a source of randomness. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](../javax/crypto/Cipher.md))`(`opmode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `key:` ` [Key](../java/security/Key.md)!`, `params:` ` [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)!`)` Initializes this cipher with a key and a set of algorithm parameters. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](../javax/crypto/Cipher.md))`(`opmode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `key:` ` [Key](../java/security/Key.md)!`, `params:` ` [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)!`, `random:` ` [SecureRandom](../java/security/SecureRandom.md)!`)` Initializes this cipher with a key, a set of algorithm parameters, and a source of randomness. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](Cipher.md))`(`opmode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `key:` ` [Key](../java.security/Key.md)!`, `random:` ` [SecureRandom](../java.security/SecureRandom.md)!`)` Initializes this cipher with a key and a source of randomness. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](Cipher.md))`(`opmode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `key:` ` [Key](../java.security/Key.md)!`, `params:` ` [AlgorithmParameterSpec](../java.security.spec/AlgorithmParameterSpec.md)!`)` Initializes this cipher with a key and a set of algorithm parameters. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [init](Cipher.md))`(`opmode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `key:` ` [Key](../java.security/Key.md)!`, `params:` ` [AlgorithmParameterSpec](../java.security.spec/AlgorithmParameterSpec.md)!`, `random:` ` [SecureRandom](../java.security/SecureRandom.md)!`)` Initializes this cipher with a key, a set of algorithm parameters, and a source of randomness. |
 | --- | --- |
-| [Key](../java/security/Key.md)! | [unwrap](../javax/crypto/Cipher.md))`(`wrappedKey:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `wrappedKeyAlgorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `wrappedKeyType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Unwrap a previously wrapped key. |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [update](../javax/crypto/Cipher.md))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Continues a multiple-part encryption or decryption operation (depending on how this cipher was initialized), processing another data part. |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [update](../javax/crypto/Cipher.md))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `inputOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `inputLen:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Continues a multiple-part encryption or decryption operation (depending on how this cipher was initialized), processing another data part. |
+| [Key](../java.security/Key.md)! | [unwrap](Cipher.md))`(`wrappedKey:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `wrappedKeyAlgorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `wrappedKeyType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Unwrap a previously wrapped key. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [update](Cipher.md))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Continues a multiple-part encryption or decryption operation (depending on how this cipher was initialized), processing another data part. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [update](Cipher.md))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `inputOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `inputLen:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Continues a multiple-part encryption or decryption operation (depending on how this cipher was initialized), processing another data part. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [update](../javax/crypto/Cipher.md))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `inputOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `inputLen:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `output:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Continues a multiple-part encryption or decryption operation (depending on how this cipher was initialized), processing another data part. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [update](../javax/crypto/Cipher.md))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `inputOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `inputLen:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `output:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `outputOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Continues a multiple-part encryption or decryption operation (depending on how this cipher was initialized), processing another data part. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [update](../javax/crypto/Cipher.md))`(`input:` ` [ByteBuffer](../java/nio/ByteBuffer.md)!`, `output:` ` [ByteBuffer](../java/nio/ByteBuffer.md)!`)` Continues a multiple-part encryption or decryption operation (depending on how this cipher was initialized), processing another data part. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [update](Cipher.md))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `inputOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `inputLen:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `output:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Continues a multiple-part encryption or decryption operation (depending on how this cipher was initialized), processing another data part. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [update](Cipher.md))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `inputOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `inputLen:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `output:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `outputOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Continues a multiple-part encryption or decryption operation (depending on how this cipher was initialized), processing another data part. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [update](Cipher.md))`(`input:` ` [ByteBuffer](../java.nio/ByteBuffer.md)!`, `output:` ` [ByteBuffer](../java.nio/ByteBuffer.md)!`)` Continues a multiple-part encryption or decryption operation (depending on how this cipher was initialized), processing another data part. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateAAD](../javax/crypto/Cipher.md))`(`src:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Continues a multi-part update of the Additional Authentication Data (AAD). |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateAAD](../javax/crypto/Cipher.md))`(`src:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Continues a multi-part update of the Additional Authentication Data (AAD), using a subset of the provided buffer. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateAAD](../javax/crypto/Cipher.md))`(`src:` ` [ByteBuffer](../java/nio/ByteBuffer.md)!`)` Continues a multi-part update of the Additional Authentication Data (AAD). |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateAAD](Cipher.md))`(`src:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Continues a multi-part update of the Additional Authentication Data (AAD). |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateAAD](Cipher.md))`(`src:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Continues a multi-part update of the Additional Authentication Data (AAD), using a subset of the provided buffer. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateAAD](Cipher.md))`(`src:` ` [ByteBuffer](../java.nio/ByteBuffer.md)!`)` Continues a multi-part update of the Additional Authentication Data (AAD). |
 | --- | --- |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [wrap](../javax/crypto/Cipher.md))`(`key:` ` [Key](../java/security/Key.md)!`)` Wrap a key. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [wrap](Cipher.md))`(`key:` ` [Key](../java.security/Key.md)!`)` Wrap a key. |
 
 ## Constants
 
@@ -265,8 +265,8 @@ Creates a Cipher object.
 
 | Parameters ||
 |------------------|-------------------------------------------------------------------------------------------------------|
-| `cipherSpi` | [CipherSpi](../javax/crypto/CipherSpi.md)!:the delegate |
-| `provider` | [Provider](../java/security/Provider.md)!:the provider |
+| `cipherSpi` | [CipherSpi](CipherSpi.md)!:the delegate |
+| `provider` | [Provider](../java.security/Provider.md)!:the provider |
 | `transformation` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the transformation |
 | --- | --- |
 
@@ -347,7 +347,7 @@ Finishes a multiple-part encryption or decryption operation, depending on how th
 
 Input data that may have been buffered during a previous`update`operation is processed, with padding (if requested) being applied. If an AEAD mode such as GCM/CCM is being used, the authentication tag is appended in the case of encryption, or verified in the case of decryption. The result is stored in the`output`buffer, starting at`outputOffset`inclusive.
 
-If the`output`buffer is too small to hold the result, a`ShortBufferException`is thrown. In this case, repeat this call with a larger output buffer. Use [getOutputSize](../javax/crypto/Cipher.md))to determine how big the output buffer should be.
+If the`output`buffer is too small to hold the result, a`ShortBufferException`is thrown. In this case, repeat this call with a larger output buffer. Use [getOutputSize](Cipher.md))to determine how big the output buffer should be.
 
 Upon finishing, this method resets this cipher object to the state it was in when previously initialized via a call to`init`. That is, the object is reset and available to encrypt or decrypt (depending on the operation mode that was specified in the call to`init`) more data.
 
@@ -427,7 +427,7 @@ Encrypts or decrypts data in a single-part operation, or finishes a multiple-par
 
 The first`inputLen`bytes in the`input`buffer, starting at`inputOffset`inclusive, and any input bytes that may have been buffered during a previous`update`operation, are processed, with padding (if requested) being applied. If an AEAD mode such as GCM/CCM is being used, the authentication tag is appended in the case of encryption, or verified in the case of decryption. The result is stored in the`output`buffer.
 
-If the`output`buffer is too small to hold the result, a`ShortBufferException`is thrown. In this case, repeat this call with a larger output buffer. Use [getOutputSize](../javax/crypto/Cipher.md))to determine how big the output buffer should be.
+If the`output`buffer is too small to hold the result, a`ShortBufferException`is thrown. In this case, repeat this call with a larger output buffer. Use [getOutputSize](Cipher.md))to determine how big the output buffer should be.
 
 Upon finishing, this method resets this cipher object to the state it was in when previously initialized via a call to`init`. That is, the object is reset and available to encrypt or decrypt (depending on the operation mode that was specified in the call to`init`) more data.
 
@@ -474,7 +474,7 @@ Encrypts or decrypts data in a single-part operation, or finishes a multiple-par
 
 The first`inputLen`bytes in the`input`buffer, starting at`inputOffset`inclusive, and any input bytes that may have been buffered during a previous`update`operation, are processed, with padding (if requested) being applied. If an AEAD mode such as GCM/CCM is being used, the authentication tag is appended in the case of encryption, or verified in the case of decryption. The result is stored in the`output`buffer, starting at`outputOffset`inclusive.
 
-If the`output`buffer is too small to hold the result, a`ShortBufferException`is thrown. In this case, repeat this call with a larger output buffer. Use [getOutputSize](../javax/crypto/Cipher.md))to determine how big the output buffer should be.
+If the`output`buffer is too small to hold the result, a`ShortBufferException`is thrown. In this case, repeat this call with a larger output buffer. Use [getOutputSize](Cipher.md))to determine how big the output buffer should be.
 
 Upon finishing, this method resets this cipher object to the state it was in when previously initialized via a call to`init`. That is, the object is reset and available to encrypt or decrypt (depending on the operation mode that was specified in the call to`init`) more data.
 
@@ -519,7 +519,7 @@ Encrypts or decrypts data in a single-part operation, or finishes a multiple-par
 
 All`input.remaining()`bytes starting at`input.position()`are processed. If an AEAD mode such as GCM/CCM is being used, the authentication tag is appended in the case of encryption, or verified in the case of decryption. The result is stored in the output buffer. Upon return, the input buffer's position will be equal to its limit; its limit will not have changed. The output buffer's position will have advanced by n, where n is the value returned by this method; the output buffer's limit will not have changed.
 
-If`output.remaining()`bytes are insufficient to hold the result, a`ShortBufferException`is thrown. In this case, repeat this call with a larger output buffer. Use [getOutputSize](../javax/crypto/Cipher.md))to determine how big the output buffer should be.
+If`output.remaining()`bytes are insufficient to hold the result, a`ShortBufferException`is thrown. In this case, repeat this call with a larger output buffer. Use [getOutputSize](Cipher.md))to determine how big the output buffer should be.
 
 Upon finishing, this method resets this cipher object to the state it was in when previously initialized via a call to`init`. That is, the object is reset and available to encrypt or decrypt (depending on the operation mode that was specified in the call to`init`) more data.
 
@@ -529,8 +529,8 @@ Note: this method should be copy-safe, which means the`input`and`output`buffers 
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------|
-| `input` | [ByteBuffer](../java/nio/ByteBuffer.md)!:the input ByteBuffer |
-| `output` | [ByteBuffer](../java/nio/ByteBuffer.md)!:the output ByteBuffer |
+| `input` | [ByteBuffer](../java.nio/ByteBuffer.md)!:the input ByteBuffer |
+| `output` | [ByteBuffer](../java.nio/ByteBuffer.md)!:the output ByteBuffer |
 
 | Return ||
 |----------------------------------------------------------------------------|---------------------------------------|
@@ -590,7 +590,7 @@ Returns the exemption mechanism object used with this cipher.
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
-| [ExemptionMechanism](../javax/crypto/ExemptionMechanism.md)! | the exemption mechanism object used with this cipher, or null if this cipher does not use any exemption mechanism. |
+| [ExemptionMechanism](ExemptionMechanism.md)! | the exemption mechanism object used with this cipher, or null if this cipher does not use any exemption mechanism. |
 
 ### getIV
 
@@ -620,7 +620,7 @@ Returns a`Cipher`object that implements the specified transformation.
 
 This method traverses the list of registered security Providers, starting with the most preferred Provider. A new Cipher object encapsulating the CipherSpi implementation from the first Provider that supports the specified algorithm is returned.
 
-Note that the list of registered providers may be retrieved via the [Security.getProviders()](../java/security/Security.md))method.
+Note that the list of registered providers may be retrieved via the [Security.getProviders()](../java.security/Security.md))method.
 
 | Parameters ||
 |------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -628,7 +628,7 @@ Note that the list of registered providers may be retrieved via the [Security.ge
 
 | Return ||
 |--------------------------------------------------------------------------------|--------------------------------------------------------|
-| [Cipher](../javax/crypto/Cipher.md)! | a cipher that implements the requested transformation. |
+| [Cipher](Cipher.md)! | a cipher that implements the requested transformation. |
 
 | Exceptions ||
 |------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
@@ -637,7 +637,7 @@ Note that the list of registered providers may be retrieved via the [Security.ge
 
 **See Also**
 
-- [java.security.Provider](../java/security/Provider.md) 
+- [java.security.Provider](../java.security/Provider.md) 
 
 ### getInstance
 
@@ -654,7 +654,7 @@ Returns a`Cipher`object that implements the specified transformation.
 
 A new Cipher object encapsulating the CipherSpi implementation from the specified provider is returned. The specified provider must be registered in the security provider list.
 
-Note that the list of registered providers may be retrieved via the [Security.getProviders()](../java/security/Security.md))method.
+Note that the list of registered providers may be retrieved via the [Security.getProviders()](../java.security/Security.md))method.
 
 | Parameters ||
 |------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -663,7 +663,7 @@ Note that the list of registered providers may be retrieved via the [Security.ge
 
 | Return ||
 |--------------------------------------------------------------------------------|--------------------------------------------------------|
-| [Cipher](../javax/crypto/Cipher.md)! | a cipher that implements the requested transformation. |
+| [Cipher](Cipher.md)! | a cipher that implements the requested transformation. |
 
 | Exceptions ||
 |------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -675,7 +675,7 @@ Note that the list of registered providers may be retrieved via the [Security.ge
 
 **See Also**
 
-- [java.security.Provider](../java/security/Provider.md) 
+- [java.security.Provider](../java.security/Provider.md) 
 
 ### getInstance
 
@@ -695,11 +695,11 @@ A new Cipher object encapsulating the CipherSpi implementation from the specifie
 | Parameters ||
 |------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `transformation` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the name of the transformation, e.g.,*DES/CBC/PKCS5Padding* . See the Cipher section in the [Java Cryptography Architecture Standard Algorithm Name Documentation](https://docs.oracle.com/javase/8/docs/technotes/guides/security/StandardNames.html#Cipher) for information about standard transformation names. |
-| `provider` | [Provider](../java/security/Provider.md)!:the provider. |
+| `provider` | [Provider](../java.security/Provider.md)!:the provider. |
 
 | Return ||
 |--------------------------------------------------------------------------------|--------------------------------------------------------|
-| [Cipher](../javax/crypto/Cipher.md)! | a cipher that implements the requested transformation. |
+| [Cipher](Cipher.md)! | a cipher that implements the requested transformation. |
 
 | Exceptions ||
 |------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -710,7 +710,7 @@ A new Cipher object encapsulating the CipherSpi implementation from the specifie
 
 **See Also**
 
-- [java.security.Provider](../java/security/Provider.md) 
+- [java.security.Provider](../java.security/Provider.md) 
 
 ### getMaxAllowedKeyLength
 
@@ -751,7 +751,7 @@ Returns an AlgorithmParameterSpec object which contains the maximum cipher param
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|
-| [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)! | an AlgorithmParameterSpec which holds the maximum value or null. |
+| [AlgorithmParameterSpec](../java.security.spec/AlgorithmParameterSpec.md)! | an AlgorithmParameterSpec which holds the maximum value or null. |
 
 | Exceptions ||
 |------------------------------------------|---------------------------------------------------------------------------------------------------------------|
@@ -798,7 +798,7 @@ The returned parameters may be the same that were used to initialize this cipher
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
-| [AlgorithmParameters](../java/security/AlgorithmParameters.md)! | the parameters used with this cipher, or null if this cipher does not use any parameters. |
+| [AlgorithmParameters](../java.security/AlgorithmParameters.md)! | the parameters used with this cipher, or null if this cipher does not use any parameters. |
 
 ### getProvider
 
@@ -812,7 +812,7 @@ Returns the provider of this`Cipher`object.
 
 | Return ||
 |------------------------------------------------------------------------------------------|------------------------------------|
-| [Provider](../java/security/Provider.md)! | the provider of this`Cipher`object |
+| [Provider](../java.security/Provider.md)! | the provider of this`Cipher`object |
 
 ### init
 
@@ -831,7 +831,7 @@ The cipher is initialized for one of the following four operations: encryption, 
 
 If the certificate is of type X.509 and has a*key usage* extension field marked as critical, and the value of the*key usage* extension field implies that the public key in the certificate and its corresponding private key are not supposed to be used for the operation represented by the value of`opmode`, an`InvalidKeyException`is thrown.
 
-If this cipher requires any algorithm parameters that cannot be derived from the public key in the given certificate, the underlying cipher implementation is supposed to generate the required parameters itself (using provider-specific default or random values) if it is being initialized for encryption or key wrapping, and raise an` InvalidKeyException`if it is being initialized for decryption or key unwrapping. The generated parameters can be retrieved using [getParameters](../javax/crypto/Cipher.md))or [getIV](../javax/crypto/Cipher.md))(if the parameter is an IV).
+If this cipher requires any algorithm parameters that cannot be derived from the public key in the given certificate, the underlying cipher implementation is supposed to generate the required parameters itself (using provider-specific default or random values) if it is being initialized for encryption or key wrapping, and raise an` InvalidKeyException`if it is being initialized for decryption or key unwrapping. The generated parameters can be retrieved using [getParameters](Cipher.md))or [getIV](Cipher.md))(if the parameter is an IV).
 
 If this cipher requires algorithm parameters that cannot be derived from the input parameters, and there are no reasonable provider-specific default values, initialization will necessarily fail.
 
@@ -842,7 +842,7 @@ Note that when a Cipher object is initialized, it loses all previously-acquired 
 | Parameters ||
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `opmode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the operation mode of this cipher (this is one of the following:`ENCRYPT_MODE`,`DECRYPT_MODE`,`WRAP_MODE`or`UNWRAP_MODE`) |
-| `certificate` | [Certificate](../java/security/cert/Certificate.md)!:the certificate |
+| `certificate` | [Certificate](../java.security.cert/Certificate.md)!:the certificate |
 
 | Exceptions ||
 |-------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -867,7 +867,7 @@ The cipher is initialized for one of the following four operations: encryption, 
 
 If the certificate is of type X.509 and has a*key usage* extension field marked as critical, and the value of the*key usage* extension field implies that the public key in the certificate and its corresponding private key are not supposed to be used for the operation represented by the value of`opmode`, an`InvalidKeyException`is thrown.
 
-If this cipher requires any algorithm parameters that cannot be derived from the public key in the given`certificate`, the underlying cipher implementation is supposed to generate the required parameters itself (using provider-specific default or random values) if it is being initialized for encryption or key wrapping, and raise an`InvalidKeyException`if it is being initialized for decryption or key unwrapping. The generated parameters can be retrieved using [getParameters](../javax/crypto/Cipher.md))or [getIV](../javax/crypto/Cipher.md))(if the parameter is an IV).
+If this cipher requires any algorithm parameters that cannot be derived from the public key in the given`certificate`, the underlying cipher implementation is supposed to generate the required parameters itself (using provider-specific default or random values) if it is being initialized for encryption or key wrapping, and raise an`InvalidKeyException`if it is being initialized for decryption or key unwrapping. The generated parameters can be retrieved using [getParameters](Cipher.md))or [getIV](Cipher.md))(if the parameter is an IV).
 
 If this cipher requires algorithm parameters that cannot be derived from the input parameters, and there are no reasonable provider-specific default values, initialization will necessarily fail.
 
@@ -878,8 +878,8 @@ Note that when a Cipher object is initialized, it loses all previously-acquired 
 | Parameters ||
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `opmode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the operation mode of this cipher (this is one of the following:`ENCRYPT_MODE`,`DECRYPT_MODE`,`WRAP_MODE`or`UNWRAP_MODE`) |
-| `certificate` | [Certificate](../java/security/cert/Certificate.md)!:the certificate |
-| `random` | [SecureRandom](../java/security/SecureRandom.md)!:the source of randomness |
+| `certificate` | [Certificate](../java.security.cert/Certificate.md)!:the certificate |
+| `random` | [SecureRandom](../java.security/SecureRandom.md)!:the source of randomness |
 | --- | --- |
 
 | Exceptions ||
@@ -902,18 +902,18 @@ Initializes this cipher with a key.
 
 The cipher is initialized for one of the following four operations: encryption, decryption, key wrapping or key unwrapping, depending on the value of`opmode`.
 
-If this cipher requires any algorithm parameters that cannot be derived from the given`key`, the underlying cipher implementation is supposed to generate the required parameters itself (using provider-specific default or random values) if it is being initialized for encryption or key wrapping, and raise an`InvalidKeyException`if it is being initialized for decryption or key unwrapping. The generated parameters can be retrieved using [getParameters](../javax/crypto/Cipher.md))or [getIV](../javax/crypto/Cipher.md))(if the parameter is an IV).
+If this cipher requires any algorithm parameters that cannot be derived from the given`key`, the underlying cipher implementation is supposed to generate the required parameters itself (using provider-specific default or random values) if it is being initialized for encryption or key wrapping, and raise an`InvalidKeyException`if it is being initialized for decryption or key unwrapping. The generated parameters can be retrieved using [getParameters](Cipher.md))or [getIV](Cipher.md))(if the parameter is an IV).
 
 If this cipher requires algorithm parameters that cannot be derived from the input parameters, and there are no reasonable provider-specific default values, initialization will necessarily fail.
 
-If this cipher (including its underlying feedback or padding scheme) requires any random bytes (e.g., for parameter generation), it will get them using the [java.security.SecureRandom](../java/security/SecureRandom.md) implementation of the highest-priority installed provider as the source of randomness. (If none of the installed providers supply an implementation of SecureRandom, a system-provided source of randomness will be used.)
+If this cipher (including its underlying feedback or padding scheme) requires any random bytes (e.g., for parameter generation), it will get them using the [java.security.SecureRandom](../java.security/SecureRandom.md) implementation of the highest-priority installed provider as the source of randomness. (If none of the installed providers supply an implementation of SecureRandom, a system-provided source of randomness will be used.)
 
 Note that when a Cipher object is initialized, it loses all previously-acquired state. In other words, initializing a Cipher is equivalent to creating a new instance of that Cipher and initializing it.
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `opmode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the operation mode of this cipher (this is one of the following:`ENCRYPT_MODE`,`DECRYPT_MODE`,`WRAP_MODE`or`UNWRAP_MODE`) |
-| `key` | [Key](../java/security/Key.md)!:the key |
+| `key` | [Key](../java.security/Key.md)!:the key |
 
 | Exceptions ||
 |-------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -936,19 +936,19 @@ Initializes this cipher with a key and a set of algorithm parameters.
 
 The cipher is initialized for one of the following four operations: encryption, decryption, key wrapping or key unwrapping, depending on the value of`opmode`.
 
-If this cipher requires any algorithm parameters and`params`is null, the underlying cipher implementation is supposed to generate the required parameters itself (using provider-specific default or random values) if it is being initialized for encryption or key wrapping, and raise an`InvalidAlgorithmParameterException`if it is being initialized for decryption or key unwrapping. The generated parameters can be retrieved using [getParameters](../javax/crypto/Cipher.md))or [getIV](../javax/crypto/Cipher.md))(if the parameter is an IV).
+If this cipher requires any algorithm parameters and`params`is null, the underlying cipher implementation is supposed to generate the required parameters itself (using provider-specific default or random values) if it is being initialized for encryption or key wrapping, and raise an`InvalidAlgorithmParameterException`if it is being initialized for decryption or key unwrapping. The generated parameters can be retrieved using [getParameters](Cipher.md))or [getIV](Cipher.md))(if the parameter is an IV).
 
 If this cipher requires algorithm parameters that cannot be derived from the input parameters, and there are no reasonable provider-specific default values, initialization will necessarily fail.
 
-If this cipher (including its underlying feedback or padding scheme) requires any random bytes (e.g., for parameter generation), it will get them using the [java.security.SecureRandom](../java/security/SecureRandom.md) implementation of the highest-priority installed provider as the source of randomness. (If none of the installed providers supply an implementation of SecureRandom, a system-provided source of randomness will be used.)
+If this cipher (including its underlying feedback or padding scheme) requires any random bytes (e.g., for parameter generation), it will get them using the [java.security.SecureRandom](../java.security/SecureRandom.md) implementation of the highest-priority installed provider as the source of randomness. (If none of the installed providers supply an implementation of SecureRandom, a system-provided source of randomness will be used.)
 
 Note that when a Cipher object is initialized, it loses all previously-acquired state. In other words, initializing a Cipher is equivalent to creating a new instance of that Cipher and initializing it.
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `opmode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the operation mode of this cipher (this is one of the following:`ENCRYPT_MODE`,`DECRYPT_MODE`,`WRAP_MODE`or`UNWRAP_MODE`) |
-| `key` | [Key](../java/security/Key.md)!:the encryption key |
-| `params` | [AlgorithmParameters](../java/security/AlgorithmParameters.md)!:the algorithm parameters |
+| `key` | [Key](../java.security/Key.md)!:the encryption key |
+| `params` | [AlgorithmParameters](../java.security/AlgorithmParameters.md)!:the algorithm parameters |
 | --- | --- |
 
 | Exceptions ||
@@ -975,7 +975,7 @@ Initializes this cipher with a key, a set of algorithm parameters, and a source 
 
 The cipher is initialized for one of the following four operations: encryption, decryption, key wrapping or key unwrapping, depending on the value of`opmode`.
 
-If this cipher requires any algorithm parameters and`params`is null, the underlying cipher implementation is supposed to generate the required parameters itself (using provider-specific default or random values) if it is being initialized for encryption or key wrapping, and raise an`InvalidAlgorithmParameterException`if it is being initialized for decryption or key unwrapping. The generated parameters can be retrieved using [getParameters](../javax/crypto/Cipher.md))or [getIV](../javax/crypto/Cipher.md))(if the parameter is an IV).
+If this cipher requires any algorithm parameters and`params`is null, the underlying cipher implementation is supposed to generate the required parameters itself (using provider-specific default or random values) if it is being initialized for encryption or key wrapping, and raise an`InvalidAlgorithmParameterException`if it is being initialized for decryption or key unwrapping. The generated parameters can be retrieved using [getParameters](Cipher.md))or [getIV](Cipher.md))(if the parameter is an IV).
 
 If this cipher requires algorithm parameters that cannot be derived from the input parameters, and there are no reasonable provider-specific default values, initialization will necessarily fail.
 
@@ -986,10 +986,10 @@ Note that when a Cipher object is initialized, it loses all previously-acquired 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `opmode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the operation mode of this cipher (this is one of the following:`ENCRYPT_MODE`,`DECRYPT_MODE`,`WRAP_MODE`or`UNWRAP_MODE`) |
-| `key` | [Key](../java/security/Key.md)!:the encryption key |
-| `params` | [AlgorithmParameters](../java/security/AlgorithmParameters.md)!:the algorithm parameters |
+| `key` | [Key](../java.security/Key.md)!:the encryption key |
+| `params` | [AlgorithmParameters](../java.security/AlgorithmParameters.md)!:the algorithm parameters |
 | --- | --- |
-| `random` | [SecureRandom](../java/security/SecureRandom.md)!:the source of randomness |
+| `random` | [SecureRandom](../java.security/SecureRandom.md)!:the source of randomness |
 
 | Exceptions ||
 |----------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1014,7 +1014,7 @@ Initializes this cipher with a key and a source of randomness.
 
 The cipher is initialized for one of the following four operations: encryption, decryption, key wrapping or key unwrapping, depending on the value of`opmode`.
 
-If this cipher requires any algorithm parameters that cannot be derived from the given`key`, the underlying cipher implementation is supposed to generate the required parameters itself (using provider-specific default or random values) if it is being initialized for encryption or key wrapping, and raise an`InvalidKeyException`if it is being initialized for decryption or key unwrapping. The generated parameters can be retrieved using [getParameters](../javax/crypto/Cipher.md))or [getIV](../javax/crypto/Cipher.md))(if the parameter is an IV).
+If this cipher requires any algorithm parameters that cannot be derived from the given`key`, the underlying cipher implementation is supposed to generate the required parameters itself (using provider-specific default or random values) if it is being initialized for encryption or key wrapping, and raise an`InvalidKeyException`if it is being initialized for decryption or key unwrapping. The generated parameters can be retrieved using [getParameters](Cipher.md))or [getIV](Cipher.md))(if the parameter is an IV).
 
 If this cipher requires algorithm parameters that cannot be derived from the input parameters, and there are no reasonable provider-specific default values, initialization will necessarily fail.
 
@@ -1025,8 +1025,8 @@ Note that when a Cipher object is initialized, it loses all previously-acquired 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `opmode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the operation mode of this cipher (this is one of the following:`ENCRYPT_MODE`,`DECRYPT_MODE`,`WRAP_MODE`or`UNWRAP_MODE`) |
-| `key` | [Key](../java/security/Key.md)!:the encryption key |
-| `random` | [SecureRandom](../java/security/SecureRandom.md)!:the source of randomness |
+| `key` | [Key](../java.security/Key.md)!:the encryption key |
+| `random` | [SecureRandom](../java.security/SecureRandom.md)!:the source of randomness |
 | --- | --- |
 
 | Exceptions ||
@@ -1050,19 +1050,19 @@ Initializes this cipher with a key and a set of algorithm parameters.
 
 The cipher is initialized for one of the following four operations: encryption, decryption, key wrapping or key unwrapping, depending on the value of`opmode`.
 
-If this cipher requires any algorithm parameters and`params`is null, the underlying cipher implementation is supposed to generate the required parameters itself (using provider-specific default or random values) if it is being initialized for encryption or key wrapping, and raise an`InvalidAlgorithmParameterException`if it is being initialized for decryption or key unwrapping. The generated parameters can be retrieved using [getParameters](../javax/crypto/Cipher.md))or [getIV](../javax/crypto/Cipher.md))(if the parameter is an IV).
+If this cipher requires any algorithm parameters and`params`is null, the underlying cipher implementation is supposed to generate the required parameters itself (using provider-specific default or random values) if it is being initialized for encryption or key wrapping, and raise an`InvalidAlgorithmParameterException`if it is being initialized for decryption or key unwrapping. The generated parameters can be retrieved using [getParameters](Cipher.md))or [getIV](Cipher.md))(if the parameter is an IV).
 
 If this cipher requires algorithm parameters that cannot be derived from the input parameters, and there are no reasonable provider-specific default values, initialization will necessarily fail.
 
-If this cipher (including its underlying feedback or padding scheme) requires any random bytes (e.g., for parameter generation), it will get them using the [java.security.SecureRandom](../java/security/SecureRandom.md) implementation of the highest-priority installed provider as the source of randomness. (If none of the installed providers supply an implementation of SecureRandom, a system-provided source of randomness will be used.)
+If this cipher (including its underlying feedback or padding scheme) requires any random bytes (e.g., for parameter generation), it will get them using the [java.security.SecureRandom](../java.security/SecureRandom.md) implementation of the highest-priority installed provider as the source of randomness. (If none of the installed providers supply an implementation of SecureRandom, a system-provided source of randomness will be used.)
 
 Note that when a Cipher object is initialized, it loses all previously-acquired state. In other words, initializing a Cipher is equivalent to creating a new instance of that Cipher and initializing it.
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `opmode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the operation mode of this cipher (this is one of the following:`ENCRYPT_MODE`,`DECRYPT_MODE`,`WRAP_MODE`or`UNWRAP_MODE`) |
-| `key` | [Key](../java/security/Key.md)!:the encryption key |
-| `params` | [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)!:the algorithm parameters |
+| `key` | [Key](../java.security/Key.md)!:the encryption key |
+| `params` | [AlgorithmParameterSpec](../java.security.spec/AlgorithmParameterSpec.md)!:the algorithm parameters |
 | --- | --- |
 
 | Exceptions ||
@@ -1089,7 +1089,7 @@ Initializes this cipher with a key, a set of algorithm parameters, and a source 
 
 The cipher is initialized for one of the following four operations: encryption, decryption, key wrapping or key unwrapping, depending on the value of`opmode`.
 
-If this cipher requires any algorithm parameters and`params`is null, the underlying cipher implementation is supposed to generate the required parameters itself (using provider-specific default or random values) if it is being initialized for encryption or key wrapping, and raise an`InvalidAlgorithmParameterException`if it is being initialized for decryption or key unwrapping. The generated parameters can be retrieved using [getParameters](../javax/crypto/Cipher.md))or [getIV](../javax/crypto/Cipher.md))(if the parameter is an IV).
+If this cipher requires any algorithm parameters and`params`is null, the underlying cipher implementation is supposed to generate the required parameters itself (using provider-specific default or random values) if it is being initialized for encryption or key wrapping, and raise an`InvalidAlgorithmParameterException`if it is being initialized for decryption or key unwrapping. The generated parameters can be retrieved using [getParameters](Cipher.md))or [getIV](Cipher.md))(if the parameter is an IV).
 
 If this cipher requires algorithm parameters that cannot be derived from the input parameters, and there are no reasonable provider-specific default values, initialization will necessarily fail.
 
@@ -1100,10 +1100,10 @@ Note that when a Cipher object is initialized, it loses all previously-acquired 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `opmode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the operation mode of this cipher (this is one of the following:`ENCRYPT_MODE`,`DECRYPT_MODE`,`WRAP_MODE`or`UNWRAP_MODE`) |
-| `key` | [Key](../java/security/Key.md)!:the encryption key |
-| `params` | [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)!:the algorithm parameters |
+| `key` | [Key](../java.security/Key.md)!:the encryption key |
+| `params` | [AlgorithmParameterSpec](../java.security.spec/AlgorithmParameterSpec.md)!:the algorithm parameters |
 | --- | --- |
-| `random` | [SecureRandom](../java/security/SecureRandom.md)!:the source of randomness |
+| `random` | [SecureRandom](../java.security/SecureRandom.md)!:the source of randomness |
 
 | Exceptions ||
 |----------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1135,7 +1135,7 @@ Unwrap a previously wrapped key.
 
 | Return ||
 |--------------------------------------------------------------------------------|--------------------|
-| [Key](../java/security/Key.md)! | the unwrapped key. |
+| [Key](../java.security/Key.md)! | the unwrapped key. |
 
 | Exceptions ||
 |-------------------------------------------|-----------------------------------------------------------------------------------------------------|
@@ -1221,7 +1221,7 @@ Continues a multiple-part encryption or decryption operation (depending on how t
 
 The first`inputLen`bytes in the`input`buffer, starting at`inputOffset`inclusive, are processed, and the result is stored in the`output`buffer.
 
-If the`output`buffer is too small to hold the result, a`ShortBufferException`is thrown. In this case, repeat this call with a larger output buffer. Use [getOutputSize](../javax/crypto/Cipher.md))to determine how big the output buffer should be.
+If the`output`buffer is too small to hold the result, a`ShortBufferException`is thrown. In this case, repeat this call with a larger output buffer. Use [getOutputSize](Cipher.md))to determine how big the output buffer should be.
 
 If`inputLen`is zero, this method returns a length of zero.
 
@@ -1262,7 +1262,7 @@ Continues a multiple-part encryption or decryption operation (depending on how t
 
 The first`inputLen`bytes in the`input`buffer, starting at`inputOffset`inclusive, are processed, and the result is stored in the`output`buffer, starting at`outputOffset`inclusive.
 
-If the`output`buffer is too small to hold the result, a`ShortBufferException`is thrown. In this case, repeat this call with a larger output buffer. Use [getOutputSize](../javax/crypto/Cipher.md))to determine how big the output buffer should be.
+If the`output`buffer is too small to hold the result, a`ShortBufferException`is thrown. In this case, repeat this call with a larger output buffer. Use [getOutputSize](Cipher.md))to determine how big the output buffer should be.
 
 If`inputLen`is zero, this method returns a length of zero.
 
@@ -1301,14 +1301,14 @@ Continues a multiple-part encryption or decryption operation (depending on how t
 
 All`input.remaining()`bytes starting at`input.position()`are processed. The result is stored in the output buffer. Upon return, the input buffer's position will be equal to its limit; its limit will not have changed. The output buffer's position will have advanced by n, where n is the value returned by this method; the output buffer's limit will not have changed.
 
-If`output.remaining()`bytes are insufficient to hold the result, a`ShortBufferException`is thrown. In this case, repeat this call with a larger output buffer. Use [getOutputSize](../javax/crypto/Cipher.md))to determine how big the output buffer should be.
+If`output.remaining()`bytes are insufficient to hold the result, a`ShortBufferException`is thrown. In this case, repeat this call with a larger output buffer. Use [getOutputSize](Cipher.md))to determine how big the output buffer should be.
 
 Note: this method should be copy-safe, which means the`input`and`output`buffers can reference the same block of memory and no unprocessed input data is overwritten when the result is copied into the output buffer.
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------|
-| `input` | [ByteBuffer](../java/nio/ByteBuffer.md)!:the input ByteBuffer |
-| `output` | [ByteBuffer](../java/nio/ByteBuffer.md)!:the output ByteByffer |
+| `input` | [ByteBuffer](../java.nio/ByteBuffer.md)!:the input ByteBuffer |
+| `output` | [ByteBuffer](../java.nio/ByteBuffer.md)!:the output ByteByffer |
 
 | Return ||
 |----------------------------------------------------------------------------|---------------------------------------|
@@ -1391,7 +1391,7 @@ All`src.remaining()`bytes starting at`src.position()`are processed. Upon return,
 
 | Parameters ||
 |-------|-----------------------------------------------------------------------------------------------------------------------|
-| `src` | [ByteBuffer](../java/nio/ByteBuffer.md)!:the buffer containing the AAD |
+| `src` | [ByteBuffer](../java.nio/ByteBuffer.md)!:the buffer containing the AAD |
 
 | Exceptions ||
 |-------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1412,7 +1412,7 @@ Wrap a key.
 
 | Parameters ||
 |-------|-------------------------------------------------------------------------------------------------------|
-| `key` | [Key](../java/security/Key.md)!:the key to be wrapped. |
+| `key` | [Key](../java.security/Key.md)!:the key to be wrapped. |
 
 | Return ||
 |------------------------------------------------------------------------------------------|------------------|

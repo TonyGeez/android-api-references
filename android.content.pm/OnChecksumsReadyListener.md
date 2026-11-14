@@ -19,7 +19,7 @@ Listener that gets notified when checksums are available.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onChecksumsReady](../android/content/pm/PackageManager.OnChecksumsReadyListener.md))`(`checksums:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [ApkChecksum](../android/content/pm/ApkChecksum.md)!>`)` Called when the checksums are available. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onChecksumsReady](../android/content/pm/PackageManager.OnChecksumsReadyListener.md))`(`checksums:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [ApkChecksum](ApkChecksum.md)!>`)` Called when the checksums are available. |
 
 ## Public methods
 
@@ -35,4 +35,4 @@ Called when the checksums are available.
 
 | Parameters ||
 |-------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `checksums` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ApkChecksum](../android/content/pm/ApkChecksum.md)!\>:array of checksums. This value cannot be`null`. |
+| `checksums` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ApkChecksum](ApkChecksum.md)!\>:array of checksums. This value cannot be`null`. |

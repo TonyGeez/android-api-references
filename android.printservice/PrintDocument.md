@@ -4,7 +4,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 
 # PrintDocument
 
-Kotlin| [Java](../android/printservice/PrintDocument.md) 
+Kotlin| [Java](PrintDocument.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class PrintDocument
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.printservice.PrintDocument](../android/printservice/PrintDocument.md) |
+| ↳ | [android.printservice.PrintDocument](PrintDocument.md) |
 
 This class represents a printed document from the perspective of a print service. It exposes APIs to query the document and obtain its data.
 
@@ -23,8 +23,8 @@ This class represents a printed document from the perspective of a print service
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md)? | [getData](../android/printservice/PrintDocument.md))`()` Gets the data associated with this document. |
-| [PrintDocumentInfo](../android/print/PrintDocumentInfo.md) | [getInfo](../android/printservice/PrintDocument.md))`()` Gets the [PrintDocumentInfo](../android/print/PrintDocumentInfo.md) that describes this document. |
+| [ParcelFileDescriptor](../android.os/ParcelFileDescriptor.md)? | [getData](PrintDocument.md))`()` Gets the data associated with this document. |
+| [PrintDocumentInfo](../android.print/PrintDocumentInfo.md) | [getInfo](PrintDocument.md))`()` Gets the [PrintDocumentInfo](../android.print/PrintDocumentInfo.md) that describes this document. |
 
 ## Public methods
 
@@ -42,7 +42,7 @@ Gets the data associated with this document.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|
-| [ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md)? | A file descriptor for reading the data. This value may be`null`. |
+| [ParcelFileDescriptor](../android.os/ParcelFileDescriptor.md)? | A file descriptor for reading the data. This value may be`null`. |
 
 ### getInfo
 
@@ -52,8 +52,8 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 fun getInfo(): PrintDocumentInfo
 ```
 
-Gets the [PrintDocumentInfo](../android/print/PrintDocumentInfo.md) that describes this document.
+Gets the [PrintDocumentInfo](../android.print/PrintDocumentInfo.md) that describes this document.
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|------------------------------------------------|
-| [PrintDocumentInfo](../android/print/PrintDocumentInfo.md) | The document info. This value cannot be`null`. |
+| [PrintDocumentInfo](../android.print/PrintDocumentInfo.md) | The document info. This value cannot be`null`. |

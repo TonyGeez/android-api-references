@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # GestureDetector
 
-Kotlin| [Java](../android/view/GestureDetector.md) 
+Kotlin| [Java](GestureDetector.md) 
 | --- | --- |
 
 ```
@@ -13,13 +13,13 @@ open class GestureDetector
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.GestureDetector](../android/view/GestureDetector.md) |
+| ↳ | [android.view.GestureDetector](GestureDetector.md) |
 
-Detects various gestures and events using the supplied [MotionEvent](../android/view/MotionEvent.md) s. The [OnGestureListener](../android/view/GestureDetector.OnGestureListener.md) callback will notify users when a particular motion event has occurred. This class should only be used with [MotionEvent](../android/view/MotionEvent.md) s reported via touch (don't use for trackball events). To use this class:
+Detects various gestures and events using the supplied [MotionEvent](MotionEvent.md) s. The [OnGestureListener](../android/view/GestureDetector.OnGestureListener.md) callback will notify users when a particular motion event has occurred. This class should only be used with [MotionEvent](MotionEvent.md) s reported via touch (don't use for trackball events). To use this class:
 
-- Create an instance of the`GestureDetector`for your [View](../android/view/View.md)
-- In the [View.onTouchEvent(MotionEvent)](../android/view/View.md))method ensure you call [onTouchEvent(android.view.MotionEvent)](../android/view/GestureDetector.md)). The methods defined in your callback will be executed when the events occur.
-- If listening for [OnContextClickListener.onContextClick(MotionEvent)](../android/view/GestureDetector.OnContextClickListener.md))you must call [onGenericMotionEvent(android.view.MotionEvent)](../android/view/GestureDetector.md))in [View.onGenericMotionEvent(MotionEvent)](../android/view/View.md)).
+- Create an instance of the`GestureDetector`for your [View](View.md)
+- In the [View.onTouchEvent(MotionEvent)](View.md))method ensure you call [onTouchEvent(android.view.MotionEvent)](GestureDetector.md)). The methods defined in your callback will be executed when the events occur.
+- If listening for [OnContextClickListener.onContextClick(MotionEvent)](../android/view/GestureDetector.OnContextClickListener.md))you must call [onGenericMotionEvent(android.view.MotionEvent)](GestureDetector.md))in [View.onGenericMotionEvent(MotionEvent)](View.md)).
 
 <br />
 
@@ -35,21 +35,21 @@ Detects various gestures and events using the supplied [MotionEvent](../android/
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [GestureDetector](../android/view/GestureDetector.md))`(`context:` ` [Context](../android/content/Context.md)?`, `listener:` ` [GestureDetector.OnGestureListener](../android/view/GestureDetector.OnGestureListener.md)`)` Creates a GestureDetector with the supplied listener. |
-| [GestureDetector](../android/view/GestureDetector.md))`(`context:` ` [Context](../android/content/Context.md)?`, `listener:` ` [GestureDetector.OnGestureListener](../android/view/GestureDetector.OnGestureListener.md)`, `handler:` ` [Handler](../android/os/Handler.md)?`)` Creates a GestureDetector with the supplied listener that runs deferred events on the thread associated with the supplied [Handler](../android/os/Handler.md). |
-| [GestureDetector](../android/view/GestureDetector.md))`(`context:` ` [Context](../android/content/Context.md)?`, `listener:` ` [GestureDetector.OnGestureListener](../android/view/GestureDetector.OnGestureListener.md)`, `handler:` ` [Handler](../android/os/Handler.md)?`, `unused:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Creates a GestureDetector with the supplied listener that runs deferred events on the thread associated with the supplied [Handler](../android/os/Handler.md). |
-| [GestureDetector](../android/view/GestureDetector.md))`(`listener:` ` [GestureDetector.OnGestureListener](../android/view/GestureDetector.OnGestureListener.md)`)` Creates a GestureDetector with the supplied listener. |
-| [GestureDetector](../android/view/GestureDetector.md))`(`listener:` ` [GestureDetector.OnGestureListener](../android/view/GestureDetector.OnGestureListener.md)`, `handler:` ` [Handler](../android/os/Handler.md)?`)` Creates a GestureDetector with the supplied listener. |
+| [GestureDetector](GestureDetector.md))`(`context:` ` [Context](../android.content/Context.md)?`, `listener:` ` [GestureDetector.OnGestureListener](../android/view/GestureDetector.OnGestureListener.md)`)` Creates a GestureDetector with the supplied listener. |
+| [GestureDetector](GestureDetector.md))`(`context:` ` [Context](../android.content/Context.md)?`, `listener:` ` [GestureDetector.OnGestureListener](../android/view/GestureDetector.OnGestureListener.md)`, `handler:` ` [Handler](../android.os/Handler.md)?`)` Creates a GestureDetector with the supplied listener that runs deferred events on the thread associated with the supplied [Handler](../android.os/Handler.md). |
+| [GestureDetector](GestureDetector.md))`(`context:` ` [Context](../android.content/Context.md)?`, `listener:` ` [GestureDetector.OnGestureListener](../android/view/GestureDetector.OnGestureListener.md)`, `handler:` ` [Handler](../android.os/Handler.md)?`, `unused:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Creates a GestureDetector with the supplied listener that runs deferred events on the thread associated with the supplied [Handler](../android.os/Handler.md). |
+| [GestureDetector](GestureDetector.md))`(`listener:` ` [GestureDetector.OnGestureListener](../android/view/GestureDetector.OnGestureListener.md)`)` Creates a GestureDetector with the supplied listener. |
+| [GestureDetector](GestureDetector.md))`(`listener:` ` [GestureDetector.OnGestureListener](../android/view/GestureDetector.OnGestureListener.md)`, `handler:` ` [Handler](../android.os/Handler.md)?`)` Creates a GestureDetector with the supplied listener. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLongpressEnabled](../android/view/GestureDetector.md))`()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onGenericMotionEvent](../android/view/GestureDetector.md))`(`ev:` ` [MotionEvent](../android/view/MotionEvent.md)`)` Analyzes the given generic motion event and if applicable triggers the appropriate callbacks on the [OnGestureListener](../android/view/GestureDetector.OnGestureListener.md) supplied. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onTouchEvent](../android/view/GestureDetector.md))`(`ev:` ` [MotionEvent](../android/view/MotionEvent.md)`)` Analyzes the given motion event and if applicable triggers the appropriate callbacks on the [OnGestureListener](../android/view/GestureDetector.OnGestureListener.md) supplied. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLongpressEnabled](GestureDetector.md))`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onGenericMotionEvent](GestureDetector.md))`(`ev:` ` [MotionEvent](MotionEvent.md)`)` Analyzes the given generic motion event and if applicable triggers the appropriate callbacks on the [OnGestureListener](../android/view/GestureDetector.OnGestureListener.md) supplied. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onTouchEvent](GestureDetector.md))`(`ev:` ` [MotionEvent](MotionEvent.md)`)` Analyzes the given motion event and if applicable triggers the appropriate callbacks on the [OnGestureListener](../android/view/GestureDetector.OnGestureListener.md) supplied. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setContextClickListener](../android/view/GestureDetector.md))`(`onContextClickListener:` ` [GestureDetector.OnContextClickListener](../android/view/GestureDetector.OnContextClickListener.md)?`)` Sets the listener which will be called for context clicks. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setIsLongpressEnabled](../android/view/GestureDetector.md))`(`isLongpressEnabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Set whether longpress is enabled, if this is enabled when a user presses and holds down you get a longpress event and nothing further. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOnDoubleTapListener](../android/view/GestureDetector.md))`(`onDoubleTapListener:` ` [GestureDetector.OnDoubleTapListener](../android/view/GestureDetector.OnDoubleTapListener.md)?`)` Sets the listener which will be called for double-tap and related gestures. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setContextClickListener](GestureDetector.md))`(`onContextClickListener:` ` [GestureDetector.OnContextClickListener](../android/view/GestureDetector.OnContextClickListener.md)?`)` Sets the listener which will be called for context clicks. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setIsLongpressEnabled](GestureDetector.md))`(`isLongpressEnabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Set whether longpress is enabled, if this is enabled when a user presses and holds down you get a longpress event and nothing further. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOnDoubleTapListener](GestureDetector.md))`(`onDoubleTapListener:` ` [GestureDetector.OnDoubleTapListener](../android/view/GestureDetector.OnDoubleTapListener.md)?`)` Sets the listener which will be called for double-tap and related gestures. |
 | --- | --- |
 
 ## Public constructors
@@ -64,11 +64,11 @@ GestureDetector(
     listener: GestureDetector.OnGestureListener)
 ```
 
-Creates a GestureDetector with the supplied listener. You may only use this constructor from a [Looper](../android/os/Looper.md) thread.
+Creates a GestureDetector with the supplied listener. You may only use this constructor from a [Looper](../android.os/Looper.md) thread.
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](../android/content/Context.md)?:An [Activity](../android/app/Activity.md) or a [Context](../android/content/Context.md) created from [Context.createWindowContext(int, Bundle)](../android/content/Context.md))This value may be`null`. |
+| `context` | [Context](../android.content/Context.md)?:An [Activity](../android.app/Activity.md) or a [Context](../android.content/Context.md) created from [Context.createWindowContext(int, Bundle)](../android.content/Context.md))This value may be`null`. |
 | `listener` | [GestureDetector.OnGestureListener](../android/view/GestureDetector.OnGestureListener.md):the listener invoked for all the callbacks, this must not be null. If the listener implements the [OnDoubleTapListener](../android/view/GestureDetector.OnDoubleTapListener.md) or [OnContextClickListener](../android/view/GestureDetector.OnContextClickListener.md) then it will also be set as the listener for these callbacks (for example when using the [SimpleOnGestureListener](../android/view/GestureDetector.SimpleOnGestureListener.md)). |
 
 | Exceptions ||
@@ -77,7 +77,7 @@ Creates a GestureDetector with the supplied listener. You may only use this cons
 
 **See Also**
 
-- [android.os.Handler#Handler()](../android/os/Handler.md)) 
+- [android.os.Handler#Handler()](../android.os/Handler.md)) 
 
 ### GestureDetector
 
@@ -90,13 +90,13 @@ GestureDetector(
     handler: Handler?)
 ```
 
-Creates a GestureDetector with the supplied listener that runs deferred events on the thread associated with the supplied [Handler](../android/os/Handler.md).
+Creates a GestureDetector with the supplied listener that runs deferred events on the thread associated with the supplied [Handler](../android.os/Handler.md).
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](../android/content/Context.md)?:An [Activity](../android/app/Activity.md) or a [Context](../android/content/Context.md) created from [Context.createWindowContext(int, Bundle)](../android/content/Context.md))This value may be`null`. |
+| `context` | [Context](../android.content/Context.md)?:An [Activity](../android.app/Activity.md) or a [Context](../android.content/Context.md) created from [Context.createWindowContext(int, Bundle)](../android.content/Context.md))This value may be`null`. |
 | `listener` | [GestureDetector.OnGestureListener](../android/view/GestureDetector.OnGestureListener.md):the listener invoked for all the callbacks, this must not be null. If the listener implements the [OnDoubleTapListener](../android/view/GestureDetector.OnDoubleTapListener.md) or [OnContextClickListener](../android/view/GestureDetector.OnContextClickListener.md) then it will also be set as the listener for these callbacks (for example when using the [SimpleOnGestureListener](../android/view/GestureDetector.SimpleOnGestureListener.md)). |
-| `handler` | [Handler](../android/os/Handler.md)?:the handler to use for running deferred listener events. This value may be`null`. |
+| `handler` | [Handler](../android.os/Handler.md)?:the handler to use for running deferred listener events. This value may be`null`. |
 | --- | --- |
 
 | Exceptions ||
@@ -105,7 +105,7 @@ Creates a GestureDetector with the supplied listener that runs deferred events o
 
 **See Also**
 
-- [android.os.Handler#Handler()](../android/os/Handler.md)) 
+- [android.os.Handler#Handler()](../android.os/Handler.md)) 
 
 ### GestureDetector
 
@@ -119,13 +119,13 @@ GestureDetector(
     unused: Boolean)
 ```
 
-Creates a GestureDetector with the supplied listener that runs deferred events on the thread associated with the supplied [Handler](../android/os/Handler.md).
+Creates a GestureDetector with the supplied listener that runs deferred events on the thread associated with the supplied [Handler](../android.os/Handler.md).
 
 | Parameters ||
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](../android/content/Context.md)?:An [Activity](../android/app/Activity.md) or a [Context](../android/content/Context.md) created from [Context.createWindowContext(int, Bundle)](../android/content/Context.md))This value may be`null`. |
+| `context` | [Context](../android.content/Context.md)?:An [Activity](../android.app/Activity.md) or a [Context](../android.content/Context.md) created from [Context.createWindowContext(int, Bundle)](../android.content/Context.md))This value may be`null`. |
 | `listener` | [GestureDetector.OnGestureListener](../android/view/GestureDetector.OnGestureListener.md):the listener invoked for all the callbacks, this must not be null. |
-| `handler` | [Handler](../android/os/Handler.md)?:the handler to use for running deferred listener events. This value may be`null`. |
+| `handler` | [Handler](../android.os/Handler.md)?:the handler to use for running deferred listener events. This value may be`null`. |
 | --- | --- |
 | `unused` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):currently not used. |
 
@@ -135,7 +135,7 @@ Creates a GestureDetector with the supplied listener that runs deferred events o
 
 **See Also**
 
-- [android.os.Handler#Handler()](../android/os/Handler.md)) 
+- [android.os.Handler#Handler()](../android.os/Handler.md)) 
 
 ### GestureDetector
 
@@ -145,7 +145,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 GestureDetector(listener: GestureDetector.OnGestureListener)
 ```
 
-**Deprecated:** *Use [GestureDetector(android.content.Context,android.view.GestureDetector.OnGestureListener)](../android/view/GestureDetector.md))instead.*
+**Deprecated:** *Use [GestureDetector(android.content.Context,android.view.GestureDetector.OnGestureListener)](GestureDetector.md))instead.*
 
 Creates a GestureDetector with the supplied listener. You may only use this constructor from a UI thread (this is the usual situation).
 
@@ -159,7 +159,7 @@ Creates a GestureDetector with the supplied listener. You may only use this cons
 
 **See Also**
 
-- [android.os.Handler#Handler()](../android/os/Handler.md)) 
+- [android.os.Handler#Handler()](../android.os/Handler.md)) 
 
 ### GestureDetector
 
@@ -171,14 +171,14 @@ GestureDetector(
     handler: Handler?)
 ```
 
-**Deprecated:** *Use [GestureDetector(android.content.Context,android.view.GestureDetector.OnGestureListener,android.os.Handler)](../android/view/GestureDetector.md))instead.*
+**Deprecated:** *Use [GestureDetector(android.content.Context,android.view.GestureDetector.OnGestureListener,android.os.Handler)](GestureDetector.md))instead.*
 
 Creates a GestureDetector with the supplied listener. This variant of the constructor should be used from a non-UI thread (as it allows specifying the Handler).
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `listener` | [GestureDetector.OnGestureListener](../android/view/GestureDetector.OnGestureListener.md):the listener invoked for all the callbacks, this must not be null. |
-| `handler` | [Handler](../android/os/Handler.md)?:the handler to use This value may be`null`. |
+| `handler` | [Handler](../android.os/Handler.md)?:the handler to use This value may be`null`. |
 
 | Exceptions ||
 |----------------------------------|----------------------|
@@ -210,7 +210,7 @@ Analyzes the given generic motion event and if applicable triggers the appropria
 
 | Parameters ||
 |------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| `ev` | [MotionEvent](../android/view/MotionEvent.md):The current motion event. This value cannot be`null`. |
+| `ev` | [MotionEvent](MotionEvent.md):The current motion event. This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -228,7 +228,7 @@ Analyzes the given motion event and if applicable triggers the appropriate callb
 
 | Parameters ||
 |------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| `ev` | [MotionEvent](../android/view/MotionEvent.md):The current motion event. This value cannot be`null`. |
+| `ev` | [MotionEvent](MotionEvent.md):The current motion event. This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|

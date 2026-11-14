@@ -8,8 +8,8 @@ open class PipedOutputStream : OutputStream
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.io.OutputStream](../java/io/OutputStream.md) ||
-| | ↳ | [java.io.PipedOutputStream](../java/io/PipedOutputStream.md) |
+| ↳ | [java.io.OutputStream](OutputStream.md) ||
+| | ↳ | [java.io.PipedOutputStream](PipedOutputStream.md) |
 
 A piped output stream can be connected to a piped input stream to create a communications pipe. The piped output stream is the sending end of the pipe. Typically, data is written to a `PipedOutputStream` object by one thread and data is read from the connected `PipedInputStream` by some other thread. Attempting to use both objects from a single thread is not recommended as it may deadlock the thread. The pipe is said to be *broken* if a thread that was reading data bytes from the connected piped input stream is no longer alive.
 
@@ -61,7 +61,7 @@ Creates a piped output stream connected to the specified piped input stream. Dat
 
 | Parameters ||
 |---|---|
-| `snk` | [PipedInputStream](../java/io/PipedInputStream.md)!: The piped input stream to connect to. |
+| `snk` | [PipedInputStream](PipedInputStream.md)!: The piped input stream to connect to. |
 
 | Exceptions ||
 |---|---|
@@ -108,7 +108,7 @@ The two calls have the same effect.
 
 | Parameters ||
 |---|---|
-| `snk` | [PipedInputStream](../java/io/PipedInputStream.md)!: the piped input stream to connect to. |
+| `snk` | [PipedInputStream](PipedInputStream.md)!: the piped input stream to connect to. |
 
 | Exceptions ||
 |---|---|
@@ -151,7 +151,7 @@ Writes `len` bytes from the specified byte array starting at offset `off` to thi
 
 | Exceptions ||
 |---|---|
-| `java.io.IOException` | if the pipe is [broken](../java/io/PipedOutputStream.md), `https://developer.android.com/reference/kotlin/java/io/PipedOutputStream#connect(java.io.PipedInputStream)`, closed, or if an I/O error occurs. |
+| `java.io.IOException` | if the pipe is [broken](PipedOutputStream.md), `https://developer.android.com/reference/kotlin/java/io/PipedOutputStream#connect(java.io.PipedInputStream)`, closed, or if an I/O error occurs. |
 
 ### write
 
@@ -171,4 +171,4 @@ Implements the `write` method of `OutputStream`.
 
 | Exceptions ||
 |---|---|
-| `java.io.IOException` | if the pipe is [broken](../java/io/PipedOutputStream.md), `https://developer.android.com/reference/kotlin/java/io/PipedOutputStream#connect(java.io.PipedInputStream)`, closed, or if an I/O error occurs. |
+| `java.io.IOException` | if the pipe is [broken](PipedOutputStream.md), `https://developer.android.com/reference/kotlin/java/io/PipedOutputStream#connect(java.io.PipedInputStream)`, closed, or if an I/O error occurs. |

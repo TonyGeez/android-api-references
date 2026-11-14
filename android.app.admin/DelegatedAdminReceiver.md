@@ -8,8 +8,8 @@ open class DelegatedAdminReceiver : BroadcastReceiver
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.content.BroadcastReceiver](../android/content/BroadcastReceiver.md) ||
-| | ↳ | [android.app.admin.DelegatedAdminReceiver](../android/app/admin/DelegatedAdminReceiver.md) |
+| ↳ | [android.content.BroadcastReceiver](../android.content/BroadcastReceiver.md) ||
+| | ↳ | [android.app.admin.DelegatedAdminReceiver](DelegatedAdminReceiver.md) |
 
 Base class for delegated apps to handle callbacks related to their delegated capabilities.
 
@@ -189,11 +189,11 @@ This callback is only applicable if the delegated app has `https://developer.and
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DelegatedAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `intent` | [Intent](../android/content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DelegatedAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `context` | [Context](../android.content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DelegatedAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `intent` | [Intent](../android.content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DelegatedAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
 | `uid` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The uid of the app asking for the private key and certificate pair. |
 | --- | --- |
-| `uri` | [Uri](../android/net/Uri.md)?: The URI to authenticate, may be null. |
+| `uri` | [Uri](../android.net/Uri.md)?: The URI to authenticate, may be null. |
 | `alias` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: The alias preselected by the client, or null. |
 
 | Return ||
@@ -225,8 +225,8 @@ This callback is triggered by a foreground broadcast and the app should ensure t
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DelegatedAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `intent` | [Intent](../android/content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DelegatedAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `context` | [Context](../android.content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DelegatedAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `intent` | [Intent](../android.content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DelegatedAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
 | `batchToken` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The token representing the current batch of network logs. |
 | --- | --- |
 | `networkLogsCount` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The total count of events in the current batch of network logs. Value is 1 or greater |
@@ -250,8 +250,8 @@ Intercept delegated device administrator broadcasts. Implementations should not 
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md): This value cannot be `null`. |
-| `intent` | [Intent](../android/content/Intent.md): This value cannot be `null`. |
+| `context` | [Context](../android.content/Context.md): This value cannot be `null`. |
+| `intent` | [Intent](../android.content/Intent.md): This value cannot be `null`. |
 
 ### onSecurityLogsAvailable
 
@@ -274,8 +274,8 @@ This callback is triggered by a foreground broadcast and the app should ensure t
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DelegatedAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
-| `intent` | [Intent](../android/content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DelegatedAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `context` | [Context](../android.content/Context.md): The running context as per `https://developer.android.com/reference/kotlin/android/app/admin/DelegatedAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
+| `intent` | [Intent](../android.content/Intent.md): The received intent as per `https://developer.android.com/reference/kotlin/android/app/admin/DelegatedAdminReceiver#onReceive(android.content.Context,%20android.content.Intent)`. This value cannot be `null`. |
 
 **See Also**
 

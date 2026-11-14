@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # MotionEvent
 
-Kotlin| [Java](../android/view/MotionEvent.md) 
+Kotlin| [Java](MotionEvent.md) 
 | --- | --- |
 
 ```
@@ -13,8 +13,8 @@ class MotionEvent : InputEvent, Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.view.InputEvent](../android/view/InputEvent.md) ||
-| | ↳ | [android.view.MotionEvent](../android/view/MotionEvent.md) |
+| ↳ | [android.view.InputEvent](InputEvent.md) ||
+| | ↳ | [android.view.MotionEvent](MotionEvent.md) |
 
 Object used to report movement (mouse, pen, finger, trackball) events. Motion events may hold either absolute or relative movements and other data, depending on the type of device.
 
@@ -24,23 +24,23 @@ Object used to report movement (mouse, pen, finger, trackball) events. Motion ev
 
 Motion events describe movements in terms of an action code and a set of axis values. The action code specifies the state change that occurred such as a pointer going down or up. The axis values describe the position and other movement properties.
 
-For example, when the user first touches the screen, the system delivers a touch event to the appropriate [View](../android/view/View.md) with the action code [ACTION_DOWN](../android/view/MotionEvent.md) and a set of axis values that include the X and Y coordinates of the touch and information about the pressure, size and orientation of the contact area.
+For example, when the user first touches the screen, the system delivers a touch event to the appropriate [View](View.md) with the action code [ACTION_DOWN](MotionEvent.md) and a set of axis values that include the X and Y coordinates of the touch and information about the pressure, size and orientation of the contact area.
 
 Some devices can report multiple movement traces at the same time. Multi-touch screens emit one movement trace for each finger. The individual fingers or other objects that generate movement traces are referred to as*pointers*. Motion events contain information about all of the pointers that are currently active even if some of them have not moved since the last event was delivered.
 
 The number of pointers only ever changes by one as individual pointers go up and down, except when the gesture is canceled.
 
-Each pointer has a unique id that is assigned when it first goes down (indicated by [ACTION_DOWN](../android/view/MotionEvent.md) or [ACTION_POINTER_DOWN](../android/view/MotionEvent.md)). A pointer id remains valid until the pointer eventually goes up (indicated by [ACTION_UP](../android/view/MotionEvent.md) or [ACTION_POINTER_UP](../android/view/MotionEvent.md)) or when the gesture is canceled (indicated by [ACTION_CANCEL](../android/view/MotionEvent.md)).
+Each pointer has a unique id that is assigned when it first goes down (indicated by [ACTION_DOWN](MotionEvent.md) or [ACTION_POINTER_DOWN](MotionEvent.md)). A pointer id remains valid until the pointer eventually goes up (indicated by [ACTION_UP](MotionEvent.md) or [ACTION_POINTER_UP](MotionEvent.md)) or when the gesture is canceled (indicated by [ACTION_CANCEL](MotionEvent.md)).
 
-The MotionEvent class provides many methods to query the position and other properties of pointers, such as [getX(int)](../android/view/MotionEvent.md)), [getY(int)](../android/view/MotionEvent.md)), #getAxisValue, [getPointerId(int)](../android/view/MotionEvent.md)), [getToolType(int)](../android/view/MotionEvent.md)), and many others. Most of these methods accept the pointer index as a parameter rather than the pointer id. The pointer index of each pointer in the event ranges from 0 to one less than the value returned by [getPointerCount()](../android/view/MotionEvent.md)).
+The MotionEvent class provides many methods to query the position and other properties of pointers, such as [getX(int)](MotionEvent.md)), [getY(int)](MotionEvent.md)), #getAxisValue, [getPointerId(int)](MotionEvent.md)), [getToolType(int)](MotionEvent.md)), and many others. Most of these methods accept the pointer index as a parameter rather than the pointer id. The pointer index of each pointer in the event ranges from 0 to one less than the value returned by [getPointerCount()](MotionEvent.md)).
 
-The order in which individual pointers appear within a motion event is undefined. Thus the pointer index of a pointer can change from one event to the next but the pointer id of a pointer is guaranteed to remain constant as long as the pointer remains active. Use the [getPointerId(int)](../android/view/MotionEvent.md))method to obtain the pointer id of a pointer to track it across all subsequent motion events in a gesture. Then for successive motion events, use the [findPointerIndex(int)](../android/view/MotionEvent.md))method to obtain the pointer index for a given pointer id in that motion event.
+The order in which individual pointers appear within a motion event is undefined. Thus the pointer index of a pointer can change from one event to the next but the pointer id of a pointer is guaranteed to remain constant as long as the pointer remains active. Use the [getPointerId(int)](MotionEvent.md))method to obtain the pointer id of a pointer to track it across all subsequent motion events in a gesture. Then for successive motion events, use the [findPointerIndex(int)](MotionEvent.md))method to obtain the pointer index for a given pointer id in that motion event.
 
-Mouse and stylus buttons can be retrieved using [getButtonState()](../android/view/MotionEvent.md)). It is a good idea to check the button state while handling [ACTION_DOWN](../android/view/MotionEvent.md) as part of a touch event. The application may choose to perform some different action if the touch event starts due to a secondary button click, such as presenting a context menu.
+Mouse and stylus buttons can be retrieved using [getButtonState()](MotionEvent.md)). It is a good idea to check the button state while handling [ACTION_DOWN](MotionEvent.md) as part of a touch event. The application may choose to perform some different action if the touch event starts due to a secondary button click, such as presenting a context menu.
 
 ### Batching
 
-For efficiency, motion events with [ACTION_MOVE](../android/view/MotionEvent.md) may batch together multiple movement samples within a single object. The most current pointer coordinates are available using [getX(int)](../android/view/MotionEvent.md))and [getY(int)](../android/view/MotionEvent.md)). Earlier coordinates within the batch are accessed using [getHistoricalX(int,int)](../android/view/MotionEvent.md))and [getHistoricalY(int,int)](../android/view/MotionEvent.md)). The coordinates are "historical" only insofar as they are older than the current coordinates in the batch; however, they are still distinct from any other coordinates reported in prior motion events. To process all coordinates in the batch in time order, first consume the historical coordinates then consume the current coordinates.
+For efficiency, motion events with [ACTION_MOVE](MotionEvent.md) may batch together multiple movement samples within a single object. The most current pointer coordinates are available using [getX(int)](MotionEvent.md))and [getY(int)](MotionEvent.md)). Earlier coordinates within the batch are accessed using [getHistoricalX(int,int)](MotionEvent.md))and [getHistoricalY(int,int)](MotionEvent.md)). The coordinates are "historical" only insofar as they are older than the current coordinates in the batch; however, they are still distinct from any other coordinates reported in prior motion events. To process all coordinates in the batch in time order, first consume the historical coordinates then consume the current coordinates.
 
 Example: Consuming all samples for all pointers in a motion event in time order.
 
@@ -69,27 +69,27 @@ Example: Consuming all samples for all pointers in a motion event in time order.
 
 <br />
 
-Developers should keep in mind that it is especially important to consume all samples in a batched event when processing relative values that report changes since the last event or sample. Examples of such relative axes include [AXIS_RELATIVE_X](../android/view/MotionEvent.md), [AXIS_RELATIVE_Y](../android/view/MotionEvent.md), and many of the axes prefixed with`AXIS_GESTURE_`. In these cases, developers should first consume all historical values using [getHistoricalAxisValue(int,int)](../android/view/MotionEvent.md))and then consume the current values using [getAxisValue(int)](../android/view/MotionEvent.md))like in the example above, as these relative values are not accumulated in a batched event.
+Developers should keep in mind that it is especially important to consume all samples in a batched event when processing relative values that report changes since the last event or sample. Examples of such relative axes include [AXIS_RELATIVE_X](MotionEvent.md), [AXIS_RELATIVE_Y](MotionEvent.md), and many of the axes prefixed with`AXIS_GESTURE_`. In these cases, developers should first consume all historical values using [getHistoricalAxisValue(int,int)](MotionEvent.md))and then consume the current values using [getAxisValue(int)](MotionEvent.md))like in the example above, as these relative values are not accumulated in a batched event.
 
 ### Device Types
 
 The interpretation of the contents of a MotionEvent varies significantly depending on the source class of the device.
 
-On pointing devices with source class [InputDevice.SOURCE_CLASS_POINTER](../android/view/InputDevice.md) such as touch screens, the pointer coordinates specify absolute positions such as view X/Y coordinates. Each complete gesture is represented by a sequence of motion events with actions that describe pointer state transitions and movements. A gesture starts with a motion event with [ACTION_DOWN](../android/view/MotionEvent.md) that provides the location of the first pointer down. As each additional pointer that goes down or up, the framework will generate a motion event with [ACTION_POINTER_DOWN](../android/view/MotionEvent.md) or [ACTION_POINTER_UP](../android/view/MotionEvent.md) accordingly. Pointer movements are described by motion events with [ACTION_MOVE](../android/view/MotionEvent.md). Finally, a gesture end either when the final pointer goes up as represented by a motion event with [ACTION_UP](../android/view/MotionEvent.md) or when gesture is canceled with [ACTION_CANCEL](../android/view/MotionEvent.md).
+On pointing devices with source class [InputDevice.SOURCE_CLASS_POINTER](InputDevice.md) such as touch screens, the pointer coordinates specify absolute positions such as view X/Y coordinates. Each complete gesture is represented by a sequence of motion events with actions that describe pointer state transitions and movements. A gesture starts with a motion event with [ACTION_DOWN](MotionEvent.md) that provides the location of the first pointer down. As each additional pointer that goes down or up, the framework will generate a motion event with [ACTION_POINTER_DOWN](MotionEvent.md) or [ACTION_POINTER_UP](MotionEvent.md) accordingly. Pointer movements are described by motion events with [ACTION_MOVE](MotionEvent.md). Finally, a gesture end either when the final pointer goes up as represented by a motion event with [ACTION_UP](MotionEvent.md) or when gesture is canceled with [ACTION_CANCEL](MotionEvent.md).
 
-Some pointing devices such as mice may support vertical and/or horizontal scrolling. A scroll event is reported as a generic motion event with [ACTION_SCROLL](../android/view/MotionEvent.md) that includes the relative scroll offset in the [AXIS_VSCROLL](../android/view/MotionEvent.md) and [AXIS_HSCROLL](../android/view/MotionEvent.md) axes. See [getAxisValue(int)](../android/view/MotionEvent.md))for information about retrieving these additional axes.
+Some pointing devices such as mice may support vertical and/or horizontal scrolling. A scroll event is reported as a generic motion event with [ACTION_SCROLL](MotionEvent.md) that includes the relative scroll offset in the [AXIS_VSCROLL](MotionEvent.md) and [AXIS_HSCROLL](MotionEvent.md) axes. See [getAxisValue(int)](MotionEvent.md))for information about retrieving these additional axes.
 
-On trackball devices with source class [InputDevice.SOURCE_CLASS_TRACKBALL](../android/view/InputDevice.md), the pointer coordinates specify relative movements as X/Y deltas. A trackball gesture consists of a sequence of movements described by motion events with [ACTION_MOVE](../android/view/MotionEvent.md) interspersed with occasional [ACTION_DOWN](../android/view/MotionEvent.md) or [ACTION_UP](../android/view/MotionEvent.md) motion events when the trackball button is pressed or released.
+On trackball devices with source class [InputDevice.SOURCE_CLASS_TRACKBALL](InputDevice.md), the pointer coordinates specify relative movements as X/Y deltas. A trackball gesture consists of a sequence of movements described by motion events with [ACTION_MOVE](MotionEvent.md) interspersed with occasional [ACTION_DOWN](MotionEvent.md) or [ACTION_UP](MotionEvent.md) motion events when the trackball button is pressed or released.
 
-On joystick devices with source class [InputDevice.SOURCE_CLASS_JOYSTICK](../android/view/InputDevice.md), the pointer coordinates specify the absolute position of the joystick axes. The joystick axis values are normalized to a range of -1.0 to 1.0 where 0.0 corresponds to the center position. More information about the set of available axes and the range of motion can be obtained using android.view.InputDevice#getMotionRange. Some common joystick axes are [AXIS_X](../android/view/MotionEvent.md), [AXIS_Y](../android/view/MotionEvent.md), [AXIS_HAT_X](../android/view/MotionEvent.md), [AXIS_HAT_Y](../android/view/MotionEvent.md), [AXIS_Z](../android/view/MotionEvent.md) and [AXIS_RZ](../android/view/MotionEvent.md).
+On joystick devices with source class [InputDevice.SOURCE_CLASS_JOYSTICK](InputDevice.md), the pointer coordinates specify the absolute position of the joystick axes. The joystick axis values are normalized to a range of -1.0 to 1.0 where 0.0 corresponds to the center position. More information about the set of available axes and the range of motion can be obtained using android.view.InputDevice#getMotionRange. Some common joystick axes are [AXIS_X](MotionEvent.md), [AXIS_Y](MotionEvent.md), [AXIS_HAT_X](MotionEvent.md), [AXIS_HAT_Y](MotionEvent.md), [AXIS_Z](MotionEvent.md) and [AXIS_RZ](MotionEvent.md).
 
-Refer to [InputDevice](../android/view/InputDevice.md) for more information about how different kinds of input devices and sources represent pointer coordinates.
+Refer to [InputDevice](InputDevice.md) for more information about how different kinds of input devices and sources represent pointer coordinates.
 
 ### Consistency Guarantees
 
 Motion events are always delivered to views as a consistent stream of events. What constitutes a consistent stream varies depending on the type of device. For touch events, consistency implies that pointers go down one at a time, move around as a group and then go up one at a time or are canceled.
 
-While the framework tries to deliver consistent streams of motion events to views, it cannot guarantee it. Some events may be dropped or modified by containing views in the application before they are delivered thereby making the stream of events inconsistent. Views should always be prepared to handle [ACTION_CANCEL](../android/view/MotionEvent.md) and should tolerate anomalous situations such as receiving a new [ACTION_DOWN](../android/view/MotionEvent.md) without first having received an [ACTION_UP](../android/view/MotionEvent.md) for the prior gesture.
+While the framework tries to deliver consistent streams of motion events to views, it cannot guarantee it. Some events may be dropped or modified by containing views in the application before they are delivered thereby making the stream of events inconsistent. Views should always be prepared to handle [ACTION_CANCEL](MotionEvent.md) and should tolerate anomalous situations such as receiving a new [ACTION_DOWN](MotionEvent.md) without first having received an [ACTION_UP](MotionEvent.md) for the prior gesture.
 
 ## Summary
 
@@ -100,282 +100,282 @@ While the framework tries to deliver consistent streams of motion events to view
 
 | Constants ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTION_BUTTON_PRESS](../android/view/MotionEvent.md) Constant for [getActionMasked](../android/view/MotionEvent.md)): A button has been pressed. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTION_BUTTON_RELEASE](../android/view/MotionEvent.md) Constant for [getActionMasked](../android/view/MotionEvent.md)): A button has been released. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTION_CANCEL](../android/view/MotionEvent.md) Constant for [getActionMasked](../android/view/MotionEvent.md)): The current gesture has been aborted. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTION_BUTTON_PRESS](MotionEvent.md) Constant for [getActionMasked](MotionEvent.md)): A button has been pressed. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTION_BUTTON_RELEASE](MotionEvent.md) Constant for [getActionMasked](MotionEvent.md)): A button has been released. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTION_CANCEL](MotionEvent.md) Constant for [getActionMasked](MotionEvent.md)): The current gesture has been aborted. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTION_DOWN](../android/view/MotionEvent.md) Constant for [getActionMasked](../android/view/MotionEvent.md)): A pressed gesture has started, the motion contains the initial starting location. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTION_HOVER_ENTER](../android/view/MotionEvent.md) Constant for [getActionMasked](../android/view/MotionEvent.md)): The pointer is not down but has entered the boundaries of a window or view. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTION_HOVER_EXIT](../android/view/MotionEvent.md) Constant for [getActionMasked](../android/view/MotionEvent.md)): The pointer is not down but has exited the boundaries of a window or view. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTION_DOWN](MotionEvent.md) Constant for [getActionMasked](MotionEvent.md)): A pressed gesture has started, the motion contains the initial starting location. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTION_HOVER_ENTER](MotionEvent.md) Constant for [getActionMasked](MotionEvent.md)): The pointer is not down but has entered the boundaries of a window or view. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTION_HOVER_EXIT](MotionEvent.md) Constant for [getActionMasked](MotionEvent.md)): The pointer is not down but has exited the boundaries of a window or view. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTION_HOVER_MOVE](../android/view/MotionEvent.md) Constant for [getActionMasked](../android/view/MotionEvent.md)): A change happened but the pointer is not down (unlike [ACTION_MOVE](../android/view/MotionEvent.md)). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTION_MASK](../android/view/MotionEvent.md) Bit mask of the parts of the action code that are the action itself. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTION_MOVE](../android/view/MotionEvent.md) Constant for [getActionMasked](../android/view/MotionEvent.md)): A change has happened during a press gesture (between [ACTION_DOWN](../android/view/MotionEvent.md) and [ACTION_UP](../android/view/MotionEvent.md)). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTION_HOVER_MOVE](MotionEvent.md) Constant for [getActionMasked](MotionEvent.md)): A change happened but the pointer is not down (unlike [ACTION_MOVE](MotionEvent.md)). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTION_MASK](MotionEvent.md) Bit mask of the parts of the action code that are the action itself. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTION_MOVE](MotionEvent.md) Constant for [getActionMasked](MotionEvent.md)): A change has happened during a press gesture (between [ACTION_DOWN](MotionEvent.md) and [ACTION_UP](MotionEvent.md)). |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTION_OUTSIDE](../android/view/MotionEvent.md) Constant for [getActionMasked](../android/view/MotionEvent.md)): A movement has happened outside of the normal bounds of the UI element. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTION_POINTER_1_DOWN](../android/view/MotionEvent.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTION_POINTER_1_UP](../android/view/MotionEvent.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTION_OUTSIDE](MotionEvent.md) Constant for [getActionMasked](MotionEvent.md)): A movement has happened outside of the normal bounds of the UI element. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTION_POINTER_1_DOWN](MotionEvent.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTION_POINTER_1_UP](MotionEvent.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTION_POINTER_2_DOWN](../android/view/MotionEvent.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTION_POINTER_2_UP](../android/view/MotionEvent.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTION_POINTER_3_DOWN](../android/view/MotionEvent.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTION_POINTER_2_DOWN](MotionEvent.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTION_POINTER_2_UP](MotionEvent.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTION_POINTER_3_DOWN](MotionEvent.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTION_POINTER_3_UP](../android/view/MotionEvent.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTION_POINTER_DOWN](../android/view/MotionEvent.md) Constant for [getActionMasked](../android/view/MotionEvent.md)): A non-primary pointer has gone down. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTION_POINTER_ID_MASK](../android/view/MotionEvent.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTION_POINTER_3_UP](MotionEvent.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTION_POINTER_DOWN](MotionEvent.md) Constant for [getActionMasked](MotionEvent.md)): A non-primary pointer has gone down. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTION_POINTER_ID_MASK](MotionEvent.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTION_POINTER_ID_SHIFT](../android/view/MotionEvent.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTION_POINTER_INDEX_MASK](../android/view/MotionEvent.md) Bits in the action code that represent a pointer index, used with [ACTION_POINTER_DOWN](../android/view/MotionEvent.md) and [ACTION_POINTER_UP](../android/view/MotionEvent.md). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTION_POINTER_INDEX_SHIFT](../android/view/MotionEvent.md) Bit shift for the action bits holding the pointer index as defined by [ACTION_POINTER_INDEX_MASK](../android/view/MotionEvent.md). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTION_POINTER_ID_SHIFT](MotionEvent.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTION_POINTER_INDEX_MASK](MotionEvent.md) Bits in the action code that represent a pointer index, used with [ACTION_POINTER_DOWN](MotionEvent.md) and [ACTION_POINTER_UP](MotionEvent.md). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTION_POINTER_INDEX_SHIFT](MotionEvent.md) Bit shift for the action bits holding the pointer index as defined by [ACTION_POINTER_INDEX_MASK](MotionEvent.md). |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTION_POINTER_UP](../android/view/MotionEvent.md) Constant for [getActionMasked](../android/view/MotionEvent.md)): A non-primary pointer has gone up. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTION_SCROLL](../android/view/MotionEvent.md) Constant for [getActionMasked](../android/view/MotionEvent.md)): The motion event contains relative vertical and/or horizontal scroll offsets. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTION_UP](../android/view/MotionEvent.md) Constant for [getActionMasked](../android/view/MotionEvent.md)): A pressed gesture has finished, the motion contains the final release location as well as any intermediate points since the last down or move event. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTION_POINTER_UP](MotionEvent.md) Constant for [getActionMasked](MotionEvent.md)): A non-primary pointer has gone up. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTION_SCROLL](MotionEvent.md) Constant for [getActionMasked](MotionEvent.md)): The motion event contains relative vertical and/or horizontal scroll offsets. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACTION_UP](MotionEvent.md) Constant for [getActionMasked](MotionEvent.md)): A pressed gesture has finished, the motion contains the final release location as well as any intermediate points since the last down or move event. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_BRAKE](../android/view/MotionEvent.md) Axis constant: Brake axis of a motion event. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_DISTANCE](../android/view/MotionEvent.md) Axis constant: Distance axis of a motion event. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_GAS](../android/view/MotionEvent.md) Axis constant: Gas axis of a motion event. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_BRAKE](MotionEvent.md) Axis constant: Brake axis of a motion event. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_DISTANCE](MotionEvent.md) Axis constant: Distance axis of a motion event. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_GAS](MotionEvent.md) Axis constant: Gas axis of a motion event. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_GENERIC_1](../android/view/MotionEvent.md) Axis constant: Generic 1 axis of a motion event. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_GENERIC_10](../android/view/MotionEvent.md) Axis constant: Generic 10 axis of a motion event. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_GENERIC_11](../android/view/MotionEvent.md) Axis constant: Generic 11 axis of a motion event. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_GENERIC_1](MotionEvent.md) Axis constant: Generic 1 axis of a motion event. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_GENERIC_10](MotionEvent.md) Axis constant: Generic 10 axis of a motion event. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_GENERIC_11](MotionEvent.md) Axis constant: Generic 11 axis of a motion event. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_GENERIC_12](../android/view/MotionEvent.md) Axis constant: Generic 12 axis of a motion event. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_GENERIC_13](../android/view/MotionEvent.md) Axis constant: Generic 13 axis of a motion event. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_GENERIC_14](../android/view/MotionEvent.md) Axis constant: Generic 14 axis of a motion event. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_GENERIC_12](MotionEvent.md) Axis constant: Generic 12 axis of a motion event. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_GENERIC_13](MotionEvent.md) Axis constant: Generic 13 axis of a motion event. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_GENERIC_14](MotionEvent.md) Axis constant: Generic 14 axis of a motion event. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_GENERIC_15](../android/view/MotionEvent.md) Axis constant: Generic 15 axis of a motion event. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_GENERIC_16](../android/view/MotionEvent.md) Axis constant: Generic 16 axis of a motion event. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_GENERIC_2](../android/view/MotionEvent.md) Axis constant: Generic 2 axis of a motion event. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_GENERIC_15](MotionEvent.md) Axis constant: Generic 15 axis of a motion event. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_GENERIC_16](MotionEvent.md) Axis constant: Generic 16 axis of a motion event. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_GENERIC_2](MotionEvent.md) Axis constant: Generic 2 axis of a motion event. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_GENERIC_3](../android/view/MotionEvent.md) Axis constant: Generic 3 axis of a motion event. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_GENERIC_4](../android/view/MotionEvent.md) Axis constant: Generic 4 axis of a motion event. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_GENERIC_5](../android/view/MotionEvent.md) Axis constant: Generic 5 axis of a motion event. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_GENERIC_3](MotionEvent.md) Axis constant: Generic 3 axis of a motion event. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_GENERIC_4](MotionEvent.md) Axis constant: Generic 4 axis of a motion event. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_GENERIC_5](MotionEvent.md) Axis constant: Generic 5 axis of a motion event. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_GENERIC_6](../android/view/MotionEvent.md) Axis constant: Generic 6 axis of a motion event. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_GENERIC_7](../android/view/MotionEvent.md) Axis constant: Generic 7 axis of a motion event. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_GENERIC_8](../android/view/MotionEvent.md) Axis constant: Generic 8 axis of a motion event. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_GENERIC_6](MotionEvent.md) Axis constant: Generic 6 axis of a motion event. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_GENERIC_7](MotionEvent.md) Axis constant: Generic 7 axis of a motion event. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_GENERIC_8](MotionEvent.md) Axis constant: Generic 8 axis of a motion event. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_GENERIC_9](../android/view/MotionEvent.md) Axis constant: Generic 9 axis of a motion event. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_GESTURE_PINCH_SCALE_FACTOR](../android/view/MotionEvent.md) Axis constant: pinch scale factor of a motion event. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_GESTURE_SCROLL_X_DISTANCE](../android/view/MotionEvent.md) Axis constant: X scroll distance axis of a motion event. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_GENERIC_9](MotionEvent.md) Axis constant: Generic 9 axis of a motion event. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_GESTURE_PINCH_SCALE_FACTOR](MotionEvent.md) Axis constant: pinch scale factor of a motion event. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_GESTURE_SCROLL_X_DISTANCE](MotionEvent.md) Axis constant: X scroll distance axis of a motion event. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_GESTURE_SCROLL_Y_DISTANCE](../android/view/MotionEvent.md) Axis constant: Y scroll distance axis of a motion event. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_GESTURE_X_OFFSET](../android/view/MotionEvent.md) Axis constant: X gesture offset axis of a motion event. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_GESTURE_Y_OFFSET](../android/view/MotionEvent.md) Axis constant: Y gesture offset axis of a motion event. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_GESTURE_SCROLL_Y_DISTANCE](MotionEvent.md) Axis constant: Y scroll distance axis of a motion event. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_GESTURE_X_OFFSET](MotionEvent.md) Axis constant: X gesture offset axis of a motion event. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_GESTURE_Y_OFFSET](MotionEvent.md) Axis constant: Y gesture offset axis of a motion event. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_HAT_X](../android/view/MotionEvent.md) Axis constant: Hat X axis of a motion event. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_HAT_Y](../android/view/MotionEvent.md) Axis constant: Hat Y axis of a motion event. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_HSCROLL](../android/view/MotionEvent.md) Axis constant: Horizontal Scroll axis of a motion event. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_HAT_X](MotionEvent.md) Axis constant: Hat X axis of a motion event. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_HAT_Y](MotionEvent.md) Axis constant: Hat Y axis of a motion event. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_HSCROLL](MotionEvent.md) Axis constant: Horizontal Scroll axis of a motion event. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_LTRIGGER](../android/view/MotionEvent.md) Axis constant: Left Trigger axis of a motion event. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_ORIENTATION](../android/view/MotionEvent.md) Axis constant: Orientation axis of a motion event. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_PRESSURE](../android/view/MotionEvent.md) Axis constant: Pressure axis of a motion event. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_LTRIGGER](MotionEvent.md) Axis constant: Left Trigger axis of a motion event. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_ORIENTATION](MotionEvent.md) Axis constant: Orientation axis of a motion event. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_PRESSURE](MotionEvent.md) Axis constant: Pressure axis of a motion event. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_RELATIVE_X](../android/view/MotionEvent.md) Axis constant: The movement of x position of a motion event. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_RELATIVE_Y](../android/view/MotionEvent.md) Axis constant: The movement of y position of a motion event. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_RTRIGGER](../android/view/MotionEvent.md) Axis constant: Right Trigger axis of a motion event. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_RELATIVE_X](MotionEvent.md) Axis constant: The movement of x position of a motion event. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_RELATIVE_Y](MotionEvent.md) Axis constant: The movement of y position of a motion event. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_RTRIGGER](MotionEvent.md) Axis constant: Right Trigger axis of a motion event. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_RUDDER](../android/view/MotionEvent.md) Axis constant: Rudder axis of a motion event. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_RX](../android/view/MotionEvent.md) Axis constant: X Rotation axis of a motion event. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_RY](../android/view/MotionEvent.md) Axis constant: Y Rotation axis of a motion event. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_RUDDER](MotionEvent.md) Axis constant: Rudder axis of a motion event. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_RX](MotionEvent.md) Axis constant: X Rotation axis of a motion event. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_RY](MotionEvent.md) Axis constant: Y Rotation axis of a motion event. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_RZ](../android/view/MotionEvent.md) Axis constant: Z Rotation axis of a motion event. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_SCROLL](../android/view/MotionEvent.md) Axis constant: Generic scroll axis of a motion event. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_SIZE](../android/view/MotionEvent.md) Axis constant: Size axis of a motion event. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_RZ](MotionEvent.md) Axis constant: Z Rotation axis of a motion event. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_SCROLL](MotionEvent.md) Axis constant: Generic scroll axis of a motion event. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_SIZE](MotionEvent.md) Axis constant: Size axis of a motion event. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_THROTTLE](../android/view/MotionEvent.md) Axis constant: Throttle axis of a motion event. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_TILT](../android/view/MotionEvent.md) Axis constant: Tilt axis of a motion event. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_TOOL_MAJOR](../android/view/MotionEvent.md) Axis constant: ToolMajor axis of a motion event. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_THROTTLE](MotionEvent.md) Axis constant: Throttle axis of a motion event. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_TILT](MotionEvent.md) Axis constant: Tilt axis of a motion event. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_TOOL_MAJOR](MotionEvent.md) Axis constant: ToolMajor axis of a motion event. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_TOOL_MINOR](../android/view/MotionEvent.md) Axis constant: ToolMinor axis of a motion event. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_TOUCH_MAJOR](../android/view/MotionEvent.md) Axis constant: TouchMajor axis of a motion event. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_TOUCH_MINOR](../android/view/MotionEvent.md) Axis constant: TouchMinor axis of a motion event. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_TOOL_MINOR](MotionEvent.md) Axis constant: ToolMinor axis of a motion event. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_TOUCH_MAJOR](MotionEvent.md) Axis constant: TouchMajor axis of a motion event. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_TOUCH_MINOR](MotionEvent.md) Axis constant: TouchMinor axis of a motion event. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_VSCROLL](../android/view/MotionEvent.md) Axis constant: Vertical Scroll axis of a motion event. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_WHEEL](../android/view/MotionEvent.md) Axis constant: Wheel axis of a motion event. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_X](../android/view/MotionEvent.md) Axis constant: X axis of a motion event. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_VSCROLL](MotionEvent.md) Axis constant: Vertical Scroll axis of a motion event. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_WHEEL](MotionEvent.md) Axis constant: Wheel axis of a motion event. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_X](MotionEvent.md) Axis constant: X axis of a motion event. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_Y](../android/view/MotionEvent.md) Axis constant: Y axis of a motion event. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_Z](../android/view/MotionEvent.md) Axis constant: Z axis of a motion event. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BUTTON_BACK](../android/view/MotionEvent.md) Button constant: Back button pressed (mouse back button). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_Y](MotionEvent.md) Axis constant: Y axis of a motion event. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AXIS_Z](MotionEvent.md) Axis constant: Z axis of a motion event. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BUTTON_BACK](MotionEvent.md) Button constant: Back button pressed (mouse back button). |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BUTTON_FORWARD](../android/view/MotionEvent.md) Button constant: Forward button pressed (mouse forward button). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BUTTON_PRIMARY](../android/view/MotionEvent.md) Button constant: Primary button (left mouse button). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BUTTON_SECONDARY](../android/view/MotionEvent.md) Button constant: Secondary button (right mouse button). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BUTTON_FORWARD](MotionEvent.md) Button constant: Forward button pressed (mouse forward button). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BUTTON_PRIMARY](MotionEvent.md) Button constant: Primary button (left mouse button). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BUTTON_SECONDARY](MotionEvent.md) Button constant: Secondary button (right mouse button). |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BUTTON_STYLUS_PRIMARY](../android/view/MotionEvent.md) Button constant: Primary stylus button pressed. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BUTTON_STYLUS_SECONDARY](../android/view/MotionEvent.md) Button constant: Secondary stylus button pressed. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BUTTON_TERTIARY](../android/view/MotionEvent.md) Button constant: Tertiary button (middle mouse button). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BUTTON_STYLUS_PRIMARY](MotionEvent.md) Button constant: Primary stylus button pressed. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BUTTON_STYLUS_SECONDARY](MotionEvent.md) Button constant: Secondary stylus button pressed. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BUTTON_TERTIARY](MotionEvent.md) Button constant: Tertiary button (middle mouse button). |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CLASSIFICATION_AMBIGUOUS_GESTURE](../android/view/MotionEvent.md) Classification constant: Ambiguous gesture. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CLASSIFICATION_DEEP_PRESS](../android/view/MotionEvent.md) Classification constant: Deep press. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CLASSIFICATION_NONE](../android/view/MotionEvent.md) Classification constant: None. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CLASSIFICATION_AMBIGUOUS_GESTURE](MotionEvent.md) Classification constant: Ambiguous gesture. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CLASSIFICATION_DEEP_PRESS](MotionEvent.md) Classification constant: Deep press. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CLASSIFICATION_NONE](MotionEvent.md) Classification constant: None. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CLASSIFICATION_PINCH](../android/view/MotionEvent.md) Classification constant: touchpad pinch. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CLASSIFICATION_TWO_FINGER_SWIPE](../android/view/MotionEvent.md) Classification constant: touchpad scroll. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EDGE_BOTTOM](../android/view/MotionEvent.md) Flag indicating the motion event intersected the bottom edge of the screen. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CLASSIFICATION_PINCH](MotionEvent.md) Classification constant: touchpad pinch. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CLASSIFICATION_TWO_FINGER_SWIPE](MotionEvent.md) Classification constant: touchpad scroll. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EDGE_BOTTOM](MotionEvent.md) Flag indicating the motion event intersected the bottom edge of the screen. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EDGE_LEFT](../android/view/MotionEvent.md) Flag indicating the motion event intersected the left edge of the screen. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EDGE_RIGHT](../android/view/MotionEvent.md) Flag indicating the motion event intersected the right edge of the screen. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EDGE_TOP](../android/view/MotionEvent.md) Flag indicating the motion event intersected the top edge of the screen. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EDGE_LEFT](MotionEvent.md) Flag indicating the motion event intersected the left edge of the screen. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EDGE_RIGHT](MotionEvent.md) Flag indicating the motion event intersected the right edge of the screen. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EDGE_TOP](MotionEvent.md) Flag indicating the motion event intersected the top edge of the screen. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_CANCELED](../android/view/MotionEvent.md) This flag is only set for events with [ACTION_POINTER_UP](../android/view/MotionEvent.md) and [ACTION_CANCEL](../android/view/MotionEvent.md). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_WINDOW_IS_OBSCURED](../android/view/MotionEvent.md) This flag indicates that the window that received this motion event is partly or wholly obscured by another visible window above it and the event directly passed through the obscured area. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_WINDOW_IS_PARTIALLY_OBSCURED](../android/view/MotionEvent.md) This flag indicates that the window that received this motion event is partly or wholly obscured by another visible window above it and the event did not directly pass through the obscured area. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_CANCELED](MotionEvent.md) This flag is only set for events with [ACTION_POINTER_UP](MotionEvent.md) and [ACTION_CANCEL](MotionEvent.md). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_WINDOW_IS_OBSCURED](MotionEvent.md) This flag indicates that the window that received this motion event is partly or wholly obscured by another visible window above it and the event directly passed through the obscured area. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_WINDOW_IS_PARTIALLY_OBSCURED](MotionEvent.md) This flag indicates that the window that received this motion event is partly or wholly obscured by another visible window above it and the event did not directly pass through the obscured area. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INVALID_POINTER_ID](../android/view/MotionEvent.md) An invalid pointer id. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TOOL_TYPE_ERASER](../android/view/MotionEvent.md) Tool type constant: The tool is an eraser or a stylus being used in an inverted posture. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TOOL_TYPE_FINGER](../android/view/MotionEvent.md) Tool type constant: The tool is a finger. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INVALID_POINTER_ID](MotionEvent.md) An invalid pointer id. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TOOL_TYPE_ERASER](MotionEvent.md) Tool type constant: The tool is an eraser or a stylus being used in an inverted posture. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TOOL_TYPE_FINGER](MotionEvent.md) Tool type constant: The tool is a finger. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TOOL_TYPE_MOUSE](../android/view/MotionEvent.md) Tool type constant: The tool is a mouse. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TOOL_TYPE_STYLUS](../android/view/MotionEvent.md) Tool type constant: The tool is a stylus. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TOOL_TYPE_UNKNOWN](../android/view/MotionEvent.md) Tool type constant: Unknown tool type. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TOOL_TYPE_MOUSE](MotionEvent.md) Tool type constant: The tool is a mouse. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TOOL_TYPE_STYLUS](MotionEvent.md) Tool type constant: The tool is a stylus. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TOOL_TYPE_UNKNOWN](MotionEvent.md) Tool type constant: Unknown tool type. |
 | --- | --- |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android.os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android.os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android.os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [actionToString](../android/view/MotionEvent.md))`(`action:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a string that represents the symbolic name of the specified unmasked action such as "ACTION_DOWN", "ACTION_POINTER_DOWN(3)" or an equivalent numeric constant such as "35" if unknown. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addBatch](../android/view/MotionEvent.md))`(`eventTime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `pointerCoords:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [MotionEvent.PointerCoords](../android/view/MotionEvent.PointerCoords.md)!>!`, `metaState:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Add a new movement to the batch of movements in this event. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addBatch](../android/view/MotionEvent.md))`(`eventTime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `x:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `y:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `pressure:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `size:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `metaState:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Add a new movement to the batch of movements in this event. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [actionToString](MotionEvent.md))`(`action:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a string that represents the symbolic name of the specified unmasked action such as "ACTION_DOWN", "ACTION_POINTER_DOWN(3)" or an equivalent numeric constant such as "35" if unknown. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addBatch](MotionEvent.md))`(`eventTime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `pointerCoords:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [MotionEvent.PointerCoords](../android/view/MotionEvent.PointerCoords.md)!>!`, `metaState:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Add a new movement to the batch of movements in this event. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addBatch](MotionEvent.md))`(`eventTime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `x:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `y:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `pressure:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `size:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `metaState:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Add a new movement to the batch of movements in this event. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [axisFromString](../android/view/MotionEvent.md))`(`symbolicName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Gets an axis by its symbolic name such as "AXIS_X" or an equivalent numeric constant such as "42". |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [axisToString](../android/view/MotionEvent.md))`(`axis:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a string that represents the symbolic name of the specified axis such as "AXIS_X" or an equivalent numeric constant such as "42" if unknown. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [findPointerIndex](../android/view/MotionEvent.md))`(`pointerId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Given a pointer identifier, find the index of its data in the event. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [axisFromString](MotionEvent.md))`(`symbolicName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Gets an axis by its symbolic name such as "AXIS_X" or an equivalent numeric constant such as "42". |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [axisToString](MotionEvent.md))`(`axis:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a string that represents the symbolic name of the specified axis such as "AXIS_X" or an equivalent numeric constant such as "42" if unknown. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [findPointerIndex](MotionEvent.md))`(`pointerId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Given a pointer identifier, find the index of its data in the event. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAction](../android/view/MotionEvent.md))`()` Return the kind of action being performed. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getActionButton](../android/view/MotionEvent.md))`()` Gets which button has been modified during a press or release action. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getActionIndex](../android/view/MotionEvent.md))`()` For [ACTION_POINTER_DOWN](../android/view/MotionEvent.md) or [ACTION_POINTER_UP](../android/view/MotionEvent.md) as returned by [getActionMasked](../android/view/MotionEvent.md)), this returns the associated pointer index. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAction](MotionEvent.md))`()` Return the kind of action being performed. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getActionButton](MotionEvent.md))`()` Gets which button has been modified during a press or release action. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getActionIndex](MotionEvent.md))`()` For [ACTION_POINTER_DOWN](MotionEvent.md) or [ACTION_POINTER_UP](MotionEvent.md) as returned by [getActionMasked](MotionEvent.md)), this returns the associated pointer index. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getActionMasked](../android/view/MotionEvent.md))`()` Return the masked action being performed, without pointer index information. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getAxisValue](../android/view/MotionEvent.md))`(`axis:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` [getAxisValue(int)](../android/view/MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier). |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getAxisValue](../android/view/MotionEvent.md))`(`axis:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pointerIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value of the requested axis for the given pointer*index* (use [getPointerId(int)](../android/view/MotionEvent.md))to find the pointer identifier for this index). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getActionMasked](MotionEvent.md))`()` Return the masked action being performed, without pointer index information. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getAxisValue](MotionEvent.md))`(`axis:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` [getAxisValue(int)](MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier). |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getAxisValue](MotionEvent.md))`(`axis:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pointerIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value of the requested axis for the given pointer*index* (use [getPointerId(int)](MotionEvent.md))to find the pointer identifier for this index). |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getButtonState](../android/view/MotionEvent.md))`()` Gets the state of all buttons that are pressed such as a mouse or stylus button. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getClassification](../android/view/MotionEvent.md))`()` Returns the classification for the current gesture. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDeviceId](../android/view/MotionEvent.md))`()` Gets the id for the device that this event came from. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getButtonState](MotionEvent.md))`()` Gets the state of all buttons that are pressed such as a mouse or stylus button. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getClassification](MotionEvent.md))`()` Returns the classification for the current gesture. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDeviceId](MotionEvent.md))`()` Gets the id for the device that this event came from. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getDownTime](../android/view/MotionEvent.md))`()` Returns the time (in ms) when the user originally pressed down to start a stream of position events. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEdgeFlags](../android/view/MotionEvent.md))`()` Returns a bitfield indicating which edges, if any, were touched by this MotionEvent. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getEventTime](../android/view/MotionEvent.md))`()` Retrieve the time this event occurred, in the [android.os.SystemClock#uptimeMillis](../android/os/SystemClock.md))time base. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getDownTime](MotionEvent.md))`()` Returns the time (in ms) when the user originally pressed down to start a stream of position events. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEdgeFlags](MotionEvent.md))`()` Returns a bitfield indicating which edges, if any, were touched by this MotionEvent. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getEventTime](MotionEvent.md))`()` Retrieve the time this event occurred, in the [android.os.SystemClock#uptimeMillis](../android.os/SystemClock.md))time base. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getEventTimeNanos](../android/view/MotionEvent.md))`()` Retrieve the time this event occurred, in the [android.os.SystemClock#uptimeMillis](../android/os/SystemClock.md))time base but with nanosecond precision. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFlags](../android/view/MotionEvent.md))`()` Gets the motion event flags. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getHistoricalAxisValue](../android/view/MotionEvent.md))`(`axis:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` [getHistoricalAxisValue(int,int,int)](../android/view/MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier). |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getEventTimeNanos](MotionEvent.md))`()` Retrieve the time this event occurred, in the [android.os.SystemClock#uptimeMillis](../android.os/SystemClock.md))time base but with nanosecond precision. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFlags](MotionEvent.md))`()` Gets the motion event flags. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getHistoricalAxisValue](MotionEvent.md))`(`axis:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` [getHistoricalAxisValue(int,int,int)](MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier). |
 | --- | --- |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getHistoricalAxisValue](../android/view/MotionEvent.md))`(`axis:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pointerIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the historical value of the requested axis, as per [getAxisValue(int,int)](../android/view/MotionEvent.md)), occurred between this event and the previous event for the given pointer. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getHistoricalEventTime](../android/view/MotionEvent.md))`(`pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the time that a historical movement occurred between this event and the previous event, in the [android.os.SystemClock#uptimeMillis](../android/os/SystemClock.md))time base. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getHistoricalEventTimeNanos](../android/view/MotionEvent.md))`(`pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the time that a historical movement occurred between this event and the previous event, in the [android.os.SystemClock#uptimeMillis](../android/os/SystemClock.md))time base but with nanosecond (instead of millisecond) precision. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getHistoricalAxisValue](MotionEvent.md))`(`axis:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pointerIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the historical value of the requested axis, as per [getAxisValue(int,int)](MotionEvent.md)), occurred between this event and the previous event for the given pointer. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getHistoricalEventTime](MotionEvent.md))`(`pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the time that a historical movement occurred between this event and the previous event, in the [android.os.SystemClock#uptimeMillis](../android.os/SystemClock.md))time base. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getHistoricalEventTimeNanos](MotionEvent.md))`(`pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the time that a historical movement occurred between this event and the previous event, in the [android.os.SystemClock#uptimeMillis](../android.os/SystemClock.md))time base but with nanosecond (instead of millisecond) precision. |
 | --- | --- |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getHistoricalOrientation](../android/view/MotionEvent.md))`(`pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` [getHistoricalOrientation(int,int)](../android/view/MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier). |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getHistoricalOrientation](../android/view/MotionEvent.md))`(`pointerIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a historical orientation coordinate, as per [getOrientation(int)](../android/view/MotionEvent.md)), that occurred between this event and the previous event for the given pointer. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getHistoricalPointerCoords](../android/view/MotionEvent.md))`(`pointerIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `outPointerCoords:` ` [MotionEvent.PointerCoords](../android/view/MotionEvent.PointerCoords.md)!`)` Populates a [PointerCoords](../android/view/MotionEvent.PointerCoords.md) object with historical pointer coordinate data, as per [getPointerCoords](../android/view/MotionEvent.md)), that occurred between this event and the previous event for the given pointer. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getHistoricalOrientation](MotionEvent.md))`(`pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` [getHistoricalOrientation(int,int)](MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier). |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getHistoricalOrientation](MotionEvent.md))`(`pointerIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a historical orientation coordinate, as per [getOrientation(int)](MotionEvent.md)), that occurred between this event and the previous event for the given pointer. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getHistoricalPointerCoords](MotionEvent.md))`(`pointerIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `outPointerCoords:` ` [MotionEvent.PointerCoords](../android/view/MotionEvent.PointerCoords.md)!`)` Populates a [PointerCoords](../android/view/MotionEvent.PointerCoords.md) object with historical pointer coordinate data, as per [getPointerCoords](MotionEvent.md)), that occurred between this event and the previous event for the given pointer. |
 | --- | --- |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getHistoricalPressure](../android/view/MotionEvent.md))`(`pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` [getHistoricalPressure(int,int)](../android/view/MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier). |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getHistoricalPressure](../android/view/MotionEvent.md))`(`pointerIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a historical pressure coordinate, as per [getPressure(int)](../android/view/MotionEvent.md)), that occurred between this event and the previous event for the given pointer. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getHistoricalSize](../android/view/MotionEvent.md))`(`pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` [getHistoricalSize(int,int)](../android/view/MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier). |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getHistoricalPressure](MotionEvent.md))`(`pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` [getHistoricalPressure(int,int)](MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier). |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getHistoricalPressure](MotionEvent.md))`(`pointerIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a historical pressure coordinate, as per [getPressure(int)](MotionEvent.md)), that occurred between this event and the previous event for the given pointer. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getHistoricalSize](MotionEvent.md))`(`pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` [getHistoricalSize(int,int)](MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier). |
 | --- | --- |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getHistoricalSize](../android/view/MotionEvent.md))`(`pointerIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a historical size coordinate, as per [getSize(int)](../android/view/MotionEvent.md)), that occurred between this event and the previous event for the given pointer. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getHistoricalToolMajor](../android/view/MotionEvent.md))`(`pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` [getHistoricalToolMajor(int,int)](../android/view/MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier). |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getHistoricalToolMajor](../android/view/MotionEvent.md))`(`pointerIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a historical tool major axis coordinate, as per [getToolMajor(int)](../android/view/MotionEvent.md)), that occurred between this event and the previous event for the given pointer. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getHistoricalSize](MotionEvent.md))`(`pointerIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a historical size coordinate, as per [getSize(int)](MotionEvent.md)), that occurred between this event and the previous event for the given pointer. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getHistoricalToolMajor](MotionEvent.md))`(`pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` [getHistoricalToolMajor(int,int)](MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier). |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getHistoricalToolMajor](MotionEvent.md))`(`pointerIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a historical tool major axis coordinate, as per [getToolMajor(int)](MotionEvent.md)), that occurred between this event and the previous event for the given pointer. |
 | --- | --- |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getHistoricalToolMinor](../android/view/MotionEvent.md))`(`pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` [getHistoricalToolMinor(int,int)](../android/view/MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier). |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getHistoricalToolMinor](../android/view/MotionEvent.md))`(`pointerIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a historical tool minor axis coordinate, as per [getToolMinor(int)](../android/view/MotionEvent.md)), that occurred between this event and the previous event for the given pointer. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getHistoricalTouchMajor](../android/view/MotionEvent.md))`(`pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` [getHistoricalTouchMajor(int,int)](../android/view/MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier). |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getHistoricalToolMinor](MotionEvent.md))`(`pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` [getHistoricalToolMinor(int,int)](MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier). |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getHistoricalToolMinor](MotionEvent.md))`(`pointerIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a historical tool minor axis coordinate, as per [getToolMinor(int)](MotionEvent.md)), that occurred between this event and the previous event for the given pointer. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getHistoricalTouchMajor](MotionEvent.md))`(`pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` [getHistoricalTouchMajor(int,int)](MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier). |
 | --- | --- |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getHistoricalTouchMajor](../android/view/MotionEvent.md))`(`pointerIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a historical touch major axis coordinate, as per [getTouchMajor(int)](../android/view/MotionEvent.md)), that occurred between this event and the previous event for the given pointer. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getHistoricalTouchMinor](../android/view/MotionEvent.md))`(`pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` [getHistoricalTouchMinor(int,int)](../android/view/MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier). |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getHistoricalTouchMinor](../android/view/MotionEvent.md))`(`pointerIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a historical touch minor axis coordinate, as per [getTouchMinor(int)](../android/view/MotionEvent.md)), that occurred between this event and the previous event for the given pointer. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getHistoricalTouchMajor](MotionEvent.md))`(`pointerIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a historical touch major axis coordinate, as per [getTouchMajor(int)](MotionEvent.md)), that occurred between this event and the previous event for the given pointer. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getHistoricalTouchMinor](MotionEvent.md))`(`pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` [getHistoricalTouchMinor(int,int)](MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier). |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getHistoricalTouchMinor](MotionEvent.md))`(`pointerIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a historical touch minor axis coordinate, as per [getTouchMinor(int)](MotionEvent.md)), that occurred between this event and the previous event for the given pointer. |
 | --- | --- |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getHistoricalX](../android/view/MotionEvent.md))`(`pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` [getHistoricalX(int,int)](../android/view/MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier). |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getHistoricalX](../android/view/MotionEvent.md))`(`pointerIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a historical X coordinate, as per [getX(int)](../android/view/MotionEvent.md)), that occurred between this event and the previous event for the given pointer. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getHistoricalY](../android/view/MotionEvent.md))`(`pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` [getHistoricalY(int,int)](../android/view/MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier). |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getHistoricalX](MotionEvent.md))`(`pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` [getHistoricalX(int,int)](MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier). |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getHistoricalX](MotionEvent.md))`(`pointerIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a historical X coordinate, as per [getX(int)](MotionEvent.md)), that occurred between this event and the previous event for the given pointer. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getHistoricalY](MotionEvent.md))`(`pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` [getHistoricalY(int,int)](MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier). |
 | --- | --- |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getHistoricalY](../android/view/MotionEvent.md))`(`pointerIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a historical Y coordinate, as per [getY(int)](../android/view/MotionEvent.md)), that occurred between this event and the previous event for the given pointer. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHistorySize](../android/view/MotionEvent.md))`()` Returns the number of historical points in this event. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMetaState](../android/view/MotionEvent.md))`()` Returns the state of any meta / modifier keys that were in effect when the event was generated. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getHistoricalY](MotionEvent.md))`(`pointerIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a historical Y coordinate, as per [getY(int)](MotionEvent.md)), that occurred between this event and the previous event for the given pointer. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHistorySize](MotionEvent.md))`()` Returns the number of historical points in this event. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMetaState](MotionEvent.md))`()` Returns the state of any meta / modifier keys that were in effect when the event was generated. |
 | --- | --- |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getOrientation](../android/view/MotionEvent.md))`()` [getOrientation(int)](../android/view/MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier). |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getOrientation](../android/view/MotionEvent.md))`(`pointerIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value of [AXIS_ORIENTATION](../android/view/MotionEvent.md) for the given pointer*index*. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getPointerCoords](../android/view/MotionEvent.md))`(`pointerIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `outPointerCoords:` ` [MotionEvent.PointerCoords](../android/view/MotionEvent.PointerCoords.md)!`)` Populates a [PointerCoords](../android/view/MotionEvent.PointerCoords.md) object with pointer coordinate data for the specified pointer index. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getOrientation](MotionEvent.md))`()` [getOrientation(int)](MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier). |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getOrientation](MotionEvent.md))`(`pointerIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value of [AXIS_ORIENTATION](MotionEvent.md) for the given pointer*index*. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getPointerCoords](MotionEvent.md))`(`pointerIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `outPointerCoords:` ` [MotionEvent.PointerCoords](../android/view/MotionEvent.PointerCoords.md)!`)` Populates a [PointerCoords](../android/view/MotionEvent.PointerCoords.md) object with pointer coordinate data for the specified pointer index. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPointerCount](../android/view/MotionEvent.md))`()` The number of pointers of data contained in this event. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPointerId](../android/view/MotionEvent.md))`(`pointerIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the pointer identifier associated with a particular pointer data index in this event. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getPointerProperties](../android/view/MotionEvent.md))`(`pointerIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `outPointerProperties:` ` [MotionEvent.PointerProperties](../android/view/MotionEvent.PointerProperties.md)!`)` Populates a [PointerProperties](../android/view/MotionEvent.PointerProperties.md) object with pointer properties for the specified pointer index. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPointerCount](MotionEvent.md))`()` The number of pointers of data contained in this event. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPointerId](MotionEvent.md))`(`pointerIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the pointer identifier associated with a particular pointer data index in this event. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getPointerProperties](MotionEvent.md))`(`pointerIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `outPointerProperties:` ` [MotionEvent.PointerProperties](../android/view/MotionEvent.PointerProperties.md)!`)` Populates a [PointerProperties](../android/view/MotionEvent.PointerProperties.md) object with pointer properties for the specified pointer index. |
 | --- | --- |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getPressure](../android/view/MotionEvent.md))`()` [getPressure(int)](../android/view/MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier). |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getPressure](../android/view/MotionEvent.md))`(`pointerIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value of [AXIS_PRESSURE](../android/view/MotionEvent.md) for the given pointer*index*. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getRawX](../android/view/MotionEvent.md))`()` Equivalent to [getRawX(int)](../android/view/MotionEvent.md))for pointer index 0 (regardless of the pointer identifier). |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getPressure](MotionEvent.md))`()` [getPressure(int)](MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier). |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getPressure](MotionEvent.md))`(`pointerIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value of [AXIS_PRESSURE](MotionEvent.md) for the given pointer*index*. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getRawX](MotionEvent.md))`()` Equivalent to [getRawX(int)](MotionEvent.md))for pointer index 0 (regardless of the pointer identifier). |
 | --- | --- |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getRawX](../android/view/MotionEvent.md))`(`pointerIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the X coordinate of the pointer referenced by`pointerIndex`for this motion event. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getRawY](../android/view/MotionEvent.md))`()` Equivalent to [getRawY(int)](../android/view/MotionEvent.md))for pointer index 0 (regardless of the pointer identifier). |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getRawY](../android/view/MotionEvent.md))`(`pointerIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the Y coordinate of the pointer referenced by`pointerIndex`for this motion event. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getRawX](MotionEvent.md))`(`pointerIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the X coordinate of the pointer referenced by`pointerIndex`for this motion event. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getRawY](MotionEvent.md))`()` Equivalent to [getRawY(int)](MotionEvent.md))for pointer index 0 (regardless of the pointer identifier). |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getRawY](MotionEvent.md))`(`pointerIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the Y coordinate of the pointer referenced by`pointerIndex`for this motion event. |
 | --- | --- |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getSize](../android/view/MotionEvent.md))`()` [getSize(int)](../android/view/MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier). |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getSize](../android/view/MotionEvent.md))`(`pointerIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value of [AXIS_SIZE](../android/view/MotionEvent.md) for the given pointer*index*. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSource](../android/view/MotionEvent.md))`()` Gets the source of the event. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getSize](MotionEvent.md))`()` [getSize(int)](MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier). |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getSize](MotionEvent.md))`(`pointerIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value of [AXIS_SIZE](MotionEvent.md) for the given pointer*index*. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSource](MotionEvent.md))`()` Gets the source of the event. |
 | --- | --- |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getToolMajor](../android/view/MotionEvent.md))`()` [getToolMajor(int)](../android/view/MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier). |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getToolMajor](../android/view/MotionEvent.md))`(`pointerIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value of [AXIS_TOOL_MAJOR](../android/view/MotionEvent.md) for the given pointer*index*. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getToolMinor](../android/view/MotionEvent.md))`()` [getToolMinor(int)](../android/view/MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier). |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getToolMajor](MotionEvent.md))`()` [getToolMajor(int)](MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier). |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getToolMajor](MotionEvent.md))`(`pointerIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value of [AXIS_TOOL_MAJOR](MotionEvent.md) for the given pointer*index*. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getToolMinor](MotionEvent.md))`()` [getToolMinor(int)](MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier). |
 | --- | --- |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getToolMinor](../android/view/MotionEvent.md))`(`pointerIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value of [AXIS_TOOL_MINOR](../android/view/MotionEvent.md) for the given pointer*index*. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getToolType](../android/view/MotionEvent.md))`(`pointerIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the tool type of a pointer for the given pointer index. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getTouchMajor](../android/view/MotionEvent.md))`()` [getTouchMajor(int)](../android/view/MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier). |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getToolMinor](MotionEvent.md))`(`pointerIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value of [AXIS_TOOL_MINOR](MotionEvent.md) for the given pointer*index*. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getToolType](MotionEvent.md))`(`pointerIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the tool type of a pointer for the given pointer index. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getTouchMajor](MotionEvent.md))`()` [getTouchMajor(int)](MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier). |
 | --- | --- |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getTouchMajor](../android/view/MotionEvent.md))`(`pointerIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value of [AXIS_TOUCH_MAJOR](../android/view/MotionEvent.md) for the given pointer*index*. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getTouchMinor](../android/view/MotionEvent.md))`()` [getTouchMinor(int)](../android/view/MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier). |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getTouchMinor](../android/view/MotionEvent.md))`(`pointerIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value of [AXIS_TOUCH_MINOR](../android/view/MotionEvent.md) for the given pointer*index*. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getTouchMajor](MotionEvent.md))`(`pointerIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value of [AXIS_TOUCH_MAJOR](MotionEvent.md) for the given pointer*index*. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getTouchMinor](MotionEvent.md))`()` [getTouchMinor(int)](MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier). |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getTouchMinor](MotionEvent.md))`(`pointerIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value of [AXIS_TOUCH_MINOR](MotionEvent.md) for the given pointer*index*. |
 | --- | --- |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getX](../android/view/MotionEvent.md))`()` Equivalent to [getX(int)](../android/view/MotionEvent.md))for pointer index 0 (regardless of the pointer identifier). |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getX](../android/view/MotionEvent.md))`(`pointerIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the X coordinate of the pointer referenced by`pointerIndex`for this motion event. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getXPrecision](../android/view/MotionEvent.md))`()` Return the precision of the X coordinates being reported. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getX](MotionEvent.md))`()` Equivalent to [getX(int)](MotionEvent.md))for pointer index 0 (regardless of the pointer identifier). |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getX](MotionEvent.md))`(`pointerIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the X coordinate of the pointer referenced by`pointerIndex`for this motion event. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getXPrecision](MotionEvent.md))`()` Return the precision of the X coordinates being reported. |
 | --- | --- |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getY](../android/view/MotionEvent.md))`()` Equivalent to [getY(int)](../android/view/MotionEvent.md))for pointer index 0 (regardless of the pointer identifier). |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getY](../android/view/MotionEvent.md))`(`pointerIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the Y coordinate of the pointer referenced by`pointerIndex`for this motion event. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getYPrecision](../android/view/MotionEvent.md))`()` Return the precision of the Y coordinates being reported. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getY](MotionEvent.md))`()` Equivalent to [getY(int)](MotionEvent.md))for pointer index 0 (regardless of the pointer identifier). |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getY](MotionEvent.md))`(`pointerIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the Y coordinate of the pointer referenced by`pointerIndex`for this motion event. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getYPrecision](MotionEvent.md))`()` Return the precision of the Y coordinates being reported. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isButtonPressed](../android/view/MotionEvent.md))`(`button:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Checks if a mouse or stylus button (or combination of buttons) is pressed. |
-| static [MotionEvent](../android/view/MotionEvent.md)! | [obtain](../android/view/MotionEvent.md))`(`other:` ` [MotionEvent](../android/view/MotionEvent.md)!`)` Create a new MotionEvent, copying from an existing one. |
-| static [MotionEvent](../android/view/MotionEvent.md)! | [obtain](../android/view/MotionEvent.md))`(`downTime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `eventTime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `action:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `x:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `y:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `pressure:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `size:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `metaState:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `xPrecision:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `yPrecision:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `deviceId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `edgeFlags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a new MotionEvent, filling in all of the basic values that define the motion. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isButtonPressed](MotionEvent.md))`(`button:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Checks if a mouse or stylus button (or combination of buttons) is pressed. |
+| static [MotionEvent](MotionEvent.md)! | [obtain](MotionEvent.md))`(`other:` ` [MotionEvent](MotionEvent.md)!`)` Create a new MotionEvent, copying from an existing one. |
+| static [MotionEvent](MotionEvent.md)! | [obtain](MotionEvent.md))`(`downTime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `eventTime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `action:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `x:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `y:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `pressure:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `size:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `metaState:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `xPrecision:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `yPrecision:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `deviceId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `edgeFlags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a new MotionEvent, filling in all of the basic values that define the motion. |
 | --- | --- |
-| static [MotionEvent](../android/view/MotionEvent.md)! | [obtain](../android/view/MotionEvent.md))`(`downTime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `eventTime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `action:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `x:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `y:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `metaState:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a new MotionEvent, filling in a subset of the basic motion values. |
-| static [MotionEvent](../android/view/MotionEvent.md)! | [obtain](../android/view/MotionEvent.md))`(`downTime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `eventTime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `action:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pointerCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pointerProperties:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [MotionEvent.PointerProperties](../android/view/MotionEvent.PointerProperties.md)!>!`, `pointerCoords:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [MotionEvent.PointerCoords](../android/view/MotionEvent.PointerCoords.md)!>!`, `metaState:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `buttonState:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `xPrecision:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `yPrecision:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `deviceId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `edgeFlags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `source:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a new MotionEvent, filling in all of the basic values that define the motion. |
-| static [MotionEvent](../android/view/MotionEvent.md)? | [obtain](../android/view/MotionEvent.md))`(`downTime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `eventTime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `action:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pointerCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pointerProperties:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [MotionEvent.PointerProperties](../android/view/MotionEvent.PointerProperties.md)!>`, `pointerCoords:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [MotionEvent.PointerCoords](../android/view/MotionEvent.PointerCoords.md)!>`, `metaState:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `buttonState:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `xPrecision:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `yPrecision:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `deviceId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `edgeFlags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `source:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `displayId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `classification:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a new MotionEvent, filling in all of the basic values that define the motion. |
+| static [MotionEvent](MotionEvent.md)! | [obtain](MotionEvent.md))`(`downTime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `eventTime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `action:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `x:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `y:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `metaState:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a new MotionEvent, filling in a subset of the basic motion values. |
+| static [MotionEvent](MotionEvent.md)! | [obtain](MotionEvent.md))`(`downTime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `eventTime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `action:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pointerCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pointerProperties:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [MotionEvent.PointerProperties](../android/view/MotionEvent.PointerProperties.md)!>!`, `pointerCoords:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [MotionEvent.PointerCoords](../android/view/MotionEvent.PointerCoords.md)!>!`, `metaState:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `buttonState:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `xPrecision:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `yPrecision:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `deviceId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `edgeFlags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `source:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a new MotionEvent, filling in all of the basic values that define the motion. |
+| static [MotionEvent](MotionEvent.md)? | [obtain](MotionEvent.md))`(`downTime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `eventTime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `action:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pointerCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pointerProperties:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [MotionEvent.PointerProperties](../android/view/MotionEvent.PointerProperties.md)!>`, `pointerCoords:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [MotionEvent.PointerCoords](../android/view/MotionEvent.PointerCoords.md)!>`, `metaState:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `buttonState:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `xPrecision:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `yPrecision:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `deviceId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `edgeFlags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `source:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `displayId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `classification:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a new MotionEvent, filling in all of the basic values that define the motion. |
 | --- | --- |
-| static [MotionEvent](../android/view/MotionEvent.md)! | [obtain](../android/view/MotionEvent.md))`(`downTime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `eventTime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `action:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pointerCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `x:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `y:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `pressure:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `size:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `metaState:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `xPrecision:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `yPrecision:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `deviceId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `edgeFlags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a new MotionEvent, filling in all of the basic values that define the motion. |
-| static [MotionEvent](../android/view/MotionEvent.md)! | [obtain](../android/view/MotionEvent.md))`(`downTime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `eventTime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `action:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pointerCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pointerIds:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `pointerCoords:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [MotionEvent.PointerCoords](../android/view/MotionEvent.PointerCoords.md)!>!`, `metaState:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `xPrecision:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `yPrecision:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `deviceId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `edgeFlags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `source:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a new MotionEvent, filling in all of the basic values that define the motion. |
-| static [MotionEvent](../android/view/MotionEvent.md)! | [obtainNoHistory](../android/view/MotionEvent.md))`(`other:` ` [MotionEvent](../android/view/MotionEvent.md)!`)` Create a new MotionEvent, copying from an existing one, but not including any historical point information. |
+| static [MotionEvent](MotionEvent.md)! | [obtain](MotionEvent.md))`(`downTime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `eventTime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `action:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pointerCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `x:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `y:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `pressure:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `size:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `metaState:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `xPrecision:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `yPrecision:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `deviceId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `edgeFlags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a new MotionEvent, filling in all of the basic values that define the motion. |
+| static [MotionEvent](MotionEvent.md)! | [obtain](MotionEvent.md))`(`downTime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `eventTime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `action:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pointerCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pointerIds:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `pointerCoords:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [MotionEvent.PointerCoords](../android/view/MotionEvent.PointerCoords.md)!>!`, `metaState:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `xPrecision:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `yPrecision:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `deviceId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `edgeFlags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `source:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a new MotionEvent, filling in all of the basic values that define the motion. |
+| static [MotionEvent](MotionEvent.md)! | [obtainNoHistory](MotionEvent.md))`(`other:` ` [MotionEvent](MotionEvent.md)!`)` Create a new MotionEvent, copying from an existing one, but not including any historical point information. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [offsetLocation](../android/view/MotionEvent.md))`(`deltaX:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `deltaY:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Adjust this event's location. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [recycle](../android/view/MotionEvent.md))`()` Recycle the MotionEvent, to be re-used by a later caller. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAction](../android/view/MotionEvent.md))`(`action:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets this event's action. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [offsetLocation](MotionEvent.md))`(`deltaX:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `deltaY:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Adjust this event's location. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [recycle](MotionEvent.md))`()` Recycle the MotionEvent, to be re-used by a later caller. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAction](MotionEvent.md))`(`action:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets this event's action. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEdgeFlags](../android/view/MotionEvent.md))`(`flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the bitfield indicating which edges, if any, were touched by this MotionEvent. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLocation](../android/view/MotionEvent.md))`(`x:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `y:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Set this event's location. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSource](../android/view/MotionEvent.md))`(`source:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEdgeFlags](MotionEvent.md))`(`flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the bitfield indicating which edges, if any, were touched by this MotionEvent. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLocation](MotionEvent.md))`(`x:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `y:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Set this event's location. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSource](MotionEvent.md))`(`source:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/view/MotionEvent.md))`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [transform](../android/view/MotionEvent.md))`(`matrix:` ` [Matrix](../android/graphics/Matrix.md)!`)` Applies a transformation matrix to all of the points in the event. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/view/MotionEvent.md))`(`out:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](MotionEvent.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [transform](MotionEvent.md))`(`matrix:` ` [Matrix](../android.graphics/Matrix.md)!`)` Applies a transformation matrix to all of the points in the event. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](MotionEvent.md))`(`out:` ` [Parcel](../android.os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
 
 | Protected methods ||
 |------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](../android/view/MotionEvent.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](MotionEvent.md))`()` <br /> |
 
 | Inherited functions ||
 |---|---|
-| From class [InputEvent](../android/view/InputEvent.md) |-----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/view/InputEvent.md))`()` <br /> | | [InputDevice](../android/view/InputDevice.md)! | [getDevice](../android/view/InputEvent.md))`()` <br /> Gets the device that this event came from. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFromSource](../android/view/InputEvent.md))`(`source:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> Determines whether the event is from the given source. <br /> | ||
-| From class [Parcelable](../android/os/Parcelable.md) |------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/os/Parcelable.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> Flatten this object in to a Parcel. <br /> | ||
+| From class [InputEvent](InputEvent.md) |-----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](InputEvent.md))`()` <br /> | | [InputDevice](InputDevice.md)! | [getDevice](InputEvent.md))`()` <br /> Gets the device that this event came from. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFromSource](InputEvent.md))`(`source:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> Determines whether the event is from the given source. <br /> | ||
+| From class [Parcelable](../android.os/Parcelable.md) |------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android.os/Parcelable.md))`(`dest:` ` [Parcel](../android.os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> Flatten this object in to a Parcel. <br /> | ||
 
 | Properties ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [MotionEvent](../android/view/MotionEvent.md)!\> | [CREATOR](../android/view/MotionEvent.md) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [MotionEvent](MotionEvent.md)!\> | [CREATOR](MotionEvent.md) <br /> |
 
 ## Constants
 
@@ -387,11 +387,11 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 static val ACTION_BUTTON_PRESS: Int
 ```
 
-Constant for [getActionMasked](../android/view/MotionEvent.md)): A button has been pressed.
+Constant for [getActionMasked](MotionEvent.md)): A button has been pressed.
 
-Use [getActionButton()](../android/view/MotionEvent.md))to get which button was pressed.
+Use [getActionButton()](MotionEvent.md))to get which button was pressed.
 
-This action is not a touch event so it is delivered to [View.onGenericMotionEvent(MotionEvent)](../android/view/View.md))rather than [View.onTouchEvent(MotionEvent)](../android/view/View.md)). 
+This action is not a touch event so it is delivered to [View.onGenericMotionEvent(MotionEvent)](View.md))rather than [View.onTouchEvent(MotionEvent)](View.md)). 
 
  Value: 11
 
@@ -403,11 +403,11 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 static val ACTION_BUTTON_RELEASE: Int
 ```
 
-Constant for [getActionMasked](../android/view/MotionEvent.md)): A button has been released.
+Constant for [getActionMasked](MotionEvent.md)): A button has been released.
 
-Use [getActionButton()](../android/view/MotionEvent.md))to get which button was released.
+Use [getActionButton()](MotionEvent.md))to get which button was released.
 
-This action is not a touch event so it is delivered to [View.onGenericMotionEvent(MotionEvent)](../android/view/View.md))rather than [View.onTouchEvent(MotionEvent)](../android/view/View.md)). 
+This action is not a touch event so it is delivered to [View.onGenericMotionEvent(MotionEvent)](View.md))rather than [View.onTouchEvent(MotionEvent)](View.md)). 
 
  Value: 12
 
@@ -419,7 +419,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val ACTION_CANCEL: Int
 ```
 
-Constant for [getActionMasked](../android/view/MotionEvent.md)): The current gesture has been aborted. You will not receive any more points in it. You should treat this as an up event, but not perform any action that you normally would. 
+Constant for [getActionMasked](MotionEvent.md)): The current gesture has been aborted. You will not receive any more points in it. You should treat this as an up event, but not perform any action that you normally would. 
 
  Value: 3
 
@@ -431,9 +431,9 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val ACTION_DOWN: Int
 ```
 
-Constant for [getActionMasked](../android/view/MotionEvent.md)): A pressed gesture has started, the motion contains the initial starting location.
+Constant for [getActionMasked](MotionEvent.md)): A pressed gesture has started, the motion contains the initial starting location.
 
-This is also a good time to check the button state to distinguish secondary and tertiary button clicks and handle them appropriately. Use [getButtonState](../android/view/MotionEvent.md))to retrieve the button state. 
+This is also a good time to check the button state to distinguish secondary and tertiary button clicks and handle them appropriately. Use [getButtonState](MotionEvent.md))to retrieve the button state. 
 
  Value: 0
 
@@ -445,11 +445,11 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 static val ACTION_HOVER_ENTER: Int
 ```
 
-Constant for [getActionMasked](../android/view/MotionEvent.md)): The pointer is not down but has entered the boundaries of a window or view.
+Constant for [getActionMasked](MotionEvent.md)): The pointer is not down but has entered the boundaries of a window or view.
 
 This action is always delivered to the window or view under the pointer.
 
-This action is not a touch event so it is delivered to [View.onGenericMotionEvent(MotionEvent)](../android/view/View.md))rather than [View.onTouchEvent(MotionEvent)](../android/view/View.md)). 
+This action is not a touch event so it is delivered to [View.onGenericMotionEvent(MotionEvent)](View.md))rather than [View.onTouchEvent(MotionEvent)](View.md)). 
 
  Value: 9
 
@@ -461,11 +461,11 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 static val ACTION_HOVER_EXIT: Int
 ```
 
-Constant for [getActionMasked](../android/view/MotionEvent.md)): The pointer is not down but has exited the boundaries of a window or view.
+Constant for [getActionMasked](MotionEvent.md)): The pointer is not down but has exited the boundaries of a window or view.
 
 This action is always delivered to the window or view that was previously under the pointer.
 
-This action is not a touch event so it is delivered to [View.onGenericMotionEvent(MotionEvent)](../android/view/View.md))rather than [View.onTouchEvent(MotionEvent)](../android/view/View.md)). 
+This action is not a touch event so it is delivered to [View.onGenericMotionEvent(MotionEvent)](View.md))rather than [View.onTouchEvent(MotionEvent)](View.md)). 
 
  Value: 10
 
@@ -477,11 +477,11 @@ Added in [API level 12](https://developer.android.com/guide/topics/manifest/uses
 static val ACTION_HOVER_MOVE: Int
 ```
 
-Constant for [getActionMasked](../android/view/MotionEvent.md)): A change happened but the pointer is not down (unlike [ACTION_MOVE](../android/view/MotionEvent.md)). The motion contains the most recent point, as well as any intermediate points since the last hover move event.
+Constant for [getActionMasked](MotionEvent.md)): A change happened but the pointer is not down (unlike [ACTION_MOVE](MotionEvent.md)). The motion contains the most recent point, as well as any intermediate points since the last hover move event.
 
 This action is always delivered to the window or view under the pointer.
 
-This action is not a touch event so it is delivered to [View.onGenericMotionEvent(MotionEvent)](../android/view/View.md))rather than [View.onTouchEvent(MotionEvent)](../android/view/View.md)). 
+This action is not a touch event so it is delivered to [View.onGenericMotionEvent(MotionEvent)](View.md))rather than [View.onTouchEvent(MotionEvent)](View.md)). 
 
  Value: 7
 
@@ -505,7 +505,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val ACTION_MOVE: Int
 ```
 
-Constant for [getActionMasked](../android/view/MotionEvent.md)): A change has happened during a press gesture (between [ACTION_DOWN](../android/view/MotionEvent.md) and [ACTION_UP](../android/view/MotionEvent.md)). The motion contains the most recent point, as well as any intermediate points since the last down or move event. 
+Constant for [getActionMasked](MotionEvent.md)): A change has happened during a press gesture (between [ACTION_DOWN](MotionEvent.md) and [ACTION_UP](MotionEvent.md)). The motion contains the most recent point, as well as any intermediate points since the last down or move event. 
 
  Value: 2
 
@@ -517,9 +517,9 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 static val ACTION_OUTSIDE: Int
 ```
 
-Constant for [getActionMasked](../android/view/MotionEvent.md)): A movement has happened outside of the normal bounds of the UI element. This does not provide a full gesture, but only the initial location of the movement/touch.
+Constant for [getActionMasked](MotionEvent.md)): A movement has happened outside of the normal bounds of the UI element. This does not provide a full gesture, but only the initial location of the movement/touch.
 
-Note: Because the location of any event will be outside the bounds of the view hierarchy, it will not get dispatched to any children of a ViewGroup by default. Therefore, movements with ACTION_OUTSIDE should be handled in either the root [View](../android/view/View.md) or in the appropriate [Window.Callback](../android/view/Window.Callback.md)(e.g. [android.app.Activity](../android/app/Activity.md) or [android.app.Dialog](../android/app/Dialog.md)). 
+Note: Because the location of any event will be outside the bounds of the view hierarchy, it will not get dispatched to any children of a ViewGroup by default. Therefore, movements with ACTION_OUTSIDE should be handled in either the root [View](View.md) or in the appropriate [Window.Callback](../android/view/Window.Callback.md)(e.g. [android.app.Activity](../android.app/Activity.md) or [android.app.Dialog](../android.app/Dialog.md)). 
 
  Value: 4
 
@@ -532,7 +532,7 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 static val ACTION_POINTER_1_DOWN: Int
 ```
 
-**Deprecated:** *Use [ACTION_POINTER_INDEX_MASK](../android/view/MotionEvent.md) to retrieve the data index associated with [ACTION_POINTER_DOWN](../android/view/MotionEvent.md).* 
+**Deprecated:** *Use [ACTION_POINTER_INDEX_MASK](MotionEvent.md) to retrieve the data index associated with [ACTION_POINTER_DOWN](MotionEvent.md).* 
 
  Value: 5
 
@@ -545,7 +545,7 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 static val ACTION_POINTER_1_UP: Int
 ```
 
-**Deprecated:** *Use [ACTION_POINTER_INDEX_MASK](../android/view/MotionEvent.md) to retrieve the data index associated with [ACTION_POINTER_UP](../android/view/MotionEvent.md).* 
+**Deprecated:** *Use [ACTION_POINTER_INDEX_MASK](MotionEvent.md) to retrieve the data index associated with [ACTION_POINTER_UP](MotionEvent.md).* 
 
  Value: 6
 
@@ -558,7 +558,7 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 static val ACTION_POINTER_2_DOWN: Int
 ```
 
-**Deprecated:** *Use [ACTION_POINTER_INDEX_MASK](../android/view/MotionEvent.md) to retrieve the data index associated with [ACTION_POINTER_DOWN](../android/view/MotionEvent.md).* 
+**Deprecated:** *Use [ACTION_POINTER_INDEX_MASK](MotionEvent.md) to retrieve the data index associated with [ACTION_POINTER_DOWN](MotionEvent.md).* 
 
  Value: 261
 
@@ -571,7 +571,7 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 static val ACTION_POINTER_2_UP: Int
 ```
 
-**Deprecated:** *Use [ACTION_POINTER_INDEX_MASK](../android/view/MotionEvent.md) to retrieve the data index associated with [ACTION_POINTER_UP](../android/view/MotionEvent.md).* 
+**Deprecated:** *Use [ACTION_POINTER_INDEX_MASK](MotionEvent.md) to retrieve the data index associated with [ACTION_POINTER_UP](MotionEvent.md).* 
 
  Value: 262
 
@@ -584,7 +584,7 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 static val ACTION_POINTER_3_DOWN: Int
 ```
 
-**Deprecated:** *Use [ACTION_POINTER_INDEX_MASK](../android/view/MotionEvent.md) to retrieve the data index associated with [ACTION_POINTER_DOWN](../android/view/MotionEvent.md).* 
+**Deprecated:** *Use [ACTION_POINTER_INDEX_MASK](MotionEvent.md) to retrieve the data index associated with [ACTION_POINTER_DOWN](MotionEvent.md).* 
 
  Value: 517
 
@@ -597,7 +597,7 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 static val ACTION_POINTER_3_UP: Int
 ```
 
-**Deprecated:** *Use [ACTION_POINTER_INDEX_MASK](../android/view/MotionEvent.md) to retrieve the data index associated with [ACTION_POINTER_UP](../android/view/MotionEvent.md).* 
+**Deprecated:** *Use [ACTION_POINTER_INDEX_MASK](MotionEvent.md) to retrieve the data index associated with [ACTION_POINTER_UP](MotionEvent.md).* 
 
  Value: 518
 
@@ -609,11 +609,11 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 static val ACTION_POINTER_DOWN: Int
 ```
 
-Constant for [getActionMasked](../android/view/MotionEvent.md)): A non-primary pointer has gone down.
+Constant for [getActionMasked](MotionEvent.md)): A non-primary pointer has gone down.
 
-Use [getActionIndex](../android/view/MotionEvent.md))to retrieve the index of the pointer that changed.
+Use [getActionIndex](MotionEvent.md))to retrieve the index of the pointer that changed.
 
-The index is encoded in the [ACTION_POINTER_INDEX_MASK](../android/view/MotionEvent.md) bits of the unmasked action returned by [getAction](../android/view/MotionEvent.md)). 
+The index is encoded in the [ACTION_POINTER_INDEX_MASK](MotionEvent.md) bits of the unmasked action returned by [getAction](MotionEvent.md)). 
 
  Value: 5
 
@@ -626,7 +626,7 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 static val ACTION_POINTER_ID_MASK: Int
 ```
 
-**Deprecated:** *Renamed to [ACTION_POINTER_INDEX_MASK](../android/view/MotionEvent.md) to match the actual data contained in these bits.* 
+**Deprecated:** *Renamed to [ACTION_POINTER_INDEX_MASK](MotionEvent.md) to match the actual data contained in these bits.* 
 
  Value: 65280
 
@@ -639,7 +639,7 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 static val ACTION_POINTER_ID_SHIFT: Int
 ```
 
-**Deprecated:** *Renamed to [ACTION_POINTER_INDEX_SHIFT](../android/view/MotionEvent.md) to match the actual data contained in these bits.* 
+**Deprecated:** *Renamed to [ACTION_POINTER_INDEX_SHIFT](MotionEvent.md) to match the actual data contained in these bits.* 
 
  Value: 8
 
@@ -651,13 +651,13 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 static val ACTION_POINTER_INDEX_MASK: Int
 ```
 
-Bits in the action code that represent a pointer index, used with [ACTION_POINTER_DOWN](../android/view/MotionEvent.md) and [ACTION_POINTER_UP](../android/view/MotionEvent.md). Shifting down by [ACTION_POINTER_INDEX_SHIFT](../android/view/MotionEvent.md) provides the actual pointer index where the data for the pointer going up or down can be found; you can get its identifier with [getPointerId(int)](../android/view/MotionEvent.md))and the actual data with [getX(int)](../android/view/MotionEvent.md))etc. 
+Bits in the action code that represent a pointer index, used with [ACTION_POINTER_DOWN](MotionEvent.md) and [ACTION_POINTER_UP](MotionEvent.md). Shifting down by [ACTION_POINTER_INDEX_SHIFT](MotionEvent.md) provides the actual pointer index where the data for the pointer going up or down can be found; you can get its identifier with [getPointerId(int)](MotionEvent.md))and the actual data with [getX(int)](MotionEvent.md))etc. 
 
  Value: 65280
 
 **See Also**
 
-- [#getActionIndex](../android/view/MotionEvent.md)) 
+- [#getActionIndex](MotionEvent.md)) 
 
 ### ACTION_POINTER_INDEX_SHIFT
 
@@ -667,13 +667,13 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 static val ACTION_POINTER_INDEX_SHIFT: Int
 ```
 
-Bit shift for the action bits holding the pointer index as defined by [ACTION_POINTER_INDEX_MASK](../android/view/MotionEvent.md). 
+Bit shift for the action bits holding the pointer index as defined by [ACTION_POINTER_INDEX_MASK](MotionEvent.md). 
 
  Value: 8
 
 **See Also**
 
-- [#getActionIndex](../android/view/MotionEvent.md)) 
+- [#getActionIndex](MotionEvent.md)) 
 
 ### ACTION_POINTER_UP
 
@@ -683,11 +683,11 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 static val ACTION_POINTER_UP: Int
 ```
 
-Constant for [getActionMasked](../android/view/MotionEvent.md)): A non-primary pointer has gone up.
+Constant for [getActionMasked](MotionEvent.md)): A non-primary pointer has gone up.
 
-Use [getActionIndex](../android/view/MotionEvent.md))to retrieve the index of the pointer that changed.
+Use [getActionIndex](MotionEvent.md))to retrieve the index of the pointer that changed.
 
-The index is encoded in the [ACTION_POINTER_INDEX_MASK](../android/view/MotionEvent.md) bits of the unmasked action returned by [getAction](../android/view/MotionEvent.md)). 
+The index is encoded in the [ACTION_POINTER_INDEX_MASK](MotionEvent.md) bits of the unmasked action returned by [getAction](MotionEvent.md)). 
 
  Value: 6
 
@@ -699,11 +699,11 @@ Added in [API level 12](https://developer.android.com/guide/topics/manifest/uses
 static val ACTION_SCROLL: Int
 ```
 
-Constant for [getActionMasked](../android/view/MotionEvent.md)): The motion event contains relative vertical and/or horizontal scroll offsets. Use [getAxisValue(int)](../android/view/MotionEvent.md))to retrieve the information from [AXIS_VSCROLL](../android/view/MotionEvent.md) and [AXIS_HSCROLL](../android/view/MotionEvent.md). The pointer may or may not be down when this event is dispatched.
+Constant for [getActionMasked](MotionEvent.md)): The motion event contains relative vertical and/or horizontal scroll offsets. Use [getAxisValue(int)](MotionEvent.md))to retrieve the information from [AXIS_VSCROLL](MotionEvent.md) and [AXIS_HSCROLL](MotionEvent.md). The pointer may or may not be down when this event is dispatched.
 
 This action is always delivered to the window or view under the pointer, which may not be the window or view currently touched.
 
-This action is not a touch event so it is delivered to [View.onGenericMotionEvent(MotionEvent)](../android/view/View.md))rather than [View.onTouchEvent(MotionEvent)](../android/view/View.md)). 
+This action is not a touch event so it is delivered to [View.onGenericMotionEvent(MotionEvent)](View.md))rather than [View.onTouchEvent(MotionEvent)](View.md)). 
 
  Value: 8
 
@@ -715,7 +715,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val ACTION_UP: Int
 ```
 
-Constant for [getActionMasked](../android/view/MotionEvent.md)): A pressed gesture has finished, the motion contains the final release location as well as any intermediate points since the last down or move event. 
+Constant for [getActionMasked](MotionEvent.md)): A pressed gesture has finished, the motion contains the final release location as well as any intermediate points since the last down or move event. 
 
  Value: 1
 
@@ -739,8 +739,8 @@ Axis constant: Brake axis of a motion event.
 
 **See Also**
 
-- [#getAxisValue(int, int)](../android/view/MotionEvent.md))
-- [#getHistoricalAxisValue(int, int, int)](../android/view/MotionEvent.md))
+- [#getAxisValue(int, int)](MotionEvent.md))
+- [#getHistoricalAxisValue(int, int, int)](MotionEvent.md))
 - [android.view.MotionEvent.PointerCoords#getAxisValue(int)](../android/view/MotionEvent.PointerCoords.md)) 
 
 ### AXIS_DISTANCE
@@ -763,8 +763,8 @@ Axis constant: Distance axis of a motion event.
 
 **See Also**
 
-- [#getAxisValue(int, int)](../android/view/MotionEvent.md))
-- [#getHistoricalAxisValue(int, int, int)](../android/view/MotionEvent.md))
+- [#getAxisValue(int, int)](MotionEvent.md))
+- [#getHistoricalAxisValue(int, int, int)](MotionEvent.md))
 - [android.view.MotionEvent.PointerCoords#getAxisValue(int)](../android/view/MotionEvent.PointerCoords.md)) 
 
 ### AXIS_GAS
@@ -787,8 +787,8 @@ Axis constant: Gas axis of a motion event.
 
 **See Also**
 
-- [#getAxisValue(int, int)](../android/view/MotionEvent.md))
-- [#getHistoricalAxisValue(int, int, int)](../android/view/MotionEvent.md))
+- [#getAxisValue(int, int)](MotionEvent.md))
+- [#getHistoricalAxisValue(int, int, int)](MotionEvent.md))
 - [android.view.MotionEvent.PointerCoords#getAxisValue(int)](../android/view/MotionEvent.PointerCoords.md)) 
 
 ### AXIS_GENERIC_1
@@ -805,8 +805,8 @@ Axis constant: Generic 1 axis of a motion event. The interpretation of a generic
 
 **See Also**
 
-- [#getAxisValue(int, int)](../android/view/MotionEvent.md))
-- [#getHistoricalAxisValue(int, int, int)](../android/view/MotionEvent.md))
+- [#getAxisValue(int, int)](MotionEvent.md))
+- [#getHistoricalAxisValue(int, int, int)](MotionEvent.md))
 - [android.view.MotionEvent.PointerCoords#getAxisValue(int)](../android/view/MotionEvent.PointerCoords.md)) 
 
 ### AXIS_GENERIC_10
@@ -823,8 +823,8 @@ Axis constant: Generic 10 axis of a motion event. The interpretation of a generi
 
 **See Also**
 
-- [#getAxisValue(int, int)](../android/view/MotionEvent.md))
-- [#getHistoricalAxisValue(int, int, int)](../android/view/MotionEvent.md))
+- [#getAxisValue(int, int)](MotionEvent.md))
+- [#getHistoricalAxisValue(int, int, int)](MotionEvent.md))
 - [android.view.MotionEvent.PointerCoords#getAxisValue(int)](../android/view/MotionEvent.PointerCoords.md)) 
 
 ### AXIS_GENERIC_11
@@ -841,8 +841,8 @@ Axis constant: Generic 11 axis of a motion event. The interpretation of a generi
 
 **See Also**
 
-- [#getAxisValue(int, int)](../android/view/MotionEvent.md))
-- [#getHistoricalAxisValue(int, int, int)](../android/view/MotionEvent.md))
+- [#getAxisValue(int, int)](MotionEvent.md))
+- [#getHistoricalAxisValue(int, int, int)](MotionEvent.md))
 - [android.view.MotionEvent.PointerCoords#getAxisValue(int)](../android/view/MotionEvent.PointerCoords.md)) 
 
 ### AXIS_GENERIC_12
@@ -859,8 +859,8 @@ Axis constant: Generic 12 axis of a motion event. The interpretation of a generi
 
 **See Also**
 
-- [#getAxisValue(int, int)](../android/view/MotionEvent.md))
-- [#getHistoricalAxisValue(int, int, int)](../android/view/MotionEvent.md))
+- [#getAxisValue(int, int)](MotionEvent.md))
+- [#getHistoricalAxisValue(int, int, int)](MotionEvent.md))
 - [android.view.MotionEvent.PointerCoords#getAxisValue(int)](../android/view/MotionEvent.PointerCoords.md)) 
 
 ### AXIS_GENERIC_13
@@ -877,8 +877,8 @@ Axis constant: Generic 13 axis of a motion event. The interpretation of a generi
 
 **See Also**
 
-- [#getAxisValue(int, int)](../android/view/MotionEvent.md))
-- [#getHistoricalAxisValue(int, int, int)](../android/view/MotionEvent.md))
+- [#getAxisValue(int, int)](MotionEvent.md))
+- [#getHistoricalAxisValue(int, int, int)](MotionEvent.md))
 - [android.view.MotionEvent.PointerCoords#getAxisValue(int)](../android/view/MotionEvent.PointerCoords.md)) 
 
 ### AXIS_GENERIC_14
@@ -895,8 +895,8 @@ Axis constant: Generic 14 axis of a motion event. The interpretation of a generi
 
 **See Also**
 
-- [#getAxisValue(int, int)](../android/view/MotionEvent.md))
-- [#getHistoricalAxisValue(int, int, int)](../android/view/MotionEvent.md))
+- [#getAxisValue(int, int)](MotionEvent.md))
+- [#getHistoricalAxisValue(int, int, int)](MotionEvent.md))
 - [android.view.MotionEvent.PointerCoords#getAxisValue(int)](../android/view/MotionEvent.PointerCoords.md)) 
 
 ### AXIS_GENERIC_15
@@ -913,8 +913,8 @@ Axis constant: Generic 15 axis of a motion event. The interpretation of a generi
 
 **See Also**
 
-- [#getAxisValue(int, int)](../android/view/MotionEvent.md))
-- [#getHistoricalAxisValue(int, int, int)](../android/view/MotionEvent.md))
+- [#getAxisValue(int, int)](MotionEvent.md))
+- [#getHistoricalAxisValue(int, int, int)](MotionEvent.md))
 - [android.view.MotionEvent.PointerCoords#getAxisValue(int)](../android/view/MotionEvent.PointerCoords.md)) 
 
 ### AXIS_GENERIC_16
@@ -931,8 +931,8 @@ Axis constant: Generic 16 axis of a motion event. The interpretation of a generi
 
 **See Also**
 
-- [#getAxisValue(int, int)](../android/view/MotionEvent.md))
-- [#getHistoricalAxisValue(int, int, int)](../android/view/MotionEvent.md))
+- [#getAxisValue(int, int)](MotionEvent.md))
+- [#getHistoricalAxisValue(int, int, int)](MotionEvent.md))
 - [android.view.MotionEvent.PointerCoords#getAxisValue(int)](../android/view/MotionEvent.PointerCoords.md)) 
 
 ### AXIS_GENERIC_2
@@ -949,8 +949,8 @@ Axis constant: Generic 2 axis of a motion event. The interpretation of a generic
 
 **See Also**
 
-- [#getAxisValue(int, int)](../android/view/MotionEvent.md))
-- [#getHistoricalAxisValue(int, int, int)](../android/view/MotionEvent.md))
+- [#getAxisValue(int, int)](MotionEvent.md))
+- [#getHistoricalAxisValue(int, int, int)](MotionEvent.md))
 - [android.view.MotionEvent.PointerCoords#getAxisValue(int)](../android/view/MotionEvent.PointerCoords.md)) 
 
 ### AXIS_GENERIC_3
@@ -967,8 +967,8 @@ Axis constant: Generic 3 axis of a motion event. The interpretation of a generic
 
 **See Also**
 
-- [#getAxisValue(int, int)](../android/view/MotionEvent.md))
-- [#getHistoricalAxisValue(int, int, int)](../android/view/MotionEvent.md))
+- [#getAxisValue(int, int)](MotionEvent.md))
+- [#getHistoricalAxisValue(int, int, int)](MotionEvent.md))
 - [android.view.MotionEvent.PointerCoords#getAxisValue(int)](../android/view/MotionEvent.PointerCoords.md)) 
 
 ### AXIS_GENERIC_4
@@ -985,8 +985,8 @@ Axis constant: Generic 4 axis of a motion event. The interpretation of a generic
 
 **See Also**
 
-- [#getAxisValue(int, int)](../android/view/MotionEvent.md))
-- [#getHistoricalAxisValue(int, int, int)](../android/view/MotionEvent.md))
+- [#getAxisValue(int, int)](MotionEvent.md))
+- [#getHistoricalAxisValue(int, int, int)](MotionEvent.md))
 - [android.view.MotionEvent.PointerCoords#getAxisValue(int)](../android/view/MotionEvent.PointerCoords.md)) 
 
 ### AXIS_GENERIC_5
@@ -1003,8 +1003,8 @@ Axis constant: Generic 5 axis of a motion event. The interpretation of a generic
 
 **See Also**
 
-- [#getAxisValue(int, int)](../android/view/MotionEvent.md))
-- [#getHistoricalAxisValue(int, int, int)](../android/view/MotionEvent.md))
+- [#getAxisValue(int, int)](MotionEvent.md))
+- [#getHistoricalAxisValue(int, int, int)](MotionEvent.md))
 - [android.view.MotionEvent.PointerCoords#getAxisValue(int)](../android/view/MotionEvent.PointerCoords.md)) 
 
 ### AXIS_GENERIC_6
@@ -1021,8 +1021,8 @@ Axis constant: Generic 6 axis of a motion event. The interpretation of a generic
 
 **See Also**
 
-- [#getAxisValue(int, int)](../android/view/MotionEvent.md))
-- [#getHistoricalAxisValue(int, int, int)](../android/view/MotionEvent.md))
+- [#getAxisValue(int, int)](MotionEvent.md))
+- [#getHistoricalAxisValue(int, int, int)](MotionEvent.md))
 - [android.view.MotionEvent.PointerCoords#getAxisValue(int)](../android/view/MotionEvent.PointerCoords.md)) 
 
 ### AXIS_GENERIC_7
@@ -1039,8 +1039,8 @@ Axis constant: Generic 7 axis of a motion event. The interpretation of a generic
 
 **See Also**
 
-- [#getAxisValue(int, int)](../android/view/MotionEvent.md))
-- [#getHistoricalAxisValue(int, int, int)](../android/view/MotionEvent.md))
+- [#getAxisValue(int, int)](MotionEvent.md))
+- [#getHistoricalAxisValue(int, int, int)](MotionEvent.md))
 - [android.view.MotionEvent.PointerCoords#getAxisValue(int)](../android/view/MotionEvent.PointerCoords.md)) 
 
 ### AXIS_GENERIC_8
@@ -1057,8 +1057,8 @@ Axis constant: Generic 8 axis of a motion event. The interpretation of a generic
 
 **See Also**
 
-- [#getAxisValue(int, int)](../android/view/MotionEvent.md))
-- [#getHistoricalAxisValue(int, int, int)](../android/view/MotionEvent.md))
+- [#getAxisValue(int, int)](MotionEvent.md))
+- [#getHistoricalAxisValue(int, int, int)](MotionEvent.md))
 - [android.view.MotionEvent.PointerCoords#getAxisValue(int)](../android/view/MotionEvent.PointerCoords.md)) 
 
 ### AXIS_GENERIC_9
@@ -1075,8 +1075,8 @@ Axis constant: Generic 9 axis of a motion event. The interpretation of a generic
 
 **See Also**
 
-- [#getAxisValue(int, int)](../android/view/MotionEvent.md))
-- [#getHistoricalAxisValue(int, int, int)](../android/view/MotionEvent.md))
+- [#getAxisValue(int, int)](MotionEvent.md))
+- [#getHistoricalAxisValue(int, int, int)](MotionEvent.md))
 - [android.view.MotionEvent.PointerCoords#getAxisValue(int)](../android/view/MotionEvent.PointerCoords.md)) 
 
 ### AXIS_GESTURE_PINCH_SCALE_FACTOR
@@ -1127,7 +1127,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val AXIS_GESTURE_SCROLL_Y_DISTANCE: Int
 ```
 
-Axis constant: Y scroll distance axis of a motion event. The same as [AXIS_GESTURE_SCROLL_X_DISTANCE](../android/view/MotionEvent.md), but for the Y axis. 
+Axis constant: Y scroll distance axis of a motion event. The same as [AXIS_GESTURE_SCROLL_X_DISTANCE](MotionEvent.md), but for the Y axis. 
 
  Value: 51
 
@@ -1159,7 +1159,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val AXIS_GESTURE_Y_OFFSET: Int
 ```
 
-Axis constant: Y gesture offset axis of a motion event. The same as [AXIS_GESTURE_X_OFFSET](../android/view/MotionEvent.md), but for the Y axis. 
+Axis constant: Y gesture offset axis of a motion event. The same as [AXIS_GESTURE_X_OFFSET](MotionEvent.md), but for the Y axis. 
 
  Value: 49
 
@@ -1183,8 +1183,8 @@ Axis constant: Hat X axis of a motion event.
 
 **See Also**
 
-- [#getAxisValue(int, int)](../android/view/MotionEvent.md))
-- [#getHistoricalAxisValue(int, int, int)](../android/view/MotionEvent.md))
+- [#getAxisValue(int, int)](MotionEvent.md))
+- [#getHistoricalAxisValue(int, int, int)](MotionEvent.md))
 - [android.view.MotionEvent.PointerCoords#getAxisValue(int)](../android/view/MotionEvent.PointerCoords.md)) 
 
 ### AXIS_HAT_Y
@@ -1207,8 +1207,8 @@ Axis constant: Hat Y axis of a motion event.
 
 **See Also**
 
-- [#getAxisValue(int, int)](../android/view/MotionEvent.md))
-- [#getHistoricalAxisValue(int, int, int)](../android/view/MotionEvent.md))
+- [#getAxisValue(int, int)](MotionEvent.md))
+- [#getHistoricalAxisValue(int, int, int)](MotionEvent.md))
 - [android.view.MotionEvent.PointerCoords#getAxisValue(int)](../android/view/MotionEvent.PointerCoords.md)) 
 
 ### AXIS_HSCROLL
@@ -1233,8 +1233,8 @@ This axis should be used to scroll views horizontally.
 
 **See Also**
 
-- [#getAxisValue(int, int)](../android/view/MotionEvent.md))
-- [#getHistoricalAxisValue(int, int, int)](../android/view/MotionEvent.md))
+- [#getAxisValue(int, int)](MotionEvent.md))
+- [#getHistoricalAxisValue(int, int, int)](MotionEvent.md))
 - [android.view.MotionEvent.PointerCoords#getAxisValue(int)](../android/view/MotionEvent.PointerCoords.md)) 
 
 ### AXIS_LTRIGGER
@@ -1257,8 +1257,8 @@ Axis constant: Left Trigger axis of a motion event.
 
 **See Also**
 
-- [#getAxisValue(int, int)](../android/view/MotionEvent.md))
-- [#getHistoricalAxisValue(int, int, int)](../android/view/MotionEvent.md))
+- [#getAxisValue(int, int)](MotionEvent.md))
+- [#getHistoricalAxisValue(int, int, int)](MotionEvent.md))
 - [android.view.MotionEvent.PointerCoords#getAxisValue(int)](../android/view/MotionEvent.PointerCoords.md)) 
 
 ### AXIS_ORIENTATION
@@ -1274,7 +1274,7 @@ Axis constant: Orientation axis of a motion event.
 <br />
 
 - For a touch screen or touch pad, reports the orientation of the finger or tool in radians relative to the vertical plane of the device. An angle of 0 radians indicates that the major axis of contact is oriented upwards, is perfectly circular or is of unknown orientation. A positive angle indicates that the major axis of contact is oriented to the right. A negative angle indicates that the major axis of contact is oriented to the left. The full range is from -PI/2 radians (finger pointing fully left) to PI/2 radians (finger pointing fully right).
-- For a stylus, the orientation indicates the direction in which the stylus is pointing in relation to the vertical axis of the current orientation of the screen. The range is from -PI radians to PI radians, where 0 is pointing up, -PI/2 radians is pointing left, -PI or PI radians is pointing down, and PI/2 radians is pointing right. See also [AXIS_TILT](../android/view/MotionEvent.md).
+- For a stylus, the orientation indicates the direction in which the stylus is pointing in relation to the vertical axis of the current orientation of the screen. The range is from -PI radians to PI radians, where 0 is pointing up, -PI/2 radians is pointing left, -PI or PI radians is pointing down, and PI/2 radians is pointing right. See also [AXIS_TILT](MotionEvent.md).
 
 <br />
 
@@ -1282,8 +1282,8 @@ Axis constant: Orientation axis of a motion event.
 
 **See Also**
 
-- [#getOrientation(int)](../android/view/MotionEvent.md))
-- [#getHistoricalOrientation(int, int)](../android/view/MotionEvent.md))
+- [#getOrientation(int)](MotionEvent.md))
+- [#getHistoricalOrientation(int, int)](MotionEvent.md))
 - [android.view.MotionEvent.PointerCoords#orientation](../android/view/MotionEvent.PointerCoords.md) 
 
 ### AXIS_PRESSURE
@@ -1308,8 +1308,8 @@ Axis constant: Pressure axis of a motion event.
 
 **See Also**
 
-- [#getPressure(int)](../android/view/MotionEvent.md))
-- [#getHistoricalPressure(int, int)](../android/view/MotionEvent.md))
+- [#getPressure(int)](MotionEvent.md))
+- [#getHistoricalPressure(int, int)](MotionEvent.md))
 - [android.view.MotionEvent.PointerCoords#pressure](../android/view/MotionEvent.PointerCoords.md) 
 
 ### AXIS_RELATIVE_X
@@ -1334,9 +1334,9 @@ These values are relative to the state from the last sample, not accumulated, so
 
 **See Also**
 
-- [#getAxisValue(int, int)](../android/view/MotionEvent.md))
-- [#getHistoricalAxisValue(int, int, int)](../android/view/MotionEvent.md))
-- [android.view.MotionEvent.PointerCoords#getAxisValue(int, int)](../android/view/MotionEvent.md)) 
+- [#getAxisValue(int, int)](MotionEvent.md))
+- [#getHistoricalAxisValue(int, int, int)](MotionEvent.md))
+- [android.view.MotionEvent.PointerCoords#getAxisValue(int, int)](MotionEvent.md)) 
 
 ### AXIS_RELATIVE_Y
 
@@ -1348,7 +1348,7 @@ static val AXIS_RELATIVE_Y: Int
 
 Axis constant: The movement of y position of a motion event.
 
-This is similar to [AXIS_RELATIVE_X](../android/view/MotionEvent.md) but for y-axis.
+This is similar to [AXIS_RELATIVE_X](MotionEvent.md) but for y-axis.
 
 These values are relative to the state from the last sample, not accumulated, so developers should make sure to process this axis value for all batched historical samples. 
 
@@ -1356,9 +1356,9 @@ These values are relative to the state from the last sample, not accumulated, so
 
 **See Also**
 
-- [#getAxisValue(int, int)](../android/view/MotionEvent.md))
-- [#getHistoricalAxisValue(int, int, int)](../android/view/MotionEvent.md))
-- [android.view.MotionEvent.PointerCoords#getAxisValue(int, int)](../android/view/MotionEvent.md)) 
+- [#getAxisValue(int, int)](MotionEvent.md))
+- [#getHistoricalAxisValue(int, int, int)](MotionEvent.md))
+- [android.view.MotionEvent.PointerCoords#getAxisValue(int, int)](MotionEvent.md)) 
 
 ### AXIS_RTRIGGER
 
@@ -1380,8 +1380,8 @@ Axis constant: Right Trigger axis of a motion event.
 
 **See Also**
 
-- [#getAxisValue(int, int)](../android/view/MotionEvent.md))
-- [#getHistoricalAxisValue(int, int, int)](../android/view/MotionEvent.md))
+- [#getAxisValue(int, int)](MotionEvent.md))
+- [#getHistoricalAxisValue(int, int, int)](MotionEvent.md))
 - [android.view.MotionEvent.PointerCoords#getAxisValue(int)](../android/view/MotionEvent.PointerCoords.md)) 
 
 ### AXIS_RUDDER
@@ -1404,8 +1404,8 @@ Axis constant: Rudder axis of a motion event.
 
 **See Also**
 
-- [#getAxisValue(int, int)](../android/view/MotionEvent.md))
-- [#getHistoricalAxisValue(int, int, int)](../android/view/MotionEvent.md))
+- [#getAxisValue(int, int)](MotionEvent.md))
+- [#getHistoricalAxisValue(int, int, int)](MotionEvent.md))
 - [android.view.MotionEvent.PointerCoords#getAxisValue(int)](../android/view/MotionEvent.PointerCoords.md)) 
 
 ### AXIS_RX
@@ -1428,8 +1428,8 @@ Axis constant: X Rotation axis of a motion event.
 
 **See Also**
 
-- [#getAxisValue(int, int)](../android/view/MotionEvent.md))
-- [#getHistoricalAxisValue(int, int, int)](../android/view/MotionEvent.md))
+- [#getAxisValue(int, int)](MotionEvent.md))
+- [#getHistoricalAxisValue(int, int, int)](MotionEvent.md))
 - [android.view.MotionEvent.PointerCoords#getAxisValue(int)](../android/view/MotionEvent.PointerCoords.md)) 
 
 ### AXIS_RY
@@ -1452,8 +1452,8 @@ Axis constant: Y Rotation axis of a motion event.
 
 **See Also**
 
-- [#getAxisValue(int, int)](../android/view/MotionEvent.md))
-- [#getHistoricalAxisValue(int, int, int)](../android/view/MotionEvent.md))
+- [#getAxisValue(int, int)](MotionEvent.md))
+- [#getHistoricalAxisValue(int, int, int)](MotionEvent.md))
 - [android.view.MotionEvent.PointerCoords#getAxisValue(int)](../android/view/MotionEvent.PointerCoords.md)) 
 
 ### AXIS_RZ
@@ -1476,8 +1476,8 @@ Axis constant: Z Rotation axis of a motion event.
 
 **See Also**
 
-- [#getAxisValue(int, int)](../android/view/MotionEvent.md))
-- [#getHistoricalAxisValue(int, int, int)](../android/view/MotionEvent.md))
+- [#getAxisValue(int, int)](MotionEvent.md))
+- [#getHistoricalAxisValue(int, int, int)](MotionEvent.md))
 - [android.view.MotionEvent.PointerCoords#getAxisValue(int)](../android/view/MotionEvent.PointerCoords.md)) 
 
 ### AXIS_SCROLL
@@ -1502,7 +1502,7 @@ This axis should be used for scroll events that are neither strictly vertical no
 
 **See Also**
 
-- [#getAxisValue(int, int)](../android/view/MotionEvent.md)) 
+- [#getAxisValue(int, int)](MotionEvent.md)) 
 
 ### AXIS_SIZE
 
@@ -1516,7 +1516,7 @@ Axis constant: Size axis of a motion event.
 
 <br />
 
-- For a touch screen or touch pad, reports the approximate size of the contact area in relation to the maximum detectable size for the device. The value is normalized to a range from 0 (smallest detectable size) to 1 (largest detectable size), although it is not a linear scale. The value of size can be used to determine fat touch events. To obtain calibrated size information, use [AXIS_TOUCH_MAJOR](../android/view/MotionEvent.md) or [AXIS_TOOL_MAJOR](../android/view/MotionEvent.md).
+- For a touch screen or touch pad, reports the approximate size of the contact area in relation to the maximum detectable size for the device. The value is normalized to a range from 0 (smallest detectable size) to 1 (largest detectable size), although it is not a linear scale. The value of size can be used to determine fat touch events. To obtain calibrated size information, use [AXIS_TOUCH_MAJOR](MotionEvent.md) or [AXIS_TOOL_MAJOR](MotionEvent.md).
 
 <br />
 
@@ -1524,8 +1524,8 @@ Axis constant: Size axis of a motion event.
 
 **See Also**
 
-- [#getSize(int)](../android/view/MotionEvent.md))
-- [#getHistoricalSize(int, int)](../android/view/MotionEvent.md))
+- [#getSize(int)](MotionEvent.md))
+- [#getHistoricalSize(int, int)](MotionEvent.md))
 - [android.view.MotionEvent.PointerCoords#size](../android/view/MotionEvent.PointerCoords.md) 
 
 ### AXIS_THROTTLE
@@ -1548,8 +1548,8 @@ Axis constant: Throttle axis of a motion event.
 
 **See Also**
 
-- [#getAxisValue(int, int)](../android/view/MotionEvent.md))
-- [#getHistoricalAxisValue(int, int, int)](../android/view/MotionEvent.md))
+- [#getAxisValue(int, int)](MotionEvent.md))
+- [#getHistoricalAxisValue(int, int, int)](MotionEvent.md))
 - [android.view.MotionEvent.PointerCoords#getAxisValue(int)](../android/view/MotionEvent.PointerCoords.md)) 
 
 ### AXIS_TILT
@@ -1572,9 +1572,9 @@ Axis constant: Tilt axis of a motion event.
 
 **See Also**
 
-- [#getAxisValue(int, int)](../android/view/MotionEvent.md))
-- [#getHistoricalAxisValue(int, int, int)](../android/view/MotionEvent.md))
-- [android.view.MotionEvent.PointerCoords#getAxisValue(int, int)](../android/view/MotionEvent.md)) 
+- [#getAxisValue(int, int)](MotionEvent.md))
+- [#getHistoricalAxisValue(int, int, int)](MotionEvent.md))
+- [android.view.MotionEvent.PointerCoords#getAxisValue(int, int)](MotionEvent.md)) 
 
 ### AXIS_TOOL_MAJOR
 
@@ -1589,7 +1589,7 @@ Axis constant: ToolMajor axis of a motion event.
 <br />
 
 - For a touch screen, reports the length of the major axis of an ellipse that represents the size of the approaching finger or tool used to make contact.
-- For a touch pad, reports the length of the major axis of an ellipse that represents the size of the approaching finger or tool used to make contact. The units are device-dependent; use [InputDevice.getMotionRange(int)](../android/view/InputDevice.md))to query the effective range of values.
+- For a touch pad, reports the length of the major axis of an ellipse that represents the size of the approaching finger or tool used to make contact. The units are device-dependent; use [InputDevice.getMotionRange(int)](InputDevice.md))to query the effective range of values.
 
 <br />
 
@@ -1601,8 +1601,8 @@ The tool size may be larger than the touch size since the tool may not be fully 
 
 **See Also**
 
-- [#getToolMajor(int)](../android/view/MotionEvent.md))
-- [#getHistoricalToolMajor(int, int)](../android/view/MotionEvent.md))
+- [#getToolMajor(int)](MotionEvent.md))
+- [#getHistoricalToolMajor(int, int)](MotionEvent.md))
 - [android.view.MotionEvent.PointerCoords#toolMajor](../android/view/MotionEvent.PointerCoords.md) 
 
 ### AXIS_TOOL_MINOR
@@ -1618,7 +1618,7 @@ Axis constant: ToolMinor axis of a motion event.
 <br />
 
 - For a touch screen, reports the length of the minor axis of an ellipse that represents the size of the approaching finger or tool used to make contact.
-- For a touch pad, reports the length of the minor axis of an ellipse that represents the size of the approaching finger or tool used to make contact. The units are device-dependent; use [InputDevice.getMotionRange(int)](../android/view/InputDevice.md))to query the effective range of values.
+- For a touch pad, reports the length of the minor axis of an ellipse that represents the size of the approaching finger or tool used to make contact. The units are device-dependent; use [InputDevice.getMotionRange(int)](InputDevice.md))to query the effective range of values.
 
 <br />
 
@@ -1630,8 +1630,8 @@ The tool size may be larger than the touch size since the tool may not be fully 
 
 **See Also**
 
-- [#getToolMinor(int)](../android/view/MotionEvent.md))
-- [#getHistoricalToolMinor(int, int)](../android/view/MotionEvent.md))
+- [#getToolMinor(int)](MotionEvent.md))
+- [#getHistoricalToolMinor(int, int)](MotionEvent.md))
 - [android.view.MotionEvent.PointerCoords#toolMinor](../android/view/MotionEvent.PointerCoords.md) 
 
 ### AXIS_TOUCH_MAJOR
@@ -1647,7 +1647,7 @@ Axis constant: TouchMajor axis of a motion event.
 <br />
 
 - For a touch screen, reports the length of the major axis of an ellipse that represents the touch area at the point of contact. The units are display pixels.
-- For a touch pad, reports the length of the major axis of an ellipse that represents the touch area at the point of contact. The units are device-dependent; use [InputDevice.getMotionRange(int)](../android/view/InputDevice.md))to query the effective range of values.
+- For a touch pad, reports the length of the major axis of an ellipse that represents the touch area at the point of contact. The units are device-dependent; use [InputDevice.getMotionRange(int)](InputDevice.md))to query the effective range of values.
 
 <br />
 
@@ -1655,8 +1655,8 @@ Axis constant: TouchMajor axis of a motion event.
 
 **See Also**
 
-- [#getTouchMajor(int)](../android/view/MotionEvent.md))
-- [#getHistoricalTouchMajor(int, int)](../android/view/MotionEvent.md))
+- [#getTouchMajor(int)](MotionEvent.md))
+- [#getHistoricalTouchMajor(int, int)](MotionEvent.md))
 - [android.view.MotionEvent.PointerCoords#touchMajor](../android/view/MotionEvent.PointerCoords.md) 
 
 ### AXIS_TOUCH_MINOR
@@ -1672,7 +1672,7 @@ Axis constant: TouchMinor axis of a motion event.
 <br />
 
 - For a touch screen, reports the length of the minor axis of an ellipse that represents the touch area at the point of contact. The units are display pixels.
-- For a touch pad, reports the length of the minor axis of an ellipse that represents the touch area at the point of contact. The units are device-dependent; use [InputDevice.getMotionRange(int)](../android/view/InputDevice.md))to query the effective range of values.
+- For a touch pad, reports the length of the minor axis of an ellipse that represents the touch area at the point of contact. The units are device-dependent; use [InputDevice.getMotionRange(int)](InputDevice.md))to query the effective range of values.
 
 <br />
 
@@ -1682,8 +1682,8 @@ When the touch is circular, the major and minor axis lengths will be equal to on
 
 **See Also**
 
-- [#getTouchMinor(int)](../android/view/MotionEvent.md))
-- [#getHistoricalTouchMinor(int, int)](../android/view/MotionEvent.md))
+- [#getTouchMinor(int)](MotionEvent.md))
+- [#getHistoricalTouchMinor(int, int)](MotionEvent.md))
 - [android.view.MotionEvent.PointerCoords#touchMinor](../android/view/MotionEvent.PointerCoords.md) 
 
 ### AXIS_VSCROLL
@@ -1708,8 +1708,8 @@ This axis should be used to scroll views vertically.
 
 **See Also**
 
-- [#getAxisValue(int, int)](../android/view/MotionEvent.md))
-- [#getHistoricalAxisValue(int, int, int)](../android/view/MotionEvent.md))
+- [#getAxisValue(int, int)](MotionEvent.md))
+- [#getHistoricalAxisValue(int, int, int)](MotionEvent.md))
 - [android.view.MotionEvent.PointerCoords#getAxisValue(int)](../android/view/MotionEvent.PointerCoords.md)) 
 
 ### AXIS_WHEEL
@@ -1732,8 +1732,8 @@ Axis constant: Wheel axis of a motion event.
 
 **See Also**
 
-- [#getAxisValue(int, int)](../android/view/MotionEvent.md))
-- [#getHistoricalAxisValue(int, int, int)](../android/view/MotionEvent.md))
+- [#getAxisValue(int, int)](MotionEvent.md))
+- [#getHistoricalAxisValue(int, int, int)](MotionEvent.md))
 - [android.view.MotionEvent.PointerCoords#getAxisValue(int)](../android/view/MotionEvent.PointerCoords.md)) 
 
 ### AXIS_X
@@ -1749,7 +1749,7 @@ Axis constant: X axis of a motion event.
 <br />
 
 - For a touch screen, reports the absolute X screen position of the center of the touch contact area. The units are display pixels.
-- For a touch pad, reports the absolute X surface position of the center of the touch contact area. The units are device-dependent; use [InputDevice.getMotionRange(int)](../android/view/InputDevice.md))to query the effective range of values.
+- For a touch pad, reports the absolute X surface position of the center of the touch contact area. The units are device-dependent; use [InputDevice.getMotionRange(int)](InputDevice.md))to query the effective range of values.
 - For a mouse, reports the absolute X screen position of the mouse pointer. The units are display pixels.
 - For a trackball, reports the relative horizontal displacement of the trackball. The value is normalized to a range from -1.0 (left) to 1.0 (right).
 - For a joystick, reports the absolute X position of the joystick. The value is normalized to a range from -1.0 (left) to 1.0 (right).
@@ -1760,8 +1760,8 @@ Axis constant: X axis of a motion event.
 
 **See Also**
 
-- [#getX(int)](../android/view/MotionEvent.md))
-- [#getHistoricalX(int, int)](../android/view/MotionEvent.md))
+- [#getX(int)](MotionEvent.md))
+- [#getHistoricalX(int, int)](MotionEvent.md))
 - [android.view.MotionEvent.PointerCoords#x](../android/view/MotionEvent.PointerCoords.md) 
 
 ### AXIS_Y
@@ -1777,7 +1777,7 @@ Axis constant: Y axis of a motion event.
 <br />
 
 - For a touch screen, reports the absolute Y screen position of the center of the touch contact area. The units are display pixels.
-- For a touch pad, reports the absolute Y surface position of the center of the touch contact area. The units are device-dependent; use [InputDevice.getMotionRange(int)](../android/view/InputDevice.md))to query the effective range of values.
+- For a touch pad, reports the absolute Y surface position of the center of the touch contact area. The units are device-dependent; use [InputDevice.getMotionRange(int)](InputDevice.md))to query the effective range of values.
 - For a mouse, reports the absolute Y screen position of the mouse pointer. The units are display pixels.
 - For a trackball, reports the relative vertical displacement of the trackball. The value is normalized to a range from -1.0 (up) to 1.0 (down).
 - For a joystick, reports the absolute Y position of the joystick. The value is normalized to a range from -1.0 (up or far) to 1.0 (down or near).
@@ -1788,8 +1788,8 @@ Axis constant: Y axis of a motion event.
 
 **See Also**
 
-- [#getY(int)](../android/view/MotionEvent.md))
-- [#getHistoricalY(int, int)](../android/view/MotionEvent.md))
+- [#getY(int)](MotionEvent.md))
+- [#getHistoricalY(int, int)](MotionEvent.md))
 - [android.view.MotionEvent.PointerCoords#y](../android/view/MotionEvent.PointerCoords.md) 
 
 ### AXIS_Z
@@ -1812,8 +1812,8 @@ Axis constant: Z axis of a motion event.
 
 **See Also**
 
-- [#getAxisValue(int, int)](../android/view/MotionEvent.md))
-- [#getHistoricalAxisValue(int, int, int)](../android/view/MotionEvent.md))
+- [#getAxisValue(int, int)](MotionEvent.md))
+- [#getHistoricalAxisValue(int, int, int)](MotionEvent.md))
 - [android.view.MotionEvent.PointerCoords#getAxisValue(int)](../android/view/MotionEvent.PointerCoords.md)) 
 
 ### BUTTON_BACK
@@ -1826,13 +1826,13 @@ static val BUTTON_BACK: Int
 
 Button constant: Back button pressed (mouse back button).
 
-The system may send a [KeyEvent.KEYCODE_BACK](../android/view/KeyEvent.md) key press to the application when this button is pressed. 
+The system may send a [KeyEvent.KEYCODE_BACK](KeyEvent.md) key press to the application when this button is pressed. 
 
  Value: 8
 
 **See Also**
 
-- [#getButtonState](../android/view/MotionEvent.md)) 
+- [#getButtonState](MotionEvent.md)) 
 
 ### BUTTON_FORWARD
 
@@ -1844,13 +1844,13 @@ static val BUTTON_FORWARD: Int
 
 Button constant: Forward button pressed (mouse forward button).
 
-The system may send a [KeyEvent.KEYCODE_FORWARD](../android/view/KeyEvent.md) key press to the application when this button is pressed. 
+The system may send a [KeyEvent.KEYCODE_FORWARD](KeyEvent.md) key press to the application when this button is pressed. 
 
  Value: 16
 
 **See Also**
 
-- [#getButtonState](../android/view/MotionEvent.md)) 
+- [#getButtonState](MotionEvent.md)) 
 
 ### BUTTON_PRIMARY
 
@@ -1866,7 +1866,7 @@ Button constant: Primary button (left mouse button). This button constant is not
 
 **See Also**
 
-- [#getButtonState](../android/view/MotionEvent.md)) 
+- [#getButtonState](MotionEvent.md)) 
 
 ### BUTTON_SECONDARY
 
@@ -1882,7 +1882,7 @@ Button constant: Secondary button (right mouse button).
 
 **See Also**
 
-- [#getButtonState](../android/view/MotionEvent.md)) 
+- [#getButtonState](MotionEvent.md)) 
 
 ### BUTTON_STYLUS_PRIMARY
 
@@ -1898,7 +1898,7 @@ Button constant: Primary stylus button pressed.
 
 **See Also**
 
-- [#getButtonState](../android/view/MotionEvent.md)) 
+- [#getButtonState](MotionEvent.md)) 
 
 ### BUTTON_STYLUS_SECONDARY
 
@@ -1914,7 +1914,7 @@ Button constant: Secondary stylus button pressed.
 
 **See Also**
 
-- [#getButtonState](../android/view/MotionEvent.md)) 
+- [#getButtonState](MotionEvent.md)) 
 
 ### BUTTON_TERTIARY
 
@@ -1930,7 +1930,7 @@ Button constant: Tertiary button (middle mouse button).
 
 **See Also**
 
-- [#getButtonState](../android/view/MotionEvent.md)) 
+- [#getButtonState](MotionEvent.md)) 
 
 ### CLASSIFICATION_AMBIGUOUS_GESTURE
 
@@ -1946,7 +1946,7 @@ Classification constant: Ambiguous gesture. The user's intent with respect to th
 
 **See Also**
 
-- [#getClassification](../android/view/MotionEvent.md)) 
+- [#getClassification](MotionEvent.md)) 
 
 ### CLASSIFICATION_DEEP_PRESS
 
@@ -1962,7 +1962,7 @@ Classification constant: Deep press. The current event stream represents the use
 
 **See Also**
 
-- [#getClassification](../android/view/MotionEvent.md)) 
+- [#getClassification](MotionEvent.md)) 
 
 ### CLASSIFICATION_NONE
 
@@ -1978,7 +1978,7 @@ Classification constant: None. No additional information is available about the 
 
 **See Also**
 
-- [#getClassification](../android/view/MotionEvent.md)) 
+- [#getClassification](MotionEvent.md)) 
 
 ### CLASSIFICATION_PINCH
 
@@ -1994,7 +1994,7 @@ Classification constant: touchpad pinch. The current event stream represents the
 
 **See Also**
 
-- [#getClassification](../android/view/MotionEvent.md)) 
+- [#getClassification](MotionEvent.md)) 
 
 ### CLASSIFICATION_TWO_FINGER_SWIPE
 
@@ -2010,7 +2010,7 @@ Classification constant: touchpad scroll. The current event stream represents th
 
 **See Also**
 
-- [#getClassification](../android/view/MotionEvent.md)) 
+- [#getClassification](MotionEvent.md)) 
 
 ### EDGE_BOTTOM
 
@@ -2068,14 +2068,14 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 static val FLAG_CANCELED: Int
 ```
 
-This flag is only set for events with [ACTION_POINTER_UP](../android/view/MotionEvent.md) and [ACTION_CANCEL](../android/view/MotionEvent.md). It indicates that the pointer going up was an unintentional user touch. When FLAG_CANCELED is set, the typical actions that occur in response for a pointer going up (such as click handlers, end of drawing) should be aborted. This flag is typically set when the user was accidentally touching the screen, such as by gripping the device, or placing the palm on the screen. 
+This flag is only set for events with [ACTION_POINTER_UP](MotionEvent.md) and [ACTION_CANCEL](MotionEvent.md). It indicates that the pointer going up was an unintentional user touch. When FLAG_CANCELED is set, the typical actions that occur in response for a pointer going up (such as click handlers, end of drawing) should be aborted. This flag is typically set when the user was accidentally touching the screen, such as by gripping the device, or placing the palm on the screen. 
 
  Value: 32
 
 **See Also**
 
-- [#ACTION_POINTER_UP](../android/view/MotionEvent.md)
-- [#ACTION_CANCEL](../android/view/MotionEvent.md) 
+- [#ACTION_POINTER_UP](MotionEvent.md)
+- [#ACTION_CANCEL](MotionEvent.md) 
 
 ### FLAG_WINDOW_IS_OBSCURED
 
@@ -2109,7 +2109,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 static val INVALID_POINTER_ID: Int
 ```
 
-An invalid pointer id. This value (-1) can be used as a placeholder to indicate that a pointer id has not been assigned or is not available. It cannot appear as a pointer id inside a [MotionEvent](../android/view/MotionEvent.md). 
+An invalid pointer id. This value (-1) can be used as a placeholder to indicate that a pointer id has not been assigned or is not available. It cannot appear as a pointer id inside a [MotionEvent](MotionEvent.md). 
 
  Value: -1
 
@@ -2127,7 +2127,7 @@ Tool type constant: The tool is an eraser or a stylus being used in an inverted 
 
 **See Also**
 
-- [#getToolType](../android/view/MotionEvent.md)) 
+- [#getToolType](MotionEvent.md)) 
 
 ### TOOL_TYPE_FINGER
 
@@ -2143,7 +2143,7 @@ Tool type constant: The tool is a finger.
 
 **See Also**
 
-- [#getToolType](../android/view/MotionEvent.md)) 
+- [#getToolType](MotionEvent.md)) 
 
 ### TOOL_TYPE_MOUSE
 
@@ -2159,7 +2159,7 @@ Tool type constant: The tool is a mouse.
 
 **See Also**
 
-- [#getToolType](../android/view/MotionEvent.md)) 
+- [#getToolType](MotionEvent.md)) 
 
 ### TOOL_TYPE_STYLUS
 
@@ -2175,7 +2175,7 @@ Tool type constant: The tool is a stylus.
 
 **See Also**
 
-- [#getToolType](../android/view/MotionEvent.md)) 
+- [#getToolType](MotionEvent.md)) 
 
 ### TOOL_TYPE_UNKNOWN
 
@@ -2191,7 +2191,7 @@ Tool type constant: Unknown tool type. This constant is used when the tool type 
 
 **See Also**
 
-- [#getToolType](../android/view/MotionEvent.md))
+- [#getToolType](MotionEvent.md))
 
 ## Public methods
 
@@ -2229,7 +2229,7 @@ fun addBatch(
 ): Unit
 ```
 
-Add a new movement to the batch of movements in this event. The event's current location, position and size is updated to the new values. The current values in the event are added to a list of historical values. Only applies to [ACTION_MOVE](../android/view/MotionEvent.md) or [ACTION_HOVER_MOVE](../android/view/MotionEvent.md) events.
+Add a new movement to the batch of movements in this event. The event's current location, position and size is updated to the new values. The current values in the event are added to a list of historical values. Only applies to [ACTION_MOVE](MotionEvent.md) or [ACTION_HOVER_MOVE](MotionEvent.md) events.
 
 | Parameters ||
 |-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -2253,7 +2253,7 @@ fun addBatch(
 ): Unit
 ```
 
-Add a new movement to the batch of movements in this event. The event's current location, position and size is updated to the new values. The current values in the event are added to a list of historical values. Only applies to [ACTION_MOVE](../android/view/MotionEvent.md) or [ACTION_HOVER_MOVE](../android/view/MotionEvent.md) events.
+Add a new movement to the batch of movements in this event. The event's current location, position and size is updated to the new values. The current values in the event are added to a list of historical values. Only applies to [ACTION_MOVE](MotionEvent.md) or [ACTION_HOVER_MOVE](MotionEvent.md) events.
 
 | Parameters ||
 |-------------|--------------------------------------------------------------------------------------------------------------------|
@@ -2286,7 +2286,7 @@ Gets an axis by its symbolic name such as "AXIS_X" or an equivalent numeric cons
 
 **See Also**
 
-- [android.view.KeyEvent#keyCodeToString(int)](../android/view/KeyEvent.md)) 
+- [android.view.KeyEvent#keyCodeToString(int)](KeyEvent.md)) 
 
 ### axisToString
 
@@ -2322,7 +2322,7 @@ Given a pointer identifier, find the index of its data in the event.
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Returns either the index of the pointer (for use with [getX(int)](../android/view/MotionEvent.md))et al.), or -1 if there is no data available for that pointer identifier. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Returns either the index of the pointer (for use with [getX(int)](MotionEvent.md))et al.), or -1 if there is no data available for that pointer identifier. |
 
 ### getAction
 
@@ -2332,11 +2332,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun getAction(): Int
 ```
 
-Return the kind of action being performed. Consider using [getActionMasked](../android/view/MotionEvent.md))and [getActionIndex](../android/view/MotionEvent.md))to retrieve the separate masked action and pointer index.
+Return the kind of action being performed. Consider using [getActionMasked](MotionEvent.md))and [getActionIndex](MotionEvent.md))to retrieve the separate masked action and pointer index.
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The action, such as [ACTION_DOWN](../android/view/MotionEvent.md) or the combination of [ACTION_POINTER_DOWN](../android/view/MotionEvent.md) with a shifted pointer index. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The action, such as [ACTION_DOWN](MotionEvent.md) or the combination of [ACTION_POINTER_DOWN](MotionEvent.md) with a shifted pointer index. |
 
 ### getActionButton
 
@@ -2346,7 +2346,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 fun getActionButton(): Int
 ```
 
-Gets which button has been modified during a press or release action. For actions other than [ACTION_BUTTON_PRESS](../android/view/MotionEvent.md) and [ACTION_BUTTON_RELEASE](../android/view/MotionEvent.md) the returned value is undefined. 
+Gets which button has been modified during a press or release action. For actions other than [ACTION_BUTTON_PRESS](MotionEvent.md) and [ACTION_BUTTON_RELEASE](MotionEvent.md) the returned value is undefined. 
 **See Also**
 
 - <https://developer.android.com/reference/kotlin/android/view/MotionEvent#getButtonState()> 
@@ -2359,7 +2359,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 fun getActionIndex(): Int
 ```
 
-For [ACTION_POINTER_DOWN](../android/view/MotionEvent.md) or [ACTION_POINTER_UP](../android/view/MotionEvent.md) as returned by [getActionMasked](../android/view/MotionEvent.md)), this returns the associated pointer index. The index may be used with [getPointerId(int)](../android/view/MotionEvent.md)), [getX(int)](../android/view/MotionEvent.md)), [getY(int)](../android/view/MotionEvent.md)), [getPressure(int)](../android/view/MotionEvent.md)), and [getSize(int)](../android/view/MotionEvent.md))to get information about the pointer that has gone down or up.
+For [ACTION_POINTER_DOWN](MotionEvent.md) or [ACTION_POINTER_UP](MotionEvent.md) as returned by [getActionMasked](MotionEvent.md)), this returns the associated pointer index. The index may be used with [getPointerId(int)](MotionEvent.md)), [getX(int)](MotionEvent.md)), [getY(int)](MotionEvent.md)), [getPressure(int)](MotionEvent.md)), and [getSize(int)](MotionEvent.md))to get information about the pointer that has gone down or up.
 
 | Return ||
 |----------------------------------------------------------------------------|---------------------------------------|
@@ -2373,11 +2373,11 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 fun getActionMasked(): Int
 ```
 
-Return the masked action being performed, without pointer index information. Use [getActionIndex](../android/view/MotionEvent.md))to return the index associated with pointer actions.
+Return the masked action being performed, without pointer index information. Use [getActionIndex](MotionEvent.md))to return the index associated with pointer actions.
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The action, such as [ACTION_DOWN](../android/view/MotionEvent.md) or [ACTION_POINTER_DOWN](../android/view/MotionEvent.md). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The action, such as [ACTION_DOWN](MotionEvent.md) or [ACTION_POINTER_DOWN](MotionEvent.md). |
 
 ### getAxisValue
 
@@ -2387,7 +2387,7 @@ Added in [API level 12](https://developer.android.com/guide/topics/manifest/uses
 fun getAxisValue(axis: Int): Float
 ```
 
-[getAxisValue(int)](../android/view/MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier).
+[getAxisValue(int)](MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier).
 
 | Parameters ||
 |--------|--------------------------------------------------------------------------------------------------------------------------------|
@@ -2395,8 +2395,8 @@ fun getAxisValue(axis: Int): Float
 
 **See Also**
 
-- [#AXIS_X](../android/view/MotionEvent.md)
-- [#AXIS_Y](../android/view/MotionEvent.md) 
+- [#AXIS_X](MotionEvent.md)
+- [#AXIS_Y](MotionEvent.md) 
 
 ### getAxisValue
 
@@ -2409,12 +2409,12 @@ fun getAxisValue(
 ): Float
 ```
 
-Returns the value of the requested axis for the given pointer*index* (use [getPointerId(int)](../android/view/MotionEvent.md))to find the pointer identifier for this index).
+Returns the value of the requested axis for the given pointer*index* (use [getPointerId(int)](MotionEvent.md))to find the pointer identifier for this index).
 
 | Parameters ||
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `axis` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The axis identifier for the axis value to retrieve. |
-| `pointerIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Raw index of pointer to retrieve. Value may be from 0 (the first pointer that is down) to [getPointerCount()](../android/view/MotionEvent.md))-1. |
+| `pointerIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Raw index of pointer to retrieve. Value may be from 0 (the first pointer that is down) to [getPointerCount()](MotionEvent.md))-1. |
 
 | Return ||
 |--------------------------------------------------------------------------------|-----------------------------------------------------------|
@@ -2422,8 +2422,8 @@ Returns the value of the requested axis for the given pointer*index* (use [getPo
 
 **See Also**
 
-- [#AXIS_X](../android/view/MotionEvent.md)
-- [#AXIS_Y](../android/view/MotionEvent.md) 
+- [#AXIS_X](MotionEvent.md)
+- [#AXIS_Y](MotionEvent.md) 
 
 ### getButtonState
 
@@ -2441,13 +2441,13 @@ Gets the state of all buttons that are pressed such as a mouse or stylus button.
 
 **See Also**
 
-- [#BUTTON_PRIMARY](../android/view/MotionEvent.md)
-- [#BUTTON_SECONDARY](../android/view/MotionEvent.md)
-- [#BUTTON_TERTIARY](../android/view/MotionEvent.md)
-- [#BUTTON_FORWARD](../android/view/MotionEvent.md)
-- [#BUTTON_BACK](../android/view/MotionEvent.md)
-- [#BUTTON_STYLUS_PRIMARY](../android/view/MotionEvent.md)
-- [#BUTTON_STYLUS_SECONDARY](../android/view/MotionEvent.md) 
+- [#BUTTON_PRIMARY](MotionEvent.md)
+- [#BUTTON_SECONDARY](MotionEvent.md)
+- [#BUTTON_TERTIARY](MotionEvent.md)
+- [#BUTTON_FORWARD](MotionEvent.md)
+- [#BUTTON_BACK](MotionEvent.md)
+- [#BUTTON_STYLUS_PRIMARY](MotionEvent.md)
+- [#BUTTON_STYLUS_SECONDARY](MotionEvent.md) 
 
 ### getClassification
 
@@ -2461,13 +2461,13 @@ Returns the classification for the current gesture. The classification may chang
 
 | Return ||
 |----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.view.MotionEvent#CLASSIFICATION_NONE](../android/view/MotionEvent.md), [android.view.MotionEvent#CLASSIFICATION_AMBIGUOUS_GESTURE](../android/view/MotionEvent.md), [android.view.MotionEvent#CLASSIFICATION_DEEP_PRESS](../android/view/MotionEvent.md), [android.view.MotionEvent#CLASSIFICATION_TWO_FINGER_SWIPE](../android/view/MotionEvent.md), android.view.MotionEvent.CLASSIFICATION_MULTI_FINGER_SWIPE, or [android.view.MotionEvent#CLASSIFICATION_PINCH](../android/view/MotionEvent.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.view.MotionEvent#CLASSIFICATION_NONE](MotionEvent.md), [android.view.MotionEvent#CLASSIFICATION_AMBIGUOUS_GESTURE](MotionEvent.md), [android.view.MotionEvent#CLASSIFICATION_DEEP_PRESS](MotionEvent.md), [android.view.MotionEvent#CLASSIFICATION_TWO_FINGER_SWIPE](MotionEvent.md), android.view.MotionEvent.CLASSIFICATION_MULTI_FINGER_SWIPE, or [android.view.MotionEvent#CLASSIFICATION_PINCH](MotionEvent.md) |
 
 **See Also**
 
-- [#CLASSIFICATION_NONE](../android/view/MotionEvent.md)
-- [#CLASSIFICATION_AMBIGUOUS_GESTURE](../android/view/MotionEvent.md)
-- [#CLASSIFICATION_DEEP_PRESS](../android/view/MotionEvent.md) 
+- [#CLASSIFICATION_NONE](MotionEvent.md)
+- [#CLASSIFICATION_AMBIGUOUS_GESTURE](MotionEvent.md)
+- [#CLASSIFICATION_DEEP_PRESS](MotionEvent.md) 
 
 ### getDeviceId
 
@@ -2501,13 +2501,13 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun getEdgeFlags(): Int
 ```
 
-Returns a bitfield indicating which edges, if any, were touched by this MotionEvent. For touch events, clients can use this to determine if the user's finger was touching the edge of the display. This property is only set for [ACTION_DOWN](../android/view/MotionEvent.md) events. 
+Returns a bitfield indicating which edges, if any, were touched by this MotionEvent. For touch events, clients can use this to determine if the user's finger was touching the edge of the display. This property is only set for [ACTION_DOWN](MotionEvent.md) events. 
 **See Also**
 
-- [#EDGE_LEFT](../android/view/MotionEvent.md)
-- [#EDGE_TOP](../android/view/MotionEvent.md)
-- [#EDGE_RIGHT](../android/view/MotionEvent.md)
-- [#EDGE_BOTTOM](../android/view/MotionEvent.md) 
+- [#EDGE_LEFT](MotionEvent.md)
+- [#EDGE_TOP](MotionEvent.md)
+- [#EDGE_RIGHT](MotionEvent.md)
+- [#EDGE_BOTTOM](MotionEvent.md) 
 
 ### getEventTime
 
@@ -2517,11 +2517,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun getEventTime(): Long
 ```
 
-Retrieve the time this event occurred, in the [android.os.SystemClock#uptimeMillis](../android/os/SystemClock.md))time base.
+Retrieve the time this event occurred, in the [android.os.SystemClock#uptimeMillis](../android.os/SystemClock.md))time base.
 
 | Return ||
 |------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | Returns the time this event occurred, in the [android.os.SystemClock#uptimeMillis](../android/os/SystemClock.md))time base. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | Returns the time this event occurred, in the [android.os.SystemClock#uptimeMillis](../android.os/SystemClock.md))time base. |
 
 ### getEventTimeNanos
 
@@ -2531,13 +2531,13 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 fun getEventTimeNanos(): Long
 ```
 
-Retrieve the time this event occurred, in the [android.os.SystemClock#uptimeMillis](../android/os/SystemClock.md))time base but with nanosecond precision.
+Retrieve the time this event occurred, in the [android.os.SystemClock#uptimeMillis](../android.os/SystemClock.md))time base but with nanosecond precision.
 
 The value is in nanosecond precision but it may not have nanosecond accuracy.
 
 | Return ||
 |------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | Returns the time this event occurred, in the [android.os.SystemClock#uptimeMillis](../android/os/SystemClock.md))time base but with nanosecond precision. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | Returns the time this event occurred, in the [android.os.SystemClock#uptimeMillis](../android.os/SystemClock.md))time base but with nanosecond precision. |
 
 ### getFlags
 
@@ -2550,7 +2550,7 @@ fun getFlags(): Int
 Gets the motion event flags. 
 **See Also**
 
-- [#FLAG_WINDOW_IS_OBSCURED](../android/view/MotionEvent.md) 
+- [#FLAG_WINDOW_IS_OBSCURED](MotionEvent.md) 
 
 ### getHistoricalAxisValue
 
@@ -2563,19 +2563,19 @@ fun getHistoricalAxisValue(
 ): Float
 ```
 
-[getHistoricalAxisValue(int,int,int)](../android/view/MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier).
+[getHistoricalAxisValue(int,int,int)](MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier).
 
 | Parameters ||
 |--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `axis` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The axis identifier for the axis value to retrieve. |
-| `pos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Which historical value to return; must be less than [getHistorySize](../android/view/MotionEvent.md)) |
+| `pos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Which historical value to return; must be less than [getHistorySize](MotionEvent.md)) |
 
 **See Also**
 
-- [#getHistorySize](../android/view/MotionEvent.md))
-- [#getAxisValue(int)](../android/view/MotionEvent.md))
-- [#AXIS_X](../android/view/MotionEvent.md)
-- [#AXIS_Y](../android/view/MotionEvent.md) 
+- [#getHistorySize](MotionEvent.md))
+- [#getAxisValue(int)](MotionEvent.md))
+- [#AXIS_X](MotionEvent.md)
+- [#AXIS_Y](MotionEvent.md) 
 
 ### getHistoricalAxisValue
 
@@ -2589,13 +2589,13 @@ fun getHistoricalAxisValue(
 ): Float
 ```
 
-Returns the historical value of the requested axis, as per [getAxisValue(int,int)](../android/view/MotionEvent.md)), occurred between this event and the previous event for the given pointer. Only applies to ACTION_MOVE events.
+Returns the historical value of the requested axis, as per [getAxisValue(int,int)](MotionEvent.md)), occurred between this event and the previous event for the given pointer. Only applies to ACTION_MOVE events.
 
 | Parameters ||
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `axis` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The axis identifier for the axis value to retrieve. |
-| `pointerIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Raw index of pointer to retrieve. Value may be from 0 (the first pointer that is down) to [getPointerCount()](../android/view/MotionEvent.md))-1. |
-| `pos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Which historical value to return; must be less than [getHistorySize](../android/view/MotionEvent.md)) |
+| `pointerIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Raw index of pointer to retrieve. Value may be from 0 (the first pointer that is down) to [getPointerCount()](MotionEvent.md))-1. |
+| `pos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Which historical value to return; must be less than [getHistorySize](MotionEvent.md)) |
 | --- | --- |
 
 | Return ||
@@ -2604,8 +2604,8 @@ Returns the historical value of the requested axis, as per [getAxisValue(int,int
 
 **See Also**
 
-- [#AXIS_X](../android/view/MotionEvent.md)
-- [#AXIS_Y](../android/view/MotionEvent.md) 
+- [#AXIS_X](MotionEvent.md)
+- [#AXIS_Y](MotionEvent.md) 
 
 ### getHistoricalEventTime
 
@@ -2615,22 +2615,22 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun getHistoricalEventTime(pos: Int): Long
 ```
 
-Returns the time that a historical movement occurred between this event and the previous event, in the [android.os.SystemClock#uptimeMillis](../android/os/SystemClock.md))time base.
+Returns the time that a historical movement occurred between this event and the previous event, in the [android.os.SystemClock#uptimeMillis](../android.os/SystemClock.md))time base.
 
 This only applies to ACTION_MOVE events.
 
 | Parameters ||
 |-------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `pos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Which historical value to return; must be less than [getHistorySize](../android/view/MotionEvent.md)) |
+| `pos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Which historical value to return; must be less than [getHistorySize](MotionEvent.md)) |
 
 | Return ||
 |------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | Returns the time that a historical movement occurred between this event and the previous event, in the [android.os.SystemClock#uptimeMillis](../android/os/SystemClock.md))time base. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | Returns the time that a historical movement occurred between this event and the previous event, in the [android.os.SystemClock#uptimeMillis](../android.os/SystemClock.md))time base. |
 
 **See Also**
 
-- [#getHistorySize](../android/view/MotionEvent.md))
-- [#getEventTime](../android/view/MotionEvent.md)) 
+- [#getHistorySize](MotionEvent.md))
+- [#getEventTime](MotionEvent.md)) 
 
 ### getHistoricalEventTimeNanos
 
@@ -2640,7 +2640,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 fun getHistoricalEventTimeNanos(pos: Int): Long
 ```
 
-Returns the time that a historical movement occurred between this event and the previous event, in the [android.os.SystemClock#uptimeMillis](../android/os/SystemClock.md))time base but with nanosecond (instead of millisecond) precision.
+Returns the time that a historical movement occurred between this event and the previous event, in the [android.os.SystemClock#uptimeMillis](../android.os/SystemClock.md))time base but with nanosecond (instead of millisecond) precision.
 
 This only applies to ACTION_MOVE events.
 
@@ -2648,16 +2648,16 @@ The value is in nanosecond precision but it may not have nanosecond accuracy.
 
 | Parameters ||
 |-------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `pos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Which historical value to return; must be less than [getHistorySize](../android/view/MotionEvent.md)) |
+| `pos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Which historical value to return; must be less than [getHistorySize](MotionEvent.md)) |
 
 | Return ||
 |------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | Returns the time that a historical movement occurred between this event and the previous event, in the [android.os.SystemClock#uptimeMillis](../android/os/SystemClock.md))time base but with nanosecond (instead of millisecond) precision. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | Returns the time that a historical movement occurred between this event and the previous event, in the [android.os.SystemClock#uptimeMillis](../android.os/SystemClock.md))time base but with nanosecond (instead of millisecond) precision. |
 
 **See Also**
 
-- [#getHistorySize](../android/view/MotionEvent.md))
-- [#getEventTime](../android/view/MotionEvent.md)) 
+- [#getHistorySize](MotionEvent.md))
+- [#getEventTime](MotionEvent.md)) 
 
 ### getHistoricalOrientation
 
@@ -2667,17 +2667,17 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 fun getHistoricalOrientation(pos: Int): Float
 ```
 
-[getHistoricalOrientation(int,int)](../android/view/MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier).
+[getHistoricalOrientation(int,int)](MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier).
 
 | Parameters ||
 |-------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `pos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Which historical value to return; must be less than [getHistorySize](../android/view/MotionEvent.md)) |
+| `pos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Which historical value to return; must be less than [getHistorySize](MotionEvent.md)) |
 
 **See Also**
 
-- [#getHistorySize](../android/view/MotionEvent.md))
+- [#getHistorySize](MotionEvent.md))
 - <https://developer.android.com/reference/kotlin/android/view/MotionEvent#getOrientation()>
-- [#AXIS_ORIENTATION](../android/view/MotionEvent.md) 
+- [#AXIS_ORIENTATION](MotionEvent.md) 
 
 ### getHistoricalOrientation
 
@@ -2690,18 +2690,18 @@ fun getHistoricalOrientation(
 ): Float
 ```
 
-Returns a historical orientation coordinate, as per [getOrientation(int)](../android/view/MotionEvent.md)), that occurred between this event and the previous event for the given pointer. Only applies to ACTION_MOVE events.
+Returns a historical orientation coordinate, as per [getOrientation(int)](MotionEvent.md)), that occurred between this event and the previous event for the given pointer. Only applies to ACTION_MOVE events.
 
 | Parameters ||
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `pointerIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Raw index of pointer to retrieve. Value may be from 0 (the first pointer that is down) to [getPointerCount()](../android/view/MotionEvent.md))-1. |
-| `pos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Which historical value to return; must be less than [getHistorySize](../android/view/MotionEvent.md)) |
+| `pointerIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Raw index of pointer to retrieve. Value may be from 0 (the first pointer that is down) to [getPointerCount()](MotionEvent.md))-1. |
+| `pos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Which historical value to return; must be less than [getHistorySize](MotionEvent.md)) |
 
 **See Also**
 
-- [#getHistorySize](../android/view/MotionEvent.md))
-- [#getOrientation(int)](../android/view/MotionEvent.md))
-- [#AXIS_ORIENTATION](../android/view/MotionEvent.md) 
+- [#getHistorySize](MotionEvent.md))
+- [#getOrientation(int)](MotionEvent.md))
+- [#AXIS_ORIENTATION](MotionEvent.md) 
 
 ### getHistoricalPointerCoords
 
@@ -2715,19 +2715,19 @@ fun getHistoricalPointerCoords(
 ): Unit
 ```
 
-Populates a [PointerCoords](../android/view/MotionEvent.PointerCoords.md) object with historical pointer coordinate data, as per [getPointerCoords](../android/view/MotionEvent.md)), that occurred between this event and the previous event for the given pointer. Only applies to ACTION_MOVE events.
+Populates a [PointerCoords](../android/view/MotionEvent.PointerCoords.md) object with historical pointer coordinate data, as per [getPointerCoords](MotionEvent.md)), that occurred between this event and the previous event for the given pointer. Only applies to ACTION_MOVE events.
 
 | Parameters ||
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `pointerIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Raw index of pointer to retrieve. Value may be from 0 (the first pointer that is down) to [getPointerCount()](../android/view/MotionEvent.md))-1. |
-| `pos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Which historical value to return; must be less than [getHistorySize](../android/view/MotionEvent.md)) |
+| `pointerIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Raw index of pointer to retrieve. Value may be from 0 (the first pointer that is down) to [getPointerCount()](MotionEvent.md))-1. |
+| `pos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Which historical value to return; must be less than [getHistorySize](MotionEvent.md)) |
 | `outPointerCoords` | [MotionEvent.PointerCoords](../android/view/MotionEvent.PointerCoords.md)!:The pointer coordinate object to populate. |
 | --- | --- |
 
 **See Also**
 
-- [#getHistorySize](../android/view/MotionEvent.md))
-- [#getPointerCoords](../android/view/MotionEvent.md))
+- [#getHistorySize](MotionEvent.md))
+- [#getPointerCoords](MotionEvent.md))
 - [android.view.MotionEvent.PointerCoords](../android/view/MotionEvent.PointerCoords.md) 
 
 ### getHistoricalPressure
@@ -2738,17 +2738,17 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun getHistoricalPressure(pos: Int): Float
 ```
 
-[getHistoricalPressure(int,int)](../android/view/MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier).
+[getHistoricalPressure(int,int)](MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier).
 
 | Parameters ||
 |-------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `pos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Which historical value to return; must be less than [getHistorySize](../android/view/MotionEvent.md)) |
+| `pos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Which historical value to return; must be less than [getHistorySize](MotionEvent.md)) |
 
 **See Also**
 
-- [#getHistorySize](../android/view/MotionEvent.md))
+- [#getHistorySize](MotionEvent.md))
 - <https://developer.android.com/reference/kotlin/android/view/MotionEvent#getPressure()>
-- [#AXIS_PRESSURE](../android/view/MotionEvent.md) 
+- [#AXIS_PRESSURE](MotionEvent.md) 
 
 ### getHistoricalPressure
 
@@ -2761,18 +2761,18 @@ fun getHistoricalPressure(
 ): Float
 ```
 
-Returns a historical pressure coordinate, as per [getPressure(int)](../android/view/MotionEvent.md)), that occurred between this event and the previous event for the given pointer. Only applies to ACTION_MOVE events.
+Returns a historical pressure coordinate, as per [getPressure(int)](MotionEvent.md)), that occurred between this event and the previous event for the given pointer. Only applies to ACTION_MOVE events.
 
 | Parameters ||
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `pointerIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Raw index of pointer to retrieve. Value may be from 0 (the first pointer that is down) to [getPointerCount()](../android/view/MotionEvent.md))-1. |
-| `pos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Which historical value to return; must be less than [getHistorySize](../android/view/MotionEvent.md)) |
+| `pointerIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Raw index of pointer to retrieve. Value may be from 0 (the first pointer that is down) to [getPointerCount()](MotionEvent.md))-1. |
+| `pos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Which historical value to return; must be less than [getHistorySize](MotionEvent.md)) |
 
 **See Also**
 
-- [#getHistorySize](../android/view/MotionEvent.md))
-- [#getPressure(int)](../android/view/MotionEvent.md))
-- [#AXIS_PRESSURE](../android/view/MotionEvent.md) 
+- [#getHistorySize](MotionEvent.md))
+- [#getPressure(int)](MotionEvent.md))
+- [#AXIS_PRESSURE](MotionEvent.md) 
 
 ### getHistoricalSize
 
@@ -2782,17 +2782,17 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun getHistoricalSize(pos: Int): Float
 ```
 
-[getHistoricalSize(int,int)](../android/view/MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier).
+[getHistoricalSize(int,int)](MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier).
 
 | Parameters ||
 |-------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `pos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Which historical value to return; must be less than [getHistorySize](../android/view/MotionEvent.md)) |
+| `pos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Which historical value to return; must be less than [getHistorySize](MotionEvent.md)) |
 
 **See Also**
 
-- [#getHistorySize](../android/view/MotionEvent.md))
+- [#getHistorySize](MotionEvent.md))
 - <https://developer.android.com/reference/kotlin/android/view/MotionEvent#getSize()>
-- [#AXIS_SIZE](../android/view/MotionEvent.md) 
+- [#AXIS_SIZE](MotionEvent.md) 
 
 ### getHistoricalSize
 
@@ -2805,18 +2805,18 @@ fun getHistoricalSize(
 ): Float
 ```
 
-Returns a historical size coordinate, as per [getSize(int)](../android/view/MotionEvent.md)), that occurred between this event and the previous event for the given pointer. Only applies to ACTION_MOVE events.
+Returns a historical size coordinate, as per [getSize(int)](MotionEvent.md)), that occurred between this event and the previous event for the given pointer. Only applies to ACTION_MOVE events.
 
 | Parameters ||
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `pointerIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Raw index of pointer to retrieve. Value may be from 0 (the first pointer that is down) to [getPointerCount()](../android/view/MotionEvent.md))-1. |
-| `pos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Which historical value to return; must be less than [getHistorySize](../android/view/MotionEvent.md)) |
+| `pointerIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Raw index of pointer to retrieve. Value may be from 0 (the first pointer that is down) to [getPointerCount()](MotionEvent.md))-1. |
+| `pos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Which historical value to return; must be less than [getHistorySize](MotionEvent.md)) |
 
 **See Also**
 
-- [#getHistorySize](../android/view/MotionEvent.md))
-- [#getSize(int)](../android/view/MotionEvent.md))
-- [#AXIS_SIZE](../android/view/MotionEvent.md) 
+- [#getHistorySize](MotionEvent.md))
+- [#getSize(int)](MotionEvent.md))
+- [#AXIS_SIZE](MotionEvent.md) 
 
 ### getHistoricalToolMajor
 
@@ -2826,17 +2826,17 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 fun getHistoricalToolMajor(pos: Int): Float
 ```
 
-[getHistoricalToolMajor(int,int)](../android/view/MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier).
+[getHistoricalToolMajor(int,int)](MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier).
 
 | Parameters ||
 |-------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `pos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Which historical value to return; must be less than [getHistorySize](../android/view/MotionEvent.md)) |
+| `pos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Which historical value to return; must be less than [getHistorySize](MotionEvent.md)) |
 
 **See Also**
 
-- [#getHistorySize](../android/view/MotionEvent.md))
+- [#getHistorySize](MotionEvent.md))
 - <https://developer.android.com/reference/kotlin/android/view/MotionEvent#getToolMajor()>
-- [#AXIS_TOOL_MAJOR](../android/view/MotionEvent.md) 
+- [#AXIS_TOOL_MAJOR](MotionEvent.md) 
 
 ### getHistoricalToolMajor
 
@@ -2849,18 +2849,18 @@ fun getHistoricalToolMajor(
 ): Float
 ```
 
-Returns a historical tool major axis coordinate, as per [getToolMajor(int)](../android/view/MotionEvent.md)), that occurred between this event and the previous event for the given pointer. Only applies to ACTION_MOVE events.
+Returns a historical tool major axis coordinate, as per [getToolMajor(int)](MotionEvent.md)), that occurred between this event and the previous event for the given pointer. Only applies to ACTION_MOVE events.
 
 | Parameters ||
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `pointerIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Raw index of pointer to retrieve. Value may be from 0 (the first pointer that is down) to [getPointerCount()](../android/view/MotionEvent.md))-1. |
-| `pos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Which historical value to return; must be less than [getHistorySize](../android/view/MotionEvent.md)) |
+| `pointerIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Raw index of pointer to retrieve. Value may be from 0 (the first pointer that is down) to [getPointerCount()](MotionEvent.md))-1. |
+| `pos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Which historical value to return; must be less than [getHistorySize](MotionEvent.md)) |
 
 **See Also**
 
-- [#getHistorySize](../android/view/MotionEvent.md))
-- [#getToolMajor(int)](../android/view/MotionEvent.md))
-- [#AXIS_TOOL_MAJOR](../android/view/MotionEvent.md) 
+- [#getHistorySize](MotionEvent.md))
+- [#getToolMajor(int)](MotionEvent.md))
+- [#AXIS_TOOL_MAJOR](MotionEvent.md) 
 
 ### getHistoricalToolMinor
 
@@ -2870,17 +2870,17 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 fun getHistoricalToolMinor(pos: Int): Float
 ```
 
-[getHistoricalToolMinor(int,int)](../android/view/MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier).
+[getHistoricalToolMinor(int,int)](MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier).
 
 | Parameters ||
 |-------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `pos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Which historical value to return; must be less than [getHistorySize](../android/view/MotionEvent.md)) |
+| `pos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Which historical value to return; must be less than [getHistorySize](MotionEvent.md)) |
 
 **See Also**
 
-- [#getHistorySize](../android/view/MotionEvent.md))
+- [#getHistorySize](MotionEvent.md))
 - <https://developer.android.com/reference/kotlin/android/view/MotionEvent#getToolMinor()>
-- [#AXIS_TOOL_MINOR](../android/view/MotionEvent.md) 
+- [#AXIS_TOOL_MINOR](MotionEvent.md) 
 
 ### getHistoricalToolMinor
 
@@ -2893,18 +2893,18 @@ fun getHistoricalToolMinor(
 ): Float
 ```
 
-Returns a historical tool minor axis coordinate, as per [getToolMinor(int)](../android/view/MotionEvent.md)), that occurred between this event and the previous event for the given pointer. Only applies to ACTION_MOVE events.
+Returns a historical tool minor axis coordinate, as per [getToolMinor(int)](MotionEvent.md)), that occurred between this event and the previous event for the given pointer. Only applies to ACTION_MOVE events.
 
 | Parameters ||
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `pointerIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Raw index of pointer to retrieve. Value may be from 0 (the first pointer that is down) to [getPointerCount()](../android/view/MotionEvent.md))-1. |
-| `pos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Which historical value to return; must be less than [getHistorySize](../android/view/MotionEvent.md)) |
+| `pointerIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Raw index of pointer to retrieve. Value may be from 0 (the first pointer that is down) to [getPointerCount()](MotionEvent.md))-1. |
+| `pos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Which historical value to return; must be less than [getHistorySize](MotionEvent.md)) |
 
 **See Also**
 
-- [#getHistorySize](../android/view/MotionEvent.md))
-- [#getToolMinor(int)](../android/view/MotionEvent.md))
-- [#AXIS_TOOL_MINOR](../android/view/MotionEvent.md) 
+- [#getHistorySize](MotionEvent.md))
+- [#getToolMinor(int)](MotionEvent.md))
+- [#AXIS_TOOL_MINOR](MotionEvent.md) 
 
 ### getHistoricalTouchMajor
 
@@ -2914,17 +2914,17 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 fun getHistoricalTouchMajor(pos: Int): Float
 ```
 
-[getHistoricalTouchMajor(int,int)](../android/view/MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier).
+[getHistoricalTouchMajor(int,int)](MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier).
 
 | Parameters ||
 |-------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `pos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Which historical value to return; must be less than [getHistorySize](../android/view/MotionEvent.md)) |
+| `pos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Which historical value to return; must be less than [getHistorySize](MotionEvent.md)) |
 
 **See Also**
 
-- [#getHistorySize](../android/view/MotionEvent.md))
+- [#getHistorySize](MotionEvent.md))
 - <https://developer.android.com/reference/kotlin/android/view/MotionEvent#getTouchMajor()>
-- [#AXIS_TOUCH_MAJOR](../android/view/MotionEvent.md) 
+- [#AXIS_TOUCH_MAJOR](MotionEvent.md) 
 
 ### getHistoricalTouchMajor
 
@@ -2937,18 +2937,18 @@ fun getHistoricalTouchMajor(
 ): Float
 ```
 
-Returns a historical touch major axis coordinate, as per [getTouchMajor(int)](../android/view/MotionEvent.md)), that occurred between this event and the previous event for the given pointer. Only applies to ACTION_MOVE events.
+Returns a historical touch major axis coordinate, as per [getTouchMajor(int)](MotionEvent.md)), that occurred between this event and the previous event for the given pointer. Only applies to ACTION_MOVE events.
 
 | Parameters ||
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `pointerIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Raw index of pointer to retrieve. Value may be from 0 (the first pointer that is down) to [getPointerCount()](../android/view/MotionEvent.md))-1. |
-| `pos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Which historical value to return; must be less than [getHistorySize](../android/view/MotionEvent.md)) |
+| `pointerIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Raw index of pointer to retrieve. Value may be from 0 (the first pointer that is down) to [getPointerCount()](MotionEvent.md))-1. |
+| `pos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Which historical value to return; must be less than [getHistorySize](MotionEvent.md)) |
 
 **See Also**
 
-- [#getHistorySize](../android/view/MotionEvent.md))
-- [#getTouchMajor(int)](../android/view/MotionEvent.md))
-- [#AXIS_TOUCH_MAJOR](../android/view/MotionEvent.md) 
+- [#getHistorySize](MotionEvent.md))
+- [#getTouchMajor(int)](MotionEvent.md))
+- [#AXIS_TOUCH_MAJOR](MotionEvent.md) 
 
 ### getHistoricalTouchMinor
 
@@ -2958,17 +2958,17 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 fun getHistoricalTouchMinor(pos: Int): Float
 ```
 
-[getHistoricalTouchMinor(int,int)](../android/view/MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier).
+[getHistoricalTouchMinor(int,int)](MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier).
 
 | Parameters ||
 |-------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `pos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Which historical value to return; must be less than [getHistorySize](../android/view/MotionEvent.md)) |
+| `pos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Which historical value to return; must be less than [getHistorySize](MotionEvent.md)) |
 
 **See Also**
 
-- [#getHistorySize](../android/view/MotionEvent.md))
+- [#getHistorySize](MotionEvent.md))
 - <https://developer.android.com/reference/kotlin/android/view/MotionEvent#getTouchMinor()>
-- [#AXIS_TOUCH_MINOR](../android/view/MotionEvent.md) 
+- [#AXIS_TOUCH_MINOR](MotionEvent.md) 
 
 ### getHistoricalTouchMinor
 
@@ -2981,18 +2981,18 @@ fun getHistoricalTouchMinor(
 ): Float
 ```
 
-Returns a historical touch minor axis coordinate, as per [getTouchMinor(int)](../android/view/MotionEvent.md)), that occurred between this event and the previous event for the given pointer. Only applies to ACTION_MOVE events.
+Returns a historical touch minor axis coordinate, as per [getTouchMinor(int)](MotionEvent.md)), that occurred between this event and the previous event for the given pointer. Only applies to ACTION_MOVE events.
 
 | Parameters ||
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `pointerIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Raw index of pointer to retrieve. Value may be from 0 (the first pointer that is down) to [getPointerCount()](../android/view/MotionEvent.md))-1. |
-| `pos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Which historical value to return; must be less than [getHistorySize](../android/view/MotionEvent.md)) |
+| `pointerIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Raw index of pointer to retrieve. Value may be from 0 (the first pointer that is down) to [getPointerCount()](MotionEvent.md))-1. |
+| `pos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Which historical value to return; must be less than [getHistorySize](MotionEvent.md)) |
 
 **See Also**
 
-- [#getHistorySize](../android/view/MotionEvent.md))
-- [#getTouchMinor(int)](../android/view/MotionEvent.md))
-- [#AXIS_TOUCH_MINOR](../android/view/MotionEvent.md) 
+- [#getHistorySize](MotionEvent.md))
+- [#getTouchMinor(int)](MotionEvent.md))
+- [#AXIS_TOUCH_MINOR](MotionEvent.md) 
 
 ### getHistoricalX
 
@@ -3002,17 +3002,17 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun getHistoricalX(pos: Int): Float
 ```
 
-[getHistoricalX(int,int)](../android/view/MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier).
+[getHistoricalX(int,int)](MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier).
 
 | Parameters ||
 |-------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `pos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Which historical value to return; must be less than [getHistorySize](../android/view/MotionEvent.md)) |
+| `pos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Which historical value to return; must be less than [getHistorySize](MotionEvent.md)) |
 
 **See Also**
 
-- [#getHistorySize](../android/view/MotionEvent.md))
+- [#getHistorySize](MotionEvent.md))
 - <https://developer.android.com/reference/kotlin/android/view/MotionEvent#getX()>
-- [#AXIS_X](../android/view/MotionEvent.md) 
+- [#AXIS_X](MotionEvent.md) 
 
 ### getHistoricalX
 
@@ -3025,18 +3025,18 @@ fun getHistoricalX(
 ): Float
 ```
 
-Returns a historical X coordinate, as per [getX(int)](../android/view/MotionEvent.md)), that occurred between this event and the previous event for the given pointer. Only applies to ACTION_MOVE events.
+Returns a historical X coordinate, as per [getX(int)](MotionEvent.md)), that occurred between this event and the previous event for the given pointer. Only applies to ACTION_MOVE events.
 
 | Parameters ||
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `pointerIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Raw index of pointer to retrieve. Value may be from 0 (the first pointer that is down) to [getPointerCount()](../android/view/MotionEvent.md))-1. |
-| `pos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Which historical value to return; must be less than [getHistorySize](../android/view/MotionEvent.md)) |
+| `pointerIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Raw index of pointer to retrieve. Value may be from 0 (the first pointer that is down) to [getPointerCount()](MotionEvent.md))-1. |
+| `pos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Which historical value to return; must be less than [getHistorySize](MotionEvent.md)) |
 
 **See Also**
 
-- [#getHistorySize](../android/view/MotionEvent.md))
-- [#getX(int)](../android/view/MotionEvent.md))
-- [#AXIS_X](../android/view/MotionEvent.md) 
+- [#getHistorySize](MotionEvent.md))
+- [#getX(int)](MotionEvent.md))
+- [#AXIS_X](MotionEvent.md) 
 
 ### getHistoricalY
 
@@ -3046,17 +3046,17 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun getHistoricalY(pos: Int): Float
 ```
 
-[getHistoricalY(int,int)](../android/view/MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier).
+[getHistoricalY(int,int)](MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier).
 
 | Parameters ||
 |-------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `pos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Which historical value to return; must be less than [getHistorySize](../android/view/MotionEvent.md)) |
+| `pos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Which historical value to return; must be less than [getHistorySize](MotionEvent.md)) |
 
 **See Also**
 
-- [#getHistorySize](../android/view/MotionEvent.md))
+- [#getHistorySize](MotionEvent.md))
 - <https://developer.android.com/reference/kotlin/android/view/MotionEvent#getY()>
-- [#AXIS_Y](../android/view/MotionEvent.md) 
+- [#AXIS_Y](MotionEvent.md) 
 
 ### getHistoricalY
 
@@ -3069,18 +3069,18 @@ fun getHistoricalY(
 ): Float
 ```
 
-Returns a historical Y coordinate, as per [getY(int)](../android/view/MotionEvent.md)), that occurred between this event and the previous event for the given pointer. Only applies to ACTION_MOVE events.
+Returns a historical Y coordinate, as per [getY(int)](MotionEvent.md)), that occurred between this event and the previous event for the given pointer. Only applies to ACTION_MOVE events.
 
 | Parameters ||
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `pointerIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Raw index of pointer to retrieve. Value may be from 0 (the first pointer that is down) to [getPointerCount()](../android/view/MotionEvent.md))-1. |
-| `pos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Which historical value to return; must be less than [getHistorySize](../android/view/MotionEvent.md)) |
+| `pointerIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Raw index of pointer to retrieve. Value may be from 0 (the first pointer that is down) to [getPointerCount()](MotionEvent.md))-1. |
+| `pos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Which historical value to return; must be less than [getHistorySize](MotionEvent.md)) |
 
 **See Also**
 
-- [#getHistorySize](../android/view/MotionEvent.md))
-- [#getY(int)](../android/view/MotionEvent.md))
-- [#AXIS_Y](../android/view/MotionEvent.md) 
+- [#getHistorySize](MotionEvent.md))
+- [#getY(int)](MotionEvent.md))
+- [#AXIS_Y](MotionEvent.md) 
 
 ### getHistorySize
 
@@ -3104,7 +3104,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun getMetaState(): Int
 ```
 
-Returns the state of any meta / modifier keys that were in effect when the event was generated. This is the same values as those returned by [KeyEvent.getMetaState](../android/view/KeyEvent.md)).
+Returns the state of any meta / modifier keys that were in effect when the event was generated. This is the same values as those returned by [KeyEvent.getMetaState](KeyEvent.md)).
 
 | Return ||
 |----------------------------------------------------------------------------|---------------------------------------------------------------------|
@@ -3112,7 +3112,7 @@ Returns the state of any meta / modifier keys that were in effect when the event
 
 **See Also**
 
-- [android.view.KeyEvent#getMetaState()](../android/view/KeyEvent.md)) 
+- [android.view.KeyEvent#getMetaState()](KeyEvent.md)) 
 
 ### getOrientation
 
@@ -3122,10 +3122,10 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 fun getOrientation(): Float
 ```
 
-[getOrientation(int)](../android/view/MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier). 
+[getOrientation(int)](MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier). 
 **See Also**
 
-- [#AXIS_ORIENTATION](../android/view/MotionEvent.md) 
+- [#AXIS_ORIENTATION](MotionEvent.md) 
 
 ### getOrientation
 
@@ -3135,15 +3135,15 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 fun getOrientation(pointerIndex: Int): Float
 ```
 
-Returns the value of [AXIS_ORIENTATION](../android/view/MotionEvent.md) for the given pointer*index*.
+Returns the value of [AXIS_ORIENTATION](MotionEvent.md) for the given pointer*index*.
 
 | Parameters ||
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `pointerIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Raw index of pointer to retrieve. Value may be from 0 (the first pointer that is down) to [getPointerCount()](../android/view/MotionEvent.md))-1. |
+| `pointerIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Raw index of pointer to retrieve. Value may be from 0 (the first pointer that is down) to [getPointerCount()](MotionEvent.md))-1. |
 
 **See Also**
 
-- [#AXIS_ORIENTATION](../android/view/MotionEvent.md) 
+- [#AXIS_ORIENTATION](MotionEvent.md) 
 
 ### getPointerCoords
 
@@ -3160,7 +3160,7 @@ Populates a [PointerCoords](../android/view/MotionEvent.PointerCoords.md) object
 
 | Parameters ||
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `pointerIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Raw index of pointer to retrieve. Value may be from 0 (the first pointer that is down) to [getPointerCount()](../android/view/MotionEvent.md))-1. |
+| `pointerIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Raw index of pointer to retrieve. Value may be from 0 (the first pointer that is down) to [getPointerCount()](MotionEvent.md))-1. |
 | `outPointerCoords` | [MotionEvent.PointerCoords](../android/view/MotionEvent.PointerCoords.md)!:The pointer coordinate object to populate. |
 
 **See Also**
@@ -3189,7 +3189,7 @@ Return the pointer identifier associated with a particular pointer data index in
 
 | Parameters ||
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `pointerIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Raw index of pointer to retrieve. Value may be from 0 (the first pointer that is down) to [getPointerCount()](../android/view/MotionEvent.md))-1. |
+| `pointerIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Raw index of pointer to retrieve. Value may be from 0 (the first pointer that is down) to [getPointerCount()](MotionEvent.md))-1. |
 
 ### getPointerProperties
 
@@ -3206,7 +3206,7 @@ Populates a [PointerProperties](../android/view/MotionEvent.PointerProperties.md
 
 | Parameters ||
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `pointerIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Raw index of pointer to retrieve. Value may be from 0 (the first pointer that is down) to [getPointerCount()](../android/view/MotionEvent.md))-1. |
+| `pointerIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Raw index of pointer to retrieve. Value may be from 0 (the first pointer that is down) to [getPointerCount()](MotionEvent.md))-1. |
 | `outPointerProperties` | [MotionEvent.PointerProperties](../android/view/MotionEvent.PointerProperties.md)!:The pointer properties object to populate. |
 
 **See Also**
@@ -3221,10 +3221,10 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun getPressure(): Float
 ```
 
-[getPressure(int)](../android/view/MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier). 
+[getPressure(int)](MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier). 
 **See Also**
 
-- [#AXIS_PRESSURE](../android/view/MotionEvent.md) 
+- [#AXIS_PRESSURE](MotionEvent.md) 
 
 ### getPressure
 
@@ -3234,15 +3234,15 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 fun getPressure(pointerIndex: Int): Float
 ```
 
-Returns the value of [AXIS_PRESSURE](../android/view/MotionEvent.md) for the given pointer*index*.
+Returns the value of [AXIS_PRESSURE](MotionEvent.md) for the given pointer*index*.
 
 | Parameters ||
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `pointerIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Raw index of pointer to retrieve. Value may be from 0 (the first pointer that is down) to [getPointerCount()](../android/view/MotionEvent.md))-1. |
+| `pointerIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Raw index of pointer to retrieve. Value may be from 0 (the first pointer that is down) to [getPointerCount()](MotionEvent.md))-1. |
 
 **See Also**
 
-- [#AXIS_PRESSURE](../android/view/MotionEvent.md) 
+- [#AXIS_PRESSURE](MotionEvent.md) 
 
 ### getRawX
 
@@ -3252,7 +3252,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun getRawX(): Float
 ```
 
-Equivalent to [getRawX(int)](../android/view/MotionEvent.md))for pointer index 0 (regardless of the pointer identifier).
+Equivalent to [getRawX(int)](MotionEvent.md))for pointer index 0 (regardless of the pointer identifier).
 
 | Return ||
 |--------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
@@ -3261,7 +3261,7 @@ Equivalent to [getRawX(int)](../android/view/MotionEvent.md))for pointer index 0
 **See Also**
 
 - <https://developer.android.com/reference/kotlin/android/view/MotionEvent#getX()>
-- [#AXIS_X](../android/view/MotionEvent.md) 
+- [#AXIS_X](MotionEvent.md) 
 
 ### getRawX
 
@@ -3277,11 +3277,11 @@ In multi-window mode, the coordinate space extends beyond the bounds of the app 
 
 In multiple-screen scenarios, the coordinate space can span screens. For example, if the app is spanning both screens of a dual-screen device, and the motion event occurs on the right-hand screen, the X coordinate is calculated from the left edge of the left-hand screen to the point of the motion event on the right-hand screen. When the app is restricted to a single screen in a multiple-screen environment, the coordinate space includes only the screen on which the app is running.
 
-Use [getPointerId(int)](../android/view/MotionEvent.md))to get the pointer identifier for the pointer referenced by`pointerIndex`.
+Use [getPointerId(int)](MotionEvent.md))to get the pointer identifier for the pointer referenced by`pointerIndex`.
 
 | Parameters ||
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `pointerIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Index of the pointer for which the X coordinate is returned. May be a value in the range of 0 (the first pointer that is down) to [getPointerCount()](../android/view/MotionEvent.md))- 1. |
+| `pointerIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Index of the pointer for which the X coordinate is returned. May be a value in the range of 0 (the first pointer that is down) to [getPointerCount()](MotionEvent.md))- 1. |
 
 | Return ||
 |--------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -3289,8 +3289,8 @@ Use [getPointerId(int)](../android/view/MotionEvent.md))to get the pointer ident
 
 **See Also**
 
-- [#getX(int)](../android/view/MotionEvent.md))
-- [#AXIS_X](../android/view/MotionEvent.md) 
+- [#getX(int)](MotionEvent.md))
+- [#AXIS_X](MotionEvent.md) 
 
 ### getRawY
 
@@ -3300,7 +3300,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun getRawY(): Float
 ```
 
-Equivalent to [getRawY(int)](../android/view/MotionEvent.md))for pointer index 0 (regardless of the pointer identifier).
+Equivalent to [getRawY(int)](MotionEvent.md))for pointer index 0 (regardless of the pointer identifier).
 
 | Return ||
 |--------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
@@ -3309,7 +3309,7 @@ Equivalent to [getRawY(int)](../android/view/MotionEvent.md))for pointer index 0
 **See Also**
 
 - <https://developer.android.com/reference/kotlin/android/view/MotionEvent#getY()>
-- [#AXIS_Y](../android/view/MotionEvent.md) 
+- [#AXIS_Y](MotionEvent.md) 
 
 ### getRawY
 
@@ -3325,11 +3325,11 @@ In multi-window mode, the coordinate space extends beyond the bounds of the app 
 
 In multiple-screen scenarios, the coordinate space can span screens. For example, if the app is spanning both screens of a dual-screen device that's rotated 90 degrees, and the motion event occurs on the lower screen, the Y coordinate is calculated from the top edge of the upper screen to the point of the motion event on the lower screen. When the app is restricted to a single screen in a multiple-screen environment, the coordinate space includes only the screen on which the app is running.
 
-Use [getPointerId(int)](../android/view/MotionEvent.md))to get the pointer identifier for the pointer referenced by`pointerIndex`.
+Use [getPointerId(int)](MotionEvent.md))to get the pointer identifier for the pointer referenced by`pointerIndex`.
 
 | Parameters ||
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `pointerIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Index of the pointer for which the Y coordinate is returned. May be a value in the range of 0 (the first pointer that is down) to [getPointerCount()](../android/view/MotionEvent.md))- 1. |
+| `pointerIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Index of the pointer for which the Y coordinate is returned. May be a value in the range of 0 (the first pointer that is down) to [getPointerCount()](MotionEvent.md))- 1. |
 
 | Return ||
 |--------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -3337,8 +3337,8 @@ Use [getPointerId(int)](../android/view/MotionEvent.md))to get the pointer ident
 
 **See Also**
 
-- [#getY(int)](../android/view/MotionEvent.md))
-- [#AXIS_Y](../android/view/MotionEvent.md) 
+- [#getY(int)](MotionEvent.md))
+- [#AXIS_Y](MotionEvent.md) 
 
 ### getSize
 
@@ -3348,10 +3348,10 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun getSize(): Float
 ```
 
-[getSize(int)](../android/view/MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier). 
+[getSize(int)](MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier). 
 **See Also**
 
-- [#AXIS_SIZE](../android/view/MotionEvent.md) 
+- [#AXIS_SIZE](MotionEvent.md) 
 
 ### getSize
 
@@ -3361,15 +3361,15 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 fun getSize(pointerIndex: Int): Float
 ```
 
-Returns the value of [AXIS_SIZE](../android/view/MotionEvent.md) for the given pointer*index*.
+Returns the value of [AXIS_SIZE](MotionEvent.md) for the given pointer*index*.
 
 | Parameters ||
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `pointerIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Raw index of pointer to retrieve. Value may be from 0 (the first pointer that is down) to [getPointerCount()](../android/view/MotionEvent.md))-1. |
+| `pointerIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Raw index of pointer to retrieve. Value may be from 0 (the first pointer that is down) to [getPointerCount()](MotionEvent.md))-1. |
 
 **See Also**
 
-- [#AXIS_SIZE](../android/view/MotionEvent.md) 
+- [#AXIS_SIZE](MotionEvent.md) 
 
 ### getSource
 
@@ -3383,7 +3383,7 @@ Gets the source of the event.
 
 | Return ||
 |----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The event source or [InputDevice.SOURCE_UNKNOWN](../android/view/InputDevice.md) if unknown. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The event source or [InputDevice.SOURCE_UNKNOWN](InputDevice.md) if unknown. |
 
 ### getToolMajor
 
@@ -3393,10 +3393,10 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 fun getToolMajor(): Float
 ```
 
-[getToolMajor(int)](../android/view/MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier). 
+[getToolMajor(int)](MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier). 
 **See Also**
 
-- [#AXIS_TOOL_MAJOR](../android/view/MotionEvent.md) 
+- [#AXIS_TOOL_MAJOR](MotionEvent.md) 
 
 ### getToolMajor
 
@@ -3406,15 +3406,15 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 fun getToolMajor(pointerIndex: Int): Float
 ```
 
-Returns the value of [AXIS_TOOL_MAJOR](../android/view/MotionEvent.md) for the given pointer*index*.
+Returns the value of [AXIS_TOOL_MAJOR](MotionEvent.md) for the given pointer*index*.
 
 | Parameters ||
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `pointerIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Raw index of pointer to retrieve. Value may be from 0 (the first pointer that is down) to [getPointerCount()](../android/view/MotionEvent.md))-1. |
+| `pointerIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Raw index of pointer to retrieve. Value may be from 0 (the first pointer that is down) to [getPointerCount()](MotionEvent.md))-1. |
 
 **See Also**
 
-- [#AXIS_TOOL_MAJOR](../android/view/MotionEvent.md) 
+- [#AXIS_TOOL_MAJOR](MotionEvent.md) 
 
 ### getToolMinor
 
@@ -3424,10 +3424,10 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 fun getToolMinor(): Float
 ```
 
-[getToolMinor(int)](../android/view/MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier). 
+[getToolMinor(int)](MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier). 
 **See Also**
 
-- [#AXIS_TOOL_MINOR](../android/view/MotionEvent.md) 
+- [#AXIS_TOOL_MINOR](MotionEvent.md) 
 
 ### getToolMinor
 
@@ -3437,15 +3437,15 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 fun getToolMinor(pointerIndex: Int): Float
 ```
 
-Returns the value of [AXIS_TOOL_MINOR](../android/view/MotionEvent.md) for the given pointer*index*.
+Returns the value of [AXIS_TOOL_MINOR](MotionEvent.md) for the given pointer*index*.
 
 | Parameters ||
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `pointerIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Raw index of pointer to retrieve. Value may be from 0 (the first pointer that is down) to [getPointerCount()](../android/view/MotionEvent.md))-1. |
+| `pointerIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Raw index of pointer to retrieve. Value may be from 0 (the first pointer that is down) to [getPointerCount()](MotionEvent.md))-1. |
 
 **See Also**
 
-- [#AXIS_TOOL_MINOR](../android/view/MotionEvent.md) 
+- [#AXIS_TOOL_MINOR](MotionEvent.md) 
 
 ### getToolType
 
@@ -3459,18 +3459,18 @@ Gets the tool type of a pointer for the given pointer index. The tool type indic
 
 | Parameters ||
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `pointerIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Raw index of pointer to retrieve. Value may be from 0 (the first pointer that is down) to [getPointerCount()](../android/view/MotionEvent.md))-1. |
+| `pointerIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Raw index of pointer to retrieve. Value may be from 0 (the first pointer that is down) to [getPointerCount()](MotionEvent.md))-1. |
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The tool type of the pointer. Value is [android.view.MotionEvent#TOOL_TYPE_UNKNOWN](../android/view/MotionEvent.md), [android.view.MotionEvent#TOOL_TYPE_FINGER](../android/view/MotionEvent.md), [android.view.MotionEvent#TOOL_TYPE_STYLUS](../android/view/MotionEvent.md), [android.view.MotionEvent#TOOL_TYPE_MOUSE](../android/view/MotionEvent.md), [android.view.MotionEvent#TOOL_TYPE_ERASER](../android/view/MotionEvent.md), or android.view.MotionEvent.TOOL_TYPE_PALM |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The tool type of the pointer. Value is [android.view.MotionEvent#TOOL_TYPE_UNKNOWN](MotionEvent.md), [android.view.MotionEvent#TOOL_TYPE_FINGER](MotionEvent.md), [android.view.MotionEvent#TOOL_TYPE_STYLUS](MotionEvent.md), [android.view.MotionEvent#TOOL_TYPE_MOUSE](MotionEvent.md), [android.view.MotionEvent#TOOL_TYPE_ERASER](MotionEvent.md), or android.view.MotionEvent.TOOL_TYPE_PALM |
 
 **See Also**
 
-- [#TOOL_TYPE_UNKNOWN](../android/view/MotionEvent.md)
-- [#TOOL_TYPE_FINGER](../android/view/MotionEvent.md)
-- [#TOOL_TYPE_STYLUS](../android/view/MotionEvent.md)
-- [#TOOL_TYPE_MOUSE](../android/view/MotionEvent.md) 
+- [#TOOL_TYPE_UNKNOWN](MotionEvent.md)
+- [#TOOL_TYPE_FINGER](MotionEvent.md)
+- [#TOOL_TYPE_STYLUS](MotionEvent.md)
+- [#TOOL_TYPE_MOUSE](MotionEvent.md) 
 
 ### getTouchMajor
 
@@ -3480,10 +3480,10 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 fun getTouchMajor(): Float
 ```
 
-[getTouchMajor(int)](../android/view/MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier). 
+[getTouchMajor(int)](MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier). 
 **See Also**
 
-- [#AXIS_TOUCH_MAJOR](../android/view/MotionEvent.md) 
+- [#AXIS_TOUCH_MAJOR](MotionEvent.md) 
 
 ### getTouchMajor
 
@@ -3493,15 +3493,15 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 fun getTouchMajor(pointerIndex: Int): Float
 ```
 
-Returns the value of [AXIS_TOUCH_MAJOR](../android/view/MotionEvent.md) for the given pointer*index*.
+Returns the value of [AXIS_TOUCH_MAJOR](MotionEvent.md) for the given pointer*index*.
 
 | Parameters ||
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `pointerIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Raw index of pointer to retrieve. Value may be from 0 (the first pointer that is down) to [getPointerCount()](../android/view/MotionEvent.md))-1. |
+| `pointerIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Raw index of pointer to retrieve. Value may be from 0 (the first pointer that is down) to [getPointerCount()](MotionEvent.md))-1. |
 
 **See Also**
 
-- [#AXIS_TOUCH_MAJOR](../android/view/MotionEvent.md) 
+- [#AXIS_TOUCH_MAJOR](MotionEvent.md) 
 
 ### getTouchMinor
 
@@ -3511,10 +3511,10 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 fun getTouchMinor(): Float
 ```
 
-[getTouchMinor(int)](../android/view/MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier). 
+[getTouchMinor(int)](MotionEvent.md))for the first pointer index (may be an arbitrary pointer identifier). 
 **See Also**
 
-- [#AXIS_TOUCH_MINOR](../android/view/MotionEvent.md) 
+- [#AXIS_TOUCH_MINOR](MotionEvent.md) 
 
 ### getTouchMinor
 
@@ -3524,15 +3524,15 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 fun getTouchMinor(pointerIndex: Int): Float
 ```
 
-Returns the value of [AXIS_TOUCH_MINOR](../android/view/MotionEvent.md) for the given pointer*index*.
+Returns the value of [AXIS_TOUCH_MINOR](MotionEvent.md) for the given pointer*index*.
 
 | Parameters ||
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `pointerIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Raw index of pointer to retrieve. Value may be from 0 (the first pointer that is down) to [getPointerCount()](../android/view/MotionEvent.md))-1. |
+| `pointerIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Raw index of pointer to retrieve. Value may be from 0 (the first pointer that is down) to [getPointerCount()](MotionEvent.md))-1. |
 
 **See Also**
 
-- [#AXIS_TOUCH_MINOR](../android/view/MotionEvent.md) 
+- [#AXIS_TOUCH_MINOR](MotionEvent.md) 
 
 ### getX
 
@@ -3542,7 +3542,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun getX(): Float
 ```
 
-Equivalent to [getX(int)](../android/view/MotionEvent.md))for pointer index 0 (regardless of the pointer identifier).
+Equivalent to [getX(int)](MotionEvent.md))for pointer index 0 (regardless of the pointer identifier).
 
 | Return ||
 |--------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
@@ -3550,7 +3550,7 @@ Equivalent to [getX(int)](../android/view/MotionEvent.md))for pointer index 0 (r
 
 **See Also**
 
-- [#AXIS_X](../android/view/MotionEvent.md) 
+- [#AXIS_X](MotionEvent.md) 
 
 ### getX
 
@@ -3562,11 +3562,11 @@ fun getX(pointerIndex: Int): Float
 
 Returns the X coordinate of the pointer referenced by`pointerIndex`for this motion event. The coordinate is in the coordinate space of the view that received this motion event.
 
-Use [getPointerId(int)](../android/view/MotionEvent.md))to get the pointer identifier for the pointer referenced by`pointerIndex`.
+Use [getPointerId(int)](MotionEvent.md))to get the pointer identifier for the pointer referenced by`pointerIndex`.
 
 | Parameters ||
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `pointerIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Index of the pointer for which the X coordinate is returned. May be a value in the range of 0 (the first pointer that is down) to [getPointerCount()](../android/view/MotionEvent.md))- 1. |
+| `pointerIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Index of the pointer for which the X coordinate is returned. May be a value in the range of 0 (the first pointer that is down) to [getPointerCount()](MotionEvent.md))- 1. |
 
 | Return ||
 |--------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -3574,7 +3574,7 @@ Use [getPointerId(int)](../android/view/MotionEvent.md))to get the pointer ident
 
 **See Also**
 
-- [#AXIS_X](../android/view/MotionEvent.md) 
+- [#AXIS_X](MotionEvent.md) 
 
 ### getXPrecision
 
@@ -3592,7 +3592,7 @@ Return the precision of the X coordinates being reported. You can multiply this 
 
 **See Also**
 
-- [#AXIS_X](../android/view/MotionEvent.md) 
+- [#AXIS_X](MotionEvent.md) 
 
 ### getY
 
@@ -3602,7 +3602,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun getY(): Float
 ```
 
-Equivalent to [getY(int)](../android/view/MotionEvent.md))for pointer index 0 (regardless of the pointer identifier).
+Equivalent to [getY(int)](MotionEvent.md))for pointer index 0 (regardless of the pointer identifier).
 
 | Return ||
 |--------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
@@ -3610,7 +3610,7 @@ Equivalent to [getY(int)](../android/view/MotionEvent.md))for pointer index 0 (r
 
 **See Also**
 
-- [#AXIS_Y](../android/view/MotionEvent.md) 
+- [#AXIS_Y](MotionEvent.md) 
 
 ### getY
 
@@ -3622,11 +3622,11 @@ fun getY(pointerIndex: Int): Float
 
 Returns the Y coordinate of the pointer referenced by`pointerIndex`for this motion event. The coordinate is in the coordinate space of the view that received this motion event.
 
-Use [getPointerId(int)](../android/view/MotionEvent.md))to get the pointer identifier for the pointer referenced by`pointerIndex`.
+Use [getPointerId(int)](MotionEvent.md))to get the pointer identifier for the pointer referenced by`pointerIndex`.
 
 | Parameters ||
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `pointerIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Index of the pointer for which the Y coordinate is returned. May be a value in the range of 0 (the first pointer that is down) to [getPointerCount()](../android/view/MotionEvent.md))- 1. |
+| `pointerIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Index of the pointer for which the Y coordinate is returned. May be a value in the range of 0 (the first pointer that is down) to [getPointerCount()](MotionEvent.md))- 1. |
 
 | Return ||
 |--------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -3634,7 +3634,7 @@ Use [getPointerId(int)](../android/view/MotionEvent.md))to get the pointer ident
 
 **See Also**
 
-- [#AXIS_Y](../android/view/MotionEvent.md) 
+- [#AXIS_Y](MotionEvent.md) 
 
 ### getYPrecision
 
@@ -3652,7 +3652,7 @@ Return the precision of the Y coordinates being reported. You can multiply this 
 
 **See Also**
 
-- [#AXIS_Y](../android/view/MotionEvent.md) 
+- [#AXIS_Y](MotionEvent.md) 
 
 ### isButtonPressed
 
@@ -3674,13 +3674,13 @@ Checks if a mouse or stylus button (or combination of buttons) is pressed.
 
 **See Also**
 
-- [#BUTTON_PRIMARY](../android/view/MotionEvent.md)
-- [#BUTTON_SECONDARY](../android/view/MotionEvent.md)
-- [#BUTTON_TERTIARY](../android/view/MotionEvent.md)
-- [#BUTTON_FORWARD](../android/view/MotionEvent.md)
-- [#BUTTON_BACK](../android/view/MotionEvent.md)
-- [#BUTTON_STYLUS_PRIMARY](../android/view/MotionEvent.md)
-- [#BUTTON_STYLUS_SECONDARY](../android/view/MotionEvent.md) 
+- [#BUTTON_PRIMARY](MotionEvent.md)
+- [#BUTTON_SECONDARY](MotionEvent.md)
+- [#BUTTON_TERTIARY](MotionEvent.md)
+- [#BUTTON_FORWARD](MotionEvent.md)
+- [#BUTTON_BACK](MotionEvent.md)
+- [#BUTTON_STYLUS_PRIMARY](MotionEvent.md)
+- [#BUTTON_STYLUS_SECONDARY](MotionEvent.md) 
 
 ### obtain
 
@@ -3717,9 +3717,9 @@ Create a new MotionEvent, filling in all of the basic values that define the mot
 
 | Parameters ||
 |--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `downTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The time (in ms) when the user originally pressed down to start a stream of position events. This must be obtained from [SystemClock.uptimeMillis()](../android/os/SystemClock.md)). |
-| `eventTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The time (in ms) when this specific event was generated. This must be obtained from [SystemClock.uptimeMillis()](../android/os/SystemClock.md)). |
-| `action` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The kind of action being performed, such as [ACTION_DOWN](../android/view/MotionEvent.md). |
+| `downTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The time (in ms) when the user originally pressed down to start a stream of position events. This must be obtained from [SystemClock.uptimeMillis()](../android.os/SystemClock.md)). |
+| `eventTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The time (in ms) when this specific event was generated. This must be obtained from [SystemClock.uptimeMillis()](../android.os/SystemClock.md)). |
+| `action` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The kind of action being performed, such as [ACTION_DOWN](MotionEvent.md). |
 | --- | --- |
 | `x` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The X coordinate of this event. |
 | `y` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The Y coordinate of this event. |
@@ -3753,9 +3753,9 @@ Create a new MotionEvent, filling in a subset of the basic motion values. Those 
 
 | Parameters ||
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `downTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The time (in ms) when the user originally pressed down to start a stream of position events. This must be obtained from [SystemClock.uptimeMillis()](../android/os/SystemClock.md)). |
-| `eventTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The time (in ms) when this specific event was generated. This must be obtained from [SystemClock.uptimeMillis()](../android/os/SystemClock.md)). |
-| `action` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The kind of action being performed, such as [ACTION_DOWN](../android/view/MotionEvent.md). |
+| `downTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The time (in ms) when the user originally pressed down to start a stream of position events. This must be obtained from [SystemClock.uptimeMillis()](../android.os/SystemClock.md)). |
+| `eventTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The time (in ms) when this specific event was generated. This must be obtained from [SystemClock.uptimeMillis()](../android.os/SystemClock.md)). |
+| `action` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The kind of action being performed, such as [ACTION_DOWN](MotionEvent.md). |
 | --- | --- |
 | `x` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The X coordinate of this event. |
 | `y` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The Y coordinate of this event. |
@@ -3789,9 +3789,9 @@ Create a new MotionEvent, filling in all of the basic values that define the mot
 
 | Parameters ||
 |---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `downTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The time (in ms) when the user originally pressed down to start a stream of position events. This must be obtained from [SystemClock.uptimeMillis()](../android/os/SystemClock.md)). |
-| `eventTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The time (in ms) when this specific event was generated. This must be obtained from [SystemClock.uptimeMillis()](../android/os/SystemClock.md)). |
-| `action` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The kind of action being performed, such as [ACTION_DOWN](../android/view/MotionEvent.md). |
+| `downTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The time (in ms) when the user originally pressed down to start a stream of position events. This must be obtained from [SystemClock.uptimeMillis()](../android.os/SystemClock.md)). |
+| `eventTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The time (in ms) when this specific event was generated. This must be obtained from [SystemClock.uptimeMillis()](../android.os/SystemClock.md)). |
+| `action` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The kind of action being performed, such as [ACTION_DOWN](MotionEvent.md). |
 | --- | --- |
 | `pointerCount` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The number of pointers that will be in this event. |
 | `pointerProperties` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [MotionEvent.PointerProperties](../android/view/MotionEvent.PointerProperties.md)!\>!:An array of*pointerCount* values providing a [PointerProperties](../android/view/MotionEvent.PointerProperties.md) property object for each pointer, which must include the pointer identifier. |
@@ -3837,9 +3837,9 @@ Create a new MotionEvent, filling in all of the basic values that define the mot
 
 | Parameters ||
 |---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `downTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The time (in ms) when the user originally pressed down to start a stream of position events. This must be obtained from [SystemClock.uptimeMillis()](../android/os/SystemClock.md)). |
-| `eventTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The time (in ms) when this specific event was generated. This must be obtained from [SystemClock.uptimeMillis()](../android/os/SystemClock.md)). |
-| `action` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The kind of action being performed, such as [ACTION_DOWN](../android/view/MotionEvent.md). |
+| `downTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The time (in ms) when the user originally pressed down to start a stream of position events. This must be obtained from [SystemClock.uptimeMillis()](../android.os/SystemClock.md)). |
+| `eventTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The time (in ms) when this specific event was generated. This must be obtained from [SystemClock.uptimeMillis()](../android.os/SystemClock.md)). |
+| `action` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The kind of action being performed, such as [ACTION_DOWN](MotionEvent.md). |
 | --- | --- |
 | `pointerCount` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The number of pointers that will be in this event. |
 | `pointerProperties` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [MotionEvent.PointerProperties](../android/view/MotionEvent.PointerProperties.md)!\>:An array of*pointerCount* values providing a [PointerProperties](../android/view/MotionEvent.PointerProperties.md) property object for each pointer, which must include the pointer identifier. This value cannot be`null`. |
@@ -3857,11 +3857,11 @@ Create a new MotionEvent, filling in all of the basic values that define the mot
 | `displayId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The display ID associated with this event. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The motion event flags. |
 | --- | --- |
-| `classification` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The classification to give this event. Value is [android.view.MotionEvent#CLASSIFICATION_NONE](../android/view/MotionEvent.md), [android.view.MotionEvent#CLASSIFICATION_AMBIGUOUS_GESTURE](../android/view/MotionEvent.md), [android.view.MotionEvent#CLASSIFICATION_DEEP_PRESS](../android/view/MotionEvent.md), [android.view.MotionEvent#CLASSIFICATION_TWO_FINGER_SWIPE](../android/view/MotionEvent.md), android.view.MotionEvent.CLASSIFICATION_MULTI_FINGER_SWIPE, or [android.view.MotionEvent#CLASSIFICATION_PINCH](../android/view/MotionEvent.md) |
+| `classification` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The classification to give this event. Value is [android.view.MotionEvent#CLASSIFICATION_NONE](MotionEvent.md), [android.view.MotionEvent#CLASSIFICATION_AMBIGUOUS_GESTURE](MotionEvent.md), [android.view.MotionEvent#CLASSIFICATION_DEEP_PRESS](MotionEvent.md), [android.view.MotionEvent#CLASSIFICATION_TWO_FINGER_SWIPE](MotionEvent.md), android.view.MotionEvent.CLASSIFICATION_MULTI_FINGER_SWIPE, or [android.view.MotionEvent#CLASSIFICATION_PINCH](MotionEvent.md) |
 
 | Return ||
 |------------------------------------------------------------------------------------------|--------------------------|
-| [MotionEvent](../android/view/MotionEvent.md)? | This value may be`null`. |
+| [MotionEvent](MotionEvent.md)? | This value may be`null`. |
 
 ### obtain
 
@@ -3886,15 +3886,15 @@ static fun obtain(
 ): MotionEvent!
 ```
 
-**Deprecated:** *Use [obtain(long,long,int,float,float,float,float,int,float,float,int,int)](../android/view/MotionEvent.md))instead.*
+**Deprecated:** *Use [obtain(long,long,int,float,float,float,float,int,float,float,int,int)](MotionEvent.md))instead.*
 
 Create a new MotionEvent, filling in all of the basic values that define the motion.
 
 | Parameters ||
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `downTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The time (in ms) when the user originally pressed down to start a stream of position events. This must be obtained from [SystemClock.uptimeMillis()](../android/os/SystemClock.md)). |
-| `eventTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The time (in ms) when this specific event was generated. This must be obtained from [SystemClock.uptimeMillis()](../android/os/SystemClock.md)). |
-| `action` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The kind of action being performed, such as [ACTION_DOWN](../android/view/MotionEvent.md). |
+| `downTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The time (in ms) when the user originally pressed down to start a stream of position events. This must be obtained from [SystemClock.uptimeMillis()](../android.os/SystemClock.md)). |
+| `eventTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The time (in ms) when this specific event was generated. This must be obtained from [SystemClock.uptimeMillis()](../android.os/SystemClock.md)). |
+| `action` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The kind of action being performed, such as [ACTION_DOWN](MotionEvent.md). |
 | --- | --- |
 | `pointerCount` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The number of pointers that are active in this event. |
 | `x` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The X coordinate of this event. |
@@ -3939,9 +3939,9 @@ Create a new MotionEvent, filling in all of the basic values that define the mot
 
 | Parameters ||
 |-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `downTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The time (in ms) when the user originally pressed down to start a stream of position events. This must be obtained from [SystemClock.uptimeMillis()](../android/os/SystemClock.md)). |
-| `eventTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The time (in ms) when this specific event was generated. This must be obtained from [SystemClock.uptimeMillis()](../android/os/SystemClock.md)). |
-| `action` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The kind of action being performed, such as [ACTION_DOWN](../android/view/MotionEvent.md). |
+| `downTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The time (in ms) when the user originally pressed down to start a stream of position events. This must be obtained from [SystemClock.uptimeMillis()](../android.os/SystemClock.md)). |
+| `eventTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The time (in ms) when this specific event was generated. This must be obtained from [SystemClock.uptimeMillis()](../android.os/SystemClock.md)). |
+| `action` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The kind of action being performed, such as [ACTION_DOWN](MotionEvent.md). |
 | --- | --- |
 | `pointerCount` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The number of pointers that will be in this event. |
 | `pointerIds` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!:An array of*pointerCount*values providing an identifier for each pointer. |
@@ -4029,7 +4029,7 @@ fun setLocation(
 ): Unit
 ```
 
-Set this event's location. Applies [offsetLocation](../android/view/MotionEvent.md))with a delta from the current location to the given new location.
+Set this event's location. Applies [offsetLocation](MotionEvent.md))with a delta from the current location to the given new location.
 
 | Parameters ||
 |-----|---------------------------------------------------------------------------------------------------------|
@@ -4068,7 +4068,7 @@ Applies a transformation matrix to all of the points in the event.
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------|
-| `matrix` | [Matrix](../android/graphics/Matrix.md)!:The transformation matrix to apply. |
+| `matrix` | [Matrix](../android.graphics/Matrix.md)!:The transformation matrix to apply. |
 
 ### writeToParcel
 
@@ -4084,7 +4084,7 @@ fun writeToParcel(
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `dest` | The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Protected methods
 

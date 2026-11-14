@@ -4,20 +4,20 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 
 # RegistrationManager
 
-Kotlin| [Java](../android/telephony/ims/RegistrationManager.md) 
+Kotlin| [Java](RegistrationManager.md) 
 | --- | --- |
 
 ```
 interface RegistrationManager
 ```
 
-| [android.telephony.ims.RegistrationManager](../android/telephony/ims/RegistrationManager.md) |
+| [android.telephony.ims.RegistrationManager](RegistrationManager.md) |
 
-| Known Direct Subclasses [ImsMmTelManager](../android/telephony/ims/ImsMmTelManager.md) |---------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------| | [ImsMmTelManager](../android/telephony/ims/ImsMmTelManager.md) | A manager for the MmTel (Multimedia Telephony) feature of an IMS network, given an associated subscription. | |
+| Known Direct Subclasses [ImsMmTelManager](ImsMmTelManager.md) |---------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------| | [ImsMmTelManager](ImsMmTelManager.md) | A manager for the MmTel (Multimedia Telephony) feature of an IMS network, given an associated subscription. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 Manages IMS Service registration state for associated`ImsFeature`s. 
-Requires the [PackageManager#FEATURE_TELEPHONY_IMS](../android/content/pm/PackageManager.md) feature which can be detected using [PackageManager.hasSystemFeature(String)](../android/content/pm/PackageManager.md)).
+Requires the [PackageManager#FEATURE_TELEPHONY_IMS](../android.content.pm/PackageManager.md) feature which can be detected using [PackageManager.hasSystemFeature(String)](../android.content.pm/PackageManager.md)).
 
 ## Summary
 
@@ -27,18 +27,18 @@ Requires the [PackageManager#FEATURE_TELEPHONY_IMS](../android/content/pm/Packag
 
 | Constants ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REGISTRATION_STATE_NOT_REGISTERED](../android/telephony/ims/RegistrationManager.md) The IMS service is currently not registered to the carrier network. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REGISTRATION_STATE_REGISTERED](../android/telephony/ims/RegistrationManager.md) The IMS service is currently registered to the carrier network. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REGISTRATION_STATE_REGISTERING](../android/telephony/ims/RegistrationManager.md) The IMS service is currently in the process of registering to the carrier network. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REGISTRATION_STATE_NOT_REGISTERED](RegistrationManager.md) The IMS service is currently not registered to the carrier network. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REGISTRATION_STATE_REGISTERED](RegistrationManager.md) The IMS service is currently registered to the carrier network. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REGISTRATION_STATE_REGISTERING](RegistrationManager.md) The IMS service is currently in the process of registering to the carrier network. |
 | --- | --- |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getRegistrationState](../android/telephony/ims/RegistrationManager.md))`(`executor:` ` [Executor](../java/util/concurrent/Executor.md)`, `stateCallback:` ` [Consumer](../java/util/function/Consumer.md)< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!>`)` Gets the registration state of the IMS service. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getRegistrationTransportType](../android/telephony/ims/RegistrationManager.md))`(`executor:` ` [Executor](../java/util/concurrent/Executor.md)`, `transportTypeCallback:` ` [Consumer](../java/util/function/Consumer.md)< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!>`)` Gets the Transport Type associated with the current IMS registration. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerImsRegistrationCallback](../android/telephony/ims/RegistrationManager.md))`(`executor:` ` [Executor](../java/util/concurrent/Executor.md)`, `c:` ` [RegistrationManager.RegistrationCallback](../android/telephony/ims/RegistrationManager.RegistrationCallback.md)`)` Registers a [RegistrationCallback](../android/telephony/ims/RegistrationManager.RegistrationCallback.md) with the system. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getRegistrationState](RegistrationManager.md))`(`executor:` ` [Executor](../java.util.concurrent/Executor.md)`, `stateCallback:` ` [Consumer](../java.util.function/Consumer.md)< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!>`)` Gets the registration state of the IMS service. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getRegistrationTransportType](RegistrationManager.md))`(`executor:` ` [Executor](../java.util.concurrent/Executor.md)`, `transportTypeCallback:` ` [Consumer](../java.util.function/Consumer.md)< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!>`)` Gets the Transport Type associated with the current IMS registration. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerImsRegistrationCallback](RegistrationManager.md))`(`executor:` ` [Executor](../java.util.concurrent/Executor.md)`, `c:` ` [RegistrationManager.RegistrationCallback](../android/telephony/ims/RegistrationManager.RegistrationCallback.md)`)` Registers a [RegistrationCallback](../android/telephony/ims/RegistrationManager.RegistrationCallback.md) with the system. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterImsRegistrationCallback](../android/telephony/ims/RegistrationManager.md))`(`c:` ` [RegistrationManager.RegistrationCallback](../android/telephony/ims/RegistrationManager.RegistrationCallback.md)`)` Removes an existing [RegistrationCallback](../android/telephony/ims/RegistrationManager.RegistrationCallback.md). |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterImsRegistrationCallback](RegistrationManager.md))`(`c:` ` [RegistrationManager.RegistrationCallback](../android/telephony/ims/RegistrationManager.RegistrationCallback.md)`)` Removes an existing [RegistrationCallback](../android/telephony/ims/RegistrationManager.RegistrationCallback.md). |
 
 ## Constants
 
@@ -96,8 +96,8 @@ Requires android.Manifest.permission.READ_PRIVILEGED_PHONE_STATE
 
 | Parameters ||
 |-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `executor` | [Executor](../java/util/concurrent/Executor.md):The [Executor](../java/util/concurrent/Executor.md) that will be used to call the IMS registration state callback. This value cannot be`null`. Callback and listener events are dispatched through this [Executor](../java/util/concurrent/Executor.md), providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use [Context.getMainExecutor()](../android/content/Context.md)). Otherwise, provide an [Executor](../java/util/concurrent/Executor.md) that dispatches to an appropriate thread. |
-| `stateCallback` | [Consumer](../java/util/function/Consumer.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>:A callback called on the supplied [Executor](../java/util/concurrent/Executor.md) that will contain the registration state of the IMS service, which will be one of the following: [REGISTRATION_STATE_NOT_REGISTERED](../android/telephony/ims/RegistrationManager.md), [REGISTRATION_STATE_REGISTERING](../android/telephony/ims/RegistrationManager.md), or [REGISTRATION_STATE_REGISTERED](../android/telephony/ims/RegistrationManager.md). This value cannot be`null`. Value is [android.telephony.ims.RegistrationManager#REGISTRATION_STATE_NOT_REGISTERED](../android/telephony/ims/RegistrationManager.md), [android.telephony.ims.RegistrationManager#REGISTRATION_STATE_REGISTERING](../android/telephony/ims/RegistrationManager.md), or [android.telephony.ims.RegistrationManager#REGISTRATION_STATE_REGISTERED](../android/telephony/ims/RegistrationManager.md) |
+| `executor` | [Executor](../java.util.concurrent/Executor.md):The [Executor](../java.util.concurrent/Executor.md) that will be used to call the IMS registration state callback. This value cannot be`null`. Callback and listener events are dispatched through this [Executor](../java.util.concurrent/Executor.md), providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use [Context.getMainExecutor()](../android.content/Context.md)). Otherwise, provide an [Executor](../java.util.concurrent/Executor.md) that dispatches to an appropriate thread. |
+| `stateCallback` | [Consumer](../java.util.function/Consumer.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>:A callback called on the supplied [Executor](../java.util.concurrent/Executor.md) that will contain the registration state of the IMS service, which will be one of the following: [REGISTRATION_STATE_NOT_REGISTERED](RegistrationManager.md), [REGISTRATION_STATE_REGISTERING](RegistrationManager.md), or [REGISTRATION_STATE_REGISTERED](RegistrationManager.md). This value cannot be`null`. Value is [android.telephony.ims.RegistrationManager#REGISTRATION_STATE_NOT_REGISTERED](RegistrationManager.md), [android.telephony.ims.RegistrationManager#REGISTRATION_STATE_REGISTERING](RegistrationManager.md), or [android.telephony.ims.RegistrationManager#REGISTRATION_STATE_REGISTERED](RegistrationManager.md) |
 
 ### getRegistrationTransportType
 
@@ -115,8 +115,8 @@ Requires android.Manifest.permission.READ_PRIVILEGED_PHONE_STATE
 
 | Parameters ||
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `executor` | [Executor](../java/util/concurrent/Executor.md):The [Executor](../java/util/concurrent/Executor.md) that will be used to call the transportTypeCallback. This value cannot be`null`. Callback and listener events are dispatched through this [Executor](../java/util/concurrent/Executor.md), providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use [Context.getMainExecutor()](../android/content/Context.md)). Otherwise, provide an [Executor](../java/util/concurrent/Executor.md) that dispatches to an appropriate thread. |
-| `transportTypeCallback` | [Consumer](../java/util/function/Consumer.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>:The transport type associated with the current IMS registration, which will be one of following: {@see AccessNetworkConstants#TRANSPORT_TYPE_WWAN}, {@see AccessNetworkConstants#TRANSPORT_TYPE_WLAN}, or {@see AccessNetworkConstants#TRANSPORT_TYPE_INVALID}. This value cannot be`null`. Value is android.telephony.AccessNetworkConstants.TRANSPORT_TYPE_INVALID, [android.telephony.AccessNetworkConstants#TRANSPORT_TYPE_WWAN](../android/telephony/AccessNetworkConstants.md), or [android.telephony.AccessNetworkConstants#TRANSPORT_TYPE_WLAN](../android/telephony/AccessNetworkConstants.md) |
+| `executor` | [Executor](../java.util.concurrent/Executor.md):The [Executor](../java.util.concurrent/Executor.md) that will be used to call the transportTypeCallback. This value cannot be`null`. Callback and listener events are dispatched through this [Executor](../java.util.concurrent/Executor.md), providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use [Context.getMainExecutor()](../android.content/Context.md)). Otherwise, provide an [Executor](../java.util.concurrent/Executor.md) that dispatches to an appropriate thread. |
+| `transportTypeCallback` | [Consumer](../java.util.function/Consumer.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>:The transport type associated with the current IMS registration, which will be one of following: {@see AccessNetworkConstants#TRANSPORT_TYPE_WWAN}, {@see AccessNetworkConstants#TRANSPORT_TYPE_WLAN}, or {@see AccessNetworkConstants#TRANSPORT_TYPE_INVALID}. This value cannot be`null`. Value is android.telephony.AccessNetworkConstants.TRANSPORT_TYPE_INVALID, [android.telephony.AccessNetworkConstants#TRANSPORT_TYPE_WWAN](../android.telephony/AccessNetworkConstants.md), or [android.telephony.AccessNetworkConstants#TRANSPORT_TYPE_WLAN](../android.telephony/AccessNetworkConstants.md) |
 
 ### registerImsRegistrationCallback
 
@@ -134,16 +134,16 @@ Requires android.Manifest.permission.READ_PRIVILEGED_PHONE_STATE
 
 | Parameters ||
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `executor` | [Executor](../java/util/concurrent/Executor.md):The executor the callback events should be run on. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md):The executor the callback events should be run on. |
 | `c` | [RegistrationManager.RegistrationCallback](../android/telephony/ims/RegistrationManager.RegistrationCallback.md):The [RegistrationCallback](../android/telephony/ims/RegistrationManager.RegistrationCallback.md) to be added. |
 
 | Exceptions ||
 |--------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `android.telephony.ims.ImsException` | if the subscription associated with this callback is valid, but the`ImsService`associated with the subscription is not available. This can happen if the service crashed, for example. See [ImsException.getCode()](../android/telephony/ims/ImsException.md))for a more detailed reason. |
+| `android.telephony.ims.ImsException` | if the subscription associated with this callback is valid, but the`ImsService`associated with the subscription is not available. This can happen if the service crashed, for example. See [ImsException.getCode()](ImsException.md))for a more detailed reason. |
 
 **See Also**
 
-- [#unregisterImsRegistrationCallback(RegistrationCallback)](../android/telephony/ims/RegistrationManager.md)) 
+- [#unregisterImsRegistrationCallback(RegistrationCallback)](RegistrationManager.md)) 
 
 ### unregisterImsRegistrationCallback
 
@@ -163,4 +163,4 @@ Requires android.Manifest.permission.READ_PRIVILEGED_PHONE_STATE
 **See Also**
 
 - [android.telephony.SubscriptionManager.OnSubscriptionsChangedListener](../android/telephony/SubscriptionManager.OnSubscriptionsChangedListener.md)
-- [#registerImsRegistrationCallback(Executor, RegistrationCallback)](../android/telephony/ims/RegistrationManager.md))
+- [#registerImsRegistrationCallback(Executor, RegistrationCallback)](RegistrationManager.md))

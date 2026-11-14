@@ -2,14 +2,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # OnBackAnimationCallback
 
-Kotlin | [Java](../android/window/OnBackAnimationCallback.md)
+Kotlin | [Java](OnBackAnimationCallback.md)
 | --- | --- |
 
 ```
 interface OnBackAnimationCallback : OnBackInvokedCallback
 ```
 
-| [android.window.OnBackAnimationCallback](../android/window/OnBackAnimationCallback.md) |
+| [android.window.OnBackAnimationCallback](OnBackAnimationCallback.md) |
 
 Interface for applications to register back animation callbacks along their custom back handling.
 
@@ -58,7 +58,7 @@ Called when a back gesture progresses.
 
 | Parameters ||
 |---|---|
-| `backEvent` | [BackEvent](../android/window/BackEvent.md): An `https://developer.android.com/reference/kotlin/android/window/BackEvent` object describing the progress event. This value cannot be `null`. |
+| `backEvent` | [BackEvent](BackEvent.md): An `https://developer.android.com/reference/kotlin/android/window/BackEvent` object describing the progress event. This value cannot be `null`. |
 
 **See Also**
 
@@ -76,7 +76,7 @@ Called when a back gesture has been started, or back button has been pressed dow
 
 | Parameters ||
 |---|---|
-| `backEvent` | [BackEvent](../android/window/BackEvent.md): The `https://developer.android.com/reference/kotlin/android/window/BackEvent` containing information about the touch or button press. This value cannot be `null`. |
+| `backEvent` | [BackEvent](BackEvent.md): The `https://developer.android.com/reference/kotlin/android/window/BackEvent` containing information about the touch or button press. This value cannot be `null`. |
 
 **See Also**
 

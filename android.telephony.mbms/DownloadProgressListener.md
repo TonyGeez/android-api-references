@@ -4,7 +4,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 
 # DownloadProgressListener
 
-Kotlin| [Java](../android/telephony/mbms/DownloadProgressListener.md) 
+Kotlin| [Java](DownloadProgressListener.md) 
 | --- | --- |
 
 ```
@@ -13,19 +13,19 @@ open class DownloadProgressListener
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.telephony.mbms.DownloadProgressListener](../android/telephony/mbms/DownloadProgressListener.md) |
+| ↳ | [android.telephony.mbms.DownloadProgressListener](DownloadProgressListener.md) |
 
-A optional listener class used by download clients to track progress. Apps should extend this class and pass an instance into [MbmsDownloadSession.download(DownloadRequest)](../android/telephony/MbmsDownloadSession.md))This is optionally specified when requesting a download and will only be called while the app is running.
+A optional listener class used by download clients to track progress. Apps should extend this class and pass an instance into [MbmsDownloadSession.download(DownloadRequest)](../android.telephony/MbmsDownloadSession.md))This is optionally specified when requesting a download and will only be called while the app is running.
 
 ## Summary
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [DownloadProgressListener](../android/telephony/mbms/DownloadProgressListener.md))`()` <br /> |
+| [DownloadProgressListener](DownloadProgressListener.md))`()` <br /> |
 
 | Public methods ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onProgressUpdated](../android/telephony/mbms/DownloadProgressListener.md))`(`request:` ` [DownloadRequest](../android/telephony/mbms/DownloadRequest.md)!`, `fileInfo:` ` [FileInfo](../android/telephony/mbms/FileInfo.md)!`, `currentDownloadSize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `fullDownloadSize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `currentDecodedSize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `fullDecodedSize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when the middleware wants to report progress for a file in a [DownloadRequest](../android/telephony/mbms/DownloadRequest.md). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onProgressUpdated](DownloadProgressListener.md))`(`request:` ` [DownloadRequest](DownloadRequest.md)!`, `fileInfo:` ` [FileInfo](FileInfo.md)!`, `currentDownloadSize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `fullDownloadSize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `currentDecodedSize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `fullDecodedSize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when the middleware wants to report progress for a file in a [DownloadRequest](DownloadRequest.md). |
 
 ## Public constructors
 
@@ -52,12 +52,12 @@ open fun onProgressUpdated(
 ): Unit
 ```
 
-Called when the middleware wants to report progress for a file in a [DownloadRequest](../android/telephony/mbms/DownloadRequest.md).
+Called when the middleware wants to report progress for a file in a [DownloadRequest](DownloadRequest.md).
 
 | Parameters ||
 |-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `request` | [DownloadRequest](../android/telephony/mbms/DownloadRequest.md)!:a [DownloadRequest](../android/telephony/mbms/DownloadRequest.md), indicating which download is being referenced. |
-| `fileInfo` | [FileInfo](../android/telephony/mbms/FileInfo.md)!:a [FileInfo](../android/telephony/mbms/FileInfo.md) specifying the file to report progress on. Note that the request may result in many files being downloaded and the client may not have been able to get a list of them in advance. |
+| `request` | [DownloadRequest](DownloadRequest.md)!:a [DownloadRequest](DownloadRequest.md), indicating which download is being referenced. |
+| `fileInfo` | [FileInfo](FileInfo.md)!:a [FileInfo](FileInfo.md) specifying the file to report progress on. Note that the request may result in many files being downloaded and the client may not have been able to get a list of them in advance. |
 | `currentDownloadSize` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):is the current amount downloaded. |
 | --- | --- |
 | `fullDownloadSize` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):is the total number of bytes that make up the downloaded content. This may be different from the decoded final size, but is useful in gauging download progress. |

@@ -31,4 +31,4 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 abstract fun onWifiStateChanged(): Unit
 ```
 
-Called when the Wi-Fi enabled state changes. The new value can be queried via [WifiManager.getWifiState()](../android/net/wifi/WifiManager.md)).
+Called when the Wi-Fi enabled state changes. The new value can be queried via [WifiManager.getWifiState()](WifiManager.md)).

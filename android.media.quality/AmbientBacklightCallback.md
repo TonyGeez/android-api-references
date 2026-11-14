@@ -19,7 +19,7 @@ Callback used to monitor status of ambient backlight.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAmbientBacklightEvent](../android/media/quality/MediaQualityManager.AmbientBacklightCallback.md))`(`event:` ` [AmbientBacklightEvent](../android/media/quality/AmbientBacklightEvent.md)`)` Called when new ambient backlight event is emitted. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAmbientBacklightEvent](../android/media/quality/MediaQualityManager.AmbientBacklightCallback.md))`(`event:` ` [AmbientBacklightEvent](AmbientBacklightEvent.md)`)` Called when new ambient backlight event is emitted. |
 
 ## Public methods
 
@@ -35,4 +35,4 @@ Called when new ambient backlight event is emitted.
 
 | Parameters ||
 |---------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| `event` | [AmbientBacklightEvent](../android/media/quality/AmbientBacklightEvent.md):This value cannot be`null`. |
+| `event` | [AmbientBacklightEvent](AmbientBacklightEvent.md):This value cannot be`null`. |

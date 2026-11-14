@@ -2,7 +2,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 
 # UserData
 
-Kotlin | [Java](../android/service/autofill/UserData.md)
+Kotlin | [Java](UserData.md)
 | --- | --- |
 
 ```
@@ -11,9 +11,9 @@ class UserData : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.service.autofill.UserData](../android/service/autofill/UserData.md) |
+| ↳ | [android.service.autofill.UserData](UserData.md) |
 
-Defines the user data used for [field classification](../android/service/autofill/AutofillService.md).
+Defines the user data used for [field classification](AutofillService.md).
 
 ## Summary
 
@@ -44,7 +44,7 @@ Defines the user data used for [field classification](../android/service/autofil
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [UserData](../android/service/autofill/UserData.md)!\> | `https://developer.android.com/reference/kotlin/android/service/autofill/UserData#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [UserData](UserData.md)!\> | `https://developer.android.com/reference/kotlin/android/service/autofill/UserData#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public methods
 

@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # Transformation
 
-Kotlin| [Java](../android/view/animation/Transformation.md) 
+Kotlin| [Java](Transformation.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class Transformation
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.animation.Transformation](../android/view/animation/Transformation.md) |
+| ↳ | [android.view.animation.Transformation](Transformation.md) |
 
 Defines the transformation to be applied at one point in time of an Animation.
 
@@ -21,37 +21,37 @@ Defines the transformation to be applied at one point in time of an Animation.
 
 | Constants ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_ALPHA](../android/view/animation/Transformation.md) Indicates a transformation that applies an alpha only (uses an identity matrix.) |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_BOTH](../android/view/animation/Transformation.md) Indicates a transformation that applies an alpha and a matrix. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_IDENTITY](../android/view/animation/Transformation.md) Indicates a transformation that has no effect (alpha = 1 and identity matrix.) |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_ALPHA](Transformation.md) Indicates a transformation that applies an alpha only (uses an identity matrix.) |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_BOTH](Transformation.md) Indicates a transformation that applies an alpha and a matrix. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_IDENTITY](Transformation.md) Indicates a transformation that has no effect (alpha = 1 and identity matrix.) |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_MATRIX](../android/view/animation/Transformation.md) Indicates a transformation that applies a matrix only (alpha = 1.) |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_MATRIX](Transformation.md) Indicates a transformation that applies a matrix only (alpha = 1.) |
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Transformation](../android/view/animation/Transformation.md))`()` Creates a new transformation with alpha = 1 and the identity matrix. |
+| [Transformation](Transformation.md))`()` Creates a new transformation with alpha = 1 and the identity matrix. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](../android/view/animation/Transformation.md))`()` Reset the transformation to a state that leaves the object being animated in an unmodified state. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [compose](../android/view/animation/Transformation.md))`(`t:` ` [Transformation](../android/view/animation/Transformation.md)!`)` Apply this Transformation to an existing Transformation, e. |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getAlpha](../android/view/animation/Transformation.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](Transformation.md))`()` Reset the transformation to a state that leaves the object being animated in an unmodified state. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [compose](Transformation.md))`(`t:` ` [Transformation](Transformation.md)!`)` Apply this Transformation to an existing Transformation, e. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getAlpha](Transformation.md))`()` <br /> |
 | --- | --- |
-| open [Matrix](../android/graphics/Matrix.md)! | [getMatrix](../android/view/animation/Transformation.md))`()` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTransformationType](../android/view/animation/Transformation.md))`()` Indicates the nature of this transformation. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [set](../android/view/animation/Transformation.md))`(`t:` ` [Transformation](../android/view/animation/Transformation.md)!`)` Clones the specified transformation. |
+| open [Matrix](../android.graphics/Matrix.md)! | [getMatrix](Transformation.md))`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTransformationType](Transformation.md))`()` Indicates the nature of this transformation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [set](Transformation.md))`(`t:` ` [Transformation](Transformation.md)!`)` Clones the specified transformation. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAlpha](../android/view/animation/Transformation.md))`(`alpha:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the degree of transparency |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTransformationType](../android/view/animation/Transformation.md))`(`transformationType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the transformation type. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toShortString](../android/view/animation/Transformation.md))`()` Return a string representation of the transformation in a compact form. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAlpha](Transformation.md))`(`alpha:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the degree of transparency |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTransformationType](Transformation.md))`(`transformationType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the transformation type. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toShortString](Transformation.md))`()` Return a string representation of the transformation in a compact form. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/view/animation/Transformation.md))`()` <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](Transformation.md))`()` <br /> |
 
 | Properties ||
 |-----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [mAlpha](../android/view/animation/Transformation.md) <br /> |
-| [Matrix](../android/graphics/Matrix.md)! | [mMatrix](../android/view/animation/Transformation.md) <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [mTransformationType](../android/view/animation/Transformation.md) <br /> |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [mAlpha](Transformation.md) <br /> |
+| [Matrix](../android.graphics/Matrix.md)! | [mMatrix](Transformation.md) <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [mTransformationType](Transformation.md) <br /> |
 | --- | --- |
 
 ## Constants
@@ -126,7 +126,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun clear(): Unit
 ```
 
-Reset the transformation to a state that leaves the object being animated in an unmodified state. The transformation type is [TYPE_BOTH](../android/view/animation/Transformation.md) by default. 
+Reset the transformation to a state that leaves the object being animated in an unmodified state. The transformation type is [TYPE_BOTH](Transformation.md) by default. 
 
 ### compose
 
@@ -140,7 +140,7 @@ Apply this Transformation to an existing Transformation, e.g. apply a scale effe
 
 | Parameters ||
 |-----|-----------------------------------------------------------------------------------------------------------|
-| `t` | [Transformation](../android/view/animation/Transformation.md)!: |
+| `t` | [Transformation](Transformation.md)!: |
 
 ### getAlpha
 
@@ -164,7 +164,7 @@ open fun getMatrix(): Matrix!
 
 | Return ||
 |-----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
-| [Matrix](../android/graphics/Matrix.md)! | The 3x3 Matrix representing the transformation to apply to the coordinates of the object being animated |
+| [Matrix](../android.graphics/Matrix.md)! | The 3x3 Matrix representing the transformation to apply to the coordinates of the object being animated |
 
 ### getTransformationType
 
@@ -178,7 +178,7 @@ Indicates the nature of this transformation.
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_ALPHA](../android/view/animation/Transformation.md), [TYPE_MATRIX](../android/view/animation/Transformation.md), [TYPE_BOTH](../android/view/animation/Transformation.md) or [TYPE_IDENTITY](../android/view/animation/Transformation.md). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_ALPHA](Transformation.md), [TYPE_MATRIX](Transformation.md), [TYPE_BOTH](Transformation.md) or [TYPE_IDENTITY](Transformation.md). |
 
 ### set
 
@@ -192,7 +192,7 @@ Clones the specified transformation.
 
 | Parameters ||
 |-----|---------------------------------------------------------------------------------------------------------------------------------------|
-| `t` | [Transformation](../android/view/animation/Transformation.md)!:The transformation to clone. |
+| `t` | [Transformation](Transformation.md)!:The transformation to clone. |
 
 ### setAlpha
 
@@ -220,7 +220,7 @@ Sets the transformation type.
 
 | Parameters ||
 |----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `transformationType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):One of [TYPE_ALPHA](../android/view/animation/Transformation.md), [TYPE_MATRIX](../android/view/animation/Transformation.md), [TYPE_BOTH](../android/view/animation/Transformation.md) or [TYPE_IDENTITY](../android/view/animation/Transformation.md). |
+| `transformationType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):One of [TYPE_ALPHA](Transformation.md), [TYPE_MATRIX](Transformation.md), [TYPE_BOTH](Transformation.md) or [TYPE_IDENTITY](Transformation.md). |
 
 ### toShortString
 

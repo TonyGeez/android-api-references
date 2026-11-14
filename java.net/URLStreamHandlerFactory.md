@@ -8,17 +8,17 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface URLStreamHandlerFactory
 ```
 
-| [java.net.URLStreamHandlerFactory](../java/net/URLStreamHandlerFactory.md) |
+| [java.net.URLStreamHandlerFactory](URLStreamHandlerFactory.md) |
 
 This interface defines a factory for`URL`stream protocol handlers.
 
-A URL stream handler factory is used as specified in the [URL constructor](../java/net/URL.md)).
+A URL stream handler factory is used as specified in the [URL constructor](URL.md)).
 
 ## Summary
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [URLStreamHandler](../java/net/URLStreamHandler.md)! | [createURLStreamHandler](../java/net/URLStreamHandlerFactory.md))`(`protocol:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a new`URLStreamHandler`instance with the specified protocol. |
+| abstract [URLStreamHandler](URLStreamHandler.md)! | [createURLStreamHandler](URLStreamHandlerFactory.md))`(`protocol:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a new`URLStreamHandler`instance with the specified protocol. |
 
 ## Public methods
 
@@ -38,8 +38,8 @@ Creates a new`URLStreamHandler`instance with the specified protocol.
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| [URLStreamHandler](../java/net/URLStreamHandler.md)! | a`URLStreamHandler`for the specific protocol, or`null`if this factory cannot create a handler for the specific protocol |
+| [URLStreamHandler](URLStreamHandler.md)! | a`URLStreamHandler`for the specific protocol, or`null`if this factory cannot create a handler for the specific protocol |
 
 **See Also**
 
-- [java.net.URLStreamHandler](../java/net/URLStreamHandler.md)
+- [java.net.URLStreamHandler](URLStreamHandler.md)

@@ -19,8 +19,8 @@ Interface definition for a callback to be invoked when this view is attached or 
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onViewAttachedToWindow](../android/view/View.OnAttachStateChangeListener.md))`(`v:` ` [View](../android/view/View.md)`)` Called when the view is attached to a window. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onViewDetachedFromWindow](../android/view/View.OnAttachStateChangeListener.md))`(`v:` ` [View](../android/view/View.md)`)` Called when the view is detached from a window. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onViewAttachedToWindow](../android/view/View.OnAttachStateChangeListener.md))`(`v:` ` [View](View.md)`)` Called when the view is attached to a window. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onViewDetachedFromWindow](../android/view/View.OnAttachStateChangeListener.md))`(`v:` ` [View](View.md)`)` Called when the view is detached from a window. |
 
 ## Public methods
 
@@ -36,7 +36,7 @@ Called when the view is attached to a window.
 
 | Parameters ||
 |-----|---------------------------------------------------------------------------------------------------------------------------------|
-| `v` | [View](../android/view/View.md):The view that was attached This value cannot be`null`. |
+| `v` | [View](View.md):The view that was attached This value cannot be`null`. |
 
 ### onViewDetachedFromWindow
 
@@ -50,4 +50,4 @@ Called when the view is detached from a window.
 
 | Parameters ||
 |-----|---------------------------------------------------------------------------------------------------------------------------------|
-| `v` | [View](../android/view/View.md):The view that was detached This value cannot be`null`. |
+| `v` | [View](View.md):The view that was detached This value cannot be`null`. |

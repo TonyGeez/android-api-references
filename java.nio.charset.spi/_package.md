@@ -4,5 +4,5 @@
 
 ## Classes
 
-| [CharsetProvider](../java/nio/charset/spi/CharsetProvider.md) | Charset service-provider class. |
+| [CharsetProvider](CharsetProvider.md) | Charset service-provider class. |
 | --- | --- |

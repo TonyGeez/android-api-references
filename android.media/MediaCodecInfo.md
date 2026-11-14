@@ -4,7 +4,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 
 # MediaCodecInfo
 
-Kotlin| [Java](../android/media/MediaCodecInfo.md) 
+Kotlin| [Java](MediaCodecInfo.md) 
 | --- | --- |
 
 ```
@@ -13,9 +13,9 @@ class MediaCodecInfo
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.MediaCodecInfo](../android/media/MediaCodecInfo.md) |
+| ↳ | [android.media.MediaCodecInfo](MediaCodecInfo.md) |
 
-Provides information about a given media codec available on the device. You can iterate through all codecs available by querying [MediaCodecList](../android/media/MediaCodecList.md). For example, here's how to find an encoder that supports a given MIME type: 
+Provides information about a given media codec available on the device. You can iterate through all codecs available by querying [MediaCodecList](MediaCodecList.md). For example, here's how to find an encoder that supports a given MIME type: 
 
 ```kotlin
 private static MediaCodecInfo selectCodec(String mimeType) {
@@ -53,24 +53,24 @@ private static MediaCodecInfo selectCodec(String mimeType) {
 
 | Constants ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_MODEL_MEMORY_SAFE](../android/media/MediaCodecInfo.md) In this model the codec is not running in a sandboxed process, but written in a memory-safe way. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_MODEL_SANDBOXED](../android/media/MediaCodecInfo.md) In this model the codec is running in a sandboxed process. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_MODEL_MEMORY_SAFE](MediaCodecInfo.md) In this model the codec is not running in a sandboxed process, but written in a memory-safe way. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_MODEL_SANDBOXED](MediaCodecInfo.md) In this model the codec is running in a sandboxed process. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getCanonicalName](../android/media/MediaCodecInfo.md))`()` Retrieve the underlying codec name. |
-| [MediaCodecInfo.CodecCapabilities](../android/media/MediaCodecInfo.CodecCapabilities.md)! | [getCapabilitiesForType](../android/media/MediaCodecInfo.md))`(`type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Enumerates the capabilities of the codec component. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getName](../android/media/MediaCodecInfo.md))`()` Retrieve the codec name. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getCanonicalName](MediaCodecInfo.md))`()` Retrieve the underlying codec name. |
+| [MediaCodecInfo.CodecCapabilities](../android/media/MediaCodecInfo.CodecCapabilities.md)! | [getCapabilitiesForType](MediaCodecInfo.md))`(`type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Enumerates the capabilities of the codec component. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getName](MediaCodecInfo.md))`()` Retrieve the codec name. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSecurityModel](../android/media/MediaCodecInfo.md))`()` Query the security model of the codec. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getSupportedTypes](../android/media/MediaCodecInfo.md))`()` Query the media types supported by the codec. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAlias](../android/media/MediaCodecInfo.md))`()` Query if the codec is an alias for another underlying codec. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSecurityModel](MediaCodecInfo.md))`()` Query the security model of the codec. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getSupportedTypes](MediaCodecInfo.md))`()` Query the media types supported by the codec. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAlias](MediaCodecInfo.md))`()` Query if the codec is an alias for another underlying codec. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEncoder](../android/media/MediaCodecInfo.md))`()` Query if the codec is an encoder. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isHardwareAccelerated](../android/media/MediaCodecInfo.md))`()` Query if the codec is hardware accelerated. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSoftwareOnly](../android/media/MediaCodecInfo.md))`()` Query if the codec is software only. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEncoder](MediaCodecInfo.md))`()` Query if the codec is an encoder. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isHardwareAccelerated](MediaCodecInfo.md))`()` Query if the codec is hardware accelerated. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSoftwareOnly](MediaCodecInfo.md))`()` Query if the codec is software only. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isVendor](../android/media/MediaCodecInfo.md))`()` Query if the codec is provided by the Android platform (false) or the device manufacturer (true). |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isVendor](MediaCodecInfo.md))`()` Query if the codec is provided by the Android platform (false) or the device manufacturer (true). |
 
 ## Constants
 
@@ -136,7 +136,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 fun getName(): String
 ```
 
-Retrieve the codec name.**Note:** Implementations may provide multiple aliases (codec names) for the same underlying codec, any of which can be used to instantiate the same underlying codec in [MediaCodec.createByCodecName](../android/media/MediaCodec.md)). Applications targeting SDK \< [android.os.Build.VERSION_CODES#Q](../android/os/Build.VERSION_CODES.md), cannot determine if the multiple codec names listed in MediaCodecList are in-fact for the same codec.
+Retrieve the codec name.**Note:** Implementations may provide multiple aliases (codec names) for the same underlying codec, any of which can be used to instantiate the same underlying codec in [MediaCodec.createByCodecName](MediaCodec.md)). Applications targeting SDK \< [android.os.Build.VERSION_CODES#Q](../android/os/Build.VERSION_CODES.md), cannot determine if the multiple codec names listed in MediaCodecList are in-fact for the same codec.
 
 | Return ||
 |----------------------------------------------------------------------------------|-----------------------------|
@@ -154,7 +154,7 @@ Query the security model of the codec.
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.media.MediaCodecInfo#SECURITY_MODEL_SANDBOXED](../android/media/MediaCodecInfo.md), [android.media.MediaCodecInfo#SECURITY_MODEL_MEMORY_SAFE](../android/media/MediaCodecInfo.md), or android.media.MediaCodecInfo.SECURITY_MODEL_TRUSTED_CONTENT_ONLY |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.media.MediaCodecInfo#SECURITY_MODEL_SANDBOXED](MediaCodecInfo.md), [android.media.MediaCodecInfo#SECURITY_MODEL_MEMORY_SAFE](MediaCodecInfo.md), or android.media.MediaCodecInfo.SECURITY_MODEL_TRUSTED_CONTENT_ONLY |
 
 ### getSupportedTypes
 

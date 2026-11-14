@@ -10,9 +10,9 @@ open class ZipEntry : Cloneable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.util.zip.ZipEntry](../java/util/zip/ZipEntry.md) |
+| ↳ | [java.util.zip.ZipEntry](ZipEntry.md) |
 
-| Known Direct Subclasses [JarEntry](../java/util/jar/JarEntry.md) |-----------------------------------------------------------------------------------------|---------------------------------------------------| | [JarEntry](../java/util/jar/JarEntry.md) | This class is used to represent a JAR file entry. | |
+| Known Direct Subclasses [JarEntry](../java.util.jar/JarEntry.md) |-----------------------------------------------------------------------------------------|---------------------------------------------------| | [JarEntry](../java.util.jar/JarEntry.md) | This class is used to represent a JAR file entry. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 This class is used to represent a ZIP file entry.
@@ -21,105 +21,105 @@ This class is used to represent a ZIP file entry.
 
 | Constants ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENATT](../java/util/zip/ZipEntry.md) Central directory (CEN) header internal file attributes field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENATX](../java/util/zip/ZipEntry.md) Central directory (CEN) header external file attributes field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENCOM](../java/util/zip/ZipEntry.md) Central directory (CEN) header comment length field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENATT](ZipEntry.md) Central directory (CEN) header internal file attributes field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENATX](ZipEntry.md) Central directory (CEN) header external file attributes field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENCOM](ZipEntry.md) Central directory (CEN) header comment length field offset. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENCRC](../java/util/zip/ZipEntry.md) Central directory (CEN) header uncompressed file crc-32 value field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENDSK](../java/util/zip/ZipEntry.md) Central directory (CEN) header disk number start field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENEXT](../java/util/zip/ZipEntry.md) Central directory (CEN) header extra field length field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENCRC](ZipEntry.md) Central directory (CEN) header uncompressed file crc-32 value field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENDSK](ZipEntry.md) Central directory (CEN) header disk number start field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENEXT](ZipEntry.md) Central directory (CEN) header extra field length field offset. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENFLG](../java/util/zip/ZipEntry.md) Central directory (CEN) header encrypt, decrypt flags field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENHDR](../java/util/zip/ZipEntry.md) Central directory (CEN) header size in bytes (including signature). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENHOW](../java/util/zip/ZipEntry.md) Central directory (CEN) header compression method field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENFLG](ZipEntry.md) Central directory (CEN) header encrypt, decrypt flags field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENHDR](ZipEntry.md) Central directory (CEN) header size in bytes (including signature). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENHOW](ZipEntry.md) Central directory (CEN) header compression method field offset. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENLEN](../java/util/zip/ZipEntry.md) Central directory (CEN) header uncompressed size field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENNAM](../java/util/zip/ZipEntry.md) Central directory (CEN) header filename length field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENOFF](../java/util/zip/ZipEntry.md) Central directory (CEN) header LOC header offset field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENLEN](ZipEntry.md) Central directory (CEN) header uncompressed size field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENNAM](ZipEntry.md) Central directory (CEN) header filename length field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENOFF](ZipEntry.md) Central directory (CEN) header LOC header offset field offset. |
 | --- | --- |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [CENSIG](../java/util/zip/ZipEntry.md) Central directory (CEN) header signature. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENSIZ](../java/util/zip/ZipEntry.md) Central directory (CEN) header compressed size field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENTIM](../java/util/zip/ZipEntry.md) Central directory (CEN) header modification time field offset. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [CENSIG](ZipEntry.md) Central directory (CEN) header signature. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENSIZ](ZipEntry.md) Central directory (CEN) header compressed size field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENTIM](ZipEntry.md) Central directory (CEN) header modification time field offset. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENVEM](../java/util/zip/ZipEntry.md) Central directory (CEN) header version made by field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENVER](../java/util/zip/ZipEntry.md) Central directory (CEN) header version needed to extract field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEFLATED](../java/util/zip/ZipEntry.md) Compression method for compressed (deflated) entries. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENVEM](ZipEntry.md) Central directory (CEN) header version made by field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENVER](ZipEntry.md) Central directory (CEN) header version needed to extract field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEFLATED](ZipEntry.md) Compression method for compressed (deflated) entries. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENDCOM](../java/util/zip/ZipEntry.md) End of central directory (END) header zip file comment length field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENDHDR](../java/util/zip/ZipEntry.md) End of central directory (END) header size in bytes (including signature). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENDOFF](../java/util/zip/ZipEntry.md) End of central directory (END) header offset for the first CEN header field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENDCOM](ZipEntry.md) End of central directory (END) header zip file comment length field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENDHDR](ZipEntry.md) End of central directory (END) header size in bytes (including signature). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENDOFF](ZipEntry.md) End of central directory (END) header offset for the first CEN header field offset. |
 | --- | --- |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [ENDSIG](../java/util/zip/ZipEntry.md) End of central directory (END) header signature. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENDSIZ](../java/util/zip/ZipEntry.md) End of central directory (END) header central directory size in bytes field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENDSUB](../java/util/zip/ZipEntry.md) End of central directory (END) header number of entries on this disk field offset. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [ENDSIG](ZipEntry.md) End of central directory (END) header signature. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENDSIZ](ZipEntry.md) End of central directory (END) header central directory size in bytes field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENDSUB](ZipEntry.md) End of central directory (END) header number of entries on this disk field offset. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENDTOT](../java/util/zip/ZipEntry.md) End of central directory (END) header total number of entries field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXTCRC](../java/util/zip/ZipEntry.md) Extra local (EXT) header uncompressed file crc-32 value field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXTHDR](../java/util/zip/ZipEntry.md) Extra local (EXT) header size in bytes (including signature). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENDTOT](ZipEntry.md) End of central directory (END) header total number of entries field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXTCRC](ZipEntry.md) Extra local (EXT) header uncompressed file crc-32 value field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXTHDR](ZipEntry.md) Extra local (EXT) header size in bytes (including signature). |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXTLEN](../java/util/zip/ZipEntry.md) Extra local (EXT) header uncompressed size field offset. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [EXTSIG](../java/util/zip/ZipEntry.md) Extra local (EXT) header signature. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXTSIZ](../java/util/zip/ZipEntry.md) Extra local (EXT) header compressed size field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXTLEN](ZipEntry.md) Extra local (EXT) header uncompressed size field offset. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [EXTSIG](ZipEntry.md) Extra local (EXT) header signature. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXTSIZ](ZipEntry.md) Extra local (EXT) header compressed size field offset. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCCRC](../java/util/zip/ZipEntry.md) Local file (LOC) header uncompressed file crc-32 value field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCEXT](../java/util/zip/ZipEntry.md) Local file (LOC) header extra field length field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCFLG](../java/util/zip/ZipEntry.md) Local file (LOC) header general purpose bit flag field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCCRC](ZipEntry.md) Local file (LOC) header uncompressed file crc-32 value field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCEXT](ZipEntry.md) Local file (LOC) header extra field length field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCFLG](ZipEntry.md) Local file (LOC) header general purpose bit flag field offset. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCHDR](../java/util/zip/ZipEntry.md) Local file (LOC) header size in bytes (including signature). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCHOW](../java/util/zip/ZipEntry.md) Local file (LOC) header compression method field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCLEN](../java/util/zip/ZipEntry.md) Local file (LOC) header uncompressed size field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCHDR](ZipEntry.md) Local file (LOC) header size in bytes (including signature). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCHOW](ZipEntry.md) Local file (LOC) header compression method field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCLEN](ZipEntry.md) Local file (LOC) header uncompressed size field offset. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCNAM](../java/util/zip/ZipEntry.md) Local file (LOC) header filename length field offset. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [LOCSIG](../java/util/zip/ZipEntry.md) Local file (LOC) header signature. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCSIZ](../java/util/zip/ZipEntry.md) Local file (LOC) header compressed size field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCNAM](ZipEntry.md) Local file (LOC) header filename length field offset. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [LOCSIG](ZipEntry.md) Local file (LOC) header signature. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCSIZ](ZipEntry.md) Local file (LOC) header compressed size field offset. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCTIM](../java/util/zip/ZipEntry.md) Local file (LOC) header modification time field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCVER](../java/util/zip/ZipEntry.md) Local file (LOC) header version needed to extract field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STORED](../java/util/zip/ZipEntry.md) Compression method for uncompressed entries. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCTIM](ZipEntry.md) Local file (LOC) header modification time field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCVER](ZipEntry.md) Local file (LOC) header version needed to extract field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STORED](ZipEntry.md) Compression method for uncompressed entries. |
 | --- | --- |
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ZipEntry](../java/util/zip/ZipEntry.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a new zip entry with the specified name. |
-| [ZipEntry](../java/util/zip/ZipEntry.md))`(`e:` ` [ZipEntry](../java/util/zip/ZipEntry.md)!`)` Creates a new zip entry with fields taken from the specified zip entry. |
+| [ZipEntry](ZipEntry.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a new zip entry with the specified name. |
+| [ZipEntry](ZipEntry.md))`(`e:` ` [ZipEntry](ZipEntry.md)!`)` Creates a new zip entry with fields taken from the specified zip entry. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](../java/util/zip/ZipEntry.md))`()` Returns a copy of this entry. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getComment](../java/util/zip/ZipEntry.md))`()` Returns the comment string for the entry. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getCompressedSize](../java/util/zip/ZipEntry.md))`()` Returns the size of the compressed entry data. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](ZipEntry.md))`()` Returns a copy of this entry. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getComment](ZipEntry.md))`()` Returns the comment string for the entry. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getCompressedSize](ZipEntry.md))`()` Returns the size of the compressed entry data. |
 | --- | --- |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getCrc](../java/util/zip/ZipEntry.md))`()` Returns the CRC-32 checksum of the uncompressed entry data. |
-| open [FileTime](../java/nio/file/attribute/FileTime.md)! | [getCreationTime](../java/util/zip/ZipEntry.md))`()` Returns the creation time of the entry. |
-| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getExtra](../java/util/zip/ZipEntry.md))`()` Returns the extra field data for the entry. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getCrc](ZipEntry.md))`()` Returns the CRC-32 checksum of the uncompressed entry data. |
+| open [FileTime](../java.nio.file.attribute/FileTime.md)! | [getCreationTime](ZipEntry.md))`()` Returns the creation time of the entry. |
+| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getExtra](ZipEntry.md))`()` Returns the extra field data for the entry. |
 | --- | --- |
-| open [FileTime](../java/nio/file/attribute/FileTime.md)! | [getLastAccessTime](../java/util/zip/ZipEntry.md))`()` Returns the last access time of the entry. |
-| open [FileTime](../java/nio/file/attribute/FileTime.md)! | [getLastModifiedTime](../java/util/zip/ZipEntry.md))`()` Returns the last modification time of the entry. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMethod](../java/util/zip/ZipEntry.md))`()` Returns the compression method of the entry. |
+| open [FileTime](../java.nio.file.attribute/FileTime.md)! | [getLastAccessTime](ZipEntry.md))`()` Returns the last access time of the entry. |
+| open [FileTime](../java.nio.file.attribute/FileTime.md)! | [getLastModifiedTime](ZipEntry.md))`()` Returns the last modification time of the entry. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMethod](ZipEntry.md))`()` Returns the compression method of the entry. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](../java/util/zip/ZipEntry.md))`()` Returns the name of the entry. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getSize](../java/util/zip/ZipEntry.md))`()` Returns the uncompressed size of the entry data. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTime](../java/util/zip/ZipEntry.md))`()` Returns the last modification time of the entry. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](ZipEntry.md))`()` Returns the name of the entry. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getSize](ZipEntry.md))`()` Returns the uncompressed size of the entry data. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTime](ZipEntry.md))`()` Returns the last modification time of the entry. |
 | --- | --- |
-| open [LocalDateTime](../java/time/LocalDateTime.md)! | [getTimeLocal](../java/util/zip/ZipEntry.md))`()` Returns the last modification time of the entry in local date-time. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/util/zip/ZipEntry.md))`()` Returns the hash code value for this entry. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDirectory](../java/util/zip/ZipEntry.md))`()` Returns true if this is a directory entry. |
+| open [LocalDateTime](../java.time/LocalDateTime.md)! | [getTimeLocal](ZipEntry.md))`()` Returns the last modification time of the entry in local date-time. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](ZipEntry.md))`()` Returns the hash code value for this entry. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDirectory](ZipEntry.md))`()` Returns true if this is a directory entry. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setComment](../java/util/zip/ZipEntry.md))`(`comment:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the optional comment string for the entry. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCompressedSize](../java/util/zip/ZipEntry.md))`(`csize:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the size of the compressed entry data. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCrc](../java/util/zip/ZipEntry.md))`(`crc:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the CRC-32 checksum of the uncompressed entry data. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setComment](ZipEntry.md))`(`comment:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the optional comment string for the entry. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCompressedSize](ZipEntry.md))`(`csize:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the size of the compressed entry data. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCrc](ZipEntry.md))`(`crc:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the CRC-32 checksum of the uncompressed entry data. |
 | --- | --- |
-| open [ZipEntry](../java/util/zip/ZipEntry.md)! | [setCreationTime](../java/util/zip/ZipEntry.md))`(`time:` ` [FileTime](../java/nio/file/attribute/FileTime.md)!`)` Sets the creation time of the entry. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setExtra](../java/util/zip/ZipEntry.md))`(`extra:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Sets the optional extra field data for the entry. |
-| open [ZipEntry](../java/util/zip/ZipEntry.md)! | [setLastAccessTime](../java/util/zip/ZipEntry.md))`(`time:` ` [FileTime](../java/nio/file/attribute/FileTime.md)!`)` Sets the last access time of the entry. |
+| open [ZipEntry](ZipEntry.md)! | [setCreationTime](ZipEntry.md))`(`time:` ` [FileTime](../java.nio.file.attribute/FileTime.md)!`)` Sets the creation time of the entry. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setExtra](ZipEntry.md))`(`extra:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Sets the optional extra field data for the entry. |
+| open [ZipEntry](ZipEntry.md)! | [setLastAccessTime](ZipEntry.md))`(`time:` ` [FileTime](../java.nio.file.attribute/FileTime.md)!`)` Sets the last access time of the entry. |
 | --- | --- |
-| open [ZipEntry](../java/util/zip/ZipEntry.md)! | [setLastModifiedTime](../java/util/zip/ZipEntry.md))`(`time:` ` [FileTime](../java/nio/file/attribute/FileTime.md)!`)` Sets the last modification time of the entry. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMethod](../java/util/zip/ZipEntry.md))`(`method:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the compression method for the entry. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSize](../java/util/zip/ZipEntry.md))`(`size:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the uncompressed size of the entry data. |
+| open [ZipEntry](ZipEntry.md)! | [setLastModifiedTime](ZipEntry.md))`(`time:` ` [FileTime](../java.nio.file.attribute/FileTime.md)!`)` Sets the last modification time of the entry. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMethod](ZipEntry.md))`(`method:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the compression method for the entry. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSize](ZipEntry.md))`(`size:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the uncompressed size of the entry data. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTime](../java/util/zip/ZipEntry.md))`(`time:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the last modification time of the entry. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTimeLocal](../java/util/zip/ZipEntry.md))`(`time:` ` [LocalDateTime](../java/time/LocalDateTime.md)!`)` Sets the last modification time of the entry in local date-time. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/util/zip/ZipEntry.md))`()` Returns a string representation of the ZIP entry. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTime](ZipEntry.md))`(`time:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the last modification time of the entry. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTimeLocal](ZipEntry.md))`(`time:` ` [LocalDateTime](../java.time/LocalDateTime.md)!`)` Sets the last modification time of the entry in local date-time. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](ZipEntry.md))`()` Returns a string representation of the ZIP entry. |
 | --- | --- |
 
 ## Constants
@@ -661,7 +661,7 @@ Creates a new zip entry with fields taken from the specified zip entry.
 
 | Parameters ||
 |-----|--------------------------------------------------------------------------------------------------------|
-| `e` | [ZipEntry](../java/util/zip/ZipEntry.md)!:A zip Entry object |
+| `e` | [ZipEntry](ZipEntry.md)!:A zip Entry object |
 
 | Exceptions ||
 |----------------------------------|-----------------------------|
@@ -703,7 +703,7 @@ Returns the comment string for the entry.
 
 **See Also**
 
-- [#setComment(String)](../java/util/zip/ZipEntry.md)) 
+- [#setComment(String)](ZipEntry.md)) 
 
 ### getCompressedSize
 
@@ -723,7 +723,7 @@ In the case of a stored entry, the compressed size will be the same as the uncom
 
 **See Also**
 
-- [#setCompressedSize(long)](../java/util/zip/ZipEntry.md)) 
+- [#setCompressedSize(long)](ZipEntry.md)) 
 
 ### getCrc
 
@@ -741,7 +741,7 @@ Returns the CRC-32 checksum of the uncompressed entry data.
 
 **See Also**
 
-- [#setCrc(long)](../java/util/zip/ZipEntry.md)) 
+- [#setCrc(long)](ZipEntry.md)) 
 
 ### getCreationTime
 
@@ -757,11 +757,11 @@ The creation time is from the extended timestamp fields of entry's`optional extr
 
 | Return ||
 |----------------------------------------------------------------------------------------------------|-------------------------------------------------------|
-| [FileTime](../java/nio/file/attribute/FileTime.md)! | the creation time of the entry, null if not specified |
+| [FileTime](../java.nio.file.attribute/FileTime.md)! | the creation time of the entry, null if not specified |
 
 **See Also**
 
-- [#setCreationTime(FileTime)](../java/util/zip/ZipEntry.md)) 
+- [#setCreationTime(FileTime)](ZipEntry.md)) 
 
 ### getExtra
 
@@ -795,11 +795,11 @@ The last access time is from the extended timestamp fields of entry's`optional e
 
 | Return ||
 |----------------------------------------------------------------------------------------------------|----------------------------------------------------------|
-| [FileTime](../java/nio/file/attribute/FileTime.md)! | The last access time of the entry, null if not specified |
+| [FileTime](../java.nio.file.attribute/FileTime.md)! | The last access time of the entry, null if not specified |
 
 **See Also**
 
-- [#setLastAccessTime(FileTime)](../java/util/zip/ZipEntry.md)) 
+- [#setLastAccessTime(FileTime)](ZipEntry.md)) 
 
 ### getLastModifiedTime
 
@@ -811,15 +811,15 @@ open fun getLastModifiedTime(): FileTime!
 
 Returns the last modification time of the entry.
 
-If the entry is read from a ZIP file or ZIP file formatted input stream, this is the last modification time from the zip file entry's`optional extra data`if the extended timestamp fields are present. Otherwise the last modification time is read from the entry's`date and time fields`, the [default TimeZone](../java/util/TimeZone.md))is used to convert the standard MS-DOS formatted date and time to the epoch time.
+If the entry is read from a ZIP file or ZIP file formatted input stream, this is the last modification time from the zip file entry's`optional extra data`if the extended timestamp fields are present. Otherwise the last modification time is read from the entry's`date and time fields`, the [default TimeZone](../java.util/TimeZone.md))is used to convert the standard MS-DOS formatted date and time to the epoch time.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
-| [FileTime](../java/nio/file/attribute/FileTime.md)! | The last modification time of the entry, null if not specified |
+| [FileTime](../java.nio.file.attribute/FileTime.md)! | The last modification time of the entry, null if not specified |
 
 **See Also**
 
-- [#setLastModifiedTime(FileTime)](../java/util/zip/ZipEntry.md)) 
+- [#setLastModifiedTime(FileTime)](ZipEntry.md)) 
 
 ### getMethod
 
@@ -837,7 +837,7 @@ Returns the compression method of the entry.
 
 **See Also**
 
-- [#setMethod(int)](../java/util/zip/ZipEntry.md)) 
+- [#setMethod(int)](ZipEntry.md)) 
 
 ### getName
 
@@ -869,7 +869,7 @@ Returns the uncompressed size of the entry data.
 
 **See Also**
 
-- [#setSize(long)](../java/util/zip/ZipEntry.md)) 
+- [#setSize(long)](ZipEntry.md)) 
 
 ### getTime
 
@@ -881,7 +881,7 @@ open fun getTime(): Long
 
 Returns the last modification time of the entry.
 
-If the entry is read from a ZIP file or ZIP file formatted input stream, this is the last modification time from the`date and time fields`of the zip file entry. The [default TimeZone](../java/util/TimeZone.md))is used to convert the standard MS-DOS formatted date and time to the epoch time.
+If the entry is read from a ZIP file or ZIP file formatted input stream, this is the last modification time from the`date and time fields`of the zip file entry. The [default TimeZone](../java.util/TimeZone.md))is used to convert the standard MS-DOS formatted date and time to the epoch time.
 
 | Return ||
 |------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
@@ -889,8 +889,8 @@ If the entry is read from a ZIP file or ZIP file formatted input stream, this is
 
 **See Also**
 
-- [#setTime(long)](../java/util/zip/ZipEntry.md))
-- [#setLastModifiedTime(FileTime)](../java/util/zip/ZipEntry.md)) 
+- [#setTime(long)](ZipEntry.md))
+- [#setLastModifiedTime(FileTime)](ZipEntry.md)) 
 
 ### getTimeLocal
 
@@ -904,15 +904,15 @@ Returns the last modification time of the entry in local date-time.
 
 If the entry is read from a ZIP file or ZIP file formatted input stream, this is the last modification time from the zip file entry's`optional extra data`if the extended timestamp fields are present. Otherwise, the last modification time is read from entry's standard MS-DOS formatted`date and time fields`.
 
-The [system default TimeZone](../java/time/ZoneId.md))is used to convert the UTC time to local date-time.
+The [system default TimeZone](../java.time/ZoneId.md))is used to convert the UTC time to local date-time.
 
 | Return ||
 |------------------------------------------------------------------------------------------------|------------------------------------------------------------|
-| [LocalDateTime](../java/time/LocalDateTime.md)! | The last modification time of the entry in local date-time |
+| [LocalDateTime](../java.time/LocalDateTime.md)! | The last modification time of the entry in local date-time |
 
 **See Also**
 
-- [#setTimeLocal(LocalDateTime)](../java/util/zip/ZipEntry.md)) 
+- [#setTimeLocal(LocalDateTime)](ZipEntry.md)) 
 
 ### hashCode
 
@@ -1016,11 +1016,11 @@ If set, the creation time will be stored into the extended timestamp fields of e
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------------------------------------|
-| `time` | [FileTime](../java/nio/file/attribute/FileTime.md)!:The creation time of the entry |
+| `time` | [FileTime](../java.nio.file.attribute/FileTime.md)!:The creation time of the entry |
 
 | Return ||
 |-------------------------------------------------------------------------------------|----------------|
-| [ZipEntry](../java/util/zip/ZipEntry.md)! | This zip entry |
+| [ZipEntry](ZipEntry.md)! | This zip entry |
 
 | Exceptions ||
 |----------------------------------|---------------------|
@@ -1068,11 +1068,11 @@ If set, the last access time will be stored into the extended timestamp fields o
 
 | Parameters ||
 |--------|--------------------------------------------------------------------------------------------------------------------------------------|
-| `time` | [FileTime](../java/nio/file/attribute/FileTime.md)!:The last access time of the entry |
+| `time` | [FileTime](../java.nio.file.attribute/FileTime.md)!:The last access time of the entry |
 
 | Return ||
 |-------------------------------------------------------------------------------------|----------------|
-| [ZipEntry](../java/util/zip/ZipEntry.md)! | This zip entry |
+| [ZipEntry](ZipEntry.md)! | This zip entry |
 
 | Exceptions ||
 |----------------------------------|---------------------|
@@ -1096,11 +1096,11 @@ When output to a ZIP file or ZIP file formatted output stream the last modificat
 
 | Parameters ||
 |--------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| `time` | [FileTime](../java/nio/file/attribute/FileTime.md)!:The last modification time of the entry |
+| `time` | [FileTime](../java.nio.file.attribute/FileTime.md)!:The last modification time of the entry |
 
 | Return ||
 |-------------------------------------------------------------------------------------|----------------|
-| [ZipEntry](../java/util/zip/ZipEntry.md)! | This zip entry |
+| [ZipEntry](ZipEntry.md)! | This zip entry |
 
 | Exceptions ||
 |----------------------------------|---------------------|
@@ -1148,7 +1148,7 @@ Sets the uncompressed size of the entry data.
 
 | Exceptions ||
 |--------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.IllegalArgumentException` | if the specified size is less than 0, is greater than 0xFFFFFFFF when [ZIP64 format](../java/util/zip/_package.md) is not supported, or is less than 0 when ZIP64 is supported |
+| `java.lang.IllegalArgumentException` | if the specified size is less than 0, is greater than 0xFFFFFFFF when [ZIP64 format](_package.md) is not supported, or is less than 0 when ZIP64 is supported |
 
 **See Also**
 
@@ -1164,7 +1164,7 @@ open fun setTime(time: Long): Unit
 
 Sets the last modification time of the entry.
 
-If the entry is output to a ZIP file or ZIP file formatted output stream the last modification time set by this method will be stored into the`date and time fields`of the zip file entry and encoded in standard`MS-DOS date and time format`. The [default TimeZone](../java/util/TimeZone.md))is used to convert the epoch time to the MS-DOS data and time.
+If the entry is output to a ZIP file or ZIP file formatted output stream the last modification time set by this method will be stored into the`date and time fields`of the zip file entry and encoded in standard`MS-DOS date and time format`. The [default TimeZone](../java.util/TimeZone.md))is used to convert the epoch time to the MS-DOS data and time.
 
 | Parameters ||
 |--------|------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1185,13 +1185,13 @@ open fun setTimeLocal(time: LocalDateTime!): Unit
 
 Sets the last modification time of the entry in local date-time.
 
-If the entry is output to a ZIP file or ZIP file formatted output stream the last modification time set by this method will be stored into the`date and time fields`of the zip file entry and encoded in standard`MS-DOS date and time format`. If the date-time set is out of the range of the standard`MS-DOS date and time format`, the time will also be stored into zip file entry's extended timestamp fields in`optional extra data`in UTC time. The [system default TimeZone](../java/time/ZoneId.md))is used to convert the local date-time to UTC time.
+If the entry is output to a ZIP file or ZIP file formatted output stream the last modification time set by this method will be stored into the`date and time fields`of the zip file entry and encoded in standard`MS-DOS date and time format`. If the date-time set is out of the range of the standard`MS-DOS date and time format`, the time will also be stored into zip file entry's extended timestamp fields in`optional extra data`in UTC time. The [system default TimeZone](../java.time/ZoneId.md))is used to convert the local date-time to UTC time.
 
 `LocalDateTime`uses a precision of nanoseconds, whereas this class uses a precision of milliseconds. The conversion will truncate any excess precision information as though the amount in nanoseconds was subject to integer division by one million.
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `time` | [LocalDateTime](../java/time/LocalDateTime.md)!:The last modification time of the entry in local date-time |
+| `time` | [LocalDateTime](../java.time/LocalDateTime.md)!:The last modification time of the entry in local date-time |
 
 **See Also**
 

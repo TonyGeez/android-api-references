@@ -8,9 +8,9 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface XmlPullParser
 ```
 
-| [org.xmlpull.v1.XmlPullParser](../org/xmlpull/v1/XmlPullParser.md) |
+| [org.xmlpull.v1.XmlPullParser](XmlPullParser.md) |
 
-| Known Direct Subclasses [XmlResourceParser](../android/content/res/XmlResourceParser.md) |-----------------------------------------------------------------------------------------------------------------|---------------------------------------------------------| | [XmlResourceParser](../android/content/res/XmlResourceParser.md) | The XML parsing interface returned for an XML resource. | |
+| Known Direct Subclasses [XmlResourceParser](../android.content.res/XmlResourceParser.md) |-----------------------------------------------------------------------------------------------------------------|---------------------------------------------------------| | [XmlResourceParser](../android.content.res/XmlResourceParser.md) | The XML parsing interface returned for an XML resource. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 XML Pull Parser is an interface that defines parsing functionality provided in [XMLPULL V1 API](http://www.xmlpull.org/)(visit this website to learn more about API and its implementations).
@@ -23,22 +23,22 @@ There are following different kinds of parser depending on which features are se
 
 There are two key methods: next() and nextToken(). While next() provides access to high level parsing events, nextToken() allows access to lower level tokens.
 
-The current event state of the parser can be determined by calling the [getEventType()](../org/xmlpull/v1/XmlPullParser.md))method. Initially, the parser is in the [START_DOCUMENT](../org/xmlpull/v1/XmlPullParser.md) state.
+The current event state of the parser can be determined by calling the [getEventType()](XmlPullParser.md))method. Initially, the parser is in the [START_DOCUMENT](XmlPullParser.md) state.
 
-The method [next()](../org/xmlpull/v1/XmlPullParser.md))advances the parser to the next event. The int value returned from next determines the current parser state and is identical to the value returned from following calls to getEventType ().
+The method [next()](XmlPullParser.md))advances the parser to the next event. The int value returned from next determines the current parser state and is identical to the value returned from following calls to getEventType ().
 
 Th following event types are seen by next()
 
-[START_TAG](../org/xmlpull/v1/XmlPullParser.md)
+[START_TAG](XmlPullParser.md)
 : An XML start tag was read.
 
-[TEXT](../org/xmlpull/v1/XmlPullParser.md)
+[TEXT](XmlPullParser.md)
 : Text content was read; the text content can be retrieved using the getText() method. (when in validating mode next() will not report ignorable whitespace, use nextToken() instead)
 
-[END_TAG](../org/xmlpull/v1/XmlPullParser.md)
+[END_TAG](XmlPullParser.md)
 : An end tag was read
 
-[END_DOCUMENT](../org/xmlpull/v1/XmlPullParser.md)
+[END_DOCUMENT](XmlPullParser.md)
 : No more events are available
 
 after first next() or nextToken() (or any other next\*() method) is called user application can obtain XML version, standalone and encoding from XML declaration in following ways:
@@ -104,83 +104,83 @@ For more details on API usage, please refer to the quick Introduction available 
 
 | Constants ||
 |----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CDSECT](../org/xmlpull/v1/XmlPullParser.md) A CDATA sections was just read; this token is available only from calls to [nextToken()](../org/xmlpull/v1/XmlPullParser.md)). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [COMMENT](../org/xmlpull/v1/XmlPullParser.md) An XML comment was just read. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DOCDECL](../org/xmlpull/v1/XmlPullParser.md) An XML document type declaration was just read. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CDSECT](XmlPullParser.md) A CDATA sections was just read; this token is available only from calls to [nextToken()](XmlPullParser.md)). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [COMMENT](XmlPullParser.md) An XML comment was just read. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DOCDECL](XmlPullParser.md) An XML document type declaration was just read. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [END_DOCUMENT](../org/xmlpull/v1/XmlPullParser.md) Logical end of the xml document. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [END_TAG](../org/xmlpull/v1/XmlPullParser.md) Returned from getEventType(), [next()](../org/xmlpull/v1/XmlPullParser.md)), or [nextToken()](../org/xmlpull/v1/XmlPullParser.md))when an end tag was read. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENTITY_REF](../org/xmlpull/v1/XmlPullParser.md) An entity reference was just read; this token is available from [nextToken()](../org/xmlpull/v1/XmlPullParser.md))only. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [END_DOCUMENT](XmlPullParser.md) Logical end of the xml document. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [END_TAG](XmlPullParser.md) Returned from getEventType(), [next()](XmlPullParser.md)), or [nextToken()](XmlPullParser.md))when an end tag was read. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENTITY_REF](XmlPullParser.md) An entity reference was just read; this token is available from [nextToken()](XmlPullParser.md))only. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [FEATURE_PROCESS_DOCDECL](../org/xmlpull/v1/XmlPullParser.md) This feature determines whether the document declaration is processed. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [FEATURE_PROCESS_NAMESPACES](../org/xmlpull/v1/XmlPullParser.md) This feature determines whether the parser processes namespaces. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [FEATURE_REPORT_NAMESPACE_ATTRIBUTES](../org/xmlpull/v1/XmlPullParser.md) This feature determines whether namespace attributes are exposed via the attribute access methods. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [FEATURE_PROCESS_DOCDECL](XmlPullParser.md) This feature determines whether the document declaration is processed. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [FEATURE_PROCESS_NAMESPACES](XmlPullParser.md) This feature determines whether the parser processes namespaces. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [FEATURE_REPORT_NAMESPACE_ATTRIBUTES](XmlPullParser.md) This feature determines whether namespace attributes are exposed via the attribute access methods. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [FEATURE_VALIDATION](../org/xmlpull/v1/XmlPullParser.md) If this feature is activated, all validation errors as defined in the XML 1. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IGNORABLE_WHITESPACE](../org/xmlpull/v1/XmlPullParser.md) Ignorable whitespace was just read. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [NO_NAMESPACE](../org/xmlpull/v1/XmlPullParser.md) This constant represents the default namespace (empty string "") |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [FEATURE_VALIDATION](XmlPullParser.md) If this feature is activated, all validation errors as defined in the XML 1. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IGNORABLE_WHITESPACE](XmlPullParser.md) Ignorable whitespace was just read. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [NO_NAMESPACE](XmlPullParser.md) This constant represents the default namespace (empty string "") |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROCESSING_INSTRUCTION](../org/xmlpull/v1/XmlPullParser.md) An XML processing instruction declaration was just read. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [START_DOCUMENT](../org/xmlpull/v1/XmlPullParser.md) Signalize that parser is at the very beginning of the document and nothing was read yet. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [START_TAG](../org/xmlpull/v1/XmlPullParser.md) Returned from getEventType(), [next()](../org/xmlpull/v1/XmlPullParser.md)), [nextToken()](../org/xmlpull/v1/XmlPullParser.md))when a start tag was read. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROCESSING_INSTRUCTION](XmlPullParser.md) An XML processing instruction declaration was just read. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [START_DOCUMENT](XmlPullParser.md) Signalize that parser is at the very beginning of the document and nothing was read yet. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [START_TAG](XmlPullParser.md) Returned from getEventType(), [next()](XmlPullParser.md)), [nextToken()](XmlPullParser.md))when a start tag was read. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TEXT](../org/xmlpull/v1/XmlPullParser.md) Character data was read and will is available by calling getText(). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TEXT](XmlPullParser.md) Character data was read and will is available by calling getText(). |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [defineEntityReplacementText](../org/xmlpull/v1/XmlPullParser.md))`(`entityName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `replacementText:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set new value for entity replacement text as defined in [XML 1.0 Section 4.5 Construction of Internal Entity Replacement Text](http://www.w3.org/TR/REC-xml#intern-replacement). |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAttributeCount](../org/xmlpull/v1/XmlPullParser.md))`()` Returns the number of attributes of the current start tag, or -1 if the current event type is not START_TAG |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAttributeName](../org/xmlpull/v1/XmlPullParser.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the local name of the specified attribute if namespaces are enabled or just attribute name if namespaces are disabled. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [defineEntityReplacementText](XmlPullParser.md))`(`entityName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `replacementText:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set new value for entity replacement text as defined in [XML 1.0 Section 4.5 Construction of Internal Entity Replacement Text](http://www.w3.org/TR/REC-xml#intern-replacement). |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAttributeCount](XmlPullParser.md))`()` Returns the number of attributes of the current start tag, or -1 if the current event type is not START_TAG |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAttributeName](XmlPullParser.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the local name of the specified attribute if namespaces are enabled or just attribute name if namespaces are disabled. |
 | --- | --- |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAttributeNamespace](../org/xmlpull/v1/XmlPullParser.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the namespace URI of the attribute with the given index (starts from 0). |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAttributePrefix](../org/xmlpull/v1/XmlPullParser.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the prefix of the specified attribute Returns null if the element has no prefix. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAttributeType](../org/xmlpull/v1/XmlPullParser.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the type of the specified attribute If parser is non-validating it MUST return CDATA. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAttributeNamespace](XmlPullParser.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the namespace URI of the attribute with the given index (starts from 0). |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAttributePrefix](XmlPullParser.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the prefix of the specified attribute Returns null if the element has no prefix. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAttributeType](XmlPullParser.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the type of the specified attribute If parser is non-validating it MUST return CDATA. |
 | --- | --- |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAttributeValue](../org/xmlpull/v1/XmlPullParser.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the given attributes value. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAttributeValue](../org/xmlpull/v1/XmlPullParser.md))`(`namespace:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the attributes value identified by namespace URI and namespace localName. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getColumnNumber](../org/xmlpull/v1/XmlPullParser.md))`()` Returns the current column number, starting from 1. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAttributeValue](XmlPullParser.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the given attributes value. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAttributeValue](XmlPullParser.md))`(`namespace:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the attributes value identified by namespace URI and namespace localName. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getColumnNumber](XmlPullParser.md))`()` Returns the current column number, starting from 1. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDepth](../org/xmlpull/v1/XmlPullParser.md))`()` Returns the current depth of the element. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEventType](../org/xmlpull/v1/XmlPullParser.md))`()` Returns the type of the current event (START_TAG, END_TAG, TEXT, etc.) |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getFeature](../org/xmlpull/v1/XmlPullParser.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the current value of the given feature. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDepth](XmlPullParser.md))`()` Returns the current depth of the element. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEventType](XmlPullParser.md))`()` Returns the type of the current event (START_TAG, END_TAG, TEXT, etc.) |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getFeature](XmlPullParser.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the current value of the given feature. |
 | --- | --- |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getInputEncoding](../org/xmlpull/v1/XmlPullParser.md))`()` Returns the input encoding if known, null otherwise. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLineNumber](../org/xmlpull/v1/XmlPullParser.md))`()` Returns the current line number, starting from 1. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](../org/xmlpull/v1/XmlPullParser.md))`()` For START_TAG or END_TAG events, the (local) name of the current element is returned when namespaces are enabled. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getInputEncoding](XmlPullParser.md))`()` Returns the input encoding if known, null otherwise. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLineNumber](XmlPullParser.md))`()` Returns the current line number, starting from 1. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](XmlPullParser.md))`()` For START_TAG or END_TAG events, the (local) name of the current element is returned when namespaces are enabled. |
 | --- | --- |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getNamespace](../org/xmlpull/v1/XmlPullParser.md))`()` Returns the namespace URI of the current element. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getNamespace](../org/xmlpull/v1/XmlPullParser.md))`(`prefix:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the URI corresponding to the given prefix, depending on current state of the parser. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getNamespaceCount](../org/xmlpull/v1/XmlPullParser.md))`(`depth:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the numbers of elements in the namespace stack for the given depth. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getNamespace](XmlPullParser.md))`()` Returns the namespace URI of the current element. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getNamespace](XmlPullParser.md))`(`prefix:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the URI corresponding to the given prefix, depending on current state of the parser. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getNamespaceCount](XmlPullParser.md))`(`depth:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the numbers of elements in the namespace stack for the given depth. |
 | --- | --- |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getNamespacePrefix](../org/xmlpull/v1/XmlPullParser.md))`(`pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the namespace prefix for the given position in the namespace stack. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getNamespaceUri](../org/xmlpull/v1/XmlPullParser.md))`(`pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the namespace URI for the given position in the namespace stack If the position is out of range, an exception is thrown. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPositionDescription](../org/xmlpull/v1/XmlPullParser.md))`()` Returns a short text describing the current parser state, including the position, a description of the current event and the data source if known. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getNamespacePrefix](XmlPullParser.md))`(`pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the namespace prefix for the given position in the namespace stack. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getNamespaceUri](XmlPullParser.md))`(`pos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the namespace URI for the given position in the namespace stack If the position is out of range, an exception is thrown. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPositionDescription](XmlPullParser.md))`()` Returns a short text describing the current parser state, including the position, a description of the current event and the data source if known. |
 | --- | --- |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPrefix](../org/xmlpull/v1/XmlPullParser.md))`()` Returns the prefix of the current element. |
-| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getProperty](../org/xmlpull/v1/XmlPullParser.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Look up the value of a property. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getText](../org/xmlpull/v1/XmlPullParser.md))`()` Returns the text content of the current event as String. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPrefix](XmlPullParser.md))`()` Returns the prefix of the current element. |
+| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getProperty](XmlPullParser.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Look up the value of a property. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getText](XmlPullParser.md))`()` Returns the text content of the current event as String. |
 | --- | --- |
-| abstract [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)! | [getTextCharacters](../org/xmlpull/v1/XmlPullParser.md))`(`holderForStartAndLength:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` Returns the buffer that contains the text of the current event, as well as the start offset and length relevant for the current event. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAttributeDefault](../org/xmlpull/v1/XmlPullParser.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns if the specified attribute was not in input was declared in XML. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmptyElementTag](../org/xmlpull/v1/XmlPullParser.md))`()` Returns true if the current event is START_TAG and the tag is degenerated (e.g. \<foobar/\>). |
+| abstract [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)! | [getTextCharacters](XmlPullParser.md))`(`holderForStartAndLength:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` Returns the buffer that contains the text of the current event, as well as the start offset and length relevant for the current event. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAttributeDefault](XmlPullParser.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns if the specified attribute was not in input was declared in XML. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmptyElementTag](XmlPullParser.md))`()` Returns true if the current event is START_TAG and the tag is degenerated (e.g. \<foobar/\>). |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isWhitespace](../org/xmlpull/v1/XmlPullParser.md))`()` Checks whether the current TEXT event contains only whitespace characters. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [next](../org/xmlpull/v1/XmlPullParser.md))`()` Get next parsing event - element content will be coalesced and only one TEXT event must be returned for whole element content (comments and processing instructions will be ignored and entity references must be expanded or exception must be thrown if entity reference can not be expanded). |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [nextTag](../org/xmlpull/v1/XmlPullParser.md))`()` Call next() and return event if it is START_TAG or END_TAG otherwise throw an exception. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isWhitespace](XmlPullParser.md))`()` Checks whether the current TEXT event contains only whitespace characters. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [next](XmlPullParser.md))`()` Get next parsing event - element content will be coalesced and only one TEXT event must be returned for whole element content (comments and processing instructions will be ignored and entity references must be expanded or exception must be thrown if entity reference can not be expanded). |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [nextTag](XmlPullParser.md))`()` Call next() and return event if it is START_TAG or END_TAG otherwise throw an exception. |
 | --- | --- |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [nextText](../org/xmlpull/v1/XmlPullParser.md))`()` If current event is START_TAG then if next element is TEXT then element content is returned or if next event is END_TAG then empty string is returned, otherwise exception is thrown. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [nextToken](../org/xmlpull/v1/XmlPullParser.md))`()` This method works similarly to next() but will expose additional event types (COMMENT, CDSECT, DOCDECL, ENTITY_REF, PROCESSING_INSTRUCTION, or IGNORABLE_WHITESPACE) if they are available in input. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [require](../org/xmlpull/v1/XmlPullParser.md))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `namespace:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Test if the current event is of the given type and if the namespace and name do match. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [nextText](XmlPullParser.md))`()` If current event is START_TAG then if next element is TEXT then element content is returned or if next event is END_TAG then empty string is returned, otherwise exception is thrown. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [nextToken](XmlPullParser.md))`()` This method works similarly to next() but will expose additional event types (COMMENT, CDSECT, DOCDECL, ENTITY_REF, PROCESSING_INSTRUCTION, or IGNORABLE_WHITESPACE) if they are available in input. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [require](XmlPullParser.md))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `namespace:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Test if the current event is of the given type and if the namespace and name do match. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFeature](../org/xmlpull/v1/XmlPullParser.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `state:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Use this call to change the general behaviour of the parser, such as namespace processing or doctype declaration handling. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInput](../org/xmlpull/v1/XmlPullParser.md))`(`inputStream:` ` [InputStream](../java/io/InputStream.md)!`, `inputEncoding:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the input stream the parser is going to process. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInput](../org/xmlpull/v1/XmlPullParser.md))`(`in:` ` [Reader](../java/io/Reader.md)!`)` Set the input source for parser to the given reader and resets the parser. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFeature](XmlPullParser.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `state:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Use this call to change the general behaviour of the parser, such as namespace processing or doctype declaration handling. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInput](XmlPullParser.md))`(`inputStream:` ` [InputStream](../java.io/InputStream.md)!`, `inputEncoding:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the input stream the parser is going to process. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInput](XmlPullParser.md))`(`in:` ` [Reader](../java.io/Reader.md)!`)` Set the input source for parser to the given reader and resets the parser. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setProperty](../org/xmlpull/v1/XmlPullParser.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Set the value of a property. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setProperty](XmlPullParser.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Set the value of a property. |
 
 | Properties ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [TYPES](../org/xmlpull/v1/XmlPullParser.md) This array can be used to convert the event type integer constants such as START_TAG or TEXT to to a string. |
+| static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [TYPES](XmlPullParser.md) This array can be used to convert the event type integer constants such as START_TAG or TEXT to to a string. |
 
 ## Constants
 
@@ -192,14 +192,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val CDSECT: Int
 ```
 
-A CDATA sections was just read; this token is available only from calls to [nextToken()](../org/xmlpull/v1/XmlPullParser.md)). A call to next() will accumulate various text events into a single event of type TEXT. The text contained in the CDATA section is available by calling getText(). 
+A CDATA sections was just read; this token is available only from calls to [nextToken()](XmlPullParser.md)). A call to next() will accumulate various text events into a single event of type TEXT. The text contained in the CDATA section is available by calling getText(). 
 
  Value: 5
 
 **See Also**
 
-- [#nextToken](../org/xmlpull/v1/XmlPullParser.md))
-- [#getText](../org/xmlpull/v1/XmlPullParser.md)) 
+- [#nextToken](XmlPullParser.md))
+- [#getText](XmlPullParser.md)) 
 
 ### COMMENT
 
@@ -209,14 +209,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val COMMENT: Int
 ```
 
-An XML comment was just read. This event type is this token is available via [nextToken()](../org/xmlpull/v1/XmlPullParser.md))only; calls to next() will skip comments automatically. The content of the comment can be accessed using the getText() method. 
+An XML comment was just read. This event type is this token is available via [nextToken()](XmlPullParser.md))only; calls to next() will skip comments automatically. The content of the comment can be accessed using the getText() method. 
 
  Value: 9
 
 **See Also**
 
-- [#nextToken](../org/xmlpull/v1/XmlPullParser.md))
-- [#getText](../org/xmlpull/v1/XmlPullParser.md)) 
+- [#nextToken](XmlPullParser.md))
+- [#getText](XmlPullParser.md)) 
 
 ### DOCDECL
 
@@ -226,14 +226,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val DOCDECL: Int
 ```
 
-An XML document type declaration was just read. This token is available from [nextToken()](../org/xmlpull/v1/XmlPullParser.md))only. The unparsed text inside the doctype is available via the getText() method. 
+An XML document type declaration was just read. This token is available from [nextToken()](XmlPullParser.md))only. The unparsed text inside the doctype is available via the getText() method. 
 
  Value: 10
 
 **See Also**
 
-- [#nextToken](../org/xmlpull/v1/XmlPullParser.md))
-- [#getText](../org/xmlpull/v1/XmlPullParser.md)) 
+- [#nextToken](XmlPullParser.md))
+- [#getText](XmlPullParser.md)) 
 
 ### END_DOCUMENT
 
@@ -245,14 +245,14 @@ static val END_DOCUMENT: Int
 
 Logical end of the xml document. Returned from getEventType, next() and nextToken() when the end of the input document has been reached.
 
-**NOTE:** subsequent calls to [next()](../org/xmlpull/v1/XmlPullParser.md))or [nextToken()](../org/xmlpull/v1/XmlPullParser.md))may result in exception being thrown. 
+**NOTE:** subsequent calls to [next()](XmlPullParser.md))or [nextToken()](XmlPullParser.md))may result in exception being thrown. 
 
  Value: 1
 
 **See Also**
 
-- [#next](../org/xmlpull/v1/XmlPullParser.md))
-- [#nextToken](../org/xmlpull/v1/XmlPullParser.md)) 
+- [#next](XmlPullParser.md))
+- [#nextToken](XmlPullParser.md)) 
 
 ### END_TAG
 
@@ -262,17 +262,17 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val END_TAG: Int
 ```
 
-Returned from getEventType(), [next()](../org/xmlpull/v1/XmlPullParser.md)), or [nextToken()](../org/xmlpull/v1/XmlPullParser.md))when an end tag was read. The name of start tag is available from getName(), its namespace and prefix are available from getNamespace() and getPrefix(). 
+Returned from getEventType(), [next()](XmlPullParser.md)), or [nextToken()](XmlPullParser.md))when an end tag was read. The name of start tag is available from getName(), its namespace and prefix are available from getNamespace() and getPrefix(). 
 
  Value: 3
 
 **See Also**
 
-- [#next](../org/xmlpull/v1/XmlPullParser.md))
-- [#nextToken](../org/xmlpull/v1/XmlPullParser.md))
-- [#getName](../org/xmlpull/v1/XmlPullParser.md))
-- [#getPrefix](../org/xmlpull/v1/XmlPullParser.md))
-- [#FEATURE_PROCESS_NAMESPACES](../org/xmlpull/v1/XmlPullParser.md) 
+- [#next](XmlPullParser.md))
+- [#nextToken](XmlPullParser.md))
+- [#getName](XmlPullParser.md))
+- [#getPrefix](XmlPullParser.md))
+- [#FEATURE_PROCESS_NAMESPACES](XmlPullParser.md) 
 
 ### ENTITY_REF
 
@@ -282,14 +282,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val ENTITY_REF: Int
 ```
 
-An entity reference was just read; this token is available from [nextToken()](../org/xmlpull/v1/XmlPullParser.md))only. The entity name is available by calling getName(). If available, the replacement text can be obtained by calling getText(); otherwise, the user is responsible for resolving the entity reference. This event type is never returned from next(); next() will accumulate the replacement text and other text events to a single TEXT event. 
+An entity reference was just read; this token is available from [nextToken()](XmlPullParser.md))only. The entity name is available by calling getName(). If available, the replacement text can be obtained by calling getText(); otherwise, the user is responsible for resolving the entity reference. This event type is never returned from next(); next() will accumulate the replacement text and other text events to a single TEXT event. 
 
  Value: 6
 
 **See Also**
 
-- [#nextToken](../org/xmlpull/v1/XmlPullParser.md))
-- [#getText](../org/xmlpull/v1/XmlPullParser.md)) 
+- [#nextToken](XmlPullParser.md))
+- [#getText](XmlPullParser.md)) 
 
 ### FEATURE_PROCESS_DOCDECL
 
@@ -307,8 +307,8 @@ This feature determines whether the document declaration is processed. If set to
 
 **See Also**
 
-- [#getFeature](../org/xmlpull/v1/XmlPullParser.md))
-- [#setFeature](../org/xmlpull/v1/XmlPullParser.md)) 
+- [#getFeature](XmlPullParser.md))
+- [#setFeature](XmlPullParser.md)) 
 
 ### FEATURE_PROCESS_NAMESPACES
 
@@ -326,8 +326,8 @@ This feature determines whether the parser processes namespaces. As for all feat
 
 **See Also**
 
-- [#getFeature](../org/xmlpull/v1/XmlPullParser.md))
-- [#setFeature](../org/xmlpull/v1/XmlPullParser.md)) 
+- [#getFeature](XmlPullParser.md))
+- [#setFeature](XmlPullParser.md)) 
 
 ### FEATURE_REPORT_NAMESPACE_ATTRIBUTES
 
@@ -343,8 +343,8 @@ This feature determines whether namespace attributes are exposed via the attribu
 
 **See Also**
 
-- [#getFeature](../org/xmlpull/v1/XmlPullParser.md))
-- [#setFeature](../org/xmlpull/v1/XmlPullParser.md)) 
+- [#getFeature](XmlPullParser.md))
+- [#setFeature](XmlPullParser.md)) 
 
 ### FEATURE_VALIDATION
 
@@ -362,8 +362,8 @@ If this feature is activated, all validation errors as defined in the XML 1.0 sp
 
 **See Also**
 
-- [#getFeature](../org/xmlpull/v1/XmlPullParser.md))
-- [#setFeature](../org/xmlpull/v1/XmlPullParser.md)) 
+- [#getFeature](XmlPullParser.md))
+- [#setFeature](XmlPullParser.md)) 
 
 ### IGNORABLE_WHITESPACE
 
@@ -373,7 +373,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val IGNORABLE_WHITESPACE: Int
 ```
 
-Ignorable whitespace was just read. This token is available only from [nextToken()](../org/xmlpull/v1/XmlPullParser.md))). For non-validating parsers, this event is only reported by nextToken() when outside the root element. Validating parsers may be able to detect ignorable whitespace at other locations. The ignorable whitespace string is available by calling getText()
+Ignorable whitespace was just read. This token is available only from [nextToken()](XmlPullParser.md))). For non-validating parsers, this event is only reported by nextToken() when outside the root element. Validating parsers may be able to detect ignorable whitespace at other locations. The ignorable whitespace string is available by calling getText()
 
 **NOTE:**this is different from calling the isWhitespace() method, since text content may be whitespace but not ignorable. Ignorable whitespace is skipped by next() automatically; this event type is never returned from next(). 
 
@@ -381,8 +381,8 @@ Ignorable whitespace was just read. This token is available only from [nextToken
 
 **See Also**
 
-- [#nextToken](../org/xmlpull/v1/XmlPullParser.md))
-- [#getText](../org/xmlpull/v1/XmlPullParser.md)) 
+- [#nextToken](XmlPullParser.md))
+- [#getText](XmlPullParser.md)) 
 
 ### NO_NAMESPACE
 
@@ -404,14 +404,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val PROCESSING_INSTRUCTION: Int
 ```
 
-An XML processing instruction declaration was just read. This event type is available only via [nextToken()](../org/xmlpull/v1/XmlPullParser.md)). getText() will return text that is inside the processing instruction. Calls to next() will skip processing instructions automatically. 
+An XML processing instruction declaration was just read. This event type is available only via [nextToken()](XmlPullParser.md)). getText() will return text that is inside the processing instruction. Calls to next() will skip processing instructions automatically. 
 
  Value: 8
 
 **See Also**
 
-- [#nextToken](../org/xmlpull/v1/XmlPullParser.md))
-- [#getText](../org/xmlpull/v1/XmlPullParser.md)) 
+- [#nextToken](XmlPullParser.md))
+- [#getText](XmlPullParser.md)) 
 
 ### START_DOCUMENT
 
@@ -427,8 +427,8 @@ Signalize that parser is at the very beginning of the document and nothing was r
 
 **See Also**
 
-- [#next](../org/xmlpull/v1/XmlPullParser.md))
-- [#nextToken](../org/xmlpull/v1/XmlPullParser.md)) 
+- [#next](XmlPullParser.md))
+- [#nextToken](XmlPullParser.md)) 
 
 ### START_TAG
 
@@ -438,20 +438,20 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val START_TAG: Int
 ```
 
-Returned from getEventType(), [next()](../org/xmlpull/v1/XmlPullParser.md)), [nextToken()](../org/xmlpull/v1/XmlPullParser.md))when a start tag was read. The name of start tag is available from getName(), its namespace and prefix are available from getNamespace() and getPrefix() if [namespaces are enabled](../org/xmlpull/v1/XmlPullParser.md). See getAttribute\* methods to retrieve element attributes. See getNamespace\* methods to retrieve newly declared namespaces. 
+Returned from getEventType(), [next()](XmlPullParser.md)), [nextToken()](XmlPullParser.md))when a start tag was read. The name of start tag is available from getName(), its namespace and prefix are available from getNamespace() and getPrefix() if [namespaces are enabled](XmlPullParser.md). See getAttribute\* methods to retrieve element attributes. See getNamespace\* methods to retrieve newly declared namespaces. 
 
  Value: 2
 
 **See Also**
 
-- [#next](../org/xmlpull/v1/XmlPullParser.md))
-- [#nextToken](../org/xmlpull/v1/XmlPullParser.md))
-- [#getName](../org/xmlpull/v1/XmlPullParser.md))
-- [#getPrefix](../org/xmlpull/v1/XmlPullParser.md))
-- [#getAttributeCount](../org/xmlpull/v1/XmlPullParser.md))
-- [#getDepth](../org/xmlpull/v1/XmlPullParser.md))
-- [#getNamespaceCount](../org/xmlpull/v1/XmlPullParser.md))
-- [#FEATURE_PROCESS_NAMESPACES](../org/xmlpull/v1/XmlPullParser.md) 
+- [#next](XmlPullParser.md))
+- [#nextToken](XmlPullParser.md))
+- [#getName](XmlPullParser.md))
+- [#getPrefix](XmlPullParser.md))
+- [#getAttributeCount](XmlPullParser.md))
+- [#getDepth](XmlPullParser.md))
+- [#getNamespaceCount](XmlPullParser.md))
+- [#FEATURE_PROCESS_NAMESPACES](XmlPullParser.md) 
 
 ### TEXT
 
@@ -463,15 +463,15 @@ static val TEXT: Int
 
 Character data was read and will is available by calling getText().
 
-**Please note:** [next()](../org/xmlpull/v1/XmlPullParser.md))will accumulate multiple events into one TEXT event, skipping IGNORABLE_WHITESPACE, PROCESSING_INSTRUCTION and COMMENT events, In contrast, [nextToken()](../org/xmlpull/v1/XmlPullParser.md))will stop reading text when any other event is observed. Also, when the state was reached by calling next(), the text value will be normalized, whereas getText() will return unnormalized content in the case of nextToken(). This allows an exact roundtrip without changing line ends when examining low level events, whereas for high level applications the text is normalized appropriately. 
+**Please note:** [next()](XmlPullParser.md))will accumulate multiple events into one TEXT event, skipping IGNORABLE_WHITESPACE, PROCESSING_INSTRUCTION and COMMENT events, In contrast, [nextToken()](XmlPullParser.md))will stop reading text when any other event is observed. Also, when the state was reached by calling next(), the text value will be normalized, whereas getText() will return unnormalized content in the case of nextToken(). This allows an exact roundtrip without changing line ends when examining low level events, whereas for high level applications the text is normalized appropriately. 
 
  Value: 4
 
 **See Also**
 
-- [#next](../org/xmlpull/v1/XmlPullParser.md))
-- [#nextToken](../org/xmlpull/v1/XmlPullParser.md))
-- [#getText](../org/xmlpull/v1/XmlPullParser.md))
+- [#next](XmlPullParser.md))
+- [#nextToken](XmlPullParser.md))
+- [#getText](XmlPullParser.md))
 
 ## Public methods
 
@@ -497,8 +497,8 @@ The motivation for this function is to allow very small implementations of XMLPU
 **Note:**The list of pre-defined entity names will always contain standard XML entities such as amp (\&amp;), lt (\&lt;), gt (\&gt;), quot (\&quot;), and apos ('). Those cannot be redefined by this method! 
 **See Also**
 
-- [#FEATURE_PROCESS_DOCDECL](../org/xmlpull/v1/XmlPullParser.md)
-- [#FEATURE_VALIDATION](../org/xmlpull/v1/XmlPullParser.md) 
+- [#FEATURE_PROCESS_DOCDECL](XmlPullParser.md)
+- [#FEATURE_VALIDATION](XmlPullParser.md) 
 
 ### getAttributeCount
 
@@ -511,9 +511,9 @@ abstract fun getAttributeCount(): Int
 Returns the number of attributes of the current start tag, or -1 if the current event type is not START_TAG 
 **See Also**
 
-- [#getAttributeNamespace](../org/xmlpull/v1/XmlPullParser.md))
-- [#getAttributeName](../org/xmlpull/v1/XmlPullParser.md))
-- [#getAttributePrefix](../org/xmlpull/v1/XmlPullParser.md)) 
+- [#getAttributeNamespace](XmlPullParser.md))
+- [#getAttributeName](XmlPullParser.md))
+- [#getAttributePrefix](XmlPullParser.md)) 
 
 ### getAttributeName
 
@@ -613,7 +613,7 @@ Returns the given attributes value. Throws an IndexOutOfBoundsException if the i
 
 **See Also**
 
-- [#defineEntityReplacementText](../org/xmlpull/v1/XmlPullParser.md)) 
+- [#defineEntityReplacementText](XmlPullParser.md)) 
 
 ### getAttributeValue
 
@@ -641,7 +641,7 @@ Returns the attributes value identified by namespace URI and namespace localName
 
 **See Also**
 
-- [#defineEntityReplacementText](../org/xmlpull/v1/XmlPullParser.md)) 
+- [#defineEntityReplacementText](XmlPullParser.md)) 
 
 ### getColumnNumber
 
@@ -791,9 +791,9 @@ for (int i = getNamespaceCount(getDepth ())-1; i >= 0; i--) {
 **Please note:** parser implementations may provide more efficient lookup, e.g. using a Hashtable. The 'xml' prefix is bound to "http://www.w3.org/XML/1998/namespace", as defined in the [Namespaces in XML](http://www.w3.org/TR/REC-xml-names/#ns-using) specification. Analogous, the 'xmlns' prefix is resolved to<http://www.w3.org/2000/xmlns/> 
 **See Also**
 
-- [#getNamespaceCount](../org/xmlpull/v1/XmlPullParser.md))
-- [#getNamespacePrefix](../org/xmlpull/v1/XmlPullParser.md))
-- [#getNamespaceUri](../org/xmlpull/v1/XmlPullParser.md)) 
+- [#getNamespaceCount](XmlPullParser.md))
+- [#getNamespacePrefix](XmlPullParser.md))
+- [#getNamespaceUri](XmlPullParser.md)) 
 
 ### getNamespaceCount
 
@@ -822,10 +822,10 @@ XmlPullParser pp = ...
 ```  
 **See Also**
 
-- [#getNamespacePrefix](../org/xmlpull/v1/XmlPullParser.md))
-- [#getNamespaceUri](../org/xmlpull/v1/XmlPullParser.md))
+- [#getNamespacePrefix](XmlPullParser.md))
+- [#getNamespaceUri](XmlPullParser.md))
 - <https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser#getNamespace()>
-- [#getNamespace(String)](../org/xmlpull/v1/XmlPullParser.md)) 
+- [#getNamespace(String)](XmlPullParser.md)) 
 
 ### getNamespacePrefix
 
@@ -904,9 +904,9 @@ Returns the text content of the current event as String. The value returned depe
 **NOTE:**in case of ENTITY_REF, this method returns the entity replacement text (or null if not available). This is the only case where getText() and getTextCharacters() return different values. 
 **See Also**
 
-- [#getEventType](../org/xmlpull/v1/XmlPullParser.md))
-- [#next](../org/xmlpull/v1/XmlPullParser.md))
-- [#nextToken](../org/xmlpull/v1/XmlPullParser.md)) 
+- [#getEventType](XmlPullParser.md))
+- [#next](XmlPullParser.md))
+- [#nextToken](XmlPullParser.md)) 
 
 ### getTextCharacters
 
@@ -930,9 +930,9 @@ Returns the buffer that contains the text of the current event, as well as the s
 
 **See Also**
 
-- [#getText](../org/xmlpull/v1/XmlPullParser.md))
-- [#next](../org/xmlpull/v1/XmlPullParser.md))
-- [#nextToken](../org/xmlpull/v1/XmlPullParser.md)) 
+- [#getText](XmlPullParser.md))
+- [#next](XmlPullParser.md))
+- [#nextToken](XmlPullParser.md)) 
 
 ### isAttributeDefault
 
@@ -989,11 +989,11 @@ Get next parsing event - element content will be coalesced and only one TEXT eve
 **NOTE:**empty element (such as \<tag/\>) will be reported with two separate events: START_TAG, END_TAG - it must be so to preserve parsing equivalency of empty element to \<tag\>\</tag\>. (see isEmptyElementTag ()) 
 **See Also**
 
-- [#isEmptyElementTag](../org/xmlpull/v1/XmlPullParser.md))
-- [#START_TAG](../org/xmlpull/v1/XmlPullParser.md)
-- [#TEXT](../org/xmlpull/v1/XmlPullParser.md)
-- [#END_TAG](../org/xmlpull/v1/XmlPullParser.md)
-- [#END_DOCUMENT](../org/xmlpull/v1/XmlPullParser.md) 
+- [#isEmptyElementTag](XmlPullParser.md))
+- [#START_TAG](XmlPullParser.md)
+- [#TEXT](XmlPullParser.md)
+- [#END_TAG](XmlPullParser.md)
+- [#END_DOCUMENT](XmlPullParser.md) 
 
 ### nextTag
 
@@ -1150,16 +1150,16 @@ DOCDECL
 **NOTE:**XMLDecl (\<?xml ...?\>) is not reported but its content is available through optional properties (see class description above). 
 **See Also**
 
-- [#next](../org/xmlpull/v1/XmlPullParser.md))
-- [#START_TAG](../org/xmlpull/v1/XmlPullParser.md)
-- [#TEXT](../org/xmlpull/v1/XmlPullParser.md)
-- [#END_TAG](../org/xmlpull/v1/XmlPullParser.md)
-- [#END_DOCUMENT](../org/xmlpull/v1/XmlPullParser.md)
-- [#COMMENT](../org/xmlpull/v1/XmlPullParser.md)
-- [#DOCDECL](../org/xmlpull/v1/XmlPullParser.md)
-- [#PROCESSING_INSTRUCTION](../org/xmlpull/v1/XmlPullParser.md)
-- [#ENTITY_REF](../org/xmlpull/v1/XmlPullParser.md)
-- [#IGNORABLE_WHITESPACE](../org/xmlpull/v1/XmlPullParser.md) 
+- [#next](XmlPullParser.md))
+- [#START_TAG](XmlPullParser.md)
+- [#TEXT](XmlPullParser.md)
+- [#END_TAG](XmlPullParser.md)
+- [#END_DOCUMENT](XmlPullParser.md)
+- [#COMMENT](XmlPullParser.md)
+- [#DOCDECL](XmlPullParser.md)
+- [#PROCESSING_INSTRUCTION](XmlPullParser.md)
+- [#ENTITY_REF](XmlPullParser.md)
+- [#IGNORABLE_WHITESPACE](XmlPullParser.md) 
 
 ### require
 
@@ -1222,7 +1222,7 @@ Sets the input stream the parser is going to process. This call resets the parse
 
 | Parameters ||
 |-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `inputStream` | [InputStream](../java/io/InputStream.md)!:contains a raw byte input stream of possibly unknown encoding (when inputEncoding is null). |
+| `inputStream` | [InputStream](../java.io/InputStream.md)!:contains a raw byte input stream of possibly unknown encoding (when inputEncoding is null). |
 | `inputEncoding` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:if not null it MUST be used as encoding for inputStream |
 
 ### setInput

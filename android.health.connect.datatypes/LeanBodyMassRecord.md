@@ -9,9 +9,9 @@ class LeanBodyMassRecord : InstantRecord
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.health.connect.datatypes.Record](../android/health/connect/datatypes/Record.md) |||
-| | ↳ | [android.health.connect.datatypes.InstantRecord](../android/health/connect/datatypes/InstantRecord.md) ||
-| | | ↳ | [android.health.connect.datatypes.LeanBodyMassRecord](../android/health/connect/datatypes/LeanBodyMassRecord.md) |
+| ↳ | [android.health.connect.datatypes.Record](Record.md) |||
+| | ↳ | [android.health.connect.datatypes.InstantRecord](InstantRecord.md) ||
+| | | ↳ | [android.health.connect.datatypes.LeanBodyMassRecord](LeanBodyMassRecord.md) |
 | --- | --- | --- | --- |
 
 Captures the user's lean body mass. Each record represents a single instantaneous measurement.
@@ -29,7 +29,7 @@ Captures the user's lean body mass. Each record represents a single instantaneou
 | Public methods ||
 |---|---|
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/LeanBodyMassRecord#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [Mass](../android/health/connect/datatypes/units/Mass.md) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/LeanBodyMassRecord#getMass()()` <br /> |
+| [Mass](../android.health.connect.datatypes.units/Mass.md) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/LeanBodyMassRecord#getMass()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/LeanBodyMassRecord#hashCode()()` Returns a hash code value for the object. |
 | --- | --- |
 

@@ -8,7 +8,7 @@ open class BiometricManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.hardware.biometrics.BiometricManager](../android/hardware/biometrics/BiometricManager.md) |
+| ↳ | [android.hardware.biometrics.BiometricManager](BiometricManager.md) |
 
 A class that contains biometric utilities. For authentication, see `https://developer.android.com/reference/kotlin/android/hardware/biometrics/BiometricPrompt`. 
 Restricted for SDK Runtime environment in API level 34.

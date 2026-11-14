@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # ClickableSpan
 
-Kotlin| [Java](../android/text/style/ClickableSpan.md) 
+Kotlin| [Java](ClickableSpan.md) 
 | --- | --- |
 
 ```
@@ -13,13 +13,13 @@ abstract class ClickableSpan : CharacterStyle, UpdateAppearance
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.text.style.CharacterStyle](../android/text/style/CharacterStyle.md) ||
-| | ↳ | [android.text.style.ClickableSpan](../android/text/style/ClickableSpan.md) |
+| ↳ | [android.text.style.CharacterStyle](CharacterStyle.md) ||
+| | ↳ | [android.text.style.ClickableSpan](ClickableSpan.md) |
 
-| Known Direct Subclasses [TextLinks.TextLinkSpan](../android/view/textclassifier/TextLinks.TextLinkSpan.md), [URLSpan](../android/text/style/URLSpan.md) |-----------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------| | [TextLinks.TextLinkSpan](../android/view/textclassifier/TextLinks.TextLinkSpan.md) | A ClickableSpan for a TextLink. | | [URLSpan](../android/text/style/URLSpan.md) | Implementation of the [ClickableSpan](../android/text/style/ClickableSpan.md) that allows setting a url string. | |
+| Known Direct Subclasses [TextLinks.TextLinkSpan](../android/view/textclassifier/TextLinks.TextLinkSpan.md), [URLSpan](URLSpan.md) |-----------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------| | [TextLinks.TextLinkSpan](../android/view/textclassifier/TextLinks.TextLinkSpan.md) | A ClickableSpan for a TextLink. | | [URLSpan](URLSpan.md) | Implementation of the [ClickableSpan](ClickableSpan.md) that allows setting a url string. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-If an object of this type is attached to the text of a TextView with a movement method of LinkMovementMethod, the affected spans of text can be selected. If selected and clicked, the [onClick](../android/text/style/ClickableSpan.md))method will be called.
+If an object of this type is attached to the text of a TextView with a movement method of LinkMovementMethod, the affected spans of text can be selected. If selected and clicked, the [onClick](ClickableSpan.md))method will be called.
 
 The text with a`ClickableSpan`attached will be underlined and the link color will be used as a text color. The default link color is the theme's accent color or`android:textColorLink`if this attribute is defined in the theme. For example, considering that we have a`CustomClickableSpan`that extends`ClickableSpan`, it can be used like this: 
 
@@ -33,18 +33,18 @@ Text with`ClickableSpan`.
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------|---|
-| [ClickableSpan](../android/text/style/ClickableSpan.md))`()` <br /> |
+| [ClickableSpan](ClickableSpan.md))`()` <br /> |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onClick](../android/text/style/ClickableSpan.md))`(`widget:` ` [View](../android/view/View.md)`)` Performs the click action associated with this span. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/text/style/ClickableSpan.md))`()` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateDrawState](../android/text/style/ClickableSpan.md))`(`ds:` ` [TextPaint](../android/text/TextPaint.md)`)` Makes the text underlined and in the link color. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onClick](ClickableSpan.md))`(`widget:` ` [View](../android.view/View.md)`)` Performs the click action associated with this span. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](ClickableSpan.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateDrawState](ClickableSpan.md))`(`ds:` ` [TextPaint](../android.text/TextPaint.md)`)` Makes the text underlined and in the link color. |
 | --- | --- |
 
 | Inherited functions ||
 |---|---|
-| From class [CharacterStyle](../android/text/style/CharacterStyle.md) |-----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [CharacterStyle](../android/text/style/CharacterStyle.md)! | [getUnderlying](../android/text/style/CharacterStyle.md))`()` <br /> Returns "this" for most CharacterStyles, but for CharacterStyles that were generated by [wrap](../android/text/style/CharacterStyle.md)), returns the underlying CharacterStyle. <br /> | | [CharacterStyle](../android/text/style/CharacterStyle.md)! | [wrap](../android/text/style/CharacterStyle.md))`(`cs:` ` [CharacterStyle](../android/text/style/CharacterStyle.md)!`)` <br /> A given CharacterStyle can only applied to a single region of a given Spanned. If you need to attach the same CharacterStyle to multiple regions, you can use this method to wrap it with a new object that will have the same effect but be a distinct object so that it can also be attached without conflict. <br /> | ||
+| From class [CharacterStyle](CharacterStyle.md) |-----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [CharacterStyle](CharacterStyle.md)! | [getUnderlying](CharacterStyle.md))`()` <br /> Returns "this" for most CharacterStyles, but for CharacterStyles that were generated by [wrap](CharacterStyle.md)), returns the underlying CharacterStyle. <br /> | | [CharacterStyle](CharacterStyle.md)! | [wrap](CharacterStyle.md))`(`cs:` ` [CharacterStyle](CharacterStyle.md)!`)` <br /> A given CharacterStyle can only applied to a single region of a given Spanned. If you need to attach the same CharacterStyle to multiple regions, you can use this method to wrap it with a new object that will have the same effect but be a distinct object so that it can also be attached without conflict. <br /> | ||
 
 ## Public constructors
 
@@ -68,7 +68,7 @@ Performs the click action associated with this span.
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------|
-| `widget` | [View](../android/view/View.md):This value cannot be`null`. |
+| `widget` | [View](../android.view/View.md):This value cannot be`null`. |
 
 ### toString
 
@@ -94,4 +94,4 @@ Makes the text underlined and in the link color.
 
 | Parameters ||
 |------|----------------------------------------------------------------------------------------------------------------------|
-| `ds` | [TextPaint](../android/text/TextPaint.md):This value cannot be`null`. |
+| `ds` | [TextPaint](../android.text/TextPaint.md):This value cannot be`null`. |

@@ -10,12 +10,12 @@ abstract class InputStream : Closeable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.io.InputStream](../java/io/InputStream.md) |
+| ↳ | [java.io.InputStream](InputStream.md) |
 
-| Known Direct Subclasses [AssetManager.AssetInputStream](../android/content/res/AssetManager.AssetInputStream.md), [BackupDataInputStream](../android/app/backup/BackupDataInputStream.md), [ByteArrayInputStream](../java/io/ByteArrayInputStream.md), [FileInputStream](../java/io/FileInputStream.md), [FilterInputStream](../java/io/FilterInputStream.md), [ObjectInputStream](../java/io/ObjectInputStream.md), [PipedInputStream](../java/io/PipedInputStream.md), [SequenceInputStream](../java/io/SequenceInputStream.md), [StringBufferInputStream](../java/io/StringBufferInputStream.md) |-----------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [AssetManager.AssetInputStream](../android/content/res/AssetManager.AssetInputStream.md) | <br /> | | [BackupDataInputStream](../android/app/backup/BackupDataInputStream.md) | Provides an [java.io.InputStream](../java/io/InputStream.md)-like interface for accessing an entity's data during a restore operation. | | [ByteArrayInputStream](../java/io/ByteArrayInputStream.md) | A`ByteArrayInputStream`contains an internal buffer that contains bytes that may be read from the stream. | | [FileInputStream](../java/io/FileInputStream.md) | A`FileInputStream`obtains input bytes from a file in a file system. | | [FilterInputStream](../java/io/FilterInputStream.md) | A`FilterInputStream`contains some other input stream, which it uses as its basic source of data, possibly transforming the data along the way or providing additional functionality. | | [ObjectInputStream](../java/io/ObjectInputStream.md) | An ObjectInputStream deserializes primitive data and objects previously written using an ObjectOutputStream. | | [PipedInputStream](../java/io/PipedInputStream.md) | A piped input stream should be connected to a piped output stream; the piped input stream then provides whatever data bytes are written to the piped output stream. | | [SequenceInputStream](../java/io/SequenceInputStream.md) | A`SequenceInputStream`represents the logical concatenation of other input streams. | | [StringBufferInputStream](../java/io/StringBufferInputStream.md) | This class allows an application to create an input stream in which the bytes read are supplied by the contents of a string. | |
+| Known Direct Subclasses [AssetManager.AssetInputStream](../android/content/res/AssetManager.AssetInputStream.md), [BackupDataInputStream](../android.app.backup/BackupDataInputStream.md), [ByteArrayInputStream](ByteArrayInputStream.md), [FileInputStream](FileInputStream.md), [FilterInputStream](FilterInputStream.md), [ObjectInputStream](ObjectInputStream.md), [PipedInputStream](PipedInputStream.md), [SequenceInputStream](SequenceInputStream.md), [StringBufferInputStream](StringBufferInputStream.md) |-----------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [AssetManager.AssetInputStream](../android/content/res/AssetManager.AssetInputStream.md) | <br /> | | [BackupDataInputStream](../android.app.backup/BackupDataInputStream.md) | Provides an [java.io.InputStream](InputStream.md)-like interface for accessing an entity's data during a restore operation. | | [ByteArrayInputStream](ByteArrayInputStream.md) | A`ByteArrayInputStream`contains an internal buffer that contains bytes that may be read from the stream. | | [FileInputStream](FileInputStream.md) | A`FileInputStream`obtains input bytes from a file in a file system. | | [FilterInputStream](FilterInputStream.md) | A`FilterInputStream`contains some other input stream, which it uses as its basic source of data, possibly transforming the data along the way or providing additional functionality. | | [ObjectInputStream](ObjectInputStream.md) | An ObjectInputStream deserializes primitive data and objects previously written using an ObjectOutputStream. | | [PipedInputStream](PipedInputStream.md) | A piped input stream should be connected to a piped output stream; the piped input stream then provides whatever data bytes are written to the piped output stream. | | [SequenceInputStream](SequenceInputStream.md) | A`SequenceInputStream`represents the logical concatenation of other input streams. | | [StringBufferInputStream](StringBufferInputStream.md) | This class allows an application to create an input stream in which the bytes read are supplied by the contents of a string. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [AssetFileDescriptor.AutoCloseInputStream](../android/content/res/AssetFileDescriptor.AutoCloseInputStream.md), [Base64InputStream](../android/util/Base64InputStream.md), [BufferedInputStream](../java/io/BufferedInputStream.md), [CheckedInputStream](../java/util/zip/CheckedInputStream.md), [CipherInputStream](../javax/crypto/CipherInputStream.md), [DataInputStream](../java/io/DataInputStream.md), [DeflaterInputStream](../java/util/zip/DeflaterInputStream.md), [DigestInputStream](../java/security/DigestInputStream.md), [GZIPInputStream](../java/util/zip/GZIPInputStream.md), [InflaterInputStream](../java/util/zip/InflaterInputStream.md), [JarInputStream](../java/util/jar/JarInputStream.md), [LineNumberInputStream](../java/io/LineNumberInputStream.md), and 3 others. |---------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [AssetFileDescriptor.AutoCloseInputStream](../android/content/res/AssetFileDescriptor.AutoCloseInputStream.md) | An InputStream you can create on a ParcelFileDescriptor, which will take care of calling android. | | [Base64InputStream](../android/util/Base64InputStream.md) | An InputStream that does Base64 decoding on the data read through it. | | [BufferedInputStream](../java/io/BufferedInputStream.md) | A`BufferedInputStream`adds functionality to another input stream-namely, the ability to buffer the input and to support the`mark`and`reset`methods. | | [CheckedInputStream](../java/util/zip/CheckedInputStream.md) | An input stream that also maintains a checksum of the data being read. | | [CipherInputStream](../javax/crypto/CipherInputStream.md) | A CipherInputStream is composed of an InputStream and a Cipher so that read() methods return data that are read in from the underlying InputStream but have been additionally processed by the Cipher. | | [DataInputStream](../java/io/DataInputStream.md) | A data input stream lets an application read primitive Java data types from an underlying input stream in a machine-independent way. | | [DeflaterInputStream](../java/util/zip/DeflaterInputStream.md) | Implements an input stream filter for compressing data in the "deflate" compression format. | | [DigestInputStream](../java/security/DigestInputStream.md) | A transparent stream that updates the associated message digest using the bits going through the stream. | | [GZIPInputStream](../java/util/zip/GZIPInputStream.md) | This class implements a stream filter for reading compressed data in the GZIP file format. | | [InflaterInputStream](../java/util/zip/InflaterInputStream.md) | This class implements a stream filter for uncompressing data in the "deflate" compression format. | | [JarInputStream](../java/util/jar/JarInputStream.md) | The`JarInputStream`class is used to read the contents of a JAR file from any input stream. | | [LineNumberInputStream](../java/io/LineNumberInputStream.md) | This class is an input stream filter that provides the added functionality of keeping track of the current line number. | | [ParcelFileDescriptor.AutoCloseInputStream](../android/os/ParcelFileDescriptor.AutoCloseInputStream.md) | An InputStream you can create on a ParcelFileDescriptor, which will take care of calling android. | | [PushbackInputStream](../java/io/PushbackInputStream.md) | A`PushbackInputStream`adds functionality to another input stream, namely the ability to "push back" or "unread" bytes, by storing pushed-back bytes in an internal buffer. | | [ZipInputStream](../java/util/zip/ZipInputStream.md) | This class implements an input stream filter for reading files in the ZIP file format. | |
+| Known Indirect Subclasses [AssetFileDescriptor.AutoCloseInputStream](../android/content/res/AssetFileDescriptor.AutoCloseInputStream.md), [Base64InputStream](../android.util/Base64InputStream.md), [BufferedInputStream](BufferedInputStream.md), [CheckedInputStream](../java.util.zip/CheckedInputStream.md), [CipherInputStream](../javax.crypto/CipherInputStream.md), [DataInputStream](DataInputStream.md), [DeflaterInputStream](../java.util.zip/DeflaterInputStream.md), [DigestInputStream](../java.security/DigestInputStream.md), [GZIPInputStream](../java.util.zip/GZIPInputStream.md), [InflaterInputStream](../java.util.zip/InflaterInputStream.md), [JarInputStream](../java.util.jar/JarInputStream.md), [LineNumberInputStream](LineNumberInputStream.md), and 3 others. |---------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [AssetFileDescriptor.AutoCloseInputStream](../android/content/res/AssetFileDescriptor.AutoCloseInputStream.md) | An InputStream you can create on a ParcelFileDescriptor, which will take care of calling android. | | [Base64InputStream](../android.util/Base64InputStream.md) | An InputStream that does Base64 decoding on the data read through it. | | [BufferedInputStream](BufferedInputStream.md) | A`BufferedInputStream`adds functionality to another input stream-namely, the ability to buffer the input and to support the`mark`and`reset`methods. | | [CheckedInputStream](../java.util.zip/CheckedInputStream.md) | An input stream that also maintains a checksum of the data being read. | | [CipherInputStream](../javax.crypto/CipherInputStream.md) | A CipherInputStream is composed of an InputStream and a Cipher so that read() methods return data that are read in from the underlying InputStream but have been additionally processed by the Cipher. | | [DataInputStream](DataInputStream.md) | A data input stream lets an application read primitive Java data types from an underlying input stream in a machine-independent way. | | [DeflaterInputStream](../java.util.zip/DeflaterInputStream.md) | Implements an input stream filter for compressing data in the "deflate" compression format. | | [DigestInputStream](../java.security/DigestInputStream.md) | A transparent stream that updates the associated message digest using the bits going through the stream. | | [GZIPInputStream](../java.util.zip/GZIPInputStream.md) | This class implements a stream filter for reading compressed data in the GZIP file format. | | [InflaterInputStream](../java.util.zip/InflaterInputStream.md) | This class implements a stream filter for uncompressing data in the "deflate" compression format. | | [JarInputStream](../java.util.jar/JarInputStream.md) | The`JarInputStream`class is used to read the contents of a JAR file from any input stream. | | [LineNumberInputStream](LineNumberInputStream.md) | This class is an input stream filter that provides the added functionality of keeping track of the current line number. | | [ParcelFileDescriptor.AutoCloseInputStream](../android/os/ParcelFileDescriptor.AutoCloseInputStream.md) | An InputStream you can create on a ParcelFileDescriptor, which will take care of calling android. | | [PushbackInputStream](PushbackInputStream.md) | A`PushbackInputStream`adds functionality to another input stream, namely the ability to "push back" or "unread" bytes, by storing pushed-back bytes in an internal buffer. | | [ZipInputStream](../java.util.zip/ZipInputStream.md) | This class implements an input stream filter for reading files in the ZIP file format. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 This abstract class is the superclass of all classes representing an input stream of bytes.
@@ -26,29 +26,29 @@ Applications that need to define a subclass of`InputStream`must always provide a
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------|---|
-| [InputStream](../java/io/InputStream.md))`()` Constructor for subclasses to call. |
+| [InputStream](InputStream.md))`()` Constructor for subclasses to call. |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [available](../java/io/InputStream.md))`()` Returns an estimate of the number of bytes that can be read (or skipped over) from this input stream without blocking, which may be 0, or 0 when end of stream is detected. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../java/io/InputStream.md))`()` Closes this input stream and releases any system resources associated with the stream. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [mark](../java/io/InputStream.md))`(`readlimit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Marks the current position in this input stream. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [available](InputStream.md))`()` Returns an estimate of the number of bytes that can be read (or skipped over) from this input stream without blocking, which may be 0, or 0 when end of stream is detected. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](InputStream.md))`()` Closes this input stream and releases any system resources associated with the stream. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [mark](InputStream.md))`(`readlimit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Marks the current position in this input stream. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [markSupported](../java/io/InputStream.md))`()` Tests if this input stream supports the`mark`and`reset`methods. |
-| openstatic [InputStream](../java/io/InputStream.md)! | [nullInputStream](../java/io/InputStream.md))`()` Returns a new`InputStream`that reads no bytes. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](../java/io/InputStream.md))`()` Reads the next byte of data from the input stream. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [markSupported](InputStream.md))`()` Tests if this input stream supports the`mark`and`reset`methods. |
+| openstatic [InputStream](InputStream.md)! | [nullInputStream](InputStream.md))`()` Returns a new`InputStream`that reads no bytes. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](InputStream.md))`()` Reads the next byte of data from the input stream. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](../java/io/InputStream.md))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Reads some number of bytes from the input stream and stores them into the buffer array`b`. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](../java/io/InputStream.md))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Reads up to`len`bytes of data from the input stream into an array of bytes. |
-| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [readAllBytes](../java/io/InputStream.md))`()` Reads all remaining bytes from the input stream. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](InputStream.md))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Reads some number of bytes from the input stream and stores them into the buffer array`b`. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](InputStream.md))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Reads up to`len`bytes of data from the input stream into an array of bytes. |
+| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [readAllBytes](InputStream.md))`()` Reads all remaining bytes from the input stream. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [readNBytes](../java/io/InputStream.md))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Reads the requested number of bytes from the input stream into the given byte array. |
-| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [readNBytes](../java/io/InputStream.md))`(`len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Reads up to a specified number of bytes from the input stream. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](../java/io/InputStream.md))`()` Repositions this stream to the position at the time the`mark`method was last called on this input stream. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [readNBytes](InputStream.md))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Reads the requested number of bytes from the input stream into the given byte array. |
+| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [readNBytes](InputStream.md))`(`len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Reads up to a specified number of bytes from the input stream. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](InputStream.md))`()` Repositions this stream to the position at the time the`mark`method was last called on this input stream. |
 | --- | --- |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [skip](../java/io/InputStream.md))`(`n:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Skips over and discards`n`bytes of data from this input stream. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [skipNBytes](../java/io/InputStream.md))`(`n:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Skips over and discards exactly`n`bytes of data from this input stream. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [transferTo](../java/io/InputStream.md))`(`out:` ` [OutputStream](../java/io/OutputStream.md)!`)` Reads all bytes from this input stream and writes the bytes to the given output stream in the order that they are read. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [skip](InputStream.md))`(`n:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Skips over and discards`n`bytes of data from this input stream. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [skipNBytes](InputStream.md))`(`n:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Skips over and discards exactly`n`bytes of data from this input stream. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [transferTo](InputStream.md))`(`out:` ` [OutputStream](OutputStream.md)!`)` Reads all bytes from this input stream and writes the bytes to the given output stream in the order that they are read. |
 | --- | --- |
 
 ## Public constructors
@@ -77,7 +77,7 @@ Returns an estimate of the number of bytes that can be read (or skipped over) fr
 
 Note that while some implementations of`InputStream`will return the total number of bytes in the stream, many will not. It is never correct to use the return value of this method to allocate a buffer intended to hold all data in this stream.
 
-A subclass's implementation of this method may choose to throw an [IOException](../java/io/IOException.md) if this input stream has been closed by invoking the #close() method.
+A subclass's implementation of this method may choose to throw an [IOException](IOException.md) if this input stream has been closed by invoking the #close() method.
 
 The`available`method of`InputStream`always returns`0`.
 
@@ -132,7 +132,7 @@ The`mark`method of`InputStream`does nothing.
 
 **See Also**
 
-- [java.io.InputStream#reset()](../java/io/InputStream.md)) 
+- [java.io.InputStream#reset()](InputStream.md)) 
 
 ### markSupported
 
@@ -150,8 +150,8 @@ Tests if this input stream supports the`mark`and`reset`methods. Whether or not`m
 
 **See Also**
 
-- [java.io.InputStream#mark(int)](../java/io/InputStream.md))
-- [java.io.InputStream#reset()](../java/io/InputStream.md)) 
+- [java.io.InputStream#mark(int)](InputStream.md))
+- [java.io.InputStream#reset()](InputStream.md)) 
 
 ### nullInputStream
 
@@ -169,7 +169,7 @@ The`markSupported()`method returns`false`. The`mark()`method does nothing, and t
 
 | Return ||
 |-------------------------------------------------------------------------------------|----------------------------------------|
-| [InputStream](../java/io/InputStream.md)! | an`InputStream`which contains no bytes |
+| [InputStream](InputStream.md)! | an`InputStream`which contains no bytes |
 
 ### read
 
@@ -272,7 +272,7 @@ The`read(b, off, len)`method for class`InputStream`simply calls the method`read(
 
 **See Also**
 
-- [java.io.InputStream#read()](../java/io/InputStream.md)) 
+- [java.io.InputStream#read()](InputStream.md)) 
 
 ### readAllBytes
 
@@ -405,8 +405,8 @@ The method`reset`for class`InputStream`does nothing except throw an`IOException`
 
 **See Also**
 
-- [java.io.InputStream#mark(int)](../java/io/InputStream.md))
-- [java.io.IOException](../java/io/IOException.md) 
+- [java.io.InputStream#mark(int)](InputStream.md))
+- [java.io.IOException](IOException.md) 
 
 ### skip
 
@@ -434,7 +434,7 @@ The`skip`method implementation of this class creates a byte array and then repea
 
 **See Also**
 
-- [java.io.InputStream#skipNBytes(long)](../java/io/InputStream.md)) 
+- [java.io.InputStream#skipNBytes(long)](InputStream.md)) 
 
 ### skipNBytes
 
@@ -463,7 +463,7 @@ If an I/O error occurs, then the input stream may be in an inconsistent state. I
 
 **See Also**
 
-- [java.io.InputStream#skip(long)](../java/io/InputStream.md)) 
+- [java.io.InputStream#skip(long)](InputStream.md)) 
 
 ### transferTo
 
@@ -481,7 +481,7 @@ If an I/O error occurs reading from the input stream or writing to the output st
 
 | Parameters ||
 |-------|------------------------------------------------------------------------------------------------------------------|
-| `out` | [OutputStream](../java/io/OutputStream.md)!:the output stream, non-null |
+| `out` | [OutputStream](OutputStream.md)!:the output stream, non-null |
 
 | Return ||
 |------------------------------------------------------------------------------|---------------------------------|

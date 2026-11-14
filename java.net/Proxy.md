@@ -10,7 +10,7 @@ open class Proxy
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.net.Proxy](../java/net/Proxy.md) |
+| ↳ | [java.net.Proxy](Proxy.md) |
 
 This class represents a proxy setting, typically a type (http, socks) and a socket address. A`Proxy`is an immutable object.
 
@@ -22,20 +22,20 @@ This class represents a proxy setting, typically a type (http, socks) and a sock
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Proxy](../java/net/Proxy.md))`(`type:` ` [Proxy.Type](../java/net/Proxy.Type.md)!`, `sa:` ` [SocketAddress](../java/net/SocketAddress.md)!`)` Creates an entry representing a PROXY connection. |
+| [Proxy](Proxy.md))`(`type:` ` [Proxy.Type](../java/net/Proxy.Type.md)!`, `sa:` ` [SocketAddress](SocketAddress.md)!`)` Creates an entry representing a PROXY connection. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [SocketAddress](../java/net/SocketAddress.md)! | [address](../java/net/Proxy.md))`()` Returns the socket address of the proxy, or`null`if its a direct connection. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/net/Proxy.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this object against the specified object. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/net/Proxy.md))`()` Returns a hashcode for this Proxy. |
+| open [SocketAddress](SocketAddress.md)! | [address](Proxy.md))`()` Returns the socket address of the proxy, or`null`if its a direct connection. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](Proxy.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this object against the specified object. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](Proxy.md))`()` Returns a hashcode for this Proxy. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/net/Proxy.md))`()` Constructs a string representation of this Proxy. |
-| open [Proxy.Type](../java/net/Proxy.Type.md)! | [type](../java/net/Proxy.md))`()` Returns the proxy type. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](Proxy.md))`()` Constructs a string representation of this Proxy. |
+| open [Proxy.Type](../java/net/Proxy.Type.md)! | [type](Proxy.md))`()` Returns the proxy type. |
 
 | Properties ||
 |--------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Proxy](../java/net/Proxy.md)! | [NO_PROXY](../java/net/Proxy.md) A proxy setting that represents a`DIRECT`connection, basically telling the protocol handler not to use any proxying. |
+| static [Proxy](Proxy.md)! | [NO_PROXY](Proxy.md) A proxy setting that represents a`DIRECT`connection, basically telling the protocol handler not to use any proxying. |
 
 ## Public constructors
 
@@ -56,7 +56,7 @@ Use the`Proxy.NO_PROXY`constant for representing a direct connection.
 | Parameters ||
 |--------|--------------------------------------------------------------------------------------------------------------------------|
 | `type` | [Proxy.Type](../java/net/Proxy.Type.md)!:the`Type`of the proxy |
-| `sa` | [SocketAddress](../java/net/SocketAddress.md)!:the`SocketAddress`for that proxy |
+| `sa` | [SocketAddress](SocketAddress.md)!:the`SocketAddress`for that proxy |
 
 | Exceptions ||
 |--------------------------------------|------------------------------------------------|
@@ -76,7 +76,7 @@ Returns the socket address of the proxy, or`null`if its a direct connection.
 
 | Return ||
 |-----------------------------------------------------------------------------------------|----------------------------------------------------------------|
-| [SocketAddress](../java/net/SocketAddress.md)! | a`SocketAddress`representing the socket end point of the proxy |
+| [SocketAddress](SocketAddress.md)! | a`SocketAddress`representing the socket end point of the proxy |
 
 ### equals
 
@@ -100,7 +100,7 @@ Two instances of`Proxy`represent the same address if both the SocketAddresses an
 
 **See Also**
 
-- [java.net.InetSocketAddress#equals(java.lang.Object)](../java/net/InetSocketAddress.md)) 
+- [java.net.InetSocketAddress#equals(java.lang.Object)](InetSocketAddress.md)) 
 
 ### hashCode
 

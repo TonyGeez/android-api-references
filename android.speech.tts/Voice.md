@@ -2,7 +2,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 
 # Voice
 
-Kotlin | [Java](../android/speech/tts/Voice.md)
+Kotlin | [Java](Voice.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ open class Voice : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.speech.tts.Voice](../android/speech/tts/Voice.md) |
+| ↳ | [android.speech.tts.Voice](Voice.md) |
 
 Characteristics and features of a Text-To-Speech Voice. Each TTS Engine can expose multiple voices for each locale, with different set of features.
 
@@ -48,7 +48,7 @@ Characteristics and features of a Text-To-Speech Voice. Each TTS Engine can expo
 | open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/speech/tts/Voice#getFeatures()()` Returns the set of features it supports for a given voice. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/speech/tts/Voice#getLatency()()` <br /> |
-| open [Locale](../java/util/Locale.md)! | `https://developer.android.com/reference/kotlin/android/speech/tts/Voice#getLocale()()` <br /> |
+| open [Locale](../java.util/Locale.md)! | `https://developer.android.com/reference/kotlin/android/speech/tts/Voice#getLocale()()` <br /> |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/speech/tts/Voice#getName()()` <br /> |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/speech/tts/Voice#getQuality()()` <br /> |
@@ -60,7 +60,7 @@ Characteristics and features of a Text-To-Speech Voice. Each TTS Engine can expo
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [Voice](../android/speech/tts/Voice.md)!\> | `https://developer.android.com/reference/kotlin/android/speech/tts/Voice#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [Voice](Voice.md)!\> | `https://developer.android.com/reference/kotlin/android/speech/tts/Voice#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -383,7 +383,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

@@ -14,7 +14,7 @@ interface OnActivityResultListener
 
 | [android.preference.PreferenceManager.OnActivityResultListener](../android/preference/PreferenceManager.OnActivityResultListener.md) |
 
-| Known Direct Subclasses [RingtonePreference](../android/preference/RingtonePreference.md) |------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------| | [RingtonePreference](../android/preference/RingtonePreference.md) | A [Preference](../android/preference/Preference.md) that allows the user to choose a ringtone from those on the device. | |
+| Known Direct Subclasses [RingtonePreference](RingtonePreference.md) |------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------| | [RingtonePreference](RingtonePreference.md) | A [Preference](Preference.md) that allows the user to choose a ringtone from those on the device. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 | **This interface was deprecated in API level 29.**
@@ -27,7 +27,7 @@ Interface definition for a class that will be called when the container's activi
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onActivityResult](../android/preference/PreferenceManager.OnActivityResultListener.md))`(`requestCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `resultCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `data:` ` [Intent](../android/content/Intent.md)!`)` See Activity's onActivityResult. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onActivityResult](../android/preference/PreferenceManager.OnActivityResultListener.md))`(`requestCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `resultCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `data:` ` [Intent](../android.content/Intent.md)!`)` See Activity's onActivityResult. |
 
 ## Public methods
 

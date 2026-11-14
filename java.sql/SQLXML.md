@@ -8,7 +8,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 interface SQLXML
 ```
 
-| [java.sql.SQLXML](../java/sql/SQLXML.md) |
+| [java.sql.SQLXML](SQLXML.md) |
 
 The mapping in the JavaTM programming language for the SQL XML type. XML is a built-in type that stores an XML value as a column value in a row of a database table. By default drivers implement an SQLXML object as a logical pointer to the XML data rather than the data itself. An SQLXML object is valid for the duration of the transaction in which it was created.
 
@@ -167,17 +167,17 @@ All methods on the`SQLXML`interface must be fully implemented if the JDBC driver
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [free](../java/sql/SQLXML.md))`()` This method closes this object and releases the resources that it held. |
-| abstract [InputStream](../java/io/InputStream.md)! | [getBinaryStream](../java/sql/SQLXML.md))`()` Retrieves the XML value designated by this SQLXML instance as a stream. |
-| abstract [Reader](../java/io/Reader.md)! | [getCharacterStream](../java/sql/SQLXML.md))`()` Retrieves the XML value designated by this SQLXML instance as a java. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [free](SQLXML.md))`()` This method closes this object and releases the resources that it held. |
+| abstract [InputStream](../java.io/InputStream.md)! | [getBinaryStream](SQLXML.md))`()` Retrieves the XML value designated by this SQLXML instance as a stream. |
+| abstract [Reader](../java.io/Reader.md)! | [getCharacterStream](SQLXML.md))`()` Retrieves the XML value designated by this SQLXML instance as a java. |
 | --- | --- |
-| abstractT | [getSource](../java/sql/SQLXML.md))`(`sourceClass:` ` [Class](../java/lang/Class.md)<T>!`)` Returns a Source for reading the XML value designated by this SQLXML instance. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getString](../java/sql/SQLXML.md))`()` Returns a string representation of the XML value designated by this SQLXML instance. |
-| abstract [OutputStream](../java/io/OutputStream.md)! | [setBinaryStream](../java/sql/SQLXML.md))`()` Retrieves a stream that can be used to write the XML value that this SQLXML instance represents. |
+| abstractT | [getSource](SQLXML.md))`(`sourceClass:` ` [Class](../java.lang/Class.md)<T>!`)` Returns a Source for reading the XML value designated by this SQLXML instance. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getString](SQLXML.md))`()` Returns a string representation of the XML value designated by this SQLXML instance. |
+| abstract [OutputStream](../java.io/OutputStream.md)! | [setBinaryStream](SQLXML.md))`()` Retrieves a stream that can be used to write the XML value that this SQLXML instance represents. |
 | --- | --- |
-| abstract [Writer](../java/io/Writer.md)! | [setCharacterStream](../java/sql/SQLXML.md))`()` Retrieves a stream to be used to write the XML value that this SQLXML instance represents. |
-| abstractT | [setResult](../java/sql/SQLXML.md))`(`resultClass:` ` [Class](../java/lang/Class.md)<T>!`)` Returns a Result for setting the XML value designated by this SQLXML instance. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setString](../java/sql/SQLXML.md))`(`value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the XML value designated by this SQLXML instance to the given String representation. |
+| abstract [Writer](../java.io/Writer.md)! | [setCharacterStream](SQLXML.md))`()` Retrieves a stream to be used to write the XML value that this SQLXML instance represents. |
+| abstractT | [setResult](SQLXML.md))`(`resultClass:` ` [Class](../java.lang/Class.md)<T>!`)` Returns a Result for setting the XML value designated by this SQLXML instance. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setString](SQLXML.md))`(`value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the XML value designated by this SQLXML instance to the given String representation. |
 | --- | --- |
 
 ## Public methods
@@ -211,7 +211,7 @@ The SQL XML object becomes not readable when this method is called and may also 
 
 | Return ||
 |------------------------------------------------------------------------------------------|-----------------------------------|
-| [InputStream](../java/io/InputStream.md)! | a stream containing the XML data. |
+| [InputStream](../java.io/InputStream.md)! | a stream containing the XML data. |
 
 | Exceptions ||
 |--------------------------------------------|-----------------------------------------------------------------------------------------------------|
@@ -232,7 +232,7 @@ The SQL XML object becomes not readable when this method is called and may also 
 
 | Return ||
 |--------------------------------------------------------------------------------|-----------------------------------|
-| [Reader](../java/io/Reader.md)! | a stream containing the XML data. |
+| [Reader](../java.io/Reader.md)! | a stream containing the XML data. |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -265,7 +265,7 @@ SAXSource saxSource = sqlxml.getSource(SAXSource.class);
 
 | Parameters ||
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `sourceClass` | [Class](../java/lang/Class.md)\<T\>!:The class of the source, or null. If the class is null, a vendor specifc Source implementation will be returned. The following classes are supported at a minimum: ```kotlin javax.xml.transform.dom.DOMSource - returns a DOMSource javax.xml.transform.sax.SAXSource - returns a SAXSource javax.xml.transform.stax.StAXSource - returns a StAXSource javax.xml.transform.stream.StreamSource - returns a StreamSource ``` |
+| `sourceClass` | [Class](../java.lang/Class.md)\<T\>!:The class of the source, or null. If the class is null, a vendor specifc Source implementation will be returned. The following classes are supported at a minimum: ```kotlin javax.xml.transform.dom.DOMSource - returns a DOMSource javax.xml.transform.sax.SAXSource - returns a SAXSource javax.xml.transform.stax.StAXSource - returns a StAXSource javax.xml.transform.stream.StreamSource - returns a StreamSource ``` |
 
 | Return ||
 |---|-------------------------------------|
@@ -311,7 +311,7 @@ The SQL XML object becomes not writeable when this method is called and may also
 
 | Return ||
 |--------------------------------------------------------------------------------------------|----------------------------------------|
-| [OutputStream](../java/io/OutputStream.md)! | a stream to which data can be written. |
+| [OutputStream](../java.io/OutputStream.md)! | a stream to which data can be written. |
 
 | Exceptions ||
 |--------------------------------------------|-----------------------------------------------------------------------------------------------------|
@@ -332,7 +332,7 @@ The SQL XML object becomes not writeable when this method is called and may also
 
 | Return ||
 |--------------------------------------------------------------------------------|----------------------------------------|
-| [Writer](../java/io/Writer.md)! | a stream to which data can be written. |
+| [Writer](../java.io/Writer.md)! | a stream to which data can be written. |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -366,7 +366,7 @@ SAXResult saxResult = sqlxml.setResult(SAXResult.class);
 
 | Parameters ||
 |---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `resultClass` | [Class](../java/lang/Class.md)\<T\>!:The class of the result, or null. If resultClass is null, a vendor specific Result implementation will be returned. The following classes are supported at a minimum: ```kotlin javax.xml.transform.dom.DOMResult - returns a DOMResult javax.xml.transform.sax.SAXResult - returns a SAXResult javax.xml.transform.stax.StAXResult - returns a StAXResult javax.xml.transform.stream.StreamResult - returns a StreamResult ``` |
+| `resultClass` | [Class](../java.lang/Class.md)\<T\>!:The class of the result, or null. If resultClass is null, a vendor specific Result implementation will be returned. The following classes are supported at a minimum: ```kotlin javax.xml.transform.dom.DOMResult - returns a DOMResult javax.xml.transform.sax.SAXResult - returns a SAXResult javax.xml.transform.stax.StAXResult - returns a StAXResult javax.xml.transform.stream.StreamResult - returns a StreamResult ``` |
 
 | Return ||
 |---|---------------------------------------------|

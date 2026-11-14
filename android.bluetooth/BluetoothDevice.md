@@ -8,7 +8,7 @@ class BluetoothDevice : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.bluetooth.BluetoothDevice](../android/bluetooth/BluetoothDevice.md) |
+| ↳ | [android.bluetooth.BluetoothDevice](BluetoothDevice.md) |
 
 Represents a remote Bluetooth device. A `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#` lets you create a connection with the respective device or query information about it, such as the name, address, class, and bonding state.
 
@@ -154,22 +154,22 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 |---|---|
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#cancelBondProcess()()` Cancel an in-progress bonding request started with #createBond. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#connect()()` Connects all user enabled and supported bluetooth profiles between the local and remote device. |
-| [BluetoothGatt](../android/bluetooth/BluetoothGatt.md)? | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#connectGatt(android.bluetooth.BluetoothGattConnectionSettings,%20java.util.concurrent.Executor,%20android.bluetooth.BluetoothGattCallback)(gattConnectionSettings: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattConnectionSettings, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCallback)` Connect to the GATT Server hosted by the given device. |
+| [BluetoothGatt](BluetoothGatt.md)? | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#connectGatt(android.bluetooth.BluetoothGattConnectionSettings,%20java.util.concurrent.Executor,%20android.bluetooth.BluetoothGattCallback)(gattConnectionSettings: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattConnectionSettings, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCallback)` Connect to the GATT Server hosted by the given device. |
 | --- | --- |
-| [BluetoothGatt](../android/bluetooth/BluetoothGatt.md)! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#connectGatt(android.content.Context,%20kotlin.Boolean,%20android.bluetooth.BluetoothGattCallback)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, autoConnect: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, callback: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCallback!)` Connect to GATT Server hosted by this device. |
-| [BluetoothGatt](../android/bluetooth/BluetoothGatt.md)! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#connectGatt(android.content.Context,%20kotlin.Boolean,%20android.bluetooth.BluetoothGattCallback,%20kotlin.Int)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, autoConnect: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, callback: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCallback!, transport: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Connect to GATT Server hosted by this device. |
-| [BluetoothGatt](../android/bluetooth/BluetoothGatt.md)! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#connectGatt(android.content.Context,%20kotlin.Boolean,%20android.bluetooth.BluetoothGattCallback,%20kotlin.Int,%20kotlin.Int)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, autoConnect: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, callback: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCallback!, transport: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, phy: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Connect to GATT Server hosted by this device. |
+| [BluetoothGatt](BluetoothGatt.md)! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#connectGatt(android.content.Context,%20kotlin.Boolean,%20android.bluetooth.BluetoothGattCallback)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, autoConnect: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, callback: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCallback!)` Connect to GATT Server hosted by this device. |
+| [BluetoothGatt](BluetoothGatt.md)! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#connectGatt(android.content.Context,%20kotlin.Boolean,%20android.bluetooth.BluetoothGattCallback,%20kotlin.Int)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, autoConnect: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, callback: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCallback!, transport: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Connect to GATT Server hosted by this device. |
+| [BluetoothGatt](BluetoothGatt.md)! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#connectGatt(android.content.Context,%20kotlin.Boolean,%20android.bluetooth.BluetoothGattCallback,%20kotlin.Int,%20kotlin.Int)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, autoConnect: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, callback: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCallback!, transport: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, phy: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Connect to GATT Server hosted by this device. |
 | --- | --- |
-| [BluetoothGatt](../android/bluetooth/BluetoothGatt.md)! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#connectGatt(android.content.Context,%20kotlin.Boolean,%20android.bluetooth.BluetoothGattCallback,%20kotlin.Int,%20kotlin.Int,%20android.os.Handler)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, autoConnect: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, callback: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCallback!, transport: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, phy: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#!)` Connect to GATT Server hosted by this device. |
+| [BluetoothGatt](BluetoothGatt.md)! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#connectGatt(android.content.Context,%20kotlin.Boolean,%20android.bluetooth.BluetoothGattCallback,%20kotlin.Int,%20kotlin.Int,%20android.os.Handler)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, autoConnect: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, callback: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattCallback!, transport: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, phy: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#!)` Connect to GATT Server hosted by this device. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#createBond()()` Start the bonding (pairing) process with the remote device. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#createBond(kotlin.Int)(transport: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Start the bonding (pairing) process with the remote device using the specified transport. |
 | --- | --- |
-| [BluetoothSocket](../android/bluetooth/BluetoothSocket.md) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#createInsecureL2capChannel(kotlin.Int)(psm: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a Bluetooth L2CAP Connection-oriented Channel (CoC) `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocket` that can be used to start a secure outgoing connection to the remote device with the same dynamic protocol/service multiplexer (PSM) value. |
-| [BluetoothSocket](../android/bluetooth/BluetoothSocket.md)! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#createInsecureRfcommSocketToServiceRecord(java.util.UUID)(uuid: https://developer.android.com/reference/kotlin/java/util/UUID.html#!)` Create an RFCOMM `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocket` socket ready to start an insecure outgoing connection to this remote device using SDP lookup of uuid. |
-| [BluetoothSocket](../android/bluetooth/BluetoothSocket.md) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#createL2capChannel(kotlin.Int)(psm: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a Bluetooth L2CAP Connection-oriented Channel (CoC) `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocket` that can be used to start a secure outgoing connection to the remote device with the same dynamic protocol/service multiplexer (PSM) value. |
+| [BluetoothSocket](BluetoothSocket.md) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#createInsecureL2capChannel(kotlin.Int)(psm: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a Bluetooth L2CAP Connection-oriented Channel (CoC) `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocket` that can be used to start a secure outgoing connection to the remote device with the same dynamic protocol/service multiplexer (PSM) value. |
+| [BluetoothSocket](BluetoothSocket.md)! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#createInsecureRfcommSocketToServiceRecord(java.util.UUID)(uuid: https://developer.android.com/reference/kotlin/java/util/UUID.html#!)` Create an RFCOMM `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocket` socket ready to start an insecure outgoing connection to this remote device using SDP lookup of uuid. |
+| [BluetoothSocket](BluetoothSocket.md) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#createL2capChannel(kotlin.Int)(psm: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a Bluetooth L2CAP Connection-oriented Channel (CoC) `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocket` that can be used to start a secure outgoing connection to the remote device with the same dynamic protocol/service multiplexer (PSM) value. |
 | --- | --- |
-| [BluetoothSocket](../android/bluetooth/BluetoothSocket.md)! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#createRfcommSocketToServiceRecord(java.util.UUID)(uuid: https://developer.android.com/reference/kotlin/java/util/UUID.html#!)` Create an RFCOMM `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocket` ready to start a secure outgoing connection to this remote device using SDP lookup of uuid. |
-| [BluetoothSocket](../android/bluetooth/BluetoothSocket.md) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#createUsingSocketSettings(android.bluetooth.BluetoothSocketSettings)(settings: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocketSettings)` Creates a client socket to connect to a remote Bluetooth server with the specified socket settings `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocketSettings` This API is used to connect to a remote server hosted using `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter#listenUsingSocketSettings(android.bluetooth.BluetoothSocketSettings)`. |
+| [BluetoothSocket](BluetoothSocket.md)! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#createRfcommSocketToServiceRecord(java.util.UUID)(uuid: https://developer.android.com/reference/kotlin/java/util/UUID.html#!)` Create an RFCOMM `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocket` ready to start a secure outgoing connection to this remote device using SDP lookup of uuid. |
+| [BluetoothSocket](BluetoothSocket.md) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#createUsingSocketSettings(android.bluetooth.BluetoothSocketSettings)(settings: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocketSettings)` Creates a client socket to connect to a remote Bluetooth server with the specified socket settings `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocketSettings` This API is used to connect to a remote server hosted using `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothAdapter#listenUsingSocketSettings(android.bluetooth.BluetoothSocketSettings)`. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#disconnect()()` Disconnects all connected bluetooth profiles between the local and remote device. |
@@ -182,11 +182,11 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#getAddressType()()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#getAlias()()` Get the locally modifiable name (alias) of the remote Bluetooth device. |
-| [BluetoothClass](../android/bluetooth/BluetoothClass.md)! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#getBluetoothClass()()` Get the Bluetooth class of the remote device. |
+| [BluetoothClass](BluetoothClass.md)! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#getBluetoothClass()()` Get the Bluetooth class of the remote device. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#getBondState()()` This API returns the bond state of the remote device. |
 | [BondStatus](../android/bluetooth/BondStatus.md)? | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#getBondStatus(kotlin.Int)(transport: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the bond status of this device. |
-| [EncryptionStatus](../android/bluetooth/EncryptionStatus.md)? | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#getEncryptionStatus(kotlin.Int)(transport: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get the encryption status of the connected device. |
+| [EncryptionStatus](EncryptionStatus.md)? | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#getEncryptionStatus(kotlin.Int)(transport: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Get the encryption status of the connected device. |
 | --- | --- |
 | [BluetoothDevice.BluetoothAddress](../android/bluetooth/BluetoothDevice.BluetoothAddress.md) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#getIdentityAddressWithType()()` Returns the identity address and identity address type of this BluetoothDevice. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#getKeyMissingCount()()` Get the number of times `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#ACTION_KEY_MISSING:kotlin.String` intent was thrown for this device since the last successful encrypted connection. |
@@ -194,7 +194,7 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#getName()()` Get the friendly Bluetooth name of the remote device. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#getType()()` Get the Bluetooth device type of the remote device. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ParcelUuid](../android/os/ParcelUuid.md)!\>! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#getUuids()()` Returns the supported features (UUIDs) of the remote device. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ParcelUuid](../android.os/ParcelUuid.md)!\>! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#getUuids()()` Returns the supported features (UUIDs) of the remote device. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#hashCode()()` Returns a hash code value for the object. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#isConnected(kotlin.Int)(transport: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns whether there is an open connection to this device on the given transport. |
@@ -208,7 +208,7 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [BluetoothDevice](../android/bluetooth/BluetoothDevice.md)!\> | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [BluetoothDevice](BluetoothDevice.md)!\> | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -1371,8 +1371,8 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 | Parameters ||
 |---|---|
 | `gattConnectionSettings` | [BluetoothGattConnectionSettings](../android/bluetooth/BluetoothGattConnectionSettings.md): `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothGattConnectionSettings` objects with required gatt settings for the GATT connection. This value cannot be `null`. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): The executor to use for the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `callback` | [BluetoothGattCallback](../android/bluetooth/BluetoothGattCallback.md): GATT callback handler that will receive asynchronous callbacks. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor to use for the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `callback` | [BluetoothGattCallback](BluetoothGattCallback.md): GATT callback handler that will receive asynchronous callbacks. This value cannot be `null`. |
 | --- | --- |
 
 | Return ||
@@ -1405,7 +1405,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 | Parameters ||
 |---|---|
 | `autoConnect` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): Whether to directly connect to the remote device (false) or to automatically connect as soon as the remote device becomes available (true). |
-| `callback` | [BluetoothGattCallback](../android/bluetooth/BluetoothGattCallback.md)!: GATT callback handler that will receive asynchronous callbacks. |
+| `callback` | [BluetoothGattCallback](BluetoothGattCallback.md)!: GATT callback handler that will receive asynchronous callbacks. |
 
 | Exceptions ||
 |---|---|
@@ -1434,7 +1434,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 | Parameters ||
 |---|---|
 | `autoConnect` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): Whether to directly connect to the remote device (false) or to automatically connect as soon as the remote device becomes available (true). |
-| `callback` | [BluetoothGattCallback](../android/bluetooth/BluetoothGattCallback.md)!: GATT callback handler that will receive asynchronous callbacks. |
+| `callback` | [BluetoothGattCallback](BluetoothGattCallback.md)!: GATT callback handler that will receive asynchronous callbacks. |
 | `transport` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): preferred transport for GATT connections to remote dual-mode devices `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#TRANSPORT_AUTO:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#TRANSPORT_BREDR:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#TRANSPORT_LE:kotlin.Int` |
 | --- | --- |
 
@@ -1466,7 +1466,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 | Parameters ||
 |---|---|
 | `autoConnect` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): Whether to directly connect to the remote device (false) or to automatically connect as soon as the remote device becomes available (true). |
-| `callback` | [BluetoothGattCallback](../android/bluetooth/BluetoothGattCallback.md)!: GATT callback handler that will receive asynchronous callbacks. |
+| `callback` | [BluetoothGattCallback](BluetoothGattCallback.md)!: GATT callback handler that will receive asynchronous callbacks. |
 | `transport` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): preferred transport for GATT connections to remote dual-mode devices `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#TRANSPORT_AUTO:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#TRANSPORT_BREDR:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#TRANSPORT_LE:kotlin.Int` |
 | --- | --- |
 | `phy` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): preferred PHY for connections to remote LE device. Bitwise OR of any of `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#PHY_LE_1M_MASK:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#PHY_LE_2M_MASK:kotlin.Int`, and `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#PHY_LE_CODED_MASK:kotlin.Int`. This option does not take effect if `autoConnect` is set to true. |
@@ -1500,11 +1500,11 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 | Parameters ||
 |---|---|
 | `autoConnect` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): Whether to directly connect to the remote device (false) or to automatically connect as soon as the remote device becomes available (true). |
-| `callback` | [BluetoothGattCallback](../android/bluetooth/BluetoothGattCallback.md)!: GATT callback handler that will receive asynchronous callbacks. |
+| `callback` | [BluetoothGattCallback](BluetoothGattCallback.md)!: GATT callback handler that will receive asynchronous callbacks. |
 | `transport` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): preferred transport for GATT connections to remote dual-mode devices `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#TRANSPORT_AUTO:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#TRANSPORT_BREDR:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#TRANSPORT_LE:kotlin.Int` |
 | --- | --- |
 | `phy` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): preferred PHY for connections to remote LE device. Bitwise OR of any of `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#PHY_LE_1M_MASK:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#PHY_LE_2M_MASK:kotlin.Int`, an d`https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice#PHY_LE_CODED_MASK:kotlin.Int`. This option does not take effect if `autoConnect` is set to true. |
-| `handler` | [Handler](../android/os/Handler.md)!: The handler to use for the callback. If `null`, callbacks will happen on an un-specified background thread. |
+| `handler` | [Handler](../android.os/Handler.md)!: The handler to use for the callback. If `null`, callbacks will happen on an un-specified background thread. |
 
 | Exceptions ||
 |---|---|
@@ -1612,7 +1612,7 @@ Hint: If you are connecting to a Bluetooth serial board then try using the well-
 
 | Parameters ||
 |---|---|
-| `uuid` | [UUID](../java/util/UUID.md)!: service record uuid to lookup RFCOMM channel |
+| `uuid` | [UUID](../java.util/UUID.md)!: service record uuid to lookup RFCOMM channel |
 
 | Return ||
 |---|---|
@@ -1676,7 +1676,7 @@ Hint: If you are connecting to a Bluetooth serial board then try using the well-
 
 | Parameters ||
 |---|---|
-| `uuid` | [UUID](../java/util/UUID.md)!: service record uuid to lookup RFCOMM channel |
+| `uuid` | [UUID](../java.util/UUID.md)!: service record uuid to lookup RFCOMM channel |
 
 | Return ||
 |---|---|
@@ -1707,7 +1707,7 @@ Use `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothS
 
 | Parameters ||
 |---|---|
-| `settings` | [BluetoothSocketSettings](../android/bluetooth/BluetoothSocketSettings.md): Bluetooth socket settings `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocketSettings`. This value cannot be `null`. |
+| `settings` | [BluetoothSocketSettings](BluetoothSocketSettings.md): Bluetooth socket settings `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothSocketSettings`. This value cannot be `null`. |
 
 | Return ||
 |---|---|

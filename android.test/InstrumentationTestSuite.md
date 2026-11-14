@@ -5,7 +5,7 @@ Deprecated in [API level 24](https://developer.android.com/guide/topics/manifest
 
 # InstrumentationTestSuite
 
-Kotlin| [Java](../android/test/InstrumentationTestSuite.md) 
+Kotlin| [Java](InstrumentationTestSuite.md) 
 | --- | --- |
 
 ```
@@ -14,26 +14,26 @@ open class InstrumentationTestSuite
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.test.InstrumentationTestSuite](../android/test/InstrumentationTestSuite.md) |
+| ↳ | [android.test.InstrumentationTestSuite](InstrumentationTestSuite.md) |
 
 | **This class was deprecated in API level 24.**
 |
 | Use [InstrumentationRegistry](../android/support/test/InstrumentationRegistry.md) instead. New tests should be written using the [Android Testing Support Library](https://developer.android.com/tools/testing-support-library/index.html).
 
-A junit.framework.TestSuite that injects [android.app.Instrumentation](../android/app/Instrumentation.md) into [InstrumentationTestCase](../android/test/InstrumentationTestCase.md) before running them.
+A junit.framework.TestSuite that injects [android.app.Instrumentation](../android.app/Instrumentation.md) into [InstrumentationTestCase](InstrumentationTestCase.md) before running them.
 
 ## Summary
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [InstrumentationTestSuite](../android/test/InstrumentationTestSuite.md))`(`instr:` ` [Instrumentation](../android/app/Instrumentation.md)!`)` <br /> |
-| [InstrumentationTestSuite](../android/test/InstrumentationTestSuite.md))`(`theClass:` ` [Class](../java/lang/Class.md)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`, `instr:` ` [Instrumentation](../android/app/Instrumentation.md)!`)` <br /> |
-| [InstrumentationTestSuite](../android/test/InstrumentationTestSuite.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `instr:` ` [Instrumentation](../android/app/Instrumentation.md)!`)` <br /> |
+| [InstrumentationTestSuite](InstrumentationTestSuite.md))`(`instr:` ` [Instrumentation](../android.app/Instrumentation.md)!`)` <br /> |
+| [InstrumentationTestSuite](InstrumentationTestSuite.md))`(`theClass:` ` [Class](../java.lang/Class.md)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`, `instr:` ` [Instrumentation](../android.app/Instrumentation.md)!`)` <br /> |
+| [InstrumentationTestSuite](InstrumentationTestSuite.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `instr:` ` [Instrumentation](../android.app/Instrumentation.md)!`)` <br /> |
 
 | Public methods ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addTestSuite](../android/test/InstrumentationTestSuite.md))`(`testClass:` ` [Class](../java/lang/Class.md)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [runTest](../android/test/InstrumentationTestSuite.md))`(`test:` `Test!`, `result:` `TestResult!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addTestSuite](InstrumentationTestSuite.md))`(`testClass:` ` [Class](../java.lang/Class.md)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [runTest](InstrumentationTestSuite.md))`(`test:` `Test!`, `result:` `TestResult!`)` <br /> |
 
 ## Public constructors
 
@@ -47,7 +47,7 @@ InstrumentationTestSuite(instr: Instrumentation!)
 
 | Parameters ||
 |---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `instr` | [Instrumentation](../android/app/Instrumentation.md)!:The instrumentation that will be injected into each test before running it. |
+| `instr` | [Instrumentation](../android.app/Instrumentation.md)!:The instrumentation that will be injected into each test before running it. |
 
 ### InstrumentationTestSuite
 
@@ -61,8 +61,8 @@ InstrumentationTestSuite(
 
 | Parameters ||
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `theClass` | [Class](../java/lang/Class.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>!:Inspected for methods starting with 'test' |
-| `instr` | [Instrumentation](../android/app/Instrumentation.md)!:The instrumentation to inject into each test before running. |
+| `theClass` | [Class](../java.lang/Class.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>!:Inspected for methods starting with 'test' |
+| `instr` | [Instrumentation](../android.app/Instrumentation.md)!:The instrumentation to inject into each test before running. |
 
 ### InstrumentationTestSuite
 

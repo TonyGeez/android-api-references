@@ -9,7 +9,7 @@ class Domain
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.security.net.config.Domain](../android/security/net/config/Domain.md) |
+| ↳ | [android.security.net.config.Domain](Domain.md) |
 
 A network Domain, represented as a lower-case string for the hostname, and a boolean to define whether the subdomains are considered part of the same domain.
 

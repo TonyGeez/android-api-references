@@ -8,7 +8,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface InvocationHandler
 ```
 
-| [java.lang.reflect.InvocationHandler](../java/lang/reflect/InvocationHandler.md) |
+| [java.lang.reflect.InvocationHandler](InvocationHandler.md) |
 
 `InvocationHandler`is the interface implemented by the*invocation handler*of a proxy instance.
 
@@ -18,7 +18,7 @@ Each proxy instance has an associated invocation handler. When a method is invok
 
 | Public methods ||
 |-------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [invoke](../java/lang/reflect/InvocationHandler.md))`(`proxy:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `method:` ` [Method](../java/lang/reflect/Method.md)!`, `args:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`)` Processes a method invocation on a proxy instance and returns the result. |
+| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [invoke](InvocationHandler.md))`(`proxy:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `method:` ` [Method](Method.md)!`, `args:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`)` Processes a method invocation on a proxy instance and returns the result. |
 
 ## Public methods
 
@@ -39,7 +39,7 @@ Processes a method invocation on a proxy instance and returns the result. This m
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `proxy` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:the proxy instance that the method was invoked on |
-| `method` | [Method](../java/lang/reflect/Method.md)!:the`Method`instance corresponding to the interface method invoked on the proxy instance. The declaring class of the`Method`object will be the interface that the method was declared in, which may be a superinterface of the proxy interface that the proxy class inherits the method through. |
+| `method` | [Method](Method.md)!:the`Method`instance corresponding to the interface method invoked on the proxy instance. The declaring class of the`Method`object will be the interface that the method was declared in, which may be a superinterface of the proxy interface that the proxy class inherits the method through. |
 | `args` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>!:an array of objects containing the values of the arguments passed in the method invocation on the proxy instance, or`null`if interface method takes no arguments. Arguments of primitive types are wrapped in instances of the appropriate primitive wrapper class, such as`java.lang.Integer`or`java.lang.Boolean`. |
 | --- | --- |
 
@@ -49,8 +49,8 @@ Processes a method invocation on a proxy instance and returns the result. This m
 
 | Exceptions ||
 |-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.Throwable` | the exception to throw from the method invocation on the proxy instance. The exception's type must be assignable either to any of the exception types declared in the`throws`clause of the interface method or to the unchecked exception types`java.lang.RuntimeException`or`java.lang.Error`. If a checked exception is thrown by this method that is not assignable to any of the exception types declared in the`throws`clause of the interface method, then an [UndeclaredThrowableException](../java/lang/reflect/UndeclaredThrowableException.md) containing the exception that was thrown by this method will be thrown by the method invocation on the proxy instance. |
+| `java.lang.Throwable` | the exception to throw from the method invocation on the proxy instance. The exception's type must be assignable either to any of the exception types declared in the`throws`clause of the interface method or to the unchecked exception types`java.lang.RuntimeException`or`java.lang.Error`. If a checked exception is thrown by this method that is not assignable to any of the exception types declared in the`throws`clause of the interface method, then an [UndeclaredThrowableException](UndeclaredThrowableException.md) containing the exception that was thrown by this method will be thrown by the method invocation on the proxy instance. |
 
 **See Also**
 
-- [java.lang.reflect.UndeclaredThrowableException](../java/lang/reflect/UndeclaredThrowableException.md)
+- [java.lang.reflect.UndeclaredThrowableException](UndeclaredThrowableException.md)

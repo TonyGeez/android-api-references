@@ -10,9 +10,9 @@ abstract class Policy
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.Policy](../java/security/Policy.md) |
+| ↳ | [java.security.Policy](Policy.md) |
 
-Android doesn't support [SecurityManager](../java/lang/SecurityManager.md). Do not use this class.
+Android doesn't support [SecurityManager](../java.lang/SecurityManager.md). Do not use this class.
 
 ## Summary
 
@@ -22,30 +22,30 @@ Android doesn't support [SecurityManager](../java/lang/SecurityManager.md). Do n
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------|---|
-| [Policy](../java/security/Policy.md))`()` <br /> |
+| [Policy](Policy.md))`()` <br /> |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [Policy](../java/security/Policy.md)! | [getInstance](../java/security/Policy.md))`(`type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `params:` ` [Policy.Parameters](../java/security/Policy.Parameters.md)!`)` <br /> |
-| openstatic [Policy](../java/security/Policy.md)! | [getInstance](../java/security/Policy.md))`(`type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `params:` ` [Policy.Parameters](../java/security/Policy.Parameters.md)!`, `provider:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
-| openstatic [Policy](../java/security/Policy.md)! | [getInstance](../java/security/Policy.md))`(`type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `params:` ` [Policy.Parameters](../java/security/Policy.Parameters.md)!`, `provider:` ` [Provider](../java/security/Provider.md)!`)` <br /> |
+| openstatic [Policy](Policy.md)! | [getInstance](Policy.md))`(`type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `params:` ` [Policy.Parameters](../java/security/Policy.Parameters.md)!`)` <br /> |
+| openstatic [Policy](Policy.md)! | [getInstance](Policy.md))`(`type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `params:` ` [Policy.Parameters](../java/security/Policy.Parameters.md)!`, `provider:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| openstatic [Policy](Policy.md)! | [getInstance](Policy.md))`(`type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `params:` ` [Policy.Parameters](../java/security/Policy.Parameters.md)!`, `provider:` ` [Provider](Provider.md)!`)` <br /> |
 | --- | --- |
-| open [Policy.Parameters](../java/security/Policy.Parameters.md)! | [getParameters](../java/security/Policy.md))`()` <br /> |
-| open [PermissionCollection](../java/security/PermissionCollection.md)! | [getPermissions](../java/security/Policy.md))`(`codesource:` ` [CodeSource](../java/security/CodeSource.md)!`)` <br /> |
-| open [PermissionCollection](../java/security/PermissionCollection.md)! | [getPermissions](../java/security/Policy.md))`(`domain:` ` [ProtectionDomain](../java/security/ProtectionDomain.md)!`)` <br /> |
+| open [Policy.Parameters](../java/security/Policy.Parameters.md)! | [getParameters](Policy.md))`()` <br /> |
+| open [PermissionCollection](PermissionCollection.md)! | [getPermissions](Policy.md))`(`codesource:` ` [CodeSource](CodeSource.md)!`)` <br /> |
+| open [PermissionCollection](PermissionCollection.md)! | [getPermissions](Policy.md))`(`domain:` ` [ProtectionDomain](ProtectionDomain.md)!`)` <br /> |
 | --- | --- |
-| openstatic [Policy](../java/security/Policy.md)! | [getPolicy](../java/security/Policy.md))`()` <br /> |
-| open [Provider](../java/security/Provider.md)! | [getProvider](../java/security/Policy.md))`()` <br /> |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getType](../java/security/Policy.md))`()` <br /> |
+| openstatic [Policy](Policy.md)! | [getPolicy](Policy.md))`()` <br /> |
+| open [Provider](Provider.md)! | [getProvider](Policy.md))`()` <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getType](Policy.md))`()` <br /> |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [implies](../java/security/Policy.md))`(`domain:` ` [ProtectionDomain](../java/security/ProtectionDomain.md)!`, `permission:` ` [Permission](../java/security/Permission.md)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [refresh](../java/security/Policy.md))`()` <br /> |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPolicy](../java/security/Policy.md))`(`p:` ` [Policy](../java/security/Policy.md)!`)` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [implies](Policy.md))`(`domain:` ` [ProtectionDomain](ProtectionDomain.md)!`, `permission:` ` [Permission](Permission.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [refresh](Policy.md))`()` <br /> |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPolicy](Policy.md))`(`p:` ` [Policy](Policy.md)!`)` <br /> |
 | --- | --- |
 
 | Properties ||
 |------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [PermissionCollection](../java/security/PermissionCollection.md)! | [UNSUPPORTED_EMPTY_COLLECTION](../java/security/Policy.md) <br /> |
+| static [PermissionCollection](PermissionCollection.md)! | [UNSUPPORTED_EMPTY_COLLECTION](Policy.md) <br /> |
 
 ## Public constructors
 

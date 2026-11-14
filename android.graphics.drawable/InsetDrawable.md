@@ -2,7 +2,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # InsetDrawable
 
-Kotlin | [Java](../android/graphics/drawable/InsetDrawable.md)
+Kotlin | [Java](InsetDrawable.md)
 | --- | --- |
 
 ```
@@ -11,9 +11,9 @@ open class InsetDrawable : DrawableWrapper
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.graphics.drawable.Drawable](../android/graphics/drawable/Drawable.md) |||
-| | ↳ | [android.graphics.drawable.DrawableWrapper](../android/graphics/drawable/DrawableWrapper.md) ||
-| | | ↳ | [android.graphics.drawable.InsetDrawable](../android/graphics/drawable/InsetDrawable.md) |
+| ↳ | [android.graphics.drawable.Drawable](Drawable.md) |||
+| | ↳ | [android.graphics.drawable.DrawableWrapper](DrawableWrapper.md) ||
+| | | ↳ | [android.graphics.drawable.InsetDrawable](InsetDrawable.md) |
 | --- | --- | --- | --- |
 
 A Drawable that insets another Drawable by a specified distance or fraction of the content bounds. This is used when a View needs a background that is smaller than the View's actual bounds.
@@ -28,13 +28,13 @@ The inset values are added to the padding of the view. For instance, if a view h
 
 | XML attributes ||
 |---|---|
-| [`android:drawable`](../android/graphics/drawable/InsetDrawable.md) | Reference to a drawable resource to use for the frame. |
-| [`android:insetBottom`](../android/graphics/drawable/InsetDrawable.md) | |
-| [`android:insetLeft`](../android/graphics/drawable/InsetDrawable.md) | |
+| [`android:drawable`](InsetDrawable.md) | Reference to a drawable resource to use for the frame. |
+| [`android:insetBottom`](InsetDrawable.md) | |
+| [`android:insetLeft`](InsetDrawable.md) | |
 | --- | --- |
-| [`android:insetRight`](../android/graphics/drawable/InsetDrawable.md) | |
-| [`android:insetTop`](../android/graphics/drawable/InsetDrawable.md) | |
-| [`android:visible`](../android/graphics/drawable/InsetDrawable.md) | Provides initial visibility state of the drawable; the default value is false. |
+| [`android:insetRight`](InsetDrawable.md) | |
+| [`android:insetTop`](InsetDrawable.md) | |
+| [`android:visible`](InsetDrawable.md) | Provides initial visibility state of the drawable; the default value is false. |
 | --- | --- |
 
 | Public constructors ||
@@ -51,7 +51,7 @@ The inset values are added to the padding of the view. For instance, if a view h
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/InsetDrawable#getIntrinsicWidth()()` Returns the drawable's intrinsic width. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/InsetDrawable#getOpacity()()` Return the opacity/transparency of this Drawable. |
-| open [Insets](../android/graphics/Insets.md) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/InsetDrawable#getOpticalInsets()()` Return in insets the layout insets suggested by this Drawable for use with alignment operations during layout. |
+| open [Insets](../android.graphics/Insets.md) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/InsetDrawable#getOpticalInsets()()` Return in insets the layout insets suggested by this Drawable for use with alignment operations during layout. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/InsetDrawable#getOutline(android.graphics.Outline)(outline: https://developer.android.com/reference/kotlin/android/graphics/Outline.html#)` Called to get the drawable to populate the Outline that defines its drawing area. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/InsetDrawable#getPadding(android.graphics.Rect)(padding: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)` Returns in `padding` the insets for this drawable. |
@@ -126,7 +126,7 @@ Creates a new inset drawable with the specified inset.
 
 | Parameters ||
 |---|---|
-| `drawable` | [Drawable](../android/graphics/drawable/Drawable.md)?: The drawable to inset. This value may be `null`. |
+| `drawable` | [Drawable](Drawable.md)?: The drawable to inset. This value may be `null`. |
 | `inset` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): Inset in fraction (range: \[0, 1)) of the inset content bounds. |
 
 ### InsetDrawable
@@ -146,7 +146,7 @@ Creates a new inset drawable with the specified insets in fraction of the view b
 
 | Parameters ||
 |---|---|
-| `drawable` | [Drawable](../android/graphics/drawable/Drawable.md)?: The drawable to inset. This value may be `null`. |
+| `drawable` | [Drawable](Drawable.md)?: The drawable to inset. This value may be `null`. |
 | `insetLeftFraction` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): Left inset in fraction (range: \[0, 1)) of the inset content bounds. |
 | `insetTopFraction` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): Top inset in fraction (range: \[0, 1)) of the inset content bounds. |
 | --- | --- |
@@ -167,7 +167,7 @@ Creates a new inset drawable with the specified inset.
 
 | Parameters ||
 |---|---|
-| `drawable` | [Drawable](../android/graphics/drawable/Drawable.md)?: The drawable to inset. This value may be `null`. |
+| `drawable` | [Drawable](Drawable.md)?: The drawable to inset. This value may be `null`. |
 | `inset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Inset in pixels around the drawable. |
 
 ### InsetDrawable
@@ -187,7 +187,7 @@ Creates a new inset drawable with the specified insets in pixels.
 
 | Parameters ||
 |---|---|
-| `drawable` | [Drawable](../android/graphics/drawable/Drawable.md)?: The drawable to inset. This value may be `null`. |
+| `drawable` | [Drawable](Drawable.md)?: The drawable to inset. This value may be `null`. |
 | `insetLeft` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Left inset in pixels. |
 | `insetTop` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Top inset in pixels. |
 | --- | --- |
@@ -296,7 +296,7 @@ The default behavior defines the outline to be the bounding rectangle of 0 alpha
 
 | Parameters ||
 |---|---|
-| `outline` | [Outline](../android/graphics/Outline.md): This value cannot be `null`. |
+| `outline` | [Outline](../android.graphics/Outline.md): This value cannot be `null`. |
 
 ### getPadding
 
@@ -312,7 +312,7 @@ The returned padding is the sum of the wrapped drawable's padding and the insets
 
 | Parameters ||
 |---|---|
-| `padding` | [Rect](../android/graphics/Rect.md): The Rect to receive the padding. |
+| `padding` | [Rect](../android.graphics/Rect.md): The Rect to receive the padding. |
 
 | Return ||
 |---|---|
@@ -335,9 +335,9 @@ Inflate this Drawable from an XML resource optionally styled by a theme. This ca
 
 | Parameters ||
 |---|---|
-| `r` | [Resources](../android/content/res/Resources.md): This value cannot be `null`. |
-| `parser` | [XmlPullParser](../org/xmlpull/v1/XmlPullParser.md): This value cannot be `null`. |
-| `attrs` | [AttributeSet](../android/util/AttributeSet.md): This value cannot be `null`. |
+| `r` | [Resources](../android.content.res/Resources.md): This value cannot be `null`. |
+| `parser` | [XmlPullParser](../org.xmlpull.v1/XmlPullParser.md): This value cannot be `null`. |
+| `attrs` | [AttributeSet](../android.util/AttributeSet.md): This value cannot be `null`. |
 | --- | --- |
 | `theme` | [Resources.Theme](../android/content/res/Resources.Theme.md)?: This value may be `null`. |
 
@@ -360,4 +360,4 @@ Override this in your subclass to change appearance if you vary based on the bou
 
 | Parameters ||
 |---|---|
-| `bounds` | [Rect](../android/graphics/Rect.md): This value cannot be `null`. |
+| `bounds` | [Rect](../android.graphics/Rect.md): This value cannot be `null`. |

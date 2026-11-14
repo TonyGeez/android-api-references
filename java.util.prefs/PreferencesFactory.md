@@ -8,9 +8,9 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface PreferencesFactory
 ```
 
-| [java.util.prefs.PreferencesFactory](../java/util/prefs/PreferencesFactory.md) |
+| [java.util.prefs.PreferencesFactory](PreferencesFactory.md) |
 
-A factory object that generates Preferences objects. Providers of new [Preferences](../java/util/prefs/Preferences.md) implementations should provide corresponding PreferencesFactory implementations so that the new Preferences implementation can be installed in place of the platform-specific default implementation.
+A factory object that generates Preferences objects. Providers of new [Preferences](Preferences.md) implementations should provide corresponding PreferencesFactory implementations so that the new Preferences implementation can be installed in place of the platform-specific default implementation.
 
 **This class is for Preferences implementers only. Normal users of the Preferences facility should have no need to consult this documentation.**
 
@@ -18,8 +18,8 @@ A factory object that generates Preferences objects. Providers of new [Preferenc
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Preferences](../java/util/prefs/Preferences.md)! | [systemRoot](../java/util/prefs/PreferencesFactory.md))`()` Returns the system root preference node. |
-| abstract [Preferences](../java/util/prefs/Preferences.md)! | [userRoot](../java/util/prefs/PreferencesFactory.md))`()` Returns the user root preference node corresponding to the calling user. |
+| abstract [Preferences](Preferences.md)! | [systemRoot](PreferencesFactory.md))`()` Returns the system root preference node. |
+| abstract [Preferences](Preferences.md)! | [userRoot](PreferencesFactory.md))`()` Returns the user root preference node corresponding to the calling user. |
 
 ## Public methods
 
@@ -35,7 +35,7 @@ Returns the system root preference node. (Multiple calls on this method will ret
 
 | Return ||
 |--------------------------------------------------------------------------------------------|---------------------------------|
-| [Preferences](../java/util/prefs/Preferences.md)! | the system root preference node |
+| [Preferences](Preferences.md)! | the system root preference node |
 
 ### userRoot
 
@@ -49,4 +49,4 @@ Returns the user root preference node corresponding to the calling user. In a se
 
 | Return ||
 |--------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| [Preferences](../java/util/prefs/Preferences.md)! | the user root preference node corresponding to the calling user |
+| [Preferences](Preferences.md)! | the user root preference node corresponding to the calling user |

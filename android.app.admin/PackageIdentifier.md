@@ -8,7 +8,7 @@ class PackageIdentifier
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.admin.PackageIdentifier](../android/app/admin/PackageIdentifier.md) |
+| ↳ | [android.app.admin.PackageIdentifier](PackageIdentifier.md) |
 
 Identifies a package on the current device.
 

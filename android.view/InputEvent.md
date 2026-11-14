@@ -4,7 +4,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 
 # InputEvent
 
-Kotlin| [Java](../android/view/InputEvent.md) 
+Kotlin| [Java](InputEvent.md) 
 | --- | --- |
 
 ```
@@ -13,9 +13,9 @@ abstract class InputEvent : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.InputEvent](../android/view/InputEvent.md) |
+| ↳ | [android.view.InputEvent](InputEvent.md) |
 
-| Known Direct Subclasses [KeyEvent](../android/view/KeyEvent.md), [MotionEvent](../android/view/MotionEvent.md) |----------------------------------------------------------------------------------------|------------------------------------------------------------------------| | [KeyEvent](../android/view/KeyEvent.md) | Object used to report key and button events. | | [MotionEvent](../android/view/MotionEvent.md) | Object used to report movement (mouse, pen, finger, trackball) events. | |
+| Known Direct Subclasses [KeyEvent](KeyEvent.md), [MotionEvent](MotionEvent.md) |----------------------------------------------------------------------------------------|------------------------------------------------------------------------| | [KeyEvent](KeyEvent.md) | Object used to report key and button events. | | [MotionEvent](MotionEvent.md) | Object used to report movement (mouse, pen, finger, trackball) events. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Common base class for input events.
@@ -24,26 +24,26 @@ Common base class for input events.
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android.os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android.os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android.os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/view/InputEvent.md))`()` <br /> |
-| [InputDevice](../android/view/InputDevice.md)! | [getDevice](../android/view/InputEvent.md))`()` Gets the device that this event came from. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDeviceId](../android/view/InputEvent.md))`()` Gets the id for the device that this event came from. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](InputEvent.md))`()` <br /> |
+| [InputDevice](InputDevice.md)! | [getDevice](InputEvent.md))`()` Gets the device that this event came from. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDeviceId](InputEvent.md))`()` Gets the id for the device that this event came from. |
 | --- | --- |
-| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getEventTime](../android/view/InputEvent.md))`()` Retrieve the time this event occurred, in the [android.os.SystemClock#uptimeMillis](../android/os/SystemClock.md))time base. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSource](../android/view/InputEvent.md))`()` Gets the source of the event. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFromSource](../android/view/InputEvent.md))`(`source:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Determines whether the event is from the given source. |
+| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getEventTime](InputEvent.md))`()` Retrieve the time this event occurred, in the [android.os.SystemClock#uptimeMillis](../android.os/SystemClock.md))time base. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSource](InputEvent.md))`()` Gets the source of the event. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFromSource](InputEvent.md))`(`source:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Determines whether the event is from the given source. |
 | --- | --- |
 
 | Inherited functions ||
 |---|---|
-| From class [Parcelable](../android/os/Parcelable.md) |------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/os/Parcelable.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> Flatten this object in to a Parcel. <br /> | ||
+| From class [Parcelable](../android.os/Parcelable.md) |------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android.os/Parcelable.md))`(`dest:` ` [Parcel](../android.os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> Flatten this object in to a Parcel. <br /> | ||
 
 | Properties ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [InputEvent](../android/view/InputEvent.md)!\> | [CREATOR](../android/view/InputEvent.md) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [InputEvent](InputEvent.md)!\> | [CREATOR](InputEvent.md) <br /> |
 
 ## Public methods
 
@@ -57,7 +57,7 @@ open fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) |
 
 ### getDevice
 
@@ -71,7 +71,7 @@ Gets the device that this event came from.
 
 | Return ||
 |-----------------------------------------------------------------------------------------|---------------------------------|
-| [InputDevice](../android/view/InputDevice.md)! | The device, or null if unknown. |
+| [InputDevice](InputDevice.md)! | The device, or null if unknown. |
 
 ### getDeviceId
 
@@ -89,7 +89,7 @@ Gets the id for the device that this event came from. An id of zero indicates th
 
 **See Also**
 
-- [android.view.InputDevice#getDevice](../android/view/InputDevice.md)) 
+- [android.view.InputDevice#getDevice](InputDevice.md)) 
 
 ### getEventTime
 
@@ -99,11 +99,11 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 abstract fun getEventTime(): Long
 ```
 
-Retrieve the time this event occurred, in the [android.os.SystemClock#uptimeMillis](../android/os/SystemClock.md))time base.
+Retrieve the time this event occurred, in the [android.os.SystemClock#uptimeMillis](../android.os/SystemClock.md))time base.
 
 | Return ||
 |------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | Returns the time this event occurred, in the [android.os.SystemClock#uptimeMillis](../android/os/SystemClock.md))time base. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | Returns the time this event occurred, in the [android.os.SystemClock#uptimeMillis](../android.os/SystemClock.md))time base. |
 
 ### getSource
 
@@ -117,11 +117,11 @@ Gets the source of the event.
 
 | Return ||
 |----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The event source or [InputDevice.SOURCE_UNKNOWN](../android/view/InputDevice.md) if unknown. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The event source or [InputDevice.SOURCE_UNKNOWN](InputDevice.md) if unknown. |
 
 **See Also**
 
-- [android.view.InputDevice#getSources](../android/view/InputDevice.md)) 
+- [android.view.InputDevice#getSources](InputDevice.md)) 
 
 ### isFromSource
 
@@ -135,7 +135,7 @@ Determines whether the event is from the given source.
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `source` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The input source to check against. This can be a specific device type, such as [InputDevice.SOURCE_TOUCH_NAVIGATION](../android/view/InputDevice.md), or a more generic device class, such as [InputDevice.SOURCE_CLASS_POINTER](../android/view/InputDevice.md). |
+| `source` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The input source to check against. This can be a specific device type, such as [InputDevice.SOURCE_TOUCH_NAVIGATION](InputDevice.md), or a more generic device class, such as [InputDevice.SOURCE_CLASS_POINTER](InputDevice.md). |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------|

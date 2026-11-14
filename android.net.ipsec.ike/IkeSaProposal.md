@@ -8,8 +8,8 @@ class IkeSaProposal : SaProposal
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.net.ipsec.ike.SaProposal](../android/net/ipsec/ike/SaProposal.md) ||
-| | ↳ | [android.net.ipsec.ike.IkeSaProposal](../android/net/ipsec/ike/IkeSaProposal.md) |
+| ↳ | [android.net.ipsec.ike.SaProposal](SaProposal.md) ||
+| | ↳ | [android.net.ipsec.ike.IkeSaProposal](IkeSaProposal.md) |
 
 IkeSaProposal represents a proposed configuration to negotiate an IKE SA.
 

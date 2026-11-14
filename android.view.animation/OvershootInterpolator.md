@@ -4,7 +4,7 @@ Added in [API level 4](https://developer.android.com/guide/topics/manifest/uses-
 
 # OvershootInterpolator
 
-Kotlin| [Java](../android/view/animation/OvershootInterpolator.md) 
+Kotlin| [Java](OvershootInterpolator.md) 
 | --- | --- |
 
 ```
@@ -13,8 +13,8 @@ open class OvershootInterpolator : BaseInterpolator
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.view.animation.BaseInterpolator](../android/view/animation/BaseInterpolator.md) ||
-| | ↳ | [android.view.animation.OvershootInterpolator](../android/view/animation/OvershootInterpolator.md) |
+| ↳ | [android.view.animation.BaseInterpolator](BaseInterpolator.md) ||
+| | ↳ | [android.view.animation.OvershootInterpolator](OvershootInterpolator.md) |
 
 An interpolator where the change flings forward and overshoots the last value then comes back.
 
@@ -22,13 +22,13 @@ An interpolator where the change flings forward and overshoots the last value th
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [OvershootInterpolator](../android/view/animation/OvershootInterpolator.md))`()` <br /> |
-| [OvershootInterpolator](../android/view/animation/OvershootInterpolator.md))`(`context:` ` [Context](../android/content/Context.md)!`, `attrs:` ` [AttributeSet](../android/util/AttributeSet.md)!`)` <br /> |
-| [OvershootInterpolator](../android/view/animation/OvershootInterpolator.md))`(`tension:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` <br /> |
+| [OvershootInterpolator](OvershootInterpolator.md))`()` <br /> |
+| [OvershootInterpolator](OvershootInterpolator.md))`(`context:` ` [Context](../android.content/Context.md)!`, `attrs:` ` [AttributeSet](../android.util/AttributeSet.md)!`)` <br /> |
+| [OvershootInterpolator](OvershootInterpolator.md))`(`tension:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` <br /> |
 
 | Public methods ||
 |------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getInterpolation](../android/view/animation/OvershootInterpolator.md))`(`t:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` <br /> |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getInterpolation](OvershootInterpolator.md))`(`t:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` <br /> |
 
 ## Public constructors
 

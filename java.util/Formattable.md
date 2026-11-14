@@ -6,7 +6,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface Formattable
 ```
 
-| [java.util.Formattable](../java/util/Formattable.md) |
+| [java.util.Formattable](Formattable.md) |
 
 The `Formattable` interface must be implemented by any class that needs to perform custom formatting using the `'s'` conversion specifier of `https://developer.android.com/reference/kotlin/java/util/Formatter`. This interface allows basic control for formatting arbitrary objects. For example, the following class prints out different representations of a stock's name depending on the flags and length constraints:
 
@@ -112,7 +112,7 @@ Formats the object using the provided `https://developer.android.com/reference/k
 
 | Parameters ||
 |---|---|
-| `formatter` | [Formatter](../java/util/Formatter.md)!: The `https://developer.android.com/reference/kotlin/java/util/Formatter`. Implementing classes may call `https://developer.android.com/reference/kotlin/java/util/Formatter#out()` or `https://developer.android.com/reference/kotlin/java/util/Formatter#locale()` to obtain the `https://developer.android.com/reference/kotlin/java/lang/Appendable.html#` or `https://developer.android.com/reference/kotlin/java/util/Locale` used by this `formatter` respectively. |
+| `formatter` | [Formatter](Formatter.md)!: The `https://developer.android.com/reference/kotlin/java/util/Formatter`. Implementing classes may call `https://developer.android.com/reference/kotlin/java/util/Formatter#out()` or `https://developer.android.com/reference/kotlin/java/util/Formatter#locale()` to obtain the `https://developer.android.com/reference/kotlin/java/lang/Appendable.html#` or `https://developer.android.com/reference/kotlin/java/util/Locale` used by this `formatter` respectively. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The flags modify the output format. The value is interpreted as a bitmask. Any combination of the following flags may be set: `https://developer.android.com/reference/kotlin/java/util/FormattableFlags#LEFT_JUSTIFY:kotlin.Int`, `https://developer.android.com/reference/kotlin/java/util/FormattableFlags#UPPERCASE:kotlin.Int`, and `https://developer.android.com/reference/kotlin/java/util/FormattableFlags#ALTERNATE:kotlin.Int`. If no flags are set, the default formatting of the implementing class will apply. |
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The minimum number of characters to be written to the output. If the length of the converted value is less than the `width` then the output will be padded by `' '` until the total number of characters equals width. The padding is at the beginning by default. If the `https://developer.android.com/reference/kotlin/java/util/FormattableFlags#LEFT_JUSTIFY:kotlin.Int` flag is set then the padding will be at the end. If `width` is `-1` then there is no minimum. |
 | --- | --- |
@@ -120,4 +120,4 @@ Formats the object using the provided `https://developer.android.com/reference/k
 
 | Exceptions ||
 |---|---|
-| `java.util.IllegalFormatException` | If any of the parameters are invalid. For specification of all possible formatting errors, see the [Details](../java/util/Formatter.md) section of the formatter class specification. |
+| `java.util.IllegalFormatException` | If any of the parameters are invalid. For specification of all possible formatting errors, see the [Details](Formatter.md) section of the formatter class specification. |

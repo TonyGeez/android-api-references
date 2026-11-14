@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # PorterDuffColorFilter
 
-Kotlin| [Java](../android/graphics/PorterDuffColorFilter.md) 
+Kotlin| [Java](PorterDuffColorFilter.md) 
 | --- | --- |
 
 ```
@@ -13,21 +13,21 @@ open class PorterDuffColorFilter : ColorFilter
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.graphics.ColorFilter](../android/graphics/ColorFilter.md) ||
-| | ↳ | [android.graphics.PorterDuffColorFilter](../android/graphics/PorterDuffColorFilter.md) |
+| ↳ | [android.graphics.ColorFilter](ColorFilter.md) ||
+| | ↳ | [android.graphics.PorterDuffColorFilter](PorterDuffColorFilter.md) |
 
-A color filter that can be used to tint the source pixels using a single color and a specific [Porter-Duff composite mode](../android/graphics/PorterDuff.md).
+A color filter that can be used to tint the source pixels using a single color and a specific [Porter-Duff composite mode](PorterDuff.md).
 
 ## Summary
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [PorterDuffColorFilter](../android/graphics/PorterDuffColorFilter.md))`(`color:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `mode:` ` [PorterDuff.Mode](../android/graphics/PorterDuff.Mode.md)`)` Create a color filter that uses the specified color and Porter-Duff mode. |
+| [PorterDuffColorFilter](PorterDuffColorFilter.md))`(`color:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `mode:` ` [PorterDuff.Mode](../android/graphics/PorterDuff.Mode.md)`)` Create a color filter that uses the specified color and Porter-Duff mode. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/graphics/PorterDuffColorFilter.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/graphics/PorterDuffColorFilter.md))`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](PorterDuffColorFilter.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](PorterDuffColorFilter.md))`()` <br /> |
 
 ## Public constructors
 
@@ -50,7 +50,7 @@ Create a color filter that uses the specified color and Porter-Duff mode.
 
 **See Also**
 
-- [android.graphics.Color](../android/graphics/Color.md)
+- [android.graphics.Color](Color.md)
 
 ## Public methods
 

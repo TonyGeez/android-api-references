@@ -4,16 +4,16 @@ Added in [API level 27](https://developer.android.com/guide/topics/manifest/uses
 
 # Validator
 
-Kotlin| [Java](../android/service/autofill/Validator.md) 
+Kotlin| [Java](Validator.md) 
 | --- | --- |
 
 ```
 interface Validator
 ```
 
-| [android.service.autofill.Validator](../android/service/autofill/Validator.md) |
+| [android.service.autofill.Validator](Validator.md) |
 
-| Known Direct Subclasses [LuhnChecksumValidator](../android/service/autofill/LuhnChecksumValidator.md), [RegexValidator](../android/service/autofill/RegexValidator.md) |------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------| | [LuhnChecksumValidator](../android/service/autofill/LuhnChecksumValidator.md) | Validator that returns`true`if the number created by concatenating all given fields pass a Luhn algorithm checksum. | | [RegexValidator](../android/service/autofill/RegexValidator.md) | Defines if a field is valid based on a regular expression (regex). | |
+| Known Direct Subclasses [LuhnChecksumValidator](LuhnChecksumValidator.md), [RegexValidator](RegexValidator.md) |------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------| | [LuhnChecksumValidator](LuhnChecksumValidator.md) | Validator that returns`true`if the number created by concatenating all given fields pass a Luhn algorithm checksum. | | [RegexValidator](RegexValidator.md) | Defines if a field is valid based on a regular expression (regex). | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Class used to define whether a condition is satisfied.

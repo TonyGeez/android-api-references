@@ -3,7 +3,7 @@ Deprecated in [API level 23](https://developer.android.com/guide/topics/manifest
 
 # KeyPairGeneratorSpec
 
-Kotlin | [Java](../android/security/KeyPairGeneratorSpec.md)
+Kotlin | [Java](KeyPairGeneratorSpec.md)
 | --- | --- |
 
 ```
@@ -12,7 +12,7 @@ class KeyPairGeneratorSpec : AlgorithmParameterSpec
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.security.KeyPairGeneratorSpec](../android/security/KeyPairGeneratorSpec.md) |
+| ↳ | [android.security.KeyPairGeneratorSpec](KeyPairGeneratorSpec.md) |
 
 | **This class was deprecated in API level 23.**
 |
@@ -34,17 +34,17 @@ The self-signed X.509 certificate may be replaced at a later time by a certifica
 
 | Public methods ||
 |---|---|
-| [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md) | `https://developer.android.com/reference/kotlin/android/security/KeyPairGeneratorSpec#getAlgorithmParameterSpec()()` Returns the `https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec.html#` that will be used for creation of the key pair. |
-| [Context](../android/content/Context.md)! | `https://developer.android.com/reference/kotlin/android/security/KeyPairGeneratorSpec#getContext()()` Gets the Android context used for operations with this instance. |
-| [Date](../java/util/Date.md) | `https://developer.android.com/reference/kotlin/android/security/KeyPairGeneratorSpec#getEndDate()()` Gets the end date to be used on the X. |
+| [AlgorithmParameterSpec](../java.security.spec/AlgorithmParameterSpec.md) | `https://developer.android.com/reference/kotlin/android/security/KeyPairGeneratorSpec#getAlgorithmParameterSpec()()` Returns the `https://developer.android.com/reference/kotlin/java/security/spec/AlgorithmParameterSpec.html#` that will be used for creation of the key pair. |
+| [Context](../android.content/Context.md)! | `https://developer.android.com/reference/kotlin/android/security/KeyPairGeneratorSpec#getContext()()` Gets the Android context used for operations with this instance. |
+| [Date](../java.util/Date.md) | `https://developer.android.com/reference/kotlin/android/security/KeyPairGeneratorSpec#getEndDate()()` Gets the end date to be used on the X. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/security/KeyPairGeneratorSpec#getKeySize()()` Returns the key size specified by this parameter. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/security/KeyPairGeneratorSpec#getKeyType()()` Returns the type of key pair (e.g., |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/security/KeyPairGeneratorSpec#getKeystoreAlias()()` Returns the alias that will be used in the `java.security.KeyStore` in conjunction with the `AndroidKeyStore`. |
 | --- | --- |
-| [BigInteger](../java/math/BigInteger.md) | `https://developer.android.com/reference/kotlin/android/security/KeyPairGeneratorSpec#getSerialNumber()()` Gets the serial number to be used on the X. |
-| [Date](../java/util/Date.md) | `https://developer.android.com/reference/kotlin/android/security/KeyPairGeneratorSpec#getStartDate()()` Gets the start date to be used on the X. |
-| [X500Principal](../javax/security/auth/x500/X500Principal.md) | `https://developer.android.com/reference/kotlin/android/security/KeyPairGeneratorSpec#getSubjectDN()()` Gets the subject distinguished name to be used on the X. |
+| [BigInteger](../java.math/BigInteger.md) | `https://developer.android.com/reference/kotlin/android/security/KeyPairGeneratorSpec#getSerialNumber()()` Gets the serial number to be used on the X. |
+| [Date](../java.util/Date.md) | `https://developer.android.com/reference/kotlin/android/security/KeyPairGeneratorSpec#getStartDate()()` Gets the start date to be used on the X. |
+| [X500Principal](../javax.security.auth.x500/X500Principal.md) | `https://developer.android.com/reference/kotlin/android/security/KeyPairGeneratorSpec#getSubjectDN()()` Gets the subject distinguished name to be used on the X. |
 | --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/security/KeyPairGeneratorSpec#isEncryptionRequired()()` Returns `true` if the key must be encrypted at rest. |
 

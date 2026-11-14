@@ -46,7 +46,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 static val ACCOUNT_NAME: String
 ```
 
-The account that was used to sync the entry to the device. If the account_type is not [ACCOUNT_TYPE_LOCAL](../android/provider/CalendarContract.md) then the name and type must match an account on the device or the calendar will be deleted.
+The account that was used to sync the entry to the device. If the account_type is not [ACCOUNT_TYPE_LOCAL](CalendarContract.md) then the name and type must match an account on the device or the calendar will be deleted.
 
 Type: TEXT 
 
@@ -60,7 +60,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 static val ACCOUNT_TYPE: String
 ```
 
-The type of the account that was used to sync the entry to the device. A type of [ACCOUNT_TYPE_LOCAL](../android/provider/CalendarContract.md) will keep this event form being deleted if there are no matching accounts on the device.
+The type of the account that was used to sync the entry to the device. A type of [ACCOUNT_TYPE_LOCAL](CalendarContract.md) will keep this event form being deleted if there are no matching accounts on the device.
 
 Type: TEXT 
 
@@ -130,7 +130,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 static val _SYNC_ID: String
 ```
 
-The unique ID for a row assigned by the sync source. NULL if the row has never been synced. This is used as a reference id for exceptions along with [BaseColumns._ID](../android/provider/BaseColumns.md).
+The unique ID for a row assigned by the sync source. NULL if the row has never been synced. This is used as a reference id for exceptions along with [BaseColumns._ID](BaseColumns.md).
 
 Type: TEXT 
 

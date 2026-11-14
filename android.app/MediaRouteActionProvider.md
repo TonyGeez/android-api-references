@@ -2,7 +2,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 
 # MediaRouteActionProvider
 
-Kotlin | [Java](../android/app/MediaRouteActionProvider.md)
+Kotlin | [Java](MediaRouteActionProvider.md)
 | --- | --- |
 
 ```
@@ -11,8 +11,8 @@ open class MediaRouteActionProvider : ActionProvider
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.view.ActionProvider](../android/view/ActionProvider.md) ||
-| | ↳ | [android.app.MediaRouteActionProvider](../android/app/MediaRouteActionProvider.md) |
+| ↳ | [android.view.ActionProvider](../android.view/ActionProvider.md) ||
+| | ↳ | [android.app.MediaRouteActionProvider](MediaRouteActionProvider.md) |
 
 The media route action provider displays a `https://developer.android.com/reference/kotlin/android/app/MediaRouteButton` in the application's `https://developer.android.com/reference/kotlin/android/app/ActionBar` to allow the user to select routes and to control the currently selected route.
 
@@ -29,8 +29,8 @@ Refer to `https://developer.android.com/reference/kotlin/android/app/MediaRouteB
 | Public methods ||
 |---|---|
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/MediaRouteActionProvider#isVisible()()` If `https://developer.android.com/reference/kotlin/android/view/ActionProvider.html#overridesItemVisibility()` returns true, the return value of this method will help determine the visibility of the `https://developer.android.com/reference/kotlin/android/view/MenuItem.html#` this ActionProvider is bound to. |
-| open [View](../android/view/View.md) | `https://developer.android.com/reference/kotlin/android/app/MediaRouteActionProvider#onCreateActionView()()` Factory method called by the Android framework to create new action views. |
-| open [View](../android/view/View.md) | `https://developer.android.com/reference/kotlin/android/app/MediaRouteActionProvider#onCreateActionView(android.view.MenuItem)(item: https://developer.android.com/reference/kotlin/android/view/MenuItem.html#)` Factory method called by the Android framework to create new action views. |
+| open [View](../android.view/View.md) | `https://developer.android.com/reference/kotlin/android/app/MediaRouteActionProvider#onCreateActionView()()` Factory method called by the Android framework to create new action views. |
+| open [View](../android.view/View.md) | `https://developer.android.com/reference/kotlin/android/app/MediaRouteActionProvider#onCreateActionView(android.view.MenuItem)(item: https://developer.android.com/reference/kotlin/android/view/MenuItem.html#)` Factory method called by the Android framework to create new action views. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/MediaRouteActionProvider#onPerformDefaultAction()()` Performs an optional default action. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/MediaRouteActionProvider#overridesItemVisibility()()` The result of this method determines whether or not `https://developer.android.com/reference/kotlin/android/view/ActionProvider.html#isVisible()` will be used by the `https://developer.android.com/reference/kotlin/android/view/MenuItem.html#` this ActionProvider is bound to help determine its visibility. |

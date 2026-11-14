@@ -8,11 +8,11 @@ open class CarrierMessagingClientService : Service
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](../android/content/Context.md) ||||
-| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) |||
-| | | ↳ | [android.app.Service](../android/app/Service.md) ||
+| ↳ | [android.content.Context](../android.content/Context.md) ||||
+| | ↳ | [android.content.ContextWrapper](../android.content/ContextWrapper.md) |||
+| | | ↳ | [android.app.Service](../android.app/Service.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.service.carrier.CarrierMessagingClientService](../android/service/carrier/CarrierMessagingClientService.md) |
+| | | | ↳ | [android.service.carrier.CarrierMessagingClientService](CarrierMessagingClientService.md) |
 
 If the default SMS app has a service that extends this class, the system always tries to bind it so that the process is always running, which allows the app to have a persistent connection to the server.
 
@@ -1073,7 +1073,7 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 
 | Public methods ||
 |---|---|
-| [IBinder](../android/os/IBinder.md) | `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingClientService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#?)` Return the communication channel to the service. |
+| [IBinder](../android.os/IBinder.md) | `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingClientService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#?)` Return the communication channel to the service. |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/app/Service.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/app/Service.html#attachBaseContext(android.content.Context)(newBase: https://developer.android.com/reference/kotlin/android/content/Context.html#!)`
 
@@ -2792,7 +2792,7 @@ Return the communication channel to the service. May return null if clients can 
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md)?: This value may be `null`. |
+| `intent` | [Intent](../android.content/Intent.md)?: This value may be `null`. |
 
 | Return ||
 |---|---|

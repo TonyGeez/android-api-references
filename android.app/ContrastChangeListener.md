@@ -13,7 +13,7 @@ interface ContrastChangeListener
 
 | [android.app.UiModeManager.ContrastChangeListener](../android/app/UiModeManager.ContrastChangeListener.md) |
 
-Listener for the UI contrast. To listen for changes to the UI contrast on the device, implement this interface and register it with the system by calling [addContrastChangeListener](../android/app/UiModeManager.md)).
+Listener for the UI contrast. To listen for changes to the UI contrast on the device, implement this interface and register it with the system by calling [addContrastChangeListener](UiModeManager.md)).
 
 ## Summary
 
@@ -35,4 +35,4 @@ Called when the color contrast enabled state changes.
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `contrast` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The color contrast as in [getContrast](../android/app/UiModeManager.md))Value is between -1.0f and 1.0f inclusive |
+| `contrast` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The color contrast as in [getContrast](UiModeManager.md))Value is between -1.0f and 1.0f inclusive |

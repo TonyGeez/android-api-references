@@ -4,7 +4,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 
 # Entity
 
-Kotlin| [Java](../android/content/Entity.md) 
+Kotlin| [Java](Entity.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class Entity
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.content.Entity](../android/content/Entity.md) |
+| ↳ | [android.content.Entity](Entity.md) |
 
 A representation of a item using ContentValues. It contains one top level ContentValue plus a collection of Uri, ContentValues tuples as subvalues. One example of its use is in Contacts, where the top level ContentValue contains the columns from the RawContacts table and the subvalues contain a ContentValues object for each row from the Data table that corresponds to that RawContact. The uri refers to the Data table uri for each row.
 
@@ -25,15 +25,15 @@ A representation of a item using ContentValues. It contains one top level Conten
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Entity](../android/content/Entity.md))`(`values:` ` [ContentValues](../android/content/ContentValues.md)!`)` <br /> |
+| [Entity](Entity.md))`(`values:` ` [ContentValues](ContentValues.md)!`)` <br /> |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addSubValue](../android/content/Entity.md))`(`uri:` ` [Uri](../android/net/Uri.md)!`, `values:` ` [ContentValues](../android/content/ContentValues.md)!`)` <br /> |
-| [ContentValues](../android/content/ContentValues.md)! | [getEntityValues](../android/content/Entity.md))`()` <br /> |
-| [ArrayList](../java/util/ArrayList.md)\< [Entity.NamedContentValues](../android/content/Entity.NamedContentValues.md)!\>! | [getSubValues](../android/content/Entity.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addSubValue](Entity.md))`(`uri:` ` [Uri](../android.net/Uri.md)!`, `values:` ` [ContentValues](ContentValues.md)!`)` <br /> |
+| [ContentValues](ContentValues.md)! | [getEntityValues](Entity.md))`()` <br /> |
+| [ArrayList](../java.util/ArrayList.md)\< [Entity.NamedContentValues](../android/content/Entity.NamedContentValues.md)!\>! | [getSubValues](Entity.md))`()` <br /> |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/content/Entity.md))`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](Entity.md))`()` <br /> |
 
 ## Public constructors
 

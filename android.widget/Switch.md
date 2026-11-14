@@ -8,18 +8,18 @@ open class Switch : CompoundButton
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
-| ↳ | [android.view.View](../android/view/View.md) |||||
-| | ↳ | [android.widget.TextView](../android/widget/TextView.md) ||||
-| | | ↳ | [android.widget.Button](../android/widget/Button.md) |||
+| ↳ | [android.view.View](../android.view/View.md) |||||
+| | ↳ | [android.widget.TextView](TextView.md) ||||
+| | | ↳ | [android.widget.Button](Button.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.widget.CompoundButton](../android/widget/CompoundButton.md) ||
-| | | | | ↳ | [android.widget.Switch](../android/widget/Switch.md) |
+| | | | ↳ | [android.widget.CompoundButton](CompoundButton.md) ||
+| | | | | ↳ | [android.widget.Switch](Switch.md) |
 
 A Switch is a two-state toggle widget. Users can drag the switch "thumb" back and forth to select either of two options or simply tap the switch to toggle between options.
 
 The `https://developer.android.com/reference/kotlin/android/widget/TextView#setText(kotlin.CharSequence)` property controls the text of the switch label. The `https://developer.android.com/reference/kotlin/android/widget/Switch#setTextOn(kotlin.CharSequence)` and `https://developer.android.com/reference/kotlin/android/widget/Switch#setTextOff(kotlin.CharSequence)` properties control the text of the thumb. The `https://developer.android.com/reference/kotlin/android/widget/TextView#setTextAppearance(kotlin.Int)` property and the related `https://developer.android.com/reference/kotlin/android/widget/TextView#setTypeface(android.graphics.Typeface)` methods control the typeface and style of the switch label. The `https://developer.android.com/reference/kotlin/android/widget/Switch#setSwitchTextAppearance(android.content.Context,%20kotlin.Int)` property and the related `https://developer.android.com/reference/kotlin/android/widget/Switch#setSwitchTypeface(android.graphics.Typeface)` methods control the typeface and style of the thumb text.
 
-**Note:** The thumb text is displayed only if the [`showText`](../android/widget/Switch.md) attribute is set to `true`. See also `https://developer.android.com/reference/kotlin/android/widget/Switch#setShowText(kotlin.Boolean)` and `https://developer.android.com/reference/kotlin/android/widget/Switch#getShowText()`.
+**Note:** The thumb text is displayed only if the [`showText`](Switch.md) attribute is set to `true`. See also `https://developer.android.com/reference/kotlin/android/widget/Switch#setShowText(kotlin.Boolean)` and `https://developer.android.com/reference/kotlin/android/widget/Switch#getShowText()`.
 
 androidx.appcompat.widget.SwitchCompat provides backward compatibility down to Android 4.0 (API level 14).
 
@@ -29,16 +29,16 @@ For more information, see the [Toggle Buttons](https://developer.android.com/gui
 
 | XML attributes ||
 |---|---|
-| [`android:switchMinWidth`](../android/widget/Switch.md) | Minimum width for the switch component. |
-| [`android:switchPadding`](../android/widget/Switch.md) | Minimum space between the switch and caption text. |
-| [`android:switchTextAppearance`](../android/widget/Switch.md) | TextAppearance style for text displayed on the switch thumb. |
+| [`android:switchMinWidth`](Switch.md) | Minimum width for the switch component. |
+| [`android:switchPadding`](Switch.md) | Minimum space between the switch and caption text. |
+| [`android:switchTextAppearance`](Switch.md) | TextAppearance style for text displayed on the switch thumb. |
 | --- | --- |
-| [`android:textOff`](../android/widget/Switch.md) | Text to use when the switch is in the unchecked/"off" state. |
-| [`android:textOn`](../android/widget/Switch.md) | Text to use when the switch is in the checked/"on" state. |
-| [`android:thumb`](../android/widget/Switch.md) | Drawable to use as the "thumb" that switches back and forth. |
+| [`android:textOff`](Switch.md) | Text to use when the switch is in the unchecked/"off" state. |
+| [`android:textOn`](Switch.md) | Text to use when the switch is in the checked/"on" state. |
+| [`android:thumb`](Switch.md) | Drawable to use as the "thumb" that switches back and forth. |
 | --- | --- |
-| [`android:thumbTextPadding`](../android/widget/Switch.md) | Amount of padding on either side of text within the switch thumb. |
-| [`android:track`](../android/widget/Switch.md) | Drawable to use as the "track" that the switch thumb slides within. |
+| [`android:thumbTextPadding`](Switch.md) | Amount of padding on either side of text within the switch thumb. |
+| [`android:track`](Switch.md) | Drawable to use as the "track" that the switch thumb slides within. |
 
 Inherited XML attributes From class `https://developer.android.com/reference/kotlin/android/widget/TextView` `https://developer.android.com/reference/kotlin/android/widget/TextView#attr_TextView` Whether undo should be allowed for editable text. Defaults to true.
 
@@ -1142,7 +1142,7 @@ Hint indicating that this view can be autofilled with a credit card expiration d
 
 It should be used when the credit card expiration date is represented by just one view; if it is represented by more than one (for example, one view for the month and another view for the year), then each of these views should use the hint specific for the unit (`https://developer.android.com/reference/kotlin/android/view/View.html#AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DAY:kotlin.String`, `https://developer.android.com/reference/kotlin/android/view/View.html#AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_MONTH:kotlin.String`, or `https://developer.android.com/reference/kotlin/android/view/View.html#AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_YEAR:kotlin.String`).
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DATE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DATE}`).
 
 When annotating a view with this hint, it's recommended to use a date autofill value to avoid ambiguity when the autofill service provides a value for it. To understand why a value can be ambiguous, consider "April of 2020", which could be represented as either of the following options:
 
@@ -1167,7 +1167,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card expiration day.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DAY}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DAY}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -1177,7 +1177,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card expiration month.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_MONTH}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_MONTH}`).
 
 When annotating a view with this hint, it's recommended to use a text autofill value whose value is the numerical representation of the month, starting on `1` to avoid ambiguity when the autofill service provides a value for it. To understand why a value can be ambiguous, consider "January", which could be represented as either of
 
@@ -1197,7 +1197,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card expiration year.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_YEAR}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_YEAR}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -1207,7 +1207,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card number.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_NUMBER}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_NUMBER}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -1217,7 +1217,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card security code.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_SECURITY_CODE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_SECURITY_CODE}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -1227,7 +1227,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with an email address.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_EMAIL_ADDRESS}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_EMAIL_ADDRESS}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -1237,7 +1237,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a user's real name.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_NAME}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_NAME}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -1247,7 +1247,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a password.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_PASSWORD}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_PASSWORD}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -1257,7 +1257,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a phone number.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_PHONE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_PHONE}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -1267,7 +1267,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a postal address.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_ADDRESS}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_ADDRESS}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -1277,7 +1277,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a postal code.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_CODE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_CODE}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -1287,7 +1287,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a username.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_USERNAME}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_USERNAME}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -1457,7 +1457,7 @@ Find views that render the specified text.
 
 This view wants keystrokes.
 
-Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android/view/View.md)
+Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android.view/View.md)
 
 <br />
 
@@ -1477,7 +1477,7 @@ View flag indicating whether `https://developer.android.com/reference/kotlin/and
 
 This view determines focusability automatically. This is the default.
 
-Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android/view/View.md)
+Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android.view/View.md)
 
 <br />
 
@@ -1519,7 +1519,7 @@ Use with `https://developer.android.com/reference/kotlin/android/view/View.html#
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/view/View.html#GONE:kotlin.Int`
 
-This view is invisible, and it doesn't take any space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android/view/View.md)
+This view is invisible, and it doesn't take any space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android.view/View.md)
 
 <br />
 
@@ -1615,7 +1615,7 @@ The view is important for content capture, but its children (if any) will not be
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/view/View.html#INVISIBLE:kotlin.Int`
 
-This view is invisible, but it still takes up space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android/view/View.md)
+This view is invisible, but it still takes up space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android.view/View.md)
 
 <br />
 
@@ -1709,7 +1709,7 @@ Bit of `https://developer.android.com/reference/kotlin/android/view/View.html#ge
 
 This view does not want keystrokes.
 
-Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android/view/View.md)
+Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android.view/View.md)
 
 <br />
 
@@ -2166,7 +2166,7 @@ The logging tag used by this class with android.util.Log.
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/view/View.html#VISIBLE:kotlin.Int`
 
-This view is visible. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android/view/View.md)
+This view is visible. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android.view/View.md)
 
 <br />
 
@@ -2211,17 +2211,17 @@ A special index used for `https://developer.android.com/reference/kotlin/android
 | --- | --- |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/widget/Switch#getTextOff()()` Returns the text displayed when the button is not in the checked state. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/widget/Switch#getTextOn()()` Returns the text displayed when the button is in the checked state. |
-| open [Drawable](../android/graphics/drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/widget/Switch#getThumbDrawable()()` Get the drawable used for the switch "thumb" - the piece that the user can physically touch and drag along the track. |
+| open [Drawable](../android.graphics.drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/widget/Switch#getThumbDrawable()()` Get the drawable used for the switch "thumb" - the piece that the user can physically touch and drag along the track. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Switch#getThumbTextPadding()()` Get the horizontal padding around the text drawn on the switch itself. |
-| open [BlendMode](../android/graphics/BlendMode.md)? | `https://developer.android.com/reference/kotlin/android/widget/Switch#getThumbTintBlendMode()()` <br /> |
-| open [ColorStateList](../android/content/res/ColorStateList.md)? | `https://developer.android.com/reference/kotlin/android/widget/Switch#getThumbTintList()()` <br /> |
+| open [BlendMode](../android.graphics/BlendMode.md)? | `https://developer.android.com/reference/kotlin/android/widget/Switch#getThumbTintBlendMode()()` <br /> |
+| open [ColorStateList](../android.content.res/ColorStateList.md)? | `https://developer.android.com/reference/kotlin/android/widget/Switch#getThumbTintList()()` <br /> |
 | --- | --- |
 | open [PorterDuff.Mode](../android/graphics/PorterDuff.Mode.md)? | `https://developer.android.com/reference/kotlin/android/widget/Switch#getThumbTintMode()()` <br /> |
-| open [Drawable](../android/graphics/drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/widget/Switch#getTrackDrawable()()` Get the drawable used for the track that the switch slides within. |
-| open [BlendMode](../android/graphics/BlendMode.md)? | `https://developer.android.com/reference/kotlin/android/widget/Switch#getTrackTintBlendMode()()` <br /> |
+| open [Drawable](../android.graphics.drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/widget/Switch#getTrackDrawable()()` Get the drawable used for the track that the switch slides within. |
+| open [BlendMode](../android.graphics/BlendMode.md)? | `https://developer.android.com/reference/kotlin/android/widget/Switch#getTrackTintBlendMode()()` <br /> |
 | --- | --- |
-| open [ColorStateList](../android/content/res/ColorStateList.md)? | `https://developer.android.com/reference/kotlin/android/widget/Switch#getTrackTintList()()` <br /> |
+| open [ColorStateList](../android.content.res/ColorStateList.md)? | `https://developer.android.com/reference/kotlin/android/widget/Switch#getTrackTintList()()` <br /> |
 | open [PorterDuff.Mode](../android/graphics/PorterDuff.Mode.md)? | `https://developer.android.com/reference/kotlin/android/widget/Switch#getTrackTintMode()()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/Switch#jumpDrawablesToCurrentState()()` Call `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#jumpToCurrentState()` on all Drawable objects associated with this view. |
 | --- | --- |
@@ -6568,7 +6568,7 @@ Sets the amount that the view is scaled in Y around the pivot point, as a propor
 
 Sets whether this View should be a focusable element for screen readers and include non-focusable Views from its subtree when providing feedback.
 
-Note: this is similar to using [`android:focusable`, but does not impact input focus behavior.](../android/view/View.md)
+Note: this is similar to using [`android:focusable`, but does not impact input focus behavior.](../android.view/View.md)
 
 <br />
 
@@ -9824,7 +9824,7 @@ Construct a new Switch with default styling.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md)!: The Context that will determine this widget's theming. |
+| `context` | [Context](../android.content/Context.md)!: The Context that will determine this widget's theming. |
 
 ### Switch
 
@@ -9840,8 +9840,8 @@ Construct a new Switch with default styling, overriding specific style attribute
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md)!: The Context that will determine this widget's theming. |
-| `attrs` | [AttributeSet](../android/util/AttributeSet.md)!: Specification of attributes that should deviate from default styling. |
+| `context` | [Context](../android.content/Context.md)!: The Context that will determine this widget's theming. |
+| `attrs` | [AttributeSet](../android.util/AttributeSet.md)!: Specification of attributes that should deviate from default styling. |
 
 ### Switch
 
@@ -9858,8 +9858,8 @@ Construct a new Switch with a default style determined by the given theme attrib
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md)!: The Context that will determine this widget's theming. |
-| `attrs` | [AttributeSet](../android/util/AttributeSet.md)!: Specification of attributes that should deviate from the default styling. |
+| `context` | [Context](../android.content/Context.md)!: The Context that will determine this widget's theming. |
+| `attrs` | [AttributeSet](../android.util/AttributeSet.md)!: Specification of attributes that should deviate from the default styling. |
 | `defStyleAttr` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): An attribute in the current theme that contains a reference to a style resource that supplies default values for the view. Can be 0 to not look for defaults. |
 | --- | --- |
 
@@ -9879,8 +9879,8 @@ Construct a new Switch with a default style determined by the given theme attrib
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md)!: The Context that will determine this widget's theming. |
-| `attrs` | [AttributeSet](../android/util/AttributeSet.md)!: Specification of attributes that should deviate from the default styling. |
+| `context` | [Context](../android.content/Context.md)!: The Context that will determine this widget's theming. |
+| `attrs` | [AttributeSet](../android.util/AttributeSet.md)!: Specification of attributes that should deviate from the default styling. |
 | `defStyleAttr` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): An attribute in the current theme that contains a reference to a style resource that supplies default values for the view. Can be 0 to not look for defaults. |
 | --- | --- |
 | `defStyleRes` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): A resource identifier of a style resource that supplies default values for the view, used only if defStyleAttr is 0 or can not be found in the theme. Can be 0 to not look for defaults. |
@@ -10364,7 +10364,7 @@ Set the drawable used for the switch "thumb" - the piece that the user can physi
 
 | Parameters ||
 |---|---|
-| `thumb` | [Drawable](../android/graphics/drawable/Drawable.md)!: Thumb drawable |
+| `thumb` | [Drawable](../android.graphics.drawable/Drawable.md)!: Thumb drawable |
 
 ### setThumbIcon
 
@@ -10378,7 +10378,7 @@ Set the drawable used for the switch "thumb" - the piece that the user can physi
 
 | Parameters ||
 |---|---|
-| `icon` | [Icon](../android/graphics/drawable/Icon.md)?: an Icon holding the desired thumb, or `null` to clear the thumb |
+| `icon` | [Icon](../android.graphics.drawable/Icon.md)?: an Icon holding the desired thumb, or `null` to clear the thumb |
 
 ### setThumbResource
 
@@ -10420,7 +10420,7 @@ Specifies the blending mode used to apply the tint specified by `https://develop
 
 | Parameters ||
 |---|---|
-| `blendMode` | [BlendMode](../android/graphics/BlendMode.md)?: the blending mode used to apply the tint, may be `null` to clear tint |
+| `blendMode` | [BlendMode](../android.graphics/BlendMode.md)?: the blending mode used to apply the tint, may be `null` to clear tint |
 
 **See Also**
 
@@ -10441,7 +10441,7 @@ Subsequent calls to `https://developer.android.com/reference/kotlin/android/widg
 
 | Parameters ||
 |---|---|
-| `tint` | [ColorStateList](../android/content/res/ColorStateList.md)?: the tint to apply, may be `null` to clear tint |
+| `tint` | [ColorStateList](../android.content.res/ColorStateList.md)?: the tint to apply, may be `null` to clear tint |
 
 **See Also**
 
@@ -10479,7 +10479,7 @@ Set the drawable used for the track that the switch slides within.
 
 | Parameters ||
 |---|---|
-| `track` | [Drawable](../android/graphics/drawable/Drawable.md)!: Track drawable |
+| `track` | [Drawable](../android.graphics.drawable/Drawable.md)!: Track drawable |
 
 ### setTrackIcon
 
@@ -10493,7 +10493,7 @@ Set the drawable used for the track that the switch slides within to the specifi
 
 | Parameters ||
 |---|---|
-| `icon` | [Icon](../android/graphics/drawable/Icon.md)?: an Icon holding the desired track, or `null` to clear the track |
+| `icon` | [Icon](../android.graphics.drawable/Icon.md)?: an Icon holding the desired track, or `null` to clear the track |
 
 ### setTrackResource
 
@@ -10521,7 +10521,7 @@ Specifies the blending mode used to apply the tint specified by `https://develop
 
 | Parameters ||
 |---|---|
-| `blendMode` | [BlendMode](../android/graphics/BlendMode.md)?: the blending mode used to apply the tint, may be `null` to clear tint |
+| `blendMode` | [BlendMode](../android.graphics/BlendMode.md)?: the blending mode used to apply the tint, may be `null` to clear tint |
 
 **See Also**
 
@@ -10542,7 +10542,7 @@ Subsequent calls to `https://developer.android.com/reference/kotlin/android/widg
 
 | Parameters ||
 |---|---|
-| `tint` | [ColorStateList](../android/content/res/ColorStateList.md)?: the tint to apply, may be `null` to clear tint |
+| `tint` | [ColorStateList](../android.content.res/ColorStateList.md)?: the tint to apply, may be `null` to clear tint |
 
 **See Also**
 
@@ -10625,7 +10625,7 @@ Implement this to do your drawing.
 
 | Parameters ||
 |---|---|
-| `canvas` | [Canvas](../android/graphics/Canvas.md): the canvas on which the background will be drawn. This value cannot be `null`. |
+| `canvas` | [Canvas](../android.graphics/Canvas.md): the canvas on which the background will be drawn. This value cannot be `null`. |
 
 ### onLayout
 
@@ -10667,7 +10667,7 @@ If you override this method you *must* call through to the superclass implementa
 
 | Parameters ||
 |---|---|
-| `who` | [Drawable](../android/graphics/drawable/Drawable.md): This value cannot be `null`. |
+| `who` | [Drawable](../android.graphics.drawable/Drawable.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|

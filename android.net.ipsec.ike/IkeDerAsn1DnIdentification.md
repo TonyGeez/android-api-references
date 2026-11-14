@@ -8,8 +8,8 @@ class IkeDerAsn1DnIdentification : IkeIdentification
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.net.ipsec.ike.IkeIdentification](../android/net/ipsec/ike/IkeIdentification.md) ||
-| | ↳ | [android.net.ipsec.ike.IkeDerAsn1DnIdentification](../android/net/ipsec/ike/IkeDerAsn1DnIdentification.md) |
+| ↳ | [android.net.ipsec.ike.IkeIdentification](IkeIdentification.md) ||
+| | ↳ | [android.net.ipsec.ike.IkeDerAsn1DnIdentification](IkeDerAsn1DnIdentification.md) |
 
 This class represents an IKE entity ID based on a DER encoded ASN.1 X.500 Distinguished Name.
 
@@ -28,7 +28,7 @@ An example might be "CN=ike.test.android.net, O=Android, C=US".
 
 | Properties ||
 |---|---|
-| [X500Principal](../javax/security/auth/x500/X500Principal.md) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeDerAsn1DnIdentification#derAsn1Dn:javax.security.auth.x500.X500Principal` The ASN. |
+| [X500Principal](../javax.security.auth.x500/X500Principal.md) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeDerAsn1DnIdentification#derAsn1Dn:javax.security.auth.x500.X500Principal` The ASN. |
 
 ## Public constructors
 
@@ -44,7 +44,7 @@ Construct an instance of IkeDerAsn1DnIdentification with an ASN.1 X.500 Distingu
 
 | Parameters ||
 |---|---|
-| `derAsn1Dn` | [X500Principal](../javax/security/auth/x500/X500Principal.md): the ASN.1 X.500 Distinguished Name. This value cannot be `null`. |
+| `derAsn1Dn` | [X500Principal](../javax.security.auth.x500/X500Principal.md): the ASN.1 X.500 Distinguished Name. This value cannot be `null`. |
 
 ## Public methods
 

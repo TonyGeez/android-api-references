@@ -3,7 +3,7 @@ Deprecated in [API level 34](https://developer.android.com/guide/topics/manifest
 
 # WindowAnimationFrameStats
 
-Kotlin | [Java](../android/view/WindowAnimationFrameStats.md)
+Kotlin | [Java](WindowAnimationFrameStats.md)
 | --- | --- |
 
 ```
@@ -12,8 +12,8 @@ class WindowAnimationFrameStats : FrameStats, Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.view.FrameStats](../android/view/FrameStats.md) ||
-| | ↳ | [android.view.WindowAnimationFrameStats](../android/view/WindowAnimationFrameStats.md) |
+| ↳ | [android.view.FrameStats](FrameStats.md) ||
+| | ↳ | [android.view.WindowAnimationFrameStats](WindowAnimationFrameStats.md) |
 
 | **This class was deprecated in API level 34.**
 |
@@ -43,7 +43,7 @@ The key idea is that in order to provide a smooth user experience the system sho
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [WindowAnimationFrameStats](../android/view/WindowAnimationFrameStats.md)!\> | `https://developer.android.com/reference/kotlin/android/view/WindowAnimationFrameStats#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [WindowAnimationFrameStats](WindowAnimationFrameStats.md)!\> | `https://developer.android.com/reference/kotlin/android/view/WindowAnimationFrameStats#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public methods
 

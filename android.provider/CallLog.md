@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # CallLog
 
-Kotlin| [Java](../android/provider/CallLog.md) 
+Kotlin| [Java](CallLog.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class CallLog
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.provider.CallLog](../android/provider/CallLog.md) |
+| ↳ | [android.provider.CallLog](CallLog.md) |
 
 The CallLog provider contains information about placed and received calls.
 
@@ -26,15 +26,15 @@ The CallLog provider contains information about placed and received calls.
 
 | Constants ||
 |----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [AUTHORITY](../android/provider/CallLog.md) <br /> |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [AUTHORITY](CallLog.md) <br /> |
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------|---|
-| [CallLog](../android/provider/CallLog.md))`()` <br /> |
+| [CallLog](CallLog.md))`()` <br /> |
 
 | Properties ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Uri](../android/net/Uri.md)! | [CONTENT_URI](../android/provider/CallLog.md) The content:// style URL for this provider |
+| static [Uri](../android.net/Uri.md)! | [CONTENT_URI](CallLog.md) The content:// style URL for this provider |
 
 ## Constants
 

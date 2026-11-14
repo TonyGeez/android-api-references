@@ -5,7 +5,7 @@ Deprecated in [API level 28](https://developer.android.com/guide/topics/manifest
 
 # FragmentController
 
-Kotlin| [Java](../android/app/FragmentController.md) 
+Kotlin| [Java](FragmentController.md) 
 | --- | --- |
 
 ```
@@ -14,73 +14,73 @@ open class FragmentController
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.FragmentController](../android/app/FragmentController.md) |
+| ↳ | [android.app.FragmentController](FragmentController.md) |
 
 | **This class was deprecated in API level 28.**
 |
 | Use the [Support Library](https://developer.android.com/tools/extras/support-library.html) androidx.fragment.app.FragmentController
 
-Provides integration points with a [FragmentManager](../android/app/FragmentManager.md) for a fragment host.
+Provides integration points with a [FragmentManager](FragmentManager.md) for a fragment host.
 
-It is the responsibility of the host to take care of the Fragment's lifecycle. The methods provided by [FragmentController](../android/app/FragmentController.md) are for that purpose.
+It is the responsibility of the host to take care of the Fragment's lifecycle. The methods provided by [FragmentController](FragmentController.md) are for that purpose.
 
 ## Summary
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [attachHost](../android/app/FragmentController.md))`(`parent:` ` [Fragment](../android/app/Fragment.md)!`)` Attaches the host to the FragmentManager for this controller. |
-| static [FragmentController](../android/app/FragmentController.md)! | [createController](../android/app/FragmentController.md))`(`callbacks:` ` [FragmentHostCallback](../android/app/FragmentHostCallback.md)<*>!`)` Returns a [FragmentController](../android/app/FragmentController.md). |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dispatchActivityCreated](../android/app/FragmentController.md))`()` Moves all Fragments managed by the controller's FragmentManager into the activity created state. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [attachHost](FragmentController.md))`(`parent:` ` [Fragment](Fragment.md)!`)` Attaches the host to the FragmentManager for this controller. |
+| static [FragmentController](FragmentController.md)! | [createController](FragmentController.md))`(`callbacks:` ` [FragmentHostCallback](FragmentHostCallback.md)<*>!`)` Returns a [FragmentController](FragmentController.md). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dispatchActivityCreated](FragmentController.md))`()` Moves all Fragments managed by the controller's FragmentManager into the activity created state. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dispatchConfigurationChanged](../android/app/FragmentController.md))`(`newConfig:` ` [Configuration](../android/content/res/Configuration.md)!`)` Lets all Fragments managed by the controller's FragmentManager know a configuration change occurred. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [dispatchContextItemSelected](../android/app/FragmentController.md))`(`item:` ` [MenuItem](../android/view/MenuItem.md)!`)` Sends a context item selection event to the Fragments managed by the controller's FragmentManager. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dispatchCreate](../android/app/FragmentController.md))`()` Moves all Fragments managed by the controller's FragmentManager into the create state. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dispatchConfigurationChanged](FragmentController.md))`(`newConfig:` ` [Configuration](../android.content.res/Configuration.md)!`)` Lets all Fragments managed by the controller's FragmentManager know a configuration change occurred. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [dispatchContextItemSelected](FragmentController.md))`(`item:` ` [MenuItem](../android.view/MenuItem.md)!`)` Sends a context item selection event to the Fragments managed by the controller's FragmentManager. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dispatchCreate](FragmentController.md))`()` Moves all Fragments managed by the controller's FragmentManager into the create state. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [dispatchCreateOptionsMenu](../android/app/FragmentController.md))`(`menu:` ` [Menu](../android/view/Menu.md)!`, `inflater:` ` [MenuInflater](../android/view/MenuInflater.md)!`)` Lets all Fragments managed by the controller's FragmentManager know they should create an options menu. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dispatchDestroy](../android/app/FragmentController.md))`()` Moves all Fragments managed by the controller's FragmentManager into the destroy state. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dispatchDestroyView](../android/app/FragmentController.md))`()` Moves all Fragments managed by the controller's FragmentManager into the destroy view state. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [dispatchCreateOptionsMenu](FragmentController.md))`(`menu:` ` [Menu](../android.view/Menu.md)!`, `inflater:` ` [MenuInflater](../android.view/MenuInflater.md)!`)` Lets all Fragments managed by the controller's FragmentManager know they should create an options menu. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dispatchDestroy](FragmentController.md))`()` Moves all Fragments managed by the controller's FragmentManager into the destroy state. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dispatchDestroyView](FragmentController.md))`()` Moves all Fragments managed by the controller's FragmentManager into the destroy view state. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dispatchLowMemory](../android/app/FragmentController.md))`()` Lets all Fragments managed by the controller's FragmentManager know the device is in a low memory condition. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dispatchMultiWindowModeChanged](../android/app/FragmentController.md))`(`isInMultiWindowMode:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Lets all Fragments managed by the controller's FragmentManager know the multi-window mode of the activity changed. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dispatchMultiWindowModeChanged](../android/app/FragmentController.md))`(`isInMultiWindowMode:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `newConfig:` ` [Configuration](../android/content/res/Configuration.md)!`)` Lets all Fragments managed by the controller's FragmentManager know the multi-window mode of the activity changed. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dispatchLowMemory](FragmentController.md))`()` Lets all Fragments managed by the controller's FragmentManager know the device is in a low memory condition. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dispatchMultiWindowModeChanged](FragmentController.md))`(`isInMultiWindowMode:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Lets all Fragments managed by the controller's FragmentManager know the multi-window mode of the activity changed. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dispatchMultiWindowModeChanged](FragmentController.md))`(`isInMultiWindowMode:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `newConfig:` ` [Configuration](../android.content.res/Configuration.md)!`)` Lets all Fragments managed by the controller's FragmentManager know the multi-window mode of the activity changed. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [dispatchOptionsItemSelected](../android/app/FragmentController.md))`(`item:` ` [MenuItem](../android/view/MenuItem.md)!`)` Sends an option item selection event to the Fragments managed by the controller's FragmentManager. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dispatchOptionsMenuClosed](../android/app/FragmentController.md))`(`menu:` ` [Menu](../android/view/Menu.md)!`)` Lets all Fragments managed by the controller's FragmentManager know their options menu has closed. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dispatchPause](../android/app/FragmentController.md))`()` Moves all Fragments managed by the controller's FragmentManager into the pause state. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [dispatchOptionsItemSelected](FragmentController.md))`(`item:` ` [MenuItem](../android.view/MenuItem.md)!`)` Sends an option item selection event to the Fragments managed by the controller's FragmentManager. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dispatchOptionsMenuClosed](FragmentController.md))`(`menu:` ` [Menu](../android.view/Menu.md)!`)` Lets all Fragments managed by the controller's FragmentManager know their options menu has closed. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dispatchPause](FragmentController.md))`()` Moves all Fragments managed by the controller's FragmentManager into the pause state. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dispatchPictureInPictureModeChanged](../android/app/FragmentController.md))`(`isInPictureInPictureMode:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Lets all Fragments managed by the controller's FragmentManager know the picture-in-picture mode of the activity changed. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dispatchPictureInPictureModeChanged](../android/app/FragmentController.md))`(`isInPictureInPictureMode:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `newConfig:` ` [Configuration](../android/content/res/Configuration.md)!`)` Lets all Fragments managed by the controller's FragmentManager know the picture-in-picture mode of the activity changed. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [dispatchPrepareOptionsMenu](../android/app/FragmentController.md))`(`menu:` ` [Menu](../android/view/Menu.md)!`)` Lets all Fragments managed by the controller's FragmentManager know they should prepare their options menu for display. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dispatchPictureInPictureModeChanged](FragmentController.md))`(`isInPictureInPictureMode:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Lets all Fragments managed by the controller's FragmentManager know the picture-in-picture mode of the activity changed. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dispatchPictureInPictureModeChanged](FragmentController.md))`(`isInPictureInPictureMode:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `newConfig:` ` [Configuration](../android.content.res/Configuration.md)!`)` Lets all Fragments managed by the controller's FragmentManager know the picture-in-picture mode of the activity changed. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [dispatchPrepareOptionsMenu](FragmentController.md))`(`menu:` ` [Menu](../android.view/Menu.md)!`)` Lets all Fragments managed by the controller's FragmentManager know they should prepare their options menu for display. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dispatchResume](../android/app/FragmentController.md))`()` Moves all Fragments managed by the controller's FragmentManager into the resume state. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dispatchStart](../android/app/FragmentController.md))`()` Moves all Fragments managed by the controller's FragmentManager into the start state. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dispatchStop](../android/app/FragmentController.md))`()` Moves all Fragments managed by the controller's FragmentManager into the stop state. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dispatchResume](FragmentController.md))`()` Moves all Fragments managed by the controller's FragmentManager into the resume state. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dispatchStart](FragmentController.md))`()` Moves all Fragments managed by the controller's FragmentManager into the start state. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dispatchStop](FragmentController.md))`()` Moves all Fragments managed by the controller's FragmentManager into the stop state. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dispatchTrimMemory](../android/app/FragmentController.md))`(`level:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Lets all Fragments managed by the controller's FragmentManager know they should trim their memory usage. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [doLoaderDestroy](../android/app/FragmentController.md))`()` Destroys the loaders and, if their state is not being retained, removes them. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [doLoaderStart](../android/app/FragmentController.md))`()` Starts the loaders. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dispatchTrimMemory](FragmentController.md))`(`level:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Lets all Fragments managed by the controller's FragmentManager know they should trim their memory usage. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [doLoaderDestroy](FragmentController.md))`()` Destroys the loaders and, if their state is not being retained, removes them. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [doLoaderStart](FragmentController.md))`()` Starts the loaders. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [doLoaderStop](../android/app/FragmentController.md))`(`retain:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Stops the loaders, optionally retaining their state. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dumpLoaders](../android/app/FragmentController.md))`(`prefix:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `fd:` ` [FileDescriptor](../java/io/FileDescriptor.md)!`, `writer:` ` [PrintWriter](../java/io/PrintWriter.md)!`, `args:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Dumps the current state of the loaders. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [execPendingActions](../android/app/FragmentController.md))`()` Execute any pending actions for the Fragments managed by the controller's FragmentManager. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [doLoaderStop](FragmentController.md))`(`retain:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Stops the loaders, optionally retaining their state. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dumpLoaders](FragmentController.md))`(`prefix:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `fd:` ` [FileDescriptor](../java.io/FileDescriptor.md)!`, `writer:` ` [PrintWriter](../java.io/PrintWriter.md)!`, `args:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Dumps the current state of the loaders. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [execPendingActions](FragmentController.md))`()` Execute any pending actions for the Fragments managed by the controller's FragmentManager. |
 | --- | --- |
-| open [Fragment](../android/app/Fragment.md)? | [findFragmentByWho](../android/app/FragmentController.md))`(`who:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a fragment with the given identifier. |
-| open [FragmentManager](../android/app/FragmentManager.md)! | [getFragmentManager](../android/app/FragmentController.md))`()` Returns a [FragmentManager](../android/app/FragmentManager.md) for this controller. |
-| open [LoaderManager](../android/app/LoaderManager.md)! | [getLoaderManager](../android/app/FragmentController.md))`()` Returns a [LoaderManager](../android/app/LoaderManager.md). |
+| open [Fragment](Fragment.md)? | [findFragmentByWho](FragmentController.md))`(`who:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a fragment with the given identifier. |
+| open [FragmentManager](FragmentManager.md)! | [getFragmentManager](FragmentController.md))`()` Returns a [FragmentManager](FragmentManager.md) for this controller. |
+| open [LoaderManager](LoaderManager.md)! | [getLoaderManager](FragmentController.md))`()` Returns a [LoaderManager](LoaderManager.md). |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [noteStateNotSaved](../android/app/FragmentController.md))`()` Marks the fragment state as unsaved. |
-| open [View](../android/view/View.md)! | [onCreateView](../android/app/FragmentController.md))`(`parent:` ` [View](../android/view/View.md)!`, `name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `context:` ` [Context](../android/content/Context.md)!`, `attrs:` ` [AttributeSet](../android/util/AttributeSet.md)!`)` Instantiates a Fragment's view. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reportLoaderStart](../android/app/FragmentController.md))`()` Lets the loaders know the host is ready to receive notifications. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [noteStateNotSaved](FragmentController.md))`()` Marks the fragment state as unsaved. |
+| open [View](../android.view/View.md)! | [onCreateView](FragmentController.md))`(`parent:` ` [View](../android.view/View.md)!`, `name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `context:` ` [Context](../android.content/Context.md)!`, `attrs:` ` [AttributeSet](../android.util/AttributeSet.md)!`)` Instantiates a Fragment's view. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reportLoaderStart](FragmentController.md))`()` Lets the loaders know the host is ready to receive notifications. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [restoreAllState](../android/app/FragmentController.md))`(`state:` ` [Parcelable](../android/os/Parcelable.md)!`, `nonConfig:` ` [FragmentManagerNonConfig](../android/app/FragmentManagerNonConfig.md)!`)` Restores the saved state for all Fragments. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [restoreAllState](../android/app/FragmentController.md))`(`state:` ` [Parcelable](../android/os/Parcelable.md)!`, `nonConfigList:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Fragment](../android/app/Fragment.md)!>!`)` Restores the saved state for all Fragments. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [restoreLoaderNonConfig](../android/app/FragmentController.md))`(`loaderManagers:` ` [ArrayMap](../android/util/ArrayMap.md)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [LoaderManager](../android/app/LoaderManager.md)!>!`)` Restores the saved state for all LoaderManagers. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [restoreAllState](FragmentController.md))`(`state:` ` [Parcelable](../android.os/Parcelable.md)!`, `nonConfig:` ` [FragmentManagerNonConfig](FragmentManagerNonConfig.md)!`)` Restores the saved state for all Fragments. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [restoreAllState](FragmentController.md))`(`state:` ` [Parcelable](../android.os/Parcelable.md)!`, `nonConfigList:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Fragment](Fragment.md)!>!`)` Restores the saved state for all Fragments. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [restoreLoaderNonConfig](FragmentController.md))`(`loaderManagers:` ` [ArrayMap](../android.util/ArrayMap.md)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [LoaderManager](LoaderManager.md)!>!`)` Restores the saved state for all LoaderManagers. |
 | --- | --- |
-| open [ArrayMap](../android/util/ArrayMap.md)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [LoaderManager](../android/app/LoaderManager.md)!\>! | [retainLoaderNonConfig](../android/app/FragmentController.md))`()` Returns a list of LoaderManagers that have opted to retain their instance across configuration changes. |
-| open [FragmentManagerNonConfig](../android/app/FragmentManagerNonConfig.md)! | [retainNestedNonConfig](../android/app/FragmentController.md))`()` Returns a nested tree of Fragments that have opted to retain their instance across configuration changes. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Fragment](../android/app/Fragment.md)!\>! | [retainNonConfig](../android/app/FragmentController.md))`()` Returns a list of Fragments that have opted to retain their instance across configuration changes. |
+| open [ArrayMap](../android.util/ArrayMap.md)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [LoaderManager](LoaderManager.md)!\>! | [retainLoaderNonConfig](FragmentController.md))`()` Returns a list of LoaderManagers that have opted to retain their instance across configuration changes. |
+| open [FragmentManagerNonConfig](FragmentManagerNonConfig.md)! | [retainNestedNonConfig](FragmentController.md))`()` Returns a nested tree of Fragments that have opted to retain their instance across configuration changes. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Fragment](Fragment.md)!\>! | [retainNonConfig](FragmentController.md))`()` Returns a list of Fragments that have opted to retain their instance across configuration changes. |
 | --- | --- |
-| open [Parcelable](../android/os/Parcelable.md)! | [saveAllState](../android/app/FragmentController.md))`()` Saves the state for all Fragments. |
+| open [Parcelable](../android.os/Parcelable.md)! | [saveAllState](FragmentController.md))`()` Saves the state for all Fragments. |
 
 ## Public methods
 
@@ -106,7 +106,7 @@ static fun createController(callbacks: FragmentHostCallback<*>!): FragmentContr
 
 **Deprecated:** *Deprecated in Java.*
 
-Returns a [FragmentController](../android/app/FragmentController.md). 
+Returns a [FragmentController](FragmentController.md). 
 
 ### dispatchActivityCreated
 
@@ -123,7 +123,7 @@ Moves all Fragments managed by the controller's FragmentManager into the activit
 Call when Fragments should be informed their host has been created. 
 **See Also**
 
-- [android.app.Fragment#onActivityCreated(Bundle)](../android/app/Fragment.md)) 
+- [android.app.Fragment#onActivityCreated(Bundle)](Fragment.md)) 
 
 ### dispatchConfigurationChanged
 
@@ -140,7 +140,7 @@ Lets all Fragments managed by the controller's FragmentManager know a configurat
 Call when there is a configuration change. 
 **See Also**
 
-- [android.app.Fragment#onConfigurationChanged(Configuration)](../android/app/Fragment.md)) 
+- [android.app.Fragment#onConfigurationChanged(Configuration)](Fragment.md)) 
 
 ### dispatchContextItemSelected
 
@@ -162,7 +162,7 @@ Call immediately after an options menu item has been selected
 
 **See Also**
 
-- [android.app.Fragment#onContextItemSelected(MenuItem)](../android/app/Fragment.md)) 
+- [android.app.Fragment#onContextItemSelected(MenuItem)](Fragment.md)) 
 
 ### dispatchCreate
 
@@ -179,7 +179,7 @@ Moves all Fragments managed by the controller's FragmentManager into the create 
 Call when Fragments should be created. 
 **See Also**
 
-- [android.app.Fragment#onCreate(Bundle)](../android/app/Fragment.md)) 
+- [android.app.Fragment#onCreate(Bundle)](Fragment.md)) 
 
 ### dispatchCreateOptionsMenu
 
@@ -204,7 +204,7 @@ Call when the Fragment should create an options menu.
 
 **See Also**
 
-- [android.app.Fragment#onCreateOptionsMenu(Menu, MenuInflater)](../android/app/Fragment.md)) 
+- [android.app.Fragment#onCreateOptionsMenu(Menu, MenuInflater)](Fragment.md)) 
 
 ### dispatchDestroy
 
@@ -221,7 +221,7 @@ Moves all Fragments managed by the controller's FragmentManager into the destroy
 Call when Fragments should be destroyed. 
 **See Also**
 
-- [android.app.Fragment#onDestroy()](../android/app/Fragment.md)) 
+- [android.app.Fragment#onDestroy()](Fragment.md)) 
 
 ### dispatchDestroyView
 
@@ -238,7 +238,7 @@ Moves all Fragments managed by the controller's FragmentManager into the destroy
 Call when the Fragment's views should be destroyed. 
 **See Also**
 
-- [android.app.Fragment#onDestroyView()](../android/app/Fragment.md)) 
+- [android.app.Fragment#onDestroyView()](Fragment.md)) 
 
 ### dispatchLowMemory
 
@@ -255,7 +255,7 @@ Lets all Fragments managed by the controller's FragmentManager know the device i
 Call when the device is low on memory and Fragment's should trim their memory usage. 
 **See Also**
 
-- [android.app.Fragment#onLowMemory()](../android/app/Fragment.md)) 
+- [android.app.Fragment#onLowMemory()](Fragment.md)) 
 
 ### dispatchMultiWindowModeChanged
 
@@ -266,7 +266,7 @@ Deprecated in [API level 26](https://developer.android.com/guide/topics/manifest
 open fun dispatchMultiWindowModeChanged(isInMultiWindowMode: Boolean): Unit
 ```
 
-**Deprecated:** *use [dispatchMultiWindowModeChanged(boolean,android.content.res.Configuration)](../android/app/FragmentController.md))*
+**Deprecated:** *use [dispatchMultiWindowModeChanged(boolean,android.content.res.Configuration)](FragmentController.md))*
 
 Lets all Fragments managed by the controller's FragmentManager know the multi-window mode of the activity changed.
 
@@ -312,7 +312,7 @@ Call immediately after an options menu item has been selected
 
 **See Also**
 
-- [android.app.Fragment#onOptionsItemSelected(MenuItem)](../android/app/Fragment.md)) 
+- [android.app.Fragment#onOptionsItemSelected(MenuItem)](Fragment.md)) 
 
 ### dispatchOptionsMenuClosed
 
@@ -329,7 +329,7 @@ Lets all Fragments managed by the controller's FragmentManager know their option
 Call immediately after closing the Fragment's options menu. 
 **See Also**
 
-- [android.app.Fragment#onOptionsMenuClosed(Menu)](../android/app/Fragment.md)) 
+- [android.app.Fragment#onOptionsMenuClosed(Menu)](Fragment.md)) 
 
 ### dispatchPause
 
@@ -346,7 +346,7 @@ Moves all Fragments managed by the controller's FragmentManager into the pause s
 Call when Fragments should be paused. 
 **See Also**
 
-- [android.app.Fragment#onPause()](../android/app/Fragment.md)) 
+- [android.app.Fragment#onPause()](Fragment.md)) 
 
 ### dispatchPictureInPictureModeChanged
 
@@ -357,7 +357,7 @@ Deprecated in [API level 26](https://developer.android.com/guide/topics/manifest
 open fun dispatchPictureInPictureModeChanged(isInPictureInPictureMode: Boolean): Unit
 ```
 
-**Deprecated:** *use [dispatchPictureInPictureModeChanged(boolean,android.content.res.Configuration)](../android/app/FragmentController.md))*
+**Deprecated:** *use [dispatchPictureInPictureModeChanged(boolean,android.content.res.Configuration)](FragmentController.md))*
 
 Lets all Fragments managed by the controller's FragmentManager know the picture-in-picture mode of the activity changed.
 
@@ -403,7 +403,7 @@ Call immediately before displaying the Fragment's options menu.
 
 **See Also**
 
-- [android.app.Fragment#onPrepareOptionsMenu(Menu)](../android/app/Fragment.md)) 
+- [android.app.Fragment#onPrepareOptionsMenu(Menu)](Fragment.md)) 
 
 ### dispatchResume
 
@@ -420,7 +420,7 @@ Moves all Fragments managed by the controller's FragmentManager into the resume 
 Call when Fragments should be resumed. 
 **See Also**
 
-- [android.app.Fragment#onResume()](../android/app/Fragment.md)) 
+- [android.app.Fragment#onResume()](Fragment.md)) 
 
 ### dispatchStart
 
@@ -437,7 +437,7 @@ Moves all Fragments managed by the controller's FragmentManager into the start s
 Call when Fragments should be started. 
 **See Also**
 
-- [android.app.Fragment#onStart()](../android/app/Fragment.md)) 
+- [android.app.Fragment#onStart()](Fragment.md)) 
 
 ### dispatchStop
 
@@ -454,7 +454,7 @@ Moves all Fragments managed by the controller's FragmentManager into the stop st
 Call when Fragments should be stopped. 
 **See Also**
 
-- [android.app.Fragment#onStop()](../android/app/Fragment.md)) 
+- [android.app.Fragment#onStop()](Fragment.md)) 
 
 ### dispatchTrimMemory
 
@@ -471,7 +471,7 @@ Lets all Fragments managed by the controller's FragmentManager know they should 
 Call when the Fragment can release allocated memory \[such as if the Fragment is in the background\]. 
 **See Also**
 
-- [android.app.Fragment#onTrimMemory(int)](../android/app/Fragment.md)) 
+- [android.app.Fragment#onTrimMemory(int)](Fragment.md)) 
 
 ### doLoaderDestroy
 
@@ -562,7 +562,7 @@ Returns a fragment with the given identifier.
 
 | Return ||
 |----------------------------------------------------------------------------------|--------------------------|
-| [Fragment](../android/app/Fragment.md)? | This value may be`null`. |
+| [Fragment](Fragment.md)? | This value may be`null`. |
 
 ### getFragmentManager
 
@@ -574,7 +574,7 @@ open fun getFragmentManager(): FragmentManager!
 
 **Deprecated:** *Deprecated in Java.*
 
-Returns a [FragmentManager](../android/app/FragmentManager.md) for this controller. 
+Returns a [FragmentManager](FragmentManager.md) for this controller. 
 
 ### getLoaderManager
 
@@ -586,7 +586,7 @@ open fun getLoaderManager(): LoaderManager!
 
 **Deprecated:** *Deprecated in Java.*
 
-Returns a [LoaderManager](../android/app/LoaderManager.md). 
+Returns a [LoaderManager](LoaderManager.md). 
 
 ### noteStateNotSaved
 
@@ -619,15 +619,15 @@ Instantiates a Fragment's view.
 
 | Parameters ||
 |-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `parent` | [View](../android/view/View.md)!:The parent that the created view will be placed in;*note that this may be null*. |
+| `parent` | [View](../android.view/View.md)!:The parent that the created view will be placed in;*note that this may be null*. |
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Tag name to be inflated. |
-| `context` | [Context](../android/content/Context.md)!:The context the view is being created in. |
+| `context` | [Context](../android.content/Context.md)!:The context the view is being created in. |
 | --- | --- |
-| `attrs` | [AttributeSet](../android/util/AttributeSet.md)!:Inflation attributes as specified in XML file. |
+| `attrs` | [AttributeSet](../android.util/AttributeSet.md)!:Inflation attributes as specified in XML file. |
 
 | Return ||
 |---------------------------------------------------------------------------------|-----------------------------|
-| [View](../android/view/View.md)! | view the newly created view |
+| [View](../android.view/View.md)! | view the newly created view |
 
 ### reportLoaderStart
 
@@ -672,7 +672,7 @@ open fun restoreAllState(
 ): Unit
 ```
 
-**Deprecated:** *use [restoreAllState(android.os.Parcelable,android.app.FragmentManagerNonConfig)](../android/app/FragmentController.md))*
+**Deprecated:** *use [restoreAllState(android.os.Parcelable,android.app.FragmentManagerNonConfig)](FragmentController.md))*
 
 Restores the saved state for all Fragments. The given Fragment list are Fragment instances retained across configuration changes. 
 **See Also**
@@ -728,7 +728,7 @@ Deprecated in [API level 24](https://developer.android.com/guide/topics/manifest
 open fun retainNonConfig(): MutableList<Fragment!>!
 ```
 
-**Deprecated:** *use [retainNestedNonConfig()](../android/app/FragmentController.md))to also track retained nested child fragments*
+**Deprecated:** *use [retainNestedNonConfig()](FragmentController.md))to also track retained nested child fragments*
 
 Returns a list of Fragments that have opted to retain their instance across configuration changes. 
 

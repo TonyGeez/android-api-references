@@ -5,7 +5,7 @@ Deprecated in [API level 24](https://developer.android.com/guide/topics/manifest
 
 # InstrumentationTestCase
 
-Kotlin| [Java](../android/test/InstrumentationTestCase.md) 
+Kotlin| [Java](InstrumentationTestCase.md) 
 | --- | --- |
 
 ```
@@ -14,45 +14,45 @@ open class InstrumentationTestCase
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.test.InstrumentationTestCase](../android/test/InstrumentationTestCase.md) |
+| ↳ | [android.test.InstrumentationTestCase](InstrumentationTestCase.md) |
 
-| Known Direct Subclasses [ActivityTestCase](../android/test/ActivityTestCase.md), [ProviderTestCase](../android/test/ProviderTestCase.md), [SingleLaunchActivityTestCase](../android/test/SingleLaunchActivityTestCase.md), [SyncBaseInstrumentation](../android/test/SyncBaseInstrumentation.md) |--------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [ActivityTestCase](../android/test/ActivityTestCase.md) | This is common code used to support Activity test cases. | | [ProviderTestCase](../android/test/ProviderTestCase.md) | If you would like to test a single content provider with an [InstrumentationTestCase](../android/test/InstrumentationTestCase.md), this provides some of the boiler plate in [setUp](../android/test/ProviderTestCase.md))and [tearDown](../android/test/ProviderTestCase.md)). | | [SingleLaunchActivityTestCase](../android/test/SingleLaunchActivityTestCase.md) | If you would like to test a single activity with an [android.test.InstrumentationTestCase](../android/test/InstrumentationTestCase.md), this provides some of the boiler plate to launch and finish the activity in [setUp](../android/test/SingleLaunchActivityTestCase.md))and [tearDown](../android/test/SingleLaunchActivityTestCase.md)). | | [SyncBaseInstrumentation](../android/test/SyncBaseInstrumentation.md) | If you would like to test sync a single provider with an [InstrumentationTestCase](../android/test/InstrumentationTestCase.md), this provides some of the boiler plate in [setUp](../android/test/SyncBaseInstrumentation.md))and [tearDown](../android/test/InstrumentationTestCase.md)). | |
+| Known Direct Subclasses [ActivityTestCase](ActivityTestCase.md), [ProviderTestCase](ProviderTestCase.md), [SingleLaunchActivityTestCase](SingleLaunchActivityTestCase.md), [SyncBaseInstrumentation](SyncBaseInstrumentation.md) |--------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [ActivityTestCase](ActivityTestCase.md) | This is common code used to support Activity test cases. | | [ProviderTestCase](ProviderTestCase.md) | If you would like to test a single content provider with an [InstrumentationTestCase](InstrumentationTestCase.md), this provides some of the boiler plate in [setUp](ProviderTestCase.md))and [tearDown](ProviderTestCase.md)). | | [SingleLaunchActivityTestCase](SingleLaunchActivityTestCase.md) | If you would like to test a single activity with an [android.test.InstrumentationTestCase](InstrumentationTestCase.md), this provides some of the boiler plate to launch and finish the activity in [setUp](SingleLaunchActivityTestCase.md))and [tearDown](SingleLaunchActivityTestCase.md)). | | [SyncBaseInstrumentation](SyncBaseInstrumentation.md) | If you would like to test sync a single provider with an [InstrumentationTestCase](InstrumentationTestCase.md), this provides some of the boiler plate in [setUp](SyncBaseInstrumentation.md))and [tearDown](InstrumentationTestCase.md)). | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [ActivityInstrumentationTestCase](../android/test/ActivityInstrumentationTestCase.md), [ActivityInstrumentationTestCase2](../android/test/ActivityInstrumentationTestCase2.md), [ActivityUnitTestCase](../android/test/ActivityUnitTestCase.md) |----------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------| | [ActivityInstrumentationTestCase](../android/test/ActivityInstrumentationTestCase.md) | This class provides functional testing of a single activity. | | [ActivityInstrumentationTestCase2](../android/test/ActivityInstrumentationTestCase2.md) | This class provides functional testing of a single activity. | | [ActivityUnitTestCase](../android/test/ActivityUnitTestCase.md) | This class provides isolated testing of a single activity. | |
+| Known Indirect Subclasses [ActivityInstrumentationTestCase](ActivityInstrumentationTestCase.md), [ActivityInstrumentationTestCase2](ActivityInstrumentationTestCase2.md), [ActivityUnitTestCase](ActivityUnitTestCase.md) |----------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------| | [ActivityInstrumentationTestCase](ActivityInstrumentationTestCase.md) | This class provides functional testing of a single activity. | | [ActivityInstrumentationTestCase2](ActivityInstrumentationTestCase2.md) | This class provides functional testing of a single activity. | | [ActivityUnitTestCase](ActivityUnitTestCase.md) | This class provides isolated testing of a single activity. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | **This class was deprecated in API level 24.**
 |
 | Use [InstrumentationRegistry](../androidx/test/platform/app/InstrumentationRegistry.md) instead. New tests should be written using the [AndroidX Test Library](https://developer.android.com/training/testing/index.html).
 
-A test case that has access to [Instrumentation](../android/app/Instrumentation.md).
+A test case that has access to [Instrumentation](../android.app/Instrumentation.md).
 
 ## Summary
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [InstrumentationTestCase](../android/test/InstrumentationTestCase.md))`()` <br /> |
+| [InstrumentationTestCase](InstrumentationTestCase.md))`()` <br /> |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Instrumentation](../android/app/Instrumentation.md)! | [getInstrumentation](../android/test/InstrumentationTestCase.md))`()` Inheritors can access the instrumentation using this. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [injectInsrumentation](../android/test/InstrumentationTestCase.md))`(`instrumentation:` ` [Instrumentation](../android/app/Instrumentation.md)!`)` Injects instrumentation into this test case. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [injectInstrumentation](../android/test/InstrumentationTestCase.md))`(`instrumentation:` ` [Instrumentation](../android/app/Instrumentation.md)!`)` Injects instrumentation into this test case. |
+| open [Instrumentation](../android.app/Instrumentation.md)! | [getInstrumentation](InstrumentationTestCase.md))`()` Inheritors can access the instrumentation using this. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [injectInsrumentation](InstrumentationTestCase.md))`(`instrumentation:` ` [Instrumentation](../android.app/Instrumentation.md)!`)` Injects instrumentation into this test case. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [injectInstrumentation](InstrumentationTestCase.md))`(`instrumentation:` ` [Instrumentation](../android.app/Instrumentation.md)!`)` Injects instrumentation into this test case. |
 | --- | --- |
-| T | [launchActivity](../android/test/InstrumentationTestCase.md))`(`pkg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `activityCls:` ` [Class](../java/lang/Class.md)<T>!`, `extras:` ` [Bundle](../android/os/Bundle.md)!`)` Utility method for launching an activity. |
-| T | [launchActivityWithIntent](../android/test/InstrumentationTestCase.md))`(`pkg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `activityCls:` ` [Class](../java/lang/Class.md)<T>!`, `intent:` ` [Intent](../android/content/Intent.md)!`)` Utility method for launching an activity with a specific Intent. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [runTestOnUiThread](../android/test/InstrumentationTestCase.md))`(`r:` ` [Runnable](../java/lang/Runnable.md)!`)` Helper for running portions of a test on the UI thread. |
+| T | [launchActivity](InstrumentationTestCase.md))`(`pkg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `activityCls:` ` [Class](../java.lang/Class.md)<T>!`, `extras:` ` [Bundle](../android.os/Bundle.md)!`)` Utility method for launching an activity. |
+| T | [launchActivityWithIntent](InstrumentationTestCase.md))`(`pkg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `activityCls:` ` [Class](../java.lang/Class.md)<T>!`, `intent:` ` [Intent](../android.content/Intent.md)!`)` Utility method for launching an activity with a specific Intent. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [runTestOnUiThread](InstrumentationTestCase.md))`(`r:` ` [Runnable](../java.lang/Runnable.md)!`)` Helper for running portions of a test on the UI thread. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [sendKeys](../android/test/InstrumentationTestCase.md))`(`vararg` `keys:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sends a series of key events through instrumentation and waits for idle. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [sendKeys](../android/test/InstrumentationTestCase.md))`(`keysSequence:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sends a series of key events through instrumentation and waits for idle. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [sendRepeatedKeys](../android/test/InstrumentationTestCase.md))`(`vararg` `keys:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sends a series of key events through instrumentation and waits for idle. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [sendKeys](InstrumentationTestCase.md))`(`vararg` `keys:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sends a series of key events through instrumentation and waits for idle. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [sendKeys](InstrumentationTestCase.md))`(`keysSequence:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sends a series of key events through instrumentation and waits for idle. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [sendRepeatedKeys](InstrumentationTestCase.md))`(`vararg` `keys:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sends a series of key events through instrumentation and waits for idle. |
 | --- | --- |
 
 | Protected methods ||
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [runTest](../android/test/InstrumentationTestCase.md))`()` Runs the current unit test. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [tearDown](../android/test/InstrumentationTestCase.md))`()` Make sure all resources are cleaned up and garbage collected before moving on to the next test. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [runTest](InstrumentationTestCase.md))`()` Runs the current unit test. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [tearDown](InstrumentationTestCase.md))`()` Make sure all resources are cleaned up and garbage collected before moving on to the next test. |
 
 ## Public constructors
 
@@ -78,7 +78,7 @@ Inheritors can access the instrumentation using this.
 
 | Return ||
 |------------------------------------------------------------------------------------------------------|-----------------|
-| [Instrumentation](../android/app/Instrumentation.md)! | instrumentation |
+| [Instrumentation](../android.app/Instrumentation.md)! | instrumentation |
 
 ### injectInsrumentation
 
@@ -89,13 +89,13 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 open fun injectInsrumentation(instrumentation: Instrumentation!): Unit
 ```
 
-**Deprecated:** *Incorrect spelling, use [injectInstrumentation(android.app.Instrumentation)](../android/test/InstrumentationTestCase.md))instead.*
+**Deprecated:** *Incorrect spelling, use [injectInstrumentation(android.app.Instrumentation)](InstrumentationTestCase.md))instead.*
 
 Injects instrumentation into this test case. This method is called by the test runner during test setup.
 
 | Parameters ||
 |-------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| `instrumentation` | [Instrumentation](../android/app/Instrumentation.md)!:the instrumentation to use with this instance |
+| `instrumentation` | [Instrumentation](../android.app/Instrumentation.md)!:the instrumentation to use with this instance |
 
 ### injectInstrumentation
 
@@ -112,7 +112,7 @@ Injects instrumentation into this test case. This method is called by the test r
 
 | Parameters ||
 |-------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| `instrumentation` | [Instrumentation](../android/app/Instrumentation.md)!:the instrumentation to use with this instance |
+| `instrumentation` | [Instrumentation](../android.app/Instrumentation.md)!:the instrumentation to use with this instance |
 
 ### launchActivity
 
@@ -130,15 +130,15 @@ fun <T : Activity!> launchActivity(
 
 Utility method for launching an activity.
 
-The [Intent](../android/content/Intent.md) used to launch the Activity is: action = [Intent.ACTION_MAIN](../android/content/Intent.md) extras = null, unless a custom bundle is provided here All other fields are null or empty.
+The [Intent](../android.content/Intent.md) used to launch the Activity is: action = [Intent.ACTION_MAIN](../android.content/Intent.md) extras = null, unless a custom bundle is provided here All other fields are null or empty.
 
 **NOTE:** The parameter*pkg*must refer to the package identifier of the package hosting the activity to be launched, which is specified in the AndroidManifest.xml file. This is not necessarily the same as the java package name.
 
 | Parameters ||
 |---------------|------------------------------------------------------------------------------------------------------------------------------------|
 | `pkg` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The package hosting the activity to be launched. |
-| `activityCls` | [Class](../java/lang/Class.md)\<T\>!:The activity class to launch. |
-| `extras` | [Bundle](../android/os/Bundle.md)!:Optional extra stuff to pass to the activity. |
+| `activityCls` | [Class](../java.lang/Class.md)\<T\>!:The activity class to launch. |
+| `extras` | [Bundle](../android.os/Bundle.md)!:Optional extra stuff to pass to the activity. |
 | --- | --- |
 
 | Return ||
@@ -167,8 +167,8 @@ Utility method for launching an activity with a specific Intent.
 | Parameters ||
 |---------------|------------------------------------------------------------------------------------------------------------------------------------|
 | `pkg` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The package hosting the activity to be launched. |
-| `activityCls` | [Class](../java/lang/Class.md)\<T\>!:The activity class to launch. |
-| `intent` | [Intent](../android/content/Intent.md)!:The intent to launch with |
+| `activityCls` | [Class](../java.lang/Class.md)\<T\>!:The activity class to launch. |
+| `intent` | [Intent](../android.content/Intent.md)!:The intent to launch with |
 | --- | --- |
 
 | Return ||
@@ -186,11 +186,11 @@ open fun runTestOnUiThread(r: Runnable!): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Helper for running portions of a test on the UI thread. Note, in most cases it is simpler to annotate the test method with [android.test.UiThreadTest](../android/test/UiThreadTest.md), which will run the entire test method on the UI thread. Use this method if you need to switch in and out of the UI thread to perform your test.
+Helper for running portions of a test on the UI thread. Note, in most cases it is simpler to annotate the test method with [android.test.UiThreadTest](UiThreadTest.md), which will run the entire test method on the UI thread. Use this method if you need to switch in and out of the UI thread to perform your test.
 
 | Parameters ||
 |-----|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `r` | [Runnable](../java/lang/Runnable.md)!:runnable containing test code in the [Runnable.run()](../java/lang/Runnable.md))method |
+| `r` | [Runnable](../java.lang/Runnable.md)!:runnable containing test code in the [Runnable.run()](../java.lang/Runnable.md))method |
 
 ### sendKeys
 
@@ -252,7 +252,7 @@ protected open fun runTest(): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Runs the current unit test. If the unit test is annotated with [android.test.UiThreadTest](../android/test/UiThreadTest.md), the test is run on the UI thread. 
+Runs the current unit test. If the unit test is annotated with [android.test.UiThreadTest](UiThreadTest.md), the test is run on the UI thread. 
 
 ### tearDown
 

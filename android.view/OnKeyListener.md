@@ -19,7 +19,7 @@ Interface definition for a callback to be invoked when a hardware key event is d
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onKey](../android/view/View.OnKeyListener.md))`(`v:` ` [View](../android/view/View.md)!`, `keyCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `event:` ` [KeyEvent](../android/view/KeyEvent.md)!`)` Called when a hardware key is dispatched to a view. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onKey](../android/view/View.OnKeyListener.md))`(`v:` ` [View](View.md)!`, `keyCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `event:` ` [KeyEvent](KeyEvent.md)!`)` Called when a hardware key is dispatched to a view. |
 
 ## Public methods
 
@@ -41,9 +41,9 @@ Key presses in software keyboards will generally NOT trigger this method, althou
 
 | Parameters ||
 |-----------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| `v` | [View](../android/view/View.md)!:The view the key has been dispatched to. |
+| `v` | [View](View.md)!:The view the key has been dispatched to. |
 | `keyCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The code for the physical key that was pressed |
-| `event` | [KeyEvent](../android/view/KeyEvent.md)!:The KeyEvent object containing full information about the event. |
+| `event` | [KeyEvent](KeyEvent.md)!:The KeyEvent object containing full information about the event. |
 | --- | --- |
 
 | Return ||

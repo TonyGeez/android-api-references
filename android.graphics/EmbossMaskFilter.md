@@ -2,7 +2,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # EmbossMaskFilter
 
-Kotlin | [Java](../android/graphics/EmbossMaskFilter.md)
+Kotlin | [Java](EmbossMaskFilter.md)
 | --- | --- |
 
 ```
@@ -11,8 +11,8 @@ open class EmbossMaskFilter : MaskFilter
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.graphics.MaskFilter](../android/graphics/MaskFilter.md) ||
-| | ↳ | [android.graphics.EmbossMaskFilter](../android/graphics/EmbossMaskFilter.md) |
+| ↳ | [android.graphics.MaskFilter](MaskFilter.md) ||
+| | ↳ | [android.graphics.EmbossMaskFilter](EmbossMaskFilter.md) |
 
 ## Summary
 

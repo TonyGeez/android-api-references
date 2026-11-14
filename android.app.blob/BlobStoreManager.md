@@ -4,7 +4,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 
 # BlobStoreManager
 
-Kotlin| [Java](../android/app/blob/BlobStoreManager.md) 
+Kotlin| [Java](BlobStoreManager.md) 
 | --- | --- |
 
 ```
@@ -13,20 +13,20 @@ open class BlobStoreManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.blob.BlobStoreManager](../android/app/blob/BlobStoreManager.md) |
+| ↳ | [android.app.blob.BlobStoreManager](BlobStoreManager.md) |
 
 This class provides access to the blob store managed by the system.
 
-Apps can publish and access a data blob using a [BlobHandle](../android/app/blob/BlobHandle.md) object which can be created with[BlobHandle.createWithSha256(byte[], CharSequence, long, String)](https://developer.android.com/reference/kotlin/android/app/blob/BlobHandle#createWithSha256(kotlin.ByteArray,%20kotlin.CharSequence,%20kotlin.Long,%20kotlin.String)). This [BlobHandle](../android/app/blob/BlobHandle.md) object encapsulates the following pieces of information used for identifying the blobs:
+Apps can publish and access a data blob using a [BlobHandle](BlobHandle.md) object which can be created with[BlobHandle.createWithSha256(byte[], CharSequence, long, String)](https://developer.android.com/reference/kotlin/android/app/blob/BlobHandle#createWithSha256(kotlin.ByteArray,%20kotlin.CharSequence,%20kotlin.Long,%20kotlin.String)). This [BlobHandle](BlobHandle.md) object encapsulates the following pieces of information used for identifying the blobs:
 
-- [BlobHandle.getSha256Digest()](../android/app/blob/BlobHandle.md))
-- [BlobHandle.getLabel()](../android/app/blob/BlobHandle.md))
-- [BlobHandle.getExpiryTimeMillis()](../android/app/blob/BlobHandle.md))
-- [BlobHandle.getTag()](../android/app/blob/BlobHandle.md))
+- [BlobHandle.getSha256Digest()](BlobHandle.md))
+- [BlobHandle.getLabel()](BlobHandle.md))
+- [BlobHandle.getExpiryTimeMillis()](BlobHandle.md))
+- [BlobHandle.getTag()](BlobHandle.md))
 
-For two [BlobHandle](../android/app/blob/BlobHandle.md) objects to be considered identical, all these pieces of information must be equal.
+For two [BlobHandle](BlobHandle.md) objects to be considered identical, all these pieces of information must be equal.
 
-For contributing a new data blob, an app needs to create a session using [BlobStoreManager.createSession(BlobHandle)](../android/app/blob/BlobStoreManager.md))and then open this session for writing using [BlobStoreManager.openSession(long)](../android/app/blob/BlobStoreManager.md)).
+For contributing a new data blob, an app needs to create a session using [BlobStoreManager.createSession(BlobHandle)](BlobStoreManager.md))and then open this session for writing using [BlobStoreManager.openSession(long)](BlobStoreManager.md)).
 
 The following code snippet shows how to create and open a session for writing: 
 
@@ -41,7 +41,7 @@ final long sessionId = blobStoreManager.createSession(blobHandle);
   
 ```
 
-If all the data could not be written in a single attempt, apps can close this session and re-open it again using the session id obtained via [BlobStoreManager.createSession(BlobHandle)](../android/app/blob/BlobStoreManager.md)). Note that the session data is persisted and can be re-opened for completing the data contribution, even across device reboots.
+If all the data could not be written in a single attempt, apps can close this session and re-open it again using the session id obtained via [BlobStoreManager.createSession(BlobHandle)](BlobStoreManager.md)). Note that the session data is persisted and can be re-opened for completing the data contribution, even across device reboots.
 
 After the data is written to the session, it can be committed using [Session.commit(Executor, Consumer)](../android/app/blob/BlobStoreManager.Session.md)). Until the session is committed, data written to the session will not be shared with any app.
 
@@ -74,7 +74,7 @@ A data blob published without specifying any of these access modes will be consi
 
 It is strongly recommended that apps use one of[Session.allowPackageAccess(String, byte[])](https://developer.android.com/reference/kotlin/android/app/blob/BlobStoreManager.Session#allowPackageAccess(kotlin.String,%20kotlin.ByteArray))or [Session.allowSameSignatureAccess()](../android/app/blob/BlobStoreManager.Session.md))when they know, ahead of time, the set of apps they would like to share the blobs with. [Session.allowPublicAccess()](../android/app/blob/BlobStoreManager.Session.md))is meant for publicly available data committed from libraries and SDKs.
 
-Once a data blob is committed with [Session.commit(Executor, Consumer)](../android/app/blob/BlobStoreManager.Session.md)), it can be accessed using [BlobStoreManager.openBlob(BlobHandle)](../android/app/blob/BlobStoreManager.md)), assuming the caller satisfies constraints of any of the access modes associated with that data blob. An app may acquire a lease on a blob with [BlobStoreManager.acquireLease(BlobHandle, int)](../android/app/blob/BlobStoreManager.md))and release the lease with [BlobStoreManager.releaseLease(BlobHandle)](../android/app/blob/BlobStoreManager.md)). A blob will not be deleted from the system while there is at least one app leasing it.
+Once a data blob is committed with [Session.commit(Executor, Consumer)](../android/app/blob/BlobStoreManager.Session.md)), it can be accessed using [BlobStoreManager.openBlob(BlobHandle)](BlobStoreManager.md)), assuming the caller satisfies constraints of any of the access modes associated with that data blob. An app may acquire a lease on a blob with [BlobStoreManager.acquireLease(BlobHandle, int)](BlobStoreManager.md))and release the lease with [BlobStoreManager.releaseLease(BlobHandle)](BlobStoreManager.md)). A blob will not be deleted from the system while there is at least one app leasing it.
 
 The following code snippet shows how to access the data blob: 
 
@@ -96,20 +96,20 @@ Restricted for SDK Runtime environment in API level 34.
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [abandonSession](../android/app/blob/BlobStoreManager.md))`(`sessionId:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Abandons an existing session and deletes any data that was written to that session so far. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [acquireLease](../android/app/blob/BlobStoreManager.md))`(`blobHandle:` ` [BlobHandle](../android/app/blob/BlobHandle.md)`, `descriptionResId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Acquire a lease to the blob represented by`blobHandle`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [acquireLease](../android/app/blob/BlobStoreManager.md))`(`blobHandle:` ` [BlobHandle](../android/app/blob/BlobHandle.md)`, `descriptionResId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `leaseExpiryTimeMillis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Acquire a lease to the blob represented by`blobHandle`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [abandonSession](BlobStoreManager.md))`(`sessionId:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Abandons an existing session and deletes any data that was written to that session so far. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [acquireLease](BlobStoreManager.md))`(`blobHandle:` ` [BlobHandle](BlobHandle.md)`, `descriptionResId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Acquire a lease to the blob represented by`blobHandle`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [acquireLease](BlobStoreManager.md))`(`blobHandle:` ` [BlobHandle](BlobHandle.md)`, `descriptionResId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `leaseExpiryTimeMillis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Acquire a lease to the blob represented by`blobHandle`. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [acquireLease](../android/app/blob/BlobStoreManager.md))`(`blobHandle:` ` [BlobHandle](../android/app/blob/BlobHandle.md)`, `description:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)`)` Acquire a lease to the blob represented by`blobHandle`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [acquireLease](../android/app/blob/BlobStoreManager.md))`(`blobHandle:` ` [BlobHandle](../android/app/blob/BlobHandle.md)`, `description:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)`, `leaseExpiryTimeMillis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Acquire a lease to the blob represented by`blobHandle`. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [createSession](../android/app/blob/BlobStoreManager.md))`(`blobHandle:` ` [BlobHandle](../android/app/blob/BlobHandle.md)`)` Create a new session using the given [BlobHandle](../android/app/blob/BlobHandle.md), returning a unique id that represents the session. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [acquireLease](BlobStoreManager.md))`(`blobHandle:` ` [BlobHandle](BlobHandle.md)`, `description:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)`)` Acquire a lease to the blob represented by`blobHandle`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [acquireLease](BlobStoreManager.md))`(`blobHandle:` ` [BlobHandle](BlobHandle.md)`, `description:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)`, `leaseExpiryTimeMillis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Acquire a lease to the blob represented by`blobHandle`. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [createSession](BlobStoreManager.md))`(`blobHandle:` ` [BlobHandle](BlobHandle.md)`)` Create a new session using the given [BlobHandle](BlobHandle.md), returning a unique id that represents the session. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BlobHandle](../android/app/blob/BlobHandle.md)!\> | [getLeasedBlobs](../android/app/blob/BlobStoreManager.md))`()` Return the [BlobHandles](../android/app/blob/BlobHandle.md) corresponding to the data blobs that the calling app currently has a lease on. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getRemainingLeaseQuotaBytes](../android/app/blob/BlobStoreManager.md))`()` Return the remaining quota size for acquiring a lease (in bytes) which indicates the remaining amount of data that an app can acquire a lease on before the System starts rejecting lease requests. |
-| open [ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md) | [openBlob](../android/app/blob/BlobStoreManager.md))`(`blobHandle:` ` [BlobHandle](../android/app/blob/BlobHandle.md)`)` Opens an existing blob for reading from the blob store managed by the system. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BlobHandle](BlobHandle.md)!\> | [getLeasedBlobs](BlobStoreManager.md))`()` Return the [BlobHandles](BlobHandle.md) corresponding to the data blobs that the calling app currently has a lease on. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getRemainingLeaseQuotaBytes](BlobStoreManager.md))`()` Return the remaining quota size for acquiring a lease (in bytes) which indicates the remaining amount of data that an app can acquire a lease on before the System starts rejecting lease requests. |
+| open [ParcelFileDescriptor](../android.os/ParcelFileDescriptor.md) | [openBlob](BlobStoreManager.md))`(`blobHandle:` ` [BlobHandle](BlobHandle.md)`)` Opens an existing blob for reading from the blob store managed by the system. |
 | --- | --- |
-| open [BlobStoreManager.Session](../android/app/blob/BlobStoreManager.Session.md) | [openSession](../android/app/blob/BlobStoreManager.md))`(`sessionId:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Open an existing session to actively perform work. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [releaseLease](../android/app/blob/BlobStoreManager.md))`(`blobHandle:` ` [BlobHandle](../android/app/blob/BlobHandle.md)`)` Release any active lease to the blob represented by`blobHandle`which is currently held by the caller. |
+| open [BlobStoreManager.Session](../android/app/blob/BlobStoreManager.Session.md) | [openSession](BlobStoreManager.md))`(`sessionId:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Open an existing session to actively perform work. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [releaseLease](BlobStoreManager.md))`(`blobHandle:` ` [BlobHandle](BlobHandle.md)`)` Release any active lease to the blob represented by`blobHandle`which is currently held by the caller. |
 
 ## Public methods
 
@@ -125,7 +125,7 @@ Abandons an existing session and deletes any data that was written to that sessi
 
 | Parameters ||
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `sessionId` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):a unique id obtained via [createSession(android.app.blob.BlobHandle)](../android/app/blob/BlobStoreManager.md))that represents a particular session. Value is 1 or greater |
+| `sessionId` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):a unique id obtained via [createSession(android.app.blob.BlobHandle)](BlobStoreManager.md))that represents a particular session. Value is 1 or greater |
 
 | Exceptions ||
 |-------------------------------|----------------------------------------------------------------------------------------|
@@ -145,9 +145,9 @@ open fun acquireLease(
 
 Acquire a lease to the blob represented by`blobHandle`. This lease indicates to the system that the caller wants the blob to be kept around.
 
-This is similar to [acquireLease(android.app.blob.BlobHandle,int,long)](../android/app/blob/BlobStoreManager.md))except clients don't have to specify the lease expiry time upfront using this API and need to explicitly release the lease using [releaseLease(android.app.blob.BlobHandle)](../android/app/blob/BlobStoreManager.md))when they no longer like to keep a blob around.
+This is similar to [acquireLease(android.app.blob.BlobHandle,int,long)](BlobStoreManager.md))except clients don't have to specify the lease expiry time upfront using this API and need to explicitly release the lease using [releaseLease(android.app.blob.BlobHandle)](BlobStoreManager.md))when they no longer like to keep a blob around.
 
-Any active leases will be automatically released when the blob's expiry time ([BlobHandle.getExpiryTimeMillis()](../android/app/blob/BlobHandle.md))) is elapsed.
+Any active leases will be automatically released when the blob's expiry time ([BlobHandle.getExpiryTimeMillis()](BlobHandle.md))) is elapsed.
 
 This lease information is persisted and calling this more than once will result in latest lease overriding any previous lease.
 
@@ -157,7 +157,7 @@ In case the resource name for the`descriptionResId`is modified as part of an app
 
 | Parameters ||
 |--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `blobHandle` | [BlobHandle](../android/app/blob/BlobHandle.md):the [BlobHandle](../android/app/blob/BlobHandle.md) representing the blob that the caller wants to acquire a lease for. This value cannot be`null`. |
+| `blobHandle` | [BlobHandle](BlobHandle.md):the [BlobHandle](BlobHandle.md) representing the blob that the caller wants to acquire a lease for. This value cannot be`null`. |
 | `descriptionResId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the resource id for a short description string that can be surfaced to the user explaining what the blob is used for. |
 
 | Exceptions ||
@@ -166,12 +166,12 @@ In case the resource name for the`descriptionResId`is modified as part of an app
 | `java.lang.SecurityException` | when the blob represented by the`blobHandle`does not exist or the caller does not have access to it. |
 | `java.lang.IllegalArgumentException` | when`blobHandle`is invalid. |
 | --- | --- |
-| `android.os.LimitExceededException` | when a lease could not be acquired, such as when the caller is trying to acquire too many leases or acquire leases on too much data. Apps can avoid this by checking the remaining quota using [getRemainingLeaseQuotaBytes()](../android/app/blob/BlobStoreManager.md))before trying to acquire a lease. |
+| `android.os.LimitExceededException` | when a lease could not be acquired, such as when the caller is trying to acquire too many leases or acquire leases on too much data. Apps can avoid this by checking the remaining quota using [getRemainingLeaseQuotaBytes()](BlobStoreManager.md))before trying to acquire a lease. |
 
 **See Also**
 
-- [#acquireLease(BlobHandle, int, long)](../android/app/blob/BlobStoreManager.md))
-- [#acquireLease(BlobHandle, CharSequence, long)](../android/app/blob/BlobStoreManager.md)) 
+- [#acquireLease(BlobHandle, int, long)](BlobStoreManager.md))
+- [#acquireLease(BlobHandle, CharSequence, long)](BlobStoreManager.md)) 
 
 ### acquireLease
 
@@ -187,7 +187,7 @@ open fun acquireLease(
 
 Acquire a lease to the blob represented by`blobHandle`. This lease indicates to the system that the caller wants the blob to be kept around.
 
-Any active leases will be automatically released when the blob's expiry time ([BlobHandle.getExpiryTimeMillis()](../android/app/blob/BlobHandle.md))) is elapsed.
+Any active leases will be automatically released when the blob's expiry time ([BlobHandle.getExpiryTimeMillis()](BlobHandle.md))) is elapsed.
 
 This lease information is persisted and calling this more than once will result in latest lease overriding any previous lease.
 
@@ -197,23 +197,23 @@ In case the resource name for the`descriptionResId`is modified as part of an app
 
 | Parameters ||
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `blobHandle` | [BlobHandle](../android/app/blob/BlobHandle.md):the [BlobHandle](../android/app/blob/BlobHandle.md) representing the blob that the caller wants to acquire a lease for. This value cannot be`null`. |
+| `blobHandle` | [BlobHandle](BlobHandle.md):the [BlobHandle](BlobHandle.md) representing the blob that the caller wants to acquire a lease for. This value cannot be`null`. |
 | `descriptionResId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the resource id for a short description string that can be surfaced to the user explaining what the blob is used for. |
-| `leaseExpiryTimeMillis` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the time in milliseconds after which the lease can be automatically released, in [System.currentTimeMillis()](../java/lang/System.md))timebase. If its value is`0`, then the behavior of this API is identical to [acquireLease(android.app.blob.BlobHandle,int)](../android/app/blob/BlobStoreManager.md))where clients have to explicitly call [releaseLease(android.app.blob.BlobHandle)](../android/app/blob/BlobStoreManager.md))when they don't need the blob anymore. Value is a non-negative timestamp measured as the number of milliseconds since 1970-01-01T00:00:00Z. |
+| `leaseExpiryTimeMillis` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the time in milliseconds after which the lease can be automatically released, in [System.currentTimeMillis()](../java.lang/System.md))timebase. If its value is`0`, then the behavior of this API is identical to [acquireLease(android.app.blob.BlobHandle,int)](BlobStoreManager.md))where clients have to explicitly call [releaseLease(android.app.blob.BlobHandle)](BlobStoreManager.md))when they don't need the blob anymore. Value is a non-negative timestamp measured as the number of milliseconds since 1970-01-01T00:00:00Z. |
 | --- | --- |
 
 | Exceptions ||
 |--------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `java.io.IOException` | when there is an I/O error while acquiring a lease to the blob. |
 | `java.lang.SecurityException` | when the blob represented by the`blobHandle`does not exist or the caller does not have access to it. |
-| `java.lang.IllegalArgumentException` | when`blobHandle`is invalid or if the`leaseExpiryTimeMillis`is greater than the [BlobHandle.getExpiryTimeMillis()](../android/app/blob/BlobHandle.md)). |
+| `java.lang.IllegalArgumentException` | when`blobHandle`is invalid or if the`leaseExpiryTimeMillis`is greater than the [BlobHandle.getExpiryTimeMillis()](BlobHandle.md)). |
 | --- | --- |
-| `android.os.LimitExceededException` | when a lease could not be acquired, such as when the caller is trying to acquire too many leases or acquire leases on too much data. Apps can avoid this by checking the remaining quota using [getRemainingLeaseQuotaBytes()](../android/app/blob/BlobStoreManager.md))before trying to acquire a lease. |
+| `android.os.LimitExceededException` | when a lease could not be acquired, such as when the caller is trying to acquire too many leases or acquire leases on too much data. Apps can avoid this by checking the remaining quota using [getRemainingLeaseQuotaBytes()](BlobStoreManager.md))before trying to acquire a lease. |
 
 **See Also**
 
-- [#acquireLease(BlobHandle, int)](../android/app/blob/BlobStoreManager.md))
-- [#acquireLease(BlobHandle, CharSequence)](../android/app/blob/BlobStoreManager.md)) 
+- [#acquireLease(BlobHandle, int)](BlobStoreManager.md))
+- [#acquireLease(BlobHandle, CharSequence)](BlobStoreManager.md)) 
 
 ### acquireLease
 
@@ -228,11 +228,11 @@ open fun acquireLease(
 
 Acquire a lease to the blob represented by`blobHandle`. This lease indicates to the system that the caller wants the blob to be kept around.
 
-This is a variant of [acquireLease(android.app.blob.BlobHandle,int)](../android/app/blob/BlobStoreManager.md))taking a [CharSequence](../java/lang/CharSequence.md) for`description`. It is highly recommended that callers only use this when a valid resource ID for`description`could not be provided. Otherwise, apps should prefer using [acquireLease(android.app.blob.BlobHandle,int)](../android/app/blob/BlobStoreManager.md))which will allow`description`to be localized.
+This is a variant of [acquireLease(android.app.blob.BlobHandle,int)](BlobStoreManager.md))taking a [CharSequence](../java.lang/CharSequence.md) for`description`. It is highly recommended that callers only use this when a valid resource ID for`description`could not be provided. Otherwise, apps should prefer using [acquireLease(android.app.blob.BlobHandle,int)](BlobStoreManager.md))which will allow`description`to be localized.
 
-This is similar to [acquireLease(android.app.blob.BlobHandle,java.lang.CharSequence,long)](../android/app/blob/BlobStoreManager.md))except clients don't have to specify the lease expiry time upfront using this API and need to explicitly release the lease using [releaseLease(android.app.blob.BlobHandle)](../android/app/blob/BlobStoreManager.md))when they no longer like to keep a blob around.
+This is similar to [acquireLease(android.app.blob.BlobHandle,java.lang.CharSequence,long)](BlobStoreManager.md))except clients don't have to specify the lease expiry time upfront using this API and need to explicitly release the lease using [releaseLease(android.app.blob.BlobHandle)](BlobStoreManager.md))when they no longer like to keep a blob around.
 
-Any active leases will be automatically released when the blob's expiry time ([BlobHandle.getExpiryTimeMillis()](../android/app/blob/BlobHandle.md))) is elapsed.
+Any active leases will be automatically released when the blob's expiry time ([BlobHandle.getExpiryTimeMillis()](BlobHandle.md))) is elapsed.
 
 This lease information is persisted and calling this more than once will result in latest lease overriding any previous lease.
 
@@ -240,7 +240,7 @@ When an app acquires a lease on a blob, the System will try to keep this blob ar
 
 | Parameters ||
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `blobHandle` | [BlobHandle](../android/app/blob/BlobHandle.md):the [BlobHandle](../android/app/blob/BlobHandle.md) representing the blob that the caller wants to acquire a lease for. This value cannot be`null`. |
+| `blobHandle` | [BlobHandle](BlobHandle.md):the [BlobHandle](BlobHandle.md) representing the blob that the caller wants to acquire a lease for. This value cannot be`null`. |
 | `description` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html):a short description string that can be surfaced to the user explaining what the blob is used for. It is recommended to keep this description brief. This may be truncated and ellipsized if it is too long to be displayed to the user. This value cannot be`null`. |
 
 | Exceptions ||
@@ -249,12 +249,12 @@ When an app acquires a lease on a blob, the System will try to keep this blob ar
 | `java.lang.SecurityException` | when the blob represented by the`blobHandle`does not exist or the caller does not have access to it. |
 | `java.lang.IllegalArgumentException` | when`blobHandle`is invalid. |
 | --- | --- |
-| `android.os.LimitExceededException` | when a lease could not be acquired, such as when the caller is trying to acquire too many leases or acquire leases on too much data. Apps can avoid this by checking the remaining quota using [getRemainingLeaseQuotaBytes()](../android/app/blob/BlobStoreManager.md))before trying to acquire a lease. |
+| `android.os.LimitExceededException` | when a lease could not be acquired, such as when the caller is trying to acquire too many leases or acquire leases on too much data. Apps can avoid this by checking the remaining quota using [getRemainingLeaseQuotaBytes()](BlobStoreManager.md))before trying to acquire a lease. |
 
 **See Also**
 
-- [#acquireLease(BlobHandle, int)](../android/app/blob/BlobStoreManager.md))
-- [#acquireLease(BlobHandle, CharSequence, long)](../android/app/blob/BlobStoreManager.md)) 
+- [#acquireLease(BlobHandle, int)](BlobStoreManager.md))
+- [#acquireLease(BlobHandle, CharSequence, long)](BlobStoreManager.md)) 
 
 ### acquireLease
 
@@ -270,9 +270,9 @@ open fun acquireLease(
 
 Acquire a lease to the blob represented by`blobHandle`. This lease indicates to the system that the caller wants the blob to be kept around.
 
-This is a variant of [acquireLease(android.app.blob.BlobHandle,int,long)](../android/app/blob/BlobStoreManager.md))taking a [CharSequence](../java/lang/CharSequence.md) for`description`. It is highly recommended that callers only use this when a valid resource ID for`description`could not be provided. Otherwise, apps should prefer using [acquireLease(android.app.blob.BlobHandle,int)](../android/app/blob/BlobStoreManager.md))which will allow`description`to be localized.
+This is a variant of [acquireLease(android.app.blob.BlobHandle,int,long)](BlobStoreManager.md))taking a [CharSequence](../java.lang/CharSequence.md) for`description`. It is highly recommended that callers only use this when a valid resource ID for`description`could not be provided. Otherwise, apps should prefer using [acquireLease(android.app.blob.BlobHandle,int)](BlobStoreManager.md))which will allow`description`to be localized.
 
-Any active leases will be automatically released when the blob's expiry time ([BlobHandle.getExpiryTimeMillis()](../android/app/blob/BlobHandle.md))) is elapsed.
+Any active leases will be automatically released when the blob's expiry time ([BlobHandle.getExpiryTimeMillis()](BlobHandle.md))) is elapsed.
 
 This lease information is persisted and calling this more than once will result in latest lease overriding any previous lease.
 
@@ -280,23 +280,23 @@ When an app acquires a lease on a blob, the System will try to keep this blob ar
 
 | Parameters ||
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `blobHandle` | [BlobHandle](../android/app/blob/BlobHandle.md):the [BlobHandle](../android/app/blob/BlobHandle.md) representing the blob that the caller wants to acquire a lease for. This value cannot be`null`. |
+| `blobHandle` | [BlobHandle](BlobHandle.md):the [BlobHandle](BlobHandle.md) representing the blob that the caller wants to acquire a lease for. This value cannot be`null`. |
 | `description` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html):a short description string that can be surfaced to the user explaining what the blob is used for. It is recommended to keep this description brief. This may be truncated and ellipsized if it is too long to be displayed to the user. This value cannot be`null`. |
-| `leaseExpiryTimeMillis` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the time in milliseconds after which the lease can be automatically released, in [System.currentTimeMillis()](../java/lang/System.md))timebase. If its value is`0`, then the behavior of this API is identical to [acquireLease(android.app.blob.BlobHandle,int)](../android/app/blob/BlobStoreManager.md))where clients have to explicitly call [releaseLease(android.app.blob.BlobHandle)](../android/app/blob/BlobStoreManager.md))when they don't need the blob anymore. Value is a non-negative timestamp measured as the number of milliseconds since 1970-01-01T00:00:00Z. |
+| `leaseExpiryTimeMillis` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the time in milliseconds after which the lease can be automatically released, in [System.currentTimeMillis()](../java.lang/System.md))timebase. If its value is`0`, then the behavior of this API is identical to [acquireLease(android.app.blob.BlobHandle,int)](BlobStoreManager.md))where clients have to explicitly call [releaseLease(android.app.blob.BlobHandle)](BlobStoreManager.md))when they don't need the blob anymore. Value is a non-negative timestamp measured as the number of milliseconds since 1970-01-01T00:00:00Z. |
 | --- | --- |
 
 | Exceptions ||
 |--------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `java.io.IOException` | when there is an I/O error while acquiring a lease to the blob. |
 | `java.lang.SecurityException` | when the blob represented by the`blobHandle`does not exist or the caller does not have access to it. |
-| `java.lang.IllegalArgumentException` | when`blobHandle`is invalid or if the`leaseExpiryTimeMillis`is greater than the [BlobHandle.getExpiryTimeMillis()](../android/app/blob/BlobHandle.md)). |
+| `java.lang.IllegalArgumentException` | when`blobHandle`is invalid or if the`leaseExpiryTimeMillis`is greater than the [BlobHandle.getExpiryTimeMillis()](BlobHandle.md)). |
 | --- | --- |
-| `android.os.LimitExceededException` | when a lease could not be acquired, such as when the caller is trying to acquire too many leases or acquire leases on too much data. Apps can avoid this by checking the remaining quota using [getRemainingLeaseQuotaBytes()](../android/app/blob/BlobStoreManager.md))before trying to acquire a lease. |
+| `android.os.LimitExceededException` | when a lease could not be acquired, such as when the caller is trying to acquire too many leases or acquire leases on too much data. Apps can avoid this by checking the remaining quota using [getRemainingLeaseQuotaBytes()](BlobStoreManager.md))before trying to acquire a lease. |
 
 **See Also**
 
-- [#acquireLease(BlobHandle, int, long)](../android/app/blob/BlobStoreManager.md))
-- [#acquireLease(BlobHandle, CharSequence)](../android/app/blob/BlobStoreManager.md)) 
+- [#acquireLease(BlobHandle, int, long)](BlobStoreManager.md))
+- [#acquireLease(BlobHandle, CharSequence)](BlobStoreManager.md)) 
 
 ### createSession
 
@@ -306,15 +306,15 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 open fun createSession(blobHandle: BlobHandle): Long
 ```
 
-Create a new session using the given [BlobHandle](../android/app/blob/BlobHandle.md), returning a unique id that represents the session. Once created, the session can be opened multiple times across multiple device boots.
+Create a new session using the given [BlobHandle](BlobHandle.md), returning a unique id that represents the session. Once created, the session can be opened multiple times across multiple device boots.
 
 The system may automatically destroy sessions that have not been finalized (either committed or abandoned) within a reasonable period of time, typically about a week.
 
-If an app is planning to acquire a lease on this data (using [acquireLease(android.app.blob.BlobHandle,int)](../android/app/blob/BlobStoreManager.md))or one of it's other variants) after committing this data (using [Session.commit(Executor, Consumer)](../android/app/blob/BlobStoreManager.Session.md))), it is recommended that the app checks the remaining quota for acquiring a lease first using [getRemainingLeaseQuotaBytes()](../android/app/blob/BlobStoreManager.md))and can skip contributing this data if needed.
+If an app is planning to acquire a lease on this data (using [acquireLease(android.app.blob.BlobHandle,int)](BlobStoreManager.md))or one of it's other variants) after committing this data (using [Session.commit(Executor, Consumer)](../android/app/blob/BlobStoreManager.Session.md))), it is recommended that the app checks the remaining quota for acquiring a lease first using [getRemainingLeaseQuotaBytes()](BlobStoreManager.md))and can skip contributing this data if needed.
 
 | Parameters ||
 |--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `blobHandle` | [BlobHandle](../android/app/blob/BlobHandle.md):the [BlobHandle](../android/app/blob/BlobHandle.md) identifier for which a new session needs to be created. This value cannot be`null`. |
+| `blobHandle` | [BlobHandle](BlobHandle.md):the [BlobHandle](BlobHandle.md) identifier for which a new session needs to be created. This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -336,11 +336,11 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 open fun getLeasedBlobs(): MutableList<BlobHandle!>
 ```
 
-Return the [BlobHandles](../android/app/blob/BlobHandle.md) corresponding to the data blobs that the calling app currently has a lease on.
+Return the [BlobHandles](BlobHandle.md) corresponding to the data blobs that the calling app currently has a lease on.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [BlobHandle](../android/app/blob/BlobHandle.md)!> | a list of [BlobHandles](../android/app/blob/BlobHandle.md) that the caller has a lease on. This value cannot be`null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [BlobHandle](BlobHandle.md)!> | a list of [BlobHandles](BlobHandle.md) that the caller has a lease on. This value cannot be`null`. |
 
 ### getRemainingLeaseQuotaBytes
 
@@ -368,11 +368,11 @@ Opens an existing blob for reading from the blob store managed by the system.
 
 | Parameters ||
 |--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `blobHandle` | [BlobHandle](../android/app/blob/BlobHandle.md):the [BlobHandle](../android/app/blob/BlobHandle.md) representing the blob that the caller wants to access. This value cannot be`null`. |
+| `blobHandle` | [BlobHandle](BlobHandle.md):the [BlobHandle](BlobHandle.md) representing the blob that the caller wants to access. This value cannot be`null`. |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md) | a [ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md) that can be used to read the blob content. This value cannot be`null`. |
+| [ParcelFileDescriptor](../android.os/ParcelFileDescriptor.md) | a [ParcelFileDescriptor](../android.os/ParcelFileDescriptor.md) that can be used to read the blob content. This value cannot be`null`. |
 
 | Exceptions ||
 |--------------------------------------|------------------------------------------------------------------------------------------------------|
@@ -393,7 +393,7 @@ Open an existing session to actively perform work.
 
 | Parameters ||
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `sessionId` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):a unique id obtained via [createSession(android.app.blob.BlobHandle)](../android/app/blob/BlobStoreManager.md))that represents a particular session. Value is 1 or greater |
+| `sessionId` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):a unique id obtained via [createSession(android.app.blob.BlobHandle)](BlobStoreManager.md))that represents a particular session. Value is 1 or greater |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -416,7 +416,7 @@ Release any active lease to the blob represented by`blobHandle`which is currentl
 
 | Parameters ||
 |--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `blobHandle` | [BlobHandle](../android/app/blob/BlobHandle.md):the [BlobHandle](../android/app/blob/BlobHandle.md) representing the blob that the caller wants to release the lease for. This value cannot be`null`. |
+| `blobHandle` | [BlobHandle](BlobHandle.md):the [BlobHandle](BlobHandle.md) representing the blob that the caller wants to release the lease for. This value cannot be`null`. |
 
 | Exceptions ||
 |--------------------------------------|------------------------------------------------------------------------------------------------------|

@@ -4,7 +4,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 
 # EditorBoundsInfo
 
-Kotlin| [Java](../android/view/inputmethod/EditorBoundsInfo.md) 
+Kotlin| [Java](EditorBoundsInfo.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class EditorBoundsInfo : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.inputmethod.EditorBoundsInfo](../android/view/inputmethod/EditorBoundsInfo.md) |
+| ↳ | [android.view.inputmethod.EditorBoundsInfo](EditorBoundsInfo.md) |
 
 Container of rectangular position related info for the Editor.
 
@@ -21,27 +21,27 @@ Container of rectangular position related info for the Editor.
 
 | Nested classes ||
 |---|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](../android/view/inputmethod/EditorBoundsInfo.Builder.md) Builder for [EditorBoundsInfo](../android/view/inputmethod/EditorBoundsInfo.md). |
+| | [Builder](../android/view/inputmethod/EditorBoundsInfo.Builder.md) Builder for [EditorBoundsInfo](EditorBoundsInfo.md). |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android.os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android.os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android.os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |---------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/view/inputmethod/EditorBoundsInfo.md))`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/view/inputmethod/EditorBoundsInfo.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [RectF](../android/graphics/RectF.md)? | [getEditorBounds](../android/view/inputmethod/EditorBoundsInfo.md))`()` Returns the bounds of the Editor in local coordinates. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](EditorBoundsInfo.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](EditorBoundsInfo.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [RectF](../android.graphics/RectF.md)? | [getEditorBounds](EditorBoundsInfo.md))`()` Returns the bounds of the Editor in local coordinates. |
 | --- | --- |
-| [RectF](../android/graphics/RectF.md)? | [getHandwritingBounds](../android/view/inputmethod/EditorBoundsInfo.md))`()` Returns the bounds of the area that should be considered for initiating stylus handwriting in local coordinates. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/view/inputmethod/EditorBoundsInfo.md))`()` <br /> |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/view/inputmethod/EditorBoundsInfo.md))`()` <br /> |
+| [RectF](../android.graphics/RectF.md)? | [getHandwritingBounds](EditorBoundsInfo.md))`()` Returns the bounds of the area that should be considered for initiating stylus handwriting in local coordinates. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](EditorBoundsInfo.md))`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](EditorBoundsInfo.md))`()` <br /> |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/view/inputmethod/EditorBoundsInfo.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](EditorBoundsInfo.md))`(`dest:` ` [Parcel](../android.os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [EditorBoundsInfo](../android/view/inputmethod/EditorBoundsInfo.md)!\> | [CREATOR](../android/view/inputmethod/EditorBoundsInfo.md) Used to make this class parcelable. |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [EditorBoundsInfo](EditorBoundsInfo.md)!\> | [CREATOR](EditorBoundsInfo.md) Used to make this class parcelable. |
 
 ## Public methods
 
@@ -55,7 +55,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) |
 
 ### equals
 
@@ -93,11 +93,11 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 fun getEditorBounds(): RectF?
 ```
 
-Returns the bounds of the Editor in local coordinates. Screen coordinates can be obtained by transforming with the [CursorAnchorInfo.getMatrix](../android/view/inputmethod/CursorAnchorInfo.md))of the containing`CursorAnchorInfo`.
+Returns the bounds of the Editor in local coordinates. Screen coordinates can be obtained by transforming with the [CursorAnchorInfo.getMatrix](CursorAnchorInfo.md))of the containing`CursorAnchorInfo`.
 
 | Return ||
 |---------------------------------------------------------------------------------------|--------------------------|
-| [RectF](../android/graphics/RectF.md)? | This value may be`null`. |
+| [RectF](../android.graphics/RectF.md)? | This value may be`null`. |
 
 ### getHandwritingBounds
 
@@ -107,11 +107,11 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 fun getHandwritingBounds(): RectF?
 ```
 
-Returns the bounds of the area that should be considered for initiating stylus handwriting in local coordinates. Screen coordinates can be obtained by transforming with the [CursorAnchorInfo.getMatrix](../android/view/inputmethod/CursorAnchorInfo.md))of the containing`CursorAnchorInfo`.
+Returns the bounds of the area that should be considered for initiating stylus handwriting in local coordinates. Screen coordinates can be obtained by transforming with the [CursorAnchorInfo.getMatrix](CursorAnchorInfo.md))of the containing`CursorAnchorInfo`.
 
 | Return ||
 |---------------------------------------------------------------------------------------|--------------------------|
-| [RectF](../android/graphics/RectF.md)? | This value may be`null`. |
+| [RectF](../android.graphics/RectF.md)? | This value may be`null`. |
 
 ### hashCode
 
@@ -152,8 +152,8 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](../android/os/Parcel.md):This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android.os/Parcel.md):This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

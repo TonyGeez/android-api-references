@@ -4,20 +4,20 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 
 # AccountManagerCallback
 
-Kotlin| [Java](../android/accounts/AccountManagerCallback.md) 
+Kotlin| [Java](AccountManagerCallback.md) 
 | --- | --- |
 
 ```
 interface AccountManagerCallback<V : Any!>
 ```
 
-| [android.accounts.AccountManagerCallback](../android/accounts/AccountManagerCallback.md) |
+| [android.accounts.AccountManagerCallback](AccountManagerCallback.md) |
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [run](../android/accounts/AccountManagerCallback.md))`(`future:` ` [AccountManagerFuture](../android/accounts/AccountManagerFuture.md)<V>!`)` <br /> |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [run](AccountManagerCallback.md))`(`future:` ` [AccountManagerFuture](AccountManagerFuture.md)<V>!`)` <br /> |
 
 ## Public methods
 

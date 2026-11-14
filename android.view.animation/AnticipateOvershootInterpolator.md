@@ -2,7 +2,7 @@ Added in [API level 4](https://developer.android.com/guide/topics/manifest/uses-
 
 # AnticipateOvershootInterpolator
 
-Kotlin | [Java](../android/view/animation/AnticipateOvershootInterpolator.md)
+Kotlin | [Java](AnticipateOvershootInterpolator.md)
 | --- | --- |
 
 ```
@@ -11,8 +11,8 @@ open class AnticipateOvershootInterpolator : BaseInterpolator
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.view.animation.BaseInterpolator](../android/view/animation/BaseInterpolator.md) ||
-| | ↳ | [android.view.animation.AnticipateOvershootInterpolator](../android/view/animation/AnticipateOvershootInterpolator.md) |
+| ↳ | [android.view.animation.BaseInterpolator](BaseInterpolator.md) ||
+| | ↳ | [android.view.animation.AnticipateOvershootInterpolator](AnticipateOvershootInterpolator.md) |
 
 An interpolator where the change starts backward then flings forward and overshoots the target value and finally goes back to the final value.
 

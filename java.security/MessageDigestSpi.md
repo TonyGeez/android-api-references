@@ -10,9 +10,9 @@ abstract class MessageDigestSpi
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.MessageDigestSpi](../java/security/MessageDigestSpi.md) |
+| ↳ | [java.security.MessageDigestSpi](MessageDigestSpi.md) |
 
-| Known Direct Subclasses [MessageDigest](../java/security/MessageDigest.md) |---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------| | [MessageDigest](../java/security/MessageDigest.md) | This MessageDigest class provides applications the functionality of a message digest algorithm, such as SHA-1 or SHA-256. | |
+| Known Direct Subclasses [MessageDigest](MessageDigest.md) |---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------| | [MessageDigest](MessageDigest.md) | This MessageDigest class provides applications the functionality of a message digest algorithm, such as SHA-1 or SHA-256. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 This class defines the*Service Provider Interface* (**SPI** ) for the`MessageDigest`class, which provides the functionality of a message digest algorithm, such as MD5 or SHA. Message digests are secure one-way hash functions that take arbitrary-sized data and output a fixed-length hash value.
@@ -25,23 +25,23 @@ Implementations are free to implement the Cloneable interface.
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------|---|
-| [MessageDigestSpi](../java/security/MessageDigestSpi.md))`()` <br /> |
+| [MessageDigestSpi](MessageDigestSpi.md))`()` <br /> |
 
 | Public methods ||
 |---------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [clone](../java/security/MessageDigestSpi.md))`()` Returns a clone if the implementation is cloneable. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [clone](MessageDigestSpi.md))`()` Returns a clone if the implementation is cloneable. |
 
 | Protected methods ||
 |--------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [engineDigest](../java/security/MessageDigestSpi.md))`()` Completes the hash computation by performing final operations such as padding. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [engineDigest](../java/security/MessageDigestSpi.md))`(`buf:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Completes the hash computation by performing final operations such as padding. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [engineGetDigestLength](../java/security/MessageDigestSpi.md))`()` Returns the digest length in bytes. |
+| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [engineDigest](MessageDigestSpi.md))`()` Completes the hash computation by performing final operations such as padding. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [engineDigest](MessageDigestSpi.md))`(`buf:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Completes the hash computation by performing final operations such as padding. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [engineGetDigestLength](MessageDigestSpi.md))`()` Returns the digest length in bytes. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineReset](../java/security/MessageDigestSpi.md))`()` Resets the digest for further use. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineUpdate](../java/security/MessageDigestSpi.md))`(`input:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Updates the digest using the specified byte. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineUpdate](../java/security/MessageDigestSpi.md))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Updates the digest using the specified array of bytes, starting at the specified offset. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineReset](MessageDigestSpi.md))`()` Resets the digest for further use. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineUpdate](MessageDigestSpi.md))`(`input:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Updates the digest using the specified byte. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineUpdate](MessageDigestSpi.md))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Updates the digest using the specified array of bytes, starting at the specified offset. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineUpdate](../java/security/MessageDigestSpi.md))`(`input:` ` [ByteBuffer](../java/nio/ByteBuffer.md)!`)` Update the digest using the specified ByteBuffer. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineUpdate](MessageDigestSpi.md))`(`input:` ` [ByteBuffer](../java.nio/ByteBuffer.md)!`)` Update the digest using the specified ByteBuffer. |
 
 ## Public constructors
 
@@ -84,7 +84,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 protected abstract fun engineDigest(): ByteArray!
 ```
 
-Completes the hash computation by performing final operations such as padding. Once`engineDigest`has been called, the engine should be reset (see [engineReset](../java/security/MessageDigestSpi.md))). Resetting is the responsibility of the engine implementor.
+Completes the hash computation by performing final operations such as padding. Once`engineDigest`has been called, the engine should be reset (see [engineReset](MessageDigestSpi.md))). Resetting is the responsibility of the engine implementor.
 
 | Return ||
 |------------------------------------------------------------------------------------------|--------------------------------------------------|
@@ -102,7 +102,7 @@ protected open fun engineDigest(
 ): Int
 ```
 
-Completes the hash computation by performing final operations such as padding. Once`engineDigest`has been called, the engine should be reset (see [engineReset](../java/security/MessageDigestSpi.md))). Resetting is the responsibility of the engine implementor. This method should be abstract, but we leave it concrete for binary compatibility. Knowledgeable providers should override this method.
+Completes the hash computation by performing final operations such as padding. Once`engineDigest`has been called, the engine should be reset (see [engineReset](MessageDigestSpi.md))). Resetting is the responsibility of the engine implementor. This method should be abstract, but we leave it concrete for binary compatibility. Knowledgeable providers should override this method.
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -196,4 +196,4 @@ Update the digest using the specified ByteBuffer. The digest is updated using th
 
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------|
-| `input` | [ByteBuffer](../java/nio/ByteBuffer.md)!:the ByteBuffer |
+| `input` | [ByteBuffer](../java.nio/ByteBuffer.md)!:the ByteBuffer |

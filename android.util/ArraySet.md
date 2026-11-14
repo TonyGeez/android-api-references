@@ -4,7 +4,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 
 # ArraySet
 
-Kotlin| [Java](../android/util/ArraySet.md) 
+Kotlin| [Java](ArraySet.md) 
 | --- | --- |
 
 ```
@@ -13,9 +13,9 @@ class ArraySet<E : Any!> : MutableCollection<E>, MutableSet<E>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.util.ArraySet](../android/util/ArraySet.md) |
+| ↳ | [android.util.ArraySet](ArraySet.md) |
 
-ArraySet is a generic set data structure that is designed to be more memory efficient than a traditional [java.util.HashSet](../java/util/HashSet.md). The design is very similar to [ArrayMap](../android/util/ArrayMap.md), with all of the caveats described there. This implementation is separate from ArrayMap, however, so the Object array contains only one item for each entry in the set (instead of a pair for a mapping).
+ArraySet is a generic set data structure that is designed to be more memory efficient than a traditional [java.util.HashSet](../java.util/HashSet.md). The design is very similar to [ArrayMap](ArrayMap.md), with all of the caveats described there. This implementation is separate from ArrayMap, however, so the Object array contains only one item for each entry in the set (instead of a pair for a mapping).
 
 Note that this implementation is not intended to be appropriate for data structures that may contain large numbers of items. It is generally slower than a traditional HashSet, since lookups require a binary search and adds and removes require inserting and deleting entries in the array. For containers holding up to hundreds of items, the performance difference is not significant, less than 50%.
 
@@ -27,48 +27,48 @@ This structure is**NOT**thread-safe.
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ArraySet](../android/util/ArraySet.md))`()` Create a new empty ArraySet. |
-| [ArraySet](../android/util/ArraySet.md))`(`set:` ` [ArraySet](../android/util/ArraySet.md)<E>!`)` Create a new ArraySet with the mappings from the given ArraySet. |
-| [ArraySet](../android/util/ArraySet.md))`(`array:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<E>?`)` Create a new ArraySet with items from the given array |
-| [ArraySet](../android/util/ArraySet.md))`(`capacity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a new ArraySet with a given initial capacity. |
-| [ArraySet](../android/util/ArraySet.md))`(`set:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` `E>!`)` Create a new ArraySet with items from the given collection. |
+| [ArraySet](ArraySet.md))`()` Create a new empty ArraySet. |
+| [ArraySet](ArraySet.md))`(`set:` ` [ArraySet](ArraySet.md)<E>!`)` Create a new ArraySet with the mappings from the given ArraySet. |
+| [ArraySet](ArraySet.md))`(`array:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<E>?`)` Create a new ArraySet with items from the given array |
+| [ArraySet](ArraySet.md))`(`capacity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a new ArraySet with a given initial capacity. |
+| [ArraySet](ArraySet.md))`(`set:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` `E>!`)` Create a new ArraySet with items from the given collection. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [add](../android/util/ArraySet.md))`(`element:` `E`)` Adds the specified object to this set. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addAll](../android/util/ArraySet.md))`(`array:` ` [ArraySet](../android/util/ArraySet.md)<out` `E>!`)` Perform a [add(java.lang.Object)](../android/util/ArraySet.md))of all values in array |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addAll](../android/util/ArraySet.md))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` Perform an [add(java.lang.Object)](../android/util/ArraySet.md))of all values in collection |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [add](ArraySet.md))`(`element:` `E`)` Adds the specified object to this set. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addAll](ArraySet.md))`(`array:` ` [ArraySet](ArraySet.md)<out` `E>!`)` Perform a [add(java.lang.Object)](ArraySet.md))of all values in array |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addAll](ArraySet.md))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` Perform an [add(java.lang.Object)](ArraySet.md))of all values in collection |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](../android/util/ArraySet.md))`()` Make the array map empty. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [contains](../android/util/ArraySet.md))`(`element:` `E`)` Check whether a value exists in the set. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsAll](../android/util/ArraySet.md))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` Determine if the array set contains all of the values in the given collection. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](ArraySet.md))`()` Make the array map empty. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [contains](ArraySet.md))`(`element:` `E`)` Check whether a value exists in the set. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsAll](ArraySet.md))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` Determine if the array set contains all of the values in the given collection. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [ensureCapacity](../android/util/ArraySet.md))`(`minimumCapacity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Ensure the array map can hold at least minimumCapacity items. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/util/ArraySet.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](../android/util/ArraySet.md))`(`action:` ` [Consumer](../java/util/function/Consumer.md)<in` `E>`)` Performs the given action for all elements in the stored order. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [ensureCapacity](ArraySet.md))`(`minimumCapacity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Ensure the array map can hold at least minimumCapacity items. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](ArraySet.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](ArraySet.md))`(`action:` ` [Consumer](../java.util.function/Consumer.md)<in` `E>`)` Performs the given action for all elements in the stored order. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/util/ArraySet.md))`()` Returns a hash code value for the object. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [indexOf](../android/util/ArraySet.md))`(`key:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Returns the index of a value in the set. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](../android/util/ArraySet.md))`()` Return true if the array map contains no items. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](ArraySet.md))`()` Returns a hash code value for the object. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [indexOf](ArraySet.md))`(`key:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Returns the index of a value in the set. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](ArraySet.md))`()` Return true if the array map contains no items. |
 | --- | --- |
-| [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\<E\> | [iterator](../android/util/ArraySet.md))`()` Return an [java.util.Iterator](../java/util/Iterator.md) over all values in the set. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [remove](../android/util/ArraySet.md))`(`element:` `E`)` Removes the specified object from this set. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeAll](../android/util/ArraySet.md))`(`array:` ` [ArraySet](../android/util/ArraySet.md)<out` `E>!`)` Perform a [remove(java.lang.Object)](../android/util/ArraySet.md))of all values in array |
+| [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\<E\> | [iterator](ArraySet.md))`()` Return an [java.util.Iterator](../java.util/Iterator.md) over all values in the set. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [remove](ArraySet.md))`(`element:` `E`)` Removes the specified object from this set. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeAll](ArraySet.md))`(`array:` ` [ArraySet](ArraySet.md)<out` `E>!`)` Perform a [remove(java.lang.Object)](ArraySet.md))of all values in array |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeAll](../android/util/ArraySet.md))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` Remove all values in the array set that exist in the given collection. |
-| E | [removeAt](../android/util/ArraySet.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Remove the key/value mapping at the given index. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeIf](../android/util/ArraySet.md))`(`filter:` ` [Predicate](../java/util/function/Predicate.md)<in` `E>`)` Removes all values that satisfy the predicate. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeAll](ArraySet.md))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` Remove all values in the array set that exist in the given collection. |
+| E | [removeAt](ArraySet.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Remove the key/value mapping at the given index. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeIf](ArraySet.md))`(`filter:` ` [Predicate](../java.util.function/Predicate.md)<in` `E>`)` Removes all values that satisfy the predicate. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [retainAll](../android/util/ArraySet.md))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` Remove all values in the array set that do**not**exist in the given collection. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | [toArray](../android/util/ArraySet.md))`()` <br /> |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>! | [toArray](../android/util/ArraySet.md))`(`array:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<T>!`)` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [retainAll](ArraySet.md))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` Remove all values in the array set that do**not**exist in the given collection. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | [toArray](ArraySet.md))`()` <br /> |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>! | [toArray](ArraySet.md))`(`array:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<T>!`)` <br /> |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/util/ArraySet.md))`()` Returns a string representation of the object. |
-| E | [valueAt](../android/util/ArraySet.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the value at the given index in the array. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](ArraySet.md))`()` Returns a string representation of the object. |
+| E | [valueAt](ArraySet.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the value at the given index in the array. |
 
 | Properties ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [size](../android/util/ArraySet.md) Return the number of items in this array map. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [size](ArraySet.md) Return the number of items in this array map. |
 
 ## Public constructors
 
@@ -164,11 +164,11 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 fun addAll(array: ArraySet<out E>!): Unit
 ```
 
-Perform a [add(java.lang.Object)](../android/util/ArraySet.md))of all values in array
+Perform a [add(java.lang.Object)](ArraySet.md))of all values in array
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------------------------------|
-| `array` | [ArraySet](../android/util/ArraySet.md)\<outE\>!:The array whose contents are to be retrieved. |
+| `array` | [ArraySet](ArraySet.md)\<outE\>!:The array whose contents are to be retrieved. |
 
 ### addAll
 
@@ -178,7 +178,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 fun addAll(elements: Collection<E>): Boolean
 ```
 
-Perform an [add(java.lang.Object)](../android/util/ArraySet.md))of all values in collection
+Perform an [add(java.lang.Object)](ArraySet.md))of all values in collection
 
 | Parameters ||
 |--------------|--------------------------------------------------------|
@@ -315,7 +315,7 @@ Performs the given action for all elements in the stored order. This implementat
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| `action` | [Consumer](../java/util/function/Consumer.md)\<inE\>:The action to be performed for each element |
+| `action` | [Consumer](../java.util.function/Consumer.md)\<inE\>:The action to be performed for each element |
 
 | Exceptions ||
 |----------------------------------|---------------------------------|
@@ -329,13 +329,13 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 fun hashCode(): Int
 ```
 
-Returns a hash code value for the object. This method is supported for the benefit of hash tables such as those provided by [java.util.HashMap](../java/util/HashMap.md).
+Returns a hash code value for the object. This method is supported for the benefit of hash tables such as those provided by [java.util.HashMap](../java.util/HashMap.md).
 
 The general contract of`hashCode`is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the`hashCode`method must consistently return the same integer, provided no information used in`equals`comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the [equals](../java/lang/Object.md))method, then calling the`hashCode`method on each of the two objects must produce the same integer result.
-- It is*not* required that if two objects are unequal according to the [equals](../java/lang/Object.md))method, then calling the`hashCode`method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the [equals](../java.lang/Object.md))method, then calling the`hashCode`method on each of the two objects must produce the same integer result.
+- It is*not* required that if two objects are unequal according to the [equals](../java.lang/Object.md))method, then calling the`hashCode`method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------|
@@ -381,7 +381,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 fun iterator(): MutableIterator<E>
 ```
 
-Return an [java.util.Iterator](../java/util/Iterator.md) over all values in the set.
+Return an [java.util.Iterator](../java.util/Iterator.md) over all values in the set.
 
 **Note:**this is a fairly inefficient way to access the array contents, it requires generating a number of temporary objects and allocates additional state information associated with the container that will remain for the life of the container.
 
@@ -423,11 +423,11 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 fun removeAll(array: ArraySet<out E>!): Boolean
 ```
 
-Perform a [remove(java.lang.Object)](../android/util/ArraySet.md))of all values in array
+Perform a [remove(java.lang.Object)](ArraySet.md))of all values in array
 
 | Parameters ||
 |---------|----------------------------------------------------------------------------------------------------------------------------------------|
-| `array` | [ArraySet](../android/util/ArraySet.md)\<outE\>!:The array whose contents are to be removed. |
+| `array` | [ArraySet](ArraySet.md)\<outE\>!:The array whose contents are to be removed. |
 
 ### removeAll
 
@@ -465,11 +465,11 @@ fun removeAt(index: Int): E
 
 Remove the key/value mapping at the given index.
 
-For indices outside of the range`0...size()-1`, the behavior is undefined for apps targeting [android.os.Build.VERSION_CODES#P](../android/os/Build.VERSION_CODES.md) and earlier, and an [ArrayIndexOutOfBoundsException](../java/lang/ArrayIndexOutOfBoundsException.md) is thrown for apps targeting [android.os.Build.VERSION_CODES#Q](../android/os/Build.VERSION_CODES.md) and later.
+For indices outside of the range`0...size()-1`, the behavior is undefined for apps targeting [android.os.Build.VERSION_CODES#P](../android/os/Build.VERSION_CODES.md) and earlier, and an [ArrayIndexOutOfBoundsException](../java.lang/ArrayIndexOutOfBoundsException.md) is thrown for apps targeting [android.os.Build.VERSION_CODES#Q](../android/os/Build.VERSION_CODES.md) and later.
 
 | Parameters ||
 |---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The desired index, must be between 0 and [size()](../android/util/ArraySet.md)-1. |
+| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The desired index, must be between 0 and [size()](ArraySet.md)-1. |
 
 | Return ||
 |---|--------------------------------------------------|
@@ -487,7 +487,7 @@ Removes all values that satisfy the predicate. This implementation avoids using 
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `filter` | [Predicate](../java/util/function/Predicate.md)\<inE\>:A predicate which returns true for elements to be removed |
+| `filter` | [Predicate](../java.util.function/Predicate.md)\<inE\>:A predicate which returns true for elements to be removed |
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------|
@@ -584,11 +584,11 @@ fun valueAt(index: Int): E
 
 Return the value at the given index in the array.
 
-For indices outside of the range`0...size()-1`, the behavior is undefined for apps targeting [android.os.Build.VERSION_CODES#P](../android/os/Build.VERSION_CODES.md) and earlier, and an [ArrayIndexOutOfBoundsException](../java/lang/ArrayIndexOutOfBoundsException.md) is thrown for apps targeting [android.os.Build.VERSION_CODES#Q](../android/os/Build.VERSION_CODES.md) and later.
+For indices outside of the range`0...size()-1`, the behavior is undefined for apps targeting [android.os.Build.VERSION_CODES#P](../android/os/Build.VERSION_CODES.md) and earlier, and an [ArrayIndexOutOfBoundsException](../java.lang/ArrayIndexOutOfBoundsException.md) is thrown for apps targeting [android.os.Build.VERSION_CODES#Q](../android/os/Build.VERSION_CODES.md) and later.
 
 | Parameters ||
 |---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The desired index, must be between 0 and [size()](../android/util/ArraySet.md)-1. |
+| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The desired index, must be between 0 and [size()](ArraySet.md)-1. |
 
 | Return ||
 |---|----------------------------------------------|

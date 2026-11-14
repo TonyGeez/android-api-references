@@ -5,7 +5,7 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 
 # Matrix2f
 
-Kotlin| [Java](../android/renderscript/Matrix2f.md) 
+Kotlin| [Java](Matrix2f.md) 
 | --- | --- |
 
 ```
@@ -14,7 +14,7 @@ open class Matrix2f
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.renderscript.Matrix2f](../android/renderscript/Matrix2f.md) |
+| ↳ | [android.renderscript.Matrix2f](Matrix2f.md) |
 
 | **This class was deprecated in API level 31.**
 |
@@ -26,26 +26,26 @@ Class for exposing the native RenderScript rs_matrix2x2 type back to the Android
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Matrix2f](../android/renderscript/Matrix2f.md))`()` Creates a new identity 2x2 matrix |
-| [Matrix2f](../android/renderscript/Matrix2f.md))`(`dataArray:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`)` Creates a new matrix and sets its values from the given parameter |
+| [Matrix2f](Matrix2f.md))`()` Creates a new identity 2x2 matrix |
+| [Matrix2f](Matrix2f.md))`(`dataArray:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`)` Creates a new matrix and sets its values from the given parameter |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [get](../android/renderscript/Matrix2f.md))`(`x:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `y:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value for a given row and column |
-| open [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)! | [getArray](../android/renderscript/Matrix2f.md))`()` Return a reference to the internal array representing matrix values. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [load](../android/renderscript/Matrix2f.md))`(`src:` ` [Matrix2f](../android/renderscript/Matrix2f.md)!`)` Sets the values of the matrix to those of the parameter |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [get](Matrix2f.md))`(`x:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `y:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the value for a given row and column |
+| open [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)! | [getArray](Matrix2f.md))`()` Return a reference to the internal array representing matrix values. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [load](Matrix2f.md))`(`src:` ` [Matrix2f](Matrix2f.md)!`)` Sets the values of the matrix to those of the parameter |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [loadIdentity](../android/renderscript/Matrix2f.md))`()` Sets the matrix values to identity |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [loadMultiply](../android/renderscript/Matrix2f.md))`(`lhs:` ` [Matrix2f](../android/renderscript/Matrix2f.md)!`, `rhs:` ` [Matrix2f](../android/renderscript/Matrix2f.md)!`)` Sets current values to be the result of multiplying two given matrices |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [loadRotate](../android/renderscript/Matrix2f.md))`(`rot:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets current values to be a rotation matrix of given angle |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [loadIdentity](Matrix2f.md))`()` Sets the matrix values to identity |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [loadMultiply](Matrix2f.md))`(`lhs:` ` [Matrix2f](Matrix2f.md)!`, `rhs:` ` [Matrix2f](Matrix2f.md)!`)` Sets current values to be the result of multiplying two given matrices |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [loadRotate](Matrix2f.md))`(`rot:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets current values to be a rotation matrix of given angle |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [loadScale](../android/renderscript/Matrix2f.md))`(`x:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `y:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets current values to be a scale matrix of given dimensions |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [multiply](../android/renderscript/Matrix2f.md))`(`rhs:` ` [Matrix2f](../android/renderscript/Matrix2f.md)!`)` Post-multiplies the current matrix by a given parameter |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [rotate](../android/renderscript/Matrix2f.md))`(`rot:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Modifies the current matrix by post-multiplying it with a rotation matrix of given angle |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [loadScale](Matrix2f.md))`(`x:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `y:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets current values to be a scale matrix of given dimensions |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [multiply](Matrix2f.md))`(`rhs:` ` [Matrix2f](Matrix2f.md)!`)` Post-multiplies the current matrix by a given parameter |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [rotate](Matrix2f.md))`(`rot:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Modifies the current matrix by post-multiplying it with a rotation matrix of given angle |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [scale](../android/renderscript/Matrix2f.md))`(`x:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `y:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Modifies the current matrix by post-multiplying it with a scale matrix of given dimensions |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [set](../android/renderscript/Matrix2f.md))`(`x:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `y:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `v:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the value for a given row and column |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [transpose](../android/renderscript/Matrix2f.md))`()` Sets the current matrix to its transpose |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [scale](Matrix2f.md))`(`x:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `y:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Modifies the current matrix by post-multiplying it with a scale matrix of given dimensions |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [set](Matrix2f.md))`(`x:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `y:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `v:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the value for a given row and column |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [transpose](Matrix2f.md))`()` Sets the current matrix to its transpose |
 | --- | --- |
 
 ## Public constructors
@@ -130,7 +130,7 @@ Sets the values of the matrix to those of the parameter
 
 | Parameters ||
 |-------|---------------------------------------------------------------------------------------------------------------------------|
-| `src` | [Matrix2f](../android/renderscript/Matrix2f.md)!:matrix to load the values from |
+| `src` | [Matrix2f](Matrix2f.md)!:matrix to load the values from |
 
 ### loadIdentity
 
@@ -161,8 +161,8 @@ Sets current values to be the result of multiplying two given matrices
 
 | Parameters ||
 |-------|-------------------------------------------------------------------------------------------------------------------|
-| `lhs` | [Matrix2f](../android/renderscript/Matrix2f.md)!:left hand side matrix |
-| `rhs` | [Matrix2f](../android/renderscript/Matrix2f.md)!:right hand side matrix |
+| `lhs` | [Matrix2f](Matrix2f.md)!:left hand side matrix |
+| `rhs` | [Matrix2f](Matrix2f.md)!:right hand side matrix |
 
 ### loadRotate
 
@@ -214,7 +214,7 @@ Post-multiplies the current matrix by a given parameter
 
 | Parameters ||
 |-------|---------------------------------------------------------------------------------------------------------------------------|
-| `rhs` | [Matrix2f](../android/renderscript/Matrix2f.md)!:right hand side to multiply by |
+| `rhs` | [Matrix2f](Matrix2f.md)!:right hand side to multiply by |
 
 ### rotate
 

@@ -39,7 +39,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 abstract fun request(n: Long): Unit
 ```
 
-Adds the given number`n`of items to the current unfulfilled demand for this subscription. If`n`is less than or equal to zero, the Subscriber will receive an`onError`signal with an [IllegalArgumentException](../java/lang/IllegalArgumentException.md) argument. Otherwise, the Subscriber will receive up to`n`additional`onNext`invocations (or fewer if terminated).
+Adds the given number`n`of items to the current unfulfilled demand for this subscription. If`n`is less than or equal to zero, the Subscriber will receive an`onError`signal with an [IllegalArgumentException](../java.lang/IllegalArgumentException.md) argument. Otherwise, the Subscriber will receive up to`n`additional`onNext`invocations (or fewer if terminated).
 
 | Parameters ||
 |-----|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

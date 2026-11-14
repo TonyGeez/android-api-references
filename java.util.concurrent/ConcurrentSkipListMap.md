@@ -8,14 +8,14 @@ open class ConcurrentSkipListMap<K : Any!, V : Any!> : AbstractMap<K, V>,
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.util.AbstractMap](../java/util/AbstractMap.md)\<K, V\> ||
-| | ↳ | [java.util.concurrent.ConcurrentSkipListMap](../java/util/concurrent/ConcurrentSkipListMap.md) |
+| ↳ | [java.util.AbstractMap](../java.util/AbstractMap.md)\<K, V\> ||
+| | ↳ | [java.util.concurrent.ConcurrentSkipListMap](ConcurrentSkipListMap.md) |
 
-A scalable concurrent `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentNavigableMap` implementation. The map is sorted according to the [natural](../java/lang/Comparable.md) of its keys, or by a `https://developer.android.com/reference/kotlin/java/util/Comparator.html#` provided at map creation time, depending on which constructor is used.
+A scalable concurrent `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentNavigableMap` implementation. The map is sorted according to the [natural](../java.lang/Comparable.md) of its keys, or by a `https://developer.android.com/reference/kotlin/java/util/Comparator.html#` provided at map creation time, depending on which constructor is used.
 
 This class implements a concurrent variant of [SkipLists](http://en.wikipedia.org/wiki/Skip_list) providing expected average *log(n)* time cost for the `containsKey`, `get`, `put` and `remove` operations and their variants. Insertion, removal, update, and access operations safely execute concurrently by multiple threads.
 
-Iterators and spliterators are [*weakly consistent*](../java/util/concurrent/_package.md).
+Iterators and spliterators are [*weakly consistent*](_package.md).
 
 Ascending key ordered views and their iterators are faster than descending ones.
 
@@ -31,9 +31,9 @@ This class is a member of the [Java Collections Framework](https://developer.and
 
 | Public constructors ||
 |---|---|
-| `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#ConcurrentSkipListMap()()` Constructs a new, empty map, sorted according to the [natural ordering](../java/lang/Comparable.md) of the keys. |
+| `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#ConcurrentSkipListMap()()` Constructs a new, empty map, sorted according to the [natural ordering](../java.lang/Comparable.md) of the keys. |
 | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#ConcurrentSkipListMap(java.util.Comparator)(comparator: https://developer.android.com/reference/kotlin/java/util/Comparator.html#<in K>!)` Constructs a new, empty map, sorted according to the specified comparator. |
-| `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#ConcurrentSkipListMap(kotlin.collections.MutableMap)(m: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<out K, out V>!)` Constructs a new map containing the same mappings as the given map, sorted according to the [natural ordering](../java/lang/Comparable.md) of the keys. |
+| `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#ConcurrentSkipListMap(kotlin.collections.MutableMap)(m: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<out K, out V>!)` Constructs a new map containing the same mappings as the given map, sorted according to the [natural ordering](../java.lang/Comparable.md) of the keys. |
 | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#ConcurrentSkipListMap(java.util.SortedMap)(m: https://developer.android.com/reference/kotlin/java/util/SortedMap.html#<K, out V>!)` Constructs a new map containing the same mappings and using the same ordering as the specified sorted map. |
 
 | Public methods ||
@@ -42,8 +42,8 @@ This class is a member of the [Java Collections Framework](https://developer.and
 | open K? | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#ceilingKey(java.util.concurrent.ConcurrentSkipListMap.K)(key: K)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#clear()()` Removes all of the mappings from this map. |
 | --- | --- |
-| open [ConcurrentSkipListMap](../java/util/concurrent/ConcurrentSkipListMap.md)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#clone()()` Returns a shallow copy of this `ConcurrentSkipListMap` instance. |
-| open [Comparator](../java/util/Comparator.md)\<in K\>? | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#comparator()()` Returns the comparator used to order the keys in this map, or `null` if this map uses the [natural ordering](../java/lang/Comparable.md) of its keys. |
+| open [ConcurrentSkipListMap](ConcurrentSkipListMap.md)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#clone()()` Returns a shallow copy of this `ConcurrentSkipListMap` instance. |
+| open [Comparator](../java.util/Comparator.md)\<in K\>? | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#comparator()()` Returns the comparator used to order the keys in this map, or `null` if this map uses the [natural ordering](../java.lang/Comparable.md) of its keys. |
 | open V? | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#compute(java.util.concurrent.ConcurrentSkipListMap.K,%20java.util.function.BiFunction)(key: K, remappingFunction: https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#<in K, in V?, out V?>)` Attempts to compute a mapping for the specified key and its current mapped value (or `null` if there is no current mapping). |
 | --- | --- |
 | open V | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#computeIfAbsent(java.util.concurrent.ConcurrentSkipListMap.K,%20java.util.function.Function)(key: K, mappingFunction: https://developer.android.com/reference/kotlin/java/util/function/Function.html#<in K, out V>)` If the specified key is not already associated with a value, attempts to compute its value using the given mapping function and enters it into this map unless `null`. |
@@ -54,8 +54,8 @@ This class is a member of the [Java Collections Framework](https://developer.and
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#containsValue(java.util.concurrent.ConcurrentSkipListMap.V)(value: V)` Returns `true` if this map maps one or more keys to the specified value. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#containsValue(java.util.concurrent.ConcurrentSkipListMap.V)(value: V)` Returns `true` if this map maps one or more keys to the specified value. |
 | --- | --- |
-| open [NavigableSet](../java/util/NavigableSet.md)\<K\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#descendingKeySet()()` Returns a reverse order `https://developer.android.com/reference/kotlin/java/util/NavigableSet.html#` view of the keys contained in this map. |
-| open [ConcurrentNavigableMap](../java/util/concurrent/ConcurrentNavigableMap.md)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#descendingMap()()` Returns a reverse order view of the mappings contained in this map. |
+| open [NavigableSet](../java.util/NavigableSet.md)\<K\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#descendingKeySet()()` Returns a reverse order `https://developer.android.com/reference/kotlin/java/util/NavigableSet.html#` view of the keys contained in this map. |
+| open [ConcurrentNavigableMap](ConcurrentNavigableMap.md)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#descendingMap()()` Returns a reverse order view of the mappings contained in this map. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Compares the specified object with this map for equality. |
 | --- | --- |
 | open [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K, V\>? | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#firstEntry()()` Returns a key-value mapping associated with the least key in this map, or `null` if the map is empty. |
@@ -68,9 +68,9 @@ This class is a member of the [Java Collections Framework](https://developer.and
 | --- | --- |
 | open V? | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#get(java.util.concurrent.ConcurrentSkipListMap.K)(key: K)` Returns the value to which the specified key is mapped, or `null` if this map contains no mapping for the key. |
 | open V | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#getOrDefault(java.util.concurrent.ConcurrentSkipListMap.K,%20java.util.concurrent.ConcurrentSkipListMap.V)(key: K, defaultValue: V)` Returns the value to which the specified key is mapped, or the given defaultValue if this map contains no mapping for the key. |
-| open [ConcurrentNavigableMap](../java/util/concurrent/ConcurrentNavigableMap.md)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#headMap(java.util.concurrent.ConcurrentSkipListMap.K)(toKey: K)` <br /> |
+| open [ConcurrentNavigableMap](ConcurrentNavigableMap.md)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#headMap(java.util.concurrent.ConcurrentSkipListMap.K)(toKey: K)` <br /> |
 | --- | --- |
-| open [ConcurrentNavigableMap](../java/util/concurrent/ConcurrentNavigableMap.md)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#headMap(java.util.concurrent.ConcurrentSkipListMap.K,%20kotlin.Boolean)(toKey: K, inclusive: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` <br /> |
+| open [ConcurrentNavigableMap](ConcurrentNavigableMap.md)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#headMap(java.util.concurrent.ConcurrentSkipListMap.K,%20kotlin.Boolean)(toKey: K, inclusive: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` <br /> |
 | open [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K, V\>? | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#higherEntry(java.util.concurrent.ConcurrentSkipListMap.K)(key: K)` Returns a key-value mapping associated with the least key strictly greater than the given key, or `null` if there is no such key. |
 | open K? | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#higherKey(java.util.concurrent.ConcurrentSkipListMap.K)(key: K)` <br /> |
 | --- | --- |
@@ -82,7 +82,7 @@ This class is a member of the [Java Collections Framework](https://developer.and
 | open K? | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#lowerKey(java.util.concurrent.ConcurrentSkipListMap.K)(key: K)` <br /> |
 | open V? | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#merge(java.util.concurrent.ConcurrentSkipListMap.K,%20java.util.concurrent.ConcurrentSkipListMap.V,%20java.util.function.BiFunction)(key: K, value: V, remappingFunction: https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#<in V, in V, out V?>)` If the specified key is not already associated with a value, associates it with the given value. |
 | --- | --- |
-| open [NavigableSet](../java/util/NavigableSet.md)\<K\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#navigableKeySet()()` Returns a `https://developer.android.com/reference/kotlin/java/util/NavigableSet.html#` view of the keys contained in this map. |
+| open [NavigableSet](../java.util/NavigableSet.md)\<K\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#navigableKeySet()()` Returns a `https://developer.android.com/reference/kotlin/java/util/NavigableSet.html#` view of the keys contained in this map. |
 | open [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K, V\>? | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#pollFirstEntry()()` Removes and returns a key-value mapping associated with the least key in this map, or `null` if the map is empty. |
 | open [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K, V\>? | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#pollLastEntry()()` Removes and returns a key-value mapping associated with the greatest key in this map, or `null` if the map is empty. |
 | --- | --- |
@@ -99,20 +99,20 @@ This class is a member of the [Java Collections Framework](https://developer.and
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#replace(java.util.concurrent.ConcurrentSkipListMap.K,%20java.util.concurrent.ConcurrentSkipListMap.V,%20java.util.concurrent.ConcurrentSkipListMap.V)(key: K, oldValue: V, newValue: V)` Replaces the entry for the specified key only if currently mapped to the specified value (optional operation). |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#replaceAll(java.util.function.BiFunction)(function: https://developer.android.com/reference/kotlin/java/util/function/BiFunction.html#<in K, in V, out V>)` Replaces each entry's value with the result of invoking the given function on that entry until all entries have been processed or the function throws an exception (optional operation). |
-| open [ConcurrentNavigableMap](../java/util/concurrent/ConcurrentNavigableMap.md)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#subMap(java.util.concurrent.ConcurrentSkipListMap.K,%20kotlin.Boolean,%20java.util.concurrent.ConcurrentSkipListMap.K,%20kotlin.Boolean)(fromKey: K, fromInclusive: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, toKey: K, toInclusive: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` <br /> |
-| open [ConcurrentNavigableMap](../java/util/concurrent/ConcurrentNavigableMap.md)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#subMap(java.util.concurrent.ConcurrentSkipListMap.K,%20java.util.concurrent.ConcurrentSkipListMap.K)(fromKey: K, toKey: K)` <br /> |
+| open [ConcurrentNavigableMap](ConcurrentNavigableMap.md)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#subMap(java.util.concurrent.ConcurrentSkipListMap.K,%20kotlin.Boolean,%20java.util.concurrent.ConcurrentSkipListMap.K,%20kotlin.Boolean)(fromKey: K, fromInclusive: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, toKey: K, toInclusive: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` <br /> |
+| open [ConcurrentNavigableMap](ConcurrentNavigableMap.md)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#subMap(java.util.concurrent.ConcurrentSkipListMap.K,%20java.util.concurrent.ConcurrentSkipListMap.K)(fromKey: K, toKey: K)` <br /> |
 | --- | --- |
-| open [ConcurrentNavigableMap](../java/util/concurrent/ConcurrentNavigableMap.md)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#tailMap(java.util.concurrent.ConcurrentSkipListMap.K)(fromKey: K)` <br /> |
-| open [ConcurrentNavigableMap](../java/util/concurrent/ConcurrentNavigableMap.md)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#tailMap(java.util.concurrent.ConcurrentSkipListMap.K,%20kotlin.Boolean)(fromKey: K, inclusive: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` <br /> |
+| open [ConcurrentNavigableMap](ConcurrentNavigableMap.md)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#tailMap(java.util.concurrent.ConcurrentSkipListMap.K)(fromKey: K)` <br /> |
+| open [ConcurrentNavigableMap](ConcurrentNavigableMap.md)\<K, V\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#tailMap(java.util.concurrent.ConcurrentSkipListMap.K,%20kotlin.Boolean)(fromKey: K, inclusive: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` <br /> |
 
 | Inherited functions ||
 |---|---|
-| From class `https://developer.android.com/reference/kotlin/java/util/AbstractMap.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/java/util/AbstractMap.html#hashCode()()` Returns the hash code value for this map. The hash code of a map is defined to be the sum of the hash codes of each entry in the map's `entrySet()` view. This ensures that `m1.equals(m2)` implies that `m1.hashCode()==m2.hashCode()` for any two maps `m1` and `m2`, as required by the general contract of `https://developer.android.com/reference/kotlin/java/lang/Object.html#hashCode()`. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` | `https://developer.android.com/reference/kotlin/java/util/AbstractMap.html#putAll(kotlin.collections.Map)(from: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html<out K, V>)` Copies all of the mappings from the specified map to this map (optional operation). The effect of this call is equivalent to that of calling `https://developer.android.com/reference/kotlin/java/util/Map.html#put(java.util.Map.K,%20java.util.Map.V)` on this map once for each mapping from key `k` to value `v` in the specified map. The behavior of this operation is undefined if the specified map is modified while the operation is in progress. If the specified map has a defined [encounter order](../java/util/SequencedCollection.md), processing of its mappings generally occurs in that order. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` | `https://developer.android.com/reference/kotlin/java/util/AbstractMap.html#toString()()` Returns a string representation of this map. The string representation consists of a list of key-value mappings in the order returned by the map's `entrySet` view's iterator, enclosed in braces (`"{}"`). Adjacent mappings are separated by the characters `", "` (comma and space). Each key-value mapping is rendered as the key followed by an equals sign (`"="`) followed by the associated value. Keys and values are converted to strings as by `https://developer.android.com/reference/kotlin/java/lang/String.html#valueOf(kotlin.Any)`. <br /> | ||
+| From class `https://developer.android.com/reference/kotlin/java/util/AbstractMap.html#` |---|---| | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` | `https://developer.android.com/reference/kotlin/java/util/AbstractMap.html#hashCode()()` Returns the hash code value for this map. The hash code of a map is defined to be the sum of the hash codes of each entry in the map's `entrySet()` view. This ensures that `m1.equals(m2)` implies that `m1.hashCode()==m2.hashCode()` for any two maps `m1` and `m2`, as required by the general contract of `https://developer.android.com/reference/kotlin/java/lang/Object.html#hashCode()`. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` | `https://developer.android.com/reference/kotlin/java/util/AbstractMap.html#putAll(kotlin.collections.Map)(from: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html<out K, V>)` Copies all of the mappings from the specified map to this map (optional operation). The effect of this call is equivalent to that of calling `https://developer.android.com/reference/kotlin/java/util/Map.html#put(java.util.Map.K,%20java.util.Map.V)` on this map once for each mapping from key `k` to value `v` in the specified map. The behavior of this operation is undefined if the specified map is modified while the operation is in progress. If the specified map has a defined [encounter order](../java.util/SequencedCollection.md), processing of its mappings generally occurs in that order. <br /> | | `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html` | `https://developer.android.com/reference/kotlin/java/util/AbstractMap.html#toString()()` Returns a string representation of this map. The string representation consists of a list of key-value mappings in the order returned by the map's `entrySet` view's iterator, enclosed in braces (`"{}"`). Adjacent mappings are separated by the characters `", "` (comma and space). Each key-value mapping is rendered as the key followed by an equals sign (`"="`) followed by the associated value. Keys and values are converted to strings as by `https://developer.android.com/reference/kotlin/java/lang/String.html#valueOf(kotlin.Any)`. <br /> | ||
 
 | Properties ||
 |---|---|
 | open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K, V\>\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#entries:kotlin.collections.MutableSet` Returns a `https://developer.android.com/reference/kotlin/java/util/Set.html#` view of the mappings contained in this map. |
-| open [NavigableSet](../java/util/NavigableSet.md)\<K\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#keys:java.util.NavigableSet` Returns a `https://developer.android.com/reference/kotlin/java/util/NavigableSet.html#` view of the keys contained in this map. |
+| open [NavigableSet](../java.util/NavigableSet.md)\<K\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#keys:java.util.NavigableSet` Returns a `https://developer.android.com/reference/kotlin/java/util/NavigableSet.html#` view of the keys contained in this map. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#size:kotlin.Int` Returns the number of key-value mappings in this map. |
 | --- | --- |
 | open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<V\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/ConcurrentSkipListMap#values:kotlin.collections.MutableCollection` Returns a `https://developer.android.com/reference/kotlin/java/util/Collection.html#` view of the values contained in this map. |
@@ -127,7 +127,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 ConcurrentSkipListMap()
 ```
 
-Constructs a new, empty map, sorted according to the [natural ordering](../java/lang/Comparable.md) of the keys.
+Constructs a new, empty map, sorted according to the [natural ordering](../java.lang/Comparable.md) of the keys.
 
 ### ConcurrentSkipListMap
 
@@ -141,7 +141,7 @@ Constructs a new, empty map, sorted according to the specified comparator.
 
 | Parameters ||
 |---|---|
-| `comparator` | [Comparator](../java/util/Comparator.md)\<in K\>!: the comparator that will be used to order this map. If `null`, the [natural](../java/lang/Comparable.md) of the keys will be used. |
+| `comparator` | [Comparator](../java.util/Comparator.md)\<in K\>!: the comparator that will be used to order this map. If `null`, the [natural](../java.lang/Comparable.md) of the keys will be used. |
 
 ### ConcurrentSkipListMap
 
@@ -151,7 +151,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 ConcurrentSkipListMap(m: MutableMap<out K, out V>!)
 ```
 
-Constructs a new map containing the same mappings as the given map, sorted according to the [natural ordering](../java/lang/Comparable.md) of the keys.
+Constructs a new map containing the same mappings as the given map, sorted according to the [natural ordering](../java.lang/Comparable.md) of the keys.
 
 | Parameters ||
 |---|---|
@@ -174,7 +174,7 @@ Constructs a new map containing the same mappings and using the same ordering as
 
 | Parameters ||
 |---|---|
-| `m` | [SortedMap](../java/util/SortedMap.md)\<K, out V\>!: the sorted map whose mappings are to be placed in this map, and whose comparator is to be used to sort this map |
+| `m` | [SortedMap](../java.util/SortedMap.md)\<K, out V\>!: the sorted map whose mappings are to be placed in this map, and whose comparator is to be used to sort this map |
 
 | Exceptions ||
 |---|---|
@@ -266,7 +266,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 open fun comparator(): Comparator<in K>?
 ```
 
-Returns the comparator used to order the keys in this map, or `null` if this map uses the [natural ordering](../java/lang/Comparable.md) of its keys.
+Returns the comparator used to order the keys in this map, or `null` if this map uses the [natural ordering](../java.lang/Comparable.md) of its keys.
 
 | Return ||
 |---|---|
@@ -288,7 +288,7 @@ Attempts to compute a mapping for the specified key and its current mapped value
 | Parameters ||
 |---|---|
 | `key` | K: key with which the specified value is to be associated |
-| `remappingFunction` | [BiFunction](../java/util/function/BiFunction.md)\<in K, in V?, out V?\>: the function to compute a value |
+| `remappingFunction` | [BiFunction](../java.util.function/BiFunction.md)\<in K, in V?, out V?\>: the function to compute a value |
 
 | Return ||
 |---|---|
@@ -318,7 +318,7 @@ If the specified key is not already associated with a value, attempts to compute
 | Parameters ||
 |---|---|
 | `key` | K: key with which the specified value is to be associated |
-| `mappingFunction` | [Function](../java/util/function/Function.md)\<in K, out V\>: the function to compute a value |
+| `mappingFunction` | [Function](../java.util.function/Function.md)\<in K, out V\>: the function to compute a value |
 
 | Return ||
 |---|---|
@@ -348,7 +348,7 @@ If the value for the specified key is present, attempts to compute a new mapping
 | Parameters ||
 |---|---|
 | `key` | K: key with which a value may be associated |
-| `remappingFunction` | [BiFunction](../java/util/function/BiFunction.md)\<in K, in V, out V?\>: the function to compute a value |
+| `remappingFunction` | [BiFunction](../java.util.function/BiFunction.md)\<in K, in V, out V?\>: the function to compute a value |
 
 | Return ||
 |---|---|
@@ -464,7 +464,7 @@ open fun descendingKeySet(): NavigableSet<K>
 
 Returns a reverse order `https://developer.android.com/reference/kotlin/java/util/NavigableSet.html#` view of the keys contained in this map. The set's iterator returns the keys in descending order. The set is backed by the map, so changes to the map are reflected in the set, and vice-versa. The set supports element removal, which removes the corresponding mapping from the map, via the `Iterator.remove`, `Set.remove`, `removeAll`, `retainAll`, and `clear` operations. It does not support the `add` or `addAll` operations.
 
-The view's iterators and spliterators are [*weakly consistent*](../java/util/concurrent/_package.md).
+The view's iterators and spliterators are [*weakly consistent*](_package.md).
 
 | Return ||
 |---|---|
@@ -591,7 +591,7 @@ Performs the given action for each entry in this map until all entries have been
 
 | Parameters ||
 |---|---|
-| `action` | [BiConsumer](../java/util/function/BiConsumer.md)\<in K, in V\>: The action to be performed for each entry |
+| `action` | [BiConsumer](../java.util.function/BiConsumer.md)\<in K, in V\>: The action to be performed for each entry |
 
 | Exceptions ||
 |---|---|
@@ -875,7 +875,7 @@ If the specified key is not already associated with a value, associates it with 
 |---|---|
 | `key` | K: key with which the specified value is to be associated |
 | `value` | V: the value to use if absent |
-| `remappingFunction` | [BiFunction](../java/util/function/BiFunction.md)\<in V, in V, out V?\>: the function to recompute a value if present |
+| `remappingFunction` | [BiFunction](../java.util.function/BiFunction.md)\<in V, in V, out V?\>: the function to recompute a value if present |
 | --- | --- |
 
 | Return ||
@@ -900,7 +900,7 @@ open fun navigableKeySet(): NavigableSet<K>
 
 Returns a `https://developer.android.com/reference/kotlin/java/util/NavigableSet.html#` view of the keys contained in this map. The set's iterator returns the keys in ascending order. The set is backed by the map, so changes to the map are reflected in the set, and vice-versa. The set supports element removal, which removes the corresponding mapping from the map, via the `Iterator.remove`, `Set.remove`, `removeAll`, `retainAll`, and `clear` operations. It does not support the `add` or `addAll` operations.
 
-The view's iterators and spliterators are [*weakly consistent*](../java/util/concurrent/_package.md).
+The view's iterators and spliterators are [*weakly consistent*](_package.md).
 
 | Return ||
 |---|---|
@@ -1208,7 +1208,7 @@ Replaces each entry's value with the result of invoking the given function on th
 
 | Parameters ||
 |---|---|
-| `function` | [BiFunction](../java/util/function/BiFunction.md)\<in K, in V, out V\>: the function to apply to each entry |
+| `function` | [BiFunction](../java.util.function/BiFunction.md)\<in K, in V, out V\>: the function to apply to each entry |
 
 | Exceptions ||
 |---|---|
@@ -1344,7 +1344,7 @@ The set's iterator returns the entries in ascending key order. The set's spliter
 
 The set is backed by the map, so changes to the map are reflected in the set, and vice-versa. The set supports element removal, which removes the corresponding mapping from the map, via the `Iterator.remove`, `Set.remove`, `removeAll`, `retainAll` and `clear` operations. It does not support the `add` or `addAll` operations.
 
-The view's iterators and spliterators are [*weakly consistent*](../java/util/concurrent/_package.md).
+The view's iterators and spliterators are [*weakly consistent*](_package.md).
 
 The `Map.Entry` elements traversed by the `iterator` or `spliterator` do *not* support the `setValue` operation.
 
@@ -1364,11 +1364,11 @@ Returns a `https://developer.android.com/reference/kotlin/java/util/NavigableSet
 
 The set's iterator returns the keys in ascending order. The set's spliterator additionally reports `https://developer.android.com/reference/kotlin/java/util/Spliterator.html#CONCURRENT:kotlin.Int`, `https://developer.android.com/reference/kotlin/java/util/Spliterator.html#NONNULL:kotlin.Int`, `https://developer.android.com/reference/kotlin/java/util/Spliterator.html#SORTED:kotlin.Int` and `https://developer.android.com/reference/kotlin/java/util/Spliterator.html#ORDERED:kotlin.Int`, with an encounter order that is ascending key order.
 
-The [spliterator's comparator](../java/util/Spliterator.md)) is `null` if the [map's comparator](../java/util/concurrent/ConcurrentSkipListMap.md)) is `null`. Otherwise, the spliterator's comparator is the same as or imposes the same total ordering as the map's comparator.
+The [spliterator's comparator](../java.util/Spliterator.md)) is `null` if the [map's comparator](ConcurrentSkipListMap.md)) is `null`. Otherwise, the spliterator's comparator is the same as or imposes the same total ordering as the map's comparator.
 
 The set is backed by the map, so changes to the map are reflected in the set, and vice-versa. The set supports element removal, which removes the corresponding mapping from the map, via the `Iterator.remove`, `Set.remove`, `removeAll`, `retainAll`, and `clear` operations. It does not support the `add` or `addAll` operations.
 
-The view's iterators and spliterators are [*weakly consistent*](../java/util/concurrent/_package.md).
+The view's iterators and spliterators are [*weakly consistent*](_package.md).
 
 This method is equivalent to method `navigableKeySet`.
 
@@ -1404,7 +1404,7 @@ The collection's iterator returns the values in ascending order of the correspon
 
 The collection is backed by the map, so changes to the map are reflected in the collection, and vice-versa. The collection supports element removal, which removes the corresponding mapping from the map, via the `Iterator.remove`, `Collection.remove`, `removeAll`, `retainAll` and `clear` operations. It does not support the `add` or `addAll` operations.
 
-The view's iterators and spliterators are [*weakly consistent*](../java/util/concurrent/_package.md).
+The view's iterators and spliterators are [*weakly consistent*](_package.md).
 
 | Return ||
 |---|---|

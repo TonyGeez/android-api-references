@@ -4,7 +4,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # Percentage
 
-Kotlin| [Java](../android/health/connect/datatypes/units/Percentage.md) 
+Kotlin| [Java](Percentage.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class Percentage : Comparable<Percentage!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.health.connect.datatypes.units.Percentage](../android/health/connect/datatypes/units/Percentage.md) |
+| ↳ | [android.health.connect.datatypes.units.Percentage](Percentage.md) |
 
 Represents a value as a percentage, not a fraction - for example 100%, 89.62%, etc.
 
@@ -21,13 +21,13 @@ Represents a value as a percentage, not a fraction - for example 100%, 89.62%, e
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](../android/health/connect/datatypes/units/Percentage.md))`(`other:` ` [Percentage](../android/health/connect/datatypes/units/Percentage.md)`)` Compares this object with the specified object for order. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/health/connect/datatypes/units/Percentage.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| static [Percentage](../android/health/connect/datatypes/units/Percentage.md) | [fromValue](../android/health/connect/datatypes/units/Percentage.md))`(`value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Creates a Percentage object with the specified value |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](Percentage.md))`(`other:` ` [Percentage](Percentage.md)`)` Compares this object with the specified object for order. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](Percentage.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| static [Percentage](Percentage.md) | [fromValue](Percentage.md))`(`value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Creates a Percentage object with the specified value |
 | --- | --- |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getValue](../android/health/connect/datatypes/units/Percentage.md))`()` Returns the percentage. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/health/connect/datatypes/units/Percentage.md))`()` Returns a hash code value for the object. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/health/connect/datatypes/units/Percentage.md))`()` <br /> |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getValue](Percentage.md))`()` Returns the percentage. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](Percentage.md))`()` Returns a hash code value for the object. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](Percentage.md))`()` <br /> |
 | --- | --- |
 
 ## Public methods
@@ -45,7 +45,7 @@ Compares this object with the specified object for order. Returns a negative int
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `o` | the object to be compared. |
-| `other` | [Percentage](../android/health/connect/datatypes/units/Percentage.md):the object to be compared. This value cannot be`null`. |
+| `other` | [Percentage](Percentage.md):the object to be compared. This value cannot be`null`. |
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
@@ -91,7 +91,7 @@ Creates a Percentage object with the specified value
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [Percentage](../android/health/connect/datatypes/units/Percentage.md) | This value cannot be`null`. |
+| [Percentage](Percentage.md) | This value cannot be`null`. |
 
 ### getValue
 

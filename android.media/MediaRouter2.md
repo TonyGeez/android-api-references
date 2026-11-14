@@ -8,7 +8,7 @@ class MediaRouter2
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.MediaRouter2](../android/media/MediaRouter2.md) |
+| ↳ | [android.media.MediaRouter2](MediaRouter2.md) |
 
 This API is not generally intended for third party application developers. Use the [AndroidX](https://developer.android.com/jetpack/androidx.html) [Media Router Library](../androidx/mediarouter/media/_package.md) for consistent behavior across all devices.
 
@@ -36,12 +36,12 @@ MediaRouter2 allows applications to control the routing of media channels and st
 | [MediaRouter2.RoutingController](../android/media/MediaRouter2.RoutingController.md)? | `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#getController(kotlin.String)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Gets a `https://developer.android.com/reference/kotlin/android/media/MediaRouter2.RoutingController` whose ID is equal to the given ID. |
 | --- | --- |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MediaRouter2.RoutingController](../android/media/MediaRouter2.RoutingController.md)!\> | `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#getControllers()()` Gets the list of currently active `https://developer.android.com/reference/kotlin/android/media/MediaRouter2.RoutingController` on which media can be played. |
-| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SuggestedDeviceInfo](../android/media/SuggestedDeviceInfo.md)!\>!\> | `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#getDeviceSuggestions()()` Gets the current suggested devices. |
-| static [MediaRouter2](../android/media/MediaRouter2.md) | `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#getInstance(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Gets an instance of the media router associated with the context. |
+| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SuggestedDeviceInfo](SuggestedDeviceInfo.md)!\>!\> | `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#getDeviceSuggestions()()` Gets the current suggested devices. |
+| static [MediaRouter2](MediaRouter2.md) | `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#getInstance(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Gets an instance of the media router associated with the context. |
 | --- | --- |
-| static [MediaRouter2](../android/media/MediaRouter2.md) | `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#getInstance(android.content.Context,%20kotlin.String,%20java.util.concurrent.Executor,%20java.lang.Runnable)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, clientPackageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, onInstanceInvalidatedListener: https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)` Returns a proxy MediaRouter2 instance that allows you to control the routing of an app specified by `clientPackageName`. |
-| [RouteListingPreference](../android/media/RouteListingPreference.md)? | `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#getRouteListingPreference()()` Returns the current `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference` of the target router. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MediaRoute2Info](../android/media/MediaRoute2Info.md)!\> | `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#getRoutes()()` Gets the unmodifiable list of `https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info` currently known to the media router. |
+| static [MediaRouter2](MediaRouter2.md) | `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#getInstance(android.content.Context,%20kotlin.String,%20java.util.concurrent.Executor,%20java.lang.Runnable)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, clientPackageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, onInstanceInvalidatedListener: https://developer.android.com/reference/kotlin/java/lang/Runnable.html#)` Returns a proxy MediaRouter2 instance that allows you to control the routing of an app specified by `clientPackageName`. |
+| [RouteListingPreference](RouteListingPreference.md)? | `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#getRouteListingPreference()()` Returns the current `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference` of the target router. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MediaRoute2Info](MediaRoute2Info.md)!\> | `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#getRoutes()()` Gets the unmodifiable list of `https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info` currently known to the media router. |
 | --- | --- |
 | [MediaRouter2.RoutingController](../android/media/MediaRouter2.RoutingController.md) | `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#getSystemController()()` Gets a `https://developer.android.com/reference/kotlin/android/media/MediaRouter2.RoutingController` which can control the routes provided by system. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#registerControllerCallback(java.util.concurrent.Executor,%20android.media.MediaRouter2.ControllerCallback)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/media/MediaRouter2.ControllerCallback)` Registers a `https://developer.android.com/reference/kotlin/android/media/MediaRouter2.ControllerCallback`. |
@@ -164,7 +164,7 @@ Gets an instance of the media router associated with the context.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md): This value cannot be `null`. |
+| `context` | [Context](../android.content/Context.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -200,11 +200,11 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md): The `https://developer.android.com/reference/kotlin/android/content/Context.html#` of the caller. This value cannot be `null`. |
+| `context` | [Context](../android.content/Context.md): The `https://developer.android.com/reference/kotlin/android/content/Context.html#` of the caller. This value cannot be `null`. |
 | `clientPackageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The package name of the app you want to control the routing of, or `"android"` to control the routing of the whole system. This value cannot be `null`. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): The `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` on which to invoke `onInstanceInvalidatedListener`. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` on which to invoke `onInstanceInvalidatedListener`. This value cannot be `null`. |
 | --- | --- |
-| `onInstanceInvalidatedListener` | [Runnable](../java/lang/Runnable.md): Callback for when the `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#` instance is invalidated due to lost permissions. This value cannot be `null`. |
+| `onInstanceInvalidatedListener` | [Runnable](../java.lang/Runnable.md): Callback for when the `https://developer.android.com/reference/kotlin/android/media/MediaRouter2#` instance is invalidated due to lost permissions. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -285,7 +285,7 @@ Registers a `https://developer.android.com/reference/kotlin/android/media/MediaR
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [MediaRouter2.ControllerCallback](../android/media/MediaRouter2.ControllerCallback.md): This value cannot be `null`. |
 
 **See Also**
@@ -309,7 +309,7 @@ Calls using a previously registered callback will overwrite the previous executo
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `deviceSuggestionsUpdatesCallback` | [MediaRouter2.DeviceSuggestionsUpdatesCallback](../android/media/MediaRouter2.DeviceSuggestionsUpdatesCallback.md): This value cannot be `null`. |
 
 ### registerRouteCallback
@@ -336,9 +336,9 @@ Any discovery preference passed by a #getInstance(android.content.Context,java.l
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `routeCallback` | [MediaRouter2.RouteCallback](../android/media/MediaRouter2.RouteCallback.md): This value cannot be `null`. |
-| `preference` | [RouteDiscoveryPreference](../android/media/RouteDiscoveryPreference.md): This value cannot be `null`. |
+| `preference` | [RouteDiscoveryPreference](RouteDiscoveryPreference.md): This value cannot be `null`. |
 | --- | --- |
 
 ### registerRouteListingPreferenceUpdatedCallback
@@ -358,8 +358,8 @@ Calls using a previously registered callback will overwrite the previous executo
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `routeListingPreferenceCallback` | [Consumer](../java/util/function/Consumer.md)\< [RouteListingPreference](../android/media/RouteListingPreference.md)!\>: This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `routeListingPreferenceCallback` | [Consumer](../java.util.function/Consumer.md)\< [RouteListingPreference](RouteListingPreference.md)!\>: This value cannot be `null`. |
 
 **See Also**
 
@@ -380,7 +380,7 @@ Registers a callback to get the result of `https://developer.android.com/referen
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): the executor to execute the callback on. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): the executor to execute the callback on. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [MediaRouter2.TransferCallback](../android/media/MediaRouter2.TransferCallback.md): the callback to register. This value cannot be `null`. |
 
 **See Also**
@@ -431,7 +431,7 @@ Suggestions will be expired automatically by the system, at which point you shou
 
 | Parameters ||
 |---|---|
-| `suggestedDeviceInfo` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SuggestedDeviceInfo](../android/media/SuggestedDeviceInfo.md)!\>: The `https://developer.android.com/reference/kotlin/android/media/SuggestedDeviceInfo` the router suggests should be provided to the user. This value cannot be `null`. |
+| `suggestedDeviceInfo` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SuggestedDeviceInfo](SuggestedDeviceInfo.md)!\>: The `https://developer.android.com/reference/kotlin/android/media/SuggestedDeviceInfo` the router suggests should be provided to the user. This value cannot be `null`. |
 
 ### setOnGetControllerHintsListener
 
@@ -471,7 +471,7 @@ Notes:
 
 | Parameters ||
 |---|---|
-| `routeListingPreference` | [RouteListingPreference](../android/media/RouteListingPreference.md)?: The `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference` for the system to use for route listing. When null, the system uses its default listing criteria. |
+| `routeListingPreference` | [RouteListingPreference](RouteListingPreference.md)?: The `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference` for the system to use for route listing. When null, the system uses its default listing criteria. |
 
 ### setRouteVolume
 
@@ -494,7 +494,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `route` | [MediaRoute2Info](../android/media/MediaRoute2Info.md): This value cannot be `null`. |
+| `route` | [MediaRoute2Info](MediaRoute2Info.md): This value cannot be `null`. |
 | `volume` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The new volume value between 0 and `https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info#getVolumeMax()`. |
 
 | Exceptions ||
@@ -569,7 +569,7 @@ Transfers the current media to the given route. If it's necessary a new `https:/
 
 | Parameters ||
 |---|---|
-| `route` | [MediaRoute2Info](../android/media/MediaRoute2Info.md): the route you want to transfer the current media to. This value cannot be `null`. |
+| `route` | [MediaRoute2Info](MediaRoute2Info.md): the route you want to transfer the current media to. This value cannot be `null`. |
 
 **See Also**
 
@@ -642,7 +642,7 @@ Unregisters the given callback to not receive `https://developer.android.com/ref
 
 | Parameters ||
 |---|---|
-| `callback` | [Consumer](../java/util/function/Consumer.md)\< [RouteListingPreference](../android/media/RouteListingPreference.md)!\>: This value cannot be `null`. |
+| `callback` | [Consumer](../java.util.function/Consumer.md)\< [RouteListingPreference](RouteListingPreference.md)!\>: This value cannot be `null`. |
 
 **See Also**
 

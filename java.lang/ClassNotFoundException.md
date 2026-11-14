@@ -11,10 +11,10 @@ open class ClassNotFoundException : ReflectiveOperationException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
-| | | ↳ | [java.lang.ReflectiveOperationException](../java/lang/ReflectiveOperationException.md) ||
+| | ↳ | [java.lang.Exception](Exception.md) |||
+| | | ↳ | [java.lang.ReflectiveOperationException](ReflectiveOperationException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.ClassNotFoundException](../java/lang/ClassNotFoundException.md) |
+| | | | ↳ | [java.lang.ClassNotFoundException](ClassNotFoundException.md) |
 
 Thrown when an application tries to load in a class through its string name using:
 
@@ -30,13 +30,13 @@ but no definition for the class with the specified name could be found.
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ClassNotFoundException](../java/lang/ClassNotFoundException.md))`()` Constructs a`ClassNotFoundException`with no detail message. |
-| [ClassNotFoundException](../java/lang/ClassNotFoundException.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a`ClassNotFoundException`with the specified detail message. |
-| [ClassNotFoundException](../java/lang/ClassNotFoundException.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `ex:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a`ClassNotFoundException`with the specified detail message and optional exception that was raised while loading the class. |
+| [ClassNotFoundException](ClassNotFoundException.md))`()` Constructs a`ClassNotFoundException`with no detail message. |
+| [ClassNotFoundException](ClassNotFoundException.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a`ClassNotFoundException`with the specified detail message. |
+| [ClassNotFoundException](ClassNotFoundException.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `ex:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a`ClassNotFoundException`with the specified detail message and optional exception that was raised while loading the class. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)! | [getException](../java/lang/ClassNotFoundException.md))`()` Returns the exception that was raised if an error occurred while attempting to load the class. |
+| open [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)! | [getException](ClassNotFoundException.md))`()` Returns the exception that was raised if an error occurred while attempting to load the class. |
 
 ## Public constructors
 

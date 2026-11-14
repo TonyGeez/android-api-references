@@ -6,7 +6,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 interface ErrorListener
 ```
 
-| [javax.xml.transform.ErrorListener](../javax/xml/transform/ErrorListener.md) |
+| [javax.xml.transform.ErrorListener](ErrorListener.md) |
 
 To provide customized error handling, implement this interface and use the `setErrorListener` method to register an instance of the implementation with the `https://developer.android.com/reference/kotlin/javax/xml/transform/Transformer`. The `Transformer` then reports all errors and warnings through this interface.
 
@@ -41,7 +41,7 @@ The transformer must continue to try and provide normal transformation after inv
 
 | Parameters ||
 |---|---|
-| `exception` | [TransformerException](../javax/xml/transform/TransformerException.md)!: The error information encapsulated in a transformer exception. |
+| `exception` | [TransformerException](TransformerException.md)!: The error information encapsulated in a transformer exception. |
 
 | Exceptions ||
 |---|---|
@@ -65,7 +65,7 @@ The `Transformer` must continue to try and provide normal transformation after i
 
 | Parameters ||
 |---|---|
-| `exception` | [TransformerException](../javax/xml/transform/TransformerException.md)!: The error information encapsulated in a `TransformerException`. |
+| `exception` | [TransformerException](TransformerException.md)!: The error information encapsulated in a `TransformerException`. |
 
 | Exceptions ||
 |---|---|
@@ -91,7 +91,7 @@ After invoking this method, the Transformer must continue with the transformatio
 
 | Parameters ||
 |---|---|
-| `exception` | [TransformerException](../javax/xml/transform/TransformerException.md)!: The warning information encapsulated in a transformer exception. |
+| `exception` | [TransformerException](TransformerException.md)!: The warning information encapsulated in a transformer exception. |
 
 | Exceptions ||
 |---|---|

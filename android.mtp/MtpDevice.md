@@ -4,7 +4,7 @@ Added in [API level 12](https://developer.android.com/guide/topics/manifest/uses
 
 # MtpDevice
 
-Kotlin | [Java](../android/mtp/MtpDevice.md) 
+Kotlin | [Java](MtpDevice.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class MtpDevice
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.mtp.MtpDevice](../android/mtp/MtpDevice.md) |
+| ↳ | [android.mtp.MtpDevice](MtpDevice.md) |
 
 This class represents an MTP or PTP device connected on the USB host bus. An application can instantiate an object of this type, by referencing an attached and then use methods in this class to get information about the device and objects stored on it, as well as open the connection and transfer data.
 
@@ -21,43 +21,43 @@ This class represents an MTP or PTP device connected on the USB host bus. An app
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [MtpDevice](../android/mtp/MtpDevice.md))`(`device:` ` [UsbDevice](../android/hardware/usb/UsbDevice.md)`)` MtpClient constructor |
+| [MtpDevice](MtpDevice.md))`(`device:` ` [UsbDevice](../android.hardware.usb/UsbDevice.md)`)` MtpClient constructor |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../android/mtp/MtpDevice.md))`()` Closes all resources related to the MtpDevice object. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [deleteObject](../android/mtp/MtpDevice.md))`(`objectHandle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Deletes an object on the device. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDeviceId](../android/mtp/MtpDevice.md))`()` Returns the USB ID of the USB device. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](MtpDevice.md))`()` Closes all resources related to the MtpDevice object. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [deleteObject](MtpDevice.md))`(`objectHandle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Deletes an object on the device. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDeviceId](MtpDevice.md))`()` Returns the USB ID of the USB device. |
 | --- | --- |
-| [MtpDeviceInfo](../android/mtp/MtpDeviceInfo.md)? | [getDeviceInfo](../android/mtp/MtpDevice.md))`()` Returns the [MtpDeviceInfo](../android/mtp/MtpDeviceInfo.md) for this device |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getDeviceName](../android/mtp/MtpDevice.md))`()` Returns the name of the USB device This returns the same value as android. |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | [getObject](../android/mtp/MtpDevice.md))`(`objectHandle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `objectSize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the data for an object as a byte array. |
+| [MtpDeviceInfo](MtpDeviceInfo.md)? | [getDeviceInfo](MtpDevice.md))`()` Returns the [MtpDeviceInfo](MtpDeviceInfo.md) for this device |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getDeviceName](MtpDevice.md))`()` Returns the name of the USB device This returns the same value as android. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | [getObject](MtpDevice.md))`(`objectHandle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `objectSize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the data for an object as a byte array. |
 | --- | --- |
-| [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)? | [getObjectHandles](../android/mtp/MtpDevice.md))`(`storageId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `format:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `objectHandle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the list of object handles for all objects on the given storage unit, with the given format and parent. |
-| [MtpObjectInfo](../android/mtp/MtpObjectInfo.md)? | [getObjectInfo](../android/mtp/MtpDevice.md))`(`objectHandle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves the [MtpObjectInfo](../android/mtp/MtpObjectInfo.md) for an object. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getParent](../android/mtp/MtpDevice.md))`(`objectHandle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves the object handle for the parent of an object on the device. |
+| [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)? | [getObjectHandles](MtpDevice.md))`(`storageId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `format:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `objectHandle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the list of object handles for all objects on the given storage unit, with the given format and parent. |
+| [MtpObjectInfo](MtpObjectInfo.md)? | [getObjectInfo](MtpDevice.md))`(`objectHandle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves the [MtpObjectInfo](MtpObjectInfo.md) for an object. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getParent](MtpDevice.md))`(`objectHandle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves the object handle for the parent of an object on the device. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getPartialObject](../android/mtp/MtpDevice.md))`(`objectHandle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `offset:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `size:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `buffer:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`)` Obtains object bytes in the specified range and writes it to an array. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getPartialObject64](../android/mtp/MtpDevice.md))`(`objectHandle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `offset:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `size:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `buffer:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`)` Obtains object bytes in the specified range and writes it to an array. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getStorageId](../android/mtp/MtpDevice.md))`(`objectHandle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves the ID of the storage unit containing the given object on the device. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getPartialObject](MtpDevice.md))`(`objectHandle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `offset:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `size:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `buffer:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`)` Obtains object bytes in the specified range and writes it to an array. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getPartialObject64](MtpDevice.md))`(`objectHandle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `offset:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `size:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `buffer:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`)` Obtains object bytes in the specified range and writes it to an array. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getStorageId](MtpDevice.md))`(`objectHandle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves the ID of the storage unit containing the given object on the device. |
 | --- | --- |
-| [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)? | [getStorageIds](../android/mtp/MtpDevice.md))`()` Returns the list of IDs for all storage units on this device Information about each storage unit can be accessed via [getStorageInfo](../android/mtp/MtpDevice.md)). |
-| [MtpStorageInfo](../android/mtp/MtpStorageInfo.md)? | [getStorageInfo](../android/mtp/MtpDevice.md))`(`storageId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves the [MtpStorageInfo](../android/mtp/MtpStorageInfo.md) for a storage unit. |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | [getThumbnail](../android/mtp/MtpDevice.md))`(`objectHandle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the thumbnail data for an object as a byte array. |
+| [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)? | [getStorageIds](MtpDevice.md))`()` Returns the list of IDs for all storage units on this device Information about each storage unit can be accessed via [getStorageInfo](MtpDevice.md)). |
+| [MtpStorageInfo](MtpStorageInfo.md)? | [getStorageInfo](MtpDevice.md))`(`storageId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves the [MtpStorageInfo](MtpStorageInfo.md) for a storage unit. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | [getThumbnail](MtpDevice.md))`(`objectHandle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the thumbnail data for an object as a byte array. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [importFile](../android/mtp/MtpDevice.md))`(`objectHandle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `descriptor:` ` [ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md)`)` Copies the data for an object to a file descriptor. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [importFile](../android/mtp/MtpDevice.md))`(`objectHandle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `destPath:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Copies the data for an object to a file in external storage. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [open](../android/mtp/MtpDevice.md))`(`connection:` ` [UsbDeviceConnection](../android/hardware/usb/UsbDeviceConnection.md)`)` Opens the MTP device. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [importFile](MtpDevice.md))`(`objectHandle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `descriptor:` ` [ParcelFileDescriptor](../android.os/ParcelFileDescriptor.md)`)` Copies the data for an object to a file descriptor. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [importFile](MtpDevice.md))`(`objectHandle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `destPath:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Copies the data for an object to a file in external storage. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [open](MtpDevice.md))`(`connection:` ` [UsbDeviceConnection](../android.hardware.usb/UsbDeviceConnection.md)`)` Opens the MTP device. |
 | --- | --- |
-| [MtpEvent](../android/mtp/MtpEvent.md) | [readEvent](../android/mtp/MtpDevice.md))`(`signal:` ` [CancellationSignal](../android/os/CancellationSignal.md)?`)` Reads an event from the device. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [sendObject](../android/mtp/MtpDevice.md))`(`objectHandle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `size:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `descriptor:` ` [ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md)`)` Copies the data for an object from a file descriptor. |
-| [MtpObjectInfo](../android/mtp/MtpObjectInfo.md)? | [sendObjectInfo](../android/mtp/MtpDevice.md))`(`info:` ` [MtpObjectInfo](../android/mtp/MtpObjectInfo.md)`)` Uploads an object metadata for a new entry. |
+| [MtpEvent](MtpEvent.md) | [readEvent](MtpDevice.md))`(`signal:` ` [CancellationSignal](../android.os/CancellationSignal.md)?`)` Reads an event from the device. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [sendObject](MtpDevice.md))`(`objectHandle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `size:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `descriptor:` ` [ParcelFileDescriptor](../android.os/ParcelFileDescriptor.md)`)` Copies the data for an object from a file descriptor. |
+| [MtpObjectInfo](MtpObjectInfo.md)? | [sendObjectInfo](MtpDevice.md))`(`info:` ` [MtpObjectInfo](MtpObjectInfo.md)`)` Uploads an object metadata for a new entry. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/mtp/MtpDevice.md))`()` Returns a string representation of the object. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](MtpDevice.md))`()` Returns a string representation of the object. |
 
 | Protected methods ||
 |------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](../android/mtp/MtpDevice.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](MtpDevice.md))`()` <br /> |
 
 ## Public constructors
 
@@ -73,7 +73,7 @@ MtpClient constructor
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `device` | [UsbDevice](../android/hardware/usb/UsbDevice.md): the [android.hardware.usb.UsbDevice](../android/hardware/usb/UsbDevice.md) for the MTP or PTP device This value cannot be `null`. |
+| `device` | [UsbDevice](../android.hardware.usb/UsbDevice.md): the [android.hardware.usb.UsbDevice](../android.hardware.usb/UsbDevice.md) for the MTP or PTP device This value cannot be `null`. |
 
 ## Public methods
 
@@ -85,7 +85,7 @@ Added in [API level 12](https://developer.android.com/guide/topics/manifest/uses
 fun close(): Unit
 ```
 
-Closes all resources related to the MtpDevice object. After this is called, the object can not be used until [open](../android/mtp/MtpDevice.md)) is called again with a new [android.hardware.usb.UsbDeviceConnection](../android/hardware/usb/UsbDeviceConnection.md). 
+Closes all resources related to the MtpDevice object. After this is called, the object can not be used until [open](MtpDevice.md)) is called again with a new [android.hardware.usb.UsbDeviceConnection](../android.hardware.usb/UsbDeviceConnection.md). 
 
 ### deleteObject
 
@@ -113,7 +113,7 @@ Added in [API level 12](https://developer.android.com/guide/topics/manifest/uses
 fun getDeviceId(): Int
 ```
 
-Returns the USB ID of the USB device. This returns the same value as android.hardware.usb.UsbDevice#getDeviceId for the device's [android.hardware.usb.UsbDevice](../android/hardware/usb/UsbDevice.md)
+Returns the USB ID of the USB device. This returns the same value as android.hardware.usb.UsbDevice#getDeviceId for the device's [android.hardware.usb.UsbDevice](../android.hardware.usb/UsbDevice.md)
 
 | Return ||
 |----------------------------------------------------------------------------|---------------|
@@ -127,11 +127,11 @@ Added in [API level 12](https://developer.android.com/guide/topics/manifest/uses
 fun getDeviceInfo(): MtpDeviceInfo?
 ```
 
-Returns the [MtpDeviceInfo](../android/mtp/MtpDeviceInfo.md) for this device
+Returns the [MtpDeviceInfo](MtpDeviceInfo.md) for this device
 
 | Return ||
 |--------------------------------------------------------------------------------------------|--------------------------------------------------------|
-| [MtpDeviceInfo](../android/mtp/MtpDeviceInfo.md)? | the device info, or null if fetching device info fails |
+| [MtpDeviceInfo](MtpDeviceInfo.md)? | the device info, or null if fetching device info fails |
 
 ### getDeviceName
 
@@ -141,7 +141,7 @@ Added in [API level 12](https://developer.android.com/guide/topics/manifest/uses
 fun getDeviceName(): String
 ```
 
-Returns the name of the USB device This returns the same value as android.hardware.usb.UsbDevice#getDeviceName for the device's [android.hardware.usb.UsbDevice](../android/hardware/usb/UsbDevice.md)
+Returns the name of the USB device This returns the same value as android.hardware.usb.UsbDevice#getDeviceName for the device's [android.hardware.usb.UsbDevice](../android.hardware.usb/UsbDevice.md)
 
 | Return ||
 |----------------------------------------------------------------------------------|----------------------------------------------|
@@ -163,7 +163,7 @@ Returns the data for an object as a byte array. This call may block for an arbit
 | Parameters ||
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `objectHandle` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): handle of the object to read |
-| `objectSize` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the size of the object (this should match [MtpObjectInfo.getCompressedSize](../android/mtp/MtpObjectInfo.md))) |
+| `objectSize` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the size of the object (this should match [MtpObjectInfo.getCompressedSize](MtpObjectInfo.md))) |
 
 | Return ||
 |------------------------------------------------------------------------------------------|---------------------------------------------|
@@ -181,7 +181,7 @@ fun getObjectHandles(
 ): IntArray?
 ```
 
-Returns the list of object handles for all objects on the given storage unit, with the given format and parent. Information about each object can be accessed via [getObjectInfo](../android/mtp/MtpDevice.md)).
+Returns the list of object handles for all objects on the given storage unit, with the given format and parent. Information about each object can be accessed via [getObjectInfo](MtpDevice.md)).
 
 | Parameters ||
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -202,7 +202,7 @@ Added in [API level 12](https://developer.android.com/guide/topics/manifest/uses
 fun getObjectInfo(objectHandle: Int): MtpObjectInfo?
 ```
 
-Retrieves the [MtpObjectInfo](../android/mtp/MtpObjectInfo.md) for an object.
+Retrieves the [MtpObjectInfo](MtpObjectInfo.md) for an object.
 
 | Parameters ||
 |----------------|------------------------------------------------------------------------------------------------------|
@@ -210,7 +210,7 @@ Retrieves the [MtpObjectInfo](../android/mtp/MtpObjectInfo.md) for an object.
 
 | Return ||
 |--------------------------------------------------------------------------------------------|----------------------------------------------------------|
-| [MtpObjectInfo](../android/mtp/MtpObjectInfo.md)? | the MtpObjectInfo, or null if fetching object info fails |
+| [MtpObjectInfo](MtpObjectInfo.md)? | the MtpObjectInfo, or null if fetching object info fails |
 
 ### getParent
 
@@ -270,7 +270,7 @@ fun getPartialObject64(
 ): Long
 ```
 
-Obtains object bytes in the specified range and writes it to an array. This call may block for an arbitrary amount of time depending on the size of the data and speed of the devices. This is a vender-extended operation supported by Android that enables us to pass unsigned 64-bit offset. Check if the MTP device supports the operation by using [MtpDeviceInfo.getOperationsSupported()](../android/mtp/MtpDeviceInfo.md)).
+Obtains object bytes in the specified range and writes it to an array. This call may block for an arbitrary amount of time depending on the size of the data and speed of the devices. This is a vender-extended operation supported by Android that enables us to pass unsigned 64-bit offset. Check if the MTP device supports the operation by using [MtpDeviceInfo.getOperationsSupported()](MtpDeviceInfo.md)).
 
 | Parameters ||
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -286,7 +286,7 @@ Obtains object bytes in the specified range and writes it to an array. This call
 
 **See Also**
 
-- [android.mtp.MtpConstants#OPERATION_GET_PARTIAL_OBJECT_64](../android/mtp/MtpConstants.md) 
+- [android.mtp.MtpConstants#OPERATION_GET_PARTIAL_OBJECT_64](MtpConstants.md) 
 
 ### getStorageId
 
@@ -314,7 +314,7 @@ Added in [API level 12](https://developer.android.com/guide/topics/manifest/uses
 fun getStorageIds(): IntArray?
 ```
 
-Returns the list of IDs for all storage units on this device Information about each storage unit can be accessed via [getStorageInfo](../android/mtp/MtpDevice.md)).
+Returns the list of IDs for all storage units on this device Information about each storage unit can be accessed via [getStorageInfo](MtpDevice.md)).
 
 | Return ||
 |----------------------------------------------------------------------------------------|----------------------------------------------------------------|
@@ -328,7 +328,7 @@ Added in [API level 12](https://developer.android.com/guide/topics/manifest/uses
 fun getStorageInfo(storageId: Int): MtpStorageInfo?
 ```
 
-Retrieves the [MtpStorageInfo](../android/mtp/MtpStorageInfo.md) for a storage unit.
+Retrieves the [MtpStorageInfo](MtpStorageInfo.md) for a storage unit.
 
 | Parameters ||
 |-------------|--------------------------------------------------------------------------------------------------------|
@@ -336,7 +336,7 @@ Retrieves the [MtpStorageInfo](../android/mtp/MtpStorageInfo.md) for a storage u
 
 | Return ||
 |----------------------------------------------------------------------------------------------|------------------------------------------------------------|
-| [MtpStorageInfo](../android/mtp/MtpStorageInfo.md)? | the MtpStorageInfo, or null if fetching storage info fails |
+| [MtpStorageInfo](MtpStorageInfo.md)? | the MtpStorageInfo, or null if fetching storage info fails |
 
 ### getThumbnail
 
@@ -346,7 +346,7 @@ Added in [API level 12](https://developer.android.com/guide/topics/manifest/uses
 fun getThumbnail(objectHandle: Int): ByteArray?
 ```
 
-Returns the thumbnail data for an object as a byte array. The size and format of the thumbnail data can be determined via [MtpObjectInfo.getThumbCompressedSize](../android/mtp/MtpObjectInfo.md)) and [MtpObjectInfo.getThumbFormat](../android/mtp/MtpObjectInfo.md)). For typical devices the format is JPEG.
+Returns the thumbnail data for an object as a byte array. The size and format of the thumbnail data can be determined via [MtpObjectInfo.getThumbCompressedSize](MtpObjectInfo.md)) and [MtpObjectInfo.getThumbFormat](MtpObjectInfo.md)). For typical devices the format is JPEG.
 
 | Parameters ||
 |----------------|----------------------------------------------------------------------------------------------------------|
@@ -372,7 +372,7 @@ Copies the data for an object to a file descriptor. This call may block for an a
 | Parameters ||
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `objectHandle` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): handle of the object to read |
-| `descriptor` | [ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md): file descriptor to write the data to for the file transfer. This value cannot be `null`. |
+| `descriptor` | [ParcelFileDescriptor](../android.os/ParcelFileDescriptor.md): file descriptor to write the data to for the file transfer. This value cannot be `null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------|
@@ -394,7 +394,7 @@ Copies the data for an object to a file in external storage. This call may block
 | Parameters ||
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `objectHandle` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): handle of the object to read |
-| `destPath` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): path to destination for the file transfer. This path should be in the external storage as defined by [android.os.Environment#getExternalStorageDirectory](../android/os/Environment.md)) This value cannot be `null`. |
+| `destPath` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): path to destination for the file transfer. This path should be in the external storage as defined by [android.os.Environment#getExternalStorageDirectory](../android.os/Environment.md)) This value cannot be `null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------|
@@ -408,11 +408,11 @@ Added in [API level 12](https://developer.android.com/guide/topics/manifest/uses
 fun open(connection: UsbDeviceConnection): Boolean
 ```
 
-Opens the MTP device. Once the device is open it takes ownership of the [android.hardware.usb.UsbDeviceConnection](../android/hardware/usb/UsbDeviceConnection.md). The connection will be closed when you call [close()](../android/mtp/MtpDevice.md)) The connection will also be closed if this method fails.
+Opens the MTP device. Once the device is open it takes ownership of the [android.hardware.usb.UsbDeviceConnection](../android.hardware.usb/UsbDeviceConnection.md). The connection will be closed when you call [close()](MtpDevice.md)) The connection will also be closed if this method fails.
 
 | Parameters ||
 |--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `connection` | [UsbDeviceConnection](../android/hardware/usb/UsbDeviceConnection.md): an open [android.hardware.usb.UsbDeviceConnection](../android/hardware/usb/UsbDeviceConnection.md) for the device This value cannot be `null`. |
+| `connection` | [UsbDeviceConnection](../android.hardware.usb/UsbDeviceConnection.md): an open [android.hardware.usb.UsbDeviceConnection](../android.hardware.usb/UsbDeviceConnection.md) for the device This value cannot be `null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------|
@@ -430,11 +430,11 @@ Reads an event from the device. It blocks the current thread until it gets an ev
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `signal` | [CancellationSignal](../android/os/CancellationSignal.md)?: signal for cancellation This value may be `null`. |
+| `signal` | [CancellationSignal](../android.os/CancellationSignal.md)?: signal for cancellation This value may be `null`. |
 
 | Return ||
 |---------------------------------------------------------------------------------|---------------------------------------------|
-| [MtpEvent](../android/mtp/MtpEvent.md) | obtained event This value cannot be `null`. |
+| [MtpEvent](MtpEvent.md) | obtained event This value cannot be `null`. |
 
 | Exceptions ||
 |-----------------------|---|
@@ -458,7 +458,7 @@ Copies the data for an object from a file descriptor. This call may block for an
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `objectHandle` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): handle of the target file |
 | `size` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): size of the file in bytes |
-| `descriptor` | [ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md): file descriptor to read the data from. This value cannot be `null`. |
+| `descriptor` | [ParcelFileDescriptor](../android.os/ParcelFileDescriptor.md): file descriptor to read the data from. This value cannot be `null`. |
 | --- | --- |
 
 | Return ||
@@ -473,15 +473,15 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 fun sendObjectInfo(info: MtpObjectInfo): MtpObjectInfo?
 ```
 
-Uploads an object metadata for a new entry. The [MtpObjectInfo](../android/mtp/MtpObjectInfo.md) can be created with the [MtpObjectInfo.Builder](../android/mtp/MtpObjectInfo.Builder.md) class. The returned [MtpObjectInfo](../android/mtp/MtpObjectInfo.md) has the new object handle field filled in.
+Uploads an object metadata for a new entry. The [MtpObjectInfo](MtpObjectInfo.md) can be created with the [MtpObjectInfo.Builder](../android/mtp/MtpObjectInfo.Builder.md) class. The returned [MtpObjectInfo](MtpObjectInfo.md) has the new object handle field filled in.
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| `info` | [MtpObjectInfo](../android/mtp/MtpObjectInfo.md): metadata of the entry This value cannot be `null`. |
+| `info` | [MtpObjectInfo](MtpObjectInfo.md): metadata of the entry This value cannot be `null`. |
 
 | Return ||
 |--------------------------------------------------------------------------------------------|------------------------------------------------------------------------|
-| [MtpObjectInfo](../android/mtp/MtpObjectInfo.md)? | object info of the created entry, or null if sending object info fails |
+| [MtpObjectInfo](MtpObjectInfo.md)? | object info of the created entry, or null if sending object info fails |
 
 ### toString
 

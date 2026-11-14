@@ -5,7 +5,7 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 
 # CdmaCellLocation
 
-Kotlin| [Java](../android/telephony/cdma/CdmaCellLocation.md) 
+Kotlin| [Java](CdmaCellLocation.md) 
 | --- | --- |
 
 ```
@@ -14,12 +14,12 @@ open class CdmaCellLocation : CellLocation
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.telephony.CellLocation](../android/telephony/CellLocation.md) ||
-| | ↳ | [android.telephony.cdma.CdmaCellLocation](../android/telephony/cdma/CdmaCellLocation.md) |
+| ↳ | [android.telephony.CellLocation](../android.telephony/CellLocation.md) ||
+| | ↳ | [android.telephony.cdma.CdmaCellLocation](CdmaCellLocation.md) |
 
 | **This class was deprecated in API level 31.**
 |
-| use [CellIdentity](../android/telephony/CellIdentity.md).
+| use [CellIdentity](../android.telephony/CellIdentity.md).
 
 Represents the cell location on a CDMA phone.
 
@@ -27,32 +27,32 @@ Represents the cell location on a CDMA phone.
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [CdmaCellLocation](../android/telephony/cdma/CdmaCellLocation.md))`()` Empty constructor. |
-| [CdmaCellLocation](../android/telephony/cdma/CdmaCellLocation.md))`(`bundle:` ` [Bundle](../android/os/Bundle.md)!`)` Initialize the object from a bundle. |
+| [CdmaCellLocation](CdmaCellLocation.md))`()` Empty constructor. |
+| [CdmaCellLocation](CdmaCellLocation.md))`(`bundle:` ` [Bundle](../android.os/Bundle.md)!`)` Initialize the object from a bundle. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [convertQuartSecToDecDegrees](../android/telephony/cdma/CdmaCellLocation.md))`(`quartSec:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Converts latitude or longitude from 0. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/telephony/cdma/CdmaCellLocation.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [fillInNotifierBundle](../android/telephony/cdma/CdmaCellLocation.md))`(`bundleToFill:` ` [Bundle](../android/os/Bundle.md)!`)` Fill the cell location data into the intent notifier Bundle based on service state |
+| openstatic [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [convertQuartSecToDecDegrees](CdmaCellLocation.md))`(`quartSec:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Converts latitude or longitude from 0. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](CdmaCellLocation.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [fillInNotifierBundle](CdmaCellLocation.md))`(`bundleToFill:` ` [Bundle](../android.os/Bundle.md)!`)` Fill the cell location data into the intent notifier Bundle based on service state |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBaseStationId](../android/telephony/cdma/CdmaCellLocation.md))`()` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBaseStationLatitude](../android/telephony/cdma/CdmaCellLocation.md))`()` Latitude is a decimal number as specified in 3GPP2 C. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBaseStationLongitude](../android/telephony/cdma/CdmaCellLocation.md))`()` Longitude is a decimal number as specified in 3GPP2 C. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBaseStationId](CdmaCellLocation.md))`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBaseStationLatitude](CdmaCellLocation.md))`()` Latitude is a decimal number as specified in 3GPP2 C. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBaseStationLongitude](CdmaCellLocation.md))`()` Longitude is a decimal number as specified in 3GPP2 C. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getNetworkId](../android/telephony/cdma/CdmaCellLocation.md))`()` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSystemId](../android/telephony/cdma/CdmaCellLocation.md))`()` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/telephony/cdma/CdmaCellLocation.md))`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getNetworkId](CdmaCellLocation.md))`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSystemId](CdmaCellLocation.md))`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](CdmaCellLocation.md))`()` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCellLocationData](../android/telephony/cdma/CdmaCellLocation.md))`(`baseStationId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `baseStationLatitude:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `baseStationLongitude:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the cell location data. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCellLocationData](../android/telephony/cdma/CdmaCellLocation.md))`(`baseStationId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `baseStationLatitude:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `baseStationLongitude:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `systemId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `networkId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the cell location data. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStateInvalid](../android/telephony/cdma/CdmaCellLocation.md))`()` Invalidate this object. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCellLocationData](CdmaCellLocation.md))`(`baseStationId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `baseStationLatitude:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `baseStationLongitude:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the cell location data. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCellLocationData](CdmaCellLocation.md))`(`baseStationId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `baseStationLatitude:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `baseStationLongitude:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `systemId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `networkId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the cell location data. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStateInvalid](CdmaCellLocation.md))`()` Invalidate this object. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/telephony/cdma/CdmaCellLocation.md))`()` <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](CdmaCellLocation.md))`()` <br /> |
 
 | Inherited functions ||
 |---|---|
-| From class [CellLocation](../android/telephony/CellLocation.md) |------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [CellLocation](../android/telephony/CellLocation.md)! | [getEmpty](../android/telephony/CellLocation.md))`()` <br /> Return a new CellLocation object representing an unknown location, or null for unknown/none phone radio types. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [requestLocationUpdate](../android/telephony/CellLocation.md))`()` <br /> Request an updated CellLocation for callers targeting SDK 30 or older. Whenever Android is aware of location changes, a callback will automatically be sent to all registrants of [PhoneStateListener.LISTEN_CELL_LOCATION](../android/telephony/PhoneStateListener.md). This API requests an additional location update for cases where power saving might cause location updates to be missed. This method is a no-op for callers targeting SDK level 31 or greater. This method is a no-op for callers that target SDK level 29 or 30 and lack [android.Manifest.permission#ACCESS_FINE_LOCATION](../android/Manifest.permission.md). This method is a no-op for callers that target SDK level 28 or below and lack [android.Manifest.permission#ACCESS_COARSE_LOCATION](../android/Manifest.permission.md). <br /> | ||
+| From class [CellLocation](../android.telephony/CellLocation.md) |------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [CellLocation](../android.telephony/CellLocation.md)! | [getEmpty](../android.telephony/CellLocation.md))`()` <br /> Return a new CellLocation object representing an unknown location, or null for unknown/none phone radio types. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [requestLocationUpdate](../android.telephony/CellLocation.md))`()` <br /> Request an updated CellLocation for callers targeting SDK 30 or older. Whenever Android is aware of location changes, a callback will automatically be sent to all registrants of [PhoneStateListener.LISTEN_CELL_LOCATION](../android.telephony/PhoneStateListener.md). This API requests an additional location update for cases where power saving might cause location updates to be missed. This method is a no-op for callers targeting SDK level 31 or greater. This method is a no-op for callers that target SDK level 29 or 30 and lack [android.Manifest.permission#ACCESS_FINE_LOCATION](../android/Manifest.permission.md). This method is a no-op for callers that target SDK level 28 or below and lack [android.Manifest.permission#ACCESS_COARSE_LOCATION](../android/Manifest.permission.md). <br /> | ||
 
 ## Public constructors
 
@@ -135,7 +135,7 @@ Fill the cell location data into the intent notifier Bundle based on service sta
 
 | Parameters ||
 |----------------|----------------------------------------------------------------------------------------------------------|
-| `bundleToFill` | [Bundle](../android/os/Bundle.md)!:intent notifier Bundle |
+| `bundleToFill` | [Bundle](../android.os/Bundle.md)!:intent notifier Bundle |
 
 ### getBaseStationId
 

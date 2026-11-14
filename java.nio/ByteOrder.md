@@ -10,7 +10,7 @@ class ByteOrder
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.nio.ByteOrder](../java/nio/ByteOrder.md) |
+| ↳ | [java.nio.ByteOrder](ByteOrder.md) |
 
 A typesafe enumeration for byte orders.
 
@@ -18,13 +18,13 @@ A typesafe enumeration for byte orders.
 
 | Public methods ||
 |----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [ByteOrder](../java/nio/ByteOrder.md)! | [nativeOrder](../java/nio/ByteOrder.md))`()` Retrieves the native byte order of the underlying platform. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/nio/ByteOrder.md))`()` Constructs a string describing this object. |
+| static [ByteOrder](ByteOrder.md)! | [nativeOrder](ByteOrder.md))`()` Retrieves the native byte order of the underlying platform. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](ByteOrder.md))`()` Constructs a string describing this object. |
 
 | Properties ||
 |----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [ByteOrder](../java/nio/ByteOrder.md)! | [BIG_ENDIAN](../java/nio/ByteOrder.md) Constant denoting big-endian byte order. |
-| static [ByteOrder](../java/nio/ByteOrder.md)! | [LITTLE_ENDIAN](../java/nio/ByteOrder.md) Constant denoting little-endian byte order. |
+| static [ByteOrder](ByteOrder.md)! | [BIG_ENDIAN](ByteOrder.md) Constant denoting big-endian byte order. |
+| static [ByteOrder](ByteOrder.md)! | [LITTLE_ENDIAN](ByteOrder.md) Constant denoting little-endian byte order. |
 
 ## Public methods
 
@@ -42,7 +42,7 @@ This method is defined so that performance-sensitive Java code can allocate dire
 
 | Return ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
-| [ByteOrder](../java/nio/ByteOrder.md)! | The native byte order of the hardware upon which this Java virtual machine is running |
+| [ByteOrder](ByteOrder.md)! | The native byte order of the hardware upon which this Java virtual machine is running |
 
 ### toString
 
@@ -54,7 +54,7 @@ fun toString(): String
 
 Constructs a string describing this object.
 
-This method returns the string`"BIG_ENDIAN"`for [BIG_ENDIAN](../java/nio/ByteOrder.md) and`"LITTLE_ENDIAN"`for [LITTLE_ENDIAN](../java/nio/ByteOrder.md).
+This method returns the string`"BIG_ENDIAN"`for [BIG_ENDIAN](ByteOrder.md) and`"LITTLE_ENDIAN"`for [LITTLE_ENDIAN](ByteOrder.md).
 
 | Return ||
 |----------------------------------------------------------------------------------|----------------------|

@@ -2,10 +2,10 @@
 
 # android.print.pdf
 
-Kotlin| [Java](../android/print/pdf/_package.md)
+Kotlin| [Java](_package.md)
 | --- | --- |
 
 ## Classes
 
-| [PrintedPdfDocument](../android/print/pdf/PrintedPdfDocument.md) | This class is a helper for creating a PDF file for given print attributes. |
+| [PrintedPdfDocument](PrintedPdfDocument.md) | This class is a helper for creating a PDF file for given print attributes. |
 | --- | --- |

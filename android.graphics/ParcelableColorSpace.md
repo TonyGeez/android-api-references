@@ -4,7 +4,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # ParcelableColorSpace
 
-Kotlin| [Java](../android/graphics/ParcelableColorSpace.md) 
+Kotlin| [Java](ParcelableColorSpace.md) 
 | --- | --- |
 
 ```
@@ -13,34 +13,34 @@ class ParcelableColorSpace : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.graphics.ParcelableColorSpace](../android/graphics/ParcelableColorSpace.md) |
+| ↳ | [android.graphics.ParcelableColorSpace](ParcelableColorSpace.md) |
 
-A [Parcelable](../android/os/Parcelable.md) wrapper for a [ColorSpace](../android/graphics/ColorSpace.md). In order to enable parceling, the ColorSpace must be either a [Named](../android/graphics/ColorSpace.Named.md) ColorSpace or a [ColorSpace.Rgb](../android/graphics/ColorSpace.Rgb.md) instance that has an ICC parametric transfer function as returned by [ColorSpace.Rgb.getTransferParameters()](../android/graphics/ColorSpace.Rgb.md)).
+A [Parcelable](../android.os/Parcelable.md) wrapper for a [ColorSpace](ColorSpace.md). In order to enable parceling, the ColorSpace must be either a [Named](../android/graphics/ColorSpace.Named.md) ColorSpace or a [ColorSpace.Rgb](../android/graphics/ColorSpace.Rgb.md) instance that has an ICC parametric transfer function as returned by [ColorSpace.Rgb.getTransferParameters()](../android/graphics/ColorSpace.Rgb.md)).
 
 ## Summary
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android.os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android.os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android.os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ParcelableColorSpace](../android/graphics/ParcelableColorSpace.md))`(`colorSpace:` ` [ColorSpace](../android/graphics/ColorSpace.md)`)` Constructs a new ParcelableColorSpace that wraps the provided ColorSpace. |
+| [ParcelableColorSpace](ParcelableColorSpace.md))`(`colorSpace:` ` [ColorSpace](ColorSpace.md)`)` Constructs a new ParcelableColorSpace that wraps the provided ColorSpace. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/graphics/ParcelableColorSpace.md))`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/graphics/ParcelableColorSpace.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [ColorSpace](../android/graphics/ColorSpace.md) | [getColorSpace](../android/graphics/ParcelableColorSpace.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](ParcelableColorSpace.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](ParcelableColorSpace.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [ColorSpace](ColorSpace.md) | [getColorSpace](ParcelableColorSpace.md))`()` <br /> |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/graphics/ParcelableColorSpace.md))`()` <br /> |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isParcelable](../android/graphics/ParcelableColorSpace.md))`(`colorSpace:` ` [ColorSpace](../android/graphics/ColorSpace.md)`)` Checks if the given ColorSpace is able to be parceled. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/graphics/ParcelableColorSpace.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](ParcelableColorSpace.md))`()` <br /> |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isParcelable](ParcelableColorSpace.md))`(`colorSpace:` ` [ColorSpace](ColorSpace.md)`)` Checks if the given ColorSpace is able to be parceled. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](ParcelableColorSpace.md))`(`dest:` ` [Parcel](../android.os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 | --- | --- |
 
 | Properties ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ParcelableColorSpace](../android/graphics/ParcelableColorSpace.md)!\> | [CREATOR](../android/graphics/ParcelableColorSpace.md) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ParcelableColorSpace](ParcelableColorSpace.md)!\> | [CREATOR](ParcelableColorSpace.md) <br /> |
 
 ## Public constructors
 
@@ -56,11 +56,11 @@ Constructs a new ParcelableColorSpace that wraps the provided ColorSpace.
 
 | Parameters ||
 |--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `colorSpace` | [ColorSpace](../android/graphics/ColorSpace.md):The ColorSpace to wrap. The ColorSpace must be either named or be an RGB ColorSpace with an ICC parametric transfer function. This value cannot be`null`. |
+| `colorSpace` | [ColorSpace](ColorSpace.md):The ColorSpace to wrap. The ColorSpace must be either named or be an RGB ColorSpace with an ICC parametric transfer function. This value cannot be`null`. |
 
 | Exceptions ||
 |--------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.IllegalArgumentException` | If the provided ColorSpace does not satisfy the requirements to be parceled. See [isParcelable(android.graphics.ColorSpace)](../android/graphics/ParcelableColorSpace.md)). |
+| `java.lang.IllegalArgumentException` | If the provided ColorSpace does not satisfy the requirements to be parceled. See [isParcelable(android.graphics.ColorSpace)](ParcelableColorSpace.md)). |
 
 ## Public methods
 
@@ -74,7 +74,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) |
 
 ### equals
 
@@ -115,7 +115,7 @@ fun getColorSpace(): ColorSpace
 
 | Return ||
 |------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
-| [ColorSpace](../android/graphics/ColorSpace.md) | the backing ColorSpace that this ParcelableColorSpace is wrapping. This value cannot be`null`. |
+| [ColorSpace](ColorSpace.md) | the backing ColorSpace that this ParcelableColorSpace is wrapping. This value cannot be`null`. |
 
 ### hashCode
 
@@ -141,7 +141,7 @@ Checks if the given ColorSpace is able to be parceled. A ColorSpace can only be 
 
 | Parameters ||
 |--------------|----------------------------------------------------------------------------------------------------------------------|
-| `colorSpace` | [ColorSpace](../android/graphics/ColorSpace.md):This value cannot be`null`. |
+| `colorSpace` | [ColorSpace](ColorSpace.md):This value cannot be`null`. |
 
 ### writeToParcel
 
@@ -158,8 +158,8 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](../android/os/Parcel.md):This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android.os/Parcel.md):This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

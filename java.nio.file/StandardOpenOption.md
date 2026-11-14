@@ -10,10 +10,10 @@ class StandardOpenOption : OpenOption
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.nio.file.StandardOpenOption](../java/nio/file/StandardOpenOption.md)\> ||
-| | ↳ | [java.nio.file.StandardOpenOption](../java/nio/file/StandardOpenOption.md) |
+| ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.nio.file.StandardOpenOption](StandardOpenOption.md)\> ||
+| | ↳ | [java.nio.file.StandardOpenOption](StandardOpenOption.md) |
 
-| Known Direct Subclasses [StandardOpenOption.APPEND](../java/nio/file/StandardOpenOption.md), [StandardOpenOption.CREATE](../java/nio/file/StandardOpenOption.md), [StandardOpenOption.CREATE_NEW](../java/nio/file/StandardOpenOption.md), [StandardOpenOption.DELETE_ON_CLOSE](../java/nio/file/StandardOpenOption.md), [StandardOpenOption.DSYNC](../java/nio/file/StandardOpenOption.md), [StandardOpenOption.READ](../java/nio/file/StandardOpenOption.md), [StandardOpenOption.SPARSE](../java/nio/file/StandardOpenOption.md), [StandardOpenOption.SYNC](../java/nio/file/StandardOpenOption.md), [StandardOpenOption.TRUNCATE_EXISTING](../java/nio/file/StandardOpenOption.md), [StandardOpenOption.WRITE](../java/nio/file/StandardOpenOption.md) |------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [StandardOpenOption.APPEND](../java/nio/file/StandardOpenOption.md) | If the file is opened for [WRITE](../java/nio/file/StandardOpenOption.md) access then bytes will be written to the end of the file rather than the beginning. | | [StandardOpenOption.CREATE](../java/nio/file/StandardOpenOption.md) | Create a new file if it does not exist. | | [StandardOpenOption.CREATE_NEW](../java/nio/file/StandardOpenOption.md) | Create a new file, failing if the file already exists. | | [StandardOpenOption.DELETE_ON_CLOSE](../java/nio/file/StandardOpenOption.md) | Delete on close. | | [StandardOpenOption.DSYNC](../java/nio/file/StandardOpenOption.md) | Requires that every update to the file's content be written synchronously to the underlying storage device. | | [StandardOpenOption.READ](../java/nio/file/StandardOpenOption.md) | Open for read access. | | [StandardOpenOption.SPARSE](../java/nio/file/StandardOpenOption.md) | Sparse file. | | [StandardOpenOption.SYNC](../java/nio/file/StandardOpenOption.md) | Requires that every update to the file's content or metadata be written synchronously to the underlying storage device. | | [StandardOpenOption.TRUNCATE_EXISTING](../java/nio/file/StandardOpenOption.md) | If the file already exists and it is opened for [WRITE](../java/nio/file/StandardOpenOption.md) access, then its length is truncated to 0. | | [StandardOpenOption.WRITE](../java/nio/file/StandardOpenOption.md) | Open for write access. | |
+| Known Direct Subclasses [StandardOpenOption.APPEND](StandardOpenOption.md), [StandardOpenOption.CREATE](StandardOpenOption.md), [StandardOpenOption.CREATE_NEW](StandardOpenOption.md), [StandardOpenOption.DELETE_ON_CLOSE](StandardOpenOption.md), [StandardOpenOption.DSYNC](StandardOpenOption.md), [StandardOpenOption.READ](StandardOpenOption.md), [StandardOpenOption.SPARSE](StandardOpenOption.md), [StandardOpenOption.SYNC](StandardOpenOption.md), [StandardOpenOption.TRUNCATE_EXISTING](StandardOpenOption.md), [StandardOpenOption.WRITE](StandardOpenOption.md) |------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [StandardOpenOption.APPEND](StandardOpenOption.md) | If the file is opened for [WRITE](StandardOpenOption.md) access then bytes will be written to the end of the file rather than the beginning. | | [StandardOpenOption.CREATE](StandardOpenOption.md) | Create a new file if it does not exist. | | [StandardOpenOption.CREATE_NEW](StandardOpenOption.md) | Create a new file, failing if the file already exists. | | [StandardOpenOption.DELETE_ON_CLOSE](StandardOpenOption.md) | Delete on close. | | [StandardOpenOption.DSYNC](StandardOpenOption.md) | Requires that every update to the file's content be written synchronously to the underlying storage device. | | [StandardOpenOption.READ](StandardOpenOption.md) | Open for read access. | | [StandardOpenOption.SPARSE](StandardOpenOption.md) | Sparse file. | | [StandardOpenOption.SYNC](StandardOpenOption.md) | Requires that every update to the file's content or metadata be written synchronously to the underlying storage device. | | [StandardOpenOption.TRUNCATE_EXISTING](StandardOpenOption.md) | If the file already exists and it is opened for [WRITE](StandardOpenOption.md) access, then its length is truncated to 0. | | [StandardOpenOption.WRITE](StandardOpenOption.md) | Open for write access. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Defines the standard open options.
@@ -22,16 +22,16 @@ Defines the standard open options.
 
 | Enum values ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [APPEND](../java/nio/file/StandardOpenOption.md) If the file is opened for [WRITE](../java/nio/file/StandardOpenOption.md) access then bytes will be written to the end of the file rather than the beginning. |
-| [CREATE](../java/nio/file/StandardOpenOption.md) Create a new file if it does not exist. |
-| [CREATE_NEW](../java/nio/file/StandardOpenOption.md) Create a new file, failing if the file already exists. |
-| [DELETE_ON_CLOSE](../java/nio/file/StandardOpenOption.md) Delete on close. |
-| [DSYNC](../java/nio/file/StandardOpenOption.md) Requires that every update to the file's content be written synchronously to the underlying storage device. |
-| [READ](../java/nio/file/StandardOpenOption.md) Open for read access. |
-| [SPARSE](../java/nio/file/StandardOpenOption.md) Sparse file. |
-| [SYNC](../java/nio/file/StandardOpenOption.md) Requires that every update to the file's content or metadata be written synchronously to the underlying storage device. |
-| [TRUNCATE_EXISTING](../java/nio/file/StandardOpenOption.md) If the file already exists and it is opened for [WRITE](../java/nio/file/StandardOpenOption.md) access, then its length is truncated to 0. |
-| [WRITE](../java/nio/file/StandardOpenOption.md) Open for write access. |
+| [APPEND](StandardOpenOption.md) If the file is opened for [WRITE](StandardOpenOption.md) access then bytes will be written to the end of the file rather than the beginning. |
+| [CREATE](StandardOpenOption.md) Create a new file if it does not exist. |
+| [CREATE_NEW](StandardOpenOption.md) Create a new file, failing if the file already exists. |
+| [DELETE_ON_CLOSE](StandardOpenOption.md) Delete on close. |
+| [DSYNC](StandardOpenOption.md) Requires that every update to the file's content be written synchronously to the underlying storage device. |
+| [READ](StandardOpenOption.md) Open for read access. |
+| [SPARSE](StandardOpenOption.md) Sparse file. |
+| [SYNC](StandardOpenOption.md) Requires that every update to the file's content or metadata be written synchronously to the underlying storage device. |
+| [TRUNCATE_EXISTING](StandardOpenOption.md) If the file already exists and it is opened for [WRITE](StandardOpenOption.md) access, then its length is truncated to 0. |
+| [WRITE](StandardOpenOption.md) Open for write access. |
 
 ## Enum values
 
@@ -43,7 +43,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 enum val APPEND : StandardOpenOption
 ```
 
-If the file is opened for [WRITE](../java/nio/file/StandardOpenOption.md) access then bytes will be written to the end of the file rather than the beginning.
+If the file is opened for [WRITE](StandardOpenOption.md) access then bytes will be written to the end of the file rather than the beginning.
 
 If the file is opened for write access by other programs, then it is file system specific if writing to the end of the file is atomic. 
 
@@ -55,7 +55,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 enum val CREATE : StandardOpenOption
 ```
 
-Create a new file if it does not exist. This option is ignored if the [CREATE_NEW](../java/nio/file/StandardOpenOption.md) option is also set. The check for the existence of the file and the creation of the file if it does not exist is atomic with respect to other file system operations. 
+Create a new file if it does not exist. This option is ignored if the [CREATE_NEW](StandardOpenOption.md) option is also set. The check for the existence of the file and the creation of the file if it does not exist is atomic with respect to other file system operations. 
 
 ### CREATE_NEW
 
@@ -77,7 +77,7 @@ enum val DELETE_ON_CLOSE : StandardOpenOption
 
 Delete on close. When this option is present then the implementation makes a*best effort* attempt to delete the file when closed by the appropriate`close`method. If the`close`method is not invoked then a*best effort* attempt is made to delete the file when the Java virtual machine terminates (either normally, as defined by the Java Language Specification, or where possible, abnormally). This option is primarily intended for use with*work files*that are used solely by a single instance of the Java virtual machine. This option is not recommended for use when opening files that are open concurrently by other entities. Many of the details as to when and how the file is deleted are implementation specific and therefore not specified. In particular, an implementation may be unable to guarantee that it deletes the expected file when replaced by an attacker while the file is open. Consequently, security sensitive applications should take care when using this option.
 
-For security reasons, this option may imply the [java.nio.file.LinkOption#NOFOLLOW_LINKS](../java/nio/file/LinkOption.md) option. In other words, if the option is present when opening an existing file that is a symbolic link then it may fail (by throwing [java.io.IOException](../java/io/IOException.md)). 
+For security reasons, this option may imply the [java.nio.file.LinkOption#NOFOLLOW_LINKS](LinkOption.md) option. In other words, if the option is present when opening an existing file that is a symbolic link then it may fail (by throwing [java.io.IOException](../java.io/IOException.md)). 
 
 ### DSYNC
 
@@ -108,7 +108,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 enum val SPARSE : StandardOpenOption
 ```
 
-Sparse file. When used with the [CREATE_NEW](../java/nio/file/StandardOpenOption.md) option then this option provides a*hint*that the new file will be sparse. The option is ignored when the file system does not support the creation of sparse files. 
+Sparse file. When used with the [CREATE_NEW](StandardOpenOption.md) option then this option provides a*hint*that the new file will be sparse. The option is ignored when the file system does not support the creation of sparse files. 
 
 ### SYNC
 
@@ -129,7 +129,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 enum val TRUNCATE_EXISTING : StandardOpenOption
 ```
 
-If the file already exists and it is opened for [WRITE](../java/nio/file/StandardOpenOption.md) access, then its length is truncated to 0. This option is ignored if the file is opened only for [READ](../java/nio/file/StandardOpenOption.md) access. 
+If the file already exists and it is opened for [WRITE](StandardOpenOption.md) access, then its length is truncated to 0. This option is ignored if the file is opened only for [READ](StandardOpenOption.md) access. 
 
 ### WRITE
 

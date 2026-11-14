@@ -4,7 +4,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # PathIterator
 
-Kotlin | [Java](../android/graphics/PathIterator.md) 
+Kotlin | [Java](PathIterator.md) 
 | --- | --- |
 
 ```
@@ -13,35 +13,35 @@ open class PathIterator : MutableIterator<PathIterator.Segment!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.graphics.PathIterator](../android/graphics/PathIterator.md) |
+| ↳ | [android.graphics.PathIterator](PathIterator.md) |
 
-`PathIterator` can be used to query a given [Path](../android/graphics/Path.md) object, to discover its operations and point values.
+`PathIterator` can be used to query a given [Path](Path.md) object, to discover its operations and point values.
 
 ## Summary
 
 | Nested classes ||
 |------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open | [Segment](../android/graphics/PathIterator.Segment.md) This class holds the data for a given segment in a path, as returned by [next()](../android/graphics/PathIterator.md)). |
+| open | [Segment](../android/graphics/PathIterator.Segment.md) This class holds the data for a given segment in a path, as returned by [next()](PathIterator.md)). |
 
 | Constants ||
 |-----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VERB_CLOSE](../android/graphics/PathIterator.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VERB_CONIC](../android/graphics/PathIterator.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VERB_CUBIC](../android/graphics/PathIterator.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VERB_CLOSE](PathIterator.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VERB_CONIC](PathIterator.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VERB_CUBIC](PathIterator.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VERB_DONE](../android/graphics/PathIterator.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VERB_LINE](../android/graphics/PathIterator.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VERB_MOVE](../android/graphics/PathIterator.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VERB_DONE](PathIterator.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VERB_LINE](PathIterator.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VERB_MOVE](PathIterator.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VERB_QUAD](../android/graphics/PathIterator.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VERB_QUAD](PathIterator.md) <br /> |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasNext](../android/graphics/PathIterator.md))`()` Returns true if the there are more elements in this iterator to be returned. |
-| open [PathIterator.Segment](../android/graphics/PathIterator.Segment.md) | [next](../android/graphics/PathIterator.md))`()` Returns the next [Segment](../android/graphics/PathIterator.Segment.md) element in this iterator. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [next](../android/graphics/PathIterator.md))`(`points:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the next verb in this iterator's [Path](../android/graphics/Path.md), and fills entries in the `points` array with the point data (if any) for that operation. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasNext](PathIterator.md))`()` Returns true if the there are more elements in this iterator to be returned. |
+| open [PathIterator.Segment](../android/graphics/PathIterator.Segment.md) | [next](PathIterator.md))`()` Returns the next [Segment](../android/graphics/PathIterator.Segment.md) element in this iterator. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [next](PathIterator.md))`(`points:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the next verb in this iterator's [Path](Path.md), and fills entries in the `points` array with the point data (if any) for that operation. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [peek](../android/graphics/PathIterator.md))`()` Returns the next verb in the iteration, or [VERB_DONE](../android/graphics/PathIterator.md) if there are no more elements. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [peek](PathIterator.md))`()` Returns the next verb in the iteration, or [VERB_DONE](PathIterator.md) if there are no more elements. |
 
 ## Constants
 
@@ -125,7 +125,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 open fun hasNext(): Boolean
 ```
 
-Returns true if the there are more elements in this iterator to be returned. A return value of `false` means there are no more elements, and an ensuing call to [next()](../android/graphics/PathIterator.md)) or [next(float[],int)](https://developer.android.com/reference/kotlin/android/graphics/PathIterator#next(kotlin.FloatArray,%20kotlin.Int)) )} will return [VERB_DONE](../android/graphics/PathIterator.md).
+Returns true if the there are more elements in this iterator to be returned. A return value of `false` means there are no more elements, and an ensuing call to [next()](PathIterator.md)) or [next(float[],int)](https://developer.android.com/reference/kotlin/android/graphics/PathIterator#next(kotlin.FloatArray,%20kotlin.Int)) )} will return [VERB_DONE](PathIterator.md).
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
@@ -165,15 +165,15 @@ open fun next(
 ): Int
 ```
 
-Returns the next verb in this iterator's [Path](../android/graphics/Path.md), and fills entries in the `points` array with the point data (if any) for that operation. Each two floats represent the data for a single point of that operation. The number of pairs of floats supplied in the resulting array depends on the verb:
+Returns the next verb in this iterator's [Path](Path.md), and fills entries in the `points` array with the point data (if any) for that operation. Each two floats represent the data for a single point of that operation. The number of pairs of floats supplied in the resulting array depends on the verb:
 
-- [VERB_MOVE](../android/graphics/PathIterator.md): 1 pair (indices 0 to 1)
-- [VERB_LINE](../android/graphics/PathIterator.md): 2 pairs (indices 0 to 3)
-- [VERB_QUAD](../android/graphics/PathIterator.md): 3 pairs (indices 0 to 5)
-- [VERB_CONIC](../android/graphics/PathIterator.md): 3.5 pairs (indices 0 to 6), the seventh entry has the conic weight
-- [VERB_CUBIC](../android/graphics/PathIterator.md): 4 pairs (indices 0 to 7)
-- [VERB_CLOSE](../android/graphics/PathIterator.md): 0 pairs
-- [VERB_DONE](../android/graphics/PathIterator.md): 0 pairs
+- [VERB_MOVE](PathIterator.md): 1 pair (indices 0 to 1)
+- [VERB_LINE](PathIterator.md): 2 pairs (indices 0 to 3)
+- [VERB_QUAD](PathIterator.md): 3 pairs (indices 0 to 5)
+- [VERB_CONIC](PathIterator.md): 3.5 pairs (indices 0 to 6), the seventh entry has the conic weight
+- [VERB_CUBIC](PathIterator.md): 4 pairs (indices 0 to 7)
+- [VERB_CLOSE](PathIterator.md): 0 pairs
+- [VERB_DONE](PathIterator.md): 0 pairs
 
 <br />
 
@@ -184,7 +184,7 @@ Returns the next verb in this iterator's [Path](../android/graphics/Path.md), an
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the operation for the next element in the iteration This value cannot be `null`. Value is [android.graphics.PathIterator#VERB_MOVE](../android/graphics/PathIterator.md), [android.graphics.PathIterator#VERB_LINE](../android/graphics/PathIterator.md), [android.graphics.PathIterator#VERB_QUAD](../android/graphics/PathIterator.md), [android.graphics.PathIterator#VERB_CONIC](../android/graphics/PathIterator.md), [android.graphics.PathIterator#VERB_CUBIC](../android/graphics/PathIterator.md), [android.graphics.PathIterator#VERB_CLOSE](../android/graphics/PathIterator.md), or [android.graphics.PathIterator#VERB_DONE](../android/graphics/PathIterator.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the operation for the next element in the iteration This value cannot be `null`. Value is [android.graphics.PathIterator#VERB_MOVE](PathIterator.md), [android.graphics.PathIterator#VERB_LINE](PathIterator.md), [android.graphics.PathIterator#VERB_QUAD](PathIterator.md), [android.graphics.PathIterator#VERB_CONIC](PathIterator.md), [android.graphics.PathIterator#VERB_CUBIC](PathIterator.md), [android.graphics.PathIterator#VERB_CLOSE](PathIterator.md), or [android.graphics.PathIterator#VERB_DONE](PathIterator.md) |
 
 | Exceptions ||
 |---------------------------------------------|----------------------------------------------------------------------|
@@ -199,11 +199,11 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 open fun peek(): Int
 ```
 
-Returns the next verb in the iteration, or [VERB_DONE](../android/graphics/PathIterator.md) if there are no more elements.
+Returns the next verb in the iteration, or [VERB_DONE](PathIterator.md) if there are no more elements.
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the next verb in the iteration, or [VERB_DONE](../android/graphics/PathIterator.md) if there are no more elements This value cannot be `null`. Value is [android.graphics.PathIterator#VERB_MOVE](../android/graphics/PathIterator.md), [android.graphics.PathIterator#VERB_LINE](../android/graphics/PathIterator.md), [android.graphics.PathIterator#VERB_QUAD](../android/graphics/PathIterator.md), [android.graphics.PathIterator#VERB_CONIC](../android/graphics/PathIterator.md), [android.graphics.PathIterator#VERB_CUBIC](../android/graphics/PathIterator.md), [android.graphics.PathIterator#VERB_CLOSE](../android/graphics/PathIterator.md), or [android.graphics.PathIterator#VERB_DONE](../android/graphics/PathIterator.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the next verb in the iteration, or [VERB_DONE](PathIterator.md) if there are no more elements This value cannot be `null`. Value is [android.graphics.PathIterator#VERB_MOVE](PathIterator.md), [android.graphics.PathIterator#VERB_LINE](PathIterator.md), [android.graphics.PathIterator#VERB_QUAD](PathIterator.md), [android.graphics.PathIterator#VERB_CONIC](PathIterator.md), [android.graphics.PathIterator#VERB_CUBIC](PathIterator.md), [android.graphics.PathIterator#VERB_CLOSE](PathIterator.md), or [android.graphics.PathIterator#VERB_DONE](PathIterator.md) |
 
 | Exceptions ||
 |---------------------------------------------|----------------------------------------------------------------------|

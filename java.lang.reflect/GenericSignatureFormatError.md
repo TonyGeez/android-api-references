@@ -11,11 +11,11 @@ open class GenericSignatureFormatError : ClassFormatError
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Error](../java/lang/Error.md) ||||
-| | | ↳ | [java.lang.LinkageError](../java/lang/LinkageError.md) |||
+| | ↳ | [java.lang.Error](../java.lang/Error.md) ||||
+| | | ↳ | [java.lang.LinkageError](../java.lang/LinkageError.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.ClassFormatError](../java/lang/ClassFormatError.md) ||
-| | | | | ↳ | [java.lang.reflect.GenericSignatureFormatError](../java/lang/reflect/GenericSignatureFormatError.md) |
+| | | | ↳ | [java.lang.ClassFormatError](../java.lang/ClassFormatError.md) ||
+| | | | | ↳ | [java.lang.reflect.GenericSignatureFormatError](GenericSignatureFormatError.md) |
 
 Thrown when a syntactically malformed signature attribute is encountered by a reflective method that needs to interpret the generic signature information for a type, method or constructor.
 
@@ -23,8 +23,8 @@ Thrown when a syntactically malformed signature attribute is encountered by a re
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [GenericSignatureFormatError](../java/lang/reflect/GenericSignatureFormatError.md))`()` Constructs a new `GenericSignatureFormatError`. |
-| [GenericSignatureFormatError](../java/lang/reflect/GenericSignatureFormatError.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a new `GenericSignatureFormatError` with the specified message. |
+| [GenericSignatureFormatError](GenericSignatureFormatError.md))`()` Constructs a new `GenericSignatureFormatError`. |
+| [GenericSignatureFormatError](GenericSignatureFormatError.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a new `GenericSignatureFormatError` with the specified message. |
 
 ## Public constructors
 

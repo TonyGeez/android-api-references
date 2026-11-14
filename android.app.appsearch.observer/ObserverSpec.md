@@ -9,7 +9,7 @@ class ObserverSpec : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.appsearch.observer.ObserverSpec](../android/app/appsearch/observer/ObserverSpec.md) |
+| ↳ | [android.app.appsearch.observer.ObserverSpec](ObserverSpec.md) |
 
 Configures the types, namespaces and other properties that `https://developer.android.com/reference/kotlin/android/app/appsearch/observer/ObserverCallback` instances match against.
 
@@ -32,7 +32,7 @@ Configures the types, namespaces and other properties that `https://developer.an
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ObserverSpec](../android/app/appsearch/observer/ObserverSpec.md)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/observer/ObserverSpec#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ObserverSpec](ObserverSpec.md)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/observer/ObserverSpec#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public methods
 
@@ -82,7 +82,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

@@ -38,6 +38,6 @@ Unlike with [OnPreDrawListener](../android/view/ViewTreeObserver.OnPreDrawListen
 An [OnDrawListener](../android/view/ViewTreeObserver.OnDrawListener.md) listener**cannot be added or removed**from this method. 
 **See Also**
 
-- [android.view.View#onMeasure](../android/view/View.md))
-- [android.view.View#onLayout](../android/view/View.md))
-- [android.view.View#onDraw](../android/view/View.md))
+- [android.view.View#onMeasure](View.md))
+- [android.view.View#onLayout](View.md))
+- [android.view.View#onDraw](View.md))

@@ -9,7 +9,7 @@ class DownloadCompletedInput
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.adservices.ondevicepersonalization.DownloadCompletedInput](../android/adservices/ondevicepersonalization/DownloadCompletedInput.md) |
+| ↳ | [android.adservices.ondevicepersonalization.DownloadCompletedInput](DownloadCompletedInput.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 37.**
@@ -27,7 +27,7 @@ The input data for `https://developer.android.com/reference/kotlin/android/adser
 | Public methods ||
 |---|---|
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/DownloadCompletedInput#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [KeyValueStore](../android/adservices/ondevicepersonalization/KeyValueStore.md) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/DownloadCompletedInput#getDownloadedContents()()` Map containing downloaded keys and values |
+| [KeyValueStore](KeyValueStore.md) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/DownloadCompletedInput#getDownloadedContents()()` Map containing downloaded keys and values |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/DownloadCompletedInput#hashCode()()` Returns a hash code value for the object. |
 | --- | --- |
 
@@ -45,7 +45,7 @@ Creates a `https://developer.android.com/reference/kotlin/android/adservices/ond
 
 | Parameters ||
 |---|---|
-| `downloadedContents` | [KeyValueStore](../android/adservices/ondevicepersonalization/KeyValueStore.md): a `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/KeyValueStore` that contains the downloaded contents. This value cannot be `null`. |
+| `downloadedContents` | [KeyValueStore](KeyValueStore.md): a `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/KeyValueStore` that contains the downloaded contents. This value cannot be `null`. |
 
 ## Public methods
 

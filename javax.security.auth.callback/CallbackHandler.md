@@ -8,7 +8,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface CallbackHandler
 ```
 
-| [javax.security.auth.callback.CallbackHandler](../javax/security/auth/callback/CallbackHandler.md) |
+| [javax.security.auth.callback.CallbackHandler](CallbackHandler.md) |
 
 An application implements a`CallbackHandler`and passes it to underlying security services so that they may interact with the application to retrieve specific authentication data, such as usernames and passwords, or to display certain information, such as error and warning messages.
 
@@ -26,7 +26,7 @@ All default handler implementations must provide a public zero-argument construc
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [handle](../javax/security/auth/callback/CallbackHandler.md))`(`callbacks:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Callback](../javax/security/auth/callback/Callback.md)!>!`)` Retrieve or display the information requested in the provided Callbacks. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [handle](CallbackHandler.md))`(`callbacks:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Callback](Callback.md)!>!`)` Retrieve or display the information requested in the provided Callbacks. |
 
 ## Public methods
 
@@ -101,7 +101,7 @@ The`handle`method implementation checks the instance(s) of the`Callback`object(s
 
 | Parameters ||
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `callbacks` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Callback](../javax/security/auth/callback/Callback.md)!\>!:an array of`Callback`objects provided by an underlying security service which contains the information requested to be retrieved or displayed. |
+| `callbacks` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Callback](Callback.md)!\>!:an array of`Callback`objects provided by an underlying security service which contains the information requested to be retrieved or displayed. |
 
 | Exceptions ||
 |-------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|

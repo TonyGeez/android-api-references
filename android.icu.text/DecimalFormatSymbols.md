@@ -4,7 +4,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # DecimalFormatSymbols
 
-Kotlin| [Java](../android/icu/text/DecimalFormatSymbols.md) 
+Kotlin| [Java](DecimalFormatSymbols.md) 
 | --- | --- |
 
 ```
@@ -13,124 +13,124 @@ open class DecimalFormatSymbols : Cloneable, Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.icu.text.DecimalFormatSymbols](../android/icu/text/DecimalFormatSymbols.md) |
+| ↳ | [android.icu.text.DecimalFormatSymbols](DecimalFormatSymbols.md) |
 
-**\[icu enhancement\]** ICU's replacement for [java.text.DecimalFormatSymbols](../java/text/DecimalFormatSymbols.md). Methods, fields, and other functionality specific to ICU are labeled '**\[icu\]** '. This class represents the set of symbols (such as the decimal separator, the grouping separator, and so on) needed by`DecimalFormat`to format numbers.`DecimalFormat`creates for itself an instance of`DecimalFormatSymbols`from its locale data. If you need to change any of these symbols, you can get the`DecimalFormatSymbols`object from your`DecimalFormat`and modify it.
+**\[icu enhancement\]** ICU's replacement for [java.text.DecimalFormatSymbols](../java.text/DecimalFormatSymbols.md). Methods, fields, and other functionality specific to ICU are labeled '**\[icu\]** '. This class represents the set of symbols (such as the decimal separator, the grouping separator, and so on) needed by`DecimalFormat`to format numbers.`DecimalFormat`creates for itself an instance of`DecimalFormatSymbols`from its locale data. If you need to change any of these symbols, you can get the`DecimalFormatSymbols`object from your`DecimalFormat`and modify it.
 
 ## Summary
 
 | Constants ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CURRENCY_SPC_CURRENCY_MATCH](../android/icu/text/DecimalFormatSymbols.md) **\[icu\]** Indicates the currency match pattern used in [getPatternForCurrencySpacing](../android/icu/text/DecimalFormatSymbols.md)). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CURRENCY_SPC_INSERT](../android/icu/text/DecimalFormatSymbols.md) **\[icu\]** Indicates the insertion value used in [getPatternForCurrencySpacing](../android/icu/text/DecimalFormatSymbols.md)). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CURRENCY_SPC_SURROUNDING_MATCH](../android/icu/text/DecimalFormatSymbols.md) **\[icu\]** Indicates the surrounding match pattern used in [getPatternForCurrencySpacing](../android/icu/text/DecimalFormatSymbols.md)). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CURRENCY_SPC_CURRENCY_MATCH](DecimalFormatSymbols.md) **\[icu\]** Indicates the currency match pattern used in [getPatternForCurrencySpacing](DecimalFormatSymbols.md)). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CURRENCY_SPC_INSERT](DecimalFormatSymbols.md) **\[icu\]** Indicates the insertion value used in [getPatternForCurrencySpacing](DecimalFormatSymbols.md)). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CURRENCY_SPC_SURROUNDING_MATCH](DecimalFormatSymbols.md) **\[icu\]** Indicates the surrounding match pattern used in [getPatternForCurrencySpacing](DecimalFormatSymbols.md)). |
 | --- | --- |
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [DecimalFormatSymbols](../android/icu/text/DecimalFormatSymbols.md))`()` Creates a DecimalFormatSymbols object for the default`FORMAT`locale. |
-| [DecimalFormatSymbols](../android/icu/text/DecimalFormatSymbols.md))`(`locale:` ` [ULocale](../android/icu/util/ULocale.md)!`)` **\[icu\]**Creates a DecimalFormatSymbols object for the given locale. |
-| [DecimalFormatSymbols](../android/icu/text/DecimalFormatSymbols.md))`(`locale:` ` [Locale](../java/util/Locale.md)!`)` Creates a DecimalFormatSymbols object for the given locale. |
+| [DecimalFormatSymbols](DecimalFormatSymbols.md))`()` Creates a DecimalFormatSymbols object for the default`FORMAT`locale. |
+| [DecimalFormatSymbols](DecimalFormatSymbols.md))`(`locale:` ` [ULocale](../android.icu.util/ULocale.md)!`)` **\[icu\]**Creates a DecimalFormatSymbols object for the given locale. |
+| [DecimalFormatSymbols](DecimalFormatSymbols.md))`(`locale:` ` [Locale](../java.util/Locale.md)!`)` Creates a DecimalFormatSymbols object for the given locale. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](../android/icu/text/DecimalFormatSymbols.md))`()` Creates and returns a copy of this object. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/icu/text/DecimalFormatSymbols.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| openstatic [DecimalFormatSymbols](../android/icu/text/DecimalFormatSymbols.md)! | [forNumberingSystem](../android/icu/text/DecimalFormatSymbols.md))`(`locale:` ` [ULocale](../android/icu/util/ULocale.md)!`, `ns:` ` [NumberingSystem](../android/icu/text/NumberingSystem.md)!`)` **\[icu\]** Returns a DecimalFormatSymbols instance for the given locale with digits and symbols corresponding to the given [NumberingSystem](../android/icu/text/NumberingSystem.md). |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](DecimalFormatSymbols.md))`()` Creates and returns a copy of this object. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](DecimalFormatSymbols.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| openstatic [DecimalFormatSymbols](DecimalFormatSymbols.md)! | [forNumberingSystem](DecimalFormatSymbols.md))`(`locale:` ` [ULocale](../android.icu.util/ULocale.md)!`, `ns:` ` [NumberingSystem](NumberingSystem.md)!`)` **\[icu\]** Returns a DecimalFormatSymbols instance for the given locale with digits and symbols corresponding to the given [NumberingSystem](NumberingSystem.md). |
 | --- | --- |
-| openstatic [DecimalFormatSymbols](../android/icu/text/DecimalFormatSymbols.md)! | [forNumberingSystem](../android/icu/text/DecimalFormatSymbols.md))`(`locale:` ` [Locale](../java/util/Locale.md)!`, `ns:` ` [NumberingSystem](../android/icu/text/NumberingSystem.md)!`)` **\[icu\]** Returns a DecimalFormatSymbols instance for the given locale with digits and symbols corresponding to the given [NumberingSystem](../android/icu/text/NumberingSystem.md). |
-| openstatic [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Locale](../java/util/Locale.md)!\>! | [getAvailableLocales](../android/icu/text/DecimalFormatSymbols.md))`()` Returns an array of all locales for which the`getInstance`methods of this class can return localized instances. |
-| openstatic [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ULocale](../android/icu/util/ULocale.md)!\>! | [getAvailableULocales](../android/icu/text/DecimalFormatSymbols.md))`()` **\[icu\]** Returns an array of all locales for which the`getInstance`methods of this class can return localized instances. |
+| openstatic [DecimalFormatSymbols](DecimalFormatSymbols.md)! | [forNumberingSystem](DecimalFormatSymbols.md))`(`locale:` ` [Locale](../java.util/Locale.md)!`, `ns:` ` [NumberingSystem](NumberingSystem.md)!`)` **\[icu\]** Returns a DecimalFormatSymbols instance for the given locale with digits and symbols corresponding to the given [NumberingSystem](NumberingSystem.md). |
+| openstatic [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Locale](../java.util/Locale.md)!\>! | [getAvailableLocales](DecimalFormatSymbols.md))`()` Returns an array of all locales for which the`getInstance`methods of this class can return localized instances. |
+| openstatic [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ULocale](../android.icu.util/ULocale.md)!\>! | [getAvailableULocales](DecimalFormatSymbols.md))`()` **\[icu\]** Returns an array of all locales for which the`getInstance`methods of this class can return localized instances. |
 | --- | --- |
-| open [Currency](../android/icu/util/Currency.md)! | [getCurrency](../android/icu/text/DecimalFormatSymbols.md))`()` Returns the currency symbol, for [DecimalFormatSymbols.getCurrency()](../android/icu/text/DecimalFormatSymbols.md))API compatibility only. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getCurrencySymbol](../android/icu/text/DecimalFormatSymbols.md))`()` Returns the string denoting the local currency. |
-| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [getDecimalSeparator](../android/icu/text/DecimalFormatSymbols.md))`()` Returns the character used for decimal sign. |
+| open [Currency](../android.icu.util/Currency.md)! | [getCurrency](DecimalFormatSymbols.md))`()` Returns the currency symbol, for [DecimalFormatSymbols.getCurrency()](DecimalFormatSymbols.md))API compatibility only. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getCurrencySymbol](DecimalFormatSymbols.md))`()` Returns the string denoting the local currency. |
+| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [getDecimalSeparator](DecimalFormatSymbols.md))`()` Returns the character used for decimal sign. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDecimalSeparatorString](../android/icu/text/DecimalFormatSymbols.md))`()` **\[icu\]**Returns the string used for decimal sign. |
-| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [getDigit](../android/icu/text/DecimalFormatSymbols.md))`()` Returns the character used for a digit in a pattern. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getDigitStrings](../android/icu/text/DecimalFormatSymbols.md))`()` **\[icu\]**Returns the array of strings used as digits, in order from 0 through 9 |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDecimalSeparatorString](DecimalFormatSymbols.md))`()` **\[icu\]**Returns the string used for decimal sign. |
+| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [getDigit](DecimalFormatSymbols.md))`()` Returns the character used for a digit in a pattern. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getDigitStrings](DecimalFormatSymbols.md))`()` **\[icu\]**Returns the array of strings used as digits, in order from 0 through 9 |
 | --- | --- |
-| open [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)! | [getDigits](../android/icu/text/DecimalFormatSymbols.md))`()` Returns the array of characters used as digits, in order from 0 through 9 |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getExponentMultiplicationSign](../android/icu/text/DecimalFormatSymbols.md))`()` Returns the multiplication sign |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getExponentSeparator](../android/icu/text/DecimalFormatSymbols.md))`()` **\[icu\]**Returns the string used to separate the mantissa from the exponent. |
+| open [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)! | [getDigits](DecimalFormatSymbols.md))`()` Returns the array of characters used as digits, in order from 0 through 9 |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getExponentMultiplicationSign](DecimalFormatSymbols.md))`()` Returns the multiplication sign |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getExponentSeparator](DecimalFormatSymbols.md))`()` **\[icu\]**Returns the string used to separate the mantissa from the exponent. |
 | --- | --- |
-| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [getGroupingSeparator](../android/icu/text/DecimalFormatSymbols.md))`()` Returns the character used for grouping separator. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getGroupingSeparatorString](../android/icu/text/DecimalFormatSymbols.md))`()` **\[icu\]**Returns the string used for grouping separator. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getInfinity](../android/icu/text/DecimalFormatSymbols.md))`()` Returns the String used to represent infinity. |
+| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [getGroupingSeparator](DecimalFormatSymbols.md))`()` Returns the character used for grouping separator. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getGroupingSeparatorString](DecimalFormatSymbols.md))`()` **\[icu\]**Returns the string used for grouping separator. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getInfinity](DecimalFormatSymbols.md))`()` Returns the String used to represent infinity. |
 | --- | --- |
-| openstatic [DecimalFormatSymbols](../android/icu/text/DecimalFormatSymbols.md)! | [getInstance](../android/icu/text/DecimalFormatSymbols.md))`()` Returns a DecimalFormatSymbols instance for the default locale. |
-| openstatic [DecimalFormatSymbols](../android/icu/text/DecimalFormatSymbols.md)! | [getInstance](../android/icu/text/DecimalFormatSymbols.md))`(`locale:` ` [ULocale](../android/icu/util/ULocale.md)!`)` Returns a DecimalFormatSymbols instance for the given locale. |
-| openstatic [DecimalFormatSymbols](../android/icu/text/DecimalFormatSymbols.md)! | [getInstance](../android/icu/text/DecimalFormatSymbols.md))`(`locale:` ` [Locale](../java/util/Locale.md)!`)` Returns a DecimalFormatSymbols instance for the given locale. |
+| openstatic [DecimalFormatSymbols](DecimalFormatSymbols.md)! | [getInstance](DecimalFormatSymbols.md))`()` Returns a DecimalFormatSymbols instance for the default locale. |
+| openstatic [DecimalFormatSymbols](DecimalFormatSymbols.md)! | [getInstance](DecimalFormatSymbols.md))`(`locale:` ` [ULocale](../android.icu.util/ULocale.md)!`)` Returns a DecimalFormatSymbols instance for the given locale. |
+| openstatic [DecimalFormatSymbols](DecimalFormatSymbols.md)! | [getInstance](DecimalFormatSymbols.md))`(`locale:` ` [Locale](../java.util/Locale.md)!`)` Returns a DecimalFormatSymbols instance for the given locale. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getInternationalCurrencySymbol](../android/icu/text/DecimalFormatSymbols.md))`()` Returns the international string denoting the local currency. |
-| open [Locale](../java/util/Locale.md)! | [getLocale](../android/icu/text/DecimalFormatSymbols.md))`()` Returns the locale for which this object was constructed. |
-| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [getMinusSign](../android/icu/text/DecimalFormatSymbols.md))`()` Returns the character used to represent minus sign. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getInternationalCurrencySymbol](DecimalFormatSymbols.md))`()` Returns the international string denoting the local currency. |
+| open [Locale](../java.util/Locale.md)! | [getLocale](DecimalFormatSymbols.md))`()` Returns the locale for which this object was constructed. |
+| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [getMinusSign](DecimalFormatSymbols.md))`()` Returns the character used to represent minus sign. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getMinusSignString](../android/icu/text/DecimalFormatSymbols.md))`()` **\[icu\]**Returns the string used to represent minus sign. |
-| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [getMonetaryDecimalSeparator](../android/icu/text/DecimalFormatSymbols.md))`()` Returns the monetary decimal separator. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getMonetaryDecimalSeparatorString](../android/icu/text/DecimalFormatSymbols.md))`()` **\[icu\]**Returns the monetary decimal separator string. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getMinusSignString](DecimalFormatSymbols.md))`()` **\[icu\]**Returns the string used to represent minus sign. |
+| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [getMonetaryDecimalSeparator](DecimalFormatSymbols.md))`()` Returns the monetary decimal separator. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getMonetaryDecimalSeparatorString](DecimalFormatSymbols.md))`()` **\[icu\]**Returns the monetary decimal separator string. |
 | --- | --- |
-| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [getMonetaryGroupingSeparator](../android/icu/text/DecimalFormatSymbols.md))`()` **\[icu\]**Returns the monetary grouping separator. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getMonetaryGroupingSeparatorString](../android/icu/text/DecimalFormatSymbols.md))`()` **\[icu\]**Returns the monetary grouping separator. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getNaN](../android/icu/text/DecimalFormatSymbols.md))`()` Returns the String used to represent NaN. |
+| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [getMonetaryGroupingSeparator](DecimalFormatSymbols.md))`()` **\[icu\]**Returns the monetary grouping separator. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getMonetaryGroupingSeparatorString](DecimalFormatSymbols.md))`()` **\[icu\]**Returns the monetary grouping separator. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getNaN](DecimalFormatSymbols.md))`()` Returns the String used to represent NaN. |
 | --- | --- |
-| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [getPadEscape](../android/icu/text/DecimalFormatSymbols.md))`()` **\[icu\]**Returns the character used to pad numbers out to a specified width. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPatternForCurrencySpacing](../android/icu/text/DecimalFormatSymbols.md))`(`itemType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `beforeCurrency:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` **\[icu\]**Returns the desired currency spacing value. |
-| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [getPatternSeparator](../android/icu/text/DecimalFormatSymbols.md))`()` Returns the character used to separate positive and negative subpatterns in a pattern. |
+| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [getPadEscape](DecimalFormatSymbols.md))`()` **\[icu\]**Returns the character used to pad numbers out to a specified width. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPatternForCurrencySpacing](DecimalFormatSymbols.md))`(`itemType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `beforeCurrency:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` **\[icu\]**Returns the desired currency spacing value. |
+| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [getPatternSeparator](DecimalFormatSymbols.md))`()` Returns the character used to separate positive and negative subpatterns in a pattern. |
 | --- | --- |
-| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [getPerMill](../android/icu/text/DecimalFormatSymbols.md))`()` Returns the character used for mille percent sign. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPerMillString](../android/icu/text/DecimalFormatSymbols.md))`()` **\[icu\]**Returns the string used for permille sign. |
-| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [getPercent](../android/icu/text/DecimalFormatSymbols.md))`()` Returns the character used for percent sign. |
+| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [getPerMill](DecimalFormatSymbols.md))`()` Returns the character used for mille percent sign. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPerMillString](DecimalFormatSymbols.md))`()` **\[icu\]**Returns the string used for permille sign. |
+| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [getPercent](DecimalFormatSymbols.md))`()` Returns the character used for percent sign. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPercentString](../android/icu/text/DecimalFormatSymbols.md))`()` **\[icu\]**Returns the string used for percent sign. |
-| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [getPlusSign](../android/icu/text/DecimalFormatSymbols.md))`()` **\[icu\]**Returns the localized plus sign. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPlusSignString](../android/icu/text/DecimalFormatSymbols.md))`()` **\[icu\]**Returns the string used to represent plus sign. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPercentString](DecimalFormatSymbols.md))`()` **\[icu\]**Returns the string used for percent sign. |
+| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [getPlusSign](DecimalFormatSymbols.md))`()` **\[icu\]**Returns the localized plus sign. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPlusSignString](DecimalFormatSymbols.md))`()` **\[icu\]**Returns the string used to represent plus sign. |
 | --- | --- |
-| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [getSignificantDigit](../android/icu/text/DecimalFormatSymbols.md))`()` Returns the character used to represent a significant digit in a pattern. |
-| open [ULocale](../android/icu/util/ULocale.md)! | [getULocale](../android/icu/text/DecimalFormatSymbols.md))`()` Returns the locale for which this object was constructed. |
-| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [getZeroDigit](../android/icu/text/DecimalFormatSymbols.md))`()` Returns the character used for zero. |
+| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [getSignificantDigit](DecimalFormatSymbols.md))`()` Returns the character used to represent a significant digit in a pattern. |
+| open [ULocale](../android.icu.util/ULocale.md)! | [getULocale](DecimalFormatSymbols.md))`()` Returns the locale for which this object was constructed. |
+| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [getZeroDigit](DecimalFormatSymbols.md))`()` Returns the character used for zero. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/icu/text/DecimalFormatSymbols.md))`()` Returns a hash code value for the object. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCurrency](../android/icu/text/DecimalFormatSymbols.md))`(`currency:` ` [Currency](../android/icu/util/Currency.md)!`)` Sets the currency. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCurrencySymbol](../android/icu/text/DecimalFormatSymbols.md))`(`currency:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the string denoting the local currency. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](DecimalFormatSymbols.md))`()` Returns a hash code value for the object. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCurrency](DecimalFormatSymbols.md))`(`currency:` ` [Currency](../android.icu.util/Currency.md)!`)` Sets the currency. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCurrencySymbol](DecimalFormatSymbols.md))`(`currency:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the string denoting the local currency. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDecimalSeparator](../android/icu/text/DecimalFormatSymbols.md))`(`decimalSeparator:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Sets the character used for decimal sign. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDecimalSeparatorString](../android/icu/text/DecimalFormatSymbols.md))`(`decimalSeparatorString:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Sets the string used for decimal sign. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDigit](../android/icu/text/DecimalFormatSymbols.md))`(`digit:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Sets the character used for a digit in a pattern. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDecimalSeparator](DecimalFormatSymbols.md))`(`decimalSeparator:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Sets the character used for decimal sign. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDecimalSeparatorString](DecimalFormatSymbols.md))`(`decimalSeparatorString:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Sets the string used for decimal sign. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDigit](DecimalFormatSymbols.md))`(`digit:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Sets the character used for a digit in a pattern. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDigitStrings](../android/icu/text/DecimalFormatSymbols.md))`(`digitStrings:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` **\[icu\]**Sets the array of strings used as digits, in order from 0 through 9 |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setExponentMultiplicationSign](../android/icu/text/DecimalFormatSymbols.md))`(`exponentMultiplicationSign:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the multiplication sign |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setExponentSeparator](../android/icu/text/DecimalFormatSymbols.md))`(`exp:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Sets the string used to separate the mantissa from the exponent. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDigitStrings](DecimalFormatSymbols.md))`(`digitStrings:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` **\[icu\]**Sets the array of strings used as digits, in order from 0 through 9 |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setExponentMultiplicationSign](DecimalFormatSymbols.md))`(`exponentMultiplicationSign:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the multiplication sign |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setExponentSeparator](DecimalFormatSymbols.md))`(`exp:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Sets the string used to separate the mantissa from the exponent. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setGroupingSeparator](../android/icu/text/DecimalFormatSymbols.md))`(`groupingSeparator:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Sets the character used for grouping separator. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setGroupingSeparatorString](../android/icu/text/DecimalFormatSymbols.md))`(`groupingSeparatorString:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Sets the string used for grouping separator. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInfinity](../android/icu/text/DecimalFormatSymbols.md))`(`infinity:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the String used to represent infinity. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setGroupingSeparator](DecimalFormatSymbols.md))`(`groupingSeparator:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Sets the character used for grouping separator. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setGroupingSeparatorString](DecimalFormatSymbols.md))`(`groupingSeparatorString:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Sets the string used for grouping separator. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInfinity](DecimalFormatSymbols.md))`(`infinity:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the String used to represent infinity. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInternationalCurrencySymbol](../android/icu/text/DecimalFormatSymbols.md))`(`currency:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the international string denoting the local currency. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMinusSign](../android/icu/text/DecimalFormatSymbols.md))`(`minusSign:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Sets the character used to represent minus sign. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMinusSignString](../android/icu/text/DecimalFormatSymbols.md))`(`minusSignString:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Sets the string used to represent minus sign. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInternationalCurrencySymbol](DecimalFormatSymbols.md))`(`currency:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the international string denoting the local currency. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMinusSign](DecimalFormatSymbols.md))`(`minusSign:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Sets the character used to represent minus sign. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMinusSignString](DecimalFormatSymbols.md))`(`minusSignString:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Sets the string used to represent minus sign. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMonetaryDecimalSeparator](../android/icu/text/DecimalFormatSymbols.md))`(`sep:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Sets the monetary decimal separator. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMonetaryDecimalSeparatorString](../android/icu/text/DecimalFormatSymbols.md))`(`sep:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Sets the monetary decimal separator string. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMonetaryGroupingSeparator](../android/icu/text/DecimalFormatSymbols.md))`(`sep:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` **\[icu\]**Sets the monetary grouping separator. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMonetaryDecimalSeparator](DecimalFormatSymbols.md))`(`sep:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Sets the monetary decimal separator. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMonetaryDecimalSeparatorString](DecimalFormatSymbols.md))`(`sep:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Sets the monetary decimal separator string. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMonetaryGroupingSeparator](DecimalFormatSymbols.md))`(`sep:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` **\[icu\]**Sets the monetary grouping separator. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMonetaryGroupingSeparatorString](../android/icu/text/DecimalFormatSymbols.md))`(`sep:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Sets the monetary grouping separator string. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setNaN](../android/icu/text/DecimalFormatSymbols.md))`(`NaN:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the String used to represent NaN. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPadEscape](../android/icu/text/DecimalFormatSymbols.md))`(`c:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` **\[icu\]**Sets the character used to pad numbers out to a specified width. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMonetaryGroupingSeparatorString](DecimalFormatSymbols.md))`(`sep:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Sets the monetary grouping separator string. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setNaN](DecimalFormatSymbols.md))`(`NaN:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the String used to represent NaN. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPadEscape](DecimalFormatSymbols.md))`(`c:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` **\[icu\]**Sets the character used to pad numbers out to a specified width. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPatternForCurrencySpacing](../android/icu/text/DecimalFormatSymbols.md))`(`itemType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `beforeCurrency:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Sets the indicated currency spacing pattern or value. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPatternSeparator](../android/icu/text/DecimalFormatSymbols.md))`(`patternSeparator:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Sets the character used to separate positive and negative subpatterns in a pattern. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPerMill](../android/icu/text/DecimalFormatSymbols.md))`(`perMill:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Sets the character used for mille percent sign. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPatternForCurrencySpacing](DecimalFormatSymbols.md))`(`itemType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `beforeCurrency:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Sets the indicated currency spacing pattern or value. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPatternSeparator](DecimalFormatSymbols.md))`(`patternSeparator:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Sets the character used to separate positive and negative subpatterns in a pattern. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPerMill](DecimalFormatSymbols.md))`(`perMill:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Sets the character used for mille percent sign. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPerMillString](../android/icu/text/DecimalFormatSymbols.md))`(`perMillString:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Sets the string used for permille sign. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPercent](../android/icu/text/DecimalFormatSymbols.md))`(`percent:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Sets the character used for percent sign. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPercentString](../android/icu/text/DecimalFormatSymbols.md))`(`percentString:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Sets the string used for percent sign. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPerMillString](DecimalFormatSymbols.md))`(`perMillString:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Sets the string used for permille sign. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPercent](DecimalFormatSymbols.md))`(`percent:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Sets the character used for percent sign. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPercentString](DecimalFormatSymbols.md))`(`percentString:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Sets the string used for percent sign. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPlusSign](../android/icu/text/DecimalFormatSymbols.md))`(`plus:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` **\[icu\]**Sets the localized plus sign. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPlusSignString](../android/icu/text/DecimalFormatSymbols.md))`(`plusSignString:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Sets the localized plus sign string. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSignificantDigit](../android/icu/text/DecimalFormatSymbols.md))`(`sigDigit:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Sets the character used to represent a significant digit in a pattern. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPlusSign](DecimalFormatSymbols.md))`(`plus:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` **\[icu\]**Sets the localized plus sign. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPlusSignString](DecimalFormatSymbols.md))`(`plusSignString:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Sets the localized plus sign string. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSignificantDigit](DecimalFormatSymbols.md))`(`sigDigit:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Sets the character used to represent a significant digit in a pattern. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setZeroDigit](../android/icu/text/DecimalFormatSymbols.md))`(`zeroDigit:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Sets the character used for zero. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setZeroDigit](DecimalFormatSymbols.md))`(`zeroDigit:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Sets the character used for zero. |
 
 ## Constants
 
@@ -142,7 +142,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val CURRENCY_SPC_CURRENCY_MATCH: Int
 ```
 
-**\[icu\]** Indicates the currency match pattern used in [getPatternForCurrencySpacing](../android/icu/text/DecimalFormatSymbols.md)). 
+**\[icu\]** Indicates the currency match pattern used in [getPatternForCurrencySpacing](DecimalFormatSymbols.md)). 
 
  Value: 0
 
@@ -154,7 +154,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val CURRENCY_SPC_INSERT: Int
 ```
 
-**\[icu\]** Indicates the insertion value used in [getPatternForCurrencySpacing](../android/icu/text/DecimalFormatSymbols.md)). 
+**\[icu\]** Indicates the insertion value used in [getPatternForCurrencySpacing](DecimalFormatSymbols.md)). 
 
  Value: 2
 
@@ -166,7 +166,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val CURRENCY_SPC_SURROUNDING_MATCH: Int
 ```
 
-**\[icu\]** Indicates the surrounding match pattern used in [getPatternForCurrencySpacing](../android/icu/text/DecimalFormatSymbols.md)). 
+**\[icu\]** Indicates the surrounding match pattern used in [getPatternForCurrencySpacing](DecimalFormatSymbols.md)). 
 
  Value: 1
 
@@ -197,7 +197,7 @@ DecimalFormatSymbols(locale: ULocale!)
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------|
-| `locale` | [ULocale](../android/icu/util/ULocale.md)!:the locale |
+| `locale` | [ULocale](../android.icu.util/ULocale.md)!:the locale |
 
 ### DecimalFormatSymbols
 
@@ -211,7 +211,7 @@ Creates a DecimalFormatSymbols object for the given locale.
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------|
-| `locale` | [Locale](../java/util/Locale.md)!:the locale |
+| `locale` | [Locale](../java.util/Locale.md)!:the locale |
 
 ## Public methods
 
@@ -293,7 +293,7 @@ open static fun forNumberingSystem(
 ): DecimalFormatSymbols!
 ```
 
-**\[icu\]** Returns a DecimalFormatSymbols instance for the given locale with digits and symbols corresponding to the given [NumberingSystem](../android/icu/text/NumberingSystem.md).
+**\[icu\]** Returns a DecimalFormatSymbols instance for the given locale with digits and symbols corresponding to the given [NumberingSystem](NumberingSystem.md).
 
 This method behaves equivalently to #getInstance called with a locale having a "numbers=xxxx" keyword specifying the numbering system by name.
 
@@ -301,12 +301,12 @@ In this method, the NumberingSystem argument will be used even if the locale has
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------------------|
-| `locale` | [ULocale](../android/icu/util/ULocale.md)!:the locale. |
-| `ns` | [NumberingSystem](../android/icu/text/NumberingSystem.md)!:the numbering system. |
+| `locale` | [ULocale](../android.icu.util/ULocale.md)!:the locale. |
+| `ns` | [NumberingSystem](NumberingSystem.md)!:the numbering system. |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------|----------------------------------|
-| [DecimalFormatSymbols](../android/icu/text/DecimalFormatSymbols.md)! | A DecimalFormatSymbols instance. |
+| [DecimalFormatSymbols](DecimalFormatSymbols.md)! | A DecimalFormatSymbols instance. |
 
 ### forNumberingSystem
 
@@ -319,7 +319,7 @@ open static fun forNumberingSystem(
 ): DecimalFormatSymbols!
 ```
 
-**\[icu\]** Returns a DecimalFormatSymbols instance for the given locale with digits and symbols corresponding to the given [NumberingSystem](../android/icu/text/NumberingSystem.md).
+**\[icu\]** Returns a DecimalFormatSymbols instance for the given locale with digits and symbols corresponding to the given [NumberingSystem](NumberingSystem.md).
 
 This method behaves equivalently to #getInstance called with a locale having a "numbers=xxxx" keyword specifying the numbering system by name.
 
@@ -327,12 +327,12 @@ In this method, the NumberingSystem argument will be used even if the locale has
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------------------|
-| `locale` | [Locale](../java/util/Locale.md)!:the locale. |
-| `ns` | [NumberingSystem](../android/icu/text/NumberingSystem.md)!:the numbering system. |
+| `locale` | [Locale](../java.util/Locale.md)!:the locale. |
+| `ns` | [NumberingSystem](NumberingSystem.md)!:the numbering system. |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------|----------------------------------|
-| [DecimalFormatSymbols](../android/icu/text/DecimalFormatSymbols.md)! | A DecimalFormatSymbols instance. |
+| [DecimalFormatSymbols](DecimalFormatSymbols.md)! | A DecimalFormatSymbols instance. |
 
 ### getAvailableLocales
 
@@ -348,7 +348,7 @@ Returns an array of all locales for which the`getInstance`methods of this class 
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Locale](../java/util/Locale.md)!>! | An array of`Locale`s for which localized`DecimalFormatSymbols`instances are available. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Locale](../java.util/Locale.md)!>! | An array of`Locale`s for which localized`DecimalFormatSymbols`instances are available. |
 
 ### getAvailableULocales
 
@@ -364,7 +364,7 @@ open static fun getAvailableULocales(): Array<ULocale!>!
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ULocale](../android/icu/util/ULocale.md)!>! | An array of`ULocale`s for which localized`DecimalFormatSymbols`instances are available. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ULocale](../android.icu.util/ULocale.md)!>! | An array of`ULocale`s for which localized`DecimalFormatSymbols`instances are available. |
 
 ### getCurrency
 
@@ -374,11 +374,11 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun getCurrency(): Currency!
 ```
 
-Returns the currency symbol, for [DecimalFormatSymbols.getCurrency()](../android/icu/text/DecimalFormatSymbols.md))API compatibility only. ICU clients should use the Currency API directly.
+Returns the currency symbol, for [DecimalFormatSymbols.getCurrency()](DecimalFormatSymbols.md))API compatibility only. ICU clients should use the Currency API directly.
 
 | Return ||
 |---------------------------------------------------------------------------------------------|----------------------------|
-| [Currency](../android/icu/util/Currency.md)! | the currency used, or null |
+| [Currency](../android.icu.util/Currency.md)! | the currency used, or null |
 
 ### getCurrencySymbol
 
@@ -424,7 +424,7 @@ open fun getDecimalSeparatorString(): String!
 
 **See Also**
 
-- [#setDecimalSeparatorString(String)](../android/icu/text/DecimalFormatSymbols.md)) 
+- [#setDecimalSeparatorString(String)](DecimalFormatSymbols.md)) 
 
 ### getDigit
 
@@ -502,7 +502,7 @@ open fun getExponentSeparator(): String!
 
 **See Also**
 
-- [#setExponentSeparator](../android/icu/text/DecimalFormatSymbols.md)) 
+- [#setExponentSeparator](DecimalFormatSymbols.md)) 
 
 ### getGroupingSeparator
 
@@ -534,7 +534,7 @@ open fun getGroupingSeparatorString(): String!
 
 **See Also**
 
-- [#setGroupingSeparatorString(String)](../android/icu/text/DecimalFormatSymbols.md)) 
+- [#setGroupingSeparatorString(String)](DecimalFormatSymbols.md)) 
 
 ### getInfinity
 
@@ -564,7 +564,7 @@ Returns a DecimalFormatSymbols instance for the default locale.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------|----------------------------------|
-| [DecimalFormatSymbols](../android/icu/text/DecimalFormatSymbols.md)! | A DecimalFormatSymbols instance. |
+| [DecimalFormatSymbols](DecimalFormatSymbols.md)! | A DecimalFormatSymbols instance. |
 
 ### getInstance
 
@@ -580,11 +580,11 @@ Returns a DecimalFormatSymbols instance for the given locale.
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------|
-| `locale` | [ULocale](../android/icu/util/ULocale.md)!:the locale. |
+| `locale` | [ULocale](../android.icu.util/ULocale.md)!:the locale. |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------|----------------------------------|
-| [DecimalFormatSymbols](../android/icu/text/DecimalFormatSymbols.md)! | A DecimalFormatSymbols instance. |
+| [DecimalFormatSymbols](DecimalFormatSymbols.md)! | A DecimalFormatSymbols instance. |
 
 ### getInstance
 
@@ -600,11 +600,11 @@ Returns a DecimalFormatSymbols instance for the given locale.
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------|
-| `locale` | [Locale](../java/util/Locale.md)!:the locale. |
+| `locale` | [Locale](../java.util/Locale.md)!:the locale. |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------|----------------------------------|
-| [DecimalFormatSymbols](../android/icu/text/DecimalFormatSymbols.md)! | A DecimalFormatSymbols instance. |
+| [DecimalFormatSymbols](DecimalFormatSymbols.md)! | A DecimalFormatSymbols instance. |
 
 ### getInternationalCurrencySymbol
 
@@ -632,7 +632,7 @@ Returns the locale for which this object was constructed.
 
 | Return ||
 |----------------------------------------------------------------------------------|--------------------------------------------------|
-| [Locale](../java/util/Locale.md)! | the locale for which this object was constructed |
+| [Locale](../java.util/Locale.md)! | the locale for which this object was constructed |
 
 ### getMinusSign
 
@@ -664,7 +664,7 @@ open fun getMinusSignString(): String!
 
 **See Also**
 
-- [#setMinusSignString(String)](../android/icu/text/DecimalFormatSymbols.md)) 
+- [#setMinusSignString(String)](DecimalFormatSymbols.md)) 
 
 ### getMonetaryDecimalSeparator
 
@@ -696,7 +696,7 @@ open fun getMonetaryDecimalSeparatorString(): String!
 
 **See Also**
 
-- [#setMonetaryDecimalSeparatorString(String)](../android/icu/text/DecimalFormatSymbols.md)) 
+- [#setMonetaryDecimalSeparatorString(String)](DecimalFormatSymbols.md)) 
 
 ### getMonetaryGroupingSeparator
 
@@ -728,7 +728,7 @@ open fun getMonetaryGroupingSeparatorString(): String!
 
 **See Also**
 
-- [#setMonetaryGroupingSeparatorString(String)](../android/icu/text/DecimalFormatSymbols.md)) 
+- [#setMonetaryGroupingSeparatorString(String)](DecimalFormatSymbols.md)) 
 
 ### getNaN
 
@@ -760,10 +760,10 @@ open fun getPadEscape(): Char
 
 **See Also**
 
-- [#setPadEscape](../android/icu/text/DecimalFormatSymbols.md))
-- [android.icu.text.DecimalFormat#getFormatWidth](../android/icu/text/DecimalFormat.md))
-- [android.icu.text.DecimalFormat#getPadPosition](../android/icu/text/DecimalFormat.md))
-- [android.icu.text.DecimalFormat#getPadCharacter](../android/icu/text/DecimalFormat.md)) 
+- [#setPadEscape](DecimalFormatSymbols.md))
+- [android.icu.text.DecimalFormat#getFormatWidth](DecimalFormat.md))
+- [android.icu.text.DecimalFormat#getPadPosition](DecimalFormat.md))
+- [android.icu.text.DecimalFormat#getPadCharacter](DecimalFormat.md)) 
 
 ### getPatternForCurrencySpacing
 
@@ -791,7 +791,7 @@ For more information, see [UTS#35 section 5.10.2](http://www.unicode.org/reports
 
 **See Also**
 
-- [#setPatternForCurrencySpacing(int, boolean, String)](../android/icu/text/DecimalFormatSymbols.md)) 
+- [#setPatternForCurrencySpacing(int, boolean, String)](DecimalFormatSymbols.md)) 
 
 ### getPatternSeparator
 
@@ -837,7 +837,7 @@ open fun getPerMillString(): String!
 
 **See Also**
 
-- [#setPerMillString(String)](../android/icu/text/DecimalFormatSymbols.md)) 
+- [#setPerMillString(String)](DecimalFormatSymbols.md)) 
 
 ### getPercent
 
@@ -869,7 +869,7 @@ open fun getPercentString(): String!
 
 **See Also**
 
-- [#setPercentString(String)](../android/icu/text/DecimalFormatSymbols.md)) 
+- [#setPercentString(String)](DecimalFormatSymbols.md)) 
 
 ### getPlusSign
 
@@ -887,9 +887,9 @@ open fun getPlusSign(): Char
 
 **See Also**
 
-- [#setPlusSign](../android/icu/text/DecimalFormatSymbols.md))
-- [#setMinusSign](../android/icu/text/DecimalFormatSymbols.md))
-- [#getMinusSign](../android/icu/text/DecimalFormatSymbols.md)) 
+- [#setPlusSign](DecimalFormatSymbols.md))
+- [#setMinusSign](DecimalFormatSymbols.md))
+- [#getMinusSign](DecimalFormatSymbols.md)) 
 
 ### getPlusSignString
 
@@ -931,7 +931,7 @@ Returns the locale for which this object was constructed.
 
 | Return ||
 |-------------------------------------------------------------------------------------------|--------------------------------------------------|
-| [ULocale](../android/icu/util/ULocale.md)! | the locale for which this object was constructed |
+| [ULocale](../android.icu.util/ULocale.md)! | the locale for which this object was constructed |
 
 ### getZeroDigit
 
@@ -955,13 +955,13 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun hashCode(): Int
 ```
 
-Returns a hash code value for the object. This method is supported for the benefit of hash tables such as those provided by [java.util.HashMap](../java/util/HashMap.md).
+Returns a hash code value for the object. This method is supported for the benefit of hash tables such as those provided by [java.util.HashMap](../java.util/HashMap.md).
 
 The general contract of`hashCode`is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the`hashCode`method must consistently return the same integer, provided no information used in`equals`comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the [equals](../java/lang/Object.md))method, then calling the`hashCode`method on each of the two objects must produce the same integer result.
-- It is*not* required that if two objects are unequal according to the [equals](../java/lang/Object.md))method, then calling the`hashCode`method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the [equals](../java.lang/Object.md))method, then calling the`hashCode`method on each of the two objects must produce the same integer result.
+- It is*not* required that if two objects are unequal according to the [equals](../java.lang/Object.md))method, then calling the`hashCode`method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------|
@@ -983,7 +983,7 @@ This also sets the currency symbol attribute to the currency's symbol in the Dec
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------|
-| `currency` | [Currency](../android/icu/util/Currency.md)!:the new currency to be used |
+| `currency` | [Currency](../android.icu.util/Currency.md)!:the new currency to be used |
 
 | Exceptions ||
 |----------------------------------|---------------------|
@@ -991,8 +991,8 @@ This also sets the currency symbol attribute to the currency's symbol in the Dec
 
 **See Also**
 
-- [#setCurrencySymbol](../android/icu/text/DecimalFormatSymbols.md))
-- [#setInternationalCurrencySymbol](../android/icu/text/DecimalFormatSymbols.md)) 
+- [#setCurrencySymbol](DecimalFormatSymbols.md))
+- [#setInternationalCurrencySymbol](DecimalFormatSymbols.md)) 
 
 ### setCurrencySymbol
 
@@ -1032,7 +1032,7 @@ open fun setDecimalSeparatorString(decimalSeparatorString: String!): Unit
 
 **\[icu\]**Sets the string used for decimal sign.
 
-**Note:** When the input decimal separator String is represented by multiple Java chars, then [getDecimalSeparator()](../android/icu/text/DecimalFormatSymbols.md))will return the default decimal separator character ('.').
+**Note:** When the input decimal separator String is represented by multiple Java chars, then [getDecimalSeparator()](DecimalFormatSymbols.md))will return the default decimal separator character ('.').
 
 | Parameters ||
 |--------------------------|-----------------------------------------------------------------------------------------------------------|
@@ -1072,7 +1072,7 @@ open fun setDigitStrings(digitStrings: Array<String!>!): Unit
 
 **Note:**
 
-When the input array of digit strings contains any strings represented by multiple Java chars, then [getDigits()](../android/icu/text/DecimalFormatSymbols.md))will return the default digits ('0' - '9') and [getZeroDigit()](../android/icu/text/DecimalFormatSymbols.md))will return the default zero digit ('0').
+When the input array of digit strings contains any strings represented by multiple Java chars, then [getDigits()](DecimalFormatSymbols.md))will return the default digits ('0' - '9') and [getZeroDigit()](DecimalFormatSymbols.md))will return the default zero digit ('0').
 
 | Parameters ||
 |----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1113,7 +1113,7 @@ open fun setExponentSeparator(exp: String!): Unit
 
 **See Also**
 
-- [#getExponentSeparator](../android/icu/text/DecimalFormatSymbols.md)) 
+- [#getExponentSeparator](DecimalFormatSymbols.md)) 
 
 ### setGroupingSeparator
 
@@ -1131,7 +1131,7 @@ Sets the character used for grouping separator. Different for French, etc.
 
 **See Also**
 
-- [#setGroupingSeparatorString(String)](../android/icu/text/DecimalFormatSymbols.md)) 
+- [#setGroupingSeparatorString(String)](DecimalFormatSymbols.md)) 
 
 ### setGroupingSeparatorString
 
@@ -1143,7 +1143,7 @@ open fun setGroupingSeparatorString(groupingSeparatorString: String!): Unit
 
 **\[icu\]**Sets the string used for grouping separator.
 
-**Note:** When the input grouping separator String is represented by multiple Java chars, then [getGroupingSeparator()](../android/icu/text/DecimalFormatSymbols.md))will return the default grouping separator character (',').
+**Note:** When the input grouping separator String is represented by multiple Java chars, then [getGroupingSeparator()](DecimalFormatSymbols.md))will return the default grouping separator character (',').
 
 | Parameters ||
 |---------------------------|-----------------------------------------------------------------------------------------------------------------|
@@ -1209,7 +1209,7 @@ open fun setMinusSignString(minusSignString: String!): Unit
 
 **\[icu\]**Sets the string used to represent minus sign.
 
-**Note:** When the input minus sign String is represented by multiple Java chars, then [getMinusSign()](../android/icu/text/DecimalFormatSymbols.md))will return the default minus sign character ('-').
+**Note:** When the input minus sign String is represented by multiple Java chars, then [getMinusSign()](DecimalFormatSymbols.md))will return the default minus sign character ('-').
 
 | Parameters ||
 |-------------------|---------------------------------------------------------------------------------------------------------|
@@ -1247,7 +1247,7 @@ open fun setMonetaryDecimalSeparatorString(sep: String!): Unit
 
 **\[icu\]**Sets the monetary decimal separator string.
 
-**Note:** When the input monetary decimal separator String is represented by multiple Java chars, then [getMonetaryDecimalSeparatorString()](../android/icu/text/DecimalFormatSymbols.md))will return the default monetary decimal separator character ('.').
+**Note:** When the input monetary decimal separator String is represented by multiple Java chars, then [getMonetaryDecimalSeparatorString()](DecimalFormatSymbols.md))will return the default monetary decimal separator character ('.').
 
 | Parameters ||
 |-------|-------------------------------------------------------------------------------------------------------------------------|
@@ -1285,7 +1285,7 @@ open fun setMonetaryGroupingSeparatorString(sep: String!): Unit
 
 **\[icu\]**Sets the monetary grouping separator string.
 
-**Note:** When the input grouping separator String is represented by multiple Java chars, then [getMonetaryGroupingSeparator()](../android/icu/text/DecimalFormatSymbols.md))will return the default monetary grouping separator character (',').
+**Note:** When the input grouping separator String is represented by multiple Java chars, then [getMonetaryGroupingSeparator()](DecimalFormatSymbols.md))will return the default monetary grouping separator character (',').
 
 | Parameters ||
 |-------|--------------------------------------------------------------------------------------------------------------------------|
@@ -1324,10 +1324,10 @@ open fun setPadEscape(c: Char): Unit
 **\[icu\]** Sets the character used to pad numbers out to a specified width. This is not the pad character itself; rather, it is the special pattern character*preceding*the pad character. In the pattern "\*_#,##0", '\*' is the pad escape, and '_' is the pad character. 
 **See Also**
 
-- [#getPadEscape](../android/icu/text/DecimalFormatSymbols.md))
-- [android.icu.text.DecimalFormat#setFormatWidth](../android/icu/text/DecimalFormat.md))
-- [android.icu.text.DecimalFormat#setPadPosition](../android/icu/text/DecimalFormat.md))
-- [android.icu.text.DecimalFormat#setPadCharacter](../android/icu/text/DecimalFormat.md)) 
+- [#getPadEscape](DecimalFormatSymbols.md))
+- [android.icu.text.DecimalFormat#setFormatWidth](DecimalFormat.md))
+- [android.icu.text.DecimalFormat#setPadPosition](DecimalFormat.md))
+- [android.icu.text.DecimalFormat#setPadCharacter](DecimalFormat.md)) 
 
 ### setPatternForCurrencySpacing
 
@@ -1341,7 +1341,7 @@ open fun setPatternForCurrencySpacing(
 ): Unit
 ```
 
-**\[icu\]** Sets the indicated currency spacing pattern or value. See [getPatternForCurrencySpacing](../android/icu/text/DecimalFormatSymbols.md))for more information.
+**\[icu\]** Sets the indicated currency spacing pattern or value. See [getPatternForCurrencySpacing](DecimalFormatSymbols.md))for more information.
 
 Values for currency match and surrounding match must be patterns. Values for insert can be any string.
 
@@ -1356,7 +1356,7 @@ Values for currency match and surrounding match must be patterns. Values for ins
 
 **See Also**
 
-- [#getPatternForCurrencySpacing(int, boolean)](../android/icu/text/DecimalFormatSymbols.md)) 
+- [#getPatternForCurrencySpacing(int, boolean)](DecimalFormatSymbols.md)) 
 
 ### setPatternSeparator
 
@@ -1396,7 +1396,7 @@ open fun setPerMillString(perMillString: String!): Unit
 
 **\[icu\]**Sets the string used for permille sign.
 
-**Note:** When the input permille String is represented by multiple Java chars, then [getPerMill()](../android/icu/text/DecimalFormatSymbols.md))will return the default permille character ('‰').
+**Note:** When the input permille String is represented by multiple Java chars, then [getPerMill()](DecimalFormatSymbols.md))will return the default permille character ('‰').
 
 | Parameters ||
 |-----------------|-------------------------------------------------------------------------------------------------------|
@@ -1434,7 +1434,7 @@ open fun setPercentString(percentString: String!): Unit
 
 **\[icu\]**Sets the string used for percent sign.
 
-**Note:** When the input grouping separator String is represented by multiple Java chars, then [getPercent()](../android/icu/text/DecimalFormatSymbols.md))will return the default percent sign character ('%').
+**Note:** When the input grouping separator String is represented by multiple Java chars, then [getPercent()](DecimalFormatSymbols.md))will return the default percent sign character ('%').
 
 | Parameters ||
 |-----------------|------------------------------------------------------------------------------------------------------|
@@ -1464,9 +1464,9 @@ open fun setPlusSign(plus: Char): Unit
 
 **See Also**
 
-- [#getPlusSign](../android/icu/text/DecimalFormatSymbols.md))
-- [#setMinusSign](../android/icu/text/DecimalFormatSymbols.md))
-- [#getMinusSign](../android/icu/text/DecimalFormatSymbols.md)) 
+- [#getPlusSign](DecimalFormatSymbols.md))
+- [#setMinusSign](DecimalFormatSymbols.md))
+- [#getMinusSign](DecimalFormatSymbols.md)) 
 
 ### setPlusSignString
 
@@ -1478,7 +1478,7 @@ open fun setPlusSignString(plusSignString: String!): Unit
 
 **\[icu\]**Sets the localized plus sign string.
 
-**Note:** When the input plus sign String is represented by multiple Java chars, then [getPlusSign()](../android/icu/text/DecimalFormatSymbols.md))will return the default plus sign character ('+').
+**Note:** When the input plus sign String is represented by multiple Java chars, then [getPlusSign()](DecimalFormatSymbols.md))will return the default plus sign character ('+').
 
 | Parameters ||
 |------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|

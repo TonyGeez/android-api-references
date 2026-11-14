@@ -8,7 +8,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 @Target([AnnotationTarget.ANNOTATION_CLASS]) class Retention
 ```
 
-| [java.lang.annotation.Retention](../java/lang/annotation/Retention.md) |
+| [java.lang.annotation.Retention](Retention.md) |
 
 Indicates how long annotations with the annotated interface are to be retained. If no Retention annotation is present on an annotation interface declaration, the retention policy defaults to`RetentionPolicy.CLASS`.
 
@@ -18,11 +18,11 @@ A Retention meta-annotation has effect only if the meta-annotated interface is u
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Retention](../java/lang/annotation/Retention.md))`(`value:` ` [RetentionPolicy](../java/lang/annotation/RetentionPolicy.md)`)` Indicates how long annotations with the annotated interface are to be retained. |
+| [Retention](Retention.md))`(`value:` ` [RetentionPolicy](RetentionPolicy.md)`)` Indicates how long annotations with the annotated interface are to be retained. |
 
 | Properties ||
 |--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [RetentionPolicy](../java/lang/annotation/RetentionPolicy.md) | [value](../java/lang/annotation/Retention.md) Returns the retention policy. |
+| [RetentionPolicy](RetentionPolicy.md) | [value](Retention.md) Returns the retention policy. |
 
 ## Public constructors
 
@@ -52,4 +52,4 @@ Returns the retention policy.
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------|----------------------|
-| [RetentionPolicy](../java/lang/annotation/RetentionPolicy.md) | the retention policy |
+| [RetentionPolicy](RetentionPolicy.md) | the retention policy |

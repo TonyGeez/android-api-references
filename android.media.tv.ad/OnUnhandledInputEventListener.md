@@ -19,7 +19,7 @@ Interface definition for a callback to be invoked when the unhandled input event
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onUnhandledInputEvent](../android/media/tv/ad/TvAdView.OnUnhandledInputEventListener.md))`(`event:` ` [InputEvent](../android/view/InputEvent.md)`)` Called when an input event was not handled by the TV AD service. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onUnhandledInputEvent](../android/media/tv/ad/TvAdView.OnUnhandledInputEventListener.md))`(`event:` ` [InputEvent](../android.view/InputEvent.md)`)` Called when an input event was not handled by the TV AD service. |
 
 ## Public methods
 
@@ -37,7 +37,7 @@ This is called asynchronously from where the event is dispatched. It gives the h
 
 | Parameters ||
 |---------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| `event` | [InputEvent](../android/view/InputEvent.md):The input event. This value cannot be`null`. |
+| `event` | [InputEvent](../android.view/InputEvent.md):The input event. This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|

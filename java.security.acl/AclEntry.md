@@ -9,7 +9,7 @@ Deprecated in [API level 33](https://developer.android.com/guide/topics/manifest
 interface AclEntry : Cloneable
 ```
 
-| [java.security.acl.AclEntry](../java/security/acl/AclEntry.md) |
+| [java.security.acl.AclEntry](AclEntry.md) |
 
 | **This interface was deprecated in API level 33.**
 |
@@ -17,23 +17,23 @@ interface AclEntry : Cloneable
 
 This is the interface used for representing one entry in an Access Control List (ACL).
 
-An ACL can be thought of as a data structure with multiple ACL entry objects. Each ACL entry object contains a set of permissions associated with a particular principal. (A principal represents an entity such as an individual user or a group). Additionally, each ACL entry is specified as being either positive or negative. If positive, the permissions are to be granted to the associated principal. If negative, the permissions are to be denied. Each principal can have at most one positive ACL entry and one negative entry; that is, multiple positive or negative ACL entries are not allowed for any principal. Note: ACL entries are by default positive. An entry becomes a negative entry only if the [setNegativePermissions](../java/security/acl/AclEntry.md))method is called on it.
+An ACL can be thought of as a data structure with multiple ACL entry objects. Each ACL entry object contains a set of permissions associated with a particular principal. (A principal represents an entity such as an individual user or a group). Additionally, each ACL entry is specified as being either positive or negative. If positive, the permissions are to be granted to the associated principal. If negative, the permissions are to be denied. Each principal can have at most one positive ACL entry and one negative entry; that is, multiple positive or negative ACL entries are not allowed for any principal. Note: ACL entries are by default positive. An entry becomes a negative entry only if the [setNegativePermissions](AclEntry.md))method is called on it.
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addPermission](../java/security/acl/AclEntry.md))`(`permission:` ` [Permission](../java/security/acl/Permission.md)!`)` Adds the specified permission to this ACL entry. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [checkPermission](../java/security/acl/AclEntry.md))`(`permission:` ` [Permission](../java/security/acl/Permission.md)!`)` Checks if the specified permission is part of the permission set in this entry. |
-| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](../java/security/acl/AclEntry.md))`()` Clones this ACL entry. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addPermission](AclEntry.md))`(`permission:` ` [Permission](Permission.md)!`)` Adds the specified permission to this ACL entry. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [checkPermission](AclEntry.md))`(`permission:` ` [Permission](Permission.md)!`)` Checks if the specified permission is part of the permission set in this entry. |
+| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](AclEntry.md))`()` Clones this ACL entry. |
 | --- | --- |
-| abstract [Principal](../java/security/Principal.md)! | [getPrincipal](../java/security/acl/AclEntry.md))`()` Returns the principal for which permissions are granted or denied by this ACL entry. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isNegative](../java/security/acl/AclEntry.md))`()` Returns true if this is a negative ACL entry (one denying the associated principal the set of permissions in the entry), false otherwise. |
-| abstract [Enumeration](../java/util/Enumeration.md)\< [Permission](../java/security/acl/Permission.md)!\>! | [permissions](../java/security/acl/AclEntry.md))`()` Returns an enumeration of the permissions in this ACL entry. |
+| abstract [Principal](../java.security/Principal.md)! | [getPrincipal](AclEntry.md))`()` Returns the principal for which permissions are granted or denied by this ACL entry. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isNegative](AclEntry.md))`()` Returns true if this is a negative ACL entry (one denying the associated principal the set of permissions in the entry), false otherwise. |
+| abstract [Enumeration](../java.util/Enumeration.md)\< [Permission](Permission.md)!\>! | [permissions](AclEntry.md))`()` Returns an enumeration of the permissions in this ACL entry. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removePermission](../java/security/acl/AclEntry.md))`(`permission:` ` [Permission](../java/security/acl/Permission.md)!`)` Removes the specified permission from this ACL entry. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setNegativePermissions](../java/security/acl/AclEntry.md))`()` Sets this ACL entry to be a negative one. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [setPrincipal](../java/security/acl/AclEntry.md))`(`user:` ` [Principal](../java/security/Principal.md)!`)` Specifies the principal for which permissions are granted or denied by this ACL entry. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removePermission](AclEntry.md))`(`permission:` ` [Permission](Permission.md)!`)` Removes the specified permission from this ACL entry. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setNegativePermissions](AclEntry.md))`()` Sets this ACL entry to be a negative one. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [setPrincipal](AclEntry.md))`(`user:` ` [Principal](../java.security/Principal.md)!`)` Specifies the principal for which permissions are granted or denied by this ACL entry. |
 | --- | --- |
 
 ## Public methods
@@ -52,7 +52,7 @@ Adds the specified permission to this ACL entry. Note: An entry can have multipl
 
 | Parameters ||
 |--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `permission` | [Permission](../java/security/acl/Permission.md)!:the permission to be associated with the principal in this entry. |
+| `permission` | [Permission](Permission.md)!:the permission to be associated with the principal in this entry. |
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
@@ -72,7 +72,7 @@ Checks if the specified permission is part of the permission set in this entry.
 
 | Parameters ||
 |--------------|------------------------------------------------------------------------------------------------------------------------------|
-| `permission` | [Permission](../java/security/acl/Permission.md)!:the permission to be checked for. |
+| `permission` | [Permission](Permission.md)!:the permission to be checked for. |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
@@ -112,11 +112,11 @@ Returns the principal for which permissions are granted or denied by this ACL en
 
 | Return ||
 |--------------------------------------------------------------------------------------------|-------------------------------------------|
-| [Principal](../java/security/Principal.md)! | the principal associated with this entry. |
+| [Principal](../java.security/Principal.md)! | the principal associated with this entry. |
 
 **See Also**
 
-- [#setPrincipal](../java/security/acl/AclEntry.md)) 
+- [#setPrincipal](AclEntry.md)) 
 
 ### isNegative
 
@@ -148,7 +148,7 @@ Returns an enumeration of the permissions in this ACL entry.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
-| [Enumeration](../java/util/Enumeration.md)< [Permission](../java/security/acl/Permission.md)!>! | an enumeration of the permissions in this ACL entry. |
+| [Enumeration](../java.util/Enumeration.md)< [Permission](Permission.md)!>! | an enumeration of the permissions in this ACL entry. |
 
 ### removePermission
 
@@ -164,7 +164,7 @@ Removes the specified permission from this ACL entry.
 
 | Parameters ||
 |--------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| `permission` | [Permission](../java/security/acl/Permission.md)!:the permission to be removed from this entry. |
+| `permission` | [Permission](Permission.md)!:the permission to be removed from this entry. |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
@@ -196,7 +196,7 @@ Specifies the principal for which permissions are granted or denied by this ACL 
 
 | Parameters ||
 |--------|------------------------------------------------------------------------------------------------------------------------------------|
-| `user` | [Principal](../java/security/Principal.md)!:the principal to be set for this entry. |
+| `user` | [Principal](../java.security/Principal.md)!:the principal to be set for this entry. |
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
@@ -204,4 +204,4 @@ Specifies the principal for which permissions are granted or denied by this ACL 
 
 **See Also**
 
-- [#getPrincipal](../java/security/acl/AclEntry.md))
+- [#getPrincipal](AclEntry.md))

@@ -2,7 +2,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # NumberKeyListener
 
-Kotlin | [Java](../android/text/method/NumberKeyListener.md)
+Kotlin | [Java](NumberKeyListener.md)
 | --- | --- |
 
 ```
@@ -11,12 +11,12 @@ abstract class NumberKeyListener : BaseKeyListener, InputFilter
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.text.method.MetaKeyKeyListener](../android/text/method/MetaKeyKeyListener.md) |||
-| | ↳ | [android.text.method.BaseKeyListener](../android/text/method/BaseKeyListener.md) ||
-| | | ↳ | [android.text.method.NumberKeyListener](../android/text/method/NumberKeyListener.md) |
+| ↳ | [android.text.method.MetaKeyKeyListener](MetaKeyKeyListener.md) |||
+| | ↳ | [android.text.method.BaseKeyListener](BaseKeyListener.md) ||
+| | | ↳ | [android.text.method.NumberKeyListener](NumberKeyListener.md) |
 | --- | --- | --- | --- |
 
-| Known Direct Subclasses [DateKeyListener](../android/text/method/DateKeyListener.md), [DateTimeKeyListener](../android/text/method/DateTimeKeyListener.md), [DialerKeyListener](../android/text/method/DialerKeyListener.md), [DigitsKeyListener](../android/text/method/DigitsKeyListener.md), [TimeKeyListener](../android/text/method/TimeKeyListener.md) |---|---| | [DateKeyListener](../android/text/method/DateKeyListener.md) | For entering dates in a text field. | | [DateTimeKeyListener](../android/text/method/DateTimeKeyListener.md) | For entering dates and times in the same text field. | | [DialerKeyListener](../android/text/method/DialerKeyListener.md) | For dialing-only text entry | | [DigitsKeyListener](../android/text/method/DigitsKeyListener.md) | For digits-only text entry | | [TimeKeyListener](../android/text/method/TimeKeyListener.md) | For entering times in a text field. | |
+| Known Direct Subclasses [DateKeyListener](DateKeyListener.md), [DateTimeKeyListener](DateTimeKeyListener.md), [DialerKeyListener](DialerKeyListener.md), [DigitsKeyListener](DigitsKeyListener.md), [TimeKeyListener](TimeKeyListener.md) |---|---| | [DateKeyListener](DateKeyListener.md) | For entering dates in a text field. | | [DateTimeKeyListener](DateTimeKeyListener.md) | For entering dates and times in the same text field. | | [DialerKeyListener](DialerKeyListener.md) | For dialing-only text entry | | [DigitsKeyListener](DigitsKeyListener.md) | For digits-only text entry | | [TimeKeyListener](TimeKeyListener.md) | For entering times in a text field. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 For numeric text entry

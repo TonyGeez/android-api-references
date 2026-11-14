@@ -18,7 +18,7 @@ interface QuotaUpdater
 |
 | This class is obsolete and no longer used.
 
-Encapsulates a callback function which is used to provide a new quota for a JavaScript storage API. See [WebChromeClient.onExceededDatabaseQuota](../android/webkit/WebChromeClient.md)).
+Encapsulates a callback function which is used to provide a new quota for a JavaScript storage API. See [WebChromeClient.onExceededDatabaseQuota](WebChromeClient.md)).
 
 ## Summary
 

@@ -4,7 +4,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 
 # ClipboardManager
 
-Kotlin| [Java](../android/content/ClipboardManager.md) 
+Kotlin| [Java](ClipboardManager.md) 
 | --- | --- |
 
 ```
@@ -13,12 +13,12 @@ open class ClipboardManager : ClipboardManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.text.ClipboardManager](../android/text/ClipboardManager.md) ||
-| | ↳ | [android.content.ClipboardManager](../android/content/ClipboardManager.md) |
+| ↳ | [android.text.ClipboardManager](../android.text/ClipboardManager.md) ||
+| | ↳ | [android.content.ClipboardManager](ClipboardManager.md) |
 
 Interface to the clipboard service, for placing and retrieving text in the global clipboard.
 
-The ClipboardManager API itself is very simple: it consists of methods to atomically get and set the current primary clipboard data. That data is expressed as a [ClipData](../android/content/ClipData.md) object, which defines the protocol for data exchange between applications.
+The ClipboardManager API itself is very simple: it consists of methods to atomically get and set the current primary clipboard data. That data is expressed as a [ClipData](ClipData.md) object, which defines the protocol for data exchange between applications.
 |
 | ### Developer Guides
 |
@@ -32,19 +32,19 @@ The ClipboardManager API itself is very simple: it consists of methods to atomic
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addPrimaryClipChangedListener](../android/content/ClipboardManager.md))`(`what:` ` [ClipboardManager.OnPrimaryClipChangedListener](../android/content/ClipboardManager.OnPrimaryClipChangedListener.md)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearPrimaryClip](../android/content/ClipboardManager.md))`()` Clears any current primary clip on the clipboard. |
-| open [ClipData](../android/content/ClipData.md)? | [getPrimaryClip](../android/content/ClipboardManager.md))`()` Returns the current primary clip on the clipboard. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addPrimaryClipChangedListener](ClipboardManager.md))`(`what:` ` [ClipboardManager.OnPrimaryClipChangedListener](../android/content/ClipboardManager.OnPrimaryClipChangedListener.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearPrimaryClip](ClipboardManager.md))`()` Clears any current primary clip on the clipboard. |
+| open [ClipData](ClipData.md)? | [getPrimaryClip](ClipboardManager.md))`()` Returns the current primary clip on the clipboard. |
 | --- | --- |
-| open [ClipDescription](../android/content/ClipDescription.md)? | [getPrimaryClipDescription](../android/content/ClipboardManager.md))`()` Returns a description of the current primary clip on the clipboard but not a copy of its data. |
-| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [getText](../android/content/ClipboardManager.md))`()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasPrimaryClip](../android/content/ClipboardManager.md))`()` Returns true if there is currently a primary clip on the clipboard. |
+| open [ClipDescription](ClipDescription.md)? | [getPrimaryClipDescription](ClipboardManager.md))`()` Returns a description of the current primary clip on the clipboard but not a copy of its data. |
+| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [getText](ClipboardManager.md))`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasPrimaryClip](ClipboardManager.md))`()` Returns true if there is currently a primary clip on the clipboard. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasText](../android/content/ClipboardManager.md))`()` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removePrimaryClipChangedListener](../android/content/ClipboardManager.md))`(`what:` ` [ClipboardManager.OnPrimaryClipChangedListener](../android/content/ClipboardManager.OnPrimaryClipChangedListener.md)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPrimaryClip](../android/content/ClipboardManager.md))`(`clip:` ` [ClipData](../android/content/ClipData.md)`)` Sets the current primary clip on the clipboard. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasText](ClipboardManager.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removePrimaryClipChangedListener](ClipboardManager.md))`(`what:` ` [ClipboardManager.OnPrimaryClipChangedListener](../android/content/ClipboardManager.OnPrimaryClipChangedListener.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPrimaryClip](ClipboardManager.md))`(`clip:` ` [ClipData](ClipData.md)`)` Sets the current primary clip on the clipboard. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setText](../android/content/ClipboardManager.md))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setText](ClipboardManager.md))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` <br /> |
 
 ## Public methods
 
@@ -67,7 +67,7 @@ open fun clearPrimaryClip(): Unit
 Clears any current primary clip on the clipboard. 
 **See Also**
 
-- [#setPrimaryClip(ClipData)](../android/content/ClipboardManager.md)) 
+- [#setPrimaryClip(ClipData)](ClipboardManager.md)) 
 
 ### getPrimaryClip
 
@@ -80,7 +80,7 @@ open fun getPrimaryClip(): ClipData?
 Returns the current primary clip on the clipboard.*If the application is not the default IME or does not have input focus this return`null`.* 
 **See Also**
 
-- [#setPrimaryClip(ClipData)](../android/content/ClipboardManager.md)) 
+- [#setPrimaryClip(ClipData)](ClipboardManager.md)) 
 
 ### getPrimaryClipDescription
 
@@ -95,7 +95,7 @@ Returns a description of the current primary clip on the clipboard but not a cop
 *If the application is not the default IME or does not have input focus this return`null`.* 
 **See Also**
 
-- [#setPrimaryClip(ClipData)](../android/content/ClipboardManager.md)) 
+- [#setPrimaryClip(ClipData)](ClipboardManager.md)) 
 
 ### getText
 
@@ -105,7 +105,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 open fun getText(): CharSequence!
 ```
 
-**Deprecated:** *Use [getPrimaryClip()](../android/content/ClipboardManager.md))instead. This retrieves the primary clip and tries to coerce it to a string.* 
+**Deprecated:** *Use [getPrimaryClip()](ClipboardManager.md))instead. This retrieves the primary clip and tries to coerce it to a string.* 
 
 ### hasPrimaryClip
 
@@ -125,7 +125,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 open fun hasText(): Boolean
 ```
 
-**Deprecated:** *Use [hasPrimaryClip()](../android/content/ClipboardManager.md))instead.* 
+**Deprecated:** *Use [hasPrimaryClip()](ClipboardManager.md))instead.* 
 
 ### removePrimaryClipChangedListener
 
@@ -147,7 +147,7 @@ Sets the current primary clip on the clipboard. This is the clip that is involve
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| `clip` | [ClipData](../android/content/ClipData.md):The clipped data item to set. This value cannot be`null`. |
+| `clip` | [ClipData](ClipData.md):The clipped data item to set. This value cannot be`null`. |
 
 **See Also**
 
@@ -162,4 +162,4 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 open fun setText(text: CharSequence!): Unit
 ```
 
-**Deprecated:** *Use [setPrimaryClip(android.content.ClipData)](../android/content/ClipboardManager.md))instead. This creates a ClippedItem holding the given text and sets it as the primary clip. It has no label or icon.*
+**Deprecated:** *Use [setPrimaryClip(android.content.ClipData)](ClipboardManager.md))instead. This creates a ClippedItem holding the given text and sets it as the primary clip. It has no label or icon.*

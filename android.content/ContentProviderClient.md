@@ -4,7 +4,7 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 
 # ContentProviderClient
 
-Kotlin| [Java](../android/content/ContentProviderClient.md) 
+Kotlin| [Java](ContentProviderClient.md) 
 | --- | --- |
 
 ```
@@ -13,60 +13,60 @@ open class ContentProviderClient : AutoCloseable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.content.ContentProviderClient](../android/content/ContentProviderClient.md) |
+| ↳ | [android.content.ContentProviderClient](ContentProviderClient.md) |
 
-The public interface object used to interact with a specific [ContentProvider](../android/content/ContentProvider.md).
+The public interface object used to interact with a specific [ContentProvider](ContentProvider.md).
 
-Instances can be obtained by calling android.content.ContentResolver#acquireContentProviderClient or android.content.ContentResolver#acquireUnstableContentProviderClient. Instances must be released using [close()](../android/content/ContentProviderClient.md))in order to indicate to the system that the underlying [ContentProvider](../android/content/ContentProvider.md) is no longer needed and can be killed to free up resources.
+Instances can be obtained by calling android.content.ContentResolver#acquireContentProviderClient or android.content.ContentResolver#acquireUnstableContentProviderClient. Instances must be released using [close()](ContentProviderClient.md))in order to indicate to the system that the underlying [ContentProvider](ContentProvider.md) is no longer needed and can be killed to free up resources.
 
-Note that you should generally create a new ContentProviderClient instance for each thread that will be performing operations. Unlike [ContentResolver](../android/content/ContentResolver.md), the methods here such as #query and #openFile are not thread safe -- you must not call [close()](../android/content/ContentProviderClient.md))on the ContentProviderClient those calls are made from until you are finished with the data they have returned.
+Note that you should generally create a new ContentProviderClient instance for each thread that will be performing operations. Unlike [ContentResolver](ContentResolver.md), the methods here such as #query and #openFile are not thread safe -- you must not call [close()](ContentProviderClient.md))on the ContentProviderClient those calls are made from until you are finished with the data they have returned.
 
 ## Summary
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ContentProviderResult](../android/content/ContentProviderResult.md)!\> | [applyBatch](../android/content/ContentProviderClient.md))`(`authority:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `operations:` ` [ArrayList](../java/util/ArrayList.md)< [ContentProviderOperation](../android/content/ContentProviderOperation.md)!>`)` See android. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ContentProviderResult](../android/content/ContentProviderResult.md)!\> | [applyBatch](../android/content/ContentProviderClient.md))`(`operations:` ` [ArrayList](../java/util/ArrayList.md)< [ContentProviderOperation](../android/content/ContentProviderOperation.md)!>`)` See android. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [bulkInsert](../android/content/ContentProviderClient.md))`(`url:` ` [Uri](../android/net/Uri.md)`, `initialValues:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ContentValues](../android/content/ContentValues.md)!>`)` See [ContentProvider.bulkInsert](../android/content/ContentProvider.md)) |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ContentProviderResult](ContentProviderResult.md)!\> | [applyBatch](ContentProviderClient.md))`(`authority:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `operations:` ` [ArrayList](../java.util/ArrayList.md)< [ContentProviderOperation](ContentProviderOperation.md)!>`)` See android. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ContentProviderResult](ContentProviderResult.md)!\> | [applyBatch](ContentProviderClient.md))`(`operations:` ` [ArrayList](../java.util/ArrayList.md)< [ContentProviderOperation](ContentProviderOperation.md)!>`)` See android. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [bulkInsert](ContentProviderClient.md))`(`url:` ` [Uri](../android.net/Uri.md)`, `initialValues:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ContentValues](ContentValues.md)!>`)` See [ContentProvider.bulkInsert](ContentProvider.md)) |
 | --- | --- |
-| open [Bundle](../android/os/Bundle.md)? | [call](../android/content/ContentProviderClient.md))`(`method:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `arg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `extras:` ` [Bundle](../android/os/Bundle.md)?`)` See [ContentProvider.call(String, String, Bundle)](../android/content/ContentProvider.md)) |
-| open [Bundle](../android/os/Bundle.md)? | [call](../android/content/ContentProviderClient.md))`(`authority:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `method:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `arg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `extras:` ` [Bundle](../android/os/Bundle.md)?`)` See [ContentProvider.call(String, String, Bundle)](../android/content/ContentProvider.md)) |
-| [Uri](../android/net/Uri.md)? | [canonicalize](../android/content/ContentProviderClient.md))`(`url:` ` [Uri](../android/net/Uri.md)`)` See [ContentProvider.canonicalize](../android/content/ContentProvider.md)) |
+| open [Bundle](../android.os/Bundle.md)? | [call](ContentProviderClient.md))`(`method:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `arg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `extras:` ` [Bundle](../android.os/Bundle.md)?`)` See [ContentProvider.call(String, String, Bundle)](ContentProvider.md)) |
+| open [Bundle](../android.os/Bundle.md)? | [call](ContentProviderClient.md))`(`authority:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `method:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `arg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `extras:` ` [Bundle](../android.os/Bundle.md)?`)` See [ContentProvider.call(String, String, Bundle)](ContentProvider.md)) |
+| [Uri](../android.net/Uri.md)? | [canonicalize](ContentProviderClient.md))`(`url:` ` [Uri](../android.net/Uri.md)`)` See [ContentProvider.canonicalize](ContentProvider.md)) |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../android/content/ContentProviderClient.md))`()` Closes this client connection, indicating to the system that the underlying [ContentProvider](../android/content/ContentProvider.md) is no longer needed. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [delete](../android/content/ContentProviderClient.md))`(`url:` ` [Uri](../android/net/Uri.md)`, `extras:` ` [Bundle](../android/os/Bundle.md)?`)` See android. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [delete](../android/content/ContentProviderClient.md))`(`url:` ` [Uri](../android/net/Uri.md)`, `selection:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `selectionArgs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>?`)` See android. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](ContentProviderClient.md))`()` Closes this client connection, indicating to the system that the underlying [ContentProvider](ContentProvider.md) is no longer needed. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [delete](ContentProviderClient.md))`(`url:` ` [Uri](../android.net/Uri.md)`, `extras:` ` [Bundle](../android.os/Bundle.md)?`)` See android. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [delete](ContentProviderClient.md))`(`url:` ` [Uri](../android.net/Uri.md)`, `selection:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `selectionArgs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>?`)` See android. |
 | --- | --- |
-| open [ContentProvider](../android/content/ContentProvider.md)? | [getLocalContentProvider](../android/content/ContentProviderClient.md))`()` Get a reference to the [ContentProvider](../android/content/ContentProvider.md) that is associated with this client. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | [getStreamTypes](../android/content/ContentProviderClient.md))`(`url:` ` [Uri](../android/net/Uri.md)`, `mimeTypeFilter:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` See [ContentProvider.getStreamTypes](../android/content/ContentProvider.md)) |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getType](../android/content/ContentProviderClient.md))`(`url:` ` [Uri](../android/net/Uri.md)`)` See [ContentProvider.getType](../android/content/ContentProvider.md)) |
+| open [ContentProvider](ContentProvider.md)? | [getLocalContentProvider](ContentProviderClient.md))`()` Get a reference to the [ContentProvider](ContentProvider.md) that is associated with this client. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | [getStreamTypes](ContentProviderClient.md))`(`url:` ` [Uri](../android.net/Uri.md)`, `mimeTypeFilter:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` See [ContentProvider.getStreamTypes](ContentProvider.md)) |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getType](ContentProviderClient.md))`(`url:` ` [Uri](../android.net/Uri.md)`)` See [ContentProvider.getType](ContentProvider.md)) |
 | --- | --- |
-| open [Uri](../android/net/Uri.md)? | [insert](../android/content/ContentProviderClient.md))`(`url:` ` [Uri](../android/net/Uri.md)`, `initialValues:` ` [ContentValues](../android/content/ContentValues.md)?`)` See android. |
-| open [Uri](../android/net/Uri.md)? | [insert](../android/content/ContentProviderClient.md))`(`url:` ` [Uri](../android/net/Uri.md)`, `initialValues:` ` [ContentValues](../android/content/ContentValues.md)?`, `extras:` ` [Bundle](../android/os/Bundle.md)?`)` See android. |
-| open [AssetFileDescriptor](../android/content/res/AssetFileDescriptor.md)? | [openAssetFile](../android/content/ContentProviderClient.md))`(`url:` ` [Uri](../android/net/Uri.md)`, `mode:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` See android. |
+| open [Uri](../android.net/Uri.md)? | [insert](ContentProviderClient.md))`(`url:` ` [Uri](../android.net/Uri.md)`, `initialValues:` ` [ContentValues](ContentValues.md)?`)` See android. |
+| open [Uri](../android.net/Uri.md)? | [insert](ContentProviderClient.md))`(`url:` ` [Uri](../android.net/Uri.md)`, `initialValues:` ` [ContentValues](ContentValues.md)?`, `extras:` ` [Bundle](../android.os/Bundle.md)?`)` See android. |
+| open [AssetFileDescriptor](../android.content.res/AssetFileDescriptor.md)? | [openAssetFile](ContentProviderClient.md))`(`url:` ` [Uri](../android.net/Uri.md)`, `mode:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` See android. |
 | --- | --- |
-| open [AssetFileDescriptor](../android/content/res/AssetFileDescriptor.md)? | [openAssetFile](../android/content/ContentProviderClient.md))`(`url:` ` [Uri](../android/net/Uri.md)`, `mode:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `signal:` ` [CancellationSignal](../android/os/CancellationSignal.md)?`)` See android. |
-| open [ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md)? | [openFile](../android/content/ContentProviderClient.md))`(`url:` ` [Uri](../android/net/Uri.md)`, `mode:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` See android. |
-| open [ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md)? | [openFile](../android/content/ContentProviderClient.md))`(`url:` ` [Uri](../android/net/Uri.md)`, `mode:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `signal:` ` [CancellationSignal](../android/os/CancellationSignal.md)?`)` See android. |
+| open [AssetFileDescriptor](../android.content.res/AssetFileDescriptor.md)? | [openAssetFile](ContentProviderClient.md))`(`url:` ` [Uri](../android.net/Uri.md)`, `mode:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `signal:` ` [CancellationSignal](../android.os/CancellationSignal.md)?`)` See android. |
+| open [ParcelFileDescriptor](../android.os/ParcelFileDescriptor.md)? | [openFile](ContentProviderClient.md))`(`url:` ` [Uri](../android.net/Uri.md)`, `mode:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` See android. |
+| open [ParcelFileDescriptor](../android.os/ParcelFileDescriptor.md)? | [openFile](ContentProviderClient.md))`(`url:` ` [Uri](../android.net/Uri.md)`, `mode:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `signal:` ` [CancellationSignal](../android.os/CancellationSignal.md)?`)` See android. |
 | --- | --- |
-| [AssetFileDescriptor](../android/content/res/AssetFileDescriptor.md)? | [openTypedAssetFile](../android/content/ContentProviderClient.md))`(`uri:` ` [Uri](../android/net/Uri.md)`, `mimeTypeFilter:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `opts:` ` [Bundle](../android/os/Bundle.md)?`, `signal:` ` [CancellationSignal](../android/os/CancellationSignal.md)?`)` <br /> |
-| [AssetFileDescriptor](../android/content/res/AssetFileDescriptor.md)? | [openTypedAssetFileDescriptor](../android/content/ContentProviderClient.md))`(`uri:` ` [Uri](../android/net/Uri.md)`, `mimeType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `opts:` ` [Bundle](../android/os/Bundle.md)?`)` See android. |
-| [AssetFileDescriptor](../android/content/res/AssetFileDescriptor.md)? | [openTypedAssetFileDescriptor](../android/content/ContentProviderClient.md))`(`uri:` ` [Uri](../android/net/Uri.md)`, `mimeType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `opts:` ` [Bundle](../android/os/Bundle.md)?`, `signal:` ` [CancellationSignal](../android/os/CancellationSignal.md)?`)` See android. |
+| [AssetFileDescriptor](../android.content.res/AssetFileDescriptor.md)? | [openTypedAssetFile](ContentProviderClient.md))`(`uri:` ` [Uri](../android.net/Uri.md)`, `mimeTypeFilter:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `opts:` ` [Bundle](../android.os/Bundle.md)?`, `signal:` ` [CancellationSignal](../android.os/CancellationSignal.md)?`)` <br /> |
+| [AssetFileDescriptor](../android.content.res/AssetFileDescriptor.md)? | [openTypedAssetFileDescriptor](ContentProviderClient.md))`(`uri:` ` [Uri](../android.net/Uri.md)`, `mimeType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `opts:` ` [Bundle](../android.os/Bundle.md)?`)` See android. |
+| [AssetFileDescriptor](../android.content.res/AssetFileDescriptor.md)? | [openTypedAssetFileDescriptor](ContentProviderClient.md))`(`uri:` ` [Uri](../android.net/Uri.md)`, `mimeType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `opts:` ` [Bundle](../android.os/Bundle.md)?`, `signal:` ` [CancellationSignal](../android.os/CancellationSignal.md)?`)` See android. |
 | --- | --- |
-| open [Cursor](../android/database/Cursor.md)? | [query](../android/content/ContentProviderClient.md))`(`uri:` ` [Uri](../android/net/Uri.md)`, `projection:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>?`, `queryArgs:` ` [Bundle](../android/os/Bundle.md)!`, `cancellationSignal:` ` [CancellationSignal](../android/os/CancellationSignal.md)?`)` See android. |
-| open [Cursor](../android/database/Cursor.md)? | [query](../android/content/ContentProviderClient.md))`(`url:` ` [Uri](../android/net/Uri.md)`, `projection:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>?`, `selection:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `selectionArgs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>?`, `sortOrder:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` See android. |
-| open [Cursor](../android/database/Cursor.md)? | [query](../android/content/ContentProviderClient.md))`(`uri:` ` [Uri](../android/net/Uri.md)`, `projection:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>?`, `selection:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `selectionArgs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>?`, `sortOrder:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `cancellationSignal:` ` [CancellationSignal](../android/os/CancellationSignal.md)?`)` See android. |
+| open [Cursor](../android.database/Cursor.md)? | [query](ContentProviderClient.md))`(`uri:` ` [Uri](../android.net/Uri.md)`, `projection:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>?`, `queryArgs:` ` [Bundle](../android.os/Bundle.md)!`, `cancellationSignal:` ` [CancellationSignal](../android.os/CancellationSignal.md)?`)` See android. |
+| open [Cursor](../android.database/Cursor.md)? | [query](ContentProviderClient.md))`(`url:` ` [Uri](../android.net/Uri.md)`, `projection:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>?`, `selection:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `selectionArgs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>?`, `sortOrder:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` See android. |
+| open [Cursor](../android.database/Cursor.md)? | [query](ContentProviderClient.md))`(`uri:` ` [Uri](../android.net/Uri.md)`, `projection:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>?`, `selection:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `selectionArgs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>?`, `sortOrder:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `cancellationSignal:` ` [CancellationSignal](../android.os/CancellationSignal.md)?`)` See android. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [refresh](../android/content/ContentProviderClient.md))`(`url:` ` [Uri](../android/net/Uri.md)!`, `extras:` ` [Bundle](../android/os/Bundle.md)?`, `cancellationSignal:` ` [CancellationSignal](../android/os/CancellationSignal.md)?`)` See [ContentProvider.refresh](../android/content/ContentProvider.md)) |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [release](../android/content/ContentProviderClient.md))`()` <br /> |
-| [Uri](../android/net/Uri.md)? | [uncanonicalize](../android/content/ContentProviderClient.md))`(`url:` ` [Uri](../android/net/Uri.md)`)` See [ContentProvider.uncanonicalize](../android/content/ContentProvider.md)) |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [refresh](ContentProviderClient.md))`(`url:` ` [Uri](../android.net/Uri.md)!`, `extras:` ` [Bundle](../android.os/Bundle.md)?`, `cancellationSignal:` ` [CancellationSignal](../android.os/CancellationSignal.md)?`)` See [ContentProvider.refresh](ContentProvider.md)) |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [release](ContentProviderClient.md))`()` <br /> |
+| [Uri](../android.net/Uri.md)? | [uncanonicalize](ContentProviderClient.md))`(`url:` ` [Uri](../android.net/Uri.md)`)` See [ContentProvider.uncanonicalize](ContentProvider.md)) |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [update](../android/content/ContentProviderClient.md))`(`url:` ` [Uri](../android/net/Uri.md)`, `values:` ` [ContentValues](../android/content/ContentValues.md)?`, `extras:` ` [Bundle](../android/os/Bundle.md)?`)` See android. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [update](../android/content/ContentProviderClient.md))`(`url:` ` [Uri](../android/net/Uri.md)`, `values:` ` [ContentValues](../android/content/ContentValues.md)?`, `selection:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `selectionArgs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>?`)` See android. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [update](ContentProviderClient.md))`(`url:` ` [Uri](../android.net/Uri.md)`, `values:` ` [ContentValues](ContentValues.md)?`, `extras:` ` [Bundle](../android.os/Bundle.md)?`)` See android. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [update](ContentProviderClient.md))`(`url:` ` [Uri](../android.net/Uri.md)`, `values:` ` [ContentValues](ContentValues.md)?`, `selection:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `selectionArgs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>?`)` See android. |
 
 | Protected methods ||
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](../android/content/ContentProviderClient.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](ContentProviderClient.md))`()` <br /> |
 
 ## Public methods
 
@@ -86,11 +86,11 @@ See android.content.ContentProvider#applyBatch
 | Parameters ||
 |--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `authority` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):This value cannot be`null`. |
-| `operations` | [ArrayList](../java/util/ArrayList.md)\< [ContentProviderOperation](../android/content/ContentProviderOperation.md)!\>:This value cannot be`null`. |
+| `operations` | [ArrayList](../java.util/ArrayList.md)\< [ContentProviderOperation](ContentProviderOperation.md)!\>:This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ContentProviderResult](../android/content/ContentProviderResult.md)!> | This value cannot be`null`. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ContentProviderResult](ContentProviderResult.md)!> | This value cannot be`null`. |
 
 ### applyBatch
 
@@ -104,11 +104,11 @@ See android.content.ContentProvider#applyBatch
 
 | Parameters ||
 |--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `operations` | [ArrayList](../java/util/ArrayList.md)\< [ContentProviderOperation](../android/content/ContentProviderOperation.md)!\>:This value cannot be`null`. |
+| `operations` | [ArrayList](../java.util/ArrayList.md)\< [ContentProviderOperation](ContentProviderOperation.md)!\>:This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ContentProviderResult](../android/content/ContentProviderResult.md)!> | This value cannot be`null`. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ContentProviderResult](ContentProviderResult.md)!> | This value cannot be`null`. |
 
 ### bulkInsert
 
@@ -121,12 +121,12 @@ open fun bulkInsert(
 ): Int
 ```
 
-See [ContentProvider.bulkInsert](../android/content/ContentProvider.md))
+See [ContentProvider.bulkInsert](ContentProvider.md))
 
 | Parameters ||
 |-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `url` | [Uri](../android/net/Uri.md):This value cannot be`null`. |
-| `initialValues` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ContentValues](../android/content/ContentValues.md)!\>:This value cannot be`null`. |
+| `url` | [Uri](../android.net/Uri.md):This value cannot be`null`. |
+| `initialValues` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ContentValues](ContentValues.md)!\>:This value cannot be`null`. |
 
 ### call
 
@@ -140,18 +140,18 @@ open fun call(
 ): Bundle?
 ```
 
-See [ContentProvider.call(String, String, Bundle)](../android/content/ContentProvider.md))
+See [ContentProvider.call(String, String, Bundle)](ContentProvider.md))
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------|
 | `method` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):This value cannot be`null`. |
 | `arg` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:This value may be`null`. |
-| `extras` | [Bundle](../android/os/Bundle.md)?:This value may be`null`. |
+| `extras` | [Bundle](../android.os/Bundle.md)?:This value may be`null`. |
 | --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------|--------------------------|
-| [Bundle](../android/os/Bundle.md)? | This value may be`null`. |
+| [Bundle](../android.os/Bundle.md)? | This value may be`null`. |
 
 ### call
 
@@ -166,7 +166,7 @@ open fun call(
 ): Bundle?
 ```
 
-See [ContentProvider.call(String, String, Bundle)](../android/content/ContentProvider.md))
+See [ContentProvider.call(String, String, Bundle)](ContentProvider.md))
 
 | Parameters ||
 |-------------|--------------------------------------------------------------------------------------------------------------|
@@ -174,11 +174,11 @@ See [ContentProvider.call(String, String, Bundle)](../android/content/ContentPro
 | `method` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):This value cannot be`null`. |
 | `arg` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:This value may be`null`. |
 | --- | --- |
-| `extras` | [Bundle](../android/os/Bundle.md)?:This value may be`null`. |
+| `extras` | [Bundle](../android.os/Bundle.md)?:This value may be`null`. |
 
 | Return ||
 |-----------------------------------------------------------------------------------|--------------------------|
-| [Bundle](../android/os/Bundle.md)? | This value may be`null`. |
+| [Bundle](../android.os/Bundle.md)? | This value may be`null`. |
 
 ### canonicalize
 
@@ -188,15 +188,15 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 fun canonicalize(url: Uri): Uri?
 ```
 
-See [ContentProvider.canonicalize](../android/content/ContentProvider.md))
+See [ContentProvider.canonicalize](ContentProvider.md))
 
 | Parameters ||
 |-------|---------------------------------------------------------------------------------------------------------|
-| `url` | [Uri](../android/net/Uri.md):This value cannot be`null`. |
+| `url` | [Uri](../android.net/Uri.md):This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------|--------------------------|
-| [Uri](../android/net/Uri.md)? | This value may be`null`. |
+| [Uri](../android.net/Uri.md)? | This value may be`null`. |
 
 ### close
 
@@ -206,7 +206,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun close(): Unit
 ```
 
-Closes this client connection, indicating to the system that the underlying [ContentProvider](../android/content/ContentProvider.md) is no longer needed.
+Closes this client connection, indicating to the system that the underlying [ContentProvider](ContentProvider.md) is no longer needed.
 
 | Exceptions ||
 |-----------------------|-----------------------------------|
@@ -227,8 +227,8 @@ See android.content.ContentProvider#delete
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------|
-| `url` | [Uri](../android/net/Uri.md):This value cannot be`null`. |
-| `extras` | [Bundle](../android/os/Bundle.md)?:This value may be`null`. |
+| `url` | [Uri](../android.net/Uri.md):This value cannot be`null`. |
+| `extras` | [Bundle](../android.os/Bundle.md)?:This value may be`null`. |
 
 ### delete
 
@@ -246,7 +246,7 @@ See android.content.ContentProvider#delete
 
 | Parameters ||
 |-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `url` | [Uri](../android/net/Uri.md):This value cannot be`null`. |
+| `url` | [Uri](../android.net/Uri.md):This value cannot be`null`. |
 | `selection` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:This value may be`null`. |
 | `selectionArgs` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?:This value may be`null`. |
 | --- | --- |
@@ -259,11 +259,11 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 open fun getLocalContentProvider(): ContentProvider?
 ```
 
-Get a reference to the [ContentProvider](../android/content/ContentProvider.md) that is associated with this client. If the [ContentProvider](../android/content/ContentProvider.md) is running in a different process then null will be returned. This can be used if you know you are running in the same process as a provider, and want to get direct access to its implementation details.
+Get a reference to the [ContentProvider](ContentProvider.md) that is associated with this client. If the [ContentProvider](ContentProvider.md) is running in a different process then null will be returned. This can be used if you know you are running in the same process as a provider, and want to get direct access to its implementation details.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [ContentProvider](../android/content/ContentProvider.md)? | If the associated [ContentProvider](../android/content/ContentProvider.md) is local, returns it. Otherwise returns null. |
+| [ContentProvider](ContentProvider.md)? | If the associated [ContentProvider](ContentProvider.md) is local, returns it. Otherwise returns null. |
 
 ### getStreamTypes
 
@@ -276,11 +276,11 @@ open fun getStreamTypes(
 ): Array<String!>?
 ```
 
-See [ContentProvider.getStreamTypes](../android/content/ContentProvider.md))
+See [ContentProvider.getStreamTypes](ContentProvider.md))
 
 | Parameters ||
 |------------------|--------------------------------------------------------------------------------------------------------------|
-| `url` | [Uri](../android/net/Uri.md):This value cannot be`null`. |
+| `url` | [Uri](../android.net/Uri.md):This value cannot be`null`. |
 | `mimeTypeFilter` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):This value cannot be`null`. |
 
 | Return ||
@@ -295,11 +295,11 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 open fun getType(url: Uri): String?
 ```
 
-See [ContentProvider.getType](../android/content/ContentProvider.md))
+See [ContentProvider.getType](ContentProvider.md))
 
 | Parameters ||
 |-------|---------------------------------------------------------------------------------------------------------|
-| `url` | [Uri](../android/net/Uri.md):This value cannot be`null`. |
+| `url` | [Uri](../android.net/Uri.md):This value cannot be`null`. |
 
 | Return ||
 |-----------------------------------------------------------------------------------|--------------------------|
@@ -320,12 +320,12 @@ See android.content.ContentProvider#insert
 
 | Parameters ||
 |-----------------|-------------------------------------------------------------------------------------------------------------------------|
-| `url` | [Uri](../android/net/Uri.md):This value cannot be`null`. |
-| `initialValues` | [ContentValues](../android/content/ContentValues.md)?:This value may be`null`. |
+| `url` | [Uri](../android.net/Uri.md):This value cannot be`null`. |
+| `initialValues` | [ContentValues](ContentValues.md)?:This value may be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------|--------------------------|
-| [Uri](../android/net/Uri.md)? | This value may be`null`. |
+| [Uri](../android.net/Uri.md)? | This value may be`null`. |
 
 ### insert
 
@@ -343,14 +343,14 @@ See android.content.ContentProvider#insert
 
 | Parameters ||
 |-----------------|-------------------------------------------------------------------------------------------------------------------------|
-| `url` | [Uri](../android/net/Uri.md):This value cannot be`null`. |
-| `initialValues` | [ContentValues](../android/content/ContentValues.md)?:This value may be`null`. |
-| `extras` | [Bundle](../android/os/Bundle.md)?:This value may be`null`. |
+| `url` | [Uri](../android.net/Uri.md):This value cannot be`null`. |
+| `initialValues` | [ContentValues](ContentValues.md)?:This value may be`null`. |
+| `extras` | [Bundle](../android.os/Bundle.md)?:This value may be`null`. |
 | --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------|--------------------------|
-| [Uri](../android/net/Uri.md)? | This value may be`null`. |
+| [Uri](../android.net/Uri.md)? | This value may be`null`. |
 
 ### openAssetFile
 
@@ -367,12 +367,12 @@ See android.content.ContentProvider#openAssetFile. Note that this*does not*take 
 
 | Parameters ||
 |--------|--------------------------------------------------------------------------------------------------------------|
-| `url` | [Uri](../android/net/Uri.md):This value cannot be`null`. |
+| `url` | [Uri](../android.net/Uri.md):This value cannot be`null`. |
 | `mode` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):This value cannot be`null`. |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------|--------------------------|
-| [AssetFileDescriptor](../android/content/res/AssetFileDescriptor.md)? | This value may be`null`. |
+| [AssetFileDescriptor](../android.content.res/AssetFileDescriptor.md)? | This value may be`null`. |
 
 ### openAssetFile
 
@@ -390,14 +390,14 @@ See android.content.ContentProvider#openAssetFile. Note that this*does not*take 
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------|
-| `url` | [Uri](../android/net/Uri.md):This value cannot be`null`. |
+| `url` | [Uri](../android.net/Uri.md):This value cannot be`null`. |
 | `mode` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):This value cannot be`null`. |
-| `signal` | [CancellationSignal](../android/os/CancellationSignal.md)?:This value may be`null`. |
+| `signal` | [CancellationSignal](../android.os/CancellationSignal.md)?:This value may be`null`. |
 | --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------|--------------------------|
-| [AssetFileDescriptor](../android/content/res/AssetFileDescriptor.md)? | This value may be`null`. |
+| [AssetFileDescriptor](../android.content.res/AssetFileDescriptor.md)? | This value may be`null`. |
 
 ### openFile
 
@@ -414,12 +414,12 @@ See android.content.ContentProvider#openFile. Note that this*does not*take care 
 
 | Parameters ||
 |--------|--------------------------------------------------------------------------------------------------------------|
-| `url` | [Uri](../android/net/Uri.md):This value cannot be`null`. |
+| `url` | [Uri](../android.net/Uri.md):This value cannot be`null`. |
 | `mode` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):This value cannot be`null`. |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------|--------------------------|
-| [ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md)? | This value may be`null`. |
+| [ParcelFileDescriptor](../android.os/ParcelFileDescriptor.md)? | This value may be`null`. |
 
 ### openFile
 
@@ -437,14 +437,14 @@ See android.content.ContentProvider#openFile. Note that this*does not*take care 
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------|
-| `url` | [Uri](../android/net/Uri.md):This value cannot be`null`. |
+| `url` | [Uri](../android.net/Uri.md):This value cannot be`null`. |
 | `mode` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):This value cannot be`null`. |
-| `signal` | [CancellationSignal](../android/os/CancellationSignal.md)?:This value may be`null`. |
+| `signal` | [CancellationSignal](../android.os/CancellationSignal.md)?:This value may be`null`. |
 | --- | --- |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------|--------------------------|
-| [ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md)? | This value may be`null`. |
+| [ParcelFileDescriptor](../android.os/ParcelFileDescriptor.md)? | This value may be`null`. |
 
 ### openTypedAssetFile
 
@@ -461,15 +461,15 @@ fun openTypedAssetFile(
 
 | Parameters ||
 |------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| `uri` | [Uri](../android/net/Uri.md):This value cannot be`null`. |
+| `uri` | [Uri](../android.net/Uri.md):This value cannot be`null`. |
 | `mimeTypeFilter` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):This value cannot be`null`. |
-| `opts` | [Bundle](../android/os/Bundle.md)?:This value may be`null`. |
+| `opts` | [Bundle](../android.os/Bundle.md)?:This value may be`null`. |
 | --- | --- |
-| `signal` | [CancellationSignal](../android/os/CancellationSignal.md)?:This value may be`null`. |
+| `signal` | [CancellationSignal](../android.os/CancellationSignal.md)?:This value may be`null`. |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------|--------------------------|
-| [AssetFileDescriptor](../android/content/res/AssetFileDescriptor.md)? | This value may be`null`. |
+| [AssetFileDescriptor](../android.content.res/AssetFileDescriptor.md)? | This value may be`null`. |
 
 ### openTypedAssetFileDescriptor
 
@@ -487,14 +487,14 @@ See android.content.ContentProvider#openTypedAssetFile
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------|
-| `uri` | [Uri](../android/net/Uri.md):This value cannot be`null`. |
+| `uri` | [Uri](../android.net/Uri.md):This value cannot be`null`. |
 | `mimeType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):This value cannot be`null`. |
-| `opts` | [Bundle](../android/os/Bundle.md)?:This value may be`null`. |
+| `opts` | [Bundle](../android.os/Bundle.md)?:This value may be`null`. |
 | --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------|--------------------------|
-| [AssetFileDescriptor](../android/content/res/AssetFileDescriptor.md)? | This value may be`null`. |
+| [AssetFileDescriptor](../android.content.res/AssetFileDescriptor.md)? | This value may be`null`. |
 
 ### openTypedAssetFileDescriptor
 
@@ -513,15 +513,15 @@ See android.content.ContentProvider#openTypedAssetFile
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------------|
-| `uri` | [Uri](../android/net/Uri.md):This value cannot be`null`. |
+| `uri` | [Uri](../android.net/Uri.md):This value cannot be`null`. |
 | `mimeType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):This value cannot be`null`. |
-| `opts` | [Bundle](../android/os/Bundle.md)?:This value may be`null`. |
+| `opts` | [Bundle](../android.os/Bundle.md)?:This value may be`null`. |
 | --- | --- |
-| `signal` | [CancellationSignal](../android/os/CancellationSignal.md)?:This value may be`null`. |
+| `signal` | [CancellationSignal](../android.os/CancellationSignal.md)?:This value may be`null`. |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------|--------------------------|
-| [AssetFileDescriptor](../android/content/res/AssetFileDescriptor.md)? | This value may be`null`. |
+| [AssetFileDescriptor](../android.content.res/AssetFileDescriptor.md)? | This value may be`null`. |
 
 ### query
 
@@ -540,14 +540,14 @@ See android.content.ContentProvider#query
 
 | Parameters ||
 |----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `uri` | [Uri](../android/net/Uri.md):This value cannot be`null`. |
+| `uri` | [Uri](../android.net/Uri.md):This value cannot be`null`. |
 | `projection` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?:This value may be`null`. |
-| `cancellationSignal` | [CancellationSignal](../android/os/CancellationSignal.md)?:This value may be`null`. |
+| `cancellationSignal` | [CancellationSignal](../android.os/CancellationSignal.md)?:This value may be`null`. |
 | --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------|--------------------------|
-| [Cursor](../android/database/Cursor.md)? | This value may be`null`. |
+| [Cursor](../android.database/Cursor.md)? | This value may be`null`. |
 
 ### query
 
@@ -567,7 +567,7 @@ See android.content.ContentProvider#query
 
 | Parameters ||
 |-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `url` | [Uri](../android/net/Uri.md):This value cannot be`null`. |
+| `url` | [Uri](../android.net/Uri.md):This value cannot be`null`. |
 | `projection` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?:This value may be`null`. |
 | `selection` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:This value may be`null`. |
 | --- | --- |
@@ -576,7 +576,7 @@ See android.content.ContentProvider#query
 
 | Return ||
 |-----------------------------------------------------------------------------------------|--------------------------|
-| [Cursor](../android/database/Cursor.md)? | This value may be`null`. |
+| [Cursor](../android.database/Cursor.md)? | This value may be`null`. |
 
 ### query
 
@@ -597,18 +597,18 @@ See android.content.ContentProvider#query
 
 | Parameters ||
 |----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `uri` | [Uri](../android/net/Uri.md):This value cannot be`null`. |
+| `uri` | [Uri](../android.net/Uri.md):This value cannot be`null`. |
 | `projection` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?:This value may be`null`. |
 | `selection` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:This value may be`null`. |
 | --- | --- |
 | `selectionArgs` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?:This value may be`null`. |
 | `sortOrder` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:This value may be`null`. |
-| `cancellationSignal` | [CancellationSignal](../android/os/CancellationSignal.md)?:This value may be`null`. |
+| `cancellationSignal` | [CancellationSignal](../android.os/CancellationSignal.md)?:This value may be`null`. |
 | --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------|--------------------------|
-| [Cursor](../android/database/Cursor.md)? | This value may be`null`. |
+| [Cursor](../android.database/Cursor.md)? | This value may be`null`. |
 
 ### refresh
 
@@ -622,12 +622,12 @@ open fun refresh(
 ): Boolean
 ```
 
-See [ContentProvider.refresh](../android/content/ContentProvider.md))
+See [ContentProvider.refresh](ContentProvider.md))
 
 | Parameters ||
 |----------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| `extras` | [Bundle](../android/os/Bundle.md)?:This value may be`null`. |
-| `cancellationSignal` | [CancellationSignal](../android/os/CancellationSignal.md)?:This value may be`null`. |
+| `extras` | [Bundle](../android.os/Bundle.md)?:This value may be`null`. |
+| `cancellationSignal` | [CancellationSignal](../android.os/CancellationSignal.md)?:This value may be`null`. |
 
 ### release
 
@@ -638,7 +638,7 @@ Deprecated in [API level 24](https://developer.android.com/guide/topics/manifest
 open fun release(): Boolean
 ```
 
-**Deprecated:** *replaced by [close()](../android/content/ContentProviderClient.md)).* 
+**Deprecated:** *replaced by [close()](ContentProviderClient.md)).* 
 
 ### uncanonicalize
 
@@ -648,15 +648,15 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 fun uncanonicalize(url: Uri): Uri?
 ```
 
-See [ContentProvider.uncanonicalize](../android/content/ContentProvider.md))
+See [ContentProvider.uncanonicalize](ContentProvider.md))
 
 | Parameters ||
 |-------|---------------------------------------------------------------------------------------------------------|
-| `url` | [Uri](../android/net/Uri.md):This value cannot be`null`. |
+| `url` | [Uri](../android.net/Uri.md):This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------|--------------------------|
-| [Uri](../android/net/Uri.md)? | This value may be`null`. |
+| [Uri](../android.net/Uri.md)? | This value may be`null`. |
 
 ### update
 
@@ -674,9 +674,9 @@ See android.content.ContentProvider#update
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------|
-| `url` | [Uri](../android/net/Uri.md):This value cannot be`null`. |
-| `values` | [ContentValues](../android/content/ContentValues.md)?:This value may be`null`. |
-| `extras` | [Bundle](../android/os/Bundle.md)?:This value may be`null`. |
+| `url` | [Uri](../android.net/Uri.md):This value cannot be`null`. |
+| `values` | [ContentValues](ContentValues.md)?:This value may be`null`. |
+| `extras` | [Bundle](../android.os/Bundle.md)?:This value may be`null`. |
 | --- | --- |
 
 ### update
@@ -696,8 +696,8 @@ See android.content.ContentProvider#update
 
 | Parameters ||
 |-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `url` | [Uri](../android/net/Uri.md):This value cannot be`null`. |
-| `values` | [ContentValues](../android/content/ContentValues.md)?:This value may be`null`. |
+| `url` | [Uri](../android.net/Uri.md):This value cannot be`null`. |
+| `values` | [ContentValues](ContentValues.md)?:This value may be`null`. |
 | `selection` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:This value may be`null`. |
 | --- | --- |
 | `selectionArgs` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?:This value may be`null`. |

@@ -13,13 +13,13 @@ interface OnCommunicationDeviceChangedListener
 
 | [android.media.AudioManager.OnCommunicationDeviceChangedListener](../android/media/AudioManager.OnCommunicationDeviceChangedListener.md) |
 
-Listener registered by client to be notified upon communication audio device change. See [setCommunicationDevice(android.media.AudioDeviceInfo)](../android/media/AudioManager.md)).
+Listener registered by client to be notified upon communication audio device change. See [setCommunicationDevice(android.media.AudioDeviceInfo)](AudioManager.md)).
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onCommunicationDeviceChanged](../android/media/AudioManager.OnCommunicationDeviceChangedListener.md))`(`device:` ` [AudioDeviceInfo](../android/media/AudioDeviceInfo.md)?`)` Callback method called upon communication audio device change. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onCommunicationDeviceChanged](../android/media/AudioManager.OnCommunicationDeviceChangedListener.md))`(`device:` ` [AudioDeviceInfo](AudioDeviceInfo.md)?`)` Callback method called upon communication audio device change. |
 
 ## Public methods
 
@@ -35,4 +35,4 @@ Callback method called upon communication audio device change.
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `device` | [AudioDeviceInfo](../android/media/AudioDeviceInfo.md)?:the audio device requested for communication use cases. Can be null on platforms not supporting [android.content.pm.PackageManager#FEATURE_TELEPHONY](../android/content/pm/PackageManager.md). |
+| `device` | [AudioDeviceInfo](AudioDeviceInfo.md)?:the audio device requested for communication use cases. Can be null on platforms not supporting [android.content.pm.PackageManager#FEATURE_TELEPHONY](../android.content.pm/PackageManager.md). |

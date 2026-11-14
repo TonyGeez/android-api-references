@@ -4,7 +4,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 
 # InlinePresentationSpec
 
-Kotlin| [Java](../android/widget/inline/InlinePresentationSpec.md) 
+Kotlin| [Java](InlinePresentationSpec.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class InlinePresentationSpec : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.widget.inline.InlinePresentationSpec](../android/widget/inline/InlinePresentationSpec.md) |
+| ↳ | [android.widget.inline.InlinePresentationSpec](InlinePresentationSpec.md) |
 
 This class represents the presentation specification by which an inline suggestion should abide when constructing its UI. Since suggestions are inlined in a host application while provided by another source, they need to be consistent with the host's look at feel to allow building smooth and integrated UIs.
 
@@ -21,28 +21,28 @@ This class represents the presentation specification by which an inline suggesti
 
 | Nested classes ||
 |---|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](../android/widget/inline/InlinePresentationSpec.Builder.md) A builder for [InlinePresentationSpec](../android/widget/inline/InlinePresentationSpec.md) |
+| | [Builder](../android/widget/inline/InlinePresentationSpec.Builder.md) A builder for [InlinePresentationSpec](InlinePresentationSpec.md) |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android.os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android.os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android.os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/widget/inline/InlinePresentationSpec.md))`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/widget/inline/InlinePresentationSpec.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [Size](../android/util/Size.md) | [getMaxSize](../android/widget/inline/InlinePresentationSpec.md))`()` The maximal size of the suggestion. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](InlinePresentationSpec.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](InlinePresentationSpec.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [Size](../android.util/Size.md) | [getMaxSize](InlinePresentationSpec.md))`()` The maximal size of the suggestion. |
 | --- | --- |
-| [Size](../android/util/Size.md) | [getMinSize](../android/widget/inline/InlinePresentationSpec.md))`()` The minimal size of the suggestion. |
-| [Bundle](../android/os/Bundle.md) | [getStyle](../android/widget/inline/InlinePresentationSpec.md))`()` The extras encoding the UI style information. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/widget/inline/InlinePresentationSpec.md))`()` <br /> |
+| [Size](../android.util/Size.md) | [getMinSize](InlinePresentationSpec.md))`()` The minimal size of the suggestion. |
+| [Bundle](../android.os/Bundle.md) | [getStyle](InlinePresentationSpec.md))`()` The extras encoding the UI style information. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](InlinePresentationSpec.md))`()` <br /> |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/widget/inline/InlinePresentationSpec.md))`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/widget/inline/InlinePresentationSpec.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](InlinePresentationSpec.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](InlinePresentationSpec.md))`(`dest:` ` [Parcel](../android.os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [InlinePresentationSpec](../android/widget/inline/InlinePresentationSpec.md)!\> | [CREATOR](../android/widget/inline/InlinePresentationSpec.md) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [InlinePresentationSpec](InlinePresentationSpec.md)!\> | [CREATOR](InlinePresentationSpec.md) <br /> |
 
 ## Public methods
 
@@ -56,7 +56,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) |
 
 ### equals
 
@@ -99,7 +99,7 @@ The maximal size of the suggestion.
 
 | Return ||
 |--------------------------------------------------------------------------------|-----------------------------|
-| [Size](../android/util/Size.md) | This value cannot be`null`. |
+| [Size](../android.util/Size.md) | This value cannot be`null`. |
 
 ### getMinSize
 
@@ -113,7 +113,7 @@ The minimal size of the suggestion.
 
 | Return ||
 |--------------------------------------------------------------------------------|-----------------------------|
-| [Size](../android/util/Size.md) | This value cannot be`null`. |
+| [Size](../android.util/Size.md) | This value cannot be`null`. |
 
 ### getStyle
 
@@ -133,7 +133,7 @@ Note: There should be no remote objects in the bundle, all included remote objec
 
 | Return ||
 |----------------------------------------------------------------------------------|-----------------------------|
-| [Bundle](../android/os/Bundle.md) | This value cannot be`null`. |
+| [Bundle](../android.os/Bundle.md) | This value cannot be`null`. |
 
 ### hashCode
 
@@ -174,8 +174,8 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](../android/os/Parcel.md):This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android.os/Parcel.md):This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

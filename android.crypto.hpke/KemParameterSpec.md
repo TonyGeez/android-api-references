@@ -1,6 +1,6 @@
 # KemParameterSpec
 
-Kotlin | [Java](../android/crypto/hpke/KemParameterSpec.md)
+Kotlin | [Java](KemParameterSpec.md)
 | --- | --- |
 
 ```
@@ -9,8 +9,8 @@ open class KemParameterSpec : NamedParameterSpec
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.security.spec.NamedParameterSpec](../java/security/spec/NamedParameterSpec.md) ||
-| | ↳ | [android.crypto.hpke.KemParameterSpec](../android/crypto/hpke/KemParameterSpec.md) |
+| ↳ | [java.security.spec.NamedParameterSpec](../java.security.spec/NamedParameterSpec.md) ||
+| | ↳ | [android.crypto.hpke.KemParameterSpec](KemParameterSpec.md) |
 
 Specifies algorithm parameters for the KEM component of an HPKE suite which are determined by standard names as per RFC 9180.
 
@@ -26,12 +26,12 @@ Note that currently only `DHKEM_X25519_HKDF_SHA256` is implemented.
 
 | Properties ||
 |---|---|
-| static [KemParameterSpec](../android/crypto/hpke/KemParameterSpec.md)! | `https://developer.android.com/reference/kotlin/android/crypto/hpke/KemParameterSpec#DHKEM_P256_HKDF_SHA256:android.crypto.hpke.KemParameterSpec` <br /> |
-| static [KemParameterSpec](../android/crypto/hpke/KemParameterSpec.md)! | `https://developer.android.com/reference/kotlin/android/crypto/hpke/KemParameterSpec#DHKEM_P384_HKDF_SHA384:android.crypto.hpke.KemParameterSpec` <br /> |
-| static [KemParameterSpec](../android/crypto/hpke/KemParameterSpec.md)! | `https://developer.android.com/reference/kotlin/android/crypto/hpke/KemParameterSpec#DHKEM_P521_HKDF_SHA256:android.crypto.hpke.KemParameterSpec` <br /> |
+| static [KemParameterSpec](KemParameterSpec.md)! | `https://developer.android.com/reference/kotlin/android/crypto/hpke/KemParameterSpec#DHKEM_P256_HKDF_SHA256:android.crypto.hpke.KemParameterSpec` <br /> |
+| static [KemParameterSpec](KemParameterSpec.md)! | `https://developer.android.com/reference/kotlin/android/crypto/hpke/KemParameterSpec#DHKEM_P384_HKDF_SHA384:android.crypto.hpke.KemParameterSpec` <br /> |
+| static [KemParameterSpec](KemParameterSpec.md)! | `https://developer.android.com/reference/kotlin/android/crypto/hpke/KemParameterSpec#DHKEM_P521_HKDF_SHA256:android.crypto.hpke.KemParameterSpec` <br /> |
 | --- | --- |
-| static [KemParameterSpec](../android/crypto/hpke/KemParameterSpec.md)! | `https://developer.android.com/reference/kotlin/android/crypto/hpke/KemParameterSpec#DHKEM_X25519_HKDF_SHA256:android.crypto.hpke.KemParameterSpec` <br /> |
-| static [KemParameterSpec](../android/crypto/hpke/KemParameterSpec.md)! | `https://developer.android.com/reference/kotlin/android/crypto/hpke/KemParameterSpec#DHKEM_X448_HKDF_SHA512:android.crypto.hpke.KemParameterSpec` <br /> |
+| static [KemParameterSpec](KemParameterSpec.md)! | `https://developer.android.com/reference/kotlin/android/crypto/hpke/KemParameterSpec#DHKEM_X25519_HKDF_SHA256:android.crypto.hpke.KemParameterSpec` <br /> |
+| static [KemParameterSpec](KemParameterSpec.md)! | `https://developer.android.com/reference/kotlin/android/crypto/hpke/KemParameterSpec#DHKEM_X448_HKDF_SHA512:android.crypto.hpke.KemParameterSpec` <br /> |
 
 | Inherited properties ||
 |---|---|

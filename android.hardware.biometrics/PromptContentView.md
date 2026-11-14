@@ -4,16 +4,16 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 
 # PromptContentView
 
-Kotlin| [Java](../android/hardware/biometrics/PromptContentView.md) 
+Kotlin| [Java](PromptContentView.md) 
 | --- | --- |
 
 ```
 interface PromptContentView
 ```
 
-| [android.hardware.biometrics.PromptContentView](../android/hardware/biometrics/PromptContentView.md) |
+| [android.hardware.biometrics.PromptContentView](PromptContentView.md) |
 
-| Known Direct Subclasses [PromptContentViewWithMoreOptionsButton](../android/hardware/biometrics/PromptContentViewWithMoreOptionsButton.md), [PromptVerticalListContentView](../android/hardware/biometrics/PromptVerticalListContentView.md) |-------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------| | [PromptContentViewWithMoreOptionsButton](../android/hardware/biometrics/PromptContentViewWithMoreOptionsButton.md) | Contains the information of the template of content view with a more options button for Biometric Prompt. | | [PromptVerticalListContentView](../android/hardware/biometrics/PromptVerticalListContentView.md) | Contains the information of the template of vertical list content view for Biometric Prompt. | |
+| Known Direct Subclasses [PromptContentViewWithMoreOptionsButton](PromptContentViewWithMoreOptionsButton.md), [PromptVerticalListContentView](PromptVerticalListContentView.md) |-------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------| | [PromptContentViewWithMoreOptionsButton](PromptContentViewWithMoreOptionsButton.md) | Contains the information of the template of content view with a more options button for Biometric Prompt. | | [PromptVerticalListContentView](PromptVerticalListContentView.md) | Contains the information of the template of vertical list content view for Biometric Prompt. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Contains the information of the template of content view for Biometric Prompt.

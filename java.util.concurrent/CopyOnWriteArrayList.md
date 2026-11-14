@@ -8,7 +8,7 @@ open class CopyOnWriteArrayList<E : Any!> : Cloneable, MutableList<E>, Rando
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.util.concurrent.CopyOnWriteArrayList](../java/util/concurrent/CopyOnWriteArrayList.md) |
+| ↳ | [java.util.concurrent.CopyOnWriteArrayList](CopyOnWriteArrayList.md) |
 
 A thread-safe variant of `https://developer.android.com/reference/kotlin/java/util/ArrayList.html#` in which all mutative operations (`add`, `set`, and so on) are implemented by making a fresh copy of the underlying array.
 
@@ -16,7 +16,7 @@ This is ordinarily too costly, but may be *more* efficient than alternatives whe
 
 All elements are permitted, including `null`.
 
-Memory consistency effects: As with other concurrent collections, actions in a thread prior to placing an object into a `CopyOnWriteArrayList` [*happen-before*](../java/util/concurrent/_package.md) actions subsequent to the access or removal of that element from the `CopyOnWriteArrayList` in another thread.
+Memory consistency effects: As with other concurrent collections, actions in a thread prior to placing an object into a `CopyOnWriteArrayList` [*happen-before*](_package.md) actions subsequent to the access or removal of that element from the `CopyOnWriteArrayList` in another thread.
 
 This class is a member of the [Java Collections Framework](https://developer.android.com//reference/java/util/package-summary.html#CollectionsFramework).
 
@@ -79,7 +79,7 @@ This class is a member of the [Java Collections Framework](https://developer.and
 | open E | `https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArrayList#set(kotlin.Int,%20java.util.concurrent.CopyOnWriteArrayList.E)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, element: E)` Replaces the element at the specified position in this list with the specified element. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArrayList#sort(java.util.Comparator)(c: https://developer.android.com/reference/kotlin/java/util/Comparator.html#<in E>?)` Sorts this list according to the order induced by the specified `https://developer.android.com/reference/kotlin/java/util/Comparator.html#` (optional operation). |
-| open [Spliterator](../java/util/Spliterator.md)\<E\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArrayList#spliterator()()` Returns a `https://developer.android.com/reference/kotlin/java/util/Spliterator.html#` over the elements in this list. |
+| open [Spliterator](../java.util/Spliterator.md)\<E\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArrayList#spliterator()()` Returns a `https://developer.android.com/reference/kotlin/java/util/Spliterator.html#` over the elements in this list. |
 | open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<E\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArrayList#subList(kotlin.Int,%20kotlin.Int)(fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, toIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a view of the portion of this list between `fromIndex`, inclusive, and `toIndex`, exclusive. |
 | --- | --- |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\> | `https://developer.android.com/reference/kotlin/java/util/concurrent/CopyOnWriteArrayList#toArray()()` Returns an array containing all of the elements in this list in proper sequence (from first to last element). |
@@ -450,7 +450,7 @@ open fun forEach(action: Consumer<in E>): Unit
 
 | Parameters ||
 |---|---|
-| `action` | [Consumer](../java/util/function/Consumer.md)\<in E\>: The action to be performed for each element |
+| `action` | [Consumer](../java.util.function/Consumer.md)\<in E\>: The action to be performed for each element |
 
 | Exceptions ||
 |---|---|
@@ -802,7 +802,7 @@ open fun removeIf(filter: Predicate<in E>): Boolean
 
 | Parameters ||
 |---|---|
-| `filter` | [Predicate](../java/util/function/Predicate.md)\<in E\>: a predicate which returns `true` for elements to be removed |
+| `filter` | [Predicate](../java.util.function/Predicate.md)\<in E\>: a predicate which returns `true` for elements to be removed |
 
 | Return ||
 |---|---|
@@ -844,7 +844,7 @@ Replaces each element of this list with the result of applying the operator to t
 
 | Parameters ||
 |---|---|
-| `operator` | [UnaryOperator](../java/util/function/UnaryOperator.md)\<E\>: the operator to apply to each element |
+| `operator` | [UnaryOperator](../java.util.function/UnaryOperator.md)\<E\>: the operator to apply to each element |
 
 | Exceptions ||
 |---|---|
@@ -937,7 +937,7 @@ Sorts this list according to the order induced by the specified `https://develop
 
 All elements in this list must be *mutually comparable* using the specified comparator (that is, `c.compare(e1, e2)` must not throw a `ClassCastException` for any elements `e1` and `e2` in the list).
 
-If the specified comparator is `null` then all elements in this list must implement the `https://developer.android.com/reference/kotlin/java/lang/Comparable.html#` interface and the elements' [natural ordering](../java/lang/Comparable.md) should be used.
+If the specified comparator is `null` then all elements in this list must implement the `https://developer.android.com/reference/kotlin/java/lang/Comparable.html#` interface and the elements' [natural ordering](../java.lang/Comparable.md) should be used.
 
 This list must be modifiable, but need not be resizable.
 
@@ -959,7 +959,7 @@ For apps running on and targeting Android versions greater than Nougat (API leve
 
 | Parameters ||
 |---|---|
-| `c` | [Comparator](../java/util/Comparator.md)\<in E\>?: the `Comparator` used to compare list elements. A `null` value indicates that the elements' [natural ordering](../java/lang/Comparable.md) should be used |
+| `c` | [Comparator](../java.util/Comparator.md)\<in E\>?: the `Comparator` used to compare list elements. A `null` value indicates that the elements' [natural ordering](../java.lang/Comparable.md) should be used |
 
 | Exceptions ||
 |---|---|

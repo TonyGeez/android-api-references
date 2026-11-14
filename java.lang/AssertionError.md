@@ -11,8 +11,8 @@ open class AssertionError : Error
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
-| | ↳ | [java.lang.Error](../java/lang/Error.md) ||
-| | | ↳ | [java.lang.AssertionError](../java/lang/AssertionError.md) |
+| | ↳ | [java.lang.Error](Error.md) ||
+| | | ↳ | [java.lang.AssertionError](AssertionError.md) |
 | --- | --- | --- | --- |
 
 Thrown to indicate that an assertion has failed.
@@ -29,15 +29,15 @@ has as its detail message the*string conversion* of*expression* (as defined in s
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [AssertionError](../java/lang/AssertionError.md))`()` Constructs an AssertionError with no detail message. |
-| [AssertionError](../java/lang/AssertionError.md))`(`detailMessage:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Constructs an AssertionError with its detail message derived from the specified`boolean`, which is converted to a string as defined in section {@jls 5. |
-| [AssertionError](../java/lang/AssertionError.md))`(`detailMessage:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Constructs an AssertionError with its detail message derived from the specified`char`, which is converted to a string as defined in section {@jls 5. |
-| [AssertionError](../java/lang/AssertionError.md))`(`detailMessage:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Constructs an AssertionError with its detail message derived from the specified`double`, which is converted to a string as defined in section {@jls 5. |
-| [AssertionError](../java/lang/AssertionError.md))`(`detailMessage:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Constructs an AssertionError with its detail message derived from the specified`float`, which is converted to a string as defined in section {@jls 5. |
-| [AssertionError](../java/lang/AssertionError.md))`(`detailMessage:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs an AssertionError with its detail message derived from the specified`int`, which is converted to a string as defined in section {@jls 5. |
-| [AssertionError](../java/lang/AssertionError.md))`(`detailMessage:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Constructs an AssertionError with its detail message derived from the specified object, which is converted to a string as defined in section {@jls 5. |
-| [AssertionError](../java/lang/AssertionError.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a new`AssertionError`with the specified detail message and cause. |
-| [AssertionError](../java/lang/AssertionError.md))`(`detailMessage:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Constructs an AssertionError with its detail message derived from the specified`long`, which is converted to a string as defined in section {@jls 5. |
+| [AssertionError](AssertionError.md))`()` Constructs an AssertionError with no detail message. |
+| [AssertionError](AssertionError.md))`(`detailMessage:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Constructs an AssertionError with its detail message derived from the specified`boolean`, which is converted to a string as defined in section {@jls 5. |
+| [AssertionError](AssertionError.md))`(`detailMessage:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Constructs an AssertionError with its detail message derived from the specified`char`, which is converted to a string as defined in section {@jls 5. |
+| [AssertionError](AssertionError.md))`(`detailMessage:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Constructs an AssertionError with its detail message derived from the specified`double`, which is converted to a string as defined in section {@jls 5. |
+| [AssertionError](AssertionError.md))`(`detailMessage:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Constructs an AssertionError with its detail message derived from the specified`float`, which is converted to a string as defined in section {@jls 5. |
+| [AssertionError](AssertionError.md))`(`detailMessage:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs an AssertionError with its detail message derived from the specified`int`, which is converted to a string as defined in section {@jls 5. |
+| [AssertionError](AssertionError.md))`(`detailMessage:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Constructs an AssertionError with its detail message derived from the specified object, which is converted to a string as defined in section {@jls 5. |
+| [AssertionError](AssertionError.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a new`AssertionError`with the specified detail message and cause. |
+| [AssertionError](AssertionError.md))`(`detailMessage:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Constructs an AssertionError with its detail message derived from the specified`long`, which is converted to a string as defined in section {@jls 5. |
 
 ## Public constructors
 
@@ -139,7 +139,7 @@ If the specified object is an instance of`Throwable`, it becomes the*cause*of th
 
 **See Also**
 
-- [java.lang.Throwable#getCause()](../java/lang/Throwable.md)) 
+- [java.lang.Throwable#getCause()](Throwable.md)) 
 
 ### AssertionError
 

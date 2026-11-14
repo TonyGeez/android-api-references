@@ -19,7 +19,7 @@ Interface for callback invocation when upnp service discovery response is receiv
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onUpnpServiceAvailable](../android/net/wifi/p2p/WifiP2pManager.UpnpServiceResponseListener.md))`(`uniqueServiceNames:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `srcDevice:` ` [WifiP2pDevice](../android/net/wifi/p2p/WifiP2pDevice.md)!`)` The requested upnp service response is available. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onUpnpServiceAvailable](../android/net/wifi/p2p/WifiP2pManager.UpnpServiceResponseListener.md))`(`uniqueServiceNames:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `srcDevice:` ` [WifiP2pDevice](WifiP2pDevice.md)!`)` The requested upnp service response is available. |
 
 ## Public methods
 
@@ -41,4 +41,4 @@ This function is invoked when the specified device or service is found.
 | Parameters ||
 |----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `uniqueServiceNames` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!:The list of unique service names. e.g) uuid:6859dede-8574-59ab-9332-123456789012::urn:schemas-upnp-org:device: MediaServer:1 |
-| `srcDevice` | [WifiP2pDevice](../android/net/wifi/p2p/WifiP2pDevice.md)!:source device. |
+| `srcDevice` | [WifiP2pDevice](WifiP2pDevice.md)!:source device. |

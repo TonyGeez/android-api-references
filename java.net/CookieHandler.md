@@ -10,28 +10,28 @@ abstract class CookieHandler
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.net.CookieHandler](../java/net/CookieHandler.md) |
+| ↳ | [java.net.CookieHandler](CookieHandler.md) |
 
-| Known Direct Subclasses [CookieManager](../java/net/CookieManager.md) |----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [CookieManager](../java/net/CookieManager.md) | CookieManager provides a concrete implementation of [CookieHandler](../java/net/CookieHandler.md), which separates the storage of cookies from the policy surrounding accepting and rejecting cookies. | |
+| Known Direct Subclasses [CookieManager](CookieManager.md) |----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [CookieManager](CookieManager.md) | CookieManager provides a concrete implementation of [CookieHandler](CookieHandler.md), which separates the storage of cookies from the policy surrounding accepting and rejecting cookies. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 A CookieHandler object provides a callback mechanism to hook up a HTTP state management policy implementation into the HTTP protocol handler. The HTTP state management mechanism specifies a way to create a stateful session with HTTP requests and responses.
 
-A system-wide CookieHandler to be used by the [HTTP URL stream protocol handler](../java/net/HttpURLConnection.md) can be registered by doing a CookieHandler.setDefault(CookieHandler). The currently registered CookieHandler can be retrieved by calling CookieHandler.getDefault(). For more information on HTTP state management, see [*RFC 2965: HTTP State Management Mechanism*](http://www.ietf.org/rfc/rfc2965.txt)
+A system-wide CookieHandler to be used by the [HTTP URL stream protocol handler](HttpURLConnection.md) can be registered by doing a CookieHandler.setDefault(CookieHandler). The currently registered CookieHandler can be retrieved by calling CookieHandler.getDefault(). For more information on HTTP state management, see [*RFC 2965: HTTP State Management Mechanism*](http://www.ietf.org/rfc/rfc2965.txt)
 
 ## Summary
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------|---|
-| [CookieHandler](../java/net/CookieHandler.md))`()` <br /> |
+| [CookieHandler](CookieHandler.md))`()` <br /> |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!\>! | [get](../java/net/CookieHandler.md))`(`uri:` ` [URI](../java/net/URI.md)!`, `requestHeaders:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!>!`)` Gets all the applicable cookies from a cookie cache for the specified uri in the request header. |
-| openstatic [CookieHandler](../java/net/CookieHandler.md)! | [getDefault](../java/net/CookieHandler.md))`()` Gets the system-wide cookie handler. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [put](../java/net/CookieHandler.md))`(`uri:` ` [URI](../java/net/URI.md)!`, `responseHeaders:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!>!`)` Sets all the applicable cookies, examples are response header fields that are named Set-Cookie2, present in the response headers into a cookie cache. |
+| abstract [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!\>! | [get](CookieHandler.md))`(`uri:` ` [URI](URI.md)!`, `requestHeaders:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!>!`)` Gets all the applicable cookies from a cookie cache for the specified uri in the request header. |
+| openstatic [CookieHandler](CookieHandler.md)! | [getDefault](CookieHandler.md))`()` Gets the system-wide cookie handler. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [put](CookieHandler.md))`(`uri:` ` [URI](URI.md)!`, `responseHeaders:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!>!`)` Sets all the applicable cookies, examples are response header fields that are named Set-Cookie2, present in the response headers into a cookie cache. |
 | --- | --- |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDefault](../java/net/CookieHandler.md))`(`cHandler:` ` [CookieHandler](../java/net/CookieHandler.md)!`)` Sets (or unsets) the system-wide cookie handler. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDefault](CookieHandler.md))`(`cHandler:` ` [CookieHandler](CookieHandler.md)!`)` Sets (or unsets) the system-wide cookie handler. |
 
 ## Public constructors
 
@@ -66,7 +66,7 @@ HTTP protocol implementers should make sure that this method is called after all
 
 | Parameters ||
 |------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `uri` | [URI](../java/net/URI.md)!:a`URI`representing the intended use for the cookies |
+| `uri` | [URI](URI.md)!:a`URI`representing the intended use for the cookies |
 | `requestHeaders` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!\>!:- a Map from request header field names to lists of field values representing the current request headers |
 
 | Return ||
@@ -80,7 +80,7 @@ HTTP protocol implementers should make sure that this method is called after all
 
 **See Also**
 
-- [#put(URI, Map)](../java/net/CookieHandler.md)) 
+- [#put(URI, Map)](CookieHandler.md)) 
 
 ### getDefault
 
@@ -94,15 +94,15 @@ Gets the system-wide cookie handler.
 
 | Return ||
 |------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| [CookieHandler](../java/net/CookieHandler.md)! | the system-wide cookie handler; A null return means there is no system-wide cookie handler currently set. |
+| [CookieHandler](CookieHandler.md)! | the system-wide cookie handler; A null return means there is no system-wide cookie handler currently set. |
 
 | Exceptions ||
 |-------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.SecurityException` | If a security manager has been installed and it denies [NetPermission](../java/net/NetPermission.md)`("getCookieHandler")` |
+| `java.lang.SecurityException` | If a security manager has been installed and it denies [NetPermission](NetPermission.md)`("getCookieHandler")` |
 
 **See Also**
 
-- [#setDefault(CookieHandler)](../java/net/CookieHandler.md)) 
+- [#setDefault(CookieHandler)](CookieHandler.md)) 
 
 ### put
 
@@ -119,7 +119,7 @@ Sets all the applicable cookies, examples are response header fields that are na
 
 | Parameters ||
 |-------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `uri` | [URI](../java/net/URI.md)!:a`URI`where the cookies come from |
+| `uri` | [URI](URI.md)!:a`URI`where the cookies come from |
 | `responseHeaders` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!\>!:an immutable map from field names to lists of field values representing the response header fields returned |
 
 | Exceptions ||
@@ -129,7 +129,7 @@ Sets all the applicable cookies, examples are response header fields that are na
 
 **See Also**
 
-- [#get(URI, Map)](../java/net/CookieHandler.md)) 
+- [#get(URI, Map)](CookieHandler.md)) 
 
 ### setDefault
 
@@ -143,11 +143,11 @@ Sets (or unsets) the system-wide cookie handler. Note: non-standard http protoco
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| `cHandler` | [CookieHandler](../java/net/CookieHandler.md)!:The HTTP cookie handler, or`null`to unset. |
+| `cHandler` | [CookieHandler](CookieHandler.md)!:The HTTP cookie handler, or`null`to unset. |
 
 | Exceptions ||
 |-------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.SecurityException` | If a security manager has been installed and it denies [NetPermission](../java/net/NetPermission.md)`("setCookieHandler")` |
+| `java.lang.SecurityException` | If a security manager has been installed and it denies [NetPermission](NetPermission.md)`("setCookieHandler")` |
 
 **See Also**
 

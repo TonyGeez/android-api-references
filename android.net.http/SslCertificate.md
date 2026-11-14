@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # SslCertificate
 
-Kotlin| [Java](../android/net/http/SslCertificate.md) 
+Kotlin| [Java](SslCertificate.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class SslCertificate
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.http.SslCertificate](../android/net/http/SslCertificate.md) |
+| ↳ | [android.net.http.SslCertificate](SslCertificate.md) |
 
 SSL certificate info (certificate details) class
 
@@ -25,25 +25,25 @@ SSL certificate info (certificate details) class
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SslCertificate](../android/net/http/SslCertificate.md))`(`issuedTo:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `issuedBy:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `validNotBefore:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `validNotAfter:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a new SSL certificate object |
-| [SslCertificate](../android/net/http/SslCertificate.md))`(`issuedTo:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `issuedBy:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `validNotBefore:` ` [Date](../java/util/Date.md)!`, `validNotAfter:` ` [Date](../java/util/Date.md)!`)` Creates a new SSL certificate object |
-| [SslCertificate](../android/net/http/SslCertificate.md))`(`certificate:` ` [X509Certificate](../java/security/cert/X509Certificate.md)!`)` Creates a new SSL certificate object from an X509 certificate |
+| [SslCertificate](SslCertificate.md))`(`issuedTo:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `issuedBy:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `validNotBefore:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `validNotAfter:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a new SSL certificate object |
+| [SslCertificate](SslCertificate.md))`(`issuedTo:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `issuedBy:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `validNotBefore:` ` [Date](../java.util/Date.md)!`, `validNotAfter:` ` [Date](../java.util/Date.md)!`)` Creates a new SSL certificate object |
+| [SslCertificate](SslCertificate.md))`(`certificate:` ` [X509Certificate](../java.security.cert/X509Certificate.md)!`)` Creates a new SSL certificate object from an X509 certificate |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [SslCertificate.DName](../android/net/http/SslCertificate.DName.md)! | [getIssuedBy](../android/net/http/SslCertificate.md))`()` <br /> |
-| open [SslCertificate.DName](../android/net/http/SslCertificate.DName.md)! | [getIssuedTo](../android/net/http/SslCertificate.md))`()` <br /> |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getValidNotAfter](../android/net/http/SslCertificate.md))`()` <br /> |
+| open [SslCertificate.DName](../android/net/http/SslCertificate.DName.md)! | [getIssuedBy](SslCertificate.md))`()` <br /> |
+| open [SslCertificate.DName](../android/net/http/SslCertificate.DName.md)! | [getIssuedTo](SslCertificate.md))`()` <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getValidNotAfter](SslCertificate.md))`()` <br /> |
 | --- | --- |
-| open [Date](../java/util/Date.md)! | [getValidNotAfterDate](../android/net/http/SslCertificate.md))`()` <br /> |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getValidNotBefore](../android/net/http/SslCertificate.md))`()` <br /> |
-| open [Date](../java/util/Date.md)! | [getValidNotBeforeDate](../android/net/http/SslCertificate.md))`()` <br /> |
+| open [Date](../java.util/Date.md)! | [getValidNotAfterDate](SslCertificate.md))`()` <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getValidNotBefore](SslCertificate.md))`()` <br /> |
+| open [Date](../java.util/Date.md)! | [getValidNotBeforeDate](SslCertificate.md))`()` <br /> |
 | --- | --- |
-| open [X509Certificate](../java/security/cert/X509Certificate.md)? | [getX509Certificate](../android/net/http/SslCertificate.md))`()` <br /> |
-| openstatic [SslCertificate](../android/net/http/SslCertificate.md)! | [restoreState](../android/net/http/SslCertificate.md))`(`bundle:` ` [Bundle](../android/os/Bundle.md)!`)` Restores the certificate stored in the bundle |
-| openstatic [Bundle](../android/os/Bundle.md)! | [saveState](../android/net/http/SslCertificate.md))`(`certificate:` ` [SslCertificate](../android/net/http/SslCertificate.md)!`)` Saves the certificate state to a bundle |
+| open [X509Certificate](../java.security.cert/X509Certificate.md)? | [getX509Certificate](SslCertificate.md))`()` <br /> |
+| openstatic [SslCertificate](SslCertificate.md)! | [restoreState](SslCertificate.md))`(`bundle:` ` [Bundle](../android.os/Bundle.md)!`)` Restores the certificate stored in the bundle |
+| openstatic [Bundle](../android.os/Bundle.md)! | [saveState](SslCertificate.md))`(`certificate:` ` [SslCertificate](SslCertificate.md)!`)` Saves the certificate state to a bundle |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/net/http/SslCertificate.md))`()` <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](SslCertificate.md))`()` <br /> |
 
 ## Public constructors
 
@@ -59,7 +59,7 @@ SslCertificate(
     validNotAfter: String!)
 ```
 
-**Deprecated:** *Use [SslCertificate(java.security.cert.X509Certificate)](../android/net/http/SslCertificate.md))*
+**Deprecated:** *Use [SslCertificate(java.security.cert.X509Certificate)](SslCertificate.md))*
 
 Creates a new SSL certificate object
 
@@ -83,7 +83,7 @@ SslCertificate(
     validNotAfter: Date!)
 ```
 
-**Deprecated:** *Use [SslCertificate(java.security.cert.X509Certificate)](../android/net/http/SslCertificate.md))*
+**Deprecated:** *Use [SslCertificate(java.security.cert.X509Certificate)](SslCertificate.md))*
 
 Creates a new SSL certificate object
 
@@ -91,9 +91,9 @@ Creates a new SSL certificate object
 |------------------|---------------------------------------------------------------------------------------------------------------------------------------|
 | `issuedTo` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The entity this certificate is issued to |
 | `issuedBy` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The entity that issued this certificate |
-| `validNotBefore` | [Date](../java/util/Date.md)!:The not-before date from the certificate validity period |
+| `validNotBefore` | [Date](../java.util/Date.md)!:The not-before date from the certificate validity period |
 | --- | --- |
-| `validNotAfter` | [Date](../java/util/Date.md)!:The not-after date from the certificate validity period |
+| `validNotAfter` | [Date](../java.util/Date.md)!:The not-after date from the certificate validity period |
 
 ### SslCertificate
 
@@ -107,7 +107,7 @@ Creates a new SSL certificate object from an X509 certificate
 
 | Parameters ||
 |---------------|------------------------------------------------------------------------------------------------------------------------------|
-| `certificate` | [X509Certificate](../java/security/cert/X509Certificate.md)!:X509 certificate |
+| `certificate` | [X509Certificate](../java.security.cert/X509Certificate.md)!:X509 certificate |
 
 ## Public methods
 
@@ -144,7 +144,7 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 open fun getValidNotAfter(): String!
 ```
 
-**Deprecated:** *Use [getValidNotAfterDate()](../android/net/http/SslCertificate.md))*
+**Deprecated:** *Use [getValidNotAfterDate()](SslCertificate.md))*
 
 | Return ||
 |-----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
@@ -160,7 +160,7 @@ open fun getValidNotAfterDate(): Date!
 
 | Return ||
 |------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| [Date](../java/util/Date.md)! | Not-after date from the certificate validity period or "" if none has been set |
+| [Date](../java.util/Date.md)! | Not-after date from the certificate validity period or "" if none has been set |
 
 ### getValidNotBefore
 
@@ -171,7 +171,7 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 open fun getValidNotBefore(): String!
 ```
 
-**Deprecated:** *Use [getValidNotBeforeDate()](../android/net/http/SslCertificate.md))*
+**Deprecated:** *Use [getValidNotBeforeDate()](SslCertificate.md))*
 
 | Return ||
 |-----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
@@ -187,7 +187,7 @@ open fun getValidNotBeforeDate(): Date!
 
 | Return ||
 |------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
-| [Date](../java/util/Date.md)! | Not-before date from the certificate validity period or "" if none has been set |
+| [Date](../java.util/Date.md)! | Not-before date from the certificate validity period or "" if none has been set |
 
 ### getX509Certificate
 
@@ -199,7 +199,7 @@ open fun getX509Certificate(): X509Certificate?
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
-| [X509Certificate](../java/security/cert/X509Certificate.md)? | The`X509Certificate`used to create this`SslCertificate`or`null`if no certificate was provided. |
+| [X509Certificate](../java.security.cert/X509Certificate.md)? | The`X509Certificate`used to create this`SslCertificate`or`null`if no certificate was provided. |
 
 ### restoreState
 
@@ -213,11 +213,11 @@ Restores the certificate stored in the bundle
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------------------------------|
-| `bundle` | [Bundle](../android/os/Bundle.md)!:The bundle with the certificate state stored in it |
+| `bundle` | [Bundle](../android.os/Bundle.md)!:The bundle with the certificate state stored in it |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------|-----------------------------------------------------------|
-| [SslCertificate](../android/net/http/SslCertificate.md)! | The SSL certificate stored in the bundle or null if fails |
+| [SslCertificate](SslCertificate.md)! | The SSL certificate stored in the bundle or null if fails |
 
 ### saveState
 
@@ -231,11 +231,11 @@ Saves the certificate state to a bundle
 
 | Parameters ||
 |---------------|---------------------------------------------------------------------------------------------------------------------------------|
-| `certificate` | [SslCertificate](../android/net/http/SslCertificate.md)!:The SSL certificate to store |
+| `certificate` | [SslCertificate](SslCertificate.md)!:The SSL certificate to store |
 
 | Return ||
 |-----------------------------------------------------------------------------------|-------------------------------------------------------------|
-| [Bundle](../android/os/Bundle.md)! | A bundle with the certificate stored in it or null if fails |
+| [Bundle](../android.os/Bundle.md)! | A bundle with the certificate stored in it or null if fails |
 
 ### toString
 

@@ -19,7 +19,7 @@ Interface definition for a callback to be invoked when a hover event is dispatch
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onHover](../android/view/View.OnHoverListener.md))`(`v:` ` [View](../android/view/View.md)!`, `event:` ` [MotionEvent](../android/view/MotionEvent.md)!`)` Called when a hover event is dispatched to a view. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onHover](../android/view/View.OnHoverListener.md))`(`v:` ` [View](View.md)!`, `event:` ` [MotionEvent](MotionEvent.md)!`)` Called when a hover event is dispatched to a view. |
 
 ## Public methods
 
@@ -38,8 +38,8 @@ Called when a hover event is dispatched to a view. This allows listeners to get 
 
 | Parameters ||
 |---------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `v` | [View](../android/view/View.md)!:The view the hover event has been dispatched to. |
-| `event` | [MotionEvent](../android/view/MotionEvent.md)!:The MotionEvent object containing full information about the event. |
+| `v` | [View](View.md)!:The view the hover event has been dispatched to. |
+| `event` | [MotionEvent](MotionEvent.md)!:The MotionEvent object containing full information about the event. |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------------|

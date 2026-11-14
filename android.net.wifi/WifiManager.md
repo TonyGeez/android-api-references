@@ -8,11 +8,11 @@ open class WifiManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.wifi.WifiManager](../android/net/wifi/WifiManager.md) |
+| ↳ | [android.net.wifi.WifiManager](WifiManager.md) |
 
 This class provides the primary API for managing all aspects of Wi-Fi connectivity.
 
-On releases before `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#N:kotlin.Int`, this object should only be obtained from an [application context](../android/content/Context.md)), and not from any other derived context to avoid memory leaks within the calling process.
+On releases before `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#N:kotlin.Int`, this object should only be obtained from an [application context](../android.content/Context.md)), and not from any other derived context to avoid memory leaks within the calling process.
 
 It deals with several categories of items:
 
@@ -186,28 +186,28 @@ Restricted for SDK Runtime environment in API level 34.
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#enableNetwork(kotlin.Int,%20kotlin.Boolean)(netId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, attemptConnect: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Allow a previously configured network to be associated with. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#flushPasspointAnqpCache()()` Flush Passpoint ANQP cache, and clear pending ANQP requests. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [WifiAvailableChannel](../android/net/wifi/WifiAvailableChannel.md)!\> | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getAllowedChannels(kotlin.Int,%20kotlin.Int)(band: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a list of `https://developer.android.com/reference/kotlin/android/net/wifi/WifiAvailableChannel` for the specified band and operational mode(s), that is allowed for the current regulatory domain. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [WifiConfiguration](../android/net/wifi/WifiConfiguration.md)!\> | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getCallerConfiguredNetworks()()` Return a list of all the networks previously configured by the calling app. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [WifiAvailableChannel](WifiAvailableChannel.md)!\> | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getAllowedChannels(kotlin.Int,%20kotlin.Int)(band: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a list of `https://developer.android.com/reference/kotlin/android/net/wifi/WifiAvailableChannel` for the specified band and operational mode(s), that is allowed for the current regulatory domain. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [WifiConfiguration](WifiConfiguration.md)!\> | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getCallerConfiguredNetworks()()` Return a list of all the networks previously configured by the calling app. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getChannelData(java.util.concurrent.Executor,%20java.util.function.Consumer)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, resultsCallback: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/os/Bundle.html#!>!>)` Get channel data such as the number of APs found on each channel from the most recent scan. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [WifiConfiguration](../android/net/wifi/WifiConfiguration.md)!\>! | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getConfiguredNetworks()()` Return a list of all the networks configured for the current foreground user. |
-| open [WifiInfo](../android/net/wifi/WifiInfo.md)! | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getConnectionInfo()()` Return dynamic information about the current Wi-Fi connection, if any is active. |
-| open [DhcpInfo](../android/net/DhcpInfo.md)! | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getDhcpInfo()()` Return the DHCP-assigned addresses from the last successful DHCP request, if any. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [WifiConfiguration](WifiConfiguration.md)!\>! | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getConfiguredNetworks()()` Return a list of all the networks configured for the current foreground user. |
+| open [WifiInfo](WifiInfo.md)! | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getConnectionInfo()()` Return dynamic information about the current Wi-Fi connection, if any is active. |
+| open [DhcpInfo](../android.net/DhcpInfo.md)! | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getDhcpInfo()()` Return the DHCP-assigned addresses from the last successful DHCP request, if any. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getMaxNumberOfChannelsPerNetworkSpecifierRequest()()` Returns the max number of channels that is allowed to be set on a `https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSpecifier`. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getMaxNumberOfNetworkSuggestionsPerApp()()` Returns the max number of network suggestions that are allowed per app on the device. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getMaxSignalLevel()()` Get the system default maximum signal level. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getMaxSupportedConcurrentTdlsSessions(java.util.concurrent.Executor,%20java.util.function.Consumer)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, resultsCallback: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html!>)` Return the maximum number of concurrent TDLS sessions supported by the device. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [WifiNetworkSuggestion](../android/net/wifi/WifiNetworkSuggestion.md)!\> | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getNetworkSuggestions()()` Get all network suggestions provided by the calling app. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [WifiNetworkSuggestion](WifiNetworkSuggestion.md)!\> | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getNetworkSuggestions()()` Get all network suggestions provided by the calling app. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getNumberOfEnabledTdlsSessions(java.util.concurrent.Executor,%20java.util.function.Consumer)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, resultsCallback: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html!>)` Return the number of currently enabled TDLS sessions. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PasspointConfiguration](../android/net/wifi/hotspot2/PasspointConfiguration.md)!\>! | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getPasspointConfigurations()()` Return the list of installed Passpoint configurations added by the caller. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PasspointConfiguration](../android.net.wifi.hotspot2/PasspointConfiguration.md)!\>! | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getPasspointConfigurations()()` Return the list of installed Passpoint configurations added by the caller. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getPerSsidRoamingModes(java.util.concurrent.Executor,%20java.util.function.Consumer)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, resultsCallback: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html!>!>)` This API allows a privileged application to get roaming mode policies configured using the `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#setPerSsidRoamingMode(android.net.wifi.WifiSsid,%20kotlin.Int)`. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ScanResult](../android/net/wifi/ScanResult.md)!\>! | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getScanResults()()` Return the results of the latest access point scan. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ScanResult](ScanResult.md)!\>! | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getScanResults()()` Return the results of the latest access point scan. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getStaConcurrencyForMultiInternetMode()()` The device may support concurrent connections to multiple internet-providing Wi-Fi networks (APs) - that is indicated by `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#isStaConcurrencyForMultiInternetSupported()`. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [WifiAvailableChannel](../android/net/wifi/WifiAvailableChannel.md)!\> | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getUsableChannels(kotlin.Int,%20kotlin.Int)(band: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a list of `https://developer.android.com/reference/kotlin/android/net/wifi/WifiAvailableChannel` for the specified band and operational mode(s) per the current regulatory domain and device-specific constraints such as concurrency state and interference due to other radios. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [WifiAvailableChannel](WifiAvailableChannel.md)!\> | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getUsableChannels(kotlin.Int,%20kotlin.Int)(band: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a list of `https://developer.android.com/reference/kotlin/android/net/wifi/WifiAvailableChannel` for the specified band and operational mode(s) per the current regulatory domain and device-specific constraints such as concurrency state and interference due to other radios. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#getWifiState()()` Gets the Wi-Fi enabled state. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#is24GHzBandSupported()()` Check if the chipset supports 2. |
@@ -1488,7 +1488,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): The executor to execute the listener of the `listener` object. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor to execute the listener of the `listener` object. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `listener` | [WifiManager.LocalOnlyConnectionFailureListener](../android/net/wifi/WifiManager.LocalOnlyConnectionFailureListener.md): listener for local-only network connection failure. This value cannot be `null`. |
 
 ### addNetwork
@@ -1515,7 +1515,7 @@ The new network will be marked DISABLED by default. To enable it, called `https:
 
 | Parameters ||
 |---|---|
-| `config` | [WifiConfiguration](../android/net/wifi/WifiConfiguration.md)!: the set of variables that describe the configuration, contained in a `https://developer.android.com/reference/kotlin/android/net/wifi/WifiConfiguration` object. If the `https://developer.android.com/reference/kotlin/android/net/wifi/WifiConfiguration` has an Http Proxy set the calling app must be System, or be provisioned as the Profile or Device Owner. |
+| `config` | [WifiConfiguration](WifiConfiguration.md)!: the set of variables that describe the configuration, contained in a `https://developer.android.com/reference/kotlin/android/net/wifi/WifiConfiguration` object. If the `https://developer.android.com/reference/kotlin/android/net/wifi/WifiConfiguration` has an Http Proxy set the calling app must be System, or be provisioned as the Profile or Device Owner. |
 
 | Return ||
 |---|---|
@@ -1537,7 +1537,7 @@ Add a new network description to the set of configured networks. The `networkId`
 
 | Parameters ||
 |---|---|
-| `config` | [WifiConfiguration](../android/net/wifi/WifiConfiguration.md): the set of variables that describe the configuration, contained in a `https://developer.android.com/reference/kotlin/android/net/wifi/WifiConfiguration` object. If the `https://developer.android.com/reference/kotlin/android/net/wifi/WifiConfiguration` has an Http Proxy set the calling app must be System, or be provisioned as the Profile or Device Owner. This value cannot be `null`. |
+| `config` | [WifiConfiguration](WifiConfiguration.md): the set of variables that describe the configuration, contained in a `https://developer.android.com/reference/kotlin/android/net/wifi/WifiConfiguration` object. If the `https://developer.android.com/reference/kotlin/android/net/wifi/WifiConfiguration` has an Http Proxy set the calling app must be System, or be provisioned as the Profile or Device Owner. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -1573,7 +1573,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `networkSuggestions` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [WifiNetworkSuggestion](../android/net/wifi/WifiNetworkSuggestion.md)!\>: List of network suggestions provided by the app. This value cannot be `null`. |
+| `networkSuggestions` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [WifiNetworkSuggestion](WifiNetworkSuggestion.md)!\>: List of network suggestions provided by the app. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -1603,7 +1603,7 @@ Deprecation Exemptions:
 
 | Parameters ||
 |---|---|
-| `config` | [PasspointConfiguration](../android/net/wifi/hotspot2/PasspointConfiguration.md)!: The Passpoint configuration to be added |
+| `config` | [PasspointConfiguration](../android.net.wifi.hotspot2/PasspointConfiguration.md)!: The Passpoint configuration to be added |
 
 | Exceptions ||
 |---|---|
@@ -1629,7 +1629,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): The executor to execute the listener of the `listener` object. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor to execute the listener of the `listener` object. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `listener` | [WifiManager.SuggestionConnectionStatusListener](../android/net/wifi/WifiManager.SuggestionConnectionStatusListener.md): listener for suggestion network connection failure. This value cannot be `null`. |
 
 ### addSuggestionUserApprovalStatusListener
@@ -1648,7 +1648,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): The executor to execute the listener of the `listener` object. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor to execute the listener of the `listener` object. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `listener` | [WifiManager.SuggestionUserApprovalStatusListener](../android/net/wifi/WifiManager.SuggestionUserApprovalStatusListener.md): listener for suggestion user approval status changes. This value cannot be `null`. |
 
 ### addWifiStateChangedListener
@@ -1667,7 +1667,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): Executor to execute listener callback on. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): Executor to execute listener callback on. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `listener` | [WifiManager.WifiStateChangedListener](../android/net/wifi/WifiManager.WifiStateChangedListener.md): Listener to register. This value cannot be `null`. |
 
 ### allowAutojoinGlobal
@@ -1884,7 +1884,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `blockingOption` | [BlockingOption](../android/net/wifi/BlockingOption.md): Option to change for the network blocking `https://developer.android.com/reference/kotlin/android/net/wifi/BlockingOption` This value cannot be `null`. |
+| `blockingOption` | [BlockingOption](BlockingOption.md): Option to change for the network blocking `https://developer.android.com/reference/kotlin/android/net/wifi/BlockingOption` This value cannot be `null`. |
 
 ### disconnect
 
@@ -2012,8 +2012,8 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): The executor on which callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `resultsCallback` | [Consumer](../java/util/function/Consumer.md)\< [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Bundle](../android/os/Bundle.md)!\>!\>: A callback that will return `List<Bundle>` containing channel data such as the number of APs found on each channel. `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#CHANNEL_DATA_KEY_FREQUENCY_MHZ:kotlin.String` and `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#CHANNEL_DATA_KEY_NUM_AP:kotlin.String` are used to get the frequency (Mhz) and number of APs. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor on which callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `resultsCallback` | [Consumer](../java.util.function/Consumer.md)\< [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Bundle](../android.os/Bundle.md)!\>!\>: A callback that will return `List<Bundle>` containing channel data such as the number of APs found on each channel. `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#CHANNEL_DATA_KEY_FREQUENCY_MHZ:kotlin.String` and `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#CHANNEL_DATA_KEY_NUM_AP:kotlin.String` are used to get the frequency (Mhz) and number of APs. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -2194,8 +2194,8 @@ Return the maximum number of concurrent TDLS sessions supported by the device.
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): The executor on which callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `resultsCallback` | [Consumer](../java/util/function/Consumer.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>: An asynchronous callback that will return the maximum number of concurrent TDLS sessions supported by the device. Returns `-1` if information is not available, e.g. if the driver/firmware doesn't provide this information. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor on which callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `resultsCallback` | [Consumer](../java.util.function/Consumer.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>: An asynchronous callback that will return the maximum number of concurrent TDLS sessions supported by the device. Returns `-1` if information is not available, e.g. if the driver/firmware doesn't provide this information. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -2232,8 +2232,8 @@ Return the number of currently enabled TDLS sessions. Tracks the number of peers
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): The executor on which callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `resultsCallback` | [Consumer](../java/util/function/Consumer.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>: An asynchronous callback that will return the number of Peer Mac addresses configured in the driver for TDLS session. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor on which callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `resultsCallback` | [Consumer](../java.util.function/Consumer.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>: An asynchronous callback that will return the number of Peer Mac addresses configured in the driver for TDLS session. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -2272,8 +2272,8 @@ This API allows a privileged application to get roaming mode policies configured
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): The executor on which callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `resultsCallback` | [Consumer](../java/util/function/Consumer.md)\< [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>!\>: An asynchronous callback that will return the corresponding roaming policies for the API caller. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor on which callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `resultsCallback` | [Consumer](../java.util.function/Consumer.md)\< [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>!\>: An asynchronous callback that will return the corresponding roaming policies for the API caller. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -2744,8 +2744,8 @@ Check if a TDLS session can be established at this time via `https://developer.a
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): The executor on which callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `resultsCallback` | [Consumer](../java/util/function/Consumer.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>: An asynchronous callback that will return `Boolean` indicating whether a TDLS session can be established at this time. `true` for available, `false` for not available. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor on which callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `resultsCallback` | [Consumer](../java.util.function/Consumer.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>: An asynchronous callback that will return `Boolean` indicating whether a TDLS session can be established at this time. `true` for available, `false` for not available. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -2994,8 +2994,8 @@ Query whether or not auto-join global is enabled/disabled
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): The executor on which callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `resultsCallback` | [Consumer](../java/util/function/Consumer.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>: An asynchronous callback that will return `Boolean` indicating whether auto-join global is enabled/disabled. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor on which callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `resultsCallback` | [Consumer](../java.util.function/Consumer.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>: An asynchronous callback that will return `Boolean` indicating whether auto-join global is enabled/disabled. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -3022,8 +3022,8 @@ Requires android.Manifest.permission#NETWORK_SETTINGS or android.Manifest.permis
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): The executor on which callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `resultsCallback` | [IntConsumer](../java/util/function/IntConsumer.md): An asynchronous callback that will return a bitmask of android.net.wifi.WifiManager.SendDhcpHostnameRestriction. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor on which callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `resultsCallback` | [IntConsumer](../java.util.function/IntConsumer.md): An asynchronous callback that will return a bitmask of android.net.wifi.WifiManager.SendDhcpHostnameRestriction. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -3092,7 +3092,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): The executor to execute the callback of the `callback` object. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor to execute the callback of the `callback` object. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [WifiManager.ScanResultsCallback](../android/net/wifi/WifiManager.ScanResultsCallback.md): callback for Scan Results events. This value cannot be `null`. |
 
 ### registerSubsystemRestartTrackingCallback
@@ -3111,7 +3111,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): Executor to execute callback on. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): Executor to execute callback on. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [WifiManager.SubsystemRestartTrackingCallback](../android/net/wifi/WifiManager.SubsystemRestartTrackingCallback.md): `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.SubsystemRestartTrackingCallback` to register. This value cannot be `null`. |
 
 **See Also**
@@ -3169,12 +3169,12 @@ open fun removeNetworkSuggestions(networkSuggestions: MutableList<WifiNetworkSu
 
 Remove some or all of the network suggestions that were previously provided by the app. If one of the suggestions being removed was used to establish connection to the current network, then the device will immediately disconnect from that network. This method is same as `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#removeNetworkSuggestions(kotlin.collections.MutableList,%20kotlin.Int)` with `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#ACTION_REMOVE_SUGGESTION_DISCONNECT:kotlin.Int` See `https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion` for a detailed explanation of the parameters. See `https://developer.android.com/reference/kotlin/android/net/wifi/WifiNetworkSuggestion#equals(kotlin.Any)` for the equivalence evaluation used.
 
-[removeNetworkSuggestions(List,int)](../android/net/wifi/WifiManager.md)). An `action` of `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#ACTION_REMOVE_SUGGESTION_DISCONNECT:kotlin.Int` is equivalent to the current behavior. 
+[removeNetworkSuggestions(List,int)](WifiManager.md)). An `action` of `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#ACTION_REMOVE_SUGGESTION_DISCONNECT:kotlin.Int` is equivalent to the current behavior. 
 Requires `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#CHANGE_WIFI_STATE:kotlin.String`
 
 | Parameters ||
 |---|---|
-| `networkSuggestions` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [WifiNetworkSuggestion](../android/net/wifi/WifiNetworkSuggestion.md)!\>: List of network suggestions to be removed. Pass an empty list to remove all the previous suggestions provided by the app. This value cannot be `null`. |
+| `networkSuggestions` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [WifiNetworkSuggestion](WifiNetworkSuggestion.md)!\>: List of network suggestions to be removed. Pass an empty list to remove all the previous suggestions provided by the app. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -3196,7 +3196,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `networkSuggestions` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [WifiNetworkSuggestion](../android/net/wifi/WifiNetworkSuggestion.md)!\>: List of network suggestions to be removed. Pass an empty list to remove all the previous suggestions provided by the app. This value cannot be `null`. |
+| `networkSuggestions` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [WifiNetworkSuggestion](WifiNetworkSuggestion.md)!\>: List of network suggestions to be removed. Pass an empty list to remove all the previous suggestions provided by the app. This value cannot be `null`. |
 | `action` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Desired action to execute after removing the suggestion. One of `ACTION_REMOVE_SUGGESTION_*` Value is one of the following: - `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#ACTION_REMOVE_SUGGESTION_LINGER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#ACTION_REMOVE_SUGGESTION_DISCONNECT:kotlin.Int` |
 
 | Return ||
@@ -3256,7 +3256,7 @@ This API allows a privileged application to remove roaming mode policy configure
 
 | Parameters ||
 |---|---|
-| `ssid` | [WifiSsid](../android/net/wifi/WifiSsid.md): SSID to be removed from the roaming mode policy. This value cannot be `null`. |
+| `ssid` | [WifiSsid](WifiSsid.md): SSID to be removed from the roaming mode policy. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -3335,9 +3335,9 @@ Queries the framework to determine whether the specified interface can be create
 |---|---|
 | `interfaceType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The interface type whose possible creation is being queried. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#WIFI_INTERFACE_TYPE_STA:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#WIFI_INTERFACE_TYPE_AP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#WIFI_INTERFACE_TYPE_AWARE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#WIFI_INTERFACE_TYPE_DIRECT:kotlin.Int` |
 | `requireNewInterface` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): Indicates that the query is for a new interface of the specified type - an existing interface won't meet the query. Some operations (such as Wi-Fi Direct and Wi-Fi Aware are a shared resource and so may not need a new interface). |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): An `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` on which to return the result. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): An `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` on which to return the result. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | --- | --- |
-| `resultCallback` | [BiConsumer](../java/util/function/BiConsumer.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!, [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [WifiManager.InterfaceCreationImpact](../android/net/wifi/WifiManager.InterfaceCreationImpact.md)!\>!\>: The asynchronous callback which will return two argument: a `boolean` (whether the interface can be created), and a `Set<InterfaceCreationImpact>` (a set of `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.InterfaceCreationImpact`: interfaces which will be destroyed when the interface is created and the packages which requested them and thus may be impacted). This value cannot be `null`. |
+| `resultCallback` | [BiConsumer](../java.util.function/BiConsumer.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!, [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [WifiManager.InterfaceCreationImpact](../android/net/wifi/WifiManager.InterfaceCreationImpact.md)!\>!\>: The asynchronous callback which will return two argument: a `boolean` (whether the interface can be created), and a `Set<InterfaceCreationImpact>` (a set of `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager.InterfaceCreationImpact`: interfaces which will be destroyed when the interface is created and the packages which requested them and thus may be impacted). This value cannot be `null`. |
 
 ### saveConfiguration
 
@@ -3373,7 +3373,7 @@ This API allows a privileged application to set roaming mode per SSID. Available
 
 | Parameters ||
 |---|---|
-| `ssid` | [WifiSsid](../android/net/wifi/WifiSsid.md): SSID to be mapped to apply roaming policy. This value cannot be `null`. |
+| `ssid` | [WifiSsid](WifiSsid.md): SSID to be mapped to apply roaming policy. This value cannot be `null`. |
 | `roamingMode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): One of the `ROAMING_MODE_` values. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#ROAMING_MODE_NONE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#ROAMING_MODE_NORMAL:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/net/wifi/WifiManager#ROAMING_MODE_AGGRESSIVE:kotlin.Int` |
 
 | Exceptions ||
@@ -3423,7 +3423,7 @@ This API enables/disables the option of using TDLS. If enabled, the underlying h
 
 | Parameters ||
 |---|---|
-| `remoteIPAddress` | [InetAddress](../java/net/InetAddress.md)!: IP address of the endpoint to setup TDLS with |
+| `remoteIPAddress` | [InetAddress](../java.net/InetAddress.md)!: IP address of the endpoint to setup TDLS with |
 | `enable` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): true = setup and false = tear down TDLS |
 
 ### setTdlsEnabled
@@ -3443,11 +3443,11 @@ Enable/Disable TDLS on a specific local route. Similar to `https://developer.and
 
 | Parameters ||
 |---|---|
-| `remoteIPAddress` | [InetAddress](../java/net/InetAddress.md): IP address of the endpoint to setup TDLS with. This value cannot be `null`. |
+| `remoteIPAddress` | [InetAddress](../java.net/InetAddress.md): IP address of the endpoint to setup TDLS with. This value cannot be `null`. |
 | `enable` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): true = setup and false = tear down TDLS |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): The executor on which callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor on which callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | --- | --- |
-| `resultsCallback` | [Consumer](../java/util/function/Consumer.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>: An asynchronous callback that will return `Boolean` indicating whether TDLS was successfully enabled or disabled. `true` for success, `false` for failure. This value cannot be `null`. |
+| `resultsCallback` | [Consumer](../java.util.function/Consumer.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>: An asynchronous callback that will return `Boolean` indicating whether TDLS was successfully enabled or disabled. `true` for success, `false` for failure. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -3490,9 +3490,9 @@ Enable/Disable TDLS with a specific peer Mac Address. Similar to `https://develo
 |---|---|
 | `remoteMacAddress` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): Mac address of the endpoint to setup TDLS with. This value cannot be `null`. |
 | `enable` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): true = setup and false = tear down TDLS |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): The executor on which callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor on which callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | --- | --- |
-| `resultsCallback` | [Consumer](../java/util/function/Consumer.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>: An asynchronous callback that will return `Boolean` indicating whether TDLS was successfully enabled or disabled. `true` for success, `false` for failure. This value cannot be `null`. |
+| `resultsCallback` | [Consumer](../java.util.function/Consumer.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>: An asynchronous callback that will return `Boolean` indicating whether TDLS was successfully enabled or disabled. `true` for success, `false` for failure. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -3561,7 +3561,7 @@ Applications targeting `https://developer.android.com/reference/kotlin/android/o
 | Parameters ||
 |---|---|
 | `callback` | [WifiManager.LocalOnlyHotspotCallback](../android/net/wifi/WifiManager.LocalOnlyHotspotCallback.md)!: LocalOnlyHotspotCallback for the application to receive updates about operating status. |
-| `handler` | [Handler](../android/os/Handler.md)?: Handler to be used for callbacks. If the caller passes a null Handler, the main thread will be used. |
+| `handler` | [Handler](../android.os/Handler.md)?: Handler to be used for callbacks. If the caller passes a null Handler, the main thread will be used. |
 
 ### startLocalOnlyHotspotWithConfiguration
 
@@ -3580,8 +3580,8 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `config` | [SoftApConfiguration](../android/net/wifi/SoftApConfiguration.md): Custom configuration for the hotspot. See `https://developer.android.com/reference/kotlin/android/net/wifi/SoftApConfiguration`. This value cannot be `null`. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): Executor to run callback methods on. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `config` | [SoftApConfiguration](SoftApConfiguration.md): Custom configuration for the hotspot. See `https://developer.android.com/reference/kotlin/android/net/wifi/SoftApConfiguration`. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): Executor to run callback methods on. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [WifiManager.LocalOnlyHotspotCallback](../android/net/wifi/WifiManager.LocalOnlyHotspotCallback.md): LocalOnlyHotspotCallback for the application to receive updates about operating status. This value cannot be `null`. |
 | --- | --- |
 
@@ -3626,7 +3626,7 @@ WPS suport has been deprecated from Client mode and this method will immediately
 
 | Parameters ||
 |---|---|
-| `config` | [WpsInfo](../android/net/wifi/WpsInfo.md)!: WPS configuration (does not support `https://developer.android.com/reference/kotlin/android/net/wifi/WpsInfo#LABEL:kotlin.Int`) |
+| `config` | [WpsInfo](WpsInfo.md)!: WPS configuration (does not support `https://developer.android.com/reference/kotlin/android/net/wifi/WpsInfo#LABEL:kotlin.Int`) |
 | `listener` | [WifiManager.WpsCallback](../android/net/wifi/WifiManager.WpsCallback.md)!: for callbacks on success or failure. Can be null. |
 
 | Exceptions ||
@@ -3683,7 +3683,7 @@ Update the network description of an existing configured network.
 
 | Parameters ||
 |---|---|
-| `config` | [WifiConfiguration](../android/net/wifi/WifiConfiguration.md)!: the set of variables that describe the configuration, contained in a `https://developer.android.com/reference/kotlin/android/net/wifi/WifiConfiguration` object. It may be sparse, so that only the items that are being changed are non-`null`. The `networkId` field must be set to the ID of the existing network being updated. If the `https://developer.android.com/reference/kotlin/android/net/wifi/WifiConfiguration` has an Http Proxy set the calling app must be System, or be provisioned as the Profile or Device Owner. |
+| `config` | [WifiConfiguration](WifiConfiguration.md)!: the set of variables that describe the configuration, contained in a `https://developer.android.com/reference/kotlin/android/net/wifi/WifiConfiguration` object. It may be sparse, so that only the items that are being changed are non-`null`. The `networkId` field must be set to the ID of the existing network being updated. If the `https://developer.android.com/reference/kotlin/android/net/wifi/WifiConfiguration` has an Http Proxy set the calling app must be System, or be provisioned as the Profile or Device Owner. |
 
 | Return ||
 |---|---|
@@ -3707,7 +3707,7 @@ This will return `false` if a non-null BSSID is set but the caller does not have
 
 | Parameters ||
 |---|---|
-| `config` | [SoftApConfiguration](../android/net/wifi/SoftApConfiguration.md): a configuration would like to be checked. This value cannot be `null`. |
+| `config` | [SoftApConfiguration](SoftApConfiguration.md): a configuration would like to be checked. This value cannot be `null`. |
 
 | Return ||
 |---|---|

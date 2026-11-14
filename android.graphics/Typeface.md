@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # Typeface
 
-Kotlin| [Java](../android/graphics/Typeface.md) 
+Kotlin| [Java](Typeface.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class Typeface
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.graphics.Typeface](../android/graphics/Typeface.md) |
+| ↳ | [android.graphics.Typeface](Typeface.md) |
 
 The Typeface class specifies the typeface and intrinsic style of a font. This is used in the paint, along with optionally Paint settings like textSize, textSkewX, textScaleX to specify how text appears when drawn (and measured).
 
@@ -26,41 +26,41 @@ The Typeface class specifies the typeface and intrinsic style of a font. This is
 
 | Constants ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BOLD](../android/graphics/Typeface.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BOLD_ITALIC](../android/graphics/Typeface.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ITALIC](../android/graphics/Typeface.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BOLD](Typeface.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BOLD_ITALIC](Typeface.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ITALIC](Typeface.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NORMAL](../android/graphics/Typeface.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NORMAL](Typeface.md) <br /> |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [Typeface](../android/graphics/Typeface.md)! | [create](../android/graphics/Typeface.md))`(`family:` ` [Typeface](../android/graphics/Typeface.md)!`, `style:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a typeface object that best matches the specified existing typeface and the specified Style. |
-| openstatic [Typeface](../android/graphics/Typeface.md) | [create](../android/graphics/Typeface.md))`(`family:` ` [Typeface](../android/graphics/Typeface.md)?`, `weight:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `italic:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Creates a typeface object that best matches the specified existing typeface and the specified weight and italic style |
-| openstatic [Typeface](../android/graphics/Typeface.md)! | [create](../android/graphics/Typeface.md))`(`familyName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `style:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a typeface object given a family name, and option style information. |
+| openstatic [Typeface](Typeface.md)! | [create](Typeface.md))`(`family:` ` [Typeface](Typeface.md)!`, `style:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a typeface object that best matches the specified existing typeface and the specified Style. |
+| openstatic [Typeface](Typeface.md) | [create](Typeface.md))`(`family:` ` [Typeface](Typeface.md)?`, `weight:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `italic:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Creates a typeface object that best matches the specified existing typeface and the specified weight and italic style |
+| openstatic [Typeface](Typeface.md)! | [create](Typeface.md))`(`familyName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `style:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a typeface object given a family name, and option style information. |
 | --- | --- |
-| openstatic [Typeface](../android/graphics/Typeface.md)! | [createFromAsset](../android/graphics/Typeface.md))`(`mgr:` ` [AssetManager](../android/content/res/AssetManager.md)!`, `path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Create a new typeface from the specified font data. |
-| openstatic [Typeface](../android/graphics/Typeface.md)! | [createFromFile](../android/graphics/Typeface.md))`(`file:` ` [File](../java/io/File.md)?`)` Create a new typeface from the specified font file. |
-| openstatic [Typeface](../android/graphics/Typeface.md)! | [createFromFile](../android/graphics/Typeface.md))`(`path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Create a new typeface from the specified font file. |
+| openstatic [Typeface](Typeface.md)! | [createFromAsset](Typeface.md))`(`mgr:` ` [AssetManager](../android.content.res/AssetManager.md)!`, `path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Create a new typeface from the specified font data. |
+| openstatic [Typeface](Typeface.md)! | [createFromFile](Typeface.md))`(`file:` ` [File](../java.io/File.md)?`)` Create a new typeface from the specified font file. |
+| openstatic [Typeface](Typeface.md)! | [createFromFile](Typeface.md))`(`path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Create a new typeface from the specified font file. |
 | --- | --- |
-| openstatic [Typeface](../android/graphics/Typeface.md)! | [defaultFromStyle](../android/graphics/Typeface.md))`(`style:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns one of the default typeface objects, based on the specified style |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/graphics/Typeface.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStyle](../android/graphics/Typeface.md))`()` Returns the typeface's intrinsic style attributes |
+| openstatic [Typeface](Typeface.md)! | [defaultFromStyle](Typeface.md))`(`style:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns one of the default typeface objects, based on the specified style |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](Typeface.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStyle](Typeface.md))`()` Returns the typeface's intrinsic style attributes |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getSystemFontFamilyName](../android/graphics/Typeface.md))`()` Returns the system font family name if the typeface was created from a system font family, otherwise returns null. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWeight](../android/graphics/Typeface.md))`()` Returns the typeface's weight value |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/graphics/Typeface.md))`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getSystemFontFamilyName](Typeface.md))`()` Returns the system font family name if the typeface was created from a system font family, otherwise returns null. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWeight](Typeface.md))`()` Returns the typeface's weight value |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](Typeface.md))`()` <br /> |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isBold](../android/graphics/Typeface.md))`()` Returns true if getStyle() has the BOLD bit set. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isItalic](../android/graphics/Typeface.md))`()` Returns true if getStyle() has the ITALIC bit set. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isBold](Typeface.md))`()` Returns true if getStyle() has the BOLD bit set. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isItalic](Typeface.md))`()` Returns true if getStyle() has the ITALIC bit set. |
 
 | Properties ||
 |----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Typeface](../android/graphics/Typeface.md)! | [DEFAULT](../android/graphics/Typeface.md) The default NORMAL typeface object |
-| static [Typeface](../android/graphics/Typeface.md)! | [DEFAULT_BOLD](../android/graphics/Typeface.md) The default BOLD typeface object. |
-| static [Typeface](../android/graphics/Typeface.md)! | [MONOSPACE](../android/graphics/Typeface.md) The NORMAL style of the default monospace typeface. |
+| static [Typeface](Typeface.md)! | [DEFAULT](Typeface.md) The default NORMAL typeface object |
+| static [Typeface](Typeface.md)! | [DEFAULT_BOLD](Typeface.md) The default BOLD typeface object. |
+| static [Typeface](Typeface.md)! | [MONOSPACE](Typeface.md) The NORMAL style of the default monospace typeface. |
 | --- | --- |
-| static [Typeface](../android/graphics/Typeface.md)! | [SANS_SERIF](../android/graphics/Typeface.md) The NORMAL style of the default sans serif typeface. |
-| static [Typeface](../android/graphics/Typeface.md)! | [SERIF](../android/graphics/Typeface.md) The NORMAL style of the default serif typeface. |
+| static [Typeface](Typeface.md)! | [SANS_SERIF](Typeface.md) The NORMAL style of the default sans serif typeface. |
+| static [Typeface](Typeface.md)! | [SERIF](Typeface.md) The NORMAL style of the default serif typeface. |
 
 ## Constants
 
@@ -123,12 +123,12 @@ This method is not thread safe on API 27 or before. This method is thread safe o
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `family` | [Typeface](../android/graphics/Typeface.md)!:An existing [Typeface](../android/graphics/Typeface.md) object. In case of`null`, the default typeface is used instead. |
-| `style` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The style (normal, bold, italic) of the typeface. e.g. NORMAL, BOLD, ITALIC, BOLD_ITALIC Value is [android.graphics.Typeface#NORMAL](../android/graphics/Typeface.md), [android.graphics.Typeface#BOLD](../android/graphics/Typeface.md), [android.graphics.Typeface#ITALIC](../android/graphics/Typeface.md), or [android.graphics.Typeface#BOLD_ITALIC](../android/graphics/Typeface.md) |
+| `family` | [Typeface](Typeface.md)!:An existing [Typeface](Typeface.md) object. In case of`null`, the default typeface is used instead. |
+| `style` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The style (normal, bold, italic) of the typeface. e.g. NORMAL, BOLD, ITALIC, BOLD_ITALIC Value is [android.graphics.Typeface#NORMAL](Typeface.md), [android.graphics.Typeface#BOLD](Typeface.md), [android.graphics.Typeface#ITALIC](Typeface.md), or [android.graphics.Typeface#BOLD_ITALIC](Typeface.md) |
 
 | Return ||
 |----------------------------------------------------------------------------------------|-----------------------------|
-| [Typeface](../android/graphics/Typeface.md)! | The best matching typeface. |
+| [Typeface](Typeface.md)! | The best matching typeface. |
 
 ### create
 
@@ -165,14 +165,14 @@ This method is thread safe.
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `family` | [Typeface](../android/graphics/Typeface.md)?:An existing [Typeface](../android/graphics/Typeface.md) object. In case of`null`, the default typeface is used instead. |
+| `family` | [Typeface](Typeface.md)?:An existing [Typeface](Typeface.md) object. In case of`null`, the default typeface is used instead. |
 | `weight` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The desired weight to be drawn. Value is between 1 and 1000 inclusive |
 | `italic` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):`true`if italic style is desired to be drawn. Otherwise,`false` |
 | --- | --- |
 
 | Return ||
 |---------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Typeface](../android/graphics/Typeface.md) | A [Typeface](../android/graphics/Typeface.md) object for drawing specified weight and italic style. Never returns`null` |
+| [Typeface](Typeface.md) | A [Typeface](Typeface.md) object for drawing specified weight and italic style. Never returns`null` |
 
 **See Also**
 
@@ -195,11 +195,11 @@ Create a typeface object given a family name, and option style information. If n
 | Parameters ||
 |--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `familyName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:May be null. The name of the font family. |
-| `style` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The style (normal, bold, italic) of the typeface. e.g. NORMAL, BOLD, ITALIC, BOLD_ITALIC Value is [android.graphics.Typeface#NORMAL](../android/graphics/Typeface.md), [android.graphics.Typeface#BOLD](../android/graphics/Typeface.md), [android.graphics.Typeface#ITALIC](../android/graphics/Typeface.md), or [android.graphics.Typeface#BOLD_ITALIC](../android/graphics/Typeface.md) |
+| `style` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The style (normal, bold, italic) of the typeface. e.g. NORMAL, BOLD, ITALIC, BOLD_ITALIC Value is [android.graphics.Typeface#NORMAL](Typeface.md), [android.graphics.Typeface#BOLD](Typeface.md), [android.graphics.Typeface#ITALIC](Typeface.md), or [android.graphics.Typeface#BOLD_ITALIC](Typeface.md) |
 
 | Return ||
 |----------------------------------------------------------------------------------------|-----------------------------|
-| [Typeface](../android/graphics/Typeface.md)! | The best matching typeface. |
+| [Typeface](Typeface.md)! | The best matching typeface. |
 
 ### createFromAsset
 
@@ -216,12 +216,12 @@ Create a new typeface from the specified font data.
 
 | Parameters ||
 |--------|------------------------------------------------------------------------------------------------------------------------------------------|
-| `mgr` | [AssetManager](../android/content/res/AssetManager.md)!:The application's asset manager |
+| `mgr` | [AssetManager](../android.content.res/AssetManager.md)!:The application's asset manager |
 | `path` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The file name of the font data in the assets directory |
 
 | Return ||
 |----------------------------------------------------------------------------------------|-------------------|
-| [Typeface](../android/graphics/Typeface.md)! | The new typeface. |
+| [Typeface](Typeface.md)! | The new typeface. |
 
 ### createFromFile
 
@@ -235,11 +235,11 @@ Create a new typeface from the specified font file.
 
 | Parameters ||
 |--------|--------------------------------------------------------------------------------------------------------------------------------|
-| `file` | [File](../java/io/File.md)?:The path to the font data. This value may be`null`. |
+| `file` | [File](../java.io/File.md)?:The path to the font data. This value may be`null`. |
 
 | Return ||
 |----------------------------------------------------------------------------------------|-------------------|
-| [Typeface](../android/graphics/Typeface.md)! | The new typeface. |
+| [Typeface](Typeface.md)! | The new typeface. |
 
 ### createFromFile
 
@@ -257,7 +257,7 @@ Create a new typeface from the specified font file.
 
 | Return ||
 |----------------------------------------------------------------------------------------|-------------------|
-| [Typeface](../android/graphics/Typeface.md)! | The new typeface. |
+| [Typeface](Typeface.md)! | The new typeface. |
 
 ### defaultFromStyle
 
@@ -271,11 +271,11 @@ Returns one of the default typeface objects, based on the specified style
 
 | Parameters ||
 |---------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `style` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is [android.graphics.Typeface#NORMAL](../android/graphics/Typeface.md), [android.graphics.Typeface#BOLD](../android/graphics/Typeface.md), [android.graphics.Typeface#ITALIC](../android/graphics/Typeface.md), or [android.graphics.Typeface#BOLD_ITALIC](../android/graphics/Typeface.md) |
+| `style` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is [android.graphics.Typeface#NORMAL](Typeface.md), [android.graphics.Typeface#BOLD](Typeface.md), [android.graphics.Typeface#ITALIC](Typeface.md), or [android.graphics.Typeface#BOLD_ITALIC](Typeface.md) |
 
 | Return ||
 |----------------------------------------------------------------------------------------|----------------------------------------------------|
-| [Typeface](../android/graphics/Typeface.md)! | the default typeface that corresponds to the style |
+| [Typeface](Typeface.md)! | the default typeface that corresponds to the style |
 
 ### equals
 
@@ -305,7 +305,7 @@ Returns the typeface's intrinsic style attributes
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.graphics.Typeface#NORMAL](../android/graphics/Typeface.md), [android.graphics.Typeface#BOLD](../android/graphics/Typeface.md), [android.graphics.Typeface#ITALIC](../android/graphics/Typeface.md), or [android.graphics.Typeface#BOLD_ITALIC](../android/graphics/Typeface.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.graphics.Typeface#NORMAL](Typeface.md), [android.graphics.Typeface#BOLD](Typeface.md), [android.graphics.Typeface#ITALIC](Typeface.md), or [android.graphics.Typeface#BOLD_ITALIC](Typeface.md) |
 
 ### getSystemFontFamilyName
 

@@ -8,11 +8,11 @@ abstract class VrListenerService : Service
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](../android/content/Context.md) ||||
-| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) |||
-| | | ↳ | [android.app.Service](../android/app/Service.md) ||
+| ↳ | [android.content.Context](../android.content/Context.md) ||||
+| | ↳ | [android.content.ContextWrapper](../android.content/ContextWrapper.md) |||
+| | | ↳ | [android.app.Service](../android.app/Service.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.service.vr.VrListenerService](../android/service/vr/VrListenerService.md) |
+| | | | ↳ | [android.service.vr.VrListenerService](VrListenerService.md) |
 
 A service that is bound from the system while running in virtual reality (VR) mode.
 
@@ -1063,7 +1063,7 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | Public methods ||
 |---|---|
 | static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/service/vr/VrListenerService#isVrModePackageEnabled(android.content.Context,%20android.content.ComponentName)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, requestedComponent: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Checks if the given component is enabled in user settings. |
-| open [IBinder](../android/os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/service/vr/VrListenerService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
+| open [IBinder](../android.os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/service/vr/VrListenerService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/vr/VrListenerService#onCurrentVrActivityChanged(android.content.ComponentName)(component: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#!)` Called when the current activity using VR mode has changed. |
 | --- | --- |
 
@@ -2801,8 +2801,8 @@ If this component is not enabled in the user's settings, it will not be started 
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md): the `https://developer.android.com/reference/kotlin/android/content/Context.html#` to use for looking up the requested component. This value cannot be `null`. |
-| `requestedComponent` | [ComponentName](../android/content/ComponentName.md): the name of the component that implements `https://developer.android.com/reference/kotlin/android/service/vr/VrListenerService#` to check. This value cannot be `null`. |
+| `context` | [Context](../android.content/Context.md): the `https://developer.android.com/reference/kotlin/android/content/Context.html#` to use for looking up the requested component. This value cannot be `null`. |
+| `requestedComponent` | [ComponentName](../android.content/ComponentName.md): the name of the component that implements `https://developer.android.com/reference/kotlin/android/service/vr/VrListenerService#` to check. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -2826,7 +2826,7 @@ Return the communication channel to the service. May return null if clients can 
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
+| `intent` | [Intent](../android.content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
 
 | Return ||
 |---|---|
@@ -2846,7 +2846,7 @@ This will be called when this service is initially bound, but is not guaranteed 
 
 | Parameters ||
 |---|---|
-| `component` | [ComponentName](../android/content/ComponentName.md)!: the `https://developer.android.com/reference/kotlin/android/content/ComponentName.html#` of the VR activity that the system has switched to, or null if the system is displaying a 2D activity in VR compatibility mode. |
+| `component` | [ComponentName](../android.content/ComponentName.md)!: the `https://developer.android.com/reference/kotlin/android/content/ComponentName.html#` of the VR activity that the system has switched to, or null if the system is displaying a 2D activity in VR compatibility mode. |
 
 **See Also**
 

@@ -9,8 +9,8 @@ class CrossDeviceAuthenticationException : Exception
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||
-| | | ↳ | [android.security.authenticationpolicy.CrossDeviceAuthenticationException](../android/security/authenticationpolicy/CrossDeviceAuthenticationException.md) |
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) ||
+| | | ↳ | [android.security.authenticationpolicy.CrossDeviceAuthenticationException](CrossDeviceAuthenticationException.md) |
 | --- | --- | --- | --- |
 
 Exception thrown when cross-device authentication fails.

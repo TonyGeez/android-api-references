@@ -9,12 +9,12 @@ open class ExpandableListActivity : Activity, ExpandableListView.OnChildClickL
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](../android/content/Context.md) |||||
-| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) ||||
-| | | ↳ | [android.view.ContextThemeWrapper](../android/view/ContextThemeWrapper.md) |||
+| ↳ | [android.content.Context](../android.content/Context.md) |||||
+| | ↳ | [android.content.ContextWrapper](../android.content/ContextWrapper.md) ||||
+| | | ↳ | [android.view.ContextThemeWrapper](../android.view/ContextThemeWrapper.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.app.Activity](../android/app/Activity.md) ||
-| | | | | ↳ | [android.app.ExpandableListActivity](../android/app/ExpandableListActivity.md) |
+| | | | ↳ | [android.app.Activity](Activity.md) ||
+| | | | | ↳ | [android.app.ExpandableListActivity](ExpandableListActivity.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 30.**
@@ -1129,8 +1129,8 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 
 | Public methods ||
 |---|---|
-| open [ExpandableListAdapter](../android/widget/ExpandableListAdapter.md)! | `https://developer.android.com/reference/kotlin/android/app/ExpandableListActivity#getExpandableListAdapter()()` Get the ExpandableListAdapter associated with this activity's ExpandableListView. |
-| open [ExpandableListView](../android/widget/ExpandableListView.md)! | `https://developer.android.com/reference/kotlin/android/app/ExpandableListActivity#getExpandableListView()()` Get the activity's expandable list view widget. |
+| open [ExpandableListAdapter](../android.widget/ExpandableListAdapter.md)! | `https://developer.android.com/reference/kotlin/android/app/ExpandableListActivity#getExpandableListAdapter()()` Get the ExpandableListAdapter associated with this activity's ExpandableListView. |
+| open [ExpandableListView](../android.widget/ExpandableListView.md)! | `https://developer.android.com/reference/kotlin/android/app/ExpandableListActivity#getExpandableListView()()` Get the activity's expandable list view widget. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/ExpandableListActivity#getSelectedId()()` Gets the ID of the currently selected group or child. |
 | --- | --- |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/ExpandableListActivity#getSelectedPosition()()` Gets the position (in packed position representation) of the currently selected group or child. |
@@ -5028,8 +5028,8 @@ Callback method to be invoked when a child in this expandable list has been clic
 
 | Parameters ||
 |---|---|
-| `parent` | [ExpandableListView](../android/widget/ExpandableListView.md)!: The ExpandableListView where the click happened |
-| `v` | [View](../android/view/View.md)!: The view within the expandable list/ListView that was clicked |
+| `parent` | [ExpandableListView](../android.widget/ExpandableListView.md)!: The ExpandableListView where the click happened |
+| `v` | [View](../android.view/View.md)!: The view within the expandable list/ListView that was clicked |
 | `groupPosition` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The group position that contains the child that was clicked |
 | --- | --- |
 | `childPosition` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The child position within the group |
@@ -5078,8 +5078,8 @@ It is not safe to hold onto the context menu after this method returns.
 
 | Parameters ||
 |---|---|
-| `menu` | [ContextMenu](../android/view/ContextMenu.md)!: The context menu that is being built |
-| `v` | [View](../android/view/View.md)!: The view for which the context menu is being built |
+| `menu` | [ContextMenu](../android.view/ContextMenu.md)!: The context menu that is being built |
+| `v` | [View](../android.view/View.md)!: The view for which the context menu is being built |
 | `menuInfo` | [ContextMenu.ContextMenuInfo](../android/view/ContextMenu.ContextMenuInfo.md)!: Extra information about the item for which the context menu should be shown. This information will vary depending on the class of v. |
 | --- | --- |
 

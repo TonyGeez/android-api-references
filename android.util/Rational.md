@@ -2,7 +2,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 
 # Rational
 
-Kotlin | [Java](../android/util/Rational.md)
+Kotlin | [Java](Rational.md)
 | --- | --- |
 
 ```
@@ -12,7 +12,7 @@ class Rational : Number, Comparable<Rational!>
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
 | ↳ | [kotlin.Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html) ||
-| | ↳ | [android.util.Rational](../android/util/Rational.md) |
+| | ↳ | [android.util.Rational](Rational.md) |
 
 An immutable data type representation a rational number.
 
@@ -38,7 +38,7 @@ Contains a pair of `int`s representing the numerator and denominator of a Ration
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/util/Rational#isNaN()()` Indicates whether this rational is a *Not-a-Number (NaN)* value. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/util/Rational#isZero()()` Indicates whether this rational represents a zero value. |
 | --- | --- |
-| static [Rational](../android/util/Rational.md)! | `https://developer.android.com/reference/kotlin/android/util/Rational#parseRational(kotlin.String)(string: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Parses the specified string as a rational value. |
+| static [Rational](Rational.md)! | `https://developer.android.com/reference/kotlin/android/util/Rational#parseRational(kotlin.String)(string: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Parses the specified string as a rational value. |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/util/Rational#toDouble()()` Returns the value of the specified number as a `double`. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/util/Rational#toFloat()()` Returns the value of the specified number as a `float`. |
 | --- | --- |
@@ -50,11 +50,11 @@ Contains a pair of `int`s representing the numerator and denominator of a Ration
 
 | Properties ||
 |---|---|
-| static [Rational](../android/util/Rational.md)! | `https://developer.android.com/reference/kotlin/android/util/Rational#NEGATIVE_INFINITY:android.util.Rational` Constant for the negative infinity value of the `Rational` type. |
-| static [Rational](../android/util/Rational.md)! | `https://developer.android.com/reference/kotlin/android/util/Rational#NaN:android.util.Rational` Constant for the *Not-a-Number (NaN)* value of the `Rational` type. |
-| static [Rational](../android/util/Rational.md)! | `https://developer.android.com/reference/kotlin/android/util/Rational#POSITIVE_INFINITY:android.util.Rational` Constant for the positive infinity value of the `Rational` type. |
+| static [Rational](Rational.md)! | `https://developer.android.com/reference/kotlin/android/util/Rational#NEGATIVE_INFINITY:android.util.Rational` Constant for the negative infinity value of the `Rational` type. |
+| static [Rational](Rational.md)! | `https://developer.android.com/reference/kotlin/android/util/Rational#NaN:android.util.Rational` Constant for the *Not-a-Number (NaN)* value of the `Rational` type. |
+| static [Rational](Rational.md)! | `https://developer.android.com/reference/kotlin/android/util/Rational#POSITIVE_INFINITY:android.util.Rational` Constant for the positive infinity value of the `Rational` type. |
 | --- | --- |
-| static [Rational](../android/util/Rational.md)! | `https://developer.android.com/reference/kotlin/android/util/Rational#ZERO:android.util.Rational` Constant for the zero value of the `Rational` type. |
+| static [Rational](Rational.md)! | `https://developer.android.com/reference/kotlin/android/util/Rational#ZERO:android.util.Rational` Constant for the zero value of the `Rational` type. |
 
 ## Public constructors
 

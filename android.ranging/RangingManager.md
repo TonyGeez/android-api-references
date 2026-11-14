@@ -4,7 +4,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 
 # RangingManager
 
-Kotlin| [Java](../android/ranging/RangingManager.md) 
+Kotlin| [Java](RangingManager.md) 
 | --- | --- |
 
 ```
@@ -13,11 +13,11 @@ class RangingManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.ranging.RangingManager](../android/ranging/RangingManager.md) |
+| ↳ | [android.ranging.RangingManager](RangingManager.md) |
 
 This class provides a way to perform ranging operations such as querying the device's capabilities and determining the distance and angle between the local device and a remote device.
 
-To get a [RangingManager](../android/ranging/RangingManager.md), call the`Context.getSystemService(RangingManager.class)`. 
+To get a [RangingManager](RangingManager.md), call the`Context.getSystemService(RangingManager.class)`. 
 Restricted for SDK Runtime environment in API level 36.
 
 ## Summary
@@ -28,18 +28,18 @@ Restricted for SDK Runtime environment in API level 36.
 
 | Constants ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BLE_CS](../android/ranging/RangingManager.md) Bluetooth Channel Sounding (BT-CS) technology. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BLE_RSSI](../android/ranging/RangingManager.md) Bluetooth Low Energy (BLE) RSSI-based ranging technology. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UWB](../android/ranging/RangingManager.md) Ultra-Wideband (UWB) technology. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BLE_CS](RangingManager.md) Bluetooth Channel Sounding (BT-CS) technology. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BLE_RSSI](RangingManager.md) Bluetooth Low Energy (BLE) RSSI-based ranging technology. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UWB](RangingManager.md) Ultra-Wideband (UWB) technology. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIFI_NAN_RTT](../android/ranging/RangingManager.md) WiFi Round Trip Time (WiFi-RTT) technology. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIFI_STA_RTT](../android/ranging/RangingManager.md) WiFi Round Trip Time (WiFi-RTT 8011MC) technology. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIFI_NAN_RTT](RangingManager.md) WiFi Round Trip Time (WiFi-RTT) technology. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIFI_STA_RTT](RangingManager.md) WiFi Round Trip Time (WiFi-RTT 8011MC) technology. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [RangingSession](../android/ranging/RangingSession.md)? | [createRangingSession](../android/ranging/RangingManager.md))`(`executor:` ` [Executor](../java/util/concurrent/Executor.md)`, `callback:` ` [RangingSession.Callback](../android/ranging/RangingSession.Callback.md)`)` Creates a new ranging session. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerCapabilitiesCallback](../android/ranging/RangingManager.md))`(`executor:` ` [Executor](../java/util/concurrent/Executor.md)`, `callback:` ` [RangingManager.RangingCapabilitiesCallback](../android/ranging/RangingManager.RangingCapabilitiesCallback.md)`)` Registers a callback to receive ranging capabilities updates. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterCapabilitiesCallback](../android/ranging/RangingManager.md))`(`callback:` ` [RangingManager.RangingCapabilitiesCallback](../android/ranging/RangingManager.RangingCapabilitiesCallback.md)`)` Unregisters a previously registered ranging capabilities callback. |
+| [RangingSession](RangingSession.md)? | [createRangingSession](RangingManager.md))`(`executor:` ` [Executor](../java.util.concurrent/Executor.md)`, `callback:` ` [RangingSession.Callback](../android/ranging/RangingSession.Callback.md)`)` Creates a new ranging session. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerCapabilitiesCallback](RangingManager.md))`(`executor:` ` [Executor](../java.util.concurrent/Executor.md)`, `callback:` ` [RangingManager.RangingCapabilitiesCallback](../android/ranging/RangingManager.RangingCapabilitiesCallback.md)`)` Registers a callback to receive ranging capabilities updates. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterCapabilitiesCallback](RangingManager.md))`(`callback:` ` [RangingManager.RangingCapabilitiesCallback](../android/ranging/RangingManager.RangingCapabilitiesCallback.md)`)` Unregisters a previously registered ranging capabilities callback. |
 | --- | --- |
 
 ## Constants
@@ -119,18 +119,18 @@ fun createRangingSession(
 
 Creates a new ranging session. A ranging session enables the application to perform ranging operations using available technologies such as UWB (Ultra-Wideband) or WiFi RTT (Round Trip Time).
 
-This method returns a [RangingSession](../android/ranging/RangingSession.md) instance, which can be used to initiate, manage, and stop ranging operations. The provided [RangingSession.Callback](../android/ranging/RangingSession.Callback.md) will be used to receive session-related events, such as session start, stop, and ranging updates.
+This method returns a [RangingSession](RangingSession.md) instance, which can be used to initiate, manage, and stop ranging operations. The provided [RangingSession.Callback](../android/ranging/RangingSession.Callback.md) will be used to receive session-related events, such as session start, stop, and ranging updates.
 
-It is recommended to provide an appropriate [Executor](../java/util/concurrent/Executor.md) to ensure that callback events are handled on a suitable thread.
+It is recommended to provide an appropriate [Executor](../java.util.concurrent/Executor.md) to ensure that callback events are handled on a suitable thread.
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `callback` | [RangingSession.Callback](../android/ranging/RangingSession.Callback.md):the [RangingSession.Callback](../android/ranging/RangingSession.Callback.md) to handle session-related events. Must not be`null`. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md):the [Executor](../java/util/concurrent/Executor.md) on which the callback will be invoked. Must not be`null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md):the [Executor](../java.util.concurrent/Executor.md) on which the callback will be invoked. Must not be`null`. |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [RangingSession](../android/ranging/RangingSession.md)? | the [RangingSession](../android/ranging/RangingSession.md) instance if the session was successfully created, or`null`if the session could not be created. |
+| [RangingSession](RangingSession.md)? | the [RangingSession](RangingSession.md) instance if the session was successfully created, or`null`if the session could not be created. |
 
 | Exceptions ||
 |----------------------------------|-----------------------------------------------------------------------------------------|
@@ -152,7 +152,7 @@ Registers a callback to receive ranging capabilities updates.
 
 | Parameters ||
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `executor` | [Executor](../java/util/concurrent/Executor.md):The [Executor](../java/util/concurrent/Executor.md) on which the callback will be executed. Must not be null. Callback and listener events are dispatched through this [Executor](../java/util/concurrent/Executor.md), providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use [Context.getMainExecutor()](../android/content/Context.md)). Otherwise, provide an [Executor](../java/util/concurrent/Executor.md) that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md):The [Executor](../java.util.concurrent/Executor.md) on which the callback will be executed. Must not be null. Callback and listener events are dispatched through this [Executor](../java.util.concurrent/Executor.md), providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use [Context.getMainExecutor()](../android.content/Context.md)). Otherwise, provide an [Executor](../java.util.concurrent/Executor.md) that dispatches to an appropriate thread. |
 | `callback` | [RangingManager.RangingCapabilitiesCallback](../android/ranging/RangingManager.RangingCapabilitiesCallback.md):The [RangingCapabilitiesCallback](../android/ranging/RangingManager.RangingCapabilitiesCallback.md) that will handle the capabilities updates. Must not be null. |
 
 | Return ||

@@ -8,7 +8,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 interface LSInput
 ```
 
-| [org.w3c.dom.ls.LSInput](../org/w3c/dom/ls/LSInput.md) |
+| [org.w3c.dom.ls.LSInput](LSInput.md) |
 
 This interface represents an input source for data.
 
@@ -36,27 +36,27 @@ See also the [Document Object Model (DOM) Level 3 Load and Save Specification](h
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getBaseURI](../org/w3c/dom/ls/LSInput.md))`()` The base URI to be used (see section 5.1.4 in \[ |
-| abstract [InputStream](../java/io/InputStream.md)! | [getByteStream](../org/w3c/dom/ls/LSInput.md))`()` An attribute of a language and binding dependent type that represents a stream of bytes. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getCertifiedText](../org/w3c/dom/ls/LSInput.md))`()` If set to true, assume that the input is certified (see section 2.13 in \[ |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getBaseURI](LSInput.md))`()` The base URI to be used (see section 5.1.4 in \[ |
+| abstract [InputStream](../java.io/InputStream.md)! | [getByteStream](LSInput.md))`()` An attribute of a language and binding dependent type that represents a stream of bytes. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getCertifiedText](LSInput.md))`()` If set to true, assume that the input is certified (see section 2.13 in \[ |
 | --- | --- |
-| abstract [Reader](../java/io/Reader.md)! | [getCharacterStream](../org/w3c/dom/ls/LSInput.md))`()` An attribute of a language and binding dependent type that represents a stream of 16-bit units. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getEncoding](../org/w3c/dom/ls/LSInput.md))`()` The character encoding, if known. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPublicId](../org/w3c/dom/ls/LSInput.md))`()` The public identifier for this input source. |
+| abstract [Reader](../java.io/Reader.md)! | [getCharacterStream](LSInput.md))`()` An attribute of a language and binding dependent type that represents a stream of 16-bit units. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getEncoding](LSInput.md))`()` The character encoding, if known. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPublicId](LSInput.md))`()` The public identifier for this input source. |
 | --- | --- |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getStringData](../org/w3c/dom/ls/LSInput.md))`()` String data to parse. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSystemId](../org/w3c/dom/ls/LSInput.md))`()` The system identifier, a URI reference \ [[IETF RFC 2396](http://www.ietf.org/rfc/rfc2396.txt)\], for this input source. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setBaseURI](../org/w3c/dom/ls/LSInput.md))`(`baseURI:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` The base URI to be used (see section 5.1.4 in \[ |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getStringData](LSInput.md))`()` String data to parse. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSystemId](LSInput.md))`()` The system identifier, a URI reference \ [[IETF RFC 2396](http://www.ietf.org/rfc/rfc2396.txt)\], for this input source. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setBaseURI](LSInput.md))`(`baseURI:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` The base URI to be used (see section 5.1.4 in \[ |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setByteStream](../org/w3c/dom/ls/LSInput.md))`(`byteStream:` ` [InputStream](../java/io/InputStream.md)!`)` An attribute of a language and binding dependent type that represents a stream of bytes. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCertifiedText](../org/w3c/dom/ls/LSInput.md))`(`certifiedText:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` If set to true, assume that the input is certified (see section 2.13 in \[ |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCharacterStream](../org/w3c/dom/ls/LSInput.md))`(`characterStream:` ` [Reader](../java/io/Reader.md)!`)` An attribute of a language and binding dependent type that represents a stream of 16-bit units. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setByteStream](LSInput.md))`(`byteStream:` ` [InputStream](../java.io/InputStream.md)!`)` An attribute of a language and binding dependent type that represents a stream of bytes. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCertifiedText](LSInput.md))`(`certifiedText:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` If set to true, assume that the input is certified (see section 2.13 in \[ |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCharacterStream](LSInput.md))`(`characterStream:` ` [Reader](../java.io/Reader.md)!`)` An attribute of a language and binding dependent type that represents a stream of 16-bit units. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEncoding](../org/w3c/dom/ls/LSInput.md))`(`encoding:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` The character encoding, if known. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPublicId](../org/w3c/dom/ls/LSInput.md))`(`publicId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` The public identifier for this input source. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStringData](../org/w3c/dom/ls/LSInput.md))`(`stringData:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` String data to parse. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEncoding](LSInput.md))`(`encoding:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` The character encoding, if known. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPublicId](LSInput.md))`(`publicId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` The public identifier for this input source. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStringData](LSInput.md))`(`stringData:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` String data to parse. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSystemId](../org/w3c/dom/ls/LSInput.md))`(`systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` The system identifier, a URI reference \ [[IETF RFC 2396](http://www.ietf.org/rfc/rfc2396.txt)\], for this input source. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSystemId](LSInput.md))`(`systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` The system identifier, a URI reference \ [[IETF RFC 2396](http://www.ietf.org/rfc/rfc2396.txt)\], for this input source. |
 
 ## Public methods
 

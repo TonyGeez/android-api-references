@@ -4,7 +4,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 
 # ResponderConfig
 
-Kotlin| [Java](../android/net/wifi/rtt/ResponderConfig.md) 
+Kotlin| [Java](ResponderConfig.md) 
 | --- | --- |
 
 ```
@@ -13,54 +13,54 @@ class ResponderConfig : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.wifi.rtt.ResponderConfig](../android/net/wifi/rtt/ResponderConfig.md) |
+| ↳ | [android.net.wifi.rtt.ResponderConfig](ResponderConfig.md) |
 
 Defines the configuration of an IEEE 802.11mc Responder. The Responder may be an Access Point (AP), a Wi-Fi Aware device, or a manually configured Responder.
 
-A Responder configuration may be constructed from a [ScanResult](../android/net/wifi/ScanResult.md) or manually (with the data obtained out-of-band from a peer).
+A Responder configuration may be constructed from a [ScanResult](../android.net.wifi/ScanResult.md) or manually (with the data obtained out-of-band from a peer).
 
 ## Summary
 
 | Nested classes ||
 |---|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](../android/net/wifi/rtt/ResponderConfig.Builder.md) Builder class used to construct [ResponderConfig](../android/net/wifi/rtt/ResponderConfig.md) objects. |
+| | [Builder](../android/net/wifi/rtt/ResponderConfig.Builder.md) Builder class used to construct [ResponderConfig](ResponderConfig.md) objects. |
 
 | Constants ||
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESPONDER_AP](../android/net/wifi/rtt/ResponderConfig.md) Responder is an access point(AP). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESPONDER_STA](../android/net/wifi/rtt/ResponderConfig.md) Responder is a client device(STA). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESPONDER_AP](ResponderConfig.md) Responder is an access point(AP). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESPONDER_STA](ResponderConfig.md) Responder is a client device(STA). |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android.os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android.os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android.os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/net/wifi/rtt/ResponderConfig.md))`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/net/wifi/rtt/ResponderConfig.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| static [ResponderConfig](../android/net/wifi/rtt/ResponderConfig.md) | [fromScanResult](../android/net/wifi/rtt/ResponderConfig.md))`(`scanResult:` ` [ScanResult](../android/net/wifi/ScanResult.md)`)` Creates a Responder configuration from a [ScanResult](../android/net/wifi/ScanResult.md) corresponding to an Access Point (AP), which can be obtained from [android.net.wifi.WifiManager#getScanResults()](../android/net/wifi/WifiManager.md)). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](ResponderConfig.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](ResponderConfig.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| static [ResponderConfig](ResponderConfig.md) | [fromScanResult](ResponderConfig.md))`(`scanResult:` ` [ScanResult](../android.net.wifi/ScanResult.md)`)` Creates a Responder configuration from a [ScanResult](../android.net.wifi/ScanResult.md) corresponding to an Access Point (AP), which can be obtained from [android.net.wifi.WifiManager#getScanResults()](../android.net.wifi/WifiManager.md)). |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCenterFreq0Mhz](../android/net/wifi/rtt/ResponderConfig.md))`()` If the Access Point (AP) bandwidth is 20 MHz, 0 MHz is returned. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCenterFreq1Mhz](../android/net/wifi/rtt/ResponderConfig.md))`()` If the Access Point (AP) bandwidth is 80 + 80 MHz, this param is not used and returns 0. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getChannelWidth](../android/net/wifi/rtt/ResponderConfig.md))`()` AP Channel bandwidth; one of [ScanResult.CHANNEL_WIDTH_20MHZ](../android/net/wifi/ScanResult.md), [ScanResult.CHANNEL_WIDTH_40MHZ](../android/net/wifi/ScanResult.md), [ScanResult.CHANNEL_WIDTH_80MHZ](../android/net/wifi/ScanResult.md), [ScanResult.CHANNEL_WIDTH_160MHZ](../android/net/wifi/ScanResult.md), [CHANNEL_WIDTH_80MHZ_PLUS_MHZ](../android/net/wifi/ScanResult.md) or [ScanResult.CHANNEL_WIDTH_320MHZ](../android/net/wifi/ScanResult.md). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCenterFreq0Mhz](ResponderConfig.md))`()` If the Access Point (AP) bandwidth is 20 MHz, 0 MHz is returned. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCenterFreq1Mhz](ResponderConfig.md))`()` If the Access Point (AP) bandwidth is 80 + 80 MHz, this param is not used and returns 0. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getChannelWidth](ResponderConfig.md))`()` AP Channel bandwidth; one of [ScanResult.CHANNEL_WIDTH_20MHZ](../android.net.wifi/ScanResult.md), [ScanResult.CHANNEL_WIDTH_40MHZ](../android.net.wifi/ScanResult.md), [ScanResult.CHANNEL_WIDTH_80MHZ](../android.net.wifi/ScanResult.md), [ScanResult.CHANNEL_WIDTH_160MHZ](../android.net.wifi/ScanResult.md), [CHANNEL_WIDTH_80MHZ_PLUS_MHZ](../android.net.wifi/ScanResult.md) or [ScanResult.CHANNEL_WIDTH_320MHZ](../android.net.wifi/ScanResult.md). |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFrequencyMhz](../android/net/wifi/rtt/ResponderConfig.md))`()` <br /> |
-| [MacAddress](../android/net/MacAddress.md)? | [getMacAddress](../android/net/wifi/rtt/ResponderConfig.md))`()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPreamble](../android/net/wifi/rtt/ResponderConfig.md))`()` Get the preamble type of the channel. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFrequencyMhz](ResponderConfig.md))`()` <br /> |
+| [MacAddress](../android.net/MacAddress.md)? | [getMacAddress](ResponderConfig.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPreamble](ResponderConfig.md))`()` Get the preamble type of the channel. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getResponderType](../android/net/wifi/rtt/ResponderConfig.md))`()` Get responder type. |
-| [SecureRangingConfig](../android/net/wifi/rtt/SecureRangingConfig.md)? | [getSecureRangingConfig](../android/net/wifi/rtt/ResponderConfig.md))`()` Get secure ranging configuration. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/net/wifi/rtt/ResponderConfig.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getResponderType](ResponderConfig.md))`()` Get responder type. |
+| [SecureRangingConfig](SecureRangingConfig.md)? | [getSecureRangingConfig](ResponderConfig.md))`()` Get secure ranging configuration. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](ResponderConfig.md))`()` <br /> |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [is80211azNtbSupported](../android/net/wifi/rtt/ResponderConfig.md))`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [is80211mcSupported](../android/net/wifi/rtt/ResponderConfig.md))`()` <br /> |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/net/wifi/rtt/ResponderConfig.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [is80211azNtbSupported](ResponderConfig.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [is80211mcSupported](ResponderConfig.md))`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](ResponderConfig.md))`()` <br /> |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/net/wifi/rtt/ResponderConfig.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](ResponderConfig.md))`(`dest:` ` [Parcel](../android.os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ResponderConfig](../android/net/wifi/rtt/ResponderConfig.md)!\> | [CREATOR](../android/net/wifi/rtt/ResponderConfig.md) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ResponderConfig](ResponderConfig.md)!\> | [CREATOR](ResponderConfig.md) <br /> |
 
 ## Constants
 
@@ -100,7 +100,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) |
 
 ### equals
 
@@ -139,15 +139,15 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 static fun fromScanResult(scanResult: ScanResult): ResponderConfig
 ```
 
-Creates a Responder configuration from a [ScanResult](../android/net/wifi/ScanResult.md) corresponding to an Access Point (AP), which can be obtained from [android.net.wifi.WifiManager#getScanResults()](../android/net/wifi/WifiManager.md)).
+Creates a Responder configuration from a [ScanResult](../android.net.wifi/ScanResult.md) corresponding to an Access Point (AP), which can be obtained from [android.net.wifi.WifiManager#getScanResults()](../android.net.wifi/WifiManager.md)).
 
 | Parameters ||
 |--------------|----------------------------------------------------------------------------------------------------------------------------|
-| `scanResult` | [ScanResult](../android/net/wifi/ScanResult.md):This value cannot be`null`. |
+| `scanResult` | [ScanResult](../android.net.wifi/ScanResult.md):This value cannot be`null`. |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------|-----------------------------|
-| [ResponderConfig](../android/net/wifi/rtt/ResponderConfig.md) | This value cannot be`null`. |
+| [ResponderConfig](ResponderConfig.md) | This value cannot be`null`. |
 
 ### getCenterFreq0Mhz
 
@@ -185,11 +185,11 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 fun getChannelWidth(): Int
 ```
 
-AP Channel bandwidth; one of [ScanResult.CHANNEL_WIDTH_20MHZ](../android/net/wifi/ScanResult.md), [ScanResult.CHANNEL_WIDTH_40MHZ](../android/net/wifi/ScanResult.md), [ScanResult.CHANNEL_WIDTH_80MHZ](../android/net/wifi/ScanResult.md), [ScanResult.CHANNEL_WIDTH_160MHZ](../android/net/wifi/ScanResult.md), [CHANNEL_WIDTH_80MHZ_PLUS_MHZ](../android/net/wifi/ScanResult.md) or [ScanResult.CHANNEL_WIDTH_320MHZ](../android/net/wifi/ScanResult.md).
+AP Channel bandwidth; one of [ScanResult.CHANNEL_WIDTH_20MHZ](../android.net.wifi/ScanResult.md), [ScanResult.CHANNEL_WIDTH_40MHZ](../android.net.wifi/ScanResult.md), [ScanResult.CHANNEL_WIDTH_80MHZ](../android.net.wifi/ScanResult.md), [ScanResult.CHANNEL_WIDTH_160MHZ](../android.net.wifi/ScanResult.md), [CHANNEL_WIDTH_80MHZ_PLUS_MHZ](../android.net.wifi/ScanResult.md) or [ScanResult.CHANNEL_WIDTH_320MHZ](../android.net.wifi/ScanResult.md).
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the bandwidth repsentation of the Wi-Fi channel Value is [android.net.wifi.ScanResult#CHANNEL_WIDTH_20MHZ](../android/net/wifi/ScanResult.md), [android.net.wifi.ScanResult#CHANNEL_WIDTH_40MHZ](../android/net/wifi/ScanResult.md), [android.net.wifi.ScanResult#CHANNEL_WIDTH_80MHZ](../android/net/wifi/ScanResult.md), [android.net.wifi.ScanResult#CHANNEL_WIDTH_160MHZ](../android/net/wifi/ScanResult.md), [android.net.wifi.ScanResult#CHANNEL_WIDTH_80MHZ_PLUS_MHZ](../android/net/wifi/ScanResult.md), or [android.net.wifi.ScanResult#CHANNEL_WIDTH_320MHZ](../android/net/wifi/ScanResult.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the bandwidth repsentation of the Wi-Fi channel Value is [android.net.wifi.ScanResult#CHANNEL_WIDTH_20MHZ](../android.net.wifi/ScanResult.md), [android.net.wifi.ScanResult#CHANNEL_WIDTH_40MHZ](../android.net.wifi/ScanResult.md), [android.net.wifi.ScanResult#CHANNEL_WIDTH_80MHZ](../android.net.wifi/ScanResult.md), [android.net.wifi.ScanResult#CHANNEL_WIDTH_160MHZ](../android.net.wifi/ScanResult.md), [android.net.wifi.ScanResult#CHANNEL_WIDTH_80MHZ_PLUS_MHZ](../android.net.wifi/ScanResult.md), or [android.net.wifi.ScanResult#CHANNEL_WIDTH_320MHZ](../android.net.wifi/ScanResult.md) |
 
 ### getFrequencyMhz
 
@@ -213,7 +213,7 @@ fun getMacAddress(): MacAddress?
 
 | Return ||
 |--------------------------------------------------------------------------------------------|-----------------------------------------------------------|
-| [MacAddress](../android/net/MacAddress.md)? | the MAC address of the responder This value may be`null`. |
+| [MacAddress](../android.net/MacAddress.md)? | the MAC address of the responder This value may be`null`. |
 
 ### getPreamble
 
@@ -227,7 +227,7 @@ Get the preamble type of the channel.
 
 | Return ||
 |----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the preamble used for this channel Value is [android.net.wifi.ScanResult#PREAMBLE_LEGACY](../android/net/wifi/ScanResult.md), [android.net.wifi.ScanResult#PREAMBLE_HT](../android/net/wifi/ScanResult.md), [android.net.wifi.ScanResult#PREAMBLE_VHT](../android/net/wifi/ScanResult.md), [android.net.wifi.ScanResult#PREAMBLE_HE](../android/net/wifi/ScanResult.md), or [android.net.wifi.ScanResult#PREAMBLE_EHT](../android/net/wifi/ScanResult.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the preamble used for this channel Value is [android.net.wifi.ScanResult#PREAMBLE_LEGACY](../android.net.wifi/ScanResult.md), [android.net.wifi.ScanResult#PREAMBLE_HT](../android.net.wifi/ScanResult.md), [android.net.wifi.ScanResult#PREAMBLE_VHT](../android.net.wifi/ScanResult.md), [android.net.wifi.ScanResult#PREAMBLE_HE](../android.net.wifi/ScanResult.md), or [android.net.wifi.ScanResult#PREAMBLE_EHT](../android.net.wifi/ScanResult.md) |
 
 ### getResponderType
 
@@ -241,7 +241,7 @@ Get responder type.
 
 | Return ||
 |----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The type of this responder Value is [android.net.wifi.rtt.ResponderConfig#RESPONDER_AP](../android/net/wifi/rtt/ResponderConfig.md), [android.net.wifi.rtt.ResponderConfig#RESPONDER_STA](../android/net/wifi/rtt/ResponderConfig.md), android.net.wifi.rtt.ResponderConfig.RESPONDER_P2P_GO, android.net.wifi.rtt.ResponderConfig.RESPONDER_P2P_CLIENT, or android.net.wifi.rtt.ResponderConfig.RESPONDER_AWARE |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The type of this responder Value is [android.net.wifi.rtt.ResponderConfig#RESPONDER_AP](ResponderConfig.md), [android.net.wifi.rtt.ResponderConfig#RESPONDER_STA](ResponderConfig.md), android.net.wifi.rtt.ResponderConfig.RESPONDER_P2P_GO, android.net.wifi.rtt.ResponderConfig.RESPONDER_P2P_CLIENT, or android.net.wifi.rtt.ResponderConfig.RESPONDER_AWARE |
 
 **See Also**
 
@@ -259,7 +259,7 @@ Get secure ranging configuration.
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
-| [SecureRangingConfig](../android/net/wifi/rtt/SecureRangingConfig.md)? | Secure ranging configuration. Returns null for non-secure ranging configuration. |
+| [SecureRangingConfig](SecureRangingConfig.md)? | Secure ranging configuration. Returns null for non-secure ranging configuration. |
 
 ### hashCode
 
@@ -324,8 +324,8 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](../android/os/Parcel.md):This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android.os/Parcel.md):This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

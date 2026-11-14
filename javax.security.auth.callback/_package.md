@@ -4,16 +4,16 @@
 
 ## Interfaces
 
-| [Callback](../javax/security/auth/callback/Callback.md) | Implementations of this interface are passed to a `CallbackHandler`, allowing underlying security services the ability to interact with a calling application to retrieve specific authentication data such as usernames and passwords, or to display certain information, such as error and warning messages. |
+| [Callback](Callback.md) | Implementations of this interface are passed to a `CallbackHandler`, allowing underlying security services the ability to interact with a calling application to retrieve specific authentication data such as usernames and passwords, or to display certain information, such as error and warning messages. |
 | --- | --- |
-| [CallbackHandler](../javax/security/auth/callback/CallbackHandler.md) | An application implements a `CallbackHandler` and passes it to underlying security services so that they may interact with the application to retrieve specific authentication data, such as usernames and passwords, or to display certain information, such as error and warning messages. |
+| [CallbackHandler](CallbackHandler.md) | An application implements a `CallbackHandler` and passes it to underlying security services so that they may interact with the application to retrieve specific authentication data, such as usernames and passwords, or to display certain information, such as error and warning messages. |
 
 ## Classes
 
-| [PasswordCallback](../javax/security/auth/callback/PasswordCallback.md) | Underlying security services instantiate and pass a `PasswordCallback` to the `handle` method of a `CallbackHandler` to retrieve password information. |
+| [PasswordCallback](PasswordCallback.md) | Underlying security services instantiate and pass a `PasswordCallback` to the `handle` method of a `CallbackHandler` to retrieve password information. |
 | --- | --- |
 
 ## Exceptions
 
-| [UnsupportedCallbackException](../javax/security/auth/callback/UnsupportedCallbackException.md) | Signals that a `CallbackHandler` does not recognize a particular `Callback`. |
+| [UnsupportedCallbackException](UnsupportedCallbackException.md) | Signals that a `CallbackHandler` does not recognize a particular `Callback`. |
 | --- | --- |

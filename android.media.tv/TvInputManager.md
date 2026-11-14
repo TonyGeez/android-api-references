@@ -4,7 +4,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 
 # TvInputManager
 
-Kotlin| [Java](../android/media/tv/TvInputManager.md) 
+Kotlin| [Java](TvInputManager.md) 
 | --- | --- |
 
 ```
@@ -13,15 +13,15 @@ class TvInputManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.tv.TvInputManager](../android/media/tv/TvInputManager.md) |
+| ↳ | [android.media.tv.TvInputManager](TvInputManager.md) |
 
 Central system API to the overall TV input framework (TIF) architecture, which arbitrates interaction between applications and the selected TV inputs.
 
 There are three primary parties involved in the TV input framework (TIF) architecture:
 
 - The**TV input manager**as expressed by this class is the central point of the system that manages interaction between all other parts. It is expressed as the client-side API here which exists in each application context and communicates with a global system service that manages the interaction across all processes.
-- A**TV input** implemented by [TvInputService](../android/media/tv/TvInputService.md) represents an input source of TV, which can be a pass-through input such as HDMI, or a tuner input which provides broadcast TV programs. The system binds to the TV input per application's request. on implementing TV inputs.
-- **Applications** talk to the TV input manager to list TV inputs and check their status. Once an application find the input to use, it uses [TvView](../android/media/tv/TvView.md) or [TvRecordingClient](../android/media/tv/TvRecordingClient.md) for further interaction such as watching and recording broadcast TV programs.
+- A**TV input** implemented by [TvInputService](TvInputService.md) represents an input source of TV, which can be a pass-through input such as HDMI, or a tuner input which provides broadcast TV programs. The system binds to the TV input per application's request. on implementing TV inputs.
+- **Applications** talk to the TV input manager to list TV inputs and check their status. Once an application find the input to use, it uses [TvView](TvView.md) or [TvRecordingClient](TvRecordingClient.md) for further interaction such as watching and recording broadcast TV programs.
 
 ## Summary
 
@@ -31,125 +31,125 @@ There are three primary parties involved in the TV input framework (TIF) archite
 
 | Constants ||
 |----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_BLOCKED_RATINGS_CHANGED](../android/media/tv/TvInputManager.md) Broadcast intent action when the user blocked content ratings change. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_PARENTAL_CONTROLS_ENABLED_CHANGED](../android/media/tv/TvInputManager.md) Broadcast intent action when the parental controls enabled state changes. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_QUERY_CONTENT_RATING_SYSTEMS](../android/media/tv/TvInputManager.md) Broadcast intent action used to query available content rating systems. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_BLOCKED_RATINGS_CHANGED](TvInputManager.md) Broadcast intent action when the user blocked content ratings change. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_PARENTAL_CONTROLS_ENABLED_CHANGED](TvInputManager.md) Broadcast intent action when the parental controls enabled state changes. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_QUERY_CONTENT_RATING_SYSTEMS](TvInputManager.md) Broadcast intent action used to query available content rating systems. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_SETUP_INPUTS](../android/media/tv/TvInputManager.md) Activity action to set up channel sources i. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_VIEW_RECORDING_SCHEDULES](../android/media/tv/TvInputManager.md) Activity action to display the recording schedules. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BROADCAST_INFO_STREAM_EVENT](../android/media/tv/TvInputManager.md) <br /> |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_SETUP_INPUTS](TvInputManager.md) Activity action to set up channel sources i. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_VIEW_RECORDING_SCHEDULES](TvInputManager.md) Activity action to display the recording schedules. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BROADCAST_INFO_STREAM_EVENT](TvInputManager.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BROADCAST_INFO_TYPE_COMMAND](../android/media/tv/TvInputManager.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BROADCAST_INFO_TYPE_DSMCC](../android/media/tv/TvInputManager.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BROADCAST_INFO_TYPE_PES](../android/media/tv/TvInputManager.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BROADCAST_INFO_TYPE_COMMAND](TvInputManager.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BROADCAST_INFO_TYPE_DSMCC](TvInputManager.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BROADCAST_INFO_TYPE_PES](TvInputManager.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BROADCAST_INFO_TYPE_SECTION](../android/media/tv/TvInputManager.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BROADCAST_INFO_TYPE_TABLE](../android/media/tv/TvInputManager.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BROADCAST_INFO_TYPE_TIMELINE](../android/media/tv/TvInputManager.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BROADCAST_INFO_TYPE_SECTION](TvInputManager.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BROADCAST_INFO_TYPE_TABLE](TvInputManager.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BROADCAST_INFO_TYPE_TIMELINE](TvInputManager.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BROADCAST_INFO_TYPE_TS](../android/media/tv/TvInputManager.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INPUT_STATE_CONNECTED](../android/media/tv/TvInputManager.md) State for [getInputState(java.lang.String)](../android/media/tv/TvInputManager.md))and [TvInputCallback.onInputStateChanged(String, int)](../android/media/tv/TvInputManager.TvInputCallback.md)): The input source is connected. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INPUT_STATE_CONNECTED_STANDBY](../android/media/tv/TvInputManager.md) State for [getInputState(java.lang.String)](../android/media/tv/TvInputManager.md))and [TvInputCallback.onInputStateChanged(String, int)](../android/media/tv/TvInputManager.TvInputCallback.md)): The input source is connected but in standby mode. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BROADCAST_INFO_TYPE_TS](TvInputManager.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INPUT_STATE_CONNECTED](TvInputManager.md) State for [getInputState(java.lang.String)](TvInputManager.md))and [TvInputCallback.onInputStateChanged(String, int)](../android/media/tv/TvInputManager.TvInputCallback.md)): The input source is connected. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INPUT_STATE_CONNECTED_STANDBY](TvInputManager.md) State for [getInputState(java.lang.String)](TvInputManager.md))and [TvInputCallback.onInputStateChanged(String, int)](../android/media/tv/TvInputManager.TvInputCallback.md)): The input source is connected but in standby mode. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INPUT_STATE_DISCONNECTED](../android/media/tv/TvInputManager.md) State for [getInputState(java.lang.String)](../android/media/tv/TvInputManager.md))and [TvInputCallback.onInputStateChanged(String, int)](../android/media/tv/TvInputManager.TvInputCallback.md)): The input source is disconnected. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [META_DATA_CONTENT_RATING_SYSTEMS](../android/media/tv/TvInputManager.md) Content rating systems metadata associated with [ACTION_QUERY_CONTENT_RATING_SYSTEMS](../android/media/tv/TvInputManager.md). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RECORDING_ERROR_INSUFFICIENT_SPACE](../android/media/tv/TvInputManager.md) Error for [TvInputService.RecordingSession.notifyError(int)](../android/media/tv/TvInputService.RecordingSession.md))and [TvRecordingClient.RecordingCallback.onError(int)](../android/media/tv/TvRecordingClient.RecordingCallback.md)): Recording cannot proceed due to insufficient storage space. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INPUT_STATE_DISCONNECTED](TvInputManager.md) State for [getInputState(java.lang.String)](TvInputManager.md))and [TvInputCallback.onInputStateChanged(String, int)](../android/media/tv/TvInputManager.TvInputCallback.md)): The input source is disconnected. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [META_DATA_CONTENT_RATING_SYSTEMS](TvInputManager.md) Content rating systems metadata associated with [ACTION_QUERY_CONTENT_RATING_SYSTEMS](TvInputManager.md). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RECORDING_ERROR_INSUFFICIENT_SPACE](TvInputManager.md) Error for [TvInputService.RecordingSession.notifyError(int)](../android/media/tv/TvInputService.RecordingSession.md))and [TvRecordingClient.RecordingCallback.onError(int)](../android/media/tv/TvRecordingClient.RecordingCallback.md)): Recording cannot proceed due to insufficient storage space. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RECORDING_ERROR_RESOURCE_BUSY](../android/media/tv/TvInputManager.md) Error for [TvInputService.RecordingSession.notifyError(int)](../android/media/tv/TvInputService.RecordingSession.md))and [TvRecordingClient.RecordingCallback.onError(int)](../android/media/tv/TvRecordingClient.RecordingCallback.md)): Recording cannot proceed because a required recording resource was not able to be allocated. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RECORDING_ERROR_UNKNOWN](../android/media/tv/TvInputManager.md) Error for [TvInputService.RecordingSession.notifyError(int)](../android/media/tv/TvInputService.RecordingSession.md))and [TvRecordingClient.RecordingCallback.onError(int)](../android/media/tv/TvRecordingClient.RecordingCallback.md)): The requested operation cannot be completed due to a problem that does not fit under any other error codes, or the error code for the problem is defined on the higher version than application's`android:targetSdkVersion`. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SESSION_DATA_KEY_AD_BUFFER](../android/media/tv/TvInputManager.md) An object of [AdBuffer](../android/media/tv/AdBuffer.md). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RECORDING_ERROR_RESOURCE_BUSY](TvInputManager.md) Error for [TvInputService.RecordingSession.notifyError(int)](../android/media/tv/TvInputService.RecordingSession.md))and [TvRecordingClient.RecordingCallback.onError(int)](../android/media/tv/TvRecordingClient.RecordingCallback.md)): Recording cannot proceed because a required recording resource was not able to be allocated. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RECORDING_ERROR_UNKNOWN](TvInputManager.md) Error for [TvInputService.RecordingSession.notifyError(int)](../android/media/tv/TvInputService.RecordingSession.md))and [TvRecordingClient.RecordingCallback.onError(int)](../android/media/tv/TvRecordingClient.RecordingCallback.md)): The requested operation cannot be completed due to a problem that does not fit under any other error codes, or the error code for the problem is defined on the higher version than application's`android:targetSdkVersion`. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SESSION_DATA_KEY_AD_BUFFER](TvInputManager.md) An object of [AdBuffer](AdBuffer.md). |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SESSION_DATA_KEY_AD_RESPONSE](../android/media/tv/TvInputManager.md) An object of [AdResponse](../android/media/tv/AdResponse.md). |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SESSION_DATA_KEY_BROADCAST_INFO_RESPONSE](../android/media/tv/TvInputManager.md) An object of [BroadcastInfoResponse](../android/media/tv/BroadcastInfoResponse.md). |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SESSION_DATA_KEY_CHANNEL_URI](../android/media/tv/TvInputManager.md) The URI of a channel. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SESSION_DATA_KEY_AD_RESPONSE](TvInputManager.md) An object of [AdResponse](AdResponse.md). |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SESSION_DATA_KEY_BROADCAST_INFO_RESPONSE](TvInputManager.md) An object of [BroadcastInfoResponse](BroadcastInfoResponse.md). |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SESSION_DATA_KEY_CHANNEL_URI](TvInputManager.md) The URI of a channel. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SESSION_DATA_KEY_TRACKS](../android/media/tv/TvInputManager.md) A list which includes track information. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SESSION_DATA_KEY_TRACK_ID](../android/media/tv/TvInputManager.md) The ID of the track. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SESSION_DATA_KEY_TRACK_TYPE](../android/media/tv/TvInputManager.md) The type of the track. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SESSION_DATA_KEY_TRACKS](TvInputManager.md) A list which includes track information. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SESSION_DATA_KEY_TRACK_ID](TvInputManager.md) The ID of the track. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SESSION_DATA_KEY_TRACK_TYPE](TvInputManager.md) The type of the track. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SESSION_DATA_KEY_TV_MESSAGE_TYPE](../android/media/tv/TvInputManager.md) The type of TV message. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SESSION_DATA_KEY_VIDEO_UNAVAILABLE_REASON](../android/media/tv/TvInputManager.md) The reason why the video became unavailable. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SESSION_DATA_TYPE_AD_BUFFER_CONSUMED](../android/media/tv/TvInputManager.md) Notifies the advertisement buffer is consumed. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SESSION_DATA_KEY_TV_MESSAGE_TYPE](TvInputManager.md) The type of TV message. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SESSION_DATA_KEY_VIDEO_UNAVAILABLE_REASON](TvInputManager.md) The reason why the video became unavailable. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SESSION_DATA_TYPE_AD_BUFFER_CONSUMED](TvInputManager.md) Notifies the advertisement buffer is consumed. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SESSION_DATA_TYPE_AD_RESPONSE](../android/media/tv/TvInputManager.md) Notifies response for advertisement. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SESSION_DATA_TYPE_BROADCAST_INFO_RESPONSE](../android/media/tv/TvInputManager.md) Notifies response for broadcast info. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SESSION_DATA_TYPE_TRACKS_CHANGED](../android/media/tv/TvInputManager.md) Sends the list of all audio/video/subtitle tracks. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SESSION_DATA_TYPE_AD_RESPONSE](TvInputManager.md) Notifies response for advertisement. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SESSION_DATA_TYPE_BROADCAST_INFO_RESPONSE](TvInputManager.md) Notifies response for broadcast info. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SESSION_DATA_TYPE_TRACKS_CHANGED](TvInputManager.md) Sends the list of all audio/video/subtitle tracks. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SESSION_DATA_TYPE_TRACK_SELECTED](../android/media/tv/TvInputManager.md) Sends the type and ID of a selected track. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SESSION_DATA_TYPE_TUNED](../android/media/tv/TvInputManager.md) Informs the application that the session has been tuned to the given channel. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SESSION_DATA_TYPE_TV_MESSAGE](../android/media/tv/TvInputManager.md) Sends the TV message. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SESSION_DATA_TYPE_TRACK_SELECTED](TvInputManager.md) Sends the type and ID of a selected track. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SESSION_DATA_TYPE_TUNED](TvInputManager.md) Informs the application that the session has been tuned to the given channel. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SESSION_DATA_TYPE_TV_MESSAGE](TvInputManager.md) Sends the TV message. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SESSION_DATA_TYPE_VIDEO_AVAILABLE](../android/media/tv/TvInputManager.md) Informs the application that the video is now available for watching. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SESSION_DATA_TYPE_VIDEO_UNAVAILABLE](../android/media/tv/TvInputManager.md) Informs the application that the video became unavailable for some reason. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIGNAL_STRENGTH_LOST](../android/media/tv/TvInputManager.md) Signal lost. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SESSION_DATA_TYPE_VIDEO_AVAILABLE](TvInputManager.md) Informs the application that the video is now available for watching. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SESSION_DATA_TYPE_VIDEO_UNAVAILABLE](TvInputManager.md) Informs the application that the video became unavailable for some reason. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIGNAL_STRENGTH_LOST](TvInputManager.md) Signal lost. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIGNAL_STRENGTH_STRONG](../android/media/tv/TvInputManager.md) Strong signal. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIGNAL_STRENGTH_WEAK](../android/media/tv/TvInputManager.md) Weak signal. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [TIME_SHIFT_INVALID_TIME](../android/media/tv/TvInputManager.md) Value returned by [TvInputService.Session.onTimeShiftGetCurrentPosition()](../android/media/tv/TvInputService.Session.md))and [TvInputService.Session.onTimeShiftGetStartPosition()](../android/media/tv/TvInputService.Session.md))when time shifting has not yet started. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIGNAL_STRENGTH_STRONG](TvInputManager.md) Strong signal. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIGNAL_STRENGTH_WEAK](TvInputManager.md) Weak signal. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [TIME_SHIFT_INVALID_TIME](TvInputManager.md) Value returned by [TvInputService.Session.onTimeShiftGetCurrentPosition()](../android/media/tv/TvInputService.Session.md))and [TvInputService.Session.onTimeShiftGetStartPosition()](../android/media/tv/TvInputService.Session.md))when time shifting has not yet started. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIME_SHIFT_MODE_AUTO](../android/media/tv/TvInputManager.md) Time shift mode: auto. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIME_SHIFT_MODE_LOCAL](../android/media/tv/TvInputManager.md) Time shift mode: local. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIME_SHIFT_MODE_NETWORK](../android/media/tv/TvInputManager.md) Time shift mode: network. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIME_SHIFT_MODE_AUTO](TvInputManager.md) Time shift mode: auto. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIME_SHIFT_MODE_LOCAL](TvInputManager.md) Time shift mode: local. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIME_SHIFT_MODE_NETWORK](TvInputManager.md) Time shift mode: network. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIME_SHIFT_MODE_OFF](../android/media/tv/TvInputManager.md) Time shift mode: off. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIME_SHIFT_STATUS_AVAILABLE](../android/media/tv/TvInputManager.md) Status for [TvInputService.Session.notifyTimeShiftStatusChanged(int)](../android/media/tv/TvInputService.Session.md))and [TvView.TvInputCallback.onTimeShiftStatusChanged(String, int)](../android/media/tv/TvView.TvInputCallback.md)): Time shifting is currently available. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIME_SHIFT_STATUS_UNAVAILABLE](../android/media/tv/TvInputManager.md) Status for [TvInputService.Session.notifyTimeShiftStatusChanged(int)](../android/media/tv/TvInputService.Session.md))and [TvView.TvInputCallback.onTimeShiftStatusChanged(String, int)](../android/media/tv/TvView.TvInputCallback.md)): Time shifting is currently unavailable but might work again later. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIME_SHIFT_MODE_OFF](TvInputManager.md) Time shift mode: off. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIME_SHIFT_STATUS_AVAILABLE](TvInputManager.md) Status for [TvInputService.Session.notifyTimeShiftStatusChanged(int)](../android/media/tv/TvInputService.Session.md))and [TvView.TvInputCallback.onTimeShiftStatusChanged(String, int)](../android/media/tv/TvView.TvInputCallback.md)): Time shifting is currently available. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIME_SHIFT_STATUS_UNAVAILABLE](TvInputManager.md) Status for [TvInputService.Session.notifyTimeShiftStatusChanged(int)](../android/media/tv/TvInputService.Session.md))and [TvView.TvInputCallback.onTimeShiftStatusChanged(String, int)](../android/media/tv/TvView.TvInputCallback.md)): Time shifting is currently unavailable but might work again later. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIME_SHIFT_STATUS_UNKNOWN](../android/media/tv/TvInputManager.md) Status for [TvInputService.Session.notifyTimeShiftStatusChanged(int)](../android/media/tv/TvInputService.Session.md))and [TvView.TvInputCallback.onTimeShiftStatusChanged(String, int)](../android/media/tv/TvView.TvInputCallback.md)): Unknown status. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIME_SHIFT_STATUS_UNSUPPORTED](../android/media/tv/TvInputManager.md) Status for [TvInputService.Session.notifyTimeShiftStatusChanged(int)](../android/media/tv/TvInputService.Session.md))and [TvView.TvInputCallback.onTimeShiftStatusChanged(String, int)](../android/media/tv/TvView.TvInputCallback.md)): The current TV input does not support time shifting. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [TV_MESSAGE_GROUP_ID_NONE](../android/media/tv/TvInputManager.md) This value for [TV_MESSAGE_KEY_GROUP_ID](../android/media/tv/TvInputManager.md) denotes that the message doesn't belong to any group. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIME_SHIFT_STATUS_UNKNOWN](TvInputManager.md) Status for [TvInputService.Session.notifyTimeShiftStatusChanged(int)](../android/media/tv/TvInputService.Session.md))and [TvView.TvInputCallback.onTimeShiftStatusChanged(String, int)](../android/media/tv/TvView.TvInputCallback.md)): Unknown status. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIME_SHIFT_STATUS_UNSUPPORTED](TvInputManager.md) Status for [TvInputService.Session.notifyTimeShiftStatusChanged(int)](../android/media/tv/TvInputService.Session.md))and [TvView.TvInputCallback.onTimeShiftStatusChanged(String, int)](../android/media/tv/TvView.TvInputCallback.md)): The current TV input does not support time shifting. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [TV_MESSAGE_GROUP_ID_NONE](TvInputManager.md) This value for [TV_MESSAGE_KEY_GROUP_ID](TvInputManager.md) denotes that the message doesn't belong to any group. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TV_MESSAGE_KEY_GROUP_ID](../android/media/tv/TvInputManager.md) This constant is used as a [Bundle](../android/os/Bundle.md) key for TV messages. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TV_MESSAGE_KEY_RAW_DATA](../android/media/tv/TvInputManager.md) This constant is used as a [Bundle](../android/os/Bundle.md) key for TV messages. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TV_MESSAGE_KEY_STREAM_ID](../android/media/tv/TvInputManager.md) This constant is used as a [Bundle](../android/os/Bundle.md) key for TV messages. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TV_MESSAGE_KEY_GROUP_ID](TvInputManager.md) This constant is used as a [Bundle](../android.os/Bundle.md) key for TV messages. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TV_MESSAGE_KEY_RAW_DATA](TvInputManager.md) This constant is used as a [Bundle](../android.os/Bundle.md) key for TV messages. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TV_MESSAGE_KEY_STREAM_ID](TvInputManager.md) This constant is used as a [Bundle](../android.os/Bundle.md) key for TV messages. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TV_MESSAGE_KEY_SUBTYPE](../android/media/tv/TvInputManager.md) This constant is used as a [Bundle](../android/os/Bundle.md) key for TV messages. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TV_MESSAGE_SUBTYPE_CC_608E](../android/media/tv/TvInputManager.md) This is a subtype for TV messages that can be potentially found as a value at [TV_MESSAGE_KEY_SUBTYPE](../android/media/tv/TvInputManager.md). |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TV_MESSAGE_SUBTYPE_WATERMARKING_A335](../android/media/tv/TvInputManager.md) This is a subtype for TV messages that can be potentially found as a value at [TV_MESSAGE_KEY_SUBTYPE](../android/media/tv/TvInputManager.md). |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TV_MESSAGE_KEY_SUBTYPE](TvInputManager.md) This constant is used as a [Bundle](../android.os/Bundle.md) key for TV messages. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TV_MESSAGE_SUBTYPE_CC_608E](TvInputManager.md) This is a subtype for TV messages that can be potentially found as a value at [TV_MESSAGE_KEY_SUBTYPE](TvInputManager.md). |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TV_MESSAGE_SUBTYPE_WATERMARKING_A335](TvInputManager.md) This is a subtype for TV messages that can be potentially found as a value at [TV_MESSAGE_KEY_SUBTYPE](TvInputManager.md). |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TV_MESSAGE_TYPE_CLOSED_CAPTION](../android/media/tv/TvInputManager.md) Indicates that this TV message contains Closed Captioning data |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TV_MESSAGE_TYPE_OTHER](../android/media/tv/TvInputManager.md) Indicates that this TV message contains other data |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TV_MESSAGE_TYPE_WATERMARK](../android/media/tv/TvInputManager.md) Indicates that this TV message contains watermarking data |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TV_MESSAGE_TYPE_CLOSED_CAPTION](TvInputManager.md) Indicates that this TV message contains Closed Captioning data |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TV_MESSAGE_TYPE_OTHER](TvInputManager.md) Indicates that this TV message contains other data |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TV_MESSAGE_TYPE_WATERMARK](TvInputManager.md) Indicates that this TV message contains watermarking data |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VIDEO_UNAVAILABLE_REASON_AUDIO_ONLY](../android/media/tv/TvInputManager.md) Reason for [TvInputService.Session.notifyVideoUnavailable(int)](../android/media/tv/TvInputService.Session.md))and [TvView.TvInputCallback.onVideoUnavailable(String, int)](../android/media/tv/TvView.TvInputCallback.md)): Video is unavailable because the current TV program is audio-only. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VIDEO_UNAVAILABLE_REASON_BUFFERING](../android/media/tv/TvInputManager.md) Reason for [TvInputService.Session.notifyVideoUnavailable(int)](../android/media/tv/TvInputService.Session.md))and [TvView.TvInputCallback.onVideoUnavailable(String, int)](../android/media/tv/TvView.TvInputCallback.md)): Video is unavailable because the corresponding TV input has stopped playback temporarily to buffer more data. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VIDEO_UNAVAILABLE_REASON_CAS_BLACKOUT](../android/media/tv/TvInputManager.md) Reason for [TvInputService.Session.notifyVideoUnavailable(int)](../android/media/tv/TvInputService.Session.md))and [TvView.TvInputCallback.onVideoUnavailable(String, int)](../android/media/tv/TvView.TvInputCallback.md)): Video is unavailable because of a geographical blackout. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VIDEO_UNAVAILABLE_REASON_AUDIO_ONLY](TvInputManager.md) Reason for [TvInputService.Session.notifyVideoUnavailable(int)](../android/media/tv/TvInputService.Session.md))and [TvView.TvInputCallback.onVideoUnavailable(String, int)](../android/media/tv/TvView.TvInputCallback.md)): Video is unavailable because the current TV program is audio-only. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VIDEO_UNAVAILABLE_REASON_BUFFERING](TvInputManager.md) Reason for [TvInputService.Session.notifyVideoUnavailable(int)](../android/media/tv/TvInputService.Session.md))and [TvView.TvInputCallback.onVideoUnavailable(String, int)](../android/media/tv/TvView.TvInputCallback.md)): Video is unavailable because the corresponding TV input has stopped playback temporarily to buffer more data. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VIDEO_UNAVAILABLE_REASON_CAS_BLACKOUT](TvInputManager.md) Reason for [TvInputService.Session.notifyVideoUnavailable(int)](../android/media/tv/TvInputService.Session.md))and [TvView.TvInputCallback.onVideoUnavailable(String, int)](../android/media/tv/TvView.TvInputCallback.md)): Video is unavailable because of a geographical blackout. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VIDEO_UNAVAILABLE_REASON_CAS_CARD_INVALID](../android/media/tv/TvInputManager.md) Reason for [TvInputService.Session.notifyVideoUnavailable(int)](../android/media/tv/TvInputService.Session.md))and [TvView.TvInputCallback.onVideoUnavailable(String, int)](../android/media/tv/TvView.TvInputCallback.md)): Video is unavailable because smart card is invalid. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VIDEO_UNAVAILABLE_REASON_CAS_CARD_MUTE](../android/media/tv/TvInputManager.md) Reason for [TvInputService.Session.notifyVideoUnavailable(int)](../android/media/tv/TvInputService.Session.md))and [TvView.TvInputCallback.onVideoUnavailable(String, int)](../android/media/tv/TvView.TvInputCallback.md)): Video is unavailable because smart card is muted. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VIDEO_UNAVAILABLE_REASON_CAS_INSUFFICIENT_OUTPUT_PROTECTION](../android/media/tv/TvInputManager.md) Reason for [TvInputService.Session.notifyVideoUnavailable(int)](../android/media/tv/TvInputService.Session.md))and [TvView.TvInputCallback.onVideoUnavailable(String, int)](../android/media/tv/TvView.TvInputCallback.md)): Video is unavailable because the output protection level enabled on the device is not sufficient to meet the requirements in the license policy. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VIDEO_UNAVAILABLE_REASON_CAS_CARD_INVALID](TvInputManager.md) Reason for [TvInputService.Session.notifyVideoUnavailable(int)](../android/media/tv/TvInputService.Session.md))and [TvView.TvInputCallback.onVideoUnavailable(String, int)](../android/media/tv/TvView.TvInputCallback.md)): Video is unavailable because smart card is invalid. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VIDEO_UNAVAILABLE_REASON_CAS_CARD_MUTE](TvInputManager.md) Reason for [TvInputService.Session.notifyVideoUnavailable(int)](../android/media/tv/TvInputService.Session.md))and [TvView.TvInputCallback.onVideoUnavailable(String, int)](../android/media/tv/TvView.TvInputCallback.md)): Video is unavailable because smart card is muted. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VIDEO_UNAVAILABLE_REASON_CAS_INSUFFICIENT_OUTPUT_PROTECTION](TvInputManager.md) Reason for [TvInputService.Session.notifyVideoUnavailable(int)](../android/media/tv/TvInputService.Session.md))and [TvView.TvInputCallback.onVideoUnavailable(String, int)](../android/media/tv/TvView.TvInputCallback.md)): Video is unavailable because the output protection level enabled on the device is not sufficient to meet the requirements in the license policy. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VIDEO_UNAVAILABLE_REASON_CAS_LICENSE_EXPIRED](../android/media/tv/TvInputManager.md) Reason for [TvInputService.Session.notifyVideoUnavailable(int)](../android/media/tv/TvInputService.Session.md))and [TvView.TvInputCallback.onVideoUnavailable(String, int)](../android/media/tv/TvView.TvInputCallback.md)): Video is unavailable because Using a license in whhich the keys have expired. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VIDEO_UNAVAILABLE_REASON_CAS_NEED_ACTIVATION](../android/media/tv/TvInputManager.md) Reason for [TvInputService.Session.notifyVideoUnavailable(int)](../android/media/tv/TvInputService.Session.md))and [TvView.TvInputCallback.onVideoUnavailable(String, int)](../android/media/tv/TvView.TvInputCallback.md)): Video is unavailable because the device need be activated. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VIDEO_UNAVAILABLE_REASON_CAS_NEED_PAIRING](../android/media/tv/TvInputManager.md) Reason for [TvInputService.Session.notifyVideoUnavailable(int)](../android/media/tv/TvInputService.Session.md))and [TvView.TvInputCallback.onVideoUnavailable(String, int)](../android/media/tv/TvView.TvInputCallback.md)): Video is unavailable because the device need be paired. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VIDEO_UNAVAILABLE_REASON_CAS_LICENSE_EXPIRED](TvInputManager.md) Reason for [TvInputService.Session.notifyVideoUnavailable(int)](../android/media/tv/TvInputService.Session.md))and [TvView.TvInputCallback.onVideoUnavailable(String, int)](../android/media/tv/TvView.TvInputCallback.md)): Video is unavailable because Using a license in whhich the keys have expired. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VIDEO_UNAVAILABLE_REASON_CAS_NEED_ACTIVATION](TvInputManager.md) Reason for [TvInputService.Session.notifyVideoUnavailable(int)](../android/media/tv/TvInputService.Session.md))and [TvView.TvInputCallback.onVideoUnavailable(String, int)](../android/media/tv/TvView.TvInputCallback.md)): Video is unavailable because the device need be activated. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VIDEO_UNAVAILABLE_REASON_CAS_NEED_PAIRING](TvInputManager.md) Reason for [TvInputService.Session.notifyVideoUnavailable(int)](../android/media/tv/TvInputService.Session.md))and [TvView.TvInputCallback.onVideoUnavailable(String, int)](../android/media/tv/TvView.TvInputCallback.md)): Video is unavailable because the device need be paired. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VIDEO_UNAVAILABLE_REASON_CAS_NO_CARD](../android/media/tv/TvInputManager.md) Reason for [TvInputService.Session.notifyVideoUnavailable(int)](../android/media/tv/TvInputService.Session.md))and [TvView.TvInputCallback.onVideoUnavailable(String, int)](../android/media/tv/TvView.TvInputCallback.md)): Video is unavailable because smart card is missed. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VIDEO_UNAVAILABLE_REASON_CAS_PVR_RECORDING_NOT_ALLOWED](../android/media/tv/TvInputManager.md) Reason for [TvInputService.Session.notifyVideoUnavailable(int)](../android/media/tv/TvInputService.Session.md))and [TvView.TvInputCallback.onVideoUnavailable(String, int)](../android/media/tv/TvView.TvInputCallback.md)): Video is unavailable because the PVR record is not allowed by the license policy. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VIDEO_UNAVAILABLE_REASON_CAS_REBOOTING](../android/media/tv/TvInputManager.md) Reason for [TvInputService.Session.notifyVideoUnavailable(int)](../android/media/tv/TvInputService.Session.md))and [TvView.TvInputCallback.onVideoUnavailable(String, int)](../android/media/tv/TvView.TvInputCallback.md)): Video is unavailable because CAS system is rebooting. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VIDEO_UNAVAILABLE_REASON_CAS_NO_CARD](TvInputManager.md) Reason for [TvInputService.Session.notifyVideoUnavailable(int)](../android/media/tv/TvInputService.Session.md))and [TvView.TvInputCallback.onVideoUnavailable(String, int)](../android/media/tv/TvView.TvInputCallback.md)): Video is unavailable because smart card is missed. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VIDEO_UNAVAILABLE_REASON_CAS_PVR_RECORDING_NOT_ALLOWED](TvInputManager.md) Reason for [TvInputService.Session.notifyVideoUnavailable(int)](../android/media/tv/TvInputService.Session.md))and [TvView.TvInputCallback.onVideoUnavailable(String, int)](../android/media/tv/TvView.TvInputCallback.md)): Video is unavailable because the PVR record is not allowed by the license policy. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VIDEO_UNAVAILABLE_REASON_CAS_REBOOTING](TvInputManager.md) Reason for [TvInputService.Session.notifyVideoUnavailable(int)](../android/media/tv/TvInputService.Session.md))and [TvView.TvInputCallback.onVideoUnavailable(String, int)](../android/media/tv/TvView.TvInputCallback.md)): Video is unavailable because CAS system is rebooting. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VIDEO_UNAVAILABLE_REASON_CAS_UNKNOWN](../android/media/tv/TvInputManager.md) Reason for [TvInputService.Session.notifyVideoUnavailable(int)](../android/media/tv/TvInputService.Session.md))and [TvView.TvInputCallback.onVideoUnavailable(String, int)](../android/media/tv/TvView.TvInputCallback.md)): Video is unavailable because of unknown CAS error. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VIDEO_UNAVAILABLE_REASON_INSUFFICIENT_RESOURCE](../android/media/tv/TvInputManager.md) Reason for [TvInputService.Session.notifyVideoUnavailable(int)](../android/media/tv/TvInputService.Session.md))and [TvView.TvInputCallback.onVideoUnavailable(String, int)](../android/media/tv/TvView.TvInputCallback.md)): Video is unavailable because the resource is not enough to meet requirement. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VIDEO_UNAVAILABLE_REASON_NOT_CONNECTED](../android/media/tv/TvInputManager.md) Reason for [TvInputService.Session.notifyVideoUnavailable(int)](../android/media/tv/TvInputService.Session.md))and [TvView.TvInputCallback.onVideoUnavailable(String, int)](../android/media/tv/TvView.TvInputCallback.md)): Video is unavailable because the source is not physically connected, for example the HDMI cable is not connected. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VIDEO_UNAVAILABLE_REASON_CAS_UNKNOWN](TvInputManager.md) Reason for [TvInputService.Session.notifyVideoUnavailable(int)](../android/media/tv/TvInputService.Session.md))and [TvView.TvInputCallback.onVideoUnavailable(String, int)](../android/media/tv/TvView.TvInputCallback.md)): Video is unavailable because of unknown CAS error. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VIDEO_UNAVAILABLE_REASON_INSUFFICIENT_RESOURCE](TvInputManager.md) Reason for [TvInputService.Session.notifyVideoUnavailable(int)](../android/media/tv/TvInputService.Session.md))and [TvView.TvInputCallback.onVideoUnavailable(String, int)](../android/media/tv/TvView.TvInputCallback.md)): Video is unavailable because the resource is not enough to meet requirement. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VIDEO_UNAVAILABLE_REASON_NOT_CONNECTED](TvInputManager.md) Reason for [TvInputService.Session.notifyVideoUnavailable(int)](../android/media/tv/TvInputService.Session.md))and [TvView.TvInputCallback.onVideoUnavailable(String, int)](../android/media/tv/TvView.TvInputCallback.md)): Video is unavailable because the source is not physically connected, for example the HDMI cable is not connected. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VIDEO_UNAVAILABLE_REASON_STOPPED](../android/media/tv/TvInputManager.md) Reason for [TvInputService.Session.notifyVideoUnavailable(int)](../android/media/tv/TvInputService.Session.md))and [TvView.TvInputCallback.onVideoUnavailable(String, int)](../android/media/tv/TvView.TvInputCallback.md)): Video is unavailable because it has been stopped by [TvView.stopPlayback(int)](../android/media/tv/TvView.md)). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VIDEO_UNAVAILABLE_REASON_TUNING](../android/media/tv/TvInputManager.md) Reason for [TvInputService.Session.notifyVideoUnavailable(int)](../android/media/tv/TvInputService.Session.md))and [TvView.TvInputCallback.onVideoUnavailable(String, int)](../android/media/tv/TvView.TvInputCallback.md)): Video is unavailable because the corresponding TV input is in the middle of tuning to a new channel. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VIDEO_UNAVAILABLE_REASON_UNKNOWN](../android/media/tv/TvInputManager.md) Reason for [TvInputService.Session.notifyVideoUnavailable(int)](../android/media/tv/TvInputService.Session.md))and [TvView.TvInputCallback.onVideoUnavailable(String, int)](../android/media/tv/TvView.TvInputCallback.md)): Video is unavailable due to an unspecified error. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VIDEO_UNAVAILABLE_REASON_STOPPED](TvInputManager.md) Reason for [TvInputService.Session.notifyVideoUnavailable(int)](../android/media/tv/TvInputService.Session.md))and [TvView.TvInputCallback.onVideoUnavailable(String, int)](../android/media/tv/TvView.TvInputCallback.md)): Video is unavailable because it has been stopped by [TvView.stopPlayback(int)](TvView.md)). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VIDEO_UNAVAILABLE_REASON_TUNING](TvInputManager.md) Reason for [TvInputService.Session.notifyVideoUnavailable(int)](../android/media/tv/TvInputService.Session.md))and [TvView.TvInputCallback.onVideoUnavailable(String, int)](../android/media/tv/TvView.TvInputCallback.md)): Video is unavailable because the corresponding TV input is in the middle of tuning to a new channel. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VIDEO_UNAVAILABLE_REASON_UNKNOWN](TvInputManager.md) Reason for [TvInputService.Session.notifyVideoUnavailable(int)](../android/media/tv/TvInputService.Session.md))and [TvView.TvInputCallback.onVideoUnavailable(String, int)](../android/media/tv/TvView.TvInputCallback.md)): Video is unavailable due to an unspecified error. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VIDEO_UNAVAILABLE_REASON_WEAK_SIGNAL](../android/media/tv/TvInputManager.md) Reason for [TvInputService.Session.notifyVideoUnavailable(int)](../android/media/tv/TvInputService.Session.md))and [TvView.TvInputCallback.onVideoUnavailable(String, int)](../android/media/tv/TvView.TvInputCallback.md)): Video is unavailable due to weak TV signal. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VIDEO_UNAVAILABLE_REASON_WEAK_SIGNAL](TvInputManager.md) Reason for [TvInputService.Session.notifyVideoUnavailable(int)](../android/media/tv/TvInputService.Session.md))and [TvView.TvInputCallback.onVideoUnavailable(String, int)](../android/media/tv/TvView.TvInputCallback.md)): Video is unavailable due to weak TV signal. |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [TvContentRating](../android/media/tv/TvContentRating.md)!\>! | [getBlockedRatings](../android/media/tv/TvInputManager.md))`()` Returns the list of blocked content ratings. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInputState](../android/media/tv/TvInputManager.md))`(`inputId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns the state of a given TV input. |
-| [TvInputInfo](../android/media/tv/TvInputInfo.md)? | [getTvInputInfo](../android/media/tv/TvInputManager.md))`(`inputId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns the [TvInputInfo](../android/media/tv/TvInputInfo.md) for a given TV input. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [TvContentRating](TvContentRating.md)!\>! | [getBlockedRatings](TvInputManager.md))`()` Returns the list of blocked content ratings. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInputState](TvInputManager.md))`(`inputId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns the state of a given TV input. |
+| [TvInputInfo](TvInputInfo.md)? | [getTvInputInfo](TvInputManager.md))`(`inputId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns the [TvInputInfo](TvInputInfo.md) for a given TV input. |
 | --- | --- |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [TvInputInfo](../android/media/tv/TvInputInfo.md)!\>! | [getTvInputList](../android/media/tv/TvInputManager.md))`()` Returns the complete list of TV inputs on the system. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isParentalControlsEnabled](../android/media/tv/TvInputManager.md))`()` Returns the user's parental controls enabled state. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRatingBlocked](../android/media/tv/TvInputManager.md))`(`rating:` ` [TvContentRating](../android/media/tv/TvContentRating.md)`)` Checks whether a given TV content rating is blocked by the user. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [TvInputInfo](TvInputInfo.md)!\>! | [getTvInputList](TvInputManager.md))`()` Returns the complete list of TV inputs on the system. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isParentalControlsEnabled](TvInputManager.md))`()` Returns the user's parental controls enabled state. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRatingBlocked](TvInputManager.md))`(`rating:` ` [TvContentRating](TvContentRating.md)`)` Checks whether a given TV content rating is blocked by the user. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerCallback](../android/media/tv/TvInputManager.md))`(`callback:` ` [TvInputManager.TvInputCallback](../android/media/tv/TvInputManager.TvInputCallback.md)`, `handler:` ` [Handler](../android/os/Handler.md)`)` Registers a [TvInputCallback](../android/media/tv/TvInputManager.TvInputCallback.md). |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterCallback](../android/media/tv/TvInputManager.md))`(`callback:` ` [TvInputManager.TvInputCallback](../android/media/tv/TvInputManager.TvInputCallback.md)`)` Unregisters the existing [TvInputCallback](../android/media/tv/TvInputManager.TvInputCallback.md). |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateTvInputInfo](../android/media/tv/TvInputManager.md))`(`inputInfo:` ` [TvInputInfo](../android/media/tv/TvInputInfo.md)`)` Updates the`TvInputInfo`for an existing TV input. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerCallback](TvInputManager.md))`(`callback:` ` [TvInputManager.TvInputCallback](../android/media/tv/TvInputManager.TvInputCallback.md)`, `handler:` ` [Handler](../android.os/Handler.md)`)` Registers a [TvInputCallback](../android/media/tv/TvInputManager.TvInputCallback.md). |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterCallback](TvInputManager.md))`(`callback:` ` [TvInputManager.TvInputCallback](../android/media/tv/TvInputManager.TvInputCallback.md)`)` Unregisters the existing [TvInputCallback](../android/media/tv/TvInputManager.TvInputCallback.md). |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateTvInputInfo](TvInputManager.md))`(`inputInfo:` ` [TvInputInfo](TvInputInfo.md)`)` Updates the`TvInputInfo`for an existing TV input. |
 | --- | --- |
 
 ## Constants
@@ -162,7 +162,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val ACTION_BLOCKED_RATINGS_CHANGED: String
 ```
 
-Broadcast intent action when the user blocked content ratings change. For use with the [isRatingBlocked](../android/media/tv/TvInputManager.md)). 
+Broadcast intent action when the user blocked content ratings change. For use with the [isRatingBlocked](TvInputManager.md)). 
 
  Value: "android.media.tv.action.BLOCKED_RATINGS_CHANGED"
 
@@ -174,7 +174,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val ACTION_PARENTAL_CONTROLS_ENABLED_CHANGED: String
 ```
 
-Broadcast intent action when the parental controls enabled state changes. For use with the [isParentalControlsEnabled](../android/media/tv/TvInputManager.md)). 
+Broadcast intent action when the parental controls enabled state changes. For use with the [isParentalControlsEnabled](TvInputManager.md)). 
 
  Value: "android.media.tv.action.PARENTAL_CONTROLS_ENABLED_CHANGED"
 
@@ -212,7 +212,7 @@ In the above example, the`@xml/tv_content_rating_systems`resource refers to an X
 
 **See Also**
 
-- [android.media.tv.TvContentRating](../android/media/tv/TvContentRating.md) 
+- [android.media.tv.TvContentRating](TvContentRating.md) 
 
 ### ACTION_SETUP_INPUTS
 
@@ -222,7 +222,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val ACTION_SETUP_INPUTS: String
 ```
 
-Activity action to set up channel sources i.e. TV inputs of type [TvInputInfo.TYPE_TUNER](../android/media/tv/TvInputInfo.md). When invoked, the system will display an appropriate UI for the user to initiate the individual setup flow provided by [android.R.attr#setupActivity](../android/R.attr.md) of each TV input service. 
+Activity action to set up channel sources i.e. TV inputs of type [TvInputInfo.TYPE_TUNER](TvInputInfo.md). When invoked, the system will display an appropriate UI for the user to initiate the individual setup flow provided by [android.R.attr#setupActivity](../android/R.attr.md) of each TV input service. 
 
  Value: "android.media.tv.action.SETUP_INPUTS"
 
@@ -326,7 +326,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val INPUT_STATE_CONNECTED: Int
 ```
 
-State for [getInputState(java.lang.String)](../android/media/tv/TvInputManager.md))and [TvInputCallback.onInputStateChanged(String, int)](../android/media/tv/TvInputManager.TvInputCallback.md)): The input source is connected.
+State for [getInputState(java.lang.String)](TvInputManager.md))and [TvInputCallback.onInputStateChanged(String, int)](../android/media/tv/TvInputManager.TvInputCallback.md)): The input source is connected.
 
 This state indicates that a source device is connected to the input port and is in the normal operation mode. It is mostly relevant to hardware inputs such as HDMI input. Non-hardware inputs are considered connected all the time. 
 
@@ -340,7 +340,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val INPUT_STATE_CONNECTED_STANDBY: Int
 ```
 
-State for [getInputState(java.lang.String)](../android/media/tv/TvInputManager.md))and [TvInputCallback.onInputStateChanged(String, int)](../android/media/tv/TvInputManager.TvInputCallback.md)): The input source is connected but in standby mode.
+State for [getInputState(java.lang.String)](TvInputManager.md))and [TvInputCallback.onInputStateChanged(String, int)](../android/media/tv/TvInputManager.TvInputCallback.md)): The input source is connected but in standby mode.
 
 This state indicates that a source device is connected to the input port but is in standby or low power mode. It is mostly relevant to hardware inputs such as HDMI input and Component inputs. 
 
@@ -354,7 +354,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val INPUT_STATE_DISCONNECTED: Int
 ```
 
-State for [getInputState(java.lang.String)](../android/media/tv/TvInputManager.md))and [TvInputCallback.onInputStateChanged(String, int)](../android/media/tv/TvInputManager.TvInputCallback.md)): The input source is disconnected.
+State for [getInputState(java.lang.String)](TvInputManager.md))and [TvInputCallback.onInputStateChanged(String, int)](../android/media/tv/TvInputManager.TvInputCallback.md)): The input source is disconnected.
 
 This state indicates that a source device is disconnected from the input port. It is mostly relevant to hardware inputs such as HDMI input. 
 
@@ -368,7 +368,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val META_DATA_CONTENT_RATING_SYSTEMS: String
 ```
 
-Content rating systems metadata associated with [ACTION_QUERY_CONTENT_RATING_SYSTEMS](../android/media/tv/TvInputManager.md).
+Content rating systems metadata associated with [ACTION_QUERY_CONTENT_RATING_SYSTEMS](TvInputManager.md).
 
 Specifies the resource ID of an XML resource that describes the content rating systems that are provided by the application. 
 
@@ -418,7 +418,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 static val SESSION_DATA_KEY_AD_BUFFER: String
 ```
 
-An object of [AdBuffer](../android/media/tv/AdBuffer.md).
+An object of [AdBuffer](AdBuffer.md).
 
 Type: android.media.tv.AdBuffer 
 
@@ -436,7 +436,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 static val SESSION_DATA_KEY_AD_RESPONSE: String
 ```
 
-An object of [AdResponse](../android/media/tv/AdResponse.md).
+An object of [AdResponse](AdResponse.md).
 
 Type: android.media.tv.AdResponse 
 
@@ -454,7 +454,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 static val SESSION_DATA_KEY_BROADCAST_INFO_RESPONSE: String
 ```
 
-An object of [BroadcastInfoResponse](../android/media/tv/BroadcastInfoResponse.md).
+An object of [BroadcastInfoResponse](BroadcastInfoResponse.md).
 
 Type: android.media.tv.BroadcastInfoResponse 
 
@@ -516,7 +516,7 @@ Type: String
 
 **See Also**
 
-- [android.media.tv.TvTrackInfo#getId()](../android/media/tv/TvTrackInfo.md))
+- [android.media.tv.TvTrackInfo#getId()](TvTrackInfo.md))
 - [android.media.tv.TvInputService.Session#sendTvInputSessionData(String, Bundle)](../android/media/tv/TvInputService.Session.md)) 
 
 ### SESSION_DATA_KEY_TRACK_TYPE
@@ -529,7 +529,7 @@ static val SESSION_DATA_KEY_TRACK_TYPE: String
 
 The type of the track.
 
-One of [TvTrackInfo.TYPE_AUDIO](../android/media/tv/TvTrackInfo.md), [TvTrackInfo.TYPE_VIDEO](../android/media/tv/TvTrackInfo.md), [TvTrackInfo.TYPE_SUBTITLE](../android/media/tv/TvTrackInfo.md).
+One of [TvTrackInfo.TYPE_AUDIO](TvTrackInfo.md), [TvTrackInfo.TYPE_VIDEO](TvTrackInfo.md), [TvTrackInfo.TYPE_SUBTITLE](TvTrackInfo.md).
 
 Type: Integer 
 
@@ -537,7 +537,7 @@ Type: Integer
 
 **See Also**
 
-- [android.media.tv.TvTrackInfo#getType()](../android/media/tv/TvTrackInfo.md))
+- [android.media.tv.TvTrackInfo#getType()](TvTrackInfo.md))
 - [android.media.tv.TvInputService.Session#sendTvInputSessionData(String, Bundle)](../android/media/tv/TvInputService.Session.md)) 
 
 ### SESSION_DATA_KEY_TV_MESSAGE_TYPE
@@ -885,7 +885,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val TV_MESSAGE_GROUP_ID_NONE: Long
 ```
 
-This value for [TV_MESSAGE_KEY_GROUP_ID](../android/media/tv/TvInputManager.md) denotes that the message doesn't belong to any group. 
+This value for [TV_MESSAGE_KEY_GROUP_ID](TvInputManager.md) denotes that the message doesn't belong to any group. 
 
  Value: -1L
 
@@ -897,7 +897,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val TV_MESSAGE_KEY_GROUP_ID: String
 ```
 
-This constant is used as a [Bundle](../android/os/Bundle.md) key for TV messages. This is used to optionally identify messages that belong together, such as headers and bodies of the same event. For messages that do not have a group, this value should be [TV_MESSAGE_GROUP_ID_NONE](../android/media/tv/TvInputManager.md).
+This constant is used as a [Bundle](../android.os/Bundle.md) key for TV messages. This is used to optionally identify messages that belong together, such as headers and bodies of the same event. For messages that do not have a group, this value should be [TV_MESSAGE_GROUP_ID_NONE](TvInputManager.md).
 
 As -1 is a reserved value, -1 should not be used as a valid groupId.
 
@@ -913,7 +913,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val TV_MESSAGE_KEY_RAW_DATA: String
 ```
 
-This constant is used as a [Bundle](../android/os/Bundle.md) key for TV messages. The value of the key stores the raw data contained in this TV message. The format of this data is determined by the format defined by the subtype, found using the key at [TV_MESSAGE_KEY_SUBTYPE](../android/media/tv/TvInputManager.md). See [TV_MESSAGE_KEY_SUBTYPE](../android/media/tv/TvInputManager.md) for more information on how to parse this data.
+This constant is used as a [Bundle](../android.os/Bundle.md) key for TV messages. The value of the key stores the raw data contained in this TV message. The format of this data is determined by the format defined by the subtype, found using the key at [TV_MESSAGE_KEY_SUBTYPE](TvInputManager.md). See [TV_MESSAGE_KEY_SUBTYPE](TvInputManager.md) for more information on how to parse this data.
 
 Type: byte\[\] 
 
@@ -927,7 +927,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val TV_MESSAGE_KEY_STREAM_ID: String
 ```
 
-This constant is used as a [Bundle](../android/os/Bundle.md) key for TV messages. The value of the key identifies the stream on the TV input source for which the watermark event is relevant to.
+This constant is used as a [Bundle](../android.os/Bundle.md) key for TV messages. The value of the key identifies the stream on the TV input source for which the watermark event is relevant to.
 
 Type: String 
 
@@ -941,9 +941,9 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val TV_MESSAGE_KEY_SUBTYPE: String
 ```
 
-This constant is used as a [Bundle](../android/os/Bundle.md) key for TV messages. The value of the key identifies the subtype of the data, such as the format of the CC data. The format found at this key can then be used to identify how to parse the data at [TV_MESSAGE_KEY_RAW_DATA](../android/media/tv/TvInputManager.md).
+This constant is used as a [Bundle](../android.os/Bundle.md) key for TV messages. The value of the key identifies the subtype of the data, such as the format of the CC data. The format found at this key can then be used to identify how to parse the data at [TV_MESSAGE_KEY_RAW_DATA](TvInputManager.md).
 
-To parse the raw data based on the subtype, please refer to the official documentation of the concerning subtype. For example, for the subtype [TV_MESSAGE_SUBTYPE_WATERMARKING_A335](../android/media/tv/TvInputManager.md), the document for A/335 from the ATSC standard details how this data is formatted. Similarly, the subtype [TV_MESSAGE_SUBTYPE_CC_608E](../android/media/tv/TvInputManager.md) is documented in the ANSI/CTA standard for 608-E. These subtypes are examples of common formats for their respective uses and other subtypes may exist.
+To parse the raw data based on the subtype, please refer to the official documentation of the concerning subtype. For example, for the subtype [TV_MESSAGE_SUBTYPE_WATERMARKING_A335](TvInputManager.md), the document for A/335 from the ATSC standard details how this data is formatted. Similarly, the subtype [TV_MESSAGE_SUBTYPE_CC_608E](TvInputManager.md) is documented in the ANSI/CTA standard for 608-E. These subtypes are examples of common formats for their respective uses and other subtypes may exist.
 
 Type: String 
 
@@ -957,7 +957,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val TV_MESSAGE_SUBTYPE_CC_608E: String
 ```
 
-This is a subtype for TV messages that can be potentially found as a value at [TV_MESSAGE_KEY_SUBTYPE](../android/media/tv/TvInputManager.md). It identifies the subtype of the message as the CC format CTA 608-E. 
+This is a subtype for TV messages that can be potentially found as a value at [TV_MESSAGE_KEY_SUBTYPE](TvInputManager.md). It identifies the subtype of the message as the CC format CTA 608-E. 
 
  Value: "CTA 608-E"
 
@@ -969,7 +969,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val TV_MESSAGE_SUBTYPE_WATERMARKING_A335: String
 ```
 
-This is a subtype for TV messages that can be potentially found as a value at [TV_MESSAGE_KEY_SUBTYPE](../android/media/tv/TvInputManager.md). It identifies the subtype of the message as the watermarking format ATSC A/335. 
+This is a subtype for TV messages that can be potentially found as a value at [TV_MESSAGE_KEY_SUBTYPE](TvInputManager.md). It identifies the subtype of the message as the watermarking format ATSC A/335. 
 
  Value: "ATSC A/335"
 
@@ -1197,7 +1197,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 static val VIDEO_UNAVAILABLE_REASON_STOPPED: Int
 ```
 
-Reason for [TvInputService.Session.notifyVideoUnavailable(int)](../android/media/tv/TvInputService.Session.md))and [TvView.TvInputCallback.onVideoUnavailable(String, int)](../android/media/tv/TvView.TvInputCallback.md)): Video is unavailable because it has been stopped by [TvView.stopPlayback(int)](../android/media/tv/TvView.md)). 
+Reason for [TvInputService.Session.notifyVideoUnavailable(int)](../android/media/tv/TvInputService.Session.md))and [TvView.TvInputCallback.onVideoUnavailable(String, int)](../android/media/tv/TvView.TvInputCallback.md)): Video is unavailable because it has been stopped by [TvView.stopPlayback(int)](TvView.md)). 
 
  Value: 19
 
@@ -1251,7 +1251,7 @@ Returns the list of blocked content ratings.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [TvContentRating](../android/media/tv/TvContentRating.md)!>! | the list of content ratings blocked by the user. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [TvContentRating](TvContentRating.md)!>! | the list of content ratings blocked by the user. |
 
 ### getInputState
 
@@ -1265,9 +1265,9 @@ Returns the state of a given TV input.
 
 The state is one of the following:
 
-- [INPUT_STATE_CONNECTED](../android/media/tv/TvInputManager.md)
-- [INPUT_STATE_CONNECTED_STANDBY](../android/media/tv/TvInputManager.md)
-- [INPUT_STATE_DISCONNECTED](../android/media/tv/TvInputManager.md)
+- [INPUT_STATE_CONNECTED](TvInputManager.md)
+- [INPUT_STATE_CONNECTED_STANDBY](TvInputManager.md)
+- [INPUT_STATE_DISCONNECTED](TvInputManager.md)
 
 | Parameters ||
 |-----------|--------------------------------------------------------------------------------------------------------------------------------------|
@@ -1275,7 +1275,7 @@ The state is one of the following:
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.media.tv.TvInputManager#INPUT_STATE_CONNECTED](../android/media/tv/TvInputManager.md), [android.media.tv.TvInputManager#INPUT_STATE_CONNECTED_STANDBY](../android/media/tv/TvInputManager.md), or [android.media.tv.TvInputManager#INPUT_STATE_DISCONNECTED](../android/media/tv/TvInputManager.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.media.tv.TvInputManager#INPUT_STATE_CONNECTED](TvInputManager.md), [android.media.tv.TvInputManager#INPUT_STATE_CONNECTED_STANDBY](TvInputManager.md), or [android.media.tv.TvInputManager#INPUT_STATE_DISCONNECTED](TvInputManager.md) |
 
 | Exceptions ||
 |--------------------------------------|---------------------------|
@@ -1289,7 +1289,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 fun getTvInputInfo(inputId: String): TvInputInfo?
 ```
 
-Returns the [TvInputInfo](../android/media/tv/TvInputInfo.md) for a given TV input.
+Returns the [TvInputInfo](TvInputInfo.md) for a given TV input.
 
 | Parameters ||
 |-----------|--------------------------------------------------------------------------------------------------------------------------------------|
@@ -1297,7 +1297,7 @@ Returns the [TvInputInfo](../android/media/tv/TvInputInfo.md) for a given TV inp
 
 | Return ||
 |---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| [TvInputInfo](../android/media/tv/TvInputInfo.md)? | the [TvInputInfo](../android/media/tv/TvInputInfo.md) for a given TV input.`null`if not found. |
+| [TvInputInfo](TvInputInfo.md)? | the [TvInputInfo](TvInputInfo.md) for a given TV input.`null`if not found. |
 
 ### getTvInputList
 
@@ -1311,7 +1311,7 @@ Returns the complete list of TV inputs on the system.
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [TvInputInfo](../android/media/tv/TvInputInfo.md)!>! | List of [TvInputInfo](../android/media/tv/TvInputInfo.md) for each TV input that describes its meta information. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [TvInputInfo](TvInputInfo.md)!>! | List of [TvInputInfo](TvInputInfo.md) for each TV input that describes its meta information. |
 
 ### isParentalControlsEnabled
 
@@ -1339,7 +1339,7 @@ Checks whether a given TV content rating is blocked by the user.
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `rating` | [TvContentRating](../android/media/tv/TvContentRating.md):The TV content rating to check. Can be [TvContentRating.UNRATED](../android/media/tv/TvContentRating.md). This value cannot be`null`. |
+| `rating` | [TvContentRating](TvContentRating.md):The TV content rating to check. Can be [TvContentRating.UNRATED](TvContentRating.md). This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------------------------------------------------|
@@ -1361,7 +1361,7 @@ Registers a [TvInputCallback](../android/media/tv/TvInputManager.TvInputCallback
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `callback` | [TvInputManager.TvInputCallback](../android/media/tv/TvInputManager.TvInputCallback.md):A callback used to monitor status of the TV inputs. This value cannot be`null`. |
-| `handler` | [Handler](../android/os/Handler.md):A [Handler](../android/os/Handler.md) that the status change will be delivered to. This value cannot be`null`. |
+| `handler` | [Handler](../android.os/Handler.md):A [Handler](../android.os/Handler.md) that the status change will be delivered to. This value cannot be`null`. |
 
 ### unregisterCallback
 
@@ -1393,7 +1393,7 @@ Attempting to change information about a TV input that the calling package does 
 
 | Parameters ||
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `inputInfo` | [TvInputInfo](../android/media/tv/TvInputInfo.md):The`TvInputInfo`object that contains new information. This value cannot be`null`. |
+| `inputInfo` | [TvInputInfo](TvInputInfo.md):The`TvInputInfo`object that contains new information. This value cannot be`null`. |
 
 | Exceptions ||
 |--------------------------------------|---------------------------|

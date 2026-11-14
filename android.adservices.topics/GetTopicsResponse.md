@@ -5,7 +5,7 @@ Also in [Ad Services Extensions 4](https://developer.android.com/sdkExtensions)
 
 # GetTopicsResponse
 
-Kotlin| [Java](../android/adservices/topics/GetTopicsResponse.md) 
+Kotlin| [Java](GetTopicsResponse.md) 
 | --- | --- |
 
 ```
@@ -14,7 +14,7 @@ class GetTopicsResponse
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.adservices.topics.GetTopicsResponse](../android/adservices/topics/GetTopicsResponse.md) |
+| ↳ | [android.adservices.topics.GetTopicsResponse](GetTopicsResponse.md) |
 
 Represent the result from the getTopics API.
 
@@ -22,15 +22,15 @@ Represent the result from the getTopics API.
 
 | Nested classes ||
 |---|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](../android/adservices/topics/GetTopicsResponse.Builder.md) Builder for [GetTopicsResponse](../android/adservices/topics/GetTopicsResponse.md) objects. |
+| | [Builder](../android/adservices/topics/GetTopicsResponse.Builder.md) Builder for [GetTopicsResponse](GetTopicsResponse.md) objects. |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/adservices/topics/GetTopicsResponse.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [EncryptedTopic](../android/adservices/topics/EncryptedTopic.md)!\> | [getEncryptedTopics](../android/adservices/topics/GetTopicsResponse.md))`()` Returns a [List](../java/util/List.md) of [EncryptedTopic](../android/adservices/topics/EncryptedTopic.md) objects returned by getTopics API. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Topic](../android/adservices/topics/Topic.md)!\> | [getTopics](../android/adservices/topics/GetTopicsResponse.md))`()` Returns a [List](../java/util/List.md) of [Topic](../android/adservices/topics/Topic.md) objects returned by getTopics API. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](GetTopicsResponse.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [EncryptedTopic](EncryptedTopic.md)!\> | [getEncryptedTopics](GetTopicsResponse.md))`()` Returns a [List](../java.util/List.md) of [EncryptedTopic](EncryptedTopic.md) objects returned by getTopics API. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Topic](Topic.md)!\> | [getTopics](GetTopicsResponse.md))`()` Returns a [List](../java.util/List.md) of [Topic](Topic.md) objects returned by getTopics API. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/adservices/topics/GetTopicsResponse.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](GetTopicsResponse.md))`()` <br /> |
 
 ## Public methods
 
@@ -59,11 +59,11 @@ Also in [Ad Services Extensions 11](https://developer.android.com/sdkExtensions)
 fun getEncryptedTopics(): MutableList<EncryptedTopic!>
 ```
 
-Returns a [List](../java/util/List.md) of [EncryptedTopic](../android/adservices/topics/EncryptedTopic.md) objects returned by getTopics API.
+Returns a [List](../java.util/List.md) of [EncryptedTopic](EncryptedTopic.md) objects returned by getTopics API.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [EncryptedTopic](../android/adservices/topics/EncryptedTopic.md)!> | This value cannot be`null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [EncryptedTopic](EncryptedTopic.md)!> | This value cannot be`null`. |
 
 ### getTopics
 
@@ -74,11 +74,11 @@ Also in [Ad Services Extensions 4](https://developer.android.com/sdkExtensions)
 fun getTopics(): MutableList<Topic!>
 ```
 
-Returns a [List](../java/util/List.md) of [Topic](../android/adservices/topics/Topic.md) objects returned by getTopics API.
+Returns a [List](../java.util/List.md) of [Topic](Topic.md) objects returned by getTopics API.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Topic](../android/adservices/topics/Topic.md)!> | This value cannot be`null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Topic](Topic.md)!> | This value cannot be`null`. |
 
 ### hashCode
 

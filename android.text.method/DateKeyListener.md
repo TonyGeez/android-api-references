@@ -2,7 +2,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # DateKeyListener
 
-Kotlin | [Java](../android/text/method/DateKeyListener.md)
+Kotlin | [Java](DateKeyListener.md)
 | --- | --- |
 
 ```
@@ -11,11 +11,11 @@ open class DateKeyListener : NumberKeyListener
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.text.method.MetaKeyKeyListener](../android/text/method/MetaKeyKeyListener.md) ||||
-| | ↳ | [android.text.method.BaseKeyListener](../android/text/method/BaseKeyListener.md) |||
-| | | ↳ | [android.text.method.NumberKeyListener](../android/text/method/NumberKeyListener.md) ||
+| ↳ | [android.text.method.MetaKeyKeyListener](MetaKeyKeyListener.md) ||||
+| | ↳ | [android.text.method.BaseKeyListener](BaseKeyListener.md) |||
+| | | ↳ | [android.text.method.NumberKeyListener](NumberKeyListener.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.text.method.DateKeyListener](../android/text/method/DateKeyListener.md) |
+| | | | ↳ | [android.text.method.DateKeyListener](DateKeyListener.md) |
 
 For entering dates in a text field.
 
@@ -37,8 +37,8 @@ As for all implementations of `https://developer.android.com/reference/kotlin/an
 | Public methods ||
 |---|---|
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/text/method/DateKeyListener#getInputType()()` Return the type of text that this key listener is manipulating, as per `https://developer.android.com/reference/kotlin/android/text/InputType.html#`. |
-| open static [DateKeyListener](../android/text/method/DateKeyListener.md) | `https://developer.android.com/reference/kotlin/android/text/method/DateKeyListener#getInstance()()` <br /> |
-| open static [DateKeyListener](../android/text/method/DateKeyListener.md) | `https://developer.android.com/reference/kotlin/android/text/method/DateKeyListener#getInstance(java.util.Locale)(locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#?)` Returns an instance of DateKeyListener appropriate for the given locale. |
+| open static [DateKeyListener](DateKeyListener.md) | `https://developer.android.com/reference/kotlin/android/text/method/DateKeyListener#getInstance()()` <br /> |
+| open static [DateKeyListener](DateKeyListener.md) | `https://developer.android.com/reference/kotlin/android/text/method/DateKeyListener#getInstance(java.util.Locale)(locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#?)` Returns an instance of DateKeyListener appropriate for the given locale. |
 | --- | --- |
 
 | Protected methods ||
@@ -79,7 +79,7 @@ DateKeyListener(locale: Locale?)
 
 | Parameters ||
 |---|---|
-| `locale` | [Locale](../java/util/Locale.md)?: This value may be `null`. |
+| `locale` | [Locale](../java.util/Locale.md)?: This value may be `null`. |
 
 ## Public methods
 
@@ -124,7 +124,7 @@ Returns an instance of DateKeyListener appropriate for the given locale.
 
 | Parameters ||
 |---|---|
-| `locale` | [Locale](../java/util/Locale.md)?: This value may be `null`. |
+| `locale` | [Locale](../java.util/Locale.md)?: This value may be `null`. |
 
 | Return ||
 |---|---|

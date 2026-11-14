@@ -4,7 +4,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 
 # KeyProtection
 
-Kotlin| [Java](../android/security/keystore/KeyProtection.md) 
+Kotlin| [Java](KeyProtection.md) 
 | --- | --- |
 
 ```
@@ -13,15 +13,15 @@ class KeyProtection : KeyStore.ProtectionParameter
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.security.keystore.KeyProtection](../android/security/keystore/KeyProtection.md) |
+| ↳ | [android.security.keystore.KeyProtection](KeyProtection.md) |
 
 Specification of how a key or key pair is secured when imported into the [Android Keystore system](https://developer.android.com/training/articles/keystore.html). This class specifies authorized uses of the imported key, such as whether user authentication is required for using the key, what operations the key is authorized for (e.g., decryption, but not signing) with what parameters (e.g., only with a particular padding scheme or digest), and the key's validity start and end dates. Key use authorizations expressed in this class apply only to secret keys and private keys -- public keys can be used for any supported operations.
 
-To import a key or key pair into the Android Keystore, create an instance of this class using the [Builder](../android/security/keystore/KeyProtection.Builder.md) and pass the instance into [KeyStore.setEntry](../java/security/KeyStore.md))with the key or key pair being imported.
+To import a key or key pair into the Android Keystore, create an instance of this class using the [Builder](../android/security/keystore/KeyProtection.Builder.md) and pass the instance into [KeyStore.setEntry](../java.security/KeyStore.md))with the key or key pair being imported.
 
-To obtain the secret/symmetric or private key from the Android Keystore use [KeyStore.getKey(String, null)](../java/security/KeyStore.md))or [KeyStore.getEntry(String, null)](../java/security/KeyStore.md)). To obtain the public key from the Android Keystore use [java.security.KeyStore#getCertificate(String)](../java/security/KeyStore.md))and then [Certificate.getPublicKey()](../java/security/cert/Certificate.md)).
+To obtain the secret/symmetric or private key from the Android Keystore use [KeyStore.getKey(String, null)](../java.security/KeyStore.md))or [KeyStore.getEntry(String, null)](../java.security/KeyStore.md)). To obtain the public key from the Android Keystore use [java.security.KeyStore#getCertificate(String)](../java.security/KeyStore.md))and then [Certificate.getPublicKey()](../java.security.cert/Certificate.md)).
 
-To help obtain algorithm-specific public parameters of key pairs stored in the Android Keystore, its private keys implement [java.security.interfaces.ECKey](../java/security/interfaces/ECKey.md) or [java.security.interfaces.RSAKey](../java/security/interfaces/RSAKey.md) interfaces whereas its public keys implement [java.security.interfaces.ECPublicKey](../java/security/interfaces/ECPublicKey.md) or [java.security.interfaces.RSAPublicKey](../java/security/interfaces/RSAPublicKey.md) interfaces.
+To help obtain algorithm-specific public parameters of key pairs stored in the Android Keystore, its private keys implement [java.security.interfaces.ECKey](../java.security.interfaces/ECKey.md) or [java.security.interfaces.RSAKey](../java.security.interfaces/RSAKey.md) interfaces whereas its public keys implement [java.security.interfaces.ECPublicKey](../java.security.interfaces/ECPublicKey.md) or [java.security.interfaces.RSAPublicKey](../java.security.interfaces/RSAPublicKey.md) interfaces.
 
 NOTE: The key material of keys stored in the Android Keystore is not accessible.
 
@@ -44,7 +44,7 @@ A known bug in Android 6.0 (API Level 23) causes user authentication-related aut
 
 ### Example: AES key for encryption/decryption in GCM mode
 
-This example illustrates how to import an AES key into the Android KeyStore under alias`key1`authorized to be used only for encryption/decryption in GCM mode with no padding. The key must export its key material via [Key.getEncoded()](../java/security/Key.md))in`RAW`format. 
+This example illustrates how to import an AES key into the Android KeyStore under alias`key1`authorized to be used only for encryption/decryption in GCM mode with no padding. The key must export its key material via [Key.getEncoded()](../java.security/Key.md))in`RAW`format. 
 
 ```kotlin
 <code>SecretKey key = ...; // AES key
@@ -72,7 +72,7 @@ This example illustrates how to import an AES key into the Android KeyStore unde
 
 ### Example: HMAC key for generating MACs using SHA-512
 
-This example illustrates how to import an HMAC key into the Android KeyStore under alias`key1`authorized to be used only for generating MACs using SHA-512 digest. The key must export its key material via [Key.getEncoded()](../java/security/Key.md))in`RAW`format. 
+This example illustrates how to import an HMAC key into the Android KeyStore under alias`key1`authorized to be used only for generating MACs using SHA-512 digest. The key must export its key material via [Key.getEncoded()](../java.security/Key.md))in`RAW`format. 
 
 ```kotlin
 <code>SecretKey key = ...; // HMAC key of algorithm "HmacSHA512".
@@ -97,7 +97,7 @@ This example illustrates how to import an HMAC key into the Android KeyStore und
 
 ### Example: EC key pair for signing/verification using ECDSA
 
-This example illustrates how to import an EC key pair into the Android KeyStore under alias`key2`with the private key authorized to be used only for signing with SHA-256 or SHA-512 digests. The use of the public key is unrestricted. Both the private and the public key must export their key material via [Key.getEncoded()](../java/security/Key.md))in`PKCS#8`and`X.509`format respectively. 
+This example illustrates how to import an EC key pair into the Android KeyStore under alias`key2`with the private key authorized to be used only for signing with SHA-256 or SHA-512 digests. The use of the public key is unrestricted. Both the private and the public key must export their key material via [Key.getEncoded()](../java.security/Key.md))in`PKCS#8`and`X.509`format respectively. 
 
 ```kotlin
 <code>PrivateKey privateKey = ...;   // EC private key
@@ -127,7 +127,7 @@ This example illustrates how to import an EC key pair into the Android KeyStore 
 
 ### Example: RSA key pair for signing/verification using PKCS#1 padding
 
-This example illustrates how to import an RSA key pair into the Android KeyStore under alias`key2`with the private key authorized to be used only for signing using the PKCS#1 signature padding scheme with SHA-256 digest and only if the user has been authenticated within the last ten minutes. The use of the public key is unrestricted (see Known Issues). Both the private and the public key must export their key material via [Key.getEncoded()](../java/security/Key.md))in`PKCS#8`and`X.509`format respectively. 
+This example illustrates how to import an RSA key pair into the Android KeyStore under alias`key2`with the private key authorized to be used only for signing using the PKCS#1 signature padding scheme with SHA-256 digest and only if the user has been authenticated within the last ten minutes. The use of the public key is unrestricted (see Known Issues). Both the private and the public key must export their key material via [Key.getEncoded()](../java.security/Key.md))in`PKCS#8`and`X.509`format respectively. 
 
 ```kotlin
 <code>PrivateKey privateKey = ...;   // RSA private key
@@ -162,7 +162,7 @@ This example illustrates how to import an RSA key pair into the Android KeyStore
 
 ### Example: RSA key pair for encryption/decryption using PKCS#1 padding
 
-This example illustrates how to import an RSA key pair into the Android KeyStore under alias`key2`with the private key authorized to be used only for decryption using the PKCS#1 encryption padding scheme. The use of public key is unrestricted, thus permitting encryption using any padding schemes and digests. Both the private and the public key must export their key material via [Key.getEncoded()](../java/security/Key.md))in`PKCS#8`and`X.509`format respectively. 
+This example illustrates how to import an RSA key pair into the Android KeyStore under alias`key2`with the private key authorized to be used only for decryption using the PKCS#1 encryption padding scheme. The use of public key is unrestricted, thus permitting encryption using any padding schemes and digests. Both the private and the public key must export their key material via [Key.getEncoded()](../java.security/Key.md))in`PKCS#8`and`X.509`format respectively. 
 
 ```kotlin
 <code>PrivateKey privateKey = ...;   // RSA private key
@@ -192,37 +192,37 @@ This example illustrates how to import an RSA key pair into the Android KeyStore
 
 | Nested classes ||
 |---|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](../android/security/keystore/KeyProtection.Builder.md) Builder of [KeyProtection](../android/security/keystore/KeyProtection.md) instances. |
+| | [Builder](../android/security/keystore/KeyProtection.Builder.md) Builder of [KeyProtection](KeyProtection.md) instances. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getBlockModes](../android/security/keystore/KeyProtection.md))`()` Gets the set of block modes (e.g., |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getDigests](../android/security/keystore/KeyProtection.md))`()` Gets the set of digest algorithms (e.g., |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getEncryptionPaddings](../android/security/keystore/KeyProtection.md))`()` Gets the set of padding schemes (e.g., |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getBlockModes](KeyProtection.md))`()` Gets the set of block modes (e.g., |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getDigests](KeyProtection.md))`()` Gets the set of digest algorithms (e.g., |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getEncryptionPaddings](KeyProtection.md))`()` Gets the set of padding schemes (e.g., |
 | --- | --- |
-| [Date](../java/util/Date.md)? | [getKeyValidityForConsumptionEnd](../android/security/keystore/KeyProtection.md))`()` Gets the time instant after which the key is no long valid for decryption and verification. |
-| [Date](../java/util/Date.md)? | [getKeyValidityForOriginationEnd](../android/security/keystore/KeyProtection.md))`()` Gets the time instant after which the key is no long valid for encryption and signing. |
-| [Date](../java/util/Date.md)? | [getKeyValidityStart](../android/security/keystore/KeyProtection.md))`()` Gets the time instant before which the key is not yet valid. |
+| [Date](../java.util/Date.md)? | [getKeyValidityForConsumptionEnd](KeyProtection.md))`()` Gets the time instant after which the key is no long valid for decryption and verification. |
+| [Date](../java.util/Date.md)? | [getKeyValidityForOriginationEnd](KeyProtection.md))`()` Gets the time instant after which the key is no long valid for encryption and signing. |
+| [Date](../java.util/Date.md)? | [getKeyValidityStart](KeyProtection.md))`()` Gets the time instant before which the key is not yet valid. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxUsageCount](../android/security/keystore/KeyProtection.md))`()` Returns the maximum number of times the limited use key is allowed to be used or [KeyProperties.UNRESTRICTED_USAGE_COUNT](../android/security/keystore/KeyProperties.md) if there's no restriction on the number of times the key can be used. |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getMgf1Digests](../android/security/keystore/KeyProtection.md))`()` Returns the set of digests that can be used by the MGF1 mask generation function (e.g., |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPurposes](../android/security/keystore/KeyProtection.md))`()` Gets the set of purposes (e.g., encrypt, decrypt, sign) for which the key can be used. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxUsageCount](KeyProtection.md))`()` Returns the maximum number of times the limited use key is allowed to be used or [KeyProperties.UNRESTRICTED_USAGE_COUNT](KeyProperties.md) if there's no restriction on the number of times the key can be used. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getMgf1Digests](KeyProtection.md))`()` Returns the set of digests that can be used by the MGF1 mask generation function (e.g., |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPurposes](KeyProtection.md))`()` Gets the set of purposes (e.g., encrypt, decrypt, sign) for which the key can be used. |
 | --- | --- |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getSignaturePaddings](../android/security/keystore/KeyProtection.md))`()` Gets the set of padding schemes (e.g., |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getUserAuthenticationType](../android/security/keystore/KeyProtection.md))`()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getUserAuthenticationValidityDurationSeconds](../android/security/keystore/KeyProtection.md))`()` Gets the duration of time (seconds) for which this key is authorized to be used after the user is successfully authenticated. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getSignaturePaddings](KeyProtection.md))`()` Gets the set of padding schemes (e.g., |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getUserAuthenticationType](KeyProtection.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getUserAuthenticationValidityDurationSeconds](KeyProtection.md))`()` Gets the duration of time (seconds) for which this key is authorized to be used after the user is successfully authenticated. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDigestsSpecified](../android/security/keystore/KeyProtection.md))`()` Returns`true`if the set of digest algorithms with which the key can be used has been specified. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isInvalidatedByBiometricEnrollment](../android/security/keystore/KeyProtection.md))`()` Returns`true`if the key is irreversibly invalidated when a new biometric is enrolled or all enrolled biometrics are removed. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMgf1DigestsSpecified](../android/security/keystore/KeyProtection.md))`()` Returns`true`if the set of digests for the MGF1 mask generation function, with which the key can be used, has been specified. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDigestsSpecified](KeyProtection.md))`()` Returns`true`if the set of digest algorithms with which the key can be used has been specified. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isInvalidatedByBiometricEnrollment](KeyProtection.md))`()` Returns`true`if the key is irreversibly invalidated when a new biometric is enrolled or all enrolled biometrics are removed. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMgf1DigestsSpecified](KeyProtection.md))`()` Returns`true`if the set of digests for the MGF1 mask generation function, with which the key can be used, has been specified. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRandomizedEncryptionRequired](../android/security/keystore/KeyProtection.md))`()` Returns`true`if encryption using this key must be sufficiently randomized to produce different ciphertexts for the same plaintext every time. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isUnlockedDeviceRequired](../android/security/keystore/KeyProtection.md))`()` Returns`true`if the key is authorized to be used only while the device is unlocked. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isUserAuthenticationRequired](../android/security/keystore/KeyProtection.md))`()` Returns`true`if the key is authorized to be used only if the user has been authenticated. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRandomizedEncryptionRequired](KeyProtection.md))`()` Returns`true`if encryption using this key must be sufficiently randomized to produce different ciphertexts for the same plaintext every time. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isUnlockedDeviceRequired](KeyProtection.md))`()` Returns`true`if the key is authorized to be used only while the device is unlocked. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isUserAuthenticationRequired](KeyProtection.md))`()` Returns`true`if the key is authorized to be used only if the user has been authenticated. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isUserAuthenticationValidWhileOnBody](../android/security/keystore/KeyProtection.md))`()` Returns`true`if the key will be de-authorized when the device is removed from the user's body. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isUserConfirmationRequired](../android/security/keystore/KeyProtection.md))`()` Returns`true`if the key is authorized to be used only for messages confirmed by the user. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isUserPresenceRequired](../android/security/keystore/KeyProtection.md))`()` Returns`true`if the key is authorized to be used only if a test of user presence has been performed between the`Signature.initSign()`and`Signature.sign()`calls. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isUserAuthenticationValidWhileOnBody](KeyProtection.md))`()` Returns`true`if the key will be de-authorized when the device is removed from the user's body. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isUserConfirmationRequired](KeyProtection.md))`()` Returns`true`if the key is authorized to be used only for messages confirmed by the user. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isUserPresenceRequired](KeyProtection.md))`()` Returns`true`if the key is authorized to be used only if a test of user presence has been performed between the`Signature.initSign()`and`Signature.sign()`calls. |
 | --- | --- |
 
 ## Public methods
@@ -237,11 +237,11 @@ fun getBlockModes(): Array<String!>
 
 Gets the set of block modes (e.g.,`GCM`,`CBC`) with which the key can be used when encrypting/decrypting. Attempts to use the key with any other block modes will be rejected.
 
-See [KeyProperties](../android/security/keystore/KeyProperties.md).`BLOCK_MODE`constants.
+See [KeyProperties](KeyProperties.md).`BLOCK_MODE`constants.
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!> | This value cannot be`null`. Value is [android.security.keystore.KeyProperties#BLOCK_MODE_ECB](../android/security/keystore/KeyProperties.md), [android.security.keystore.KeyProperties#BLOCK_MODE_CBC](../android/security/keystore/KeyProperties.md), [android.security.keystore.KeyProperties#BLOCK_MODE_CTR](../android/security/keystore/KeyProperties.md), or [android.security.keystore.KeyProperties#BLOCK_MODE_GCM](../android/security/keystore/KeyProperties.md) |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!> | This value cannot be`null`. Value is [android.security.keystore.KeyProperties#BLOCK_MODE_ECB](KeyProperties.md), [android.security.keystore.KeyProperties#BLOCK_MODE_CBC](KeyProperties.md), [android.security.keystore.KeyProperties#BLOCK_MODE_CTR](KeyProperties.md), or [android.security.keystore.KeyProperties#BLOCK_MODE_GCM](KeyProperties.md) |
 
 ### getDigests
 
@@ -253,11 +253,11 @@ fun getDigests(): Array<String!>
 
 Gets the set of digest algorithms (e.g.,`SHA-256`,`SHA-384`) with which the key can be used.
 
-See [KeyProperties](../android/security/keystore/KeyProperties.md).`DIGEST`constants.
+See [KeyProperties](KeyProperties.md).`DIGEST`constants.
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!> | This value cannot be`null`. Value is [android.security.keystore.KeyProperties#DIGEST_NONE](../android/security/keystore/KeyProperties.md), [android.security.keystore.KeyProperties#DIGEST_MD5](../android/security/keystore/KeyProperties.md), [android.security.keystore.KeyProperties#DIGEST_SHA1](../android/security/keystore/KeyProperties.md), [android.security.keystore.KeyProperties#DIGEST_SHA224](../android/security/keystore/KeyProperties.md), [android.security.keystore.KeyProperties#DIGEST_SHA256](../android/security/keystore/KeyProperties.md), [android.security.keystore.KeyProperties#DIGEST_SHA384](../android/security/keystore/KeyProperties.md), or [android.security.keystore.KeyProperties#DIGEST_SHA512](../android/security/keystore/KeyProperties.md) |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!> | This value cannot be`null`. Value is [android.security.keystore.KeyProperties#DIGEST_NONE](KeyProperties.md), [android.security.keystore.KeyProperties#DIGEST_MD5](KeyProperties.md), [android.security.keystore.KeyProperties#DIGEST_SHA1](KeyProperties.md), [android.security.keystore.KeyProperties#DIGEST_SHA224](KeyProperties.md), [android.security.keystore.KeyProperties#DIGEST_SHA256](KeyProperties.md), [android.security.keystore.KeyProperties#DIGEST_SHA384](KeyProperties.md), or [android.security.keystore.KeyProperties#DIGEST_SHA512](KeyProperties.md) |
 
 | Exceptions ||
 |-----------------------------------|-------------------------------------|
@@ -277,11 +277,11 @@ fun getEncryptionPaddings(): Array<String!>
 
 Gets the set of padding schemes (e.g.,`PKCS7Padding`,`PKCS1Padding`,`NoPadding`) with which the key can be used when encrypting/decrypting. Attempts to use the key with any other padding scheme will be rejected.
 
-See [KeyProperties](../android/security/keystore/KeyProperties.md).`ENCRYPTION_PADDING`constants.
+See [KeyProperties](KeyProperties.md).`ENCRYPTION_PADDING`constants.
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!> | This value cannot be`null`. Value is [android.security.keystore.KeyProperties#ENCRYPTION_PADDING_NONE](../android/security/keystore/KeyProperties.md), [android.security.keystore.KeyProperties#ENCRYPTION_PADDING_PKCS7](../android/security/keystore/KeyProperties.md), [android.security.keystore.KeyProperties#ENCRYPTION_PADDING_RSA_PKCS1](../android/security/keystore/KeyProperties.md), or [android.security.keystore.KeyProperties#ENCRYPTION_PADDING_RSA_OAEP](../android/security/keystore/KeyProperties.md) |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!> | This value cannot be`null`. Value is [android.security.keystore.KeyProperties#ENCRYPTION_PADDING_NONE](KeyProperties.md), [android.security.keystore.KeyProperties#ENCRYPTION_PADDING_PKCS7](KeyProperties.md), [android.security.keystore.KeyProperties#ENCRYPTION_PADDING_RSA_PKCS1](KeyProperties.md), or [android.security.keystore.KeyProperties#ENCRYPTION_PADDING_RSA_OAEP](KeyProperties.md) |
 
 ### getKeyValidityForConsumptionEnd
 
@@ -295,7 +295,7 @@ Gets the time instant after which the key is no long valid for decryption and ve
 
 | Return ||
 |------------------------------------------------------------------------------|------------------------------------|
-| [Date](../java/util/Date.md)? | instant or`null`if not restricted. |
+| [Date](../java.util/Date.md)? | instant or`null`if not restricted. |
 
 ### getKeyValidityForOriginationEnd
 
@@ -309,7 +309,7 @@ Gets the time instant after which the key is no long valid for encryption and si
 
 | Return ||
 |------------------------------------------------------------------------------|------------------------------------|
-| [Date](../java/util/Date.md)? | instant or`null`if not restricted. |
+| [Date](../java.util/Date.md)? | instant or`null`if not restricted. |
 
 ### getKeyValidityStart
 
@@ -323,7 +323,7 @@ Gets the time instant before which the key is not yet valid.
 
 | Return ||
 |------------------------------------------------------------------------------|------------------------------------|
-| [Date](../java/util/Date.md)? | instant or`null`if not restricted. |
+| [Date](../java.util/Date.md)? | instant or`null`if not restricted. |
 
 ### getMaxUsageCount
 
@@ -333,7 +333,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 fun getMaxUsageCount(): Int
 ```
 
-Returns the maximum number of times the limited use key is allowed to be used or [KeyProperties.UNRESTRICTED_USAGE_COUNT](../android/security/keystore/KeyProperties.md) if there's no restriction on the number of times the key can be used. 
+Returns the maximum number of times the limited use key is allowed to be used or [KeyProperties.UNRESTRICTED_USAGE_COUNT](KeyProperties.md) if there's no restriction on the number of times the key can be used. 
 **See Also**
 
 - [android.security.keystore.KeyProtection.Builder#setMaxUsageCount(int)](../android/security/keystore/KeyProtection.Builder.md)) 
@@ -348,11 +348,11 @@ fun getMgf1Digests(): MutableSet<String!>
 
 Returns the set of digests that can be used by the MGF1 mask generation function (e.g.,`SHA-256`,`SHA-384`) with the key. Useful with the`RSA-OAEP`scheme. If not explicitly specified during key generation, the default`SHA-1`digest is used and may be specified.
 
-See [KeyProperties](../android/security/keystore/KeyProperties.md).`DIGEST`constants.
+See [KeyProperties](KeyProperties.md).`DIGEST`constants.
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!> | This value cannot be`null`. Value is [android.security.keystore.KeyProperties#DIGEST_NONE](../android/security/keystore/KeyProperties.md), [android.security.keystore.KeyProperties#DIGEST_MD5](../android/security/keystore/KeyProperties.md), [android.security.keystore.KeyProperties#DIGEST_SHA1](../android/security/keystore/KeyProperties.md), [android.security.keystore.KeyProperties#DIGEST_SHA224](../android/security/keystore/KeyProperties.md), [android.security.keystore.KeyProperties#DIGEST_SHA256](../android/security/keystore/KeyProperties.md), [android.security.keystore.KeyProperties#DIGEST_SHA384](../android/security/keystore/KeyProperties.md), or [android.security.keystore.KeyProperties#DIGEST_SHA512](../android/security/keystore/KeyProperties.md) |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!> | This value cannot be`null`. Value is [android.security.keystore.KeyProperties#DIGEST_NONE](KeyProperties.md), [android.security.keystore.KeyProperties#DIGEST_MD5](KeyProperties.md), [android.security.keystore.KeyProperties#DIGEST_SHA1](KeyProperties.md), [android.security.keystore.KeyProperties#DIGEST_SHA224](KeyProperties.md), [android.security.keystore.KeyProperties#DIGEST_SHA256](KeyProperties.md), [android.security.keystore.KeyProperties#DIGEST_SHA384](KeyProperties.md), or [android.security.keystore.KeyProperties#DIGEST_SHA512](KeyProperties.md) |
 
 | Exceptions ||
 |-----------------------------------|-------------------------------------|
@@ -372,11 +372,11 @@ fun getPurposes(): Int
 
 Gets the set of purposes (e.g., encrypt, decrypt, sign) for which the key can be used. Attempts to use the key for any other purpose will be rejected.
 
-See [KeyProperties](../android/security/keystore/KeyProperties.md).`PURPOSE`flags.
+See [KeyProperties](KeyProperties.md).`PURPOSE`flags.
 
 | Return ||
 |----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is either`0`or a combination of [android.security.keystore.KeyProperties#PURPOSE_ENCRYPT](../android/security/keystore/KeyProperties.md), [android.security.keystore.KeyProperties#PURPOSE_DECRYPT](../android/security/keystore/KeyProperties.md), [android.security.keystore.KeyProperties#PURPOSE_SIGN](../android/security/keystore/KeyProperties.md), [android.security.keystore.KeyProperties#PURPOSE_VERIFY](../android/security/keystore/KeyProperties.md), [android.security.keystore.KeyProperties#PURPOSE_WRAP_KEY](../android/security/keystore/KeyProperties.md), [android.security.keystore.KeyProperties#PURPOSE_AGREE_KEY](../android/security/keystore/KeyProperties.md), and [android.security.keystore.KeyProperties#PURPOSE_ATTEST_KEY](../android/security/keystore/KeyProperties.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is either`0`or a combination of [android.security.keystore.KeyProperties#PURPOSE_ENCRYPT](KeyProperties.md), [android.security.keystore.KeyProperties#PURPOSE_DECRYPT](KeyProperties.md), [android.security.keystore.KeyProperties#PURPOSE_SIGN](KeyProperties.md), [android.security.keystore.KeyProperties#PURPOSE_VERIFY](KeyProperties.md), [android.security.keystore.KeyProperties#PURPOSE_WRAP_KEY](KeyProperties.md), [android.security.keystore.KeyProperties#PURPOSE_AGREE_KEY](KeyProperties.md), and [android.security.keystore.KeyProperties#PURPOSE_ATTEST_KEY](KeyProperties.md) |
 
 ### getSignaturePaddings
 
@@ -388,11 +388,11 @@ fun getSignaturePaddings(): Array<String!>
 
 Gets the set of padding schemes (e.g.,`PSS`,`PKCS#1`) with which the key can be used when signing/verifying. Attempts to use the key with any other padding scheme will be rejected.
 
-See [KeyProperties](../android/security/keystore/KeyProperties.md).`SIGNATURE_PADDING`constants.
+See [KeyProperties](KeyProperties.md).`SIGNATURE_PADDING`constants.
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!> | This value cannot be`null`. Value is [android.security.keystore.KeyProperties#SIGNATURE_PADDING_RSA_PKCS1](../android/security/keystore/KeyProperties.md), or [android.security.keystore.KeyProperties#SIGNATURE_PADDING_RSA_PSS](../android/security/keystore/KeyProperties.md) |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!> | This value cannot be`null`. Value is [android.security.keystore.KeyProperties#SIGNATURE_PADDING_RSA_PKCS1](KeyProperties.md), or [android.security.keystore.KeyProperties#SIGNATURE_PADDING_RSA_PSS](KeyProperties.md) |
 
 ### getUserAuthenticationType
 
@@ -404,7 +404,7 @@ fun getUserAuthenticationType(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is either`0`or a combination of [android.security.keystore.KeyProperties#AUTH_BIOMETRIC_STRONG](../android/security/keystore/KeyProperties.md), and [android.security.keystore.KeyProperties#AUTH_DEVICE_CREDENTIAL](../android/security/keystore/KeyProperties.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is either`0`or a combination of [android.security.keystore.KeyProperties#AUTH_BIOMETRIC_STRONG](KeyProperties.md), and [android.security.keystore.KeyProperties#AUTH_DEVICE_CREDENTIAL](KeyProperties.md) |
 
 ### getUserAuthenticationValidityDurationSeconds
 
@@ -414,7 +414,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 fun getUserAuthenticationValidityDurationSeconds(): Int
 ```
 
-Gets the duration of time (seconds) for which this key is authorized to be used after the user is successfully authenticated. This has effect only if user authentication is required (see [isUserAuthenticationRequired()](../android/security/keystore/KeyProtection.md))).
+Gets the duration of time (seconds) for which this key is authorized to be used after the user is successfully authenticated. This has effect only if user authentication is required (see [isUserAuthenticationRequired()](KeyProtection.md))).
 
 This authorization applies only to secret key and private key operations. Public key operations are not restricted.
 
@@ -537,7 +537,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 fun isUserConfirmationRequired(): Boolean
 ```
 
-Returns`true`if the key is authorized to be used only for messages confirmed by the user. Confirmation is separate from user authentication (see [isUserAuthenticationRequired()](../android/security/keystore/KeyProtection.md))). Keys can be created that require confirmation but not user authentication, or user authentication but not confirmation, or both. Confirmation verifies that some user with physical possession of the device has approved a displayed message. User authentication verifies that the correct user is present and has authenticated.
+Returns`true`if the key is authorized to be used only for messages confirmed by the user. Confirmation is separate from user authentication (see [isUserAuthenticationRequired()](KeyProtection.md))). Keys can be created that require confirmation but not user authentication, or user authentication but not confirmation, or both. Confirmation verifies that some user with physical possession of the device has approved a displayed message. User authentication verifies that the correct user is present and has authenticated.
 
 This authorization applies only to secret key and private key operations. Public key operations are not restricted. 
 **See Also**

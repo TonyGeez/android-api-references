@@ -4,7 +4,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # AppInfo
 
-Kotlin| [Java](../android/health/connect/datatypes/AppInfo.md) 
+Kotlin| [Java](AppInfo.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class AppInfo
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.health.connect.datatypes.AppInfo](../android/health/connect/datatypes/AppInfo.md) |
+| ↳ | [android.health.connect.datatypes.AppInfo](AppInfo.md) |
 
 Application Info class containing details about a given application
 
@@ -21,9 +21,9 @@ Application Info class containing details about a given application
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Bitmap](../android/graphics/Bitmap.md)? | [getIcon](../android/health/connect/datatypes/AppInfo.md))`()` Returns the application icon as bitmap |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getName](../android/health/connect/datatypes/AppInfo.md))`()` Returns the application name/label |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getPackageName](../android/health/connect/datatypes/AppInfo.md))`()` Returns the application package name |
+| [Bitmap](../android.graphics/Bitmap.md)? | [getIcon](AppInfo.md))`()` Returns the application icon as bitmap |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getName](AppInfo.md))`()` Returns the application name/label |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getPackageName](AppInfo.md))`()` Returns the application package name |
 | --- | --- |
 
 ## Public methods
@@ -40,7 +40,7 @@ Returns the application icon as bitmap
 
 | Return ||
 |-----------------------------------------------------------------------------------------|--------------------------|
-| [Bitmap](../android/graphics/Bitmap.md)? | This value may be`null`. |
+| [Bitmap](../android.graphics/Bitmap.md)? | This value may be`null`. |
 
 ### getName
 

@@ -4,7 +4,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 
 # FederatedComputeInput
 
-Kotlin| [Java](../android/adservices/ondevicepersonalization/FederatedComputeInput.md) 
+Kotlin| [Java](FederatedComputeInput.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class FederatedComputeInput
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.adservices.ondevicepersonalization.FederatedComputeInput](../android/adservices/ondevicepersonalization/FederatedComputeInput.md) |
+| ↳ | [android.adservices.ondevicepersonalization.FederatedComputeInput](FederatedComputeInput.md) |
 
 The input data for android.adservices.ondevicepersonalization.FederatedComputeScheduler#schedule.
 
@@ -21,13 +21,13 @@ The input data for android.adservices.ondevicepersonalization.FederatedComputeSc
 
 | Nested classes ||
 |---|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](../android/adservices/ondevicepersonalization/FederatedComputeInput.Builder.md) A builder for [FederatedComputeInput](../android/adservices/ondevicepersonalization/FederatedComputeInput.md) |
+| | [Builder](../android/adservices/ondevicepersonalization/FederatedComputeInput.Builder.md) A builder for [FederatedComputeInput](FederatedComputeInput.md) |
 
 | Public methods ||
 |------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/adservices/ondevicepersonalization/FederatedComputeInput.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getPopulationName](../android/adservices/ondevicepersonalization/FederatedComputeInput.md))`()` Population refers to a collection of devices that specific task groups can run on. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/adservices/ondevicepersonalization/FederatedComputeInput.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](FederatedComputeInput.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getPopulationName](FederatedComputeInput.md))`()` Population refers to a collection of devices that specific task groups can run on. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](FederatedComputeInput.md))`()` <br /> |
 | --- | --- |
 
 ## Public methods

@@ -13,10 +13,10 @@ interface ECharacterDirection
 
 | [android.icu.lang.UCharacterEnums.ECharacterDirection](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) |
 
-| Known Direct Subclasses [UCharacter](../android/icu/lang/UCharacter.md), [UCharacterDirection](../android/icu/lang/UCharacterDirection.md) |------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------| | [UCharacter](../android/icu/lang/UCharacter.md) | **\[icu enhancement\]** ICU's replacement for [java.lang.Character](../java/lang/Character.md). | | [UCharacterDirection](../android/icu/lang/UCharacterDirection.md) | Enumerated Unicode character linguistic direction constants. | |
+| Known Direct Subclasses [UCharacter](UCharacter.md), [UCharacterDirection](UCharacterDirection.md) |------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------| | [UCharacter](UCharacter.md) | **\[icu enhancement\]** ICU's replacement for [java.lang.Character](../java.lang/Character.md). | | [UCharacterDirection](UCharacterDirection.md) | Enumerated Unicode character linguistic direction constants. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-'Enum' for the CharacterDirection constants. Some constants are compatible in name**but not in value** with those defined in [java.lang.Character](../java/lang/Character.md).
+'Enum' for the CharacterDirection constants. Some constants are compatible in name**but not in value** with those defined in [java.lang.Character](../java.lang/Character.md).
 
 ## Summary
 
@@ -27,32 +27,32 @@ interface ECharacterDirection
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BOUNDARY_NEUTRAL](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) Directional type BN |
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [COMMON_NUMBER_SEPARATOR](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) Directional type CS |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_ARABIC_NUMBER](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) Equivalent to [java.lang.Character#DIRECTIONALITY_ARABIC_NUMBER](../java/lang/Character.md). |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_BOUNDARY_NEUTRAL](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) Equivalent to [java.lang.Character#DIRECTIONALITY_BOUNDARY_NEUTRAL](../java/lang/Character.md). |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_ARABIC_NUMBER](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) Equivalent to [java.lang.Character#DIRECTIONALITY_ARABIC_NUMBER](../java.lang/Character.md). |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_BOUNDARY_NEUTRAL](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) Equivalent to [java.lang.Character#DIRECTIONALITY_BOUNDARY_NEUTRAL](../java.lang/Character.md). |
 | --- | --- |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_COMMON_NUMBER_SEPARATOR](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) Equivalent to [java.lang.Character#DIRECTIONALITY_COMMON_NUMBER_SEPARATOR](../java/lang/Character.md). |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_EUROPEAN_NUMBER](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) Equivalent to [java.lang.Character#DIRECTIONALITY_EUROPEAN_NUMBER](../java/lang/Character.md). |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_EUROPEAN_NUMBER_SEPARATOR](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) Equivalent to [java.lang.Character#DIRECTIONALITY_EUROPEAN_NUMBER_SEPARATOR](../java/lang/Character.md). |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_COMMON_NUMBER_SEPARATOR](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) Equivalent to [java.lang.Character#DIRECTIONALITY_COMMON_NUMBER_SEPARATOR](../java.lang/Character.md). |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_EUROPEAN_NUMBER](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) Equivalent to [java.lang.Character#DIRECTIONALITY_EUROPEAN_NUMBER](../java.lang/Character.md). |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_EUROPEAN_NUMBER_SEPARATOR](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) Equivalent to [java.lang.Character#DIRECTIONALITY_EUROPEAN_NUMBER_SEPARATOR](../java.lang/Character.md). |
 | --- | --- |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_EUROPEAN_NUMBER_TERMINATOR](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) Equivalent to [java.lang.Character#DIRECTIONALITY_EUROPEAN_NUMBER_TERMINATOR](../java/lang/Character.md). |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_LEFT_TO_RIGHT](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) Equivalent to [java.lang.Character#DIRECTIONALITY_LEFT_TO_RIGHT](../java/lang/Character.md). |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_LEFT_TO_RIGHT_EMBEDDING](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) Equivalent to [java.lang.Character#DIRECTIONALITY_LEFT_TO_RIGHT_EMBEDDING](../java/lang/Character.md). |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_EUROPEAN_NUMBER_TERMINATOR](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) Equivalent to [java.lang.Character#DIRECTIONALITY_EUROPEAN_NUMBER_TERMINATOR](../java.lang/Character.md). |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_LEFT_TO_RIGHT](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) Equivalent to [java.lang.Character#DIRECTIONALITY_LEFT_TO_RIGHT](../java.lang/Character.md). |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_LEFT_TO_RIGHT_EMBEDDING](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) Equivalent to [java.lang.Character#DIRECTIONALITY_LEFT_TO_RIGHT_EMBEDDING](../java.lang/Character.md). |
 | --- | --- |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_LEFT_TO_RIGHT_OVERRIDE](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) Equivalent to [java.lang.Character#DIRECTIONALITY_LEFT_TO_RIGHT_OVERRIDE](../java/lang/Character.md). |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_NONSPACING_MARK](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) Equivalent to [java.lang.Character#DIRECTIONALITY_NONSPACING_MARK](../java/lang/Character.md). |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_OTHER_NEUTRALS](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) Equivalent to [java.lang.Character#DIRECTIONALITY_OTHER_NEUTRALS](../java/lang/Character.md). |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_LEFT_TO_RIGHT_OVERRIDE](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) Equivalent to [java.lang.Character#DIRECTIONALITY_LEFT_TO_RIGHT_OVERRIDE](../java.lang/Character.md). |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_NONSPACING_MARK](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) Equivalent to [java.lang.Character#DIRECTIONALITY_NONSPACING_MARK](../java.lang/Character.md). |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_OTHER_NEUTRALS](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) Equivalent to [java.lang.Character#DIRECTIONALITY_OTHER_NEUTRALS](../java.lang/Character.md). |
 | --- | --- |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_PARAGRAPH_SEPARATOR](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) Equivalent to [java.lang.Character#DIRECTIONALITY_PARAGRAPH_SEPARATOR](../java/lang/Character.md). |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_POP_DIRECTIONAL_FORMAT](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) Equivalent to [java.lang.Character#DIRECTIONALITY_POP_DIRECTIONAL_FORMAT](../java/lang/Character.md). |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_RIGHT_TO_LEFT](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) Equivalent to [java.lang.Character#DIRECTIONALITY_RIGHT_TO_LEFT](../java/lang/Character.md). |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_PARAGRAPH_SEPARATOR](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) Equivalent to [java.lang.Character#DIRECTIONALITY_PARAGRAPH_SEPARATOR](../java.lang/Character.md). |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_POP_DIRECTIONAL_FORMAT](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) Equivalent to [java.lang.Character#DIRECTIONALITY_POP_DIRECTIONAL_FORMAT](../java.lang/Character.md). |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_RIGHT_TO_LEFT](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) Equivalent to [java.lang.Character#DIRECTIONALITY_RIGHT_TO_LEFT](../java.lang/Character.md). |
 | --- | --- |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_RIGHT_TO_LEFT_ARABIC](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) Equivalent to [java.lang.Character#DIRECTIONALITY_RIGHT_TO_LEFT_ARABIC](../java/lang/Character.md). |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_RIGHT_TO_LEFT_EMBEDDING](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) Equivalent to [java.lang.Character#DIRECTIONALITY_RIGHT_TO_LEFT_EMBEDDING](../java/lang/Character.md). |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_RIGHT_TO_LEFT_OVERRIDE](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) Equivalent to [java.lang.Character#DIRECTIONALITY_RIGHT_TO_LEFT_OVERRIDE](../java/lang/Character.md). |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_RIGHT_TO_LEFT_ARABIC](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) Equivalent to [java.lang.Character#DIRECTIONALITY_RIGHT_TO_LEFT_ARABIC](../java.lang/Character.md). |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_RIGHT_TO_LEFT_EMBEDDING](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) Equivalent to [java.lang.Character#DIRECTIONALITY_RIGHT_TO_LEFT_EMBEDDING](../java.lang/Character.md). |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_RIGHT_TO_LEFT_OVERRIDE](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) Equivalent to [java.lang.Character#DIRECTIONALITY_RIGHT_TO_LEFT_OVERRIDE](../java.lang/Character.md). |
 | --- | --- |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_SEGMENT_SEPARATOR](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) Equivalent to [java.lang.Character#DIRECTIONALITY_SEGMENT_SEPARATOR](../java/lang/Character.md). |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_SEGMENT_SEPARATOR](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) Equivalent to [java.lang.Character#DIRECTIONALITY_SEGMENT_SEPARATOR](../java.lang/Character.md). |
 | static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_UNDEFINED](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) Undefined bidirectional character type. |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_WHITESPACE](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) Equivalent to [java.lang.Character#DIRECTIONALITY_WHITESPACE](../java/lang/Character.md). |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_WHITESPACE](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) Equivalent to [java.lang.Character#DIRECTIONALITY_WHITESPACE](../java.lang/Character.md). |
 | --- | --- |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DIR_NON_SPACING_MARK](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) Directional type NSM |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EUROPEAN_NUMBER](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) Directional type EN |
@@ -138,7 +138,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val DIRECTIONALITY_ARABIC_NUMBER: Byte
 ```
 
-Equivalent to [java.lang.Character#DIRECTIONALITY_ARABIC_NUMBER](../java/lang/Character.md). Synonym of [ARABIC_NUMBER](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). 
+Equivalent to [java.lang.Character#DIRECTIONALITY_ARABIC_NUMBER](../java.lang/Character.md). Synonym of [ARABIC_NUMBER](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). 
 
  Value: 5
 
@@ -150,7 +150,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val DIRECTIONALITY_BOUNDARY_NEUTRAL: Byte
 ```
 
-Equivalent to [java.lang.Character#DIRECTIONALITY_BOUNDARY_NEUTRAL](../java/lang/Character.md). Synonym of [BOUNDARY_NEUTRAL](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). 
+Equivalent to [java.lang.Character#DIRECTIONALITY_BOUNDARY_NEUTRAL](../java.lang/Character.md). Synonym of [BOUNDARY_NEUTRAL](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). 
 
  Value: 18
 
@@ -162,7 +162,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val DIRECTIONALITY_COMMON_NUMBER_SEPARATOR: Byte
 ```
 
-Equivalent to [java.lang.Character#DIRECTIONALITY_COMMON_NUMBER_SEPARATOR](../java/lang/Character.md). Synonym of [COMMON_NUMBER_SEPARATOR](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). 
+Equivalent to [java.lang.Character#DIRECTIONALITY_COMMON_NUMBER_SEPARATOR](../java.lang/Character.md). Synonym of [COMMON_NUMBER_SEPARATOR](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). 
 
  Value: 6
 
@@ -174,7 +174,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val DIRECTIONALITY_EUROPEAN_NUMBER: Byte
 ```
 
-Equivalent to [java.lang.Character#DIRECTIONALITY_EUROPEAN_NUMBER](../java/lang/Character.md). Synonym of [EUROPEAN_NUMBER](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). 
+Equivalent to [java.lang.Character#DIRECTIONALITY_EUROPEAN_NUMBER](../java.lang/Character.md). Synonym of [EUROPEAN_NUMBER](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). 
 
  Value: 2
 
@@ -186,7 +186,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val DIRECTIONALITY_EUROPEAN_NUMBER_SEPARATOR: Byte
 ```
 
-Equivalent to [java.lang.Character#DIRECTIONALITY_EUROPEAN_NUMBER_SEPARATOR](../java/lang/Character.md). Synonym of [EUROPEAN_NUMBER_SEPARATOR](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). 
+Equivalent to [java.lang.Character#DIRECTIONALITY_EUROPEAN_NUMBER_SEPARATOR](../java.lang/Character.md). Synonym of [EUROPEAN_NUMBER_SEPARATOR](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). 
 
  Value: 3
 
@@ -198,7 +198,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val DIRECTIONALITY_EUROPEAN_NUMBER_TERMINATOR: Byte
 ```
 
-Equivalent to [java.lang.Character#DIRECTIONALITY_EUROPEAN_NUMBER_TERMINATOR](../java/lang/Character.md). Synonym of [EUROPEAN_NUMBER_TERMINATOR](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). 
+Equivalent to [java.lang.Character#DIRECTIONALITY_EUROPEAN_NUMBER_TERMINATOR](../java.lang/Character.md). Synonym of [EUROPEAN_NUMBER_TERMINATOR](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). 
 
  Value: 4
 
@@ -210,7 +210,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val DIRECTIONALITY_LEFT_TO_RIGHT: Byte
 ```
 
-Equivalent to [java.lang.Character#DIRECTIONALITY_LEFT_TO_RIGHT](../java/lang/Character.md). Synonym of [LEFT_TO_RIGHT](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). 
+Equivalent to [java.lang.Character#DIRECTIONALITY_LEFT_TO_RIGHT](../java.lang/Character.md). Synonym of [LEFT_TO_RIGHT](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). 
 
  Value: 0
 
@@ -222,7 +222,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val DIRECTIONALITY_LEFT_TO_RIGHT_EMBEDDING: Byte
 ```
 
-Equivalent to [java.lang.Character#DIRECTIONALITY_LEFT_TO_RIGHT_EMBEDDING](../java/lang/Character.md). Synonym of [LEFT_TO_RIGHT_EMBEDDING](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). 
+Equivalent to [java.lang.Character#DIRECTIONALITY_LEFT_TO_RIGHT_EMBEDDING](../java.lang/Character.md). Synonym of [LEFT_TO_RIGHT_EMBEDDING](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). 
 
  Value: 11
 
@@ -234,7 +234,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val DIRECTIONALITY_LEFT_TO_RIGHT_OVERRIDE: Byte
 ```
 
-Equivalent to [java.lang.Character#DIRECTIONALITY_LEFT_TO_RIGHT_OVERRIDE](../java/lang/Character.md). Synonym of [LEFT_TO_RIGHT_OVERRIDE](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). 
+Equivalent to [java.lang.Character#DIRECTIONALITY_LEFT_TO_RIGHT_OVERRIDE](../java.lang/Character.md). Synonym of [LEFT_TO_RIGHT_OVERRIDE](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). 
 
  Value: 12
 
@@ -246,7 +246,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val DIRECTIONALITY_NONSPACING_MARK: Byte
 ```
 
-Equivalent to [java.lang.Character#DIRECTIONALITY_NONSPACING_MARK](../java/lang/Character.md). Synonym of [DIR_NON_SPACING_MARK](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). 
+Equivalent to [java.lang.Character#DIRECTIONALITY_NONSPACING_MARK](../java.lang/Character.md). Synonym of [DIR_NON_SPACING_MARK](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). 
 
  Value: 17
 
@@ -258,7 +258,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val DIRECTIONALITY_OTHER_NEUTRALS: Byte
 ```
 
-Equivalent to [java.lang.Character#DIRECTIONALITY_OTHER_NEUTRALS](../java/lang/Character.md). Synonym of [OTHER_NEUTRAL](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). 
+Equivalent to [java.lang.Character#DIRECTIONALITY_OTHER_NEUTRALS](../java.lang/Character.md). Synonym of [OTHER_NEUTRAL](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). 
 
  Value: 10
 
@@ -270,7 +270,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val DIRECTIONALITY_PARAGRAPH_SEPARATOR: Byte
 ```
 
-Equivalent to [java.lang.Character#DIRECTIONALITY_PARAGRAPH_SEPARATOR](../java/lang/Character.md). Synonym of [BLOCK_SEPARATOR](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). 
+Equivalent to [java.lang.Character#DIRECTIONALITY_PARAGRAPH_SEPARATOR](../java.lang/Character.md). Synonym of [BLOCK_SEPARATOR](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). 
 
  Value: 7
 
@@ -282,7 +282,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val DIRECTIONALITY_POP_DIRECTIONAL_FORMAT: Byte
 ```
 
-Equivalent to [java.lang.Character#DIRECTIONALITY_POP_DIRECTIONAL_FORMAT](../java/lang/Character.md). Synonym of [POP_DIRECTIONAL_FORMAT](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). 
+Equivalent to [java.lang.Character#DIRECTIONALITY_POP_DIRECTIONAL_FORMAT](../java.lang/Character.md). Synonym of [POP_DIRECTIONAL_FORMAT](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). 
 
  Value: 16
 
@@ -294,7 +294,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val DIRECTIONALITY_RIGHT_TO_LEFT: Byte
 ```
 
-Equivalent to [java.lang.Character#DIRECTIONALITY_RIGHT_TO_LEFT](../java/lang/Character.md). Synonym of [RIGHT_TO_LEFT](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). 
+Equivalent to [java.lang.Character#DIRECTIONALITY_RIGHT_TO_LEFT](../java.lang/Character.md). Synonym of [RIGHT_TO_LEFT](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). 
 
  Value: 1
 
@@ -306,7 +306,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val DIRECTIONALITY_RIGHT_TO_LEFT_ARABIC: Byte
 ```
 
-Equivalent to [java.lang.Character#DIRECTIONALITY_RIGHT_TO_LEFT_ARABIC](../java/lang/Character.md). Synonym of [RIGHT_TO_LEFT_ARABIC](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). 
+Equivalent to [java.lang.Character#DIRECTIONALITY_RIGHT_TO_LEFT_ARABIC](../java.lang/Character.md). Synonym of [RIGHT_TO_LEFT_ARABIC](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). 
 
  Value: 13
 
@@ -318,7 +318,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val DIRECTIONALITY_RIGHT_TO_LEFT_EMBEDDING: Byte
 ```
 
-Equivalent to [java.lang.Character#DIRECTIONALITY_RIGHT_TO_LEFT_EMBEDDING](../java/lang/Character.md). Synonym of [RIGHT_TO_LEFT_EMBEDDING](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). 
+Equivalent to [java.lang.Character#DIRECTIONALITY_RIGHT_TO_LEFT_EMBEDDING](../java.lang/Character.md). Synonym of [RIGHT_TO_LEFT_EMBEDDING](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). 
 
  Value: 14
 
@@ -330,7 +330,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val DIRECTIONALITY_RIGHT_TO_LEFT_OVERRIDE: Byte
 ```
 
-Equivalent to [java.lang.Character#DIRECTIONALITY_RIGHT_TO_LEFT_OVERRIDE](../java/lang/Character.md). Synonym of [RIGHT_TO_LEFT_OVERRIDE](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). 
+Equivalent to [java.lang.Character#DIRECTIONALITY_RIGHT_TO_LEFT_OVERRIDE](../java.lang/Character.md). Synonym of [RIGHT_TO_LEFT_OVERRIDE](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). 
 
  Value: 15
 
@@ -342,7 +342,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val DIRECTIONALITY_SEGMENT_SEPARATOR: Byte
 ```
 
-Equivalent to [java.lang.Character#DIRECTIONALITY_SEGMENT_SEPARATOR](../java/lang/Character.md). Synonym of [SEGMENT_SEPARATOR](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). 
+Equivalent to [java.lang.Character#DIRECTIONALITY_SEGMENT_SEPARATOR](../java.lang/Character.md). Synonym of [SEGMENT_SEPARATOR](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). 
 
  Value: 8
 
@@ -366,7 +366,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val DIRECTIONALITY_WHITESPACE: Byte
 ```
 
-Equivalent to [java.lang.Character#DIRECTIONALITY_WHITESPACE](../java/lang/Character.md). Synonym of [WHITE_SPACE_NEUTRAL](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). 
+Equivalent to [java.lang.Character#DIRECTIONALITY_WHITESPACE](../java.lang/Character.md). Synonym of [WHITE_SPACE_NEUTRAL](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). 
 
  Value: 9
 

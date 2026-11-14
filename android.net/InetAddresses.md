@@ -2,7 +2,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 
 # InetAddresses
 
-Kotlin | [Java](../android/net/InetAddresses.md)
+Kotlin | [Java](InetAddresses.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ open class InetAddresses
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.InetAddresses](../android/net/InetAddresses.md) |
+| ↳ | [android.net.InetAddresses](InetAddresses.md) |
 
 Utility methods for `https://developer.android.com/reference/kotlin/java/net/InetAddress.html#` implementations.
 
@@ -20,7 +20,7 @@ Utility methods for `https://developer.android.com/reference/kotlin/java/net/Ine
 | Public methods ||
 |---|---|
 | open static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/InetAddresses#isNumericAddress(kotlin.String)(address: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Checks to see if the `address` is a numeric address (such as `"192.0.2.1"` or `"2001:db8::1:2"`). |
-| open static [InetAddress](../java/net/InetAddress.md) | `https://developer.android.com/reference/kotlin/android/net/InetAddresses#parseNumericAddress(kotlin.String)(address: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns an InetAddress corresponding to the given numeric address (such as `"192.168.0.1"` or `"2001:4860:800d::68"`). |
+| open static [InetAddress](../java.net/InetAddress.md) | `https://developer.android.com/reference/kotlin/android/net/InetAddresses#parseNumericAddress(kotlin.String)(address: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns an InetAddress corresponding to the given numeric address (such as `"192.168.0.1"` or `"2001:4860:800d::68"`). |
 
 ## Public methods
 

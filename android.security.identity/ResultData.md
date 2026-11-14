@@ -9,7 +9,7 @@ abstract class ResultData
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.security.identity.ResultData](../android/security/identity/ResultData.md) |
+| ↳ | [android.security.identity.ResultData](ResultData.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 33.**

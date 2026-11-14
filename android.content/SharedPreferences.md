@@ -6,7 +6,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface SharedPreferences
 ```
 
-| [android.content.SharedPreferences](../android/content/SharedPreferences.md) |
+| [android.content.SharedPreferences](SharedPreferences.md) |
 
 Interface for accessing and modifying preference data returned by `https://developer.android.com/reference/kotlin/android/content/Context#getSharedPreferences(kotlin.String,%20kotlin.Int)`. For any particular set of preferences, there is a single instance of this class that all clients share. Modifications to the preferences must go through an `https://developer.android.com/reference/kotlin/android/content/SharedPreferences.Editor` object to ensure the preference values remain in a consistent state and control when they are committed to storage. Objects that are returned from the various `get` methods must be treated as immutable by the application.
 

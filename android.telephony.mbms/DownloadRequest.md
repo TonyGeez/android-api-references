@@ -4,7 +4,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 
 # DownloadRequest
 
-Kotlin| [Java](../android/telephony/mbms/DownloadRequest.md) 
+Kotlin| [Java](DownloadRequest.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class DownloadRequest : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.telephony.mbms.DownloadRequest](../android/telephony/mbms/DownloadRequest.md) |
+| ↳ | [android.telephony.mbms.DownloadRequest](DownloadRequest.md) |
 
 Describes a request to download files over cell-broadcast. Instances of this class should be created by the app when requesting a download, and instances of this class will be passed back to the app when the middleware updates the status of the download.
 
@@ -25,28 +25,28 @@ Describes a request to download files over cell-broadcast. Instances of this cla
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android.os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android.os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android.os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/telephony/mbms/DownloadRequest.md))`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/telephony/mbms/DownloadRequest.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [Uri](../android/net/Uri.md)! | [getDestinationUri](../android/telephony/mbms/DownloadRequest.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](DownloadRequest.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](DownloadRequest.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [Uri](../android.net/Uri.md)! | [getDestinationUri](DownloadRequest.md))`()` <br /> |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getFileServiceId](../android/telephony/mbms/DownloadRequest.md))`()` <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxAppIntentSize](../android/telephony/mbms/DownloadRequest.md))`()` Maximum permissible length for the app's destination path, when serialized via [Uri.toString()](../android/net/Uri.md)). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxDestinationUriSize](../android/telephony/mbms/DownloadRequest.md))`()` Maximum permissible length for the app's download-completion intent, when serialized via [Intent.toUri(int)](../android/content/Intent.md)). |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getFileServiceId](DownloadRequest.md))`()` <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxAppIntentSize](DownloadRequest.md))`()` Maximum permissible length for the app's destination path, when serialized via [Uri.toString()](../android.net/Uri.md)). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxDestinationUriSize](DownloadRequest.md))`()` Maximum permissible length for the app's download-completion intent, when serialized via [Intent.toUri(int)](../android.content/Intent.md)). |
 | --- | --- |
-| [Uri](../android/net/Uri.md)! | [getSourceUri](../android/telephony/mbms/DownloadRequest.md))`()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSubscriptionId](../android/telephony/mbms/DownloadRequest.md))`()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/telephony/mbms/DownloadRequest.md))`()` <br /> |
+| [Uri](../android.net/Uri.md)! | [getSourceUri](DownloadRequest.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSubscriptionId](DownloadRequest.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](DownloadRequest.md))`()` <br /> |
 | --- | --- |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [toByteArray](../android/telephony/mbms/DownloadRequest.md))`()` This method returns a byte array that may be persisted to disk and restored to a [DownloadRequest](../android/telephony/mbms/DownloadRequest.md). |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/telephony/mbms/DownloadRequest.md))`(`out:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [toByteArray](DownloadRequest.md))`()` This method returns a byte array that may be persisted to disk and restored to a [DownloadRequest](DownloadRequest.md). |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](DownloadRequest.md))`(`out:` ` [Parcel](../android.os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [DownloadRequest](../android/telephony/mbms/DownloadRequest.md)!\> | [CREATOR](../android/telephony/mbms/DownloadRequest.md) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [DownloadRequest](DownloadRequest.md)!\> | [CREATOR](DownloadRequest.md) <br /> |
 
 ## Public methods
 
@@ -60,7 +60,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) |
 
 ### equals
 
@@ -101,7 +101,7 @@ fun getDestinationUri(): Uri!
 
 | Return ||
 |------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
-| [Uri](../android/net/Uri.md)! | The destination [Uri](../android/net/Uri.md) of the downloaded file. |
+| [Uri](../android.net/Uri.md)! | The destination [Uri](../android.net/Uri.md) of the downloaded file. |
 
 ### getFileServiceId
 
@@ -123,7 +123,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 static fun getMaxAppIntentSize(): Int
 ```
 
-Maximum permissible length for the app's destination path, when serialized via [Uri.toString()](../android/net/Uri.md)). 
+Maximum permissible length for the app's destination path, when serialized via [Uri.toString()](../android.net/Uri.md)). 
 
 ### getMaxDestinationUriSize
 
@@ -133,7 +133,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 static fun getMaxDestinationUriSize(): Int
 ```
 
-Maximum permissible length for the app's download-completion intent, when serialized via [Intent.toUri(int)](../android/content/Intent.md)). 
+Maximum permissible length for the app's download-completion intent, when serialized via [Intent.toUri(int)](../android.content/Intent.md)). 
 
 ### getSourceUri
 
@@ -145,7 +145,7 @@ fun getSourceUri(): Uri!
 
 | Return ||
 |------------------------------------------------------------------------------|---------------------------------|
-| [Uri](../android/net/Uri.md)! | The source URI to download from |
+| [Uri](../android.net/Uri.md)! | The source URI to download from |
 
 ### getSubscriptionId
 
@@ -179,7 +179,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 fun toByteArray(): ByteArray!
 ```
 
-This method returns a byte array that may be persisted to disk and restored to a [DownloadRequest](../android/telephony/mbms/DownloadRequest.md). The instance of [DownloadRequest](../android/telephony/mbms/DownloadRequest.md) persisted by this method may be recovered via[Builder.fromSerializedRequest(byte[])](https://developer.android.com/reference/kotlin/android/telephony/mbms/DownloadRequest.Builder#fromSerializedRequest(kotlin.ByteArray)).
+This method returns a byte array that may be persisted to disk and restored to a [DownloadRequest](DownloadRequest.md). The instance of [DownloadRequest](DownloadRequest.md) persisted by this method may be recovered via[Builder.fromSerializedRequest(byte[])](https://developer.android.com/reference/kotlin/android/telephony/mbms/DownloadRequest.Builder#fromSerializedRequest(kotlin.ByteArray)).
 
 | Return ||
 |------------------------------------------------------------------------------------------|----------------------------------|
@@ -199,7 +199,7 @@ fun writeToParcel(
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `dest` | The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

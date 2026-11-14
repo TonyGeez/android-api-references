@@ -19,7 +19,7 @@ When # [ThreadPolicy.Builder#penaltyListener](../android/os/StrictMode.ThreadPol
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onThreadViolation](../android/os/StrictMode.OnThreadViolationListener.md))`(`v:` ` [Violation](../android/os/strictmode/Violation.md)!`)` Called on a thread policy violation. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onThreadViolation](../android/os/StrictMode.OnThreadViolationListener.md))`(`v:` ` [Violation](../android.os.strictmode/Violation.md)!`)` Called on a thread policy violation. |
 
 ## Public methods
 

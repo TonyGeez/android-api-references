@@ -4,7 +4,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 
 # Patterns
 
-Kotlin| [Java](../android/util/Patterns.md) 
+Kotlin| [Java](Patterns.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class Patterns
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.util.Patterns](../android/util/Patterns.md) |
+| ↳ | [android.util.Patterns](Patterns.md) |
 
 Commonly used regular expression patterns.
 
@@ -21,25 +21,25 @@ Commonly used regular expression patterns.
 
 | Constants ||
 |----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [GOOD_IRI_CHAR](../android/util/Patterns.md) Kept for backward compatibility reasons. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TOP_LEVEL_DOMAIN_STR](../android/util/Patterns.md) Regular expression to match all IANA top-level domains. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TOP_LEVEL_DOMAIN_STR_FOR_WEB_URL](../android/util/Patterns.md) Regular expression to match all IANA top-level domains for WEB_URL. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [GOOD_IRI_CHAR](Patterns.md) Kept for backward compatibility reasons. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TOP_LEVEL_DOMAIN_STR](Patterns.md) Regular expression to match all IANA top-level domains. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TOP_LEVEL_DOMAIN_STR_FOR_WEB_URL](Patterns.md) Regular expression to match all IANA top-level domains for WEB_URL. |
 | --- | --- |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [concatGroups](../android/util/Patterns.md))`(`matcher:` ` [Matcher](../java/util/regex/Matcher.md)!`)` Convenience method to take all of the non-null matching groups in a regex Matcher and return them as a concatenated string. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [digitsAndPlusOnly](../android/util/Patterns.md))`(`matcher:` ` [Matcher](../java/util/regex/Matcher.md)!`)` Convenience method to return only the digits and plus signs in the matching string. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [concatGroups](Patterns.md))`(`matcher:` ` [Matcher](../java.util.regex/Matcher.md)!`)` Convenience method to take all of the non-null matching groups in a regex Matcher and return them as a concatenated string. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [digitsAndPlusOnly](Patterns.md))`(`matcher:` ` [Matcher](../java.util.regex/Matcher.md)!`)` Convenience method to return only the digits and plus signs in the matching string. |
 
 | Properties ||
 |------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Pattern](../java/util/regex/Pattern.md)! | [DOMAIN_NAME](../android/util/Patterns.md) <br /> |
-| static [Pattern](../java/util/regex/Pattern.md)! | [EMAIL_ADDRESS](../android/util/Patterns.md) <br /> |
-| static [Pattern](../java/util/regex/Pattern.md)! | [IP_ADDRESS](../android/util/Patterns.md) Kept for backward compatibility reasons. |
+| static [Pattern](../java.util.regex/Pattern.md)! | [DOMAIN_NAME](Patterns.md) <br /> |
+| static [Pattern](../java.util.regex/Pattern.md)! | [EMAIL_ADDRESS](Patterns.md) <br /> |
+| static [Pattern](../java.util.regex/Pattern.md)! | [IP_ADDRESS](Patterns.md) Kept for backward compatibility reasons. |
 | --- | --- |
-| static [Pattern](../java/util/regex/Pattern.md)! | [PHONE](../android/util/Patterns.md) This pattern is intended for searching for things that look like they might be phone numbers in arbitrary text, not for validating whether something is in fact a phone number. |
-| static [Pattern](../java/util/regex/Pattern.md)! | [TOP_LEVEL_DOMAIN](../android/util/Patterns.md) Regular expression pattern to match all IANA top-level domains. |
-| static [Pattern](../java/util/regex/Pattern.md)! | [WEB_URL](../android/util/Patterns.md) Regular expression pattern to match most part of RFC 3987 Internationalized URLs, aka IRIs. |
+| static [Pattern](../java.util.regex/Pattern.md)! | [PHONE](Patterns.md) This pattern is intended for searching for things that look like they might be phone numbers in arbitrary text, not for validating whether something is in fact a phone number. |
+| static [Pattern](../java.util.regex/Pattern.md)! | [TOP_LEVEL_DOMAIN](Patterns.md) Regular expression pattern to match all IANA top-level domains. |
+| static [Pattern](../java.util.regex/Pattern.md)! | [WEB_URL](Patterns.md) Regular expression pattern to match most part of RFC 3987 Internationalized URLs, aka IRIs. |
 | --- | --- |
 
 ## Constants
@@ -84,7 +84,7 @@ Deprecated in [API level 21](https://developer.android.com/guide/topics/manifest
 static val TOP_LEVEL_DOMAIN_STR_FOR_WEB_URL: String
 ```
 
-**Deprecated:** *This API is deprecated. See [TOP_LEVEL_DOMAIN_STR](../android/util/Patterns.md).*
+**Deprecated:** *This API is deprecated. See [TOP_LEVEL_DOMAIN_STR](Patterns.md).*
 
 Regular expression to match all IANA top-level domains for WEB_URL. List accurate as of 2011/07/18. List taken from: http://data.iana.org/TLD/tlds-alpha-by-domain.txt This pattern is auto-generated by frameworks/ex/common/tools/make-iana-tld-pattern.py 
 
@@ -105,7 +105,7 @@ Convenience method to take all of the non-null matching groups in a regex Matche
 
 | Parameters ||
 |-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `matcher` | [Matcher](../java/util/regex/Matcher.md)!:The Matcher object from which grouped text will be extracted |
+| `matcher` | [Matcher](../java.util.regex/Matcher.md)!:The Matcher object from which grouped text will be extracted |
 
 | Return ||
 |-----------------------------------------------------------------------------------|------------------------------------------------------------------------------|
@@ -123,7 +123,7 @@ Convenience method to return only the digits and plus signs in the matching stri
 
 | Parameters ||
 |-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `matcher` | [Matcher](../java/util/regex/Matcher.md)!:The Matcher object from which digits and plus will be extracted |
+| `matcher` | [Matcher](../java.util.regex/Matcher.md)!:The Matcher object from which digits and plus will be extracted |
 
 | Return ||
 |-----------------------------------------------------------------------------------|-------------------------------------------------------------|
@@ -156,7 +156,7 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 static val IP_ADDRESS: Pattern!
 ```
 
-**Deprecated:** *Please use [android.net.InetAddresses#isNumericAddress(String)](../android/net/InetAddresses.md))instead.*
+**Deprecated:** *Please use [android.net.InetAddresses#isNumericAddress(String)](../android.net/InetAddresses.md))instead.*
 
 Kept for backward compatibility reasons. It does not match IPv6 addresses. 
 
@@ -185,7 +185,7 @@ Deprecated in [API level 21](https://developer.android.com/guide/topics/manifest
 static val TOP_LEVEL_DOMAIN: Pattern!
 ```
 
-**Deprecated:** *This API is deprecated. See [TOP_LEVEL_DOMAIN_STR](../android/util/Patterns.md).*
+**Deprecated:** *This API is deprecated. See [TOP_LEVEL_DOMAIN_STR](Patterns.md).*
 
 Regular expression pattern to match all IANA top-level domains. 
 

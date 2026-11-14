@@ -5,7 +5,7 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 
 # Byte4
 
-Kotlin| [Java](../android/renderscript/Byte4.md) 
+Kotlin| [Java](Byte4.md) 
 | --- | --- |
 
 ```
@@ -14,7 +14,7 @@ open class Byte4
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.renderscript.Byte4](../android/renderscript/Byte4.md) |
+| ↳ | [android.renderscript.Byte4](Byte4.md) |
 
 | **This class was deprecated in API level 31.**
 |
@@ -26,16 +26,16 @@ Class for exposing the native RenderScript byte4 type back to the Android system
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Byte4](../android/renderscript/Byte4.md))`()` <br /> |
-| [Byte4](../android/renderscript/Byte4.md))`(`initX:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`, `initY:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`, `initZ:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`, `initW:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` <br /> |
+| [Byte4](Byte4.md))`()` <br /> |
+| [Byte4](Byte4.md))`(`initX:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`, `initY:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`, `initZ:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`, `initW:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` <br /> |
 
 | Properties ||
 |------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-| [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [w](../android/renderscript/Byte4.md) <br /> |
-| [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [x](../android/renderscript/Byte4.md) <br /> |
-| [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [y](../android/renderscript/Byte4.md) <br /> |
+| [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [w](Byte4.md) <br /> |
+| [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [x](Byte4.md) <br /> |
+| [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [y](Byte4.md) <br /> |
 | --- | --- |
-| [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [z](../android/renderscript/Byte4.md) <br /> |
+| [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [z](Byte4.md) <br /> |
 
 ## Public constructors
 

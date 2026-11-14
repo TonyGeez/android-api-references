@@ -10,15 +10,15 @@ class ChronoUnit : TemporalUnit
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.time.temporal.ChronoUnit](../java/time/temporal/ChronoUnit.md)\> ||
-| | ↳ | [java.time.temporal.ChronoUnit](../java/time/temporal/ChronoUnit.md) |
+| ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.time.temporal.ChronoUnit](ChronoUnit.md)\> ||
+| | ↳ | [java.time.temporal.ChronoUnit](ChronoUnit.md) |
 
-| Known Direct Subclasses [ChronoUnit.CENTURIES](../java/time/temporal/ChronoUnit.md), [ChronoUnit.DAYS](../java/time/temporal/ChronoUnit.md), [ChronoUnit.DECADES](../java/time/temporal/ChronoUnit.md), [ChronoUnit.ERAS](../java/time/temporal/ChronoUnit.md), [ChronoUnit.FOREVER](../java/time/temporal/ChronoUnit.md), [ChronoUnit.HALF_DAYS](../java/time/temporal/ChronoUnit.md), [ChronoUnit.HOURS](../java/time/temporal/ChronoUnit.md), [ChronoUnit.MICROS](../java/time/temporal/ChronoUnit.md), [ChronoUnit.MILLENNIA](../java/time/temporal/ChronoUnit.md), [ChronoUnit.MILLIS](../java/time/temporal/ChronoUnit.md), [ChronoUnit.MINUTES](../java/time/temporal/ChronoUnit.md), [ChronoUnit.MONTHS](../java/time/temporal/ChronoUnit.md), and 4 others. |---------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------| | [ChronoUnit.CENTURIES](../java/time/temporal/ChronoUnit.md) | Unit that represents the concept of a century. | | [ChronoUnit.DAYS](../java/time/temporal/ChronoUnit.md) | Unit that represents the concept of a day. | | [ChronoUnit.DECADES](../java/time/temporal/ChronoUnit.md) | Unit that represents the concept of a decade. | | [ChronoUnit.ERAS](../java/time/temporal/ChronoUnit.md) | Unit that represents the concept of an era. | | [ChronoUnit.FOREVER](../java/time/temporal/ChronoUnit.md) | Artificial unit that represents the concept of forever. | | [ChronoUnit.HALF_DAYS](../java/time/temporal/ChronoUnit.md) | Unit that represents the concept of half a day, as used in AM/PM. | | [ChronoUnit.HOURS](../java/time/temporal/ChronoUnit.md) | Unit that represents the concept of an hour. | | [ChronoUnit.MICROS](../java/time/temporal/ChronoUnit.md) | Unit that represents the concept of a microsecond. | | [ChronoUnit.MILLENNIA](../java/time/temporal/ChronoUnit.md) | Unit that represents the concept of a millennium. | | [ChronoUnit.MILLIS](../java/time/temporal/ChronoUnit.md) | Unit that represents the concept of a millisecond. | | [ChronoUnit.MINUTES](../java/time/temporal/ChronoUnit.md) | Unit that represents the concept of a minute. | | [ChronoUnit.MONTHS](../java/time/temporal/ChronoUnit.md) | Unit that represents the concept of a month. | | [ChronoUnit.NANOS](../java/time/temporal/ChronoUnit.md) | Unit that represents the concept of a nanosecond, the smallest supported unit of time. | | [ChronoUnit.SECONDS](../java/time/temporal/ChronoUnit.md) | Unit that represents the concept of a second. | | [ChronoUnit.WEEKS](../java/time/temporal/ChronoUnit.md) | Unit that represents the concept of a week. | | [ChronoUnit.YEARS](../java/time/temporal/ChronoUnit.md) | Unit that represents the concept of a year. | |
+| Known Direct Subclasses [ChronoUnit.CENTURIES](ChronoUnit.md), [ChronoUnit.DAYS](ChronoUnit.md), [ChronoUnit.DECADES](ChronoUnit.md), [ChronoUnit.ERAS](ChronoUnit.md), [ChronoUnit.FOREVER](ChronoUnit.md), [ChronoUnit.HALF_DAYS](ChronoUnit.md), [ChronoUnit.HOURS](ChronoUnit.md), [ChronoUnit.MICROS](ChronoUnit.md), [ChronoUnit.MILLENNIA](ChronoUnit.md), [ChronoUnit.MILLIS](ChronoUnit.md), [ChronoUnit.MINUTES](ChronoUnit.md), [ChronoUnit.MONTHS](ChronoUnit.md), and 4 others. |---------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------| | [ChronoUnit.CENTURIES](ChronoUnit.md) | Unit that represents the concept of a century. | | [ChronoUnit.DAYS](ChronoUnit.md) | Unit that represents the concept of a day. | | [ChronoUnit.DECADES](ChronoUnit.md) | Unit that represents the concept of a decade. | | [ChronoUnit.ERAS](ChronoUnit.md) | Unit that represents the concept of an era. | | [ChronoUnit.FOREVER](ChronoUnit.md) | Artificial unit that represents the concept of forever. | | [ChronoUnit.HALF_DAYS](ChronoUnit.md) | Unit that represents the concept of half a day, as used in AM/PM. | | [ChronoUnit.HOURS](ChronoUnit.md) | Unit that represents the concept of an hour. | | [ChronoUnit.MICROS](ChronoUnit.md) | Unit that represents the concept of a microsecond. | | [ChronoUnit.MILLENNIA](ChronoUnit.md) | Unit that represents the concept of a millennium. | | [ChronoUnit.MILLIS](ChronoUnit.md) | Unit that represents the concept of a millisecond. | | [ChronoUnit.MINUTES](ChronoUnit.md) | Unit that represents the concept of a minute. | | [ChronoUnit.MONTHS](ChronoUnit.md) | Unit that represents the concept of a month. | | [ChronoUnit.NANOS](ChronoUnit.md) | Unit that represents the concept of a nanosecond, the smallest supported unit of time. | | [ChronoUnit.SECONDS](ChronoUnit.md) | Unit that represents the concept of a second. | | [ChronoUnit.WEEKS](ChronoUnit.md) | Unit that represents the concept of a week. | | [ChronoUnit.YEARS](ChronoUnit.md) | Unit that represents the concept of a year. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 A standard set of date periods units.
 
-This set of units provide unit-based access to manipulate a date, time or date-time. The standard set of units can be extended by implementing [TemporalUnit](../java/time/temporal/TemporalUnit.md).
+This set of units provide unit-based access to manipulate a date, time or date-time. The standard set of units can be extended by implementing [TemporalUnit](TemporalUnit.md).
 
 These units are intended to be applicable in multiple calendar systems. For example, most non-ISO calendar systems define units of years, months and days, just with slightly different rules. The documentation of each unit explains how it operates.
 
@@ -26,35 +26,35 @@ These units are intended to be applicable in multiple calendar systems. For exam
 
 | Enum values ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [CENTURIES](../java/time/temporal/ChronoUnit.md) Unit that represents the concept of a century. |
-| [DAYS](../java/time/temporal/ChronoUnit.md) Unit that represents the concept of a day. |
-| [DECADES](../java/time/temporal/ChronoUnit.md) Unit that represents the concept of a decade. |
-| [ERAS](../java/time/temporal/ChronoUnit.md) Unit that represents the concept of an era. |
-| [FOREVER](../java/time/temporal/ChronoUnit.md) Artificial unit that represents the concept of forever. |
-| [HALF_DAYS](../java/time/temporal/ChronoUnit.md) Unit that represents the concept of half a day, as used in AM/PM. |
-| [HOURS](../java/time/temporal/ChronoUnit.md) Unit that represents the concept of an hour. |
-| [MICROS](../java/time/temporal/ChronoUnit.md) Unit that represents the concept of a microsecond. |
-| [MILLENNIA](../java/time/temporal/ChronoUnit.md) Unit that represents the concept of a millennium. |
-| [MILLIS](../java/time/temporal/ChronoUnit.md) Unit that represents the concept of a millisecond. |
-| [MINUTES](../java/time/temporal/ChronoUnit.md) Unit that represents the concept of a minute. |
-| [MONTHS](../java/time/temporal/ChronoUnit.md) Unit that represents the concept of a month. |
-| [NANOS](../java/time/temporal/ChronoUnit.md) Unit that represents the concept of a nanosecond, the smallest supported unit of time. |
-| [SECONDS](../java/time/temporal/ChronoUnit.md) Unit that represents the concept of a second. |
-| [WEEKS](../java/time/temporal/ChronoUnit.md) Unit that represents the concept of a week. |
-| [YEARS](../java/time/temporal/ChronoUnit.md) Unit that represents the concept of a year. |
+| [CENTURIES](ChronoUnit.md) Unit that represents the concept of a century. |
+| [DAYS](ChronoUnit.md) Unit that represents the concept of a day. |
+| [DECADES](ChronoUnit.md) Unit that represents the concept of a decade. |
+| [ERAS](ChronoUnit.md) Unit that represents the concept of an era. |
+| [FOREVER](ChronoUnit.md) Artificial unit that represents the concept of forever. |
+| [HALF_DAYS](ChronoUnit.md) Unit that represents the concept of half a day, as used in AM/PM. |
+| [HOURS](ChronoUnit.md) Unit that represents the concept of an hour. |
+| [MICROS](ChronoUnit.md) Unit that represents the concept of a microsecond. |
+| [MILLENNIA](ChronoUnit.md) Unit that represents the concept of a millennium. |
+| [MILLIS](ChronoUnit.md) Unit that represents the concept of a millisecond. |
+| [MINUTES](ChronoUnit.md) Unit that represents the concept of a minute. |
+| [MONTHS](ChronoUnit.md) Unit that represents the concept of a month. |
+| [NANOS](ChronoUnit.md) Unit that represents the concept of a nanosecond, the smallest supported unit of time. |
+| [SECONDS](ChronoUnit.md) Unit that represents the concept of a second. |
+| [WEEKS](ChronoUnit.md) Unit that represents the concept of a week. |
+| [YEARS](ChronoUnit.md) Unit that represents the concept of a year. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| R | [addTo](../java/time/temporal/ChronoUnit.md))`(`temporal:` `R`, `amount:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` <br /> |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [between](../java/time/temporal/ChronoUnit.md))`(`temporal1Inclusive:` ` [Temporal](../java/time/temporal/Temporal.md)!`, `temporal2Exclusive:` ` [Temporal](../java/time/temporal/Temporal.md)!`)` <br /> |
-| [Duration](../java/time/Duration.md)! | [getDuration](../java/time/temporal/ChronoUnit.md))`()` Gets the estimated duration of this unit in the ISO calendar system. |
+| R | [addTo](ChronoUnit.md))`(`temporal:` `R`, `amount:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` <br /> |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [between](ChronoUnit.md))`(`temporal1Inclusive:` ` [Temporal](Temporal.md)!`, `temporal2Exclusive:` ` [Temporal](Temporal.md)!`)` <br /> |
+| [Duration](../java.time/Duration.md)! | [getDuration](ChronoUnit.md))`()` Gets the estimated duration of this unit in the ISO calendar system. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDateBased](../java/time/temporal/ChronoUnit.md))`()` Checks if this unit is a date unit. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDurationEstimated](../java/time/temporal/ChronoUnit.md))`()` Checks if the duration of the unit is an estimate. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSupportedBy](../java/time/temporal/ChronoUnit.md))`(`temporal:` ` [Temporal](../java/time/temporal/Temporal.md)!`)` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDateBased](ChronoUnit.md))`()` Checks if this unit is a date unit. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDurationEstimated](ChronoUnit.md))`()` Checks if the duration of the unit is an estimate. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSupportedBy](ChronoUnit.md))`(`temporal:` ` [Temporal](Temporal.md)!`)` <br /> |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isTimeBased](../java/time/temporal/ChronoUnit.md))`()` Checks if this unit is a time unit. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/time/temporal/ChronoUnit.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isTimeBased](ChronoUnit.md))`()` Checks if this unit is a time unit. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](ChronoUnit.md))`()` <br /> |
 
 ## Enum values
 
@@ -114,7 +114,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 enum val FOREVER : ChronoUnit
 ```
 
-Artificial unit that represents the concept of forever. This is primarily used with [TemporalField](../java/time/temporal/TemporalField.md) to represent unbounded fields such as the year or era. The estimated duration of this unit is artificially defined as the largest duration supported by [Duration](../java/time/Duration.md). 
+Artificial unit that represents the concept of forever. This is primarily used with [TemporalField](TemporalField.md) to represent unbounded fields such as the year or era. The estimated duration of this unit is artificially defined as the largest duration supported by [Duration](../java.time/Duration.md). 
 
 ### HALF_DAYS
 
@@ -276,8 +276,8 @@ fun between(
 
 | Parameters ||
 |----------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| `temporal1Inclusive` | [Temporal](../java/time/temporal/Temporal.md)!:the base temporal object, not null |
-| `temporal2Exclusive` | [Temporal](../java/time/temporal/Temporal.md)!:the other temporal object, exclusive, not null |
+| `temporal1Inclusive` | [Temporal](Temporal.md)!:the base temporal object, not null |
+| `temporal2Exclusive` | [Temporal](Temporal.md)!:the other temporal object, exclusive, not null |
 
 | Return ||
 |------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -304,7 +304,7 @@ All of the units in this class have an estimated duration. Days vary due to dayl
 
 | Return ||
 |--------------------------------------------------------------------------------------|-----------------------------------------------|
-| [Duration](../java/time/Duration.md)! | the estimated duration of this unit, not null |
+| [Duration](../java.time/Duration.md)! | the estimated duration of this unit, not null |
 
 ### isDateBased
 
@@ -350,7 +350,7 @@ fun isSupportedBy(temporal: Temporal!): Boolean
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------------|
-| `temporal` | [Temporal](../java/time/temporal/Temporal.md)!:the temporal object to check, not null |
+| `temporal` | [Temporal](Temporal.md)!:the temporal object to check, not null |
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------------|

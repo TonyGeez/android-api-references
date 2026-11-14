@@ -10,10 +10,10 @@ open class BufferedReader : Reader
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.io.Reader](../java/io/Reader.md) ||
-| | ↳ | [java.io.BufferedReader](../java/io/BufferedReader.md) |
+| ↳ | [java.io.Reader](Reader.md) ||
+| | ↳ | [java.io.BufferedReader](BufferedReader.md) |
 
-| Known Direct Subclasses [LineNumberReader](../java/io/LineNumberReader.md) |---------------------------------------------------------------------------------------------|---------------------------------------------------------------------| | [LineNumberReader](../java/io/LineNumberReader.md) | A buffered character-input stream that keeps track of line numbers. | |
+| Known Direct Subclasses [LineNumberReader](LineNumberReader.md) |---------------------------------------------------------------------------------------------|---------------------------------------------------------------------| | [LineNumberReader](LineNumberReader.md) | A buffered character-input stream that keeps track of line numbers. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 Reads text from a character-input stream, buffering characters so as to provide for the efficient reading of characters, arrays, and lines.
@@ -35,32 +35,32 @@ Programs that use DataInputStreams for textual input can be localized by replaci
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [BufferedReader](../java/io/BufferedReader.md))`(`in:` ` [Reader](../java/io/Reader.md)!`)` Creates a buffering character-input stream that uses a default-sized input buffer. |
-| [BufferedReader](../java/io/BufferedReader.md))`(`in:` ` [Reader](../java/io/Reader.md)!`, `sz:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a buffering character-input stream that uses an input buffer of the specified size. |
+| [BufferedReader](BufferedReader.md))`(`in:` ` [Reader](Reader.md)!`)` Creates a buffering character-input stream that uses a default-sized input buffer. |
+| [BufferedReader](BufferedReader.md))`(`in:` ` [Reader](Reader.md)!`, `sz:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a buffering character-input stream that uses an input buffer of the specified size. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../java/io/BufferedReader.md))`()` <br /> |
-| open [Stream](../java/util/stream/Stream.md)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [lines](../java/io/BufferedReader.md))`()` Returns a`Stream`, the elements of which are lines read from this`BufferedReader`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [mark](../java/io/BufferedReader.md))`(`readAheadLimit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Marks the present position in the stream. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](BufferedReader.md))`()` <br /> |
+| open [Stream](../java.util.stream/Stream.md)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [lines](BufferedReader.md))`()` Returns a`Stream`, the elements of which are lines read from this`BufferedReader`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [mark](BufferedReader.md))`(`readAheadLimit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Marks the present position in the stream. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [markSupported](../java/io/BufferedReader.md))`()` Tells whether this stream supports the mark() operation, which it does. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](../java/io/BufferedReader.md))`()` Reads a single character. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](../java/io/BufferedReader.md))`(`cbuf:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Reads characters into a portion of an array. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [markSupported](BufferedReader.md))`()` Tells whether this stream supports the mark() operation, which it does. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](BufferedReader.md))`()` Reads a single character. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](BufferedReader.md))`(`cbuf:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Reads characters into a portion of an array. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [readLine](../java/io/BufferedReader.md))`()` Reads a line of text. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [ready](../java/io/BufferedReader.md))`()` Tells whether this stream is ready to be read. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](../java/io/BufferedReader.md))`()` Resets the stream to the most recent mark. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [readLine](BufferedReader.md))`()` Reads a line of text. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [ready](BufferedReader.md))`()` Tells whether this stream is ready to be read. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](BufferedReader.md))`()` Resets the stream to the most recent mark. |
 | --- | --- |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [skip](../java/io/BufferedReader.md))`(`n:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Skips characters. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [skip](BufferedReader.md))`(`n:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Skips characters. |
 
 | Inherited functions ||
 |---|---|
-| From class [Reader](../java/io/Reader.md) |------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Reader](../java/io/Reader.md)! | [nullReader](../java/io/Reader.md))`()` <br /> Returns a new`Reader`that reads no characters. The returned stream is initially open. The stream is closed by calling the`close()`method. Subsequent calls to`close()`have no effect. While the stream is open, the`read()`,`read(char[])`,`read(char[], int, int)`,`read(Charbuffer)`,`ready()`,`skip(long)`, and`transferTo()`methods all behave as if end of stream has been reached. After the stream has been closed, these methods all throw`IOException`. The`markSupported()`method returns`false`. The`mark()`and`reset()`methods throw an`IOException`. The [object](../java/io/Reader.md) used to synchronize operations on the returned`Reader`is not specified. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](../java/io/Reader.md))`(`cbuf:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`)` <br /> Reads characters into an array. This method will block until some input is available, an I/O error occurs, or the end of the stream is reached. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](../java/io/Reader.md))`(`target:` ` [CharBuffer](../java/nio/CharBuffer.md)!`)` <br /> Attempts to read characters into the specified character buffer. The buffer is used as a repository of characters as-is: the only changes made are the results of a put operation. No flipping or rewinding of the buffer is performed. <br /> | | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [transferTo](../java/io/Reader.md))`(`out:` ` [Writer](../java/io/Writer.md)!`)` <br /> Reads all characters from this reader and writes the characters to the given writer in the order that they are read. On return, this reader will be at end of the stream. This method does not close either reader or writer. This method may block indefinitely reading from the reader, or writing to the writer. The behavior for the case where the reader and/or writer is*asynchronously closed*, or the thread interrupted during the transfer, is highly reader and writer specific, and therefore not specified. If an I/O error occurs reading from the reader or writing to the writer, then it may do so after some characters have been read or written. Consequently the reader may not be at end of the stream and one, or both, streams may be in an inconsistent state. It is strongly recommended that both streams be promptly closed if an I/O error occurs. <br /> | ||
+| From class [Reader](Reader.md) |------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Reader](Reader.md)! | [nullReader](Reader.md))`()` <br /> Returns a new`Reader`that reads no characters. The returned stream is initially open. The stream is closed by calling the`close()`method. Subsequent calls to`close()`have no effect. While the stream is open, the`read()`,`read(char[])`,`read(char[], int, int)`,`read(Charbuffer)`,`ready()`,`skip(long)`, and`transferTo()`methods all behave as if end of stream has been reached. After the stream has been closed, these methods all throw`IOException`. The`markSupported()`method returns`false`. The`mark()`and`reset()`methods throw an`IOException`. The [object](Reader.md) used to synchronize operations on the returned`Reader`is not specified. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](Reader.md))`(`cbuf:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`)` <br /> Reads characters into an array. This method will block until some input is available, an I/O error occurs, or the end of the stream is reached. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](Reader.md))`(`target:` ` [CharBuffer](../java.nio/CharBuffer.md)!`)` <br /> Attempts to read characters into the specified character buffer. The buffer is used as a repository of characters as-is: the only changes made are the results of a put operation. No flipping or rewinding of the buffer is performed. <br /> | | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [transferTo](Reader.md))`(`out:` ` [Writer](Writer.md)!`)` <br /> Reads all characters from this reader and writes the characters to the given writer in the order that they are read. On return, this reader will be at end of the stream. This method does not close either reader or writer. This method may block indefinitely reading from the reader, or writing to the writer. The behavior for the case where the reader and/or writer is*asynchronously closed*, or the thread interrupted during the transfer, is highly reader and writer specific, and therefore not specified. If an I/O error occurs reading from the reader or writing to the writer, then it may do so after some characters have been read or written. Consequently the reader may not be at end of the stream and one, or both, streams may be in an inconsistent state. It is strongly recommended that both streams be promptly closed if an I/O error occurs. <br /> | ||
 
 | Inherited properties ||
 |---|---|
-| From class [Reader](../java/io/Reader.md) |-----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [lock](../java/io/Reader.md) <br /> The object used to synchronize operations on this stream. For efficiency, a character-stream object may use an object other than itself to protect critical sections. A subclass should therefore use the object in this field rather than`this`or a synchronized method. <br /> | ||
+| From class [Reader](Reader.md) |-----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [lock](Reader.md) <br /> The object used to synchronize operations on this stream. For efficiency, a character-stream object may use an object other than itself to protect critical sections. A subclass should therefore use the object in this field rather than`this`or a synchronized method. <br /> | ||
 
 ## Public constructors
 
@@ -76,7 +76,7 @@ Creates a buffering character-input stream that uses a default-sized input buffe
 
 | Parameters ||
 |------|-----------------------------------------------------------------------------------|
-| `in` | [Reader](../java/io/Reader.md)!:A Reader |
+| `in` | [Reader](Reader.md)!:A Reader |
 
 ### BufferedReader
 
@@ -92,7 +92,7 @@ Creates a buffering character-input stream that uses an input buffer of the spec
 
 | Parameters ||
 |------|----------------------------------------------------------------------------------------------|
-| `in` | [Reader](../java/io/Reader.md)!:A Reader |
+| `in` | [Reader](Reader.md)!:A Reader |
 | `sz` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Input-buffer size |
 
 | Exceptions ||
@@ -122,17 +122,17 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun lines(): Stream<String!>!
 ```
 
-Returns a`Stream`, the elements of which are lines read from this`BufferedReader`. The [Stream](../java/util/stream/Stream.md) is lazily populated, i.e., read only occurs during the [terminal stream operation](../java/util/stream/_package.md).
+Returns a`Stream`, the elements of which are lines read from this`BufferedReader`. The [Stream](../java.util.stream/Stream.md) is lazily populated, i.e., read only occurs during the [terminal stream operation](../java.util.stream/_package.md).
 
 The reader must not be operated on during the execution of the terminal stream operation. Otherwise, the result of the terminal stream operation is undefined.
 
 After execution of the terminal stream operation there are no guarantees that the reader will be at a specific position from which to read the next character or line.
 
-If an [IOException](../java/io/IOException.md) is thrown when accessing the underlying`BufferedReader`, it is wrapped in an [UncheckedIOException](../java/io/UncheckedIOException.md) which will be thrown from the`Stream`method that caused the read to take place. This method will return a Stream if invoked on a BufferedReader that is closed. Any operation on that stream that requires reading from the BufferedReader after it is closed, will cause an UncheckedIOException to be thrown.
+If an [IOException](IOException.md) is thrown when accessing the underlying`BufferedReader`, it is wrapped in an [UncheckedIOException](UncheckedIOException.md) which will be thrown from the`Stream`method that caused the read to take place. This method will return a Stream if invoked on a BufferedReader that is closed. Any operation on that stream that requires reading from the BufferedReader after it is closed, will cause an UncheckedIOException to be thrown.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| [Stream](../java/util/stream/Stream.md)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>! | a`Stream<String>`providing the lines of text described by this`BufferedReader` |
+| [Stream](../java.util.stream/Stream.md)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>! | a`Stream<String>`providing the lines of text described by this`BufferedReader` |
 
 ### mark
 
@@ -199,7 +199,7 @@ open fun read(
 
 Reads characters into a portion of an array.
 
-This method implements the general contract of the corresponding [read](../java/io/Reader.md))method of the [Reader](../java/io/Reader.md) class. As an additional convenience, it attempts to read as many characters as possible by repeatedly invoking the`read`method of the underlying stream. This iterated`read`continues until one of the following conditions becomes true:
+This method implements the general contract of the corresponding [read](Reader.md))method of the [Reader](Reader.md) class. As an additional convenience, it attempts to read as many characters as possible by repeatedly invoking the`read`method of the underlying stream. This iterated`read`continues until one of the following conditions becomes true:
 
 - The specified number of characters have been read,
 - The`read`method of the underlying stream returns`-1`, indicating end-of-file, or

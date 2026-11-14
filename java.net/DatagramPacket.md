@@ -10,7 +10,7 @@ class DatagramPacket
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.net.DatagramPacket](../java/net/DatagramPacket.md) |
+| ↳ | [java.net.DatagramPacket](DatagramPacket.md) |
 
 This class represents a datagram packet.
 
@@ -20,30 +20,30 @@ Datagram packets are used to implement a connectionless packet delivery service.
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [DatagramPacket](../java/net/DatagramPacket.md))`(`buf:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a`DatagramPacket`for receiving packets of length`length`. |
-| [DatagramPacket](../java/net/DatagramPacket.md))`(`buf:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a`DatagramPacket`for receiving packets of length`length`, specifying an offset into the buffer. |
-| [DatagramPacket](../java/net/DatagramPacket.md))`(`buf:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `address:` ` [InetAddress](../java/net/InetAddress.md)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a datagram packet for sending packets of length`length`with offset`ioffset`to the specified port number on the specified host. |
-| [DatagramPacket](../java/net/DatagramPacket.md))`(`buf:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `address:` ` [SocketAddress](../java/net/SocketAddress.md)!`)` Constructs a datagram packet for sending packets of length`length`with offset`ioffset`to the specified port number on the specified host. |
-| [DatagramPacket](../java/net/DatagramPacket.md))`(`buf:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `address:` ` [InetAddress](../java/net/InetAddress.md)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a datagram packet for sending packets of length`length`to the specified port number on the specified host. |
-| [DatagramPacket](../java/net/DatagramPacket.md))`(`buf:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `address:` ` [SocketAddress](../java/net/SocketAddress.md)!`)` Constructs a datagram packet for sending packets of length`length`to the specified port number on the specified host. |
+| [DatagramPacket](DatagramPacket.md))`(`buf:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a`DatagramPacket`for receiving packets of length`length`. |
+| [DatagramPacket](DatagramPacket.md))`(`buf:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a`DatagramPacket`for receiving packets of length`length`, specifying an offset into the buffer. |
+| [DatagramPacket](DatagramPacket.md))`(`buf:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `address:` ` [InetAddress](InetAddress.md)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a datagram packet for sending packets of length`length`with offset`ioffset`to the specified port number on the specified host. |
+| [DatagramPacket](DatagramPacket.md))`(`buf:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `address:` ` [SocketAddress](SocketAddress.md)!`)` Constructs a datagram packet for sending packets of length`length`with offset`ioffset`to the specified port number on the specified host. |
+| [DatagramPacket](DatagramPacket.md))`(`buf:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `address:` ` [InetAddress](InetAddress.md)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a datagram packet for sending packets of length`length`to the specified port number on the specified host. |
+| [DatagramPacket](DatagramPacket.md))`(`buf:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `address:` ` [SocketAddress](SocketAddress.md)!`)` Constructs a datagram packet for sending packets of length`length`to the specified port number on the specified host. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [InetAddress](../java/net/InetAddress.md)! | [getAddress](../java/net/DatagramPacket.md))`()` Returns the IP address of the machine to which this datagram is being sent or from which the datagram was received. |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getData](../java/net/DatagramPacket.md))`()` Returns the data buffer. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLength](../java/net/DatagramPacket.md))`()` Returns the length of the data to be sent or the length of the data received. |
+| [InetAddress](InetAddress.md)! | [getAddress](DatagramPacket.md))`()` Returns the IP address of the machine to which this datagram is being sent or from which the datagram was received. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getData](DatagramPacket.md))`()` Returns the data buffer. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLength](DatagramPacket.md))`()` Returns the length of the data to be sent or the length of the data received. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOffset](../java/net/DatagramPacket.md))`()` Returns the offset of the data to be sent or the offset of the data received. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPort](../java/net/DatagramPacket.md))`()` Returns the port number on the remote host to which this datagram is being sent or from which the datagram was received. |
-| [SocketAddress](../java/net/SocketAddress.md)! | [getSocketAddress](../java/net/DatagramPacket.md))`()` Gets the SocketAddress (usually IP address + port number) of the remote host that this packet is being sent to or is coming from. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOffset](DatagramPacket.md))`()` Returns the offset of the data to be sent or the offset of the data received. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPort](DatagramPacket.md))`()` Returns the port number on the remote host to which this datagram is being sent or from which the datagram was received. |
+| [SocketAddress](SocketAddress.md)! | [getSocketAddress](DatagramPacket.md))`()` Gets the SocketAddress (usually IP address + port number) of the remote host that this packet is being sent to or is coming from. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAddress](../java/net/DatagramPacket.md))`(`iaddr:` ` [InetAddress](../java/net/InetAddress.md)!`)` Sets the IP address of the machine to which this datagram is being sent. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setData](../java/net/DatagramPacket.md))`(`buf:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Set the data buffer for this packet. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setData](../java/net/DatagramPacket.md))`(`buf:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the data buffer for this packet. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAddress](DatagramPacket.md))`(`iaddr:` ` [InetAddress](InetAddress.md)!`)` Sets the IP address of the machine to which this datagram is being sent. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setData](DatagramPacket.md))`(`buf:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Set the data buffer for this packet. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setData](DatagramPacket.md))`(`buf:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the data buffer for this packet. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLength](../java/net/DatagramPacket.md))`(`length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the length for this packet. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPort](../java/net/DatagramPacket.md))`(`iport:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the port number on the remote host to which this datagram is being sent. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSocketAddress](../java/net/DatagramPacket.md))`(`address:` ` [SocketAddress](../java/net/SocketAddress.md)!`)` Sets the SocketAddress (usually IP address + port number) of the remote host to which this datagram is being sent. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLength](DatagramPacket.md))`(`length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the length for this packet. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPort](DatagramPacket.md))`(`iport:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the port number on the remote host to which this datagram is being sent. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSocketAddress](DatagramPacket.md))`(`address:` ` [SocketAddress](SocketAddress.md)!`)` Sets the SocketAddress (usually IP address + port number) of the remote host to which this datagram is being sent. |
 | --- | --- |
 
 ## Public constructors
@@ -110,12 +110,12 @@ Constructs a datagram packet for sending packets of length`length`with offset`io
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the packet data offset. |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the packet data length. |
 | --- | --- |
-| `address` | [InetAddress](../java/net/InetAddress.md)!:the destination address. |
+| `address` | [InetAddress](InetAddress.md)!:the destination address. |
 | `port` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the destination port number. |
 
 **See Also**
 
-- [java.net.InetAddress](../java/net/InetAddress.md) 
+- [java.net.InetAddress](InetAddress.md) 
 
 ### DatagramPacket
 
@@ -139,7 +139,7 @@ Constructs a datagram packet for sending packets of length`length`with offset`io
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the packet data offset. |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the packet data length. |
 | --- | --- |
-| `address` | [SocketAddress](../java/net/SocketAddress.md)!:the destination socket address. |
+| `address` | [SocketAddress](SocketAddress.md)!:the destination socket address. |
 
 | Exceptions ||
 |--------------------------------------|----------------------------------|
@@ -147,7 +147,7 @@ Constructs a datagram packet for sending packets of length`length`with offset`io
 
 **See Also**
 
-- [java.net.InetAddress](../java/net/InetAddress.md) 
+- [java.net.InetAddress](InetAddress.md) 
 
 ### DatagramPacket
 
@@ -169,13 +169,13 @@ Constructs a datagram packet for sending packets of length`length`to the specifi
 |-----------|--------------------------------------------------------------------------------------------------------------|
 | `buf` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the packet data. |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the packet length. |
-| `address` | [InetAddress](../java/net/InetAddress.md)!:the destination address. |
+| `address` | [InetAddress](InetAddress.md)!:the destination address. |
 | --- | --- |
 | `port` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the destination port number. |
 
 **See Also**
 
-- [java.net.InetAddress](../java/net/InetAddress.md) 
+- [java.net.InetAddress](InetAddress.md) 
 
 ### DatagramPacket
 
@@ -194,7 +194,7 @@ Constructs a datagram packet for sending packets of length`length`to the specifi
 |-----------|------------------------------------------------------------------------------------------------------------------|
 | `buf` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the packet data. |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the packet length. |
-| `address` | [SocketAddress](../java/net/SocketAddress.md)!:the destination address. |
+| `address` | [SocketAddress](SocketAddress.md)!:the destination address. |
 | --- | --- |
 
 | Exceptions ||
@@ -203,7 +203,7 @@ Constructs a datagram packet for sending packets of length`length`to the specifi
 
 **See Also**
 
-- [java.net.InetAddress](../java/net/InetAddress.md)
+- [java.net.InetAddress](InetAddress.md)
 
 ## Public methods
 
@@ -219,11 +219,11 @@ Returns the IP address of the machine to which this datagram is being sent or fr
 
 | Return ||
 |-------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| [InetAddress](../java/net/InetAddress.md)! | the IP address of the machine to which this datagram is being sent or from which the datagram was received. |
+| [InetAddress](InetAddress.md)! | the IP address of the machine to which this datagram is being sent or from which the datagram was received. |
 
 **See Also**
 
-- [java.net.InetAddress](../java/net/InetAddress.md)
+- [java.net.InetAddress](InetAddress.md)
 - <https://developer.android.com/reference/kotlin/java/net/DatagramPacket#setAddress(java.net.InetAddress)> 
 
 ### getData
@@ -260,7 +260,7 @@ Returns the length of the data to be sent or the length of the data received.
 
 **See Also**
 
-- [#setLength(int)](../java/net/DatagramPacket.md)) 
+- [#setLength(int)](DatagramPacket.md)) 
 
 ### getOffset
 
@@ -292,7 +292,7 @@ Returns the port number on the remote host to which this datagram is being sent 
 
 **See Also**
 
-- [#setPort(int)](../java/net/DatagramPacket.md)) 
+- [#setPort(int)](DatagramPacket.md)) 
 
 ### getSocketAddress
 
@@ -306,11 +306,11 @@ Gets the SocketAddress (usually IP address + port number) of the remote host tha
 
 | Return ||
 |-----------------------------------------------------------------------------------------|--------------------|
-| [SocketAddress](../java/net/SocketAddress.md)! | the`SocketAddress` |
+| [SocketAddress](SocketAddress.md)! | the`SocketAddress` |
 
 **See Also**
 
-- [#setSocketAddress](../java/net/DatagramPacket.md)) 
+- [#setSocketAddress](DatagramPacket.md)) 
 
 ### setAddress
 
@@ -324,7 +324,7 @@ Sets the IP address of the machine to which this datagram is being sent.
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------|
-| `iaddr` | [InetAddress](../java/net/InetAddress.md)!:the`InetAddress` |
+| `iaddr` | [InetAddress](InetAddress.md)!:the`InetAddress` |
 
 **See Also**
 
@@ -350,8 +350,8 @@ Set the data buffer for this packet. With the offset of this DatagramPacket set 
 
 **See Also**
 
-- [#getLength](../java/net/DatagramPacket.md))
-- [#getData](../java/net/DatagramPacket.md)) 
+- [#getLength](DatagramPacket.md))
+- [#getData](DatagramPacket.md)) 
 
 ### setData
 
@@ -380,9 +380,9 @@ Set the data buffer for this packet. This sets the data, length and offset of th
 
 **See Also**
 
-- [#getData](../java/net/DatagramPacket.md))
-- [#getOffset](../java/net/DatagramPacket.md))
-- [#getLength](../java/net/DatagramPacket.md)) 
+- [#getData](DatagramPacket.md))
+- [#getOffset](DatagramPacket.md))
+- [#getLength](DatagramPacket.md)) 
 
 ### setLength
 
@@ -404,7 +404,7 @@ Set the length for this packet. The length of the packet is the number of bytes 
 
 **See Also**
 
-- [#getLength](../java/net/DatagramPacket.md)) 
+- [#getLength](DatagramPacket.md)) 
 
 ### setPort
 
@@ -436,7 +436,7 @@ Sets the SocketAddress (usually IP address + port number) of the remote host to 
 
 | Parameters ||
 |-----------|------------------------------------------------------------------------------------------------------------|
-| `address` | [SocketAddress](../java/net/SocketAddress.md)!:the`SocketAddress` |
+| `address` | [SocketAddress](SocketAddress.md)!:the`SocketAddress` |
 
 | Exceptions ||
 |--------------------------------------|--------------------------------------------------------------------------------|
@@ -444,4 +444,4 @@ Sets the SocketAddress (usually IP address + port number) of the remote host to 
 
 **See Also**
 
-- [#getSocketAddress](../java/net/DatagramPacket.md))
+- [#getSocketAddress](DatagramPacket.md))

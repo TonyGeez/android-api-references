@@ -8,7 +8,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface ECPrivateKey : ECKey, PrivateKey
 ```
 
-| [java.security.interfaces.ECPrivateKey](../java/security/interfaces/ECPrivateKey.md) |
+| [java.security.interfaces.ECPrivateKey](ECPrivateKey.md) |
 
 The interface to an elliptic curve (EC) private key.
 
@@ -16,15 +16,15 @@ The interface to an elliptic curve (EC) private key.
 
 | Constants ||
 |------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [serialVersionUID](../java/security/interfaces/ECPrivateKey.md) The class fingerprint that is set to indicate serialization compatibility. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [serialVersionUID](ECPrivateKey.md) The class fingerprint that is set to indicate serialization compatibility. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [BigInteger](../java/math/BigInteger.md)! | [getS](../java/security/interfaces/ECPrivateKey.md))`()` Returns the private value S. |
+| abstract [BigInteger](../java.math/BigInteger.md)! | [getS](ECPrivateKey.md))`()` Returns the private value S. |
 
 | Inherited functions ||
 |---|---|
-| From class [ECKey](../java/security/interfaces/ECKey.md) |-------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [ECParameterSpec](../java/security/spec/ECParameterSpec.md)! | [getParams](../java/security/interfaces/ECKey.md))`()` <br /> Returns the domain parameters associated with this key. The domain parameters are either explicitly specified or implicitly created during key generation. <br /> | ||
+| From class [ECKey](ECKey.md) |-------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [ECParameterSpec](../java.security.spec/ECParameterSpec.md)! | [getParams](ECKey.md))`()` <br /> Returns the domain parameters associated with this key. The domain parameters are either explicitly specified or implicitly created during key generation. <br /> | ||
 
 ## Constants
 
@@ -57,4 +57,4 @@ Returns the private value S.
 
 | Return ||
 |------------------------------------------------------------------------------------------|----------------------|
-| [BigInteger](../java/math/BigInteger.md)! | the private value S. |
+| [BigInteger](../java.math/BigInteger.md)! | the private value S. |

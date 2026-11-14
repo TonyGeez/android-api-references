@@ -4,7 +4,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 
 # MediaCasStateException
 
-Kotlin| [Java](../android/media/MediaCasStateException.md) 
+Kotlin| [Java](MediaCasStateException.md) 
 | --- | --- |
 
 ```
@@ -14,11 +14,11 @@ open class MediaCasStateException : IllegalStateException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
-| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) |||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) ||||
+| | | ↳ | [java.lang.RuntimeException](../java.lang/RuntimeException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.IllegalStateException](../java/lang/IllegalStateException.md) ||
-| | | | | ↳ | [android.media.MediaCasStateException](../android/media/MediaCasStateException.md) |
+| | | | ↳ | [java.lang.IllegalStateException](../java.lang/IllegalStateException.md) ||
+| | | | | ↳ | [android.media.MediaCasStateException](MediaCasStateException.md) |
 
 Base class for MediaCas runtime exceptions
 
@@ -26,7 +26,7 @@ Base class for MediaCas runtime exceptions
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getDiagnosticInfo](../android/media/MediaCasStateException.md))`()` Retrieve a developer-readable diagnostic information string associated with the exception. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getDiagnosticInfo](MediaCasStateException.md))`()` Retrieve a developer-readable diagnostic information string associated with the exception. |
 
 ## Public methods
 

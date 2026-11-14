@@ -8,7 +8,7 @@ open class Object
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.lang.Object](../java/lang/Object.md) |
+| ↳ | [java.lang.Object](Object.md) |
 
 Class `Object` is the root of the class hierarchy. Every class has `Object` as a superclass. All objects, including arrays, implement the methods of this class.
 
@@ -21,7 +21,7 @@ Class `Object` is the root of the class hierarchy. Every class has `Object` as a
 | Public methods ||
 |---|---|
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Object#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [Class](../java/lang/Class.md)\<\*\> | `https://developer.android.com/reference/kotlin/java/lang/Object#getClass()()` Returns the runtime class of this `Object`. |
+| [Class](Class.md)\<\*\> | `https://developer.android.com/reference/kotlin/java/lang/Object#getClass()()` Returns the runtime class of this `Object`. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Object#hashCode()()` Returns a hash code value for the object. |
 | --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Object#notify()()` Wakes up a single thread that is waiting on this object's monitor. |
@@ -271,7 +271,7 @@ Thread T then becomes disabled for thread scheduling purposes and lies dormant u
 
 - Some other thread invokes the `notify` method for this object and thread T happens to be arbitrarily chosen as the thread to be awakened.
 - Some other thread invokes the `notifyAll` method for this object.
-- Some other thread [interrupts](../java/lang/Thread.md)) thread T.
+- Some other thread [interrupts](Thread.md)) thread T.
 - The specified amount of real time has elapsed, more or less. The amount of real time, in nanoseconds, is given by the expression `1000000 * timeoutMillis + nanos`. If `timeoutMillis` and `nanos` are both zero, then real time is not taken into consideration and the thread waits until awakened by one of the other causes.
 - Thread T is awakened spuriously. (See below.)
 
@@ -281,7 +281,7 @@ A thread can wake up without being notified, interrupted, or timing out, a so-ca
 
 For more information on this topic, see section 14.2, "Condition Queues," in Brian Goetz and others' *Java Concurrency in Practice* (Addison-Wesley, 2006) or Item 69 in Joshua Bloch's *Effective Java, Second Edition* (Addison-Wesley, 2008).
 
-If the current thread is [interrupted](../java/lang/Thread.md)) by any thread before or while it is waiting, then an `InterruptedException` is thrown. The *interrupted status* of the current thread is cleared when this exception is thrown. This exception is not thrown until the lock status of this object has been restored as described above.
+If the current thread is [interrupted](Thread.md)) by any thread before or while it is waiting, then an `InterruptedException` is thrown. The *interrupted status* of the current thread is cleared when this exception is thrown. This exception is not thrown until the lock status of this object has been restored as described above.
 
 | Parameters ||
 |---|---|

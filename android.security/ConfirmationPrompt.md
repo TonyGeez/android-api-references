@@ -4,7 +4,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 
 # ConfirmationPrompt
 
-Kotlin| [Java](../android/security/ConfirmationPrompt.md) 
+Kotlin| [Java](ConfirmationPrompt.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class ConfirmationPrompt
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.security.ConfirmationPrompt](../android/security/ConfirmationPrompt.md) |
+| ↳ | [android.security.ConfirmationPrompt](ConfirmationPrompt.md) |
 
 Class used for displaying confirmation prompts.
 
@@ -29,7 +29,7 @@ The*Relying Party*is typically an external device (for example connected via Blu
 
 Before executing a transaction which requires a high assurance of user content, the application does the following:
 
-- The application gets a cryptographic nonce from the*Relying Party* and passes this as the`extraData`(via the Builder helper class) to the [presentPrompt()](../android/security/ConfirmationPrompt.md))method. The*Relying Party*stores the nonce locally since it'll use it in a later step.
+- The application gets a cryptographic nonce from the*Relying Party* and passes this as the`extraData`(via the Builder helper class) to the [presentPrompt()](ConfirmationPrompt.md))method. The*Relying Party*stores the nonce locally since it'll use it in a later step.
 - If the user approves the prompt a*Confirmation Response* is returned in the[onConfirmed(byte[])](https://developer.android.com/reference/kotlin/android/security/ConfirmationCallback#onConfirmed(kotlin.ByteArray))callback as the`dataThatWasConfirmed`parameter. This blob contains the text that was shown to the user, the`extraData`parameter, and possibly other data.
 - The application signs the*Confirmation Response* with the previously created key and sends the blob and the signature to the*Relying Party*.
 - The*Relying Party* checks that the signature was made with`Kpub`and then extracts`promptText`matches what is expected and`extraData`matches the previously created nonce. If all checks passes, the transaction is executed.
@@ -44,9 +44,9 @@ Note: It is vital to check the`promptText`because this is the only part that the
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [cancelPrompt](../android/security/ConfirmationPrompt.md))`()` Cancels a prompt currently being displayed. |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSupported](../android/security/ConfirmationPrompt.md))`(`context:` ` [Context](../android/content/Context.md)!`)` Checks if the device supports confirmation prompts. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [presentPrompt](../android/security/ConfirmationPrompt.md))`(`executor:` ` [Executor](../java/util/concurrent/Executor.md)`, `callback:` ` [ConfirmationCallback](../android/security/ConfirmationCallback.md)`)` Requests a confirmation prompt to be presented to the user. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [cancelPrompt](ConfirmationPrompt.md))`()` Cancels a prompt currently being displayed. |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSupported](ConfirmationPrompt.md))`(`context:` ` [Context](../android.content/Context.md)!`)` Checks if the device supports confirmation prompts. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [presentPrompt](ConfirmationPrompt.md))`(`executor:` ` [Executor](../java.util.concurrent/Executor.md)`, `callback:` ` [ConfirmationCallback](ConfirmationCallback.md)`)` Requests a confirmation prompt to be presented to the user. |
 | --- | --- |
 
 ## Public methods
@@ -59,7 +59,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 open fun cancelPrompt(): Unit
 ```
 
-Cancels a prompt currently being displayed. On success, the [onCanceled()](../android/security/ConfirmationCallback.md))method on the supplied callback object will be called asynchronously.
+Cancels a prompt currently being displayed. On success, the [onCanceled()](ConfirmationCallback.md))method on the supplied callback object will be called asynchronously.
 
 | Exceptions ||
 |-----------------------------------|--------------------------------------------|
@@ -77,7 +77,7 @@ Checks if the device supports confirmation prompts.
 
 | Parameters ||
 |-----------|-------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](../android/content/Context.md)!:the application context. |
+| `context` | [Context](../android.content/Context.md)!:the application context. |
 
 | Return ||
 |------------------------------------------------------------------------------------|-----------------------------------------------------------|
@@ -94,12 +94,12 @@ open fun presentPrompt(
 ): Unit
 ```
 
-Requests a confirmation prompt to be presented to the user. When the prompt is no longer being presented, one of the methods in [ConfirmationCallback](../android/security/ConfirmationCallback.md) is called on the supplied callback object. Confirmation prompts may not be available when accessibility services are running so this may fail with a [ConfirmationNotAvailableException](../android/security/ConfirmationNotAvailableException.md) exception even if [isSupported](../android/security/ConfirmationPrompt.md))returns`true`.
+Requests a confirmation prompt to be presented to the user. When the prompt is no longer being presented, one of the methods in [ConfirmationCallback](ConfirmationCallback.md) is called on the supplied callback object. Confirmation prompts may not be available when accessibility services are running so this may fail with a [ConfirmationNotAvailableException](ConfirmationNotAvailableException.md) exception even if [isSupported](ConfirmationPrompt.md))returns`true`.
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `executor` | [Executor](../java/util/concurrent/Executor.md):the executor identifying the thread that will receive the callback. This value cannot be`null`. |
-| `callback` | [ConfirmationCallback](../android/security/ConfirmationCallback.md):the callback to use when the prompt is done showing. This value cannot be`null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md):the executor identifying the thread that will receive the callback. This value cannot be`null`. |
+| `callback` | [ConfirmationCallback](ConfirmationCallback.md):the callback to use when the prompt is done showing. This value cannot be`null`. |
 
 | Exceptions ||
 |-----------------------------------------------------------|---------------------------------------------|

@@ -8,9 +8,9 @@ open class ScaleXSpan : MetricAffectingSpan, ParcelableSpan
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.text.style.CharacterStyle](../android/text/style/CharacterStyle.md) |||
-| | ↳ | [android.text.style.MetricAffectingSpan](../android/text/style/MetricAffectingSpan.md) ||
-| | | ↳ | [android.text.style.ScaleXSpan](../android/text/style/ScaleXSpan.md) |
+| ↳ | [android.text.style.CharacterStyle](CharacterStyle.md) |||
+| | ↳ | [android.text.style.MetricAffectingSpan](MetricAffectingSpan.md) ||
+| | | ↳ | [android.text.style.ScaleXSpan](ScaleXSpan.md) |
 | --- | --- | --- | --- |
 
 Scales horizontally the size of the text to which it's attached by a certain factor.
@@ -78,7 +78,7 @@ Creates a `https://developer.android.com/reference/kotlin/android/text/style/Sca
 
 | Parameters ||
 |---|---|
-| `src` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
+| `src` | [Parcel](../android.os/Parcel.md): This value cannot be `null`. |
 
 ### ScaleXSpan
 
@@ -185,5 +185,5 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |

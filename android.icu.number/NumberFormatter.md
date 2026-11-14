@@ -4,7 +4,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 
 # NumberFormatter
 
-Kotlin| [Java](../android/icu/number/NumberFormatter.md) 
+Kotlin| [Java](NumberFormatter.md) 
 | --- | --- |
 
 ```
@@ -13,9 +13,9 @@ class NumberFormatter
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.icu.number.NumberFormatter](../android/icu/number/NumberFormatter.md) |
+| ↳ | [android.icu.number.NumberFormatter](NumberFormatter.md) |
 
-All-in-one formatter for localized numbers, currencies, and units. For a full list of options, see [NumberFormatterSettings](../android/icu/number/NumberFormatterSettings.md). 
+All-in-one formatter for localized numbers, currencies, and units. For a full list of options, see [NumberFormatterSettings](NumberFormatterSettings.md). 
 
 ```kotlin
 // Most basic usage:
@@ -46,7 +46,7 @@ All-in-one formatter for localized numbers, currencies, and units. For a full li
 
 <br />
 
-This API offers more features than [android.icu.text.DecimalFormat](../android/icu/text/DecimalFormat.md) and is geared toward new users of ICU.
+This API offers more features than [android.icu.text.DecimalFormat](../android.icu.text/DecimalFormat.md) and is geared toward new users of ICU.
 
 NumberFormatter instances (i.e., LocalizedNumberFormatter and UnlocalizedNumberFormatter) are immutable and thread safe. This means that invoking a configuration method has no effect on the receiving instance; you must store and use the new number formatter instance it returns instead. 
 
@@ -77,9 +77,9 @@ Note: To format monetary/currency values, specify the currency in the \`.unit()\
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [UnlocalizedNumberFormatter](../android/icu/number/UnlocalizedNumberFormatter.md)! | [with](../android/icu/number/NumberFormatter.md))`()` Call this method at the beginning of a NumberFormatter fluent chain in which the locale is not currently known at the call site. |
-| static [LocalizedNumberFormatter](../android/icu/number/LocalizedNumberFormatter.md)! | [withLocale](../android/icu/number/NumberFormatter.md))`(`locale:` ` [ULocale](../android/icu/util/ULocale.md)!`)` Call this method at the beginning of a NumberFormatter fluent chain in which the locale is known at the call site. |
-| static [LocalizedNumberFormatter](../android/icu/number/LocalizedNumberFormatter.md)! | [withLocale](../android/icu/number/NumberFormatter.md))`(`locale:` ` [Locale](../java/util/Locale.md)!`)` Call this method at the beginning of a NumberFormatter fluent chain in which the locale is known at the call site. |
+| static [UnlocalizedNumberFormatter](UnlocalizedNumberFormatter.md)! | [with](NumberFormatter.md))`()` Call this method at the beginning of a NumberFormatter fluent chain in which the locale is not currently known at the call site. |
+| static [LocalizedNumberFormatter](LocalizedNumberFormatter.md)! | [withLocale](NumberFormatter.md))`(`locale:` ` [ULocale](../android.icu.util/ULocale.md)!`)` Call this method at the beginning of a NumberFormatter fluent chain in which the locale is known at the call site. |
+| static [LocalizedNumberFormatter](LocalizedNumberFormatter.md)! | [withLocale](NumberFormatter.md))`(`locale:` ` [Locale](../java.util/Locale.md)!`)` Call this method at the beginning of a NumberFormatter fluent chain in which the locale is known at the call site. |
 | --- | --- |
 
 ## Public methods
@@ -96,7 +96,7 @@ Call this method at the beginning of a NumberFormatter fluent chain in which the
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [UnlocalizedNumberFormatter](../android/icu/number/UnlocalizedNumberFormatter.md)! | An [UnlocalizedNumberFormatter](../android/icu/number/UnlocalizedNumberFormatter.md), to be used for chaining. |
+| [UnlocalizedNumberFormatter](UnlocalizedNumberFormatter.md)! | An [UnlocalizedNumberFormatter](UnlocalizedNumberFormatter.md), to be used for chaining. |
 
 ### withLocale
 
@@ -110,11 +110,11 @@ Call this method at the beginning of a NumberFormatter fluent chain in which the
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `locale` | [ULocale](../android/icu/util/ULocale.md)!:The locale from which to load formats and symbols for number formatting. |
+| `locale` | [ULocale](../android.icu.util/ULocale.md)!:The locale from which to load formats and symbols for number formatting. |
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| [LocalizedNumberFormatter](../android/icu/number/LocalizedNumberFormatter.md)! | A [LocalizedNumberFormatter](../android/icu/number/LocalizedNumberFormatter.md), to be used for chaining. |
+| [LocalizedNumberFormatter](LocalizedNumberFormatter.md)! | A [LocalizedNumberFormatter](LocalizedNumberFormatter.md), to be used for chaining. |
 
 ### withLocale
 
@@ -128,8 +128,8 @@ Call this method at the beginning of a NumberFormatter fluent chain in which the
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `locale` | [Locale](../java/util/Locale.md)!:The locale from which to load formats and symbols for number formatting. |
+| `locale` | [Locale](../java.util/Locale.md)!:The locale from which to load formats and symbols for number formatting. |
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| [LocalizedNumberFormatter](../android/icu/number/LocalizedNumberFormatter.md)! | A [LocalizedNumberFormatter](../android/icu/number/LocalizedNumberFormatter.md), to be used for chaining. |
+| [LocalizedNumberFormatter](LocalizedNumberFormatter.md)! | A [LocalizedNumberFormatter](LocalizedNumberFormatter.md), to be used for chaining. |

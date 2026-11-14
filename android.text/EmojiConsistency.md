@@ -4,7 +4,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # EmojiConsistency
 
-Kotlin| [Java](../android/text/EmojiConsistency.md) 
+Kotlin| [Java](EmojiConsistency.md) 
 | --- | --- |
 
 ```
@@ -13,9 +13,9 @@ class EmojiConsistency
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.text.EmojiConsistency](../android/text/EmojiConsistency.md) |
+| ↳ | [android.text.EmojiConsistency](EmojiConsistency.md) |
 
-The set of emoji that should be drawn by the system with the default font for device consistency. This is intended to be used only by applications that do custom emoji rendering using tools like [android.text.style.ReplacementSpan](../android/text/style/ReplacementSpan.md) or custom emoji fonts. An example of how this should be used:
+The set of emoji that should be drawn by the system with the default font for device consistency. This is intended to be used only by applications that do custom emoji rendering using tools like [android.text.style.ReplacementSpan](../android.text.style/ReplacementSpan.md) or custom emoji fonts. An example of how this should be used:
 
 <br />
 
@@ -30,7 +30,7 @@ The set of emoji that should be drawn by the system with the default font for de
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!\> | [getEmojiConsistencySet](../android/text/EmojiConsistency.md))`()` The set of emoji that should be drawn by the system with the default font for device consistency. |
+| static [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!\> | [getEmojiConsistencySet](EmojiConsistency.md))`()` The set of emoji that should be drawn by the system with the default font for device consistency. |
 
 ## Public methods
 
@@ -42,7 +42,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static fun getEmojiConsistencySet(): MutableSet<IntArray!>
 ```
 
-The set of emoji that should be drawn by the system with the default font for device consistency. Apps SHOULD attempt to avoid overwriting system emoji rendering with custom emoji glyphs for these codepoint sequences. Apps that display custom emoji glyphs via matching code may filter against this set. On match, the application SHOULD prefer Typeface.Default instead of a custom glyph Apps that use fonts may use this set to add [android.text.style.TypefaceSpan](../android/text/style/TypefaceSpan.md) for android.graphics.Typeface.DEFAULT for matched codepoint sequences. Codepoint sequences returned MUST match exactly to be considered a match with the exception of Variation Selectors. All codepoint sequences returned MUST be a complete emoji codepoint sequence as defined by unicode.
+The set of emoji that should be drawn by the system with the default font for device consistency. Apps SHOULD attempt to avoid overwriting system emoji rendering with custom emoji glyphs for these codepoint sequences. Apps that display custom emoji glyphs via matching code may filter against this set. On match, the application SHOULD prefer Typeface.Default instead of a custom glyph Apps that use fonts may use this set to add [android.text.style.TypefaceSpan](../android.text.style/TypefaceSpan.md) for android.graphics.Typeface.DEFAULT for matched codepoint sequences. Codepoint sequences returned MUST match exactly to be considered a match with the exception of Variation Selectors. All codepoint sequences returned MUST be a complete emoji codepoint sequence as defined by unicode.
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|

@@ -4,7 +4,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 
 # FontFamily
 
-Kotlin | [Java](../android/graphics/fonts/FontFamily.md) 
+Kotlin | [Java](FontFamily.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class FontFamily
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.graphics.fonts.FontFamily](../android/graphics/fonts/FontFamily.md) |
+| ↳ | [android.graphics.fonts.FontFamily](FontFamily.md) |
 
 A font family class can be used for creating Typeface.
 
@@ -43,8 +43,8 @@ In this example, "Hello, " is drawn with "regular.ttf", and "World." is drawn wi
 
 | Public methods ||
 |------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Font](../android/graphics/fonts/Font.md) | [getFont](../android/graphics/fonts/FontFamily.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a font |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSize](../android/graphics/fonts/FontFamily.md))`()` Returns the number of fonts in this FontFamily. |
+| [Font](Font.md) | [getFont](FontFamily.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a font |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSize](FontFamily.md))`()` Returns the number of fonts in this FontFamily. |
 
 ## Public methods
 
@@ -64,7 +64,7 @@ Returns a font
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------------|
-| [Font](../android/graphics/fonts/Font.md) | a registered font This value cannot be `null`. |
+| [Font](Font.md) | a registered font This value cannot be `null`. |
 
 ### getSize
 

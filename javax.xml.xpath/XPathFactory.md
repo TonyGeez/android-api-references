@@ -10,36 +10,36 @@ abstract class XPathFactory
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.xml.xpath.XPathFactory](../javax/xml/xpath/XPathFactory.md) |
+| ↳ | [javax.xml.xpath.XPathFactory](XPathFactory.md) |
 
-An`XPathFactory`instance can be used to create [javax.xml.xpath.XPath](../javax/xml/xpath/XPath.md) objects.
+An`XPathFactory`instance can be used to create [javax.xml.xpath.XPath](XPath.md) objects.
 
-See [newInstance(java.lang.String)](../javax/xml/xpath/XPathFactory.md))for lookup mechanism.
+See [newInstance(java.lang.String)](XPathFactory.md))for lookup mechanism.
 
 ## Summary
 
 | Constants ||
 |----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DEFAULT_OBJECT_MODEL_URI](../javax/xml/xpath/XPathFactory.md) Default Object Model URI. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DEFAULT_PROPERTY_NAME](../javax/xml/xpath/XPathFactory.md) The default property name according to the JAXP spec. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DEFAULT_OBJECT_MODEL_URI](XPathFactory.md) Default Object Model URI. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DEFAULT_PROPERTY_NAME](XPathFactory.md) The default property name according to the JAXP spec. |
 
 | Protected constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [XPathFactory](../javax/xml/xpath/XPathFactory.md))`()` Protected constructor as [newInstance()](../javax/xml/xpath/XPathFactory.md)), [newInstance(java.lang.String)](../javax/xml/xpath/XPathFactory.md))or [newInstance(java.lang.String,java.lang.String,java.lang.ClassLoader)](../javax/xml/xpath/XPathFactory.md))should be used to create a new instance of an`XPathFactory`. |
+| [XPathFactory](XPathFactory.md))`()` Protected constructor as [newInstance()](XPathFactory.md)), [newInstance(java.lang.String)](XPathFactory.md))or [newInstance(java.lang.String,java.lang.String,java.lang.ClassLoader)](XPathFactory.md))should be used to create a new instance of an`XPathFactory`. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getFeature](../javax/xml/xpath/XPathFactory.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Get the state of the named feature. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isObjectModelSupported](../javax/xml/xpath/XPathFactory.md))`(`objectModel:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Is specified object model supported by this`XPathFactory`? |
-| static [XPathFactory](../javax/xml/xpath/XPathFactory.md)! | [newInstance](../javax/xml/xpath/XPathFactory.md))`()` Get a new`XPathFactory`instance using the default object model, [DEFAULT_OBJECT_MODEL_URI](../javax/xml/xpath/XPathFactory.md), the W3C DOM. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getFeature](XPathFactory.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Get the state of the named feature. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isObjectModelSupported](XPathFactory.md))`(`objectModel:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Is specified object model supported by this`XPathFactory`? |
+| static [XPathFactory](XPathFactory.md)! | [newInstance](XPathFactory.md))`()` Get a new`XPathFactory`instance using the default object model, [DEFAULT_OBJECT_MODEL_URI](XPathFactory.md), the W3C DOM. |
 | --- | --- |
-| static [XPathFactory](../javax/xml/xpath/XPathFactory.md)! | [newInstance](../javax/xml/xpath/XPathFactory.md))`(`uri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Get a new`XPathFactory`instance using the specified object model. |
-| openstatic [XPathFactory](../javax/xml/xpath/XPathFactory.md)! | [newInstance](../javax/xml/xpath/XPathFactory.md))`(`uri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `factoryClassName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `classLoader:` ` [ClassLoader](../java/lang/ClassLoader.md)!`)` <br /> |
-| abstract [XPath](../javax/xml/xpath/XPath.md)! | [newXPath](../javax/xml/xpath/XPathFactory.md))`()` Return a new`XPath`using the underlying object model determined when the`XPathFactory`was instantiated. |
+| static [XPathFactory](XPathFactory.md)! | [newInstance](XPathFactory.md))`(`uri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Get a new`XPathFactory`instance using the specified object model. |
+| openstatic [XPathFactory](XPathFactory.md)! | [newInstance](XPathFactory.md))`(`uri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `factoryClassName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `classLoader:` ` [ClassLoader](../java.lang/ClassLoader.md)!`)` <br /> |
+| abstract [XPath](XPath.md)! | [newXPath](XPathFactory.md))`()` Return a new`XPath`using the underlying object model determined when the`XPathFactory`was instantiated. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFeature](../javax/xml/xpath/XPathFactory.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Set a feature for this`XPathFactory`and`XPath`s created by this factory. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setXPathFunctionResolver](../javax/xml/xpath/XPathFactory.md))`(`resolver:` ` [XPathFunctionResolver](../javax/xml/xpath/XPathFunctionResolver.md)!`)` Establish a default function resolver. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setXPathVariableResolver](../javax/xml/xpath/XPathFactory.md))`(`resolver:` ` [XPathVariableResolver](../javax/xml/xpath/XPathVariableResolver.md)!`)` Establish a default variable resolver. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFeature](XPathFactory.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Set a feature for this`XPathFactory`and`XPath`s created by this factory. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setXPathFunctionResolver](XPathFactory.md))`(`resolver:` ` [XPathFunctionResolver](XPathFunctionResolver.md)!`)` Establish a default function resolver. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setXPathVariableResolver](XPathFactory.md))`(`resolver:` ` [XPathVariableResolver](XPathVariableResolver.md)!`)` Establish a default variable resolver. |
 | --- | --- |
 
 ## Constants
@@ -78,7 +78,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 protected XPathFactory()
 ```
 
-Protected constructor as [newInstance()](../javax/xml/xpath/XPathFactory.md)), [newInstance(java.lang.String)](../javax/xml/xpath/XPathFactory.md))or [newInstance(java.lang.String,java.lang.String,java.lang.ClassLoader)](../javax/xml/xpath/XPathFactory.md))should be used to create a new instance of an`XPathFactory`.
+Protected constructor as [newInstance()](XPathFactory.md)), [newInstance(java.lang.String)](XPathFactory.md))or [newInstance(java.lang.String,java.lang.String,java.lang.ClassLoader)](XPathFactory.md))should be used to create a new instance of an`XPathFactory`.
 
 ## Public methods
 
@@ -92,7 +92,7 @@ abstract fun getFeature(name: String!): Boolean
 
 Get the state of the named feature.
 
-Feature names are fully qualified [java.net.URI](../java/net/URI.md) s. Implementations may define their own features. An [XPathFactoryConfigurationException](../javax/xml/xpath/XPathFactoryConfigurationException.md) is thrown if this`XPathFactory`or the`XPath`s it creates cannot support the feature. It is possible for an`XPathFactory`to expose a feature value but be unable to change its state.
+Feature names are fully qualified [java.net.URI](../java.net/URI.md) s. Implementations may define their own features. An [XPathFactoryConfigurationException](XPathFactoryConfigurationException.md) is thrown if this`XPathFactory`or the`XPath`s it creates cannot support the feature. It is possible for an`XPathFactory`to expose a feature value but be unable to change its state.
 
 | Parameters ||
 |--------|-------------------------------------------------------------------------------------------------|
@@ -138,7 +138,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 static fun newInstance(): XPathFactory!
 ```
 
-Get a new`XPathFactory`instance using the default object model, [DEFAULT_OBJECT_MODEL_URI](../javax/xml/xpath/XPathFactory.md), the W3C DOM.
+Get a new`XPathFactory`instance using the default object model, [DEFAULT_OBJECT_MODEL_URI](XPathFactory.md), the W3C DOM.
 
 This method is functionally equivalent to: 
 
@@ -151,7 +151,7 @@ Since the implementation for the W3C DOM is always available, this method will n
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|-------------------------------|
-| [XPathFactory](../javax/xml/xpath/XPathFactory.md)! | Instance of an`XPathFactory`. |
+| [XPathFactory](XPathFactory.md)! | Instance of an`XPathFactory`. |
 
 ### newInstance
 
@@ -165,7 +165,7 @@ Get a new`XPathFactory`instance using the specified object model.
 
 To find a`XPathFactory`object, this method looks the following places in the following order where "the class loader" refers to the context class loader:
 
-1. If the system property [DEFAULT_PROPERTY_NAME](../javax/xml/xpath/XPathFactory.md)+ ":uri" is present, where uri is the parameter to this method, then its value is read as a class name. The method will try to create a new instance of this class by using the class loader, and returns it if it is successfully created.
+1. If the system property [DEFAULT_PROPERTY_NAME](XPathFactory.md)+ ":uri" is present, where uri is the parameter to this method, then its value is read as a class name. The method will try to create a new instance of this class by using the class loader, and returns it if it is successfully created.
 2. ${java.home}/lib/jaxp.properties is read and the value associated with the key being the system property above is looked for. If present, the value is processed just like above.
 3. The class loader is asked for service provider provider-configuration files matching`javax.xml.xpath.XPathFactory`in the resource directory META-INF/services. See the JAR File Specification for file format and parsing rules. Each potential service provider is required to implement the method: 
 
@@ -173,13 +173,13 @@ To find a`XPathFactory`object, this method looks the following places in the fol
    <code><a docref="javax.xml.xpath.XPathFactory$isObjectModelSupported(kotlin.String)">#isObjectModelSupported(java.lang.String)</a></code>
    ```
  The first service provider found in class loader order that supports the specified object model is returned.
-4. Platform default`XPathFactory`is located in a platform specific way. There must be a platform default XPathFactory for the W3C DOM, i.e. [DEFAULT_OBJECT_MODEL_URI](../javax/xml/xpath/XPathFactory.md).
+4. Platform default`XPathFactory`is located in a platform specific way. There must be a platform default XPathFactory for the W3C DOM, i.e. [DEFAULT_OBJECT_MODEL_URI](XPathFactory.md).
 
 If everything fails, an`XPathFactoryConfigurationException`will be thrown.
 
 Tip for Trouble-shooting:
 
-See [java.util.Properties#load(java.io.InputStream)](../java/util/Properties.md))for exactly how a property file is parsed. In particular, colons ':' need to be escaped in a property file, so make sure the URIs are properly escaped in it. For example: 
+See [java.util.Properties#load(java.io.InputStream)](../java.util/Properties.md))for exactly how a property file is parsed. In particular, colons ':' need to be escaped in a property file, so make sure the URIs are properly escaped in it. For example: 
 
 ```kotlin
 http\://java.sun.com/jaxp/xpath/dom=org.acme.DomXPathFactory
@@ -188,11 +188,11 @@ http\://java.sun.com/jaxp/xpath/dom=org.acme.DomXPathFactory
 
 | Parameters ||
 |-------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `uri` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Identifies the underlying object model. The specification only defines the URI [DEFAULT_OBJECT_MODEL_URI](../javax/xml/xpath/XPathFactory.md),`http://java.sun.com/jaxp/xpath/dom`for the W3C DOM, the org.w3c.dom package, and implementations are free to introduce other URIs for other object models. |
+| `uri` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Identifies the underlying object model. The specification only defines the URI [DEFAULT_OBJECT_MODEL_URI](XPathFactory.md),`http://java.sun.com/jaxp/xpath/dom`for the W3C DOM, the org.w3c.dom package, and implementations are free to introduce other URIs for other object models. |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|-------------------------------|
-| [XPathFactory](../javax/xml/xpath/XPathFactory.md)! | Instance of an`XPathFactory`. |
+| [XPathFactory](XPathFactory.md)! | Instance of an`XPathFactory`. |
 
 | Exceptions ||
 |------------------------------------------------------|-----------------------------------------------|
@@ -215,7 +215,7 @@ open static fun newInstance(
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|-------------------------------|
-| [XPathFactory](../javax/xml/xpath/XPathFactory.md)! | Instance of an`XPathFactory`. |
+| [XPathFactory](XPathFactory.md)! | Instance of an`XPathFactory`. |
 
 | Exceptions ||
 |------------------------------------------------------|-----------------------------------------------|
@@ -236,7 +236,7 @@ Return a new`XPath`using the underlying object model determined when the`XPathFa
 
 | Return ||
 |--------------------------------------------------------------------------------|----------------------------|
-| [XPath](../javax/xml/xpath/XPath.md)! | New instance of an`XPath`. |
+| [XPath](XPath.md)! | New instance of an`XPath`. |
 
 ### setFeature
 
@@ -251,9 +251,9 @@ abstract fun setFeature(
 
 Set a feature for this`XPathFactory`and`XPath`s created by this factory.
 
-Feature names are fully qualified [java.net.URI](../java/net/URI.md) s. Implementations may define their own features. An [XPathFactoryConfigurationException](../javax/xml/xpath/XPathFactoryConfigurationException.md) is thrown if this`XPathFactory`or the`XPath`s it creates cannot support the feature. It is possible for an`XPathFactory`to expose a feature value but be unable to change its state.
+Feature names are fully qualified [java.net.URI](../java.net/URI.md) s. Implementations may define their own features. An [XPathFactoryConfigurationException](XPathFactoryConfigurationException.md) is thrown if this`XPathFactory`or the`XPath`s it creates cannot support the feature. It is possible for an`XPathFactory`to expose a feature value but be unable to change its state.
 
-All implementations are required to support the [javax.xml.XMLConstants#FEATURE_SECURE_PROCESSING](../javax/xml/XMLConstants.md) feature. When the feature is`true`, any reference to an external function is an error. Under these conditions, the implementation must not call the [XPathFunctionResolver](../javax/xml/xpath/XPathFunctionResolver.md) and must throw an [XPathFunctionException](../javax/xml/xpath/XPathFunctionException.md).
+All implementations are required to support the [javax.xml.XMLConstants#FEATURE_SECURE_PROCESSING](../javax.xml/XMLConstants.md) feature. When the feature is`true`, any reference to an external function is an error. Under these conditions, the implementation must not call the [XPathFunctionResolver](XPathFunctionResolver.md) and must throw an [XPathFunctionException](XPathFunctionException.md).
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------|
@@ -281,7 +281,7 @@ A`NullPointerException`is thrown if`resolver`is`null`.
 
 | Parameters ||
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| `resolver` | [XPathFunctionResolver](../javax/xml/xpath/XPathFunctionResolver.md)!:XPath function resolver. |
+| `resolver` | [XPathFunctionResolver](XPathFunctionResolver.md)!:XPath function resolver. |
 
 | Exceptions ||
 |----------------------------------|-----------------------|
@@ -303,7 +303,7 @@ A`NullPointerException`is thrown if`resolver`is`null`.
 
 | Parameters ||
 |------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| `resolver` | [XPathVariableResolver](../javax/xml/xpath/XPathVariableResolver.md)!:Variable resolver. |
+| `resolver` | [XPathVariableResolver](XPathVariableResolver.md)!:Variable resolver. |
 
 | Exceptions ||
 |----------------------------------|-----------------------|

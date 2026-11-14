@@ -13,7 +13,7 @@ interface StartTetheringCallback
 
 | [android.net.TetheringManager.StartTetheringCallback](../android/net/TetheringManager.StartTetheringCallback.md) |
 
-Callback for use with [startTethering](../android/net/TetheringManager.md))to find out whether tethering succeeded.
+Callback for use with [startTethering](TetheringManager.md))to find out whether tethering succeeded.
 
 ## Summary
 
@@ -36,7 +36,7 @@ Called when starting tethering failed.
 
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `error` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The error that caused the failure. Value is [android.net.TetheringManager#TETHER_ERROR_SERVICE_UNAVAIL](../android/net/TetheringManager.md), [android.net.TetheringManager#TETHER_ERROR_UNSUPPORTED](../android/net/TetheringManager.md), [android.net.TetheringManager#TETHER_ERROR_INTERNAL_ERROR](../android/net/TetheringManager.md), [android.net.TetheringManager#TETHER_ERROR_NO_CHANGE_TETHERING_PERMISSION](../android/net/TetheringManager.md), [android.net.TetheringManager#TETHER_ERROR_UNKNOWN_TYPE](../android/net/TetheringManager.md), or [android.net.TetheringManager#TETHER_ERROR_DUPLICATE_REQUEST](../android/net/TetheringManager.md) |
+| `error` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The error that caused the failure. Value is [android.net.TetheringManager#TETHER_ERROR_SERVICE_UNAVAIL](TetheringManager.md), [android.net.TetheringManager#TETHER_ERROR_UNSUPPORTED](TetheringManager.md), [android.net.TetheringManager#TETHER_ERROR_INTERNAL_ERROR](TetheringManager.md), [android.net.TetheringManager#TETHER_ERROR_NO_CHANGE_TETHERING_PERMISSION](TetheringManager.md), [android.net.TetheringManager#TETHER_ERROR_UNKNOWN_TYPE](TetheringManager.md), or [android.net.TetheringManager#TETHER_ERROR_DUPLICATE_REQUEST](TetheringManager.md) |
 
 ### onTetheringStarted
 

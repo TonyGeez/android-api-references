@@ -8,7 +8,7 @@ class AssociationInfo : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.companion.AssociationInfo](../android/companion/AssociationInfo.md) |
+| ↳ | [android.companion.AssociationInfo](AssociationInfo.md) |
 
 Details for a specific "association" that has been established between an app and companion device.
 
@@ -32,13 +32,13 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [AssociatedDevice](../android/companion/AssociatedDevice.md)? | `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo#getAssociatedDevice()()` Companion device that was associated. |
+| [AssociatedDevice](AssociatedDevice.md)? | `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo#getAssociatedDevice()()` Companion device that was associated. |
 | --- | --- |
-| [UUID](../java/util/UUID.md) | `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo#getAssociationToken()()` Association owner app can give this token to other apps to execute actions e. |
-| [Icon](../android/graphics/drawable/Icon.md)? | `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo#getDeviceIcon()()` Get the device icon of the associated device. |
-| [DeviceId](../android/companion/DeviceId.md)? | `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo#getDeviceId()()` <br /> |
+| [UUID](../java.util/UUID.md) | `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo#getAssociationToken()()` Association owner app can give this token to other apps to execute actions e. |
+| [Icon](../android.graphics.drawable/Icon.md)? | `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo#getDeviceIcon()()` Get the device icon of the associated device. |
+| [DeviceId](DeviceId.md)? | `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo#getDeviceId()()` <br /> |
 | --- | --- |
-| [MacAddress](../android/net/MacAddress.md)? | `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo#getDeviceMacAddress()()` <br /> |
+| [MacAddress](../android.net/MacAddress.md)? | `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo#getDeviceMacAddress()()` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo#getDeviceProfile()()` <br /> |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo#getDisplayName()()` <br /> |
 | --- | --- |
@@ -58,7 +58,7 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [AssociationInfo](../android/companion/AssociationInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [AssociationInfo](AssociationInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/companion/AssociationInfo#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public methods
 
@@ -362,7 +362,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

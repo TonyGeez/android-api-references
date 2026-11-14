@@ -4,7 +4,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # Power
 
-Kotlin| [Java](../android/health/connect/datatypes/units/Power.md) 
+Kotlin| [Java](Power.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class Power : Comparable<Power!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.health.connect.datatypes.units.Power](../android/health/connect/datatypes/units/Power.md) |
+| ↳ | [android.health.connect.datatypes.units.Power](Power.md) |
 
 Represents a unit of power. Supported units: watts
 
@@ -21,13 +21,13 @@ Represents a unit of power. Supported units: watts
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](../android/health/connect/datatypes/units/Power.md))`(`other:` ` [Power](../android/health/connect/datatypes/units/Power.md)`)` Compares this object with the specified object for order. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/health/connect/datatypes/units/Power.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| static [Power](../android/health/connect/datatypes/units/Power.md) | [fromWatts](../android/health/connect/datatypes/units/Power.md))`(`value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Creates a Power object with the specified value in Watts. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](Power.md))`(`other:` ` [Power](Power.md)`)` Compares this object with the specified object for order. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](Power.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| static [Power](Power.md) | [fromWatts](Power.md))`(`value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Creates a Power object with the specified value in Watts. |
 | --- | --- |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getInWatts](../android/health/connect/datatypes/units/Power.md))`()` Returns power in watts |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/health/connect/datatypes/units/Power.md))`()` Returns a hash code value for the object. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/health/connect/datatypes/units/Power.md))`()` <br /> |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getInWatts](Power.md))`()` Returns power in watts |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](Power.md))`()` Returns a hash code value for the object. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](Power.md))`()` <br /> |
 | --- | --- |
 
 ## Public methods
@@ -45,7 +45,7 @@ Compares this object with the specified object for order. Returns a negative int
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `o` | the object to be compared. |
-| `other` | [Power](../android/health/connect/datatypes/units/Power.md):the object to be compared. This value cannot be`null`. |
+| `other` | [Power](Power.md):the object to be compared. This value cannot be`null`. |
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
@@ -91,7 +91,7 @@ Creates a Power object with the specified value in Watts.
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------|-----------------------------|
-| [Power](../android/health/connect/datatypes/units/Power.md) | This value cannot be`null`. |
+| [Power](Power.md) | This value cannot be`null`. |
 
 ### getInWatts
 

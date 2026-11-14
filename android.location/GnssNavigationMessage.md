@@ -4,7 +4,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # GnssNavigationMessage
 
-Kotlin| [Java](../android/location/GnssNavigationMessage.md) 
+Kotlin| [Java](GnssNavigationMessage.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class GnssNavigationMessage : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.location.GnssNavigationMessage](../android/location/GnssNavigationMessage.md) |
+| ↳ | [android.location.GnssNavigationMessage](GnssNavigationMessage.md) |
 
 A class containing a GNSS satellite Navigation Message.
 
@@ -25,55 +25,55 @@ A class containing a GNSS satellite Navigation Message.
 
 | Constants ||
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_PARITY_PASSED](../android/location/GnssNavigationMessage.md) The Navigation Message was received without any parity error in its navigation words. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_PARITY_REBUILT](../android/location/GnssNavigationMessage.md) The Navigation Message was received with words that failed parity check, but the receiver was able to correct those words. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_UNKNOWN](../android/location/GnssNavigationMessage.md) The Navigation Message Status is 'unknown'. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_PARITY_PASSED](GnssNavigationMessage.md) The Navigation Message was received without any parity error in its navigation words. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_PARITY_REBUILT](GnssNavigationMessage.md) The Navigation Message was received with words that failed parity check, but the receiver was able to correct those words. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_UNKNOWN](GnssNavigationMessage.md) The Navigation Message Status is 'unknown'. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_BDS_CNAV1](../android/location/GnssNavigationMessage.md) Beidou CNAV1 message contained in the structure. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_BDS_CNAV2](../android/location/GnssNavigationMessage.md) Beidou CNAV2 message contained in the structure. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_BDS_D1](../android/location/GnssNavigationMessage.md) Beidou D1 message contained in the structure. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_BDS_CNAV1](GnssNavigationMessage.md) Beidou CNAV1 message contained in the structure. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_BDS_CNAV2](GnssNavigationMessage.md) Beidou CNAV2 message contained in the structure. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_BDS_D1](GnssNavigationMessage.md) Beidou D1 message contained in the structure. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_BDS_D2](../android/location/GnssNavigationMessage.md) Beidou D2 message contained in the structure. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_GAL_F](../android/location/GnssNavigationMessage.md) Galileo F/NAV message contained in the structure. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_GAL_I](../android/location/GnssNavigationMessage.md) Galileo I/NAV message contained in the structure. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_BDS_D2](GnssNavigationMessage.md) Beidou D2 message contained in the structure. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_GAL_F](GnssNavigationMessage.md) Galileo F/NAV message contained in the structure. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_GAL_I](GnssNavigationMessage.md) Galileo I/NAV message contained in the structure. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_GLO_L1CA](../android/location/GnssNavigationMessage.md) Glonass L1 CA message contained in the structure. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_GPS_CNAV2](../android/location/GnssNavigationMessage.md) GPS CNAV-2 message contained in the structure. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_GPS_L1CA](../android/location/GnssNavigationMessage.md) GPS L1 C/A message contained in the structure. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_GLO_L1CA](GnssNavigationMessage.md) Glonass L1 CA message contained in the structure. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_GPS_CNAV2](GnssNavigationMessage.md) GPS CNAV-2 message contained in the structure. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_GPS_L1CA](GnssNavigationMessage.md) GPS L1 C/A message contained in the structure. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_GPS_L2CNAV](../android/location/GnssNavigationMessage.md) GPS L2-CNAV message contained in the structure. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_GPS_L5CNAV](../android/location/GnssNavigationMessage.md) GPS L5-CNAV message contained in the structure. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_IRN_L1](../android/location/GnssNavigationMessage.md) NavIC L1 message contained in the structure. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_GPS_L2CNAV](GnssNavigationMessage.md) GPS L2-CNAV message contained in the structure. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_GPS_L5CNAV](GnssNavigationMessage.md) GPS L5-CNAV message contained in the structure. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_IRN_L1](GnssNavigationMessage.md) NavIC L1 message contained in the structure. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_IRN_L5](../android/location/GnssNavigationMessage.md) NavIC L5 message contained in the structure. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_IRN_L5CA](../android/location/GnssNavigationMessage.md) NavIC L5 C/A message contained in the structure. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_QZS_L1CA](../android/location/GnssNavigationMessage.md) QZSS L1 C/A message contained in the structure. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_IRN_L5](GnssNavigationMessage.md) NavIC L5 message contained in the structure. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_IRN_L5CA](GnssNavigationMessage.md) NavIC L5 C/A message contained in the structure. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_QZS_L1CA](GnssNavigationMessage.md) QZSS L1 C/A message contained in the structure. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_SBS](../android/location/GnssNavigationMessage.md) SBAS message contained in the structure. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_UNKNOWN](../android/location/GnssNavigationMessage.md) Message type unknown |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_SBS](GnssNavigationMessage.md) SBAS message contained in the structure. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_UNKNOWN](GnssNavigationMessage.md) Message type unknown |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android.os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android.os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android.os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/location/GnssNavigationMessage.md))`()` <br /> |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [getData](../android/location/GnssNavigationMessage.md))`()` Gets the data of the reported GNSS message. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMessageId](../android/location/GnssNavigationMessage.md))`()` Gets the Message identifier. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](GnssNavigationMessage.md))`()` <br /> |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [getData](GnssNavigationMessage.md))`()` Gets the data of the reported GNSS message. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMessageId](GnssNavigationMessage.md))`()` Gets the Message identifier. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStatus](../android/location/GnssNavigationMessage.md))`()` Gets the Status of the navigation message contained in the object. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSubmessageId](../android/location/GnssNavigationMessage.md))`()` Gets the sub-message identifier, relevant to the [getType()](../android/location/GnssNavigationMessage.md))of the message. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSvid](../android/location/GnssNavigationMessage.md))`()` Gets the satellite ID. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStatus](GnssNavigationMessage.md))`()` Gets the Status of the navigation message contained in the object. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSubmessageId](GnssNavigationMessage.md))`()` Gets the sub-message identifier, relevant to the [getType()](GnssNavigationMessage.md))of the message. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSvid](GnssNavigationMessage.md))`()` Gets the satellite ID. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getType](../android/location/GnssNavigationMessage.md))`()` Gets the type of the navigation message contained in the object. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/location/GnssNavigationMessage.md))`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/location/GnssNavigationMessage.md))`(`parcel:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getType](GnssNavigationMessage.md))`()` Gets the type of the navigation message contained in the object. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](GnssNavigationMessage.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](GnssNavigationMessage.md))`(`parcel:` ` [Parcel](../android.os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
 
 | Properties ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [GnssNavigationMessage](../android/location/GnssNavigationMessage.md)!\> | [CREATOR](../android/location/GnssNavigationMessage.md) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [GnssNavigationMessage](GnssNavigationMessage.md)!\> | [CREATOR](GnssNavigationMessage.md) <br /> |
 
 ## Constants
 
@@ -329,7 +329,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) |
 
 ### getData
 
@@ -396,7 +396,7 @@ Gets the Status of the navigation message contained in the object.
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.location.GnssNavigationMessage#STATUS_UNKNOWN](../android/location/GnssNavigationMessage.md), [android.location.GnssNavigationMessage#STATUS_PARITY_PASSED](../android/location/GnssNavigationMessage.md), or [android.location.GnssNavigationMessage#STATUS_PARITY_REBUILT](../android/location/GnssNavigationMessage.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.location.GnssNavigationMessage#STATUS_UNKNOWN](GnssNavigationMessage.md), [android.location.GnssNavigationMessage#STATUS_PARITY_PASSED](GnssNavigationMessage.md), or [android.location.GnssNavigationMessage#STATUS_PARITY_REBUILT](GnssNavigationMessage.md) |
 
 ### getSubmessageId
 
@@ -406,7 +406,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 fun getSubmessageId(): Int
 ```
 
-Gets the sub-message identifier, relevant to the [getType()](../android/location/GnssNavigationMessage.md))of the message.
+Gets the sub-message identifier, relevant to the [getType()](GnssNavigationMessage.md))of the message.
 
 - For GPS L1 C/A, BeiDou D1 \& BeiDou D2, the submessage id corresponds to the subframe number of the navigation message, in the range of 1-5.
 - For Glonass L1 C/A, this refers to the String number, in the range from 1-15
@@ -453,7 +453,7 @@ Gets the type of the navigation message contained in the object.
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.location.GnssNavigationMessage#TYPE_UNKNOWN](../android/location/GnssNavigationMessage.md), [android.location.GnssNavigationMessage#TYPE_GPS_L1CA](../android/location/GnssNavigationMessage.md), [android.location.GnssNavigationMessage#TYPE_GPS_L2CNAV](../android/location/GnssNavigationMessage.md), [android.location.GnssNavigationMessage#TYPE_GPS_L5CNAV](../android/location/GnssNavigationMessage.md), [android.location.GnssNavigationMessage#TYPE_GPS_CNAV2](../android/location/GnssNavigationMessage.md), [android.location.GnssNavigationMessage#TYPE_SBS](../android/location/GnssNavigationMessage.md), [android.location.GnssNavigationMessage#TYPE_GLO_L1CA](../android/location/GnssNavigationMessage.md), [android.location.GnssNavigationMessage#TYPE_QZS_L1CA](../android/location/GnssNavigationMessage.md), [android.location.GnssNavigationMessage#TYPE_BDS_D1](../android/location/GnssNavigationMessage.md), [android.location.GnssNavigationMessage#TYPE_BDS_D2](../android/location/GnssNavigationMessage.md), [android.location.GnssNavigationMessage#TYPE_BDS_CNAV1](../android/location/GnssNavigationMessage.md), [android.location.GnssNavigationMessage#TYPE_BDS_CNAV2](../android/location/GnssNavigationMessage.md), [android.location.GnssNavigationMessage#TYPE_GAL_I](../android/location/GnssNavigationMessage.md), [android.location.GnssNavigationMessage#TYPE_GAL_F](../android/location/GnssNavigationMessage.md), [android.location.GnssNavigationMessage#TYPE_IRN_L5CA](../android/location/GnssNavigationMessage.md), [android.location.GnssNavigationMessage#TYPE_IRN_L5](../android/location/GnssNavigationMessage.md), or [android.location.GnssNavigationMessage#TYPE_IRN_L1](../android/location/GnssNavigationMessage.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.location.GnssNavigationMessage#TYPE_UNKNOWN](GnssNavigationMessage.md), [android.location.GnssNavigationMessage#TYPE_GPS_L1CA](GnssNavigationMessage.md), [android.location.GnssNavigationMessage#TYPE_GPS_L2CNAV](GnssNavigationMessage.md), [android.location.GnssNavigationMessage#TYPE_GPS_L5CNAV](GnssNavigationMessage.md), [android.location.GnssNavigationMessage#TYPE_GPS_CNAV2](GnssNavigationMessage.md), [android.location.GnssNavigationMessage#TYPE_SBS](GnssNavigationMessage.md), [android.location.GnssNavigationMessage#TYPE_GLO_L1CA](GnssNavigationMessage.md), [android.location.GnssNavigationMessage#TYPE_QZS_L1CA](GnssNavigationMessage.md), [android.location.GnssNavigationMessage#TYPE_BDS_D1](GnssNavigationMessage.md), [android.location.GnssNavigationMessage#TYPE_BDS_D2](GnssNavigationMessage.md), [android.location.GnssNavigationMessage#TYPE_BDS_CNAV1](GnssNavigationMessage.md), [android.location.GnssNavigationMessage#TYPE_BDS_CNAV2](GnssNavigationMessage.md), [android.location.GnssNavigationMessage#TYPE_GAL_I](GnssNavigationMessage.md), [android.location.GnssNavigationMessage#TYPE_GAL_F](GnssNavigationMessage.md), [android.location.GnssNavigationMessage#TYPE_IRN_L5CA](GnssNavigationMessage.md), [android.location.GnssNavigationMessage#TYPE_IRN_L5](GnssNavigationMessage.md), or [android.location.GnssNavigationMessage#TYPE_IRN_L1](GnssNavigationMessage.md) |
 
 ### toString
 
@@ -481,7 +481,7 @@ fun writeToParcel(
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `dest` | The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

@@ -9,7 +9,7 @@ class FederatedComputeScheduleRequest
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.adservices.ondevicepersonalization.FederatedComputeScheduleRequest](../android/adservices/ondevicepersonalization/FederatedComputeScheduleRequest.md) |
+| ↳ | [android.adservices.ondevicepersonalization.FederatedComputeScheduleRequest](FederatedComputeScheduleRequest.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 37.**

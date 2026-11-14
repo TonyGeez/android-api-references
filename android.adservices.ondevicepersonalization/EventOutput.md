@@ -4,7 +4,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 
 # EventOutput
 
-Kotlin| [Java](../android/adservices/ondevicepersonalization/EventOutput.md) 
+Kotlin| [Java](EventOutput.md) 
 | --- | --- |
 
 ```
@@ -13,21 +13,21 @@ class EventOutput
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.adservices.ondevicepersonalization.EventOutput](../android/adservices/ondevicepersonalization/EventOutput.md) |
+| ↳ | [android.adservices.ondevicepersonalization.EventOutput](EventOutput.md) |
 
-The result returned by [IsolatedWorker.onEvent(EventInput, android.os.OutcomeReceiver)](../android/adservices/ondevicepersonalization/IsolatedWorker.md)).
+The result returned by [IsolatedWorker.onEvent(EventInput, android.os.OutcomeReceiver)](IsolatedWorker.md)).
 
 ## Summary
 
 | Nested classes ||
 |---|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](../android/adservices/ondevicepersonalization/EventOutput.Builder.md) A builder for [EventOutput](../android/adservices/ondevicepersonalization/EventOutput.md) |
+| | [Builder](../android/adservices/ondevicepersonalization/EventOutput.Builder.md) A builder for [EventOutput](EventOutput.md) |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/adservices/ondevicepersonalization/EventOutput.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [EventLogRecord](../android/adservices/ondevicepersonalization/EventLogRecord.md)? | [getEventLogRecord](../android/adservices/ondevicepersonalization/EventOutput.md))`()` An [EventLogRecord](../android/adservices/ondevicepersonalization/EventLogRecord.md) to be written to the EVENTS table, if not null. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/adservices/ondevicepersonalization/EventOutput.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](EventOutput.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [EventLogRecord](EventLogRecord.md)? | [getEventLogRecord](EventOutput.md))`()` An [EventLogRecord](EventLogRecord.md) to be written to the EVENTS table, if not null. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](EventOutput.md))`()` <br /> |
 | --- | --- |
 
 ## Public methods
@@ -69,7 +69,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun getEventLogRecord(): EventLogRecord?
 ```
 
-An [EventLogRecord](../android/adservices/ondevicepersonalization/EventLogRecord.md) to be written to the EVENTS table, if not null. Each [EventLogRecord](../android/adservices/ondevicepersonalization/EventLogRecord.md) is associated with a row in an existing [RequestLogRecord](../android/adservices/ondevicepersonalization/RequestLogRecord.md) that has been written to the REQUESTS table. 
+An [EventLogRecord](EventLogRecord.md) to be written to the EVENTS table, if not null. Each [EventLogRecord](EventLogRecord.md) is associated with a row in an existing [RequestLogRecord](RequestLogRecord.md) that has been written to the REQUESTS table. 
 
 ### hashCode
 

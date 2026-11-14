@@ -10,97 +10,97 @@ open class ZipFile : Closeable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.util.zip.ZipFile](../java/util/zip/ZipFile.md) |
+| ↳ | [java.util.zip.ZipFile](ZipFile.md) |
 
-| Known Direct Subclasses [JarFile](../java/util/jar/JarFile.md) |---------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------| | [JarFile](../java/util/jar/JarFile.md) | The`JarFile`class is used to read the contents of a jar file from any file that can be opened with`java.io.RandomAccessFile`. | |
+| Known Direct Subclasses [JarFile](../java.util.jar/JarFile.md) |---------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------| | [JarFile](../java.util.jar/JarFile.md) | The`JarFile`class is used to read the contents of a jar file from any file that can be opened with`java.io.RandomAccessFile`. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 This class is used to read entries from a zip file.
 
-Unless otherwise noted, passing a`null`argument to a constructor or method in this class will cause a [NullPointerException](../java/lang/NullPointerException.md) to be thrown.
+Unless otherwise noted, passing a`null`argument to a constructor or method in this class will cause a [NullPointerException](../java.lang/NullPointerException.md) to be thrown.
 
 ## Summary
 
 | Constants ||
 |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENATT](../java/util/zip/ZipFile.md) Central directory (CEN) header internal file attributes field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENATX](../java/util/zip/ZipFile.md) Central directory (CEN) header external file attributes field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENCOM](../java/util/zip/ZipFile.md) Central directory (CEN) header comment length field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENATT](ZipFile.md) Central directory (CEN) header internal file attributes field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENATX](ZipFile.md) Central directory (CEN) header external file attributes field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENCOM](ZipFile.md) Central directory (CEN) header comment length field offset. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENCRC](../java/util/zip/ZipFile.md) Central directory (CEN) header uncompressed file crc-32 value field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENDSK](../java/util/zip/ZipFile.md) Central directory (CEN) header disk number start field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENEXT](../java/util/zip/ZipFile.md) Central directory (CEN) header extra field length field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENCRC](ZipFile.md) Central directory (CEN) header uncompressed file crc-32 value field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENDSK](ZipFile.md) Central directory (CEN) header disk number start field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENEXT](ZipFile.md) Central directory (CEN) header extra field length field offset. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENFLG](../java/util/zip/ZipFile.md) Central directory (CEN) header encrypt, decrypt flags field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENHDR](../java/util/zip/ZipFile.md) Central directory (CEN) header size in bytes (including signature). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENHOW](../java/util/zip/ZipFile.md) Central directory (CEN) header compression method field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENFLG](ZipFile.md) Central directory (CEN) header encrypt, decrypt flags field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENHDR](ZipFile.md) Central directory (CEN) header size in bytes (including signature). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENHOW](ZipFile.md) Central directory (CEN) header compression method field offset. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENLEN](../java/util/zip/ZipFile.md) Central directory (CEN) header uncompressed size field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENNAM](../java/util/zip/ZipFile.md) Central directory (CEN) header filename length field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENOFF](../java/util/zip/ZipFile.md) Central directory (CEN) header LOC header offset field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENLEN](ZipFile.md) Central directory (CEN) header uncompressed size field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENNAM](ZipFile.md) Central directory (CEN) header filename length field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENOFF](ZipFile.md) Central directory (CEN) header LOC header offset field offset. |
 | --- | --- |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [CENSIG](../java/util/zip/ZipFile.md) Central directory (CEN) header signature. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENSIZ](../java/util/zip/ZipFile.md) Central directory (CEN) header compressed size field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENTIM](../java/util/zip/ZipFile.md) Central directory (CEN) header modification time field offset. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [CENSIG](ZipFile.md) Central directory (CEN) header signature. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENSIZ](ZipFile.md) Central directory (CEN) header compressed size field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENTIM](ZipFile.md) Central directory (CEN) header modification time field offset. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENVEM](../java/util/zip/ZipFile.md) Central directory (CEN) header version made by field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENVER](../java/util/zip/ZipFile.md) Central directory (CEN) header version needed to extract field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENDCOM](../java/util/zip/ZipFile.md) End of central directory (END) header zip file comment length field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENVEM](ZipFile.md) Central directory (CEN) header version made by field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENVER](ZipFile.md) Central directory (CEN) header version needed to extract field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENDCOM](ZipFile.md) End of central directory (END) header zip file comment length field offset. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENDHDR](../java/util/zip/ZipFile.md) End of central directory (END) header size in bytes (including signature). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENDOFF](../java/util/zip/ZipFile.md) End of central directory (END) header offset for the first CEN header field offset. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [ENDSIG](../java/util/zip/ZipFile.md) End of central directory (END) header signature. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENDHDR](ZipFile.md) End of central directory (END) header size in bytes (including signature). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENDOFF](ZipFile.md) End of central directory (END) header offset for the first CEN header field offset. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [ENDSIG](ZipFile.md) End of central directory (END) header signature. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENDSIZ](../java/util/zip/ZipFile.md) End of central directory (END) header central directory size in bytes field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENDSUB](../java/util/zip/ZipFile.md) End of central directory (END) header number of entries on this disk field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENDTOT](../java/util/zip/ZipFile.md) End of central directory (END) header total number of entries field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENDSIZ](ZipFile.md) End of central directory (END) header central directory size in bytes field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENDSUB](ZipFile.md) End of central directory (END) header number of entries on this disk field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENDTOT](ZipFile.md) End of central directory (END) header total number of entries field offset. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXTCRC](../java/util/zip/ZipFile.md) Extra local (EXT) header uncompressed file crc-32 value field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXTHDR](../java/util/zip/ZipFile.md) Extra local (EXT) header size in bytes (including signature). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXTLEN](../java/util/zip/ZipFile.md) Extra local (EXT) header uncompressed size field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXTCRC](ZipFile.md) Extra local (EXT) header uncompressed file crc-32 value field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXTHDR](ZipFile.md) Extra local (EXT) header size in bytes (including signature). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXTLEN](ZipFile.md) Extra local (EXT) header uncompressed size field offset. |
 | --- | --- |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [EXTSIG](../java/util/zip/ZipFile.md) Extra local (EXT) header signature. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXTSIZ](../java/util/zip/ZipFile.md) Extra local (EXT) header compressed size field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCCRC](../java/util/zip/ZipFile.md) Local file (LOC) header uncompressed file crc-32 value field offset. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [EXTSIG](ZipFile.md) Extra local (EXT) header signature. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXTSIZ](ZipFile.md) Extra local (EXT) header compressed size field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCCRC](ZipFile.md) Local file (LOC) header uncompressed file crc-32 value field offset. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCEXT](../java/util/zip/ZipFile.md) Local file (LOC) header extra field length field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCFLG](../java/util/zip/ZipFile.md) Local file (LOC) header general purpose bit flag field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCHDR](../java/util/zip/ZipFile.md) Local file (LOC) header size in bytes (including signature). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCEXT](ZipFile.md) Local file (LOC) header extra field length field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCFLG](ZipFile.md) Local file (LOC) header general purpose bit flag field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCHDR](ZipFile.md) Local file (LOC) header size in bytes (including signature). |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCHOW](../java/util/zip/ZipFile.md) Local file (LOC) header compression method field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCLEN](../java/util/zip/ZipFile.md) Local file (LOC) header uncompressed size field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCNAM](../java/util/zip/ZipFile.md) Local file (LOC) header filename length field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCHOW](ZipFile.md) Local file (LOC) header compression method field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCLEN](ZipFile.md) Local file (LOC) header uncompressed size field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCNAM](ZipFile.md) Local file (LOC) header filename length field offset. |
 | --- | --- |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [LOCSIG](../java/util/zip/ZipFile.md) Local file (LOC) header signature. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCSIZ](../java/util/zip/ZipFile.md) Local file (LOC) header compressed size field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCTIM](../java/util/zip/ZipFile.md) Local file (LOC) header modification time field offset. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [LOCSIG](ZipFile.md) Local file (LOC) header signature. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCSIZ](ZipFile.md) Local file (LOC) header compressed size field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCTIM](ZipFile.md) Local file (LOC) header modification time field offset. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCVER](../java/util/zip/ZipFile.md) Local file (LOC) header version needed to extract field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPEN_DELETE](../java/util/zip/ZipFile.md) Mode flag to open a zip file and mark it for deletion. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPEN_READ](../java/util/zip/ZipFile.md) Mode flag to open a zip file for reading. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCVER](ZipFile.md) Local file (LOC) header version needed to extract field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPEN_DELETE](ZipFile.md) Mode flag to open a zip file and mark it for deletion. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPEN_READ](ZipFile.md) Mode flag to open a zip file for reading. |
 | --- | --- |
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ZipFile](../java/util/zip/ZipFile.md))`(`file:` ` [File](../java/io/File.md)!`)` Opens a ZIP file for reading given the specified File object. |
-| [ZipFile](../java/util/zip/ZipFile.md))`(`file:` ` [File](../java/io/File.md)!`, `mode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Opens a new`ZipFile`to read from the specified`File`object in the specified mode. |
-| [ZipFile](../java/util/zip/ZipFile.md))`(`file:` ` [File](../java/io/File.md)!`, `mode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `charset:` ` [Charset](../java/nio/charset/Charset.md)!`)` Opens a new`ZipFile`to read from the specified`File`object in the specified mode. |
-| [ZipFile](../java/util/zip/ZipFile.md))`(`file:` ` [File](../java/io/File.md)!`, `charset:` ` [Charset](../java/nio/charset/Charset.md)!`)` Opens a ZIP file for reading given the specified File object. |
-| [ZipFile](../java/util/zip/ZipFile.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Opens a zip file for reading. |
-| [ZipFile](../java/util/zip/ZipFile.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `charset:` ` [Charset](../java/nio/charset/Charset.md)!`)` Opens a zip file for reading. |
+| [ZipFile](ZipFile.md))`(`file:` ` [File](../java.io/File.md)!`)` Opens a ZIP file for reading given the specified File object. |
+| [ZipFile](ZipFile.md))`(`file:` ` [File](../java.io/File.md)!`, `mode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Opens a new`ZipFile`to read from the specified`File`object in the specified mode. |
+| [ZipFile](ZipFile.md))`(`file:` ` [File](../java.io/File.md)!`, `mode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `charset:` ` [Charset](../java.nio.charset/Charset.md)!`)` Opens a new`ZipFile`to read from the specified`File`object in the specified mode. |
+| [ZipFile](ZipFile.md))`(`file:` ` [File](../java.io/File.md)!`, `charset:` ` [Charset](../java.nio.charset/Charset.md)!`)` Opens a ZIP file for reading given the specified File object. |
+| [ZipFile](ZipFile.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Opens a zip file for reading. |
+| [ZipFile](ZipFile.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `charset:` ` [Charset](../java.nio.charset/Charset.md)!`)` Opens a zip file for reading. |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../java/util/zip/ZipFile.md))`()` Closes the ZIP file. |
-| open [Enumeration](../java/util/Enumeration.md)\<out [ZipEntry](../java/util/zip/ZipEntry.md)!\>! | [entries](../java/util/zip/ZipFile.md))`()` Returns an enumeration of the ZIP file entries. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getComment](../java/util/zip/ZipFile.md))`()` Returns the zip file comment, or null if none. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](ZipFile.md))`()` Closes the ZIP file. |
+| open [Enumeration](../java.util/Enumeration.md)\<out [ZipEntry](ZipEntry.md)!\>! | [entries](ZipFile.md))`()` Returns an enumeration of the ZIP file entries. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getComment](ZipFile.md))`()` Returns the zip file comment, or null if none. |
 | --- | --- |
-| open [ZipEntry](../java/util/zip/ZipEntry.md)! | [getEntry](../java/util/zip/ZipFile.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the zip file entry for the specified name, or null if not found. |
-| open [InputStream](../java/io/InputStream.md)! | [getInputStream](../java/util/zip/ZipFile.md))`(`entry:` ` [ZipEntry](../java/util/zip/ZipEntry.md)!`)` Returns an input stream for reading the contents of the specified zip file entry. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](../java/util/zip/ZipFile.md))`()` Returns the path name of the ZIP file. |
+| open [ZipEntry](ZipEntry.md)! | [getEntry](ZipFile.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the zip file entry for the specified name, or null if not found. |
+| open [InputStream](../java.io/InputStream.md)! | [getInputStream](ZipFile.md))`(`entry:` ` [ZipEntry](ZipEntry.md)!`)` Returns an input stream for reading the contents of the specified zip file entry. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](ZipFile.md))`()` Returns the path name of the ZIP file. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [size](../java/util/zip/ZipFile.md))`()` Returns the number of entries in the ZIP file. |
-| open [Stream](../java/util/stream/Stream.md)\<out [ZipEntry](../java/util/zip/ZipEntry.md)!\>! | [stream](../java/util/zip/ZipFile.md))`()` Returns an ordered`Stream`over the ZIP file entries. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [size](ZipFile.md))`()` Returns the number of entries in the ZIP file. |
+| open [Stream](../java.util.stream/Stream.md)\<out [ZipEntry](ZipEntry.md)!\>! | [stream](ZipFile.md))`()` Returns an ordered`Stream`over the ZIP file entries. |
 
 ## Constants
 
@@ -620,11 +620,11 @@ ZipFile(file: File!)
 
 Opens a ZIP file for reading given the specified File object.
 
-The UTF-8 [charset](../java/nio/charset/Charset.md) is used to decode the entry names and comments.
+The UTF-8 [charset](../java.nio.charset/Charset.md) is used to decode the entry names and comments.
 
 | Parameters ||
 |--------|------------------------------------------------------------------------------------------------------------------|
-| `file` | [File](../java/io/File.md)!:the ZIP file to be opened for reading |
+| `file` | [File](../java.io/File.md)!:the ZIP file to be opened for reading |
 
 | Exceptions ||
 |------------------------------|------------------------------------|
@@ -646,11 +646,11 @@ Opens a new`ZipFile`to read from the specified`File`object in the specified mode
 
 First, if there is a security manager, its`checkRead`method is called with the`name`argument as its argument to ensure the read is allowed.
 
-The UTF-8 [charset](../java/nio/charset/Charset.md) is used to decode the entry names and comments
+The UTF-8 [charset](../java.nio.charset/Charset.md) is used to decode the entry names and comments
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------------------------|
-| `file` | [File](../java/io/File.md)!:the ZIP file to be opened for reading |
+| `file` | [File](../java.io/File.md)!:the ZIP file to be opened for reading |
 | `mode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the mode in which the file is to be opened |
 
 | Exceptions ||
@@ -663,7 +663,7 @@ The UTF-8 [charset](../java/nio/charset/Charset.md) is used to decode the entry 
 
 **See Also**
 
-- [java.lang.SecurityManager#checkRead(java.lang.String)](../java/lang/SecurityManager.md)) 
+- [java.lang.SecurityManager#checkRead(java.lang.String)](../java.lang/SecurityManager.md)) 
 
 ### ZipFile
 
@@ -683,9 +683,9 @@ First, if there is a security manager, its`checkRead`method is called with the`n
 
 | Parameters ||
 |-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `file` | [File](../java/io/File.md)!:the ZIP file to be opened for reading |
+| `file` | [File](../java.io/File.md)!:the ZIP file to be opened for reading |
 | `mode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the mode in which the file is to be opened |
-| `charset` | [Charset](../java/nio/charset/Charset.md)!:the [charset](../java/nio/charset/Charset.md) to be used to decode the ZIP entry name and comment that are not encoded by using UTF-8 encoding (indicated by entry's general purpose flag). |
+| `charset` | [Charset](../java.nio.charset/Charset.md)!:the [charset](../java.nio.charset/Charset.md) to be used to decode the ZIP entry name and comment that are not encoded by using UTF-8 encoding (indicated by entry's general purpose flag). |
 | --- | --- |
 
 | Exceptions ||
@@ -698,7 +698,7 @@ First, if there is a security manager, its`checkRead`method is called with the`n
 
 **See Also**
 
-- [java.lang.SecurityManager#checkRead(java.lang.String)](../java/lang/SecurityManager.md)) 
+- [java.lang.SecurityManager#checkRead(java.lang.String)](../java.lang/SecurityManager.md)) 
 
 ### ZipFile
 
@@ -714,8 +714,8 @@ Opens a ZIP file for reading given the specified File object.
 
 | Parameters ||
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `file` | [File](../java/io/File.md)!:the ZIP file to be opened for reading |
-| `charset` | [Charset](../java/nio/charset/Charset.md)!:The [charset](../java/nio/charset/Charset.md) to be used to decode the ZIP entry name and comment (ignored if the [language encoding bit](../java/util/zip/_package.md) of the ZIP entry's general purpose bit flag is set). |
+| `file` | [File](../java.io/File.md)!:the ZIP file to be opened for reading |
+| `charset` | [Charset](../java.nio.charset/Charset.md)!:The [charset](../java.nio.charset/Charset.md) to be used to decode the ZIP entry name and comment (ignored if the [language encoding bit](_package.md) of the ZIP entry's general purpose bit flag is set). |
 
 | Exceptions ||
 |------------------------------|------------------------------------|
@@ -734,9 +734,9 @@ Opens a zip file for reading.
 
 First, if there is a security manager, its`checkRead`method is called with the`name`argument as its argument to ensure the read is allowed.
 
-The UTF-8 [charset](../java/nio/charset/Charset.md) is used to decode the entry names and comments.
+The UTF-8 [charset](../java.nio.charset/Charset.md) is used to decode the entry names and comments.
 
-If the app targets Android U or above, zip file entry names containing ".." or starting with "/" passed here will throw a [ZipException](../java/util/zip/ZipException.md). For more details, see [dalvik.system.ZipPathValidator](../dalvik/system/ZipPathValidator.md).
+If the app targets Android U or above, zip file entry names containing ".." or starting with "/" passed here will throw a [ZipException](ZipException.md). For more details, see [dalvik.system.ZipPathValidator](../dalvik.system/ZipPathValidator.md).
 
 | Parameters ||
 |--------|------------------------------------------------------------------------------------------------------------|
@@ -751,7 +751,7 @@ If the app targets Android U or above, zip file entry names containing ".." or s
 
 **See Also**
 
-- [java.lang.SecurityManager#checkRead(java.lang.String)](../java/lang/SecurityManager.md)) 
+- [java.lang.SecurityManager#checkRead(java.lang.String)](../java.lang/SecurityManager.md)) 
 
 ### ZipFile
 
@@ -770,7 +770,7 @@ First, if there is a security manager, its`checkRead`method is called with the`n
 | Parameters ||
 |-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the name of the zip file |
-| `charset` | [Charset](../java/nio/charset/Charset.md)!:the [charset](../java/nio/charset/Charset.md) to be used to decode the ZIP entry name and comment that are not encoded by using UTF-8 encoding (indicated by entry's general purpose flag). |
+| `charset` | [Charset](../java.nio.charset/Charset.md)!:the [charset](../java.nio.charset/Charset.md) to be used to decode the ZIP entry name and comment that are not encoded by using UTF-8 encoding (indicated by entry's general purpose flag). |
 
 | Exceptions ||
 |-------------------------------|---------------------------------------------------------------------------------------------|
@@ -781,7 +781,7 @@ First, if there is a security manager, its`checkRead`method is called with the`n
 
 **See Also**
 
-- [java.lang.SecurityManager#checkRead(java.lang.String)](../java/lang/SecurityManager.md))
+- [java.lang.SecurityManager#checkRead(java.lang.String)](../java.lang/SecurityManager.md))
 
 ## Public methods
 
@@ -795,7 +795,7 @@ open fun close(): Unit
 
 Closes the ZIP file.
 
-Closing this ZIP file will close all of the input streams previously returned by invocations of the [getInputStream](../java/util/zip/ZipFile.md))method.
+Closing this ZIP file will close all of the input streams previously returned by invocations of the [getInputStream](ZipFile.md))method.
 
 | Exceptions ||
 |-----------------------|-----------------------------------|
@@ -814,7 +814,7 @@ Returns an enumeration of the ZIP file entries.
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------|
-| [Enumeration](../java/util/Enumeration.md)<out` ` [ZipEntry](../java/util/zip/ZipEntry.md)!>! | an enumeration of the ZIP file entries |
+| [Enumeration](../java.util/Enumeration.md)<out` ` [ZipEntry](ZipEntry.md)!>! | an enumeration of the ZIP file entries |
 
 | Exceptions ||
 |-----------------------------------|---------------------------------|
@@ -854,7 +854,7 @@ Returns the zip file entry for the specified name, or null if not found.
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------|
-| [ZipEntry](../java/util/zip/ZipEntry.md)! | the zip file entry, or null if not found |
+| [ZipEntry](ZipEntry.md)! | the zip file entry, or null if not found |
 
 | Exceptions ||
 |-----------------------------------|---------------------------------|
@@ -874,11 +874,11 @@ Closing this ZIP file will, in turn, close all input streams that have been retu
 
 | Parameters ||
 |---------|-------------------------------------------------------------------------------------------------------|
-| `entry` | [ZipEntry](../java/util/zip/ZipEntry.md)!:the zip file entry |
+| `entry` | [ZipEntry](ZipEntry.md)!:the zip file entry |
 
 | Return ||
 |------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| [InputStream](../java/io/InputStream.md)! | the input stream for reading the contents of the specified zip file entry. |
+| [InputStream](../java.io/InputStream.md)! | the input stream for reading the contents of the specified zip file entry. |
 
 | Exceptions ||
 |-----------------------------------|------------------------------------|
@@ -931,7 +931,7 @@ Returns an ordered`Stream`over the ZIP file entries. Entries appear in the`Strea
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
-| [Stream](../java/util/stream/Stream.md)<out` ` [ZipEntry](../java/util/zip/ZipEntry.md)!>! | an ordered`Stream`of entries in this ZIP file |
+| [Stream](../java.util.stream/Stream.md)<out` ` [ZipEntry](ZipEntry.md)!>! | an ordered`Stream`of entries in this ZIP file |
 
 | Exceptions ||
 |-----------------------------------|---------------------------------|

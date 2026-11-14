@@ -2,7 +2,7 @@
 
 # android.hardware.display
 
-Kotlin| [Java](../android/hardware/display/_package.md)
+Kotlin| [Java](_package.md)
 | --- | --- |
 
 ## Interfaces
@@ -13,11 +13,11 @@ Kotlin| [Java](../android/hardware/display/_package.md)
 
 ## Classes
 
-| [DeviceProductInfo](../android/hardware/display/DeviceProductInfo.md) | Product-specific information about the display or the directly connected device on the display chain. |
+| [DeviceProductInfo](DeviceProductInfo.md) | Product-specific information about the display or the directly connected device on the display chain. |
 | --- | --- |
-| [DisplayManager](../android/hardware/display/DisplayManager.md) | Manages the properties of attached displays. |
-| [DisplayTopology](../android/hardware/display/DisplayTopology.md) | Represents the relative placement of extended displays. |
-| [HdrConversionMode](../android/hardware/display/HdrConversionMode.md) | Describes the HDR conversion mode for a device. |
+| [DisplayManager](DisplayManager.md) | Manages the properties of attached displays. |
+| [DisplayTopology](DisplayTopology.md) | Represents the relative placement of extended displays. |
+| [HdrConversionMode](HdrConversionMode.md) | Describes the HDR conversion mode for a device. |
 | --- | --- |
-| [VirtualDisplay](../android/hardware/display/VirtualDisplay.md) | Represents a virtual display. |
-| [VirtualDisplayConfig](../android/hardware/display/VirtualDisplayConfig.md) | Holds configuration used to create [VirtualDisplay](../android/hardware/display/VirtualDisplay.md) instances. |
+| [VirtualDisplay](VirtualDisplay.md) | Represents a virtual display. |
+| [VirtualDisplayConfig](VirtualDisplayConfig.md) | Holds configuration used to create [VirtualDisplay](VirtualDisplay.md) instances. |

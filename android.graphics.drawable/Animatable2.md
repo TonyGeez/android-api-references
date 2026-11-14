@@ -4,16 +4,16 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 
 # Animatable2
 
-Kotlin| [Java](../android/graphics/drawable/Animatable2.md) 
+Kotlin| [Java](Animatable2.md) 
 | --- | --- |
 
 ```
 interface Animatable2 : Animatable
 ```
 
-| [android.graphics.drawable.Animatable2](../android/graphics/drawable/Animatable2.md) |
+| [android.graphics.drawable.Animatable2](Animatable2.md) |
 
-| Known Direct Subclasses [AnimatedImageDrawable](../android/graphics/drawable/AnimatedImageDrawable.md), [AnimatedVectorDrawable](../android/graphics/drawable/AnimatedVectorDrawable.md) |---------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [AnimatedImageDrawable](../android/graphics/drawable/AnimatedImageDrawable.md) | [Drawable](../android/graphics/drawable/Drawable.md) for drawing animated images (like GIF). | | [AnimatedVectorDrawable](../android/graphics/drawable/AnimatedVectorDrawable.md) | This class animates properties of a [android.graphics.drawable.VectorDrawable](../android/graphics/drawable/VectorDrawable.md) with animations defined using [android.animation.ObjectAnimator](../android/animation/ObjectAnimator.md) or [android.animation.AnimatorSet](../android/animation/AnimatorSet.md). | |
+| Known Direct Subclasses [AnimatedImageDrawable](AnimatedImageDrawable.md), [AnimatedVectorDrawable](AnimatedVectorDrawable.md) |---------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [AnimatedImageDrawable](AnimatedImageDrawable.md) | [Drawable](Drawable.md) for drawing animated images (like GIF). | | [AnimatedVectorDrawable](AnimatedVectorDrawable.md) | This class animates properties of a [android.graphics.drawable.VectorDrawable](VectorDrawable.md) with animations defined using [android.animation.ObjectAnimator](../android.animation/ObjectAnimator.md) or [android.animation.AnimatorSet](../android.animation/AnimatorSet.md). | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Abstract class that drawables supporting animations and callbacks should extend.
@@ -26,14 +26,14 @@ Abstract class that drawables supporting animations and callbacks should extend.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearAnimationCallbacks](../android/graphics/drawable/Animatable2.md))`()` Removes all existing animation callbacks. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerAnimationCallback](../android/graphics/drawable/Animatable2.md))`(`callback:` ` [Animatable2.AnimationCallback](../android/graphics/drawable/Animatable2.AnimationCallback.md)`)` Adds a callback to listen to the animation events. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [unregisterAnimationCallback](../android/graphics/drawable/Animatable2.md))`(`callback:` ` [Animatable2.AnimationCallback](../android/graphics/drawable/Animatable2.AnimationCallback.md)`)` Removes the specified animation callback. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearAnimationCallbacks](Animatable2.md))`()` Removes all existing animation callbacks. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerAnimationCallback](Animatable2.md))`(`callback:` ` [Animatable2.AnimationCallback](../android/graphics/drawable/Animatable2.AnimationCallback.md)`)` Adds a callback to listen to the animation events. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [unregisterAnimationCallback](Animatable2.md))`(`callback:` ` [Animatable2.AnimationCallback](../android/graphics/drawable/Animatable2.AnimationCallback.md)`)` Removes the specified animation callback. |
 | --- | --- |
 
 | Inherited functions ||
 |---|---|
-| From class [Animatable](../android/graphics/drawable/Animatable.md) |------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRunning](../android/graphics/drawable/Animatable.md))`()` <br /> Indicates whether the animation is running. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [start](../android/graphics/drawable/Animatable.md))`()` <br /> Starts the drawable's animation. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [stop](../android/graphics/drawable/Animatable.md))`()` <br /> Stops the drawable's animation. <br /> | ||
+| From class [Animatable](Animatable.md) |------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRunning](Animatable.md))`()` <br /> Indicates whether the animation is running. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [start](Animatable.md))`()` <br /> Starts the drawable's animation. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [stop](Animatable.md))`()` <br /> Stops the drawable's animation. <br /> | ||
 
 ## Public methods
 

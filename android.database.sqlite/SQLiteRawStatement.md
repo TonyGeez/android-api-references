@@ -8,7 +8,7 @@ class SQLiteRawStatement : Closeable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.database.sqlite.SQLiteRawStatement](../android/database/sqlite/SQLiteRawStatement.md) |
+| ↳ | [android.database.sqlite.SQLiteRawStatement](SQLiteRawStatement.md) |
 
 A represents a SQLite prepared statement. The methods correspond very closely to SQLite APIs that operate on a sqlite_stmt object. In general, each API in this class corresponds to a single SQLite API.
 

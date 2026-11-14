@@ -4,7 +4,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 
 # OobInitiatorRangingConfig
 
-Kotlin| [Java](../android/ranging/oob/OobInitiatorRangingConfig.md) 
+Kotlin| [Java](OobInitiatorRangingConfig.md) 
 | --- | --- |
 
 ```
@@ -13,8 +13,8 @@ class OobInitiatorRangingConfig : RangingConfig, Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.ranging.RangingConfig](../android/ranging/RangingConfig.md) ||
-| | ↳ | [android.ranging.oob.OobInitiatorRangingConfig](../android/ranging/oob/OobInitiatorRangingConfig.md) |
+| ↳ | [android.ranging.RangingConfig](../android.ranging/RangingConfig.md) ||
+| | ↳ | [android.ranging.oob.OobInitiatorRangingConfig](OobInitiatorRangingConfig.md) |
 
 Represents the configuration for an Out-of-Band (OOB) initiator in a ranging session. This class includes configuration options such as device handles, security level, ranging mode, and interval range for setting up an OOB initiator ranging session.
 
@@ -22,48 +22,48 @@ Represents the configuration for an Out-of-Band (OOB) initiator in a ranging ses
 
 | Nested classes ||
 |---|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](../android/ranging/oob/OobInitiatorRangingConfig.Builder.md) Builder class for creating instances of [OobInitiatorRangingConfig](../android/ranging/oob/OobInitiatorRangingConfig.md). |
+| | [Builder](../android/ranging/oob/OobInitiatorRangingConfig.Builder.md) Builder class for creating instances of [OobInitiatorRangingConfig](OobInitiatorRangingConfig.md). |
 
 | Constants ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RANGING_MODE_AUTO](../android/ranging/oob/OobInitiatorRangingConfig.md) Automatic ranging mode. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RANGING_MODE_FUSED](../android/ranging/oob/OobInitiatorRangingConfig.md) Starts ranging with all the ranging technologies both devices support. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RANGING_MODE_HIGH_ACCURACY](../android/ranging/oob/OobInitiatorRangingConfig.md) High accuracy ranging mode. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RANGING_MODE_AUTO](OobInitiatorRangingConfig.md) Automatic ranging mode. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RANGING_MODE_FUSED](OobInitiatorRangingConfig.md) Starts ranging with all the ranging technologies both devices support. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RANGING_MODE_HIGH_ACCURACY](OobInitiatorRangingConfig.md) High accuracy ranging mode. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RANGING_MODE_HIGH_ACCURACY_PREFERRED](../android/ranging/oob/OobInitiatorRangingConfig.md) High accuracy ranging mode. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_LEVEL_BASIC](../android/ranging/oob/OobInitiatorRangingConfig.md) Basic security level for the ranging session. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_LEVEL_SECURE](../android/ranging/oob/OobInitiatorRangingConfig.md) Basic security level for the ranging session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RANGING_MODE_HIGH_ACCURACY_PREFERRED](OobInitiatorRangingConfig.md) High accuracy ranging mode. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_LEVEL_BASIC](OobInitiatorRangingConfig.md) Basic security level for the ranging session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_LEVEL_SECURE](OobInitiatorRangingConfig.md) Basic security level for the ranging session. |
 | --- | --- |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
-| From class [RangingConfig](../android/ranging/RangingConfig.md) |----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RANGING_SESSION_OOB](../android/ranging/RangingConfig.md) <br /> Ranging session with the out-of-band negotiations performed by the ranging API. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RANGING_SESSION_RAW](../android/ranging/RangingConfig.md) <br /> Ranging session with the out-of-band negotiations performed by the app. <br /> | ||
+| From class [Parcelable](../android.os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android.os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android.os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [RangingConfig](../android.ranging/RangingConfig.md) |----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RANGING_SESSION_OOB](../android.ranging/RangingConfig.md) <br /> Ranging session with the out-of-band negotiations performed by the ranging API. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RANGING_SESSION_RAW](../android.ranging/RangingConfig.md) <br /> Ranging session with the out-of-band negotiations performed by the app. <br /> | ||
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/ranging/oob/OobInitiatorRangingConfig.md))`()` <br /> |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [DeviceHandle](../android/ranging/oob/DeviceHandle.md)!\> | [getDeviceHandles](../android/ranging/oob/OobInitiatorRangingConfig.md))`()` Returns the list of DeviceHandles associated with the OOB initiator. |
-| [Duration](../java/time/Duration.md) | [getFastestRangingInterval](../android/ranging/oob/OobInitiatorRangingConfig.md))`()` Returns the fastest requested ranging interval. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](OobInitiatorRangingConfig.md))`()` <br /> |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [DeviceHandle](DeviceHandle.md)!\> | [getDeviceHandles](OobInitiatorRangingConfig.md))`()` Returns the list of DeviceHandles associated with the OOB initiator. |
+| [Duration](../java.time/Duration.md) | [getFastestRangingInterval](OobInitiatorRangingConfig.md))`()` Returns the fastest requested ranging interval. |
 | --- | --- |
-| [Range](../android/util/Range.md)\< [Duration](../java/time/Duration.md)!\> | [getRangingIntervalRange](../android/ranging/oob/OobInitiatorRangingConfig.md))`()` Returns the ranging interval range configuration. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRangingMode](../android/ranging/oob/OobInitiatorRangingConfig.md))`()` Returns the ranging mode for the session. |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | [getRangingTechnologyFilter](../android/ranging/oob/OobInitiatorRangingConfig.md))`()` Returns the set of ranging technologies that can be used for the session. |
+| [Range](../android.util/Range.md)\< [Duration](../java.time/Duration.md)!\> | [getRangingIntervalRange](OobInitiatorRangingConfig.md))`()` Returns the ranging interval range configuration. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRangingMode](OobInitiatorRangingConfig.md))`()` Returns the ranging mode for the session. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | [getRangingTechnologyFilter](OobInitiatorRangingConfig.md))`()` Returns the set of ranging technologies that can be used for the session. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSecurityLevel](../android/ranging/oob/OobInitiatorRangingConfig.md))`()` Returns the security level set for the ranging session. |
-| [Duration](../java/time/Duration.md) | [getSlowestRangingInterval](../android/ranging/oob/OobInitiatorRangingConfig.md))`()` Returns the slowest acceptable ranging. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/ranging/oob/OobInitiatorRangingConfig.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSecurityLevel](OobInitiatorRangingConfig.md))`()` Returns the security level set for the ranging session. |
+| [Duration](../java.time/Duration.md) | [getSlowestRangingInterval](OobInitiatorRangingConfig.md))`()` Returns the slowest acceptable ranging. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](OobInitiatorRangingConfig.md))`()` <br /> |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/ranging/oob/OobInitiatorRangingConfig.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](OobInitiatorRangingConfig.md))`(`dest:` ` [Parcel](../android.os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Inherited functions ||
 |---|---|
-| From class [Parcelable](../android/os/Parcelable.md) |------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/os/Parcelable.md))`()` <br /> Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of [writeToParcel(android.os.Parcel,int)](../android/os/Parcelable.md)), the return value of this method must include the [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) bit. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/os/Parcelable.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> Flatten this object in to a Parcel. <br /> | ||
-| From class [RangingConfig](../android/ranging/RangingConfig.md) |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRangingSessionType](../android/ranging/RangingConfig.md))`()` <br /> Gets the ranging session type android.ranging.RangingConfig.RangingSessionType <br /> | ||
+| From class [Parcelable](../android.os/Parcelable.md) |------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android.os/Parcelable.md))`()` <br /> Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. For example, if the object will include a file descriptor in the output of [writeToParcel(android.os.Parcel,int)](../android.os/Parcelable.md)), the return value of this method must include the [CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) bit. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android.os/Parcelable.md))`(`dest:` ` [Parcel](../android.os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> Flatten this object in to a Parcel. <br /> | ||
+| From class [RangingConfig](../android.ranging/RangingConfig.md) |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRangingSessionType](../android.ranging/RangingConfig.md))`()` <br /> Gets the ranging session type android.ranging.RangingConfig.RangingSessionType <br /> | ||
 
 | Properties ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [OobInitiatorRangingConfig](../android/ranging/oob/OobInitiatorRangingConfig.md)!\> | [CREATOR](../android/ranging/oob/OobInitiatorRangingConfig.md) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [OobInitiatorRangingConfig](OobInitiatorRangingConfig.md)!\> | [CREATOR](OobInitiatorRangingConfig.md) <br /> |
 
 ## Constants
 
@@ -155,7 +155,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) |
 
 ### getDeviceHandles
 
@@ -169,7 +169,7 @@ Returns the list of DeviceHandles associated with the OOB initiator.
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [DeviceHandle](../android/ranging/oob/DeviceHandle.md)!> | A list of DeviceHandle objects. This value cannot be`null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [DeviceHandle](DeviceHandle.md)!> | A list of DeviceHandle objects. This value cannot be`null`. |
 
 ### getFastestRangingInterval
 
@@ -183,7 +183,7 @@ Returns the fastest requested ranging interval.
 
 | Return ||
 |-------------------------------------------------------------------------------------|---------------------------------------------------|
-| [Duration](../java/time/Duration.md) | The fastest interval. This value cannot be`null`. |
+| [Duration](../java.time/Duration.md) | The fastest interval. This value cannot be`null`. |
 
 ### getRangingIntervalRange
 
@@ -197,7 +197,7 @@ Returns the ranging interval range configuration.
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Range](../android/util/Range.md)< [Duration](../java/time/Duration.md)!> | The [Range](../android/util/Range.md) associated with this OOB initiator. This value cannot be`null`. |
+| [Range](../android.util/Range.md)< [Duration](../java.time/Duration.md)!> | The [Range](../android.util/Range.md) associated with this OOB initiator. This value cannot be`null`. |
 
 ### getRangingMode
 
@@ -211,7 +211,7 @@ Returns the ranging mode for the session.
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the ranging mode. Possible values: [RANGING_MODE_AUTO](../android/ranging/oob/OobInitiatorRangingConfig.md) [RANGING_MODE_HIGH_ACCURACY](../android/ranging/oob/OobInitiatorRangingConfig.md) [RANGING_MODE_HIGH_ACCURACY_PREFERRED](../android/ranging/oob/OobInitiatorRangingConfig.md) [RANGING_MODE_FUSED](../android/ranging/oob/OobInitiatorRangingConfig.md) Value is [android.ranging.oob.OobInitiatorRangingConfig#RANGING_MODE_AUTO](../android/ranging/oob/OobInitiatorRangingConfig.md), [android.ranging.oob.OobInitiatorRangingConfig#RANGING_MODE_HIGH_ACCURACY](../android/ranging/oob/OobInitiatorRangingConfig.md), [android.ranging.oob.OobInitiatorRangingConfig#RANGING_MODE_HIGH_ACCURACY_PREFERRED](../android/ranging/oob/OobInitiatorRangingConfig.md), or [android.ranging.oob.OobInitiatorRangingConfig#RANGING_MODE_FUSED](../android/ranging/oob/OobInitiatorRangingConfig.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the ranging mode. Possible values: [RANGING_MODE_AUTO](OobInitiatorRangingConfig.md) [RANGING_MODE_HIGH_ACCURACY](OobInitiatorRangingConfig.md) [RANGING_MODE_HIGH_ACCURACY_PREFERRED](OobInitiatorRangingConfig.md) [RANGING_MODE_FUSED](OobInitiatorRangingConfig.md) Value is [android.ranging.oob.OobInitiatorRangingConfig#RANGING_MODE_AUTO](OobInitiatorRangingConfig.md), [android.ranging.oob.OobInitiatorRangingConfig#RANGING_MODE_HIGH_ACCURACY](OobInitiatorRangingConfig.md), [android.ranging.oob.OobInitiatorRangingConfig#RANGING_MODE_HIGH_ACCURACY_PREFERRED](OobInitiatorRangingConfig.md), or [android.ranging.oob.OobInitiatorRangingConfig#RANGING_MODE_FUSED](OobInitiatorRangingConfig.md) |
 
 ### getRangingTechnologyFilter
 
@@ -225,7 +225,7 @@ Returns the set of ranging technologies that can be used for the session. If emp
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!> | A non-null, possibly empty, [Set](../java/util/Set.md) of Ranging Technology integers. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!> | A non-null, possibly empty, [Set](../java.util/Set.md) of Ranging Technology integers. |
 
 ### getSecurityLevel
 
@@ -239,7 +239,7 @@ Returns the security level set for the ranging session.
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the security level. Possible values: [SECURITY_LEVEL_BASIC](../android/ranging/oob/OobInitiatorRangingConfig.md) [SECURITY_LEVEL_SECURE](../android/ranging/oob/OobInitiatorRangingConfig.md) Value is [android.ranging.oob.OobInitiatorRangingConfig#SECURITY_LEVEL_BASIC](../android/ranging/oob/OobInitiatorRangingConfig.md), or [android.ranging.oob.OobInitiatorRangingConfig#SECURITY_LEVEL_SECURE](../android/ranging/oob/OobInitiatorRangingConfig.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the security level. Possible values: [SECURITY_LEVEL_BASIC](OobInitiatorRangingConfig.md) [SECURITY_LEVEL_SECURE](OobInitiatorRangingConfig.md) Value is [android.ranging.oob.OobInitiatorRangingConfig#SECURITY_LEVEL_BASIC](OobInitiatorRangingConfig.md), or [android.ranging.oob.OobInitiatorRangingConfig#SECURITY_LEVEL_SECURE](OobInitiatorRangingConfig.md) |
 
 ### getSlowestRangingInterval
 
@@ -253,7 +253,7 @@ Returns the slowest acceptable ranging.
 
 | Return ||
 |-------------------------------------------------------------------------------------|---------------------------------------------------|
-| [Duration](../java/time/Duration.md) | The slowest interval. This value cannot be`null`. |
+| [Duration](../java.time/Duration.md) | The slowest interval. This value cannot be`null`. |
 
 ### toString
 
@@ -282,8 +282,8 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](../android/os/Parcel.md):This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android.os/Parcel.md):This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

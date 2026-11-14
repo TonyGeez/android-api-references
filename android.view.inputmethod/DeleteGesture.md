@@ -2,7 +2,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # DeleteGesture
 
-Kotlin | [Java](../android/view/inputmethod/DeleteGesture.md)
+Kotlin | [Java](DeleteGesture.md)
 | --- | --- |
 
 ```
@@ -11,9 +11,9 @@ class DeleteGesture : PreviewableHandwritingGesture, Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.view.inputmethod.HandwritingGesture](../android/view/inputmethod/HandwritingGesture.md) |||
-| | ↳ | [android.view.inputmethod.PreviewableHandwritingGesture](../android/view/inputmethod/PreviewableHandwritingGesture.md) ||
-| | | ↳ | [android.view.inputmethod.DeleteGesture](../android/view/inputmethod/DeleteGesture.md) |
+| ↳ | [android.view.inputmethod.HandwritingGesture](HandwritingGesture.md) |||
+| | ↳ | [android.view.inputmethod.PreviewableHandwritingGesture](PreviewableHandwritingGesture.md) ||
+| | | ↳ | [android.view.inputmethod.DeleteGesture](DeleteGesture.md) |
 | --- | --- | --- | --- |
 
 A sub-class of `https://developer.android.com/reference/kotlin/android/view/inputmethod/HandwritingGesture` for deleting an area of text using single rectangle. This class holds the information required for deletion of text in toolkit widgets like `https://developer.android.com/reference/kotlin/android/widget/TextView.html#`.
@@ -34,7 +34,7 @@ Note: This deletes all text *within* the given area. To delete a range *between*
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/DeleteGesture#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/DeleteGesture#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [RectF](../android/graphics/RectF.md) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/DeleteGesture#getDeletionArea()()` Returns the deletion area `https://developer.android.com/reference/kotlin/android/graphics/RectF.html#` in screen coordinates. |
+| [RectF](../android.graphics/RectF.md) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/DeleteGesture#getDeletionArea()()` Returns the deletion area `https://developer.android.com/reference/kotlin/android/graphics/RectF.html#` in screen coordinates. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/DeleteGesture#getGranularity()()` Returns Granular level on which text should be operated. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/DeleteGesture#hashCode()()` Returns a hash code value for the object. |
@@ -43,7 +43,7 @@ Note: This deletes all text *within* the given area. To delete a range *between*
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [DeleteGesture](../android/view/inputmethod/DeleteGesture.md)!\> | `https://developer.android.com/reference/kotlin/android/view/inputmethod/DeleteGesture#CREATOR:android.os.Parcelable.Creator` Used to make this class parcelable. |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [DeleteGesture](DeleteGesture.md)!\> | `https://developer.android.com/reference/kotlin/android/view/inputmethod/DeleteGesture#CREATOR:android.os.Parcelable.Creator` Used to make this class parcelable. |
 
 ## Public methods
 
@@ -157,7 +157,7 @@ Used to package this object into a `https://developer.android.com/reference/kotl
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): The `https://developer.android.com/reference/kotlin/android/os/Parcel.html#` to be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): The `https://developer.android.com/reference/kotlin/android/os/Parcel.html#` to be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The flags used for parceling. |
 
 ## Properties

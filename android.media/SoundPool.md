@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # SoundPool
 
-Kotlin| [Java](../android/media/SoundPool.md) 
+Kotlin| [Java](SoundPool.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class SoundPool
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.SoundPool](../android/media/SoundPool.md) |
+| ↳ | [android.media.SoundPool](SoundPool.md) |
 
 The SoundPool class manages and plays audio resources for applications.
 
@@ -41,41 +41,41 @@ In our example, when the player has completed the level, the game logic should c
 
 | Nested classes ||
 |----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open | [Builder](../android/media/SoundPool.Builder.md) Builder class for [SoundPool](../android/media/SoundPool.md) objects. |
+| open | [Builder](../android/media/SoundPool.Builder.md) Builder class for [SoundPool](SoundPool.md) objects. |
 | abstract | [OnLoadCompleteListener](../android/media/SoundPool.OnLoadCompleteListener.md) <br /> |
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SoundPool](../android/media/SoundPool.md))`(`maxStreams:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `streamType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `srcQuality:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructor. |
+| [SoundPool](SoundPool.md))`(`maxStreams:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `streamType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `srcQuality:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructor. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [autoPause](../android/media/SoundPool.md))`()` Pause all active streams. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [autoResume](../android/media/SoundPool.md))`()` Resume all previously active streams. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [load](../android/media/SoundPool.md))`(`context:` ` [Context](../android/content/Context.md)!`, `resId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `priority:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Load the sound from the specified APK resource. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [autoPause](SoundPool.md))`()` Pause all active streams. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [autoResume](SoundPool.md))`()` Resume all previously active streams. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [load](SoundPool.md))`(`context:` ` [Context](../android.content/Context.md)!`, `resId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `priority:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Load the sound from the specified APK resource. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [load](../android/media/SoundPool.md))`(`afd:` ` [AssetFileDescriptor](../android/content/res/AssetFileDescriptor.md)!`, `priority:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Load the sound from an asset file descriptor. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [load](../android/media/SoundPool.md))`(`fd:` ` [FileDescriptor](../java/io/FileDescriptor.md)!`, `offset:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `length:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `priority:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Load the sound from a FileDescriptor. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [load](../android/media/SoundPool.md))`(`path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `priority:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Load the sound from the specified path. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [load](SoundPool.md))`(`afd:` ` [AssetFileDescriptor](../android.content.res/AssetFileDescriptor.md)!`, `priority:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Load the sound from an asset file descriptor. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [load](SoundPool.md))`(`fd:` ` [FileDescriptor](../java.io/FileDescriptor.md)!`, `offset:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `length:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `priority:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Load the sound from a FileDescriptor. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [load](SoundPool.md))`(`path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `priority:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Load the sound from the specified path. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [pause](../android/media/SoundPool.md))`(`streamID:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Pause a playback stream. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [play](../android/media/SoundPool.md))`(`soundID:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `leftVolume:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `rightVolume:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `priority:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `loop:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `rate:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Play a sound from a sound ID. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [release](../android/media/SoundPool.md))`()` Release the SoundPool resources. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [pause](SoundPool.md))`(`streamID:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Pause a playback stream. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [play](SoundPool.md))`(`soundID:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `leftVolume:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `rightVolume:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `priority:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `loop:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `rate:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Play a sound from a sound ID. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [release](SoundPool.md))`()` Release the SoundPool resources. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resume](../android/media/SoundPool.md))`(`streamID:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Resume a playback stream. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLoop](../android/media/SoundPool.md))`(`streamID:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `loop:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set loop mode. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOnLoadCompleteListener](../android/media/SoundPool.md))`(`listener:` ` [SoundPool.OnLoadCompleteListener](../android/media/SoundPool.OnLoadCompleteListener.md)!`)` Sets the callback hook for the OnLoadCompleteListener. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resume](SoundPool.md))`(`streamID:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Resume a playback stream. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLoop](SoundPool.md))`(`streamID:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `loop:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set loop mode. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOnLoadCompleteListener](SoundPool.md))`(`listener:` ` [SoundPool.OnLoadCompleteListener](../android/media/SoundPool.OnLoadCompleteListener.md)!`)` Sets the callback hook for the OnLoadCompleteListener. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPriority](../android/media/SoundPool.md))`(`streamID:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `priority:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Change stream priority. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRate](../android/media/SoundPool.md))`(`streamID:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `rate:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Change playback rate. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setVolume](../android/media/SoundPool.md))`(`streamID:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `leftVolume:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `rightVolume:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Set stream volume. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPriority](SoundPool.md))`(`streamID:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `priority:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Change stream priority. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRate](SoundPool.md))`(`streamID:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `rate:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Change playback rate. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setVolume](SoundPool.md))`(`streamID:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `leftVolume:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `rightVolume:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Set stream volume. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [stop](../android/media/SoundPool.md))`(`streamID:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Stop a playback stream. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [unload](../android/media/SoundPool.md))`(`soundID:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Unload a sound from a sound ID. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [stop](SoundPool.md))`(`streamID:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Stop a playback stream. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [unload](SoundPool.md))`(`soundID:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Unload a sound from a sound ID. |
 
 | Protected methods ||
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](../android/media/SoundPool.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](SoundPool.md))`()` <br /> |
 
 ## Public constructors
 
@@ -97,7 +97,7 @@ Constructor. Constructs a SoundPool object with the following characteristics:
 | Parameters ||
 |--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `maxStreams` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the maximum number of simultaneous streams for this SoundPool object |
-| `streamType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the audio stream type as described in AudioManager For example, game applications will normally use [AudioManager.STREAM_MUSIC](../android/media/AudioManager.md). |
+| `streamType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the audio stream type as described in AudioManager For example, game applications will normally use [AudioManager.STREAM_MUSIC](AudioManager.md). |
 | `srcQuality` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the sample-rate converter quality. Currently has no effect. Use 0 for the default. |
 | --- | --- |
 
@@ -143,7 +143,7 @@ Load the sound from the specified APK resource. Note that the extension is dropp
 
 | Parameters ||
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](../android/content/Context.md)!:the application context |
+| `context` | [Context](../android.content/Context.md)!:the application context |
 | `resId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the resource ID |
 | `priority` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the priority of the sound. Currently has no effect. Use a value of 1 for future compatibility. |
 | --- | --- |
@@ -167,7 +167,7 @@ Load the sound from an asset file descriptor.
 
 | Parameters ||
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `afd` | [AssetFileDescriptor](../android/content/res/AssetFileDescriptor.md)!:an asset file descriptor |
+| `afd` | [AssetFileDescriptor](../android.content.res/AssetFileDescriptor.md)!:an asset file descriptor |
 | `priority` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the priority of the sound. Currently has no effect. Use a value of 1 for future compatibility. |
 
 | Return ||
@@ -191,7 +191,7 @@ Load the sound from a FileDescriptor. This version is useful if you store multip
 
 | Parameters ||
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `fd` | [FileDescriptor](../java/io/FileDescriptor.md)!:a FileDescriptor object |
+| `fd` | [FileDescriptor](../java.io/FileDescriptor.md)!:a FileDescriptor object |
 | `offset` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):offset to the start of the sound |
 | `length` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):length of the sound |
 | --- | --- |

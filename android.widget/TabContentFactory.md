@@ -24,7 +24,7 @@ Makes the content of a tab when it is selected. Use this if your tab content nee
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [View](../android/view/View.md)! | [createTabContent](../android/widget/TabHost.TabContentFactory.md))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Callback to make the tab contents |
+| abstract [View](../android.view/View.md)! | [createTabContent](../android/widget/TabHost.TabContentFactory.md))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Callback to make the tab contents |
 
 ## Public methods
 
@@ -46,4 +46,4 @@ Callback to make the tab contents
 
 | Return ||
 |---------------------------------------------------------------------------------|-------------------------------------------------------|
-| [View](../android/view/View.md)! | The view to display the contents of the selected tab. |
+| [View](../android.view/View.md)! | The view to display the contents of the selected tab. |

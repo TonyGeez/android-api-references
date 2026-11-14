@@ -10,7 +10,7 @@ open class ObjectStreamClass : Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.io.ObjectStreamClass](../java/io/ObjectStreamClass.md) |
+| ↳ | [java.io.ObjectStreamClass](ObjectStreamClass.md) |
 
 Serialization's descriptor for classes. It contains the name and serialVersionUID of the class. The ObjectStreamClass for a specific class loaded in this Java VM can be found/created using the lookup method.
 
@@ -20,20 +20,20 @@ The algorithm to compute the SerialVersionUID is described in [Object Serializat
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Class](../java/lang/Class.md)\<\*\>! | [forClass](../java/io/ObjectStreamClass.md))`()` Return the class in the local VM that this version is mapped to. |
-| open [ObjectStreamField](../java/io/ObjectStreamField.md)! | [getField](../java/io/ObjectStreamClass.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Get the field of this class by name. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ObjectStreamField](../java/io/ObjectStreamField.md)!\>! | [getFields](../java/io/ObjectStreamClass.md))`()` Return an array of the fields of this serializable class. |
+| open [Class](../java.lang/Class.md)\<\*\>! | [forClass](ObjectStreamClass.md))`()` Return the class in the local VM that this version is mapped to. |
+| open [ObjectStreamField](ObjectStreamField.md)! | [getField](ObjectStreamClass.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Get the field of this class by name. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ObjectStreamField](ObjectStreamField.md)!\>! | [getFields](ObjectStreamClass.md))`()` Return an array of the fields of this serializable class. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](../java/io/ObjectStreamClass.md))`()` Returns the name of the class described by this descriptor. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getSerialVersionUID](../java/io/ObjectStreamClass.md))`()` Return the serialVersionUID for this class. |
-| openstatic [ObjectStreamClass](../java/io/ObjectStreamClass.md)! | [lookup](../java/io/ObjectStreamClass.md))`(`cl:` ` [Class](../java/lang/Class.md)<*>!`)` Find the descriptor for a class that can be serialized. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](ObjectStreamClass.md))`()` Returns the name of the class described by this descriptor. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getSerialVersionUID](ObjectStreamClass.md))`()` Return the serialVersionUID for this class. |
+| openstatic [ObjectStreamClass](ObjectStreamClass.md)! | [lookup](ObjectStreamClass.md))`(`cl:` ` [Class](../java.lang/Class.md)<*>!`)` Find the descriptor for a class that can be serialized. |
 | --- | --- |
-| openstatic [ObjectStreamClass](../java/io/ObjectStreamClass.md)! | [lookupAny](../java/io/ObjectStreamClass.md))`(`cl:` ` [Class](../java/lang/Class.md)<*>!`)` Returns the descriptor for any class, regardless of whether it implements [Serializable](../java/io/Serializable.md). |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/io/ObjectStreamClass.md))`()` Return a string describing this ObjectStreamClass. |
+| openstatic [ObjectStreamClass](ObjectStreamClass.md)! | [lookupAny](ObjectStreamClass.md))`(`cl:` ` [Class](../java.lang/Class.md)<*>!`)` Returns the descriptor for any class, regardless of whether it implements [Serializable](Serializable.md). |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](ObjectStreamClass.md))`()` Return a string describing this ObjectStreamClass. |
 
 | Properties ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ObjectStreamField](../java/io/ObjectStreamField.md)!\>! | [NO_FIELDS](../java/io/ObjectStreamClass.md) serialPersistentFields value indicating no serializable fields |
+| static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ObjectStreamField](ObjectStreamField.md)!\>! | [NO_FIELDS](ObjectStreamClass.md) serialPersistentFields value indicating no serializable fields |
 
 ## Public methods
 
@@ -49,7 +49,7 @@ Return the class in the local VM that this version is mapped to. Null is returne
 
 | Return ||
 |-----------------------------------------------------------------------------------|----------------------------------------------------|
-| [Class](../java/lang/Class.md)<*>! | the`Class`instance that this descriptor represents |
+| [Class](../java.lang/Class.md)<*>! | the`Class`instance that this descriptor represents |
 
 ### getField
 
@@ -67,7 +67,7 @@ Get the field of this class by name.
 
 | Return ||
 |------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
-| [ObjectStreamField](../java/io/ObjectStreamField.md)! | The ObjectStreamField object of the named field or null if there is no such named field. |
+| [ObjectStreamField](ObjectStreamField.md)! | The ObjectStreamField object of the named field or null if there is no such named field. |
 
 ### getFields
 
@@ -81,7 +81,7 @@ Return an array of the fields of this serializable class.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ObjectStreamField](../java/io/ObjectStreamField.md)!>! | an array containing an element for each persistent field of this class. Returns an array of length zero if there are no fields. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ObjectStreamField](ObjectStreamField.md)!>! | an array containing an element for each persistent field of this class. Returns an array of length zero if there are no fields. |
 
 ### getName
 
@@ -91,7 +91,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun getName(): String!
 ```
 
-Returns the name of the class described by this descriptor. This method returns the name of the class in the format that is used by the [Class.getName](../java/lang/Class.md))method.
+Returns the name of the class described by this descriptor. This method returns the name of the class in the format that is used by the [Class.getName](../java.lang/Class.md))method.
 
 | Return ||
 |-----------------------------------------------------------------------------------|---------------------------------------------|
@@ -123,11 +123,11 @@ Find the descriptor for a class that can be serialized. Creates an ObjectStreamC
 
 | Parameters ||
 |------|----------------------------------------------------------------------------------------------------------------------------|
-| `cl` | [Class](../java/lang/Class.md)\<\*\>!:class for which to get the descriptor |
+| `cl` | [Class](../java.lang/Class.md)\<\*\>!:class for which to get the descriptor |
 
 | Return ||
 |-------------------------------------------------------------------------------------------------|----------------------------------------------|
-| [ObjectStreamClass](../java/io/ObjectStreamClass.md)! | the class descriptor for the specified class |
+| [ObjectStreamClass](ObjectStreamClass.md)! | the class descriptor for the specified class |
 
 ### lookupAny
 
@@ -137,15 +137,15 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 open static fun lookupAny(cl: Class<*>!): ObjectStreamClass!
 ```
 
-Returns the descriptor for any class, regardless of whether it implements [Serializable](../java/io/Serializable.md).
+Returns the descriptor for any class, regardless of whether it implements [Serializable](Serializable.md).
 
 | Parameters ||
 |------|----------------------------------------------------------------------------------------------------------------------------|
-| `cl` | [Class](../java/lang/Class.md)\<\*\>!:class for which to get the descriptor |
+| `cl` | [Class](../java.lang/Class.md)\<\*\>!:class for which to get the descriptor |
 
 | Return ||
 |-------------------------------------------------------------------------------------------------|----------------------------------------------|
-| [ObjectStreamClass](../java/io/ObjectStreamClass.md)! | the class descriptor for the specified class |
+| [ObjectStreamClass](ObjectStreamClass.md)! | the class descriptor for the specified class |
 
 ### toString
 

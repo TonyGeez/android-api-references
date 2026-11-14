@@ -4,7 +4,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # NumberFormat
 
-Kotlin| [Java](../android/icu/text/NumberFormat.md) 
+Kotlin| [Java](NumberFormat.md) 
 | --- | --- |
 
 ```
@@ -13,20 +13,20 @@ abstract class NumberFormat : UFormat
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [java.text.Format](../java/text/Format.md) |||
-| | ↳ | [android.icu.text.UFormat](../android/icu/text/UFormat.md) ||
-| | | ↳ | [android.icu.text.NumberFormat](../android/icu/text/NumberFormat.md) |
+| ↳ | [java.text.Format](../java.text/Format.md) |||
+| | ↳ | [android.icu.text.UFormat](UFormat.md) ||
+| | | ↳ | [android.icu.text.NumberFormat](NumberFormat.md) |
 | --- | --- | --- | --- |
 
-| Known Direct Subclasses [DecimalFormat](../android/icu/text/DecimalFormat.md) |------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------| | [DecimalFormat](../android/icu/text/DecimalFormat.md) | **\[icu enhancement\]** ICU's replacement for [java.text.DecimalFormat](../java/text/DecimalFormat.md). | |
+| Known Direct Subclasses [DecimalFormat](DecimalFormat.md) |------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------| | [DecimalFormat](DecimalFormat.md) | **\[icu enhancement\]** ICU's replacement for [java.text.DecimalFormat](../java.text/DecimalFormat.md). | |
 | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [CompactDecimalFormat](../android/icu/text/CompactDecimalFormat.md) |--------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------| | [CompactDecimalFormat](../android/icu/text/CompactDecimalFormat.md) | Formats numbers in compact (abbreviated) notation, like "1. | |
+| Known Indirect Subclasses [CompactDecimalFormat](CompactDecimalFormat.md) |--------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------| | [CompactDecimalFormat](CompactDecimalFormat.md) | Formats numbers in compact (abbreviated) notation, like "1. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
-**\[icu enhancement\]** ICU's replacement for [java.text.NumberFormat](../java/text/NumberFormat.md). Methods, fields, and other functionality specific to ICU are labeled '**\[icu\]**'.
+**\[icu enhancement\]** ICU's replacement for [java.text.NumberFormat](../java.text/NumberFormat.md). Methods, fields, and other functionality specific to ICU are labeled '**\[icu\]**'.
 
-**IMPORTANT:** New users are strongly encouraged to see if [NumberFormatter](../android/icu/number/NumberFormatter.md) fits their use case. Although not deprecated, this class, NumberFormat, is only provided for java.text.NumberFormat compatibility.
+**IMPORTANT:** New users are strongly encouraged to see if [NumberFormatter](../android.icu.number/NumberFormatter.md) fits their use case. Although not deprecated, this class, NumberFormat, is only provided for java.text.NumberFormat compatibility.
 `NumberFormat`is the abstract base class for all number formats. This class provides the interface for formatting and parsing numbers.`NumberFormat`also provides methods for determining which locales have number formats, and what their names are.`NumberFormat`helps you to format and parse numbers for any locale. Your code can be completely independent of the locale conventions for decimal points, thousands-separators, or even the particular decimal digits used, or whether the number format is even decimal.
 
 To format a number for the current Locale, use one of the factory class methods: 
@@ -93,115 +93,115 @@ see DecimalFormat see java.text.ChoiceFormat
 
 | Constants ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACCOUNTINGCURRENCYSTYLE](../android/icu/text/NumberFormat.md) **\[icu\]**Constant to specify currency style of format which uses currency symbol to represent currency for accounting, for example: "($3.00), instead of "-$3. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CASHCURRENCYSTYLE](../android/icu/text/NumberFormat.md) **\[icu\]**Constant to specify currency cash style of format which uses currency ISO code to represent currency, for example: "NT$3" instead of "NT$3. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CURRENCYSTYLE](../android/icu/text/NumberFormat.md) **\[icu\]**Constant to specify general currency style of format. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACCOUNTINGCURRENCYSTYLE](NumberFormat.md) **\[icu\]**Constant to specify currency style of format which uses currency symbol to represent currency for accounting, for example: "($3.00), instead of "-$3. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CASHCURRENCYSTYLE](NumberFormat.md) **\[icu\]**Constant to specify currency cash style of format which uses currency ISO code to represent currency, for example: "NT$3" instead of "NT$3. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CURRENCYSTYLE](NumberFormat.md) **\[icu\]**Constant to specify general currency style of format. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FRACTION_FIELD](../android/icu/text/NumberFormat.md) Field constant used to construct a FieldPosition object. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INTEGERSTYLE](../android/icu/text/NumberFormat.md) **\[icu\]**Constant to specify a integer number style format. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INTEGER_FIELD](../android/icu/text/NumberFormat.md) Field constant used to construct a FieldPosition object. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FRACTION_FIELD](NumberFormat.md) Field constant used to construct a FieldPosition object. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INTEGERSTYLE](NumberFormat.md) **\[icu\]**Constant to specify a integer number style format. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INTEGER_FIELD](NumberFormat.md) Field constant used to construct a FieldPosition object. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ISOCURRENCYSTYLE](../android/icu/text/NumberFormat.md) **\[icu\]**Constant to specify currency style of format which uses currency ISO code to represent currency, for example: "USD3. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NUMBERSTYLE](../android/icu/text/NumberFormat.md) **\[icu\]**Constant to specify normal number style of format. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PERCENTSTYLE](../android/icu/text/NumberFormat.md) **\[icu\]**Constant to specify a style of format to display percent. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ISOCURRENCYSTYLE](NumberFormat.md) **\[icu\]**Constant to specify currency style of format which uses currency ISO code to represent currency, for example: "USD3. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NUMBERSTYLE](NumberFormat.md) **\[icu\]**Constant to specify normal number style of format. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PERCENTSTYLE](NumberFormat.md) **\[icu\]**Constant to specify a style of format to display percent. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PLURALCURRENCYSTYLE](../android/icu/text/NumberFormat.md) **\[icu\]**Constant to specify currency style of format which uses currency long name with plural format to represent currency, for example, "3. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SCIENTIFICSTYLE](../android/icu/text/NumberFormat.md) **\[icu\]**Constant to specify a style of format to display scientific number. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STANDARDCURRENCYSTYLE](../android/icu/text/NumberFormat.md) **\[icu\]**Constant to specify currency style of format which uses currency symbol to represent currency, for example "$3. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PLURALCURRENCYSTYLE](NumberFormat.md) **\[icu\]**Constant to specify currency style of format which uses currency long name with plural format to represent currency, for example, "3. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SCIENTIFICSTYLE](NumberFormat.md) **\[icu\]**Constant to specify a style of format to display scientific number. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STANDARDCURRENCYSTYLE](NumberFormat.md) **\[icu\]**Constant to specify currency style of format which uses currency symbol to represent currency, for example "$3. |
 | --- | --- |
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------|---|
-| [NumberFormat](../android/icu/text/NumberFormat.md))`()` Empty constructor. |
+| [NumberFormat](NumberFormat.md))`()` Empty constructor. |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](../android/icu/text/NumberFormat.md))`()` Overrides clone. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/icu/text/NumberFormat.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Overrides equals. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](../android/icu/text/NumberFormat.md))`(`number:` ` [BigDecimal](../android/icu/math/BigDecimal.md)!`)` **\[icu\]**Convenience method to format an ICU BigDecimal. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](NumberFormat.md))`()` Overrides clone. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](NumberFormat.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Overrides equals. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](NumberFormat.md))`(`number:` ` [BigDecimal](../android.icu.math/BigDecimal.md)!`)` **\[icu\]**Convenience method to format an ICU BigDecimal. |
 | --- | --- |
-| abstract [StringBuffer](../java/lang/StringBuffer.md)! | [format](../android/icu/text/NumberFormat.md))`(`number:` ` [BigDecimal](../android/icu/math/BigDecimal.md)!`, `toAppendTo:` ` [StringBuffer](../java/lang/StringBuffer.md)!`, `pos:` ` [FieldPosition](../java/text/FieldPosition.md)!`)` **\[icu\]**Formats an ICU BigDecimal. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](../android/icu/text/NumberFormat.md))`(`currAmt:` ` [CurrencyAmount](../android/icu/util/CurrencyAmount.md)!`)` **\[icu\]**Convenience method to format a CurrencyAmount. |
-| open [StringBuffer](../java/lang/StringBuffer.md)! | [format](../android/icu/text/NumberFormat.md))`(`currAmt:` ` [CurrencyAmount](../android/icu/util/CurrencyAmount.md)!`, `toAppendTo:` ` [StringBuffer](../java/lang/StringBuffer.md)!`, `pos:` ` [FieldPosition](../java/text/FieldPosition.md)!`)` **\[icu\]**Formats a CurrencyAmount. |
+| abstract [StringBuffer](../java.lang/StringBuffer.md)! | [format](NumberFormat.md))`(`number:` ` [BigDecimal](../android.icu.math/BigDecimal.md)!`, `toAppendTo:` ` [StringBuffer](../java.lang/StringBuffer.md)!`, `pos:` ` [FieldPosition](../java.text/FieldPosition.md)!`)` **\[icu\]**Formats an ICU BigDecimal. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](NumberFormat.md))`(`currAmt:` ` [CurrencyAmount](../android.icu.util/CurrencyAmount.md)!`)` **\[icu\]**Convenience method to format a CurrencyAmount. |
+| open [StringBuffer](../java.lang/StringBuffer.md)! | [format](NumberFormat.md))`(`currAmt:` ` [CurrencyAmount](../android.icu.util/CurrencyAmount.md)!`, `toAppendTo:` ` [StringBuffer](../java.lang/StringBuffer.md)!`, `pos:` ` [FieldPosition](../java.text/FieldPosition.md)!`)` **\[icu\]**Formats a CurrencyAmount. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](../android/icu/text/NumberFormat.md))`(`number:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Specialization of format. |
-| abstract [StringBuffer](../java/lang/StringBuffer.md)! | [format](../android/icu/text/NumberFormat.md))`(`number:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `toAppendTo:` ` [StringBuffer](../java/lang/StringBuffer.md)!`, `pos:` ` [FieldPosition](../java/text/FieldPosition.md)!`)` Specialization of format. |
-| open [StringBuffer](../java/lang/StringBuffer.md)! | [format](../android/icu/text/NumberFormat.md))`(`number:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `toAppendTo:` ` [StringBuffer](../java/lang/StringBuffer.md)!`, `pos:` ` [FieldPosition](../java/text/FieldPosition.md)!`)` Formats a number and appends the resulting text to the given string buffer. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](NumberFormat.md))`(`number:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Specialization of format. |
+| abstract [StringBuffer](../java.lang/StringBuffer.md)! | [format](NumberFormat.md))`(`number:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `toAppendTo:` ` [StringBuffer](../java.lang/StringBuffer.md)!`, `pos:` ` [FieldPosition](../java.text/FieldPosition.md)!`)` Specialization of format. |
+| open [StringBuffer](../java.lang/StringBuffer.md)! | [format](NumberFormat.md))`(`number:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `toAppendTo:` ` [StringBuffer](../java.lang/StringBuffer.md)!`, `pos:` ` [FieldPosition](../java.text/FieldPosition.md)!`)` Formats a number and appends the resulting text to the given string buffer. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](../android/icu/text/NumberFormat.md))`(`number:` ` [BigDecimal](../java/math/BigDecimal.md)!`)` Convenience method to format a BigDecimal. |
-| abstract [StringBuffer](../java/lang/StringBuffer.md)! | [format](../android/icu/text/NumberFormat.md))`(`number:` ` [BigDecimal](../java/math/BigDecimal.md)!`, `toAppendTo:` ` [StringBuffer](../java/lang/StringBuffer.md)!`, `pos:` ` [FieldPosition](../java/text/FieldPosition.md)!`)` **\[icu\]**Formats a BigDecimal. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](../android/icu/text/NumberFormat.md))`(`number:` ` [BigInteger](../java/math/BigInteger.md)!`)` **\[icu\]**Convenience method to format a BigInteger. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](NumberFormat.md))`(`number:` ` [BigDecimal](../java.math/BigDecimal.md)!`)` Convenience method to format a BigDecimal. |
+| abstract [StringBuffer](../java.lang/StringBuffer.md)! | [format](NumberFormat.md))`(`number:` ` [BigDecimal](../java.math/BigDecimal.md)!`, `toAppendTo:` ` [StringBuffer](../java.lang/StringBuffer.md)!`, `pos:` ` [FieldPosition](../java.text/FieldPosition.md)!`)` **\[icu\]**Formats a BigDecimal. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](NumberFormat.md))`(`number:` ` [BigInteger](../java.math/BigInteger.md)!`)` **\[icu\]**Convenience method to format a BigInteger. |
 | --- | --- |
-| abstract [StringBuffer](../java/lang/StringBuffer.md)! | [format](../android/icu/text/NumberFormat.md))`(`number:` ` [BigInteger](../java/math/BigInteger.md)!`, `toAppendTo:` ` [StringBuffer](../java/lang/StringBuffer.md)!`, `pos:` ` [FieldPosition](../java/text/FieldPosition.md)!`)` **\[icu\]**Formats a BigInteger. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](../android/icu/text/NumberFormat.md))`(`number:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Specialization of format. |
-| abstract [StringBuffer](../java/lang/StringBuffer.md)! | [format](../android/icu/text/NumberFormat.md))`(`number:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `toAppendTo:` ` [StringBuffer](../java/lang/StringBuffer.md)!`, `pos:` ` [FieldPosition](../java/text/FieldPosition.md)!`)` Specialization of format. |
+| abstract [StringBuffer](../java.lang/StringBuffer.md)! | [format](NumberFormat.md))`(`number:` ` [BigInteger](../java.math/BigInteger.md)!`, `toAppendTo:` ` [StringBuffer](../java.lang/StringBuffer.md)!`, `pos:` ` [FieldPosition](../java.text/FieldPosition.md)!`)` **\[icu\]**Formats a BigInteger. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](NumberFormat.md))`(`number:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Specialization of format. |
+| abstract [StringBuffer](../java.lang/StringBuffer.md)! | [format](NumberFormat.md))`(`number:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `toAppendTo:` ` [StringBuffer](../java.lang/StringBuffer.md)!`, `pos:` ` [FieldPosition](../java.text/FieldPosition.md)!`)` Specialization of format. |
 | --- | --- |
-| openstatic [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Locale](../java/util/Locale.md)!\>! | [getAvailableLocales](../android/icu/text/NumberFormat.md))`()` Returns the list of Locales for which NumberFormats are available. |
-| open [DisplayContext](../android/icu/text/DisplayContext.md)! | [getContext](../android/icu/text/NumberFormat.md))`(`type:` ` [DisplayContext.Type](../android/icu/text/DisplayContext.Type.md)!`)` **\[icu\]**Get the formatter's DisplayContext value for the specified DisplayContext. |
-| open [Currency](../android/icu/util/Currency.md)! | [getCurrency](../android/icu/text/NumberFormat.md))`()` Returns the Currency object used to display currency amounts. |
+| openstatic [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Locale](../java.util/Locale.md)!\>! | [getAvailableLocales](NumberFormat.md))`()` Returns the list of Locales for which NumberFormats are available. |
+| open [DisplayContext](DisplayContext.md)! | [getContext](NumberFormat.md))`(`type:` ` [DisplayContext.Type](../android/icu/text/DisplayContext.Type.md)!`)` **\[icu\]**Get the formatter's DisplayContext value for the specified DisplayContext. |
+| open [Currency](../android.icu.util/Currency.md)! | [getCurrency](NumberFormat.md))`()` Returns the Currency object used to display currency amounts. |
 | --- | --- |
-| static [NumberFormat](../android/icu/text/NumberFormat.md)! | [getCurrencyInstance](../android/icu/text/NumberFormat.md))`()` **NOTE:** New users are strongly encouraged to use [NumberFormatter](../android/icu/number/NumberFormatter.md) instead of NumberFormat. |
-| openstatic [NumberFormat](../android/icu/text/NumberFormat.md)! | [getCurrencyInstance](../android/icu/text/NumberFormat.md))`(`inLocale:` ` [ULocale](../android/icu/util/ULocale.md)!`)` **NOTE:** New users are strongly encouraged to use [NumberFormatter](../android/icu/number/NumberFormatter.md) instead of NumberFormat. |
-| openstatic [NumberFormat](../android/icu/text/NumberFormat.md)! | [getCurrencyInstance](../android/icu/text/NumberFormat.md))`(`inLocale:` ` [Locale](../java/util/Locale.md)!`)` **NOTE:** New users are strongly encouraged to use [NumberFormatter](../android/icu/number/NumberFormatter.md) instead of NumberFormat. |
+| static [NumberFormat](NumberFormat.md)! | [getCurrencyInstance](NumberFormat.md))`()` **NOTE:** New users are strongly encouraged to use [NumberFormatter](../android.icu.number/NumberFormatter.md) instead of NumberFormat. |
+| openstatic [NumberFormat](NumberFormat.md)! | [getCurrencyInstance](NumberFormat.md))`(`inLocale:` ` [ULocale](../android.icu.util/ULocale.md)!`)` **NOTE:** New users are strongly encouraged to use [NumberFormatter](../android.icu.number/NumberFormatter.md) instead of NumberFormat. |
+| openstatic [NumberFormat](NumberFormat.md)! | [getCurrencyInstance](NumberFormat.md))`(`inLocale:` ` [Locale](../java.util/Locale.md)!`)` **NOTE:** New users are strongly encouraged to use [NumberFormatter](../android.icu.number/NumberFormatter.md) instead of NumberFormat. |
 | --- | --- |
-| static [NumberFormat](../android/icu/text/NumberFormat.md)! | [getInstance](../android/icu/text/NumberFormat.md))`()` **NOTE:** New users are strongly encouraged to use [NumberFormatter](../android/icu/number/NumberFormatter.md) instead of NumberFormat. |
-| openstatic [NumberFormat](../android/icu/text/NumberFormat.md)! | [getInstance](../android/icu/text/NumberFormat.md))`(`inLocale:` ` [ULocale](../android/icu/util/ULocale.md)!`)` **NOTE:** New users are strongly encouraged to use [NumberFormatter](../android/icu/number/NumberFormatter.md) instead of NumberFormat. |
-| openstatic [NumberFormat](../android/icu/text/NumberFormat.md)! | [getInstance](../android/icu/text/NumberFormat.md))`(`desiredLocale:` ` [ULocale](../android/icu/util/ULocale.md)!`, `choice:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **NOTE:** New users are strongly encouraged to use [NumberFormatter](../android/icu/number/NumberFormatter.md) instead of NumberFormat. |
+| static [NumberFormat](NumberFormat.md)! | [getInstance](NumberFormat.md))`()` **NOTE:** New users are strongly encouraged to use [NumberFormatter](../android.icu.number/NumberFormatter.md) instead of NumberFormat. |
+| openstatic [NumberFormat](NumberFormat.md)! | [getInstance](NumberFormat.md))`(`inLocale:` ` [ULocale](../android.icu.util/ULocale.md)!`)` **NOTE:** New users are strongly encouraged to use [NumberFormatter](../android.icu.number/NumberFormatter.md) instead of NumberFormat. |
+| openstatic [NumberFormat](NumberFormat.md)! | [getInstance](NumberFormat.md))`(`desiredLocale:` ` [ULocale](../android.icu.util/ULocale.md)!`, `choice:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **NOTE:** New users are strongly encouraged to use [NumberFormatter](../android.icu.number/NumberFormatter.md) instead of NumberFormat. |
 | --- | --- |
-| static [NumberFormat](../android/icu/text/NumberFormat.md)! | [getInstance](../android/icu/text/NumberFormat.md))`(`style:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **NOTE:** New users are strongly encouraged to use [NumberFormatter](../android/icu/number/NumberFormatter.md) instead of NumberFormat. |
-| openstatic [NumberFormat](../android/icu/text/NumberFormat.md)! | [getInstance](../android/icu/text/NumberFormat.md))`(`inLocale:` ` [Locale](../java/util/Locale.md)!`)` **NOTE:** New users are strongly encouraged to use [NumberFormatter](../android/icu/number/NumberFormatter.md) instead of NumberFormat. |
-| openstatic [NumberFormat](../android/icu/text/NumberFormat.md)! | [getInstance](../android/icu/text/NumberFormat.md))`(`inLocale:` ` [Locale](../java/util/Locale.md)!`, `style:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **NOTE:** New users are strongly encouraged to use [NumberFormatter](../android/icu/number/NumberFormatter.md) instead of NumberFormat. |
+| static [NumberFormat](NumberFormat.md)! | [getInstance](NumberFormat.md))`(`style:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **NOTE:** New users are strongly encouraged to use [NumberFormatter](../android.icu.number/NumberFormatter.md) instead of NumberFormat. |
+| openstatic [NumberFormat](NumberFormat.md)! | [getInstance](NumberFormat.md))`(`inLocale:` ` [Locale](../java.util/Locale.md)!`)` **NOTE:** New users are strongly encouraged to use [NumberFormatter](../android.icu.number/NumberFormatter.md) instead of NumberFormat. |
+| openstatic [NumberFormat](NumberFormat.md)! | [getInstance](NumberFormat.md))`(`inLocale:` ` [Locale](../java.util/Locale.md)!`, `style:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **NOTE:** New users are strongly encouraged to use [NumberFormatter](../android.icu.number/NumberFormatter.md) instead of NumberFormat. |
 | --- | --- |
-| static [NumberFormat](../android/icu/text/NumberFormat.md)! | [getIntegerInstance](../android/icu/text/NumberFormat.md))`()` **NOTE:** New users are strongly encouraged to use [NumberFormatter](../android/icu/number/NumberFormatter.md) instead of NumberFormat. |
-| openstatic [NumberFormat](../android/icu/text/NumberFormat.md)! | [getIntegerInstance](../android/icu/text/NumberFormat.md))`(`inLocale:` ` [ULocale](../android/icu/util/ULocale.md)!`)` **NOTE:** New users are strongly encouraged to use [NumberFormatter](../android/icu/number/NumberFormatter.md) instead of NumberFormat. |
-| openstatic [NumberFormat](../android/icu/text/NumberFormat.md)! | [getIntegerInstance](../android/icu/text/NumberFormat.md))`(`inLocale:` ` [Locale](../java/util/Locale.md)!`)` **NOTE:** New users are strongly encouraged to use [NumberFormatter](../android/icu/number/NumberFormatter.md) instead of NumberFormat. |
+| static [NumberFormat](NumberFormat.md)! | [getIntegerInstance](NumberFormat.md))`()` **NOTE:** New users are strongly encouraged to use [NumberFormatter](../android.icu.number/NumberFormatter.md) instead of NumberFormat. |
+| openstatic [NumberFormat](NumberFormat.md)! | [getIntegerInstance](NumberFormat.md))`(`inLocale:` ` [ULocale](../android.icu.util/ULocale.md)!`)` **NOTE:** New users are strongly encouraged to use [NumberFormatter](../android.icu.number/NumberFormatter.md) instead of NumberFormat. |
+| openstatic [NumberFormat](NumberFormat.md)! | [getIntegerInstance](NumberFormat.md))`(`inLocale:` ` [Locale](../java.util/Locale.md)!`)` **NOTE:** New users are strongly encouraged to use [NumberFormatter](../android.icu.number/NumberFormatter.md) instead of NumberFormat. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaximumFractionDigits](../android/icu/text/NumberFormat.md))`()` Returns the maximum number of digits allowed in the fraction portion of a number. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaximumIntegerDigits](../android/icu/text/NumberFormat.md))`()` Returns the maximum number of digits allowed in the integer portion of a number. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMinimumFractionDigits](../android/icu/text/NumberFormat.md))`()` Returns the minimum number of digits allowed in the fraction portion of a number. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaximumFractionDigits](NumberFormat.md))`()` Returns the maximum number of digits allowed in the fraction portion of a number. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaximumIntegerDigits](NumberFormat.md))`()` Returns the maximum number of digits allowed in the integer portion of a number. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMinimumFractionDigits](NumberFormat.md))`()` Returns the minimum number of digits allowed in the fraction portion of a number. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMinimumIntegerDigits](../android/icu/text/NumberFormat.md))`()` Returns the minimum number of digits allowed in the integer portion of a number. |
-| static [NumberFormat](../android/icu/text/NumberFormat.md)! | [getNumberInstance](../android/icu/text/NumberFormat.md))`()` **NOTE:** New users are strongly encouraged to use [NumberFormatter](../android/icu/number/NumberFormatter.md) instead of NumberFormat. |
-| openstatic [NumberFormat](../android/icu/text/NumberFormat.md)! | [getNumberInstance](../android/icu/text/NumberFormat.md))`(`inLocale:` ` [ULocale](../android/icu/util/ULocale.md)!`)` **NOTE:** New users are strongly encouraged to use [NumberFormatter](../android/icu/number/NumberFormatter.md) instead of NumberFormat. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMinimumIntegerDigits](NumberFormat.md))`()` Returns the minimum number of digits allowed in the integer portion of a number. |
+| static [NumberFormat](NumberFormat.md)! | [getNumberInstance](NumberFormat.md))`()` **NOTE:** New users are strongly encouraged to use [NumberFormatter](../android.icu.number/NumberFormatter.md) instead of NumberFormat. |
+| openstatic [NumberFormat](NumberFormat.md)! | [getNumberInstance](NumberFormat.md))`(`inLocale:` ` [ULocale](../android.icu.util/ULocale.md)!`)` **NOTE:** New users are strongly encouraged to use [NumberFormatter](../android.icu.number/NumberFormatter.md) instead of NumberFormat. |
 | --- | --- |
-| openstatic [NumberFormat](../android/icu/text/NumberFormat.md)! | [getNumberInstance](../android/icu/text/NumberFormat.md))`(`inLocale:` ` [Locale](../java/util/Locale.md)!`)` **NOTE:** New users are strongly encouraged to use [NumberFormatter](../android/icu/number/NumberFormatter.md) instead of NumberFormat. |
-| static [NumberFormat](../android/icu/text/NumberFormat.md)! | [getPercentInstance](../android/icu/text/NumberFormat.md))`()` **NOTE:** New users are strongly encouraged to use [NumberFormatter](../android/icu/number/NumberFormatter.md) instead of NumberFormat. |
-| openstatic [NumberFormat](../android/icu/text/NumberFormat.md)! | [getPercentInstance](../android/icu/text/NumberFormat.md))`(`inLocale:` ` [ULocale](../android/icu/util/ULocale.md)!`)` **NOTE:** New users are strongly encouraged to use [NumberFormatter](../android/icu/number/NumberFormatter.md) instead of NumberFormat. |
+| openstatic [NumberFormat](NumberFormat.md)! | [getNumberInstance](NumberFormat.md))`(`inLocale:` ` [Locale](../java.util/Locale.md)!`)` **NOTE:** New users are strongly encouraged to use [NumberFormatter](../android.icu.number/NumberFormatter.md) instead of NumberFormat. |
+| static [NumberFormat](NumberFormat.md)! | [getPercentInstance](NumberFormat.md))`()` **NOTE:** New users are strongly encouraged to use [NumberFormatter](../android.icu.number/NumberFormatter.md) instead of NumberFormat. |
+| openstatic [NumberFormat](NumberFormat.md)! | [getPercentInstance](NumberFormat.md))`(`inLocale:` ` [ULocale](../android.icu.util/ULocale.md)!`)` **NOTE:** New users are strongly encouraged to use [NumberFormatter](../android.icu.number/NumberFormatter.md) instead of NumberFormat. |
 | --- | --- |
-| openstatic [NumberFormat](../android/icu/text/NumberFormat.md)! | [getPercentInstance](../android/icu/text/NumberFormat.md))`(`inLocale:` ` [Locale](../java/util/Locale.md)!`)` **NOTE:** New users are strongly encouraged to use [NumberFormatter](../android/icu/number/NumberFormatter.md) instead of NumberFormat. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRoundingMode](../android/icu/text/NumberFormat.md))`()` Returns the rounding mode used in this NumberFormat. |
-| static [NumberFormat](../android/icu/text/NumberFormat.md)! | [getScientificInstance](../android/icu/text/NumberFormat.md))`()` **NOTE:** New users are strongly encouraged to use [NumberFormatter](../android/icu/number/NumberFormatter.md) instead of NumberFormat. |
+| openstatic [NumberFormat](NumberFormat.md)! | [getPercentInstance](NumberFormat.md))`(`inLocale:` ` [Locale](../java.util/Locale.md)!`)` **NOTE:** New users are strongly encouraged to use [NumberFormatter](../android.icu.number/NumberFormatter.md) instead of NumberFormat. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRoundingMode](NumberFormat.md))`()` Returns the rounding mode used in this NumberFormat. |
+| static [NumberFormat](NumberFormat.md)! | [getScientificInstance](NumberFormat.md))`()` **NOTE:** New users are strongly encouraged to use [NumberFormatter](../android.icu.number/NumberFormatter.md) instead of NumberFormat. |
 | --- | --- |
-| openstatic [NumberFormat](../android/icu/text/NumberFormat.md)! | [getScientificInstance](../android/icu/text/NumberFormat.md))`(`inLocale:` ` [ULocale](../android/icu/util/ULocale.md)!`)` **NOTE:** New users are strongly encouraged to use [NumberFormatter](../android/icu/number/NumberFormatter.md) instead of NumberFormat. |
-| openstatic [NumberFormat](../android/icu/text/NumberFormat.md)! | [getScientificInstance](../android/icu/text/NumberFormat.md))`(`inLocale:` ` [Locale](../java/util/Locale.md)!`)` **NOTE:** New users are strongly encouraged to use [NumberFormatter](../android/icu/number/NumberFormatter.md) instead of NumberFormat. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/icu/text/NumberFormat.md))`()` Returns a hash code value for the object. |
+| openstatic [NumberFormat](NumberFormat.md)! | [getScientificInstance](NumberFormat.md))`(`inLocale:` ` [ULocale](../android.icu.util/ULocale.md)!`)` **NOTE:** New users are strongly encouraged to use [NumberFormatter](../android.icu.number/NumberFormatter.md) instead of NumberFormat. |
+| openstatic [NumberFormat](NumberFormat.md)! | [getScientificInstance](NumberFormat.md))`(`inLocale:` ` [Locale](../java.util/Locale.md)!`)` **NOTE:** New users are strongly encouraged to use [NumberFormatter](../android.icu.number/NumberFormatter.md) instead of NumberFormat. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](NumberFormat.md))`()` Returns a hash code value for the object. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isGroupingUsed](../android/icu/text/NumberFormat.md))`()` Returns true if grouping is used in this format. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isParseIntegerOnly](../android/icu/text/NumberFormat.md))`()` Returns true if this format will parse numbers as integers only. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isParseStrict](../android/icu/text/NumberFormat.md))`()` **\[icu\]**Returns whether strict parsing is in effect. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isGroupingUsed](NumberFormat.md))`()` Returns true if grouping is used in this format. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isParseIntegerOnly](NumberFormat.md))`()` Returns true if this format will parse numbers as integers only. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isParseStrict](NumberFormat.md))`()` **\[icu\]**Returns whether strict parsing is in effect. |
 | --- | --- |
-| open [Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html)! | [parse](../android/icu/text/NumberFormat.md))`(`text:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Parses text from the beginning of the given string to produce a number. |
-| abstract [Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html)! | [parse](../android/icu/text/NumberFormat.md))`(`text:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `parsePosition:` ` [ParsePosition](../java/text/ParsePosition.md)!`)` Returns a Long if possible (e.g., within the range \[Long.MIN_VALUE, Long.MAX_VALUE\] and with no decimals); otherwise, returns another type, such as a BigDecimal, BigInteger, or Double. |
-| open [CurrencyAmount](../android/icu/util/CurrencyAmount.md)! | [parseCurrency](../android/icu/text/NumberFormat.md))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `pos:` ` [ParsePosition](../java/text/ParsePosition.md)!`)` Parses text from the given string as a CurrencyAmount. |
+| open [Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html)! | [parse](NumberFormat.md))`(`text:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Parses text from the beginning of the given string to produce a number. |
+| abstract [Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html)! | [parse](NumberFormat.md))`(`text:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `parsePosition:` ` [ParsePosition](../java.text/ParsePosition.md)!`)` Returns a Long if possible (e.g., within the range \[Long.MIN_VALUE, Long.MAX_VALUE\] and with no decimals); otherwise, returns another type, such as a BigDecimal, BigInteger, or Double. |
+| open [CurrencyAmount](../android.icu.util/CurrencyAmount.md)! | [parseCurrency](NumberFormat.md))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `pos:` ` [ParsePosition](../java.text/ParsePosition.md)!`)` Parses text from the given string as a CurrencyAmount. |
 | --- | --- |
-| [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [parseObject](../android/icu/text/NumberFormat.md))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `parsePosition:` ` [ParsePosition](../java/text/ParsePosition.md)!`)` Parses text from a string to produce a number. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setContext](../android/icu/text/NumberFormat.md))`(`context:` ` [DisplayContext](../android/icu/text/DisplayContext.md)!`)` **\[icu\]**Set a particular DisplayContext value in the formatter, such as CAPITALIZATION_FOR_STANDALONE. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCurrency](../android/icu/text/NumberFormat.md))`(`theCurrency:` ` [Currency](../android/icu/util/Currency.md)!`)` Sets the Currency object used to display currency amounts. |
+| [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [parseObject](NumberFormat.md))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `parsePosition:` ` [ParsePosition](../java.text/ParsePosition.md)!`)` Parses text from a string to produce a number. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setContext](NumberFormat.md))`(`context:` ` [DisplayContext](DisplayContext.md)!`)` **\[icu\]**Set a particular DisplayContext value in the formatter, such as CAPITALIZATION_FOR_STANDALONE. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCurrency](NumberFormat.md))`(`theCurrency:` ` [Currency](../android.icu.util/Currency.md)!`)` Sets the Currency object used to display currency amounts. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setGroupingUsed](../android/icu/text/NumberFormat.md))`(`newValue:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets whether or not grouping will be used in this format. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMaximumFractionDigits](../android/icu/text/NumberFormat.md))`(`newValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the maximum number of digits allowed in the fraction portion of a number. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMaximumIntegerDigits](../android/icu/text/NumberFormat.md))`(`newValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the maximum number of digits allowed in the integer portion of a number. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setGroupingUsed](NumberFormat.md))`(`newValue:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets whether or not grouping will be used in this format. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMaximumFractionDigits](NumberFormat.md))`(`newValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the maximum number of digits allowed in the fraction portion of a number. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMaximumIntegerDigits](NumberFormat.md))`(`newValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the maximum number of digits allowed in the integer portion of a number. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMinimumFractionDigits](../android/icu/text/NumberFormat.md))`(`newValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the minimum number of digits allowed in the fraction portion of a number. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMinimumIntegerDigits](../android/icu/text/NumberFormat.md))`(`newValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the minimum number of digits allowed in the integer portion of a number. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setParseIntegerOnly](../android/icu/text/NumberFormat.md))`(`value:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets whether to ignore the fraction part of a number when parsing (defaults to false). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMinimumFractionDigits](NumberFormat.md))`(`newValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the minimum number of digits allowed in the fraction portion of a number. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMinimumIntegerDigits](NumberFormat.md))`(`newValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the minimum number of digits allowed in the integer portion of a number. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setParseIntegerOnly](NumberFormat.md))`(`value:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets whether to ignore the fraction part of a number when parsing (defaults to false). |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setParseStrict](../android/icu/text/NumberFormat.md))`(`value:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` **\[icu\]**Sets whether strict parsing is in effect. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRoundingMode](../android/icu/text/NumberFormat.md))`(`roundingMode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the rounding mode used in this NumberFormat. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setParseStrict](NumberFormat.md))`(`value:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` **\[icu\]**Sets whether strict parsing is in effect. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRoundingMode](NumberFormat.md))`(`roundingMode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the rounding mode used in this NumberFormat. |
 
 | Protected methods ||
 |---------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPattern](../android/icu/text/NumberFormat.md))`(`forLocale:` ` [ULocale](../android/icu/util/ULocale.md)!`, `choice:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the pattern for the provided locale and choice. |
+| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPattern](NumberFormat.md))`(`forLocale:` ` [ULocale](../android.icu.util/ULocale.md)!`, `choice:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the pattern for the provided locale and choice. |
 
 ## Constants
 
@@ -213,7 +213,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val ACCOUNTINGCURRENCYSTYLE: Int
 ```
 
-**\[icu\]** Constant to specify currency style of format which uses currency symbol to represent currency for accounting, for example: "($3.00), instead of "-$3.00" ([CURRENCYSTYLE](../android/icu/text/NumberFormat.md)). Overrides any style specified using -cf- key in locale. 
+**\[icu\]** Constant to specify currency style of format which uses currency symbol to represent currency for accounting, for example: "($3.00), instead of "-$3.00" ([CURRENCYSTYLE](NumberFormat.md)). Overrides any style specified using -cf- key in locale. 
 
  Value: 7
 
@@ -255,7 +255,7 @@ Field constant used to construct a FieldPosition object. Signifies that the posi
 
 **See Also**
 
-- [java.text.FieldPosition](../java/text/FieldPosition.md) 
+- [java.text.FieldPosition](../java.text/FieldPosition.md) 
 
 ### INTEGERSTYLE
 
@@ -283,7 +283,7 @@ Field constant used to construct a FieldPosition object. Signifies that the posi
 
 **See Also**
 
-- [java.text.FieldPosition](../java/text/FieldPosition.md) 
+- [java.text.FieldPosition](../java.text/FieldPosition.md) 
 
 ### ISOCURRENCYSTYLE
 
@@ -367,7 +367,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 NumberFormat()
 ```
 
-Empty constructor. Public for API compatibility with historic versions of [java.text.NumberFormat](../java/text/NumberFormat.md) which had public constructor even though this is an abstract class.
+Empty constructor. Public for API compatibility with historic versions of [java.text.NumberFormat](../java.text/NumberFormat.md) which had public constructor even though this is an abstract class.
 
 ## Public methods
 
@@ -432,7 +432,7 @@ abstract fun format(
 **\[icu\]**Formats an ICU BigDecimal. Specialization of format. 
 **See Also**
 
-- [java.text.Format#format(Object, StringBuffer, FieldPosition)](../java/text/Format.md)) 
+- [java.text.Format#format(Object, StringBuffer, FieldPosition)](../java.text/Format.md)) 
 
 ### format
 
@@ -459,7 +459,7 @@ open fun format(
 **\[icu\]**Formats a CurrencyAmount. Specialization of format. 
 **See Also**
 
-- [java.text.Format#format(Object, StringBuffer, FieldPosition)](../java/text/Format.md)) 
+- [java.text.Format#format(Object, StringBuffer, FieldPosition)](../java.text/Format.md)) 
 
 ### format
 
@@ -472,7 +472,7 @@ fun format(number: Double): String!
 Specialization of format. 
 **See Also**
 
-- [java.text.Format#format(Object)](../java/text/Format.md)) 
+- [java.text.Format#format(Object)](../java.text/Format.md)) 
 
 ### format
 
@@ -489,7 +489,7 @@ abstract fun format(
 Specialization of format. 
 **See Also**
 
-- [java.text.Format#format(Object, StringBuffer, FieldPosition)](../java/text/Format.md)) 
+- [java.text.Format#format(Object, StringBuffer, FieldPosition)](../java.text/Format.md)) 
 
 ### format
 
@@ -508,13 +508,13 @@ Formats a number and appends the resulting text to the given string buffer.**\[i
 | Parameters ||
 |--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `obj` | The object to format |
-| `toAppendTo` | [StringBuffer](../java/lang/StringBuffer.md)!:where the text is to be appended |
-| `pos` | [FieldPosition](../java/text/FieldPosition.md)!:A`FieldPosition`identifying a field in the formatted text |
+| `toAppendTo` | [StringBuffer](../java.lang/StringBuffer.md)!:where the text is to be appended |
+| `pos` | [FieldPosition](../java.text/FieldPosition.md)!:A`FieldPosition`identifying a field in the formatted text |
 | --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-| [StringBuffer](../java/lang/StringBuffer.md)! | the string buffer passed in as`toAppendTo`, with formatted text appended |
+| [StringBuffer](../java.lang/StringBuffer.md)! | the string buffer passed in as`toAppendTo`, with formatted text appended |
 
 | Exceptions ||
 |--------------------------------------|----------------------------------------------|
@@ -523,7 +523,7 @@ Formats a number and appends the resulting text to the given string buffer.**\[i
 
 **See Also**
 
-- [java.text.Format#format(Object, StringBuffer, FieldPosition)](../java/text/Format.md)) 
+- [java.text.Format#format(Object, StringBuffer, FieldPosition)](../java.text/Format.md)) 
 
 ### format
 
@@ -550,7 +550,7 @@ abstract fun format(
 **\[icu\]**Formats a BigDecimal. Specialization of format. 
 **See Also**
 
-- [java.text.Format#format(Object, StringBuffer, FieldPosition)](../java/text/Format.md)) 
+- [java.text.Format#format(Object, StringBuffer, FieldPosition)](../java.text/Format.md)) 
 
 ### format
 
@@ -577,7 +577,7 @@ abstract fun format(
 **\[icu\]**Formats a BigInteger. Specialization of format. 
 **See Also**
 
-- [java.text.Format#format(Object, StringBuffer, FieldPosition)](../java/text/Format.md)) 
+- [java.text.Format#format(Object, StringBuffer, FieldPosition)](../java.text/Format.md)) 
 
 ### format
 
@@ -590,7 +590,7 @@ fun format(number: Long): String!
 Specialization of format. 
 **See Also**
 
-- [java.text.Format#format(Object)](../java/text/Format.md)) 
+- [java.text.Format#format(Object)](../java.text/Format.md)) 
 
 ### format
 
@@ -607,7 +607,7 @@ abstract fun format(
 Specialization of format. 
 **See Also**
 
-- [java.text.Format#format(Object, StringBuffer, FieldPosition)](../java/text/Format.md)) 
+- [java.text.Format#format(Object, StringBuffer, FieldPosition)](../java.text/Format.md)) 
 
 ### getAvailableLocales
 
@@ -621,7 +621,7 @@ Returns the list of Locales for which NumberFormats are available.
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Locale](../java/util/Locale.md)!>! | the available locales |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Locale](../java.util/Locale.md)!>! | the available locales |
 
 ### getContext
 
@@ -639,7 +639,7 @@ open fun getContext(type: DisplayContext.Type!): DisplayContext!
 
 | Return ||
 |---------------------------------------------------------------------------------------------------|-----------------------------------------------------------|
-| [DisplayContext](../android/icu/text/DisplayContext.md)! | the current DisplayContext setting for the specified type |
+| [DisplayContext](DisplayContext.md)! | the current DisplayContext setting for the specified type |
 
 ### getCurrency
 
@@ -659,11 +659,11 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static fun getCurrencyInstance(): NumberFormat!
 ```
 
-**NOTE:** New users are strongly encouraged to use [NumberFormatter](../android/icu/number/NumberFormatter.md) instead of NumberFormat. Returns a currency format for the current default`FORMAT`locale.
+**NOTE:** New users are strongly encouraged to use [NumberFormatter](../android.icu.number/NumberFormatter.md) instead of NumberFormat. Returns a currency format for the current default`FORMAT`locale.
 
 | Return ||
 |------------------------------------------------------------------------------------------------|------------------------------|
-| [NumberFormat](../android/icu/text/NumberFormat.md)! | a number format for currency |
+| [NumberFormat](NumberFormat.md)! | a number format for currency |
 
 **See Also**
 
@@ -677,11 +677,11 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open static fun getCurrencyInstance(inLocale: ULocale!): NumberFormat!
 ```
 
-**NOTE:** New users are strongly encouraged to use [NumberFormatter](../android/icu/number/NumberFormatter.md) instead of NumberFormat.**\[icu\]**Returns a currency format for the specified locale.
+**NOTE:** New users are strongly encouraged to use [NumberFormatter](../android.icu.number/NumberFormatter.md) instead of NumberFormat.**\[icu\]**Returns a currency format for the specified locale.
 
 | Return ||
 |------------------------------------------------------------------------------------------------|------------------------------|
-| [NumberFormat](../android/icu/text/NumberFormat.md)! | a number format for currency |
+| [NumberFormat](NumberFormat.md)! | a number format for currency |
 
 ### getCurrencyInstance
 
@@ -691,11 +691,11 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open static fun getCurrencyInstance(inLocale: Locale!): NumberFormat!
 ```
 
-**NOTE:** New users are strongly encouraged to use [NumberFormatter](../android/icu/number/NumberFormatter.md) instead of NumberFormat. Returns a currency format for the specified locale.
+**NOTE:** New users are strongly encouraged to use [NumberFormatter](../android.icu.number/NumberFormatter.md) instead of NumberFormat. Returns a currency format for the specified locale.
 
 | Return ||
 |------------------------------------------------------------------------------------------------|------------------------------|
-| [NumberFormat](../android/icu/text/NumberFormat.md)! | a number format for currency |
+| [NumberFormat](NumberFormat.md)! | a number format for currency |
 
 ### getInstance
 
@@ -705,7 +705,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static fun getInstance(): NumberFormat!
 ```
 
-**NOTE:** New users are strongly encouraged to use [NumberFormatter](../android/icu/number/NumberFormatter.md) instead of NumberFormat. Returns the default number format for the current default`FORMAT`locale. The default format is one of the styles provided by the other factory methods: getNumberInstance, getIntegerInstance, getCurrencyInstance or getPercentInstance. Exactly which one is locale-dependent. 
+**NOTE:** New users are strongly encouraged to use [NumberFormatter](../android.icu.number/NumberFormatter.md) instead of NumberFormat. Returns the default number format for the current default`FORMAT`locale. The default format is one of the styles provided by the other factory methods: getNumberInstance, getIntegerInstance, getCurrencyInstance or getPercentInstance. Exactly which one is locale-dependent. 
 **See Also**
 
 - [android.icu.util.ULocale.Category#FORMAT](../android/icu/util/ULocale.Category.md) 
@@ -718,7 +718,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open static fun getInstance(inLocale: ULocale!): NumberFormat!
 ```
 
-**NOTE:** New users are strongly encouraged to use [NumberFormatter](../android/icu/number/NumberFormatter.md) instead of NumberFormat.**\[icu\]**Returns the default number format for the specified locale. The default format is one of the styles provided by the other factory methods: getNumberInstance, getCurrencyInstance or getPercentInstance. Exactly which one is locale-dependent. 
+**NOTE:** New users are strongly encouraged to use [NumberFormatter](../android.icu.number/NumberFormatter.md) instead of NumberFormat.**\[icu\]**Returns the default number format for the specified locale. The default format is one of the styles provided by the other factory methods: getNumberInstance, getCurrencyInstance or getPercentInstance. Exactly which one is locale-dependent. 
 
 ### getInstance
 
@@ -731,11 +731,11 @@ open static fun getInstance(
 ): NumberFormat!
 ```
 
-**NOTE:** New users are strongly encouraged to use [NumberFormatter](../android/icu/number/NumberFormatter.md) instead of NumberFormat. Returns a specific style number format for a specific locale.
+**NOTE:** New users are strongly encouraged to use [NumberFormatter](../android.icu.number/NumberFormatter.md) instead of NumberFormat. Returns a specific style number format for a specific locale.
 
 | Parameters ||
 |-----------------|----------------------------------------------------------------------------------------------------------------|
-| `desiredLocale` | [ULocale](../android/icu/util/ULocale.md)!:the specific locale. |
+| `desiredLocale` | [ULocale](../android.icu.util/ULocale.md)!:the specific locale. |
 | `choice` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):number format style |
 
 | Exceptions ||
@@ -750,7 +750,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static fun getInstance(style: Int): NumberFormat!
 ```
 
-**NOTE:** New users are strongly encouraged to use [NumberFormatter](../android/icu/number/NumberFormatter.md) instead of NumberFormat.**\[icu\]** Returns a specific style number format for default`FORMAT`locale.
+**NOTE:** New users are strongly encouraged to use [NumberFormatter](../android.icu.number/NumberFormatter.md) instead of NumberFormat.**\[icu\]** Returns a specific style number format for default`FORMAT`locale.
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------|
@@ -768,7 +768,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open static fun getInstance(inLocale: Locale!): NumberFormat!
 ```
 
-**NOTE:** New users are strongly encouraged to use [NumberFormatter](../android/icu/number/NumberFormatter.md) instead of NumberFormat. Returns the default number format for the specified locale. The default format is one of the styles provided by the other factory methods: getNumberInstance, getCurrencyInstance or getPercentInstance. Exactly which one is locale-dependent. 
+**NOTE:** New users are strongly encouraged to use [NumberFormatter](../android.icu.number/NumberFormatter.md) instead of NumberFormat. Returns the default number format for the specified locale. The default format is one of the styles provided by the other factory methods: getNumberInstance, getCurrencyInstance or getPercentInstance. Exactly which one is locale-dependent. 
 
 ### getInstance
 
@@ -781,11 +781,11 @@ open static fun getInstance(
 ): NumberFormat!
 ```
 
-**NOTE:** New users are strongly encouraged to use [NumberFormatter](../android/icu/number/NumberFormatter.md) instead of NumberFormat.**\[icu\]**Returns a specific style number format for a specific locale.
+**NOTE:** New users are strongly encouraged to use [NumberFormatter](../android.icu.number/NumberFormatter.md) instead of NumberFormat.**\[icu\]**Returns a specific style number format for a specific locale.
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------|
-| `inLocale` | [Locale](../java/util/Locale.md)!:the specific locale. |
+| `inLocale` | [Locale](../java.util/Locale.md)!:the specific locale. |
 | `style` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):number format style |
 
 ### getIntegerInstance
@@ -796,11 +796,11 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static fun getIntegerInstance(): NumberFormat!
 ```
 
-**NOTE:** New users are strongly encouraged to use [NumberFormatter](../android/icu/number/NumberFormatter.md) instead of NumberFormat. Returns an integer number format for the current default`FORMAT`locale. The returned number format is configured to round floating point numbers to the nearest integer using IEEE half-even rounding (see [ROUND_HALF_EVEN](../android/icu/math/BigDecimal.md)) for formatting, and to parse only the integer part of an input string (see [isParseIntegerOnly](../android/icu/text/NumberFormat.md))).
+**NOTE:** New users are strongly encouraged to use [NumberFormatter](../android.icu.number/NumberFormatter.md) instead of NumberFormat. Returns an integer number format for the current default`FORMAT`locale. The returned number format is configured to round floating point numbers to the nearest integer using IEEE half-even rounding (see [ROUND_HALF_EVEN](../android.icu.math/BigDecimal.md)) for formatting, and to parse only the integer part of an input string (see [isParseIntegerOnly](NumberFormat.md))).
 
 | Return ||
 |------------------------------------------------------------------------------------------------|------------------------------------|
-| [NumberFormat](../android/icu/text/NumberFormat.md)! | a number format for integer values |
+| [NumberFormat](NumberFormat.md)! | a number format for integer values |
 
 **See Also**
 
@@ -814,15 +814,15 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open static fun getIntegerInstance(inLocale: ULocale!): NumberFormat!
 ```
 
-**NOTE:** New users are strongly encouraged to use [NumberFormatter](../android/icu/number/NumberFormatter.md) instead of NumberFormat.**\[icu\]** Returns an integer number format for the specified locale. The returned number format is configured to round floating point numbers to the nearest integer using IEEE half-even rounding (see [ROUND_HALF_EVEN](../android/icu/math/BigDecimal.md)) for formatting, and to parse only the integer part of an input string (see [isParseIntegerOnly](../android/icu/text/NumberFormat.md))).
+**NOTE:** New users are strongly encouraged to use [NumberFormatter](../android.icu.number/NumberFormatter.md) instead of NumberFormat.**\[icu\]** Returns an integer number format for the specified locale. The returned number format is configured to round floating point numbers to the nearest integer using IEEE half-even rounding (see [ROUND_HALF_EVEN](../android.icu.math/BigDecimal.md)) for formatting, and to parse only the integer part of an input string (see [isParseIntegerOnly](NumberFormat.md))).
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| `inLocale` | [ULocale](../android/icu/util/ULocale.md)!:the locale for which a number format is needed |
+| `inLocale` | [ULocale](../android.icu.util/ULocale.md)!:the locale for which a number format is needed |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|------------------------------------|
-| [NumberFormat](../android/icu/text/NumberFormat.md)! | a number format for integer values |
+| [NumberFormat](NumberFormat.md)! | a number format for integer values |
 
 ### getIntegerInstance
 
@@ -832,15 +832,15 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open static fun getIntegerInstance(inLocale: Locale!): NumberFormat!
 ```
 
-**NOTE:** New users are strongly encouraged to use [NumberFormatter](../android/icu/number/NumberFormatter.md) instead of NumberFormat. Returns an integer number format for the specified locale. The returned number format is configured to round floating point numbers to the nearest integer using IEEE half-even rounding (see [ROUND_HALF_EVEN](../android/icu/math/BigDecimal.md)) for formatting, and to parse only the integer part of an input string (see [isParseIntegerOnly](../android/icu/text/NumberFormat.md))).
+**NOTE:** New users are strongly encouraged to use [NumberFormatter](../android.icu.number/NumberFormatter.md) instead of NumberFormat. Returns an integer number format for the specified locale. The returned number format is configured to round floating point numbers to the nearest integer using IEEE half-even rounding (see [ROUND_HALF_EVEN](../android.icu.math/BigDecimal.md)) for formatting, and to parse only the integer part of an input string (see [isParseIntegerOnly](NumberFormat.md))).
 
 | Parameters ||
 |------------|---------------------------------------------------------------------------------------------------------------------------------|
-| `inLocale` | [Locale](../java/util/Locale.md)!:the locale for which a number format is needed |
+| `inLocale` | [Locale](../java.util/Locale.md)!:the locale for which a number format is needed |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|------------------------------------|
-| [NumberFormat](../android/icu/text/NumberFormat.md)! | a number format for integer values |
+| [NumberFormat](NumberFormat.md)! | a number format for integer values |
 
 ### getMaximumFractionDigits
 
@@ -858,7 +858,7 @@ Returns the maximum number of digits allowed in the fraction portion of a number
 
 **See Also**
 
-- [#setMaximumFractionDigits](../android/icu/text/NumberFormat.md)) 
+- [#setMaximumFractionDigits](NumberFormat.md)) 
 
 ### getMaximumIntegerDigits
 
@@ -876,7 +876,7 @@ Returns the maximum number of digits allowed in the integer portion of a number.
 
 **See Also**
 
-- [#setMaximumIntegerDigits](../android/icu/text/NumberFormat.md)) 
+- [#setMaximumIntegerDigits](NumberFormat.md)) 
 
 ### getMinimumFractionDigits
 
@@ -894,7 +894,7 @@ Returns the minimum number of digits allowed in the fraction portion of a number
 
 **See Also**
 
-- [#setMinimumFractionDigits](../android/icu/text/NumberFormat.md)) 
+- [#setMinimumFractionDigits](NumberFormat.md)) 
 
 ### getMinimumIntegerDigits
 
@@ -912,7 +912,7 @@ Returns the minimum number of digits allowed in the integer portion of a number.
 
 **See Also**
 
-- [#setMinimumIntegerDigits](../android/icu/text/NumberFormat.md)) 
+- [#setMinimumIntegerDigits](NumberFormat.md)) 
 
 ### getNumberInstance
 
@@ -922,7 +922,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static fun getNumberInstance(): NumberFormat!
 ```
 
-**NOTE:** New users are strongly encouraged to use [NumberFormatter](../android/icu/number/NumberFormatter.md) instead of NumberFormat. Returns a general-purpose number format for the current default`FORMAT`locale. 
+**NOTE:** New users are strongly encouraged to use [NumberFormatter](../android.icu.number/NumberFormatter.md) instead of NumberFormat. Returns a general-purpose number format for the current default`FORMAT`locale. 
 **See Also**
 
 - [android.icu.util.ULocale.Category#FORMAT](../android/icu/util/ULocale.Category.md) 
@@ -935,7 +935,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open static fun getNumberInstance(inLocale: ULocale!): NumberFormat!
 ```
 
-**NOTE:** New users are strongly encouraged to use [NumberFormatter](../android/icu/number/NumberFormatter.md) instead of NumberFormat.**\[icu\]**Returns a general-purpose number format for the specified locale. 
+**NOTE:** New users are strongly encouraged to use [NumberFormatter](../android.icu.number/NumberFormatter.md) instead of NumberFormat.**\[icu\]**Returns a general-purpose number format for the specified locale. 
 
 ### getNumberInstance
 
@@ -945,7 +945,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open static fun getNumberInstance(inLocale: Locale!): NumberFormat!
 ```
 
-**NOTE:** New users are strongly encouraged to use [NumberFormatter](../android/icu/number/NumberFormatter.md) instead of NumberFormat. Returns a general-purpose number format for the specified locale. 
+**NOTE:** New users are strongly encouraged to use [NumberFormatter](../android.icu.number/NumberFormatter.md) instead of NumberFormat. Returns a general-purpose number format for the specified locale. 
 
 ### getPercentInstance
 
@@ -955,11 +955,11 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static fun getPercentInstance(): NumberFormat!
 ```
 
-**NOTE:** New users are strongly encouraged to use [NumberFormatter](../android/icu/number/NumberFormatter.md) instead of NumberFormat. Returns a percentage format for the current default`FORMAT`locale.
+**NOTE:** New users are strongly encouraged to use [NumberFormatter](../android.icu.number/NumberFormatter.md) instead of NumberFormat. Returns a percentage format for the current default`FORMAT`locale.
 
 | Return ||
 |------------------------------------------------------------------------------------------------|------------------------------|
-| [NumberFormat](../android/icu/text/NumberFormat.md)! | a number format for percents |
+| [NumberFormat](NumberFormat.md)! | a number format for percents |
 
 **See Also**
 
@@ -973,11 +973,11 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open static fun getPercentInstance(inLocale: ULocale!): NumberFormat!
 ```
 
-**NOTE:** New users are strongly encouraged to use [NumberFormatter](../android/icu/number/NumberFormatter.md) instead of NumberFormat.**\[icu\]**Returns a percentage format for the specified locale.
+**NOTE:** New users are strongly encouraged to use [NumberFormatter](../android.icu.number/NumberFormatter.md) instead of NumberFormat.**\[icu\]**Returns a percentage format for the specified locale.
 
 | Return ||
 |------------------------------------------------------------------------------------------------|------------------------------|
-| [NumberFormat](../android/icu/text/NumberFormat.md)! | a number format for percents |
+| [NumberFormat](NumberFormat.md)! | a number format for percents |
 
 ### getPercentInstance
 
@@ -987,11 +987,11 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open static fun getPercentInstance(inLocale: Locale!): NumberFormat!
 ```
 
-**NOTE:** New users are strongly encouraged to use [NumberFormatter](../android/icu/number/NumberFormatter.md) instead of NumberFormat. Returns a percentage format for the specified locale.
+**NOTE:** New users are strongly encouraged to use [NumberFormatter](../android.icu.number/NumberFormatter.md) instead of NumberFormat. Returns a percentage format for the specified locale.
 
 | Return ||
 |------------------------------------------------------------------------------------------------|------------------------------|
-| [NumberFormat](../android/icu/text/NumberFormat.md)! | a number format for percents |
+| [NumberFormat](NumberFormat.md)! | a number format for percents |
 
 ### getRoundingMode
 
@@ -1009,7 +1009,7 @@ Returns the rounding mode used in this NumberFormat. The default implementation 
 
 **See Also**
 
-- [#setRoundingMode(int)](../android/icu/text/NumberFormat.md)) 
+- [#setRoundingMode(int)](NumberFormat.md)) 
 
 ### getScientificInstance
 
@@ -1019,11 +1019,11 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static fun getScientificInstance(): NumberFormat!
 ```
 
-**NOTE:** New users are strongly encouraged to use [NumberFormatter](../android/icu/number/NumberFormatter.md) instead of NumberFormat.**\[icu\]** Returns a scientific format for the current default`FORMAT`locale.
+**NOTE:** New users are strongly encouraged to use [NumberFormatter](../android.icu.number/NumberFormatter.md) instead of NumberFormat.**\[icu\]** Returns a scientific format for the current default`FORMAT`locale.
 
 | Return ||
 |------------------------------------------------------------------------------------------------|----------------------------|
-| [NumberFormat](../android/icu/text/NumberFormat.md)! | a scientific number format |
+| [NumberFormat](NumberFormat.md)! | a scientific number format |
 
 **See Also**
 
@@ -1037,11 +1037,11 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open static fun getScientificInstance(inLocale: ULocale!): NumberFormat!
 ```
 
-**NOTE:** New users are strongly encouraged to use [NumberFormatter](../android/icu/number/NumberFormatter.md) instead of NumberFormat.**\[icu\]**Returns a scientific format for the specified locale.
+**NOTE:** New users are strongly encouraged to use [NumberFormatter](../android.icu.number/NumberFormatter.md) instead of NumberFormat.**\[icu\]**Returns a scientific format for the specified locale.
 
 | Return ||
 |------------------------------------------------------------------------------------------------|----------------------------|
-| [NumberFormat](../android/icu/text/NumberFormat.md)! | a scientific number format |
+| [NumberFormat](NumberFormat.md)! | a scientific number format |
 
 ### getScientificInstance
 
@@ -1051,11 +1051,11 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open static fun getScientificInstance(inLocale: Locale!): NumberFormat!
 ```
 
-**NOTE:** New users are strongly encouraged to use [NumberFormatter](../android/icu/number/NumberFormatter.md) instead of NumberFormat.**\[icu\]**Returns a scientific format for the specified locale.
+**NOTE:** New users are strongly encouraged to use [NumberFormatter](../android.icu.number/NumberFormatter.md) instead of NumberFormat.**\[icu\]**Returns a scientific format for the specified locale.
 
 | Return ||
 |------------------------------------------------------------------------------------------------|----------------------------|
-| [NumberFormat](../android/icu/text/NumberFormat.md)! | a scientific number format |
+| [NumberFormat](NumberFormat.md)! | a scientific number format |
 
 ### hashCode
 
@@ -1065,13 +1065,13 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun hashCode(): Int
 ```
 
-Returns a hash code value for the object. This method is supported for the benefit of hash tables such as those provided by [java.util.HashMap](../java/util/HashMap.md).
+Returns a hash code value for the object. This method is supported for the benefit of hash tables such as those provided by [java.util.HashMap](../java.util/HashMap.md).
 
 The general contract of`hashCode`is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the`hashCode`method must consistently return the same integer, provided no information used in`equals`comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the [equals](../java/lang/Object.md))method, then calling the`hashCode`method on each of the two objects must produce the same integer result.
-- It is*not* required that if two objects are unequal according to the [equals](../java/lang/Object.md))method, then calling the`hashCode`method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the [equals](../java.lang/Object.md))method, then calling the`hashCode`method on each of the two objects must produce the same integer result.
+- It is*not* required that if two objects are unequal according to the [equals](../java.lang/Object.md))method, then calling the`hashCode`method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------|
@@ -1093,7 +1093,7 @@ Returns true if grouping is used in this format. For example, in the en_US local
 
 **See Also**
 
-- [#setGroupingUsed](../android/icu/text/NumberFormat.md)) 
+- [#setGroupingUsed](NumberFormat.md)) 
 
 ### isParseIntegerOnly
 
@@ -1125,7 +1125,7 @@ open fun isParseStrict(): Boolean
 
 **See Also**
 
-- [#setParseStrict](../android/icu/text/NumberFormat.md)) 
+- [#setParseStrict](NumberFormat.md)) 
 
 ### parse
 
@@ -1168,12 +1168,12 @@ If IntegerOnly is set, will stop at a decimal point (or equivalent; e.g., for ra
 
 Does not throw an exception; if no object can be parsed, index is unchanged!
 
-For more detail on parsing, see the "Parsing" header in the class documentation of [DecimalFormat](../android/icu/text/DecimalFormat.md). 
+For more detail on parsing, see the "Parsing" header in the class documentation of [DecimalFormat](DecimalFormat.md). 
 **See Also**
 
-- [#isParseIntegerOnly](../android/icu/text/NumberFormat.md))
-- [android.icu.text.DecimalFormat#setParseBigDecimal](../android/icu/text/DecimalFormat.md))
-- [java.text.Format#parseObject(String, ParsePosition)](../java/text/Format.md)) 
+- [#isParseIntegerOnly](NumberFormat.md))
+- [android.icu.text.DecimalFormat#setParseBigDecimal](DecimalFormat.md))
+- [java.text.Format#parseObject(String, ParsePosition)](../java.text/Format.md)) 
 
 ### parseCurrency
 
@@ -1191,11 +1191,11 @@ Parses text from the given string as a CurrencyAmount. Unlike the parse() method
 | Parameters ||
 |--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `text` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!:the text to parse |
-| `pos` | [ParsePosition](../java/text/ParsePosition.md)!:input-output position; on input, the position within text to match; must have 0 \<= pos.getIndex() \< text.length(); on output, the position after the last matched character. If the parse fails, the position in unchanged upon output. |
+| `pos` | [ParsePosition](../java.text/ParsePosition.md)!:input-output position; on input, the position within text to match; must have 0 \<= pos.getIndex() \< text.length(); on output, the position after the last matched character. If the parse fails, the position in unchanged upon output. |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------|----------------------------------------|
-| [CurrencyAmount](../android/icu/util/CurrencyAmount.md)! | a CurrencyAmount, or null upon failure |
+| [CurrencyAmount](../android.icu.util/CurrencyAmount.md)! | a CurrencyAmount, or null upon failure |
 
 ### parseObject
 
@@ -1214,7 +1214,7 @@ Parses text from a string to produce a number.
 |-----------------|-----------------------------------------------------------------------------------------------------------------------------------------|
 | `source` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the String to parse |
 | `pos` | A`ParsePosition`object with index and error index information as described above. |
-| `parsePosition` | [ParsePosition](../java/text/ParsePosition.md)!:the position at which to start the parse |
+| `parsePosition` | [ParsePosition](../java.text/ParsePosition.md)!:the position at which to start the parse |
 | --- | --- |
 
 | Return ||
@@ -1227,7 +1227,7 @@ Parses text from a string to produce a number.
 
 **See Also**
 
-- [java.text.NumberFormat#parseObject(String, ParsePosition)](../java/text/NumberFormat.md)) 
+- [java.text.NumberFormat#parseObject(String, ParsePosition)](../java.text/NumberFormat.md)) 
 
 ### setContext
 
@@ -1241,7 +1241,7 @@ open fun setContext(context: DisplayContext!): Unit
 
 | Parameters ||
 |-----------|------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [DisplayContext](../android/icu/text/DisplayContext.md)!:The DisplayContext value to set. |
+| `context` | [DisplayContext](DisplayContext.md)!:The DisplayContext value to set. |
 
 ### setCurrency
 
@@ -1255,7 +1255,7 @@ Sets the Currency object used to display currency amounts. This takes effect imm
 
 | Parameters ||
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `theCurrency` | [Currency](../android/icu/util/Currency.md)!:new currency object to use. May be null for some subclasses. |
+| `theCurrency` | [Currency](../android.icu.util/Currency.md)!:new currency object to use. May be null for some subclasses. |
 
 ### setGroupingUsed
 
@@ -1273,7 +1273,7 @@ Sets whether or not grouping will be used in this format. Grouping affects both 
 
 **See Also**
 
-- [#isGroupingUsed](../android/icu/text/NumberFormat.md)) 
+- [#isGroupingUsed](NumberFormat.md)) 
 
 ### setMaximumFractionDigits
 
@@ -1291,7 +1291,7 @@ Sets the maximum number of digits allowed in the fraction portion of a number. T
 
 **See Also**
 
-- [#getMaximumFractionDigits](../android/icu/text/NumberFormat.md)) 
+- [#getMaximumFractionDigits](NumberFormat.md)) 
 
 ### setMaximumIntegerDigits
 
@@ -1309,7 +1309,7 @@ Sets the maximum number of digits allowed in the integer portion of a number. Th
 
 **See Also**
 
-- [#getMaximumIntegerDigits](../android/icu/text/NumberFormat.md)) 
+- [#getMaximumIntegerDigits](NumberFormat.md)) 
 
 ### setMinimumFractionDigits
 
@@ -1327,7 +1327,7 @@ Sets the minimum number of digits allowed in the fraction portion of a number. T
 
 **See Also**
 
-- [#getMinimumFractionDigits](../android/icu/text/NumberFormat.md)) 
+- [#getMinimumFractionDigits](NumberFormat.md)) 
 
 ### setMinimumIntegerDigits
 
@@ -1345,7 +1345,7 @@ Sets the minimum number of digits allowed in the integer portion of a number. Th
 
 **See Also**
 
-- [#getMinimumIntegerDigits](../android/icu/text/NumberFormat.md)) 
+- [#getMinimumIntegerDigits](NumberFormat.md)) 
 
 ### setParseIntegerOnly
 
@@ -1365,7 +1365,7 @@ For example, in*en-US*, parsing the string "123.45" will return the number 123 a
 
 **See Also**
 
-- [#isParseIntegerOnly](../android/icu/text/NumberFormat.md)) 
+- [#isParseIntegerOnly](NumberFormat.md)) 
 
 ### setParseStrict
 
@@ -1396,7 +1396,7 @@ When strict parsing is off, all grouping separators are ignored. This is the def
 
 **See Also**
 
-- [#isParseStrict](../android/icu/text/NumberFormat.md)) 
+- [#isParseStrict](NumberFormat.md)) 
 
 ### setRoundingMode
 
@@ -1433,7 +1433,7 @@ Returns the pattern for the provided locale and choice.
 
 | Parameters ||
 |-------------|-------------------------------------------------------------------------------------------------------------------|
-| `forLocale` | [ULocale](../android/icu/util/ULocale.md)!:the locale of the data. |
+| `forLocale` | [ULocale](../android.icu.util/ULocale.md)!:the locale of the data. |
 | `choice` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the pattern format. |
 
 | Return ||

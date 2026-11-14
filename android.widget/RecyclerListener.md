@@ -19,7 +19,7 @@ A RecyclerListener is used to receive a notification whenever a View is placed i
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onMovedToScrapHeap](../android/widget/AbsListView.RecyclerListener.md))`(`view:` ` [View](../android/view/View.md)!`)` Indicates that the specified View was moved into the recycler's scrap heap. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onMovedToScrapHeap](../android/widget/AbsListView.RecyclerListener.md))`(`view:` ` [View](../android.view/View.md)!`)` Indicates that the specified View was moved into the recycler's scrap heap. |
 
 ## Public methods
 
@@ -35,4 +35,4 @@ Indicates that the specified View was moved into the recycler's scrap heap. The 
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------|
-| `view` | [View](../android/view/View.md)!: |
+| `view` | [View](../android.view/View.md)!: |

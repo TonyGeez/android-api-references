@@ -10,9 +10,9 @@ open class ExecutorCompletionService<V : Any!> : CompletionService<V>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.util.concurrent.ExecutorCompletionService](../java/util/concurrent/ExecutorCompletionService.md) |
+| ↳ | [java.util.concurrent.ExecutorCompletionService](ExecutorCompletionService.md) |
 
-A [CompletionService](../java/util/concurrent/CompletionService.md) that uses a supplied [Executor](../java/util/concurrent/Executor.md) to execute tasks. This class arranges that submitted tasks are, upon completion, placed on a queue accessible using`take`. The class is lightweight enough to be suitable for transient use when processing groups of tasks.
+A [CompletionService](CompletionService.md) that uses a supplied [Executor](Executor.md) to execute tasks. This class arranges that submitted tasks are, upon completion, placed on a queue accessible using`take`. The class is lightweight enough to be suitable for transient use when processing groups of tasks.
 
 **Usage Examples.** Suppose you have a set of solvers for a certain problem, each returning a value of some type`Result`, and would like to run them concurrently, processing the results of each of them that return a non-null value, in some method`use(Result r)`. You could write this as: 
 
@@ -65,17 +65,17 @@ Suppose instead that you would like to use the first non-null result of the set 
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ExecutorCompletionService](../java/util/concurrent/ExecutorCompletionService.md))`(`executor:` ` [Executor](../java/util/concurrent/Executor.md)!`)` Creates an ExecutorCompletionService using the supplied executor for base task execution and a [LinkedBlockingQueue](../java/util/concurrent/LinkedBlockingQueue.md) as a completion queue. |
-| [ExecutorCompletionService](../java/util/concurrent/ExecutorCompletionService.md))`(`executor:` ` [Executor](../java/util/concurrent/Executor.md)!`, `completionQueue:` ` [BlockingQueue](../java/util/concurrent/BlockingQueue.md)< [Future](../java/util/concurrent/Future.md)<V>!>!`)` Creates an ExecutorCompletionService using the supplied executor for base task execution and the supplied queue as its completion queue. |
+| [ExecutorCompletionService](ExecutorCompletionService.md))`(`executor:` ` [Executor](Executor.md)!`)` Creates an ExecutorCompletionService using the supplied executor for base task execution and a [LinkedBlockingQueue](LinkedBlockingQueue.md) as a completion queue. |
+| [ExecutorCompletionService](ExecutorCompletionService.md))`(`executor:` ` [Executor](Executor.md)!`, `completionQueue:` ` [BlockingQueue](BlockingQueue.md)< [Future](Future.md)<V>!>!`)` Creates an ExecutorCompletionService using the supplied executor for base task execution and the supplied queue as its completion queue. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Future](../java/util/concurrent/Future.md)\<V\>! | [poll](../java/util/concurrent/ExecutorCompletionService.md))`()` <br /> |
-| open [Future](../java/util/concurrent/Future.md)\<V\>! | [poll](../java/util/concurrent/ExecutorCompletionService.md))`(`timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TimeUnit](../java/util/concurrent/TimeUnit.md)!`)` <br /> |
-| open [Future](../java/util/concurrent/Future.md)\<V\>! | [submit](../java/util/concurrent/ExecutorCompletionService.md))`(`task:` ` [Runnable](../java/lang/Runnable.md)!`, `result:` `V`)` <br /> |
+| open [Future](Future.md)\<V\>! | [poll](ExecutorCompletionService.md))`()` <br /> |
+| open [Future](Future.md)\<V\>! | [poll](ExecutorCompletionService.md))`(`timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TimeUnit](TimeUnit.md)!`)` <br /> |
+| open [Future](Future.md)\<V\>! | [submit](ExecutorCompletionService.md))`(`task:` ` [Runnable](../java.lang/Runnable.md)!`, `result:` `V`)` <br /> |
 | --- | --- |
-| open [Future](../java/util/concurrent/Future.md)\<V\>! | [submit](../java/util/concurrent/ExecutorCompletionService.md))`(`task:` ` [Callable](../java/util/concurrent/Callable.md)<V>!`)` <br /> |
-| open [Future](../java/util/concurrent/Future.md)\<V\>! | [take](../java/util/concurrent/ExecutorCompletionService.md))`()` <br /> |
+| open [Future](Future.md)\<V\>! | [submit](ExecutorCompletionService.md))`(`task:` ` [Callable](Callable.md)<V>!`)` <br /> |
+| open [Future](Future.md)\<V\>! | [take](ExecutorCompletionService.md))`()` <br /> |
 
 ## Public constructors
 
@@ -87,11 +87,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 ExecutorCompletionService(executor: Executor!)
 ```
 
-Creates an ExecutorCompletionService using the supplied executor for base task execution and a [LinkedBlockingQueue](../java/util/concurrent/LinkedBlockingQueue.md) as a completion queue.
+Creates an ExecutorCompletionService using the supplied executor for base task execution and a [LinkedBlockingQueue](LinkedBlockingQueue.md) as a completion queue.
 
 | Parameters ||
 |------------|---------------------------------------------------------------------------------------------------------------|
-| `executor` | [Executor](../java/util/concurrent/Executor.md)!:the executor to use |
+| `executor` | [Executor](Executor.md)!:the executor to use |
 
 | Exceptions ||
 |----------------------------------|----------------------|
@@ -111,8 +111,8 @@ Creates an ExecutorCompletionService using the supplied executor for base task e
 
 | Parameters ||
 |-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `executor` | [Executor](../java/util/concurrent/Executor.md)!:the executor to use |
-| `completionQueue` | [BlockingQueue](../java/util/concurrent/BlockingQueue.md)\< [Future](../java/util/concurrent/Future.md)\<V\>!\>!:the queue to use as the completion queue normally one dedicated for use by this service. This queue is treated as unbounded -- failed attempted`Queue.add`operations for completed tasks cause them not to be retrievable. |
+| `executor` | [Executor](Executor.md)!:the executor to use |
+| `completionQueue` | [BlockingQueue](BlockingQueue.md)\< [Future](Future.md)\<V\>!\>!:the queue to use as the completion queue normally one dedicated for use by this service. This queue is treated as unbounded -- failed attempted`Queue.add`operations for completed tasks cause them not to be retrievable. |
 
 | Exceptions ||
 |----------------------------------|------------------------------------------|
@@ -130,7 +130,7 @@ open fun poll(): Future<V>!
 
 | Return ||
 |------------------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| [Future](../java/util/concurrent/Future.md)<V>! | the Future representing the next completed task, or`null`if none are present |
+| [Future](Future.md)<V>! | the Future representing the next completed task, or`null`if none are present |
 
 ### poll
 
@@ -146,11 +146,11 @@ open fun poll(
 | Parameters ||
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `timeout` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):how long to wait before giving up, in units of`unit` |
-| `unit` | [TimeUnit](../java/util/concurrent/TimeUnit.md)!:a`TimeUnit`determining how to interpret the`timeout`parameter |
+| `unit` | [TimeUnit](TimeUnit.md)!:a`TimeUnit`determining how to interpret the`timeout`parameter |
 
 | Return ||
 |------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| [Future](../java/util/concurrent/Future.md)<V>! | the Future representing the next completed task or`null`if the specified waiting time elapses before one is present |
+| [Future](Future.md)<V>! | the Future representing the next completed task or`null`if the specified waiting time elapses before one is present |
 
 | Exceptions ||
 |----------------------------------|------------------------------|
@@ -169,12 +169,12 @@ open fun submit(
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------|
-| `task` | [Runnable](../java/lang/Runnable.md)!:the task to submit |
+| `task` | [Runnable](../java.lang/Runnable.md)!:the task to submit |
 | `result` | V:the result to return upon successful completion |
 
 | Return ||
 |------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| [Future](../java/util/concurrent/Future.md)<V>! | a Future representing pending completion of the task, and whose`get()`method will return the given result value upon completion |
+| [Future](Future.md)<V>! | a Future representing pending completion of the task, and whose`get()`method will return the given result value upon completion |
 
 | Exceptions ||
 |---------------------------------------------------|-----------------------------------------------|
@@ -191,11 +191,11 @@ open fun submit(task: Callable<V>!): Future<V>!
 
 | Parameters ||
 |--------|-------------------------------------------------------------------------------------------------------------------|
-| `task` | [Callable](../java/util/concurrent/Callable.md)\<V\>!:the task to submit |
+| `task` | [Callable](Callable.md)\<V\>!:the task to submit |
 
 | Return ||
 |------------------------------------------------------------------------------------------|------------------------------------------------------|
-| [Future](../java/util/concurrent/Future.md)<V>! | a Future representing pending completion of the task |
+| [Future](Future.md)<V>! | a Future representing pending completion of the task |
 
 | Exceptions ||
 |---------------------------------------------------|-----------------------------------------------|
@@ -212,7 +212,7 @@ open fun take(): Future<V>!
 
 | Return ||
 |------------------------------------------------------------------------------------------|-------------------------------------------------|
-| [Future](../java/util/concurrent/Future.md)<V>! | the Future representing the next completed task |
+| [Future](Future.md)<V>! | the Future representing the next completed task |
 
 | Exceptions ||
 |----------------------------------|------------------------------|

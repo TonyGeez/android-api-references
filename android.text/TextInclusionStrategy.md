@@ -19,7 +19,7 @@ Strategy for determining whether a text segment is inside a rectangle area.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSegmentInside](../android/text/Layout.TextInclusionStrategy.md))`(`segmentBounds:` ` [RectF](../android/graphics/RectF.md)`, `area:` ` [RectF](../android/graphics/RectF.md)`)` Returns true if this [TextInclusionStrategy](../android/text/Layout.TextInclusionStrategy.md) considers the segment with bounds`segmentBounds`to be inside`area`. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSegmentInside](../android/text/Layout.TextInclusionStrategy.md))`(`segmentBounds:` ` [RectF](../android.graphics/RectF.md)`, `area:` ` [RectF](../android.graphics/RectF.md)`)` Returns true if this [TextInclusionStrategy](../android/text/Layout.TextInclusionStrategy.md) considers the segment with bounds`segmentBounds`to be inside`area`. |
 
 ## Public methods
 
@@ -40,5 +40,5 @@ The segment is a range of text which does not cross line boundaries or direction
 
 | Parameters ||
 |-----------------|------------------------------------------------------------------------------------------------------------------|
-| `segmentBounds` | [RectF](../android/graphics/RectF.md):This value cannot be`null`. |
-| `area` | [RectF](../android/graphics/RectF.md):This value cannot be`null`. |
+| `segmentBounds` | [RectF](../android.graphics/RectF.md):This value cannot be`null`. |
+| `area` | [RectF](../android.graphics/RectF.md):This value cannot be`null`. |

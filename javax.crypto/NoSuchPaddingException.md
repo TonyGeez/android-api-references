@@ -11,10 +11,10 @@ open class NoSuchPaddingException : GeneralSecurityException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
-| | | ↳ | [java.security.GeneralSecurityException](../java/security/GeneralSecurityException.md) ||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) |||
+| | | ↳ | [java.security.GeneralSecurityException](../java.security/GeneralSecurityException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [javax.crypto.NoSuchPaddingException](../javax/crypto/NoSuchPaddingException.md) |
+| | | | ↳ | [javax.crypto.NoSuchPaddingException](NoSuchPaddingException.md) |
 
 This exception is thrown when a particular padding mechanism is requested but is not available in the environment.
 
@@ -22,8 +22,8 @@ This exception is thrown when a particular padding mechanism is requested but is
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [NoSuchPaddingException](../javax/crypto/NoSuchPaddingException.md))`()` Constructs a NoSuchPaddingException with no detail message. |
-| [NoSuchPaddingException](../javax/crypto/NoSuchPaddingException.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a NoSuchPaddingException with the specified detail message. |
+| [NoSuchPaddingException](NoSuchPaddingException.md))`()` Constructs a NoSuchPaddingException with no detail message. |
+| [NoSuchPaddingException](NoSuchPaddingException.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a NoSuchPaddingException with the specified detail message. |
 
 ## Public constructors
 

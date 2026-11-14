@@ -8,147 +8,147 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface EGL10 : EGL
 ```
 
-| [javax.microedition.khronos.egl.EGL10](../javax/microedition/khronos/egl/EGL10.md) |
+| [javax.microedition.khronos.egl.EGL10](EGL10.md) |
 
-| Known Direct Subclasses [EGL11](../javax/microedition/khronos/egl/EGL11.md) |----------------------------------------------------------------------------------------------|--------| | [EGL11](../javax/microedition/khronos/egl/EGL11.md) | <br /> | |
+| Known Direct Subclasses [EGL11](EGL11.md) |----------------------------------------------------------------------------------------------|--------| | [EGL11](EGL11.md) | <br /> | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 ## Summary
 
 | Constants ||
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_ALPHA_FORMAT](../javax/microedition/khronos/egl/EGL10.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_ALPHA_MASK_SIZE](../javax/microedition/khronos/egl/EGL10.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_ALPHA_SIZE](../javax/microedition/khronos/egl/EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_ALPHA_FORMAT](EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_ALPHA_MASK_SIZE](EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_ALPHA_SIZE](EGL10.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BAD_ACCESS](../javax/microedition/khronos/egl/EGL10.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BAD_ALLOC](../javax/microedition/khronos/egl/EGL10.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BAD_ATTRIBUTE](../javax/microedition/khronos/egl/EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BAD_ACCESS](EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BAD_ALLOC](EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BAD_ATTRIBUTE](EGL10.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BAD_CONFIG](../javax/microedition/khronos/egl/EGL10.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BAD_CONTEXT](../javax/microedition/khronos/egl/EGL10.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BAD_CURRENT_SURFACE](../javax/microedition/khronos/egl/EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BAD_CONFIG](EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BAD_CONTEXT](EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BAD_CURRENT_SURFACE](EGL10.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BAD_DISPLAY](../javax/microedition/khronos/egl/EGL10.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BAD_MATCH](../javax/microedition/khronos/egl/EGL10.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BAD_NATIVE_PIXMAP](../javax/microedition/khronos/egl/EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BAD_DISPLAY](EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BAD_MATCH](EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BAD_NATIVE_PIXMAP](EGL10.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BAD_NATIVE_WINDOW](../javax/microedition/khronos/egl/EGL10.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BAD_PARAMETER](../javax/microedition/khronos/egl/EGL10.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BAD_SURFACE](../javax/microedition/khronos/egl/EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BAD_NATIVE_WINDOW](EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BAD_PARAMETER](EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BAD_SURFACE](EGL10.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BLUE_SIZE](../javax/microedition/khronos/egl/EGL10.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BUFFER_SIZE](../javax/microedition/khronos/egl/EGL10.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_COLORSPACE](../javax/microedition/khronos/egl/EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BLUE_SIZE](EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_BUFFER_SIZE](EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_COLORSPACE](EGL10.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_COLOR_BUFFER_TYPE](../javax/microedition/khronos/egl/EGL10.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_CONFIG_CAVEAT](../javax/microedition/khronos/egl/EGL10.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_CONFIG_ID](../javax/microedition/khronos/egl/EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_COLOR_BUFFER_TYPE](EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_CONFIG_CAVEAT](EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_CONFIG_ID](EGL10.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_CORE_NATIVE_ENGINE](../javax/microedition/khronos/egl/EGL10.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_DEPTH_SIZE](../javax/microedition/khronos/egl/EGL10.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_DONT_CARE](../javax/microedition/khronos/egl/EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_CORE_NATIVE_ENGINE](EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_DEPTH_SIZE](EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_DONT_CARE](EGL10.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_DRAW](../javax/microedition/khronos/egl/EGL10.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_EXTENSIONS](../javax/microedition/khronos/egl/EGL10.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_GREEN_SIZE](../javax/microedition/khronos/egl/EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_DRAW](EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_EXTENSIONS](EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_GREEN_SIZE](EGL10.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_HEIGHT](../javax/microedition/khronos/egl/EGL10.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_HORIZONTAL_RESOLUTION](../javax/microedition/khronos/egl/EGL10.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_LARGEST_PBUFFER](../javax/microedition/khronos/egl/EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_HEIGHT](EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_HORIZONTAL_RESOLUTION](EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_LARGEST_PBUFFER](EGL10.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_LEVEL](../javax/microedition/khronos/egl/EGL10.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_LUMINANCE_BUFFER](../javax/microedition/khronos/egl/EGL10.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_LUMINANCE_SIZE](../javax/microedition/khronos/egl/EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_LEVEL](EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_LUMINANCE_BUFFER](EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_LUMINANCE_SIZE](EGL10.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_MAX_PBUFFER_HEIGHT](../javax/microedition/khronos/egl/EGL10.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_MAX_PBUFFER_PIXELS](../javax/microedition/khronos/egl/EGL10.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_MAX_PBUFFER_WIDTH](../javax/microedition/khronos/egl/EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_MAX_PBUFFER_HEIGHT](EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_MAX_PBUFFER_PIXELS](EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_MAX_PBUFFER_WIDTH](EGL10.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_NATIVE_RENDERABLE](../javax/microedition/khronos/egl/EGL10.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_NATIVE_VISUAL_ID](../javax/microedition/khronos/egl/EGL10.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_NATIVE_VISUAL_TYPE](../javax/microedition/khronos/egl/EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_NATIVE_RENDERABLE](EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_NATIVE_VISUAL_ID](EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_NATIVE_VISUAL_TYPE](EGL10.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_NONE](../javax/microedition/khronos/egl/EGL10.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_NON_CONFORMANT_CONFIG](../javax/microedition/khronos/egl/EGL10.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_NOT_INITIALIZED](../javax/microedition/khronos/egl/EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_NONE](EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_NON_CONFORMANT_CONFIG](EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_NOT_INITIALIZED](EGL10.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_PBUFFER_BIT](../javax/microedition/khronos/egl/EGL10.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_PIXEL_ASPECT_RATIO](../javax/microedition/khronos/egl/EGL10.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_PIXMAP_BIT](../javax/microedition/khronos/egl/EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_PBUFFER_BIT](EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_PIXEL_ASPECT_RATIO](EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_PIXMAP_BIT](EGL10.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_READ](../javax/microedition/khronos/egl/EGL10.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_RED_SIZE](../javax/microedition/khronos/egl/EGL10.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_RENDERABLE_TYPE](../javax/microedition/khronos/egl/EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_READ](EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_RED_SIZE](EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_RENDERABLE_TYPE](EGL10.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_RENDER_BUFFER](../javax/microedition/khronos/egl/EGL10.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_RGB_BUFFER](../javax/microedition/khronos/egl/EGL10.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_SAMPLES](../javax/microedition/khronos/egl/EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_RENDER_BUFFER](EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_RGB_BUFFER](EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_SAMPLES](EGL10.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_SAMPLE_BUFFERS](../javax/microedition/khronos/egl/EGL10.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_SINGLE_BUFFER](../javax/microedition/khronos/egl/EGL10.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_SLOW_CONFIG](../javax/microedition/khronos/egl/EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_SAMPLE_BUFFERS](EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_SINGLE_BUFFER](EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_SLOW_CONFIG](EGL10.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_STENCIL_SIZE](../javax/microedition/khronos/egl/EGL10.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_SUCCESS](../javax/microedition/khronos/egl/EGL10.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_SURFACE_TYPE](../javax/microedition/khronos/egl/EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_STENCIL_SIZE](EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_SUCCESS](EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_SURFACE_TYPE](EGL10.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_TRANSPARENT_BLUE_VALUE](../javax/microedition/khronos/egl/EGL10.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_TRANSPARENT_GREEN_VALUE](../javax/microedition/khronos/egl/EGL10.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_TRANSPARENT_RED_VALUE](../javax/microedition/khronos/egl/EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_TRANSPARENT_BLUE_VALUE](EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_TRANSPARENT_GREEN_VALUE](EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_TRANSPARENT_RED_VALUE](EGL10.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_TRANSPARENT_RGB](../javax/microedition/khronos/egl/EGL10.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_TRANSPARENT_TYPE](../javax/microedition/khronos/egl/EGL10.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_VENDOR](../javax/microedition/khronos/egl/EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_TRANSPARENT_RGB](EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_TRANSPARENT_TYPE](EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_VENDOR](EGL10.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_VERSION](../javax/microedition/khronos/egl/EGL10.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_VERTICAL_RESOLUTION](../javax/microedition/khronos/egl/EGL10.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_WIDTH](../javax/microedition/khronos/egl/EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_VERSION](EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_VERTICAL_RESOLUTION](EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_WIDTH](EGL10.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_WINDOW_BIT](../javax/microedition/khronos/egl/EGL10.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EGL_WINDOW_BIT](EGL10.md) <br /> |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglChooseConfig](../javax/microedition/khronos/egl/EGL10.md))`(`display:` ` [EGLDisplay](../javax/microedition/khronos/egl/EGLDisplay.md)!`, `attrib_list:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `configs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [EGLConfig](../javax/microedition/khronos/egl/EGLConfig.md)!>!`, `config_size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `num_config:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` <br /> |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglCopyBuffers](../javax/microedition/khronos/egl/EGL10.md))`(`display:` ` [EGLDisplay](../javax/microedition/khronos/egl/EGLDisplay.md)!`, `surface:` ` [EGLSurface](../javax/microedition/khronos/egl/EGLSurface.md)!`, `native_pixmap:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` <br /> |
-| abstract [EGLContext](../javax/microedition/khronos/egl/EGLContext.md)! | [eglCreateContext](../javax/microedition/khronos/egl/EGL10.md))`(`display:` ` [EGLDisplay](../javax/microedition/khronos/egl/EGLDisplay.md)!`, `config:` ` [EGLConfig](../javax/microedition/khronos/egl/EGLConfig.md)!`, `share_context:` ` [EGLContext](../javax/microedition/khronos/egl/EGLContext.md)!`, `attrib_list:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` <br /> |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglChooseConfig](EGL10.md))`(`display:` ` [EGLDisplay](EGLDisplay.md)!`, `attrib_list:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `configs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [EGLConfig](EGLConfig.md)!>!`, `config_size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `num_config:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` <br /> |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglCopyBuffers](EGL10.md))`(`display:` ` [EGLDisplay](EGLDisplay.md)!`, `surface:` ` [EGLSurface](EGLSurface.md)!`, `native_pixmap:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` <br /> |
+| abstract [EGLContext](EGLContext.md)! | [eglCreateContext](EGL10.md))`(`display:` ` [EGLDisplay](EGLDisplay.md)!`, `config:` ` [EGLConfig](EGLConfig.md)!`, `share_context:` ` [EGLContext](EGLContext.md)!`, `attrib_list:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` <br /> |
 | --- | --- |
-| abstract [EGLSurface](../javax/microedition/khronos/egl/EGLSurface.md)! | [eglCreatePbufferSurface](../javax/microedition/khronos/egl/EGL10.md))`(`display:` ` [EGLDisplay](../javax/microedition/khronos/egl/EGLDisplay.md)!`, `config:` ` [EGLConfig](../javax/microedition/khronos/egl/EGLConfig.md)!`, `attrib_list:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` <br /> |
-| abstract [EGLSurface](../javax/microedition/khronos/egl/EGLSurface.md)! | [eglCreatePixmapSurface](../javax/microedition/khronos/egl/EGL10.md))`(`display:` ` [EGLDisplay](../javax/microedition/khronos/egl/EGLDisplay.md)!`, `config:` ` [EGLConfig](../javax/microedition/khronos/egl/EGLConfig.md)!`, `native_pixmap:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `attrib_list:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` <br /> |
-| abstract [EGLSurface](../javax/microedition/khronos/egl/EGLSurface.md)! | [eglCreateWindowSurface](../javax/microedition/khronos/egl/EGL10.md))`(`display:` ` [EGLDisplay](../javax/microedition/khronos/egl/EGLDisplay.md)!`, `config:` ` [EGLConfig](../javax/microedition/khronos/egl/EGLConfig.md)!`, `native_window:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `attrib_list:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` <br /> |
+| abstract [EGLSurface](EGLSurface.md)! | [eglCreatePbufferSurface](EGL10.md))`(`display:` ` [EGLDisplay](EGLDisplay.md)!`, `config:` ` [EGLConfig](EGLConfig.md)!`, `attrib_list:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` <br /> |
+| abstract [EGLSurface](EGLSurface.md)! | [eglCreatePixmapSurface](EGL10.md))`(`display:` ` [EGLDisplay](EGLDisplay.md)!`, `config:` ` [EGLConfig](EGLConfig.md)!`, `native_pixmap:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `attrib_list:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` <br /> |
+| abstract [EGLSurface](EGLSurface.md)! | [eglCreateWindowSurface](EGL10.md))`(`display:` ` [EGLDisplay](EGLDisplay.md)!`, `config:` ` [EGLConfig](EGLConfig.md)!`, `native_window:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `attrib_list:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` <br /> |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglDestroyContext](../javax/microedition/khronos/egl/EGL10.md))`(`display:` ` [EGLDisplay](../javax/microedition/khronos/egl/EGLDisplay.md)!`, `context:` ` [EGLContext](../javax/microedition/khronos/egl/EGLContext.md)!`)` <br /> |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglDestroySurface](../javax/microedition/khronos/egl/EGL10.md))`(`display:` ` [EGLDisplay](../javax/microedition/khronos/egl/EGLDisplay.md)!`, `surface:` ` [EGLSurface](../javax/microedition/khronos/egl/EGLSurface.md)!`)` <br /> |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglGetConfigAttrib](../javax/microedition/khronos/egl/EGL10.md))`(`display:` ` [EGLDisplay](../javax/microedition/khronos/egl/EGLDisplay.md)!`, `config:` ` [EGLConfig](../javax/microedition/khronos/egl/EGLConfig.md)!`, `attribute:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` <br /> |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglDestroyContext](EGL10.md))`(`display:` ` [EGLDisplay](EGLDisplay.md)!`, `context:` ` [EGLContext](EGLContext.md)!`)` <br /> |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglDestroySurface](EGL10.md))`(`display:` ` [EGLDisplay](EGLDisplay.md)!`, `surface:` ` [EGLSurface](EGLSurface.md)!`)` <br /> |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglGetConfigAttrib](EGL10.md))`(`display:` ` [EGLDisplay](EGLDisplay.md)!`, `config:` ` [EGLConfig](EGLConfig.md)!`, `attribute:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` <br /> |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglGetConfigs](../javax/microedition/khronos/egl/EGL10.md))`(`display:` ` [EGLDisplay](../javax/microedition/khronos/egl/EGLDisplay.md)!`, `configs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [EGLConfig](../javax/microedition/khronos/egl/EGLConfig.md)!>!`, `config_size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `num_config:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` <br /> |
-| abstract [EGLContext](../javax/microedition/khronos/egl/EGLContext.md)! | [eglGetCurrentContext](../javax/microedition/khronos/egl/EGL10.md))`()` <br /> |
-| abstract [EGLDisplay](../javax/microedition/khronos/egl/EGLDisplay.md)! | [eglGetCurrentDisplay](../javax/microedition/khronos/egl/EGL10.md))`()` <br /> |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglGetConfigs](EGL10.md))`(`display:` ` [EGLDisplay](EGLDisplay.md)!`, `configs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [EGLConfig](EGLConfig.md)!>!`, `config_size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `num_config:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` <br /> |
+| abstract [EGLContext](EGLContext.md)! | [eglGetCurrentContext](EGL10.md))`()` <br /> |
+| abstract [EGLDisplay](EGLDisplay.md)! | [eglGetCurrentDisplay](EGL10.md))`()` <br /> |
 | --- | --- |
-| abstract [EGLSurface](../javax/microedition/khronos/egl/EGLSurface.md)! | [eglGetCurrentSurface](../javax/microedition/khronos/egl/EGL10.md))`(`readdraw:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| abstract [EGLDisplay](../javax/microedition/khronos/egl/EGLDisplay.md)! | [eglGetDisplay](../javax/microedition/khronos/egl/EGL10.md))`(`native_display:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` <br /> |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [eglGetError](../javax/microedition/khronos/egl/EGL10.md))`()` <br /> |
+| abstract [EGLSurface](EGLSurface.md)! | [eglGetCurrentSurface](EGL10.md))`(`readdraw:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| abstract [EGLDisplay](EGLDisplay.md)! | [eglGetDisplay](EGL10.md))`(`native_display:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` <br /> |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [eglGetError](EGL10.md))`()` <br /> |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglInitialize](../javax/microedition/khronos/egl/EGL10.md))`(`display:` ` [EGLDisplay](../javax/microedition/khronos/egl/EGLDisplay.md)!`, `major_minor:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` <br /> |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglMakeCurrent](../javax/microedition/khronos/egl/EGL10.md))`(`display:` ` [EGLDisplay](../javax/microedition/khronos/egl/EGLDisplay.md)!`, `draw:` ` [EGLSurface](../javax/microedition/khronos/egl/EGLSurface.md)!`, `read:` ` [EGLSurface](../javax/microedition/khronos/egl/EGLSurface.md)!`, `context:` ` [EGLContext](../javax/microedition/khronos/egl/EGLContext.md)!`)` <br /> |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglQueryContext](../javax/microedition/khronos/egl/EGL10.md))`(`display:` ` [EGLDisplay](../javax/microedition/khronos/egl/EGLDisplay.md)!`, `context:` ` [EGLContext](../javax/microedition/khronos/egl/EGLContext.md)!`, `attribute:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` <br /> |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglInitialize](EGL10.md))`(`display:` ` [EGLDisplay](EGLDisplay.md)!`, `major_minor:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` <br /> |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglMakeCurrent](EGL10.md))`(`display:` ` [EGLDisplay](EGLDisplay.md)!`, `draw:` ` [EGLSurface](EGLSurface.md)!`, `read:` ` [EGLSurface](EGLSurface.md)!`, `context:` ` [EGLContext](EGLContext.md)!`)` <br /> |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglQueryContext](EGL10.md))`(`display:` ` [EGLDisplay](EGLDisplay.md)!`, `context:` ` [EGLContext](EGLContext.md)!`, `attribute:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` <br /> |
 | --- | --- |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [eglQueryString](../javax/microedition/khronos/egl/EGL10.md))`(`display:` ` [EGLDisplay](../javax/microedition/khronos/egl/EGLDisplay.md)!`, `name:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglQuerySurface](../javax/microedition/khronos/egl/EGL10.md))`(`display:` ` [EGLDisplay](../javax/microedition/khronos/egl/EGLDisplay.md)!`, `surface:` ` [EGLSurface](../javax/microedition/khronos/egl/EGLSurface.md)!`, `attribute:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` <br /> |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglSwapBuffers](../javax/microedition/khronos/egl/EGL10.md))`(`display:` ` [EGLDisplay](../javax/microedition/khronos/egl/EGLDisplay.md)!`, `surface:` ` [EGLSurface](../javax/microedition/khronos/egl/EGLSurface.md)!`)` <br /> |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [eglQueryString](EGL10.md))`(`display:` ` [EGLDisplay](EGLDisplay.md)!`, `name:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglQuerySurface](EGL10.md))`(`display:` ` [EGLDisplay](EGLDisplay.md)!`, `surface:` ` [EGLSurface](EGLSurface.md)!`, `attribute:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` <br /> |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglSwapBuffers](EGL10.md))`(`display:` ` [EGLDisplay](EGLDisplay.md)!`, `surface:` ` [EGLSurface](EGLSurface.md)!`)` <br /> |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglTerminate](../javax/microedition/khronos/egl/EGL10.md))`(`display:` ` [EGLDisplay](../javax/microedition/khronos/egl/EGLDisplay.md)!`)` <br /> |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglWaitGL](../javax/microedition/khronos/egl/EGL10.md))`()` <br /> |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglWaitNative](../javax/microedition/khronos/egl/EGL10.md))`(`engine:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `bindTarget:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` <br /> |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglTerminate](EGL10.md))`(`display:` ` [EGLDisplay](EGLDisplay.md)!`)` <br /> |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglWaitGL](EGL10.md))`()` <br /> |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [eglWaitNative](EGL10.md))`(`engine:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `bindTarget:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` <br /> |
 | --- | --- |
 
 | Properties ||
 |---------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [EGL_DEFAULT_DISPLAY](../javax/microedition/khronos/egl/EGL10.md) <br /> |
-| static [EGLContext](../javax/microedition/khronos/egl/EGLContext.md)! | [EGL_NO_CONTEXT](../javax/microedition/khronos/egl/EGL10.md) <br /> |
-| static [EGLDisplay](../javax/microedition/khronos/egl/EGLDisplay.md)! | [EGL_NO_DISPLAY](../javax/microedition/khronos/egl/EGL10.md) <br /> |
+| static [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [EGL_DEFAULT_DISPLAY](EGL10.md) <br /> |
+| static [EGLContext](EGLContext.md)! | [EGL_NO_CONTEXT](EGL10.md) <br /> |
+| static [EGLDisplay](EGLDisplay.md)! | [EGL_NO_DISPLAY](EGL10.md) <br /> |
 | --- | --- |
-| static [EGLSurface](../javax/microedition/khronos/egl/EGLSurface.md)! | [EGL_NO_SURFACE](../javax/microedition/khronos/egl/EGL10.md) <br /> |
+| static [EGLSurface](EGLSurface.md)! | [EGL_NO_SURFACE](EGL10.md) <br /> |
 
 ## Constants
 

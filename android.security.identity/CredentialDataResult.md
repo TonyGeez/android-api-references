@@ -9,7 +9,7 @@ abstract class CredentialDataResult
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.security.identity.CredentialDataResult](../android/security/identity/CredentialDataResult.md) |
+| ↳ | [android.security.identity.CredentialDataResult](CredentialDataResult.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 37.2.**

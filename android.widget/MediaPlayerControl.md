@@ -13,7 +13,7 @@ interface MediaPlayerControl
 
 | [android.widget.MediaController.MediaPlayerControl](../android/widget/MediaController.MediaPlayerControl.md) |
 
-| Known Direct Subclasses [VideoView](../android/widget/VideoView.md) |--------------------------------------------------------------------------------------|------------------------| | [VideoView](../android/widget/VideoView.md) | Displays a video file. | |
+| Known Direct Subclasses [VideoView](VideoView.md) |--------------------------------------------------------------------------------------|------------------------| | [VideoView](VideoView.md) | Displays a video file. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 ## Summary

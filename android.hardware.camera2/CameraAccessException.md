@@ -4,7 +4,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 
 # CameraAccessException
 
-Kotlin| [Java](../android/hardware/camera2/CameraAccessException.md) 
+Kotlin| [Java](CameraAccessException.md) 
 | --- | --- |
 
 ```
@@ -14,34 +14,34 @@ open class CameraAccessException : AndroidException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
-| | | ↳ | [android.util.AndroidException](../android/util/AndroidException.md) ||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) |||
+| | | ↳ | [android.util.AndroidException](../android.util/AndroidException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.hardware.camera2.CameraAccessException](../android/hardware/camera2/CameraAccessException.md) |
+| | | | ↳ | [android.hardware.camera2.CameraAccessException](CameraAccessException.md) |
 
-`CameraAccessException`is thrown if a camera device could not be queried or opened by the [CameraManager](../android/hardware/camera2/CameraManager.md), or if the connection to an opened [CameraDevice](../android/hardware/camera2/CameraDevice.md) is no longer valid.
+`CameraAccessException`is thrown if a camera device could not be queried or opened by the [CameraManager](CameraManager.md), or if the connection to an opened [CameraDevice](CameraDevice.md) is no longer valid.
 
 ## Summary
 
 | Constants ||
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CAMERA_DISABLED](../android/hardware/camera2/CameraAccessException.md) The camera is disabled due to a device policy, and cannot be opened. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CAMERA_DISCONNECTED](../android/hardware/camera2/CameraAccessException.md) The camera device is removable and has been disconnected from the Android device, or the camera id used with android. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CAMERA_ERROR](../android/hardware/camera2/CameraAccessException.md) The camera device is currently in the error state. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CAMERA_DISABLED](CameraAccessException.md) The camera is disabled due to a device policy, and cannot be opened. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CAMERA_DISCONNECTED](CameraAccessException.md) The camera device is removable and has been disconnected from the Android device, or the camera id used with android. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CAMERA_ERROR](CameraAccessException.md) The camera device is currently in the error state. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CAMERA_IN_USE](../android/hardware/camera2/CameraAccessException.md) The camera device is in use already. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAX_CAMERAS_IN_USE](../android/hardware/camera2/CameraAccessException.md) The system-wide limit for number of open cameras or camera resources has been reached, and more camera devices cannot be opened or torch mode cannot be turned on until previous instances are closed. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CAMERA_IN_USE](CameraAccessException.md) The camera device is in use already. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAX_CAMERAS_IN_USE](CameraAccessException.md) The system-wide limit for number of open cameras or camera resources has been reached, and more camera devices cannot be opened or torch mode cannot be turned on until previous instances are closed. |
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [CameraAccessException](../android/hardware/camera2/CameraAccessException.md))`(`problem:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| [CameraAccessException](../android/hardware/camera2/CameraAccessException.md))`(`problem:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
-| [CameraAccessException](../android/hardware/camera2/CameraAccessException.md))`(`problem:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` <br /> |
-| [CameraAccessException](../android/hardware/camera2/CameraAccessException.md))`(`problem:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` <br /> |
+| [CameraAccessException](CameraAccessException.md))`(`problem:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [CameraAccessException](CameraAccessException.md))`(`problem:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| [CameraAccessException](CameraAccessException.md))`(`problem:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` <br /> |
+| [CameraAccessException](CameraAccessException.md))`(`problem:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` <br /> |
 
 | Public methods ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getReason](../android/hardware/camera2/CameraAccessException.md))`()` The reason for the failure to access the camera. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getReason](CameraAccessException.md))`()` The reason for the failure to access the camera. |
 
 ## Constants
 
@@ -59,7 +59,7 @@ The camera is disabled due to a device policy, and cannot be opened.
 
 **See Also**
 
-- [android.app.admin.DevicePolicyManager#setCameraDisabled(android.content.ComponentName, boolean)](../android/app/admin/DevicePolicyManager.md)) 
+- [android.app.admin.DevicePolicyManager#setCameraDisabled(android.content.ComponentName, boolean)](../android.app.admin/DevicePolicyManager.md)) 
 
 ### CAMERA_DISCONNECTED
 
@@ -85,7 +85,7 @@ The camera device is currently in the error state.
 
 The camera has failed to open or has failed at a later time as a result of some non-user interaction. Refer to [CameraDevice.StateCallback.onError](../android/hardware/camera2/CameraDevice.StateCallback.md))for the exact nature of the error.
 
-No further calls to the camera will succeed. Clean up the camera with [CameraDevice.close](../android/hardware/camera2/CameraDevice.md))and try handling the error in order to successfully re-open the camera. 
+No further calls to the camera will succeed. Clean up the camera with [CameraDevice.close](CameraDevice.md))and try handling the error in order to successfully re-open the camera. 
 
  Value: 3
 
@@ -125,7 +125,7 @@ CameraAccessException(problem: Int)
 
 | Parameters ||
 |-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `problem` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is [android.hardware.camera2.CameraAccessException#CAMERA_IN_USE](../android/hardware/camera2/CameraAccessException.md), [android.hardware.camera2.CameraAccessException#MAX_CAMERAS_IN_USE](../android/hardware/camera2/CameraAccessException.md), [android.hardware.camera2.CameraAccessException#CAMERA_DISABLED](../android/hardware/camera2/CameraAccessException.md), [android.hardware.camera2.CameraAccessException#CAMERA_DISCONNECTED](../android/hardware/camera2/CameraAccessException.md), or [android.hardware.camera2.CameraAccessException#CAMERA_ERROR](../android/hardware/camera2/CameraAccessException.md) |
+| `problem` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is [android.hardware.camera2.CameraAccessException#CAMERA_IN_USE](CameraAccessException.md), [android.hardware.camera2.CameraAccessException#MAX_CAMERAS_IN_USE](CameraAccessException.md), [android.hardware.camera2.CameraAccessException#CAMERA_DISABLED](CameraAccessException.md), [android.hardware.camera2.CameraAccessException#CAMERA_DISCONNECTED](CameraAccessException.md), or [android.hardware.camera2.CameraAccessException#CAMERA_ERROR](CameraAccessException.md) |
 
 ### CameraAccessException
 
@@ -139,7 +139,7 @@ CameraAccessException(
 
 | Parameters ||
 |-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `problem` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is [android.hardware.camera2.CameraAccessException#CAMERA_IN_USE](../android/hardware/camera2/CameraAccessException.md), [android.hardware.camera2.CameraAccessException#MAX_CAMERAS_IN_USE](../android/hardware/camera2/CameraAccessException.md), [android.hardware.camera2.CameraAccessException#CAMERA_DISABLED](../android/hardware/camera2/CameraAccessException.md), [android.hardware.camera2.CameraAccessException#CAMERA_DISCONNECTED](../android/hardware/camera2/CameraAccessException.md), or [android.hardware.camera2.CameraAccessException#CAMERA_ERROR](../android/hardware/camera2/CameraAccessException.md) |
+| `problem` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is [android.hardware.camera2.CameraAccessException#CAMERA_IN_USE](CameraAccessException.md), [android.hardware.camera2.CameraAccessException#MAX_CAMERAS_IN_USE](CameraAccessException.md), [android.hardware.camera2.CameraAccessException#CAMERA_DISABLED](CameraAccessException.md), [android.hardware.camera2.CameraAccessException#CAMERA_DISCONNECTED](CameraAccessException.md), or [android.hardware.camera2.CameraAccessException#CAMERA_ERROR](CameraAccessException.md) |
 
 ### CameraAccessException
 
@@ -154,7 +154,7 @@ CameraAccessException(
 
 | Parameters ||
 |-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `problem` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is [android.hardware.camera2.CameraAccessException#CAMERA_IN_USE](../android/hardware/camera2/CameraAccessException.md), [android.hardware.camera2.CameraAccessException#MAX_CAMERAS_IN_USE](../android/hardware/camera2/CameraAccessException.md), [android.hardware.camera2.CameraAccessException#CAMERA_DISABLED](../android/hardware/camera2/CameraAccessException.md), [android.hardware.camera2.CameraAccessException#CAMERA_DISCONNECTED](../android/hardware/camera2/CameraAccessException.md), or [android.hardware.camera2.CameraAccessException#CAMERA_ERROR](../android/hardware/camera2/CameraAccessException.md) |
+| `problem` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is [android.hardware.camera2.CameraAccessException#CAMERA_IN_USE](CameraAccessException.md), [android.hardware.camera2.CameraAccessException#MAX_CAMERAS_IN_USE](CameraAccessException.md), [android.hardware.camera2.CameraAccessException#CAMERA_DISABLED](CameraAccessException.md), [android.hardware.camera2.CameraAccessException#CAMERA_DISCONNECTED](CameraAccessException.md), or [android.hardware.camera2.CameraAccessException#CAMERA_ERROR](CameraAccessException.md) |
 
 ### CameraAccessException
 
@@ -168,7 +168,7 @@ CameraAccessException(
 
 | Parameters ||
 |-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `problem` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is [android.hardware.camera2.CameraAccessException#CAMERA_IN_USE](../android/hardware/camera2/CameraAccessException.md), [android.hardware.camera2.CameraAccessException#MAX_CAMERAS_IN_USE](../android/hardware/camera2/CameraAccessException.md), [android.hardware.camera2.CameraAccessException#CAMERA_DISABLED](../android/hardware/camera2/CameraAccessException.md), [android.hardware.camera2.CameraAccessException#CAMERA_DISCONNECTED](../android/hardware/camera2/CameraAccessException.md), or [android.hardware.camera2.CameraAccessException#CAMERA_ERROR](../android/hardware/camera2/CameraAccessException.md) |
+| `problem` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is [android.hardware.camera2.CameraAccessException#CAMERA_IN_USE](CameraAccessException.md), [android.hardware.camera2.CameraAccessException#MAX_CAMERAS_IN_USE](CameraAccessException.md), [android.hardware.camera2.CameraAccessException#CAMERA_DISABLED](CameraAccessException.md), [android.hardware.camera2.CameraAccessException#CAMERA_DISCONNECTED](CameraAccessException.md), or [android.hardware.camera2.CameraAccessException#CAMERA_ERROR](CameraAccessException.md) |
 
 ## Public methods
 
@@ -184,10 +184,10 @@ The reason for the failure to access the camera.
 
 | Return ||
 |----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.hardware.camera2.CameraAccessException#CAMERA_IN_USE](../android/hardware/camera2/CameraAccessException.md), [android.hardware.camera2.CameraAccessException#MAX_CAMERAS_IN_USE](../android/hardware/camera2/CameraAccessException.md), [android.hardware.camera2.CameraAccessException#CAMERA_DISABLED](../android/hardware/camera2/CameraAccessException.md), [android.hardware.camera2.CameraAccessException#CAMERA_DISCONNECTED](../android/hardware/camera2/CameraAccessException.md), or [android.hardware.camera2.CameraAccessException#CAMERA_ERROR](../android/hardware/camera2/CameraAccessException.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.hardware.camera2.CameraAccessException#CAMERA_IN_USE](CameraAccessException.md), [android.hardware.camera2.CameraAccessException#MAX_CAMERAS_IN_USE](CameraAccessException.md), [android.hardware.camera2.CameraAccessException#CAMERA_DISABLED](CameraAccessException.md), [android.hardware.camera2.CameraAccessException#CAMERA_DISCONNECTED](CameraAccessException.md), or [android.hardware.camera2.CameraAccessException#CAMERA_ERROR](CameraAccessException.md) |
 
 **See Also**
 
-- [#CAMERA_DISABLED](../android/hardware/camera2/CameraAccessException.md)
-- [#CAMERA_DISCONNECTED](../android/hardware/camera2/CameraAccessException.md)
-- [#CAMERA_ERROR](../android/hardware/camera2/CameraAccessException.md)
+- [#CAMERA_DISABLED](CameraAccessException.md)
+- [#CAMERA_DISCONNECTED](CameraAccessException.md)
+- [#CAMERA_ERROR](CameraAccessException.md)

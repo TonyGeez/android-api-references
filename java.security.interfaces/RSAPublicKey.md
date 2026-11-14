@@ -8,7 +8,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface RSAPublicKey : PublicKey, RSAKey
 ```
 
-| [java.security.interfaces.RSAPublicKey](../java/security/interfaces/RSAPublicKey.md) |
+| [java.security.interfaces.RSAPublicKey](RSAPublicKey.md) |
 
 The interface to an RSA public key.
 
@@ -16,15 +16,15 @@ The interface to an RSA public key.
 
 | Constants ||
 |------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [serialVersionUID](../java/security/interfaces/RSAPublicKey.md) The type fingerprint that is set to indicate serialization compatibility with a previous version of the type. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [serialVersionUID](RSAPublicKey.md) The type fingerprint that is set to indicate serialization compatibility with a previous version of the type. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [BigInteger](../java/math/BigInteger.md)! | [getPublicExponent](../java/security/interfaces/RSAPublicKey.md))`()` Returns the public exponent. |
+| abstract [BigInteger](../java.math/BigInteger.md)! | [getPublicExponent](RSAPublicKey.md))`()` Returns the public exponent. |
 
 | Inherited functions ||
 |---|---|
-| From class [RSAKey](../java/security/interfaces/RSAKey.md) |---------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [BigInteger](../java/math/BigInteger.md)! | [getModulus](../java/security/interfaces/RSAKey.md))`()` <br /> Returns the modulus. <br /> | | [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)! | [getParams](../java/security/interfaces/RSAKey.md))`()` <br /> Returns the parameters associated with this key. The parameters are optional and may be either explicitly specified or implicitly created during key pair generation. <br /> | ||
+| From class [RSAKey](RSAKey.md) |---------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [BigInteger](../java.math/BigInteger.md)! | [getModulus](RSAKey.md))`()` <br /> Returns the modulus. <br /> | | [AlgorithmParameterSpec](../java.security.spec/AlgorithmParameterSpec.md)! | [getParams](RSAKey.md))`()` <br /> Returns the parameters associated with this key. The parameters are optional and may be either explicitly specified or implicitly created during key pair generation. <br /> | ||
 
 ## Constants
 
@@ -57,4 +57,4 @@ Returns the public exponent.
 
 | Return ||
 |------------------------------------------------------------------------------------------|---------------------|
-| [BigInteger](../java/math/BigInteger.md)! | the public exponent |
+| [BigInteger](../java.math/BigInteger.md)! | the public exponent |

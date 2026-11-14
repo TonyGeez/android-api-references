@@ -10,7 +10,7 @@ open class ECPublicKeySpec : KeySpec
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.spec.ECPublicKeySpec](../java/security/spec/ECPublicKeySpec.md) |
+| ↳ | [java.security.spec.ECPublicKeySpec](ECPublicKeySpec.md) |
 
 This immutable class specifies an elliptic curve public key with its associated parameters.
 
@@ -18,12 +18,12 @@ This immutable class specifies an elliptic curve public key with its associated 
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ECPublicKeySpec](../java/security/spec/ECPublicKeySpec.md))`(`w:` ` [ECPoint](../java/security/spec/ECPoint.md)!`, `params:` ` [ECParameterSpec](../java/security/spec/ECParameterSpec.md)!`)` Creates a new ECPublicKeySpec with the specified parameter values. |
+| [ECPublicKeySpec](ECPublicKeySpec.md))`(`w:` ` [ECPoint](ECPoint.md)!`, `params:` ` [ECParameterSpec](ECParameterSpec.md)!`)` Creates a new ECPublicKeySpec with the specified parameter values. |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [ECParameterSpec](../java/security/spec/ECParameterSpec.md)! | [getParams](../java/security/spec/ECPublicKeySpec.md))`()` Returns the associated elliptic curve domain parameters. |
-| open [ECPoint](../java/security/spec/ECPoint.md)! | [getW](../java/security/spec/ECPublicKeySpec.md))`()` Returns the public point W. |
+| open [ECParameterSpec](ECParameterSpec.md)! | [getParams](ECPublicKeySpec.md))`()` Returns the associated elliptic curve domain parameters. |
+| open [ECPoint](ECPoint.md)! | [getW](ECPublicKeySpec.md))`()` Returns the public point W. |
 
 ## Public constructors
 
@@ -41,8 +41,8 @@ Creates a new ECPublicKeySpec with the specified parameter values.
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `w` | [ECPoint](../java/security/spec/ECPoint.md)!:the public point. |
-| `params` | [ECParameterSpec](../java/security/spec/ECParameterSpec.md)!:the associated elliptic curve domain parameters. |
+| `w` | [ECPoint](ECPoint.md)!:the public point. |
+| `params` | [ECParameterSpec](ECParameterSpec.md)!:the associated elliptic curve domain parameters. |
 
 | Exceptions ||
 |--------------------------------------|--------------------------------------------------------|
@@ -63,7 +63,7 @@ Returns the associated elliptic curve domain parameters.
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------|---------------------------|
-| [ECParameterSpec](../java/security/spec/ECParameterSpec.md)! | the EC domain parameters. |
+| [ECParameterSpec](ECParameterSpec.md)! | the EC domain parameters. |
 
 ### getW
 
@@ -77,4 +77,4 @@ Returns the public point W.
 
 | Return ||
 |---------------------------------------------------------------------------------------|---------------------|
-| [ECPoint](../java/security/spec/ECPoint.md)! | the public point W. |
+| [ECPoint](ECPoint.md)! | the public point W. |

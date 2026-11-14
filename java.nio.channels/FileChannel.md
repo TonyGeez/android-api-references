@@ -10,26 +10,26 @@ abstract class FileChannel : AbstractInterruptibleChannel, GatheringByteChanne
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.nio.channels.spi.AbstractInterruptibleChannel](../java/nio/channels/spi/AbstractInterruptibleChannel.md) ||
-| | ↳ | [java.nio.channels.FileChannel](../java/nio/channels/FileChannel.md) |
+| ↳ | [java.nio.channels.spi.AbstractInterruptibleChannel](../java.nio.channels.spi/AbstractInterruptibleChannel.md) ||
+| | ↳ | [java.nio.channels.FileChannel](FileChannel.md) |
 
 A channel for reading, writing, mapping, and manipulating a file.
 
-A file channel is a [SeekableByteChannel](../java/nio/channels/SeekableByteChannel.md) that is connected to a file. It has a current*position* within its file which can be both [*queried*](../java/nio/channels/FileChannel.md))and [*modified*](../java/nio/channels/FileChannel.md)). The file itself contains a variable-length sequence of bytes that can be read and written and whose current [*size*](../java/nio/channels/FileChannel.md))can be queried. The size of the file increases when bytes are written beyond its current size; the size of the file decreases when it is [*truncated*](../java/nio/channels/FileChannel.md)). The file may also have some associated*metadata*such as access permissions, content type, and last-modification time; this class does not define methods for metadata access.
+A file channel is a [SeekableByteChannel](SeekableByteChannel.md) that is connected to a file. It has a current*position* within its file which can be both [*queried*](FileChannel.md))and [*modified*](FileChannel.md)). The file itself contains a variable-length sequence of bytes that can be read and written and whose current [*size*](FileChannel.md))can be queried. The size of the file increases when bytes are written beyond its current size; the size of the file decreases when it is [*truncated*](FileChannel.md)). The file may also have some associated*metadata*such as access permissions, content type, and last-modification time; this class does not define methods for metadata access.
 
 In addition to the familiar read, write, and close operations of byte channels, this class defines the following file-specific operations:
 
-- Bytes may be [read](../java/nio/channels/FileChannel.md))or [*written*](../java/nio/channels/FileChannel.md))at an absolute position in a file in a way that does not affect the channel's current position.
-- A region of a file may be [*mapped*](../java/nio/channels/FileChannel.md))directly into memory; for large files this is often much more efficient than invoking the usual`read`or`write`methods.
-- Updates made to a file may be [*forced*](../java/nio/channels/FileChannel.md))*to the underlying storage device, ensuring that data are not lost in the event of a system crash.*
-*- Bytes can be transferred from a file [*to*](../java/nio/channels/FileChannel.md))*, and [*vice*](../java/nio/channels/FileChannel.md))*, in a way that can be optimized by many operating systems into a very fast transfer directly to or from the filesystem cache.**
-**- A region of a file may be [*locked*](../java/nio/channels/FileLock.md) against access by other programs.***
+- Bytes may be [read](FileChannel.md))or [*written*](FileChannel.md))at an absolute position in a file in a way that does not affect the channel's current position.
+- A region of a file may be [*mapped*](FileChannel.md))directly into memory; for large files this is often much more efficient than invoking the usual`read`or`write`methods.
+- Updates made to a file may be [*forced*](FileChannel.md))*to the underlying storage device, ensuring that data are not lost in the event of a system crash.*
+*- Bytes can be transferred from a file [*to*](FileChannel.md))*, and [*vice*](FileChannel.md))*, in a way that can be optimized by many operating systems into a very fast transfer directly to or from the filesystem cache.**
+**- A region of a file may be [*locked*](FileLock.md) against access by other programs.***
 
-**File channels are safe for use by multiple concurrent threads. The java.nio.channels.Channel#close method may be invoked at any time, as specified by the [Channel](../java/nio/channels/Channel.md) interface. Only one operation that involves the channel's position or can change its file's size may be in progress at any given time; attempts to initiate a second such operation while the first is still in progress will block until the first operation completes. Other operations, in particular those that take an explicit position, may proceed concurrently; whether they in fact do so is dependent upon the underlying implementation and is therefore unspecified.
+**File channels are safe for use by multiple concurrent threads. The java.nio.channels.Channel#close method may be invoked at any time, as specified by the [Channel](Channel.md) interface. Only one operation that involves the channel's position or can change its file's size may be in progress at any given time; attempts to initiate a second such operation while the first is still in progress will block until the first operation completes. Other operations, in particular those that take an explicit position, may proceed concurrently; whether they in fact do so is dependent upon the underlying implementation and is therefore unspecified.
 The view of a file provided by an instance of this class is guaranteed to be consistent with other views of the same file provided by other instances in the same program. The view provided by an instance of this class may or may not, however, be consistent with the views seen by other concurrently-running programs due to caching performed by the underlying operating system and delays induced by network-filesystem protocols. This is true regardless of the language in which these other programs are written, and whether they are running on the same machine or on some other machine. The exact nature of any such inconsistencies are system-dependent and are therefore unspecified.
-A file channel is created by invoking one of the #open methods defined by this class. A file channel can also be obtained from an existing [FileInputStream](../java/io/FileInputStream.md)), [FileOutputStream](../java/io/FileOutputStream.md)), or [RandomAccessFile](../java/io/RandomAccessFile.md))object by invoking that object's`getChannel`method, which returns a file channel that is connected to the same underlying file. Where the file channel is obtained from an existing stream or random access file then the state of the file channel is intimately connected to that of the object whose`getChannel`method returned the channel. Changing the channel's position, whether explicitly or by reading or writing bytes, will change the file position of the originating object, and vice versa. Changing the file's length via the file channel will change the length seen via the originating object, and vice versa. Changing the file's content by writing bytes will change the content seen by the originating object, and vice versa.
-At various points this class specifies that an instance that is "open for reading," "open for writing," or "open for reading and writing" is required. A channel obtained via the [getChannel](../java/io/FileInputStream.md))method of a instance will be open for reading. A channel obtained via the [getChannel](../java/io/FileOutputStream.md))method of a [java.io.FileOutputStream](../java/io/FileOutputStream.md) instance will be open for writing. Finally, a channel obtained via the [getChannel](../java/io/RandomAccessFile.md))method of a instance will be open for reading if the instance was created with mode`"r"`and will be open for reading and writing if the instance was created with mode`"rw"`.
-A file channel that is open for writing may be in*append mode* , for example if it was obtained from a file-output stream that was created by invoking the [FileOutputStream(File,boolean)](../java/io/FileOutputStream.md))constructor and passing`true`for the second parameter. In this mode each invocation of a relative write operation first advances the position to the end of the file and then writes the requested data. Whether the advancement of the position and the writing of the data are done in a single atomic operation is system-dependent and therefore unspecified.**
+A file channel is created by invoking one of the #open methods defined by this class. A file channel can also be obtained from an existing [FileInputStream](../java.io/FileInputStream.md)), [FileOutputStream](../java.io/FileOutputStream.md)), or [RandomAccessFile](../java.io/RandomAccessFile.md))object by invoking that object's`getChannel`method, which returns a file channel that is connected to the same underlying file. Where the file channel is obtained from an existing stream or random access file then the state of the file channel is intimately connected to that of the object whose`getChannel`method returned the channel. Changing the channel's position, whether explicitly or by reading or writing bytes, will change the file position of the originating object, and vice versa. Changing the file's length via the file channel will change the length seen via the originating object, and vice versa. Changing the file's content by writing bytes will change the content seen by the originating object, and vice versa.
+At various points this class specifies that an instance that is "open for reading," "open for writing," or "open for reading and writing" is required. A channel obtained via the [getChannel](../java.io/FileInputStream.md))method of a instance will be open for reading. A channel obtained via the [getChannel](../java.io/FileOutputStream.md))method of a [java.io.FileOutputStream](../java.io/FileOutputStream.md) instance will be open for writing. Finally, a channel obtained via the [getChannel](../java.io/RandomAccessFile.md))method of a instance will be open for reading if the instance was created with mode`"r"`and will be open for reading and writing if the instance was created with mode`"rw"`.
+A file channel that is open for writing may be in*append mode* , for example if it was obtained from a file-output stream that was created by invoking the [FileOutputStream(File,boolean)](../java.io/FileOutputStream.md))constructor and passing`true`for the second parameter. In this mode each invocation of a relative write operation first advances the position to the end of the file and then writes the requested data. Whether the advancement of the position and the writing of the data are done in a single atomic operation is system-dependent and therefore unspecified.**
 
 ## Summary
 
@@ -39,43 +39,43 @@ A file channel that is open for writing may be in*append mode* , for example if 
 
 | Protected constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [FileChannel](../java/nio/channels/FileChannel.md))`()` Initializes a new instance of this class. |
+| [FileChannel](FileChannel.md))`()` Initializes a new instance of this class. |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [force](../java/nio/channels/FileChannel.md))`(`metaData:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Forces any updates to this channel's file to be written to the storage device that contains it. |
-| [FileLock](../java/nio/channels/FileLock.md)! | [lock](../java/nio/channels/FileChannel.md))`()` Acquires an exclusive lock on this channel's file. |
-| abstract [FileLock](../java/nio/channels/FileLock.md)! | [lock](../java/nio/channels/FileChannel.md))`(`position:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `size:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `shared:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Acquires a lock on the given region of this channel's file. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [force](FileChannel.md))`(`metaData:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Forces any updates to this channel's file to be written to the storage device that contains it. |
+| [FileLock](FileLock.md)! | [lock](FileChannel.md))`()` Acquires an exclusive lock on this channel's file. |
+| abstract [FileLock](FileLock.md)! | [lock](FileChannel.md))`(`position:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `size:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `shared:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Acquires a lock on the given region of this channel's file. |
 | --- | --- |
-| abstract [MappedByteBuffer](../java/nio/MappedByteBuffer.md)! | [map](../java/nio/channels/FileChannel.md))`(`mode:` ` [FileChannel.MapMode](../java/nio/channels/FileChannel.MapMode.md)!`, `position:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `size:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Maps a region of this channel's file directly into memory. |
-| openstatic [FileChannel](../java/nio/channels/FileChannel.md)! | [open](../java/nio/channels/FileChannel.md))`(`path:` ` [Path](../java/nio/file/Path.md)!`, `vararg` `options:` ` [OpenOption](../java/nio/file/OpenOption.md)!`)` Opens or creates a file, returning a file channel to access the file. |
-| openstatic [FileChannel](../java/nio/channels/FileChannel.md)! | [open](../java/nio/channels/FileChannel.md))`(`path:` ` [Path](../java/nio/file/Path.md)!`, `options:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)<out` ` [OpenOption](../java/nio/file/OpenOption.md)!>!`, `vararg` `attrs:` ` [FileAttribute](../java/nio/file/attribute/FileAttribute.md)<*>!`)` Opens or creates a file, returning a file channel to access the file. |
+| abstract [MappedByteBuffer](../java.nio/MappedByteBuffer.md)! | [map](FileChannel.md))`(`mode:` ` [FileChannel.MapMode](../java/nio/channels/FileChannel.MapMode.md)!`, `position:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `size:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Maps a region of this channel's file directly into memory. |
+| openstatic [FileChannel](FileChannel.md)! | [open](FileChannel.md))`(`path:` ` [Path](../java.nio.file/Path.md)!`, `vararg` `options:` ` [OpenOption](../java.nio.file/OpenOption.md)!`)` Opens or creates a file, returning a file channel to access the file. |
+| openstatic [FileChannel](FileChannel.md)! | [open](FileChannel.md))`(`path:` ` [Path](../java.nio.file/Path.md)!`, `options:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)<out` ` [OpenOption](../java.nio.file/OpenOption.md)!>!`, `vararg` `attrs:` ` [FileAttribute](../java.nio.file.attribute/FileAttribute.md)<*>!`)` Opens or creates a file, returning a file channel to access the file. |
 | --- | --- |
-| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [position](../java/nio/channels/FileChannel.md))`()` Returns this channel's file position. |
-| abstract [FileChannel](../java/nio/channels/FileChannel.md)! | [position](../java/nio/channels/FileChannel.md))`(`newPosition:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets this channel's file position. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](../java/nio/channels/FileChannel.md))`(`dst:` ` [ByteBuffer](../java/nio/ByteBuffer.md)!`)` Reads a sequence of bytes from this channel into the given buffer. |
+| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [position](FileChannel.md))`()` Returns this channel's file position. |
+| abstract [FileChannel](FileChannel.md)! | [position](FileChannel.md))`(`newPosition:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets this channel's file position. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](FileChannel.md))`(`dst:` ` [ByteBuffer](../java.nio/ByteBuffer.md)!`)` Reads a sequence of bytes from this channel into the given buffer. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](../java/nio/channels/FileChannel.md))`(`dst:` ` [ByteBuffer](../java/nio/ByteBuffer.md)!`, `position:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Reads a sequence of bytes from this channel into the given buffer, starting at the given file position. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [read](../java/nio/channels/FileChannel.md))`(`dsts:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ByteBuffer](../java/nio/ByteBuffer.md)!>!`)` Reads a sequence of bytes from this channel into the given buffers. |
-| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [read](../java/nio/channels/FileChannel.md))`(`dsts:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ByteBuffer](../java/nio/ByteBuffer.md)!>!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Reads a sequence of bytes from this channel into a subsequence of the given buffers. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](FileChannel.md))`(`dst:` ` [ByteBuffer](../java.nio/ByteBuffer.md)!`, `position:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Reads a sequence of bytes from this channel into the given buffer, starting at the given file position. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [read](FileChannel.md))`(`dsts:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ByteBuffer](../java.nio/ByteBuffer.md)!>!`)` Reads a sequence of bytes from this channel into the given buffers. |
+| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [read](FileChannel.md))`(`dsts:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ByteBuffer](../java.nio/ByteBuffer.md)!>!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Reads a sequence of bytes from this channel into a subsequence of the given buffers. |
 | --- | --- |
-| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [size](../java/nio/channels/FileChannel.md))`()` Returns the current size of this channel's file. |
-| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [transferFrom](../java/nio/channels/FileChannel.md))`(`src:` ` [ReadableByteChannel](../java/nio/channels/ReadableByteChannel.md)!`, `position:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `count:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Transfers bytes into this channel's file from the given readable byte channel. |
-| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [transferTo](../java/nio/channels/FileChannel.md))`(`position:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `count:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `target:` ` [WritableByteChannel](../java/nio/channels/WritableByteChannel.md)!`)` Transfers bytes from this channel's file to the given writable byte channel. |
+| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [size](FileChannel.md))`()` Returns the current size of this channel's file. |
+| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [transferFrom](FileChannel.md))`(`src:` ` [ReadableByteChannel](ReadableByteChannel.md)!`, `position:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `count:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Transfers bytes into this channel's file from the given readable byte channel. |
+| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [transferTo](FileChannel.md))`(`position:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `count:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `target:` ` [WritableByteChannel](WritableByteChannel.md)!`)` Transfers bytes from this channel's file to the given writable byte channel. |
 | --- | --- |
-| abstract [FileChannel](../java/nio/channels/FileChannel.md)! | [truncate](../java/nio/channels/FileChannel.md))`(`size:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Truncates this channel's file to the given size. |
-| [FileLock](../java/nio/channels/FileLock.md)! | [tryLock](../java/nio/channels/FileChannel.md))`()` Attempts to acquire an exclusive lock on this channel's file. |
-| abstract [FileLock](../java/nio/channels/FileLock.md)! | [tryLock](../java/nio/channels/FileChannel.md))`(`position:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `size:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `shared:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Attempts to acquire a lock on the given region of this channel's file. |
+| abstract [FileChannel](FileChannel.md)! | [truncate](FileChannel.md))`(`size:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Truncates this channel's file to the given size. |
+| [FileLock](FileLock.md)! | [tryLock](FileChannel.md))`()` Attempts to acquire an exclusive lock on this channel's file. |
+| abstract [FileLock](FileLock.md)! | [tryLock](FileChannel.md))`(`position:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `size:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `shared:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Attempts to acquire a lock on the given region of this channel's file. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [write](../java/nio/channels/FileChannel.md))`(`src:` ` [ByteBuffer](../java/nio/ByteBuffer.md)!`)` Writes a sequence of bytes to this channel from the given buffer. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [write](../java/nio/channels/FileChannel.md))`(`src:` ` [ByteBuffer](../java/nio/ByteBuffer.md)!`, `position:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Writes a sequence of bytes to this channel from the given buffer, starting at the given file position. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [write](../java/nio/channels/FileChannel.md))`(`srcs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ByteBuffer](../java/nio/ByteBuffer.md)!>!`)` Writes a sequence of bytes to this channel from the given buffers. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [write](FileChannel.md))`(`src:` ` [ByteBuffer](../java.nio/ByteBuffer.md)!`)` Writes a sequence of bytes to this channel from the given buffer. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [write](FileChannel.md))`(`src:` ` [ByteBuffer](../java.nio/ByteBuffer.md)!`, `position:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Writes a sequence of bytes to this channel from the given buffer, starting at the given file position. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [write](FileChannel.md))`(`srcs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ByteBuffer](../java.nio/ByteBuffer.md)!>!`)` Writes a sequence of bytes to this channel from the given buffers. |
 | --- | --- |
-| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [write](../java/nio/channels/FileChannel.md))`(`srcs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ByteBuffer](../java/nio/ByteBuffer.md)!>!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes a sequence of bytes to this channel from a subsequence of the given buffers. |
+| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [write](FileChannel.md))`(`srcs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [ByteBuffer](../java.nio/ByteBuffer.md)!>!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes a sequence of bytes to this channel from a subsequence of the given buffers. |
 
 | Inherited functions ||
 |---|---|
-| From class [AbstractInterruptibleChannel](../java/nio/channels/spi/AbstractInterruptibleChannel.md) |------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [begin](../java/nio/channels/spi/AbstractInterruptibleChannel.md))`()` <br /> Marks the beginning of an I/O operation that might block indefinitely. This method should be invoked in tandem with the [end](../java/nio/channels/spi/AbstractInterruptibleChannel.md))method, using a`try`...`finally`block as shown [above](../java/nio/channels/spi/AbstractInterruptibleChannel.md), in order to implement asynchronous closing and interruption for this channel. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../java/nio/channels/spi/AbstractInterruptibleChannel.md))`()` <br /> Closes this channel. If the channel has already been closed then this method returns immediately. Otherwise it marks the channel as closed and then invokes the [implCloseChannel](../java/nio/channels/spi/AbstractInterruptibleChannel.md))method in order to complete the close operation. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [end](../java/nio/channels/spi/AbstractInterruptibleChannel.md))`(`completed:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` <br /> Marks the end of an I/O operation that might block indefinitely. This method should be invoked in tandem with the [begin](../java/nio/channels/spi/AbstractInterruptibleChannel.md))method, using a`try`...`finally`block as shown [above](../java/nio/channels/spi/AbstractInterruptibleChannel.md), in order to implement asynchronous closing and interruption for this channel. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [implCloseChannel](../java/nio/channels/spi/AbstractInterruptibleChannel.md))`()` <br /> Closes this channel. This method is invoked by the #close method in order to perform the actual work of closing the channel. This method is only invoked if the channel has not yet been closed, and it is never invoked more than once. An implementation of this method must arrange for any other thread that is blocked in an I/O operation upon this channel to return immediately, either by throwing an exception or by returning normally. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isOpen](../java/nio/channels/spi/AbstractInterruptibleChannel.md))`()` <br /> | ||
+| From class [AbstractInterruptibleChannel](../java.nio.channels.spi/AbstractInterruptibleChannel.md) |------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [begin](../java.nio.channels.spi/AbstractInterruptibleChannel.md))`()` <br /> Marks the beginning of an I/O operation that might block indefinitely. This method should be invoked in tandem with the [end](../java.nio.channels.spi/AbstractInterruptibleChannel.md))method, using a`try`...`finally`block as shown [above](../java.nio.channels.spi/AbstractInterruptibleChannel.md), in order to implement asynchronous closing and interruption for this channel. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../java.nio.channels.spi/AbstractInterruptibleChannel.md))`()` <br /> Closes this channel. If the channel has already been closed then this method returns immediately. Otherwise it marks the channel as closed and then invokes the [implCloseChannel](../java.nio.channels.spi/AbstractInterruptibleChannel.md))method in order to complete the close operation. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [end](../java.nio.channels.spi/AbstractInterruptibleChannel.md))`(`completed:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` <br /> Marks the end of an I/O operation that might block indefinitely. This method should be invoked in tandem with the [begin](../java.nio.channels.spi/AbstractInterruptibleChannel.md))method, using a`try`...`finally`block as shown [above](../java.nio.channels.spi/AbstractInterruptibleChannel.md), in order to implement asynchronous closing and interruption for this channel. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [implCloseChannel](../java.nio.channels.spi/AbstractInterruptibleChannel.md))`()` <br /> Closes this channel. This method is invoked by the #close method in order to perform the actual work of closing the channel. This method is only invoked if the channel has not yet been closed, and it is never invoked more than once. An implementation of this method must arrange for any other thread that is blocked in an I/O operation upon this channel to return immediately, either by throwing an exception or by returning normally. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isOpen](../java.nio.channels.spi/AbstractInterruptibleChannel.md))`()` <br /> | ||
 
 ## Protected constructors
 
@@ -109,7 +109,7 @@ The`metaData`parameter can be used to limit the number of I/O operations that th
 
 Invoking this method may cause an I/O operation to occur even if the channel was only opened for reading. Some operating systems, for example, maintain a last-access time as part of a file's metadata, and this time is updated whenever the file is read. Whether or not this is actually done is system-dependent and is therefore unspecified.
 
-This method is only guaranteed to force changes that were made to this channel's file via the methods defined in this class. It may or may not force changes that were made by modifying the content of a [*mapped byte buffer*](../java/nio/MappedByteBuffer.md) obtained by invoking the [map](../java/nio/channels/FileChannel.md))method. Invoking the java.nio.MappedByteBuffer#force method of the mapped byte buffer will force changes made to the buffer's content to be written.
+This method is only guaranteed to force changes that were made to this channel's file via the methods defined in this class. It may or may not force changes that were made by modifying the content of a [*mapped byte buffer*](../java.nio/MappedByteBuffer.md) obtained by invoking the [map](FileChannel.md))method. Invoking the java.nio.MappedByteBuffer#force method of the mapped byte buffer will force changes made to the buffer's content to be written.
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -138,7 +138,7 @@ fc.<code><a docref="java.nio.channels.FileChannel$lock(kotlin.Long, kotlin.Long,
 
 | Return ||
 |----------------------------------------------------------------------------------------|----------------------------------------------------|
-| [FileLock](../java/nio/channels/FileLock.md)! | A lock object representing the newly-acquired lock |
+| [FileLock](FileLock.md)! | A lock object representing the newly-acquired lock |
 
 | Exceptions ||
 |---------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -153,9 +153,9 @@ fc.<code><a docref="java.nio.channels.FileChannel$lock(kotlin.Long, kotlin.Long,
 
 **See Also**
 
-- [#lock(long,long,boolean)](../java/nio/channels/FileChannel.md))
+- [#lock(long,long,boolean)](FileChannel.md))
 - <https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel#tryLock()>
-- [#tryLock(long,long,boolean)](../java/nio/channels/FileChannel.md)) 
+- [#tryLock(long,long,boolean)](FileChannel.md)) 
 
 ### lock
 
@@ -173,13 +173,13 @@ Acquires a lock on the given region of this channel's file.
 
 An invocation of this method will block until the region can be locked, this channel is closed, or the invoking thread is interrupted, whichever comes first.
 
-If this channel is closed by another thread during an invocation of this method then an [AsynchronousCloseException](../java/nio/channels/AsynchronousCloseException.md) will be thrown.
+If this channel is closed by another thread during an invocation of this method then an [AsynchronousCloseException](AsynchronousCloseException.md) will be thrown.
 
-If the invoking thread is interrupted while waiting to acquire the lock then its interrupt status will be set and a [FileLockInterruptionException](../java/nio/channels/FileLockInterruptionException.md) will be thrown. If the invoker's interrupt status is set when this method is invoked then that exception will be thrown immediately; the thread's interrupt status will not be changed.
+If the invoking thread is interrupted while waiting to acquire the lock then its interrupt status will be set and a [FileLockInterruptionException](FileLockInterruptionException.md) will be thrown. If the invoker's interrupt status is set when this method is invoked then that exception will be thrown immediately; the thread's interrupt status will not be changed.
 
-The region specified by the`position`and`size`parameters need not be contained within, or even overlap, the actual underlying file. Lock regions are fixed in size; if a locked region initially contains the end of the file and the file grows beyond the region then the new portion of the file will not be covered by the lock. If a file is expected to grow in size and a lock on the entire file is required then a region starting at zero, and no smaller than the expected maximum size of the file, should be locked. The zero-argument [lock()](../java/nio/channels/FileChannel.md))method simply locks a region of size [java.lang.Long#MAX_VALUE](../java/lang/Long.md).
+The region specified by the`position`and`size`parameters need not be contained within, or even overlap, the actual underlying file. Lock regions are fixed in size; if a locked region initially contains the end of the file and the file grows beyond the region then the new portion of the file will not be covered by the lock. If a file is expected to grow in size and a lock on the entire file is required then a region starting at zero, and no smaller than the expected maximum size of the file, should be locked. The zero-argument [lock()](FileChannel.md))method simply locks a region of size [java.lang.Long#MAX_VALUE](../java.lang/Long.md).
 
-Some operating systems do not support shared locks, in which case a request for a shared lock is automatically converted into a request for an exclusive lock. Whether the newly-acquired lock is shared or exclusive may be tested by invoking the resulting lock object's [isShared](../java/nio/channels/FileLock.md))method.
+Some operating systems do not support shared locks, in which case a request for a shared lock is automatically converted into a request for an exclusive lock. Whether the newly-acquired lock is shared or exclusive may be tested by invoking the resulting lock object's [isShared](FileLock.md))method.
 
 File locks are held on behalf of the entire Java virtual machine. They are not suitable for controlling access to a file by multiple threads within the same virtual machine.
 
@@ -192,7 +192,7 @@ File locks are held on behalf of the entire Java virtual machine. They are not s
 
 | Return ||
 |----------------------------------------------------------------------------------------|----------------------------------------------------|
-| [FileLock](../java/nio/channels/FileLock.md)! | A lock object representing the newly-acquired lock |
+| [FileLock](FileLock.md)! | A lock object representing the newly-acquired lock |
 
 | Exceptions ||
 |---------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -211,7 +211,7 @@ File locks are held on behalf of the entire Java virtual machine. They are not s
 
 - <https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel#lock()>
 - <https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel#tryLock()>
-- [#tryLock(long,long,boolean)](../java/nio/channels/FileChannel.md)) 
+- [#tryLock(long,long,boolean)](FileChannel.md)) 
 
 ### map
 
@@ -229,13 +229,13 @@ Maps a region of this channel's file directly into memory.
 
 A region of a file may be mapped into memory in one of three modes:
 
-- *Read-only:* Any attempt to modify the resulting buffer will cause a [java.nio.ReadOnlyBufferException](../java/nio/ReadOnlyBufferException.md) to be thrown. ([MapMode.READ_ONLY](../java/nio/channels/FileChannel.MapMode.md))
+- *Read-only:* Any attempt to modify the resulting buffer will cause a [java.nio.ReadOnlyBufferException](../java.nio/ReadOnlyBufferException.md) to be thrown. ([MapMode.READ_ONLY](../java/nio/channels/FileChannel.MapMode.md))
 - *Read/write:* Changes made to the resulting buffer will eventually be propagated to the file; they may or may not be made visible to other programs that have mapped the same file. ([MapMode.READ_WRITE](../java/nio/channels/FileChannel.MapMode.md))
 - *Private:* Changes made to the resulting buffer will not be propagated to the file and will not be visible to other programs that have mapped the same file; instead, they will cause private copies of the modified portions of the buffer to be created. ([MapMode.PRIVATE](../java/nio/channels/FileChannel.MapMode.md))
 
 For a read-only mapping, this channel must have been opened for reading; for a read/write or private mapping, this channel must have been opened for both reading and writing.
 
-The [*mapped byte buffer*](../java/nio/MappedByteBuffer.md) returned by this method will have a position of zero and a limit and capacity of`size`; its mark will be undefined. The buffer and the mapping that it represents will remain valid until the buffer itself is garbage-collected.
+The [*mapped byte buffer*](../java.nio/MappedByteBuffer.md) returned by this method will have a position of zero and a limit and capacity of`size`; its mark will be undefined. The buffer and the mapping that it represents will remain valid until the buffer itself is garbage-collected.
 
 A mapping, once established, is not dependent upon the file channel that was used to create it. Closing the channel, in particular, has no effect upon the validity of the mapping.
 
@@ -247,12 +247,12 @@ For most operating systems, mapping a file into memory is more expensive than re
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `mode` | [FileChannel.MapMode](../java/nio/channels/FileChannel.MapMode.md)!:One of the constants [READ_ONLY](../java/nio/channels/FileChannel.MapMode.md), [READ_WRITE](../java/nio/channels/FileChannel.MapMode.md), or [PRIVATE](../java/nio/channels/FileChannel.MapMode.md) defined in the [MapMode](../java/nio/channels/FileChannel.MapMode.md) class, according to whether the file is to be mapped read-only, read/write, or privately (copy-on-write), respectively |
 | `position` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The position within the file at which the mapped region is to start; must be non-negative |
-| `size` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The size of the region to be mapped; must be non-negative and no greater than [java.lang.Integer#MAX_VALUE](../java/lang/Integer.md) |
+| `size` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The size of the region to be mapped; must be non-negative and no greater than [java.lang.Integer#MAX_VALUE](../java.lang/Integer.md) |
 | --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------|------------------------|
-| [MappedByteBuffer](../java/nio/MappedByteBuffer.md)! | The mapped byte buffer |
+| [MappedByteBuffer](../java.nio/MappedByteBuffer.md)! | The mapped byte buffer |
 
 | Exceptions ||
 |-------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -265,7 +265,7 @@ For most operating systems, mapping a file into memory is more expensive than re
 **See Also**
 
 - [java.nio.channels.FileChannel.MapMode](../java/nio/channels/FileChannel.MapMode.md)
-- [java.nio.MappedByteBuffer](../java/nio/MappedByteBuffer.md) 
+- [java.nio.MappedByteBuffer](../java.nio/MappedByteBuffer.md) 
 
 ### open
 
@@ -290,12 +290,12 @@ where`opts`is a set of the options specified in the`options`array.
 
 | Parameters ||
 |-----------|----------------------------------------------------------------------------------------------------------------------------------------|
-| `path` | [Path](../java/nio/file/Path.md)!:The path of the file to open or create |
-| `options` | [OpenOption](../java/nio/file/OpenOption.md)!:Options specifying how the file is opened |
+| `path` | [Path](../java.nio.file/Path.md)!:The path of the file to open or create |
+| `options` | [OpenOption](../java.nio.file/OpenOption.md)!:Options specifying how the file is opened |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|--------------------|
-| [FileChannel](../java/nio/channels/FileChannel.md)! | A new file channel |
+| [FileChannel](FileChannel.md)! | A new file channel |
 
 | Exceptions ||
 |-------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -303,7 +303,7 @@ where`opts`is a set of the options specified in the`options`array.
 | `java.lang.UnsupportedOperationException` | If the`path`is associated with a provider that does not support creating file channels, or an unsupported open option is specified |
 | `java.io.IOException` | If an I/O error occurs |
 | --- | --- |
-| `java.lang.SecurityException` | If a security manager is installed and it denies an unspecified permission required by the implementation. In the case of the default provider, the [java.lang.SecurityManager#checkRead(java.lang.String)](../java/lang/SecurityManager.md))method is invoked to check read access if the file is opened for reading. The [java.lang.SecurityManager#checkWrite(java.lang.String)](../java/lang/SecurityManager.md))method is invoked to check write access if the file is opened for writing |
+| `java.lang.SecurityException` | If a security manager is installed and it denies an unspecified permission required by the implementation. In the case of the default provider, the [java.lang.SecurityManager#checkRead(java.lang.String)](../java.lang/SecurityManager.md))method is invoked to check read access if the file is opened for reading. The [java.lang.SecurityManager#checkWrite(java.lang.String)](../java.lang/SecurityManager.md))method is invoked to check write access if the file is opened for writing |
 
 ### open
 
@@ -319,40 +319,40 @@ open static fun open(
 
 Opens or creates a file, returning a file channel to access the file.
 
-The`options`parameter determines how the file is opened. The [READ](../java/nio/file/StandardOpenOption.md) and [WRITE](../java/nio/file/StandardOpenOption.md) options determine if the file should be opened for reading and/or writing. If neither option (or the [APPEND](../java/nio/file/StandardOpenOption.md) option) is contained in the array then the file is opened for reading. By default reading or writing commences at the beginning of the file.
+The`options`parameter determines how the file is opened. The [READ](../java.nio.file/StandardOpenOption.md) and [WRITE](../java.nio.file/StandardOpenOption.md) options determine if the file should be opened for reading and/or writing. If neither option (or the [APPEND](../java.nio.file/StandardOpenOption.md) option) is contained in the array then the file is opened for reading. By default reading or writing commences at the beginning of the file.
 
 In the addition to`READ`and`WRITE`, the following options may be present:
 
 | Option | Description |
 | --- | --- |
-| [APPEND](../java/nio/file/StandardOpenOption.md) | If this option is present then the file is opened for writing and each invocation of the channel's`write`method first advances the position to the end of the file and then writes the requested data. Whether the advancement of the position and the writing of the data are done in a single atomic operation is system-dependent and therefore unspecified. This option may not be used in conjunction with the`READ`or`TRUNCATE_EXISTING`options. |
-| [TRUNCATE_EXISTING](../java/nio/file/StandardOpenOption.md) | If this option is present then the existing file is truncated to a size of 0 bytes. This option is ignored when the file is opened only for reading. |
-| [CREATE_NEW](../java/nio/file/StandardOpenOption.md) | If this option is present then a new file is created, failing if the file already exists. When creating a file the check for the existence of the file and the creation of the file if it does not exist is atomic with respect to other file system operations. This option is ignored when the file is opened only for reading. |
+| [APPEND](../java.nio.file/StandardOpenOption.md) | If this option is present then the file is opened for writing and each invocation of the channel's`write`method first advances the position to the end of the file and then writes the requested data. Whether the advancement of the position and the writing of the data are done in a single atomic operation is system-dependent and therefore unspecified. This option may not be used in conjunction with the`READ`or`TRUNCATE_EXISTING`options. |
+| [TRUNCATE_EXISTING](../java.nio.file/StandardOpenOption.md) | If this option is present then the existing file is truncated to a size of 0 bytes. This option is ignored when the file is opened only for reading. |
+| [CREATE_NEW](../java.nio.file/StandardOpenOption.md) | If this option is present then a new file is created, failing if the file already exists. When creating a file the check for the existence of the file and the creation of the file if it does not exist is atomic with respect to other file system operations. This option is ignored when the file is opened only for reading. |
 | --- | --- |
-| [CREATE](../java/nio/file/StandardOpenOption.md) | If this option is present then an existing file is opened if it exists, otherwise a new file is created. When creating a file the check for the existence of the file and the creation of the file if it does not exist is atomic with respect to other file system operations. This option is ignored if the`CREATE_NEW`option is also present or the file is opened only for reading. |
-| [DELETE_ON_CLOSE](../java/nio/file/StandardOpenOption.md) | When this option is present then the implementation makes a*best effort* attempt to delete the file when closed by the #close method. If the`close`method is not invoked then a*best effort*attempt is made to delete the file when the Java virtual machine terminates. |
-| [SPARSE](../java/nio/file/StandardOpenOption.md) | When creating a new file this option is a*hint*that the new file will be sparse. This option is ignored when not creating a new file. |
+| [CREATE](../java.nio.file/StandardOpenOption.md) | If this option is present then an existing file is opened if it exists, otherwise a new file is created. When creating a file the check for the existence of the file and the creation of the file if it does not exist is atomic with respect to other file system operations. This option is ignored if the`CREATE_NEW`option is also present or the file is opened only for reading. |
+| [DELETE_ON_CLOSE](../java.nio.file/StandardOpenOption.md) | When this option is present then the implementation makes a*best effort* attempt to delete the file when closed by the #close method. If the`close`method is not invoked then a*best effort*attempt is made to delete the file when the Java virtual machine terminates. |
+| [SPARSE](../java.nio.file/StandardOpenOption.md) | When creating a new file this option is a*hint*that the new file will be sparse. This option is ignored when not creating a new file. |
 | --- | --- |
-| [SYNC](../java/nio/file/StandardOpenOption.md) | Requires that every update to the file's content or metadata be written synchronously to the underlying storage device. (see [Synchronized I/O file integrity](../java/nio/file/_package.md)). |
-| [DSYNC](../java/nio/file/StandardOpenOption.md) | Requires that every update to the file's content be written synchronously to the underlying storage device. (see [Synchronized I/O file integrity](../java/nio/file/_package.md)). |
+| [SYNC](../java.nio.file/StandardOpenOption.md) | Requires that every update to the file's content or metadata be written synchronously to the underlying storage device. (see [Synchronized I/O file integrity](../java.nio.file/_package.md)). |
+| [DSYNC](../java.nio.file/StandardOpenOption.md) | Requires that every update to the file's content be written synchronously to the underlying storage device. (see [Synchronized I/O file integrity](../java.nio.file/_package.md)). |
 |------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
 An implementation may also support additional options.
 
-The`attrs`parameter is an optional array of file [file-attributes](../java/nio/file/attribute/FileAttribute.md) to set atomically when creating the file.
+The`attrs`parameter is an optional array of file [file-attributes](../java.nio.file.attribute/FileAttribute.md) to set atomically when creating the file.
 
-The new channel is created by invoking the [newFileChannel](../java/nio/file/spi/FileSystemProvider.md))method on the provider that created the`Path`.
+The new channel is created by invoking the [newFileChannel](../java.nio.file.spi/FileSystemProvider.md))method on the provider that created the`Path`.
 
 | Parameters ||
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `path` | [Path](../java/nio/file/Path.md)!:The path of the file to open or create |
-| `options` | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<out [OpenOption](../java/nio/file/OpenOption.md)!\>!:Options specifying how the file is opened |
-| `attrs` | [FileAttribute](../java/nio/file/attribute/FileAttribute.md)\<\*\>!:An optional list of file attributes to set atomically when creating the file |
+| `path` | [Path](../java.nio.file/Path.md)!:The path of the file to open or create |
+| `options` | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<out [OpenOption](../java.nio.file/OpenOption.md)!\>!:Options specifying how the file is opened |
+| `attrs` | [FileAttribute](../java.nio.file.attribute/FileAttribute.md)\<\*\>!:An optional list of file attributes to set atomically when creating the file |
 | --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|--------------------|
-| [FileChannel](../java/nio/channels/FileChannel.md)! | A new file channel |
+| [FileChannel](FileChannel.md)! | A new file channel |
 
 | Exceptions ||
 |-------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -360,7 +360,7 @@ The new channel is created by invoking the [newFileChannel](../java/nio/file/spi
 | `java.lang.UnsupportedOperationException` | If the`path`is associated with a provider that does not support creating file channels, or an unsupported open option is specified, or the array contains an attribute that cannot be set atomically when creating the file |
 | `java.io.IOException` | If an I/O error occurs |
 | --- | --- |
-| `java.lang.SecurityException` | If a security manager is installed and it denies an unspecified permission required by the implementation. In the case of the default provider, the [java.lang.SecurityManager#checkRead(java.lang.String)](../java/lang/SecurityManager.md))method is invoked to check read access if the file is opened for reading. The [java.lang.SecurityManager#checkWrite(java.lang.String)](../java/lang/SecurityManager.md))method is invoked to check write access if the file is opened for writing |
+| `java.lang.SecurityException` | If a security manager is installed and it denies an unspecified permission required by the implementation. In the case of the default provider, the [java.lang.SecurityManager#checkRead(java.lang.String)](../java.lang/SecurityManager.md))method is invoked to check read access if the file is opened for reading. The [java.lang.SecurityManager#checkWrite(java.lang.String)](../java.lang/SecurityManager.md))method is invoked to check write access if the file is opened for writing |
 
 ### position
 
@@ -399,7 +399,7 @@ Setting the position to a value that is greater than the file's current size is 
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|-------------------|
-| [FileChannel](../java/nio/channels/FileChannel.md)! | This file channel |
+| [FileChannel](FileChannel.md)! | This file channel |
 
 | Exceptions ||
 |--------------------------------------------|---------------------------------|
@@ -418,11 +418,11 @@ abstract fun read(dst: ByteBuffer!): Int
 
 Reads a sequence of bytes from this channel into the given buffer.
 
-Bytes are read starting at this channel's current file position, and then the file position is updated with the number of bytes actually read. Otherwise this method behaves exactly as specified in the [ReadableByteChannel](../java/nio/channels/ReadableByteChannel.md) interface.
+Bytes are read starting at this channel's current file position, and then the file position is updated with the number of bytes actually read. Otherwise this method behaves exactly as specified in the [ReadableByteChannel](ReadableByteChannel.md) interface.
 
 | Parameters ||
 |-------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| `dst` | [ByteBuffer](../java/nio/ByteBuffer.md)!:The buffer into which bytes are to be transferred |
+| `dst` | [ByteBuffer](../java.nio/ByteBuffer.md)!:The buffer into which bytes are to be transferred |
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
@@ -450,11 +450,11 @@ abstract fun read(
 
 Reads a sequence of bytes from this channel into the given buffer, starting at the given file position.
 
-This method works in the same manner as the [read(java.nio.ByteBuffer)](../java/nio/channels/FileChannel.md))method, except that bytes are read starting at the given file position rather than at the channel's current position. This method does not modify this channel's position. If the given position is greater than the file's current size then no bytes are read.
+This method works in the same manner as the [read(java.nio.ByteBuffer)](FileChannel.md))method, except that bytes are read starting at the given file position rather than at the channel's current position. This method does not modify this channel's position. If the given position is greater than the file's current size then no bytes are read.
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dst` | [ByteBuffer](../java/nio/ByteBuffer.md)!:The buffer into which bytes are to be transferred |
+| `dst` | [ByteBuffer](../java.nio/ByteBuffer.md)!:The buffer into which bytes are to be transferred |
 | `position` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The file position at which the transfer is to begin; must be non-negative |
 
 | Return ||
@@ -482,11 +482,11 @@ fun read(dsts: Array<ByteBuffer!>!): Long
 
 Reads a sequence of bytes from this channel into the given buffers.
 
-Bytes are read starting at this channel's current file position, and then the file position is updated with the number of bytes actually read. Otherwise this method behaves exactly as specified in the [ScatteringByteChannel](../java/nio/channels/ScatteringByteChannel.md) interface.
+Bytes are read starting at this channel's current file position, and then the file position is updated with the number of bytes actually read. Otherwise this method behaves exactly as specified in the [ScatteringByteChannel](ScatteringByteChannel.md) interface.
 
 | Parameters ||
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dsts` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ByteBuffer](../java/nio/ByteBuffer.md)!\>!:The buffers into which bytes are to be transferred |
+| `dsts` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ByteBuffer](../java.nio/ByteBuffer.md)!\>!:The buffers into which bytes are to be transferred |
 
 | Return ||
 |------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
@@ -515,11 +515,11 @@ abstract fun read(
 
 Reads a sequence of bytes from this channel into a subsequence of the given buffers.
 
-Bytes are read starting at this channel's current file position, and then the file position is updated with the number of bytes actually read. Otherwise this method behaves exactly as specified in the [ScatteringByteChannel](../java/nio/channels/ScatteringByteChannel.md) interface.
+Bytes are read starting at this channel's current file position, and then the file position is updated with the number of bytes actually read. Otherwise this method behaves exactly as specified in the [ScatteringByteChannel](ScatteringByteChannel.md) interface.
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dsts` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ByteBuffer](../java/nio/ByteBuffer.md)!\>!:The buffers into which bytes are to be transferred |
+| `dsts` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ByteBuffer](../java.nio/ByteBuffer.md)!\>!:The buffers into which bytes are to be transferred |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The offset within the buffer array of the first buffer into which bytes are to be transferred; must be non-negative and no larger than`dsts.length` |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The maximum number of buffers to be accessed; must be non-negative and no larger than`dsts.length`-`offset` |
 | --- | --- |
@@ -580,7 +580,7 @@ This method is potentially much more efficient than a simple loop that reads fro
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `src` | [ReadableByteChannel](../java/nio/channels/ReadableByteChannel.md)!:The source channel |
+| `src` | [ReadableByteChannel](ReadableByteChannel.md)!:The source channel |
 | `position` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The position within the file at which the transfer is to begin; must be non-negative |
 | `count` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The maximum number of bytes to be transferred; must be non-negative |
 | --- | --- |
@@ -625,7 +625,7 @@ This method is potentially much more efficient than a simple loop that reads fro
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `position` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The position within the file at which the transfer is to begin; must be non-negative |
 | `count` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The maximum number of bytes to be transferred; must be non-negative |
-| `target` | [WritableByteChannel](../java/nio/channels/WritableByteChannel.md)!:The target channel |
+| `target` | [WritableByteChannel](WritableByteChannel.md)!:The target channel |
 | --- | --- |
 
 | Return ||
@@ -662,7 +662,7 @@ If the given size is less than the file's current size then the file is truncate
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|-------------------|
-| [FileChannel](../java/nio/channels/FileChannel.md)! | This file channel |
+| [FileChannel](FileChannel.md)! | This file channel |
 
 | Exceptions ||
 |-------------------------------------------------|--------------------------------------------|
@@ -690,7 +690,7 @@ fc.<code><a docref="java.nio.channels.FileChannel$tryLock(kotlin.Long, kotlin.Lo
 
 | Return ||
 |----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| [FileLock](../java/nio/channels/FileLock.md)! | A lock object representing the newly-acquired lock, or`null`if the lock could not be acquired because another program holds an overlapping lock |
+| [FileLock](FileLock.md)! | A lock object representing the newly-acquired lock, or`null`if the lock could not be acquired because another program holds an overlapping lock |
 
 | Exceptions ||
 |--------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -702,8 +702,8 @@ fc.<code><a docref="java.nio.channels.FileChannel$tryLock(kotlin.Long, kotlin.Lo
 **See Also**
 
 - <https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel#lock()>
-- [#lock(long,long,boolean)](../java/nio/channels/FileChannel.md))
-- [#tryLock(long,long,boolean)](../java/nio/channels/FileChannel.md)) 
+- [#lock(long,long,boolean)](FileChannel.md))
+- [#tryLock(long,long,boolean)](FileChannel.md)) 
 
 ### tryLock
 
@@ -721,9 +721,9 @@ Attempts to acquire a lock on the given region of this channel's file.
 
 This method does not block. An invocation always returns immediately, either having acquired a lock on the requested region or having failed to do so. If it fails to acquire a lock because an overlapping lock is held by another program then it returns`null`. If it fails to acquire a lock for any other reason then an appropriate exception is thrown.
 
-The region specified by the`position`and`size`parameters need not be contained within, or even overlap, the actual underlying file. Lock regions are fixed in size; if a locked region initially contains the end of the file and the file grows beyond the region then the new portion of the file will not be covered by the lock. If a file is expected to grow in size and a lock on the entire file is required then a region starting at zero, and no smaller than the expected maximum size of the file, should be locked. The zero-argument [tryLock()](../java/nio/channels/FileChannel.md))method simply locks a region of size [java.lang.Long#MAX_VALUE](../java/lang/Long.md).
+The region specified by the`position`and`size`parameters need not be contained within, or even overlap, the actual underlying file. Lock regions are fixed in size; if a locked region initially contains the end of the file and the file grows beyond the region then the new portion of the file will not be covered by the lock. If a file is expected to grow in size and a lock on the entire file is required then a region starting at zero, and no smaller than the expected maximum size of the file, should be locked. The zero-argument [tryLock()](FileChannel.md))method simply locks a region of size [java.lang.Long#MAX_VALUE](../java.lang/Long.md).
 
-Some operating systems do not support shared locks, in which case a request for a shared lock is automatically converted into a request for an exclusive lock. Whether the newly-acquired lock is shared or exclusive may be tested by invoking the resulting lock object's [isShared](../java/nio/channels/FileLock.md))method.
+Some operating systems do not support shared locks, in which case a request for a shared lock is automatically converted into a request for an exclusive lock. Whether the newly-acquired lock is shared or exclusive may be tested by invoking the resulting lock object's [isShared](FileLock.md))method.
 
 File locks are held on behalf of the entire Java virtual machine. They are not suitable for controlling access to a file by multiple threads within the same virtual machine.
 
@@ -736,7 +736,7 @@ File locks are held on behalf of the entire Java virtual machine. They are not s
 
 | Return ||
 |----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| [FileLock](../java/nio/channels/FileLock.md)! | A lock object representing the newly-acquired lock, or`null`if the lock could not be acquired because another program holds an overlapping lock |
+| [FileLock](FileLock.md)! | A lock object representing the newly-acquired lock, or`null`if the lock could not be acquired because another program holds an overlapping lock |
 
 | Exceptions ||
 |--------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -749,7 +749,7 @@ File locks are held on behalf of the entire Java virtual machine. They are not s
 **See Also**
 
 - <https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel#lock()>
-- [#lock(long,long,boolean)](../java/nio/channels/FileChannel.md))
+- [#lock(long,long,boolean)](FileChannel.md))
 - <https://developer.android.com/reference/kotlin/java/nio/channels/FileChannel#tryLock()> 
 
 ### write
@@ -762,11 +762,11 @@ abstract fun write(src: ByteBuffer!): Int
 
 Writes a sequence of bytes to this channel from the given buffer.
 
-Bytes are written starting at this channel's current file position unless the channel is in append mode, in which case the position is first advanced to the end of the file. The file is grown, if necessary, to accommodate the written bytes, and then the file position is updated with the number of bytes actually written. Otherwise this method behaves exactly as specified by the [WritableByteChannel](../java/nio/channels/WritableByteChannel.md) interface.
+Bytes are written starting at this channel's current file position unless the channel is in append mode, in which case the position is first advanced to the end of the file. The file is grown, if necessary, to accommodate the written bytes, and then the file position is updated with the number of bytes actually written. Otherwise this method behaves exactly as specified by the [WritableByteChannel](WritableByteChannel.md) interface.
 
 | Parameters ||
 |-------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| `src` | [ByteBuffer](../java/nio/ByteBuffer.md)!:The buffer from which bytes are to be retrieved |
+| `src` | [ByteBuffer](../java.nio/ByteBuffer.md)!:The buffer from which bytes are to be retrieved |
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------|
@@ -794,11 +794,11 @@ abstract fun write(
 
 Writes a sequence of bytes to this channel from the given buffer, starting at the given file position.
 
-This method works in the same manner as the [write(java.nio.ByteBuffer)](../java/nio/channels/FileChannel.md))method, except that bytes are written starting at the given file position rather than at the channel's current position. This method does not modify this channel's position. If the given position is greater than the file's current size then the file will be grown to accommodate the new bytes; the values of any bytes between the previous end-of-file and the newly-written bytes are unspecified.
+This method works in the same manner as the [write(java.nio.ByteBuffer)](FileChannel.md))method, except that bytes are written starting at the given file position rather than at the channel's current position. This method does not modify this channel's position. If the given position is greater than the file's current size then the file will be grown to accommodate the new bytes; the values of any bytes between the previous end-of-file and the newly-written bytes are unspecified.
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `src` | [ByteBuffer](../java/nio/ByteBuffer.md)!:The buffer from which bytes are to be transferred |
+| `src` | [ByteBuffer](../java.nio/ByteBuffer.md)!:The buffer from which bytes are to be transferred |
 | `position` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The file position at which the transfer is to begin; must be non-negative |
 
 | Return ||
@@ -826,11 +826,11 @@ fun write(srcs: Array<ByteBuffer!>!): Long
 
 Writes a sequence of bytes to this channel from the given buffers.
 
-Bytes are written starting at this channel's current file position unless the channel is in append mode, in which case the position is first advanced to the end of the file. The file is grown, if necessary, to accommodate the written bytes, and then the file position is updated with the number of bytes actually written. Otherwise this method behaves exactly as specified in the [GatheringByteChannel](../java/nio/channels/GatheringByteChannel.md) interface.
+Bytes are written starting at this channel's current file position unless the channel is in append mode, in which case the position is first advanced to the end of the file. The file is grown, if necessary, to accommodate the written bytes, and then the file position is updated with the number of bytes actually written. Otherwise this method behaves exactly as specified in the [GatheringByteChannel](GatheringByteChannel.md) interface.
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `srcs` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ByteBuffer](../java/nio/ByteBuffer.md)!\>!:The buffers from which bytes are to be retrieved |
+| `srcs` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ByteBuffer](../java.nio/ByteBuffer.md)!\>!:The buffers from which bytes are to be retrieved |
 
 | Return ||
 |------------------------------------------------------------------------------|--------------------------------------------|
@@ -859,11 +859,11 @@ abstract fun write(
 
 Writes a sequence of bytes to this channel from a subsequence of the given buffers.
 
-Bytes are written starting at this channel's current file position unless the channel is in append mode, in which case the position is first advanced to the end of the file. The file is grown, if necessary, to accommodate the written bytes, and then the file position is updated with the number of bytes actually written. Otherwise this method behaves exactly as specified in the [GatheringByteChannel](../java/nio/channels/GatheringByteChannel.md) interface.
+Bytes are written starting at this channel's current file position unless the channel is in append mode, in which case the position is first advanced to the end of the file. The file is grown, if necessary, to accommodate the written bytes, and then the file position is updated with the number of bytes actually written. Otherwise this method behaves exactly as specified in the [GatheringByteChannel](GatheringByteChannel.md) interface.
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `srcs` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ByteBuffer](../java/nio/ByteBuffer.md)!\>!:The buffers from which bytes are to be retrieved |
+| `srcs` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ByteBuffer](../java.nio/ByteBuffer.md)!\>!:The buffers from which bytes are to be retrieved |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The offset within the buffer array of the first buffer from which bytes are to be retrieved; must be non-negative and no larger than`srcs.length` |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The maximum number of buffers to be accessed; must be non-negative and no larger than`srcs.length`-`offset` |
 | --- | --- |

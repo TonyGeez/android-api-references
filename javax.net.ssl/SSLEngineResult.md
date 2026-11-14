@@ -10,7 +10,7 @@ open class SSLEngineResult
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.net.ssl.SSLEngineResult](../javax/net/ssl/SSLEngineResult.md) |
+| ↳ | [javax.net.ssl.SSLEngineResult](SSLEngineResult.md) |
 
 An encapsulation of the result state produced by`SSLEngine`I/O calls.
 
@@ -25,16 +25,16 @@ A`SSLEngine`provides a means for establishing secure communication sessions betw
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SSLEngineResult](../javax/net/ssl/SSLEngineResult.md))`(`status:` ` [SSLEngineResult.Status](../javax/net/ssl/SSLEngineResult.Status.md)!`, `handshakeStatus:` ` [SSLEngineResult.HandshakeStatus](../javax/net/ssl/SSLEngineResult.HandshakeStatus.md)!`, `bytesConsumed:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `bytesProduced:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Initializes a new instance of this class. |
+| [SSLEngineResult](SSLEngineResult.md))`(`status:` ` [SSLEngineResult.Status](../javax/net/ssl/SSLEngineResult.Status.md)!`, `handshakeStatus:` ` [SSLEngineResult.HandshakeStatus](../javax/net/ssl/SSLEngineResult.HandshakeStatus.md)!`, `bytesConsumed:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `bytesProduced:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Initializes a new instance of this class. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [bytesConsumed](../javax/net/ssl/SSLEngineResult.md))`()` Returns the number of bytes consumed from the input buffer. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [bytesProduced](../javax/net/ssl/SSLEngineResult.md))`()` Returns the number of bytes written to the output buffer. |
-| [SSLEngineResult.HandshakeStatus](../javax/net/ssl/SSLEngineResult.HandshakeStatus.md)! | [getHandshakeStatus](../javax/net/ssl/SSLEngineResult.md))`()` Gets the handshake status of this`SSLEngine`operation. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [bytesConsumed](SSLEngineResult.md))`()` Returns the number of bytes consumed from the input buffer. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [bytesProduced](SSLEngineResult.md))`()` Returns the number of bytes written to the output buffer. |
+| [SSLEngineResult.HandshakeStatus](../javax/net/ssl/SSLEngineResult.HandshakeStatus.md)! | [getHandshakeStatus](SSLEngineResult.md))`()` Gets the handshake status of this`SSLEngine`operation. |
 | --- | --- |
-| [SSLEngineResult.Status](../javax/net/ssl/SSLEngineResult.Status.md)! | [getStatus](../javax/net/ssl/SSLEngineResult.md))`()` Gets the return value of this`SSLEngine`operation. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../javax/net/ssl/SSLEngineResult.md))`()` Returns a String representation of this object. |
+| [SSLEngineResult.Status](../javax/net/ssl/SSLEngineResult.Status.md)! | [getStatus](SSLEngineResult.md))`()` Gets the return value of this`SSLEngine`operation. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](SSLEngineResult.md))`()` Returns a String representation of this object. |
 
 ## Public constructors
 

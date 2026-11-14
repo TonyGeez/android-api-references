@@ -16,7 +16,7 @@ interface OnUtteranceCompletedListener
 
 | **This interface was deprecated in API level 18.**
 |
-| Use [UtteranceProgressListener](../android/speech/tts/UtteranceProgressListener.md) instead.
+| Use [UtteranceProgressListener](UtteranceProgressListener.md) instead.
 
 Listener that will be called when the TTS service has completed synthesizing an utterance. This is only called if the utterance has an utterance ID (see [TextToSpeech.Engine.KEY_PARAM_UTTERANCE_ID](../android/speech/tts/TextToSpeech.Engine.md)).
 

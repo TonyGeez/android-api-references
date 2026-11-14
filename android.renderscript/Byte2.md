@@ -5,7 +5,7 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 
 # Byte2
 
-Kotlin| [Java](../android/renderscript/Byte2.md) 
+Kotlin| [Java](Byte2.md) 
 | --- | --- |
 
 ```
@@ -14,7 +14,7 @@ open class Byte2
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.renderscript.Byte2](../android/renderscript/Byte2.md) |
+| ↳ | [android.renderscript.Byte2](Byte2.md) |
 
 | **This class was deprecated in API level 31.**
 |
@@ -26,13 +26,13 @@ Class for exposing the native RenderScript byte2 type back to the Android system
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Byte2](../android/renderscript/Byte2.md))`()` <br /> |
-| [Byte2](../android/renderscript/Byte2.md))`(`initX:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`, `initY:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` <br /> |
+| [Byte2](Byte2.md))`()` <br /> |
+| [Byte2](Byte2.md))`(`initX:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`, `initY:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` <br /> |
 
 | Properties ||
 |------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-| [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [x](../android/renderscript/Byte2.md) <br /> |
-| [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [y](../android/renderscript/Byte2.md) <br /> |
+| [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [x](Byte2.md) <br /> |
+| [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [y](Byte2.md) <br /> |
 
 ## Public constructors
 

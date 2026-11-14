@@ -4,7 +4,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 
 # HardwareRenderer
 
-Kotlin| [Java](../android/graphics/HardwareRenderer.md) 
+Kotlin| [Java](HardwareRenderer.md) 
 | --- | --- |
 
 ```
@@ -13,56 +13,56 @@ open class HardwareRenderer
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.graphics.HardwareRenderer](../android/graphics/HardwareRenderer.md) |
+| ↳ | [android.graphics.HardwareRenderer](HardwareRenderer.md) |
 
-Creates an instance of a hardware-accelerated renderer. This is used to render a scene built from [RenderNode](../android/graphics/RenderNode.md)'s to an output [android.view.Surface](../android/view/Surface.md). There can be as many HardwareRenderer instances as desired.
+Creates an instance of a hardware-accelerated renderer. This is used to render a scene built from [RenderNode](RenderNode.md)'s to an output [android.view.Surface](../android.view/Surface.md). There can be as many HardwareRenderer instances as desired.
 
 ### Resources \& lifecycle
 
-All HardwareRenderer instances share a common render thread. The render thread contains the GPU context \& resources necessary to do GPU-accelerated rendering. As such, the first HardwareRenderer created comes with the cost of also creating the associated GPU contexts, however each incremental HardwareRenderer thereafter is fairly cheap. The expected usage is to have a HardwareRenderer instance for every active [Surface](../android/view/Surface.md). For example when an Activity shows a Dialog the system internally will use 2 hardware renderers, both of which may be drawing at the same time.
+All HardwareRenderer instances share a common render thread. The render thread contains the GPU context \& resources necessary to do GPU-accelerated rendering. As such, the first HardwareRenderer created comes with the cost of also creating the associated GPU contexts, however each incremental HardwareRenderer thereafter is fairly cheap. The expected usage is to have a HardwareRenderer instance for every active [Surface](../android.view/Surface.md). For example when an Activity shows a Dialog the system internally will use 2 hardware renderers, both of which may be drawing at the same time.
 
-NOTE: Due to the shared, cooperative nature of the render thread it is critical that any [Surface](../android/view/Surface.md) used must have a prompt, reliable consuming side. System-provided consumers such as [android.view.SurfaceView](../android/view/SurfaceView.md), [android.view.Window#takeSurface(SurfaceHolder.Callback2)](../android/view/Window.md)), or [android.view.TextureView](../android/view/TextureView.md) all fit this requirement. However if custom consumers are used such as when using [SurfaceTexture](../android/graphics/SurfaceTexture.md) or [android.media.ImageReader](../android/media/ImageReader.md) it is the app's responsibility to ensure that they consume updates promptly and rapidly. Failure to do so will cause the render thread to stall on that surface, blocking all HardwareRenderer instances.
+NOTE: Due to the shared, cooperative nature of the render thread it is critical that any [Surface](../android.view/Surface.md) used must have a prompt, reliable consuming side. System-provided consumers such as [android.view.SurfaceView](../android.view/SurfaceView.md), [android.view.Window#takeSurface(SurfaceHolder.Callback2)](../android.view/Window.md)), or [android.view.TextureView](../android.view/TextureView.md) all fit this requirement. However if custom consumers are used such as when using [SurfaceTexture](SurfaceTexture.md) or [android.media.ImageReader](../android.media/ImageReader.md) it is the app's responsibility to ensure that they consume updates promptly and rapidly. Failure to do so will cause the render thread to stall on that surface, blocking all HardwareRenderer instances.
 
 ## Summary
 
 | Nested classes ||
 |---|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [FrameRenderRequest](../android/graphics/HardwareRenderer.FrameRenderRequest.md) Sets the parameters that can be used to control a render request for a [HardwareRenderer](../android/graphics/HardwareRenderer.md). |
+| | [FrameRenderRequest](../android/graphics/HardwareRenderer.FrameRenderRequest.md) Sets the parameters that can be used to control a render request for a [HardwareRenderer](HardwareRenderer.md). |
 
 | Constants ||
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SYNC_CONTEXT_IS_STOPPED](../android/graphics/HardwareRenderer.md) The hardware renderer has been set to a "stopped" state. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SYNC_FRAME_DROPPED](../android/graphics/HardwareRenderer.md) The content was synced but the renderer has declined to produce a frame in this vsync interval. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SYNC_LOST_SURFACE_REWARD_IF_FOUND](../android/graphics/HardwareRenderer.md) The hardware renderer no longer has a valid [android.view.Surface](../android/view/Surface.md) to render to. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SYNC_CONTEXT_IS_STOPPED](HardwareRenderer.md) The hardware renderer has been set to a "stopped" state. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SYNC_FRAME_DROPPED](HardwareRenderer.md) The content was synced but the renderer has declined to produce a frame in this vsync interval. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SYNC_LOST_SURFACE_REWARD_IF_FOUND](HardwareRenderer.md) The hardware renderer no longer has a valid [android.view.Surface](../android.view/Surface.md) to render to. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SYNC_OK](../android/graphics/HardwareRenderer.md) Nothing interesting to report. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SYNC_REDRAW_REQUESTED](../android/graphics/HardwareRenderer.md) The renderer is requesting a redraw. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SYNC_OK](HardwareRenderer.md) Nothing interesting to report. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SYNC_REDRAW_REQUESTED](HardwareRenderer.md) The renderer is requesting a redraw. |
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [HardwareRenderer](../android/graphics/HardwareRenderer.md))`()` Creates a new instance of a HardwareRenderer. |
+| [HardwareRenderer](HardwareRenderer.md))`()` Creates a new instance of a HardwareRenderer. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearContent](../android/graphics/HardwareRenderer.md))`()` Destroys all the display lists associated with the current rendering content. |
-| open [HardwareRenderer.FrameRenderRequest](../android/graphics/HardwareRenderer.FrameRenderRequest.md) | [createRenderRequest](../android/graphics/HardwareRenderer.md))`()` Returns a [FrameRenderRequest](../android/graphics/HardwareRenderer.FrameRenderRequest.md) that can be used to render a new frame. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [destroy](../android/graphics/HardwareRenderer.md))`()` Destroys the rendering context of this HardwareRenderer. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearContent](HardwareRenderer.md))`()` Destroys all the display lists associated with the current rendering content. |
+| open [HardwareRenderer.FrameRenderRequest](../android/graphics/HardwareRenderer.FrameRenderRequest.md) | [createRenderRequest](HardwareRenderer.md))`()` Returns a [FrameRenderRequest](../android/graphics/HardwareRenderer.FrameRenderRequest.md) that can be used to render a new frame. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [destroy](HardwareRenderer.md))`()` Destroys the rendering context of this HardwareRenderer. |
 | --- | --- |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDrawingEnabled](../android/graphics/HardwareRenderer.md))`()` Returns true if HardwareRender will produce output. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isOpaque](../android/graphics/HardwareRenderer.md))`()` Whether or not the renderer is set to be opaque. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [notifyFramePending](../android/graphics/HardwareRenderer.md))`()` Notifies the hardware renderer that a call to [FrameRenderRequest.syncAndDraw()](../android/graphics/HardwareRenderer.FrameRenderRequest.md))will be coming soon. |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDrawingEnabled](HardwareRenderer.md))`()` Returns true if HardwareRender will produce output. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isOpaque](HardwareRenderer.md))`()` Whether or not the renderer is set to be opaque. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [notifyFramePending](HardwareRenderer.md))`()` Notifies the hardware renderer that a call to [FrameRenderRequest.syncAndDraw()](../android/graphics/HardwareRenderer.FrameRenderRequest.md))will be coming soon. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setContentRoot](../android/graphics/HardwareRenderer.md))`(`content:` ` [RenderNode](../android/graphics/RenderNode.md)?`)` Sets the content root to render. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDrawingEnabled](../android/graphics/HardwareRenderer.md))`(`drawingEnabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Toggles whether or not HardwareRenderer will produce drawing output globally in the current process. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLightSourceAlpha](../android/graphics/HardwareRenderer.md))`(`ambientShadowAlpha:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `spotShadowAlpha:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Configures the ambient \& spot shadow alphas. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setContentRoot](HardwareRenderer.md))`(`content:` ` [RenderNode](RenderNode.md)?`)` Sets the content root to render. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDrawingEnabled](HardwareRenderer.md))`(`drawingEnabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Toggles whether or not HardwareRenderer will produce drawing output globally in the current process. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLightSourceAlpha](HardwareRenderer.md))`(`ambientShadowAlpha:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `spotShadowAlpha:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Configures the ambient \& spot shadow alphas. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLightSourceGeometry](../android/graphics/HardwareRenderer.md))`(`lightX:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `lightY:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `lightZ:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `lightRadius:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the center of the light source. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setName](../android/graphics/HardwareRenderer.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Sets a name for this renderer. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOpaque](../android/graphics/HardwareRenderer.md))`(`opaque:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Change the HardwareRenderer's opacity. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLightSourceGeometry](HardwareRenderer.md))`(`lightX:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `lightY:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `lightZ:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `lightRadius:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the center of the light source. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setName](HardwareRenderer.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Sets a name for this renderer. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOpaque](HardwareRenderer.md))`(`opaque:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Change the HardwareRenderer's opacity. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSurface](../android/graphics/HardwareRenderer.md))`(`surface:` ` [Surface](../android/view/Surface.md)?`)` The surface to render into. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [start](../android/graphics/HardwareRenderer.md))`()` Resumes rendering into the surface. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [stop](../android/graphics/HardwareRenderer.md))`()` Hard stops rendering into the surface. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSurface](HardwareRenderer.md))`(`surface:` ` [Surface](../android.view/Surface.md)?`)` The surface to render into. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [start](HardwareRenderer.md))`()` Resumes rendering into the surface. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [stop](HardwareRenderer.md))`()` Hard stops rendering into the surface. |
 | --- | --- |
 
 ## Constants
@@ -99,7 +99,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 static val SYNC_LOST_SURFACE_REWARD_IF_FOUND: Int
 ```
 
-The hardware renderer no longer has a valid [android.view.Surface](../android/view/Surface.md) to render to. This can happen if [Surface.release()](../android/view/Surface.md))was called. The user should no longer attempt to call syncAndDraw until a new surface has been provided by calling setSurface.
+The hardware renderer no longer has a valid [android.view.Surface](../android.view/Surface.md) to render to. This can happen if [Surface.release()](../android.view/Surface.md))was called. The user should no longer attempt to call syncAndDraw until a new surface has been provided by calling setSurface.
 
 Spoiler: the reward is GPU-accelerated drawing, better find that Surface! 
 
@@ -153,9 +153,9 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 open fun clearContent(): Unit
 ```
 
-Destroys all the display lists associated with the current rendering content. This includes releasing a reference to the current content root RenderNode. It will therefore be necessary to call [setContentRoot(android.graphics.RenderNode)](../android/graphics/HardwareRenderer.md))in order to resume rendering after calling this, along with re-recording the display lists for the RenderNode tree.
+Destroys all the display lists associated with the current rendering content. This includes releasing a reference to the current content root RenderNode. It will therefore be necessary to call [setContentRoot(android.graphics.RenderNode)](HardwareRenderer.md))in order to resume rendering after calling this, along with re-recording the display lists for the RenderNode tree.
 
-It is recommended, but not necessary, to use this in combination with lifecycle events such as [Activity.onStop()](../android/app/Activity.md))and [Activity.onStart()](../android/app/Activity.md))or in response to [android.content.ComponentCallbacks2#onTrimMemory(int)](../android/content/ComponentCallbacks2.md))signals such as [android.content.ComponentCallbacks2#TRIM_MEMORY_UI_HIDDEN](../android/content/ComponentCallbacks2.md) See also [stop()](../android/graphics/HardwareRenderer.md)). 
+It is recommended, but not necessary, to use this in combination with lifecycle events such as [Activity.onStop()](../android.app/Activity.md))and [Activity.onStart()](../android.app/Activity.md))or in response to [android.content.ComponentCallbacks2#onTrimMemory(int)](../android.content/ComponentCallbacks2.md))signals such as [android.content.ComponentCallbacks2#TRIM_MEMORY_UI_HIDDEN](../android.content/ComponentCallbacks2.md) See also [stop()](HardwareRenderer.md)). 
 
 ### createRenderRequest
 
@@ -165,7 +165,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 open fun createRenderRequest(): HardwareRenderer.FrameRenderRequest
 ```
 
-Returns a [FrameRenderRequest](../android/graphics/HardwareRenderer.FrameRenderRequest.md) that can be used to render a new frame. This is used to synchronize the RenderNode content provided by [setContentRoot(android.graphics.RenderNode)](../android/graphics/HardwareRenderer.md))with the RenderThread and then renders a single frame to the Surface set with [setSurface(android.view.Surface)](../android/graphics/HardwareRenderer.md)).
+Returns a [FrameRenderRequest](../android/graphics/HardwareRenderer.FrameRenderRequest.md) that can be used to render a new frame. This is used to synchronize the RenderNode content provided by [setContentRoot(android.graphics.RenderNode)](HardwareRenderer.md))with the RenderThread and then renders a single frame to the Surface set with [setSurface(android.view.Surface)](HardwareRenderer.md)).
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -179,9 +179,9 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 open fun destroy(): Unit
 ```
 
-Destroys the rendering context of this HardwareRenderer. This destroys the resources associated with this renderer and releases the currently set [Surface](../android/view/Surface.md). This must be called when this HardwareRenderer is no longer needed.
+Destroys the rendering context of this HardwareRenderer. This destroys the resources associated with this renderer and releases the currently set [Surface](../android.view/Surface.md). This must be called when this HardwareRenderer is no longer needed.
 
-The renderer may be restored from this state by setting a new [Surface](../android/view/Surface.md), setting new rendering content with [setContentRoot(android.graphics.RenderNode)](../android/graphics/HardwareRenderer.md)), and resuming rendering by issuing a new [FrameRenderRequest](../android/graphics/HardwareRenderer.FrameRenderRequest.md).
+The renderer may be restored from this state by setting a new [Surface](../android.view/Surface.md), setting new rendering content with [setContentRoot(android.graphics.RenderNode)](HardwareRenderer.md)), and resuming rendering by issuing a new [FrameRenderRequest](../android/graphics/HardwareRenderer.FrameRenderRequest.md).
 
 It is recommended to call this in response to callbacks such as [android.view.SurfaceHolder.Callback#surfaceDestroyed(SurfaceHolder)](../android/view/SurfaceHolder.Callback.md)).
 
@@ -195,7 +195,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 open static fun isDrawingEnabled(): Boolean
 ```
 
-Returns true if HardwareRender will produce output. This value is global to the process and affects all uses of HardwareRenderer, including those created by the system such as those used by the View tree when using hardware accelerated rendering. Default is true in all production environments, but may be false in testing-focused emulators or if [setDrawingEnabled(boolean)](../android/graphics/HardwareRenderer.md))is used. 
+Returns true if HardwareRender will produce output. This value is global to the process and affects all uses of HardwareRenderer, including those created by the system such as those used by the View tree when using hardware accelerated rendering. Default is true in all production environments, but may be false in testing-focused emulators or if [setDrawingEnabled(boolean)](HardwareRenderer.md))is used. 
 
 ### isOpaque
 
@@ -205,7 +205,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 open fun isOpaque(): Boolean
 ```
 
-Whether or not the renderer is set to be opaque. See [setOpaque(boolean)](../android/graphics/HardwareRenderer.md))
+Whether or not the renderer is set to be opaque. See [setOpaque(boolean)](HardwareRenderer.md))
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------------------------------|
@@ -229,11 +229,11 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 open fun setContentRoot(content: RenderNode?): Unit
 ```
 
-Sets the content root to render. It is not necessary to call this whenever the content recording changes. Any mutations to the RenderNode content, or any of the RenderNode's contained within the content node, will be applied whenever a new [FrameRenderRequest](../android/graphics/HardwareRenderer.FrameRenderRequest.md) is issued via [createRenderRequest()](../android/graphics/HardwareRenderer.md))and [FrameRenderRequest.syncAndDraw()](../android/graphics/HardwareRenderer.FrameRenderRequest.md)).
+Sets the content root to render. It is not necessary to call this whenever the content recording changes. Any mutations to the RenderNode content, or any of the RenderNode's contained within the content node, will be applied whenever a new [FrameRenderRequest](../android/graphics/HardwareRenderer.FrameRenderRequest.md) is issued via [createRenderRequest()](HardwareRenderer.md))and [FrameRenderRequest.syncAndDraw()](../android/graphics/HardwareRenderer.FrameRenderRequest.md)).
 
 | Parameters ||
 |-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `content` | [RenderNode](../android/graphics/RenderNode.md)?:The content to set as the root RenderNode. If null the content root is removed and the renderer will draw nothing. |
+| `content` | [RenderNode](RenderNode.md)?:The content to set as the root RenderNode. If null the content root is removed and the renderer will draw nothing. |
 
 ### setDrawingEnabled
 
@@ -260,7 +260,7 @@ Configures the ambient \& spot shadow alphas. This is the alpha used when the sh
 
 These values are typically provided by the current theme, see [android.R.attr#spotShadowAlpha](../android/R.attr.md) and [android.R.attr#ambientShadowAlpha](../android/R.attr.md).
 
-This must be set at least once along with [setLightSourceGeometry(float,float,float,float)](../android/graphics/HardwareRenderer.md))before shadows will work.
+This must be set at least once along with [setLightSourceGeometry(float,float,float,float)](HardwareRenderer.md))before shadows will work.
 
 | Parameters ||
 |----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -286,7 +286,7 @@ The platform's recommendation is to set lightX to 'displayWidth / 2f - windowLef
 
 The light source should be setup both as part of initial configuration, and whenever the window moves to ensure the light source stays anchored in display space instead of in window space.
 
-This must be set at least once along with [setLightSourceAlpha(float,float)](../android/graphics/HardwareRenderer.md))before shadows will work.
+This must be set at least once along with [setLightSourceAlpha(float,float)](HardwareRenderer.md))before shadows will work.
 
 | Parameters ||
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -334,13 +334,13 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 open fun setSurface(surface: Surface?): Unit
 ```
 
-The surface to render into. The surface is assumed to be associated with the display and as such is still driven by vsync signals such as those from [android.view.Choreographer](../android/view/Choreographer.md) and that it has a native refresh rate matching that of the display's (typically 60hz).
+The surface to render into. The surface is assumed to be associated with the display and as such is still driven by vsync signals such as those from [android.view.Choreographer](../android.view/Choreographer.md) and that it has a native refresh rate matching that of the display's (typically 60hz).
 
-NOTE: Due to the shared, cooperative nature of the render thread it is critical that any [Surface](../android/view/Surface.md) used must have a prompt, reliable consuming side. System-provided consumers such as [android.view.SurfaceView](../android/view/SurfaceView.md), [android.view.Window#takeSurface(SurfaceHolder.Callback2)](../android/view/Window.md)), or [android.view.TextureView](../android/view/TextureView.md) all fit this requirement. However if custom consumers are used such as when using [SurfaceTexture](../android/graphics/SurfaceTexture.md) or [android.media.ImageReader](../android/media/ImageReader.md) it is the app's responsibility to ensure that they consume updates promptly and rapidly. Failure to do so will cause the render thread to stall on that surface, blocking all HardwareRenderer instances.
+NOTE: Due to the shared, cooperative nature of the render thread it is critical that any [Surface](../android.view/Surface.md) used must have a prompt, reliable consuming side. System-provided consumers such as [android.view.SurfaceView](../android.view/SurfaceView.md), [android.view.Window#takeSurface(SurfaceHolder.Callback2)](../android.view/Window.md)), or [android.view.TextureView](../android.view/TextureView.md) all fit this requirement. However if custom consumers are used such as when using [SurfaceTexture](SurfaceTexture.md) or [android.media.ImageReader](../android.media/ImageReader.md) it is the app's responsibility to ensure that they consume updates promptly and rapidly. Failure to do so will cause the render thread to stall on that surface, blocking all HardwareRenderer instances.
 
 | Parameters ||
 |-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `surface` | [Surface](../android/view/Surface.md)?:The surface to render into. If null then rendering will be stopped. If non-null then [Surface.isValid()](../android/view/Surface.md))must be true. |
+| `surface` | [Surface](../android.view/Surface.md)?:The surface to render into. If null then rendering will be stopped. If non-null then [Surface.isValid()](../android.view/Surface.md))must be true. |
 
 ### start
 
@@ -352,7 +352,7 @@ open fun start(): Unit
 
 Resumes rendering into the surface. Any pending rendering requests will produce a new frame at the next vsync signal.
 
-This is useful in combination with lifecycle events such as [Activity.onStart()](../android/app/Activity.md)). See [stop()](../android/graphics/HardwareRenderer.md))for stopping rendering. 
+This is useful in combination with lifecycle events such as [Activity.onStart()](../android.app/Activity.md)). See [stop()](HardwareRenderer.md))for stopping rendering. 
 
 ### stop
 
@@ -362,6 +362,6 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 open fun stop(): Unit
 ```
 
-Hard stops rendering into the surface. If the renderer is stopped it will block any attempt to render. Calls to [FrameRenderRequest.syncAndDraw()](../android/graphics/HardwareRenderer.FrameRenderRequest.md))will still sync over the latest rendering content, however they will not render and instead [SYNC_CONTEXT_IS_STOPPED](../android/graphics/HardwareRenderer.md) will be returned.
+Hard stops rendering into the surface. If the renderer is stopped it will block any attempt to render. Calls to [FrameRenderRequest.syncAndDraw()](../android/graphics/HardwareRenderer.FrameRenderRequest.md))will still sync over the latest rendering content, however they will not render and instead [SYNC_CONTEXT_IS_STOPPED](HardwareRenderer.md) will be returned.
 
-This is useful in combination with lifecycle events such as [Activity.onStop()](../android/app/Activity.md)). See [start()](../android/graphics/HardwareRenderer.md))for resuming rendering.
+This is useful in combination with lifecycle events such as [Activity.onStop()](../android.app/Activity.md)). See [start()](HardwareRenderer.md))for resuming rendering.

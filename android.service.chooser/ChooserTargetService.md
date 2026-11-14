@@ -9,11 +9,11 @@ abstract class ChooserTargetService : Service
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](../android/content/Context.md) ||||
-| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) |||
-| | | ↳ | [android.app.Service](../android/app/Service.md) ||
+| ↳ | [android.content.Context](../android.content/Context.md) ||||
+| | ↳ | [android.content.ContextWrapper](../android.content/ContextWrapper.md) |||
+| | | ↳ | [android.app.Service](../android.app/Service.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.service.chooser.ChooserTargetService](../android/service/chooser/ChooserTargetService.md) |
+| | | | ↳ | [android.service.chooser.ChooserTargetService](ChooserTargetService.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 30.**
@@ -1085,8 +1085,8 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 
 | Public methods ||
 |---|---|
-| open [IBinder](../android/os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserTargetService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
-| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ChooserTarget](../android/service/chooser/ChooserTarget.md)!\>! | `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserTargetService#onGetChooserTargets(android.content.ComponentName,%20android.content.IntentFilter)(targetActivityName: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#!, matchedFilter: https://developer.android.com/reference/kotlin/android/content/IntentFilter.html#!)` Called by the system to retrieve a set of deep-link `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserTarget` that can handle an intent. |
+| open [IBinder](../android.os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserTargetService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
+| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ChooserTarget](ChooserTarget.md)!\>! | `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserTargetService#onGetChooserTargets(android.content.ComponentName,%20android.content.IntentFilter)(targetActivityName: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#!, matchedFilter: https://developer.android.com/reference/kotlin/android/content/IntentFilter.html#!)` Called by the system to retrieve a set of deep-link `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserTarget` that can handle an intent. |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/app/Service.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/app/Service.html#attachBaseContext(android.content.Context)(newBase: https://developer.android.com/reference/kotlin/android/content/Context.html#!)`
 
@@ -2849,7 +2849,7 @@ Return the communication channel to the service. May return null if clients can 
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
+| `intent` | [Intent](../android.content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
 
 | Return ||
 |---|---|
@@ -2876,8 +2876,8 @@ The returned list should be sorted such that the most relevant targets appear fi
 
 | Parameters ||
 |---|---|
-| `targetActivityName` | [ComponentName](../android/content/ComponentName.md)!: the ComponentName of the matched activity that referred the system to this ChooserTargetService |
-| `matchedFilter` | [IntentFilter](../android/content/IntentFilter.md)!: the specific IntentFilter on the component that was matched |
+| `targetActivityName` | [ComponentName](../android.content/ComponentName.md)!: the ComponentName of the matched activity that referred the system to this ChooserTargetService |
+| `matchedFilter` | [IntentFilter](../android.content/IntentFilter.md)!: the specific IntentFilter on the component that was matched |
 
 | Return ||
 |---|---|

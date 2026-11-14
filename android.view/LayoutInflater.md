@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # LayoutInflater
 
-Kotlin | [Java](../android/view/LayoutInflater.md) 
+Kotlin | [Java](LayoutInflater.md) 
 | --- | --- |
 
 ```
@@ -13,11 +13,11 @@ abstract class LayoutInflater
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.LayoutInflater](../android/view/LayoutInflater.md) |
+| ↳ | [android.view.LayoutInflater](LayoutInflater.md) |
 
-Instantiates a layout XML file into its corresponding [android.view.View](../android/view/View.md) objects. It is never used directly. Instead, use [android.app.Activity#getLayoutInflater()](../android/app/Activity.md)) or android.content.Context#getSystemService to retrieve a standard LayoutInflater instance that is already hooked up to the current context and correctly configured for the device you are running on.
+Instantiates a layout XML file into its corresponding [android.view.View](View.md) objects. It is never used directly. Instead, use [android.app.Activity#getLayoutInflater()](../android.app/Activity.md)) or android.content.Context#getSystemService to retrieve a standard LayoutInflater instance that is already hooked up to the current context and correctly configured for the device you are running on.
 
-To create a new LayoutInflater with an additional [Factory](../android/view/LayoutInflater.Factory.md) for your own views, you can use [cloneInContext](../android/view/LayoutInflater.md)) to clone an existing ViewFactory, and then call [setFactory](../android/view/LayoutInflater.md)) on it to include your Factory.
+To create a new LayoutInflater with an additional [Factory](../android/view/LayoutInflater.Factory.md) for your own views, you can use [cloneInContext](LayoutInflater.md)) to clone an existing ViewFactory, and then call [setFactory](LayoutInflater.md)) on it to include your Factory.
 
 For performance reasons, view inflation relies heavily on pre-processing of XML files that is done at build time. Therefore, it is not currently possible to use LayoutInflater with an XmlPullParser over a plain XML file at runtime; it only works with an XmlPullParser returned from a compiled resource (R.*something* file.)
 
@@ -34,37 +34,37 @@ For performance reasons, view inflation relies heavily on pre-processing of XML 
 
 | Protected constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [LayoutInflater](../android/view/LayoutInflater.md))`(`context:` ` [Context](../android/content/Context.md)!`)` Create a new LayoutInflater instance associated with a particular Context. |
-| [LayoutInflater](../android/view/LayoutInflater.md))`(`original:` ` [LayoutInflater](../android/view/LayoutInflater.md)!`, `newContext:` ` [Context](../android/content/Context.md)!`)` Create a new LayoutInflater instance that is a copy of an existing LayoutInflater, optionally with its Context changed. |
+| [LayoutInflater](LayoutInflater.md))`(`context:` ` [Context](../android.content/Context.md)!`)` Create a new LayoutInflater instance associated with a particular Context. |
+| [LayoutInflater](LayoutInflater.md))`(`original:` ` [LayoutInflater](LayoutInflater.md)!`, `newContext:` ` [Context](../android.content/Context.md)!`)` Create a new LayoutInflater instance that is a copy of an existing LayoutInflater, optionally with its Context changed. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [LayoutInflater](../android/view/LayoutInflater.md)! | [cloneInContext](../android/view/LayoutInflater.md))`(`newContext:` ` [Context](../android/content/Context.md)!`)` Create a copy of the existing LayoutInflater object, with the copy pointing to a different Context than the original. |
-| [View](../android/view/View.md)? | [createView](../android/view/LayoutInflater.md))`(`viewContext:` ` [Context](../android/content/Context.md)`, `name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `prefix:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `attrs:` ` [AttributeSet](../android/util/AttributeSet.md)?`)` Low-level function for instantiating a view by name. |
-| [View](../android/view/View.md)! | [createView](../android/view/LayoutInflater.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `prefix:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `attrs:` ` [AttributeSet](../android/util/AttributeSet.md)!`)` Low-level function for instantiating a view by name. |
+| abstract [LayoutInflater](LayoutInflater.md)! | [cloneInContext](LayoutInflater.md))`(`newContext:` ` [Context](../android.content/Context.md)!`)` Create a copy of the existing LayoutInflater object, with the copy pointing to a different Context than the original. |
+| [View](View.md)? | [createView](LayoutInflater.md))`(`viewContext:` ` [Context](../android.content/Context.md)`, `name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `prefix:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `attrs:` ` [AttributeSet](../android.util/AttributeSet.md)?`)` Low-level function for instantiating a view by name. |
+| [View](View.md)! | [createView](LayoutInflater.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `prefix:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `attrs:` ` [AttributeSet](../android.util/AttributeSet.md)!`)` Low-level function for instantiating a view by name. |
 | --- | --- |
-| open static [LayoutInflater](../android/view/LayoutInflater.md)! | [from](../android/view/LayoutInflater.md))`(`context:` ` [Context](../android/content/Context.md)!`)` Obtains the LayoutInflater from the given context. |
-| open [Context](../android/content/Context.md)! | [getContext](../android/view/LayoutInflater.md))`()` Return the context we are running in, for access to resources, class loader, etc. |
-| [LayoutInflater.Factory](../android/view/LayoutInflater.Factory.md)! | [getFactory](../android/view/LayoutInflater.md))`()` Return the current [Factory](../android/view/LayoutInflater.Factory.md) (or null). |
+| open static [LayoutInflater](LayoutInflater.md)! | [from](LayoutInflater.md))`(`context:` ` [Context](../android.content/Context.md)!`)` Obtains the LayoutInflater from the given context. |
+| open [Context](../android.content/Context.md)! | [getContext](LayoutInflater.md))`()` Return the context we are running in, for access to resources, class loader, etc. |
+| [LayoutInflater.Factory](../android/view/LayoutInflater.Factory.md)! | [getFactory](LayoutInflater.md))`()` Return the current [Factory](../android/view/LayoutInflater.Factory.md) (or null). |
 | --- | --- |
-| [LayoutInflater.Factory2](../android/view/LayoutInflater.Factory2.md)! | [getFactory2](../android/view/LayoutInflater.md))`()` Return the current [Factory2](../android/view/LayoutInflater.Factory2.md). |
-| open [LayoutInflater.Filter](../android/view/LayoutInflater.Filter.md)! | [getFilter](../android/view/LayoutInflater.md))`()` <br /> |
-| open [View](../android/view/View.md)! | [inflate](../android/view/LayoutInflater.md))`(`resource:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `root:` ` [ViewGroup](../android/view/ViewGroup.md)?`)` Inflate a new view hierarchy from the specified xml resource. |
+| [LayoutInflater.Factory2](../android/view/LayoutInflater.Factory2.md)! | [getFactory2](LayoutInflater.md))`()` Return the current [Factory2](../android/view/LayoutInflater.Factory2.md). |
+| open [LayoutInflater.Filter](../android/view/LayoutInflater.Filter.md)! | [getFilter](LayoutInflater.md))`()` <br /> |
+| open [View](View.md)! | [inflate](LayoutInflater.md))`(`resource:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `root:` ` [ViewGroup](ViewGroup.md)?`)` Inflate a new view hierarchy from the specified xml resource. |
 | --- | --- |
-| open [View](../android/view/View.md)! | [inflate](../android/view/LayoutInflater.md))`(`resource:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `root:` ` [ViewGroup](../android/view/ViewGroup.md)?`, `attachToRoot:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Inflate a new view hierarchy from the specified xml resource. |
-| open [View](../android/view/View.md)! | [inflate](../android/view/LayoutInflater.md))`(`parser:` ` [XmlPullParser](../org/xmlpull/v1/XmlPullParser.md)!`, `root:` ` [ViewGroup](../android/view/ViewGroup.md)?`)` Inflate a new view hierarchy from the specified xml node. |
-| open [View](../android/view/View.md)! | [inflate](../android/view/LayoutInflater.md))`(`parser:` ` [XmlPullParser](../org/xmlpull/v1/XmlPullParser.md)!`, `root:` ` [ViewGroup](../android/view/ViewGroup.md)?`, `attachToRoot:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Inflate a new view hierarchy from the specified XML node. |
+| open [View](View.md)! | [inflate](LayoutInflater.md))`(`resource:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `root:` ` [ViewGroup](ViewGroup.md)?`, `attachToRoot:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Inflate a new view hierarchy from the specified xml resource. |
+| open [View](View.md)! | [inflate](LayoutInflater.md))`(`parser:` ` [XmlPullParser](../org.xmlpull.v1/XmlPullParser.md)!`, `root:` ` [ViewGroup](ViewGroup.md)?`)` Inflate a new view hierarchy from the specified xml node. |
+| open [View](View.md)! | [inflate](LayoutInflater.md))`(`parser:` ` [XmlPullParser](../org.xmlpull.v1/XmlPullParser.md)!`, `root:` ` [ViewGroup](ViewGroup.md)?`, `attachToRoot:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Inflate a new view hierarchy from the specified XML node. |
 | --- | --- |
-| open [View](../android/view/View.md)? | [onCreateView](../android/view/LayoutInflater.md))`(`viewContext:` ` [Context](../android/content/Context.md)`, `parent:` ` [View](../android/view/View.md)?`, `name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `attrs:` ` [AttributeSet](../android/util/AttributeSet.md)?`)` Version of [onCreateView(android.view.View,java.lang.String,android.util.AttributeSet)](../android/view/LayoutInflater.md)) that also takes the inflation context. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFactory](../android/view/LayoutInflater.md))`(`factory:` ` [LayoutInflater.Factory](../android/view/LayoutInflater.Factory.md)!`)` Attach a custom Factory interface for creating views while using this LayoutInflater. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFactory2](../android/view/LayoutInflater.md))`(`factory:` ` [LayoutInflater.Factory2](../android/view/LayoutInflater.Factory2.md)!`)` Like [setFactory](../android/view/LayoutInflater.md)), but allows you to set a [Factory2](../android/view/LayoutInflater.Factory2.md) interface. |
+| open [View](View.md)? | [onCreateView](LayoutInflater.md))`(`viewContext:` ` [Context](../android.content/Context.md)`, `parent:` ` [View](View.md)?`, `name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `attrs:` ` [AttributeSet](../android.util/AttributeSet.md)?`)` Version of [onCreateView(android.view.View,java.lang.String,android.util.AttributeSet)](LayoutInflater.md)) that also takes the inflation context. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFactory](LayoutInflater.md))`(`factory:` ` [LayoutInflater.Factory](../android/view/LayoutInflater.Factory.md)!`)` Attach a custom Factory interface for creating views while using this LayoutInflater. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFactory2](LayoutInflater.md))`(`factory:` ` [LayoutInflater.Factory2](../android/view/LayoutInflater.Factory2.md)!`)` Like [setFactory](LayoutInflater.md)), but allows you to set a [Factory2](../android/view/LayoutInflater.Factory2.md) interface. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFilter](../android/view/LayoutInflater.md))`(`filter:` ` [LayoutInflater.Filter](../android/view/LayoutInflater.Filter.md)!`)` Sets the [Filter](../android/view/LayoutInflater.Filter.md) to by this LayoutInflater. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFilter](LayoutInflater.md))`(`filter:` ` [LayoutInflater.Filter](../android/view/LayoutInflater.Filter.md)!`)` Sets the [Filter](../android/view/LayoutInflater.Filter.md) to by this LayoutInflater. |
 
 | Protected methods ||
 |--------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [View](../android/view/View.md)! | [onCreateView](../android/view/LayoutInflater.md))`(`parent:` ` [View](../android/view/View.md)!`, `name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `attrs:` ` [AttributeSet](../android/util/AttributeSet.md)!`)` Version of [onCreateView(java.lang.String,android.util.AttributeSet)](../android/view/LayoutInflater.md)) that also takes the future parent of the view being constructed. |
-| open [View](../android/view/View.md)! | [onCreateView](../android/view/LayoutInflater.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `attrs:` ` [AttributeSet](../android/util/AttributeSet.md)!`)` This routine is responsible for creating the correct subclass of View given the xml element name. |
+| open [View](View.md)! | [onCreateView](LayoutInflater.md))`(`parent:` ` [View](View.md)!`, `name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `attrs:` ` [AttributeSet](../android.util/AttributeSet.md)!`)` Version of [onCreateView(java.lang.String,android.util.AttributeSet)](LayoutInflater.md)) that also takes the future parent of the view being constructed. |
+| open [View](View.md)! | [onCreateView](LayoutInflater.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `attrs:` ` [AttributeSet](../android.util/AttributeSet.md)!`)` This routine is responsible for creating the correct subclass of View given the xml element name. |
 
 ## Protected constructors
 
@@ -76,11 +76,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 protected LayoutInflater(context: Context!)
 ```
 
-Create a new LayoutInflater instance associated with a particular Context. Applications will almost always want to use android.content.Context#getSystemService to retrieve the standard [Context.INFLATER_SERVICE](../android/content/Context.md).
+Create a new LayoutInflater instance associated with a particular Context. Applications will almost always want to use android.content.Context#getSystemService to retrieve the standard [Context.INFLATER_SERVICE](../android.content/Context.md).
 
 | Parameters ||
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](../android/content/Context.md)!: The Context in which this LayoutInflater will create its Views; most importantly, this supplies the theme from which the default values for their attributes are retrieved. |
+| `context` | [Context](../android.content/Context.md)!: The Context in which this LayoutInflater will create its Views; most importantly, this supplies the theme from which the default values for their attributes are retrieved. |
 
 ### LayoutInflater
 
@@ -92,12 +92,12 @@ protected LayoutInflater(
     newContext: Context!)
 ```
 
-Create a new LayoutInflater instance that is a copy of an existing LayoutInflater, optionally with its Context changed. For use in implementing [cloneInContext](../android/view/LayoutInflater.md)).
+Create a new LayoutInflater instance that is a copy of an existing LayoutInflater, optionally with its Context changed. For use in implementing [cloneInContext](LayoutInflater.md)).
 
 | Parameters ||
 |--------------|--------------------------------------------------------------------------------------------------------------------------------------|
-| `original` | [LayoutInflater](../android/view/LayoutInflater.md)!: The original LayoutInflater to copy. |
-| `newContext` | [Context](../android/content/Context.md)!: The new Context to use. |
+| `original` | [LayoutInflater](LayoutInflater.md)!: The original LayoutInflater to copy. |
+| `newContext` | [Context](../android.content/Context.md)!: The new Context to use. |
 
 ## Public methods
 
@@ -109,15 +109,15 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun cloneInContext(newContext: Context!): LayoutInflater!
 ```
 
-Create a copy of the existing LayoutInflater object, with the copy pointing to a different Context than the original. This is used by [ContextThemeWrapper](../android/view/ContextThemeWrapper.md) to create a new LayoutInflater to go along with the new Context theme.
+Create a copy of the existing LayoutInflater object, with the copy pointing to a different Context than the original. This is used by [ContextThemeWrapper](ContextThemeWrapper.md) to create a new LayoutInflater to go along with the new Context theme.
 
 | Parameters ||
 |--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `newContext` | [Context](../android/content/Context.md)!: The new Context to associate with the new LayoutInflater. May be the same as the original Context if desired. |
+| `newContext` | [Context](../android.content/Context.md)!: The new Context to associate with the new LayoutInflater. May be the same as the original Context if desired. |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
-| [LayoutInflater](../android/view/LayoutInflater.md)! | Returns a brand spanking new LayoutInflater object associated with the given Context. |
+| [LayoutInflater](LayoutInflater.md)! | Returns a brand spanking new LayoutInflater object associated with the given Context. |
 
 ### createView
 
@@ -138,15 +138,15 @@ There are two things that can happen in an error case: either the exception desc
 
 | Parameters ||
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `viewContext` | [Context](../android/content/Context.md): The context used as the context parameter of the View constructor This value cannot be `null`. |
+| `viewContext` | [Context](../android.content/Context.md): The context used as the context parameter of the View constructor This value cannot be `null`. |
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The full name of the class to be instantiated. This value cannot be `null`. |
-| `attrs` | [AttributeSet](../android/util/AttributeSet.md)?: The XML attributes supplied for this instance. This value may be `null`. |
+| `attrs` | [AttributeSet](../android.util/AttributeSet.md)?: The XML attributes supplied for this instance. This value may be `null`. |
 | --- | --- |
 | `prefix` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: This value may be `null`. |
 
 | Return ||
 |---------------------------------------------------------------------------|--------------------------------------------|
-| [View](../android/view/View.md)? | View The newly instantiated view, or null. |
+| [View](View.md)? | View The newly instantiated view, or null. |
 
 ### createView
 
@@ -160,18 +160,18 @@ fun createView(
 ): View!
 ```
 
-Low-level function for instantiating a view by name. This attempts to instantiate a view class of the given name found in this LayoutInflater's ClassLoader. To use an explicit Context in the View constructor, use [createView(android.content.Context,java.lang.String,java.lang.String,android.util.AttributeSet)](../android/view/LayoutInflater.md)) instead.
+Low-level function for instantiating a view by name. This attempts to instantiate a view class of the given name found in this LayoutInflater's ClassLoader. To use an explicit Context in the View constructor, use [createView(android.content.Context,java.lang.String,java.lang.String,android.util.AttributeSet)](LayoutInflater.md)) instead.
 
 There are two things that can happen in an error case: either the exception describing the error will be thrown, or a null will be returned. You must deal with both possibilities -- the former will happen the first time createView() is called for a class of a particular name, the latter every time there-after for that class name.
 
 | Parameters ||
 |---------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The full name of the class to be instantiated. |
-| `attrs` | [AttributeSet](../android/util/AttributeSet.md)!: The XML attributes supplied for this instance. |
+| `attrs` | [AttributeSet](../android.util/AttributeSet.md)!: The XML attributes supplied for this instance. |
 
 | Return ||
 |---------------------------------------------------------------------------|--------------------------------------------|
-| [View](../android/view/View.md)! | View The newly instantiated view, or null. |
+| [View](View.md)! | View The newly instantiated view, or null. |
 
 ### from
 
@@ -236,16 +236,16 @@ open fun inflate(
 ): View!
 ```
 
-Inflate a new view hierarchy from the specified xml resource. Throws [InflateException](../android/view/InflateException.md) if there is an error.
+Inflate a new view hierarchy from the specified xml resource. Throws [InflateException](InflateException.md) if there is an error.
 
 | Parameters ||
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `resource` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): ID for an XML layout resource to load (e.g., `R.layout.main_page`) |
-| `root` | [ViewGroup](../android/view/ViewGroup.md)?: Optional view to be the parent of the generated hierarchy. This value may be `null`. |
+| `root` | [ViewGroup](ViewGroup.md)?: Optional view to be the parent of the generated hierarchy. This value may be `null`. |
 
 | Return ||
 |---------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| [View](../android/view/View.md)! | The root View of the inflated hierarchy. If root was supplied, this is the root View; otherwise it is the root of the inflated XML file. |
+| [View](View.md)! | The root View of the inflated hierarchy. If root was supplied, this is the root View; otherwise it is the root of the inflated XML file. |
 
 ### inflate
 
@@ -259,18 +259,18 @@ open fun inflate(
 ): View!
 ```
 
-Inflate a new view hierarchy from the specified xml resource. Throws [InflateException](../android/view/InflateException.md) if there is an error.
+Inflate a new view hierarchy from the specified xml resource. Throws [InflateException](InflateException.md) if there is an error.
 
 | Parameters ||
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `resource` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): ID for an XML layout resource to load (e.g., `R.layout.main_page`) |
-| `root` | [ViewGroup](../android/view/ViewGroup.md)?: Optional view to be the parent of the generated hierarchy (if *attachToRoot* is true), or else simply an object that provides a set of LayoutParams values for root of the returned hierarchy (if *attachToRoot* is false.) This value may be `null`. |
+| `root` | [ViewGroup](ViewGroup.md)?: Optional view to be the parent of the generated hierarchy (if *attachToRoot* is true), or else simply an object that provides a set of LayoutParams values for root of the returned hierarchy (if *attachToRoot* is false.) This value may be `null`. |
 | `attachToRoot` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): Whether the inflated hierarchy should be attached to the root parameter? If false, root is only used to create the correct subclass of LayoutParams for the root view in the XML. |
 | --- | --- |
 
 | Return ||
 |---------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [View](../android/view/View.md)! | The root View of the inflated hierarchy. If root was supplied and attachToRoot is true, this is root; otherwise it is the root of the inflated XML file. |
+| [View](View.md)! | The root View of the inflated hierarchy. If root was supplied and attachToRoot is true, this is root; otherwise it is the root of the inflated XML file. |
 
 ### inflate
 
@@ -283,18 +283,18 @@ open fun inflate(
 ): View!
 ```
 
-Inflate a new view hierarchy from the specified xml node. Throws [InflateException](../android/view/InflateException.md) if there is an error. \*
+Inflate a new view hierarchy from the specified xml node. Throws [InflateException](InflateException.md) if there is an error. \*
 
 ***Important*** For performance reasons, view inflation relies heavily on pre-processing of XML files that is done at build time. Therefore, it is not currently possible to use LayoutInflater with an XmlPullParser over a plain XML file at runtime.
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `parser` | [XmlPullParser](../org/xmlpull/v1/XmlPullParser.md)!: XML dom node containing the description of the view hierarchy. |
-| `root` | [ViewGroup](../android/view/ViewGroup.md)?: Optional view to be the parent of the generated hierarchy. This value may be `null`. |
+| `parser` | [XmlPullParser](../org.xmlpull.v1/XmlPullParser.md)!: XML dom node containing the description of the view hierarchy. |
+| `root` | [ViewGroup](ViewGroup.md)?: Optional view to be the parent of the generated hierarchy. This value may be `null`. |
 
 | Return ||
 |---------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| [View](../android/view/View.md)! | The root View of the inflated hierarchy. If root was supplied, this is the root View; otherwise it is the root of the inflated XML file. |
+| [View](View.md)! | The root View of the inflated hierarchy. If root was supplied, this is the root View; otherwise it is the root of the inflated XML file. |
 
 ### inflate
 
@@ -308,20 +308,20 @@ open fun inflate(
 ): View!
 ```
 
-Inflate a new view hierarchy from the specified XML node. Throws [InflateException](../android/view/InflateException.md) if there is an error.
+Inflate a new view hierarchy from the specified XML node. Throws [InflateException](InflateException.md) if there is an error.
 
 ***Important*** For performance reasons, view inflation relies heavily on pre-processing of XML files that is done at build time. Therefore, it is not currently possible to use LayoutInflater with an XmlPullParser over a plain XML file at runtime.
 
 | Parameters ||
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `parser` | [XmlPullParser](../org/xmlpull/v1/XmlPullParser.md)!: XML dom node containing the description of the view hierarchy. |
-| `root` | [ViewGroup](../android/view/ViewGroup.md)?: Optional view to be the parent of the generated hierarchy (if *attachToRoot* is true), or else simply an object that provides a set of LayoutParams values for root of the returned hierarchy (if *attachToRoot* is false.) This value may be `null`. |
+| `parser` | [XmlPullParser](../org.xmlpull.v1/XmlPullParser.md)!: XML dom node containing the description of the view hierarchy. |
+| `root` | [ViewGroup](ViewGroup.md)?: Optional view to be the parent of the generated hierarchy (if *attachToRoot* is true), or else simply an object that provides a set of LayoutParams values for root of the returned hierarchy (if *attachToRoot* is false.) This value may be `null`. |
 | `attachToRoot` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): Whether the inflated hierarchy should be attached to the root parameter? If false, root is only used to create the correct subclass of LayoutParams for the root view in the XML. |
 | --- | --- |
 
 | Return ||
 |---------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [View](../android/view/View.md)! | The root View of the inflated hierarchy. If root was supplied and attachToRoot is true, this is root; otherwise it is the root of the inflated XML file. |
+| [View](View.md)! | The root View of the inflated hierarchy. If root was supplied and attachToRoot is true, this is root; otherwise it is the root of the inflated XML file. |
 
 ### onCreateView
 
@@ -336,19 +336,19 @@ open fun onCreateView(
 ): View?
 ```
 
-Version of [onCreateView(android.view.View,java.lang.String,android.util.AttributeSet)](../android/view/LayoutInflater.md)) that also takes the inflation context. The default implementation simply calls [onCreateView(android.view.View,java.lang.String,android.util.AttributeSet)](../android/view/LayoutInflater.md)).
+Version of [onCreateView(android.view.View,java.lang.String,android.util.AttributeSet)](LayoutInflater.md)) that also takes the inflation context. The default implementation simply calls [onCreateView(android.view.View,java.lang.String,android.util.AttributeSet)](LayoutInflater.md)).
 
 | Parameters ||
 |---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `viewContext` | [Context](../android/content/Context.md): The Context to be used as a constructor parameter for the View This value cannot be `null`. |
-| `parent` | [View](../android/view/View.md)?: The future parent of the returned view. *Note that this may be null.* |
+| `viewContext` | [Context](../android.content/Context.md): The Context to be used as a constructor parameter for the View This value cannot be `null`. |
+| `parent` | [View](View.md)?: The future parent of the returned view. *Note that this may be null.* |
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The fully qualified class name of the View to be create. This value cannot be `null`. |
 | --- | --- |
-| `attrs` | [AttributeSet](../android/util/AttributeSet.md)?: An AttributeSet of attributes to apply to the View. This value may be `null`. |
+| `attrs` | [AttributeSet](../android.util/AttributeSet.md)?: An AttributeSet of attributes to apply to the View. This value may be `null`. |
 
 | Return ||
 |---------------------------------------------------------------------------|--------------------------------------------------|
-| [View](../android/view/View.md)? | View The View created. This value may be `null`. |
+| [View](View.md)? | View The View created. This value may be `null`. |
 
 ### setFactory
 
@@ -360,7 +360,7 @@ open fun setFactory(factory: LayoutInflater.Factory!): Unit
 
 Attach a custom Factory interface for creating views while using this LayoutInflater. This must not be null, and can only be set once; after setting, you can not change the factory. This is called on each element name as the xml is parsed. If the factory returns a View, that is added to the hierarchy. If it returns null, the next factory default #onCreateView method is called.
 
-If you have an existing LayoutInflater and want to add your own factory to it, use [cloneInContext](../android/view/LayoutInflater.md)) to clone the existing instance and then you can use this function (once) on the returned new instance. This will merge your own factory with whatever factory the original instance is using. 
+If you have an existing LayoutInflater and want to add your own factory to it, use [cloneInContext](LayoutInflater.md)) to clone the existing instance and then you can use this function (once) on the returned new instance. This will merge your own factory with whatever factory the original instance is using. 
 
 ### setFactory2
 
@@ -370,7 +370,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 open fun setFactory2(factory: LayoutInflater.Factory2!): Unit
 ```
 
-Like [setFactory](../android/view/LayoutInflater.md)), but allows you to set a [Factory2](../android/view/LayoutInflater.Factory2.md) interface. 
+Like [setFactory](LayoutInflater.md)), but allows you to set a [Factory2](../android/view/LayoutInflater.Factory2.md) interface. 
 
 ### setFilter
 
@@ -380,7 +380,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun setFilter(filter: LayoutInflater.Filter!): Unit
 ```
 
-Sets the [Filter](../android/view/LayoutInflater.Filter.md) to by this LayoutInflater. If a view is attempted to be inflated which is not allowed by the [Filter](../android/view/LayoutInflater.Filter.md), the [inflate(int,android.view.ViewGroup)](../android/view/LayoutInflater.md)) call will throw an [InflateException](../android/view/InflateException.md). This filter will replace any previous filter set on this LayoutInflater.
+Sets the [Filter](../android/view/LayoutInflater.Filter.md) to by this LayoutInflater. If a view is attempted to be inflated which is not allowed by the [Filter](../android/view/LayoutInflater.Filter.md), the [inflate(int,android.view.ViewGroup)](LayoutInflater.md)) call will throw an [InflateException](InflateException.md). This filter will replace any previous filter set on this LayoutInflater.
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -400,18 +400,18 @@ protected open fun onCreateView(
 ): View!
 ```
 
-Version of [onCreateView(java.lang.String,android.util.AttributeSet)](../android/view/LayoutInflater.md)) that also takes the future parent of the view being constructed. The default implementation simply calls [onCreateView(java.lang.String,android.util.AttributeSet)](../android/view/LayoutInflater.md)).
+Version of [onCreateView(java.lang.String,android.util.AttributeSet)](LayoutInflater.md)) that also takes the future parent of the view being constructed. The default implementation simply calls [onCreateView(java.lang.String,android.util.AttributeSet)](LayoutInflater.md)).
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `parent` | [View](../android/view/View.md)!: The future parent of the returned view. *Note that this may be null.* |
+| `parent` | [View](View.md)!: The future parent of the returned view. *Note that this may be null.* |
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The fully qualified class name of the View to be create. |
-| `attrs` | [AttributeSet](../android/util/AttributeSet.md)!: An AttributeSet of attributes to apply to the View. |
+| `attrs` | [AttributeSet](../android.util/AttributeSet.md)!: An AttributeSet of attributes to apply to the View. |
 | --- | --- |
 
 | Return ||
 |---------------------------------------------------------------------------|------------------------|
-| [View](../android/view/View.md)! | View The View created. |
+| [View](View.md)! | View The View created. |
 
 ### onCreateView
 
@@ -429,8 +429,8 @@ This routine is responsible for creating the correct subclass of View given the 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The fully qualified class name of the View to be create. |
-| `attrs` | [AttributeSet](../android/util/AttributeSet.md)!: An AttributeSet of attributes to apply to the View. |
+| `attrs` | [AttributeSet](../android.util/AttributeSet.md)!: An AttributeSet of attributes to apply to the View. |
 
 | Return ||
 |---------------------------------------------------------------------------|------------------------|
-| [View](../android/view/View.md)! | View The View created. |
+| [View](View.md)! | View The View created. |

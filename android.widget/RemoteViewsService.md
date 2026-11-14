@@ -8,11 +8,11 @@ abstract class RemoteViewsService : Service
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](../android/content/Context.md) ||||
-| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) |||
-| | | ↳ | [android.app.Service](../android/app/Service.md) ||
+| ↳ | [android.content.Context](../android.content/Context.md) ||||
+| | ↳ | [android.content.ContextWrapper](../android.content/ContextWrapper.md) |||
+| | | ↳ | [android.app.Service](../android.app/Service.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.widget.RemoteViewsService](../android/widget/RemoteViewsService.md) |
+| | | | ↳ | [android.widget.RemoteViewsService](RemoteViewsService.md) |
 
 The service to be connected to for a remote adapter to request RemoteViews. Users should extend the RemoteViewsService to provide the appropriate RemoteViewsFactory's used to populate the remote collection view (ListView, GridView, etc).
 
@@ -1045,7 +1045,7 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 
 | Public methods ||
 |---|---|
-| open [IBinder](../android/os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/widget/RemoteViewsService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
+| open [IBinder](../android.os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/widget/RemoteViewsService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
 | abstract [RemoteViewsService.RemoteViewsFactory](../android/widget/RemoteViewsService.RemoteViewsFactory.md)! | `https://developer.android.com/reference/kotlin/android/widget/RemoteViewsService#onGetViewFactory(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` To be implemented by the derived service to generate appropriate factories for the data. |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/app/Service.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/app/Service.html#attachBaseContext(android.content.Context)(newBase: https://developer.android.com/reference/kotlin/android/content/Context.html#!)`
@@ -2763,7 +2763,7 @@ Return the communication channel to the service. May return null if clients can 
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
+| `intent` | [Intent](../android.content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
 
 | Return ||
 |---|---|

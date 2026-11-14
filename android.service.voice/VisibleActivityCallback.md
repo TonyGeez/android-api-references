@@ -20,7 +20,7 @@ Callback interface for receiving visible activity changes used for assistant usa
 | Public methods ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onInvisible](../android/service/voice/VoiceInteractionSession.VisibleActivityCallback.md))`(`activityId:` ` [VoiceInteractionSession.ActivityId](../android/service/voice/VoiceInteractionSession.ActivityId.md)`)` Callback to inform that a visible activity has gone. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onVisible](../android/service/voice/VoiceInteractionSession.VisibleActivityCallback.md))`(`activityInfo:` ` [VisibleActivityInfo](../android/service/voice/VisibleActivityInfo.md)`)` Callback to inform that an activity has become visible. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onVisible](../android/service/voice/VoiceInteractionSession.VisibleActivityCallback.md))`(`activityInfo:` ` [VisibleActivityInfo](VisibleActivityInfo.md)`)` Callback to inform that an activity has become visible. |
 
 ## Public methods
 
@@ -50,4 +50,4 @@ Callback to inform that an activity has become visible.
 
 | Parameters ||
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| `activityInfo` | [VisibleActivityInfo](../android/service/voice/VisibleActivityInfo.md):This value cannot be`null`. |
+| `activityInfo` | [VisibleActivityInfo](VisibleActivityInfo.md):This value cannot be`null`. |

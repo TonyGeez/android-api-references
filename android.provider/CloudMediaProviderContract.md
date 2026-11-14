@@ -9,7 +9,7 @@ class CloudMediaProviderContract
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.provider.CloudMediaProviderContract](../android/provider/CloudMediaProviderContract.md) |
+| ↳ | [android.provider.CloudMediaProviderContract](CloudMediaProviderContract.md) |
 
 Defines the contract between a cloud media provider and the OS.
 

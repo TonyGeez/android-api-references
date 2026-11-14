@@ -5,7 +5,7 @@ Deprecated in [API level 24](https://developer.android.com/guide/topics/manifest
 
 # MoreAsserts
 
-Kotlin| [Java](../android/test/MoreAsserts.md) 
+Kotlin| [Java](MoreAsserts.md) 
 | --- | --- |
 
 ```
@@ -14,7 +14,7 @@ class MoreAsserts
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.test.MoreAsserts](../android/test/MoreAsserts.md) |
+| ↳ | [android.test.MoreAsserts](MoreAsserts.md) |
 
 | **This class was deprecated in API level 24.**
 |
@@ -26,53 +26,53 @@ Contains additional assertion methods not found in JUnit.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertAssignableFrom](../android/test/MoreAsserts.md))`(`expected:` ` [Class](../java/lang/Class.md)<*>!`, `actual:` ` [Class](../java/lang/Class.md)<*>!`)` Asserts that class`expected`is assignable from the class`actual`. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertAssignableFrom](../android/test/MoreAsserts.md))`(`expected:` ` [Class](../java/lang/Class.md)<*>!`, `actual:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Asserts that the class`expected`is assignable from the object`actual`. |
-| static [MatchResult](../java/util/regex/MatchResult.md)! | [assertContainsRegex](../android/test/MoreAsserts.md))`(`expectedRegex:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `actual:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Variant of [assertContainsRegex(java.lang.String,java.lang.String,java.lang.String)](../android/test/MoreAsserts.md))using a generic message. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertAssignableFrom](MoreAsserts.md))`(`expected:` ` [Class](../java.lang/Class.md)<*>!`, `actual:` ` [Class](../java.lang/Class.md)<*>!`)` Asserts that class`expected`is assignable from the class`actual`. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertAssignableFrom](MoreAsserts.md))`(`expected:` ` [Class](../java.lang/Class.md)<*>!`, `actual:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Asserts that the class`expected`is assignable from the object`actual`. |
+| static [MatchResult](../java.util.regex/MatchResult.md)! | [assertContainsRegex](MoreAsserts.md))`(`expectedRegex:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `actual:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Variant of [assertContainsRegex(java.lang.String,java.lang.String,java.lang.String)](MoreAsserts.md))using a generic message. |
 | --- | --- |
-| static [MatchResult](../java/util/regex/MatchResult.md)! | [assertContainsRegex](../android/test/MoreAsserts.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `expectedRegex:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `actual:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Asserts that`expectedRegex`matches any substring of`actual`and fails with`message`if it does not. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertContentsInAnyOrder](../android/test/MoreAsserts.md))`(`actual:` ` [MutableIterable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterable/index.html)<*>!`, `vararg` `expected:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Variant of assertContentsInAnyOrder(String, Iterable, Object. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertContentsInAnyOrder](../android/test/MoreAsserts.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `actual:` ` [MutableIterable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterable/index.html)<*>!`, `vararg` `expected:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Asserts that`actual`contains precisely the elements`expected`, but in any order. |
+| static [MatchResult](../java.util.regex/MatchResult.md)! | [assertContainsRegex](MoreAsserts.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `expectedRegex:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `actual:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Asserts that`expectedRegex`matches any substring of`actual`and fails with`message`if it does not. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertContentsInAnyOrder](MoreAsserts.md))`(`actual:` ` [MutableIterable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterable/index.html)<*>!`, `vararg` `expected:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Variant of assertContentsInAnyOrder(String, Iterable, Object. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertContentsInAnyOrder](MoreAsserts.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `actual:` ` [MutableIterable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterable/index.html)<*>!`, `vararg` `expected:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Asserts that`actual`contains precisely the elements`expected`, but in any order. |
 | --- | --- |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertContentsInOrder](../android/test/MoreAsserts.md))`(`actual:` ` [MutableIterable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterable/index.html)<*>!`, `vararg` `expected:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Variant of assertContentsInOrder(String, Iterable, Object. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertContentsInOrder](../android/test/MoreAsserts.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `actual:` ` [MutableIterable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterable/index.html)<*>!`, `vararg` `expected:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Asserts that`actual`contains precisely the elements`expected`, and in the same order. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertEmpty](../android/test/MoreAsserts.md))`(`iterable:` ` [MutableIterable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterable/index.html)<*>!`)` Variant of [assertEmpty(java.lang.String,java.lang.Iterable)](../android/test/MoreAsserts.md))using a generic message. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertContentsInOrder](MoreAsserts.md))`(`actual:` ` [MutableIterable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterable/index.html)<*>!`, `vararg` `expected:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Variant of assertContentsInOrder(String, Iterable, Object. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertContentsInOrder](MoreAsserts.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `actual:` ` [MutableIterable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterable/index.html)<*>!`, `vararg` `expected:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Asserts that`actual`contains precisely the elements`expected`, and in the same order. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertEmpty](MoreAsserts.md))`(`iterable:` ` [MutableIterable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterable/index.html)<*>!`)` Variant of [assertEmpty(java.lang.String,java.lang.Iterable)](MoreAsserts.md))using a generic message. |
 | --- | --- |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertEmpty](../android/test/MoreAsserts.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `iterable:` ` [MutableIterable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterable/index.html)<*>!`)` Asserts that`iterable`is empty. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertEmpty](../android/test/MoreAsserts.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `map:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)<*,` `*>!`)` Asserts that`map`is empty. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertEmpty](../android/test/MoreAsserts.md))`(`map:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)<*,` `*>!`)` Variant of [assertEmpty(java.lang.String,java.util.Map)](../android/test/MoreAsserts.md))using a generic message. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertEmpty](MoreAsserts.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `iterable:` ` [MutableIterable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterable/index.html)<*>!`)` Asserts that`iterable`is empty. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertEmpty](MoreAsserts.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `map:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)<*,` `*>!`)` Asserts that`map`is empty. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertEmpty](MoreAsserts.md))`(`map:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)<*,` `*>!`)` Variant of [assertEmpty(java.lang.String,java.util.Map)](MoreAsserts.md))using a generic message. |
 | --- | --- |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertEquals](../android/test/MoreAsserts.md))`(`expected:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `actual:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Asserts that array`actual`is the same size and every element equals those in array`expected`. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertEquals](../android/test/MoreAsserts.md))`(`expected:` ` [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html)!`, `actual:` ` [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html)!`)` Asserts that array`actual`is the same size and every element equals those in array`expected`. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertEquals](../android/test/MoreAsserts.md))`(`expected:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `actual:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` Asserts that array`actual`is the same size and every element equals those in array`expected`. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertEquals](MoreAsserts.md))`(`expected:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `actual:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Asserts that array`actual`is the same size and every element equals those in array`expected`. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertEquals](MoreAsserts.md))`(`expected:` ` [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html)!`, `actual:` ` [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html)!`)` Asserts that array`actual`is the same size and every element equals those in array`expected`. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertEquals](MoreAsserts.md))`(`expected:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `actual:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` Asserts that array`actual`is the same size and every element equals those in array`expected`. |
 | --- | --- |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertEquals](../android/test/MoreAsserts.md))`(`expected:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`, `actual:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`)` Asserts that array`actual`is the same size and every element is the same as those in array`expected`. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertEquals](../android/test/MoreAsserts.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `expected:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `actual:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Asserts that array`actual`is the same size and every element equals those in array`expected`. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertEquals](../android/test/MoreAsserts.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `expected:` ` [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html)!`, `actual:` ` [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html)!`)` Asserts that array`actual`is the same size and every element equals those in array`expected`. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertEquals](MoreAsserts.md))`(`expected:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`, `actual:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`)` Asserts that array`actual`is the same size and every element is the same as those in array`expected`. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertEquals](MoreAsserts.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `expected:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `actual:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Asserts that array`actual`is the same size and every element equals those in array`expected`. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertEquals](MoreAsserts.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `expected:` ` [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html)!`, `actual:` ` [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html)!`)` Asserts that array`actual`is the same size and every element equals those in array`expected`. |
 | --- | --- |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertEquals](../android/test/MoreAsserts.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `expected:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `actual:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` Asserts that array`actual`is the same size and every element equals those in array`expected`. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertEquals](../android/test/MoreAsserts.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `expected:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`, `actual:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`)` Asserts that array`actual`is the same size and every element is the same as those in array`expected`. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertEquals](../android/test/MoreAsserts.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `expected:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)<*>!`, `actual:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)<*>!`)` Asserts that two sets contain the same elements. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertEquals](MoreAsserts.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `expected:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `actual:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` Asserts that array`actual`is the same size and every element equals those in array`expected`. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertEquals](MoreAsserts.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `expected:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`, `actual:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`)` Asserts that array`actual`is the same size and every element is the same as those in array`expected`. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertEquals](MoreAsserts.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `expected:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)<*>!`, `actual:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)<*>!`)` Asserts that two sets contain the same elements. |
 | --- | --- |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertEquals](../android/test/MoreAsserts.md))`(`expected:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)<*>!`, `actual:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)<*>!`)` Asserts that two sets contain the same elements. |
-| static [MatchResult](../java/util/regex/MatchResult.md)! | [assertMatchesRegex](../android/test/MoreAsserts.md))`(`expectedRegex:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `actual:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Variant of [assertMatchesRegex(java.lang.String,java.lang.String,java.lang.String)](../android/test/MoreAsserts.md))using a generic message. |
-| static [MatchResult](../java/util/regex/MatchResult.md)! | [assertMatchesRegex](../android/test/MoreAsserts.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `expectedRegex:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `actual:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Asserts that`expectedRegex`exactly matches`actual`and fails with`message`if it does not. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertEquals](MoreAsserts.md))`(`expected:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)<*>!`, `actual:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)<*>!`)` Asserts that two sets contain the same elements. |
+| static [MatchResult](../java.util.regex/MatchResult.md)! | [assertMatchesRegex](MoreAsserts.md))`(`expectedRegex:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `actual:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Variant of [assertMatchesRegex(java.lang.String,java.lang.String,java.lang.String)](MoreAsserts.md))using a generic message. |
+| static [MatchResult](../java.util.regex/MatchResult.md)! | [assertMatchesRegex](MoreAsserts.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `expectedRegex:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `actual:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Asserts that`expectedRegex`exactly matches`actual`and fails with`message`if it does not. |
 | --- | --- |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertNotContainsRegex](../android/test/MoreAsserts.md))`(`expectedRegex:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `actual:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Variant of [assertNotContainsRegex(java.lang.String,java.lang.String,java.lang.String)](../android/test/MoreAsserts.md))using a generic message. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertNotContainsRegex](../android/test/MoreAsserts.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `expectedRegex:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `actual:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Asserts that`expectedRegex`does not match any substring of`actual`, and fails with`message`if it does. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertNotEmpty](../android/test/MoreAsserts.md))`(`iterable:` ` [MutableIterable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterable/index.html)<*>!`)` Variant of assertNotEmpty(String, Iterable) using a generic message. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertNotContainsRegex](MoreAsserts.md))`(`expectedRegex:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `actual:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Variant of [assertNotContainsRegex(java.lang.String,java.lang.String,java.lang.String)](MoreAsserts.md))using a generic message. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertNotContainsRegex](MoreAsserts.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `expectedRegex:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `actual:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Asserts that`expectedRegex`does not match any substring of`actual`, and fails with`message`if it does. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertNotEmpty](MoreAsserts.md))`(`iterable:` ` [MutableIterable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterable/index.html)<*>!`)` Variant of assertNotEmpty(String, Iterable) using a generic message. |
 | --- | --- |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertNotEmpty](../android/test/MoreAsserts.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `iterable:` ` [MutableIterable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterable/index.html)<*>!`)` Asserts that`iterable`is not empty. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertNotEmpty](../android/test/MoreAsserts.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `map:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)<*,` `*>!`)` Asserts that`map`is not empty. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertNotEmpty](../android/test/MoreAsserts.md))`(`map:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)<*,` `*>!`)` Variant of [assertNotEmpty(java.lang.String,java.util.Map)](../android/test/MoreAsserts.md))using a generic message. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertNotEmpty](MoreAsserts.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `iterable:` ` [MutableIterable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterable/index.html)<*>!`)` Asserts that`iterable`is not empty. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertNotEmpty](MoreAsserts.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `map:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)<*,` `*>!`)` Asserts that`map`is not empty. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertNotEmpty](MoreAsserts.md))`(`map:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)<*,` `*>!`)` Variant of [assertNotEmpty(java.lang.String,java.util.Map)](MoreAsserts.md))using a generic message. |
 | --- | --- |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertNotEqual](../android/test/MoreAsserts.md))`(`unexpected:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `actual:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Variant of [assertNotEqual(java.lang.String,java.lang.Object,java.lang.Object)](../android/test/MoreAsserts.md))using a generic message. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertNotEqual](../android/test/MoreAsserts.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `unexpected:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `actual:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Asserts that`actual`is not equal`unexpected`, according to both`==`and [Object.equals](../java/lang/Object.md)). |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertNotMatchesRegex](../android/test/MoreAsserts.md))`(`expectedRegex:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `actual:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Variant of [assertNotMatchesRegex(java.lang.String,java.lang.String,java.lang.String)](../android/test/MoreAsserts.md))using a generic message. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertNotEqual](MoreAsserts.md))`(`unexpected:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `actual:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Variant of [assertNotEqual(java.lang.String,java.lang.Object,java.lang.Object)](MoreAsserts.md))using a generic message. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertNotEqual](MoreAsserts.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `unexpected:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `actual:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Asserts that`actual`is not equal`unexpected`, according to both`==`and [Object.equals](../java.lang/Object.md)). |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertNotMatchesRegex](MoreAsserts.md))`(`expectedRegex:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `actual:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Variant of [assertNotMatchesRegex(java.lang.String,java.lang.String,java.lang.String)](MoreAsserts.md))using a generic message. |
 | --- | --- |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertNotMatchesRegex](../android/test/MoreAsserts.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `expectedRegex:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `actual:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Asserts that`expectedRegex`does not exactly match`actual`, and fails with`message`if it does. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkEqualsAndHashCodeMethods](../android/test/MoreAsserts.md))`(`lhs:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `rhs:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `expectedResult:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Variant of checkEqualsAndHashCodeMethods(String,Object,Object,boolean...)} using a generic message. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkEqualsAndHashCodeMethods](../android/test/MoreAsserts.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `lhs:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `rhs:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `expectedResult:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Utility for testing equals() and hashCode() results at once. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [assertNotMatchesRegex](MoreAsserts.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `expectedRegex:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `actual:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Asserts that`expectedRegex`does not exactly match`actual`, and fails with`message`if it does. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkEqualsAndHashCodeMethods](MoreAsserts.md))`(`lhs:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `rhs:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `expectedResult:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Variant of checkEqualsAndHashCodeMethods(String,Object,Object,boolean...)} using a generic message. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkEqualsAndHashCodeMethods](MoreAsserts.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `lhs:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `rhs:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `expectedResult:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Utility for testing equals() and hashCode() results at once. |
 | --- | --- |
 
 ## Public methods
@@ -120,7 +120,7 @@ static fun assertContainsRegex(
 
 **Deprecated:** *Deprecated in Java.*
 
-Variant of [assertContainsRegex(java.lang.String,java.lang.String,java.lang.String)](../android/test/MoreAsserts.md))using a generic message. 
+Variant of [assertContainsRegex(java.lang.String,java.lang.String,java.lang.String)](MoreAsserts.md))using a generic message. 
 
 ### assertContainsRegex
 
@@ -136,7 +136,7 @@ static fun assertContainsRegex(
 
 **Deprecated:** *Deprecated in Java.*
 
-Asserts that`expectedRegex`matches any substring of`actual`and fails with`message`if it does not. The Matcher is returned in case the test needs access to any captured groups. Note that you can also use this for a literal string, by wrapping your expected string in [Pattern.quote](../java/util/regex/Pattern.md)). 
+Asserts that`expectedRegex`matches any substring of`actual`and fails with`message`if it does not. The Matcher is returned in case the test needs access to any captured groups. Note that you can also use this for a literal string, by wrapping your expected string in [Pattern.quote](../java.util.regex/Pattern.md)). 
 
 ### assertContentsInAnyOrder
 
@@ -210,7 +210,7 @@ static fun assertEmpty(iterable: MutableIterable<*>!): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Variant of [assertEmpty(java.lang.String,java.lang.Iterable)](../android/test/MoreAsserts.md))using a generic message. 
+Variant of [assertEmpty(java.lang.String,java.lang.Iterable)](MoreAsserts.md))using a generic message. 
 
 ### assertEmpty
 
@@ -252,7 +252,7 @@ static fun assertEmpty(map: MutableMap<*, *>!): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Variant of [assertEmpty(java.lang.String,java.util.Map)](../android/test/MoreAsserts.md))using a generic message. 
+Variant of [assertEmpty(java.lang.String,java.util.Map)](MoreAsserts.md))using a generic message. 
 
 ### assertEquals
 
@@ -422,7 +422,7 @@ static fun assertMatchesRegex(
 
 **Deprecated:** *Deprecated in Java.*
 
-Variant of [assertMatchesRegex(java.lang.String,java.lang.String,java.lang.String)](../android/test/MoreAsserts.md))using a generic message. 
+Variant of [assertMatchesRegex(java.lang.String,java.lang.String,java.lang.String)](MoreAsserts.md))using a generic message. 
 
 ### assertMatchesRegex
 
@@ -438,7 +438,7 @@ static fun assertMatchesRegex(
 
 **Deprecated:** *Deprecated in Java.*
 
-Asserts that`expectedRegex`exactly matches`actual`and fails with`message`if it does not. The MatchResult is returned in case the test needs access to any captured groups. Note that you can also use this for a literal string, by wrapping your expected string in [Pattern.quote](../java/util/regex/Pattern.md)). 
+Asserts that`expectedRegex`exactly matches`actual`and fails with`message`if it does not. The MatchResult is returned in case the test needs access to any captured groups. Note that you can also use this for a literal string, by wrapping your expected string in [Pattern.quote](../java.util.regex/Pattern.md)). 
 
 ### assertNotContainsRegex
 
@@ -453,7 +453,7 @@ static fun assertNotContainsRegex(
 
 **Deprecated:** *Deprecated in Java.*
 
-Variant of [assertNotContainsRegex(java.lang.String,java.lang.String,java.lang.String)](../android/test/MoreAsserts.md))using a generic message. 
+Variant of [assertNotContainsRegex(java.lang.String,java.lang.String,java.lang.String)](MoreAsserts.md))using a generic message. 
 
 ### assertNotContainsRegex
 
@@ -469,7 +469,7 @@ static fun assertNotContainsRegex(
 
 **Deprecated:** *Deprecated in Java.*
 
-Asserts that`expectedRegex`does not match any substring of`actual`, and fails with`message`if it does. Note that you can also use this for a literal string, by wrapping your expected string in [Pattern.quote](../java/util/regex/Pattern.md)). 
+Asserts that`expectedRegex`does not match any substring of`actual`, and fails with`message`if it does. Note that you can also use this for a literal string, by wrapping your expected string in [Pattern.quote](../java.util.regex/Pattern.md)). 
 
 ### assertNotEmpty
 
@@ -523,7 +523,7 @@ static fun assertNotEmpty(map: MutableMap<*, *>!): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Variant of [assertNotEmpty(java.lang.String,java.util.Map)](../android/test/MoreAsserts.md))using a generic message. 
+Variant of [assertNotEmpty(java.lang.String,java.util.Map)](MoreAsserts.md))using a generic message. 
 
 ### assertNotEqual
 
@@ -538,7 +538,7 @@ static fun assertNotEqual(
 
 **Deprecated:** *Deprecated in Java.*
 
-Variant of [assertNotEqual(java.lang.String,java.lang.Object,java.lang.Object)](../android/test/MoreAsserts.md))using a generic message. 
+Variant of [assertNotEqual(java.lang.String,java.lang.Object,java.lang.Object)](MoreAsserts.md))using a generic message. 
 
 ### assertNotEqual
 
@@ -554,7 +554,7 @@ static fun assertNotEqual(
 
 **Deprecated:** *Deprecated in Java.*
 
-Asserts that`actual`is not equal`unexpected`, according to both`==`and [Object.equals](../java/lang/Object.md)). 
+Asserts that`actual`is not equal`unexpected`, according to both`==`and [Object.equals](../java.lang/Object.md)). 
 
 ### assertNotMatchesRegex
 
@@ -569,7 +569,7 @@ static fun assertNotMatchesRegex(
 
 **Deprecated:** *Deprecated in Java.*
 
-Variant of [assertNotMatchesRegex(java.lang.String,java.lang.String,java.lang.String)](../android/test/MoreAsserts.md))using a generic message. 
+Variant of [assertNotMatchesRegex(java.lang.String,java.lang.String,java.lang.String)](MoreAsserts.md))using a generic message. 
 
 ### assertNotMatchesRegex
 
@@ -585,7 +585,7 @@ static fun assertNotMatchesRegex(
 
 **Deprecated:** *Deprecated in Java.*
 
-Asserts that`expectedRegex`does not exactly match`actual`, and fails with`message`if it does. Note that you can also use this for a literal string, by wrapping your expected string in [Pattern.quote](../java/util/regex/Pattern.md)). 
+Asserts that`expectedRegex`does not exactly match`actual`, and fails with`message`if it does. Note that you can also use this for a literal string, by wrapping your expected string in [Pattern.quote](../java.util.regex/Pattern.md)). 
 
 ### checkEqualsAndHashCodeMethods
 

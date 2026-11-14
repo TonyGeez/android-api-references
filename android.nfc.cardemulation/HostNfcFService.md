@@ -8,11 +8,11 @@ abstract class HostNfcFService : Service
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](../android/content/Context.md) ||||
-| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) |||
-| | | ↳ | [android.app.Service](../android/app/Service.md) ||
+| ↳ | [android.content.Context](../android.content/Context.md) ||||
+| | ↳ | [android.content.ContextWrapper](../android.content/ContextWrapper.md) |||
+| | | ↳ | [android.app.Service](../android.app/Service.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.nfc.cardemulation.HostNfcFService](../android/nfc/cardemulation/HostNfcFService.md) |
+| | | | ↳ | [android.nfc.cardemulation.HostNfcFService](HostNfcFService.md) |
 
 HostNfcFService is a convenience `https://developer.android.com/reference/kotlin/android/app/Service.html#` class that can be extended to emulate an NFC-F card inside an Android service component.
 
@@ -1104,7 +1104,7 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 
 | Public methods ||
 |---|---|
-| [IBinder](../android/os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/HostNfcFService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
+| [IBinder](../android.os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/HostNfcFService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/HostNfcFService#onDeactivated(kotlin.Int)(reason: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` This method will be called in following possible scenarios: - The NFC link has been lost |
 | abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/HostNfcFService#processNfcFPacket(kotlin.ByteArray,%20android.os.Bundle)(commandPacket: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!, extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` This method will be called when a NFC-F packet has been received from a remote device. |
 | --- | --- |
@@ -2865,7 +2865,7 @@ Return the communication channel to the service. May return null if clients can 
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
+| `intent` | [Intent](../android.content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
 
 | Return ||
 |---|---|
@@ -2904,7 +2904,7 @@ This method is running on the main thread of your application. If you cannot ret
 | Parameters ||
 |---|---|
 | `commandPacket` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!: The NFC-F packet that was received from the remote device |
-| `extras` | [Bundle](../android/os/Bundle.md)!: A bundle containing extra data. May be null. |
+| `extras` | [Bundle](../android.os/Bundle.md)!: A bundle containing extra data. May be null. |
 
 | Return ||
 |---|---|

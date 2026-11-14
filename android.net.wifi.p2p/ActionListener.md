@@ -36,7 +36,7 @@ The operation failed
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `reason` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The reason for failure could be one of [P2P_UNSUPPORTED](../android/net/wifi/p2p/WifiP2pManager.md), [ERROR](../android/net/wifi/p2p/WifiP2pManager.md) or [BUSY](../android/net/wifi/p2p/WifiP2pManager.md) |
+| `reason` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The reason for failure could be one of [P2P_UNSUPPORTED](WifiP2pManager.md), [ERROR](WifiP2pManager.md) or [BUSY](WifiP2pManager.md) |
 
 ### onSuccess
 

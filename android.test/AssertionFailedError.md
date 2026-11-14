@@ -5,7 +5,7 @@ Deprecated in [API level 16](https://developer.android.com/guide/topics/manifest
 
 # AssertionFailedError
 
-Kotlin| [Java](../android/test/AssertionFailedError.md) 
+Kotlin| [Java](AssertionFailedError.md) 
 | --- | --- |
 
 ```
@@ -15,11 +15,11 @@ open class AssertionFailedError : Error
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
-| | ↳ | [java.lang.Error](../java/lang/Error.md) ||
-| | | ↳ | [android.test.AssertionFailedError](../android/test/AssertionFailedError.md) |
+| | ↳ | [java.lang.Error](../java.lang/Error.md) ||
+| | | ↳ | [android.test.AssertionFailedError](AssertionFailedError.md) |
 | --- | --- | --- | --- |
 
-| Known Direct Subclasses [ComparisonFailure](../android/test/ComparisonFailure.md) |----------------------------------------------------------------------------------------------------|--------------------------------------------------| | [ComparisonFailure](../android/test/ComparisonFailure.md) | Thrown when an assert equals for Strings failed. | |
+| Known Direct Subclasses [ComparisonFailure](ComparisonFailure.md) |----------------------------------------------------------------------------------------------------|--------------------------------------------------| | [ComparisonFailure](ComparisonFailure.md) | Thrown when an assert equals for Strings failed. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 | **This exception was deprecated in API level 16.**
@@ -32,8 +32,8 @@ Thrown when an assertion failed.
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [AssertionFailedError](../android/test/AssertionFailedError.md))`()` It is more typical to call [AssertionFailedError(java.lang.String)](../android/test/AssertionFailedError.md)). |
-| [AssertionFailedError](../android/test/AssertionFailedError.md))`(`errorMessage:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| [AssertionFailedError](AssertionFailedError.md))`()` It is more typical to call [AssertionFailedError(java.lang.String)](AssertionFailedError.md)). |
+| [AssertionFailedError](AssertionFailedError.md))`(`errorMessage:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
 
 ## Public constructors
 
@@ -45,7 +45,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 AssertionFailedError()
 ```
 
-It is more typical to call [AssertionFailedError(java.lang.String)](../android/test/AssertionFailedError.md)). 
+It is more typical to call [AssertionFailedError(java.lang.String)](AssertionFailedError.md)). 
 
 ### AssertionFailedError
 

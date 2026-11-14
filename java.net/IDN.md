@@ -10,7 +10,7 @@ class IDN
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.net.IDN](../java/net/IDN.md) |
+| ↳ | [java.net.IDN](IDN.md) |
 
 Provides methods to convert internationalized domain names (IDNs) between a normal Unicode representation and an ASCII Compatible Encoding (ACE) representation. Internationalized domain names can use characters from the entire range of Unicode, while traditional domain names are restricted to ASCII characters. ACE is an encoding of Unicode strings that uses only ASCII characters and can be used with software (such as the Domain Name System) that only understands traditional domain names.
 
@@ -29,16 +29,16 @@ The security consideration is important with respect to internationalization dom
 
 | Constants ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ALLOW_UNASSIGNED](../java/net/IDN.md) Flag to allow processing of unassigned code points |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USE_STD3_ASCII_RULES](../java/net/IDN.md) Flag to turn on the check against STD-3 ASCII rules |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ALLOW_UNASSIGNED](IDN.md) Flag to allow processing of unassigned code points |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USE_STD3_ASCII_RULES](IDN.md) Flag to turn on the check against STD-3 ASCII rules |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toASCII](../java/net/IDN.md))`(`input:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Translates a string from Unicode to ASCII Compatible Encoding (ACE), as defined by the ToASCII operation of [RFC 3490](http://www.ietf.org/rfc/rfc3490.txt). |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toASCII](../java/net/IDN.md))`(`input:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `flag:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Translates a string from Unicode to ASCII Compatible Encoding (ACE), as defined by the ToASCII operation of [RFC 3490](http://www.ietf.org/rfc/rfc3490.txt). |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toUnicode](../java/net/IDN.md))`(`input:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Translates a string from ASCII Compatible Encoding (ACE) to Unicode, as defined by the ToUnicode operation of [RFC 3490](http://www.ietf.org/rfc/rfc3490.txt). |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toASCII](IDN.md))`(`input:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Translates a string from Unicode to ASCII Compatible Encoding (ACE), as defined by the ToASCII operation of [RFC 3490](http://www.ietf.org/rfc/rfc3490.txt). |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toASCII](IDN.md))`(`input:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `flag:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Translates a string from Unicode to ASCII Compatible Encoding (ACE), as defined by the ToASCII operation of [RFC 3490](http://www.ietf.org/rfc/rfc3490.txt). |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toUnicode](IDN.md))`(`input:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Translates a string from ASCII Compatible Encoding (ACE) to Unicode, as defined by the ToUnicode operation of [RFC 3490](http://www.ietf.org/rfc/rfc3490.txt). |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toUnicode](../java/net/IDN.md))`(`input:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `flag:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Translates a string from ASCII Compatible Encoding (ACE) to Unicode, as defined by the ToUnicode operation of [RFC 3490](http://www.ietf.org/rfc/rfc3490.txt). |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toUnicode](IDN.md))`(`input:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `flag:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Translates a string from ASCII Compatible Encoding (ACE) to Unicode, as defined by the ToUnicode operation of [RFC 3490](http://www.ietf.org/rfc/rfc3490.txt). |
 
 ## Constants
 
@@ -79,7 +79,7 @@ static fun toASCII(input: String!): String!
 Translates a string from Unicode to ASCII Compatible Encoding (ACE), as defined by the ToASCII operation of [RFC 3490](http://www.ietf.org/rfc/rfc3490.txt).
 
 This convenience method works as if by invoking the two-argument counterpart as follows:
-[toASCII](../java/net/IDN.md))(input, 0);
+[toASCII](IDN.md))(input, 0);
 
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------------|
@@ -134,7 +134,7 @@ static fun toUnicode(input: String!): String!
 Translates a string from ASCII Compatible Encoding (ACE) to Unicode, as defined by the ToUnicode operation of [RFC 3490](http://www.ietf.org/rfc/rfc3490.txt).
 
 This convenience method works as if by invoking the two-argument counterpart as follows:
-[toUnicode](../java/net/IDN.md))(input, 0);
+[toUnicode](IDN.md))(input, 0);
 
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------------|

@@ -10,7 +10,7 @@ abstract class Pipe
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.nio.channels.Pipe](../java/nio/channels/Pipe.md) |
+| ↳ | [java.nio.channels.Pipe](Pipe.md) |
 
 A pair of channels that implements a unidirectional pipe.
 
@@ -22,18 +22,18 @@ Whether or not a thread writing bytes to a pipe will block until another thread 
 
 | Nested classes ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract | [SinkChannel](../java/nio/channels/Pipe.SinkChannel.md) A channel representing the writable end of a [Pipe](../java/nio/channels/Pipe.md). |
-| abstract | [SourceChannel](../java/nio/channels/Pipe.SourceChannel.md) A channel representing the readable end of a [Pipe](../java/nio/channels/Pipe.md). |
+| abstract | [SinkChannel](../java/nio/channels/Pipe.SinkChannel.md) A channel representing the writable end of a [Pipe](Pipe.md). |
+| abstract | [SourceChannel](../java/nio/channels/Pipe.SourceChannel.md) A channel representing the readable end of a [Pipe](Pipe.md). |
 
 | Protected constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Pipe](../java/nio/channels/Pipe.md))`()` Initializes a new instance of this class. |
+| [Pipe](Pipe.md))`()` Initializes a new instance of this class. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [Pipe](../java/nio/channels/Pipe.md)! | [open](../java/nio/channels/Pipe.md))`()` Opens a pipe. |
-| abstract [Pipe.SinkChannel](../java/nio/channels/Pipe.SinkChannel.md)! | [sink](../java/nio/channels/Pipe.md))`()` Returns this pipe's sink channel. |
-| abstract [Pipe.SourceChannel](../java/nio/channels/Pipe.SourceChannel.md)! | [source](../java/nio/channels/Pipe.md))`()` Returns this pipe's source channel. |
+| openstatic [Pipe](Pipe.md)! | [open](Pipe.md))`()` Opens a pipe. |
+| abstract [Pipe.SinkChannel](../java/nio/channels/Pipe.SinkChannel.md)! | [sink](Pipe.md))`()` Returns this pipe's sink channel. |
+| abstract [Pipe.SourceChannel](../java/nio/channels/Pipe.SourceChannel.md)! | [source](Pipe.md))`()` Returns this pipe's source channel. |
 | --- | --- |
 
 ## Protected constructors
@@ -60,11 +60,11 @@ open static fun open(): Pipe!
 
 Opens a pipe.
 
-The new pipe is created by invoking the [openPipe](../java/nio/channels/spi/SelectorProvider.md))method of the system-wide default [java.nio.channels.spi.SelectorProvider](../java/nio/channels/spi/SelectorProvider.md) object.
+The new pipe is created by invoking the [openPipe](../java.nio.channels.spi/SelectorProvider.md))method of the system-wide default [java.nio.channels.spi.SelectorProvider](../java.nio.channels.spi/SelectorProvider.md) object.
 
 | Return ||
 |---------------------------------------------------------------------------------|------------|
-| [Pipe](../java/nio/channels/Pipe.md)! | A new pipe |
+| [Pipe](Pipe.md)! | A new pipe |
 
 | Exceptions ||
 |-----------------------|------------------------|

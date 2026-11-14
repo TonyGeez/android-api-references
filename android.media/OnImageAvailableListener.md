@@ -21,7 +21,7 @@ The onImageAvailable is called per image basis, that is, callback fires for ever
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onImageAvailable](../android/media/ImageReader.OnImageAvailableListener.md))`(`reader:` ` [ImageReader](../android/media/ImageReader.md)!`)` Callback that is called when a new image is available from ImageReader. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onImageAvailable](../android/media/ImageReader.OnImageAvailableListener.md))`(`reader:` ` [ImageReader](ImageReader.md)!`)` Callback that is called when a new image is available from ImageReader. |
 
 ## Public methods
 
@@ -37,9 +37,9 @@ Callback that is called when a new image is available from ImageReader.
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| `reader` | [ImageReader](../android/media/ImageReader.md)!:the ImageReader the callback is associated with. |
+| `reader` | [ImageReader](ImageReader.md)!:the ImageReader the callback is associated with. |
 
 **See Also**
 
-- [android.media.ImageReader](../android/media/ImageReader.md)
-- [android.media.Image](../android/media/Image.md)
+- [android.media.ImageReader](ImageReader.md)
+- [android.media.Image](Image.md)

@@ -8,7 +8,7 @@ class GnssMeasurement : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.location.GnssMeasurement](../android/location/GnssMeasurement.md) |
+| ↳ | [android.location.GnssMeasurement](GnssMeasurement.md) |
 
 A class representing a GNSS satellite measurement, containing raw and computed information.
 
@@ -137,7 +137,7 @@ A class representing a GNSS satellite measurement, containing raw and computed i
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [GnssMeasurement](../android/location/GnssMeasurement.md)!\> | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [GnssMeasurement](GnssMeasurement.md)!\> | `https://developer.android.com/reference/kotlin/android/location/GnssMeasurement#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 

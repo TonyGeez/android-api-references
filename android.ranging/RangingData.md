@@ -8,7 +8,7 @@ class RangingData : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.ranging.RangingData](../android/ranging/RangingData.md) |
+| ↳ | [android.ranging.RangingData](RangingData.md) |
 
 Represents ranging data, including distance, azimuth, elevation, and RSSI measurements, along with the ranging technology used and a timestamp.
 
@@ -30,11 +30,11 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingData#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingData#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [RangingMeasurement](../android/ranging/RangingMeasurement.md)? | `https://developer.android.com/reference/kotlin/android/ranging/RangingData#getAzimuth()()` Returns the azimuth measurement, or `null` if not available. |
+| [RangingMeasurement](RangingMeasurement.md)? | `https://developer.android.com/reference/kotlin/android/ranging/RangingData#getAzimuth()()` Returns the azimuth measurement, or `null` if not available. |
 | --- | --- |
-| [RangingMeasurement](../android/ranging/RangingMeasurement.md)? | `https://developer.android.com/reference/kotlin/android/ranging/RangingData#getDistance()()` Returns the distance measurement. |
+| [RangingMeasurement](RangingMeasurement.md)? | `https://developer.android.com/reference/kotlin/android/ranging/RangingData#getDistance()()` Returns the distance measurement. |
 | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingData#getDistanceStandardDeviationMeters()()` Get the standard deviation of distance in meters . |
-| [RangingMeasurement](../android/ranging/RangingMeasurement.md)? | `https://developer.android.com/reference/kotlin/android/ranging/RangingData#getElevation()()` Returns the elevation measurement, or `null` if not available. |
+| [RangingMeasurement](RangingMeasurement.md)? | `https://developer.android.com/reference/kotlin/android/ranging/RangingData#getElevation()()` Returns the elevation measurement, or `null` if not available. |
 | --- | --- |
 | [RangingDataExtras](../android/ranging/RangingDataExtras.md)? | `https://developer.android.com/reference/kotlin/android/ranging/RangingData#getRangingDataExtras()()` Gets the extra ranging data associated with this ranging data. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingData#getRangingTechnology()()` Returns the ranging technology used. |
@@ -51,7 +51,7 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [RangingData](../android/ranging/RangingData.md)!\> | `https://developer.android.com/reference/kotlin/android/ranging/RangingData#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [RangingData](RangingData.md)!\> | `https://developer.android.com/reference/kotlin/android/ranging/RangingData#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public methods
 
@@ -299,7 +299,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

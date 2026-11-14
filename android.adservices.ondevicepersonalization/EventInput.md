@@ -4,7 +4,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 
 # EventInput
 
-Kotlin| [Java](../android/adservices/ondevicepersonalization/EventInput.md) 
+Kotlin| [Java](EventInput.md) 
 | --- | --- |
 
 ```
@@ -13,23 +13,23 @@ class EventInput
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.adservices.ondevicepersonalization.EventInput](../android/adservices/ondevicepersonalization/EventInput.md) |
+| ↳ | [android.adservices.ondevicepersonalization.EventInput](EventInput.md) |
 
-The input data for [android.adservices.ondevicepersonalization.IsolatedWorker#onEvent(android.adservices.ondevicepersonalization.EventInput,android.os.OutcomeReceiver)](../android/adservices/ondevicepersonalization/IsolatedWorker.md)).
+The input data for [android.adservices.ondevicepersonalization.IsolatedWorker#onEvent(android.adservices.ondevicepersonalization.EventInput,android.os.OutcomeReceiver)](IsolatedWorker.md)).
 
 ## Summary
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [EventInput](../android/adservices/ondevicepersonalization/EventInput.md))`(`requestLogRecord:` ` [RequestLogRecord](../android/adservices/ondevicepersonalization/RequestLogRecord.md)?`, `parameters:` ` [PersistableBundle](../android/os/PersistableBundle.md)`)` Creates a new EventInput. |
+| [EventInput](EventInput.md))`(`requestLogRecord:` ` [RequestLogRecord](RequestLogRecord.md)?`, `parameters:` ` [PersistableBundle](../android.os/PersistableBundle.md)`)` Creates a new EventInput. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/adservices/ondevicepersonalization/EventInput.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [PersistableBundle](../android/os/PersistableBundle.md) | [getParameters](../android/adservices/ondevicepersonalization/EventInput.md))`()` The Event URL parameters that the service passed to[android.adservices.ondevicepersonalization.EventUrlProvider#createEventTrackingUrlWithResponse(android.os.PersistableBundle,byte[],java.lang.String)](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/EventUrlProvider#createEventTrackingUrlWithResponse(android.os.PersistableBundle,%20kotlin.ByteArray,%20kotlin.String))or android. |
-| [RequestLogRecord](../android/adservices/ondevicepersonalization/RequestLogRecord.md)? | [getRequestLogRecord](../android/adservices/ondevicepersonalization/EventInput.md))`()` The [RequestLogRecord](../android/adservices/ondevicepersonalization/RequestLogRecord.md) that was returned as a result of [IsolatedWorker.onExecute(ExecuteInput, android.os.OutcomeReceiver)](../android/adservices/ondevicepersonalization/IsolatedWorker.md)). |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](EventInput.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [PersistableBundle](../android.os/PersistableBundle.md) | [getParameters](EventInput.md))`()` The Event URL parameters that the service passed to[android.adservices.ondevicepersonalization.EventUrlProvider#createEventTrackingUrlWithResponse(android.os.PersistableBundle,byte[],java.lang.String)](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/EventUrlProvider#createEventTrackingUrlWithResponse(android.os.PersistableBundle,%20kotlin.ByteArray,%20kotlin.String))or android. |
+| [RequestLogRecord](RequestLogRecord.md)? | [getRequestLogRecord](EventInput.md))`()` The [RequestLogRecord](RequestLogRecord.md) that was returned as a result of [IsolatedWorker.onExecute(ExecuteInput, android.os.OutcomeReceiver)](IsolatedWorker.md)). |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/adservices/ondevicepersonalization/EventInput.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](EventInput.md))`()` <br /> |
 
 ## Public constructors
 
@@ -47,8 +47,8 @@ Creates a new EventInput.
 
 | Parameters ||
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `requestLogRecord` | [RequestLogRecord](../android/adservices/ondevicepersonalization/RequestLogRecord.md)?:The [RequestLogRecord](../android/adservices/ondevicepersonalization/RequestLogRecord.md) that was returned as a result of [IsolatedWorker.onExecute(ExecuteInput, android.os.OutcomeReceiver)](../android/adservices/ondevicepersonalization/IsolatedWorker.md)). This value may be`null`. |
-| `parameters` | [PersistableBundle](../android/os/PersistableBundle.md):The Event URL parameters that the service passed to[android.adservices.ondevicepersonalization.EventUrlProvider#createEventTrackingUrlWithResponse(android.os.PersistableBundle,byte[],java.lang.String)](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/EventUrlProvider#createEventTrackingUrlWithResponse(android.os.PersistableBundle,%20kotlin.ByteArray,%20kotlin.String))or android.adservices.ondevicepersonalization.EventUrlProvider#createEventTrackingUrlWithRedirect(android.os.PersistableBundle,Uri). This value cannot be`null`. |
+| `requestLogRecord` | [RequestLogRecord](RequestLogRecord.md)?:The [RequestLogRecord](RequestLogRecord.md) that was returned as a result of [IsolatedWorker.onExecute(ExecuteInput, android.os.OutcomeReceiver)](IsolatedWorker.md)). This value may be`null`. |
+| `parameters` | [PersistableBundle](../android.os/PersistableBundle.md):The Event URL parameters that the service passed to[android.adservices.ondevicepersonalization.EventUrlProvider#createEventTrackingUrlWithResponse(android.os.PersistableBundle,byte[],java.lang.String)](https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/EventUrlProvider#createEventTrackingUrlWithResponse(android.os.PersistableBundle,%20kotlin.ByteArray,%20kotlin.String))or android.adservices.ondevicepersonalization.EventUrlProvider#createEventTrackingUrlWithRedirect(android.os.PersistableBundle,Uri). This value cannot be`null`. |
 
 ## Public methods
 
@@ -93,7 +93,7 @@ The Event URL parameters that the service passed to[android.adservices.ondevicep
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------|-----------------------------|
-| [PersistableBundle](../android/os/PersistableBundle.md) | This value cannot be`null`. |
+| [PersistableBundle](../android.os/PersistableBundle.md) | This value cannot be`null`. |
 
 ### getRequestLogRecord
 
@@ -103,11 +103,11 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun getRequestLogRecord(): RequestLogRecord?
 ```
 
-The [RequestLogRecord](../android/adservices/ondevicepersonalization/RequestLogRecord.md) that was returned as a result of [IsolatedWorker.onExecute(ExecuteInput, android.os.OutcomeReceiver)](../android/adservices/ondevicepersonalization/IsolatedWorker.md)).
+The [RequestLogRecord](RequestLogRecord.md) that was returned as a result of [IsolatedWorker.onExecute(ExecuteInput, android.os.OutcomeReceiver)](IsolatedWorker.md)).
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------------|--------------------------|
-| [RequestLogRecord](../android/adservices/ondevicepersonalization/RequestLogRecord.md)? | This value may be`null`. |
+| [RequestLogRecord](RequestLogRecord.md)? | This value may be`null`. |
 
 ### hashCode
 

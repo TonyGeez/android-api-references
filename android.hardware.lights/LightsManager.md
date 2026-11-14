@@ -4,7 +4,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # LightsManager
 
-Kotlin| [Java](../android/hardware/lights/LightsManager.md) 
+Kotlin| [Java](LightsManager.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ abstract class LightsManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.hardware.lights.LightsManager](../android/hardware/lights/LightsManager.md) |
+| ↳ | [android.hardware.lights.LightsManager](LightsManager.md) |
 
 The LightsManager class allows control over device lights.
 
@@ -25,9 +25,9 @@ The LightsManager class allows control over device lights.
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [LightState](../android/hardware/lights/LightState.md) | [getLightState](../android/hardware/lights/LightsManager.md))`(`light:` ` [Light](../android/hardware/lights/Light.md)`)` Returns the state of a specified light. |
-| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Light](../android/hardware/lights/Light.md)!\> | [getLights](../android/hardware/lights/LightsManager.md))`()` Returns the lights available on the device. |
-| abstract [LightsManager.LightsSession](../android/hardware/lights/LightsManager.LightsSession.md) | [openSession](../android/hardware/lights/LightsManager.md))`()` Creates a new LightsSession that can be used to control the device lights. |
+| abstract [LightState](LightState.md) | [getLightState](LightsManager.md))`(`light:` ` [Light](Light.md)`)` Returns the state of a specified light. |
+| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Light](Light.md)!\> | [getLights](LightsManager.md))`()` Returns the lights available on the device. |
+| abstract [LightsManager.LightsSession](../android/hardware/lights/LightsManager.LightsSession.md) | [openSession](LightsManager.md))`()` Creates a new LightsSession that can be used to control the device lights. |
 | --- | --- |
 
 ## Public methods
@@ -44,11 +44,11 @@ Returns the state of a specified light.
 
 | Parameters ||
 |---------|-------------------------------------------------------------------------------------------------------------------|
-| `light` | [Light](../android/hardware/lights/Light.md):This value cannot be`null`. |
+| `light` | [Light](Light.md):This value cannot be`null`. |
 
 | Return ||
 |-------------------------------------------------------------------------------------------------|-----------------------------|
-| [LightState](../android/hardware/lights/LightState.md) | This value cannot be`null`. |
+| [LightState](LightState.md) | This value cannot be`null`. |
 
 ### getLights
 
@@ -62,7 +62,7 @@ Returns the lights available on the device.
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Light](../android/hardware/lights/Light.md)!> | A list of available lights This value cannot be`null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Light](Light.md)!> | A list of available lights This value cannot be`null`. |
 
 ### openSession
 

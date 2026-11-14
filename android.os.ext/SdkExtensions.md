@@ -2,7 +2,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 
 # SdkExtensions
 
-Kotlin | [Java](../android/os/ext/SdkExtensions.md)
+Kotlin | [Java](SdkExtensions.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ open class SdkExtensions
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.os.ext.SdkExtensions](../android/os/ext/SdkExtensions.md) |
+| ↳ | [android.os.ext.SdkExtensions](SdkExtensions.md) |
 
 Methods for interacting with the extension SDK.
 

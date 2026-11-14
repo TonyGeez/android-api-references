@@ -8,17 +8,17 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 @FunctionalInterface interface FileFilter
 ```
 
-| [java.io.FileFilter](../java/io/FileFilter.md) |
+| [java.io.FileFilter](FileFilter.md) |
 
 A filter for abstract pathnames.
 
-Instances of this interface may be passed to the [listFiles(FileFilter)](../java/io/File.md))method of the [java.io.File](../java/io/File.md) class.
+Instances of this interface may be passed to the [listFiles(FileFilter)](File.md))method of the [java.io.File](File.md) class.
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [accept](../java/io/FileFilter.md))`(`pathname:` ` [File](../java/io/File.md)!`)` Tests whether or not the specified abstract pathname should be included in a pathname list. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [accept](FileFilter.md))`(`pathname:` ` [File](File.md)!`)` Tests whether or not the specified abstract pathname should be included in a pathname list. |
 
 ## Public methods
 
@@ -34,7 +34,7 @@ Tests whether or not the specified abstract pathname should be included in a pat
 
 | Parameters ||
 |------------|---------------------------------------------------------------------------------------------------------|
-| `pathname` | [File](../java/io/File.md)!:The abstract pathname to be tested |
+| `pathname` | [File](File.md)!:The abstract pathname to be tested |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------------------------|

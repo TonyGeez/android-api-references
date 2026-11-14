@@ -8,9 +8,9 @@ abstract class EncodedKeySpec : KeySpec
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.spec.EncodedKeySpec](../java/security/spec/EncodedKeySpec.md) |
+| ↳ | [java.security.spec.EncodedKeySpec](EncodedKeySpec.md) |
 
-| Known Direct Subclasses [PKCS8EncodedKeySpec](../java/security/spec/PKCS8EncodedKeySpec.md), [X509EncodedKeySpec](../java/security/spec/X509EncodedKeySpec.md), [XdhKeySpec](../android/crypto/hpke/XdhKeySpec.md) |---|---| | [PKCS8EncodedKeySpec](../java/security/spec/PKCS8EncodedKeySpec.md) | This class represents the ASN. | | [X509EncodedKeySpec](../java/security/spec/X509EncodedKeySpec.md) | This class represents the ASN. | | [XdhKeySpec](../android/crypto/hpke/XdhKeySpec.md) | External Diffie--Hellman (XDH) key spec holding either a public or private key. | |
+| Known Direct Subclasses [PKCS8EncodedKeySpec](PKCS8EncodedKeySpec.md), [X509EncodedKeySpec](X509EncodedKeySpec.md), [XdhKeySpec](../android.crypto.hpke/XdhKeySpec.md) |---|---| | [PKCS8EncodedKeySpec](PKCS8EncodedKeySpec.md) | This class represents the ASN. | | [X509EncodedKeySpec](X509EncodedKeySpec.md) | This class represents the ASN. | | [XdhKeySpec](../android.crypto.hpke/XdhKeySpec.md) | External Diffie--Hellman (XDH) key spec holding either a public or private key. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 This class represents a public or private key in encoded format.

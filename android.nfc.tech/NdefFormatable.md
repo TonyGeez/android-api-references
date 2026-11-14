@@ -4,7 +4,7 @@ Added in [API level 10](https://developer.android.com/guide/topics/manifest/uses
 
 # NdefFormatable
 
-Kotlin| [Java](../android/nfc/tech/NdefFormatable.md) 
+Kotlin| [Java](NdefFormatable.md) 
 | --- | --- |
 
 ```
@@ -13,15 +13,15 @@ class NdefFormatable : TagTechnology
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.nfc.tech.NdefFormatable](../android/nfc/tech/NdefFormatable.md) |
+| ↳ | [android.nfc.tech.NdefFormatable](NdefFormatable.md) |
 
-Provide access to NDEF format operations on a [Tag](../android/nfc/Tag.md).
+Provide access to NDEF format operations on a [Tag](../android.nfc/Tag.md).
 
-Acquire a [NdefFormatable](../android/nfc/tech/NdefFormatable.md) object using [get](../android/nfc/tech/NdefFormatable.md)).
+Acquire a [NdefFormatable](NdefFormatable.md) object using [get](NdefFormatable.md)).
 
 Android devices with NFC must only enumerate and implement this class for tags for which it can format to NDEF.
 
-Unfortunately the procedures to convert unformated tags to NDEF formatted tags are not specified by NFC Forum, and are not generally well-known. So there is no mandatory set of tags for which all Android devices with NFC must support [NdefFormatable](../android/nfc/tech/NdefFormatable.md).
+Unfortunately the procedures to convert unformated tags to NDEF formatted tags are not specified by NFC Forum, and are not generally well-known. So there is no mandatory set of tags for which all Android devices with NFC must support [NdefFormatable](NdefFormatable.md).
 
 **Note:** Methods that perform I/O operations require the [android.Manifest.permission#NFC](../android/Manifest.permission.md) permission.
 
@@ -29,15 +29,15 @@ Unfortunately the procedures to convert unformated tags to NDEF formatted tags a
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../android/nfc/tech/NdefFormatable.md))`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [connect](../android/nfc/tech/NdefFormatable.md))`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [format](../android/nfc/tech/NdefFormatable.md))`(`firstMessage:` ` [NdefMessage](../android/nfc/NdefMessage.md)!`)` Format a tag as NDEF, and write a [NdefMessage](../android/nfc/NdefMessage.md). |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](NdefFormatable.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [connect](NdefFormatable.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [format](NdefFormatable.md))`(`firstMessage:` ` [NdefMessage](../android.nfc/NdefMessage.md)!`)` Format a tag as NDEF, and write a [NdefMessage](../android.nfc/NdefMessage.md). |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [formatReadOnly](../android/nfc/tech/NdefFormatable.md))`(`firstMessage:` ` [NdefMessage](../android/nfc/NdefMessage.md)!`)` Formats a tag as NDEF, write a [NdefMessage](../android/nfc/NdefMessage.md), and make read-only. |
-| static [NdefFormatable](../android/nfc/tech/NdefFormatable.md)! | [get](../android/nfc/tech/NdefFormatable.md))`(`tag:` ` [Tag](../android/nfc/Tag.md)!`)` Get an instance of [NdefFormatable](../android/nfc/tech/NdefFormatable.md) for the given tag. |
-| [Tag](../android/nfc/Tag.md)! | [getTag](../android/nfc/tech/NdefFormatable.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [formatReadOnly](NdefFormatable.md))`(`firstMessage:` ` [NdefMessage](../android.nfc/NdefMessage.md)!`)` Formats a tag as NDEF, write a [NdefMessage](../android.nfc/NdefMessage.md), and make read-only. |
+| static [NdefFormatable](NdefFormatable.md)! | [get](NdefFormatable.md))`(`tag:` ` [Tag](../android.nfc/Tag.md)!`)` Get an instance of [NdefFormatable](NdefFormatable.md) for the given tag. |
+| [Tag](../android.nfc/Tag.md)! | [getTag](NdefFormatable.md))`()` <br /> |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isConnected](../android/nfc/tech/NdefFormatable.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isConnected](NdefFormatable.md))`()` <br /> |
 
 ## Public methods
 
@@ -79,19 +79,19 @@ Added in [API level 10](https://developer.android.com/guide/topics/manifest/uses
 fun format(firstMessage: NdefMessage!): Unit
 ```
 
-Format a tag as NDEF, and write a [NdefMessage](../android/nfc/NdefMessage.md).
+Format a tag as NDEF, and write a [NdefMessage](../android.nfc/NdefMessage.md).
 
 This is a multi-step process, an IOException is thrown if any one step fails.
 
 The card is left in a read-write state after this operation.
 
-This is an I/O operation and will block until complete. It must not be called from the main application thread. A blocked call will be canceled with [IOException](../java/io/IOException.md) if #close is called from another thread.
+This is an I/O operation and will block until complete. It must not be called from the main application thread. A blocked call will be canceled with [IOException](../java.io/IOException.md) if #close is called from another thread.
 
 Requires the [android.Manifest.permission#NFC](../android/Manifest.permission.md) permission.
 
 | Parameters ||
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `firstMessage` | [NdefMessage](../android/nfc/NdefMessage.md)!:the NDEF message to write after formatting, can be null |
+| `firstMessage` | [NdefMessage](../android.nfc/NdefMessage.md)!:the NDEF message to write after formatting, can be null |
 
 | Exceptions ||
 |--------------------------------|----------------------------------------------------------|
@@ -108,19 +108,19 @@ Added in [API level 10](https://developer.android.com/guide/topics/manifest/uses
 fun formatReadOnly(firstMessage: NdefMessage!): Unit
 ```
 
-Formats a tag as NDEF, write a [NdefMessage](../android/nfc/NdefMessage.md), and make read-only.
+Formats a tag as NDEF, write a [NdefMessage](../android.nfc/NdefMessage.md), and make read-only.
 
 This is a multi-step process, an IOException is thrown if any one step fails.
 
 The card is left in a read-only state if this method returns successfully.
 
-This is an I/O operation and will block until complete. It must not be called from the main application thread. A blocked call will be canceled with [IOException](../java/io/IOException.md) if #close is called from another thread.
+This is an I/O operation and will block until complete. It must not be called from the main application thread. A blocked call will be canceled with [IOException](../java.io/IOException.md) if #close is called from another thread.
 
 Requires the [android.Manifest.permission#NFC](../android/Manifest.permission.md) permission.
 
 | Parameters ||
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| `firstMessage` | [NdefMessage](../android/nfc/NdefMessage.md)!:the NDEF message to write after formatting |
+| `firstMessage` | [NdefMessage](../android.nfc/NdefMessage.md)!:the NDEF message to write after formatting |
 
 | Exceptions ||
 |--------------------------------|--------------------------------------------------------------|
@@ -138,19 +138,19 @@ Added in [API level 10](https://developer.android.com/guide/topics/manifest/uses
 static fun get(tag: Tag!): NdefFormatable!
 ```
 
-Get an instance of [NdefFormatable](../android/nfc/tech/NdefFormatable.md) for the given tag.
+Get an instance of [NdefFormatable](NdefFormatable.md) for the given tag.
 
 Does not cause any RF activity and does not block.
 
-Returns null if [NdefFormatable](../android/nfc/tech/NdefFormatable.md) was not enumerated in [Tag.getTechList](../android/nfc/Tag.md)). This indicates the tag is not NDEF formatable by this Android device.
+Returns null if [NdefFormatable](NdefFormatable.md) was not enumerated in [Tag.getTechList](../android.nfc/Tag.md)). This indicates the tag is not NDEF formatable by this Android device.
 
 | Parameters ||
 |-------|-----------------------------------------------------------------------------------------------------|
-| `tag` | [Tag](../android/nfc/Tag.md)!:an NDEF formatable tag |
+| `tag` | [Tag](../android.nfc/Tag.md)!:an NDEF formatable tag |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------|------------------------|
-| [NdefFormatable](../android/nfc/tech/NdefFormatable.md)! | NDEF formatable object |
+| [NdefFormatable](NdefFormatable.md)! | NDEF formatable object |
 
 ### getTag
 
@@ -162,7 +162,7 @@ fun getTag(): Tag!
 
 | Return ||
 |------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Tag](../android/nfc/Tag.md)! | the [Tag](../android/nfc/Tag.md) backing this [TagTechnology](../android/nfc/tech/TagTechnology.md) object. |
+| [Tag](../android.nfc/Tag.md)! | the [Tag](../android.nfc/Tag.md) backing this [TagTechnology](TagTechnology.md) object. |
 
 ### isConnected
 

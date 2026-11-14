@@ -8,7 +8,7 @@ class EapSessionConfig
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.eap.EapSessionConfig](../android/net/eap/EapSessionConfig.md) |
+| ↳ | [android.net.eap.EapSessionConfig](EapSessionConfig.md) |
 
 EapSessionConfig represents a container for EAP method configuration.
 

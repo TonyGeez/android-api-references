@@ -8,15 +8,15 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface PrivilegedExceptionAction<T : Any!>
 ```
 
-| [java.security.PrivilegedExceptionAction](../java/security/PrivilegedExceptionAction.md) |
+| [java.security.PrivilegedExceptionAction](PrivilegedExceptionAction.md) |
 
-Android doesn't support [SecurityManager](../java/lang/SecurityManager.md). Do not use this class.
+Android doesn't support [SecurityManager](../java.lang/SecurityManager.md). Do not use this class.
 
 ## Summary
 
 | Public methods ||
 |-----------|----------------------------------------------------------------------------------------------------------------|
-| abstractT | [run](../java/security/PrivilegedExceptionAction.md))`()` <br /> |
+| abstractT | [run](PrivilegedExceptionAction.md))`()` <br /> |
 
 ## Public methods
 

@@ -9,12 +9,12 @@ open class AliasActivity : Activity
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](../android/content/Context.md) |||||
-| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) ||||
-| | | ↳ | [android.view.ContextThemeWrapper](../android/view/ContextThemeWrapper.md) |||
+| ↳ | [android.content.Context](../android.content/Context.md) |||||
+| | ↳ | [android.content.ContextWrapper](../android.content/ContextWrapper.md) ||||
+| | | ↳ | [android.view.ContextThemeWrapper](../android.view/ContextThemeWrapper.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.app.Activity](../android/app/Activity.md) ||
-| | | | | ↳ | [android.app.AliasActivity](../android/app/AliasActivity.md) |
+| | | | ↳ | [android.app.Activity](Activity.md) ||
+| | | | | ↳ | [android.app.AliasActivity](AliasActivity.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 30.**
@@ -4891,4 +4891,4 @@ If you override this method you *must* call through to the superclass implementa
 
 | Parameters ||
 |---|---|
-| `savedInstanceState` | [Bundle](../android/os/Bundle.md)?: If the activity is being re-initialized after previously being shut down then this Bundle contains the data it most recently supplied in #onSaveInstanceState. ***Note: Otherwise it is null.*** |
+| `savedInstanceState` | [Bundle](../android.os/Bundle.md)?: If the activity is being re-initialized after previously being shut down then this Bundle contains the data it most recently supplied in #onSaveInstanceState. ***Note: Otherwise it is null.*** |

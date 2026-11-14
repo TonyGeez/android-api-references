@@ -4,7 +4,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # SetSchemaRequest
 
-Kotlin| [Java](../android/app/appsearch/SetSchemaRequest.md) 
+Kotlin| [Java](SetSchemaRequest.md) 
 | --- | --- |
 
 ```
@@ -13,26 +13,26 @@ class SetSchemaRequest
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.appsearch.SetSchemaRequest](../android/app/appsearch/SetSchemaRequest.md) |
+| ↳ | [android.app.appsearch.SetSchemaRequest](SetSchemaRequest.md) |
 
-Encapsulates a request to update the schema of an [AppSearchSession](../android/app/appsearch/AppSearchSession.md) database.
+Encapsulates a request to update the schema of an [AppSearchSession](AppSearchSession.md) database.
 
-The schema is composed of a collection of [AppSearchSchema](../android/app/appsearch/AppSearchSchema.md) objects, each of which defines a unique type of data.
+The schema is composed of a collection of [AppSearchSchema](AppSearchSchema.md) objects, each of which defines a unique type of data.
 
-The first call to SetSchemaRequest will set the provided schema and store it within the [AppSearchSession](../android/app/appsearch/AppSearchSession.md) database.
+The first call to SetSchemaRequest will set the provided schema and store it within the [AppSearchSession](AppSearchSession.md) database.
 
 Subsequent calls will compare the provided schema to the previously saved schema, to determine how to treat existing documents.
 
 The following types of schema modifications are always safe and are made without deleting any existing documents:
 
-- Addition of new [AppSearchSchema](../android/app/appsearch/AppSearchSchema.md) types
-- Addition of new properties to an existing [AppSearchSchema](../android/app/appsearch/AppSearchSchema.md) type
+- Addition of new [AppSearchSchema](AppSearchSchema.md) types
+- Addition of new properties to an existing [AppSearchSchema](AppSearchSchema.md) type
 - Changing the cardinality of a property to be less restrictive
 
 The following types of schema changes are not backwards compatible:
 
-- Removal of an existing [AppSearchSchema](../android/app/appsearch/AppSearchSchema.md) type
-- Removal of a property from an existing [AppSearchSchema](../android/app/appsearch/AppSearchSchema.md) type
+- Removal of an existing [AppSearchSchema](AppSearchSchema.md) type
+- Removal of a property from an existing [AppSearchSchema](AppSearchSchema.md) type
 - Changing the data type of an existing property
 - Changing the cardinality of a property to be more restrictive
 
@@ -41,41 +41,41 @@ Providing a schema with incompatible changes, will throw an , with a message des
 Backward incompatible changes can be made by :
 
 - setting [SetSchemaRequest.Builder.setForceOverride](../android/app/appsearch/SetSchemaRequest.Builder.md))method to`true`. This deletes all documents that are incompatible with the new schema. The new schema is then saved and persisted to disk.
-- Add a [Migrator](../android/app/appsearch/Migrator.md) for each incompatible type and make no deletion. The migrator will migrate documents from its old schema version to the new version. Migrated types will be set into both [SetSchemaResponse.getIncompatibleTypes()](../android/app/appsearch/SetSchemaResponse.md))and [android.app.appsearch.SetSchemaResponse#getMigratedTypes()](../android/app/appsearch/SetSchemaResponse.md)). See the migration section below.
+- Add a [Migrator](Migrator.md) for each incompatible type and make no deletion. The migrator will migrate documents from its old schema version to the new version. Migrated types will be set into both [SetSchemaResponse.getIncompatibleTypes()](SetSchemaResponse.md))and [android.app.appsearch.SetSchemaResponse#getMigratedTypes()](SetSchemaResponse.md)). See the migration section below.
 
 ## Summary
 
 | Nested classes ||
 |---|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](../android/app/appsearch/SetSchemaRequest.Builder.md) Builder for [SetSchemaRequest](../android/app/appsearch/SetSchemaRequest.md) objects. |
+| | [Builder](../android/app/appsearch/SetSchemaRequest.Builder.md) Builder for [SetSchemaRequest](SetSchemaRequest.md) objects. |
 
 | Constants ||
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [READ_ASSISTANT_APP_SEARCH_DATA](../android/app/appsearch/SetSchemaRequest.md) The [android.Manifest.permission#READ_ASSISTANT_APP_SEARCH_DATA](../android/Manifest.permission.md) AppSearch supported in [SetSchemaRequest.Builder.addRequiredPermissionsForSchemaTypeVisibility](../android/app/appsearch/SetSchemaRequest.Builder.md)) |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [READ_CALENDAR](../android/app/appsearch/SetSchemaRequest.md) The [android.Manifest.permission#READ_CALENDAR](../android/Manifest.permission.md) AppSearch supported in [android.app.appsearch.SetSchemaRequest.Builder#addRequiredPermissionsForSchemaTypeVisibility](../android/app/appsearch/SetSchemaRequest.Builder.md)) |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [READ_CONTACTS](../android/app/appsearch/SetSchemaRequest.md) The [android.Manifest.permission#READ_CONTACTS](../android/Manifest.permission.md) AppSearch supported in [android.app.appsearch.SetSchemaRequest.Builder#addRequiredPermissionsForSchemaTypeVisibility](../android/app/appsearch/SetSchemaRequest.Builder.md)) |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [READ_ASSISTANT_APP_SEARCH_DATA](SetSchemaRequest.md) The [android.Manifest.permission#READ_ASSISTANT_APP_SEARCH_DATA](../android/Manifest.permission.md) AppSearch supported in [SetSchemaRequest.Builder.addRequiredPermissionsForSchemaTypeVisibility](../android/app/appsearch/SetSchemaRequest.Builder.md)) |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [READ_CALENDAR](SetSchemaRequest.md) The [android.Manifest.permission#READ_CALENDAR](../android/Manifest.permission.md) AppSearch supported in [android.app.appsearch.SetSchemaRequest.Builder#addRequiredPermissionsForSchemaTypeVisibility](../android/app/appsearch/SetSchemaRequest.Builder.md)) |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [READ_CONTACTS](SetSchemaRequest.md) The [android.Manifest.permission#READ_CONTACTS](../android/Manifest.permission.md) AppSearch supported in [android.app.appsearch.SetSchemaRequest.Builder#addRequiredPermissionsForSchemaTypeVisibility](../android/app/appsearch/SetSchemaRequest.Builder.md)) |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [READ_EXTERNAL_STORAGE](../android/app/appsearch/SetSchemaRequest.md) The [android.Manifest.permission#READ_EXTERNAL_STORAGE](../android/Manifest.permission.md) AppSearch supported in [android.app.appsearch.SetSchemaRequest.Builder#addRequiredPermissionsForSchemaTypeVisibility](../android/app/appsearch/SetSchemaRequest.Builder.md)) |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [READ_HOME_APP_SEARCH_DATA](../android/app/appsearch/SetSchemaRequest.md) The [android.Manifest.permission#READ_HOME_APP_SEARCH_DATA](../android/Manifest.permission.md) AppSearch supported in [SetSchemaRequest.Builder.addRequiredPermissionsForSchemaTypeVisibility](../android/app/appsearch/SetSchemaRequest.Builder.md)) |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [READ_SMS](../android/app/appsearch/SetSchemaRequest.md) The [android.Manifest.permission#READ_SMS](../android/Manifest.permission.md) AppSearch supported in [android.app.appsearch.SetSchemaRequest.Builder#addRequiredPermissionsForSchemaTypeVisibility](../android/app/appsearch/SetSchemaRequest.Builder.md)) |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [READ_EXTERNAL_STORAGE](SetSchemaRequest.md) The [android.Manifest.permission#READ_EXTERNAL_STORAGE](../android/Manifest.permission.md) AppSearch supported in [android.app.appsearch.SetSchemaRequest.Builder#addRequiredPermissionsForSchemaTypeVisibility](../android/app/appsearch/SetSchemaRequest.Builder.md)) |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [READ_HOME_APP_SEARCH_DATA](SetSchemaRequest.md) The [android.Manifest.permission#READ_HOME_APP_SEARCH_DATA](../android/Manifest.permission.md) AppSearch supported in [SetSchemaRequest.Builder.addRequiredPermissionsForSchemaTypeVisibility](../android/app/appsearch/SetSchemaRequest.Builder.md)) |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [READ_SMS](SetSchemaRequest.md) The [android.Manifest.permission#READ_SMS](../android/Manifest.permission.md) AppSearch supported in [android.app.appsearch.SetSchemaRequest.Builder#addRequiredPermissionsForSchemaTypeVisibility](../android/app/appsearch/SetSchemaRequest.Builder.md)) |
 | --- | --- |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/app/appsearch/SetSchemaRequest.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Migrator](../android/app/appsearch/Migrator.md)!\> | [getMigrators](../android/app/appsearch/SetSchemaRequest.md))`()` Returns the map of [Migrator](../android/app/appsearch/Migrator.md), the key will be the schema type of the [Migrator](../android/app/appsearch/Migrator.md) associated with. |
-| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [PackageIdentifier](../android/app/appsearch/PackageIdentifier.md)!\> | [getPubliclyVisibleSchemas](../android/app/appsearch/SetSchemaRequest.md))`()` Returns a mapping of publicly visible schemas to the [PackageIdentifier](../android/app/appsearch/PackageIdentifier.md) specifying the package the schemas are from. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](SetSchemaRequest.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Migrator](Migrator.md)!\> | [getMigrators](SetSchemaRequest.md))`()` Returns the map of [Migrator](Migrator.md), the key will be the schema type of the [Migrator](Migrator.md) associated with. |
+| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [PackageIdentifier](PackageIdentifier.md)!\> | [getPubliclyVisibleSchemas](SetSchemaRequest.md))`()` Returns a mapping of publicly visible schemas to the [PackageIdentifier](PackageIdentifier.md) specifying the package the schemas are from. |
 | --- | --- |
-| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>!\>!\> | [getRequiredPermissionsForSchemaTypeVisibility](../android/app/appsearch/SetSchemaRequest.md))`()` Returns a mapping of schema types to the Map of [android.Manifest.permission](../android/Manifest.permission.md) combinations that querier must hold to access that schema type. |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [AppSearchSchema](../android/app/appsearch/AppSearchSchema.md)!\> | [getSchemas](../android/app/appsearch/SetSchemaRequest.md))`()` Returns the [AppSearchSchema](../android/app/appsearch/AppSearchSchema.md) types that are part of this request. |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getSchemasNotDisplayedBySystem](../android/app/appsearch/SetSchemaRequest.md))`()` Returns all the schema types that are opted out of being displayed and visible on any system UI surface. |
+| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>!\>!\> | [getRequiredPermissionsForSchemaTypeVisibility](SetSchemaRequest.md))`()` Returns a mapping of schema types to the Map of [android.Manifest.permission](../android/Manifest.permission.md) combinations that querier must hold to access that schema type. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [AppSearchSchema](AppSearchSchema.md)!\> | [getSchemas](SetSchemaRequest.md))`()` Returns the [AppSearchSchema](AppSearchSchema.md) types that are part of this request. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getSchemasNotDisplayedBySystem](SetSchemaRequest.md))`()` Returns all the schema types that are opted out of being displayed and visible on any system UI surface. |
 | --- | --- |
-| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [SchemaVisibilityConfig](../android/app/appsearch/SchemaVisibilityConfig.md)!\>!\> | [getSchemasVisibleToConfigs](../android/app/appsearch/SetSchemaRequest.md))`()` Returns a mapping of schema types to the set of [SchemaVisibilityConfig](../android/app/appsearch/SchemaVisibilityConfig.md) that have access to that schema type. |
-| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [PackageIdentifier](../android/app/appsearch/PackageIdentifier.md)!\>!\> | [getSchemasVisibleToPackages](../android/app/appsearch/SetSchemaRequest.md))`()` Returns a mapping of schema types to the set of packages that have access to that schema type. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getVersion](../android/app/appsearch/SetSchemaRequest.md))`()` Returns the database overall schema version. |
+| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [SchemaVisibilityConfig](SchemaVisibilityConfig.md)!\>!\> | [getSchemasVisibleToConfigs](SetSchemaRequest.md))`()` Returns a mapping of schema types to the set of [SchemaVisibilityConfig](SchemaVisibilityConfig.md) that have access to that schema type. |
+| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [PackageIdentifier](PackageIdentifier.md)!\>!\> | [getSchemasVisibleToPackages](SetSchemaRequest.md))`()` Returns a mapping of schema types to the set of packages that have access to that schema type. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getVersion](SetSchemaRequest.md))`()` Returns the database overall schema version. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/app/appsearch/SetSchemaRequest.md))`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isForceOverride](../android/app/appsearch/SetSchemaRequest.md))`()` Returns whether this request will force the schema to be overridden. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](SetSchemaRequest.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isForceOverride](SetSchemaRequest.md))`()` Returns whether this request will force the schema to be overridden. |
 
 ## Constants
 
@@ -196,11 +196,11 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 fun getMigrators(): MutableMap<String!, Migrator!>
 ```
 
-Returns the map of [Migrator](../android/app/appsearch/Migrator.md), the key will be the schema type of the [Migrator](../android/app/appsearch/Migrator.md) associated with.
+Returns the map of [Migrator](Migrator.md), the key will be the schema type of the [Migrator](Migrator.md) associated with.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [Migrator](../android/app/appsearch/Migrator.md)!> | This value cannot be`null`. |
+| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [Migrator](Migrator.md)!> | This value cannot be`null`. |
 
 ### getPubliclyVisibleSchemas
 
@@ -211,11 +211,11 @@ Also in [T Extensions 13](https://developer.android.com/sdkExtensions)
 fun getPubliclyVisibleSchemas(): MutableMap<String!, PackageIdentifier!>
 ```
 
-Returns a mapping of publicly visible schemas to the [PackageIdentifier](../android/app/appsearch/PackageIdentifier.md) specifying the package the schemas are from.
+Returns a mapping of publicly visible schemas to the [PackageIdentifier](PackageIdentifier.md) specifying the package the schemas are from.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [PackageIdentifier](../android/app/appsearch/PackageIdentifier.md)!> | This value cannot be`null`. |
+| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [PackageIdentifier](PackageIdentifier.md)!> | This value cannot be`null`. |
 
 ### getRequiredPermissionsForSchemaTypeVisibility
 
@@ -228,7 +228,7 @@ fun getRequiredPermissionsForSchemaTypeVisibility(): MutableMap<String!, Mutabl
 
 Returns a mapping of schema types to the Map of [android.Manifest.permission](../android/Manifest.permission.md) combinations that querier must hold to access that schema type.
 
-The querier could read the [GenericDocument](../android/app/appsearch/GenericDocument.md) objects under the`schemaType`if they holds ALL required permissions of ANY of the individual value sets.
+The querier could read the [GenericDocument](GenericDocument.md) objects under the`schemaType`if they holds ALL required permissions of ANY of the individual value sets.
 
 For example, if the Map contains`{{permissionA, PermissionB}, {PermissionC, PermissionD}, {PermissionE}}`.
 
@@ -243,7 +243,7 @@ It's inefficient to call this method repeatedly.
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!>!>!> | The map contains schema type and all combinations of required permission for querier to access it. The supported Permission are [SetSchemaRequest.READ_SMS](../android/app/appsearch/SetSchemaRequest.md), [android.app.appsearch.SetSchemaRequest#READ_CALENDAR](../android/app/appsearch/SetSchemaRequest.md), [SetSchemaRequest.READ_CONTACTS](../android/app/appsearch/SetSchemaRequest.md), [android.app.appsearch.SetSchemaRequest#READ_EXTERNAL_STORAGE](../android/app/appsearch/SetSchemaRequest.md), [android.app.appsearch.SetSchemaRequest#READ_HOME_APP_SEARCH_DATA](../android/app/appsearch/SetSchemaRequest.md) and [android.app.appsearch.SetSchemaRequest#READ_ASSISTANT_APP_SEARCH_DATA](../android/app/appsearch/SetSchemaRequest.md). This value cannot be`null`. |
+| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!>!>!> | The map contains schema type and all combinations of required permission for querier to access it. The supported Permission are [SetSchemaRequest.READ_SMS](SetSchemaRequest.md), [android.app.appsearch.SetSchemaRequest#READ_CALENDAR](SetSchemaRequest.md), [SetSchemaRequest.READ_CONTACTS](SetSchemaRequest.md), [android.app.appsearch.SetSchemaRequest#READ_EXTERNAL_STORAGE](SetSchemaRequest.md), [android.app.appsearch.SetSchemaRequest#READ_HOME_APP_SEARCH_DATA](SetSchemaRequest.md) and [android.app.appsearch.SetSchemaRequest#READ_ASSISTANT_APP_SEARCH_DATA](SetSchemaRequest.md). This value cannot be`null`. |
 
 ### getSchemas
 
@@ -253,11 +253,11 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 fun getSchemas(): MutableSet<AppSearchSchema!>
 ```
 
-Returns the [AppSearchSchema](../android/app/appsearch/AppSearchSchema.md) types that are part of this request.
+Returns the [AppSearchSchema](AppSearchSchema.md) types that are part of this request.
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [AppSearchSchema](../android/app/appsearch/AppSearchSchema.md)!> | This value cannot be`null`. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [AppSearchSchema](AppSearchSchema.md)!> | This value cannot be`null`. |
 
 ### getSchemasNotDisplayedBySystem
 
@@ -282,13 +282,13 @@ Also in [T Extensions 13](https://developer.android.com/sdkExtensions)
 fun getSchemasVisibleToConfigs(): MutableMap<String!, MutableSet<SchemaVisibilityConfig!>!>
 ```
 
-Returns a mapping of schema types to the set of [SchemaVisibilityConfig](../android/app/appsearch/SchemaVisibilityConfig.md) that have access to that schema type.
+Returns a mapping of schema types to the set of [SchemaVisibilityConfig](SchemaVisibilityConfig.md) that have access to that schema type.
 
 It's inefficient to call this method repeatedly.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [SchemaVisibilityConfig](../android/app/appsearch/SchemaVisibilityConfig.md)!>!> | This value cannot be`null`. |
+| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [SchemaVisibilityConfig](SchemaVisibilityConfig.md)!>!> | This value cannot be`null`. |
 
 **See Also**
 
@@ -308,7 +308,7 @@ It's inefficient to call this method repeatedly.
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [PackageIdentifier](../android/app/appsearch/PackageIdentifier.md)!>!> | This value cannot be`null`. |
+| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [PackageIdentifier](PackageIdentifier.md)!>!> | This value cannot be`null`. |
 
 ### getVersion
 

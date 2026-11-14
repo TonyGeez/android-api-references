@@ -10,7 +10,7 @@ open class RSAPublicKeySpec : KeySpec
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.spec.RSAPublicKeySpec](../java/security/spec/RSAPublicKeySpec.md) |
+| ↳ | [java.security.spec.RSAPublicKeySpec](RSAPublicKeySpec.md) |
 
 This class specifies an RSA public key.
 
@@ -18,14 +18,14 @@ This class specifies an RSA public key.
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [RSAPublicKeySpec](../java/security/spec/RSAPublicKeySpec.md))`(`modulus:` ` [BigInteger](../java/math/BigInteger.md)!`, `publicExponent:` ` [BigInteger](../java/math/BigInteger.md)!`)` Creates a new RSAPublicKeySpec. |
-| [RSAPublicKeySpec](../java/security/spec/RSAPublicKeySpec.md))`(`modulus:` ` [BigInteger](../java/math/BigInteger.md)!`, `publicExponent:` ` [BigInteger](../java/math/BigInteger.md)!`, `params:` ` [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)!`)` Creates a new RSAPublicKeySpec with additional key parameters. |
+| [RSAPublicKeySpec](RSAPublicKeySpec.md))`(`modulus:` ` [BigInteger](../java.math/BigInteger.md)!`, `publicExponent:` ` [BigInteger](../java.math/BigInteger.md)!`)` Creates a new RSAPublicKeySpec. |
+| [RSAPublicKeySpec](RSAPublicKeySpec.md))`(`modulus:` ` [BigInteger](../java.math/BigInteger.md)!`, `publicExponent:` ` [BigInteger](../java.math/BigInteger.md)!`, `params:` ` [AlgorithmParameterSpec](AlgorithmParameterSpec.md)!`)` Creates a new RSAPublicKeySpec with additional key parameters. |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [BigInteger](../java/math/BigInteger.md)! | [getModulus](../java/security/spec/RSAPublicKeySpec.md))`()` Returns the modulus. |
-| open [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)! | [getParams](../java/security/spec/RSAPublicKeySpec.md))`()` Returns the parameters associated with this key, may be null if not present. |
-| open [BigInteger](../java/math/BigInteger.md)! | [getPublicExponent](../java/security/spec/RSAPublicKeySpec.md))`()` Returns the public exponent. |
+| open [BigInteger](../java.math/BigInteger.md)! | [getModulus](RSAPublicKeySpec.md))`()` Returns the modulus. |
+| open [AlgorithmParameterSpec](AlgorithmParameterSpec.md)! | [getParams](RSAPublicKeySpec.md))`()` Returns the parameters associated with this key, may be null if not present. |
+| open [BigInteger](../java.math/BigInteger.md)! | [getPublicExponent](RSAPublicKeySpec.md))`()` Returns the public exponent. |
 | --- | --- |
 
 ## Public constructors
@@ -44,8 +44,8 @@ Creates a new RSAPublicKeySpec.
 
 | Parameters ||
 |------------------|--------------------------------------------------------------------------------------------------------------|
-| `modulus` | [BigInteger](../java/math/BigInteger.md)!:the modulus |
-| `publicExponent` | [BigInteger](../java/math/BigInteger.md)!:the public exponent |
+| `modulus` | [BigInteger](../java.math/BigInteger.md)!:the modulus |
+| `publicExponent` | [BigInteger](../java.math/BigInteger.md)!:the public exponent |
 
 ### RSAPublicKeySpec
 
@@ -62,9 +62,9 @@ Creates a new RSAPublicKeySpec with additional key parameters.
 
 | Parameters ||
 |------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `modulus` | [BigInteger](../java/math/BigInteger.md)!:the modulus |
-| `publicExponent` | [BigInteger](../java/math/BigInteger.md)!:the public exponent |
-| `params` | [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)!:the parameters associated with this key, may be null |
+| `modulus` | [BigInteger](../java.math/BigInteger.md)!:the modulus |
+| `publicExponent` | [BigInteger](../java.math/BigInteger.md)!:the public exponent |
+| `params` | [AlgorithmParameterSpec](AlgorithmParameterSpec.md)!:the parameters associated with this key, may be null |
 | --- | --- |
 
 ## Public methods
@@ -81,7 +81,7 @@ Returns the modulus.
 
 | Return ||
 |------------------------------------------------------------------------------------------|-------------|
-| [BigInteger](../java/math/BigInteger.md)! | the modulus |
+| [BigInteger](../java.math/BigInteger.md)! | the modulus |
 
 ### getParams
 
@@ -95,7 +95,7 @@ Returns the parameters associated with this key, may be null if not present.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------|-----------------------------------------|
-| [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)! | the parameters associated with this key |
+| [AlgorithmParameterSpec](AlgorithmParameterSpec.md)! | the parameters associated with this key |
 
 ### getPublicExponent
 
@@ -109,4 +109,4 @@ Returns the public exponent.
 
 | Return ||
 |------------------------------------------------------------------------------------------|---------------------|
-| [BigInteger](../java/math/BigInteger.md)! | the public exponent |
+| [BigInteger](../java.math/BigInteger.md)! | the public exponent |

@@ -2,7 +2,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # Signature
 
-Kotlin | [Java](../android/content/pm/Signature.md)
+Kotlin | [Java](Signature.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ open class Signature : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.content.pm.Signature](../android/content/pm/Signature.md) |
+| ↳ | [android.content.pm.Signature](Signature.md) |
 
 Opaque, immutable representation of a signing certificate associated with an application package.
 
@@ -43,7 +43,7 @@ This class name is slightly misleading, since it's not actually a signature.
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [Signature](../android/content/pm/Signature.md)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/Signature#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [Signature](Signature.md)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/Signature#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public constructors
 
@@ -208,7 +208,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

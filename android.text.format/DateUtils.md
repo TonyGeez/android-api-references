@@ -4,7 +4,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 
 # DateUtils
 
-Kotlin| [Java](../android/text/format/DateUtils.md) 
+Kotlin| [Java](DateUtils.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class DateUtils
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.text.format.DateUtils](../android/text/format/DateUtils.md) |
+| ↳ | [android.text.format.DateUtils](DateUtils.md) |
 
 This class contains various date-related utilities for creating text for things like elapsed time and date ranges, strings for days of the week and months, and AM/PM text etc.
 
@@ -21,96 +21,96 @@ This class contains various date-related utilities for creating text for things 
 
 | Constants ||
 |----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ABBREV_MONTH_FORMAT](../android/text/format/DateUtils.md) This is not actually a useful month name in all locales. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ABBREV_WEEKDAY_FORMAT](../android/text/format/DateUtils.md) <br /> |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [DAY_IN_MILLIS](../android/text/format/DateUtils.md) <br /> |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ABBREV_MONTH_FORMAT](DateUtils.md) This is not actually a useful month name in all locales. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ABBREV_WEEKDAY_FORMAT](DateUtils.md) <br /> |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [DAY_IN_MILLIS](DateUtils.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_12HOUR](../android/text/format/DateUtils.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_24HOUR](../android/text/format/DateUtils.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_ABBREV_ALL](../android/text/format/DateUtils.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_12HOUR](DateUtils.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_24HOUR](DateUtils.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_ABBREV_ALL](DateUtils.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_ABBREV_MONTH](../android/text/format/DateUtils.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_ABBREV_RELATIVE](../android/text/format/DateUtils.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_ABBREV_TIME](../android/text/format/DateUtils.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_ABBREV_MONTH](DateUtils.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_ABBREV_RELATIVE](DateUtils.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_ABBREV_TIME](DateUtils.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_ABBREV_WEEKDAY](../android/text/format/DateUtils.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_CAP_AMPM](../android/text/format/DateUtils.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_CAP_MIDNIGHT](../android/text/format/DateUtils.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_ABBREV_WEEKDAY](DateUtils.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_CAP_AMPM](DateUtils.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_CAP_MIDNIGHT](DateUtils.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_CAP_NOON](../android/text/format/DateUtils.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_CAP_NOON_MIDNIGHT](../android/text/format/DateUtils.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_NO_MIDNIGHT](../android/text/format/DateUtils.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_CAP_NOON](DateUtils.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_CAP_NOON_MIDNIGHT](DateUtils.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_NO_MIDNIGHT](DateUtils.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_NO_MONTH_DAY](../android/text/format/DateUtils.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_NO_NOON](../android/text/format/DateUtils.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_NO_NOON_MIDNIGHT](../android/text/format/DateUtils.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_NO_MONTH_DAY](DateUtils.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_NO_NOON](DateUtils.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_NO_NOON_MIDNIGHT](DateUtils.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_NO_YEAR](../android/text/format/DateUtils.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_NUMERIC_DATE](../android/text/format/DateUtils.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_SHOW_DATE](../android/text/format/DateUtils.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_NO_YEAR](DateUtils.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_NUMERIC_DATE](DateUtils.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_SHOW_DATE](DateUtils.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_SHOW_TIME](../android/text/format/DateUtils.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_SHOW_WEEKDAY](../android/text/format/DateUtils.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_SHOW_YEAR](../android/text/format/DateUtils.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_SHOW_TIME](DateUtils.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_SHOW_WEEKDAY](DateUtils.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_SHOW_YEAR](DateUtils.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_UTC](../android/text/format/DateUtils.md) <br /> |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [HOUR_IN_MILLIS](../android/text/format/DateUtils.md) <br /> |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [HOUR_MINUTE_24](../android/text/format/DateUtils.md) This is not actually the preferred 24-hour date format in all locales. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT_UTC](DateUtils.md) <br /> |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [HOUR_IN_MILLIS](DateUtils.md) <br /> |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [HOUR_MINUTE_24](DateUtils.md) This is not actually the preferred 24-hour date format in all locales. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LENGTH_LONG](../android/text/format/DateUtils.md) Request the full spelled-out name. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LENGTH_MEDIUM](../android/text/format/DateUtils.md) Request an abbreviated version of the name. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LENGTH_SHORT](../android/text/format/DateUtils.md) Request a shorter abbreviated version of the name. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LENGTH_LONG](DateUtils.md) Request the full spelled-out name. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LENGTH_MEDIUM](DateUtils.md) Request an abbreviated version of the name. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LENGTH_SHORT](DateUtils.md) Request a shorter abbreviated version of the name. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LENGTH_SHORTER](../android/text/format/DateUtils.md) Request an even shorter abbreviated version of the name. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LENGTH_SHORTEST](../android/text/format/DateUtils.md) Request an even shorter abbreviated version of the name. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [MINUTE_IN_MILLIS](../android/text/format/DateUtils.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LENGTH_SHORTER](DateUtils.md) Request an even shorter abbreviated version of the name. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LENGTH_SHORTEST](DateUtils.md) Request an even shorter abbreviated version of the name. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [MINUTE_IN_MILLIS](DateUtils.md) <br /> |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [MONTH_DAY_FORMAT](../android/text/format/DateUtils.md) <br /> |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [MONTH_FORMAT](../android/text/format/DateUtils.md) <br /> |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [NUMERIC_MONTH_FORMAT](../android/text/format/DateUtils.md) <br /> |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [MONTH_DAY_FORMAT](DateUtils.md) <br /> |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [MONTH_FORMAT](DateUtils.md) <br /> |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [NUMERIC_MONTH_FORMAT](DateUtils.md) <br /> |
 | --- | --- |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [SECOND_IN_MILLIS](../android/text/format/DateUtils.md) <br /> |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [WEEKDAY_FORMAT](../android/text/format/DateUtils.md) <br /> |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [WEEK_IN_MILLIS](../android/text/format/DateUtils.md) <br /> |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [SECOND_IN_MILLIS](DateUtils.md) <br /> |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [WEEKDAY_FORMAT](DateUtils.md) <br /> |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [WEEK_IN_MILLIS](DateUtils.md) <br /> |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [YEAR_FORMAT](../android/text/format/DateUtils.md) <br /> |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [YEAR_FORMAT_TWO_DIGITS](../android/text/format/DateUtils.md) <br /> |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [YEAR_IN_MILLIS](../android/text/format/DateUtils.md) <br /> |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [YEAR_FORMAT](DateUtils.md) <br /> |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [YEAR_FORMAT_TWO_DIGITS](DateUtils.md) <br /> |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [YEAR_IN_MILLIS](DateUtils.md) <br /> |
 | --- | --- |
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------|---|
-| [DateUtils](../android/text/format/DateUtils.md))`()` <br /> |
+| [DateUtils](DateUtils.md))`()` <br /> |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [Formatter](../java/util/Formatter.md)! | [formatDateRange](../android/text/format/DateUtils.md))`(`context:` ` [Context](../android/content/Context.md)!`, `formatter:` ` [Formatter](../java/util/Formatter.md)!`, `startMillis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `endMillis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Formats a date or a time range according to the local conventions. |
-| openstatic [Formatter](../java/util/Formatter.md)! | [formatDateRange](../android/text/format/DateUtils.md))`(`context:` ` [Context](../android/content/Context.md)!`, `formatter:` ` [Formatter](../java/util/Formatter.md)!`, `startMillis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `endMillis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `timeZone:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Formats a date or a time range according to the local conventions. |
-| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [formatDateRange](../android/text/format/DateUtils.md))`(`context:` ` [Context](../android/content/Context.md)!`, `startMillis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `endMillis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Formats a date or a time range according to the local conventions. |
+| openstatic [Formatter](../java.util/Formatter.md)! | [formatDateRange](DateUtils.md))`(`context:` ` [Context](../android.content/Context.md)!`, `formatter:` ` [Formatter](../java.util/Formatter.md)!`, `startMillis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `endMillis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Formats a date or a time range according to the local conventions. |
+| openstatic [Formatter](../java.util/Formatter.md)! | [formatDateRange](DateUtils.md))`(`context:` ` [Context](../android.content/Context.md)!`, `formatter:` ` [Formatter](../java.util/Formatter.md)!`, `startMillis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `endMillis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `timeZone:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Formats a date or a time range according to the local conventions. |
+| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [formatDateRange](DateUtils.md))`(`context:` ` [Context](../android.content/Context.md)!`, `startMillis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `endMillis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Formats a date or a time range according to the local conventions. |
 | --- | --- |
-| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [formatDateTime](../android/text/format/DateUtils.md))`(`context:` ` [Context](../android/content/Context.md)!`, `millis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Formats a date or a time according to the local conventions. |
-| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [formatElapsedTime](../android/text/format/DateUtils.md))`(`recycle:` ` [StringBuilder](../java/lang/StringBuilder.md)!`, `elapsedSeconds:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Formats an elapsed time in a format like "MM:SS" or "H:MM:SS" (using a form suited to the current locale), similar to that used on the call-in-progress screen. |
-| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [formatElapsedTime](../android/text/format/DateUtils.md))`(`elapsedSeconds:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Formats an elapsed time in the form "MM:SS" or "H:MM:SS" for display on the call-in-progress screen. |
+| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [formatDateTime](DateUtils.md))`(`context:` ` [Context](../android.content/Context.md)!`, `millis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Formats a date or a time according to the local conventions. |
+| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [formatElapsedTime](DateUtils.md))`(`recycle:` ` [StringBuilder](../java.lang/StringBuilder.md)!`, `elapsedSeconds:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Formats an elapsed time in a format like "MM:SS" or "H:MM:SS" (using a form suited to the current locale), similar to that used on the call-in-progress screen. |
+| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [formatElapsedTime](DateUtils.md))`(`elapsedSeconds:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Formats an elapsed time in the form "MM:SS" or "H:MM:SS" for display on the call-in-progress screen. |
 | --- | --- |
-| static [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [formatSameDayTime](../android/text/format/DateUtils.md))`(`then:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `now:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `dateStyle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `timeStyle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Format a date / time such that if the then is on the same day as now, it shows just the time and if it's a different day, it shows just the date. |
-| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAMPMString](../android/text/format/DateUtils.md))`(`ampm:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return a localized string for AM or PM. |
-| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDayOfWeekString](../android/text/format/DateUtils.md))`(`dayOfWeek:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `abbrev:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return a string for the day of the week. |
+| static [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [formatSameDayTime](DateUtils.md))`(`then:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `now:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `dateStyle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `timeStyle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Format a date / time such that if the then is on the same day as now, it shows just the time and if it's a different day, it shows just the date. |
+| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAMPMString](DateUtils.md))`(`ampm:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return a localized string for AM or PM. |
+| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDayOfWeekString](DateUtils.md))`(`dayOfWeek:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `abbrev:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return a string for the day of the week. |
 | --- | --- |
-| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getMonthString](../android/text/format/DateUtils.md))`(`month:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `abbrev:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return a localized string for the month of the year. |
-| openstatic [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [getRelativeDateTimeString](../android/text/format/DateUtils.md))`(`c:` ` [Context](../android/content/Context.md)!`, `time:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `minResolution:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `transitionResolution:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return string describing the elapsed time since startTime formatted like "\[relative time/date\], \[time\]". |
-| openstatic [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [getRelativeTimeSpanString](../android/text/format/DateUtils.md))`(`c:` ` [Context](../android/content/Context.md)!`, `millis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Convenience function to return relative time string without preposition. |
+| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getMonthString](DateUtils.md))`(`month:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `abbrev:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return a localized string for the month of the year. |
+| openstatic [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [getRelativeDateTimeString](DateUtils.md))`(`c:` ` [Context](../android.content/Context.md)!`, `time:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `minResolution:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `transitionResolution:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return string describing the elapsed time since startTime formatted like "\[relative time/date\], \[time\]". |
+| openstatic [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [getRelativeTimeSpanString](DateUtils.md))`(`c:` ` [Context](../android.content/Context.md)!`, `millis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Convenience function to return relative time string without preposition. |
 | --- | --- |
-| openstatic [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [getRelativeTimeSpanString](../android/text/format/DateUtils.md))`(`c:` ` [Context](../android/content/Context.md)!`, `millis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `withPreposition:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` <br /> |
-| openstatic [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [getRelativeTimeSpanString](../android/text/format/DateUtils.md))`(`startTime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a string describing the elapsed time since startTime. |
-| openstatic [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [getRelativeTimeSpanString](../android/text/format/DateUtils.md))`(`time:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `now:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `minResolution:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a string describing 'time' as a time relative to 'now'. |
+| openstatic [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [getRelativeTimeSpanString](DateUtils.md))`(`c:` ` [Context](../android.content/Context.md)!`, `millis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `withPreposition:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` <br /> |
+| openstatic [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [getRelativeTimeSpanString](DateUtils.md))`(`startTime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a string describing the elapsed time since startTime. |
+| openstatic [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [getRelativeTimeSpanString](DateUtils.md))`(`time:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `now:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `minResolution:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a string describing 'time' as a time relative to 'now'. |
 | --- | --- |
-| openstatic [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [getRelativeTimeSpanString](../android/text/format/DateUtils.md))`(`time:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `now:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `minResolution:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a string describing 'time' as a time relative to 'now'. |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isToday](../android/text/format/DateUtils.md))`(`when:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` <br /> |
+| openstatic [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [getRelativeTimeSpanString](DateUtils.md))`(`time:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `now:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `minResolution:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a string describing 'time' as a time relative to 'now'. |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isToday](DateUtils.md))`(`when:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` <br /> |
 
 | Properties ||
 |----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
-| static [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | [sameMonthTable](../android/text/format/DateUtils.md) <br /> |
-| static [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | [sameYearTable](../android/text/format/DateUtils.md) <br /> |
+| static [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | [sameMonthTable](DateUtils.md) <br /> |
+| static [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | [sameYearTable](DateUtils.md) <br /> |
 
 ## Constants
 
@@ -123,7 +123,7 @@ Deprecated in [API level 17](https://developer.android.com/guide/topics/manifest
 static val ABBREV_MONTH_FORMAT: String
 ```
 
-**Deprecated:** *Use [java.text.SimpleDateFormat](../java/text/SimpleDateFormat.md) instead.*
+**Deprecated:** *Use [java.text.SimpleDateFormat](../java.text/SimpleDateFormat.md) instead.*
 
 This is not actually a useful month name in all locales. 
 
@@ -389,7 +389,7 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 static val FORMAT_UTC: Int
 ```
 
-**Deprecated:** *Use [formatDateRange](../android/text/format/DateUtils.md))and pass in [Time.TIMEZONE_UTC](../android/text/format/Time.md) for the timeZone instead.* 
+**Deprecated:** *Use [formatDateRange](DateUtils.md))and pass in [Time.TIMEZONE_UTC](Time.md) for the timeZone instead.* 
 
  Value: 8192
 
@@ -412,7 +412,7 @@ Deprecated in [API level 17](https://developer.android.com/guide/topics/manifest
 static val HOUR_MINUTE_24: String
 ```
 
-**Deprecated:** *Use [java.text.SimpleDateFormat](../java/text/SimpleDateFormat.md) instead.*
+**Deprecated:** *Use [java.text.SimpleDateFormat](../java.text/SimpleDateFormat.md) instead.*
 
 This is not actually the preferred 24-hour date format in all locales. 
 
@@ -427,9 +427,9 @@ Deprecated in [API level 17](https://developer.android.com/guide/topics/manifest
 static val LENGTH_LONG: Int
 ```
 
-**Deprecated:** *Use [java.text.SimpleDateFormat](../java/text/SimpleDateFormat.md) instead.*
+**Deprecated:** *Use [java.text.SimpleDateFormat](../java.text/SimpleDateFormat.md) instead.*
 
-Request the full spelled-out name. For use with the 'abbrev' parameter of [getDayOfWeekString](../android/text/format/DateUtils.md))and [getMonthString](../android/text/format/DateUtils.md)). 
+Request the full spelled-out name. For use with the 'abbrev' parameter of [getDayOfWeekString](DateUtils.md))and [getMonthString](DateUtils.md)). 
 
  Value: 10
 
@@ -442,9 +442,9 @@ Deprecated in [API level 17](https://developer.android.com/guide/topics/manifest
 static val LENGTH_MEDIUM: Int
 ```
 
-**Deprecated:** *Use [java.text.SimpleDateFormat](../java/text/SimpleDateFormat.md) instead.*
+**Deprecated:** *Use [java.text.SimpleDateFormat](../java.text/SimpleDateFormat.md) instead.*
 
-Request an abbreviated version of the name. For use with the 'abbrev' parameter of [getDayOfWeekString](../android/text/format/DateUtils.md))and [getMonthString](../android/text/format/DateUtils.md)). 
+Request an abbreviated version of the name. For use with the 'abbrev' parameter of [getDayOfWeekString](DateUtils.md))and [getMonthString](DateUtils.md)). 
 
  Value: 20
 
@@ -457,9 +457,9 @@ Deprecated in [API level 17](https://developer.android.com/guide/topics/manifest
 static val LENGTH_SHORT: Int
 ```
 
-**Deprecated:** *Use [java.text.SimpleDateFormat](../java/text/SimpleDateFormat.md) instead.*
+**Deprecated:** *Use [java.text.SimpleDateFormat](../java.text/SimpleDateFormat.md) instead.*
 
-Request a shorter abbreviated version of the name. For use with the 'abbrev' parameter of [getDayOfWeekString](../android/text/format/DateUtils.md))and [getMonthString](../android/text/format/DateUtils.md)). 
+Request a shorter abbreviated version of the name. For use with the 'abbrev' parameter of [getDayOfWeekString](DateUtils.md))and [getMonthString](DateUtils.md)). 
 
  Value: 30
 
@@ -472,9 +472,9 @@ Deprecated in [API level 17](https://developer.android.com/guide/topics/manifest
 static val LENGTH_SHORTER: Int
 ```
 
-**Deprecated:** *Use [java.text.SimpleDateFormat](../java/text/SimpleDateFormat.md) instead.*
+**Deprecated:** *Use [java.text.SimpleDateFormat](../java.text/SimpleDateFormat.md) instead.*
 
-Request an even shorter abbreviated version of the name. Do not use this. Currently this will always return the same result as [LENGTH_SHORT](../android/text/format/DateUtils.md). 
+Request an even shorter abbreviated version of the name. Do not use this. Currently this will always return the same result as [LENGTH_SHORT](DateUtils.md). 
 
  Value: 40
 
@@ -487,9 +487,9 @@ Deprecated in [API level 17](https://developer.android.com/guide/topics/manifest
 static val LENGTH_SHORTEST: Int
 ```
 
-**Deprecated:** *Use [java.text.SimpleDateFormat](../java/text/SimpleDateFormat.md) instead.*
+**Deprecated:** *Use [java.text.SimpleDateFormat](../java.text/SimpleDateFormat.md) instead.*
 
-Request an even shorter abbreviated version of the name. For use with the 'abbrev' parameter of [getDayOfWeekString](../android/text/format/DateUtils.md))and [getMonthString](../android/text/format/DateUtils.md)). 
+Request an even shorter abbreviated version of the name. For use with the 'abbrev' parameter of [getDayOfWeekString](DateUtils.md))and [getMonthString](DateUtils.md)). 
 
  Value: 50
 
@@ -592,7 +592,7 @@ Deprecated in [API level 30](https://developer.android.com/guide/topics/manifest
 static val YEAR_IN_MILLIS: Long
 ```
 
-**Deprecated:** *Not all years have the same number of days, and this constant is actually the length of 364 days. Please use other date/time constructs such as [java.util.concurrent.TimeUnit](../java/util/concurrent/TimeUnit.md), [java.util.Calendar](../java/util/Calendar.md) or [java.time.Duration](../java/time/Duration.md) instead.* 
+**Deprecated:** *Not all years have the same number of days, and this constant is actually the length of 364 days. Please use other date/time constructs such as [java.util.concurrent.TimeUnit](../java.util.concurrent/TimeUnit.md), [java.util.Calendar](../java.util/Calendar.md) or [java.time.Duration](../java.time/Duration.md) instead.* 
 
  Value: 31449600000L
 
@@ -622,20 +622,20 @@ open static fun formatDateRange(
 
 Formats a date or a time range according to the local conventions.
 
-Note that this is a convenience method for formatting the date or time range in the local time zone. If you want to specify the time zone please use [formatDateRange](../android/text/format/DateUtils.md)).
+Note that this is a convenience method for formatting the date or time range in the local time zone. If you want to specify the time zone please use [formatDateRange](DateUtils.md)).
 
 | Parameters ||
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](../android/content/Context.md)!:the context is required only if the time is shown |
-| `formatter` | [Formatter](../java/util/Formatter.md)!:the Formatter used for formatting the date range. Note: be sure to call setLength(0) on StringBuilder passed to the Formatter constructor unless you want the results to accumulate. |
+| `context` | [Context](../android.content/Context.md)!:the context is required only if the time is shown |
+| `formatter` | [Formatter](../java.util/Formatter.md)!:the Formatter used for formatting the date range. Note: be sure to call setLength(0) on StringBuilder passed to the Formatter constructor unless you want the results to accumulate. |
 | `startMillis` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the start time in UTC milliseconds |
 | --- | --- |
 | `endMillis` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the end time in UTC milliseconds |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):a bit mask of options See [formatDateRange](../android/text/format/DateUtils.md)) |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):a bit mask of options See [formatDateRange](DateUtils.md)) |
 
 | Return ||
 |----------------------------------------------------------------------------------------|----------------------------------------------------|
-| [Formatter](../java/util/Formatter.md)! | a string containing the formatted date/time range. |
+| [Formatter](../java.util/Formatter.md)! | a string containing the formatted date/time range. |
 
 ### formatDateRange
 
@@ -735,8 +735,8 @@ If the end date ends at 12:00am at the beginning of a day, it is formatted as th
 
 | Parameters ||
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](../android/content/Context.md)!:the context is required only if the time is shown |
-| `formatter` | [Formatter](../java/util/Formatter.md)!:the Formatter used for formatting the date range. Note: be sure to call setLength(0) on StringBuilder passed to the Formatter constructor unless you want the results to accumulate. |
+| `context` | [Context](../android.content/Context.md)!:the context is required only if the time is shown |
+| `formatter` | [Formatter](../java.util/Formatter.md)!:the Formatter used for formatting the date range. Note: be sure to call setLength(0) on StringBuilder passed to the Formatter constructor unless you want the results to accumulate. |
 | `startMillis` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the start time in UTC milliseconds |
 | --- | --- |
 | `endMillis` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the end time in UTC milliseconds |
@@ -746,7 +746,7 @@ If the end date ends at 12:00am at the beginning of a day, it is formatted as th
 
 | Return ||
 |----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
-| [Formatter](../java/util/Formatter.md)! | the formatter with the formatted date/time range appended to the string buffer. |
+| [Formatter](../java.util/Formatter.md)! | the formatter with the formatted date/time range appended to the string buffer. |
 
 ### formatDateRange
 
@@ -763,15 +763,15 @@ open static fun formatDateRange(
 
 Formats a date or a time range according to the local conventions.
 
-Note that this is a convenience method. Using it involves creating an internal [java.util.Formatter](../java/util/Formatter.md) instance on-the-fly, which is somewhat costly in terms of memory and time. This is probably acceptable if you use the method only rarely, but if you rely on it for formatting a large number of dates, consider creating and reusing your own [java.util.Formatter](../java/util/Formatter.md) instance and use the version of [formatDateRange](../android/text/format/DateUtils.md))that takes a [java.util.Formatter](../java/util/Formatter.md).
+Note that this is a convenience method. Using it involves creating an internal [java.util.Formatter](../java.util/Formatter.md) instance on-the-fly, which is somewhat costly in terms of memory and time. This is probably acceptable if you use the method only rarely, but if you rely on it for formatting a large number of dates, consider creating and reusing your own [java.util.Formatter](../java.util/Formatter.md) instance and use the version of [formatDateRange](DateUtils.md))that takes a [java.util.Formatter](../java.util/Formatter.md).
 
 | Parameters ||
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](../android/content/Context.md)!:the context is required only if the time is shown |
+| `context` | [Context](../android.content/Context.md)!:the context is required only if the time is shown |
 | `startMillis` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the start time in UTC milliseconds |
 | `endMillis` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the end time in UTC milliseconds |
 | --- | --- |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):a bit mask of options See [formatDateRange](../android/text/format/DateUtils.md)) |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):a bit mask of options See [formatDateRange](DateUtils.md)) |
 
 | Return ||
 |-----------------------------------------------------------------------------------|----------------------------------------------------|
@@ -819,7 +819,7 @@ Example output strings (date formats in these examples are shown using the US da
 
 | Parameters ||
 |-----------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](../android/content/Context.md)!:the context is required only if the time is shown |
+| `context` | [Context](../android.content/Context.md)!:the context is required only if the time is shown |
 | `millis` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):a point in time in UTC milliseconds |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):a bit mask of formatting options |
 | --- | --- |
@@ -843,7 +843,7 @@ Formats an elapsed time in a format like "MM:SS" or "H:MM:SS" (using a form suit
 
 | Parameters ||
 |------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `recycle` | [StringBuilder](../java/lang/StringBuilder.md)!: [StringBuilder](../java/lang/StringBuilder.md) to recycle, or null to use a temporary one. |
+| `recycle` | [StringBuilder](../java.lang/StringBuilder.md)!: [StringBuilder](../java.lang/StringBuilder.md) to recycle, or null to use a temporary one. |
 | `elapsedSeconds` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the elapsed time in seconds. |
 
 ### formatElapsedTime
@@ -875,7 +875,7 @@ static fun formatSameDayTime(
 
 Format a date / time such that if the then is on the same day as now, it shows just the time and if it's a different day, it shows just the date.
 
-The parameters dateFormat and timeFormat should each be one of [java.text.DateFormat#DEFAULT](../java/text/DateFormat.md), [java.text.DateFormat#FULL](../java/text/DateFormat.md), [java.text.DateFormat#LONG](../java/text/DateFormat.md), [java.text.DateFormat#MEDIUM](../java/text/DateFormat.md) or [java.text.DateFormat#SHORT](../java/text/DateFormat.md)
+The parameters dateFormat and timeFormat should each be one of [java.text.DateFormat#DEFAULT](../java.text/DateFormat.md), [java.text.DateFormat#FULL](../java.text/DateFormat.md), [java.text.DateFormat#LONG](../java.text/DateFormat.md), [java.text.DateFormat#MEDIUM](../java.text/DateFormat.md) or [java.text.DateFormat#SHORT](../java.text/DateFormat.md)
 
 | Parameters ||
 |-------------|------------------------------------------------------------------------------------------------------------|
@@ -894,13 +894,13 @@ Deprecated in [API level 17](https://developer.android.com/guide/topics/manifest
 open static fun getAMPMString(ampm: Int): String!
 ```
 
-**Deprecated:** *Use [java.text.SimpleDateFormat](../java/text/SimpleDateFormat.md) instead.*
+**Deprecated:** *Use [java.text.SimpleDateFormat](../java.text/SimpleDateFormat.md) instead.*
 
 Return a localized string for AM or PM.
 
 | Parameters ||
 |--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `ampm` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Either [Calendar.AM](../java/util/Calendar.md) or [Calendar.PM](../java/util/Calendar.md). |
+| `ampm` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Either [Calendar.AM](../java.util/Calendar.md) or [Calendar.PM](../java.util/Calendar.md). |
 
 | Return ||
 |-----------------------------------------------------------------------------------|------------------------------------|
@@ -922,14 +922,14 @@ open static fun getDayOfWeekString(
 ): String!
 ```
 
-**Deprecated:** *Use [java.text.SimpleDateFormat](../java/text/SimpleDateFormat.md) instead.*
+**Deprecated:** *Use [java.text.SimpleDateFormat](../java.text/SimpleDateFormat.md) instead.*
 
 Return a string for the day of the week.
 
 | Parameters ||
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dayOfWeek` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):One of [Calendar.SUNDAY](../java/util/Calendar.md), [Calendar.MONDAY](../java/util/Calendar.md), etc. |
-| `abbrev` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):One of [LENGTH_LONG](../android/text/format/DateUtils.md), [LENGTH_SHORT](../android/text/format/DateUtils.md), [LENGTH_MEDIUM](../android/text/format/DateUtils.md), or [LENGTH_SHORTEST](../android/text/format/DateUtils.md). Note that in most languages, [LENGTH_SHORT](../android/text/format/DateUtils.md) will return the same as [LENGTH_MEDIUM](../android/text/format/DateUtils.md). Undefined lengths will return [LENGTH_MEDIUM](../android/text/format/DateUtils.md) but may return something different in the future. |
+| `dayOfWeek` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):One of [Calendar.SUNDAY](../java.util/Calendar.md), [Calendar.MONDAY](../java.util/Calendar.md), etc. |
+| `abbrev` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):One of [LENGTH_LONG](DateUtils.md), [LENGTH_SHORT](DateUtils.md), [LENGTH_MEDIUM](DateUtils.md), or [LENGTH_SHORTEST](DateUtils.md). Note that in most languages, [LENGTH_SHORT](DateUtils.md) will return the same as [LENGTH_MEDIUM](DateUtils.md). Undefined lengths will return [LENGTH_MEDIUM](DateUtils.md) but may return something different in the future. |
 
 | Exceptions ||
 |---------------------------------------|------------------------------------|
@@ -947,14 +947,14 @@ open static fun getMonthString(
 ): String!
 ```
 
-**Deprecated:** *Use [java.text.SimpleDateFormat](../java/text/SimpleDateFormat.md) instead.*
+**Deprecated:** *Use [java.text.SimpleDateFormat](../java.text/SimpleDateFormat.md) instead.*
 
 Return a localized string for the month of the year.
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):One of [Calendar.JANUARY](../java/util/Calendar.md), [Calendar.FEBRUARY](../java/util/Calendar.md), etc. |
-| `abbrev` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):One of [LENGTH_LONG](../android/text/format/DateUtils.md), [LENGTH_MEDIUM](../android/text/format/DateUtils.md), or [LENGTH_SHORTEST](../android/text/format/DateUtils.md). Undefined lengths will return [LENGTH_MEDIUM](../android/text/format/DateUtils.md) but may return something different in the future. |
+| `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):One of [Calendar.JANUARY](../java.util/Calendar.md), [Calendar.FEBRUARY](../java.util/Calendar.md), etc. |
+| `abbrev` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):One of [LENGTH_LONG](DateUtils.md), [LENGTH_MEDIUM](DateUtils.md), or [LENGTH_SHORTEST](DateUtils.md). Undefined lengths will return [LENGTH_MEDIUM](DateUtils.md) but may return something different in the future. |
 
 | Return ||
 |-----------------------------------------------------------------------------------|------------------------------|
@@ -986,8 +986,8 @@ Example output strings for the US date format.
 | Parameters ||
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `time` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):some time in the past. |
-| `minResolution` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the minimum elapsed time (in milliseconds) to report when showing relative times. For example, a time 3 seconds in the past will be reported as "0 minutes ago" if this is set to [MINUTE_IN_MILLIS](../android/text/format/DateUtils.md). |
-| `transitionResolution` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the elapsed time (in milliseconds) at which to stop reporting relative measurements. Elapsed times greater than this resolution will default to normal date formatting. For example, will transition from "7 days ago" to "Dec 12" when using [WEEK_IN_MILLIS](../android/text/format/DateUtils.md). |
+| `minResolution` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the minimum elapsed time (in milliseconds) to report when showing relative times. For example, a time 3 seconds in the past will be reported as "0 minutes ago" if this is set to [MINUTE_IN_MILLIS](DateUtils.md). |
+| `transitionResolution` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the elapsed time (in milliseconds) at which to stop reporting relative measurements. Elapsed times greater than this resolution will default to normal date formatting. For example, will transition from "7 days ago" to "Dec 12" when using [WEEK_IN_MILLIS](DateUtils.md). |
 | --- | --- |
 
 ### getRelativeTimeSpanString
@@ -1005,16 +1005,16 @@ Convenience function to return relative time string without preposition.
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------|
-| `c` | [Context](../android/content/Context.md)!:context for resources |
+| `c` | [Context](../android.content/Context.md)!:context for resources |
 | `millis` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):time in milliseconds |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [CharSequence](../java/lang/CharSequence.md) containing relative time. |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [CharSequence](../java.lang/CharSequence.md) containing relative time. |
 
 **See Also**
 
-- [#getRelativeTimeSpanString(Context, long, boolean)](../android/text/format/DateUtils.md)) 
+- [#getRelativeTimeSpanString(Context, long, boolean)](DateUtils.md)) 
 
 ### getRelativeTimeSpanString
 
@@ -1046,7 +1046,7 @@ open static fun getRelativeTimeSpanString(startTime: Long): CharSequence!
 
 Returns a string describing the elapsed time since startTime.
 
-The minimum timespan to report is set to [MINUTE_IN_MILLIS](../android/text/format/DateUtils.md).
+The minimum timespan to report is set to [MINUTE_IN_MILLIS](DateUtils.md).
 
 | Parameters ||
 |-------------|-----------------------------------------------------------------------------------------------------|
@@ -1058,7 +1058,7 @@ The minimum timespan to report is set to [MINUTE_IN_MILLIS](../android/text/form
 
 **See Also**
 
-- [#getRelativeTimeSpanString(long, long, long)](../android/text/format/DateUtils.md)) 
+- [#getRelativeTimeSpanString(long, long, long)](DateUtils.md)) 
 
 ### getRelativeTimeSpanString
 
@@ -1100,7 +1100,7 @@ Returns a string describing 'time' as a time relative to 'now'.
 
 Time spans in the past are formatted like "42 minutes ago". Time spans in the future are formatted like "In 42 minutes".
 
-Can use [FORMAT_ABBREV_RELATIVE](../android/text/format/DateUtils.md) flag to use abbreviated relative times, like "42 mins ago".
+Can use [FORMAT_ABBREV_RELATIVE](DateUtils.md) flag to use abbreviated relative times, like "42 mins ago".
 
 | Parameters ||
 |-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1108,7 +1108,7 @@ Can use [FORMAT_ABBREV_RELATIVE](../android/text/format/DateUtils.md) flag to us
 | `now` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the current time in milliseconds |
 | `minResolution` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the minimum timespan to report. For example, a time 3 seconds in the past will be reported as "0 minutes ago" if this is set to MINUTE_IN_MILLIS. Pass one of 0, MINUTE_IN_MILLIS, HOUR_IN_MILLIS, DAY_IN_MILLIS, WEEK_IN_MILLIS |
 | --- | --- |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):a bit mask of formatting options, such as [FORMAT_NUMERIC_DATE](../android/text/format/DateUtils.md) or [FORMAT_ABBREV_RELATIVE](../android/text/format/DateUtils.md) |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):a bit mask of formatting options, such as [FORMAT_NUMERIC_DATE](DateUtils.md) or [FORMAT_ABBREV_RELATIVE](DateUtils.md) |
 
 ### isToday
 

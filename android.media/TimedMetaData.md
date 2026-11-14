@@ -4,7 +4,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 
 # TimedMetaData
 
-Kotlin| [Java](../android/media/TimedMetaData.md) 
+Kotlin| [Java](TimedMetaData.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class TimedMetaData
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.TimedMetaData](../android/media/TimedMetaData.md) |
+| ↳ | [android.media.TimedMetaData](TimedMetaData.md) |
 
 Class that embodies one timed metadata access unit, including
 
@@ -26,12 +26,12 @@ Class that embodies one timed metadata access unit, including
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [TimedMetaData](../android/media/TimedMetaData.md))`(`timestampUs:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `metaData:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`)` Constructor. |
+| [TimedMetaData](TimedMetaData.md))`(`timestampUs:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `metaData:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`)` Constructor. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getMetaData](../android/media/TimedMetaData.md))`()` <br /> |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTimestamp](../android/media/TimedMetaData.md))`()` <br /> |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getMetaData](TimedMetaData.md))`()` <br /> |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTimestamp](TimedMetaData.md))`()` <br /> |
 
 ## Public constructors
 

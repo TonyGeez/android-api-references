@@ -8,7 +8,7 @@ class BluetoothLeScanner
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.bluetooth.le.BluetoothLeScanner](../android/bluetooth/le/BluetoothLeScanner.md) |
+| ↳ | [android.bluetooth.le.BluetoothLeScanner](BluetoothLeScanner.md) |
 
 This class provides methods to perform scan related operations for Bluetooth LE devices. An application can scan for a particular type of Bluetooth LE devices using `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanFilter`. It can also request different types of callbacks for delivering the result.
 
@@ -93,7 +93,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `callback` | [ScanCallback](../android/bluetooth/le/ScanCallback.md)!: Callback of the Bluetooth LE Scan, it has to be the same instance as the one used to start scan. |
+| `callback` | [ScanCallback](ScanCallback.md)!: Callback of the Bluetooth LE Scan, it has to be the same instance as the one used to start scan. |
 
 ### startScan
 
@@ -114,7 +114,7 @@ In addition, this requires the `https://developer.android.com/reference/kotlin/a
 
 | Parameters ||
 |---|---|
-| `callback` | [ScanCallback](../android/bluetooth/le/ScanCallback.md): Callback used to deliver scan results. This value cannot be `null`. |
+| `callback` | [ScanCallback](ScanCallback.md): Callback used to deliver scan results. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -152,9 +152,9 @@ In addition, this requires the `https://developer.android.com/reference/kotlin/a
 
 | Parameters ||
 |---|---|
-| `filters` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ScanFilter](../android/bluetooth/le/ScanFilter.md)!\>?: Optional list of ScanFilters for finding exact BLE devices. This value may be `null`. |
-| `settings` | [ScanSettings](../android/bluetooth/le/ScanSettings.md)?: Optional settings for the scan. This value may be `null`. |
-| `callbackIntent` | [PendingIntent](../android/app/PendingIntent.md): The PendingIntent to deliver the result to. This value cannot be `null`. |
+| `filters` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ScanFilter](ScanFilter.md)!\>?: Optional list of ScanFilters for finding exact BLE devices. This value may be `null`. |
+| `settings` | [ScanSettings](ScanSettings.md)?: Optional settings for the scan. This value may be `null`. |
+| `callbackIntent` | [PendingIntent](../android.app/PendingIntent.md): The PendingIntent to deliver the result to. This value cannot be `null`. |
 | --- | --- |
 
 | Return ||
@@ -195,9 +195,9 @@ In addition, this requires the `https://developer.android.com/reference/kotlin/a
 
 | Parameters ||
 |---|---|
-| `filters` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ScanFilter](../android/bluetooth/le/ScanFilter.md)!\>?: `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanFilter`s for finding exact BLE devices. This value may be `null`. |
-| `settings` | [ScanSettings](../android/bluetooth/le/ScanSettings.md): Settings for the scan. This value cannot be `null`. |
-| `callback` | [ScanCallback](../android/bluetooth/le/ScanCallback.md): Callback used to deliver scan results. This value cannot be `null`. |
+| `filters` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ScanFilter](ScanFilter.md)!\>?: `https://developer.android.com/reference/kotlin/android/bluetooth/le/ScanFilter`s for finding exact BLE devices. This value may be `null`. |
+| `settings` | [ScanSettings](ScanSettings.md): Settings for the scan. This value cannot be `null`. |
+| `callback` | [ScanCallback](ScanCallback.md): Callback used to deliver scan results. This value cannot be `null`. |
 | --- | --- |
 
 | Exceptions ||
@@ -219,7 +219,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `callbackIntent` | [PendingIntent](../android/app/PendingIntent.md)!: The PendingIntent that was used to start the scan. |
+| `callbackIntent` | [PendingIntent](../android.app/PendingIntent.md)!: The PendingIntent that was used to start the scan. |
 
 **See Also**
 

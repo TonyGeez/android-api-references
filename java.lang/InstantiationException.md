@@ -11,10 +11,10 @@ open class InstantiationException : ReflectiveOperationException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
-| | | ↳ | [java.lang.ReflectiveOperationException](../java/lang/ReflectiveOperationException.md) ||
+| | ↳ | [java.lang.Exception](Exception.md) |||
+| | | ↳ | [java.lang.ReflectiveOperationException](ReflectiveOperationException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.InstantiationException](../java/lang/InstantiationException.md) |
+| | | | ↳ | [java.lang.InstantiationException](InstantiationException.md) |
 
 Thrown when an application tries to create an instance of a class using the`newInstance`method in class`Class`, but the specified class object cannot be instantiated. The instantiation can fail for a variety of reasons including but not limited to:
 
@@ -27,8 +27,8 @@ Thrown when an application tries to create an instance of a class using the`newI
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [InstantiationException](../java/lang/InstantiationException.md))`()` Constructs an`InstantiationException`with no detail message. |
-| [InstantiationException](../java/lang/InstantiationException.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an`InstantiationException`with the specified detail message. |
+| [InstantiationException](InstantiationException.md))`()` Constructs an`InstantiationException`with no detail message. |
+| [InstantiationException](InstantiationException.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an`InstantiationException`with the specified detail message. |
 
 ## Public constructors
 

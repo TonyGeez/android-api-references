@@ -18,13 +18,13 @@ interface OnNdefPushCompleteCallback
 |
 | this feature is removed. File sharing can work using other technology like Bluetooth.
 
-A callback to be invoked when the system successfully delivers your [NdefMessage](../android/nfc/NdefMessage.md) to another device.
+A callback to be invoked when the system successfully delivers your [NdefMessage](NdefMessage.md) to another device.
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onNdefPushComplete](../android/nfc/NfcAdapter.OnNdefPushCompleteCallback.md))`(`event:` ` [NfcEvent](../android/nfc/NfcEvent.md)!`)` Called on successful NDEF push. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onNdefPushComplete](../android/nfc/NfcAdapter.OnNdefPushCompleteCallback.md))`(`event:` ` [NfcEvent](NfcEvent.md)!`)` Called on successful NDEF push. |
 
 ## Public methods
 
@@ -44,4 +44,4 @@ This callback is usually made on a binder thread (not the UI thread).
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `event` | [NfcEvent](../android/nfc/NfcEvent.md)!: [NfcEvent](../android/nfc/NfcEvent.md) with the [NfcEvent.nfcAdapter](../android/nfc/NfcEvent.md) field set |
+| `event` | [NfcEvent](NfcEvent.md)!: [NfcEvent](NfcEvent.md) with the [NfcEvent.nfcAdapter](NfcEvent.md) field set |

@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # Display
 
-Kotlin| [Java](../android/view/Display.md) 
+Kotlin| [Java](Display.md) 
 | --- | --- |
 
 ```
@@ -13,14 +13,14 @@ class Display
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.Display](../android/view/Display.md) |
+| ↳ | [android.view.Display](Display.md) |
 
 Provides information about the size and density of a logical display.
 
 The display area is described in two different ways.
 
-- The application display area specifies the part of the display that may contain an application window, excluding the system decorations. The application display area may be smaller than the real display area because the system subtracts the space needed for decor elements such as the status bar. Use [WindowMetrics.getBounds()](../android/view/WindowMetrics.md))to query the application window bounds.
-- The real display area specifies the part of the display that is accessible to an application in the current system state. The real display area may be smaller than the physical size of the display in a few scenarios. Use [WindowManager.getCurrentWindowMetrics()](../android/view/WindowManager.md))to identify the current size of the activity window. UI-related work, such as choosing UI layouts, should rely upon [WindowMetrics.getBounds()](../android/view/WindowMetrics.md)). See [getRealSize](../android/view/Display.md))/ [getRealMetrics](../android/view/Display.md))for details.
+- The application display area specifies the part of the display that may contain an application window, excluding the system decorations. The application display area may be smaller than the real display area because the system subtracts the space needed for decor elements such as the status bar. Use [WindowMetrics.getBounds()](WindowMetrics.md))to query the application window bounds.
+- The real display area specifies the part of the display that is accessible to an application in the current system state. The real display area may be smaller than the physical size of the display in a few scenarios. Use [WindowManager.getCurrentWindowMetrics()](WindowManager.md))to identify the current size of the activity window. UI-related work, such as choosing UI layouts, should rely upon [WindowMetrics.getBounds()](WindowMetrics.md)). See [getRealSize](Display.md))/ [getRealMetrics](Display.md))for details.
 
 <br />
 
@@ -35,84 +35,84 @@ A logical display does not necessarily represent a particular physical display d
 
 | Constants ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEFAULT_DISPLAY](../android/view/Display.md) The default Display id, which is the id of the primary display assuming there is one. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_PRESENTATION](../android/view/Display.md) Display flag: Indicates that the display is a presentation display. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_PRIVATE](../android/view/Display.md) Display flag: Indicates that the display is private. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEFAULT_DISPLAY](Display.md) The default Display id, which is the id of the primary display assuming there is one. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_PRESENTATION](Display.md) Display flag: Indicates that the display is a presentation display. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_PRIVATE](Display.md) Display flag: Indicates that the display is private. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_ROUND](../android/view/Display.md) Display flag: Indicates that the display has a round shape. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_SECURE](../android/view/Display.md) Display flag: Indicates that the display has a secure video output and supports compositing secure surfaces. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_SUPPORTS_PROTECTED_BUFFERS](../android/view/Display.md) Display flag: Indicates that the display supports compositing content that is stored in protected graphics buffers. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_ROUND](Display.md) Display flag: Indicates that the display has a round shape. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_SECURE](Display.md) Display flag: Indicates that the display has a secure video output and supports compositing secure surfaces. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_SUPPORTS_PROTECTED_BUFFERS](Display.md) Display flag: Indicates that the display supports compositing content that is stored in protected graphics buffers. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FRAME_RATE_CATEGORY_HIGH](../android/view/Display.md) High category determines the framework's recommended high frame rate. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FRAME_RATE_CATEGORY_NORMAL](../android/view/Display.md) Normal category determines the framework's recommended normal frame rate. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INVALID_DISPLAY](../android/view/Display.md) Invalid display id. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FRAME_RATE_CATEGORY_HIGH](Display.md) High category determines the framework's recommended high frame rate. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FRAME_RATE_CATEGORY_NORMAL](Display.md) Normal category determines the framework's recommended normal frame rate. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INVALID_DISPLAY](Display.md) Invalid display id. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_DOZE](../android/view/Display.md) Display state: The display is dozing in a low power state; it is still on but is optimized for showing system-provided content while the device is non-interactive. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_DOZE_SUSPEND](../android/view/Display.md) Display state: The display is dozing in a suspended low power state; it is still on but the CPU is not updating it. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_OFF](../android/view/Display.md) Display state: The display is off. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_DOZE](Display.md) Display state: The display is dozing in a low power state; it is still on but is optimized for showing system-provided content while the device is non-interactive. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_DOZE_SUSPEND](Display.md) Display state: The display is dozing in a suspended low power state; it is still on but the CPU is not updating it. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_OFF](Display.md) Display state: The display is off. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_ON](../android/view/Display.md) Display state: The display is on. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_ON_SUSPEND](../android/view/Display.md) Display state: The display is in a suspended full power state; it is still on but the CPU is not updating it. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_UNKNOWN](../android/view/Display.md) Display state: The display state is unknown. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_ON](Display.md) Display state: The display is on. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_ON_SUSPEND](Display.md) Display state: The display is in a suspended full power state; it is still on but the CPU is not updating it. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_UNKNOWN](Display.md) Display state: The display state is unknown. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_VR](../android/view/Display.md) Display state: The display is on and optimized for VR mode. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_VR](Display.md) Display state: The display is on and optimized for VR mode. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAppVsyncOffsetNanos](../android/view/Display.md))`()` Gets the app VSYNC offset, in nanoseconds. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getCurrentSizeRange](../android/view/Display.md))`(`outSmallestSize:` ` [Point](../android/graphics/Point.md)!`, `outLargestSize:` ` [Point](../android/graphics/Point.md)!`)` Return the range of display sizes an application can expect to encounter under normal operation, as long as there is no physical change in screen size. |
-| [DisplayCutout](../android/view/DisplayCutout.md)? | [getCutout](../android/view/Display.md))`()` Returns the [DisplayCutout](../android/view/DisplayCutout.md), or`null`if there is none. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAppVsyncOffsetNanos](Display.md))`()` Gets the app VSYNC offset, in nanoseconds. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getCurrentSizeRange](Display.md))`(`outSmallestSize:` ` [Point](../android.graphics/Point.md)!`, `outLargestSize:` ` [Point](../android.graphics/Point.md)!`)` Return the range of display sizes an application can expect to encounter under normal operation, as long as there is no physical change in screen size. |
+| [DisplayCutout](DisplayCutout.md)? | [getCutout](Display.md))`()` Returns the [DisplayCutout](DisplayCutout.md), or`null`if there is none. |
 | --- | --- |
-| [DeviceProductInfo](../android/hardware/display/DeviceProductInfo.md)? | [getDeviceProductInfo](../android/view/Display.md))`()` Returns the product-specific information about the display or the directly connected device on the display chain. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDisplayId](../android/view/Display.md))`()` Gets the display id. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFlags](../android/view/Display.md))`()` Returns a combination of flags that describe the capabilities of the display. |
+| [DeviceProductInfo](../android.hardware.display/DeviceProductInfo.md)? | [getDeviceProductInfo](Display.md))`()` Returns the product-specific information about the display or the directly connected device on the display chain. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDisplayId](Display.md))`()` Gets the display id. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFlags](Display.md))`()` Returns a combination of flags that describe the capabilities of the display. |
 | --- | --- |
-| [Display.HdrCapabilities](../android/view/Display.HdrCapabilities.md)? | [getHdrCapabilities](../android/view/Display.md))`()` Returns the current display mode's HDR capabilities. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getHdrSdrRatio](../android/view/Display.md))`()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHeight](../android/view/Display.md))`()` <br /> |
+| [Display.HdrCapabilities](../android/view/Display.HdrCapabilities.md)? | [getHdrCapabilities](Display.md))`()` Returns the current display mode's HDR capabilities. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getHdrSdrRatio](Display.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHeight](Display.md))`()` <br /> |
 | --- | --- |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getHighestHdrSdrRatio](../android/view/Display.md))`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getMetrics](../android/view/Display.md))`(`outMetrics:` ` [DisplayMetrics](../android/util/DisplayMetrics.md)!`)` Gets the size and density of this display. |
-| [Display.Mode](../android/view/Display.Mode.md)! | [getMode](../android/view/Display.md))`()` Returns the active mode of the display. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getHighestHdrSdrRatio](Display.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getMetrics](Display.md))`(`outMetrics:` ` [DisplayMetrics](../android.util/DisplayMetrics.md)!`)` Gets the size and density of this display. |
+| [Display.Mode](../android/view/Display.Mode.md)! | [getMode](Display.md))`()` Returns the active mode of the display. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](../android/view/Display.md))`()` Gets the name of the display. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOrientation](../android/view/Display.md))`()` <br /> |
-| [OverlayProperties](../android/hardware/OverlayProperties.md) | [getOverlaySupport](../android/view/Display.md))`()` Returns the [OverlayProperties](../android/hardware/OverlayProperties.md) of the display. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](Display.md))`()` Gets the name of the display. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOrientation](Display.md))`()` <br /> |
+| [OverlayProperties](../android.hardware/OverlayProperties.md) | [getOverlaySupport](Display.md))`()` Returns the [OverlayProperties](../android.hardware/OverlayProperties.md) of the display. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPixelFormat](../android/view/Display.md))`()` Gets the pixel format of the display. |
-| [ColorSpace](../android/graphics/ColorSpace.md)? | [getPreferredWideGamutColorSpace](../android/view/Display.md))`()` Returns the preferred wide color space of the Display. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getPresentationDeadlineNanos](../android/view/Display.md))`()` This is how far in advance a buffer must be queued for presentation at a given time. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPixelFormat](Display.md))`()` Gets the pixel format of the display. |
+| [ColorSpace](../android.graphics/ColorSpace.md)? | [getPreferredWideGamutColorSpace](Display.md))`()` Returns the preferred wide color space of the Display. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getPresentationDeadlineNanos](Display.md))`()` This is how far in advance a buffer must be queued for presentation at a given time. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getRealMetrics](../android/view/Display.md))`(`outMetrics:` ` [DisplayMetrics](../android/util/DisplayMetrics.md)!`)` Gets the size of the largest region of the display accessible to an app in the current system state, without subtracting any window decor or applying scaling factors. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getRealSize](../android/view/Display.md))`(`outSize:` ` [Point](../android/graphics/Point.md)!`)` Gets the size of the largest region of the display accessible to an app in the current system state, without subtracting any window decor or applying scaling factors. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getRectSize](../android/view/Display.md))`(`outSize:` ` [Rect](../android/graphics/Rect.md)!`)` Gets the size of the display as a rectangle, in pixels. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getRealMetrics](Display.md))`(`outMetrics:` ` [DisplayMetrics](../android.util/DisplayMetrics.md)!`)` Gets the size of the largest region of the display accessible to an app in the current system state, without subtracting any window decor or applying scaling factors. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getRealSize](Display.md))`(`outSize:` ` [Point](../android.graphics/Point.md)!`)` Gets the size of the largest region of the display accessible to an app in the current system state, without subtracting any window decor or applying scaling factors. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getRectSize](Display.md))`(`outSize:` ` [Rect](../android.graphics/Rect.md)!`)` Gets the size of the display as a rectangle, in pixels. |
 | --- | --- |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getRefreshRate](../android/view/Display.md))`()` Gets the refresh rate of this display in frames per second. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRotation](../android/view/Display.md))`()` Returns the rotation of the screen from its "natural" orientation. |
-| [RoundedCorner](../android/view/RoundedCorner.md)? | [getRoundedCorner](../android/view/Display.md))`(`position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the [RoundedCorner](../android/view/RoundedCorner.md) of the given position if there is one. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getRefreshRate](Display.md))`()` Gets the refresh rate of this display in frames per second. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRotation](Display.md))`()` Returns the rotation of the screen from its "natural" orientation. |
+| [RoundedCorner](RoundedCorner.md)? | [getRoundedCorner](Display.md))`(`position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the [RoundedCorner](RoundedCorner.md) of the given position if there is one. |
 | --- | --- |
-| [DisplayShape](../android/view/DisplayShape.md) | [getShape](../android/view/Display.md))`()` Returns the [DisplayShape](../android/view/DisplayShape.md) which is based on display coordinates. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getSize](../android/view/Display.md))`(`outSize:` ` [Point](../android/graphics/Point.md)!`)` Gets the size of the display in pixels. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getState](../android/view/Display.md))`()` Gets the state of the display, such as whether it is on or off. |
+| [DisplayShape](DisplayShape.md) | [getShape](Display.md))`()` Returns the [DisplayShape](DisplayShape.md) which is based on display coordinates. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getSize](Display.md))`(`outSize:` ` [Point](../android.graphics/Point.md)!`)` Gets the size of the display in pixels. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getState](Display.md))`()` Gets the state of the display, such as whether it is on or off. |
 | --- | --- |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getSuggestedFrameRate](../android/view/Display.md))`(`category:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the display-defined frame rate given a descriptive frame rate category. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Display.Mode](../android/view/Display.Mode.md)!\>! | [getSupportedModes](../android/view/Display.md))`()` Gets the supported modes of this display, might include synthetic modes |
-| [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html) | [getSupportedRefreshRates](../android/view/Display.md))`()` Get the supported refresh rates of this display in frames per second. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getSuggestedFrameRate](Display.md))`(`category:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the display-defined frame rate given a descriptive frame rate category. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Display.Mode](../android/view/Display.Mode.md)!\>! | [getSupportedModes](Display.md))`()` Gets the supported modes of this display, might include synthetic modes |
+| [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html) | [getSupportedRefreshRates](Display.md))`()` Get the supported refresh rates of this display in frames per second. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWidth](../android/view/Display.md))`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasArrSupport](../android/view/Display.md))`()` Returns whether display supports adaptive refresh rate or not. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isHdr](../android/view/Display.md))`()` Returns whether this display supports any HDR type. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWidth](Display.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasArrSupport](Display.md))`()` Returns whether display supports adaptive refresh rate or not. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isHdr](Display.md))`()` Returns whether this display supports any HDR type. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isHdrSdrRatioAvailable](../android/view/Display.md))`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isInternal](../android/view/Display.md))`()` Check if this is a built-in display, i. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMinimalPostProcessingSupported](../android/view/Display.md))`()` Returns true if the connected display can be switched into a mode with minimal post processing. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isHdrSdrRatioAvailable](Display.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isInternal](Display.md))`()` Check if this is a built-in display, i. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMinimalPostProcessingSupported](Display.md))`()` Returns true if the connected display can be switched into a mode with minimal post processing. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isValid](../android/view/Display.md))`()` Returns true if this display is still valid, false if the display has been removed. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isWideColorGamut](../android/view/Display.md))`()` Returns whether this display can be used to display wide color gamut content. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerHdrSdrRatioChangedListener](../android/view/Display.md))`(`executor:` ` [Executor](../java/util/concurrent/Executor.md)`, `listener:` ` [Consumer](../java/util/function/Consumer.md)< [Display](../android/view/Display.md)!>`)` Registers a listener that will be invoked whenever the display's hdr/sdr ratio has changed. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isValid](Display.md))`()` Returns true if this display is still valid, false if the display has been removed. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isWideColorGamut](Display.md))`()` Returns whether this display can be used to display wide color gamut content. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerHdrSdrRatioChangedListener](Display.md))`(`executor:` ` [Executor](../java.util.concurrent/Executor.md)`, `listener:` ` [Consumer](../java.util.function/Consumer.md)< [Display](Display.md)!>`)` Registers a listener that will be invoked whenever the display's hdr/sdr ratio has changed. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/view/Display.md))`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterHdrSdrRatioChangedListener](../android/view/Display.md))`(`listener:` ` [Consumer](../java/util/function/Consumer.md)< [Display](../android/view/Display.md)!>`)` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](Display.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterHdrSdrRatioChangedListener](Display.md))`(`listener:` ` [Consumer](../java.util.function/Consumer.md)< [Display](Display.md)!>`)` <br /> |
 
 ## Constants
 
@@ -144,7 +144,7 @@ This flag identifies secondary displays that are suitable for use as presentatio
 
 **See Also**
 
-- [#getFlags](../android/view/Display.md)) 
+- [#getFlags](Display.md)) 
 
 ### FLAG_PRIVATE
 
@@ -160,7 +160,7 @@ Display flag: Indicates that the display is private. Only the application that o
 
 **See Also**
 
-- [#getFlags](../android/view/Display.md)) 
+- [#getFlags](Display.md)) 
 
 ### FLAG_ROUND
 
@@ -178,7 +178,7 @@ This flag identifies displays that are circular, elliptical or otherwise do not 
 
 **See Also**
 
-- [#getFlags](../android/view/Display.md)) 
+- [#getFlags](Display.md)) 
 
 ### FLAG_SECURE
 
@@ -190,13 +190,13 @@ static val FLAG_SECURE: Int
 
 Display flag: Indicates that the display has a secure video output and supports compositing secure surfaces.
 
-If this flag is set then the display device has a secure video output and is capable of showing secure surfaces. It may also be capable of showing [protected buffers](../android/view/Display.md).
+If this flag is set then the display device has a secure video output and is capable of showing secure surfaces. It may also be capable of showing [protected buffers](Display.md).
 
 If this flag is not set then the display device may not have a secure video output; the user may see a blank region on the screen instead of the contents of secure surfaces or protected buffers.
 
 Secure surfaces are used to prevent content rendered into those surfaces by applications from appearing in screenshots or from being viewed on non-secure displays. Protected buffers are used by secure video decoders for a similar purpose.
 
-An application creates a window with a secure surface by specifying the [WindowManager.LayoutParams.FLAG_SECURE](../android/view/WindowManager.LayoutParams.md) window flag. Likewise, an application creates a [SurfaceView](../android/view/SurfaceView.md) with a secure surface by calling [SurfaceView.setSecure](../android/view/SurfaceView.md))before attaching the secure view to its containing window.
+An application creates a window with a secure surface by specifying the [WindowManager.LayoutParams.FLAG_SECURE](../android/view/WindowManager.LayoutParams.md) window flag. Likewise, an application creates a [SurfaceView](SurfaceView.md) with a secure surface by calling [SurfaceView.setSecure](SurfaceView.md))before attaching the secure view to its containing window.
 
 An application can use the absence of this flag as a hint that it should not create secure surfaces or protected buffers on this display because the content may not be visible. For example, if the flag is not set then the application may choose not to show content on this display, show an informative error message, select an alternate content stream or adopt a different strategy for decoding content that does not rely on secure surfaces or protected buffers. 
 
@@ -204,7 +204,7 @@ An application can use the absence of this flag as a hint that it should not cre
 
 **See Also**
 
-- [#getFlags](../android/view/Display.md)) 
+- [#getFlags](Display.md)) 
 
 ### FLAG_SUPPORTS_PROTECTED_BUFFERS
 
@@ -228,7 +228,7 @@ An application can use the absence of this flag as a hint that it should not use
 
 **See Also**
 
-- [#getFlags](../android/view/Display.md)) 
+- [#getFlags](Display.md)) 
 
 ### FRAME_RATE_CATEGORY_HIGH
 
@@ -244,8 +244,8 @@ High category determines the framework's recommended high frame rate. Opt for th
 
 **See Also**
 
-- [#getSuggestedFrameRate(int)](../android/view/Display.md))
-- [#FRAME_RATE_CATEGORY_NORMAL](../android/view/Display.md) 
+- [#getSuggestedFrameRate(int)](Display.md))
+- [#FRAME_RATE_CATEGORY_NORMAL](Display.md) 
 
 ### FRAME_RATE_CATEGORY_NORMAL
 
@@ -261,8 +261,8 @@ Normal category determines the framework's recommended normal frame rate. Opt fo
 
 **See Also**
 
-- [#getSuggestedFrameRate(int)](../android/view/Display.md))
-- [#FRAME_RATE_CATEGORY_HIGH](../android/view/Display.md) 
+- [#getSuggestedFrameRate(int)](Display.md))
+- [#FRAME_RATE_CATEGORY_HIGH](Display.md) 
 
 ### INVALID_DISPLAY
 
@@ -290,8 +290,8 @@ Display state: The display is dozing in a low power state; it is still on but is
 
 **See Also**
 
-- [#getState](../android/view/Display.md))
-- [android.os.PowerManager#isInteractive](../android/os/PowerManager.md)) 
+- [#getState](Display.md))
+- [android.os.PowerManager#isInteractive](../android.os/PowerManager.md)) 
 
 ### STATE_DOZE_SUSPEND
 
@@ -307,8 +307,8 @@ Display state: The display is dozing in a suspended low power state; it is still
 
 **See Also**
 
-- [#getState](../android/view/Display.md))
-- [android.os.PowerManager#isInteractive](../android/os/PowerManager.md)) 
+- [#getState](Display.md))
+- [android.os.PowerManager#isInteractive](../android.os/PowerManager.md)) 
 
 ### STATE_OFF
 
@@ -324,7 +324,7 @@ Display state: The display is off.
 
 **See Also**
 
-- [#getState](../android/view/Display.md)) 
+- [#getState](Display.md)) 
 
 ### STATE_ON
 
@@ -340,7 +340,7 @@ Display state: The display is on.
 
 **See Also**
 
-- [#getState](../android/view/Display.md)) 
+- [#getState](Display.md)) 
 
 ### STATE_ON_SUSPEND
 
@@ -356,8 +356,8 @@ Display state: The display is in a suspended full power state; it is still on bu
 
 **See Also**
 
-- [#getState](../android/view/Display.md))
-- [android.os.PowerManager#isInteractive](../android/os/PowerManager.md)) 
+- [#getState](Display.md))
+- [android.os.PowerManager#isInteractive](../android.os/PowerManager.md)) 
 
 ### STATE_UNKNOWN
 
@@ -373,7 +373,7 @@ Display state: The display state is unknown.
 
 **See Also**
 
-- [#getState](../android/view/Display.md)) 
+- [#getState](Display.md)) 
 
 ### STATE_VR
 
@@ -389,8 +389,8 @@ Display state: The display is on and optimized for VR mode.
 
 **See Also**
 
-- [#getState](../android/view/Display.md))
-- [android.os.PowerManager#isInteractive](../android/os/PowerManager.md))
+- [#getState](Display.md))
+- [android.os.PowerManager#isInteractive](../android.os/PowerManager.md))
 
 ## Public methods
 
@@ -421,8 +421,8 @@ Return the range of display sizes an application can expect to encounter under n
 
 | Parameters ||
 |-------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `outSmallestSize` | [Point](../android/graphics/Point.md)!:Filled in with the smallest width and height that the application will encounter, in pixels (not dp units). The x (width) dimension here directly corresponds to [Configuration.smallestScreenWidthDp](../android/content/res/Configuration.md), except the value here is in raw screen pixels rather than dp units. Your application may of course still get smaller space yet if, for example, a soft keyboard is being displayed. |
-| `outLargestSize` | [Point](../android/graphics/Point.md)!:Filled in with the largest width and height that the application will encounter, in pixels (not dp units). Your application may of course still get larger space than this if, for example, screen decorations like the status bar are being hidden. |
+| `outSmallestSize` | [Point](../android.graphics/Point.md)!:Filled in with the smallest width and height that the application will encounter, in pixels (not dp units). The x (width) dimension here directly corresponds to [Configuration.smallestScreenWidthDp](../android.content.res/Configuration.md), except the value here is in raw screen pixels rather than dp units. Your application may of course still get smaller space yet if, for example, a soft keyboard is being displayed. |
+| `outLargestSize` | [Point](../android.graphics/Point.md)!:Filled in with the largest width and height that the application will encounter, in pixels (not dp units). Your application may of course still get larger space than this if, for example, screen decorations like the status bar are being hidden. |
 
 ### getCutout
 
@@ -432,10 +432,10 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 fun getCutout(): DisplayCutout?
 ```
 
-Returns the [DisplayCutout](../android/view/DisplayCutout.md), or`null`if there is none. 
+Returns the [DisplayCutout](DisplayCutout.md), or`null`if there is none. 
 **See Also**
 
-- [android.view.DisplayCutout](../android/view/DisplayCutout.md) 
+- [android.view.DisplayCutout](DisplayCutout.md) 
 
 ### getDeviceProductInfo
 
@@ -457,7 +457,7 @@ fun getDisplayId(): Int
 
 Gets the display id.
 
-Each logical display has a unique id. The default display has id [DEFAULT_DISPLAY](../android/view/Display.md). 
+Each logical display has a unique id. The default display has id [DEFAULT_DISPLAY](Display.md). 
 
 ### getFlags
 
@@ -475,10 +475,10 @@ Returns a combination of flags that describe the capabilities of the display.
 
 **See Also**
 
-- [#FLAG_SUPPORTS_PROTECTED_BUFFERS](../android/view/Display.md)
-- [#FLAG_SECURE](../android/view/Display.md)
-- [#FLAG_PRIVATE](../android/view/Display.md)
-- [#FLAG_ROUND](../android/view/Display.md) 
+- [#FLAG_SUPPORTS_PROTECTED_BUFFERS](Display.md)
+- [#FLAG_SECURE](Display.md)
+- [#FLAG_PRIVATE](Display.md)
+- [#FLAG_ROUND](Display.md) 
 
 ### getHdrCapabilities
 
@@ -508,7 +508,7 @@ fun getHdrSdrRatio(): Float
 
 | Return ||
 |--------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | The current hdr/sdr ratio expressed as the ratio of targetHdrPeakBrightnessInNits / targetSdrWhitePointInNits. If [isHdrSdrRatioAvailable()](../android/view/Display.md))is false, this always returns 1.0f. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | The current hdr/sdr ratio expressed as the ratio of targetHdrPeakBrightnessInNits / targetSdrWhitePointInNits. If [isHdrSdrRatioAvailable()](Display.md))is false, this always returns 1.0f. |
 
 ### getHeight
 
@@ -519,7 +519,7 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 fun getHeight(): Int
 ```
 
-**Deprecated:** *Use [WindowMetrics.getBounds()](../android/view/WindowMetrics.md))instead.* 
+**Deprecated:** *Use [WindowMetrics.getBounds()](WindowMetrics.md))instead.* 
 
 ### getHighestHdrSdrRatio
 
@@ -531,7 +531,7 @@ fun getHighestHdrSdrRatio(): Float
 
 | Return ||
 |--------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | The highest possible HDR/SDR ratio. If [isHdrSdrRatioAvailable()](../android/view/Display.md))returns false, this method returns 1. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | The highest possible HDR/SDR ratio. If [isHdrSdrRatioAvailable()](Display.md))returns false, this method returns 1. |
 
 ### getMetrics
 
@@ -542,7 +542,7 @@ Deprecated in [API level 30](https://developer.android.com/guide/topics/manifest
 fun getMetrics(outMetrics: DisplayMetrics!): Unit
 ```
 
-**Deprecated:** *Use [WindowMetrics.getBounds()](../android/view/WindowMetrics.md))to get the dimensions of the application window. Use [WindowMetrics.getDensity()](../android/view/WindowMetrics.md))to get the density of the application window.*
+**Deprecated:** *Use [WindowMetrics.getBounds()](WindowMetrics.md))to get the dimensions of the application window. Use [WindowMetrics.getDensity()](WindowMetrics.md))to get the density of the application window.*
 
 Gets the size and density of this display.
 
@@ -559,7 +559,7 @@ The returned size can also be different depending on the WindowManager associate
 
 | Parameters ||
 |--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `outMetrics` | [DisplayMetrics](../android/util/DisplayMetrics.md)!:A [DisplayMetrics](../android/util/DisplayMetrics.md) object which receives the display metrics. |
+| `outMetrics` | [DisplayMetrics](../android.util/DisplayMetrics.md)!:A [DisplayMetrics](../android.util/DisplayMetrics.md) object which receives the display metrics. |
 
 ### getMode
 
@@ -596,11 +596,11 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 fun getOrientation(): Int
 ```
 
-**Deprecated:** *use [getRotation](../android/view/Display.md))*
+**Deprecated:** *use [getRotation](Display.md))*
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | orientation of this display. Value is [android.view.Surface#ROTATION_0](../android/view/Surface.md), [android.view.Surface#ROTATION_90](../android/view/Surface.md), [android.view.Surface#ROTATION_180](../android/view/Surface.md), or [android.view.Surface#ROTATION_270](../android/view/Surface.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | orientation of this display. Value is [android.view.Surface#ROTATION_0](Surface.md), [android.view.Surface#ROTATION_90](Surface.md), [android.view.Surface#ROTATION_180](Surface.md), or [android.view.Surface#ROTATION_270](Surface.md) |
 
 ### getOverlaySupport
 
@@ -610,11 +610,11 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun getOverlaySupport(): OverlayProperties
 ```
 
-Returns the [OverlayProperties](../android/hardware/OverlayProperties.md) of the display.
+Returns the [OverlayProperties](../android.hardware/OverlayProperties.md) of the display.
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [OverlayProperties](../android/hardware/OverlayProperties.md) | This value cannot be`null`. |
+| [OverlayProperties](../android.hardware/OverlayProperties.md) | This value cannot be`null`. |
 
 ### getPixelFormat
 
@@ -625,13 +625,13 @@ Deprecated in [API level 17](https://developer.android.com/guide/topics/manifest
 fun getPixelFormat(): Int
 ```
 
-**Deprecated:** *This method is no longer supported. The result is always [PixelFormat.RGBA_8888](../android/graphics/PixelFormat.md).*
+**Deprecated:** *This method is no longer supported. The result is always [PixelFormat.RGBA_8888](../android.graphics/PixelFormat.md).*
 
 Gets the pixel format of the display.
 
 | Return ||
 |----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | One of the constants defined in [android.graphics.PixelFormat](../android/graphics/PixelFormat.md). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | One of the constants defined in [android.graphics.PixelFormat](../android.graphics/PixelFormat.md). |
 
 ### getPreferredWideGamutColorSpace
 
@@ -641,7 +641,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 fun getPreferredWideGamutColorSpace(): ColorSpace?
 ```
 
-Returns the preferred wide color space of the Display. The returned wide gamut color space is based on hardware capability and is preferred by the composition pipeline. Returns null if the display doesn't support wide color gamut. [Display.isWideColorGamut()](../android/view/Display.md)). 
+Returns the preferred wide color space of the Display. The returned wide gamut color space is based on hardware capability and is preferred by the composition pipeline. Returns null if the display doesn't support wide color gamut. [Display.isWideColorGamut()](Display.md)). 
 
 ### getPresentationDeadlineNanos
 
@@ -653,7 +653,7 @@ fun getPresentationDeadlineNanos(): Long
 
 This is how far in advance a buffer must be queued for presentation at a given time. If you want a buffer to appear on the screen at time N, you must submit the buffer before (N - presentationDeadline).
 
-The desired presentation time for GLES rendering may be set with [android.opengl.EGLExt#eglPresentationTimeANDROID](../android/opengl/EGLExt.md)). For video decoding, use [android.media.MediaCodec#releaseOutputBuffer(int, long)](../android/media/MediaCodec.md)). Times are expressed in nanoseconds, using the system monotonic clock ([System.nanoTime](../java/lang/System.md))). 
+The desired presentation time for GLES rendering may be set with [android.opengl.EGLExt#eglPresentationTimeANDROID](../android.opengl/EGLExt.md)). For video decoding, use [android.media.MediaCodec#releaseOutputBuffer(int, long)](../android.media/MediaCodec.md)). Times are expressed in nanoseconds, using the system monotonic clock ([System.nanoTime](../java.lang/System.md))). 
 
 ### getRealMetrics
 
@@ -664,7 +664,7 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 fun getRealMetrics(outMetrics: DisplayMetrics!): Unit
 ```
 
-**Deprecated:** *Use [WindowManager.getCurrentWindowMetrics()](../android/view/WindowManager.md))to identify the current size of the activity window. UI-related work, such as choosing UI layouts, should rely upon [WindowMetrics.getBounds()](../android/view/WindowMetrics.md)). Use [Configuration.densityDpi](../android/content/res/Configuration.md) to get the current density.*
+**Deprecated:** *Use [WindowManager.getCurrentWindowMetrics()](WindowManager.md))to identify the current size of the activity window. UI-related work, such as choosing UI layouts, should rely upon [WindowMetrics.getBounds()](WindowMetrics.md)). Use [Configuration.densityDpi](../android.content.res/Configuration.md) to get the current density.*
 
 Gets the size of the largest region of the display accessible to an app in the current system state, without subtracting any window decor or applying scaling factors.
 
@@ -680,7 +680,7 @@ The returned size will fall into one of these scenarios:
 
 <br />
 
-The returned value is**unsuitable to use when sizing and placing UI elements** , since it does not reflect the application window size in any of these scenarios. [WindowManager.getCurrentWindowMetrics()](../android/view/WindowManager.md))is an alternative that returns the size of the current application window, even if the window is on a device with a partitioned display. This helps prevent UI bugs where UI elements are misaligned or placed beyond the bounds of the window.
+The returned value is**unsuitable to use when sizing and placing UI elements** , since it does not reflect the application window size in any of these scenarios. [WindowManager.getCurrentWindowMetrics()](WindowManager.md))is an alternative that returns the size of the current application window, even if the window is on a device with a partitioned display. This helps prevent UI bugs where UI elements are misaligned or placed beyond the bounds of the window.
 
 <br />
 
@@ -688,13 +688,13 @@ Handling multi-window mode correctly is necessary since applications are not alw
 
 <br />
 
-For example, consider a device with a display partitioned into two halves. The user may have a fullscreen application open on the first partition. They may have two applications open in split screen (an example of multi-window mode) on the second partition, with each application consuming half of the partition. In this case, [WindowManager.getCurrentWindowMetrics()](../android/view/WindowManager.md))reports the fullscreen window is half of the screen in size, and each split screen window is a quarter of the screen in size. On the other hand, [getRealMetrics](../android/view/Display.md))reports half of the screen size for all windows, since the application windows are all restricted to their respective partitions.
+For example, consider a device with a display partitioned into two halves. The user may have a fullscreen application open on the first partition. They may have two applications open in split screen (an example of multi-window mode) on the second partition, with each application consuming half of the partition. In this case, [WindowManager.getCurrentWindowMetrics()](WindowManager.md))reports the fullscreen window is half of the screen in size, and each split screen window is a quarter of the screen in size. On the other hand, [getRealMetrics](Display.md))reports half of the screen size for all windows, since the application windows are all restricted to their respective partitions.
 
 <br />
 
 | Parameters ||
 |--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `outMetrics` | [DisplayMetrics](../android/util/DisplayMetrics.md)!:A [DisplayMetrics](../android/util/DisplayMetrics.md) object to receive the metrics. |
+| `outMetrics` | [DisplayMetrics](../android.util/DisplayMetrics.md)!:A [DisplayMetrics](../android.util/DisplayMetrics.md) object to receive the metrics. |
 
 ### getRealSize
 
@@ -705,7 +705,7 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 fun getRealSize(outSize: Point!): Unit
 ```
 
-**Deprecated:** *Use [WindowManager.getCurrentWindowMetrics()](../android/view/WindowManager.md))to identify the current size of the activity window. UI-related work, such as choosing UI layouts, should rely upon [WindowMetrics.getBounds()](../android/view/WindowMetrics.md)).*
+**Deprecated:** *Use [WindowManager.getCurrentWindowMetrics()](WindowManager.md))to identify the current size of the activity window. UI-related work, such as choosing UI layouts, should rely upon [WindowMetrics.getBounds()](WindowMetrics.md)).*
 
 Gets the size of the largest region of the display accessible to an app in the current system state, without subtracting any window decor or applying scaling factors.
 
@@ -721,7 +721,7 @@ The returned size will fall into one of these scenarios:
 
 <br />
 
-The returned value is**unsuitable to use when sizing and placing UI elements** , since it does not reflect the application window size in any of these scenarios. [WindowManager.getCurrentWindowMetrics()](../android/view/WindowManager.md))is an alternative that returns the size of the current application window, even if the window is on a device with a partitioned display. This helps prevent UI bugs where UI elements are misaligned or placed beyond the bounds of the window.
+The returned value is**unsuitable to use when sizing and placing UI elements** , since it does not reflect the application window size in any of these scenarios. [WindowManager.getCurrentWindowMetrics()](WindowManager.md))is an alternative that returns the size of the current application window, even if the window is on a device with a partitioned display. This helps prevent UI bugs where UI elements are misaligned or placed beyond the bounds of the window.
 
 <br />
 
@@ -729,13 +729,13 @@ Handling multi-window mode correctly is necessary since applications are not alw
 
 <br />
 
-For example, consider a device with a display partitioned into two halves. The user may have a fullscreen application open on the first partition. They may have two applications open in split screen (an example of multi-window mode) on the second partition, with each application consuming half of the partition. In this case, [WindowManager.getCurrentWindowMetrics()](../android/view/WindowManager.md))reports the fullscreen window is half of the screen in size, and each split screen window is a quarter of the screen in size. On the other hand, [getRealSize](../android/view/Display.md))reports half of the screen size for all windows, since the application windows are all restricted to their respective partitions.
+For example, consider a device with a display partitioned into two halves. The user may have a fullscreen application open on the first partition. They may have two applications open in split screen (an example of multi-window mode) on the second partition, with each application consuming half of the partition. In this case, [WindowManager.getCurrentWindowMetrics()](WindowManager.md))reports the fullscreen window is half of the screen in size, and each split screen window is a quarter of the screen in size. On the other hand, [getRealSize](Display.md))reports half of the screen size for all windows, since the application windows are all restricted to their respective partitions.
 
 <br />
 
 | Parameters ||
 |-----------|----------------------------------------------------------------------------------------------------------------------------|
-| `outSize` | [Point](../android/graphics/Point.md)!:Set to the real size of the display. |
+| `outSize` | [Point](../android.graphics/Point.md)!:Set to the real size of the display. |
 
 ### getRectSize
 
@@ -746,13 +746,13 @@ Deprecated in [API level 30](https://developer.android.com/guide/topics/manifest
 fun getRectSize(outSize: Rect!): Unit
 ```
 
-**Deprecated:** *Use [WindowMetrics.getBounds()](../android/view/WindowMetrics.md))to get the dimensions of the application window.*
+**Deprecated:** *Use [WindowMetrics.getBounds()](WindowMetrics.md))to get the dimensions of the application window.*
 
 Gets the size of the display as a rectangle, in pixels.
 
 | Parameters ||
 |-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `outSize` | [Rect](../android/graphics/Rect.md)!:A [Rect](../android/graphics/Rect.md) object to receive the size information. |
+| `outSize` | [Rect](../android.graphics/Rect.md)!:A [Rect](../android.graphics/Rect.md) object to receive the size information. |
 
 ### getRefreshRate
 
@@ -772,11 +772,11 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 fun getRotation(): Int
 ```
 
-Returns the rotation of the screen from its "natural" orientation. The returned value may be [Surface.ROTATION_0](../android/view/Surface.md)(no rotation), [Surface.ROTATION_90](../android/view/Surface.md), [Surface.ROTATION_180](../android/view/Surface.md), or [Surface.ROTATION_270](../android/view/Surface.md). For example, if a device has a naturally tall screen, and the user has turned it on its side to go into a landscape orientation, the value returned here may be either [Surface.ROTATION_90](../android/view/Surface.md) or [Surface.ROTATION_270](../android/view/Surface.md) depending on the direction it was turned. The angle is the rotation of the drawn graphics on the screen, which is the opposite direction of the physical rotation of the device. For example, if the device is rotated 90 degrees counter-clockwise, to compensate rendering will be rotated by 90 degrees clockwise and thus the returned value here will be [Surface.ROTATION_90](../android/view/Surface.md). This rotation value will match the results of [getMetrics](../android/view/Display.md)): this means that the rotation value will correspond to the activity if accessed through the activity.
+Returns the rotation of the screen from its "natural" orientation. The returned value may be [Surface.ROTATION_0](Surface.md)(no rotation), [Surface.ROTATION_90](Surface.md), [Surface.ROTATION_180](Surface.md), or [Surface.ROTATION_270](Surface.md). For example, if a device has a naturally tall screen, and the user has turned it on its side to go into a landscape orientation, the value returned here may be either [Surface.ROTATION_90](Surface.md) or [Surface.ROTATION_270](Surface.md) depending on the direction it was turned. The angle is the rotation of the drawn graphics on the screen, which is the opposite direction of the physical rotation of the device. For example, if the device is rotated 90 degrees counter-clockwise, to compensate rendering will be rotated by 90 degrees clockwise and thus the returned value here will be [Surface.ROTATION_90](Surface.md). This rotation value will match the results of [getMetrics](Display.md)): this means that the rotation value will correspond to the activity if accessed through the activity.
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.view.Surface#ROTATION_0](../android/view/Surface.md), [android.view.Surface#ROTATION_90](../android/view/Surface.md), [android.view.Surface#ROTATION_180](../android/view/Surface.md), or [android.view.Surface#ROTATION_270](../android/view/Surface.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.view.Surface#ROTATION_0](Surface.md), [android.view.Surface#ROTATION_90](Surface.md), [android.view.Surface#ROTATION_180](Surface.md), or [android.view.Surface#ROTATION_270](Surface.md) |
 
 ### getRoundedCorner
 
@@ -786,15 +786,15 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 fun getRoundedCorner(position: Int): RoundedCorner?
 ```
 
-Returns the [RoundedCorner](../android/view/RoundedCorner.md) of the given position if there is one.
+Returns the [RoundedCorner](RoundedCorner.md) of the given position if there is one.
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `position` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the position of the rounded corner on the display. Value is [android.view.RoundedCorner#POSITION_TOP_LEFT](../android/view/RoundedCorner.md), [android.view.RoundedCorner#POSITION_TOP_RIGHT](../android/view/RoundedCorner.md), [android.view.RoundedCorner#POSITION_BOTTOM_RIGHT](../android/view/RoundedCorner.md), or [android.view.RoundedCorner#POSITION_BOTTOM_LEFT](../android/view/RoundedCorner.md) |
+| `position` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the position of the rounded corner on the display. Value is [android.view.RoundedCorner#POSITION_TOP_LEFT](RoundedCorner.md), [android.view.RoundedCorner#POSITION_TOP_RIGHT](RoundedCorner.md), [android.view.RoundedCorner#POSITION_BOTTOM_RIGHT](RoundedCorner.md), or [android.view.RoundedCorner#POSITION_BOTTOM_LEFT](RoundedCorner.md) |
 
 | Return ||
 |---------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-| [RoundedCorner](../android/view/RoundedCorner.md)? | the rounded corner of the given position. Returns`null`if there is none. |
+| [RoundedCorner](RoundedCorner.md)? | the rounded corner of the given position. Returns`null`if there is none. |
 
 ### getShape
 
@@ -804,15 +804,15 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 fun getShape(): DisplayShape
 ```
 
-Returns the [DisplayShape](../android/view/DisplayShape.md) which is based on display coordinates. To get the [DisplayShape](../android/view/DisplayShape.md) based on the window frame, use [WindowInsets.getDisplayShape()](../android/view/WindowInsets.md))instead.
+Returns the [DisplayShape](DisplayShape.md) which is based on display coordinates. To get the [DisplayShape](DisplayShape.md) based on the window frame, use [WindowInsets.getDisplayShape()](WindowInsets.md))instead.
 
 | Return ||
 |------------------------------------------------------------------------------------------|-----------------------------|
-| [DisplayShape](../android/view/DisplayShape.md) | This value cannot be`null`. |
+| [DisplayShape](DisplayShape.md) | This value cannot be`null`. |
 
 **See Also**
 
-- [android.view.DisplayShape](../android/view/DisplayShape.md) 
+- [android.view.DisplayShape](DisplayShape.md) 
 
 ### getSize
 
@@ -823,7 +823,7 @@ Deprecated in [API level 30](https://developer.android.com/guide/topics/manifest
 fun getSize(outSize: Point!): Unit
 ```
 
-**Deprecated:** *Use [WindowMetrics](../android/view/WindowMetrics.md) instead. Obtain a`WindowMetrics`instance by calling [WindowManager.getCurrentWindowMetrics()](../android/view/WindowManager.md)), then call [WindowMetrics.getBounds()](../android/view/WindowMetrics.md))to get the dimensions of the application window.*
+**Deprecated:** *Use [WindowMetrics](WindowMetrics.md) instead. Obtain a`WindowMetrics`instance by calling [WindowManager.getCurrentWindowMetrics()](WindowManager.md)), then call [WindowMetrics.getBounds()](WindowMetrics.md))to get the dimensions of the application window.*
 
 Gets the size of the display in pixels.
 
@@ -842,7 +842,7 @@ For layout purposes, apps should make a request from an activity context to obta
 
 | Parameters ||
 |-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `outSize` | [Point](../android/graphics/Point.md)!:A [Point](../android/graphics/Point.md) object which receives the display size information. |
+| `outSize` | [Point](../android.graphics/Point.md)!:A [Point](../android.graphics/Point.md) object which receives the display size information. |
 
 ### getState
 
@@ -856,7 +856,7 @@ Gets the state of the display, such as whether it is on or off.
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The state of the display: one of [STATE_OFF](../android/view/Display.md), [STATE_ON](../android/view/Display.md), [STATE_DOZE](../android/view/Display.md), [STATE_DOZE_SUSPEND](../android/view/Display.md), [STATE_ON_SUSPEND](../android/view/Display.md), or [STATE_UNKNOWN](../android/view/Display.md). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The state of the display: one of [STATE_OFF](Display.md), [STATE_ON](Display.md), [STATE_DOZE](Display.md), [STATE_DOZE_SUSPEND](Display.md), [STATE_ON_SUSPEND](Display.md), or [STATE_UNKNOWN](Display.md). |
 
 ### getSuggestedFrameRate
 
@@ -868,7 +868,7 @@ fun getSuggestedFrameRate(category: Int): Float
 
 Gets the display-defined frame rate given a descriptive frame rate category.
 
-For example, an animation that does not require fast render rates can use the [FRAME_RATE_CATEGORY_NORMAL](../android/view/Display.md) to get the suggested frame rate. 
+For example, an animation that does not require fast render rates can use the [FRAME_RATE_CATEGORY_NORMAL](Display.md) to get the suggested frame rate. 
 
 ```kotlin
 <code>float desiredMinRate = display.getSuggestedFrameRate(FRAME_RATE_CATEGORY_NORMAL);
@@ -880,15 +880,15 @@ For example, an animation that does not require fast render rates can use the [F
 
 | Parameters ||
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `category` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):either [FRAME_RATE_CATEGORY_NORMAL](../android/view/Display.md) or [FRAME_RATE_CATEGORY_HIGH](../android/view/Display.md) Value is [android.view.Display#FRAME_RATE_CATEGORY_NORMAL](../android/view/Display.md), or [android.view.Display#FRAME_RATE_CATEGORY_HIGH](../android/view/Display.md) |
+| `category` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):either [FRAME_RATE_CATEGORY_NORMAL](Display.md) or [FRAME_RATE_CATEGORY_HIGH](Display.md) Value is [android.view.Display#FRAME_RATE_CATEGORY_NORMAL](Display.md), or [android.view.Display#FRAME_RATE_CATEGORY_HIGH](Display.md) |
 
 | Exceptions ||
 |--------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.IllegalArgumentException` | when category is not [FRAME_RATE_CATEGORY_NORMAL](../android/view/Display.md) or [FRAME_RATE_CATEGORY_HIGH](../android/view/Display.md) |
+| `java.lang.IllegalArgumentException` | when category is not [FRAME_RATE_CATEGORY_NORMAL](Display.md) or [FRAME_RATE_CATEGORY_HIGH](Display.md) |
 
 **See Also**
 
-- [android.view.Surface#setFrameRate(float, int)](../android/view/Surface.md)) 
+- [android.view.Surface#setFrameRate(float, int)](Surface.md)) 
 
 ### getSupportedModes
 
@@ -911,7 +911,7 @@ fun getSupportedRefreshRates(): FloatArray
 Get the supported refresh rates of this display in frames per second.
 
 - Android version [Build.VERSION_CODES.BAKLAVA](../android/os/Build.VERSION_CODES.md) and above: returns display supported render rates.
-- Android version [Build.VERSION_CODES.VANILLA_ICE_CREAM](../android/os/Build.VERSION_CODES.md) and below: This method only returns refresh rates for the display's default modes. For more options, use [getSupportedModes()](../android/view/Display.md)).
+- Android version [Build.VERSION_CODES.VANILLA_ICE_CREAM](../android/os/Build.VERSION_CODES.md) and below: This method only returns refresh rates for the display's default modes. For more options, use [getSupportedModes()](Display.md)).
 
 <br />
 
@@ -928,7 +928,7 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 fun getWidth(): Int
 ```
 
-**Deprecated:** *Use [WindowMetrics.getBounds](../android/view/WindowMetrics.md))instead.* 
+**Deprecated:** *Use [WindowMetrics.getBounds](WindowMetrics.md))instead.* 
 
 ### hasArrSupport
 
@@ -964,7 +964,7 @@ fun isHdrSdrRatioAvailable(): Boolean
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | Whether the display supports reporting an hdr/sdr ratio. If this is false, [getHdrSdrRatio()](../android/view/Display.md))will always be 1.0f |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | Whether the display supports reporting an hdr/sdr ratio. If this is false, [getHdrSdrRatio()](Display.md))will always be 1.0f |
 
 ### isInternal
 
@@ -993,7 +993,7 @@ If the Display sink has an internal connection or uses some other protocol than 
 The ability to switch to a mode with minimal post processing may be disabled by a user setting in the system settings menu. In that case, this method returns false. 
 **See Also**
 
-- [android.view.Window#setPreferMinimalPostProcessing](../android/view/Window.md)) 
+- [android.view.Window#setPreferMinimalPostProcessing](Window.md)) 
 
 ### isValid
 
@@ -1003,7 +1003,7 @@ Added in [API level 17](https://developer.android.com/guide/topics/manifest/uses
 fun isValid(): Boolean
 ```
 
-Returns true if this display is still valid, false if the display has been removed. If the display is invalid, then the methods of this class will continue to report the most recently observed display information. However, it is unwise (and rather fruitless) to continue using a [Display](../android/view/Display.md) object after the display's demise. It's possible for a display that was previously invalid to become valid again if a display with the same id is reconnected.
+Returns true if this display is still valid, false if the display has been removed. If the display is invalid, then the methods of this class will continue to report the most recently observed display information. However, it is unwise (and rather fruitless) to continue using a [Display](Display.md) object after the display's demise. It's possible for a display that was previously invalid to become valid again if a display with the same id is reconnected.
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------------------|
@@ -1017,7 +1017,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 fun isWideColorGamut(): Boolean
 ```
 
-Returns whether this display can be used to display wide color gamut content. This does not necessarily mean the device itself can render wide color gamut content. To ensure wide color gamut content can be produced, refer to [Configuration.isScreenWideColorGamut()](../android/content/res/Configuration.md)). 
+Returns whether this display can be used to display wide color gamut content. This does not necessarily mean the device itself can render wide color gamut content. To ensure wide color gamut content can be produced, refer to [Configuration.isScreenWideColorGamut()](../android.content.res/Configuration.md)). 
 
 ### registerHdrSdrRatioChangedListener
 
@@ -1030,20 +1030,20 @@ fun registerHdrSdrRatioChangedListener(
 ): Unit
 ```
 
-Registers a listener that will be invoked whenever the display's hdr/sdr ratio has changed. After receiving the callback on the specified Executor, call [getHdrSdrRatio()](../android/view/Display.md))to get the updated value. If [isHdrSdrRatioAvailable()](../android/view/Display.md))is false, then an IllegalStateException will be thrown
+Registers a listener that will be invoked whenever the display's hdr/sdr ratio has changed. After receiving the callback on the specified Executor, call [getHdrSdrRatio()](Display.md))to get the updated value. If [isHdrSdrRatioAvailable()](Display.md))is false, then an IllegalStateException will be thrown
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `executor` | [Executor](../java/util/concurrent/Executor.md):The executor to invoke the listener on This value cannot be`null`. |
-| `listener` | [Consumer](../java/util/function/Consumer.md)\< [Display](../android/view/Display.md)!\>:The listener to invoke when the HDR/SDR ratio changes This value cannot be`null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md):The executor to invoke the listener on This value cannot be`null`. |
+| `listener` | [Consumer](../java.util.function/Consumer.md)\< [Display](Display.md)!\>:The listener to invoke when the HDR/SDR ratio changes This value cannot be`null`. |
 
 | Exceptions ||
 |-----------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.IllegalStateException` | if [isHdrSdrRatioAvailable()](../android/view/Display.md))is false |
+| `java.lang.IllegalStateException` | if [isHdrSdrRatioAvailable()](Display.md))is false |
 
 **See Also**
 
-- [#unregisterHdrSdrRatioChangedListener(Consumer)](../android/view/Display.md)) 
+- [#unregisterHdrSdrRatioChangedListener(Consumer)](Display.md)) 
 
 ### toString
 
@@ -1067,8 +1067,8 @@ fun unregisterHdrSdrRatioChangedListener(listener: Consumer<Display!>): Unit
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `listener` | [Consumer](../java/util/function/Consumer.md)\< [Display](../android/view/Display.md)!\>:The previously [registered](../android/view/Display.md))hdr/sdr ratio listener to remove. This value cannot be`null`. |
+| `listener` | [Consumer](../java.util.function/Consumer.md)\< [Display](Display.md)!\>:The previously [registered](Display.md))hdr/sdr ratio listener to remove. This value cannot be`null`. |
 
 **See Also**
 
-- [#registerHdrSdrRatioChangedListener(Executor, Consumer)](../android/view/Display.md))
+- [#registerHdrSdrRatioChangedListener(Executor, Consumer)](Display.md))

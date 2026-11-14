@@ -5,7 +5,7 @@ Deprecated in [API level 26](https://developer.android.com/guide/topics/manifest
 
 # TestSuiteBuilder
 
-Kotlin| [Java](../android/test/suitebuilder/TestSuiteBuilder.md) 
+Kotlin| [Java](TestSuiteBuilder.md) 
 | --- | --- |
 
 ```
@@ -14,9 +14,9 @@ open class TestSuiteBuilder
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.test.suitebuilder.TestSuiteBuilder](../android/test/suitebuilder/TestSuiteBuilder.md) |
+| ↳ | [android.test.suitebuilder.TestSuiteBuilder](TestSuiteBuilder.md) |
 
-| Known Direct Subclasses [UnitTestSuiteBuilder](../android/test/suitebuilder/UnitTestSuiteBuilder.md) |-----------------------------------------------------------------------------------------------------------------------|----------------------------------------| | [UnitTestSuiteBuilder](../android/test/suitebuilder/UnitTestSuiteBuilder.md) | A suite builder that finds unit tests. | |
+| Known Direct Subclasses [UnitTestSuiteBuilder](UnitTestSuiteBuilder.md) |-----------------------------------------------------------------------------------------------------------------------|----------------------------------------| | [UnitTestSuiteBuilder](UnitTestSuiteBuilder.md) | A suite builder that finds unit tests. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 | **This class was deprecated in API level 26.**
@@ -33,21 +33,21 @@ Build suites based on a combination of included packages, excluded packages, and
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [TestSuiteBuilder](../android/test/suitebuilder/TestSuiteBuilder.md))`(`clazz:` ` [Class](../java/lang/Class.md)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`)` The given name is automatically prefixed with the package containing the tests to be run. |
-| [TestSuiteBuilder](../android/test/suitebuilder/TestSuiteBuilder.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `classLoader:` ` [ClassLoader](../java/lang/ClassLoader.md)!`)` <br /> |
+| [TestSuiteBuilder](TestSuiteBuilder.md))`(`clazz:` ` [Class](../java.lang/Class.md)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`)` The given name is automatically prefixed with the package containing the tests to be run. |
+| [TestSuiteBuilder](TestSuiteBuilder.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `classLoader:` ` [ClassLoader](../java.lang/ClassLoader.md)!`)` <br /> |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| TestSuite! | [build](../android/test/suitebuilder/TestSuiteBuilder.md))`()` Call this method once you've configured your builder as desired. |
-| open [TestSuiteBuilder](../android/test/suitebuilder/TestSuiteBuilder.md)! | [excludePackages](../android/test/suitebuilder/TestSuiteBuilder.md))`(`vararg` `packageNames:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Exclude all tests in the given packages and all sub-packages, unless otherwise specified. |
-| [TestSuiteBuilder](../android/test/suitebuilder/TestSuiteBuilder.md)! | [includeAllPackagesUnderHere](../android/test/suitebuilder/TestSuiteBuilder.md))`()` Include all junit tests that satisfy the requirements in the calling class' package and all sub-packages. |
+| TestSuite! | [build](TestSuiteBuilder.md))`()` Call this method once you've configured your builder as desired. |
+| open [TestSuiteBuilder](TestSuiteBuilder.md)! | [excludePackages](TestSuiteBuilder.md))`(`vararg` `packageNames:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Exclude all tests in the given packages and all sub-packages, unless otherwise specified. |
+| [TestSuiteBuilder](TestSuiteBuilder.md)! | [includeAllPackagesUnderHere](TestSuiteBuilder.md))`()` Include all junit tests that satisfy the requirements in the calling class' package and all sub-packages. |
 | --- | --- |
-| open [TestSuiteBuilder](../android/test/suitebuilder/TestSuiteBuilder.md)! | [includePackages](../android/test/suitebuilder/TestSuiteBuilder.md))`(`vararg` `packageNames:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Include all tests that satisfy the requirements in the given packages and all sub-packages, unless otherwise specified. |
-| open [TestSuiteBuilder](../android/test/suitebuilder/TestSuiteBuilder.md)! | [named](../android/test/suitebuilder/TestSuiteBuilder.md))`(`newSuiteName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Override the default name for the suite being built. |
+| open [TestSuiteBuilder](TestSuiteBuilder.md)! | [includePackages](TestSuiteBuilder.md))`(`vararg` `packageNames:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Include all tests that satisfy the requirements in the given packages and all sub-packages, unless otherwise specified. |
+| open [TestSuiteBuilder](TestSuiteBuilder.md)! | [named](TestSuiteBuilder.md))`(`newSuiteName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Override the default name for the suite being built. |
 
 | Protected methods ||
 |---------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSuiteName](../android/test/suitebuilder/TestSuiteBuilder.md))`()` Subclasses use this method to determine the name of the suite. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSuiteName](TestSuiteBuilder.md))`()` Subclasses use this method to determine the name of the suite. |
 
 ## Public constructors
 
@@ -63,7 +63,7 @@ The given name is automatically prefixed with the package containing the tests t
 
 | Parameters ||
 |---------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `clazz` | [Class](../java/lang/Class.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>!:Use the class from your .apk. Use the class name for the test suite name. Use the class' classloader in order to load classes for testing. This is needed when running in the emulator. |
+| `clazz` | [Class](../java.lang/Class.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>!:Use the class from your .apk. Use the class name for the test suite name. Use the class' classloader in order to load classes for testing. This is needed when running in the emulator. |
 
 ### TestSuiteBuilder
 
@@ -111,7 +111,7 @@ Exclude all tests in the given packages and all sub-packages, unless otherwise s
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------|----------------------------------|
-| [TestSuiteBuilder](../android/test/suitebuilder/TestSuiteBuilder.md)! | The builder for method chaining. |
+| [TestSuiteBuilder](TestSuiteBuilder.md)! | The builder for method chaining. |
 
 ### includeAllPackagesUnderHere
 
@@ -127,7 +127,7 @@ Include all junit tests that satisfy the requirements in the calling class' pack
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------|----------------------------------|
-| [TestSuiteBuilder](../android/test/suitebuilder/TestSuiteBuilder.md)! | The builder for method chaining. |
+| [TestSuiteBuilder](TestSuiteBuilder.md)! | The builder for method chaining. |
 
 ### includePackages
 
@@ -147,7 +147,7 @@ Include all tests that satisfy the requirements in the given packages and all su
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------|----------------------------------|
-| [TestSuiteBuilder](../android/test/suitebuilder/TestSuiteBuilder.md)! | The builder for method chaining. |
+| [TestSuiteBuilder](TestSuiteBuilder.md)! | The builder for method chaining. |
 
 ### named
 
@@ -167,7 +167,7 @@ Override the default name for the suite being built. This should generally be ca
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------|----------------------------------|
-| [TestSuiteBuilder](../android/test/suitebuilder/TestSuiteBuilder.md)! | The builder for method chaining. |
+| [TestSuiteBuilder](TestSuiteBuilder.md)! | The builder for method chaining. |
 
 ## Protected methods
 

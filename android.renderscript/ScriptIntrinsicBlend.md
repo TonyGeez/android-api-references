@@ -5,7 +5,7 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 
 # ScriptIntrinsicBlend
 
-Kotlin| [Java](../android/renderscript/ScriptIntrinsicBlend.md) 
+Kotlin| [Java](ScriptIntrinsicBlend.md) 
 | --- | --- |
 
 ```
@@ -14,83 +14,83 @@ open class ScriptIntrinsicBlend : ScriptIntrinsic
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.renderscript.BaseObj](../android/renderscript/BaseObj.md) ||||
-| | ↳ | [android.renderscript.Script](../android/renderscript/Script.md) |||
-| | | ↳ | [android.renderscript.ScriptIntrinsic](../android/renderscript/ScriptIntrinsic.md) ||
+| ↳ | [android.renderscript.BaseObj](BaseObj.md) ||||
+| | ↳ | [android.renderscript.Script](Script.md) |||
+| | | ↳ | [android.renderscript.ScriptIntrinsic](ScriptIntrinsic.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.renderscript.ScriptIntrinsicBlend](../android/renderscript/ScriptIntrinsicBlend.md) |
+| | | | ↳ | [android.renderscript.ScriptIntrinsicBlend](ScriptIntrinsicBlend.md) |
 
 | **This class was deprecated in API level 31.**
 |
 | Renderscript has been deprecated in API level 31. Please refer to the [migration guide](https://developer.android.com/guide/topics/renderscript/migration-guide) for the proposed alternatives.
 
-Intrinsic kernels for blending two [android.renderscript.Allocation](../android/renderscript/Allocation.md) objects.
+Intrinsic kernels for blending two [android.renderscript.Allocation](Allocation.md) objects.
 
 ## Summary
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [ScriptIntrinsicBlend](../android/renderscript/ScriptIntrinsicBlend.md)! | [create](../android/renderscript/ScriptIntrinsicBlend.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`, `e:` ` [Element](../android/renderscript/Element.md)!`)` Supported elements types are [Element.U8_4](../android/renderscript/Element.md)) |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachAdd](../android/renderscript/ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](../android/renderscript/Allocation.md)!`, `aout:` ` [Allocation](../android/renderscript/Allocation.md)!`)` Sets dst = min(src + dst, 1.0) |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachAdd](../android/renderscript/ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](../android/renderscript/Allocation.md)!`, `aout:` ` [Allocation](../android/renderscript/Allocation.md)!`, `opt:` ` [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!`)` Sets dst = min(src + dst, 1.0) |
+| openstatic [ScriptIntrinsicBlend](ScriptIntrinsicBlend.md)! | [create](ScriptIntrinsicBlend.md))`(`rs:` ` [RenderScript](RenderScript.md)!`, `e:` ` [Element](Element.md)!`)` Supported elements types are [Element.U8_4](Element.md)) |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachAdd](ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](Allocation.md)!`, `aout:` ` [Allocation](Allocation.md)!`)` Sets dst = min(src + dst, 1.0) |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachAdd](ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](Allocation.md)!`, `aout:` ` [Allocation](Allocation.md)!`, `opt:` ` [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!`)` Sets dst = min(src + dst, 1.0) |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachClear](../android/renderscript/ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](../android/renderscript/Allocation.md)!`, `aout:` ` [Allocation](../android/renderscript/Allocation.md)!`)` Sets dst = {0, 0, 0, 0} |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachClear](../android/renderscript/ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](../android/renderscript/Allocation.md)!`, `aout:` ` [Allocation](../android/renderscript/Allocation.md)!`, `opt:` ` [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!`)` Sets dst = {0, 0, 0, 0} |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachDst](../android/renderscript/ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](../android/renderscript/Allocation.md)!`, `aout:` ` [Allocation](../android/renderscript/Allocation.md)!`)` Sets dst = dst This is a NOP. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachClear](ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](Allocation.md)!`, `aout:` ` [Allocation](Allocation.md)!`)` Sets dst = {0, 0, 0, 0} |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachClear](ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](Allocation.md)!`, `aout:` ` [Allocation](Allocation.md)!`, `opt:` ` [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!`)` Sets dst = {0, 0, 0, 0} |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachDst](ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](Allocation.md)!`, `aout:` ` [Allocation](Allocation.md)!`)` Sets dst = dst This is a NOP. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachDst](../android/renderscript/ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](../android/renderscript/Allocation.md)!`, `aout:` ` [Allocation](../android/renderscript/Allocation.md)!`, `opt:` ` [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!`)` Sets dst = dst This is a NOP. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachDstAtop](../android/renderscript/ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](../android/renderscript/Allocation.md)!`, `aout:` ` [Allocation](../android/renderscript/Allocation.md)!`)` dst = dst. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachDstAtop](../android/renderscript/ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](../android/renderscript/Allocation.md)!`, `aout:` ` [Allocation](../android/renderscript/Allocation.md)!`, `opt:` ` [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!`)` dst = dst. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachDst](ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](Allocation.md)!`, `aout:` ` [Allocation](Allocation.md)!`, `opt:` ` [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!`)` Sets dst = dst This is a NOP. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachDstAtop](ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](Allocation.md)!`, `aout:` ` [Allocation](Allocation.md)!`)` dst = dst. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachDstAtop](ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](Allocation.md)!`, `aout:` ` [Allocation](Allocation.md)!`, `opt:` ` [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!`)` dst = dst. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachDstIn](../android/renderscript/ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](../android/renderscript/Allocation.md)!`, `aout:` ` [Allocation](../android/renderscript/Allocation.md)!`)` Sets dst = dst \* src. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachDstIn](../android/renderscript/ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](../android/renderscript/Allocation.md)!`, `aout:` ` [Allocation](../android/renderscript/Allocation.md)!`, `opt:` ` [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!`)` Sets dst = dst \* src. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachDstOut](../android/renderscript/ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](../android/renderscript/Allocation.md)!`, `aout:` ` [Allocation](../android/renderscript/Allocation.md)!`)` Sets dst = dst \* (1.0 - src.a) |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachDstIn](ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](Allocation.md)!`, `aout:` ` [Allocation](Allocation.md)!`)` Sets dst = dst \* src. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachDstIn](ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](Allocation.md)!`, `aout:` ` [Allocation](Allocation.md)!`, `opt:` ` [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!`)` Sets dst = dst \* src. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachDstOut](ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](Allocation.md)!`, `aout:` ` [Allocation](Allocation.md)!`)` Sets dst = dst \* (1.0 - src.a) |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachDstOut](../android/renderscript/ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](../android/renderscript/Allocation.md)!`, `aout:` ` [Allocation](../android/renderscript/Allocation.md)!`, `opt:` ` [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!`)` Sets dst = dst \* (1.0 - src.a) |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachDstOver](../android/renderscript/ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](../android/renderscript/Allocation.md)!`, `aout:` ` [Allocation](../android/renderscript/Allocation.md)!`)` Sets dst = dst + src \* (1.0 - dst.a) |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachDstOver](../android/renderscript/ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](../android/renderscript/Allocation.md)!`, `aout:` ` [Allocation](../android/renderscript/Allocation.md)!`, `opt:` ` [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!`)` Sets dst = dst + src \* (1.0 - dst.a) |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachDstOut](ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](Allocation.md)!`, `aout:` ` [Allocation](Allocation.md)!`, `opt:` ` [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!`)` Sets dst = dst \* (1.0 - src.a) |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachDstOver](ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](Allocation.md)!`, `aout:` ` [Allocation](Allocation.md)!`)` Sets dst = dst + src \* (1.0 - dst.a) |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachDstOver](ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](Allocation.md)!`, `aout:` ` [Allocation](Allocation.md)!`, `opt:` ` [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!`)` Sets dst = dst + src \* (1.0 - dst.a) |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachMultiply](../android/renderscript/ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](../android/renderscript/Allocation.md)!`, `aout:` ` [Allocation](../android/renderscript/Allocation.md)!`)` Sets dst = src \* dst |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachMultiply](../android/renderscript/ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](../android/renderscript/Allocation.md)!`, `aout:` ` [Allocation](../android/renderscript/Allocation.md)!`, `opt:` ` [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!`)` Sets dst = src \* dst |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachSrc](../android/renderscript/ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](../android/renderscript/Allocation.md)!`, `aout:` ` [Allocation](../android/renderscript/Allocation.md)!`)` Sets dst = src |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachMultiply](ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](Allocation.md)!`, `aout:` ` [Allocation](Allocation.md)!`)` Sets dst = src \* dst |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachMultiply](ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](Allocation.md)!`, `aout:` ` [Allocation](Allocation.md)!`, `opt:` ` [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!`)` Sets dst = src \* dst |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachSrc](ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](Allocation.md)!`, `aout:` ` [Allocation](Allocation.md)!`)` Sets dst = src |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachSrc](../android/renderscript/ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](../android/renderscript/Allocation.md)!`, `aout:` ` [Allocation](../android/renderscript/Allocation.md)!`, `opt:` ` [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!`)` Sets dst = src |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachSrcAtop](../android/renderscript/ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](../android/renderscript/Allocation.md)!`, `aout:` ` [Allocation](../android/renderscript/Allocation.md)!`)` dst. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachSrcAtop](../android/renderscript/ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](../android/renderscript/Allocation.md)!`, `aout:` ` [Allocation](../android/renderscript/Allocation.md)!`, `opt:` ` [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!`)` dst. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachSrc](ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](Allocation.md)!`, `aout:` ` [Allocation](Allocation.md)!`, `opt:` ` [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!`)` Sets dst = src |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachSrcAtop](ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](Allocation.md)!`, `aout:` ` [Allocation](Allocation.md)!`)` dst. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachSrcAtop](ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](Allocation.md)!`, `aout:` ` [Allocation](Allocation.md)!`, `opt:` ` [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!`)` dst. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachSrcIn](../android/renderscript/ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](../android/renderscript/Allocation.md)!`, `aout:` ` [Allocation](../android/renderscript/Allocation.md)!`)` Sets dst = src \* dst. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachSrcIn](../android/renderscript/ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](../android/renderscript/Allocation.md)!`, `aout:` ` [Allocation](../android/renderscript/Allocation.md)!`, `opt:` ` [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!`)` Sets dst = src \* dst. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachSrcOut](../android/renderscript/ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](../android/renderscript/Allocation.md)!`, `aout:` ` [Allocation](../android/renderscript/Allocation.md)!`)` Sets dst = src \* (1.0 - dst.a) |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachSrcIn](ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](Allocation.md)!`, `aout:` ` [Allocation](Allocation.md)!`)` Sets dst = src \* dst. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachSrcIn](ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](Allocation.md)!`, `aout:` ` [Allocation](Allocation.md)!`, `opt:` ` [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!`)` Sets dst = src \* dst. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachSrcOut](ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](Allocation.md)!`, `aout:` ` [Allocation](Allocation.md)!`)` Sets dst = src \* (1.0 - dst.a) |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachSrcOut](../android/renderscript/ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](../android/renderscript/Allocation.md)!`, `aout:` ` [Allocation](../android/renderscript/Allocation.md)!`, `opt:` ` [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!`)` Sets dst = src \* (1.0 - dst.a) |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachSrcOver](../android/renderscript/ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](../android/renderscript/Allocation.md)!`, `aout:` ` [Allocation](../android/renderscript/Allocation.md)!`)` Sets dst = src + dst \* (1.0 - src.a) |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachSrcOver](../android/renderscript/ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](../android/renderscript/Allocation.md)!`, `aout:` ` [Allocation](../android/renderscript/Allocation.md)!`, `opt:` ` [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!`)` Sets dst = src + dst \* (1.0 - src.a) |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachSrcOut](ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](Allocation.md)!`, `aout:` ` [Allocation](Allocation.md)!`, `opt:` ` [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!`)` Sets dst = src \* (1.0 - dst.a) |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachSrcOver](ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](Allocation.md)!`, `aout:` ` [Allocation](Allocation.md)!`)` Sets dst = src + dst \* (1.0 - src.a) |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachSrcOver](ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](Allocation.md)!`, `aout:` ` [Allocation](Allocation.md)!`, `opt:` ` [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!`)` Sets dst = src + dst \* (1.0 - src.a) |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachSubtract](../android/renderscript/ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](../android/renderscript/Allocation.md)!`, `aout:` ` [Allocation](../android/renderscript/Allocation.md)!`)` Sets dst = max(dst - src, 0.0) |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachSubtract](../android/renderscript/ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](../android/renderscript/Allocation.md)!`, `aout:` ` [Allocation](../android/renderscript/Allocation.md)!`, `opt:` ` [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!`)` Sets dst = max(dst - src, 0.0) |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachXor](../android/renderscript/ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](../android/renderscript/Allocation.md)!`, `aout:` ` [Allocation](../android/renderscript/Allocation.md)!`)` Sets dst = {src. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachSubtract](ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](Allocation.md)!`, `aout:` ` [Allocation](Allocation.md)!`)` Sets dst = max(dst - src, 0.0) |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachSubtract](ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](Allocation.md)!`, `aout:` ` [Allocation](Allocation.md)!`, `opt:` ` [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!`)` Sets dst = max(dst - src, 0.0) |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachXor](ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](Allocation.md)!`, `aout:` ` [Allocation](Allocation.md)!`)` Sets dst = {src. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachXor](../android/renderscript/ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](../android/renderscript/Allocation.md)!`, `aout:` ` [Allocation](../android/renderscript/Allocation.md)!`, `opt:` ` [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!`)` Sets dst = {src. |
-| open [Script.KernelID](../android/renderscript/Script.KernelID.md)! | [getKernelIDAdd](../android/renderscript/ScriptIntrinsicBlend.md))`()` Get a KernelID for the Add kernel. |
-| open [Script.KernelID](../android/renderscript/Script.KernelID.md)! | [getKernelIDClear](../android/renderscript/ScriptIntrinsicBlend.md))`()` Get a KernelID for the Clear kernel. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEachXor](ScriptIntrinsicBlend.md))`(`ain:` ` [Allocation](Allocation.md)!`, `aout:` ` [Allocation](Allocation.md)!`, `opt:` ` [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!`)` Sets dst = {src. |
+| open [Script.KernelID](../android/renderscript/Script.KernelID.md)! | [getKernelIDAdd](ScriptIntrinsicBlend.md))`()` Get a KernelID for the Add kernel. |
+| open [Script.KernelID](../android/renderscript/Script.KernelID.md)! | [getKernelIDClear](ScriptIntrinsicBlend.md))`()` Get a KernelID for the Clear kernel. |
 | --- | --- |
-| open [Script.KernelID](../android/renderscript/Script.KernelID.md)! | [getKernelIDDst](../android/renderscript/ScriptIntrinsicBlend.md))`()` Get a KernelID for the Dst kernel. |
-| open [Script.KernelID](../android/renderscript/Script.KernelID.md)! | [getKernelIDDstAtop](../android/renderscript/ScriptIntrinsicBlend.md))`()` Get a KernelID for the DstAtop kernel. |
-| open [Script.KernelID](../android/renderscript/Script.KernelID.md)! | [getKernelIDDstIn](../android/renderscript/ScriptIntrinsicBlend.md))`()` Get a KernelID for the DstIn kernel. |
+| open [Script.KernelID](../android/renderscript/Script.KernelID.md)! | [getKernelIDDst](ScriptIntrinsicBlend.md))`()` Get a KernelID for the Dst kernel. |
+| open [Script.KernelID](../android/renderscript/Script.KernelID.md)! | [getKernelIDDstAtop](ScriptIntrinsicBlend.md))`()` Get a KernelID for the DstAtop kernel. |
+| open [Script.KernelID](../android/renderscript/Script.KernelID.md)! | [getKernelIDDstIn](ScriptIntrinsicBlend.md))`()` Get a KernelID for the DstIn kernel. |
 | --- | --- |
-| open [Script.KernelID](../android/renderscript/Script.KernelID.md)! | [getKernelIDDstOut](../android/renderscript/ScriptIntrinsicBlend.md))`()` Get a KernelID for the DstOut kernel. |
-| open [Script.KernelID](../android/renderscript/Script.KernelID.md)! | [getKernelIDDstOver](../android/renderscript/ScriptIntrinsicBlend.md))`()` Get a KernelID for the DstOver kernel. |
-| open [Script.KernelID](../android/renderscript/Script.KernelID.md)! | [getKernelIDMultiply](../android/renderscript/ScriptIntrinsicBlend.md))`()` Get a KernelID for the Multiply kernel. |
+| open [Script.KernelID](../android/renderscript/Script.KernelID.md)! | [getKernelIDDstOut](ScriptIntrinsicBlend.md))`()` Get a KernelID for the DstOut kernel. |
+| open [Script.KernelID](../android/renderscript/Script.KernelID.md)! | [getKernelIDDstOver](ScriptIntrinsicBlend.md))`()` Get a KernelID for the DstOver kernel. |
+| open [Script.KernelID](../android/renderscript/Script.KernelID.md)! | [getKernelIDMultiply](ScriptIntrinsicBlend.md))`()` Get a KernelID for the Multiply kernel. |
 | --- | --- |
-| open [Script.KernelID](../android/renderscript/Script.KernelID.md)! | [getKernelIDSrc](../android/renderscript/ScriptIntrinsicBlend.md))`()` Get a KernelID for the Src kernel. |
-| open [Script.KernelID](../android/renderscript/Script.KernelID.md)! | [getKernelIDSrcAtop](../android/renderscript/ScriptIntrinsicBlend.md))`()` Get a KernelID for the SrcAtop kernel. |
-| open [Script.KernelID](../android/renderscript/Script.KernelID.md)! | [getKernelIDSrcIn](../android/renderscript/ScriptIntrinsicBlend.md))`()` Get a KernelID for the SrcIn kernel. |
+| open [Script.KernelID](../android/renderscript/Script.KernelID.md)! | [getKernelIDSrc](ScriptIntrinsicBlend.md))`()` Get a KernelID for the Src kernel. |
+| open [Script.KernelID](../android/renderscript/Script.KernelID.md)! | [getKernelIDSrcAtop](ScriptIntrinsicBlend.md))`()` Get a KernelID for the SrcAtop kernel. |
+| open [Script.KernelID](../android/renderscript/Script.KernelID.md)! | [getKernelIDSrcIn](ScriptIntrinsicBlend.md))`()` Get a KernelID for the SrcIn kernel. |
 | --- | --- |
-| open [Script.KernelID](../android/renderscript/Script.KernelID.md)! | [getKernelIDSrcOut](../android/renderscript/ScriptIntrinsicBlend.md))`()` Get a KernelID for the SrcOut kernel. |
-| open [Script.KernelID](../android/renderscript/Script.KernelID.md)! | [getKernelIDSrcOver](../android/renderscript/ScriptIntrinsicBlend.md))`()` Get a KernelID for the SrcOver kernel. |
-| open [Script.KernelID](../android/renderscript/Script.KernelID.md)! | [getKernelIDSubtract](../android/renderscript/ScriptIntrinsicBlend.md))`()` Get a KernelID for the Subtract kernel. |
+| open [Script.KernelID](../android/renderscript/Script.KernelID.md)! | [getKernelIDSrcOut](ScriptIntrinsicBlend.md))`()` Get a KernelID for the SrcOut kernel. |
+| open [Script.KernelID](../android/renderscript/Script.KernelID.md)! | [getKernelIDSrcOver](ScriptIntrinsicBlend.md))`()` Get a KernelID for the SrcOver kernel. |
+| open [Script.KernelID](../android/renderscript/Script.KernelID.md)! | [getKernelIDSubtract](ScriptIntrinsicBlend.md))`()` Get a KernelID for the Subtract kernel. |
 | --- | --- |
-| open [Script.KernelID](../android/renderscript/Script.KernelID.md)! | [getKernelIDXor](../android/renderscript/ScriptIntrinsicBlend.md))`()` Get a KernelID for the Xor kernel. |
+| open [Script.KernelID](../android/renderscript/Script.KernelID.md)! | [getKernelIDXor](ScriptIntrinsicBlend.md))`()` Get a KernelID for the Xor kernel. |
 
 ## Public methods
 
@@ -107,16 +107,16 @@ open static fun create(
 
 **Deprecated:** *Deprecated in Java.*
 
-Supported elements types are [Element.U8_4](../android/renderscript/Element.md))
+Supported elements types are [Element.U8_4](Element.md))
 
 | Parameters ||
 |------|-----------------------------------------------------------------------------------------------------------------------------|
-| `rs` | [RenderScript](../android/renderscript/RenderScript.md)!:The RenderScript context |
-| `e` | [Element](../android/renderscript/Element.md)!:Element type for inputs and outputs |
+| `rs` | [RenderScript](RenderScript.md)!:The RenderScript context |
+| `e` | [Element](Element.md)!:Element type for inputs and outputs |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------|----------------------|
-| [ScriptIntrinsicBlend](../android/renderscript/ScriptIntrinsicBlend.md)! | ScriptIntrinsicBlend |
+| [ScriptIntrinsicBlend](ScriptIntrinsicBlend.md)! | ScriptIntrinsicBlend |
 
 ### forEachAdd
 
@@ -135,8 +135,8 @@ Sets dst = min(src + dst, 1.0)
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------|
-| `ain` | [Allocation](../android/renderscript/Allocation.md)!:The source buffer |
-| `aout` | [Allocation](../android/renderscript/Allocation.md)!:The destination buffer |
+| `ain` | [Allocation](Allocation.md)!:The source buffer |
+| `aout` | [Allocation](Allocation.md)!:The destination buffer |
 
 ### forEachAdd
 
@@ -157,8 +157,8 @@ Sets dst = min(src + dst, 1.0)
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| `ain` | [Allocation](../android/renderscript/Allocation.md)!:The source buffer |
-| `aout` | [Allocation](../android/renderscript/Allocation.md)!:The destination buffer |
+| `ain` | [Allocation](Allocation.md)!:The source buffer |
+| `aout` | [Allocation](Allocation.md)!:The destination buffer |
 | `opt` | [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!:LaunchOptions for clipping |
 | --- | --- |
 
@@ -179,8 +179,8 @@ Sets dst = {0, 0, 0, 0}
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------|
-| `ain` | [Allocation](../android/renderscript/Allocation.md)!:The source buffer |
-| `aout` | [Allocation](../android/renderscript/Allocation.md)!:The destination buffer |
+| `ain` | [Allocation](Allocation.md)!:The source buffer |
+| `aout` | [Allocation](Allocation.md)!:The destination buffer |
 
 ### forEachClear
 
@@ -201,8 +201,8 @@ Sets dst = {0, 0, 0, 0}
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| `ain` | [Allocation](../android/renderscript/Allocation.md)!:The source buffer |
-| `aout` | [Allocation](../android/renderscript/Allocation.md)!:The destination buffer |
+| `ain` | [Allocation](Allocation.md)!:The source buffer |
+| `aout` | [Allocation](Allocation.md)!:The destination buffer |
 | `opt` | [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!:LaunchOptions for clipping |
 | --- | --- |
 
@@ -223,8 +223,8 @@ Sets dst = dst This is a NOP.
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------|
-| `ain` | [Allocation](../android/renderscript/Allocation.md)!:The source buffer |
-| `aout` | [Allocation](../android/renderscript/Allocation.md)!:The destination buffer |
+| `ain` | [Allocation](Allocation.md)!:The source buffer |
+| `aout` | [Allocation](Allocation.md)!:The destination buffer |
 
 ### forEachDst
 
@@ -245,8 +245,8 @@ Sets dst = dst This is a NOP.
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| `ain` | [Allocation](../android/renderscript/Allocation.md)!:The source buffer |
-| `aout` | [Allocation](../android/renderscript/Allocation.md)!:The destination buffer |
+| `ain` | [Allocation](Allocation.md)!:The source buffer |
+| `aout` | [Allocation](Allocation.md)!:The destination buffer |
 | `opt` | [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!:LaunchOptions for clipping |
 | --- | --- |
 
@@ -267,8 +267,8 @@ dst = dst.rgb \* src.a + (1.0 - dst.a) \* src.rgb dst.a = src.a Note: Before API
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------|
-| `ain` | [Allocation](../android/renderscript/Allocation.md)!:The source buffer |
-| `aout` | [Allocation](../android/renderscript/Allocation.md)!:The destination buffer |
+| `ain` | [Allocation](Allocation.md)!:The source buffer |
+| `aout` | [Allocation](Allocation.md)!:The destination buffer |
 
 ### forEachDstAtop
 
@@ -289,8 +289,8 @@ dst = dst.rgb \* src.a + (1.0 - dst.a) \* src.rgb dst.a = src.a Note: Before API
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| `ain` | [Allocation](../android/renderscript/Allocation.md)!:The source buffer |
-| `aout` | [Allocation](../android/renderscript/Allocation.md)!:The destination buffer |
+| `ain` | [Allocation](Allocation.md)!:The source buffer |
+| `aout` | [Allocation](Allocation.md)!:The destination buffer |
 | `opt` | [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!:LaunchOptions for clipping |
 | --- | --- |
 
@@ -311,8 +311,8 @@ Sets dst = dst \* src.a
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------|
-| `ain` | [Allocation](../android/renderscript/Allocation.md)!:The source buffer |
-| `aout` | [Allocation](../android/renderscript/Allocation.md)!:The destination buffer |
+| `ain` | [Allocation](Allocation.md)!:The source buffer |
+| `aout` | [Allocation](Allocation.md)!:The destination buffer |
 
 ### forEachDstIn
 
@@ -333,8 +333,8 @@ Sets dst = dst \* src.a
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| `ain` | [Allocation](../android/renderscript/Allocation.md)!:The source buffer |
-| `aout` | [Allocation](../android/renderscript/Allocation.md)!:The destination buffer |
+| `ain` | [Allocation](Allocation.md)!:The source buffer |
+| `aout` | [Allocation](Allocation.md)!:The destination buffer |
 | `opt` | [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!:LaunchOptions for clipping |
 | --- | --- |
 
@@ -355,8 +355,8 @@ Sets dst = dst \* (1.0 - src.a)
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------|
-| `ain` | [Allocation](../android/renderscript/Allocation.md)!:The source buffer |
-| `aout` | [Allocation](../android/renderscript/Allocation.md)!:The destination buffer |
+| `ain` | [Allocation](Allocation.md)!:The source buffer |
+| `aout` | [Allocation](Allocation.md)!:The destination buffer |
 
 ### forEachDstOut
 
@@ -377,8 +377,8 @@ Sets dst = dst \* (1.0 - src.a)
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| `ain` | [Allocation](../android/renderscript/Allocation.md)!:The source buffer |
-| `aout` | [Allocation](../android/renderscript/Allocation.md)!:The destination buffer |
+| `ain` | [Allocation](Allocation.md)!:The source buffer |
+| `aout` | [Allocation](Allocation.md)!:The destination buffer |
 | `opt` | [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!:LaunchOptions for clipping |
 | --- | --- |
 
@@ -399,8 +399,8 @@ Sets dst = dst + src \* (1.0 - dst.a)
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------|
-| `ain` | [Allocation](../android/renderscript/Allocation.md)!:The source buffer |
-| `aout` | [Allocation](../android/renderscript/Allocation.md)!:The destination buffer |
+| `ain` | [Allocation](Allocation.md)!:The source buffer |
+| `aout` | [Allocation](Allocation.md)!:The destination buffer |
 
 ### forEachDstOver
 
@@ -421,8 +421,8 @@ Sets dst = dst + src \* (1.0 - dst.a)
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| `ain` | [Allocation](../android/renderscript/Allocation.md)!:The source buffer |
-| `aout` | [Allocation](../android/renderscript/Allocation.md)!:The destination buffer |
+| `ain` | [Allocation](Allocation.md)!:The source buffer |
+| `aout` | [Allocation](Allocation.md)!:The destination buffer |
 | `opt` | [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!:LaunchOptions for clipping |
 | --- | --- |
 
@@ -443,8 +443,8 @@ Sets dst = src \* dst
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------|
-| `ain` | [Allocation](../android/renderscript/Allocation.md)!:The source buffer |
-| `aout` | [Allocation](../android/renderscript/Allocation.md)!:The destination buffer |
+| `ain` | [Allocation](Allocation.md)!:The source buffer |
+| `aout` | [Allocation](Allocation.md)!:The destination buffer |
 
 ### forEachMultiply
 
@@ -465,8 +465,8 @@ Sets dst = src \* dst
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| `ain` | [Allocation](../android/renderscript/Allocation.md)!:The source buffer |
-| `aout` | [Allocation](../android/renderscript/Allocation.md)!:The destination buffer |
+| `ain` | [Allocation](Allocation.md)!:The source buffer |
+| `aout` | [Allocation](Allocation.md)!:The destination buffer |
 | `opt` | [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!:LaunchOptions for clipping |
 | --- | --- |
 
@@ -487,8 +487,8 @@ Sets dst = src
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------|
-| `ain` | [Allocation](../android/renderscript/Allocation.md)!:The source buffer |
-| `aout` | [Allocation](../android/renderscript/Allocation.md)!:The destination buffer |
+| `ain` | [Allocation](Allocation.md)!:The source buffer |
+| `aout` | [Allocation](Allocation.md)!:The destination buffer |
 
 ### forEachSrc
 
@@ -509,8 +509,8 @@ Sets dst = src
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| `ain` | [Allocation](../android/renderscript/Allocation.md)!:The source buffer |
-| `aout` | [Allocation](../android/renderscript/Allocation.md)!:The destination buffer |
+| `ain` | [Allocation](Allocation.md)!:The source buffer |
+| `aout` | [Allocation](Allocation.md)!:The destination buffer |
 | `opt` | [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!:LaunchOptions for clipping |
 | --- | --- |
 
@@ -531,8 +531,8 @@ dst.rgb = src.rgb \* dst.a + (1.0 - src.a) \* dst.rgb dst.a = dst.a
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------|
-| `ain` | [Allocation](../android/renderscript/Allocation.md)!:The source buffer |
-| `aout` | [Allocation](../android/renderscript/Allocation.md)!:The destination buffer |
+| `ain` | [Allocation](Allocation.md)!:The source buffer |
+| `aout` | [Allocation](Allocation.md)!:The destination buffer |
 
 ### forEachSrcAtop
 
@@ -553,8 +553,8 @@ dst.rgb = src.rgb \* dst.a + (1.0 - src.a) \* dst.rgb dst.a = dst.a
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| `ain` | [Allocation](../android/renderscript/Allocation.md)!:The source buffer |
-| `aout` | [Allocation](../android/renderscript/Allocation.md)!:The destination buffer |
+| `ain` | [Allocation](Allocation.md)!:The source buffer |
+| `aout` | [Allocation](Allocation.md)!:The destination buffer |
 | `opt` | [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!:LaunchOptions for clipping |
 | --- | --- |
 
@@ -575,8 +575,8 @@ Sets dst = src \* dst.a
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------|
-| `ain` | [Allocation](../android/renderscript/Allocation.md)!:The source buffer |
-| `aout` | [Allocation](../android/renderscript/Allocation.md)!:The destination buffer |
+| `ain` | [Allocation](Allocation.md)!:The source buffer |
+| `aout` | [Allocation](Allocation.md)!:The destination buffer |
 
 ### forEachSrcIn
 
@@ -597,8 +597,8 @@ Sets dst = src \* dst.a
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| `ain` | [Allocation](../android/renderscript/Allocation.md)!:The source buffer |
-| `aout` | [Allocation](../android/renderscript/Allocation.md)!:The destination buffer |
+| `ain` | [Allocation](Allocation.md)!:The source buffer |
+| `aout` | [Allocation](Allocation.md)!:The destination buffer |
 | `opt` | [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!:LaunchOptions for clipping |
 | --- | --- |
 
@@ -619,8 +619,8 @@ Sets dst = src \* (1.0 - dst.a)
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------|
-| `ain` | [Allocation](../android/renderscript/Allocation.md)!:The source buffer |
-| `aout` | [Allocation](../android/renderscript/Allocation.md)!:The destination buffer |
+| `ain` | [Allocation](Allocation.md)!:The source buffer |
+| `aout` | [Allocation](Allocation.md)!:The destination buffer |
 
 ### forEachSrcOut
 
@@ -641,8 +641,8 @@ Sets dst = src \* (1.0 - dst.a)
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| `ain` | [Allocation](../android/renderscript/Allocation.md)!:The source buffer |
-| `aout` | [Allocation](../android/renderscript/Allocation.md)!:The destination buffer |
+| `ain` | [Allocation](Allocation.md)!:The source buffer |
+| `aout` | [Allocation](Allocation.md)!:The destination buffer |
 | `opt` | [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!:LaunchOptions for clipping |
 | --- | --- |
 
@@ -663,8 +663,8 @@ Sets dst = src + dst \* (1.0 - src.a)
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------|
-| `ain` | [Allocation](../android/renderscript/Allocation.md)!:The source buffer |
-| `aout` | [Allocation](../android/renderscript/Allocation.md)!:The destination buffer |
+| `ain` | [Allocation](Allocation.md)!:The source buffer |
+| `aout` | [Allocation](Allocation.md)!:The destination buffer |
 
 ### forEachSrcOver
 
@@ -685,8 +685,8 @@ Sets dst = src + dst \* (1.0 - src.a)
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| `ain` | [Allocation](../android/renderscript/Allocation.md)!:The source buffer |
-| `aout` | [Allocation](../android/renderscript/Allocation.md)!:The destination buffer |
+| `ain` | [Allocation](Allocation.md)!:The source buffer |
+| `aout` | [Allocation](Allocation.md)!:The destination buffer |
 | `opt` | [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!:LaunchOptions for clipping |
 | --- | --- |
 
@@ -707,8 +707,8 @@ Sets dst = max(dst - src, 0.0)
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------|
-| `ain` | [Allocation](../android/renderscript/Allocation.md)!:The source buffer |
-| `aout` | [Allocation](../android/renderscript/Allocation.md)!:The destination buffer |
+| `ain` | [Allocation](Allocation.md)!:The source buffer |
+| `aout` | [Allocation](Allocation.md)!:The destination buffer |
 
 ### forEachSubtract
 
@@ -729,8 +729,8 @@ Sets dst = max(dst - src, 0.0)
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| `ain` | [Allocation](../android/renderscript/Allocation.md)!:The source buffer |
-| `aout` | [Allocation](../android/renderscript/Allocation.md)!:The destination buffer |
+| `ain` | [Allocation](Allocation.md)!:The source buffer |
+| `aout` | [Allocation](Allocation.md)!:The destination buffer |
 | `opt` | [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!:LaunchOptions for clipping |
 | --- | --- |
 
@@ -751,8 +751,8 @@ Sets dst = {src.r \^ dst.r, src.g \^ dst.g, src.b \^ dst.b, src.a \^ dst.a}
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------|
-| `ain` | [Allocation](../android/renderscript/Allocation.md)!:The source buffer |
-| `aout` | [Allocation](../android/renderscript/Allocation.md)!:The destination buffer |
+| `ain` | [Allocation](Allocation.md)!:The source buffer |
+| `aout` | [Allocation](Allocation.md)!:The destination buffer |
 
 ### forEachXor
 
@@ -773,8 +773,8 @@ Sets dst = {src.r \^ dst.r, src.g \^ dst.g, src.b \^ dst.b, src.a \^ dst.a}**Not
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| `ain` | [Allocation](../android/renderscript/Allocation.md)!:The source buffer |
-| `aout` | [Allocation](../android/renderscript/Allocation.md)!:The destination buffer |
+| `ain` | [Allocation](Allocation.md)!:The source buffer |
+| `aout` | [Allocation](Allocation.md)!:The destination buffer |
 | `opt` | [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!:LaunchOptions for clipping |
 | --- | --- |
 

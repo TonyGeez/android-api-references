@@ -11,10 +11,10 @@ open class IllegalBlockSizeException : GeneralSecurityException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
-| | | ↳ | [java.security.GeneralSecurityException](../java/security/GeneralSecurityException.md) ||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) |||
+| | | ↳ | [java.security.GeneralSecurityException](../java.security/GeneralSecurityException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [javax.crypto.IllegalBlockSizeException](../javax/crypto/IllegalBlockSizeException.md) |
+| | | | ↳ | [javax.crypto.IllegalBlockSizeException](IllegalBlockSizeException.md) |
 
 This exception is thrown when the length of data provided to a block cipher is incorrect, i.e., does not match the block size of the cipher.
 
@@ -22,8 +22,8 @@ This exception is thrown when the length of data provided to a block cipher is i
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [IllegalBlockSizeException](../javax/crypto/IllegalBlockSizeException.md))`()` Constructs an IllegalBlockSizeException with no detail message. |
-| [IllegalBlockSizeException](../javax/crypto/IllegalBlockSizeException.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an IllegalBlockSizeException with the specified detail message. |
+| [IllegalBlockSizeException](IllegalBlockSizeException.md))`()` Constructs an IllegalBlockSizeException with no detail message. |
+| [IllegalBlockSizeException](IllegalBlockSizeException.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an IllegalBlockSizeException with the specified detail message. |
 
 ## Public constructors
 

@@ -4,7 +4,7 @@ Added in [API level 17](https://developer.android.com/guide/topics/manifest/uses
 
 # EGLDisplay
 
-Kotlin| [Java](../android/opengl/EGLDisplay.md) 
+Kotlin| [Java](EGLDisplay.md) 
 | --- | --- |
 
 ```
@@ -13,8 +13,8 @@ open class EGLDisplay : EGLObjectHandle
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.opengl.EGLObjectHandle](../android/opengl/EGLObjectHandle.md) ||
-| | ↳ | [android.opengl.EGLDisplay](../android/opengl/EGLDisplay.md) |
+| ↳ | [android.opengl.EGLObjectHandle](EGLObjectHandle.md) ||
+| | ↳ | [android.opengl.EGLDisplay](EGLDisplay.md) |
 
 Wrapper class for native EGLDisplay objects.
 
@@ -22,11 +22,11 @@ Wrapper class for native EGLDisplay objects.
 
 | Public methods ||
 |----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/opengl/EGLDisplay.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](EGLDisplay.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
 
 | Inherited functions ||
 |---|---|
-| From class [EGLObjectHandle](../android/opengl/EGLObjectHandle.md) |------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHandle](../android/opengl/EGLObjectHandle.md))`()` <br /> | | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getNativeHandle](../android/opengl/EGLObjectHandle.md))`()` <br /> Returns the native handle of the wrapped EGL object. This handle can be cast to the corresponding native type on the native side. For example, EGLDisplay dpy = (EGLDisplay)handle; <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/opengl/EGLObjectHandle.md))`()` <br /> | ||
+| From class [EGLObjectHandle](EGLObjectHandle.md) |------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHandle](EGLObjectHandle.md))`()` <br /> | | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getNativeHandle](EGLObjectHandle.md))`()` <br /> Returns the native handle of the wrapped EGL object. This handle can be cast to the corresponding native type on the native side. For example, EGLDisplay dpy = (EGLDisplay)handle; <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](EGLObjectHandle.md))`()` <br /> | ||
 
 ## Public methods
 

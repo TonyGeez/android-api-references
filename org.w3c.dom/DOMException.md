@@ -11,10 +11,10 @@ open class DOMException : RuntimeException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
-| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) ||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) |||
+| | | ↳ | [java.lang.RuntimeException](../java.lang/RuntimeException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [org.w3c.dom.DOMException](../org/w3c/dom/DOMException.md) |
+| | | | ↳ | [org.w3c.dom.DOMException](DOMException.md) |
 
 DOM operations only raise exceptions in "exceptional" circumstances, i.e., when an operation is impossible to perform (either for logical reasons, because data is lost, or because the implementation has become unstable). In general, DOM methods return specific error values in ordinary processing situations, such as out-of-bound errors when using`NodeList`.
 
@@ -28,36 +28,36 @@ See also the [Document Object Model (DOM) Level 3 Core Specification](http://www
 
 | Constants ||
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [DOMSTRING_SIZE_ERR](../org/w3c/dom/DOMException.md) If the specified range of text does not fit into a`DOMString`. |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [HIERARCHY_REQUEST_ERR](../org/w3c/dom/DOMException.md) If any`Node`is inserted somewhere it doesn't belong. |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [INDEX_SIZE_ERR](../org/w3c/dom/DOMException.md) If index or size is negative, or greater than the allowed value. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [DOMSTRING_SIZE_ERR](DOMException.md) If the specified range of text does not fit into a`DOMString`. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [HIERARCHY_REQUEST_ERR](DOMException.md) If any`Node`is inserted somewhere it doesn't belong. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [INDEX_SIZE_ERR](DOMException.md) If index or size is negative, or greater than the allowed value. |
 | --- | --- |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [INUSE_ATTRIBUTE_ERR](../org/w3c/dom/DOMException.md) If an attempt is made to add an attribute that is already in use elsewhere. |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [INVALID_ACCESS_ERR](../org/w3c/dom/DOMException.md) If a parameter or an operation is not supported by the underlying object. |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [INVALID_CHARACTER_ERR](../org/w3c/dom/DOMException.md) If an invalid or illegal character is specified, such as in an XML name. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [INUSE_ATTRIBUTE_ERR](DOMException.md) If an attempt is made to add an attribute that is already in use elsewhere. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [INVALID_ACCESS_ERR](DOMException.md) If a parameter or an operation is not supported by the underlying object. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [INVALID_CHARACTER_ERR](DOMException.md) If an invalid or illegal character is specified, such as in an XML name. |
 | --- | --- |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [INVALID_MODIFICATION_ERR](../org/w3c/dom/DOMException.md) If an attempt is made to modify the type of the underlying object. |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [INVALID_STATE_ERR](../org/w3c/dom/DOMException.md) If an attempt is made to use an object that is not, or is no longer, usable. |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [NAMESPACE_ERR](../org/w3c/dom/DOMException.md) If an attempt is made to create or change an object in a way which is incorrect with regard to namespaces. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [INVALID_MODIFICATION_ERR](DOMException.md) If an attempt is made to modify the type of the underlying object. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [INVALID_STATE_ERR](DOMException.md) If an attempt is made to use an object that is not, or is no longer, usable. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [NAMESPACE_ERR](DOMException.md) If an attempt is made to create or change an object in a way which is incorrect with regard to namespaces. |
 | --- | --- |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [NOT_FOUND_ERR](../org/w3c/dom/DOMException.md) If an attempt is made to reference a`Node`in a context where it does not exist. |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [NOT_SUPPORTED_ERR](../org/w3c/dom/DOMException.md) If the implementation does not support the requested type of object or operation. |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [NO_DATA_ALLOWED_ERR](../org/w3c/dom/DOMException.md) If data is specified for a`Node`which does not support data. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [NOT_FOUND_ERR](DOMException.md) If an attempt is made to reference a`Node`in a context where it does not exist. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [NOT_SUPPORTED_ERR](DOMException.md) If the implementation does not support the requested type of object or operation. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [NO_DATA_ALLOWED_ERR](DOMException.md) If data is specified for a`Node`which does not support data. |
 | --- | --- |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [NO_MODIFICATION_ALLOWED_ERR](../org/w3c/dom/DOMException.md) If an attempt is made to modify an object where modifications are not allowed. |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [SYNTAX_ERR](../org/w3c/dom/DOMException.md) If an invalid or illegal string is specified. |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [TYPE_MISMATCH_ERR](../org/w3c/dom/DOMException.md) If the type of an object is incompatible with the expected type of the parameter associated to the object. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [NO_MODIFICATION_ALLOWED_ERR](DOMException.md) If an attempt is made to modify an object where modifications are not allowed. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [SYNTAX_ERR](DOMException.md) If an invalid or illegal string is specified. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [TYPE_MISMATCH_ERR](DOMException.md) If the type of an object is incompatible with the expected type of the parameter associated to the object. |
 | --- | --- |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [VALIDATION_ERR](../org/w3c/dom/DOMException.md) If a call to a method such as`insertBefore`or`removeChild`would make the`Node`invalid with respect to "partial validity", this exception would be raised and the operation would not be done. |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [WRONG_DOCUMENT_ERR](../org/w3c/dom/DOMException.md) If a`Node`is used in a different document than the one that created it (that doesn't support it). |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [VALIDATION_ERR](DOMException.md) If a call to a method such as`insertBefore`or`removeChild`would make the`Node`invalid with respect to "partial validity", this exception would be raised and the operation would not be done. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [WRONG_DOCUMENT_ERR](DOMException.md) If a`Node`is used in a different document than the one that created it (that doesn't support it). |
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [DOMException](../org/w3c/dom/DOMException.md))`(`code:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`, `message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| [DOMException](DOMException.md))`(`code:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`, `message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
 
 | Properties ||
 |--------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
-| [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [code](../org/w3c/dom/DOMException.md) <br /> |
+| [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [code](DOMException.md) <br /> |
 
 ## Constants
 

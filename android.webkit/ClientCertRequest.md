@@ -4,7 +4,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 
 # ClientCertRequest
 
-Kotlin | [Java](../android/webkit/ClientCertRequest.md) 
+Kotlin | [Java](ClientCertRequest.md) 
 | --- | --- |
 
 ```
@@ -13,27 +13,27 @@ abstract class ClientCertRequest
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.webkit.ClientCertRequest](../android/webkit/ClientCertRequest.md) |
+| ↳ | [android.webkit.ClientCertRequest](ClientCertRequest.md) |
 
-ClientCertRequest: The user receives an instance of this class as a parameter of [WebViewClient.onReceivedClientCertRequest](../android/webkit/WebViewClient.md)). The request includes the parameters to choose the client certificate, such as the host name and the port number requesting the cert, the acceptable key types and the principals. The user should call one of the class methods to indicate how to deal with the client certificate request. All methods should be called on UI thread. WebView caches the [proceed](../android/webkit/ClientCertRequest.md)) and [cancel](../android/webkit/ClientCertRequest.md)) responses in memory and uses them to handle future client certificate requests for the same host/port pair. The user can clear the cached data using [WebView.clearClientCertPreferences](../android/webkit/WebView.md)).
+ClientCertRequest: The user receives an instance of this class as a parameter of [WebViewClient.onReceivedClientCertRequest](WebViewClient.md)). The request includes the parameters to choose the client certificate, such as the host name and the port number requesting the cert, the acceptable key types and the principals. The user should call one of the class methods to indicate how to deal with the client certificate request. All methods should be called on UI thread. WebView caches the [proceed](ClientCertRequest.md)) and [cancel](ClientCertRequest.md)) responses in memory and uses them to handle future client certificate requests for the same host/port pair. The user can clear the cached data using [WebView.clearClientCertPreferences](WebView.md)).
 
 ## Summary
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ClientCertRequest](../android/webkit/ClientCertRequest.md))`()` <br /> |
+| [ClientCertRequest](ClientCertRequest.md))`()` <br /> |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [cancel](../android/webkit/ClientCertRequest.md))`()` Cancel this request. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getHost](../android/webkit/ClientCertRequest.md))`()` Returns the host name of the server requesting the certificate. |
-| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | [getKeyTypes](../android/webkit/ClientCertRequest.md))`()` Returns the acceptable types of asymmetric keys. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [cancel](ClientCertRequest.md))`()` Cancel this request. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getHost](ClientCertRequest.md))`()` Returns the host name of the server requesting the certificate. |
+| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | [getKeyTypes](ClientCertRequest.md))`()` Returns the acceptable types of asymmetric keys. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPort](../android/webkit/ClientCertRequest.md))`()` Returns the port number of the server requesting the certificate. |
-| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Principal](../java/security/Principal.md)!\>? | [getPrincipals](../android/webkit/ClientCertRequest.md))`()` Returns the acceptable certificate issuers for the certificate matching the private key. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [ignore](../android/webkit/ClientCertRequest.md))`()` Ignore the request for now. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPort](ClientCertRequest.md))`()` Returns the port number of the server requesting the certificate. |
+| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Principal](../java.security/Principal.md)!\>? | [getPrincipals](ClientCertRequest.md))`()` Returns the acceptable certificate issuers for the certificate matching the private key. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [ignore](ClientCertRequest.md))`()` Ignore the request for now. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [proceed](../android/webkit/ClientCertRequest.md))`(`privateKey:` ` [PrivateKey](../java/security/PrivateKey.md)!`, `chain:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [X509Certificate](../java/security/cert/X509Certificate.md)!>!`)` Proceed with the specified private key and client certificate chain. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [proceed](ClientCertRequest.md))`(`privateKey:` ` [PrivateKey](../java.security/PrivateKey.md)!`, `chain:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [X509Certificate](../java.security.cert/X509Certificate.md)!>!`)` Proceed with the specified private key and client certificate chain. |
 
 ## Public constructors
 
@@ -103,7 +103,7 @@ Returns the acceptable certificate issuers for the certificate matching the priv
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Principal](../java/security/Principal.md)!>? | This value may be `null`. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Principal](../java.security/Principal.md)!>? | This value may be `null`. |
 
 ### ignore
 

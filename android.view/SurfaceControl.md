@@ -8,7 +8,7 @@ class SurfaceControl : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.SurfaceControl](../android/view/SurfaceControl.md) |
+| ↳ | [android.view.SurfaceControl](SurfaceControl.md) |
 
 Handle to an on-screen Surface managed by the system compositor. The SurfaceControl is a combination of a buffer source, and metadata about how to display the buffers. By constructing a `https://developer.android.com/reference/kotlin/android/view/Surface` from this SurfaceControl you can submit buffers to be composited. Using `https://developer.android.com/reference/kotlin/android/view/SurfaceControl.Transaction` you can manipulate various properties of how the buffer will be displayed on-screen. SurfaceControl's are arranged into a scene-graph like hierarchy, and as such any SurfaceControl may have a parent. Geometric properties like transform, crop, and Z-ordering will be inherited from the parent, as if the child were content in the parents buffer stream.
 
@@ -70,7 +70,7 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [SurfaceControl](../android/view/SurfaceControl.md)!\> | `https://developer.android.com/reference/kotlin/android/view/SurfaceControl#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [SurfaceControl](SurfaceControl.md)!\> | `https://developer.android.com/reference/kotlin/android/view/SurfaceControl#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -233,7 +233,7 @@ Use `https://developer.android.com/reference/kotlin/android/view/SurfaceControl.
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): The executor on which the listener will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor on which the listener will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `listener` | [SurfaceControl.OnJankDataListener](../android/view/SurfaceControl.OnJankDataListener.md): The listener to add. This value cannot be `null`. |
 
 | Return ||
@@ -279,7 +279,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Protected methods

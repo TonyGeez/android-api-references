@@ -8,8 +8,8 @@ open class MockContentProvider : ContentProvider
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.content.ContentProvider](../android/content/ContentProvider.md) ||
-| | ↳ | [android.test.mock.MockContentProvider](../android/test/mock/MockContentProvider.md) |
+| ↳ | [android.content.ContentProvider](../android.content/ContentProvider.md) ||
+| | ↳ | [android.test.mock.MockContentProvider](MockContentProvider.md) |
 
 Mock implementation of ContentProvider. All methods are non-functional and throw `https://developer.android.com/reference/kotlin/java/lang/UnsupportedOperationException.html#`. Tests can extend this class to implement behavior needed for tests.
 
@@ -68,23 +68,23 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 
 | Public methods ||
 |---|---|
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ContentProviderResult](../android/content/ContentProviderResult.md)!\> | `https://developer.android.com/reference/kotlin/android/test/mock/MockContentProvider#applyBatch(java.util.ArrayList)(operations: https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation.html#!>)` <br /> |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ContentProviderResult](../android.content/ContentProviderResult.md)!\> | `https://developer.android.com/reference/kotlin/android/test/mock/MockContentProvider#applyBatch(java.util.ArrayList)(operations: https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation.html#!>)` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockContentProvider#attachInfo(android.content.Context,%20android.content.pm.ProviderInfo)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, info: https://developer.android.com/reference/kotlin/android/content/pm/ProviderInfo.html#!)` After being instantiated, this is called to tell the content provider about itself. |
 | open static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockContentProvider#attachInfoForTesting(android.content.ContentProvider,%20android.content.Context,%20android.content.pm.ProviderInfo)(provider: https://developer.android.com/reference/kotlin/android/content/ContentProvider.html#!, context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, providerInfo: https://developer.android.com/reference/kotlin/android/content/pm/ProviderInfo.html#!)` Like `https://developer.android.com/reference/kotlin/android/test/mock/MockContentProvider#attachInfo(android.content.Context,%20android.content.pm.ProviderInfo)`, but for use when directly instantiating the provider for testing. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockContentProvider#bulkInsert(android.net.Uri,%20kotlin.Array)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, values: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/android/content/ContentValues.html#!>)` If you're reluctant to implement this manually, please just call super. |
-| open [Bundle](../android/os/Bundle.md)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockContentProvider#call(kotlin.String,%20kotlin.String,%20android.os.Bundle)(method: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, request: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, args: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` <br /> |
+| open [Bundle](../android.os/Bundle.md)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockContentProvider#call(kotlin.String,%20kotlin.String,%20android.os.Bundle)(method: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, request: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, args: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockContentProvider#delete(android.net.Uri,%20kotlin.String,%20kotlin.Array)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, selection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, selectionArgs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?)` Implement this to handle requests to delete one or more rows. |
 | --- | --- |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | `https://developer.android.com/reference/kotlin/android/test/mock/MockContentProvider#getStreamTypes(android.net.Uri,%20kotlin.String)(url: https://developer.android.com/reference/kotlin/android/net/Uri.html#, mimeTypeFilter: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Called by a client to determine the types of data streams that this content provider supports for the given URI. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockContentProvider#getType(android.net.Uri)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#)` Implement this to handle requests for the MIME type of the data at the given URI. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockContentProvider#getTypeAnonymous(android.net.Uri)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#)` Implement this to handle requests for MIME type of URIs, that does not need to reveal any internal information which should be protected by any permission. |
 | --- | --- |
-| open [Uri](../android/net/Uri.md)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockContentProvider#insert(android.net.Uri,%20android.content.ContentValues)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, values: https://developer.android.com/reference/kotlin/android/content/ContentValues.html#?)` Implement this to handle requests to insert a new row. |
+| open [Uri](../android.net/Uri.md)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockContentProvider#insert(android.net.Uri,%20android.content.ContentValues)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, values: https://developer.android.com/reference/kotlin/android/content/ContentValues.html#?)` Implement this to handle requests to insert a new row. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockContentProvider#onCreate()()` Implement this to initialize your content provider on startup. |
-| open [AssetFileDescriptor](../android/content/res/AssetFileDescriptor.md)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockContentProvider#openTypedAssetFile(android.net.Uri,%20kotlin.String,%20android.os.Bundle)(url: https://developer.android.com/reference/kotlin/android/net/Uri.html#, mimeType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, opts: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Called by a client to open a read-only stream containing data of a particular MIME type. |
+| open [AssetFileDescriptor](../android.content.res/AssetFileDescriptor.md)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockContentProvider#openTypedAssetFile(android.net.Uri,%20kotlin.String,%20android.os.Bundle)(url: https://developer.android.com/reference/kotlin/android/net/Uri.html#, mimeType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, opts: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Called by a client to open a read-only stream containing data of a particular MIME type. |
 | --- | --- |
-| open [Cursor](../android/database/Cursor.md)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockContentProvider#query(android.net.Uri,%20kotlin.Array,%20kotlin.String,%20kotlin.Array,%20kotlin.String)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, projection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?, selection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, selectionArgs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?, sortOrder: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Implement this to handle query requests from clients. |
+| open [Cursor](../android.database/Cursor.md)? | `https://developer.android.com/reference/kotlin/android/test/mock/MockContentProvider#query(android.net.Uri,%20kotlin.Array,%20kotlin.String,%20kotlin.Array,%20kotlin.String)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, projection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?, selection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, selectionArgs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?, sortOrder: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Implement this to handle query requests from clients. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/test/mock/MockContentProvider#update(android.net.Uri,%20android.content.ContentValues,%20kotlin.String,%20kotlin.Array)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, values: https://developer.android.com/reference/kotlin/android/content/ContentValues.html#?, selection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, selectionArgs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?)` Implement this to handle requests to update one or more rows. |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/content/ContentProvider.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/android/content/ContentProviderResult.html#!>` `https://developer.android.com/reference/kotlin/android/content/ContentProvider.html#applyBatch(kotlin.String,%20java.util.ArrayList)(authority: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, operations: https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://developer.android.com/reference/kotlin/android/content/ContentProviderOperation.html#!>)`
@@ -569,11 +569,11 @@ A constructor which initialize four member variables which `https://developer.an
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md)!: A Context object which should be some mock instance (like the instance of `https://developer.android.com/reference/kotlin/android/test/mock/MockContext`). |
+| `context` | [Context](../android.content/Context.md)!: A Context object which should be some mock instance (like the instance of `https://developer.android.com/reference/kotlin/android/test/mock/MockContext`). |
 | `readPermission` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The read permision you want this instance should have in the test, which is available via `https://developer.android.com/reference/kotlin/android/content/ContentProvider.html#getReadPermission()`. |
 | `writePermission` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The write permission you want this instance should have in the test, which is available via `https://developer.android.com/reference/kotlin/android/content/ContentProvider.html#getWritePermission()`. |
 | --- | --- |
-| `pathPermissions` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [PathPermission](../android/content/pm/PathPermission.md)!\>!: The PathPermissions you want this instance should have in the test, which is available via `https://developer.android.com/reference/kotlin/android/content/ContentProvider.html#getPathPermissions()`. |
+| `pathPermissions` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [PathPermission](../android.content.pm/PathPermission.md)!\>!: The PathPermissions you want this instance should have in the test, which is available via `https://developer.android.com/reference/kotlin/android/content/ContentProvider.html#getPathPermissions()`. |
 
 ## Protected constructors
 
@@ -599,7 +599,7 @@ open fun applyBatch(operations: ArrayList<ContentProviderOperation!>): Array<Co
 
 | Parameters ||
 |---|---|
-| `operations` | [ArrayList](../java/util/ArrayList.md)\< [ContentProviderOperation](../android/content/ContentProviderOperation.md)!\>: This value cannot be `null`. |
+| `operations` | [ArrayList](../java.util/ArrayList.md)\< [ContentProviderOperation](../android.content/ContentProviderOperation.md)!\>: This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -620,8 +620,8 @@ After being instantiated, this is called to tell the content provider about itse
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md)!: The context this provider is running in |
-| `info` | [ProviderInfo](../android/content/pm/ProviderInfo.md)!: Registered information about this content provider |
+| `context` | [Context](../android.content/Context.md)!: The context this provider is running in |
+| `info` | [ProviderInfo](../android.content.pm/ProviderInfo.md)!: Registered information about this content provider |
 
 ### attachInfoForTesting
 
@@ -657,8 +657,8 @@ If you're reluctant to implement this manually, please just call super.bulkInser
 
 | Parameters ||
 |---|---|
-| `uri` | [Uri](../android/net/Uri.md): The content:// URI of the insertion request. This value cannot be `null`. |
-| `values` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ContentValues](../android/content/ContentValues.md)!\>: An array of sets of column_name/value pairs to add to the database. This must not be `null`. |
+| `uri` | [Uri](../android.net/Uri.md): The content:// URI of the insertion request. This value cannot be `null`. |
+| `values` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ContentValues](../android.content/ContentValues.md)!\>: An array of sets of column_name/value pairs to add to the database. This must not be `null`. |
 
 | Return ||
 |---|---|
@@ -683,7 +683,7 @@ open fun call(
 | `extras` | This value may be `null`. |
 | --- | --- |
 | `request` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: This value may be `null`. |
-| `args` | [Bundle](../android/os/Bundle.md)?: This value may be `null`. |
+| `args` | [Bundle](../android.os/Bundle.md)?: This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -707,7 +707,7 @@ The implementation is responsible for parsing out a row ID at the end of the URI
 
 | Parameters ||
 |---|---|
-| `uri` | [Uri](../android/net/Uri.md): The full URI to query, including a row ID (if a specific record is requested). This value cannot be `null`. |
+| `uri` | [Uri](../android.net/Uri.md): The full URI to query, including a row ID (if a specific record is requested). This value cannot be `null`. |
 | `selection` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: An optional restriction to apply to rows when deleting. This value may be `null`. |
 | `selectionArgs` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?: This value may be `null`. |
 | --- | --- |
@@ -758,7 +758,7 @@ If your mime type reveals details that should be protected, then you should prot
 
 | Parameters ||
 |---|---|
-| `uri` | [Uri](../android/net/Uri.md): the URI to query. This value cannot be `null`. |
+| `uri` | [Uri](../android.net/Uri.md): the URI to query. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -778,7 +778,7 @@ If your mime type reveals details that should be protected, then you should prot
 
 | Parameters ||
 |---|---|
-| `uri` | [Uri](../android/net/Uri.md): the URI to query. This value cannot be `null`. |
+| `uri` | [Uri](../android.net/Uri.md): the URI to query. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -799,8 +799,8 @@ Implement this to handle requests to insert a new row. As a courtesy, call `http
 
 | Parameters ||
 |---|---|
-| `uri` | [Uri](../android/net/Uri.md): The content:// URI of the insertion request. This value cannot be `null`. |
-| `values` | [ContentValues](../android/content/ContentValues.md)?: A set of column_name/value pairs to add to the database. This value may be `null`. |
+| `uri` | [Uri](../android.net/Uri.md): The content:// URI of the insertion request. This value cannot be `null`. |
+| `values` | [ContentValues](../android.content/ContentValues.md)?: A set of column_name/value pairs to add to the database. This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -850,7 +850,7 @@ For better interoperability with other applications, it is recommended that for 
 |---|---|
 | `uri` | The data in the content provider being queried. This value cannot be `null`. |
 | `mimeTypeFilter` | The type of data the client desires. May be a pattern, such as \*/\*, if the caller does not have specific type requirements; in this case the content provider will pick its best type matching the pattern. This value cannot be `null`. |
-| `opts` | [Bundle](../android/os/Bundle.md)?: Additional options from the client. The definitions of these are specific to the content provider being called. This value may be `null`. |
+| `opts` | [Bundle](../android.os/Bundle.md)?: Additional options from the client. The definitions of these are specific to the content provider being called. This value may be `null`. |
 | --- | --- |
 
 | Return ||
@@ -932,7 +932,7 @@ Example implementation:
 
 | Parameters ||
 |---|---|
-| `uri` | [Uri](../android/net/Uri.md): The URI to query. This will be the full URI sent by the client; if the client is requesting a specific record, the URI will end in a record number that the implementation should parse and add to a WHERE or HAVING clause, specifying that _id value. This value cannot be `null`. |
+| `uri` | [Uri](../android.net/Uri.md): The URI to query. This will be the full URI sent by the client; if the client is requesting a specific record, the URI will end in a record number that the implementation should parse and add to a WHERE or HAVING clause, specifying that _id value. This value cannot be `null`. |
 | `projection` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?: The list of columns to put into the cursor. If `null` all columns are included. |
 | `selection` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: A selection criteria to apply when filtering rows. If `null` then all rows are included. |
 | --- | --- |
@@ -960,8 +960,8 @@ Implement this to handle requests to update one or more rows. The implementation
 
 | Parameters ||
 |---|---|
-| `uri` | [Uri](../android/net/Uri.md): The URI to query. This can potentially have a record ID if this is an update request for a specific record. This value cannot be `null`. |
-| `values` | [ContentValues](../android/content/ContentValues.md)?: A set of column_name/value pairs to update in the database. This value may be `null`. |
+| `uri` | [Uri](../android.net/Uri.md): The URI to query. This can potentially have a record ID if this is an update request for a specific record. This value cannot be `null`. |
+| `values` | [ContentValues](../android.content/ContentValues.md)?: A set of column_name/value pairs to update in the database. This value may be `null`. |
 | `selection` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: An optional filter to match rows to update. This value may be `null`. |
 | --- | --- |
 | `selectionArgs` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?: This value may be `null`. |

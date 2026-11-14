@@ -2,7 +2,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # GradientDrawable
 
-Kotlin | [Java](../android/graphics/drawable/GradientDrawable.md) 
+Kotlin | [Java](GradientDrawable.md) 
 | --- | --- |
 
 ```
@@ -11,8 +11,8 @@ open class GradientDrawable : Drawable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.graphics.drawable.Drawable](../android/graphics/drawable/Drawable.md) ||
-| | ↳ | [android.graphics.drawable.GradientDrawable](../android/graphics/drawable/GradientDrawable.md) |
+| ↳ | [android.graphics.drawable.Drawable](Drawable.md) ||
+| | ↳ | [android.graphics.drawable.GradientDrawable](GradientDrawable.md) |
 
 A Drawable with a color gradient for buttons, backgrounds, etc.
 
@@ -26,152 +26,152 @@ It can be defined in an XML file with the `<shape>` element. For more informatio
 
 | XML attributes ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| [`android:angle`](../android/graphics/drawable/GradientDrawable.md) | Angle of the gradient, used only with linear gradient. |
-| [`android:bottom`](../android/graphics/drawable/GradientDrawable.md) | Amount of bottom padding inside the gradient shape. |
-| [`android:centerColor`](../android/graphics/drawable/GradientDrawable.md) | Optional center color. |
+| [`android:angle`](GradientDrawable.md) | Angle of the gradient, used only with linear gradient. |
+| [`android:bottom`](GradientDrawable.md) | Amount of bottom padding inside the gradient shape. |
+| [`android:centerColor`](GradientDrawable.md) | Optional center color. |
 | --- | --- |
-| [`android:centerX`](../android/graphics/drawable/GradientDrawable.md) | X-position of the center point of the gradient within the shape as a fraction of the width. |
-| [`android:centerY`](../android/graphics/drawable/GradientDrawable.md) | Y-position of the center point of the gradient within the shape as a fraction of the height. |
-| [`android:color`](../android/graphics/drawable/GradientDrawable.md) | Solid color for the gradient shape. |
+| [`android:centerX`](GradientDrawable.md) | X-position of the center point of the gradient within the shape as a fraction of the width. |
+| [`android:centerY`](GradientDrawable.md) | Y-position of the center point of the gradient within the shape as a fraction of the height. |
+| [`android:color`](GradientDrawable.md) | Solid color for the gradient shape. |
 | --- | --- |
-| [`android:color`](../android/graphics/drawable/GradientDrawable.md) | Color of the gradient shape's stroke. |
-| [`android:dashGap`](../android/graphics/drawable/GradientDrawable.md) | Gap between dashes in the stroke. |
-| [`android:dashWidth`](../android/graphics/drawable/GradientDrawable.md) | Length of a dash in the stroke. |
+| [`android:color`](GradientDrawable.md) | Color of the gradient shape's stroke. |
+| [`android:dashGap`](GradientDrawable.md) | Gap between dashes in the stroke. |
+| [`android:dashWidth`](GradientDrawable.md) | Length of a dash in the stroke. |
 | --- | --- |
-| [`android:endColor`](../android/graphics/drawable/GradientDrawable.md) | End color of the gradient. |
-| [`android:gradientRadius`](../android/graphics/drawable/GradientDrawable.md) | Radius of the gradient, used only with radial gradient. |
-| [`android:height`](../android/graphics/drawable/GradientDrawable.md) | Height of the gradient shape. |
+| [`android:endColor`](GradientDrawable.md) | End color of the gradient. |
+| [`android:gradientRadius`](GradientDrawable.md) | Radius of the gradient, used only with radial gradient. |
+| [`android:height`](GradientDrawable.md) | Height of the gradient shape. |
 | --- | --- |
-| [`android:innerRadius`](../android/graphics/drawable/GradientDrawable.md) | Inner radius of the ring. |
-| [`android:innerRadiusRatio`](../android/graphics/drawable/GradientDrawable.md) | Inner radius of the ring expressed as a ratio of the ring's width. |
-| [`android:left`](../android/graphics/drawable/GradientDrawable.md) | Amount of left padding inside the gradient shape. |
+| [`android:innerRadius`](GradientDrawable.md) | Inner radius of the ring. |
+| [`android:innerRadiusRatio`](GradientDrawable.md) | Inner radius of the ring expressed as a ratio of the ring's width. |
+| [`android:left`](GradientDrawable.md) | Amount of left padding inside the gradient shape. |
 | --- | --- |
-| [`android:right`](../android/graphics/drawable/GradientDrawable.md) | Amount of right padding inside the gradient shape. |
-| [`android:shape`](../android/graphics/drawable/GradientDrawable.md) | Indicates what shape to fill with a gradient. |
-| [`android:startColor`](../android/graphics/drawable/GradientDrawable.md) | Start color of the gradient. |
+| [`android:right`](GradientDrawable.md) | Amount of right padding inside the gradient shape. |
+| [`android:shape`](GradientDrawable.md) | Indicates what shape to fill with a gradient. |
+| [`android:startColor`](GradientDrawable.md) | Start color of the gradient. |
 | --- | --- |
-| [`android:thickness`](../android/graphics/drawable/GradientDrawable.md) | Thickness of the ring. |
-| [`android:thicknessRatio`](../android/graphics/drawable/GradientDrawable.md) | Thickness of the ring expressed as a ratio of the ring's width. |
-| [`android:top`](../android/graphics/drawable/GradientDrawable.md) | Amount of top padding inside the gradient shape. |
+| [`android:thickness`](GradientDrawable.md) | Thickness of the ring. |
+| [`android:thicknessRatio`](GradientDrawable.md) | Thickness of the ring expressed as a ratio of the ring's width. |
+| [`android:top`](GradientDrawable.md) | Amount of top padding inside the gradient shape. |
 | --- | --- |
-| [`android:type`](../android/graphics/drawable/GradientDrawable.md) | Type of gradient. |
-| [`android:useLevel`](../android/graphics/drawable/GradientDrawable.md) | Whether the drawable level value (see android.graphics.drawable.Drawable#getLevel() ) is used to scale the shape. |
-| [`android:useLevel`](../android/graphics/drawable/GradientDrawable.md) | Whether the drawable level value (see android.graphics.drawable.Drawable#getLevel() ) is used to scale the gradient. |
+| [`android:type`](GradientDrawable.md) | Type of gradient. |
+| [`android:useLevel`](GradientDrawable.md) | Whether the drawable level value (see android.graphics.drawable.Drawable#getLevel() ) is used to scale the shape. |
+| [`android:useLevel`](GradientDrawable.md) | Whether the drawable level value (see android.graphics.drawable.Drawable#getLevel() ) is used to scale the gradient. |
 | --- | --- |
-| [`android:visible`](../android/graphics/drawable/GradientDrawable.md) | Indicates whether the drawable should intially be visible. |
-| [`android:width`](../android/graphics/drawable/GradientDrawable.md) | Width of the gradient shape. |
-| [`android:width`](../android/graphics/drawable/GradientDrawable.md) | Width of the gradient shape's stroke. |
+| [`android:visible`](GradientDrawable.md) | Indicates whether the drawable should intially be visible. |
+| [`android:width`](GradientDrawable.md) | Width of the gradient shape. |
+| [`android:width`](GradientDrawable.md) | Width of the gradient shape's stroke. |
 | --- | --- |
 
 | Constants ||
 |-----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ARC](../android/graphics/drawable/GradientDrawable.md) Shape is an arc. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LINE](../android/graphics/drawable/GradientDrawable.md) Shape is a line |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LINEAR_GRADIENT](../android/graphics/drawable/GradientDrawable.md) Gradient is linear (default.) |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ARC](GradientDrawable.md) Shape is an arc. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LINE](GradientDrawable.md) Shape is a line |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LINEAR_GRADIENT](GradientDrawable.md) Gradient is linear (default.) |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OVAL](../android/graphics/drawable/GradientDrawable.md) Shape is an ellipse |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RADIAL_GRADIENT](../android/graphics/drawable/GradientDrawable.md) Gradient is circular. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RECTANGLE](../android/graphics/drawable/GradientDrawable.md) Shape is a rectangle, possibly with rounded corners |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OVAL](GradientDrawable.md) Shape is an ellipse |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RADIAL_GRADIENT](GradientDrawable.md) Gradient is circular. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RECTANGLE](GradientDrawable.md) Shape is a rectangle, possibly with rounded corners |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RING](../android/graphics/drawable/GradientDrawable.md) Shape is a ring. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SWEEP_GRADIENT](../android/graphics/drawable/GradientDrawable.md) Gradient is a sweep. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RING](GradientDrawable.md) Shape is a ring. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SWEEP_GRADIENT](GradientDrawable.md) Gradient is a sweep. |
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [GradientDrawable](../android/graphics/drawable/GradientDrawable.md))`()` <br /> |
-| [GradientDrawable](../android/graphics/drawable/GradientDrawable.md))`(`orientation:` ` [GradientDrawable.Orientation](../android/graphics/drawable/GradientDrawable.Orientation.md)!`, `colors:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` Create a new gradient drawable given an orientation and an array of colors for the gradient. |
+| [GradientDrawable](GradientDrawable.md))`()` <br /> |
+| [GradientDrawable](GradientDrawable.md))`(`orientation:` ` [GradientDrawable.Orientation](../android/graphics/drawable/GradientDrawable.Orientation.md)!`, `colors:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` Create a new gradient drawable given an orientation and an array of colors for the gradient. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [applyTheme](../android/graphics/drawable/GradientDrawable.md))`(`t:` ` [Resources.Theme](../android/content/res/Resources.Theme.md)`)` Applies the specified theme to this Drawable and its children. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [canApplyTheme](../android/graphics/drawable/GradientDrawable.md))`()` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [draw](../android/graphics/drawable/GradientDrawable.md))`(`canvas:` ` [Canvas](../android/graphics/Canvas.md)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [applyTheme](GradientDrawable.md))`(`t:` ` [Resources.Theme](../android/content/res/Resources.Theme.md)`)` Applies the specified theme to this Drawable and its children. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [canApplyTheme](GradientDrawable.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [draw](GradientDrawable.md))`(`canvas:` ` [Canvas](../android.graphics/Canvas.md)`)` <br /> |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAlpha](../android/graphics/drawable/GradientDrawable.md))`()` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getChangingConfigurations](../android/graphics/drawable/GradientDrawable.md))`()` Return a mask of the configuration parameters for which this drawable may change, requiring that it be re-created. |
-| open [ColorStateList](../android/content/res/ColorStateList.md)? | [getColor](../android/graphics/drawable/GradientDrawable.md))`()` Returns the color state list used to fill the shape, or `null` if the shape is filled with a gradient or has no fill color. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAlpha](GradientDrawable.md))`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getChangingConfigurations](GradientDrawable.md))`()` Return a mask of the configuration parameters for which this drawable may change, requiring that it be re-created. |
+| open [ColorStateList](../android.content.res/ColorStateList.md)? | [getColor](GradientDrawable.md))`()` Returns the color state list used to fill the shape, or `null` if the shape is filled with a gradient or has no fill color. |
 | --- | --- |
-| open [ColorFilter](../android/graphics/ColorFilter.md)? | [getColorFilter](../android/graphics/drawable/GradientDrawable.md))`()` Returns the current color filter, or `null` if none set. |
-| open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)? | [getColors](../android/graphics/drawable/GradientDrawable.md))`()` Returns the colors used to draw the gradient, or `null` if the gradient is drawn using a single color or no colors. |
-| open [Drawable.ConstantState](../android/graphics/drawable/Drawable.ConstantState.md)? | [getConstantState](../android/graphics/drawable/GradientDrawable.md))`()` <br /> |
+| open [ColorFilter](../android.graphics/ColorFilter.md)? | [getColorFilter](GradientDrawable.md))`()` Returns the current color filter, or `null` if none set. |
+| open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)? | [getColors](GradientDrawable.md))`()` Returns the colors used to draw the gradient, or `null` if the gradient is drawn using a single color or no colors. |
+| open [Drawable.ConstantState](../android/graphics/drawable/Drawable.ConstantState.md)? | [getConstantState](GradientDrawable.md))`()` <br /> |
 | --- | --- |
-| open [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)? | [getCornerRadii](../android/graphics/drawable/GradientDrawable.md))`()` Returns the radii for each of the 4 corners. |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getCornerRadius](../android/graphics/drawable/GradientDrawable.md))`()` Returns the radius for the corners of the gradient, that was previously set with [setCornerRadius(float)](../android/graphics/drawable/GradientDrawable.md)). |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getGradientCenterX](../android/graphics/drawable/GradientDrawable.md))`()` Returns the X-position of the center of the gradient as a fraction of the width. |
+| open [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)? | [getCornerRadii](GradientDrawable.md))`()` Returns the radii for each of the 4 corners. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getCornerRadius](GradientDrawable.md))`()` Returns the radius for the corners of the gradient, that was previously set with [setCornerRadius(float)](GradientDrawable.md)). |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getGradientCenterX](GradientDrawable.md))`()` Returns the X-position of the center of the gradient as a fraction of the width. |
 | --- | --- |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getGradientCenterY](../android/graphics/drawable/GradientDrawable.md))`()` Returns the Y-position of the center of this gradient as a fraction of the height. |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getGradientRadius](../android/graphics/drawable/GradientDrawable.md))`()` Returns the radius of the gradient in pixels. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getGradientType](../android/graphics/drawable/GradientDrawable.md))`()` Returns the type of gradient used by this drawable, one of [LINEAR_GRADIENT](../android/graphics/drawable/GradientDrawable.md), [RADIAL_GRADIENT](../android/graphics/drawable/GradientDrawable.md), or [SWEEP_GRADIENT](../android/graphics/drawable/GradientDrawable.md). |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getGradientCenterY](GradientDrawable.md))`()` Returns the Y-position of the center of this gradient as a fraction of the height. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getGradientRadius](GradientDrawable.md))`()` Returns the radius of the gradient in pixels. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getGradientType](GradientDrawable.md))`()` Returns the type of gradient used by this drawable, one of [LINEAR_GRADIENT](GradientDrawable.md), [RADIAL_GRADIENT](GradientDrawable.md), or [SWEEP_GRADIENT](GradientDrawable.md). |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInnerRadius](../android/graphics/drawable/GradientDrawable.md))`()` Return the inner radius of the ring The units of this value are pixels. |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getInnerRadiusRatio](../android/graphics/drawable/GradientDrawable.md))`()` Return the inner radius of the ring expressed as a ratio of the ring's width. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIntrinsicHeight](../android/graphics/drawable/GradientDrawable.md))`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInnerRadius](GradientDrawable.md))`()` Return the inner radius of the ring The units of this value are pixels. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getInnerRadiusRatio](GradientDrawable.md))`()` Return the inner radius of the ring expressed as a ratio of the ring's width. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIntrinsicHeight](GradientDrawable.md))`()` <br /> |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIntrinsicWidth](../android/graphics/drawable/GradientDrawable.md))`()` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOpacity](../android/graphics/drawable/GradientDrawable.md))`()` <br /> |
-| open [Insets](../android/graphics/Insets.md) | [getOpticalInsets](../android/graphics/drawable/GradientDrawable.md))`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIntrinsicWidth](GradientDrawable.md))`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOpacity](GradientDrawable.md))`()` <br /> |
+| open [Insets](../android.graphics/Insets.md) | [getOpticalInsets](GradientDrawable.md))`()` <br /> |
 | --- | --- |
-| open [GradientDrawable.Orientation](../android/graphics/drawable/GradientDrawable.Orientation.md)! | [getOrientation](../android/graphics/drawable/GradientDrawable.md))`()` Returns the orientation of the gradient defined in this drawable. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getOutline](../android/graphics/drawable/GradientDrawable.md))`(`outline:` ` [Outline](../android/graphics/Outline.md)`)` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getPadding](../android/graphics/drawable/GradientDrawable.md))`(`padding:` ` [Rect](../android/graphics/Rect.md)`)` <br /> |
+| open [GradientDrawable.Orientation](../android/graphics/drawable/GradientDrawable.Orientation.md)! | [getOrientation](GradientDrawable.md))`()` Returns the orientation of the gradient defined in this drawable. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getOutline](GradientDrawable.md))`(`outline:` ` [Outline](../android.graphics/Outline.md)`)` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getPadding](GradientDrawable.md))`(`padding:` ` [Rect](../android.graphics/Rect.md)`)` <br /> |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getShape](../android/graphics/drawable/GradientDrawable.md))`()` Returns the type of shape used by this drawable, one of [LINE](../android/graphics/drawable/GradientDrawable.md), [OVAL](../android/graphics/drawable/GradientDrawable.md), [RECTANGLE](../android/graphics/drawable/GradientDrawable.md) or [RING](../android/graphics/drawable/GradientDrawable.md). |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getThickness](../android/graphics/drawable/GradientDrawable.md))`()` Return the thickness of the ring The units of this value are pixels. |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getThicknessRatio](../android/graphics/drawable/GradientDrawable.md))`()` Return the thickness ratio of the ring expressed as a ratio of the ring's width. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getShape](GradientDrawable.md))`()` Returns the type of shape used by this drawable, one of [LINE](GradientDrawable.md), [OVAL](GradientDrawable.md), [RECTANGLE](GradientDrawable.md) or [RING](GradientDrawable.md). |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getThickness](GradientDrawable.md))`()` Return the thickness of the ring The units of this value are pixels. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getThicknessRatio](GradientDrawable.md))`()` Return the thickness ratio of the ring expressed as a ratio of the ring's width. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getUseLevel](../android/graphics/drawable/GradientDrawable.md))`()` Returns whether this drawable's `level` property will be used to scale the gradient. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasFocusStateSpecified](../android/graphics/drawable/GradientDrawable.md))`()` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [inflate](../android/graphics/drawable/GradientDrawable.md))`(`r:` ` [Resources](../android/content/res/Resources.md)`, `parser:` ` [XmlPullParser](../org/xmlpull/v1/XmlPullParser.md)`, `attrs:` ` [AttributeSet](../android/util/AttributeSet.md)`, `theme:` ` [Resources.Theme](../android/content/res/Resources.Theme.md)?`)` Inflate this Drawable from an XML resource optionally styled by a theme. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getUseLevel](GradientDrawable.md))`()` Returns whether this drawable's `level` property will be used to scale the gradient. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasFocusStateSpecified](GradientDrawable.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [inflate](GradientDrawable.md))`(`r:` ` [Resources](../android.content.res/Resources.md)`, `parser:` ` [XmlPullParser](../org.xmlpull.v1/XmlPullParser.md)`, `attrs:` ` [AttributeSet](../android.util/AttributeSet.md)`, `theme:` ` [Resources.Theme](../android/content/res/Resources.Theme.md)?`)` Inflate this Drawable from an XML resource optionally styled by a theme. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isStateful](../android/graphics/drawable/GradientDrawable.md))`()` <br /> |
-| open [Drawable](../android/graphics/drawable/Drawable.md) | [mutate](../android/graphics/drawable/GradientDrawable.md))`()` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAlpha](../android/graphics/drawable/GradientDrawable.md))`(`alpha:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isStateful](GradientDrawable.md))`()` <br /> |
+| open [Drawable](Drawable.md) | [mutate](GradientDrawable.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAlpha](GradientDrawable.md))`(`alpha:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setColor](../android/graphics/drawable/GradientDrawable.md))`(`colorStateList:` ` [ColorStateList](../android/content/res/ColorStateList.md)?`)` Changes this drawable to use a single color state list instead of a gradient. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setColor](../android/graphics/drawable/GradientDrawable.md))`(`argb:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Changes this drawable to use a single color instead of a gradient. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setColorFilter](../android/graphics/drawable/GradientDrawable.md))`(`colorFilter:` ` [ColorFilter](../android/graphics/ColorFilter.md)?`)` Specify an optional color filter for the drawable. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setColor](GradientDrawable.md))`(`colorStateList:` ` [ColorStateList](../android.content.res/ColorStateList.md)?`)` Changes this drawable to use a single color state list instead of a gradient. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setColor](GradientDrawable.md))`(`argb:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Changes this drawable to use a single color instead of a gradient. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setColorFilter](GradientDrawable.md))`(`colorFilter:` ` [ColorFilter](../android.graphics/ColorFilter.md)?`)` Specify an optional color filter for the drawable. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setColors](../android/graphics/drawable/GradientDrawable.md))`(`colors:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)?`)` Sets the colors used to draw the gradient. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setColors](../android/graphics/drawable/GradientDrawable.md))`(`colors:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)?`, `offsets:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)?`)` Sets the colors and offsets used to draw the gradient. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCornerRadii](../android/graphics/drawable/GradientDrawable.md))`(`radii:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)?`)` Specifies radii for each of the 4 corners. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setColors](GradientDrawable.md))`(`colors:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)?`)` Sets the colors used to draw the gradient. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setColors](GradientDrawable.md))`(`colors:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)?`, `offsets:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)?`)` Sets the colors and offsets used to draw the gradient. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCornerRadii](GradientDrawable.md))`(`radii:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)?`)` Specifies radii for each of the 4 corners. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCornerRadius](../android/graphics/drawable/GradientDrawable.md))`(`radius:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Specifies the radius for the corners of the gradient. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDither](../android/graphics/drawable/GradientDrawable.md))`(`dither:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setGradientCenter](../android/graphics/drawable/GradientDrawable.md))`(`x:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `y:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the position of the center of the gradient as a fraction of the width and height. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCornerRadius](GradientDrawable.md))`(`radius:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Specifies the radius for the corners of the gradient. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDither](GradientDrawable.md))`(`dither:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setGradientCenter](GradientDrawable.md))`(`x:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `y:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the position of the center of the gradient as a fraction of the width and height. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setGradientRadius](../android/graphics/drawable/GradientDrawable.md))`(`gradientRadius:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the radius of the gradient. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setGradientType](../android/graphics/drawable/GradientDrawable.md))`(`gradient:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the type of gradient used by this drawable. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInnerRadius](../android/graphics/drawable/GradientDrawable.md))`(`innerRadius:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Configure the inner radius of the ring. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setGradientRadius](GradientDrawable.md))`(`gradientRadius:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the radius of the gradient. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setGradientType](GradientDrawable.md))`(`gradient:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the type of gradient used by this drawable. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInnerRadius](GradientDrawable.md))`(`innerRadius:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Configure the inner radius of the ring. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInnerRadiusRatio](../android/graphics/drawable/GradientDrawable.md))`(`innerRadiusRatio:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Inner radius of the ring expressed as a ratio of the ring's width. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOrientation](../android/graphics/drawable/GradientDrawable.md))`(`orientation:` ` [GradientDrawable.Orientation](../android/graphics/drawable/GradientDrawable.Orientation.md)!`)` Sets the orientation of the gradient defined in this drawable. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPadding](../android/graphics/drawable/GradientDrawable.md))`(`left:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `top:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `right:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `bottom:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Configure the padding of the gradient shape |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInnerRadiusRatio](GradientDrawable.md))`(`innerRadiusRatio:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Inner radius of the ring expressed as a ratio of the ring's width. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOrientation](GradientDrawable.md))`(`orientation:` ` [GradientDrawable.Orientation](../android/graphics/drawable/GradientDrawable.Orientation.md)!`)` Sets the orientation of the gradient defined in this drawable. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPadding](GradientDrawable.md))`(`left:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `top:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `right:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `bottom:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Configure the padding of the gradient shape |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setShape](../android/graphics/drawable/GradientDrawable.md))`(`shape:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the type of shape used to draw the gradient. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSize](../android/graphics/drawable/GradientDrawable.md))`(`width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `height:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the size of the shape drawn by this drawable. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStroke](../android/graphics/drawable/GradientDrawable.md))`(`width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `colorStateList:` ` [ColorStateList](../android/content/res/ColorStateList.md)!`)` Set the stroke width and color state list for the drawable. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setShape](GradientDrawable.md))`(`shape:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the type of shape used to draw the gradient. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSize](GradientDrawable.md))`(`width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `height:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the size of the shape drawn by this drawable. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStroke](GradientDrawable.md))`(`width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `colorStateList:` ` [ColorStateList](../android.content.res/ColorStateList.md)!`)` Set the stroke width and color state list for the drawable. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStroke](../android/graphics/drawable/GradientDrawable.md))`(`width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `colorStateList:` ` [ColorStateList](../android/content/res/ColorStateList.md)!`, `dashWidth:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `dashGap:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Set the stroke width and color state list for the drawable. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStroke](../android/graphics/drawable/GradientDrawable.md))`(`width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `color:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the stroke width and color for the drawable. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStroke](../android/graphics/drawable/GradientDrawable.md))`(`width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `color:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dashWidth:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `dashGap:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Set the stroke width and color for the drawable. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStroke](GradientDrawable.md))`(`width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `colorStateList:` ` [ColorStateList](../android.content.res/ColorStateList.md)!`, `dashWidth:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `dashGap:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Set the stroke width and color state list for the drawable. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStroke](GradientDrawable.md))`(`width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `color:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the stroke width and color for the drawable. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStroke](GradientDrawable.md))`(`width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `color:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dashWidth:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `dashGap:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Set the stroke width and color for the drawable. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setThickness](../android/graphics/drawable/GradientDrawable.md))`(`thickness:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Configure the thickness of the ring. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setThicknessRatio](../android/graphics/drawable/GradientDrawable.md))`(`thicknessRatio:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Configure the thickness of the ring expressed as a ratio of the ring's width. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTintBlendMode](../android/graphics/drawable/GradientDrawable.md))`(`blendMode:` ` [BlendMode](../android/graphics/BlendMode.md)!`)` Specifies a tint blending mode for this drawable. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setThickness](GradientDrawable.md))`(`thickness:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Configure the thickness of the ring. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setThicknessRatio](GradientDrawable.md))`(`thicknessRatio:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Configure the thickness of the ring expressed as a ratio of the ring's width. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTintBlendMode](GradientDrawable.md))`(`blendMode:` ` [BlendMode](../android.graphics/BlendMode.md)!`)` Specifies a tint blending mode for this drawable. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTintList](../android/graphics/drawable/GradientDrawable.md))`(`tint:` ` [ColorStateList](../android/content/res/ColorStateList.md)?`)` Specifies tint color for this drawable as a color state list. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setUseLevel](../android/graphics/drawable/GradientDrawable.md))`(`useLevel:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets whether this drawable's `level` property will be used to scale the gradient. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTintList](GradientDrawable.md))`(`tint:` ` [ColorStateList](../android.content.res/ColorStateList.md)?`)` Specifies tint color for this drawable as a color state list. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setUseLevel](GradientDrawable.md))`(`useLevel:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets whether this drawable's `level` property will be used to scale the gradient. |
 
 | Protected methods ||
 |-----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onBoundsChange](../android/graphics/drawable/GradientDrawable.md))`(`r:` ` [Rect](../android/graphics/Rect.md)`)` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onLevelChange](../android/graphics/drawable/GradientDrawable.md))`(`level:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onStateChange](../android/graphics/drawable/GradientDrawable.md))`(`stateSet:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onBoundsChange](GradientDrawable.md))`(`r:` ` [Rect](../android.graphics/Rect.md)`)` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onLevelChange](GradientDrawable.md))`(`level:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onStateChange](GradientDrawable.md))`(`stateSet:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)`)` <br /> |
 | --- | --- |
 
 | Inherited functions ||
 |---|---|
-| From class [Drawable](../android/graphics/drawable/Drawable.md) |------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearColorFilter](../android/graphics/drawable/Drawable.md))`()` Removes the color filter for this drawable. <br /> | | [Rect](../android/graphics/Rect.md) | [copyBounds](../android/graphics/drawable/Drawable.md))`()` Return a copy of the drawable's bounds in a new Rect. This returns the same values as getBounds(), but the returned object is guaranteed to not be changed later by the drawable (i.e. it retains no reference to this rect). If the caller already has a Rect allocated, call copyBounds(rect). <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [copyBounds](../android/graphics/drawable/Drawable.md))`(`bounds:` ` [Rect](../android/graphics/Rect.md)`)` Return a copy of the drawable's bounds in the specified Rect (allocated by the caller). The bounds specify where this will draw when its draw() method is called. <br /> | | [Drawable](../android/graphics/drawable/Drawable.md)? | [createFromPath](../android/graphics/drawable/Drawable.md))`(`pathName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Create a drawable from file path name. <br /> | | [Drawable](../android/graphics/drawable/Drawable.md)? | [createFromResourceStream](../android/graphics/drawable/Drawable.md))`(`res:` ` [Resources](../android/content/res/Resources.md)?`, `value:` ` [TypedValue](../android/util/TypedValue.md)?`, `is:` ` [InputStream](../java/io/InputStream.md)?`, `srcName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Create a drawable from an inputstream, using the given resources and value to determine density information. <br /> | | [Drawable](../android/graphics/drawable/Drawable.md)? | [createFromResourceStream](../android/graphics/drawable/Drawable.md))`(`res:` ` [Resources](../android/content/res/Resources.md)?`, `value:` ` [TypedValue](../android/util/TypedValue.md)?`, `is:` ` [InputStream](../java/io/InputStream.md)?`, `srcName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `opts:` ` [BitmapFactory.Options](../android/graphics/BitmapFactory.Options.md)?`)` Create a drawable from an inputstream, using the given resources and value to determine density information. <br /> | | [Drawable](../android/graphics/drawable/Drawable.md)? | [createFromStream](../android/graphics/drawable/Drawable.md))`(`is:` ` [InputStream](../java/io/InputStream.md)?`, `srcName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Create a drawable from an inputstream <br /> | | [Drawable](../android/graphics/drawable/Drawable.md) | [createFromXml](../android/graphics/drawable/Drawable.md))`(`r:` ` [Resources](../android/content/res/Resources.md)`, `parser:` ` [XmlPullParser](../org/xmlpull/v1/XmlPullParser.md)`)` Create a drawable from an XML document. For more information on how to create resources in XML, see [Drawable Resources](https://developer.android.com/guide/topics/resources/drawable-resource.html). <br /> | | [Drawable](../android/graphics/drawable/Drawable.md) | [createFromXml](../android/graphics/drawable/Drawable.md))`(`r:` ` [Resources](../android/content/res/Resources.md)`, `parser:` ` [XmlPullParser](../org/xmlpull/v1/XmlPullParser.md)`, `theme:` ` [Resources.Theme](../android/content/res/Resources.Theme.md)?`)` Create a drawable from an XML document using an optional [Theme](../android/content/res/Resources.Theme.md). For more information on how to create resources in XML, see [Drawable Resources](https://developer.android.com/guide/topics/resources/drawable-resource.html). <br /> | | [Drawable](../android/graphics/drawable/Drawable.md) | [createFromXmlInner](../android/graphics/drawable/Drawable.md))`(`r:` ` [Resources](../android/content/res/Resources.md)`, `parser:` ` [XmlPullParser](../org/xmlpull/v1/XmlPullParser.md)`, `attrs:` ` [AttributeSet](../android/util/AttributeSet.md)`)` Create from inside an XML document. Called on a parser positioned at a tag in an XML document, tries to create a Drawable from that tag. Returns null if the tag is not a valid drawable. <br /> | | [Drawable](../android/graphics/drawable/Drawable.md) | [createFromXmlInner](../android/graphics/drawable/Drawable.md))`(`r:` ` [Resources](../android/content/res/Resources.md)`, `parser:` ` [XmlPullParser](../org/xmlpull/v1/XmlPullParser.md)`, `attrs:` ` [AttributeSet](../android/util/AttributeSet.md)`, `theme:` ` [Resources.Theme](../android/content/res/Resources.Theme.md)?`)` Create a drawable from inside an XML document using an optional [Theme](../android/content/res/Resources.Theme.md). Called on a parser positioned at a tag in an XML document, tries to create a Drawable from that tag. Returns `null` if the tag is not a valid drawable. <br /> | | [Rect](../android/graphics/Rect.md) | [getBounds](../android/graphics/drawable/Drawable.md))`()` Return the drawable's bounds Rect. Note: for efficiency, the returned object may be the same object stored in the drawable (though this is not guaranteed), so if a persistent copy of the bounds is needed, call copyBounds(rect) instead. You should also not change the object returned by this method as it may be the same object stored in the drawable. <br /> | | [Drawable.Callback](../android/graphics/drawable/Drawable.Callback.md)? | [getCallback](../android/graphics/drawable/Drawable.md))`()` Return the current [Callback](../android/graphics/drawable/Drawable.Callback.md) implementation attached to this Drawable. <br /> | | [Drawable](../android/graphics/drawable/Drawable.md) | [getCurrent](../android/graphics/drawable/Drawable.md))`()` <br /> | | [Rect](../android/graphics/Rect.md) | [getDirtyBounds](../android/graphics/drawable/Drawable.md))`()` Return the drawable's dirty bounds Rect. Note: for efficiency, the returned object may be the same object stored in the drawable (though this is not guaranteed). By default, this returns the full drawable bounds. Custom drawables may override this method to perform more precise invalidation. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getHotspotBounds](../android/graphics/drawable/Drawable.md))`(`outRect:` ` [Rect](../android/graphics/Rect.md)`)` Populates `outRect` with the hotspot bounds. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLayoutDirection](../android/graphics/drawable/Drawable.md))`()` Returns the resolved layout direction for this Drawable. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLevel](../android/graphics/drawable/Drawable.md))`()` Retrieve the current level. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMinimumHeight](../android/graphics/drawable/Drawable.md))`()` Returns the minimum height suggested by this Drawable. If a View uses this Drawable as a background, it is suggested that the View use at least this value for its height. (There will be some scenarios where this will not be possible.) This value should INCLUDE any padding. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMinimumWidth](../android/graphics/drawable/Drawable.md))`()` Returns the minimum width suggested by this Drawable. If a View uses this Drawable as a background, it is suggested that the View use at least this value for its width. (There will be some scenarios where this will not be possible.) This value should INCLUDE any padding. <br /> | | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | [getState](../android/graphics/drawable/Drawable.md))`()` Describes the current state, as a union of primitive states, such as [android.R.attr#state_focused](../android/R.attr.md), [android.R.attr#state_selected](../android/R.attr.md), etc. Some drawables may modify their imagery based on the selected state. <br /> | | [Region](../android/graphics/Region.md)? | [getTransparentRegion](../android/graphics/drawable/Drawable.md))`()` Returns a Region representing the part of the Drawable that is completely transparent. This can be used to perform drawing operations, identifying which parts of the target will not change when rendering the Drawable. The default implementation returns null, indicating no transparent region; subclasses can optionally override this to return an actual Region if they want to supply this optimization information, but it is not required that they do so. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [inflate](../android/graphics/drawable/Drawable.md))`(`r:` ` [Resources](../android/content/res/Resources.md)`, `parser:` ` [XmlPullParser](../org/xmlpull/v1/XmlPullParser.md)`, `attrs:` ` [AttributeSet](../android/util/AttributeSet.md)`)` Inflate this Drawable from an XML resource. Does not apply a theme. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [invalidateSelf](../android/graphics/drawable/Drawable.md))`()` Use the current [Callback](../android/graphics/drawable/Drawable.Callback.md) implementation to have this Drawable redrawn. Does nothing if there is no Callback attached to the Drawable. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAutoMirrored](../android/graphics/drawable/Drawable.md))`()` Tells if this Drawable will be automatically mirrored when its layout direction is RTL right-to-left. See [android.util.LayoutDirection](../android/util/LayoutDirection.md). <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFilterBitmap](../android/graphics/drawable/Drawable.md))`()` <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isProjected](../android/graphics/drawable/Drawable.md))`()` Whether this drawable requests projection. Indicates that the [android.graphics.RenderNode](../android/graphics/RenderNode.md) this Drawable will draw into should be drawn immediately after the closest ancestor RenderNode containing a projection receiver. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isVisible](../android/graphics/drawable/Drawable.md))`()` <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [jumpToCurrentState](../android/graphics/drawable/Drawable.md))`()` If this Drawable does transition animations between states, ask that it immediately jump to the current state and skip any active animations. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onLayoutDirectionChanged](../android/graphics/drawable/Drawable.md))`(`layoutDirection:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when the drawable's resolved layout direction changes. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [resolveOpacity](../android/graphics/drawable/Drawable.md))`(`op1:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `op2:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the appropriate opacity value for two source opacities. If either is UNKNOWN, that is returned; else, if either is TRANSLUCENT, that is returned; else, if either is TRANSPARENT, that is returned; else, OPAQUE is returned. This is to help in implementing [getOpacity](../android/graphics/drawable/Drawable.md)). <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [scheduleSelf](../android/graphics/drawable/Drawable.md))`(`what:` ` [Runnable](../java/lang/Runnable.md)`, `when:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Use the current [Callback](../android/graphics/drawable/Drawable.Callback.md) implementation to have this Drawable scheduled. Does nothing if there is no Callback attached to the Drawable. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAutoMirrored](../android/graphics/drawable/Drawable.md))`(`mirrored:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Set whether this Drawable is automatically mirrored when its layout direction is RTL (right-to left). See [android.util.LayoutDirection](../android/util/LayoutDirection.md). <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setBounds](../android/graphics/drawable/Drawable.md))`(`bounds:` ` [Rect](../android/graphics/Rect.md)`)` Specify a bounding rectangle for the Drawable. This is where the drawable will draw when its draw() method is called. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setBounds](../android/graphics/drawable/Drawable.md))`(`left:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `top:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `right:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `bottom:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Specify a bounding rectangle for the Drawable. This is where the drawable will draw when its draw() method is called. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCallback](../android/graphics/drawable/Drawable.md))`(`cb:` ` [Drawable.Callback](../android/graphics/drawable/Drawable.Callback.md)?`)` Bind a [Callback](../android/graphics/drawable/Drawable.Callback.md) object to this Drawable. Required for clients that want to support animated drawables. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setChangingConfigurations](../android/graphics/drawable/Drawable.md))`(`configs:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set a mask of the configuration parameters for which this drawable may change, requiring that it be re-created. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setColorFilter](../android/graphics/drawable/Drawable.md))`(`color:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `mode:` ` [PorterDuff.Mode](../android/graphics/PorterDuff.Mode.md)`)` Specify a color and Porter-Duff mode to be the color filter for this drawable. Convenience for [setColorFilter(android.graphics.ColorFilter)](../android/graphics/drawable/Drawable.md)) which constructs a [PorterDuffColorFilter](../android/graphics/PorterDuffColorFilter.md). **Note:** Setting a color filter disables [tint](../android/graphics/drawable/Drawable.md)). <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFilterBitmap](../android/graphics/drawable/Drawable.md))`(`filter:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Set to true to have the drawable filter its bitmaps with bilinear sampling when they are scaled or rotated. This can improve appearance when bitmaps are rotated. If the drawable does not use bitmaps, this call is ignored. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setHotspot](../android/graphics/drawable/Drawable.md))`(`x:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `y:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Specifies the hotspot's location within the drawable. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setHotspotBounds](../android/graphics/drawable/Drawable.md))`(`left:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `top:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `right:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `bottom:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the bounds to which the hotspot is constrained, if they should be different from the drawable bounds. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [setLayoutDirection](../android/graphics/drawable/Drawable.md))`(`layoutDirection:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the layout direction for this drawable. Should be a resolved layout direction, as the Drawable has no capacity to do the resolution on its own. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [setLevel](../android/graphics/drawable/Drawable.md))`(`level:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Specify the level for the drawable. This allows a drawable to vary its imagery based on a continuous controller, for example to show progress or volume level. If the new level you are supplying causes the appearance of the Drawable to change, then it is responsible for calling [invalidateSelf](../android/graphics/drawable/Drawable.md)) in order to have itself redrawn, *and* true will be returned from this function. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [setState](../android/graphics/drawable/Drawable.md))`(`stateSet:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)`)` Specify a set of states for the drawable. These are use-case specific, so see the relevant documentation. As an example, the background for widgets like Button understand the following states: \ [[android.R.attr#state_focused](../android/R.attr.md), [android.R.attr#state_pressed](../android/R.attr.md)\]. If the new state you are supplying causes the appearance of the Drawable to change, then it is responsible for calling [invalidateSelf](../android/graphics/drawable/Drawable.md)) in order to have itself redrawn, *and* true will be returned from this function. Note: The Drawable holds a reference on to stateSet until a new state array is given to it, so you must not modify this array during that time. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTint](../android/graphics/drawable/Drawable.md))`(`tintColor:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Specifies tint color for this drawable. A Drawable's drawing content will be blended together with its tint before it is drawn to the screen. This functions similarly to [setColorFilter(int,android.graphics.PorterDuff.Mode)](../android/graphics/drawable/Drawable.md)). To clear the tint, pass `null` to [setTintList(android.content.res.ColorStateList)](../android/graphics/drawable/Drawable.md)). **Note:** Setting a color filter via [setColorFilter(android.graphics.ColorFilter)](../android/graphics/drawable/Drawable.md)) or [setColorFilter(int,android.graphics.PorterDuff.Mode)](../android/graphics/drawable/Drawable.md)) overrides tint. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTintMode](../android/graphics/drawable/Drawable.md))`(`tintMode:` ` [PorterDuff.Mode](../android/graphics/PorterDuff.Mode.md)?`)` Specifies a tint blending mode for this drawable. Defines how this drawable's tint color should be blended into the drawable before it is drawn to screen. Default tint mode is [PorterDuff.Mode.SRC_IN](../android/graphics/PorterDuff.Mode.md). **Note:** Setting a color filter via [setColorFilter(android.graphics.ColorFilter)](../android/graphics/drawable/Drawable.md)) or [setColorFilter(int,android.graphics.PorterDuff.Mode)](../android/graphics/drawable/Drawable.md)) overrides tint. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [setVisible](../android/graphics/drawable/Drawable.md))`(`visible:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `restart:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Set whether this Drawable is visible. This generally does not impact the Drawable's behavior, but is a hint that can be used by some Drawables, for example, to decide whether run animations. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unscheduleSelf](../android/graphics/drawable/Drawable.md))`(`what:` ` [Runnable](../java/lang/Runnable.md)`)` Use the current [Callback](../android/graphics/drawable/Drawable.Callback.md) implementation to have this Drawable unscheduled. Does nothing if there is no Callback attached to the Drawable. <br /> | ||
+| From class [Drawable](Drawable.md) |------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearColorFilter](Drawable.md))`()` Removes the color filter for this drawable. <br /> | | [Rect](../android.graphics/Rect.md) | [copyBounds](Drawable.md))`()` Return a copy of the drawable's bounds in a new Rect. This returns the same values as getBounds(), but the returned object is guaranteed to not be changed later by the drawable (i.e. it retains no reference to this rect). If the caller already has a Rect allocated, call copyBounds(rect). <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [copyBounds](Drawable.md))`(`bounds:` ` [Rect](../android.graphics/Rect.md)`)` Return a copy of the drawable's bounds in the specified Rect (allocated by the caller). The bounds specify where this will draw when its draw() method is called. <br /> | | [Drawable](Drawable.md)? | [createFromPath](Drawable.md))`(`pathName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Create a drawable from file path name. <br /> | | [Drawable](Drawable.md)? | [createFromResourceStream](Drawable.md))`(`res:` ` [Resources](../android.content.res/Resources.md)?`, `value:` ` [TypedValue](../android.util/TypedValue.md)?`, `is:` ` [InputStream](../java.io/InputStream.md)?`, `srcName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Create a drawable from an inputstream, using the given resources and value to determine density information. <br /> | | [Drawable](Drawable.md)? | [createFromResourceStream](Drawable.md))`(`res:` ` [Resources](../android.content.res/Resources.md)?`, `value:` ` [TypedValue](../android.util/TypedValue.md)?`, `is:` ` [InputStream](../java.io/InputStream.md)?`, `srcName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `opts:` ` [BitmapFactory.Options](../android/graphics/BitmapFactory.Options.md)?`)` Create a drawable from an inputstream, using the given resources and value to determine density information. <br /> | | [Drawable](Drawable.md)? | [createFromStream](Drawable.md))`(`is:` ` [InputStream](../java.io/InputStream.md)?`, `srcName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Create a drawable from an inputstream <br /> | | [Drawable](Drawable.md) | [createFromXml](Drawable.md))`(`r:` ` [Resources](../android.content.res/Resources.md)`, `parser:` ` [XmlPullParser](../org.xmlpull.v1/XmlPullParser.md)`)` Create a drawable from an XML document. For more information on how to create resources in XML, see [Drawable Resources](https://developer.android.com/guide/topics/resources/drawable-resource.html). <br /> | | [Drawable](Drawable.md) | [createFromXml](Drawable.md))`(`r:` ` [Resources](../android.content.res/Resources.md)`, `parser:` ` [XmlPullParser](../org.xmlpull.v1/XmlPullParser.md)`, `theme:` ` [Resources.Theme](../android/content/res/Resources.Theme.md)?`)` Create a drawable from an XML document using an optional [Theme](../android/content/res/Resources.Theme.md). For more information on how to create resources in XML, see [Drawable Resources](https://developer.android.com/guide/topics/resources/drawable-resource.html). <br /> | | [Drawable](Drawable.md) | [createFromXmlInner](Drawable.md))`(`r:` ` [Resources](../android.content.res/Resources.md)`, `parser:` ` [XmlPullParser](../org.xmlpull.v1/XmlPullParser.md)`, `attrs:` ` [AttributeSet](../android.util/AttributeSet.md)`)` Create from inside an XML document. Called on a parser positioned at a tag in an XML document, tries to create a Drawable from that tag. Returns null if the tag is not a valid drawable. <br /> | | [Drawable](Drawable.md) | [createFromXmlInner](Drawable.md))`(`r:` ` [Resources](../android.content.res/Resources.md)`, `parser:` ` [XmlPullParser](../org.xmlpull.v1/XmlPullParser.md)`, `attrs:` ` [AttributeSet](../android.util/AttributeSet.md)`, `theme:` ` [Resources.Theme](../android/content/res/Resources.Theme.md)?`)` Create a drawable from inside an XML document using an optional [Theme](../android/content/res/Resources.Theme.md). Called on a parser positioned at a tag in an XML document, tries to create a Drawable from that tag. Returns `null` if the tag is not a valid drawable. <br /> | | [Rect](../android.graphics/Rect.md) | [getBounds](Drawable.md))`()` Return the drawable's bounds Rect. Note: for efficiency, the returned object may be the same object stored in the drawable (though this is not guaranteed), so if a persistent copy of the bounds is needed, call copyBounds(rect) instead. You should also not change the object returned by this method as it may be the same object stored in the drawable. <br /> | | [Drawable.Callback](../android/graphics/drawable/Drawable.Callback.md)? | [getCallback](Drawable.md))`()` Return the current [Callback](../android/graphics/drawable/Drawable.Callback.md) implementation attached to this Drawable. <br /> | | [Drawable](Drawable.md) | [getCurrent](Drawable.md))`()` <br /> | | [Rect](../android.graphics/Rect.md) | [getDirtyBounds](Drawable.md))`()` Return the drawable's dirty bounds Rect. Note: for efficiency, the returned object may be the same object stored in the drawable (though this is not guaranteed). By default, this returns the full drawable bounds. Custom drawables may override this method to perform more precise invalidation. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getHotspotBounds](Drawable.md))`(`outRect:` ` [Rect](../android.graphics/Rect.md)`)` Populates `outRect` with the hotspot bounds. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLayoutDirection](Drawable.md))`()` Returns the resolved layout direction for this Drawable. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLevel](Drawable.md))`()` Retrieve the current level. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMinimumHeight](Drawable.md))`()` Returns the minimum height suggested by this Drawable. If a View uses this Drawable as a background, it is suggested that the View use at least this value for its height. (There will be some scenarios where this will not be possible.) This value should INCLUDE any padding. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMinimumWidth](Drawable.md))`()` Returns the minimum width suggested by this Drawable. If a View uses this Drawable as a background, it is suggested that the View use at least this value for its width. (There will be some scenarios where this will not be possible.) This value should INCLUDE any padding. <br /> | | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | [getState](Drawable.md))`()` Describes the current state, as a union of primitive states, such as [android.R.attr#state_focused](../android/R.attr.md), [android.R.attr#state_selected](../android/R.attr.md), etc. Some drawables may modify their imagery based on the selected state. <br /> | | [Region](../android.graphics/Region.md)? | [getTransparentRegion](Drawable.md))`()` Returns a Region representing the part of the Drawable that is completely transparent. This can be used to perform drawing operations, identifying which parts of the target will not change when rendering the Drawable. The default implementation returns null, indicating no transparent region; subclasses can optionally override this to return an actual Region if they want to supply this optimization information, but it is not required that they do so. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [inflate](Drawable.md))`(`r:` ` [Resources](../android.content.res/Resources.md)`, `parser:` ` [XmlPullParser](../org.xmlpull.v1/XmlPullParser.md)`, `attrs:` ` [AttributeSet](../android.util/AttributeSet.md)`)` Inflate this Drawable from an XML resource. Does not apply a theme. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [invalidateSelf](Drawable.md))`()` Use the current [Callback](../android/graphics/drawable/Drawable.Callback.md) implementation to have this Drawable redrawn. Does nothing if there is no Callback attached to the Drawable. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAutoMirrored](Drawable.md))`()` Tells if this Drawable will be automatically mirrored when its layout direction is RTL right-to-left. See [android.util.LayoutDirection](../android.util/LayoutDirection.md). <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFilterBitmap](Drawable.md))`()` <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isProjected](Drawable.md))`()` Whether this drawable requests projection. Indicates that the [android.graphics.RenderNode](../android.graphics/RenderNode.md) this Drawable will draw into should be drawn immediately after the closest ancestor RenderNode containing a projection receiver. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isVisible](Drawable.md))`()` <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [jumpToCurrentState](Drawable.md))`()` If this Drawable does transition animations between states, ask that it immediately jump to the current state and skip any active animations. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onLayoutDirectionChanged](Drawable.md))`(`layoutDirection:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when the drawable's resolved layout direction changes. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [resolveOpacity](Drawable.md))`(`op1:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `op2:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the appropriate opacity value for two source opacities. If either is UNKNOWN, that is returned; else, if either is TRANSLUCENT, that is returned; else, if either is TRANSPARENT, that is returned; else, OPAQUE is returned. This is to help in implementing [getOpacity](Drawable.md)). <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [scheduleSelf](Drawable.md))`(`what:` ` [Runnable](../java.lang/Runnable.md)`, `when:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Use the current [Callback](../android/graphics/drawable/Drawable.Callback.md) implementation to have this Drawable scheduled. Does nothing if there is no Callback attached to the Drawable. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAutoMirrored](Drawable.md))`(`mirrored:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Set whether this Drawable is automatically mirrored when its layout direction is RTL (right-to left). See [android.util.LayoutDirection](../android.util/LayoutDirection.md). <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setBounds](Drawable.md))`(`bounds:` ` [Rect](../android.graphics/Rect.md)`)` Specify a bounding rectangle for the Drawable. This is where the drawable will draw when its draw() method is called. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setBounds](Drawable.md))`(`left:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `top:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `right:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `bottom:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Specify a bounding rectangle for the Drawable. This is where the drawable will draw when its draw() method is called. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCallback](Drawable.md))`(`cb:` ` [Drawable.Callback](../android/graphics/drawable/Drawable.Callback.md)?`)` Bind a [Callback](../android/graphics/drawable/Drawable.Callback.md) object to this Drawable. Required for clients that want to support animated drawables. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setChangingConfigurations](Drawable.md))`(`configs:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set a mask of the configuration parameters for which this drawable may change, requiring that it be re-created. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setColorFilter](Drawable.md))`(`color:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `mode:` ` [PorterDuff.Mode](../android/graphics/PorterDuff.Mode.md)`)` Specify a color and Porter-Duff mode to be the color filter for this drawable. Convenience for [setColorFilter(android.graphics.ColorFilter)](Drawable.md)) which constructs a [PorterDuffColorFilter](../android.graphics/PorterDuffColorFilter.md). **Note:** Setting a color filter disables [tint](Drawable.md)). <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFilterBitmap](Drawable.md))`(`filter:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Set to true to have the drawable filter its bitmaps with bilinear sampling when they are scaled or rotated. This can improve appearance when bitmaps are rotated. If the drawable does not use bitmaps, this call is ignored. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setHotspot](Drawable.md))`(`x:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `y:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Specifies the hotspot's location within the drawable. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setHotspotBounds](Drawable.md))`(`left:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `top:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `right:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `bottom:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the bounds to which the hotspot is constrained, if they should be different from the drawable bounds. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [setLayoutDirection](Drawable.md))`(`layoutDirection:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the layout direction for this drawable. Should be a resolved layout direction, as the Drawable has no capacity to do the resolution on its own. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [setLevel](Drawable.md))`(`level:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Specify the level for the drawable. This allows a drawable to vary its imagery based on a continuous controller, for example to show progress or volume level. If the new level you are supplying causes the appearance of the Drawable to change, then it is responsible for calling [invalidateSelf](Drawable.md)) in order to have itself redrawn, *and* true will be returned from this function. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [setState](Drawable.md))`(`stateSet:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)`)` Specify a set of states for the drawable. These are use-case specific, so see the relevant documentation. As an example, the background for widgets like Button understand the following states: \ [[android.R.attr#state_focused](../android/R.attr.md), [android.R.attr#state_pressed](../android/R.attr.md)\]. If the new state you are supplying causes the appearance of the Drawable to change, then it is responsible for calling [invalidateSelf](Drawable.md)) in order to have itself redrawn, *and* true will be returned from this function. Note: The Drawable holds a reference on to stateSet until a new state array is given to it, so you must not modify this array during that time. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTint](Drawable.md))`(`tintColor:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Specifies tint color for this drawable. A Drawable's drawing content will be blended together with its tint before it is drawn to the screen. This functions similarly to [setColorFilter(int,android.graphics.PorterDuff.Mode)](Drawable.md)). To clear the tint, pass `null` to [setTintList(android.content.res.ColorStateList)](Drawable.md)). **Note:** Setting a color filter via [setColorFilter(android.graphics.ColorFilter)](Drawable.md)) or [setColorFilter(int,android.graphics.PorterDuff.Mode)](Drawable.md)) overrides tint. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTintMode](Drawable.md))`(`tintMode:` ` [PorterDuff.Mode](../android/graphics/PorterDuff.Mode.md)?`)` Specifies a tint blending mode for this drawable. Defines how this drawable's tint color should be blended into the drawable before it is drawn to screen. Default tint mode is [PorterDuff.Mode.SRC_IN](../android/graphics/PorterDuff.Mode.md). **Note:** Setting a color filter via [setColorFilter(android.graphics.ColorFilter)](Drawable.md)) or [setColorFilter(int,android.graphics.PorterDuff.Mode)](Drawable.md)) overrides tint. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [setVisible](Drawable.md))`(`visible:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `restart:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Set whether this Drawable is visible. This generally does not impact the Drawable's behavior, but is a hint that can be used by some Drawables, for example, to decide whether run animations. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unscheduleSelf](Drawable.md))`(`what:` ` [Runnable](../java.lang/Runnable.md)`)` Use the current [Callback](../android/graphics/drawable/Drawable.Callback.md) implementation to have this Drawable unscheduled. Does nothing if there is no Callback attached to the Drawable. <br /> | ||
 
 ## XML attributes
 
@@ -402,7 +402,7 @@ Must be one of the following constant values.
 ```
 android:useLevel
 ```
-Whether the drawable level value (see [android.graphics.drawable.Drawable#getLevel()](../android/graphics/drawable/Drawable.md))) is used to scale the shape. Scaling behavior depends on the shape type. For "ring", the angle is scaled from 0 to 360. For all other types, there is no effect. The default value is true.
+Whether the drawable level value (see [android.graphics.drawable.Drawable#getLevel()](Drawable.md))) is used to scale the shape. Scaling behavior depends on the shape type. For "ring", the angle is scaled from 0 to 360. For all other types, there is no effect. The default value is true.
 
 May be a boolean value, such as "`true`" or "`false`". 
 
@@ -411,7 +411,7 @@ May be a boolean value, such as "`true`" or "`false`".
 ```
 android:useLevel
 ```
-Whether the drawable level value (see [android.graphics.drawable.Drawable#getLevel()](../android/graphics/drawable/Drawable.md))) is used to scale the gradient. Scaling behavior varies based on gradient type. For "linear", adjusts the ending position along the gradient's axis of orientation. For "radial", adjusts the outer radius. For "sweep", adjusts the ending angle. The default value is false.
+Whether the drawable level value (see [android.graphics.drawable.Drawable#getLevel()](Drawable.md))) is used to scale the gradient. Scaling behavior varies based on gradient type. For "linear", adjusts the ending position along the gradient's axis of orientation. For "radial", adjusts the outer radius. For "sweep", adjusts the ending angle. The default value is false.
 
 May be a boolean value, such as "`true`" or "`false`". 
 
@@ -596,7 +596,7 @@ open fun draw(canvas: Canvas): Unit
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| `canvas` | [Canvas](../android/graphics/Canvas.md): The canvas to draw into This value cannot be `null`. |
+| `canvas` | [Canvas](../android.graphics/Canvas.md): The canvas to draw into This value cannot be `null`. |
 
 ### getAlpha
 
@@ -618,11 +618,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun getChangingConfigurations(): Int
 ```
 
-Return a mask of the configuration parameters for which this drawable may change, requiring that it be re-created. The default implementation returns whatever was provided through [setChangingConfigurations(int)](../android/graphics/drawable/Drawable.md)) or 0 by default. Subclasses may extend this to or in the changing configurations of any other drawables they hold.
+Return a mask of the configuration parameters for which this drawable may change, requiring that it be re-created. The default implementation returns whatever was provided through [setChangingConfigurations(int)](Drawable.md)) or 0 by default. Subclasses may extend this to or in the changing configurations of any other drawables they hold.
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is either `0` or a combination of [android.content.pm.ActivityInfo#CONFIG_MCC](../android/content/pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_MNC](../android/content/pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_LOCALE](../android/content/pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_TOUCHSCREEN](../android/content/pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_KEYBOARD](../android/content/pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_KEYBOARD_HIDDEN](../android/content/pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_NAVIGATION](../android/content/pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_ORIENTATION](../android/content/pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_SCREEN_LAYOUT](../android/content/pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_UI_MODE](../android/content/pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_SCREEN_SIZE](../android/content/pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_SMALLEST_SCREEN_SIZE](../android/content/pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_DENSITY](../android/content/pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_LAYOUT_DIRECTION](../android/content/pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_COLOR_MODE](../android/content/pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_FONT_SCALE](../android/content/pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_GRAMMATICAL_GENDER](../android/content/pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_FONT_WEIGHT_ADJUSTMENT](../android/content/pm/ActivityInfo.md), android.content.pm.ActivityInfo.CONFIG_WINDOW_CONFIGURATION, [android.content.pm.ActivityInfo#CONFIG_ASSETS_PATHS](../android/content/pm/ActivityInfo.md), and [android.content.pm.ActivityInfo#CONFIG_RESOURCES_UNUSED](../android/content/pm/ActivityInfo.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is either `0` or a combination of [android.content.pm.ActivityInfo#CONFIG_MCC](../android.content.pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_MNC](../android.content.pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_LOCALE](../android.content.pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_TOUCHSCREEN](../android.content.pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_KEYBOARD](../android.content.pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_KEYBOARD_HIDDEN](../android.content.pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_NAVIGATION](../android.content.pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_ORIENTATION](../android.content.pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_SCREEN_LAYOUT](../android.content.pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_UI_MODE](../android.content.pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_SCREEN_SIZE](../android.content.pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_SMALLEST_SCREEN_SIZE](../android.content.pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_DENSITY](../android.content.pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_LAYOUT_DIRECTION](../android.content.pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_COLOR_MODE](../android.content.pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_FONT_SCALE](../android.content.pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_GRAMMATICAL_GENDER](../android.content.pm/ActivityInfo.md), [android.content.pm.ActivityInfo#CONFIG_FONT_WEIGHT_ADJUSTMENT](../android.content.pm/ActivityInfo.md), android.content.pm.ActivityInfo.CONFIG_WINDOW_CONFIGURATION, [android.content.pm.ActivityInfo#CONFIG_ASSETS_PATHS](../android.content.pm/ActivityInfo.md), and [android.content.pm.ActivityInfo#CONFIG_RESOURCES_UNUSED](../android.content.pm/ActivityInfo.md) |
 
 ### getColor
 
@@ -636,12 +636,12 @@ Returns the color state list used to fill the shape, or `null` if the shape is f
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------|------------------------------------------------------------|
-| [ColorStateList](../android/content/res/ColorStateList.md)? | the color state list used to fill this gradient, or `null` |
+| [ColorStateList](../android.content.res/ColorStateList.md)? | the color state list used to fill this gradient, or `null` |
 
 **See Also**
 
-- [#setColor(int)](../android/graphics/drawable/GradientDrawable.md))
-- [#setColor(ColorStateList)](../android/graphics/drawable/GradientDrawable.md)) 
+- [#setColor(int)](GradientDrawable.md))
+- [#setColor(ColorStateList)](GradientDrawable.md)) 
 
 ### getColorFilter
 
@@ -655,7 +655,7 @@ Returns the current color filter, or `null` if none set.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------|---------------------------|
-| [ColorFilter](../android/graphics/ColorFilter.md)? | This value may be `null`. |
+| [ColorFilter](../android.graphics/ColorFilter.md)? | This value may be `null`. |
 
 ### getColors
 
@@ -697,7 +697,7 @@ open fun getCornerRadii(): FloatArray?
 
 Returns the radii for each of the 4 corners. For each corner, the array contains 2 values, `[X_radius, Y_radius]`. The corners are ordered top-left, top-right, bottom-right, bottom-left.
 
-If the radius was previously set with [setCornerRadius(float)](../android/graphics/drawable/GradientDrawable.md)), or if the corners are not rounded, this method will return `null`.
+If the radius was previously set with [setCornerRadius(float)](GradientDrawable.md)), or if the corners are not rounded, this method will return `null`.
 
 | Return ||
 |--------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
@@ -715,7 +715,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun getCornerRadius(): Float
 ```
 
-Returns the radius for the corners of the gradient, that was previously set with [setCornerRadius(float)](../android/graphics/drawable/GradientDrawable.md)).
+Returns the radius for the corners of the gradient, that was previously set with [setCornerRadius(float)](GradientDrawable.md)).
 
 If the radius was previously cleared via passing `null` to [setCornerRadii(float[])](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#setCornerRadii(kotlin.FloatArray)), this method will return 0.
 
@@ -725,7 +725,7 @@ If the radius was previously cleared via passing `null` to [setCornerRadii(float
 
 **See Also**
 
-- [#setCornerRadius](../android/graphics/drawable/GradientDrawable.md)) 
+- [#setCornerRadius](GradientDrawable.md)) 
 
 ### getGradientCenterX
 
@@ -743,7 +743,7 @@ Returns the X-position of the center of the gradient as a fraction of the width.
 
 **See Also**
 
-- [#setGradientCenter(float, float)](../android/graphics/drawable/GradientDrawable.md)) 
+- [#setGradientCenter(float, float)](GradientDrawable.md)) 
 
 ### getGradientCenterY
 
@@ -761,7 +761,7 @@ Returns the Y-position of the center of this gradient as a fraction of the heigh
 
 **See Also**
 
-- [#setGradientCenter(float, float)](../android/graphics/drawable/GradientDrawable.md)) 
+- [#setGradientCenter(float, float)](GradientDrawable.md)) 
 
 ### getGradientRadius
 
@@ -771,7 +771,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 open fun getGradientRadius(): Float
 ```
 
-Returns the radius of the gradient in pixels. The radius is valid only when the gradient type is set to [RADIAL_GRADIENT](../android/graphics/drawable/GradientDrawable.md).
+Returns the radius of the gradient in pixels. The radius is valid only when the gradient type is set to [RADIAL_GRADIENT](GradientDrawable.md).
 
 | Return ||
 |--------------------------------------------------------------------------------|--------------------------------------|
@@ -779,7 +779,7 @@ Returns the radius of the gradient in pixels. The radius is valid only when the 
 
 **See Also**
 
-- [#setGradientRadius(float)](../android/graphics/drawable/GradientDrawable.md)) 
+- [#setGradientRadius(float)](GradientDrawable.md)) 
 
 ### getGradientType
 
@@ -789,15 +789,15 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun getGradientType(): Int
 ```
 
-Returns the type of gradient used by this drawable, one of [LINEAR_GRADIENT](../android/graphics/drawable/GradientDrawable.md), [RADIAL_GRADIENT](../android/graphics/drawable/GradientDrawable.md), or [SWEEP_GRADIENT](../android/graphics/drawable/GradientDrawable.md).
+Returns the type of gradient used by this drawable, one of [LINEAR_GRADIENT](GradientDrawable.md), [RADIAL_GRADIENT](GradientDrawable.md), or [SWEEP_GRADIENT](GradientDrawable.md).
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the type of gradient used by this drawable Value is [android.graphics.drawable.GradientDrawable#LINEAR_GRADIENT](../android/graphics/drawable/GradientDrawable.md), [android.graphics.drawable.GradientDrawable#RADIAL_GRADIENT](../android/graphics/drawable/GradientDrawable.md), or [android.graphics.drawable.GradientDrawable#SWEEP_GRADIENT](../android/graphics/drawable/GradientDrawable.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the type of gradient used by this drawable Value is [android.graphics.drawable.GradientDrawable#LINEAR_GRADIENT](GradientDrawable.md), [android.graphics.drawable.GradientDrawable#RADIAL_GRADIENT](GradientDrawable.md), or [android.graphics.drawable.GradientDrawable#SWEEP_GRADIENT](GradientDrawable.md) |
 
 **See Also**
 
-- [#setGradientType(int)](../android/graphics/drawable/GradientDrawable.md)) 
+- [#setGradientType(int)](GradientDrawable.md)) 
 
 ### getInnerRadius
 
@@ -816,7 +816,7 @@ The units of this value are pixels.
 
 **See Also**
 
-- [#setInnerRadius(int)](../android/graphics/drawable/GradientDrawable.md)) 
+- [#setInnerRadius(int)](GradientDrawable.md)) 
 
 ### getInnerRadiusRatio
 
@@ -829,7 +829,7 @@ open fun getInnerRadiusRatio(): Float
 Return the inner radius of the ring expressed as a ratio of the ring's width. 
 **See Also**
 
-- [#setInnerRadiusRatio(float)](../android/graphics/drawable/GradientDrawable.md)) 
+- [#setInnerRadiusRatio(float)](GradientDrawable.md)) 
 
 ### getIntrinsicHeight
 
@@ -865,7 +865,7 @@ open fun getOpacity(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | int The opacity class of the Drawable. Value is [android.graphics.PixelFormat#UNKNOWN](../android/graphics/PixelFormat.md), [android.graphics.PixelFormat#TRANSLUCENT](../android/graphics/PixelFormat.md), [android.graphics.PixelFormat#TRANSPARENT](../android/graphics/PixelFormat.md), or [android.graphics.PixelFormat#OPAQUE](../android/graphics/PixelFormat.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | int The opacity class of the Drawable. Value is [android.graphics.PixelFormat#UNKNOWN](../android.graphics/PixelFormat.md), [android.graphics.PixelFormat#TRANSLUCENT](../android.graphics/PixelFormat.md), [android.graphics.PixelFormat#TRANSPARENT](../android.graphics/PixelFormat.md), or [android.graphics.PixelFormat#OPAQUE](../android.graphics/PixelFormat.md) |
 
 ### getOpticalInsets
 
@@ -877,7 +877,7 @@ open fun getOpticalInsets(): Insets
 
 | Return ||
 |----------------------------------------------------------------------------------------|------------------------------|
-| [Insets](../android/graphics/Insets.md) | This value cannot be `null`. |
+| [Insets](../android.graphics/Insets.md) | This value cannot be `null`. |
 
 ### getOrientation
 
@@ -895,7 +895,7 @@ Returns the orientation of the gradient defined in this drawable.
 
 **See Also**
 
-- [#setOrientation(Orientation)](../android/graphics/drawable/GradientDrawable.md)) 
+- [#setOrientation(Orientation)](GradientDrawable.md)) 
 
 ### getOutline
 
@@ -907,7 +907,7 @@ open fun getOutline(outline: Outline): Unit
 
 | Parameters ||
 |-----------|------------------------------------------------------------------------------------------------------------------------|
-| `outline` | [Outline](../android/graphics/Outline.md): This value cannot be `null`. |
+| `outline` | [Outline](../android.graphics/Outline.md): This value cannot be `null`. |
 
 ### getPadding
 
@@ -919,7 +919,7 @@ open fun getPadding(padding: Rect): Boolean
 
 | Parameters ||
 |-----------|------------------------------------------------------------------------------------------------------------------|
-| `padding` | [Rect](../android/graphics/Rect.md): This value cannot be `null`. |
+| `padding` | [Rect](../android.graphics/Rect.md): This value cannot be `null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
@@ -933,15 +933,15 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun getShape(): Int
 ```
 
-Returns the type of shape used by this drawable, one of [LINE](../android/graphics/drawable/GradientDrawable.md), [OVAL](../android/graphics/drawable/GradientDrawable.md), [RECTANGLE](../android/graphics/drawable/GradientDrawable.md) or [RING](../android/graphics/drawable/GradientDrawable.md).
+Returns the type of shape used by this drawable, one of [LINE](GradientDrawable.md), [OVAL](GradientDrawable.md), [RECTANGLE](GradientDrawable.md) or [RING](GradientDrawable.md).
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the type of shape used by this drawable Value is [android.graphics.drawable.GradientDrawable#RECTANGLE](../android/graphics/drawable/GradientDrawable.md), [android.graphics.drawable.GradientDrawable#OVAL](../android/graphics/drawable/GradientDrawable.md), [android.graphics.drawable.GradientDrawable#LINE](../android/graphics/drawable/GradientDrawable.md), [android.graphics.drawable.GradientDrawable#RING](../android/graphics/drawable/GradientDrawable.md), or [android.graphics.drawable.GradientDrawable#ARC](../android/graphics/drawable/GradientDrawable.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the type of shape used by this drawable Value is [android.graphics.drawable.GradientDrawable#RECTANGLE](GradientDrawable.md), [android.graphics.drawable.GradientDrawable#OVAL](GradientDrawable.md), [android.graphics.drawable.GradientDrawable#LINE](GradientDrawable.md), [android.graphics.drawable.GradientDrawable#RING](GradientDrawable.md), or [android.graphics.drawable.GradientDrawable#ARC](GradientDrawable.md) |
 
 **See Also**
 
-- [#setShape(int)](../android/graphics/drawable/GradientDrawable.md)) 
+- [#setShape(int)](GradientDrawable.md)) 
 
 ### getThickness
 
@@ -960,7 +960,7 @@ The units of this value are pixels.
 
 **See Also**
 
-- [#setThickness(int)](../android/graphics/drawable/GradientDrawable.md)) 
+- [#setThickness(int)](GradientDrawable.md)) 
 
 ### getThicknessRatio
 
@@ -973,7 +973,7 @@ open fun getThicknessRatio(): Float
 Return the thickness ratio of the ring expressed as a ratio of the ring's width. 
 **See Also**
 
-- [#setThicknessRatio(float)](../android/graphics/drawable/GradientDrawable.md)) 
+- [#setThicknessRatio(float)](GradientDrawable.md)) 
 
 ### getUseLevel
 
@@ -991,7 +991,7 @@ Returns whether this drawable's `level` property will be used to scale the gradi
 
 **See Also**
 
-- [#setUseLevel(boolean)](../android/graphics/drawable/GradientDrawable.md)) 
+- [#setUseLevel(boolean)](GradientDrawable.md)) 
 
 ### hasFocusStateSpecified
 
@@ -1022,9 +1022,9 @@ Inflate this Drawable from an XML resource optionally styled by a theme. This ca
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| `r` | [Resources](../android/content/res/Resources.md): This value cannot be `null`. |
-| `parser` | [XmlPullParser](../org/xmlpull/v1/XmlPullParser.md): This value cannot be `null`. |
-| `attrs` | [AttributeSet](../android/util/AttributeSet.md): This value cannot be `null`. |
+| `r` | [Resources](../android.content.res/Resources.md): This value cannot be `null`. |
+| `parser` | [XmlPullParser](../org.xmlpull.v1/XmlPullParser.md): This value cannot be `null`. |
+| `attrs` | [AttributeSet](../android.util/AttributeSet.md): This value cannot be `null`. |
 | --- | --- |
 | `theme` | [Resources.Theme](../android/content/res/Resources.Theme.md)?: This value may be `null`. |
 
@@ -1055,7 +1055,7 @@ open fun mutate(): Drawable
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|---------------------------------------------|
-| [Drawable](../android/graphics/drawable/Drawable.md) | This drawable. This value cannot be `null`. |
+| [Drawable](Drawable.md) | This drawable. This value cannot be `null`. |
 
 ### setAlpha
 
@@ -1077,18 +1077,18 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 open fun setColor(colorStateList: ColorStateList?): Unit
 ```
 
-Changes this drawable to use a single color state list instead of a gradient. Calling this method with a null argument will clear the color and is equivalent to calling [setColor(int)](../android/graphics/drawable/GradientDrawable.md)) with the argument [Color.TRANSPARENT](../android/graphics/Color.md).
+Changes this drawable to use a single color state list instead of a gradient. Calling this method with a null argument will clear the color and is equivalent to calling [setColor(int)](GradientDrawable.md)) with the argument [Color.TRANSPARENT](../android.graphics/Color.md).
 
-**Note** : changing color will affect all instances of a drawable loaded from a resource. It is recommended to invoke [mutate()](../android/graphics/drawable/GradientDrawable.md)) before changing the color.
+**Note** : changing color will affect all instances of a drawable loaded from a resource. It is recommended to invoke [mutate()](GradientDrawable.md)) before changing the color.
 
 | Parameters ||
 |------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `colorStateList` | [ColorStateList](../android/content/res/ColorStateList.md)?: The color state list used to fill the shape This value may be `null`. |
+| `colorStateList` | [ColorStateList](../android.content.res/ColorStateList.md)?: The color state list used to fill the shape This value may be `null`. |
 
 **See Also**
 
 - <https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#mutate()>
-- [#getColor](../android/graphics/drawable/GradientDrawable.md)) 
+- [#getColor](GradientDrawable.md)) 
 
 ### setColor
 
@@ -1100,7 +1100,7 @@ open fun setColor(argb: Int): Unit
 
 Changes this drawable to use a single color instead of a gradient.
 
-**Note** : changing color will affect all instances of a drawable loaded from a resource. It is recommended to invoke [mutate()](../android/graphics/drawable/GradientDrawable.md)) before changing the color.
+**Note** : changing color will affect all instances of a drawable loaded from a resource. It is recommended to invoke [mutate()](GradientDrawable.md)) before changing the color.
 
 | Parameters ||
 |--------|--------------------------------------------------------------------------------------------------------------|
@@ -1110,7 +1110,7 @@ Changes this drawable to use a single color instead of a gradient.
 
 - <https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#mutate()>
 - [#setColors(int[])](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#setColors(kotlin.IntArray))
-- [#getColor](../android/graphics/drawable/GradientDrawable.md)) 
+- [#getColor](GradientDrawable.md)) 
 
 ### setColorFilter
 
@@ -1126,11 +1126,11 @@ If a Drawable has a ColorFilter, each output pixel of the Drawable's drawing con
 
 Pass `null` to remove any existing color filter.
 
-**Note:** Setting a non-`null` color filter disables [tint](../android/graphics/drawable/Drawable.md)).
+**Note:** Setting a non-`null` color filter disables [tint](Drawable.md)).
 
 | Parameters ||
 |---------------|------------------------------------------------------------------------------------------------------------------------------|
-| `colorFilter` | [ColorFilter](../android/graphics/ColorFilter.md)?: This value may be `null`. |
+| `colorFilter` | [ColorFilter](../android.graphics/ColorFilter.md)?: This value may be `null`. |
 
 ### setColors
 
@@ -1144,7 +1144,7 @@ Sets the colors used to draw the gradient.
 
 Each color is specified as an ARGB integer and the array must contain at least 2 colors.
 
-**Note** : changing colors will affect all instances of a drawable loaded from a resource. It is recommended to invoke [mutate()](../android/graphics/drawable/GradientDrawable.md)) before changing the colors.
+**Note** : changing colors will affect all instances of a drawable loaded from a resource. It is recommended to invoke [mutate()](GradientDrawable.md)) before changing the colors.
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1153,7 +1153,7 @@ Each color is specified as an ARGB integer and the array must contain at least 2
 **See Also**
 
 - <https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#mutate()>
-- [#setColor(int)](../android/graphics/drawable/GradientDrawable.md)) 
+- [#setColor(int)](GradientDrawable.md)) 
 
 ### setColors
 
@@ -1170,7 +1170,7 @@ Sets the colors and offsets used to draw the gradient.
 
 Each color is specified as an ARGB integer and the array must contain at least 2 colors.
 
-**Note** : changing colors will affect all instances of a drawable loaded from a resource. It is recommended to invoke [mutate()](../android/graphics/drawable/GradientDrawable.md)) before changing the colors.
+**Note** : changing colors will affect all instances of a drawable loaded from a resource. It is recommended to invoke [mutate()](GradientDrawable.md)) before changing the colors.
 
 | Parameters ||
 |-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1190,9 +1190,9 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun setCornerRadii(radii: FloatArray?): Unit
 ```
 
-Specifies radii for each of the 4 corners. For each corner, the array contains 2 values, `[X_radius, Y_radius]`. The corners are ordered top-left, top-right, bottom-right, bottom-left. This property is honored only when the shape is of type [RECTANGLE](../android/graphics/drawable/GradientDrawable.md).
+Specifies radii for each of the 4 corners. For each corner, the array contains 2 values, `[X_radius, Y_radius]`. The corners are ordered top-left, top-right, bottom-right, bottom-left. This property is honored only when the shape is of type [RECTANGLE](GradientDrawable.md).
 
-**Note** : changing this property will affect all instances of a drawable loaded from a resource. It is recommended to invoke [mutate()](../android/graphics/drawable/GradientDrawable.md)) before changing this property.
+**Note** : changing this property will affect all instances of a drawable loaded from a resource. It is recommended to invoke [mutate()](GradientDrawable.md)) before changing this property.
 
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1201,8 +1201,8 @@ Specifies radii for each of the 4 corners. For each corner, the array contains 2
 **See Also**
 
 - <https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#mutate()>
-- [#setShape(int)](../android/graphics/drawable/GradientDrawable.md))
-- [#setCornerRadius(float)](../android/graphics/drawable/GradientDrawable.md)) 
+- [#setShape(int)](GradientDrawable.md))
+- [#setCornerRadius(float)](GradientDrawable.md)) 
 
 ### setCornerRadius
 
@@ -1212,9 +1212,9 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun setCornerRadius(radius: Float): Unit
 ```
 
-Specifies the radius for the corners of the gradient. If this is \> 0, then the drawable is drawn in a round-rectangle, rather than a rectangle. This property is honored only when the shape is of type [RECTANGLE](../android/graphics/drawable/GradientDrawable.md).
+Specifies the radius for the corners of the gradient. If this is \> 0, then the drawable is drawn in a round-rectangle, rather than a rectangle. This property is honored only when the shape is of type [RECTANGLE](GradientDrawable.md).
 
-**Note** : changing this property will affect all instances of a drawable loaded from a resource. It is recommended to invoke [mutate()](../android/graphics/drawable/GradientDrawable.md)) before changing this property.
+**Note** : changing this property will affect all instances of a drawable loaded from a resource. It is recommended to invoke [mutate()](GradientDrawable.md)) before changing this property.
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1224,7 +1224,7 @@ Specifies the radius for the corners of the gradient. If this is \> 0, then the 
 
 - <https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#mutate()>
 - [#setCornerRadii(float[])](https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#setCornerRadii(kotlin.FloatArray))
-- [#setShape(int)](../android/graphics/drawable/GradientDrawable.md)) 
+- [#setShape(int)](GradientDrawable.md)) 
 
 ### setDither
 
@@ -1249,7 +1249,7 @@ Sets the position of the center of the gradient as a fraction of the width and h
 
 The default value is (0.5, 0.5).
 
-**Note** : changing this property will affect all instances of a drawable loaded from a resource. It is recommended to invoke [mutate()](../android/graphics/drawable/GradientDrawable.md)) before changing this property.
+**Note** : changing this property will affect all instances of a drawable loaded from a resource. It is recommended to invoke [mutate()](GradientDrawable.md)) before changing this property.
 
 | Parameters ||
 |-----|------------------------------------------------------------------------------------------------------------------------------|
@@ -1259,7 +1259,7 @@ The default value is (0.5, 0.5).
 **See Also**
 
 - <https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#mutate()>
-- [#setGradientType(int)](../android/graphics/drawable/GradientDrawable.md))
+- [#setGradientType(int)](GradientDrawable.md))
 - <https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#getGradientCenterX()>
 - <https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#getGradientCenterY()> 
 
@@ -1271,9 +1271,9 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun setGradientRadius(gradientRadius: Float): Unit
 ```
 
-Sets the radius of the gradient. The radius is honored only when the gradient type is set to [RADIAL_GRADIENT](../android/graphics/drawable/GradientDrawable.md).
+Sets the radius of the gradient. The radius is honored only when the gradient type is set to [RADIAL_GRADIENT](GradientDrawable.md).
 
-**Note** : changing this property will affect all instances of a drawable loaded from a resource. It is recommended to invoke [mutate()](../android/graphics/drawable/GradientDrawable.md)) before changing this property.
+**Note** : changing this property will affect all instances of a drawable loaded from a resource. It is recommended to invoke [mutate()](GradientDrawable.md)) before changing this property.
 
 | Parameters ||
 |------------------|----------------------------------------------------------------------------------------------------------------------|
@@ -1282,7 +1282,7 @@ Sets the radius of the gradient. The radius is honored only when the gradient ty
 **See Also**
 
 - <https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#mutate()>
-- [#setGradientType(int)](../android/graphics/drawable/GradientDrawable.md))
+- [#setGradientType(int)](GradientDrawable.md))
 - <https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#getGradientRadius()> 
 
 ### setGradientType
@@ -1295,11 +1295,11 @@ open fun setGradientType(gradient: Int): Unit
 
 Sets the type of gradient used by this drawable.
 
-**Note** : changing this property will affect all instances of a drawable loaded from a resource. It is recommended to invoke [mutate()](../android/graphics/drawable/GradientDrawable.md)) before changing this property.
+**Note** : changing this property will affect all instances of a drawable loaded from a resource. It is recommended to invoke [mutate()](GradientDrawable.md)) before changing this property.
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `gradient` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of the gradient: [LINEAR_GRADIENT](../android/graphics/drawable/GradientDrawable.md), [RADIAL_GRADIENT](../android/graphics/drawable/GradientDrawable.md) or [SWEEP_GRADIENT](../android/graphics/drawable/GradientDrawable.md) Value is [android.graphics.drawable.GradientDrawable#LINEAR_GRADIENT](../android/graphics/drawable/GradientDrawable.md), [android.graphics.drawable.GradientDrawable#RADIAL_GRADIENT](../android/graphics/drawable/GradientDrawable.md), or [android.graphics.drawable.GradientDrawable#SWEEP_GRADIENT](../android/graphics/drawable/GradientDrawable.md) |
+| `gradient` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of the gradient: [LINEAR_GRADIENT](GradientDrawable.md), [RADIAL_GRADIENT](GradientDrawable.md) or [SWEEP_GRADIENT](GradientDrawable.md) Value is [android.graphics.drawable.GradientDrawable#LINEAR_GRADIENT](GradientDrawable.md), [android.graphics.drawable.GradientDrawable#RADIAL_GRADIENT](GradientDrawable.md), or [android.graphics.drawable.GradientDrawable#SWEEP_GRADIENT](GradientDrawable.md) |
 
 **See Also**
 
@@ -1352,7 +1352,7 @@ open fun setOrientation(orientation: GradientDrawable.Orientation!): Unit
 
 Sets the orientation of the gradient defined in this drawable.
 
-**Note** : changing orientation will affect all instances of a drawable loaded from a resource. It is recommended to invoke [mutate()](../android/graphics/drawable/GradientDrawable.md)) before changing the orientation.
+**Note** : changing orientation will affect all instances of a drawable loaded from a resource. It is recommended to invoke [mutate()](GradientDrawable.md)) before changing the orientation.
 
 | Parameters ||
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1396,11 +1396,11 @@ open fun setShape(shape: Int): Unit
 
 Sets the type of shape used to draw the gradient.
 
-**Note** : changing this property will affect all instances of a drawable loaded from a resource. It is recommended to invoke [mutate()](../android/graphics/drawable/GradientDrawable.md)) before changing this property.
+**Note** : changing this property will affect all instances of a drawable loaded from a resource. It is recommended to invoke [mutate()](GradientDrawable.md)) before changing this property.
 
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `shape` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The desired shape for this drawable: [LINE](../android/graphics/drawable/GradientDrawable.md), [OVAL](../android/graphics/drawable/GradientDrawable.md), [RECTANGLE](../android/graphics/drawable/GradientDrawable.md) or [RING](../android/graphics/drawable/GradientDrawable.md) Value is [android.graphics.drawable.GradientDrawable#RECTANGLE](../android/graphics/drawable/GradientDrawable.md), [android.graphics.drawable.GradientDrawable#OVAL](../android/graphics/drawable/GradientDrawable.md), [android.graphics.drawable.GradientDrawable#LINE](../android/graphics/drawable/GradientDrawable.md), [android.graphics.drawable.GradientDrawable#RING](../android/graphics/drawable/GradientDrawable.md), or [android.graphics.drawable.GradientDrawable#ARC](../android/graphics/drawable/GradientDrawable.md) |
+| `shape` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The desired shape for this drawable: [LINE](GradientDrawable.md), [OVAL](GradientDrawable.md), [RECTANGLE](GradientDrawable.md) or [RING](GradientDrawable.md) Value is [android.graphics.drawable.GradientDrawable#RECTANGLE](GradientDrawable.md), [android.graphics.drawable.GradientDrawable#OVAL](GradientDrawable.md), [android.graphics.drawable.GradientDrawable#LINE](GradientDrawable.md), [android.graphics.drawable.GradientDrawable#RING](GradientDrawable.md), or [android.graphics.drawable.GradientDrawable#ARC](GradientDrawable.md) |
 
 **See Also**
 
@@ -1419,7 +1419,7 @@ open fun setSize(
 
 Sets the size of the shape drawn by this drawable.
 
-**Note** : changing this property will affect all instances of a drawable loaded from a resource. It is recommended to invoke [mutate()](../android/graphics/drawable/GradientDrawable.md)) before changing this property.
+**Note** : changing this property will affect all instances of a drawable loaded from a resource. It is recommended to invoke [mutate()](GradientDrawable.md)) before changing this property.
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------------------|
@@ -1429,7 +1429,7 @@ Sets the size of the shape drawn by this drawable.
 **See Also**
 
 - <https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#mutate()>
-- [#setGradientType(int)](../android/graphics/drawable/GradientDrawable.md)) 
+- [#setGradientType(int)](GradientDrawable.md)) 
 
 ### setStroke
 
@@ -1444,17 +1444,17 @@ open fun setStroke(
 
 Set the stroke width and color state list for the drawable. If width is zero, then no stroke is drawn.
 
-**Note** : changing this property will affect all instances of a drawable loaded from a resource. It is recommended to invoke [mutate()](../android/graphics/drawable/GradientDrawable.md)) before changing this property.
+**Note** : changing this property will affect all instances of a drawable loaded from a resource. It is recommended to invoke [mutate()](GradientDrawable.md)) before changing this property.
 
 | Parameters ||
 |------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The width in pixels of the stroke |
-| `colorStateList` | [ColorStateList](../android/content/res/ColorStateList.md)!: The color state list of the stroke |
+| `colorStateList` | [ColorStateList](../android.content.res/ColorStateList.md)!: The color state list of the stroke |
 
 **See Also**
 
 - <https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#mutate()>
-- [#setStroke(int, ColorStateList, float, float)](../android/graphics/drawable/GradientDrawable.md)) 
+- [#setStroke(int, ColorStateList, float, float)](GradientDrawable.md)) 
 
 ### setStroke
 
@@ -1471,12 +1471,12 @@ open fun setStroke(
 
 Set the stroke width and color state list for the drawable. If width is zero, then no stroke is drawn. This method can also be used to dash the stroke.
 
-**Note** : changing this property will affect all instances of a drawable loaded from a resource. It is recommended to invoke [mutate()](../android/graphics/drawable/GradientDrawable.md)) before changing this property.
+**Note** : changing this property will affect all instances of a drawable loaded from a resource. It is recommended to invoke [mutate()](GradientDrawable.md)) before changing this property.
 
 | Parameters ||
 |------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The width in pixels of the stroke |
-| `colorStateList` | [ColorStateList](../android/content/res/ColorStateList.md)!: The color state list of the stroke |
+| `colorStateList` | [ColorStateList](../android.content.res/ColorStateList.md)!: The color state list of the stroke |
 | `dashWidth` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The length in pixels of the dashes, set to 0 to disable dashes |
 | --- | --- |
 | `dashGap` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The gap in pixels between dashes |
@@ -1484,7 +1484,7 @@ Set the stroke width and color state list for the drawable. If width is zero, th
 **See Also**
 
 - <https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#mutate()>
-- [#setStroke(int, ColorStateList)](../android/graphics/drawable/GradientDrawable.md)) 
+- [#setStroke(int, ColorStateList)](GradientDrawable.md)) 
 
 ### setStroke
 
@@ -1499,7 +1499,7 @@ open fun setStroke(
 
 Set the stroke width and color for the drawable. If width is zero, then no stroke is drawn.
 
-**Note** : changing this property will affect all instances of a drawable loaded from a resource. It is recommended to invoke [mutate()](../android/graphics/drawable/GradientDrawable.md)) before changing this property.
+**Note** : changing this property will affect all instances of a drawable loaded from a resource. It is recommended to invoke [mutate()](GradientDrawable.md)) before changing this property.
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------|
@@ -1509,7 +1509,7 @@ Set the stroke width and color for the drawable. If width is zero, then no strok
 **See Also**
 
 - <https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#mutate()>
-- [#setStroke(int, int, float, float)](../android/graphics/drawable/GradientDrawable.md)) 
+- [#setStroke(int, int, float, float)](GradientDrawable.md)) 
 
 ### setStroke
 
@@ -1526,7 +1526,7 @@ open fun setStroke(
 
 Set the stroke width and color for the drawable. If width is zero, then no stroke is drawn. This method can also be used to dash the stroke.
 
-**Note** : changing this property will affect all instances of a drawable loaded from a resource. It is recommended to invoke [mutate()](../android/graphics/drawable/GradientDrawable.md)) before changing this property.
+**Note** : changing this property will affect all instances of a drawable loaded from a resource. It is recommended to invoke [mutate()](GradientDrawable.md)) before changing this property.
 
 | Parameters ||
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1539,7 +1539,7 @@ Set the stroke width and color for the drawable. If width is zero, then no strok
 **See Also**
 
 - <https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#mutate()>
-- [#setStroke(int, int)](../android/graphics/drawable/GradientDrawable.md)) 
+- [#setStroke(int, int)](GradientDrawable.md)) 
 
 ### setThickness
 
@@ -1583,13 +1583,13 @@ open fun setTintBlendMode(blendMode: BlendMode!): Unit
 
 Specifies a tint blending mode for this drawable.
 
-Defines how this drawable's tint color should be blended into the drawable before it is drawn to screen. Default tint mode is [BlendMode.SRC_IN](../android/graphics/BlendMode.md).
+Defines how this drawable's tint color should be blended into the drawable before it is drawn to screen. Default tint mode is [BlendMode.SRC_IN](../android.graphics/BlendMode.md).
 
-**Note:** Setting a color filter via [setColorFilter(android.graphics.ColorFilter)](../android/graphics/drawable/Drawable.md))
+**Note:** Setting a color filter via [setColorFilter(android.graphics.ColorFilter)](Drawable.md))
 
 | Parameters ||
 |-------------|-----------------------------------------------------------------------------------------------------------------------------|
-| `blendMode` | [BlendMode](../android/graphics/BlendMode.md)!: This value cannot be `null`. |
+| `blendMode` | [BlendMode](../android.graphics/BlendMode.md)!: This value cannot be `null`. |
 
 ### setTintList
 
@@ -1601,13 +1601,13 @@ open fun setTintList(tint: ColorStateList?): Unit
 
 Specifies tint color for this drawable as a color state list.
 
-A Drawable's drawing content will be blended together with its tint before it is drawn to the screen. This functions similarly to [setColorFilter(int,android.graphics.PorterDuff.Mode)](../android/graphics/drawable/Drawable.md)).
+A Drawable's drawing content will be blended together with its tint before it is drawn to the screen. This functions similarly to [setColorFilter(int,android.graphics.PorterDuff.Mode)](Drawable.md)).
 
-**Note:** Setting a color filter via [setColorFilter(android.graphics.ColorFilter)](../android/graphics/drawable/Drawable.md)) or [setColorFilter(int,android.graphics.PorterDuff.Mode)](../android/graphics/drawable/Drawable.md)) overrides tint.
+**Note:** Setting a color filter via [setColorFilter(android.graphics.ColorFilter)](Drawable.md)) or [setColorFilter(int,android.graphics.PorterDuff.Mode)](Drawable.md)) overrides tint.
 
 | Parameters ||
 |--------|---------------------------------------------------------------------------------------------------------------------------------------|
-| `tint` | [ColorStateList](../android/content/res/ColorStateList.md)?: This value may be `null`. |
+| `tint` | [ColorStateList](../android.content.res/ColorStateList.md)?: This value may be `null`. |
 
 ### setUseLevel
 
@@ -1621,9 +1621,9 @@ Sets whether this drawable's `level` property will be used to scale the gradient
 
 Scaling behavior varies based on gradient type:
 
-- [LINEAR_GRADIENT](../android/graphics/drawable/GradientDrawable.md) adjusts the ending position along the gradient's axis of orientation (see [getOrientation()](../android/graphics/drawable/GradientDrawable.md)))
-- [RADIAL_GRADIENT](../android/graphics/drawable/GradientDrawable.md) adjusts the outer radius
-- [SWEEP_GRADIENT](../android/graphics/drawable/GradientDrawable.md) adjusts the ending angle
+- [LINEAR_GRADIENT](GradientDrawable.md) adjusts the ending position along the gradient's axis of orientation (see [getOrientation()](GradientDrawable.md)))
+- [RADIAL_GRADIENT](GradientDrawable.md) adjusts the outer radius
+- [SWEEP_GRADIENT](GradientDrawable.md) adjusts the ending angle
  - The default value for this property is `false`.
  - **Note** : This property corresponds to the `android:useLevel` attribute on the inner `<gradient>` tag, NOT the `android:useLevel` attribute on the outer `<shape>` tag. For example, 
 
@@ -1635,7 +1635,7 @@ Scaling behavior varies based on gradient type:
     &lt;/shape&gt;
     </code>
   ```
- - **Note** : Changing this property will affect all instances of a drawable loaded from a resource. It is recommended to invoke [mutate()](../android/graphics/drawable/GradientDrawable.md)) before changing this property.
+ - **Note** : Changing this property will affect all instances of a drawable loaded from a resource. It is recommended to invoke [mutate()](GradientDrawable.md)) before changing this property.
 
 | Parameters ||
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1644,8 +1644,8 @@ Scaling behavior varies based on gradient type:
 **See Also**
 
 - <https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#mutate()>
-- [#setLevel(int)](../android/graphics/drawable/Drawable.md))
-- [#getLevel()](../android/graphics/drawable/Drawable.md))
+- [#setLevel(int)](Drawable.md))
+- [#getLevel()](Drawable.md))
 - <https://developer.android.com/reference/kotlin/android/graphics/drawable/GradientDrawable#getUseLevel()>
 
 ## Protected methods

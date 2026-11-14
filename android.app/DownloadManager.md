@@ -4,7 +4,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 
 # DownloadManager
 
-Kotlin| [Java](../android/app/DownloadManager.md) 
+Kotlin| [Java](DownloadManager.md) 
 | --- | --- |
 
 ```
@@ -13,11 +13,11 @@ open class DownloadManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.DownloadManager](../android/app/DownloadManager.md) |
+| ↳ | [android.app.DownloadManager](DownloadManager.md) |
 
 The download manager is a system service that handles long-running HTTP downloads. Clients may request that a URI be downloaded to a particular destination file. The download manager will conduct the download in the background, taking care of HTTP interactions and retrying downloads after failures or across connectivity changes and system reboots.
 
-Apps that request downloads through this API should register a broadcast receiver for [ACTION_NOTIFICATION_CLICKED](../android/app/DownloadManager.md) to appropriately handle when the user clicks on a running download in a notification or from the downloads UI.
+Apps that request downloads through this API should register a broadcast receiver for [ACTION_NOTIFICATION_CLICKED](DownloadManager.md) to appropriately handle when the user clicks on a running download in a notification or from the downloads UI.
 
 Note that the application must have the [android.Manifest.permission#INTERNET](../android/Manifest.permission.md) permission to use this class.
 
@@ -30,71 +30,71 @@ Note that the application must have the [android.Manifest.permission#INTERNET](.
 
 | Constants ||
 |----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_DOWNLOAD_COMPLETE](../android/app/DownloadManager.md) Broadcast intent action sent by the download manager when a download completes. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_NOTIFICATION_CLICKED](../android/app/DownloadManager.md) Broadcast intent action sent by the download manager when the user clicks on a running download, either from a system notification or from the downloads UI. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_VIEW_DOWNLOADS](../android/app/DownloadManager.md) Intent action to launch an activity to display all downloads. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_DOWNLOAD_COMPLETE](DownloadManager.md) Broadcast intent action sent by the download manager when a download completes. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_NOTIFICATION_CLICKED](DownloadManager.md) Broadcast intent action sent by the download manager when the user clicks on a running download, either from a system notification or from the downloads UI. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_VIEW_DOWNLOADS](DownloadManager.md) Intent action to launch an activity to display all downloads. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [COLUMN_BYTES_DOWNLOADED_SO_FAR](../android/app/DownloadManager.md) Number of bytes download so far. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [COLUMN_DESCRIPTION](../android/app/DownloadManager.md) The client-supplied description of this download. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [COLUMN_ID](../android/app/DownloadManager.md) An identifier for a particular download, unique across the system. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [COLUMN_BYTES_DOWNLOADED_SO_FAR](DownloadManager.md) Number of bytes download so far. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [COLUMN_DESCRIPTION](DownloadManager.md) The client-supplied description of this download. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [COLUMN_ID](DownloadManager.md) An identifier for a particular download, unique across the system. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [COLUMN_LAST_MODIFIED_TIMESTAMP](../android/app/DownloadManager.md) Timestamp when the download was last modified, in [System.currentTimeMillis()](../java/lang/System.md))(wall clock time in UTC). |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [COLUMN_LOCAL_FILENAME](../android/app/DownloadManager.md) Path to the downloaded file on disk. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [COLUMN_LOCAL_URI](../android/app/DownloadManager.md) Uri where downloaded file will be stored. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [COLUMN_LAST_MODIFIED_TIMESTAMP](DownloadManager.md) Timestamp when the download was last modified, in [System.currentTimeMillis()](../java.lang/System.md))(wall clock time in UTC). |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [COLUMN_LOCAL_FILENAME](DownloadManager.md) Path to the downloaded file on disk. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [COLUMN_LOCAL_URI](DownloadManager.md) Uri where downloaded file will be stored. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [COLUMN_MEDIAPROVIDER_URI](../android/app/DownloadManager.md) The URI to the corresponding entry in MediaProvider for this downloaded entry. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [COLUMN_MEDIA_TYPE](../android/app/DownloadManager.md) Internet Media Type of the downloaded file. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [COLUMN_REASON](../android/app/DownloadManager.md) Provides more detail on the status of the download. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [COLUMN_MEDIAPROVIDER_URI](DownloadManager.md) The URI to the corresponding entry in MediaProvider for this downloaded entry. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [COLUMN_MEDIA_TYPE](DownloadManager.md) Internet Media Type of the downloaded file. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [COLUMN_REASON](DownloadManager.md) Provides more detail on the status of the download. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [COLUMN_STATUS](../android/app/DownloadManager.md) Current status of the download, as one of the STATUS_\* constants. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [COLUMN_TITLE](../android/app/DownloadManager.md) The client-supplied title for this download. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [COLUMN_TOTAL_SIZE_BYTES](../android/app/DownloadManager.md) Total size of the download in bytes. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [COLUMN_STATUS](DownloadManager.md) Current status of the download, as one of the STATUS_\* constants. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [COLUMN_TITLE](DownloadManager.md) The client-supplied title for this download. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [COLUMN_TOTAL_SIZE_BYTES](DownloadManager.md) Total size of the download in bytes. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [COLUMN_URI](../android/app/DownloadManager.md) URI to be downloaded. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_CANNOT_RESUME](../android/app/DownloadManager.md) Value of [COLUMN_REASON](../android/app/DownloadManager.md) when some possibly transient error occurred but we can't resume the download. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_DEVICE_NOT_FOUND](../android/app/DownloadManager.md) Value of [COLUMN_REASON](../android/app/DownloadManager.md) when no external storage device was found. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [COLUMN_URI](DownloadManager.md) URI to be downloaded. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_CANNOT_RESUME](DownloadManager.md) Value of [COLUMN_REASON](DownloadManager.md) when some possibly transient error occurred but we can't resume the download. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_DEVICE_NOT_FOUND](DownloadManager.md) Value of [COLUMN_REASON](DownloadManager.md) when no external storage device was found. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_FILE_ALREADY_EXISTS](../android/app/DownloadManager.md) Value of [COLUMN_REASON](../android/app/DownloadManager.md) when the requested destination file already exists (the download manager will not overwrite an existing file). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_FILE_ERROR](../android/app/DownloadManager.md) Value of [COLUMN_REASON](../android/app/DownloadManager.md) when a storage issue arises which doesn't fit under any other error code. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_HTTP_DATA_ERROR](../android/app/DownloadManager.md) Value of [COLUMN_REASON](../android/app/DownloadManager.md) when an error receiving or processing data occurred at the HTTP level. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_FILE_ALREADY_EXISTS](DownloadManager.md) Value of [COLUMN_REASON](DownloadManager.md) when the requested destination file already exists (the download manager will not overwrite an existing file). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_FILE_ERROR](DownloadManager.md) Value of [COLUMN_REASON](DownloadManager.md) when a storage issue arises which doesn't fit under any other error code. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_HTTP_DATA_ERROR](DownloadManager.md) Value of [COLUMN_REASON](DownloadManager.md) when an error receiving or processing data occurred at the HTTP level. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_INSUFFICIENT_SPACE](../android/app/DownloadManager.md) Value of [COLUMN_REASON](../android/app/DownloadManager.md) when there was insufficient storage space. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_TOO_MANY_REDIRECTS](../android/app/DownloadManager.md) Value of [COLUMN_REASON](../android/app/DownloadManager.md) when there were too many redirects. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_UNHANDLED_HTTP_CODE](../android/app/DownloadManager.md) Value of [COLUMN_REASON](../android/app/DownloadManager.md) when an HTTP code was received that download manager can't handle. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_INSUFFICIENT_SPACE](DownloadManager.md) Value of [COLUMN_REASON](DownloadManager.md) when there was insufficient storage space. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_TOO_MANY_REDIRECTS](DownloadManager.md) Value of [COLUMN_REASON](DownloadManager.md) when there were too many redirects. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_UNHANDLED_HTTP_CODE](DownloadManager.md) Value of [COLUMN_REASON](DownloadManager.md) when an HTTP code was received that download manager can't handle. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_UNKNOWN](../android/app/DownloadManager.md) Value of COLUMN_ERROR_CODE when the download has completed with an error that doesn't fit under any other error code. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_DOWNLOAD_ID](../android/app/DownloadManager.md) Intent extra included with [ACTION_DOWNLOAD_COMPLETE](../android/app/DownloadManager.md) intents, indicating the ID (as a long) of the download that just completed. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_NOTIFICATION_CLICK_DOWNLOAD_IDS](../android/app/DownloadManager.md) When clicks on multiple notifications are received, the following provides an array of download ids corresponding to the download notification that was clicked. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_UNKNOWN](DownloadManager.md) Value of COLUMN_ERROR_CODE when the download has completed with an error that doesn't fit under any other error code. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_DOWNLOAD_ID](DownloadManager.md) Intent extra included with [ACTION_DOWNLOAD_COMPLETE](DownloadManager.md) intents, indicating the ID (as a long) of the download that just completed. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_NOTIFICATION_CLICK_DOWNLOAD_IDS](DownloadManager.md) When clicks on multiple notifications are received, the following provides an array of download ids corresponding to the download notification that was clicked. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [INTENT_EXTRAS_SORT_BY_SIZE](../android/app/DownloadManager.md) Intent extra included with [ACTION_VIEW_DOWNLOADS](../android/app/DownloadManager.md) to start DownloadApp in sort-by-size mode. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PAUSED_QUEUED_FOR_WIFI](../android/app/DownloadManager.md) Value of [COLUMN_REASON](../android/app/DownloadManager.md) when the download exceeds a size limit for downloads over the mobile network and the download manager is waiting for a Wi-Fi connection to proceed. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PAUSED_UNKNOWN](../android/app/DownloadManager.md) Value of [COLUMN_REASON](../android/app/DownloadManager.md) when the download is paused for some other reason. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [INTENT_EXTRAS_SORT_BY_SIZE](DownloadManager.md) Intent extra included with [ACTION_VIEW_DOWNLOADS](DownloadManager.md) to start DownloadApp in sort-by-size mode. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PAUSED_QUEUED_FOR_WIFI](DownloadManager.md) Value of [COLUMN_REASON](DownloadManager.md) when the download exceeds a size limit for downloads over the mobile network and the download manager is waiting for a Wi-Fi connection to proceed. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PAUSED_UNKNOWN](DownloadManager.md) Value of [COLUMN_REASON](DownloadManager.md) when the download is paused for some other reason. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PAUSED_WAITING_FOR_NETWORK](../android/app/DownloadManager.md) Value of [COLUMN_REASON](../android/app/DownloadManager.md) when the download is waiting for network connectivity to proceed. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PAUSED_WAITING_TO_RETRY](../android/app/DownloadManager.md) Value of [COLUMN_REASON](../android/app/DownloadManager.md) when the download is paused because some network error occurred and the download manager is waiting before retrying the request. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_FAILED](../android/app/DownloadManager.md) Value of [COLUMN_STATUS](../android/app/DownloadManager.md) when the download has failed (and will not be retried). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PAUSED_WAITING_FOR_NETWORK](DownloadManager.md) Value of [COLUMN_REASON](DownloadManager.md) when the download is waiting for network connectivity to proceed. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PAUSED_WAITING_TO_RETRY](DownloadManager.md) Value of [COLUMN_REASON](DownloadManager.md) when the download is paused because some network error occurred and the download manager is waiting before retrying the request. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_FAILED](DownloadManager.md) Value of [COLUMN_STATUS](DownloadManager.md) when the download has failed (and will not be retried). |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_PAUSED](../android/app/DownloadManager.md) Value of [COLUMN_STATUS](../android/app/DownloadManager.md) when the download is waiting to retry or resume. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_PENDING](../android/app/DownloadManager.md) Value of [COLUMN_STATUS](../android/app/DownloadManager.md) when the download is waiting to start. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_RUNNING](../android/app/DownloadManager.md) Value of [COLUMN_STATUS](../android/app/DownloadManager.md) when the download is currently running. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_PAUSED](DownloadManager.md) Value of [COLUMN_STATUS](DownloadManager.md) when the download is waiting to retry or resume. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_PENDING](DownloadManager.md) Value of [COLUMN_STATUS](DownloadManager.md) when the download is waiting to start. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_RUNNING](DownloadManager.md) Value of [COLUMN_STATUS](DownloadManager.md) when the download is currently running. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_SUCCESSFUL](../android/app/DownloadManager.md) Value of [COLUMN_STATUS](../android/app/DownloadManager.md) when the download has successfully completed. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_SUCCESSFUL](DownloadManager.md) Value of [COLUMN_STATUS](DownloadManager.md) when the download has successfully completed. |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [addCompletedDownload](../android/app/DownloadManager.md))`(`title:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `description:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `isMediaScannerScannable:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `mimeType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `length:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `showNotification:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Adds a file to the downloads database system, so it could appear in Downloads App (and thus become eligible for management by the Downloads App). |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [addCompletedDownload](../android/app/DownloadManager.md))`(`title:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `description:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `isMediaScannerScannable:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `mimeType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `length:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `showNotification:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `uri:` ` [Uri](../android/net/Uri.md)!`, `referer:` ` [Uri](../android/net/Uri.md)!`)` Adds a file to the downloads database system, so it could appear in Downloads App (and thus become eligible for management by the Downloads App). |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [enqueue](../android/app/DownloadManager.md))`(`request:` ` [DownloadManager.Request](../android/app/DownloadManager.Request.md)!`)` Enqueue a new download. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [addCompletedDownload](DownloadManager.md))`(`title:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `description:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `isMediaScannerScannable:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `mimeType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `length:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `showNotification:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Adds a file to the downloads database system, so it could appear in Downloads App (and thus become eligible for management by the Downloads App). |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [addCompletedDownload](DownloadManager.md))`(`title:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `description:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `isMediaScannerScannable:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `mimeType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `length:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `showNotification:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `uri:` ` [Uri](../android.net/Uri.md)!`, `referer:` ` [Uri](../android.net/Uri.md)!`)` Adds a file to the downloads database system, so it could appear in Downloads App (and thus become eligible for management by the Downloads App). |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [enqueue](DownloadManager.md))`(`request:` ` [DownloadManager.Request](../android/app/DownloadManager.Request.md)!`)` Enqueue a new download. |
 | --- | --- |
-| openstatic [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)! | [getMaxBytesOverMobile](../android/app/DownloadManager.md))`(`context:` ` [Context](../android/content/Context.md)!`)` Returns maximum size, in bytes, of downloads that may go over a mobile connection; or null if there's no limit |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getMimeTypeForDownloadedFile](../android/app/DownloadManager.md))`(`id:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the media type of the given downloaded file id, if the file was downloaded successfully. |
-| openstatic [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)! | [getRecommendedMaxBytesOverMobile](../android/app/DownloadManager.md))`(`context:` ` [Context](../android/content/Context.md)!`)` Returns recommended maximum size, in bytes, of downloads that may go over a mobile connection; or null if there's no recommended limit. |
+| openstatic [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)! | [getMaxBytesOverMobile](DownloadManager.md))`(`context:` ` [Context](../android.content/Context.md)!`)` Returns maximum size, in bytes, of downloads that may go over a mobile connection; or null if there's no limit |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getMimeTypeForDownloadedFile](DownloadManager.md))`(`id:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the media type of the given downloaded file id, if the file was downloaded successfully. |
+| openstatic [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)! | [getRecommendedMaxBytesOverMobile](DownloadManager.md))`(`context:` ` [Context](../android.content/Context.md)!`)` Returns recommended maximum size, in bytes, of downloads that may go over a mobile connection; or null if there's no recommended limit. |
 | --- | --- |
-| open [Uri](../android/net/Uri.md)! | [getUriForDownloadedFile](../android/app/DownloadManager.md))`(`id:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the [Uri](../android/net/Uri.md) of the given downloaded file id, if the file is downloaded successfully. |
-| open [ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md)! | [openDownloadedFile](../android/app/DownloadManager.md))`(`id:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Open a downloaded file for reading. |
-| open [Cursor](../android/database/Cursor.md)! | [query](../android/app/DownloadManager.md))`(`query:` ` [DownloadManager.Query](../android/app/DownloadManager.Query.md)!`)` Query the download manager about downloads that have been requested. |
+| open [Uri](../android.net/Uri.md)! | [getUriForDownloadedFile](DownloadManager.md))`(`id:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the [Uri](../android.net/Uri.md) of the given downloaded file id, if the file is downloaded successfully. |
+| open [ParcelFileDescriptor](../android.os/ParcelFileDescriptor.md)! | [openDownloadedFile](DownloadManager.md))`(`id:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Open a downloaded file for reading. |
+| open [Cursor](../android.database/Cursor.md)! | [query](DownloadManager.md))`(`query:` ` [DownloadManager.Query](../android/app/DownloadManager.Query.md)!`)` Query the download manager about downloads that have been requested. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [remove](../android/app/DownloadManager.md))`(`vararg` `ids:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Cancel downloads and remove them from the download manager. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [remove](DownloadManager.md))`(`vararg` `ids:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Cancel downloads and remove them from the download manager. |
 
 ## Constants
 
@@ -178,7 +178,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 static val COLUMN_LAST_MODIFIED_TIMESTAMP: String
 ```
 
-Timestamp when the download was last modified, in [System.currentTimeMillis()](../java/lang/System.md))(wall clock time in UTC). 
+Timestamp when the download was last modified, in [System.currentTimeMillis()](../java.lang/System.md))(wall clock time in UTC). 
 
  Value: "last_modified_timestamp"
 
@@ -191,11 +191,11 @@ Deprecated in [API level 24](https://developer.android.com/guide/topics/manifest
 static val COLUMN_LOCAL_FILENAME: String
 ```
 
-**Deprecated:** *apps should transition to using [ContentResolver.openFileDescriptor(Uri, String)](../android/content/ContentResolver.md))instead.*
+**Deprecated:** *apps should transition to using [ContentResolver.openFileDescriptor(Uri, String)](../android.content/ContentResolver.md))instead.*
 
 Path to the downloaded file on disk.
 
-Note that apps may not have filesystem permissions to directly access this path. Instead of trying to open this path directly, apps should use [ContentResolver.openFileDescriptor(Uri, String)](../android/content/ContentResolver.md))to gain access. 
+Note that apps may not have filesystem permissions to directly access this path. Instead of trying to open this path directly, apps should use [ContentResolver.openFileDescriptor(Uri, String)](../android.content/ContentResolver.md))to gain access. 
 
  Value: "local_filename"
 
@@ -245,7 +245,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 static val COLUMN_REASON: String
 ```
 
-Provides more detail on the status of the download. Its meaning depends on the value of [COLUMN_STATUS](../android/app/DownloadManager.md). When [COLUMN_STATUS](../android/app/DownloadManager.md) is [STATUS_FAILED](../android/app/DownloadManager.md), this indicates the type of error that occurred. If an HTTP error occurred, this will hold the HTTP status code as defined in RFC 2616. Otherwise, it will hold one of the ERROR_\* constants. When [COLUMN_STATUS](../android/app/DownloadManager.md) is [STATUS_PAUSED](../android/app/DownloadManager.md), this indicates why the download is paused. It will hold one of the PAUSED_\* constants. If [COLUMN_STATUS](../android/app/DownloadManager.md) is neither [STATUS_FAILED](../android/app/DownloadManager.md) nor [STATUS_PAUSED](../android/app/DownloadManager.md), this column's value is undefined. 
+Provides more detail on the status of the download. Its meaning depends on the value of [COLUMN_STATUS](DownloadManager.md). When [COLUMN_STATUS](DownloadManager.md) is [STATUS_FAILED](DownloadManager.md), this indicates the type of error that occurred. If an HTTP error occurred, this will hold the HTTP status code as defined in RFC 2616. Otherwise, it will hold one of the ERROR_\* constants. When [COLUMN_STATUS](DownloadManager.md) is [STATUS_PAUSED](DownloadManager.md), this indicates why the download is paused. It will hold one of the PAUSED_\* constants. If [COLUMN_STATUS](DownloadManager.md) is neither [STATUS_FAILED](DownloadManager.md) nor [STATUS_PAUSED](DownloadManager.md), this column's value is undefined. 
 
  Value: "reason"
 
@@ -307,7 +307,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 static val ERROR_CANNOT_RESUME: Int
 ```
 
-Value of [COLUMN_REASON](../android/app/DownloadManager.md) when some possibly transient error occurred but we can't resume the download. 
+Value of [COLUMN_REASON](DownloadManager.md) when some possibly transient error occurred but we can't resume the download. 
 
  Value: 1008
 
@@ -319,7 +319,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 static val ERROR_DEVICE_NOT_FOUND: Int
 ```
 
-Value of [COLUMN_REASON](../android/app/DownloadManager.md) when no external storage device was found. Typically, this is because the SD card is not mounted. 
+Value of [COLUMN_REASON](DownloadManager.md) when no external storage device was found. Typically, this is because the SD card is not mounted. 
 
  Value: 1007
 
@@ -331,7 +331,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 static val ERROR_FILE_ALREADY_EXISTS: Int
 ```
 
-Value of [COLUMN_REASON](../android/app/DownloadManager.md) when the requested destination file already exists (the download manager will not overwrite an existing file). 
+Value of [COLUMN_REASON](DownloadManager.md) when the requested destination file already exists (the download manager will not overwrite an existing file). 
 
  Value: 1009
 
@@ -343,7 +343,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 static val ERROR_FILE_ERROR: Int
 ```
 
-Value of [COLUMN_REASON](../android/app/DownloadManager.md) when a storage issue arises which doesn't fit under any other error code. Use the more specific [ERROR_INSUFFICIENT_SPACE](../android/app/DownloadManager.md) and [ERROR_DEVICE_NOT_FOUND](../android/app/DownloadManager.md) when appropriate. 
+Value of [COLUMN_REASON](DownloadManager.md) when a storage issue arises which doesn't fit under any other error code. Use the more specific [ERROR_INSUFFICIENT_SPACE](DownloadManager.md) and [ERROR_DEVICE_NOT_FOUND](DownloadManager.md) when appropriate. 
 
  Value: 1001
 
@@ -355,7 +355,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 static val ERROR_HTTP_DATA_ERROR: Int
 ```
 
-Value of [COLUMN_REASON](../android/app/DownloadManager.md) when an error receiving or processing data occurred at the HTTP level. 
+Value of [COLUMN_REASON](DownloadManager.md) when an error receiving or processing data occurred at the HTTP level. 
 
  Value: 1004
 
@@ -367,7 +367,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 static val ERROR_INSUFFICIENT_SPACE: Int
 ```
 
-Value of [COLUMN_REASON](../android/app/DownloadManager.md) when there was insufficient storage space. Typically, this is because the SD card is full. 
+Value of [COLUMN_REASON](DownloadManager.md) when there was insufficient storage space. Typically, this is because the SD card is full. 
 
  Value: 1006
 
@@ -379,7 +379,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 static val ERROR_TOO_MANY_REDIRECTS: Int
 ```
 
-Value of [COLUMN_REASON](../android/app/DownloadManager.md) when there were too many redirects. 
+Value of [COLUMN_REASON](DownloadManager.md) when there were too many redirects. 
 
  Value: 1005
 
@@ -391,7 +391,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 static val ERROR_UNHANDLED_HTTP_CODE: Int
 ```
 
-Value of [COLUMN_REASON](../android/app/DownloadManager.md) when an HTTP code was received that download manager can't handle. 
+Value of [COLUMN_REASON](DownloadManager.md) when an HTTP code was received that download manager can't handle. 
 
  Value: 1002
 
@@ -415,7 +415,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 static val EXTRA_DOWNLOAD_ID: String
 ```
 
-Intent extra included with [ACTION_DOWNLOAD_COMPLETE](../android/app/DownloadManager.md) intents, indicating the ID (as a long) of the download that just completed. 
+Intent extra included with [ACTION_DOWNLOAD_COMPLETE](DownloadManager.md) intents, indicating the ID (as a long) of the download that just completed. 
 
  Value: "extra_download_id"
 
@@ -427,7 +427,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_NOTIFICATION_CLICK_DOWNLOAD_IDS: String
 ```
 
-When clicks on multiple notifications are received, the following provides an array of download ids corresponding to the download notification that was clicked. It can be retrieved by the receiver of this Intent using [android.content.Intent#getLongArrayExtra(String)](../android/content/Intent.md)). 
+When clicks on multiple notifications are received, the following provides an array of download ids corresponding to the download notification that was clicked. It can be retrieved by the receiver of this Intent using [android.content.Intent#getLongArrayExtra(String)](../android.content/Intent.md)). 
 
  Value: "extra_click_download_ids"
 
@@ -439,7 +439,7 @@ Added in [API level 12](https://developer.android.com/guide/topics/manifest/uses
 static val INTENT_EXTRAS_SORT_BY_SIZE: String
 ```
 
-Intent extra included with [ACTION_VIEW_DOWNLOADS](../android/app/DownloadManager.md) to start DownloadApp in sort-by-size mode. 
+Intent extra included with [ACTION_VIEW_DOWNLOADS](DownloadManager.md) to start DownloadApp in sort-by-size mode. 
 
  Value: "android.app.DownloadManager.extra_sortBySize"
 
@@ -451,7 +451,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 static val PAUSED_QUEUED_FOR_WIFI: Int
 ```
 
-Value of [COLUMN_REASON](../android/app/DownloadManager.md) when the download exceeds a size limit for downloads over the mobile network and the download manager is waiting for a Wi-Fi connection to proceed. 
+Value of [COLUMN_REASON](DownloadManager.md) when the download exceeds a size limit for downloads over the mobile network and the download manager is waiting for a Wi-Fi connection to proceed. 
 
  Value: 3
 
@@ -463,7 +463,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 static val PAUSED_UNKNOWN: Int
 ```
 
-Value of [COLUMN_REASON](../android/app/DownloadManager.md) when the download is paused for some other reason. 
+Value of [COLUMN_REASON](DownloadManager.md) when the download is paused for some other reason. 
 
  Value: 4
 
@@ -475,7 +475,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 static val PAUSED_WAITING_FOR_NETWORK: Int
 ```
 
-Value of [COLUMN_REASON](../android/app/DownloadManager.md) when the download is waiting for network connectivity to proceed. 
+Value of [COLUMN_REASON](DownloadManager.md) when the download is waiting for network connectivity to proceed. 
 
  Value: 2
 
@@ -487,7 +487,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 static val PAUSED_WAITING_TO_RETRY: Int
 ```
 
-Value of [COLUMN_REASON](../android/app/DownloadManager.md) when the download is paused because some network error occurred and the download manager is waiting before retrying the request. 
+Value of [COLUMN_REASON](DownloadManager.md) when the download is paused because some network error occurred and the download manager is waiting before retrying the request. 
 
  Value: 1
 
@@ -499,7 +499,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 static val STATUS_FAILED: Int
 ```
 
-Value of [COLUMN_STATUS](../android/app/DownloadManager.md) when the download has failed (and will not be retried). 
+Value of [COLUMN_STATUS](DownloadManager.md) when the download has failed (and will not be retried). 
 
  Value: 16
 
@@ -511,7 +511,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 static val STATUS_PAUSED: Int
 ```
 
-Value of [COLUMN_STATUS](../android/app/DownloadManager.md) when the download is waiting to retry or resume. 
+Value of [COLUMN_STATUS](DownloadManager.md) when the download is waiting to retry or resume. 
 
  Value: 4
 
@@ -523,7 +523,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 static val STATUS_PENDING: Int
 ```
 
-Value of [COLUMN_STATUS](../android/app/DownloadManager.md) when the download is waiting to start. 
+Value of [COLUMN_STATUS](DownloadManager.md) when the download is waiting to start. 
 
  Value: 1
 
@@ -535,7 +535,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 static val STATUS_RUNNING: Int
 ```
 
-Value of [COLUMN_STATUS](../android/app/DownloadManager.md) when the download is currently running. 
+Value of [COLUMN_STATUS](DownloadManager.md) when the download is currently running. 
 
  Value: 2
 
@@ -547,7 +547,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 static val STATUS_SUCCESSFUL: Int
 ```
 
-Value of [COLUMN_STATUS](../android/app/DownloadManager.md) when the download has successfully completed. 
+Value of [COLUMN_STATUS](DownloadManager.md) when the download has successfully completed. 
 
  Value: 8
 
@@ -576,7 +576,7 @@ Adds a file to the downloads database system, so it could appear in Downloads Ap
 
 It is helpful to make the file scannable by MediaScanner by setting the param isMediaScannerScannable to true. It makes the file visible in media managing applications such as Gallery App, which could be a useful purpose of using this API.
 
-For applications targeting [android.os.Build.VERSION_CODES#Q](../android/os/Build.VERSION_CODES.md) or above,`path`must be within directories owned by the application {e.g. [Context.getExternalFilesDir(String)](../android/content/Context.md))} or if the application is running under the legacy storage model (see [android:requestLegacyExternalStorage](../android/R.styleable.md)),`path`can also be within the top-level Downloads directory (as returned by [Environment.getExternalStoragePublicDirectory(String)](../android/os/Environment.md))with [Environment.DIRECTORY_DOWNLOADS](../android/os/Environment.md)).
+For applications targeting [android.os.Build.VERSION_CODES#Q](../android/os/Build.VERSION_CODES.md) or above,`path`must be within directories owned by the application {e.g. [Context.getExternalFilesDir(String)](../android.content/Context.md))} or if the application is running under the legacy storage model (see [android:requestLegacyExternalStorage](../android/R.styleable.md)),`path`can also be within the top-level Downloads directory (as returned by [Environment.getExternalStoragePublicDirectory(String)](../android.os/Environment.md))with [Environment.DIRECTORY_DOWNLOADS](../android.os/Environment.md)).
 
 | Parameters ||
 |---------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -619,7 +619,7 @@ Adds a file to the downloads database system, so it could appear in Downloads Ap
 
 It is helpful to make the file scannable by MediaScanner by setting the param isMediaScannerScannable to true. It makes the file visible in media managing applications such as Gallery App, which could be a useful purpose of using this API.
 
-For applications targeting [android.os.Build.VERSION_CODES#Q](../android/os/Build.VERSION_CODES.md) or above,`path`must be within directories owned by the application {e.g. [Context.getExternalFilesDir(String)](../android/content/Context.md))} or if the application is running under the legacy storage model (see [android:requestLegacyExternalStorage](../android/R.styleable.md)),`path`can also be within the top-level Downloads directory (as returned by [Environment.getExternalStoragePublicDirectory(String)](../android/os/Environment.md))with [Environment.DIRECTORY_DOWNLOADS](../android/os/Environment.md)).
+For applications targeting [android.os.Build.VERSION_CODES#Q](../android/os/Build.VERSION_CODES.md) or above,`path`must be within directories owned by the application {e.g. [Context.getExternalFilesDir(String)](../android.content/Context.md))} or if the application is running under the legacy storage model (see [android:requestLegacyExternalStorage](../android/R.styleable.md)),`path`can also be within the top-level Downloads directory (as returned by [Environment.getExternalStoragePublicDirectory(String)](../android.os/Environment.md))with [Environment.DIRECTORY_DOWNLOADS](../android.os/Environment.md)).
 
 | Parameters ||
 |---------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -632,8 +632,8 @@ For applications targeting [android.os.Build.VERSION_CODES#Q](../android/os/Buil
 | `length` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):length of the downloaded file |
 | --- | --- |
 | `showNotification` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):true if a notification is to be sent, false otherwise |
-| `uri` | [Uri](../android/net/Uri.md)!:the original HTTP URI of the download |
-| `referer` | [Uri](../android/net/Uri.md)!:the HTTP Referer for the download |
+| `uri` | [Uri](../android.net/Uri.md)!:the original HTTP URI of the download |
+| `referer` | [Uri](../android.net/Uri.md)!:the HTTP Referer for the download |
 | --- | --- |
 
 | Return ||
@@ -670,7 +670,7 @@ Returns maximum size, in bytes, of downloads that may go over a mobile connectio
 
 | Parameters ||
 |-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](../android/content/Context.md)!:the [Context](../android/content/Context.md) to use for accessing the [ContentResolver](../android/content/ContentResolver.md) |
+| `context` | [Context](../android.content/Context.md)!:the [Context](../android.content/Context.md) to use for accessing the [ContentResolver](../android.content/ContentResolver.md) |
 
 | Return ||
 |-------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
@@ -706,7 +706,7 @@ Returns recommended maximum size, in bytes, of downloads that may go over a mobi
 
 | Parameters ||
 |-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](../android/content/Context.md)!:the [Context](../android/content/Context.md) to use for accessing the [ContentResolver](../android/content/ContentResolver.md) |
+| `context` | [Context](../android.content/Context.md)!:the [Context](../android.content/Context.md) to use for accessing the [ContentResolver](../android.content/ContentResolver.md) |
 
 | Return ||
 |-------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
@@ -720,7 +720,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 open fun getUriForDownloadedFile(id: Long): Uri!
 ```
 
-Returns the [Uri](../android/net/Uri.md) of the given downloaded file id, if the file is downloaded successfully. Otherwise, null is returned.
+Returns the [Uri](../android.net/Uri.md) of the given downloaded file id, if the file is downloaded successfully. Otherwise, null is returned.
 
 | Parameters ||
 |------|-------------------------------------------------------------------------------------------------------------|
@@ -728,7 +728,7 @@ Returns the [Uri](../android/net/Uri.md) of the given downloaded file id, if the
 
 | Return ||
 |------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Uri](../android/net/Uri.md)! | the [Uri](../android/net/Uri.md) of the given downloaded file id, if download was successful. null otherwise. |
+| [Uri](../android.net/Uri.md)! | the [Uri](../android.net/Uri.md) of the given downloaded file id, if download was successful. null otherwise. |
 
 ### openDownloadedFile
 
@@ -746,7 +746,7 @@ Open a downloaded file for reading. The download must have completed.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| [ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md)! | a read-only [ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md) |
+| [ParcelFileDescriptor](../android.os/ParcelFileDescriptor.md)! | a read-only [ParcelFileDescriptor](../android.os/ParcelFileDescriptor.md) |
 
 | Exceptions ||
 |---------------------------------|------------------------------------------------|
@@ -768,7 +768,7 @@ Query the download manager about downloads that have been requested.
 
 | Return ||
 |-----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
-| [Cursor](../android/database/Cursor.md)! | a Cursor over the result set of downloads, with columns consisting of all the COLUMN_\* constants. |
+| [Cursor](../android.database/Cursor.md)! | a Cursor over the result set of downloads, with columns consisting of all the COLUMN_\* constants. |
 
 ### remove
 

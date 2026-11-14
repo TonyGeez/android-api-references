@@ -10,7 +10,7 @@ open class Modifier
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.lang.reflect.Modifier](../java/lang/reflect/Modifier.md) |
+| ↳ | [java.lang.reflect.Modifier](Modifier.md) |
 
 The Modifier class provides`static`methods and constants to decode class and member access modifiers. The sets of modifiers are represented as integers with distinct bit positions representing different modifiers. The values for the constants representing the modifiers are taken from the tables in sections 4.1, 4.4, 4.5, and 4.7 of The Java™ Virtual Machine Specification.
 
@@ -18,54 +18,54 @@ The Modifier class provides`static`methods and constants to decode class and mem
 
 | Constants ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ABSTRACT](../java/lang/reflect/Modifier.md) The`int`value representing the`abstract`modifier. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FINAL](../java/lang/reflect/Modifier.md) The`int`value representing the`final`modifier. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INTERFACE](../java/lang/reflect/Modifier.md) The`int`value representing the`interface`modifier. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ABSTRACT](Modifier.md) The`int`value representing the`abstract`modifier. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FINAL](Modifier.md) The`int`value representing the`final`modifier. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INTERFACE](Modifier.md) The`int`value representing the`interface`modifier. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NATIVE](../java/lang/reflect/Modifier.md) The`int`value representing the`native`modifier. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PRIVATE](../java/lang/reflect/Modifier.md) The`int`value representing the`private`modifier. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROTECTED](../java/lang/reflect/Modifier.md) The`int`value representing the`protected`modifier. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NATIVE](Modifier.md) The`int`value representing the`native`modifier. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PRIVATE](Modifier.md) The`int`value representing the`private`modifier. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROTECTED](Modifier.md) The`int`value representing the`protected`modifier. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PUBLIC](../java/lang/reflect/Modifier.md) The`int`value representing the`public`modifier. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATIC](../java/lang/reflect/Modifier.md) The`int`value representing the`static`modifier. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STRICT](../java/lang/reflect/Modifier.md) The`int`value representing the`strictfp`modifier. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PUBLIC](Modifier.md) The`int`value representing the`public`modifier. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATIC](Modifier.md) The`int`value representing the`static`modifier. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STRICT](Modifier.md) The`int`value representing the`strictfp`modifier. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SYNCHRONIZED](../java/lang/reflect/Modifier.md) The`int`value representing the`synchronized`modifier. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSIENT](../java/lang/reflect/Modifier.md) The`int`value representing the`transient`modifier. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VOLATILE](../java/lang/reflect/Modifier.md) The`int`value representing the`volatile`modifier. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SYNCHRONIZED](Modifier.md) The`int`value representing the`synchronized`modifier. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSIENT](Modifier.md) The`int`value representing the`transient`modifier. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VOLATILE](Modifier.md) The`int`value representing the`volatile`modifier. |
 | --- | --- |
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------|---|
-| [Modifier](../java/lang/reflect/Modifier.md))`()` <br /> |
+| [Modifier](Modifier.md))`()` <br /> |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [classModifiers](../java/lang/reflect/Modifier.md))`()` Return an`int`value OR-ing together the source language modifiers that can be applied to a class. |
-| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [constructorModifiers](../java/lang/reflect/Modifier.md))`()` Return an`int`value OR-ing together the source language modifiers that can be applied to a constructor. |
-| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [fieldModifiers](../java/lang/reflect/Modifier.md))`()` Return an`int`value OR-ing together the source language modifiers that can be applied to a field. |
+| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [classModifiers](Modifier.md))`()` Return an`int`value OR-ing together the source language modifiers that can be applied to a class. |
+| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [constructorModifiers](Modifier.md))`()` Return an`int`value OR-ing together the source language modifiers that can be applied to a constructor. |
+| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [fieldModifiers](Modifier.md))`()` Return an`int`value OR-ing together the source language modifiers that can be applied to a field. |
 | --- | --- |
-| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [interfaceModifiers](../java/lang/reflect/Modifier.md))`()` Return an`int`value OR-ing together the source language modifiers that can be applied to an interface. |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAbstract](../java/lang/reflect/Modifier.md))`(`mod:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return`true`if the integer argument includes the`abstract`modifier,`false`otherwise. |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFinal](../java/lang/reflect/Modifier.md))`(`mod:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return`true`if the integer argument includes the`final`modifier,`false`otherwise. |
+| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [interfaceModifiers](Modifier.md))`()` Return an`int`value OR-ing together the source language modifiers that can be applied to an interface. |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAbstract](Modifier.md))`(`mod:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return`true`if the integer argument includes the`abstract`modifier,`false`otherwise. |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFinal](Modifier.md))`(`mod:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return`true`if the integer argument includes the`final`modifier,`false`otherwise. |
 | --- | --- |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isInterface](../java/lang/reflect/Modifier.md))`(`mod:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return`true`if the integer argument includes the`interface`modifier,`false`otherwise. |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isNative](../java/lang/reflect/Modifier.md))`(`mod:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return`true`if the integer argument includes the`native`modifier,`false`otherwise. |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPrivate](../java/lang/reflect/Modifier.md))`(`mod:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return`true`if the integer argument includes the`private`modifier,`false`otherwise. |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isInterface](Modifier.md))`(`mod:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return`true`if the integer argument includes the`interface`modifier,`false`otherwise. |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isNative](Modifier.md))`(`mod:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return`true`if the integer argument includes the`native`modifier,`false`otherwise. |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPrivate](Modifier.md))`(`mod:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return`true`if the integer argument includes the`private`modifier,`false`otherwise. |
 | --- | --- |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isProtected](../java/lang/reflect/Modifier.md))`(`mod:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return`true`if the integer argument includes the`protected`modifier,`false`otherwise. |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPublic](../java/lang/reflect/Modifier.md))`(`mod:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return`true`if the integer argument includes the`public`modifier,`false`otherwise. |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isStatic](../java/lang/reflect/Modifier.md))`(`mod:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return`true`if the integer argument includes the`static`modifier,`false`otherwise. |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isProtected](Modifier.md))`(`mod:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return`true`if the integer argument includes the`protected`modifier,`false`otherwise. |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPublic](Modifier.md))`(`mod:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return`true`if the integer argument includes the`public`modifier,`false`otherwise. |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isStatic](Modifier.md))`(`mod:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return`true`if the integer argument includes the`static`modifier,`false`otherwise. |
 | --- | --- |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isStrict](../java/lang/reflect/Modifier.md))`(`mod:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return`true`if the integer argument includes the`strictfp`modifier,`false`otherwise. |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSynchronized](../java/lang/reflect/Modifier.md))`(`mod:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return`true`if the integer argument includes the`synchronized`modifier,`false`otherwise. |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isTransient](../java/lang/reflect/Modifier.md))`(`mod:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return`true`if the integer argument includes the`transient`modifier,`false`otherwise. |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isStrict](Modifier.md))`(`mod:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return`true`if the integer argument includes the`strictfp`modifier,`false`otherwise. |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSynchronized](Modifier.md))`(`mod:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return`true`if the integer argument includes the`synchronized`modifier,`false`otherwise. |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isTransient](Modifier.md))`(`mod:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return`true`if the integer argument includes the`transient`modifier,`false`otherwise. |
 | --- | --- |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isVolatile](../java/lang/reflect/Modifier.md))`(`mod:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return`true`if the integer argument includes the`volatile`modifier,`false`otherwise. |
-| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [methodModifiers](../java/lang/reflect/Modifier.md))`()` Return an`int`value OR-ing together the source language modifiers that can be applied to a method. |
-| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [parameterModifiers](../java/lang/reflect/Modifier.md))`()` Return an`int`value OR-ing together the source language modifiers that can be applied to a parameter. |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isVolatile](Modifier.md))`(`mod:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return`true`if the integer argument includes the`volatile`modifier,`false`otherwise. |
+| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [methodModifiers](Modifier.md))`()` Return an`int`value OR-ing together the source language modifiers that can be applied to a method. |
+| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [parameterModifiers](Modifier.md))`()` Return an`int`value OR-ing together the source language modifiers that can be applied to a parameter. |
 | --- | --- |
-| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toString](../java/lang/reflect/Modifier.md))`(`mod:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return a string describing the access modifier flags in the specified modifier. |
+| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toString](Modifier.md))`(`mod:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return a string describing the access modifier flags in the specified modifier. |
 
 ## Constants
 
@@ -539,7 +539,7 @@ Return a string describing the access modifier flags in the specified modifier. 
 public final synchronized strictfp
   
 ```
-The modifier names are returned in an order consistent with the suggested modifier orderings given in sections 8.1.1, 8.3.1, 8.4.3, 8.8.3, and 9.1.1 of The Java™ Language Specification. The full modifier ordering used by this method is:`public protected private abstract static final transient volatile synchronized native strictfp interface `The`interface`modifier discussed in this class is not a true modifier in the Java language and it appears after all other modifiers listed by this method. This method may return a string of modifiers that are not valid modifiers of a Java entity; in other words, no checking is done on the possible validity of the combination of modifiers represented by the input. Note that to perform such checking for a known kind of entity, such as a constructor or method, first AND the argument of`toString`with the appropriate mask from a method like [constructorModifiers](../java/lang/reflect/Modifier.md))or [methodModifiers](../java/lang/reflect/Modifier.md)).
+The modifier names are returned in an order consistent with the suggested modifier orderings given in sections 8.1.1, 8.3.1, 8.4.3, 8.8.3, and 9.1.1 of The Java™ Language Specification. The full modifier ordering used by this method is:`public protected private abstract static final transient volatile synchronized native strictfp interface `The`interface`modifier discussed in this class is not a true modifier in the Java language and it appears after all other modifiers listed by this method. This method may return a string of modifiers that are not valid modifiers of a Java entity; in other words, no checking is done on the possible validity of the combination of modifiers represented by the input. Note that to perform such checking for a known kind of entity, such as a constructor or method, first AND the argument of`toString`with the appropriate mask from a method like [constructorModifiers](Modifier.md))or [methodModifiers](Modifier.md)).
 
 <br />
 

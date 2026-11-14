@@ -4,23 +4,23 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # BatchResultCallback
 
-Kotlin| [Java](../android/app/appsearch/BatchResultCallback.md) 
+Kotlin| [Java](BatchResultCallback.md) 
 | --- | --- |
 
 ```
 interface BatchResultCallback<KeyType : Any!, ValueType : Any!>
 ```
 
-| [android.app.appsearch.BatchResultCallback](../android/app/appsearch/BatchResultCallback.md) |
+| [android.app.appsearch.BatchResultCallback](BatchResultCallback.md) |
 
-The callback interface to return [AppSearchBatchResult](../android/app/appsearch/AppSearchBatchResult.md).
+The callback interface to return [AppSearchBatchResult](AppSearchBatchResult.md).
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onResult](../android/app/appsearch/BatchResultCallback.md))`(`result:` ` [AppSearchBatchResult](../android/app/appsearch/AppSearchBatchResult.md)<KeyType,` `ValueType>`)` Called when [AppSearchBatchResult](../android/app/appsearch/AppSearchBatchResult.md) results are ready. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSystemError](../android/app/appsearch/BatchResultCallback.md))`(`throwable:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?`)` Called when a system error occurs. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onResult](BatchResultCallback.md))`(`result:` ` [AppSearchBatchResult](AppSearchBatchResult.md)<KeyType,` `ValueType>`)` Called when [AppSearchBatchResult](AppSearchBatchResult.md) results are ready. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSystemError](BatchResultCallback.md))`(`throwable:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?`)` Called when a system error occurs. |
 
 ## Public methods
 
@@ -32,11 +32,11 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 abstract fun onResult(result: AppSearchBatchResult<KeyType, ValueType>): Unit
 ```
 
-Called when [AppSearchBatchResult](../android/app/appsearch/AppSearchBatchResult.md) results are ready.
+Called when [AppSearchBatchResult](AppSearchBatchResult.md) results are ready.
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `result` | [AppSearchBatchResult](../android/app/appsearch/AppSearchBatchResult.md)\<KeyType,ValueType\>:The result of the executed request. This value cannot be`null`. |
+| `result` | [AppSearchBatchResult](AppSearchBatchResult.md)\<KeyType,ValueType\>:The result of the executed request. This value cannot be`null`. |
 
 ### onSystemError
 
@@ -52,7 +52,7 @@ This method is only called the infrastructure is fundamentally broken or unavail
 
 The error is not expected to be recoverable and there is no specific recommended action other than displaying a permanent message to the user.
 
-Normal errors that are caused by invalid inputs or recoverable/retriable situations are reported associated with the input that caused them via the [onResult](../android/app/appsearch/BatchResultCallback.md))method.
+Normal errors that are caused by invalid inputs or recoverable/retriable situations are reported associated with the input that caused them via the [onResult](BatchResultCallback.md))method.
 
 | Parameters ||
 |-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|

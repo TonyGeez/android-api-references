@@ -8,7 +8,7 @@ abstract class SAXParserFactory
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.xml.parsers.SAXParserFactory](../javax/xml/parsers/SAXParserFactory.md) |
+| ↳ | [javax.xml.parsers.SAXParserFactory](SAXParserFactory.md) |
 
 Defines a factory API that enables applications to configure and obtain a SAX based parser to parse XML documents.
 
@@ -21,15 +21,15 @@ Defines a factory API that enables applications to configure and obtain a SAX ba
 | Public methods ||
 |---|---|
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParserFactory#getFeature(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the particular property requested for in the underlying implementation of org. |
-| open [Schema](../javax/xml/validation/Schema.md)! | `https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParserFactory#getSchema()()` Gets the `https://developer.android.com/reference/kotlin/javax/xml/validation/Schema.html#` object specified through the `https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParserFactory#setSchema(javax.xml.validation.Schema)` method. |
+| open [Schema](../javax.xml.validation/Schema.md)! | `https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParserFactory#getSchema()()` Gets the `https://developer.android.com/reference/kotlin/javax/xml/validation/Schema.html#` object specified through the `https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParserFactory#setSchema(javax.xml.validation.Schema)` method. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParserFactory#isNamespaceAware()()` Indicates whether or not the factory is configured to produce parsers which are namespace aware. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParserFactory#isValidating()()` Indicates whether or not the factory is configured to produce parsers which validate the XML content during parse. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParserFactory#isXIncludeAware()()` Get state of XInclude processing. |
-| open static [SAXParserFactory](../javax/xml/parsers/SAXParserFactory.md)! | `https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParserFactory#newInstance()()` Returns Android's implementation of `SAXParserFactory`. |
+| open static [SAXParserFactory](SAXParserFactory.md)! | `https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParserFactory#newInstance()()` Returns Android's implementation of `SAXParserFactory`. |
 | --- | --- |
-| open static [SAXParserFactory](../javax/xml/parsers/SAXParserFactory.md)! | `https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParserFactory#newInstance(kotlin.String,%20java.lang.ClassLoader)(factoryClassName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, classLoader: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#!)` Returns an instance of the named implementation of `SAXParserFactory`. |
-| abstract [SAXParser](../javax/xml/parsers/SAXParser.md)! | `https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParserFactory#newSAXParser()()` Creates a new instance of a SAXParser using the currently configured factory parameters. |
+| open static [SAXParserFactory](SAXParserFactory.md)! | `https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParserFactory#newInstance(kotlin.String,%20java.lang.ClassLoader)(factoryClassName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, classLoader: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#!)` Returns an instance of the named implementation of `SAXParserFactory`. |
+| abstract [SAXParser](SAXParser.md)! | `https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParserFactory#newSAXParser()()` Creates a new instance of a SAXParser using the currently configured factory parameters. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParserFactory#setFeature(kotlin.String,%20kotlin.Boolean)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Sets the particular feature in the underlying implementation of org. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParserFactory#setNamespaceAware(kotlin.Boolean)(awareness: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Specifies that the parser produced by this code will provide support for XML namespaces. |
@@ -276,7 +276,7 @@ A parser must be able to work with any `https://developer.android.com/reference/
 
 | Parameters ||
 |---|---|
-| `schema` | [Schema](../javax/xml/validation/Schema.md)!: `Schema` to use, `null` to remove a schema. |
+| `schema` | [Schema](../javax.xml.validation/Schema.md)!: `Schema` to use, `null` to remove a schema. |
 
 | Exceptions ||
 |---|---|
@@ -292,7 +292,7 @@ open fun setValidating(validating: Boolean): Unit
 
 Specifies that the parser produced by this code will validate documents as they are parsed. By default the value of this is set to `false`.
 
-Note that "the validation" here means [a validating parser](http://www.w3.org/TR/REC-xml#proc-types) as defined in the XML recommendation. In other words, it essentially just controls the DTD validation. (except the legacy two properties defined in JAXP 1.2. See [here](../javax/xml/parsers/SAXParserFactory.md) for more details.)
+Note that "the validation" here means [a validating parser](http://www.w3.org/TR/REC-xml#proc-types) as defined in the XML recommendation. In other words, it essentially just controls the DTD validation. (except the legacy two properties defined in JAXP 1.2. See [here](SAXParserFactory.md) for more details.)
 
 To use modern schema languages such as W3C XML Schema or RELAX NG instead of DTD, you can configure your parser to be a non-validating parser by leaving the `https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParserFactory#setValidating(kotlin.Boolean)` method false, then use the `https://developer.android.com/reference/kotlin/javax/xml/parsers/SAXParserFactory#setSchema(javax.xml.validation.Schema)` method to associate a schema to a parser.
 

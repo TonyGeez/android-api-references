@@ -4,7 +4,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # IDNA
 
-Kotlin| [Java](../android/icu/text/IDNA.md) 
+Kotlin| [Java](IDNA.md) 
 | --- | --- |
 
 ```
@@ -13,13 +13,13 @@ abstract class IDNA
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.icu.text.IDNA](../android/icu/text/IDNA.md) |
+| ↳ | [android.icu.text.IDNA](IDNA.md) |
 
 Abstract base class for IDNA processing. See http://www.unicode.org/reports/tr46/ and http://www.ietf.org/rfc/rfc3490.txt
 
 The IDNA class is not intended for public subclassing.
 
-The non-static methods implement UTS #46 and IDNA2008. IDNA2008 is implemented according to UTS #46, see [getUTS46Instance(int)](../android/icu/text/IDNA.md)).
+The non-static methods implement UTS #46 and IDNA2008. IDNA2008 is implemented according to UTS #46, see [getUTS46Instance(int)](IDNA.md)).
 
 IDNA2003 is obsolete. The static methods implement IDNA2003. They are all deprecated.
 
@@ -36,24 +36,24 @@ The static IDNA API methods implement the IDNA protocol as defined in the [IDNA 
 
 | Constants ||
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CHECK_BIDI](../android/icu/text/IDNA.md) IDNA option to check for whether the input conforms to the BiDi rules. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CHECK_CONTEXTJ](../android/icu/text/IDNA.md) IDNA option to check for whether the input conforms to the CONTEXTJ rules. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CHECK_CONTEXTO](../android/icu/text/IDNA.md) IDNA option to check for whether the input conforms to the CONTEXTO rules. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CHECK_BIDI](IDNA.md) IDNA option to check for whether the input conforms to the BiDi rules. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CHECK_CONTEXTJ](IDNA.md) IDNA option to check for whether the input conforms to the CONTEXTJ rules. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CHECK_CONTEXTO](IDNA.md) IDNA option to check for whether the input conforms to the CONTEXTO rules. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEFAULT](../android/icu/text/IDNA.md) Default options value: None of the other options are set. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NONTRANSITIONAL_TO_ASCII](../android/icu/text/IDNA.md) IDNA option for nontransitional processing in ToASCII(). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NONTRANSITIONAL_TO_UNICODE](../android/icu/text/IDNA.md) IDNA option for nontransitional processing in ToUnicode(). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEFAULT](IDNA.md) Default options value: None of the other options are set. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NONTRANSITIONAL_TO_ASCII](IDNA.md) IDNA option for nontransitional processing in ToASCII(). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NONTRANSITIONAL_TO_UNICODE](IDNA.md) IDNA option for nontransitional processing in ToUnicode(). |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USE_STD3_RULES](../android/icu/text/IDNA.md) Option to check whether the input conforms to the STD3 ASCII rules, for example the restriction of labels to LDH characters (ASCII Letters, Digits and Hyphen-Minus). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USE_STD3_RULES](IDNA.md) Option to check whether the input conforms to the STD3 ASCII rules, for example the restriction of labels to LDH characters (ASCII Letters, Digits and Hyphen-Minus). |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [IDNA](../android/icu/text/IDNA.md)! | [getUTS46Instance](../android/icu/text/IDNA.md))`(`options:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns an IDNA instance which implements UTS #46. |
-| abstract [StringBuilder](../java/lang/StringBuilder.md)! | [labelToASCII](../android/icu/text/IDNA.md))`(`label:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `dest:` ` [StringBuilder](../java/lang/StringBuilder.md)!`, `info:` ` [IDNA.Info](../android/icu/text/IDNA.Info.md)!`)` Converts a single domain name label into its ASCII form for DNS lookup. |
-| abstract [StringBuilder](../java/lang/StringBuilder.md)! | [labelToUnicode](../android/icu/text/IDNA.md))`(`label:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `dest:` ` [StringBuilder](../java/lang/StringBuilder.md)!`, `info:` ` [IDNA.Info](../android/icu/text/IDNA.Info.md)!`)` Converts a single domain name label into its Unicode form for human-readable display. |
+| openstatic [IDNA](IDNA.md)! | [getUTS46Instance](IDNA.md))`(`options:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns an IDNA instance which implements UTS #46. |
+| abstract [StringBuilder](../java.lang/StringBuilder.md)! | [labelToASCII](IDNA.md))`(`label:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `dest:` ` [StringBuilder](../java.lang/StringBuilder.md)!`, `info:` ` [IDNA.Info](../android/icu/text/IDNA.Info.md)!`)` Converts a single domain name label into its ASCII form for DNS lookup. |
+| abstract [StringBuilder](../java.lang/StringBuilder.md)! | [labelToUnicode](IDNA.md))`(`label:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `dest:` ` [StringBuilder](../java.lang/StringBuilder.md)!`, `info:` ` [IDNA.Info](../android/icu/text/IDNA.Info.md)!`)` Converts a single domain name label into its Unicode form for human-readable display. |
 | --- | --- |
-| abstract [StringBuilder](../java/lang/StringBuilder.md)! | [nameToASCII](../android/icu/text/IDNA.md))`(`name:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `dest:` ` [StringBuilder](../java/lang/StringBuilder.md)!`, `info:` ` [IDNA.Info](../android/icu/text/IDNA.Info.md)!`)` Converts a whole domain name into its ASCII form for DNS lookup. |
-| abstract [StringBuilder](../java/lang/StringBuilder.md)! | [nameToUnicode](../android/icu/text/IDNA.md))`(`name:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `dest:` ` [StringBuilder](../java/lang/StringBuilder.md)!`, `info:` ` [IDNA.Info](../android/icu/text/IDNA.Info.md)!`)` Converts a whole domain name into its Unicode form for human-readable display. |
+| abstract [StringBuilder](../java.lang/StringBuilder.md)! | [nameToASCII](IDNA.md))`(`name:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `dest:` ` [StringBuilder](../java.lang/StringBuilder.md)!`, `info:` ` [IDNA.Info](../android/icu/text/IDNA.Info.md)!`)` Converts a whole domain name into its ASCII form for DNS lookup. |
+| abstract [StringBuilder](../java.lang/StringBuilder.md)! | [nameToUnicode](IDNA.md))`(`name:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `dest:` ` [StringBuilder](../java.lang/StringBuilder.md)!`, `info:` ` [IDNA.Info](../android/icu/text/IDNA.Info.md)!`)` Converts a whole domain name into its Unicode form for human-readable display. |
 
 ## Constants
 
@@ -171,7 +171,7 @@ Returns an IDNA instance which implements UTS #46. Returns an unmodifiable insta
 
 UTS #46 defines Unicode IDNA Compatibility Processing, updated to the latest version of Unicode and compatible with both IDNA2003 and IDNA2008.
 
-The worker functions use transitional processing, including deviation mappings, unless [NONTRANSITIONAL_TO_ASCII](../android/icu/text/IDNA.md) or [NONTRANSITIONAL_TO_UNICODE](../android/icu/text/IDNA.md) is used in which case the deviation characters are passed through without change.**Unicode 15.1 UTS #46 deprecated transitional processing.**
+The worker functions use transitional processing, including deviation mappings, unless [NONTRANSITIONAL_TO_ASCII](IDNA.md) or [NONTRANSITIONAL_TO_UNICODE](IDNA.md) is used in which case the deviation characters are passed through without change.**Unicode 15.1 UTS #46 deprecated transitional processing.**
 
 Disallowed characters are mapped to U+FFFD.
 
@@ -181,11 +181,11 @@ By default, the UTS #46 implementation allows all ASCII characters (as valid or 
 
 | Parameters ||
 |-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `options` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Bit set to modify the processing and error checking. These should include [IDNA.DEFAULT](../android/icu/text/IDNA.md), or [IDNA.NONTRANSITIONAL_TO_ASCII](../android/icu/text/IDNA.md)| [IDNA.NONTRANSITIONAL_TO_UNICODE](../android/icu/text/IDNA.md). |
+| `options` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Bit set to modify the processing and error checking. These should include [IDNA.DEFAULT](IDNA.md), or [IDNA.NONTRANSITIONAL_TO_ASCII](IDNA.md)| [IDNA.NONTRANSITIONAL_TO_UNICODE](IDNA.md). |
 
 | Return ||
 |--------------------------------------------------------------------------------|------------------------------------------|
-| [IDNA](../android/icu/text/IDNA.md)! | the UTS #46 IDNA instance, if successful |
+| [IDNA](IDNA.md)! | the UTS #46 IDNA instance, if successful |
 
 ### labelToASCII
 
@@ -204,13 +204,13 @@ Converts a single domain name label into its ASCII form for DNS lookup. If any p
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------------------------------------|
 | `label` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!:Input domain name label |
-| `dest` | [StringBuilder](../java/lang/StringBuilder.md)!:Destination string object |
+| `dest` | [StringBuilder](../java.lang/StringBuilder.md)!:Destination string object |
 | `info` | [IDNA.Info](../android/icu/text/IDNA.Info.md)!:Output container of IDNA processing details. |
 | --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|------|
-| [StringBuilder](../java/lang/StringBuilder.md)! | dest |
+| [StringBuilder](../java.lang/StringBuilder.md)! | dest |
 
 ### labelToUnicode
 
@@ -229,13 +229,13 @@ Converts a single domain name label into its Unicode form for human-readable dis
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------------------------------------|
 | `label` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!:Input domain name label |
-| `dest` | [StringBuilder](../java/lang/StringBuilder.md)!:Destination string object |
+| `dest` | [StringBuilder](../java.lang/StringBuilder.md)!:Destination string object |
 | `info` | [IDNA.Info](../android/icu/text/IDNA.Info.md)!:Output container of IDNA processing details. |
 | --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|------|
-| [StringBuilder](../java/lang/StringBuilder.md)! | dest |
+| [StringBuilder](../java.lang/StringBuilder.md)! | dest |
 
 ### nameToASCII
 
@@ -254,13 +254,13 @@ Converts a whole domain name into its ASCII form for DNS lookup. If any processi
 | Parameters ||
 |--------|--------------------------------------------------------------------------------------------------------------------------------------|
 | `name` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!:Input domain name |
-| `dest` | [StringBuilder](../java/lang/StringBuilder.md)!:Destination string object |
+| `dest` | [StringBuilder](../java.lang/StringBuilder.md)!:Destination string object |
 | `info` | [IDNA.Info](../android/icu/text/IDNA.Info.md)!:Output container of IDNA processing details. |
 | --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|------|
-| [StringBuilder](../java/lang/StringBuilder.md)! | dest |
+| [StringBuilder](../java.lang/StringBuilder.md)! | dest |
 
 ### nameToUnicode
 
@@ -279,10 +279,10 @@ Converts a whole domain name into its Unicode form for human-readable display. I
 | Parameters ||
 |--------|--------------------------------------------------------------------------------------------------------------------------------------|
 | `name` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!:Input domain name |
-| `dest` | [StringBuilder](../java/lang/StringBuilder.md)!:Destination string object |
+| `dest` | [StringBuilder](../java.lang/StringBuilder.md)!:Destination string object |
 | `info` | [IDNA.Info](../android/icu/text/IDNA.Info.md)!:Output container of IDNA processing details. |
 | --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|------|
-| [StringBuilder](../java/lang/StringBuilder.md)! | dest |
+| [StringBuilder](../java.lang/StringBuilder.md)! | dest |

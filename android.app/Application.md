@@ -8,12 +8,12 @@ open class Application : ContextWrapper, ComponentCallbacks2
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.content.Context](../android/content/Context.md) |||
-| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) ||
-| | | ↳ | [android.app.Application](../android/app/Application.md) |
+| ↳ | [android.content.Context](../android.content/Context.md) |||
+| | ↳ | [android.content.ContextWrapper](../android.content/ContextWrapper.md) ||
+| | | ↳ | [android.app.Application](Application.md) |
 | --- | --- | --- | --- |
 
-Known Direct Subclasses [MockApplication](../android/test/mock/MockApplication.md) [MockApplication](../android/test/mock/MockApplication.md) A mock `https://developer.android.com/reference/kotlin/android/app/Application#` class.
+Known Direct Subclasses [MockApplication](../android.test.mock/MockApplication.md) [MockApplication](../android.test.mock/MockApplication.md) A mock `https://developer.android.com/reference/kotlin/android/app/Application#` class.
 
 Base class for maintaining global application state. You can provide your own implementation by creating a subclass and specifying the fully-qualified name of this subclass as the `"android:name"` attribute in your AndroidManifest.xml's `<application>` tag. The Application class, or your subclass of the Application class, is instantiated before any other class when the process for your application/package is created.
 
@@ -2521,7 +2521,7 @@ For more information, read [Handling Runtime Changes](https://developer.android.
 
 | Parameters ||
 |---|---|
-| `newConfig` | [Configuration](../android/content/res/Configuration.md): This value cannot be `null`. |
+| `newConfig` | [Configuration](../android.content.res/Configuration.md): This value cannot be `null`. |
 
 ### onCreate
 
@@ -2600,7 +2600,7 @@ After `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_C
 
 | Parameters ||
 |---|---|
-| `callback` | [ComponentCallbacks](../android/content/ComponentCallbacks.md)!: The interface to call. This can be either a `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks.html#` or `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks2.html#` interface. |
+| `callback` | [ComponentCallbacks](../android.content/ComponentCallbacks.md)!: The interface to call. This can be either a `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks.html#` or `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks2.html#` interface. |
 
 | Exceptions ||
 |---|---|
@@ -2636,7 +2636,7 @@ After `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_C
 
 | Parameters ||
 |---|---|
-| `callback` | [ComponentCallbacks](../android/content/ComponentCallbacks.md)!: The interface to call. This can be either a `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks.html#` or `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks2.html#` interface. |
+| `callback` | [ComponentCallbacks](../android.content/ComponentCallbacks.md)!: The interface to call. This can be either a `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks.html#` or `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks2.html#` interface. |
 
 | Exceptions ||
 |---|---|

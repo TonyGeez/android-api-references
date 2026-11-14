@@ -8,8 +8,8 @@ class IkeRfc822AddrIdentification : IkeIdentification
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.net.ipsec.ike.IkeIdentification](../android/net/ipsec/ike/IkeIdentification.md) ||
-| | ↳ | [android.net.ipsec.ike.IkeRfc822AddrIdentification](../android/net/ipsec/ike/IkeRfc822AddrIdentification.md) |
+| ↳ | [android.net.ipsec.ike.IkeIdentification](IkeIdentification.md) ||
+| | ↳ | [android.net.ipsec.ike.IkeRfc822AddrIdentification](IkeRfc822AddrIdentification.md) |
 
 IkeRfc822AddrIdentification represents an IKE entity identification based on a fully-qualified RFC 822 email address ID (e.g. ike@android.com).
 

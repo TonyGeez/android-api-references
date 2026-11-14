@@ -8,21 +8,21 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 @FunctionalInterface interface LongPredicate
 ```
 
-| [java.util.function.LongPredicate](../java/util/function/LongPredicate.md) |
+| [java.util.function.LongPredicate](LongPredicate.md) |
 
-Represents a predicate (boolean-valued function) of one`long`-valued argument. This is the`long`-consuming primitive type specialization of [Predicate](../java/util/function/Predicate.md).
+Represents a predicate (boolean-valued function) of one`long`-valued argument. This is the`long`-consuming primitive type specialization of [Predicate](Predicate.md).
 
-This is a [functional interface](../java/util/function/_package.md) whose functional method is [test(long)](../java/util/function/LongPredicate.md)).
+This is a [functional interface](_package.md) whose functional method is [test(long)](LongPredicate.md)).
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [LongPredicate](../java/util/function/LongPredicate.md)! | [and](../java/util/function/LongPredicate.md))`(`other:` ` [LongPredicate](../java/util/function/LongPredicate.md)!`)` Returns a composed predicate that represents a short-circuiting logical AND of this predicate and another. |
-| open [LongPredicate](../java/util/function/LongPredicate.md)! | [negate](../java/util/function/LongPredicate.md))`()` Returns a predicate that represents the logical negation of this predicate. |
-| open [LongPredicate](../java/util/function/LongPredicate.md)! | [or](../java/util/function/LongPredicate.md))`(`other:` ` [LongPredicate](../java/util/function/LongPredicate.md)!`)` Returns a composed predicate that represents a short-circuiting logical OR of this predicate and another. |
+| open [LongPredicate](LongPredicate.md)! | [and](LongPredicate.md))`(`other:` ` [LongPredicate](LongPredicate.md)!`)` Returns a composed predicate that represents a short-circuiting logical AND of this predicate and another. |
+| open [LongPredicate](LongPredicate.md)! | [negate](LongPredicate.md))`()` Returns a predicate that represents the logical negation of this predicate. |
+| open [LongPredicate](LongPredicate.md)! | [or](LongPredicate.md))`(`other:` ` [LongPredicate](LongPredicate.md)!`)` Returns a composed predicate that represents a short-circuiting logical OR of this predicate and another. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [test](../java/util/function/LongPredicate.md))`(`value:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Evaluates this predicate on the given argument. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [test](LongPredicate.md))`(`value:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Evaluates this predicate on the given argument. |
 
 ## Public methods
 
@@ -40,11 +40,11 @@ Any exceptions thrown during evaluation of either predicate are relayed to the c
 
 | Parameters ||
 |---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `other` | [LongPredicate](../java/util/function/LongPredicate.md)!:a predicate that will be logically-ANDed with this predicate |
+| `other` | [LongPredicate](LongPredicate.md)!:a predicate that will be logically-ANDed with this predicate |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| [LongPredicate](../java/util/function/LongPredicate.md)! | a composed predicate that represents the short-circuiting logical AND of this predicate and the`other`predicate |
+| [LongPredicate](LongPredicate.md)! | a composed predicate that represents the short-circuiting logical AND of this predicate and the`other`predicate |
 
 | Exceptions ||
 |----------------------------------|------------------|
@@ -62,7 +62,7 @@ Returns a predicate that represents the logical negation of this predicate.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| [LongPredicate](../java/util/function/LongPredicate.md)! | a predicate that represents the logical negation of this predicate |
+| [LongPredicate](LongPredicate.md)! | a predicate that represents the logical negation of this predicate |
 
 ### or
 
@@ -78,11 +78,11 @@ Any exceptions thrown during evaluation of either predicate are relayed to the c
 
 | Parameters ||
 |---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `other` | [LongPredicate](../java/util/function/LongPredicate.md)!:a predicate that will be logically-ORed with this predicate |
+| `other` | [LongPredicate](LongPredicate.md)!:a predicate that will be logically-ORed with this predicate |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| [LongPredicate](../java/util/function/LongPredicate.md)! | a composed predicate that represents the short-circuiting logical OR of this predicate and the`other`predicate |
+| [LongPredicate](LongPredicate.md)! | a composed predicate that represents the short-circuiting logical OR of this predicate and the`other`predicate |
 
 | Exceptions ||
 |----------------------------------|------------------|

@@ -8,11 +8,11 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 @Target([AnnotationTarget.CONSTRUCTOR, AnnotationTarget.FUNCTION, AnnotationTarget.PROPERTY_GETTER, AnnotationTarget.PROPERTY_SETTER]) class SafeVarargs
 ```
 
-| [java.lang.SafeVarargs](../java/lang/SafeVarargs.md) |
+| [java.lang.SafeVarargs](SafeVarargs.md) |
 
 A programmer assertion that the body of the annotated method or constructor does not perform potentially unsafe operations on its varargs parameter. Applying this annotation to a method or constructor suppresses unchecked warnings about a *non-reifiable* variable arity (vararg) type and suppresses unchecked warnings about parameterized array creation at call sites.
 
-In addition to the usage restrictions imposed by its [@Target](../java/lang/annotation/Target.md) meta-annotation, compilers are required to implement additional usage restrictions on this annotation type; it is a compile-time error if a method or constructor declaration is annotated with a `@SafeVarargs` annotation, and either:
+In addition to the usage restrictions imposed by its [@Target](../java.lang.annotation/Target.md) meta-annotation, compilers are required to implement additional usage restrictions on this annotation type; it is a compile-time error if a method or constructor declaration is annotated with a `@SafeVarargs` annotation, and either:
 
 - the declaration is a fixed arity method or constructor
 - the declaration is a variable arity method that is neither `static` nor `final` nor `private`.
@@ -40,7 +40,7 @@ Compilers are encouraged to issue warnings when this annotation type is applied 
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SafeVarargs](../java/lang/SafeVarargs.md))`()` A programmer assertion that the body of the annotated method or constructor does not perform potentially unsafe operations on its varargs parameter. |
+| [SafeVarargs](SafeVarargs.md))`()` A programmer assertion that the body of the annotated method or constructor does not perform potentially unsafe operations on its varargs parameter. |
 
 ## Public constructors
 
@@ -54,7 +54,7 @@ SafeVarargs()
 
 A programmer assertion that the body of the annotated method or constructor does not perform potentially unsafe operations on its varargs parameter. Applying this annotation to a method or constructor suppresses unchecked warnings about a *non-reifiable* variable arity (vararg) type and suppresses unchecked warnings about parameterized array creation at call sites.
 
-In addition to the usage restrictions imposed by its [@Target](../java/lang/annotation/Target.md) meta-annotation, compilers are required to implement additional usage restrictions on this annotation type; it is a compile-time error if a method or constructor declaration is annotated with a `@SafeVarargs` annotation, and either:
+In addition to the usage restrictions imposed by its [@Target](../java.lang.annotation/Target.md) meta-annotation, compilers are required to implement additional usage restrictions on this annotation type; it is a compile-time error if a method or constructor declaration is annotated with a `@SafeVarargs` annotation, and either:
 
 - the declaration is a fixed arity method or constructor
 - the declaration is a variable arity method that is neither `static` nor `final` nor `private`.

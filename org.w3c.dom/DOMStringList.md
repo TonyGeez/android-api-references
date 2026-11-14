@@ -8,7 +8,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 interface DOMStringList
 ```
 
-| [org.w3c.dom.DOMStringList](../org/w3c/dom/DOMStringList.md) |
+| [org.w3c.dom.DOMStringList](DOMStringList.md) |
 
 The`DOMStringList`interface provides the abstraction of an ordered collection of`DOMString`values, without defining or constraining how this collection is implemented. The items in the`DOMStringList`are accessible via an integral index, starting from 0.
 
@@ -18,9 +18,9 @@ See also the [Document Object Model (DOM) Level 3 Core Specification](http://www
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [contains](../org/w3c/dom/DOMStringList.md))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Test if a string is part of this`DOMStringList`. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLength](../org/w3c/dom/DOMStringList.md))`()` The number of`DOMString`s in the list. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [item](../org/w3c/dom/DOMStringList.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the`index`th item in the collection. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [contains](DOMStringList.md))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Test if a string is part of this`DOMStringList`. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLength](DOMStringList.md))`()` The number of`DOMString`s in the list. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [item](DOMStringList.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the`index`th item in the collection. |
 | --- | --- |
 
 ## Public methods

@@ -5,7 +5,7 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 
 # PreferenceManager
 
-Kotlin| [Java](../android/preference/PreferenceManager.md) 
+Kotlin| [Java](PreferenceManager.md) 
 | --- | --- |
 
 ```
@@ -14,15 +14,15 @@ open class PreferenceManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.preference.PreferenceManager](../android/preference/PreferenceManager.md) |
+| ↳ | [android.preference.PreferenceManager](PreferenceManager.md) |
 
 | **This class was deprecated in API level 29.**
 |
 | Use the [AndroidX](https://developer.android.com/jetpack/androidx.html) [Preference Library](../androidx/preference/_package.md) for consistent behavior across all devices. For more information on using the AndroidX Preference Library see [Settings](https://developer.android.com/guide/topics/ui/settings.html).
 
-Used to help create [Preference](../android/preference/Preference.md) hierarchies from activities or XML.
+Used to help create [Preference](Preference.md) hierarchies from activities or XML.
 
-In most cases, clients should use [PreferenceActivity.addPreferencesFromIntent](../android/preference/PreferenceActivity.md))or [PreferenceActivity.addPreferencesFromResource(int)](../android/preference/PreferenceActivity.md)).
+In most cases, clients should use [PreferenceActivity.addPreferencesFromIntent](PreferenceActivity.md))or [PreferenceActivity.addPreferencesFromResource(int)](PreferenceActivity.md)).
 
 ## Summary
 
@@ -35,33 +35,33 @@ In most cases, clients should use [PreferenceActivity.addPreferencesFromIntent](
 
 | Constants ||
 |----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [KEY_HAS_SET_DEFAULT_VALUES](../android/preference/PreferenceManager.md) <br /> |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [METADATA_KEY_PREFERENCES](../android/preference/PreferenceManager.md) The Activity meta-data key for its XML preference hierarchy. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [KEY_HAS_SET_DEFAULT_VALUES](PreferenceManager.md) <br /> |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [METADATA_KEY_PREFERENCES](PreferenceManager.md) The Activity meta-data key for its XML preference hierarchy. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [PreferenceScreen](../android/preference/PreferenceScreen.md)! | [createPreferenceScreen](../android/preference/PreferenceManager.md))`(`context:` ` [Context](../android/content/Context.md)!`)` <br /> |
-| open [Preference](../android/preference/Preference.md)? | [findPreference](../android/preference/PreferenceManager.md))`(`key:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Finds a [Preference](../android/preference/Preference.md) based on its key. |
-| openstatic [SharedPreferences](../android/content/SharedPreferences.md)! | [getDefaultSharedPreferences](../android/preference/PreferenceManager.md))`(`context:` ` [Context](../android/content/Context.md)!`)` Gets a [SharedPreferences](../android/content/SharedPreferences.md) instance that points to the default file that is used by the preference framework in the given context. |
+| open [PreferenceScreen](PreferenceScreen.md)! | [createPreferenceScreen](PreferenceManager.md))`(`context:` ` [Context](../android.content/Context.md)!`)` <br /> |
+| open [Preference](Preference.md)? | [findPreference](PreferenceManager.md))`(`key:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Finds a [Preference](Preference.md) based on its key. |
+| openstatic [SharedPreferences](../android.content/SharedPreferences.md)! | [getDefaultSharedPreferences](PreferenceManager.md))`(`context:` ` [Context](../android.content/Context.md)!`)` Gets a [SharedPreferences](../android.content/SharedPreferences.md) instance that points to the default file that is used by the preference framework in the given context. |
 | --- | --- |
-| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDefaultSharedPreferencesName](../android/preference/PreferenceManager.md))`(`context:` ` [Context](../android/content/Context.md)!`)` Returns the name used for storing default shared preferences. |
-| open [PreferenceDataStore](../android/preference/PreferenceDataStore.md)? | [getPreferenceDataStore](../android/preference/PreferenceManager.md))`()` Returns the [PreferenceDataStore](../android/preference/PreferenceDataStore.md) associated with this manager or`null`if the default [android.content.SharedPreferences](../android/content/SharedPreferences.md) are used instead. |
-| open [SharedPreferences](../android/content/SharedPreferences.md)! | [getSharedPreferences](../android/preference/PreferenceManager.md))`()` Gets a [SharedPreferences](../android/content/SharedPreferences.md) instance that preferences managed by this will use. |
+| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDefaultSharedPreferencesName](PreferenceManager.md))`(`context:` ` [Context](../android.content/Context.md)!`)` Returns the name used for storing default shared preferences. |
+| open [PreferenceDataStore](PreferenceDataStore.md)? | [getPreferenceDataStore](PreferenceManager.md))`()` Returns the [PreferenceDataStore](PreferenceDataStore.md) associated with this manager or`null`if the default [android.content.SharedPreferences](../android.content/SharedPreferences.md) are used instead. |
+| open [SharedPreferences](../android.content/SharedPreferences.md)! | [getSharedPreferences](PreferenceManager.md))`()` Gets a [SharedPreferences](../android.content/SharedPreferences.md) instance that preferences managed by this will use. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSharedPreferencesMode](../android/preference/PreferenceManager.md))`()` Returns the current mode of the SharedPreferences file that preferences managed by this will use. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSharedPreferencesName](../android/preference/PreferenceManager.md))`()` Returns the current name of the SharedPreferences file that preferences managed by this will use. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isStorageDefault](../android/preference/PreferenceManager.md))`()` Indicates if the storage location used internally by this class is the default provided by the hosting [Context](../android/content/Context.md). |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSharedPreferencesMode](PreferenceManager.md))`()` Returns the current mode of the SharedPreferences file that preferences managed by this will use. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSharedPreferencesName](PreferenceManager.md))`()` Returns the current name of the SharedPreferences file that preferences managed by this will use. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isStorageDefault](PreferenceManager.md))`()` Indicates if the storage location used internally by this class is the default provided by the hosting [Context](../android.content/Context.md). |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isStorageDeviceProtected](../android/preference/PreferenceManager.md))`()` Indicates if the storage location used internally by this class is backed by device-protected storage. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDefaultValues](../android/preference/PreferenceManager.md))`(`context:` ` [Context](../android/content/Context.md)!`, `resId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `readAgain:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets the default values from an XML preference file by reading the values defined by each [Preference](../android/preference/Preference.md) item's`android:defaultValue`attribute. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDefaultValues](../android/preference/PreferenceManager.md))`(`context:` ` [Context](../android/content/Context.md)!`, `sharedPreferencesName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `sharedPreferencesMode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `resId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `readAgain:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Similar to [setDefaultValues(android.content.Context,int,boolean)](../android/preference/PreferenceManager.md))but allows the client to provide the filename and mode of the shared preferences file. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isStorageDeviceProtected](PreferenceManager.md))`()` Indicates if the storage location used internally by this class is backed by device-protected storage. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDefaultValues](PreferenceManager.md))`(`context:` ` [Context](../android.content/Context.md)!`, `resId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `readAgain:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets the default values from an XML preference file by reading the values defined by each [Preference](Preference.md) item's`android:defaultValue`attribute. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDefaultValues](PreferenceManager.md))`(`context:` ` [Context](../android.content/Context.md)!`, `sharedPreferencesName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `sharedPreferencesMode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `resId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `readAgain:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Similar to [setDefaultValues(android.content.Context,int,boolean)](PreferenceManager.md))but allows the client to provide the filename and mode of the shared preferences file. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPreferenceDataStore](../android/preference/PreferenceManager.md))`(`dataStore:` ` [PreferenceDataStore](../android/preference/PreferenceDataStore.md)!`)` Sets a [PreferenceDataStore](../android/preference/PreferenceDataStore.md) to be used by all Preferences associated with this manager that don't have a custom [PreferenceDataStore](../android/preference/PreferenceDataStore.md) assigned via [Preference.setPreferenceDataStore(PreferenceDataStore)](../android/preference/Preference.md)). |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSharedPreferencesMode](../android/preference/PreferenceManager.md))`(`sharedPreferencesMode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the mode of the SharedPreferences file that preferences managed by this will use. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSharedPreferencesName](../android/preference/PreferenceManager.md))`(`sharedPreferencesName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the name of the SharedPreferences file that preferences managed by this will use. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPreferenceDataStore](PreferenceManager.md))`(`dataStore:` ` [PreferenceDataStore](PreferenceDataStore.md)!`)` Sets a [PreferenceDataStore](PreferenceDataStore.md) to be used by all Preferences associated with this manager that don't have a custom [PreferenceDataStore](PreferenceDataStore.md) assigned via [Preference.setPreferenceDataStore(PreferenceDataStore)](Preference.md)). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSharedPreferencesMode](PreferenceManager.md))`(`sharedPreferencesMode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the mode of the SharedPreferences file that preferences managed by this will use. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSharedPreferencesName](PreferenceManager.md))`(`sharedPreferencesName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the name of the SharedPreferences file that preferences managed by this will use. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStorageDefault](../android/preference/PreferenceManager.md))`()` Sets the storage location used internally by this class to be the default provided by the hosting [Context](../android/content/Context.md). |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStorageDeviceProtected](../android/preference/PreferenceManager.md))`()` Explicitly set the storage location used internally by this class to be device-protected storage. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStorageDefault](PreferenceManager.md))`()` Sets the storage location used internally by this class to be the default provided by the hosting [Context](../android.content/Context.md). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStorageDeviceProtected](PreferenceManager.md))`()` Explicitly set the storage location used internally by this class to be device-protected storage. |
 
 ## Constants
 
@@ -113,7 +113,7 @@ open fun findPreference(key: CharSequence!): Preference?
 
 **Deprecated:** *Deprecated in Java.*
 
-Finds a [Preference](../android/preference/Preference.md) based on its key.
+Finds a [Preference](Preference.md) based on its key.
 
 | Parameters ||
 |-------|--------------------------------------------------------------------------------------------------------------------------------------|
@@ -121,11 +121,11 @@ Finds a [Preference](../android/preference/Preference.md) based on its key.
 
 | Return ||
 |---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| [Preference](../android/preference/Preference.md)? | the [Preference](../android/preference/Preference.md) with the key, or`null` |
+| [Preference](Preference.md)? | the [Preference](Preference.md) with the key, or`null` |
 
 **See Also**
 
-- [android.preference.PreferenceGroup#findPreference(CharSequence)](../android/preference/PreferenceGroup.md)) 
+- [android.preference.PreferenceGroup#findPreference(CharSequence)](PreferenceGroup.md)) 
 
 ### getDefaultSharedPreferences
 
@@ -137,15 +137,15 @@ open static fun getDefaultSharedPreferences(context: Context!): SharedPreferenc
 
 **Deprecated:** *Deprecated in Java.*
 
-Gets a [SharedPreferences](../android/content/SharedPreferences.md) instance that points to the default file that is used by the preference framework in the given context.
+Gets a [SharedPreferences](../android.content/SharedPreferences.md) instance that points to the default file that is used by the preference framework in the given context.
 
 | Parameters ||
 |-----------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](../android/content/Context.md)!:The context of the preferences whose values are wanted. |
+| `context` | [Context](../android.content/Context.md)!:The context of the preferences whose values are wanted. |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [SharedPreferences](../android/content/SharedPreferences.md)! | A [SharedPreferences](../android/content/SharedPreferences.md) instance that can be used to retrieve and listen to values of the preferences. |
+| [SharedPreferences](../android.content/SharedPreferences.md)! | A [SharedPreferences](../android.content/SharedPreferences.md) instance that can be used to retrieve and listen to values of the preferences. |
 
 ### getDefaultSharedPreferencesName
 
@@ -161,7 +161,7 @@ open static fun getDefaultSharedPreferencesName(context: Context!): String!
 Returns the name used for storing default shared preferences. 
 **See Also**
 
-- [#getDefaultSharedPreferences(Context)](../android/preference/PreferenceManager.md)) 
+- [#getDefaultSharedPreferences(Context)](PreferenceManager.md)) 
 
 ### getPreferenceDataStore
 
@@ -174,15 +174,15 @@ open fun getPreferenceDataStore(): PreferenceDataStore?
 
 **Deprecated:** *Deprecated in Java.*
 
-Returns the [PreferenceDataStore](../android/preference/PreferenceDataStore.md) associated with this manager or`null`if the default [android.content.SharedPreferences](../android/content/SharedPreferences.md) are used instead.
+Returns the [PreferenceDataStore](PreferenceDataStore.md) associated with this manager or`null`if the default [android.content.SharedPreferences](../android.content/SharedPreferences.md) are used instead.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [PreferenceDataStore](../android/preference/PreferenceDataStore.md)? | The [PreferenceDataStore](../android/preference/PreferenceDataStore.md) associated with this manager or`null`if none. |
+| [PreferenceDataStore](PreferenceDataStore.md)? | The [PreferenceDataStore](PreferenceDataStore.md) associated with this manager or`null`if none. |
 
 **See Also**
 
-- [#setPreferenceDataStore(PreferenceDataStore)](../android/preference/PreferenceManager.md)) 
+- [#setPreferenceDataStore(PreferenceDataStore)](PreferenceManager.md)) 
 
 ### getSharedPreferences
 
@@ -194,11 +194,11 @@ open fun getSharedPreferences(): SharedPreferences!
 
 **Deprecated:** *Deprecated in Java.*
 
-Gets a [SharedPreferences](../android/content/SharedPreferences.md) instance that preferences managed by this will use.
+Gets a [SharedPreferences](../android.content/SharedPreferences.md) instance that preferences managed by this will use.
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [SharedPreferences](../android/content/SharedPreferences.md)! | a [SharedPreferences](../android/content/SharedPreferences.md) instance pointing to the file that contains the values of preferences that are managed by this PreferenceManager. If a [PreferenceDataStore](../android/preference/PreferenceDataStore.md) has been set, this method returns`null`. |
+| [SharedPreferences](../android.content/SharedPreferences.md)! | a [SharedPreferences](../android.content/SharedPreferences.md) instance pointing to the file that contains the values of preferences that are managed by this PreferenceManager. If a [PreferenceDataStore](PreferenceDataStore.md) has been set, this method returns`null`. |
 
 ### getSharedPreferencesMode
 
@@ -214,11 +214,11 @@ Returns the current mode of the SharedPreferences file that preferences managed 
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The mode that can be passed to [Context.getSharedPreferences(String, int)](../android/content/Context.md)). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The mode that can be passed to [Context.getSharedPreferences(String, int)](../android.content/Context.md)). |
 
 **See Also**
 
-- [android.content.Context#getSharedPreferences(String, int)](../android/content/Context.md)) 
+- [android.content.Context#getSharedPreferences(String, int)](../android.content/Context.md)) 
 
 ### getSharedPreferencesName
 
@@ -234,11 +234,11 @@ Returns the current name of the SharedPreferences file that preferences managed 
 
 | Return ||
 |-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | The name that can be passed to [Context.getSharedPreferences(String, int)](../android/content/Context.md)). |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | The name that can be passed to [Context.getSharedPreferences(String, int)](../android.content/Context.md)). |
 
 **See Also**
 
-- [android.content.Context#getSharedPreferences(String, int)](../android/content/Context.md)) 
+- [android.content.Context#getSharedPreferences(String, int)](../android.content/Context.md)) 
 
 ### isStorageDefault
 
@@ -251,7 +251,7 @@ open fun isStorageDefault(): Boolean
 
 **Deprecated:** *Deprecated in Java.*
 
-Indicates if the storage location used internally by this class is the default provided by the hosting [Context](../android/content/Context.md). 
+Indicates if the storage location used internally by this class is the default provided by the hosting [Context](../android.content/Context.md). 
 **See Also**
 
 - <https://developer.android.com/reference/kotlin/android/preference/PreferenceManager#setStorageDefault()>
@@ -288,15 +288,15 @@ open static fun setDefaultValues(
 
 **Deprecated:** *Deprecated in Java.*
 
-Sets the default values from an XML preference file by reading the values defined by each [Preference](../android/preference/Preference.md) item's`android:defaultValue`attribute. This should be called by the application's main activity.
+Sets the default values from an XML preference file by reading the values defined by each [Preference](Preference.md) item's`android:defaultValue`attribute. This should be called by the application's main activity.
 
 <br />
 
 | Parameters ||
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](../android/content/Context.md)!:The context of the shared preferences. |
+| `context` | [Context](../android.content/Context.md)!:The context of the shared preferences. |
 | `resId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The resource ID of the preference XML file. |
-| `readAgain` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):Whether to re-read the default values. If false, this method sets the default values only if this method has never been called in the past (or if the [KEY_HAS_SET_DEFAULT_VALUES](../android/preference/PreferenceManager.md) in the default value shared preferences file is false). To attempt to set the default values again bypassing this check, set`readAgain`to true. Note: this will NOT reset preferences back to their default values. For that functionality, use [PreferenceManager.getDefaultSharedPreferences(Context)](../android/preference/PreferenceManager.md))and clear it followed by a call to this method with this parameter set to true. |
+| `readAgain` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):Whether to re-read the default values. If false, this method sets the default values only if this method has never been called in the past (or if the [KEY_HAS_SET_DEFAULT_VALUES](PreferenceManager.md) in the default value shared preferences file is false). To attempt to set the default values again bypassing this check, set`readAgain`to true. Note: this will NOT reset preferences back to their default values. For that functionality, use [PreferenceManager.getDefaultSharedPreferences(Context)](PreferenceManager.md))and clear it followed by a call to this method with this parameter set to true. |
 | --- | --- |
 
 ### setDefaultValues
@@ -315,22 +315,22 @@ open static fun setDefaultValues(
 
 **Deprecated:** *Deprecated in Java.*
 
-Similar to [setDefaultValues(android.content.Context,int,boolean)](../android/preference/PreferenceManager.md))but allows the client to provide the filename and mode of the shared preferences file.
+Similar to [setDefaultValues(android.content.Context,int,boolean)](PreferenceManager.md))but allows the client to provide the filename and mode of the shared preferences file.
 
 | Parameters ||
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](../android/content/Context.md)!:The context of the shared preferences. |
+| `context` | [Context](../android.content/Context.md)!:The context of the shared preferences. |
 | `sharedPreferencesName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:A custom name for the shared preferences file. |
-| `sharedPreferencesMode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The file creation mode for the shared preferences file, such as [android.content.Context#MODE_PRIVATE](../android/content/Context.md) or [android.content.Context#MODE_PRIVATE](../android/content/Context.md) |
+| `sharedPreferencesMode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The file creation mode for the shared preferences file, such as [android.content.Context#MODE_PRIVATE](../android.content/Context.md) or [android.content.Context#MODE_PRIVATE](../android.content/Context.md) |
 | --- | --- |
 | `resId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The resource ID of the preference XML file. |
-| `readAgain` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):Whether to re-read the default values. If false, this method will set the default values only if this method has never been called in the past (or if the [KEY_HAS_SET_DEFAULT_VALUES](../android/preference/PreferenceManager.md) in the default value shared preferences file is false). To attempt to set the default values again bypassing this check, set`readAgain`to true. Note: this will NOT reset preferences back to their default values. For that functionality, use [PreferenceManager.getDefaultSharedPreferences(Context)](../android/preference/PreferenceManager.md))and clear it followed by a call to this method with this parameter set to true. |
+| `readAgain` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):Whether to re-read the default values. If false, this method will set the default values only if this method has never been called in the past (or if the [KEY_HAS_SET_DEFAULT_VALUES](PreferenceManager.md) in the default value shared preferences file is false). To attempt to set the default values again bypassing this check, set`readAgain`to true. Note: this will NOT reset preferences back to their default values. For that functionality, use [PreferenceManager.getDefaultSharedPreferences(Context)](PreferenceManager.md))and clear it followed by a call to this method with this parameter set to true. |
 
 **See Also**
 
-- [#setDefaultValues(Context, int, boolean)](../android/preference/PreferenceManager.md))
-- [#setSharedPreferencesName(String)](../android/preference/PreferenceManager.md))
-- [#setSharedPreferencesMode(int)](../android/preference/PreferenceManager.md)) 
+- [#setDefaultValues(Context, int, boolean)](PreferenceManager.md))
+- [#setSharedPreferencesName(String)](PreferenceManager.md))
+- [#setSharedPreferencesMode(int)](PreferenceManager.md)) 
 
 ### setPreferenceDataStore
 
@@ -343,15 +343,15 @@ open fun setPreferenceDataStore(dataStore: PreferenceDataStore!): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Sets a [PreferenceDataStore](../android/preference/PreferenceDataStore.md) to be used by all Preferences associated with this manager that don't have a custom [PreferenceDataStore](../android/preference/PreferenceDataStore.md) assigned via [Preference.setPreferenceDataStore(PreferenceDataStore)](../android/preference/Preference.md)). Also if the data store is set, the child preferences won't use [android.content.SharedPreferences](../android/content/SharedPreferences.md) as long as they are assigned to this manager.
+Sets a [PreferenceDataStore](PreferenceDataStore.md) to be used by all Preferences associated with this manager that don't have a custom [PreferenceDataStore](PreferenceDataStore.md) assigned via [Preference.setPreferenceDataStore(PreferenceDataStore)](Preference.md)). Also if the data store is set, the child preferences won't use [android.content.SharedPreferences](../android.content/SharedPreferences.md) as long as they are assigned to this manager.
 
 | Parameters ||
 |-------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dataStore` | [PreferenceDataStore](../android/preference/PreferenceDataStore.md)!:The [PreferenceDataStore](../android/preference/PreferenceDataStore.md) to be used by this manager. |
+| `dataStore` | [PreferenceDataStore](PreferenceDataStore.md)!:The [PreferenceDataStore](PreferenceDataStore.md) to be used by this manager. |
 
 **See Also**
 
-- [android.preference.Preference#setPreferenceDataStore(PreferenceDataStore)](../android/preference/Preference.md)) 
+- [android.preference.Preference#setPreferenceDataStore(PreferenceDataStore)](Preference.md)) 
 
 ### setSharedPreferencesMode
 
@@ -371,7 +371,7 @@ Sets the mode of the SharedPreferences file that preferences managed by this wil
 
 **See Also**
 
-- [android.content.Context#getSharedPreferences(String, int)](../android/content/Context.md)) 
+- [android.content.Context#getSharedPreferences(String, int)](../android.content/Context.md)) 
 
 ### setSharedPreferencesName
 
@@ -385,7 +385,7 @@ open fun setSharedPreferencesName(sharedPreferencesName: String!): Unit
 
 Sets the name of the SharedPreferences file that preferences managed by this will use.
 
-If custom [PreferenceDataStore](../android/preference/PreferenceDataStore.md) is set, this won't override its usage.
+If custom [PreferenceDataStore](PreferenceDataStore.md) is set, this won't override its usage.
 
 | Parameters ||
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------|
@@ -393,8 +393,8 @@ If custom [PreferenceDataStore](../android/preference/PreferenceDataStore.md) is
 
 **See Also**
 
-- [android.content.Context#getSharedPreferences(String, int)](../android/content/Context.md))
-- [#setPreferenceDataStore(PreferenceDataStore)](../android/preference/PreferenceManager.md)) 
+- [android.content.Context#getSharedPreferences(String, int)](../android.content/Context.md))
+- [#setPreferenceDataStore(PreferenceDataStore)](PreferenceManager.md)) 
 
 ### setStorageDefault
 
@@ -407,7 +407,7 @@ open fun setStorageDefault(): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Sets the storage location used internally by this class to be the default provided by the hosting [Context](../android/content/Context.md). 
+Sets the storage location used internally by this class to be the default provided by the hosting [Context](../android.content/Context.md). 
 
 ### setStorageDeviceProtected
 
@@ -427,4 +427,4 @@ On devices with direct boot, data stored in this location is encrypted with a ke
 Because device-protected data is available without user authentication, you should carefully limit the data you store using this Context. For example, storing sensitive authentication tokens or passwords in the device-protected area is strongly discouraged. 
 **See Also**
 
-- [android.content.Context#createDeviceProtectedStorageContext()](../android/content/Context.md))
+- [android.content.Context#createDeviceProtectedStorageContext()](../android.content/Context.md))

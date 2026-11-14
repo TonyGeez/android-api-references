@@ -9,12 +9,12 @@ open class UnsupportedOperationException : RuntimeException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
-| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) ||
+| | ↳ | [java.lang.Exception](Exception.md) |||
+| | | ↳ | [java.lang.RuntimeException](RuntimeException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.UnsupportedOperationException](../java/lang/UnsupportedOperationException.md) |
+| | | | ↳ | [java.lang.UnsupportedOperationException](UnsupportedOperationException.md) |
 
-| Known Direct Subclasses [ReadOnlyBufferException](../java/nio/ReadOnlyBufferException.md), [ReadOnlyFileSystemException](../java/nio/file/ReadOnlyFileSystemException.md) |---|---| | [ReadOnlyBufferException](../java/nio/ReadOnlyBufferException.md) | Unchecked exception thrown when a content-mutation method such as put or compact is invoked upon a read-only buffer. | | [ReadOnlyFileSystemException](../java/nio/file/ReadOnlyFileSystemException.md) | Unchecked exception thrown when an attempt is made to update an object associated with a `https://developer.android.com/reference/kotlin/java/nio/file/FileSystem.html#isReadOnly()` `FileSystem`. | |
+| Known Direct Subclasses [ReadOnlyBufferException](../java.nio/ReadOnlyBufferException.md), [ReadOnlyFileSystemException](../java.nio.file/ReadOnlyFileSystemException.md) |---|---| | [ReadOnlyBufferException](../java.nio/ReadOnlyBufferException.md) | Unchecked exception thrown when a content-mutation method such as put or compact is invoked upon a read-only buffer. | | [ReadOnlyFileSystemException](../java.nio.file/ReadOnlyFileSystemException.md) | Unchecked exception thrown when an attempt is made to update an object associated with a `https://developer.android.com/reference/kotlin/java/nio/file/FileSystem.html#isReadOnly()` `FileSystem`. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Thrown to indicate that the requested operation is not supported.

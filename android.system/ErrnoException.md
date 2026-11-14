@@ -4,7 +4,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 
 # ErrnoException
 
-Kotlin| [Java](../android/system/ErrnoException.md) 
+Kotlin| [Java](ErrnoException.md) 
 | --- | --- |
 
 ```
@@ -14,28 +14,28 @@ class ErrnoException : Exception
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||
-| | | ↳ | [android.system.ErrnoException](../android/system/ErrnoException.md) |
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) ||
+| | | ↳ | [android.system.ErrnoException](ErrnoException.md) |
 | --- | --- | --- | --- |
 
-A checked exception thrown when [Os](../android/system/Os.md) methods fail. This exception contains the native errno value, for comparison against the constants in [OsConstants](../android/system/OsConstants.md), should sophisticated callers need to adjust their behavior based on the exact failure.
+A checked exception thrown when [Os](Os.md) methods fail. This exception contains the native errno value, for comparison against the constants in [OsConstants](OsConstants.md), should sophisticated callers need to adjust their behavior based on the exact failure.
 
 ## Summary
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ErrnoException](../android/system/ErrnoException.md))`(`functionName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `errno:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs an instance with the given function name and errno value. |
-| [ErrnoException](../android/system/ErrnoException.md))`(`functionName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `errno:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs an instance with the given function name, errno value, and cause. |
+| [ErrnoException](ErrnoException.md))`(`functionName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `errno:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs an instance with the given function name and errno value. |
+| [ErrnoException](ErrnoException.md))`(`functionName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `errno:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs an instance with the given function name, errno value, and cause. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [IOException](../java/io/IOException.md) | [rethrowAsIOException](../android/system/ErrnoException.md))`()` Throws an [IOException](../java/io/IOException.md) with a message based on [getMessage()](../android/system/ErrnoException.md) and with this instance as the cause. |
-| [SocketException](../java/net/SocketException.md) | [rethrowAsSocketException](../android/system/ErrnoException.md))`()` Throws a [SocketException](../java/net/SocketException.md) with a message based on [getMessage()](../android/system/ErrnoException.md) and with this instance as the cause. |
+| [IOException](../java.io/IOException.md) | [rethrowAsIOException](ErrnoException.md))`()` Throws an [IOException](../java.io/IOException.md) with a message based on [getMessage()](ErrnoException.md) and with this instance as the cause. |
+| [SocketException](../java.net/SocketException.md) | [rethrowAsSocketException](ErrnoException.md))`()` Throws a [SocketException](../java.net/SocketException.md) with a message based on [getMessage()](ErrnoException.md) and with this instance as the cause. |
 
 | Properties ||
 |-----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [errno](../android/system/ErrnoException.md) The errno value, for comparison with the`E`constants in [OsConstants](../android/system/OsConstants.md). |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [message](../android/system/ErrnoException.md) Converts the stashed function name and errno value to a human-readable string. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [errno](ErrnoException.md) The errno value, for comparison with the`E`constants in [OsConstants](OsConstants.md). |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [message](ErrnoException.md) Converts the stashed function name and errno value to a human-readable string. |
 
 ## Public constructors
 
@@ -74,13 +74,13 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 fun rethrowAsIOException(): IOException
 ```
 
-Throws an [IOException](../java/io/IOException.md) with a message based on [getMessage()](../android/system/ErrnoException.md) and with this instance as the cause.
+Throws an [IOException](../java.io/IOException.md) with a message based on [getMessage()](ErrnoException.md) and with this instance as the cause.
 
 This method always terminates by throwing the exception. Callers can write`throw e.rethrowAsIOException()`to make that clear to the compiler.
 
 | Return ||
 |-----------------------------------------------------------------------------------------|-----------------------------|
-| [IOException](../java/io/IOException.md) | This value cannot be`null`. |
+| [IOException](../java.io/IOException.md) | This value cannot be`null`. |
 
 ### rethrowAsSocketException
 
@@ -90,13 +90,13 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 fun rethrowAsSocketException(): SocketException
 ```
 
-Throws a [SocketException](../java/net/SocketException.md) with a message based on [getMessage()](../android/system/ErrnoException.md) and with this instance as the cause.
+Throws a [SocketException](../java.net/SocketException.md) with a message based on [getMessage()](ErrnoException.md) and with this instance as the cause.
 
 This method always terminates by throwing the exception. Callers can write`throw e.rethrowAsIOException()`to make that clear to the compiler.
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|-----------------------------|
-| [SocketException](../java/net/SocketException.md) | This value cannot be`null`. |
+| [SocketException](../java.net/SocketException.md) | This value cannot be`null`. |
 
 ## Properties
 
@@ -108,7 +108,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 val errno: Int
 ```
 
-The errno value, for comparison with the`E`constants in [OsConstants](../android/system/OsConstants.md). 
+The errno value, for comparison with the`E`constants in [OsConstants](OsConstants.md). 
 
 ### message
 

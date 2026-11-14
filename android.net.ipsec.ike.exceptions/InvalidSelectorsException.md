@@ -2,7 +2,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # InvalidSelectorsException
 
-Kotlin | [Java](../android/net/ipsec/ike/exceptions/InvalidSelectorsException.md)
+Kotlin | [Java](InvalidSelectorsException.md)
 | --- | --- |
 
 ```
@@ -12,11 +12,11 @@ class InvalidSelectorsException : IkeProtocolException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
-| | | ↳ | [android.net.ipsec.ike.exceptions.IkeException](../android/net/ipsec/ike/exceptions/IkeException.md) |||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) ||||
+| | | ↳ | [android.net.ipsec.ike.exceptions.IkeException](IkeException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.net.ipsec.ike.exceptions.IkeProtocolException](../android/net/ipsec/ike/exceptions/IkeProtocolException.md) ||
-| | | | | ↳ | [android.net.ipsec.ike.exceptions.InvalidSelectorsException](../android/net/ipsec/ike/exceptions/InvalidSelectorsException.md) |
+| | | | ↳ | [android.net.ipsec.ike.exceptions.IkeProtocolException](IkeProtocolException.md) ||
+| | | | | ↳ | [android.net.ipsec.ike.exceptions.InvalidSelectorsException](InvalidSelectorsException.md) |
 
 This exception is thrown if the remote server received an IPsec packet with mismatched selectors.
 

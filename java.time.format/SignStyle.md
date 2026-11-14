@@ -10,25 +10,25 @@ class SignStyle
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.time.format.SignStyle](../java/time/format/SignStyle.md)\> ||
-| | ↳ | [java.time.format.SignStyle](../java/time/format/SignStyle.md) |
+| ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.time.format.SignStyle](SignStyle.md)\> ||
+| | ↳ | [java.time.format.SignStyle](SignStyle.md) |
 
-| Known Direct Subclasses [SignStyle.ALWAYS](../java/time/format/SignStyle.md), [SignStyle.EXCEEDS_PAD](../java/time/format/SignStyle.md), [SignStyle.NEVER](../java/time/format/SignStyle.md), [SignStyle.NORMAL](../java/time/format/SignStyle.md), [SignStyle.NOT_NEGATIVE](../java/time/format/SignStyle.md) |-----------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------| | [SignStyle.ALWAYS](../java/time/format/SignStyle.md) | Style to always output the sign, where zero will output '+'. | | [SignStyle.EXCEEDS_PAD](../java/time/format/SignStyle.md) | Style to always output the sign if the value exceeds the pad width. | | [SignStyle.NEVER](../java/time/format/SignStyle.md) | Style to never output sign, only outputting the absolute value. | | [SignStyle.NORMAL](../java/time/format/SignStyle.md) | Style to output the sign only if the value is negative. | | [SignStyle.NOT_NEGATIVE](../java/time/format/SignStyle.md) | Style to block negative values, throwing an exception on printing. | |
+| Known Direct Subclasses [SignStyle.ALWAYS](SignStyle.md), [SignStyle.EXCEEDS_PAD](SignStyle.md), [SignStyle.NEVER](SignStyle.md), [SignStyle.NORMAL](SignStyle.md), [SignStyle.NOT_NEGATIVE](SignStyle.md) |-----------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------| | [SignStyle.ALWAYS](SignStyle.md) | Style to always output the sign, where zero will output '+'. | | [SignStyle.EXCEEDS_PAD](SignStyle.md) | Style to always output the sign if the value exceeds the pad width. | | [SignStyle.NEVER](SignStyle.md) | Style to never output sign, only outputting the absolute value. | | [SignStyle.NORMAL](SignStyle.md) | Style to output the sign only if the value is negative. | | [SignStyle.NOT_NEGATIVE](SignStyle.md) | Style to block negative values, throwing an exception on printing. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Enumeration of ways to handle the positive/negative sign.
 
-The formatting engine allows the positive and negative signs of numbers to be controlled using this enum. See [DateTimeFormatterBuilder](../java/time/format/DateTimeFormatterBuilder.md) for usage.
+The formatting engine allows the positive and negative signs of numbers to be controlled using this enum. See [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md) for usage.
 
 ## Summary
 
 | Enum values ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ALWAYS](../java/time/format/SignStyle.md) Style to always output the sign, where zero will output '+'. |
-| [EXCEEDS_PAD](../java/time/format/SignStyle.md) Style to always output the sign if the value exceeds the pad width. |
-| [NEVER](../java/time/format/SignStyle.md) Style to never output sign, only outputting the absolute value. |
-| [NORMAL](../java/time/format/SignStyle.md) Style to output the sign only if the value is negative. |
-| [NOT_NEGATIVE](../java/time/format/SignStyle.md) Style to block negative values, throwing an exception on printing. |
+| [ALWAYS](SignStyle.md) Style to always output the sign, where zero will output '+'. |
+| [EXCEEDS_PAD](SignStyle.md) Style to always output the sign if the value exceeds the pad width. |
+| [NEVER](SignStyle.md) Style to never output sign, only outputting the absolute value. |
+| [NORMAL](SignStyle.md) Style to output the sign only if the value is negative. |
+| [NOT_NEGATIVE](SignStyle.md) Style to block negative values, throwing an exception on printing. |
 
 ## Enum values
 

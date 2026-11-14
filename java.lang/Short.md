@@ -11,7 +11,7 @@ class Short : Number, Comparable<Short!>
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
 | ↳ | [kotlin.Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html) ||
-| | ↳ | [java.lang.Short](../java/lang/Short.md) |
+| | ↳ | [java.lang.Short](Short.md) |
 
 The`Short`class wraps a value of primitive type`short`in an object. An object of type`Short`contains a single field whose type is`short`.
 
@@ -21,53 +21,53 @@ In addition, this class provides several methods for converting a`short`to a`Str
 
 | Constants ||
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BYTES](../java/lang/Short.md) The number of bytes used to represent a`short`value in two's complement binary form. |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [MAX_VALUE](../java/lang/Short.md) A constant holding the maximum value a`short`can have, 215-1. |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [MIN_VALUE](../java/lang/Short.md) A constant holding the minimum value a`short`can have, -215. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BYTES](Short.md) The number of bytes used to represent a`short`value in two's complement binary form. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [MAX_VALUE](Short.md) A constant holding the maximum value a`short`can have, 215-1. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [MIN_VALUE](Short.md) A constant holding the minimum value a`short`can have, -215. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIZE](../java/lang/Short.md) The number of bits used to represent a`short`value in two's complement binary form. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIZE](Short.md) The number of bits used to represent a`short`value in two's complement binary form. |
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Short](../java/lang/Short.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a newly allocated`Short`object that represents the`short`value indicated by the`String`parameter. |
-| [Short](../java/lang/Short.md))`(`value:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` Constructs a newly allocated`Short`object that represents the specified`short`value. |
+| [Short](Short.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a newly allocated`Short`object that represents the`short`value indicated by the`String`parameter. |
+| [Short](Short.md))`(`value:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` Constructs a newly allocated`Short`object that represents the specified`short`value. |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compare](../java/lang/Short.md))`(`x:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`, `y:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` Compares two`short`values numerically. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](../java/lang/Short.md))`(`other:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)!`)` Compares two`Short`objects numerically. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareUnsigned](../java/lang/Short.md))`(`x:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`, `y:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` Compares two`short`values numerically treating the values as unsigned. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compare](Short.md))`(`x:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`, `y:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` Compares two`short`values numerically. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](Short.md))`(`other:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)!`)` Compares two`Short`objects numerically. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareUnsigned](Short.md))`(`x:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`, `y:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` Compares two`short`values numerically treating the values as unsigned. |
 | --- | --- |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)! | [decode](../java/lang/Short.md))`(`nm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Decodes a`String`into a`Short`. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/lang/Short.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this object to the specified object. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/lang/Short.md))`()` Returns a hash code for this`Short`; equal to the result of invoking`intValue()`. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)! | [decode](Short.md))`(`nm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Decodes a`String`into a`Short`. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](Short.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this object to the specified object. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](Short.md))`()` Returns a hash code for this`Short`; equal to the result of invoking`intValue()`. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/lang/Short.md))`(`value:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` Returns a hash code for a`short`value; compatible with`Short.hashCode()`. |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [parseShort](../java/lang/Short.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Parses the string argument as a signed decimal`short`. |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [parseShort](../java/lang/Short.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `radix:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Parses the string argument as a signed`short`in the radix specified by the second argument. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](Short.md))`(`value:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` Returns a hash code for a`short`value; compatible with`Short.hashCode()`. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [parseShort](Short.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Parses the string argument as a signed decimal`short`. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [parseShort](Short.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `radix:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Parses the string argument as a signed`short`in the radix specified by the second argument. |
 | --- | --- |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [reverseBytes](../java/lang/Short.md))`(`i:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` Returns the value obtained by reversing the order of the bytes in the two's complement representation of the specified`short`value. |
-| [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [toByte](../java/lang/Short.md))`()` Returns the value of this`Short`as a`byte`after a narrowing primitive conversion. |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [toDouble](../java/lang/Short.md))`()` Returns the value of this`Short`as a`double`after a widening primitive conversion. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [reverseBytes](Short.md))`(`i:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` Returns the value obtained by reversing the order of the bytes in the two's complement representation of the specified`short`value. |
+| [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [toByte](Short.md))`()` Returns the value of this`Short`as a`byte`after a narrowing primitive conversion. |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [toDouble](Short.md))`()` Returns the value of this`Short`as a`double`after a widening primitive conversion. |
 | --- | --- |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [toFloat](../java/lang/Short.md))`()` Returns the value of this`Short`as a`float`after a widening primitive conversion. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [toInt](../java/lang/Short.md))`()` Returns the value of this`Short`as an`int`after a widening primitive conversion. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toLong](../java/lang/Short.md))`()` Returns the value of this`Short`as a`long`after a widening primitive conversion. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [toFloat](Short.md))`()` Returns the value of this`Short`as a`float`after a widening primitive conversion. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [toInt](Short.md))`()` Returns the value of this`Short`as an`int`after a widening primitive conversion. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toLong](Short.md))`()` Returns the value of this`Short`as a`long`after a widening primitive conversion. |
 | --- | --- |
-| [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [toShort](../java/lang/Short.md))`()` Returns the value of this`Short`as a`short`. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/lang/Short.md))`()` Returns a`String`object representing this`Short`'s value. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toString](../java/lang/Short.md))`(`s:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` Returns a new`String`object representing the specified`short`. |
+| [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [toShort](Short.md))`()` Returns the value of this`Short`as a`short`. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](Short.md))`()` Returns a`String`object representing this`Short`'s value. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toString](Short.md))`(`s:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` Returns a new`String`object representing the specified`short`. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [toUnsignedInt](../java/lang/Short.md))`(`x:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` Converts the argument to an`int`by an unsigned conversion. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toUnsignedLong](../java/lang/Short.md))`(`x:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` Converts the argument to a`long`by an unsigned conversion. |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)! | [valueOf](../java/lang/Short.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a`Short`object holding the value given by the specified`String`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [toUnsignedInt](Short.md))`(`x:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` Converts the argument to an`int`by an unsigned conversion. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toUnsignedLong](Short.md))`(`x:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` Converts the argument to a`long`by an unsigned conversion. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)! | [valueOf](Short.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a`Short`object holding the value given by the specified`String`. |
 | --- | --- |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)! | [valueOf](../java/lang/Short.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `radix:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a`Short`object holding the value extracted from the specified`String`when parsed with the radix given by the second argument. |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)! | [valueOf](../java/lang/Short.md))`(`s:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` Returns a`Short`instance representing the specified`short`value. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)! | [valueOf](Short.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `radix:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a`Short`object holding the value extracted from the specified`String`when parsed with the radix given by the second argument. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)! | [valueOf](Short.md))`(`s:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` Returns a`Short`instance representing the specified`short`value. |
 
 | Properties ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Class](../java/lang/Class.md)\< [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)!\>! | [TYPE](../java/lang/Short.md) The`Class`instance representing the primitive type`short`. |
+| static [Class](Class.md)\< [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)!\>! | [TYPE](Short.md) The`Class`instance representing the primitive type`short`. |
 
 ## Constants
 
@@ -129,7 +129,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 Short(s: String!)
 ```
 
-**Deprecated:** *It is rarely appropriate to use this constructor. Use [parseShort(java.lang.String)](../java/lang/Short.md))to convert a string to a`short`primitive, or use [valueOf(java.lang.String)](../java/lang/Short.md))to convert a string to a`Short`object.*
+**Deprecated:** *It is rarely appropriate to use this constructor. Use [parseShort(java.lang.String)](Short.md))to convert a string to a`short`primitive, or use [valueOf(java.lang.String)](Short.md))to convert a string to a`Short`object.*
 
 Constructs a newly allocated`Short`object that represents the`short`value indicated by the`String`parameter. The string is converted to a`short`value in exactly the manner used by the`parseShort`method for radix 10.
 
@@ -149,7 +149,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 Short(value: Short)
 ```
 
-**Deprecated:** *It is rarely appropriate to use this constructor. The static factory [valueOf(short)](../java/lang/Short.md))is generally a better choice, as it is likely to yield significantly better space and time performance.*
+**Deprecated:** *It is rarely appropriate to use this constructor. The static factory [valueOf(short)](Short.md))is generally a better choice, as it is likely to yield significantly better space and time performance.*
 
 Constructs a newly allocated`Short`object that represents the specified`short`value.
 
@@ -258,7 +258,7 @@ Decodes a`String`into a`Short`. Accepts decimal, hexadecimal, and octal numbers 
 
 <br />
 
-The sequence of characters following an optional sign and/or radix specifier ("`0x`", "`0X`", "", or leading zero) is parsed as by the`Short.parseShort`method with the indicated radix (10, 16, or 8). This sequence of characters must represent a positive value or a [NumberFormatException](../java/lang/NumberFormatException.md) will be thrown. The result is negated if first character of the specified`String`is the minus sign. No whitespace characters are permitted in the`String`.
+The sequence of characters following an optional sign and/or radix specifier ("`0x`", "`0X`", "", or leading zero) is parsed as by the`Short.parseShort`method with the indicated radix (10, 16, or 8). This sequence of characters must represent a positive value or a [NumberFormatException](NumberFormatException.md) will be thrown. The result is negated if first character of the specified`String`is the minus sign. No whitespace characters are permitted in the`String`.
 
 | Parameters ||
 |------|---------------------------------------------------------------------------------------------------------|
@@ -274,7 +274,7 @@ The sequence of characters following an optional sign and/or radix specifier ("`
 
 **See Also**
 
-- [java.lang.Short#parseShort(java.lang.String, int)](../java/lang/Short.md)) 
+- [java.lang.Short#parseShort(java.lang.String, int)](Short.md)) 
 
 ### equals
 
@@ -334,7 +334,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static fun parseShort(s: String!): Short
 ```
 
-Parses the string argument as a signed decimal`short`. The characters in the string must all be decimal digits, except that the first character may be an ASCII minus sign`'-'`(`'\u005Cu002D'`) to indicate a negative value or an ASCII plus sign`'+'`(`'\u005Cu002B'`) to indicate a positive value. The resulting`short`value is returned, exactly as if the argument and the radix 10 were given as arguments to the [parseShort(java.lang.String,int)](../java/lang/Short.md))method.
+Parses the string argument as a signed decimal`short`. The characters in the string must all be decimal digits, except that the first character may be an ASCII minus sign`'-'`(`'\u005Cu002D'`) to indicate a negative value or an ASCII plus sign`'+'`(`'\u005Cu002B'`) to indicate a positive value. The resulting`short`value is returned, exactly as if the argument and the radix 10 were given as arguments to the [parseShort(java.lang.String,int)](Short.md))method.
 
 | Parameters ||
 |-----|---------------------------------------------------------------------------------------------------------------------------------------------|
@@ -359,12 +359,12 @@ static fun parseShort(
 ): Short
 ```
 
-Parses the string argument as a signed`short`in the radix specified by the second argument. The characters in the string must all be digits, of the specified radix (as determined by whether [java.lang.Character#digit(char, * int)](../java/lang/Character.md))returns a nonnegative value) except that the first character may be an ASCII minus sign`'-'`(`'\u005Cu002D'`) to indicate a negative value or an ASCII plus sign`'+'`(`'\u005Cu002B'`) to indicate a positive value. The resulting`short`value is returned.
+Parses the string argument as a signed`short`in the radix specified by the second argument. The characters in the string must all be digits, of the specified radix (as determined by whether [java.lang.Character#digit(char, * int)](Character.md))returns a nonnegative value) except that the first character may be an ASCII minus sign`'-'`(`'\u005Cu002D'`) to indicate a negative value or an ASCII plus sign`'+'`(`'\u005Cu002B'`) to indicate a positive value. The resulting`short`value is returned.
 
 An exception of type`NumberFormatException`is thrown if any of the following situations occurs:
 
 - The first argument is`null`or is a string of length zero.
-- The radix is either smaller than [java.lang.Character#MIN_RADIX](../java/lang/Character.md) or larger than [java.lang.Character#MAX_RADIX](../java/lang/Character.md).
+- The radix is either smaller than [java.lang.Character#MIN_RADIX](Character.md) or larger than [java.lang.Character#MAX_RADIX](Character.md).
 - Any character of the string is not a digit of the specified radix, except that the first character may be a minus sign`'-'`(`'\u005Cu002D'`) or plus sign`'+'`(`'\u005Cu002B'`) provided that the string is longer than length 1.
 - The value represented by the string is not a value of type`short`.
 
@@ -491,7 +491,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun toString(): String
 ```
 
-Returns a`String`object representing this`Short`'s value. The value is converted to signed decimal representation and returned as a string, exactly as if the`short`value were given as an argument to the [java.lang.Short#toString(short)](../java/lang/Short.md))method.
+Returns a`String`object representing this`Short`'s value. The value is converted to signed decimal representation and returned as a string, exactly as if the`short`value were given as an argument to the [java.lang.Short#toString(short)](Short.md))method.
 
 | Return ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------|
@@ -517,7 +517,7 @@ Returns a new`String`object representing the specified`short`. The radix is assu
 
 **See Also**
 
-- [java.lang.Integer#toString(int)](../java/lang/Integer.md)) 
+- [java.lang.Integer#toString(int)](Integer.md)) 
 
 ### toUnsignedInt
 
@@ -563,7 +563,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static fun valueOf(s: String!): Short!
 ```
 
-Returns a`Short`object holding the value given by the specified`String`. The argument is interpreted as representing a signed decimal`short`, exactly as if the argument were given to the [parseShort(java.lang.String)](../java/lang/Short.md))method. The result is a`Short`object that represents the`short`value specified by the string.
+Returns a`Short`object holding the value given by the specified`String`. The argument is interpreted as representing a signed decimal`short`, exactly as if the argument were given to the [parseShort(java.lang.String)](Short.md))method. The result is a`Short`object that represents the`short`value specified by the string.
 
 In other words, this method returns a`Short`object equal to the value of:
 `new Short(Short.parseShort(s))`
@@ -591,7 +591,7 @@ static fun valueOf(
 ): Short!
 ```
 
-Returns a`Short`object holding the value extracted from the specified`String`when parsed with the radix given by the second argument. The first argument is interpreted as representing a signed`short`in the radix specified by the second argument, exactly as if the argument were given to the [parseShort(java.lang.String,int)](../java/lang/Short.md))method. The result is a`Short`object that represents the`short`value specified by the string.
+Returns a`Short`object holding the value extracted from the specified`String`when parsed with the radix given by the second argument. The first argument is interpreted as representing a signed`short`in the radix specified by the second argument, exactly as if the argument were given to the [parseShort(java.lang.String,int)](Short.md))method. The result is a`Short`object that represents the`short`value specified by the string.
 
 In other words, this method returns a`Short`object equal to the value of:
 `new Short(Short.parseShort(s, radix))`
@@ -617,7 +617,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static fun valueOf(s: Short): Short!
 ```
 
-Returns a`Short`instance representing the specified`short`value. If a new`Short`instance is not required, this method should generally be used in preference to the constructor [Short(short)](../java/lang/Short.md)), as this method is likely to yield significantly better space and time performance by caching frequently requested values. This method will always cache values in the range -128 to 127, inclusive, and may cache other values outside of this range.
+Returns a`Short`instance representing the specified`short`value. If a new`Short`instance is not required, this method should generally be used in preference to the constructor [Short(short)](Short.md)), as this method is likely to yield significantly better space and time performance by caching frequently requested values. This method will always cache values in the range -128 to 127, inclusive, and may cache other values outside of this range.
 
 | Parameters ||
 |-----|-----------------------------------------------------------------------------------------------|

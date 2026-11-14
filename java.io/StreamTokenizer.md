@@ -8,7 +8,7 @@ open class StreamTokenizer
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.io.StreamTokenizer](../java/io/StreamTokenizer.md) |
+| ↳ | [java.io.StreamTokenizer](StreamTokenizer.md) |
 
 The `StreamTokenizer` class takes an input stream and parses it into "tokens", allowing the tokens to be read one at a time. The parsing process is controlled by a table and a number of flags that can be set to various states. The stream tokenizer can recognize identifiers, numbers, quoted strings, and various comment styles.
 
@@ -153,7 +153,7 @@ Creates a stream tokenizer that parses the specified input stream. The stream to
 
 | Parameters ||
 |---|---|
-| `is` | [InputStream](../java/io/InputStream.md)!: an input stream. |
+| `is` | [InputStream](InputStream.md)!: an input stream. |
 
 **See Also**
 
@@ -173,7 +173,7 @@ Create a tokenizer that parses the given character stream.
 
 | Parameters ||
 |---|---|
-| `r` | [Reader](../java/io/Reader.md)!: a Reader object providing the input stream. |
+| `r` | [Reader](Reader.md)!: a Reader object providing the input stream. |
 
 ## Public methods
 

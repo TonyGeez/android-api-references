@@ -11,10 +11,10 @@ open class InvalidParameterSpecException : GeneralSecurityException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
-| | | ↳ | [java.security.GeneralSecurityException](../java/security/GeneralSecurityException.md) ||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) |||
+| | | ↳ | [java.security.GeneralSecurityException](../java.security/GeneralSecurityException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.security.spec.InvalidParameterSpecException](../java/security/spec/InvalidParameterSpecException.md) |
+| | | | ↳ | [java.security.spec.InvalidParameterSpecException](InvalidParameterSpecException.md) |
 
 This is the exception for invalid parameter specifications.
 
@@ -22,8 +22,8 @@ This is the exception for invalid parameter specifications.
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [InvalidParameterSpecException](../java/security/spec/InvalidParameterSpecException.md))`()` Constructs an InvalidParameterSpecException with no detail message. |
-| [InvalidParameterSpecException](../java/security/spec/InvalidParameterSpecException.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an InvalidParameterSpecException with the specified detail message. |
+| [InvalidParameterSpecException](InvalidParameterSpecException.md))`()` Constructs an InvalidParameterSpecException with no detail message. |
+| [InvalidParameterSpecException](InvalidParameterSpecException.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an InvalidParameterSpecException with the specified detail message. |
 
 ## Public constructors
 

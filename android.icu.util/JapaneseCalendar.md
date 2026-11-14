@@ -8,9 +8,9 @@ open class JapaneseCalendar : GregorianCalendar
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.icu.util.Calendar](../android/icu/util/Calendar.md) |||
-| | ↳ | [android.icu.util.GregorianCalendar](../android/icu/util/GregorianCalendar.md) ||
-| | | ↳ | [android.icu.util.JapaneseCalendar](../android/icu/util/JapaneseCalendar.md) |
+| ↳ | [android.icu.util.Calendar](Calendar.md) |||
+| | ↳ | [android.icu.util.GregorianCalendar](GregorianCalendar.md) ||
+| | | ↳ | [android.icu.util.JapaneseCalendar](JapaneseCalendar.md) |
 | --- | --- | --- | --- |
 
 `JapaneseCalendar` is a subclass of `GregorianCalendar` that numbers years and eras based on the reigns of the Japanese emperors. The Japanese calendar is identical to the Gregorian calendar in all respects except for the year and era. The ascension of each emperor to the throne begins a new era, and the years of that era are numbered starting with the year of ascension as year 1.
@@ -104,7 +104,7 @@ Constructs a `JapaneseCalendar` based on the current time in the given time zone
 
 | Parameters ||
 |---|---|
-| `zone` | [TimeZone](../android/icu/util/TimeZone.md)!: the given time zone. |
+| `zone` | [TimeZone](TimeZone.md)!: the given time zone. |
 
 ### JapaneseCalendar
 
@@ -120,8 +120,8 @@ Constructs a `JapaneseCalendar` based on the current time in the given time zone
 
 | Parameters ||
 |---|---|
-| `zone` | [TimeZone](../android/icu/util/TimeZone.md)!: the given time zone. |
-| `locale` | [ULocale](../android/icu/util/ULocale.md)!: the given ulocale. |
+| `zone` | [TimeZone](TimeZone.md)!: the given time zone. |
+| `locale` | [ULocale](ULocale.md)!: the given ulocale. |
 
 ### JapaneseCalendar
 
@@ -137,8 +137,8 @@ Constructs a `JapaneseCalendar` based on the current time in the given time zone
 
 | Parameters ||
 |---|---|
-| `zone` | [TimeZone](../android/icu/util/TimeZone.md)!: the given time zone. |
-| `aLocale` | [Locale](../java/util/Locale.md)!: the given locale. |
+| `zone` | [TimeZone](TimeZone.md)!: the given time zone. |
+| `aLocale` | [Locale](../java.util/Locale.md)!: the given locale. |
 
 ### JapaneseCalendar
 
@@ -152,7 +152,7 @@ Constructs a `JapaneseCalendar` based on the current time in the default time zo
 
 | Parameters ||
 |---|---|
-| `locale` | [ULocale](../android/icu/util/ULocale.md)!: the given ulocale. |
+| `locale` | [ULocale](ULocale.md)!: the given ulocale. |
 
 ### JapaneseCalendar
 
@@ -235,7 +235,7 @@ Constructs a `JapaneseCalendar` with the given date set in the default time zone
 
 | Parameters ||
 |---|---|
-| `date` | [Date](../java/util/Date.md)!: The date to which the new calendar is set. |
+| `date` | [Date](../java.util/Date.md)!: The date to which the new calendar is set. |
 
 ### JapaneseCalendar
 
@@ -249,7 +249,7 @@ Constructs a `JapaneseCalendar` based on the current time in the default time zo
 
 | Parameters ||
 |---|---|
-| `aLocale` | [Locale](../java/util/Locale.md)!: the given locale. |
+| `aLocale` | [Locale](../java.util/Locale.md)!: the given locale. |
 
 ## Public methods
 

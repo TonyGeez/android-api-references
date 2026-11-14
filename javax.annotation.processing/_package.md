@@ -4,5 +4,5 @@
 
 ## Annotations
 
-| [Generated](../javax/annotation/processing/Generated.md) | <br /> |
+| [Generated](Generated.md) | <br /> |
 | --- | --- |

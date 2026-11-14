@@ -16,7 +16,7 @@ interface AutoFocusMoveCallback
 
 | **This interface was deprecated in API level 21.**
 |
-| We recommend using the new [android.hardware.camera2](../android/hardware/camera2/_package.md) API for new applications.
+| We recommend using the new [android.hardware.camera2](../android.hardware.camera2/_package.md) API for new applications.
 
 Callback interface used to notify on auto focus start and stop.
 
@@ -26,7 +26,7 @@ This is only supported in continuous autofocus modes -- [android.hardware.Camera
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAutoFocusMoving](../android/hardware/Camera.AutoFocusMoveCallback.md))`(`start:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `camera:` ` [Camera](../android/hardware/Camera.md)!`)` Called when the camera auto focus starts or stops. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAutoFocusMoving](../android/hardware/Camera.AutoFocusMoveCallback.md))`(`start:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `camera:` ` [Camera](Camera.md)!`)` Called when the camera auto focus starts or stops. |
 
 ## Public methods
 
@@ -48,4 +48,4 @@ Called when the camera auto focus starts or stops.
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------|
 | `start` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):true if focus starts to move, false if focus stops to move |
-| `camera` | [Camera](../android/hardware/Camera.md)!:the Camera service object |
+| `camera` | [Camera](Camera.md)!:the Camera service object |

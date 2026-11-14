@@ -2,7 +2,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 
 # VisualVoicemailSms
 
-Kotlin | [Java](../android/telephony/VisualVoicemailSms.md)
+Kotlin | [Java](VisualVoicemailSms.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class VisualVoicemailSms : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.telephony.VisualVoicemailSms](../android/telephony/VisualVoicemailSms.md) |
+| ↳ | [android.telephony.VisualVoicemailSms](VisualVoicemailSms.md) |
 
 Represents the content of a visual voicemail SMS. If a incoming SMS matches the `https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailSmsFilterSettings` set by the default dialer, `https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailService#onSmsReceived(android.telephony.VisualVoicemailService.VisualVoicemailTask,%20android.telephony.VisualVoicemailSms)` will be called.
 
@@ -24,17 +24,17 @@ Represents the content of a visual voicemail SMS. If a incoming SMS matches the 
 | Public methods ||
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailSms#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [Bundle](../android/os/Bundle.md)! | `https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailSms#getFields()()` The key-value pairs sent by the SMS, or `null` if the framework cannot parse the SMS as voicemail but the carrier pattern indicates it is. |
+| [Bundle](../android.os/Bundle.md)! | `https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailSms#getFields()()` The key-value pairs sent by the SMS, or `null` if the framework cannot parse the SMS as voicemail but the carrier pattern indicates it is. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailSms#getMessageBody()()` Raw message body of the received SMS. |
 | --- | --- |
-| [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md)! | `https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailSms#getPhoneAccountHandle()()` The `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle.html#` that received the SMS. |
+| [PhoneAccountHandle](../android.telecom/PhoneAccountHandle.md)! | `https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailSms#getPhoneAccountHandle()()` The `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle.html#` that received the SMS. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailSms#getPrefix()()` The event type of the SMS or `null` if the framework cannot parse the SMS as voicemail but the carrier pattern indicates it is. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailSms#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 | --- | --- |
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [VisualVoicemailSms](../android/telephony/VisualVoicemailSms.md)!\> | `https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailSms#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [VisualVoicemailSms](VisualVoicemailSms.md)!\> | `https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailSms#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public methods
 
@@ -107,7 +107,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

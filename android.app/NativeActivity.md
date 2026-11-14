@@ -8,12 +8,12 @@ open class NativeActivity : Activity, InputQueue.Callback, SurfaceHolder.Callb
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](../android/content/Context.md) |||||
-| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) ||||
-| | | ↳ | [android.view.ContextThemeWrapper](../android/view/ContextThemeWrapper.md) |||
+| ↳ | [android.content.Context](../android.content/Context.md) |||||
+| | ↳ | [android.content.ContextWrapper](../android.content/ContextWrapper.md) ||||
+| | | ↳ | [android.view.ContextThemeWrapper](../android.view/ContextThemeWrapper.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.app.Activity](../android/app/Activity.md) ||
-| | | | | ↳ | [android.app.NativeActivity](../android/app/NativeActivity.md) |
+| | | | ↳ | [android.app.Activity](Activity.md) ||
+| | | | | ↳ | [android.app.NativeActivity](NativeActivity.md) |
 
 Convenience for implementing an activity that will be implemented purely in native code. That is, a game (or game-like thing). There is no need to derive from this class; you can simply declare it in your manifest, and use the NDK APIs from there.
 
@@ -4853,7 +4853,7 @@ At the time that this function has been called, your Resources object will have 
 
 | Parameters ||
 |---|---|
-| `newConfig` | [Configuration](../android/content/res/Configuration.md): The new device configuration. This value cannot be `null`. |
+| `newConfig` | [Configuration](../android.content.res/Configuration.md): The new device configuration. This value cannot be `null`. |
 
 ### onGlobalLayout
 
@@ -4934,7 +4934,7 @@ This is called immediately after any structural changes (format or size) have be
 
 | Parameters ||
 |---|---|
-| `holder` | [SurfaceHolder](../android/view/SurfaceHolder.md): The SurfaceHolder whose surface has changed. This value cannot be `null`. |
+| `holder` | [SurfaceHolder](../android.view/SurfaceHolder.md): The SurfaceHolder whose surface has changed. This value cannot be `null`. |
 | `format` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The new `https://developer.android.com/reference/kotlin/android/graphics/PixelFormat.html#` of the surface. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/graphics/PixelFormat.html#RGBA_8888:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/PixelFormat.html#RGBX_8888:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/PixelFormat.html#RGBA_F16:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/PixelFormat.html#RGBA_1010102:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/PixelFormat.html#RGB_888:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/graphics/PixelFormat.html#RGB_565:kotlin.Int` |
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The new width of the surface. Value is 0 or greater |
 | --- | --- |
@@ -4952,7 +4952,7 @@ This is called immediately after the surface is first created. Implementations o
 
 | Parameters ||
 |---|---|
-| `holder` | [SurfaceHolder](../android/view/SurfaceHolder.md): The SurfaceHolder whose surface is being created. This value cannot be `null`. |
+| `holder` | [SurfaceHolder](../android.view/SurfaceHolder.md): The SurfaceHolder whose surface is being created. This value cannot be `null`. |
 
 ### surfaceDestroyed
 
@@ -4966,7 +4966,7 @@ This is called immediately before a surface is being destroyed. After returning 
 
 | Parameters ||
 |---|---|
-| `holder` | [SurfaceHolder](../android/view/SurfaceHolder.md): The SurfaceHolder whose surface is being destroyed. This value cannot be `null`. |
+| `holder` | [SurfaceHolder](../android.view/SurfaceHolder.md): The SurfaceHolder whose surface is being destroyed. This value cannot be `null`. |
 
 ### surfaceRedrawNeeded
 
@@ -4980,7 +4980,7 @@ Called when the application needs to redraw the content of its surface, after it
 
 | Parameters ||
 |---|---|
-| `holder` | [SurfaceHolder](../android/view/SurfaceHolder.md): The SurfaceHolder whose surface has changed. This value cannot be `null`. |
+| `holder` | [SurfaceHolder](../android.view/SurfaceHolder.md): The SurfaceHolder whose surface has changed. This value cannot be `null`. |
 
 ## Protected methods
 
@@ -5003,7 +5003,7 @@ If you override this method you *must* call through to the superclass implementa
 
 | Parameters ||
 |---|---|
-| `savedInstanceState` | [Bundle](../android/os/Bundle.md)?: If the activity is being re-initialized after previously being shut down then this Bundle contains the data it most recently supplied in #onSaveInstanceState. ***Note: Otherwise it is null.*** |
+| `savedInstanceState` | [Bundle](../android.os/Bundle.md)?: If the activity is being re-initialized after previously being shut down then this Bundle contains the data it most recently supplied in #onSaveInstanceState. ***Note: Otherwise it is null.*** |
 
 ### onDestroy
 
@@ -5079,7 +5079,7 @@ If called, this method will occur after `https://developer.android.com/reference
 
 | Parameters ||
 |---|---|
-| `outState` | [Bundle](../android/os/Bundle.md): Bundle in which to place your saved state. This value cannot be `null`. |
+| `outState` | [Bundle](../android.os/Bundle.md): Bundle in which to place your saved state. This value cannot be `null`. |
 
 ### onStart
 

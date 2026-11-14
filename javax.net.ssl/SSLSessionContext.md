@@ -8,7 +8,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface SSLSessionContext
 ```
 
-| [javax.net.ssl.SSLSessionContext](../javax/net/ssl/SSLSessionContext.md) |
+| [javax.net.ssl.SSLSessionContext](SSLSessionContext.md) |
 
 A represents a set of`SSLSession`s associated with a single entity. For example, it could be associated with a server or client who participates in many sessions concurrently.
 
@@ -25,13 +25,13 @@ A session can be retrieved based on its session id, and all session id's in a`SS
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Enumeration](../java/util/Enumeration.md)\< [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!\>! | [getIds](../javax/net/ssl/SSLSessionContext.md))`()` Returns an Enumeration of all session id's grouped under this`SSLSessionContext`. |
-| abstract [SSLSession](../javax/net/ssl/SSLSession.md)! | [getSession](../javax/net/ssl/SSLSessionContext.md))`(`sessionId:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Returns the`SSLSession`bound to the specified session id. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSessionCacheSize](../javax/net/ssl/SSLSessionContext.md))`()` Returns the size of the cache used for storing`SSLSession`objects grouped under this`SSLSessionContext`. |
+| abstract [Enumeration](../java.util/Enumeration.md)\< [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!\>! | [getIds](SSLSessionContext.md))`()` Returns an Enumeration of all session id's grouped under this`SSLSessionContext`. |
+| abstract [SSLSession](SSLSession.md)! | [getSession](SSLSessionContext.md))`(`sessionId:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Returns the`SSLSession`bound to the specified session id. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSessionCacheSize](SSLSessionContext.md))`()` Returns the size of the cache used for storing`SSLSession`objects grouped under this`SSLSessionContext`. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSessionTimeout](../javax/net/ssl/SSLSessionContext.md))`()` Returns the timeout limit of`SSLSession`objects grouped under this`SSLSessionContext`. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSessionCacheSize](../javax/net/ssl/SSLSessionContext.md))`(`size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the size of the cache used for storing`SSLSession`objects grouped under this`SSLSessionContext`. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSessionTimeout](../javax/net/ssl/SSLSessionContext.md))`(`seconds:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the timeout limit for`SSLSession`objects grouped under this`SSLSessionContext`. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSessionTimeout](SSLSessionContext.md))`()` Returns the timeout limit of`SSLSession`objects grouped under this`SSLSessionContext`. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSessionCacheSize](SSLSessionContext.md))`(`size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the size of the cache used for storing`SSLSession`objects grouped under this`SSLSessionContext`. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSessionTimeout](SSLSessionContext.md))`(`seconds:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the timeout limit for`SSLSession`objects grouped under this`SSLSessionContext`. |
 | --- | --- |
 
 ## Public methods
@@ -48,7 +48,7 @@ Returns an Enumeration of all session id's grouped under this`SSLSessionContext`
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------|
-| [Enumeration](../java/util/Enumeration.md)< [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!>! | an enumeration of all the Session id's |
+| [Enumeration](../java.util/Enumeration.md)< [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!>! | an enumeration of all the Session id's |
 
 ### getSession
 
@@ -66,7 +66,7 @@ Returns the`SSLSession`bound to the specified session id.
 
 | Return ||
 |----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
-| [SSLSession](../javax/net/ssl/SSLSession.md)! | the`SSLSession`or null if the specified session id does not refer to a valid SSLSession. |
+| [SSLSession](SSLSession.md)! | the`SSLSession`or null if the specified session id does not refer to a valid SSLSession. |
 
 | Exceptions ||
 |----------------------------------|-----------------------|
@@ -88,7 +88,7 @@ Returns the size of the cache used for storing`SSLSession`objects grouped under 
 
 **See Also**
 
-- [#setSessionCacheSize](../javax/net/ssl/SSLSessionContext.md)) 
+- [#setSessionCacheSize](SSLSessionContext.md)) 
 
 ### getSessionTimeout
 
@@ -108,7 +108,7 @@ If the timeout limit is set to 't' seconds, a session exceeds the timeout limit 
 
 **See Also**
 
-- [#setSessionTimeout](../javax/net/ssl/SSLSessionContext.md)) 
+- [#setSessionTimeout](SSLSessionContext.md)) 
 
 ### setSessionCacheSize
 
@@ -130,7 +130,7 @@ Sets the size of the cache used for storing`SSLSession`objects grouped under thi
 
 **See Also**
 
-- [#getSessionCacheSize](../javax/net/ssl/SSLSessionContext.md)) 
+- [#getSessionCacheSize](SSLSessionContext.md)) 
 
 ### setSessionTimeout
 
@@ -154,4 +154,4 @@ If the timeout limit is set to 't' seconds, a session exceeds the timeout limit 
 
 **See Also**
 
-- [#getSessionTimeout](../javax/net/ssl/SSLSessionContext.md))
+- [#getSessionTimeout](SSLSessionContext.md))

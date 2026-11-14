@@ -4,7 +4,7 @@ Added in [API level 10](https://developer.android.com/guide/topics/manifest/uses
 
 # MediaMetadataRetriever
 
-Kotlin| [Java](../android/media/MediaMetadataRetriever.md) 
+Kotlin| [Java](MediaMetadataRetriever.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class MediaMetadataRetriever : AutoCloseable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.MediaMetadataRetriever](../android/media/MediaMetadataRetriever.md) |
+| ↳ | [android.media.MediaMetadataRetriever](MediaMetadataRetriever.md) |
 
 MediaMetadataRetriever class provides a unified interface for retrieving frame and meta data from an input media file.
 
@@ -25,107 +25,107 @@ MediaMetadataRetriever class provides a unified interface for retrieving frame a
 
 | Constants ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_ALBUM](../android/media/MediaMetadataRetriever.md) The metadata key to retrieve the information about the album title of the data source. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_ALBUMARTIST](../android/media/MediaMetadataRetriever.md) The metadata key to retrieve the information about the performers or artist associated with the data source. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_ARTIST](../android/media/MediaMetadataRetriever.md) The metadata key to retrieve the information about the artist of the data source. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_ALBUM](MediaMetadataRetriever.md) The metadata key to retrieve the information about the album title of the data source. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_ALBUMARTIST](MediaMetadataRetriever.md) The metadata key to retrieve the information about the performers or artist associated with the data source. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_ARTIST](MediaMetadataRetriever.md) The metadata key to retrieve the information about the artist of the data source. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_AUTHOR](../android/media/MediaMetadataRetriever.md) The metadata key to retrieve the information about the author of the data source. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_BITRATE](../android/media/MediaMetadataRetriever.md) This key retrieves the average bitrate (in bits/sec), if available. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_BITS_PER_SAMPLE](../android/media/MediaMetadataRetriever.md) This key retrieves the bits per sample in numbers of bits, if available. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_AUTHOR](MediaMetadataRetriever.md) The metadata key to retrieve the information about the author of the data source. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_BITRATE](MediaMetadataRetriever.md) This key retrieves the average bitrate (in bits/sec), if available. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_BITS_PER_SAMPLE](MediaMetadataRetriever.md) This key retrieves the bits per sample in numbers of bits, if available. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_CAPTURE_FRAMERATE](../android/media/MediaMetadataRetriever.md) This key retrieves the original capture framerate, if it's available. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_CD_TRACK_NUMBER](../android/media/MediaMetadataRetriever.md) The metadata key to retrieve the numeric string describing the order of the audio data source on its original recording. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_COLOR_RANGE](../android/media/MediaMetadataRetriever.md) This key retrieves the color range, if available. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_CAPTURE_FRAMERATE](MediaMetadataRetriever.md) This key retrieves the original capture framerate, if it's available. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_CD_TRACK_NUMBER](MediaMetadataRetriever.md) The metadata key to retrieve the numeric string describing the order of the audio data source on its original recording. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_COLOR_RANGE](MediaMetadataRetriever.md) This key retrieves the color range, if available. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_COLOR_STANDARD](../android/media/MediaMetadataRetriever.md) This key retrieves the color standard, if available. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_COLOR_TRANSFER](../android/media/MediaMetadataRetriever.md) This key retrieves the color transfer, if available. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_COMPILATION](../android/media/MediaMetadataRetriever.md) The metadata key to retrieve the music album compilation status. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_COLOR_STANDARD](MediaMetadataRetriever.md) This key retrieves the color standard, if available. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_COLOR_TRANSFER](MediaMetadataRetriever.md) This key retrieves the color transfer, if available. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_COMPILATION](MediaMetadataRetriever.md) The metadata key to retrieve the music album compilation status. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_COMPOSER](../android/media/MediaMetadataRetriever.md) The metadata key to retrieve the information about the composer of the data source. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_DATE](../android/media/MediaMetadataRetriever.md) The metadata key to retrieve the date when the data source was created or modified. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_DISC_NUMBER](../android/media/MediaMetadataRetriever.md) The metadata key to retrieve the numberic string that describes which part of a set the audio data source comes from. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_COMPOSER](MediaMetadataRetriever.md) The metadata key to retrieve the information about the composer of the data source. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_DATE](MediaMetadataRetriever.md) The metadata key to retrieve the date when the data source was created or modified. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_DISC_NUMBER](MediaMetadataRetriever.md) The metadata key to retrieve the numberic string that describes which part of a set the audio data source comes from. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_DURATION](../android/media/MediaMetadataRetriever.md) The metadata key to retrieve the playback duration (in ms) of the data source. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_EXIF_LENGTH](../android/media/MediaMetadataRetriever.md) If the media contains EXIF data, this key retrieves the length (in bytes) of the data. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_EXIF_OFFSET](../android/media/MediaMetadataRetriever.md) If the media contains EXIF data, this key retrieves the offset (in bytes) of the data. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_DURATION](MediaMetadataRetriever.md) The metadata key to retrieve the playback duration (in ms) of the data source. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_EXIF_LENGTH](MediaMetadataRetriever.md) If the media contains EXIF data, this key retrieves the length (in bytes) of the data. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_EXIF_OFFSET](MediaMetadataRetriever.md) If the media contains EXIF data, this key retrieves the offset (in bytes) of the data. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_GENRE](../android/media/MediaMetadataRetriever.md) The metadata key to retrieve the content type or genre of the data source. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_HAS_AUDIO](../android/media/MediaMetadataRetriever.md) If this key exists the media contains audio content. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_HAS_IMAGE](../android/media/MediaMetadataRetriever.md) If this key exists the media contains still image content. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_GENRE](MediaMetadataRetriever.md) The metadata key to retrieve the content type or genre of the data source. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_HAS_AUDIO](MediaMetadataRetriever.md) If this key exists the media contains audio content. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_HAS_IMAGE](MediaMetadataRetriever.md) If this key exists the media contains still image content. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_HAS_VIDEO](../android/media/MediaMetadataRetriever.md) If this key exists the media contains video content. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_IMAGE_COUNT](../android/media/MediaMetadataRetriever.md) If the media contains still images, this key retrieves the number of still images. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_IMAGE_HEIGHT](../android/media/MediaMetadataRetriever.md) If the media contains still images, this key retrieves the height of the primary image. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_HAS_VIDEO](MediaMetadataRetriever.md) If this key exists the media contains video content. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_IMAGE_COUNT](MediaMetadataRetriever.md) If the media contains still images, this key retrieves the number of still images. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_IMAGE_HEIGHT](MediaMetadataRetriever.md) If the media contains still images, this key retrieves the height of the primary image. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_IMAGE_PRIMARY](../android/media/MediaMetadataRetriever.md) If the media contains still images, this key retrieves the image index of the primary image. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_IMAGE_ROTATION](../android/media/MediaMetadataRetriever.md) If the media contains still images, this key retrieves the rotation angle (in degrees clockwise) of the primary image. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_IMAGE_WIDTH](../android/media/MediaMetadataRetriever.md) If the media contains still images, this key retrieves the width of the primary image. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_IMAGE_PRIMARY](MediaMetadataRetriever.md) If the media contains still images, this key retrieves the image index of the primary image. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_IMAGE_ROTATION](MediaMetadataRetriever.md) If the media contains still images, this key retrieves the rotation angle (in degrees clockwise) of the primary image. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_IMAGE_WIDTH](MediaMetadataRetriever.md) If the media contains still images, this key retrieves the width of the primary image. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_LOCATION](../android/media/MediaMetadataRetriever.md) This key retrieves the location information, if available. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_MIMETYPE](../android/media/MediaMetadataRetriever.md) The metadata key to retrieve the mime type of the data source. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_NUM_TRACKS](../android/media/MediaMetadataRetriever.md) The metadata key to retrieve the number of tracks, such as audio, video, text, in the data source, such as a mp4 or 3gpp file. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_LOCATION](MediaMetadataRetriever.md) This key retrieves the location information, if available. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_MIMETYPE](MediaMetadataRetriever.md) The metadata key to retrieve the mime type of the data source. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_NUM_TRACKS](MediaMetadataRetriever.md) The metadata key to retrieve the number of tracks, such as audio, video, text, in the data source, such as a mp4 or 3gpp file. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_SAMPLERATE](../android/media/MediaMetadataRetriever.md) This key retrieves the sample rate in Hz, if available. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_TITLE](../android/media/MediaMetadataRetriever.md) The metadata key to retrieve the data source title. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_VIDEO_FRAME_COUNT](../android/media/MediaMetadataRetriever.md) If the media contains video and this key exists, it retrieves the total number of frames in the video sequence. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_SAMPLERATE](MediaMetadataRetriever.md) This key retrieves the sample rate in Hz, if available. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_TITLE](MediaMetadataRetriever.md) The metadata key to retrieve the data source title. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_VIDEO_FRAME_COUNT](MediaMetadataRetriever.md) If the media contains video and this key exists, it retrieves the total number of frames in the video sequence. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_VIDEO_HEIGHT](../android/media/MediaMetadataRetriever.md) If the media contains video, this key retrieves its height. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_VIDEO_ROTATION](../android/media/MediaMetadataRetriever.md) This key retrieves the video rotation angle in degrees, if available. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_VIDEO_WIDTH](../android/media/MediaMetadataRetriever.md) If the media contains video, this key retrieves its width. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_VIDEO_HEIGHT](MediaMetadataRetriever.md) If the media contains video, this key retrieves its height. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_VIDEO_ROTATION](MediaMetadataRetriever.md) This key retrieves the video rotation angle in degrees, if available. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_VIDEO_WIDTH](MediaMetadataRetriever.md) If the media contains video, this key retrieves its width. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_WRITER](../android/media/MediaMetadataRetriever.md) The metadata key to retrieve the information of the writer (such as lyricist) of the data source. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_XMP_LENGTH](../android/media/MediaMetadataRetriever.md) If the media contains XMP data, this key retrieves the length (in bytes) of the data. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_XMP_OFFSET](../android/media/MediaMetadataRetriever.md) If the media contains XMP data, this key retrieves the offset (in bytes) of the data. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_WRITER](MediaMetadataRetriever.md) The metadata key to retrieve the information of the writer (such as lyricist) of the data source. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_XMP_LENGTH](MediaMetadataRetriever.md) If the media contains XMP data, this key retrieves the length (in bytes) of the data. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_XMP_OFFSET](MediaMetadataRetriever.md) If the media contains XMP data, this key retrieves the offset (in bytes) of the data. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_YEAR](../android/media/MediaMetadataRetriever.md) The metadata key to retrieve the year when the data source was created or modified. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPTION_CLOSEST](../android/media/MediaMetadataRetriever.md) This option is used with [getFrameAtTime(long,int)](../android/media/MediaMetadataRetriever.md))to retrieve a frame (not necessarily a key frame) associated with a data source that is located closest to or at the given time. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPTION_CLOSEST_SYNC](../android/media/MediaMetadataRetriever.md) This option is used with [getFrameAtTime(long,int)](../android/media/MediaMetadataRetriever.md))to retrieve a sync (or key) frame associated with a data source that is located closest to (in time) or at the given time. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [METADATA_KEY_YEAR](MediaMetadataRetriever.md) The metadata key to retrieve the year when the data source was created or modified. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPTION_CLOSEST](MediaMetadataRetriever.md) This option is used with [getFrameAtTime(long,int)](MediaMetadataRetriever.md))to retrieve a frame (not necessarily a key frame) associated with a data source that is located closest to or at the given time. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPTION_CLOSEST_SYNC](MediaMetadataRetriever.md) This option is used with [getFrameAtTime(long,int)](MediaMetadataRetriever.md))to retrieve a sync (or key) frame associated with a data source that is located closest to (in time) or at the given time. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPTION_NEXT_SYNC](../android/media/MediaMetadataRetriever.md) This option is used with [getFrameAtTime(long,int)](../android/media/MediaMetadataRetriever.md))to retrieve a sync (or key) frame associated with a data source that is located right after or at the given time. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPTION_PREVIOUS_SYNC](../android/media/MediaMetadataRetriever.md) This option is used with [getFrameAtTime(long,int)](../android/media/MediaMetadataRetriever.md))to retrieve a sync (or key) frame associated with a data source that is located right before or at the given time. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPTION_NEXT_SYNC](MediaMetadataRetriever.md) This option is used with [getFrameAtTime(long,int)](MediaMetadataRetriever.md))to retrieve a sync (or key) frame associated with a data source that is located right after or at the given time. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPTION_PREVIOUS_SYNC](MediaMetadataRetriever.md) This option is used with [getFrameAtTime(long,int)](MediaMetadataRetriever.md))to retrieve a sync (or key) frame associated with a data source that is located right before or at the given time. |
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [MediaMetadataRetriever](../android/media/MediaMetadataRetriever.md))`()` <br /> |
+| [MediaMetadataRetriever](MediaMetadataRetriever.md))`()` <br /> |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../android/media/MediaMetadataRetriever.md))`()` Releases any acquired resources. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [extractMetadata](../android/media/MediaMetadataRetriever.md))`(`keyCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Call this method after setDataSource(). |
-| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | [getEmbeddedPicture](../android/media/MediaMetadataRetriever.md))`()` Call this method after setDataSource(). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](MediaMetadataRetriever.md))`()` Releases any acquired resources. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [extractMetadata](MediaMetadataRetriever.md))`(`keyCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Call this method after setDataSource(). |
+| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | [getEmbeddedPicture](MediaMetadataRetriever.md))`()` Call this method after setDataSource(). |
 | --- | --- |
-| open [Bitmap](../android/graphics/Bitmap.md)? | [getFrameAtIndex](../android/media/MediaMetadataRetriever.md))`(`frameIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` This method is similar to [getFrameAtIndex(int,android.media.MediaMetadataRetriever.BitmapParams)](../android/media/MediaMetadataRetriever.md))except that the default for [BitmapParams](../android/media/MediaMetadataRetriever.BitmapParams.md) will be used. |
-| open [Bitmap](../android/graphics/Bitmap.md)? | [getFrameAtIndex](../android/media/MediaMetadataRetriever.md))`(`frameIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `params:` ` [MediaMetadataRetriever.BitmapParams](../android/media/MediaMetadataRetriever.BitmapParams.md)`)` This method retrieves a video frame by its index. |
-| open [Bitmap](../android/graphics/Bitmap.md)? | [getFrameAtTime](../android/media/MediaMetadataRetriever.md))`()` Call this method after setDataSource(). |
+| open [Bitmap](../android.graphics/Bitmap.md)? | [getFrameAtIndex](MediaMetadataRetriever.md))`(`frameIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` This method is similar to [getFrameAtIndex(int,android.media.MediaMetadataRetriever.BitmapParams)](MediaMetadataRetriever.md))except that the default for [BitmapParams](../android/media/MediaMetadataRetriever.BitmapParams.md) will be used. |
+| open [Bitmap](../android.graphics/Bitmap.md)? | [getFrameAtIndex](MediaMetadataRetriever.md))`(`frameIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `params:` ` [MediaMetadataRetriever.BitmapParams](../android/media/MediaMetadataRetriever.BitmapParams.md)`)` This method retrieves a video frame by its index. |
+| open [Bitmap](../android.graphics/Bitmap.md)? | [getFrameAtTime](MediaMetadataRetriever.md))`()` Call this method after setDataSource(). |
 | --- | --- |
-| open [Bitmap](../android/graphics/Bitmap.md)? | [getFrameAtTime](../android/media/MediaMetadataRetriever.md))`(`timeUs:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Call this method after setDataSource(). |
-| open [Bitmap](../android/graphics/Bitmap.md)? | [getFrameAtTime](../android/media/MediaMetadataRetriever.md))`(`timeUs:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `option:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` This method is similar to [getFrameAtTime(long,int,android.media.MediaMetadataRetriever.BitmapParams)](../android/media/MediaMetadataRetriever.md))except that the device will choose the actual [Bitmap.Config](../android/graphics/Bitmap.Config.md) to use. |
-| open [Bitmap](../android/graphics/Bitmap.md)? | [getFrameAtTime](../android/media/MediaMetadataRetriever.md))`(`timeUs:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `option:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `params:` ` [MediaMetadataRetriever.BitmapParams](../android/media/MediaMetadataRetriever.BitmapParams.md)`)` Call this method after setDataSource(). |
+| open [Bitmap](../android.graphics/Bitmap.md)? | [getFrameAtTime](MediaMetadataRetriever.md))`(`timeUs:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Call this method after setDataSource(). |
+| open [Bitmap](../android.graphics/Bitmap.md)? | [getFrameAtTime](MediaMetadataRetriever.md))`(`timeUs:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `option:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` This method is similar to [getFrameAtTime(long,int,android.media.MediaMetadataRetriever.BitmapParams)](MediaMetadataRetriever.md))except that the device will choose the actual [Bitmap.Config](../android/graphics/Bitmap.Config.md) to use. |
+| open [Bitmap](../android.graphics/Bitmap.md)? | [getFrameAtTime](MediaMetadataRetriever.md))`(`timeUs:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `option:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `params:` ` [MediaMetadataRetriever.BitmapParams](../android/media/MediaMetadataRetriever.BitmapParams.md)`)` Call this method after setDataSource(). |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Bitmap](../android/graphics/Bitmap.md)!\> | [getFramesAtIndex](../android/media/MediaMetadataRetriever.md))`(`frameIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `numFrames:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` This method is similar to [getFramesAtIndex(int,int,android.media.MediaMetadataRetriever.BitmapParams)](../android/media/MediaMetadataRetriever.md))except that the default for [BitmapParams](../android/media/MediaMetadataRetriever.BitmapParams.md) will be used. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Bitmap](../android/graphics/Bitmap.md)!\> | [getFramesAtIndex](../android/media/MediaMetadataRetriever.md))`(`frameIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `numFrames:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `params:` ` [MediaMetadataRetriever.BitmapParams](../android/media/MediaMetadataRetriever.BitmapParams.md)`)` This method retrieves a consecutive set of video frames starting at the specified index. |
-| open [Bitmap](../android/graphics/Bitmap.md)? | [getImageAtIndex](../android/media/MediaMetadataRetriever.md))`(`imageIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` This method is similar to [getImageAtIndex(int,android.media.MediaMetadataRetriever.BitmapParams)](../android/media/MediaMetadataRetriever.md))except that the default for [BitmapParams](../android/media/MediaMetadataRetriever.BitmapParams.md) will be used. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Bitmap](../android.graphics/Bitmap.md)!\> | [getFramesAtIndex](MediaMetadataRetriever.md))`(`frameIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `numFrames:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` This method is similar to [getFramesAtIndex(int,int,android.media.MediaMetadataRetriever.BitmapParams)](MediaMetadataRetriever.md))except that the default for [BitmapParams](../android/media/MediaMetadataRetriever.BitmapParams.md) will be used. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Bitmap](../android.graphics/Bitmap.md)!\> | [getFramesAtIndex](MediaMetadataRetriever.md))`(`frameIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `numFrames:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `params:` ` [MediaMetadataRetriever.BitmapParams](../android/media/MediaMetadataRetriever.BitmapParams.md)`)` This method retrieves a consecutive set of video frames starting at the specified index. |
+| open [Bitmap](../android.graphics/Bitmap.md)? | [getImageAtIndex](MediaMetadataRetriever.md))`(`imageIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` This method is similar to [getImageAtIndex(int,android.media.MediaMetadataRetriever.BitmapParams)](MediaMetadataRetriever.md))except that the default for [BitmapParams](../android/media/MediaMetadataRetriever.BitmapParams.md) will be used. |
 | --- | --- |
-| open [Bitmap](../android/graphics/Bitmap.md)? | [getImageAtIndex](../android/media/MediaMetadataRetriever.md))`(`imageIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `params:` ` [MediaMetadataRetriever.BitmapParams](../android/media/MediaMetadataRetriever.BitmapParams.md)`)` This method retrieves a still image by its index. |
-| open [Bitmap](../android/graphics/Bitmap.md)? | [getPrimaryImage](../android/media/MediaMetadataRetriever.md))`()` This method is similar to [getPrimaryImage(android.media.MediaMetadataRetriever.BitmapParams)](../android/media/MediaMetadataRetriever.md))except that the default for [BitmapParams](../android/media/MediaMetadataRetriever.BitmapParams.md) will be used. |
-| open [Bitmap](../android/graphics/Bitmap.md)? | [getPrimaryImage](../android/media/MediaMetadataRetriever.md))`(`params:` ` [MediaMetadataRetriever.BitmapParams](../android/media/MediaMetadataRetriever.BitmapParams.md)`)` This method retrieves the primary image of the media content. |
+| open [Bitmap](../android.graphics/Bitmap.md)? | [getImageAtIndex](MediaMetadataRetriever.md))`(`imageIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `params:` ` [MediaMetadataRetriever.BitmapParams](../android/media/MediaMetadataRetriever.BitmapParams.md)`)` This method retrieves a still image by its index. |
+| open [Bitmap](../android.graphics/Bitmap.md)? | [getPrimaryImage](MediaMetadataRetriever.md))`()` This method is similar to [getPrimaryImage(android.media.MediaMetadataRetriever.BitmapParams)](MediaMetadataRetriever.md))except that the default for [BitmapParams](../android/media/MediaMetadataRetriever.BitmapParams.md) will be used. |
+| open [Bitmap](../android.graphics/Bitmap.md)? | [getPrimaryImage](MediaMetadataRetriever.md))`(`params:` ` [MediaMetadataRetriever.BitmapParams](../android/media/MediaMetadataRetriever.BitmapParams.md)`)` This method retrieves the primary image of the media content. |
 | --- | --- |
-| open [Bitmap](../android/graphics/Bitmap.md)? | [getScaledFrameAtTime](../android/media/MediaMetadataRetriever.md))`(`timeUs:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `option:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dstWidth:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dstHeight:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` This method is similar to [getScaledFrameAtTime(long,int,int,int,android.media.MediaMetadataRetriever.BitmapParams)](../android/media/MediaMetadataRetriever.md))except that the device will choose the actual [Bitmap.Config](../android/graphics/Bitmap.Config.md) to use. |
-| open [Bitmap](../android/graphics/Bitmap.md)? | [getScaledFrameAtTime](../android/media/MediaMetadataRetriever.md))`(`timeUs:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `option:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dstWidth:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dstHeight:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `params:` ` [MediaMetadataRetriever.BitmapParams](../android/media/MediaMetadataRetriever.BitmapParams.md)`)` Retrieve a video frame near a given timestamp scaled to a desired size. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [release](../android/media/MediaMetadataRetriever.md))`()` Releases any acquired resources. |
+| open [Bitmap](../android.graphics/Bitmap.md)? | [getScaledFrameAtTime](MediaMetadataRetriever.md))`(`timeUs:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `option:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dstWidth:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dstHeight:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` This method is similar to [getScaledFrameAtTime(long,int,int,int,android.media.MediaMetadataRetriever.BitmapParams)](MediaMetadataRetriever.md))except that the device will choose the actual [Bitmap.Config](../android/graphics/Bitmap.Config.md) to use. |
+| open [Bitmap](../android.graphics/Bitmap.md)? | [getScaledFrameAtTime](MediaMetadataRetriever.md))`(`timeUs:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `option:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dstWidth:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dstHeight:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `params:` ` [MediaMetadataRetriever.BitmapParams](../android/media/MediaMetadataRetriever.BitmapParams.md)`)` Retrieve a video frame near a given timestamp scaled to a desired size. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [release](MediaMetadataRetriever.md))`()` Releases any acquired resources. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDataSource](../android/media/MediaMetadataRetriever.md))`(`context:` ` [Context](../android/content/Context.md)!`, `uri:` ` [Uri](../android/net/Uri.md)!`)` Sets the data source as a content Uri. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDataSource](../android/media/MediaMetadataRetriever.md))`(`dataSource:` ` [MediaDataSource](../android/media/MediaDataSource.md)!`)` Sets the data source (MediaDataSource) to use. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDataSource](../android/media/MediaMetadataRetriever.md))`(`fd:` ` [FileDescriptor](../java/io/FileDescriptor.md)!`)` Sets the data source (FileDescriptor) to use. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDataSource](MediaMetadataRetriever.md))`(`context:` ` [Context](../android.content/Context.md)!`, `uri:` ` [Uri](../android.net/Uri.md)!`)` Sets the data source as a content Uri. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDataSource](MediaMetadataRetriever.md))`(`dataSource:` ` [MediaDataSource](MediaDataSource.md)!`)` Sets the data source (MediaDataSource) to use. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDataSource](MediaMetadataRetriever.md))`(`fd:` ` [FileDescriptor](../java.io/FileDescriptor.md)!`)` Sets the data source (FileDescriptor) to use. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDataSource](../android/media/MediaMetadataRetriever.md))`(`fd:` ` [FileDescriptor](../java/io/FileDescriptor.md)!`, `offset:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `length:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the data source (FileDescriptor) to use. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDataSource](../android/media/MediaMetadataRetriever.md))`(`path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the data source (file pathname) to use. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDataSource](../android/media/MediaMetadataRetriever.md))`(`uri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `headers:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Sets the data source (URI) to use. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDataSource](MediaMetadataRetriever.md))`(`fd:` ` [FileDescriptor](../java.io/FileDescriptor.md)!`, `offset:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `length:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the data source (FileDescriptor) to use. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDataSource](MediaMetadataRetriever.md))`(`path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the data source (file pathname) to use. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDataSource](MediaMetadataRetriever.md))`(`uri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `headers:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Sets the data source (URI) to use. |
 | --- | --- |
 
 | Protected methods ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](../android/media/MediaMetadataRetriever.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](MediaMetadataRetriever.md))`()` <br /> |
 
 ## Constants
 
@@ -239,8 +239,8 @@ This key retrieves the color range, if available.
 
 **See Also**
 
-- [android.media.MediaFormat#COLOR_RANGE_LIMITED](../android/media/MediaFormat.md)
-- [android.media.MediaFormat#COLOR_RANGE_FULL](../android/media/MediaFormat.md) 
+- [android.media.MediaFormat#COLOR_RANGE_LIMITED](MediaFormat.md)
+- [android.media.MediaFormat#COLOR_RANGE_FULL](MediaFormat.md) 
 
 ### METADATA_KEY_COLOR_STANDARD
 
@@ -256,10 +256,10 @@ This key retrieves the color standard, if available.
 
 **See Also**
 
-- [android.media.MediaFormat#COLOR_STANDARD_BT709](../android/media/MediaFormat.md)
-- [android.media.MediaFormat#COLOR_STANDARD_BT601_PAL](../android/media/MediaFormat.md)
-- [android.media.MediaFormat#COLOR_STANDARD_BT601_NTSC](../android/media/MediaFormat.md)
-- [android.media.MediaFormat#COLOR_STANDARD_BT2020](../android/media/MediaFormat.md) 
+- [android.media.MediaFormat#COLOR_STANDARD_BT709](MediaFormat.md)
+- [android.media.MediaFormat#COLOR_STANDARD_BT601_PAL](MediaFormat.md)
+- [android.media.MediaFormat#COLOR_STANDARD_BT601_NTSC](MediaFormat.md)
+- [android.media.MediaFormat#COLOR_STANDARD_BT2020](MediaFormat.md) 
 
 ### METADATA_KEY_COLOR_TRANSFER
 
@@ -275,10 +275,10 @@ This key retrieves the color transfer, if available.
 
 **See Also**
 
-- [android.media.MediaFormat#COLOR_TRANSFER_LINEAR](../android/media/MediaFormat.md)
-- [android.media.MediaFormat#COLOR_TRANSFER_SDR_VIDEO](../android/media/MediaFormat.md)
-- [android.media.MediaFormat#COLOR_TRANSFER_ST2084](../android/media/MediaFormat.md)
-- [android.media.MediaFormat#COLOR_TRANSFER_HLG](../android/media/MediaFormat.md) 
+- [android.media.MediaFormat#COLOR_TRANSFER_LINEAR](MediaFormat.md)
+- [android.media.MediaFormat#COLOR_TRANSFER_SDR_VIDEO](MediaFormat.md)
+- [android.media.MediaFormat#COLOR_TRANSFER_ST2084](MediaFormat.md)
+- [android.media.MediaFormat#COLOR_TRANSFER_HLG](MediaFormat.md) 
 
 ### METADATA_KEY_COMPILATION
 
@@ -636,13 +636,13 @@ Added in [API level 10](https://developer.android.com/guide/topics/manifest/uses
 static val OPTION_CLOSEST: Int
 ```
 
-This option is used with [getFrameAtTime(long,int)](../android/media/MediaMetadataRetriever.md))to retrieve a frame (not necessarily a key frame) associated with a data source that is located closest to or at the given time. 
+This option is used with [getFrameAtTime(long,int)](MediaMetadataRetriever.md))to retrieve a frame (not necessarily a key frame) associated with a data source that is located closest to or at the given time. 
 
  Value: 3
 
 **See Also**
 
-- [#getFrameAtTime(long, int)](../android/media/MediaMetadataRetriever.md)) 
+- [#getFrameAtTime(long, int)](MediaMetadataRetriever.md)) 
 
 ### OPTION_CLOSEST_SYNC
 
@@ -652,13 +652,13 @@ Added in [API level 10](https://developer.android.com/guide/topics/manifest/uses
 static val OPTION_CLOSEST_SYNC: Int
 ```
 
-This option is used with [getFrameAtTime(long,int)](../android/media/MediaMetadataRetriever.md))to retrieve a sync (or key) frame associated with a data source that is located closest to (in time) or at the given time. 
+This option is used with [getFrameAtTime(long,int)](MediaMetadataRetriever.md))to retrieve a sync (or key) frame associated with a data source that is located closest to (in time) or at the given time. 
 
  Value: 2
 
 **See Also**
 
-- [#getFrameAtTime(long, int)](../android/media/MediaMetadataRetriever.md)) 
+- [#getFrameAtTime(long, int)](MediaMetadataRetriever.md)) 
 
 ### OPTION_NEXT_SYNC
 
@@ -668,13 +668,13 @@ Added in [API level 10](https://developer.android.com/guide/topics/manifest/uses
 static val OPTION_NEXT_SYNC: Int
 ```
 
-This option is used with [getFrameAtTime(long,int)](../android/media/MediaMetadataRetriever.md))to retrieve a sync (or key) frame associated with a data source that is located right after or at the given time. 
+This option is used with [getFrameAtTime(long,int)](MediaMetadataRetriever.md))to retrieve a sync (or key) frame associated with a data source that is located right after or at the given time. 
 
  Value: 1
 
 **See Also**
 
-- [#getFrameAtTime(long, int)](../android/media/MediaMetadataRetriever.md)) 
+- [#getFrameAtTime(long, int)](MediaMetadataRetriever.md)) 
 
 ### OPTION_PREVIOUS_SYNC
 
@@ -684,13 +684,13 @@ Added in [API level 10](https://developer.android.com/guide/topics/manifest/uses
 static val OPTION_PREVIOUS_SYNC: Int
 ```
 
-This option is used with [getFrameAtTime(long,int)](../android/media/MediaMetadataRetriever.md))to retrieve a sync (or key) frame associated with a data source that is located right before or at the given time. 
+This option is used with [getFrameAtTime(long,int)](MediaMetadataRetriever.md))to retrieve a sync (or key) frame associated with a data source that is located right before or at the given time. 
 
  Value: 0
 
 **See Also**
 
-- [#getFrameAtTime(long, int)](../android/media/MediaMetadataRetriever.md))
+- [#getFrameAtTime(long, int)](MediaMetadataRetriever.md))
 
 ## Public constructors
 
@@ -717,7 +717,7 @@ Releases any acquired resources. Call it when done with the object.
 | Exceptions ||
 |-----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `java.lang.Exception` | if this resource cannot be closed |
-| `java.io.IOException` | When an [IOException](../java/io/IOException.md) is thrown while closing a [MediaDataSource](../android/media/MediaDataSource.md) passed to [setDataSource(android.media.MediaDataSource)](../android/media/MediaMetadataRetriever.md)). This throws clause exists since API [android.os.Build.VERSION_CODES#TIRAMISU](../android/os/Build.VERSION_CODES.md), but this method can throw in earlier API versions where the exception is not declared. |
+| `java.io.IOException` | When an [IOException](../java.io/IOException.md) is thrown while closing a [MediaDataSource](MediaDataSource.md) passed to [setDataSource(android.media.MediaDataSource)](MediaMetadataRetriever.md)). This throws clause exists since API [android.os.Build.VERSION_CODES#TIRAMISU](../android/os/Build.VERSION_CODES.md), but this method can throw in earlier API versions where the exception is not declared. |
 
 ### extractMetadata
 
@@ -759,15 +759,15 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 open fun getFrameAtIndex(frameIndex: Int): Bitmap?
 ```
 
-This method is similar to [getFrameAtIndex(int,android.media.MediaMetadataRetriever.BitmapParams)](../android/media/MediaMetadataRetriever.md))except that the default for [BitmapParams](../android/media/MediaMetadataRetriever.BitmapParams.md) will be used.
+This method is similar to [getFrameAtIndex(int,android.media.MediaMetadataRetriever.BitmapParams)](MediaMetadataRetriever.md))except that the default for [BitmapParams](../android/media/MediaMetadataRetriever.BitmapParams.md) will be used.
 
 | Parameters ||
 |--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `frameIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):0-based index of the video frame. The frame index must be that of a valid frame. The total number of frames available for retrieval can be queried via the [METADATA_KEY_VIDEO_FRAME_COUNT](../android/media/MediaMetadataRetriever.md) key. |
+| `frameIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):0-based index of the video frame. The frame index must be that of a valid frame. The total number of frames available for retrieval can be queried via the [METADATA_KEY_VIDEO_FRAME_COUNT](MediaMetadataRetriever.md) key. |
 
 | Return ||
 |-----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| [Bitmap](../android/graphics/Bitmap.md)? | A Bitmap containing the requested video frame, or null if the retrieval fails. |
+| [Bitmap](../android.graphics/Bitmap.md)? | A Bitmap containing the requested video frame, or null if the retrieval fails. |
 
 | Exceptions ||
 |--------------------------------------|------------------------------------------------------------|
@@ -776,9 +776,9 @@ This method is similar to [getFrameAtIndex(int,android.media.MediaMetadataRetrie
 
 **See Also**
 
-- [#getFrameAtIndex(int, BitmapParams)](../android/media/MediaMetadataRetriever.md))
-- [#getFramesAtIndex(int, int, BitmapParams)](../android/media/MediaMetadataRetriever.md))
-- [#getFramesAtIndex(int, int)](../android/media/MediaMetadataRetriever.md)) 
+- [#getFrameAtIndex(int, BitmapParams)](MediaMetadataRetriever.md))
+- [#getFramesAtIndex(int, int, BitmapParams)](MediaMetadataRetriever.md))
+- [#getFramesAtIndex(int, int)](MediaMetadataRetriever.md)) 
 
 ### getFrameAtIndex
 
@@ -795,12 +795,12 @@ This method retrieves a video frame by its index. It should only be called after
 
 | Parameters ||
 |--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `frameIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):0-based index of the video frame. The frame index must be that of a valid frame. The total number of frames available for retrieval can be queried via the [METADATA_KEY_VIDEO_FRAME_COUNT](../android/media/MediaMetadataRetriever.md) key. |
+| `frameIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):0-based index of the video frame. The frame index must be that of a valid frame. The total number of frames available for retrieval can be queried via the [METADATA_KEY_VIDEO_FRAME_COUNT](MediaMetadataRetriever.md) key. |
 | `params` | [MediaMetadataRetriever.BitmapParams](../android/media/MediaMetadataRetriever.BitmapParams.md):BitmapParams that controls the returned bitmap config (such as pixel formats). This value cannot be`null`. |
 
 | Return ||
 |-----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| [Bitmap](../android/graphics/Bitmap.md)? | A Bitmap containing the requested video frame, or null if the retrieval fails. |
+| [Bitmap](../android.graphics/Bitmap.md)? | A Bitmap containing the requested video frame, or null if the retrieval fails. |
 
 | Exceptions ||
 |--------------------------------------|------------------------------------------------------------|
@@ -809,9 +809,9 @@ This method retrieves a video frame by its index. It should only be called after
 
 **See Also**
 
-- [#getFrameAtIndex(int)](../android/media/MediaMetadataRetriever.md))
-- [#getFramesAtIndex(int, int, BitmapParams)](../android/media/MediaMetadataRetriever.md))
-- [#getFramesAtIndex(int, int)](../android/media/MediaMetadataRetriever.md)) 
+- [#getFrameAtIndex(int)](MediaMetadataRetriever.md))
+- [#getFramesAtIndex(int, int, BitmapParams)](MediaMetadataRetriever.md))
+- [#getFramesAtIndex(int, int)](MediaMetadataRetriever.md)) 
 
 ### getFrameAtTime
 
@@ -821,18 +821,18 @@ Added in [API level 10](https://developer.android.com/guide/topics/manifest/uses
 open fun getFrameAtTime(): Bitmap?
 ```
 
-Call this method after setDataSource(). This method finds a representative frame at any time position if possible, and returns it as a bitmap. Call this method if one does not care about where the frame is located; otherwise, please call [getFrameAtTime(long)](../android/media/MediaMetadataRetriever.md))or [getFrameAtTime(long,int)](../android/media/MediaMetadataRetriever.md))
+Call this method after setDataSource(). This method finds a representative frame at any time position if possible, and returns it as a bitmap. Call this method if one does not care about where the frame is located; otherwise, please call [getFrameAtTime(long)](MediaMetadataRetriever.md))or [getFrameAtTime(long,int)](MediaMetadataRetriever.md))
 
 If you don't need a full-resolution frame (for example, because you need a thumbnail image), use #getScaledFrameAtTime instead of this method.
 
 | Return ||
 |-----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| [Bitmap](../android/graphics/Bitmap.md)? | A Bitmap containing a representative video frame, which can be null, if such a frame cannot be retrieved. |
+| [Bitmap](../android.graphics/Bitmap.md)? | A Bitmap containing a representative video frame, which can be null, if such a frame cannot be retrieved. |
 
 **See Also**
 
-- [#getFrameAtTime(long)](../android/media/MediaMetadataRetriever.md))
-- [#getFrameAtTime(long, int)](../android/media/MediaMetadataRetriever.md)) 
+- [#getFrameAtTime(long)](MediaMetadataRetriever.md))
+- [#getFrameAtTime(long, int)](MediaMetadataRetriever.md)) 
 
 ### getFrameAtTime
 
@@ -842,7 +842,7 @@ Added in [API level 10](https://developer.android.com/guide/topics/manifest/uses
 open fun getFrameAtTime(timeUs: Long): Bitmap?
 ```
 
-Call this method after setDataSource(). This method finds a representative frame close to the given time position if possible, and returns it as a bitmap. Call this method if one does not care how the frame is found as long as it is close to the given time; otherwise, please call [getFrameAtTime(long,int)](../android/media/MediaMetadataRetriever.md)).
+Call this method after setDataSource(). This method finds a representative frame close to the given time position if possible, and returns it as a bitmap. Call this method if one does not care how the frame is found as long as it is close to the given time; otherwise, please call [getFrameAtTime(long,int)](MediaMetadataRetriever.md)).
 
 If you don't need a full-resolution frame (for example, because you need a thumbnail image), use #getScaledFrameAtTime instead of this method.
 
@@ -852,11 +852,11 @@ If you don't need a full-resolution frame (for example, because you need a thumb
 
 | Return ||
 |-----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| [Bitmap](../android/graphics/Bitmap.md)? | A Bitmap of size dst_widthxdst_height containing a representative video frame, which can be null, if such a frame cannot be retrieved. |
+| [Bitmap](../android.graphics/Bitmap.md)? | A Bitmap of size dst_widthxdst_height containing a representative video frame, which can be null, if such a frame cannot be retrieved. |
 
 **See Also**
 
-- [#getFrameAtTime(long, int)](../android/media/MediaMetadataRetriever.md)) 
+- [#getFrameAtTime(long, int)](MediaMetadataRetriever.md)) 
 
 ### getFrameAtTime
 
@@ -869,20 +869,20 @@ open fun getFrameAtTime(
 ): Bitmap?
 ```
 
-This method is similar to [getFrameAtTime(long,int,android.media.MediaMetadataRetriever.BitmapParams)](../android/media/MediaMetadataRetriever.md))except that the device will choose the actual [Bitmap.Config](../android/graphics/Bitmap.Config.md) to use.
+This method is similar to [getFrameAtTime(long,int,android.media.MediaMetadataRetriever.BitmapParams)](MediaMetadataRetriever.md))except that the device will choose the actual [Bitmap.Config](../android/graphics/Bitmap.Config.md) to use.
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `timeUs` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The time position where the frame will be retrieved. When retrieving the frame at the given time position, there is no guarantee that the data source has a frame located at the position. When this happens, a frame nearby will be returned. If timeUs is negative, time position and option will ignored, and any frame that the implementation considers as representative may be returned. |
-| `option` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):a hint on how the frame is found. Use [OPTION_PREVIOUS_SYNC](../android/media/MediaMetadataRetriever.md) if one wants to retrieve a sync frame that has a timestamp earlier than or the same as timeUs. Use [OPTION_NEXT_SYNC](../android/media/MediaMetadataRetriever.md) if one wants to retrieve a sync frame that has a timestamp later than or the same as timeUs. Use [OPTION_CLOSEST_SYNC](../android/media/MediaMetadataRetriever.md) if one wants to retrieve a sync frame that has a timestamp closest to or the same as timeUs. Use [OPTION_CLOSEST](../android/media/MediaMetadataRetriever.md) if one wants to retrieve a frame that may or may not be a sync frame but is closest to or the same as timeUs. [OPTION_CLOSEST](../android/media/MediaMetadataRetriever.md) often has larger performance overhead compared to the other options if there is no sync frame located at timeUs. Value is [android.media.MediaMetadataRetriever#OPTION_PREVIOUS_SYNC](../android/media/MediaMetadataRetriever.md), [android.media.MediaMetadataRetriever#OPTION_NEXT_SYNC](../android/media/MediaMetadataRetriever.md), [android.media.MediaMetadataRetriever#OPTION_CLOSEST_SYNC](../android/media/MediaMetadataRetriever.md), or [android.media.MediaMetadataRetriever#OPTION_CLOSEST](../android/media/MediaMetadataRetriever.md) |
+| `option` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):a hint on how the frame is found. Use [OPTION_PREVIOUS_SYNC](MediaMetadataRetriever.md) if one wants to retrieve a sync frame that has a timestamp earlier than or the same as timeUs. Use [OPTION_NEXT_SYNC](MediaMetadataRetriever.md) if one wants to retrieve a sync frame that has a timestamp later than or the same as timeUs. Use [OPTION_CLOSEST_SYNC](MediaMetadataRetriever.md) if one wants to retrieve a sync frame that has a timestamp closest to or the same as timeUs. Use [OPTION_CLOSEST](MediaMetadataRetriever.md) if one wants to retrieve a frame that may or may not be a sync frame but is closest to or the same as timeUs. [OPTION_CLOSEST](MediaMetadataRetriever.md) often has larger performance overhead compared to the other options if there is no sync frame located at timeUs. Value is [android.media.MediaMetadataRetriever#OPTION_PREVIOUS_SYNC](MediaMetadataRetriever.md), [android.media.MediaMetadataRetriever#OPTION_NEXT_SYNC](MediaMetadataRetriever.md), [android.media.MediaMetadataRetriever#OPTION_CLOSEST_SYNC](MediaMetadataRetriever.md), or [android.media.MediaMetadataRetriever#OPTION_CLOSEST](MediaMetadataRetriever.md) |
 
 | Return ||
 |-----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Bitmap](../android/graphics/Bitmap.md)? | A Bitmap containing a representative video frame, which can be null, if such a frame cannot be retrieved. [Bitmap.getConfig()](../android/graphics/Bitmap.md))can be used to query the actual [Bitmap.Config](../android/graphics/Bitmap.Config.md). |
+| [Bitmap](../android.graphics/Bitmap.md)? | A Bitmap containing a representative video frame, which can be null, if such a frame cannot be retrieved. [Bitmap.getConfig()](../android.graphics/Bitmap.md))can be used to query the actual [Bitmap.Config](../android/graphics/Bitmap.Config.md). |
 
 **See Also**
 
-- [#getFrameAtTime(long, int, BitmapParams)](../android/media/MediaMetadataRetriever.md)) 
+- [#getFrameAtTime(long, int, BitmapParams)](MediaMetadataRetriever.md)) 
 
 ### getFrameAtTime
 
@@ -903,17 +903,17 @@ If you don't need a full-resolution frame (for example, because you need a thumb
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `timeUs` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The time position where the frame will be retrieved. When retrieving the frame at the given time position, there is no guarantee that the data source has a frame located at the position. When this happens, a frame nearby will be returned. If timeUs is negative, time position and option will ignored, and any frame that the implementation considers as representative may be returned. |
-| `option` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):a hint on how the frame is found. Use [OPTION_PREVIOUS_SYNC](../android/media/MediaMetadataRetriever.md) if one wants to retrieve a sync frame that has a timestamp earlier than or the same as timeUs. Use [OPTION_NEXT_SYNC](../android/media/MediaMetadataRetriever.md) if one wants to retrieve a sync frame that has a timestamp later than or the same as timeUs. Use [OPTION_CLOSEST_SYNC](../android/media/MediaMetadataRetriever.md) if one wants to retrieve a sync frame that has a timestamp closest to or the same as timeUs. Use [OPTION_CLOSEST](../android/media/MediaMetadataRetriever.md) if one wants to retrieve a frame that may or may not be a sync frame but is closest to or the same as timeUs. [OPTION_CLOSEST](../android/media/MediaMetadataRetriever.md) often has larger performance overhead compared to the other options if there is no sync frame located at timeUs. Value is [android.media.MediaMetadataRetriever#OPTION_PREVIOUS_SYNC](../android/media/MediaMetadataRetriever.md), [android.media.MediaMetadataRetriever#OPTION_NEXT_SYNC](../android/media/MediaMetadataRetriever.md), [android.media.MediaMetadataRetriever#OPTION_CLOSEST_SYNC](../android/media/MediaMetadataRetriever.md), or [android.media.MediaMetadataRetriever#OPTION_CLOSEST](../android/media/MediaMetadataRetriever.md) |
+| `option` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):a hint on how the frame is found. Use [OPTION_PREVIOUS_SYNC](MediaMetadataRetriever.md) if one wants to retrieve a sync frame that has a timestamp earlier than or the same as timeUs. Use [OPTION_NEXT_SYNC](MediaMetadataRetriever.md) if one wants to retrieve a sync frame that has a timestamp later than or the same as timeUs. Use [OPTION_CLOSEST_SYNC](MediaMetadataRetriever.md) if one wants to retrieve a sync frame that has a timestamp closest to or the same as timeUs. Use [OPTION_CLOSEST](MediaMetadataRetriever.md) if one wants to retrieve a frame that may or may not be a sync frame but is closest to or the same as timeUs. [OPTION_CLOSEST](MediaMetadataRetriever.md) often has larger performance overhead compared to the other options if there is no sync frame located at timeUs. Value is [android.media.MediaMetadataRetriever#OPTION_PREVIOUS_SYNC](MediaMetadataRetriever.md), [android.media.MediaMetadataRetriever#OPTION_NEXT_SYNC](MediaMetadataRetriever.md), [android.media.MediaMetadataRetriever#OPTION_CLOSEST_SYNC](MediaMetadataRetriever.md), or [android.media.MediaMetadataRetriever#OPTION_CLOSEST](MediaMetadataRetriever.md) |
 | `params` | [MediaMetadataRetriever.BitmapParams](../android/media/MediaMetadataRetriever.BitmapParams.md):BitmapParams that controls the returned bitmap config (such as pixel formats). This value cannot be`null`. |
 | --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| [Bitmap](../android/graphics/Bitmap.md)? | A Bitmap containing a representative video frame, which can be null, if such a frame cannot be retrieved. |
+| [Bitmap](../android.graphics/Bitmap.md)? | A Bitmap containing a representative video frame, which can be null, if such a frame cannot be retrieved. |
 
 **See Also**
 
-- [#getFrameAtTime(long, int)](../android/media/MediaMetadataRetriever.md)) 
+- [#getFrameAtTime(long, int)](MediaMetadataRetriever.md)) 
 
 ### getFramesAtIndex
 
@@ -926,16 +926,16 @@ open fun getFramesAtIndex(
 ): MutableList<Bitmap!>
 ```
 
-This method is similar to [getFramesAtIndex(int,int,android.media.MediaMetadataRetriever.BitmapParams)](../android/media/MediaMetadataRetriever.md))except that the default for [BitmapParams](../android/media/MediaMetadataRetriever.BitmapParams.md) will be used.
+This method is similar to [getFramesAtIndex(int,int,android.media.MediaMetadataRetriever.BitmapParams)](MediaMetadataRetriever.md))except that the default for [BitmapParams](../android/media/MediaMetadataRetriever.BitmapParams.md) will be used.
 
 | Parameters ||
 |--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `frameIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):0-based index of the first video frame to retrieve. The frame index must be that of a valid frame. The total number of frames available for retrieval can be queried via the [METADATA_KEY_VIDEO_FRAME_COUNT](../android/media/MediaMetadataRetriever.md) key. |
+| `frameIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):0-based index of the first video frame to retrieve. The frame index must be that of a valid frame. The total number of frames available for retrieval can be queried via the [METADATA_KEY_VIDEO_FRAME_COUNT](MediaMetadataRetriever.md) key. |
 | `numFrames` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):number of consecutive video frames to retrieve. Must be a positive value. The stream must contain at least numFrames frames starting at frameIndex. |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Bitmap](../android/graphics/Bitmap.md)!> | An list of Bitmaps containing the requested video frames. The returned array could contain less frames than requested if the retrieval fails. This value cannot be`null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Bitmap](../android.graphics/Bitmap.md)!> | An list of Bitmaps containing the requested video frames. The returned array could contain less frames than requested if the retrieval fails. This value cannot be`null`. |
 
 | Exceptions ||
 |--------------------------------------|---------------------------------------------------------------------------------------------------------------------|
@@ -944,9 +944,9 @@ This method is similar to [getFramesAtIndex(int,int,android.media.MediaMetadataR
 
 **See Also**
 
-- [#getFrameAtIndex(int, BitmapParams)](../android/media/MediaMetadataRetriever.md))
-- [#getFrameAtIndex(int)](../android/media/MediaMetadataRetriever.md))
-- [#getFramesAtIndex(int, int, BitmapParams)](../android/media/MediaMetadataRetriever.md)) 
+- [#getFrameAtIndex(int, BitmapParams)](MediaMetadataRetriever.md))
+- [#getFrameAtIndex(int)](MediaMetadataRetriever.md))
+- [#getFramesAtIndex(int, int, BitmapParams)](MediaMetadataRetriever.md)) 
 
 ### getFramesAtIndex
 
@@ -960,18 +960,18 @@ open fun getFramesAtIndex(
 ): MutableList<Bitmap!>
 ```
 
-This method retrieves a consecutive set of video frames starting at the specified index. It should only be called after #setDataSource. If the caller intends to retrieve more than one consecutive video frames, this method is preferred over [getFrameAtIndex(int,android.media.MediaMetadataRetriever.BitmapParams)](../android/media/MediaMetadataRetriever.md))for efficiency. After the bitmaps are returned, you can query the actual parameters that were used to create the bitmaps from the`BitmapParams`argument, for instance to query the bitmap config used for the bitmaps with [BitmapParams.getActualConfig](../android/media/MediaMetadataRetriever.BitmapParams.md)).
+This method retrieves a consecutive set of video frames starting at the specified index. It should only be called after #setDataSource. If the caller intends to retrieve more than one consecutive video frames, this method is preferred over [getFrameAtIndex(int,android.media.MediaMetadataRetriever.BitmapParams)](MediaMetadataRetriever.md))for efficiency. After the bitmaps are returned, you can query the actual parameters that were used to create the bitmaps from the`BitmapParams`argument, for instance to query the bitmap config used for the bitmaps with [BitmapParams.getActualConfig](../android/media/MediaMetadataRetriever.BitmapParams.md)).
 
 | Parameters ||
 |--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `frameIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):0-based index of the first video frame to retrieve. The frame index must be that of a valid frame. The total number of frames available for retrieval can be queried via the [METADATA_KEY_VIDEO_FRAME_COUNT](../android/media/MediaMetadataRetriever.md) key. |
+| `frameIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):0-based index of the first video frame to retrieve. The frame index must be that of a valid frame. The total number of frames available for retrieval can be queried via the [METADATA_KEY_VIDEO_FRAME_COUNT](MediaMetadataRetriever.md) key. |
 | `numFrames` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):number of consecutive video frames to retrieve. Must be a positive value. The stream must contain at least numFrames frames starting at frameIndex. |
 | `params` | [MediaMetadataRetriever.BitmapParams](../android/media/MediaMetadataRetriever.BitmapParams.md):BitmapParams that controls the returned bitmap config (such as pixel formats). This value cannot be`null`. |
 | --- | --- |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Bitmap](../android/graphics/Bitmap.md)!> | An list of Bitmaps containing the requested video frames. The returned array could contain less frames than requested if the retrieval fails. This value cannot be`null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Bitmap](../android.graphics/Bitmap.md)!> | An list of Bitmaps containing the requested video frames. The returned array could contain less frames than requested if the retrieval fails. This value cannot be`null`. |
 
 | Exceptions ||
 |--------------------------------------|---------------------------------------------------------------------------------------------------------------------|
@@ -980,9 +980,9 @@ This method retrieves a consecutive set of video frames starting at the specifie
 
 **See Also**
 
-- [#getFrameAtIndex(int, BitmapParams)](../android/media/MediaMetadataRetriever.md))
-- [#getFrameAtIndex(int)](../android/media/MediaMetadataRetriever.md))
-- [#getFramesAtIndex(int, int)](../android/media/MediaMetadataRetriever.md)) 
+- [#getFrameAtIndex(int, BitmapParams)](MediaMetadataRetriever.md))
+- [#getFrameAtIndex(int)](MediaMetadataRetriever.md))
+- [#getFramesAtIndex(int, int)](MediaMetadataRetriever.md)) 
 
 ### getImageAtIndex
 
@@ -992,7 +992,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 open fun getImageAtIndex(imageIndex: Int): Bitmap?
 ```
 
-This method is similar to [getImageAtIndex(int,android.media.MediaMetadataRetriever.BitmapParams)](../android/media/MediaMetadataRetriever.md))except that the default for [BitmapParams](../android/media/MediaMetadataRetriever.BitmapParams.md) will be used.
+This method is similar to [getImageAtIndex(int,android.media.MediaMetadataRetriever.BitmapParams)](MediaMetadataRetriever.md))except that the default for [BitmapParams](../android/media/MediaMetadataRetriever.BitmapParams.md) will be used.
 
 | Parameters ||
 |--------------|--------------------------------------------------------------------------------------------------------|
@@ -1000,7 +1000,7 @@ This method is similar to [getImageAtIndex(int,android.media.MediaMetadataRetrie
 
 | Return ||
 |-----------------------------------------------------------------------------------------|----------------------------------------------------------------------|
-| [Bitmap](../android/graphics/Bitmap.md)? | the requested still image, or null if the image cannot be retrieved. |
+| [Bitmap](../android.graphics/Bitmap.md)? | the requested still image, or null if the image cannot be retrieved. |
 
 | Exceptions ||
 |--------------------------------------|------------------------------------------------|
@@ -1009,8 +1009,8 @@ This method is similar to [getImageAtIndex(int,android.media.MediaMetadataRetrie
 
 **See Also**
 
-- [#getImageAtIndex(int, BitmapParams)](../android/media/MediaMetadataRetriever.md))
-- [#getPrimaryImage(BitmapParams)](../android/media/MediaMetadataRetriever.md))
+- [#getImageAtIndex(int, BitmapParams)](MediaMetadataRetriever.md))
+- [#getPrimaryImage(BitmapParams)](MediaMetadataRetriever.md))
 - <https://developer.android.com/reference/kotlin/android/media/MediaMetadataRetriever#getPrimaryImage()> 
 
 ### getImageAtIndex
@@ -1033,7 +1033,7 @@ This method retrieves a still image by its index. It should only be called after
 
 | Return ||
 |-----------------------------------------------------------------------------------------|----------------------------------------------------------------------|
-| [Bitmap](../android/graphics/Bitmap.md)? | the requested still image, or null if the image cannot be retrieved. |
+| [Bitmap](../android.graphics/Bitmap.md)? | the requested still image, or null if the image cannot be retrieved. |
 
 | Exceptions ||
 |--------------------------------------|------------------------------------------------|
@@ -1042,8 +1042,8 @@ This method retrieves a still image by its index. It should only be called after
 
 **See Also**
 
-- [#getImageAtIndex(int)](../android/media/MediaMetadataRetriever.md))
-- [#getPrimaryImage(BitmapParams)](../android/media/MediaMetadataRetriever.md))
+- [#getImageAtIndex(int)](MediaMetadataRetriever.md))
+- [#getPrimaryImage(BitmapParams)](MediaMetadataRetriever.md))
 - <https://developer.android.com/reference/kotlin/android/media/MediaMetadataRetriever#getPrimaryImage()> 
 
 ### getPrimaryImage
@@ -1054,11 +1054,11 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 open fun getPrimaryImage(): Bitmap?
 ```
 
-This method is similar to [getPrimaryImage(android.media.MediaMetadataRetriever.BitmapParams)](../android/media/MediaMetadataRetriever.md))except that the default for [BitmapParams](../android/media/MediaMetadataRetriever.BitmapParams.md) will be used.
+This method is similar to [getPrimaryImage(android.media.MediaMetadataRetriever.BitmapParams)](MediaMetadataRetriever.md))except that the default for [BitmapParams](../android/media/MediaMetadataRetriever.BitmapParams.md) will be used.
 
 | Return ||
 |-----------------------------------------------------------------------------------------|-------------------------------------------------------|
-| [Bitmap](../android/graphics/Bitmap.md)? | the primary image, or null if it cannot be retrieved. |
+| [Bitmap](../android.graphics/Bitmap.md)? | the primary image, or null if it cannot be retrieved. |
 
 | Exceptions ||
 |-----------------------------------|------------------------------------------------|
@@ -1066,9 +1066,9 @@ This method is similar to [getPrimaryImage(android.media.MediaMetadataRetriever.
 
 **See Also**
 
-- [#getImageAtIndex(int, BitmapParams)](../android/media/MediaMetadataRetriever.md))
-- [#getImageAtIndex(int)](../android/media/MediaMetadataRetriever.md))
-- [#getPrimaryImage(BitmapParams)](../android/media/MediaMetadataRetriever.md)) 
+- [#getImageAtIndex(int, BitmapParams)](MediaMetadataRetriever.md))
+- [#getImageAtIndex(int)](MediaMetadataRetriever.md))
+- [#getPrimaryImage(BitmapParams)](MediaMetadataRetriever.md)) 
 
 ### getPrimaryImage
 
@@ -1086,7 +1086,7 @@ This method retrieves the primary image of the media content. It should only be 
 
 | Return ||
 |-----------------------------------------------------------------------------------------|-------------------------------------------------------|
-| [Bitmap](../android/graphics/Bitmap.md)? | the primary image, or null if it cannot be retrieved. |
+| [Bitmap](../android.graphics/Bitmap.md)? | the primary image, or null if it cannot be retrieved. |
 
 | Exceptions ||
 |-----------------------------------|------------------------------------------------|
@@ -1094,8 +1094,8 @@ This method retrieves the primary image of the media content. It should only be 
 
 **See Also**
 
-- [#getImageAtIndex(int, BitmapParams)](../android/media/MediaMetadataRetriever.md))
-- [#getImageAtIndex(int)](../android/media/MediaMetadataRetriever.md))
+- [#getImageAtIndex(int, BitmapParams)](MediaMetadataRetriever.md))
+- [#getImageAtIndex(int)](MediaMetadataRetriever.md))
 - <https://developer.android.com/reference/kotlin/android/media/MediaMetadataRetriever#getPrimaryImage()> 
 
 ### getScaledFrameAtTime
@@ -1111,19 +1111,19 @@ open fun getScaledFrameAtTime(
 ): Bitmap?
 ```
 
-This method is similar to [getScaledFrameAtTime(long,int,int,int,android.media.MediaMetadataRetriever.BitmapParams)](../android/media/MediaMetadataRetriever.md))except that the device will choose the actual [Bitmap.Config](../android/graphics/Bitmap.Config.md) to use.
+This method is similar to [getScaledFrameAtTime(long,int,int,int,android.media.MediaMetadataRetriever.BitmapParams)](MediaMetadataRetriever.md))except that the device will choose the actual [Bitmap.Config](../android/graphics/Bitmap.Config.md) to use.
 
 | Parameters ||
 |-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `timeUs` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The time position in microseconds where the frame will be retrieved. When retrieving the frame at the given time position, there is no guarantee that the data source has a frame located at the position. When this happens, a frame nearby will be returned. If timeUs is negative, time position and option will ignored, and any frame that the implementation considers as representative may be returned. |
-| `option` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):a hint on how the frame is found. Use [OPTION_PREVIOUS_SYNC](../android/media/MediaMetadataRetriever.md) if one wants to retrieve a sync frame that has a timestamp earlier than or the same as timeUs. Use [OPTION_NEXT_SYNC](../android/media/MediaMetadataRetriever.md) if one wants to retrieve a sync frame that has a timestamp later than or the same as timeUs. Use [OPTION_CLOSEST_SYNC](../android/media/MediaMetadataRetriever.md) if one wants to retrieve a sync frame that has a timestamp closest to or the same as timeUs. Use [OPTION_CLOSEST](../android/media/MediaMetadataRetriever.md) if one wants to retrieve a frame that may or may not be a sync frame but is closest to or the same as timeUs. [OPTION_CLOSEST](../android/media/MediaMetadataRetriever.md) often has larger performance overhead compared to the other options if there is no sync frame located at timeUs. Value is [android.media.MediaMetadataRetriever#OPTION_PREVIOUS_SYNC](../android/media/MediaMetadataRetriever.md), [android.media.MediaMetadataRetriever#OPTION_NEXT_SYNC](../android/media/MediaMetadataRetriever.md), [android.media.MediaMetadataRetriever#OPTION_CLOSEST_SYNC](../android/media/MediaMetadataRetriever.md), or [android.media.MediaMetadataRetriever#OPTION_CLOSEST](../android/media/MediaMetadataRetriever.md) |
+| `option` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):a hint on how the frame is found. Use [OPTION_PREVIOUS_SYNC](MediaMetadataRetriever.md) if one wants to retrieve a sync frame that has a timestamp earlier than or the same as timeUs. Use [OPTION_NEXT_SYNC](MediaMetadataRetriever.md) if one wants to retrieve a sync frame that has a timestamp later than or the same as timeUs. Use [OPTION_CLOSEST_SYNC](MediaMetadataRetriever.md) if one wants to retrieve a sync frame that has a timestamp closest to or the same as timeUs. Use [OPTION_CLOSEST](MediaMetadataRetriever.md) if one wants to retrieve a frame that may or may not be a sync frame but is closest to or the same as timeUs. [OPTION_CLOSEST](MediaMetadataRetriever.md) often has larger performance overhead compared to the other options if there is no sync frame located at timeUs. Value is [android.media.MediaMetadataRetriever#OPTION_PREVIOUS_SYNC](MediaMetadataRetriever.md), [android.media.MediaMetadataRetriever#OPTION_NEXT_SYNC](MediaMetadataRetriever.md), [android.media.MediaMetadataRetriever#OPTION_CLOSEST_SYNC](MediaMetadataRetriever.md), or [android.media.MediaMetadataRetriever#OPTION_CLOSEST](MediaMetadataRetriever.md) |
 | `dstWidth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):expected output bitmap width Value is 1 or greater |
 | --- | --- |
 | `dstHeight` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):expected output bitmap height Value is 1 or greater |
 
 | Return ||
 |-----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Bitmap](../android/graphics/Bitmap.md)? | A Bitmap containing a representative video frame, which can be null, if such a frame cannot be retrieved. [Bitmap.getConfig()](../android/graphics/Bitmap.md))can be used to query the actual [Bitmap.Config](../android/graphics/Bitmap.Config.md). |
+| [Bitmap](../android.graphics/Bitmap.md)? | A Bitmap containing a representative video frame, which can be null, if such a frame cannot be retrieved. [Bitmap.getConfig()](../android.graphics/Bitmap.md))can be used to query the actual [Bitmap.Config](../android/graphics/Bitmap.Config.md). |
 
 | Exceptions ||
 |--------------------------------------|----------------------------------------------------------------------------|
@@ -1131,7 +1131,7 @@ This method is similar to [getScaledFrameAtTime(long,int,int,int,android.media.M
 
 **See Also**
 
-- [#getScaledFrameAtTime(long, int, int, int, BitmapParams)](../android/media/MediaMetadataRetriever.md)) 
+- [#getScaledFrameAtTime(long, int, int, int, BitmapParams)](MediaMetadataRetriever.md)) 
 
 ### getScaledFrameAtTime
 
@@ -1152,7 +1152,7 @@ Retrieve a video frame near a given timestamp scaled to a desired size. Call thi
 | Parameters ||
 |-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `timeUs` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The time position in microseconds where the frame will be retrieved. When retrieving the frame at the given time position, there is no guarantee that the data source has a frame located at the position. When this happens, a frame nearby will be returned. If timeUs is negative, time position and option will ignored, and any frame that the implementation considers as representative may be returned. |
-| `option` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):a hint on how the frame is found. Use [OPTION_PREVIOUS_SYNC](../android/media/MediaMetadataRetriever.md) if one wants to retrieve a sync frame that has a timestamp earlier than or the same as timeUs. Use [OPTION_NEXT_SYNC](../android/media/MediaMetadataRetriever.md) if one wants to retrieve a sync frame that has a timestamp later than or the same as timeUs. Use [OPTION_CLOSEST_SYNC](../android/media/MediaMetadataRetriever.md) if one wants to retrieve a sync frame that has a timestamp closest to or the same as timeUs. Use [OPTION_CLOSEST](../android/media/MediaMetadataRetriever.md) if one wants to retrieve a frame that may or may not be a sync frame but is closest to or the same as timeUs. [OPTION_CLOSEST](../android/media/MediaMetadataRetriever.md) often has larger performance overhead compared to the other options if there is no sync frame located at timeUs. Value is [android.media.MediaMetadataRetriever#OPTION_PREVIOUS_SYNC](../android/media/MediaMetadataRetriever.md), [android.media.MediaMetadataRetriever#OPTION_NEXT_SYNC](../android/media/MediaMetadataRetriever.md), [android.media.MediaMetadataRetriever#OPTION_CLOSEST_SYNC](../android/media/MediaMetadataRetriever.md), or [android.media.MediaMetadataRetriever#OPTION_CLOSEST](../android/media/MediaMetadataRetriever.md) |
+| `option` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):a hint on how the frame is found. Use [OPTION_PREVIOUS_SYNC](MediaMetadataRetriever.md) if one wants to retrieve a sync frame that has a timestamp earlier than or the same as timeUs. Use [OPTION_NEXT_SYNC](MediaMetadataRetriever.md) if one wants to retrieve a sync frame that has a timestamp later than or the same as timeUs. Use [OPTION_CLOSEST_SYNC](MediaMetadataRetriever.md) if one wants to retrieve a sync frame that has a timestamp closest to or the same as timeUs. Use [OPTION_CLOSEST](MediaMetadataRetriever.md) if one wants to retrieve a frame that may or may not be a sync frame but is closest to or the same as timeUs. [OPTION_CLOSEST](MediaMetadataRetriever.md) often has larger performance overhead compared to the other options if there is no sync frame located at timeUs. Value is [android.media.MediaMetadataRetriever#OPTION_PREVIOUS_SYNC](MediaMetadataRetriever.md), [android.media.MediaMetadataRetriever#OPTION_NEXT_SYNC](MediaMetadataRetriever.md), [android.media.MediaMetadataRetriever#OPTION_CLOSEST_SYNC](MediaMetadataRetriever.md), or [android.media.MediaMetadataRetriever#OPTION_CLOSEST](MediaMetadataRetriever.md) |
 | `dstWidth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):expected output bitmap width Value is 1 or greater |
 | --- | --- |
 | `dstHeight` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):expected output bitmap height Value is 1 or greater |
@@ -1160,7 +1160,7 @@ Retrieve a video frame near a given timestamp scaled to a desired size. Call thi
 
 | Return ||
 |-----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Bitmap](../android/graphics/Bitmap.md)? | A Bitmap of size not larger than dstWidth by dstHeight containing a scaled video frame, which can be null, if such a frame cannot be retrieved. |
+| [Bitmap](../android.graphics/Bitmap.md)? | A Bitmap of size not larger than dstWidth by dstHeight containing a scaled video frame, which can be null, if such a frame cannot be retrieved. |
 
 | Exceptions ||
 |--------------------------------------|----------------------------------------------------------------------------|
@@ -1168,7 +1168,7 @@ Retrieve a video frame near a given timestamp scaled to a desired size. Call thi
 
 **See Also**
 
-- [#getScaledFrameAtTime(long, int, int, int)](../android/media/MediaMetadataRetriever.md)) 
+- [#getScaledFrameAtTime(long, int, int, int)](MediaMetadataRetriever.md)) 
 
 ### release
 
@@ -1182,7 +1182,7 @@ Releases any acquired resources. Call it when done with the object.
 
 | Exceptions ||
 |-----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.io.IOException` | When an [IOException](../java/io/IOException.md) is thrown while closing a [MediaDataSource](../android/media/MediaDataSource.md) passed to [setDataSource(android.media.MediaDataSource)](../android/media/MediaMetadataRetriever.md)). This throws clause exists since API [android.os.Build.VERSION_CODES#TIRAMISU](../android/os/Build.VERSION_CODES.md), but this method can throw in earlier API versions where the exception is not declared. |
+| `java.io.IOException` | When an [IOException](../java.io/IOException.md) is thrown while closing a [MediaDataSource](MediaDataSource.md) passed to [setDataSource(android.media.MediaDataSource)](MediaMetadataRetriever.md)). This throws clause exists since API [android.os.Build.VERSION_CODES#TIRAMISU](../android/os/Build.VERSION_CODES.md), but this method can throw in earlier API versions where the exception is not declared. |
 
 ### setDataSource
 
@@ -1199,8 +1199,8 @@ Sets the data source as a content Uri. Call this method before the rest of the m
 
 | Parameters ||
 |-----------|------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](../android/content/Context.md)!:the Context to use when resolving the Uri |
-| `uri` | [Uri](../android/net/Uri.md)!:the Content URI of the data you want to play |
+| `context` | [Context](../android.content/Context.md)!:the Context to use when resolving the Uri |
+| `uri` | [Uri](../android.net/Uri.md)!:the Content URI of the data you want to play |
 
 | Exceptions ||
 |--------------------------------------|------------------------------------------------------|
@@ -1219,7 +1219,7 @@ Sets the data source (MediaDataSource) to use.
 
 | Parameters ||
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dataSource` | [MediaDataSource](../android/media/MediaDataSource.md)!:the MediaDataSource for the media you want to play |
+| `dataSource` | [MediaDataSource](MediaDataSource.md)!:the MediaDataSource for the media you want to play |
 
 ### setDataSource
 
@@ -1233,7 +1233,7 @@ Sets the data source (FileDescriptor) to use. It is the caller's responsibility 
 
 | Parameters ||
 |------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| `fd` | [FileDescriptor](../java/io/FileDescriptor.md)!:the FileDescriptor for the file you want to play |
+| `fd` | [FileDescriptor](../java.io/FileDescriptor.md)!:the FileDescriptor for the file you want to play |
 
 | Exceptions ||
 |--------------------------------------|----------------------------------|
@@ -1255,7 +1255,7 @@ Sets the data source (FileDescriptor) to use. It is the caller's responsibility 
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `fd` | [FileDescriptor](../java/io/FileDescriptor.md)!:the FileDescriptor for the file you want to play |
+| `fd` | [FileDescriptor](../java.io/FileDescriptor.md)!:the FileDescriptor for the file you want to play |
 | `offset` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the offset into the file where the data to be played starts, in bytes. It must be non-negative |
 | `length` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the length in bytes of the data to be played. It must be non-negative. |
 | --- | --- |

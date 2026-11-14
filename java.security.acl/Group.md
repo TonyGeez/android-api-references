@@ -9,7 +9,7 @@ Deprecated in [API level 33](https://developer.android.com/guide/topics/manifest
 interface Group : Principal
 ```
 
-| [java.security.acl.Group](../java/security/acl/Group.md) |
+| [java.security.acl.Group](Group.md) |
 
 | **This interface was deprecated in API level 33.**
 |
@@ -23,15 +23,15 @@ Note that Group extends Principal. Thus, either a Principal or a Group can be pa
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addMember](../java/security/acl/Group.md))`(`user:` ` [Principal](../java/security/Principal.md)!`)` Adds the specified member to the group. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMember](../java/security/acl/Group.md))`(`member:` ` [Principal](../java/security/Principal.md)!`)` Returns true if the passed principal is a member of the group. |
-| abstract [Enumeration](../java/util/Enumeration.md)\<out [Principal](../java/security/Principal.md)!\>! | [members](../java/security/acl/Group.md))`()` Returns an enumeration of the members in the group. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addMember](Group.md))`(`user:` ` [Principal](../java.security/Principal.md)!`)` Adds the specified member to the group. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMember](Group.md))`(`member:` ` [Principal](../java.security/Principal.md)!`)` Returns true if the passed principal is a member of the group. |
+| abstract [Enumeration](../java.util/Enumeration.md)\<out [Principal](../java.security/Principal.md)!\>! | [members](Group.md))`()` Returns an enumeration of the members in the group. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeMember](../java/security/acl/Group.md))`(`user:` ` [Principal](../java/security/Principal.md)!`)` Removes the specified member from the group. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeMember](Group.md))`(`user:` ` [Principal](../java.security/Principal.md)!`)` Removes the specified member from the group. |
 
 | Inherited functions ||
 |---|---|
-| From class [Principal](../java/security/Principal.md) |------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](../java/security/Principal.md))`()` <br /> Returns the name of this principal. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [implies](../java/security/Principal.md))`(`subject:` ` [Subject](../javax/security/auth/Subject.md)!`)` <br /> Returns true if the specified subject is implied by this principal. <br /> | ||
+| From class [Principal](../java.security/Principal.md) |------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](../java.security/Principal.md))`()` <br /> Returns the name of this principal. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [implies](../java.security/Principal.md))`(`subject:` ` [Subject](../javax.security.auth/Subject.md)!`)` <br /> Returns true if the specified subject is implied by this principal. <br /> | ||
 
 ## Public methods
 
@@ -49,7 +49,7 @@ Adds the specified member to the group.
 
 | Parameters ||
 |--------|--------------------------------------------------------------------------------------------------------------------------------|
-| `user` | [Principal](../java/security/Principal.md)!:the principal to add to this group. |
+| `user` | [Principal](../java.security/Principal.md)!:the principal to add to this group. |
 
 | Return ||
 |------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
@@ -69,7 +69,7 @@ Returns true if the passed principal is a member of the group. This method does 
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| `member` | [Principal](../java/security/Principal.md)!:the principal whose membership is to be checked. |
+| `member` | [Principal](../java.security/Principal.md)!:the principal whose membership is to be checked. |
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------------------------------------------------|
@@ -89,7 +89,7 @@ Returns an enumeration of the members in the group. The returned objects can be 
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|
-| [Enumeration](../java/util/Enumeration.md)<out` ` [Principal](../java/security/Principal.md)!>! | an enumeration of the group members. |
+| [Enumeration](../java.util/Enumeration.md)<out` ` [Principal](../java.security/Principal.md)!>! | an enumeration of the group members. |
 
 ### removeMember
 
@@ -105,7 +105,7 @@ Removes the specified member from the group.
 
 | Parameters ||
 |--------|-------------------------------------------------------------------------------------------------------------------------------------|
-| `user` | [Principal](../java/security/Principal.md)!:the principal to remove from this group. |
+| `user` | [Principal](../java.security/Principal.md)!:the principal to remove from this group. |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|

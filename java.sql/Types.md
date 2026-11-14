@@ -10,7 +10,7 @@ open class Types
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.sql.Types](../java/sql/Types.md) |
+| ↳ | [java.sql.Types](Types.md) |
 
 The class that defines the constants that are used to identify generic SQL types, called JDBC types.
 
@@ -20,53 +20,53 @@ This class is never instantiated.
 
 | Constants ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ARRAY](../java/sql/Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`ARRAY`. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BIGINT](../java/sql/Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`BIGINT`. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BINARY](../java/sql/Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`BINARY`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ARRAY](Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`ARRAY`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BIGINT](Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`BIGINT`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BINARY](Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`BINARY`. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BIT](../java/sql/Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`BIT`. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BLOB](../java/sql/Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`BLOB`. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BOOLEAN](../java/sql/Types.md) The constant in the Java programming language, somtimes referred to as a type code, that identifies the generic SQL type`BOOLEAN`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BIT](Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`BIT`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BLOB](Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`BLOB`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BOOLEAN](Types.md) The constant in the Java programming language, somtimes referred to as a type code, that identifies the generic SQL type`BOOLEAN`. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CHAR](../java/sql/Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`CHAR`. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CLOB](../java/sql/Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`CLOB`. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DATALINK](../java/sql/Types.md) The constant in the Java programming language, somtimes referred to as a type code, that identifies the generic SQL type`DATALINK`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CHAR](Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`CHAR`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CLOB](Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`CLOB`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DATALINK](Types.md) The constant in the Java programming language, somtimes referred to as a type code, that identifies the generic SQL type`DATALINK`. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DATE](../java/sql/Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`DATE`. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DECIMAL](../java/sql/Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`DECIMAL`. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DISTINCT](../java/sql/Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`DISTINCT`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DATE](Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`DATE`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DECIMAL](Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`DECIMAL`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DISTINCT](Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`DISTINCT`. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DOUBLE](../java/sql/Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`DOUBLE`. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLOAT](../java/sql/Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`FLOAT`. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INTEGER](../java/sql/Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`INTEGER`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DOUBLE](Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`DOUBLE`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLOAT](Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`FLOAT`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INTEGER](Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`INTEGER`. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [JAVA_OBJECT](../java/sql/Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`JAVA_OBJECT`. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LONGNVARCHAR](../java/sql/Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`LONGNVARCHAR`. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LONGVARBINARY](../java/sql/Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`LONGVARBINARY`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [JAVA_OBJECT](Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`JAVA_OBJECT`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LONGNVARCHAR](Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`LONGNVARCHAR`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LONGVARBINARY](Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`LONGVARBINARY`. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LONGVARCHAR](../java/sql/Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`LONGVARCHAR`. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NCHAR](../java/sql/Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`NCHAR` |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NCLOB](../java/sql/Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`NCLOB`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LONGVARCHAR](Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`LONGVARCHAR`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NCHAR](Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`NCHAR` |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NCLOB](Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`NCLOB`. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NULL](../java/sql/Types.md) The constant in the Java programming language that identifies the generic SQL value`NULL`. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NUMERIC](../java/sql/Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`NUMERIC`. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NVARCHAR](../java/sql/Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`NVARCHAR`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NULL](Types.md) The constant in the Java programming language that identifies the generic SQL value`NULL`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NUMERIC](Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`NUMERIC`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NVARCHAR](Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`NVARCHAR`. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OTHER](../java/sql/Types.md) The constant in the Java programming language that indicates that the SQL type is database-specific and gets mapped to a Java object that can be accessed via the methods`getObject`and`setObject`. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REAL](../java/sql/Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`REAL`. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REF](../java/sql/Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`REF`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OTHER](Types.md) The constant in the Java programming language that indicates that the SQL type is database-specific and gets mapped to a Java object that can be accessed via the methods`getObject`and`setObject`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REAL](Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`REAL`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REF](Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`REF`. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROWID](../java/sql/Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`ROWID` |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SMALLINT](../java/sql/Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`SMALLINT`. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SQLXML](../java/sql/Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`XML`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROWID](Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`ROWID` |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SMALLINT](Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`SMALLINT`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SQLXML](Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`XML`. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STRUCT](../java/sql/Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`STRUCT`. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIME](../java/sql/Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`TIME`. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIMESTAMP](../java/sql/Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`TIMESTAMP`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STRUCT](Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`STRUCT`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIME](Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`TIME`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIMESTAMP](Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`TIMESTAMP`. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TINYINT](../java/sql/Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`TINYINT`. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VARBINARY](../java/sql/Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`VARBINARY`. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VARCHAR](../java/sql/Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`VARCHAR`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TINYINT](Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`TINYINT`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VARBINARY](Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`VARBINARY`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VARCHAR](Types.md) The constant in the Java programming language, sometimes referred to as a type code, that identifies the generic SQL type`VARCHAR`. |
 | --- | --- |
 
 ## Constants

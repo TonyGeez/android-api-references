@@ -37,7 +37,7 @@ abstract fun seekToPosition(position: Long): Unit
 
 Sets the read position at the given `position`.
 
-[advance](../android/media/MediaParser.md)) will immediately return after calling this method.
+[advance](MediaParser.md)) will immediately return after calling this method.
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------|

@@ -8,11 +8,11 @@ abstract class NotificationListenerService : Service
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](../android/content/Context.md) ||||
-| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) |||
-| | | ↳ | [android.app.Service](../android/app/Service.md) ||
+| ↳ | [android.content.Context](../android.content/Context.md) ||||
+| | ↳ | [android.content.ContextWrapper](../android.content/ContextWrapper.md) |||
+| | | ↳ | [android.app.Service](../android.app/Service.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.service.notification.NotificationListenerService](../android/service/notification/NotificationListenerService.md) |
+| | | | ↳ | [android.service.notification.NotificationListenerService](NotificationListenerService.md) |
 
 A service that receives calls from the system when new notifications are posted or removed, or their ranking changed.
 
@@ -39,7 +39,7 @@ To extend this class, you must declare the service in your manifest file with th
 
 The service should wait for the `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#onListenerConnected()` event before performing any operations. The `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#requestRebind(android.content.ComponentName)` method is the *only* one that is safe to call before `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#onListenerConnected()` or after `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#onListenerDisconnected()`.
 
-Notification listeners cannot get notification access or be bound by the system on [low-RAM](../android/app/ActivityManager.md)) devices running Android Q (and below). The system also ignores notification listeners running in a work profile. A `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#` might block notifications originating from a work profile.
+Notification listeners cannot get notification access or be bound by the system on [low-RAM](../android.app/ActivityManager.md)) devices running Android Q (and below). The system also ignores notification listeners running in a work profile. A `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager.html#` might block notifications originating from a work profile.
 
 From `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#N:kotlin.Int` onward all callbacks are called on the main thread. Prior to N, there is no guarantee on what thread the callback will happen.
 
@@ -1143,22 +1143,22 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#cancelNotifications(kotlin.Array)(keys: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!)` Inform the notification manager about dismissal of specific notifications. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#clearRequestedListenerHints()()` Clears listener hints set via `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#getCurrentListenerHints()`. |
-| [NotificationChannel](../android/app/NotificationChannel.md)? | `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#createConversationNotificationChannelForPackage(kotlin.String,%20android.os.UserHandle,%20kotlin.String,%20kotlin.String)(pkg: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, user: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#, parentChannelId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, conversationId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Creates a conversation notification channel for a given package for a given user. |
+| [NotificationChannel](../android.app/NotificationChannel.md)? | `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#createConversationNotificationChannelForPackage(kotlin.String,%20android.os.UserHandle,%20kotlin.String,%20kotlin.String)(pkg: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, user: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#, parentChannelId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, conversationId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Creates a conversation notification channel for a given package for a given user. |
 | --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#deleteConversationNotificationChannel(kotlin.String,%20android.os.UserHandle,%20kotlin.String)(pkg: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, user: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#, channelId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Deletes a conversation notification channel for a given package and user. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [StatusBarNotification](../android/service/notification/StatusBarNotification.md)!\>! | `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#getActiveNotifications()()` Request the list of outstanding notifications (that is, those that are visible to the current user). |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [StatusBarNotification](../android/service/notification/StatusBarNotification.md)!\>! | `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#getActiveNotifications(kotlin.Array)(keys: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!)` Request one or more notifications by key. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [StatusBarNotification](StatusBarNotification.md)!\>! | `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#getActiveNotifications()()` Request the list of outstanding notifications (that is, those that are visible to the current user). |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [StatusBarNotification](StatusBarNotification.md)!\>! | `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#getActiveNotifications(kotlin.Array)(keys: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!)` Request one or more notifications by key. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#getCurrentInterruptionFilter()()` Gets the current notification interruption filter active on the host. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#getCurrentListenerHints()()` Gets the set of hints representing current state. |
 | open [NotificationListenerService.RankingMap](../android/service/notification/NotificationListenerService.RankingMap.md)! | `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#getCurrentRanking()()` Returns current ranking information. |
 | --- | --- |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [NotificationChannelGroup](../android/app/NotificationChannelGroup.md)!\>! | `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#getNotificationChannelGroups(kotlin.String,%20android.os.UserHandle)(pkg: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, user: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#)` Returns all notification channel groups belonging to the given package for a given user. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [NotificationChannel](../android/app/NotificationChannel.md)!\>! | `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#getNotificationChannels(kotlin.String,%20android.os.UserHandle)(pkg: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, user: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#)` Returns all notification channels belonging to the given package for a given user. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [StatusBarNotification](../android/service/notification/StatusBarNotification.md)!\>! | `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#getSnoozedNotifications()()` Like `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#getActiveNotifications()`, but returns the list of currently snoozed notifications, for all users this listener has access to. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [NotificationChannelGroup](../android.app/NotificationChannelGroup.md)!\>! | `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#getNotificationChannelGroups(kotlin.String,%20android.os.UserHandle)(pkg: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, user: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#)` Returns all notification channel groups belonging to the given package for a given user. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [NotificationChannel](../android.app/NotificationChannel.md)!\>! | `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#getNotificationChannels(kotlin.String,%20android.os.UserHandle)(pkg: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, user: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#)` Returns all notification channels belonging to the given package for a given user. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [StatusBarNotification](StatusBarNotification.md)!\>! | `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#getSnoozedNotifications()()` Like `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#getActiveNotifications()`, but returns the list of currently snoozed notifications, for all users this listener has access to. |
 | --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#migrateNotificationFilter(kotlin.Int,%20kotlin.collections.MutableList)(defaultTypes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, disallowedPkgs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>?)` Lets an app migrate notification filters from its app into the OS. |
-| open [IBinder](../android/os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` This is not the lifecycle event you are looking for. |
+| open [IBinder](../android.os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` This is not the lifecycle event you are looking for. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#onDestroy()()` Called by the system to notify a Service that it is no longer used and is being removed. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#onInterruptionFilterChanged(kotlin.Int)(interruptionFilter: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Implement this method to be notified when the `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#getCurrentInterruptionFilter()` changed. |
@@ -3578,7 +3578,7 @@ The caller must have `https://developer.android.com/reference/kotlin/android/com
 | Parameters ||
 |---|---|
 | `pkg` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The package the channel belongs to. This value cannot be `null`. |
-| `user` | [UserHandle](../android/os/UserHandle.md): The user the channel belongs to. This value cannot be `null`. |
+| `user` | [UserHandle](../android.os/UserHandle.md): The user the channel belongs to. This value cannot be `null`. |
 | `parentChannelId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The parent channel id of the conversation channel belongs to. This value cannot be `null`. |
 | --- | --- |
 | `conversationId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The conversation id of the conversation channel. This value cannot be `null`. |
@@ -3608,7 +3608,7 @@ The caller must have `https://developer.android.com/reference/kotlin/android/com
 | Parameters ||
 |---|---|
 | `pkg` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The package the channel belongs to. This value cannot be `null`. |
-| `user` | [UserHandle](../android/os/UserHandle.md): The user the channel belongs to. This value cannot be `null`. |
+| `user` | [UserHandle](../android.os/UserHandle.md): The user the channel belongs to. This value cannot be `null`. |
 | `channelId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The ID of the conversation channel to be deleted. This value cannot be `null`. |
 | --- | --- |
 
@@ -3728,7 +3728,7 @@ The caller must have `https://developer.android.com/reference/kotlin/android/com
 | Parameters ||
 |---|---|
 | `pkg` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The package to retrieve channel groups for. This value cannot be `null`. |
-| `user` | [UserHandle](../android/os/UserHandle.md): This value cannot be `null`. |
+| `user` | [UserHandle](../android.os/UserHandle.md): This value cannot be `null`. |
 
 ### getNotificationChannels
 
@@ -3750,7 +3750,7 @@ The caller must have `https://developer.android.com/reference/kotlin/android/com
 | Parameters ||
 |---|---|
 | `pkg` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The package to retrieve channels for. This value cannot be `null`. |
-| `user` | [UserHandle](../android/os/UserHandle.md): This value cannot be `null`. |
+| `user` | [UserHandle](../android.os/UserHandle.md): This value cannot be `null`. |
 
 ### getSnoozedNotifications
 
@@ -3802,7 +3802,7 @@ The service should wait for the `https://developer.android.com/reference/kotlin/
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
+| `intent` | [Intent](../android.content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
 
 | Return ||
 |---|---|
@@ -3891,8 +3891,8 @@ This method must be called from the main thread of your app.
 | Parameters ||
 |---|---|
 | `pkg` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The package the group belongs to. |
-| `user` | [UserHandle](../android/os/UserHandle.md)!: The user on which the change was made. |
-| `group` | [NotificationChannelGroup](../android/app/NotificationChannelGroup.md)!: The group that has changed. |
+| `user` | [UserHandle](../android.os/UserHandle.md)!: The user on which the change was made. |
+| `group` | [NotificationChannelGroup](../android.app/NotificationChannelGroup.md)!: The group that has changed. |
 | --- | --- |
 | `modificationType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): One of `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#NOTIFICATION_CHANNEL_OR_GROUP_ADDED:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#NOTIFICATION_CHANNEL_OR_GROUP_UPDATED:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#NOTIFICATION_CHANNEL_OR_GROUP_DELETED:kotlin.Int`. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#NOTIFICATION_CHANNEL_OR_GROUP_ADDED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#NOTIFICATION_CHANNEL_OR_GROUP_UPDATED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#NOTIFICATION_CHANNEL_OR_GROUP_DELETED:kotlin.Int` |
 
@@ -3917,8 +3917,8 @@ This method must be called from the main thread of your app.
 | Parameters ||
 |---|---|
 | `pkg` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The package the channel belongs to. |
-| `user` | [UserHandle](../android/os/UserHandle.md)!: The user on which the change was made. |
-| `channel` | [NotificationChannel](../android/app/NotificationChannel.md)!: The channel that has changed. |
+| `user` | [UserHandle](../android.os/UserHandle.md)!: The user on which the change was made. |
+| `channel` | [NotificationChannel](../android.app/NotificationChannel.md)!: The channel that has changed. |
 | --- | --- |
 | `modificationType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): One of `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#NOTIFICATION_CHANNEL_OR_GROUP_ADDED:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#NOTIFICATION_CHANNEL_OR_GROUP_UPDATED:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#NOTIFICATION_CHANNEL_OR_GROUP_DELETED:kotlin.Int`. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#NOTIFICATION_CHANNEL_OR_GROUP_ADDED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#NOTIFICATION_CHANNEL_OR_GROUP_UPDATED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#NOTIFICATION_CHANNEL_OR_GROUP_DELETED:kotlin.Int` |
 
@@ -3935,7 +3935,7 @@ This method must be called from the main thread of your app.
 
 | Parameters ||
 |---|---|
-| `sbn` | [StatusBarNotification](../android/service/notification/StatusBarNotification.md)!: A data structure encapsulating the original `https://developer.android.com/reference/kotlin/android/app/Notification.html#` object as well as its identifying information (tag and id) and source (package name). |
+| `sbn` | [StatusBarNotification](StatusBarNotification.md)!: A data structure encapsulating the original `https://developer.android.com/reference/kotlin/android/app/Notification.html#` object as well as its identifying information (tag and id) and source (package name). |
 
 ### onNotificationPosted
 
@@ -3953,7 +3953,7 @@ This method must be called from the main thread of your app.
 
 | Parameters ||
 |---|---|
-| `sbn` | [StatusBarNotification](../android/service/notification/StatusBarNotification.md)!: A data structure encapsulating the original `https://developer.android.com/reference/kotlin/android/app/Notification.html#` object as well as its identifying information (tag and id) and source (package name). |
+| `sbn` | [StatusBarNotification](StatusBarNotification.md)!: A data structure encapsulating the original `https://developer.android.com/reference/kotlin/android/app/Notification.html#` object as well as its identifying information (tag and id) and source (package name). |
 | `rankingMap` | [NotificationListenerService.RankingMap](../android/service/notification/NotificationListenerService.RankingMap.md)!: The current ranking map that can be used to retrieve ranking information for active notifications, including the newly posted one. |
 
 ### onNotificationRankingUpdate
@@ -3986,7 +3986,7 @@ This method must be called from the main thread of your app.
 
 | Parameters ||
 |---|---|
-| `sbn` | [StatusBarNotification](../android/service/notification/StatusBarNotification.md)!: A data structure encapsulating at least the original information (tag and id) and source (package name) used to post the `https://developer.android.com/reference/kotlin/android/app/Notification.html#` that was just removed. |
+| `sbn` | [StatusBarNotification](StatusBarNotification.md)!: A data structure encapsulating at least the original information (tag and id) and source (package name) used to post the `https://developer.android.com/reference/kotlin/android/app/Notification.html#` that was just removed. |
 
 ### onNotificationRemoved
 
@@ -4006,7 +4006,7 @@ This method must be called from the main thread of your app.
 
 | Parameters ||
 |---|---|
-| `sbn` | [StatusBarNotification](../android/service/notification/StatusBarNotification.md)!: A data structure encapsulating at least the original information (tag and id) and source (package name) used to post the `https://developer.android.com/reference/kotlin/android/app/Notification.html#` that was just removed. |
+| `sbn` | [StatusBarNotification](StatusBarNotification.md)!: A data structure encapsulating at least the original information (tag and id) and source (package name) used to post the `https://developer.android.com/reference/kotlin/android/app/Notification.html#` that was just removed. |
 | `rankingMap` | [NotificationListenerService.RankingMap](../android/service/notification/NotificationListenerService.RankingMap.md)!: The current ranking map that can be used to retrieve ranking information for active notifications. |
 
 ### onNotificationRemoved
@@ -4027,7 +4027,7 @@ NOTE: The `https://developer.android.com/reference/kotlin/android/service/notifi
 
 | Parameters ||
 |---|---|
-| `sbn` | [StatusBarNotification](../android/service/notification/StatusBarNotification.md)!: A data structure encapsulating at least the original information (tag and id) and source (package name) used to post the `https://developer.android.com/reference/kotlin/android/app/Notification.html#` that was just removed. This method must be called from the main thread of your app. |
+| `sbn` | [StatusBarNotification](StatusBarNotification.md)!: A data structure encapsulating at least the original information (tag and id) and source (package name) used to post the `https://developer.android.com/reference/kotlin/android/app/Notification.html#` that was just removed. This method must be called from the main thread of your app. |
 | `rankingMap` | [NotificationListenerService.RankingMap](../android/service/notification/NotificationListenerService.RankingMap.md)!: The current ranking map that can be used to retrieve ranking information for active notifications. |
 | `reason` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Value is one of the following: - `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#REASON_CLICK:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#REASON_CANCEL:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#REASON_CANCEL_ALL:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#REASON_ERROR:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#REASON_PACKAGE_CHANGED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#REASON_USER_STOPPED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#REASON_PACKAGE_BANNED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#REASON_APP_CANCEL:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#REASON_APP_CANCEL_ALL:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#REASON_LISTENER_CANCEL:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#REASON_LISTENER_CANCEL_ALL:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#REASON_GROUP_SUMMARY_CANCELED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#REASON_GROUP_OPTIMIZATION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#REASON_PACKAGE_SUSPENDED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#REASON_PROFILE_TURNED_OFF:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#REASON_UNAUTOBUNDLED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#REASON_CHANNEL_BANNED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#REASON_SNOOZED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#REASON_TIMEOUT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#REASON_CHANNEL_REMOVED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#REASON_CLEAR_DATA:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#REASON_ASSISTANT_CANCEL:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#REASON_LOCKDOWN:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService#REASON_BUNDLE_DISMISSED:kotlin.Int` |
 | --- | --- |
@@ -4129,7 +4129,7 @@ This method will fail for components that are not part of the calling app.
 
 | Parameters ||
 |---|---|
-| `componentName` | [ComponentName](../android/content/ComponentName.md): This value cannot be `null`. |
+| `componentName` | [ComponentName](../android.content/ComponentName.md): This value cannot be `null`. |
 
 ### setNotificationsShown
 
@@ -4188,8 +4188,8 @@ The caller must have `https://developer.android.com/reference/kotlin/android/com
 | Parameters ||
 |---|---|
 | `pkg` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The package the channel belongs to. This value cannot be `null`. |
-| `user` | [UserHandle](../android/os/UserHandle.md): The user the channel belongs to. This value cannot be `null`. |
-| `channel` | [NotificationChannel](../android/app/NotificationChannel.md): the channel to update. This value cannot be `null`. |
+| `user` | [UserHandle](../android.os/UserHandle.md): The user the channel belongs to. This value cannot be `null`. |
+| `channel` | [NotificationChannel](../android.app/NotificationChannel.md): the channel to update. This value cannot be `null`. |
 | --- | --- |
 
 ## Protected methods
@@ -4206,4 +4206,4 @@ Set the base context for this ContextWrapper. All calls will then be delegated t
 
 | Parameters ||
 |---|---|
-| `base` | [Context](../android/content/Context.md)!: The new base context for this wrapper. |
+| `base` | [Context](../android.content/Context.md)!: The new base context for this wrapper. |

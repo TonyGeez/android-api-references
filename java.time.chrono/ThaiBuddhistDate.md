@@ -8,48 +8,48 @@ class ThaiBuddhistDate : ChronoLocalDate, Serializable, Temporal, TemporalAdju
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.time.chrono.ThaiBuddhistDate](../java/time/chrono/ThaiBuddhistDate.md) |
+| ↳ | [java.time.chrono.ThaiBuddhistDate](ThaiBuddhistDate.md) |
 
 A date in the Thai Buddhist calendar system.
 
-This date operates using the [Thai Buddhist calendar](../java/time/chrono/ThaiBuddhistChronology.md). This calendar system is primarily used in Thailand. Dates are aligned such that `2484-01-01 (Buddhist)` is `1941-01-01 (ISO)`.
+This date operates using the [Thai Buddhist calendar](ThaiBuddhistChronology.md). This calendar system is primarily used in Thailand. Dates are aligned such that `2484-01-01 (Buddhist)` is `1941-01-01 (ISO)`.
 
-This is a [value-based](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/doc-files/ValueBased.html) class; programmers should treat instances that are [equal](../java/time/chrono/ThaiBuddhistDate.md)) as interchangeable and should not use instances for synchronization, or unpredictable behavior may occur. For example, in a future release, synchronization may fail. The `equals` method should be used for comparisons.
+This is a [value-based](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/doc-files/ValueBased.html) class; programmers should treat instances that are [equal](ThaiBuddhistDate.md)) as interchangeable and should not use instances for synchronization, or unpredictable behavior may occur. For example, in a future release, synchronization may fail. The `equals` method should be used for comparisons.
 
 ## Summary
 
 | Public methods ||
 |---|---|
-| [ChronoLocalDateTime](../java/time/chrono/ChronoLocalDateTime.md)\< [ThaiBuddhistDate](../java/time/chrono/ThaiBuddhistDate.md)!\>! | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistDate#atTime(java.time.LocalTime)(localTime: https://developer.android.com/reference/kotlin/java/time/LocalTime.html#!)` Combines this date with a time to create a `ChronoLocalDateTime`. |
+| [ChronoLocalDateTime](ChronoLocalDateTime.md)\< [ThaiBuddhistDate](ThaiBuddhistDate.md)!\>! | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistDate#atTime(java.time.LocalTime)(localTime: https://developer.android.com/reference/kotlin/java/time/LocalTime.html#!)` Combines this date with a time to create a `ChronoLocalDateTime`. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistDate#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Compares this date to another date, including the chronology. |
-| static [ThaiBuddhistDate](../java/time/chrono/ThaiBuddhistDate.md)! | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistDate#from(java.time.temporal.TemporalAccessor)(temporal: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor.html#!)` Obtains a `ThaiBuddhistDate` from a temporal object. |
+| static [ThaiBuddhistDate](ThaiBuddhistDate.md)! | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistDate#from(java.time.temporal.TemporalAccessor)(temporal: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor.html#!)` Obtains a `ThaiBuddhistDate` from a temporal object. |
 | --- | --- |
-| [ThaiBuddhistChronology](../java/time/chrono/ThaiBuddhistChronology.md)! | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistDate#getChronology()()` Gets the chronology of this date, which is the Thai Buddhist calendar system. |
-| [ThaiBuddhistEra](../java/time/chrono/ThaiBuddhistEra.md)! | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistDate#getEra()()` Gets the era applicable at this date. |
+| [ThaiBuddhistChronology](ThaiBuddhistChronology.md)! | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistDate#getChronology()()` Gets the chronology of this date, which is the Thai Buddhist calendar system. |
+| [ThaiBuddhistEra](ThaiBuddhistEra.md)! | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistDate#getEra()()` Gets the era applicable at this date. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistDate#getLong(java.time.temporal.TemporalField)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#!)` Gets the value of the specified field as a `long`. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistDate#hashCode()()` A hash code for this date. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistDate#lengthOfMonth()()` Returns the length of the month represented by this date. |
-| [ThaiBuddhistDate](../java/time/chrono/ThaiBuddhistDate.md)! | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistDate#minus(java.time.temporal.TemporalAmount)(amount: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAmount.html#!)` Returns an object of the same type as this object with an amount subtracted. |
+| [ThaiBuddhistDate](ThaiBuddhistDate.md)! | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistDate#minus(java.time.temporal.TemporalAmount)(amount: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAmount.html#!)` Returns an object of the same type as this object with an amount subtracted. |
 | --- | --- |
-| [ThaiBuddhistDate](../java/time/chrono/ThaiBuddhistDate.md)! | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistDate#minus(kotlin.Long,%20java.time.temporal.TemporalUnit)(amountToSubtract: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, unit: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit.html#!)` Returns an object of the same type as this object with the specified period subtracted. |
-| static [ThaiBuddhistDate](../java/time/chrono/ThaiBuddhistDate.md)! | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistDate#now()()` Obtains the current `ThaiBuddhistDate` from the system clock in the default time-zone. |
-| static [ThaiBuddhistDate](../java/time/chrono/ThaiBuddhistDate.md)! | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistDate#now(java.time.Clock)(clock: https://developer.android.com/reference/kotlin/java/time/Clock.html#!)` Obtains the current `ThaiBuddhistDate` from the specified clock. |
+| [ThaiBuddhistDate](ThaiBuddhistDate.md)! | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistDate#minus(kotlin.Long,%20java.time.temporal.TemporalUnit)(amountToSubtract: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, unit: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit.html#!)` Returns an object of the same type as this object with the specified period subtracted. |
+| static [ThaiBuddhistDate](ThaiBuddhistDate.md)! | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistDate#now()()` Obtains the current `ThaiBuddhistDate` from the system clock in the default time-zone. |
+| static [ThaiBuddhistDate](ThaiBuddhistDate.md)! | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistDate#now(java.time.Clock)(clock: https://developer.android.com/reference/kotlin/java/time/Clock.html#!)` Obtains the current `ThaiBuddhistDate` from the specified clock. |
 | --- | --- |
-| static [ThaiBuddhistDate](../java/time/chrono/ThaiBuddhistDate.md)! | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistDate#now(java.time.ZoneId)(zone: https://developer.android.com/reference/kotlin/java/time/ZoneId.html#!)` Obtains the current `ThaiBuddhistDate` from the system clock in the specified time-zone. |
-| static [ThaiBuddhistDate](../java/time/chrono/ThaiBuddhistDate.md)! | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistDate#of(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(prolepticYear: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, month: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dayOfMonth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtains a `ThaiBuddhistDate` representing a date in the Thai Buddhist calendar system from the proleptic-year, month-of-year and day-of-month fields. |
-| [ThaiBuddhistDate](../java/time/chrono/ThaiBuddhistDate.md)! | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistDate#plus(java.time.temporal.TemporalAmount)(amount: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAmount.html#!)` Returns an object of the same type as this object with an amount added. |
+| static [ThaiBuddhistDate](ThaiBuddhistDate.md)! | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistDate#now(java.time.ZoneId)(zone: https://developer.android.com/reference/kotlin/java/time/ZoneId.html#!)` Obtains the current `ThaiBuddhistDate` from the system clock in the specified time-zone. |
+| static [ThaiBuddhistDate](ThaiBuddhistDate.md)! | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistDate#of(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(prolepticYear: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, month: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dayOfMonth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtains a `ThaiBuddhistDate` representing a date in the Thai Buddhist calendar system from the proleptic-year, month-of-year and day-of-month fields. |
+| [ThaiBuddhistDate](ThaiBuddhistDate.md)! | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistDate#plus(java.time.temporal.TemporalAmount)(amount: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAmount.html#!)` Returns an object of the same type as this object with an amount added. |
 | --- | --- |
-| [ThaiBuddhistDate](../java/time/chrono/ThaiBuddhistDate.md)! | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistDate#plus(kotlin.Long,%20java.time.temporal.TemporalUnit)(amountToAdd: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, unit: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit.html#!)` Returns an object of the same type as this object with the specified period added. |
-| [ValueRange](../java/time/temporal/ValueRange.md)! | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistDate#range(java.time.temporal.TemporalField)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#!)` Gets the range of valid values for the specified field. |
+| [ThaiBuddhistDate](ThaiBuddhistDate.md)! | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistDate#plus(kotlin.Long,%20java.time.temporal.TemporalUnit)(amountToAdd: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, unit: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit.html#!)` Returns an object of the same type as this object with the specified period added. |
+| [ValueRange](../java.time.temporal/ValueRange.md)! | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistDate#range(java.time.temporal.TemporalField)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#!)` Gets the range of valid values for the specified field. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistDate#toEpochDay()()` Converts this date to the Epoch Day. |
 | --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistDate#toString()()` Returns a string representation of the object. |
-| [ChronoPeriod](../java/time/chrono/ChronoPeriod.md)! | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistDate#until(java.time.chrono.ChronoLocalDate)(endDate: https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate!)` Calculates the period between this date and another date as a `ChronoPeriod`. |
+| [ChronoPeriod](ChronoPeriod.md)! | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistDate#until(java.time.chrono.ChronoLocalDate)(endDate: https://developer.android.com/reference/kotlin/java/time/chrono/ChronoLocalDate!)` Calculates the period between this date and another date as a `ChronoPeriod`. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistDate#until(java.time.temporal.Temporal,%20java.time.temporal.TemporalUnit)(endExclusive: https://developer.android.com/reference/kotlin/java/time/temporal/Temporal.html#!, unit: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit.html#!)` Calculates the amount of time until another date in terms of the specified unit. |
 | --- | --- |
-| [ThaiBuddhistDate](../java/time/chrono/ThaiBuddhistDate.md)! | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistDate#with(java.time.temporal.TemporalAdjuster)(adjuster: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAdjuster.html#!)` Returns an adjusted object of the same type as this object with the adjustment made. |
-| [ThaiBuddhistDate](../java/time/chrono/ThaiBuddhistDate.md)! | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistDate#with(java.time.temporal.TemporalField,%20kotlin.Long)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#!, newValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns an object of the same type as this object with the specified field altered. |
+| [ThaiBuddhistDate](ThaiBuddhistDate.md)! | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistDate#with(java.time.temporal.TemporalAdjuster)(adjuster: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAdjuster.html#!)` Returns an adjusted object of the same type as this object with the adjustment made. |
+| [ThaiBuddhistDate](ThaiBuddhistDate.md)! | `https://developer.android.com/reference/kotlin/java/time/chrono/ThaiBuddhistDate#with(java.time.temporal.TemporalField,%20kotlin.Long)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField.html#!, newValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns an object of the same type as this object with the specified field altered. |
 
 | Inherited functions ||
 |---|---|
@@ -71,7 +71,7 @@ This returns a `ChronoLocalDateTime` formed from this date at the specified time
 
 | Parameters ||
 |---|---|
-| `localTime` | [LocalTime](../java/time/LocalTime.md)!: the local time to use, not null |
+| `localTime` | [LocalTime](../java.time/LocalTime.md)!: the local time to use, not null |
 
 | Return ||
 |---|---|
@@ -117,7 +117,7 @@ This method matches the signature of the functional interface `https://developer
 
 | Parameters ||
 |---|---|
-| `temporal` | [TemporalAccessor](../java/time/temporal/TemporalAccessor.md)!: the temporal object to convert, not null |
+| `temporal` | [TemporalAccessor](../java.time.temporal/TemporalAccessor.md)!: the temporal object to convert, not null |
 
 | Return ||
 |---|---|
@@ -173,7 +173,7 @@ This queries the date-time for the value of the specified field. The returned va
 
 | Parameters ||
 |---|---|
-| `field` | [TemporalField](../java/time/temporal/TemporalField.md)!: the field to get, not null |
+| `field` | [TemporalField](../java.time.temporal/TemporalField.md)!: the field to get, not null |
 
 | Return ||
 |---|---|
@@ -241,7 +241,7 @@ Note that calling `plus` followed by `minus` is not guaranteed to return the sam
 
 | Parameters ||
 |---|---|
-| `amount` | [TemporalAmount](../java/time/temporal/TemporalAmount.md)!: the amount to subtract, not null |
+| `amount` | [TemporalAmount](../java.time.temporal/TemporalAmount.md)!: the amount to subtract, not null |
 
 | Return ||
 |---|---|
@@ -272,7 +272,7 @@ In some cases, changing a field is not fully defined. For example, if the target
 | Parameters ||
 |---|---|
 | `amountToSubtract` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the amount of the specified unit to subtract, may be negative |
-| `unit` | [TemporalUnit](../java/time/temporal/TemporalUnit.md)!: the unit of the amount to subtract, not null |
+| `unit` | [TemporalUnit](../java.time.temporal/TemporalUnit.md)!: the unit of the amount to subtract, not null |
 
 | Return ||
 |---|---|
@@ -313,11 +313,11 @@ static fun now(clock: Clock!): ThaiBuddhistDate!
 
 Obtains the current `ThaiBuddhistDate` from the specified clock.
 
-This will query the specified clock to obtain the current date - today. Using this method allows the use of an alternate clock for testing. The alternate clock may be introduced using [dependency injection](../java/time/Clock.md).
+This will query the specified clock to obtain the current date - today. Using this method allows the use of an alternate clock for testing. The alternate clock may be introduced using [dependency injection](../java.time/Clock.md).
 
 | Parameters ||
 |---|---|
-| `clock` | [Clock](../java/time/Clock.md)!: the clock to use, not null |
+| `clock` | [Clock](../java.time/Clock.md)!: the clock to use, not null |
 
 | Return ||
 |---|---|
@@ -343,7 +343,7 @@ Using this method will prevent the ability to use an alternate clock for testing
 
 | Parameters ||
 |---|---|
-| `zone` | [ZoneId](../java/time/ZoneId.md)!: the zone ID to use, not null |
+| `zone` | [ZoneId](../java.time/ZoneId.md)!: the zone ID to use, not null |
 
 | Return ||
 |---|---|
@@ -405,7 +405,7 @@ Note that calling `plus` followed by `minus` is not guaranteed to return the sam
 
 | Parameters ||
 |---|---|
-| `amount` | [TemporalAmount](../java/time/temporal/TemporalAmount.md)!: the amount to add, not null |
+| `amount` | [TemporalAmount](../java.time.temporal/TemporalAmount.md)!: the amount to add, not null |
 
 | Return ||
 |---|---|
@@ -436,7 +436,7 @@ In some cases, changing a field is not fully defined. For example, if the target
 | Parameters ||
 |---|---|
 | `amountToAdd` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the amount of the specified unit to add, may be negative |
-| `unit` | [TemporalUnit](../java/time/temporal/TemporalUnit.md)!: the unit of the amount to add, not null |
+| `unit` | [TemporalUnit](../java.time.temporal/TemporalUnit.md)!: the unit of the amount to add, not null |
 
 | Return ||
 |---|---|
@@ -465,7 +465,7 @@ Note that the result only describes the minimum and maximum valid values and it 
 
 | Parameters ||
 |---|---|
-| `field` | [TemporalField](../java/time/temporal/TemporalField.md)!: the field to query the range for, not null |
+| `field` | [TemporalField](../java.time.temporal/TemporalField.md)!: the field to query the range for, not null |
 
 | Return ||
 |---|---|
@@ -572,8 +572,8 @@ This instance is immutable and unaffected by this method call.
 
 | Parameters ||
 |---|---|
-| `endExclusive` | [Temporal](../java/time/temporal/Temporal.md)!: the end temporal, exclusive, converted to be of the same type as this object, not null |
-| `unit` | [TemporalUnit](../java/time/temporal/TemporalUnit.md)!: the unit to measure the amount in, not null |
+| `endExclusive` | [Temporal](../java.time.temporal/Temporal.md)!: the end temporal, exclusive, converted to be of the same type as this object, not null |
+| `unit` | [TemporalUnit](../java.time.temporal/TemporalUnit.md)!: the unit to measure the amount in, not null |
 
 | Return ||
 |---|---|
@@ -609,7 +609,7 @@ date = date.with(Month.JULY);        // most key classes implement TemporalAdjus
 
 | Parameters ||
 |---|---|
-| `adjuster` | [TemporalAdjuster](../java/time/temporal/TemporalAdjuster.md)!: the adjuster to use, not null |
+| `adjuster` | [TemporalAdjuster](../java.time.temporal/TemporalAdjuster.md)!: the adjuster to use, not null |
 
 | Return ||
 |---|---|
@@ -639,7 +639,7 @@ In some cases, changing a field is not fully defined. For example, if the target
 
 | Parameters ||
 |---|---|
-| `field` | [TemporalField](../java/time/temporal/TemporalField.md)!: the field to set in the result, not null |
+| `field` | [TemporalField](../java.time.temporal/TemporalField.md)!: the field to set in the result, not null |
 | `newValue` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the new value of the field in the result |
 
 | Return ||

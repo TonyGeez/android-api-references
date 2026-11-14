@@ -4,6 +4,6 @@
 
 ## Classes
 
-| [ServerSocketFactory](../javax/net/ServerSocketFactory.md) | This class creates server sockets. |
+| [ServerSocketFactory](ServerSocketFactory.md) | This class creates server sockets. |
 | --- | --- |
-| [SocketFactory](../javax/net/SocketFactory.md) | This class creates sockets. |
+| [SocketFactory](SocketFactory.md) | This class creates sockets. |

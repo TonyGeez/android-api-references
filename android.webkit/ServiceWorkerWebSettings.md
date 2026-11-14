@@ -4,7 +4,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # ServiceWorkerWebSettings
 
-Kotlin| [Java](../android/webkit/ServiceWorkerWebSettings.md) 
+Kotlin| [Java](ServiceWorkerWebSettings.md) 
 | --- | --- |
 
 ```
@@ -13,28 +13,28 @@ abstract class ServiceWorkerWebSettings
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.webkit.ServiceWorkerWebSettings](../android/webkit/ServiceWorkerWebSettings.md) |
+| ↳ | [android.webkit.ServiceWorkerWebSettings](ServiceWorkerWebSettings.md) |
 
-Manages settings state for all Service Workers. These settings are not tied to the lifetime of any WebView because service workers can outlive WebView instances. The settings are similar to [WebSettings](../android/webkit/WebSettings.md) but only settings relevant to Service Workers are supported.
+Manages settings state for all Service Workers. These settings are not tied to the lifetime of any WebView because service workers can outlive WebView instances. The settings are similar to [WebSettings](WebSettings.md) but only settings relevant to Service Workers are supported.
 
 ## Summary
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ServiceWorkerWebSettings](../android/webkit/ServiceWorkerWebSettings.md))`()` <br /> |
+| [ServiceWorkerWebSettings](ServiceWorkerWebSettings.md))`()` <br /> |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getAllowContentAccess](../android/webkit/ServiceWorkerWebSettings.md))`()` Gets whether Service Workers support content URL access. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getAllowFileAccess](../android/webkit/ServiceWorkerWebSettings.md))`()` Gets whether Service Workers support file access. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getBlockNetworkLoads](../android/webkit/ServiceWorkerWebSettings.md))`()` Gets whether Service Workers are prohibited from loading any resources from the network. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getAllowContentAccess](ServiceWorkerWebSettings.md))`()` Gets whether Service Workers support content URL access. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getAllowFileAccess](ServiceWorkerWebSettings.md))`()` Gets whether Service Workers support file access. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getBlockNetworkLoads](ServiceWorkerWebSettings.md))`()` Gets whether Service Workers are prohibited from loading any resources from the network. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCacheMode](../android/webkit/ServiceWorkerWebSettings.md))`()` Gets the current setting for overriding the cache mode. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAllowContentAccess](../android/webkit/ServiceWorkerWebSettings.md))`(`allow:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Enables or disables content URL access from Service Workers, see [WebSettings.setAllowContentAccess](../android/webkit/WebSettings.md)). |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAllowFileAccess](../android/webkit/ServiceWorkerWebSettings.md))`(`allow:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Enables or disables file access within Service Workers, see [WebSettings.setAllowFileAccess](../android/webkit/WebSettings.md)). |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCacheMode](ServiceWorkerWebSettings.md))`()` Gets the current setting for overriding the cache mode. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAllowContentAccess](ServiceWorkerWebSettings.md))`(`allow:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Enables or disables content URL access from Service Workers, see [WebSettings.setAllowContentAccess](WebSettings.md)). |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAllowFileAccess](ServiceWorkerWebSettings.md))`(`allow:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Enables or disables file access within Service Workers, see [WebSettings.setAllowFileAccess](WebSettings.md)). |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setBlockNetworkLoads](../android/webkit/ServiceWorkerWebSettings.md))`(`flag:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets whether Service Workers should not load resources from the network, see [WebSettings.setBlockNetworkLoads](../android/webkit/WebSettings.md)). |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCacheMode](../android/webkit/ServiceWorkerWebSettings.md))`(`mode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Overrides the way the cache is used, see [WebSettings.setCacheMode](../android/webkit/WebSettings.md)). |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setBlockNetworkLoads](ServiceWorkerWebSettings.md))`(`flag:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets whether Service Workers should not load resources from the network, see [WebSettings.setBlockNetworkLoads](WebSettings.md)). |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCacheMode](ServiceWorkerWebSettings.md))`(`mode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Overrides the way the cache is used, see [WebSettings.setCacheMode](WebSettings.md)). |
 
 ## Public constructors
 
@@ -57,7 +57,7 @@ abstract fun getAllowContentAccess(): Boolean
 Gets whether Service Workers support content URL access. 
 **See Also**
 
-- [#setAllowContentAccess](../android/webkit/ServiceWorkerWebSettings.md)) 
+- [#setAllowContentAccess](ServiceWorkerWebSettings.md)) 
 
 ### getAllowFileAccess
 
@@ -70,7 +70,7 @@ abstract fun getAllowFileAccess(): Boolean
 Gets whether Service Workers support file access. 
 **See Also**
 
-- [#setAllowFileAccess](../android/webkit/ServiceWorkerWebSettings.md)) 
+- [#setAllowFileAccess](ServiceWorkerWebSettings.md)) 
 
 ### getBlockNetworkLoads
 
@@ -88,7 +88,7 @@ Gets whether Service Workers are prohibited from loading any resources from the 
 
 **See Also**
 
-- [#setBlockNetworkLoads](../android/webkit/ServiceWorkerWebSettings.md)) 
+- [#setBlockNetworkLoads](ServiceWorkerWebSettings.md)) 
 
 ### getCacheMode
 
@@ -102,11 +102,11 @@ Gets the current setting for overriding the cache mode.
 
 | Return ||
 |----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the current setting for overriding the cache mode Value is [android.webkit.WebSettings#LOAD_DEFAULT](../android/webkit/WebSettings.md), [android.webkit.WebSettings#LOAD_NORMAL](../android/webkit/WebSettings.md), [android.webkit.WebSettings#LOAD_CACHE_ELSE_NETWORK](../android/webkit/WebSettings.md), [android.webkit.WebSettings#LOAD_NO_CACHE](../android/webkit/WebSettings.md), or [android.webkit.WebSettings#LOAD_CACHE_ONLY](../android/webkit/WebSettings.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the current setting for overriding the cache mode Value is [android.webkit.WebSettings#LOAD_DEFAULT](WebSettings.md), [android.webkit.WebSettings#LOAD_NORMAL](WebSettings.md), [android.webkit.WebSettings#LOAD_CACHE_ELSE_NETWORK](WebSettings.md), [android.webkit.WebSettings#LOAD_NO_CACHE](WebSettings.md), or [android.webkit.WebSettings#LOAD_CACHE_ONLY](WebSettings.md) |
 
 **See Also**
 
-- [#setCacheMode](../android/webkit/ServiceWorkerWebSettings.md)) 
+- [#setCacheMode](ServiceWorkerWebSettings.md)) 
 
 ### setAllowContentAccess
 
@@ -116,7 +116,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 abstract fun setAllowContentAccess(allow: Boolean): Unit
 ```
 
-Enables or disables content URL access from Service Workers, see [WebSettings.setAllowContentAccess](../android/webkit/WebSettings.md)). 
+Enables or disables content URL access from Service Workers, see [WebSettings.setAllowContentAccess](WebSettings.md)). 
 
 ### setAllowFileAccess
 
@@ -126,7 +126,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 abstract fun setAllowFileAccess(allow: Boolean): Unit
 ```
 
-Enables or disables file access within Service Workers, see [WebSettings.setAllowFileAccess](../android/webkit/WebSettings.md)). 
+Enables or disables file access within Service Workers, see [WebSettings.setAllowFileAccess](WebSettings.md)). 
 
 ### setBlockNetworkLoads
 
@@ -136,7 +136,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 abstract fun setBlockNetworkLoads(flag: Boolean): Unit
 ```
 
-Sets whether Service Workers should not load resources from the network, see [WebSettings.setBlockNetworkLoads](../android/webkit/WebSettings.md)).
+Sets whether Service Workers should not load resources from the network, see [WebSettings.setBlockNetworkLoads](WebSettings.md)).
 
 | Parameters ||
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------|
@@ -150,8 +150,8 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 abstract fun setCacheMode(mode: Int): Unit
 ```
 
-Overrides the way the cache is used, see [WebSettings.setCacheMode](../android/webkit/WebSettings.md)).
+Overrides the way the cache is used, see [WebSettings.setCacheMode](WebSettings.md)).
 
 | Parameters ||
 |--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `mode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the mode to use. One of [WebSettings.LOAD_DEFAULT](../android/webkit/WebSettings.md), [WebSettings.LOAD_CACHE_ELSE_NETWORK](../android/webkit/WebSettings.md), [WebSettings.LOAD_NO_CACHE](../android/webkit/WebSettings.md) or [WebSettings.LOAD_CACHE_ONLY](../android/webkit/WebSettings.md). The default value is [WebSettings.LOAD_DEFAULT](../android/webkit/WebSettings.md). Value is [android.webkit.WebSettings#LOAD_DEFAULT](../android/webkit/WebSettings.md), [android.webkit.WebSettings#LOAD_NORMAL](../android/webkit/WebSettings.md), [android.webkit.WebSettings#LOAD_CACHE_ELSE_NETWORK](../android/webkit/WebSettings.md), [android.webkit.WebSettings#LOAD_NO_CACHE](../android/webkit/WebSettings.md), or [android.webkit.WebSettings#LOAD_CACHE_ONLY](../android/webkit/WebSettings.md) |
+| `mode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the mode to use. One of [WebSettings.LOAD_DEFAULT](WebSettings.md), [WebSettings.LOAD_CACHE_ELSE_NETWORK](WebSettings.md), [WebSettings.LOAD_NO_CACHE](WebSettings.md) or [WebSettings.LOAD_CACHE_ONLY](WebSettings.md). The default value is [WebSettings.LOAD_DEFAULT](WebSettings.md). Value is [android.webkit.WebSettings#LOAD_DEFAULT](WebSettings.md), [android.webkit.WebSettings#LOAD_NORMAL](WebSettings.md), [android.webkit.WebSettings#LOAD_CACHE_ELSE_NETWORK](WebSettings.md), [android.webkit.WebSettings#LOAD_NO_CACHE](WebSettings.md), or [android.webkit.WebSettings#LOAD_CACHE_ONLY](WebSettings.md) |

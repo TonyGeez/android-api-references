@@ -5,7 +5,7 @@ Deprecated in [API level 30](https://developer.android.com/guide/topics/manifest
 
 # DrmEvent
 
-Kotlin| [Java](../android/drm/DrmEvent.md) 
+Kotlin| [Java](DrmEvent.md) 
 | --- | --- |
 
 ```
@@ -14,14 +14,14 @@ open class DrmEvent
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.drm.DrmEvent](../android/drm/DrmEvent.md) |
+| ↳ | [android.drm.DrmEvent](DrmEvent.md) |
 
-| Known Direct Subclasses [DrmErrorEvent](../android/drm/DrmErrorEvent.md), [DrmInfoEvent](../android/drm/DrmInfoEvent.md) |-------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [DrmErrorEvent](../android/drm/DrmErrorEvent.md) | An entity class that is passed to the [onError()](../android/drm/DrmManagerClient.OnErrorListener.md))callback. | | [DrmInfoEvent](../android/drm/DrmInfoEvent.md) | An entity class that is passed to the [onInfo()](../android/drm/DrmManagerClient.OnInfoListener.md))callback. | |
+| Known Direct Subclasses [DrmErrorEvent](DrmErrorEvent.md), [DrmInfoEvent](DrmInfoEvent.md) |-------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [DrmErrorEvent](DrmErrorEvent.md) | An entity class that is passed to the [onError()](../android/drm/DrmManagerClient.OnErrorListener.md))callback. | | [DrmInfoEvent](DrmInfoEvent.md) | An entity class that is passed to the [onInfo()](../android/drm/DrmManagerClient.OnInfoListener.md))callback. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | **This class was deprecated in API level 30.**
 |
-| Please use [android.media.MediaDrm](../android/media/MediaDrm.md)
+| Please use [android.media.MediaDrm](../android.media/MediaDrm.md)
 
 A base class that is used to send asynchronous event information from the DRM framework.
 
@@ -29,24 +29,24 @@ A base class that is used to send asynchronous event information from the DRM fr
 
 | Constants ||
 |----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DRM_INFO_OBJECT](../android/drm/DrmEvent.md) The key that is used in the`attributes`HashMap to pass the [DrmInfo](../android/drm/DrmInfo.md) object. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DRM_INFO_STATUS_OBJECT](../android/drm/DrmEvent.md) The key that is used in the`attributes`HashMap to pass the return status. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_ALL_RIGHTS_REMOVED](../android/drm/DrmEvent.md) All of the rights information associated with all DRM schemes have been successfully removed. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DRM_INFO_OBJECT](DrmEvent.md) The key that is used in the`attributes`HashMap to pass the [DrmInfo](DrmInfo.md) object. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DRM_INFO_STATUS_OBJECT](DrmEvent.md) The key that is used in the`attributes`HashMap to pass the return status. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_ALL_RIGHTS_REMOVED](DrmEvent.md) All of the rights information associated with all DRM schemes have been successfully removed. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_DRM_INFO_PROCESSED](../android/drm/DrmEvent.md) The given DRM information has been successfully processed. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_DRM_INFO_PROCESSED](DrmEvent.md) The given DRM information has been successfully processed. |
 
 | Protected constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [DrmEvent](../android/drm/DrmEvent.md))`(`uniqueId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a`DrmEvent`object with the specified parameters. |
-| [DrmEvent](../android/drm/DrmEvent.md))`(`uniqueId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `attributes:` ` [HashMap](../java/util/HashMap.md)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`)` Creates a`DrmEvent`object with the specified parameters. |
+| [DrmEvent](DrmEvent.md))`(`uniqueId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a`DrmEvent`object with the specified parameters. |
+| [DrmEvent](DrmEvent.md))`(`uniqueId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `attributes:` ` [HashMap](../java.util/HashMap.md)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`)` Creates a`DrmEvent`object with the specified parameters. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getAttribute](../android/drm/DrmEvent.md))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Retrieves the attribute associated with the specified key. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getMessage](../android/drm/DrmEvent.md))`()` Retrieves the message description associated with this object. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getType](../android/drm/DrmEvent.md))`()` Retrieves the type of information that is associated with this object. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getAttribute](DrmEvent.md))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Retrieves the attribute associated with the specified key. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getMessage](DrmEvent.md))`()` Retrieves the message description associated with this object. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getType](DrmEvent.md))`()` Retrieves the type of information that is associated with this object. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getUniqueId](../android/drm/DrmEvent.md))`()` Retrieves the unique session identifier associated with this object. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getUniqueId](DrmEvent.md))`()` Retrieves the unique session identifier associated with this object. |
 
 ## Constants
 
@@ -61,7 +61,7 @@ static val DRM_INFO_OBJECT: String
 
 **Deprecated:** *Deprecated in Java.*
 
-The key that is used in the`attributes`HashMap to pass the [DrmInfo](../android/drm/DrmInfo.md) object. 
+The key that is used in the`attributes`HashMap to pass the [DrmInfo](DrmInfo.md) object. 
 
  Value: "drm_info_object"
 
@@ -149,7 +149,7 @@ Creates a`DrmEvent`object with the specified parameters.
 | `type` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Type of information. |
 | `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Message description. |
 | --- | --- |
-| `attributes` | [HashMap](../java/util/HashMap.md)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>!:Attributes for extensible information. |
+| `attributes` | [HashMap](../java.util/HashMap.md)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>!:Attributes for extensible information. |
 
 ## Public methods
 

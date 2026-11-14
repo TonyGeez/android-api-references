@@ -5,7 +5,7 @@ Deprecated in [API level 24](https://developer.android.com/guide/topics/manifest
 
 # GpsSatellite
 
-Kotlin| [Java](../android/location/GpsSatellite.md) 
+Kotlin| [Java](GpsSatellite.md) 
 | --- | --- |
 
 ```
@@ -14,27 +14,27 @@ class GpsSatellite
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.location.GpsSatellite](../android/location/GpsSatellite.md) |
+| ↳ | [android.location.GpsSatellite](GpsSatellite.md) |
 
 | **This class was deprecated in API level 24.**
 |
-| use [GnssStatus](../android/location/GnssStatus.md) and [GnssStatus.Callback](../android/location/GnssStatus.Callback.md).
+| use [GnssStatus](GnssStatus.md) and [GnssStatus.Callback](../android/location/GnssStatus.Callback.md).
 
-This class represents the current state of a GPS satellite. This class is used in conjunction with the [GpsStatus](../android/location/GpsStatus.md) class.
+This class represents the current state of a GPS satellite. This class is used in conjunction with the [GpsStatus](GpsStatus.md) class.
 
 ## Summary
 
 | Public methods ||
 |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getAzimuth](../android/location/GpsSatellite.md))`()` Returns the azimuth of the satellite in degrees. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getElevation](../android/location/GpsSatellite.md))`()` Returns the elevation of the satellite in degrees. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPrn](../android/location/GpsSatellite.md))`()` Returns the PRN (pseudo-random number) for the satellite. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getAzimuth](GpsSatellite.md))`()` Returns the azimuth of the satellite in degrees. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getElevation](GpsSatellite.md))`()` Returns the elevation of the satellite in degrees. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPrn](GpsSatellite.md))`()` Returns the PRN (pseudo-random number) for the satellite. |
 | --- | --- |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getSnr](../android/location/GpsSatellite.md))`()` Returns the signal to noise ratio for the satellite. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasAlmanac](../android/location/GpsSatellite.md))`()` Returns true if the GPS engine has almanac data for the satellite. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasEphemeris](../android/location/GpsSatellite.md))`()` Returns true if the GPS engine has ephemeris data for the satellite. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getSnr](GpsSatellite.md))`()` Returns the signal to noise ratio for the satellite. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasAlmanac](GpsSatellite.md))`()` Returns true if the GPS engine has almanac data for the satellite. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasEphemeris](GpsSatellite.md))`()` Returns true if the GPS engine has ephemeris data for the satellite. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [usedInFix](../android/location/GpsSatellite.md))`()` Returns true if the satellite was used by the GPS engine when calculating the most recent GPS fix. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [usedInFix](GpsSatellite.md))`()` Returns true if the satellite was used by the GPS engine when calculating the most recent GPS fix. |
 
 ## Public methods
 

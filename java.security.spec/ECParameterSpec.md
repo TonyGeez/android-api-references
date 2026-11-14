@@ -10,7 +10,7 @@ open class ECParameterSpec : AlgorithmParameterSpec
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.spec.ECParameterSpec](../java/security/spec/ECParameterSpec.md) |
+| ↳ | [java.security.spec.ECParameterSpec](ECParameterSpec.md) |
 
 This immutable class specifies the set of domain parameters used with elliptic curve cryptography (ECC).
 
@@ -18,15 +18,15 @@ This immutable class specifies the set of domain parameters used with elliptic c
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ECParameterSpec](../java/security/spec/ECParameterSpec.md))`(`curve:` ` [EllipticCurve](../java/security/spec/EllipticCurve.md)!`, `g:` ` [ECPoint](../java/security/spec/ECPoint.md)!`, `n:` ` [BigInteger](../java/math/BigInteger.md)!`, `h:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates elliptic curve domain parameters based on the specified values. |
+| [ECParameterSpec](ECParameterSpec.md))`(`curve:` ` [EllipticCurve](EllipticCurve.md)!`, `g:` ` [ECPoint](ECPoint.md)!`, `n:` ` [BigInteger](../java.math/BigInteger.md)!`, `h:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates elliptic curve domain parameters based on the specified values. |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCofactor](../java/security/spec/ECParameterSpec.md))`()` Returns the cofactor. |
-| open [EllipticCurve](../java/security/spec/EllipticCurve.md)! | [getCurve](../java/security/spec/ECParameterSpec.md))`()` Returns the elliptic curve that this parameter defines. |
-| open [ECPoint](../java/security/spec/ECPoint.md)! | [getGenerator](../java/security/spec/ECParameterSpec.md))`()` Returns the generator which is also known as the base point. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCofactor](ECParameterSpec.md))`()` Returns the cofactor. |
+| open [EllipticCurve](EllipticCurve.md)! | [getCurve](ECParameterSpec.md))`()` Returns the elliptic curve that this parameter defines. |
+| open [ECPoint](ECPoint.md)! | [getGenerator](ECParameterSpec.md))`()` Returns the generator which is also known as the base point. |
 | --- | --- |
-| open [BigInteger](../java/math/BigInteger.md)! | [getOrder](../java/security/spec/ECParameterSpec.md))`()` Returns the order of the generator. |
+| open [BigInteger](../java.math/BigInteger.md)! | [getOrder](ECParameterSpec.md))`()` Returns the order of the generator. |
 
 ## Public constructors
 
@@ -46,9 +46,9 @@ Creates elliptic curve domain parameters based on the specified values.
 
 | Parameters ||
 |---------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| `curve` | [EllipticCurve](../java/security/spec/EllipticCurve.md)!:the elliptic curve which this parameter defines. |
-| `g` | [ECPoint](../java/security/spec/ECPoint.md)!:the generator which is also known as the base point. |
-| `n` | [BigInteger](../java/math/BigInteger.md)!:the order of the generator`g`. |
+| `curve` | [EllipticCurve](EllipticCurve.md)!:the elliptic curve which this parameter defines. |
+| `g` | [ECPoint](ECPoint.md)!:the generator which is also known as the base point. |
+| `n` | [BigInteger](../java.math/BigInteger.md)!:the order of the generator`g`. |
 | --- | --- |
 | `h` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the cofactor. |
 
@@ -85,7 +85,7 @@ Returns the elliptic curve that this parameter defines.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------|-------------------------------------------------|
-| [EllipticCurve](../java/security/spec/EllipticCurve.md)! | the elliptic curve that this parameter defines. |
+| [EllipticCurve](EllipticCurve.md)! | the elliptic curve that this parameter defines. |
 
 ### getGenerator
 
@@ -99,7 +99,7 @@ Returns the generator which is also known as the base point.
 
 | Return ||
 |---------------------------------------------------------------------------------------|------------------------------------------------------|
-| [ECPoint](../java/security/spec/ECPoint.md)! | the generator which is also known as the base point. |
+| [ECPoint](ECPoint.md)! | the generator which is also known as the base point. |
 
 ### getOrder
 
@@ -113,4 +113,4 @@ Returns the order of the generator.
 
 | Return ||
 |------------------------------------------------------------------------------------------|-----------------------------|
-| [BigInteger](../java/math/BigInteger.md)! | the order of the generator. |
+| [BigInteger](../java.math/BigInteger.md)! | the order of the generator. |

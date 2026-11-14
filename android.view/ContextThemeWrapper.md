@@ -8,21 +8,21 @@ open class ContextThemeWrapper : ContextWrapper
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.content.Context](../android/content/Context.md) |||
-| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) ||
-| | | ↳ | [android.view.ContextThemeWrapper](../android/view/ContextThemeWrapper.md) |
+| ↳ | [android.content.Context](../android.content/Context.md) |||
+| | ↳ | [android.content.ContextWrapper](../android.content/ContextWrapper.md) ||
+| | | ↳ | [android.view.ContextThemeWrapper](ContextThemeWrapper.md) |
 | --- | --- | --- | --- |
 
-Known Direct Subclasses [Activity](../android/app/Activity.md) [Activity](../android/app/Activity.md) An activity is a single, focused thing that the user can do.
-Known Indirect Subclasses [AccountAuthenticatorActivity](../android/accounts/AccountAuthenticatorActivity.md), [ActivityGroup](../android/app/ActivityGroup.md), [AliasActivity](../android/app/AliasActivity.md), [ExpandableListActivity](../android/app/ExpandableListActivity.md), [LauncherActivity](../android/app/LauncherActivity.md), [ListActivity](../android/app/ListActivity.md), [NativeActivity](../android/app/NativeActivity.md), [PreferenceActivity](../android/preference/PreferenceActivity.md), [TabActivity](../android/app/TabActivity.md) [AccountAuthenticatorActivity](../android/accounts/AccountAuthenticatorActivity.md) Base class for implementing an Activity that is used to help implement an AbstractAccountAuthenticator.
-[ActivityGroup](../android/app/ActivityGroup.md) A screen that contains and runs multiple embedded activities.
-[AliasActivity](../android/app/AliasActivity.md) Stub activity that launches another activity (and then finishes itself) based on information in its component's manifest meta-data.
-[ExpandableListActivity](../android/app/ExpandableListActivity.md) An activity that displays an expandable list of items by binding to a data source implementing the ExpandableListAdapter, and exposes event handlers when the user selects an item.
-[LauncherActivity](../android/app/LauncherActivity.md) Displays a list of all activities which can be performed for a given intent.
-[ListActivity](../android/app/ListActivity.md) An activity that displays a list of items by binding to a data source such as an array or Cursor, and exposes event handlers when the user selects an item.
-[NativeActivity](../android/app/NativeActivity.md) Convenience for implementing an activity that will be implemented purely in native code.
-[PreferenceActivity](../android/preference/PreferenceActivity.md) This is the base class for an activity to show a hierarchy of preferences to the user.
-[TabActivity](../android/app/TabActivity.md) For apps developing against `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#HONEYCOMB:kotlin.Int` or later, tabs are typically presented in the UI using the new `https://developer.android.com/reference/kotlin/android/app/ActionBar.html#newTab()` and related APIs for placing tabs within their action bar area.
+Known Direct Subclasses [Activity](../android.app/Activity.md) [Activity](../android.app/Activity.md) An activity is a single, focused thing that the user can do.
+Known Indirect Subclasses [AccountAuthenticatorActivity](../android.accounts/AccountAuthenticatorActivity.md), [ActivityGroup](../android.app/ActivityGroup.md), [AliasActivity](../android.app/AliasActivity.md), [ExpandableListActivity](../android.app/ExpandableListActivity.md), [LauncherActivity](../android.app/LauncherActivity.md), [ListActivity](../android.app/ListActivity.md), [NativeActivity](../android.app/NativeActivity.md), [PreferenceActivity](../android.preference/PreferenceActivity.md), [TabActivity](../android.app/TabActivity.md) [AccountAuthenticatorActivity](../android.accounts/AccountAuthenticatorActivity.md) Base class for implementing an Activity that is used to help implement an AbstractAccountAuthenticator.
+[ActivityGroup](../android.app/ActivityGroup.md) A screen that contains and runs multiple embedded activities.
+[AliasActivity](../android.app/AliasActivity.md) Stub activity that launches another activity (and then finishes itself) based on information in its component's manifest meta-data.
+[ExpandableListActivity](../android.app/ExpandableListActivity.md) An activity that displays an expandable list of items by binding to a data source implementing the ExpandableListAdapter, and exposes event handlers when the user selects an item.
+[LauncherActivity](../android.app/LauncherActivity.md) Displays a list of all activities which can be performed for a given intent.
+[ListActivity](../android.app/ListActivity.md) An activity that displays a list of items by binding to a data source such as an array or Cursor, and exposes event handlers when the user selects an item.
+[NativeActivity](../android.app/NativeActivity.md) Convenience for implementing an activity that will be implemented purely in native code.
+[PreferenceActivity](../android.preference/PreferenceActivity.md) This is the base class for an activity to show a hierarchy of preferences to the user.
+[TabActivity](../android.app/TabActivity.md) For apps developing against `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#HONEYCOMB:kotlin.Int` or later, tabs are typically presented in the UI using the new `https://developer.android.com/reference/kotlin/android/app/ActionBar.html#newTab()` and related APIs for placing tabs within their action bar area.
 
 A context wrapper that allows you to modify or replace the theme of the wrapped context.
 
@@ -946,8 +946,8 @@ Use with `https://developer.android.com/reference/kotlin/android/content/Context
 | Public methods ||
 |---|---|
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ContextThemeWrapper#applyOverrideConfiguration(android.content.res.Configuration)(overrideConfiguration: https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#!)` Call to set an "override configuration" on this context -- this is a configuration that replies one or more values of the standard configuration that is applied to the context. |
-| open [AssetManager](../android/content/res/AssetManager.md)! | `https://developer.android.com/reference/kotlin/android/view/ContextThemeWrapper#getAssets()()` Returns an AssetManager instance for the application's package. |
-| open [Resources](../android/content/res/Resources.md)! | `https://developer.android.com/reference/kotlin/android/view/ContextThemeWrapper#getResources()()` Returns a Resources instance for the application's package. |
+| open [AssetManager](../android.content.res/AssetManager.md)! | `https://developer.android.com/reference/kotlin/android/view/ContextThemeWrapper#getAssets()()` Returns an AssetManager instance for the application's package. |
+| open [Resources](../android.content.res/Resources.md)! | `https://developer.android.com/reference/kotlin/android/view/ContextThemeWrapper#getResources()()` Returns a Resources instance for the application's package. |
 | --- | --- |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | `https://developer.android.com/reference/kotlin/android/view/ContextThemeWrapper#getSystemService(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Return the handle to a system-level service by name. |
 | open [Resources.Theme](../android/content/res/Resources.Theme.md)! | `https://developer.android.com/reference/kotlin/android/view/ContextThemeWrapper#getTheme()()` Return the Theme object associated with this Context. |
@@ -2341,7 +2341,7 @@ Unlike `https://developer.android.com/reference/kotlin/android/view/ContextTheme
 
 | Parameters ||
 |---|---|
-| `base` | [Context](../android/content/Context.md)!: the base context |
+| `base` | [Context](../android.content/Context.md)!: the base context |
 | `theme` | [Resources.Theme](../android/content/res/Resources.Theme.md)!: the theme against which resources should be inflated |
 
 ### ContextThemeWrapper
@@ -2360,7 +2360,7 @@ The specified theme will be applied on top of the base context's theme. Any attr
 
 | Parameters ||
 |---|---|
-| `base` | [Context](../android/content/Context.md)!: the base context |
+| `base` | [Context](../android.content/Context.md)!: the base context |
 | `themeResId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the resource ID of the theme to be applied on top of the base context's theme |
 
 ## Public methods

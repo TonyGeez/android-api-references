@@ -10,7 +10,7 @@ open class ECPrivateKeySpec : KeySpec
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.spec.ECPrivateKeySpec](../java/security/spec/ECPrivateKeySpec.md) |
+| ↳ | [java.security.spec.ECPrivateKeySpec](ECPrivateKeySpec.md) |
 
 This immutable class specifies an elliptic curve private key with its associated parameters.
 
@@ -18,12 +18,12 @@ This immutable class specifies an elliptic curve private key with its associated
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ECPrivateKeySpec](../java/security/spec/ECPrivateKeySpec.md))`(`s:` ` [BigInteger](../java/math/BigInteger.md)!`, `params:` ` [ECParameterSpec](../java/security/spec/ECParameterSpec.md)!`)` Creates a new ECPrivateKeySpec with the specified parameter values. |
+| [ECPrivateKeySpec](ECPrivateKeySpec.md))`(`s:` ` [BigInteger](../java.math/BigInteger.md)!`, `params:` ` [ECParameterSpec](ECParameterSpec.md)!`)` Creates a new ECPrivateKeySpec with the specified parameter values. |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [ECParameterSpec](../java/security/spec/ECParameterSpec.md)! | [getParams](../java/security/spec/ECPrivateKeySpec.md))`()` Returns the associated elliptic curve domain parameters. |
-| open [BigInteger](../java/math/BigInteger.md)! | [getS](../java/security/spec/ECPrivateKeySpec.md))`()` Returns the private value S. |
+| open [ECParameterSpec](ECParameterSpec.md)! | [getParams](ECPrivateKeySpec.md))`()` Returns the associated elliptic curve domain parameters. |
+| open [BigInteger](../java.math/BigInteger.md)! | [getS](ECPrivateKeySpec.md))`()` Returns the private value S. |
 
 ## Public constructors
 
@@ -41,8 +41,8 @@ Creates a new ECPrivateKeySpec with the specified parameter values.
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `s` | [BigInteger](../java/math/BigInteger.md)!:the private value. |
-| `params` | [ECParameterSpec](../java/security/spec/ECParameterSpec.md)!:the associated elliptic curve domain parameters. |
+| `s` | [BigInteger](../java.math/BigInteger.md)!:the private value. |
+| `params` | [ECParameterSpec](ECParameterSpec.md)!:the associated elliptic curve domain parameters. |
 
 | Exceptions ||
 |----------------------------------|-------------------------|
@@ -62,7 +62,7 @@ Returns the associated elliptic curve domain parameters.
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------|---------------------------|
-| [ECParameterSpec](../java/security/spec/ECParameterSpec.md)! | the EC domain parameters. |
+| [ECParameterSpec](ECParameterSpec.md)! | the EC domain parameters. |
 
 ### getS
 
@@ -76,4 +76,4 @@ Returns the private value S.
 
 | Return ||
 |------------------------------------------------------------------------------------------|----------------------|
-| [BigInteger](../java/math/BigInteger.md)! | the private value S. |
+| [BigInteger](../java.math/BigInteger.md)! | the private value S. |

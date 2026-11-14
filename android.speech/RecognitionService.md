@@ -8,11 +8,11 @@ abstract class RecognitionService : Service
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](../android/content/Context.md) ||||
-| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) |||
-| | | ↳ | [android.app.Service](../android/app/Service.md) ||
+| ↳ | [android.content.Context](../android.content/Context.md) ||||
+| | ↳ | [android.content.ContextWrapper](../android.content/ContextWrapper.md) |||
+| | | ↳ | [android.app.Service](../android.app/Service.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.speech.RecognitionService](../android/speech/RecognitionService.md) |
+| | | | ↳ | [android.speech.RecognitionService](RecognitionService.md) |
 
 This class provides a base class for recognition service implementations. This class should be extended only in case you wish to implement a new speech recognizer. Please note that the implementation of this service is stateless.
 
@@ -1051,9 +1051,9 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 
 | Public methods ||
 |---|---|
-| open [Context](../android/content/Context.md) | `https://developer.android.com/reference/kotlin/android/speech/RecognitionService#createContext(android.content.ContextParams)(contextParams: https://developer.android.com/reference/kotlin/android/content/ContextParams.html#)` Creates a context with specific properties and behaviors. |
+| open [Context](../android.content/Context.md) | `https://developer.android.com/reference/kotlin/android/speech/RecognitionService#createContext(android.content.ContextParams)(contextParams: https://developer.android.com/reference/kotlin/android/content/ContextParams.html#)` Creates a context with specific properties and behaviors. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/speech/RecognitionService#getMaxConcurrentSessionsCount()()` Returns the maximal number of recognition sessions ongoing at the same time. |
-| [IBinder](../android/os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/speech/RecognitionService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
+| [IBinder](../android.os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/speech/RecognitionService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/speech/RecognitionService#onCheckRecognitionSupport(android.content.Intent,%20android.content.AttributionSource,%20android.speech.RecognitionService.SupportCallback)(recognizerIntent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, attributionSource: https://developer.android.com/reference/kotlin/android/content/AttributionSource.html#, supportCallback: https://developer.android.com/reference/kotlin/android/speech/RecognitionService.SupportCallback)` Queries the service on whether it would support a `https://developer.android.com/reference/kotlin/android/speech/RecognitionService#onStartListening(android.content.Intent,%20android.speech.RecognitionService.Callback)` for the same `recognizerIntent`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/speech/RecognitionService#onCheckRecognitionSupport(android.content.Intent,%20android.speech.RecognitionService.SupportCallback)(recognizerIntent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, supportCallback: https://developer.android.com/reference/kotlin/android/speech/RecognitionService.SupportCallback)` Queries the service on whether it would support a `https://developer.android.com/reference/kotlin/android/speech/RecognitionService#onStartListening(android.content.Intent,%20android.speech.RecognitionService.Callback)` for the same `recognizerIntent`. |
@@ -2804,7 +2804,7 @@ Creates a context with specific properties and behaviors.
 
 | Parameters ||
 |---|---|
-| `contextParams` | [ContextParams](../android/content/ContextParams.md): This value cannot be `null`. |
+| `contextParams` | [ContextParams](../android.content/ContextParams.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -2836,7 +2836,7 @@ Return the communication channel to the service. May return null if clients can 
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
+| `intent` | [Intent](../android.content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
 
 | Return ||
 |---|---|
@@ -2864,8 +2864,8 @@ Provides the calling AttributionSource to the service implementation so that per
 
 | Parameters ||
 |---|---|
-| `recognizerIntent` | [Intent](../android/content/Intent.md): This value cannot be `null`. |
-| `attributionSource` | [AttributionSource](../android/content/AttributionSource.md): This value cannot be `null`. |
+| `recognizerIntent` | [Intent](../android.content/Intent.md): This value cannot be `null`. |
+| `attributionSource` | [AttributionSource](../android.content/AttributionSource.md): This value cannot be `null`. |
 | `supportCallback` | [RecognitionService.SupportCallback](../android/speech/RecognitionService.SupportCallback.md): This value cannot be `null`. |
 | --- | --- |
 
@@ -2888,7 +2888,7 @@ If the service does not offer the support check it will notify the caller with `
 
 | Parameters ||
 |---|---|
-| `recognizerIntent` | [Intent](../android/content/Intent.md): This value cannot be `null`. |
+| `recognizerIntent` | [Intent](../android.content/Intent.md): This value cannot be `null`. |
 | `supportCallback` | [RecognitionService.SupportCallback](../android/speech/RecognitionService.SupportCallback.md): This value cannot be `null`. |
 
 ### onDestroy
@@ -2913,7 +2913,7 @@ Requests the download of the recognizer support for `recognizerIntent`.
 
 | Parameters ||
 |---|---|
-| `recognizerIntent` | [Intent](../android/content/Intent.md): This value cannot be `null`. |
+| `recognizerIntent` | [Intent](../android.content/Intent.md): This value cannot be `null`. |
 
 ### onTriggerModelDownload
 
@@ -2932,8 +2932,8 @@ Provides the calling AttributionSource to the service implementation so that per
 
 | Parameters ||
 |---|---|
-| `recognizerIntent` | [Intent](../android/content/Intent.md): This value cannot be `null`. |
-| `attributionSource` | [AttributionSource](../android/content/AttributionSource.md): This value cannot be `null`. |
+| `recognizerIntent` | [Intent](../android.content/Intent.md): This value cannot be `null`. |
+| `attributionSource` | [AttributionSource](../android.content/AttributionSource.md): This value cannot be `null`. |
 
 ### onTriggerModelDownload
 
@@ -2959,9 +2959,9 @@ Client will receive the progress updates via the given `https://developer.androi
 
 | Parameters ||
 |---|---|
-| `recognizerIntent` | [Intent](../android/content/Intent.md): contains parameters for the recognition to be performed. The intent may also contain optional extras, see `https://developer.android.com/reference/kotlin/android/speech/RecognizerIntent`. This value cannot be `null`. |
-| `attributionSource` | [AttributionSource](../android/content/AttributionSource.md): the attribution source of the caller. This value cannot be `null`. |
-| `listener` | [ModelDownloadListener](../android/speech/ModelDownloadListener.md): on which to receive updates about the model download request. This value cannot be `null`. |
+| `recognizerIntent` | [Intent](../android.content/Intent.md): contains parameters for the recognition to be performed. The intent may also contain optional extras, see `https://developer.android.com/reference/kotlin/android/speech/RecognizerIntent`. This value cannot be `null`. |
+| `attributionSource` | [AttributionSource](../android.content/AttributionSource.md): the attribution source of the caller. This value cannot be `null`. |
+| `listener` | [ModelDownloadListener](ModelDownloadListener.md): on which to receive updates about the model download request. This value cannot be `null`. |
 | --- | --- |
 
 ## Protected methods
@@ -3007,7 +3007,7 @@ Context attributionContext = context.createContext(new ContextParams.Builder()
 
 | Parameters ||
 |---|---|
-| `recognizerIntent` | [Intent](../android/content/Intent.md)!: contains parameters for the recognition to be performed. The intent may also contain optional extras, see `https://developer.android.com/reference/kotlin/android/speech/RecognizerIntent`. If these values are not set explicitly, default values should be used by the recognizer. |
+| `recognizerIntent` | [Intent](../android.content/Intent.md)!: contains parameters for the recognition to be performed. The intent may also contain optional extras, see `https://developer.android.com/reference/kotlin/android/speech/RecognizerIntent`. If these values are not set explicitly, default values should be used by the recognizer. |
 | `listener` | [RecognitionService.Callback](../android/speech/RecognitionService.Callback.md)!: that will receive the service's callbacks |
 
 ### onStopListening

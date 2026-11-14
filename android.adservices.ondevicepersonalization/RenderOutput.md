@@ -4,7 +4,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 
 # RenderOutput
 
-Kotlin| [Java](../android/adservices/ondevicepersonalization/RenderOutput.md) 
+Kotlin| [Java](RenderOutput.md) 
 | --- | --- |
 
 ```
@@ -13,24 +13,24 @@ class RenderOutput
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.adservices.ondevicepersonalization.RenderOutput](../android/adservices/ondevicepersonalization/RenderOutput.md) |
+| ↳ | [android.adservices.ondevicepersonalization.RenderOutput](RenderOutput.md) |
 
-The result returned by [IsolatedWorker.onRender(RenderInput, android.os.OutcomeReceiver)](../android/adservices/ondevicepersonalization/IsolatedWorker.md)).
+The result returned by [IsolatedWorker.onRender(RenderInput, android.os.OutcomeReceiver)](IsolatedWorker.md)).
 
 ## Summary
 
 | Nested classes ||
 |---|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](../android/adservices/ondevicepersonalization/RenderOutput.Builder.md) A builder for [RenderOutput](../android/adservices/ondevicepersonalization/RenderOutput.md) |
+| | [Builder](../android/adservices/ondevicepersonalization/RenderOutput.Builder.md) A builder for [RenderOutput](RenderOutput.md) |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/adservices/ondevicepersonalization/RenderOutput.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getContent](../android/adservices/ondevicepersonalization/RenderOutput.md))`()` The HTML content to be rendered in a webview. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getTemplateId](../android/adservices/ondevicepersonalization/RenderOutput.md))`()` A key in the REMOTE_DATA [IsolatedService.getRemoteData(RequestToken)](../android/adservices/ondevicepersonalization/IsolatedService.md))table that points to an [Apache Velocity](../android/adservices/ondevicepersonalization/velocity.apache.org.md) template. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](RenderOutput.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getContent](RenderOutput.md))`()` The HTML content to be rendered in a webview. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getTemplateId](RenderOutput.md))`()` A key in the REMOTE_DATA [IsolatedService.getRemoteData(RequestToken)](IsolatedService.md))table that points to an [Apache Velocity](../android/adservices/ondevicepersonalization/velocity.apache.org.md) template. |
 | --- | --- |
-| [PersistableBundle](../android/os/PersistableBundle.md) | [getTemplateParams](../android/adservices/ondevicepersonalization/RenderOutput.md))`()` The parameters to be populated in the template from [getTemplateId()](../android/adservices/ondevicepersonalization/RenderOutput.md)). |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/adservices/ondevicepersonalization/RenderOutput.md))`()` <br /> |
+| [PersistableBundle](../android.os/PersistableBundle.md) | [getTemplateParams](RenderOutput.md))`()` The parameters to be populated in the template from [getTemplateId()](RenderOutput.md)). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](RenderOutput.md))`()` <br /> |
 
 ## Public methods
 
@@ -71,7 +71,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun getContent(): String?
 ```
 
-The HTML content to be rendered in a webview. If this is null, the ODP service generates HTML from the data in [getTemplateId()](../android/adservices/ondevicepersonalization/RenderOutput.md))and [getTemplateParams()](../android/adservices/ondevicepersonalization/RenderOutput.md))as described below. 
+The HTML content to be rendered in a webview. If this is null, the ODP service generates HTML from the data in [getTemplateId()](RenderOutput.md))and [getTemplateParams()](RenderOutput.md))as described below. 
 
 ### getTemplateId
 
@@ -81,7 +81,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun getTemplateId(): String?
 ```
 
-A key in the REMOTE_DATA [IsolatedService.getRemoteData(RequestToken)](../android/adservices/ondevicepersonalization/IsolatedService.md))table that points to an [Apache Velocity](../android/adservices/ondevicepersonalization/velocity.apache.org.md) template. This is ignored if [getContent()](../android/adservices/ondevicepersonalization/RenderOutput.md))is not null. 
+A key in the REMOTE_DATA [IsolatedService.getRemoteData(RequestToken)](IsolatedService.md))table that points to an [Apache Velocity](../android/adservices/ondevicepersonalization/velocity.apache.org.md) template. This is ignored if [getContent()](RenderOutput.md))is not null. 
 
 ### getTemplateParams
 
@@ -91,7 +91,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun getTemplateParams(): PersistableBundle
 ```
 
-The parameters to be populated in the template from [getTemplateId()](../android/adservices/ondevicepersonalization/RenderOutput.md)). This is ignored if [getContent()](../android/adservices/ondevicepersonalization/RenderOutput.md))is not null. 
+The parameters to be populated in the template from [getTemplateId()](RenderOutput.md)). This is ignored if [getContent()](RenderOutput.md))is not null. 
 
 ### hashCode
 

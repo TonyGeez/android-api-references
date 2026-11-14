@@ -4,7 +4,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # Length
 
-Kotlin| [Java](../android/health/connect/datatypes/units/Length.md) 
+Kotlin| [Java](Length.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class Length : Comparable<Length!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.health.connect.datatypes.units.Length](../android/health/connect/datatypes/units/Length.md) |
+| ↳ | [android.health.connect.datatypes.units.Length](Length.md) |
 
 Represents a unit of length. Supported units: meters
 
@@ -21,13 +21,13 @@ Represents a unit of length. Supported units: meters
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](../android/health/connect/datatypes/units/Length.md))`(`other:` ` [Length](../android/health/connect/datatypes/units/Length.md)`)` Compares this object with the specified object for order. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/health/connect/datatypes/units/Length.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| static [Length](../android/health/connect/datatypes/units/Length.md) | [fromMeters](../android/health/connect/datatypes/units/Length.md))`(`value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Creates a Length object with the specified value in meters. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](Length.md))`(`other:` ` [Length](Length.md)`)` Compares this object with the specified object for order. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](Length.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| static [Length](Length.md) | [fromMeters](Length.md))`(`value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Creates a Length object with the specified value in meters. |
 | --- | --- |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getInMeters](../android/health/connect/datatypes/units/Length.md))`()` Returns length in meters |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/health/connect/datatypes/units/Length.md))`()` Returns a hash code value for the object. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/health/connect/datatypes/units/Length.md))`()` <br /> |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getInMeters](Length.md))`()` Returns length in meters |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](Length.md))`()` Returns a hash code value for the object. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](Length.md))`()` <br /> |
 | --- | --- |
 
 ## Public methods
@@ -45,7 +45,7 @@ Compares this object with the specified object for order. Returns a negative int
 | Parameters ||
 |---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `o` | the object to be compared. |
-| `other` | [Length](../android/health/connect/datatypes/units/Length.md):the object to be compared. This value cannot be`null`. |
+| `other` | [Length](Length.md):the object to be compared. This value cannot be`null`. |
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
@@ -91,7 +91,7 @@ Creates a Length object with the specified value in meters.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------|-----------------------------|
-| [Length](../android/health/connect/datatypes/units/Length.md) | This value cannot be`null`. |
+| [Length](Length.md) | This value cannot be`null`. |
 
 ### getInMeters
 

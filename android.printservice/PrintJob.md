@@ -4,7 +4,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 
 # PrintJob
 
-Kotlin| [Java](../android/printservice/PrintJob.md) 
+Kotlin| [Java](PrintJob.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class PrintJob
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.printservice.PrintJob](../android/printservice/PrintJob.md) |
+| ↳ | [android.printservice.PrintJob](PrintJob.md) |
 
 This class represents a print job from the perspective of a print service. It provides APIs for observing the print job state and performing operations on the print job.
 
@@ -23,37 +23,37 @@ This class represents a print job from the perspective of a print service. It pr
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [block](../android/printservice/PrintJob.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Blocks the print job. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [cancel](../android/printservice/PrintJob.md))`()` Cancels the print job. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [complete](../android/printservice/PrintJob.md))`()` Completes the print job. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [block](PrintJob.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Blocks the print job. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [cancel](PrintJob.md))`()` Cancels the print job. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [complete](PrintJob.md))`()` Completes the print job. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/printservice/PrintJob.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [fail](../android/printservice/PrintJob.md))`(`error:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Fails the print job. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAdvancedIntOption](../android/printservice/PrintJob.md))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Gets the value of an advanced (printer specific) print option. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](PrintJob.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [fail](PrintJob.md))`(`error:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Fails the print job. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAdvancedIntOption](PrintJob.md))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Gets the value of an advanced (printer specific) print option. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAdvancedStringOption](../android/printservice/PrintJob.md))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Gets the value of an advanced (printer specific) print option. |
-| [PrintDocument](../android/printservice/PrintDocument.md) | [getDocument](../android/printservice/PrintJob.md))`()` Gets the printed document. |
-| [PrintJobId](../android/print/PrintJobId.md)! | [getId](../android/printservice/PrintJob.md))`()` Gets the unique print job id. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAdvancedStringOption](PrintJob.md))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Gets the value of an advanced (printer specific) print option. |
+| [PrintDocument](PrintDocument.md) | [getDocument](PrintJob.md))`()` Gets the printed document. |
+| [PrintJobId](../android.print/PrintJobId.md)! | [getId](PrintJob.md))`()` Gets the unique print job id. |
 | --- | --- |
-| [PrintJobInfo](../android/print/PrintJobInfo.md) | [getInfo](../android/printservice/PrintJob.md))`()` Gets the [PrintJobInfo](../android/print/PrintJobInfo.md) that describes this job. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getTag](../android/printservice/PrintJob.md))`()` Gets the print job tag. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasAdvancedOption](../android/printservice/PrintJob.md))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Gets whether this job has a given advanced (printer specific) print option. |
+| [PrintJobInfo](../android.print/PrintJobInfo.md) | [getInfo](PrintJob.md))`()` Gets the [PrintJobInfo](../android.print/PrintJobInfo.md) that describes this job. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getTag](PrintJob.md))`()` Gets the print job tag. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasAdvancedOption](PrintJob.md))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Gets whether this job has a given advanced (printer specific) print option. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/printservice/PrintJob.md))`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isBlocked](../android/printservice/PrintJob.md))`()` Gets whether this print job is blocked. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isCancelled](../android/printservice/PrintJob.md))`()` Gets whether this print job is cancelled. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](PrintJob.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isBlocked](PrintJob.md))`()` Gets whether this print job is blocked. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isCancelled](PrintJob.md))`()` Gets whether this print job is cancelled. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isCompleted](../android/printservice/PrintJob.md))`()` Gets whether this print job is completed. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFailed](../android/printservice/PrintJob.md))`()` Gets whether this print job is failed. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isQueued](../android/printservice/PrintJob.md))`()` Gets whether this print job is queued. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isCompleted](PrintJob.md))`()` Gets whether this print job is completed. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFailed](PrintJob.md))`()` Gets whether this print job is failed. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isQueued](PrintJob.md))`()` Gets whether this print job is queued. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isStarted](../android/printservice/PrintJob.md))`()` Gets whether this print job is started. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setProgress](../android/printservice/PrintJob.md))`(`progress:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the progress of this print job as a fraction of 1. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStatus](../android/printservice/PrintJob.md))`(`statusResId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the status of this print job as a string resource. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isStarted](PrintJob.md))`()` Gets whether this print job is started. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setProgress](PrintJob.md))`(`progress:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the progress of this print job as a fraction of 1. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStatus](PrintJob.md))`(`statusResId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the status of this print job as a string resource. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStatus](../android/printservice/PrintJob.md))`(`status:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)?`)` Sets the status of this print job. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [setTag](../android/printservice/PrintJob.md))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Sets a tag that is valid in the context of a [PrintService](../android/printservice/PrintService.md) and is not interpreted by the system. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [start](../android/printservice/PrintJob.md))`()` Starts the print job. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStatus](PrintJob.md))`(`status:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)?`)` Sets the status of this print job. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [setTag](PrintJob.md))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Sets a tag that is valid in the context of a [PrintService](PrintService.md) and is not interpreted by the system. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [start](PrintJob.md))`()` Starts the print job. |
 | --- | --- |
 
 ## Public methods
@@ -66,7 +66,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 fun block(reason: String?): Boolean
 ```
 
-Blocks the print job. You should call this method if [isStarted()](../android/printservice/PrintJob.md))returns true and you need to block the print job. For example, the user has to add some paper to continue printing. To resume the print job call [start()](../android/printservice/PrintJob.md)). To change the reason call [setStatus(java.lang.CharSequence)](../android/printservice/PrintJob.md)). 
+Blocks the print job. You should call this method if [isStarted()](PrintJob.md))returns true and you need to block the print job. For example, the user has to add some paper to continue printing. To resume the print job call [start()](PrintJob.md)). To change the reason call [setStatus(java.lang.CharSequence)](PrintJob.md)). 
 This method must be called from the main thread of your app.
 
 | Parameters ||
@@ -90,7 +90,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 fun cancel(): Boolean
 ```
 
-Cancels the print job. You should call this method if [isQueued()](../android/printservice/PrintJob.md))or [or #isBlocked()](../android/printservice/PrintJob.md))returns true and you canceled the print job as a response to a call to [PrintService.onRequestCancelPrintJob(PrintJob)](../android/printservice/PrintService.md)). 
+Cancels the print job. You should call this method if [isQueued()](PrintJob.md))or [or #isBlocked()](PrintJob.md))returns true and you canceled the print job as a response to a call to [PrintService.onRequestCancelPrintJob(PrintJob)](PrintService.md)). 
 This method must be called from the main thread of your app.
 
 | Return ||
@@ -111,7 +111,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 fun complete(): Boolean
 ```
 
-Completes the print job. You should call this method if [isStarted()](../android/printservice/PrintJob.md))returns true and you are done printing. 
+Completes the print job. You should call this method if [isStarted()](PrintJob.md))returns true and you are done printing. 
 This method must be called from the main thread of your app.
 
 | Return ||
@@ -158,7 +158,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 fun fail(error: String?): Boolean
 ```
 
-Fails the print job. You should call this method if [isQueued()](../android/printservice/PrintJob.md))or [isStarted()](../android/printservice/PrintJob.md))or [isBlocked()](../android/printservice/PrintJob.md))returns true you failed while printing. 
+Fails the print job. You should call this method if [isQueued()](PrintJob.md))or [isStarted()](PrintJob.md))or [isBlocked()](PrintJob.md))returns true you failed while printing. 
 This method must be called from the main thread of your app.
 
 | Parameters ||
@@ -226,7 +226,7 @@ This method must be called from the main thread of your app.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------|-------------------------------------------|
-| [PrintDocument](../android/printservice/PrintDocument.md) | The document. This value cannot be`null`. |
+| [PrintDocument](PrintDocument.md) | The document. This value cannot be`null`. |
 
 ### getId
 
@@ -241,7 +241,7 @@ This method must be called from the main thread of your app.
 
 | Return ||
 |----------------------------------------------------------------------------------------------|---------|
-| [PrintJobId](../android/print/PrintJobId.md)! | The id. |
+| [PrintJobId](../android.print/PrintJobId.md)! | The id. |
 
 ### getInfo
 
@@ -251,7 +251,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 fun getInfo(): PrintJobInfo
 ```
 
-Gets the [PrintJobInfo](../android/print/PrintJobInfo.md) that describes this job.
+Gets the [PrintJobInfo](../android.print/PrintJobInfo.md) that describes this job.
 
 **Node:**The returned info object is a snapshot of the current print job state. Every call to this method returns a fresh info object that reflects the current print job state.
 
@@ -259,7 +259,7 @@ This method must be called from the main thread of your app.
 
 | Return ||
 |-------------------------------------------------------------------------------------------------|-------------------------------------------------|
-| [PrintJobInfo](../android/print/PrintJobInfo.md) | The print job info. This value cannot be`null`. |
+| [PrintJobInfo](../android.print/PrintJobInfo.md) | The print job info. This value cannot be`null`. |
 
 ### getTag
 
@@ -278,7 +278,7 @@ This method must be called from the main thread of your app.
 
 **See Also**
 
-- [#setTag(String)](../android/printservice/PrintJob.md)) 
+- [#setTag(String)](PrintJob.md)) 
 
 ### hasAdvancedOption
 
@@ -330,7 +330,7 @@ This method must be called from the main thread of your app.
 
 - <https://developer.android.com/reference/kotlin/android/printservice/PrintJob#start()>
 - <https://developer.android.com/reference/kotlin/android/printservice/PrintJob#cancel()>
-- [#fail(String)](../android/printservice/PrintJob.md)) 
+- [#fail(String)](PrintJob.md)) 
 
 ### isCancelled
 
@@ -387,7 +387,7 @@ This method must be called from the main thread of your app.
 
 **See Also**
 
-- [#fail(String)](../android/printservice/PrintJob.md)) 
+- [#fail(String)](PrintJob.md)) 
 
 ### isQueued
 
@@ -428,7 +428,7 @@ This method must be called from the main thread of your app.
 
 - <https://developer.android.com/reference/kotlin/android/printservice/PrintJob#complete()>
 - <https://developer.android.com/reference/kotlin/android/printservice/PrintJob#cancel()>
-- [#fail(String)](../android/printservice/PrintJob.md)) 
+- [#fail(String)](PrintJob.md)) 
 
 ### setProgress
 
@@ -457,7 +457,7 @@ Sets the status of this print job as a string resource.
 
 <br />
 
-This overrides any previously set status set via [setStatus(java.lang.CharSequence)](../android/printservice/PrintJob.md)), [setStatus(int)](../android/printservice/PrintJob.md)), [block(java.lang.String)](../android/printservice/PrintJob.md)), or [fail(java.lang.String)](../android/printservice/PrintJob.md)), 
+This overrides any previously set status set via [setStatus(java.lang.CharSequence)](PrintJob.md)), [setStatus(int)](PrintJob.md)), [block(java.lang.String)](PrintJob.md)), or [fail(java.lang.String)](PrintJob.md)), 
 This method must be called from the main thread of your app.
 
 | Parameters ||
@@ -476,7 +476,7 @@ Sets the status of this print job. This should be a human readable, short, and t
 
 <br />
 
-This overrides any previously set status set via [setStatus(java.lang.CharSequence)](../android/printservice/PrintJob.md)), [setStatus(int)](../android/printservice/PrintJob.md)), [block(java.lang.String)](../android/printservice/PrintJob.md)), or [fail(java.lang.String)](../android/printservice/PrintJob.md)), 
+This overrides any previously set status set via [setStatus(java.lang.CharSequence)](PrintJob.md)), [setStatus(int)](PrintJob.md)), [block(java.lang.String)](PrintJob.md)), or [fail(java.lang.String)](PrintJob.md)), 
 This method must be called from the main thread of your app.
 
 | Parameters ||
@@ -491,7 +491,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 fun setTag(tag: String): Boolean
 ```
 
-Sets a tag that is valid in the context of a [PrintService](../android/printservice/PrintService.md) and is not interpreted by the system. For example, a print service may set as a tag the key of the print job returned by a remote print server, if the printing is off handed to a cloud based service. 
+Sets a tag that is valid in the context of a [PrintService](PrintService.md) and is not interpreted by the system. For example, a print service may set as a tag the key of the print job returned by a remote print server, if the printing is off handed to a cloud based service. 
 This method must be called from the main thread of your app.
 
 | Parameters ||
@@ -510,7 +510,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 fun start(): Boolean
 ```
 
-Starts the print job. You should call this method if [isQueued()](../android/printservice/PrintJob.md))or [isBlocked()](../android/printservice/PrintJob.md))returns true and you started resumed printing.
+Starts the print job. You should call this method if [isQueued()](PrintJob.md))or [isBlocked()](PrintJob.md))returns true and you started resumed printing.
 
 This resets the print status to null. Set the new status by using #setStatus.
 

@@ -8,11 +8,11 @@ open class VpnService : Service
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](../android/content/Context.md) ||||
-| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) |||
-| | | ↳ | [android.app.Service](../android/app/Service.md) ||
+| ↳ | [android.content.Context](../android.content/Context.md) ||||
+| | ↳ | [android.content.ContextWrapper](../android.content/ContextWrapper.md) |||
+| | | ↳ | [android.app.Service](../android.app/Service.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.net.VpnService](../android/net/VpnService.md) |
+| | | | ↳ | [android.net.VpnService](VpnService.md) |
 
 VpnService is a base class for applications to extend and build their own VPN solutions. In general, it creates a virtual network interface, configures addresses and routing rules, and returns a file descriptor to the application. Each read from the descriptor retrieves an outgoing packet which was routed to the interface. Each write to the descriptor injects an incoming packet just like it was received from the interface. The interface is running on Internet Protocol (IP), so packets are always started with IP headers. The application then completes a VPN connection by processing and exchanging packets with the remote server over a tunnel.
 
@@ -1086,10 +1086,10 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 |---|---|
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/VpnService#isAlwaysOn()()` Returns whether the service is running in always-on VPN mode. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/VpnService#isLockdownEnabled()()` Returns whether the service is running in always-on VPN lockdown mode. |
-| open [IBinder](../android/os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/net/VpnService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication interface to the service. |
+| open [IBinder](../android.os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/net/VpnService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication interface to the service. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/VpnService#onRevoke()()` Invoked when the application is revoked. |
-| open static [Intent](../android/content/Intent.md)! | `https://developer.android.com/reference/kotlin/android/net/VpnService#prepare(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!)` Prepare to establish a VPN connection. |
+| open static [Intent](../android.content/Intent.md)! | `https://developer.android.com/reference/kotlin/android/net/VpnService#prepare(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!)` Prepare to establish a VPN connection. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/VpnService#protect(kotlin.Int)(socket: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Protect a socket from VPN connections. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/VpnService#protect(java.net.DatagramSocket)(socket: https://developer.android.com/reference/kotlin/java/net/DatagramSocket.html#!)` Convenience method to protect a `https://developer.android.com/reference/kotlin/java/net/DatagramSocket.html#` from VPN connections. |
@@ -2880,7 +2880,7 @@ Return the communication interface to the service. This method returns `null` on
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
+| `intent` | [Intent](../android.content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
 
 | Return ||
 |---|---|
@@ -2998,7 +2998,7 @@ This call will succeed only if the VPN is currently established. For setting thi
 
 | Parameters ||
 |---|---|
-| `networks` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Network](../android/net/Network.md)!\>!: An array of networks the VPN uses to tunnel traffic to/from its servers. |
+| `networks` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Network](Network.md)!\>!: An array of networks the VPN uses to tunnel traffic to/from its servers. |
 
 | Return ||
 |---|---|

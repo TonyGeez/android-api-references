@@ -8,9 +8,9 @@ open class ConsoleHandler : StreamHandler
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [java.util.logging.Handler](../java/util/logging/Handler.md) |||
-| | ↳ | [java.util.logging.StreamHandler](../java/util/logging/StreamHandler.md) ||
-| | | ↳ | [java.util.logging.ConsoleHandler](../java/util/logging/ConsoleHandler.md) |
+| ↳ | [java.util.logging.Handler](Handler.md) |||
+| | ↳ | [java.util.logging.StreamHandler](StreamHandler.md) ||
+| | | ↳ | [java.util.logging.ConsoleHandler](ConsoleHandler.md) |
 | --- | --- | --- | --- |
 
 This Handler publishes log records to System.err. By default the SimpleFormatter is used to generate brief summaries.
@@ -96,4 +96,4 @@ The logging request was made initially to a Logger object, which initialized the
 
 | Parameters ||
 |---|---|
-| `record` | [LogRecord](../java/util/logging/LogRecord.md)!: description of the log event. A null record is silently ignored and is not published |
+| `record` | [LogRecord](LogRecord.md)!: description of the log event. A null record is silently ignored and is not published |

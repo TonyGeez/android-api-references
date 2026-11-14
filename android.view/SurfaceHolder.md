@@ -4,18 +4,18 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # SurfaceHolder
 
-Kotlin| [Java](../android/view/SurfaceHolder.md) 
+Kotlin| [Java](SurfaceHolder.md) 
 | --- | --- |
 
 ```
 interface SurfaceHolder
 ```
 
-| [android.view.SurfaceHolder](../android/view/SurfaceHolder.md) |
+| [android.view.SurfaceHolder](SurfaceHolder.md) |
 
-Abstract interface to someone holding a display surface. Allows you to control the surface size and format, edit the pixels in the surface, and monitor changes to the surface. This interface is typically available through the [SurfaceView](../android/view/SurfaceView.md) class.
+Abstract interface to someone holding a display surface. Allows you to control the surface size and format, edit the pixels in the surface, and monitor changes to the surface. This interface is typically available through the [SurfaceView](SurfaceView.md) class.
 
-When using this interface from a thread other than the one running its [SurfaceView](../android/view/SurfaceView.md), you will want to carefully read the methods #lockCanvas and [Callback.surfaceCreated()](../android/view/SurfaceHolder.Callback.md)).
+When using this interface from a thread other than the one running its [SurfaceView](SurfaceView.md), you will want to carefully read the methods #lockCanvas and [Callback.surfaceCreated()](../android/view/SurfaceHolder.Callback.md)).
 
 ## Summary
 
@@ -28,32 +28,32 @@ When using this interface from a thread other than the one running its [SurfaceV
 
 | Constants ||
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SURFACE_TYPE_GPU](../android/view/SurfaceHolder.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SURFACE_TYPE_HARDWARE](../android/view/SurfaceHolder.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SURFACE_TYPE_NORMAL](../android/view/SurfaceHolder.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SURFACE_TYPE_GPU](SurfaceHolder.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SURFACE_TYPE_HARDWARE](SurfaceHolder.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SURFACE_TYPE_NORMAL](SurfaceHolder.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SURFACE_TYPE_PUSH_BUFFERS](../android/view/SurfaceHolder.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SURFACE_TYPE_PUSH_BUFFERS](SurfaceHolder.md) <br /> |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addCallback](../android/view/SurfaceHolder.md))`(`callback:` ` [SurfaceHolder.Callback](../android/view/SurfaceHolder.Callback.md)!`)` Add a Callback interface for this holder. |
-| abstract [Surface](../android/view/Surface.md)! | [getSurface](../android/view/SurfaceHolder.md))`()` Direct access to the surface object. |
-| abstract [Rect](../android/graphics/Rect.md)! | [getSurfaceFrame](../android/view/SurfaceHolder.md))`()` Retrieve the current size of the surface. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addCallback](SurfaceHolder.md))`(`callback:` ` [SurfaceHolder.Callback](../android/view/SurfaceHolder.Callback.md)!`)` Add a Callback interface for this holder. |
+| abstract [Surface](Surface.md)! | [getSurface](SurfaceHolder.md))`()` Direct access to the surface object. |
+| abstract [Rect](../android.graphics/Rect.md)! | [getSurfaceFrame](SurfaceHolder.md))`()` Retrieve the current size of the surface. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isCreating](../android/view/SurfaceHolder.md))`()` Use this method to find out if the surface is in the process of being created from Callback methods. |
-| abstract [Canvas](../android/graphics/Canvas.md)! | [lockCanvas](../android/view/SurfaceHolder.md))`()` Start editing the pixels in the surface. |
-| abstract [Canvas](../android/graphics/Canvas.md)! | [lockCanvas](../android/view/SurfaceHolder.md))`(`dirty:` ` [Rect](../android/graphics/Rect.md)!`)` Just like [lockCanvas()](../android/view/SurfaceHolder.md))but allows specification of a dirty rectangle. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isCreating](SurfaceHolder.md))`()` Use this method to find out if the surface is in the process of being created from Callback methods. |
+| abstract [Canvas](../android.graphics/Canvas.md)! | [lockCanvas](SurfaceHolder.md))`()` Start editing the pixels in the surface. |
+| abstract [Canvas](../android.graphics/Canvas.md)! | [lockCanvas](SurfaceHolder.md))`(`dirty:` ` [Rect](../android.graphics/Rect.md)!`)` Just like [lockCanvas()](SurfaceHolder.md))but allows specification of a dirty rectangle. |
 | --- | --- |
-| open [Canvas](../android/graphics/Canvas.md)! | [lockHardwareCanvas](../android/view/SurfaceHolder.md))`()` Just like [lockCanvas()](../android/view/SurfaceHolder.md))but the returned canvas is hardware-accelerated. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeCallback](../android/view/SurfaceHolder.md))`(`callback:` ` [SurfaceHolder.Callback](../android/view/SurfaceHolder.Callback.md)!`)` Removes a previously added Callback interface from this holder. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFixedSize](../android/view/SurfaceHolder.md))`(`width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `height:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Make the surface a fixed size. |
+| open [Canvas](../android.graphics/Canvas.md)! | [lockHardwareCanvas](SurfaceHolder.md))`()` Just like [lockCanvas()](SurfaceHolder.md))but the returned canvas is hardware-accelerated. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeCallback](SurfaceHolder.md))`(`callback:` ` [SurfaceHolder.Callback](../android/view/SurfaceHolder.Callback.md)!`)` Removes a previously added Callback interface from this holder. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFixedSize](SurfaceHolder.md))`(`width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `height:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Make the surface a fixed size. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFormat](../android/view/SurfaceHolder.md))`(`format:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the desired PixelFormat of the surface. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setKeepScreenOn](../android/view/SurfaceHolder.md))`(`screenOn:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Enable or disable option to keep the screen turned on while this surface is displayed. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSizeFromLayout](../android/view/SurfaceHolder.md))`()` Allow the surface to resized based on layout of its container (this is the default). |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFormat](SurfaceHolder.md))`(`format:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the desired PixelFormat of the surface. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setKeepScreenOn](SurfaceHolder.md))`(`screenOn:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Enable or disable option to keep the screen turned on while this surface is displayed. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSizeFromLayout](SurfaceHolder.md))`()` Allow the surface to resized based on layout of its container (this is the default). |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setType](../android/view/SurfaceHolder.md))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the surface's type. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unlockCanvasAndPost](../android/view/SurfaceHolder.md))`(`canvas:` ` [Canvas](../android/graphics/Canvas.md)!`)` Finish editing pixels in the surface. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setType](SurfaceHolder.md))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the surface's type. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unlockCanvasAndPost](SurfaceHolder.md))`(`canvas:` ` [Canvas](../android.graphics/Canvas.md)!`)` Finish editing pixels in the surface. |
 
 ## Constants
 
@@ -133,7 +133,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun getSurface(): Surface!
 ```
 
-Direct access to the surface object. The Surface may not always be available -- for example when using a [SurfaceView](../android/view/SurfaceView.md) the holder's Surface is not created until the view has been attached to the window manager and performed a layout in order to determine the dimensions and screen position of the Surface. You will thus usually need to implement [Callback.surfaceCreated](../android/view/SurfaceHolder.Callback.md))to find out when the Surface is available for use.
+Direct access to the surface object. The Surface may not always be available -- for example when using a [SurfaceView](SurfaceView.md) the holder's Surface is not created until the view has been attached to the window manager and performed a layout in order to determine the dimensions and screen position of the Surface. You will thus usually need to implement [Callback.surfaceCreated](../android/view/SurfaceHolder.Callback.md))to find out when the Surface is available for use.
 
 Note that if you directly access the Surface from another thread, it is critical that you correctly implement [Callback.surfaceCreated](../android/view/SurfaceHolder.Callback.md))and [Callback.surfaceDestroyed](../android/view/SurfaceHolder.Callback.md))to ensure that thread only accesses the Surface while it is valid, and that the Surface does not get destroyed while the thread is using it.
 
@@ -141,7 +141,7 @@ This method is intended to be used by frameworks which often need direct access 
 
 | Return ||
 |---------------------------------------------------------------------------------|----------------------|
-| [Surface](../android/view/Surface.md)! | Surface The surface. |
+| [Surface](Surface.md)! | Surface The surface. |
 
 ### getSurfaceFrame
 
@@ -151,11 +151,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun getSurfaceFrame(): Rect!
 ```
 
-Retrieve the current size of the surface. Note: do not modify the returned Rect. This is only safe to call from the thread of [SurfaceView](../android/view/SurfaceView.md)'s window, or while inside of [lockCanvas()](../android/view/SurfaceHolder.md)).
+Retrieve the current size of the surface. Note: do not modify the returned Rect. This is only safe to call from the thread of [SurfaceView](SurfaceView.md)'s window, or while inside of [lockCanvas()](SurfaceHolder.md)).
 
 | Return ||
 |-------------------------------------------------------------------------------------|---------------------------------------------------------------|
-| [Rect](../android/graphics/Rect.md)! | Rect The surface's dimensions. The left and top are always 0. |
+| [Rect](../android.graphics/Rect.md)! | Rect The surface's dimensions. The left and top are always 0. |
 
 ### isCreating
 
@@ -185,11 +185,11 @@ The content of the Surface is never preserved between unlockCanvas() and lockCan
 
 If you call this repeatedly when the Surface is not ready (before [Callback.surfaceCreated](../android/view/SurfaceHolder.Callback.md))or after [Callback.surfaceDestroyed](../android/view/SurfaceHolder.Callback.md))), your calls will be throttled to a slow rate in order to avoid consuming CPU.
 
-If null is not returned, this function internally holds a lock until the corresponding [unlockCanvasAndPost](../android/view/SurfaceHolder.md))call, preventing [SurfaceView](../android/view/SurfaceView.md) from creating, destroying, or modifying the surface while it is being drawn. This can be more convenient than accessing the Surface directly, as you do not need to do special synchronization with a drawing thread in [Callback.surfaceDestroyed](../android/view/SurfaceHolder.Callback.md)).
+If null is not returned, this function internally holds a lock until the corresponding [unlockCanvasAndPost](SurfaceHolder.md))call, preventing [SurfaceView](SurfaceView.md) from creating, destroying, or modifying the surface while it is being drawn. This can be more convenient than accessing the Surface directly, as you do not need to do special synchronization with a drawing thread in [Callback.surfaceDestroyed](../android/view/SurfaceHolder.Callback.md)).
 
 | Return ||
 |-----------------------------------------------------------------------------------------|--------------------------------------|
-| [Canvas](../android/graphics/Canvas.md)! | Canvas Use to draw into the surface. |
+| [Canvas](../android.graphics/Canvas.md)! | Canvas Use to draw into the surface. |
 
 ### lockCanvas
 
@@ -199,15 +199,15 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun lockCanvas(dirty: Rect!): Canvas!
 ```
 
-Just like [lockCanvas()](../android/view/SurfaceHolder.md))but allows specification of a dirty rectangle. Every pixel within that rectangle must be written; however pixels outside the dirty rectangle will be preserved by the next call to lockCanvas().
+Just like [lockCanvas()](SurfaceHolder.md))but allows specification of a dirty rectangle. Every pixel within that rectangle must be written; however pixels outside the dirty rectangle will be preserved by the next call to lockCanvas().
 
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------------------------------|
-| `dirty` | [Rect](../android/graphics/Rect.md)!:Area of the Surface that will be modified. |
+| `dirty` | [Rect](../android.graphics/Rect.md)!:Area of the Surface that will be modified. |
 
 | Return ||
 |-----------------------------------------------------------------------------------------|--------------------------------------|
-| [Canvas](../android/graphics/Canvas.md)! | Canvas Use to draw into the surface. |
+| [Canvas](../android.graphics/Canvas.md)! | Canvas Use to draw into the surface. |
 
 **See Also**
 
@@ -219,13 +219,13 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 open fun lockHardwareCanvas(): Canvas!
 ```
 
-Just like [lockCanvas()](../android/view/SurfaceHolder.md))but the returned canvas is hardware-accelerated.
+Just like [lockCanvas()](SurfaceHolder.md))but the returned canvas is hardware-accelerated.
 
 See the [unsupported drawing operations](https://developer.android.com/guide/topics/graphics/hardware-accel.html#unsupported) for a list of what is and isn't supported in a hardware-accelerated canvas.
 
 | Return ||
 |-----------------------------------------------------------------------------------------|--------------------------------------|
-| [Canvas](../android/graphics/Canvas.md)! | Canvas Use to draw into the surface. |
+| [Canvas](../android.graphics/Canvas.md)! | Canvas Use to draw into the surface. |
 
 | Exceptions ||
 |-----------------------------------|---------------------------------|
@@ -256,7 +256,7 @@ abstract fun setFixedSize(
 ): Unit
 ```
 
-Make the surface a fixed size. It will never change from this size. When working with a [SurfaceView](../android/view/SurfaceView.md), this must be called from the same thread running the SurfaceView's window.
+Make the surface a fixed size. It will never change from this size. When working with a [SurfaceView](SurfaceView.md), this must be called from the same thread running the SurfaceView's window.
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------|
@@ -271,7 +271,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun setFormat(format: Int): Unit
 ```
 
-Set the desired PixelFormat of the surface. The default is OPAQUE. When working with a [SurfaceView](../android/view/SurfaceView.md), this must be called from the same thread running the SurfaceView's window.
+Set the desired PixelFormat of the surface. The default is OPAQUE. When working with a [SurfaceView](SurfaceView.md), this must be called from the same thread running the SurfaceView's window.
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------|
@@ -279,7 +279,7 @@ Set the desired PixelFormat of the surface. The default is OPAQUE. When working 
 
 **See Also**
 
-- [android.graphics.PixelFormat](../android/graphics/PixelFormat.md) 
+- [android.graphics.PixelFormat](../android.graphics/PixelFormat.md) 
 
 ### setKeepScreenOn
 
@@ -303,7 +303,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun setSizeFromLayout(): Unit
 ```
 
-Allow the surface to resized based on layout of its container (this is the default). When this is enabled, you should monitor [Callback.surfaceChanged](../android/view/SurfaceHolder.Callback.md))for changes to the size of the surface. When working with a [SurfaceView](../android/view/SurfaceView.md), this must be called from the same thread running the SurfaceView's window. 
+Allow the surface to resized based on layout of its container (this is the default). When this is enabled, you should monitor [Callback.surfaceChanged](../android/view/SurfaceHolder.Callback.md))for changes to the size of the surface. When working with a [SurfaceView](SurfaceView.md), this must be called from the same thread running the SurfaceView's window. 
 
 ### setType
 
@@ -330,7 +330,7 @@ Finish editing pixels in the surface. After this call, the surface's current pix
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| `canvas` | [Canvas](../android/graphics/Canvas.md)!:The Canvas previously returned by lockCanvas(). |
+| `canvas` | [Canvas](../android.graphics/Canvas.md)!:The Canvas previously returned by lockCanvas(). |
 
 **See Also**
 

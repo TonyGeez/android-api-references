@@ -4,7 +4,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 
 # FileIntegrityManager
 
-Kotlin| [Java](../android/security/FileIntegrityManager.md) 
+Kotlin| [Java](FileIntegrityManager.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class FileIntegrityManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.security.FileIntegrityManager](../android/security/FileIntegrityManager.md) |
+| ↳ | [android.security.FileIntegrityManager](FileIntegrityManager.md) |
 
 This class provides access to file integrity related operations. 
 Restricted for SDK Runtime environment in API level 34.
@@ -22,8 +22,8 @@ Restricted for SDK Runtime environment in API level 34.
 
 | Public methods ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isApkVeritySupported](../android/security/FileIntegrityManager.md))`()` Returns whether fs-verity is supported on the device. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAppSourceCertificateTrusted](../android/security/FileIntegrityManager.md))`(`certificate:` ` [X509Certificate](../java/security/cert/X509Certificate.md)`)` Returns whether the given certificate can be used to prove app's install source. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isApkVeritySupported](FileIntegrityManager.md))`()` Returns whether fs-verity is supported on the device. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAppSourceCertificateTrusted](FileIntegrityManager.md))`(`certificate:` ` [X509Certificate](../java.security.cert/X509Certificate.md)`)` Returns whether the given certificate can be used to prove app's install source. |
 
 ## Public methods
 
@@ -59,7 +59,7 @@ Requires [android.Manifest.permission#INSTALL_PACKAGES](../android/Manifest.perm
 
 | Parameters ||
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| `certificate` | [X509Certificate](../java/security/cert/X509Certificate.md):This value cannot be`null`. |
+| `certificate` | [X509Certificate](../java.security.cert/X509Certificate.md):This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------------------------|

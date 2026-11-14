@@ -2,7 +2,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 
 # Equalizer
 
-Kotlin | [Java](../android/media/audiofx/Equalizer.md)
+Kotlin | [Java](Equalizer.md)
 | --- | --- |
 
 ```
@@ -11,8 +11,8 @@ open class Equalizer : AudioEffect
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.media.audiofx.AudioEffect](../android/media/audiofx/AudioEffect.md) ||
-| | ↳ | [android.media.audiofx.Equalizer](../android/media/audiofx/Equalizer.md) |
+| ↳ | [android.media.audiofx.AudioEffect](AudioEffect.md) ||
+| | ↳ | [android.media.audiofx.Equalizer](Equalizer.md) |
 
 An Equalizer is used to alter the frequency response of a particular music source or of the main output mix.
 

@@ -4,7 +4,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 
 # AvailableNetworkInfo
 
-Kotlin| [Java](../android/telephony/AvailableNetworkInfo.md) 
+Kotlin| [Java](AvailableNetworkInfo.md) 
 | --- | --- |
 
 ```
@@ -13,50 +13,50 @@ class AvailableNetworkInfo : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.telephony.AvailableNetworkInfo](../android/telephony/AvailableNetworkInfo.md) |
+| ↳ | [android.telephony.AvailableNetworkInfo](AvailableNetworkInfo.md) |
 
-Defines available network information which includes corresponding subscription id, network plmns and corresponding priority to be used for network selection by Opportunistic Network Service when passed through [TelephonyManager.updateAvailableNetworks](../android/telephony/TelephonyManager.md))
+Defines available network information which includes corresponding subscription id, network plmns and corresponding priority to be used for network selection by Opportunistic Network Service when passed through [TelephonyManager.updateAvailableNetworks](TelephonyManager.md))
 
 ## Summary
 
 | Nested classes ||
 |---|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](../android/telephony/AvailableNetworkInfo.Builder.md) Provides a convenient way to set the fields of a [AvailableNetworkInfo](../android/telephony/AvailableNetworkInfo.md) when creating a new instance. |
+| | [Builder](../android/telephony/AvailableNetworkInfo.Builder.md) Provides a convenient way to set the fields of a [AvailableNetworkInfo](AvailableNetworkInfo.md) when creating a new instance. |
 
 | Constants ||
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PRIORITY_HIGH](../android/telephony/AvailableNetworkInfo.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PRIORITY_LOW](../android/telephony/AvailableNetworkInfo.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PRIORITY_MED](../android/telephony/AvailableNetworkInfo.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PRIORITY_HIGH](AvailableNetworkInfo.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PRIORITY_LOW](AvailableNetworkInfo.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PRIORITY_MED](AvailableNetworkInfo.md) <br /> |
 | --- | --- |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android.os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android.os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android.os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [AvailableNetworkInfo](../android/telephony/AvailableNetworkInfo.md))`(`subId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `priority:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `mccMncs:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>`, `bands:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!>`)` <br /> |
+| [AvailableNetworkInfo](AvailableNetworkInfo.md))`(`subId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `priority:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `mccMncs:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>`, `bands:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!>`)` <br /> |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/telephony/AvailableNetworkInfo.md))`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/telephony/AvailableNetworkInfo.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | [getBands](../android/telephony/AvailableNetworkInfo.md))`()` Returns the frequency bands that need to be scanned by opportunistic network service The returned value is defined in either of [AccessNetworkConstants.GeranBand](../android/telephony/AccessNetworkConstants.GeranBand.md), [AccessNetworkConstants.UtranBand](../android/telephony/AccessNetworkConstants.UtranBand.md) and [AccessNetworkConstants.EutranBand](../android/telephony/AccessNetworkConstants.EutranBand.md) See [AccessNetworkConstants.AccessNetworkType](../android/telephony/AccessNetworkConstants.AccessNetworkType.md) for details regarding different network types. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](AvailableNetworkInfo.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](AvailableNetworkInfo.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | [getBands](AvailableNetworkInfo.md))`()` Returns the frequency bands that need to be scanned by opportunistic network service The returned value is defined in either of [AccessNetworkConstants.GeranBand](../android/telephony/AccessNetworkConstants.GeranBand.md), [AccessNetworkConstants.UtranBand](../android/telephony/AccessNetworkConstants.UtranBand.md) and [AccessNetworkConstants.EutranBand](../android/telephony/AccessNetworkConstants.EutranBand.md) See [AccessNetworkConstants.AccessNetworkType](../android/telephony/AccessNetworkConstants.AccessNetworkType.md) for details regarding different network types. |
 | --- | --- |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getMccMncs](../android/telephony/AvailableNetworkInfo.md))`()` Return List of PLMN ids (MCC-MNC) associated with the sub ID. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPriority](../android/telephony/AvailableNetworkInfo.md))`()` Return priority for the subscription id. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [RadioAccessSpecifier](../android/telephony/RadioAccessSpecifier.md)!\> | [getRadioAccessSpecifiers](../android/telephony/AvailableNetworkInfo.md))`()` Returns a list of [RadioAccessSpecifier](../android/telephony/RadioAccessSpecifier.md) associated with the available network. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getMccMncs](AvailableNetworkInfo.md))`()` Return List of PLMN ids (MCC-MNC) associated with the sub ID. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPriority](AvailableNetworkInfo.md))`()` Return priority for the subscription id. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [RadioAccessSpecifier](RadioAccessSpecifier.md)!\> | [getRadioAccessSpecifiers](AvailableNetworkInfo.md))`()` Returns a list of [RadioAccessSpecifier](RadioAccessSpecifier.md) associated with the available network. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSubId](../android/telephony/AvailableNetworkInfo.md))`()` Return subscription Id of the available network. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/telephony/AvailableNetworkInfo.md))`()` <br /> |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/telephony/AvailableNetworkInfo.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSubId](AvailableNetworkInfo.md))`()` Return subscription Id of the available network. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](AvailableNetworkInfo.md))`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](AvailableNetworkInfo.md))`()` <br /> |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/telephony/AvailableNetworkInfo.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](AvailableNetworkInfo.md))`(`dest:` ` [Parcel](../android.os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [AvailableNetworkInfo](../android/telephony/AvailableNetworkInfo.md)!\> | [CREATOR](../android/telephony/AvailableNetworkInfo.md) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [AvailableNetworkInfo](AvailableNetworkInfo.md)!\> | [CREATOR](AvailableNetworkInfo.md) <br /> |
 
 ## Constants
 
@@ -121,7 +121,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) |
 
 ### equals
 
@@ -171,11 +171,11 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 fun getPriority(): Int
 ```
 
-Return priority for the subscription id. Priorities are in the range of [AvailableNetworkInfo.PRIORITY_LOW](../android/telephony/AvailableNetworkInfo.md) to [AvailableNetworkInfo.PRIORITY_HIGH](../android/telephony/AvailableNetworkInfo.md) Among all networks available after network scan, subId with highest priority is chosen for network selection. If there are more than one subId with highest priority then the network with highest RSRP is chosen.
+Return priority for the subscription id. Priorities are in the range of [AvailableNetworkInfo.PRIORITY_LOW](AvailableNetworkInfo.md) to [AvailableNetworkInfo.PRIORITY_HIGH](AvailableNetworkInfo.md) Among all networks available after network scan, subId with highest priority is chosen for network selection. If there are more than one subId with highest priority then the network with highest RSRP is chosen.
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | priority level Value is [android.telephony.AvailableNetworkInfo#PRIORITY_HIGH](../android/telephony/AvailableNetworkInfo.md), [android.telephony.AvailableNetworkInfo#PRIORITY_MED](../android/telephony/AvailableNetworkInfo.md), or [android.telephony.AvailableNetworkInfo#PRIORITY_LOW](../android/telephony/AvailableNetworkInfo.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | priority level Value is [android.telephony.AvailableNetworkInfo#PRIORITY_HIGH](AvailableNetworkInfo.md), [android.telephony.AvailableNetworkInfo#PRIORITY_MED](AvailableNetworkInfo.md), or [android.telephony.AvailableNetworkInfo#PRIORITY_LOW](AvailableNetworkInfo.md) |
 
 ### getRadioAccessSpecifiers
 
@@ -185,11 +185,11 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 fun getRadioAccessSpecifiers(): MutableList<RadioAccessSpecifier!>
 ```
 
-Returns a list of [RadioAccessSpecifier](../android/telephony/RadioAccessSpecifier.md) associated with the available network. Opportunistic network service will use this to determine which bands to scan for.
+Returns a list of [RadioAccessSpecifier](RadioAccessSpecifier.md) associated with the available network. Opportunistic network service will use this to determine which bands to scan for.
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [RadioAccessSpecifier](../android/telephony/RadioAccessSpecifier.md)!> | the access network type associated with the available network. This value cannot be`null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [RadioAccessSpecifier](RadioAccessSpecifier.md)!> | the access network type associated with the available network. This value cannot be`null`. |
 
 ### getSubId
 
@@ -199,7 +199,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 fun getSubId(): Int
 ```
 
-Return subscription Id of the available network. This value must be one of the entry retrieved from [SubscriptionManager.getOpportunisticSubscriptions](../android/telephony/SubscriptionManager.md))
+Return subscription Id of the available network. This value must be one of the entry retrieved from [SubscriptionManager.getOpportunisticSubscriptions](SubscriptionManager.md))
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------|
@@ -242,8 +242,8 @@ fun writeToParcel(
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](../android/os/Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android.os/Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

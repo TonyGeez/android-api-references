@@ -4,7 +4,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 
 # MalformedJsonException
 
-Kotlin| [Java](../android/util/MalformedJsonException.md) 
+Kotlin| [Java](MalformedJsonException.md) 
 | --- | --- |
 
 ```
@@ -14,18 +14,18 @@ class MalformedJsonException : IOException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
-| | | ↳ | [java.io.IOException](../java/io/IOException.md) ||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) |||
+| | | ↳ | [java.io.IOException](../java.io/IOException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.util.MalformedJsonException](../android/util/MalformedJsonException.md) |
+| | | | ↳ | [android.util.MalformedJsonException](MalformedJsonException.md) |
 
-Thrown when a reader encounters malformed JSON. Some syntax errors can be ignored by calling [JsonReader.setLenient(boolean)](../android/util/JsonReader.md)).
+Thrown when a reader encounters malformed JSON. Some syntax errors can be ignored by calling [JsonReader.setLenient(boolean)](JsonReader.md)).
 
 ## Summary
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [MalformedJsonException](../android/util/MalformedJsonException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| [MalformedJsonException](MalformedJsonException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
 
 ## Public constructors
 

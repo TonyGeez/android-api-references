@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # LocalSocket
 
-Kotlin| [Java](../android/net/LocalSocket.md) 
+Kotlin| [Java](LocalSocket.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class LocalSocket : Closeable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.LocalSocket](../android/net/LocalSocket.md) |
+| ↳ | [android.net.LocalSocket](LocalSocket.md) |
 
 Creates a (non-server) socket in the UNIX-domain namespace. The interface here is not entirely unlike that of java.net.Socket. This class and the streams returned from it may be used from multiple threads.
 
@@ -21,52 +21,52 @@ Creates a (non-server) socket in the UNIX-domain namespace. The interface here i
 
 | Constants ||
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOCKET_DGRAM](../android/net/LocalSocket.md) Datagram socket type |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOCKET_SEQPACKET](../android/net/LocalSocket.md) Sequential packet socket type |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOCKET_STREAM](../android/net/LocalSocket.md) Stream socket type |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOCKET_DGRAM](LocalSocket.md) Datagram socket type |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOCKET_SEQPACKET](LocalSocket.md) Sequential packet socket type |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOCKET_STREAM](LocalSocket.md) Stream socket type |
 | --- | --- |
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [LocalSocket](../android/net/LocalSocket.md))`()` Creates a AF_LOCAL/UNIX domain stream socket. |
-| [LocalSocket](../android/net/LocalSocket.md))`(`sockType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a AF_LOCAL/UNIX domain socket with the given socket type. |
+| [LocalSocket](LocalSocket.md))`()` Creates a AF_LOCAL/UNIX domain stream socket. |
+| [LocalSocket](LocalSocket.md))`(`sockType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a AF_LOCAL/UNIX domain socket with the given socket type. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [bind](../android/net/LocalSocket.md))`(`bindpoint:` ` [LocalSocketAddress](../android/net/LocalSocketAddress.md)!`)` Binds this socket to an endpoint name. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../android/net/LocalSocket.md))`()` Closes the socket. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [connect](../android/net/LocalSocket.md))`(`endpoint:` ` [LocalSocketAddress](../android/net/LocalSocketAddress.md)!`)` Connects this socket to an endpoint. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [bind](LocalSocket.md))`(`bindpoint:` ` [LocalSocketAddress](LocalSocketAddress.md)!`)` Binds this socket to an endpoint name. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](LocalSocket.md))`()` Closes the socket. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [connect](LocalSocket.md))`(`endpoint:` ` [LocalSocketAddress](LocalSocketAddress.md)!`)` Connects this socket to an endpoint. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [connect](../android/net/LocalSocket.md))`(`endpoint:` ` [LocalSocketAddress](../android/net/LocalSocketAddress.md)!`, `timeout:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [FileDescriptor](../java/io/FileDescriptor.md)!\>! | [getAncillaryFileDescriptors](../android/net/LocalSocket.md))`()` Retrieves a set of file descriptors that a peer has sent through an ancillary message. |
-| open [FileDescriptor](../java/io/FileDescriptor.md)! | [getFileDescriptor](../android/net/LocalSocket.md))`()` Returns file descriptor or null if not yet open/already closed |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [connect](LocalSocket.md))`(`endpoint:` ` [LocalSocketAddress](LocalSocketAddress.md)!`, `timeout:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [FileDescriptor](../java.io/FileDescriptor.md)!\>! | [getAncillaryFileDescriptors](LocalSocket.md))`()` Retrieves a set of file descriptors that a peer has sent through an ancillary message. |
+| open [FileDescriptor](../java.io/FileDescriptor.md)! | [getFileDescriptor](LocalSocket.md))`()` Returns file descriptor or null if not yet open/already closed |
 | --- | --- |
-| open [InputStream](../java/io/InputStream.md)! | [getInputStream](../android/net/LocalSocket.md))`()` Retrieves the input stream for this instance. |
-| open [LocalSocketAddress](../android/net/LocalSocketAddress.md)! | [getLocalSocketAddress](../android/net/LocalSocket.md))`()` Retrieves the name that this socket is bound to, if any. |
-| open [OutputStream](../java/io/OutputStream.md)! | [getOutputStream](../android/net/LocalSocket.md))`()` Retrieves the output stream for this instance. |
+| open [InputStream](../java.io/InputStream.md)! | [getInputStream](LocalSocket.md))`()` Retrieves the input stream for this instance. |
+| open [LocalSocketAddress](LocalSocketAddress.md)! | [getLocalSocketAddress](LocalSocket.md))`()` Retrieves the name that this socket is bound to, if any. |
+| open [OutputStream](../java.io/OutputStream.md)! | [getOutputStream](LocalSocket.md))`()` Retrieves the output stream for this instance. |
 | --- | --- |
-| open [Credentials](../android/net/Credentials.md)! | [getPeerCredentials](../android/net/LocalSocket.md))`()` Retrieves the credentials of this socket's peer. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getReceiveBufferSize](../android/net/LocalSocket.md))`()` <br /> |
-| open [LocalSocketAddress](../android/net/LocalSocketAddress.md)! | [getRemoteSocketAddress](../android/net/LocalSocket.md))`()` <br /> |
+| open [Credentials](Credentials.md)! | [getPeerCredentials](LocalSocket.md))`()` Retrieves the credentials of this socket's peer. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getReceiveBufferSize](LocalSocket.md))`()` <br /> |
+| open [LocalSocketAddress](LocalSocketAddress.md)! | [getRemoteSocketAddress](LocalSocket.md))`()` <br /> |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSendBufferSize](../android/net/LocalSocket.md))`()` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSoTimeout](../android/net/LocalSocket.md))`()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isBound](../android/net/LocalSocket.md))`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSendBufferSize](LocalSocket.md))`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSoTimeout](LocalSocket.md))`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isBound](LocalSocket.md))`()` <br /> |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isClosed](../android/net/LocalSocket.md))`()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isConnected](../android/net/LocalSocket.md))`()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isInputShutdown](../android/net/LocalSocket.md))`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isClosed](LocalSocket.md))`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isConnected](LocalSocket.md))`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isInputShutdown](LocalSocket.md))`()` <br /> |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isOutputShutdown](../android/net/LocalSocket.md))`()` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFileDescriptorsForSend](../android/net/LocalSocket.md))`(`fds:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [FileDescriptor](../java/io/FileDescriptor.md)!>!`)` Enqueues a set of file descriptors to send to the peer. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setReceiveBufferSize](../android/net/LocalSocket.md))`(`size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isOutputShutdown](LocalSocket.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFileDescriptorsForSend](LocalSocket.md))`(`fds:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [FileDescriptor](../java.io/FileDescriptor.md)!>!`)` Enqueues a set of file descriptors to send to the peer. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setReceiveBufferSize](LocalSocket.md))`(`size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSendBufferSize](../android/net/LocalSocket.md))`(`n:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSoTimeout](../android/net/LocalSocket.md))`(`n:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [shutdownInput](../android/net/LocalSocket.md))`()` Shuts down the input side of the socket. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSendBufferSize](LocalSocket.md))`(`n:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSoTimeout](LocalSocket.md))`(`n:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [shutdownInput](LocalSocket.md))`()` Shuts down the input side of the socket. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [shutdownOutput](../android/net/LocalSocket.md))`()` Shuts down the output side of the socket. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/net/LocalSocket.md))`()` Returns a string representation of the object. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [shutdownOutput](LocalSocket.md))`()` Shuts down the output side of the socket. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](LocalSocket.md))`()` Returns a string representation of the object. |
 
 ## Constants
 
@@ -130,7 +130,7 @@ Creates a AF_LOCAL/UNIX domain socket with the given socket type.
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `sockType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):either [SOCKET_DGRAM](../android/net/LocalSocket.md), [SOCKET_STREAM](../android/net/LocalSocket.md) or [SOCKET_SEQPACKET](../android/net/LocalSocket.md) |
+| `sockType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):either [SOCKET_DGRAM](LocalSocket.md), [SOCKET_STREAM](LocalSocket.md) or [SOCKET_SEQPACKET](LocalSocket.md) |
 
 ## Public methods
 
@@ -146,7 +146,7 @@ Binds this socket to an endpoint name. May only be called on an instance that ha
 
 | Parameters ||
 |-------------|-----------------------------------------------------------------------------------------------------------------------|
-| `bindpoint` | [LocalSocketAddress](../android/net/LocalSocketAddress.md)!:endpoint address |
+| `bindpoint` | [LocalSocketAddress](LocalSocketAddress.md)!:endpoint address |
 
 | Exceptions ||
 |-----------------------|---|
@@ -179,7 +179,7 @@ Connects this socket to an endpoint. May only be called on an instance that has 
 
 | Parameters ||
 |------------|-----------------------------------------------------------------------------------------------------------------------|
-| `endpoint` | [LocalSocketAddress](../android/net/LocalSocketAddress.md)!:endpoint address |
+| `endpoint` | [LocalSocketAddress](LocalSocketAddress.md)!:endpoint address |
 
 | Exceptions ||
 |-----------------------|--------------------------------------------------------------|
@@ -208,7 +208,7 @@ Retrieves a set of file descriptors that a peer has sent through an ancillary me
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [FileDescriptor](../java/io/FileDescriptor.md)!>! | null or file descriptor array |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [FileDescriptor](../java.io/FileDescriptor.md)!>! | null or file descriptor array |
 
 | Exceptions ||
 |-----------------------|---|
@@ -226,7 +226,7 @@ Returns file descriptor or null if not yet open/already closed
 
 | Return ||
 |------------------------------------------------------------------------------------------------|------------|
-| [FileDescriptor](../java/io/FileDescriptor.md)! | fd or null |
+| [FileDescriptor](../java.io/FileDescriptor.md)! | fd or null |
 
 ### getInputStream
 
@@ -240,7 +240,7 @@ Retrieves the input stream for this instance. Closing this stream is equivalent 
 
 | Return ||
 |------------------------------------------------------------------------------------------|--------------|
-| [InputStream](../java/io/InputStream.md)! | input stream |
+| [InputStream](../java.io/InputStream.md)! | input stream |
 
 | Exceptions ||
 |-----------------------|-------------------------------------------------|
@@ -258,7 +258,7 @@ Retrieves the name that this socket is bound to, if any.
 
 | Return ||
 |------------------------------------------------------------------------------------------------------|------------------------------------|
-| [LocalSocketAddress](../android/net/LocalSocketAddress.md)! | Local address or null if anonymous |
+| [LocalSocketAddress](LocalSocketAddress.md)! | Local address or null if anonymous |
 
 ### getOutputStream
 
@@ -272,7 +272,7 @@ Retrieves the output stream for this instance. Closing this stream is equivalent
 
 | Return ||
 |--------------------------------------------------------------------------------------------|---------------|
-| [OutputStream](../java/io/OutputStream.md)! | output stream |
+| [OutputStream](../java.io/OutputStream.md)! | output stream |
 
 | Exceptions ||
 |-----------------------|-------------------------------------------------|
@@ -290,7 +290,7 @@ Retrieves the credentials of this socket's peer. Only valid on connected sockets
 
 | Return ||
 |----------------------------------------------------------------------------------------|----------------------------|
-| [Credentials](../android/net/Credentials.md)! | non-null; peer credentials |
+| [Credentials](Credentials.md)! | non-null; peer credentials |
 
 | Exceptions ||
 |-----------------------|---|
@@ -380,7 +380,7 @@ Enqueues a set of file descriptors to send to the peer. The queue is one deep. T
 
 | Parameters ||
 |-------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `fds` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [FileDescriptor](../java/io/FileDescriptor.md)!\>!:non-null; file descriptors to send. |
+| `fds` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [FileDescriptor](../java.io/FileDescriptor.md)!\>!:non-null; file descriptors to send. |
 
 ### setReceiveBufferSize
 

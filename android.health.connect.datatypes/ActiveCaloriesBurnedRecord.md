@@ -9,9 +9,9 @@ class ActiveCaloriesBurnedRecord : IntervalRecord
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.health.connect.datatypes.Record](../android/health/connect/datatypes/Record.md) |||
-| | ↳ | [android.health.connect.datatypes.IntervalRecord](../android/health/connect/datatypes/IntervalRecord.md) ||
-| | | ↳ | [android.health.connect.datatypes.ActiveCaloriesBurnedRecord](../android/health/connect/datatypes/ActiveCaloriesBurnedRecord.md) |
+| ↳ | [android.health.connect.datatypes.Record](Record.md) |||
+| | ↳ | [android.health.connect.datatypes.IntervalRecord](IntervalRecord.md) ||
+| | | ↳ | [android.health.connect.datatypes.ActiveCaloriesBurnedRecord](ActiveCaloriesBurnedRecord.md) |
 | --- | --- | --- | --- |
 
 Captures the estimated active energy burned by the user (in kilocalories), excluding basal metabolic rate (BMR).
@@ -29,7 +29,7 @@ Captures the estimated active energy burned by the user (in kilocalories), exclu
 | Public methods ||
 |---|---|
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ActiveCaloriesBurnedRecord#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [Energy](../android/health/connect/datatypes/units/Energy.md) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ActiveCaloriesBurnedRecord#getEnergy()()` <br /> |
+| [Energy](../android.health.connect.datatypes.units/Energy.md) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ActiveCaloriesBurnedRecord#getEnergy()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ActiveCaloriesBurnedRecord#hashCode()()` <br /> |
 | --- | --- |
 
@@ -40,7 +40,7 @@ Captures the estimated active energy burned by the user (in kilocalories), exclu
 
 | Properties ||
 |---|---|
-| static [AggregationType](../android/health/connect/datatypes/AggregationType.md)\< [Energy](../android/health/connect/datatypes/units/Energy.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ActiveCaloriesBurnedRecord#ACTIVE_CALORIES_TOTAL:android.health.connect.datatypes.AggregationType` Metric identifier to get total active calories burnt using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
+| static [AggregationType](AggregationType.md)\< [Energy](../android.health.connect.datatypes.units/Energy.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/ActiveCaloriesBurnedRecord#ACTIVE_CALORIES_TOTAL:android.health.connect.datatypes.AggregationType` Metric identifier to get total active calories burnt using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
 
 ## Public methods
 

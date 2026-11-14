@@ -9,7 +9,7 @@ Deprecated in [API level 14](https://developer.android.com/guide/topics/manifest
 @Target([AnnotationTarget.CLASS, AnnotationTarget.FILE]) class TestTargetClass
 ```
 
-| [dalvik.annotation.TestTargetClass](../dalvik/annotation/TestTargetClass.md) |
+| [dalvik.annotation.TestTargetClass](TestTargetClass.md) |
 
 | **This annotation was deprecated in API level 14.**
 |
@@ -21,11 +21,11 @@ Defines an annotation for test classes that allows to link them to the class tha
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [TestTargetClass](../dalvik/annotation/TestTargetClass.md))`(`value:` ` [KClass](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.reflect/-k-class/index.html)<*>`)` Defines an annotation for test classes that allows to link them to the class that is being tested. |
+| [TestTargetClass](TestTargetClass.md))`(`value:` ` [KClass](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.reflect/-k-class/index.html)<*>`)` Defines an annotation for test classes that allows to link them to the class that is being tested. |
 
 | Properties ||
 |-------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [KClass](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.reflect/-k-class/index.html)\<\*\> | [value](../dalvik/annotation/TestTargetClass.md) Specifies the class being tested. |
+| [KClass](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.reflect/-k-class/index.html)\<\*\> | [value](TestTargetClass.md) Specifies the class being tested. |
 
 ## Public constructors
 

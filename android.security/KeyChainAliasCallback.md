@@ -4,14 +4,14 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 
 # KeyChainAliasCallback
 
-Kotlin | [Java](../android/security/KeyChainAliasCallback.md) 
+Kotlin | [Java](KeyChainAliasCallback.md) 
 | --- | --- |
 
 ```
 interface KeyChainAliasCallback
 ```
 
-| [android.security.KeyChainAliasCallback](../android/security/KeyChainAliasCallback.md) |
+| [android.security.KeyChainAliasCallback](KeyChainAliasCallback.md) |
 
 The KeyChainAliasCallback is the callback for android.security.KeyChain#choosePrivateKeyAlias.
 
@@ -19,7 +19,7 @@ The KeyChainAliasCallback is the callback for android.security.KeyChain#choosePr
 
 | Public methods ||
 |---------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [alias](../android/security/KeyChainAliasCallback.md))`(`alias:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Called with the alias of the certificate chosen by the user, or null if no value was chosen. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [alias](KeyChainAliasCallback.md))`(`alias:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Called with the alias of the certificate chosen by the user, or null if no value was chosen. |
 
 ## Public methods
 

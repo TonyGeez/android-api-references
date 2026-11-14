@@ -13,7 +13,7 @@ interface Authenticators
 
 | [android.hardware.biometrics.BiometricManager.Authenticators](../android/hardware/biometrics/BiometricManager.Authenticators.md) |
 
-Types of authenticators, defined at a level of granularity supported by [BiometricManager](../android/hardware/biometrics/BiometricManager.md) and [BiometricPrompt](../android/hardware/biometrics/BiometricPrompt.md).
+Types of authenticators, defined at a level of granularity supported by [BiometricManager](BiometricManager.md) and [BiometricPrompt](BiometricPrompt.md).
 
 Types may combined via bitwise OR into a single integer representing multiple authenticators (e.g.`DEVICE_CREDENTIAL | BIOMETRIC_WEAK`).
 | --- | --- |
@@ -40,7 +40,7 @@ static val BIOMETRIC_STRONG: Int
 
 Any biometric (e.g. fingerprint, iris, or face) on the device that meets or exceeds the requirements for**Class 3** (formerly**Strong**), as defined by the Android CDD.
 
-This corresponds to [KeyProperties.AUTH_BIOMETRIC_STRONG](../android/security/keystore/KeyProperties.md) during key generation. 
+This corresponds to [KeyProperties.AUTH_BIOMETRIC_STRONG](../android.security.keystore/KeyProperties.md) during key generation. 
 
  Value: 15
 
@@ -73,7 +73,7 @@ static val DEVICE_CREDENTIAL: Int
 
 The non-biometric credential used to secure the device (i.e., PIN, pattern, or password). This should typically only be used in combination with a biometric auth type, such as [BIOMETRIC_WEAK](../android/hardware/biometrics/BiometricManager.Authenticators.md).
 
-This corresponds to [KeyProperties.AUTH_DEVICE_CREDENTIAL](../android/security/keystore/KeyProperties.md) during key generation. 
+This corresponds to [KeyProperties.AUTH_DEVICE_CREDENTIAL](../android.security.keystore/KeyProperties.md) during key generation. 
 
  Value: 32768
 

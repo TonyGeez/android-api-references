@@ -19,7 +19,7 @@ interface ContactMethodsColumns
 
 | **This interface was deprecated in API level 5.**
 |
-| see [android.provider.ContactsContract](../android/provider/ContactsContract.md)
+| see [android.provider.ContactsContract](ContactsContract.md)
 
 Columns from the ContactMethods table that other tables join into themseleves.
 
@@ -51,7 +51,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val AUX_DATA: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)*
 
 Auxiliary data for the contact method.
 
@@ -67,7 +67,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val DATA: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)*
 
 The data for the contact method.
 
@@ -83,7 +83,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val ISPRIMARY: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)*
 
 Whether this is the primary organization
 
@@ -99,7 +99,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val KIND: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)*
 
 The kind of the the contact method. For example, email address, postal address, etc.
 
@@ -115,7 +115,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val LABEL: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)*
 
 The user defined label for the the contact method.
 
@@ -131,7 +131,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val TYPE: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)*
 
 The type of the contact method, must be one of the types below.
 
@@ -147,7 +147,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val TYPE_CUSTOM: Int
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)* 
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)* 
 
  Value: 0
 
@@ -159,7 +159,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val TYPE_HOME: Int
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)* 
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)* 
 
  Value: 1
 
@@ -171,7 +171,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val TYPE_OTHER: Int
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)* 
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)* 
 
  Value: 3
 
@@ -183,6 +183,6 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val TYPE_WORK: Int
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)* 
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)* 
 
  Value: 2

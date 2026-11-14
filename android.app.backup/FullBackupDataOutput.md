@@ -4,7 +4,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 
 # FullBackupDataOutput
 
-Kotlin| [Java](../android/app/backup/FullBackupDataOutput.md) 
+Kotlin| [Java](FullBackupDataOutput.md) 
 | --- | --- |
 
 ```
@@ -13,16 +13,16 @@ open class FullBackupDataOutput
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.backup.FullBackupDataOutput](../android/app/backup/FullBackupDataOutput.md) |
+| ↳ | [android.app.backup.FullBackupDataOutput](FullBackupDataOutput.md) |
 
-Provides the interface through which a [BackupAgent](../android/app/backup/BackupAgent.md) writes entire files to a full backup data set, via its [BackupAgent.onFullBackup(FullBackupDataOutput)](../android/app/backup/BackupAgent.md))method.
+Provides the interface through which a [BackupAgent](BackupAgent.md) writes entire files to a full backup data set, via its [BackupAgent.onFullBackup(FullBackupDataOutput)](BackupAgent.md))method.
 
 ## Summary
 
 | Public methods ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getQuota](../android/app/backup/FullBackupDataOutput.md))`()` Returns the quota in bytes for the application's current backup operation. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTransportFlags](../android/app/backup/FullBackupDataOutput.md))`()` Returns flags with additional information about the backup transport. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getQuota](FullBackupDataOutput.md))`()` Returns the quota in bytes for the application's current backup operation. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTransportFlags](FullBackupDataOutput.md))`()` Returns flags with additional information about the backup transport. |
 
 ## Public methods
 
@@ -37,7 +37,7 @@ open fun getQuota(): Long
 Returns the quota in bytes for the application's current backup operation. The value can vary for each operation. 
 **See Also**
 
-- [android.app.backup.BackupDataOutput#getQuota()](../android/app/backup/BackupDataOutput.md)) 
+- [android.app.backup.BackupDataOutput#getQuota()](BackupDataOutput.md)) 
 
 ### getTransportFlags
 
@@ -47,7 +47,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 open fun getTransportFlags(): Int
 ```
 
-Returns flags with additional information about the backup transport. For supported flags see [android.app.backup.BackupAgent](../android/app/backup/BackupAgent.md) 
+Returns flags with additional information about the backup transport. For supported flags see [android.app.backup.BackupAgent](BackupAgent.md) 
 **See Also**
 
-- [android.app.backup.BackupDataOutput#getTransportFlags()](../android/app/backup/BackupDataOutput.md))
+- [android.app.backup.BackupDataOutput#getTransportFlags()](BackupDataOutput.md))

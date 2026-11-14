@@ -2,7 +2,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 
 # FederatedComputeScheduler
 
-Kotlin | [Java](../android/adservices/ondevicepersonalization/FederatedComputeScheduler.md)
+Kotlin | [Java](FederatedComputeScheduler.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ open class FederatedComputeScheduler
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.adservices.ondevicepersonalization.FederatedComputeScheduler](../android/adservices/ondevicepersonalization/FederatedComputeScheduler.md) |
+| ↳ | [android.adservices.ondevicepersonalization.FederatedComputeScheduler](FederatedComputeScheduler.md) |
 
 Handles scheduling federated compute jobs. See `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/IsolatedService#getFederatedComputeScheduler(android.adservices.ondevicepersonalization.RequestToken)`.
 
@@ -45,7 +45,7 @@ This method may take several seconds to complete, so it should only be called fr
 
 | Parameters ||
 |---|---|
-| `input` | [FederatedComputeInput](../android/adservices/ondevicepersonalization/FederatedComputeInput.md): the configuration of the federated compute. It should be consistent with the federated compute server setup. This value cannot be `null`. |
+| `input` | [FederatedComputeInput](FederatedComputeInput.md): the configuration of the federated compute. It should be consistent with the federated compute server setup. This value cannot be `null`. |
 
 ### schedule
 
@@ -66,7 +66,7 @@ This method may take several seconds to complete, so it should only be called fr
 | Parameters ||
 |---|---|
 | `params` | [FederatedComputeScheduler.Params](../android/adservices/ondevicepersonalization/FederatedComputeScheduler.Params.md): parameters related to job scheduling. This value cannot be `null`. |
-| `input` | [FederatedComputeInput](../android/adservices/ondevicepersonalization/FederatedComputeInput.md): the configuration of the federated computation. It should be consistent with the federated compute server setup as described in [Federated Compute Server documentation.](https://developers.google.com/privacy-sandbox/protections/on-device-personalization/federated-compute-server). This value cannot be `null`. |
+| `input` | [FederatedComputeInput](FederatedComputeInput.md): the configuration of the federated computation. It should be consistent with the federated compute server setup as described in [Federated Compute Server documentation.](https://developers.google.com/privacy-sandbox/protections/on-device-personalization/federated-compute-server). This value cannot be `null`. |
 
 ### schedule
 
@@ -87,7 +87,7 @@ This method may take several seconds to complete, so it should only be called fr
 
 | Parameters ||
 |---|---|
-| `federatedComputeScheduleRequest` | [FederatedComputeScheduleRequest](../android/adservices/ondevicepersonalization/FederatedComputeScheduleRequest.md): input parameters related to job scheduling. This value cannot be `null`. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): the `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` on which to invoke the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `outcomeReceiver` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [FederatedComputeScheduleResponse](../android/adservices/ondevicepersonalization/FederatedComputeScheduleResponse.md)!, [Exception](../java/lang/Exception.md)!\>: This either returns a `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/FederatedComputeScheduleResponse` on success, or `https://developer.android.com/reference/kotlin/java/lang/Exception.html#` on failure. The exception type is `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/OnDevicePersonalizationException` with error code `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/OnDevicePersonalizationException#ERROR_INVALID_TRAINING_MANIFEST:kotlin.Int` if the manifest is missing the federated compute server URL or `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/OnDevicePersonalizationException#ERROR_SCHEDULE_TRAINING_FAILED:kotlin.Int` when scheduling fails for other reasons. This value cannot be `null`. |
+| `federatedComputeScheduleRequest` | [FederatedComputeScheduleRequest](FederatedComputeScheduleRequest.md): input parameters related to job scheduling. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): the `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` on which to invoke the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `outcomeReceiver` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [FederatedComputeScheduleResponse](FederatedComputeScheduleResponse.md)!, [Exception](../java.lang/Exception.md)!\>: This either returns a `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/FederatedComputeScheduleResponse` on success, or `https://developer.android.com/reference/kotlin/java/lang/Exception.html#` on failure. The exception type is `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/OnDevicePersonalizationException` with error code `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/OnDevicePersonalizationException#ERROR_INVALID_TRAINING_MANIFEST:kotlin.Int` if the manifest is missing the federated compute server URL or `https://developer.android.com/reference/kotlin/android/adservices/ondevicepersonalization/OnDevicePersonalizationException#ERROR_SCHEDULE_TRAINING_FAILED:kotlin.Int` when scheduling fails for other reasons. This value cannot be `null`. |
 | --- | --- |

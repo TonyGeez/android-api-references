@@ -4,7 +4,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 
 # CarrierIdentifier
 
-Kotlin| [Java](../android/service/carrier/CarrierIdentifier.md) 
+Kotlin| [Java](CarrierIdentifier.md) 
 | --- | --- |
 
 ```
@@ -13,45 +13,45 @@ open class CarrierIdentifier : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.service.carrier.CarrierIdentifier](../android/service/carrier/CarrierIdentifier.md) |
+| ↳ | [android.service.carrier.CarrierIdentifier](CarrierIdentifier.md) |
 
-Used to pass info to CarrierConfigService implementations so they can decide what values to return. Instead of passing mcc, mnc, gid1, gid2, spn, imsi to locate carrier information, CarrierIdentifier also include carrier id [TelephonyManager.getSimCarrierId()](../android/telephony/TelephonyManager.md)), a platform-wide unique identifier for each carrier. CarrierConfigService can directly use carrier id as the key to look up the carrier info.
+Used to pass info to CarrierConfigService implementations so they can decide what values to return. Instead of passing mcc, mnc, gid1, gid2, spn, imsi to locate carrier information, CarrierIdentifier also include carrier id [TelephonyManager.getSimCarrierId()](../android.telephony/TelephonyManager.md)), a platform-wide unique identifier for each carrier. CarrierConfigService can directly use carrier id as the key to look up the carrier info.
 
 ## Summary
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android.os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android.os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android.os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [CarrierIdentifier](../android/service/carrier/CarrierIdentifier.md))`(`mccMnc:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `gid1:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `gid2:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Creates a carrier identifier instance. |
-| [CarrierIdentifier](../android/service/carrier/CarrierIdentifier.md))`(`mcc:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `mnc:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `spn:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `imsi:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `gid1:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `gid2:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` <br /> |
-| [CarrierIdentifier](../android/service/carrier/CarrierIdentifier.md))`(`mcc:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `mnc:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `spn:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `imsi:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `gid1:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `gid2:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `carrierid:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `specificCarrierId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [CarrierIdentifier](CarrierIdentifier.md))`(`mccMnc:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `gid1:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `gid2:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Creates a carrier identifier instance. |
+| [CarrierIdentifier](CarrierIdentifier.md))`(`mcc:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `mnc:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `spn:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `imsi:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `gid1:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `gid2:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` <br /> |
+| [CarrierIdentifier](CarrierIdentifier.md))`(`mcc:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `mnc:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `spn:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `imsi:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `gid1:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `gid2:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `carrierid:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `specificCarrierId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/service/carrier/CarrierIdentifier.md))`()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/service/carrier/CarrierIdentifier.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCarrierId](../android/service/carrier/CarrierIdentifier.md))`()` Returns the carrier id. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](CarrierIdentifier.md))`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](CarrierIdentifier.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCarrierId](CarrierIdentifier.md))`()` Returns the carrier id. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getGid1](../android/service/carrier/CarrierIdentifier.md))`()` Get the group identifier level 1. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getGid2](../android/service/carrier/CarrierIdentifier.md))`()` Get the group identifier level 2. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getImsi](../android/service/carrier/CarrierIdentifier.md))`()` Get the international mobile subscriber identity. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getGid1](CarrierIdentifier.md))`()` Get the group identifier level 1. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getGid2](CarrierIdentifier.md))`()` Get the group identifier level 2. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getImsi](CarrierIdentifier.md))`()` Get the international mobile subscriber identity. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getMcc](../android/service/carrier/CarrierIdentifier.md))`()` Get the mobile country code. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getMnc](../android/service/carrier/CarrierIdentifier.md))`()` Get the mobile network code. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSpecificCarrierId](../android/service/carrier/CarrierIdentifier.md))`()` A specific carrier ID returns the fine-grained carrier ID of the current subscription. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getMcc](CarrierIdentifier.md))`()` Get the mobile country code. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getMnc](CarrierIdentifier.md))`()` Get the mobile network code. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSpecificCarrierId](CarrierIdentifier.md))`()` A specific carrier ID returns the fine-grained carrier ID of the current subscription. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getSpn](../android/service/carrier/CarrierIdentifier.md))`()` Get the service provider name. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/service/carrier/CarrierIdentifier.md))`()` <br /> |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/service/carrier/CarrierIdentifier.md))`()` <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getSpn](CarrierIdentifier.md))`()` Get the service provider name. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](CarrierIdentifier.md))`()` <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](CarrierIdentifier.md))`()` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/service/carrier/CarrierIdentifier.md))`(`out:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](CarrierIdentifier.md))`(`out:` ` [Parcel](../android.os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [CarrierIdentifier](../android/service/carrier/CarrierIdentifier.md)!\> | [CREATOR](../android/service/carrier/CarrierIdentifier.md) Used to create a [CarrierIdentifier](../android/service/carrier/CarrierIdentifier.md) from a [Parcel](../android/os/Parcel.md). |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [CarrierIdentifier](CarrierIdentifier.md)!\> | [CREATOR](CarrierIdentifier.md) Used to create a [CarrierIdentifier](CarrierIdentifier.md) from a [Parcel](../android.os/Parcel.md). |
 
 ## Public constructors
 
@@ -123,12 +123,12 @@ CarrierIdentifier(
 | `mnc` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):mobile network code This value cannot be`null`. |
 | `spn` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:service provider name This value may be`null`. |
 | --- | --- |
-| `imsi` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:International Mobile Subscriber Identity [TelephonyManager.getSubscriberId()](../android/telephony/TelephonyManager.md))This value may be`null`. |
-| `gid1` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:group id level 1 [TelephonyManager.getGroupIdLevel1()](../android/telephony/TelephonyManager.md))This value may be`null`. |
+| `imsi` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:International Mobile Subscriber Identity [TelephonyManager.getSubscriberId()](../android.telephony/TelephonyManager.md))This value may be`null`. |
+| `gid1` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:group id level 1 [TelephonyManager.getGroupIdLevel1()](../android.telephony/TelephonyManager.md))This value may be`null`. |
 | `gid2` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:group id level 2 This value may be`null`. |
 | --- | --- |
-| `carrierid` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):carrier unique identifier [TelephonyManager.getSimCarrierId()](../android/telephony/TelephonyManager.md)), used to uniquely identify the carrier and look up the carrier configurations. |
-| `specificCarrierId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):specific carrier identifier [TelephonyManager.getSimSpecificCarrierId()](../android/telephony/TelephonyManager.md)) |
+| `carrierid` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):carrier unique identifier [TelephonyManager.getSimCarrierId()](../android.telephony/TelephonyManager.md)), used to uniquely identify the carrier and look up the carrier configurations. |
+| `specificCarrierId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):specific carrier identifier [TelephonyManager.getSimSpecificCarrierId()](../android.telephony/TelephonyManager.md)) |
 
 ## Public methods
 
@@ -142,7 +142,7 @@ open fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) |
 
 ### equals
 
@@ -171,7 +171,7 @@ open fun getCarrierId(): Int
 Returns the carrier id. 
 **See Also**
 
-- [android.telephony.TelephonyManager#getSimCarrierId()](../android/telephony/TelephonyManager.md)) 
+- [android.telephony.TelephonyManager#getSimCarrierId()](../android.telephony/TelephonyManager.md)) 
 
 ### getGid1
 
@@ -246,7 +246,7 @@ open fun getSpecificCarrierId(): Int
 A specific carrier ID returns the fine-grained carrier ID of the current subscription. It can represent the fact that a carrier may be in effect an aggregation of other carriers (ie in an MVNO type scenario) where each of these specific carriers which are used to make up the actual carrier service may have different carrier configurations. A specific carrier ID could also be used, for example, in a scenario where a carrier requires different carrier configuration for different service offering such as a prepaid plan. 
 **See Also**
 
-- [android.telephony.TelephonyManager#getSimSpecificCarrierId()](../android/telephony/TelephonyManager.md)) 
+- [android.telephony.TelephonyManager#getSimSpecificCarrierId()](../android.telephony/TelephonyManager.md)) 
 
 ### getSpn
 
@@ -300,7 +300,7 @@ open fun writeToParcel(
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `dest` | The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 
@@ -312,4 +312,4 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 static val CREATOR: Parcelable.Creator<CarrierIdentifier!>
 ```
 
-Used to create a [CarrierIdentifier](../android/service/carrier/CarrierIdentifier.md) from a [Parcel](../android/os/Parcel.md).
+Used to create a [CarrierIdentifier](CarrierIdentifier.md) from a [Parcel](../android.os/Parcel.md).

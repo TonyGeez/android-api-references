@@ -9,9 +9,9 @@ open class RenamingDelegatingContext : ContextWrapper
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.content.Context](../android/content/Context.md) |||
-| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) ||
-| | | ↳ | [android.test.RenamingDelegatingContext](../android/test/RenamingDelegatingContext.md) |
+| ↳ | [android.content.Context](../android.content/Context.md) |||
+| | ↳ | [android.content.ContextWrapper](../android.content/ContextWrapper.md) ||
+| | | ↳ | [android.test.RenamingDelegatingContext](RenamingDelegatingContext.md) |
 | --- | --- | --- | --- |
 
 > [!CAUTION]
@@ -944,18 +944,18 @@ Use with `https://developer.android.com/reference/kotlin/android/content/Context
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/test/RenamingDelegatingContext#deleteFile(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Delete the given private file associated with this Context's application package. |
 | --- | --- |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/test/RenamingDelegatingContext#fileList()()` Returns an array of strings naming the private files associated with this Context's application package. |
-| open [File](../java/io/File.md)! | `https://developer.android.com/reference/kotlin/android/test/RenamingDelegatingContext#getCacheDir()()` In order to support calls to getCacheDir(), we create a temp cache dir (inside the real one) and return it instead. |
-| open [File](../java/io/File.md)! | `https://developer.android.com/reference/kotlin/android/test/RenamingDelegatingContext#getDatabasePath(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the absolute path on the filesystem where a database created with #openOrCreateDatabase is stored. |
+| open [File](../java.io/File.md)! | `https://developer.android.com/reference/kotlin/android/test/RenamingDelegatingContext#getCacheDir()()` In order to support calls to getCacheDir(), we create a temp cache dir (inside the real one) and return it instead. |
+| open [File](../java.io/File.md)! | `https://developer.android.com/reference/kotlin/android/test/RenamingDelegatingContext#getDatabasePath(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the absolute path on the filesystem where a database created with #openOrCreateDatabase is stored. |
 | --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/test/RenamingDelegatingContext#getDatabasePrefix()()` <br /> |
-| open [File](../java/io/File.md)! | `https://developer.android.com/reference/kotlin/android/test/RenamingDelegatingContext#getFileStreamPath(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the absolute path on the filesystem where a file created with `https://developer.android.com/reference/kotlin/android/content/Context.html#openFileOutput(kotlin.String,%20kotlin.Int)` is stored. |
+| open [File](../java.io/File.md)! | `https://developer.android.com/reference/kotlin/android/test/RenamingDelegatingContext#getFileStreamPath(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the absolute path on the filesystem where a file created with `https://developer.android.com/reference/kotlin/android/content/Context.html#openFileOutput(kotlin.String,%20kotlin.Int)` is stored. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/test/RenamingDelegatingContext#makeExistingFilesAndDbsAccessible()()` Makes accessible all files and databases whose names match the filePrefix that was passed to the constructor. |
 | --- | --- |
-| open [FileInputStream](../java/io/FileInputStream.md)! | `https://developer.android.com/reference/kotlin/android/test/RenamingDelegatingContext#openFileInput(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Open a private file associated with this Context's application package for reading. |
-| open [FileOutputStream](../java/io/FileOutputStream.md)! | `https://developer.android.com/reference/kotlin/android/test/RenamingDelegatingContext#openFileOutput(kotlin.String,%20kotlin.Int)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Open a private file associated with this Context's application package for writing. |
-| open [SQLiteDatabase](../android/database/sqlite/SQLiteDatabase.md)! | `https://developer.android.com/reference/kotlin/android/test/RenamingDelegatingContext#openOrCreateDatabase(kotlin.String,%20kotlin.Int,%20android.database.sqlite.SQLiteDatabase.CursorFactory)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, factory: https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase.CursorFactory.html#!)` Open a new private SQLiteDatabase associated with this Context's application package. |
+| open [FileInputStream](../java.io/FileInputStream.md)! | `https://developer.android.com/reference/kotlin/android/test/RenamingDelegatingContext#openFileInput(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Open a private file associated with this Context's application package for reading. |
+| open [FileOutputStream](../java.io/FileOutputStream.md)! | `https://developer.android.com/reference/kotlin/android/test/RenamingDelegatingContext#openFileOutput(kotlin.String,%20kotlin.Int)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Open a private file associated with this Context's application package for writing. |
+| open [SQLiteDatabase](../android.database.sqlite/SQLiteDatabase.md)! | `https://developer.android.com/reference/kotlin/android/test/RenamingDelegatingContext#openOrCreateDatabase(kotlin.String,%20kotlin.Int,%20android.database.sqlite.SQLiteDatabase.CursorFactory)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, factory: https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase.CursorFactory.html#!)` Open a new private SQLiteDatabase associated with this Context's application package. |
 | --- | --- |
-| open [SQLiteDatabase](../android/database/sqlite/SQLiteDatabase.md)! | `https://developer.android.com/reference/kotlin/android/test/RenamingDelegatingContext#openOrCreateDatabase(kotlin.String,%20kotlin.Int,%20android.database.sqlite.SQLiteDatabase.CursorFactory,%20android.database.DatabaseErrorHandler)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, factory: https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase.CursorFactory.html#!, errorHandler: https://developer.android.com/reference/kotlin/android/database/DatabaseErrorHandler.html#?)` Open a new private SQLiteDatabase associated with this Context's application package. |
+| open [SQLiteDatabase](../android.database.sqlite/SQLiteDatabase.md)! | `https://developer.android.com/reference/kotlin/android/test/RenamingDelegatingContext#openOrCreateDatabase(kotlin.String,%20kotlin.Int,%20android.database.sqlite.SQLiteDatabase.CursorFactory,%20android.database.DatabaseErrorHandler)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, factory: https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase.CursorFactory.html#!, errorHandler: https://developer.android.com/reference/kotlin/android/database/DatabaseErrorHandler.html#?)` Open a new private SQLiteDatabase associated with this Context's application package. |
 | open static T | `https://developer.android.com/reference/kotlin/android/test/RenamingDelegatingContext#providerWithRenamedContext(java.lang.Class,%20android.content.Context,%20kotlin.String)(contentProvider: https://developer.android.com/reference/kotlin/java/lang/Class.html#<T>!, c: https://developer.android.com/reference/kotlin/android/content/Context.html#!, filePrefix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` <br /> |
 | open static T | `https://developer.android.com/reference/kotlin/android/test/RenamingDelegatingContext#providerWithRenamedContext(java.lang.Class,%20android.content.Context,%20kotlin.String,%20kotlin.Boolean)(contentProvider: https://developer.android.com/reference/kotlin/java/lang/Class.html#<T>!, c: https://developer.android.com/reference/kotlin/android/content/Context.html#!, filePrefix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, allowAccessToExistingFilesAndDbs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` <br /> |
 | --- | --- |
@@ -2374,8 +2374,8 @@ RenamingDelegatingContext(
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md)!: : the context that will be delegated. |
-| `fileContext` | [Context](../android/content/Context.md)!: : the context that file and db methods will be delegated to |
+| `context` | [Context](../android.content/Context.md)!: : the context that will be delegated. |
+| `fileContext` | [Context](../android.content/Context.md)!: : the context that file and db methods will be delegated to |
 | `filePrefix` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: : a prefix with which database and file names will be prefixed. |
 | --- | --- |
 
@@ -2391,7 +2391,7 @@ RenamingDelegatingContext(
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md)!: : the context that will be delegated. |
+| `context` | [Context](../android.content/Context.md)!: : the context that will be delegated. |
 | `filePrefix` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: : a prefix with which database and file names will be prefixed. |
 
 ## Public methods
@@ -2653,7 +2653,7 @@ Accepts input param: a concrete instance of `https://developer.android.com/refer
 | `mode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Operating mode. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/content/Context.html#MODE_PRIVATE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context.html#MODE_WORLD_READABLE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context.html#MODE_WORLD_WRITEABLE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context.html#MODE_ENABLE_WRITE_AHEAD_LOGGING:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context.html#MODE_NO_LOCALIZED_COLLATORS:kotlin.Int` |
 | `factory` | [SQLiteDatabase.CursorFactory](../android/database/sqlite/SQLiteDatabase.CursorFactory.md)!: An optional factory class that is called to instantiate a cursor when query is called. |
 | --- | --- |
-| `errorHandler` | [DatabaseErrorHandler](../android/database/DatabaseErrorHandler.md)?: This value may be `null`. |
+| `errorHandler` | [DatabaseErrorHandler](../android.database/DatabaseErrorHandler.md)?: This value may be `null`. |
 
 | Return ||
 |---|---|

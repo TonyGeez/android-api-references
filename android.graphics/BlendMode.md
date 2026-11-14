@@ -4,7 +4,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 
 # BlendMode
 
-Kotlin| [Java](../android/graphics/BlendMode.md) 
+Kotlin| [Java](BlendMode.md) 
 | --- | --- |
 
 ```
@@ -13,45 +13,45 @@ class BlendMode
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [android.graphics.BlendMode](../android/graphics/BlendMode.md)\> ||
-| | ↳ | [android.graphics.BlendMode](../android/graphics/BlendMode.md) |
+| ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [android.graphics.BlendMode](BlendMode.md)\> ||
+| | ↳ | [android.graphics.BlendMode](BlendMode.md) |
 
-| Known Direct Subclasses [BlendMode.CLEAR](../android/graphics/BlendMode.md), [BlendMode.COLOR](../android/graphics/BlendMode.md), [BlendMode.COLOR_BURN](../android/graphics/BlendMode.md), [BlendMode.COLOR_DODGE](../android/graphics/BlendMode.md), [BlendMode.DARKEN](../android/graphics/BlendMode.md), [BlendMode.DIFFERENCE](../android/graphics/BlendMode.md), [BlendMode.DST](../android/graphics/BlendMode.md), [BlendMode.DST_ATOP](../android/graphics/BlendMode.md), [BlendMode.DST_IN](../android/graphics/BlendMode.md), [BlendMode.DST_OUT](../android/graphics/BlendMode.md), [BlendMode.DST_OVER](../android/graphics/BlendMode.md), [BlendMode.EXCLUSION](../android/graphics/BlendMode.md), and 17 others. |---------------------------------------------------------------------------------------------------------------------------|--------| | [BlendMode.CLEAR](../android/graphics/BlendMode.md) | <br /> | | [BlendMode.COLOR](../android/graphics/BlendMode.md) | <br /> | | [BlendMode.COLOR_BURN](../android/graphics/BlendMode.md) | <br /> | | [BlendMode.COLOR_DODGE](../android/graphics/BlendMode.md) | <br /> | | [BlendMode.DARKEN](../android/graphics/BlendMode.md) | <br /> | | [BlendMode.DIFFERENCE](../android/graphics/BlendMode.md) | <br /> | | [BlendMode.DST](../android/graphics/BlendMode.md) | <br /> | | [BlendMode.DST_ATOP](../android/graphics/BlendMode.md) | <br /> | | [BlendMode.DST_IN](../android/graphics/BlendMode.md) | <br /> | | [BlendMode.DST_OUT](../android/graphics/BlendMode.md) | <br /> | | [BlendMode.DST_OVER](../android/graphics/BlendMode.md) | <br /> | | [BlendMode.EXCLUSION](../android/graphics/BlendMode.md) | <br /> | | [BlendMode.HARD_LIGHT](../android/graphics/BlendMode.md) | <br /> | | [BlendMode.HUE](../android/graphics/BlendMode.md) | <br /> | | [BlendMode.LIGHTEN](../android/graphics/BlendMode.md) | <br /> | | [BlendMode.LUMINOSITY](../android/graphics/BlendMode.md) | <br /> | | [BlendMode.MODULATE](../android/graphics/BlendMode.md) | <br /> | | [BlendMode.MULTIPLY](../android/graphics/BlendMode.md) | <br /> | | [BlendMode.OVERLAY](../android/graphics/BlendMode.md) | <br /> | | [BlendMode.PLUS](../android/graphics/BlendMode.md) | <br /> | | [BlendMode.SATURATION](../android/graphics/BlendMode.md) | <br /> | | [BlendMode.SCREEN](../android/graphics/BlendMode.md) | <br /> | | [BlendMode.SOFT_LIGHT](../android/graphics/BlendMode.md) | <br /> | | [BlendMode.SRC](../android/graphics/BlendMode.md) | <br /> | | [BlendMode.SRC_ATOP](../android/graphics/BlendMode.md) | <br /> | | [BlendMode.SRC_IN](../android/graphics/BlendMode.md) | <br /> | | [BlendMode.SRC_OUT](../android/graphics/BlendMode.md) | <br /> | | [BlendMode.SRC_OVER](../android/graphics/BlendMode.md) | <br /> | | [BlendMode.XOR](../android/graphics/BlendMode.md) | <br /> | |
+| Known Direct Subclasses [BlendMode.CLEAR](BlendMode.md), [BlendMode.COLOR](BlendMode.md), [BlendMode.COLOR_BURN](BlendMode.md), [BlendMode.COLOR_DODGE](BlendMode.md), [BlendMode.DARKEN](BlendMode.md), [BlendMode.DIFFERENCE](BlendMode.md), [BlendMode.DST](BlendMode.md), [BlendMode.DST_ATOP](BlendMode.md), [BlendMode.DST_IN](BlendMode.md), [BlendMode.DST_OUT](BlendMode.md), [BlendMode.DST_OVER](BlendMode.md), [BlendMode.EXCLUSION](BlendMode.md), and 17 others. |---------------------------------------------------------------------------------------------------------------------------|--------| | [BlendMode.CLEAR](BlendMode.md) | <br /> | | [BlendMode.COLOR](BlendMode.md) | <br /> | | [BlendMode.COLOR_BURN](BlendMode.md) | <br /> | | [BlendMode.COLOR_DODGE](BlendMode.md) | <br /> | | [BlendMode.DARKEN](BlendMode.md) | <br /> | | [BlendMode.DIFFERENCE](BlendMode.md) | <br /> | | [BlendMode.DST](BlendMode.md) | <br /> | | [BlendMode.DST_ATOP](BlendMode.md) | <br /> | | [BlendMode.DST_IN](BlendMode.md) | <br /> | | [BlendMode.DST_OUT](BlendMode.md) | <br /> | | [BlendMode.DST_OVER](BlendMode.md) | <br /> | | [BlendMode.EXCLUSION](BlendMode.md) | <br /> | | [BlendMode.HARD_LIGHT](BlendMode.md) | <br /> | | [BlendMode.HUE](BlendMode.md) | <br /> | | [BlendMode.LIGHTEN](BlendMode.md) | <br /> | | [BlendMode.LUMINOSITY](BlendMode.md) | <br /> | | [BlendMode.MODULATE](BlendMode.md) | <br /> | | [BlendMode.MULTIPLY](BlendMode.md) | <br /> | | [BlendMode.OVERLAY](BlendMode.md) | <br /> | | [BlendMode.PLUS](BlendMode.md) | <br /> | | [BlendMode.SATURATION](BlendMode.md) | <br /> | | [BlendMode.SCREEN](BlendMode.md) | <br /> | | [BlendMode.SOFT_LIGHT](BlendMode.md) | <br /> | | [BlendMode.SRC](BlendMode.md) | <br /> | | [BlendMode.SRC_ATOP](BlendMode.md) | <br /> | | [BlendMode.SRC_IN](BlendMode.md) | <br /> | | [BlendMode.SRC_OUT](BlendMode.md) | <br /> | | [BlendMode.SRC_OVER](BlendMode.md) | <br /> | | [BlendMode.XOR](BlendMode.md) | <br /> | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 ## Summary
 
 | Enum values ||
 |------------------------------------------------------------------------------------------------------------------------|---|
-| [CLEAR](../android/graphics/BlendMode.md) <br /> |
-| [COLOR](../android/graphics/BlendMode.md) <br /> |
-| [COLOR_BURN](../android/graphics/BlendMode.md) <br /> |
-| [COLOR_DODGE](../android/graphics/BlendMode.md) <br /> |
-| [DARKEN](../android/graphics/BlendMode.md) <br /> |
-| [DIFFERENCE](../android/graphics/BlendMode.md) <br /> |
-| [DST](../android/graphics/BlendMode.md) <br /> |
-| [DST_ATOP](../android/graphics/BlendMode.md) <br /> |
-| [DST_IN](../android/graphics/BlendMode.md) <br /> |
-| [DST_OUT](../android/graphics/BlendMode.md) <br /> |
-| [DST_OVER](../android/graphics/BlendMode.md) <br /> |
-| [EXCLUSION](../android/graphics/BlendMode.md) <br /> |
-| [HARD_LIGHT](../android/graphics/BlendMode.md) <br /> |
-| [HUE](../android/graphics/BlendMode.md) <br /> |
-| [LIGHTEN](../android/graphics/BlendMode.md) <br /> |
-| [LUMINOSITY](../android/graphics/BlendMode.md) <br /> |
-| [MODULATE](../android/graphics/BlendMode.md) <br /> |
-| [MULTIPLY](../android/graphics/BlendMode.md) <br /> |
-| [OVERLAY](../android/graphics/BlendMode.md) <br /> |
-| [PLUS](../android/graphics/BlendMode.md) <br /> |
-| [SATURATION](../android/graphics/BlendMode.md) <br /> |
-| [SCREEN](../android/graphics/BlendMode.md) <br /> |
-| [SOFT_LIGHT](../android/graphics/BlendMode.md) <br /> |
-| [SRC](../android/graphics/BlendMode.md) <br /> |
-| [SRC_ATOP](../android/graphics/BlendMode.md) <br /> |
-| [SRC_IN](../android/graphics/BlendMode.md) <br /> |
-| [SRC_OUT](../android/graphics/BlendMode.md) <br /> |
-| [SRC_OVER](../android/graphics/BlendMode.md) <br /> |
-| [XOR](../android/graphics/BlendMode.md) <br /> |
+| [CLEAR](BlendMode.md) <br /> |
+| [COLOR](BlendMode.md) <br /> |
+| [COLOR_BURN](BlendMode.md) <br /> |
+| [COLOR_DODGE](BlendMode.md) <br /> |
+| [DARKEN](BlendMode.md) <br /> |
+| [DIFFERENCE](BlendMode.md) <br /> |
+| [DST](BlendMode.md) <br /> |
+| [DST_ATOP](BlendMode.md) <br /> |
+| [DST_IN](BlendMode.md) <br /> |
+| [DST_OUT](BlendMode.md) <br /> |
+| [DST_OVER](BlendMode.md) <br /> |
+| [EXCLUSION](BlendMode.md) <br /> |
+| [HARD_LIGHT](BlendMode.md) <br /> |
+| [HUE](BlendMode.md) <br /> |
+| [LIGHTEN](BlendMode.md) <br /> |
+| [LUMINOSITY](BlendMode.md) <br /> |
+| [MODULATE](BlendMode.md) <br /> |
+| [MULTIPLY](BlendMode.md) <br /> |
+| [OVERLAY](BlendMode.md) <br /> |
+| [PLUS](BlendMode.md) <br /> |
+| [SATURATION](BlendMode.md) <br /> |
+| [SCREEN](BlendMode.md) <br /> |
+| [SOFT_LIGHT](BlendMode.md) <br /> |
+| [SRC](BlendMode.md) <br /> |
+| [SRC_ATOP](BlendMode.md) <br /> |
+| [SRC_IN](BlendMode.md) <br /> |
+| [SRC_OUT](BlendMode.md) <br /> |
+| [SRC_OVER](BlendMode.md) <br /> |
+| [XOR](BlendMode.md) <br /> |
 
 ## Enum values
 

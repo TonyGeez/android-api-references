@@ -4,7 +4,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 
 # IkeTimeoutException
 
-Kotlin| [Java](../android/net/ipsec/ike/exceptions/IkeTimeoutException.md) 
+Kotlin| [Java](IkeTimeoutException.md) 
 | --- | --- |
 
 ```
@@ -14,10 +14,10 @@ class IkeTimeoutException : IOException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
-| | | ↳ | [java.io.IOException](../java/io/IOException.md) ||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) |||
+| | | ↳ | [java.io.IOException](../java.io/IOException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.net.ipsec.ike.exceptions.IkeTimeoutException](../android/net/ipsec/ike/exceptions/IkeTimeoutException.md) |
+| | | | ↳ | [android.net.ipsec.ike.exceptions.IkeTimeoutException](IkeTimeoutException.md) |
 
 This exception is thrown when there is an IKE retransmission timeout.
 
@@ -27,7 +27,7 @@ This exception indicates that the IKE Session failed to receive an IKE response 
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [IkeTimeoutException](../android/net/ipsec/ike/exceptions/IkeTimeoutException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Constructs an`IkeTimeoutException`with the specified detail message. |
+| [IkeTimeoutException](IkeTimeoutException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Constructs an`IkeTimeoutException`with the specified detail message. |
 
 ## Public constructors
 
@@ -41,8 +41,8 @@ IkeTimeoutException(message: String)
 
 Constructs an`IkeTimeoutException`with the specified detail message.
 
-Callers are not generally expected to instantiate this object themselves, except for testing. A reference is passed via [IkeSessionCallback](../android/net/ipsec/ike/IkeSessionCallback.md) or [ChildSessionCallback](../android/net/ipsec/ike/ChildSessionCallback.md).
+Callers are not generally expected to instantiate this object themselves, except for testing. A reference is passed via [IkeSessionCallback](../android.net.ipsec.ike/IkeSessionCallback.md) or [ChildSessionCallback](../android.net.ipsec.ike/ChildSessionCallback.md).
 
 | Parameters ||
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The detail message (which is saved for later retrieval by the [getMessage()](../java/lang/Throwable.md))method) This value cannot be`null`. |
+| `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The detail message (which is saved for later retrieval by the [getMessage()](../java.lang/Throwable.md))method) This value cannot be`null`. |

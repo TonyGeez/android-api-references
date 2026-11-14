@@ -5,7 +5,7 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 
 # Long2
 
-Kotlin| [Java](../android/renderscript/Long2.md) 
+Kotlin| [Java](Long2.md) 
 | --- | --- |
 
 ```
@@ -14,7 +14,7 @@ open class Long2
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.renderscript.Long2](../android/renderscript/Long2.md) |
+| ↳ | [android.renderscript.Long2](Long2.md) |
 
 | **This class was deprecated in API level 31.**
 |
@@ -26,13 +26,13 @@ Vector version of the basic long type. Provides two long fields packed.
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Long2](../android/renderscript/Long2.md))`()` <br /> |
-| [Long2](../android/renderscript/Long2.md))`(`x:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `y:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` <br /> |
+| [Long2](Long2.md))`()` <br /> |
+| [Long2](Long2.md))`(`x:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `y:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` <br /> |
 
 | Properties ||
 |------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [x](../android/renderscript/Long2.md) <br /> |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [y](../android/renderscript/Long2.md) <br /> |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [x](Long2.md) <br /> |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [y](Long2.md) <br /> |
 
 ## Public constructors
 

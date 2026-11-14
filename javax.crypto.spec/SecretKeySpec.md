@@ -8,7 +8,7 @@ open class SecretKeySpec : KeySpec, SecretKey
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.crypto.spec.SecretKeySpec](../javax/crypto/spec/SecretKeySpec.md) |
+| ↳ | [javax.crypto.spec.SecretKeySpec](SecretKeySpec.md) |
 
 This class specifies a secret key in a provider-independent fashion.
 

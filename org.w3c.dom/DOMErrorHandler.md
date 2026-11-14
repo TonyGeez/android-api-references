@@ -8,7 +8,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 interface DOMErrorHandler
 ```
 
-| [org.w3c.dom.DOMErrorHandler](../org/w3c/dom/DOMErrorHandler.md) |
+| [org.w3c.dom.DOMErrorHandler](DOMErrorHandler.md) |
 
 `DOMErrorHandler`is a callback interface that the DOM implementation can call when reporting errors that happens while processing XML data, or when doing some other processing (e.g. validating a document). A`DOMErrorHandler`object can be attached to a`Document`using the "error-handler" on the`DOMConfiguration`interface. If more than one error needs to be reported during an operation, the sequence and numbers of the errors passed to the error handler are implementation dependent.
 
@@ -20,7 +20,7 @@ See also the [Document Object Model (DOM) Level 3 Core Specification](http://www
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [handleError](../org/w3c/dom/DOMErrorHandler.md))`(`error:` ` [DOMError](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-d-o-m-error/index.html)!`)` This method is called on the error handler when an error occurs. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [handleError](DOMErrorHandler.md))`(`error:` ` [DOMError](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-d-o-m-error/index.html)!`)` This method is called on the error handler when an error occurs. |
 
 ## Public methods
 

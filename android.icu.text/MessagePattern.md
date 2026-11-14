@@ -4,7 +4,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # MessagePattern
 
-Kotlin| [Java](../android/icu/text/MessagePattern.md) 
+Kotlin| [Java](MessagePattern.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class MessagePattern : Cloneable, Freezable<MessagePattern!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.icu.text.MessagePattern](../android/icu/text/MessagePattern.md) |
+| ↳ | [android.icu.text.MessagePattern](MessagePattern.md) |
 
 Parses and represents ICU MessageFormat patterns. Also handles patterns for ChoiceFormat, PluralFormat and SelectFormat. Used in the implementations of those classes as well as in tools for message validation, translation and format conversion.
 
@@ -23,7 +23,7 @@ The parser handles named and numbered message arguments and allows both in one m
 
 Once a pattern has been parsed successfully, iterate through the parsed data with countParts(), getPart() and related methods.
 
-The data logically represents a parse tree, but is stored and accessed as a list of "parts" for fast and simple parsing and to minimize object allocations. Arguments and nested messages are best handled via recursion. For every _START "part", [getLimitPartIndex(int)](../android/icu/text/MessagePattern.md))efficiently returns the index of the corresponding _LIMIT "part".
+The data logically represents a parse tree, but is stored and accessed as a list of "parts" for fast and simple parsing and to minimize object allocations. Arguments and nested messages are best handled via recursion. For every _START "part", [getLimitPartIndex(int)](MessagePattern.md))efficiently returns the index of the corresponding _LIMIT "part".
 
 List of "parts": 
 
@@ -63,56 +63,56 @@ This class is not intended for public subclassing.
 
 | Constants ||
 |----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ARG_NAME_NOT_NUMBER](../android/icu/text/MessagePattern.md) Return value from [validateArgumentName(java.lang.String)](../android/icu/text/MessagePattern.md))for when the string is a valid "pattern identifier" but not a number. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ARG_NAME_NOT_VALID](../android/icu/text/MessagePattern.md) Return value from [validateArgumentName(java.lang.String)](../android/icu/text/MessagePattern.md))for when the string is invalid. |
-| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [NO_NUMERIC_VALUE](../android/icu/text/MessagePattern.md) Special value that is returned by getNumericValue(Part) when no numeric value is defined for a part. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ARG_NAME_NOT_NUMBER](MessagePattern.md) Return value from [validateArgumentName(java.lang.String)](MessagePattern.md))for when the string is a valid "pattern identifier" but not a number. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ARG_NAME_NOT_VALID](MessagePattern.md) Return value from [validateArgumentName(java.lang.String)](MessagePattern.md))for when the string is invalid. |
+| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [NO_NUMERIC_VALUE](MessagePattern.md) Special value that is returned by getNumericValue(Part) when no numeric value is defined for a part. |
 | --- | --- |
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [MessagePattern](../android/icu/text/MessagePattern.md))`()` Constructs an empty MessagePattern with default ApostropheMode. |
-| [MessagePattern](../android/icu/text/MessagePattern.md))`(`mode:` ` [MessagePattern.ApostropheMode](../android/icu/text/MessagePattern.ApostropheMode.md)!`)` Constructs an empty MessagePattern. |
-| [MessagePattern](../android/icu/text/MessagePattern.md))`(`pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a MessagePattern with default ApostropheMode and parses the MessageFormat pattern string. |
+| [MessagePattern](MessagePattern.md))`()` Constructs an empty MessagePattern with default ApostropheMode. |
+| [MessagePattern](MessagePattern.md))`(`mode:` ` [MessagePattern.ApostropheMode](../android/icu/text/MessagePattern.ApostropheMode.md)!`)` Constructs an empty MessagePattern. |
+| [MessagePattern](MessagePattern.md))`(`pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a MessagePattern with default ApostropheMode and parses the MessageFormat pattern string. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [autoQuoteApostropheDeep](../android/icu/text/MessagePattern.md))`()` Returns a version of the parsed pattern string where each ASCII apostrophe is doubled (escaped) if it is not already, and if it is not interpreted as quoting syntax. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](../android/icu/text/MessagePattern.md))`()` Clears this MessagePattern. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearPatternAndSetApostropheMode](../android/icu/text/MessagePattern.md))`(`mode:` ` [MessagePattern.ApostropheMode](../android/icu/text/MessagePattern.ApostropheMode.md)!`)` Clears this MessagePattern and sets the ApostropheMode. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [autoQuoteApostropheDeep](MessagePattern.md))`()` Returns a version of the parsed pattern string where each ASCII apostrophe is doubled (escaped) if it is not already, and if it is not interpreted as quoting syntax. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](MessagePattern.md))`()` Clears this MessagePattern. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearPatternAndSetApostropheMode](MessagePattern.md))`(`mode:` ` [MessagePattern.ApostropheMode](../android/icu/text/MessagePattern.ApostropheMode.md)!`)` Clears this MessagePattern and sets the ApostropheMode. |
 | --- | --- |
-| [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](../android/icu/text/MessagePattern.md))`()` Creates and returns a copy of this object. |
-| [MessagePattern](../android/icu/text/MessagePattern.md)! | [cloneAsThawed](../android/icu/text/MessagePattern.md))`()` Creates and returns an unfrozen copy of this object. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [countParts](../android/icu/text/MessagePattern.md))`()` Returns the number of "parts" created by parsing the pattern string. |
+| [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](MessagePattern.md))`()` Creates and returns a copy of this object. |
+| [MessagePattern](MessagePattern.md)! | [cloneAsThawed](MessagePattern.md))`()` Creates and returns an unfrozen copy of this object. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [countParts](MessagePattern.md))`()` Returns the number of "parts" created by parsing the pattern string. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/icu/text/MessagePattern.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
-| [MessagePattern](../android/icu/text/MessagePattern.md)! | [freeze](../android/icu/text/MessagePattern.md))`()` Freezes this object, making it immutable and thread-safe. |
-| [MessagePattern.ApostropheMode](../android/icu/text/MessagePattern.ApostropheMode.md)! | [getApostropheMode](../android/icu/text/MessagePattern.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](MessagePattern.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
+| [MessagePattern](MessagePattern.md)! | [freeze](MessagePattern.md))`()` Freezes this object, making it immutable and thread-safe. |
+| [MessagePattern.ApostropheMode](../android/icu/text/MessagePattern.ApostropheMode.md)! | [getApostropheMode](MessagePattern.md))`()` <br /> |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLimitPartIndex](../android/icu/text/MessagePattern.md))`(`start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the index of the ARG|MSG_LIMIT part corresponding to the ARG|MSG_START at start. |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getNumericValue](../android/icu/text/MessagePattern.md))`(`part:` ` [MessagePattern.Part](../android/icu/text/MessagePattern.Part.md)!`)` Returns the numeric value associated with an ARG_INT or ARG_DOUBLE. |
-| [MessagePattern.Part](../android/icu/text/MessagePattern.Part.md)! | [getPart](../android/icu/text/MessagePattern.md))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the i-th pattern "part". |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLimitPartIndex](MessagePattern.md))`(`start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the index of the ARG|MSG_LIMIT part corresponding to the ARG|MSG_START at start. |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getNumericValue](MessagePattern.md))`(`part:` ` [MessagePattern.Part](../android/icu/text/MessagePattern.Part.md)!`)` Returns the numeric value associated with an ARG_INT or ARG_DOUBLE. |
+| [MessagePattern.Part](../android/icu/text/MessagePattern.Part.md)! | [getPart](MessagePattern.md))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the i-th pattern "part". |
 | --- | --- |
-| [MessagePattern.Part.Type](../android/icu/text/MessagePattern.Part.Type.md)! | [getPartType](../android/icu/text/MessagePattern.md))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the Part. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPatternIndex](../android/icu/text/MessagePattern.md))`(`partIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the pattern index of the specified pattern "part". |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPatternString](../android/icu/text/MessagePattern.md))`()` <br /> |
+| [MessagePattern.Part.Type](../android/icu/text/MessagePattern.Part.Type.md)! | [getPartType](MessagePattern.md))`(`i:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the Part. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPatternIndex](MessagePattern.md))`(`partIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the pattern index of the specified pattern "part". |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPatternString](MessagePattern.md))`()` <br /> |
 | --- | --- |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getPluralOffset](../android/icu/text/MessagePattern.md))`(`pluralStart:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the "offset:" value of a PluralFormat argument, or 0 if none is specified. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSubstring](../android/icu/text/MessagePattern.md))`(`part:` ` [MessagePattern.Part](../android/icu/text/MessagePattern.Part.md)!`)` Returns the substring of the pattern string indicated by the Part. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasNamedArguments](../android/icu/text/MessagePattern.md))`()` Does the parsed pattern have named arguments like {first_name}? |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getPluralOffset](MessagePattern.md))`(`pluralStart:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the "offset:" value of a PluralFormat argument, or 0 if none is specified. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSubstring](MessagePattern.md))`(`part:` ` [MessagePattern.Part](../android/icu/text/MessagePattern.Part.md)!`)` Returns the substring of the pattern string indicated by the Part. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasNamedArguments](MessagePattern.md))`()` Does the parsed pattern have named arguments like {first_name}? |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasNumberedArguments](../android/icu/text/MessagePattern.md))`()` Does the parsed pattern have numbered arguments like {2}? |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/icu/text/MessagePattern.md))`()` Returns a hash code value for the object. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFrozen](../android/icu/text/MessagePattern.md))`()` Determines whether this object is frozen (immutable) or not. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasNumberedArguments](MessagePattern.md))`()` Does the parsed pattern have numbered arguments like {2}? |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](MessagePattern.md))`()` Returns a hash code value for the object. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFrozen](MessagePattern.md))`()` Determines whether this object is frozen (immutable) or not. |
 | --- | --- |
-| [MessagePattern](../android/icu/text/MessagePattern.md)! | [parse](../android/icu/text/MessagePattern.md))`(`pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Parses a MessageFormat pattern string. |
-| [MessagePattern](../android/icu/text/MessagePattern.md)! | [parseChoiceStyle](../android/icu/text/MessagePattern.md))`(`pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Parses a ChoiceFormat pattern string. |
-| [MessagePattern](../android/icu/text/MessagePattern.md)! | [parsePluralStyle](../android/icu/text/MessagePattern.md))`(`pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Parses a PluralFormat pattern string. |
+| [MessagePattern](MessagePattern.md)! | [parse](MessagePattern.md))`(`pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Parses a MessageFormat pattern string. |
+| [MessagePattern](MessagePattern.md)! | [parseChoiceStyle](MessagePattern.md))`(`pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Parses a ChoiceFormat pattern string. |
+| [MessagePattern](MessagePattern.md)! | [parsePluralStyle](MessagePattern.md))`(`pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Parses a PluralFormat pattern string. |
 | --- | --- |
-| [MessagePattern](../android/icu/text/MessagePattern.md)! | [parseSelectStyle](../android/icu/text/MessagePattern.md))`(`pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Parses a SelectFormat pattern string. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [partSubstringMatches](../android/icu/text/MessagePattern.md))`(`part:` ` [MessagePattern.Part](../android/icu/text/MessagePattern.Part.md)!`, `s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Compares the part's substring with the input string s. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/icu/text/MessagePattern.md))`()` Returns a string representation of the object. |
+| [MessagePattern](MessagePattern.md)! | [parseSelectStyle](MessagePattern.md))`(`pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Parses a SelectFormat pattern string. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [partSubstringMatches](MessagePattern.md))`(`part:` ` [MessagePattern.Part](../android/icu/text/MessagePattern.Part.md)!`, `s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Compares the part's substring with the input string s. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](MessagePattern.md))`()` Returns a string representation of the object. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [validateArgumentName](../android/icu/text/MessagePattern.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Validates and parses an argument name or argument number string. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [validateArgumentName](MessagePattern.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Validates and parses an argument name or argument number string. |
 
 ## Constants
 
@@ -124,7 +124,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val ARG_NAME_NOT_NUMBER: Int
 ```
 
-Return value from [validateArgumentName(java.lang.String)](../android/icu/text/MessagePattern.md))for when the string is a valid "pattern identifier" but not a number. 
+Return value from [validateArgumentName(java.lang.String)](MessagePattern.md))for when the string is a valid "pattern identifier" but not a number. 
 
  Value: -1
 
@@ -136,7 +136,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val ARG_NAME_NOT_VALID: Int
 ```
 
-Return value from [validateArgumentName(java.lang.String)](../android/icu/text/MessagePattern.md))for when the string is invalid. It might not be a valid "pattern identifier", or it have only ASCII digits but there is a leading zero or the number is too large. 
+Return value from [validateArgumentName(java.lang.String)](MessagePattern.md))for when the string is invalid. It might not be a valid "pattern identifier", or it have only ASCII digits but there is a leading zero or the number is too large. 
 
  Value: -2
 
@@ -154,7 +154,7 @@ Special value that is returned by getNumericValue(Part) when no numeric value is
 
 **See Also**
 
-- [#getNumericValue](../android/icu/text/MessagePattern.md))
+- [#getNumericValue](MessagePattern.md))
 
 ## Public constructors
 
@@ -223,7 +223,7 @@ For example, this turns "I don't '{know}' {gender,select,female{h''er}other{h'im
 
 **See Also**
 
-- [android.icu.text.MessageFormat#autoQuoteApostrophe(String)](../android/icu/text/MessageFormat.md)) 
+- [android.icu.text.MessageFormat#autoQuoteApostrophe(String)](MessageFormat.md)) 
 
 ### clear
 
@@ -279,7 +279,7 @@ Creates and returns an unfrozen copy of this object.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------|------------------------|
-| [MessagePattern](../android/icu/text/MessagePattern.md)! | a copy of this object. |
+| [MessagePattern](MessagePattern.md)! | a copy of this object. |
 
 ### countParts
 
@@ -324,7 +324,7 @@ Freezes this object, making it immutable and thread-safe.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------|------|
-| [MessagePattern](../android/icu/text/MessagePattern.md)! | this |
+| [MessagePattern](MessagePattern.md)! | this |
 
 ### getApostropheMode
 
@@ -533,13 +533,13 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 fun hashCode(): Int
 ```
 
-Returns a hash code value for the object. This method is supported for the benefit of hash tables such as those provided by [java.util.HashMap](../java/util/HashMap.md).
+Returns a hash code value for the object. This method is supported for the benefit of hash tables such as those provided by [java.util.HashMap](../java.util/HashMap.md).
 
 The general contract of`hashCode`is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the`hashCode`method must consistently return the same integer, provided no information used in`equals`comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the [equals](../java/lang/Object.md))method, then calling the`hashCode`method on each of the two objects must produce the same integer result.
-- It is*not* required that if two objects are unequal according to the [equals](../java/lang/Object.md))method, then calling the`hashCode`method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the [equals](../java.lang/Object.md))method, then calling the`hashCode`method on each of the two objects must produce the same integer result.
+- It is*not* required that if two objects are unequal according to the [equals](../java.lang/Object.md))method, then calling the`hashCode`method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------|
@@ -575,7 +575,7 @@ Parses a MessageFormat pattern string.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------|------|
-| [MessagePattern](../android/icu/text/MessagePattern.md)! | this |
+| [MessagePattern](MessagePattern.md)! | this |
 
 | Exceptions ||
 |---------------------------------------|-----------------------------------------------------------------------------------------------|
@@ -600,7 +600,7 @@ Parses a ChoiceFormat pattern string.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------|------|
-| [MessagePattern](../android/icu/text/MessagePattern.md)! | this |
+| [MessagePattern](MessagePattern.md)! | this |
 
 | Exceptions ||
 |---------------------------------------|-----------------------------------------------------------------------------------------------|
@@ -625,7 +625,7 @@ Parses a PluralFormat pattern string.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------|------|
-| [MessagePattern](../android/icu/text/MessagePattern.md)! | this |
+| [MessagePattern](MessagePattern.md)! | this |
 
 | Exceptions ||
 |---------------------------------------|-----------------------------------------------------------------------------------------------|
@@ -650,7 +650,7 @@ Parses a SelectFormat pattern string.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------|------|
-| [MessagePattern](../android/icu/text/MessagePattern.md)! | this |
+| [MessagePattern](MessagePattern.md)! | this |
 
 | Exceptions ||
 |---------------------------------------|-----------------------------------------------------------------------------------------------|

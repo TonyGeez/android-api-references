@@ -10,7 +10,7 @@ open class ReferenceQueue<T : Any!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.lang.ref.ReferenceQueue](../java/lang/ref/ReferenceQueue.md) |
+| ↳ | [java.lang.ref.ReferenceQueue](ReferenceQueue.md) |
 
 Reference queues, to which registered reference objects are appended by the garbage collector after the appropriate reachability changes are detected.
 
@@ -18,13 +18,13 @@ Reference queues, to which registered reference objects are appended by the garb
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ReferenceQueue](../java/lang/ref/ReferenceQueue.md))`()` Constructs a new reference-object queue. |
+| [ReferenceQueue](ReferenceQueue.md))`()` Constructs a new reference-object queue. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Reference](../java/lang/ref/Reference.md)\<outT\>! | [poll](../java/lang/ref/ReferenceQueue.md))`()` Polls this queue to see if a reference object is available. |
-| open [Reference](../java/lang/ref/Reference.md)\<outT\>! | [remove](../java/lang/ref/ReferenceQueue.md))`()` Removes the next reference object in this queue, blocking until one becomes available. |
-| open [Reference](../java/lang/ref/Reference.md)\<outT\>! | [remove](../java/lang/ref/ReferenceQueue.md))`(`timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Removes the next reference object in this queue, blocking until either one becomes available or the given timeout period expires. |
+| open [Reference](Reference.md)\<outT\>! | [poll](ReferenceQueue.md))`()` Polls this queue to see if a reference object is available. |
+| open [Reference](Reference.md)\<outT\>! | [remove](ReferenceQueue.md))`()` Removes the next reference object in this queue, blocking until one becomes available. |
+| open [Reference](Reference.md)\<outT\>! | [remove](ReferenceQueue.md))`(`timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Removes the next reference object in this queue, blocking until either one becomes available or the given timeout period expires. |
 | --- | --- |
 
 ## Public constructors
@@ -53,7 +53,7 @@ Polls this queue to see if a reference object is available. If one is available 
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
-| [Reference](../java/lang/ref/Reference.md)<out` `T>! | A reference object, if one was immediately available, otherwise`null` |
+| [Reference](Reference.md)<out` `T>! | A reference object, if one was immediately available, otherwise`null` |
 
 ### remove
 
@@ -67,7 +67,7 @@ Removes the next reference object in this queue, blocking until one becomes avai
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|----------------------------------------------------------|
-| [Reference](../java/lang/ref/Reference.md)<out` `T>! | A reference object, blocking until one becomes available |
+| [Reference](Reference.md)<out` `T>! | A reference object, blocking until one becomes available |
 
 | Exceptions ||
 |----------------------------------|----------------------------|
@@ -83,7 +83,7 @@ open fun remove(timeout: Long): Reference<out T>!
 
 Removes the next reference object in this queue, blocking until either one becomes available or the given timeout period expires.
 
-This method does not offer real-time guarantees: It schedules the timeout as if by invoking the [Object.wait(long)](../java/lang/Object.md))method.
+This method does not offer real-time guarantees: It schedules the timeout as if by invoking the [Object.wait(long)](../java.lang/Object.md))method.
 
 | Parameters ||
 |-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -91,7 +91,7 @@ This method does not offer real-time guarantees: It schedules the timeout as if 
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-| [Reference](../java/lang/ref/Reference.md)<out` `T>! | A reference object, if one was available within the specified timeout period, otherwise`null` |
+| [Reference](Reference.md)<out` `T>! | A reference object, if one was available within the specified timeout period, otherwise`null` |
 
 | Exceptions ||
 |--------------------------------------|--------------------------------------------------|

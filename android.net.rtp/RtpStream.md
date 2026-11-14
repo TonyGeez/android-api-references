@@ -5,7 +5,7 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 
 # RtpStream
 
-Kotlin| [Java](../android/net/rtp/RtpStream.md) 
+Kotlin| [Java](RtpStream.md) 
 | --- | --- |
 
 ```
@@ -14,14 +14,14 @@ open class RtpStream
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.rtp.RtpStream](../android/net/rtp/RtpStream.md) |
+| ↳ | [android.net.rtp.RtpStream](RtpStream.md) |
 
-| Known Direct Subclasses [AudioStream](../android/net/rtp/AudioStream.md) |-------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [AudioStream](../android/net/rtp/AudioStream.md) | An AudioStream is a [RtpStream](../android/net/rtp/RtpStream.md) which carrys audio payloads over Real-time Transport Protocol (RTP). | |
+| Known Direct Subclasses [AudioStream](AudioStream.md) |-------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [AudioStream](AudioStream.md) | An AudioStream is a [RtpStream](RtpStream.md) which carrys audio payloads over Real-time Transport Protocol (RTP). | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 | **This class was deprecated in API level 31.**
 |
-| [android.net.sip.SipManager](../android/net/sip/SipManager.md) and associated classes are no longer supported and should not be used as the basis of future VOIP apps.
+| [android.net.sip.SipManager](../android.net.sip/SipManager.md) and associated classes are no longer supported and should not be used as the basis of future VOIP apps.
 
 RtpStream represents the base class of streams which send and receive network packets with media payloads over Real-time Transport Protocol (RTP).
 
@@ -31,29 +31,29 @@ Using this class requires [android.Manifest.permission#INTERNET](../android/Mani
 
 | Constants ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MODE_NORMAL](../android/net/rtp/RtpStream.md) This mode indicates that the stream sends and receives packets at the same time. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MODE_RECEIVE_ONLY](../android/net/rtp/RtpStream.md) This mode indicates that the stream only receives packets. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MODE_SEND_ONLY](../android/net/rtp/RtpStream.md) This mode indicates that the stream only sends packets. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MODE_NORMAL](RtpStream.md) This mode indicates that the stream sends and receives packets at the same time. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MODE_RECEIVE_ONLY](RtpStream.md) This mode indicates that the stream only receives packets. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MODE_SEND_ONLY](RtpStream.md) This mode indicates that the stream only sends packets. |
 | --- | --- |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [associate](../android/net/rtp/RtpStream.md))`(`address:` ` [InetAddress](../java/net/InetAddress.md)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Associates with a remote host. |
-| open [InetAddress](../java/net/InetAddress.md)! | [getLocalAddress](../android/net/rtp/RtpStream.md))`()` Returns the network address of the local host. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLocalPort](../android/net/rtp/RtpStream.md))`()` Returns the network port of the local host. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [associate](RtpStream.md))`(`address:` ` [InetAddress](../java.net/InetAddress.md)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Associates with a remote host. |
+| open [InetAddress](../java.net/InetAddress.md)! | [getLocalAddress](RtpStream.md))`()` Returns the network address of the local host. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLocalPort](RtpStream.md))`()` Returns the network port of the local host. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMode](../android/net/rtp/RtpStream.md))`()` Returns the current mode. |
-| open [InetAddress](../java/net/InetAddress.md)! | [getRemoteAddress](../android/net/rtp/RtpStream.md))`()` Returns the network address of the remote host or`null`if the stream is not associated. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRemotePort](../android/net/rtp/RtpStream.md))`()` Returns the network port of the remote host or`-1`if the stream is not associated. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMode](RtpStream.md))`()` Returns the current mode. |
+| open [InetAddress](../java.net/InetAddress.md)! | [getRemoteAddress](RtpStream.md))`()` Returns the network address of the remote host or`null`if the stream is not associated. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRemotePort](RtpStream.md))`()` Returns the network port of the remote host or`-1`if the stream is not associated. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isBusy](../android/net/rtp/RtpStream.md))`()` Returns`true`if the stream is busy. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [release](../android/net/rtp/RtpStream.md))`()` Releases allocated resources. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMode](../android/net/rtp/RtpStream.md))`(`mode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Changes the current mode. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isBusy](RtpStream.md))`()` Returns`true`if the stream is busy. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [release](RtpStream.md))`()` Releases allocated resources. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMode](RtpStream.md))`(`mode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Changes the current mode. |
 | --- | --- |
 
 | Protected methods ||
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](../android/net/rtp/RtpStream.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](RtpStream.md))`()` <br /> |
 
 ## Constants
 
@@ -118,7 +118,7 @@ Associates with a remote host. This defines the destination of the outgoing pack
 
 | Parameters ||
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------|
-| `address` | [InetAddress](../java/net/InetAddress.md)!:The network address of the remote host. |
+| `address` | [InetAddress](../java.net/InetAddress.md)!:The network address of the remote host. |
 | `port` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The network port of the remote host. |
 
 | Exceptions ||
@@ -232,7 +232,7 @@ open fun setMode(mode: Int): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Changes the current mode. It must be one of [MODE_NORMAL](../android/net/rtp/RtpStream.md), [MODE_SEND_ONLY](../android/net/rtp/RtpStream.md), and [MODE_RECEIVE_ONLY](../android/net/rtp/RtpStream.md).
+Changes the current mode. It must be one of [MODE_NORMAL](RtpStream.md), [MODE_SEND_ONLY](RtpStream.md), and [MODE_RECEIVE_ONLY](RtpStream.md).
 
 | Parameters ||
 |--------|---------------------------------------------------------------------------------------------------|

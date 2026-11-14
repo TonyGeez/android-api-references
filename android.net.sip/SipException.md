@@ -5,7 +5,7 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 
 # SipException
 
-Kotlin| [Java](../android/net/sip/SipException.md) 
+Kotlin| [Java](SipException.md) 
 | --- | --- |
 
 ```
@@ -15,13 +15,13 @@ open class SipException : Exception
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||
-| | | ↳ | [android.net.sip.SipException](../android/net/sip/SipException.md) |
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) ||
+| | | ↳ | [android.net.sip.SipException](SipException.md) |
 | --- | --- | --- | --- |
 
 | **This exception was deprecated in API level 31.**
 |
-| [android.net.sip.SipManager](../android/net/sip/SipManager.md) and associated classes are no longer supported and should not be used as the basis of future VOIP apps.
+| [android.net.sip.SipManager](SipManager.md) and associated classes are no longer supported and should not be used as the basis of future VOIP apps.
 
 Indicates a general SIP-related exception.
 
@@ -29,9 +29,9 @@ Indicates a general SIP-related exception.
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SipException](../android/net/sip/SipException.md))`()` <br /> |
-| [SipException](../android/net/sip/SipException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
-| [SipException](../android/net/sip/SipException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` <br /> |
+| [SipException](SipException.md))`()` <br /> |
+| [SipException](SipException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| [SipException](SipException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` <br /> |
 
 ## Public constructors
 

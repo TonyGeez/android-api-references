@@ -2,7 +2,7 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 
 # ViewOverlay
 
-Kotlin | [Java](../android/view/ViewOverlay.md)
+Kotlin | [Java](ViewOverlay.md)
 | --- | --- |
 
 ```
@@ -11,9 +11,9 @@ open class ViewOverlay
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.ViewOverlay](../android/view/ViewOverlay.md) |
+| ↳ | [android.view.ViewOverlay](ViewOverlay.md) |
 
-| Known Direct Subclasses [ViewGroupOverlay](../android/view/ViewGroupOverlay.md) |---|---| | [ViewGroupOverlay](../android/view/ViewGroupOverlay.md) | A group overlay is an extra layer that sits on top of a ViewGroup (the "host view") which is drawn after all other content in that view (including the view group's children). | |
+| Known Direct Subclasses [ViewGroupOverlay](ViewGroupOverlay.md) |---|---| | [ViewGroupOverlay](ViewGroupOverlay.md) | A group overlay is an extra layer that sits on top of a ViewGroup (the "host view") which is drawn after all other content in that view (including the view group's children). | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 An overlay is an extra layer that sits on top of a View (the "host view") which is drawn after all other content in that view (including children, if the view is a ViewGroup). Interaction with the overlay layer is done by adding and removing drawables.
@@ -43,7 +43,7 @@ Adds a `https://developer.android.com/reference/kotlin/android/graphics/drawable
 
 | Parameters ||
 |---|---|
-| `drawable` | [Drawable](../android/graphics/drawable/Drawable.md): The `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#` to be added to the overlay. This drawable will be drawn when the view redraws its overlay. `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#`s will be drawn in the order that they were added. This value cannot be `null`. |
+| `drawable` | [Drawable](../android.graphics.drawable/Drawable.md): The `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#` to be added to the overlay. This drawable will be drawn when the view redraws its overlay. `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#`s will be drawn in the order that they were added. This value cannot be `null`. |
 
 **See Also**
 
@@ -71,7 +71,7 @@ Removes the specified `https://developer.android.com/reference/kotlin/android/gr
 
 | Parameters ||
 |---|---|
-| `drawable` | [Drawable](../android/graphics/drawable/Drawable.md): The `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#` to be removed from the overlay. This value cannot be `null`. |
+| `drawable` | [Drawable](../android.graphics.drawable/Drawable.md): The `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#` to be removed from the overlay. This value cannot be `null`. |
 
 **See Also**
 

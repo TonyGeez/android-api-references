@@ -8,7 +8,7 @@ class PasnConfig : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.wifi.rtt.PasnConfig](../android/net/wifi/rtt/PasnConfig.md) |
+| ↳ | [android.net.wifi.rtt.PasnConfig](PasnConfig.md) |
 
 Pre-association security negotiation (PASN) configuration.
 
@@ -63,7 +63,7 @@ The keys derived during the PASN process are used to protect the LTFs exchanged 
 | --- | --- |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig#getPmk()()` Get the PMK (pairwise master key). |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig#getProximityDetectionSeekerDeviceIdentityKey()()` Get the Seeker device identity key. |
-| [WifiSsid](../android/net/wifi/WifiSsid.md)? | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig#getWifiSsid()()` Get Wifi SSID which is used to retrieve saved network profile if `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig#getPassword()` is null. |
+| [WifiSsid](../android.net.wifi/WifiSsid.md)? | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig#getWifiSsid()()` Get Wifi SSID which is used to retrieve saved network profile if `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig#getPassword()` is null. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig#hashCode()()` Returns a hash code value for the object. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig#toString()()` Returns a string representation of the object. |
@@ -72,7 +72,7 @@ The keys derived during the PASN process are used to protect the LTFs exchanged 
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [PasnConfig](../android/net/wifi/rtt/PasnConfig.md)!\> | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [PasnConfig](PasnConfig.md)!\> | `https://developer.android.com/reference/kotlin/android/net/wifi/rtt/PasnConfig#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -427,7 +427,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

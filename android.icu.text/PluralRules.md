@@ -4,7 +4,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # PluralRules
 
-Kotlin| [Java](../android/icu/text/PluralRules.md) 
+Kotlin| [Java](PluralRules.md) 
 | --- | --- |
 
 ```
@@ -13,11 +13,11 @@ open class PluralRules : Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.icu.text.PluralRules](../android/icu/text/PluralRules.md) |
+| ↳ | [android.icu.text.PluralRules](PluralRules.md) |
 
 Defines rules for mapping non-negative numeric values onto a small set of keywords.
 
-Rules are constructed from a text description, consisting of a series of keywords and conditions. The #select method examines each condition in order and returns the keyword for the first condition that matches the number. If none match, [KEYWORD_OTHER](../android/icu/text/PluralRules.md) is returned.
+Rules are constructed from a text description, consisting of a series of keywords and conditions. The #select method examines each condition in order and returns the keyword for the first condition that matches the number. If none match, [KEYWORD_OTHER](PluralRules.md) is returned.
 
 A PluralRules object is immutable. It contains caches for sample values, but those are synchronized.
 
@@ -101,43 +101,43 @@ The difference between 'in' and 'within' is that 'in' only includes integers in 
 
 | Constants ||
 |----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [KEYWORD_FEW](../android/icu/text/PluralRules.md) Common name for the 'paucal' or other special plural form. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [KEYWORD_MANY](../android/icu/text/PluralRules.md) Common name for the arabic (11 to 99) plural form. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [KEYWORD_ONE](../android/icu/text/PluralRules.md) Common name for the 'singular' plural form. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [KEYWORD_FEW](PluralRules.md) Common name for the 'paucal' or other special plural form. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [KEYWORD_MANY](PluralRules.md) Common name for the arabic (11 to 99) plural form. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [KEYWORD_ONE](PluralRules.md) Common name for the 'singular' plural form. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [KEYWORD_OTHER](../android/icu/text/PluralRules.md) Common name for the default plural form. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [KEYWORD_TWO](../android/icu/text/PluralRules.md) Common name for the 'dual' plural form. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [KEYWORD_ZERO](../android/icu/text/PluralRules.md) Common name for the 'zero' plural form. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [KEYWORD_OTHER](PluralRules.md) Common name for the default plural form. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [KEYWORD_TWO](PluralRules.md) Common name for the 'dual' plural form. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [KEYWORD_ZERO](PluralRules.md) Common name for the 'zero' plural form. |
 | --- | --- |
-| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [NO_UNIQUE_VALUE](../android/icu/text/PluralRules.md) Value returned by [getUniqueKeywordValue](../android/icu/text/PluralRules.md))when there is no unique value to return. |
+| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [NO_UNIQUE_VALUE](PluralRules.md) Value returned by [getUniqueKeywordValue](PluralRules.md))when there is no unique value to return. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [PluralRules](../android/icu/text/PluralRules.md)! | [createRules](../android/icu/text/PluralRules.md))`(`description:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a PluralRules from a description if it is parsable, otherwise returns null. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/icu/text/PluralRules.md))`(`rhs:` ` [PluralRules](../android/icu/text/PluralRules.md)!`)` Returns true if rhs is equal to this. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/icu/text/PluralRules.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| openstatic [PluralRules](PluralRules.md)! | [createRules](PluralRules.md))`(`description:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a PluralRules from a description if it is parsable, otherwise returns null. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](PluralRules.md))`(`rhs:` ` [PluralRules](PluralRules.md)!`)` Returns true if rhs is equal to this. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](PluralRules.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | --- | --- |
-| openstatic [PluralRules](../android/icu/text/PluralRules.md)! | [forLocale](../android/icu/text/PluralRules.md))`(`locale:` ` [ULocale](../android/icu/util/ULocale.md)!`)` Provides access to the predefined cardinal-number`PluralRules`for a given locale. |
-| openstatic [PluralRules](../android/icu/text/PluralRules.md)! | [forLocale](../android/icu/text/PluralRules.md))`(`locale:` ` [ULocale](../android/icu/util/ULocale.md)!`, `type:` ` [PluralRules.PluralType](../android/icu/text/PluralRules.PluralType.md)!`)` Provides access to the predefined`PluralRules`for a given locale and the plural type. |
-| openstatic [PluralRules](../android/icu/text/PluralRules.md)! | [forLocale](../android/icu/text/PluralRules.md))`(`locale:` ` [Locale](../java/util/Locale.md)!`)` Provides access to the predefined cardinal-number`PluralRules`for a given [java.util.Locale](../java/util/Locale.md). |
+| openstatic [PluralRules](PluralRules.md)! | [forLocale](PluralRules.md))`(`locale:` ` [ULocale](../android.icu.util/ULocale.md)!`)` Provides access to the predefined cardinal-number`PluralRules`for a given locale. |
+| openstatic [PluralRules](PluralRules.md)! | [forLocale](PluralRules.md))`(`locale:` ` [ULocale](../android.icu.util/ULocale.md)!`, `type:` ` [PluralRules.PluralType](../android/icu/text/PluralRules.PluralType.md)!`)` Provides access to the predefined`PluralRules`for a given locale and the plural type. |
+| openstatic [PluralRules](PluralRules.md)! | [forLocale](PluralRules.md))`(`locale:` ` [Locale](../java.util/Locale.md)!`)` Provides access to the predefined cardinal-number`PluralRules`for a given [java.util.Locale](../java.util/Locale.md). |
 | --- | --- |
-| openstatic [PluralRules](../android/icu/text/PluralRules.md)! | [forLocale](../android/icu/text/PluralRules.md))`(`locale:` ` [Locale](../java/util/Locale.md)!`, `type:` ` [PluralRules.PluralType](../android/icu/text/PluralRules.PluralType.md)!`)` Provides access to the predefined`PluralRules`for a given [java.util.Locale](../java/util/Locale.md) and the plural type. |
-| open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)!\>! | [getAllKeywordValues](../android/icu/text/PluralRules.md))`(`keyword:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns all the values that trigger this keyword, or null if the number of such values is unlimited. |
-| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getKeywords](../android/icu/text/PluralRules.md))`()` Returns a set of all rule keywords used in this`PluralRules`object. |
+| openstatic [PluralRules](PluralRules.md)! | [forLocale](PluralRules.md))`(`locale:` ` [Locale](../java.util/Locale.md)!`, `type:` ` [PluralRules.PluralType](../android/icu/text/PluralRules.PluralType.md)!`)` Provides access to the predefined`PluralRules`for a given [java.util.Locale](../java.util/Locale.md) and the plural type. |
+| open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)!\>! | [getAllKeywordValues](PluralRules.md))`(`keyword:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns all the values that trigger this keyword, or null if the number of such values is unlimited. |
+| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getKeywords](PluralRules.md))`()` Returns a set of all rule keywords used in this`PluralRules`object. |
 | --- | --- |
-| open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)!\>! | [getSamples](../android/icu/text/PluralRules.md))`(`keyword:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a list of integer values for which select() would return that keyword, or null if the keyword is not defined. |
-| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getUniqueKeywordValue](../android/icu/text/PluralRules.md))`(`keyword:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the unique value that this keyword matches, or [NO_UNIQUE_VALUE](../android/icu/text/PluralRules.md) if the keyword matches multiple values or is not defined for this PluralRules. |
-| openstatic [PluralRules](../android/icu/text/PluralRules.md)! | [parseDescription](../android/icu/text/PluralRules.md))`(`description:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Parses a plural rules description and returns a PluralRules. |
+| open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)!\>! | [getSamples](PluralRules.md))`(`keyword:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a list of integer values for which select() would return that keyword, or null if the keyword is not defined. |
+| open [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getUniqueKeywordValue](PluralRules.md))`(`keyword:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the unique value that this keyword matches, or [NO_UNIQUE_VALUE](PluralRules.md) if the keyword matches multiple values or is not defined for this PluralRules. |
+| openstatic [PluralRules](PluralRules.md)! | [parseDescription](PluralRules.md))`(`description:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Parses a plural rules description and returns a PluralRules. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [select](../android/icu/text/PluralRules.md))`(`number:` ` [FormattedNumber](../android/icu/number/FormattedNumber.md)!`)` Given a formatted number, returns the keyword of the first rule that applies to the number. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [select](../android/icu/text/PluralRules.md))`(`range:` ` [FormattedNumberRange](../android/icu/number/FormattedNumberRange.md)!`)` Given a formatted number range, returns the overall plural form of the range. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [select](../android/icu/text/PluralRules.md))`(`number:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Given a floating-point number, returns the keyword of the first rule that applies to the number. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [select](PluralRules.md))`(`number:` ` [FormattedNumber](../android.icu.number/FormattedNumber.md)!`)` Given a formatted number, returns the keyword of the first rule that applies to the number. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [select](PluralRules.md))`(`range:` ` [FormattedNumberRange](../android.icu.number/FormattedNumberRange.md)!`)` Given a formatted number range, returns the overall plural form of the range. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [select](PluralRules.md))`(`number:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Given a floating-point number, returns the keyword of the first rule that applies to the number. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/icu/text/PluralRules.md))`()` Returns a string representation of the object. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](PluralRules.md))`()` Returns a string representation of the object. |
 
 | Properties ||
 |----------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [PluralRules](../android/icu/text/PluralRules.md)! | [DEFAULT](../android/icu/text/PluralRules.md) The default rules that accept any number and return [KEYWORD_OTHER](../android/icu/text/PluralRules.md). |
+| static [PluralRules](PluralRules.md)! | [DEFAULT](PluralRules.md) The default rules that accept any number and return [KEYWORD_OTHER](PluralRules.md). |
 
 ## Constants
 
@@ -221,7 +221,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val NO_UNIQUE_VALUE: Double
 ```
 
-Value returned by [getUniqueKeywordValue](../android/icu/text/PluralRules.md))when there is no unique value to return. 
+Value returned by [getUniqueKeywordValue](PluralRules.md))when there is no unique value to return. 
 
  Value: -0.00123456777
 
@@ -243,7 +243,7 @@ Creates a PluralRules from a description if it is parsable, otherwise returns nu
 
 | Return ||
 |----------------------------------------------------------------------------------------------|-----------------|
-| [PluralRules](../android/icu/text/PluralRules.md)! | the PluralRules |
+| [PluralRules](PluralRules.md)! | the PluralRules |
 
 ### equals
 
@@ -257,7 +257,7 @@ Returns true if rhs is equal to this.
 
 | Parameters ||
 |-------|-----------------------------------------------------------------------------------------------------------------------------|
-| `rhs` | [PluralRules](../android/icu/text/PluralRules.md)!:the PluralRules to compare to. |
+| `rhs` | [PluralRules](PluralRules.md)!:the PluralRules to compare to. |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------|
@@ -305,11 +305,11 @@ ICU defines plural rules for many locales based on CLDR*Language Plural Rules*. 
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| `locale` | [ULocale](../android/icu/util/ULocale.md)!:The locale for which a`PluralRules`object is returned. |
+| `locale` | [ULocale](../android.icu.util/ULocale.md)!:The locale for which a`PluralRules`object is returned. |
 
 | Return ||
 |----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [PluralRules](../android/icu/text/PluralRules.md)! | The predefined`PluralRules`object for this locale. If there's no predefined rules for this locale, the rules for the closest parent in the locale hierarchy that has one will be returned. The final fallback always returns the default rules. |
+| [PluralRules](PluralRules.md)! | The predefined`PluralRules`object for this locale. If there's no predefined rules for this locale, the rules for the closest parent in the locale hierarchy that has one will be returned. The final fallback always returns the default rules. |
 
 ### forLocale
 
@@ -328,12 +328,12 @@ ICU defines plural rules for many locales based on CLDR*Language Plural Rules*. 
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `locale` | [ULocale](../android/icu/util/ULocale.md)!:The locale for which a`PluralRules`object is returned. |
+| `locale` | [ULocale](../android.icu.util/ULocale.md)!:The locale for which a`PluralRules`object is returned. |
 | `type` | [PluralRules.PluralType](../android/icu/text/PluralRules.PluralType.md)!:The plural type (e.g., cardinal or ordinal). |
 
 | Return ||
 |----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [PluralRules](../android/icu/text/PluralRules.md)! | The predefined`PluralRules`object for this locale. If there's no predefined rules for this locale, the rules for the closest parent in the locale hierarchy that has one will be returned. The final fallback always returns the default rules. |
+| [PluralRules](PluralRules.md)! | The predefined`PluralRules`object for this locale. If there's no predefined rules for this locale, the rules for the closest parent in the locale hierarchy that has one will be returned. The final fallback always returns the default rules. |
 
 ### forLocale
 
@@ -343,17 +343,17 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open static fun forLocale(locale: Locale!): PluralRules!
 ```
 
-Provides access to the predefined cardinal-number`PluralRules`for a given [java.util.Locale](../java/util/Locale.md). Same as forLocale(locale, PluralType.CARDINAL).
+Provides access to the predefined cardinal-number`PluralRules`for a given [java.util.Locale](../java.util/Locale.md). Same as forLocale(locale, PluralType.CARDINAL).
 
 ICU defines plural rules for many locales based on CLDR*Language Plural Rules*. For these predefined rules, see CLDR page at https://unicode-org.github.io/cldr-staging/charts/latest/supplemental/language_plural_rules.html
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| `locale` | [Locale](../java/util/Locale.md)!:The locale for which a`PluralRules`object is returned. |
+| `locale` | [Locale](../java.util/Locale.md)!:The locale for which a`PluralRules`object is returned. |
 
 | Return ||
 |----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [PluralRules](../android/icu/text/PluralRules.md)! | The predefined`PluralRules`object for this locale. If there's no predefined rules for this locale, the rules for the closest parent in the locale hierarchy that has one will be returned. The final fallback always returns the default rules. |
+| [PluralRules](PluralRules.md)! | The predefined`PluralRules`object for this locale. If there's no predefined rules for this locale, the rules for the closest parent in the locale hierarchy that has one will be returned. The final fallback always returns the default rules. |
 
 ### forLocale
 
@@ -366,18 +366,18 @@ open static fun forLocale(
 ): PluralRules!
 ```
 
-Provides access to the predefined`PluralRules`for a given [java.util.Locale](../java/util/Locale.md) and the plural type.
+Provides access to the predefined`PluralRules`for a given [java.util.Locale](../java.util/Locale.md) and the plural type.
 
 ICU defines plural rules for many locales based on CLDR*Language Plural Rules*. For these predefined rules, see CLDR page at https://unicode-org.github.io/cldr-staging/charts/latest/supplemental/language_plural_rules.html
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `locale` | [Locale](../java/util/Locale.md)!:The locale for which a`PluralRules`object is returned. |
+| `locale` | [Locale](../java.util/Locale.md)!:The locale for which a`PluralRules`object is returned. |
 | `type` | [PluralRules.PluralType](../android/icu/text/PluralRules.PluralType.md)!:The plural type (e.g., cardinal or ordinal). |
 
 | Return ||
 |----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [PluralRules](../android/icu/text/PluralRules.md)! | The predefined`PluralRules`object for this locale. If there's no predefined rules for this locale, the rules for the closest parent in the locale hierarchy that has one will be returned. The final fallback always returns the default rules. |
+| [PluralRules](PluralRules.md)! | The predefined`PluralRules`object for this locale. If there's no predefined rules for this locale, the rules for the closest parent in the locale hierarchy that has one will be returned. The final fallback always returns the default rules. |
 
 ### getAllKeywordValues
 
@@ -437,7 +437,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun getUniqueKeywordValue(keyword: String!): Double
 ```
 
-Returns the unique value that this keyword matches, or [NO_UNIQUE_VALUE](../android/icu/text/PluralRules.md) if the keyword matches multiple values or is not defined for this PluralRules.
+Returns the unique value that this keyword matches, or [NO_UNIQUE_VALUE](PluralRules.md) if the keyword matches multiple values or is not defined for this PluralRules.
 
 | Parameters ||
 |-----------|---------------------------------------------------------------------------------------------------------------------------|
@@ -473,11 +473,11 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 open fun select(number: FormattedNumber!): String!
 ```
 
-Given a formatted number, returns the keyword of the first rule that applies to the number. A FormattedNumber allows you to specify an exponent or trailing zeros, which can affect the plural category. To get a FormattedNumber, see [NumberFormatter](../android/icu/number/NumberFormatter.md).
+Given a formatted number, returns the keyword of the first rule that applies to the number. A FormattedNumber allows you to specify an exponent or trailing zeros, which can affect the plural category. To get a FormattedNumber, see [NumberFormatter](../android.icu.number/NumberFormatter.md).
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `number` | [FormattedNumber](../android/icu/number/FormattedNumber.md)!:The number for which the rule has to be determined. |
+| `number` | [FormattedNumber](../android.icu.number/FormattedNumber.md)!:The number for which the rule has to be determined. |
 
 | Return ||
 |-----------------------------------------------------------------------------------|-----------------------------------|
@@ -491,11 +491,11 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 open fun select(range: FormattedNumberRange!): String!
 ```
 
-Given a formatted number range, returns the overall plural form of the range. For example, "3-5" returns "other" in English. To get a FormattedNumberRange, see [android.icu.number.NumberRangeFormatter](../android/icu/number/NumberRangeFormatter.md). This method only works if PluralRules was created with a locale. If it was created from PluralRules.createRules(), or if it was deserialized, this method throws UnsupportedOperationException.
+Given a formatted number range, returns the overall plural form of the range. For example, "3-5" returns "other" in English. To get a FormattedNumberRange, see [android.icu.number.NumberRangeFormatter](../android.icu.number/NumberRangeFormatter.md). This method only works if PluralRules was created with a locale. If it was created from PluralRules.createRules(), or if it was deserialized, this method throws UnsupportedOperationException.
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `range` | [FormattedNumberRange](../android/icu/number/FormattedNumberRange.md)!:The number range onto which the rules will be applied. |
+| `range` | [FormattedNumberRange](../android.icu.number/FormattedNumberRange.md)!:The number range onto which the rules will be applied. |
 
 | Return ||
 |-----------------------------------------------------------------------------------|-----------------------------------|
@@ -547,4 +547,4 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val DEFAULT: PluralRules!
 ```
 
-The default rules that accept any number and return [KEYWORD_OTHER](../android/icu/text/PluralRules.md).
+The default rules that accept any number and return [KEYWORD_OTHER](PluralRules.md).

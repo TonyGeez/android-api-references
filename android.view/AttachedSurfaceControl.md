@@ -6,7 +6,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 interface AttachedSurfaceControl
 ```
 
-| [android.view.AttachedSurfaceControl](../android/view/AttachedSurfaceControl.md) |
+| [android.view.AttachedSurfaceControl](AttachedSurfaceControl.md) |
 
 Provides an interface to the root-Surface of a View Hierarchy or Window. This is used in combination with the `https://developer.android.com/reference/kotlin/android/view/SurfaceControl` API to enable attaching app created SurfaceControl to the SurfaceControl hierarchy used by the app, and enable SurfaceTransactions to be performed in sync with the View hierarchy drawing. This object is obtained from `https://developer.android.com/reference/kotlin/android/view/View#getRootSurfaceControl()` and `https://developer.android.com/reference/kotlin/android/view/Window#getRootSurfaceControl()`. It must be used from the UI thread of the object it was obtained from.
 
@@ -22,9 +22,9 @@ Provides an interface to the root-Surface of a View Hierarchy or Window. This is
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/AttachedSurfaceControl#applyTransactionOnDraw(android.view.SurfaceControl.Transaction)(t: https://developer.android.com/reference/kotlin/android/view/SurfaceControl.Transaction)` Consume the passed in transaction, and request the View hierarchy to apply it atomically with the next draw. |
 | abstract [SurfaceControl.Transaction](../android/view/SurfaceControl.Transaction.md)? | `https://developer.android.com/reference/kotlin/android/view/AttachedSurfaceControl#buildReparentTransaction(android.view.SurfaceControl)(child: https://developer.android.com/reference/kotlin/android/view/SurfaceControl)` Create a transaction which will reparent `child` to the View hierarchy root SurfaceControl. |
 | --- | --- |
-| open [SurfaceControl](../android/view/SurfaceControl.md) | `https://developer.android.com/reference/kotlin/android/view/AttachedSurfaceControl#createMirror()()` Creates a mirrored `https://developer.android.com/reference/kotlin/android/view/SurfaceControl` of the root `https://developer.android.com/reference/kotlin/android/view/SurfaceControl` hierarchy. |
+| open [SurfaceControl](SurfaceControl.md) | `https://developer.android.com/reference/kotlin/android/view/AttachedSurfaceControl#createMirror()()` Creates a mirrored `https://developer.android.com/reference/kotlin/android/view/SurfaceControl` of the root `https://developer.android.com/reference/kotlin/android/view/SurfaceControl` hierarchy. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/AttachedSurfaceControl#getBufferTransformHint()()` The transform hint can be used by a buffer producer to pre-rotate the rendering such that the final transformation in the system composer is identity. |
-| open [InputTransferToken](../android/window/InputTransferToken.md) | `https://developer.android.com/reference/kotlin/android/view/AttachedSurfaceControl#getInputTransferToken()()` Gets the token used for associating this `https://developer.android.com/reference/kotlin/android/view/AttachedSurfaceControl#` with an embedded `https://developer.android.com/reference/kotlin/android/view/SurfaceControlViewHost` or `https://developer.android.com/reference/kotlin/android/view/SurfaceControl` |
+| open [InputTransferToken](../android.window/InputTransferToken.md) | `https://developer.android.com/reference/kotlin/android/view/AttachedSurfaceControl#getInputTransferToken()()` Gets the token used for associating this `https://developer.android.com/reference/kotlin/android/view/AttachedSurfaceControl#` with an embedded `https://developer.android.com/reference/kotlin/android/view/SurfaceControlViewHost` or `https://developer.android.com/reference/kotlin/android/view/SurfaceControl` |
 | --- | --- |
 | open [SurfaceControl.OnJankDataListenerRegistration](../android/view/SurfaceControl.OnJankDataListenerRegistration.md) | `https://developer.android.com/reference/kotlin/android/view/AttachedSurfaceControl#registerOnJankDataListener(java.util.concurrent.Executor,%20android.view.SurfaceControl.OnJankDataListener)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, listener: https://developer.android.com/reference/kotlin/android/view/SurfaceControl.OnJankDataListener)` Registers a `https://developer.android.com/reference/kotlin/android/view/SurfaceControl.OnJankDataListener` to receive jank classification data about rendered frames. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/AttachedSurfaceControl#removeOnBufferTransformHintChangedListener(android.view.AttachedSurfaceControl.OnBufferTransformHintChangedListener)(listener: https://developer.android.com/reference/kotlin/android/view/AttachedSurfaceControl.OnBufferTransformHintChangedListener)` Unregisters a `https://developer.android.com/reference/kotlin/android/view/AttachedSurfaceControl.OnBufferTransformHintChangedListener`. |
@@ -79,7 +79,7 @@ Create a transaction which will reparent `child` to the View hierarchy root Surf
 
 | Parameters ||
 |---|---|
-| `child` | [SurfaceControl](../android/view/SurfaceControl.md): The SurfaceControl to reparent. This value cannot be `null`. |
+| `child` | [SurfaceControl](SurfaceControl.md): The SurfaceControl to reparent. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -172,7 +172,7 @@ Use `https://developer.android.com/reference/kotlin/android/view/SurfaceControl.
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): The executor on which the listener will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor on which the listener will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `listener` | [SurfaceControl.OnJankDataListener](../android/view/SurfaceControl.OnJankDataListener.md): The listener to add. This value cannot be `null`. |
 
 | Return ||
@@ -211,7 +211,7 @@ This cropped is expressed in terms of insets in window-space. Negative insets ar
 
 | Parameters ||
 |---|---|
-| `insets` | [Rect](../android/graphics/Rect.md): The insets in each direction by which to bound the children expressed in window-space. This value cannot be `null`. |
+| `insets` | [Rect](../android.graphics/Rect.md): The insets in each direction by which to bound the children expressed in window-space. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -229,4 +229,4 @@ Sets the touchable region for this SurfaceControl, expressed in surface local co
 
 | Parameters ||
 |---|---|
-| `r` | [Region](../android/graphics/Region.md)?: The region to use or null to use the entire Layer bounds |
+| `r` | [Region](../android.graphics/Region.md)?: The region to use or null to use the entire Layer bounds |

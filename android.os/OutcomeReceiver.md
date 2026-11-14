@@ -2,14 +2,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # OutcomeReceiver
 
-Kotlin | [Java](../android/os/OutcomeReceiver.md)
+Kotlin | [Java](OutcomeReceiver.md)
 | --- | --- |
 
 ```
 interface OutcomeReceiver<R : Any!, E : Throwable!>
 ```
 
-| [android.os.OutcomeReceiver](../android/os/OutcomeReceiver.md) |
+| [android.os.OutcomeReceiver](OutcomeReceiver.md) |
 
 Callback interface intended for use when an asynchronous operation may result in a failure. This interface may be used in cases where an asynchronous API may complete either with a value or with a `https://developer.android.com/reference/kotlin/java/lang/Throwable.html#` that indicates an error.
 

@@ -10,7 +10,7 @@ class XMLReaderFactory
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [org.xml.sax.helpers.XMLReaderFactory](../org/xml/sax/helpers/XMLReaderFactory.md) |
+| ↳ | [org.xml.sax.helpers.XMLReaderFactory](XMLReaderFactory.md) |
 
 Factory for creating an XML reader.*This module, both source code and documentation, is in the Public Domain, and comes with**NO WARRANTY**.* See<http://www.saxproject.org>for further information.
 
@@ -31,8 +31,8 @@ try {
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [XMLReader](../org/xml/sax/XMLReader.md)! | [createXMLReader](../org/xml/sax/helpers/XMLReaderFactory.md))`()` Attempt to create an XMLReader from system defaults. |
-| static [XMLReader](../org/xml/sax/XMLReader.md)! | [createXMLReader](../org/xml/sax/helpers/XMLReaderFactory.md))`(`className:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Attempt to create an XML reader from a class name. |
+| static [XMLReader](../org.xml.sax/XMLReader.md)! | [createXMLReader](XMLReaderFactory.md))`()` Attempt to create an XMLReader from system defaults. |
+| static [XMLReader](../org.xml.sax/XMLReader.md)! | [createXMLReader](XMLReaderFactory.md))`(`className:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Attempt to create an XML reader from a class name. |
 
 ## Public methods
 
@@ -51,7 +51,7 @@ Attempt to create an XMLReader from system defaults. In environments which can s
 - If the system property`org.xml.sax.driver`has a value, that is used as an XMLReader class name.
 - The JAR "Services API" is used to look for a class name in the*META-INF/services/org.xml.sax.driver*file in jarfiles available to the runtime.
 - SAX parser distributions are strongly encouraged to provide a default XMLReader class name that will take effect only when previous options (on this list) are not successful.
-- Finally, if [ParserFactory.makeParser()](../org/xml/sax/helpers/ParserFactory.md))can return a system default SAX1 parser, that parser is wrapped in a [ParserAdapter](../org/xml/sax/helpers/ParserAdapter.md). (This is a migration aid for SAX1 environments, where the`org.xml.sax.parser`system property will often be usable.)
+- Finally, if [ParserFactory.makeParser()](ParserFactory.md))can return a system default SAX1 parser, that parser is wrapped in a [ParserAdapter](ParserAdapter.md). (This is a migration aid for SAX1 environments, where the`org.xml.sax.parser`system property will often be usable.)
 
 In environments such as small embedded systems, which can not support that flexibility, other mechanisms to determine the default may be used.
 
@@ -59,7 +59,7 @@ Note that many Java environments allow system properties to be initialized on a 
 
 | Return ||
 |------------------------------------------------------------------------------------------|------------------|
-| [XMLReader](../org/xml/sax/XMLReader.md)! | A new XMLReader. |
+| [XMLReader](../org.xml.sax/XMLReader.md)! | A new XMLReader. |
 
 | Exceptions ||
 |----------------------------|-------------------------------------------------------------------|
@@ -67,7 +67,7 @@ Note that many Java environments allow system properties to be initialized on a 
 
 **See Also**
 
-- [#createXMLReader(java.lang.String)](../org/xml/sax/helpers/XMLReaderFactory.md)) 
+- [#createXMLReader(java.lang.String)](XMLReaderFactory.md)) 
 
 ### createXMLReader
 
@@ -87,7 +87,7 @@ Given a class name, this method attempts to load and instantiate the class as an
 
 | Return ||
 |------------------------------------------------------------------------------------------|-------------------|
-| [XMLReader](../org/xml/sax/XMLReader.md)! | A new XML reader. |
+| [XMLReader](../org.xml.sax/XMLReader.md)! | A new XML reader. |
 
 | Exceptions ||
 |----------------------------|---------------------------------------------------------------------|

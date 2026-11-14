@@ -2,7 +2,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 
 # AconfigPackage
 
-Kotlin | [Java](../android/os/flagging/AconfigPackage.md)
+Kotlin | [Java](AconfigPackage.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ open class AconfigPackage
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.os.flagging.AconfigPackage](../android/os/flagging/AconfigPackage.md) |
+| ↳ | [android.os.flagging.AconfigPackage](AconfigPackage.md) |
 
 An `aconfig` package containing the enabled state of its flags.
 
@@ -24,7 +24,7 @@ This class is used to read the flag from Aconfig Package.Each instance of this c
 | Public methods ||
 |---|---|
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/flagging/AconfigPackage#getBooleanFlagValue(kotlin.String,%20kotlin.Boolean)(flagName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, defaultValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Retrieves the value of a boolean flag. |
-| open static [AconfigPackage](../android/os/flagging/AconfigPackage.md) | `https://developer.android.com/reference/kotlin/android/os/flagging/AconfigPackage#load(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Loads an Aconfig Package from Aconfig Storage. |
+| open static [AconfigPackage](AconfigPackage.md) | `https://developer.android.com/reference/kotlin/android/os/flagging/AconfigPackage#load(kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Loads an Aconfig Package from Aconfig Storage. |
 
 ## Public methods
 

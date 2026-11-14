@@ -4,7 +4,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # ClearCredentialStateRequest
 
-Kotlin| [Java](../android/credentials/ClearCredentialStateRequest.md) 
+Kotlin| [Java](ClearCredentialStateRequest.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class ClearCredentialStateRequest : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.credentials.ClearCredentialStateRequest](../android/credentials/ClearCredentialStateRequest.md) |
+| ↳ | [android.credentials.ClearCredentialStateRequest](ClearCredentialStateRequest.md) |
 
 A request class for clearing a user's credential state from the credential providers.
 
@@ -21,23 +21,23 @@ A request class for clearing a user's credential state from the credential provi
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android.os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android.os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android.os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ClearCredentialStateRequest](../android/credentials/ClearCredentialStateRequest.md))`(`data:` ` [Bundle](../android/os/Bundle.md)`)` Constructs a [ClearCredentialStateRequest](../android/credentials/ClearCredentialStateRequest.md). |
+| [ClearCredentialStateRequest](ClearCredentialStateRequest.md))`(`data:` ` [Bundle](../android.os/Bundle.md)`)` Constructs a [ClearCredentialStateRequest](ClearCredentialStateRequest.md). |
 
 | Public methods ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/credentials/ClearCredentialStateRequest.md))`()` <br /> |
-| [Bundle](../android/os/Bundle.md) | [getData](../android/credentials/ClearCredentialStateRequest.md))`()` Returns the request data. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/credentials/ClearCredentialStateRequest.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](ClearCredentialStateRequest.md))`()` <br /> |
+| [Bundle](../android.os/Bundle.md) | [getData](ClearCredentialStateRequest.md))`()` Returns the request data. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](ClearCredentialStateRequest.md))`()` <br /> |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/credentials/ClearCredentialStateRequest.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](ClearCredentialStateRequest.md))`(`dest:` ` [Parcel](../android.os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ClearCredentialStateRequest](../android/credentials/ClearCredentialStateRequest.md)!\> | [CREATOR](../android/credentials/ClearCredentialStateRequest.md) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ClearCredentialStateRequest](ClearCredentialStateRequest.md)!\> | [CREATOR](ClearCredentialStateRequest.md) <br /> |
 
 ## Public constructors
 
@@ -49,11 +49,11 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 ClearCredentialStateRequest(data: Bundle)
 ```
 
-Constructs a [ClearCredentialStateRequest](../android/credentials/ClearCredentialStateRequest.md).
+Constructs a [ClearCredentialStateRequest](ClearCredentialStateRequest.md).
 
 | Parameters ||
 |--------|-------------------------------------------------------------------------------------------------------------------------------|
-| `data` | [Bundle](../android/os/Bundle.md):the request data This value cannot be`null`. |
+| `data` | [Bundle](../android.os/Bundle.md):the request data This value cannot be`null`. |
 
 ## Public methods
 
@@ -67,7 +67,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) |
 
 ### getData
 
@@ -81,7 +81,7 @@ Returns the request data.
 
 | Return ||
 |----------------------------------------------------------------------------------|-----------------------------|
-| [Bundle](../android/os/Bundle.md) | This value cannot be`null`. |
+| [Bundle](../android.os/Bundle.md) | This value cannot be`null`. |
 
 ### toString
 
@@ -110,8 +110,8 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](../android/os/Parcel.md):This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android.os/Parcel.md):This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

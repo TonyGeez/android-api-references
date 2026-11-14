@@ -9,8 +9,8 @@ class MigrationException : Exception
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||
-| | | ↳ | [android.app.privatecompute.MigrationException](../android/app/privatecompute/MigrationException.md) |
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) ||
+| | | ↳ | [android.app.privatecompute.MigrationException](MigrationException.md) |
 | --- | --- | --- | --- |
 
 Exception thrown when a migration request fails.

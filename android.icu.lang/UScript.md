@@ -8,7 +8,7 @@ class UScript
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.icu.lang.UScript](../android/icu/lang/UScript.md) |
+| ↳ | [android.icu.lang.UScript](UScript.md) |
 
 Constants for ISO 15924 script codes, and related functions.
 
@@ -2936,7 +2936,7 @@ Gets a script codes associated with the given locale or ISO 15924 abbreviation o
 
 | Parameters ||
 |---|---|
-| `locale` | [ULocale](../android/icu/util/ULocale.md)!: ULocale |
+| `locale` | [ULocale](../android.icu.util/ULocale.md)!: ULocale |
 
 | Return ||
 |---|---|
@@ -2974,7 +2974,7 @@ Gets a script codes associated with the given locale or ISO 15924 abbreviation o
 
 | Parameters ||
 |---|---|
-| `locale` | [Locale](../java/util/Locale.md)!: Locale |
+| `locale` | [Locale](../java.util/Locale.md)!: Locale |
 
 | Return ||
 |---|---|
@@ -3082,7 +3082,7 @@ Some characters are commonly used in multiple scripts. For more information, see
 | Parameters ||
 |---|---|
 | `c` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): code point |
-| `set` | [BitSet](../java/util/BitSet.md)!: set of script code integers; will be cleared, then bits are set corresponding to c's Script_Extensions |
+| `set` | [BitSet](../java.util/BitSet.md)!: set of script code integers; will be cleared, then bits are set corresponding to c's Script_Extensions |
 
 | Return ||
 |---|---|

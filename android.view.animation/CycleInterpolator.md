@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # CycleInterpolator
 
-Kotlin| [Java](../android/view/animation/CycleInterpolator.md) 
+Kotlin| [Java](CycleInterpolator.md) 
 | --- | --- |
 
 ```
@@ -13,8 +13,8 @@ open class CycleInterpolator : BaseInterpolator
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.view.animation.BaseInterpolator](../android/view/animation/BaseInterpolator.md) ||
-| | ↳ | [android.view.animation.CycleInterpolator](../android/view/animation/CycleInterpolator.md) |
+| ↳ | [android.view.animation.BaseInterpolator](BaseInterpolator.md) ||
+| | ↳ | [android.view.animation.CycleInterpolator](CycleInterpolator.md) |
 
 Repeats the animation for a specified number of cycles. The rate of change follows a sinusoidal pattern.
 
@@ -22,12 +22,12 @@ Repeats the animation for a specified number of cycles. The rate of change follo
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [CycleInterpolator](../android/view/animation/CycleInterpolator.md))`(`context:` ` [Context](../android/content/Context.md)!`, `attrs:` ` [AttributeSet](../android/util/AttributeSet.md)!`)` <br /> |
-| [CycleInterpolator](../android/view/animation/CycleInterpolator.md))`(`cycles:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` <br /> |
+| [CycleInterpolator](CycleInterpolator.md))`(`context:` ` [Context](../android.content/Context.md)!`, `attrs:` ` [AttributeSet](../android.util/AttributeSet.md)!`)` <br /> |
+| [CycleInterpolator](CycleInterpolator.md))`(`cycles:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` <br /> |
 
 | Public methods ||
 |------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getInterpolation](../android/view/animation/CycleInterpolator.md))`(`input:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` <br /> |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getInterpolation](CycleInterpolator.md))`(`input:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` <br /> |
 
 ## Public constructors
 

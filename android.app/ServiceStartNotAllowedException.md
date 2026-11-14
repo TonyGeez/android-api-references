@@ -2,7 +2,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # ServiceStartNotAllowedException
 
-Kotlin | [Java](../android/app/ServiceStartNotAllowedException.md)
+Kotlin | [Java](ServiceStartNotAllowedException.md)
 | --- | --- |
 
 ```
@@ -12,16 +12,16 @@ abstract class ServiceStartNotAllowedException : IllegalStateException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
-| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) |||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) ||||
+| | | ↳ | [java.lang.RuntimeException](../java.lang/RuntimeException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.IllegalStateException](../java/lang/IllegalStateException.md) ||
-| | | | | ↳ | [android.app.ServiceStartNotAllowedException](../android/app/ServiceStartNotAllowedException.md) |
+| | | | ↳ | [java.lang.IllegalStateException](../java.lang/IllegalStateException.md) ||
+| | | | | ↳ | [android.app.ServiceStartNotAllowedException](ServiceStartNotAllowedException.md) |
 
-| Known Direct Subclasses [BackgroundServiceStartNotAllowedException](../android/app/BackgroundServiceStartNotAllowedException.md), [ForegroundServiceStartNotAllowedException](../android/app/ForegroundServiceStartNotAllowedException.md), [ForegroundServiceTypeException](../android/app/ForegroundServiceTypeException.md) |---|---| | [BackgroundServiceStartNotAllowedException](../android/app/BackgroundServiceStartNotAllowedException.md) | Exception thrown when an app tries to start a background `https://developer.android.com/reference/kotlin/android/app/Service` when it's not allowed to do so. | | [ForegroundServiceStartNotAllowedException](../android/app/ForegroundServiceStartNotAllowedException.md) | Exception thrown when an app tries to start a foreground `https://developer.android.com/reference/kotlin/android/app/Service` when it's not allowed to do so. | | [ForegroundServiceTypeException](../android/app/ForegroundServiceTypeException.md) | Base exception thrown when an app tries to start a foreground `https://developer.android.com/reference/kotlin/android/app/Service` without a valid type. | |
+| Known Direct Subclasses [BackgroundServiceStartNotAllowedException](BackgroundServiceStartNotAllowedException.md), [ForegroundServiceStartNotAllowedException](ForegroundServiceStartNotAllowedException.md), [ForegroundServiceTypeException](ForegroundServiceTypeException.md) |---|---| | [BackgroundServiceStartNotAllowedException](BackgroundServiceStartNotAllowedException.md) | Exception thrown when an app tries to start a background `https://developer.android.com/reference/kotlin/android/app/Service` when it's not allowed to do so. | | [ForegroundServiceStartNotAllowedException](ForegroundServiceStartNotAllowedException.md) | Exception thrown when an app tries to start a foreground `https://developer.android.com/reference/kotlin/android/app/Service` when it's not allowed to do so. | | [ForegroundServiceTypeException](ForegroundServiceTypeException.md) | Base exception thrown when an app tries to start a foreground `https://developer.android.com/reference/kotlin/android/app/Service` without a valid type. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [InvalidForegroundServiceTypeException](../android/app/InvalidForegroundServiceTypeException.md), [MissingForegroundServiceTypeException](../android/app/MissingForegroundServiceTypeException.md) |---|---| | [InvalidForegroundServiceTypeException](../android/app/InvalidForegroundServiceTypeException.md) | Exception thrown when an app tries to start a foreground `https://developer.android.com/reference/kotlin/android/app/Service` with an invalid type. | | [MissingForegroundServiceTypeException](../android/app/MissingForegroundServiceTypeException.md) | Exception thrown when an app tries to start a foreground `https://developer.android.com/reference/kotlin/android/app/Service` without a type. | |
+| Known Indirect Subclasses [InvalidForegroundServiceTypeException](InvalidForegroundServiceTypeException.md), [MissingForegroundServiceTypeException](MissingForegroundServiceTypeException.md) |---|---| | [InvalidForegroundServiceTypeException](InvalidForegroundServiceTypeException.md) | Exception thrown when an app tries to start a foreground `https://developer.android.com/reference/kotlin/android/app/Service` with an invalid type. | | [MissingForegroundServiceTypeException](MissingForegroundServiceTypeException.md) | Exception thrown when an app tries to start a foreground `https://developer.android.com/reference/kotlin/android/app/Service` without a type. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Exception thrown when an app tries to start a `https://developer.android.com/reference/kotlin/android/app/Service` when it's not allowed to do so.

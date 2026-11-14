@@ -4,7 +4,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # UCharacterCategory
 
-Kotlin| [Java](../android/icu/lang/UCharacterCategory.md) 
+Kotlin| [Java](UCharacterCategory.md) 
 | --- | --- |
 
 ```
@@ -13,9 +13,9 @@ class UCharacterCategory : UCharacterEnums.ECharacterCategory
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.icu.lang.UCharacterCategory](../android/icu/lang/UCharacterCategory.md) |
+| ↳ | [android.icu.lang.UCharacterCategory](UCharacterCategory.md) |
 
-Enumerated Unicode category types from the UnicodeData.txt file. Used as return results from [UCharacter](../android/icu/lang/UCharacter.md) Equivalent to icu's UCharCategory. Refer to [Unicode Consortium](http://www.unicode.org/Public/UNIDATA/UCD.html) for more information about UnicodeData.txt.
+Enumerated Unicode category types from the UnicodeData.txt file. Used as return results from [UCharacter](UCharacter.md) Equivalent to icu's UCharCategory. Refer to [Unicode Consortium](http://www.unicode.org/Public/UNIDATA/UCD.html) for more information about UnicodeData.txt.
 
 *NOTE:* the UCharacterCategory values are*not*compatible with those returned by java.lang.Character.getType. UCharacterCategory values match the ones used in ICU4C, while java.lang.Character type values, though similar, skip the value 17.
 
@@ -29,7 +29,7 @@ This class is not subclassable
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toString](../android/icu/lang/UCharacterCategory.md))`(`category:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the name of the argument category |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toString](UCharacterCategory.md))`(`category:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the name of the argument category |
 
 ## Public methods
 

@@ -5,7 +5,7 @@ Deprecated in [API level 30](https://developer.android.com/guide/topics/manifest
 
 # DrmInfoStatus
 
-Kotlin| [Java](../android/drm/DrmInfoStatus.md) 
+Kotlin| [Java](DrmInfoStatus.md) 
 | --- | --- |
 
 ```
@@ -14,34 +14,34 @@ open class DrmInfoStatus
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.drm.DrmInfoStatus](../android/drm/DrmInfoStatus.md) |
+| ↳ | [android.drm.DrmInfoStatus](DrmInfoStatus.md) |
 
 | **This class was deprecated in API level 30.**
 |
-| Please use [android.media.MediaDrm](../android/media/MediaDrm.md)
+| Please use [android.media.MediaDrm](../android.media/MediaDrm.md)
 
-An entity class that wraps the result of communication between a device and an online DRM server. Specifically, when the [DrmManagerClient.processDrmInfo()](../android/drm/DrmManagerClient.md))method is called, an instance of`DrmInfoStatus`is returned.
+An entity class that wraps the result of communication between a device and an online DRM server. Specifically, when the [DrmManagerClient.processDrmInfo()](DrmManagerClient.md))method is called, an instance of`DrmInfoStatus`is returned.
 
-This class contains the [ProcessedData](../android/drm/ProcessedData.md) object, which can be used to instantiate a [DrmRights](../android/drm/DrmRights.md) object during license acquisition.
+This class contains the [ProcessedData](ProcessedData.md) object, which can be used to instantiate a [DrmRights](DrmRights.md) object during license acquisition.
 
 ## Summary
 
 | Constants ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_ERROR](../android/drm/DrmInfoStatus.md) Indicate failed communication. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_OK](../android/drm/DrmInfoStatus.md) Indicate successful communication. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_ERROR](DrmInfoStatus.md) Indicate failed communication. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_OK](DrmInfoStatus.md) Indicate successful communication. |
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [DrmInfoStatus](../android/drm/DrmInfoStatus.md))`(`statusCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `infoType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `data:` ` [ProcessedData](../android/drm/ProcessedData.md)!`, `mimeType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a`DrmInfoStatus`object with the specified parameters. |
+| [DrmInfoStatus](DrmInfoStatus.md))`(`statusCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `infoType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `data:` ` [ProcessedData](ProcessedData.md)!`, `mimeType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a`DrmInfoStatus`object with the specified parameters. |
 
 | Properties ||
 |--------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| [ProcessedData](../android/drm/ProcessedData.md)! | [data](../android/drm/DrmInfoStatus.md) The processed data. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [infoType](../android/drm/DrmInfoStatus.md) The type of DRM information processed. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [mimeType](../android/drm/DrmInfoStatus.md) The MIME type of the content. |
+| [ProcessedData](ProcessedData.md)! | [data](DrmInfoStatus.md) The processed data. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [infoType](DrmInfoStatus.md) The type of DRM information processed. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [mimeType](DrmInfoStatus.md) The MIME type of the content. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [statusCode](../android/drm/DrmInfoStatus.md) The status of the communication. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [statusCode](DrmInfoStatus.md) The status of the communication. |
 
 ## Constants
 
@@ -92,8 +92,8 @@ Creates a`DrmInfoStatus`object with the specified parameters.
 | Parameters ||
 |--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `statusCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The status of the communication. Must be one of the defined status constants above. |
-| `infoType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The type of the DRM information processed. Must be a valid type for [DrmInfoRequest](../android/drm/DrmInfoRequest.md). |
-| `data` | [ProcessedData](../android/drm/ProcessedData.md)!:The processed data. |
+| `infoType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The type of the DRM information processed. Must be a valid type for [DrmInfoRequest](DrmInfoRequest.md). |
+| `data` | [ProcessedData](ProcessedData.md)!:The processed data. |
 | --- | --- |
 | `mimeType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The MIME type. |
 
@@ -109,7 +109,7 @@ val data: ProcessedData!
 
 **Deprecated:** *Deprecated in Java.*
 
-The processed data. It is optional and thus could be null. When it is null, it indicates that a particular call to [DrmManagerClient.processDrmInfo()](../android/drm/DrmManagerClient.md))does not return any additional useful information except for the status code. 
+The processed data. It is optional and thus could be null. When it is null, it indicates that a particular call to [DrmManagerClient.processDrmInfo()](DrmManagerClient.md))does not return any additional useful information except for the status code. 
 
 ### infoType
 
@@ -121,7 +121,7 @@ val infoType: Int
 
 **Deprecated:** *Deprecated in Java.*
 
-The type of DRM information processed. Must be one of the valid type constants defined in [DrmInfoRequest](../android/drm/DrmInfoRequest.md). 
+The type of DRM information processed. Must be one of the valid type constants defined in [DrmInfoRequest](DrmInfoRequest.md). 
 
 ### mimeType
 

@@ -3,7 +3,7 @@ Also in [S Extensions 13](https://developer.android.com/sdkExtensions)
 
 # FormEditRecord
 
-Kotlin | [Java](../android/graphics/pdf/models/FormEditRecord.md)
+Kotlin | [Java](FormEditRecord.md)
 | --- | --- |
 
 ```
@@ -12,7 +12,7 @@ class FormEditRecord : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.graphics.pdf.models.FormEditRecord](../android/graphics/pdf/models/FormEditRecord.md) |
+| ↳ | [android.graphics.pdf.models.FormEditRecord](FormEditRecord.md) |
 
 Record of a form filling operation that has been executed on a single form field in a PDF. Contains the minimum amount of data required to replicate the action on the form.
 
@@ -37,7 +37,7 @@ Record of a form filling operation that has been executed on a single form field
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/FormEditRecord#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/FormEditRecord#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [Point](../android/graphics/Point.md)? | `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/FormEditRecord#getClickPoint()()` <br /> |
+| [Point](../android.graphics/Point.md)? | `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/FormEditRecord#getClickPoint()()` <br /> |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/FormEditRecord#getPageNumber()()` <br /> |
 | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/FormEditRecord#getSelectedIndices()()` <br /> |
@@ -51,7 +51,7 @@ Record of a form filling operation that has been executed on a single form field
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [FormEditRecord](../android/graphics/pdf/models/FormEditRecord.md)!\> | `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/FormEditRecord#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [FormEditRecord](FormEditRecord.md)!\> | `https://developer.android.com/reference/kotlin/android/graphics/pdf/models/FormEditRecord#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -251,7 +251,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

@@ -8,7 +8,7 @@ open class DeviceRadioState
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.admin.policy.DeviceRadioState](../android/app/admin/policy/DeviceRadioState.md) |
+| ↳ | [android.app.admin.policy.DeviceRadioState](DeviceRadioState.md) |
 
 Controls for device radio settings.
 
@@ -21,7 +21,7 @@ Controls for device radio settings.
 
 | Properties ||
 |---|---|
-| static [PolicyIdentifier](../android/app/admin/PolicyIdentifier.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | `https://developer.android.com/reference/kotlin/android/app/admin/policy/DeviceRadioState#MANAGED_ESIM_OUTGOING_TRANSFER:android.app.admin.PolicyIdentifier` Policy that controls whether outgoing transfer is allowed for managed embedded subscriptions. |
+| static [PolicyIdentifier](../android.app.admin/PolicyIdentifier.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | `https://developer.android.com/reference/kotlin/android/app/admin/policy/DeviceRadioState#MANAGED_ESIM_OUTGOING_TRANSFER:android.app.admin.PolicyIdentifier` Policy that controls whether outgoing transfer is allowed for managed embedded subscriptions. |
 
 ## Constants
 

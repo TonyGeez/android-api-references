@@ -10,9 +10,9 @@ abstract class KeyPairGeneratorSpi
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.KeyPairGeneratorSpi](../java/security/KeyPairGeneratorSpi.md) |
+| ↳ | [java.security.KeyPairGeneratorSpi](KeyPairGeneratorSpi.md) |
 
-| Known Direct Subclasses [KeyPairGenerator](../java/security/KeyPairGenerator.md) |---------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------| | [KeyPairGenerator](../java/security/KeyPairGenerator.md) | The KeyPairGenerator class is used to generate pairs of public and private keys. | |
+| Known Direct Subclasses [KeyPairGenerator](KeyPairGenerator.md) |---------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------| | [KeyPairGenerator](KeyPairGenerator.md) | The KeyPairGenerator class is used to generate pairs of public and private keys. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 This class defines the*Service Provider Interface* (**SPI** ) for the`KeyPairGenerator`class, which is used to generate pairs of public and private keys.
@@ -25,13 +25,13 @@ In case the client does not explicitly initialize the KeyPairGenerator (via a ca
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [KeyPairGeneratorSpi](../java/security/KeyPairGeneratorSpi.md))`()` <br /> |
+| [KeyPairGeneratorSpi](KeyPairGeneratorSpi.md))`()` <br /> |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [KeyPair](../java/security/KeyPair.md)! | [generateKeyPair](../java/security/KeyPairGeneratorSpi.md))`()` Generates a key pair. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [initialize](../java/security/KeyPairGeneratorSpi.md))`(`keysize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `random:` ` [SecureRandom](../java/security/SecureRandom.md)!`)` Initializes the key pair generator for a certain keysize, using the default parameter set. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [initialize](../java/security/KeyPairGeneratorSpi.md))`(`params:` ` [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)!`, `random:` ` [SecureRandom](../java/security/SecureRandom.md)!`)` Initializes the key pair generator using the specified parameter set and user-provided source of randomness. |
+| abstract [KeyPair](KeyPair.md)! | [generateKeyPair](KeyPairGeneratorSpi.md))`()` Generates a key pair. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [initialize](KeyPairGeneratorSpi.md))`(`keysize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `random:` ` [SecureRandom](SecureRandom.md)!`)` Initializes the key pair generator for a certain keysize, using the default parameter set. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [initialize](KeyPairGeneratorSpi.md))`(`params:` ` [AlgorithmParameterSpec](../java.security.spec/AlgorithmParameterSpec.md)!`, `random:` ` [SecureRandom](SecureRandom.md)!`)` Initializes the key pair generator using the specified parameter set and user-provided source of randomness. |
 | --- | --- |
 
 ## Public constructors
@@ -58,7 +58,7 @@ Generates a key pair. Unless an initialization method is called using a KeyPairG
 
 | Return ||
 |----------------------------------------------------------------------------------|------------------------------|
-| [KeyPair](../java/security/KeyPair.md)! | the newly generated`KeyPair` |
+| [KeyPair](KeyPair.md)! | the newly generated`KeyPair` |
 
 ### initialize
 
@@ -76,7 +76,7 @@ Initializes the key pair generator for a certain keysize, using the default para
 | Parameters ||
 |-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `keysize` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the keysize. This is an algorithm-specific metric, such as modulus length, specified in number of bits. |
-| `random` | [SecureRandom](../java/security/SecureRandom.md)!:the source of randomness for this generator. |
+| `random` | [SecureRandom](SecureRandom.md)!:the source of randomness for this generator. |
 
 | Exceptions ||
 |-------------------------------------------|---------------------------------------------------------------------|
@@ -99,8 +99,8 @@ This concrete method has been added to this previously-defined abstract class. (
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `params` | [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)!:the parameter set used to generate the keys. |
-| `random` | [SecureRandom](../java/security/SecureRandom.md)!:the source of randomness for this generator. |
+| `params` | [AlgorithmParameterSpec](../java.security.spec/AlgorithmParameterSpec.md)!:the parameter set used to generate the keys. |
+| `random` | [SecureRandom](SecureRandom.md)!:the source of randomness for this generator. |
 
 | Exceptions ||
 |----------------------------------------------------|------------------------------------------------------------------------|

@@ -9,9 +9,9 @@ class HeightRecord : InstantRecord
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.health.connect.datatypes.Record](../android/health/connect/datatypes/Record.md) |||
-| | ↳ | [android.health.connect.datatypes.InstantRecord](../android/health/connect/datatypes/InstantRecord.md) ||
-| | | ↳ | [android.health.connect.datatypes.HeightRecord](../android/health/connect/datatypes/HeightRecord.md) |
+| ↳ | [android.health.connect.datatypes.Record](Record.md) |||
+| | ↳ | [android.health.connect.datatypes.InstantRecord](InstantRecord.md) ||
+| | | ↳ | [android.health.connect.datatypes.HeightRecord](HeightRecord.md) |
 | --- | --- | --- | --- |
 
 Captures the user's height.
@@ -29,7 +29,7 @@ Captures the user's height.
 | Public methods ||
 |---|---|
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/HeightRecord#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [Length](../android/health/connect/datatypes/units/Length.md) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/HeightRecord#getHeight()()` <br /> |
+| [Length](../android.health.connect.datatypes.units/Length.md) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/HeightRecord#getHeight()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/HeightRecord#hashCode()()` Returns a hash code value for the object. |
 | --- | --- |
 
@@ -40,9 +40,9 @@ Captures the user's height.
 
 | Properties ||
 |---|---|
-| static [AggregationType](../android/health/connect/datatypes/AggregationType.md)\< [Length](../android/health/connect/datatypes/units/Length.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/HeightRecord#HEIGHT_AVG:android.health.connect.datatypes.AggregationType` Metric identifier to get average height using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
-| static [AggregationType](../android/health/connect/datatypes/AggregationType.md)\< [Length](../android/health/connect/datatypes/units/Length.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/HeightRecord#HEIGHT_MAX:android.health.connect.datatypes.AggregationType` Metric identifier to get maximum height using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
-| static [AggregationType](../android/health/connect/datatypes/AggregationType.md)\< [Length](../android/health/connect/datatypes/units/Length.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/HeightRecord#HEIGHT_MIN:android.health.connect.datatypes.AggregationType` Metric identifier to get minimum height using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
+| static [AggregationType](AggregationType.md)\< [Length](../android.health.connect.datatypes.units/Length.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/HeightRecord#HEIGHT_AVG:android.health.connect.datatypes.AggregationType` Metric identifier to get average height using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
+| static [AggregationType](AggregationType.md)\< [Length](../android.health.connect.datatypes.units/Length.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/HeightRecord#HEIGHT_MAX:android.health.connect.datatypes.AggregationType` Metric identifier to get maximum height using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
+| static [AggregationType](AggregationType.md)\< [Length](../android.health.connect.datatypes.units/Length.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/HeightRecord#HEIGHT_MIN:android.health.connect.datatypes.AggregationType` Metric identifier to get minimum height using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
 | --- | --- |
 
 ## Public methods

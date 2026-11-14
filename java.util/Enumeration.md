@@ -8,9 +8,9 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface Enumeration<E : Any!>
 ```
 
-| [java.util.Enumeration](../java/util/Enumeration.md) |
+| [java.util.Enumeration](Enumeration.md) |
 
-| Known Direct Subclasses [StringTokenizer](../java/util/StringTokenizer.md) |---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------| | [StringTokenizer](../java/util/StringTokenizer.md) | The string tokenizer class allows an application to break a string into tokens. | |
+| Known Direct Subclasses [StringTokenizer](StringTokenizer.md) |---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------| | [StringTokenizer](StringTokenizer.md) | The string tokenizer class allows an application to break a string into tokens. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 An object that implements the Enumeration interface generates a series of elements, one at a time. Successive calls to the`nextElement`method return successive elements of the series.
@@ -28,9 +28,9 @@ Methods are provided to enumerate through the elements of a vector, the keys of 
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\<E\>! | [asIterator](../java/util/Enumeration.md))`()` Returns an [Iterator](../java/util/Iterator.md) that traverses the remaining elements covered by this enumeration. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasMoreElements](../java/util/Enumeration.md))`()` Tests if this enumeration contains more elements. |
-| abstractE | [nextElement](../java/util/Enumeration.md))`()` Returns the next element of this enumeration if this enumeration object has at least one more element to provide. |
+| open [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\<E\>! | [asIterator](Enumeration.md))`()` Returns an [Iterator](Iterator.md) that traverses the remaining elements covered by this enumeration. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasMoreElements](Enumeration.md))`()` Tests if this enumeration contains more elements. |
+| abstractE | [nextElement](Enumeration.md))`()` Returns the next element of this enumeration if this enumeration object has at least one more element to provide. |
 | --- | --- |
 
 ## Public methods
@@ -43,7 +43,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 open fun asIterator(): MutableIterator<E>!
 ```
 
-Returns an [Iterator](../java/util/Iterator.md) that traverses the remaining elements covered by this enumeration. Traversal is undefined if any methods are called on this enumeration after the call to`asIterator`.
+Returns an [Iterator](Iterator.md) that traverses the remaining elements covered by this enumeration. Traversal is undefined if any methods are called on this enumeration after the call to`asIterator`.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|

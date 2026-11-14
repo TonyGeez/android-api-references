@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # SweepGradient
 
-Kotlin| [Java](../android/graphics/SweepGradient.md) 
+Kotlin| [Java](SweepGradient.md) 
 | --- | --- |
 
 ```
@@ -13,21 +13,21 @@ open class SweepGradient : Shader
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.graphics.Shader](../android/graphics/Shader.md) ||
-| | ↳ | [android.graphics.SweepGradient](../android/graphics/SweepGradient.md) |
+| ↳ | [android.graphics.Shader](Shader.md) ||
+| | ↳ | [android.graphics.SweepGradient](SweepGradient.md) |
 
 ## Summary
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SweepGradient](../android/graphics/SweepGradient.md))`(`cx:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `cy:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `color0:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `color1:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` A Shader that draws a sweep gradient around a center point. |
-| [SweepGradient](../android/graphics/SweepGradient.md))`(`cx:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `cy:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `colors:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)`, `positions:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)?`)` A Shader that draws a sweep gradient around a center point. |
-| [SweepGradient](../android/graphics/SweepGradient.md))`(`cx:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `cy:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `color0:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `color1:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` A Shader that draws a sweep gradient around a center point. |
-| [SweepGradient](../android/graphics/SweepGradient.md))`(`cx:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `cy:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `colors:` ` [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)`, `positions:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)?`)` A Shader that draws a sweep gradient around a center point. |
+| [SweepGradient](SweepGradient.md))`(`cx:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `cy:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `color0:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `color1:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` A Shader that draws a sweep gradient around a center point. |
+| [SweepGradient](SweepGradient.md))`(`cx:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `cy:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `colors:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)`, `positions:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)?`)` A Shader that draws a sweep gradient around a center point. |
+| [SweepGradient](SweepGradient.md))`(`cx:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `cy:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `color0:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `color1:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` A Shader that draws a sweep gradient around a center point. |
+| [SweepGradient](SweepGradient.md))`(`cx:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `cy:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `colors:` ` [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)`, `positions:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)?`)` A Shader that draws a sweep gradient around a center point. |
 
 | Inherited functions ||
 |---|---|
-| From class [Shader](../android/graphics/Shader.md) |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getLocalMatrix](../android/graphics/Shader.md))`(`localM:` ` [Matrix](../android/graphics/Matrix.md)`)` <br /> Return true if the shader has a non-identity local matrix. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLocalMatrix](../android/graphics/Shader.md))`(`localM:` ` [Matrix](../android/graphics/Matrix.md)?`)` <br /> Set the shader's local matrix. Passing null will reset the shader's matrix to identity. If the matrix has scale value as 0, the drawing result is undefined. <br /> | ||
+| From class [Shader](Shader.md) |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getLocalMatrix](Shader.md))`(`localM:` ` [Matrix](Matrix.md)`)` <br /> Return true if the shader has a non-identity local matrix. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLocalMatrix](Shader.md))`(`localM:` ` [Matrix](Matrix.md)?`)` <br /> Set the shader's local matrix. Passing null will reset the shader's matrix to identity. If the matrix has scale value as 0, the drawing result is undefined. <br /> | ||
 
 ## Public constructors
 
@@ -99,7 +99,7 @@ A Shader that draws a sweep gradient around a center point.
 
 | Exceptions ||
 |--------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.IllegalArgumentException` | if the colors do not share the same [ColorSpace](../android/graphics/ColorSpace.md) or do not use a valid one. |
+| `java.lang.IllegalArgumentException` | if the colors do not share the same [ColorSpace](ColorSpace.md) or do not use a valid one. |
 
 ### SweepGradient
 
@@ -125,4 +125,4 @@ A Shader that draws a sweep gradient around a center point.
 
 | Exceptions ||
 |--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.IllegalArgumentException` | if there are less than two colors, the colors do not share the same [ColorSpace](../android/graphics/ColorSpace.md) or do not use a valid one, or`positions`is not`null`and has a different length from`colors`. |
+| `java.lang.IllegalArgumentException` | if there are less than two colors, the colors do not share the same [ColorSpace](ColorSpace.md) or do not use a valid one, or`positions`is not`null`and has a different length from`colors`. |

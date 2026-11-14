@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # DateSorter
 
-Kotlin| [Java](../android/webkit/DateSorter.md) 
+Kotlin| [Java](DateSorter.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class DateSorter
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.webkit.DateSorter](../android/webkit/DateSorter.md) |
+| ↳ | [android.webkit.DateSorter](DateSorter.md) |
 
 Sorts dates into the following groups: Today Yesterday seven days ago one month ago older than a month ago
 
@@ -21,17 +21,17 @@ Sorts dates into the following groups: Today Yesterday seven days ago one month 
 
 | Constants ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DAY_COUNT](../android/webkit/DateSorter.md) must be \>= 3 |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DAY_COUNT](DateSorter.md) must be \>= 3 |
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [DateSorter](../android/webkit/DateSorter.md))`(`context:` ` [Context](../android/content/Context.md)!`)` <br /> |
+| [DateSorter](DateSorter.md))`(`context:` ` [Context](../android.content/Context.md)!`)` <br /> |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getBoundary](../android/webkit/DateSorter.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIndex](../android/webkit/DateSorter.md))`(`time:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` <br /> |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getLabel](../android/webkit/DateSorter.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getBoundary](DateSorter.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIndex](DateSorter.md))`(`time:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getLabel](DateSorter.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
 
 ## Constants
@@ -60,7 +60,7 @@ DateSorter(context: Context!)
 
 | Parameters ||
 |-----------|--------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](../android/content/Context.md)!:Application context |
+| `context` | [Context](../android.content/Context.md)!:Application context |
 
 ## Public methods
 

@@ -10,7 +10,7 @@ open class DHPrivateKeySpec : KeySpec
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.crypto.spec.DHPrivateKeySpec](../javax/crypto/spec/DHPrivateKeySpec.md) |
+| ↳ | [javax.crypto.spec.DHPrivateKeySpec](DHPrivateKeySpec.md) |
 
 This class specifies a Diffie-Hellman private key with its associated parameters.
 
@@ -20,13 +20,13 @@ Note that this class does not perform any validation on specified parameters. Th
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [DHPrivateKeySpec](../javax/crypto/spec/DHPrivateKeySpec.md))`(`x:` ` [BigInteger](../java/math/BigInteger.md)!`, `p:` ` [BigInteger](../java/math/BigInteger.md)!`, `g:` ` [BigInteger](../java/math/BigInteger.md)!`)` Constructor that takes a private value`x`, a prime modulus`p`, and a base generator`g`. |
+| [DHPrivateKeySpec](DHPrivateKeySpec.md))`(`x:` ` [BigInteger](../java.math/BigInteger.md)!`, `p:` ` [BigInteger](../java.math/BigInteger.md)!`, `g:` ` [BigInteger](../java.math/BigInteger.md)!`)` Constructor that takes a private value`x`, a prime modulus`p`, and a base generator`g`. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| open [BigInteger](../java/math/BigInteger.md)! | [getG](../javax/crypto/spec/DHPrivateKeySpec.md))`()` Returns the base generator`g`. |
-| open [BigInteger](../java/math/BigInteger.md)! | [getP](../javax/crypto/spec/DHPrivateKeySpec.md))`()` Returns the prime modulus`p`. |
-| open [BigInteger](../java/math/BigInteger.md)! | [getX](../javax/crypto/spec/DHPrivateKeySpec.md))`()` Returns the private value`x`. |
+| open [BigInteger](../java.math/BigInteger.md)! | [getG](DHPrivateKeySpec.md))`()` Returns the base generator`g`. |
+| open [BigInteger](../java.math/BigInteger.md)! | [getP](DHPrivateKeySpec.md))`()` Returns the prime modulus`p`. |
+| open [BigInteger](../java.math/BigInteger.md)! | [getX](DHPrivateKeySpec.md))`()` Returns the private value`x`. |
 | --- | --- |
 
 ## Public constructors
@@ -46,9 +46,9 @@ Constructor that takes a private value`x`, a prime modulus`p`, and a base genera
 
 | Parameters ||
 |-----|-----------------------------------------------------------------------------------------------------------|
-| `x` | [BigInteger](../java/math/BigInteger.md)!:private value x |
-| `p` | [BigInteger](../java/math/BigInteger.md)!:prime modulus p |
-| `g` | [BigInteger](../java/math/BigInteger.md)!:base generator g |
+| `x` | [BigInteger](../java.math/BigInteger.md)!:private value x |
+| `p` | [BigInteger](../java.math/BigInteger.md)!:prime modulus p |
+| `g` | [BigInteger](../java.math/BigInteger.md)!:base generator g |
 | --- | --- |
 
 ## Public methods
@@ -65,7 +65,7 @@ Returns the base generator`g`.
 
 | Return ||
 |------------------------------------------------------------------------------------------|-----------------------|
-| [BigInteger](../java/math/BigInteger.md)! | the base generator`g` |
+| [BigInteger](../java.math/BigInteger.md)! | the base generator`g` |
 
 ### getP
 
@@ -79,7 +79,7 @@ Returns the prime modulus`p`.
 
 | Return ||
 |------------------------------------------------------------------------------------------|----------------------|
-| [BigInteger](../java/math/BigInteger.md)! | the prime modulus`p` |
+| [BigInteger](../java.math/BigInteger.md)! | the prime modulus`p` |
 
 ### getX
 
@@ -93,4 +93,4 @@ Returns the private value`x`.
 
 | Return ||
 |------------------------------------------------------------------------------------------|----------------------|
-| [BigInteger](../java/math/BigInteger.md)! | the private value`x` |
+| [BigInteger](../java.math/BigInteger.md)! | the private value`x` |

@@ -4,7 +4,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 
 # NumberRangeFormatterSettings
 
-Kotlin| [Java](../android/icu/number/NumberRangeFormatterSettings.md) 
+Kotlin| [Java](NumberRangeFormatterSettings.md) 
 | --- | --- |
 
 ```
@@ -13,26 +13,26 @@ abstract class NumberRangeFormatterSettings<T : NumberRangeFormatterSettings<*
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.icu.number.NumberRangeFormatterSettings](../android/icu/number/NumberRangeFormatterSettings.md) |
+| ↳ | [android.icu.number.NumberRangeFormatterSettings](NumberRangeFormatterSettings.md) |
 
-| Known Direct Subclasses [LocalizedNumberRangeFormatter](../android/icu/number/LocalizedNumberRangeFormatter.md), [UnlocalizedNumberRangeFormatter](../android/icu/number/UnlocalizedNumberRangeFormatter.md) |--------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------| | [LocalizedNumberRangeFormatter](../android/icu/number/LocalizedNumberRangeFormatter.md) | A NumberRangeFormatter that has a locale associated with it; this means . | | [UnlocalizedNumberRangeFormatter](../android/icu/number/UnlocalizedNumberRangeFormatter.md) | A NumberRangeFormatter that does not yet have a locale. | |
+| Known Direct Subclasses [LocalizedNumberRangeFormatter](LocalizedNumberRangeFormatter.md), [UnlocalizedNumberRangeFormatter](UnlocalizedNumberRangeFormatter.md) |--------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------| | [LocalizedNumberRangeFormatter](LocalizedNumberRangeFormatter.md) | A NumberRangeFormatter that has a locale associated with it; this means . | | [UnlocalizedNumberRangeFormatter](UnlocalizedNumberRangeFormatter.md) | A NumberRangeFormatter that does not yet have a locale. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-An abstract base class for specifying settings related to number formatting. This class is implemented by [UnlocalizedNumberRangeFormatter](../android/icu/number/UnlocalizedNumberRangeFormatter.md) and [LocalizedNumberRangeFormatter](../android/icu/number/LocalizedNumberRangeFormatter.md). This class is not intended for public subclassing.
+An abstract base class for specifying settings related to number formatting. This class is implemented by [UnlocalizedNumberRangeFormatter](UnlocalizedNumberRangeFormatter.md) and [LocalizedNumberRangeFormatter](LocalizedNumberRangeFormatter.md). This class is not intended for public subclassing.
 
 ## Summary
 
 | Public methods ||
 |----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openT | [collapse](../android/icu/number/NumberRangeFormatterSettings.md))`(`collapse:` ` [NumberRangeFormatter.RangeCollapse](../android/icu/number/NumberRangeFormatter.RangeCollapse.md)!`)` Sets the aggressiveness of "collapsing" fields across the range separator. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/icu/number/NumberRangeFormatterSettings.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/icu/number/NumberRangeFormatterSettings.md))`()` Returns a hash code value for the object. |
+| openT | [collapse](NumberRangeFormatterSettings.md))`(`collapse:` ` [NumberRangeFormatter.RangeCollapse](../android/icu/number/NumberRangeFormatter.RangeCollapse.md)!`)` Sets the aggressiveness of "collapsing" fields across the range separator. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](NumberRangeFormatterSettings.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](NumberRangeFormatterSettings.md))`()` Returns a hash code value for the object. |
 | --- | --- |
-| openT | [identityFallback](../android/icu/number/NumberRangeFormatterSettings.md))`(`identityFallback:` ` [NumberRangeFormatter.RangeIdentityFallback](../android/icu/number/NumberRangeFormatter.RangeIdentityFallback.md)!`)` Sets the behavior when the two sides of the range are the same. |
-| openT | [numberFormatterBoth](../android/icu/number/NumberRangeFormatterSettings.md))`(`formatter:` ` [UnlocalizedNumberFormatter](../android/icu/number/UnlocalizedNumberFormatter.md)!`)` Sets the NumberFormatter instance to use for the numbers in the range. |
-| openT | [numberFormatterFirst](../android/icu/number/NumberRangeFormatterSettings.md))`(`formatterFirst:` ` [UnlocalizedNumberFormatter](../android/icu/number/UnlocalizedNumberFormatter.md)!`)` Sets the NumberFormatter instance to use for the first number in the range. |
+| openT | [identityFallback](NumberRangeFormatterSettings.md))`(`identityFallback:` ` [NumberRangeFormatter.RangeIdentityFallback](../android/icu/number/NumberRangeFormatter.RangeIdentityFallback.md)!`)` Sets the behavior when the two sides of the range are the same. |
+| openT | [numberFormatterBoth](NumberRangeFormatterSettings.md))`(`formatter:` ` [UnlocalizedNumberFormatter](UnlocalizedNumberFormatter.md)!`)` Sets the NumberFormatter instance to use for the numbers in the range. |
+| openT | [numberFormatterFirst](NumberRangeFormatterSettings.md))`(`formatterFirst:` ` [UnlocalizedNumberFormatter](UnlocalizedNumberFormatter.md)!`)` Sets the NumberFormatter instance to use for the first number in the range. |
 | --- | --- |
-| openT | [numberFormatterSecond](../android/icu/number/NumberRangeFormatterSettings.md))`(`formatterSecond:` ` [UnlocalizedNumberFormatter](../android/icu/number/UnlocalizedNumberFormatter.md)!`)` Sets the NumberFormatter instances to use for the second number in the range. |
+| openT | [numberFormatterSecond](NumberRangeFormatterSettings.md))`(`formatterSecond:` ` [UnlocalizedNumberFormatter](UnlocalizedNumberFormatter.md)!`)` Sets the NumberFormatter instances to use for the second number in the range. |
 
 ## Public methods
 
@@ -65,7 +65,7 @@ The default value is AUTO.
 
 **See Also**
 
-- [android.icu.number.NumberRangeFormatter](../android/icu/number/NumberRangeFormatter.md) 
+- [android.icu.number.NumberRangeFormatter](NumberRangeFormatter.md) 
 
 ### equals
 
@@ -103,13 +103,13 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 open fun hashCode(): Int
 ```
 
-Returns a hash code value for the object. This method is supported for the benefit of hash tables such as those provided by [java.util.HashMap](../java/util/HashMap.md).
+Returns a hash code value for the object. This method is supported for the benefit of hash tables such as those provided by [java.util.HashMap](../java.util/HashMap.md).
 
 The general contract of`hashCode`is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the`hashCode`method must consistently return the same integer, provided no information used in`equals`comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the [equals](../java/lang/Object.md))method, then calling the`hashCode`method on each of the two objects must produce the same integer result.
-- It is*not* required that if two objects are unequal according to the [equals](../java/lang/Object.md))method, then calling the`hashCode`method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the [equals](../java.lang/Object.md))method, then calling the`hashCode`method on each of the two objects must produce the same integer result.
+- It is*not* required that if two objects are unequal according to the [equals](../java.lang/Object.md))method, then calling the`hashCode`method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------|
@@ -144,7 +144,7 @@ The default value is APPROXIMATELY.
 
 **See Also**
 
-- [android.icu.number.NumberRangeFormatter](../android/icu/number/NumberRangeFormatter.md) 
+- [android.icu.number.NumberRangeFormatter](NumberRangeFormatter.md) 
 
 ### numberFormatterBoth
 
@@ -160,7 +160,7 @@ The NumberFormatter instances must not have a locale applied yet; the locale spe
 
 | Parameters ||
 |-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `formatter` | [UnlocalizedNumberFormatter](../android/icu/number/UnlocalizedNumberFormatter.md)!:The formatter to use for both numbers in the range. |
+| `formatter` | [UnlocalizedNumberFormatter](UnlocalizedNumberFormatter.md)!:The formatter to use for both numbers in the range. |
 
 | Return ||
 |---|-------------------|
@@ -168,8 +168,8 @@ The NumberFormatter instances must not have a locale applied yet; the locale spe
 
 **See Also**
 
-- [android.icu.number.NumberFormatter](../android/icu/number/NumberFormatter.md)
-- [android.icu.number.NumberRangeFormatter](../android/icu/number/NumberRangeFormatter.md) 
+- [android.icu.number.NumberFormatter](NumberFormatter.md)
+- [android.icu.number.NumberRangeFormatter](NumberRangeFormatter.md) 
 
 ### numberFormatterFirst
 
@@ -185,7 +185,7 @@ The NumberFormatter instance must not have a locale applied yet; the locale spec
 
 | Parameters ||
 |------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `formatterFirst` | [UnlocalizedNumberFormatter](../android/icu/number/UnlocalizedNumberFormatter.md)!:The formatter to use for the first number in the range. |
+| `formatterFirst` | [UnlocalizedNumberFormatter](UnlocalizedNumberFormatter.md)!:The formatter to use for the first number in the range. |
 
 | Return ||
 |---|-------------------|
@@ -193,8 +193,8 @@ The NumberFormatter instance must not have a locale applied yet; the locale spec
 
 **See Also**
 
-- [android.icu.number.NumberFormatter](../android/icu/number/NumberFormatter.md)
-- [android.icu.number.NumberRangeFormatter](../android/icu/number/NumberRangeFormatter.md) 
+- [android.icu.number.NumberFormatter](NumberFormatter.md)
+- [android.icu.number.NumberRangeFormatter](NumberRangeFormatter.md) 
 
 ### numberFormatterSecond
 
@@ -210,7 +210,7 @@ The NumberFormatter instance must not have a locale applied yet; the locale spec
 
 | Parameters ||
 |-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `formatterSecond` | [UnlocalizedNumberFormatter](../android/icu/number/UnlocalizedNumberFormatter.md)!:The formatter to use for the second number in the range. |
+| `formatterSecond` | [UnlocalizedNumberFormatter](UnlocalizedNumberFormatter.md)!:The formatter to use for the second number in the range. |
 
 | Return ||
 |---|-------------------|
@@ -218,5 +218,5 @@ The NumberFormatter instance must not have a locale applied yet; the locale spec
 
 **See Also**
 
-- [android.icu.number.NumberFormatter](../android/icu/number/NumberFormatter.md)
-- [android.icu.number.NumberRangeFormatter](../android/icu/number/NumberRangeFormatter.md)
+- [android.icu.number.NumberFormatter](NumberFormatter.md)
+- [android.icu.number.NumberRangeFormatter](NumberRangeFormatter.md)

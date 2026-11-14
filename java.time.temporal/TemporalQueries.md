@@ -8,7 +8,7 @@ class TemporalQueries
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.time.temporal.TemporalQueries](../java/time/temporal/TemporalQueries.md) |
+| ↳ | [java.time.temporal.TemporalQueries](TemporalQueries.md) |
 
 Common implementations of `TemporalQuery`.
 
@@ -42,15 +42,15 @@ The most common implementations are method references, such as `LocalDate::from`
 
 | Public methods ||
 |---|---|
-| static [TemporalQuery](../java/time/temporal/TemporalQuery.md)\< [Chronology](../java/time/chrono/Chronology.md)!\>! | `https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQueries#chronology()()` A query for the `Chronology`. |
-| static [TemporalQuery](../java/time/temporal/TemporalQuery.md)\< [LocalDate](../java/time/LocalDate.md)!\>! | `https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQueries#localDate()()` A query for `LocalDate` returning null if not found. |
-| static [TemporalQuery](../java/time/temporal/TemporalQuery.md)\< [LocalTime](../java/time/LocalTime.md)!\>! | `https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQueries#localTime()()` A query for `LocalTime` returning null if not found. |
+| static [TemporalQuery](TemporalQuery.md)\< [Chronology](../java.time.chrono/Chronology.md)!\>! | `https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQueries#chronology()()` A query for the `Chronology`. |
+| static [TemporalQuery](TemporalQuery.md)\< [LocalDate](../java.time/LocalDate.md)!\>! | `https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQueries#localDate()()` A query for `LocalDate` returning null if not found. |
+| static [TemporalQuery](TemporalQuery.md)\< [LocalTime](../java.time/LocalTime.md)!\>! | `https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQueries#localTime()()` A query for `LocalTime` returning null if not found. |
 | --- | --- |
-| static [TemporalQuery](../java/time/temporal/TemporalQuery.md)\< [ZoneOffset](../java/time/ZoneOffset.md)!\>! | `https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQueries#offset()()` A query for `ZoneOffset` returning null if not found. |
-| static [TemporalQuery](../java/time/temporal/TemporalQuery.md)\< [TemporalUnit](../java/time/temporal/TemporalUnit.md)!\>! | `https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQueries#precision()()` A query for the smallest supported unit. |
-| static [TemporalQuery](../java/time/temporal/TemporalQuery.md)\< [ZoneId](../java/time/ZoneId.md)!\>! | `https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQueries#zone()()` A lenient query for the `ZoneId`, falling back to the `ZoneOffset`. |
+| static [TemporalQuery](TemporalQuery.md)\< [ZoneOffset](../java.time/ZoneOffset.md)!\>! | `https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQueries#offset()()` A query for `ZoneOffset` returning null if not found. |
+| static [TemporalQuery](TemporalQuery.md)\< [TemporalUnit](TemporalUnit.md)!\>! | `https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQueries#precision()()` A query for the smallest supported unit. |
+| static [TemporalQuery](TemporalQuery.md)\< [ZoneId](../java.time/ZoneId.md)!\>! | `https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQueries#zone()()` A lenient query for the `ZoneId`, falling back to the `ZoneOffset`. |
 | --- | --- |
-| static [TemporalQuery](../java/time/temporal/TemporalQuery.md)\< [ZoneId](../java/time/ZoneId.md)!\>! | `https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQueries#zoneId()()` A strict query for the `ZoneId`. |
+| static [TemporalQuery](TemporalQuery.md)\< [ZoneId](../java.time/ZoneId.md)!\>! | `https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQueries#zoneId()()` A strict query for the `ZoneId`. |
 
 ## Public methods
 

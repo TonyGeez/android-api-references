@@ -10,9 +10,9 @@ open class Socket : Closeable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.net.Socket](../java/net/Socket.md) |
+| ↳ | [java.net.Socket](Socket.md) |
 
-| Known Direct Subclasses [SSLSocket](../javax/net/ssl/SSLSocket.md) |-------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [SSLSocket](../javax/net/ssl/SSLSocket.md) | This class extends`Socket`s and provides secure socket using protocols such as the "Secure Sockets Layer" (SSL) or IETF "Transport Layer Security" (TLS) protocols. | |
+| Known Direct Subclasses [SSLSocket](../javax.net.ssl/SSLSocket.md) |-------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [SSLSocket](../javax.net.ssl/SSLSocket.md) | This class extends`Socket`s and provides secure socket using protocols such as the "Secure Sockets Layer" (SSL) or IETF "Transport Layer Security" (TLS) protocols. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 This class implements client sockets (also called just "sockets"). A socket is an endpoint for communication between two machines.
@@ -23,80 +23,80 @@ The actual work of the socket is performed by an instance of the`SocketImpl`clas
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Socket](../java/net/Socket.md))`()` Creates an unconnected socket, with the system-default type of SocketImpl. |
-| [Socket](../java/net/Socket.md))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a stream socket and connects it to the specified port number on the named host. |
-| [Socket](../java/net/Socket.md))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `stream:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Creates a stream socket and connects it to the specified port number on the named host. |
-| [Socket](../java/net/Socket.md))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `localAddr:` ` [InetAddress](../java/net/InetAddress.md)!`, `localPort:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a socket and connects it to the specified remote host on the specified remote port. |
-| [Socket](../java/net/Socket.md))`(`address:` ` [InetAddress](../java/net/InetAddress.md)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a stream socket and connects it to the specified port number at the specified IP address. |
-| [Socket](../java/net/Socket.md))`(`host:` ` [InetAddress](../java/net/InetAddress.md)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `stream:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Creates a socket and connects it to the specified port number at the specified IP address. |
-| [Socket](../java/net/Socket.md))`(`address:` ` [InetAddress](../java/net/InetAddress.md)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `localAddr:` ` [InetAddress](../java/net/InetAddress.md)!`, `localPort:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a socket and connects it to the specified remote address on the specified remote port. |
-| [Socket](../java/net/Socket.md))`(`proxy:` ` [Proxy](../java/net/Proxy.md)!`)` Creates an unconnected socket, specifying the type of proxy, if any, that should be used regardless of any other settings. |
+| [Socket](Socket.md))`()` Creates an unconnected socket, with the system-default type of SocketImpl. |
+| [Socket](Socket.md))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a stream socket and connects it to the specified port number on the named host. |
+| [Socket](Socket.md))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `stream:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Creates a stream socket and connects it to the specified port number on the named host. |
+| [Socket](Socket.md))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `localAddr:` ` [InetAddress](InetAddress.md)!`, `localPort:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a socket and connects it to the specified remote host on the specified remote port. |
+| [Socket](Socket.md))`(`address:` ` [InetAddress](InetAddress.md)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a stream socket and connects it to the specified port number at the specified IP address. |
+| [Socket](Socket.md))`(`host:` ` [InetAddress](InetAddress.md)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `stream:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Creates a socket and connects it to the specified port number at the specified IP address. |
+| [Socket](Socket.md))`(`address:` ` [InetAddress](InetAddress.md)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `localAddr:` ` [InetAddress](InetAddress.md)!`, `localPort:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a socket and connects it to the specified remote address on the specified remote port. |
+| [Socket](Socket.md))`(`proxy:` ` [Proxy](Proxy.md)!`)` Creates an unconnected socket, specifying the type of proxy, if any, that should be used regardless of any other settings. |
 
 | Protected constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Socket](../java/net/Socket.md))`(`impl:` ` [SocketImpl](../java/net/SocketImpl.md)!`)` Creates an unconnected Socket with a user-specified SocketImpl. |
+| [Socket](Socket.md))`(`impl:` ` [SocketImpl](SocketImpl.md)!`)` Creates an unconnected Socket with a user-specified SocketImpl. |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [bind](../java/net/Socket.md))`(`bindpoint:` ` [SocketAddress](../java/net/SocketAddress.md)!`)` Binds the socket to a local address. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../java/net/Socket.md))`()` Closes this socket. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [connect](../java/net/Socket.md))`(`endpoint:` ` [SocketAddress](../java/net/SocketAddress.md)!`)` Connects this socket to the server. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [bind](Socket.md))`(`bindpoint:` ` [SocketAddress](SocketAddress.md)!`)` Binds the socket to a local address. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](Socket.md))`()` Closes this socket. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [connect](Socket.md))`(`endpoint:` ` [SocketAddress](SocketAddress.md)!`)` Connects this socket to the server. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [connect](../java/net/Socket.md))`(`endpoint:` ` [SocketAddress](../java/net/SocketAddress.md)!`, `timeout:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Connects this socket to the server with a specified timeout value. |
-| open [SocketChannel](../java/nio/channels/SocketChannel.md)! | [getChannel](../java/net/Socket.md))`()` Returns the unique [SocketChannel](../java/nio/channels/SocketChannel.md) object associated with this socket, if any. |
-| open [InetAddress](../java/net/InetAddress.md)! | [getInetAddress](../java/net/Socket.md))`()` Returns the address to which the socket is connected. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [connect](Socket.md))`(`endpoint:` ` [SocketAddress](SocketAddress.md)!`, `timeout:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Connects this socket to the server with a specified timeout value. |
+| open [SocketChannel](../java.nio.channels/SocketChannel.md)! | [getChannel](Socket.md))`()` Returns the unique [SocketChannel](../java.nio.channels/SocketChannel.md) object associated with this socket, if any. |
+| open [InetAddress](InetAddress.md)! | [getInetAddress](Socket.md))`()` Returns the address to which the socket is connected. |
 | --- | --- |
-| open [InputStream](../java/io/InputStream.md)! | [getInputStream](../java/net/Socket.md))`()` Returns an input stream for this socket. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getKeepAlive](../java/net/Socket.md))`()` Tests if [SO_KEEPALIVE](../java/net/SocketOptions.md) is enabled. |
-| open [InetAddress](../java/net/InetAddress.md)! | [getLocalAddress](../java/net/Socket.md))`()` Gets the local address to which the socket is bound. |
+| open [InputStream](../java.io/InputStream.md)! | [getInputStream](Socket.md))`()` Returns an input stream for this socket. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getKeepAlive](Socket.md))`()` Tests if [SO_KEEPALIVE](SocketOptions.md) is enabled. |
+| open [InetAddress](InetAddress.md)! | [getLocalAddress](Socket.md))`()` Gets the local address to which the socket is bound. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLocalPort](../java/net/Socket.md))`()` Returns the local port number to which this socket is bound. |
-| open [SocketAddress](../java/net/SocketAddress.md)! | [getLocalSocketAddress](../java/net/Socket.md))`()` Returns the address of the endpoint this socket is bound to. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getOOBInline](../java/net/Socket.md))`()` Tests if [SO_OOBINLINE](../java/net/SocketOptions.md) is enabled. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLocalPort](Socket.md))`()` Returns the local port number to which this socket is bound. |
+| open [SocketAddress](SocketAddress.md)! | [getLocalSocketAddress](Socket.md))`()` Returns the address of the endpoint this socket is bound to. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getOOBInline](Socket.md))`()` Tests if [SO_OOBINLINE](SocketOptions.md) is enabled. |
 | --- | --- |
-| openT | [getOption](../java/net/Socket.md))`(`name:` ` [SocketOption](../java/net/SocketOption.md)<T>!`)` Returns the value of a socket option. |
-| open [OutputStream](../java/io/OutputStream.md)! | [getOutputStream](../java/net/Socket.md))`()` Returns an output stream for this socket. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPort](../java/net/Socket.md))`()` Returns the remote port number to which this socket is connected. |
+| openT | [getOption](Socket.md))`(`name:` ` [SocketOption](SocketOption.md)<T>!`)` Returns the value of a socket option. |
+| open [OutputStream](../java.io/OutputStream.md)! | [getOutputStream](Socket.md))`()` Returns an output stream for this socket. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPort](Socket.md))`()` Returns the remote port number to which this socket is connected. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getReceiveBufferSize](../java/net/Socket.md))`()` Gets the value of the [SO_RCVBUF](../java/net/SocketOptions.md) option for this`Socket`, that is the buffer size used by the platform for input on this`Socket`. |
-| open [SocketAddress](../java/net/SocketAddress.md)! | [getRemoteSocketAddress](../java/net/Socket.md))`()` Returns the address of the endpoint this socket is connected to, or`null`if it is unconnected. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getReuseAddress](../java/net/Socket.md))`()` Tests if [SO_REUSEADDR](../java/net/SocketOptions.md) is enabled. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getReceiveBufferSize](Socket.md))`()` Gets the value of the [SO_RCVBUF](SocketOptions.md) option for this`Socket`, that is the buffer size used by the platform for input on this`Socket`. |
+| open [SocketAddress](SocketAddress.md)! | [getRemoteSocketAddress](Socket.md))`()` Returns the address of the endpoint this socket is connected to, or`null`if it is unconnected. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getReuseAddress](Socket.md))`()` Tests if [SO_REUSEADDR](SocketOptions.md) is enabled. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSendBufferSize](../java/net/Socket.md))`()` Get value of the [SO_SNDBUF](../java/net/SocketOptions.md) option for this`Socket`, that is the buffer size used by the platform for output on this`Socket`. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSoLinger](../java/net/Socket.md))`()` Returns setting for [SO_LINGER](../java/net/SocketOptions.md). |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSoTimeout](../java/net/Socket.md))`()` Returns setting for [SO_TIMEOUT](../java/net/SocketOptions.md). |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSendBufferSize](Socket.md))`()` Get value of the [SO_SNDBUF](SocketOptions.md) option for this`Socket`, that is the buffer size used by the platform for output on this`Socket`. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSoLinger](Socket.md))`()` Returns setting for [SO_LINGER](SocketOptions.md). |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSoTimeout](Socket.md))`()` Returns setting for [SO_TIMEOUT](SocketOptions.md). |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getTcpNoDelay](../java/net/Socket.md))`()` Tests if [TCP_NODELAY](../java/net/SocketOptions.md) is enabled. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTrafficClass](../java/net/Socket.md))`()` Gets traffic class or type-of-service in the IP header for packets sent from this Socket |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isBound](../java/net/Socket.md))`()` Returns the binding state of the socket. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getTcpNoDelay](Socket.md))`()` Tests if [TCP_NODELAY](SocketOptions.md) is enabled. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTrafficClass](Socket.md))`()` Gets traffic class or type-of-service in the IP header for packets sent from this Socket |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isBound](Socket.md))`()` Returns the binding state of the socket. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isClosed](../java/net/Socket.md))`()` Returns the closed state of the socket. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isConnected](../java/net/Socket.md))`()` Returns the connection state of the socket. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isInputShutdown](../java/net/Socket.md))`()` Returns whether the read-half of the socket connection is closed. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isClosed](Socket.md))`()` Returns the closed state of the socket. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isConnected](Socket.md))`()` Returns the connection state of the socket. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isInputShutdown](Socket.md))`()` Returns whether the read-half of the socket connection is closed. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isOutputShutdown](../java/net/Socket.md))`()` Returns whether the write-half of the socket connection is closed. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [sendUrgentData](../java/net/Socket.md))`(`data:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Send one byte of urgent data on the socket. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setKeepAlive](../java/net/Socket.md))`(`on:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Enable/disable [SO_KEEPALIVE](../java/net/SocketOptions.md). |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isOutputShutdown](Socket.md))`()` Returns whether the write-half of the socket connection is closed. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [sendUrgentData](Socket.md))`(`data:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Send one byte of urgent data on the socket. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setKeepAlive](Socket.md))`(`on:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Enable/disable [SO_KEEPALIVE](SocketOptions.md). |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOOBInline](../java/net/Socket.md))`(`on:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Enable/disable [SO_OOBINLINE](../java/net/SocketOptions.md)(receipt of TCP urgent data) By default, this option is disabled and TCP urgent data received on a socket is silently discarded. |
-| open [Socket](../java/net/Socket.md)! | [setOption](../java/net/Socket.md))`(`name:` ` [SocketOption](../java/net/SocketOption.md)<T>!`, `value:` `T`)` Sets the value of a socket option. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPerformancePreferences](../java/net/Socket.md))`(`connectionTime:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `latency:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `bandwidth:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets performance preferences for this socket. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOOBInline](Socket.md))`(`on:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Enable/disable [SO_OOBINLINE](SocketOptions.md)(receipt of TCP urgent data) By default, this option is disabled and TCP urgent data received on a socket is silently discarded. |
+| open [Socket](Socket.md)! | [setOption](Socket.md))`(`name:` ` [SocketOption](SocketOption.md)<T>!`, `value:` `T`)` Sets the value of a socket option. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPerformancePreferences](Socket.md))`(`connectionTime:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `latency:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `bandwidth:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets performance preferences for this socket. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setReceiveBufferSize](../java/net/Socket.md))`(`size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the [SO_RCVBUF](../java/net/SocketOptions.md) option to the specified value for this`Socket`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setReuseAddress](../java/net/Socket.md))`(`on:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Enable/disable the [SO_REUSEADDR](../java/net/SocketOptions.md) socket option. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSendBufferSize](../java/net/Socket.md))`(`size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the [SO_SNDBUF](../java/net/SocketOptions.md) option to the specified value for this`Socket`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setReceiveBufferSize](Socket.md))`(`size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the [SO_RCVBUF](SocketOptions.md) option to the specified value for this`Socket`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setReuseAddress](Socket.md))`(`on:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Enable/disable the [SO_REUSEADDR](SocketOptions.md) socket option. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSendBufferSize](Socket.md))`(`size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the [SO_SNDBUF](SocketOptions.md) option to the specified value for this`Socket`. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSoLinger](../java/net/Socket.md))`(`on:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `linger:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Enable/disable [SO_LINGER](../java/net/SocketOptions.md) with the specified linger time in seconds. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSoTimeout](../java/net/Socket.md))`(`timeout:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Enable/disable [SO_TIMEOUT](../java/net/SocketOptions.md) with the specified timeout, in milliseconds. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSocketImplFactory](../java/net/Socket.md))`(`fac:` ` [SocketImplFactory](../java/net/SocketImplFactory.md)!`)` Sets the client socket implementation factory for the application. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSoLinger](Socket.md))`(`on:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `linger:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Enable/disable [SO_LINGER](SocketOptions.md) with the specified linger time in seconds. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSoTimeout](Socket.md))`(`timeout:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Enable/disable [SO_TIMEOUT](SocketOptions.md) with the specified timeout, in milliseconds. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSocketImplFactory](Socket.md))`(`fac:` ` [SocketImplFactory](SocketImplFactory.md)!`)` Sets the client socket implementation factory for the application. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTcpNoDelay](../java/net/Socket.md))`(`on:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Enable/disable [TCP_NODELAY](../java/net/SocketOptions.md)(disable/enable Nagle's algorithm). |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTrafficClass](../java/net/Socket.md))`(`tc:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets traffic class or type-of-service octet in the IP header for packets sent from this Socket. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [shutdownInput](../java/net/Socket.md))`()` Places the input stream for this socket at "end of stream". |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTcpNoDelay](Socket.md))`(`on:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Enable/disable [TCP_NODELAY](SocketOptions.md)(disable/enable Nagle's algorithm). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTrafficClass](Socket.md))`(`tc:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets traffic class or type-of-service octet in the IP header for packets sent from this Socket. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [shutdownInput](Socket.md))`()` Places the input stream for this socket at "end of stream". |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [shutdownOutput](../java/net/Socket.md))`()` Disables the output stream for this socket. |
-| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [SocketOption](../java/net/SocketOption.md)\<\*\>!\>! | [supportedOptions](../java/net/Socket.md))`()` Returns a set of the socket options supported by this socket. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/net/Socket.md))`()` Converts this socket to a`String`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [shutdownOutput](Socket.md))`()` Disables the output stream for this socket. |
+| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [SocketOption](SocketOption.md)\<\*\>!\>! | [supportedOptions](Socket.md))`()` Returns a set of the socket options supported by this socket. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](Socket.md))`()` Converts this socket to a`String`. |
 | --- | --- |
 
 ## Public constructors
@@ -123,7 +123,7 @@ Socket(
 
 Creates a stream socket and connects it to the specified port number on the named host.
 
-If the specified host is`null`it is the equivalent of specifying the address as [InetAddress.getByName](../java/net/InetAddress.md))`(null)`. In other words, it is equivalent to specifying an address of the loopback interface.
+If the specified host is`null`it is the equivalent of specifying the address as [InetAddress.getByName](InetAddress.md))`(null)`. In other words, it is equivalent to specifying an address of the loopback interface.
 
 If the application has specified a server socket factory, that factory's`createSocketImpl`method is called to create the actual socket implementation. Otherwise a "plain" socket is created.
 
@@ -144,9 +144,9 @@ If there is a security manager, its`checkConnect`method is called with the host 
 
 **See Also**
 
-- [java.net.Socket#setSocketImplFactory(java.net.SocketImplFactory)](../java/net/Socket.md))
-- [java.net.SocketImpl](../java/net/SocketImpl.md)
-- [java.net.SocketImplFactory#createSocketImpl()](../java/net/SocketImplFactory.md)) 
+- [java.net.Socket#setSocketImplFactory(java.net.SocketImplFactory)](Socket.md))
+- [java.net.SocketImpl](SocketImpl.md)
+- [java.net.SocketImplFactory#createSocketImpl()](SocketImplFactory.md)) 
 
 ### Socket
 
@@ -163,7 +163,7 @@ Socket(
 
 Creates a stream socket and connects it to the specified port number on the named host.
 
-If the specified host is`null`it is the equivalent of specifying the address as [InetAddress.getByName](../java/net/InetAddress.md))`(null)`. In other words, it is equivalent to specifying an address of the loopback interface.
+If the specified host is`null`it is the equivalent of specifying the address as [InetAddress.getByName](InetAddress.md))`(null)`. In other words, it is equivalent to specifying an address of the loopback interface.
 
 If the stream argument is`true`, this creates a stream socket. If the stream argument is`false`, it creates a datagram socket.
 
@@ -189,9 +189,9 @@ If a UDP socket is used, TCP/IP related socket options will not apply.
 
 **See Also**
 
-- [java.net.Socket#setSocketImplFactory(java.net.SocketImplFactory)](../java/net/Socket.md))
-- [java.net.SocketImpl](../java/net/SocketImpl.md)
-- [java.net.SocketImplFactory#createSocketImpl()](../java/net/SocketImplFactory.md)) 
+- [java.net.Socket#setSocketImplFactory(java.net.SocketImplFactory)](Socket.md))
+- [java.net.SocketImpl](SocketImpl.md)
+- [java.net.SocketImplFactory#createSocketImpl()](SocketImplFactory.md)) 
 
 ### Socket
 
@@ -207,7 +207,7 @@ Socket(
 
 Creates a socket and connects it to the specified remote host on the specified remote port. The Socket will also bind() to the local address and port supplied.
 
-If the specified host is`null`it is the equivalent of specifying the address as [InetAddress.getByName](../java/net/InetAddress.md))`(null)`. In other words, it is equivalent to specifying an address of the loopback interface.
+If the specified host is`null`it is the equivalent of specifying the address as [InetAddress.getByName](InetAddress.md))`(null)`. In other words, it is equivalent to specifying an address of the loopback interface.
 
 A local port number of`zero`will let the system pick up a free port in the`bind`operation.
 
@@ -217,7 +217,7 @@ If there is a security manager, its`checkConnect`method is called with the host 
 |-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `host` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the name of the remote host, or`null`for the loopback address. |
 | `port` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the remote port |
-| `localAddr` | [InetAddress](../java/net/InetAddress.md)!:the local address the socket is bound to, or`null`for the`anyLocal`address. |
+| `localAddr` | [InetAddress](InetAddress.md)!:the local address the socket is bound to, or`null`for the`anyLocal`address. |
 | --- | --- |
 | `localPort` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the local port the socket is bound to, or`zero`for a system selected free port. |
 
@@ -248,7 +248,7 @@ If there is a security manager, its`checkConnect`method is called with the host 
 
 | Parameters ||
 |-----------|-----------------------------------------------------------------------------------------------------|
-| `address` | [InetAddress](../java/net/InetAddress.md)!:the IP address. |
+| `address` | [InetAddress](InetAddress.md)!:the IP address. |
 | `port` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the port number. |
 
 | Exceptions ||
@@ -261,9 +261,9 @@ If there is a security manager, its`checkConnect`method is called with the host 
 
 **See Also**
 
-- [java.net.Socket#setSocketImplFactory(java.net.SocketImplFactory)](../java/net/Socket.md))
-- [java.net.SocketImpl](../java/net/SocketImpl.md)
-- [java.net.SocketImplFactory#createSocketImpl()](../java/net/SocketImplFactory.md)) 
+- [java.net.Socket#setSocketImplFactory(java.net.SocketImplFactory)](Socket.md))
+- [java.net.SocketImpl](SocketImpl.md)
+- [java.net.SocketImplFactory#createSocketImpl()](SocketImplFactory.md)) 
 
 ### Socket
 
@@ -290,7 +290,7 @@ If UDP socket is used, TCP/IP related socket options will not apply.
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `host` | [InetAddress](../java/net/InetAddress.md)!:the IP address. |
+| `host` | [InetAddress](InetAddress.md)!:the IP address. |
 | `port` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the port number. |
 | `stream` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):if`true`, create a stream socket; otherwise, create a datagram socket. |
 | --- | --- |
@@ -305,9 +305,9 @@ If UDP socket is used, TCP/IP related socket options will not apply.
 
 **See Also**
 
-- [java.net.Socket#setSocketImplFactory(java.net.SocketImplFactory)](../java/net/Socket.md))
-- [java.net.SocketImpl](../java/net/SocketImpl.md)
-- [java.net.SocketImplFactory#createSocketImpl()](../java/net/SocketImplFactory.md)) 
+- [java.net.Socket#setSocketImplFactory(java.net.SocketImplFactory)](Socket.md))
+- [java.net.SocketImpl](SocketImpl.md)
+- [java.net.SocketImplFactory#createSocketImpl()](SocketImplFactory.md)) 
 
 ### Socket
 
@@ -323,7 +323,7 @@ Socket(
 
 Creates a socket and connects it to the specified remote address on the specified remote port. The Socket will also bind() to the local address and port supplied.
 
-If the specified local address is`null`it is the equivalent of specifying the address as the AnyLocal address (see [InetAddress.isAnyLocalAddress](../java/net/InetAddress.md))`()`).
+If the specified local address is`null`it is the equivalent of specifying the address as the AnyLocal address (see [InetAddress.isAnyLocalAddress](InetAddress.md))`()`).
 
 A local port number of`zero`will let the system pick up a free port in the`bind`operation.
 
@@ -331,9 +331,9 @@ If there is a security manager, its`checkConnect`method is called with the host 
 
 | Parameters ||
 |-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `address` | [InetAddress](../java/net/InetAddress.md)!:the remote address |
+| `address` | [InetAddress](InetAddress.md)!:the remote address |
 | `port` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the remote port |
-| `localAddr` | [InetAddress](../java/net/InetAddress.md)!:the local address the socket is bound to, or`null`for the`anyLocal`address. |
+| `localAddr` | [InetAddress](InetAddress.md)!:the local address the socket is bound to, or`null`for the`anyLocal`address. |
 | --- | --- |
 | `localPort` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the local port the socket is bound to or`zero`for a system selected free port. |
 
@@ -366,7 +366,7 @@ Examples:
 
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `proxy` | [Proxy](../java/net/Proxy.md)!:a [Proxy](../java/net/Proxy.md) object specifying what kind of proxying should be used. |
+| `proxy` | [Proxy](Proxy.md)!:a [Proxy](Proxy.md) object specifying what kind of proxying should be used. |
 
 | Exceptions ||
 |--------------------------------------|------------------------------------------------------------------------------------|
@@ -375,8 +375,8 @@ Examples:
 
 **See Also**
 
-- [java.net.ProxySelector](../java/net/ProxySelector.md)
-- [java.net.Proxy](../java/net/Proxy.md)
+- [java.net.ProxySelector](ProxySelector.md)
+- [java.net.Proxy](Proxy.md)
 
 ## Protected constructors
 
@@ -392,7 +392,7 @@ Creates an unconnected Socket with a user-specified SocketImpl.
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `impl` | [SocketImpl](../java/net/SocketImpl.md)!:an instance of a**SocketImpl**the subclass wishes to use on the Socket. |
+| `impl` | [SocketImpl](SocketImpl.md)!:an instance of a**SocketImpl**the subclass wishes to use on the Socket. |
 
 | Exceptions ||
 |-------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
@@ -415,7 +415,7 @@ If the address is`null`, then the system will pick up an ephemeral port and a va
 
 | Parameters ||
 |-------------|----------------------------------------------------------------------------------------------------------------------|
-| `bindpoint` | [SocketAddress](../java/net/SocketAddress.md)!:the`SocketAddress`to bind to |
+| `bindpoint` | [SocketAddress](SocketAddress.md)!:the`SocketAddress`to bind to |
 
 | Exceptions ||
 |--------------------------------------|---------------------------------------------------------------------------------------------------|
@@ -426,7 +426,7 @@ If the address is`null`, then the system will pick up an ephemeral port and a va
 
 **See Also**
 
-- [#isBound](../java/net/Socket.md)) 
+- [#isBound](Socket.md)) 
 
 ### close
 
@@ -438,11 +438,11 @@ open fun close(): Unit
 
 Closes this socket.
 
-Any thread currently blocked in an I/O operation upon this socket will throw a [SocketException](../java/net/SocketException.md).
+Any thread currently blocked in an I/O operation upon this socket will throw a [SocketException](SocketException.md).
 
 Once a socket has been closed, it is not available for further networking use (i.e. can't be reconnected or rebound). A new socket needs to be created.
 
-Closing this socket will also close the socket's [InputStream](../java/io/InputStream.md) and [OutputStream](../java/io/OutputStream.md).
+Closing this socket will also close the socket's [InputStream](../java.io/InputStream.md) and [OutputStream](../java.io/OutputStream.md).
 
 If this socket has an associated channel then the channel is closed as well.
 
@@ -455,7 +455,7 @@ If this socket has an associated channel then the channel is closed as well.
 
 **See Also**
 
-- [#isClosed](../java/net/Socket.md)) 
+- [#isClosed](Socket.md)) 
 
 ### connect
 
@@ -469,7 +469,7 @@ Connects this socket to the server.
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------|
-| `endpoint` | [SocketAddress](../java/net/SocketAddress.md)!:the`SocketAddress` |
+| `endpoint` | [SocketAddress](SocketAddress.md)!:the`SocketAddress` |
 
 | Exceptions ||
 |--------------------------------------------------|-----------------------------------------------------------------------------------|
@@ -493,7 +493,7 @@ Connects this socket to the server with a specified timeout value. A timeout of 
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------|
-| `endpoint` | [SocketAddress](../java/net/SocketAddress.md)!:the`SocketAddress` |
+| `endpoint` | [SocketAddress](SocketAddress.md)!:the`SocketAddress` |
 | `timeout` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the timeout value to be used in milliseconds. |
 
 | Exceptions ||
@@ -512,13 +512,13 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun getChannel(): SocketChannel!
 ```
 
-Returns the unique [SocketChannel](../java/nio/channels/SocketChannel.md) object associated with this socket, if any.
+Returns the unique [SocketChannel](../java.nio.channels/SocketChannel.md) object associated with this socket, if any.
 
-A socket will have a channel if, and only if, the channel itself was created via the java.nio.channels.SocketChannel#open or [ServerSocketChannel.accept](../java/nio/channels/ServerSocketChannel.md))methods.
+A socket will have a channel if, and only if, the channel itself was created via the java.nio.channels.SocketChannel#open or [ServerSocketChannel.accept](../java.nio.channels/ServerSocketChannel.md))methods.
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
-| [SocketChannel](../java/nio/channels/SocketChannel.md)! | the socket channel associated with this socket, or`null`if this socket was not created for a channel |
+| [SocketChannel](../java.nio.channels/SocketChannel.md)! | the socket channel associated with this socket, or`null`if this socket was not created for a channel |
 
 ### getInetAddress
 
@@ -534,7 +534,7 @@ If the socket was connected prior to being #close, then this method will continu
 
 | Return ||
 |-------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| [InetAddress](../java/net/InetAddress.md)! | the remote IP address to which this socket is connected, or`null`if the socket is not connected. |
+| [InetAddress](InetAddress.md)! | the remote IP address to which this socket is connected, or`null`if the socket is not connected. |
 
 ### getInputStream
 
@@ -546,23 +546,23 @@ open fun getInputStream(): InputStream!
 
 Returns an input stream for this socket.
 
-If this socket has an associated channel then the resulting input stream delegates all of its operations to the channel. If the channel is in non-blocking mode then the input stream's`read`operations will throw an [java.nio.channels.IllegalBlockingModeException](../java/nio/channels/IllegalBlockingModeException.md).
+If this socket has an associated channel then the resulting input stream delegates all of its operations to the channel. If the channel is in non-blocking mode then the input stream's`read`operations will throw an [java.nio.channels.IllegalBlockingModeException](../java.nio.channels/IllegalBlockingModeException.md).
 
 Under abnormal conditions the underlying connection may be broken by the remote host or the network software (for example a connection reset in the case of TCP connections). When a broken connection is detected by the network software the following applies to the returned input stream :-
 
 - The network software may discard bytes that are buffered by the socket. Bytes that aren't discarded by the network software can be read using java.io.InputStream#read.
-- If there are no bytes buffered on the socket, or all buffered bytes have been consumed by java.io.InputStream#read, then all subsequent calls to java.io.InputStream#read will throw an [IOException](../java/io/IOException.md).
-- If there are no bytes buffered on the socket, and the socket has not been closed using #close, then [available](../java/io/InputStream.md))will return`0`.
+- If there are no bytes buffered on the socket, or all buffered bytes have been consumed by java.io.InputStream#read, then all subsequent calls to java.io.InputStream#read will throw an [IOException](../java.io/IOException.md).
+- If there are no bytes buffered on the socket, and the socket has not been closed using #close, then [available](../java.io/InputStream.md))will return`0`.
 
-Closing the returned [InputStream](../java/io/InputStream.md) will close the associated socket.
+Closing the returned [InputStream](../java.io/InputStream.md) will close the associated socket.
 
 | Return ||
 |------------------------------------------------------------------------------------------|-----------------------------------------------------|
-| [InputStream](../java/io/InputStream.md)! | an input stream for reading bytes from this socket. |
+| [InputStream](../java.io/InputStream.md)! | an input stream for reading bytes from this socket. |
 
 | Exceptions ||
 |-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.io.IOException` | if an I/O error occurs when creating the input stream, the socket is closed, the socket is not connected, or the socket input has been shutdown using [shutdownInput()](../java/net/Socket.md)) |
+| `java.io.IOException` | if an I/O error occurs when creating the input stream, the socket is closed, the socket is not connected, or the socket input has been shutdown using [shutdownInput()](Socket.md)) |
 
 ### getKeepAlive
 
@@ -572,11 +572,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun getKeepAlive(): Boolean
 ```
 
-Tests if [SO_KEEPALIVE](../java/net/SocketOptions.md) is enabled.
+Tests if [SO_KEEPALIVE](SocketOptions.md) is enabled.
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | a`boolean`indicating whether or not [SO_KEEPALIVE](../java/net/SocketOptions.md) is enabled. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | a`boolean`indicating whether or not [SO_KEEPALIVE](SocketOptions.md) is enabled. |
 
 | Exceptions ||
 |----------------------------|-----------------------------------------------------------------------|
@@ -584,7 +584,7 @@ Tests if [SO_KEEPALIVE](../java/net/SocketOptions.md) is enabled.
 
 **See Also**
 
-- [#setKeepAlive(boolean)](../java/net/Socket.md)) 
+- [#setKeepAlive(boolean)](Socket.md)) 
 
 ### getLocalAddress
 
@@ -596,11 +596,11 @@ open fun getLocalAddress(): InetAddress!
 
 Gets the local address to which the socket is bound.
 
-If there is a security manager set, its`checkConnect`method is called with the local address and`-1`as its arguments to see if the operation is allowed. If the operation is not allowed, the [loopback](../java/net/InetAddress.md))address is returned.
+If there is a security manager set, its`checkConnect`method is called with the local address and`-1`as its arguments to see if the operation is allowed. If the operation is not allowed, the [loopback](InetAddress.md))address is returned.
 
 | Return ||
 |-------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [InetAddress](../java/net/InetAddress.md)! | the local address to which the socket is bound, the loopback address if denied by the security manager, or the wildcard address if the socket is closed or not bound yet. |
+| [InetAddress](InetAddress.md)! | the local address to which the socket is bound, the loopback address if denied by the security manager, or the wildcard address if the socket is closed or not bound yet. |
 
 **See Also**
 
@@ -630,19 +630,19 @@ open fun getLocalSocketAddress(): SocketAddress!
 
 Returns the address of the endpoint this socket is bound to.
 
-If a socket bound to an endpoint represented by an`InetSocketAddress `is #close, then this method will continue to return an`InetSocketAddress`after the socket is closed. In that case the returned`InetSocketAddress`'s address is the [wildcard](../java/net/InetAddress.md))address and its port is the local port that it was bound to.
+If a socket bound to an endpoint represented by an`InetSocketAddress `is #close, then this method will continue to return an`InetSocketAddress`after the socket is closed. In that case the returned`InetSocketAddress`'s address is the [wildcard](InetAddress.md))address and its port is the local port that it was bound to.
 
-If there is a security manager set, its`checkConnect`method is called with the local address and`-1`as its arguments to see if the operation is allowed. If the operation is not allowed, a`SocketAddress`representing the [loopback](../java/net/InetAddress.md))address and the local port to which this socket is bound is returned.
+If there is a security manager set, its`checkConnect`method is called with the local address and`-1`as its arguments to see if the operation is allowed. If the operation is not allowed, a`SocketAddress`representing the [loopback](InetAddress.md))address and the local port to which this socket is bound is returned.
 
 | Return ||
 |-----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [SocketAddress](../java/net/SocketAddress.md)! | a`SocketAddress`representing the local endpoint of this socket, or a`SocketAddress`representing the loopback address if denied by the security manager, or`null`if the socket is not bound yet. |
+| [SocketAddress](SocketAddress.md)! | a`SocketAddress`representing the local endpoint of this socket, or a`SocketAddress`representing the loopback address if denied by the security manager, or`null`if the socket is not bound yet. |
 
 **See Also**
 
 - <https://developer.android.com/reference/kotlin/java/net/Socket#getLocalAddress()>
 - <https://developer.android.com/reference/kotlin/java/net/Socket#getLocalPort()>
-- [#bind(SocketAddress)](../java/net/Socket.md)) 
+- [#bind(SocketAddress)](Socket.md)) 
 
 ### getOOBInline
 
@@ -652,11 +652,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun getOOBInline(): Boolean
 ```
 
-Tests if [SO_OOBINLINE](../java/net/SocketOptions.md) is enabled.
+Tests if [SO_OOBINLINE](SocketOptions.md) is enabled.
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | a`boolean`indicating whether or not [SO_OOBINLINE](../java/net/SocketOptions.md) is enabled. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | a`boolean`indicating whether or not [SO_OOBINLINE](SocketOptions.md) is enabled. |
 
 | Exceptions ||
 |----------------------------|-----------------------------------------------------------------------|
@@ -664,7 +664,7 @@ Tests if [SO_OOBINLINE](../java/net/SocketOptions.md) is enabled.
 
 **See Also**
 
-- [#setOOBInline(boolean)](../java/net/Socket.md)) 
+- [#setOOBInline(boolean)](Socket.md)) 
 
 ### getOption
 
@@ -679,7 +679,7 @@ Returns the value of a socket option.
 | Parameters ||
 |--------|--------------------------------------------------------------------------------------------------------------|
 | `<T>` | The type of the socket option value |
-| `name` | [SocketOption](../java/net/SocketOption.md)\<T\>!:The socket option |
+| `name` | [SocketOption](SocketOption.md)\<T\>!:The socket option |
 
 | Return ||
 |---|---------------------------------|
@@ -691,7 +691,7 @@ Returns the value of a socket option.
 | `java.io.IOException` | if an I/O error occurs, or if the socket is closed. |
 | `java.lang.NullPointerException` | if name is`null` |
 | --- | --- |
-| `java.lang.SecurityException` | if a security manager is set and if the socket option requires a security permission and if the caller does not have the required permission. [StandardSocketOptions](../java/net/StandardSocketOptions.md) do not require any security permission. |
+| `java.lang.SecurityException` | if a security manager is set and if the socket option requires a security permission and if the caller does not have the required permission. [StandardSocketOptions](StandardSocketOptions.md) do not require any security permission. |
 
 ### getOutputStream
 
@@ -705,11 +705,11 @@ Returns an output stream for this socket.
 
 If this socket has an associated channel then the resulting output stream delegates all of its operations to the channel. If the channel is in non-blocking mode then the output stream's`write`operations will throw an .
 
-Closing the returned [OutputStream](../java/io/OutputStream.md) will close the associated socket.
+Closing the returned [OutputStream](../java.io/OutputStream.md) will close the associated socket.
 
 | Return ||
 |--------------------------------------------------------------------------------------------|----------------------------------------------------|
-| [OutputStream](../java/io/OutputStream.md)! | an output stream for writing bytes to this socket. |
+| [OutputStream](../java.io/OutputStream.md)! | an output stream for writing bytes to this socket. |
 
 | Exceptions ||
 |-----------------------|-------------------------------------------------------------------------------------------|
@@ -739,11 +739,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun getReceiveBufferSize(): Int
 ```
 
-Gets the value of the [SO_RCVBUF](../java/net/SocketOptions.md) option for this`Socket`, that is the buffer size used by the platform for input on this`Socket`.
+Gets the value of the [SO_RCVBUF](SocketOptions.md) option for this`Socket`, that is the buffer size used by the platform for input on this`Socket`.
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the value of the [SO_RCVBUF](../java/net/SocketOptions.md) option for this`Socket`. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the value of the [SO_RCVBUF](SocketOptions.md) option for this`Socket`. |
 
 | Exceptions ||
 |----------------------------|-----------------------------------------------------------------------|
@@ -751,7 +751,7 @@ Gets the value of the [SO_RCVBUF](../java/net/SocketOptions.md) option for this`
 
 **See Also**
 
-- [#setReceiveBufferSize(int)](../java/net/Socket.md)) 
+- [#setReceiveBufferSize(int)](Socket.md)) 
 
 ### getRemoteSocketAddress
 
@@ -767,14 +767,14 @@ If the socket was connected prior to being #close, then this method will continu
 
 | Return ||
 |-----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
-| [SocketAddress](../java/net/SocketAddress.md)! | a`SocketAddress`representing the remote endpoint of this socket, or`null`if it is not connected yet. |
+| [SocketAddress](SocketAddress.md)! | a`SocketAddress`representing the remote endpoint of this socket, or`null`if it is not connected yet. |
 
 **See Also**
 
 - <https://developer.android.com/reference/kotlin/java/net/Socket#getInetAddress()>
 - <https://developer.android.com/reference/kotlin/java/net/Socket#getPort()>
-- [#connect(SocketAddress, int)](../java/net/Socket.md))
-- [#connect(SocketAddress)](../java/net/Socket.md)) 
+- [#connect(SocketAddress, int)](Socket.md))
+- [#connect(SocketAddress)](Socket.md)) 
 
 ### getReuseAddress
 
@@ -784,11 +784,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun getReuseAddress(): Boolean
 ```
 
-Tests if [SO_REUSEADDR](../java/net/SocketOptions.md) is enabled.
+Tests if [SO_REUSEADDR](SocketOptions.md) is enabled.
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | a`boolean`indicating whether or not [SO_REUSEADDR](../java/net/SocketOptions.md) is enabled. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | a`boolean`indicating whether or not [SO_REUSEADDR](SocketOptions.md) is enabled. |
 
 | Exceptions ||
 |----------------------------|-----------------------------------------------------------------------|
@@ -796,7 +796,7 @@ Tests if [SO_REUSEADDR](../java/net/SocketOptions.md) is enabled.
 
 **See Also**
 
-- [#setReuseAddress(boolean)](../java/net/Socket.md)) 
+- [#setReuseAddress(boolean)](Socket.md)) 
 
 ### getSendBufferSize
 
@@ -806,11 +806,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun getSendBufferSize(): Int
 ```
 
-Get value of the [SO_SNDBUF](../java/net/SocketOptions.md) option for this`Socket`, that is the buffer size used by the platform for output on this`Socket`.
+Get value of the [SO_SNDBUF](SocketOptions.md) option for this`Socket`, that is the buffer size used by the platform for output on this`Socket`.
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the value of the [SO_SNDBUF](../java/net/SocketOptions.md) option for this`Socket`. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the value of the [SO_SNDBUF](SocketOptions.md) option for this`Socket`. |
 
 | Exceptions ||
 |----------------------------|-----------------------------------------------------------------------|
@@ -818,7 +818,7 @@ Get value of the [SO_SNDBUF](../java/net/SocketOptions.md) option for this`Socke
 
 **See Also**
 
-- [#setSendBufferSize(int)](../java/net/Socket.md)) 
+- [#setSendBufferSize(int)](Socket.md)) 
 
 ### getSoLinger
 
@@ -828,11 +828,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun getSoLinger(): Int
 ```
 
-Returns setting for [SO_LINGER](../java/net/SocketOptions.md). -1 returns implies that the option is disabled. The setting only affects socket close.
+Returns setting for [SO_LINGER](SocketOptions.md). -1 returns implies that the option is disabled. The setting only affects socket close.
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the setting for [SO_LINGER](../java/net/SocketOptions.md). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the setting for [SO_LINGER](SocketOptions.md). |
 
 | Exceptions ||
 |----------------------------|-----------------------------------------------------------------------|
@@ -840,7 +840,7 @@ Returns setting for [SO_LINGER](../java/net/SocketOptions.md). -1 returns implie
 
 **See Also**
 
-- [#setSoLinger(boolean, int)](../java/net/Socket.md)) 
+- [#setSoLinger(boolean, int)](Socket.md)) 
 
 ### getSoTimeout
 
@@ -850,11 +850,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun getSoTimeout(): Int
 ```
 
-Returns setting for [SO_TIMEOUT](../java/net/SocketOptions.md). 0 returns implies that the option is disabled (i.e., timeout of infinity).
+Returns setting for [SO_TIMEOUT](SocketOptions.md). 0 returns implies that the option is disabled (i.e., timeout of infinity).
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the setting for [SO_TIMEOUT](../java/net/SocketOptions.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the setting for [SO_TIMEOUT](SocketOptions.md) |
 
 | Exceptions ||
 |----------------------------|-----------------------------------------------------------------------|
@@ -862,7 +862,7 @@ Returns setting for [SO_TIMEOUT](../java/net/SocketOptions.md). 0 returns implie
 
 **See Also**
 
-- [#setSoTimeout(int)](../java/net/Socket.md)) 
+- [#setSoTimeout(int)](Socket.md)) 
 
 ### getTcpNoDelay
 
@@ -872,11 +872,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun getTcpNoDelay(): Boolean
 ```
 
-Tests if [TCP_NODELAY](../java/net/SocketOptions.md) is enabled.
+Tests if [TCP_NODELAY](SocketOptions.md) is enabled.
 
 | Return ||
 |------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | a`boolean`indicating whether or not [TCP_NODELAY](../java/net/SocketOptions.md) is enabled. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | a`boolean`indicating whether or not [TCP_NODELAY](SocketOptions.md) is enabled. |
 
 | Exceptions ||
 |----------------------------|-----------------------------------------------------------------------|
@@ -884,7 +884,7 @@ Tests if [TCP_NODELAY](../java/net/SocketOptions.md) is enabled.
 
 **See Also**
 
-- [#setTcpNoDelay(boolean)](../java/net/Socket.md)) 
+- [#setTcpNoDelay(boolean)](Socket.md)) 
 
 ### getTrafficClass
 
@@ -896,7 +896,7 @@ open fun getTrafficClass(): Int
 
 Gets traffic class or type-of-service in the IP header for packets sent from this Socket
 
-As the underlying network implementation may ignore the traffic class or type-of-service set using [setTrafficClass(int)](../java/net/Socket.md))this method may return a different value than was previously set using the [setTrafficClass(int)](../java/net/Socket.md))method on this Socket.
+As the underlying network implementation may ignore the traffic class or type-of-service set using [setTrafficClass(int)](Socket.md))this method may return a different value than was previously set using the [setTrafficClass(int)](Socket.md))method on this Socket.
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------|
@@ -908,8 +908,8 @@ As the underlying network implementation may ignore the traffic class or type-of
 
 **See Also**
 
-- [#setTrafficClass(int)](../java/net/Socket.md))
-- [java.net.SocketOptions#IP_TOS](../java/net/SocketOptions.md) 
+- [#setTrafficClass(int)](Socket.md))
+- [java.net.SocketOptions#IP_TOS](SocketOptions.md) 
 
 ### isBound
 
@@ -921,7 +921,7 @@ open fun isBound(): Boolean
 
 Returns the binding state of the socket.
 
-Note: Closing a socket doesn't clear its binding state, which means this method will return`true`for a closed socket (see [isClosed()](../java/net/Socket.md))) if it was successfuly bound prior to being closed.
+Note: Closing a socket doesn't clear its binding state, which means this method will return`true`for a closed socket (see [isClosed()](Socket.md))) if it was successfuly bound prior to being closed.
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------------------------------|
@@ -929,7 +929,7 @@ Note: Closing a socket doesn't clear its binding state, which means this method 
 
 **See Also**
 
-- [#bind](../java/net/Socket.md)) 
+- [#bind](Socket.md)) 
 
 ### isClosed
 
@@ -957,7 +957,7 @@ open fun isConnected(): Boolean
 
 Returns the connection state of the socket.
 
-Note: Closing a socket doesn't clear its connection state, which means this method will return`true`for a closed socket (see [isClosed()](../java/net/Socket.md))) if it was successfuly connected prior to being closed.
+Note: Closing a socket doesn't clear its connection state, which means this method will return`true`for a closed socket (see [isClosed()](Socket.md))) if it was successfuly connected prior to being closed.
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------------------------------------------------|
@@ -979,7 +979,7 @@ Returns whether the read-half of the socket connection is closed.
 
 **See Also**
 
-- [#shutdownInput](../java/net/Socket.md)) 
+- [#shutdownInput](Socket.md)) 
 
 ### isOutputShutdown
 
@@ -997,7 +997,7 @@ Returns whether the write-half of the socket connection is closed.
 
 **See Also**
 
-- [#shutdownOutput](../java/net/Socket.md)) 
+- [#shutdownOutput](Socket.md)) 
 
 ### sendUrgentData
 
@@ -1025,7 +1025,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun setKeepAlive(on: Boolean): Unit
 ```
 
-Enable/disable [SO_KEEPALIVE](../java/net/SocketOptions.md).
+Enable/disable [SO_KEEPALIVE](SocketOptions.md).
 
 | Parameters ||
 |------|----------------------------------------------------------------------------------------------------------------------------------------|
@@ -1047,13 +1047,13 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun setOOBInline(on: Boolean): Unit
 ```
 
-Enable/disable [SO_OOBINLINE](../java/net/SocketOptions.md)(receipt of TCP urgent data) By default, this option is disabled and TCP urgent data received on a socket is silently discarded. If the user wishes to receive urgent data, then this option must be enabled. When enabled, urgent data is received inline with normal data.
+Enable/disable [SO_OOBINLINE](SocketOptions.md)(receipt of TCP urgent data) By default, this option is disabled and TCP urgent data received on a socket is silently discarded. If the user wishes to receive urgent data, then this option must be enabled. When enabled, urgent data is received inline with normal data.
 
 Note, only limited support is provided for handling incoming urgent data. In particular, no notification of incoming urgent data is provided and there is no capability to distinguish between normal data and urgent data unless provided by a higher level protocol.
 
 | Parameters ||
 |------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `on` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):`true`to enable [SO_OOBINLINE](../java/net/SocketOptions.md),`false`to disable. |
+| `on` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):`true`to enable [SO_OOBINLINE](SocketOptions.md),`false`to disable. |
 
 | Exceptions ||
 |----------------------------|-----------------------------------------------------------------------|
@@ -1079,13 +1079,13 @@ Sets the value of a socket option.
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------------|
 | `<T>` | The type of the socket option value |
-| `name` | [SocketOption](../java/net/SocketOption.md)\<T\>!:The socket option |
+| `name` | [SocketOption](SocketOption.md)\<T\>!:The socket option |
 | `value` | T:The value of the socket option. A value of`null`may be valid for some options. |
 | --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------|-------------|
-| [Socket](../java/net/Socket.md)! | this Socket |
+| [Socket](Socket.md)! | this Socket |
 
 | Exceptions ||
 |-------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1094,7 +1094,7 @@ Sets the value of a socket option.
 | `java.io.IOException` | if an I/O error occurs, or if the socket is closed. |
 | --- | --- |
 | `java.lang.NullPointerException` | if name is`null` |
-| `java.lang.SecurityException` | if a security manager is set and if the socket option requires a security permission and if the caller does not have the required permission. [StandardSocketOptions](../java/net/StandardSocketOptions.md) do not require any security permission. |
+| `java.lang.SecurityException` | if a security manager is set and if the socket option requires a security permission and if the caller does not have the required permission. [StandardSocketOptions](StandardSocketOptions.md) do not require any security permission. |
 
 ### setPerformancePreferences
 
@@ -1131,15 +1131,15 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun setReceiveBufferSize(size: Int): Unit
 ```
 
-Sets the [SO_RCVBUF](../java/net/SocketOptions.md) option to the specified value for this`Socket`. The [SO_RCVBUF](../java/net/SocketOptions.md) option is used by the platform's networking code as a hint for the size to set the underlying network I/O buffers.
+Sets the [SO_RCVBUF](SocketOptions.md) option to the specified value for this`Socket`. The [SO_RCVBUF](SocketOptions.md) option is used by the platform's networking code as a hint for the size to set the underlying network I/O buffers.
 
 Increasing the receive buffer size can increase the performance of network I/O for high-volume connection, while decreasing it can help reduce the backlog of incoming data.
 
-Because [SO_RCVBUF](../java/net/SocketOptions.md) is a hint, applications that want to verify what size the buffers were set to should call [getReceiveBufferSize()](../java/net/Socket.md)).
+Because [SO_RCVBUF](SocketOptions.md) is a hint, applications that want to verify what size the buffers were set to should call [getReceiveBufferSize()](Socket.md)).
 
-The value of [SO_RCVBUF](../java/net/SocketOptions.md) is also used to set the TCP receive window that is advertized to the remote peer. Generally, the window size can be modified at any time when a socket is connected. However, if a receive window larger than 64K is required then this must be requested**before**the socket is connected to the remote peer. There are two cases to be aware of:
+The value of [SO_RCVBUF](SocketOptions.md) is also used to set the TCP receive window that is advertized to the remote peer. Generally, the window size can be modified at any time when a socket is connected. However, if a receive window larger than 64K is required then this must be requested**before**the socket is connected to the remote peer. There are two cases to be aware of:
 
-1. For sockets accepted from a ServerSocket, this must be done by calling [ServerSocket.setReceiveBufferSize(int)](../java/net/ServerSocket.md))before the ServerSocket is bound to a local address.
+1. For sockets accepted from a ServerSocket, this must be done by calling [ServerSocket.setReceiveBufferSize(int)](ServerSocket.md))before the ServerSocket is bound to a local address.
 2. For client sockets, setReceiveBufferSize() must be called before connecting the socket to its remote peer.
 
 | Parameters ||
@@ -1154,7 +1154,7 @@ The value of [SO_RCVBUF](../java/net/SocketOptions.md) is also used to set the T
 **See Also**
 
 - <https://developer.android.com/reference/kotlin/java/net/Socket#getReceiveBufferSize()>
-- [java.net.ServerSocket#setReceiveBufferSize(int)](../java/net/ServerSocket.md)) 
+- [java.net.ServerSocket#setReceiveBufferSize(int)](ServerSocket.md)) 
 
 ### setReuseAddress
 
@@ -1164,15 +1164,15 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun setReuseAddress(on: Boolean): Unit
 ```
 
-Enable/disable the [SO_REUSEADDR](../java/net/SocketOptions.md) socket option.
+Enable/disable the [SO_REUSEADDR](SocketOptions.md) socket option.
 
 When a TCP connection is closed the connection may remain in a timeout state for a period of time after the connection is closed (typically known as the`TIME_WAIT`state or`2MSL`wait state). For applications using a well known socket address or port it may not be possible to bind a socket to the required`SocketAddress`if there is a connection in the timeout state involving the socket address or port.
 
-Enabling [SO_REUSEADDR](../java/net/SocketOptions.md) prior to binding the socket using [bind(java.net.SocketAddress)](../java/net/Socket.md))allows the socket to be bound even though a previous connection is in a timeout state.
+Enabling [SO_REUSEADDR](SocketOptions.md) prior to binding the socket using [bind(java.net.SocketAddress)](Socket.md))allows the socket to be bound even though a previous connection is in a timeout state.
 
-When a`Socket`is created the initial setting of [SO_REUSEADDR](../java/net/SocketOptions.md) is disabled.
+When a`Socket`is created the initial setting of [SO_REUSEADDR](SocketOptions.md) is disabled.
 
-The behaviour when [SO_REUSEADDR](../java/net/SocketOptions.md) is enabled or disabled after a socket is bound (See [isBound()](../java/net/Socket.md))) is not defined.
+The behaviour when [SO_REUSEADDR](SocketOptions.md) is enabled or disabled after a socket is bound (See [isBound()](Socket.md))) is not defined.
 
 | Parameters ||
 |------|-----------------------------------------------------------------------------------------------------------------------------------|
@@ -1180,12 +1180,12 @@ The behaviour when [SO_REUSEADDR](../java/net/SocketOptions.md) is enabled or di
 
 | Exceptions ||
 |----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.net.SocketException` | if an error occurs enabling or disabling the [SO_REUSEADDR](../java/net/SocketOptions.md) socket option, or the socket is closed. |
+| `java.net.SocketException` | if an error occurs enabling or disabling the [SO_REUSEADDR](SocketOptions.md) socket option, or the socket is closed. |
 
 **See Also**
 
 - <https://developer.android.com/reference/kotlin/java/net/Socket#getReuseAddress()>
-- [#bind(SocketAddress)](../java/net/Socket.md))
+- [#bind(SocketAddress)](Socket.md))
 - <https://developer.android.com/reference/kotlin/java/net/Socket#isClosed()>
 - <https://developer.android.com/reference/kotlin/java/net/Socket#isBound()> 
 
@@ -1197,9 +1197,9 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun setSendBufferSize(size: Int): Unit
 ```
 
-Sets the [SO_SNDBUF](../java/net/SocketOptions.md) option to the specified value for this`Socket`. The [SO_SNDBUF](../java/net/SocketOptions.md) option is used by the platform's networking code as a hint for the size to set the underlying network I/O buffers.
+Sets the [SO_SNDBUF](SocketOptions.md) option to the specified value for this`Socket`. The [SO_SNDBUF](SocketOptions.md) option is used by the platform's networking code as a hint for the size to set the underlying network I/O buffers.
 
-Because [SO_SNDBUF](../java/net/SocketOptions.md) is a hint, applications that want to verify what size the buffers were set to should call [getSendBufferSize()](../java/net/Socket.md)).
+Because [SO_SNDBUF](SocketOptions.md) is a hint, applications that want to verify what size the buffers were set to should call [getSendBufferSize()](Socket.md)).
 
 | Parameters ||
 |--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1225,7 +1225,7 @@ open fun setSoLinger(
 ): Unit
 ```
 
-Enable/disable [SO_LINGER](../java/net/SocketOptions.md) with the specified linger time in seconds. The maximum timeout value is platform specific. The setting only affects socket close.
+Enable/disable [SO_LINGER](SocketOptions.md) with the specified linger time in seconds. The maximum timeout value is platform specific. The setting only affects socket close.
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------|
@@ -1249,7 +1249,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun setSoTimeout(timeout: Int): Unit
 ```
 
-Enable/disable [SO_TIMEOUT](../java/net/SocketOptions.md) with the specified timeout, in milliseconds. With this option set to a non-zero timeout, a read() call on the InputStream associated with this Socket will block for only this amount of time. If the timeout expires, a**java.net.SocketTimeoutException** is raised, though the Socket is still valid. The option**must** be enabled prior to entering the blocking operation to have effect. The timeout must be`> 0`. A timeout of zero is interpreted as an infinite timeout.
+Enable/disable [SO_TIMEOUT](SocketOptions.md) with the specified timeout, in milliseconds. With this option set to a non-zero timeout, a read() call on the InputStream associated with this Socket will block for only this amount of time. If the timeout expires, a**java.net.SocketTimeoutException** is raised, though the Socket is still valid. The option**must** be enabled prior to entering the blocking operation to have effect. The timeout must be`> 0`. A timeout of zero is interpreted as an infinite timeout.
 
 | Parameters ||
 |-----------|--------------------------------------------------------------------------------------------------------------------|
@@ -1281,7 +1281,7 @@ If there is a security manager, this method first calls the security manager's`c
 
 | Parameters ||
 |-------|----------------------------------------------------------------------------------------------------------------------|
-| `fac` | [SocketImplFactory](../java/net/SocketImplFactory.md)!:the desired factory. |
+| `fac` | [SocketImplFactory](SocketImplFactory.md)!:the desired factory. |
 
 | Exceptions ||
 |-------------------------------|------------------------------------------------------------------------------------------|
@@ -1292,8 +1292,8 @@ If there is a security manager, this method first calls the security manager's`c
 
 **See Also**
 
-- [java.net.SocketImplFactory#createSocketImpl()](../java/net/SocketImplFactory.md))
-- [java.lang.SecurityManager#checkSetFactory](../java/lang/SecurityManager.md)) 
+- [java.net.SocketImplFactory#createSocketImpl()](SocketImplFactory.md))
+- [java.lang.SecurityManager#checkSetFactory](../java.lang/SecurityManager.md)) 
 
 ### setTcpNoDelay
 
@@ -1303,7 +1303,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun setTcpNoDelay(on: Boolean): Unit
 ```
 
-Enable/disable [TCP_NODELAY](../java/net/SocketOptions.md)(disable/enable Nagle's algorithm).
+Enable/disable [TCP_NODELAY](SocketOptions.md)(disable/enable Nagle's algorithm).
 
 | Parameters ||
 |------|-----------------------------------------------------------------------------------------------------------------------------------|
@@ -1356,8 +1356,8 @@ For Internet Protocol v6`tc`is the value that would be placed into the sin6_flow
 
 **See Also**
 
-- [#getTrafficClass](../java/net/Socket.md))
-- [java.net.SocketOptions#IP_TOS](../java/net/SocketOptions.md) 
+- [#getTrafficClass](Socket.md))
+- [java.net.SocketOptions#IP_TOS](SocketOptions.md) 
 
 ### shutdownInput
 
@@ -1377,9 +1377,9 @@ If you read from a socket input stream after invoking this method on the socket,
 
 **See Also**
 
-- [java.net.Socket#shutdownOutput()](../java/net/Socket.md))
-- [java.net.Socket#setSoLinger(boolean, int)](../java/net/Socket.md))
-- [#isInputShutdown](../java/net/Socket.md)) 
+- [java.net.Socket#shutdownOutput()](Socket.md))
+- [java.net.Socket#setSoLinger(boolean, int)](Socket.md))
+- [#isInputShutdown](Socket.md)) 
 
 ### shutdownOutput
 
@@ -1397,9 +1397,9 @@ Disables the output stream for this socket. For a TCP socket, any previously wri
 
 **See Also**
 
-- [java.net.Socket#shutdownInput()](../java/net/Socket.md))
-- [java.net.Socket#setSoLinger(boolean, int)](../java/net/Socket.md))
-- [#isOutputShutdown](../java/net/Socket.md)) 
+- [java.net.Socket#shutdownInput()](Socket.md))
+- [java.net.Socket#setSoLinger(boolean, int)](Socket.md))
+- [#isOutputShutdown](Socket.md)) 
 
 ### supportedOptions
 
@@ -1413,7 +1413,7 @@ Returns a set of the socket options supported by this socket. This method will c
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [SocketOption](../java/net/SocketOption.md)<*>!>! | A set of the socket options supported by this socket. This set may be empty if the socket's SocketImpl cannot be created. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [SocketOption](SocketOption.md)<*>!>! | A set of the socket options supported by this socket. This set may be empty if the socket's SocketImpl cannot be created. |
 
 ### toString
 

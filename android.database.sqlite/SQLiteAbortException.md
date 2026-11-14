@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # SQLiteAbortException
 
-Kotlin | [Java](../android/database/sqlite/SQLiteAbortException.md) 
+Kotlin | [Java](SQLiteAbortException.md) 
 | --- | --- |
 
 ```
@@ -14,12 +14,12 @@ open class SQLiteAbortException : SQLiteException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||||
 | --- | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||||
-| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) ||||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) |||||
+| | | ↳ | [java.lang.RuntimeException](../java.lang/RuntimeException.md) ||||
 | --- | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.database.SQLException](../android/database/SQLException.md) |||
-| | | | | ↳ | [android.database.sqlite.SQLiteException](../android/database/sqlite/SQLiteException.md) ||
-| | | | | | ↳ | [android.database.sqlite.SQLiteAbortException](../android/database/sqlite/SQLiteAbortException.md) |
+| | | | ↳ | [android.database.SQLException](../android.database/SQLException.md) |||
+| | | | | ↳ | [android.database.sqlite.SQLiteException](SQLiteException.md) ||
+| | | | | | ↳ | [android.database.sqlite.SQLiteAbortException](SQLiteAbortException.md) |
 | --- | --- | --- | --- | --- | --- | --- |
 
 An exception that indicates that the SQLite program was aborted. This can happen either through a call to ABORT in a trigger, or as the result of using the ABORT conflict clause.
@@ -28,8 +28,8 @@ An exception that indicates that the SQLite program was aborted. This can happen
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SQLiteAbortException](../android/database/sqlite/SQLiteAbortException.md))`()` <br /> |
-| [SQLiteAbortException](../android/database/sqlite/SQLiteAbortException.md))`(`error:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| [SQLiteAbortException](SQLiteAbortException.md))`()` <br /> |
+| [SQLiteAbortException](SQLiteAbortException.md))`(`error:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
 
 ## Public constructors
 

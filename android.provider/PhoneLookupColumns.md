@@ -20,7 +20,7 @@ protected interface PhoneLookupColumns
 
 | Constants ||
 |----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CONTACT_ID](../android/provider/ContactsContract.PhoneLookupColumns.md) A reference to the [ContactsContract.Contacts._ID](../android/provider/BaseColumns.md) that this data belongs to. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CONTACT_ID](../android/provider/ContactsContract.PhoneLookupColumns.md) A reference to the [ContactsContract.Contacts._ID](BaseColumns.md) that this data belongs to. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DATA_ID](../android/provider/ContactsContract.PhoneLookupColumns.md) The ID of the data row. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [LABEL](../android/provider/ContactsContract.PhoneLookupColumns.md) The user defined label for the phone number. |
 | --- | --- |
@@ -39,7 +39,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val CONTACT_ID: String
 ```
 
-A reference to the [ContactsContract.Contacts._ID](../android/provider/BaseColumns.md) that this data belongs to.
+A reference to the [ContactsContract.Contacts._ID](BaseColumns.md) that this data belongs to.
 
 Type: INTEGER 
 

@@ -33,4 +33,4 @@ Notifies the occurrence of another frame of the animation.
 
 | Parameters ||
 |---|---|
-| `animation` | [ValueAnimator](../android/animation/ValueAnimator.md): The animation which was repeated. This value cannot be `null`. |
+| `animation` | [ValueAnimator](ValueAnimator.md): The animation which was repeated. This value cannot be `null`. |

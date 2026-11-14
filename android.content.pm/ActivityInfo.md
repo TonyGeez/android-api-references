@@ -8,9 +8,9 @@ open class ActivityInfo : ComponentInfo, Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.content.pm.PackageItemInfo](../android/content/pm/PackageItemInfo.md) |||
-| | ↳ | [android.content.pm.ComponentInfo](../android/content/pm/ComponentInfo.md) ||
-| | | ↳ | [android.content.pm.ActivityInfo](../android/content/pm/ActivityInfo.md) |
+| ↳ | [android.content.pm.PackageItemInfo](PackageItemInfo.md) |||
+| | ↳ | [android.content.pm.ComponentInfo](ComponentInfo.md) ||
+| | | ↳ | [android.content.pm.ActivityInfo](ActivityInfo.md) |
 | --- | --- | --- | --- |
 
 Information you can retrieve about a particular application activity or receiver. This corresponds to information collected from the AndroidManifest.xml's \<activity\> and \<receiver\> tags.
@@ -223,7 +223,7 @@ Load an XML resource attached to the meta-data of this item. This will retrieved
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ActivityInfo](../android/content/pm/ActivityInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ActivityInfo](ActivityInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo#CREATOR:android.os.Parcelable.Creator` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo#colorMode:kotlin.Int` The color mode requested by this activity. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo#configChanges:kotlin.Int` Bit mask of kinds of configuration changes that this activity can handle itself (without being restarted by the system). |
 | --- | --- |
@@ -1335,7 +1335,7 @@ open fun writeToParcel(
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

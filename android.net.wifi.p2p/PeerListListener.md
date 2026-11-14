@@ -19,7 +19,7 @@ Interface for callback invocation when peer list is available
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onPeersAvailable](../android/net/wifi/p2p/WifiP2pManager.PeerListListener.md))`(`peers:` ` [WifiP2pDeviceList](../android/net/wifi/p2p/WifiP2pDeviceList.md)!`)` The requested peer list is available |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onPeersAvailable](../android/net/wifi/p2p/WifiP2pManager.PeerListListener.md))`(`peers:` ` [WifiP2pDeviceList](WifiP2pDeviceList.md)!`)` The requested peer list is available |
 
 ## Public methods
 
@@ -35,4 +35,4 @@ The requested peer list is available
 
 | Parameters ||
 |---------|-------------------------------------------------------------------------------------------------------------------------------------|
-| `peers` | [WifiP2pDeviceList](../android/net/wifi/p2p/WifiP2pDeviceList.md)!:List of available peers |
+| `peers` | [WifiP2pDeviceList](WifiP2pDeviceList.md)!:List of available peers |

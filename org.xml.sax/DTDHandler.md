@@ -8,12 +8,12 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface DTDHandler
 ```
 
-| [org.xml.sax.DTDHandler](../org/xml/sax/DTDHandler.md) |
+| [org.xml.sax.DTDHandler](DTDHandler.md) |
 
-| Known Direct Subclasses [DefaultHandler](../org/xml/sax/helpers/DefaultHandler.md), [HandlerBase](../org/xml/sax/HandlerBase.md), [TransformerHandler](../javax/xml/transform/sax/TransformerHandler.md), [XMLFilterImpl](../org/xml/sax/helpers/XMLFilterImpl.md) |-----------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------| | [DefaultHandler](../org/xml/sax/helpers/DefaultHandler.md) | Default base class for SAX2 event handlers. | | [HandlerBase](../org/xml/sax/HandlerBase.md) | Default base class for handlers. | | [TransformerHandler](../javax/xml/transform/sax/TransformerHandler.md) | A TransformerHandler listens for SAX ContentHandler parse events and transforms them to a Result. | | [XMLFilterImpl](../org/xml/sax/helpers/XMLFilterImpl.md) | Base class for deriving an XML filter. | |
+| Known Direct Subclasses [DefaultHandler](../org.xml.sax.helpers/DefaultHandler.md), [HandlerBase](HandlerBase.md), [TransformerHandler](../javax.xml.transform.sax/TransformerHandler.md), [XMLFilterImpl](../org.xml.sax.helpers/XMLFilterImpl.md) |-----------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------| | [DefaultHandler](../org.xml.sax.helpers/DefaultHandler.md) | Default base class for SAX2 event handlers. | | [HandlerBase](HandlerBase.md) | Default base class for handlers. | | [TransformerHandler](../javax.xml.transform.sax/TransformerHandler.md) | A TransformerHandler listens for SAX ContentHandler parse events and transforms them to a Result. | | [XMLFilterImpl](../org.xml.sax.helpers/XMLFilterImpl.md) | Base class for deriving an XML filter. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [DefaultHandler2](../org/xml/sax/ext/DefaultHandler2.md) |---------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [DefaultHandler2](../org/xml/sax/ext/DefaultHandler2.md) | This class extends the SAX2 base handler class to support the SAX2 [LexicalHandler](../org/xml/sax/ext/LexicalHandler.md), [DeclHandler](../org/xml/sax/ext/DeclHandler.md), and [EntityResolver2](../org/xml/sax/ext/EntityResolver2.md) extensions. | |
+| Known Indirect Subclasses [DefaultHandler2](../org.xml.sax.ext/DefaultHandler2.md) |---------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [DefaultHandler2](../org.xml.sax.ext/DefaultHandler2.md) | This class extends the SAX2 base handler class to support the SAX2 [LexicalHandler](../org.xml.sax.ext/LexicalHandler.md), [DeclHandler](../org.xml.sax.ext/DeclHandler.md), and [EntityResolver2](../org.xml.sax.ext/EntityResolver2.md) extensions. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 Receive notification of basic DTD-related events.*This module, both source code and documentation, is in the Public Domain, and comes with**NO WARRANTY**.* See<http://www.saxproject.org>for further information.
@@ -22,7 +22,7 @@ If a SAX application needs information about notations and unparsed entities, th
 
 Note that this interface includes only those DTD events that the XML recommendation*requires*processors to report: notation and unparsed entity declarations.
 
-The SAX parser may report these events in any order, regardless of the order in which the notations and unparsed entities were declared; however, all DTD events must be reported after the document handler's startDocument event, and before the first startElement event. (If the [LexicalHandler](../org/xml/sax/ext/LexicalHandler.md) is used, these events must also be reported before the endDTD event.)
+The SAX parser may report these events in any order, regardless of the order in which the notations and unparsed entities were declared; however, all DTD events must be reported after the document handler's startDocument event, and before the first startElement event. (If the [LexicalHandler](../org.xml.sax.ext/LexicalHandler.md) is used, these events must also be reported before the endDTD event.)
 
 It is up to the application to store the information for future use (perhaps in a hash table or object tree). If the application encounters attributes of type "NOTATION", "ENTITY", or "ENTITIES", it can use the information that it obtained through this interface to find the entity and/or notation corresponding with the attribute value.
 
@@ -30,8 +30,8 @@ It is up to the application to store the information for future use (perhaps in 
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [notationDecl](../org/xml/sax/DTDHandler.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `publicId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Receive notification of a notation declaration event. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unparsedEntityDecl](../org/xml/sax/DTDHandler.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `publicId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `notationName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Receive notification of an unparsed entity declaration event. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [notationDecl](DTDHandler.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `publicId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Receive notification of a notation declaration event. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unparsedEntityDecl](DTDHandler.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `publicId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `notationName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Receive notification of an unparsed entity declaration event. |
 
 ## Public methods
 
@@ -68,8 +68,8 @@ There is no guarantee that the notation declaration will be reported before any 
 
 **See Also**
 
-- [#unparsedEntityDecl](../org/xml/sax/DTDHandler.md))
-- [org.xml.sax.Attributes](../org/xml/sax/Attributes.md) 
+- [#unparsedEntityDecl](DTDHandler.md))
+- [org.xml.sax.Attributes](Attributes.md) 
 
 ### unparsedEntityDecl
 
@@ -86,7 +86,7 @@ abstract fun unparsedEntityDecl(
 
 Receive notification of an unparsed entity declaration event.
 
-Note that the notation name corresponds to a notation reported by the [notationDecl](../org/xml/sax/DTDHandler.md))event. It is up to the application to record the entity for later reference, if necessary; unparsed entities may appear as attribute values.
+Note that the notation name corresponds to a notation reported by the [notationDecl](DTDHandler.md))event. It is up to the application to record the entity for later reference, if necessary; unparsed entities may appear as attribute values.
 
 If the system identifier is a URL, the parser must resolve it fully before passing it to the application.
 
@@ -104,5 +104,5 @@ If the system identifier is a URL, the parser must resolve it fully before passi
 
 **See Also**
 
-- [#notationDecl](../org/xml/sax/DTDHandler.md))
-- [org.xml.sax.Attributes](../org/xml/sax/Attributes.md)
+- [#notationDecl](DTDHandler.md))
+- [org.xml.sax.Attributes](Attributes.md)

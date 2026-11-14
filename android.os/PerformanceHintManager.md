@@ -4,7 +4,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # PerformanceHintManager
 
-Kotlin| [Java](../android/os/PerformanceHintManager.md) 
+Kotlin| [Java](PerformanceHintManager.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class PerformanceHintManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.os.PerformanceHintManager](../android/os/PerformanceHintManager.md) |
+| ↳ | [android.os.PerformanceHintManager](PerformanceHintManager.md) |
 
 The PerformanceHintManager allows apps to send performance hint to system.
 
@@ -25,8 +25,8 @@ The PerformanceHintManager allows apps to send performance hint to system.
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [PerformanceHintManager.Session](../android/os/PerformanceHintManager.Session.md)? | [createHintSession](../android/os/PerformanceHintManager.md))`(`tids:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)`, `initialTargetWorkDurationNanos:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Creates a [Session](../android/os/PerformanceHintManager.Session.md) for the given set of threads and sets their initial target work duration. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getPreferredUpdateRateNanos](../android/os/PerformanceHintManager.md))`()` Get preferred update rate information for this device. |
+| [PerformanceHintManager.Session](../android/os/PerformanceHintManager.Session.md)? | [createHintSession](PerformanceHintManager.md))`(`tids:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)`, `initialTargetWorkDurationNanos:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Creates a [Session](../android/os/PerformanceHintManager.Session.md) for the given set of threads and sets their initial target work duration. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getPreferredUpdateRateNanos](PerformanceHintManager.md))`()` Get preferred update rate information for this device. |
 
 ## Public methods
 

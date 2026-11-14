@@ -4,7 +4,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # VcnGatewayConnectionConfig
 
-Kotlin| [Java](../android/net/vcn/VcnGatewayConnectionConfig.md) 
+Kotlin| [Java](VcnGatewayConnectionConfig.md) 
 | --- | --- |
 
 ```
@@ -13,55 +13,55 @@ class VcnGatewayConnectionConfig
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.vcn.VcnGatewayConnectionConfig](../android/net/vcn/VcnGatewayConnectionConfig.md) |
+| ↳ | [android.net.vcn.VcnGatewayConnectionConfig](VcnGatewayConnectionConfig.md) |
 
 This class represents a configuration for a connection to a Virtual Carrier Network gateway.
 
-Each VcnGatewayConnectionConfig represents a single logical connection to a carrier gateway, and may provide one or more telephony services (as represented by network capabilities). Each gateway is expected to provide mobility for a given session as the device roams across [Network](../android/net/Network.md) s.
+Each VcnGatewayConnectionConfig represents a single logical connection to a carrier gateway, and may provide one or more telephony services (as represented by network capabilities). Each gateway is expected to provide mobility for a given session as the device roams across [Network](../android.net/Network.md) s.
 
-A VCN connection based on this configuration will be brought up dynamically based on device settings, and filed NetworkRequests. Underlying Networks must provide INTERNET connectivity, and must be part of the subscription group under which this configuration is registered (see [android.net.vcn.VcnManager#setVcnConfig](../android/net/vcn/VcnManager.md))).
+A VCN connection based on this configuration will be brought up dynamically based on device settings, and filed NetworkRequests. Underlying Networks must provide INTERNET connectivity, and must be part of the subscription group under which this configuration is registered (see [android.net.vcn.VcnManager#setVcnConfig](VcnManager.md))).
 
 As an abstraction of a cellular network, services that can be provided by a VCN network are limited to services provided by cellular networks:
 
-- [NetworkCapabilities.NET_CAPABILITY_MMS](../android/net/NetworkCapabilities.md)
-- [NetworkCapabilities.NET_CAPABILITY_SUPL](../android/net/NetworkCapabilities.md)
-- [NetworkCapabilities.NET_CAPABILITY_DUN](../android/net/NetworkCapabilities.md)
-- [NetworkCapabilities.NET_CAPABILITY_FOTA](../android/net/NetworkCapabilities.md)
-- [NetworkCapabilities.NET_CAPABILITY_IMS](../android/net/NetworkCapabilities.md)
-- [NetworkCapabilities.NET_CAPABILITY_CBS](../android/net/NetworkCapabilities.md)
-- [NetworkCapabilities.NET_CAPABILITY_IA](../android/net/NetworkCapabilities.md)
-- [NetworkCapabilities.NET_CAPABILITY_RCS](../android/net/NetworkCapabilities.md)
-- [NetworkCapabilities.NET_CAPABILITY_XCAP](../android/net/NetworkCapabilities.md)
-- [NetworkCapabilities.NET_CAPABILITY_EIMS](../android/net/NetworkCapabilities.md)
-- [NetworkCapabilities.NET_CAPABILITY_INTERNET](../android/net/NetworkCapabilities.md)
-- [NetworkCapabilities.NET_CAPABILITY_MCX](../android/net/NetworkCapabilities.md)
+- [NetworkCapabilities.NET_CAPABILITY_MMS](../android.net/NetworkCapabilities.md)
+- [NetworkCapabilities.NET_CAPABILITY_SUPL](../android.net/NetworkCapabilities.md)
+- [NetworkCapabilities.NET_CAPABILITY_DUN](../android.net/NetworkCapabilities.md)
+- [NetworkCapabilities.NET_CAPABILITY_FOTA](../android.net/NetworkCapabilities.md)
+- [NetworkCapabilities.NET_CAPABILITY_IMS](../android.net/NetworkCapabilities.md)
+- [NetworkCapabilities.NET_CAPABILITY_CBS](../android.net/NetworkCapabilities.md)
+- [NetworkCapabilities.NET_CAPABILITY_IA](../android.net/NetworkCapabilities.md)
+- [NetworkCapabilities.NET_CAPABILITY_RCS](../android.net/NetworkCapabilities.md)
+- [NetworkCapabilities.NET_CAPABILITY_XCAP](../android.net/NetworkCapabilities.md)
+- [NetworkCapabilities.NET_CAPABILITY_EIMS](../android.net/NetworkCapabilities.md)
+- [NetworkCapabilities.NET_CAPABILITY_INTERNET](../android.net/NetworkCapabilities.md)
+- [NetworkCapabilities.NET_CAPABILITY_MCX](../android.net/NetworkCapabilities.md)
 
 ## Summary
 
 | Nested classes ||
 |---|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](../android/net/vcn/VcnGatewayConnectionConfig.Builder.md) This class is used to incrementally build [VcnGatewayConnectionConfig](../android/net/vcn/VcnGatewayConnectionConfig.md) objects. |
+| | [Builder](../android/net/vcn/VcnGatewayConnectionConfig.Builder.md) This class is used to incrementally build [VcnGatewayConnectionConfig](VcnGatewayConnectionConfig.md) objects. |
 
 | Constants ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIN_UDP_PORT_4500_NAT_TIMEOUT_UNSET](../android/net/vcn/VcnGatewayConnectionConfig.md) Minimum NAT timeout not set. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VCN_GATEWAY_OPTION_ENABLE_DATA_STALL_RECOVERY_WITH_MOBILITY](../android/net/vcn/VcnGatewayConnectionConfig.md) Perform mobility update to attempt recovery from suspected data stalls. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIN_UDP_PORT_4500_NAT_TIMEOUT_UNSET](VcnGatewayConnectionConfig.md) Minimum NAT timeout not set. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VCN_GATEWAY_OPTION_ENABLE_DATA_STALL_RECOVERY_WITH_MOBILITY](VcnGatewayConnectionConfig.md) Perform mobility update to attempt recovery from suspected data stalls. |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/net/vcn/VcnGatewayConnectionConfig.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | [getExposedCapabilities](../android/net/vcn/VcnGatewayConnectionConfig.md))`()` Returns all exposed capabilities. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getGatewayConnectionName](../android/net/vcn/VcnGatewayConnectionConfig.md))`()` Returns the configured Gateway Connection name. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](VcnGatewayConnectionConfig.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | [getExposedCapabilities](VcnGatewayConnectionConfig.md))`()` Returns all exposed capabilities. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getGatewayConnectionName](VcnGatewayConnectionConfig.md))`()` Returns the configured Gateway Connection name. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxMtu](../android/net/vcn/VcnGatewayConnectionConfig.md))`()` Retrieves the maximum MTU allowed for this Gateway Connection. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMinUdpPort4500NatTimeoutSeconds](../android/net/vcn/VcnGatewayConnectionConfig.md))`()` Retrieves the maximum supported IKEv2/IPsec NATT keepalive timeout. |
-| [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html) | [getRetryIntervalsMillis](../android/net/vcn/VcnGatewayConnectionConfig.md))`()` Retrieves the configured retry intervals. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxMtu](VcnGatewayConnectionConfig.md))`()` Retrieves the maximum MTU allowed for this Gateway Connection. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMinUdpPort4500NatTimeoutSeconds](VcnGatewayConnectionConfig.md))`()` Retrieves the maximum supported IKEv2/IPsec NATT keepalive timeout. |
+| [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html) | [getRetryIntervalsMillis](VcnGatewayConnectionConfig.md))`()` Retrieves the configured retry intervals. |
 | --- | --- |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [VcnUnderlyingNetworkTemplate](../android/net/vcn/VcnUnderlyingNetworkTemplate.md)!\> | [getVcnUnderlyingNetworkPriorities](../android/net/vcn/VcnGatewayConnectionConfig.md))`()` Retrieve the VcnUnderlyingNetworkTemplate list, or a default list if it is not configured. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasGatewayOption](../android/net/vcn/VcnGatewayConnectionConfig.md))`(`option:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Checks if the given VCN gateway option is enabled. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/net/vcn/VcnGatewayConnectionConfig.md))`()` <br /> |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [VcnUnderlyingNetworkTemplate](VcnUnderlyingNetworkTemplate.md)!\> | [getVcnUnderlyingNetworkPriorities](VcnGatewayConnectionConfig.md))`()` Retrieve the VcnUnderlyingNetworkTemplate list, or a default list if it is not configured. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasGatewayOption](VcnGatewayConnectionConfig.md))`(`option:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Checks if the given VCN gateway option is enabled. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](VcnGatewayConnectionConfig.md))`()` <br /> |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSafeModeEnabled](../android/net/vcn/VcnGatewayConnectionConfig.md))`()` Check whether safe mode is enabled |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSafeModeEnabled](VcnGatewayConnectionConfig.md))`()` Check whether safe mode is enabled |
 
 ## Constants
 
@@ -155,7 +155,7 @@ fun getGatewayConnectionName(): String
 
 Returns the configured Gateway Connection name.
 
-This name is used by the configuring apps to distinguish between VcnGatewayConnectionConfigs configured on a single [VcnConfig](../android/net/vcn/VcnConfig.md). This will be used as the identifier in VcnStatusCallback invocations.
+This name is used by the configuring apps to distinguish between VcnGatewayConnectionConfigs configured on a single [VcnConfig](VcnConfig.md). This will be used as the identifier in VcnStatusCallback invocations.
 
 | Return ||
 |----------------------------------------------------------------------------------|-----------------------------|
@@ -226,7 +226,7 @@ Retrieve the VcnUnderlyingNetworkTemplate list, or a default list if it is not c
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [VcnUnderlyingNetworkTemplate](../android/net/vcn/VcnUnderlyingNetworkTemplate.md)!> | This value cannot be`null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [VcnUnderlyingNetworkTemplate](VcnUnderlyingNetworkTemplate.md)!> | This value cannot be`null`. |
 
 **See Also**
 
@@ -244,7 +244,7 @@ Checks if the given VCN gateway option is enabled.
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `option` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the option to check. Value is [android.net.vcn.VcnGatewayConnectionConfig#VCN_GATEWAY_OPTION_ENABLE_DATA_STALL_RECOVERY_WITH_MOBILITY](../android/net/vcn/VcnGatewayConnectionConfig.md) |
+| `option` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the option to check. Value is [android.net.vcn.VcnGatewayConnectionConfig#VCN_GATEWAY_OPTION_ENABLE_DATA_STALL_RECOVERY_WITH_MOBILITY](VcnGatewayConnectionConfig.md) |
 
 | Exceptions ||
 |--------------------------------------|------------------------------------|

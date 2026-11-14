@@ -10,10 +10,10 @@ open class VolatileCallSite : CallSite
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.lang.invoke.CallSite](../java/lang/invoke/CallSite.md) ||
-| | ↳ | [java.lang.invoke.VolatileCallSite](../java/lang/invoke/VolatileCallSite.md) |
+| ↳ | [java.lang.invoke.CallSite](CallSite.md) ||
+| | ↳ | [java.lang.invoke.VolatileCallSite](VolatileCallSite.md) |
 
-A`VolatileCallSite`is a [CallSite](../java/lang/invoke/CallSite.md) whose target acts like a volatile variable. An`invokedynamic`instruction linked to a`VolatileCallSite`sees updates to its call site target immediately, even if the update occurs in another thread. There may be a performance penalty for such tight coupling between threads.
+A`VolatileCallSite`is a [CallSite](CallSite.md) whose target acts like a volatile variable. An`invokedynamic`instruction linked to a`VolatileCallSite`sees updates to its call site target immediately, even if the update occurs in another thread. There may be a performance penalty for such tight coupling between threads.
 
 In other respects, a`VolatileCallSite`is interchangeable with`MutableCallSite`.
 
@@ -21,19 +21,19 @@ In other respects, a`VolatileCallSite`is interchangeable with`MutableCallSite`.
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [VolatileCallSite](../java/lang/invoke/VolatileCallSite.md))`(`target:` ` [MethodHandle](../java/lang/invoke/MethodHandle.md)!`)` Creates a call site with a volatile binding to its target. |
-| [VolatileCallSite](../java/lang/invoke/VolatileCallSite.md))`(`type:` ` [MethodType](../java/lang/invoke/MethodType.md)!`)` Creates a call site with a volatile binding to its target. |
+| [VolatileCallSite](VolatileCallSite.md))`(`target:` ` [MethodHandle](MethodHandle.md)!`)` Creates a call site with a volatile binding to its target. |
+| [VolatileCallSite](VolatileCallSite.md))`(`type:` ` [MethodType](MethodType.md)!`)` Creates a call site with a volatile binding to its target. |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [MethodHandle](../java/lang/invoke/MethodHandle.md)! | [dynamicInvoker](../java/lang/invoke/VolatileCallSite.md))`()` Produces a method handle equivalent to an invokedynamic instruction which has been linked to this call site. |
-| [MethodHandle](../java/lang/invoke/MethodHandle.md)! | [getTarget](../java/lang/invoke/VolatileCallSite.md))`()` Returns the target method of the call site, which behaves like a`volatile`field of the`VolatileCallSite`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTarget](../java/lang/invoke/VolatileCallSite.md))`(`newTarget:` ` [MethodHandle](../java/lang/invoke/MethodHandle.md)!`)` Updates the target method of this call site, as a volatile variable. |
+| [MethodHandle](MethodHandle.md)! | [dynamicInvoker](VolatileCallSite.md))`()` Produces a method handle equivalent to an invokedynamic instruction which has been linked to this call site. |
+| [MethodHandle](MethodHandle.md)! | [getTarget](VolatileCallSite.md))`()` Returns the target method of the call site, which behaves like a`volatile`field of the`VolatileCallSite`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTarget](VolatileCallSite.md))`(`newTarget:` ` [MethodHandle](MethodHandle.md)!`)` Updates the target method of this call site, as a volatile variable. |
 | --- | --- |
 
 | Inherited functions ||
 |---|---|
-| From class [CallSite](../java/lang/invoke/CallSite.md) |-------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [MethodType](../java/lang/invoke/MethodType.md)! | [type](../java/lang/invoke/CallSite.md))`()` <br /> Returns the type of this call site's target. Although targets may change, any call site's type is permanent, and can never change to an unequal type. The`setTarget`method enforces this invariant by refusing any new target that does not have the previous target's type. <br /> | ||
+| From class [CallSite](CallSite.md) |-------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [MethodType](MethodType.md)! | [type](CallSite.md))`()` <br /> Returns the type of this call site's target. Although targets may change, any call site's type is permanent, and can never change to an unequal type. The`setTarget`method enforces this invariant by refusing any new target that does not have the previous target's type. <br /> | ||
 
 ## Public constructors
 
@@ -49,7 +49,7 @@ Creates a call site with a volatile binding to its target. The target is set to 
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `target` | [MethodHandle](../java/lang/invoke/MethodHandle.md)!:the method handle that will be the initial target of the call site |
+| `target` | [MethodHandle](MethodHandle.md)!:the method handle that will be the initial target of the call site |
 
 | Exceptions ||
 |----------------------------------|--------------------------------|
@@ -67,7 +67,7 @@ Creates a call site with a volatile binding to its target. The initial target is
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| `type` | [MethodType](../java/lang/invoke/MethodType.md)!:the method type that this call site will have |
+| `type` | [MethodType](MethodType.md)!:the method type that this call site will have |
 
 | Exceptions ||
 |----------------------------------|------------------------------|
@@ -97,7 +97,7 @@ This method is equivalent to the following code:
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
-| [MethodHandle](../java/lang/invoke/MethodHandle.md)! | a method handle which always invokes this call site's current target |
+| [MethodHandle](MethodHandle.md)! | a method handle which always invokes this call site's current target |
 
 ### getTarget
 
@@ -115,11 +115,11 @@ In particular, the current thread is required to issue a fresh read of the targe
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
-| [MethodHandle](../java/lang/invoke/MethodHandle.md)! | the linkage state of this call site, a method handle which can change over time |
+| [MethodHandle](MethodHandle.md)! | the linkage state of this call site, a method handle which can change over time |
 
 **See Also**
 
-- [#setTarget](../java/lang/invoke/VolatileCallSite.md)) 
+- [#setTarget](VolatileCallSite.md)) 
 
 ### setTarget
 
@@ -135,7 +135,7 @@ The interactions with memory are the same as of a write to a volatile field. In 
 
 | Parameters ||
 |-------------|--------------------------------------------------------------------------------------------------------------|
-| `newTarget` | [MethodHandle](../java/lang/invoke/MethodHandle.md)!:the new target |
+| `newTarget` | [MethodHandle](MethodHandle.md)!:the new target |
 
 | Exceptions ||
 |---------------------------------------------|------------------------------------------------------------------------------------|
@@ -144,4 +144,4 @@ The interactions with memory are the same as of a write to a volatile field. In 
 
 **See Also**
 
-- [#getTarget](../java/lang/invoke/VolatileCallSite.md))
+- [#getTarget](VolatileCallSite.md))

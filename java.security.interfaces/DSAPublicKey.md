@@ -8,7 +8,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface DSAPublicKey : DSAKey, PublicKey
 ```
 
-| [java.security.interfaces.DSAPublicKey](../java/security/interfaces/DSAPublicKey.md) |
+| [java.security.interfaces.DSAPublicKey](DSAPublicKey.md) |
 
 The interface to a DSA public key. DSA (Digital Signature Algorithm) is defined in NIST's FIPS-186.
 
@@ -16,15 +16,15 @@ The interface to a DSA public key. DSA (Digital Signature Algorithm) is defined 
 
 | Constants ||
 |------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [serialVersionUID](../java/security/interfaces/DSAPublicKey.md) The class fingerprint that is set to indicate serialization compatibility with a previous version of the class. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [serialVersionUID](DSAPublicKey.md) The class fingerprint that is set to indicate serialization compatibility with a previous version of the class. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [BigInteger](../java/math/BigInteger.md)! | [getY](../java/security/interfaces/DSAPublicKey.md))`()` Returns the value of the public key,`y`. |
+| abstract [BigInteger](../java.math/BigInteger.md)! | [getY](DSAPublicKey.md))`()` Returns the value of the public key,`y`. |
 
 | Inherited functions ||
 |---|---|
-| From class [DSAKey](../java/security/interfaces/DSAKey.md) |-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [DSAParams](../java/security/interfaces/DSAParams.md)! | [getParams](../java/security/interfaces/DSAKey.md))`()` <br /> Returns the DSA-specific key parameters. These parameters are never secret. <br /> | ||
+| From class [DSAKey](DSAKey.md) |-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [DSAParams](DSAParams.md)! | [getParams](DSAKey.md))`()` <br /> Returns the DSA-specific key parameters. These parameters are never secret. <br /> | ||
 
 ## Constants
 
@@ -57,4 +57,4 @@ Returns the value of the public key,`y`.
 
 | Return ||
 |------------------------------------------------------------------------------------------|----------------------------------|
-| [BigInteger](../java/math/BigInteger.md)! | the value of the public key,`y`. |
+| [BigInteger](../java.math/BigInteger.md)! | the value of the public key,`y`. |

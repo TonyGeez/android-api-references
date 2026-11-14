@@ -10,9 +10,9 @@ open class Deflater
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.util.zip.Deflater](../java/util/zip/Deflater.md) |
+| ↳ | [java.util.zip.Deflater](Deflater.md) |
 
-This class provides support for general purpose compression using the popular ZLIB compression library. The ZLIB compression library was initially developed as part of the PNG graphics standard and is not protected by patents. It is fully described in the specifications at the [java.util.zip package description](../java/util/zip/_package.md).
+This class provides support for general purpose compression using the popular ZLIB compression library. The ZLIB compression library was initially developed as part of the PNG graphics standard and is not protected by patents. It is fully described in the specifications at the [java.util.zip package description](_package.md).
 
 This class deflates sequences of bytes into ZLIB compressed data format. The input byte sequence is provided in either byte array or byte buffer, via one of the `setInput()` methods. The output byte sequence is written to the output byte array or byte buffer passed to the `deflate()` methods.
 
@@ -53,59 +53,59 @@ try {
 
 | Constants ||
 |-----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BEST_COMPRESSION](../java/util/zip/Deflater.md) Compression level for best compression. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BEST_SPEED](../java/util/zip/Deflater.md) Compression level for fastest compression. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEFAULT_COMPRESSION](../java/util/zip/Deflater.md) Default compression level. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BEST_COMPRESSION](Deflater.md) Compression level for best compression. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BEST_SPEED](Deflater.md) Compression level for fastest compression. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEFAULT_COMPRESSION](Deflater.md) Default compression level. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEFAULT_STRATEGY](../java/util/zip/Deflater.md) Default compression strategy. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEFLATED](../java/util/zip/Deflater.md) Compression method for the deflate algorithm (the only one currently supported). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FILTERED](../java/util/zip/Deflater.md) Compression strategy best used for data consisting mostly of small values with a somewhat random distribution. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEFAULT_STRATEGY](Deflater.md) Default compression strategy. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEFLATED](Deflater.md) Compression method for the deflate algorithm (the only one currently supported). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FILTERED](Deflater.md) Compression strategy best used for data consisting mostly of small values with a somewhat random distribution. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FULL_FLUSH](../java/util/zip/Deflater.md) Compression flush mode used to flush out all pending output and reset the deflater. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HUFFMAN_ONLY](../java/util/zip/Deflater.md) Compression strategy for Huffman coding only. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NO_COMPRESSION](../java/util/zip/Deflater.md) Compression level for no compression. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FULL_FLUSH](Deflater.md) Compression flush mode used to flush out all pending output and reset the deflater. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HUFFMAN_ONLY](Deflater.md) Compression strategy for Huffman coding only. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NO_COMPRESSION](Deflater.md) Compression level for no compression. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NO_FLUSH](../java/util/zip/Deflater.md) Compression flush mode used to achieve best compression result. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SYNC_FLUSH](../java/util/zip/Deflater.md) Compression flush mode used to flush out all pending output; may degrade compression for some compression algorithms. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NO_FLUSH](Deflater.md) Compression flush mode used to achieve best compression result. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SYNC_FLUSH](Deflater.md) Compression flush mode used to flush out all pending output; may degrade compression for some compression algorithms. |
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Deflater](../java/util/zip/Deflater.md))`()` Creates a new compressor with the default compression level. |
-| [Deflater](../java/util/zip/Deflater.md))`(`level:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a new compressor using the specified compression level. |
-| [Deflater](../java/util/zip/Deflater.md))`(`level:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `nowrap:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Creates a new compressor using the specified compression level. |
+| [Deflater](Deflater.md))`()` Creates a new compressor with the default compression level. |
+| [Deflater](Deflater.md))`(`level:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a new compressor using the specified compression level. |
+| [Deflater](Deflater.md))`(`level:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `nowrap:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Creates a new compressor using the specified compression level. |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [deflate](../java/util/zip/Deflater.md))`(`output:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Compresses the input data and fills specified buffer with compressed data. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [deflate](../java/util/zip/Deflater.md))`(`output:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Compresses the input data and fills specified buffer with compressed data. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [deflate](../java/util/zip/Deflater.md))`(`output:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `flush:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Compresses the input data and fills the specified buffer with compressed data. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [deflate](Deflater.md))`(`output:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Compresses the input data and fills specified buffer with compressed data. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [deflate](Deflater.md))`(`output:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Compresses the input data and fills specified buffer with compressed data. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [deflate](Deflater.md))`(`output:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `flush:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Compresses the input data and fills the specified buffer with compressed data. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [deflate](../java/util/zip/Deflater.md))`(`output:` ` [ByteBuffer](../java/nio/ByteBuffer.md)!`)` Compresses the input data and fills specified buffer with compressed data. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [deflate](../java/util/zip/Deflater.md))`(`output:` ` [ByteBuffer](../java/nio/ByteBuffer.md)!`, `flush:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Compresses the input data and fills the specified buffer with compressed data. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [end](../java/util/zip/Deflater.md))`()` Closes the compressor and discards any unprocessed input. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [deflate](Deflater.md))`(`output:` ` [ByteBuffer](../java.nio/ByteBuffer.md)!`)` Compresses the input data and fills specified buffer with compressed data. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [deflate](Deflater.md))`(`output:` ` [ByteBuffer](../java.nio/ByteBuffer.md)!`, `flush:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Compresses the input data and fills the specified buffer with compressed data. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [end](Deflater.md))`()` Closes the compressor and discards any unprocessed input. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finish](../java/util/zip/Deflater.md))`()` When called, indicates that compression should end with the current contents of the input buffer. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [finished](../java/util/zip/Deflater.md))`()` Returns true if the end of the compressed data output stream has been reached. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAdler](../java/util/zip/Deflater.md))`()` Returns the ADLER-32 value of the uncompressed data. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finish](Deflater.md))`()` When called, indicates that compression should end with the current contents of the input buffer. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [finished](Deflater.md))`()` Returns true if the end of the compressed data output stream has been reached. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAdler](Deflater.md))`()` Returns the ADLER-32 value of the uncompressed data. |
 | --- | --- |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getBytesRead](../java/util/zip/Deflater.md))`()` Returns the total number of uncompressed bytes input so far. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getBytesWritten](../java/util/zip/Deflater.md))`()` Returns the total number of compressed bytes output so far. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTotalIn](../java/util/zip/Deflater.md))`()` Returns the total number of uncompressed bytes input so far. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getBytesRead](Deflater.md))`()` Returns the total number of uncompressed bytes input so far. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getBytesWritten](Deflater.md))`()` Returns the total number of compressed bytes output so far. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTotalIn](Deflater.md))`()` Returns the total number of uncompressed bytes input so far. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTotalOut](../java/util/zip/Deflater.md))`()` Returns the total number of compressed bytes output so far. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [needsInput](../java/util/zip/Deflater.md))`()` Returns true if no data remains in the input buffer. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](../java/util/zip/Deflater.md))`()` Resets deflater so that a new set of input data can be processed. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTotalOut](Deflater.md))`()` Returns the total number of compressed bytes output so far. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [needsInput](Deflater.md))`()` Returns true if no data remains in the input buffer. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](Deflater.md))`()` Resets deflater so that a new set of input data can be processed. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDictionary](../java/util/zip/Deflater.md))`(`dictionary:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Sets preset dictionary for compression. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDictionary](../java/util/zip/Deflater.md))`(`dictionary:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets preset dictionary for compression. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDictionary](../java/util/zip/Deflater.md))`(`dictionary:` ` [ByteBuffer](../java/nio/ByteBuffer.md)!`)` Sets preset dictionary for compression. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDictionary](Deflater.md))`(`dictionary:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Sets preset dictionary for compression. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDictionary](Deflater.md))`(`dictionary:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets preset dictionary for compression. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDictionary](Deflater.md))`(`dictionary:` ` [ByteBuffer](../java.nio/ByteBuffer.md)!`)` Sets preset dictionary for compression. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInput](../java/util/zip/Deflater.md))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Sets input data for compression. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInput](../java/util/zip/Deflater.md))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets input data for compression. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInput](../java/util/zip/Deflater.md))`(`input:` ` [ByteBuffer](../java/nio/ByteBuffer.md)!`)` Sets input data for compression. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInput](Deflater.md))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Sets input data for compression. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInput](Deflater.md))`(`input:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets input data for compression. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInput](Deflater.md))`(`input:` ` [ByteBuffer](../java.nio/ByteBuffer.md)!`)` Sets input data for compression. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLevel](../java/util/zip/Deflater.md))`(`level:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the compression level to the specified value. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStrategy](../java/util/zip/Deflater.md))`(`strategy:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the compression strategy to the specified value. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLevel](Deflater.md))`(`level:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the compression level to the specified value. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStrategy](Deflater.md))`(`strategy:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the compression strategy to the specified value. |
 
 ## Constants
 
@@ -306,9 +306,9 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun deflate(output: ByteArray!): Int
 ```
 
-Compresses the input data and fills specified buffer with compressed data. Returns actual number of bytes of compressed data. A return value of 0 indicates that [needsInput](../java/util/zip/Deflater.md)) should be called in order to determine if more input data is required.
+Compresses the input data and fills specified buffer with compressed data. Returns actual number of bytes of compressed data. A return value of 0 indicates that [needsInput](Deflater.md)) should be called in order to determine if more input data is required.
 
-This method uses [NO_FLUSH](../java/util/zip/Deflater.md) as its compression flush mode. An invocation of this method of the form `deflater.deflate(b)` yields the same result as the invocation of `deflater.deflate(b, 0, b.length, Deflater.NO_FLUSH)`.
+This method uses [NO_FLUSH](Deflater.md) as its compression flush mode. An invocation of this method of the form `deflater.deflate(b)` yields the same result as the invocation of `deflater.deflate(b, 0, b.length, Deflater.NO_FLUSH)`.
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------|
@@ -330,9 +330,9 @@ open fun deflate(
 ): Int
 ```
 
-Compresses the input data and fills specified buffer with compressed data. Returns actual number of bytes of compressed data. A return value of 0 indicates that [needsInput](../java/util/zip/Deflater.md)) should be called in order to determine if more input data is required.
+Compresses the input data and fills specified buffer with compressed data. Returns actual number of bytes of compressed data. A return value of 0 indicates that [needsInput](Deflater.md)) should be called in order to determine if more input data is required.
 
-This method uses [NO_FLUSH](../java/util/zip/Deflater.md) as its compression flush mode. An invocation of this method of the form `deflater.deflate(b, off, len)` yields the same result as the invocation of `deflater.deflate(b, off, len, Deflater.NO_FLUSH)`.
+This method uses [NO_FLUSH](Deflater.md) as its compression flush mode. An invocation of this method of the form `deflater.deflate(b, off, len)` yields the same result as the invocation of `deflater.deflate(b, off, len, Deflater.NO_FLUSH)`.
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------|
@@ -362,13 +362,13 @@ Compresses the input data and fills the specified buffer with compressed data. R
 
 Compression flush mode is one of the following three modes:
 
-- [NO_FLUSH](../java/util/zip/Deflater.md): allows the deflater to decide how much data to accumulate, before producing output, in order to achieve the best compression (should be used in normal use scenario). A return value of 0 in this flush mode indicates that [needsInput()](../java/util/zip/Deflater.md)) should be called in order to determine if more input data is required.
-- [SYNC_FLUSH](../java/util/zip/Deflater.md): all pending output in the deflater is flushed, to the specified output buffer, so that an inflater that works on compressed data can get all input data available so far (In particular the [needsInput()](../java/util/zip/Deflater.md)) returns `true` after this invocation if enough output space is provided). Flushing with [SYNC_FLUSH](../java/util/zip/Deflater.md) may degrade compression for some compression algorithms and so it should be used only when necessary.
-- [FULL_FLUSH](../java/util/zip/Deflater.md): all pending output is flushed out as with [SYNC_FLUSH](../java/util/zip/Deflater.md). The compression state is reset so that the inflater that works on the compressed output data can restart from this point if previous compressed data has been damaged or if random access is desired. Using [FULL_FLUSH](../java/util/zip/Deflater.md) too often can seriously degrade compression.
+- [NO_FLUSH](Deflater.md): allows the deflater to decide how much data to accumulate, before producing output, in order to achieve the best compression (should be used in normal use scenario). A return value of 0 in this flush mode indicates that [needsInput()](Deflater.md)) should be called in order to determine if more input data is required.
+- [SYNC_FLUSH](Deflater.md): all pending output in the deflater is flushed, to the specified output buffer, so that an inflater that works on compressed data can get all input data available so far (In particular the [needsInput()](Deflater.md)) returns `true` after this invocation if enough output space is provided). Flushing with [SYNC_FLUSH](Deflater.md) may degrade compression for some compression algorithms and so it should be used only when necessary.
+- [FULL_FLUSH](Deflater.md): all pending output is flushed out as with [SYNC_FLUSH](Deflater.md). The compression state is reset so that the inflater that works on the compressed output data can restart from this point if previous compressed data has been damaged or if random access is desired. Using [FULL_FLUSH](Deflater.md) too often can seriously degrade compression.
 
-In the case of [FULL_FLUSH](../java/util/zip/Deflater.md) or [SYNC_FLUSH](../java/util/zip/Deflater.md), if the return value is `len`, the space available in output buffer `b`, this method should be invoked again with the same `flush` parameter and more output space. Make sure that `len` is greater than 6 to avoid flush marker (5 bytes) being repeatedly output to the output buffer every time this method is invoked.
+In the case of [FULL_FLUSH](Deflater.md) or [SYNC_FLUSH](Deflater.md), if the return value is `len`, the space available in output buffer `b`, this method should be invoked again with the same `flush` parameter and more output space. Make sure that `len` is greater than 6 to avoid flush marker (5 bytes) being repeatedly output to the output buffer every time this method is invoked.
 
-If the [setInput(java.nio.ByteBuffer)](../java/util/zip/Deflater.md)) method was called to provide a buffer for input, the input buffer's position will be advanced by the number of bytes consumed by this operation.
+If the [setInput(java.nio.ByteBuffer)](Deflater.md)) method was called to provide a buffer for input, the input buffer's position will be advanced by the number of bytes consumed by this operation.
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------|
@@ -394,13 +394,13 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 open fun deflate(output: ByteBuffer!): Int
 ```
 
-Compresses the input data and fills specified buffer with compressed data. Returns actual number of bytes of compressed data. A return value of 0 indicates that [needsInput](../java/util/zip/Deflater.md)) should be called in order to determine if more input data is required.
+Compresses the input data and fills specified buffer with compressed data. Returns actual number of bytes of compressed data. A return value of 0 indicates that [needsInput](Deflater.md)) should be called in order to determine if more input data is required.
 
-This method uses [NO_FLUSH](../java/util/zip/Deflater.md) as its compression flush mode. An invocation of this method of the form `deflater.deflate(output)` yields the same result as the invocation of `deflater.deflate(output, Deflater.NO_FLUSH)`.
+This method uses [NO_FLUSH](Deflater.md) as its compression flush mode. An invocation of this method of the form `deflater.deflate(output)` yields the same result as the invocation of `deflater.deflate(output, Deflater.NO_FLUSH)`.
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------|
-| `output` | [ByteBuffer](../java/nio/ByteBuffer.md)!: the buffer for the compressed data |
+| `output` | [ByteBuffer](../java.nio/ByteBuffer.md)!: the buffer for the compressed data |
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------|
@@ -421,19 +421,19 @@ Compresses the input data and fills the specified buffer with compressed data. R
 
 Compression flush mode is one of the following three modes:
 
-- [NO_FLUSH](../java/util/zip/Deflater.md): allows the deflater to decide how much data to accumulate, before producing output, in order to achieve the best compression (should be used in normal use scenario). A return value of 0 in this flush mode indicates that [needsInput()](../java/util/zip/Deflater.md)) should be called in order to determine if more input data is required.
-- [SYNC_FLUSH](../java/util/zip/Deflater.md): all pending output in the deflater is flushed, to the specified output buffer, so that an inflater that works on compressed data can get all input data available so far (In particular the [needsInput()](../java/util/zip/Deflater.md)) returns `true` after this invocation if enough output space is provided). Flushing with [SYNC_FLUSH](../java/util/zip/Deflater.md) may degrade compression for some compression algorithms and so it should be used only when necessary.
-- [FULL_FLUSH](../java/util/zip/Deflater.md): all pending output is flushed out as with [SYNC_FLUSH](../java/util/zip/Deflater.md). The compression state is reset so that the inflater that works on the compressed output data can restart from this point if previous compressed data has been damaged or if random access is desired. Using [FULL_FLUSH](../java/util/zip/Deflater.md) too often can seriously degrade compression.
+- [NO_FLUSH](Deflater.md): allows the deflater to decide how much data to accumulate, before producing output, in order to achieve the best compression (should be used in normal use scenario). A return value of 0 in this flush mode indicates that [needsInput()](Deflater.md)) should be called in order to determine if more input data is required.
+- [SYNC_FLUSH](Deflater.md): all pending output in the deflater is flushed, to the specified output buffer, so that an inflater that works on compressed data can get all input data available so far (In particular the [needsInput()](Deflater.md)) returns `true` after this invocation if enough output space is provided). Flushing with [SYNC_FLUSH](Deflater.md) may degrade compression for some compression algorithms and so it should be used only when necessary.
+- [FULL_FLUSH](Deflater.md): all pending output is flushed out as with [SYNC_FLUSH](Deflater.md). The compression state is reset so that the inflater that works on the compressed output data can restart from this point if previous compressed data has been damaged or if random access is desired. Using [FULL_FLUSH](Deflater.md) too often can seriously degrade compression.
 
-In the case of [FULL_FLUSH](../java/util/zip/Deflater.md) or [SYNC_FLUSH](../java/util/zip/Deflater.md), if the return value is equal to the [remaining space](../java/nio/Buffer.md)) of the buffer, this method should be invoked again with the same `flush` parameter and more output space. Make sure that the buffer has at least 6 bytes of remaining space to avoid the flush marker (5 bytes) being repeatedly output to the output buffer every time this method is invoked.
+In the case of [FULL_FLUSH](Deflater.md) or [SYNC_FLUSH](Deflater.md), if the return value is equal to the [remaining space](../java.nio/Buffer.md)) of the buffer, this method should be invoked again with the same `flush` parameter and more output space. Make sure that the buffer has at least 6 bytes of remaining space to avoid the flush marker (5 bytes) being repeatedly output to the output buffer every time this method is invoked.
 
 On success, the position of the given `output` byte buffer will be advanced by as many bytes as were produced by the operation, which is equal to the number returned by this method.
 
-If the [setInput(java.nio.ByteBuffer)](../java/util/zip/Deflater.md)) method was called to provide a buffer for input, the input buffer's position will be advanced by the number of bytes consumed by this operation.
+If the [setInput(java.nio.ByteBuffer)](Deflater.md)) method was called to provide a buffer for input, the input buffer's position will be advanced by the number of bytes consumed by this operation.
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------|
-| `output` | [ByteBuffer](../java/nio/ByteBuffer.md)!: the buffer for the compressed data |
+| `output` | [ByteBuffer](../java.nio/ByteBuffer.md)!: the buffer for the compressed data |
 | `flush` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the compression flush mode |
 
 | Return ||
@@ -530,7 +530,7 @@ open fun getTotalIn(): Int
 
 Returns the total number of uncompressed bytes input so far.
 
-Since the number of bytes may be greater than Integer.MAX_VALUE, the [getBytesRead()](../java/util/zip/Deflater.md)) method is now the preferred means of obtaining this information.
+Since the number of bytes may be greater than Integer.MAX_VALUE, the [getBytesRead()](Deflater.md)) method is now the preferred means of obtaining this information.
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------|
@@ -546,7 +546,7 @@ open fun getTotalOut(): Int
 
 Returns the total number of compressed bytes output so far.
 
-Since the number of bytes may be greater than Integer.MAX_VALUE, the [getBytesWritten()](../java/util/zip/Deflater.md)) method is now the preferred means of obtaining this information.
+Since the number of bytes may be greater than Integer.MAX_VALUE, the [getBytesWritten()](Deflater.md)) method is now the preferred means of obtaining this information.
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------|
@@ -592,7 +592,7 @@ Sets preset dictionary for compression. A preset dictionary is used when the his
 
 **See Also**
 
-- [java.util.zip.Inflater#getAdler](../java/util/zip/Inflater.md)) 
+- [java.util.zip.Inflater#getAdler](Inflater.md)) 
 
 ### setDictionary
 
@@ -617,7 +617,7 @@ Sets preset dictionary for compression. A preset dictionary is used when the his
 
 **See Also**
 
-- [java.util.zip.Inflater#getAdler](../java/util/zip/Inflater.md)) 
+- [java.util.zip.Inflater#getAdler](Inflater.md)) 
 
 ### setDictionary
 
@@ -633,11 +633,11 @@ The bytes in given byte buffer will be fully consumed by this method. On return,
 
 | Parameters ||
 |--------------|--------------------------------------------------------------------------------------------------------------------|
-| `dictionary` | [ByteBuffer](../java/nio/ByteBuffer.md)!: the dictionary data bytes |
+| `dictionary` | [ByteBuffer](../java.nio/ByteBuffer.md)!: the dictionary data bytes |
 
 **See Also**
 
-- [java.util.zip.Inflater#getAdler](../java/util/zip/Inflater.md)) 
+- [java.util.zip.Inflater#getAdler](Inflater.md)) 
 
 ### setInput
 
@@ -657,7 +657,7 @@ One of the `setInput()` methods should be called whenever `needsInput()` returns
 
 **See Also**
 
-- [java.util.zip.Deflater#needsInput](../java/util/zip/Deflater.md)) 
+- [java.util.zip.Deflater#needsInput](Deflater.md)) 
 
 ### setInput
 
@@ -684,7 +684,7 @@ One of the `setInput()` methods should be called whenever `needsInput()` returns
 
 **See Also**
 
-- [java.util.zip.Deflater#needsInput](../java/util/zip/Deflater.md)) 
+- [java.util.zip.Deflater#needsInput](Deflater.md)) 
 
 ### setInput
 
@@ -704,11 +704,11 @@ Modifying the input buffer's contents, position, or limit concurrently with an d
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------|
-| `input` | [ByteBuffer](../java/nio/ByteBuffer.md)!: the input data bytes |
+| `input` | [ByteBuffer](../java.nio/ByteBuffer.md)!: the input data bytes |
 
 **See Also**
 
-- [java.util.zip.Deflater#needsInput](../java/util/zip/Deflater.md)) 
+- [java.util.zip.Deflater#needsInput](Deflater.md)) 
 
 ### setLevel
 

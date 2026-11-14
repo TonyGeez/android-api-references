@@ -8,13 +8,13 @@ open class ExpandableListView : ListView
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||||
 | --- | --- | --- | --- | --- | --- | --- |
-| ↳ | [android.view.View](../android/view/View.md) ||||||
-| | ↳ | [android.view.ViewGroup](../android/view/ViewGroup.md) |||||
-| | | ↳ | [android.widget.AdapterView](../android/widget/AdapterView.md)\< [android.widget.ListAdapter](../android/widget/ListAdapter.md)\> ||||
+| ↳ | [android.view.View](../android.view/View.md) ||||||
+| | ↳ | [android.view.ViewGroup](../android.view/ViewGroup.md) |||||
+| | | ↳ | [android.widget.AdapterView](AdapterView.md)\< [android.widget.ListAdapter](ListAdapter.md)\> ||||
 | --- | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.widget.AbsListView](../android/widget/AbsListView.md) |||
-| | | | | ↳ | [android.widget.ListView](../android/widget/ListView.md) ||
-| | | | | | ↳ | [android.widget.ExpandableListView](../android/widget/ExpandableListView.md) |
+| | | | ↳ | [android.widget.AbsListView](AbsListView.md) |||
+| | | | | ↳ | [android.widget.ListView](ListView.md) ||
+| | | | | | ↳ | [android.widget.ExpandableListView](ExpandableListView.md) |
 | --- | --- | --- | --- | --- | --- | --- |
 
 A view that shows items in a vertically scrolling two-level list. This differs from the `https://developer.android.com/reference/kotlin/android/widget/ListView` by allowing two levels: groups which can individually be expanded to show its children. The items come from the `https://developer.android.com/reference/kotlin/android/widget/ExpandableListAdapter` associated with this view.
@@ -38,20 +38,20 @@ The context menu information set by an `https://developer.android.com/reference/
 
 | XML attributes ||
 |---|---|
-| [`android:childDivider`](../android/widget/ExpandableListView.md) | Drawable or color that is used as a divider for children. |
-| [`android:childIndicator`](../android/widget/ExpandableListView.md) | Indicator shown beside the child View. |
-| [`android:childIndicatorEnd`](../android/widget/ExpandableListView.md) | The end bound for a child's indicator. |
+| [`android:childDivider`](ExpandableListView.md) | Drawable or color that is used as a divider for children. |
+| [`android:childIndicator`](ExpandableListView.md) | Indicator shown beside the child View. |
+| [`android:childIndicatorEnd`](ExpandableListView.md) | The end bound for a child's indicator. |
 | --- | --- |
-| [`android:childIndicatorLeft`](../android/widget/ExpandableListView.md) | The left bound for a child's indicator. |
-| [`android:childIndicatorRight`](../android/widget/ExpandableListView.md) | The right bound for a child's indicator. |
-| [`android:childIndicatorStart`](../android/widget/ExpandableListView.md) | The start bound for a child's indicator. |
+| [`android:childIndicatorLeft`](ExpandableListView.md) | The left bound for a child's indicator. |
+| [`android:childIndicatorRight`](ExpandableListView.md) | The right bound for a child's indicator. |
+| [`android:childIndicatorStart`](ExpandableListView.md) | The start bound for a child's indicator. |
 | --- | --- |
-| [`android:groupIndicator`](../android/widget/ExpandableListView.md) | Indicator shown beside the group View. |
-| [`android:indicatorEnd`](../android/widget/ExpandableListView.md) | The end bound for an item's indicator. |
-| [`android:indicatorLeft`](../android/widget/ExpandableListView.md) | The left bound for an item's indicator. |
+| [`android:groupIndicator`](ExpandableListView.md) | Indicator shown beside the group View. |
+| [`android:indicatorEnd`](ExpandableListView.md) | The end bound for an item's indicator. |
+| [`android:indicatorLeft`](ExpandableListView.md) | The left bound for an item's indicator. |
 | --- | --- |
-| [`android:indicatorRight`](../android/widget/ExpandableListView.md) | The right bound for an item's indicator. |
-| [`android:indicatorStart`](../android/widget/ExpandableListView.md) | The start bound for an item's indicator. |
+| [`android:indicatorRight`](ExpandableListView.md) | The right bound for an item's indicator. |
+| [`android:indicatorStart`](ExpandableListView.md) | The start bound for an item's indicator. |
 
 Inherited XML attributes From class `https://developer.android.com/reference/kotlin/android/widget/AbsListView` `https://developer.android.com/reference/kotlin/android/widget/AbsListView#attr_AbsListView` Indicates that this list will always be drawn on top of solid, single-color opaque background. This allows the list to optimize drawing.
 
@@ -769,7 +769,7 @@ Hint indicating that this view can be autofilled with a credit card expiration d
 
 It should be used when the credit card expiration date is represented by just one view; if it is represented by more than one (for example, one view for the month and another view for the year), then each of these views should use the hint specific for the unit (`https://developer.android.com/reference/kotlin/android/view/View.html#AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DAY:kotlin.String`, `https://developer.android.com/reference/kotlin/android/view/View.html#AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_MONTH:kotlin.String`, or `https://developer.android.com/reference/kotlin/android/view/View.html#AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_YEAR:kotlin.String`).
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DATE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DATE}`).
 
 When annotating a view with this hint, it's recommended to use a date autofill value to avoid ambiguity when the autofill service provides a value for it. To understand why a value can be ambiguous, consider "April of 2020", which could be represented as either of the following options:
 
@@ -794,7 +794,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card expiration day.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DAY}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DAY}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -804,7 +804,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card expiration month.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_MONTH}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_MONTH}`).
 
 When annotating a view with this hint, it's recommended to use a text autofill value whose value is the numerical representation of the month, starting on `1` to avoid ambiguity when the autofill service provides a value for it. To understand why a value can be ambiguous, consider "January", which could be represented as either of
 
@@ -824,7 +824,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card expiration year.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_YEAR}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_YEAR}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -834,7 +834,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card number.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_NUMBER}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_NUMBER}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -844,7 +844,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card security code.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_SECURITY_CODE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_SECURITY_CODE}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -854,7 +854,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with an email address.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_EMAIL_ADDRESS}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_EMAIL_ADDRESS}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -864,7 +864,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a user's real name.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_NAME}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_NAME}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -874,7 +874,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a password.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_PASSWORD}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_PASSWORD}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -884,7 +884,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a phone number.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_PHONE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_PHONE}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -894,7 +894,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a postal address.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_ADDRESS}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_ADDRESS}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -904,7 +904,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a postal code.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_CODE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_CODE}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -914,7 +914,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a username.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_USERNAME}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_USERNAME}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -1084,7 +1084,7 @@ Find views that render the specified text.
 
 This view wants keystrokes.
 
-Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android/view/View.md)
+Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android.view/View.md)
 
 <br />
 
@@ -1104,7 +1104,7 @@ View flag indicating whether `https://developer.android.com/reference/kotlin/and
 
 This view determines focusability automatically. This is the default.
 
-Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android/view/View.md)
+Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android.view/View.md)
 
 <br />
 
@@ -1146,7 +1146,7 @@ Use with `https://developer.android.com/reference/kotlin/android/view/View.html#
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/view/View.html#GONE:kotlin.Int`
 
-This view is invisible, and it doesn't take any space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android/view/View.md)
+This view is invisible, and it doesn't take any space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android.view/View.md)
 
 <br />
 
@@ -1242,7 +1242,7 @@ The view is important for content capture, but its children (if any) will not be
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/view/View.html#INVISIBLE:kotlin.Int`
 
-This view is invisible, but it still takes up space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android/view/View.md)
+This view is invisible, but it still takes up space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android.view/View.md)
 
 <br />
 
@@ -1336,7 +1336,7 @@ Bit of `https://developer.android.com/reference/kotlin/android/view/View.html#ge
 
 This view does not want keystrokes.
 
-Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android/view/View.md)
+Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android.view/View.md)
 
 <br />
 
@@ -1793,7 +1793,7 @@ The logging tag used by this class with android.util.Log.
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/view/View.html#VISIBLE:kotlin.Int`
 
-This view is visible. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android/view/View.md)
+This view is visible. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android.view/View.md)
 
 <br />
 
@@ -1937,8 +1937,8 @@ The item view type returned by `https://developer.android.com/reference/kotlin/a
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#expandGroup(kotlin.Int,%20kotlin.Boolean)(groupPos: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, animate: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Expand a group in the grouped list view |
 | --- | --- |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#getAccessibilityClassName()()` A TYPE_VIEW_SCROLLED event should be sent whenever a scroll happens, even if the mFirstPosition and the child count have not changed. |
-| open [ListAdapter](../android/widget/ListAdapter.md)! | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#getAdapter()()` This method should not be used, use `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#getExpandableListAdapter()`. |
-| open [ExpandableListAdapter](../android/widget/ExpandableListAdapter.md)! | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#getExpandableListAdapter()()` Gets the adapter that provides data to this view. |
+| open [ListAdapter](ListAdapter.md)! | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#getAdapter()()` This method should not be used, use `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#getExpandableListAdapter()`. |
+| open [ExpandableListAdapter](ExpandableListAdapter.md)! | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#getExpandableListAdapter()()` Gets the adapter that provides data to this view. |
 | --- | --- |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#getExpandableListPosition(kotlin.Int)(flatListPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Converts a flat list position (the raw position of an item (child or group) in the list) to a group and/or child position (represented in a packed position). |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#getFlatListPosition(kotlin.Long)(packedPosition: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Converts a group and/or child position to a flat list position. |
@@ -1957,7 +1957,7 @@ The item view type returned by `https://developer.android.com/reference/kotlin/a
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#onRestoreInstanceState(android.os.Parcelable)(state: https://developer.android.com/reference/kotlin/android/os/Parcelable.html#!)` Hook allowing a view to re-apply a representation of its internal state that had previously been generated by `https://developer.android.com/reference/kotlin/android/view/View.html#onSaveInstanceState()`. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#onRtlPropertiesChanged(kotlin.Int)(layoutDirection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called when any RTL property (layout direction or text direction or text alignment) has been changed. |
-| open [Parcelable](../android/os/Parcelable.md)? | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#onSaveInstanceState()()` Hook allowing a view to generate a representation of its internal state that can later be used to create a new instance with that same state. |
+| open [Parcelable](../android.os/Parcelable.md)? | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#onSaveInstanceState()()` Hook allowing a view to generate a representation of its internal state that can later be used to create a new instance with that same state. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#performItemClick(android.view.View,%20kotlin.Int,%20kotlin.Long)(v: https://developer.android.com/reference/kotlin/android/view/View.html#!, position: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Call the OnItemClickListener, if it is defined. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/ExpandableListView#setAdapter(android.widget.ExpandableListAdapter)(adapter: https://developer.android.com/reference/kotlin/android/widget/ExpandableListAdapter!)` Sets the adapter that provides data to this view. |
@@ -7658,7 +7658,7 @@ Sets the amount that the view is scaled in Y around the pivot point, as a propor
 
 Sets whether this View should be a focusable element for screen readers and include non-focusable Views from its subtree when providing feedback.
 
-Note: this is similar to using [`android:focusable`, but does not impact input focus behavior.](../android/view/View.md)
+Note: this is similar to using [`android:focusable`, but does not impact input focus behavior.](../android.view/View.md)
 
 <br />
 
@@ -10312,9 +10312,9 @@ Initializes an `https://developer.android.com/reference/kotlin/android/view/acce
 
 | Parameters ||
 |---|---|
-| `view` | [View](../android/view/View.md)!: View representing the list item. |
+| `view` | [View](../android.view/View.md)!: View representing the list item. |
 | `position` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Position of the list item within the adapter. |
-| `info` | [AccessibilityNodeInfo](../android/view/accessibility/AccessibilityNodeInfo.md)!: Node info to populate. |
+| `info` | [AccessibilityNodeInfo](../android.view.accessibility/AccessibilityNodeInfo.md)!: Node info to populate. |
 | --- | --- |
 
 ### onRestoreInstanceState
@@ -10330,7 +10330,7 @@ If you override this method you *must* call through to the superclass implementa
 
 | Parameters ||
 |---|---|
-| `state` | [Parcelable](../android/os/Parcelable.md)!: The frozen state that had previously been returned by `https://developer.android.com/reference/kotlin/android/view/View.html#onSaveInstanceState()`. |
+| `state` | [Parcelable](../android.os/Parcelable.md)!: The frozen state that had previously been returned by `https://developer.android.com/reference/kotlin/android/view/View.html#onSaveInstanceState()`. |
 
 ### onRtlPropertiesChanged
 
@@ -10400,7 +10400,7 @@ Sets the adapter that provides data to this view.
 
 | Parameters ||
 |---|---|
-| `adapter` | [ExpandableListAdapter](../android/widget/ExpandableListAdapter.md)!: The adapter that provides data to this view. |
+| `adapter` | [ExpandableListAdapter](ExpandableListAdapter.md)!: The adapter that provides data to this view. |
 
 ### setAdapter
 
@@ -10416,7 +10416,7 @@ Sets the data behind this ListView. The adapter passed to this method may be wra
 
 | Parameters ||
 |---|---|
-| `adapter` | [ListAdapter](../android/widget/ListAdapter.md)!: The ListAdapter which is responsible for maintaining the data backing this list and for producing a view to represent an item in that data set. |
+| `adapter` | [ListAdapter](ListAdapter.md)!: The ListAdapter which is responsible for maintaining the data backing this list and for producing a view to represent an item in that data set. |
 
 ### setChildDivider
 
@@ -10430,7 +10430,7 @@ Sets the drawable that will be drawn adjacent to every child in the list. This w
 
 | Parameters ||
 |---|---|
-| `childDivider` | [Drawable](../android/graphics/drawable/Drawable.md)!: The drawable to use. |
+| `childDivider` | [Drawable](../android.graphics.drawable/Drawable.md)!: The drawable to use. |
 
 ### setChildIndicator
 
@@ -10444,7 +10444,7 @@ Sets the indicator to be drawn next to a child.
 
 | Parameters ||
 |---|---|
-| `childIndicator` | [Drawable](../android/graphics/drawable/Drawable.md)!: The drawable to be used as an indicator. If the child is the last child for a group, the state `https://developer.android.com/reference/kotlin/android/R.attr.html#state_last:kotlin.Int` will be set. |
+| `childIndicator` | [Drawable](../android.graphics.drawable/Drawable.md)!: The drawable to be used as an indicator. If the child is the last child for a group, the state `https://developer.android.com/reference/kotlin/android/R.attr.html#state_last:kotlin.Int` will be set. |
 
 ### setChildIndicatorBounds
 
@@ -10502,7 +10502,7 @@ Sets the indicator to be drawn next to a group.
 
 | Parameters ||
 |---|---|
-| `groupIndicator` | [Drawable](../android/graphics/drawable/Drawable.md)!: The drawable to be used as an indicator. If the group is empty, the state `https://developer.android.com/reference/kotlin/android/R.attr.html#state_empty:kotlin.Int` will be set. If the group is expanded, the state `https://developer.android.com/reference/kotlin/android/R.attr.html#state_expanded:kotlin.Int` will be set. |
+| `groupIndicator` | [Drawable](../android.graphics.drawable/Drawable.md)!: The drawable to be used as an indicator. If the group is empty, the state `https://developer.android.com/reference/kotlin/android/R.attr.html#state_empty:kotlin.Int` will be set. If the group is expanded, the state `https://developer.android.com/reference/kotlin/android/R.attr.html#state_expanded:kotlin.Int` will be set. |
 
 ### setIndicatorBounds
 
@@ -10651,4 +10651,4 @@ Called by draw to draw the child views. This may be overridden by derived classe
 
 | Parameters ||
 |---|---|
-| `canvas` | [Canvas](../android/graphics/Canvas.md): This value cannot be `null`. |
+| `canvas` | [Canvas](../android.graphics/Canvas.md): This value cannot be `null`. |

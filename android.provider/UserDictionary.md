@@ -4,7 +4,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 
 # UserDictionary
 
-Kotlin| [Java](../android/provider/UserDictionary.md) 
+Kotlin| [Java](UserDictionary.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class UserDictionary
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.provider.UserDictionary](../android/provider/UserDictionary.md) |
+| ↳ | [android.provider.UserDictionary](UserDictionary.md) |
 
 A provider of user defined words for input methods to use for predictive text input. Applications and input methods may add words into the dictionary. Words can have associated frequency information and locale information.
 
@@ -27,15 +27,15 @@ A provider of user defined words for input methods to use for predictive text in
 
 | Constants ||
 |----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [AUTHORITY](../android/provider/UserDictionary.md) Authority string for this provider. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [AUTHORITY](UserDictionary.md) Authority string for this provider. |
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------|---|
-| [UserDictionary](../android/provider/UserDictionary.md))`()` <br /> |
+| [UserDictionary](UserDictionary.md))`()` <br /> |
 
 | Properties ||
 |------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Uri](../android/net/Uri.md)! | [CONTENT_URI](../android/provider/UserDictionary.md) The content:// style URL for this provider |
+| static [Uri](../android.net/Uri.md)! | [CONTENT_URI](UserDictionary.md) The content:// style URL for this provider |
 
 ## Constants
 

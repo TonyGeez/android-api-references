@@ -2,7 +2,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # DatabaseUtils
 
-Kotlin | [Java](../android/database/DatabaseUtils.md)
+Kotlin | [Java](DatabaseUtils.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ open class DatabaseUtils
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.database.DatabaseUtils](../android/database/DatabaseUtils.md) |
+| ↳ | [android.database.DatabaseUtils](DatabaseUtils.md) |
 
 Static utility methods for dealing with databases and `https://developer.android.com/reference/kotlin/android/database/Cursor`s.
 
@@ -48,8 +48,8 @@ Static utility methods for dealing with databases and `https://developer.android
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/DatabaseUtils#appendValueToSql(java.lang.StringBuilder,%20kotlin.Any)(sql: https://developer.android.com/reference/kotlin/java/lang/StringBuilder.html#!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Appends an Object to an SQL string with the proper escaping, etc. |
 | --- | --- |
 | open static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/DatabaseUtils#bindObjectToProgram(android.database.sqlite.SQLiteProgram,%20kotlin.Int,%20kotlin.Any)(prog: https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteProgram!, index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Binds the given Object to the given SQLiteProgram using the proper typing. |
-| open static [ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md)! | `https://developer.android.com/reference/kotlin/android/database/DatabaseUtils#blobFileDescriptorForQuery(android.database.sqlite.SQLiteDatabase,%20kotlin.String,%20kotlin.Array)(db: https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase!, query: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, selectionArgs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!)` Utility method to run the query on the db and return the blob value in the first column of the first row. |
-| open static [ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md)! | `https://developer.android.com/reference/kotlin/android/database/DatabaseUtils#blobFileDescriptorForQuery(android.database.sqlite.SQLiteStatement,%20kotlin.Array)(prog: https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteStatement!, selectionArgs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!)` Utility method to run the pre-compiled query and return the blob value in the first column of the first row. |
+| open static [ParcelFileDescriptor](../android.os/ParcelFileDescriptor.md)! | `https://developer.android.com/reference/kotlin/android/database/DatabaseUtils#blobFileDescriptorForQuery(android.database.sqlite.SQLiteDatabase,%20kotlin.String,%20kotlin.Array)(db: https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase!, query: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, selectionArgs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!)` Utility method to run the query on the db and return the blob value in the first column of the first row. |
+| open static [ParcelFileDescriptor](../android.os/ParcelFileDescriptor.md)! | `https://developer.android.com/reference/kotlin/android/database/DatabaseUtils#blobFileDescriptorForQuery(android.database.sqlite.SQLiteStatement,%20kotlin.Array)(prog: https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteStatement!, selectionArgs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!)` Utility method to run the pre-compiled query and return the blob value in the first column of the first row. |
 | --- | --- |
 | open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/database/DatabaseUtils#concatenateWhere(kotlin.String,%20kotlin.String)(a: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, b: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Concatenates two SQL WHERE clauses, handling empty or null values. |
 | open static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/database/DatabaseUtils#createDbFromSqlStatements(android.content.Context,%20kotlin.String,%20kotlin.Int,%20kotlin.String)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, dbName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, dbVersion: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, sqlStatements: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Creates a db and populates it with the sql statements in sqlStatements. |
@@ -253,7 +253,7 @@ Appends an SQL string to the given StringBuilder, including the opening and clos
 
 | Parameters ||
 |---|---|
-| `sb` | [StringBuilder](../java/lang/StringBuilder.md)!: the StringBuilder that the SQL string will be appended to |
+| `sb` | [StringBuilder](../java.lang/StringBuilder.md)!: the StringBuilder that the SQL string will be appended to |
 | `sqlString` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the raw string to be appended, which may contain single quotes |
 
 ### appendSelectionArgs
@@ -298,7 +298,7 @@ Binds the given Object to the given SQLiteProgram using the proper typing. For e
 
 | Parameters ||
 |---|---|
-| `prog` | [SQLiteProgram](../android/database/sqlite/SQLiteProgram.md)!: the program to bind the object to |
+| `prog` | [SQLiteProgram](../android.database.sqlite/SQLiteProgram.md)!: the program to bind the object to |
 | `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the 1-based index to bind at |
 | `value` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!: the value to bind |
 | --- | --- |
@@ -368,7 +368,7 @@ Creates a db and populates it with the sql statements in sqlStatements.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md)!: the context to use to create the db |
+| `context` | [Context](../android.content/Context.md)!: the context to use to create the db |
 | `dbName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the name of the db to create |
 | `dbVersion` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the version to set on the db |
 | --- | --- |
@@ -391,9 +391,9 @@ Reads a Double out of a field in a Cursor and writes it to a Map.
 
 | Parameters ||
 |---|---|
-| `cursor` | [Cursor](../android/database/Cursor.md)!: The cursor to read from |
+| `cursor` | [Cursor](Cursor.md)!: The cursor to read from |
 | `field` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The REAL field to read |
-| `values` | [ContentValues](../android/content/ContentValues.md)!: The `https://developer.android.com/reference/kotlin/android/content/ContentValues.html#` to put the value into |
+| `values` | [ContentValues](../android.content/ContentValues.md)!: The `https://developer.android.com/reference/kotlin/android/content/ContentValues.html#` to put the value into |
 | --- | --- |
 | `key` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The key to store the value with in the map |
 
@@ -413,8 +413,8 @@ Reads a Double out of a column in a Cursor and writes it to a ContentValues. Add
 
 | Parameters ||
 |---|---|
-| `cursor` | [Cursor](../android/database/Cursor.md)!: The cursor to read from |
-| `values` | [ContentValues](../android/content/ContentValues.md)!: The `https://developer.android.com/reference/kotlin/android/content/ContentValues.html#` to put the value into |
+| `cursor` | [Cursor](Cursor.md)!: The cursor to read from |
+| `values` | [ContentValues](../android.content/ContentValues.md)!: The `https://developer.android.com/reference/kotlin/android/content/ContentValues.html#` to put the value into |
 | `column` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The column to read |
 | --- | --- |
 
@@ -434,9 +434,9 @@ Reads a Double out of a field in a Cursor and writes it to a Map.
 
 | Parameters ||
 |---|---|
-| `cursor` | [Cursor](../android/database/Cursor.md)!: The cursor to read from |
+| `cursor` | [Cursor](Cursor.md)!: The cursor to read from |
 | `field` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The REAL field to read |
-| `values` | [ContentValues](../android/content/ContentValues.md)!: The `https://developer.android.com/reference/kotlin/android/content/ContentValues.html#` to put the value into |
+| `values` | [ContentValues](../android.content/ContentValues.md)!: The `https://developer.android.com/reference/kotlin/android/content/ContentValues.html#` to put the value into |
 | --- | --- |
 
 ### cursorFloatToContentValuesIfPresent
@@ -455,8 +455,8 @@ Reads a Float out of a column in a Cursor and writes it to a ContentValues. Adds
 
 | Parameters ||
 |---|---|
-| `cursor` | [Cursor](../android/database/Cursor.md)!: The cursor to read from |
-| `values` | [ContentValues](../android/content/ContentValues.md)!: The `https://developer.android.com/reference/kotlin/android/content/ContentValues.html#` to put the value into |
+| `cursor` | [Cursor](Cursor.md)!: The cursor to read from |
+| `values` | [ContentValues](../android.content/ContentValues.md)!: The `https://developer.android.com/reference/kotlin/android/content/ContentValues.html#` to put the value into |
 | `column` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The column to read |
 | --- | --- |
 
@@ -476,9 +476,9 @@ Reads an Integer out of a field in a Cursor and writes it to a Map.
 
 | Parameters ||
 |---|---|
-| `cursor` | [Cursor](../android/database/Cursor.md)!: The cursor to read from |
+| `cursor` | [Cursor](Cursor.md)!: The cursor to read from |
 | `field` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The INTEGER field to read |
-| `values` | [ContentValues](../android/content/ContentValues.md)!: The `https://developer.android.com/reference/kotlin/android/content/ContentValues.html#` to put the value into, with the field as the key |
+| `values` | [ContentValues](../android.content/ContentValues.md)!: The `https://developer.android.com/reference/kotlin/android/content/ContentValues.html#` to put the value into, with the field as the key |
 | --- | --- |
 
 ### cursorIntToContentValues
@@ -498,9 +498,9 @@ Reads a Integer out of a field in a Cursor and writes it to a Map.
 
 | Parameters ||
 |---|---|
-| `cursor` | [Cursor](../android/database/Cursor.md)!: The cursor to read from |
+| `cursor` | [Cursor](Cursor.md)!: The cursor to read from |
 | `field` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The INTEGER field to read |
-| `values` | [ContentValues](../android/content/ContentValues.md)!: The `https://developer.android.com/reference/kotlin/android/content/ContentValues.html#` to put the value into, with the field as the key |
+| `values` | [ContentValues](../android.content/ContentValues.md)!: The `https://developer.android.com/reference/kotlin/android/content/ContentValues.html#` to put the value into, with the field as the key |
 | --- | --- |
 | `key` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The key to store the value with in the map |
 
@@ -520,8 +520,8 @@ Reads a Integer out of a column in a Cursor and writes it to a ContentValues. Ad
 
 | Parameters ||
 |---|---|
-| `cursor` | [Cursor](../android/database/Cursor.md)!: The cursor to read from |
-| `values` | [ContentValues](../android/content/ContentValues.md)!: The `https://developer.android.com/reference/kotlin/android/content/ContentValues.html#` to put the value into |
+| `cursor` | [Cursor](Cursor.md)!: The cursor to read from |
+| `values` | [ContentValues](../android.content/ContentValues.md)!: The `https://developer.android.com/reference/kotlin/android/content/ContentValues.html#` to put the value into |
 | `column` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The column to read |
 | --- | --- |
 
@@ -541,9 +541,9 @@ Reads a Long out of a field in a Cursor and writes it to a Map.
 
 | Parameters ||
 |---|---|
-| `cursor` | [Cursor](../android/database/Cursor.md)!: The cursor to read from |
+| `cursor` | [Cursor](Cursor.md)!: The cursor to read from |
 | `field` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The INTEGER field to read |
-| `values` | [ContentValues](../android/content/ContentValues.md)!: The `https://developer.android.com/reference/kotlin/android/content/ContentValues.html#` to put the value into, with the field as the key |
+| `values` | [ContentValues](../android.content/ContentValues.md)!: The `https://developer.android.com/reference/kotlin/android/content/ContentValues.html#` to put the value into, with the field as the key |
 | --- | --- |
 
 ### cursorLongToContentValues
@@ -563,9 +563,9 @@ Reads a Long out of a field in a Cursor and writes it to a Map.
 
 | Parameters ||
 |---|---|
-| `cursor` | [Cursor](../android/database/Cursor.md)!: The cursor to read from |
+| `cursor` | [Cursor](Cursor.md)!: The cursor to read from |
 | `field` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The INTEGER field to read |
-| `values` | [ContentValues](../android/content/ContentValues.md)!: The `https://developer.android.com/reference/kotlin/android/content/ContentValues.html#` to put the value into |
+| `values` | [ContentValues](../android.content/ContentValues.md)!: The `https://developer.android.com/reference/kotlin/android/content/ContentValues.html#` to put the value into |
 | --- | --- |
 | `key` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The key to store the value with in the map |
 
@@ -585,8 +585,8 @@ Reads a Long out of a column in a Cursor and writes it to a ContentValues. Adds 
 
 | Parameters ||
 |---|---|
-| `cursor` | [Cursor](../android/database/Cursor.md)!: The cursor to read from |
-| `values` | [ContentValues](../android/content/ContentValues.md)!: The `https://developer.android.com/reference/kotlin/android/content/ContentValues.html#` to put the value into |
+| `cursor` | [Cursor](Cursor.md)!: The cursor to read from |
+| `values` | [ContentValues](../android.content/ContentValues.md)!: The `https://developer.android.com/reference/kotlin/android/content/ContentValues.html#` to put the value into |
 | `column` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The column to read |
 | --- | --- |
 
@@ -605,8 +605,8 @@ Read the entire contents of a cursor row and store them in a ContentValues.
 
 | Parameters ||
 |---|---|
-| `cursor` | [Cursor](../android/database/Cursor.md)!: the cursor to read from. |
-| `values` | [ContentValues](../android/content/ContentValues.md)!: the `https://developer.android.com/reference/kotlin/android/content/ContentValues.html#` to put the row into. |
+| `cursor` | [Cursor](Cursor.md)!: the cursor to read from. |
+| `values` | [ContentValues](../android.content/ContentValues.md)!: the `https://developer.android.com/reference/kotlin/android/content/ContentValues.html#` to put the row into. |
 
 ### cursorShortToContentValuesIfPresent
 
@@ -624,8 +624,8 @@ Reads a Short out of a column in a Cursor and writes it to a ContentValues. Adds
 
 | Parameters ||
 |---|---|
-| `cursor` | [Cursor](../android/database/Cursor.md)!: The cursor to read from |
-| `values` | [ContentValues](../android/content/ContentValues.md)!: The `https://developer.android.com/reference/kotlin/android/content/ContentValues.html#` to put the value into |
+| `cursor` | [Cursor](Cursor.md)!: The cursor to read from |
+| `values` | [ContentValues](../android.content/ContentValues.md)!: The `https://developer.android.com/reference/kotlin/android/content/ContentValues.html#` to put the value into |
 | `column` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The column to read |
 | --- | --- |
 
@@ -645,9 +645,9 @@ Reads a String out of a field in a Cursor and writes it to a Map.
 
 | Parameters ||
 |---|---|
-| `cursor` | [Cursor](../android/database/Cursor.md)!: The cursor to read from |
+| `cursor` | [Cursor](Cursor.md)!: The cursor to read from |
 | `field` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The TEXT field to read |
-| `values` | [ContentValues](../android/content/ContentValues.md)!: The `https://developer.android.com/reference/kotlin/android/content/ContentValues.html#` to put the value into, with the field as the key |
+| `values` | [ContentValues](../android.content/ContentValues.md)!: The `https://developer.android.com/reference/kotlin/android/content/ContentValues.html#` to put the value into, with the field as the key |
 | --- | --- |
 
 ### cursorStringToContentValues
@@ -667,9 +667,9 @@ Reads a String out of a field in a Cursor and writes it to a Map.
 
 | Parameters ||
 |---|---|
-| `cursor` | [Cursor](../android/database/Cursor.md)!: The cursor to read from |
+| `cursor` | [Cursor](Cursor.md)!: The cursor to read from |
 | `field` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The TEXT field to read |
-| `values` | [ContentValues](../android/content/ContentValues.md)!: The `https://developer.android.com/reference/kotlin/android/content/ContentValues.html#` to put the value into, with the field as the key |
+| `values` | [ContentValues](../android.content/ContentValues.md)!: The `https://developer.android.com/reference/kotlin/android/content/ContentValues.html#` to put the value into, with the field as the key |
 | --- | --- |
 | `key` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The key to store the value with in the map |
 
@@ -689,8 +689,8 @@ Reads a String out of a column in a Cursor and writes it to a ContentValues. Add
 
 | Parameters ||
 |---|---|
-| `cursor` | [Cursor](../android/database/Cursor.md)!: The cursor to read from |
-| `values` | [ContentValues](../android/content/ContentValues.md)!: The `https://developer.android.com/reference/kotlin/android/content/ContentValues.html#` to put the value into |
+| `cursor` | [Cursor](Cursor.md)!: The cursor to read from |
+| `values` | [ContentValues](../android.content/ContentValues.md)!: The `https://developer.android.com/reference/kotlin/android/content/ContentValues.html#` to put the value into |
 | `column` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The column to read |
 | --- | --- |
 
@@ -711,7 +711,7 @@ Reads a String out of a field in a Cursor and writes it to an InsertHelper.
 
 | Parameters ||
 |---|---|
-| `cursor` | [Cursor](../android/database/Cursor.md)!: The cursor to read from |
+| `cursor` | [Cursor](Cursor.md)!: The cursor to read from |
 | `field` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The TEXT field to read |
 | `inserter` | [DatabaseUtils.InsertHelper](../android/database/DatabaseUtils.InsertHelper.md)!: The InsertHelper to bind into |
 | --- | --- |
@@ -729,7 +729,7 @@ Prints the contents of a Cursor's current row to System.out.
 
 | Parameters ||
 |---|---|
-| `cursor` | [Cursor](../android/database/Cursor.md)!: the cursor to print from |
+| `cursor` | [Cursor](Cursor.md)!: the cursor to print from |
 
 ### dumpCurrentRow
 
@@ -746,8 +746,8 @@ Prints the contents of a Cursor's current row to a PrintSteam.
 
 | Parameters ||
 |---|---|
-| `cursor` | [Cursor](../android/database/Cursor.md)!: the cursor to print |
-| `stream` | [PrintStream](../java/io/PrintStream.md)!: the stream to print to |
+| `cursor` | [Cursor](Cursor.md)!: the cursor to print |
+| `stream` | [PrintStream](../java.io/PrintStream.md)!: the stream to print to |
 
 ### dumpCurrentRow
 
@@ -764,8 +764,8 @@ Prints the contents of a Cursor's current row to a StringBuilder.
 
 | Parameters ||
 |---|---|
-| `cursor` | [Cursor](../android/database/Cursor.md)!: the cursor to print |
-| `sb` | [StringBuilder](../java/lang/StringBuilder.md)!: the StringBuilder to print to |
+| `cursor` | [Cursor](Cursor.md)!: the cursor to print |
+| `sb` | [StringBuilder](../java.lang/StringBuilder.md)!: the StringBuilder to print to |
 
 ### dumpCurrentRowToString
 
@@ -779,7 +779,7 @@ Dump the contents of a Cursor's current row to a String.
 
 | Parameters ||
 |---|---|
-| `cursor` | [Cursor](../android/database/Cursor.md)!: the cursor to print |
+| `cursor` | [Cursor](Cursor.md)!: the cursor to print |
 
 | Return ||
 |---|---|
@@ -797,7 +797,7 @@ Prints the contents of a Cursor to System.out. The position is restored after pr
 
 | Parameters ||
 |---|---|
-| `cursor` | [Cursor](../android/database/Cursor.md)!: the cursor to print |
+| `cursor` | [Cursor](Cursor.md)!: the cursor to print |
 
 ### dumpCursor
 
@@ -814,8 +814,8 @@ Prints the contents of a Cursor to a PrintSteam. The position is restored after 
 
 | Parameters ||
 |---|---|
-| `cursor` | [Cursor](../android/database/Cursor.md)!: the cursor to print |
-| `stream` | [PrintStream](../java/io/PrintStream.md)!: the stream to print to |
+| `cursor` | [Cursor](Cursor.md)!: the cursor to print |
+| `stream` | [PrintStream](../java.io/PrintStream.md)!: the stream to print to |
 
 ### dumpCursor
 
@@ -832,8 +832,8 @@ Prints the contents of a Cursor to a StringBuilder. The position is restored aft
 
 | Parameters ||
 |---|---|
-| `cursor` | [Cursor](../android/database/Cursor.md)!: the cursor to print |
-| `sb` | [StringBuilder](../java/lang/StringBuilder.md)!: the StringBuilder to print to |
+| `cursor` | [Cursor](Cursor.md)!: the cursor to print |
+| `sb` | [StringBuilder](../java.lang/StringBuilder.md)!: the StringBuilder to print to |
 
 ### dumpCursorToString
 
@@ -847,7 +847,7 @@ Prints the contents of a Cursor to a String. The position is restored after prin
 
 | Parameters ||
 |---|---|
-| `cursor` | [Cursor](../android/database/Cursor.md)!: the cursor to print |
+| `cursor` | [Cursor](Cursor.md)!: the cursor to print |
 
 | Return ||
 |---|---|
@@ -962,7 +962,7 @@ Query the table for the number of rows in the table.
 
 | Parameters ||
 |---|---|
-| `db` | [SQLiteDatabase](../android/database/sqlite/SQLiteDatabase.md)!: the database the table is in |
+| `db` | [SQLiteDatabase](../android.database.sqlite/SQLiteDatabase.md)!: the database the table is in |
 | `table` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the name of the table to query |
 
 | Return ||
@@ -985,7 +985,7 @@ Query the table for the number of rows in the table.
 
 | Parameters ||
 |---|---|
-| `db` | [SQLiteDatabase](../android/database/sqlite/SQLiteDatabase.md)!: the database the table is in |
+| `db` | [SQLiteDatabase](../android.database.sqlite/SQLiteDatabase.md)!: the database the table is in |
 | `table` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the name of the table to query |
 | `selection` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: A filter declaring which rows to return, formatted as an SQL WHERE clause (excluding the WHERE itself). Passing null will count all rows for the given table |
 | --- | --- |
@@ -1011,7 +1011,7 @@ Query the table for the number of rows in the table.
 
 | Parameters ||
 |---|---|
-| `db` | [SQLiteDatabase](../android/database/sqlite/SQLiteDatabase.md)!: the database the table is in |
+| `db` | [SQLiteDatabase](../android.database.sqlite/SQLiteDatabase.md)!: the database the table is in |
 | `table` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the name of the table to query |
 | `selection` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: A filter declaring which rows to return, formatted as an SQL WHERE clause (excluding the WHERE itself). Passing null will count all rows for the given table |
 | --- | --- |
@@ -1033,7 +1033,7 @@ Special function for reading an exception result from the header of a parcel, to
 
 | Parameters ||
 |---|---|
-| `reply` | [Parcel](../android/os/Parcel.md)!: Parcel to read from |
+| `reply` | [Parcel](../android.os/Parcel.md)!: Parcel to read from |
 
 **See Also**
 
@@ -1107,8 +1107,8 @@ Special function for writing an exception result at the header of a parcel, to b
 
 | Parameters ||
 |---|---|
-| `reply` | [Parcel](../android/os/Parcel.md)!: Parcel to write to |
-| `e` | [Exception](../java/lang/Exception.md)!: The Exception to be written. |
+| `reply` | [Parcel](../android.os/Parcel.md)!: Parcel to write to |
+| `e` | [Exception](../java.lang/Exception.md)!: The Exception to be written. |
 
 **See Also**
 

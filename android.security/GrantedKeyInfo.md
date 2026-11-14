@@ -8,7 +8,7 @@ class GrantedKeyInfo : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.security.GrantedKeyInfo](../android/security/GrantedKeyInfo.md) |
+| ↳ | [android.security.GrantedKeyInfo](GrantedKeyInfo.md) |
 
 Information about a key pair granted to an application via KeyChain.
 
@@ -34,13 +34,13 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/security/GrantedKeyInfo#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/security/GrantedKeyInfo#getAlias()()` Returns the alias of the granted key pair. |
-| [X509Certificate](../java/security/cert/X509Certificate.md)? | `https://developer.android.com/reference/kotlin/android/security/GrantedKeyInfo#getCertificate()()` Returns the leaf certificate of the granted key pair, or `null` if no certificate is associated with the alias. |
+| [X509Certificate](../java.security.cert/X509Certificate.md)? | `https://developer.android.com/reference/kotlin/android/security/GrantedKeyInfo#getCertificate()()` Returns the leaf certificate of the granted key pair, or `null` if no certificate is associated with the alias. |
 | --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/security/GrantedKeyInfo#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [GrantedKeyInfo](../android/security/GrantedKeyInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/security/GrantedKeyInfo#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [GrantedKeyInfo](GrantedKeyInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/security/GrantedKeyInfo#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public constructors
 
@@ -57,7 +57,7 @@ GrantedKeyInfo(
 | Parameters ||
 |---|---|
 | `alias` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): This value cannot be `null`. |
-| `certificate` | [X509Certificate](../java/security/cert/X509Certificate.md)?: This value may be `null`. |
+| `certificate` | [X509Certificate](../java.security.cert/X509Certificate.md)?: This value may be `null`. |
 
 ## Public methods
 
@@ -114,7 +114,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

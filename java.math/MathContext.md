@@ -10,39 +10,39 @@ class MathContext : Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.math.MathContext](../java/math/MathContext.md) |
+| ↳ | [java.math.MathContext](MathContext.md) |
 
-Immutable objects which encapsulate the context settings which describe certain rules for numerical operators, such as those implemented by the [BigDecimal](../java/math/BigDecimal.md) class.
+Immutable objects which encapsulate the context settings which describe certain rules for numerical operators, such as those implemented by the [BigDecimal](BigDecimal.md) class.
 
 The base-independent settings are:
 
 1. `precision`: the number of digits to be used for an operation; results are rounded to this precision
-2. `roundingMode`: a [RoundingMode](../java/math/RoundingMode.md) object which specifies the algorithm to be used for rounding.
+2. `roundingMode`: a [RoundingMode](RoundingMode.md) object which specifies the algorithm to be used for rounding.
 
 ## Summary
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [MathContext](../java/math/MathContext.md))`(`setPrecision:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a new`MathContext`with the specified precision and the [HALF_UP](../java/math/RoundingMode.md) rounding mode. |
-| [MathContext](../java/math/MathContext.md))`(`setPrecision:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `setRoundingMode:` ` [RoundingMode](../java/math/RoundingMode.md)!`)` Constructs a new`MathContext`with a specified precision and rounding mode. |
-| [MathContext](../java/math/MathContext.md))`(`val:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a new`MathContext`from a string. |
+| [MathContext](MathContext.md))`(`setPrecision:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a new`MathContext`with the specified precision and the [HALF_UP](RoundingMode.md) rounding mode. |
+| [MathContext](MathContext.md))`(`setPrecision:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `setRoundingMode:` ` [RoundingMode](RoundingMode.md)!`)` Constructs a new`MathContext`with a specified precision and rounding mode. |
+| [MathContext](MathContext.md))`(`val:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a new`MathContext`from a string. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/math/MathContext.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this`MathContext`with the specified`Object`for equality. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPrecision](../java/math/MathContext.md))`()` Returns the`precision`setting. |
-| [RoundingMode](../java/math/RoundingMode.md)! | [getRoundingMode](../java/math/MathContext.md))`()` Returns the roundingMode setting. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](MathContext.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this`MathContext`with the specified`Object`for equality. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPrecision](MathContext.md))`()` Returns the`precision`setting. |
+| [RoundingMode](RoundingMode.md)! | [getRoundingMode](MathContext.md))`()` Returns the roundingMode setting. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/math/MathContext.md))`()` Returns the hash code for this`MathContext`. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/math/MathContext.md))`()` Returns the string representation of this`MathContext`. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](MathContext.md))`()` Returns the hash code for this`MathContext`. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](MathContext.md))`()` Returns the string representation of this`MathContext`. |
 
 | Properties ||
 |---------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [MathContext](../java/math/MathContext.md)! | [DECIMAL128](../java/math/MathContext.md) A`MathContext`object with a precision setting matching the precision of the IEEE 754-2019 decimal128 format, 34 digits, and a rounding mode of [HALF_EVEN](../java/math/RoundingMode.md). |
-| static [MathContext](../java/math/MathContext.md)! | [DECIMAL32](../java/math/MathContext.md) A`MathContext`object with a precision setting matching the precision of the IEEE 754-2019 decimal32 format, 7 digits, and a rounding mode of [HALF_EVEN](../java/math/RoundingMode.md). |
-| static [MathContext](../java/math/MathContext.md)! | [DECIMAL64](../java/math/MathContext.md) A`MathContext`object with a precision setting matching the precision of the IEEE 754-2019 decimal64 format, 16 digits, and a rounding mode of [HALF_EVEN](../java/math/RoundingMode.md). |
+| static [MathContext](MathContext.md)! | [DECIMAL128](MathContext.md) A`MathContext`object with a precision setting matching the precision of the IEEE 754-2019 decimal128 format, 34 digits, and a rounding mode of [HALF_EVEN](RoundingMode.md). |
+| static [MathContext](MathContext.md)! | [DECIMAL32](MathContext.md) A`MathContext`object with a precision setting matching the precision of the IEEE 754-2019 decimal32 format, 7 digits, and a rounding mode of [HALF_EVEN](RoundingMode.md). |
+| static [MathContext](MathContext.md)! | [DECIMAL64](MathContext.md) A`MathContext`object with a precision setting matching the precision of the IEEE 754-2019 decimal64 format, 16 digits, and a rounding mode of [HALF_EVEN](RoundingMode.md). |
 | --- | --- |
-| static [MathContext](../java/math/MathContext.md)! | [UNLIMITED](../java/math/MathContext.md) A`MathContext`object whose settings have the values required for unlimited precision arithmetic. |
+| static [MathContext](MathContext.md)! | [UNLIMITED](MathContext.md) A`MathContext`object whose settings have the values required for unlimited precision arithmetic. |
 
 ## Public constructors
 
@@ -54,7 +54,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 MathContext(setPrecision: Int)
 ```
 
-Constructs a new`MathContext`with the specified precision and the [HALF_UP](../java/math/RoundingMode.md) rounding mode.
+Constructs a new`MathContext`with the specified precision and the [HALF_UP](RoundingMode.md) rounding mode.
 
 | Parameters ||
 |----------------|--------------------------------------------------------------------------------------------------------------------|
@@ -79,7 +79,7 @@ Constructs a new`MathContext`with a specified precision and rounding mode.
 | Parameters ||
 |-------------------|--------------------------------------------------------------------------------------------------------------------|
 | `setPrecision` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The non-negative`int`precision setting. |
-| `setRoundingMode` | [RoundingMode](../java/math/RoundingMode.md)!:The rounding mode to use. |
+| `setRoundingMode` | [RoundingMode](RoundingMode.md)!:The rounding mode to use. |
 
 | Exceptions ||
 |--------------------------------------|--------------------------------------------------|
@@ -94,9 +94,9 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 MathContext(val: String!)
 ```
 
-Constructs a new`MathContext`from a string. The string must be in the same format as that produced by the [toString](../java/math/MathContext.md))method.
+Constructs a new`MathContext`from a string. The string must be in the same format as that produced by the [toString](MathContext.md))method.
 
-An`IllegalArgumentException`is thrown if the precision section of the string is out of range (`< 0`) or the string is not in the format created by the [toString](../java/math/MathContext.md))method.
+An`IllegalArgumentException`is thrown if the precision section of the string is out of range (`< 0`) or the string is not in the format created by the [toString](MathContext.md))method.
 
 | Parameters ||
 |-------|-----------------------------------------------------------------------------------------------------------|
@@ -150,11 +150,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun getRoundingMode(): RoundingMode!
 ```
 
-Returns the roundingMode setting. This will be one of [RoundingMode.CEILING](../java/math/RoundingMode.md), [RoundingMode.DOWN](../java/math/RoundingMode.md), [RoundingMode.FLOOR](../java/math/RoundingMode.md), [RoundingMode.HALF_DOWN](../java/math/RoundingMode.md), [RoundingMode.HALF_EVEN](../java/math/RoundingMode.md), [RoundingMode.HALF_UP](../java/math/RoundingMode.md), [RoundingMode.UNNECESSARY](../java/math/RoundingMode.md), or [RoundingMode.UP](../java/math/RoundingMode.md).
+Returns the roundingMode setting. This will be one of [RoundingMode.CEILING](RoundingMode.md), [RoundingMode.DOWN](RoundingMode.md), [RoundingMode.FLOOR](RoundingMode.md), [RoundingMode.HALF_DOWN](RoundingMode.md), [RoundingMode.HALF_EVEN](RoundingMode.md), [RoundingMode.HALF_UP](RoundingMode.md), [RoundingMode.UNNECESSARY](RoundingMode.md), or [RoundingMode.UP](RoundingMode.md).
 
 | Return ||
 |----------------------------------------------------------------------------------------|----------------------------------------------------------------------|
-| [RoundingMode](../java/math/RoundingMode.md)! | a`RoundingMode`object which is the value of the`roundingMode`setting |
+| [RoundingMode](RoundingMode.md)! | a`RoundingMode`object which is the value of the`roundingMode`setting |
 
 ### hashCode
 
@@ -180,8 +180,8 @@ fun toString(): String
 
 Returns the string representation of this`MathContext`. The`String`returned represents the settings of the`MathContext`object as two space-delimited words (separated by a single space character,`'\u0020'`, and with no leading or trailing white space), as follows:
 
-1. The string`"precision="`, immediately followed by the value of the precision setting as a numeric string as if generated by the [Integer.toString](../java/lang/Integer.md))method.
-2. The string`"roundingMode="`, immediately followed by the value of the`roundingMode`setting as a word. This word will be the same as the name of the corresponding public constant in the [RoundingMode](../java/math/RoundingMode.md) enum.
+1. The string`"precision="`, immediately followed by the value of the precision setting as a numeric string as if generated by the [Integer.toString](../java.lang/Integer.md))method.
+2. The string`"roundingMode="`, immediately followed by the value of the`roundingMode`setting as a word. This word will be the same as the name of the corresponding public constant in the [RoundingMode](RoundingMode.md) enum.
 
 <br />
 
@@ -207,7 +207,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val DECIMAL128: MathContext!
 ```
 
-A`MathContext`object with a precision setting matching the precision of the IEEE 754-2019 decimal128 format, 34 digits, and a rounding mode of [HALF_EVEN](../java/math/RoundingMode.md). Note the exponent range of decimal64 is*not*used for rounding. 
+A`MathContext`object with a precision setting matching the precision of the IEEE 754-2019 decimal128 format, 34 digits, and a rounding mode of [HALF_EVEN](RoundingMode.md). Note the exponent range of decimal64 is*not*used for rounding. 
 
 ### DECIMAL32
 
@@ -217,7 +217,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val DECIMAL32: MathContext!
 ```
 
-A`MathContext`object with a precision setting matching the precision of the IEEE 754-2019 decimal32 format, 7 digits, and a rounding mode of [HALF_EVEN](../java/math/RoundingMode.md). Note the exponent range of decimal32 is*not*used for rounding. 
+A`MathContext`object with a precision setting matching the precision of the IEEE 754-2019 decimal32 format, 7 digits, and a rounding mode of [HALF_EVEN](RoundingMode.md). Note the exponent range of decimal32 is*not*used for rounding. 
 
 ### DECIMAL64
 
@@ -227,7 +227,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val DECIMAL64: MathContext!
 ```
 
-A`MathContext`object with a precision setting matching the precision of the IEEE 754-2019 decimal64 format, 16 digits, and a rounding mode of [HALF_EVEN](../java/math/RoundingMode.md). Note the exponent range of decimal64 is*not*used for rounding. 
+A`MathContext`object with a precision setting matching the precision of the IEEE 754-2019 decimal64 format, 16 digits, and a rounding mode of [HALF_EVEN](RoundingMode.md). Note the exponent range of decimal64 is*not*used for rounding. 
 
 ### UNLIMITED
 

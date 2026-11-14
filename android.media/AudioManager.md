@@ -8,7 +8,7 @@ open class AudioManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.AudioManager](../android/media/AudioManager.md) |
+| ↳ | [android.media.AudioManager](AudioManager.md) |
 
 AudioManager provides access to volume and ringer mode control.
 
@@ -198,34 +198,34 @@ AudioManager provides access to volume and ringer mode control.
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#dispatchMediaKeyEvent(android.view.KeyEvent)(keyEvent: https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#!)` Sends a simulated key event for a media button. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#generateAudioSessionId()()` Return a new audio session identifier not associated with any player or effect. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AudioPlaybackConfiguration](../android/media/AudioPlaybackConfiguration.md)!\> | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getActivePlaybackConfigurations()()` Returns the current active audio playback configurations of the device |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AudioPlaybackConfiguration](AudioPlaybackConfiguration.md)!\> | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getActivePlaybackConfigurations()()` Returns the current active audio playback configurations of the device |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AudioRecordingConfiguration](../android/media/AudioRecordingConfiguration.md)!\> | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getActiveRecordingConfigurations()()` Returns the current active audio recording configurations of the device. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AudioRecordingConfiguration](AudioRecordingConfiguration.md)!\> | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getActiveRecordingConfigurations()()` Returns the current active audio recording configurations of the device. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getAllowedCapturePolicy()()` Return the capture policy. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AudioDeviceInfo](../android/media/AudioDeviceInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getAudioDevicesForAttributes(android.media.AudioAttributes)(attributes: https://developer.android.com/reference/kotlin/android/media/AudioAttributes)` Get the audio devices that would be used for the routing of the given audio attributes. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AudioDeviceInfo](AudioDeviceInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getAudioDevicesForAttributes(android.media.AudioAttributes)(attributes: https://developer.android.com/reference/kotlin/android/media/AudioAttributes)` Get the audio devices that would be used for the routing of the given audio attributes. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getAudioHwSyncForSession(kotlin.Int)(sessionId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieves the Hardware A/V synchronization ID corresponding to the given audio session ID. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AudioDeviceInfo](../android/media/AudioDeviceInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getAvailableCommunicationDevices()()` Returns a list of audio devices that can be selected for communication use cases via `https://developer.android.com/reference/kotlin/android/media/AudioManager#setCommunicationDevice(android.media.AudioDeviceInfo)`. |
-| open [AudioDeviceInfo](../android/media/AudioDeviceInfo.md)? | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getCommunicationDevice()()` Returns currently selected audio device for communication. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AudioDeviceInfo](AudioDeviceInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getAvailableCommunicationDevices()()` Returns a list of audio devices that can be selected for communication use cases via `https://developer.android.com/reference/kotlin/android/media/AudioManager#setCommunicationDevice(android.media.AudioDeviceInfo)`. |
+| open [AudioDeviceInfo](AudioDeviceInfo.md)? | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getCommunicationDevice()()` Returns currently selected audio device for communication. |
 | --- | --- |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [AudioDeviceInfo](../android/media/AudioDeviceInfo.md)!\>! | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getDevices(kotlin.Int)(flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns an array of `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo` objects corresponding to the audio devices currently connected to the system and meeting the criteria specified in the `flags` parameter. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [AudioDeviceInfo](AudioDeviceInfo.md)!\>! | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getDevices(kotlin.Int)(flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns an array of `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo` objects corresponding to the audio devices currently connected to the system and meeting the criteria specified in the `flags` parameter. |
 | open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getDirectPlaybackSupport(android.media.AudioFormat,%20android.media.AudioAttributes)(format: https://developer.android.com/reference/kotlin/android/media/AudioFormat, attributes: https://developer.android.com/reference/kotlin/android/media/AudioAttributes)` Returns a bitfield representing the different forms of direct playback currently available for a given audio format. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AudioProfile](../android/media/AudioProfile.md)!\> | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getDirectProfilesForAttributes(android.media.AudioAttributes)(attributes: https://developer.android.com/reference/kotlin/android/media/AudioAttributes)` Returns a list of direct `https://developer.android.com/reference/kotlin/android/media/AudioProfile` that are supported for the specified `https://developer.android.com/reference/kotlin/android/media/AudioAttributes`. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AudioProfile](AudioProfile.md)!\> | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getDirectProfilesForAttributes(android.media.AudioAttributes)(attributes: https://developer.android.com/reference/kotlin/android/media/AudioAttributes)` Returns a list of direct `https://developer.android.com/reference/kotlin/android/media/AudioProfile` that are supported for the specified `https://developer.android.com/reference/kotlin/android/media/AudioAttributes`. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AudioProfile](../android/media/AudioProfile.md)!\> | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getDirectProfilesForAttributes(android.media.AudioAttributes,%20kotlin.Int)(attributes: https://developer.android.com/reference/kotlin/android/media/AudioAttributes, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a list of direct `https://developer.android.com/reference/kotlin/android/media/AudioProfile` that are supported for the specified `https://developer.android.com/reference/kotlin/android/media/AudioAttributes`. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AudioProfile](AudioProfile.md)!\> | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getDirectProfilesForAttributes(android.media.AudioAttributes,%20kotlin.Int)(attributes: https://developer.android.com/reference/kotlin/android/media/AudioAttributes, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a list of direct `https://developer.android.com/reference/kotlin/android/media/AudioProfile` that are supported for the specified `https://developer.android.com/reference/kotlin/android/media/AudioAttributes`. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getEncodedSurroundMode()()` Gets the surround sound mode. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MicrophoneInfo](../android/media/MicrophoneInfo.md)!\>! | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getMicrophones()()` Returns a list of `https://developer.android.com/reference/kotlin/android/media/MicrophoneInfo` that corresponds to the characteristics of all available microphones. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MicrophoneInfo](MicrophoneInfo.md)!\>! | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getMicrophones()()` Returns a list of `https://developer.android.com/reference/kotlin/android/media/MicrophoneInfo` that corresponds to the characteristics of all available microphones. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getMode()()` Returns the current audio mode. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getParameters(kotlin.String)(keys: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Gets a variable number of parameter values from audio hardware. |
 | open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getPlaybackOffloadSupport(android.media.AudioFormat,%20android.media.AudioAttributes)(format: https://developer.android.com/reference/kotlin/android/media/AudioFormat, attributes: https://developer.android.com/reference/kotlin/android/media/AudioAttributes)` Returns whether offloaded playback of an audio format is supported on the device or not and when supported whether gapless transitions are possible or not. |
 | --- | --- |
-| open [AudioMixerAttributes](../android/media/AudioMixerAttributes.md)? | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getPreferredMixerAttributes(android.media.AudioAttributes,%20android.media.AudioDeviceInfo)(attributes: https://developer.android.com/reference/kotlin/android/media/AudioAttributes, device: https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo)` Returns current preferred mixer attributes that is set via `https://developer.android.com/reference/kotlin/android/media/AudioManager#setPreferredMixerAttributes(android.media.AudioAttributes,%20android.media.AudioDeviceInfo,%20android.media.AudioMixerAttributes)` |
+| open [AudioMixerAttributes](AudioMixerAttributes.md)? | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getPreferredMixerAttributes(android.media.AudioAttributes,%20android.media.AudioDeviceInfo)(attributes: https://developer.android.com/reference/kotlin/android/media/AudioAttributes, device: https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo)` Returns current preferred mixer attributes that is set via `https://developer.android.com/reference/kotlin/android/media/AudioManager#setPreferredMixerAttributes(android.media.AudioAttributes,%20android.media.AudioDeviceInfo,%20android.media.AudioMixerAttributes)` |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getProperty(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the value of the property with the specified key. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getRingerMode()()` Returns the current ringtone mode. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getRouting(kotlin.Int)(mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the current audio routing bit vector for a specified mode. |
-| open [Spatializer](../android/media/Spatializer.md) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getSpatializer()()` Return a handle to the optional platform's `https://developer.android.com/reference/kotlin/android/media/Spatializer` |
+| open [Spatializer](Spatializer.md) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getSpatializer()()` Return a handle to the optional platform's `https://developer.android.com/reference/kotlin/android/media/Spatializer` |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getStreamMaxVolume(kotlin.Int)(streamType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the maximum volume index for a particular stream. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getStreamMinVolume(kotlin.Int)(streamType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the minimum volume index for a particular stream. |
@@ -233,7 +233,7 @@ AudioManager provides access to volume and ringer mode control.
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getStreamVolumeDb(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(streamType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, deviceType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the volume in dB (decibel) for the given stream type at the given volume index, on the given type of audio output device. |
 | --- | --- |
 | open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getSupportedDeviceTypes(kotlin.Int)(direction: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a Set of unique Integers corresponding to audio device type identifiers that can *potentially* be connected to the system and meeting the criteria specified in the `direction` parameter. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AudioMixerAttributes](../android/media/AudioMixerAttributes.md)!\> | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getSupportedMixerAttributes(android.media.AudioDeviceInfo)(device: https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo)` Returns the `https://developer.android.com/reference/kotlin/android/media/AudioMixerAttributes` that can be used to set as preferred mixer attributes via `https://developer.android.com/reference/kotlin/android/media/AudioManager#setPreferredMixerAttributes(android.media.AudioAttributes,%20android.media.AudioDeviceInfo,%20android.media.AudioMixerAttributes)`. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AudioMixerAttributes](AudioMixerAttributes.md)!\> | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getSupportedMixerAttributes(android.media.AudioDeviceInfo)(device: https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo)` Returns the `https://developer.android.com/reference/kotlin/android/media/AudioMixerAttributes` that can be used to set as preferred mixer attributes via `https://developer.android.com/reference/kotlin/android/media/AudioManager#setPreferredMixerAttributes(android.media.AudioAttributes,%20android.media.AudioDeviceInfo,%20android.media.AudioMixerAttributes)`. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getVibrateSetting(kotlin.Int)(vibrateType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns whether the user's vibrate setting for a vibrate type. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioManager#getVolumeGroupIdForAttributes(android.media.AudioAttributes)(attributes: https://developer.android.com/reference/kotlin/android/media/AudioAttributes)` Returns the volume group id associated to the given `https://developer.android.com/reference/kotlin/android/media/AudioAttributes`. |
@@ -2013,7 +2013,7 @@ Abandon audio focus. Causes the previous focus owner, if any, to receive focus.
 
 | Parameters ||
 |---|---|
-| `focusRequest` | [AudioFocusRequest](../android/media/AudioFocusRequest.md): the `https://developer.android.com/reference/kotlin/android/media/AudioFocusRequest` that was used when requesting focus with `https://developer.android.com/reference/kotlin/android/media/AudioManager#requestAudioFocus(android.media.AudioFocusRequest)`. This value cannot be `null`. |
+| `focusRequest` | [AudioFocusRequest](AudioFocusRequest.md): the `https://developer.android.com/reference/kotlin/android/media/AudioFocusRequest` that was used when requesting focus with `https://developer.android.com/reference/kotlin/android/media/AudioManager#requestAudioFocus(android.media.AudioFocusRequest)`. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -2038,7 +2038,7 @@ Adds a listener for being notified of changes to the communication audio device.
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `listener` | [AudioManager.OnCommunicationDeviceChangedListener](../android/media/AudioManager.OnCommunicationDeviceChangedListener.md): This value cannot be `null`. |
 
 ### addOnModeChangedListener
@@ -2056,7 +2056,7 @@ Adds a listener to be notified of changes to the audio mode. See `https://develo
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `listener` | [AudioManager.OnModeChangedListener](../android/media/AudioManager.OnModeChangedListener.md): This value cannot be `null`. |
 
 ### addOnPreferredMixerAttributesChangedListener
@@ -2074,7 +2074,7 @@ Adds a listener for being notified of changes to the preferred mixer attributes.
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): the executor to execute the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): the executor to execute the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `listener` | [AudioManager.OnPreferredMixerAttributesChangedListener](../android/media/AudioManager.OnPreferredMixerAttributesChangedListener.md): the listener to be notified of changes in the preferred mixer attributes. This value cannot be `null`. |
 
 ### adjustStreamVolume
@@ -2245,8 +2245,8 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `attributes` | [AudioAttributes](../android/media/AudioAttributes.md): the `https://developer.android.com/reference/kotlin/android/media/AudioAttributes` whose mixer attributes should be cleared. This value cannot be `null`. |
-| `device` | [AudioDeviceInfo](../android/media/AudioDeviceInfo.md): the expected routing device. This value cannot be `null`. |
+| `attributes` | [AudioAttributes](AudioAttributes.md): the `https://developer.android.com/reference/kotlin/android/media/AudioAttributes` whose mixer attributes should be cleared. This value cannot be `null`. |
+| `device` | [AudioDeviceInfo](AudioDeviceInfo.md): the expected routing device. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -2271,7 +2271,7 @@ The key event will be sent to the current media key event consumer which registe
 
 | Parameters ||
 |---|---|
-| `keyEvent` | [KeyEvent](../android/view/KeyEvent.md)!: a media session `https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#`, as defined by `https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#isMediaSessionKey(kotlin.Int)`. |
+| `keyEvent` | [KeyEvent](../android.view/KeyEvent.md)!: a media session `https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#`, as defined by `https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#isMediaSessionKey(kotlin.Int)`. |
 
 ### generateAudioSessionId
 
@@ -2353,7 +2353,7 @@ Get the audio devices that would be used for the routing of the given audio attr
 
 | Parameters ||
 |---|---|
-| `attributes` | [AudioAttributes](../android/media/AudioAttributes.md): the `https://developer.android.com/reference/kotlin/android/media/AudioAttributes` for which the routing is being queried. This value cannot be `null`. |
+| `attributes` | [AudioAttributes](AudioAttributes.md): the `https://developer.android.com/reference/kotlin/android/media/AudioAttributes` for which the routing is being queried. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -2457,8 +2457,8 @@ Checking for direct support can help the app select the representation of audio 
 
 | Parameters ||
 |---|---|
-| `format` | [AudioFormat](../android/media/AudioFormat.md): the audio format (codec, sample rate, channels) being checked. This value cannot be `null`. |
-| `attributes` | [AudioAttributes](../android/media/AudioAttributes.md): the `https://developer.android.com/reference/kotlin/android/media/AudioAttributes` to be used for playback. This value cannot be `null`. |
+| `format` | [AudioFormat](AudioFormat.md): the audio format (codec, sample rate, channels) being checked. This value cannot be `null`. |
+| `attributes` | [AudioAttributes](AudioAttributes.md): the `https://developer.android.com/reference/kotlin/android/media/AudioAttributes` to be used for playback. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -2480,7 +2480,7 @@ When using this information to inform your application which audio format to pla
 
 | Parameters ||
 |---|---|
-| `attributes` | [AudioAttributes](../android/media/AudioAttributes.md): a non-null `https://developer.android.com/reference/kotlin/android/media/AudioAttributes` instance. |
+| `attributes` | [AudioAttributes](AudioAttributes.md): a non-null `https://developer.android.com/reference/kotlin/android/media/AudioAttributes` instance. |
 
 | Return ||
 |---|---|
@@ -2505,7 +2505,7 @@ When using this information to inform your application which audio format to pla
 
 | Parameters ||
 |---|---|
-| `attributes` | [AudioAttributes](../android/media/AudioAttributes.md): a non-null `https://developer.android.com/reference/kotlin/android/media/AudioAttributes` instance. |
+| `attributes` | [AudioAttributes](AudioAttributes.md): a non-null `https://developer.android.com/reference/kotlin/android/media/AudioAttributes` instance. |
 | `uid` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Application/Service UID for the query |
 
 | Return ||
@@ -2598,8 +2598,8 @@ Note that this query only provides information about the support of an audio for
 
 | Parameters ||
 |---|---|
-| `format` | [AudioFormat](../android/media/AudioFormat.md): the audio format (codec, sample rate, channels) being checked. This value cannot be `null`. |
-| `attributes` | [AudioAttributes](../android/media/AudioAttributes.md): the `https://developer.android.com/reference/kotlin/android/media/AudioAttributes` to be used for playback. This value cannot be `null`. |
+| `format` | [AudioFormat](AudioFormat.md): the audio format (codec, sample rate, channels) being checked. This value cannot be `null`. |
+| `attributes` | [AudioAttributes](AudioAttributes.md): the `https://developer.android.com/reference/kotlin/android/media/AudioAttributes` to be used for playback. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -2620,8 +2620,8 @@ Returns current preferred mixer attributes that is set via `https://developer.an
 
 | Parameters ||
 |---|---|
-| `attributes` | [AudioAttributes](../android/media/AudioAttributes.md): the `https://developer.android.com/reference/kotlin/android/media/AudioAttributes` whose mixer attributes should be set. This value cannot be `null`. |
-| `device` | [AudioDeviceInfo](../android/media/AudioDeviceInfo.md): the expected routing device. This value cannot be `null`. |
+| `attributes` | [AudioAttributes](AudioAttributes.md): the `https://developer.android.com/reference/kotlin/android/media/AudioAttributes` whose mixer attributes should be set. This value cannot be `null`. |
+| `device` | [AudioDeviceInfo](AudioDeviceInfo.md): the expected routing device. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -2840,7 +2840,7 @@ Note that only USB devices are guaranteed to expose configurable mixer attribute
 
 | Parameters ||
 |---|---|
-| `device` | [AudioDeviceInfo](../android/media/AudioDeviceInfo.md): the device to query. This value cannot be `null`. |
+| `device` | [AudioDeviceInfo](AudioDeviceInfo.md): the device to query. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -2890,7 +2890,7 @@ Returns the volume group id associated to the given `https://developer.android.c
 
 | Parameters ||
 |---|---|
-| `attributes` | [AudioAttributes](../android/media/AudioAttributes.md): The `https://developer.android.com/reference/kotlin/android/media/AudioAttributes` to consider. This value cannot be `null`. |
+| `attributes` | [AudioAttributes](AudioAttributes.md): The `https://developer.android.com/reference/kotlin/android/media/AudioAttributes` to consider. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -3032,8 +3032,8 @@ Note that this query only provides information about the support of an audio for
 
 | Parameters ||
 |---|---|
-| `format` | [AudioFormat](../android/media/AudioFormat.md): the audio format (codec, sample rate, channels) being checked. This value cannot be `null`. |
-| `attributes` | [AudioAttributes](../android/media/AudioAttributes.md): the `https://developer.android.com/reference/kotlin/android/media/AudioAttributes` to be used for playback. This value cannot be `null`. |
+| `format` | [AudioFormat](AudioFormat.md): the audio format (codec, sample rate, channels) being checked. This value cannot be `null`. |
+| `attributes` | [AudioAttributes](AudioAttributes.md): the `https://developer.android.com/reference/kotlin/android/media/AudioAttributes` to be used for playback. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -3232,8 +3232,8 @@ Registers an `https://developer.android.com/reference/kotlin/android/media/Audio
 
 | Parameters ||
 |---|---|
-| `callback` | [AudioDeviceCallback](../android/media/AudioDeviceCallback.md)!: The `https://developer.android.com/reference/kotlin/android/media/AudioDeviceCallback` object to receive connect/disconnect notifications. |
-| `handler` | [Handler](../android/os/Handler.md)?: Specifies the `https://developer.android.com/reference/kotlin/android/os/Handler.html#` object for the thread on which to execute the callback. If `null`, the `https://developer.android.com/reference/kotlin/android/os/Handler.html#` associated with the main `https://developer.android.com/reference/kotlin/android/os/Looper.html#` will be used. |
+| `callback` | [AudioDeviceCallback](AudioDeviceCallback.md)!: The `https://developer.android.com/reference/kotlin/android/media/AudioDeviceCallback` object to receive connect/disconnect notifications. |
+| `handler` | [Handler](../android.os/Handler.md)?: Specifies the `https://developer.android.com/reference/kotlin/android/os/Handler.html#` object for the thread on which to execute the callback. If `null`, the `https://developer.android.com/reference/kotlin/android/os/Handler.html#` associated with the main `https://developer.android.com/reference/kotlin/android/os/Looper.html#` will be used. |
 
 ### registerAudioPlaybackCallback
 
@@ -3251,7 +3251,7 @@ Register a callback to be notified of audio playback changes through `https://de
 | Parameters ||
 |---|---|
 | `cb` | [AudioManager.AudioPlaybackCallback](../android/media/AudioManager.AudioPlaybackCallback.md): non-null callback to register |
-| `handler` | [Handler](../android/os/Handler.md)?: the `https://developer.android.com/reference/kotlin/android/os/Handler.html#` object for the thread on which to execute the callback. If `null`, the `https://developer.android.com/reference/kotlin/android/os/Handler.html#` associated with the main `https://developer.android.com/reference/kotlin/android/os/Looper.html#` will be used. |
+| `handler` | [Handler](../android.os/Handler.md)?: the `https://developer.android.com/reference/kotlin/android/os/Handler.html#` object for the thread on which to execute the callback. If `null`, the `https://developer.android.com/reference/kotlin/android/os/Handler.html#` associated with the main `https://developer.android.com/reference/kotlin/android/os/Looper.html#` will be used. |
 
 ### registerAudioRecordingCallback
 
@@ -3269,7 +3269,7 @@ Register a callback to be notified of audio recording changes through `https://d
 | Parameters ||
 |---|---|
 | `cb` | [AudioManager.AudioRecordingCallback](../android/media/AudioManager.AudioRecordingCallback.md): non-null callback to register |
-| `handler` | [Handler](../android/os/Handler.md)?: the `https://developer.android.com/reference/kotlin/android/os/Handler.html#` object for the thread on which to execute the callback. If `null`, the `https://developer.android.com/reference/kotlin/android/os/Handler.html#` associated with the main `https://developer.android.com/reference/kotlin/android/os/Looper.html#` will be used. |
+| `handler` | [Handler](../android.os/Handler.md)?: the `https://developer.android.com/reference/kotlin/android/os/Handler.html#` object for the thread on which to execute the callback. If `null`, the `https://developer.android.com/reference/kotlin/android/os/Handler.html#` associated with the main `https://developer.android.com/reference/kotlin/android/os/Looper.html#` will be used. |
 
 ### registerMediaButtonEventReceiver
 
@@ -3286,7 +3286,7 @@ Register a component to be the sole receiver of MEDIA_BUTTON intents. This is li
 
 | Parameters ||
 |---|---|
-| `eventReceiver` | [PendingIntent](../android/app/PendingIntent.md)!: target that will receive media button intents. The PendingIntent will be sent an `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_MEDIA_BUTTON:kotlin.String` event when a media button action occurs, with `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_KEY_EVENT:kotlin.String` added and holding the key code of the media button that was pressed. |
+| `eventReceiver` | [PendingIntent](../android.app/PendingIntent.md)!: target that will receive media button intents. The PendingIntent will be sent an `https://developer.android.com/reference/kotlin/android/content/Intent.html#ACTION_MEDIA_BUTTON:kotlin.String` event when a media button action occurs, with `https://developer.android.com/reference/kotlin/android/content/Intent.html#EXTRA_KEY_EVENT:kotlin.String` added and holding the key code of the media button that was pressed. |
 
 ### registerMediaButtonEventReceiver
 
@@ -3303,7 +3303,7 @@ Register a component to be the sole receiver of MEDIA_BUTTON intents.
 
 | Parameters ||
 |---|---|
-| `eventReceiver` | [ComponentName](../android/content/ComponentName.md)!: identifier of a `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html#` that will receive the media button intent. This broadcast receiver must be declared in the application manifest. The package of the component must match that of the context you're registering from. |
+| `eventReceiver` | [ComponentName](../android.content/ComponentName.md)!: identifier of a `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html#` that will receive the media button intent. This broadcast receiver must be declared in the application manifest. The package of the component must match that of the context you're registering from. |
 
 ### registerRemoteControlClient
 
@@ -3320,7 +3320,7 @@ Registers the remote control client for providing information to display on the 
 
 | Parameters ||
 |---|---|
-| `rcClient` | [RemoteControlClient](../android/media/RemoteControlClient.md)!: The remote control client from which remote controls will receive information to display. |
+| `rcClient` | [RemoteControlClient](RemoteControlClient.md)!: The remote control client from which remote controls will receive information to display. |
 
 **See Also**
 
@@ -3343,7 +3343,7 @@ Registration requires the `https://developer.android.com/reference/kotlin/androi
 
 | Parameters ||
 |---|---|
-| `rctlr` | [RemoteController](../android/media/RemoteController.md)!: the object to register. |
+| `rctlr` | [RemoteController](RemoteController.md)!: the object to register. |
 
 | Return ||
 |---|---|
@@ -3403,7 +3403,7 @@ Request audio focus. See the `https://developer.android.com/reference/kotlin/and
 
 | Parameters ||
 |---|---|
-| `focusRequest` | [AudioFocusRequest](../android/media/AudioFocusRequest.md): a `https://developer.android.com/reference/kotlin/android/media/AudioFocusRequest` instance used to configure how focus is requested. This value cannot be `null`. |
+| `focusRequest` | [AudioFocusRequest](AudioFocusRequest.md): a `https://developer.android.com/reference/kotlin/android/media/AudioFocusRequest` instance used to configure how focus is requested. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -3552,7 +3552,7 @@ The example below shows how to enable and disable speakerphone mode.
 
 | Parameters ||
 |---|---|
-| `device` | [AudioDeviceInfo](../android/media/AudioDeviceInfo.md): the requested audio device. This value cannot be `null`. |
+| `device` | [AudioDeviceInfo](AudioDeviceInfo.md): the requested audio device. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -3650,9 +3650,9 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `attributes` | [AudioAttributes](../android/media/AudioAttributes.md): the `https://developer.android.com/reference/kotlin/android/media/AudioAttributes` whose mixer attributes should be set. Currently, only `https://developer.android.com/reference/kotlin/android/media/AudioAttributes#USAGE_MEDIA:kotlin.Int` is supported. When playing audio targeted at the given device, use the same attributes for playback. This value cannot be `null`. |
-| `device` | [AudioDeviceInfo](../android/media/AudioDeviceInfo.md): the device to be routed. Currently, only USB device will be allowed. This value cannot be `null`. |
-| `mixerAttributes` | [AudioMixerAttributes](../android/media/AudioMixerAttributes.md): the preferred mixer attributes. When playing audio targeted at the given device, use the same `https://developer.android.com/reference/kotlin/android/media/AudioFormat` for both playback and the mixer attributes. This value cannot be `null`. |
+| `attributes` | [AudioAttributes](AudioAttributes.md): the `https://developer.android.com/reference/kotlin/android/media/AudioAttributes` whose mixer attributes should be set. Currently, only `https://developer.android.com/reference/kotlin/android/media/AudioAttributes#USAGE_MEDIA:kotlin.Int` is supported. When playing audio targeted at the given device, use the same attributes for playback. This value cannot be `null`. |
+| `device` | [AudioDeviceInfo](AudioDeviceInfo.md): the device to be routed. Currently, only USB device will be allowed. This value cannot be `null`. |
+| `mixerAttributes` | [AudioMixerAttributes](AudioMixerAttributes.md): the preferred mixer attributes. When playing audio targeted at the given device, use the same `https://developer.android.com/reference/kotlin/android/media/AudioFormat` for both playback and the mixer attributes. This value cannot be `null`. |
 | --- | --- |
 
 | Return ||
@@ -4013,7 +4013,7 @@ Unregisters an `https://developer.android.com/reference/kotlin/android/media/Aud
 
 | Parameters ||
 |---|---|
-| `callback` | [AudioDeviceCallback](../android/media/AudioDeviceCallback.md)!: The `https://developer.android.com/reference/kotlin/android/media/AudioDeviceCallback` object that was previously registered with `https://developer.android.com/reference/kotlin/android/media/AudioManager#registerAudioDeviceCallback(android.media.AudioDeviceCallback,%20android.os.Handler)` to be unregistered. |
+| `callback` | [AudioDeviceCallback](AudioDeviceCallback.md)!: The `https://developer.android.com/reference/kotlin/android/media/AudioDeviceCallback` object that was previously registered with `https://developer.android.com/reference/kotlin/android/media/AudioManager#registerAudioDeviceCallback(android.media.AudioDeviceCallback,%20android.os.Handler)` to be unregistered. |
 
 ### unregisterAudioPlaybackCallback
 
@@ -4058,7 +4058,7 @@ Unregister the receiver of MEDIA_BUTTON intents.
 
 | Parameters ||
 |---|---|
-| `eventReceiver` | [PendingIntent](../android/app/PendingIntent.md)!: same PendingIntent that was registed with `https://developer.android.com/reference/kotlin/android/media/AudioManager#registerMediaButtonEventReceiver(android.app.PendingIntent)`. |
+| `eventReceiver` | [PendingIntent](../android.app/PendingIntent.md)!: same PendingIntent that was registed with `https://developer.android.com/reference/kotlin/android/media/AudioManager#registerMediaButtonEventReceiver(android.app.PendingIntent)`. |
 
 ### unregisterMediaButtonEventReceiver
 
@@ -4075,7 +4075,7 @@ Unregister the receiver of MEDIA_BUTTON intents.
 
 | Parameters ||
 |---|---|
-| `eventReceiver` | [ComponentName](../android/content/ComponentName.md)!: identifier of a `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html#` that was registered with `https://developer.android.com/reference/kotlin/android/media/AudioManager#registerMediaButtonEventReceiver(android.content.ComponentName)`. |
+| `eventReceiver` | [ComponentName](../android.content/ComponentName.md)!: identifier of a `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html#` that was registered with `https://developer.android.com/reference/kotlin/android/media/AudioManager#registerMediaButtonEventReceiver(android.content.ComponentName)`. |
 
 ### unregisterRemoteControlClient
 
@@ -4092,7 +4092,7 @@ Unregisters the remote control client that was providing information to display 
 
 | Parameters ||
 |---|---|
-| `rcClient` | [RemoteControlClient](../android/media/RemoteControlClient.md)!: The remote control client to unregister. |
+| `rcClient` | [RemoteControlClient](RemoteControlClient.md)!: The remote control client to unregister. |
 
 **See Also**
 
@@ -4113,4 +4113,4 @@ Unregisters a `https://developer.android.com/reference/kotlin/android/media/Remo
 
 | Parameters ||
 |---|---|
-| `rctlr` | [RemoteController](../android/media/RemoteController.md)!: the object to unregister. |
+| `rctlr` | [RemoteController](RemoteController.md)!: the object to unregister. |

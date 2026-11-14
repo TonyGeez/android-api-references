@@ -8,15 +8,15 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface SortedSet<E : Any!> : SequencedSet<E>, MutableSet<E>
 ```
 
-| [java.util.SortedSet](../java/util/SortedSet.md) |
+| [java.util.SortedSet](SortedSet.md) |
 
-| Known Direct Subclasses [NavigableSet](../java/util/NavigableSet.md) |---------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [NavigableSet](../java/util/NavigableSet.md) | A [SortedSet](../java/util/SortedSet.md) extended with navigation methods reporting closest matches for given search targets. | |
+| Known Direct Subclasses [NavigableSet](NavigableSet.md) |---------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [NavigableSet](NavigableSet.md) | A [SortedSet](SortedSet.md) extended with navigation methods reporting closest matches for given search targets. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [ConcurrentSkipListSet](../java/util/concurrent/ConcurrentSkipListSet.md), [TreeSet](../java/util/TreeSet.md) |--------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [ConcurrentSkipListSet](../java/util/concurrent/ConcurrentSkipListSet.md) | A scalable concurrent [NavigableSet](../java/util/NavigableSet.md) implementation based on a [ConcurrentSkipListMap](../java/util/concurrent/ConcurrentSkipListMap.md). | | [TreeSet](../java/util/TreeSet.md) | A [NavigableSet](../java/util/NavigableSet.md) implementation based on a [TreeMap](../java/util/TreeMap.md). | |
+| Known Indirect Subclasses [ConcurrentSkipListSet](../java.util.concurrent/ConcurrentSkipListSet.md), [TreeSet](TreeSet.md) |--------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [ConcurrentSkipListSet](../java.util.concurrent/ConcurrentSkipListSet.md) | A scalable concurrent [NavigableSet](NavigableSet.md) implementation based on a [ConcurrentSkipListMap](../java.util.concurrent/ConcurrentSkipListMap.md). | | [TreeSet](TreeSet.md) | A [NavigableSet](NavigableSet.md) implementation based on a [TreeMap](TreeMap.md). | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-A [Set](../java/util/Set.md) that further provides a*total ordering* on its elements. The elements are ordered using their [ordering](../java/lang/Comparable.md), or by a [Comparator](../java/util/Comparator.md) typically provided at sorted set creation time. The set's iterator will traverse the set in ascending element order. Several additional operations are provided to take advantage of the ordering. (This interface is the set analogue of [SortedMap](../java/util/SortedMap.md).)
+A [Set](Set.md) that further provides a*total ordering* on its elements. The elements are ordered using their [ordering](../java.lang/Comparable.md), or by a [Comparator](Comparator.md) typically provided at sorted set creation time. The set's iterator will traverse the set in ascending element order. Several additional operations are provided to take advantage of the ordering. (This interface is the set analogue of [SortedMap](SortedMap.md).)
 
 All elements inserted into a sorted set must implement the`Comparable`interface (or be accepted by the specified comparator). Furthermore, all such elements must be*mutually comparable* :`e1.compareTo(e2)`(or`comparator.compare(e1, e2)`) must not throw a`ClassCastException`for any elements`e1`and`e2`in the sorted set. Attempts to violate this restriction will cause the offending method or constructor invocation to throw a`ClassCastException`.
 
@@ -41,24 +41,24 @@ This interface is a member of the [Java Collections Framework](https://developer
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addFirst](../java/util/SortedSet.md))`(`e:` `E`)` Throws`UnsupportedOperationException`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addLast](../java/util/SortedSet.md))`(`e:` `E`)` Throws`UnsupportedOperationException`. |
-| abstract [Comparator](../java/util/Comparator.md)\<inE\>! | [comparator](../java/util/SortedSet.md))`()` Returns the comparator used to order the elements in this set, or`null`if this set uses the [natural ordering](../java/lang/Comparable.md) of its elements. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addFirst](SortedSet.md))`(`e:` `E`)` Throws`UnsupportedOperationException`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addLast](SortedSet.md))`(`e:` `E`)` Throws`UnsupportedOperationException`. |
+| abstract [Comparator](Comparator.md)\<inE\>! | [comparator](SortedSet.md))`()` Returns the comparator used to order the elements in this set, or`null`if this set uses the [natural ordering](../java.lang/Comparable.md) of its elements. |
 | --- | --- |
-| abstractE | [first](../java/util/SortedSet.md))`()` Returns the first (lowest) element currently in this set. |
-| openE | [getFirst](../java/util/SortedSet.md))`()` Gets the first element of this collection. |
-| openE | [getLast](../java/util/SortedSet.md))`()` Gets the last element of this collection. |
+| abstractE | [first](SortedSet.md))`()` Returns the first (lowest) element currently in this set. |
+| openE | [getFirst](SortedSet.md))`()` Gets the first element of this collection. |
+| openE | [getLast](SortedSet.md))`()` Gets the last element of this collection. |
 | --- | --- |
-| abstract [SortedSet](../java/util/SortedSet.md)\<E\>! | [headSet](../java/util/SortedSet.md))`(`toElement:` `E`)` Returns a view of the portion of this set whose elements are strictly less than`toElement`. |
-| abstractE | [last](../java/util/SortedSet.md))`()` Returns the last (highest) element currently in this set. |
-| openE | [removeFirst](../java/util/SortedSet.md))`()` Removes and returns the first element of this collection (optional operation). |
+| abstract [SortedSet](SortedSet.md)\<E\>! | [headSet](SortedSet.md))`(`toElement:` `E`)` Returns a view of the portion of this set whose elements are strictly less than`toElement`. |
+| abstractE | [last](SortedSet.md))`()` Returns the last (highest) element currently in this set. |
+| openE | [removeFirst](SortedSet.md))`()` Removes and returns the first element of this collection (optional operation). |
 | --- | --- |
-| openE | [removeLast](../java/util/SortedSet.md))`()` Removes and returns the last element of this collection (optional operation). |
-| open [SortedSet](../java/util/SortedSet.md)\<E\>! | [reversed](../java/util/SortedSet.md))`()` Returns a reverse-ordered [view](../java/util/Collection.md) of this collection. |
-| open [Spliterator](../java/util/Spliterator.md)\<E\> | [spliterator](../java/util/SortedSet.md))`()` Creates a`Spliterator`over the elements in this sorted set. |
+| openE | [removeLast](SortedSet.md))`()` Removes and returns the last element of this collection (optional operation). |
+| open [SortedSet](SortedSet.md)\<E\>! | [reversed](SortedSet.md))`()` Returns a reverse-ordered [view](Collection.md) of this collection. |
+| open [Spliterator](Spliterator.md)\<E\> | [spliterator](SortedSet.md))`()` Creates a`Spliterator`over the elements in this sorted set. |
 | --- | --- |
-| abstract [SortedSet](../java/util/SortedSet.md)\<E\>! | [subSet](../java/util/SortedSet.md))`(`fromElement:` `E`, `toElement:` `E`)` Returns a view of the portion of this set whose elements range from`fromElement`, inclusive, to`toElement`, exclusive. |
-| abstract [SortedSet](../java/util/SortedSet.md)\<E\>! | [tailSet](../java/util/SortedSet.md))`(`fromElement:` `E`)` Returns a view of the portion of this set whose elements are greater than or equal to`fromElement`. |
+| abstract [SortedSet](SortedSet.md)\<E\>! | [subSet](SortedSet.md))`(`fromElement:` `E`, `toElement:` `E`)` Returns a view of the portion of this set whose elements range from`fromElement`, inclusive, to`toElement`, exclusive. |
+| abstract [SortedSet](SortedSet.md)\<E\>! | [tailSet](SortedSet.md))`(`fromElement:` `E`)` Returns a view of the portion of this set whose elements are greater than or equal to`fromElement`. |
 
 ## Public methods
 
@@ -108,11 +108,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun comparator(): Comparator<in E>!
 ```
 
-Returns the comparator used to order the elements in this set, or`null`if this set uses the [natural ordering](../java/lang/Comparable.md) of its elements.
+Returns the comparator used to order the elements in this set, or`null`if this set uses the [natural ordering](../java.lang/Comparable.md) of its elements.
 
 | Return ||
 |--------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| [Comparator](../java/util/Comparator.md)<in` `E>! | the comparator used to order the elements in this set, or`null`if this set uses the natural ordering of its elements |
+| [Comparator](Comparator.md)<in` `E>! | the comparator used to order the elements in this set, or`null`if this set uses the natural ordering of its elements |
 
 ### first
 
@@ -186,11 +186,11 @@ The returned set will throw an`IllegalArgumentException`on an attempt to insert 
 
 | Return ||
 |--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| [SortedSet](../java/util/SortedSet.md)<E>! | a view of the portion of this set whose elements are strictly less than`toElement` |
+| [SortedSet](SortedSet.md)<E>! | a view of the portion of this set whose elements are strictly less than`toElement` |
 
 | Exceptions ||
 |--------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.ClassCastException` | if`toElement`is not compatible with this set's comparator (or, if the set has no comparator, if`toElement`does not implement [Comparable](../java/lang/Comparable.md)). Implementations may, but are not required to, throw this exception if`toElement`cannot be compared to elements currently in the set. |
+| `java.lang.ClassCastException` | if`toElement`is not compatible with this set's comparator (or, if the set has no comparator, if`toElement`does not implement [Comparable](../java.lang/Comparable.md)). Implementations may, but are not required to, throw this exception if`toElement`cannot be compared to elements currently in the set. |
 | `java.lang.NullPointerException` | if`toElement`is null and this set does not permit null elements |
 | `java.lang.IllegalArgumentException` | if this set itself has a restricted range, and`toElement`lies outside the bounds of the range |
 | --- | --- |
@@ -259,11 +259,11 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 open fun reversed(): SortedSet<E>!
 ```
 
-Returns a reverse-ordered [view](../java/util/Collection.md) of this collection. The encounter order of elements in the returned view is the inverse of the encounter order of elements in this collection. The reverse ordering affects all order-sensitive operations, including those on the view collections of the returned view. If the collection implementation permits modifications to this view, the modifications "write through" to the underlying collection. Changes to the underlying collection might or might not be visible in this reversed view, depending upon the implementation.
+Returns a reverse-ordered [view](Collection.md) of this collection. The encounter order of elements in the returned view is the inverse of the encounter order of elements in this collection. The reverse ordering affects all order-sensitive operations, including those on the view collections of the returned view. If the collection implementation permits modifications to this view, the modifications "write through" to the underlying collection. Changes to the underlying collection might or might not be visible in this reversed view, depending upon the implementation.
 
 | Return ||
 |--------------------------------------------------------------------------------------|------------------------------------------------------------|
-| [SortedSet](../java/util/SortedSet.md)<E>! | a reverse-ordered view of this collection, as a`SortedSet` |
+| [SortedSet](SortedSet.md)<E>! | a reverse-ordered view of this collection, as a`SortedSet` |
 
 ### spliterator
 
@@ -275,13 +275,13 @@ open fun spliterator(): Spliterator<E>
 
 Creates a`Spliterator`over the elements in this sorted set.
 
-The`Spliterator`reports [Spliterator.DISTINCT](../java/util/Spliterator.md), [Spliterator.SORTED](../java/util/Spliterator.md) and [Spliterator.ORDERED](../java/util/Spliterator.md). Implementations should document the reporting of additional characteristic values.
+The`Spliterator`reports [Spliterator.DISTINCT](Spliterator.md), [Spliterator.SORTED](Spliterator.md) and [Spliterator.ORDERED](Spliterator.md). Implementations should document the reporting of additional characteristic values.
 
-The spliterator's comparator (see [java.util.Spliterator#getComparator()](../java/util/Spliterator.md))) must be`null`if the sorted set's comparator (see [comparator()](../java/util/SortedSet.md))) is`null`. Otherwise, the spliterator's comparator must be the same as or impose the same total ordering as the sorted set's comparator.
+The spliterator's comparator (see [java.util.Spliterator#getComparator()](Spliterator.md))) must be`null`if the sorted set's comparator (see [comparator()](SortedSet.md))) is`null`. Otherwise, the spliterator's comparator must be the same as or impose the same total ordering as the sorted set's comparator.
 
 | Return ||
 |----------------------------------------------------------------------------------------|----------------------------------------------------|
-| [Spliterator](../java/util/Spliterator.md)<E> | a`Spliterator`over the elements in this sorted set |
+| [Spliterator](Spliterator.md)<E> | a`Spliterator`over the elements in this sorted set |
 
 ### subSet
 
@@ -305,7 +305,7 @@ The returned set will throw an`IllegalArgumentException`on an attempt to insert 
 
 | Return ||
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| [SortedSet](../java/util/SortedSet.md)<E>! | a view of the portion of this set whose elements range from`fromElement`, inclusive, to`toElement`, exclusive |
+| [SortedSet](SortedSet.md)<E>! | a view of the portion of this set whose elements range from`fromElement`, inclusive, to`toElement`, exclusive |
 
 | Exceptions ||
 |--------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -332,11 +332,11 @@ The returned set will throw an`IllegalArgumentException`on an attempt to insert 
 
 | Return ||
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
-| [SortedSet](../java/util/SortedSet.md)<E>! | a view of the portion of this set whose elements are greater than or equal to`fromElement` |
+| [SortedSet](SortedSet.md)<E>! | a view of the portion of this set whose elements are greater than or equal to`fromElement` |
 
 | Exceptions ||
 |--------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.ClassCastException` | if`fromElement`is not compatible with this set's comparator (or, if the set has no comparator, if`fromElement`does not implement [Comparable](../java/lang/Comparable.md)). Implementations may, but are not required to, throw this exception if`fromElement`cannot be compared to elements currently in the set. |
+| `java.lang.ClassCastException` | if`fromElement`is not compatible with this set's comparator (or, if the set has no comparator, if`fromElement`does not implement [Comparable](../java.lang/Comparable.md)). Implementations may, but are not required to, throw this exception if`fromElement`cannot be compared to elements currently in the set. |
 | `java.lang.NullPointerException` | if`fromElement`is null and this set does not permit null elements |
 | `java.lang.IllegalArgumentException` | if this set itself has a restricted range, and`fromElement`lies outside the bounds of the range |
 | --- | --- |

@@ -11,14 +11,14 @@ abstract class VirtualMachineError : Error
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
-| | ↳ | [java.lang.Error](../java/lang/Error.md) ||
-| | | ↳ | [java.lang.VirtualMachineError](../java/lang/VirtualMachineError.md) |
+| | ↳ | [java.lang.Error](Error.md) ||
+| | | ↳ | [java.lang.VirtualMachineError](VirtualMachineError.md) |
 | --- | --- | --- | --- |
 
-| Known Direct Subclasses [InternalError](../java/lang/InternalError.md), [OutOfMemoryError](../java/lang/OutOfMemoryError.md), [StackOverflowError](../java/lang/StackOverflowError.md), [UnknownError](../java/lang/UnknownError.md) |---------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [InternalError](../java/lang/InternalError.md) | Thrown to indicate some unexpected internal error has occurred in the Java Virtual Machine. | | [OutOfMemoryError](../java/lang/OutOfMemoryError.md) | Thrown when the Java Virtual Machine cannot allocate an object because it is out of memory, and no more memory could be made available by the garbage collector. | | [StackOverflowError](../java/lang/StackOverflowError.md) | Thrown when a stack overflow occurs because an application recurses too deeply. | | [UnknownError](../java/lang/UnknownError.md) | Thrown when an unknown but serious exception has occurred in the Java Virtual Machine. | |
+| Known Direct Subclasses [InternalError](InternalError.md), [OutOfMemoryError](OutOfMemoryError.md), [StackOverflowError](StackOverflowError.md), [UnknownError](UnknownError.md) |---------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [InternalError](InternalError.md) | Thrown to indicate some unexpected internal error has occurred in the Java Virtual Machine. | | [OutOfMemoryError](OutOfMemoryError.md) | Thrown when the Java Virtual Machine cannot allocate an object because it is out of memory, and no more memory could be made available by the garbage collector. | | [StackOverflowError](StackOverflowError.md) | Thrown when a stack overflow occurs because an application recurses too deeply. | | [UnknownError](UnknownError.md) | Thrown when an unknown but serious exception has occurred in the Java Virtual Machine. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [ZipError](../java/util/zip/ZipError.md) |-----------------------------------------------------------------------------------------|---------------------------------------------------| | [ZipError](../java/util/zip/ZipError.md) | Signals that an unrecoverable error has occurred. | |
+| Known Indirect Subclasses [ZipError](../java.util.zip/ZipError.md) |-----------------------------------------------------------------------------------------|---------------------------------------------------| | [ZipError](../java.util.zip/ZipError.md) | Signals that an unrecoverable error has occurred. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 Thrown to indicate that the Java Virtual Machine is broken or has run out of resources necessary for it to continue operating.
@@ -27,10 +27,10 @@ Thrown to indicate that the Java Virtual Machine is broken or has run out of res
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [VirtualMachineError](../java/lang/VirtualMachineError.md))`()` Constructs a`VirtualMachineError`with no detail message. |
-| [VirtualMachineError](../java/lang/VirtualMachineError.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a`VirtualMachineError`with the specified detail message. |
-| [VirtualMachineError](../java/lang/VirtualMachineError.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a`VirtualMachineError`with the specified detail message and cause. |
-| [VirtualMachineError](../java/lang/VirtualMachineError.md))`(`cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs an a`VirtualMachineError`with the specified cause and a detail message of`(cause==null ? null : cause.toString())`(which typically contains the class and detail message of`cause`). |
+| [VirtualMachineError](VirtualMachineError.md))`()` Constructs a`VirtualMachineError`with no detail message. |
+| [VirtualMachineError](VirtualMachineError.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a`VirtualMachineError`with the specified detail message. |
+| [VirtualMachineError](VirtualMachineError.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a`VirtualMachineError`with the specified detail message and cause. |
+| [VirtualMachineError](VirtualMachineError.md))`(`cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs an a`VirtualMachineError`with the specified cause and a detail message of`(cause==null ? null : cause.toString())`(which typically contains the class and detail message of`cause`). |
 
 ## Public constructors
 
@@ -74,8 +74,8 @@ Note that the detail message associated with`cause`is*not*automatically incorpor
 
 | Parameters ||
 |-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the detail message (which is saved for later retrieval by the [getMessage()](../java/lang/Throwable.md))method). |
-| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!:the cause (which is saved for later retrieval by the [getCause()](../java/lang/Throwable.md))method). (A`null`value is permitted, and indicates that the cause is nonexistent or unknown.) |
+| `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the detail message (which is saved for later retrieval by the [getMessage()](Throwable.md))method). |
+| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!:the cause (which is saved for later retrieval by the [getCause()](Throwable.md))method). (A`null`value is permitted, and indicates that the cause is nonexistent or unknown.) |
 
 ### VirtualMachineError
 
@@ -89,4 +89,4 @@ Constructs an a`VirtualMachineError`with the specified cause and a detail messag
 
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!:the cause (which is saved for later retrieval by the [getCause()](../java/lang/Throwable.md))method). (A`null`value is permitted, and indicates that the cause is nonexistent or unknown.) |
+| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!:the cause (which is saved for later retrieval by the [getCause()](Throwable.md))method). (A`null`value is permitted, and indicates that the cause is nonexistent or unknown.) |

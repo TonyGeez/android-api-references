@@ -11,10 +11,10 @@ open class UnsupportedEncodingException : IOException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
-| | | ↳ | [java.io.IOException](../java/io/IOException.md) ||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) |||
+| | | ↳ | [java.io.IOException](IOException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.io.UnsupportedEncodingException](../java/io/UnsupportedEncodingException.md) |
+| | | | ↳ | [java.io.UnsupportedEncodingException](UnsupportedEncodingException.md) |
 
 The Character Encoding is not supported.
 
@@ -22,8 +22,8 @@ The Character Encoding is not supported.
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [UnsupportedEncodingException](../java/io/UnsupportedEncodingException.md))`()` Constructs an UnsupportedEncodingException without a detail message. |
-| [UnsupportedEncodingException](../java/io/UnsupportedEncodingException.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an UnsupportedEncodingException with a detail message. |
+| [UnsupportedEncodingException](UnsupportedEncodingException.md))`()` Constructs an UnsupportedEncodingException without a detail message. |
+| [UnsupportedEncodingException](UnsupportedEncodingException.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an UnsupportedEncodingException with a detail message. |
 
 ## Public constructors
 

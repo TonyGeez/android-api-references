@@ -2,7 +2,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # Build
 
-Kotlin | [Java](../android/os/Build.md)
+Kotlin | [Java](Build.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ open class Build
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.os.Build](../android/os/Build.md) |
+| ↳ | [android.os.Build](Build.md) |
 
 Information about the current build, extracted from system properties.
 

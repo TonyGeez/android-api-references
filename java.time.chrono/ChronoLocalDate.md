@@ -8,16 +8,16 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 interface ChronoLocalDate : Comparable<ChronoLocalDate!>, Temporal, TemporalAdjuster
 ```
 
-| [java.time.chrono.ChronoLocalDate](../java/time/chrono/ChronoLocalDate.md) |
+| [java.time.chrono.ChronoLocalDate](ChronoLocalDate.md) |
 
-| Known Direct Subclasses [HijrahDate](../java/time/chrono/HijrahDate.md), [JapaneseDate](../java/time/chrono/JapaneseDate.md), [LocalDate](../java/time/LocalDate.md), [MinguoDate](../java/time/chrono/MinguoDate.md), [ThaiBuddhistDate](../java/time/chrono/ThaiBuddhistDate.md) |------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------| | [HijrahDate](../java/time/chrono/HijrahDate.md) | A date in the Hijrah calendar system. | | [JapaneseDate](../java/time/chrono/JapaneseDate.md) | A date in the Japanese Imperial calendar system. | | [LocalDate](../java/time/LocalDate.md) | A date without a time-zone in the ISO-8601 calendar system, such as`2007-12-03`. | | [MinguoDate](../java/time/chrono/MinguoDate.md) | A date in the Minguo calendar system. | | [ThaiBuddhistDate](../java/time/chrono/ThaiBuddhistDate.md) | A date in the Thai Buddhist calendar system. | |
+| Known Direct Subclasses [HijrahDate](HijrahDate.md), [JapaneseDate](JapaneseDate.md), [LocalDate](../java.time/LocalDate.md), [MinguoDate](MinguoDate.md), [ThaiBuddhistDate](ThaiBuddhistDate.md) |------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------| | [HijrahDate](HijrahDate.md) | A date in the Hijrah calendar system. | | [JapaneseDate](JapaneseDate.md) | A date in the Japanese Imperial calendar system. | | [LocalDate](../java.time/LocalDate.md) | A date without a time-zone in the ISO-8601 calendar system, such as`2007-12-03`. | | [MinguoDate](MinguoDate.md) | A date in the Minguo calendar system. | | [ThaiBuddhistDate](ThaiBuddhistDate.md) | A date in the Thai Buddhist calendar system. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 A date without time-of-day or time-zone in an arbitrary chronology, intended for advanced globalization use cases.
 
-**Most applications should declare method signatures, fields and variables as [LocalDate](../java/time/LocalDate.md), not this interface.**
+**Most applications should declare method signatures, fields and variables as [LocalDate](../java.time/LocalDate.md), not this interface.**
 
-A`ChronoLocalDate`is the abstract representation of a date where the`Chronology chronology`, or calendar system, is pluggable. The date is defined in terms of fields expressed by [TemporalField](../java/time/temporal/TemporalField.md), where most common implementations are defined in [ChronoField](../java/time/temporal/ChronoField.md). The chronology defines how the calendar system operates and the meaning of the standard fields.
+A`ChronoLocalDate`is the abstract representation of a date where the`Chronology chronology`, or calendar system, is pluggable. The date is defined in terms of fields expressed by [TemporalField](../java.time.temporal/TemporalField.md), where most common implementations are defined in [ChronoField](../java.time.temporal/ChronoField.md). The chronology defines how the calendar system operates and the meaning of the standard fields.
 
 ## When to use this interface
 
@@ -82,46 +82,46 @@ In any other part of the system, where a date must be manipulated in a calendar 
 - perform the calculation
 - convert back to`LocalDate`
 
-Developers writing low-level frameworks or libraries should also avoid this interface. Instead, one of the two general purpose access interfaces should be used. Use [TemporalAccessor](../java/time/temporal/TemporalAccessor.md) if read-only access is required, or use [Temporal](../java/time/temporal/Temporal.md) if read-write access is required.
+Developers writing low-level frameworks or libraries should also avoid this interface. Instead, one of the two general purpose access interfaces should be used. Use [TemporalAccessor](../java.time.temporal/TemporalAccessor.md) if read-only access is required, or use [Temporal](../java.time.temporal/Temporal.md) if read-write access is required.
 
 ## Summary
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Temporal](../java/time/temporal/Temporal.md)! | [adjustInto](../java/time/chrono/ChronoLocalDate.md))`(`temporal:` ` [Temporal](../java/time/temporal/Temporal.md)!`)` Adjusts the specified temporal object to have the same date as this object. |
-| open [ChronoLocalDateTime](../java/time/chrono/ChronoLocalDateTime.md)\<\*\>! | [atTime](../java/time/chrono/ChronoLocalDate.md))`(`localTime:` ` [LocalTime](../java/time/LocalTime.md)!`)` Combines this date with a time to create a`ChronoLocalDateTime`. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](../java/time/chrono/ChronoLocalDate.md))`(`other:` ` [ChronoLocalDate](../java/time/chrono/ChronoLocalDate.md)!`)` Compares this date to another date, including the chronology. |
+| open [Temporal](../java.time.temporal/Temporal.md)! | [adjustInto](ChronoLocalDate.md))`(`temporal:` ` [Temporal](../java.time.temporal/Temporal.md)!`)` Adjusts the specified temporal object to have the same date as this object. |
+| open [ChronoLocalDateTime](ChronoLocalDateTime.md)\<\*\>! | [atTime](ChronoLocalDate.md))`(`localTime:` ` [LocalTime](../java.time/LocalTime.md)!`)` Combines this date with a time to create a`ChronoLocalDateTime`. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](ChronoLocalDate.md))`(`other:` ` [ChronoLocalDate](ChronoLocalDate.md)!`)` Compares this date to another date, including the chronology. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](../java/time/chrono/ChronoLocalDate.md))`(`formatter:` ` [DateTimeFormatter](../java/time/format/DateTimeFormatter.md)!`)` Formats this date using the specified formatter. |
-| openstatic [ChronoLocalDate](../java/time/chrono/ChronoLocalDate.md)! | [from](../java/time/chrono/ChronoLocalDate.md))`(`temporal:` ` [TemporalAccessor](../java/time/temporal/TemporalAccessor.md)!`)` Obtains an instance of`ChronoLocalDate`from a temporal object. |
-| abstract [Chronology](../java/time/chrono/Chronology.md)! | [getChronology](../java/time/chrono/ChronoLocalDate.md))`()` Gets the chronology of this date. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](ChronoLocalDate.md))`(`formatter:` ` [DateTimeFormatter](../java.time.format/DateTimeFormatter.md)!`)` Formats this date using the specified formatter. |
+| openstatic [ChronoLocalDate](ChronoLocalDate.md)! | [from](ChronoLocalDate.md))`(`temporal:` ` [TemporalAccessor](../java.time.temporal/TemporalAccessor.md)!`)` Obtains an instance of`ChronoLocalDate`from a temporal object. |
+| abstract [Chronology](Chronology.md)! | [getChronology](ChronoLocalDate.md))`()` Gets the chronology of this date. |
 | --- | --- |
-| open [Era](../java/time/chrono/Era.md)! | [getEra](../java/time/chrono/ChronoLocalDate.md))`()` Gets the era, as defined by the chronology. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAfter](../java/time/chrono/ChronoLocalDate.md))`(`other:` ` [ChronoLocalDate](../java/time/chrono/ChronoLocalDate.md)!`)` Checks if this date is after the specified date ignoring the chronology. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isBefore](../java/time/chrono/ChronoLocalDate.md))`(`other:` ` [ChronoLocalDate](../java/time/chrono/ChronoLocalDate.md)!`)` Checks if this date is before the specified date ignoring the chronology. |
+| open [Era](Era.md)! | [getEra](ChronoLocalDate.md))`()` Gets the era, as defined by the chronology. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAfter](ChronoLocalDate.md))`(`other:` ` [ChronoLocalDate](ChronoLocalDate.md)!`)` Checks if this date is after the specified date ignoring the chronology. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isBefore](ChronoLocalDate.md))`(`other:` ` [ChronoLocalDate](ChronoLocalDate.md)!`)` Checks if this date is before the specified date ignoring the chronology. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEqual](../java/time/chrono/ChronoLocalDate.md))`(`other:` ` [ChronoLocalDate](../java/time/chrono/ChronoLocalDate.md)!`)` Checks if this date is equal to the specified date ignoring the chronology. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLeapYear](../java/time/chrono/ChronoLocalDate.md))`()` Checks if the year is a leap year, as defined by the calendar system. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSupported](../java/time/chrono/ChronoLocalDate.md))`(`field:` ` [TemporalField](../java/time/temporal/TemporalField.md)!`)` Checks if the specified field is supported. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEqual](ChronoLocalDate.md))`(`other:` ` [ChronoLocalDate](ChronoLocalDate.md)!`)` Checks if this date is equal to the specified date ignoring the chronology. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLeapYear](ChronoLocalDate.md))`()` Checks if the year is a leap year, as defined by the calendar system. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSupported](ChronoLocalDate.md))`(`field:` ` [TemporalField](../java.time.temporal/TemporalField.md)!`)` Checks if the specified field is supported. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSupported](../java/time/chrono/ChronoLocalDate.md))`(`unit:` ` [TemporalUnit](../java/time/temporal/TemporalUnit.md)!`)` Checks if the specified unit is supported. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [lengthOfMonth](../java/time/chrono/ChronoLocalDate.md))`()` Returns the length of the month represented by this date, as defined by the calendar system. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [lengthOfYear](../java/time/chrono/ChronoLocalDate.md))`()` Returns the length of the year represented by this date, as defined by the calendar system. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSupported](ChronoLocalDate.md))`(`unit:` ` [TemporalUnit](../java.time.temporal/TemporalUnit.md)!`)` Checks if the specified unit is supported. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [lengthOfMonth](ChronoLocalDate.md))`()` Returns the length of the month represented by this date, as defined by the calendar system. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [lengthOfYear](ChronoLocalDate.md))`()` Returns the length of the year represented by this date, as defined by the calendar system. |
 | --- | --- |
-| open [ChronoLocalDate](../java/time/chrono/ChronoLocalDate.md)! | [minus](../java/time/chrono/ChronoLocalDate.md))`(`amount:` ` [TemporalAmount](../java/time/temporal/TemporalAmount.md)!`)` Returns an object of the same type as this object with an amount subtracted. |
-| open [ChronoLocalDate](../java/time/chrono/ChronoLocalDate.md)! | [minus](../java/time/chrono/ChronoLocalDate.md))`(`amountToSubtract:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TemporalUnit](../java/time/temporal/TemporalUnit.md)!`)` Returns an object of the same type as this object with the specified period subtracted. |
-| open [ChronoLocalDate](../java/time/chrono/ChronoLocalDate.md)! | [plus](../java/time/chrono/ChronoLocalDate.md))`(`amount:` ` [TemporalAmount](../java/time/temporal/TemporalAmount.md)!`)` Returns an object of the same type as this object with an amount added. |
+| open [ChronoLocalDate](ChronoLocalDate.md)! | [minus](ChronoLocalDate.md))`(`amount:` ` [TemporalAmount](../java.time.temporal/TemporalAmount.md)!`)` Returns an object of the same type as this object with an amount subtracted. |
+| open [ChronoLocalDate](ChronoLocalDate.md)! | [minus](ChronoLocalDate.md))`(`amountToSubtract:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TemporalUnit](../java.time.temporal/TemporalUnit.md)!`)` Returns an object of the same type as this object with the specified period subtracted. |
+| open [ChronoLocalDate](ChronoLocalDate.md)! | [plus](ChronoLocalDate.md))`(`amount:` ` [TemporalAmount](../java.time.temporal/TemporalAmount.md)!`)` Returns an object of the same type as this object with an amount added. |
 | --- | --- |
-| open [ChronoLocalDate](../java/time/chrono/ChronoLocalDate.md)! | [plus](../java/time/chrono/ChronoLocalDate.md))`(`amountToAdd:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TemporalUnit](../java/time/temporal/TemporalUnit.md)!`)` Returns an object of the same type as this object with the specified period added. |
-| openR | [query](../java/time/chrono/ChronoLocalDate.md))`(`query:` ` [TemporalQuery](../java/time/temporal/TemporalQuery.md)<R>!`)` Queries this date using the specified query. |
-| openstatic [Comparator](../java/util/Comparator.md)\< [ChronoLocalDate](../java/time/chrono/ChronoLocalDate.md)!\>! | [timeLineOrder](../java/time/chrono/ChronoLocalDate.md))`()` Gets a comparator that compares`ChronoLocalDate`in time-line order ignoring the chronology. |
+| open [ChronoLocalDate](ChronoLocalDate.md)! | [plus](ChronoLocalDate.md))`(`amountToAdd:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TemporalUnit](../java.time.temporal/TemporalUnit.md)!`)` Returns an object of the same type as this object with the specified period added. |
+| openR | [query](ChronoLocalDate.md))`(`query:` ` [TemporalQuery](../java.time.temporal/TemporalQuery.md)<R>!`)` Queries this date using the specified query. |
+| openstatic [Comparator](../java.util/Comparator.md)\< [ChronoLocalDate](ChronoLocalDate.md)!\>! | [timeLineOrder](ChronoLocalDate.md))`()` Gets a comparator that compares`ChronoLocalDate`in time-line order ignoring the chronology. |
 | --- | --- |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toEpochDay](../java/time/chrono/ChronoLocalDate.md))`()` Converts this date to the Epoch Day. |
-| abstract [ChronoPeriod](../java/time/chrono/ChronoPeriod.md)! | [until](../java/time/chrono/ChronoLocalDate.md))`(`endDateExclusive:` ` [ChronoLocalDate](../java/time/chrono/ChronoLocalDate.md)!`)` Calculates the period between this date and another date as a`ChronoPeriod`. |
-| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [until](../java/time/chrono/ChronoLocalDate.md))`(`endExclusive:` ` [Temporal](../java/time/temporal/Temporal.md)!`, `unit:` ` [TemporalUnit](../java/time/temporal/TemporalUnit.md)!`)` Calculates the amount of time until another date in terms of the specified unit. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toEpochDay](ChronoLocalDate.md))`()` Converts this date to the Epoch Day. |
+| abstract [ChronoPeriod](ChronoPeriod.md)! | [until](ChronoLocalDate.md))`(`endDateExclusive:` ` [ChronoLocalDate](ChronoLocalDate.md)!`)` Calculates the period between this date and another date as a`ChronoPeriod`. |
+| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [until](ChronoLocalDate.md))`(`endExclusive:` ` [Temporal](../java.time.temporal/Temporal.md)!`, `unit:` ` [TemporalUnit](../java.time.temporal/TemporalUnit.md)!`)` Calculates the amount of time until another date in terms of the specified unit. |
 | --- | --- |
-| open [ChronoLocalDate](../java/time/chrono/ChronoLocalDate.md)! | [with](../java/time/chrono/ChronoLocalDate.md))`(`adjuster:` ` [TemporalAdjuster](../java/time/temporal/TemporalAdjuster.md)!`)` Returns an adjusted object of the same type as this object with the adjustment made. |
-| open [ChronoLocalDate](../java/time/chrono/ChronoLocalDate.md)! | [with](../java/time/chrono/ChronoLocalDate.md))`(`field:` ` [TemporalField](../java/time/temporal/TemporalField.md)!`, `newValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns an object of the same type as this object with the specified field altered. |
+| open [ChronoLocalDate](ChronoLocalDate.md)! | [with](ChronoLocalDate.md))`(`adjuster:` ` [TemporalAdjuster](../java.time.temporal/TemporalAdjuster.md)!`)` Returns an adjusted object of the same type as this object with the adjustment made. |
+| open [ChronoLocalDate](ChronoLocalDate.md)! | [with](ChronoLocalDate.md))`(`field:` ` [TemporalField](../java.time.temporal/TemporalField.md)!`, `newValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns an object of the same type as this object with the specified field altered. |
 
 ## Public methods
 
@@ -137,9 +137,9 @@ Adjusts the specified temporal object to have the same date as this object.
 
 This returns a temporal object of the same observable type as the input with the date changed to be the same as this.
 
-The adjustment is equivalent to using [Temporal.with(TemporalField, long)](../java/time/temporal/Temporal.md))passing [ChronoField.EPOCH_DAY](../java/time/temporal/ChronoField.md) as the field.
+The adjustment is equivalent to using [Temporal.with(TemporalField, long)](../java.time.temporal/Temporal.md))passing [ChronoField.EPOCH_DAY](../java.time.temporal/ChronoField.md) as the field.
 
-In most cases, it is clearer to reverse the calling pattern by using [Temporal.with(TemporalAdjuster)](../java/time/temporal/Temporal.md)): 
+In most cases, it is clearer to reverse the calling pattern by using [Temporal.with(TemporalAdjuster)](../java.time.temporal/Temporal.md)): 
 
 ```kotlin
 // these two lines are equivalent, but the second approach is recommended
@@ -152,11 +152,11 @@ This instance is immutable and unaffected by this method call.
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| `temporal` | [Temporal](../java/time/temporal/Temporal.md)!:the target object to be adjusted, not null |
+| `temporal` | [Temporal](../java.time.temporal/Temporal.md)!:the target object to be adjusted, not null |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|-------------------------------|
-| [Temporal](../java/time/temporal/Temporal.md)! | the adjusted object, not null |
+| [Temporal](../java.time.temporal/Temporal.md)! | the adjusted object, not null |
 
 | Exceptions ||
 |---------------------------------|----------------------------------|
@@ -177,11 +177,11 @@ This returns a`ChronoLocalDateTime`formed from this date at the specified time. 
 
 | Parameters ||
 |-------------|------------------------------------------------------------------------------------------------------------------------|
-| `localTime` | [LocalTime](../java/time/LocalTime.md)!:the local time to use, not null |
+| `localTime` | [LocalTime](../java.time/LocalTime.md)!:the local time to use, not null |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| [ChronoLocalDateTime](../java/time/chrono/ChronoLocalDateTime.md)<*>! | the local date-time formed from this date and the specified time, not null |
+| [ChronoLocalDateTime](ChronoLocalDateTime.md)<*>! | the local date-time formed from this date and the specified time, not null |
 
 ### compareTo
 
@@ -193,7 +193,7 @@ open fun compareTo(other: ChronoLocalDate!): Int
 
 Compares this date to another date, including the chronology.
 
-The comparison is based first on the underlying time-line date, then on the chronology. It is "consistent with equals", as defined by [Comparable](../java/lang/Comparable.md).
+The comparison is based first on the underlying time-line date, then on the chronology. It is "consistent with equals", as defined by [Comparable](../java.lang/Comparable.md).
 
 For example, the following is the comparator order:
 
@@ -204,14 +204,14 @@ For example, the following is the comparator order:
 
 Values #2 and #3 represent the same date on the time-line. When two values represent the same date, the chronology ID is compared to distinguish them. This step is needed to make the ordering "consistent with equals".
 
-If all the date objects being compared are in the same chronology, then the additional chronology stage is not required and only the local date is used. To compare the dates of two`TemporalAccessor`instances, including dates in two different chronologies, use [ChronoField.EPOCH_DAY](../java/time/temporal/ChronoField.md) as a comparator.
+If all the date objects being compared are in the same chronology, then the additional chronology stage is not required and only the local date is used. To compare the dates of two`TemporalAccessor`instances, including dates in two different chronologies, use [ChronoField.EPOCH_DAY](../java.time.temporal/ChronoField.md) as a comparator.
 
 This default implementation performs the comparison defined above.
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------|
 | `o` | the object to be compared. |
-| `other` | [ChronoLocalDate](../java/time/chrono/ChronoLocalDate.md)!:the other date to compare to, not null |
+| `other` | [ChronoLocalDate](ChronoLocalDate.md)!:the other date to compare to, not null |
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------------------------------------|
@@ -243,7 +243,7 @@ return formatter.format(this);
 
 | Parameters ||
 |-------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| `formatter` | [DateTimeFormatter](../java/time/format/DateTimeFormatter.md)!:the formatter to use, not null |
+| `formatter` | [DateTimeFormatter](../java.time.format/DateTimeFormatter.md)!:the formatter to use, not null |
 
 | Return ||
 |-----------------------------------------------------------------------------------|-------------------------------------|
@@ -265,17 +265,17 @@ Obtains an instance of`ChronoLocalDate`from a temporal object.
 
 This obtains a local date based on the specified temporal. A`TemporalAccessor`represents an arbitrary set of date and time information, which this factory converts to an instance of`ChronoLocalDate`.
 
-The conversion extracts and combines the chronology and the date from the temporal object. The behavior is equivalent to using [Chronology.date(TemporalAccessor)](../java/time/chrono/Chronology.md))with the extracted chronology. Implementations are permitted to perform optimizations such as accessing those fields that are equivalent to the relevant objects.
+The conversion extracts and combines the chronology and the date from the temporal object. The behavior is equivalent to using [Chronology.date(TemporalAccessor)](Chronology.md))with the extracted chronology. Implementations are permitted to perform optimizations such as accessing those fields that are equivalent to the relevant objects.
 
-This method matches the signature of the functional interface [TemporalQuery](../java/time/temporal/TemporalQuery.md) allowing it to be used as a query via method reference,`ChronoLocalDate::from`.
+This method matches the signature of the functional interface [TemporalQuery](../java.time.temporal/TemporalQuery.md) allowing it to be used as a query via method reference,`ChronoLocalDate::from`.
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `temporal` | [TemporalAccessor](../java/time/temporal/TemporalAccessor.md)!:the temporal object to convert, not null |
+| `temporal` | [TemporalAccessor](../java.time.temporal/TemporalAccessor.md)!:the temporal object to convert, not null |
 
 | Return ||
 |------------------------------------------------------------------------------------------------------|--------------------|
-| [ChronoLocalDate](../java/time/chrono/ChronoLocalDate.md)! | the date, not null |
+| [ChronoLocalDate](ChronoLocalDate.md)! | the date, not null |
 
 | Exceptions ||
 |-------------------------------|--------------------------------------------|
@@ -283,7 +283,7 @@ This method matches the signature of the functional interface [TemporalQuery](..
 
 **See Also**
 
-- [java.time.chrono.Chronology#date(TemporalAccessor)](../java/time/chrono/Chronology.md)) 
+- [java.time.chrono.Chronology#date(TemporalAccessor)](Chronology.md)) 
 
 ### getChronology
 
@@ -295,11 +295,11 @@ abstract fun getChronology(): Chronology!
 
 Gets the chronology of this date.
 
-The`Chronology`represents the calendar system in use. The era and other fields in [ChronoField](../java/time/temporal/ChronoField.md) are defined by the chronology.
+The`Chronology`represents the calendar system in use. The era and other fields in [ChronoField](../java.time.temporal/ChronoField.md) are defined by the chronology.
 
 | Return ||
 |-------------------------------------------------------------------------------------------|--------------------------|
-| [Chronology](../java/time/chrono/Chronology.md)! | the chronology, not null |
+| [Chronology](Chronology.md)! | the chronology, not null |
 
 ### getEra
 
@@ -315,11 +315,11 @@ The era is, conceptually, the largest division of the time-line. Most calendar s
 
 All correctly implemented`Era`classes are singletons, thus it is valid code to write`date.getEra() == SomeChrono.ERA_NAME)`.
 
-This default implementation uses [Chronology.eraOf(int)](../java/time/chrono/Chronology.md)).
+This default implementation uses [Chronology.eraOf(int)](Chronology.md)).
 
 | Return ||
 |-----------------------------------------------------------------------------|------------------------------------------------------------------------|
-| [Era](../java/time/chrono/Era.md)! | the chronology specific era constant applicable at this date, not null |
+| [Era](Era.md)! | the chronology specific era constant applicable at this date, not null |
 
 ### isAfter
 
@@ -331,13 +331,13 @@ open fun isAfter(other: ChronoLocalDate!): Boolean
 
 Checks if this date is after the specified date ignoring the chronology.
 
-This method differs from the comparison in [compareTo](../java/time/chrono/ChronoLocalDate.md))in that it only compares the underlying date and not the chronology. This allows dates in different calendar systems to be compared based on the time-line position. This is equivalent to using`date1.toEpochDay() > date2.toEpochDay()`.
+This method differs from the comparison in [compareTo](ChronoLocalDate.md))in that it only compares the underlying date and not the chronology. This allows dates in different calendar systems to be compared based on the time-line position. This is equivalent to using`date1.toEpochDay() > date2.toEpochDay()`.
 
 This default implementation performs the comparison based on the epoch-day.
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| `other` | [ChronoLocalDate](../java/time/chrono/ChronoLocalDate.md)!:the other date to compare to, not null |
+| `other` | [ChronoLocalDate](ChronoLocalDate.md)!:the other date to compare to, not null |
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------|
@@ -353,13 +353,13 @@ open fun isBefore(other: ChronoLocalDate!): Boolean
 
 Checks if this date is before the specified date ignoring the chronology.
 
-This method differs from the comparison in [compareTo](../java/time/chrono/ChronoLocalDate.md))in that it only compares the underlying date and not the chronology. This allows dates in different calendar systems to be compared based on the time-line position. This is equivalent to using`date1.toEpochDay() < date2.toEpochDay()`.
+This method differs from the comparison in [compareTo](ChronoLocalDate.md))in that it only compares the underlying date and not the chronology. This allows dates in different calendar systems to be compared based on the time-line position. This is equivalent to using`date1.toEpochDay() < date2.toEpochDay()`.
 
 This default implementation performs the comparison based on the epoch-day.
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| `other` | [ChronoLocalDate](../java/time/chrono/ChronoLocalDate.md)!:the other date to compare to, not null |
+| `other` | [ChronoLocalDate](ChronoLocalDate.md)!:the other date to compare to, not null |
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------------------------|
@@ -375,13 +375,13 @@ open fun isEqual(other: ChronoLocalDate!): Boolean
 
 Checks if this date is equal to the specified date ignoring the chronology.
 
-This method differs from the comparison in [compareTo](../java/time/chrono/ChronoLocalDate.md))in that it only compares the underlying date and not the chronology. This allows dates in different calendar systems to be compared based on the time-line position. This is equivalent to using`date1.toEpochDay() == date2.toEpochDay()`.
+This method differs from the comparison in [compareTo](ChronoLocalDate.md))in that it only compares the underlying date and not the chronology. This allows dates in different calendar systems to be compared based on the time-line position. This is equivalent to using`date1.toEpochDay() == date2.toEpochDay()`.
 
 This default implementation performs the comparison based on the epoch-day.
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| `other` | [ChronoLocalDate](../java/time/chrono/ChronoLocalDate.md)!:the other date to compare to, not null |
+| `other` | [ChronoLocalDate](ChronoLocalDate.md)!:the other date to compare to, not null |
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------------------------|
@@ -399,7 +399,7 @@ Checks if the year is a leap year, as defined by the calendar system.
 
 A leap-year is a year of a longer length than normal. The exact meaning is determined by the chronology with the constraint that a leap-year must imply a year-length longer than a non leap-year.
 
-This default implementation uses [Chronology.isLeapYear(long)](../java/time/chrono/Chronology.md)).
+This default implementation uses [Chronology.isLeapYear(long)](Chronology.md)).
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------------------|
@@ -415,7 +415,7 @@ open fun isSupported(field: TemporalField!): Boolean
 
 Checks if the specified field is supported.
 
-This checks if the specified field can be queried on this date. If false, then calling the [range](../java/time/temporal/TemporalAccessor.md)), [get](../java/time/temporal/TemporalAccessor.md))and [with(java.time.temporal.TemporalField,long)](../java/time/chrono/ChronoLocalDate.md))methods will throw an exception.
+This checks if the specified field can be queried on this date. If false, then calling the [range](../java.time.temporal/TemporalAccessor.md)), [get](../java.time.temporal/TemporalAccessor.md))and [with(java.time.temporal.TemporalField,long)](ChronoLocalDate.md))methods will throw an exception.
 
 The set of supported fields is defined by the chronology and normally includes all`ChronoField`date fields.
 
@@ -423,7 +423,7 @@ If the field is not a`ChronoField`, then the result of this method is obtained b
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| `field` | [TemporalField](../java/time/temporal/TemporalField.md)!:the field to check, null returns false |
+| `field` | [TemporalField](../java.time.temporal/TemporalField.md)!:the field to check, null returns false |
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------------|
@@ -439,7 +439,7 @@ open fun isSupported(unit: TemporalUnit!): Boolean
 
 Checks if the specified unit is supported.
 
-This checks if the specified unit can be added to or subtracted from this date. If false, then calling the [plus(long,java.time.temporal.TemporalUnit)](../java/time/chrono/ChronoLocalDate.md))and [minus](../java/time/chrono/ChronoLocalDate.md))methods will throw an exception.
+This checks if the specified unit can be added to or subtracted from this date. If false, then calling the [plus(long,java.time.temporal.TemporalUnit)](ChronoLocalDate.md))and [minus](ChronoLocalDate.md))methods will throw an exception.
 
 The set of supported units is defined by the chronology and normally includes all`ChronoUnit`date units except`FOREVER`.
 
@@ -447,7 +447,7 @@ If the unit is not a`ChronoUnit`, then the result of this method is obtained by 
 
 | Parameters ||
 |--------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| `unit` | [TemporalUnit](../java/time/temporal/TemporalUnit.md)!:the unit to check, null returns false |
+| `unit` | [TemporalUnit](../java.time.temporal/TemporalUnit.md)!:the unit to check, null returns false |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------------------------------|
@@ -481,7 +481,7 @@ Returns the length of the year represented by this date, as defined by the calen
 
 This returns the length of the year in days.
 
-The default implementation uses [isLeapYear()](../java/time/chrono/ChronoLocalDate.md))and returns 365 or 366.
+The default implementation uses [isLeapYear()](ChronoLocalDate.md))and returns 365 or 366.
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------|
@@ -497,7 +497,7 @@ open fun minus(amount: TemporalAmount!): ChronoLocalDate!
 
 Returns an object of the same type as this object with an amount subtracted.
 
-This adjusts this temporal, subtracting according to the rules of the specified amount. The amount is typically a [java.time.Period](../java/time/Period.md) but may be any other type implementing the [TemporalAmount](../java/time/temporal/TemporalAmount.md) interface, such as [java.time.Duration](../java/time/Duration.md).
+This adjusts this temporal, subtracting according to the rules of the specified amount. The amount is typically a [java.time.Period](../java.time/Period.md) but may be any other type implementing the [TemporalAmount](../java.time.temporal/TemporalAmount.md) interface, such as [java.time.Duration](../java.time/Duration.md).
 
 Some example code indicating how and why this method is used: 
 
@@ -512,11 +512,11 @@ Note that calling`plus`followed by`minus`is not guaranteed to return the same da
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| `amount` | [TemporalAmount](../java/time/temporal/TemporalAmount.md)!:the amount to subtract, not null |
+| `amount` | [TemporalAmount](../java.time.temporal/TemporalAmount.md)!:the amount to subtract, not null |
 
 | Return ||
 |------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| [ChronoLocalDate](../java/time/chrono/ChronoLocalDate.md)! | an object of the same type with the specified adjustment made, not null |
+| [ChronoLocalDate](ChronoLocalDate.md)! | an object of the same type with the specified adjustment made, not null |
 
 | Exceptions ||
 |---------------------------------|-----------------------------------|
@@ -543,11 +543,11 @@ In some cases, changing a field is not fully defined. For example, if the target
 | Parameters ||
 |--------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
 | `amountToSubtract` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the amount of the specified unit to subtract, may be negative |
-| `unit` | [TemporalUnit](../java/time/temporal/TemporalUnit.md)!:the unit of the amount to subtract, not null |
+| `unit` | [TemporalUnit](../java.time.temporal/TemporalUnit.md)!:the unit of the amount to subtract, not null |
 
 | Return ||
 |------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
-| [ChronoLocalDate](../java/time/chrono/ChronoLocalDate.md)! | an object of the same type with the specified period subtracted, not null |
+| [ChronoLocalDate](ChronoLocalDate.md)! | an object of the same type with the specified period subtracted, not null |
 
 | Exceptions ||
 |-------------------------------------------------------|----------------------------------|
@@ -566,7 +566,7 @@ open fun plus(amount: TemporalAmount!): ChronoLocalDate!
 
 Returns an object of the same type as this object with an amount added.
 
-This adjusts this temporal, adding according to the rules of the specified amount. The amount is typically a [java.time.Period](../java/time/Period.md) but may be any other type implementing the [TemporalAmount](../java/time/temporal/TemporalAmount.md) interface, such as [java.time.Duration](../java/time/Duration.md).
+This adjusts this temporal, adding according to the rules of the specified amount. The amount is typically a [java.time.Period](../java.time/Period.md) but may be any other type implementing the [TemporalAmount](../java.time.temporal/TemporalAmount.md) interface, such as [java.time.Duration](../java.time/Duration.md).
 
 Some example code indicating how and why this method is used: 
 
@@ -581,11 +581,11 @@ Note that calling`plus`followed by`minus`is not guaranteed to return the same da
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------------------------------|
-| `amount` | [TemporalAmount](../java/time/temporal/TemporalAmount.md)!:the amount to add, not null |
+| `amount` | [TemporalAmount](../java.time.temporal/TemporalAmount.md)!:the amount to add, not null |
 
 | Return ||
 |------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| [ChronoLocalDate](../java/time/chrono/ChronoLocalDate.md)! | an object of the same type with the specified adjustment made, not null |
+| [ChronoLocalDate](ChronoLocalDate.md)! | an object of the same type with the specified adjustment made, not null |
 
 | Exceptions ||
 |---------------------------------|--------------------------------|
@@ -612,11 +612,11 @@ In some cases, changing a field is not fully defined. For example, if the target
 | Parameters ||
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
 | `amountToAdd` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the amount of the specified unit to add, may be negative |
-| `unit` | [TemporalUnit](../java/time/temporal/TemporalUnit.md)!:the unit of the amount to add, not null |
+| `unit` | [TemporalUnit](../java.time.temporal/TemporalUnit.md)!:the unit of the amount to add, not null |
 
 | Return ||
 |------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
-| [ChronoLocalDate](../java/time/chrono/ChronoLocalDate.md)! | an object of the same type with the specified period added, not null |
+| [ChronoLocalDate](ChronoLocalDate.md)! | an object of the same type with the specified period added, not null |
 
 | Exceptions ||
 |-------------------------------------------------------|------------------------------|
@@ -637,12 +637,12 @@ Queries this date using the specified query.
 
 This queries this date using the specified query strategy object. The`TemporalQuery`object defines the logic to be used to obtain the result. Read the documentation of the query to understand what the result of this method will be.
 
-The result of this method is obtained by invoking the [TemporalQuery.queryFrom(TemporalAccessor)](../java/time/temporal/TemporalQuery.md))method on the specified query passing`this`as the argument.
+The result of this method is obtained by invoking the [TemporalQuery.queryFrom(TemporalAccessor)](../java.time.temporal/TemporalQuery.md))method on the specified query passing`this`as the argument.
 
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------------------------------------------|
 | `<R>` | the type of the result |
-| `query` | [TemporalQuery](../java/time/temporal/TemporalQuery.md)\<R\>!:the query to invoke, not null |
+| `query` | [TemporalQuery](../java.time.temporal/TemporalQuery.md)\<R\>!:the query to invoke, not null |
 
 | Return ||
 |---|---------------------------------------------------------------|
@@ -663,17 +663,17 @@ open static fun timeLineOrder(): Comparator<ChronoLocalDate!>!
 
 Gets a comparator that compares`ChronoLocalDate`in time-line order ignoring the chronology.
 
-This comparator differs from the comparison in [compareTo](../java/time/chrono/ChronoLocalDate.md))in that it only compares the underlying date and not the chronology. This allows dates in different calendar systems to be compared based on the position of the date on the local time-line. The underlying comparison is equivalent to comparing the epoch-day.
+This comparator differs from the comparison in [compareTo](ChronoLocalDate.md))in that it only compares the underlying date and not the chronology. This allows dates in different calendar systems to be compared based on the position of the date on the local time-line. The underlying comparison is equivalent to comparing the epoch-day.
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
-| [Comparator](../java/util/Comparator.md)< [ChronoLocalDate](../java/time/chrono/ChronoLocalDate.md)!>! | a comparator that compares in time-line order ignoring the chronology |
+| [Comparator](../java.util/Comparator.md)< [ChronoLocalDate](ChronoLocalDate.md)!>! | a comparator that compares in time-line order ignoring the chronology |
 
 **See Also**
 
-- [#isAfter](../java/time/chrono/ChronoLocalDate.md))
-- [#isBefore](../java/time/chrono/ChronoLocalDate.md))
-- [#isEqual](../java/time/chrono/ChronoLocalDate.md)) 
+- [#isAfter](ChronoLocalDate.md))
+- [#isBefore](ChronoLocalDate.md))
+- [#isEqual](ChronoLocalDate.md)) 
 
 ### toEpochDay
 
@@ -685,7 +685,7 @@ open fun toEpochDay(): Long
 
 Converts this date to the Epoch Day.
 
-The [Epoch Day count](../java/time/temporal/ChronoField.md) is a simple incrementing count of days where day 0 is 1970-01-01 (ISO). This definition is the same for all chronologies, enabling conversion.
+The [Epoch Day count](../java.time.temporal/ChronoField.md) is a simple incrementing count of days where day 0 is 1970-01-01 (ISO). This definition is the same for all chronologies, enabling conversion.
 
 This default implementation queries the`EPOCH_DAY`field.
 
@@ -713,11 +713,11 @@ This instance is immutable and unaffected by this method call.
 
 | Parameters ||
 |--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `endDateExclusive` | [ChronoLocalDate](../java/time/chrono/ChronoLocalDate.md)!:the end date, exclusive, which may be in any chronology, not null |
+| `endDateExclusive` | [ChronoLocalDate](ChronoLocalDate.md)!:the end date, exclusive, which may be in any chronology, not null |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| [ChronoPeriod](../java/time/chrono/ChronoPeriod.md)! | the period between this date and the end date, not null |
+| [ChronoPeriod](ChronoPeriod.md)! | the period between this date and the end date, not null |
 
 | Exceptions ||
 |---------------------------------|------------------------------------|
@@ -737,9 +737,9 @@ abstract fun until(
 
 Calculates the amount of time until another date in terms of the specified unit.
 
-This calculates the amount of time between two`ChronoLocalDate`objects in terms of a single`TemporalUnit`. The start and end points are`this`and the specified date. The result will be negative if the end is before the start. The`Temporal`passed to this method is converted to a`ChronoLocalDate`using [Chronology.date(TemporalAccessor)](../java/time/chrono/Chronology.md)). The calculation returns a whole number, representing the number of complete units between the two dates. For example, the amount in days between two dates can be calculated using`startDate.until(endDate, DAYS)`.
+This calculates the amount of time between two`ChronoLocalDate`objects in terms of a single`TemporalUnit`. The start and end points are`this`and the specified date. The result will be negative if the end is before the start. The`Temporal`passed to this method is converted to a`ChronoLocalDate`using [Chronology.date(TemporalAccessor)](Chronology.md)). The calculation returns a whole number, representing the number of complete units between the two dates. For example, the amount in days between two dates can be calculated using`startDate.until(endDate, DAYS)`.
 
-There are two equivalent ways of using this method. The first is to invoke this method. The second is to use [TemporalUnit.between(Temporal, Temporal)](../java/time/temporal/TemporalUnit.md)): 
+There are two equivalent ways of using this method. The first is to invoke this method. The second is to use [TemporalUnit.between(Temporal, Temporal)](../java.time.temporal/TemporalUnit.md)): 
 
 ```kotlin
 // these two lines are equivalent
@@ -749,7 +749,7 @@ There are two equivalent ways of using this method. The first is to invoke this 
 ```
 The choice should be made based on which makes the code more readable.
 
-The calculation is implemented in this method for [ChronoUnit](../java/time/temporal/ChronoUnit.md). The units`DAYS`,`WEEKS`,`MONTHS`,`YEARS`,`DECADES`,`CENTURIES`,`MILLENNIA`and`ERAS`should be supported by all implementations. Other`ChronoUnit`values will throw an exception.
+The calculation is implemented in this method for [ChronoUnit](../java.time.temporal/ChronoUnit.md). The units`DAYS`,`WEEKS`,`MONTHS`,`YEARS`,`DECADES`,`CENTURIES`,`MILLENNIA`and`ERAS`should be supported by all implementations. Other`ChronoUnit`values will throw an exception.
 
 If the unit is not a`ChronoUnit`, then the result of this method is obtained by invoking`TemporalUnit.between(Temporal, Temporal)`passing`this`as the first argument and the converted input temporal as the second argument.
 
@@ -757,8 +757,8 @@ This instance is immutable and unaffected by this method call.
 
 | Parameters ||
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `endExclusive` | [Temporal](../java/time/temporal/Temporal.md)!:the end date, exclusive, which is converted to a`ChronoLocalDate`in the same chronology, not null |
-| `unit` | [TemporalUnit](../java/time/temporal/TemporalUnit.md)!:the unit to measure the amount in, not null |
+| `endExclusive` | [Temporal](../java.time.temporal/Temporal.md)!:the end date, exclusive, which is converted to a`ChronoLocalDate`in the same chronology, not null |
+| `unit` | [TemporalUnit](../java.time.temporal/TemporalUnit.md)!:the unit to measure the amount in, not null |
 
 | Return ||
 |------------------------------------------------------------------------------|-------------------------------------------------------|
@@ -781,7 +781,7 @@ open fun with(adjuster: TemporalAdjuster!): ChronoLocalDate!
 
 Returns an adjusted object of the same type as this object with the adjustment made.
 
-This adjusts this date-time according to the rules of the specified adjuster. A simple adjuster might simply set the one of the fields, such as the year field. A more complex adjuster might set the date to the last day of the month. A selection of common adjustments is provided in [TemporalAdjusters](../java/time/temporal/TemporalAdjusters.md). These include finding the "last day of the month" and "next Wednesday". The adjuster is responsible for handling special cases, such as the varying lengths of month and leap years.
+This adjusts this date-time according to the rules of the specified adjuster. A simple adjuster might simply set the one of the fields, such as the year field. A more complex adjuster might set the date to the last day of the month. A selection of common adjustments is provided in [TemporalAdjusters](../java.time.temporal/TemporalAdjusters.md). These include finding the "last day of the month" and "next Wednesday". The adjuster is responsible for handling special cases, such as the varying lengths of month and leap years.
 
 Some example code indicating how and why this method is used: 
 
@@ -794,11 +794,11 @@ date = date.with(Month.JULY);        // most key classes implement TemporalAdjus
 
 | Parameters ||
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| `adjuster` | [TemporalAdjuster](../java/time/temporal/TemporalAdjuster.md)!:the adjuster to use, not null |
+| `adjuster` | [TemporalAdjuster](../java.time.temporal/TemporalAdjuster.md)!:the adjuster to use, not null |
 
 | Return ||
 |------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| [ChronoLocalDate](../java/time/chrono/ChronoLocalDate.md)! | an object of the same type with the specified adjustment made, not null |
+| [ChronoLocalDate](ChronoLocalDate.md)! | an object of the same type with the specified adjustment made, not null |
 
 | Exceptions ||
 |---------------------------------|----------------------------------|
@@ -824,12 +824,12 @@ In some cases, changing a field is not fully defined. For example, if the target
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| `field` | [TemporalField](../java/time/temporal/TemporalField.md)!:the field to set in the result, not null |
+| `field` | [TemporalField](../java.time.temporal/TemporalField.md)!:the field to set in the result, not null |
 | `newValue` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the new value of the field in the result |
 
 | Return ||
 |------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------|
-| [ChronoLocalDate](../java/time/chrono/ChronoLocalDate.md)! | an object of the same type with the specified field set, not null |
+| [ChronoLocalDate](ChronoLocalDate.md)! | an object of the same type with the specified field set, not null |
 
 | Exceptions ||
 |-------------------------------------------------------|-------------------------------|

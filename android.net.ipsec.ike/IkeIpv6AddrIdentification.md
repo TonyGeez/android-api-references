@@ -8,8 +8,8 @@ open class IkeIpv6AddrIdentification : IkeIdentification
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.net.ipsec.ike.IkeIdentification](../android/net/ipsec/ike/IkeIdentification.md) ||
-| | ↳ | [android.net.ipsec.ike.IkeIpv6AddrIdentification](../android/net/ipsec/ike/IkeIpv6AddrIdentification.md) |
+| ↳ | [android.net.ipsec.ike.IkeIdentification](IkeIdentification.md) ||
+| | ↳ | [android.net.ipsec.ike.IkeIpv6AddrIdentification](IkeIpv6AddrIdentification.md) |
 
 IkeIpv6AddrIdentification represents an IKE entity identification based on IPv6 address.
 
@@ -26,7 +26,7 @@ IkeIpv6AddrIdentification represents an IKE entity identification based on IPv6 
 
 | Properties ||
 |---|---|
-| [Inet6Address](../java/net/Inet6Address.md) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeIpv6AddrIdentification#ipv6Address:java.net.Inet6Address` The IPv6 address. |
+| [Inet6Address](../java.net/Inet6Address.md) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeIpv6AddrIdentification#ipv6Address:java.net.Inet6Address` The IPv6 address. |
 
 ## Public constructors
 
@@ -42,7 +42,7 @@ Construct an instance of `https://developer.android.com/reference/kotlin/android
 
 | Parameters ||
 |---|---|
-| `address` | [Inet6Address](../java/net/Inet6Address.md): the IPv6 address. This value cannot be `null`. |
+| `address` | [Inet6Address](../java.net/Inet6Address.md): the IPv6 address. This value cannot be `null`. |
 
 ## Public methods
 

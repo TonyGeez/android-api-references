@@ -4,7 +4,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # UnicodeSetSpanner
 
-Kotlin| [Java](../android/icu/text/UnicodeSetSpanner.md) 
+Kotlin| [Java](UnicodeSetSpanner.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class UnicodeSetSpanner
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.icu.text.UnicodeSetSpanner](../android/icu/text/UnicodeSetSpanner.md) |
+| ↳ | [android.icu.text.UnicodeSetSpanner](UnicodeSetSpanner.md) |
 
 A helper class used to count, replace, and trim CharSequences based on UnicodeSet matches. An instance is immutable (and thus thread-safe) iff the source UnicodeSet is frozen.
 
@@ -51,28 +51,28 @@ The entire string is traversed.
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [UnicodeSetSpanner](../android/icu/text/UnicodeSetSpanner.md))`(`source:` ` [UnicodeSet](../android/icu/text/UnicodeSet.md)!`)` Create a spanner from a UnicodeSet. |
+| [UnicodeSetSpanner](UnicodeSetSpanner.md))`(`source:` ` [UnicodeSet](UnicodeSet.md)!`)` Create a spanner from a UnicodeSet. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [countIn](../android/icu/text/UnicodeSetSpanner.md))`(`sequence:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Returns the number of matching characters found in a character sequence, counting by CountMethod. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [countIn](../android/icu/text/UnicodeSetSpanner.md))`(`sequence:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `countMethod:` ` [UnicodeSetSpanner.CountMethod](../android/icu/text/UnicodeSetSpanner.CountMethod.md)!`)` Returns the number of matching characters found in a character sequence, using SpanCondition. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [countIn](../android/icu/text/UnicodeSetSpanner.md))`(`sequence:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `countMethod:` ` [UnicodeSetSpanner.CountMethod](../android/icu/text/UnicodeSetSpanner.CountMethod.md)!`, `spanCondition:` ` [UnicodeSet.SpanCondition](../android/icu/text/UnicodeSet.SpanCondition.md)!`)` Returns the number of matching characters found in a character sequence. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [countIn](UnicodeSetSpanner.md))`(`sequence:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Returns the number of matching characters found in a character sequence, counting by CountMethod. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [countIn](UnicodeSetSpanner.md))`(`sequence:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `countMethod:` ` [UnicodeSetSpanner.CountMethod](../android/icu/text/UnicodeSetSpanner.CountMethod.md)!`)` Returns the number of matching characters found in a character sequence, using SpanCondition. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [countIn](UnicodeSetSpanner.md))`(`sequence:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `countMethod:` ` [UnicodeSetSpanner.CountMethod](../android/icu/text/UnicodeSetSpanner.CountMethod.md)!`, `spanCondition:` ` [UnicodeSet.SpanCondition](../android/icu/text/UnicodeSet.SpanCondition.md)!`)` Returns the number of matching characters found in a character sequence. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [deleteFrom](../android/icu/text/UnicodeSetSpanner.md))`(`sequence:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Delete all the matching spans in sequence, using SpanCondition. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [deleteFrom](../android/icu/text/UnicodeSetSpanner.md))`(`sequence:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `spanCondition:` ` [UnicodeSet.SpanCondition](../android/icu/text/UnicodeSet.SpanCondition.md)!`)` Delete all matching spans in sequence, according to the spanCondition. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/icu/text/UnicodeSetSpanner.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [deleteFrom](UnicodeSetSpanner.md))`(`sequence:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Delete all the matching spans in sequence, using SpanCondition. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [deleteFrom](UnicodeSetSpanner.md))`(`sequence:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `spanCondition:` ` [UnicodeSet.SpanCondition](../android/icu/text/UnicodeSet.SpanCondition.md)!`)` Delete all matching spans in sequence, according to the spanCondition. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](UnicodeSetSpanner.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | --- | --- |
-| open [UnicodeSet](../android/icu/text/UnicodeSet.md)! | [getUnicodeSet](../android/icu/text/UnicodeSetSpanner.md))`()` Returns the UnicodeSet used for processing. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/icu/text/UnicodeSetSpanner.md))`()` Returns a hash code value for the object. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [replaceFrom](../android/icu/text/UnicodeSetSpanner.md))`(`sequence:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `replacement:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Replace all matching spans in sequence by the replacement, counting by CountMethod. |
+| open [UnicodeSet](UnicodeSet.md)! | [getUnicodeSet](UnicodeSetSpanner.md))`()` Returns the UnicodeSet used for processing. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](UnicodeSetSpanner.md))`()` Returns a hash code value for the object. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [replaceFrom](UnicodeSetSpanner.md))`(`sequence:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `replacement:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Replace all matching spans in sequence by the replacement, counting by CountMethod. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [replaceFrom](../android/icu/text/UnicodeSetSpanner.md))`(`sequence:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `replacement:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `countMethod:` ` [UnicodeSetSpanner.CountMethod](../android/icu/text/UnicodeSetSpanner.CountMethod.md)!`)` Replace all matching spans in sequence by replacement, according to the CountMethod, using SpanCondition. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [replaceFrom](../android/icu/text/UnicodeSetSpanner.md))`(`sequence:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `replacement:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `countMethod:` ` [UnicodeSetSpanner.CountMethod](../android/icu/text/UnicodeSetSpanner.CountMethod.md)!`, `spanCondition:` ` [UnicodeSet.SpanCondition](../android/icu/text/UnicodeSet.SpanCondition.md)!`)` Replace all matching spans in sequence by replacement, according to the countMethod and spanCondition. |
-| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [trim](../android/icu/text/UnicodeSetSpanner.md))`(`sequence:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Returns a trimmed sequence (using CharSequence.subsequence()), that omits matching elements at the start and end of the string, using TrimOption. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [replaceFrom](UnicodeSetSpanner.md))`(`sequence:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `replacement:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `countMethod:` ` [UnicodeSetSpanner.CountMethod](../android/icu/text/UnicodeSetSpanner.CountMethod.md)!`)` Replace all matching spans in sequence by replacement, according to the CountMethod, using SpanCondition. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [replaceFrom](UnicodeSetSpanner.md))`(`sequence:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `replacement:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `countMethod:` ` [UnicodeSetSpanner.CountMethod](../android/icu/text/UnicodeSetSpanner.CountMethod.md)!`, `spanCondition:` ` [UnicodeSet.SpanCondition](../android/icu/text/UnicodeSet.SpanCondition.md)!`)` Replace all matching spans in sequence by replacement, according to the countMethod and spanCondition. |
+| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [trim](UnicodeSetSpanner.md))`(`sequence:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Returns a trimmed sequence (using CharSequence.subsequence()), that omits matching elements at the start and end of the string, using TrimOption. |
 | --- | --- |
-| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [trim](../android/icu/text/UnicodeSetSpanner.md))`(`sequence:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `trimOption:` ` [UnicodeSetSpanner.TrimOption](../android/icu/text/UnicodeSetSpanner.TrimOption.md)!`)` Returns a trimmed sequence (using CharSequence.subsequence()), that omits matching elements at the start or end of the string, using the trimOption and SpanCondition. |
-| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [trim](../android/icu/text/UnicodeSetSpanner.md))`(`sequence:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `trimOption:` ` [UnicodeSetSpanner.TrimOption](../android/icu/text/UnicodeSetSpanner.TrimOption.md)!`, `spanCondition:` ` [UnicodeSet.SpanCondition](../android/icu/text/UnicodeSet.SpanCondition.md)!`)` Returns a trimmed sequence (using CharSequence.subsequence()), that omits matching elements at the start or end of the string, depending on the trimOption and spanCondition. |
+| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [trim](UnicodeSetSpanner.md))`(`sequence:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `trimOption:` ` [UnicodeSetSpanner.TrimOption](../android/icu/text/UnicodeSetSpanner.TrimOption.md)!`)` Returns a trimmed sequence (using CharSequence.subsequence()), that omits matching elements at the start or end of the string, using the trimOption and SpanCondition. |
+| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [trim](UnicodeSetSpanner.md))`(`sequence:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `trimOption:` ` [UnicodeSetSpanner.TrimOption](../android/icu/text/UnicodeSetSpanner.TrimOption.md)!`, `spanCondition:` ` [UnicodeSet.SpanCondition](../android/icu/text/UnicodeSet.SpanCondition.md)!`)` Returns a trimmed sequence (using CharSequence.subsequence()), that omits matching elements at the start or end of the string, depending on the trimOption and spanCondition. |
 
 ## Public constructors
 
@@ -88,7 +88,7 @@ Create a spanner from a UnicodeSet. For speed and safety, the UnicodeSet should 
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------|
-| `source` | [UnicodeSet](../android/icu/text/UnicodeSet.md)!:the original UnicodeSet |
+| `source` | [UnicodeSet](UnicodeSet.md)!:the original UnicodeSet |
 
 ## Public methods
 
@@ -100,7 +100,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun countIn(sequence: CharSequence!): Int
 ```
 
-Returns the number of matching characters found in a character sequence, counting by CountMethod.MIN_ELEMENTS using SpanCondition.SIMPLE. The code alternates spans; see the class doc for [UnicodeSetSpanner](../android/icu/text/UnicodeSetSpanner.md) for a note about boundary conditions.
+Returns the number of matching characters found in a character sequence, counting by CountMethod.MIN_ELEMENTS using SpanCondition.SIMPLE. The code alternates spans; see the class doc for [UnicodeSetSpanner](UnicodeSetSpanner.md) for a note about boundary conditions.
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------------|
@@ -121,7 +121,7 @@ open fun countIn(
 ): Int
 ```
 
-Returns the number of matching characters found in a character sequence, using SpanCondition.SIMPLE. The code alternates spans; see the class doc for [UnicodeSetSpanner](../android/icu/text/UnicodeSetSpanner.md) for a note about boundary conditions.
+Returns the number of matching characters found in a character sequence, using SpanCondition.SIMPLE. The code alternates spans; see the class doc for [UnicodeSetSpanner](UnicodeSetSpanner.md) for a note about boundary conditions.
 
 | Parameters ||
 |---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -144,7 +144,7 @@ open fun countIn(
 ): Int
 ```
 
-Returns the number of matching characters found in a character sequence. The code alternates spans; see the class doc for [UnicodeSetSpanner](../android/icu/text/UnicodeSetSpanner.md) for a note about boundary conditions.
+Returns the number of matching characters found in a character sequence. The code alternates spans; see the class doc for [UnicodeSetSpanner](UnicodeSetSpanner.md) for a note about boundary conditions.
 
 | Parameters ||
 |-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -165,7 +165,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun deleteFrom(sequence: CharSequence!): String!
 ```
 
-Delete all the matching spans in sequence, using SpanCondition.SIMPLE The code alternates spans; see the class doc for [UnicodeSetSpanner](../android/icu/text/UnicodeSetSpanner.md) for a note about boundary conditions.
+Delete all the matching spans in sequence, using SpanCondition.SIMPLE The code alternates spans; see the class doc for [UnicodeSetSpanner](UnicodeSetSpanner.md) for a note about boundary conditions.
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------|
@@ -186,7 +186,7 @@ open fun deleteFrom(
 ): String!
 ```
 
-Delete all matching spans in sequence, according to the spanCondition. The code alternates spans; see the class doc for [UnicodeSetSpanner](../android/icu/text/UnicodeSetSpanner.md) for a note about boundary conditions.
+Delete all matching spans in sequence, according to the spanCondition. The code alternates spans; see the class doc for [UnicodeSetSpanner](UnicodeSetSpanner.md) for a note about boundary conditions.
 
 | Parameters ||
 |-----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -237,7 +237,7 @@ Returns the UnicodeSet used for processing. It is frozen iff the original was.
 
 | Return ||
 |-------------------------------------------------------------------------------------------|-----------------------|
-| [UnicodeSet](../android/icu/text/UnicodeSet.md)! | the construction set. |
+| [UnicodeSet](UnicodeSet.md)! | the construction set. |
 
 ### hashCode
 
@@ -247,13 +247,13 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun hashCode(): Int
 ```
 
-Returns a hash code value for the object. This method is supported for the benefit of hash tables such as those provided by [java.util.HashMap](../java/util/HashMap.md).
+Returns a hash code value for the object. This method is supported for the benefit of hash tables such as those provided by [java.util.HashMap](../java.util/HashMap.md).
 
 The general contract of`hashCode`is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the`hashCode`method must consistently return the same integer, provided no information used in`equals`comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the [equals](../java/lang/Object.md))method, then calling the`hashCode`method on each of the two objects must produce the same integer result.
-- It is*not* required that if two objects are unequal according to the [equals](../java/lang/Object.md))method, then calling the`hashCode`method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the [equals](../java.lang/Object.md))method, then calling the`hashCode`method on each of the two objects must produce the same integer result.
+- It is*not* required that if two objects are unequal according to the [equals](../java.lang/Object.md))method, then calling the`hashCode`method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------|
@@ -270,7 +270,7 @@ open fun replaceFrom(
 ): String!
 ```
 
-Replace all matching spans in sequence by the replacement, counting by CountMethod.MIN_ELEMENTS using SpanCondition.SIMPLE. The code alternates spans; see the class doc for [UnicodeSetSpanner](../android/icu/text/UnicodeSetSpanner.md) for a note about boundary conditions.
+Replace all matching spans in sequence by the replacement, counting by CountMethod.MIN_ELEMENTS using SpanCondition.SIMPLE. The code alternates spans; see the class doc for [UnicodeSetSpanner](UnicodeSetSpanner.md) for a note about boundary conditions.
 
 | Parameters ||
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------------|
@@ -293,7 +293,7 @@ open fun replaceFrom(
 ): String!
 ```
 
-Replace all matching spans in sequence by replacement, according to the CountMethod, using SpanCondition.SIMPLE. The code alternates spans; see the class doc for [UnicodeSetSpanner](../android/icu/text/UnicodeSetSpanner.md) for a note about boundary conditions.
+Replace all matching spans in sequence by replacement, according to the CountMethod, using SpanCondition.SIMPLE. The code alternates spans; see the class doc for [UnicodeSetSpanner](UnicodeSetSpanner.md) for a note about boundary conditions.
 
 | Parameters ||
 |---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -319,7 +319,7 @@ open fun replaceFrom(
 ): String!
 ```
 
-Replace all matching spans in sequence by replacement, according to the countMethod and spanCondition. The code alternates spans; see the class doc for [UnicodeSetSpanner](../android/icu/text/UnicodeSetSpanner.md) for a note about boundary conditions.
+Replace all matching spans in sequence by replacement, according to the countMethod and spanCondition. The code alternates spans; see the class doc for [UnicodeSetSpanner](UnicodeSetSpanner.md) for a note about boundary conditions.
 
 | Parameters ||
 |-----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

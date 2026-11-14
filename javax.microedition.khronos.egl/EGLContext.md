@@ -10,18 +10,18 @@ abstract class EGLContext
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.microedition.khronos.egl.EGLContext](../javax/microedition/khronos/egl/EGLContext.md) |
+| ↳ | [javax.microedition.khronos.egl.EGLContext](EGLContext.md) |
 
 ## Summary
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------|---|
-| [EGLContext](../javax/microedition/khronos/egl/EGLContext.md))`()` <br /> |
+| [EGLContext](EGLContext.md))`()` <br /> |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| openstatic [EGL](../javax/microedition/khronos/egl/EGL.md)! | [getEGL](../javax/microedition/khronos/egl/EGLContext.md))`()` <br /> |
-| abstract [GL](../javax/microedition/khronos/opengles/GL.md)! | [getGL](../javax/microedition/khronos/egl/EGLContext.md))`()` <br /> |
+| openstatic [EGL](EGL.md)! | [getEGL](EGLContext.md))`()` <br /> |
+| abstract [GL](../javax.microedition.khronos.opengles/GL.md)! | [getGL](EGLContext.md))`()` <br /> |
 
 ## Public constructors
 

@@ -8,7 +8,7 @@ class CardEmulation
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.nfc.cardemulation.CardEmulation](../android/nfc/cardemulation/CardEmulation.md) |
+| ↳ | [android.nfc.cardemulation.CardEmulation](CardEmulation.md) |
 
 This class can be used to query the state of NFC card emulation services. For a general introduction into NFC card emulation, please read the [NFC card emulation developer guide](https://developer.android.com/guide/topics/connectivity/nfc/hce.html).
 
@@ -58,7 +58,7 @@ Use of this class requires the `https://developer.android.com/reference/kotlin/a
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#getDefaultNfcSubscriptionId()()` Returns the system's default NFC subscription id. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#getDescriptionForPreferredPaymentService()()` Returns a user-visible description of the preferred payment service. |
-| static [CardEmulation](../android/nfc/cardemulation/CardEmulation.md)! | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#getInstance(android.nfc.NfcAdapter)(adapter: https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter.html#!)` Helper to get an instance of this class. |
+| static [CardEmulation](CardEmulation.md)! | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#getInstance(android.nfc.NfcAdapter)(adapter: https://developer.android.com/reference/kotlin/android/nfc/NfcAdapter.html#!)` Helper to get an instance of this class. |
 | --- | --- |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#getPollingLoopFiltersForService(android.content.ComponentName)(service: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Retrieve all the polling loop filters registered for a `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/HostApduService`. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#getPollingLoopPatternFiltersForService(android.content.ComponentName)(service: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Retrieve all the polling loop pattern filters registered for a `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/HostApduService`. |
@@ -420,7 +420,7 @@ Note that this will only return AIDs that were dynamically registered using `htt
 
 | Parameters ||
 |---|---|
-| `service` | [ComponentName](../android/content/ComponentName.md)!: The component name of the service |
+| `service` | [ComponentName](../android.content/ComponentName.md)!: The component name of the service |
 | `category` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The category for which the AIDs were registered, e.g. `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#CATEGORY_PAYMENT:kotlin.String` |
 
 | Return ||
@@ -480,7 +480,7 @@ Helper to get an instance of this class.
 
 | Parameters ||
 |---|---|
-| `adapter` | [NfcAdapter](../android/nfc/NfcAdapter.md)!: A reference to an NfcAdapter object. |
+| `adapter` | [NfcAdapter](../android.nfc/NfcAdapter.md)!: A reference to an NfcAdapter object. |
 
 | Return ||
 |---|---|
@@ -498,7 +498,7 @@ Retrieve all the polling loop filters registered for a `https://developer.androi
 
 | Parameters ||
 |---|---|
-| `service` | [ComponentName](../android/content/ComponentName.md): The HostApduService to retrieve the filter for. This value cannot be `null`. |
+| `service` | [ComponentName](../android.content/ComponentName.md): The HostApduService to retrieve the filter for. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -524,7 +524,7 @@ Retrieve all the polling loop pattern filters registered for a `https://develope
 
 | Parameters ||
 |---|---|
-| `service` | [ComponentName](../android/content/ComponentName.md): The HostApduService to retrieve the filter for. This value cannot be `null`. |
+| `service` | [ComponentName](../android.content/ComponentName.md): The HostApduService to retrieve the filter for. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -596,7 +596,7 @@ Allows an application to query whether a service is currently the default handle
 
 | Parameters ||
 |---|---|
-| `service` | [ComponentName](../android/content/ComponentName.md)!: The ComponentName of the service |
+| `service` | [ComponentName](../android.content/ComponentName.md)!: The ComponentName of the service |
 | `aid` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The ISO7816-4 Application ID |
 
 | Return ||
@@ -620,7 +620,7 @@ Note that if `https://developer.android.com/reference/kotlin/android/nfc/cardemu
 
 | Parameters ||
 |---|---|
-| `service` | [ComponentName](../android/content/ComponentName.md)!: The ComponentName of the service |
+| `service` | [ComponentName](../android.content/ComponentName.md)!: The ComponentName of the service |
 | `category` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The category |
 
 | Return ||
@@ -639,7 +639,7 @@ Checks whether the device must have its screen on for the service to be activate
 
 | Parameters ||
 |---|---|
-| `service` | [ComponentName](../android/content/ComponentName.md): The component name of the service. This value cannot be `null`. |
+| `service` | [ComponentName](../android.content/ComponentName.md): The component name of the service. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -661,7 +661,7 @@ Checks whether the device must be unlocked for the service to be activated.
 
 | Parameters ||
 |---|---|
-| `service` | [ComponentName](../android/content/ComponentName.md): The component name of the service. This value cannot be `null`. |
+| `service` | [ComponentName](../android.content/ComponentName.md): The component name of the service. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -705,7 +705,7 @@ Note that you can only register AIDs for a service that is running under the sam
 
 | Parameters ||
 |---|---|
-| `service` | [ComponentName](../android/content/ComponentName.md)!: The component name of the service |
+| `service` | [ComponentName](../android.content/ComponentName.md)!: The component name of the service |
 | `category` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The category of AIDs to be registered |
 | `aids` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!: A list containing the AIDs to be registered |
 | --- | --- |
@@ -729,7 +729,7 @@ Register a callback for NFC events.
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): The Executor to run the call back with. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The Executor to run the call back with. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [CardEmulation.NfcEventCallback](../android/nfc/cardemulation/CardEmulation.NfcEventCallback.md): The callback to register. This value cannot be `null`. |
 
 ### registerPollingLoopFilterForService
@@ -752,7 +752,7 @@ When auto-transact is set to true, if the filter matches the following requireme
 
 | Parameters ||
 |---|---|
-| `service` | [ComponentName](../android/content/ComponentName.md): The HostApduService to register the filter for. This value cannot be `null`. |
+| `service` | [ComponentName](../android.content/ComponentName.md): The HostApduService to register the filter for. This value cannot be `null`. |
 | `pollingLoopFilter` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The filter to register. This value cannot be `null`. |
 | `autoTransact` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): true to have the NFC stack automatically disable observe mode and allow transactions to proceed when this filter matches, false otherwise |
 | --- | --- |
@@ -788,7 +788,7 @@ When auto-transact is set to true, if the pattern matches the following requirem
 
 | Parameters ||
 |---|---|
-| `service` | [ComponentName](../android/content/ComponentName.md): The HostApduService to register the filter for. This value cannot be `null`. |
+| `service` | [ComponentName](../android.content/ComponentName.md): The HostApduService to register the filter for. This value cannot be `null`. |
 | `pollingLoopPatternFilter` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The pattern filter to register, must to be compatible with `https://developer.android.com/reference/kotlin/java/util/regex/Pattern.html#compile(kotlin.String)` and only contain hexadecimal numbers and \`.\`, \`?\` and \`\*\` operators. This value cannot be `null`. |
 | `autoTransact` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): true to have the NFC stack automatically disable observe mode and allow transactions to proceed when this filter matches, false otherwise |
 | --- | --- |
@@ -819,7 +819,7 @@ Note that this will only remove AIDs that were dynamically registered using the 
 
 | Parameters ||
 |---|---|
-| `service` | [ComponentName](../android/content/ComponentName.md)!: The component name of the service |
+| `service` | [ComponentName](../android.content/ComponentName.md)!: The component name of the service |
 | `category` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The category of the AIDs to be removed, e.g. `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/CardEmulation#CATEGORY_PAYMENT:kotlin.String` |
 
 | Return ||
@@ -841,7 +841,7 @@ Unregister a polling loop filter (PLF) for a HostApduService. If the PLF had pre
 
 | Parameters ||
 |---|---|
-| `service` | [ComponentName](../android/content/ComponentName.md): The HostApduService to unregister the filter for. This value cannot be `null`. |
+| `service` | [ComponentName](../android.content/ComponentName.md): The HostApduService to unregister the filter for. This value cannot be `null`. |
 | `pollingLoopFilter` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The filter to unregister. This value cannot be `null`. |
 
 | Return ||
@@ -867,7 +867,7 @@ Unregister a polling loop pattern filter (PLPF) for a HostApduService. If the PL
 
 | Parameters ||
 |---|---|
-| `service` | [ComponentName](../android/content/ComponentName.md): The HostApduService to unregister the filter for. This value cannot be `null`. |
+| `service` | [ComponentName](../android.content/ComponentName.md): The HostApduService to unregister the filter for. This value cannot be `null`. |
 | `pollingLoopPatternFilter` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The filter to unregister, must to be compatible with `https://developer.android.com/reference/kotlin/java/util/regex/Pattern.html#compile(kotlin.String)` and only contain hexadecimal numbers and\`.\`, \`?\` and \`\*\` operators. This value cannot be `null`. |
 
 | Return ||
@@ -901,7 +901,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `service` | [ComponentName](../android/content/ComponentName.md): The component name of the service. This value cannot be `null`. |
+| `service` | [ComponentName](../android.content/ComponentName.md): The component name of the service. This value cannot be `null`. |
 | `offHostSecureElement` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): Secure Element to register the AID to. Only accept strings with prefix SIM or prefix eSE. Ref: GSMA TS.26 - NFC Handset Requirements TS26_NFC_REQ_069: For UICC, Secure Element Name SHALL be SIM\[smartcard slot\] (e.g. SIM/SIM1, SIM2... SIMn). TS26_NFC_REQ_070: For embedded SE, Secure Element Name SHALL be eSE\[number\] (e.g. eSE/eSE1, eSE2, etc.). This value cannot be `null`. |
 
 | Return ||
@@ -936,8 +936,8 @@ Starting with `https://developer.android.com/reference/kotlin/android/os/Build.V
 
 | Parameters ||
 |---|---|
-| `activity` | [Activity](../android/app/Activity.md)!: The activity which prefers this service to be invoked |
-| `service` | [ComponentName](../android/content/ComponentName.md)!: The service to be preferred while this activity is in the foreground |
+| `activity` | [Activity](../android.app/Activity.md)!: The activity which prefers this service to be invoked |
+| `service` | [ComponentName](../android.content/ComponentName.md)!: The service to be preferred while this activity is in the foreground |
 
 | Return ||
 |---|---|
@@ -958,7 +958,7 @@ Sets whether the device must have its screen on for the service to be activated.
 
 | Parameters ||
 |---|---|
-| `service` | [ComponentName](../android/content/ComponentName.md): The component name of the service. This value cannot be `null`. |
+| `service` | [ComponentName](../android.content/ComponentName.md): The component name of the service. This value cannot be `null`. |
 | `enable` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): Whether the service should only be activated when the device's screen is on |
 
 | Exceptions ||
@@ -980,7 +980,7 @@ Sets whether the device must be unlocked for the service to be activated. This A
 
 | Parameters ||
 |---|---|
-| `service` | [ComponentName](../android/content/ComponentName.md): The component name of the service. This value cannot be `null`. |
+| `service` | [ComponentName](../android.content/ComponentName.md): The component name of the service. This value cannot be `null`. |
 | `enable` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): Whether the service should only be activated when the device is unlocked |
 
 | Exceptions ||
@@ -1002,7 +1002,7 @@ Sets whether when this service becomes the preferred service, if the NFC stack s
 
 | Parameters ||
 |---|---|
-| `service` | [ComponentName](../android/content/ComponentName.md): The component name of the service. This value cannot be `null`. |
+| `service` | [ComponentName](../android.content/ComponentName.md): The component name of the service. This value cannot be `null`. |
 | `enable` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): Whether the service should default to observe mode or not |
 
 | Return ||
@@ -1054,7 +1054,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `service` | [ComponentName](../android/content/ComponentName.md): The component name of the service. This value cannot be `null`. |
+| `service` | [ComponentName](../android.content/ComponentName.md): The component name of the service. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -1074,7 +1074,7 @@ Note that the specified Activity must still be in resumed state at the time of t
 
 | Parameters ||
 |---|---|
-| `activity` | [Activity](../android/app/Activity.md)!: The activity which the service was registered for |
+| `activity` | [Activity](../android.app/Activity.md)!: The activity which the service was registered for |
 
 | Return ||
 |---|---|

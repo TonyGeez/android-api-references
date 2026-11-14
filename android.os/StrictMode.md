@@ -2,7 +2,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 
 # StrictMode
 
-Kotlin | [Java](../android/os/StrictMode.md)
+Kotlin | [Java](StrictMode.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class StrictMode
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.os.StrictMode](../android/os/StrictMode.md) |
+| ↳ | [android.os.StrictMode](StrictMode.md) |
 
 StrictMode is a developer tool which detects things you might be doing by accident and brings them to your attention so you can fix them.
 

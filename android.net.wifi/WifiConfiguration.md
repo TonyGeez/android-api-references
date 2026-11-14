@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # WifiConfiguration
 
-Kotlin| [Java](../android/net/wifi/WifiConfiguration.md) 
+Kotlin| [Java](WifiConfiguration.md) 
 | --- | --- |
 
 ```
@@ -13,9 +13,9 @@ open class WifiConfiguration : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.wifi.WifiConfiguration](../android/net/wifi/WifiConfiguration.md) |
+| ↳ | [android.net.wifi.WifiConfiguration](WifiConfiguration.md) |
 
-A class representing a configured Wi-Fi network, including the security configuration. Non privileged caller should use [WifiNetworkSpecifier.Builder](../android/net/wifi/WifiNetworkSpecifier.Builder.md) to create [NetworkSpecifier](../android/net/NetworkSpecifier.md) and [WifiNetworkSuggestion.Builder](../android/net/wifi/WifiNetworkSuggestion.Builder.md) to create [WifiNetworkSuggestion](../android/net/wifi/WifiNetworkSuggestion.md). This class can still be used with privileged APIs only such as [WifiManager.addNetwork(WifiConfiguration)](../android/net/wifi/WifiManager.md)).
+A class representing a configured Wi-Fi network, including the security configuration. Non privileged caller should use [WifiNetworkSpecifier.Builder](../android/net/wifi/WifiNetworkSpecifier.Builder.md) to create [NetworkSpecifier](../android.net/NetworkSpecifier.md) and [WifiNetworkSuggestion.Builder](../android/net/wifi/WifiNetworkSuggestion.Builder.md) to create [WifiNetworkSuggestion](WifiNetworkSuggestion.md). This class can still be used with privileged APIs only such as [WifiManager.addNetwork(WifiConfiguration)](WifiManager.md)).
 
 ## Summary
 
@@ -33,83 +33,83 @@ A class representing a configured Wi-Fi network, including the security configur
 
 | Constants ||
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RANDOMIZATION_AUTO](../android/net/wifi/WifiConfiguration.md) Let the wifi framework automatically decide the MAC randomization strategy. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RANDOMIZATION_NONE](../android/net/wifi/WifiConfiguration.md) Use factory MAC when connecting to this network |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RANDOMIZATION_NON_PERSISTENT](../android/net/wifi/WifiConfiguration.md) Use a randomly generated MAC address for connections to this network. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RANDOMIZATION_AUTO](WifiConfiguration.md) Let the wifi framework automatically decide the MAC randomization strategy. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RANDOMIZATION_NONE](WifiConfiguration.md) Use factory MAC when connecting to this network |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RANDOMIZATION_NON_PERSISTENT](WifiConfiguration.md) Use a randomly generated MAC address for connections to this network. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RANDOMIZATION_PERSISTENT](../android/net/wifi/WifiConfiguration.md) Generate a randomized MAC once and reuse it for all connections to this network |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_TYPE_DPP](../android/net/wifi/WifiConfiguration.md) Security type for Easy Connect (DPP) network |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_TYPE_EAP](../android/net/wifi/WifiConfiguration.md) Security type for an EAP network. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RANDOMIZATION_PERSISTENT](WifiConfiguration.md) Generate a randomized MAC once and reuse it for all connections to this network |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_TYPE_DPP](WifiConfiguration.md) Security type for Easy Connect (DPP) network |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_TYPE_EAP](WifiConfiguration.md) Security type for an EAP network. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_TYPE_EAP_SUITE_B](../android/net/wifi/WifiConfiguration.md) Security type for a WPA3-Enterprise in 192-bit security network. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_TYPE_EAP_WPA3_ENTERPRISE](../android/net/wifi/WifiConfiguration.md) Security type for a WPA3-Enterprise network. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_TYPE_EAP_WPA3_ENTERPRISE_192_BIT](../android/net/wifi/WifiConfiguration.md) Security type for a WPA3-Enterprise in 192-bit security network. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_TYPE_EAP_SUITE_B](WifiConfiguration.md) Security type for a WPA3-Enterprise in 192-bit security network. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_TYPE_EAP_WPA3_ENTERPRISE](WifiConfiguration.md) Security type for a WPA3-Enterprise network. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_TYPE_EAP_WPA3_ENTERPRISE_192_BIT](WifiConfiguration.md) Security type for a WPA3-Enterprise in 192-bit security network. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_TYPE_OPEN](../android/net/wifi/WifiConfiguration.md) Security type for an open network. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_TYPE_OWE](../android/net/wifi/WifiConfiguration.md) Security type for an OWE network. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_TYPE_PSK](../android/net/wifi/WifiConfiguration.md) Security type for a PSK network. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_TYPE_OPEN](WifiConfiguration.md) Security type for an open network. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_TYPE_OWE](WifiConfiguration.md) Security type for an OWE network. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_TYPE_PSK](WifiConfiguration.md) Security type for a PSK network. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_TYPE_SAE](../android/net/wifi/WifiConfiguration.md) Security type for an SAE network. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_TYPE_WAPI_CERT](../android/net/wifi/WifiConfiguration.md) Security type for a WAPI Certificate network. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_TYPE_WAPI_PSK](../android/net/wifi/WifiConfiguration.md) Security type for a WAPI PSK network. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_TYPE_SAE](WifiConfiguration.md) Security type for an SAE network. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_TYPE_WAPI_CERT](WifiConfiguration.md) Security type for a WAPI Certificate network. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_TYPE_WAPI_PSK](WifiConfiguration.md) Security type for a WAPI PSK network. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_TYPE_WEP](../android/net/wifi/WifiConfiguration.md) Security type for a WEP network. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECURITY_TYPE_WEP](WifiConfiguration.md) Security type for a WEP network. |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android.os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android.os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android.os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [WifiConfiguration](../android/net/wifi/WifiConfiguration.md))`()` <br /> |
-| [WifiConfiguration](../android/net/wifi/WifiConfiguration.md))`(`source:` ` [WifiConfiguration](../android/net/wifi/WifiConfiguration.md)`)` Copy constructor |
+| [WifiConfiguration](WifiConfiguration.md))`()` <br /> |
+| [WifiConfiguration](WifiConfiguration.md))`(`source:` ` [WifiConfiguration](WifiConfiguration.md)`)` Copy constructor |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [ProxyInfo](../android/net/ProxyInfo.md)! | [getHttpProxy](../android/net/wifi/WifiConfiguration.md))`()` Returns the HTTP proxy used by this object. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getKey](../android/net/wifi/WifiConfiguration.md))`()` Return a String that can be used to uniquely identify this WifiConfiguration. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMacRandomizationSetting](../android/net/wifi/WifiConfiguration.md))`()` Get the MAC randomization setting for this network. |
+| open [ProxyInfo](../android.net/ProxyInfo.md)! | [getHttpProxy](WifiConfiguration.md))`()` Returns the HTTP proxy used by this object. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getKey](WifiConfiguration.md))`()` Return a String that can be used to uniquely identify this WifiConfiguration. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMacRandomizationSetting](WifiConfiguration.md))`()` Get the MAC randomization setting for this network. |
 | --- | --- |
-| open [MacAddress](../android/net/MacAddress.md) | [getRandomizedMacAddress](../android/net/wifi/WifiConfiguration.md))`()` Returns MAC address set to be the local randomized MAC address. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDppConfigurator](../android/net/wifi/WifiConfiguration.md))`()` To check if this WifiConfiguration supports configuring a peer Enrollee device with SECURITY_TYPE_DPP |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPasspoint](../android/net/wifi/WifiConfiguration.md))`()` Identify if this configuration represents a Passpoint network |
+| open [MacAddress](../android.net/MacAddress.md) | [getRandomizedMacAddress](WifiConfiguration.md))`()` Returns MAC address set to be the local randomized MAC address. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDppConfigurator](WifiConfiguration.md))`()` To check if this WifiConfiguration supports configuring a peer Enrollee device with SECURITY_TYPE_DPP |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPasspoint](WifiConfiguration.md))`()` Identify if this configuration represents a Passpoint network |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setHttpProxy](../android/net/wifi/WifiConfiguration.md))`(`httpProxy:` ` [ProxyInfo](../android/net/ProxyInfo.md)!`)` Set the [ProxyInfo](../android/net/ProxyInfo.md) for this WifiConfiguration. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setIpConfiguration](../android/net/wifi/WifiConfiguration.md))`(`ipConfiguration:` ` [IpConfiguration](../android/net/IpConfiguration.md)?`)` Set the [IpConfiguration](../android/net/IpConfiguration.md) for this network. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMacRandomizationSetting](../android/net/wifi/WifiConfiguration.md))`(`macRandomizationSetting:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the MAC randomization setting for this network. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setHttpProxy](WifiConfiguration.md))`(`httpProxy:` ` [ProxyInfo](../android.net/ProxyInfo.md)!`)` Set the [ProxyInfo](../android.net/ProxyInfo.md) for this WifiConfiguration. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setIpConfiguration](WifiConfiguration.md))`(`ipConfiguration:` ` [IpConfiguration](../android.net/IpConfiguration.md)?`)` Set the [IpConfiguration](../android.net/IpConfiguration.md) for this network. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMacRandomizationSetting](WifiConfiguration.md))`(`macRandomizationSetting:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the MAC randomization setting for this network. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSecurityParams](../android/net/wifi/WifiConfiguration.md))`(`securityType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the various security params to correspond to the provided security type. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/net/wifi/WifiConfiguration.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSecurityParams](WifiConfiguration.md))`(`securityType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the various security params to correspond to the provided security type. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](WifiConfiguration.md))`()` <br /> |
 
 | Properties ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [BSSID](../android/net/wifi/WifiConfiguration.md) When set, this network configuration entry should only be used when associating with the AP having the specified BSSID. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [FQDN](../android/net/wifi/WifiConfiguration.md) Fully qualified domain name of a Passpoint configuration |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [SSID](../android/net/wifi/WifiConfiguration.md) The network's SSID. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [BSSID](WifiConfiguration.md) When set, this network configuration entry should only be used when associating with the AP having the specified BSSID. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [FQDN](WifiConfiguration.md) Fully qualified domain name of a Passpoint configuration |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [SSID](WifiConfiguration.md) The network's SSID. |
 | --- | --- |
-| [BitSet](../java/util/BitSet.md) | [allowedAuthAlgorithms](../android/net/wifi/WifiConfiguration.md) The set of authentication protocols supported by this configuration. |
-| [BitSet](../java/util/BitSet.md) | [allowedGroupCiphers](../android/net/wifi/WifiConfiguration.md) The set of group ciphers supported by this configuration. |
-| [BitSet](../java/util/BitSet.md) | [allowedGroupManagementCiphers](../android/net/wifi/WifiConfiguration.md) The set of group management ciphers supported by this configuration. |
+| [BitSet](../java.util/BitSet.md) | [allowedAuthAlgorithms](WifiConfiguration.md) The set of authentication protocols supported by this configuration. |
+| [BitSet](../java.util/BitSet.md) | [allowedGroupCiphers](WifiConfiguration.md) The set of group ciphers supported by this configuration. |
+| [BitSet](../java.util/BitSet.md) | [allowedGroupManagementCiphers](WifiConfiguration.md) The set of group management ciphers supported by this configuration. |
 | --- | --- |
-| [BitSet](../java/util/BitSet.md) | [allowedKeyManagement](../android/net/wifi/WifiConfiguration.md) The set of key management protocols supported by this configuration. |
-| [BitSet](../java/util/BitSet.md) | [allowedPairwiseCiphers](../android/net/wifi/WifiConfiguration.md) The set of pairwise ciphers for WPA supported by this configuration. |
-| [BitSet](../java/util/BitSet.md) | [allowedProtocols](../android/net/wifi/WifiConfiguration.md) The set of security protocols supported by this configuration. |
+| [BitSet](../java.util/BitSet.md) | [allowedKeyManagement](WifiConfiguration.md) The set of key management protocols supported by this configuration. |
+| [BitSet](../java.util/BitSet.md) | [allowedPairwiseCiphers](WifiConfiguration.md) The set of pairwise ciphers for WPA supported by this configuration. |
+| [BitSet](../java.util/BitSet.md) | [allowedProtocols](WifiConfiguration.md) The set of security protocols supported by this configuration. |
 | --- | --- |
-| [BitSet](../java/util/BitSet.md) | [allowedSuiteBCiphers](../android/net/wifi/WifiConfiguration.md) The set of SuiteB ciphers supported by this configuration. |
-| [WifiEnterpriseConfig](../android/net/wifi/WifiEnterpriseConfig.md)! | [enterpriseConfig](../android/net/wifi/WifiConfiguration.md) The enterprise configuration details specifying the EAP method, certificates and other settings associated with the EAP. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hiddenSSID](../android/net/wifi/WifiConfiguration.md) This is a network that does not broadcast its SSID, so an SSID-specific probe request must be used for scans. |
+| [BitSet](../java.util/BitSet.md) | [allowedSuiteBCiphers](WifiConfiguration.md) The set of SuiteB ciphers supported by this configuration. |
+| [WifiEnterpriseConfig](WifiEnterpriseConfig.md)! | [enterpriseConfig](WifiConfiguration.md) The enterprise configuration details specifying the EAP method, certificates and other settings associated with the EAP. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hiddenSSID](WifiConfiguration.md) This is a network that does not broadcast its SSID, so an SSID-specific probe request must be used for scans. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isHomeProviderNetwork](../android/net/wifi/WifiConfiguration.md) Flag indicating if this network is provided by a home Passpoint provider or a roaming Passpoint provider. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [networkId](../android/net/wifi/WifiConfiguration.md) The ID number that the supplicant uses to identify this network configuration entry. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [preSharedKey](../android/net/wifi/WifiConfiguration.md) Pre-shared key for use with WPA-PSK. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isHomeProviderNetwork](WifiConfiguration.md) Flag indicating if this network is provided by a home Passpoint provider or a roaming Passpoint provider. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [networkId](WifiConfiguration.md) The ID number that the supplicant uses to identify this network configuration entry. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [preSharedKey](WifiConfiguration.md) Pre-shared key for use with WPA-PSK. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [priority](../android/net/wifi/WifiConfiguration.md) Priority determines the preference given to a network by`wpa_supplicant`when choosing an access point with which to associate. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [providerFriendlyName](../android/net/wifi/WifiConfiguration.md) Name of Passpoint credential provider |
-| [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)! | [roamingConsortiumIds](../android/net/wifi/WifiConfiguration.md) Roaming Consortium Id list for Passpoint credential; identifies a set of networks where Passpoint credential will be considered valid |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [priority](WifiConfiguration.md) Priority determines the preference given to a network by`wpa_supplicant`when choosing an access point with which to associate. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [providerFriendlyName](WifiConfiguration.md) Name of Passpoint credential provider |
+| [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)! | [roamingConsortiumIds](WifiConfiguration.md) Roaming Consortium Id list for Passpoint credential; identifies a set of networks where Passpoint credential will be considered valid |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [status](../android/net/wifi/WifiConfiguration.md) The current status of this network configuration entry. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [wepKeys](../android/net/wifi/WifiConfiguration.md) Four WEP keys. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [wepTxKeyIndex](../android/net/wifi/WifiConfiguration.md) Default WEP key index, ranging from 0 to 3. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [status](WifiConfiguration.md) The current status of this network configuration entry. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [wepKeys](WifiConfiguration.md) Four WEP keys. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [wepTxKeyIndex](WifiConfiguration.md) Default WEP key index, ranging from 0 to 3. |
 | --- | --- |
 
 ## Constants
@@ -195,7 +195,7 @@ Deprecated in [API level 30](https://developer.android.com/guide/topics/manifest
 static val SECURITY_TYPE_EAP_SUITE_B: Int
 ```
 
-**Deprecated:** *Use the [SECURITY_TYPE_EAP_WPA3_ENTERPRISE_192_BIT](../android/net/wifi/WifiConfiguration.md) constant (which is the same value).*
+**Deprecated:** *Use the [SECURITY_TYPE_EAP_WPA3_ENTERPRISE_192_BIT](WifiConfiguration.md) constant (which is the same value).*
 
 Security type for a WPA3-Enterprise in 192-bit security network. 
 
@@ -221,7 +221,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 static val SECURITY_TYPE_EAP_WPA3_ENTERPRISE_192_BIT: Int
 ```
 
-Security type for a WPA3-Enterprise in 192-bit security network. This is the same as [SECURITY_TYPE_EAP_SUITE_B](../android/net/wifi/WifiConfiguration.md) and uses the same value. 
+Security type for a WPA3-Enterprise in 192-bit security network. This is the same as [SECURITY_TYPE_EAP_SUITE_B](WifiConfiguration.md) and uses the same value. 
 
  Value: 5
 
@@ -331,7 +331,7 @@ Copy constructor
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------|
-| `source` | [WifiConfiguration](../android/net/wifi/WifiConfiguration.md):This value cannot be`null`. |
+| `source` | [WifiConfiguration](WifiConfiguration.md):This value cannot be`null`. |
 
 ## Public methods
 
@@ -347,7 +347,7 @@ Returns the HTTP proxy used by this object.
 
 | Return ||
 |------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [ProxyInfo](../android/net/ProxyInfo.md)! | a [httpProxy](../android/net/ProxyInfo.md) representing the proxy specified by this WifiConfiguration, or`null`if no proxy is specified. |
+| [ProxyInfo](../android.net/ProxyInfo.md)! | a [httpProxy](../android.net/ProxyInfo.md) representing the proxy specified by this WifiConfiguration, or`null`if no proxy is specified. |
 
 ### getKey
 
@@ -376,7 +376,7 @@ Get the MAC randomization setting for this network.
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.net.wifi.WifiConfiguration#RANDOMIZATION_NONE](../android/net/wifi/WifiConfiguration.md), [android.net.wifi.WifiConfiguration#RANDOMIZATION_PERSISTENT](../android/net/wifi/WifiConfiguration.md), [android.net.wifi.WifiConfiguration#RANDOMIZATION_NON_PERSISTENT](../android/net/wifi/WifiConfiguration.md), or [android.net.wifi.WifiConfiguration#RANDOMIZATION_AUTO](../android/net/wifi/WifiConfiguration.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.net.wifi.WifiConfiguration#RANDOMIZATION_NONE](WifiConfiguration.md), [android.net.wifi.WifiConfiguration#RANDOMIZATION_PERSISTENT](WifiConfiguration.md), [android.net.wifi.WifiConfiguration#RANDOMIZATION_NON_PERSISTENT](WifiConfiguration.md), or [android.net.wifi.WifiConfiguration#RANDOMIZATION_AUTO](WifiConfiguration.md) |
 
 ### getRandomizedMacAddress
 
@@ -392,7 +392,7 @@ Information is restricted to Device Owner, Profile Owner, and Carrier apps (whic
 
 | Return ||
 |-------------------------------------------------------------------------------------------|-----------------------------|
-| [MacAddress](../android/net/MacAddress.md) | This value cannot be`null`. |
+| [MacAddress](../android.net/MacAddress.md) | This value cannot be`null`. |
 
 ### isDppConfigurator
 
@@ -422,11 +422,11 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 open fun setHttpProxy(httpProxy: ProxyInfo!): Unit
 ```
 
-Set the [ProxyInfo](../android/net/ProxyInfo.md) for this WifiConfiguration. This method should only be used by a device owner or profile owner. When other apps attempt to save a [WifiConfiguration](../android/net/wifi/WifiConfiguration.md) with modified proxy settings, the methods [WifiManager.addNetwork](../android/net/wifi/WifiManager.md))and [WifiManager.updateNetwork](../android/net/wifi/WifiManager.md))fail and return`-1`.
+Set the [ProxyInfo](../android.net/ProxyInfo.md) for this WifiConfiguration. This method should only be used by a device owner or profile owner. When other apps attempt to save a [WifiConfiguration](WifiConfiguration.md) with modified proxy settings, the methods [WifiManager.addNetwork](WifiManager.md))and [WifiManager.updateNetwork](WifiManager.md))fail and return`-1`.
 
 | Parameters ||
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `httpProxy` | [ProxyInfo](../android/net/ProxyInfo.md)!: [ProxyInfo](../android/net/ProxyInfo.md) representing the httpProxy to be used by this WifiConfiguration. Setting this to`null`will explicitly set no proxy, removing any proxy that was previously set. |
+| `httpProxy` | [ProxyInfo](../android.net/ProxyInfo.md)!: [ProxyInfo](../android.net/ProxyInfo.md) representing the httpProxy to be used by this WifiConfiguration. Setting this to`null`will explicitly set no proxy, removing any proxy that was previously set. |
 
 ### setIpConfiguration
 
@@ -436,11 +436,11 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 open fun setIpConfiguration(ipConfiguration: IpConfiguration?): Unit
 ```
 
-Set the [IpConfiguration](../android/net/IpConfiguration.md) for this network.
+Set the [IpConfiguration](../android.net/IpConfiguration.md) for this network.
 
 | Parameters ||
 |-------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `ipConfiguration` | [IpConfiguration](../android/net/IpConfiguration.md)?:a [IpConfiguration](../android/net/IpConfiguration.md) to use for this Wi-Fi configuration, or`null`to use the default configuration. |
+| `ipConfiguration` | [IpConfiguration](../android.net/IpConfiguration.md)?:a [IpConfiguration](../android.net/IpConfiguration.md) to use for this Wi-Fi configuration, or`null`to use the default configuration. |
 
 ### setMacRandomizationSetting
 
@@ -462,7 +462,7 @@ Caller must satify one of the following conditions:
 
 | Parameters ||
 |---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `macRandomizationSetting` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is [android.net.wifi.WifiConfiguration#RANDOMIZATION_NONE](../android/net/wifi/WifiConfiguration.md), [android.net.wifi.WifiConfiguration#RANDOMIZATION_PERSISTENT](../android/net/wifi/WifiConfiguration.md), [android.net.wifi.WifiConfiguration#RANDOMIZATION_NON_PERSISTENT](../android/net/wifi/WifiConfiguration.md), or [android.net.wifi.WifiConfiguration#RANDOMIZATION_AUTO](../android/net/wifi/WifiConfiguration.md) |
+| `macRandomizationSetting` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is [android.net.wifi.WifiConfiguration#RANDOMIZATION_NONE](WifiConfiguration.md), [android.net.wifi.WifiConfiguration#RANDOMIZATION_PERSISTENT](WifiConfiguration.md), [android.net.wifi.WifiConfiguration#RANDOMIZATION_NON_PERSISTENT](WifiConfiguration.md), or [android.net.wifi.WifiConfiguration#RANDOMIZATION_AUTO](WifiConfiguration.md) |
 
 ### setSecurityParams
 
@@ -473,7 +473,7 @@ open fun setSecurityParams(securityType: Int): Unit
 ```
 
 Set the various security params to correspond to the provided security type. This is accomplished by setting the various BitSets exposed in WifiConfiguration. 
-This API would clear existing security types and add a default one. Before calling this API with [SECURITY_TYPE_DPP](../android/net/wifi/WifiConfiguration.md) as securityType, call [android.net.wifi.WifiManager#isEasyConnectDppAkmSupported()](../android/net/wifi/WifiManager.md))} 
+This API would clear existing security types and add a default one. Before calling this API with [SECURITY_TYPE_DPP](WifiConfiguration.md) as securityType, call [android.net.wifi.WifiManager#isEasyConnectDppAkmSupported()](WifiManager.md))} 
 
 ### toString
 

@@ -2,7 +2,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # EncoderProfiles
 
-Kotlin | [Java](../android/media/EncoderProfiles.md)
+Kotlin | [Java](EncoderProfiles.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class EncoderProfiles
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.EncoderProfiles](../android/media/EncoderProfiles.md) |
+| ↳ | [android.media.EncoderProfiles](EncoderProfiles.md) |
 
 Describes a set of encoding profiles for a given media (audio and/or video) profile. These settings are read-only.
 

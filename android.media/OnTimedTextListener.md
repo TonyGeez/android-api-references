@@ -19,7 +19,7 @@ Interface definition of a callback to be invoked when a timed text is available 
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTimedText](../android/media/MediaPlayer.OnTimedTextListener.md))`(`mp:` ` [MediaPlayer](../android/media/MediaPlayer.md)!`, `text:` ` [TimedText](../android/media/TimedText.md)!`)` Called to indicate an avaliable timed text |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTimedText](../android/media/MediaPlayer.OnTimedTextListener.md))`(`mp:` ` [MediaPlayer](MediaPlayer.md)!`, `text:` ` [TimedText](TimedText.md)!`)` Called to indicate an avaliable timed text |
 
 ## Public methods
 
@@ -38,5 +38,5 @@ Called to indicate an avaliable timed text
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `mp` | [MediaPlayer](../android/media/MediaPlayer.md)!:the MediaPlayer associated with this callback |
-| `text` | [TimedText](../android/media/TimedText.md)!:the timed text sample which contains the text needed to be displayed and the display format. |
+| `mp` | [MediaPlayer](MediaPlayer.md)!:the MediaPlayer associated with this callback |
+| `text` | [TimedText](TimedText.md)!:the timed text sample which contains the text needed to be displayed and the display format. |

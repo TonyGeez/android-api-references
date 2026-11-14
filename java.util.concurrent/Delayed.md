@@ -8,12 +8,12 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface Delayed : Comparable<Delayed!>
 ```
 
-| [java.util.concurrent.Delayed](../java/util/concurrent/Delayed.md) |
+| [java.util.concurrent.Delayed](Delayed.md) |
 
-| Known Direct Subclasses [ScheduledFuture](../java/util/concurrent/ScheduledFuture.md) |--------------------------------------------------------------------------------------------------------|--------------------------------------------------------| | [ScheduledFuture](../java/util/concurrent/ScheduledFuture.md) | A delayed result-bearing action that can be cancelled. | |
+| Known Direct Subclasses [ScheduledFuture](ScheduledFuture.md) |--------------------------------------------------------------------------------------------------------|--------------------------------------------------------| | [ScheduledFuture](ScheduledFuture.md) | A delayed result-bearing action that can be cancelled. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [RunnableScheduledFuture](../java/util/concurrent/RunnableScheduledFuture.md) |------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [RunnableScheduledFuture](../java/util/concurrent/RunnableScheduledFuture.md) | A [ScheduledFuture](../java/util/concurrent/ScheduledFuture.md) that is [Runnable](../java/lang/Runnable.md). | |
+| Known Indirect Subclasses [RunnableScheduledFuture](RunnableScheduledFuture.md) |------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [RunnableScheduledFuture](RunnableScheduledFuture.md) | A [ScheduledFuture](ScheduledFuture.md) that is [Runnable](../java.lang/Runnable.md). | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 A mix-in style interface for marking objects that should be acted upon after a given delay.
@@ -24,7 +24,7 @@ An implementation of this interface must define a `compareTo` method that provid
 
 | Public methods ||
 |---------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getDelay](../java/util/concurrent/Delayed.md))`(`unit:` ` [TimeUnit](../java/util/concurrent/TimeUnit.md)!`)` Returns the remaining delay associated with this object, in the given time unit. |
+| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getDelay](Delayed.md))`(`unit:` ` [TimeUnit](TimeUnit.md)!`)` Returns the remaining delay associated with this object, in the given time unit. |
 
 ## Public methods
 
@@ -40,7 +40,7 @@ Returns the remaining delay associated with this object, in the given time unit.
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------|
-| `unit` | [TimeUnit](../java/util/concurrent/TimeUnit.md)!: the time unit |
+| `unit` | [TimeUnit](TimeUnit.md)!: the time unit |
 
 | Return ||
 |------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|

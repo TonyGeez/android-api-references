@@ -8,7 +8,7 @@ class NetworkRegistrationInfo : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.telephony.NetworkRegistrationInfo](../android/telephony/NetworkRegistrationInfo.md) |
+| ↳ | [android.telephony.NetworkRegistrationInfo](NetworkRegistrationInfo.md) |
 
 Description of a mobile network registration info
 
@@ -49,7 +49,7 @@ Description of a mobile network registration info
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/NetworkRegistrationInfo#getAccessNetworkTechnology()()` <br /> |
 | --- | --- |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | `https://developer.android.com/reference/kotlin/android/telephony/NetworkRegistrationInfo#getAvailableServices()()` <br /> |
-| [CellIdentity](../android/telephony/CellIdentity.md)? | `https://developer.android.com/reference/kotlin/android/telephony/NetworkRegistrationInfo#getCellIdentity()()` Require `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_FINE_LOCATION:kotlin.String`, otherwise return null. |
+| [CellIdentity](CellIdentity.md)? | `https://developer.android.com/reference/kotlin/android/telephony/NetworkRegistrationInfo#getCellIdentity()()` Require `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#ACCESS_FINE_LOCATION:kotlin.String`, otherwise return null. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/NetworkRegistrationInfo#getDomain()()` <br /> |
 | --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/telephony/NetworkRegistrationInfo#getRegisteredPlmn()()` Get the PLMN-ID for this Network Registration, also known as the RPLMN. |
@@ -72,7 +72,7 @@ Description of a mobile network registration info
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [NetworkRegistrationInfo](../android/telephony/NetworkRegistrationInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/telephony/NetworkRegistrationInfo#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [NetworkRegistrationInfo](NetworkRegistrationInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/telephony/NetworkRegistrationInfo#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -551,7 +551,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

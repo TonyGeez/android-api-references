@@ -10,7 +10,7 @@ class Year : Comparable<Year!>, Serializable, Temporal, TemporalAdjuster
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.time.Year](../java/time/Year.md) |
+| ↳ | [java.time.Year](Year.md) |
 
 A year in the ISO-8601 calendar system, such as `2007`.
 
@@ -28,62 +28,62 @@ The ISO-8601 calendar system is the modern civil calendar system used today in m
 
 | Constants ||
 |-----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAX_VALUE](../java/time/Year.md) The maximum supported year, '+999,999,999'. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIN_VALUE](../java/time/Year.md) The minimum supported year, '-999,999,999'. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAX_VALUE](Year.md) The maximum supported year, '+999,999,999'. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIN_VALUE](Year.md) The minimum supported year, '-999,999,999'. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Temporal](../java/time/temporal/Temporal.md)! | [adjustInto](../java/time/Year.md))`(`temporal:` ` [Temporal](../java/time/temporal/Temporal.md)!`)` Adjusts the specified temporal object to have this year. |
-| [LocalDate](../java/time/LocalDate.md)! | [atDay](../java/time/Year.md))`(`dayOfYear:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Combines this year with a day-of-year to create a `LocalDate`. |
-| [YearMonth](../java/time/YearMonth.md)! | [atMonth](../java/time/Year.md))`(`month:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Combines this year with a month to create a `YearMonth`. |
+| [Temporal](../java.time.temporal/Temporal.md)! | [adjustInto](Year.md))`(`temporal:` ` [Temporal](../java.time.temporal/Temporal.md)!`)` Adjusts the specified temporal object to have this year. |
+| [LocalDate](LocalDate.md)! | [atDay](Year.md))`(`dayOfYear:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Combines this year with a day-of-year to create a `LocalDate`. |
+| [YearMonth](YearMonth.md)! | [atMonth](Year.md))`(`month:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Combines this year with a month to create a `YearMonth`. |
 | --- | --- |
-| [YearMonth](../java/time/YearMonth.md)! | [atMonth](../java/time/Year.md))`(`month:` ` [Month](../java/time/Month.md)!`)` Combines this year with a month to create a `YearMonth`. |
-| [LocalDate](../java/time/LocalDate.md)! | [atMonthDay](../java/time/Year.md))`(`monthDay:` ` [MonthDay](../java/time/MonthDay.md)!`)` Combines this year with a month-day to create a `LocalDate`. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](../java/time/Year.md))`(`other:` ` [Year](../java/time/Year.md)!`)` Compares this year to another year. |
+| [YearMonth](YearMonth.md)! | [atMonth](Year.md))`(`month:` ` [Month](Month.md)!`)` Combines this year with a month to create a `YearMonth`. |
+| [LocalDate](LocalDate.md)! | [atMonthDay](Year.md))`(`monthDay:` ` [MonthDay](MonthDay.md)!`)` Combines this year with a month-day to create a `LocalDate`. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](Year.md))`(`other:` ` [Year](Year.md)!`)` Compares this year to another year. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/time/Year.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Checks if this year is equal to another year. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](../java/time/Year.md))`(`formatter:` ` [DateTimeFormatter](../java/time/format/DateTimeFormatter.md)!`)` Formats this year using the specified formatter. |
-| static [Year](../java/time/Year.md)! | [from](../java/time/Year.md))`(`temporal:` ` [TemporalAccessor](../java/time/temporal/TemporalAccessor.md)!`)` Obtains an instance of `Year` from a temporal object. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](Year.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Checks if this year is equal to another year. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](Year.md))`(`formatter:` ` [DateTimeFormatter](../java.time.format/DateTimeFormatter.md)!`)` Formats this year using the specified formatter. |
+| static [Year](Year.md)! | [from](Year.md))`(`temporal:` ` [TemporalAccessor](../java.time.temporal/TemporalAccessor.md)!`)` Obtains an instance of `Year` from a temporal object. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [get](../java/time/Year.md))`(`field:` ` [TemporalField](../java/time/temporal/TemporalField.md)!`)` Gets the value of the specified field from this year as an `int`. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getLong](../java/time/Year.md))`(`field:` ` [TemporalField](../java/time/temporal/TemporalField.md)!`)` Gets the value of the specified field from this year as a `long`. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getValue](../java/time/Year.md))`()` Gets the year value. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [get](Year.md))`(`field:` ` [TemporalField](../java.time.temporal/TemporalField.md)!`)` Gets the value of the specified field from this year as an `int`. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getLong](Year.md))`(`field:` ` [TemporalField](../java.time.temporal/TemporalField.md)!`)` Gets the value of the specified field from this year as a `long`. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getValue](Year.md))`()` Gets the year value. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/time/Year.md))`()` A hash code for this year. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAfter](../java/time/Year.md))`(`other:` ` [Year](../java/time/Year.md)!`)` Checks if this year is after the specified year. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isBefore](../java/time/Year.md))`(`other:` ` [Year](../java/time/Year.md)!`)` Checks if this year is before the specified year. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](Year.md))`()` A hash code for this year. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAfter](Year.md))`(`other:` ` [Year](Year.md)!`)` Checks if this year is after the specified year. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isBefore](Year.md))`(`other:` ` [Year](Year.md)!`)` Checks if this year is before the specified year. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLeap](../java/time/Year.md))`()` Checks if the year is a leap year, according to the ISO proleptic calendar system rules. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLeap](../java/time/Year.md))`(`year:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Checks if the year is a leap year, according to the ISO proleptic calendar system rules. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSupported](../java/time/Year.md))`(`field:` ` [TemporalField](../java/time/temporal/TemporalField.md)!`)` Checks if the specified field is supported. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLeap](Year.md))`()` Checks if the year is a leap year, according to the ISO proleptic calendar system rules. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLeap](Year.md))`(`year:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Checks if the year is a leap year, according to the ISO proleptic calendar system rules. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSupported](Year.md))`(`field:` ` [TemporalField](../java.time.temporal/TemporalField.md)!`)` Checks if the specified field is supported. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSupported](../java/time/Year.md))`(`unit:` ` [TemporalUnit](../java/time/temporal/TemporalUnit.md)!`)` Checks if the specified unit is supported. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isValidMonthDay](../java/time/Year.md))`(`monthDay:` ` [MonthDay](../java/time/MonthDay.md)!`)` Checks if the month-day is valid for this year. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [length](../java/time/Year.md))`()` Gets the length of this year in days. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSupported](Year.md))`(`unit:` ` [TemporalUnit](../java.time.temporal/TemporalUnit.md)!`)` Checks if the specified unit is supported. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isValidMonthDay](Year.md))`(`monthDay:` ` [MonthDay](MonthDay.md)!`)` Checks if the month-day is valid for this year. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [length](Year.md))`()` Gets the length of this year in days. |
 | --- | --- |
-| [Year](../java/time/Year.md)! | [minus](../java/time/Year.md))`(`amountToSubtract:` ` [TemporalAmount](../java/time/temporal/TemporalAmount.md)!`)` Returns a copy of this year with the specified amount subtracted. |
-| [Year](../java/time/Year.md)! | [minus](../java/time/Year.md))`(`amountToSubtract:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TemporalUnit](../java/time/temporal/TemporalUnit.md)!`)` Returns a copy of this year with the specified amount subtracted. |
-| [Year](../java/time/Year.md)! | [minusYears](../java/time/Year.md))`(`yearsToSubtract:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this `Year` with the specified number of years subtracted. |
+| [Year](Year.md)! | [minus](Year.md))`(`amountToSubtract:` ` [TemporalAmount](../java.time.temporal/TemporalAmount.md)!`)` Returns a copy of this year with the specified amount subtracted. |
+| [Year](Year.md)! | [minus](Year.md))`(`amountToSubtract:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TemporalUnit](../java.time.temporal/TemporalUnit.md)!`)` Returns a copy of this year with the specified amount subtracted. |
+| [Year](Year.md)! | [minusYears](Year.md))`(`yearsToSubtract:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this `Year` with the specified number of years subtracted. |
 | --- | --- |
-| static [Year](../java/time/Year.md)! | [now](../java/time/Year.md))`()` Obtains the current year from the system clock in the default time-zone. |
-| static [Year](../java/time/Year.md)! | [now](../java/time/Year.md))`(`clock:` ` [Clock](../java/time/Clock.md)!`)` Obtains the current year from the specified clock. |
-| static [Year](../java/time/Year.md)! | [now](../java/time/Year.md))`(`zone:` ` [ZoneId](../java/time/ZoneId.md)!`)` Obtains the current year from the system clock in the specified time-zone. |
+| static [Year](Year.md)! | [now](Year.md))`()` Obtains the current year from the system clock in the default time-zone. |
+| static [Year](Year.md)! | [now](Year.md))`(`clock:` ` [Clock](Clock.md)!`)` Obtains the current year from the specified clock. |
+| static [Year](Year.md)! | [now](Year.md))`(`zone:` ` [ZoneId](ZoneId.md)!`)` Obtains the current year from the system clock in the specified time-zone. |
 | --- | --- |
-| static [Year](../java/time/Year.md)! | [of](../java/time/Year.md))`(`isoYear:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Obtains an instance of `Year`. |
-| static [Year](../java/time/Year.md)! | [parse](../java/time/Year.md))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Obtains an instance of `Year` from a text string such as `2007`. |
-| static [Year](../java/time/Year.md)! | [parse](../java/time/Year.md))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `formatter:` ` [DateTimeFormatter](../java/time/format/DateTimeFormatter.md)!`)` Obtains an instance of `Year` from a text string using a specific formatter. |
+| static [Year](Year.md)! | [of](Year.md))`(`isoYear:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Obtains an instance of `Year`. |
+| static [Year](Year.md)! | [parse](Year.md))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Obtains an instance of `Year` from a text string such as `2007`. |
+| static [Year](Year.md)! | [parse](Year.md))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `formatter:` ` [DateTimeFormatter](../java.time.format/DateTimeFormatter.md)!`)` Obtains an instance of `Year` from a text string using a specific formatter. |
 | --- | --- |
-| [Year](../java/time/Year.md)! | [plus](../java/time/Year.md))`(`amountToAdd:` ` [TemporalAmount](../java/time/temporal/TemporalAmount.md)!`)` Returns a copy of this year with the specified amount added. |
-| [Year](../java/time/Year.md)! | [plus](../java/time/Year.md))`(`amountToAdd:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TemporalUnit](../java/time/temporal/TemporalUnit.md)!`)` Returns a copy of this year with the specified amount added. |
-| [Year](../java/time/Year.md)! | [plusYears](../java/time/Year.md))`(`yearsToAdd:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this `Year` with the specified number of years added. |
+| [Year](Year.md)! | [plus](Year.md))`(`amountToAdd:` ` [TemporalAmount](../java.time.temporal/TemporalAmount.md)!`)` Returns a copy of this year with the specified amount added. |
+| [Year](Year.md)! | [plus](Year.md))`(`amountToAdd:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TemporalUnit](../java.time.temporal/TemporalUnit.md)!`)` Returns a copy of this year with the specified amount added. |
+| [Year](Year.md)! | [plusYears](Year.md))`(`yearsToAdd:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this `Year` with the specified number of years added. |
 | --- | --- |
-| R | [query](../java/time/Year.md))`(`query:` ` [TemporalQuery](../java/time/temporal/TemporalQuery.md)<R>!`)` Queries this year using the specified query. |
-| [ValueRange](../java/time/temporal/ValueRange.md)! | [range](../java/time/Year.md))`(`field:` ` [TemporalField](../java/time/temporal/TemporalField.md)!`)` Gets the range of valid values for the specified field. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/time/Year.md))`()` Outputs this year as a `String`. |
+| R | [query](Year.md))`(`query:` ` [TemporalQuery](../java.time.temporal/TemporalQuery.md)<R>!`)` Queries this year using the specified query. |
+| [ValueRange](../java.time.temporal/ValueRange.md)! | [range](Year.md))`(`field:` ` [TemporalField](../java.time.temporal/TemporalField.md)!`)` Gets the range of valid values for the specified field. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](Year.md))`()` Outputs this year as a `String`. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [until](../java/time/Year.md))`(`endExclusive:` ` [Temporal](../java/time/temporal/Temporal.md)!`, `unit:` ` [TemporalUnit](../java/time/temporal/TemporalUnit.md)!`)` Calculates the amount of time until another year in terms of the specified unit. |
-| [Year](../java/time/Year.md)! | [with](../java/time/Year.md))`(`adjuster:` ` [TemporalAdjuster](../java/time/temporal/TemporalAdjuster.md)!`)` Returns an adjusted copy of this year. |
-| [Year](../java/time/Year.md)! | [with](../java/time/Year.md))`(`field:` ` [TemporalField](../java/time/temporal/TemporalField.md)!`, `newValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this year with the specified field set to a new value. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [until](Year.md))`(`endExclusive:` ` [Temporal](../java.time.temporal/Temporal.md)!`, `unit:` ` [TemporalUnit](../java.time.temporal/TemporalUnit.md)!`)` Calculates the amount of time until another year in terms of the specified unit. |
+| [Year](Year.md)! | [with](Year.md))`(`adjuster:` ` [TemporalAdjuster](../java.time.temporal/TemporalAdjuster.md)!`)` Returns an adjusted copy of this year. |
+| [Year](Year.md)! | [with](Year.md))`(`field:` ` [TemporalField](../java.time.temporal/TemporalField.md)!`, `newValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns a copy of this year with the specified field set to a new value. |
 | --- | --- |
 
 ## Constants
@@ -126,9 +126,9 @@ Adjusts the specified temporal object to have this year.
 
 This returns a temporal object of the same observable type as the input with the year changed to be the same as this.
 
-The adjustment is equivalent to using [Temporal.with(TemporalField, long)](../java/time/temporal/Temporal.md)) passing [ChronoField.YEAR](../java/time/temporal/ChronoField.md) as the field. If the specified temporal object does not use the ISO calendar system then a `DateTimeException` is thrown.
+The adjustment is equivalent to using [Temporal.with(TemporalField, long)](../java.time.temporal/Temporal.md)) passing [ChronoField.YEAR](../java.time.temporal/ChronoField.md) as the field. If the specified temporal object does not use the ISO calendar system then a `DateTimeException` is thrown.
 
-In most cases, it is clearer to reverse the calling pattern by using [Temporal.with(TemporalAdjuster)](../java/time/temporal/Temporal.md)): 
+In most cases, it is clearer to reverse the calling pattern by using [Temporal.with(TemporalAdjuster)](../java.time.temporal/Temporal.md)): 
 
 ```kotlin
 // these two lines are equivalent, but the second approach is recommended
@@ -141,11 +141,11 @@ This instance is immutable and unaffected by this method call.
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| `temporal` | [Temporal](../java/time/temporal/Temporal.md)!: the target object to be adjusted, not null |
+| `temporal` | [Temporal](../java.time.temporal/Temporal.md)!: the target object to be adjusted, not null |
 
 | Return ||
 |-----------------------------------------------------------------------------------------|-------------------------------|
-| [Temporal](../java/time/temporal/Temporal.md)! | the adjusted object, not null |
+| [Temporal](../java.time.temporal/Temporal.md)! | the adjusted object, not null |
 
 | Exceptions ||
 |---------------------------------|----------------------------------|
@@ -172,7 +172,7 @@ The day-of-year value 366 is only valid in a leap year.
 
 | Return ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
-| [LocalDate](../java/time/LocalDate.md)! | the local date formed from this year and the specified date of year, not null |
+| [LocalDate](LocalDate.md)! | the local date formed from this year and the specified date of year, not null |
 
 | Exceptions ||
 |-------------------------------|------------------------------------------------------------------------------------------------|
@@ -203,7 +203,7 @@ LocalDate date = year.atMonth(month).atDay(day);
 
 | Return ||
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------|
-| [YearMonth](../java/time/YearMonth.md)! | the year-month formed from this year and the specified month, not null |
+| [YearMonth](YearMonth.md)! | the year-month formed from this year and the specified month, not null |
 
 | Exceptions ||
 |-------------------------------|-------------------------|
@@ -230,11 +230,11 @@ LocalDate date = year.atMonth(month).atDay(day);
 
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------------|
-| `month` | [Month](../java/time/Month.md)!: the month-of-year to use, not null |
+| `month` | [Month](Month.md)!: the month-of-year to use, not null |
 
 | Return ||
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------|
-| [YearMonth](../java/time/YearMonth.md)! | the year-month formed from this year and the specified month, not null |
+| [YearMonth](YearMonth.md)! | the year-month formed from this year and the specified month, not null |
 
 ### atMonthDay
 
@@ -252,11 +252,11 @@ A month-day of February 29th will be adjusted to February 28th in the resulting 
 
 | Parameters ||
 |------------|----------------------------------------------------------------------------------------------------------------|
-| `monthDay` | [MonthDay](../java/time/MonthDay.md)!: the month-day to use, not null |
+| `monthDay` | [MonthDay](MonthDay.md)!: the month-day to use, not null |
 
 | Return ||
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| [LocalDate](../java/time/LocalDate.md)! | the local date formed from this year and the specified month-day, not null |
+| [LocalDate](LocalDate.md)! | the local date formed from this year and the specified month-day, not null |
 
 ### compareTo
 
@@ -268,12 +268,12 @@ fun compareTo(other: Year!): Int
 
 Compares this year to another year.
 
-The comparison is based on the value of the year. It is "consistent with equals", as defined by [Comparable](../java/lang/Comparable.md).
+The comparison is based on the value of the year. It is "consistent with equals", as defined by [Comparable](../java.lang/Comparable.md).
 
 | Parameters ||
 |---------|-----------------------------------------------------------------------------------------------------------------|
 | `o` | the object to be compared. |
-| `other` | [Year](../java/time/Year.md)!: the other year to compare to, not null |
+| `other` | [Year](Year.md)!: the other year to compare to, not null |
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------------------------------------|
@@ -318,7 +318,7 @@ This year will be passed to the formatter to produce a string.
 
 | Parameters ||
 |-------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| `formatter` | [DateTimeFormatter](../java/time/format/DateTimeFormatter.md)!: the formatter to use, not null |
+| `formatter` | [DateTimeFormatter](../java.time.format/DateTimeFormatter.md)!: the formatter to use, not null |
 
 | Return ||
 |-----------------------------------------------------------------------------------|-------------------------------------|
@@ -340,17 +340,17 @@ Obtains an instance of `Year` from a temporal object.
 
 This obtains a year based on the specified temporal. A `TemporalAccessor` represents an arbitrary set of date and time information, which this factory converts to an instance of `Year`.
 
-The conversion extracts the [year](../java/time/temporal/ChronoField.md) field. The extraction is only permitted if the temporal object has an ISO chronology, or can be converted to a `LocalDate`.
+The conversion extracts the [year](../java.time.temporal/ChronoField.md) field. The extraction is only permitted if the temporal object has an ISO chronology, or can be converted to a `LocalDate`.
 
-This method matches the signature of the functional interface [TemporalQuery](../java/time/temporal/TemporalQuery.md) allowing it to be used as a query via method reference, `Year::from`.
+This method matches the signature of the functional interface [TemporalQuery](../java.time.temporal/TemporalQuery.md) allowing it to be used as a query via method reference, `Year::from`.
 
 | Parameters ||
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| `temporal` | [TemporalAccessor](../java/time/temporal/TemporalAccessor.md)!: the temporal object to convert, not null |
+| `temporal` | [TemporalAccessor](../java.time.temporal/TemporalAccessor.md)!: the temporal object to convert, not null |
 
 | Return ||
 |-------------------------------------------------------------------------|--------------------|
-| [Year](../java/time/Year.md)! | the year, not null |
+| [Year](Year.md)! | the year, not null |
 
 | Exceptions ||
 |-------------------------------|----------------------------------|
@@ -368,13 +368,13 @@ Gets the value of the specified field from this year as an `int`.
 
 This queries this year for the value of the specified field. The returned value will always be within the valid range of values for the field. If it is not possible to return the value, because the field is not supported or for some other reason, an exception is thrown.
 
-If the field is a [ChronoField](../java/time/temporal/ChronoField.md) then the query is implemented here. The [supported fields](../java/time/Year.md)) will return valid values based on this year. All other `ChronoField` instances will throw an `UnsupportedTemporalTypeException`.
+If the field is a [ChronoField](../java.time.temporal/ChronoField.md) then the query is implemented here. The [supported fields](Year.md)) will return valid values based on this year. All other `ChronoField` instances will throw an `UnsupportedTemporalTypeException`.
 
 If the field is not a `ChronoField`, then the result of this method is obtained by invoking `TemporalField.getFrom(TemporalAccessor)` passing `this` as the argument. Whether the value can be obtained, and what the value represents, is determined by the field.
 
 | Parameters ||
 |---------|-------------------------------------------------------------------------------------------------------------------------------|
-| `field` | [TemporalField](../java/time/temporal/TemporalField.md)!: the field to get, not null |
+| `field` | [TemporalField](../java.time.temporal/TemporalField.md)!: the field to get, not null |
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------|
@@ -399,13 +399,13 @@ Gets the value of the specified field from this year as a `long`.
 
 This queries this year for the value of the specified field. If it is not possible to return the value, because the field is not supported or for some other reason, an exception is thrown.
 
-If the field is a [ChronoField](../java/time/temporal/ChronoField.md) then the query is implemented here. The [supported fields](../java/time/Year.md)) will return valid values based on this year. All other `ChronoField` instances will throw an `UnsupportedTemporalTypeException`.
+If the field is a [ChronoField](../java.time.temporal/ChronoField.md) then the query is implemented here. The [supported fields](Year.md)) will return valid values based on this year. All other `ChronoField` instances will throw an `UnsupportedTemporalTypeException`.
 
 If the field is not a `ChronoField`, then the result of this method is obtained by invoking `TemporalField.getFrom(TemporalAccessor)` passing `this` as the argument. Whether the value can be obtained, and what the value represents, is determined by the field.
 
 | Parameters ||
 |---------|-------------------------------------------------------------------------------------------------------------------------------|
-| `field` | [TemporalField](../java/time/temporal/TemporalField.md)!: the field to get, not null |
+| `field` | [TemporalField](../java.time.temporal/TemporalField.md)!: the field to get, not null |
 
 | Return ||
 |------------------------------------------------------------------------------|-------------------------|
@@ -460,7 +460,7 @@ Checks if this year is after the specified year.
 
 | Parameters ||
 |---------|-----------------------------------------------------------------------------------------------------------------|
-| `other` | [Year](../java/time/Year.md)!: the other year to compare to, not null |
+| `other` | [Year](Year.md)!: the other year to compare to, not null |
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------|
@@ -478,7 +478,7 @@ Checks if this year is before the specified year.
 
 | Parameters ||
 |---------|-----------------------------------------------------------------------------------------------------------------|
-| `other` | [Year](../java/time/Year.md)!: the other year to compare to, not null |
+| `other` | [Year](Year.md)!: the other year to compare to, not null |
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------------------------------|
@@ -538,9 +538,9 @@ fun isSupported(field: TemporalField!): Boolean
 
 Checks if the specified field is supported.
 
-This checks if this year can be queried for the specified field. If false, then calling the [range](../java/time/Year.md)), [get](../java/time/Year.md)) and [with(java.time.temporal.TemporalField,long)](../java/time/Year.md)) methods will throw an exception.
+This checks if this year can be queried for the specified field. If false, then calling the [range](Year.md)), [get](Year.md)) and [with(java.time.temporal.TemporalField,long)](Year.md)) methods will throw an exception.
 
-If the field is a [ChronoField](../java/time/temporal/ChronoField.md) then the query is implemented here. The supported fields are:
+If the field is a [ChronoField](../java.time.temporal/ChronoField.md) then the query is implemented here. The supported fields are:
 
 - `YEAR_OF_ERA`
 - `YEAR`
@@ -552,7 +552,7 @@ If the field is not a `ChronoField`, then the result of this method is obtained 
 
 | Parameters ||
 |---------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| `field` | [TemporalField](../java/time/temporal/TemporalField.md)!: the field to check, null returns false |
+| `field` | [TemporalField](../java.time.temporal/TemporalField.md)!: the field to check, null returns false |
 
 | Return ||
 |------------------------------------------------------------------------------------|-----------------------------------------------------------|
@@ -568,9 +568,9 @@ fun isSupported(unit: TemporalUnit!): Boolean
 
 Checks if the specified unit is supported.
 
-This checks if the specified unit can be added to, or subtracted from, this year. If false, then calling the [plus(long,java.time.temporal.TemporalUnit)](../java/time/Year.md)) and [minus](../java/time/Year.md)) methods will throw an exception.
+This checks if the specified unit can be added to, or subtracted from, this year. If false, then calling the [plus(long,java.time.temporal.TemporalUnit)](Year.md)) and [minus](Year.md)) methods will throw an exception.
 
-If the unit is a [ChronoUnit](../java/time/temporal/ChronoUnit.md) then the query is implemented here. The supported units are:
+If the unit is a [ChronoUnit](../java.time.temporal/ChronoUnit.md) then the query is implemented here. The supported units are:
 
 - `YEARS`
 - `DECADES`
@@ -584,7 +584,7 @@ If the unit is not a `ChronoUnit`, then the result of this method is obtained by
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------------------------|
-| `unit` | [TemporalUnit](../java/time/temporal/TemporalUnit.md)!: the unit to check, null returns false |
+| `unit` | [TemporalUnit](../java.time.temporal/TemporalUnit.md)!: the unit to check, null returns false |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------------------------------|
@@ -604,7 +604,7 @@ This method checks whether this year and the input month and day form a valid da
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------|
-| `monthDay` | [MonthDay](../java/time/MonthDay.md)!: the month-day to validate, null returns false |
+| `monthDay` | [MonthDay](MonthDay.md)!: the month-day to validate, null returns false |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------------|
@@ -634,20 +634,20 @@ fun minus(amountToSubtract: TemporalAmount!): Year!
 
 Returns a copy of this year with the specified amount subtracted.
 
-This returns a `Year`, based on this one, with the specified amount subtracted. The amount is typically [Period](../java/time/Period.md) but may be any other type implementing the [TemporalAmount](../java/time/temporal/TemporalAmount.md) interface.
+This returns a `Year`, based on this one, with the specified amount subtracted. The amount is typically [Period](Period.md) but may be any other type implementing the [TemporalAmount](../java.time.temporal/TemporalAmount.md) interface.
 
-The calculation is delegated to the amount object by calling [TemporalAmount.subtractFrom(Temporal)](../java/time/temporal/TemporalAmount.md)). The amount implementation is free to implement the subtraction in any way it wishes, however it typically calls back to [minus(long,java.time.temporal.TemporalUnit)](../java/time/Year.md)). Consult the documentation of the amount implementation to determine if it can be successfully subtracted.
+The calculation is delegated to the amount object by calling [TemporalAmount.subtractFrom(Temporal)](../java.time.temporal/TemporalAmount.md)). The amount implementation is free to implement the subtraction in any way it wishes, however it typically calls back to [minus(long,java.time.temporal.TemporalUnit)](Year.md)). Consult the documentation of the amount implementation to determine if it can be successfully subtracted.
 
 This instance is immutable and unaffected by this method call.
 
 | Parameters ||
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------|
 | `amount` | the amount to subtract, not null |
-| `amountToSubtract` | [TemporalAmount](../java/time/temporal/TemporalAmount.md)!: the amount to subtract, not null |
+| `amountToSubtract` | [TemporalAmount](../java.time.temporal/TemporalAmount.md)!: the amount to subtract, not null |
 
 | Return ||
 |-------------------------------------------------------------------------|-----------------------------------------------------------------|
-| [Year](../java/time/Year.md)! | a `Year` based on this year with the subtraction made, not null |
+| [Year](Year.md)! | a `Year` based on this year with the subtraction made, not null |
 
 | Exceptions ||
 |---------------------------------|-----------------------------------|
@@ -669,18 +669,18 @@ Returns a copy of this year with the specified amount subtracted.
 
 This returns a `Year`, based on this one, with the amount in terms of the unit subtracted. If it is not possible to subtract the amount, because the unit is not supported or for some other reason, an exception is thrown.
 
-This method is equivalent to [plus(long,java.time.temporal.TemporalUnit)](../java/time/Year.md)) with the amount negated. See that method for a full description of how addition, and thus subtraction, works.
+This method is equivalent to [plus(long,java.time.temporal.TemporalUnit)](Year.md)) with the amount negated. See that method for a full description of how addition, and thus subtraction, works.
 
 This instance is immutable and unaffected by this method call.
 
 | Parameters ||
 |--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
 | `amountToSubtract` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the amount of the unit to subtract from the result, may be negative |
-| `unit` | [TemporalUnit](../java/time/temporal/TemporalUnit.md)!: the unit of the amount to subtract, not null |
+| `unit` | [TemporalUnit](../java.time.temporal/TemporalUnit.md)!: the unit of the amount to subtract, not null |
 
 | Return ||
 |-------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| [Year](../java/time/Year.md)! | a `Year` based on this year with the specified amount subtracted, not null |
+| [Year](Year.md)! | a `Year` based on this year with the specified amount subtracted, not null |
 
 | Exceptions ||
 |-------------------------------------------------------|-----------------------------------|
@@ -707,7 +707,7 @@ This instance is immutable and unaffected by this method call.
 
 | Return ||
 |-------------------------------------------------------------------------|----------------------------------------------------------------|
-| [Year](../java/time/Year.md)! | a `Year` based on this year with the year subtracted, not null |
+| [Year](Year.md)! | a `Year` based on this year with the year subtracted, not null |
 
 | Exceptions ||
 |-------------------------------|-------------------------------------------|
@@ -723,13 +723,13 @@ static fun now(): Year!
 
 Obtains the current year from the system clock in the default time-zone.
 
-This will query the [system clock](../java/time/Clock.md)) in the default time-zone to obtain the current year.
+This will query the [system clock](Clock.md)) in the default time-zone to obtain the current year.
 
 Using this method will prevent the ability to use an alternate clock for testing because the clock is hard-coded.
 
 | Return ||
 |-------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| [Year](../java/time/Year.md)! | the current year using the system clock and default time-zone, not null |
+| [Year](Year.md)! | the current year using the system clock and default time-zone, not null |
 
 ### now
 
@@ -741,15 +741,15 @@ static fun now(clock: Clock!): Year!
 
 Obtains the current year from the specified clock.
 
-This will query the specified clock to obtain the current year. Using this method allows the use of an alternate clock for testing. The alternate clock may be introduced using [dependency injection](../java/time/Clock.md).
+This will query the specified clock to obtain the current year. Using this method allows the use of an alternate clock for testing. The alternate clock may be introduced using [dependency injection](Clock.md).
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------|
-| `clock` | [Clock](../java/time/Clock.md)!: the clock to use, not null |
+| `clock` | [Clock](Clock.md)!: the clock to use, not null |
 
 | Return ||
 |-------------------------------------------------------------------------|----------------------------|
-| [Year](../java/time/Year.md)! | the current year, not null |
+| [Year](Year.md)! | the current year, not null |
 
 ### now
 
@@ -761,17 +761,17 @@ static fun now(zone: ZoneId!): Year!
 
 Obtains the current year from the system clock in the specified time-zone.
 
-This will query the [system clock](../java/time/Clock.md)) to obtain the current year. Specifying the time-zone avoids dependence on the default time-zone.
+This will query the [system clock](Clock.md)) to obtain the current year. Specifying the time-zone avoids dependence on the default time-zone.
 
 Using this method will prevent the ability to use an alternate clock for testing because the clock is hard-coded.
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------|
-| `zone` | [ZoneId](../java/time/ZoneId.md)!: the zone ID to use, not null |
+| `zone` | [ZoneId](ZoneId.md)!: the zone ID to use, not null |
 
 | Return ||
 |-------------------------------------------------------------------------|---------------------------------------------------|
-| [Year](../java/time/Year.md)! | the current year using the system clock, not null |
+| [Year](Year.md)! | the current year using the system clock, not null |
 
 ### of
 
@@ -796,7 +796,7 @@ The year 2BC/BCE is represented by -1.
 
 | Return ||
 |-------------------------------------------------------------------------|--------------------|
-| [Year](../java/time/Year.md)! | the year, not null |
+| [Year](Year.md)! | the year, not null |
 
 | Exceptions ||
 |-------------------------------|-------------------------|
@@ -820,7 +820,7 @@ The string must represent a valid year.
 
 | Return ||
 |-------------------------------------------------------------------------|---------------------------|
-| [Year](../java/time/Year.md)! | the parsed year, not null |
+| [Year](Year.md)! | the parsed year, not null |
 
 | Exceptions ||
 |-------------------------------------------|------------------------------|
@@ -844,11 +844,11 @@ The text is parsed using the formatter, returning a year.
 | Parameters ||
 |-------------|-----------------------------------------------------------------------------------------------------------------------------------------|
 | `text` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!: the text to parse, not null |
-| `formatter` | [DateTimeFormatter](../java/time/format/DateTimeFormatter.md)!: the formatter to use, not null |
+| `formatter` | [DateTimeFormatter](../java.time.format/DateTimeFormatter.md)!: the formatter to use, not null |
 
 | Return ||
 |-------------------------------------------------------------------------|---------------------------|
-| [Year](../java/time/Year.md)! | the parsed year, not null |
+| [Year](Year.md)! | the parsed year, not null |
 
 | Exceptions ||
 |-------------------------------------------|------------------------------|
@@ -864,20 +864,20 @@ fun plus(amountToAdd: TemporalAmount!): Year!
 
 Returns a copy of this year with the specified amount added.
 
-This returns a `Year`, based on this one, with the specified amount added. The amount is typically [Period](../java/time/Period.md) but may be any other type implementing the [TemporalAmount](../java/time/temporal/TemporalAmount.md) interface.
+This returns a `Year`, based on this one, with the specified amount added. The amount is typically [Period](Period.md) but may be any other type implementing the [TemporalAmount](../java.time.temporal/TemporalAmount.md) interface.
 
-The calculation is delegated to the amount object by calling [TemporalAmount.addTo(Temporal)](../java/time/temporal/TemporalAmount.md)). The amount implementation is free to implement the addition in any way it wishes, however it typically calls back to [plus(long,java.time.temporal.TemporalUnit)](../java/time/Year.md)). Consult the documentation of the amount implementation to determine if it can be successfully added.
+The calculation is delegated to the amount object by calling [TemporalAmount.addTo(Temporal)](../java.time.temporal/TemporalAmount.md)). The amount implementation is free to implement the addition in any way it wishes, however it typically calls back to [plus(long,java.time.temporal.TemporalUnit)](Year.md)). Consult the documentation of the amount implementation to determine if it can be successfully added.
 
 This instance is immutable and unaffected by this method call.
 
 | Parameters ||
 |---------------|----------------------------------------------------------------------------------------------------------------------------------|
 | `amount` | the amount to add, not null |
-| `amountToAdd` | [TemporalAmount](../java/time/temporal/TemporalAmount.md)!: the amount to add, not null |
+| `amountToAdd` | [TemporalAmount](../java.time.temporal/TemporalAmount.md)!: the amount to add, not null |
 
 | Return ||
 |-------------------------------------------------------------------------|--------------------------------------------------------------|
-| [Year](../java/time/Year.md)! | a `Year` based on this year with the addition made, not null |
+| [Year](Year.md)! | a `Year` based on this year with the addition made, not null |
 
 | Exceptions ||
 |---------------------------------|--------------------------------|
@@ -899,12 +899,12 @@ Returns a copy of this year with the specified amount added.
 
 This returns a `Year`, based on this one, with the amount in terms of the unit added. If it is not possible to add the amount, because the unit is not supported or for some other reason, an exception is thrown.
 
-If the field is a [ChronoUnit](../java/time/temporal/ChronoUnit.md) then the addition is implemented here. The supported fields behave as follows:
+If the field is a [ChronoUnit](../java.time.temporal/ChronoUnit.md) then the addition is implemented here. The supported fields behave as follows:
 
-- `YEARS` - Returns a `Year` with the specified number of years added. This is equivalent to [plusYears(long)](../java/time/Year.md)).
-- `DECADES` - Returns a `Year` with the specified number of decades added. This is equivalent to calling [plusYears(long)](../java/time/Year.md)) with the amount multiplied by 10.
-- `CENTURIES` - Returns a `Year` with the specified number of centuries added. This is equivalent to calling [plusYears(long)](../java/time/Year.md)) with the amount multiplied by 100.
-- `MILLENNIA` - Returns a `Year` with the specified number of millennia added. This is equivalent to calling [plusYears(long)](../java/time/Year.md)) with the amount multiplied by 1,000.
+- `YEARS` - Returns a `Year` with the specified number of years added. This is equivalent to [plusYears(long)](Year.md)).
+- `DECADES` - Returns a `Year` with the specified number of decades added. This is equivalent to calling [plusYears(long)](Year.md)) with the amount multiplied by 10.
+- `CENTURIES` - Returns a `Year` with the specified number of centuries added. This is equivalent to calling [plusYears(long)](Year.md)) with the amount multiplied by 100.
+- `MILLENNIA` - Returns a `Year` with the specified number of millennia added. This is equivalent to calling [plusYears(long)](Year.md)) with the amount multiplied by 1,000.
 - `ERAS` - Returns a `Year` with the specified number of eras added. Only two eras are supported so the amount must be one, zero or minus one. If the amount is non-zero then the year is changed such that the year-of-era is unchanged.
 
 All other `ChronoUnit` instances will throw an `UnsupportedTemporalTypeException`.
@@ -916,11 +916,11 @@ This instance is immutable and unaffected by this method call.
 | Parameters ||
 |---------------|--------------------------------------------------------------------------------------------------------------------------------------------|
 | `amountToAdd` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the amount of the unit to add to the result, may be negative |
-| `unit` | [TemporalUnit](../java/time/temporal/TemporalUnit.md)!: the unit of the amount to add, not null |
+| `unit` | [TemporalUnit](../java.time.temporal/TemporalUnit.md)!: the unit of the amount to add, not null |
 
 | Return ||
 |-------------------------------------------------------------------------|-----------------------------------------------------------------------|
-| [Year](../java/time/Year.md)! | a `Year` based on this year with the specified amount added, not null |
+| [Year](Year.md)! | a `Year` based on this year with the specified amount added, not null |
 
 | Exceptions ||
 |-------------------------------------------------------|--------------------------------|
@@ -947,7 +947,7 @@ This instance is immutable and unaffected by this method call.
 
 | Return ||
 |-------------------------------------------------------------------------|------------------------------------------------------------|
-| [Year](../java/time/Year.md)! | a `Year` based on this year with the years added, not null |
+| [Year](Year.md)! | a `Year` based on this year with the years added, not null |
 
 | Exceptions ||
 |-------------------------------|-------------------------------------------|
@@ -965,12 +965,12 @@ Queries this year using the specified query.
 
 This queries this year using the specified query strategy object. The `TemporalQuery` object defines the logic to be used to obtain the result. Read the documentation of the query to understand what the result of this method will be.
 
-The result of this method is obtained by invoking the [TemporalQuery.queryFrom(TemporalAccessor)](../java/time/temporal/TemporalQuery.md)) method on the specified query passing `this` as the argument.
+The result of this method is obtained by invoking the [TemporalQuery.queryFrom(TemporalAccessor)](../java.time.temporal/TemporalQuery.md)) method on the specified query passing `this` as the argument.
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------|
 | `<R>` | the type of the result |
-| `query` | [TemporalQuery](../java/time/temporal/TemporalQuery.md)\<R\>!: the query to invoke, not null |
+| `query` | [TemporalQuery](../java.time.temporal/TemporalQuery.md)\<R\>!: the query to invoke, not null |
 
 | Return ||
 |---|---------------------------------------------------------------|
@@ -993,17 +993,17 @@ Gets the range of valid values for the specified field.
 
 The range object expresses the minimum and maximum valid values for a field. This year is used to enhance the accuracy of the returned range. If it is not possible to return the range, because the field is not supported or for some other reason, an exception is thrown.
 
-If the field is a [ChronoField](../java/time/temporal/ChronoField.md) then the query is implemented here. The [supported fields](../java/time/Year.md)) will return appropriate range instances. All other `ChronoField` instances will throw an `UnsupportedTemporalTypeException`.
+If the field is a [ChronoField](../java.time.temporal/ChronoField.md) then the query is implemented here. The [supported fields](Year.md)) will return appropriate range instances. All other `ChronoField` instances will throw an `UnsupportedTemporalTypeException`.
 
 If the field is not a `ChronoField`, then the result of this method is obtained by invoking `TemporalField.rangeRefinedBy(TemporalAccessor)` passing `this` as the argument. Whether the range can be obtained is determined by the field.
 
 | Parameters ||
 |---------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| `field` | [TemporalField](../java/time/temporal/TemporalField.md)!: the field to query the range for, not null |
+| `field` | [TemporalField](../java.time.temporal/TemporalField.md)!: the field to query the range for, not null |
 
 | Return ||
 |---------------------------------------------------------------------------------------------|---------------------------------------------------|
-| [ValueRange](../java/time/temporal/ValueRange.md)! | the range of valid values for the field, not null |
+| [ValueRange](../java.time.temporal/ValueRange.md)! | the range of valid values for the field, not null |
 
 | Exceptions ||
 |-------------------------------------------------------|-----------------------------------------------|
@@ -1037,11 +1037,11 @@ fun until(
 
 Calculates the amount of time until another year in terms of the specified unit.
 
-This calculates the amount of time between two `Year` objects in terms of a single `TemporalUnit`. The start and end points are `this` and the specified year. The result will be negative if the end is before the start. The `Temporal` passed to this method is converted to a `Year` using [from(java.time.temporal.TemporalAccessor)](../java/time/Year.md)). For example, the amount in decades between two year can be calculated using `startYear.until(endYear, DECADES)`.
+This calculates the amount of time between two `Year` objects in terms of a single `TemporalUnit`. The start and end points are `this` and the specified year. The result will be negative if the end is before the start. The `Temporal` passed to this method is converted to a `Year` using [from(java.time.temporal.TemporalAccessor)](Year.md)). For example, the amount in decades between two year can be calculated using `startYear.until(endYear, DECADES)`.
 
 The calculation returns a whole number, representing the number of complete units between the two years. For example, the amount in decades between 2012 and 2031 will only be one decade as it is one year short of two decades.
 
-There are two equivalent ways of using this method. The first is to invoke this method. The second is to use [TemporalUnit.between(Temporal, Temporal)](../java/time/temporal/TemporalUnit.md)): 
+There are two equivalent ways of using this method. The first is to invoke this method. The second is to use [TemporalUnit.between(Temporal, Temporal)](../java.time.temporal/TemporalUnit.md)): 
 
 ```kotlin
 // these two lines are equivalent
@@ -1051,7 +1051,7 @@ There are two equivalent ways of using this method. The first is to invoke this 
 ```
 The choice should be made based on which makes the code more readable.
 
-The calculation is implemented in this method for [ChronoUnit](../java/time/temporal/ChronoUnit.md). The units `YEARS`, `DECADES`, `CENTURIES`, `MILLENNIA` and `ERAS` are supported. Other `ChronoUnit` values will throw an exception.
+The calculation is implemented in this method for [ChronoUnit](../java.time.temporal/ChronoUnit.md). The units `YEARS`, `DECADES`, `CENTURIES`, `MILLENNIA` and `ERAS` are supported. Other `ChronoUnit` values will throw an exception.
 
 If the unit is not a `ChronoUnit`, then the result of this method is obtained by invoking `TemporalUnit.between(Temporal, Temporal)` passing `this` as the first argument and the converted input temporal as the second argument.
 
@@ -1059,8 +1059,8 @@ This instance is immutable and unaffected by this method call.
 
 | Parameters ||
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `endExclusive` | [Temporal](../java/time/temporal/Temporal.md)!: the end date, exclusive, which is converted to a `Year`, not null |
-| `unit` | [TemporalUnit](../java/time/temporal/TemporalUnit.md)!: the unit to measure the amount in, not null |
+| `endExclusive` | [Temporal](../java.time.temporal/Temporal.md)!: the end date, exclusive, which is converted to a `Year`, not null |
+| `unit` | [TemporalUnit](../java.time.temporal/TemporalUnit.md)!: the unit to measure the amount in, not null |
 
 | Return ||
 |------------------------------------------------------------------------------|-------------------------------------------------------|
@@ -1085,17 +1085,17 @@ Returns an adjusted copy of this year.
 
 This returns a `Year`, based on this one, with the year adjusted. The adjustment takes place using the specified adjuster strategy object. Read the documentation of the adjuster to understand what adjustment will be made.
 
-The result of this method is obtained by invoking the [TemporalAdjuster.adjustInto(Temporal)](../java/time/temporal/TemporalAdjuster.md)) method on the specified adjuster passing `this` as the argument.
+The result of this method is obtained by invoking the [TemporalAdjuster.adjustInto(Temporal)](../java.time.temporal/TemporalAdjuster.md)) method on the specified adjuster passing `this` as the argument.
 
 This instance is immutable and unaffected by this method call.
 
 | Parameters ||
 |------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| `adjuster` | [TemporalAdjuster](../java/time/temporal/TemporalAdjuster.md)!: the adjuster to use, not null |
+| `adjuster` | [TemporalAdjuster](../java.time.temporal/TemporalAdjuster.md)!: the adjuster to use, not null |
 
 | Return ||
 |-------------------------------------------------------------------------|-------------------------------------------------------------|
-| [Year](../java/time/Year.md)! | a `Year` based on `this` with the adjustment made, not null |
+| [Year](Year.md)! | a `Year` based on `this` with the adjustment made, not null |
 
 | Exceptions ||
 |---------------------------------|----------------------------------|
@@ -1117,10 +1117,10 @@ Returns a copy of this year with the specified field set to a new value.
 
 This returns a `Year`, based on this one, with the value for the specified field changed. If it is not possible to set the value, because the field is not supported or for some other reason, an exception is thrown.
 
-If the field is a [ChronoField](../java/time/temporal/ChronoField.md) then the adjustment is implemented here. The supported fields behave as follows:
+If the field is a [ChronoField](../java.time.temporal/ChronoField.md) then the adjustment is implemented here. The supported fields behave as follows:
 
 - `YEAR_OF_ERA` - Returns a `Year` with the specified year-of-era The era will be unchanged.
-- `YEAR` - Returns a `Year` with the specified year. This completely replaces the date and is equivalent to [of(int)](../java/time/Year.md)).
+- `YEAR` - Returns a `Year` with the specified year. This completely replaces the date and is equivalent to [of(int)](Year.md)).
 - `ERA` - Returns a `Year` with the specified era. The year-of-era will be unchanged.
 
 In all cases, if the new value is outside the valid range of values for the field then a `DateTimeException` will be thrown.
@@ -1133,12 +1133,12 @@ This instance is immutable and unaffected by this method call.
 
 | Parameters ||
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| `field` | [TemporalField](../java/time/temporal/TemporalField.md)!: the field to set in the result, not null |
+| `field` | [TemporalField](../java.time.temporal/TemporalField.md)!: the field to set in the result, not null |
 | `newValue` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the new value of the field in the result |
 
 | Return ||
 |-------------------------------------------------------------------------|-----------------------------------------------------------------|
-| [Year](../java/time/Year.md)! | a `Year` based on `this` with the specified field set, not null |
+| [Year](Year.md)! | a `Year` based on `this` with the specified field set, not null |
 
 | Exceptions ||
 |-------------------------------------------------------|-------------------------------|

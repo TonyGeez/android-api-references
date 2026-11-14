@@ -8,11 +8,11 @@ abstract class SettingsPreferenceService : Service
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](../android/content/Context.md) ||||
-| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) |||
-| | | ↳ | [android.app.Service](../android/app/Service.md) ||
+| ↳ | [android.content.Context](../android.content/Context.md) ||||
+| | ↳ | [android.content.ContextWrapper](../android.content/ContextWrapper.md) |||
+| | | ↳ | [android.app.Service](../android.app/Service.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.service.settings.preferences.SettingsPreferenceService](../android/service/settings/preferences/SettingsPreferenceService.md) |
+| | | | ↳ | [android.service.settings.preferences.SettingsPreferenceService](SettingsPreferenceService.md) |
 
 Base class for a service that exposes its settings preferences to external access.
 
@@ -1064,7 +1064,7 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 
 | Public methods ||
 |---|---|
-| [IBinder](../android/os/IBinder.md) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#?)` Return the communication channel to the service. |
+| [IBinder](../android.os/IBinder.md) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#?)` Return the communication channel to the service. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceService#onGetAllPreferenceMetadata(android.service.settings.preferences.MetadataRequest,%20android.os.OutcomeReceiver)(request: https://developer.android.com/reference/kotlin/android/service/settings/preferences/MetadataRequest, callback: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://developer.android.com/reference/kotlin/android/service/settings/preferences/MetadataResult!, https://developer.android.com/reference/kotlin/java/lang/Exception.html#!>)` Retrieve the metadata for all exposed settings preferences within this application. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/settings/preferences/SettingsPreferenceService#onGetPreferenceValue(android.service.settings.preferences.GetValueRequest,%20android.os.OutcomeReceiver)(request: https://developer.android.com/reference/kotlin/android/service/settings/preferences/GetValueRequest, callback: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://developer.android.com/reference/kotlin/android/service/settings/preferences/GetValueResult!, https://developer.android.com/reference/kotlin/java/lang/Exception.html#!>)` Retrieve the current value of the requested settings preference. |
 | --- | --- |
@@ -2799,7 +2799,7 @@ Return the communication channel to the service. May return null if clients can 
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md)?: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
+| `intent` | [Intent](../android.content/Intent.md)?: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
 
 | Return ||
 |---|---|
@@ -2820,8 +2820,8 @@ Retrieve the metadata for all exposed settings preferences within this applicati
 
 | Parameters ||
 |---|---|
-| `request` | [MetadataRequest](../android/service/settings/preferences/MetadataRequest.md): object to specify request parameters |
-| `callback` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [MetadataResult](../android/service/settings/preferences/MetadataResult.md)!, [Exception](../java/lang/Exception.md)!\>: object to receive result or failure of request |
+| `request` | [MetadataRequest](MetadataRequest.md): object to specify request parameters |
+| `callback` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [MetadataResult](MetadataResult.md)!, [Exception](../java.lang/Exception.md)!\>: object to receive result or failure of request |
 
 ### onGetPreferenceValue
 
@@ -2838,8 +2838,8 @@ Retrieve the current value of the requested settings preference. If this value i
 
 | Parameters ||
 |---|---|
-| `request` | [GetValueRequest](../android/service/settings/preferences/GetValueRequest.md): object to specify request parameters |
-| `callback` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [GetValueResult](../android/service/settings/preferences/GetValueResult.md)!, [Exception](../java/lang/Exception.md)!\>: object to receive result or failure of request |
+| `request` | [GetValueRequest](GetValueRequest.md): object to specify request parameters |
+| `callback` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [GetValueResult](GetValueResult.md)!, [Exception](../java.lang/Exception.md)!\>: object to receive result or failure of request |
 
 ### onSetPreferenceValue
 
@@ -2856,5 +2856,5 @@ Set the value within the request to the target settings preference. If this valu
 
 | Parameters ||
 |---|---|
-| `request` | [SetValueRequest](../android/service/settings/preferences/SetValueRequest.md): object to specify request parameters |
-| `callback` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [SetValueResult](../android/service/settings/preferences/SetValueResult.md)!, [Exception](../java/lang/Exception.md)!\>: object to receive result or failure of request |
+| `request` | [SetValueRequest](SetValueRequest.md): object to specify request parameters |
+| `callback` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [SetValueResult](SetValueResult.md)!, [Exception](../java.lang/Exception.md)!\>: object to receive result or failure of request |

@@ -8,7 +8,7 @@ class AppFunctionManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.appfunctions.AppFunctionManager](../android/app/appfunctions/AppFunctionManager.md) |
+| ↳ | [android.app.appfunctions.AppFunctionManager](AppFunctionManager.md) |
 
 Provides access to App Functions.
 
@@ -34,9 +34,9 @@ See `https://developer.android.com/reference/kotlin/android/app/appfunctions/pac
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionManager#isAppFunctionEnabled(kotlin.String,%20kotlin.String,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(functionIdentifier: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, targetPackage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html!, https://developer.android.com/reference/kotlin/java/lang/Exception.html#!>)` Retrieves whether an app function is enabled (allows execution). |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionManager#isAppFunctionEnabled(kotlin.String,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(functionIdentifier: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html!, https://developer.android.com/reference/kotlin/java/lang/Exception.html#!>)` Retrieves whether an app function owned by the calling package is enabled (allows execution). |
 | --- | --- |
-| [AppFunctionObservation](../android/app/appfunctions/AppFunctionObservation.md) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionManager#observeAppFunctions(java.util.concurrent.Executor,%20android.app.appfunctions.AppFunctionObserver)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, appFunctionObserver: https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionObserver)` Registers an observer to monitor changes to app functions within packages that the caller can query. |
-| [AppFunctionRegistration](../android/app/appfunctions/AppFunctionRegistration.md) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionManager#registerAppFunction(kotlin.String,%20java.util.concurrent.Executor,%20android.app.appfunctions.AppFunction)(functionIdentifier: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, appFunction: https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunction)` Registers a runtime implementation for an app function, that can be executed using #executeAppFunction. |
-| [AppFunctionRegistration](../android/app/appfunctions/AppFunctionRegistration.md) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionManager#registerAppFunctions(kotlin.collections.MutableList)(requests: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/app/appfunctions/RegisterAppFunctionRequest!>)` Registers several `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunction` implementations at once, sharing a single lifecycle. |
+| [AppFunctionObservation](AppFunctionObservation.md) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionManager#observeAppFunctions(java.util.concurrent.Executor,%20android.app.appfunctions.AppFunctionObserver)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, appFunctionObserver: https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionObserver)` Registers an observer to monitor changes to app functions within packages that the caller can query. |
+| [AppFunctionRegistration](AppFunctionRegistration.md) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionManager#registerAppFunction(kotlin.String,%20java.util.concurrent.Executor,%20android.app.appfunctions.AppFunction)(functionIdentifier: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, appFunction: https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunction)` Registers a runtime implementation for an app function, that can be executed using #executeAppFunction. |
+| [AppFunctionRegistration](AppFunctionRegistration.md) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionManager#registerAppFunctions(kotlin.collections.MutableList)(requests: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/app/appfunctions/RegisterAppFunctionRequest!>)` Registers several `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunction` implementations at once, sharing a single lifecycle. |
 | --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionManager#searchAppFunctions(android.app.appfunctions.AppFunctionSearchSpec,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(searchSpec: https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionSearchSpec, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionMetadata!>!, https://developer.android.com/reference/kotlin/java/lang/Exception.html#!>)` Searches app function `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionMetadata`s. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionManager#setAppFunctionEnabled(kotlin.String,%20kotlin.Int,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(functionIdentifier: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, newEnabledState: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://developer.android.com/reference/kotlin/java/lang/Void.html#!, https://developer.android.com/reference/kotlin/java/lang/Exception.html#!>)` Sets the enabled state of the app function owned by the calling package. |
@@ -139,11 +139,11 @@ See `https://developer.android.com/reference/kotlin/android/app/appfunctions/App
 
 | Parameters ||
 |---|---|
-| `request` | [ExecuteAppFunctionRequest](../android/app/appfunctions/ExecuteAppFunctionRequest.md): the request to execute the app function. This value cannot be `null`. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): the executor to run the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `cancellationSignal` | [CancellationSignal](../android/os/CancellationSignal.md): the cancellation signal to cancel the execution. This value cannot be `null`. |
+| `request` | [ExecuteAppFunctionRequest](ExecuteAppFunctionRequest.md): the request to execute the app function. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): the executor to run the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `cancellationSignal` | [CancellationSignal](../android.os/CancellationSignal.md): the cancellation signal to cancel the execution. This value cannot be `null`. |
 | --- | --- |
-| `callback` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [ExecuteAppFunctionResponse](../android/app/appfunctions/ExecuteAppFunctionResponse.md)!, [AppFunctionException](../android/app/appfunctions/AppFunctionException.md)!\>: the callback to receive the function execution result or error. This value cannot be `null`. |
+| `callback` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [ExecuteAppFunctionResponse](ExecuteAppFunctionResponse.md)!, [AppFunctionException](AppFunctionException.md)!\>: the callback to receive the function execution result or error. This value cannot be `null`. |
 
 ### executeAppFunction
 
@@ -169,12 +169,12 @@ See `https://developer.android.com/reference/kotlin/android/app/appfunctions/App
 
 | Parameters ||
 |---|---|
-| `appInteractionSession` | [AppInteractionSession](../android/app/AppInteractionSession.md): the app interaction session to associate with the function execution. This value cannot be `null`. |
-| `request` | [ExecuteAppFunctionRequest](../android/app/appfunctions/ExecuteAppFunctionRequest.md): the request to execute the app function. This value cannot be `null`. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): the executor to run the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `appInteractionSession` | [AppInteractionSession](../android.app/AppInteractionSession.md): the app interaction session to associate with the function execution. This value cannot be `null`. |
+| `request` | [ExecuteAppFunctionRequest](ExecuteAppFunctionRequest.md): the request to execute the app function. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): the executor to run the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | --- | --- |
-| `cancellationSignal` | [CancellationSignal](../android/os/CancellationSignal.md): the cancellation signal to cancel the execution. This value cannot be `null`. |
-| `callback` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [ExecuteAppFunctionResponse](../android/app/appfunctions/ExecuteAppFunctionResponse.md)!, [AppFunctionException](../android/app/appfunctions/AppFunctionException.md)!\>: the callback to receive the function execution result or error. This value cannot be `null`. |
+| `cancellationSignal` | [CancellationSignal](../android.os/CancellationSignal.md): the cancellation signal to cancel the execution. This value cannot be `null`. |
+| `callback` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [ExecuteAppFunctionResponse](ExecuteAppFunctionResponse.md)!, [AppFunctionException](AppFunctionException.md)!\>: the callback to receive the function execution result or error. This value cannot be `null`. |
 
 **See Also**
 
@@ -211,8 +211,8 @@ See `https://developer.android.com/reference/kotlin/android/app/appfunctions/App
 | Parameters ||
 |---|---|
 | `activityIds` | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [AppFunctionActivityId](../android/app/appfunctions/AppFunctionActivityId.md)!\>: The set of activity IDs to retrieve function states for. This value cannot be `null`. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): The executor to run the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `callback` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AppFunctionActivityState](../android/app/appfunctions/AppFunctionActivityState.md)!\>!, [Exception](../java/lang/Exception.md)!\>: The callback to receive the list of activity states. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor to run the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `callback` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AppFunctionActivityState](AppFunctionActivityState.md)!\>!, [Exception](../java.lang/Exception.md)!\>: The callback to receive the list of activity states. This value cannot be `null`. |
 | --- | --- |
 
 **See Also**
@@ -246,8 +246,8 @@ See `https://developer.android.com/reference/kotlin/android/app/appfunctions/App
 | Parameters ||
 |---|---|
 | `appFunctionNames` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AppFunctionName](../android/app/appfunctions/AppFunctionName.md)!\>: The names of the app functions to request the state for. This value cannot be `null`. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): The executor to run the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `callback` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AppFunctionState](../android/app/appfunctions/AppFunctionState.md)!\>!, [Exception](../java/lang/Exception.md)!\>: The callback to receive the function state result. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor to run the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `callback` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AppFunctionState](../android/app/appfunctions/AppFunctionState.md)!\>!, [Exception](../java.lang/Exception.md)!\>: The callback to receive the function state result. This value cannot be `null`. |
 | --- | --- |
 
 ### isAppFunctionEnabled
@@ -275,9 +275,9 @@ If the operation fails, the callback's `https://developer.android.com/reference/
 |---|---|
 | `functionIdentifier` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): the identifier of the app function to check (unique within the target package). This value cannot be `null`. |
 | `targetPackage` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): the package name of the app function's owner. This value cannot be `null`. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): the executor to run the request. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): the executor to run the request. This value cannot be `null`. |
 | --- | --- |
-| `callback` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!, [Exception](../java/lang/Exception.md)!\>: the callback to receive the function enabled check result. This value cannot be `null`. |
+| `callback` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!, [Exception](../java.lang/Exception.md)!\>: the callback to receive the function enabled check result. This value cannot be `null`. |
 
 **See Also**
 
@@ -304,8 +304,8 @@ This is equivalent to calling `https://developer.android.com/reference/kotlin/an
 | Parameters ||
 |---|---|
 | `functionIdentifier` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): the identifier of the app function to check (unique within the target package). This value cannot be `null`. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): the executor to run the request. This value cannot be `null`. |
-| `callback` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!, [Exception](../java/lang/Exception.md)!\>: the callback to receive the function enabled check result. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): the executor to run the request. This value cannot be `null`. |
+| `callback` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!, [Exception](../java.lang/Exception.md)!\>: the callback to receive the function enabled check result. This value cannot be `null`. |
 | --- | --- |
 
 ### observeAppFunctions
@@ -336,8 +336,8 @@ An example usage flow is:
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): the executor to run the `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionObserver` callbacks. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `appFunctionObserver` | [AppFunctionObserver](../android/app/appfunctions/AppFunctionObserver.md): the observer to receive updates to registered app functions. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): the executor to run the `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionObserver` callbacks. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `appFunctionObserver` | [AppFunctionObserver](AppFunctionObserver.md): the observer to receive updates to registered app functions. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -384,8 +384,8 @@ The system holds a strong reference to the provided `https://developer.android.c
 | Parameters ||
 |---|---|
 | `functionIdentifier` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The unique identifier for the function, which must match an entry in the app's XML resource declarations. This value cannot be `null`. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): The `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` on which the function will be invoked. This value cannot be `null`. |
-| `appFunction` | [AppFunction](../android/app/appfunctions/AppFunction.md): The `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunction` implementation to be executed when the function is triggered. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` on which the function will be invoked. This value cannot be `null`. |
+| `appFunction` | [AppFunction](AppFunction.md): The `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunction` implementation to be executed when the function is triggered. This value cannot be `null`. |
 | --- | --- |
 
 | Return ||
@@ -460,9 +460,9 @@ See `https://developer.android.com/reference/kotlin/android/app/appfunctions/App
 
 | Parameters ||
 |---|---|
-| `searchSpec` | [AppFunctionSearchSpec](../android/app/appfunctions/AppFunctionSearchSpec.md): The spec of app functions to search for. This value cannot be `null`. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): The executor to run the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `callback` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AppFunctionMetadata](../android/app/appfunctions/AppFunctionMetadata.md)!\>!, [Exception](../java/lang/Exception.md)!\>: The callback to receive the search results. This value cannot be `null`. |
+| `searchSpec` | [AppFunctionSearchSpec](AppFunctionSearchSpec.md): The spec of app functions to search for. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor to run the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `callback` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AppFunctionMetadata](AppFunctionMetadata.md)!\>!, [Exception](../java.lang/Exception.md)!\>: The callback to receive the search results. This value cannot be `null`. |
 | --- | --- |
 
 ### setAppFunctionEnabled
@@ -486,9 +486,9 @@ Sets the enabled state of the app function owned by the calling package.
 |---|---|
 | `functionIdentifier` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): the identifier of the app function to enable (unique within the calling package). This value cannot be `null`. |
 | `newEnabledState` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the new state of the app function. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionManager#APP_FUNCTION_STATE_DEFAULT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionManager#APP_FUNCTION_STATE_ENABLED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionManager#APP_FUNCTION_STATE_DISABLED:kotlin.Int` |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): the executor to run the callback. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): the executor to run the callback. This value cannot be `null`. |
 | --- | --- |
-| `callback` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [Void](../java/lang/Void.md)!, [Exception](../java/lang/Exception.md)!\>: the callback to receive the result of the function enablement. Can return `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#` if the function is not found or the caller does not have access to it. This value cannot be `null`. |
+| `callback` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [Void](../java.lang/Void.md)!, [Exception](../java.lang/Exception.md)!\>: the callback to receive the result of the function enablement. Can return `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#` if the function is not found or the caller does not have access to it. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|

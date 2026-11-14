@@ -8,7 +8,7 @@ class RouteListingPreference : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.RouteListingPreference](../android/media/RouteListingPreference.md) |
+| ↳ | [android.media.RouteListingPreference](RouteListingPreference.md) |
 
 Allows applications to customize the list of routes used for media routing (for example, in the System UI Output Switcher).
 
@@ -37,8 +37,8 @@ Allows applications to customize the list of routes used for media routing (for 
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [RouteListingPreference.Item](../android/media/RouteListingPreference.Item.md)!\> | `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference#getItems()()` Returns an unmodifiable list containing the `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference.Item` that the app wants to be listed for media routing. |
 | --- | --- |
-| [ComponentName](../android/content/ComponentName.md)? | `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference#getLinkedItemComponentName()()` Returns a `https://developer.android.com/reference/kotlin/android/content/ComponentName.html#` for navigating to the application. |
-| [ComponentName](../android/content/ComponentName.md)? | `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference#getMissingPermissionsComponentName()()` Returns a `https://developer.android.com/reference/kotlin/android/content/ComponentName.html#` for navigating to the application to fix missing permissions. |
+| [ComponentName](../android.content/ComponentName.md)? | `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference#getLinkedItemComponentName()()` Returns a `https://developer.android.com/reference/kotlin/android/content/ComponentName.html#` for navigating to the application. |
+| [ComponentName](../android.content/ComponentName.md)? | `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference#getMissingPermissionsComponentName()()` Returns a `https://developer.android.com/reference/kotlin/android/content/ComponentName.html#` for navigating to the application to fix missing permissions. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference#getUseSystemOrdering()()` Returns true if the application would like media route listing to use the system's ordering strategy, or false if the application would like route listing to respect the ordering obtained from `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference#getItems()`. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference#hashCode()()` Returns a hash code value for the object. |
@@ -46,7 +46,7 @@ Allows applications to customize the list of routes used for media routing (for 
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [RouteListingPreference](../android/media/RouteListingPreference.md)!\> | `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [RouteListingPreference](RouteListingPreference.md)!\> | `https://developer.android.com/reference/kotlin/android/media/RouteListingPreference#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -261,7 +261,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

@@ -8,7 +8,7 @@ open class TelecomManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.telecom.TelecomManager](../android/telecom/TelecomManager.md) |
+| ↳ | [android.telecom.TelecomManager](TelecomManager.md) |
 
 The Android Telecom framework manages audio and video calls on an Android device. It acts as a central switchboard, connecting applications that provide calling capabilities (like SIM-based/telephony calls or VoIP apps) with applications that provide the user interface for calls (like the default Phone app). Key functions include routing calls, managing call states, and integrating various calling services into a consistent user experience. It allows developers to create replacements for the default phone app or integrate their own calling solutions (e.g., VoIP) into the native Android calling system.
 
@@ -127,26 +127,26 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#addNewIncomingConference(android.telecom.PhoneAccountHandle,%20android.os.Bundle)(phoneAccount: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle, extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#)` Registers a new incoming conference. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#cancelMissedCallsNotification()()` Removes the missed-call notification if one is present and marks missed calls in the call log as read. |
-| open [Intent](../android/content/Intent.md)! | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#createManageBlockedNumbersIntent()()` Creates the `https://developer.android.com/reference/kotlin/android/content/Intent.html#` which can be used with `https://developer.android.com/reference/kotlin/android/content/Context.html#startActivity(android.content.Intent)` to launch the activity to manage blocked numbers. |
+| open [Intent](../android.content/Intent.md)! | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#createManageBlockedNumbersIntent()()` Creates the `https://developer.android.com/reference/kotlin/android/content/Intent.html#` which can be used with `https://developer.android.com/reference/kotlin/android/content/Context.html#startActivity(android.content.Intent)` to launch the activity to manage blocked numbers. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#endCall()()` Ends the foreground call on the device. |
 | --- | --- |
-| open [Uri](../android/net/Uri.md)! | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#getAdnUriForPhoneAccount(android.telecom.PhoneAccountHandle)(accountHandle: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle!)` Returns a URI (with the content:// scheme) specific to the specified `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` for ADN content retrieval. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md)!\>! | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#getCallCapablePhoneAccounts()()` Returns a list of `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle`s which can be used to make and receive phone calls. |
+| open [Uri](../android.net/Uri.md)! | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#getAdnUriForPhoneAccount(android.telecom.PhoneAccountHandle)(accountHandle: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle!)` Returns a URI (with the content:// scheme) specific to the specified `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` for ADN content retrieval. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PhoneAccountHandle](PhoneAccountHandle.md)!\>! | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#getCallCapablePhoneAccounts()()` Returns a list of `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle`s which can be used to make and receive phone calls. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#getDefaultDialerPackage()()` Used to determine the currently selected default dialer package. |
 | --- | --- |
-| open [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md)! | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#getDefaultOutgoingPhoneAccount(kotlin.String)(uriScheme: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Return the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` which will be used to place outgoing calls to addresses with the specified `uriScheme`. |
+| open [PhoneAccountHandle](PhoneAccountHandle.md)! | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#getDefaultOutgoingPhoneAccount(kotlin.String)(uriScheme: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Return the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` which will be used to place outgoing calls to addresses with the specified `uriScheme`. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#getLine1Number(android.telecom.PhoneAccountHandle)(accountHandle: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle!)` Return the line 1 phone number for given phone account. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md)!\> | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#getOwnSelfManagedPhoneAccounts()()` Returns a list of `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle`s owned by the calling self-managed `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService`. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PhoneAccountHandle](PhoneAccountHandle.md)!\> | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#getOwnSelfManagedPhoneAccounts()()` Returns a list of `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle`s owned by the calling self-managed `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService`. |
 | --- | --- |
-| open [PhoneAccount](../android/telecom/PhoneAccount.md)! | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#getPhoneAccount(android.telecom.PhoneAccountHandle)(account: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle!)` Return the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` for a specified `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle`. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PhoneAccount](../android/telecom/PhoneAccount.md)!\> | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#getRegisteredPhoneAccounts()()` This API will return all `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount`s the caller registered via `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#registerPhoneAccount(android.telecom.PhoneAccount)`. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md)!\> | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#getSelfManagedPhoneAccounts()()` Returns a list of `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle`s for all self-managed `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService`s owned by the calling `https://developer.android.com/reference/kotlin/android/os/UserHandle.html#`. |
+| open [PhoneAccount](PhoneAccount.md)! | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#getPhoneAccount(android.telecom.PhoneAccountHandle)(account: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle!)` Return the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` for a specified `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle`. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PhoneAccount](PhoneAccount.md)!\> | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#getRegisteredPhoneAccounts()()` This API will return all `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount`s the caller registered via `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#registerPhoneAccount(android.telecom.PhoneAccount)`. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PhoneAccountHandle](PhoneAccountHandle.md)!\> | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#getSelfManagedPhoneAccounts()()` Returns a list of `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle`s for all self-managed `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService`s owned by the calling `https://developer.android.com/reference/kotlin/android/os/UserHandle.html#`. |
 | --- | --- |
-| open [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md)! | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#getSimCallManager()()` Returns the current SIM call manager. |
-| open [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md)? | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#getSimCallManagerForSubscription(kotlin.Int)(subscriptionId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns current SIM call manager for the Telephony Subscription ID specified. |
+| open [PhoneAccountHandle](PhoneAccountHandle.md)! | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#getSimCallManager()()` Returns the current SIM call manager. |
+| open [PhoneAccountHandle](PhoneAccountHandle.md)? | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#getSimCallManagerForSubscription(kotlin.Int)(subscriptionId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns current SIM call manager for the Telephony Subscription ID specified. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#getSystemDialerPackage()()` Determines the package name of the system-provided default phone app. |
 | --- | --- |
-| open [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md)? | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#getUserSelectedOutgoingPhoneAccount()()` Return the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` which is the user-chosen default for making outgoing phone calls. |
+| open [PhoneAccountHandle](PhoneAccountHandle.md)? | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#getUserSelectedOutgoingPhoneAccount()()` Return the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` which is the user-chosen default for making outgoing phone calls. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#getVoiceMailNumber(android.telecom.PhoneAccountHandle)(accountHandle: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle!)` Return the voicemail number for a given phone account. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#handleMmi(kotlin.String)(dialString: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Processes the specified dial string as an MMI code. |
 | --- | --- |
@@ -1140,9 +1140,9 @@ For a self-managed `https://developer.android.com/reference/kotlin/android/telec
 
 | Parameters ||
 |---|---|
-| `srcAddr` | [Uri](../android/net/Uri.md)!: The `https://developer.android.com/reference/kotlin/android/net/Uri.html#` of the ongoing call to handover to the caller's `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService`. |
+| `srcAddr` | [Uri](../android.net/Uri.md)!: The `https://developer.android.com/reference/kotlin/android/net/Uri.html#` of the ongoing call to handover to the caller's `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService`. |
 | `videoState` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Video state after the handover. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/telecom/VideoProfile#STATE_AUDIO_ONLY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telecom/VideoProfile#STATE_TX_ENABLED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telecom/VideoProfile#STATE_RX_ENABLED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telecom/VideoProfile#STATE_BIDIRECTIONAL:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telecom/VideoProfile#STATE_PAUSED:kotlin.Int` |
-| `destAcct` | [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md)!: The `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle` registered to the calling package. |
+| `destAcct` | [PhoneAccountHandle](PhoneAccountHandle.md)!: The `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle` registered to the calling package. |
 | --- | --- |
 
 ### acceptRingingCall
@@ -1241,12 +1241,12 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `callAttributes` | [CallAttributes](../android/telecom/CallAttributes.md): attributes of the new call (incoming or outgoing, address, etc.). This value cannot be `null`. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): execution context to run `https://developer.android.com/reference/kotlin/android/telecom/CallControlCallback` updates on. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `pendingControl` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [CallControl](../android/telecom/CallControl.md)!, [CallException](../android/telecom/CallException.md)!\>: Receives the result of addCall transaction. Upon success, a CallControl object is provided which can be used to do things like disconnect the call that was added. This value cannot be `null`. |
+| `callAttributes` | [CallAttributes](CallAttributes.md): attributes of the new call (incoming or outgoing, address, etc.). This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): execution context to run `https://developer.android.com/reference/kotlin/android/telecom/CallControlCallback` updates on. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `pendingControl` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [CallControl](CallControl.md)!, [CallException](CallException.md)!\>: Receives the result of addCall transaction. Upon success, a CallControl object is provided which can be used to do things like disconnect the call that was added. This value cannot be `null`. |
 | --- | --- |
-| `handshakes` | [CallControlCallback](../android/telecom/CallControlCallback.md): callback that receives **actionable** updates that originate from Telecom. This value cannot be `null`. |
-| `events` | [CallEventCallback](../android/telecom/CallEventCallback.md): callback that receives **non** -actionable updates that originate from Telecom. This value cannot be `null`. |
+| `handshakes` | [CallControlCallback](CallControlCallback.md): callback that receives **actionable** updates that originate from Telecom. This value cannot be `null`. |
+| `events` | [CallEventCallback](CallEventCallback.md): callback that receives **non** -actionable updates that originate from Telecom. This value cannot be `null`. |
 
 ### addNewIncomingCall
 
@@ -1275,8 +1275,8 @@ For a self-managed `https://developer.android.com/reference/kotlin/android/telec
 
 | Parameters ||
 |---|---|
-| `phoneAccount` | [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md)!: A `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle` registered with `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#registerPhoneAccount(android.telecom.PhoneAccount)`. |
-| `extras` | [Bundle](../android/os/Bundle.md)!: A bundle that will be passed through to `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onCreateIncomingConnection(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)`. |
+| `phoneAccount` | [PhoneAccountHandle](PhoneAccountHandle.md)!: A `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle` registered with `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#registerPhoneAccount(android.telecom.PhoneAccount)`. |
+| `extras` | [Bundle](../android.os/Bundle.md)!: A bundle that will be passed through to `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onCreateIncomingConnection(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)`. |
 
 ### addNewIncomingConference
 
@@ -1299,8 +1299,8 @@ For a managed `https://developer.android.com/reference/kotlin/android/telecom/Co
 
 | Parameters ||
 |---|---|
-| `phoneAccount` | [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md): A `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle` registered with `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#registerPhoneAccount(android.telecom.PhoneAccount)`. This value cannot be `null`. |
-| `extras` | [Bundle](../android/os/Bundle.md): A bundle that will be passed through to `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onCreateIncomingConference(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)`. This value cannot be `null`. |
+| `phoneAccount` | [PhoneAccountHandle](PhoneAccountHandle.md): A `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle` registered with `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager#registerPhoneAccount(android.telecom.PhoneAccount)`. This value cannot be `null`. |
+| `extras` | [Bundle](../android.os/Bundle.md): A bundle that will be passed through to `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService#onCreateIncomingConference(android.telecom.PhoneAccountHandle,%20android.telecom.ConnectionRequest)`. This value cannot be `null`. |
 
 ### cancelMissedCallsNotification
 
@@ -1365,7 +1365,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `accountHandle` | [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md)!: The handle for the account to derive an adn query URI for or `null` to return a URI which will use the default account. |
+| `accountHandle` | [PhoneAccountHandle](PhoneAccountHandle.md)!: The handle for the account to derive an adn query URI for or `null` to return a URI which will use the default account. |
 
 | Return ||
 |---|---|
@@ -1451,7 +1451,7 @@ Requires Permission: `https://developer.android.com/reference/kotlin/android/Man
 
 | Parameters ||
 |---|---|
-| `accountHandle` | [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md)!: The handle for the account retrieve a number for. |
+| `accountHandle` | [PhoneAccountHandle](PhoneAccountHandle.md)!: The handle for the account retrieve a number for. |
 
 | Return ||
 |---|---|
@@ -1490,7 +1490,7 @@ Return the `https://developer.android.com/reference/kotlin/android/telecom/Phone
 
 | Parameters ||
 |---|---|
-| `account` | [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md)!: The `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle`. |
+| `account` | [PhoneAccountHandle](PhoneAccountHandle.md)!: The `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle`. |
 
 | Return ||
 |---|---|
@@ -1617,7 +1617,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `accountHandle` | [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md)!: The handle for the phone account. |
+| `accountHandle` | [PhoneAccountHandle](PhoneAccountHandle.md)!: The handle for the phone account. |
 
 | Return ||
 |---|---|
@@ -1667,7 +1667,7 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 | Parameters ||
 |---|---|
 | `dialString` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The digits to dial. |
-| `accountHandle` | [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md)!: The handle for the account the MMI code should apply to. |
+| `accountHandle` | [PhoneAccountHandle](PhoneAccountHandle.md)!: The handle for the account the MMI code should apply to. |
 
 | Return ||
 |---|---|
@@ -1755,7 +1755,7 @@ A `https://developer.android.com/reference/kotlin/android/telecom/ConnectionServ
 
 | Parameters ||
 |---|---|
-| `phoneAccountHandle` | [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md)!: The `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle` the call will be added for. |
+| `phoneAccountHandle` | [PhoneAccountHandle](PhoneAccountHandle.md)!: The `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle` the call will be added for. |
 
 | Return ||
 |---|---|
@@ -1779,7 +1779,7 @@ A `https://developer.android.com/reference/kotlin/android/telecom/ConnectionServ
 
 | Parameters ||
 |---|---|
-| `phoneAccountHandle` | [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md)!: The `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle` the call will be added for. |
+| `phoneAccountHandle` | [PhoneAccountHandle](PhoneAccountHandle.md)!: The `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle` the call will be added for. |
 
 | Return ||
 |---|---|
@@ -1812,7 +1812,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `accountHandle` | [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md)!: The handle for the account to check the voicemail number against |
+| `accountHandle` | [PhoneAccountHandle](PhoneAccountHandle.md)!: The handle for the account to check the voicemail number against |
 | `number` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The number to look up. |
 
 ### placeCall
@@ -1858,8 +1858,8 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `address` | [Uri](../android/net/Uri.md)!: The address to make the call to. |
-| `extras` | [Bundle](../android/os/Bundle.md)!: Bundle of extras to use with the call. |
+| `address` | [Uri](../android.net/Uri.md)!: The address to make the call to. |
+| `extras` | [Bundle](../android.os/Bundle.md)!: Bundle of extras to use with the call. |
 
 ### registerPhoneAccount
 
@@ -1879,7 +1879,7 @@ A `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentExcep
 
 | Parameters ||
 |---|---|
-| `account` | [PhoneAccount](../android/telecom/PhoneAccount.md)!: The complete `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount`. |
+| `account` | [PhoneAccount](PhoneAccount.md)!: The complete `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount`. |
 
 | Exceptions ||
 |---|---|
@@ -1947,8 +1947,8 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `participants` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Uri](../android/net/Uri.md)!\>: List of participants to start conference with. This value cannot be `null`. |
-| `extras` | [Bundle](../android/os/Bundle.md): Bundle of extras to use with the call. This value cannot be `null`. |
+| `participants` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Uri](../android.net/Uri.md)!\>: List of participants to start conference with. This value cannot be `null`. |
+| `extras` | [Bundle](../android.os/Bundle.md): Bundle of extras to use with the call. This value cannot be `null`. |
 
 ### unregisterPhoneAccount
 
@@ -1962,4 +1962,4 @@ Remove a `https://developer.android.com/reference/kotlin/android/telecom/PhoneAc
 
 | Parameters ||
 |---|---|
-| `accountHandle` | [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md)!: A `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle` for the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` to unregister. |
+| `accountHandle` | [PhoneAccountHandle](PhoneAccountHandle.md)!: A `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle` for the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount` to unregister. |

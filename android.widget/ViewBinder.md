@@ -19,7 +19,7 @@ This class can be used by external clients of SimpleCursorTreeAdapter to bind va
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [setViewValue](../android/widget/SimpleCursorTreeAdapter.ViewBinder.md))`(`view:` ` [View](../android/view/View.md)!`, `cursor:` ` [Cursor](../android/database/Cursor.md)!`, `columnIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Binds the Cursor column defined by the specified index to the specified view. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [setViewValue](../android/widget/SimpleCursorTreeAdapter.ViewBinder.md))`(`view:` ` [View](../android.view/View.md)!`, `cursor:` ` [Cursor](../android.database/Cursor.md)!`, `columnIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Binds the Cursor column defined by the specified index to the specified view. |
 
 ## Public methods
 
@@ -39,8 +39,8 @@ Binds the Cursor column defined by the specified index to the specified view. Wh
 
 | Parameters ||
 |---------------|------------------------------------------------------------------------------------------------------------------------------------|
-| `view` | [View](../android/view/View.md)!:the view to bind the data to |
-| `cursor` | [Cursor](../android/database/Cursor.md)!:the cursor to get the data from |
+| `view` | [View](../android.view/View.md)!:the view to bind the data to |
+| `cursor` | [Cursor](../android.database/Cursor.md)!:the cursor to get the data from |
 | `columnIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the column at which the data can be found in the cursor |
 | --- | --- |
 

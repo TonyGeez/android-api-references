@@ -8,9 +8,9 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface DeclHandler
 ```
 
-| [org.xml.sax.ext.DeclHandler](../org/xml/sax/ext/DeclHandler.md) |
+| [org.xml.sax.ext.DeclHandler](DeclHandler.md) |
 
-| Known Direct Subclasses [DefaultHandler2](../org/xml/sax/ext/DefaultHandler2.md) |---------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [DefaultHandler2](../org/xml/sax/ext/DefaultHandler2.md) | This class extends the SAX2 base handler class to support the SAX2 [LexicalHandler](../org/xml/sax/ext/LexicalHandler.md), [DeclHandler](../org/xml/sax/ext/DeclHandler.md), and [EntityResolver2](../org/xml/sax/ext/EntityResolver2.md) extensions. | |
+| Known Direct Subclasses [DefaultHandler2](DefaultHandler2.md) |---------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [DefaultHandler2](DefaultHandler2.md) | This class extends the SAX2 base handler class to support the SAX2 [LexicalHandler](LexicalHandler.md), [DeclHandler](DeclHandler.md), and [EntityResolver2](EntityResolver2.md) extensions. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 SAX2 extension handler for DTD declaration events.*This module, both source code and documentation, is in the Public Domain, and comes with**NO WARRANTY**.* See<http://www.saxproject.org>for further information.
@@ -19,19 +19,19 @@ This is an optional extension handler for SAX2 to provide more complete informat
 
 Note that data-related DTD declarations (unparsed entities and notations) are already reported through the interface.
 
-If you are using the declaration handler together with a lexical handler, all of the events will occur between the [startDTD](../org/xml/sax/ext/LexicalHandler.md))and the [endDTD](../org/xml/sax/ext/LexicalHandler.md))events.
+If you are using the declaration handler together with a lexical handler, all of the events will occur between the [startDTD](LexicalHandler.md))and the [endDTD](LexicalHandler.md))events.
 
-To set the DeclHandler for an XML reader, use the [setProperty](../org/xml/sax/XMLReader.md))method with the property name`http://xml.org/sax/properties/declaration-handler`and an object implementing this interface (or null) as the value. If the reader does not report declaration events, it will throw a [SAXNotRecognizedException](../org/xml/sax/SAXNotRecognizedException.md) when you attempt to register the handler.
+To set the DeclHandler for an XML reader, use the [setProperty](../org.xml.sax/XMLReader.md))method with the property name`http://xml.org/sax/properties/declaration-handler`and an object implementing this interface (or null) as the value. If the reader does not report declaration events, it will throw a [SAXNotRecognizedException](../org.xml.sax/SAXNotRecognizedException.md) when you attempt to register the handler.
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [attributeDecl](../org/xml/sax/ext/DeclHandler.md))`(`eName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `aName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `mode:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Report an attribute type declaration. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [elementDecl](../org/xml/sax/ext/DeclHandler.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `model:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Report an element type declaration. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [externalEntityDecl](../org/xml/sax/ext/DeclHandler.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `publicId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Report a parsed external entity declaration. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [attributeDecl](DeclHandler.md))`(`eName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `aName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `mode:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Report an attribute type declaration. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [elementDecl](DeclHandler.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `model:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Report an element type declaration. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [externalEntityDecl](DeclHandler.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `publicId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Report a parsed external entity declaration. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [internalEntityDecl](../org/xml/sax/ext/DeclHandler.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Report an internal entity declaration. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [internalEntityDecl](DeclHandler.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Report an internal entity declaration. |
 
 ## Public methods
 
@@ -124,8 +124,8 @@ If the system identifier is a URL, the parser must resolve it fully before passi
 
 **See Also**
 
-- [#internalEntityDecl](../org/xml/sax/ext/DeclHandler.md))
-- [org.xml.sax.DTDHandler#unparsedEntityDecl](../org/xml/sax/DTDHandler.md)) 
+- [#internalEntityDecl](DeclHandler.md))
+- [org.xml.sax.DTDHandler#unparsedEntityDecl](../org.xml.sax/DTDHandler.md)) 
 
 ### internalEntityDecl
 
@@ -153,5 +153,5 @@ Only the effective (first) declaration for each entity will be reported. All par
 
 **See Also**
 
-- [#externalEntityDecl](../org/xml/sax/ext/DeclHandler.md))
-- [org.xml.sax.DTDHandler#unparsedEntityDecl](../org/xml/sax/DTDHandler.md))
+- [#externalEntityDecl](DeclHandler.md))
+- [org.xml.sax.DTDHandler#unparsedEntityDecl](../org.xml.sax/DTDHandler.md))

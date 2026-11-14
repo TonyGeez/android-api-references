@@ -4,7 +4,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 
 # DisplayOptions
 
-Kotlin| [Java](../android/icu/text/DisplayOptions.md) 
+Kotlin| [Java](DisplayOptions.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class DisplayOptions
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.icu.text.DisplayOptions](../android/icu/text/DisplayOptions.md) |
+| ↳ | [android.icu.text.DisplayOptions](DisplayOptions.md) |
 
 Represents all the display options that are supported by CLDR such as grammatical case, noun class, ... etc. It currently supports enums, but may be extended in the future to have other types of data. It replaces a DisplayContext\[\] as a method parameter.
 
@@ -38,17 +38,17 @@ For example:`DisplayOptions x = DisplayOptions.builder() .setNounClass(NounClass
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [DisplayOptions.Builder](../android/icu/text/DisplayOptions.Builder.md)! | [builder](../android/icu/text/DisplayOptions.md))`()` Creates a builder with the`UNDEFINED`value for all the parameters. |
-| [DisplayOptions.Builder](../android/icu/text/DisplayOptions.Builder.md)! | [copyToBuilder](../android/icu/text/DisplayOptions.md))`()` Creates a builder with the same parameters from this object. |
-| [DisplayOptions.Capitalization](../android/icu/text/DisplayOptions.Capitalization.md)! | [getCapitalization](../android/icu/text/DisplayOptions.md))`()` Gets the capitalization. |
+| static [DisplayOptions.Builder](../android/icu/text/DisplayOptions.Builder.md)! | [builder](DisplayOptions.md))`()` Creates a builder with the`UNDEFINED`value for all the parameters. |
+| [DisplayOptions.Builder](../android/icu/text/DisplayOptions.Builder.md)! | [copyToBuilder](DisplayOptions.md))`()` Creates a builder with the same parameters from this object. |
+| [DisplayOptions.Capitalization](../android/icu/text/DisplayOptions.Capitalization.md)! | [getCapitalization](DisplayOptions.md))`()` Gets the capitalization. |
 | --- | --- |
-| [DisplayOptions.DisplayLength](../android/icu/text/DisplayOptions.DisplayLength.md)! | [getDisplayLength](../android/icu/text/DisplayOptions.md))`()` Gets the display length. |
-| [DisplayOptions.GrammaticalCase](../android/icu/text/DisplayOptions.GrammaticalCase.md)! | [getGrammaticalCase](../android/icu/text/DisplayOptions.md))`()` Gets the grammatical case. |
-| [DisplayOptions.NameStyle](../android/icu/text/DisplayOptions.NameStyle.md)! | [getNameStyle](../android/icu/text/DisplayOptions.md))`()` Gets the name style. |
+| [DisplayOptions.DisplayLength](../android/icu/text/DisplayOptions.DisplayLength.md)! | [getDisplayLength](DisplayOptions.md))`()` Gets the display length. |
+| [DisplayOptions.GrammaticalCase](../android/icu/text/DisplayOptions.GrammaticalCase.md)! | [getGrammaticalCase](DisplayOptions.md))`()` Gets the grammatical case. |
+| [DisplayOptions.NameStyle](../android/icu/text/DisplayOptions.NameStyle.md)! | [getNameStyle](DisplayOptions.md))`()` Gets the name style. |
 | --- | --- |
-| [DisplayOptions.NounClass](../android/icu/text/DisplayOptions.NounClass.md)! | [getNounClass](../android/icu/text/DisplayOptions.md))`()` Gets the noun class. |
-| [DisplayOptions.PluralCategory](../android/icu/text/DisplayOptions.PluralCategory.md)! | [getPluralCategory](../android/icu/text/DisplayOptions.md))`()` Gets the plural category. |
-| [DisplayOptions.SubstituteHandling](../android/icu/text/DisplayOptions.SubstituteHandling.md)! | [getSubstituteHandling](../android/icu/text/DisplayOptions.md))`()` Gets the substitute handling. |
+| [DisplayOptions.NounClass](../android/icu/text/DisplayOptions.NounClass.md)! | [getNounClass](DisplayOptions.md))`()` Gets the noun class. |
+| [DisplayOptions.PluralCategory](../android/icu/text/DisplayOptions.PluralCategory.md)! | [getPluralCategory](DisplayOptions.md))`()` Gets the plural category. |
+| [DisplayOptions.SubstituteHandling](../android/icu/text/DisplayOptions.SubstituteHandling.md)! | [getSubstituteHandling](DisplayOptions.md))`()` Gets the substitute handling. |
 | --- | --- |
 
 ## Public methods

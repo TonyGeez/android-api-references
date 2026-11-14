@@ -11,12 +11,12 @@ open class IllegalFormatWidthException : IllegalFormatException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||||
 | --- | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||||
-| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) ||||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) |||||
+| | | ↳ | [java.lang.RuntimeException](../java.lang/RuntimeException.md) ||||
 | --- | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.IllegalArgumentException](../java/lang/IllegalArgumentException.md) |||
-| | | | | ↳ | [java.util.IllegalFormatException](../java/util/IllegalFormatException.md) ||
-| | | | | | ↳ | [java.util.IllegalFormatWidthException](../java/util/IllegalFormatWidthException.md) |
+| | | | ↳ | [java.lang.IllegalArgumentException](../java.lang/IllegalArgumentException.md) |||
+| | | | | ↳ | [java.util.IllegalFormatException](IllegalFormatException.md) ||
+| | | | | | ↳ | [java.util.IllegalFormatWidthException](IllegalFormatWidthException.md) |
 | --- | --- | --- | --- | --- | --- | --- |
 
 Unchecked exception thrown when the format width is a negative value other than`-1`or is otherwise unsupported. If a given format width is not representable by an`int`type, then the value`Integer.MIN_VALUE`will be used in the exception.
@@ -25,15 +25,15 @@ Unchecked exception thrown when the format width is a negative value other than`
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [IllegalFormatWidthException](../java/util/IllegalFormatWidthException.md))`(`w:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs an instance of this class with the specified width. |
+| [IllegalFormatWidthException](IllegalFormatWidthException.md))`(`w:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs an instance of this class with the specified width. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWidth](../java/util/IllegalFormatWidthException.md))`()` Returns the width. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWidth](IllegalFormatWidthException.md))`()` Returns the width. |
 
 | Properties ||
 |---------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [message](../java/util/IllegalFormatWidthException.md) <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [message](IllegalFormatWidthException.md) <br /> |
 
 ## Public constructors
 

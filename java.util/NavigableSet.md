@@ -8,51 +8,51 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 interface NavigableSet<E : Any!> : SortedSet<E>
 ```
 
-| [java.util.NavigableSet](../java/util/NavigableSet.md) |
+| [java.util.NavigableSet](NavigableSet.md) |
 
-| Known Direct Subclasses [ConcurrentSkipListSet](../java/util/concurrent/ConcurrentSkipListSet.md), [TreeSet](../java/util/TreeSet.md) |--------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [ConcurrentSkipListSet](../java/util/concurrent/ConcurrentSkipListSet.md) | A scalable concurrent [NavigableSet](../java/util/NavigableSet.md) implementation based on a [ConcurrentSkipListMap](../java/util/concurrent/ConcurrentSkipListMap.md). | | [TreeSet](../java/util/TreeSet.md) | A [NavigableSet](../java/util/NavigableSet.md) implementation based on a [TreeMap](../java/util/TreeMap.md). | |
+| Known Direct Subclasses [ConcurrentSkipListSet](../java.util.concurrent/ConcurrentSkipListSet.md), [TreeSet](TreeSet.md) |--------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [ConcurrentSkipListSet](../java.util.concurrent/ConcurrentSkipListSet.md) | A scalable concurrent [NavigableSet](NavigableSet.md) implementation based on a [ConcurrentSkipListMap](../java.util.concurrent/ConcurrentSkipListMap.md). | | [TreeSet](TreeSet.md) | A [NavigableSet](NavigableSet.md) implementation based on a [TreeMap](TreeMap.md). | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-A [SortedSet](../java/util/SortedSet.md) extended with navigation methods reporting closest matches for given search targets. Methods [lower](../java/util/NavigableSet.md)), [floor](../java/util/NavigableSet.md)), [ceiling](../java/util/NavigableSet.md)), and [higher](../java/util/NavigableSet.md))return elements respectively less than, less than or equal, greater than or equal, and greater than a given element, returning`null`if there is no such element.
+A [SortedSet](SortedSet.md) extended with navigation methods reporting closest matches for given search targets. Methods [lower](NavigableSet.md)), [floor](NavigableSet.md)), [ceiling](NavigableSet.md)), and [higher](NavigableSet.md))return elements respectively less than, less than or equal, greater than or equal, and greater than a given element, returning`null`if there is no such element.
 
-A`NavigableSet`may be accessed and traversed in either ascending or descending order. The [descendingSet](../java/util/NavigableSet.md))method returns a view of the set with the senses of all relational and directional methods inverted. The performance of ascending operations and views is likely to be faster than that of descending ones. This interface additionally defines methods [pollFirst](../java/util/NavigableSet.md))and [pollLast](../java/util/NavigableSet.md))that return and remove the lowest and highest element, if one exists, else returning`null`. Methods [subSet(E, boolean, E, boolean)](../java/util/NavigableSet.md)), [headSet(E, boolean)](../java/util/NavigableSet.md)), and [tailSet(E, boolean)](../java/util/NavigableSet.md))differ from the like-named`SortedSet`methods in accepting additional arguments describing whether lower and upper bounds are inclusive versus exclusive. Subsets of any`NavigableSet`must implement the`NavigableSet`interface.
+A`NavigableSet`may be accessed and traversed in either ascending or descending order. The [descendingSet](NavigableSet.md))method returns a view of the set with the senses of all relational and directional methods inverted. The performance of ascending operations and views is likely to be faster than that of descending ones. This interface additionally defines methods [pollFirst](NavigableSet.md))and [pollLast](NavigableSet.md))that return and remove the lowest and highest element, if one exists, else returning`null`. Methods [subSet(E, boolean, E, boolean)](NavigableSet.md)), [headSet(E, boolean)](NavigableSet.md)), and [tailSet(E, boolean)](NavigableSet.md))differ from the like-named`SortedSet`methods in accepting additional arguments describing whether lower and upper bounds are inclusive versus exclusive. Subsets of any`NavigableSet`must implement the`NavigableSet`interface.
 
-The return values of navigation methods may be ambiguous in implementations that permit`null`elements. However, even in this case the result can be disambiguated by checking`contains(null)`. To avoid such issues, implementations of this interface are encouraged to*not* permit insertion of`null`elements. (Note that sorted sets of [Comparable](../java/lang/Comparable.md) elements intrinsically do not permit`null`.)
+The return values of navigation methods may be ambiguous in implementations that permit`null`elements. However, even in this case the result can be disambiguated by checking`contains(null)`. To avoid such issues, implementations of this interface are encouraged to*not* permit insertion of`null`elements. (Note that sorted sets of [Comparable](../java.lang/Comparable.md) elements intrinsically do not permit`null`.)
 
-Methods [subSet(E, E)](../java/util/NavigableSet.md)), [headSet(E)](../java/util/NavigableSet.md)), and [tailSet(E)](../java/util/NavigableSet.md))are specified to return`SortedSet`to allow existing implementations of`SortedSet`to be compatibly retrofitted to implement`NavigableSet`, but extensions and implementations of this interface are encouraged to override these methods to return`NavigableSet`.
+Methods [subSet(E, E)](NavigableSet.md)), [headSet(E)](NavigableSet.md)), and [tailSet(E)](NavigableSet.md))are specified to return`SortedSet`to allow existing implementations of`SortedSet`to be compatibly retrofitted to implement`NavigableSet`, but extensions and implementations of this interface are encouraged to override these methods to return`NavigableSet`.
 
 ## Summary
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstractE | [ceiling](../java/util/NavigableSet.md))`(`e:` `E`)` Returns the least element in this set greater than or equal to the given element, or`null`if there is no such element. |
-| abstract [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\<E\>! | [descendingIterator](../java/util/NavigableSet.md))`()` Returns an iterator over the elements in this set, in descending order. |
-| abstract [NavigableSet](../java/util/NavigableSet.md)\<E\>! | [descendingSet](../java/util/NavigableSet.md))`()` Returns a reverse order view of the elements contained in this set. |
+| abstractE | [ceiling](NavigableSet.md))`(`e:` `E`)` Returns the least element in this set greater than or equal to the given element, or`null`if there is no such element. |
+| abstract [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\<E\>! | [descendingIterator](NavigableSet.md))`()` Returns an iterator over the elements in this set, in descending order. |
+| abstract [NavigableSet](NavigableSet.md)\<E\>! | [descendingSet](NavigableSet.md))`()` Returns a reverse order view of the elements contained in this set. |
 | --- | --- |
-| abstractE | [floor](../java/util/NavigableSet.md))`(`e:` `E`)` Returns the greatest element in this set less than or equal to the given element, or`null`if there is no such element. |
-| abstract [SortedSet](../java/util/SortedSet.md)\<E\>! | [headSet](../java/util/NavigableSet.md))`(`toElement:` `E`)` Returns a view of the portion of this set whose elements are strictly less than`toElement`. |
-| abstract [NavigableSet](../java/util/NavigableSet.md)\<E\>! | [headSet](../java/util/NavigableSet.md))`(`toElement:` `E`, `inclusive:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Returns a view of the portion of this set whose elements are less than (or equal to, if`inclusive`is true)`toElement`. |
+| abstractE | [floor](NavigableSet.md))`(`e:` `E`)` Returns the greatest element in this set less than or equal to the given element, or`null`if there is no such element. |
+| abstract [SortedSet](SortedSet.md)\<E\>! | [headSet](NavigableSet.md))`(`toElement:` `E`)` Returns a view of the portion of this set whose elements are strictly less than`toElement`. |
+| abstract [NavigableSet](NavigableSet.md)\<E\>! | [headSet](NavigableSet.md))`(`toElement:` `E`, `inclusive:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Returns a view of the portion of this set whose elements are less than (or equal to, if`inclusive`is true)`toElement`. |
 | --- | --- |
-| abstractE | [higher](../java/util/NavigableSet.md))`(`e:` `E`)` Returns the least element in this set strictly greater than the given element, or`null`if there is no such element. |
-| abstract [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\<E\> | [iterator](../java/util/NavigableSet.md))`()` Returns an iterator over the elements in this set, in ascending order. |
-| abstractE | [lower](../java/util/NavigableSet.md))`(`e:` `E`)` Returns the greatest element in this set strictly less than the given element, or`null`if there is no such element. |
+| abstractE | [higher](NavigableSet.md))`(`e:` `E`)` Returns the least element in this set strictly greater than the given element, or`null`if there is no such element. |
+| abstract [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\<E\> | [iterator](NavigableSet.md))`()` Returns an iterator over the elements in this set, in ascending order. |
+| abstractE | [lower](NavigableSet.md))`(`e:` `E`)` Returns the greatest element in this set strictly less than the given element, or`null`if there is no such element. |
 | --- | --- |
-| abstractE | [pollFirst](../java/util/NavigableSet.md))`()` Retrieves and removes the first (lowest) element, or returns`null`if this set is empty. |
-| abstractE | [pollLast](../java/util/NavigableSet.md))`()` Retrieves and removes the last (highest) element, or returns`null`if this set is empty. |
-| openE | [removeFirst](../java/util/NavigableSet.md))`()` Removes and returns the first element of this collection (optional operation). |
+| abstractE | [pollFirst](NavigableSet.md))`()` Retrieves and removes the first (lowest) element, or returns`null`if this set is empty. |
+| abstractE | [pollLast](NavigableSet.md))`()` Retrieves and removes the last (highest) element, or returns`null`if this set is empty. |
+| openE | [removeFirst](NavigableSet.md))`()` Removes and returns the first element of this collection (optional operation). |
 | --- | --- |
-| openE | [removeLast](../java/util/NavigableSet.md))`()` Removes and returns the last element of this collection (optional operation). |
-| open [NavigableSet](../java/util/NavigableSet.md)\<E\>! | [reversed](../java/util/NavigableSet.md))`()` Returns a reverse-ordered [view](../java/util/Collection.md) of this collection. |
-| abstract [NavigableSet](../java/util/NavigableSet.md)\<E\>! | [subSet](../java/util/NavigableSet.md))`(`fromElement:` `E`, `fromInclusive:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `toElement:` `E`, `toInclusive:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Returns a view of the portion of this set whose elements range from`fromElement`to`toElement`. |
+| openE | [removeLast](NavigableSet.md))`()` Removes and returns the last element of this collection (optional operation). |
+| open [NavigableSet](NavigableSet.md)\<E\>! | [reversed](NavigableSet.md))`()` Returns a reverse-ordered [view](Collection.md) of this collection. |
+| abstract [NavigableSet](NavigableSet.md)\<E\>! | [subSet](NavigableSet.md))`(`fromElement:` `E`, `fromInclusive:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `toElement:` `E`, `toInclusive:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Returns a view of the portion of this set whose elements range from`fromElement`to`toElement`. |
 | --- | --- |
-| abstract [SortedSet](../java/util/SortedSet.md)\<E\>! | [subSet](../java/util/NavigableSet.md))`(`fromElement:` `E`, `toElement:` `E`)` Returns a view of the portion of this set whose elements range from`fromElement`, inclusive, to`toElement`, exclusive. |
-| abstract [SortedSet](../java/util/SortedSet.md)\<E\>! | [tailSet](../java/util/NavigableSet.md))`(`fromElement:` `E`)` Returns a view of the portion of this set whose elements are greater than or equal to`fromElement`. |
-| abstract [NavigableSet](../java/util/NavigableSet.md)\<E\>! | [tailSet](../java/util/NavigableSet.md))`(`fromElement:` `E`, `inclusive:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Returns a view of the portion of this set whose elements are greater than (or equal to, if`inclusive`is true)`fromElement`. |
+| abstract [SortedSet](SortedSet.md)\<E\>! | [subSet](NavigableSet.md))`(`fromElement:` `E`, `toElement:` `E`)` Returns a view of the portion of this set whose elements range from`fromElement`, inclusive, to`toElement`, exclusive. |
+| abstract [SortedSet](SortedSet.md)\<E\>! | [tailSet](NavigableSet.md))`(`fromElement:` `E`)` Returns a view of the portion of this set whose elements are greater than or equal to`fromElement`. |
+| abstract [NavigableSet](NavigableSet.md)\<E\>! | [tailSet](NavigableSet.md))`(`fromElement:` `E`, `inclusive:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Returns a view of the portion of this set whose elements are greater than (or equal to, if`inclusive`is true)`fromElement`. |
 | --- | --- |
 
 | Inherited functions ||
 |---|---|
-| From class [SortedSet](../java/util/SortedSet.md) |--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addFirst](../java/util/SortedSet.md))`(`e:` `E`)` <br /> Throws`UnsupportedOperationException`. The encounter order induced by this set's comparison method determines the position of elements, so explicit positioning is not supported. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addLast](../java/util/SortedSet.md))`(`e:` `E`)` <br /> Throws`UnsupportedOperationException`. The encounter order induced by this set's comparison method determines the position of elements, so explicit positioning is not supported. <br /> | | [Comparator](../java/util/Comparator.md)<in` `E>! | [comparator](../java/util/SortedSet.md))`()` <br /> Returns the comparator used to order the elements in this set, or`null`if this set uses the [natural ordering](../java/lang/Comparable.md) of its elements. <br /> | | E | [first](../java/util/SortedSet.md))`()` <br /> Returns the first (lowest) element currently in this set. <br /> | | E | [getFirst](../java/util/SortedSet.md))`()` <br /> Gets the first element of this collection. <br /> | | E | [getLast](../java/util/SortedSet.md))`()` <br /> Gets the last element of this collection. <br /> | | E | [last](../java/util/SortedSet.md))`()` <br /> Returns the last (highest) element currently in this set. <br /> | | [Spliterator](../java/util/Spliterator.md)<E> | [spliterator](../java/util/SortedSet.md))`()` <br /> Creates a`Spliterator`over the elements in this sorted set. The`Spliterator`reports [Spliterator.DISTINCT](../java/util/Spliterator.md), [Spliterator.SORTED](../java/util/Spliterator.md) and [Spliterator.ORDERED](../java/util/Spliterator.md). Implementations should document the reporting of additional characteristic values. The spliterator's comparator (see [java.util.Spliterator#getComparator()](../java/util/Spliterator.md))) must be`null`if the sorted set's comparator (see [comparator()](../java/util/SortedSet.md))) is`null`. Otherwise, the spliterator's comparator must be the same as or impose the same total ordering as the sorted set's comparator. <br /> | ||
+| From class [SortedSet](SortedSet.md) |--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addFirst](SortedSet.md))`(`e:` `E`)` <br /> Throws`UnsupportedOperationException`. The encounter order induced by this set's comparison method determines the position of elements, so explicit positioning is not supported. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addLast](SortedSet.md))`(`e:` `E`)` <br /> Throws`UnsupportedOperationException`. The encounter order induced by this set's comparison method determines the position of elements, so explicit positioning is not supported. <br /> | | [Comparator](Comparator.md)<in` `E>! | [comparator](SortedSet.md))`()` <br /> Returns the comparator used to order the elements in this set, or`null`if this set uses the [natural ordering](../java.lang/Comparable.md) of its elements. <br /> | | E | [first](SortedSet.md))`()` <br /> Returns the first (lowest) element currently in this set. <br /> | | E | [getFirst](SortedSet.md))`()` <br /> Gets the first element of this collection. <br /> | | E | [getLast](SortedSet.md))`()` <br /> Gets the last element of this collection. <br /> | | E | [last](SortedSet.md))`()` <br /> Returns the last (highest) element currently in this set. <br /> | | [Spliterator](Spliterator.md)<E> | [spliterator](SortedSet.md))`()` <br /> Creates a`Spliterator`over the elements in this sorted set. The`Spliterator`reports [Spliterator.DISTINCT](Spliterator.md), [Spliterator.SORTED](Spliterator.md) and [Spliterator.ORDERED](Spliterator.md). Implementations should document the reporting of additional characteristic values. The spliterator's comparator (see [java.util.Spliterator#getComparator()](Spliterator.md))) must be`null`if the sorted set's comparator (see [comparator()](SortedSet.md))) is`null`. Otherwise, the spliterator's comparator must be the same as or impose the same total ordering as the sorted set's comparator. <br /> | ||
 
 ## Public methods
 
@@ -103,11 +103,11 @@ abstract fun descendingSet(): NavigableSet<E>!
 
 Returns a reverse order view of the elements contained in this set. The descending set is backed by this set, so changes to the set are reflected in the descending set, and vice-versa. If either set is modified while an iteration over either set is in progress (except through the iterator's own`remove`operation), the results of the iteration are undefined.
 
-The returned set has an ordering equivalent to [Collections.reverseOrder](../java/util/Collections.md))`(comparator())`. The expression`s.descendingSet().descendingSet()`returns a view of`s`essentially equivalent to`s`.
+The returned set has an ordering equivalent to [Collections.reverseOrder](Collections.md))`(comparator())`. The expression`s.descendingSet().descendingSet()`returns a view of`s`essentially equivalent to`s`.
 
 | Return ||
 |--------------------------------------------------------------------------------------------|----------------------------------|
-| [NavigableSet](../java/util/NavigableSet.md)<E>! | a reverse order view of this set |
+| [NavigableSet](NavigableSet.md)<E>! | a reverse order view of this set |
 
 ### floor
 
@@ -152,11 +152,11 @@ Equivalent to`headSet(toElement, false)`.
 
 | Return ||
 |-------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| [SortedSet](../java/util/SortedSet.md)<E>! | a view of the portion of this set whose elements are strictly less than`toElement` |
+| [SortedSet](SortedSet.md)<E>! | a view of the portion of this set whose elements are strictly less than`toElement` |
 
 | Exceptions ||
 |--------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.ClassCastException` | if`toElement`is not compatible with this set's comparator (or, if the set has no comparator, if`toElement`does not implement [Comparable](../java/lang/Comparable.md)). Implementations may, but are not required to, throw this exception if`toElement`cannot be compared to elements currently in the set. |
+| `java.lang.ClassCastException` | if`toElement`is not compatible with this set's comparator (or, if the set has no comparator, if`toElement`does not implement [Comparable](../java.lang/Comparable.md)). Implementations may, but are not required to, throw this exception if`toElement`cannot be compared to elements currently in the set. |
 | `java.lang.NullPointerException` | if`toElement`is null and this set does not permit null elements |
 | `java.lang.IllegalArgumentException` | if this set itself has a restricted range, and`toElement`lies outside the bounds of the range |
 | --- | --- |
@@ -183,11 +183,11 @@ The returned set will throw an`IllegalArgumentException`on an attempt to insert 
 
 | Return ||
 |--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| [NavigableSet](../java/util/NavigableSet.md)<E>! | a view of the portion of this set whose elements are less than (or equal to, if`inclusive`is true)`toElement` |
+| [NavigableSet](NavigableSet.md)<E>! | a view of the portion of this set whose elements are less than (or equal to, if`inclusive`is true)`toElement` |
 
 | Exceptions ||
 |--------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.ClassCastException` | if`toElement`is not compatible with this set's comparator (or, if the set has no comparator, if`toElement`does not implement [Comparable](../java/lang/Comparable.md)). Implementations may, but are not required to, throw this exception if`toElement`cannot be compared to elements currently in the set. |
+| `java.lang.ClassCastException` | if`toElement`is not compatible with this set's comparator (or, if the set has no comparator, if`toElement`does not implement [Comparable](../java.lang/Comparable.md)). Implementations may, but are not required to, throw this exception if`toElement`cannot be compared to elements currently in the set. |
 | `java.lang.NullPointerException` | if`toElement`is null and this set does not permit null elements |
 | `java.lang.IllegalArgumentException` | if this set itself has a restricted range, and`toElement`lies outside the bounds of the range |
 | --- | --- |
@@ -326,13 +326,13 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 open fun reversed(): NavigableSet<E>!
 ```
 
-Returns a reverse-ordered [view](../java/util/Collection.md) of this collection. The encounter order of elements in the returned view is the inverse of the encounter order of elements in this collection. The reverse ordering affects all order-sensitive operations, including those on the view collections of the returned view. If the collection implementation permits modifications to this view, the modifications "write through" to the underlying collection. Changes to the underlying collection might or might not be visible in this reversed view, depending upon the implementation.
+Returns a reverse-ordered [view](Collection.md) of this collection. The encounter order of elements in the returned view is the inverse of the encounter order of elements in this collection. The reverse ordering affects all order-sensitive operations, including those on the view collections of the returned view. If the collection implementation permits modifications to this view, the modifications "write through" to the underlying collection. Changes to the underlying collection might or might not be visible in this reversed view, depending upon the implementation.
 
-This method is equivalent to [descendingSet](../java/util/NavigableSet.md)).
+This method is equivalent to [descendingSet](NavigableSet.md)).
 
 | Return ||
 |--------------------------------------------------------------------------------------------|---------------------------------------------------------------|
-| [NavigableSet](../java/util/NavigableSet.md)<E>! | a reverse-ordered view of this collection, as a`NavigableSet` |
+| [NavigableSet](NavigableSet.md)<E>! | a reverse-ordered view of this collection, as a`NavigableSet` |
 
 ### subSet
 
@@ -361,7 +361,7 @@ The returned set will throw an`IllegalArgumentException`on an attempt to insert 
 
 | Return ||
 |--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| [NavigableSet](../java/util/NavigableSet.md)<E>! | a view of the portion of this set whose elements range from`fromElement`, inclusive, to`toElement`, exclusive |
+| [NavigableSet](NavigableSet.md)<E>! | a view of the portion of this set whose elements range from`fromElement`, inclusive, to`toElement`, exclusive |
 
 | Exceptions ||
 |--------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -394,7 +394,7 @@ Equivalent to`subSet(fromElement, true, toElement, false)`.
 
 | Return ||
 |-------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| [SortedSet](../java/util/SortedSet.md)<E>! | a view of the portion of this set whose elements range from`fromElement`, inclusive, to`toElement`, exclusive |
+| [SortedSet](SortedSet.md)<E>! | a view of the portion of this set whose elements range from`fromElement`, inclusive, to`toElement`, exclusive |
 
 | Exceptions ||
 |--------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -423,11 +423,11 @@ Equivalent to`tailSet(fromElement, true)`.
 
 | Return ||
 |-------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
-| [SortedSet](../java/util/SortedSet.md)<E>! | a view of the portion of this set whose elements are greater than or equal to`fromElement` |
+| [SortedSet](SortedSet.md)<E>! | a view of the portion of this set whose elements are greater than or equal to`fromElement` |
 
 | Exceptions ||
 |--------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.ClassCastException` | if`fromElement`is not compatible with this set's comparator (or, if the set has no comparator, if`fromElement`does not implement [Comparable](../java/lang/Comparable.md)). Implementations may, but are not required to, throw this exception if`fromElement`cannot be compared to elements currently in the set. |
+| `java.lang.ClassCastException` | if`fromElement`is not compatible with this set's comparator (or, if the set has no comparator, if`fromElement`does not implement [Comparable](../java.lang/Comparable.md)). Implementations may, but are not required to, throw this exception if`fromElement`cannot be compared to elements currently in the set. |
 | `java.lang.NullPointerException` | if`fromElement`is null and this set does not permit null elements |
 | `java.lang.IllegalArgumentException` | if this set itself has a restricted range, and`fromElement`lies outside the bounds of the range |
 | --- | --- |
@@ -454,11 +454,11 @@ The returned set will throw an`IllegalArgumentException`on an attempt to insert 
 
 | Return ||
 |--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
-| [NavigableSet](../java/util/NavigableSet.md)<E>! | a view of the portion of this set whose elements are greater than or equal to`fromElement` |
+| [NavigableSet](NavigableSet.md)<E>! | a view of the portion of this set whose elements are greater than or equal to`fromElement` |
 
 | Exceptions ||
 |--------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.ClassCastException` | if`fromElement`is not compatible with this set's comparator (or, if the set has no comparator, if`fromElement`does not implement [Comparable](../java/lang/Comparable.md)). Implementations may, but are not required to, throw this exception if`fromElement`cannot be compared to elements currently in the set. |
+| `java.lang.ClassCastException` | if`fromElement`is not compatible with this set's comparator (or, if the set has no comparator, if`fromElement`does not implement [Comparable](../java.lang/Comparable.md)). Implementations may, but are not required to, throw this exception if`fromElement`cannot be compared to elements currently in the set. |
 | `java.lang.NullPointerException` | if`fromElement`is null and this set does not permit null elements |
 | `java.lang.IllegalArgumentException` | if this set itself has a restricted range, and`fromElement`lies outside the bounds of the range |
 | --- | --- |

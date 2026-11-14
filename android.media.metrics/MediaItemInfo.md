@@ -4,7 +4,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 
 # MediaItemInfo
 
-Kotlin | [Java](../android/media/metrics/MediaItemInfo.md) 
+Kotlin | [Java](MediaItemInfo.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class MediaItemInfo : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.metrics.MediaItemInfo](../android/media/metrics/MediaItemInfo.md) |
+| ↳ | [android.media.metrics.MediaItemInfo](MediaItemInfo.md) |
 
 Represents information about a piece of media (for example, an audio or video file).
 
@@ -21,72 +21,72 @@ Represents information about a piece of media (for example, an audio or video fi
 
 | Nested classes ||
 |---|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](../android/media/metrics/MediaItemInfo.Builder.md) Builder for [MediaItemInfo](../android/media/metrics/MediaItemInfo.md). |
+| | [Builder](../android/media/metrics/MediaItemInfo.Builder.md) Builder for [MediaItemInfo](MediaItemInfo.md). |
 
 | Constants ||
 |-------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [DATA_TYPE_AUDIO](../android/media/metrics/MediaItemInfo.md) The media item includes audio data. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [DATA_TYPE_DEPTH](../android/media/metrics/MediaItemInfo.md) The media item includes depth (z-distance) information. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [DATA_TYPE_GAIN_MAP](../android/media/metrics/MediaItemInfo.md) The media item includes gain map information (for example, an Ultra HDR gain map). |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [DATA_TYPE_AUDIO](MediaItemInfo.md) The media item includes audio data. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [DATA_TYPE_DEPTH](MediaItemInfo.md) The media item includes depth (z-distance) information. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [DATA_TYPE_GAIN_MAP](MediaItemInfo.md) The media item includes gain map information (for example, an Ultra HDR gain map). |
 | --- | --- |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [DATA_TYPE_GAPLESS](../android/media/metrics/MediaItemInfo.md) The media item includes gapless audio metadata. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [DATA_TYPE_HIGH_DYNAMIC_RANGE_VIDEO](../android/media/metrics/MediaItemInfo.md) The media item includes high dynamic range (HDR) video. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [DATA_TYPE_HIGH_FRAME_RATE](../android/media/metrics/MediaItemInfo.md) The media item includes high frame rate video data. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [DATA_TYPE_GAPLESS](MediaItemInfo.md) The media item includes gapless audio metadata. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [DATA_TYPE_HIGH_DYNAMIC_RANGE_VIDEO](MediaItemInfo.md) The media item includes high dynamic range (HDR) video. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [DATA_TYPE_HIGH_FRAME_RATE](MediaItemInfo.md) The media item includes high frame rate video data. |
 | --- | --- |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [DATA_TYPE_IMAGE](../android/media/metrics/MediaItemInfo.md) The media item includes image data. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [DATA_TYPE_METADATA](../android/media/metrics/MediaItemInfo.md) The media item includes static media container metadata (for example, capture frame rate or location information). |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [DATA_TYPE_SPATIAL_AUDIO](../android/media/metrics/MediaItemInfo.md) The media item includes spatial audio data. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [DATA_TYPE_IMAGE](MediaItemInfo.md) The media item includes image data. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [DATA_TYPE_METADATA](MediaItemInfo.md) The media item includes static media container metadata (for example, capture frame rate or location information). |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [DATA_TYPE_SPATIAL_AUDIO](MediaItemInfo.md) The media item includes spatial audio data. |
 | --- | --- |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [DATA_TYPE_SPEED_SETTING_CUE_POINTS](../android/media/metrics/MediaItemInfo.md) The media item includes time-dependent speed information (for example, slow motion cue points). |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [DATA_TYPE_VIDEO](../android/media/metrics/MediaItemInfo.md) The media item includes video data. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_TYPE_CAMERA](../android/media/metrics/MediaItemInfo.md) The media item came directly from camera capture. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [DATA_TYPE_SPEED_SETTING_CUE_POINTS](MediaItemInfo.md) The media item includes time-dependent speed information (for example, slow motion cue points). |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [DATA_TYPE_VIDEO](MediaItemInfo.md) The media item includes video data. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_TYPE_CAMERA](MediaItemInfo.md) The media item came directly from camera capture. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_TYPE_EDITING_SESSION](../android/media/metrics/MediaItemInfo.md) The media item was output by a previous editing session. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_TYPE_GALLERY](../android/media/metrics/MediaItemInfo.md) The media item came from the device gallery. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_TYPE_GENERATED](../android/media/metrics/MediaItemInfo.md) The media item was generated by another system. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_TYPE_EDITING_SESSION](MediaItemInfo.md) The media item was output by a previous editing session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_TYPE_GALLERY](MediaItemInfo.md) The media item came from the device gallery. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_TYPE_GENERATED](MediaItemInfo.md) The media item was generated by another system. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_TYPE_LOCAL_FILE](../android/media/metrics/MediaItemInfo.md) The media item is stored on the local device's file system. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_TYPE_REMOTE_FILE](../android/media/metrics/MediaItemInfo.md) The media item is a remote file (for example, it's loaded from an HTTP server). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_TYPE_REMOTE_LIVE_STREAM](../android/media/metrics/MediaItemInfo.md) The media item is a remotely-served live stream. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_TYPE_LOCAL_FILE](MediaItemInfo.md) The media item is stored on the local device's file system. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_TYPE_REMOTE_FILE](MediaItemInfo.md) The media item is a remote file (for example, it's loaded from an HTTP server). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_TYPE_REMOTE_LIVE_STREAM](MediaItemInfo.md) The media item is a remotely-served live stream. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_TYPE_UNSPECIFIED](../android/media/metrics/MediaItemInfo.md) The media item's source is not known. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VALUE_UNSPECIFIED](../android/media/metrics/MediaItemInfo.md) Special value for numerical fields where the value was not specified. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOURCE_TYPE_UNSPECIFIED](MediaItemInfo.md) The media item's source is not known. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VALUE_UNSPECIFIED](MediaItemInfo.md) Special value for numerical fields where the value was not specified. |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android.os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) Descriptor bit used with [describeContents()](../android.os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md) Flag for use with [writeToParcel](../android.os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/media/metrics/MediaItemInfo.md))`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/media/metrics/MediaItemInfo.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAudioChannelCount](../android/media/metrics/MediaItemInfo.md))`()` Returns the number of audio channels, or [VALUE_UNSPECIFIED](../android/media/metrics/MediaItemInfo.md) if not specified. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](MediaItemInfo.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](MediaItemInfo.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAudioChannelCount](MediaItemInfo.md))`()` Returns the number of audio channels, or [VALUE_UNSPECIFIED](MediaItemInfo.md) if not specified. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAudioSampleCount](../android/media/metrics/MediaItemInfo.md))`()` Returns the number of audio frames in the item, after clipping (if applicable), or [VALUE_UNSPECIFIED](../android/media/metrics/MediaItemInfo.md) if not specified. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAudioSampleRateHz](../android/media/metrics/MediaItemInfo.md))`()` Returns the sample rate of audio, in Hertz, or [VALUE_UNSPECIFIED](../android/media/metrics/MediaItemInfo.md) if not specified. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getClipDurationMillis](../android/media/metrics/MediaItemInfo.md))`()` Returns the duration of the clip taken from the media item, in milliseconds, or [VALUE_UNSPECIFIED](../android/media/metrics/MediaItemInfo.md) if not specified. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAudioSampleCount](MediaItemInfo.md))`()` Returns the number of audio frames in the item, after clipping (if applicable), or [VALUE_UNSPECIFIED](MediaItemInfo.md) if not specified. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAudioSampleRateHz](MediaItemInfo.md))`()` Returns the sample rate of audio, in Hertz, or [VALUE_UNSPECIFIED](MediaItemInfo.md) if not specified. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getClipDurationMillis](MediaItemInfo.md))`()` Returns the duration of the clip taken from the media item, in milliseconds, or [VALUE_UNSPECIFIED](MediaItemInfo.md) if not specified. |
 | --- | --- |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getCodecNames](../android/media/metrics/MediaItemInfo.md))`()` Returns the [media codec names](../android/media/MediaCodec.md)) for codecs that were used as part of encoding/decoding this media item, or an empty list if not known or not applicable. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getContainerMimeType](../android/media/metrics/MediaItemInfo.md))`()` Returns the MIME type of the media container, or `null` if unspecified. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getDataTypes](../android/media/metrics/MediaItemInfo.md))`()` Returns the data types that are present in the media item. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getCodecNames](MediaItemInfo.md))`()` Returns the [media codec names](../android.media/MediaCodec.md)) for codecs that were used as part of encoding/decoding this media item, or an empty list if not known or not applicable. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getContainerMimeType](MediaItemInfo.md))`()` Returns the MIME type of the media container, or `null` if unspecified. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getDataTypes](MediaItemInfo.md))`()` Returns the data types that are present in the media item. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getDurationMillis](../android/media/metrics/MediaItemInfo.md))`()` Returns the duration of the media item, in milliseconds, or [VALUE_UNSPECIFIED](../android/media/metrics/MediaItemInfo.md) if not specified. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getSampleMimeTypes](../android/media/metrics/MediaItemInfo.md))`()` Returns the MIME types of samples stored in the media container, or an empty list if not known. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSourceType](../android/media/metrics/MediaItemInfo.md))`()` Returns where the media item came from, or [SOURCE_TYPE_UNSPECIFIED](../android/media/metrics/MediaItemInfo.md) if not specified. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getDurationMillis](MediaItemInfo.md))`()` Returns the duration of the media item, in milliseconds, or [VALUE_UNSPECIFIED](MediaItemInfo.md) if not specified. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getSampleMimeTypes](MediaItemInfo.md))`()` Returns the MIME types of samples stored in the media container, or an empty list if not known. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSourceType](MediaItemInfo.md))`()` Returns where the media item came from, or [SOURCE_TYPE_UNSPECIFIED](MediaItemInfo.md) if not specified. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getVideoDataSpace](../android/media/metrics/MediaItemInfo.md))`()` Returns the [data space](../android/hardware/DataSpace.md) for video, as a packed integer. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getVideoFrameRate](../android/media/metrics/MediaItemInfo.md))`()` Returns the average video frame rate, in frames per second, or [VALUE_UNSPECIFIED](../android/media/metrics/MediaItemInfo.md) if not specified. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getVideoSampleCount](../android/media/metrics/MediaItemInfo.md))`()` Returns the number of video frames, aftrer clipping (if applicable), or [VALUE_UNSPECIFIED](../android/media/metrics/MediaItemInfo.md) if not specified. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getVideoDataSpace](MediaItemInfo.md))`()` Returns the [data space](../android.hardware/DataSpace.md) for video, as a packed integer. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getVideoFrameRate](MediaItemInfo.md))`()` Returns the average video frame rate, in frames per second, or [VALUE_UNSPECIFIED](MediaItemInfo.md) if not specified. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getVideoSampleCount](MediaItemInfo.md))`()` Returns the number of video frames, aftrer clipping (if applicable), or [VALUE_UNSPECIFIED](MediaItemInfo.md) if not specified. |
 | --- | --- |
-| [Size](../android/util/Size.md) | [getVideoSize](../android/media/metrics/MediaItemInfo.md))`()` Returns the video size, in pixels, or a [Size](../android/util/Size.md) with width and height set to [VALUE_UNSPECIFIED](../android/media/metrics/MediaItemInfo.md) if not specified. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/media/metrics/MediaItemInfo.md))`()` <br /> |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/media/metrics/MediaItemInfo.md))`()` Returns a string representation of the object. |
+| [Size](../android.util/Size.md) | [getVideoSize](MediaItemInfo.md))`()` Returns the video size, in pixels, or a [Size](../android.util/Size.md) with width and height set to [VALUE_UNSPECIFIED](MediaItemInfo.md) if not specified. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](MediaItemInfo.md))`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](MediaItemInfo.md))`()` Returns a string representation of the object. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/media/metrics/MediaItemInfo.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](MediaItemInfo.md))`(`dest:` ` [Parcel](../android.os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [MediaItemInfo](../android/media/metrics/MediaItemInfo.md)!\> | [CREATOR](../android/media/metrics/MediaItemInfo.md) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [MediaItemInfo](MediaItemInfo.md)!\> | [CREATOR](MediaItemInfo.md) <br /> |
 
 ## Constants
 
@@ -342,7 +342,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either `0` or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either `0` or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) |
 
 ### equals
 
@@ -381,7 +381,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun getAudioChannelCount(): Int
 ```
 
-Returns the number of audio channels, or [VALUE_UNSPECIFIED](../android/media/metrics/MediaItemInfo.md) if not specified. 
+Returns the number of audio channels, or [VALUE_UNSPECIFIED](MediaItemInfo.md) if not specified. 
 
 ### getAudioSampleCount
 
@@ -391,7 +391,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun getAudioSampleCount(): Long
 ```
 
-Returns the number of audio frames in the item, after clipping (if applicable), or [VALUE_UNSPECIFIED](../android/media/metrics/MediaItemInfo.md) if not specified. 
+Returns the number of audio frames in the item, after clipping (if applicable), or [VALUE_UNSPECIFIED](MediaItemInfo.md) if not specified. 
 
 ### getAudioSampleRateHz
 
@@ -401,7 +401,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun getAudioSampleRateHz(): Int
 ```
 
-Returns the sample rate of audio, in Hertz, or [VALUE_UNSPECIFIED](../android/media/metrics/MediaItemInfo.md) if not specified. 
+Returns the sample rate of audio, in Hertz, or [VALUE_UNSPECIFIED](MediaItemInfo.md) if not specified. 
 
 ### getClipDurationMillis
 
@@ -411,7 +411,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun getClipDurationMillis(): Long
 ```
 
-Returns the duration of the clip taken from the media item, in milliseconds, or [VALUE_UNSPECIFIED](../android/media/metrics/MediaItemInfo.md) if not specified. 
+Returns the duration of the clip taken from the media item, in milliseconds, or [VALUE_UNSPECIFIED](MediaItemInfo.md) if not specified. 
 
 ### getCodecNames
 
@@ -421,7 +421,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun getCodecNames(): MutableList<String!>
 ```
 
-Returns the [media codec names](../android/media/MediaCodec.md)) for codecs that were used as part of encoding/decoding this media item, or an empty list if not known or not applicable.
+Returns the [media codec names](../android.media/MediaCodec.md)) for codecs that were used as part of encoding/decoding this media item, or an empty list if not known or not applicable.
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------|
@@ -449,7 +449,7 @@ Returns the data types that are present in the media item.
 
 | Return ||
 |------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | Value is either `0` or a combination of [android.media.metrics.MediaItemInfo#DATA_TYPE_IMAGE](../android/media/metrics/MediaItemInfo.md), [android.media.metrics.MediaItemInfo#DATA_TYPE_VIDEO](../android/media/metrics/MediaItemInfo.md), [android.media.metrics.MediaItemInfo#DATA_TYPE_AUDIO](../android/media/metrics/MediaItemInfo.md), [android.media.metrics.MediaItemInfo#DATA_TYPE_METADATA](../android/media/metrics/MediaItemInfo.md), [android.media.metrics.MediaItemInfo#DATA_TYPE_DEPTH](../android/media/metrics/MediaItemInfo.md), [android.media.metrics.MediaItemInfo#DATA_TYPE_GAIN_MAP](../android/media/metrics/MediaItemInfo.md), [android.media.metrics.MediaItemInfo#DATA_TYPE_HIGH_FRAME_RATE](../android/media/metrics/MediaItemInfo.md), [android.media.metrics.MediaItemInfo#DATA_TYPE_SPEED_SETTING_CUE_POINTS](../android/media/metrics/MediaItemInfo.md), [android.media.metrics.MediaItemInfo#DATA_TYPE_GAPLESS](../android/media/metrics/MediaItemInfo.md), [android.media.metrics.MediaItemInfo#DATA_TYPE_SPATIAL_AUDIO](../android/media/metrics/MediaItemInfo.md), and [android.media.metrics.MediaItemInfo#DATA_TYPE_HIGH_DYNAMIC_RANGE_VIDEO](../android/media/metrics/MediaItemInfo.md) |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | Value is either `0` or a combination of [android.media.metrics.MediaItemInfo#DATA_TYPE_IMAGE](MediaItemInfo.md), [android.media.metrics.MediaItemInfo#DATA_TYPE_VIDEO](MediaItemInfo.md), [android.media.metrics.MediaItemInfo#DATA_TYPE_AUDIO](MediaItemInfo.md), [android.media.metrics.MediaItemInfo#DATA_TYPE_METADATA](MediaItemInfo.md), [android.media.metrics.MediaItemInfo#DATA_TYPE_DEPTH](MediaItemInfo.md), [android.media.metrics.MediaItemInfo#DATA_TYPE_GAIN_MAP](MediaItemInfo.md), [android.media.metrics.MediaItemInfo#DATA_TYPE_HIGH_FRAME_RATE](MediaItemInfo.md), [android.media.metrics.MediaItemInfo#DATA_TYPE_SPEED_SETTING_CUE_POINTS](MediaItemInfo.md), [android.media.metrics.MediaItemInfo#DATA_TYPE_GAPLESS](MediaItemInfo.md), [android.media.metrics.MediaItemInfo#DATA_TYPE_SPATIAL_AUDIO](MediaItemInfo.md), and [android.media.metrics.MediaItemInfo#DATA_TYPE_HIGH_DYNAMIC_RANGE_VIDEO](MediaItemInfo.md) |
 
 ### getDurationMillis
 
@@ -459,7 +459,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun getDurationMillis(): Long
 ```
 
-Returns the duration of the media item, in milliseconds, or [VALUE_UNSPECIFIED](../android/media/metrics/MediaItemInfo.md) if not specified. 
+Returns the duration of the media item, in milliseconds, or [VALUE_UNSPECIFIED](MediaItemInfo.md) if not specified. 
 
 ### getSampleMimeTypes
 
@@ -483,11 +483,11 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun getSourceType(): Int
 ```
 
-Returns where the media item came from, or [SOURCE_TYPE_UNSPECIFIED](../android/media/metrics/MediaItemInfo.md) if not specified.
+Returns where the media item came from, or [SOURCE_TYPE_UNSPECIFIED](MediaItemInfo.md) if not specified.
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.media.metrics.MediaItemInfo#SOURCE_TYPE_UNSPECIFIED](../android/media/metrics/MediaItemInfo.md), [android.media.metrics.MediaItemInfo#SOURCE_TYPE_GALLERY](../android/media/metrics/MediaItemInfo.md), [android.media.metrics.MediaItemInfo#SOURCE_TYPE_CAMERA](../android/media/metrics/MediaItemInfo.md), [android.media.metrics.MediaItemInfo#SOURCE_TYPE_EDITING_SESSION](../android/media/metrics/MediaItemInfo.md), [android.media.metrics.MediaItemInfo#SOURCE_TYPE_LOCAL_FILE](../android/media/metrics/MediaItemInfo.md), [android.media.metrics.MediaItemInfo#SOURCE_TYPE_REMOTE_FILE](../android/media/metrics/MediaItemInfo.md), [android.media.metrics.MediaItemInfo#SOURCE_TYPE_REMOTE_LIVE_STREAM](../android/media/metrics/MediaItemInfo.md), or [android.media.metrics.MediaItemInfo#SOURCE_TYPE_GENERATED](../android/media/metrics/MediaItemInfo.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.media.metrics.MediaItemInfo#SOURCE_TYPE_UNSPECIFIED](MediaItemInfo.md), [android.media.metrics.MediaItemInfo#SOURCE_TYPE_GALLERY](MediaItemInfo.md), [android.media.metrics.MediaItemInfo#SOURCE_TYPE_CAMERA](MediaItemInfo.md), [android.media.metrics.MediaItemInfo#SOURCE_TYPE_EDITING_SESSION](MediaItemInfo.md), [android.media.metrics.MediaItemInfo#SOURCE_TYPE_LOCAL_FILE](MediaItemInfo.md), [android.media.metrics.MediaItemInfo#SOURCE_TYPE_REMOTE_FILE](MediaItemInfo.md), [android.media.metrics.MediaItemInfo#SOURCE_TYPE_REMOTE_LIVE_STREAM](MediaItemInfo.md), or [android.media.metrics.MediaItemInfo#SOURCE_TYPE_GENERATED](MediaItemInfo.md) |
 
 ### getVideoDataSpace
 
@@ -497,7 +497,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun getVideoDataSpace(): Int
 ```
 
-Returns the [data space](../android/hardware/DataSpace.md) for video, as a packed integer. 
+Returns the [data space](../android.hardware/DataSpace.md) for video, as a packed integer. 
 
 ### getVideoFrameRate
 
@@ -507,7 +507,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun getVideoFrameRate(): Float
 ```
 
-Returns the average video frame rate, in frames per second, or [VALUE_UNSPECIFIED](../android/media/metrics/MediaItemInfo.md) if not specified. 
+Returns the average video frame rate, in frames per second, or [VALUE_UNSPECIFIED](MediaItemInfo.md) if not specified. 
 
 ### getVideoSampleCount
 
@@ -517,7 +517,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun getVideoSampleCount(): Long
 ```
 
-Returns the number of video frames, aftrer clipping (if applicable), or [VALUE_UNSPECIFIED](../android/media/metrics/MediaItemInfo.md) if not specified. 
+Returns the number of video frames, aftrer clipping (if applicable), or [VALUE_UNSPECIFIED](MediaItemInfo.md) if not specified. 
 
 ### getVideoSize
 
@@ -527,11 +527,11 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun getVideoSize(): Size
 ```
 
-Returns the video size, in pixels, or a [Size](../android/util/Size.md) with width and height set to [VALUE_UNSPECIFIED](../android/media/metrics/MediaItemInfo.md) if not specified.
+Returns the video size, in pixels, or a [Size](../android.util/Size.md) with width and height set to [VALUE_UNSPECIFIED](MediaItemInfo.md) if not specified.
 
 | Return ||
 |--------------------------------------------------------------------------------|------------------------------|
-| [Size](../android/util/Size.md) | This value cannot be `null`. |
+| [Size](../android.util/Size.md) | This value cannot be `null`. |
 
 ### hashCode
 
@@ -574,8 +574,8 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either `0` or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android.os/Parcel.md): This value cannot be `null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md). Value is either `0` or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

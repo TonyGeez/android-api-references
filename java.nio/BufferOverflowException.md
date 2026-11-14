@@ -11,10 +11,10 @@ open class BufferOverflowException : RuntimeException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
-| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) ||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) |||
+| | | ↳ | [java.lang.RuntimeException](../java.lang/RuntimeException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.nio.BufferOverflowException](../java/nio/BufferOverflowException.md) |
+| | | | ↳ | [java.nio.BufferOverflowException](BufferOverflowException.md) |
 
 Unchecked exception thrown when a relative*put*operation reaches the target buffer's limit.
 
@@ -22,7 +22,7 @@ Unchecked exception thrown when a relative*put*operation reaches the target buff
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [BufferOverflowException](../java/nio/BufferOverflowException.md))`()` Constructs an instance of this class. |
+| [BufferOverflowException](BufferOverflowException.md))`()` Constructs an instance of this class. |
 
 ## Public constructors
 

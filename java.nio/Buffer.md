@@ -10,12 +10,12 @@ abstract class Buffer
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.nio.Buffer](../java/nio/Buffer.md) |
+| ↳ | [java.nio.Buffer](Buffer.md) |
 
-| Known Direct Subclasses [ByteBuffer](../java/nio/ByteBuffer.md), [CharBuffer](../java/nio/CharBuffer.md), [DoubleBuffer](../java/nio/DoubleBuffer.md), [FloatBuffer](../java/nio/FloatBuffer.md), [IntBuffer](../java/nio/IntBuffer.md), [LongBuffer](../java/nio/LongBuffer.md), [ShortBuffer](../java/nio/ShortBuffer.md) |--------------------------------------------------------------------------------------|------------------| | [ByteBuffer](../java/nio/ByteBuffer.md) | A byte buffer. | | [CharBuffer](../java/nio/CharBuffer.md) | A char buffer. | | [DoubleBuffer](../java/nio/DoubleBuffer.md) | A double buffer. | | [FloatBuffer](../java/nio/FloatBuffer.md) | A float buffer. | | [IntBuffer](../java/nio/IntBuffer.md) | An int buffer. | | [LongBuffer](../java/nio/LongBuffer.md) | A long buffer. | | [ShortBuffer](../java/nio/ShortBuffer.md) | A short buffer. | |
+| Known Direct Subclasses [ByteBuffer](ByteBuffer.md), [CharBuffer](CharBuffer.md), [DoubleBuffer](DoubleBuffer.md), [FloatBuffer](FloatBuffer.md), [IntBuffer](IntBuffer.md), [LongBuffer](LongBuffer.md), [ShortBuffer](ShortBuffer.md) |--------------------------------------------------------------------------------------|------------------| | [ByteBuffer](ByteBuffer.md) | A byte buffer. | | [CharBuffer](CharBuffer.md) | A char buffer. | | [DoubleBuffer](DoubleBuffer.md) | A double buffer. | | [FloatBuffer](FloatBuffer.md) | A float buffer. | | [IntBuffer](IntBuffer.md) | An int buffer. | | [LongBuffer](LongBuffer.md) | A long buffer. | | [ShortBuffer](ShortBuffer.md) | A short buffer. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [MappedByteBuffer](../java/nio/MappedByteBuffer.md) |----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------| | [MappedByteBuffer](../java/nio/MappedByteBuffer.md) | A direct byte buffer whose content is a memory-mapped region of a file. | |
+| Known Indirect Subclasses [MappedByteBuffer](MappedByteBuffer.md) |----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------| | [MappedByteBuffer](MappedByteBuffer.md) | A direct byte buffer whose content is a memory-mapped region of a file. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 A container for data of a specific primitive type.
@@ -34,15 +34,15 @@ There is one subclass of this class for each non-boolean primitive type.
 
 Each subclass of this class defines two categories of*get* and*put*operations:
 
-*Relative* operations read or write one or more elements starting at the current position and then increment the position by the number of elements transferred. If the requested transfer exceeds the limit then a relative*get* operation throws a [BufferUnderflowException](../java/nio/BufferUnderflowException.md) and a relative*put* operation throws a [BufferOverflowException](../java/nio/BufferOverflowException.md); in either case, no data is transferred.
+*Relative* operations read or write one or more elements starting at the current position and then increment the position by the number of elements transferred. If the requested transfer exceeds the limit then a relative*get* operation throws a [BufferUnderflowException](BufferUnderflowException.md) and a relative*put* operation throws a [BufferOverflowException](BufferOverflowException.md); in either case, no data is transferred.
 
-*Absolute* operations take an explicit element index and do not affect the position. Absolute*get* and*put* operations throw an [IndexOutOfBoundsException](../java/lang/IndexOutOfBoundsException.md) if the index argument exceeds the limit.
+*Absolute* operations take an explicit element index and do not affect the position. Absolute*get* and*put* operations throw an [IndexOutOfBoundsException](../java.lang/IndexOutOfBoundsException.md) if the index argument exceeds the limit.
 
 Data may also, of course, be transferred in to or out of a buffer by the I/O operations of an appropriate channel, which are always relative to the current position.
 
 ## Marking and resetting
 
-A buffer's*mark* is the index to which its position will be reset when the [reset](../java/nio/Buffer.md))method is invoked. The mark is not always defined, but when it is defined it is never negative and is never greater than the position. If the mark is defined then it is discarded when the position or the limit is adjusted to a value smaller than the mark. If the mark is not defined then invoking the [reset](../java/nio/Buffer.md))method causes an [InvalidMarkException](../java/nio/InvalidMarkException.md) to be thrown.
+A buffer's*mark* is the index to which its position will be reset when the [reset](Buffer.md))method is invoked. The mark is not always defined, but when it is defined it is never negative and is never greater than the position. If the mark is defined then it is discarded when the position or the limit is adjusted to a value smaller than the mark. If the mark is not defined then invoking the [reset](Buffer.md))method causes an [InvalidMarkException](InvalidMarkException.md) to be thrown.
 
 ## Invariants
 
@@ -55,15 +55,15 @@ A newly-created buffer always has a position of zero and a mark that is undefine
 
 In addition to methods for accessing the position, limit, and capacity values and for marking and resetting, this class also defines the following operations upon buffers:
 
-- [clear](../java/nio/Buffer.md))makes a buffer ready for a new sequence of channel-read or relative*put*operations: It sets the limit to the capacity and the position to zero.
-- [flip](../java/nio/Buffer.md))makes a buffer ready for a new sequence of channel-write or relative*get*operations: It sets the limit to the current position and then sets the position to zero.
-- [rewind](../java/nio/Buffer.md))makes a buffer ready for re-reading the data that it already contains: It leaves the limit unchanged and sets the position to zero.
-- The #slice and [slice(index,length)](../java/nio/Buffer.md))methods create a subsequence of a buffer: They leave the limit and the position unchanged.
-- [duplicate](../java/nio/Buffer.md))creates a shallow copy of a buffer: It leaves the limit and the position unchanged.
+- [clear](Buffer.md))makes a buffer ready for a new sequence of channel-read or relative*put*operations: It sets the limit to the capacity and the position to zero.
+- [flip](Buffer.md))makes a buffer ready for a new sequence of channel-write or relative*get*operations: It sets the limit to the current position and then sets the position to zero.
+- [rewind](Buffer.md))makes a buffer ready for re-reading the data that it already contains: It leaves the limit unchanged and sets the position to zero.
+- The #slice and [slice(index,length)](Buffer.md))methods create a subsequence of a buffer: They leave the limit and the position unchanged.
+- [duplicate](Buffer.md))creates a shallow copy of a buffer: It leaves the limit and the position unchanged.
 
 ## Read-only buffers
 
-Every buffer is readable, but not every buffer is writable. The mutation methods of each buffer class are specified as*optional operations* that will throw a [ReadOnlyBufferException](../java/nio/ReadOnlyBufferException.md) when invoked upon a read-only buffer. A read-only buffer does not allow its content to be changed, but its mark, position, and limit values are mutable. Whether or not a buffer is read-only may be determined by invoking its [isReadOnly](../java/nio/Buffer.md))method.
+Every buffer is readable, but not every buffer is writable. The mutation methods of each buffer class are specified as*optional operations* that will throw a [ReadOnlyBufferException](ReadOnlyBufferException.md) when invoked upon a read-only buffer. A read-only buffer does not allow its content to be changed, but its mark, position, and limit values are mutable. Whether or not a buffer is read-only may be determined by invoking its [isReadOnly](Buffer.md))method.
 
 ## Thread safety
 
@@ -88,32 +88,32 @@ b.flip().position(23).limit(42);
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [array](../java/nio/Buffer.md))`()` Returns the array that backs this buffer*(optional operation)*. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [arrayOffset](../java/nio/Buffer.md))`()` Returns the offset within this buffer's backing array of the first element of the buffer*(optional operation)*. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [capacity](../java/nio/Buffer.md))`()` Returns this buffer's capacity. |
+| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [array](Buffer.md))`()` Returns the array that backs this buffer*(optional operation)*. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [arrayOffset](Buffer.md))`()` Returns the offset within this buffer's backing array of the first element of the buffer*(optional operation)*. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [capacity](Buffer.md))`()` Returns this buffer's capacity. |
 | --- | --- |
-| open [Buffer](../java/nio/Buffer.md)! | [clear](../java/nio/Buffer.md))`()` Clears this buffer. |
-| abstract [Buffer](../java/nio/Buffer.md)! | [duplicate](../java/nio/Buffer.md))`()` Creates a new buffer that shares this buffer's content. |
-| open [Buffer](../java/nio/Buffer.md)! | [flip](../java/nio/Buffer.md))`()` Flips this buffer. |
+| open [Buffer](Buffer.md)! | [clear](Buffer.md))`()` Clears this buffer. |
+| abstract [Buffer](Buffer.md)! | [duplicate](Buffer.md))`()` Creates a new buffer that shares this buffer's content. |
+| open [Buffer](Buffer.md)! | [flip](Buffer.md))`()` Flips this buffer. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasArray](../java/nio/Buffer.md))`()` Tells whether or not this buffer is backed by an accessible array. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasRemaining](../java/nio/Buffer.md))`()` Tells whether there are any elements between the current position and the limit. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDirect](../java/nio/Buffer.md))`()` Tells whether or not this buffer is [*direct*](../java/nio/ByteBuffer.md). |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasArray](Buffer.md))`()` Tells whether or not this buffer is backed by an accessible array. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasRemaining](Buffer.md))`()` Tells whether there are any elements between the current position and the limit. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDirect](Buffer.md))`()` Tells whether or not this buffer is [*direct*](ByteBuffer.md). |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isReadOnly](../java/nio/Buffer.md))`()` Tells whether or not this buffer is read-only. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [limit](../java/nio/Buffer.md))`()` Returns this buffer's limit. |
-| open [Buffer](../java/nio/Buffer.md)! | [limit](../java/nio/Buffer.md))`(`newLimit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets this buffer's limit. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isReadOnly](Buffer.md))`()` Tells whether or not this buffer is read-only. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [limit](Buffer.md))`()` Returns this buffer's limit. |
+| open [Buffer](Buffer.md)! | [limit](Buffer.md))`(`newLimit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets this buffer's limit. |
 | --- | --- |
-| open [Buffer](../java/nio/Buffer.md)! | [mark](../java/nio/Buffer.md))`()` Sets this buffer's mark at its position. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [position](../java/nio/Buffer.md))`()` Returns this buffer's position. |
-| open [Buffer](../java/nio/Buffer.md)! | [position](../java/nio/Buffer.md))`(`newPosition:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets this buffer's position. |
+| open [Buffer](Buffer.md)! | [mark](Buffer.md))`()` Sets this buffer's mark at its position. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [position](Buffer.md))`()` Returns this buffer's position. |
+| open [Buffer](Buffer.md)! | [position](Buffer.md))`(`newPosition:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets this buffer's position. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [remaining](../java/nio/Buffer.md))`()` Returns the number of elements between the current position and the limit. |
-| open [Buffer](../java/nio/Buffer.md)! | [reset](../java/nio/Buffer.md))`()` Resets this buffer's position to the previously-marked position. |
-| open [Buffer](../java/nio/Buffer.md)! | [rewind](../java/nio/Buffer.md))`()` Rewinds this buffer. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [remaining](Buffer.md))`()` Returns the number of elements between the current position and the limit. |
+| open [Buffer](Buffer.md)! | [reset](Buffer.md))`()` Resets this buffer's position to the previously-marked position. |
+| open [Buffer](Buffer.md)! | [rewind](Buffer.md))`()` Rewinds this buffer. |
 | --- | --- |
-| abstract [Buffer](../java/nio/Buffer.md)! | [slice](../java/nio/Buffer.md))`()` Creates a new buffer whose content is a shared subsequence of this buffer's content. |
-| abstract [Buffer](../java/nio/Buffer.md)! | [slice](../java/nio/Buffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a new buffer whose content is a shared subsequence of this buffer's content. |
+| abstract [Buffer](Buffer.md)! | [slice](Buffer.md))`()` Creates a new buffer whose content is a shared subsequence of this buffer's content. |
+| abstract [Buffer](Buffer.md)! | [slice](Buffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a new buffer whose content is a shared subsequence of this buffer's content. |
 
 ## Public methods
 
@@ -131,7 +131,7 @@ This method is intended to allow array-backed buffers to be passed to native cod
 
 Modifications to this buffer's content will cause the returned array's content to be modified, and vice versa.
 
-Invoke the [hasArray](../java/nio/Buffer.md))method before invoking this method in order to ensure that this buffer has an accessible backing array.
+Invoke the [hasArray](Buffer.md))method before invoking this method in order to ensure that this buffer has an accessible backing array.
 
 | Return ||
 |-----------------------------------------------------------------------------|----------------------------------|
@@ -154,7 +154,7 @@ Returns the offset within this buffer's backing array of the first element of th
 
 If this buffer is backed by an array then buffer position*p* corresponds to array index*p* +`arrayOffset()`.
 
-Invoke the [hasArray](../java/nio/Buffer.md))method before invoking this method in order to ensure that this buffer has an accessible backing array.
+Invoke the [hasArray](Buffer.md))method before invoking this method in order to ensure that this buffer has an accessible backing array.
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------|
@@ -200,7 +200,7 @@ This method does not actually erase the data in the buffer, but it is named as i
 
 | Return ||
 |----------------------------------------------------------------------------|-------------|
-| [Buffer](../java/nio/Buffer.md)! | This buffer |
+| [Buffer](Buffer.md)! | This buffer |
 
 ### duplicate
 
@@ -218,7 +218,7 @@ The new buffer's capacity, limit, position and mark values will be identical to 
 
 | Return ||
 |----------------------------------------------------------------------------|----------------|
-| [Buffer](../java/nio/Buffer.md)! | The new buffer |
+| [Buffer](Buffer.md)! | The new buffer |
 
 ### flip
 
@@ -239,11 +239,11 @@ buf.put(magic);    // Prepend header
   out.write(buf);    // Write header + data to channel
 ```
 
-This method is often used in conjunction with the [compact](../java/nio/ByteBuffer.md))method when transferring data from one place to another.
+This method is often used in conjunction with the [compact](ByteBuffer.md))method when transferring data from one place to another.
 
 | Return ||
 |----------------------------------------------------------------------------|-------------|
-| [Buffer](../java/nio/Buffer.md)! | This buffer |
+| [Buffer](Buffer.md)! | This buffer |
 
 ### hasArray
 
@@ -255,7 +255,7 @@ abstract fun hasArray(): Boolean
 
 Tells whether or not this buffer is backed by an accessible array.
 
-If this method returns`true`then the [array](../java/nio/Buffer.md))and [arrayOffset](../java/nio/Buffer.md))methods may safely be invoked.
+If this method returns`true`then the [array](Buffer.md))and [arrayOffset](Buffer.md))methods may safely be invoked.
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
@@ -283,7 +283,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun isDirect(): Boolean
 ```
 
-Tells whether or not this buffer is [*direct*](../java/nio/ByteBuffer.md).
+Tells whether or not this buffer is [*direct*](ByteBuffer.md).
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------------------------------------|
@@ -333,7 +333,7 @@ Sets this buffer's limit. If the position is larger than the new limit then it i
 
 | Return ||
 |----------------------------------------------------------------------------|-------------|
-| [Buffer](../java/nio/Buffer.md)! | This buffer |
+| [Buffer](Buffer.md)! | This buffer |
 
 | Exceptions ||
 |--------------------------------------|----------------------------------------------|
@@ -351,7 +351,7 @@ Sets this buffer's mark at its position.
 
 | Return ||
 |----------------------------------------------------------------------------|-------------|
-| [Buffer](../java/nio/Buffer.md)! | This buffer |
+| [Buffer](Buffer.md)! | This buffer |
 
 ### position
 
@@ -383,7 +383,7 @@ Sets this buffer's position. If the mark is defined and larger than the new posi
 
 | Return ||
 |----------------------------------------------------------------------------|-------------|
-| [Buffer](../java/nio/Buffer.md)! | This buffer |
+| [Buffer](Buffer.md)! | This buffer |
 
 | Exceptions ||
 |--------------------------------------|-------------------------------------------------|
@@ -417,7 +417,7 @@ Invoking this method neither changes nor discards the mark's value.
 
 | Return ||
 |----------------------------------------------------------------------------|-------------|
-| [Buffer](../java/nio/Buffer.md)! | This buffer |
+| [Buffer](Buffer.md)! | This buffer |
 
 | Exceptions ||
 |---------------------------------|------------------------------|
@@ -443,7 +443,7 @@ out.write(buf);    // Write remaining data
 
 | Return ||
 |----------------------------------------------------------------------------|-------------|
-| [Buffer](../java/nio/Buffer.md)! | This buffer |
+| [Buffer](Buffer.md)! | This buffer |
 
 ### slice
 
@@ -461,7 +461,7 @@ The new buffer's position will be zero, its capacity and its limit will be the n
 
 | Return ||
 |----------------------------------------------------------------------------|----------------|
-| [Buffer](../java/nio/Buffer.md)! | The new buffer |
+| [Buffer](Buffer.md)! | The new buffer |
 
 ### slice
 
@@ -482,12 +482,12 @@ The new buffer's position will be zero, its capacity and its limit will be`lengt
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The position in this buffer at which the content of the new buffer will start; must be non-negative and no larger than [limit()](../java/nio/Buffer.md)) |
+| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The position in this buffer at which the content of the new buffer will start; must be non-negative and no larger than [limit()](Buffer.md)) |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The number of elements the new buffer will contain; must be non-negative and no larger than`limit() - index` |
 
 | Return ||
 |----------------------------------------------------------------------------|----------------|
-| [Buffer](../java/nio/Buffer.md)! | The new buffer |
+| [Buffer](Buffer.md)! | The new buffer |
 
 | Exceptions ||
 |---------------------------------------|-------------------------------------------------------------------------------------------------|

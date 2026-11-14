@@ -37,7 +37,7 @@ Called when a session expiration update occurs, to inform the app about the chan
 
 | Parameters ||
 |---|---|
-| `md` | [MediaDrm](../android/media/MediaDrm.md): the MediaDrm object on which the event occurred. This value cannot be `null`. |
+| `md` | [MediaDrm](MediaDrm.md): the MediaDrm object on which the event occurred. This value cannot be `null`. |
 | `sessionId` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html): the DRM session ID on which the event occurred. This value cannot be `null`. |
 | `expirationTime` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the new expiration time for the keys in the session. The time is in milliseconds, relative to the Unix epoch. A time of 0 indicates that the keys never expire. |
 | --- | --- |

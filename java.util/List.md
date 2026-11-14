@@ -6,7 +6,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface List<E : Any!> : MutableCollection<E>, SequencedCollection<E>
 ```
 
-| [java.util.List](../java/util/List.md) |
+| [java.util.List](List.md) |
 
 An ordered collection, where the user has precise control over where in the list each element is inserted. The user can access elements by their integer index (position in the list), and search for elements in the list.
 
@@ -30,7 +30,7 @@ Some list implementations have restrictions on the elements that they may contai
 
 The `https://developer.android.com/reference/kotlin/java/util/List#of(java.util.List.of.E)` and `https://developer.android.com/reference/kotlin/java/util/List#copyOf(kotlin.collections.MutableCollection)` static factory methods provide a convenient way to create unmodifiable lists. The `List` instances created by these methods have the following characteristics:
 
-- They are [*unmodifiable*](../java/util/Collection.md). Elements cannot be added, removed, or replaced. Calling any mutator method on the List will always cause `UnsupportedOperationException` to be thrown. However, if the contained elements are themselves mutable, this may cause the List's contents to appear to change.
+- They are [*unmodifiable*](Collection.md). Elements cannot be added, removed, or replaced. Calling any mutator method on the List will always cause `UnsupportedOperationException` to be thrown. However, if the contained elements are themselves mutable, this may cause the List's contents to appear to change.
 - They disallow `null` elements. Attempts to create them with `null` elements result in `NullPointerException`.
 - They are serializable if all elements are serializable.
 - The order of elements in the list is the same as the order of the provided arguments, or of the elements in the provided array.
@@ -54,7 +54,7 @@ The `https://developer.android.com/reference/kotlin/java/util/List#of(java.util.
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/List#contains(java.util.List.E)(element: E?)` Returns `true` if this list contains the specified element. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/List#containsAll(kotlin.collections.Collection)(elements: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html<E>)` Returns `true` if this list contains all of the elements of the specified collection. |
 | --- | --- |
-| open static [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<E\> | `https://developer.android.com/reference/kotlin/java/util/List#copyOf(kotlin.collections.MutableCollection)(coll: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html<out E>)` Returns an [unmodifiable List](../java/util/List.md) containing the elements of the given Collection, in its iteration order. |
+| open static [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<E\> | `https://developer.android.com/reference/kotlin/java/util/List#copyOf(kotlin.collections.MutableCollection)(coll: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html<out E>)` Returns an [unmodifiable List](List.md) containing the elements of the given Collection, in its iteration order. |
 | abstract E | `https://developer.android.com/reference/kotlin/java/util/List#get(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the element at the specified position in this list. |
 | open E | `https://developer.android.com/reference/kotlin/java/util/List#getFirst()()` Gets the first element of this collection. |
 | --- | --- |
@@ -92,11 +92,11 @@ The `https://developer.android.com/reference/kotlin/java/util/List#of(java.util.
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/List#replaceAll(java.util.function.UnaryOperator)(operator: https://developer.android.com/reference/kotlin/java/util/function/UnaryOperator<E>)` Replaces each element of this list with the result of applying the operator to that element. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/List#retainAll(kotlin.collections.Collection)(elements: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html<E>)` Retains only the elements in this list that are contained in the specified collection (optional operation). |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<E\> | `https://developer.android.com/reference/kotlin/java/util/List#reversed()()` Returns a reverse-ordered [view](../java/util/Collection.md) of this collection. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<E\> | `https://developer.android.com/reference/kotlin/java/util/List#reversed()()` Returns a reverse-ordered [view](Collection.md) of this collection. |
 | --- | --- |
 | abstract E | `https://developer.android.com/reference/kotlin/java/util/List#set(kotlin.Int,%20java.util.List.E)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, element: E)` Replaces the element at the specified position in this list with the specified element (optional operation). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/List#sort(java.util.Comparator)(c: https://developer.android.com/reference/kotlin/java/util/Comparator<in E>?)` Sorts this list according to the order induced by the specified `https://developer.android.com/reference/kotlin/java/util/Comparator`. |
-| open [Spliterator](../java/util/Spliterator.md)\<E\> | `https://developer.android.com/reference/kotlin/java/util/List#spliterator()()` Creates a `https://developer.android.com/reference/kotlin/java/util/Spliterator` over the elements in this list. |
+| open [Spliterator](Spliterator.md)\<E\> | `https://developer.android.com/reference/kotlin/java/util/List#spliterator()()` Creates a `https://developer.android.com/reference/kotlin/java/util/Spliterator` over the elements in this list. |
 | --- | --- |
 | abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<E\> | `https://developer.android.com/reference/kotlin/java/util/List#subList(kotlin.Int,%20kotlin.Int)(fromIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, toIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a view of the portion of this list between the specified `fromIndex`, inclusive, and `toIndex`, exclusive. |
 | abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\> | `https://developer.android.com/reference/kotlin/java/util/List#toArray()()` Returns an array containing all of the elements in this list in proper sequence (from first to last element). |
@@ -299,8 +299,8 @@ Returns `true` if this list contains the specified element. More formally, retur
 
 | Exceptions ||
 |---|---|
-| `java.lang.ClassCastException` | if the type of the specified element is incompatible with this list ([optional](../java/util/Collection.md)) |
-| `java.lang.NullPointerException` | if the specified element is null and this list does not permit null elements ([optional](../java/util/Collection.md)) |
+| `java.lang.ClassCastException` | if the type of the specified element is incompatible with this list ([optional](Collection.md)) |
+| `java.lang.NullPointerException` | if the specified element is null and this list does not permit null elements ([optional](Collection.md)) |
 
 ### containsAll
 
@@ -322,8 +322,8 @@ Returns `true` if this list contains all of the elements of the specified collec
 
 | Exceptions ||
 |---|---|
-| `java.lang.ClassCastException` | if the types of one or more elements in the specified collection are incompatible with this list ([optional](../java/util/Collection.md)) |
-| `java.lang.NullPointerException` | if the specified collection contains one or more null elements and this list does not permit null elements ([optional](../java/util/Collection.md)), or if the specified collection is null |
+| `java.lang.ClassCastException` | if the types of one or more elements in the specified collection are incompatible with this list ([optional](Collection.md)) |
+| `java.lang.NullPointerException` | if the specified collection contains one or more null elements and this list does not permit null elements ([optional](Collection.md)), or if the specified collection is null |
 
 **See Also**
 
@@ -337,7 +337,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 open static fun <E : Any!> copyOf(coll: MutableCollection<out E>): MutableList<E>
 ```
 
-Returns an [unmodifiable List](../java/util/List.md) containing the elements of the given Collection, in its iteration order. The given Collection must not be null, and it must not contain any null elements. If the given Collection is subsequently modified, the returned List will not reflect such modifications.
+Returns an [unmodifiable List](List.md) containing the elements of the given Collection, in its iteration order. The given Collection must not be null, and it must not contain any null elements. If the given Collection is subsequently modified, the returned List will not reflect such modifications.
 
 | Parameters ||
 |---|---|
@@ -430,8 +430,8 @@ Returns the index of the first occurrence of the specified element in this list,
 
 | Exceptions ||
 |---|---|
-| `java.lang.ClassCastException` | if the type of the specified element is incompatible with this list ([optional](../java/util/Collection.md)) |
-| `java.lang.NullPointerException` | if the specified element is null and this list does not permit null elements ([optional](../java/util/Collection.md)) |
+| `java.lang.ClassCastException` | if the type of the specified element is incompatible with this list ([optional](Collection.md)) |
+| `java.lang.NullPointerException` | if the specified element is null and this list does not permit null elements ([optional](Collection.md)) |
 
 ### isEmpty
 
@@ -481,8 +481,8 @@ Returns the index of the last occurrence of the specified element in this list, 
 
 | Exceptions ||
 |---|---|
-| `java.lang.ClassCastException` | if the type of the specified element is incompatible with this list ([optional](../java/util/Collection.md)) |
-| `java.lang.NullPointerException` | if the specified element is null and this list does not permit null elements ([optional](../java/util/Collection.md)) |
+| `java.lang.ClassCastException` | if the type of the specified element is incompatible with this list ([optional](Collection.md)) |
+| `java.lang.NullPointerException` | if the specified element is null and this list does not permit null elements ([optional](Collection.md)) |
 
 ### listIterator
 
@@ -528,7 +528,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 open static fun <E : Any!> of(): MutableList<E>
 ```
 
-Returns an unmodifiable list containing zero elements. See [Unmodifiable Lists](../java/util/List.md) for details.
+Returns an unmodifiable list containing zero elements. See [Unmodifiable Lists](List.md) for details.
 
 | Parameters ||
 |---|---|
@@ -546,7 +546,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 open static fun <E : Any!> of(e1: E): MutableList<E>
 ```
 
-Returns an unmodifiable list containing one element. See [Unmodifiable Lists](../java/util/List.md) for details.
+Returns an unmodifiable list containing one element. See [Unmodifiable Lists](List.md) for details.
 
 | Parameters ||
 |---|---|
@@ -572,7 +572,7 @@ open static fun <E : Any!> of(
 ): MutableList<E>
 ```
 
-Returns an unmodifiable list containing two elements. See [Unmodifiable Lists](../java/util/List.md) for details.
+Returns an unmodifiable list containing two elements. See [Unmodifiable Lists](List.md) for details.
 
 | Parameters ||
 |---|---|
@@ -601,7 +601,7 @@ open static fun <E : Any!> of(
 ): MutableList<E>
 ```
 
-Returns an unmodifiable list containing three elements. See [Unmodifiable Lists](../java/util/List.md) for details.
+Returns an unmodifiable list containing three elements. See [Unmodifiable Lists](List.md) for details.
 
 | Parameters ||
 |---|---|
@@ -632,7 +632,7 @@ open static fun <E : Any!> of(
 ): MutableList<E>
 ```
 
-Returns an unmodifiable list containing four elements. See [Unmodifiable Lists](../java/util/List.md) for details.
+Returns an unmodifiable list containing four elements. See [Unmodifiable Lists](List.md) for details.
 
 | Parameters ||
 |---|---|
@@ -665,7 +665,7 @@ open static fun <E : Any!> of(
 ): MutableList<E>
 ```
 
-Returns an unmodifiable list containing five elements. See [Unmodifiable Lists](../java/util/List.md) for details.
+Returns an unmodifiable list containing five elements. See [Unmodifiable Lists](List.md) for details.
 
 | Parameters ||
 |---|---|
@@ -701,7 +701,7 @@ open static fun <E : Any!> of(
 ): MutableList<E>
 ```
 
-Returns an unmodifiable list containing six elements. See [Unmodifiable Lists](../java/util/List.md) for details.
+Returns an unmodifiable list containing six elements. See [Unmodifiable Lists](List.md) for details.
 
 | Parameters ||
 |---|---|
@@ -739,7 +739,7 @@ open static fun <E : Any!> of(
 ): MutableList<E>
 ```
 
-Returns an unmodifiable list containing seven elements. See [Unmodifiable Lists](../java/util/List.md) for details.
+Returns an unmodifiable list containing seven elements. See [Unmodifiable Lists](List.md) for details.
 
 | Parameters ||
 |---|---|
@@ -779,7 +779,7 @@ open static fun <E : Any!> of(
 ): MutableList<E>
 ```
 
-Returns an unmodifiable list containing eight elements. See [Unmodifiable Lists](../java/util/List.md) for details.
+Returns an unmodifiable list containing eight elements. See [Unmodifiable Lists](List.md) for details.
 
 | Parameters ||
 |---|---|
@@ -822,7 +822,7 @@ open static fun <E : Any!> of(
 ): MutableList<E>
 ```
 
-Returns an unmodifiable list containing nine elements. See [Unmodifiable Lists](../java/util/List.md) for details.
+Returns an unmodifiable list containing nine elements. See [Unmodifiable Lists](List.md) for details.
 
 | Parameters ||
 |---|---|
@@ -867,7 +867,7 @@ open static fun <E : Any!> of(
 ): MutableList<E>
 ```
 
-Returns an unmodifiable list containing ten elements. See [Unmodifiable Lists](../java/util/List.md) for details.
+Returns an unmodifiable list containing ten elements. See [Unmodifiable Lists](List.md) for details.
 
 | Parameters ||
 |---|---|
@@ -902,7 +902,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 @SafeVarargs open static fun <E : Any!> of(vararg elements: E): MutableList<E>
 ```
 
-Returns an unmodifiable list containing an arbitrary number of elements. See [Unmodifiable Lists](../java/util/List.md) for details.
+Returns an unmodifiable list containing an arbitrary number of elements. See [Unmodifiable Lists](List.md) for details.
 
 | Parameters ||
 |---|---|
@@ -960,8 +960,8 @@ Removes the first occurrence of the specified element from this list, if it is p
 
 | Exceptions ||
 |---|---|
-| `java.lang.ClassCastException` | if the type of the specified element is incompatible with this list ([optional](../java/util/Collection.md)) |
-| `java.lang.NullPointerException` | if the specified element is null and this list does not permit null elements ([optional](../java/util/Collection.md)) |
+| `java.lang.ClassCastException` | if the type of the specified element is incompatible with this list ([optional](Collection.md)) |
+| `java.lang.NullPointerException` | if the specified element is null and this list does not permit null elements ([optional](Collection.md)) |
 | `java.lang.UnsupportedOperationException` | if the `remove` operation is not supported by this list |
 | --- | --- |
 
@@ -985,8 +985,8 @@ Removes from this list all of its elements that are contained in the specified c
 
 | Exceptions ||
 |---|---|
-| `java.lang.ClassCastException` | if the class of an element of this list is incompatible with the specified collection ([optional](../java/util/Collection.md)) |
-| `java.lang.NullPointerException` | if this list contains a null element and the specified collection does not permit null elements ([optional](../java/util/Collection.md)), or if the specified collection is null |
+| `java.lang.ClassCastException` | if the class of an element of this list is incompatible with the specified collection ([optional](Collection.md)) |
+| `java.lang.NullPointerException` | if this list contains a null element and the specified collection does not permit null elements ([optional](Collection.md)), or if the specified collection is null |
 | `java.lang.UnsupportedOperationException` | if the `removeAll` operation is not supported by this list |
 | --- | --- |
 
@@ -1045,11 +1045,11 @@ Replaces each element of this list with the result of applying the operator to t
 
 | Parameters ||
 |---|---|
-| `operator` | [UnaryOperator](../java/util/function/UnaryOperator.md)\<E\>: the operator to apply to each element |
+| `operator` | [UnaryOperator](../java.util.function/UnaryOperator.md)\<E\>: the operator to apply to each element |
 
 | Exceptions ||
 |---|---|
-| `java.lang.NullPointerException` | if the specified operator is null or if the operator result is a null value and this list does not permit null elements ([optional](../java/util/Collection.md)) |
+| `java.lang.NullPointerException` | if the specified operator is null or if the operator result is a null value and this list does not permit null elements ([optional](Collection.md)) |
 | `java.lang.UnsupportedOperationException` | if this list is unmodifiable. Implementations may throw this exception if an element cannot be replaced or if, in general, modification is not supported |
 
 ### retainAll
@@ -1072,8 +1072,8 @@ Retains only the elements in this list that are contained in the specified colle
 
 | Exceptions ||
 |---|---|
-| `java.lang.ClassCastException` | if the class of an element of this list is incompatible with the specified collection ([optional](../java/util/Collection.md)) |
-| `java.lang.NullPointerException` | if this list contains a null element and the specified collection does not permit null elements ([optional](../java/util/Collection.md)), or if the specified collection is null |
+| `java.lang.ClassCastException` | if the class of an element of this list is incompatible with the specified collection ([optional](Collection.md)) |
+| `java.lang.NullPointerException` | if this list contains a null element and the specified collection does not permit null elements ([optional](Collection.md)), or if the specified collection is null |
 | `java.lang.UnsupportedOperationException` | if the `retainAll` operation is not supported by this list |
 | --- | --- |
 
@@ -1090,7 +1090,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 open fun reversed(): MutableList<E>
 ```
 
-Returns a reverse-ordered [view](../java/util/Collection.md) of this collection. The encounter order of elements in the returned view is the inverse of the encounter order of elements in this collection. The reverse ordering affects all order-sensitive operations, including those on the view collections of the returned view. If the collection implementation permits modifications to this view, the modifications "write through" to the underlying collection. Changes to the underlying collection might or might not be visible in this reversed view, depending upon the implementation.
+Returns a reverse-ordered [view](Collection.md) of this collection. The encounter order of elements in the returned view is the inverse of the encounter order of elements in this collection. The reverse ordering affects all order-sensitive operations, including those on the view collections of the returned view. If the collection implementation permits modifications to this view, the modifications "write through" to the underlying collection. Changes to the underlying collection might or might not be visible in this reversed view, depending upon the implementation.
 
 | Return ||
 |---|---|
@@ -1139,7 +1139,7 @@ Sorts this list according to the order induced by the specified `https://develop
 
 All elements in this list must be *mutually comparable* using the specified comparator (that is, `c.compare(e1, e2)` must not throw a `ClassCastException` for any elements `e1` and `e2` in the list).
 
-If the specified comparator is `null` then all elements in this list must implement the `https://developer.android.com/reference/kotlin/java/lang/Comparable.html#` interface and the elements' [natural ordering](../java/lang/Comparable.md) should be used.
+If the specified comparator is `null` then all elements in this list must implement the `https://developer.android.com/reference/kotlin/java/lang/Comparable.html#` interface and the elements' [natural ordering](../java.lang/Comparable.md) should be used.
 
 This list must be modifiable, but need not be resizable.
 
@@ -1161,12 +1161,12 @@ For apps running on and targeting Android versions greater than Nougat (API leve
 
 | Parameters ||
 |---|---|
-| `c` | [Comparator](../java/util/Comparator.md)\<in E\>?: the `Comparator` used to compare list elements. A `null` value indicates that the elements' [natural ordering](../java/lang/Comparable.md) should be used |
+| `c` | [Comparator](Comparator.md)\<in E\>?: the `Comparator` used to compare list elements. A `null` value indicates that the elements' [natural ordering](../java.lang/Comparable.md) should be used |
 
 | Exceptions ||
 |---|---|
 | `java.lang.ClassCastException` | if the list contains elements that are not *mutually comparable* using the specified comparator |
-| `java.lang.IllegalArgumentException` | ([optional](../java/util/Collection.md)) if the comparator is found to violate the `https://developer.android.com/reference/kotlin/java/util/Comparator` contract |
+| `java.lang.IllegalArgumentException` | ([optional](Collection.md)) if the comparator is found to violate the `https://developer.android.com/reference/kotlin/java/util/Comparator` contract |
 | `java.lang.UnsupportedOperationException` | if the list's list-iterator does not support the `set` operation |
 | --- | --- |
 

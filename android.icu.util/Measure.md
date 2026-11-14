@@ -4,7 +4,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # Measure
 
-Kotlin| [Java](../android/icu/util/Measure.md) 
+Kotlin| [Java](Measure.md) 
 | --- | --- |
 
 ```
@@ -13,9 +13,9 @@ open class Measure
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.icu.util.Measure](../android/icu/util/Measure.md) |
+| ↳ | [android.icu.util.Measure](Measure.md) |
 
-| Known Direct Subclasses [CurrencyAmount](../android/icu/util/CurrencyAmount.md) |--------------------------------------------------------------------------------------------------|---------------------------------------------------------------| | [CurrencyAmount](../android/icu/util/CurrencyAmount.md) | An amount of currency, consisting of a Number and a Currency. | |
+| Known Direct Subclasses [CurrencyAmount](CurrencyAmount.md) |--------------------------------------------------------------------------------------------------|---------------------------------------------------------------| | [CurrencyAmount](CurrencyAmount.md) | An amount of currency, consisting of a Number and a Currency. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 An amount of a specified unit, consisting of a Number and a Unit. For example, a length measure consists of a Number and a length unit, such as feet or meters.
@@ -28,16 +28,16 @@ Measure objects are immutable. All subclasses must guarantee that. (However, sub
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Measure](../android/icu/util/Measure.md))`(`number:` ` [Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html)!`, `unit:` ` [MeasureUnit](../android/icu/util/MeasureUnit.md)!`)` Constructs a new object given a number and a unit. |
+| [Measure](Measure.md))`(`number:` ` [Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html)!`, `unit:` ` [MeasureUnit](MeasureUnit.md)!`)` Constructs a new object given a number and a unit. |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/icu/util/Measure.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Returns true if the given object is equal to this object. |
-| open [Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html)! | [getNumber](../android/icu/util/Measure.md))`()` Returns the numeric value of this object. |
-| open [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [getUnit](../android/icu/util/Measure.md))`()` Returns the unit of this object. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](Measure.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Returns true if the given object is equal to this object. |
+| open [Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html)! | [getNumber](Measure.md))`()` Returns the numeric value of this object. |
+| open [MeasureUnit](MeasureUnit.md)! | [getUnit](Measure.md))`()` Returns the unit of this object. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/icu/util/Measure.md))`()` Returns a hashcode for this object. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/icu/util/Measure.md))`()` Returns a string representation of this object. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](Measure.md))`()` Returns a hashcode for this object. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](Measure.md))`()` Returns a string representation of this object. |
 
 ## Public constructors
 
@@ -56,7 +56,7 @@ Constructs a new object given a number and a unit.
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------|
 | `number` | [Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html)!:the number |
-| `unit` | [MeasureUnit](../android/icu/util/MeasureUnit.md)!:the unit |
+| `unit` | [MeasureUnit](MeasureUnit.md)!:the unit |
 
 ## Public methods
 
@@ -104,7 +104,7 @@ Returns the unit of this object.
 
 | Return ||
 |---------------------------------------------------------------------------------------------|--------------------|
-| [MeasureUnit](../android/icu/util/MeasureUnit.md)! | this object's Unit |
+| [MeasureUnit](MeasureUnit.md)! | this object's Unit |
 
 ### hashCode
 

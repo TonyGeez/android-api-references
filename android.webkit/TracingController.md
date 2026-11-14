@@ -4,7 +4,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 
 # TracingController
 
-Kotlin| [Java](../android/webkit/TracingController.md) 
+Kotlin| [Java](TracingController.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ abstract class TracingController
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.webkit.TracingController](../android/webkit/TracingController.md) |
+| ↳ | [android.webkit.TracingController](TracingController.md) |
 
 Manages tracing of WebViews. In particular provides functionality for the app to enable/disable tracing of parts of code and to collect tracing data. This is useful for profiling performance issues, debugging and memory usage analysis in production and real life scenarios.
 
@@ -37,15 +37,15 @@ TracingController tracingController = TracingController.getInstance();
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------|---|
-| [TracingController](../android/webkit/TracingController.md))`()` <br /> |
+| [TracingController](TracingController.md))`()` <br /> |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [TracingController](../android/webkit/TracingController.md) | [getInstance](../android/webkit/TracingController.md))`()` Returns the default TracingController instance. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isTracing](../android/webkit/TracingController.md))`()` Returns whether the WebView framework is tracing. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [start](../android/webkit/TracingController.md))`(`tracingConfig:` ` [TracingConfig](../android/webkit/TracingConfig.md)`)` Starts tracing all webviews. |
+| openstatic [TracingController](TracingController.md) | [getInstance](TracingController.md))`()` Returns the default TracingController instance. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isTracing](TracingController.md))`()` Returns whether the WebView framework is tracing. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [start](TracingController.md))`(`tracingConfig:` ` [TracingConfig](TracingConfig.md)`)` Starts tracing all webviews. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [stop](../android/webkit/TracingController.md))`(`outputStream:` ` [OutputStream](../java/io/OutputStream.md)?`, `executor:` ` [Executor](../java/util/concurrent/Executor.md)`)` Stops tracing and flushes tracing data to the specified outputStream. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [stop](TracingController.md))`(`outputStream:` ` [OutputStream](../java.io/OutputStream.md)?`, `executor:` ` [Executor](../java.util.concurrent/Executor.md)`)` Stops tracing and flushes tracing data to the specified outputStream. |
 
 ## Public constructors
 
@@ -57,7 +57,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 TracingController()
 ```
 
-**Deprecated:** *This class should not be constructed by applications, use [getInstance](../android/webkit/TracingController.md))instead to fetch the singleton instance.*
+**Deprecated:** *This class should not be constructed by applications, use [getInstance](TracingController.md))instead to fetch the singleton instance.*
 
 ## Public methods
 
@@ -73,7 +73,7 @@ Returns the default TracingController instance. At present there is only one Tra
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|
-| [TracingController](../android/webkit/TracingController.md) | The default TracingController instance. This value cannot be`null`. |
+| [TracingController](TracingController.md) | The default TracingController instance. This value cannot be`null`. |
 
 ### isTracing
 
@@ -97,11 +97,11 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 abstract fun start(tracingConfig: TracingConfig): Unit
 ```
 
-Starts tracing all webviews. Depending on the trace mode in traceConfig specifies how the trace events are recorded. For tracing modes [TracingConfig.RECORD_UNTIL_FULL](../android/webkit/TracingConfig.md) and [TracingConfig.RECORD_CONTINUOUSLY](../android/webkit/TracingConfig.md) the events are recorded using an internal buffer and flushed to the outputStream when [stop(java.io.OutputStream,java.util.concurrent.Executor)](../android/webkit/TracingController.md))is called.
+Starts tracing all webviews. Depending on the trace mode in traceConfig specifies how the trace events are recorded. For tracing modes [TracingConfig.RECORD_UNTIL_FULL](TracingConfig.md) and [TracingConfig.RECORD_CONTINUOUSLY](TracingConfig.md) the events are recorded using an internal buffer and flushed to the outputStream when [stop(java.io.OutputStream,java.util.concurrent.Executor)](TracingController.md))is called.
 
 | Parameters ||
 |-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `tracingConfig` | [TracingConfig](../android/webkit/TracingConfig.md):Configuration options to use for tracing. This value cannot be`null`. |
+| `tracingConfig` | [TracingConfig](TracingConfig.md):Configuration options to use for tracing. This value cannot be`null`. |
 
 | Exceptions ||
 |--------------------------------------|------------------------------------------------------------------------------------------|
@@ -123,8 +123,8 @@ Stops tracing and flushes tracing data to the specified outputStream. The data i
 
 | Parameters ||
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `outputStream` | [OutputStream](../java/io/OutputStream.md)?:The output stream the tracing data will be sent to. If null the tracing data will be discarded. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md):The [java.util.concurrent.Executor](../java/util/concurrent/Executor.md) on which the outputStream[java.io.OutputStream#write(byte[])](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#write(kotlin.ByteArray))and java.io.OutputStream#close() methods will be invoked. This value cannot be`null`. Callback and listener events are dispatched through this [Executor](../java/util/concurrent/Executor.md), providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use [Context.getMainExecutor()](../android/content/Context.md)). Otherwise, provide an [Executor](../java/util/concurrent/Executor.md) that dispatches to an appropriate thread. |
+| `outputStream` | [OutputStream](../java.io/OutputStream.md)?:The output stream the tracing data will be sent to. If null the tracing data will be discarded. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md):The [java.util.concurrent.Executor](../java.util.concurrent/Executor.md) on which the outputStream[java.io.OutputStream#write(byte[])](https://developer.android.com/reference/kotlin/java/io/OutputStream.html#write(kotlin.ByteArray))and java.io.OutputStream#close() methods will be invoked. This value cannot be`null`. Callback and listener events are dispatched through this [Executor](../java.util.concurrent/Executor.md), providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use [Context.getMainExecutor()](../android.content/Context.md)). Otherwise, provide an [Executor](../java.util.concurrent/Executor.md) that dispatches to an appropriate thread. |
 
 | Return ||
 |------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|

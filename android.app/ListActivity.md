@@ -9,15 +9,15 @@ open class ListActivity : Activity
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](../android/content/Context.md) |||||
-| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) ||||
-| | | ↳ | [android.view.ContextThemeWrapper](../android/view/ContextThemeWrapper.md) |||
+| ↳ | [android.content.Context](../android.content/Context.md) |||||
+| | ↳ | [android.content.ContextWrapper](../android.content/ContextWrapper.md) ||||
+| | | ↳ | [android.view.ContextThemeWrapper](../android.view/ContextThemeWrapper.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.app.Activity](../android/app/Activity.md) ||
-| | | | | ↳ | [android.app.ListActivity](../android/app/ListActivity.md) |
+| | | | ↳ | [android.app.Activity](Activity.md) ||
+| | | | | ↳ | [android.app.ListActivity](ListActivity.md) |
 
-Known Direct Subclasses [LauncherActivity](../android/app/LauncherActivity.md), [PreferenceActivity](../android/preference/PreferenceActivity.md) [LauncherActivity](../android/app/LauncherActivity.md) Displays a list of all activities which can be performed for a given intent.
-[PreferenceActivity](../android/preference/PreferenceActivity.md) This is the base class for an activity to show a hierarchy of preferences to the user.
+Known Direct Subclasses [LauncherActivity](LauncherActivity.md), [PreferenceActivity](../android.preference/PreferenceActivity.md) [LauncherActivity](LauncherActivity.md) Displays a list of all activities which can be performed for a given intent.
+[PreferenceActivity](../android.preference/PreferenceActivity.md) This is the base class for an activity to show a hierarchy of preferences to the user.
 
 > [!CAUTION]
 > **This class was deprecated in API level 30.**
@@ -1169,8 +1169,8 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 
 | Public methods ||
 |---|---|
-| open [ListAdapter](../android/widget/ListAdapter.md)! | `https://developer.android.com/reference/kotlin/android/app/ListActivity#getListAdapter()()` Get the ListAdapter associated with this activity's ListView. |
-| open [ListView](../android/widget/ListView.md)! | `https://developer.android.com/reference/kotlin/android/app/ListActivity#getListView()()` Get the activity's list view widget. |
+| open [ListAdapter](../android.widget/ListAdapter.md)! | `https://developer.android.com/reference/kotlin/android/app/ListActivity#getListAdapter()()` Get the ListAdapter associated with this activity's ListView. |
+| open [ListView](../android.widget/ListView.md)! | `https://developer.android.com/reference/kotlin/android/app/ListActivity#getListView()()` Get the activity's list view widget. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/ListActivity#getSelectedItemId()()` Get the cursor row ID of the currently selected list item. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ListActivity#getSelectedItemPosition()()` Get the position of the currently selected list item. |
@@ -5106,8 +5106,8 @@ This method will be called when an item in the list is selected. Subclasses shou
 
 | Parameters ||
 |---|---|
-| `l` | [ListView](../android/widget/ListView.md)!: The ListView where the click happened |
-| `v` | [View](../android/view/View.md)!: The view that was clicked within the ListView |
+| `l` | [ListView](../android.widget/ListView.md)!: The ListView where the click happened |
+| `v` | [View](../android.view/View.md)!: The view that was clicked within the ListView |
 | `position` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The position of the view in the list |
 | --- | --- |
 | `id` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The row id of the item that was clicked |

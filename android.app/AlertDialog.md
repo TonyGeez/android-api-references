@@ -2,7 +2,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # AlertDialog
 
-Kotlin | [Java](../android/app/AlertDialog.md)
+Kotlin | [Java](AlertDialog.md)
 | --- | --- |
 
 ```
@@ -11,10 +11,10 @@ open class AlertDialog : Dialog, DialogInterface
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.app.Dialog](../android/app/Dialog.md) ||
-| | ↳ | [android.app.AlertDialog](../android/app/AlertDialog.md) |
+| ↳ | [android.app.Dialog](Dialog.md) ||
+| | ↳ | [android.app.AlertDialog](AlertDialog.md) |
 
-| Known Direct Subclasses [DatePickerDialog](../android/app/DatePickerDialog.md), [ProgressDialog](../android/app/ProgressDialog.md), [TimePickerDialog](../android/app/TimePickerDialog.md) |---|---| | [DatePickerDialog](../android/app/DatePickerDialog.md) | A simple dialog containing an `https://developer.android.com/reference/kotlin/android/widget/DatePicker.html#`. | | [ProgressDialog](../android/app/ProgressDialog.md) | A dialog showing a progress indicator and an optional text message or view. | | [TimePickerDialog](../android/app/TimePickerDialog.md) | A dialog that prompts the user for the time of day using a `https://developer.android.com/reference/kotlin/android/widget/TimePicker.html#`. | |
+| Known Direct Subclasses [DatePickerDialog](DatePickerDialog.md), [ProgressDialog](ProgressDialog.md), [TimePickerDialog](TimePickerDialog.md) |---|---| | [DatePickerDialog](DatePickerDialog.md) | A simple dialog containing an `https://developer.android.com/reference/kotlin/android/widget/DatePicker.html#`. | | [ProgressDialog](ProgressDialog.md) | A dialog showing a progress indicator and an optional text message or view. | | [TimePickerDialog](TimePickerDialog.md) | A dialog that prompts the user for the time of day using a `https://developer.android.com/reference/kotlin/android/widget/TimePicker.html#`. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 A subclass of Dialog that can display one, two or three buttons. If you only want to display a String in this dialog box, use the setMessage() method. If you want to display a more complex view, look up the FrameLayout called "custom" and add your view to it:
@@ -60,8 +60,8 @@ The AlertDialog class takes care of automatically setting `https://developer.and
 
 | Public methods ||
 |---|---|
-| open [Button](../android/widget/Button.md)! | `https://developer.android.com/reference/kotlin/android/app/AlertDialog#getButton(kotlin.Int)(whichButton: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets one of the buttons used in the dialog. |
-| open [ListView](../android/widget/ListView.md)! | `https://developer.android.com/reference/kotlin/android/app/AlertDialog#getListView()()` Gets the list view used in the dialog. |
+| open [Button](../android.widget/Button.md)! | `https://developer.android.com/reference/kotlin/android/app/AlertDialog#getButton(kotlin.Int)(whichButton: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets one of the buttons used in the dialog. |
+| open [ListView](../android.widget/ListView.md)! | `https://developer.android.com/reference/kotlin/android/app/AlertDialog#getListView()()` Gets the list view used in the dialog. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/AlertDialog#onKeyDown(kotlin.Int,%20android.view.KeyEvent)(keyCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, event: https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#)` A key was pressed down. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/AlertDialog#onKeyUp(kotlin.Int,%20android.view.KeyEvent)(keyCode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, event: https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#)` A key was released. |
@@ -191,7 +191,7 @@ The default alert dialog theme is defined by `https://developer.android.com/refe
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md)!: the parent context |
+| `context` | [Context](../android.content/Context.md)!: the parent context |
 
 **See Also**
 
@@ -223,7 +223,7 @@ The default alert dialog theme is defined by `https://developer.android.com/refe
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md)!: the parent context |
+| `context` | [Context](../android.content/Context.md)!: the parent context |
 
 **See Also**
 
@@ -249,7 +249,7 @@ Alternatively, the `themeResId` may be specified as `0` to use the parent `conte
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md)!: the parent context |
+| `context` | [Context](../android.content/Context.md)!: the parent context |
 | `themeResId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the resource ID of the theme against which to inflate this dialog, or `0` to use the parent `context`'s default alert dialog theme |
 
 **See Also**
@@ -310,7 +310,7 @@ Default implementation consumes `https://developer.android.com/reference/kotlin/
 | Parameters ||
 |---|---|
 | `keyCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The value in event.getKeyCode(). |
-| `event` | [KeyEvent](../android/view/KeyEvent.md): This value cannot be `null`. |
+| `event` | [KeyEvent](../android.view/KeyEvent.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -334,7 +334,7 @@ Default implementation consumes `https://developer.android.com/reference/kotlin/
 | Parameters ||
 |---|---|
 | `keyCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The value in event.getKeyCode(). |
-| `event` | [KeyEvent](../android/view/KeyEvent.md): This value cannot be `null`. |
+| `event` | [KeyEvent](../android.view/KeyEvent.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -379,7 +379,7 @@ Set a message to be sent when a button is pressed.
 |---|---|
 | `whichButton` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Which button to set the message for, can be one of `https://developer.android.com/reference/kotlin/android/content/DialogInterface.html#BUTTON_POSITIVE:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/content/DialogInterface.html#BUTTON_NEGATIVE:kotlin.Int`, or `https://developer.android.com/reference/kotlin/android/content/DialogInterface.html#BUTTON_NEUTRAL:kotlin.Int` |
 | `text` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!: The text to display in positive button. |
-| `msg` | [Message](../android/os/Message.md)!: The `https://developer.android.com/reference/kotlin/android/os/Message.html#` to be sent when clicked. |
+| `msg` | [Message](../android.os/Message.md)!: The `https://developer.android.com/reference/kotlin/android/os/Message.html#` to be sent when clicked. |
 | --- | --- |
 
 ### setButton
@@ -592,7 +592,7 @@ Set the view to display in that dialog, specifying the spacing to appear around 
 
 | Parameters ||
 |---|---|
-| `view` | [View](../android/view/View.md)!: The view to show in the content area of the dialog |
+| `view` | [View](../android.view/View.md)!: The view to show in the content area of the dialog |
 | `viewSpacingLeft` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Extra space to appear to the left of `view` |
 | `viewSpacingTop` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Extra space to appear above `view` |
 | --- | --- |
@@ -613,4 +613,4 @@ Similar to android.app.Activity#onCreate, you should initialize your dialog in t
 
 | Parameters ||
 |---|---|
-| `savedInstanceState` | [Bundle](../android/os/Bundle.md)!: If this dialog is being reinitialized after a the hosting activity was previously shut down, holds the result from the most recent call to `https://developer.android.com/reference/kotlin/android/app/Dialog#onSaveInstanceState()`, or null if this is the first time. |
+| `savedInstanceState` | [Bundle](../android.os/Bundle.md)!: If this dialog is being reinitialized after a the hosting activity was previously shut down, holds the result from the most recent call to `https://developer.android.com/reference/kotlin/android/app/Dialog#onSaveInstanceState()`, or null if this is the first time. |

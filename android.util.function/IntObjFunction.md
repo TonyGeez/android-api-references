@@ -6,7 +6,7 @@ Added in [API level 37.2](https://developer.android.com/guide/topics/manifest/us
 @FunctionalInterface interface IntObjFunction<T : Any!, R : Any!>
 ```
 
-| [android.util.function.IntObjFunction](../android/util/function/IntObjFunction.md) |
+| [android.util.function.IntObjFunction](IntObjFunction.md) |
 
 Represents a function that accepts an `int`-valued argument and an object-valued argument, and produces a result.
 

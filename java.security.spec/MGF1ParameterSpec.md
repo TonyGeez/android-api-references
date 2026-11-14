@@ -10,7 +10,7 @@ open class MGF1ParameterSpec : AlgorithmParameterSpec
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.spec.MGF1ParameterSpec](../java/security/spec/MGF1ParameterSpec.md) |
+| ↳ | [java.security.spec.MGF1ParameterSpec](MGF1ParameterSpec.md) |
 
 This class specifies the set of parameters used with mask generation function MGF1 in OAEP Padding and RSASSA-PSS signature scheme, as defined in the [PKCS#1 v2.2](https://tools.ietf.org/rfc/rfc8017.txt) standard.
 
@@ -47,29 +47,29 @@ HashAlgorithm ::= AlgorithmIdentifier {
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [MGF1ParameterSpec](../java/security/spec/MGF1ParameterSpec.md))`(`mdName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a parameter set for mask generation function MGF1 as defined in the PKCS #1 standard. |
+| [MGF1ParameterSpec](MGF1ParameterSpec.md))`(`mdName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a parameter set for mask generation function MGF1 as defined in the PKCS #1 standard. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDigestAlgorithm](../java/security/spec/MGF1ParameterSpec.md))`()` Returns the algorithm name of the message digest used by the mask generation function. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/security/spec/MGF1ParameterSpec.md))`()` <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDigestAlgorithm](MGF1ParameterSpec.md))`()` Returns the algorithm name of the message digest used by the mask generation function. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](MGF1ParameterSpec.md))`()` <br /> |
 
 | Properties ||
 |------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [MGF1ParameterSpec](../java/security/spec/MGF1ParameterSpec.md)! | [SHA1](../java/security/spec/MGF1ParameterSpec.md) The MGF1ParameterSpec which uses "SHA-1" message digest |
-| static [MGF1ParameterSpec](../java/security/spec/MGF1ParameterSpec.md)! | [SHA224](../java/security/spec/MGF1ParameterSpec.md) The MGF1ParameterSpec which uses "SHA-224" message digest |
-| static [MGF1ParameterSpec](../java/security/spec/MGF1ParameterSpec.md)! | [SHA256](../java/security/spec/MGF1ParameterSpec.md) The MGF1ParameterSpec which uses "SHA-256" message digest |
+| static [MGF1ParameterSpec](MGF1ParameterSpec.md)! | [SHA1](MGF1ParameterSpec.md) The MGF1ParameterSpec which uses "SHA-1" message digest |
+| static [MGF1ParameterSpec](MGF1ParameterSpec.md)! | [SHA224](MGF1ParameterSpec.md) The MGF1ParameterSpec which uses "SHA-224" message digest |
+| static [MGF1ParameterSpec](MGF1ParameterSpec.md)! | [SHA256](MGF1ParameterSpec.md) The MGF1ParameterSpec which uses "SHA-256" message digest |
 | --- | --- |
-| static [MGF1ParameterSpec](../java/security/spec/MGF1ParameterSpec.md)! | [SHA384](../java/security/spec/MGF1ParameterSpec.md) The MGF1ParameterSpec which uses "SHA-384" message digest |
-| static [MGF1ParameterSpec](../java/security/spec/MGF1ParameterSpec.md)! | [SHA3_224](../java/security/spec/MGF1ParameterSpec.md) The MGF1ParameterSpec which uses SHA3-224 message digest |
-| static [MGF1ParameterSpec](../java/security/spec/MGF1ParameterSpec.md)! | [SHA3_256](../java/security/spec/MGF1ParameterSpec.md) The MGF1ParameterSpec which uses SHA3-256 message digest |
+| static [MGF1ParameterSpec](MGF1ParameterSpec.md)! | [SHA384](MGF1ParameterSpec.md) The MGF1ParameterSpec which uses "SHA-384" message digest |
+| static [MGF1ParameterSpec](MGF1ParameterSpec.md)! | [SHA3_224](MGF1ParameterSpec.md) The MGF1ParameterSpec which uses SHA3-224 message digest |
+| static [MGF1ParameterSpec](MGF1ParameterSpec.md)! | [SHA3_256](MGF1ParameterSpec.md) The MGF1ParameterSpec which uses SHA3-256 message digest |
 | --- | --- |
-| static [MGF1ParameterSpec](../java/security/spec/MGF1ParameterSpec.md)! | [SHA3_384](../java/security/spec/MGF1ParameterSpec.md) The MGF1ParameterSpec which uses SHA3-384 message digest |
-| static [MGF1ParameterSpec](../java/security/spec/MGF1ParameterSpec.md)! | [SHA3_512](../java/security/spec/MGF1ParameterSpec.md) The MGF1ParameterSpec which uses SHA3-512 message digest |
-| static [MGF1ParameterSpec](../java/security/spec/MGF1ParameterSpec.md)! | [SHA512](../java/security/spec/MGF1ParameterSpec.md) The MGF1ParameterSpec which uses SHA-512 message digest |
+| static [MGF1ParameterSpec](MGF1ParameterSpec.md)! | [SHA3_384](MGF1ParameterSpec.md) The MGF1ParameterSpec which uses SHA3-384 message digest |
+| static [MGF1ParameterSpec](MGF1ParameterSpec.md)! | [SHA3_512](MGF1ParameterSpec.md) The MGF1ParameterSpec which uses SHA3-512 message digest |
+| static [MGF1ParameterSpec](MGF1ParameterSpec.md)! | [SHA512](MGF1ParameterSpec.md) The MGF1ParameterSpec which uses SHA-512 message digest |
 | --- | --- |
-| static [MGF1ParameterSpec](../java/security/spec/MGF1ParameterSpec.md)! | [SHA512_224](../java/security/spec/MGF1ParameterSpec.md) The MGF1ParameterSpec which uses SHA-512/224 message digest |
-| static [MGF1ParameterSpec](../java/security/spec/MGF1ParameterSpec.md)! | [SHA512_256](../java/security/spec/MGF1ParameterSpec.md) The MGF1ParameterSpec which uses SHA-512/256 message digest |
+| static [MGF1ParameterSpec](MGF1ParameterSpec.md)! | [SHA512_224](MGF1ParameterSpec.md) The MGF1ParameterSpec which uses SHA-512/224 message digest |
+| static [MGF1ParameterSpec](MGF1ParameterSpec.md)! | [SHA512_256](MGF1ParameterSpec.md) The MGF1ParameterSpec which uses SHA-512/256 message digest |
 
 ## Public constructors
 

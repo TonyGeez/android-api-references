@@ -8,7 +8,7 @@ class RoleManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.role.RoleManager](../android/app/role/RoleManager.md) |
+| ↳ | [android.app.role.RoleManager](RoleManager.md) |
 
 This class provides information about and manages roles.
 
@@ -42,7 +42,7 @@ Upon becoming a role holder, the application may be granted certain privileges t
 
 | Public methods ||
 |---|---|
-| [Intent](../android/content/Intent.md) | `https://developer.android.com/reference/kotlin/android/app/role/RoleManager#createRequestRoleIntent(kotlin.String)(roleName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns an `Intent` suitable for passing to `https://developer.android.com/reference/kotlin/android/app/Activity.html#startActivityForResult(android.content.Intent,%20kotlin.Int)` which prompts the user to grant a role to this application. |
+| [Intent](../android.content/Intent.md) | `https://developer.android.com/reference/kotlin/android/app/role/RoleManager#createRequestRoleIntent(kotlin.String)(roleName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns an `Intent` suitable for passing to `https://developer.android.com/reference/kotlin/android/app/Activity.html#startActivityForResult(android.content.Intent,%20kotlin.Int)` which prompts the user to grant a role to this application. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/role/RoleManager#isRoleAvailable(kotlin.String)(roleName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Check whether a role is available in the system. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/role/RoleManager#isRoleHeld(kotlin.String)(roleName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Check whether the calling application is holding a particular role. |
 | --- | --- |

@@ -5,7 +5,7 @@ Deprecated in [API level 26](https://developer.android.com/guide/topics/manifest
 
 # TestMethod
 
-Kotlin| [Java](../android/test/suitebuilder/TestMethod.md) 
+Kotlin| [Java](TestMethod.md) 
 | --- | --- |
 
 ```
@@ -14,7 +14,7 @@ open class TestMethod
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.test.suitebuilder.TestMethod](../android/test/suitebuilder/TestMethod.md) |
+| ↳ | [android.test.suitebuilder.TestMethod](TestMethod.md) |
 
 | **This class was deprecated in API level 26.**
 |
@@ -26,22 +26,22 @@ Represents a test to be run. Can be constructed without instantiating the TestCa
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [TestMethod](../android/test/suitebuilder/TestMethod.md))`(`method:` ` [Method](../java/lang/reflect/Method.md)!`, `enclosingClass:` ` [Class](../java/lang/Class.md)<out` `TestCase!>!`)` <br /> |
-| [TestMethod](../android/test/suitebuilder/TestMethod.md))`(`methodName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `enclosingClass:` ` [Class](../java/lang/Class.md)<out` `TestCase!>!`)` <br /> |
-| [TestMethod](../android/test/suitebuilder/TestMethod.md))`(`testCase:` `TestCase!`)` <br /> |
+| [TestMethod](TestMethod.md))`(`method:` ` [Method](../java.lang.reflect/Method.md)!`, `enclosingClass:` ` [Class](../java.lang/Class.md)<out` `TestCase!>!`)` <br /> |
+| [TestMethod](TestMethod.md))`(`methodName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `enclosingClass:` ` [Class](../java.lang/Class.md)<out` `TestCase!>!`)` <br /> |
+| [TestMethod](TestMethod.md))`(`testCase:` `TestCase!`)` <br /> |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openTestCase! | [createTest](../android/test/suitebuilder/TestMethod.md))`()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/test/suitebuilder/TestMethod.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
-| openT | [getAnnotation](../android/test/suitebuilder/TestMethod.md))`(`annotationClass:` ` [Class](../java/lang/Class.md)<T>!`)` <br /> |
+| openTestCase! | [createTest](TestMethod.md))`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](TestMethod.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
+| openT | [getAnnotation](TestMethod.md))`(`annotationClass:` ` [Class](../java.lang/Class.md)<T>!`)` <br /> |
 | --- | --- |
-| open [Class](../java/lang/Class.md)\<outTestCase!\>! | [getEnclosingClass](../android/test/suitebuilder/TestMethod.md))`()` <br /> |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getEnclosingClassname](../android/test/suitebuilder/TestMethod.md))`()` <br /> |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](../android/test/suitebuilder/TestMethod.md))`()` <br /> |
+| open [Class](../java.lang/Class.md)\<outTestCase!\>! | [getEnclosingClass](TestMethod.md))`()` <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getEnclosingClassname](TestMethod.md))`()` <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](TestMethod.md))`()` <br /> |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/test/suitebuilder/TestMethod.md))`()` <br /> |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/test/suitebuilder/TestMethod.md))`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](TestMethod.md))`()` <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](TestMethod.md))`()` <br /> |
 
 ## Public constructors
 

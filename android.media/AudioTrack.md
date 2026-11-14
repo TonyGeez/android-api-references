@@ -8,7 +8,7 @@ open class AudioTrack : AudioRouting, VolumeAutomation
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.AudioTrack](../android/media/AudioTrack.md) |
+| ↳ | [android.media.AudioTrack](AudioTrack.md) |
 
 The AudioTrack class manages and plays a single audio resource for Java applications. It allows streaming of PCM audio buffers to the audio sink for playback. This is achieved by "pushing" the data to the AudioTrack object using one of the `https://developer.android.com/reference/kotlin/android/media/AudioTrack#write(kotlin.ByteArray,%20kotlin.Int,%20kotlin.Int)`, `https://developer.android.com/reference/kotlin/android/media/AudioTrack#write(kotlin.ShortArray,%20kotlin.Int,%20kotlin.Int)`, and `https://developer.android.com/reference/kotlin/android/media/AudioTrack#write(kotlin.FloatArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)` methods.
 
@@ -98,11 +98,11 @@ For the streaming mode, data will be written to the audio sink in chunks of size
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioTrack#addOnRoutingChangedListener(android.media.AudioTrack.OnRoutingChangedListener,%20android.os.Handler)(listener: https://developer.android.com/reference/kotlin/android/media/AudioTrack.OnRoutingChangedListener!, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#!)` Adds an `https://developer.android.com/reference/kotlin/android/media/AudioTrack.OnRoutingChangedListener` to receive notifications of routing changes on this AudioTrack. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioTrack#attachAuxEffect(kotlin.Int)(effectId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Attaches an auxiliary effect to the audio track. |
-| open [VolumeShaper](../android/media/VolumeShaper.md) | `https://developer.android.com/reference/kotlin/android/media/AudioTrack#createVolumeShaper(android.media.VolumeShaper.Configuration)(configuration: https://developer.android.com/reference/kotlin/android/media/VolumeShaper.Configuration)` Returns a `https://developer.android.com/reference/kotlin/android/media/VolumeShaper` object that can be used modify the volume envelope of the player or track. |
+| open [VolumeShaper](VolumeShaper.md) | `https://developer.android.com/reference/kotlin/android/media/AudioTrack#createVolumeShaper(android.media.VolumeShaper.Configuration)(configuration: https://developer.android.com/reference/kotlin/android/media/VolumeShaper.Configuration)` Returns a `https://developer.android.com/reference/kotlin/android/media/VolumeShaper` object that can be used modify the volume envelope of the player or track. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioTrack#flush()()` Flushes the audio data currently queued for playback. |
 | --- | --- |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioTrack#flushWrittenFramesFromPosition(kotlin.Long,%20kotlin.Int)(positionInFrames: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, accuracy: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flush all data from the given position. |
-| open [AudioAttributes](../android/media/AudioAttributes.md) | `https://developer.android.com/reference/kotlin/android/media/AudioTrack#getAudioAttributes()()` Returns the `https://developer.android.com/reference/kotlin/android/media/AudioAttributes` used in configuration. |
+| open [AudioAttributes](AudioAttributes.md) | `https://developer.android.com/reference/kotlin/android/media/AudioTrack#getAudioAttributes()()` Returns the `https://developer.android.com/reference/kotlin/android/media/AudioAttributes` used in configuration. |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioTrack#getAudioDescriptionMixLeveldB()()` Returns the Audio Description mix level in dB. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioTrack#getAudioFormat()()` Returns the configured audio data encoding. |
@@ -117,11 +117,11 @@ For the streaming mode, data will be written to the audio sink in chunks of size
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioTrack#getDualMonoMode()()` Returns the Dual Mono mode presentation setting. |
 | open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioTrack#getFlushWrittenFramesFromPositionSupport(android.media.AudioFormat,%20android.media.AudioAttributes)(format: https://developer.android.com/reference/kotlin/android/media/AudioFormat, attributes: https://developer.android.com/reference/kotlin/android/media/AudioAttributes)` Returns a bit mask representing the current feature support for `https://developer.android.com/reference/kotlin/android/media/AudioTrack#flushWrittenFramesFromPosition(kotlin.Long,%20kotlin.Int)` for the AudioTrack in offload mode that is created with the given `https://developer.android.com/reference/kotlin/android/media/AudioFormat` and `https://developer.android.com/reference/kotlin/android/media/AudioAttributes`. |
 | --- | --- |
-| open [AudioFormat](../android/media/AudioFormat.md) | `https://developer.android.com/reference/kotlin/android/media/AudioTrack#getFormat()()` Returns the configured `AudioTrack` format. |
-| open [LogSessionId](../android/media/metrics/LogSessionId.md) | `https://developer.android.com/reference/kotlin/android/media/AudioTrack#getLogSessionId()()` Returns the `https://developer.android.com/reference/kotlin/android/media/metrics/LogSessionId`. |
+| open [AudioFormat](AudioFormat.md) | `https://developer.android.com/reference/kotlin/android/media/AudioTrack#getFormat()()` Returns the configured `AudioTrack` format. |
+| open [LogSessionId](../android.media.metrics/LogSessionId.md) | `https://developer.android.com/reference/kotlin/android/media/AudioTrack#getLogSessionId()()` Returns the `https://developer.android.com/reference/kotlin/android/media/metrics/LogSessionId`. |
 | open static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioTrack#getMaxVolume()()` Returns the maximum gain value, which is greater than or equal to 1. |
 | --- | --- |
-| open [PersistableBundle](../android/os/PersistableBundle.md)! | `https://developer.android.com/reference/kotlin/android/media/AudioTrack#getMetrics()()` Return Metrics data about the current AudioTrack instance. |
+| open [PersistableBundle](../android.os/PersistableBundle.md)! | `https://developer.android.com/reference/kotlin/android/media/AudioTrack#getMetrics()()` Return Metrics data about the current AudioTrack instance. |
 | open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioTrack#getMinBufferSize(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(sampleRateInHz: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, channelConfig: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, audioFormat: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the estimated minimum buffer size required for an AudioTrack object to be created in the `https://developer.android.com/reference/kotlin/android/media/AudioTrack#MODE_STREAM:kotlin.Int` mode. |
 | open static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioTrack#getMinVolume()()` Returns the minimum gain value, which is the constant 0. |
 | --- | --- |
@@ -134,14 +134,14 @@ For the streaming mode, data will be written to the audio sink in chunks of size
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioTrack#getPlayState()()` Returns the playback state of the AudioTrack instance. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioTrack#getPlaybackHeadPosition()()` Returns the playback head position expressed in frames. |
-| open [PlaybackParams](../android/media/PlaybackParams.md) | `https://developer.android.com/reference/kotlin/android/media/AudioTrack#getPlaybackParams()()` Returns the current playback parameters. |
+| open [PlaybackParams](PlaybackParams.md) | `https://developer.android.com/reference/kotlin/android/media/AudioTrack#getPlaybackParams()()` Returns the current playback parameters. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioTrack#getPlaybackRate()()` Returns the current playback sample rate rate in Hz. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioTrack#getPositionNotificationPeriod()()` Returns the notification update period expressed in frames. |
-| open [AudioDeviceInfo](../android/media/AudioDeviceInfo.md)! | `https://developer.android.com/reference/kotlin/android/media/AudioTrack#getPreferredDevice()()` Returns the selected output specified by `https://developer.android.com/reference/kotlin/android/media/AudioTrack#setPreferredDevice(android.media.AudioDeviceInfo)`. |
-| open [AudioDeviceInfo](../android/media/AudioDeviceInfo.md)! | `https://developer.android.com/reference/kotlin/android/media/AudioTrack#getRoutedDevice()()` Returns an `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo` identifying the current routing of this AudioTrack. |
+| open [AudioDeviceInfo](AudioDeviceInfo.md)! | `https://developer.android.com/reference/kotlin/android/media/AudioTrack#getPreferredDevice()()` Returns the selected output specified by `https://developer.android.com/reference/kotlin/android/media/AudioTrack#setPreferredDevice(android.media.AudioDeviceInfo)`. |
+| open [AudioDeviceInfo](AudioDeviceInfo.md)! | `https://developer.android.com/reference/kotlin/android/media/AudioTrack#getRoutedDevice()()` Returns an `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo` identifying the current routing of this AudioTrack. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AudioDeviceInfo](../android/media/AudioDeviceInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/media/AudioTrack#getRoutedDevices()()` Returns a List of `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo` identifying the current routing of this AudioTrack. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AudioDeviceInfo](AudioDeviceInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/media/AudioTrack#getRoutedDevices()()` Returns a List of `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo` identifying the current routing of this AudioTrack. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioTrack#getSampleRate()()` Returns the configured audio source sample rate in Hz. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/media/AudioTrack#getStartThresholdInFrames()()` Returns the streaming start threshold of the `AudioTrack`. |
 | --- | --- |
@@ -647,8 +647,8 @@ Class constructor with `https://developer.android.com/reference/kotlin/android/m
 
 | Parameters ||
 |---|---|
-| `attributes` | [AudioAttributes](../android/media/AudioAttributes.md)!: a non-null `https://developer.android.com/reference/kotlin/android/media/AudioAttributes` instance. |
-| `format` | [AudioFormat](../android/media/AudioFormat.md)!: a non-null `https://developer.android.com/reference/kotlin/android/media/AudioFormat` instance describing the format of the data that will be played through this AudioTrack. See `https://developer.android.com/reference/kotlin/android/media/AudioFormat.Builder` for configuring the audio format parameters such as encoding, channel mask and sample rate. |
+| `attributes` | [AudioAttributes](AudioAttributes.md)!: a non-null `https://developer.android.com/reference/kotlin/android/media/AudioAttributes` instance. |
+| `format` | [AudioFormat](AudioFormat.md)!: a non-null `https://developer.android.com/reference/kotlin/android/media/AudioFormat` instance describing the format of the data that will be played through this AudioTrack. See `https://developer.android.com/reference/kotlin/android/media/AudioFormat.Builder` for configuring the audio format parameters such as encoding, channel mask and sample rate. |
 | `bufferSizeInBytes` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the total size (in bytes) of the internal buffer where audio data is read from for playback. This should be a nonzero multiple of the frame size in bytes. If the track's creation mode is `https://developer.android.com/reference/kotlin/android/media/AudioTrack#MODE_STATIC:kotlin.Int`, this is the maximum length sample, or audio clip, that can be played by this instance. If the track's creation mode is `https://developer.android.com/reference/kotlin/android/media/AudioTrack#MODE_STREAM:kotlin.Int`, this should be the desired buffer size for the `AudioTrack` to satisfy the application's latency requirements. If `bufferSizeInBytes` is less than the minimum buffer size for the output sink, it is increased to the minimum buffer size. The method `https://developer.android.com/reference/kotlin/android/media/AudioTrack#getBufferSizeInFrames()` returns the actual size in frames of the buffer created, which determines the minimum frequency to write to the streaming `AudioTrack` to avoid underrun. See `https://developer.android.com/reference/kotlin/android/media/AudioTrack#getMinBufferSize(kotlin.Int,%20kotlin.Int,%20kotlin.Int)` to determine the estimated minimum buffer size for an AudioTrack instance in streaming mode. |
 | --- | --- |
 | `mode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): streaming or static buffer. See `https://developer.android.com/reference/kotlin/android/media/AudioTrack#MODE_STATIC:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/media/AudioTrack#MODE_STREAM:kotlin.Int`. |
@@ -743,7 +743,7 @@ Adds an `https://developer.android.com/reference/kotlin/android/media/AudioTrack
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): Specifies the `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` object to control execution. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): Specifies the `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` object to control execution. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `listener` | [AudioTrack.OnCodecFormatChangedListener](../android/media/AudioTrack.OnCodecFormatChangedListener.md): The `https://developer.android.com/reference/kotlin/android/media/AudioTrack.OnCodecFormatChangedListener` interface to receive notifications of codec events. This value cannot be `null`. |
 
 ### addOnRoutingChangedListener
@@ -762,7 +762,7 @@ Adds an `https://developer.android.com/reference/kotlin/android/media/AudioRouti
 | Parameters ||
 |---|---|
 | `listener` | [AudioRouting.OnRoutingChangedListener](../android/media/AudioRouting.OnRoutingChangedListener.md)!: The `https://developer.android.com/reference/kotlin/android/media/AudioRouting.OnRoutingChangedListener` interface to receive notifications of rerouting events. |
-| `handler` | [Handler](../android/os/Handler.md)!: Specifies the `https://developer.android.com/reference/kotlin/android/os/Handler.html#` object for the thread on which to execute the callback. If `null`, the `https://developer.android.com/reference/kotlin/android/os/Handler.html#` associated with the main `https://developer.android.com/reference/kotlin/android/os/Looper.html#` will be used. |
+| `handler` | [Handler](../android.os/Handler.md)!: Specifies the `https://developer.android.com/reference/kotlin/android/os/Handler.html#` object for the thread on which to execute the callback. If `null`, the `https://developer.android.com/reference/kotlin/android/os/Handler.html#` associated with the main `https://developer.android.com/reference/kotlin/android/os/Looper.html#` will be used. |
 
 ### addOnRoutingChangedListener
 
@@ -783,7 +783,7 @@ Adds an `https://developer.android.com/reference/kotlin/android/media/AudioTrack
 | Parameters ||
 |---|---|
 | `listener` | [AudioTrack.OnRoutingChangedListener](../android/media/AudioTrack.OnRoutingChangedListener.md)!: The `https://developer.android.com/reference/kotlin/android/media/AudioTrack.OnRoutingChangedListener` interface to receive notifications of rerouting events. |
-| `handler` | [Handler](../android/os/Handler.md)!: Specifies the `https://developer.android.com/reference/kotlin/android/os/Handler.html#` object for the thread on which to execute the callback. If `null`, the `https://developer.android.com/reference/kotlin/android/os/Handler.html#` associated with the main `https://developer.android.com/reference/kotlin/android/os/Looper.html#` will be used. |
+| `handler` | [Handler](../android.os/Handler.md)!: Specifies the `https://developer.android.com/reference/kotlin/android/os/Handler.html#` object for the thread on which to execute the callback. If `null`, the `https://developer.android.com/reference/kotlin/android/os/Handler.html#` associated with the main `https://developer.android.com/reference/kotlin/android/os/Looper.html#` will be used. |
 
 ### attachAuxEffect
 
@@ -1057,8 +1057,8 @@ Returns a bit mask representing the current feature support for `https://develop
 
 | Parameters ||
 |---|---|
-| `format` | [AudioFormat](../android/media/AudioFormat.md): the AudioFormat to create AudioTrack. This value cannot be `null`. |
-| `attributes` | [AudioAttributes](../android/media/AudioAttributes.md): the AudioAttributes to create AudioTrack. This value cannot be `null`. |
+| `format` | [AudioFormat](AudioFormat.md): the AudioFormat to create AudioTrack. This value cannot be `null`. |
+| `attributes` | [AudioAttributes](AudioAttributes.md): the AudioAttributes to create AudioTrack. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -1417,7 +1417,7 @@ The audio data at the returned position may either already have been presented, 
 
 | Parameters ||
 |---|---|
-| `timestamp` | [AudioTimestamp](../android/media/AudioTimestamp.md)!: a reference to a non-null AudioTimestamp instance allocated and owned by caller. |
+| `timestamp` | [AudioTimestamp](AudioTimestamp.md)!: a reference to a non-null AudioTimestamp instance allocated and owned by caller. |
 
 | Return ||
 |---|---|
@@ -1481,8 +1481,8 @@ Also note that this query only provides information about the support of an audi
 
 | Parameters ||
 |---|---|
-| `format` | [AudioFormat](../android/media/AudioFormat.md): a non-null `https://developer.android.com/reference/kotlin/android/media/AudioFormat` instance describing the format of the audio data. |
-| `attributes` | [AudioAttributes](../android/media/AudioAttributes.md): a non-null `https://developer.android.com/reference/kotlin/android/media/AudioAttributes` instance. |
+| `format` | [AudioFormat](AudioFormat.md): a non-null `https://developer.android.com/reference/kotlin/android/media/AudioFormat` instance describing the format of the audio data. |
+| `attributes` | [AudioAttributes](AudioAttributes.md): a non-null `https://developer.android.com/reference/kotlin/android/media/AudioAttributes` instance. |
 
 | Return ||
 |---|---|
@@ -1551,7 +1551,7 @@ Registers a callback for the notification of stream events. This callback can on
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` to handle the callbacks. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` to handle the callbacks. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `eventCallback` | [AudioTrack.StreamEventCallback](../android/media/AudioTrack.StreamEventCallback.md): the callback to receive the stream event notifications. This value cannot be `null`. |
 
 ### release
@@ -1727,7 +1727,7 @@ Sets a `https://developer.android.com/reference/kotlin/android/media/metrics/Log
 
 | Parameters ||
 |---|---|
-| `logSessionId` | [LogSessionId](../android/media/metrics/LogSessionId.md): a `https://developer.android.com/reference/kotlin/android/media/metrics/LogSessionId` instance which is used to identify this object to the metrics service. Proper generated Ids must be obtained from the Java metrics service and should be considered opaque. Use `https://developer.android.com/reference/kotlin/android/media/metrics/LogSessionId#LOG_SESSION_ID_NONE:android.media.metrics.LogSessionId` to remove the logSessionId association. This value cannot be `null`. |
+| `logSessionId` | [LogSessionId](../android.media.metrics/LogSessionId.md): a `https://developer.android.com/reference/kotlin/android/media/metrics/LogSessionId` instance which is used to identify this object to the metrics service. Proper generated Ids must be obtained from the Java metrics service and should be considered opaque. Use `https://developer.android.com/reference/kotlin/android/media/metrics/LogSessionId#LOG_SESSION_ID_NONE:android.media.metrics.LogSessionId` to remove the logSessionId association. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -1834,7 +1834,7 @@ Sets the playback parameters. This method returns failure if it cannot apply the
 
 | Parameters ||
 |---|---|
-| `params` | [PlaybackParams](../android/media/PlaybackParams.md): see `https://developer.android.com/reference/kotlin/android/media/PlaybackParams`. In particular, speed, pitch, and audio mode should be set. This value cannot be `null`. |
+| `params` | [PlaybackParams](PlaybackParams.md): see `https://developer.android.com/reference/kotlin/android/media/PlaybackParams`. In particular, speed, pitch, and audio mode should be set. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -1871,7 +1871,7 @@ Sets the listener the AudioTrack notifies when a previously set marker is reache
 | Parameters ||
 |---|---|
 | `listener` | [AudioTrack.OnPlaybackPositionUpdateListener](../android/media/AudioTrack.OnPlaybackPositionUpdateListener.md)!: |
-| `handler` | [Handler](../android/os/Handler.md)!: the Handler that will receive the event notification messages. |
+| `handler` | [Handler](../android.os/Handler.md)!: the Handler that will receive the event notification messages. |
 
 ### setPlaybackRate
 
@@ -1923,7 +1923,7 @@ Specifies an audio device (via an `https://developer.android.com/reference/kotli
 
 | Parameters ||
 |---|---|
-| `deviceInfo` | [AudioDeviceInfo](../android/media/AudioDeviceInfo.md)!: The `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo` specifying the audio sink. If deviceInfo is null, default routing is restored. |
+| `deviceInfo` | [AudioDeviceInfo](AudioDeviceInfo.md)!: The `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo` specifying the audio sink. If deviceInfo is null, default routing is restored. |
 
 | Return ||
 |---|---|
@@ -1941,7 +1941,7 @@ Sets the audio presentation. If the audio presentation is invalid then `https://
 
 | Parameters ||
 |---|---|
-| `presentation` | [AudioPresentation](../android/media/AudioPresentation.md): see `https://developer.android.com/reference/kotlin/android/media/AudioPresentation`. In particular, id should be set. This value cannot be `null`. |
+| `presentation` | [AudioPresentation](AudioPresentation.md): see `https://developer.android.com/reference/kotlin/android/media/AudioPresentation`. In particular, id should be set. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -2175,7 +2175,7 @@ In static buffer mode, copies the data to the buffer starting at offset 0, and t
 
 | Parameters ||
 |---|---|
-| `audioData` | [ByteBuffer](../java/nio/ByteBuffer.md): the buffer that holds the data to write, starting at the position reported by `audioData.position()`. Note that upon return, the buffer position (`audioData.position()`) will have been advanced to reflect the amount of data that was successfully written to the AudioTrack. This value cannot be `null`. |
+| `audioData` | [ByteBuffer](../java.nio/ByteBuffer.md): the buffer that holds the data to write, starting at the position reported by `audioData.position()`. Note that upon return, the buffer position (`audioData.position()`) will have been advanced to reflect the amount of data that was successfully written to the AudioTrack. This value cannot be `null`. |
 | `sizeInBytes` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): number of bytes to write. It is recommended but not enforced that the number of bytes requested be a multiple of the frame size (sample size in bytes multiplied by the channel count). Note this may differ from `audioData.remaining()`, but cannot exceed it. |
 | `writeMode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): one of `https://developer.android.com/reference/kotlin/android/media/AudioTrack#WRITE_BLOCKING:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/media/AudioTrack#WRITE_NON_BLOCKING:kotlin.Int`. It has no effect in static mode. With `https://developer.android.com/reference/kotlin/android/media/AudioTrack#WRITE_BLOCKING:kotlin.Int`, the write will block until all data has been written to the audio sink. With `https://developer.android.com/reference/kotlin/android/media/AudioTrack#WRITE_NON_BLOCKING:kotlin.Int`, the write will return immediately after queuing as much audio data for playback as possible without blocking. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/media/AudioTrack#WRITE_BLOCKING:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/AudioTrack#WRITE_NON_BLOCKING:kotlin.Int` |
 | --- | --- |
@@ -2201,7 +2201,7 @@ Writes the audio data to the audio sink for playback in streaming mode on a HW_A
 
 | Parameters ||
 |---|---|
-| `audioData` | [ByteBuffer](../java/nio/ByteBuffer.md): the buffer that holds the data to write, starting at the position reported by `audioData.position()`. Note that upon return, the buffer position (`audioData.position()`) will have been advanced to reflect the amount of data that was successfully written to the AudioTrack. This value cannot be `null`. |
+| `audioData` | [ByteBuffer](../java.nio/ByteBuffer.md): the buffer that holds the data to write, starting at the position reported by `audioData.position()`. Note that upon return, the buffer position (`audioData.position()`) will have been advanced to reflect the amount of data that was successfully written to the AudioTrack. This value cannot be `null`. |
 | `sizeInBytes` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): number of bytes to write. It is recommended but not enforced that the number of bytes requested be a multiple of the frame size (sample size in bytes multiplied by the channel count). Note this may differ from `audioData.remaining()`, but cannot exceed it. |
 | `writeMode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): one of `https://developer.android.com/reference/kotlin/android/media/AudioTrack#WRITE_BLOCKING:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/media/AudioTrack#WRITE_NON_BLOCKING:kotlin.Int`. With `https://developer.android.com/reference/kotlin/android/media/AudioTrack#WRITE_BLOCKING:kotlin.Int`, the write will block until all data has been written to the audio sink. With `https://developer.android.com/reference/kotlin/android/media/AudioTrack#WRITE_NON_BLOCKING:kotlin.Int`, the write will return immediately after queuing as much audio data for playback as possible without blocking. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/media/AudioTrack#WRITE_BLOCKING:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/media/AudioTrack#WRITE_NON_BLOCKING:kotlin.Int` |
 | --- | --- |

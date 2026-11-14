@@ -10,7 +10,7 @@ class UpdateSignalsRequest
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.adservices.signals.UpdateSignalsRequest](../android/adservices/signals/UpdateSignalsRequest.md) |
+| ↳ | [android.adservices.signals.UpdateSignalsRequest](UpdateSignalsRequest.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 37.**
@@ -30,7 +30,7 @@ The request object for updateSignals.
 | Public methods ||
 |---|---|
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/signals/UpdateSignalsRequest#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` <br /> |
-| [Uri](../android/net/Uri.md) | `https://developer.android.com/reference/kotlin/android/adservices/signals/UpdateSignalsRequest#getUpdateUri()()` <br /> |
+| [Uri](../android.net/Uri.md) | `https://developer.android.com/reference/kotlin/android/adservices/signals/UpdateSignalsRequest#getUpdateUri()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/signals/UpdateSignalsRequest#hashCode()()` <br /> |
 | --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/signals/UpdateSignalsRequest#toString()()` <br /> |

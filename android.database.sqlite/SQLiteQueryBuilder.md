@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # SQLiteQueryBuilder
 
-Kotlin| [Java](../android/database/sqlite/SQLiteQueryBuilder.md) 
+Kotlin| [Java](SQLiteQueryBuilder.md) 
 | --- | --- |
 
 ```
@@ -13,67 +13,67 @@ open class SQLiteQueryBuilder
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.database.sqlite.SQLiteQueryBuilder](../android/database/sqlite/SQLiteQueryBuilder.md) |
+| ↳ | [android.database.sqlite.SQLiteQueryBuilder](SQLiteQueryBuilder.md) |
 
-This is a convenience class that helps build SQL queries to be sent to [SQLiteDatabase](../android/database/sqlite/SQLiteDatabase.md) objects.
+This is a convenience class that helps build SQL queries to be sent to [SQLiteDatabase](SQLiteDatabase.md) objects.
 
 This class is often used to compose a SQL query from client-supplied fragments. Best practice to protect against invalid or illegal SQL is to set the following:
 
-- [setStrict](../android/database/sqlite/SQLiteQueryBuilder.md))true.
-- [setProjectionMap](../android/database/sqlite/SQLiteQueryBuilder.md))with the list of queryable columns.
-- [setStrictColumns](../android/database/sqlite/SQLiteQueryBuilder.md))true.
-- [setStrictGrammar](../android/database/sqlite/SQLiteQueryBuilder.md))true.
+- [setStrict](SQLiteQueryBuilder.md))true.
+- [setProjectionMap](SQLiteQueryBuilder.md))with the list of queryable columns.
+- [setStrictColumns](SQLiteQueryBuilder.md))true.
+- [setStrictGrammar](SQLiteQueryBuilder.md))true.
 
 ## Summary
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SQLiteQueryBuilder](../android/database/sqlite/SQLiteQueryBuilder.md))`()` <br /> |
+| [SQLiteQueryBuilder](SQLiteQueryBuilder.md))`()` <br /> |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [appendColumns](../android/database/sqlite/SQLiteQueryBuilder.md))`(`s:` ` [StringBuilder](../java/lang/StringBuilder.md)!`, `columns:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Add the names that are non-null in columns to s, separating them with commas. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [appendWhere](../android/database/sqlite/SQLiteQueryBuilder.md))`(`inWhere:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)`)` Append a chunk to the`WHERE`clause of the query. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [appendWhereEscapeString](../android/database/sqlite/SQLiteQueryBuilder.md))`(`inWhere:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Append a chunk to the`WHERE`clause of the query. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [appendColumns](SQLiteQueryBuilder.md))`(`s:` ` [StringBuilder](../java.lang/StringBuilder.md)!`, `columns:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Add the names that are non-null in columns to s, separating them with commas. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [appendWhere](SQLiteQueryBuilder.md))`(`inWhere:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)`)` Append a chunk to the`WHERE`clause of the query. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [appendWhereEscapeString](SQLiteQueryBuilder.md))`(`inWhere:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Append a chunk to the`WHERE`clause of the query. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [appendWhereStandalone](../android/database/sqlite/SQLiteQueryBuilder.md))`(`inWhere:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)`)` Add a standalone chunk to the`WHERE`clause of this query. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [buildQuery](../android/database/sqlite/SQLiteQueryBuilder.md))`(`projectionIn:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `selection:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `groupBy:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `having:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `sortOrder:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `limit:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Construct a`SELECT`statement suitable for use in a group of`SELECT`statements that will be joined through`UNION`operators in buildUnionQuery. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [buildQuery](../android/database/sqlite/SQLiteQueryBuilder.md))`(`projectionIn:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `selection:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `selectionArgs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `groupBy:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `having:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `sortOrder:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `limit:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [appendWhereStandalone](SQLiteQueryBuilder.md))`(`inWhere:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)`)` Add a standalone chunk to the`WHERE`clause of this query. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [buildQuery](SQLiteQueryBuilder.md))`(`projectionIn:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `selection:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `groupBy:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `having:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `sortOrder:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `limit:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Construct a`SELECT`statement suitable for use in a group of`SELECT`statements that will be joined through`UNION`operators in buildUnionQuery. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [buildQuery](SQLiteQueryBuilder.md))`(`projectionIn:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `selection:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `selectionArgs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `groupBy:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `having:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `sortOrder:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `limit:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
 | --- | --- |
-| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [buildQueryString](../android/database/sqlite/SQLiteQueryBuilder.md))`(`distinct:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `tables:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `columns:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `where:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `groupBy:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `having:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `orderBy:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `limit:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Build an SQL query string from the given clauses. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [buildUnionQuery](../android/database/sqlite/SQLiteQueryBuilder.md))`(`subQueries:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `sortOrder:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `limit:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Given a set of subqueries, all of which are`SELECT`statements, construct a query that returns the union of what those subqueries return. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [buildUnionSubQuery](../android/database/sqlite/SQLiteQueryBuilder.md))`(`typeDiscriminatorColumn:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `unionColumns:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `columnsPresentInTable:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `computedColumnsOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `typeDiscriminatorValue:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `selection:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `groupBy:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `having:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Construct a`SELECT`statement suitable for use in a group of`SELECT`statements that will be joined through`UNION`operators in buildUnionQuery. |
+| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [buildQueryString](SQLiteQueryBuilder.md))`(`distinct:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `tables:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `columns:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `where:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `groupBy:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `having:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `orderBy:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `limit:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Build an SQL query string from the given clauses. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [buildUnionQuery](SQLiteQueryBuilder.md))`(`subQueries:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `sortOrder:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `limit:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Given a set of subqueries, all of which are`SELECT`statements, construct a query that returns the union of what those subqueries return. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [buildUnionSubQuery](SQLiteQueryBuilder.md))`(`typeDiscriminatorColumn:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `unionColumns:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `columnsPresentInTable:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `computedColumnsOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `typeDiscriminatorValue:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `selection:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `groupBy:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `having:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Construct a`SELECT`statement suitable for use in a group of`SELECT`statements that will be joined through`UNION`operators in buildUnionQuery. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [buildUnionSubQuery](../android/database/sqlite/SQLiteQueryBuilder.md))`(`typeDiscriminatorColumn:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `unionColumns:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `columnsPresentInTable:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `computedColumnsOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `typeDiscriminatorValue:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `selection:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `selectionArgs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `groupBy:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `having:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [delete](../android/database/sqlite/SQLiteQueryBuilder.md))`(`db:` ` [SQLiteDatabase](../android/database/sqlite/SQLiteDatabase.md)`, `selection:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `selectionArgs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>?`)` Perform a delete by combining all current settings and the information passed into this method. |
-| open [SQLiteDatabase.CursorFactory](../android/database/sqlite/SQLiteDatabase.CursorFactory.md)? | [getCursorFactory](../android/database/sqlite/SQLiteQueryBuilder.md))`()` Gets the cursor factory to be used for the query, as last configured by [setCursorFactory(android.database.sqlite.SQLiteDatabase.CursorFactory)](../android/database/sqlite/SQLiteQueryBuilder.md)). |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [buildUnionSubQuery](SQLiteQueryBuilder.md))`(`typeDiscriminatorColumn:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `unionColumns:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `columnsPresentInTable:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `computedColumnsOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `typeDiscriminatorValue:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `selection:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `selectionArgs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `groupBy:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `having:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [delete](SQLiteQueryBuilder.md))`(`db:` ` [SQLiteDatabase](SQLiteDatabase.md)`, `selection:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `selectionArgs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>?`)` Perform a delete by combining all current settings and the information passed into this method. |
+| open [SQLiteDatabase.CursorFactory](../android/database/sqlite/SQLiteDatabase.CursorFactory.md)? | [getCursorFactory](SQLiteQueryBuilder.md))`()` Gets the cursor factory to be used for the query, as last configured by [setCursorFactory(android.database.sqlite.SQLiteDatabase.CursorFactory)](SQLiteQueryBuilder.md)). |
 | --- | --- |
-| open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Pattern](../java/util/regex/Pattern.md)!\>? | [getProjectionGreylist](../android/database/sqlite/SQLiteQueryBuilder.md))`()` Gets the projection greylist for the query, as last configured by [setProjectionGreylist](../android/database/sqlite/SQLiteQueryBuilder.md)). |
-| open [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | [getProjectionMap](../android/database/sqlite/SQLiteQueryBuilder.md))`()` Gets the projection map for the query, as last configured by [setProjectionMap(java.util.Map)](../android/database/sqlite/SQLiteQueryBuilder.md)). |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getTables](../android/database/sqlite/SQLiteQueryBuilder.md))`()` Returns the list of tables being queried |
+| open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Pattern](../java.util.regex/Pattern.md)!\>? | [getProjectionGreylist](SQLiteQueryBuilder.md))`()` Gets the projection greylist for the query, as last configured by [setProjectionGreylist](SQLiteQueryBuilder.md)). |
+| open [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | [getProjectionMap](SQLiteQueryBuilder.md))`()` Gets the projection map for the query, as last configured by [setProjectionMap(java.util.Map)](SQLiteQueryBuilder.md)). |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getTables](SQLiteQueryBuilder.md))`()` Returns the list of tables being queried |
 | --- | --- |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [insert](../android/database/sqlite/SQLiteQueryBuilder.md))`(`db:` ` [SQLiteDatabase](../android/database/sqlite/SQLiteDatabase.md)`, `values:` ` [ContentValues](../android/content/ContentValues.md)`)` Perform an insert by combining all current settings and the information passed into this method. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDistinct](../android/database/sqlite/SQLiteQueryBuilder.md))`()` Get if the query is marked as`DISTINCT`, as last configured by [setDistinct(boolean)](../android/database/sqlite/SQLiteQueryBuilder.md)). |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isStrict](../android/database/sqlite/SQLiteQueryBuilder.md))`()` Get if the query is marked as strict, as last configured by [setStrict(boolean)](../android/database/sqlite/SQLiteQueryBuilder.md)). |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [insert](SQLiteQueryBuilder.md))`(`db:` ` [SQLiteDatabase](SQLiteDatabase.md)`, `values:` ` [ContentValues](../android.content/ContentValues.md)`)` Perform an insert by combining all current settings and the information passed into this method. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDistinct](SQLiteQueryBuilder.md))`()` Get if the query is marked as`DISTINCT`, as last configured by [setDistinct(boolean)](SQLiteQueryBuilder.md)). |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isStrict](SQLiteQueryBuilder.md))`()` Get if the query is marked as strict, as last configured by [setStrict(boolean)](SQLiteQueryBuilder.md)). |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isStrictColumns](../android/database/sqlite/SQLiteQueryBuilder.md))`()` Get if the query is marked as strict, as last configured by [setStrictColumns(boolean)](../android/database/sqlite/SQLiteQueryBuilder.md)). |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isStrictGrammar](../android/database/sqlite/SQLiteQueryBuilder.md))`()` Get if the query is marked as strict, as last configured by [setStrictGrammar(boolean)](../android/database/sqlite/SQLiteQueryBuilder.md)). |
-| open [Cursor](../android/database/Cursor.md)! | [query](../android/database/sqlite/SQLiteQueryBuilder.md))`(`db:` ` [SQLiteDatabase](../android/database/sqlite/SQLiteDatabase.md)!`, `projectionIn:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `selection:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `selectionArgs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `groupBy:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `having:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `sortOrder:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Perform a query by combining all current settings and the information passed into this method. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isStrictColumns](SQLiteQueryBuilder.md))`()` Get if the query is marked as strict, as last configured by [setStrictColumns(boolean)](SQLiteQueryBuilder.md)). |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isStrictGrammar](SQLiteQueryBuilder.md))`()` Get if the query is marked as strict, as last configured by [setStrictGrammar(boolean)](SQLiteQueryBuilder.md)). |
+| open [Cursor](../android.database/Cursor.md)! | [query](SQLiteQueryBuilder.md))`(`db:` ` [SQLiteDatabase](SQLiteDatabase.md)!`, `projectionIn:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `selection:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `selectionArgs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `groupBy:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `having:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `sortOrder:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Perform a query by combining all current settings and the information passed into this method. |
 | --- | --- |
-| open [Cursor](../android/database/Cursor.md)! | [query](../android/database/sqlite/SQLiteQueryBuilder.md))`(`db:` ` [SQLiteDatabase](../android/database/sqlite/SQLiteDatabase.md)!`, `projectionIn:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `selection:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `selectionArgs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `groupBy:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `having:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `sortOrder:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `limit:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Perform a query by combining all current settings and the information passed into this method. |
-| open [Cursor](../android/database/Cursor.md)! | [query](../android/database/sqlite/SQLiteQueryBuilder.md))`(`db:` ` [SQLiteDatabase](../android/database/sqlite/SQLiteDatabase.md)!`, `projectionIn:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `selection:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `selectionArgs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `groupBy:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `having:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `sortOrder:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `limit:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cancellationSignal:` ` [CancellationSignal](../android/os/CancellationSignal.md)!`)` Perform a query by combining all current settings and the information passed into this method. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCursorFactory](../android/database/sqlite/SQLiteQueryBuilder.md))`(`factory:` ` [SQLiteDatabase.CursorFactory](../android/database/sqlite/SQLiteDatabase.CursorFactory.md)?`)` Sets the cursor factory to be used for the query. |
+| open [Cursor](../android.database/Cursor.md)! | [query](SQLiteQueryBuilder.md))`(`db:` ` [SQLiteDatabase](SQLiteDatabase.md)!`, `projectionIn:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `selection:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `selectionArgs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `groupBy:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `having:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `sortOrder:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `limit:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Perform a query by combining all current settings and the information passed into this method. |
+| open [Cursor](../android.database/Cursor.md)! | [query](SQLiteQueryBuilder.md))`(`db:` ` [SQLiteDatabase](SQLiteDatabase.md)!`, `projectionIn:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `selection:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `selectionArgs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `groupBy:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `having:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `sortOrder:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `limit:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cancellationSignal:` ` [CancellationSignal](../android.os/CancellationSignal.md)!`)` Perform a query by combining all current settings and the information passed into this method. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCursorFactory](SQLiteQueryBuilder.md))`(`factory:` ` [SQLiteDatabase.CursorFactory](../android/database/sqlite/SQLiteDatabase.CursorFactory.md)?`)` Sets the cursor factory to be used for the query. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDistinct](../android/database/sqlite/SQLiteQueryBuilder.md))`(`distinct:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Mark the query as`DISTINCT`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setProjectionGreylist](../android/database/sqlite/SQLiteQueryBuilder.md))`(`projectionGreylist:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)< [Pattern](../java/util/regex/Pattern.md)!>?`)` Sets a projection greylist of columns that will be allowed through, even when [setStrict(boolean)](../android/database/sqlite/SQLiteQueryBuilder.md))is enabled. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setProjectionMap](../android/database/sqlite/SQLiteQueryBuilder.md))`(`columnMap:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>?`)` Sets the projection map for the query. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDistinct](SQLiteQueryBuilder.md))`(`distinct:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Mark the query as`DISTINCT`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setProjectionGreylist](SQLiteQueryBuilder.md))`(`projectionGreylist:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)< [Pattern](../java.util.regex/Pattern.md)!>?`)` Sets a projection greylist of columns that will be allowed through, even when [setStrict(boolean)](SQLiteQueryBuilder.md))is enabled. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setProjectionMap](SQLiteQueryBuilder.md))`(`columnMap:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>?`)` Sets the projection map for the query. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStrict](../android/database/sqlite/SQLiteQueryBuilder.md))`(`strict:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` When set, the selection is verified against malicious arguments. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStrictColumns](../android/database/sqlite/SQLiteQueryBuilder.md))`(`strictColumns:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` When enabled, verify that all projections and [ContentValues](../android/content/ContentValues.md) only contain valid columns as defined by [setProjectionMap(java.util.Map)](../android/database/sqlite/SQLiteQueryBuilder.md)). |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStrictGrammar](../android/database/sqlite/SQLiteQueryBuilder.md))`(`strictGrammar:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` When enabled, verify that all untrusted SQL conforms to a restricted SQL grammar. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStrict](SQLiteQueryBuilder.md))`(`strict:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` When set, the selection is verified against malicious arguments. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStrictColumns](SQLiteQueryBuilder.md))`(`strictColumns:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` When enabled, verify that all projections and [ContentValues](../android.content/ContentValues.md) only contain valid columns as defined by [setProjectionMap(java.util.Map)](SQLiteQueryBuilder.md)). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStrictGrammar](SQLiteQueryBuilder.md))`(`strictGrammar:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` When enabled, verify that all untrusted SQL conforms to a restricted SQL grammar. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTables](../android/database/sqlite/SQLiteQueryBuilder.md))`(`inTables:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Sets the list of tables to query. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [update](../android/database/sqlite/SQLiteQueryBuilder.md))`(`db:` ` [SQLiteDatabase](../android/database/sqlite/SQLiteDatabase.md)`, `values:` ` [ContentValues](../android/content/ContentValues.md)`, `selection:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `selectionArgs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>?`)` Perform an update by combining all current settings and the information passed into this method. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTables](SQLiteQueryBuilder.md))`(`inTables:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Sets the list of tables to query. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [update](SQLiteQueryBuilder.md))`(`db:` ` [SQLiteDatabase](SQLiteDatabase.md)`, `values:` ` [ContentValues](../android.content/ContentValues.md)`, `selection:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `selectionArgs:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>?`)` Perform an update by combining all current settings and the information passed into this method. |
 
 ## Public constructors
 
@@ -142,7 +142,7 @@ open fun appendWhereStandalone(inWhere: CharSequence): Unit
 
 Add a standalone chunk to the`WHERE`clause of this query.
 
-This method differs from [appendWhere(java.lang.CharSequence)](../android/database/sqlite/SQLiteQueryBuilder.md))in that it automatically appends`AND`to any existing`WHERE`clause already under construction before appending the given standalone expression wrapped in parentheses.
+This method differs from [appendWhere(java.lang.CharSequence)](SQLiteQueryBuilder.md))in that it automatically appends`AND`to any existing`WHERE`clause already under construction before appending the given standalone expression wrapped in parentheses.
 
 | Parameters ||
 |-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -333,7 +333,7 @@ Perform a delete by combining all current settings and the information passed in
 
 | Parameters ||
 |-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `db` | [SQLiteDatabase](../android/database/sqlite/SQLiteDatabase.md):the database to delete on This value cannot be`null`. |
+| `db` | [SQLiteDatabase](SQLiteDatabase.md):the database to delete on This value cannot be`null`. |
 | `selection` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:A filter declaring which rows to return, formatted as an SQL`WHERE`clause (excluding the`WHERE`itself). Passing null will return all rows for the given URL. |
 | `selectionArgs` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?:You may include ?s in selection, which will be replaced by the values from selectionArgs, in order that they appear in the selection. The values will be bound as Strings. This value may be`null`. |
 | --- | --- |
@@ -350,7 +350,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 open fun getCursorFactory(): SQLiteDatabase.CursorFactory?
 ```
 
-Gets the cursor factory to be used for the query, as last configured by [setCursorFactory(android.database.sqlite.SQLiteDatabase.CursorFactory)](../android/database/sqlite/SQLiteQueryBuilder.md)).
+Gets the cursor factory to be used for the query, as last configured by [setCursorFactory(android.database.sqlite.SQLiteDatabase.CursorFactory)](SQLiteQueryBuilder.md)).
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------------------|--------------------------|
@@ -364,11 +364,11 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 open fun getProjectionGreylist(): MutableCollection<Pattern!>?
 ```
 
-Gets the projection greylist for the query, as last configured by [setProjectionGreylist](../android/database/sqlite/SQLiteQueryBuilder.md)).
+Gets the projection greylist for the query, as last configured by [setProjectionGreylist](SQLiteQueryBuilder.md)).
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------|
-| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)< [Pattern](../java/util/regex/Pattern.md)!>? | This value may be`null`. |
+| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)< [Pattern](../java.util.regex/Pattern.md)!>? | This value may be`null`. |
 
 ### getProjectionMap
 
@@ -378,7 +378,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 open fun getProjectionMap(): MutableMap<String!, String!>?
 ```
 
-Gets the projection map for the query, as last configured by [setProjectionMap(java.util.Map)](../android/database/sqlite/SQLiteQueryBuilder.md)).
+Gets the projection map for the query, as last configured by [setProjectionMap(java.util.Map)](SQLiteQueryBuilder.md)).
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------|
@@ -413,8 +413,8 @@ Perform an insert by combining all current settings and the information passed i
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `db` | [SQLiteDatabase](../android/database/sqlite/SQLiteDatabase.md):the database to insert on This value cannot be`null`. |
-| `values` | [ContentValues](../android/content/ContentValues.md):This value cannot be`null`. |
+| `db` | [SQLiteDatabase](SQLiteDatabase.md):the database to insert on This value cannot be`null`. |
+| `values` | [ContentValues](../android.content/ContentValues.md):This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------|------------------------------------------------------------------|
@@ -428,7 +428,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 open fun isDistinct(): Boolean
 ```
 
-Get if the query is marked as`DISTINCT`, as last configured by [setDistinct(boolean)](../android/database/sqlite/SQLiteQueryBuilder.md)). 
+Get if the query is marked as`DISTINCT`, as last configured by [setDistinct(boolean)](SQLiteQueryBuilder.md)). 
 
 ### isStrict
 
@@ -438,7 +438,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 open fun isStrict(): Boolean
 ```
 
-Get if the query is marked as strict, as last configured by [setStrict(boolean)](../android/database/sqlite/SQLiteQueryBuilder.md)). 
+Get if the query is marked as strict, as last configured by [setStrict(boolean)](SQLiteQueryBuilder.md)). 
 
 ### isStrictColumns
 
@@ -448,7 +448,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 open fun isStrictColumns(): Boolean
 ```
 
-Get if the query is marked as strict, as last configured by [setStrictColumns(boolean)](../android/database/sqlite/SQLiteQueryBuilder.md)). 
+Get if the query is marked as strict, as last configured by [setStrictColumns(boolean)](SQLiteQueryBuilder.md)). 
 
 ### isStrictGrammar
 
@@ -458,7 +458,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 open fun isStrictGrammar(): Boolean
 ```
 
-Get if the query is marked as strict, as last configured by [setStrictGrammar(boolean)](../android/database/sqlite/SQLiteQueryBuilder.md)). 
+Get if the query is marked as strict, as last configured by [setStrictGrammar(boolean)](SQLiteQueryBuilder.md)). 
 
 ### query
 
@@ -480,7 +480,7 @@ Perform a query by combining all current settings and the information passed int
 
 | Parameters ||
 |-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `db` | [SQLiteDatabase](../android/database/sqlite/SQLiteDatabase.md)!:the database to query on |
+| `db` | [SQLiteDatabase](SQLiteDatabase.md)!:the database to query on |
 | `projectionIn` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!:A list of which columns to return. Passing null will return all columns, which is discouraged to prevent reading data from storage that isn't going to be used. |
 | `selection` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:A filter declaring which rows to return, formatted as an SQL`WHERE`clause (excluding the`WHERE`itself). Passing null will return all rows for the given URL. |
 | --- | --- |
@@ -492,7 +492,7 @@ Perform a query by combining all current settings and the information passed int
 
 | Return ||
 |-----------------------------------------------------------------------------------------|------------------------------|
-| [Cursor](../android/database/Cursor.md)! | a cursor over the result set |
+| [Cursor](../android.database/Cursor.md)! | a cursor over the result set |
 
 **See Also**
 
@@ -520,7 +520,7 @@ Perform a query by combining all current settings and the information passed int
 
 | Parameters ||
 |-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `db` | [SQLiteDatabase](../android/database/sqlite/SQLiteDatabase.md)!:the database to query on |
+| `db` | [SQLiteDatabase](SQLiteDatabase.md)!:the database to query on |
 | `projectionIn` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!:A list of which columns to return. Passing null will return all columns, which is discouraged to prevent reading data from storage that isn't going to be used. |
 | `selection` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:A filter declaring which rows to return, formatted as an SQL`WHERE`clause (excluding the`WHERE`itself). Passing null will return all rows for the given URL. |
 | --- | --- |
@@ -533,7 +533,7 @@ Perform a query by combining all current settings and the information passed int
 
 | Return ||
 |-----------------------------------------------------------------------------------------|------------------------------|
-| [Cursor](../android/database/Cursor.md)! | a cursor over the result set |
+| [Cursor](../android.database/Cursor.md)! | a cursor over the result set |
 
 **See Also**
 
@@ -562,7 +562,7 @@ Perform a query by combining all current settings and the information passed int
 
 | Parameters ||
 |----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `db` | [SQLiteDatabase](../android/database/sqlite/SQLiteDatabase.md)!:the database to query on |
+| `db` | [SQLiteDatabase](SQLiteDatabase.md)!:the database to query on |
 | `projectionIn` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!:A list of which columns to return. Passing null will return all columns, which is discouraged to prevent reading data from storage that isn't going to be used. |
 | `selection` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:A filter declaring which rows to return, formatted as an SQL`WHERE`clause (excluding the`WHERE`itself). Passing null will return all rows for the given URL. |
 | --- | --- |
@@ -572,12 +572,12 @@ Perform a query by combining all current settings and the information passed int
 | --- | --- |
 | `sortOrder` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:How to order the rows, formatted as an SQL`ORDER BY`clause (excluding the`ORDER BY`itself). Passing null will use the default sort order, which may be unordered. |
 | `limit` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Limits the number of rows returned by the query, formatted as`LIMIT`clause. Passing null denotes no`LIMIT`clause. |
-| `cancellationSignal` | [CancellationSignal](../android/os/CancellationSignal.md)!:A signal to cancel the operation in progress, or null if none. If the operation is canceled, then [OperationCanceledException](../android/os/OperationCanceledException.md) will be thrown when the query is executed. |
+| `cancellationSignal` | [CancellationSignal](../android.os/CancellationSignal.md)!:A signal to cancel the operation in progress, or null if none. If the operation is canceled, then [OperationCanceledException](../android.os/OperationCanceledException.md) will be thrown when the query is executed. |
 | --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------|------------------------------|
-| [Cursor](../android/database/Cursor.md)! | a cursor over the result set |
+| [Cursor](../android.database/Cursor.md)! | a cursor over the result set |
 
 **See Also**
 
@@ -620,11 +620,11 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 open fun setProjectionGreylist(projectionGreylist: MutableCollection<Pattern!>?): Unit
 ```
 
-Sets a projection greylist of columns that will be allowed through, even when [setStrict(boolean)](../android/database/sqlite/SQLiteQueryBuilder.md))is enabled. This provides a way for abusive custom columns like`COUNT(*)`to continue working.
+Sets a projection greylist of columns that will be allowed through, even when [setStrict(boolean)](SQLiteQueryBuilder.md))is enabled. This provides a way for abusive custom columns like`COUNT(*)`to continue working.
 
 | Parameters ||
 |----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `projectionGreylist` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Pattern](../java/util/regex/Pattern.md)!\>?:This value may be`null`. |
+| `projectionGreylist` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Pattern](../java.util.regex/Pattern.md)!\>?:This value may be`null`. |
 
 ### setProjectionMap
 
@@ -656,7 +656,7 @@ When set, the selection is verified against malicious arguments. When using this
 
 <br />
 
-This feature is disabled by default on each newly constructed [SQLiteQueryBuilder](../android/database/sqlite/SQLiteQueryBuilder.md) and needs to be manually enabled. 
+This feature is disabled by default on each newly constructed [SQLiteQueryBuilder](SQLiteQueryBuilder.md) and needs to be manually enabled. 
 
 ### setStrictColumns
 
@@ -666,11 +666,11 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 open fun setStrictColumns(strictColumns: Boolean): Unit
 ```
 
-When enabled, verify that all projections and [ContentValues](../android/content/ContentValues.md) only contain valid columns as defined by [setProjectionMap(java.util.Map)](../android/database/sqlite/SQLiteQueryBuilder.md)).
+When enabled, verify that all projections and [ContentValues](../android.content/ContentValues.md) only contain valid columns as defined by [setProjectionMap(java.util.Map)](SQLiteQueryBuilder.md)).
 
-This enforcement applies to [insert](../android/database/sqlite/SQLiteQueryBuilder.md)), #query, and [update](../android/database/sqlite/SQLiteQueryBuilder.md))operations. Any enforcement failures will throw an [IllegalArgumentException](../java/lang/IllegalArgumentException.md).
+This enforcement applies to [insert](SQLiteQueryBuilder.md)), #query, and [update](SQLiteQueryBuilder.md))operations. Any enforcement failures will throw an [IllegalArgumentException](../java.lang/IllegalArgumentException.md).
 
-This feature is disabled by default on each newly constructed [SQLiteQueryBuilder](../android/database/sqlite/SQLiteQueryBuilder.md) and needs to be manually enabled. 
+This feature is disabled by default on each newly constructed [SQLiteQueryBuilder](SQLiteQueryBuilder.md) and needs to be manually enabled. 
 
 ### setStrictGrammar
 
@@ -687,13 +687,13 @@ When enabled, verify that all untrusted SQL conforms to a restricted SQL grammar
 - In`ORDER BY`clauses: only valid columns, collation, and ordering terms are allowed.
 - In`LIMIT`clauses: only numerical values and offset terms are allowed.
 
-All column references must be valid as defined by [setProjectionMap(java.util.Map)](../android/database/sqlite/SQLiteQueryBuilder.md)).
+All column references must be valid as defined by [setProjectionMap(java.util.Map)](SQLiteQueryBuilder.md)).
 
 <br />
 
-This enforcement applies to #query, [update](../android/database/sqlite/SQLiteQueryBuilder.md))and [delete](../android/database/sqlite/SQLiteQueryBuilder.md))operations. This enforcement does not apply to trusted inputs, such as those provided by [appendWhere](../android/database/sqlite/SQLiteQueryBuilder.md)). Any enforcement failures will throw an [IllegalArgumentException](../java/lang/IllegalArgumentException.md).
+This enforcement applies to #query, [update](SQLiteQueryBuilder.md))and [delete](SQLiteQueryBuilder.md))operations. This enforcement does not apply to trusted inputs, such as those provided by [appendWhere](SQLiteQueryBuilder.md)). Any enforcement failures will throw an [IllegalArgumentException](../java.lang/IllegalArgumentException.md).
 
-This feature is disabled by default on each newly constructed [SQLiteQueryBuilder](../android/database/sqlite/SQLiteQueryBuilder.md) and needs to be manually enabled. 
+This feature is disabled by default on each newly constructed [SQLiteQueryBuilder](SQLiteQueryBuilder.md) and needs to be manually enabled. 
 
 ### setTables
 
@@ -726,11 +726,11 @@ Perform an update by combining all current settings and the information passed i
 
 | Parameters ||
 |-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `db` | [SQLiteDatabase](../android/database/sqlite/SQLiteDatabase.md):the database to update on This value cannot be`null`. |
+| `db` | [SQLiteDatabase](SQLiteDatabase.md):the database to update on This value cannot be`null`. |
 | `selection` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:A filter declaring which rows to return, formatted as an SQL`WHERE`clause (excluding the`WHERE`itself). Passing null will return all rows for the given URL. |
 | `selectionArgs` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?:You may include ?s in selection, which will be replaced by the values from selectionArgs, in order that they appear in the selection. The values will be bound as Strings. This value may be`null`. |
 | --- | --- |
-| `values` | [ContentValues](../android/content/ContentValues.md):This value cannot be`null`. |
+| `values` | [ContentValues](../android.content/ContentValues.md):This value cannot be`null`. |
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------|

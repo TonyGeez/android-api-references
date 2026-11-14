@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # GLUtils
 
-Kotlin| [Java](../android/opengl/GLUtils.md) 
+Kotlin| [Java](GLUtils.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class GLUtils
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.opengl.GLUtils](../android/opengl/GLUtils.md) |
+| ↳ | [android.opengl.GLUtils](GLUtils.md) |
 
 Utility class to help bridging OpenGL ES and Android APIs.
 
@@ -21,16 +21,16 @@ Utility class to help bridging OpenGL ES and Android APIs.
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getEGLErrorString](../android/opengl/GLUtils.md))`(`error:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return a string for the EGL error code, or the hex representation if the error is unknown. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInternalFormat](../android/opengl/GLUtils.md))`(`bitmap:` ` [Bitmap](../android/graphics/Bitmap.md)!`)` return the internal format as defined by OpenGL ES of the supplied bitmap. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getType](../android/opengl/GLUtils.md))`(`bitmap:` ` [Bitmap](../android/graphics/Bitmap.md)!`)` Return the type as defined by OpenGL ES of the supplied bitmap, if there is one. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getEGLErrorString](GLUtils.md))`(`error:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return a string for the EGL error code, or the hex representation if the error is unknown. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInternalFormat](GLUtils.md))`(`bitmap:` ` [Bitmap](../android.graphics/Bitmap.md)!`)` return the internal format as defined by OpenGL ES of the supplied bitmap. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getType](GLUtils.md))`(`bitmap:` ` [Bitmap](../android.graphics/Bitmap.md)!`)` Return the type as defined by OpenGL ES of the supplied bitmap, if there is one. |
 | --- | --- |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [texImage2D](../android/opengl/GLUtils.md))`(`target:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `level:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `bitmap:` ` [Bitmap](../android/graphics/Bitmap.md)!`, `border:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` A version of texImage2D that determines the internalFormat and type automatically. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [texImage2D](../android/opengl/GLUtils.md))`(`target:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `level:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `internalformat:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `bitmap:` ` [Bitmap](../android/graphics/Bitmap.md)!`, `border:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Calls glTexImage2D() on the current OpenGL context. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [texImage2D](../android/opengl/GLUtils.md))`(`target:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `level:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `internalformat:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `bitmap:` ` [Bitmap](../android/graphics/Bitmap.md)!`, `type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `border:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` A version of texImage2D() that takes an explicit type parameter as defined by the OpenGL ES specification. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [texImage2D](GLUtils.md))`(`target:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `level:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `bitmap:` ` [Bitmap](../android.graphics/Bitmap.md)!`, `border:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` A version of texImage2D that determines the internalFormat and type automatically. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [texImage2D](GLUtils.md))`(`target:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `level:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `internalformat:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `bitmap:` ` [Bitmap](../android.graphics/Bitmap.md)!`, `border:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Calls glTexImage2D() on the current OpenGL context. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [texImage2D](GLUtils.md))`(`target:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `level:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `internalformat:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `bitmap:` ` [Bitmap](../android.graphics/Bitmap.md)!`, `type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `border:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` A version of texImage2D() that takes an explicit type parameter as defined by the OpenGL ES specification. |
 | --- | --- |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [texSubImage2D](../android/opengl/GLUtils.md))`(`target:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `level:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `xoffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `yoffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `bitmap:` ` [Bitmap](../android/graphics/Bitmap.md)!`)` Calls glTexSubImage2D() on the current OpenGL context. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [texSubImage2D](../android/opengl/GLUtils.md))`(`target:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `level:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `xoffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `yoffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `bitmap:` ` [Bitmap](../android/graphics/Bitmap.md)!`, `format:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` A version of texSubImage2D() that takes an explicit type parameter as defined by the OpenGL ES specification. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [texSubImage2D](GLUtils.md))`(`target:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `level:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `xoffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `yoffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `bitmap:` ` [Bitmap](../android.graphics/Bitmap.md)!`)` Calls glTexSubImage2D() on the current OpenGL context. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [texSubImage2D](GLUtils.md))`(`target:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `level:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `xoffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `yoffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `bitmap:` ` [Bitmap](../android.graphics/Bitmap.md)!`, `format:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` A version of texSubImage2D() that takes an explicit type parameter as defined by the OpenGL ES specification. |
 
 ## Public methods
 
@@ -64,7 +64,7 @@ return the internal format as defined by OpenGL ES of the supplied bitmap.
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------|
-| `bitmap` | [Bitmap](../android/graphics/Bitmap.md)!: |
+| `bitmap` | [Bitmap](../android.graphics/Bitmap.md)!: |
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------|
@@ -82,7 +82,7 @@ Return the type as defined by OpenGL ES of the supplied bitmap, if there is one.
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------|
-| `bitmap` | [Bitmap](../android/graphics/Bitmap.md)!: |
+| `bitmap` | [Bitmap](../android.graphics/Bitmap.md)!: |
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------|
@@ -111,7 +111,7 @@ A version of texImage2D that determines the internalFormat and type automaticall
 |----------|------------------------------------------------------------------------------------------|
 | `target` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): |
 | `level` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): |
-| `bitmap` | [Bitmap](../android/graphics/Bitmap.md)!: |
+| `bitmap` | [Bitmap](../android.graphics/Bitmap.md)!: |
 | --- | --- |
 | `border` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): |
 
@@ -137,7 +137,7 @@ Calls glTexImage2D() on the current OpenGL context. If no context is current the
 | `level` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): |
 | `internalformat` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): |
 | --- | --- |
-| `bitmap` | [Bitmap](../android/graphics/Bitmap.md)!: |
+| `bitmap` | [Bitmap](../android.graphics/Bitmap.md)!: |
 | `border` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): |
 
 ### texImage2D
@@ -163,7 +163,7 @@ A version of texImage2D() that takes an explicit type parameter as defined by th
 | `level` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): |
 | `internalformat` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): |
 | --- | --- |
-| `bitmap` | [Bitmap](../android/graphics/Bitmap.md)!: |
+| `bitmap` | [Bitmap](../android.graphics/Bitmap.md)!: |
 | `type` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): |
 | `border` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): |
 | --- | --- |
@@ -191,7 +191,7 @@ Calls glTexSubImage2D() on the current OpenGL context. If no context is current 
 | `xoffset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): |
 | --- | --- |
 | `yoffset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): |
-| `bitmap` | [Bitmap](../android/graphics/Bitmap.md)!: |
+| `bitmap` | [Bitmap](../android.graphics/Bitmap.md)!: |
 
 ### texSubImage2D
 
@@ -218,6 +218,6 @@ A version of texSubImage2D() that takes an explicit type parameter as defined by
 | `xoffset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): |
 | --- | --- |
 | `yoffset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): |
-| `bitmap` | [Bitmap](../android/graphics/Bitmap.md)!: |
+| `bitmap` | [Bitmap](../android.graphics/Bitmap.md)!: |
 | `type` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): |
 | --- | --- |

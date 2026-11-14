@@ -8,12 +8,12 @@ open class ImageSpan : DynamicDrawableSpan
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
-| ↳ | [android.text.style.CharacterStyle](../android/text/style/CharacterStyle.md) |||||
-| | ↳ | [android.text.style.MetricAffectingSpan](../android/text/style/MetricAffectingSpan.md) ||||
-| | | ↳ | [android.text.style.ReplacementSpan](../android/text/style/ReplacementSpan.md) |||
+| ↳ | [android.text.style.CharacterStyle](CharacterStyle.md) |||||
+| | ↳ | [android.text.style.MetricAffectingSpan](MetricAffectingSpan.md) ||||
+| | | ↳ | [android.text.style.ReplacementSpan](ReplacementSpan.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.text.style.DynamicDrawableSpan](../android/text/style/DynamicDrawableSpan.md) ||
-| | | | | ↳ | [android.text.style.ImageSpan](../android/text/style/ImageSpan.md) |
+| | | | ↳ | [android.text.style.DynamicDrawableSpan](DynamicDrawableSpan.md) ||
+| | | | | ↳ | [android.text.style.ImageSpan](ImageSpan.md) |
 
 Span that replaces the text it's attached to with a `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.html#` that can be aligned with the bottom or with the baseline of the surrounding text. The drawable can be constructed from varied sources:
 
@@ -61,7 +61,7 @@ Text with `ImageSpan`s aligned bottom and baseline.
 
 | Public methods ||
 |---|---|
-| open [Drawable](../android/graphics/drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/text/style/ImageSpan#getDrawable()()` Your subclass must implement this method to provide the bitmap to be drawn. |
+| open [Drawable](../android.graphics.drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/text/style/ImageSpan#getDrawable()()` Your subclass must implement this method to provide the bitmap to be drawn. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/text/style/ImageSpan#getSource()()` Returns the source string that was saved during construction. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/text/style/ImageSpan#toString()()` Returns a string representation of the object. |
 | --- | --- |
@@ -94,8 +94,8 @@ Constructs an `https://developer.android.com/reference/kotlin/android/text/style
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md): context used to create a drawable from `bitmap` based on the display metrics of the resources. This value cannot be `null`. |
-| `bitmap` | [Bitmap](../android/graphics/Bitmap.md): bitmap to be rendered. This value cannot be `null`. |
+| `context` | [Context](../android.content/Context.md): context used to create a drawable from `bitmap` based on the display metrics of the resources. This value cannot be `null`. |
+| `bitmap` | [Bitmap](../android.graphics/Bitmap.md): bitmap to be rendered. This value cannot be `null`. |
 
 ### ImageSpan
 
@@ -112,8 +112,8 @@ Constructs an `https://developer.android.com/reference/kotlin/android/text/style
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md): context used to create a drawable from `bitmap` based on the display metrics of the resources. This value cannot be `null`. |
-| `bitmap` | [Bitmap](../android/graphics/Bitmap.md): bitmap to be rendered. This value cannot be `null`. |
+| `context` | [Context](../android.content/Context.md): context used to create a drawable from `bitmap` based on the display metrics of the resources. This value cannot be `null`. |
+| `bitmap` | [Bitmap](../android.graphics/Bitmap.md): bitmap to be rendered. This value cannot be `null`. |
 | `verticalAlignment` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): one of `https://developer.android.com/reference/kotlin/android/text/style/DynamicDrawableSpan#ALIGN_BOTTOM:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/text/style/DynamicDrawableSpan#ALIGN_BASELINE:kotlin.Int` |
 | --- | --- |
 
@@ -131,8 +131,8 @@ Constructs an `https://developer.android.com/reference/kotlin/android/text/style
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md): context used to create a drawable from `bitmap` based on the display metrics of the resources. This value cannot be `null`. |
-| `uri` | [Uri](../android/net/Uri.md): `https://developer.android.com/reference/kotlin/android/net/Uri.html#` used to construct the drawable that will be rendered. This value cannot be `null`. |
+| `context` | [Context](../android.content/Context.md): context used to create a drawable from `bitmap` based on the display metrics of the resources. This value cannot be `null`. |
+| `uri` | [Uri](../android.net/Uri.md): `https://developer.android.com/reference/kotlin/android/net/Uri.html#` used to construct the drawable that will be rendered. This value cannot be `null`. |
 
 ### ImageSpan
 
@@ -149,8 +149,8 @@ Constructs an `https://developer.android.com/reference/kotlin/android/text/style
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md): context used to create a drawable from `bitmap` based on the display metrics of the resources. This value cannot be `null`. |
-| `uri` | [Uri](../android/net/Uri.md): `https://developer.android.com/reference/kotlin/android/net/Uri.html#` used to construct the drawable that will be rendered. This value cannot be `null`. |
+| `context` | [Context](../android.content/Context.md): context used to create a drawable from `bitmap` based on the display metrics of the resources. This value cannot be `null`. |
+| `uri` | [Uri](../android.net/Uri.md): `https://developer.android.com/reference/kotlin/android/net/Uri.html#` used to construct the drawable that will be rendered. This value cannot be `null`. |
 | `verticalAlignment` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): one of `https://developer.android.com/reference/kotlin/android/text/style/DynamicDrawableSpan#ALIGN_BOTTOM:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/text/style/DynamicDrawableSpan#ALIGN_BASELINE:kotlin.Int` |
 | --- | --- |
 
@@ -168,7 +168,7 @@ Constructs an `https://developer.android.com/reference/kotlin/android/text/style
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md): context used to retrieve the drawable from resources. This value cannot be `null`. |
+| `context` | [Context](../android.content/Context.md): context used to retrieve the drawable from resources. This value cannot be `null`. |
 | `resourceId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): drawable resource id based on which the drawable is retrieved |
 
 ### ImageSpan
@@ -186,7 +186,7 @@ Constructs an `https://developer.android.com/reference/kotlin/android/text/style
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md): context used to retrieve the drawable from resources. This value cannot be `null`. |
+| `context` | [Context](../android.content/Context.md): context used to retrieve the drawable from resources. This value cannot be `null`. |
 | `resourceId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): drawable resource id based on which the drawable is retrieved. |
 | `verticalAlignment` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): one of `https://developer.android.com/reference/kotlin/android/text/style/DynamicDrawableSpan#ALIGN_BOTTOM:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/text/style/DynamicDrawableSpan#ALIGN_BASELINE:kotlin.Int` |
 | --- | --- |
@@ -203,7 +203,7 @@ ImageSpan(b: Bitmap)
 
 | Parameters ||
 |---|---|
-| `b` | [Bitmap](../android/graphics/Bitmap.md): This value cannot be `null`. |
+| `b` | [Bitmap](../android.graphics/Bitmap.md): This value cannot be `null`. |
 
 ### ImageSpan
 
@@ -219,7 +219,7 @@ ImageSpan(
 
 | Parameters ||
 |---|---|
-| `b` | [Bitmap](../android/graphics/Bitmap.md): This value cannot be `null`. |
+| `b` | [Bitmap](../android.graphics/Bitmap.md): This value cannot be `null`. |
 
 ### ImageSpan
 
@@ -233,7 +233,7 @@ Constructs an `https://developer.android.com/reference/kotlin/android/text/style
 
 | Parameters ||
 |---|---|
-| `drawable` | [Drawable](../android/graphics/drawable/Drawable.md): drawable to be rendered. This value cannot be `null`. |
+| `drawable` | [Drawable](../android.graphics.drawable/Drawable.md): drawable to be rendered. This value cannot be `null`. |
 
 ### ImageSpan
 
@@ -249,7 +249,7 @@ Constructs an `https://developer.android.com/reference/kotlin/android/text/style
 
 | Parameters ||
 |---|---|
-| `drawable` | [Drawable](../android/graphics/drawable/Drawable.md): drawable to be rendered. This value cannot be `null`. |
+| `drawable` | [Drawable](../android.graphics.drawable/Drawable.md): drawable to be rendered. This value cannot be `null`. |
 | `verticalAlignment` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): one of `https://developer.android.com/reference/kotlin/android/text/style/DynamicDrawableSpan#ALIGN_BOTTOM:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/text/style/DynamicDrawableSpan#ALIGN_BASELINE:kotlin.Int` |
 
 ### ImageSpan
@@ -266,7 +266,7 @@ Constructs an `https://developer.android.com/reference/kotlin/android/text/style
 
 | Parameters ||
 |---|---|
-| `drawable` | [Drawable](../android/graphics/drawable/Drawable.md): drawable to be rendered. This value cannot be `null`. |
+| `drawable` | [Drawable](../android.graphics.drawable/Drawable.md): drawable to be rendered. This value cannot be `null`. |
 | `source` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): drawable's Uri source. This value cannot be `null`. |
 
 ### ImageSpan
@@ -284,7 +284,7 @@ Constructs an `https://developer.android.com/reference/kotlin/android/text/style
 
 | Parameters ||
 |---|---|
-| `drawable` | [Drawable](../android/graphics/drawable/Drawable.md): drawable to be rendered. This value cannot be `null`. |
+| `drawable` | [Drawable](../android.graphics.drawable/Drawable.md): drawable to be rendered. This value cannot be `null`. |
 | `source` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): drawable's uri source. This value cannot be `null`. |
 | `verticalAlignment` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): one of `https://developer.android.com/reference/kotlin/android/text/style/DynamicDrawableSpan#ALIGN_BOTTOM:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/text/style/DynamicDrawableSpan#ALIGN_BASELINE:kotlin.Int` |
 | --- | --- |

@@ -16,7 +16,7 @@ interface PictureCallback
 
 | **This interface was deprecated in API level 21.**
 |
-| We recommend using the new [android.hardware.camera2](../android/hardware/camera2/_package.md) API for new applications.
+| We recommend using the new [android.hardware.camera2](../android.hardware.camera2/_package.md) API for new applications.
 
 Callback interface used to supply image data from a photo capture.
 
@@ -24,7 +24,7 @@ Callback interface used to supply image data from a photo capture.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onPictureTaken](../android/hardware/Camera.PictureCallback.md))`(`data:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `camera:` ` [Camera](../android/hardware/Camera.md)!`)` Called when image data is available after a picture is taken. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onPictureTaken](../android/hardware/Camera.PictureCallback.md))`(`data:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `camera:` ` [Camera](Camera.md)!`)` Called when image data is available after a picture is taken. |
 
 ## Public methods
 
@@ -46,4 +46,4 @@ Called when image data is available after a picture is taken. The format of the 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------------------|
 | `data` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:a byte array of the picture data |
-| `camera` | [Camera](../android/hardware/Camera.md)!:the Camera service object |
+| `camera` | [Camera](Camera.md)!:the Camera service object |

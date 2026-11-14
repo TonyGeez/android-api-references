@@ -5,7 +5,7 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 
 # Sampler
 
-Kotlin| [Java](../android/renderscript/Sampler.md) 
+Kotlin| [Java](Sampler.md) 
 | --- | --- |
 
 ```
@@ -14,14 +14,14 @@ open class Sampler : BaseObj
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.renderscript.BaseObj](../android/renderscript/BaseObj.md) ||
-| | ↳ | [android.renderscript.Sampler](../android/renderscript/Sampler.md) |
+| ↳ | [android.renderscript.BaseObj](BaseObj.md) ||
+| | ↳ | [android.renderscript.Sampler](Sampler.md) |
 
 | **This class was deprecated in API level 31.**
 |
 | Renderscript has been deprecated in API level 31. Please refer to the [migration guide](https://developer.android.com/guide/topics/renderscript/migration-guide) for the proposed alternatives.
 
-Sampler object that defines how Allocations can be read as textures within a kernel. Samplers are used in conjunction with the`rsSample`runtime function to return values from normalized coordinates. Any Allocation used with a Sampler must have been created with [android.renderscript.Allocation#USAGE_GRAPHICS_TEXTURE](../android/renderscript/Allocation.md); using a Sampler on an [android.renderscript.Allocation](../android/renderscript/Allocation.md) that was not created with [android.renderscript.Allocation#USAGE_GRAPHICS_TEXTURE](../android/renderscript/Allocation.md) is undefined.
+Sampler object that defines how Allocations can be read as textures within a kernel. Samplers are used in conjunction with the`rsSample`runtime function to return values from normalized coordinates. Any Allocation used with a Sampler must have been created with [android.renderscript.Allocation#USAGE_GRAPHICS_TEXTURE](Allocation.md); using a Sampler on an [android.renderscript.Allocation](Allocation.md) that was not created with [android.renderscript.Allocation#USAGE_GRAPHICS_TEXTURE](Allocation.md) is undefined.
 
 ## Summary
 
@@ -32,28 +32,28 @@ Sampler object that defines how Allocations can be read as textures within a ker
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [Sampler](../android/renderscript/Sampler.md)! | [CLAMP_LINEAR](../android/renderscript/Sampler.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` Retrieve a sampler with min and mag set to linear and wrap modes set to clamp. |
-| openstatic [Sampler](../android/renderscript/Sampler.md)! | [CLAMP_LINEAR_MIP_LINEAR](../android/renderscript/Sampler.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` Retrieve a sampler with mag set to linear, min linear mipmap linear, and wrap modes set to clamp. |
-| openstatic [Sampler](../android/renderscript/Sampler.md)! | [CLAMP_NEAREST](../android/renderscript/Sampler.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` Retrieve a sampler with min and mag set to nearest and wrap modes set to clamp. |
+| openstatic [Sampler](Sampler.md)! | [CLAMP_LINEAR](Sampler.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` Retrieve a sampler with min and mag set to linear and wrap modes set to clamp. |
+| openstatic [Sampler](Sampler.md)! | [CLAMP_LINEAR_MIP_LINEAR](Sampler.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` Retrieve a sampler with mag set to linear, min linear mipmap linear, and wrap modes set to clamp. |
+| openstatic [Sampler](Sampler.md)! | [CLAMP_NEAREST](Sampler.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` Retrieve a sampler with min and mag set to nearest and wrap modes set to clamp. |
 | --- | --- |
-| openstatic [Sampler](../android/renderscript/Sampler.md)! | [MIRRORED_REPEAT_LINEAR](../android/renderscript/Sampler.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` Retrieve a sampler with min and mag set to linear and wrap modes set to mirrored repeat. |
-| openstatic [Sampler](../android/renderscript/Sampler.md)! | [MIRRORED_REPEAT_LINEAR_MIP_LINEAR](../android/renderscript/Sampler.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` Retrieve a sampler with min and mag set to linear and wrap modes set to mirrored repeat. |
-| openstatic [Sampler](../android/renderscript/Sampler.md)! | [MIRRORED_REPEAT_NEAREST](../android/renderscript/Sampler.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` Retrieve a sampler with min and mag set to nearest and wrap modes set to mirrored repeat. |
+| openstatic [Sampler](Sampler.md)! | [MIRRORED_REPEAT_LINEAR](Sampler.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` Retrieve a sampler with min and mag set to linear and wrap modes set to mirrored repeat. |
+| openstatic [Sampler](Sampler.md)! | [MIRRORED_REPEAT_LINEAR_MIP_LINEAR](Sampler.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` Retrieve a sampler with min and mag set to linear and wrap modes set to mirrored repeat. |
+| openstatic [Sampler](Sampler.md)! | [MIRRORED_REPEAT_NEAREST](Sampler.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` Retrieve a sampler with min and mag set to nearest and wrap modes set to mirrored repeat. |
 | --- | --- |
-| openstatic [Sampler](../android/renderscript/Sampler.md)! | [WRAP_LINEAR](../android/renderscript/Sampler.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` Retrieve a sampler with min and mag set to linear and wrap modes set to wrap. |
-| openstatic [Sampler](../android/renderscript/Sampler.md)! | [WRAP_LINEAR_MIP_LINEAR](../android/renderscript/Sampler.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` Retrieve a sampler with mag set to linear, min linear mipmap linear, and wrap modes set to wrap. |
-| openstatic [Sampler](../android/renderscript/Sampler.md)! | [WRAP_NEAREST](../android/renderscript/Sampler.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` Retrieve a sampler with min and mag set to nearest and wrap modes set to wrap. |
+| openstatic [Sampler](Sampler.md)! | [WRAP_LINEAR](Sampler.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` Retrieve a sampler with min and mag set to linear and wrap modes set to wrap. |
+| openstatic [Sampler](Sampler.md)! | [WRAP_LINEAR_MIP_LINEAR](Sampler.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` Retrieve a sampler with mag set to linear, min linear mipmap linear, and wrap modes set to wrap. |
+| openstatic [Sampler](Sampler.md)! | [WRAP_NEAREST](Sampler.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` Retrieve a sampler with min and mag set to nearest and wrap modes set to wrap. |
 | --- | --- |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getAnisotropy](../android/renderscript/Sampler.md))`()` <br /> |
-| open [Sampler.Value](../android/renderscript/Sampler.Value.md)! | [getMagnification](../android/renderscript/Sampler.md))`()` <br /> |
-| open [Sampler.Value](../android/renderscript/Sampler.Value.md)! | [getMinification](../android/renderscript/Sampler.md))`()` <br /> |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getAnisotropy](Sampler.md))`()` <br /> |
+| open [Sampler.Value](../android/renderscript/Sampler.Value.md)! | [getMagnification](Sampler.md))`()` <br /> |
+| open [Sampler.Value](../android/renderscript/Sampler.Value.md)! | [getMinification](Sampler.md))`()` <br /> |
 | --- | --- |
-| open [Sampler.Value](../android/renderscript/Sampler.Value.md)! | [getWrapS](../android/renderscript/Sampler.md))`()` <br /> |
-| open [Sampler.Value](../android/renderscript/Sampler.Value.md)! | [getWrapT](../android/renderscript/Sampler.md))`()` <br /> |
+| open [Sampler.Value](../android/renderscript/Sampler.Value.md)! | [getWrapS](Sampler.md))`()` <br /> |
+| open [Sampler.Value](../android/renderscript/Sampler.Value.md)! | [getWrapT](Sampler.md))`()` <br /> |
 
 | Inherited functions ||
 |---|---|
-| From class [BaseObj](../android/renderscript/BaseObj.md) |------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [destroy](../android/renderscript/BaseObj.md))`()` <br /> Frees any native resources associated with this object. The primary use is to force immediate cleanup of resources when it is believed the GC will not respond quickly enough. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/renderscript/BaseObj.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> Compare the current BaseObj with another BaseObj for equality. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](../android/renderscript/BaseObj.md))`()` <br /> | | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](../android/renderscript/BaseObj.md))`()` <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/renderscript/BaseObj.md))`()` <br /> Calculates the hash code value for a BaseObj. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setName](../android/renderscript/BaseObj.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> setName assigns a name to an object. This object can later be looked up by this name. <br /> | ||
+| From class [BaseObj](BaseObj.md) |------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [destroy](BaseObj.md))`()` <br /> Frees any native resources associated with this object. The primary use is to force immediate cleanup of resources when it is believed the GC will not respond quickly enough. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](BaseObj.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> Compare the current BaseObj with another BaseObj for equality. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](BaseObj.md))`()` <br /> | | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](BaseObj.md))`()` <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](BaseObj.md))`()` <br /> Calculates the hash code value for a BaseObj. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setName](BaseObj.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> setName assigns a name to an object. This object can later be looked up by this name. <br /> | ||
 
 ## Public methods
 
@@ -71,11 +71,11 @@ Retrieve a sampler with min and mag set to linear and wrap modes set to clamp.
 
 | Parameters ||
 |------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| `rs` | [RenderScript](../android/renderscript/RenderScript.md)!:Context to which the sampler will belong. |
+| `rs` | [RenderScript](RenderScript.md)!:Context to which the sampler will belong. |
 
 | Return ||
 |------------------------------------------------------------------------------------------|---------|
-| [Sampler](../android/renderscript/Sampler.md)! | Sampler |
+| [Sampler](Sampler.md)! | Sampler |
 
 ### CLAMP_LINEAR_MIP_LINEAR
 
@@ -91,11 +91,11 @@ Retrieve a sampler with mag set to linear, min linear mipmap linear, and wrap mo
 
 | Parameters ||
 |------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| `rs` | [RenderScript](../android/renderscript/RenderScript.md)!:Context to which the sampler will belong. |
+| `rs` | [RenderScript](RenderScript.md)!:Context to which the sampler will belong. |
 
 | Return ||
 |------------------------------------------------------------------------------------------|---------|
-| [Sampler](../android/renderscript/Sampler.md)! | Sampler |
+| [Sampler](Sampler.md)! | Sampler |
 
 ### CLAMP_NEAREST
 
@@ -111,11 +111,11 @@ Retrieve a sampler with min and mag set to nearest and wrap modes set to clamp.
 
 | Parameters ||
 |------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| `rs` | [RenderScript](../android/renderscript/RenderScript.md)!:Context to which the sampler will belong. |
+| `rs` | [RenderScript](RenderScript.md)!:Context to which the sampler will belong. |
 
 | Return ||
 |------------------------------------------------------------------------------------------|---------|
-| [Sampler](../android/renderscript/Sampler.md)! | Sampler |
+| [Sampler](Sampler.md)! | Sampler |
 
 ### MIRRORED_REPEAT_LINEAR
 
@@ -132,11 +132,11 @@ Retrieve a sampler with min and mag set to linear and wrap modes set to mirrored
 
 | Parameters ||
 |------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| `rs` | [RenderScript](../android/renderscript/RenderScript.md)!:Context to which the sampler will belong. |
+| `rs` | [RenderScript](RenderScript.md)!:Context to which the sampler will belong. |
 
 | Return ||
 |------------------------------------------------------------------------------------------|---------|
-| [Sampler](../android/renderscript/Sampler.md)! | Sampler |
+| [Sampler](Sampler.md)! | Sampler |
 
 ### MIRRORED_REPEAT_LINEAR_MIP_LINEAR
 
@@ -153,11 +153,11 @@ Retrieve a sampler with min and mag set to linear and wrap modes set to mirrored
 
 | Parameters ||
 |------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| `rs` | [RenderScript](../android/renderscript/RenderScript.md)!:Context to which the sampler will belong. |
+| `rs` | [RenderScript](RenderScript.md)!:Context to which the sampler will belong. |
 
 | Return ||
 |------------------------------------------------------------------------------------------|---------|
-| [Sampler](../android/renderscript/Sampler.md)! | Sampler |
+| [Sampler](Sampler.md)! | Sampler |
 
 ### MIRRORED_REPEAT_NEAREST
 
@@ -174,11 +174,11 @@ Retrieve a sampler with min and mag set to nearest and wrap modes set to mirrore
 
 | Parameters ||
 |------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| `rs` | [RenderScript](../android/renderscript/RenderScript.md)!:Context to which the sampler will belong. |
+| `rs` | [RenderScript](RenderScript.md)!:Context to which the sampler will belong. |
 
 | Return ||
 |------------------------------------------------------------------------------------------|---------|
-| [Sampler](../android/renderscript/Sampler.md)! | Sampler |
+| [Sampler](Sampler.md)! | Sampler |
 
 ### WRAP_LINEAR
 
@@ -194,11 +194,11 @@ Retrieve a sampler with min and mag set to linear and wrap modes set to wrap.
 
 | Parameters ||
 |------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| `rs` | [RenderScript](../android/renderscript/RenderScript.md)!:Context to which the sampler will belong. |
+| `rs` | [RenderScript](RenderScript.md)!:Context to which the sampler will belong. |
 
 | Return ||
 |------------------------------------------------------------------------------------------|---------|
-| [Sampler](../android/renderscript/Sampler.md)! | Sampler |
+| [Sampler](Sampler.md)! | Sampler |
 
 ### WRAP_LINEAR_MIP_LINEAR
 
@@ -214,11 +214,11 @@ Retrieve a sampler with mag set to linear, min linear mipmap linear, and wrap mo
 
 | Parameters ||
 |------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| `rs` | [RenderScript](../android/renderscript/RenderScript.md)!:Context to which the sampler will belong. |
+| `rs` | [RenderScript](RenderScript.md)!:Context to which the sampler will belong. |
 
 | Return ||
 |------------------------------------------------------------------------------------------|---------|
-| [Sampler](../android/renderscript/Sampler.md)! | Sampler |
+| [Sampler](Sampler.md)! | Sampler |
 
 ### WRAP_NEAREST
 
@@ -234,11 +234,11 @@ Retrieve a sampler with min and mag set to nearest and wrap modes set to wrap.
 
 | Parameters ||
 |------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| `rs` | [RenderScript](../android/renderscript/RenderScript.md)!:Context to which the sampler will belong. |
+| `rs` | [RenderScript](RenderScript.md)!:Context to which the sampler will belong. |
 
 | Return ||
 |------------------------------------------------------------------------------------------|---------|
-| [Sampler](../android/renderscript/Sampler.md)! | Sampler |
+| [Sampler](Sampler.md)! | Sampler |
 
 ### getAnisotropy
 

@@ -4,16 +4,16 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # FormattedValue
 
-Kotlin| [Java](../android/icu/text/FormattedValue.md) 
+Kotlin| [Java](FormattedValue.md) 
 | --- | --- |
 
 ```
 interface FormattedValue : CharSequence
 ```
 
-| [android.icu.text.FormattedValue](../android/icu/text/FormattedValue.md) |
+| [android.icu.text.FormattedValue](FormattedValue.md) |
 
-| Known Direct Subclasses [DateIntervalFormat.FormattedDateInterval](../android/icu/text/DateIntervalFormat.FormattedDateInterval.md), [FormattedNumber](../android/icu/number/FormattedNumber.md), [FormattedNumberRange](../android/icu/number/FormattedNumberRange.md), [ListFormatter.FormattedList](../android/icu/text/ListFormatter.FormattedList.md), [RelativeDateTimeFormatter.FormattedRelativeDateTime](../android/icu/text/RelativeDateTimeFormatter.FormattedRelativeDateTime.md) |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------| | [DateIntervalFormat.FormattedDateInterval](../android/icu/text/DateIntervalFormat.FormattedDateInterval.md) | An immutable class containing the result of a date interval formatting operation. | | [FormattedNumber](../android/icu/number/FormattedNumber.md) | The result of a number formatting operation. | | [FormattedNumberRange](../android/icu/number/FormattedNumberRange.md) | The result of a number range formatting operation. | | [ListFormatter.FormattedList](../android/icu/text/ListFormatter.FormattedList.md) | An immutable class containing the result of a list formatting operation. | | [RelativeDateTimeFormatter.FormattedRelativeDateTime](../android/icu/text/RelativeDateTimeFormatter.FormattedRelativeDateTime.md) | Represents the result of a formatting operation of a relative datetime. | |
+| Known Direct Subclasses [DateIntervalFormat.FormattedDateInterval](../android/icu/text/DateIntervalFormat.FormattedDateInterval.md), [FormattedNumber](../android.icu.number/FormattedNumber.md), [FormattedNumberRange](../android.icu.number/FormattedNumberRange.md), [ListFormatter.FormattedList](../android/icu/text/ListFormatter.FormattedList.md), [RelativeDateTimeFormatter.FormattedRelativeDateTime](../android/icu/text/RelativeDateTimeFormatter.FormattedRelativeDateTime.md) |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------| | [DateIntervalFormat.FormattedDateInterval](../android/icu/text/DateIntervalFormat.FormattedDateInterval.md) | An immutable class containing the result of a date interval formatting operation. | | [FormattedNumber](../android.icu.number/FormattedNumber.md) | The result of a number formatting operation. | | [FormattedNumberRange](../android.icu.number/FormattedNumberRange.md) | The result of a number range formatting operation. | | [ListFormatter.FormattedList](../android/icu/text/ListFormatter.FormattedList.md) | An immutable class containing the result of a list formatting operation. | | [RelativeDateTimeFormatter.FormattedRelativeDateTime](../android/icu/text/RelativeDateTimeFormatter.FormattedRelativeDateTime.md) | Represents the result of a formatting operation of a relative datetime. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 An abstract formatted value: a string with associated field attributes. Many formatters format to classes implementing FormattedValue.
@@ -22,9 +22,9 @@ An abstract formatted value: a string with associated field attributes. Many for
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstractA | [appendTo](../android/icu/text/FormattedValue.md))`(`appendable:` `A`)` Appends the formatted string to an Appendable. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [nextPosition](../android/icu/text/FormattedValue.md))`(`cfpos:` ` [ConstrainedFieldPosition](../android/icu/text/ConstrainedFieldPosition.md)!`)` Iterates over field positions in the FormattedValue. |
-| abstract [AttributedCharacterIterator](../java/text/AttributedCharacterIterator.md)! | [toCharacterIterator](../android/icu/text/FormattedValue.md))`()` Exports the formatted number as an AttributedCharacterIterator. |
+| abstractA | [appendTo](FormattedValue.md))`(`appendable:` `A`)` Appends the formatted string to an Appendable. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [nextPosition](FormattedValue.md))`(`cfpos:` ` [ConstrainedFieldPosition](ConstrainedFieldPosition.md)!`)` Iterates over field positions in the FormattedValue. |
+| abstract [AttributedCharacterIterator](../java.text/AttributedCharacterIterator.md)! | [toCharacterIterator](FormattedValue.md))`()` Exports the formatted number as an AttributedCharacterIterator. |
 | --- | --- |
 
 ## Public methods
@@ -39,7 +39,7 @@ abstract fun <A : Appendable!> appendTo(appendable: A): A
 
 Appends the formatted string to an Appendable.
 
-If an IOException occurs when appending to the Appendable, an unchecked [ICUUncheckedIOException](../android/icu/util/ICUUncheckedIOException.md) is thrown instead.
+If an IOException occurs when appending to the Appendable, an unchecked [ICUUncheckedIOException](../android.icu.util/ICUUncheckedIOException.md) is thrown instead.
 
 | Parameters ||
 |--------------|--------------------------------------------------------|
@@ -75,7 +75,7 @@ ConstrainedFieldPosition cfpos = new ConstrainedFieldPosition();
 
 | Parameters ||
 |---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `cfpos` | [ConstrainedFieldPosition](../android/icu/text/ConstrainedFieldPosition.md)!:The object used for iteration state. This can provide constraints to iterate over only one specific field; see [ConstrainedFieldPosition.constrainField](../android/icu/text/ConstrainedFieldPosition.md)). |
+| `cfpos` | [ConstrainedFieldPosition](ConstrainedFieldPosition.md)!:The object used for iteration state. This can provide constraints to iterate over only one specific field; see [ConstrainedFieldPosition.constrainField](ConstrainedFieldPosition.md)). |
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------------------------------------------------|
@@ -91,8 +91,8 @@ abstract fun toCharacterIterator(): AttributedCharacterIterator!
 
 Exports the formatted number as an AttributedCharacterIterator.
 
-Consider using [nextPosition](../android/icu/text/FormattedValue.md))if you are trying to get field information.
+Consider using [nextPosition](FormattedValue.md))if you are trying to get field information.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------|
-| [AttributedCharacterIterator](../java/text/AttributedCharacterIterator.md)! | An AttributedCharacterIterator containing full field information. |
+| [AttributedCharacterIterator](../java.text/AttributedCharacterIterator.md)! | An AttributedCharacterIterator containing full field information. |

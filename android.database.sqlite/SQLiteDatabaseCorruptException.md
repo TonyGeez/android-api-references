@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # SQLiteDatabaseCorruptException
 
-Kotlin| [Java](../android/database/sqlite/SQLiteDatabaseCorruptException.md) 
+Kotlin| [Java](SQLiteDatabaseCorruptException.md) 
 | --- | --- |
 
 ```
@@ -14,12 +14,12 @@ open class SQLiteDatabaseCorruptException : SQLiteException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||||
 | --- | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||||
-| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) ||||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) |||||
+| | | ↳ | [java.lang.RuntimeException](../java.lang/RuntimeException.md) ||||
 | --- | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.database.SQLException](../android/database/SQLException.md) |||
-| | | | | ↳ | [android.database.sqlite.SQLiteException](../android/database/sqlite/SQLiteException.md) ||
-| | | | | | ↳ | [android.database.sqlite.SQLiteDatabaseCorruptException](../android/database/sqlite/SQLiteDatabaseCorruptException.md) |
+| | | | ↳ | [android.database.SQLException](../android.database/SQLException.md) |||
+| | | | | ↳ | [android.database.sqlite.SQLiteException](SQLiteException.md) ||
+| | | | | | ↳ | [android.database.sqlite.SQLiteDatabaseCorruptException](SQLiteDatabaseCorruptException.md) |
 | --- | --- | --- | --- | --- | --- | --- |
 
 An exception that indicates that the SQLite database file is corrupt.
@@ -28,8 +28,8 @@ An exception that indicates that the SQLite database file is corrupt.
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SQLiteDatabaseCorruptException](../android/database/sqlite/SQLiteDatabaseCorruptException.md))`()` <br /> |
-| [SQLiteDatabaseCorruptException](../android/database/sqlite/SQLiteDatabaseCorruptException.md))`(`error:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| [SQLiteDatabaseCorruptException](SQLiteDatabaseCorruptException.md))`()` <br /> |
+| [SQLiteDatabaseCorruptException](SQLiteDatabaseCorruptException.md))`(`error:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
 
 ## Public constructors
 

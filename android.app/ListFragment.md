@@ -3,7 +3,7 @@ Deprecated in [API level 28](https://developer.android.com/guide/topics/manifest
 
 # ListFragment
 
-Kotlin | [Java](../android/app/ListFragment.md)
+Kotlin | [Java](ListFragment.md)
 | --- | --- |
 
 ```
@@ -12,8 +12,8 @@ open class ListFragment : Fragment
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.app.Fragment](../android/app/Fragment.md) ||
-| | ↳ | [android.app.ListFragment](../android/app/ListFragment.md) |
+| ↳ | [android.app.Fragment](Fragment.md) ||
+| | ↳ | [android.app.ListFragment](ListFragment.md) |
 
 | **This class was deprecated in API level 28.**
 |
@@ -105,12 +105,12 @@ You **must** use `https://developer.android.com/reference/kotlin/android/app/Lis
 
 | Public methods ||
 |---|---|
-| open [ListAdapter](../android/widget/ListAdapter.md)! | `https://developer.android.com/reference/kotlin/android/app/ListFragment#getListAdapter()()` Get the ListAdapter associated with this fragment's ListView. |
-| open [ListView](../android/widget/ListView.md)! | `https://developer.android.com/reference/kotlin/android/app/ListFragment#getListView()()` Get the fragment's list view widget. |
+| open [ListAdapter](../android.widget/ListAdapter.md)! | `https://developer.android.com/reference/kotlin/android/app/ListFragment#getListAdapter()()` Get the ListAdapter associated with this fragment's ListView. |
+| open [ListView](../android.widget/ListView.md)! | `https://developer.android.com/reference/kotlin/android/app/ListFragment#getListView()()` Get the fragment's list view widget. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/ListFragment#getSelectedItemId()()` Get the cursor row ID of the currently selected list item. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/ListFragment#getSelectedItemPosition()()` Get the position of the currently selected list item. |
-| open [View](../android/view/View.md)? | `https://developer.android.com/reference/kotlin/android/app/ListFragment#onCreateView(android.view.LayoutInflater,%20android.view.ViewGroup,%20android.os.Bundle)(inflater: https://developer.android.com/reference/kotlin/android/view/LayoutInflater.html#!, container: https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#?, savedInstanceState: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Provide default implementation to return a simple list view. |
+| open [View](../android.view/View.md)? | `https://developer.android.com/reference/kotlin/android/app/ListFragment#onCreateView(android.view.LayoutInflater,%20android.view.ViewGroup,%20android.os.Bundle)(inflater: https://developer.android.com/reference/kotlin/android/view/LayoutInflater.html#!, container: https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#?, savedInstanceState: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Provide default implementation to return a simple list view. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ListFragment#onDestroyView()()` Detach from list view. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/ListFragment#onListItemClick(android.widget.ListView,%20android.view.View,%20kotlin.Int,%20kotlin.Long)(l: https://developer.android.com/reference/kotlin/android/widget/ListView.html#!, v: https://developer.android.com/reference/kotlin/android/view/View.html#!, position: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` This method will be called when an item in the list is selected. |
@@ -208,9 +208,9 @@ If you are overriding this method with your own custom content, consider includi
 
 | Parameters ||
 |---|---|
-| `inflater` | [LayoutInflater](../android/view/LayoutInflater.md)!: The LayoutInflater object that can be used to inflate any views in the fragment, |
-| `container` | [ViewGroup](../android/view/ViewGroup.md)?: If non-null, this is the parent view that the fragment's UI should be attached to. The fragment should not add the view itself, but this can be used to generate the LayoutParams of the view. |
-| `savedInstanceState` | [Bundle](../android/os/Bundle.md)!: If non-null, this fragment is being re-constructed from a previous saved state as given here. |
+| `inflater` | [LayoutInflater](../android.view/LayoutInflater.md)!: The LayoutInflater object that can be used to inflate any views in the fragment, |
+| `container` | [ViewGroup](../android.view/ViewGroup.md)?: If non-null, this is the parent view that the fragment's UI should be attached to. The fragment should not add the view itself, but this can be used to generate the LayoutParams of the view. |
+| `savedInstanceState` | [Bundle](../android.os/Bundle.md)!: If non-null, this fragment is being re-constructed from a previous saved state as given here. |
 | --- | --- |
 
 | Return ||
@@ -248,8 +248,8 @@ This method will be called when an item in the list is selected. Subclasses shou
 
 | Parameters ||
 |---|---|
-| `l` | [ListView](../android/widget/ListView.md)!: The ListView where the click happened |
-| `v` | [View](../android/view/View.md)!: The view that was clicked within the ListView |
+| `l` | [ListView](../android.widget/ListView.md)!: The ListView where the click happened |
+| `v` | [View](../android.view/View.md)!: The view that was clicked within the ListView |
 | `position` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The position of the view in the list |
 | --- | --- |
 | `id` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The row id of the item that was clicked |
@@ -272,8 +272,8 @@ Attach to list view once the view hierarchy has been created.
 
 | Parameters ||
 |---|---|
-| `view` | [View](../android/view/View.md)!: The View returned by `https://developer.android.com/reference/kotlin/android/app/Fragment#onCreateView(android.view.LayoutInflater,%20android.view.ViewGroup,%20android.os.Bundle)`. |
-| `savedInstanceState` | [Bundle](../android/os/Bundle.md)?: If non-null, this fragment is being re-constructed from a previous saved state as given here. |
+| `view` | [View](../android.view/View.md)!: The View returned by `https://developer.android.com/reference/kotlin/android/app/Fragment#onCreateView(android.view.LayoutInflater,%20android.view.ViewGroup,%20android.os.Bundle)`. |
+| `savedInstanceState` | [Bundle](../android.os/Bundle.md)?: If non-null, this fragment is being re-constructed from a previous saved state as given here. |
 
 ### setEmptyText
 

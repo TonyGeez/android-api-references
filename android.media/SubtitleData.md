@@ -4,7 +4,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 
 # SubtitleData
 
-Kotlin| [Java](../android/media/SubtitleData.md) 
+Kotlin| [Java](SubtitleData.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class SubtitleData
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.SubtitleData](../android/media/SubtitleData.md) |
+| ↳ | [android.media.SubtitleData](SubtitleData.md) |
 
 Class encapsulating subtitle data, as received through the [MediaPlayer.OnSubtitleDataListener](../android/media/MediaPlayer.OnSubtitleDataListener.md) interface. The subtitle data includes:
 
@@ -22,11 +22,11 @@ Class encapsulating subtitle data, as received through the [MediaPlayer.OnSubtit
 - the duration (in microseconds) of the data
 - the actual data.
 
-The data is stored in a byte-array, and is encoded in one of the supported in-band subtitle formats. The subtitle encoding is determined by the MIME type of the [MediaPlayer.TrackInfo](../android/media/MediaPlayer.TrackInfo.md) of the subtitle track, one of [MediaFormat.MIMETYPE_TEXT_CEA_608](../android/media/MediaFormat.md), [MediaFormat.MIMETYPE_TEXT_CEA_708](../android/media/MediaFormat.md), [MediaFormat.MIMETYPE_TEXT_VTT](../android/media/MediaFormat.md).
+The data is stored in a byte-array, and is encoded in one of the supported in-band subtitle formats. The subtitle encoding is determined by the MIME type of the [MediaPlayer.TrackInfo](../android/media/MediaPlayer.TrackInfo.md) of the subtitle track, one of [MediaFormat.MIMETYPE_TEXT_CEA_608](MediaFormat.md), [MediaFormat.MIMETYPE_TEXT_CEA_708](MediaFormat.md), [MediaFormat.MIMETYPE_TEXT_VTT](MediaFormat.md).
 
 <br />
 
-Here is an example of iterating over the tracks of a [MediaPlayer](../android/media/MediaPlayer.md), and checking which encoding is used for the subtitle tracks:
+Here is an example of iterating over the tracks of a [MediaPlayer](MediaPlayer.md), and checking which encoding is used for the subtitle tracks:
 
 <br />
 
@@ -50,21 +50,21 @@ MediaPlayer mp = new MediaPlayer();
   
 ```
 
-See [MediaPlayer.setOnSubtitleDataListener(android.media.MediaPlayer.OnSubtitleDataListener, android.os.Handler)](../android/media/MediaPlayer.md))to receive subtitle data from a MediaPlayer object.
+See [MediaPlayer.setOnSubtitleDataListener(android.media.MediaPlayer.OnSubtitleDataListener, android.os.Handler)](MediaPlayer.md))to receive subtitle data from a MediaPlayer object.
 
 ## Summary
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SubtitleData](../android/media/SubtitleData.md))`(`trackIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `startTimeUs:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `durationUs:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `data:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`)` Constructor. |
+| [SubtitleData](SubtitleData.md))`(`trackIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `startTimeUs:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `durationUs:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `data:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`)` Constructor. |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [getData](../android/media/SubtitleData.md))`()` Returns the encoded data for the subtitle content. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getDurationUs](../android/media/SubtitleData.md))`()` Returns the duration in microsecond during which the subtitle should be displayed. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getStartTimeUs](../android/media/SubtitleData.md))`()` Returns the media time at which the subtitle should be displayed, expressed in microseconds. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [getData](SubtitleData.md))`()` Returns the encoded data for the subtitle content. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getDurationUs](SubtitleData.md))`()` Returns the duration in microsecond during which the subtitle should be displayed. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getStartTimeUs](SubtitleData.md))`()` Returns the media time at which the subtitle should be displayed, expressed in microseconds. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTrackIndex](../android/media/SubtitleData.md))`()` Returns the index of the media player track which contains this subtitle data. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTrackIndex](SubtitleData.md))`()` Returns the index of the media player track which contains this subtitle data. |
 
 ## Public constructors
 
@@ -146,4 +146,4 @@ Returns the index of the media player track which contains this subtitle data.
 
 | Return ||
 |----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | an index in the array returned by [MediaPlayer.getTrackInfo()](../android/media/MediaPlayer.md)). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | an index in the array returned by [MediaPlayer.getTrackInfo()](MediaPlayer.md)). |

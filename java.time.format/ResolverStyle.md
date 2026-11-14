@@ -10,10 +10,10 @@ class ResolverStyle
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.time.format.ResolverStyle](../java/time/format/ResolverStyle.md)\> ||
-| | ↳ | [java.time.format.ResolverStyle](../java/time/format/ResolverStyle.md) |
+| ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.time.format.ResolverStyle](ResolverStyle.md)\> ||
+| | ↳ | [java.time.format.ResolverStyle](ResolverStyle.md) |
 
-| Known Direct Subclasses [ResolverStyle.LENIENT](../java/time/format/ResolverStyle.md), [ResolverStyle.SMART](../java/time/format/ResolverStyle.md), [ResolverStyle.STRICT](../java/time/format/ResolverStyle.md) |---------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------| | [ResolverStyle.LENIENT](../java/time/format/ResolverStyle.md) | Style to resolve dates and times leniently. | | [ResolverStyle.SMART](../java/time/format/ResolverStyle.md) | Style to resolve dates and times in a smart, or intelligent, manner. | | [ResolverStyle.STRICT](../java/time/format/ResolverStyle.md) | Style to resolve dates and times strictly. | |
+| Known Direct Subclasses [ResolverStyle.LENIENT](ResolverStyle.md), [ResolverStyle.SMART](ResolverStyle.md), [ResolverStyle.STRICT](ResolverStyle.md) |---------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------| | [ResolverStyle.LENIENT](ResolverStyle.md) | Style to resolve dates and times leniently. | | [ResolverStyle.SMART](ResolverStyle.md) | Style to resolve dates and times in a smart, or intelligent, manner. | | [ResolverStyle.STRICT](ResolverStyle.md) | Style to resolve dates and times strictly. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Enumeration of different ways to resolve dates and times.
@@ -24,9 +24,9 @@ Parsing a text string occurs in two phases. Phase 1 is a basic text parse accord
 
 | Enum values ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [LENIENT](../java/time/format/ResolverStyle.md) Style to resolve dates and times leniently. |
-| [SMART](../java/time/format/ResolverStyle.md) Style to resolve dates and times in a smart, or intelligent, manner. |
-| [STRICT](../java/time/format/ResolverStyle.md) Style to resolve dates and times strictly. |
+| [LENIENT](ResolverStyle.md) Style to resolve dates and times leniently. |
+| [SMART](ResolverStyle.md) Style to resolve dates and times in a smart, or intelligent, manner. |
+| [STRICT](ResolverStyle.md) Style to resolve dates and times strictly. |
 
 ## Enum values
 

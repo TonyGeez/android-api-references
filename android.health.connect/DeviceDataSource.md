@@ -9,7 +9,7 @@ class DeviceDataSource : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.health.connect.DeviceDataSource](../android/health/connect/DeviceDataSource.md) |
+| ↳ | [android.health.connect.DeviceDataSource](DeviceDataSource.md) |
 
 Represents a device that acts as a source of health and fitness data.
 
@@ -27,9 +27,9 @@ Represents a device that acts as a source of health and fitness data.
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/DeviceDataSource#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/DeviceDataSource#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [Device](../android/health/connect/datatypes/Device.md) | `https://developer.android.com/reference/kotlin/android/health/connect/DeviceDataSource#getDevice()()` Returns the `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Device` metadata. |
+| [Device](../android.health.connect.datatypes/Device.md) | `https://developer.android.com/reference/kotlin/android/health/connect/DeviceDataSource#getDevice()()` Returns the `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/Device` metadata. |
 | --- | --- |
-| [DataOrigin](../android/health/connect/datatypes/DataOrigin.md) | `https://developer.android.com/reference/kotlin/android/health/connect/DeviceDataSource#getDeviceDataOrigin()()` Returns the `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/DataOrigin` of the device, containing the synthetic package name. |
+| [DataOrigin](../android.health.connect.datatypes/DataOrigin.md) | `https://developer.android.com/reference/kotlin/android/health/connect/DeviceDataSource#getDeviceDataOrigin()()` Returns the `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/DataOrigin` of the device, containing the synthetic package name. |
 | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [DeviceDataTypeSource](../android/health/connect/DeviceDataTypeSource.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/DeviceDataSource#getDeviceDataTypeSources()()` Returns the set of data types provided by this device. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/DeviceDataSource#hashCode()()` Returns a hash code value for the object. |
 | --- | --- |
@@ -38,7 +38,7 @@ Represents a device that acts as a source of health and fitness data.
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [DeviceDataSource](../android/health/connect/DeviceDataSource.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/DeviceDataSource#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [DeviceDataSource](DeviceDataSource.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/DeviceDataSource#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public constructors
 
@@ -56,8 +56,8 @@ DeviceDataSource(
 
 | Parameters ||
 |---|---|
-| `deviceDataOrigin` | [DataOrigin](../android/health/connect/datatypes/DataOrigin.md): The origin of the device data, i.e. the synthetic package name. This value cannot be `null`. |
-| `device` | [Device](../android/health/connect/datatypes/Device.md): The device metadata. This value cannot be `null`. |
+| `deviceDataOrigin` | [DataOrigin](../android.health.connect.datatypes/DataOrigin.md): The origin of the device data, i.e. the synthetic package name. This value cannot be `null`. |
+| `device` | [Device](../android.health.connect.datatypes/Device.md): The device metadata. This value cannot be `null`. |
 | `dataTypes` | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [DeviceDataTypeSource](../android/health/connect/DeviceDataTypeSource.md)!\>: The set of data types provided by this device. This value cannot be `null`. |
 | --- | --- |
 
@@ -199,7 +199,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

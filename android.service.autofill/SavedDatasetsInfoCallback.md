@@ -2,14 +2,14 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # SavedDatasetsInfoCallback
 
-Kotlin | [Java](../android/service/autofill/SavedDatasetsInfoCallback.md)
+Kotlin | [Java](SavedDatasetsInfoCallback.md)
 | --- | --- |
 
 ```
 interface SavedDatasetsInfoCallback
 ```
 
-| [android.service.autofill.SavedDatasetsInfoCallback](../android/service/autofill/SavedDatasetsInfoCallback.md) |
+| [android.service.autofill.SavedDatasetsInfoCallback](SavedDatasetsInfoCallback.md) |
 
 Handles the response to `https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService#onSavedDatasetsInfoRequest(android.service.autofill.SavedDatasetsInfoCallback)`.
 
@@ -97,4 +97,4 @@ Successfully respond to the request with the info on each type of saved datasets
 
 | Parameters ||
 |---|---|
-| `results` | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [SavedDatasetsInfo](../android/service/autofill/SavedDatasetsInfo.md)!\>: This value cannot be `null`. |
+| `results` | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [SavedDatasetsInfo](SavedDatasetsInfo.md)!\>: This value cannot be `null`. |

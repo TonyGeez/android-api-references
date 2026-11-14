@@ -8,7 +8,7 @@ class AnrTypes
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.AnrTypes](../android/app/AnrTypes.md) |
+| ↳ | [android.app.AnrTypes](AnrTypes.md) |
 
 Defines the types of Application Not Responding (ANR) errors.
 

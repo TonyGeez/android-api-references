@@ -10,7 +10,7 @@ open class EdDSAParameterSpec : AlgorithmParameterSpec
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.spec.EdDSAParameterSpec](../java/security/spec/EdDSAParameterSpec.md) |
+| ↳ | [java.security.spec.EdDSAParameterSpec](EdDSAParameterSpec.md) |
 
 A class used to specify EdDSA signature and verification parameters. All algorithm modes in [RFC 8032: Edwards-Curve Digital Signature Algorithm (EdDSA)](https://tools.ietf.org/html/rfc8032) can be specified using combinations of the settings in this class.
 
@@ -24,13 +24,13 @@ A class used to specify EdDSA signature and verification parameters. All algorit
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [EdDSAParameterSpec](../java/security/spec/EdDSAParameterSpec.md))`(`prehash:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Construct an`EdDSAParameterSpec`by specifying whether the prehash mode is used. |
-| [EdDSAParameterSpec](../java/security/spec/EdDSAParameterSpec.md))`(`prehash:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `context:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Construct an`EdDSAParameterSpec`by specifying a context and whether the prehash mode is used. |
+| [EdDSAParameterSpec](EdDSAParameterSpec.md))`(`prehash:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Construct an`EdDSAParameterSpec`by specifying whether the prehash mode is used. |
+| [EdDSAParameterSpec](EdDSAParameterSpec.md))`(`prehash:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `context:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Construct an`EdDSAParameterSpec`by specifying a context and whether the prehash mode is used. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Optional](../java/util/Optional.md)\< [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!\>! | [getContext](../java/security/spec/EdDSAParameterSpec.md))`()` Get the context that the signature will use. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPrehash](../java/security/spec/EdDSAParameterSpec.md))`()` Get whether the prehash mode is specified. |
+| open [Optional](../java.util/Optional.md)\< [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!\>! | [getContext](EdDSAParameterSpec.md))`()` Get the context that the signature will use. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPrehash](EdDSAParameterSpec.md))`()` Get whether the prehash mode is specified. |
 
 ## Public constructors
 
@@ -84,7 +84,7 @@ Get the context that the signature will use.
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
-| [Optional](../java/util/Optional.md)< [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!>! | `Optional`contains a copy of the context or empty if context is null. |
+| [Optional](../java.util/Optional.md)< [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!>! | `Optional`contains a copy of the context or empty if context is null. |
 
 ### isPrehash
 

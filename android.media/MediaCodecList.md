@@ -4,7 +4,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 
 # MediaCodecList
 
-Kotlin | [Java](../android/media/MediaCodecList.md) 
+Kotlin | [Java](MediaCodecList.md) 
 | --- | --- |
 
 ```
@@ -13,31 +13,31 @@ class MediaCodecList
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.MediaCodecList](../android/media/MediaCodecList.md) |
+| ↳ | [android.media.MediaCodecList](MediaCodecList.md) |
 
-Allows you to enumerate available codecs, each specified as a [MediaCodecInfo](../android/media/MediaCodecInfo.md) object, find a codec supporting a given format and query the capabilities of a given codec.
+Allows you to enumerate available codecs, each specified as a [MediaCodecInfo](MediaCodecInfo.md) object, find a codec supporting a given format and query the capabilities of a given codec.
 
-See [MediaCodecInfo](../android/media/MediaCodecInfo.md) for sample usage.
+See [MediaCodecInfo](MediaCodecInfo.md) for sample usage.
 
 ## Summary
 
 | Constants ||
 |-----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ALL_CODECS](../android/media/MediaCodecList.md) Use in [MediaCodecList](../android/media/MediaCodecList.md)) to enumerate all codecs, even ones that are not suitable for regular (buffer-to-buffer) decoding or encoding. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REGULAR_CODECS](../android/media/MediaCodecList.md) Use in [MediaCodecList](../android/media/MediaCodecList.md)) to enumerate only codecs that are suitable for regular (buffer-to-buffer) decoding or encoding. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ALL_CODECS](MediaCodecList.md) Use in [MediaCodecList](MediaCodecList.md)) to enumerate all codecs, even ones that are not suitable for regular (buffer-to-buffer) decoding or encoding. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REGULAR_CODECS](MediaCodecList.md) Use in [MediaCodecList](MediaCodecList.md)) to enumerate only codecs that are suitable for regular (buffer-to-buffer) decoding or encoding. |
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [MediaCodecList](../android/media/MediaCodecList.md))`(`kind:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a list of media-codecs of a specific kind. |
+| [MediaCodecList](MediaCodecList.md))`(`kind:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a list of media-codecs of a specific kind. |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [findDecoderForFormat](../android/media/MediaCodecList.md))`(`format:` ` [MediaFormat](../android/media/MediaFormat.md)!`)` Find a decoder supporting a given [MediaFormat](../android/media/MediaFormat.md) in the list of media-codecs. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [findEncoderForFormat](../android/media/MediaCodecList.md))`(`format:` ` [MediaFormat](../android/media/MediaFormat.md)!`)` Find an encoder supporting a given [MediaFormat](../android/media/MediaFormat.md) in the list of media-codecs. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCodecCount](../android/media/MediaCodecList.md))`()` Count the number of available (regular) codecs. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [findDecoderForFormat](MediaCodecList.md))`(`format:` ` [MediaFormat](MediaFormat.md)!`)` Find a decoder supporting a given [MediaFormat](MediaFormat.md) in the list of media-codecs. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [findEncoderForFormat](MediaCodecList.md))`(`format:` ` [MediaFormat](MediaFormat.md)!`)` Find an encoder supporting a given [MediaFormat](MediaFormat.md) in the list of media-codecs. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCodecCount](MediaCodecList.md))`()` Count the number of available (regular) codecs. |
 | --- | --- |
-| static [MediaCodecInfo](../android/media/MediaCodecInfo.md)! | [getCodecInfoAt](../android/media/MediaCodecList.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the [MediaCodecInfo](../android/media/MediaCodecInfo.md) object for the codec at the given `index` in the regular list. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [MediaCodecInfo](../android/media/MediaCodecInfo.md)!\>! | [getCodecInfos](../android/media/MediaCodecList.md))`()` Returns the list of [MediaCodecInfo](../android/media/MediaCodecInfo.md) objects for the list of media-codecs. |
+| static [MediaCodecInfo](MediaCodecInfo.md)! | [getCodecInfoAt](MediaCodecList.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the [MediaCodecInfo](MediaCodecInfo.md) object for the codec at the given `index` in the regular list. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [MediaCodecInfo](MediaCodecInfo.md)!\>! | [getCodecInfos](MediaCodecList.md))`()` Returns the list of [MediaCodecInfo](MediaCodecInfo.md) objects for the list of media-codecs. |
 
 ## Constants
 
@@ -49,7 +49,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val ALL_CODECS: Int
 ```
 
-Use in [MediaCodecList](../android/media/MediaCodecList.md)) to enumerate all codecs, even ones that are not suitable for regular (buffer-to-buffer) decoding or encoding. These include codecs, for example, that only work with special input or output surfaces, such as secure-only or tunneled-only codecs. 
+Use in [MediaCodecList](MediaCodecList.md)) to enumerate all codecs, even ones that are not suitable for regular (buffer-to-buffer) decoding or encoding. These include codecs, for example, that only work with special input or output surfaces, such as secure-only or tunneled-only codecs. 
 
  Value: 1
 
@@ -67,7 +67,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val REGULAR_CODECS: Int
 ```
 
-Use in [MediaCodecList](../android/media/MediaCodecList.md)) to enumerate only codecs that are suitable for regular (buffer-to-buffer) decoding or encoding. *NOTE:* These are the codecs that are returned prior to API 21, using the now deprecated static methods. 
+Use in [MediaCodecList](MediaCodecList.md)) to enumerate only codecs that are suitable for regular (buffer-to-buffer) decoding or encoding. *NOTE:* These are the codecs that are returned prior to API 21, using the now deprecated static methods. 
 
  Value: 0
 
@@ -85,7 +85,7 @@ Create a list of media-codecs of a specific kind.
 
 | Parameters ||
 |--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `kind` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Either [MediaCodecList.REGULAR_CODECS](../android/media/MediaCodecList.md) or [MediaCodecList.ALL_CODECS](../android/media/MediaCodecList.md). |
+| `kind` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Either [MediaCodecList.REGULAR_CODECS](MediaCodecList.md) or [MediaCodecList.ALL_CODECS](MediaCodecList.md). |
 
 ## Public methods
 
@@ -97,13 +97,13 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 fun findDecoderForFormat(format: MediaFormat!): String!
 ```
 
-Find a decoder supporting a given [MediaFormat](../android/media/MediaFormat.md) in the list of media-codecs.
+Find a decoder supporting a given [MediaFormat](MediaFormat.md) in the list of media-codecs.
 
-**Note:** On [android.os.Build.VERSION_CODES#LOLLIPOP](../android/os/Build.VERSION_CODES.md), `format` must not contain a [frame rate](../android/media/MediaFormat.md). Use `format.setString(MediaFormat.KEY_FRAME_RATE, null)` to clear any existing frame rate setting in the format.
+**Note:** On [android.os.Build.VERSION_CODES#LOLLIPOP](../android/os/Build.VERSION_CODES.md), `format` must not contain a [frame rate](MediaFormat.md). Use `format.setString(MediaFormat.KEY_FRAME_RATE, null)` to clear any existing frame rate setting in the format.
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| `format` | [MediaFormat](../android/media/MediaFormat.md)!: A decoder media format with optional feature directives. |
+| `format` | [MediaFormat](MediaFormat.md)!: A decoder media format with optional feature directives. |
 
 | Return ||
 |-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
@@ -126,13 +126,13 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 fun findEncoderForFormat(format: MediaFormat!): String!
 ```
 
-Find an encoder supporting a given [MediaFormat](../android/media/MediaFormat.md) in the list of media-codecs.
+Find an encoder supporting a given [MediaFormat](MediaFormat.md) in the list of media-codecs.
 
-**Note:** On [android.os.Build.VERSION_CODES#LOLLIPOP](../android/os/Build.VERSION_CODES.md), `format` must not contain a [frame rate](../android/media/MediaFormat.md). Use `format.setString(MediaFormat.KEY_FRAME_RATE, null)` to clear any existing frame rate setting in the format.
+**Note:** On [android.os.Build.VERSION_CODES#LOLLIPOP](../android/os/Build.VERSION_CODES.md), `format` must not contain a [frame rate](MediaFormat.md). Use `format.setString(MediaFormat.KEY_FRAME_RATE, null)` to clear any existing frame rate setting in the format.
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| `format` | [MediaFormat](../android/media/MediaFormat.md)!: An encoder media format with optional feature directives. |
+| `format` | [MediaFormat](MediaFormat.md)!: An encoder media format with optional feature directives. |
 
 | Return ||
 |-----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
@@ -156,12 +156,12 @@ Deprecated in [API level 21](https://developer.android.com/guide/topics/manifest
 static fun getCodecCount(): Int
 ```
 
-**Deprecated:** *Use [getCodecInfos](../android/media/MediaCodecList.md)) instead.*
+**Deprecated:** *Use [getCodecInfos](MediaCodecList.md)) instead.*
 
 Count the number of available (regular) codecs. 
 **See Also**
 
-- [#REGULAR_CODECS](../android/media/MediaCodecList.md) 
+- [#REGULAR_CODECS](MediaCodecList.md) 
 
 ### getCodecInfoAt
 
@@ -172,12 +172,12 @@ Deprecated in [API level 21](https://developer.android.com/guide/topics/manifest
 static fun getCodecInfoAt(index: Int): MediaCodecInfo!
 ```
 
-**Deprecated:** *Use [getCodecInfos](../android/media/MediaCodecList.md)) instead.*
+**Deprecated:** *Use [getCodecInfos](MediaCodecList.md)) instead.*
 
-Return the [MediaCodecInfo](../android/media/MediaCodecInfo.md) object for the codec at the given `index` in the regular list. 
+Return the [MediaCodecInfo](MediaCodecInfo.md) object for the codec at the given `index` in the regular list. 
 **See Also**
 
-- [#REGULAR_CODECS](../android/media/MediaCodecList.md) 
+- [#REGULAR_CODECS](MediaCodecList.md) 
 
 ### getCodecInfos
 
@@ -187,4 +187,4 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 fun getCodecInfos(): Array<MediaCodecInfo!>!
 ```
 
-Returns the list of [MediaCodecInfo](../android/media/MediaCodecInfo.md) objects for the list of media-codecs.
+Returns the list of [MediaCodecInfo](MediaCodecInfo.md) objects for the list of media-codecs.

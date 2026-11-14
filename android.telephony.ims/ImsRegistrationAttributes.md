@@ -4,7 +4,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # ImsRegistrationAttributes
 
-Kotlin| [Java](../android/telephony/ims/ImsRegistrationAttributes.md) 
+Kotlin| [Java](ImsRegistrationAttributes.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class ImsRegistrationAttributes : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.telephony.ims.ImsRegistrationAttributes](../android/telephony/ims/ImsRegistrationAttributes.md) |
+| ↳ | [android.telephony.ims.ImsRegistrationAttributes](ImsRegistrationAttributes.md) |
 
 Contains the attributes associated with the current IMS registration.
 
@@ -21,35 +21,35 @@ Contains the attributes associated with the current IMS registration.
 
 | Constants ||
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ATTR_EPDG_OVER_CELL_INTERNET](../android/telephony/ims/ImsRegistrationAttributes.md) Attribute to specify if an EPDG tunnel is setup over the cellular internet APN. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ATTR_REGISTRATION_TYPE_EMERGENCY](../android/telephony/ims/ImsRegistrationAttributes.md) Attribute to specify if ims registration is of type normal or emergency. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ATTR_VIRTUAL_FOR_ANONYMOUS_EMERGENCY_CALL](../android/telephony/ims/ImsRegistrationAttributes.md) Attribute to specify if virtual registration is required. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ATTR_EPDG_OVER_CELL_INTERNET](ImsRegistrationAttributes.md) Attribute to specify if an EPDG tunnel is setup over the cellular internet APN. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ATTR_REGISTRATION_TYPE_EMERGENCY](ImsRegistrationAttributes.md) Attribute to specify if ims registration is of type normal or emergency. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ATTR_VIRTUAL_FOR_ANONYMOUS_EMERGENCY_CALL](ImsRegistrationAttributes.md) Attribute to specify if virtual registration is required. |
 | --- | --- |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android.os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android.os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android.os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/telephony/ims/ImsRegistrationAttributes.md))`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/telephony/ims/ImsRegistrationAttributes.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAttributeFlags](../android/telephony/ims/ImsRegistrationAttributes.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](ImsRegistrationAttributes.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](ImsRegistrationAttributes.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAttributeFlags](ImsRegistrationAttributes.md))`()` <br /> |
 | --- | --- |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getFeatureTags](../android/telephony/ims/ImsRegistrationAttributes.md))`()` Gets the Set of feature tags associated with the current IMS registration, if the IMS service supports supplying this information. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getFlagRegistrationTypeEmergency](../android/telephony/ims/ImsRegistrationAttributes.md))`()` Get the attribute flag ATTR_REGISTRATION_TYPE_EMERGENCY. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getFlagVirtualRegistrationForEmergencyCall](../android/telephony/ims/ImsRegistrationAttributes.md))`()` Get the attribute flag ATTR_VIRTUAL_FOR_ANONYMOUS_EMERGENCY_CALL. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getFeatureTags](ImsRegistrationAttributes.md))`()` Gets the Set of feature tags associated with the current IMS registration, if the IMS service supports supplying this information. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getFlagRegistrationTypeEmergency](ImsRegistrationAttributes.md))`()` Get the attribute flag ATTR_REGISTRATION_TYPE_EMERGENCY. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getFlagVirtualRegistrationForEmergencyCall](ImsRegistrationAttributes.md))`()` Get the attribute flag ATTR_VIRTUAL_FOR_ANONYMOUS_EMERGENCY_CALL. |
 | --- | --- |
-| [SipDetails](../android/telephony/ims/SipDetails.md)? | [getSipDetails](../android/telephony/ims/ImsRegistrationAttributes.md))`()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTransportType](../android/telephony/ims/ImsRegistrationAttributes.md))`()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/telephony/ims/ImsRegistrationAttributes.md))`()` <br /> |
+| [SipDetails](SipDetails.md)? | [getSipDetails](ImsRegistrationAttributes.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTransportType](ImsRegistrationAttributes.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](ImsRegistrationAttributes.md))`()` <br /> |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/telephony/ims/ImsRegistrationAttributes.md))`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/telephony/ims/ImsRegistrationAttributes.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](ImsRegistrationAttributes.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](ImsRegistrationAttributes.md))`(`dest:` ` [Parcel](../android.os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ImsRegistrationAttributes](../android/telephony/ims/ImsRegistrationAttributes.md)!\> | [CREATOR](../android/telephony/ims/ImsRegistrationAttributes.md) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ImsRegistrationAttributes](ImsRegistrationAttributes.md)!\> | [CREATOR](ImsRegistrationAttributes.md) <br /> |
 
 ## Constants
 
@@ -107,7 +107,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) |
 
 ### equals
 
@@ -135,7 +135,7 @@ fun getAttributeFlags(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | A bit-mask containing attributes associated with the IMS registration. Value is either`0`or a combination of [android.telephony.ims.ImsRegistrationAttributes#ATTR_EPDG_OVER_CELL_INTERNET](../android/telephony/ims/ImsRegistrationAttributes.md), [android.telephony.ims.ImsRegistrationAttributes#ATTR_REGISTRATION_TYPE_EMERGENCY](../android/telephony/ims/ImsRegistrationAttributes.md), and [android.telephony.ims.ImsRegistrationAttributes#ATTR_VIRTUAL_FOR_ANONYMOUS_EMERGENCY_CALL](../android/telephony/ims/ImsRegistrationAttributes.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | A bit-mask containing attributes associated with the IMS registration. Value is either`0`or a combination of [android.telephony.ims.ImsRegistrationAttributes#ATTR_EPDG_OVER_CELL_INTERNET](ImsRegistrationAttributes.md), [android.telephony.ims.ImsRegistrationAttributes#ATTR_REGISTRATION_TYPE_EMERGENCY](ImsRegistrationAttributes.md), and [android.telephony.ims.ImsRegistrationAttributes#ATTR_VIRTUAL_FOR_ANONYMOUS_EMERGENCY_CALL](ImsRegistrationAttributes.md) |
 
 ### getFeatureTags
 
@@ -191,7 +191,7 @@ fun getSipDetails(): SipDetails?
 
 | Return ||
 |------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| [SipDetails](../android/telephony/ims/SipDetails.md)? | The SIP information associated with the IMS registration. This value may be`null`. |
+| [SipDetails](SipDetails.md)? | The SIP information associated with the IMS registration. This value may be`null`. |
 
 ### getTransportType
 
@@ -203,7 +203,7 @@ fun getTransportType(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The access network transport type that IMS has been registered over. Value is android.telephony.AccessNetworkConstants.TRANSPORT_TYPE_INVALID, [android.telephony.AccessNetworkConstants#TRANSPORT_TYPE_WWAN](../android/telephony/AccessNetworkConstants.md), or [android.telephony.AccessNetworkConstants#TRANSPORT_TYPE_WLAN](../android/telephony/AccessNetworkConstants.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The access network transport type that IMS has been registered over. Value is android.telephony.AccessNetworkConstants.TRANSPORT_TYPE_INVALID, [android.telephony.AccessNetworkConstants#TRANSPORT_TYPE_WWAN](../android.telephony/AccessNetworkConstants.md), or [android.telephony.AccessNetworkConstants#TRANSPORT_TYPE_WLAN](../android.telephony/AccessNetworkConstants.md) |
 
 ### hashCode
 
@@ -244,8 +244,8 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](../android/os/Parcel.md):This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android.os/Parcel.md):This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

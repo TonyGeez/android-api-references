@@ -4,7 +4,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 
 # VolumeShaper
 
-Kotlin| [Java](../android/media/VolumeShaper.md) 
+Kotlin| [Java](VolumeShaper.md) 
 | --- | --- |
 
 ```
@@ -13,9 +13,9 @@ class VolumeShaper : AutoCloseable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.VolumeShaper](../android/media/VolumeShaper.md) |
+| ↳ | [android.media.VolumeShaper](VolumeShaper.md) |
 
-The`VolumeShaper`class is used to automatically control audio volume during media playback, allowing simple implementation of transition effects and ducking. It is created from implementations of`VolumeAutomation`, such as`MediaPlayer`and`AudioTrack`(referred to as "players" below), by [MediaPlayer.createVolumeShaper](../android/media/MediaPlayer.md))or [AudioTrack.createVolumeShaper](../android/media/AudioTrack.md)). A`VolumeShaper`is intended for short volume changes. If the audio output sink changes during a`VolumeShaper`transition, the precise curve position may be lost, and the`VolumeShaper`may advance to the end of the curve for the new audio output sink. The`VolumeShaper`appears as an additional scaling on the audio output, and adjusts independently of track or stream volume controls.
+The`VolumeShaper`class is used to automatically control audio volume during media playback, allowing simple implementation of transition effects and ducking. It is created from implementations of`VolumeAutomation`, such as`MediaPlayer`and`AudioTrack`(referred to as "players" below), by [MediaPlayer.createVolumeShaper](MediaPlayer.md))or [AudioTrack.createVolumeShaper](AudioTrack.md)). A`VolumeShaper`is intended for short volume changes. If the audio output sink changes during a`VolumeShaper`transition, the precise curve position may be lost, and the`VolumeShaper`may advance to the end of the curve for the new audio output sink. The`VolumeShaper`appears as an additional scaling on the audio output, and adjusts independently of track or stream volume controls.
 
 ## Summary
 
@@ -26,15 +26,15 @@ The`VolumeShaper`class is used to automatically control audio volume during medi
 
 | Public methods ||
 |--------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [apply](../android/media/VolumeShaper.md))`(`operation:` ` [VolumeShaper.Operation](../android/media/VolumeShaper.Operation.md)`)` Applies the [VolumeShaper.Operation](../android/media/VolumeShaper.Operation.md) to the`VolumeShaper`. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../android/media/VolumeShaper.md))`()` Releases the`VolumeShaper`object; any volume scale due to the`VolumeShaper`is removed after closing. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getVolume](../android/media/VolumeShaper.md))`()` Returns the current volume scale attributable to the`VolumeShaper`. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [apply](VolumeShaper.md))`(`operation:` ` [VolumeShaper.Operation](../android/media/VolumeShaper.Operation.md)`)` Applies the [VolumeShaper.Operation](../android/media/VolumeShaper.Operation.md) to the`VolumeShaper`. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](VolumeShaper.md))`()` Releases the`VolumeShaper`object; any volume scale due to the`VolumeShaper`is removed after closing. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getVolume](VolumeShaper.md))`()` Returns the current volume scale attributable to the`VolumeShaper`. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [replace](../android/media/VolumeShaper.md))`(`configuration:` ` [VolumeShaper.Configuration](../android/media/VolumeShaper.Configuration.md)`, `operation:` ` [VolumeShaper.Operation](../android/media/VolumeShaper.Operation.md)`, `join:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Replaces the current`VolumeShaper``configuration`with a new`configuration`. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [replace](VolumeShaper.md))`(`configuration:` ` [VolumeShaper.Configuration](../android/media/VolumeShaper.Configuration.md)`, `operation:` ` [VolumeShaper.Operation](../android/media/VolumeShaper.Operation.md)`, `join:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Replaces the current`VolumeShaper``configuration`with a new`configuration`. |
 
 | Protected methods ||
 |------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](../android/media/VolumeShaper.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](VolumeShaper.md))`()` <br /> |
 
 ## Public methods
 

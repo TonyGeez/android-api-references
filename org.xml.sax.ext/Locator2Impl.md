@@ -10,10 +10,10 @@ open class Locator2Impl : LocatorImpl, Locator2
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [org.xml.sax.helpers.LocatorImpl](../org/xml/sax/helpers/LocatorImpl.md) ||
-| | ↳ | [org.xml.sax.ext.Locator2Impl](../org/xml/sax/ext/Locator2Impl.md) |
+| ↳ | [org.xml.sax.helpers.LocatorImpl](../org.xml.sax.helpers/LocatorImpl.md) ||
+| | ↳ | [org.xml.sax.ext.Locator2Impl](Locator2Impl.md) |
 
-SAX2 extension helper for holding additional Entity information, implementing the [Locator2](../org/xml/sax/ext/Locator2.md) interface.*This module, both source code and documentation, is in the Public Domain, and comes with**NO WARRANTY**.*
+SAX2 extension helper for holding additional Entity information, implementing the [Locator2](Locator2.md) interface.*This module, both source code and documentation, is in the Public Domain, and comes with**NO WARRANTY**.*
 
 This is not part of core-only SAX2 distributions.
 
@@ -21,20 +21,20 @@ This is not part of core-only SAX2 distributions.
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Locator2Impl](../org/xml/sax/ext/Locator2Impl.md))`()` Construct a new, empty Locator2Impl object. |
-| [Locator2Impl](../org/xml/sax/ext/Locator2Impl.md))`(`locator:` ` [Locator](../org/xml/sax/Locator.md)!`)` Copy an existing Locator or Locator2 object. |
+| [Locator2Impl](Locator2Impl.md))`()` Construct a new, empty Locator2Impl object. |
+| [Locator2Impl](Locator2Impl.md))`(`locator:` ` [Locator](../org.xml.sax/Locator.md)!`)` Copy an existing Locator or Locator2 object. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getEncoding](../org/xml/sax/ext/Locator2Impl.md))`()` Returns the current value of the encoding property. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getXMLVersion](../org/xml/sax/ext/Locator2Impl.md))`()` Returns the current value of the version property. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEncoding](../org/xml/sax/ext/Locator2Impl.md))`(`encoding:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Assigns the current value of the encoding property. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getEncoding](Locator2Impl.md))`()` Returns the current value of the encoding property. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getXMLVersion](Locator2Impl.md))`()` Returns the current value of the version property. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEncoding](Locator2Impl.md))`(`encoding:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Assigns the current value of the encoding property. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setXMLVersion](../org/xml/sax/ext/Locator2Impl.md))`(`version:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Assigns the current value of the version property. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setXMLVersion](Locator2Impl.md))`(`version:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Assigns the current value of the version property. |
 
 | Inherited functions ||
 |---|---|
-| From class [LocatorImpl](../org/xml/sax/helpers/LocatorImpl.md) |-----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getColumnNumber](../org/xml/sax/helpers/LocatorImpl.md))`()` <br /> Return the saved column number (1-based). <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLineNumber](../org/xml/sax/helpers/LocatorImpl.md))`()` <br /> Return the saved line number (1-based). <br /> | | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPublicId](../org/xml/sax/helpers/LocatorImpl.md))`()` <br /> Return the saved public identifier. <br /> | | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSystemId](../org/xml/sax/helpers/LocatorImpl.md))`()` <br /> Return the saved system identifier. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setColumnNumber](../org/xml/sax/helpers/LocatorImpl.md))`(`columnNumber:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> Set the column number for this locator (1-based). <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLineNumber](../org/xml/sax/helpers/LocatorImpl.md))`(`lineNumber:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> Set the line number for this locator (1-based). <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPublicId](../org/xml/sax/helpers/LocatorImpl.md))`(`publicId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> Set the public identifier for this locator. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSystemId](../org/xml/sax/helpers/LocatorImpl.md))`(`systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> Set the system identifier for this locator. <br /> | ||
+| From class [LocatorImpl](../org.xml.sax.helpers/LocatorImpl.md) |-----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getColumnNumber](../org.xml.sax.helpers/LocatorImpl.md))`()` <br /> Return the saved column number (1-based). <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLineNumber](../org.xml.sax.helpers/LocatorImpl.md))`()` <br /> Return the saved line number (1-based). <br /> | | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPublicId](../org.xml.sax.helpers/LocatorImpl.md))`()` <br /> Return the saved public identifier. <br /> | | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSystemId](../org.xml.sax.helpers/LocatorImpl.md))`()` <br /> Return the saved system identifier. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setColumnNumber](../org.xml.sax.helpers/LocatorImpl.md))`(`columnNumber:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> Set the column number for this locator (1-based). <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLineNumber](../org.xml.sax.helpers/LocatorImpl.md))`(`lineNumber:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> Set the line number for this locator (1-based). <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPublicId](../org.xml.sax.helpers/LocatorImpl.md))`(`publicId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> Set the public identifier for this locator. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSystemId](../org.xml.sax.helpers/LocatorImpl.md))`(`systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> Set the system identifier for this locator. <br /> | ||
 
 ## Public constructors
 
@@ -60,7 +60,7 @@ Copy an existing Locator or Locator2 object. If the object implements Locator2, 
 
 | Parameters ||
 |-----------|-------------------------------------------------------------------------------------------------------------------|
-| `locator` | [Locator](../org/xml/sax/Locator.md)!:The existing Locator object. |
+| `locator` | [Locator](../org.xml.sax/Locator.md)!:The existing Locator object. |
 
 ## Public methods
 
@@ -80,7 +80,7 @@ Returns the current value of the encoding property.
 
 **See Also**
 
-- [#setEncoding](../org/xml/sax/ext/Locator2Impl.md)) 
+- [#setEncoding](Locator2Impl.md)) 
 
 ### getXMLVersion
 
@@ -98,7 +98,7 @@ Returns the current value of the version property.
 
 **See Also**
 
-- [#setXMLVersion](../org/xml/sax/ext/Locator2Impl.md)) 
+- [#setXMLVersion](Locator2Impl.md)) 
 
 ### setEncoding
 
@@ -116,7 +116,7 @@ Assigns the current value of the encoding property.
 
 **See Also**
 
-- [#getEncoding](../org/xml/sax/ext/Locator2Impl.md)) 
+- [#getEncoding](Locator2Impl.md)) 
 
 ### setXMLVersion
 
@@ -134,4 +134,4 @@ Assigns the current value of the version property.
 
 **See Also**
 
-- [#getXMLVersion](../org/xml/sax/ext/Locator2Impl.md))
+- [#getXMLVersion](Locator2Impl.md))

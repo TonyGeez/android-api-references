@@ -8,37 +8,37 @@ open class ContextWrapper : Context
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.content.Context](../android/content/Context.md) ||
-| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) |
+| ↳ | [android.content.Context](Context.md) ||
+| | ↳ | [android.content.ContextWrapper](ContextWrapper.md) |
 
-Known Direct Subclasses [Application](../android/app/Application.md), [BackupAgent](../android/app/backup/BackupAgent.md), [ContextThemeWrapper](../android/view/ContextThemeWrapper.md), [IsolatedContext](../android/test/IsolatedContext.md), [MutableContextWrapper](../android/content/MutableContextWrapper.md), [RenamingDelegatingContext](../android/test/RenamingDelegatingContext.md), [Service](../android/app/Service.md) [Application](../android/app/Application.md) Base class for maintaining global application state.
-[BackupAgent](../android/app/backup/BackupAgent.md) Provides the central interface between an application and Android's data backup infrastructure.
-[ContextThemeWrapper](../android/view/ContextThemeWrapper.md) A context wrapper that allows you to modify or replace the theme of the wrapped context.
-[IsolatedContext](../android/test/IsolatedContext.md) A mock context which prevents its users from talking to the rest of the device while stubbing enough methods to satify code that tries to talk to other packages.
-[MutableContextWrapper](../android/content/MutableContextWrapper.md) Special version of `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#` that allows the base context to be modified after it is initially set.
-[RenamingDelegatingContext](../android/test/RenamingDelegatingContext.md) This is a class which delegates to the given context, but performs database and file operations with a renamed database/file name (prefixes default names with a given prefix).
-[Service](../android/app/Service.md) A Service is an application component representing either an application's desire to perform a longer-running operation while not interacting with the user or to supply functionality for other applications to use.
-Known Indirect Subclasses [AbstractInputMethodService](../android/inputmethodservice/AbstractInputMethodService.md), [AccessibilityService](../android/accessibilityservice/AccessibilityService.md), [AccountAuthenticatorActivity](../android/accounts/AccountAuthenticatorActivity.md), [Activity](../android/app/Activity.md), [ActivityGroup](../android/app/ActivityGroup.md), [AliasActivity](../android/app/AliasActivity.md), [AlternativeMessageTransportService](../android/service/messaging/AlternativeMessageTransportService.md), [AppContentProjectionService](../android/media/projection/AppContentProjectionService.md), [AppFunctionService](../android/app/appfunctions/AppFunctionService.md), [AutofillService](../android/service/autofill/AutofillService.md), [BackupAgentHelper](../android/app/backup/BackupAgentHelper.md), [CallRedirectionService](../android/telecom/CallRedirectionService.md), and 56 others. [AbstractInputMethodService](../android/inputmethodservice/AbstractInputMethodService.md) AbstractInputMethodService provides a abstract base class for input methods.
-[AccessibilityService](../android/accessibilityservice/AccessibilityService.md) Accessibility services should only be used to assist users with disabilities in using Android devices and apps.
-[AccountAuthenticatorActivity](../android/accounts/AccountAuthenticatorActivity.md) Base class for implementing an Activity that is used to help implement an AbstractAccountAuthenticator.
-[Activity](../android/app/Activity.md) An activity is a single, focused thing that the user can do.
-[ActivityGroup](../android/app/ActivityGroup.md) A screen that contains and runs multiple embedded activities.
-[AliasActivity](../android/app/AliasActivity.md) Stub activity that launches another activity (and then finishes itself) based on information in its component's manifest meta-data.
+Known Direct Subclasses [Application](../android.app/Application.md), [BackupAgent](../android.app.backup/BackupAgent.md), [ContextThemeWrapper](../android.view/ContextThemeWrapper.md), [IsolatedContext](../android.test/IsolatedContext.md), [MutableContextWrapper](MutableContextWrapper.md), [RenamingDelegatingContext](../android.test/RenamingDelegatingContext.md), [Service](../android.app/Service.md) [Application](../android.app/Application.md) Base class for maintaining global application state.
+[BackupAgent](../android.app.backup/BackupAgent.md) Provides the central interface between an application and Android's data backup infrastructure.
+[ContextThemeWrapper](../android.view/ContextThemeWrapper.md) A context wrapper that allows you to modify or replace the theme of the wrapped context.
+[IsolatedContext](../android.test/IsolatedContext.md) A mock context which prevents its users from talking to the rest of the device while stubbing enough methods to satify code that tries to talk to other packages.
+[MutableContextWrapper](MutableContextWrapper.md) Special version of `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#` that allows the base context to be modified after it is initially set.
+[RenamingDelegatingContext](../android.test/RenamingDelegatingContext.md) This is a class which delegates to the given context, but performs database and file operations with a renamed database/file name (prefixes default names with a given prefix).
+[Service](../android.app/Service.md) A Service is an application component representing either an application's desire to perform a longer-running operation while not interacting with the user or to supply functionality for other applications to use.
+Known Indirect Subclasses [AbstractInputMethodService](../android.inputmethodservice/AbstractInputMethodService.md), [AccessibilityService](../android.accessibilityservice/AccessibilityService.md), [AccountAuthenticatorActivity](../android.accounts/AccountAuthenticatorActivity.md), [Activity](../android.app/Activity.md), [ActivityGroup](../android.app/ActivityGroup.md), [AliasActivity](../android.app/AliasActivity.md), [AlternativeMessageTransportService](../android/service/messaging/AlternativeMessageTransportService.md), [AppContentProjectionService](../android/media/projection/AppContentProjectionService.md), [AppFunctionService](../android.app.appfunctions/AppFunctionService.md), [AutofillService](../android.service.autofill/AutofillService.md), [BackupAgentHelper](../android.app.backup/BackupAgentHelper.md), [CallRedirectionService](../android.telecom/CallRedirectionService.md), and 56 others. [AbstractInputMethodService](../android.inputmethodservice/AbstractInputMethodService.md) AbstractInputMethodService provides a abstract base class for input methods.
+[AccessibilityService](../android.accessibilityservice/AccessibilityService.md) Accessibility services should only be used to assist users with disabilities in using Android devices and apps.
+[AccountAuthenticatorActivity](../android.accounts/AccountAuthenticatorActivity.md) Base class for implementing an Activity that is used to help implement an AbstractAccountAuthenticator.
+[Activity](../android.app/Activity.md) An activity is a single, focused thing that the user can do.
+[ActivityGroup](../android.app/ActivityGroup.md) A screen that contains and runs multiple embedded activities.
+[AliasActivity](../android.app/AliasActivity.md) Stub activity that launches another activity (and then finishes itself) based on information in its component's manifest meta-data.
 [AlternativeMessageTransportService](../android/service/messaging/AlternativeMessageTransportService.md) AlternativeMessageTransportService (AMTS) allows the default SMS app to handle the sending of a message over a different transport (e.g. RCS etc.) other than the SMS or MMS.
 [AppContentProjectionService](../android/media/projection/AppContentProjectionService.md) Service to be implemented by the application providing the `https://developer.android.com/reference/kotlin/android/media/projection/MediaProjectionAppContent.html#`.
-[AppFunctionService](../android/app/appfunctions/AppFunctionService.md) Extend this class to implement app functions, that can be executed by android.
-[AutofillService](../android/service/autofill/AutofillService.md) An `AutofillService` is a service used to automatically fill the contents of the screen on behalf of a given user - for more information about autofill, read [Autofill Framework](https://developer.android.com/preview/features/autofill.html).
-[BackupAgentHelper](../android/app/backup/BackupAgentHelper.md) A convenient `https://developer.android.com/reference/kotlin/android/app/backup/BackupAgent.html#` wrapper class that automatically manages heterogeneous data sets within the backup data, each identified by a unique key prefix.
-[CallRedirectionService](../android/telecom/CallRedirectionService.md) This service can be implemented to interact between Telecom and its implementor for making outgoing call with optional redirection/cancellation purposes.
-[CallScreeningService](../android/telecom/CallScreeningService.md) This service can be implemented by the default dialer (see `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager.html#getDefaultDialerPackage()`) or a third party app to allow or disallow incoming calls before they are shown to a user.
-[CameraPrewarmService](../android/service/media/CameraPrewarmService.md) Extend this class to implement a camera prewarm service.
-[CarrierMessagingClientService](../android/service/carrier/CarrierMessagingClientService.md) If the default SMS app has a service that extends this class, the system always tries to bind it so that the process is always running, which allows the app to have a persistent connection to the server.
-[CarrierMessagingService](../android/service/carrier/CarrierMessagingService.md) A service that receives calls from the system when new SMS and MMS are sent or received.
-[CarrierService](../android/service/carrier/CarrierService.md) A service that exposes carrier-specific functionality to the system.
-[ChooserTargetService](../android/service/chooser/ChooserTargetService.md) A service that receives calls from the system when the user is asked to choose a target for an intent explicitly by another app.
-[CompanionDeviceService](../android/companion/CompanionDeviceService.md) A service that receives calls from the system with device events.
-[ConditionProviderService](../android/service/notification/ConditionProviderService.md) A service that provides conditions about boolean state.
-[ConnectionService](../android/telecom/ConnectionService.md) An abstract service that should be implemented by any apps which either:
+[AppFunctionService](../android.app.appfunctions/AppFunctionService.md) Extend this class to implement app functions, that can be executed by android.
+[AutofillService](../android.service.autofill/AutofillService.md) An `AutofillService` is a service used to automatically fill the contents of the screen on behalf of a given user - for more information about autofill, read [Autofill Framework](https://developer.android.com/preview/features/autofill.html).
+[BackupAgentHelper](../android.app.backup/BackupAgentHelper.md) A convenient `https://developer.android.com/reference/kotlin/android/app/backup/BackupAgent.html#` wrapper class that automatically manages heterogeneous data sets within the backup data, each identified by a unique key prefix.
+[CallRedirectionService](../android.telecom/CallRedirectionService.md) This service can be implemented to interact between Telecom and its implementor for making outgoing call with optional redirection/cancellation purposes.
+[CallScreeningService](../android.telecom/CallScreeningService.md) This service can be implemented by the default dialer (see `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager.html#getDefaultDialerPackage()`) or a third party app to allow or disallow incoming calls before they are shown to a user.
+[CameraPrewarmService](../android.service.media/CameraPrewarmService.md) Extend this class to implement a camera prewarm service.
+[CarrierMessagingClientService](../android.service.carrier/CarrierMessagingClientService.md) If the default SMS app has a service that extends this class, the system always tries to bind it so that the process is always running, which allows the app to have a persistent connection to the server.
+[CarrierMessagingService](../android.service.carrier/CarrierMessagingService.md) A service that receives calls from the system when new SMS and MMS are sent or received.
+[CarrierService](../android.service.carrier/CarrierService.md) A service that exposes carrier-specific functionality to the system.
+[ChooserTargetService](../android.service.chooser/ChooserTargetService.md) A service that receives calls from the system when the user is asked to choose a target for an intent explicitly by another app.
+[CompanionDeviceService](../android.companion/CompanionDeviceService.md) A service that receives calls from the system with device events.
+[ConditionProviderService](../android.service.notification/ConditionProviderService.md) A service that provides conditions about boolean state.
+[ConnectionService](../android.telecom/ConnectionService.md) An abstract service that should be implemented by any apps which either:
 
 1. Can make phone calls (VoIP or otherwise) and want those calls to be integrated into the built-in phone app. Referred to as a **system managed** `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService.html#`.
 2. Are a standalone calling app and don't want their calls to be integrated into the built-in phone app. Referred to as a **self managed** `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService.html#`.
@@ -47,53 +47,53 @@ Once implemented, the needs to take the following steps so that Telecom will bin
 
 <br />
 
-[ContentSafetyAppService](../android/service/contentsafety/ContentSafetyAppService.md) Base class for a service that the `android.app.role.RoleManager.ROLE_CONTENT_SAFETY` role holder must implement.
-[ControlsProviderService](../android/service/controls/ControlsProviderService.md) Service implementation allowing applications to contribute controls to the System UI.
-[CredentialProviderService](../android/service/credentials/CredentialProviderService.md) Service to be extended by credential providers, in order to return user credentials to the framework.
-[DataMigrationToPccService](../android/app/privatecompute/DataMigrationToPccService.md) Base class for a service that handles data migration to the Private Compute Core (PCC) storage of an application.
-[DeviceAdminService](../android/app/admin/DeviceAdminService.md) Base class for a service that device owner/profile owners can optionally have.
-[DreamService](../android/service/dreams/DreamService.md) Extend this class to implement a custom dream (available to the user as a "Daydream").
-[EgressReceiverService](../android/app/privatecompute/EgressReceiverService.md) Base Service to be implemented by the partner agent proxy process to receive egress queries from a client running inside the Private Compute Core (PCC) sandbox.
-[ExpandableListActivity](../android/app/ExpandableListActivity.md) An activity that displays an expandable list of items by binding to a data source implementing the ExpandableListAdapter, and exposes event handlers when the user selects an item.
-[HostApduService](../android/nfc/cardemulation/HostApduService.md) HostApduService is a convenience `https://developer.android.com/reference/kotlin/android/app/Service.html#` class that can be extended to emulate an NFC card inside an Android service component.
-[HostNfcFService](../android/nfc/cardemulation/HostNfcFService.md) HostNfcFService is a convenience `https://developer.android.com/reference/kotlin/android/app/Service.html#` class that can be extended to emulate an NFC-F card inside an Android service component.
-[InCallService](../android/telecom/InCallService.md) This service is implemented by an app that wishes to provide functionality for managing phone calls.
-[InputMethodService](../android/inputmethodservice/InputMethodService.md) InputMethodService provides a standard implementation of an InputMethod, which final implementations can derive from and customize.
-[IntentService](../android/app/IntentService.md) IntentService is an extension of the `https://developer.android.com/reference/kotlin/android/app/Service.html#` component class that handles asynchronous requests (expressed as `https://developer.android.com/reference/kotlin/android/content/Intent`s) on demand.
-[IsolatedService](../android/adservices/ondevicepersonalization/IsolatedService.md) Base class for services that are started by ODP on a call to `OnDevicePersonalizationManager#execute(ComponentName, PersistableBundle, java.util.concurrent.Executor, OutcomeReceiver)` and run in an [isolated process](https://developer.android.com/guide/topics/manifest/service-element#isolated).
-[JobService](../android/app/job/JobService.md) Entry point for the callback from the `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler.html#`.
-[LauncherActivity](../android/app/LauncherActivity.md) Displays a list of all activities which can be performed for a given intent.
-[ListActivity](../android/app/ListActivity.md) An activity that displays a list of items by binding to a data source such as an array or Cursor, and exposes event handlers when the user selects an item.
-[MediaBrowserService](../android/service/media/MediaBrowserService.md) Base class for media browser services.
-[MediaRoute2ProviderService](../android/media/MediaRoute2ProviderService.md) Base class for media route provider services.
-[MediaSession2Service](../android/media/MediaSession2Service.md) This API is not generally intended for third party application developers.
-[MidiDeviceService](../android/media/midi/MidiDeviceService.md) A service that implements a virtual MIDI device.
-[MidiUmpDeviceService](../android/media/midi/MidiUmpDeviceService.md) A service that implements a virtual MIDI device for Universal MIDI Packets (UMP).
-[MockApplication](../android/test/mock/MockApplication.md) A mock `https://developer.android.com/reference/kotlin/android/app/Application.html#` class.
-[NativeActivity](../android/app/NativeActivity.md) Convenience for implementing an activity that will be implemented purely in native code.
-[NotificationListenerService](../android/service/notification/NotificationListenerService.md) A service that receives calls from the system when new notifications are posted or removed, or their ranking changed.
-[OffHostApduService](../android/nfc/cardemulation/OffHostApduService.md) OffHostApduService is a convenience `https://developer.android.com/reference/kotlin/android/app/Service.html#` class that can be extended to describe one or more NFC applications that are residing off-host, for example on an embedded secure element or a UICC.
-[PccService](../android/app/privatecompute/PccService.md) Abstract base class for a PCC service that receives data from other components.
-[PreferenceActivity](../android/preference/PreferenceActivity.md) This is the base class for an activity to show a hierarchy of preferences to the user.
-[PrintService](../android/printservice/PrintService.md) This is the base class for implementing print services.
-[QuickAccessWalletService](../android/service/quickaccesswallet/QuickAccessWalletService.md) A `QuickAccessWalletService` provides a list of `WalletCard`s shown in the Quick Access Wallet.
-[RecognitionService](../android/speech/RecognitionService.md) This class provides a base class for recognition service implementations.
-[RemoteViewsService](../android/widget/RemoteViewsService.md) The service to be connected to for a remote adapter to request RemoteViews.
-[SettingInjectorService](../android/location/SettingInjectorService.md) Dynamically specifies the summary (subtitle) and enabled status of a preference injected into the list of app settings displayed by the system settings app
-[SettingsPreferenceService](../android/service/settings/preferences/SettingsPreferenceService.md) Base class for a service that exposes its settings preferences to external access.
-[SpellCheckerService](../android/service/textservice/SpellCheckerService.md) SpellCheckerService provides an abstract base class for a spell checker.
-[TabActivity](../android/app/TabActivity.md) For apps developing against `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#HONEYCOMB:kotlin.Int` or later, tabs are typically presented in the UI using the new `https://developer.android.com/reference/kotlin/android/app/ActionBar.html#newTab()` and related APIs for placing tabs within their action bar area.
-[TextToSpeechService](../android/speech/tts/TextToSpeechService.md) Abstract base class for TTS engine implementations.
-[TileService](../android/service/quicksettings/TileService.md) A TileService provides the user a tile that can be added to Quick Settings.
-[TvAdService](../android/media/tv/ad/TvAdService.md) The TvAdService class represents a TV client-side advertisement service.
-[TvInputService](../android/media/tv/TvInputService.md) The TvInputService class represents a TV input or source such as HDMI or built-in tuner which provides pass-through video or broadcast TV programs.
-[TvInteractiveAppService](../android/media/tv/interactive/TvInteractiveAppService.md) A TV interactive application service is a service that provides runtime environment and runs TV interactive applications.
-[VisualVoicemailService](../android/telephony/VisualVoicemailService.md) This service is implemented by dialer apps that wishes to handle OMTP or similar visual voicemails.
-[VoiceInteractionService](../android/service/voice/VoiceInteractionService.md) Top-level service of the current global voice interactor, which is providing support for hotwording, the back-end of a `https://developer.android.com/reference/kotlin/android/app/VoiceInteractor.html#`, etc.
-[VoiceInteractionSessionService](../android/service/voice/VoiceInteractionSessionService.md) An active voice interaction session, initiated by a `https://developer.android.com/reference/kotlin/android/service/voice/VoiceInteractionService.html#`.
-[VpnService](../android/net/VpnService.md) VpnService is a base class for applications to extend and build their own VPN solutions.
-[VrListenerService](../android/service/vr/VrListenerService.md) A service that is bound from the system while running in virtual reality (VR) mode.
-[WallpaperService](../android/service/wallpaper/WallpaperService.md) A wallpaper service is responsible for showing a live wallpaper behind applications that would like to sit on top of it.
+[ContentSafetyAppService](../android.service.contentsafety/ContentSafetyAppService.md) Base class for a service that the `android.app.role.RoleManager.ROLE_CONTENT_SAFETY` role holder must implement.
+[ControlsProviderService](../android.service.controls/ControlsProviderService.md) Service implementation allowing applications to contribute controls to the System UI.
+[CredentialProviderService](../android.service.credentials/CredentialProviderService.md) Service to be extended by credential providers, in order to return user credentials to the framework.
+[DataMigrationToPccService](../android.app.privatecompute/DataMigrationToPccService.md) Base class for a service that handles data migration to the Private Compute Core (PCC) storage of an application.
+[DeviceAdminService](../android.app.admin/DeviceAdminService.md) Base class for a service that device owner/profile owners can optionally have.
+[DreamService](../android.service.dreams/DreamService.md) Extend this class to implement a custom dream (available to the user as a "Daydream").
+[EgressReceiverService](../android.app.privatecompute/EgressReceiverService.md) Base Service to be implemented by the partner agent proxy process to receive egress queries from a client running inside the Private Compute Core (PCC) sandbox.
+[ExpandableListActivity](../android.app/ExpandableListActivity.md) An activity that displays an expandable list of items by binding to a data source implementing the ExpandableListAdapter, and exposes event handlers when the user selects an item.
+[HostApduService](../android.nfc.cardemulation/HostApduService.md) HostApduService is a convenience `https://developer.android.com/reference/kotlin/android/app/Service.html#` class that can be extended to emulate an NFC card inside an Android service component.
+[HostNfcFService](../android.nfc.cardemulation/HostNfcFService.md) HostNfcFService is a convenience `https://developer.android.com/reference/kotlin/android/app/Service.html#` class that can be extended to emulate an NFC-F card inside an Android service component.
+[InCallService](../android.telecom/InCallService.md) This service is implemented by an app that wishes to provide functionality for managing phone calls.
+[InputMethodService](../android.inputmethodservice/InputMethodService.md) InputMethodService provides a standard implementation of an InputMethod, which final implementations can derive from and customize.
+[IntentService](../android.app/IntentService.md) IntentService is an extension of the `https://developer.android.com/reference/kotlin/android/app/Service.html#` component class that handles asynchronous requests (expressed as `https://developer.android.com/reference/kotlin/android/content/Intent`s) on demand.
+[IsolatedService](../android.adservices.ondevicepersonalization/IsolatedService.md) Base class for services that are started by ODP on a call to `OnDevicePersonalizationManager#execute(ComponentName, PersistableBundle, java.util.concurrent.Executor, OutcomeReceiver)` and run in an [isolated process](https://developer.android.com/guide/topics/manifest/service-element#isolated).
+[JobService](../android.app.job/JobService.md) Entry point for the callback from the `https://developer.android.com/reference/kotlin/android/app/job/JobScheduler.html#`.
+[LauncherActivity](../android.app/LauncherActivity.md) Displays a list of all activities which can be performed for a given intent.
+[ListActivity](../android.app/ListActivity.md) An activity that displays a list of items by binding to a data source such as an array or Cursor, and exposes event handlers when the user selects an item.
+[MediaBrowserService](../android.service.media/MediaBrowserService.md) Base class for media browser services.
+[MediaRoute2ProviderService](../android.media/MediaRoute2ProviderService.md) Base class for media route provider services.
+[MediaSession2Service](../android.media/MediaSession2Service.md) This API is not generally intended for third party application developers.
+[MidiDeviceService](../android.media.midi/MidiDeviceService.md) A service that implements a virtual MIDI device.
+[MidiUmpDeviceService](../android.media.midi/MidiUmpDeviceService.md) A service that implements a virtual MIDI device for Universal MIDI Packets (UMP).
+[MockApplication](../android.test.mock/MockApplication.md) A mock `https://developer.android.com/reference/kotlin/android/app/Application.html#` class.
+[NativeActivity](../android.app/NativeActivity.md) Convenience for implementing an activity that will be implemented purely in native code.
+[NotificationListenerService](../android.service.notification/NotificationListenerService.md) A service that receives calls from the system when new notifications are posted or removed, or their ranking changed.
+[OffHostApduService](../android.nfc.cardemulation/OffHostApduService.md) OffHostApduService is a convenience `https://developer.android.com/reference/kotlin/android/app/Service.html#` class that can be extended to describe one or more NFC applications that are residing off-host, for example on an embedded secure element or a UICC.
+[PccService](../android.app.privatecompute/PccService.md) Abstract base class for a PCC service that receives data from other components.
+[PreferenceActivity](../android.preference/PreferenceActivity.md) This is the base class for an activity to show a hierarchy of preferences to the user.
+[PrintService](../android.printservice/PrintService.md) This is the base class for implementing print services.
+[QuickAccessWalletService](../android.service.quickaccesswallet/QuickAccessWalletService.md) A `QuickAccessWalletService` provides a list of `WalletCard`s shown in the Quick Access Wallet.
+[RecognitionService](../android.speech/RecognitionService.md) This class provides a base class for recognition service implementations.
+[RemoteViewsService](../android.widget/RemoteViewsService.md) The service to be connected to for a remote adapter to request RemoteViews.
+[SettingInjectorService](../android.location/SettingInjectorService.md) Dynamically specifies the summary (subtitle) and enabled status of a preference injected into the list of app settings displayed by the system settings app
+[SettingsPreferenceService](../android.service.settings.preferences/SettingsPreferenceService.md) Base class for a service that exposes its settings preferences to external access.
+[SpellCheckerService](../android.service.textservice/SpellCheckerService.md) SpellCheckerService provides an abstract base class for a spell checker.
+[TabActivity](../android.app/TabActivity.md) For apps developing against `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#HONEYCOMB:kotlin.Int` or later, tabs are typically presented in the UI using the new `https://developer.android.com/reference/kotlin/android/app/ActionBar.html#newTab()` and related APIs for placing tabs within their action bar area.
+[TextToSpeechService](../android.speech.tts/TextToSpeechService.md) Abstract base class for TTS engine implementations.
+[TileService](../android.service.quicksettings/TileService.md) A TileService provides the user a tile that can be added to Quick Settings.
+[TvAdService](../android.media.tv.ad/TvAdService.md) The TvAdService class represents a TV client-side advertisement service.
+[TvInputService](../android.media.tv/TvInputService.md) The TvInputService class represents a TV input or source such as HDMI or built-in tuner which provides pass-through video or broadcast TV programs.
+[TvInteractiveAppService](../android.media.tv.interactive/TvInteractiveAppService.md) A TV interactive application service is a service that provides runtime environment and runs TV interactive applications.
+[VisualVoicemailService](../android.telephony/VisualVoicemailService.md) This service is implemented by dialer apps that wishes to handle OMTP or similar visual voicemails.
+[VoiceInteractionService](../android.service.voice/VoiceInteractionService.md) Top-level service of the current global voice interactor, which is providing support for hotwording, the back-end of a `https://developer.android.com/reference/kotlin/android/app/VoiceInteractor.html#`, etc.
+[VoiceInteractionSessionService](../android.service.voice/VoiceInteractionSessionService.md) An active voice interaction session, initiated by a `https://developer.android.com/reference/kotlin/android/service/voice/VoiceInteractionService.html#`.
+[VpnService](../android.net/VpnService.md) VpnService is a base class for applications to extend and build their own VPN solutions.
+[VrListenerService](../android.service.vr/VrListenerService.md) A service that is bound from the system while running in virtual reality (VR) mode.
+[WallpaperService](../android.service.wallpaper/WallpaperService.md) A wallpaper service is responsible for showing a live wallpaper behind applications that would like to sit on top of it.
 
 Proxying implementation of Context that simply delegates all of its calls to another Context. Can be subclassed to modify behavior without changing the original Context.
 
@@ -1040,19 +1040,19 @@ Use with `https://developer.android.com/reference/kotlin/android/content/Context
 | --- | --- |
 | open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#checkUriPermissions(kotlin.collections.MutableList,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(uris: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/net/Uri.html#!>, pid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, modeFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determine whether a particular process and uid has been granted permission to access a list of URIs. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#clearWallpaper()()` <br /> |
-| open [Context](../android/content/Context.md) | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#createAttributionContext(kotlin.String)(attributionTag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Return a new Context object for the current Context but attribute to a different tag. |
+| open [Context](Context.md) | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#createAttributionContext(kotlin.String)(attributionTag: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Return a new Context object for the current Context but attribute to a different tag. |
 | --- | --- |
-| open [Context](../android/content/Context.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#createConfigurationContext(android.content.res.Configuration)(overrideConfiguration: https://developer.android.com/reference/kotlin/android/content/res/Configuration)` Return a new Context object for the current Context but whose resources are adjusted to match the given Configuration. |
-| open [Context](../android/content/Context.md) | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#createContext(android.content.ContextParams)(contextParams: https://developer.android.com/reference/kotlin/android/content/ContextParams)` Creates a context with specific properties and behaviors. |
-| open [Context](../android/content/Context.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#createContextForSplit(kotlin.String)(splitName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Return a new Context object for the given split name. |
+| open [Context](Context.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#createConfigurationContext(android.content.res.Configuration)(overrideConfiguration: https://developer.android.com/reference/kotlin/android/content/res/Configuration)` Return a new Context object for the current Context but whose resources are adjusted to match the given Configuration. |
+| open [Context](Context.md) | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#createContext(android.content.ContextParams)(contextParams: https://developer.android.com/reference/kotlin/android/content/ContextParams)` Creates a context with specific properties and behaviors. |
+| open [Context](Context.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#createContextForSplit(kotlin.String)(splitName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Return a new Context object for the given split name. |
 | --- | --- |
-| open [Context](../android/content/Context.md) | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#createDeviceContext(kotlin.Int)(deviceId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a new `Context` object from the current context but with device association given by the `deviceId`. |
-| open [Context](../android/content/Context.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#createDeviceProtectedStorageContext()()` Return a new Context object for the current Context but whose storage APIs are backed by device-protected storage. |
-| open [Context](../android/content/Context.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#createDisplayContext(android.view.Display)(display: https://developer.android.com/reference/kotlin/android/view/Display.html#)` Returns a new `Context` object from the current context but with resources adjusted to match the metrics of `display`. |
+| open [Context](Context.md) | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#createDeviceContext(kotlin.Int)(deviceId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a new `Context` object from the current context but with device association given by the `deviceId`. |
+| open [Context](Context.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#createDeviceProtectedStorageContext()()` Return a new Context object for the current Context but whose storage APIs are backed by device-protected storage. |
+| open [Context](Context.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#createDisplayContext(android.view.Display)(display: https://developer.android.com/reference/kotlin/android/view/Display.html#)` Returns a new `Context` object from the current context but with resources adjusted to match the metrics of `display`. |
 | --- | --- |
-| open [Context](../android/content/Context.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#createPackageContext(kotlin.String,%20kotlin.Int)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a new Context object for the given application name. |
-| open [Context](../android/content/Context.md) | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#createWindowContext(android.view.Display,%20kotlin.Int,%20android.os.Bundle)(display: https://developer.android.com/reference/kotlin/android/view/Display.html#, type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, options: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Creates a `Context` for a non-`https://developer.android.com/reference/kotlin/android/app/Activity.html#` window on the given `https://developer.android.com/reference/kotlin/android/view/Display.html#`. |
-| open [Context](../android/content/Context.md) | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#createWindowContext(kotlin.Int,%20android.os.Bundle)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, options: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Creates a Context for a non-activity window. |
+| open [Context](Context.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#createPackageContext(kotlin.String,%20kotlin.Int)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a new Context object for the given application name. |
+| open [Context](Context.md) | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#createWindowContext(android.view.Display,%20kotlin.Int,%20android.os.Bundle)(display: https://developer.android.com/reference/kotlin/android/view/Display.html#, type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, options: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Creates a `Context` for a non-`https://developer.android.com/reference/kotlin/android/app/Activity.html#` window on the given `https://developer.android.com/reference/kotlin/android/view/Display.html#`. |
+| open [Context](Context.md) | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#createWindowContext(kotlin.Int,%20android.os.Bundle)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, options: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Creates a Context for a non-activity window. |
 | --- | --- |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#databaseList()()` Returns an array of strings naming the private databases associated with this Context's application package. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#deleteDatabase(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Delete an existing private SQLiteDatabase associated with this Context's application package. |
@@ -1070,57 +1070,57 @@ Use with `https://developer.android.com/reference/kotlin/android/content/Context
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#enforceUriPermission(android.net.Uri,%20kotlin.String,%20kotlin.String,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.String)(uri: https://developer.android.com/reference/kotlin/android/net/Uri.html#?, readPermission: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, writePermission: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, pid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, modeFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, message: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Enforce both a Uri and normal permission. |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#fileList()()` Returns an array of strings naming the private files associated with this Context's application package. |
 | --- | --- |
-| open [Context](../android/content/Context.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getApplicationContext()()` Return the context of the single, global Application object of the current process. |
-| open [ApplicationInfo](../android/content/pm/ApplicationInfo.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getApplicationInfo()()` Return the full application info for this context's package. |
-| open [AssetManager](../android/content/res/AssetManager.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getAssets()()` Returns an AssetManager instance for the application's package. |
+| open [Context](Context.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getApplicationContext()()` Return the context of the single, global Application object of the current process. |
+| open [ApplicationInfo](../android.content.pm/ApplicationInfo.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getApplicationInfo()()` Return the full application info for this context's package. |
+| open [AssetManager](../android.content.res/AssetManager.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getAssets()()` Returns an AssetManager instance for the application's package. |
 | --- | --- |
-| open [AttributionSource](../android/content/AttributionSource.md) | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getAttributionSource()()` <br /> |
+| open [AttributionSource](AttributionSource.md) | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getAttributionSource()()` <br /> |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getAttributionTag()()` Attribution can be used in complex apps to logically separate parts of the app. |
-| open [Context](../android/content/Context.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getBaseContext()()` <br /> |
+| open [Context](Context.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getBaseContext()()` <br /> |
 | --- | --- |
-| open [File](../java/io/File.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getCacheDir()()` Returns the absolute path to the application specific cache directory on the filesystem. |
-| open [ClassLoader](../java/lang/ClassLoader.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getClassLoader()()` Return a class loader you can use to retrieve classes in this package. |
-| open [File](../java/io/File.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getCodeCacheDir()()` Returns the absolute path to the application specific cache directory on the filesystem designed for storing cached code. |
+| open [File](../java.io/File.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getCacheDir()()` Returns the absolute path to the application specific cache directory on the filesystem. |
+| open [ClassLoader](../java.lang/ClassLoader.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getClassLoader()()` Return a class loader you can use to retrieve classes in this package. |
+| open [File](../java.io/File.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getCodeCacheDir()()` Returns the absolute path to the application specific cache directory on the filesystem designed for storing cached code. |
 | --- | --- |
-| open [ContentResolver](../android/content/ContentResolver.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getContentResolver()()` Return a ContentResolver instance for your application's package. |
-| open [File](../java/io/File.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getDataDir()()` Returns the absolute path to the directory on the filesystem where all private files belonging to this app are stored. |
-| open [File](../java/io/File.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getDatabasePath(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the absolute path on the filesystem where a database created with #openOrCreateDatabase is stored. |
+| open [ContentResolver](ContentResolver.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getContentResolver()()` Return a ContentResolver instance for your application's package. |
+| open [File](../java.io/File.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getDataDir()()` Returns the absolute path to the directory on the filesystem where all private files belonging to this app are stored. |
+| open [File](../java.io/File.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getDatabasePath(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the absolute path on the filesystem where a database created with #openOrCreateDatabase is stored. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getDeviceId()()` Gets the device ID this context is associated with. |
-| open [File](../java/io/File.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getDir(kotlin.String,%20kotlin.Int)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve, creating if needed, a new directory in which the application can place its own custom data files. |
-| open [Display](../android/view/Display.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getDisplay()()` Get the display this context is associated with. |
+| open [File](../java.io/File.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getDir(kotlin.String,%20kotlin.Int)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve, creating if needed, a new directory in which the application can place its own custom data files. |
+| open [Display](../android.view/Display.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getDisplay()()` Get the display this context is associated with. |
 | --- | --- |
-| open [File](../java/io/File.md)? | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getExternalCacheDir()()` Returns absolute path to application-specific directory on the primary shared/external storage device where the application can place cache files it owns. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [File](../java/io/File.md)!\>! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getExternalCacheDirs()()` Returns absolute paths to application-specific directories on all shared/external storage devices where the application can place cache files it owns. |
-| open [File](../java/io/File.md)? | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getExternalFilesDir(kotlin.String)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Returns the absolute path to the directory on the primary shared/external storage device where the application can place persistent files it owns. |
+| open [File](../java.io/File.md)? | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getExternalCacheDir()()` Returns absolute path to application-specific directory on the primary shared/external storage device where the application can place cache files it owns. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [File](../java.io/File.md)!\>! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getExternalCacheDirs()()` Returns absolute paths to application-specific directories on all shared/external storage devices where the application can place cache files it owns. |
+| open [File](../java.io/File.md)? | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getExternalFilesDir(kotlin.String)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Returns the absolute path to the directory on the primary shared/external storage device where the application can place persistent files it owns. |
 | --- | --- |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [File](../java/io/File.md)!\>! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getExternalFilesDirs(kotlin.String)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns absolute paths to application-specific directories on all shared/external storage devices where the application can place persistent files it owns. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [File](../java/io/File.md)!\>! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getExternalMediaDirs()()` Returns absolute paths to application-specific directories on all shared/external storage devices where the application can place media files. |
-| open [File](../java/io/File.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getFileStreamPath(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the absolute path on the filesystem where a file created with `https://developer.android.com/reference/kotlin/android/content/Context#openFileOutput(kotlin.String,%20kotlin.Int)` is stored. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [File](../java.io/File.md)!\>! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getExternalFilesDirs(kotlin.String)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns absolute paths to application-specific directories on all shared/external storage devices where the application can place persistent files it owns. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [File](../java.io/File.md)!\>! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getExternalMediaDirs()()` Returns absolute paths to application-specific directories on all shared/external storage devices where the application can place media files. |
+| open [File](../java.io/File.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getFileStreamPath(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the absolute path on the filesystem where a file created with `https://developer.android.com/reference/kotlin/android/content/Context#openFileOutput(kotlin.String,%20kotlin.Int)` is stored. |
 | --- | --- |
-| open [File](../java/io/File.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getFilesDir()()` Returns the absolute path to the directory on the filesystem where files created with `https://developer.android.com/reference/kotlin/android/content/Context#openFileOutput(kotlin.String,%20kotlin.Int)` are stored. |
-| open [Executor](../java/util/concurrent/Executor.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getMainExecutor()()` Return an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that will run enqueued tasks on the main thread associated with this context. |
-| open [Looper](../android/os/Looper.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getMainLooper()()` Return the Looper for the main thread of the current process. |
+| open [File](../java.io/File.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getFilesDir()()` Returns the absolute path to the directory on the filesystem where files created with `https://developer.android.com/reference/kotlin/android/content/Context#openFileOutput(kotlin.String,%20kotlin.Int)` are stored. |
+| open [Executor](../java.util.concurrent/Executor.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getMainExecutor()()` Return an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that will run enqueued tasks on the main thread associated with this context. |
+| open [Looper](../android.os/Looper.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getMainLooper()()` Return the Looper for the main thread of the current process. |
 | --- | --- |
-| open [File](../java/io/File.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getNoBackupFilesDir()()` Returns the absolute path to the directory on the filesystem similar to `https://developer.android.com/reference/kotlin/android/content/Context#getFilesDir()`. |
-| open [File](../java/io/File.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getObbDir()()` Return the primary shared/external storage directory where this application's OBB files (if there are any) can be found. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [File](../java/io/File.md)!\>! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getObbDirs()()` Returns absolute paths to application-specific directories on all shared/external storage devices where the application's OBB files (if there are any) can be found. |
+| open [File](../java.io/File.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getNoBackupFilesDir()()` Returns the absolute path to the directory on the filesystem similar to `https://developer.android.com/reference/kotlin/android/content/Context#getFilesDir()`. |
+| open [File](../java.io/File.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getObbDir()()` Return the primary shared/external storage directory where this application's OBB files (if there are any) can be found. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [File](../java.io/File.md)!\>! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getObbDirs()()` Returns absolute paths to application-specific directories on all shared/external storage devices where the application's OBB files (if there are any) can be found. |
 | --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getOpPackageName()()` Return the package name that should be used for `https://developer.android.com/reference/kotlin/android/app/AppOpsManager.html#` calls from this context, so that app ops manager's uid verification will work with the name. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getPackageCodePath()()` Return the full path to this context's primary Android package. |
-| open [PackageManager](../android/content/pm/PackageManager.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getPackageManager()()` Return PackageManager instance to find global package information. |
+| open [PackageManager](../android.content.pm/PackageManager.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getPackageManager()()` Return PackageManager instance to find global package information. |
 | --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getPackageName()()` Return the name of this application's package. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getPackageResourcePath()()` Return the full path to this context's primary Android package. |
-| open [ContextParams](../android/content/ContextParams.md)? | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getParams()()` Return the set of parameters which this Context was created with, if it was created via `https://developer.android.com/reference/kotlin/android/content/Context#createContext(android.content.ContextParams)`. |
+| open [ContextParams](ContextParams.md)? | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getParams()()` Return the set of parameters which this Context was created with, if it was created via `https://developer.android.com/reference/kotlin/android/content/Context#createContext(android.content.ContextParams)`. |
 | --- | --- |
-| open [Resources](../android/content/res/Resources.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getResources()()` Returns a Resources instance for the application's package. |
-| open [SharedPreferences](../android/content/SharedPreferences.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getSharedPreferences(kotlin.String,%20kotlin.Int)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve and hold the contents of the preferences file 'name', returning a SharedPreferences through which you can retrieve and modify its values. |
+| open [Resources](../android.content.res/Resources.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getResources()()` Returns a Resources instance for the application's package. |
+| open [SharedPreferences](SharedPreferences.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getSharedPreferences(kotlin.String,%20kotlin.Int)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve and hold the contents of the preferences file 'name', returning a SharedPreferences through which you can retrieve and modify its values. |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getSystemService(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Return the handle to a system-level service by name. |
 | --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getSystemServiceName(java.lang.Class)(serviceClass: https://developer.android.com/reference/kotlin/java/lang/Class.html#<*>)` Gets the name of the system-level service that is represented by the specified class. |
 | open [Resources.Theme](../android/content/res/Resources.Theme.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getTheme()()` Return the Theme object associated with this Context. |
-| open [Drawable](../android/graphics/drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getWallpaper()()` <br /> |
+| open [Drawable](../android.graphics.drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getWallpaper()()` <br /> |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getWallpaperDesiredMinimumHeight()()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#getWallpaperDesiredMinimumWidth()()` <br /> |
@@ -1132,22 +1132,22 @@ Use with `https://developer.android.com/reference/kotlin/android/content/Context
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#moveDatabaseFrom(android.content.Context,%20kotlin.String)(sourceContext: https://developer.android.com/reference/kotlin/android/content/Context!, name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Move an existing database file from the given source storage context to this context. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#moveSharedPreferencesFrom(android.content.Context,%20kotlin.String)(sourceContext: https://developer.android.com/reference/kotlin/android/content/Context!, name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Move an existing shared preferences file from the given source storage context to this context. |
-| open [FileInputStream](../java/io/FileInputStream.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#openFileInput(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Open a private file associated with this Context's application package for reading. |
+| open [FileInputStream](../java.io/FileInputStream.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#openFileInput(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Open a private file associated with this Context's application package for reading. |
 | --- | --- |
-| open [FileOutputStream](../java/io/FileOutputStream.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#openFileOutput(kotlin.String,%20kotlin.Int)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Open a private file associated with this Context's application package for writing. |
-| open [SQLiteDatabase](../android/database/sqlite/SQLiteDatabase.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#openOrCreateDatabase(kotlin.String,%20kotlin.Int,%20android.database.sqlite.SQLiteDatabase.CursorFactory)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, factory: https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase.CursorFactory.html#!)` Open a new private SQLiteDatabase associated with this Context's application package. |
-| open [SQLiteDatabase](../android/database/sqlite/SQLiteDatabase.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#openOrCreateDatabase(kotlin.String,%20kotlin.Int,%20android.database.sqlite.SQLiteDatabase.CursorFactory,%20android.database.DatabaseErrorHandler)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, factory: https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase.CursorFactory.html#!, errorHandler: https://developer.android.com/reference/kotlin/android/database/DatabaseErrorHandler.html#?)` Open a new private SQLiteDatabase associated with this Context's application package. |
+| open [FileOutputStream](../java.io/FileOutputStream.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#openFileOutput(kotlin.String,%20kotlin.Int)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Open a private file associated with this Context's application package for writing. |
+| open [SQLiteDatabase](../android.database.sqlite/SQLiteDatabase.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#openOrCreateDatabase(kotlin.String,%20kotlin.Int,%20android.database.sqlite.SQLiteDatabase.CursorFactory)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, factory: https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase.CursorFactory.html#!)` Open a new private SQLiteDatabase associated with this Context's application package. |
+| open [SQLiteDatabase](../android.database.sqlite/SQLiteDatabase.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#openOrCreateDatabase(kotlin.String,%20kotlin.Int,%20android.database.sqlite.SQLiteDatabase.CursorFactory,%20android.database.DatabaseErrorHandler)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, mode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, factory: https://developer.android.com/reference/kotlin/android/database/sqlite/SQLiteDatabase.CursorFactory.html#!, errorHandler: https://developer.android.com/reference/kotlin/android/database/DatabaseErrorHandler.html#?)` Open a new private SQLiteDatabase associated with this Context's application package. |
 | --- | --- |
-| open [Drawable](../android/graphics/drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#peekWallpaper()()` <br /> |
+| open [Drawable](../android.graphics.drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#peekWallpaper()()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#rebindService(android.content.ServiceConnection,%20android.content.Context.BindServiceFlags)(conn: https://developer.android.com/reference/kotlin/android/content/ServiceConnection, flags: https://developer.android.com/reference/kotlin/android/content/Context.BindServiceFlags)` Rebind an application service with updated bind service flags |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#registerComponentCallbacks(android.content.ComponentCallbacks)(callback: https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks!)` Add a new `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks` to the base application of the Context, which will be called at the same times as the ComponentCallbacks methods of activities and other components are called. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#registerDeviceIdChangeListener(java.util.concurrent.Executor,%20java.util.function.IntConsumer)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, listener: https://developer.android.com/reference/kotlin/java/util/function/IntConsumer.html#)` Adds a new device ID changed listener to the `Context`, which will be called when the device association is changed by the system. |
-| open [Intent](../android/content/Intent.md)? | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#registerReceiver(android.content.BroadcastReceiver,%20android.content.IntentFilter)(receiver: https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver?, filter: https://developer.android.com/reference/kotlin/android/content/IntentFilter!)` Register a BroadcastReceiver to be run in the main activity thread. |
-| open [Intent](../android/content/Intent.md)? | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#registerReceiver(android.content.BroadcastReceiver,%20android.content.IntentFilter,%20kotlin.Int)(receiver: https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver?, filter: https://developer.android.com/reference/kotlin/android/content/IntentFilter!, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Register to receive intent broadcasts, with the receiver optionally being exposed to Instant Apps. |
+| open [Intent](Intent.md)? | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#registerReceiver(android.content.BroadcastReceiver,%20android.content.IntentFilter)(receiver: https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver?, filter: https://developer.android.com/reference/kotlin/android/content/IntentFilter!)` Register a BroadcastReceiver to be run in the main activity thread. |
+| open [Intent](Intent.md)? | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#registerReceiver(android.content.BroadcastReceiver,%20android.content.IntentFilter,%20kotlin.Int)(receiver: https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver?, filter: https://developer.android.com/reference/kotlin/android/content/IntentFilter!, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Register to receive intent broadcasts, with the receiver optionally being exposed to Instant Apps. |
 | --- | --- |
-| open [Intent](../android/content/Intent.md)? | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#registerReceiver(android.content.BroadcastReceiver,%20android.content.IntentFilter,%20kotlin.String,%20android.os.Handler)(receiver: https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver?, filter: https://developer.android.com/reference/kotlin/android/content/IntentFilter!, broadcastPermission: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, scheduler: https://developer.android.com/reference/kotlin/android/os/Handler.html#?)` Register to receive intent broadcasts, to run in the context of scheduler. |
-| open [Intent](../android/content/Intent.md)? | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#registerReceiver(android.content.BroadcastReceiver,%20android.content.IntentFilter,%20kotlin.String,%20android.os.Handler,%20kotlin.Int)(receiver: https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver?, filter: https://developer.android.com/reference/kotlin/android/content/IntentFilter!, broadcastPermission: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, scheduler: https://developer.android.com/reference/kotlin/android/os/Handler.html#?, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Register to receive intent broadcasts, to run in the context of scheduler. |
+| open [Intent](Intent.md)? | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#registerReceiver(android.content.BroadcastReceiver,%20android.content.IntentFilter,%20kotlin.String,%20android.os.Handler)(receiver: https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver?, filter: https://developer.android.com/reference/kotlin/android/content/IntentFilter!, broadcastPermission: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, scheduler: https://developer.android.com/reference/kotlin/android/os/Handler.html#?)` Register to receive intent broadcasts, to run in the context of scheduler. |
+| open [Intent](Intent.md)? | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#registerReceiver(android.content.BroadcastReceiver,%20android.content.IntentFilter,%20kotlin.String,%20android.os.Handler,%20kotlin.Int)(receiver: https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver?, filter: https://developer.android.com/reference/kotlin/android/content/IntentFilter!, broadcastPermission: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, scheduler: https://developer.android.com/reference/kotlin/android/os/Handler.html#?, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Register to receive intent broadcasts, to run in the context of scheduler. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#removeStickyBroadcast(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent!)` Remove the data previously sent with #sendStickyBroadcast, so that it is as if the sticky broadcast had never happened. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#removeStickyBroadcastAsUser(android.content.Intent,%20android.os.UserHandle)(intent: https://developer.android.com/reference/kotlin/android/content/Intent!, user: https://developer.android.com/reference/kotlin/android/os/UserHandle.html#!)` Version of `https://developer.android.com/reference/kotlin/android/content/Context#removeStickyBroadcast(android.content.Intent)` that allows you to specify the user the broadcast will be sent to. |
@@ -1188,13 +1188,13 @@ Use with `https://developer.android.com/reference/kotlin/android/content/Context
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#startActivity(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent!)` Same as `https://developer.android.com/reference/kotlin/android/content/Context#startActivity(android.content.Intent,%20android.os.Bundle)` with no options specified. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#startActivity(android.content.Intent,%20android.os.Bundle)(intent: https://developer.android.com/reference/kotlin/android/content/Intent!, options: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Launch a new activity. |
-| open [ComponentName](../android/content/ComponentName.md)? | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#startForegroundService(android.content.Intent)(service: https://developer.android.com/reference/kotlin/android/content/Intent!)` Similar to `https://developer.android.com/reference/kotlin/android/content/Context#startService(android.content.Intent)`, but with an implicit promise that the Service will call `https://developer.android.com/reference/kotlin/android/app/Service.html#startForeground(kotlin.Int,%20android.app.Notification)` once it begins running. |
+| open [ComponentName](ComponentName.md)? | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#startForegroundService(android.content.Intent)(service: https://developer.android.com/reference/kotlin/android/content/Intent!)` Similar to `https://developer.android.com/reference/kotlin/android/content/Context#startService(android.content.Intent)`, but with an implicit promise that the Service will call `https://developer.android.com/reference/kotlin/android/app/Service.html#startForeground(kotlin.Int,%20android.app.Notification)` once it begins running. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#startInstrumentation(android.content.ComponentName,%20kotlin.String,%20android.os.Bundle)(className: https://developer.android.com/reference/kotlin/android/content/ComponentName, profileFile: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, arguments: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Start executing an `https://developer.android.com/reference/kotlin/android/app/Instrumentation.html#` class. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#startIntentSender(android.content.IntentSender,%20android.content.Intent,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(intent: https://developer.android.com/reference/kotlin/android/content/IntentSender!, fillInIntent: https://developer.android.com/reference/kotlin/android/content/Intent?, flagsMask: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, flagsValues: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, extraFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Same as `https://developer.android.com/reference/kotlin/android/content/Context#startIntentSender(android.content.IntentSender,%20android.content.Intent,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20android.os.Bundle)` with no options specified. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#startIntentSender(android.content.IntentSender,%20android.content.Intent,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20android.os.Bundle)(intent: https://developer.android.com/reference/kotlin/android/content/IntentSender!, fillInIntent: https://developer.android.com/reference/kotlin/android/content/Intent?, flagsMask: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, flagsValues: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, extraFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, options: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Like `https://developer.android.com/reference/kotlin/android/content/Context#startActivity(android.content.Intent,%20android.os.Bundle)`, but taking a IntentSender to start. |
 | --- | --- |
-| open [ComponentName](../android/content/ComponentName.md)? | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#startService(android.content.Intent)(service: https://developer.android.com/reference/kotlin/android/content/Intent!)` Request that a given application service be started. |
+| open [ComponentName](ComponentName.md)? | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#startService(android.content.Intent)(service: https://developer.android.com/reference/kotlin/android/content/Intent!)` Request that a given application service be started. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#stopService(android.content.Intent)(name: https://developer.android.com/reference/kotlin/android/content/Intent!)` Request that a given application service be stopped. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/content/ContextWrapper#unbindService(android.content.ServiceConnection)(conn: https://developer.android.com/reference/kotlin/android/content/ServiceConnection)` Disconnect from an application service. |
 | --- | --- |
@@ -1347,12 +1347,12 @@ Variation of #bindService that, in the specific case of isolated services, allow
 
 | Parameters ||
 |---|---|
-| `service` | [Intent](../android/content/Intent.md): Identifies the service to connect to. The Intent must specify an explicit component name. This value cannot be `null`. |
+| `service` | [Intent](Intent.md): Identifies the service to connect to. The Intent must specify an explicit component name. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Operation options for the binding as per #bindService. |
 | `instanceName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): Unique identifier for the service instance. Each unique name here will result in a different service instance being created. Identifiers must only contain ASCII letters, digits, underscores, and periods. This value cannot be `null`. |
 | --- | --- |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): Callbacks on ServiceConnection will be called on executor. Must use same instance for the same instance of ServiceConnection. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `conn` | [ServiceConnection](../android/content/ServiceConnection.md): Receives information as the service is started and stopped. This must be a valid ServiceConnection object; it must not be null. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): Callbacks on ServiceConnection will be called on executor. Must use same instance for the same instance of ServiceConnection. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `conn` | [ServiceConnection](ServiceConnection.md): Receives information as the service is started and stopped. This must be a valid ServiceConnection object; it must not be null. |
 
 | Return ||
 |---|---|
@@ -1380,11 +1380,11 @@ See `https://developer.android.com/reference/kotlin/android/content/Context#bind
 
 | Parameters ||
 |---|---|
-| `service` | [Intent](../android/content/Intent.md): This value cannot be `null`. |
+| `service` | [Intent](Intent.md): This value cannot be `null`. |
 | `flags` | [Context.BindServiceFlags](../android/content/Context.BindServiceFlags.md): This value cannot be `null`. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): This value cannot be `null`. |
 | --- | --- |
-| `conn` | [ServiceConnection](../android/content/ServiceConnection.md): This value cannot be `null`. |
+| `conn` | [ServiceConnection](ServiceConnection.md): This value cannot be `null`. |
 
 ### bindService
 
@@ -1402,8 +1402,8 @@ See `https://developer.android.com/reference/kotlin/android/content/Context#bind
 
 | Parameters ||
 |---|---|
-| `service` | [Intent](../android/content/Intent.md): This value cannot be `null`. |
-| `conn` | [ServiceConnection](../android/content/ServiceConnection.md): This value cannot be `null`. |
+| `service` | [Intent](Intent.md): This value cannot be `null`. |
+| `conn` | [ServiceConnection](ServiceConnection.md): This value cannot be `null`. |
 | `flags` | [Context.BindServiceFlags](../android/content/Context.BindServiceFlags.md): This value cannot be `null`. |
 | --- | --- |
 
@@ -1429,8 +1429,8 @@ This method only accepts a int type flag, to pass in a long type flag, call `htt
 
 | Parameters ||
 |---|---|
-| `service` | [Intent](../android/content/Intent.md): Identifies the service to connect to. The Intent must specify an explicit component name. This value cannot be `null`. |
-| `conn` | [ServiceConnection](../android/content/ServiceConnection.md): Receives information as the service is started and stopped. This must be a valid ServiceConnection object; it must not be null. |
+| `service` | [Intent](Intent.md): Identifies the service to connect to. The Intent must specify an explicit component name. This value cannot be `null`. |
+| `conn` | [ServiceConnection](ServiceConnection.md): Receives information as the service is started and stopped. This must be a valid ServiceConnection object; it must not be null. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Operation options for the binding. Can be: - 0 - `https://developer.android.com/reference/kotlin/android/content/Context#BIND_AUTO_CREATE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context#BIND_DEBUG_UNBIND:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context#BIND_NOT_FOREGROUND:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context#BIND_ABOVE_CLIENT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context#BIND_ALLOW_OOM_MANAGEMENT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context#BIND_WAIVE_PRIORITY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context#BIND_IMPORTANT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context#BIND_ADJUST_WITH_ACTIVITY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context#BIND_NOT_PERCEPTIBLE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context#BIND_INCLUDE_CAPABILITIES:kotlin.Int` |
 | --- | --- |
 
@@ -1461,11 +1461,11 @@ This method only accepts a 32 bits flag, to pass in a 64 bits flag, call `https:
 
 | Parameters ||
 |---|---|
-| `service` | [Intent](../android/content/Intent.md): This value cannot be `null`. |
+| `service` | [Intent](Intent.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/content/Context#BIND_AUTO_CREATE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context#BIND_DEBUG_UNBIND:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context#BIND_NOT_FOREGROUND:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context#BIND_ABOVE_CLIENT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context#BIND_ALLOW_OOM_MANAGEMENT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context#BIND_WAIVE_PRIORITY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context#BIND_IMPORTANT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context#BIND_ADJUST_WITH_ACTIVITY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context#BIND_NOT_PERCEPTIBLE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context#BIND_ALLOW_ACTIVITY_STARTS:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context#BIND_INCLUDE_CAPABILITIES:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context#BIND_SHARED_ISOLATED_PROCESS:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context#BIND_PACKAGE_ISOLATED_PROCESS:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context#BIND_EXTERNAL_SERVICE:kotlin.Int` |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): Callbacks on ServiceConnection will be called on executor. Must use same instance for the same instance of ServiceConnection. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): Callbacks on ServiceConnection will be called on executor. Must use same instance for the same instance of ServiceConnection. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | --- | --- |
-| `conn` | [ServiceConnection](../android/content/ServiceConnection.md): This value cannot be `null`. |
+| `conn` | [ServiceConnection](ServiceConnection.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -1488,11 +1488,11 @@ See `https://developer.android.com/reference/kotlin/android/content/Context#bind
 
 | Parameters ||
 |---|---|
-| `service` | [Intent](../android/content/Intent.md): This value cannot be `null`. |
-| `conn` | [ServiceConnection](../android/content/ServiceConnection.md): This value cannot be `null`. |
+| `service` | [Intent](Intent.md): This value cannot be `null`. |
+| `conn` | [ServiceConnection](ServiceConnection.md): This value cannot be `null`. |
 | `flags` | [Context.BindServiceFlags](../android/content/Context.BindServiceFlags.md): This value cannot be `null`. |
 | --- | --- |
-| `user` | [UserHandle](../android/os/UserHandle.md): This value cannot be `null`. |
+| `user` | [UserHandle](../android.os/UserHandle.md): This value cannot be `null`. |
 
 ### bindServiceAsUser
 
@@ -1518,11 +1518,11 @@ Requires that one of the following conditions are met:
 
 | Parameters ||
 |---|---|
-| `service` | [Intent](../android/content/Intent.md): Identifies the service to connect to. The Intent must specify an explicit component name. This value cannot be `null`. |
-| `conn` | [ServiceConnection](../android/content/ServiceConnection.md): Receives information as the service is started and stopped. This must be a valid ServiceConnection object; it must not be null. |
+| `service` | [Intent](Intent.md): Identifies the service to connect to. The Intent must specify an explicit component name. This value cannot be `null`. |
+| `conn` | [ServiceConnection](ServiceConnection.md): Receives information as the service is started and stopped. This must be a valid ServiceConnection object; it must not be null. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Operation options for the binding. May be 0, `https://developer.android.com/reference/kotlin/android/content/Context#BIND_AUTO_CREATE:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/content/Context#BIND_DEBUG_UNBIND:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/content/Context#BIND_NOT_FOREGROUND:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/content/Context#BIND_ABOVE_CLIENT:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/content/Context#BIND_ALLOW_OOM_MANAGEMENT:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/content/Context#BIND_WAIVE_PRIORITY:kotlin.Int`. `https://developer.android.com/reference/kotlin/android/content/Context#BIND_IMPORTANT:kotlin.Int`, or `https://developer.android.com/reference/kotlin/android/content/Context#BIND_ADJUST_WITH_ACTIVITY:kotlin.Int`. |
 | --- | --- |
-| `user` | [UserHandle](../android/os/UserHandle.md): This value cannot be `null`. |
+| `user` | [UserHandle](../android.os/UserHandle.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -1565,7 +1565,7 @@ Determine whether the calling process of an IPC *or you* has been granted permis
 
 | Parameters ||
 |---|---|
-| `uri` | [Uri](../android/net/Uri.md)!: The uri that is being checked. |
+| `uri` | [Uri](../android.net/Uri.md)!: The uri that is being checked. |
 | `modeFlags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The access modes to check. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_GRANT_READ_URI_PERMISSION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_GRANT_WRITE_URI_PERMISSION:kotlin.Int` |
 
 | Return ||
@@ -1587,7 +1587,7 @@ Determine whether the calling process of an IPC *or you* has been granted permis
 
 | Parameters ||
 |---|---|
-| `uris` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Uri](../android/net/Uri.md)!\>: This value cannot be `null`. |
+| `uris` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Uri](../android.net/Uri.md)!\>: This value cannot be `null`. |
 | `modeFlags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The access modes to check. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_GRANT_READ_URI_PERMISSION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_GRANT_WRITE_URI_PERMISSION:kotlin.Int` |
 
 | Return ||
@@ -1627,7 +1627,7 @@ Determine whether the calling process and uid has been granted permission to acc
 
 | Parameters ||
 |---|---|
-| `uri` | [Uri](../android/net/Uri.md)!: The uri that is being checked. |
+| `uri` | [Uri](../android.net/Uri.md)!: The uri that is being checked. |
 | `modeFlags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The access modes to check. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_GRANT_READ_URI_PERMISSION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_GRANT_WRITE_URI_PERMISSION:kotlin.Int` |
 
 | Return ||
@@ -1649,7 +1649,7 @@ Determine whether the calling process and uid has been granted permission to acc
 
 | Parameters ||
 |---|---|
-| `uris` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Uri](../android/net/Uri.md)!\>: This value cannot be `null`. |
+| `uris` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Uri](../android.net/Uri.md)!\>: This value cannot be `null`. |
 | `modeFlags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The access modes to check. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_GRANT_READ_URI_PERMISSION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_GRANT_WRITE_URI_PERMISSION:kotlin.Int` |
 
 | Return ||
@@ -1677,7 +1677,7 @@ Note, this check will throw an `https://developer.android.com/reference/kotlin/j
 
 | Parameters ||
 |---|---|
-| `uri` | [Uri](../android/net/Uri.md): This value cannot be `null`. |
+| `uri` | [Uri](../android.net/Uri.md): This value cannot be `null`. |
 | `pid` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): (Optional) The process ID being checked against. If the pid is unknown, pass -1. |
 | `uid` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The UID being checked against. A uid of 0 is the root user, which will pass every permission check. |
 | --- | --- |
@@ -1747,7 +1747,7 @@ Determine whether a particular process and uid has been granted permission to ac
 
 | Parameters ||
 |---|---|
-| `uri` | [Uri](../android/net/Uri.md)!: The uri that is being checked. |
+| `uri` | [Uri](../android.net/Uri.md)!: The uri that is being checked. |
 | `pid` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The process ID being checked against. Must be \> 0. |
 | `uid` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The UID being checked against. A uid of 0 is the root user, which will pass every permission check. |
 | --- | --- |
@@ -1776,7 +1776,7 @@ Check both a Uri and normal permission. This allows you to perform both `https:/
 
 | Parameters ||
 |---|---|
-| `uri` | [Uri](../android/net/Uri.md)?: This value may be `null`. |
+| `uri` | [Uri](../android.net/Uri.md)?: This value may be `null`. |
 | `readPermission` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: This value may be `null`. |
 | `writePermission` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: This value may be `null`. |
 | --- | --- |
@@ -1806,7 +1806,7 @@ Determine whether a particular process and uid has been granted permission to ac
 
 | Parameters ||
 |---|---|
-| `uris` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Uri](../android/net/Uri.md)!\>: This value cannot be `null`. |
+| `uris` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Uri](../android.net/Uri.md)!\>: This value cannot be `null`. |
 | `pid` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The process ID being checked against. Must be \> 0. |
 | `uid` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The UID being checked against. A uid of 0 is the root user, which will pass every permission check. |
 | --- | --- |
@@ -1856,7 +1856,7 @@ Return a new Context object for the current Context but whose resources are adju
 
 | Parameters ||
 |---|---|
-| `overrideConfiguration` | [Configuration](../android/content/res/Configuration.md): A `https://developer.android.com/reference/kotlin/android/content/res/Configuration` specifying what values to modify in the base Configuration of the original Context's resources. If the base configuration changes (such as due to an orientation change), the resources of this context will also change except for those that have been explicitly overridden with a value here. This value cannot be `null`. |
+| `overrideConfiguration` | [Configuration](../android.content.res/Configuration.md): A `https://developer.android.com/reference/kotlin/android/content/res/Configuration` specifying what values to modify in the base Configuration of the original Context's resources. If the base configuration changes (such as due to an orientation change), the resources of this context will also change except for those that have been explicitly overridden with a value here. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -1874,7 +1874,7 @@ Creates a context with specific properties and behaviors.
 
 | Parameters ||
 |---|---|
-| `contextParams` | [ContextParams](../android/content/ContextParams.md): This value cannot be `null`. |
+| `contextParams` | [ContextParams](ContextParams.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -1960,7 +1960,7 @@ To obtain an instance of `https://developer.android.com/reference/kotlin/android
 
 | Parameters ||
 |---|---|
-| `display` | [Display](../android/view/Display.md): The display to which the current context's resources are adjusted. This value cannot be `null`. |
+| `display` | [Display](../android.view/Display.md): The display to which the current context's resources are adjusted. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -2015,9 +2015,9 @@ Similar to `https://developer.android.com/reference/kotlin/android/content/Conte
 
 | Parameters ||
 |---|---|
-| `display` | [Display](../android/view/Display.md): This value cannot be `null`. |
+| `display` | [Display](../android.view/Display.md): This value cannot be `null`. |
 | `type` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Value is one of the following: - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_BASE_APPLICATION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_APPLICATION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_APPLICATION_STARTING:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_DRAWN_APPLICATION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_APPLICATION_PANEL:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_APPLICATION_MEDIA:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_APPLICATION_SUB_PANEL:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_APPLICATION_ATTACHED_DIALOG:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_STATUS_BAR:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_SEARCH_BAR:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_PHONE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_SYSTEM_ALERT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_TOAST:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_SYSTEM_OVERLAY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_PRIORITY_PHONE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_SYSTEM_DIALOG:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_KEYGUARD_DIALOG:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_SYSTEM_ERROR:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_INPUT_METHOD:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_INPUT_METHOD_DIALOG:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_WALLPAPER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_PRIVATE_PRESENTATION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_ACCESSIBILITY_OVERLAY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_APPLICATION_OVERLAY:kotlin.Int` |
-| `options` | [Bundle](../android/os/Bundle.md)?: This value may be `null`. |
+| `options` | [Bundle](../android.os/Bundle.md)?: This value may be `null`. |
 | --- | --- |
 
 | Return ||
@@ -2099,7 +2099,7 @@ Note that using `https://developer.android.com/reference/kotlin/android/app/Appl
 | Parameters ||
 |---|---|
 | `type` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Value is one of the following: - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_BASE_APPLICATION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_APPLICATION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_APPLICATION_STARTING:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_DRAWN_APPLICATION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_APPLICATION_PANEL:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_APPLICATION_MEDIA:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_APPLICATION_SUB_PANEL:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_APPLICATION_ATTACHED_DIALOG:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_STATUS_BAR:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_SEARCH_BAR:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_PHONE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_SYSTEM_ALERT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_TOAST:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_SYSTEM_OVERLAY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_PRIORITY_PHONE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_SYSTEM_DIALOG:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_KEYGUARD_DIALOG:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_SYSTEM_ERROR:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_INPUT_METHOD:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_INPUT_METHOD_DIALOG:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_WALLPAPER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_PRIVATE_PRESENTATION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_ACCESSIBILITY_OVERLAY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_APPLICATION_OVERLAY:kotlin.Int` |
-| `options` | [Bundle](../android/os/Bundle.md)?: This value may be `null`. |
+| `options` | [Bundle](../android.os/Bundle.md)?: This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -2211,7 +2211,7 @@ If the calling process of an IPC *or you* has not been granted permission to acc
 
 | Parameters ||
 |---|---|
-| `uri` | [Uri](../android/net/Uri.md)!: The uri that is being checked. |
+| `uri` | [Uri](../android.net/Uri.md)!: The uri that is being checked. |
 | `modeFlags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The access modes to enforce. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_GRANT_READ_URI_PERMISSION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_GRANT_WRITE_URI_PERMISSION:kotlin.Int` |
 | `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: A message to include in the exception if it is thrown. |
 | --- | --- |
@@ -2250,7 +2250,7 @@ If the calling process and uid has not been granted permission to access a speci
 
 | Parameters ||
 |---|---|
-| `uri` | [Uri](../android/net/Uri.md)!: The uri that is being checked. |
+| `uri` | [Uri](../android.net/Uri.md)!: The uri that is being checked. |
 | `modeFlags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The access modes to enforce. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_GRANT_READ_URI_PERMISSION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_GRANT_WRITE_URI_PERMISSION:kotlin.Int` |
 | `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: A message to include in the exception if it is thrown. |
 | --- | --- |
@@ -2296,7 +2296,7 @@ If a particular process and uid has not been granted permission to access a spec
 
 | Parameters ||
 |---|---|
-| `uri` | [Uri](../android/net/Uri.md)!: The uri that is being checked. |
+| `uri` | [Uri](../android.net/Uri.md)!: The uri that is being checked. |
 | `pid` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The process ID being checked against. Must be \> 0. |
 | `uid` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The UID being checked against. A uid of 0 is the root user, which will pass every permission check. |
 | --- | --- |
@@ -2323,7 +2323,7 @@ Enforce both a Uri and normal permission. This allows you to perform both `https
 
 | Parameters ||
 |---|---|
-| `uri` | [Uri](../android/net/Uri.md)?: This value may be `null`. |
+| `uri` | [Uri](../android.net/Uri.md)?: This value may be `null`. |
 | `readPermission` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: This value may be `null`. |
 | `writePermission` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: This value may be `null`. |
 | --- | --- |
@@ -3146,7 +3146,7 @@ Gets the name of the system-level service that is represented by the specified c
 
 | Parameters ||
 |---|---|
-| `serviceClass` | [Class](../java/lang/Class.md)\<\*\>: The class of the desired service. This value cannot be `null`. |
+| `serviceClass` | [Class](../java.lang/Class.md)\<\*\>: The class of the desired service. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -3213,7 +3213,7 @@ To succeed, the content provider owning the Uri must have set the `https://devel
 | Parameters ||
 |---|---|
 | `toPackage` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The package you would like to allow to access the Uri. |
-| `uri` | [Uri](../android/net/Uri.md)!: The Uri you would like to grant access to. |
+| `uri` | [Uri](../android.net/Uri.md)!: The Uri you would like to grant access to. |
 | `modeFlags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The desired access modes. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_GRANT_READ_URI_PERMISSION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_GRANT_WRITE_URI_PERMISSION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_GRANT_PERSISTABLE_URI_PERMISSION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_GRANT_PREFIX_URI_PERMISSION:kotlin.Int` |
 | --- | --- |
 
@@ -3272,7 +3272,7 @@ The database must be closed before being moved.
 
 | Parameters ||
 |---|---|
-| `sourceContext` | [Context](../android/content/Context.md)!: The source context which contains the existing database to move. |
+| `sourceContext` | [Context](Context.md)!: The source context which contains the existing database to move. |
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The name of the database file. |
 
 | Return ||
@@ -3294,7 +3294,7 @@ Move an existing shared preferences file from the given source storage context t
 
 | Parameters ||
 |---|---|
-| `sourceContext` | [Context](../android/content/Context.md)!: The source context which contains the existing shared preferences to move. |
+| `sourceContext` | [Context](Context.md)!: The source context which contains the existing shared preferences to move. |
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The name of the shared preferences file. |
 
 | Return ||
@@ -3395,7 +3395,7 @@ Accepts input param: a concrete instance of `https://developer.android.com/refer
 | `mode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Operating mode. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/content/Context#MODE_PRIVATE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context#MODE_WORLD_READABLE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context#MODE_WORLD_WRITEABLE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context#MODE_ENABLE_WRITE_AHEAD_LOGGING:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context#MODE_NO_LOCALIZED_COLLATORS:kotlin.Int` |
 | `factory` | [SQLiteDatabase.CursorFactory](../android/database/sqlite/SQLiteDatabase.CursorFactory.md)!: An optional factory class that is called to instantiate a cursor when query is called. |
 | --- | --- |
-| `errorHandler` | [DatabaseErrorHandler](../android/database/DatabaseErrorHandler.md)?: This value may be `null`. |
+| `errorHandler` | [DatabaseErrorHandler](../android.database/DatabaseErrorHandler.md)?: This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -3430,7 +3430,7 @@ Rebind an application service with updated bind service flags
 
 | Parameters ||
 |---|---|
-| `conn` | [ServiceConnection](../android/content/ServiceConnection.md): This value cannot be `null`. |
+| `conn` | [ServiceConnection](ServiceConnection.md): This value cannot be `null`. |
 | `flags` | [Context.BindServiceFlags](../android/content/Context.BindServiceFlags.md): This value cannot be `null`. |
 
 ### registerComponentCallbacks
@@ -3447,7 +3447,7 @@ After `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_C
 
 | Parameters ||
 |---|---|
-| `callback` | [ComponentCallbacks](../android/content/ComponentCallbacks.md)!: The interface to call. This can be either a `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks` or `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks2` interface. |
+| `callback` | [ComponentCallbacks](ComponentCallbacks.md)!: The interface to call. This can be either a `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks` or `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks2` interface. |
 
 | Exceptions ||
 |---|---|
@@ -3474,8 +3474,8 @@ When an application receives a device id update callback, this Context is guaran
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `listener` | [IntConsumer](../java/util/function/IntConsumer.md): This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `listener` | [IntConsumer](../java.util.function/IntConsumer.md): This value cannot be `null`. |
 
 ### registerReceiver
 
@@ -3508,8 +3508,8 @@ Note: this method *cannot be called from a `https://developer.android.com/refere
 
 | Parameters ||
 |---|---|
-| `receiver` | [BroadcastReceiver](../android/content/BroadcastReceiver.md)?: This value may be `null`. |
-| `filter` | [IntentFilter](../android/content/IntentFilter.md)!: Selects the Intent broadcasts to be received. |
+| `receiver` | [BroadcastReceiver](BroadcastReceiver.md)?: This value may be `null`. |
+| `filter` | [IntentFilter](IntentFilter.md)!: Selects the Intent broadcasts to be received. |
 
 | Return ||
 |---|---|
@@ -3537,8 +3537,8 @@ As of `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_C
 
 | Parameters ||
 |---|---|
-| `receiver` | [BroadcastReceiver](../android/content/BroadcastReceiver.md)?: This value may be `null`. |
-| `filter` | [IntentFilter](../android/content/IntentFilter.md)!: Selects the Intent broadcasts to be received. |
+| `receiver` | [BroadcastReceiver](BroadcastReceiver.md)?: This value may be `null`. |
+| `filter` | [IntentFilter](IntentFilter.md)!: Selects the Intent broadcasts to be received. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional options for the receiver. For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#UPSIDE_DOWN_CAKE:kotlin.Int` either `https://developer.android.com/reference/kotlin/android/content/Context#RECEIVER_EXPORTED:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/content/Context#RECEIVER_NOT_EXPORTED:kotlin.Int` must be specified if the receiver isn't being registered for [system broadcasts](https://developer.android.com/guide/components/broadcasts#system-broadcasts) or a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` will be thrown. If `https://developer.android.com/reference/kotlin/android/content/Context#RECEIVER_EXPORTED:kotlin.Int` is specified, a receiver may additionally specify `https://developer.android.com/reference/kotlin/android/content/Context#RECEIVER_VISIBLE_TO_INSTANT_APPS:kotlin.Int`. For a complete list of system broadcast actions, see the BROADCAST_ACTIONS.TXT file in the Android SDK. If both `https://developer.android.com/reference/kotlin/android/content/Context#RECEIVER_EXPORTED:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/content/Context#RECEIVER_NOT_EXPORTED:kotlin.Int` are specified, an `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#` will be thrown. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/content/Context#RECEIVER_VISIBLE_TO_INSTANT_APPS:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context#RECEIVER_EXPORTED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context#RECEIVER_NOT_EXPORTED:kotlin.Int` |
 | --- | --- |
 
@@ -3571,11 +3571,11 @@ For apps targeting `https://developer.android.com/reference/kotlin/android/os/Bu
 
 | Parameters ||
 |---|---|
-| `receiver` | [BroadcastReceiver](../android/content/BroadcastReceiver.md)?: This value may be `null`. |
-| `filter` | [IntentFilter](../android/content/IntentFilter.md)!: Selects the Intent broadcasts to be received. |
+| `receiver` | [BroadcastReceiver](BroadcastReceiver.md)?: This value may be `null`. |
+| `filter` | [IntentFilter](IntentFilter.md)!: Selects the Intent broadcasts to be received. |
 | `broadcastPermission` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: This value may be `null`. |
 | --- | --- |
-| `scheduler` | [Handler](../android/os/Handler.md)?: This value may be `null`. |
+| `scheduler` | [Handler](../android.os/Handler.md)?: This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -3605,11 +3605,11 @@ As of `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_C
 
 | Parameters ||
 |---|---|
-| `receiver` | [BroadcastReceiver](../android/content/BroadcastReceiver.md)?: This value may be `null`. |
-| `filter` | [IntentFilter](../android/content/IntentFilter.md)!: Selects the Intent broadcasts to be received. |
+| `receiver` | [BroadcastReceiver](BroadcastReceiver.md)?: This value may be `null`. |
+| `filter` | [IntentFilter](IntentFilter.md)!: Selects the Intent broadcasts to be received. |
 | `broadcastPermission` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: This value may be `null`. |
 | --- | --- |
-| `scheduler` | [Handler](../android/os/Handler.md)?: This value may be `null`. |
+| `scheduler` | [Handler](../android.os/Handler.md)?: This value may be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional options for the receiver. For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#UPSIDE_DOWN_CAKE:kotlin.Int` either `https://developer.android.com/reference/kotlin/android/content/Context#RECEIVER_EXPORTED:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/content/Context#RECEIVER_NOT_EXPORTED:kotlin.Int` must be specified if the receiver isn't being registered for [system broadcasts](https://developer.android.com/guide/components/broadcasts#system-broadcasts) or a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` will be thrown. If `https://developer.android.com/reference/kotlin/android/content/Context#RECEIVER_EXPORTED:kotlin.Int` is specified, a receiver may additionally specify `https://developer.android.com/reference/kotlin/android/content/Context#RECEIVER_VISIBLE_TO_INSTANT_APPS:kotlin.Int`. For a complete list of system broadcast actions, see the BROADCAST_ACTIONS.TXT file in the Android SDK. If both `https://developer.android.com/reference/kotlin/android/content/Context#RECEIVER_EXPORTED:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/content/Context#RECEIVER_NOT_EXPORTED:kotlin.Int` are specified, an `https://developer.android.com/reference/kotlin/java/lang/IllegalArgumentException.html#` will be thrown. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/content/Context#RECEIVER_VISIBLE_TO_INSTANT_APPS:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context#RECEIVER_EXPORTED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context#RECEIVER_NOT_EXPORTED:kotlin.Int` |
 
 | Return ||
@@ -3631,7 +3631,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md)!: The Intent that was previously broadcast. |
+| `intent` | [Intent](Intent.md)!: The Intent that was previously broadcast. |
 
 ### removeStickyBroadcastAsUser
 
@@ -3653,8 +3653,8 @@ Requires android.Manifest.permission.INTERACT_ACROSS_USERS and `https://develope
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md)!: The Intent that was previously broadcast. |
-| `user` | [UserHandle](../android/os/UserHandle.md)!: UserHandle to remove the sticky broadcast from. |
+| `intent` | [Intent](Intent.md)!: The Intent that was previously broadcast. |
+| `user` | [UserHandle](../android.os/UserHandle.md)!: UserHandle to remove the sticky broadcast from. |
 
 ### revokeSelfPermissionsOnKill
 
@@ -3701,7 +3701,7 @@ Unlike `https://developer.android.com/reference/kotlin/android/content/Context#r
 
 | Parameters ||
 |---|---|
-| `uri` | [Uri](../android/net/Uri.md)!: The Uri you would like to revoke access to. |
+| `uri` | [Uri](../android.net/Uri.md)!: The Uri you would like to revoke access to. |
 | `modeFlags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The access modes to revoke. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_GRANT_READ_URI_PERMISSION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_GRANT_WRITE_URI_PERMISSION:kotlin.Int` |
 
 ### revokeUriPermission
@@ -3723,7 +3723,7 @@ Unlike `https://developer.android.com/reference/kotlin/android/content/Context#r
 | Parameters ||
 |---|---|
 | `toPackage` | The package you had previously granted access to. |
-| `uri` | [Uri](../android/net/Uri.md)!: The Uri you would like to revoke access to. |
+| `uri` | [Uri](../android.net/Uri.md)!: The Uri you would like to revoke access to. |
 | `modeFlags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The access modes to revoke. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_GRANT_READ_URI_PERMISSION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_GRANT_WRITE_URI_PERMISSION:kotlin.Int` |
 | --- | --- |
 
@@ -3741,7 +3741,7 @@ See `https://developer.android.com/reference/kotlin/android/content/BroadcastRec
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md)!: The Intent to broadcast; all receivers matching this Intent will receive the broadcast. |
+| `intent` | [Intent](Intent.md)!: The Intent to broadcast; all receivers matching this Intent will receive the broadcast. |
 
 ### sendBroadcast
 
@@ -3760,7 +3760,7 @@ See `https://developer.android.com/reference/kotlin/android/content/BroadcastRec
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md)!: The Intent to broadcast; all receivers matching this Intent will receive the broadcast. |
+| `intent` | [Intent](Intent.md)!: The Intent to broadcast; all receivers matching this Intent will receive the broadcast. |
 | `receiverPermission` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: This value may be `null`. |
 
 ### sendBroadcast
@@ -3781,9 +3781,9 @@ See `https://developer.android.com/reference/kotlin/android/content/BroadcastRec
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md): This value cannot be `null`. |
+| `intent` | [Intent](Intent.md): This value cannot be `null`. |
 | `receiverPermission` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: This value may be `null`. |
-| `options` | [Bundle](../android/os/Bundle.md)?: This value may be `null`. |
+| `options` | [Bundle](../android.os/Bundle.md)?: This value may be `null`. |
 | --- | --- |
 
 ### sendBroadcastAsUser
@@ -3802,8 +3802,8 @@ Requires android.Manifest.permission.INTERACT_ACROSS_USERS
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md)!: The intent to broadcast |
-| `user` | [UserHandle](../android/os/UserHandle.md)!: UserHandle to send the intent to. |
+| `intent` | [Intent](Intent.md)!: The intent to broadcast |
+| `user` | [UserHandle](../android.os/UserHandle.md)!: UserHandle to send the intent to. |
 
 ### sendBroadcastAsUser
 
@@ -3822,8 +3822,8 @@ Requires android.Manifest.permission.INTERACT_ACROSS_USERS
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md)!: The Intent to broadcast; all receivers matching this Intent will receive the broadcast. |
-| `user` | [UserHandle](../android/os/UserHandle.md)!: UserHandle to send the intent to. |
+| `intent` | [Intent](Intent.md)!: The Intent to broadcast; all receivers matching this Intent will receive the broadcast. |
+| `user` | [UserHandle](../android.os/UserHandle.md)!: UserHandle to send the intent to. |
 | `receiverPermission` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: (optional) String naming a permission that a receiver must hold in order to receive your broadcast. If null, no permission is required. |
 | --- | --- |
 
@@ -3847,16 +3847,16 @@ open fun sendOrderedBroadcast(
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md): This value cannot be `null`. |
+| `intent` | [Intent](Intent.md): This value cannot be `null`. |
 | `receiverPermission` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: This value may be `null`. |
 | `receiverAppOp` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: This value may be `null`. |
 | --- | --- |
-| `resultReceiver` | [BroadcastReceiver](../android/content/BroadcastReceiver.md)?: This value may be `null`. |
-| `scheduler` | [Handler](../android/os/Handler.md)?: This value may be `null`. |
+| `resultReceiver` | [BroadcastReceiver](BroadcastReceiver.md)?: This value may be `null`. |
+| `scheduler` | [Handler](../android.os/Handler.md)?: This value may be `null`. |
 | `initialData` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: This value may be `null`. |
 | --- | --- |
-| `initialExtras` | [Bundle](../android/os/Bundle.md)?: This value may be `null`. |
-| `options` | [Bundle](../android/os/Bundle.md)?: This value may be `null`. |
+| `initialExtras` | [Bundle](../android.os/Bundle.md)?: This value may be `null`. |
+| `options` | [Bundle](../android.os/Bundle.md)?: This value may be `null`. |
 
 ### sendOrderedBroadcast
 
@@ -3875,7 +3875,7 @@ See `https://developer.android.com/reference/kotlin/android/content/BroadcastRec
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md)!: The Intent to broadcast; all receivers matching this Intent will receive the broadcast. |
+| `intent` | [Intent](Intent.md)!: The Intent to broadcast; all receivers matching this Intent will receive the broadcast. |
 | `receiverPermission` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: This value may be `null`. |
 
 ### sendOrderedBroadcast
@@ -3902,15 +3902,15 @@ See `https://developer.android.com/reference/kotlin/android/content/BroadcastRec
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md): The Intent to broadcast; all receivers matching this Intent will receive the broadcast. This value cannot be `null`. |
+| `intent` | [Intent](Intent.md): The Intent to broadcast; all receivers matching this Intent will receive the broadcast. This value cannot be `null`. |
 | `receiverPermission` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: This value may be `null`. |
-| `resultReceiver` | [BroadcastReceiver](../android/content/BroadcastReceiver.md)?: This value may be `null`. |
+| `resultReceiver` | [BroadcastReceiver](BroadcastReceiver.md)?: This value may be `null`. |
 | --- | --- |
-| `scheduler` | [Handler](../android/os/Handler.md)?: This value may be `null`. |
+| `scheduler` | [Handler](../android.os/Handler.md)?: This value may be `null`. |
 | `initialCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): An initial value for the result code. Often Activity.RESULT_OK. |
 | `initialData` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: This value may be `null`. |
 | --- | --- |
-| `initialExtras` | [Bundle](../android/os/Bundle.md)?: This value may be `null`. |
+| `initialExtras` | [Bundle](../android.os/Bundle.md)?: This value may be `null`. |
 
 ### sendOrderedBroadcast
 
@@ -3930,9 +3930,9 @@ See `https://developer.android.com/reference/kotlin/android/content/BroadcastRec
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md): This value cannot be `null`. |
+| `intent` | [Intent](Intent.md): This value cannot be `null`. |
 | `receiverPermission` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: This value may be `null`. |
-| `options` | [Bundle](../android/os/Bundle.md)?: This value may be `null`. |
+| `options` | [Bundle](../android.os/Bundle.md)?: This value may be `null`. |
 | --- | --- |
 
 ### sendOrderedBroadcast
@@ -3960,16 +3960,16 @@ See `https://developer.android.com/reference/kotlin/android/content/BroadcastRec
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md): This value cannot be `null`. |
+| `intent` | [Intent](Intent.md): This value cannot be `null`. |
 | `receiverPermission` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: This value may be `null`. |
-| `options` | [Bundle](../android/os/Bundle.md)?: This value may be `null`. |
+| `options` | [Bundle](../android.os/Bundle.md)?: This value may be `null`. |
 | --- | --- |
-| `resultReceiver` | [BroadcastReceiver](../android/content/BroadcastReceiver.md)?: This value may be `null`. |
-| `scheduler` | [Handler](../android/os/Handler.md)?: This value may be `null`. |
+| `resultReceiver` | [BroadcastReceiver](BroadcastReceiver.md)?: This value may be `null`. |
+| `scheduler` | [Handler](../android.os/Handler.md)?: This value may be `null`. |
 | `initialCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): An initial value for the result code. Often Activity.RESULT_OK. |
 | --- | --- |
 | `initialData` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: This value may be `null`. |
-| `initialExtras` | [Bundle](../android/os/Bundle.md)?: This value may be `null`. |
+| `initialExtras` | [Bundle](../android.os/Bundle.md)?: This value may be `null`. |
 
 ### sendOrderedBroadcast
 
@@ -3994,16 +3994,16 @@ See `https://developer.android.com/reference/kotlin/android/content/BroadcastRec
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md): This value cannot be `null`. |
+| `intent` | [Intent](Intent.md): This value cannot be `null`. |
 | `receiverPermission` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: This value may be `null`. |
 | `receiverAppOp` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: This value may be `null`. |
 | --- | --- |
-| `resultReceiver` | [BroadcastReceiver](../android/content/BroadcastReceiver.md)?: This value may be `null`. |
-| `scheduler` | [Handler](../android/os/Handler.md)?: This value may be `null`. |
+| `resultReceiver` | [BroadcastReceiver](BroadcastReceiver.md)?: This value may be `null`. |
+| `scheduler` | [Handler](../android.os/Handler.md)?: This value may be `null`. |
 | `initialCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): An initial value for the result code. Often Activity.RESULT_OK. |
 | --- | --- |
 | `initialData` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: This value may be `null`. |
-| `initialExtras` | [Bundle](../android/os/Bundle.md)?: This value may be `null`. |
+| `initialExtras` | [Bundle](../android.os/Bundle.md)?: This value may be `null`. |
 
 ### sendOrderedBroadcastAsUser
 
@@ -4029,16 +4029,16 @@ Requires android.Manifest.permission.INTERACT_ACROSS_USERS
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md)!: The Intent to broadcast; all receivers matching this Intent will receive the broadcast. |
-| `user` | [UserHandle](../android/os/UserHandle.md)!: UserHandle to send the intent to. |
+| `intent` | [Intent](Intent.md)!: The Intent to broadcast; all receivers matching this Intent will receive the broadcast. |
+| `user` | [UserHandle](../android.os/UserHandle.md)!: UserHandle to send the intent to. |
 | `receiverPermission` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: This value may be `null`. |
 | --- | --- |
-| `resultReceiver` | [BroadcastReceiver](../android/content/BroadcastReceiver.md)?: This value may be `null`. |
-| `scheduler` | [Handler](../android/os/Handler.md)?: This value may be `null`. |
+| `resultReceiver` | [BroadcastReceiver](BroadcastReceiver.md)?: This value may be `null`. |
+| `scheduler` | [Handler](../android.os/Handler.md)?: This value may be `null`. |
 | `initialCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): An initial value for the result code. Often Activity.RESULT_OK. |
 | --- | --- |
 | `initialData` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: This value may be `null`. |
-| `initialExtras` | [Bundle](../android/os/Bundle.md)?: This value may be `null`. |
+| `initialExtras` | [Bundle](../android.os/Bundle.md)?: This value may be `null`. |
 
 ### sendStickyBroadcast
 
@@ -4055,7 +4055,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md)!: The Intent to broadcast; all receivers matching this Intent will receive the broadcast, and the Intent will be held to be re-broadcast to future receivers. |
+| `intent` | [Intent](Intent.md)!: The Intent to broadcast; all receivers matching this Intent will receive the broadcast, and the Intent will be held to be re-broadcast to future receivers. |
 
 ### sendStickyBroadcast
 
@@ -4074,8 +4074,8 @@ Perform a `https://developer.android.com/reference/kotlin/android/content/Contex
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md): The Intent to broadcast; all receivers matching this Intent will receive the broadcast, and the Intent will be held to be re-broadcast to future receivers. This value cannot be `null`. |
-| `options` | [Bundle](../android/os/Bundle.md)?: (optional) Additional sending options, generated from a `https://developer.android.com/reference/kotlin/android/app/BroadcastOptions.html#`. This value may be `null`. |
+| `intent` | [Intent](Intent.md): The Intent to broadcast; all receivers matching this Intent will receive the broadcast, and the Intent will be held to be re-broadcast to future receivers. This value cannot be `null`. |
+| `options` | [Bundle](../android.os/Bundle.md)?: (optional) Additional sending options, generated from a `https://developer.android.com/reference/kotlin/android/app/BroadcastOptions.html#`. This value may be `null`. |
 
 **See Also**
 
@@ -4100,8 +4100,8 @@ Requires android.Manifest.permission.INTERACT_ACROSS_USERS and `https://develope
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md)!: The Intent to broadcast; all receivers matching this Intent will receive the broadcast, and the Intent will be held to be re-broadcast to future receivers. |
-| `user` | [UserHandle](../android/os/UserHandle.md)!: UserHandle to send the intent to. |
+| `intent` | [Intent](Intent.md)!: The Intent to broadcast; all receivers matching this Intent will receive the broadcast, and the Intent will be held to be re-broadcast to future receivers. |
+| `user` | [UserHandle](../android.os/UserHandle.md)!: UserHandle to send the intent to. |
 
 ### sendStickyOrderedBroadcast
 
@@ -4129,13 +4129,13 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md)!: The Intent to broadcast; all receivers matching this Intent will receive the broadcast. |
-| `resultReceiver` | [BroadcastReceiver](../android/content/BroadcastReceiver.md)?: This value may be `null`. |
-| `scheduler` | [Handler](../android/os/Handler.md)?: This value may be `null`. |
+| `intent` | [Intent](Intent.md)!: The Intent to broadcast; all receivers matching this Intent will receive the broadcast. |
+| `resultReceiver` | [BroadcastReceiver](BroadcastReceiver.md)?: This value may be `null`. |
+| `scheduler` | [Handler](../android.os/Handler.md)?: This value may be `null`. |
 | --- | --- |
 | `initialCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): An initial value for the result code. Often Activity.RESULT_OK. |
 | `initialData` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: This value may be `null`. |
-| `initialExtras` | [Bundle](../android/os/Bundle.md)?: This value may be `null`. |
+| `initialExtras` | [Bundle](../android.os/Bundle.md)?: This value may be `null`. |
 | --- | --- |
 
 ### sendStickyOrderedBroadcastAsUser
@@ -4163,15 +4163,15 @@ Requires android.Manifest.permission.INTERACT_ACROSS_USERS and `https://develope
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md)!: The Intent to broadcast; all receivers matching this Intent will receive the broadcast. |
-| `user` | [UserHandle](../android/os/UserHandle.md)!: UserHandle to send the intent to. |
-| `resultReceiver` | [BroadcastReceiver](../android/content/BroadcastReceiver.md)?: This value may be `null`. |
+| `intent` | [Intent](Intent.md)!: The Intent to broadcast; all receivers matching this Intent will receive the broadcast. |
+| `user` | [UserHandle](../android.os/UserHandle.md)!: UserHandle to send the intent to. |
+| `resultReceiver` | [BroadcastReceiver](BroadcastReceiver.md)?: This value may be `null`. |
 | --- | --- |
-| `scheduler` | [Handler](../android/os/Handler.md)?: This value may be `null`. |
+| `scheduler` | [Handler](../android.os/Handler.md)?: This value may be `null`. |
 | `initialCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): An initial value for the result code. Often Activity.RESULT_OK. |
 | `initialData` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: This value may be `null`. |
 | --- | --- |
-| `initialExtras` | [Bundle](../android/os/Bundle.md)?: This value may be `null`. |
+| `initialExtras` | [Bundle](../android.os/Bundle.md)?: This value may be `null`. |
 
 ### setTheme
 
@@ -4237,7 +4237,7 @@ Same as `https://developer.android.com/reference/kotlin/android/content/Context#
 
 | Parameters ||
 |---|---|
-| `intents` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Intent](../android/content/Intent.md)!\>!: An array of Intents to be started. |
+| `intents` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Intent](Intent.md)!\>!: An array of Intents to be started. |
 
 | Exceptions ||
 |---|---|
@@ -4260,8 +4260,8 @@ This method throws `https://developer.android.com/reference/kotlin/android/conte
 
 | Parameters ||
 |---|---|
-| `intents` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Intent](../android/content/Intent.md)!\>!: An array of Intents to be started. |
-| `options` | [Bundle](../android/os/Bundle.md)?: This value may be `null`. |
+| `intents` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Intent](Intent.md)!\>!: An array of Intents to be started. |
+| `options` | [Bundle](../android.os/Bundle.md)?: This value may be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -4279,7 +4279,7 @@ Same as `https://developer.android.com/reference/kotlin/android/content/Context#
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md)!: The description of the activity to start. |
+| `intent` | [Intent](Intent.md)!: The description of the activity to start. |
 
 | Exceptions ||
 |---|---|
@@ -4304,8 +4304,8 @@ This method throws `https://developer.android.com/reference/kotlin/android/conte
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md)!: The description of the activity to start. |
-| `options` | [Bundle](../android/os/Bundle.md)?: This value may be `null`. |
+| `intent` | [Intent](Intent.md)!: The description of the activity to start. |
+| `options` | [Bundle](../android.os/Bundle.md)?: This value may be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -4329,7 +4329,7 @@ Unlike the ordinary `https://developer.android.com/reference/kotlin/android/cont
 
 | Parameters ||
 |---|---|
-| `service` | [Intent](../android/content/Intent.md)!: Identifies the service to be started. The Intent must be fully explicit (supplying a component name). Additional values may be included in the Intent extras to supply arguments along with this specific start call. |
+| `service` | [Intent](Intent.md)!: Identifies the service to be started. The Intent must be fully explicit (supplying a component name). Additional values may be included in the Intent extras to supply arguments along with this specific start call. |
 
 | Return ||
 |---|---|
@@ -4360,9 +4360,9 @@ Instrumentation is normally only allowed to run against a package that is either
 
 | Parameters ||
 |---|---|
-| `className` | [ComponentName](../android/content/ComponentName.md): Name of the Instrumentation component to be run. This value cannot be `null`. |
+| `className` | [ComponentName](ComponentName.md): Name of the Instrumentation component to be run. This value cannot be `null`. |
 | `profileFile` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: This value may be `null`. |
-| `arguments` | [Bundle](../android/os/Bundle.md)?: This value may be `null`. |
+| `arguments` | [Bundle](../android.os/Bundle.md)?: This value may be `null`. |
 | --- | --- |
 
 | Return ||
@@ -4387,8 +4387,8 @@ Same as `https://developer.android.com/reference/kotlin/android/content/Context#
 
 | Parameters ||
 |---|---|
-| `intent` | [IntentSender](../android/content/IntentSender.md)!: The IntentSender to launch. |
-| `fillInIntent` | [Intent](../android/content/Intent.md)?: This value may be `null`. |
+| `intent` | [IntentSender](IntentSender.md)!: The IntentSender to launch. |
+| `fillInIntent` | [Intent](Intent.md)?: This value may be `null`. |
 | `flagsMask` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Intent flags in the original IntentSender that you would like to change. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_FROM_BACKGROUND:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_DEBUG_LOG_RESOLUTION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_EXCLUDE_STOPPED_PACKAGES:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_INCLUDE_STOPPED_PACKAGES:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_MATCH_EXTERNAL:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_NO_HISTORY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_SINGLE_TOP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_NEW_TASK:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_MULTIPLE_TASK:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_CLEAR_TOP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_FORWARD_RESULT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_PREVIOUS_IS_TOP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_BROUGHT_TO_FRONT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_RESET_TASK_IF_NEEDED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_LAUNCHED_FROM_HISTORY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_NEW_DOCUMENT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_NO_USER_ACTION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_REORDER_TO_FRONT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_NO_ANIMATION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_CLEAR_TASK:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_TASK_ON_HOME:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_RETAIN_IN_RECENTS:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_LAUNCH_ADJACENT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_RECEIVER_REGISTERED_ONLY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_RECEIVER_REPLACE_PENDING:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_RECEIVER_FOREGROUND:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_RECEIVER_NO_ABORT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_RECEIVER_VISIBLE_TO_INSTANT_APPS:kotlin.Int` |
 | --- | --- |
 | `flagsValues` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Desired values for any bits set in flagsMask. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_FROM_BACKGROUND:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_DEBUG_LOG_RESOLUTION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_EXCLUDE_STOPPED_PACKAGES:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_INCLUDE_STOPPED_PACKAGES:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_MATCH_EXTERNAL:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_NO_HISTORY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_SINGLE_TOP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_NEW_TASK:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_MULTIPLE_TASK:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_CLEAR_TOP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_FORWARD_RESULT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_PREVIOUS_IS_TOP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_BROUGHT_TO_FRONT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_RESET_TASK_IF_NEEDED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_LAUNCHED_FROM_HISTORY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_NEW_DOCUMENT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_NO_USER_ACTION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_REORDER_TO_FRONT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_NO_ANIMATION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_CLEAR_TASK:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_TASK_ON_HOME:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_RETAIN_IN_RECENTS:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_LAUNCH_ADJACENT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_RECEIVER_REGISTERED_ONLY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_RECEIVER_REPLACE_PENDING:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_RECEIVER_FOREGROUND:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_RECEIVER_NO_ABORT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_RECEIVER_VISIBLE_TO_INSTANT_APPS:kotlin.Int` |
@@ -4413,13 +4413,13 @@ Like `https://developer.android.com/reference/kotlin/android/content/Context#sta
 
 | Parameters ||
 |---|---|
-| `intent` | [IntentSender](../android/content/IntentSender.md)!: The IntentSender to launch. |
-| `fillInIntent` | [Intent](../android/content/Intent.md)?: This value may be `null`. |
+| `intent` | [IntentSender](IntentSender.md)!: The IntentSender to launch. |
+| `fillInIntent` | [Intent](Intent.md)?: This value may be `null`. |
 | `flagsMask` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Intent flags in the original IntentSender that you would like to change. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_FROM_BACKGROUND:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_DEBUG_LOG_RESOLUTION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_EXCLUDE_STOPPED_PACKAGES:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_INCLUDE_STOPPED_PACKAGES:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_MATCH_EXTERNAL:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_NO_HISTORY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_SINGLE_TOP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_NEW_TASK:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_MULTIPLE_TASK:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_CLEAR_TOP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_FORWARD_RESULT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_PREVIOUS_IS_TOP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_BROUGHT_TO_FRONT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_RESET_TASK_IF_NEEDED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_LAUNCHED_FROM_HISTORY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_NEW_DOCUMENT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_NO_USER_ACTION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_REORDER_TO_FRONT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_NO_ANIMATION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_CLEAR_TASK:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_TASK_ON_HOME:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_RETAIN_IN_RECENTS:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_LAUNCH_ADJACENT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_RECEIVER_REGISTERED_ONLY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_RECEIVER_REPLACE_PENDING:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_RECEIVER_FOREGROUND:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_RECEIVER_NO_ABORT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_RECEIVER_VISIBLE_TO_INSTANT_APPS:kotlin.Int` |
 | --- | --- |
 | `flagsValues` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Desired values for any bits set in flagsMask. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_FROM_BACKGROUND:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_DEBUG_LOG_RESOLUTION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_EXCLUDE_STOPPED_PACKAGES:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_INCLUDE_STOPPED_PACKAGES:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_MATCH_EXTERNAL:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_NO_HISTORY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_SINGLE_TOP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_NEW_TASK:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_MULTIPLE_TASK:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_CLEAR_TOP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_FORWARD_RESULT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_PREVIOUS_IS_TOP:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_BROUGHT_TO_FRONT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_RESET_TASK_IF_NEEDED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_LAUNCHED_FROM_HISTORY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_NEW_DOCUMENT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_NO_USER_ACTION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_REORDER_TO_FRONT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_NO_ANIMATION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_CLEAR_TASK:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_TASK_ON_HOME:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_RETAIN_IN_RECENTS:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_ACTIVITY_LAUNCH_ADJACENT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_RECEIVER_REGISTERED_ONLY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_RECEIVER_REPLACE_PENDING:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_RECEIVER_FOREGROUND:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_RECEIVER_NO_ABORT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Intent#FLAG_RECEIVER_VISIBLE_TO_INSTANT_APPS:kotlin.Int` |
 | `extraFlags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Always set to 0. |
-| `options` | [Bundle](../android/os/Bundle.md)?: This value may be `null`. |
+| `options` | [Bundle](../android.os/Bundle.md)?: This value may be `null`. |
 | --- | --- |
 
 ### startService
@@ -4449,7 +4449,7 @@ Beginning with SDK Version `https://developer.android.com/reference/kotlin/andro
 
 | Parameters ||
 |---|---|
-| `service` | [Intent](../android/content/Intent.md)!: Identifies the service to be started. The Intent must be fully explicit (supplying a component name). Additional values may be included in the Intent extras to supply arguments along with this specific start call. |
+| `service` | [Intent](Intent.md)!: Identifies the service to be started. The Intent must be fully explicit (supplying a component name). Additional values may be included in the Intent extras to supply arguments along with this specific start call. |
 
 | Return ||
 |---|---|
@@ -4503,7 +4503,7 @@ Disconnect from an application service. You will no longer receive calls as the 
 
 | Parameters ||
 |---|---|
-| `conn` | [ServiceConnection](../android/content/ServiceConnection.md): The connection interface previously supplied to bindService(). This parameter must not be null. |
+| `conn` | [ServiceConnection](ServiceConnection.md): The connection interface previously supplied to bindService(). This parameter must not be null. |
 
 ### unregisterComponentCallbacks
 
@@ -4519,7 +4519,7 @@ After `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_C
 
 | Parameters ||
 |---|---|
-| `callback` | [ComponentCallbacks](../android/content/ComponentCallbacks.md)!: The interface to call. This can be either a `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks` or `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks2` interface. |
+| `callback` | [ComponentCallbacks](ComponentCallbacks.md)!: The interface to call. This can be either a `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks` or `https://developer.android.com/reference/kotlin/android/content/ComponentCallbacks2` interface. |
 
 | Exceptions ||
 |---|---|
@@ -4537,7 +4537,7 @@ Removes a device ID changed listener from the Context. It's a no-op if the liste
 
 | Parameters ||
 |---|---|
-| `listener` | [IntConsumer](../java/util/function/IntConsumer.md): This value cannot be `null`. |
+| `listener` | [IntConsumer](../java.util.function/IntConsumer.md): This value cannot be `null`. |
 
 ### unregisterReceiver
 
@@ -4551,7 +4551,7 @@ Unregister a previously registered BroadcastReceiver. *All* filters that have be
 
 | Parameters ||
 |---|---|
-| `receiver` | [BroadcastReceiver](../android/content/BroadcastReceiver.md)!: The BroadcastReceiver to unregister. |
+| `receiver` | [BroadcastReceiver](BroadcastReceiver.md)!: The BroadcastReceiver to unregister. |
 
 | Exceptions ||
 |---|---|
@@ -4595,7 +4595,7 @@ Note that this call does not take immediate effect, but will be applied the next
 
 | Parameters ||
 |---|---|
-| `conn` | [ServiceConnection](../android/content/ServiceConnection.md): The connection interface previously supplied to bindService(). This parameter must not be null. |
+| `conn` | [ServiceConnection](ServiceConnection.md): The connection interface previously supplied to bindService(). This parameter must not be null. |
 | `group` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): A group to put this connection's process in. Upon calling here, this will override any previous group that was set for that process. The group tells the system about processes that are logically grouped together, so should be managed as one unit of importance (such as when being considered a recently used app). All processes in the same app with the same group are considered to be related. Supplying 0 reverts to the default behavior of not grouping. |
 | `importance` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional importance of the processes within a group. Upon calling here, this will override any previous importance that was set for that process. The most important process is 0, and higher values are successively less important. You can view this as describing how to order the processes in an array, with the processes at the end of the array being the least important. This value has no meaning besides indicating how processes should be ordered in that array one after the other. This provides a way to fine-tune the system's process killing, guiding it to kill processes at the end of the array first. |
 | --- | --- |
@@ -4614,4 +4614,4 @@ Set the base context for this ContextWrapper. All calls will then be delegated t
 
 | Parameters ||
 |---|---|
-| `base` | [Context](../android/content/Context.md)!: The new base context for this wrapper. |
+| `base` | [Context](Context.md)!: The new base context for this wrapper. |

@@ -4,7 +4,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 
 # BaseMovementMethod
 
-Kotlin| [Java](../android/text/method/BaseMovementMethod.md) 
+Kotlin| [Java](BaseMovementMethod.md) 
 | --- | --- |
 
 ```
@@ -13,12 +13,12 @@ open class BaseMovementMethod : MovementMethod
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.text.method.BaseMovementMethod](../android/text/method/BaseMovementMethod.md) |
+| ↳ | [android.text.method.BaseMovementMethod](BaseMovementMethod.md) |
 
-| Known Direct Subclasses [ArrowKeyMovementMethod](../android/text/method/ArrowKeyMovementMethod.md), [ScrollingMovementMethod](../android/text/method/ScrollingMovementMethod.md) |-----------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------| | [ArrowKeyMovementMethod](../android/text/method/ArrowKeyMovementMethod.md) | A movement method that provides cursor movement and selection. | | [ScrollingMovementMethod](../android/text/method/ScrollingMovementMethod.md) | A movement method that interprets movement keys by scrolling the text buffer. | |
+| Known Direct Subclasses [ArrowKeyMovementMethod](ArrowKeyMovementMethod.md), [ScrollingMovementMethod](ScrollingMovementMethod.md) |-----------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------| | [ArrowKeyMovementMethod](ArrowKeyMovementMethod.md) | A movement method that provides cursor movement and selection. | | [ScrollingMovementMethod](ScrollingMovementMethod.md) | A movement method that interprets movement keys by scrolling the text buffer. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [LinkMovementMethod](../android/text/method/LinkMovementMethod.md) |-------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------| | [LinkMovementMethod](../android/text/method/LinkMovementMethod.md) | A movement method that traverses links in the text buffer and scrolls if necessary. | |
+| Known Indirect Subclasses [LinkMovementMethod](LinkMovementMethod.md) |-------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------| | [LinkMovementMethod](LinkMovementMethod.md) | A movement method that traverses links in the text buffer and scrolls if necessary. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 Base classes for movement methods.
@@ -27,45 +27,45 @@ Base classes for movement methods.
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [BaseMovementMethod](../android/text/method/BaseMovementMethod.md))`()` <br /> |
+| [BaseMovementMethod](BaseMovementMethod.md))`()` <br /> |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [canSelectArbitrarily](../android/text/method/BaseMovementMethod.md))`()` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [initialize](../android/text/method/BaseMovementMethod.md))`(`widget:` ` [TextView](../android/widget/TextView.md)!`, `text:` ` [Spannable](../android/text/Spannable.md)!`)` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [nextParagraph](../android/text/method/BaseMovementMethod.md))`(`widget:` ` [TextView](../android/widget/TextView.md)`, `buffer:` ` [Spannable](../android/text/Spannable.md)`)` Performs a next paragraph movement action. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [canSelectArbitrarily](BaseMovementMethod.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [initialize](BaseMovementMethod.md))`(`widget:` ` [TextView](../android.widget/TextView.md)!`, `text:` ` [Spannable](../android.text/Spannable.md)!`)` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [nextParagraph](BaseMovementMethod.md))`(`widget:` ` [TextView](../android.widget/TextView.md)`, `buffer:` ` [Spannable](../android.text/Spannable.md)`)` Performs a next paragraph movement action. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onGenericMotionEvent](../android/text/method/BaseMovementMethod.md))`(`widget:` ` [TextView](../android/widget/TextView.md)!`, `text:` ` [Spannable](../android/text/Spannable.md)!`, `event:` ` [MotionEvent](../android/view/MotionEvent.md)!`)` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onKeyDown](../android/text/method/BaseMovementMethod.md))`(`widget:` ` [TextView](../android/widget/TextView.md)!`, `text:` ` [Spannable](../android/text/Spannable.md)!`, `keyCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `event:` ` [KeyEvent](../android/view/KeyEvent.md)!`)` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onKeyOther](../android/text/method/BaseMovementMethod.md))`(`widget:` ` [TextView](../android/widget/TextView.md)!`, `text:` ` [Spannable](../android/text/Spannable.md)!`, `event:` ` [KeyEvent](../android/view/KeyEvent.md)!`)` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onGenericMotionEvent](BaseMovementMethod.md))`(`widget:` ` [TextView](../android.widget/TextView.md)!`, `text:` ` [Spannable](../android.text/Spannable.md)!`, `event:` ` [MotionEvent](../android.view/MotionEvent.md)!`)` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onKeyDown](BaseMovementMethod.md))`(`widget:` ` [TextView](../android.widget/TextView.md)!`, `text:` ` [Spannable](../android.text/Spannable.md)!`, `keyCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `event:` ` [KeyEvent](../android.view/KeyEvent.md)!`)` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onKeyOther](BaseMovementMethod.md))`(`widget:` ` [TextView](../android.widget/TextView.md)!`, `text:` ` [Spannable](../android.text/Spannable.md)!`, `event:` ` [KeyEvent](../android.view/KeyEvent.md)!`)` <br /> |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onKeyUp](../android/text/method/BaseMovementMethod.md))`(`widget:` ` [TextView](../android/widget/TextView.md)!`, `text:` ` [Spannable](../android/text/Spannable.md)!`, `keyCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `event:` ` [KeyEvent](../android/view/KeyEvent.md)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTakeFocus](../android/text/method/BaseMovementMethod.md))`(`widget:` ` [TextView](../android/widget/TextView.md)!`, `text:` ` [Spannable](../android/text/Spannable.md)!`, `direction:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onTouchEvent](../android/text/method/BaseMovementMethod.md))`(`widget:` ` [TextView](../android/widget/TextView.md)!`, `text:` ` [Spannable](../android/text/Spannable.md)!`, `event:` ` [MotionEvent](../android/view/MotionEvent.md)!`)` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onKeyUp](BaseMovementMethod.md))`(`widget:` ` [TextView](../android.widget/TextView.md)!`, `text:` ` [Spannable](../android.text/Spannable.md)!`, `keyCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `event:` ` [KeyEvent](../android.view/KeyEvent.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTakeFocus](BaseMovementMethod.md))`(`widget:` ` [TextView](../android.widget/TextView.md)!`, `text:` ` [Spannable](../android.text/Spannable.md)!`, `direction:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onTouchEvent](BaseMovementMethod.md))`(`widget:` ` [TextView](../android.widget/TextView.md)!`, `text:` ` [Spannable](../android.text/Spannable.md)!`, `event:` ` [MotionEvent](../android.view/MotionEvent.md)!`)` <br /> |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onTrackballEvent](../android/text/method/BaseMovementMethod.md))`(`widget:` ` [TextView](../android/widget/TextView.md)!`, `text:` ` [Spannable](../android/text/Spannable.md)!`, `event:` ` [MotionEvent](../android/view/MotionEvent.md)!`)` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [previousParagraph](../android/text/method/BaseMovementMethod.md))`(`widget:` ` [TextView](../android/widget/TextView.md)`, `buffer:` ` [Spannable](../android/text/Spannable.md)`)` Performs a previous paragraph movement action. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onTrackballEvent](BaseMovementMethod.md))`(`widget:` ` [TextView](../android.widget/TextView.md)!`, `text:` ` [Spannable](../android.text/Spannable.md)!`, `event:` ` [MotionEvent](../android.view/MotionEvent.md)!`)` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [previousParagraph](BaseMovementMethod.md))`(`widget:` ` [TextView](../android.widget/TextView.md)`, `buffer:` ` [Spannable](../android.text/Spannable.md)`)` Performs a previous paragraph movement action. |
 
 | Protected methods ||
 |----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [bottom](../android/text/method/BaseMovementMethod.md))`(`widget:` ` [TextView](../android/widget/TextView.md)!`, `buffer:` ` [Spannable](../android/text/Spannable.md)!`)` Performs a bottom movement action. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [down](../android/text/method/BaseMovementMethod.md))`(`widget:` ` [TextView](../android/widget/TextView.md)!`, `buffer:` ` [Spannable](../android/text/Spannable.md)!`)` Performs a down movement action. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [end](../android/text/method/BaseMovementMethod.md))`(`widget:` ` [TextView](../android/widget/TextView.md)!`, `buffer:` ` [Spannable](../android/text/Spannable.md)!`)` Performs an end movement action. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [bottom](BaseMovementMethod.md))`(`widget:` ` [TextView](../android.widget/TextView.md)!`, `buffer:` ` [Spannable](../android.text/Spannable.md)!`)` Performs a bottom movement action. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [down](BaseMovementMethod.md))`(`widget:` ` [TextView](../android.widget/TextView.md)!`, `buffer:` ` [Spannable](../android.text/Spannable.md)!`)` Performs a down movement action. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [end](BaseMovementMethod.md))`(`widget:` ` [TextView](../android.widget/TextView.md)!`, `buffer:` ` [Spannable](../android.text/Spannable.md)!`)` Performs an end movement action. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMovementMetaState](../android/text/method/BaseMovementMethod.md))`(`buffer:` ` [Spannable](../android/text/Spannable.md)!`, `event:` ` [KeyEvent](../android/view/KeyEvent.md)!`)` Gets the meta state used for movement using the modifiers tracked by the text buffer as well as those present in the key event. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [handleMovementKey](../android/text/method/BaseMovementMethod.md))`(`widget:` ` [TextView](../android/widget/TextView.md)!`, `buffer:` ` [Spannable](../android/text/Spannable.md)!`, `keyCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `movementMetaState:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `event:` ` [KeyEvent](../android/view/KeyEvent.md)!`)` Performs a movement key action. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [home](../android/text/method/BaseMovementMethod.md))`(`widget:` ` [TextView](../android/widget/TextView.md)!`, `buffer:` ` [Spannable](../android/text/Spannable.md)!`)` Performs a home movement action. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMovementMetaState](BaseMovementMethod.md))`(`buffer:` ` [Spannable](../android.text/Spannable.md)!`, `event:` ` [KeyEvent](../android.view/KeyEvent.md)!`)` Gets the meta state used for movement using the modifiers tracked by the text buffer as well as those present in the key event. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [handleMovementKey](BaseMovementMethod.md))`(`widget:` ` [TextView](../android.widget/TextView.md)!`, `buffer:` ` [Spannable](../android.text/Spannable.md)!`, `keyCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `movementMetaState:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `event:` ` [KeyEvent](../android.view/KeyEvent.md)!`)` Performs a movement key action. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [home](BaseMovementMethod.md))`(`widget:` ` [TextView](../android.widget/TextView.md)!`, `buffer:` ` [Spannable](../android.text/Spannable.md)!`)` Performs a home movement action. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [left](../android/text/method/BaseMovementMethod.md))`(`widget:` ` [TextView](../android/widget/TextView.md)!`, `buffer:` ` [Spannable](../android/text/Spannable.md)!`)` Performs a left movement action. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [lineEnd](../android/text/method/BaseMovementMethod.md))`(`widget:` ` [TextView](../android/widget/TextView.md)!`, `buffer:` ` [Spannable](../android/text/Spannable.md)!`)` Performs a line-end movement action. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [lineStart](../android/text/method/BaseMovementMethod.md))`(`widget:` ` [TextView](../android/widget/TextView.md)!`, `buffer:` ` [Spannable](../android/text/Spannable.md)!`)` Performs a line-start movement action. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [left](BaseMovementMethod.md))`(`widget:` ` [TextView](../android.widget/TextView.md)!`, `buffer:` ` [Spannable](../android.text/Spannable.md)!`)` Performs a left movement action. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [lineEnd](BaseMovementMethod.md))`(`widget:` ` [TextView](../android.widget/TextView.md)!`, `buffer:` ` [Spannable](../android.text/Spannable.md)!`)` Performs a line-end movement action. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [lineStart](BaseMovementMethod.md))`(`widget:` ` [TextView](../android.widget/TextView.md)!`, `buffer:` ` [Spannable](../android.text/Spannable.md)!`)` Performs a line-start movement action. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [pageDown](../android/text/method/BaseMovementMethod.md))`(`widget:` ` [TextView](../android/widget/TextView.md)!`, `buffer:` ` [Spannable](../android/text/Spannable.md)!`)` Performs a page-down movement action. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [pageUp](../android/text/method/BaseMovementMethod.md))`(`widget:` ` [TextView](../android/widget/TextView.md)!`, `buffer:` ` [Spannable](../android/text/Spannable.md)!`)` Performs a page-up movement action. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [right](../android/text/method/BaseMovementMethod.md))`(`widget:` ` [TextView](../android/widget/TextView.md)!`, `buffer:` ` [Spannable](../android/text/Spannable.md)!`)` Performs a right movement action. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [pageDown](BaseMovementMethod.md))`(`widget:` ` [TextView](../android.widget/TextView.md)!`, `buffer:` ` [Spannable](../android.text/Spannable.md)!`)` Performs a page-down movement action. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [pageUp](BaseMovementMethod.md))`(`widget:` ` [TextView](../android.widget/TextView.md)!`, `buffer:` ` [Spannable](../android.text/Spannable.md)!`)` Performs a page-up movement action. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [right](BaseMovementMethod.md))`(`widget:` ` [TextView](../android.widget/TextView.md)!`, `buffer:` ` [Spannable](../android.text/Spannable.md)!`)` Performs a right movement action. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [top](../android/text/method/BaseMovementMethod.md))`(`widget:` ` [TextView](../android/widget/TextView.md)!`, `buffer:` ` [Spannable](../android/text/Spannable.md)!`)` Performs a top movement action. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [up](../android/text/method/BaseMovementMethod.md))`(`widget:` ` [TextView](../android/widget/TextView.md)!`, `buffer:` ` [Spannable](../android/text/Spannable.md)!`)` Performs an up movement action. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [top](BaseMovementMethod.md))`(`widget:` ` [TextView](../android.widget/TextView.md)!`, `buffer:` ` [Spannable](../android.text/Spannable.md)!`)` Performs a top movement action. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [up](BaseMovementMethod.md))`(`widget:` ` [TextView](../android.widget/TextView.md)!`, `buffer:` ` [Spannable](../android.text/Spannable.md)!`)` Performs an up movement action. |
 
 ## Public constructors
 
@@ -111,8 +111,8 @@ Performs a next paragraph movement action.
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------------------------------|
-| `widget` | [TextView](../android/widget/TextView.md):the text view This value cannot be`null`. |
-| `buffer` | [Spannable](../android/text/Spannable.md):the text buffer This value cannot be`null`. |
+| `widget` | [TextView](../android.widget/TextView.md):the text view This value cannot be`null`. |
+| `buffer` | [Spannable](../android.text/Spannable.md):the text buffer This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------------------------------|
@@ -219,8 +219,8 @@ Performs a previous paragraph movement action.
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------------------------------|
-| `widget` | [TextView](../android/widget/TextView.md):the text view This value cannot be`null`. |
-| `buffer` | [Spannable](../android/text/Spannable.md):the text buffer This value cannot be`null`. |
+| `widget` | [TextView](../android.widget/TextView.md):the text view This value cannot be`null`. |
+| `buffer` | [Spannable](../android.text/Spannable.md):the text buffer This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------------------------------|
@@ -243,8 +243,8 @@ Performs a bottom movement action. Moves the cursor or scrolls to the bottom of 
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------|
-| `widget` | [TextView](../android/widget/TextView.md)!:The text view. |
-| `buffer` | [Spannable](../android/text/Spannable.md)!:The text buffer. |
+| `widget` | [TextView](../android.widget/TextView.md)!:The text view. |
+| `buffer` | [Spannable](../android.text/Spannable.md)!:The text buffer. |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------|
@@ -265,8 +265,8 @@ Performs a down movement action. Moves the cursor or scrolls down by one line.
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------|
-| `widget` | [TextView](../android/widget/TextView.md)!:The text view. |
-| `buffer` | [Spannable](../android/text/Spannable.md)!:The text buffer. |
+| `widget` | [TextView](../android.widget/TextView.md)!:The text view. |
+| `buffer` | [Spannable](../android.text/Spannable.md)!:The text buffer. |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------|
@@ -287,8 +287,8 @@ Performs an end movement action. Moves the cursor or scrolls to the start of the
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------|
-| `widget` | [TextView](../android/widget/TextView.md)!:The text view. |
-| `buffer` | [Spannable](../android/text/Spannable.md)!:The text buffer. |
+| `widget` | [TextView](../android.widget/TextView.md)!:The text view. |
+| `buffer` | [Spannable](../android.text/Spannable.md)!:The text buffer. |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------|
@@ -309,8 +309,8 @@ Gets the meta state used for movement using the modifiers tracked by the text bu
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------|
-| `buffer` | [Spannable](../android/text/Spannable.md)!:The text buffer. |
-| `event` | [KeyEvent](../android/view/KeyEvent.md)!:The key event. |
+| `buffer` | [Spannable](../android.text/Spannable.md)!:The text buffer. |
+| `event` | [KeyEvent](../android.view/KeyEvent.md)!:The key event. |
 
 | Return ||
 |----------------------------------------------------------------------------|---------------------------------------------|
@@ -330,13 +330,13 @@ protected open fun handleMovementKey(
 ): Boolean
 ```
 
-Performs a movement key action. The default implementation decodes the key down and invokes movement actions such as [down](../android/text/method/BaseMovementMethod.md))and [up](../android/text/method/BaseMovementMethod.md)). [onKeyDown(android.widget.TextView,android.text.Spannable,int,android.view.KeyEvent)](../android/text/method/BaseMovementMethod.md))calls this method once to handle an [KeyEvent.ACTION_DOWN](../android/view/KeyEvent.md). [onKeyOther(android.widget.TextView,android.text.Spannable,android.view.KeyEvent)](../android/text/method/BaseMovementMethod.md))calls this method repeatedly to handle each repetition of an [KeyEvent.ACTION_MULTIPLE](../android/view/KeyEvent.md).
+Performs a movement key action. The default implementation decodes the key down and invokes movement actions such as [down](BaseMovementMethod.md))and [up](BaseMovementMethod.md)). [onKeyDown(android.widget.TextView,android.text.Spannable,int,android.view.KeyEvent)](BaseMovementMethod.md))calls this method once to handle an [KeyEvent.ACTION_DOWN](../android.view/KeyEvent.md). [onKeyOther(android.widget.TextView,android.text.Spannable,android.view.KeyEvent)](BaseMovementMethod.md))calls this method repeatedly to handle each repetition of an [KeyEvent.ACTION_MULTIPLE](../android.view/KeyEvent.md).
 
 | Parameters ||
 |---------------------|------------------------------------------------------------------------------------------------------------------------|
-| `widget` | [TextView](../android/widget/TextView.md)!:The text view. |
-| `buffer` | [Spannable](../android/text/Spannable.md)!:The text buffer. |
-| `event` | [KeyEvent](../android/view/KeyEvent.md)!:The key event. |
+| `widget` | [TextView](../android.widget/TextView.md)!:The text view. |
+| `buffer` | [Spannable](../android.text/Spannable.md)!:The text buffer. |
+| `event` | [KeyEvent](../android.view/KeyEvent.md)!:The key event. |
 | --- | --- |
 | `keyCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The key code. |
 | `movementMetaState` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The keyboard meta states used for movement. |
@@ -360,8 +360,8 @@ Performs a home movement action. Moves the cursor or scrolls to the start of the
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------|
-| `widget` | [TextView](../android/widget/TextView.md)!:The text view. |
-| `buffer` | [Spannable](../android/text/Spannable.md)!:The text buffer. |
+| `widget` | [TextView](../android.widget/TextView.md)!:The text view. |
+| `buffer` | [Spannable](../android.text/Spannable.md)!:The text buffer. |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------|
@@ -382,8 +382,8 @@ Performs a left movement action. Moves the cursor or scrolls left by one charact
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------|
-| `widget` | [TextView](../android/widget/TextView.md)!:The text view. |
-| `buffer` | [Spannable](../android/text/Spannable.md)!:The text buffer. |
+| `widget` | [TextView](../android.widget/TextView.md)!:The text view. |
+| `buffer` | [Spannable](../android.text/Spannable.md)!:The text buffer. |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------|
@@ -404,8 +404,8 @@ Performs a line-end movement action. Moves the cursor or scrolls to the end of t
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------|
-| `widget` | [TextView](../android/widget/TextView.md)!:The text view. |
-| `buffer` | [Spannable](../android/text/Spannable.md)!:The text buffer. |
+| `widget` | [TextView](../android.widget/TextView.md)!:The text view. |
+| `buffer` | [Spannable](../android.text/Spannable.md)!:The text buffer. |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------|
@@ -426,8 +426,8 @@ Performs a line-start movement action. Moves the cursor or scrolls to the start 
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------|
-| `widget` | [TextView](../android/widget/TextView.md)!:The text view. |
-| `buffer` | [Spannable](../android/text/Spannable.md)!:The text buffer. |
+| `widget` | [TextView](../android.widget/TextView.md)!:The text view. |
+| `buffer` | [Spannable](../android.text/Spannable.md)!:The text buffer. |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------|
@@ -448,8 +448,8 @@ Performs a page-down movement action. Moves the cursor or scrolls down by one pa
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------|
-| `widget` | [TextView](../android/widget/TextView.md)!:The text view. |
-| `buffer` | [Spannable](../android/text/Spannable.md)!:The text buffer. |
+| `widget` | [TextView](../android.widget/TextView.md)!:The text view. |
+| `buffer` | [Spannable](../android.text/Spannable.md)!:The text buffer. |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------|
@@ -470,8 +470,8 @@ Performs a page-up movement action. Moves the cursor or scrolls up by one page.
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------|
-| `widget` | [TextView](../android/widget/TextView.md)!:The text view. |
-| `buffer` | [Spannable](../android/text/Spannable.md)!:The text buffer. |
+| `widget` | [TextView](../android.widget/TextView.md)!:The text view. |
+| `buffer` | [Spannable](../android.text/Spannable.md)!:The text buffer. |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------|
@@ -492,8 +492,8 @@ Performs a right movement action. Moves the cursor or scrolls right by one chara
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------|
-| `widget` | [TextView](../android/widget/TextView.md)!:The text view. |
-| `buffer` | [Spannable](../android/text/Spannable.md)!:The text buffer. |
+| `widget` | [TextView](../android.widget/TextView.md)!:The text view. |
+| `buffer` | [Spannable](../android.text/Spannable.md)!:The text buffer. |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------|
@@ -514,8 +514,8 @@ Performs a top movement action. Moves the cursor or scrolls to the top of the bu
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------|
-| `widget` | [TextView](../android/widget/TextView.md)!:The text view. |
-| `buffer` | [Spannable](../android/text/Spannable.md)!:The text buffer. |
+| `widget` | [TextView](../android.widget/TextView.md)!:The text view. |
+| `buffer` | [Spannable](../android.text/Spannable.md)!:The text buffer. |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------|
@@ -536,8 +536,8 @@ Performs an up movement action. Moves the cursor or scrolls up by one line.
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------|
-| `widget` | [TextView](../android/widget/TextView.md)!:The text view. |
-| `buffer` | [Spannable](../android/text/Spannable.md)!:The text buffer. |
+| `widget` | [TextView](../android.widget/TextView.md)!:The text view. |
+| `buffer` | [Spannable](../android.text/Spannable.md)!:The text buffer. |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------|

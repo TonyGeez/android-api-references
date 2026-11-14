@@ -4,7 +4,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 
 # Font
 
-Kotlin| [Java](../android/graphics/fonts/Font.md) 
+Kotlin| [Java](Font.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class Font
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.graphics.fonts.Font](../android/graphics/fonts/Font.md) |
+| ↳ | [android.graphics.fonts.Font](Font.md) |
 
 A font class can be used for creating FontFamily.
 
@@ -25,21 +25,21 @@ A font class can be used for creating FontFamily.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/graphics/fonts/Font.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [FontVariationAxis](../android/graphics/fonts/FontVariationAxis.md)!\>? | [getAxes](../android/graphics/fonts/Font.md))`()` Get a font variation settings associated with this font |
-| [ByteBuffer](../java/nio/ByteBuffer.md) | [getBuffer](../android/graphics/fonts/Font.md))`()` Returns a font file buffer. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](Font.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [FontVariationAxis](FontVariationAxis.md)!\>? | [getAxes](Font.md))`()` Get a font variation settings associated with this font |
+| [ByteBuffer](../java.nio/ByteBuffer.md) | [getBuffer](Font.md))`()` Returns a font file buffer. |
 | --- | --- |
-| [File](../java/io/File.md)? | [getFile](../android/graphics/fonts/Font.md))`()` Returns a file path of this font. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getGlyphBounds](../android/graphics/fonts/Font.md))`(`glyphId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `paint:` ` [Paint](../android/graphics/Paint.md)`, `outBoundingBox:` ` [RectF](../android/graphics/RectF.md)?`)` Retrieve the glyph horizontal advance and bounding box. |
-| [LocaleList](../android/os/LocaleList.md) | [getLocaleList](../android/graphics/fonts/Font.md))`()` Get a locale list of this font. |
+| [File](../java.io/File.md)? | [getFile](Font.md))`()` Returns a file path of this font. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getGlyphBounds](Font.md))`(`glyphId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `paint:` ` [Paint](../android.graphics/Paint.md)`, `outBoundingBox:` ` [RectF](../android.graphics/RectF.md)?`)` Retrieve the glyph horizontal advance and bounding box. |
+| [LocaleList](../android.os/LocaleList.md) | [getLocaleList](Font.md))`()` Get a locale list of this font. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getMetrics](../android/graphics/fonts/Font.md))`(`paint:` ` [Paint](../android/graphics/Paint.md)`, `outMetrics:` ` [Paint.FontMetrics](../android/graphics/Paint.FontMetrics.md)?`)` Retrieve the font metrics information. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSourceIdentifier](../android/graphics/fonts/Font.md))`()` Returns the unique ID of the source font data. |
-| [FontStyle](../android/graphics/fonts/FontStyle.md) | [getStyle](../android/graphics/fonts/Font.md))`()` Get a style associated with this font. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getMetrics](Font.md))`(`paint:` ` [Paint](../android.graphics/Paint.md)`, `outMetrics:` ` [Paint.FontMetrics](../android/graphics/Paint.FontMetrics.md)?`)` Retrieve the font metrics information. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSourceIdentifier](Font.md))`()` Returns the unique ID of the source font data. |
+| [FontStyle](FontStyle.md) | [getStyle](Font.md))`()` Get a style associated with this font. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTtcIndex](../android/graphics/fonts/Font.md))`()` Get a TTC index value associated with this font. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/graphics/fonts/Font.md))`()` <br /> |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/graphics/fonts/Font.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTtcIndex](Font.md))`()` Get a TTC index value associated with this font. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](Font.md))`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](Font.md))`()` <br /> |
 | --- | --- |
 
 ## Public methods
@@ -85,7 +85,7 @@ Get a font variation settings associated with this font
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [FontVariationAxis](../android/graphics/fonts/FontVariationAxis.md)!>? | font variation settings This value may be`null`. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [FontVariationAxis](FontVariationAxis.md)!>? | font variation settings This value may be`null`. |
 
 **See Also**
 
@@ -100,11 +100,11 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 fun getBuffer(): ByteBuffer
 ```
 
-Returns a font file buffer. Duplicate before reading values by [ByteBuffer.duplicate()](../java/nio/ByteBuffer.md))for avoiding unexpected reading position sharing.
+Returns a font file buffer. Duplicate before reading values by [ByteBuffer.duplicate()](../java.nio/ByteBuffer.md))for avoiding unexpected reading position sharing.
 
 | Return ||
 |----------------------------------------------------------------------------------------|-------------------------------------------|
-| [ByteBuffer](../java/nio/ByteBuffer.md) | a font buffer This value cannot be`null`. |
+| [ByteBuffer](../java.nio/ByteBuffer.md) | a font buffer This value cannot be`null`. |
 
 ### getFile
 
@@ -118,7 +118,7 @@ Returns a file path of this font. This returns null if this font is not created 
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------|
-| [File](../java/io/File.md)? | a file path of the font |
+| [File](../java.io/File.md)? | a file path of the font |
 
 ### getGlyphBounds
 
@@ -132,13 +132,13 @@ fun getGlyphBounds(
 ): Float
 ```
 
-Retrieve the glyph horizontal advance and bounding box. Note that [android.graphics.Typeface](../android/graphics/Typeface.md) in [android.graphics.Paint](../android/graphics/Paint.md) is ignored.
+Retrieve the glyph horizontal advance and bounding box. Note that [android.graphics.Typeface](../android.graphics/Typeface.md) in [android.graphics.Paint](../android.graphics/Paint.md) is ignored.
 
 | Parameters ||
 |------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `glyphId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):a glyph ID Value is 0 or greater |
-| `paint` | [Paint](../android/graphics/Paint.md):a paint object used for resolving glyph style This value cannot be`null`. |
-| `outBoundingBox` | [RectF](../android/graphics/RectF.md)?:a nullable destination object. If null is passed, this function just return the horizontal advance. If non-null is passed, this function fills bounding box information to this object. |
+| `paint` | [Paint](../android.graphics/Paint.md):a paint object used for resolving glyph style This value cannot be`null`. |
+| `outBoundingBox` | [RectF](../android.graphics/RectF.md)?:a nullable destination object. If null is passed, this function just return the horizontal advance. If non-null is passed, this function fills bounding box information to this object. |
 | --- | --- |
 
 | Return ||
@@ -157,7 +157,7 @@ Get a locale list of this font. This is always empty if this font is not a syste
 
 | Return ||
 |------------------------------------------------------------------------------------------|-------------------------------------------|
-| [LocaleList](../android/os/LocaleList.md) | a locale list This value cannot be`null`. |
+| [LocaleList](../android.os/LocaleList.md) | a locale list This value cannot be`null`. |
 
 ### getMetrics
 
@@ -170,17 +170,17 @@ fun getMetrics(
 ): Unit
 ```
 
-Retrieve the font metrics information. Note that [android.graphics.Typeface](../android/graphics/Typeface.md) in [android.graphics.Paint](../android/graphics/Paint.md) is ignored.
+Retrieve the font metrics information. Note that [android.graphics.Typeface](../android.graphics/Typeface.md) in [android.graphics.Paint](../android.graphics/Paint.md) is ignored.
 
 | Parameters ||
 |--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `paint` | [Paint](../android/graphics/Paint.md):a paint object used for retrieving font metrics. This value cannot be`null`. |
+| `paint` | [Paint](../android.graphics/Paint.md):a paint object used for retrieving font metrics. This value cannot be`null`. |
 | `outMetrics` | [Paint.FontMetrics](../android/graphics/Paint.FontMetrics.md)?:a nullable destination object. If null is passed, this function only retrieve recommended interline spacing. If non-null is passed, this function fills to font metrics to it. |
 
 **See Also**
 
-- [android.graphics.Paint#getFontMetrics()](../android/graphics/Paint.md))
-- [android.graphics.Paint#getFontMetricsInt()](../android/graphics/Paint.md)) 
+- [android.graphics.Paint#getFontMetrics()](../android.graphics/Paint.md))
+- [android.graphics.Paint#getFontMetricsInt()](../android.graphics/Paint.md)) 
 
 ### getSourceIdentifier
 
@@ -237,7 +237,7 @@ Get a style associated with this font.
 
 | Return ||
 |----------------------------------------------------------------------------------------------|------------------------------------------|
-| [FontStyle](../android/graphics/fonts/FontStyle.md) | a font style This value cannot be`null`. |
+| [FontStyle](FontStyle.md) | a font style This value cannot be`null`. |
 
 **See Also**
 

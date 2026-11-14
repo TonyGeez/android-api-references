@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # Toast
 
-Kotlin| [Java](../android/widget/Toast.md) 
+Kotlin| [Java](Toast.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class Toast
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.widget.Toast](../android/widget/Toast.md) |
+| ↳ | [android.widget.Toast](Toast.md) |
 
 A toast is a view containing a quick little message for the user. The toast class helps you create and show those. {@more}
 
@@ -39,40 +39,40 @@ Starting with Android 12 (API level 31), apps targeting Android 12 or newer will
 
 | Constants ||
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LENGTH_LONG](../android/widget/Toast.md) Show the view or text notification for a long period of time. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LENGTH_SHORT](../android/widget/Toast.md) Show the view or text notification for a short period of time. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LENGTH_LONG](Toast.md) Show the view or text notification for a long period of time. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LENGTH_SHORT](Toast.md) Show the view or text notification for a short period of time. |
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Toast](../android/widget/Toast.md))`(`context:` ` [Context](../android/content/Context.md)!`)` Construct an empty Toast object. |
+| [Toast](Toast.md))`(`context:` ` [Context](../android.content/Context.md)!`)` Construct an empty Toast object. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addCallback](../android/widget/Toast.md))`(`callback:` ` [Toast.Callback](../android/widget/Toast.Callback.md)`)` Adds a callback to be notified when the toast is shown or hidden. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [cancel](../android/widget/Toast.md))`()` Close the view if it's showing, or don't show it if it isn't showing yet. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDuration](../android/widget/Toast.md))`()` Return the duration. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addCallback](Toast.md))`(`callback:` ` [Toast.Callback](../android/widget/Toast.Callback.md)`)` Adds a callback to be notified when the toast is shown or hidden. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [cancel](Toast.md))`()` Close the view if it's showing, or don't show it if it isn't showing yet. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDuration](Toast.md))`()` Return the duration. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getGravity](../android/widget/Toast.md))`()` Get the location at which the notification should appear on the screen. |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getHorizontalMargin](../android/widget/Toast.md))`()` Return the horizontal margin. |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getVerticalMargin](../android/widget/Toast.md))`()` Return the vertical margin. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getGravity](Toast.md))`()` Get the location at which the notification should appear on the screen. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getHorizontalMargin](Toast.md))`()` Return the horizontal margin. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getVerticalMargin](Toast.md))`()` Return the vertical margin. |
 | --- | --- |
-| open [View](../android/view/View.md)? | [getView](../android/widget/Toast.md))`()` Return the view. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getXOffset](../android/widget/Toast.md))`()` Return the X offset in pixels to apply to the gravity's location. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getYOffset](../android/widget/Toast.md))`()` Return the Y offset in pixels to apply to the gravity's location. |
+| open [View](../android.view/View.md)? | [getView](Toast.md))`()` Return the view. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getXOffset](Toast.md))`()` Return the X offset in pixels to apply to the gravity's location. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getYOffset](Toast.md))`()` Return the Y offset in pixels to apply to the gravity's location. |
 | --- | --- |
-| openstatic [Toast](../android/widget/Toast.md)! | [makeText](../android/widget/Toast.md))`(`context:` ` [Context](../android/content/Context.md)!`, `resId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `duration:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Make a standard toast that just contains text from a resource. |
-| openstatic [Toast](../android/widget/Toast.md)! | [makeText](../android/widget/Toast.md))`(`context:` ` [Context](../android/content/Context.md)!`, `text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `duration:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Make a standard toast that just contains text. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeCallback](../android/widget/Toast.md))`(`callback:` ` [Toast.Callback](../android/widget/Toast.Callback.md)`)` Removes a callback previously added with [addCallback(android.widget.Toast.Callback)](../android/widget/Toast.md)). |
+| openstatic [Toast](Toast.md)! | [makeText](Toast.md))`(`context:` ` [Context](../android.content/Context.md)!`, `resId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `duration:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Make a standard toast that just contains text from a resource. |
+| openstatic [Toast](Toast.md)! | [makeText](Toast.md))`(`context:` ` [Context](../android.content/Context.md)!`, `text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `duration:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Make a standard toast that just contains text. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeCallback](Toast.md))`(`callback:` ` [Toast.Callback](../android/widget/Toast.Callback.md)`)` Removes a callback previously added with [addCallback(android.widget.Toast.Callback)](Toast.md)). |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDuration](../android/widget/Toast.md))`(`duration:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set how long to show the view for. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setGravity](../android/widget/Toast.md))`(`gravity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `xOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `yOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the location at which the notification should appear on the screen. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMargin](../android/widget/Toast.md))`(`horizontalMargin:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `verticalMargin:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Set the margins of the view. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDuration](Toast.md))`(`duration:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set how long to show the view for. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setGravity](Toast.md))`(`gravity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `xOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `yOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the location at which the notification should appear on the screen. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMargin](Toast.md))`(`horizontalMargin:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `verticalMargin:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Set the margins of the view. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setText](../android/widget/Toast.md))`(`resId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Update the text in a Toast that was previously created using one of the makeText() methods. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setText](../android/widget/Toast.md))`(`s:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Update the text in a Toast that was previously created using one of the makeText() methods. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setView](../android/widget/Toast.md))`(`view:` ` [View](../android/view/View.md)!`)` Set the view to show. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setText](Toast.md))`(`resId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Update the text in a Toast that was previously created using one of the makeText() methods. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setText](Toast.md))`(`s:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Update the text in a Toast that was previously created using one of the makeText() methods. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setView](Toast.md))`(`view:` ` [View](../android.view/View.md)!`)` Set the view to show. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [show](../android/widget/Toast.md))`()` Show the view for the specified duration. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [show](Toast.md))`()` Show the view for the specified duration. |
 
 ## Constants
 
@@ -90,7 +90,7 @@ Show the view or text notification for a long period of time. This time could be
 
 **See Also**
 
-- [#setDuration](../android/widget/Toast.md)) 
+- [#setDuration](Toast.md)) 
 
 ### LENGTH_SHORT
 
@@ -106,7 +106,7 @@ Show the view or text notification for a short period of time. This time could b
 
 **See Also**
 
-- [#setDuration](../android/widget/Toast.md))
+- [#setDuration](Toast.md))
 
 ## Public constructors
 
@@ -118,11 +118,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 Toast(context: Context!)
 ```
 
-Construct an empty Toast object. You must call [setView](../android/widget/Toast.md))before you can call [show](../android/widget/Toast.md)).
+Construct an empty Toast object. You must call [setView](Toast.md))before you can call [show](Toast.md)).
 
 | Parameters ||
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](../android/content/Context.md)!:The context to use. Usually your [android.app.Activity](../android/app/Activity.md) object. |
+| `context` | [Context](../android.content/Context.md)!:The context to use. Usually your [android.app.Activity](../android.app/Activity.md) object. |
 
 ## Public methods
 
@@ -142,7 +142,7 @@ Adds a callback to be notified when the toast is shown or hidden. Note that if t
 
 **See Also**
 
-- [#removeCallback(Callback)](../android/widget/Toast.md)) 
+- [#removeCallback(Callback)](Toast.md)) 
 
 ### cancel
 
@@ -166,11 +166,11 @@ Return the duration.
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.widget.Toast#LENGTH_SHORT](../android/widget/Toast.md), or [android.widget.Toast#LENGTH_LONG](../android/widget/Toast.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.widget.Toast#LENGTH_SHORT](Toast.md), or [android.widget.Toast#LENGTH_LONG](Toast.md) |
 
 **See Also**
 
-- [#setDuration](../android/widget/Toast.md)) 
+- [#setDuration](Toast.md)) 
 
 ### getGravity
 
@@ -185,8 +185,8 @@ Get the location at which the notification should appear on the screen.
 **Warning:** Starting from Android [Build.VERSION_CODES.R](../android/os/Build.VERSION_CODES.md), for apps targeting API level [Build.VERSION_CODES.R](../android/os/Build.VERSION_CODES.md) or higher, this method shouldn't be called on text toasts as its return value may not reflect actual value since text toasts are not rendered by the app anymore. 
 **See Also**
 
-- [android.view.Gravity](../android/view/Gravity.md)
-- [#getGravity](../android/widget/Toast.md)) 
+- [android.view.Gravity](../android.view/Gravity.md)
+- [#getGravity](Toast.md)) 
 
 ### getHorizontalMargin
 
@@ -221,16 +221,16 @@ Deprecated in [API level 30](https://developer.android.com/guide/topics/manifest
 open fun getView(): View?
 ```
 
-**Deprecated:** *Custom toast views are deprecated. Apps can create a standard text toast with the [makeText(android.content.Context,java.lang.CharSequence,int)](../android/widget/Toast.md))method, or use a [Snackbar](../com/google/android/material/snackbar/Snackbar.md) when in the foreground. Starting from Android [Build.VERSION_CODES.R](../android/os/Build.VERSION_CODES.md), apps targeting API level [Build.VERSION_CODES.R](../android/os/Build.VERSION_CODES.md) or higher that are in the background will not have custom toast views displayed.*
+**Deprecated:** *Custom toast views are deprecated. Apps can create a standard text toast with the [makeText(android.content.Context,java.lang.CharSequence,int)](Toast.md))method, or use a [Snackbar](../com/google/android/material/snackbar/Snackbar.md) when in the foreground. Starting from Android [Build.VERSION_CODES.R](../android/os/Build.VERSION_CODES.md), apps targeting API level [Build.VERSION_CODES.R](../android/os/Build.VERSION_CODES.md) or higher that are in the background will not have custom toast views displayed.*
 
 Return the view.
 
-Toasts constructed with [Toast(android.content.Context)](../android/widget/Toast.md))that haven't called [setView(android.view.View)](../android/widget/Toast.md))with a non-`null`view will return`null`here.
+Toasts constructed with [Toast(android.content.Context)](Toast.md))that haven't called [setView(android.view.View)](Toast.md))with a non-`null`view will return`null`here.
 
-Starting from Android [Build.VERSION_CODES.R](../android/os/Build.VERSION_CODES.md), in apps targeting API level [android.os.Build.VERSION_CODES#R](../android/os/Build.VERSION_CODES.md) or higher, toasts constructed with [makeText(android.content.Context,java.lang.CharSequence,int)](../android/widget/Toast.md))or its variants will also return`null`here unless they had called [setView(android.view.View)](../android/widget/Toast.md))with a non-`null`view. If you want to be notified when the toast is shown or hidden, use [addCallback(android.widget.Toast.Callback)](../android/widget/Toast.md)). 
+Starting from Android [Build.VERSION_CODES.R](../android/os/Build.VERSION_CODES.md), in apps targeting API level [android.os.Build.VERSION_CODES#R](../android/os/Build.VERSION_CODES.md) or higher, toasts constructed with [makeText(android.content.Context,java.lang.CharSequence,int)](Toast.md))or its variants will also return`null`here unless they had called [setView(android.view.View)](Toast.md))with a non-`null`view. If you want to be notified when the toast is shown or hidden, use [addCallback(android.widget.Toast.Callback)](Toast.md)). 
 **See Also**
 
-- [#setView](../android/widget/Toast.md)) 
+- [#setView](Toast.md)) 
 
 ### getXOffset
 
@@ -272,9 +272,9 @@ Make a standard toast that just contains text from a resource.
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](../android/content/Context.md)!:The context to use. Usually your [android.app.Activity](../android/app/Activity.md) object. |
+| `context` | [Context](../android.content/Context.md)!:The context to use. Usually your [android.app.Activity](../android.app/Activity.md) object. |
 | `resId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The resource id of the string resource to use. Can be formatted text. |
-| `duration` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):How long to display the message. Either [LENGTH_SHORT](../android/widget/Toast.md) or [LENGTH_LONG](../android/widget/Toast.md) Value is [android.widget.Toast#LENGTH_SHORT](../android/widget/Toast.md), or [android.widget.Toast#LENGTH_LONG](../android/widget/Toast.md) |
+| `duration` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):How long to display the message. Either [LENGTH_SHORT](Toast.md) or [LENGTH_LONG](Toast.md) Value is [android.widget.Toast#LENGTH_SHORT](Toast.md), or [android.widget.Toast#LENGTH_LONG](Toast.md) |
 | --- | --- |
 
 | Exceptions ||
@@ -297,9 +297,9 @@ Make a standard toast that just contains text.
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](../android/content/Context.md)!:The context to use. Usually your [android.app.Activity](../android/app/Activity.md) object. |
+| `context` | [Context](../android.content/Context.md)!:The context to use. Usually your [android.app.Activity](../android.app/Activity.md) object. |
 | `text` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!:The text to show. Can be formatted text. |
-| `duration` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):How long to display the message. Either [LENGTH_SHORT](../android/widget/Toast.md) or [LENGTH_LONG](../android/widget/Toast.md) Value is [android.widget.Toast#LENGTH_SHORT](../android/widget/Toast.md), or [android.widget.Toast#LENGTH_LONG](../android/widget/Toast.md) |
+| `duration` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):How long to display the message. Either [LENGTH_SHORT](Toast.md) or [LENGTH_LONG](Toast.md) Value is [android.widget.Toast#LENGTH_SHORT](Toast.md), or [android.widget.Toast#LENGTH_LONG](Toast.md) |
 | --- | --- |
 
 ### removeCallback
@@ -310,7 +310,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 open fun removeCallback(callback: Toast.Callback): Unit
 ```
 
-Removes a callback previously added with [addCallback(android.widget.Toast.Callback)](../android/widget/Toast.md)).
+Removes a callback previously added with [addCallback(android.widget.Toast.Callback)](Toast.md)).
 
 | Parameters ||
 |------------|----------------------------------------------------------------------------------------------------------------------------|
@@ -328,12 +328,12 @@ Set how long to show the view for.
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `duration` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is [android.widget.Toast#LENGTH_SHORT](../android/widget/Toast.md), or [android.widget.Toast#LENGTH_LONG](../android/widget/Toast.md) |
+| `duration` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is [android.widget.Toast#LENGTH_SHORT](Toast.md), or [android.widget.Toast#LENGTH_LONG](Toast.md) |
 
 **See Also**
 
-- [#LENGTH_SHORT](../android/widget/Toast.md)
-- [#LENGTH_LONG](../android/widget/Toast.md) 
+- [#LENGTH_SHORT](Toast.md)
+- [#LENGTH_LONG](Toast.md) 
 
 ### setGravity
 
@@ -352,8 +352,8 @@ Set the location at which the notification should appear on the screen.
 **Warning:** Starting from Android [Build.VERSION_CODES.R](../android/os/Build.VERSION_CODES.md), for apps targeting API level [Build.VERSION_CODES.R](../android/os/Build.VERSION_CODES.md) or higher, this method is a no-op when called on text toasts. 
 **See Also**
 
-- [android.view.Gravity](../android/view/Gravity.md)
-- [#getGravity](../android/widget/Toast.md)) 
+- [android.view.Gravity](../android.view/Gravity.md)
+- [#getGravity](Toast.md)) 
 
 ### setMargin
 
@@ -412,12 +412,12 @@ Deprecated in [API level 30](https://developer.android.com/guide/topics/manifest
 open fun setView(view: View!): Unit
 ```
 
-**Deprecated:** *Custom toast views are deprecated. Apps can create a standard text toast with the [makeText(android.content.Context,java.lang.CharSequence,int)](../android/widget/Toast.md))method, or use a [Snackbar](../com/google/android/material/snackbar/Snackbar.md) when in the foreground. Starting from Android [Build.VERSION_CODES.R](../android/os/Build.VERSION_CODES.md), apps targeting API level [Build.VERSION_CODES.R](../android/os/Build.VERSION_CODES.md) or higher that are in the background will not have custom toast views displayed.*
+**Deprecated:** *Custom toast views are deprecated. Apps can create a standard text toast with the [makeText(android.content.Context,java.lang.CharSequence,int)](Toast.md))method, or use a [Snackbar](../com/google/android/material/snackbar/Snackbar.md) when in the foreground. Starting from Android [Build.VERSION_CODES.R](../android/os/Build.VERSION_CODES.md), apps targeting API level [Build.VERSION_CODES.R](../android/os/Build.VERSION_CODES.md) or higher that are in the background will not have custom toast views displayed.*
 
 Set the view to show. 
 **See Also**
 
-- [#getView](../android/widget/Toast.md)) 
+- [#getView](Toast.md)) 
 
 ### show
 

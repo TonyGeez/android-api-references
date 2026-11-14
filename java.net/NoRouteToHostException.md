@@ -11,11 +11,11 @@ open class NoRouteToHostException : SocketException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
-| | | ↳ | [java.io.IOException](../java/io/IOException.md) |||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) ||||
+| | | ↳ | [java.io.IOException](../java.io/IOException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.net.SocketException](../java/net/SocketException.md) ||
-| | | | | ↳ | [java.net.NoRouteToHostException](../java/net/NoRouteToHostException.md) |
+| | | | ↳ | [java.net.SocketException](SocketException.md) ||
+| | | | | ↳ | [java.net.NoRouteToHostException](NoRouteToHostException.md) |
 
 Signals that an error occurred while attempting to connect a socket to a remote address and port. Typically, the remote host cannot be reached because of an intervening firewall, or if an intermediate router is down.
 
@@ -23,8 +23,8 @@ Signals that an error occurred while attempting to connect a socket to a remote 
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [NoRouteToHostException](../java/net/NoRouteToHostException.md))`()` Construct a new NoRouteToHostException with no detailed message. |
-| [NoRouteToHostException](../java/net/NoRouteToHostException.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a new NoRouteToHostException with the specified detail message as to why the remote host cannot be reached. |
+| [NoRouteToHostException](NoRouteToHostException.md))`()` Construct a new NoRouteToHostException with no detailed message. |
+| [NoRouteToHostException](NoRouteToHostException.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a new NoRouteToHostException with the specified detail message as to why the remote host cannot be reached. |
 
 ## Public constructors
 

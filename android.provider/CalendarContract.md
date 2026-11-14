@@ -4,7 +4,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 
 # CalendarContract
 
-Kotlin| [Java](../android/provider/CalendarContract.md) 
+Kotlin| [Java](CalendarContract.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class CalendarContract
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.provider.CalendarContract](../android/provider/CalendarContract.md) |
+| ↳ | [android.provider.CalendarContract](CalendarContract.md) |
 
 The contract between the calendar provider and applications. Contains definitions for the supported URIs and data columns.
 
@@ -22,7 +22,7 @@ The contract between the calendar provider and applications. Contains definition
 CalendarContract defines the data model of calendar and event related information. This data is stored in a number of tables:
 
 - The [Calendars](../android/provider/CalendarContract.Calendars.md) table holds the calendar specific information. Each row in this table contains the details for a single calendar, such as the name, color, sync info, etc.
-- The [Events](../android/provider/CalendarContract.Events.md) table holds the event specific information. Each row in this table has the info for a single event. It contains information such as event title, location, start time, end time, etc. The event can occur one-time or can recur multiple times. Attendees, reminders, and extended properties are stored on separate tables and reference the [Events._ID](../android/provider/BaseColumns.md) to link them with the event.
+- The [Events](../android/provider/CalendarContract.Events.md) table holds the event specific information. Each row in this table has the info for a single event. It contains information such as event title, location, start time, end time, etc. The event can occur one-time or can recur multiple times. Attendees, reminders, and extended properties are stored on separate tables and reference the [Events._ID](BaseColumns.md) to link them with the event.
 - The [Instances](../android/provider/CalendarContract.Instances.md) table holds the start and end time for occurrences of an event. Each row in this table represents a single occurrence. For one-time events there will be a 1:1 mapping of instances to events. For recurring events, multiple rows will automatically be generated which correspond to multiple occurrences of that event.
 - The [Attendees](../android/provider/CalendarContract.Attendees.md) table holds the event attendee or guest information. Each row represents a single guest of an event. It specifies the type of guest they are and their attendance response for the event.
 - The [Reminders](../android/provider/CalendarContract.Reminders.md) table holds the alert/notification data. Each row represents a single alert for an event. An event can have multiple reminders. The number of reminders per event is specified in [Calendars.MAX_REMINDERS](../android/provider/CalendarContract.CalendarColumns.md) which is set by the Sync Adapter that owns the given calendar. Reminders are specified in minutes before the event and have a type.
@@ -71,28 +71,28 @@ Other tables include:
 
 | Constants ||
 |----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACCOUNT_TYPE_LOCAL](../android/provider/CalendarContract.md) A special account type for calendars not associated with any account. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_EVENT_REMINDER](../android/provider/CalendarContract.md) Broadcast Action: This is the intent that gets fired when an alarm notification needs to be posted for a reminder. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_HANDLE_CUSTOM_EVENT](../android/provider/CalendarContract.md) Activity Action: Display the event to the user in the custom app as specified in [EventsColumns.CUSTOM_APP_PACKAGE](../android/provider/CalendarContract.EventsColumns.md). |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACCOUNT_TYPE_LOCAL](CalendarContract.md) A special account type for calendars not associated with any account. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_EVENT_REMINDER](CalendarContract.md) Broadcast Action: This is the intent that gets fired when an alarm notification needs to be posted for a reminder. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_HANDLE_CUSTOM_EVENT](CalendarContract.md) Activity Action: Display the event to the user in the custom app as specified in [EventsColumns.CUSTOM_APP_PACKAGE](../android/provider/CalendarContract.EventsColumns.md). |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_VIEW_MANAGED_PROFILE_CALENDAR_EVENT](../android/provider/CalendarContract.md) Action used to help apps show calendar events in the managed profile. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [AUTHORITY](../android/provider/CalendarContract.md) This authority is used for writing to or querying from the calendar provider. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CALLER_IS_SYNCADAPTER](../android/provider/CalendarContract.md) An optional insert, update or delete URI parameter that allows the caller to specify that it is a sync adapter. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_VIEW_MANAGED_PROFILE_CALENDAR_EVENT](CalendarContract.md) Action used to help apps show calendar events in the managed profile. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [AUTHORITY](CalendarContract.md) This authority is used for writing to or querying from the calendar provider. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CALLER_IS_SYNCADAPTER](CalendarContract.md) An optional insert, update or delete URI parameter that allows the caller to specify that it is a sync adapter. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_CUSTOM_APP_URI](../android/provider/CalendarContract.md) Intent Extras key: [EventsColumns.CUSTOM_APP_URI](../android/provider/CalendarContract.EventsColumns.md) for the event in the [ACTION_HANDLE_CUSTOM_EVENT](../android/provider/CalendarContract.md) intent |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_EVENT_ALL_DAY](../android/provider/CalendarContract.md) Intent Extras key: When creating an event, set this to true to create an all-day event by default |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_EVENT_BEGIN_TIME](../android/provider/CalendarContract.md) Intent Extras key: The start time of an event or an instance of a recurring event. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_CUSTOM_APP_URI](CalendarContract.md) Intent Extras key: [EventsColumns.CUSTOM_APP_URI](../android/provider/CalendarContract.EventsColumns.md) for the event in the [ACTION_HANDLE_CUSTOM_EVENT](CalendarContract.md) intent |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_EVENT_ALL_DAY](CalendarContract.md) Intent Extras key: When creating an event, set this to true to create an all-day event by default |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_EVENT_BEGIN_TIME](CalendarContract.md) Intent Extras key: The start time of an event or an instance of a recurring event. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_EVENT_END_TIME](../android/provider/CalendarContract.md) Intent Extras key: The end time of an event or an instance of a recurring event. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_EVENT_ID](../android/provider/CalendarContract.md) Intent Extras key: An extra of type`long`holding the id of an event. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_EVENT_END_TIME](CalendarContract.md) Intent Extras key: The end time of an event or an instance of a recurring event. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_EVENT_ID](CalendarContract.md) Intent Extras key: An extra of type`long`holding the id of an event. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [startViewCalendarEventInManagedProfile](../android/provider/CalendarContract.md))`(`context:` ` [Context](../android/content/Context.md)`, `eventId:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `startMs:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `endMs:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `allDay:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Starts an activity to view calendar events in the managed profile. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [startViewCalendarEventInManagedProfile](CalendarContract.md))`(`context:` ` [Context](../android.content/Context.md)`, `eventId:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `startMs:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `endMs:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `allDay:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Starts an activity to view calendar events in the managed profile. |
 
 | Properties ||
 |------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Uri](../android/net/Uri.md)! | [CONTENT_URI](../android/provider/CalendarContract.md) The content:// style URL for the top-level calendar authority |
+| static [Uri](../android.net/Uri.md)! | [CONTENT_URI](CalendarContract.md) The content:// style URL for the top-level calendar authority |
 
 ## Constants
 
@@ -132,7 +132,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 static val ACTION_HANDLE_CUSTOM_EVENT: String
 ```
 
-Activity Action: Display the event to the user in the custom app as specified in [EventsColumns.CUSTOM_APP_PACKAGE](../android/provider/CalendarContract.EventsColumns.md). The custom app will be started via [Activity.startActivityForResult(Intent, int)](../android/app/Activity.md))and it should call [Activity.setResult(int)](../android/app/Activity.md))with [Activity.RESULT_OK](../android/app/Activity.md) or [Activity.RESULT_CANCELED](../android/app/Activity.md) to acknowledge whether the action was handled or not. The custom app should have an intent filter like the following: 
+Activity Action: Display the event to the user in the custom app as specified in [EventsColumns.CUSTOM_APP_PACKAGE](../android/provider/CalendarContract.EventsColumns.md). The custom app will be started via [Activity.startActivityForResult(Intent, int)](../android.app/Activity.md))and it should call [Activity.setResult(int)](../android.app/Activity.md))with [Activity.RESULT_OK](../android.app/Activity.md) or [Activity.RESULT_CANCELED](../android.app/Activity.md) to acknowledge whether the action was handled or not. The custom app should have an intent filter like the following: 
 
 ```kotlin
 <intent-filter>
@@ -144,9 +144,9 @@ Activity Action: Display the event to the user in the custom app as specified in
 
 <br />
 
-Input: [Intent.getData](../android/content/Intent.md))has the event URI. The extra [EXTRA_EVENT_BEGIN_TIME](../android/provider/CalendarContract.md) has the start time of the instance. The extra [EXTRA_CUSTOM_APP_URI](../android/provider/CalendarContract.md) will have the [EventsColumns.CUSTOM_APP_URI](../android/provider/CalendarContract.EventsColumns.md).
+Input: [Intent.getData](../android.content/Intent.md))has the event URI. The extra [EXTRA_EVENT_BEGIN_TIME](CalendarContract.md) has the start time of the instance. The extra [EXTRA_CUSTOM_APP_URI](CalendarContract.md) will have the [EventsColumns.CUSTOM_APP_URI](../android/provider/CalendarContract.EventsColumns.md).
 
-Output: [Activity.RESULT_OK](../android/app/Activity.md) if this was handled; otherwise [Activity.RESULT_CANCELED](../android/app/Activity.md). 
+Output: [Activity.RESULT_OK](../android.app/Activity.md) if this was handled; otherwise [Activity.RESULT_CANCELED](../android.app/Activity.md). 
 
  Value: "android.provider.calendar.action.HANDLE_CUSTOM_EVENT"
 
@@ -182,7 +182,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 static val CALLER_IS_SYNCADAPTER: String
 ```
 
-An optional insert, update or delete URI parameter that allows the caller to specify that it is a sync adapter. The default value is false. If set to true, the modified row is not marked as "dirty" (needs to be synced) and when the provider calls [ContentResolver.notifyChange(android.net.Uri, android.database.ContentObserver, boolean)](../android/content/ContentResolver.md)), the third parameter "syncToNetwork" is set to false. Furthermore, if set to true, the caller must also include [Calendars.ACCOUNT_NAME](../android/provider/CalendarContract.SyncColumns.md) and [Calendars.ACCOUNT_TYPE](../android/provider/CalendarContract.SyncColumns.md) as query parameters. 
+An optional insert, update or delete URI parameter that allows the caller to specify that it is a sync adapter. The default value is false. If set to true, the modified row is not marked as "dirty" (needs to be synced) and when the provider calls [ContentResolver.notifyChange(android.net.Uri, android.database.ContentObserver, boolean)](../android.content/ContentResolver.md)), the third parameter "syncToNetwork" is set to false. Furthermore, if set to true, the caller must also include [Calendars.ACCOUNT_NAME](../android/provider/CalendarContract.SyncColumns.md) and [Calendars.ACCOUNT_TYPE](../android/provider/CalendarContract.SyncColumns.md) as query parameters. 
 
  Value: "caller_is_syncadapter"
 
@@ -198,7 +198,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_CUSTOM_APP_URI: String
 ```
 
-Intent Extras key: [EventsColumns.CUSTOM_APP_URI](../android/provider/CalendarContract.EventsColumns.md) for the event in the [ACTION_HANDLE_CUSTOM_EVENT](../android/provider/CalendarContract.md) intent 
+Intent Extras key: [EventsColumns.CUSTOM_APP_URI](../android/provider/CalendarContract.EventsColumns.md) for the event in the [ACTION_HANDLE_CUSTOM_EVENT](CalendarContract.md) intent 
 
  Value: "customAppUri"
 
@@ -267,17 +267,17 @@ static fun startViewCalendarEventInManagedProfile(
 ): Boolean
 ```
 
-Starts an activity to view calendar events in the managed profile. When this API is called, the system will attempt to start an activity in the managed profile with an intent targeting the same caller package. The intent will have its action set to [CalendarContract.ACTION_VIEW_MANAGED_PROFILE_CALENDAR_EVENT](../android/provider/CalendarContract.md) and contain extras corresponding to the API's arguments. A calendar app intending to support cross-profile events viewing should handle this intent, parse the arguments and show the appropriate UI.
+Starts an activity to view calendar events in the managed profile. When this API is called, the system will attempt to start an activity in the managed profile with an intent targeting the same caller package. The intent will have its action set to [CalendarContract.ACTION_VIEW_MANAGED_PROFILE_CALENDAR_EVENT](CalendarContract.md) and contain extras corresponding to the API's arguments. A calendar app intending to support cross-profile events viewing should handle this intent, parse the arguments and show the appropriate UI.
 
 | Parameters ||
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](../android/content/Context.md):the context. This value cannot be`null`. |
-| `eventId` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the id of the event to be viewed. Will be put into [EXTRA_EVENT_ID](../android/provider/CalendarContract.md) field of the intent. |
-| `startMs` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the start time of the event in milliseconds since epoch. Will be put into [EXTRA_EVENT_BEGIN_TIME](../android/provider/CalendarContract.md) field of the intent. |
+| `context` | [Context](../android.content/Context.md):the context. This value cannot be`null`. |
+| `eventId` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the id of the event to be viewed. Will be put into [EXTRA_EVENT_ID](CalendarContract.md) field of the intent. |
+| `startMs` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the start time of the event in milliseconds since epoch. Will be put into [EXTRA_EVENT_BEGIN_TIME](CalendarContract.md) field of the intent. |
 | --- | --- |
-| `endMs` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the end time of the event in milliseconds since epoch. Will be put into [EXTRA_EVENT_END_TIME](../android/provider/CalendarContract.md) field of the intent. |
-| `allDay` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):if the event is an all-day event. Will be put into [EXTRA_EVENT_ALL_DAY](../android/provider/CalendarContract.md) field of the intent. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):flags to be set on the intent via [Intent.setFlags](../android/content/Intent.md)) |
+| `endMs` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the end time of the event in milliseconds since epoch. Will be put into [EXTRA_EVENT_END_TIME](CalendarContract.md) field of the intent. |
+| `allDay` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):if the event is an all-day event. Will be put into [EXTRA_EVENT_ALL_DAY](CalendarContract.md) field of the intent. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):flags to be set on the intent via [Intent.setFlags](../android.content/Intent.md)) |
 | --- | --- |
 
 | Return ||
@@ -286,10 +286,10 @@ Starts an activity to view calendar events in the managed profile. When this API
 
 **See Also**
 
-- [#EXTRA_EVENT_ID](../android/provider/CalendarContract.md)
-- [#EXTRA_EVENT_BEGIN_TIME](../android/provider/CalendarContract.md)
-- [#EXTRA_EVENT_END_TIME](../android/provider/CalendarContract.md)
-- [#EXTRA_EVENT_ALL_DAY](../android/provider/CalendarContract.md)
+- [#EXTRA_EVENT_ID](CalendarContract.md)
+- [#EXTRA_EVENT_BEGIN_TIME](CalendarContract.md)
+- [#EXTRA_EVENT_END_TIME](CalendarContract.md)
+- [#EXTRA_EVENT_ALL_DAY](CalendarContract.md)
 
 ## Properties
 

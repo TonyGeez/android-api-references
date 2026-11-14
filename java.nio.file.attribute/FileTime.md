@@ -8,7 +8,7 @@ class FileTime : Comparable<FileTime!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.nio.file.attribute.FileTime](../java/nio/file/attribute/FileTime.md) |
+| ↳ | [java.nio.file.attribute.FileTime](FileTime.md) |
 
 Represents the value of a file's time stamp attribute. For example, it may represent the time that the file was last `https://developer.android.com/reference/kotlin/java/nio/file/attribute/BasicFileAttributes#lastModifiedTime()`, `https://developer.android.com/reference/kotlin/java/nio/file/attribute/BasicFileAttributes#lastAccessTime()`, or `https://developer.android.com/reference/kotlin/java/nio/file/attribute/BasicFileAttributes#creationTime()`.
 
@@ -20,14 +20,14 @@ Instances of this class are immutable.
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/nio/file/attribute/FileTime#compareTo(java.nio.file.attribute.FileTime)(other: https://developer.android.com/reference/kotlin/java/nio/file/attribute/FileTime#!)` Compares the value of two `FileTime` objects for order. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/nio/file/attribute/FileTime#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Tests this `FileTime` for equality with the given object. |
-| static [FileTime](../java/nio/file/attribute/FileTime.md)! | `https://developer.android.com/reference/kotlin/java/nio/file/attribute/FileTime#from(java.time.Instant)(instant: https://developer.android.com/reference/kotlin/java/time/Instant.html#!)` Returns a `FileTime` representing the same point of time value on the time-line as the provided `Instant` object. |
+| static [FileTime](FileTime.md)! | `https://developer.android.com/reference/kotlin/java/nio/file/attribute/FileTime#from(java.time.Instant)(instant: https://developer.android.com/reference/kotlin/java/time/Instant.html#!)` Returns a `FileTime` representing the same point of time value on the time-line as the provided `Instant` object. |
 | --- | --- |
-| static [FileTime](../java/nio/file/attribute/FileTime.md)! | `https://developer.android.com/reference/kotlin/java/nio/file/attribute/FileTime#from(kotlin.Long,%20java.util.concurrent.TimeUnit)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, unit: https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit.html#!)` Returns a `FileTime` representing a value at the given unit of granularity. |
-| static [FileTime](../java/nio/file/attribute/FileTime.md)! | `https://developer.android.com/reference/kotlin/java/nio/file/attribute/FileTime#fromMillis(kotlin.Long)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a `FileTime` representing the given value in milliseconds. |
+| static [FileTime](FileTime.md)! | `https://developer.android.com/reference/kotlin/java/nio/file/attribute/FileTime#from(kotlin.Long,%20java.util.concurrent.TimeUnit)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, unit: https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit.html#!)` Returns a `FileTime` representing a value at the given unit of granularity. |
+| static [FileTime](FileTime.md)! | `https://developer.android.com/reference/kotlin/java/nio/file/attribute/FileTime#fromMillis(kotlin.Long)(value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a `FileTime` representing the given value in milliseconds. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/nio/file/attribute/FileTime#hashCode()()` Computes a hash code for this file time. |
 | --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/nio/file/attribute/FileTime#to(java.util.concurrent.TimeUnit)(unit: https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit.html#!)` Returns the value at the given unit of granularity. |
-| [Instant](../java/time/Instant.md)! | `https://developer.android.com/reference/kotlin/java/nio/file/attribute/FileTime#toInstant()()` Converts this `FileTime` object to an `Instant`. |
+| [Instant](../java.time/Instant.md)! | `https://developer.android.com/reference/kotlin/java/nio/file/attribute/FileTime#toInstant()()` Converts this `FileTime` object to an `Instant`. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/nio/file/attribute/FileTime#toMillis()()` Returns the value in milliseconds. |
 | --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/nio/file/attribute/FileTime#toString()()` Returns the string representation of this `FileTime`. |
@@ -47,7 +47,7 @@ Compares the value of two `FileTime` objects for order.
 | Parameters ||
 |---|---|
 | `o` | the object to be compared. |
-| `other` | [FileTime](../java/nio/file/attribute/FileTime.md)!: the other `FileTime` to be compared |
+| `other` | [FileTime](FileTime.md)!: the other `FileTime` to be compared |
 
 | Return ||
 |---|---|
@@ -90,7 +90,7 @@ Returns a `FileTime` representing the same point of time value on the time-line 
 
 | Parameters ||
 |---|---|
-| `instant` | [Instant](../java/time/Instant.md)!: the instant to convert |
+| `instant` | [Instant](../java.time/Instant.md)!: the instant to convert |
 
 | Return ||
 |---|---|
@@ -112,7 +112,7 @@ Returns a `FileTime` representing a value at the given unit of granularity.
 | Parameters ||
 |---|---|
 | `value` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the value since the epoch (1970-01-01T00:00:00Z); can be negative |
-| `unit` | [TimeUnit](../java/util/concurrent/TimeUnit.md)!: the unit of granularity to interpret the value |
+| `unit` | [TimeUnit](../java.util.concurrent/TimeUnit.md)!: the unit of granularity to interpret the value |
 
 | Return ||
 |---|---|
@@ -166,7 +166,7 @@ Conversion from a coarser granularity that would numerically overflow saturate t
 
 | Parameters ||
 |---|---|
-| `unit` | [TimeUnit](../java/util/concurrent/TimeUnit.md)!: the unit of granularity for the return value |
+| `unit` | [TimeUnit](../java.util.concurrent/TimeUnit.md)!: the unit of granularity for the return value |
 
 | Return ||
 |---|---|

@@ -2,7 +2,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # StateListDrawable
 
-Kotlin | [Java](../android/graphics/drawable/StateListDrawable.md)
+Kotlin | [Java](StateListDrawable.md)
 | --- | --- |
 
 ```
@@ -11,12 +11,12 @@ open class StateListDrawable : DrawableContainer
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.graphics.drawable.Drawable](../android/graphics/drawable/Drawable.md) |||
-| | ↳ | [android.graphics.drawable.DrawableContainer](../android/graphics/drawable/DrawableContainer.md) ||
-| | | ↳ | [android.graphics.drawable.StateListDrawable](../android/graphics/drawable/StateListDrawable.md) |
+| ↳ | [android.graphics.drawable.Drawable](Drawable.md) |||
+| | ↳ | [android.graphics.drawable.DrawableContainer](DrawableContainer.md) ||
+| | | ↳ | [android.graphics.drawable.StateListDrawable](StateListDrawable.md) |
 | --- | --- | --- | --- |
 
-| Known Direct Subclasses [AnimatedStateListDrawable](../android/graphics/drawable/AnimatedStateListDrawable.md) |---|---| | [AnimatedStateListDrawable](../android/graphics/drawable/AnimatedStateListDrawable.md) | Drawable containing a set of Drawable keyframes where the currently displayed keyframe is chosen based on the current state set. | |
+| Known Direct Subclasses [AnimatedStateListDrawable](AnimatedStateListDrawable.md) |---|---| | [AnimatedStateListDrawable](AnimatedStateListDrawable.md) | Drawable containing a set of Drawable keyframes where the currently displayed keyframe is chosen based on the current state set. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 Lets you assign a number of graphic images to a single Drawable and swap out the visible item by a string ID value.
@@ -29,27 +29,27 @@ It can be defined in an XML file with the `<selector>` element. Each state Drawa
 
 | XML attributes ||
 |---|---|
-| [`android:constantSize`](../android/graphics/drawable/StateListDrawable.md) | If true, the drawable's reported internal size will remain constant as the state changes; the size is the maximum of all of the states. |
-| [`android:state_activated`](../android/graphics/drawable/StateListDrawable.md) | State value for StateListDrawable , set when a view or its parent has been "activated" meaning the user has currently marked it as being of interest. |
-| [`android:state_active`](../android/graphics/drawable/StateListDrawable.md) | State value for StateListDrawable , set when a view or drawable is considered "active" by its host. |
+| [`android:constantSize`](StateListDrawable.md) | If true, the drawable's reported internal size will remain constant as the state changes; the size is the maximum of all of the states. |
+| [`android:state_activated`](StateListDrawable.md) | State value for StateListDrawable , set when a view or its parent has been "activated" meaning the user has currently marked it as being of interest. |
+| [`android:state_active`](StateListDrawable.md) | State value for StateListDrawable , set when a view or drawable is considered "active" by its host. |
 | --- | --- |
-| [`android:state_checkable`](../android/graphics/drawable/StateListDrawable.md) | State identifier indicating that the object may display a check mark. |
-| [`android:state_checked`](../android/graphics/drawable/StateListDrawable.md) | State identifier indicating that the object is currently checked. |
-| [`android:state_enabled`](../android/graphics/drawable/StateListDrawable.md) | State value for StateListDrawable , set when a view is enabled. |
+| [`android:state_checkable`](StateListDrawable.md) | State identifier indicating that the object may display a check mark. |
+| [`android:state_checked`](StateListDrawable.md) | State identifier indicating that the object is currently checked. |
+| [`android:state_enabled`](StateListDrawable.md) | State value for StateListDrawable , set when a view is enabled. |
 | --- | --- |
-| [`android:state_first`](../android/graphics/drawable/StateListDrawable.md) | State value for StateListDrawable , set when a view or drawable is in the first position in an ordered set. |
-| [`android:state_focused`](../android/graphics/drawable/StateListDrawable.md) | State value for StateListDrawable , set when a view has input focus. |
-| [`android:state_last`](../android/graphics/drawable/StateListDrawable.md) | State value for StateListDrawable , set when a view or drawable is in the last position in an ordered set. |
+| [`android:state_first`](StateListDrawable.md) | State value for StateListDrawable , set when a view or drawable is in the first position in an ordered set. |
+| [`android:state_focused`](StateListDrawable.md) | State value for StateListDrawable , set when a view has input focus. |
+| [`android:state_last`](StateListDrawable.md) | State value for StateListDrawable , set when a view or drawable is in the last position in an ordered set. |
 | --- | --- |
-| [`android:state_middle`](../android/graphics/drawable/StateListDrawable.md) | State value for StateListDrawable , set when a view or drawable is in the middle position in an ordered set. |
-| [`android:state_pressed`](../android/graphics/drawable/StateListDrawable.md) | State value for StateListDrawable , set when the user is pressing down in a view. |
-| [`android:state_selected`](../android/graphics/drawable/StateListDrawable.md) | State value for StateListDrawable , set when a view (or one of its parents) is currently selected. |
+| [`android:state_middle`](StateListDrawable.md) | State value for StateListDrawable , set when a view or drawable is in the middle position in an ordered set. |
+| [`android:state_pressed`](StateListDrawable.md) | State value for StateListDrawable , set when the user is pressing down in a view. |
+| [`android:state_selected`](StateListDrawable.md) | State value for StateListDrawable , set when a view (or one of its parents) is currently selected. |
 | --- | --- |
-| [`android:state_single`](../android/graphics/drawable/StateListDrawable.md) | State value for StateListDrawable , set when a view or drawable is considered "single" by its host. |
-| [`android:state_window_focused`](../android/graphics/drawable/StateListDrawable.md) | State value for StateListDrawable , set when a view's window has input focus. |
-| [`android:variablePadding`](../android/graphics/drawable/StateListDrawable.md) | If true, allows the drawable's padding to change based on the current state that is selected. |
+| [`android:state_single`](StateListDrawable.md) | State value for StateListDrawable , set when a view or drawable is considered "single" by its host. |
+| [`android:state_window_focused`](StateListDrawable.md) | State value for StateListDrawable , set when a view's window has input focus. |
+| [`android:variablePadding`](StateListDrawable.md) | If true, allows the drawable's padding to change based on the current state that is selected. |
 | --- | --- |
-| [`android:visible`](../android/graphics/drawable/StateListDrawable.md) | Indicates whether the drawable should be initially visible. |
+| [`android:visible`](StateListDrawable.md) | Indicates whether the drawable should be initially visible. |
 
 | Public constructors ||
 |---|---|
@@ -62,14 +62,14 @@ It can be defined in an XML file with the `<selector>` element. Each state Drawa
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/StateListDrawable#findStateDrawableIndex(kotlin.IntArray)(stateSet: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)` Gets the index of the drawable with the provided state set. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/StateListDrawable#getStateCount()()` Gets the number of states contained in this drawable. |
-| open [Drawable](../android/graphics/drawable/Drawable.md)? | `https://developer.android.com/reference/kotlin/android/graphics/drawable/StateListDrawable#getStateDrawable(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the drawable at an index. |
+| open [Drawable](Drawable.md)? | `https://developer.android.com/reference/kotlin/android/graphics/drawable/StateListDrawable#getStateDrawable(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the drawable at an index. |
 | open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/StateListDrawable#getStateSet(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the state set at an index. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/StateListDrawable#hasFocusStateSpecified()()` Indicates whether this drawable has at least one state spec explicitly specifying `https://developer.android.com/reference/kotlin/android/R.attr.html#state_focused:kotlin.Int`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/StateListDrawable#inflate(android.content.res.Resources,%20org.xmlpull.v1.XmlPullParser,%20android.util.AttributeSet,%20android.content.res.Resources.Theme)(r: https://developer.android.com/reference/kotlin/android/content/res/Resources.html#, parser: https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser.html#, attrs: https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#, theme: https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#?)` Inflate this Drawable from an XML resource optionally styled by a theme. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/StateListDrawable#isStateful()()` Indicates whether this drawable will change its appearance based on state. |
 | --- | --- |
-| open [Drawable](../android/graphics/drawable/Drawable.md) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/StateListDrawable#mutate()()` Make this drawable mutable. |
+| open [Drawable](Drawable.md) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/StateListDrawable#mutate()()` Make this drawable mutable. |
 
 | Protected methods ||
 |---|---|
@@ -255,7 +255,7 @@ Add a new image/string ID to the set of images.
 | Parameters ||
 |---|---|
 | `stateSet` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!: An array of resource Ids to associate with the image. Switch to this image by calling setState(). |
-| `drawable` | [Drawable](../android/graphics/drawable/Drawable.md)!: The image to show. Note this must be a unique Drawable that is not shared between any other View or Drawable otherwise the results are undefined and can lead to unexpected rendering behavior |
+| `drawable` | [Drawable](Drawable.md)!: The image to show. Note this must be a unique Drawable that is not shared between any other View or Drawable otherwise the results are undefined and can lead to unexpected rendering behavior |
 
 ### applyTheme
 
@@ -392,9 +392,9 @@ Inflate this Drawable from an XML resource optionally styled by a theme. This ca
 
 | Parameters ||
 |---|---|
-| `r` | [Resources](../android/content/res/Resources.md): Resources used to resolve attribute values. This value cannot be `null`. |
-| `parser` | [XmlPullParser](../org/xmlpull/v1/XmlPullParser.md): XML parser from which to inflate this Drawable. This value cannot be `null`. |
-| `attrs` | [AttributeSet](../android/util/AttributeSet.md): Base set of attribute values. This value cannot be `null`. |
+| `r` | [Resources](../android.content.res/Resources.md): Resources used to resolve attribute values. This value cannot be `null`. |
+| `parser` | [XmlPullParser](../org.xmlpull.v1/XmlPullParser.md): XML parser from which to inflate this Drawable. This value cannot be `null`. |
+| `attrs` | [AttributeSet](../android.util/AttributeSet.md): Base set of attribute values. This value cannot be `null`. |
 | --- | --- |
 | `theme` | [Resources.Theme](../android/content/res/Resources.Theme.md)?: Theme to apply, may be null |
 

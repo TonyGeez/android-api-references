@@ -10,21 +10,21 @@ abstract class LongBuffer : Buffer, Comparable<LongBuffer!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.nio.Buffer](../java/nio/Buffer.md) ||
-| | ↳ | [java.nio.LongBuffer](../java/nio/LongBuffer.md) |
+| ↳ | [java.nio.Buffer](Buffer.md) ||
+| | ↳ | [java.nio.LongBuffer](LongBuffer.md) |
 
 A long buffer.
 
 This class defines four categories of operations upon long buffers:
 
-- Absolute and relative [*get*](../java/nio/LongBuffer.md))and [*put*](../java/nio/LongBuffer.md))methods that read and write single longs;
-- Absolute and relative [*bulk get*](../java/nio/LongBuffer.md))methods that transfer contiguous sequences of longs from this buffer into an array; and
-- Absolute and relative [*bulk put*](../java/nio/LongBuffer.md))methods that transfer contiguous sequences of longs from a long array or some other long buffer into this buffer; and
-- A method for [compacting](../java/nio/LongBuffer.md))a long buffer.
+- Absolute and relative [*get*](LongBuffer.md))and [*put*](LongBuffer.md))methods that read and write single longs;
+- Absolute and relative [*bulk get*](LongBuffer.md))methods that transfer contiguous sequences of longs from this buffer into an array; and
+- Absolute and relative [*bulk put*](LongBuffer.md))methods that transfer contiguous sequences of longs from a long array or some other long buffer into this buffer; and
+- A method for [compacting](LongBuffer.md))a long buffer.
 
-Long buffers can be created either by [*allocation*](../java/nio/LongBuffer.md)), which allocates space for the buffer's content, by [*wrapping*](../java/nio/LongBuffer.md))an existing long array into a buffer, or by creating a [*view*](../java/nio/ByteBuffer.md) of an existing byte buffer.
+Long buffers can be created either by [*allocation*](LongBuffer.md)), which allocates space for the buffer's content, by [*wrapping*](LongBuffer.md))an existing long array into a buffer, or by creating a [*view*](ByteBuffer.md) of an existing byte buffer.
 
-Like a byte buffer, a long buffer is either [*direct* or*non-direct*](../java/nio/ByteBuffer.md). A long buffer created via the`wrap`methods of this class will be non-direct. A long buffer created as a view of a byte buffer will be direct if, and only if, the byte buffer itself is direct. Whether or not a long buffer is direct may be determined by invoking the [isDirect](../java/nio/LongBuffer.md))method.
+Like a byte buffer, a long buffer is either [*direct* or*non-direct*](ByteBuffer.md). A long buffer created via the`wrap`methods of this class will be non-direct. A long buffer created as a view of a byte buffer will be direct if, and only if, the byte buffer itself is direct. Whether or not a long buffer is direct may be determined by invoking the [isDirect](LongBuffer.md))method.
 
 Methods in this class that do not otherwise have a value to return are specified to return the buffer upon which they are invoked. This allows method invocations to be chained.
 
@@ -32,62 +32,62 @@ Methods in this class that do not otherwise have a value to return are specified
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [LongBuffer](../java/nio/LongBuffer.md)! | [allocate](../java/nio/LongBuffer.md))`(`capacity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Allocates a new long buffer. |
-| [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)! | [array](../java/nio/LongBuffer.md))`()` Returns the long array that backs this buffer*(optional operation)*. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [arrayOffset](../java/nio/LongBuffer.md))`()` Returns the offset within this buffer's backing array of the first element of the buffer*(optional operation)*. |
+| openstatic [LongBuffer](LongBuffer.md)! | [allocate](LongBuffer.md))`(`capacity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Allocates a new long buffer. |
+| [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)! | [array](LongBuffer.md))`()` Returns the long array that backs this buffer*(optional operation)*. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [arrayOffset](LongBuffer.md))`()` Returns the offset within this buffer's backing array of the first element of the buffer*(optional operation)*. |
 | --- | --- |
-| abstract [LongBuffer](../java/nio/LongBuffer.md)! | [asReadOnlyBuffer](../java/nio/LongBuffer.md))`()` Creates a new, read-only long buffer that shares this buffer's content. |
-| open [Buffer](../java/nio/Buffer.md)! | [clear](../java/nio/LongBuffer.md))`()` Clears this buffer. |
-| abstract [LongBuffer](../java/nio/LongBuffer.md)! | [compact](../java/nio/LongBuffer.md))`()` Compacts this buffer*(optional operation)*. |
+| abstract [LongBuffer](LongBuffer.md)! | [asReadOnlyBuffer](LongBuffer.md))`()` Creates a new, read-only long buffer that shares this buffer's content. |
+| open [Buffer](Buffer.md)! | [clear](LongBuffer.md))`()` Clears this buffer. |
+| abstract [LongBuffer](LongBuffer.md)! | [compact](LongBuffer.md))`()` Compacts this buffer*(optional operation)*. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](../java/nio/LongBuffer.md))`(`other:` ` [LongBuffer](../java/nio/LongBuffer.md)!`)` Compares this buffer to another. |
-| abstract [LongBuffer](../java/nio/LongBuffer.md)! | [duplicate](../java/nio/LongBuffer.md))`()` Creates a new long buffer that shares this buffer's content. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/nio/LongBuffer.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Tells whether or not this buffer is equal to another object. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](LongBuffer.md))`(`other:` ` [LongBuffer](LongBuffer.md)!`)` Compares this buffer to another. |
+| abstract [LongBuffer](LongBuffer.md)! | [duplicate](LongBuffer.md))`()` Creates a new long buffer that shares this buffer's content. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](LongBuffer.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Tells whether or not this buffer is equal to another object. |
 | --- | --- |
-| open [Buffer](../java/nio/Buffer.md)! | [flip](../java/nio/LongBuffer.md))`()` Flips this buffer. |
-| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [get](../java/nio/LongBuffer.md))`()` Relative*get*method. |
-| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [get](../java/nio/LongBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Absolute*get*method. |
+| open [Buffer](Buffer.md)! | [flip](LongBuffer.md))`()` Flips this buffer. |
+| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [get](LongBuffer.md))`()` Relative*get*method. |
+| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [get](LongBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Absolute*get*method. |
 | --- | --- |
-| open [LongBuffer](../java/nio/LongBuffer.md)! | [get](../java/nio/LongBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dst:` ` [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)!`)` Absolute bulk*get*method. |
-| open [LongBuffer](../java/nio/LongBuffer.md)! | [get](../java/nio/LongBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dst:` ` [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Absolute bulk*get*method. |
-| open [LongBuffer](../java/nio/LongBuffer.md)! | [get](../java/nio/LongBuffer.md))`(`dst:` ` [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)!`)` Relative bulk*get*method. |
+| open [LongBuffer](LongBuffer.md)! | [get](LongBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dst:` ` [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)!`)` Absolute bulk*get*method. |
+| open [LongBuffer](LongBuffer.md)! | [get](LongBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dst:` ` [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Absolute bulk*get*method. |
+| open [LongBuffer](LongBuffer.md)! | [get](LongBuffer.md))`(`dst:` ` [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)!`)` Relative bulk*get*method. |
 | --- | --- |
-| open [LongBuffer](../java/nio/LongBuffer.md)! | [get](../java/nio/LongBuffer.md))`(`dst:` ` [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Relative bulk*get*method. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasArray](../java/nio/LongBuffer.md))`()` Tells whether or not this buffer is backed by an accessible long array. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/nio/LongBuffer.md))`()` Returns the current hash code of this buffer. |
+| open [LongBuffer](LongBuffer.md)! | [get](LongBuffer.md))`(`dst:` ` [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Relative bulk*get*method. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasArray](LongBuffer.md))`()` Tells whether or not this buffer is backed by an accessible long array. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](LongBuffer.md))`()` Returns the current hash code of this buffer. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDirect](../java/nio/LongBuffer.md))`()` Tells whether or not this long buffer is direct. |
-| open [Buffer](../java/nio/Buffer.md)! | [limit](../java/nio/LongBuffer.md))`(`newLimit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets this buffer's limit. |
-| open [Buffer](../java/nio/Buffer.md)! | [mark](../java/nio/LongBuffer.md))`()` Sets this buffer's mark at its position. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDirect](LongBuffer.md))`()` Tells whether or not this long buffer is direct. |
+| open [Buffer](Buffer.md)! | [limit](LongBuffer.md))`(`newLimit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets this buffer's limit. |
+| open [Buffer](Buffer.md)! | [mark](LongBuffer.md))`()` Sets this buffer's mark at its position. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [mismatch](../java/nio/LongBuffer.md))`(`that:` ` [LongBuffer](../java/nio/LongBuffer.md)!`)` Finds and returns the relative index of the first mismatch between this buffer and a given buffer. |
-| abstract [ByteOrder](../java/nio/ByteOrder.md)! | [order](../java/nio/LongBuffer.md))`()` Retrieves this buffer's byte order. |
-| open [Buffer](../java/nio/Buffer.md)! | [position](../java/nio/LongBuffer.md))`(`newPosition:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets this buffer's position. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [mismatch](LongBuffer.md))`(`that:` ` [LongBuffer](LongBuffer.md)!`)` Finds and returns the relative index of the first mismatch between this buffer and a given buffer. |
+| abstract [ByteOrder](ByteOrder.md)! | [order](LongBuffer.md))`()` Retrieves this buffer's byte order. |
+| open [Buffer](Buffer.md)! | [position](LongBuffer.md))`(`newPosition:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets this buffer's position. |
 | --- | --- |
-| open [LongBuffer](../java/nio/LongBuffer.md)! | [put](../java/nio/LongBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `src:` ` [LongBuffer](../java/nio/LongBuffer.md)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Absolute bulk*put* method*(optional operation)*. |
-| abstract [LongBuffer](../java/nio/LongBuffer.md)! | [put](../java/nio/LongBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `l:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Absolute*put* method*(optional operation)*. |
-| open [LongBuffer](../java/nio/LongBuffer.md)! | [put](../java/nio/LongBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `src:` ` [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)!`)` Absolute bulk*put* method*(optional operation)*. |
+| open [LongBuffer](LongBuffer.md)! | [put](LongBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `src:` ` [LongBuffer](LongBuffer.md)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Absolute bulk*put* method*(optional operation)*. |
+| abstract [LongBuffer](LongBuffer.md)! | [put](LongBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `l:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Absolute*put* method*(optional operation)*. |
+| open [LongBuffer](LongBuffer.md)! | [put](LongBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `src:` ` [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)!`)` Absolute bulk*put* method*(optional operation)*. |
 | --- | --- |
-| open [LongBuffer](../java/nio/LongBuffer.md)! | [put](../java/nio/LongBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `src:` ` [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Absolute bulk*put* method*(optional operation)*. |
-| open [LongBuffer](../java/nio/LongBuffer.md)! | [put](../java/nio/LongBuffer.md))`(`src:` ` [LongBuffer](../java/nio/LongBuffer.md)!`)` Relative bulk*put* method*(optional operation)*. |
-| abstract [LongBuffer](../java/nio/LongBuffer.md)! | [put](../java/nio/LongBuffer.md))`(`l:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Relative*put* method*(optional operation)*. |
+| open [LongBuffer](LongBuffer.md)! | [put](LongBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `src:` ` [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Absolute bulk*put* method*(optional operation)*. |
+| open [LongBuffer](LongBuffer.md)! | [put](LongBuffer.md))`(`src:` ` [LongBuffer](LongBuffer.md)!`)` Relative bulk*put* method*(optional operation)*. |
+| abstract [LongBuffer](LongBuffer.md)! | [put](LongBuffer.md))`(`l:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Relative*put* method*(optional operation)*. |
 | --- | --- |
-| [LongBuffer](../java/nio/LongBuffer.md)! | [put](../java/nio/LongBuffer.md))`(`src:` ` [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)!`)` Relative bulk*put* method*(optional operation)*. |
-| open [LongBuffer](../java/nio/LongBuffer.md)! | [put](../java/nio/LongBuffer.md))`(`src:` ` [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Relative bulk*put* method*(optional operation)*. |
-| open [Buffer](../java/nio/Buffer.md)! | [reset](../java/nio/LongBuffer.md))`()` Resets this buffer's position to the previously-marked position. |
+| [LongBuffer](LongBuffer.md)! | [put](LongBuffer.md))`(`src:` ` [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)!`)` Relative bulk*put* method*(optional operation)*. |
+| open [LongBuffer](LongBuffer.md)! | [put](LongBuffer.md))`(`src:` ` [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Relative bulk*put* method*(optional operation)*. |
+| open [Buffer](Buffer.md)! | [reset](LongBuffer.md))`()` Resets this buffer's position to the previously-marked position. |
 | --- | --- |
-| open [Buffer](../java/nio/Buffer.md)! | [rewind](../java/nio/LongBuffer.md))`()` Rewinds this buffer. |
-| abstract [LongBuffer](../java/nio/LongBuffer.md)! | [slice](../java/nio/LongBuffer.md))`()` Creates a new long buffer whose content is a shared subsequence of this buffer's content. |
-| abstract [LongBuffer](../java/nio/LongBuffer.md)! | [slice](../java/nio/LongBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a new long buffer whose content is a shared subsequence of this buffer's content. |
+| open [Buffer](Buffer.md)! | [rewind](LongBuffer.md))`()` Rewinds this buffer. |
+| abstract [LongBuffer](LongBuffer.md)! | [slice](LongBuffer.md))`()` Creates a new long buffer whose content is a shared subsequence of this buffer's content. |
+| abstract [LongBuffer](LongBuffer.md)! | [slice](LongBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a new long buffer whose content is a shared subsequence of this buffer's content. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/nio/LongBuffer.md))`()` Returns a string summarizing the state of this buffer. |
-| openstatic [LongBuffer](../java/nio/LongBuffer.md)! | [wrap](../java/nio/LongBuffer.md))`(`array:` ` [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)!`)` Wraps a long array into a buffer. |
-| openstatic [LongBuffer](../java/nio/LongBuffer.md)! | [wrap](../java/nio/LongBuffer.md))`(`array:` ` [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Wraps a long array into a buffer. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](LongBuffer.md))`()` Returns a string summarizing the state of this buffer. |
+| openstatic [LongBuffer](LongBuffer.md)! | [wrap](LongBuffer.md))`(`array:` ` [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)!`)` Wraps a long array into a buffer. |
+| openstatic [LongBuffer](LongBuffer.md)! | [wrap](LongBuffer.md))`(`array:` ` [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Wraps a long array into a buffer. |
 | --- | --- |
 
 | Inherited functions ||
 |---|---|
-| From class [Buffer](../java/nio/Buffer.md) |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [capacity](../java/nio/Buffer.md))`()` <br /> Returns this buffer's capacity. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasRemaining](../java/nio/Buffer.md))`()` <br /> Tells whether there are any elements between the current position and the limit. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isReadOnly](../java/nio/Buffer.md))`()` <br /> Tells whether or not this buffer is read-only. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [limit](../java/nio/Buffer.md))`()` <br /> Returns this buffer's limit. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [position](../java/nio/Buffer.md))`()` <br /> Returns this buffer's position. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [remaining](../java/nio/Buffer.md))`()` <br /> Returns the number of elements between the current position and the limit. <br /> | ||
+| From class [Buffer](Buffer.md) |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [capacity](Buffer.md))`()` <br /> Returns this buffer's capacity. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasRemaining](Buffer.md))`()` <br /> Tells whether there are any elements between the current position and the limit. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isReadOnly](Buffer.md))`()` <br /> Tells whether or not this buffer is read-only. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [limit](Buffer.md))`()` <br /> Returns this buffer's limit. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [position](Buffer.md))`()` <br /> Returns this buffer's position. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [remaining](Buffer.md))`()` <br /> Returns the number of elements between the current position and the limit. <br /> | ||
 
 ## Public methods
 
@@ -101,7 +101,7 @@ open static fun allocate(capacity: Int): LongBuffer!
 
 Allocates a new long buffer.
 
-The new buffer's position will be zero, its limit will be its capacity, its mark will be undefined, each of its elements will be initialized to zero, and its byte order will be the [native order](../java/nio/ByteOrder.md))of the underlying hardware. It will have a [backing array](../java/nio/LongBuffer.md)), and its [array offset](../java/nio/LongBuffer.md))will be zero.
+The new buffer's position will be zero, its limit will be its capacity, its mark will be undefined, each of its elements will be initialized to zero, and its byte order will be the [native order](ByteOrder.md))of the underlying hardware. It will have a [backing array](LongBuffer.md)), and its [array offset](LongBuffer.md))will be zero.
 
 | Parameters ||
 |------------|----------------------------------------------------------------------------------------------------------------|
@@ -109,7 +109,7 @@ The new buffer's position will be zero, its limit will be its capacity, its mark
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------|
-| [LongBuffer](../java/nio/LongBuffer.md)! | The new long buffer |
+| [LongBuffer](LongBuffer.md)! | The new long buffer |
 
 | Exceptions ||
 |--------------------------------------|---------------------------------------|
@@ -127,7 +127,7 @@ Returns the long array that backs this buffer*(optional operation)*.
 
 Modifications to this buffer's content will cause the returned array's content to be modified, and vice versa.
 
-Invoke the [hasArray](../java/nio/LongBuffer.md))method before invoking this method in order to ensure that this buffer has an accessible backing array.
+Invoke the [hasArray](LongBuffer.md))method before invoking this method in order to ensure that this buffer has an accessible backing array.
 
 | Return ||
 |------------------------------------------------------------------------------------------|----------------------------------|
@@ -150,7 +150,7 @@ Returns the offset within this buffer's backing array of the first element of th
 
 If this buffer is backed by an array then buffer position*p* corresponds to array index*p* +`arrayOffset()`.
 
-Invoke the [hasArray](../java/nio/LongBuffer.md))method before invoking this method in order to ensure that this buffer has an accessible backing array.
+Invoke the [hasArray](LongBuffer.md))method before invoking this method in order to ensure that this buffer has an accessible backing array.
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------|
@@ -175,11 +175,11 @@ The content of the new buffer will be that of this buffer. Changes to this buffe
 
 The new buffer's capacity, limit, position, mark values, and byte order will be identical to those of this buffer.
 
-If this buffer is itself read-only then this method behaves in exactly the same way as the [duplicate](../java/nio/LongBuffer.md))method.
+If this buffer is itself read-only then this method behaves in exactly the same way as the [duplicate](LongBuffer.md))method.
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------|
-| [LongBuffer](../java/nio/LongBuffer.md)! | The new, read-only long buffer |
+| [LongBuffer](LongBuffer.md)! | The new, read-only long buffer |
 
 ### clear
 
@@ -202,7 +202,7 @@ This method does not actually erase the data in the buffer, but it is named as i
 
 | Return ||
 |---------------------------------------------------------------------------|-------------|
-| [Buffer](../java/nio/Buffer.md)! | This buffer |
+| [Buffer](Buffer.md)! | This buffer |
 
 ### compact
 
@@ -220,7 +220,7 @@ The buffer's position is set to the number of longs copied, rather than to zero,
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------|
-| [LongBuffer](../java/nio/LongBuffer.md)! | This buffer |
+| [LongBuffer](LongBuffer.md)! | This buffer |
 
 | Exceptions ||
 |------------------------------------|-----------------------------|
@@ -236,7 +236,7 @@ open fun compareTo(other: LongBuffer!): Int
 
 Compares this buffer to another.
 
-Two long buffers are compared by comparing their sequences of remaining elements lexicographically, without regard to the starting position of each sequence within its corresponding buffer. Pairs of`long`elements are compared as if by invoking [Long.compare(long,long)](../java/lang/Long.md)).
+Two long buffers are compared by comparing their sequences of remaining elements lexicographically, without regard to the starting position of each sequence within its corresponding buffer. Pairs of`long`elements are compared as if by invoking [Long.compare(long,long)](../java.lang/Long.md)).
 
 A long buffer is not comparable to any other type of object.
 
@@ -269,7 +269,7 @@ The new buffer's capacity, limit, position, mark values, and byte order will be 
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------|
-| [LongBuffer](../java/nio/LongBuffer.md)! | The new long buffer |
+| [LongBuffer](LongBuffer.md)! | The new long buffer |
 
 ### equals
 
@@ -317,11 +317,11 @@ buf.put(magic);    // Prepend header
   out.write(buf);    // Write header + data to channel
 ```
 
-This method is often used in conjunction with the [compact](../java/nio/ByteBuffer.md))method when transferring data from one place to another.
+This method is often used in conjunction with the [compact](ByteBuffer.md))method when transferring data from one place to another.
 
 | Return ||
 |---------------------------------------------------------------------------|-------------|
-| [Buffer](../java/nio/Buffer.md)! | This buffer |
+| [Buffer](Buffer.md)! | This buffer |
 
 ### get
 
@@ -389,7 +389,7 @@ src.get(index, dst, 0, dst.length)
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------|
-| [LongBuffer](../java/nio/LongBuffer.md)! | This buffer |
+| [LongBuffer](LongBuffer.md)! | This buffer |
 
 | Exceptions ||
 |---------------------------------------|-----------------------------------------------------------------------------------|
@@ -430,7 +430,7 @@ An invocation of this method of the form`src.get(index, dst, offset, length)`has
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------|
-| [LongBuffer](../java/nio/LongBuffer.md)! | This buffer |
+| [LongBuffer](LongBuffer.md)! | This buffer |
 
 | Exceptions ||
 |---------------------------------------|--------------------------------------------------------------------------------|
@@ -458,7 +458,7 @@ src.get(a, 0, a.length)
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------|
-| [LongBuffer](../java/nio/LongBuffer.md)! | This buffer |
+| [LongBuffer](LongBuffer.md)! | This buffer |
 
 | Exceptions ||
 |-------------------------------------|---------------------------------------------------------------|
@@ -478,7 +478,7 @@ open fun get(
 
 Relative bulk*get*method.
 
-This method transfers longs from this buffer into the given destination array. If there are fewer longs remaining in the buffer than are required to satisfy the request, that is, if`length``>``remaining()`, then no longs are transferred and a [BufferUnderflowException](../java/nio/BufferUnderflowException.md) is thrown.
+This method transfers longs from this buffer into the given destination array. If there are fewer longs remaining in the buffer than are required to satisfy the request, that is, if`length``>``remaining()`, then no longs are transferred and a [BufferUnderflowException](BufferUnderflowException.md) is thrown.
 
 Otherwise, this method copies`length`longs from this buffer into the given array, starting at the current position of this buffer and at the given offset in the array. The position of this buffer is then incremented by`length`.
 
@@ -500,7 +500,7 @@ except that it first checks that there are sufficient longs in this buffer and i
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------|
-| [LongBuffer](../java/nio/LongBuffer.md)! | This buffer |
+| [LongBuffer](LongBuffer.md)! | This buffer |
 
 | Exceptions ||
 |---------------------------------------|----------------------------------------------------------------------|
@@ -517,7 +517,7 @@ fun hasArray(): Boolean
 
 Tells whether or not this buffer is backed by an accessible long array.
 
-If this method returns`true`then the [array](../java/nio/LongBuffer.md))and [arrayOffset](../java/nio/LongBuffer.md))methods may safely be invoked.
+If this method returns`true`then the [array](LongBuffer.md))and [arrayOffset](LongBuffer.md))methods may safely be invoked.
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
@@ -571,7 +571,7 @@ Sets this buffer's limit. If the position is larger than the new limit then it i
 
 | Return ||
 |---------------------------------------------------------------------------|-------------|
-| [Buffer](../java/nio/Buffer.md)! | This buffer |
+| [Buffer](Buffer.md)! | This buffer |
 
 | Exceptions ||
 |--------------------------------------|----------------------------------------------|
@@ -589,7 +589,7 @@ Sets this buffer's mark at its position.
 
 | Return ||
 |---------------------------------------------------------------------------|-------------|
-| [Buffer](../java/nio/Buffer.md)! | This buffer |
+| [Buffer](Buffer.md)! | This buffer |
 
 ### mismatch
 
@@ -599,13 +599,13 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 open fun mismatch(that: LongBuffer!): Int
 ```
 
-Finds and returns the relative index of the first mismatch between this buffer and a given buffer. The index is relative to the [position](../java/nio/Buffer.md))of each buffer and will be in the range of 0 (inclusive) up to the smaller of the [remaining](../java/nio/Buffer.md))elements in each buffer (exclusive).
+Finds and returns the relative index of the first mismatch between this buffer and a given buffer. The index is relative to the [position](Buffer.md))of each buffer and will be in the range of 0 (inclusive) up to the smaller of the [remaining](Buffer.md))elements in each buffer (exclusive).
 
 If the two buffers share a common prefix then the returned index is the length of the common prefix and it follows that there is a mismatch between the two buffers at that index within the respective buffers. If one buffer is a proper prefix of the other then the returned index is the smaller of the remaining elements in each buffer, and it follows that the index is only valid for the buffer with the larger number of remaining elements. Otherwise, there is no mismatch.
 
 | Parameters ||
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| `that` | [LongBuffer](../java/nio/LongBuffer.md)!:The byte buffer to be tested for a mismatch with this buffer |
+| `that` | [LongBuffer](LongBuffer.md)!:The byte buffer to be tested for a mismatch with this buffer |
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
@@ -621,11 +621,11 @@ abstract fun order(): ByteOrder!
 
 Retrieves this buffer's byte order.
 
-The byte order of a long buffer created by allocation or by wrapping an existing`long`array is the [native order](../java/nio/ByteOrder.md))of the underlying hardware. The byte order of a long buffer created as a [view](../java/nio/ByteBuffer.md) of a byte buffer is that of the byte buffer at the moment that the view is created.
+The byte order of a long buffer created by allocation or by wrapping an existing`long`array is the [native order](ByteOrder.md))of the underlying hardware. The byte order of a long buffer created as a [view](ByteBuffer.md) of a byte buffer is that of the byte buffer at the moment that the view is created.
 
 | Return ||
 |---------------------------------------------------------------------------------|--------------------------|
-| [ByteOrder](../java/nio/ByteOrder.md)! | This buffer's byte order |
+| [ByteOrder](ByteOrder.md)! | This buffer's byte order |
 
 ### position
 
@@ -643,7 +643,7 @@ Sets this buffer's position. If the mark is defined and larger than the new posi
 
 | Return ||
 |---------------------------------------------------------------------------|-------------|
-| [Buffer](../java/nio/Buffer.md)! | This buffer |
+| [Buffer](Buffer.md)! | This buffer |
 
 | Exceptions ||
 |--------------------------------------|-------------------------------------------------|
@@ -678,14 +678,14 @@ except that it first checks the consistency of the supplied parameters and it is
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The index in this buffer at which the first long will be written; must be non-negative and less than`limit()` |
-| `src` | [LongBuffer](../java/nio/LongBuffer.md)!:The buffer from which longs are to be read |
+| `src` | [LongBuffer](LongBuffer.md)!:The buffer from which longs are to be read |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The index within the source buffer of the first long to be read; must be non-negative and less than`src.limit()` |
 | --- | --- |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The number of longs to be read from the given buffer; must be non-negative and no larger than the smaller of`limit() - index`and`src.limit() - offset` |
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------|
-| [LongBuffer](../java/nio/LongBuffer.md)! | This buffer |
+| [LongBuffer](LongBuffer.md)! | This buffer |
 
 | Exceptions ||
 |---------------------------------------|--------------------------------------------------------------------------------|
@@ -714,7 +714,7 @@ Writes the given long into this buffer at the given index.
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------|
-| [LongBuffer](../java/nio/LongBuffer.md)! | This buffer |
+| [LongBuffer](LongBuffer.md)! | This buffer |
 
 | Exceptions ||
 |---------------------------------------|-------------------------------------------------------------|
@@ -747,7 +747,7 @@ dst.put(index, src, 0, src.length);
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------|
-| [LongBuffer](../java/nio/LongBuffer.md)! | This buffer |
+| [LongBuffer](LongBuffer.md)! | This buffer |
 
 | Exceptions ||
 |---------------------------------------|-----------------------------------------------------------------------------------|
@@ -789,7 +789,7 @@ An invocation of this method of the form`dst.put(index, src, offset, length)`has
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------|
-| [LongBuffer](../java/nio/LongBuffer.md)! | This buffer |
+| [LongBuffer](LongBuffer.md)! | This buffer |
 
 | Exceptions ||
 |---------------------------------------|--------------------------------------------------------------------------------|
@@ -806,7 +806,7 @@ open fun put(src: LongBuffer!): LongBuffer!
 
 Relative bulk*put* method*(optional operation)*.
 
-This method transfers the longs remaining in the given source buffer into this buffer. If there are more longs remaining in the source buffer than in this buffer, that is, if`src.remaining()``>``remaining()`, then no longs are transferred and a [BufferOverflowException](../java/nio/BufferOverflowException.md) is thrown.
+This method transfers the longs remaining in the given source buffer into this buffer. If there are more longs remaining in the source buffer than in this buffer, that is, if`src.remaining()``>``remaining()`, then no longs are transferred and a [BufferOverflowException](BufferOverflowException.md) is thrown.
 
 Otherwise, this method copies*n* =`src.remaining()`longs from the given buffer into this buffer, starting at each buffer's current position. The positions of both buffers are then incremented by*n*.
 
@@ -820,11 +820,11 @@ except that it first checks that there is sufficient space in this buffer and it
 
 | Parameters ||
 |-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `src` | [LongBuffer](../java/nio/LongBuffer.md)!:The source buffer from which longs are to be read; must not be this buffer |
+| `src` | [LongBuffer](LongBuffer.md)!:The source buffer from which longs are to be read; must not be this buffer |
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------|
-| [LongBuffer](../java/nio/LongBuffer.md)! | This buffer |
+| [LongBuffer](LongBuffer.md)! | This buffer |
 
 | Exceptions ||
 |--------------------------------------|--------------------------------------------------------------------------------------------|
@@ -851,7 +851,7 @@ Writes the given long into this buffer at the current position, and then increme
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------|
-| [LongBuffer](../java/nio/LongBuffer.md)! | This buffer |
+| [LongBuffer](LongBuffer.md)! | This buffer |
 
 | Exceptions ||
 |------------------------------------|-----------------------------------------------------------------|
@@ -880,7 +880,7 @@ dst.put(a, 0, a.length)
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------|
-| [LongBuffer](../java/nio/LongBuffer.md)! | This buffer |
+| [LongBuffer](LongBuffer.md)! | This buffer |
 
 | Exceptions ||
 |------------------------------------|-----------------------------------------------|
@@ -901,7 +901,7 @@ open fun put(
 
 Relative bulk*put* method*(optional operation)*.
 
-This method transfers longs into this buffer from the given source array. If there are more longs to be copied from the array than remain in this buffer, that is, if`length``>``remaining()`, then no longs are transferred and a [BufferOverflowException](../java/nio/BufferOverflowException.md) is thrown.
+This method transfers longs into this buffer from the given source array. If there are more longs to be copied from the array than remain in this buffer, that is, if`length``>``remaining()`, then no longs are transferred and a [BufferOverflowException](BufferOverflowException.md) is thrown.
 
 Otherwise, this method copies`length`longs from the given array into this buffer, starting at the given offset in the array and at the current position of this buffer. The position of this buffer is then incremented by`length`.
 
@@ -923,7 +923,7 @@ except that it first checks that there is sufficient space in this buffer and it
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------|
-| [LongBuffer](../java/nio/LongBuffer.md)! | This buffer |
+| [LongBuffer](LongBuffer.md)! | This buffer |
 
 | Exceptions ||
 |---------------------------------------|----------------------------------------------------------------------|
@@ -946,7 +946,7 @@ Invoking this method neither changes nor discards the mark's value.
 
 | Return ||
 |---------------------------------------------------------------------------|-------------|
-| [Buffer](../java/nio/Buffer.md)! | This buffer |
+| [Buffer](Buffer.md)! | This buffer |
 
 | Exceptions ||
 |---------------------------------|------------------------------|
@@ -972,7 +972,7 @@ out.write(buf);    // Write remaining data
 
 | Return ||
 |---------------------------------------------------------------------------|-------------|
-| [Buffer](../java/nio/Buffer.md)! | This buffer |
+| [Buffer](Buffer.md)! | This buffer |
 
 ### slice
 
@@ -990,7 +990,7 @@ The new buffer's position will be zero, its capacity and its limit will be the n
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------|
-| [LongBuffer](../java/nio/LongBuffer.md)! | The new long buffer |
+| [LongBuffer](LongBuffer.md)! | The new long buffer |
 
 ### slice
 
@@ -1011,12 +1011,12 @@ The new buffer's position will be zero, its capacity and its limit will be`lengt
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The position in this buffer at which the content of the new buffer will start; must be non-negative and no larger than [limit()](../java/nio/Buffer.md)) |
+| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The position in this buffer at which the content of the new buffer will start; must be non-negative and no larger than [limit()](Buffer.md)) |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The number of elements the new buffer will contain; must be non-negative and no larger than`limit() - index` |
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------|
-| [LongBuffer](../java/nio/LongBuffer.md)! | The new buffer |
+| [LongBuffer](LongBuffer.md)! | The new buffer |
 
 | Exceptions ||
 |---------------------------------------|-------------------------------------------------------------------------------------------------|
@@ -1046,7 +1046,7 @@ open static fun wrap(array: LongArray!): LongBuffer!
 
 Wraps a long array into a buffer.
 
-The new buffer will be backed by the given long array; that is, modifications to the buffer will cause the array to be modified and vice versa. The new buffer's capacity and limit will be`array.length`, its position will be zero, its mark will be undefined, and its byte order will be the [native order](../java/nio/ByteOrder.md))of the underlying hardware. Its [backing array](../java/nio/LongBuffer.md))will be the given array, and its [array offset](../java/nio/LongBuffer.md))will be zero.
+The new buffer will be backed by the given long array; that is, modifications to the buffer will cause the array to be modified and vice versa. The new buffer's capacity and limit will be`array.length`, its position will be zero, its mark will be undefined, and its byte order will be the [native order](ByteOrder.md))of the underlying hardware. Its [backing array](LongBuffer.md))will be the given array, and its [array offset](LongBuffer.md))will be zero.
 
 | Parameters ||
 |---------|-------------------------------------------------------------------------------------------------------------------------------|
@@ -1054,7 +1054,7 @@ The new buffer will be backed by the given long array; that is, modifications to
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------|
-| [LongBuffer](../java/nio/LongBuffer.md)! | The new long buffer |
+| [LongBuffer](LongBuffer.md)! | The new long buffer |
 
 ### wrap
 
@@ -1070,7 +1070,7 @@ open static fun wrap(
 
 Wraps a long array into a buffer.
 
-The new buffer will be backed by the given long array; that is, modifications to the buffer will cause the array to be modified and vice versa. The new buffer's capacity will be`array.length`, its position will be`offset`, its limit will be`offset + length`, its mark will be undefined, and its byte order will be the [native order](../java/nio/ByteOrder.md))of the underlying hardware. Its [backing array](../java/nio/LongBuffer.md))will be the given array, and its [array offset](../java/nio/LongBuffer.md))will be zero.
+The new buffer will be backed by the given long array; that is, modifications to the buffer will cause the array to be modified and vice versa. The new buffer's capacity will be`array.length`, its position will be`offset`, its limit will be`offset + length`, its mark will be undefined, and its byte order will be the [native order](ByteOrder.md))of the underlying hardware. Its [backing array](LongBuffer.md))will be the given array, and its [array offset](LongBuffer.md))will be zero.
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1081,7 +1081,7 @@ The new buffer will be backed by the given long array; that is, modifications to
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------|
-| [LongBuffer](../java/nio/LongBuffer.md)! | The new long buffer |
+| [LongBuffer](LongBuffer.md)! | The new long buffer |
 
 | Exceptions ||
 |---------------------------------------|----------------------------------------------------------------------|

@@ -4,7 +4,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 
 # NetworkStats
 
-Kotlin| [Java](../android/app/usage/NetworkStats.md) 
+Kotlin| [Java](NetworkStats.md) 
 | --- | --- |
 
 ```
@@ -13,9 +13,9 @@ class NetworkStats : AutoCloseable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.usage.NetworkStats](../android/app/usage/NetworkStats.md) |
+| ↳ | [android.app.usage.NetworkStats](NetworkStats.md) |
 
-Class providing enumeration over buckets of network usage statistics. [NetworkStats](../android/app/usage/NetworkStats.md) objects are returned as results to various queries in [NetworkStatsManager](../android/app/usage/NetworkStatsManager.md).
+Class providing enumeration over buckets of network usage statistics. [NetworkStats](NetworkStats.md) objects are returned as results to various queries in [NetworkStatsManager](NetworkStatsManager.md).
 
 ## Summary
 
@@ -25,14 +25,14 @@ Class providing enumeration over buckets of network usage statistics. [NetworkSt
 
 | Public methods ||
 |------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../android/app/usage/NetworkStats.md))`()` Closes the enumeration. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getNextBucket](../android/app/usage/NetworkStats.md))`(`bucketOut:` ` [NetworkStats.Bucket](../android/app/usage/NetworkStats.Bucket.md)?`)` Fills the recycled bucket with data of the next bin in the enumeration. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasNextBucket](../android/app/usage/NetworkStats.md))`()` Check if it is possible to ask for a next bucket in the enumeration. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](NetworkStats.md))`()` Closes the enumeration. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getNextBucket](NetworkStats.md))`(`bucketOut:` ` [NetworkStats.Bucket](../android/app/usage/NetworkStats.Bucket.md)?`)` Fills the recycled bucket with data of the next bin in the enumeration. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasNextBucket](NetworkStats.md))`()` Check if it is possible to ask for a next bucket in the enumeration. |
 | --- | --- |
 
 | Protected methods ||
 |------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](../android/app/usage/NetworkStats.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](NetworkStats.md))`()` <br /> |
 
 ## Public methods
 

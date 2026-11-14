@@ -4,7 +4,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 
 # BluetoothAssignedNumbers
 
-Kotlin| [Java](../android/bluetooth/BluetoothAssignedNumbers.md) 
+Kotlin| [Java](BluetoothAssignedNumbers.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class BluetoothAssignedNumbers
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.bluetooth.BluetoothAssignedNumbers](../android/bluetooth/BluetoothAssignedNumbers.md) |
+| ↳ | [android.bluetooth.BluetoothAssignedNumbers](BluetoothAssignedNumbers.md) |
 
 Bluetooth Assigned Numbers.
 
@@ -23,308 +23,308 @@ For now we only include Company ID values.
 
 | Constants ||
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AAMP_OF_AMERICA](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACCEL_SEMICONDUCTOR](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACE_SENSOR](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ADIDAS](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ADVANCED_PANMOBIL_SYSTEMS](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AIROHA_TECHNOLOGY](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ALCATEL](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ALPWISE](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AMICCOM_ELECTRONICS](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [APLIX](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [APPLE](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [APT_LICENSING](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ARCHOS](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ARP_DEVICES](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ATHEROS_COMMUNICATIONS](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ATMEL](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AUSTCO_COMMUNICATION_SYSTEMS](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AUTONET_MOBILE](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AVAGO](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AVM_BERLIN](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [A_AND_D_ENGINEERING](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [A_AND_R_CAMBRIDGE](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BANDSPEED](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BAND_XI_INTERNATIONAL](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BDE_TECHNOLOGY](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BEATS_ELECTRONICS](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BEAUTIFUL_ENTERPRISE](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BEKEY](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BELKIN_INTERNATIONAL](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BINAURIC](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BIOSENTRONICS](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BLUEGIGA](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BLUERADIOS](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BLUETOOTH_SIG](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BLUETREK_TECHNOLOGIES](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BOSE](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BRIARTEK](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BROADCOM](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CAEN_RFID](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CAMBRIDGE_SILICON_RADIO](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CATC](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CINETIX](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CLARINOX_TECHNOLOGIES](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [COLORFY](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [COMMIL](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONEXANT_SYSTEMS](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONNECTBLUE](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTINENTAL_AUTOMOTIVE](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONWISE_TECHNOLOGY](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CREATIVE_TECHNOLOGY](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [C_TECHNOLOGIES](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DANLERS](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DELORME_PUBLISHING_COMPANY](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEXCOM](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DIALOG_SEMICONDUCTOR](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DIGIANSWER](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ECLIPSE](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ECOTEST](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ELGATO_SYSTEMS](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EM_MICROELECTRONIC_MARIN](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EQUINOX_AG](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERICSSON_TECHNOLOGY](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVLUMA](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FREE2MOVE](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FUNAI_ELECTRIC](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GARMIN_INTERNATIONAL](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GCT_SEMICONDUCTOR](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GELO](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GENEQ](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GENERAL_MOTORS](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GENNUM](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GEOFORCE](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GIBSON_GUITARS](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GN_NETCOM](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GN_RESOUND](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GOOGLE](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GREEN_THROTTLE_GAMES](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GROUP_SENSE](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HANLYNN_TECHNOLOGIES](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HARMAN_INTERNATIONAL](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HEWLETT_PACKARD](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HITACHI](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HOSIDEN](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IBM](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INFINEON_TECHNOLOGIES](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INGENIEUR_SYSTEMGRUPPE_ZAHN](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INTEGRATED_SILICON_SOLUTION](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INTEGRATED_SYSTEM_SOLUTION](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INTEL](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INVENTEL](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IPEXTREME](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [I_TECH_DYNAMIC_GLOBAL_DISTRIBUTION](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [JAWBONE](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [JIANGSU_TOPPOWER_AUTOMOTIVE_ELECTRONICS](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [JOHNSON_CONTROLS](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [J_AND_M](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [KAWANTECH](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [KC_TECHNOLOGY](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [KENSINGTON_COMPUTER_PRODUCTS_GROUP](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LAIRD_TECHNOLOGIES](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LESSWIRE](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LG_ELECTRONICS](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LINAK](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LUCENT](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LUDUS_HELSINKI](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MACRONIX](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAGNETI_MARELLI](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MANSELLA](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MARVELL](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MATSUSHITA_ELECTRIC](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MC10](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEDIATEK](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MESO_INTERNATIONAL](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [META_WATCH](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEWTEL_TECHNOLOGY](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MICOMMAND](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MICROCHIP_TECHNOLOGY](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MICROSOFT](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MINDTREE](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MISFIT_WEARABLES](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MITEL_SEMICONDUCTOR](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MITSUBISHI_ELECTRIC](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MOBILIAN_CORPORATION](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MONSTER](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MOTOROLA](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MSTAR_SEMICONDUCTOR](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MUZIK](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NEC](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NEC_LIGHTING](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NEWLOGIC](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NIKE](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NINE_SOLUTIONS](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NOKIA_MOBILE_PHONES](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NORDIC_SEMICONDUCTOR](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NORWOOD_SYSTEMS](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ODM_TECHNOLOGY](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OMEGAWAVE](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ONSET_COMPUTER](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPEN_INTERFACE](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OTL_DYNAMICS](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PANDA_OCEAN](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARROT](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARTHUS_TECHNOLOGIES](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PASSIF_SEMICONDUCTOR](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PETER_SYSTEMTECHNIK](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PHILIPS_SEMICONDUCTORS](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PLANTRONICS](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [POLAR_ELECTRO](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [POLAR_ELECTRO_EUROPE](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROCTER_AND_GAMBLE](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALCOMM](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALCOMM_CONNECTED_EXPERIENCES](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALCOMM_INNOVATION_CENTER](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALCOMM_LABS](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALCOMM_TECHNOLOGIES](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUINTIC](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUUPPA](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RALINK_TECHNOLOGY](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RDA_MICROELECTRONICS](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REALTEK_SEMICONDUCTOR](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RED_M](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RENESAS_TECHNOLOGY](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESEARCH_IN_MOTION](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RF_MICRO_DEVICES](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RIVIERAWAVES](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROHDE_AND_SCHWARZ](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RTX_TELECOM](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SAMSUNG_ELECTRONICS](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SARIS_CYCLING_GROUP](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SEERS_TECHNOLOGY](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SEIKO_EPSON](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SELFLY](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SEMILINK](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SENNHEISER_COMMUNICATIONS](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SHANGHAI_SUPER_SMART_ELECTRONICS](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SHENZHEN_EXCELSECU_DATA_TECHNOLOGY](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIGNIA_TECHNOLOGIES](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SILICON_WAVE](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIRF_TECHNOLOGY](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOCKET_MOBILE](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SONY_ERICSSON](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOUND_ID](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SPORTS_TRACKING_TECHNOLOGIES](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SR_MEDIZINELEKTRONIK](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STACCATO_COMMUNICATIONS](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STALMART_TECHNOLOGY](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STARKEY_LABORATORIES](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STOLLMAN_E_PLUS_V](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STONESTREET_ONE](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ST_MICROELECTRONICS](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SUMMIT_DATA_COMMUNICATIONS](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SUUNTO](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SWIRL_NETWORKS](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SYMBOL_TECHNOLOGIES](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SYNOPSYS](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SYSTEMS_AND_CHIPS](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [S_POWER_ELECTRONICS](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TAIXINGBANG_TECHNOLOGY](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TENOVIS](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TERAX](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TEXAS_INSTRUMENTS](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [THINKOPTICS](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [THREECOM](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [THREE_DIJOY](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [THREE_DSP](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIMEKEEPING_SYSTEMS](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIMEX_GROUP_USA](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TOPCORN_POSITIONING_SYSTEMS](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TOSHIBA](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSILICA](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRELAB](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TTPCOM](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TXTR](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TZERO_TECHNOLOGIES](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNIVERSAL_ELECTRONICS](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VERTU](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VISTEON](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VIZIO](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VOYETRA_TURTLE_BEACH](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WAVEPLUS_TECHNOLOGY](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WICENTRIC](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIDCOMM](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WUXI_VIMICRO](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ZEEVO](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ZER01_TV](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ZOMM](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ZSCAN_SOFTWARE](../android/bluetooth/BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AAMP_OF_AMERICA](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACCEL_SEMICONDUCTOR](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ACE_SENSOR](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ADIDAS](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ADVANCED_PANMOBIL_SYSTEMS](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AIROHA_TECHNOLOGY](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ALCATEL](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ALPWISE](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AMICCOM_ELECTRONICS](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [APLIX](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [APPLE](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [APT_LICENSING](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ARCHOS](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ARP_DEVICES](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ATHEROS_COMMUNICATIONS](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ATMEL](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AUSTCO_COMMUNICATION_SYSTEMS](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AUTONET_MOBILE](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AVAGO](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AVM_BERLIN](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [A_AND_D_ENGINEERING](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [A_AND_R_CAMBRIDGE](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BANDSPEED](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BAND_XI_INTERNATIONAL](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BDE_TECHNOLOGY](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BEATS_ELECTRONICS](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BEAUTIFUL_ENTERPRISE](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BEKEY](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BELKIN_INTERNATIONAL](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BINAURIC](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BIOSENTRONICS](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BLUEGIGA](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BLUERADIOS](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BLUETOOTH_SIG](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BLUETREK_TECHNOLOGIES](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BOSE](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BRIARTEK](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BROADCOM](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CAEN_RFID](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CAMBRIDGE_SILICON_RADIO](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CATC](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CINETIX](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CLARINOX_TECHNOLOGIES](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [COLORFY](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [COMMIL](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONEXANT_SYSTEMS](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONNECTBLUE](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTINENTAL_AUTOMOTIVE](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONWISE_TECHNOLOGY](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CREATIVE_TECHNOLOGY](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [C_TECHNOLOGIES](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DANLERS](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DELORME_PUBLISHING_COMPANY](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEXCOM](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DIALOG_SEMICONDUCTOR](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DIGIANSWER](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ECLIPSE](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ECOTEST](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ELGATO_SYSTEMS](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EM_MICROELECTRONIC_MARIN](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EQUINOX_AG](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERICSSON_TECHNOLOGY](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EVLUMA](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FREE2MOVE](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FUNAI_ELECTRIC](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GARMIN_INTERNATIONAL](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GCT_SEMICONDUCTOR](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GELO](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GENEQ](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GENERAL_MOTORS](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GENNUM](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GEOFORCE](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GIBSON_GUITARS](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GN_NETCOM](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GN_RESOUND](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GOOGLE](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GREEN_THROTTLE_GAMES](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GROUP_SENSE](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HANLYNN_TECHNOLOGIES](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HARMAN_INTERNATIONAL](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HEWLETT_PACKARD](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HITACHI](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HOSIDEN](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IBM](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INFINEON_TECHNOLOGIES](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INGENIEUR_SYSTEMGRUPPE_ZAHN](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INTEGRATED_SILICON_SOLUTION](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INTEGRATED_SYSTEM_SOLUTION](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INTEL](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INVENTEL](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IPEXTREME](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [I_TECH_DYNAMIC_GLOBAL_DISTRIBUTION](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [JAWBONE](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [JIANGSU_TOPPOWER_AUTOMOTIVE_ELECTRONICS](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [JOHNSON_CONTROLS](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [J_AND_M](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [KAWANTECH](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [KC_TECHNOLOGY](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [KENSINGTON_COMPUTER_PRODUCTS_GROUP](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LAIRD_TECHNOLOGIES](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LESSWIRE](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LG_ELECTRONICS](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LINAK](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LUCENT](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LUDUS_HELSINKI](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MACRONIX](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAGNETI_MARELLI](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MANSELLA](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MARVELL](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MATSUSHITA_ELECTRIC](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MC10](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEDIATEK](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MESO_INTERNATIONAL](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [META_WATCH](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEWTEL_TECHNOLOGY](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MICOMMAND](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MICROCHIP_TECHNOLOGY](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MICROSOFT](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MINDTREE](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MISFIT_WEARABLES](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MITEL_SEMICONDUCTOR](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MITSUBISHI_ELECTRIC](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MOBILIAN_CORPORATION](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MONSTER](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MOTOROLA](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MSTAR_SEMICONDUCTOR](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MUZIK](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NEC](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NEC_LIGHTING](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NEWLOGIC](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NIKE](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NINE_SOLUTIONS](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NOKIA_MOBILE_PHONES](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NORDIC_SEMICONDUCTOR](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NORWOOD_SYSTEMS](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ODM_TECHNOLOGY](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OMEGAWAVE](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ONSET_COMPUTER](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OPEN_INTERFACE](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OTL_DYNAMICS](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PANDA_OCEAN](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARROT](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARTHUS_TECHNOLOGIES](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PASSIF_SEMICONDUCTOR](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PETER_SYSTEMTECHNIK](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PHILIPS_SEMICONDUCTORS](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PLANTRONICS](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [POLAR_ELECTRO](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [POLAR_ELECTRO_EUROPE](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PROCTER_AND_GAMBLE](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALCOMM](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALCOMM_CONNECTED_EXPERIENCES](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALCOMM_INNOVATION_CENTER](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALCOMM_LABS](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUALCOMM_TECHNOLOGIES](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUINTIC](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUUPPA](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RALINK_TECHNOLOGY](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RDA_MICROELECTRONICS](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REALTEK_SEMICONDUCTOR](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RED_M](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RENESAS_TECHNOLOGY](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESEARCH_IN_MOTION](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RF_MICRO_DEVICES](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RIVIERAWAVES](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROHDE_AND_SCHWARZ](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RTX_TELECOM](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SAMSUNG_ELECTRONICS](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SARIS_CYCLING_GROUP](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SEERS_TECHNOLOGY](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SEIKO_EPSON](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SELFLY](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SEMILINK](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SENNHEISER_COMMUNICATIONS](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SHANGHAI_SUPER_SMART_ELECTRONICS](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SHENZHEN_EXCELSECU_DATA_TECHNOLOGY](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIGNIA_TECHNOLOGIES](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SILICON_WAVE](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIRF_TECHNOLOGY](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOCKET_MOBILE](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SONY_ERICSSON](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOUND_ID](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SPORTS_TRACKING_TECHNOLOGIES](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SR_MEDIZINELEKTRONIK](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STACCATO_COMMUNICATIONS](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STALMART_TECHNOLOGY](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STARKEY_LABORATORIES](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STOLLMAN_E_PLUS_V](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STONESTREET_ONE](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ST_MICROELECTRONICS](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SUMMIT_DATA_COMMUNICATIONS](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SUUNTO](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SWIRL_NETWORKS](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SYMBOL_TECHNOLOGIES](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SYNOPSYS](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SYSTEMS_AND_CHIPS](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [S_POWER_ELECTRONICS](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TAIXINGBANG_TECHNOLOGY](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TENOVIS](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TERAX](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TEXAS_INSTRUMENTS](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [THINKOPTICS](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [THREECOM](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [THREE_DIJOY](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [THREE_DSP](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIMEKEEPING_SYSTEMS](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIMEX_GROUP_USA](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TOPCORN_POSITIONING_SYSTEMS](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TOSHIBA](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSILICA](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRELAB](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TTPCOM](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TXTR](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TZERO_TECHNOLOGIES](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNIVERSAL_ELECTRONICS](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VERTU](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VISTEON](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VIZIO](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VOYETRA_TURTLE_BEACH](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WAVEPLUS_TECHNOLOGY](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WICENTRIC](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIDCOMM](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WUXI_VIMICRO](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ZEEVO](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ZER01_TV](BluetoothAssignedNumbers.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ZOMM](BluetoothAssignedNumbers.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ZSCAN_SOFTWARE](BluetoothAssignedNumbers.md) <br /> |
 
 ## Constants
 

@@ -8,8 +8,8 @@ class CellSignalStrengthNr : CellSignalStrength, Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.telephony.CellSignalStrength](../android/telephony/CellSignalStrength.md) ||
-| | ↳ | [android.telephony.CellSignalStrengthNr](../android/telephony/CellSignalStrengthNr.md) |
+| ↳ | [android.telephony.CellSignalStrength](CellSignalStrength.md) ||
+| | ↳ | [android.telephony.CellSignalStrengthNr](CellSignalStrengthNr.md) |
 
 5G NR signal strength related information.
 
@@ -74,7 +74,7 @@ From class `https://developer.android.com/reference/kotlin/android/telephony/Cel
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [CellSignalStrengthNr](../android/telephony/CellSignalStrengthNr.md)!\> | `https://developer.android.com/reference/kotlin/android/telephony/CellSignalStrengthNr#CREATOR:android.os.Parcelable.Creator` Implement the Parcelable interface |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [CellSignalStrengthNr](CellSignalStrengthNr.md)!\> | `https://developer.android.com/reference/kotlin/android/telephony/CellSignalStrengthNr#CREATOR:android.os.Parcelable.Creator` Implement the Parcelable interface |
 
 ## Public methods
 
@@ -333,7 +333,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

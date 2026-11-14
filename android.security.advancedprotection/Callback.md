@@ -15,7 +15,7 @@ interface Callback
 
 A callback class for monitoring changes to Advanced Protection state
 
-To register a callback, implement this interface, and register it with [AdvancedProtectionManager.registerAdvancedProtectionCallback(Executor, Callback)](../android/security/advancedprotection/AdvancedProtectionManager.md)). Methods are called when the state changes, as well as once on initial registration.
+To register a callback, implement this interface, and register it with [AdvancedProtectionManager.registerAdvancedProtectionCallback(Executor, Callback)](AdvancedProtectionManager.md)). Methods are called when the state changes, as well as once on initial registration.
 
 ## Summary
 

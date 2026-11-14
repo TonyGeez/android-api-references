@@ -9,9 +9,9 @@ class MindfulnessSessionRecord : IntervalRecord
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.health.connect.datatypes.Record](../android/health/connect/datatypes/Record.md) |||
-| | ↳ | [android.health.connect.datatypes.IntervalRecord](../android/health/connect/datatypes/IntervalRecord.md) ||
-| | | ↳ | [android.health.connect.datatypes.MindfulnessSessionRecord](../android/health/connect/datatypes/MindfulnessSessionRecord.md) |
+| ↳ | [android.health.connect.datatypes.Record](Record.md) |||
+| | ↳ | [android.health.connect.datatypes.IntervalRecord](IntervalRecord.md) ||
+| | | ↳ | [android.health.connect.datatypes.MindfulnessSessionRecord](MindfulnessSessionRecord.md) |
 | --- | --- | --- | --- |
 
 Captures a mindfulness session.
@@ -58,7 +58,7 @@ Each record needs a start time, end time and a mindfulness session type. In addi
 
 | Properties ||
 |---|---|
-| static [AggregationType](../android/health/connect/datatypes/AggregationType.md)\< [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MindfulnessSessionRecord#MINDFULNESS_DURATION_TOTAL:android.health.connect.datatypes.AggregationType` Metric identifier to retrieve total mindfulness session duration using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#`. |
+| static [AggregationType](AggregationType.md)\< [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/MindfulnessSessionRecord#MINDFULNESS_DURATION_TOTAL:android.health.connect.datatypes.AggregationType` Metric identifier to retrieve total mindfulness session duration using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#`. |
 
 ## Constants
 

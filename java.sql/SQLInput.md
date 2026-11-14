@@ -8,7 +8,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface SQLInput
 ```
 
-| [java.sql.SQLInput](../java/sql/SQLInput.md) |
+| [java.sql.SQLInput](SQLInput.md) |
 
 An input stream that contains a stream of values representing an instance of an SQL structured type or an SQL distinct type. This interface, used only for custom mapping, is used by the driver behind the scenes, and a programmer never directly invokes`SQLInput`methods. The*reader* methods (`readLong`,`readBytes`, and so on) provide a way for an implementation of the`SQLData`interface to read the values in an`SQLInput`object. And as described in`SQLData`, calls to reader methods must be made in the order that their corresponding attributes appear in the SQL definition of the type. The method`wasNull`is used to determine whether the last value read was SQL`NULL`.
 
@@ -18,41 +18,41 @@ When the method`getObject`is called with an object of a class implementing the i
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Array](../java/sql/Array.md)! | [readArray](../java/sql/SQLInput.md))`()` Reads an SQL`ARRAY`value from the stream and returns it as an`Array`object in the Java programming language. |
-| abstract [InputStream](../java/io/InputStream.md)! | [readAsciiStream](../java/sql/SQLInput.md))`()` Reads the next attribute in the stream and returns it as a stream of ASCII characters. |
-| abstract [BigDecimal](../java/math/BigDecimal.md)! | [readBigDecimal](../java/sql/SQLInput.md))`()` Reads the next attribute in the stream and returns it as a`java.math.BigDecimal`object in the Java programming language. |
+| abstract [Array](Array.md)! | [readArray](SQLInput.md))`()` Reads an SQL`ARRAY`value from the stream and returns it as an`Array`object in the Java programming language. |
+| abstract [InputStream](../java.io/InputStream.md)! | [readAsciiStream](SQLInput.md))`()` Reads the next attribute in the stream and returns it as a stream of ASCII characters. |
+| abstract [BigDecimal](../java.math/BigDecimal.md)! | [readBigDecimal](SQLInput.md))`()` Reads the next attribute in the stream and returns it as a`java.math.BigDecimal`object in the Java programming language. |
 | --- | --- |
-| abstract [InputStream](../java/io/InputStream.md)! | [readBinaryStream](../java/sql/SQLInput.md))`()` Reads the next attribute in the stream and returns it as a stream of uninterpreted bytes. |
-| abstract [Blob](../java/sql/Blob.md)! | [readBlob](../java/sql/SQLInput.md))`()` Reads an SQL`BLOB`value from the stream and returns it as a`Blob`object in the Java programming language. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [readBoolean](../java/sql/SQLInput.md))`()` Reads the next attribute in the stream and returns it as a`boolean`in the Java programming language. |
+| abstract [InputStream](../java.io/InputStream.md)! | [readBinaryStream](SQLInput.md))`()` Reads the next attribute in the stream and returns it as a stream of uninterpreted bytes. |
+| abstract [Blob](Blob.md)! | [readBlob](SQLInput.md))`()` Reads an SQL`BLOB`value from the stream and returns it as a`Blob`object in the Java programming language. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [readBoolean](SQLInput.md))`()` Reads the next attribute in the stream and returns it as a`boolean`in the Java programming language. |
 | --- | --- |
-| abstract [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [readByte](../java/sql/SQLInput.md))`()` Reads the next attribute in the stream and returns it as a`byte`in the Java programming language. |
-| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [readBytes](../java/sql/SQLInput.md))`()` Reads the next attribute in the stream and returns it as an array of bytes in the Java programming language. |
-| abstract [Reader](../java/io/Reader.md)! | [readCharacterStream](../java/sql/SQLInput.md))`()` Reads the next attribute in the stream and returns it as a stream of Unicode characters. |
+| abstract [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [readByte](SQLInput.md))`()` Reads the next attribute in the stream and returns it as a`byte`in the Java programming language. |
+| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [readBytes](SQLInput.md))`()` Reads the next attribute in the stream and returns it as an array of bytes in the Java programming language. |
+| abstract [Reader](../java.io/Reader.md)! | [readCharacterStream](SQLInput.md))`()` Reads the next attribute in the stream and returns it as a stream of Unicode characters. |
 | --- | --- |
-| abstract [Clob](../java/sql/Clob.md)! | [readClob](../java/sql/SQLInput.md))`()` Reads an SQL`CLOB`value from the stream and returns it as a`Clob`object in the Java programming language. |
-| abstract [Date](../java/sql/Date.md)! | [readDate](../java/sql/SQLInput.md))`()` Reads the next attribute in the stream and returns it as a`java.sql.Date`object. |
-| abstract [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [readDouble](../java/sql/SQLInput.md))`()` Reads the next attribute in the stream and returns it as a`double`in the Java programming language. |
+| abstract [Clob](Clob.md)! | [readClob](SQLInput.md))`()` Reads an SQL`CLOB`value from the stream and returns it as a`Clob`object in the Java programming language. |
+| abstract [Date](Date.md)! | [readDate](SQLInput.md))`()` Reads the next attribute in the stream and returns it as a`java.sql.Date`object. |
+| abstract [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [readDouble](SQLInput.md))`()` Reads the next attribute in the stream and returns it as a`double`in the Java programming language. |
 | --- | --- |
-| abstract [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [readFloat](../java/sql/SQLInput.md))`()` Reads the next attribute in the stream and returns it as a`float`in the Java programming language. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [readInt](../java/sql/SQLInput.md))`()` Reads the next attribute in the stream and returns it as an`int`in the Java programming language. |
-| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [readLong](../java/sql/SQLInput.md))`()` Reads the next attribute in the stream and returns it as a`long`in the Java programming language. |
+| abstract [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [readFloat](SQLInput.md))`()` Reads the next attribute in the stream and returns it as a`float`in the Java programming language. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [readInt](SQLInput.md))`()` Reads the next attribute in the stream and returns it as an`int`in the Java programming language. |
+| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [readLong](SQLInput.md))`()` Reads the next attribute in the stream and returns it as a`long`in the Java programming language. |
 | --- | --- |
-| abstract [NClob](../java/sql/NClob.md)! | [readNClob](../java/sql/SQLInput.md))`()` Reads an SQL`NCLOB`value from the stream and returns it as a`NClob`object in the Java programming language. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [readNString](../java/sql/SQLInput.md))`()` Reads the next attribute in the stream and returns it as a`String`in the Java programming language. |
-| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [readObject](../java/sql/SQLInput.md))`()` Reads the datum at the head of the stream and returns it as an`Object`in the Java programming language. |
+| abstract [NClob](NClob.md)! | [readNClob](SQLInput.md))`()` Reads an SQL`NCLOB`value from the stream and returns it as a`NClob`object in the Java programming language. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [readNString](SQLInput.md))`()` Reads the next attribute in the stream and returns it as a`String`in the Java programming language. |
+| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [readObject](SQLInput.md))`()` Reads the datum at the head of the stream and returns it as an`Object`in the Java programming language. |
 | --- | --- |
-| abstract [Ref](../java/sql/Ref.md)! | [readRef](../java/sql/SQLInput.md))`()` Reads an SQL`REF`value from the stream and returns it as a`Ref`object in the Java programming language. |
-| abstract [RowId](../java/sql/RowId.md)! | [readRowId](../java/sql/SQLInput.md))`()` Reads an SQL`ROWID`value from the stream and returns it as a`RowId`object in the Java programming language. |
-| abstract [SQLXML](../java/sql/SQLXML.md)! | [readSQLXML](../java/sql/SQLInput.md))`()` Reads an SQL`XML`value from the stream and returns it as a`SQLXML`object in the Java programming language. |
+| abstract [Ref](Ref.md)! | [readRef](SQLInput.md))`()` Reads an SQL`REF`value from the stream and returns it as a`Ref`object in the Java programming language. |
+| abstract [RowId](RowId.md)! | [readRowId](SQLInput.md))`()` Reads an SQL`ROWID`value from the stream and returns it as a`RowId`object in the Java programming language. |
+| abstract [SQLXML](SQLXML.md)! | [readSQLXML](SQLInput.md))`()` Reads an SQL`XML`value from the stream and returns it as a`SQLXML`object in the Java programming language. |
 | --- | --- |
-| abstract [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [readShort](../java/sql/SQLInput.md))`()` Reads the next attribute in the stream and returns it as a`short`in the Java programming language. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [readString](../java/sql/SQLInput.md))`()` Reads the next attribute in the stream and returns it as a`String`in the Java programming language. |
-| abstract [Time](../java/sql/Time.md)! | [readTime](../java/sql/SQLInput.md))`()` Reads the next attribute in the stream and returns it as a`java.sql.Time`object. |
+| abstract [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [readShort](SQLInput.md))`()` Reads the next attribute in the stream and returns it as a`short`in the Java programming language. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [readString](SQLInput.md))`()` Reads the next attribute in the stream and returns it as a`String`in the Java programming language. |
+| abstract [Time](Time.md)! | [readTime](SQLInput.md))`()` Reads the next attribute in the stream and returns it as a`java.sql.Time`object. |
 | --- | --- |
-| abstract [Timestamp](../java/sql/Timestamp.md)! | [readTimestamp](../java/sql/SQLInput.md))`()` Reads the next attribute in the stream and returns it as a`java.sql.Timestamp`object. |
-| abstract [URL](../java/net/URL.md)! | [readURL](../java/sql/SQLInput.md))`()` Reads an SQL`DATALINK`value from the stream and returns it as a`java.net.URL`object in the Java programming language. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [wasNull](../java/sql/SQLInput.md))`()` Retrieves whether the last value read was SQL`NULL`. |
+| abstract [Timestamp](Timestamp.md)! | [readTimestamp](SQLInput.md))`()` Reads the next attribute in the stream and returns it as a`java.sql.Timestamp`object. |
+| abstract [URL](../java.net/URL.md)! | [readURL](SQLInput.md))`()` Reads an SQL`DATALINK`value from the stream and returns it as a`java.net.URL`object in the Java programming language. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [wasNull](SQLInput.md))`()` Retrieves whether the last value read was SQL`NULL`. |
 | --- | --- |
 
 ## Public methods
@@ -69,7 +69,7 @@ Reads an SQL`ARRAY`value from the stream and returns it as an`Array`object in th
 
 | Return ||
 |-------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| [Array](../java/sql/Array.md)! | an`Array`object representing data of the SQL`ARRAY`value at the head of the stream;`null`if the value read is SQL`NULL` |
+| [Array](Array.md)! | an`Array`object representing data of the SQL`ARRAY`value at the head of the stream;`null`if the value read is SQL`NULL` |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------|
@@ -88,7 +88,7 @@ Reads the next attribute in the stream and returns it as a stream of ASCII chara
 
 | Return ||
 |------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| [InputStream](../java/io/InputStream.md)! | the attribute; if the value is SQL`NULL`, returns`null` |
+| [InputStream](../java.io/InputStream.md)! | the attribute; if the value is SQL`NULL`, returns`null` |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------|
@@ -107,7 +107,7 @@ Reads the next attribute in the stream and returns it as a`java.math.BigDecimal`
 
 | Return ||
 |------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| [BigDecimal](../java/math/BigDecimal.md)! | the attribute; if the value is SQL`NULL`, returns`null` |
+| [BigDecimal](../java.math/BigDecimal.md)! | the attribute; if the value is SQL`NULL`, returns`null` |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------|
@@ -126,7 +126,7 @@ Reads the next attribute in the stream and returns it as a stream of uninterpret
 
 | Return ||
 |------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| [InputStream](../java/io/InputStream.md)! | the attribute; if the value is SQL`NULL`, returns`null` |
+| [InputStream](../java.io/InputStream.md)! | the attribute; if the value is SQL`NULL`, returns`null` |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------|
@@ -145,7 +145,7 @@ Reads an SQL`BLOB`value from the stream and returns it as a`Blob`object in the J
 
 | Return ||
 |-----------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| [Blob](../java/sql/Blob.md)! | a`Blob`object representing data of the SQL`BLOB`value at the head of the stream;`null`if the value read is SQL`NULL` |
+| [Blob](Blob.md)! | a`Blob`object representing data of the SQL`BLOB`value at the head of the stream;`null`if the value read is SQL`NULL` |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------|
@@ -221,7 +221,7 @@ Reads the next attribute in the stream and returns it as a stream of Unicode cha
 
 | Return ||
 |--------------------------------------------------------------------------------|---------------------------------------------------------|
-| [Reader](../java/io/Reader.md)! | the attribute; if the value is SQL`NULL`, returns`null` |
+| [Reader](../java.io/Reader.md)! | the attribute; if the value is SQL`NULL`, returns`null` |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------|
@@ -240,7 +240,7 @@ Reads an SQL`CLOB`value from the stream and returns it as a`Clob`object in the J
 
 | Return ||
 |-----------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| [Clob](../java/sql/Clob.md)! | a`Clob`object representing data of the SQL`CLOB`value at the head of the stream;`null`if the value read is SQL`NULL` |
+| [Clob](Clob.md)! | a`Clob`object representing data of the SQL`CLOB`value at the head of the stream;`null`if the value read is SQL`NULL` |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------|
@@ -259,7 +259,7 @@ Reads the next attribute in the stream and returns it as a`java.sql.Date`object.
 
 | Return ||
 |-----------------------------------------------------------------------|---------------------------------------------------------|
-| [Date](../java/sql/Date.md)! | the attribute; if the value is SQL`NULL`, returns`null` |
+| [Date](Date.md)! | the attribute; if the value is SQL`NULL`, returns`null` |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------|
@@ -354,7 +354,7 @@ Reads an SQL`NCLOB`value from the stream and returns it as a`NClob`object in the
 
 | Return ||
 |-------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| [NClob](../java/sql/NClob.md)! | a`NClob`object representing data of the SQL`NCLOB`value at the head of the stream;`null`if the value read is SQL`NULL` |
+| [NClob](NClob.md)! | a`NClob`object representing data of the SQL`NCLOB`value at the head of the stream;`null`if the value read is SQL`NULL` |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------|
@@ -415,7 +415,7 @@ Reads an SQL`REF`value from the stream and returns it as a`Ref`object in the Jav
 
 | Return ||
 |---------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-| [Ref](../java/sql/Ref.md)! | a`Ref`object representing the SQL`REF`value at the head of the stream;`null`if the value read is SQL`NULL` |
+| [Ref](Ref.md)! | a`Ref`object representing the SQL`REF`value at the head of the stream;`null`if the value read is SQL`NULL` |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------|
@@ -434,7 +434,7 @@ Reads an SQL`ROWID`value from the stream and returns it as a`RowId`object in the
 
 | Return ||
 |-------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| [RowId](../java/sql/RowId.md)! | a`RowId`object representing data of the SQL`ROWID`value at the head of the stream;`null`if the value read is SQL`NULL` |
+| [RowId](RowId.md)! | a`RowId`object representing data of the SQL`ROWID`value at the head of the stream;`null`if the value read is SQL`NULL` |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------|
@@ -453,7 +453,7 @@ Reads an SQL`XML`value from the stream and returns it as a`SQLXML`object in the 
 
 | Return ||
 |---------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| [SQLXML](../java/sql/SQLXML.md)! | a`SQLXML`object representing data of the SQL`XML`value at the head of the stream;`null`if the value read is SQL`NULL` |
+| [SQLXML](SQLXML.md)! | a`SQLXML`object representing data of the SQL`XML`value at the head of the stream;`null`if the value read is SQL`NULL` |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------|
@@ -510,7 +510,7 @@ Reads the next attribute in the stream and returns it as a`java.sql.Time`object.
 
 | Return ||
 |-----------------------------------------------------------------------|---------------------------------------------------------|
-| [Time](../java/sql/Time.md)! | the attribute; if the value is SQL`NULL`, returns`null` |
+| [Time](Time.md)! | the attribute; if the value is SQL`NULL`, returns`null` |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------|
@@ -529,7 +529,7 @@ Reads the next attribute in the stream and returns it as a`java.sql.Timestamp`ob
 
 | Return ||
 |---------------------------------------------------------------------------------|---------------------------------------------------------|
-| [Timestamp](../java/sql/Timestamp.md)! | the attribute; if the value is SQL`NULL`, returns`null` |
+| [Timestamp](Timestamp.md)! | the attribute; if the value is SQL`NULL`, returns`null` |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------|
@@ -548,7 +548,7 @@ Reads an SQL`DATALINK`value from the stream and returns it as a`java.net.URL`obj
 
 | Return ||
 |---------------------------------------------------------------------------|------------------------|
-| [URL](../java/net/URL.md)! | a`java.net.URL`object. |
+| [URL](../java.net/URL.md)! | a`java.net.URL`object. |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------------------|

@@ -10,12 +10,12 @@ abstract class Dictionary<K : Any!, V : Any!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.util.Dictionary](../java/util/Dictionary.md) |
+| ↳ | [java.util.Dictionary](Dictionary.md) |
 
-| Known Direct Subclasses [Hashtable](../java/util/Hashtable.md) |---------------------------------------------------------------------------------|----------------------------------------------------------------| | [Hashtable](../java/util/Hashtable.md) | This class implements a hash table, which maps keys to values. | |
+| Known Direct Subclasses [Hashtable](Hashtable.md) |---------------------------------------------------------------------------------|----------------------------------------------------------------| | [Hashtable](Hashtable.md) | This class implements a hash table, which maps keys to values. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [AuthProvider](../java/security/AuthProvider.md), [Properties](../java/util/Properties.md), [Provider](../java/security/Provider.md) |-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------| | [AuthProvider](../java/security/AuthProvider.md) | Legacy security code; do not use. | | [Properties](../java/util/Properties.md) | The`Properties`class represents a persistent set of properties. | | [Provider](../java/security/Provider.md) | This class represents a "provider" for the Java Security API, where a provider implements some or all parts of Java Security. | |
+| Known Indirect Subclasses [AuthProvider](../java.security/AuthProvider.md), [Properties](Properties.md), [Provider](../java.security/Provider.md) |-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------| | [AuthProvider](../java.security/AuthProvider.md) | Legacy security code; do not use. | | [Properties](Properties.md) | The`Properties`class represents a persistent set of properties. | | [Provider](../java.security/Provider.md) | This class represents a "provider" for the Java Security API, where a provider implements some or all parts of Java Security. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 The`Dictionary`class is the abstract parent of any class, such as`Hashtable`, which maps keys to values. Every key and every value is an object. In any one`Dictionary`object, every key is associated with at most one value. Given a`Dictionary`and a key, the associated element can be looked up. Any non-`null`object can be used as a key and as a value.
@@ -28,19 +28,19 @@ As a rule, the`equals`method should be used by implementations of this class to 
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------|---|
-| [Dictionary](../java/util/Dictionary.md))`()` Sole constructor. |
+| [Dictionary](Dictionary.md))`()` Sole constructor. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Enumeration](../java/util/Enumeration.md)\<V\>! | [elements](../java/util/Dictionary.md))`()` Returns an enumeration of the values in this dictionary. |
-| abstractV | [get](../java/util/Dictionary.md))`(`key:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Returns the value to which the key is mapped in this dictionary. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](../java/util/Dictionary.md))`()` Tests if this dictionary maps no keys to value. |
+| abstract [Enumeration](Enumeration.md)\<V\>! | [elements](Dictionary.md))`()` Returns an enumeration of the values in this dictionary. |
+| abstractV | [get](Dictionary.md))`(`key:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Returns the value to which the key is mapped in this dictionary. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](Dictionary.md))`()` Tests if this dictionary maps no keys to value. |
 | --- | --- |
-| abstract [Enumeration](../java/util/Enumeration.md)\<K\>! | [keys](../java/util/Dictionary.md))`()` Returns an enumeration of the keys in this dictionary. |
-| abstractV | [put](../java/util/Dictionary.md))`(`key:` `K`, `value:` `V`)` Maps the specified`key`to the specified`value`in this dictionary. |
-| abstractV | [remove](../java/util/Dictionary.md))`(`key:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Removes the`key`(and its corresponding`value`) from this dictionary. |
+| abstract [Enumeration](Enumeration.md)\<K\>! | [keys](Dictionary.md))`()` Returns an enumeration of the keys in this dictionary. |
+| abstractV | [put](Dictionary.md))`(`key:` `K`, `value:` `V`)` Maps the specified`key`to the specified`value`in this dictionary. |
+| abstractV | [remove](Dictionary.md))`(`key:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Removes the`key`(and its corresponding`value`) from this dictionary. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [size](../java/util/Dictionary.md))`()` Returns the number of entries (distinct keys) in this dictionary. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [size](Dictionary.md))`()` Returns the number of entries (distinct keys) in this dictionary. |
 
 ## Public constructors
 
@@ -68,12 +68,12 @@ Returns an enumeration of the values in this dictionary. The general contract fo
 
 | Return ||
 |-----------------------------------------------------------------------------------------|--------------------------------------------------|
-| [Enumeration](../java/util/Enumeration.md)<V>! | an enumeration of the values in this dictionary. |
+| [Enumeration](Enumeration.md)<V>! | an enumeration of the values in this dictionary. |
 
 **See Also**
 
-- [java.util.Dictionary#keys()](../java/util/Dictionary.md))
-- [java.util.Enumeration](../java/util/Enumeration.md) 
+- [java.util.Dictionary#keys()](Dictionary.md))
+- [java.util.Enumeration](Enumeration.md) 
 
 ### get
 
@@ -99,7 +99,7 @@ Returns the value to which the key is mapped in this dictionary. The general con
 
 **See Also**
 
-- [java.util.Dictionary#put(java.lang.Object, java.lang.Object)](../java/util/Dictionary.md)) 
+- [java.util.Dictionary#put(java.lang.Object, java.lang.Object)](Dictionary.md)) 
 
 ### isEmpty
 
@@ -127,12 +127,12 @@ Returns an enumeration of the keys in this dictionary. The general contract for 
 
 | Return ||
 |-----------------------------------------------------------------------------------------|------------------------------------------------|
-| [Enumeration](../java/util/Enumeration.md)<K>! | an enumeration of the keys in this dictionary. |
+| [Enumeration](Enumeration.md)<K>! | an enumeration of the keys in this dictionary. |
 
 **See Also**
 
-- [java.util.Dictionary#elements()](../java/util/Dictionary.md))
-- [java.util.Enumeration](../java/util/Enumeration.md) 
+- [java.util.Dictionary#elements()](Dictionary.md))
+- [java.util.Enumeration](Enumeration.md) 
 
 ### put
 
@@ -168,8 +168,8 @@ The`value`can be retrieved by calling the`get`method with a`key`that is equal to
 
 **See Also**
 
-- [java.lang.Object#equals(java.lang.Object)](../java/lang/Object.md))
-- [java.util.Dictionary#get(java.lang.Object)](../java/util/Dictionary.md)) 
+- [java.lang.Object#equals(java.lang.Object)](../java.lang/Object.md))
+- [java.util.Dictionary#get(java.lang.Object)](Dictionary.md)) 
 
 ### remove
 

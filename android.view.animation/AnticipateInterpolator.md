@@ -4,7 +4,7 @@ Added in [API level 4](https://developer.android.com/guide/topics/manifest/uses-
 
 # AnticipateInterpolator
 
-Kotlin | [Java](../android/view/animation/AnticipateInterpolator.md) 
+Kotlin | [Java](AnticipateInterpolator.md) 
 | --- | --- |
 
 ```
@@ -13,8 +13,8 @@ open class AnticipateInterpolator : BaseInterpolator
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.view.animation.BaseInterpolator](../android/view/animation/BaseInterpolator.md) ||
-| | ↳ | [android.view.animation.AnticipateInterpolator](../android/view/animation/AnticipateInterpolator.md) |
+| ↳ | [android.view.animation.BaseInterpolator](BaseInterpolator.md) ||
+| | ↳ | [android.view.animation.AnticipateInterpolator](AnticipateInterpolator.md) |
 
 An interpolator where the change starts backward then flings forward.
 
@@ -22,13 +22,13 @@ An interpolator where the change starts backward then flings forward.
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [AnticipateInterpolator](../android/view/animation/AnticipateInterpolator.md))`()` <br /> |
-| [AnticipateInterpolator](../android/view/animation/AnticipateInterpolator.md))`(`context:` ` [Context](../android/content/Context.md)!`, `attrs:` ` [AttributeSet](../android/util/AttributeSet.md)!`)` <br /> |
-| [AnticipateInterpolator](../android/view/animation/AnticipateInterpolator.md))`(`tension:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` <br /> |
+| [AnticipateInterpolator](AnticipateInterpolator.md))`()` <br /> |
+| [AnticipateInterpolator](AnticipateInterpolator.md))`(`context:` ` [Context](../android.content/Context.md)!`, `attrs:` ` [AttributeSet](../android.util/AttributeSet.md)!`)` <br /> |
+| [AnticipateInterpolator](AnticipateInterpolator.md))`(`tension:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` <br /> |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getInterpolation](../android/view/animation/AnticipateInterpolator.md))`(`t:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` <br /> |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getInterpolation](AnticipateInterpolator.md))`(`t:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` <br /> |
 
 ## Public constructors
 

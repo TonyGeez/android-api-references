@@ -11,8 +11,8 @@ open class BackingStoreException : Exception
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||
-| | | ↳ | [java.util.prefs.BackingStoreException](../java/util/prefs/BackingStoreException.md) |
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) ||
+| | | ↳ | [java.util.prefs.BackingStoreException](BackingStoreException.md) |
 | --- | --- | --- | --- |
 
 Thrown to indicate that a preferences operation could not complete because of a failure in the backing store, or a failure to contact the backing store.
@@ -21,8 +21,8 @@ Thrown to indicate that a preferences operation could not complete because of a 
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [BackingStoreException](../java/util/prefs/BackingStoreException.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a BackingStoreException with the specified detail message. |
-| [BackingStoreException](../java/util/prefs/BackingStoreException.md))`(`cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a BackingStoreException with the specified cause. |
+| [BackingStoreException](BackingStoreException.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a BackingStoreException with the specified detail message. |
+| [BackingStoreException](BackingStoreException.md))`(`cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a BackingStoreException with the specified cause. |
 
 ## Public constructors
 

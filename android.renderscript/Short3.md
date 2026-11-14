@@ -5,7 +5,7 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 
 # Short3
 
-Kotlin| [Java](../android/renderscript/Short3.md) 
+Kotlin| [Java](Short3.md) 
 | --- | --- |
 
 ```
@@ -14,7 +14,7 @@ open class Short3
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.renderscript.Short3](../android/renderscript/Short3.md) |
+| ↳ | [android.renderscript.Short3](Short3.md) |
 
 | **This class was deprecated in API level 31.**
 |
@@ -26,14 +26,14 @@ Vector version of the basic short type. Provides three short fields packed.
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Short3](../android/renderscript/Short3.md))`()` <br /> |
-| [Short3](../android/renderscript/Short3.md))`(`x:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`, `y:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`, `z:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` <br /> |
+| [Short3](Short3.md))`()` <br /> |
+| [Short3](Short3.md))`(`x:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`, `y:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`, `z:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` <br /> |
 
 | Properties ||
 |--------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
-| [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [x](../android/renderscript/Short3.md) <br /> |
-| [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [y](../android/renderscript/Short3.md) <br /> |
-| [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [z](../android/renderscript/Short3.md) <br /> |
+| [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [x](Short3.md) <br /> |
+| [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [y](Short3.md) <br /> |
+| [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [z](Short3.md) <br /> |
 | --- | --- |
 
 ## Public constructors

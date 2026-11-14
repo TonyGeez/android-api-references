@@ -2,7 +2,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 
 # TextClassificationContext
 
-Kotlin | [Java](../android/view/textclassifier/TextClassificationContext.md)
+Kotlin | [Java](TextClassificationContext.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class TextClassificationContext : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.textclassifier.TextClassificationContext](../android/view/textclassifier/TextClassificationContext.md) |
+| ↳ | [android.view.textclassifier.TextClassificationContext](TextClassificationContext.md) |
 
 A representation of the context in which text classification would be performed.
 
@@ -38,7 +38,7 @@ A representation of the context in which text classification would be performed.
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [TextClassificationContext](../android/view/textclassifier/TextClassificationContext.md)!\> | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassificationContext#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [TextClassificationContext](TextClassificationContext.md)!\> | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassificationContext#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public methods
 

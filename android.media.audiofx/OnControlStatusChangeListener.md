@@ -19,7 +19,7 @@ The OnControlStatusChangeListener interface defines a method called by the Audio
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onControlStatusChange](../android/media/audiofx/AudioEffect.OnControlStatusChangeListener.md))`(`effect:` ` [AudioEffect](../android/media/audiofx/AudioEffect.md)!`, `controlGranted:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Called on the listener to notify it that the effect engine control has been taken or returned. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onControlStatusChange](../android/media/audiofx/AudioEffect.OnControlStatusChangeListener.md))`(`effect:` ` [AudioEffect](AudioEffect.md)!`, `controlGranted:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Called on the listener to notify it that the effect engine control has been taken or returned. |
 
 ## Public methods
 
@@ -38,5 +38,5 @@ Called on the listener to notify it that the effect engine control has been take
 
 | Parameters ||
 |------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `effect` | [AudioEffect](../android/media/audiofx/AudioEffect.md)!:the effect on which the interface is registered. |
+| `effect` | [AudioEffect](AudioEffect.md)!:the effect on which the interface is registered. |
 | `controlGranted` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):true if the application has been granted control of the effect engine, false otherwise. |

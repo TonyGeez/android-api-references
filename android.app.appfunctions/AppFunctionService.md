@@ -8,11 +8,11 @@ abstract class AppFunctionService : Service
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](../android/content/Context.md) ||||
-| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) |||
-| | | ↳ | [android.app.Service](../android/app/Service.md) ||
+| ↳ | [android.content.Context](../android.content/Context.md) ||||
+| | ↳ | [android.content.ContextWrapper](../android.content/ContextWrapper.md) |||
+| | | ↳ | [android.app.Service](../android.app/Service.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.app.appfunctions.AppFunctionService](../android/app/appfunctions/AppFunctionService.md) |
+| | | | ↳ | [android.app.appfunctions.AppFunctionService](AppFunctionService.md) |
 
 Extend this class to implement app functions, that can be executed by android.app.appfunctions.AppFunctionManager#executeAppFunction.
 
@@ -1073,7 +1073,7 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 
 | Public methods ||
 |---|---|
-| [IBinder](../android/os/IBinder.md) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#?)` Return the communication channel to the service. |
+| [IBinder](../android.os/IBinder.md) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#?)` Return the communication channel to the service. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionService#onExecuteFunction(android.app.appfunctions.ExecuteAppFunctionRequest,%20kotlin.String,%20android.content.pm.SigningInfo,%20android.os.CancellationSignal,%20android.os.OutcomeReceiver)(request: https://developer.android.com/reference/kotlin/android/app/appfunctions/ExecuteAppFunctionRequest, callingPackage: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, callingPackageSigningInfo: https://developer.android.com/reference/kotlin/android/content/pm/SigningInfo.html#, cancellationSignal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#, callback: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://developer.android.com/reference/kotlin/android/app/appfunctions/ExecuteAppFunctionResponse!, https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionException!>)` Called by the system following an android. |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/app/Service.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/app/Service.html#attachBaseContext(android.content.Context)(newBase: https://developer.android.com/reference/kotlin/android/content/Context.html#!)`
@@ -2807,7 +2807,7 @@ Return the communication channel to the service. May return null if clients can 
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md)?: This value may be `null`. |
+| `intent` | [Intent](../android.content/Intent.md)?: This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -2838,9 +2838,9 @@ This method must be called from the main thread of your app.
 
 | Parameters ||
 |---|---|
-| `request` | [ExecuteAppFunctionRequest](../android/app/appfunctions/ExecuteAppFunctionRequest.md): The function execution request. This value cannot be `null`. |
+| `request` | [ExecuteAppFunctionRequest](ExecuteAppFunctionRequest.md): The function execution request. This value cannot be `null`. |
 | `callingPackage` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The package name of the app that is requesting the execution. It is strongly recommended that you do not alter your function's behavior based on this value. Your function should behave consistently for all callers to ensure a predictable experience. Starting in `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#CINNAMON_BUN:kotlin.Int`, the value will always be an empty string. This value cannot be `null`. |
-| `callingPackageSigningInfo` | [SigningInfo](../android/content/pm/SigningInfo.md): The signing information of the app that is requesting the execution. It is strongly recommended that you do not alter your function's behavior based on this value. Your function should behave consistently for all callers to ensure a predictable experience. Starting in `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#CINNAMON_BUN:kotlin.Int`, the value will always be an unknown signing info. This value cannot be `null`. |
+| `callingPackageSigningInfo` | [SigningInfo](../android.content.pm/SigningInfo.md): The signing information of the app that is requesting the execution. It is strongly recommended that you do not alter your function's behavior based on this value. Your function should behave consistently for all callers to ensure a predictable experience. Starting in `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#CINNAMON_BUN:kotlin.Int`, the value will always be an unknown signing info. This value cannot be `null`. |
 | --- | --- |
-| `cancellationSignal` | [CancellationSignal](../android/os/CancellationSignal.md): A signal to cancel the execution. This value cannot be `null`. |
-| `callback` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [ExecuteAppFunctionResponse](../android/app/appfunctions/ExecuteAppFunctionResponse.md)!, [AppFunctionException](../android/app/appfunctions/AppFunctionException.md)!\>: A callback to report back the result or error. This value cannot be `null`. |
+| `cancellationSignal` | [CancellationSignal](../android.os/CancellationSignal.md): A signal to cancel the execution. This value cannot be `null`. |
+| `callback` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [ExecuteAppFunctionResponse](ExecuteAppFunctionResponse.md)!, [AppFunctionException](AppFunctionException.md)!\>: A callback to report back the result or error. This value cannot be `null`. |

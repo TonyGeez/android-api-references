@@ -10,7 +10,7 @@ open class XPathConstants
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.xml.xpath.XPathConstants](../javax/xml/xpath/XPathConstants.md) |
+| ↳ | [javax.xml.xpath.XPathConstants](XPathConstants.md) |
 
 XPath constants.
 
@@ -18,16 +18,16 @@ XPath constants.
 
 | Constants ||
 |----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DOM_OBJECT_MODEL](../javax/xml/xpath/XPathConstants.md) The URI for the DOM object model, "http://java. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DOM_OBJECT_MODEL](XPathConstants.md) The URI for the DOM object model, "http://java. |
 
 | Properties ||
 |------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| static [QName](../javax/xml/namespace/QName.md)! | [BOOLEAN](../javax/xml/xpath/XPathConstants.md) The XPath 1. |
-| static [QName](../javax/xml/namespace/QName.md)! | [NODE](../javax/xml/xpath/XPathConstants.md) The XPath 1. |
-| static [QName](../javax/xml/namespace/QName.md)! | [NODESET](../javax/xml/xpath/XPathConstants.md) The XPath 1. |
+| static [QName](../javax.xml.namespace/QName.md)! | [BOOLEAN](XPathConstants.md) The XPath 1. |
+| static [QName](../javax.xml.namespace/QName.md)! | [NODE](XPathConstants.md) The XPath 1. |
+| static [QName](../javax.xml.namespace/QName.md)! | [NODESET](XPathConstants.md) The XPath 1. |
 | --- | --- |
-| static [QName](../javax/xml/namespace/QName.md)! | [NUMBER](../javax/xml/xpath/XPathConstants.md) The XPath 1. |
-| static [QName](../javax/xml/namespace/QName.md)! | [STRING](../javax/xml/xpath/XPathConstants.md) The XPath 1. |
+| static [QName](../javax.xml.namespace/QName.md)! | [NUMBER](XPathConstants.md) The XPath 1. |
+| static [QName](../javax.xml.namespace/QName.md)! | [STRING](XPathConstants.md) The XPath 1. |
 
 ## Constants
 
@@ -55,7 +55,7 @@ static val BOOLEAN: QName!
 
 The XPath 1.0 boolean data type.
 
-Maps to Java [Boolean](../java/lang/Boolean.md). 
+Maps to Java [Boolean](../java.lang/Boolean.md). 
 
 ### NODE
 
@@ -91,7 +91,7 @@ static val NUMBER: QName!
 
 The XPath 1.0 number data type.
 
-Maps to Java [Double](../java/lang/Double.md). 
+Maps to Java [Double](../java.lang/Double.md). 
 
 ### STRING
 
@@ -103,4 +103,4 @@ static val STRING: QName!
 
 The XPath 1.0 string data type.
 
-Maps to Java [String](../java/lang/String.md).
+Maps to Java [String](../java.lang/String.md).

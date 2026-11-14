@@ -10,60 +10,60 @@ open class AttributesImpl : Attributes
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [org.xml.sax.helpers.AttributesImpl](../org/xml/sax/helpers/AttributesImpl.md) |
+| ↳ | [org.xml.sax.helpers.AttributesImpl](AttributesImpl.md) |
 
-| Known Direct Subclasses [Attributes2Impl](../org/xml/sax/ext/Attributes2Impl.md) |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Attributes2Impl](../org/xml/sax/ext/Attributes2Impl.md) | SAX2 extension helper for additional Attributes information, implementing the [Attributes2](../org/xml/sax/ext/Attributes2.md) interface. | |
+| Known Direct Subclasses [Attributes2Impl](../org.xml.sax.ext/Attributes2Impl.md) |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Attributes2Impl](../org.xml.sax.ext/Attributes2Impl.md) | SAX2 extension helper for additional Attributes information, implementing the [Attributes2](../org.xml.sax.ext/Attributes2.md) interface. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 Default implementation of the Attributes interface.*This module, both source code and documentation, is in the Public Domain, and comes with**NO WARRANTY**.* See<http://www.saxproject.org>for further information.
 
-This class provides a default implementation of the SAX2 [Attributes](../org/xml/sax/Attributes.md) interface, with the addition of manipulators so that the list can be modified or reused.
+This class provides a default implementation of the SAX2 [Attributes](../org.xml.sax/Attributes.md) interface, with the addition of manipulators so that the list can be modified or reused.
 
 There are two typical uses of this class:
 
-1. to take a persistent snapshot of an Attributes object in a [startElement](../org/xml/sax/ContentHandler.md))event; or
+1. to take a persistent snapshot of an Attributes object in a [startElement](../org.xml.sax/ContentHandler.md))event; or
 2. to construct or modify an Attributes object in a SAX2 driver or filter.
 
-This class replaces the now-deprecated SAX1 class; in addition to supporting the updated Attributes interface rather than the deprecated [AttributeList](../org/xml/sax/AttributeList.md) interface, it also includes a much more efficient implementation using a single array rather than a set of Vectors.
+This class replaces the now-deprecated SAX1 class; in addition to supporting the updated Attributes interface rather than the deprecated [AttributeList](../org.xml.sax/AttributeList.md) interface, it also includes a much more efficient implementation using a single array rather than a set of Vectors.
 
 ## Summary
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [AttributesImpl](../org/xml/sax/helpers/AttributesImpl.md))`()` Construct a new, empty AttributesImpl object. |
-| [AttributesImpl](../org/xml/sax/helpers/AttributesImpl.md))`(`atts:` ` [Attributes](../org/xml/sax/Attributes.md)!`)` Copy an existing Attributes object. |
+| [AttributesImpl](AttributesImpl.md))`()` Construct a new, empty AttributesImpl object. |
+| [AttributesImpl](AttributesImpl.md))`(`atts:` ` [Attributes](../org.xml.sax/Attributes.md)!`)` Copy an existing Attributes object. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addAttribute](../org/xml/sax/helpers/AttributesImpl.md))`(`uri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `localName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `qName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Add an attribute to the end of the list. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](../org/xml/sax/helpers/AttributesImpl.md))`()` Clear the attribute list for reuse. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIndex](../org/xml/sax/helpers/AttributesImpl.md))`(`qName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Look up an attribute's index by qualified (prefixed) name. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addAttribute](AttributesImpl.md))`(`uri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `localName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `qName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Add an attribute to the end of the list. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](AttributesImpl.md))`()` Clear the attribute list for reuse. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIndex](AttributesImpl.md))`(`qName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Look up an attribute's index by qualified (prefixed) name. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIndex](../org/xml/sax/helpers/AttributesImpl.md))`(`uri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `localName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Look up an attribute's index by Namespace name. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLength](../org/xml/sax/helpers/AttributesImpl.md))`()` Return the number of attributes in the list. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getLocalName](../org/xml/sax/helpers/AttributesImpl.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return an attribute's local name. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIndex](AttributesImpl.md))`(`uri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `localName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Look up an attribute's index by Namespace name. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLength](AttributesImpl.md))`()` Return the number of attributes in the list. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getLocalName](AttributesImpl.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return an attribute's local name. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getQName](../org/xml/sax/helpers/AttributesImpl.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return an attribute's qualified (prefixed) name. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getType](../org/xml/sax/helpers/AttributesImpl.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return an attribute's type by index. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getType](../org/xml/sax/helpers/AttributesImpl.md))`(`qName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Look up an attribute's type by qualified (prefixed) name. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getQName](AttributesImpl.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return an attribute's qualified (prefixed) name. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getType](AttributesImpl.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return an attribute's type by index. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getType](AttributesImpl.md))`(`qName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Look up an attribute's type by qualified (prefixed) name. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getType](../org/xml/sax/helpers/AttributesImpl.md))`(`uri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `localName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Look up an attribute's type by Namespace-qualified name. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getURI](../org/xml/sax/helpers/AttributesImpl.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return an attribute's Namespace URI. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getValue](../org/xml/sax/helpers/AttributesImpl.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return an attribute's value by index. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getType](AttributesImpl.md))`(`uri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `localName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Look up an attribute's type by Namespace-qualified name. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getURI](AttributesImpl.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return an attribute's Namespace URI. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getValue](AttributesImpl.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return an attribute's value by index. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getValue](../org/xml/sax/helpers/AttributesImpl.md))`(`qName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Look up an attribute's value by qualified (prefixed) name. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getValue](../org/xml/sax/helpers/AttributesImpl.md))`(`uri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `localName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Look up an attribute's value by Namespace-qualified name. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeAttribute](../org/xml/sax/helpers/AttributesImpl.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Remove an attribute from the list. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getValue](AttributesImpl.md))`(`qName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Look up an attribute's value by qualified (prefixed) name. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getValue](AttributesImpl.md))`(`uri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `localName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Look up an attribute's value by Namespace-qualified name. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeAttribute](AttributesImpl.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Remove an attribute from the list. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAttribute](../org/xml/sax/helpers/AttributesImpl.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `uri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `localName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `qName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set an attribute in the list. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAttributes](../org/xml/sax/helpers/AttributesImpl.md))`(`atts:` ` [Attributes](../org/xml/sax/Attributes.md)!`)` Copy an entire Attributes object. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLocalName](../org/xml/sax/helpers/AttributesImpl.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `localName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the local name of a specific attribute. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAttribute](AttributesImpl.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `uri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `localName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `qName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set an attribute in the list. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAttributes](AttributesImpl.md))`(`atts:` ` [Attributes](../org.xml.sax/Attributes.md)!`)` Copy an entire Attributes object. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLocalName](AttributesImpl.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `localName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the local name of a specific attribute. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setQName](../org/xml/sax/helpers/AttributesImpl.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `qName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the qualified name of a specific attribute. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setType](../org/xml/sax/helpers/AttributesImpl.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the type of a specific attribute. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setURI](../org/xml/sax/helpers/AttributesImpl.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `uri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the Namespace URI of a specific attribute. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setQName](AttributesImpl.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `qName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the qualified name of a specific attribute. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setType](AttributesImpl.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the type of a specific attribute. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setURI](AttributesImpl.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `uri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the Namespace URI of a specific attribute. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setValue](../org/xml/sax/helpers/AttributesImpl.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the value of a specific attribute. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setValue](AttributesImpl.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the value of a specific attribute. |
 
 ## Public constructors
 
@@ -87,11 +87,11 @@ AttributesImpl(atts: Attributes!)
 
 Copy an existing Attributes object.
 
-This constructor is especially useful inside a [startElement](../org/xml/sax/ContentHandler.md))event.
+This constructor is especially useful inside a [startElement](../org.xml.sax/ContentHandler.md))event.
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------------|
-| `atts` | [Attributes](../org/xml/sax/Attributes.md)!:The existing Attributes object. |
+| `atts` | [Attributes](../org.xml.sax/Attributes.md)!:The existing Attributes object. |
 
 ## Public methods
 
@@ -154,7 +154,7 @@ Look up an attribute's index by qualified (prefixed) name.
 
 **See Also**
 
-- [org.xml.sax.Attributes#getIndex(java.lang.String)](../org/xml/sax/Attributes.md)) 
+- [org.xml.sax.Attributes#getIndex(java.lang.String)](../org.xml.sax/Attributes.md)) 
 
 ### getIndex
 
@@ -182,7 +182,7 @@ In many cases, it will be more efficient to look up the name once and use the in
 
 **See Also**
 
-- [org.xml.sax.Attributes#getIndex(java.lang.String,java.lang.String)](../org/xml/sax/Attributes.md)) 
+- [org.xml.sax.Attributes#getIndex(java.lang.String,java.lang.String)](../org.xml.sax/Attributes.md)) 
 
 ### getLength
 
@@ -200,7 +200,7 @@ Return the number of attributes in the list.
 
 **See Also**
 
-- [org.xml.sax.Attributes#getLength](../org/xml/sax/Attributes.md)) 
+- [org.xml.sax.Attributes#getLength](../org.xml.sax/Attributes.md)) 
 
 ### getLocalName
 
@@ -222,7 +222,7 @@ Return an attribute's local name.
 
 **See Also**
 
-- [org.xml.sax.Attributes#getLocalName](../org/xml/sax/Attributes.md)) 
+- [org.xml.sax.Attributes#getLocalName](../org.xml.sax/Attributes.md)) 
 
 ### getQName
 
@@ -244,7 +244,7 @@ Return an attribute's qualified (prefixed) name.
 
 **See Also**
 
-- [org.xml.sax.Attributes#getQName](../org/xml/sax/Attributes.md)) 
+- [org.xml.sax.Attributes#getQName](../org.xml.sax/Attributes.md)) 
 
 ### getType
 
@@ -266,7 +266,7 @@ Return an attribute's type by index.
 
 **See Also**
 
-- [org.xml.sax.Attributes#getType(int)](../org/xml/sax/Attributes.md)) 
+- [org.xml.sax.Attributes#getType(int)](../org.xml.sax/Attributes.md)) 
 
 ### getType
 
@@ -288,7 +288,7 @@ Look up an attribute's type by qualified (prefixed) name.
 
 **See Also**
 
-- [org.xml.sax.Attributes#getType(java.lang.String)](../org/xml/sax/Attributes.md)) 
+- [org.xml.sax.Attributes#getType(java.lang.String)](../org.xml.sax/Attributes.md)) 
 
 ### getType
 
@@ -314,7 +314,7 @@ Look up an attribute's type by Namespace-qualified name.
 
 **See Also**
 
-- [org.xml.sax.Attributes#getType(java.lang.String,java.lang.String)](../org/xml/sax/Attributes.md)) 
+- [org.xml.sax.Attributes#getType(java.lang.String,java.lang.String)](../org.xml.sax/Attributes.md)) 
 
 ### getURI
 
@@ -336,7 +336,7 @@ Return an attribute's Namespace URI.
 
 **See Also**
 
-- [org.xml.sax.Attributes#getURI](../org/xml/sax/Attributes.md)) 
+- [org.xml.sax.Attributes#getURI](../org.xml.sax/Attributes.md)) 
 
 ### getValue
 
@@ -358,7 +358,7 @@ Return an attribute's value by index.
 
 **See Also**
 
-- [org.xml.sax.Attributes#getValue(int)](../org/xml/sax/Attributes.md)) 
+- [org.xml.sax.Attributes#getValue(int)](../org.xml.sax/Attributes.md)) 
 
 ### getValue
 
@@ -380,7 +380,7 @@ Look up an attribute's value by qualified (prefixed) name.
 
 **See Also**
 
-- [org.xml.sax.Attributes#getValue(java.lang.String)](../org/xml/sax/Attributes.md)) 
+- [org.xml.sax.Attributes#getValue(java.lang.String)](../org.xml.sax/Attributes.md)) 
 
 ### getValue
 
@@ -406,7 +406,7 @@ Look up an attribute's value by Namespace-qualified name.
 
 **See Also**
 
-- [org.xml.sax.Attributes#getValue(java.lang.String,java.lang.String)](../org/xml/sax/Attributes.md)) 
+- [org.xml.sax.Attributes#getValue(java.lang.String,java.lang.String)](../org.xml.sax/Attributes.md)) 
 
 ### removeAttribute
 
@@ -474,7 +474,7 @@ It may be more efficient to reuse an existing object rather than constantly allo
 
 | Parameters ||
 |--------|--------------------------------------------------------------------------------------------------------------------|
-| `atts` | [Attributes](../org/xml/sax/Attributes.md)!:The attributes to copy. |
+| `atts` | [Attributes](../org.xml.sax/Attributes.md)!:The attributes to copy. |
 
 ### setLocalName
 

@@ -4,20 +4,20 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 
 # SyncStatusObserver
 
-Kotlin| [Java](../android/content/SyncStatusObserver.md) 
+Kotlin| [Java](SyncStatusObserver.md) 
 | --- | --- |
 
 ```
 interface SyncStatusObserver
 ```
 
-| [android.content.SyncStatusObserver](../android/content/SyncStatusObserver.md) |
+| [android.content.SyncStatusObserver](SyncStatusObserver.md) |
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStatusChanged](../android/content/SyncStatusObserver.md))`(`which:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStatusChanged](SyncStatusObserver.md))`(`which:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 ## Public methods
 

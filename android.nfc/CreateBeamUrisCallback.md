@@ -22,7 +22,7 @@ interface CreateBeamUrisCallback
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Uri](../android/net/Uri.md)!\>! | [createBeamUris](../android/nfc/NfcAdapter.CreateBeamUrisCallback.md))`(`event:` ` [NfcEvent](../android/nfc/NfcEvent.md)!`)` <br /> |
+| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Uri](../android.net/Uri.md)!\>! | [createBeamUris](../android/nfc/NfcAdapter.CreateBeamUrisCallback.md))`(`event:` ` [NfcEvent](NfcEvent.md)!`)` <br /> |
 
 ## Public methods
 

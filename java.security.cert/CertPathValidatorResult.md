@@ -8,23 +8,23 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface CertPathValidatorResult : Cloneable
 ```
 
-| [java.security.cert.CertPathValidatorResult](../java/security/cert/CertPathValidatorResult.md) |
+| [java.security.cert.CertPathValidatorResult](CertPathValidatorResult.md) |
 
-| Known Direct Subclasses [PKIXCertPathValidatorResult](../java/security/cert/PKIXCertPathValidatorResult.md) |------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------| | [PKIXCertPathValidatorResult](../java/security/cert/PKIXCertPathValidatorResult.md) | This class represents the successful result of the PKIX certification path validation algorithm. | |
+| Known Direct Subclasses [PKIXCertPathValidatorResult](PKIXCertPathValidatorResult.md) |------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------| | [PKIXCertPathValidatorResult](PKIXCertPathValidatorResult.md) | This class represents the successful result of the PKIX certification path validation algorithm. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [PKIXCertPathBuilderResult](../java/security/cert/PKIXCertPathBuilderResult.md) |--------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------| | [PKIXCertPathBuilderResult](../java/security/cert/PKIXCertPathBuilderResult.md) | This class represents the successful result of the PKIX certification path builder algorithm. | |
+| Known Indirect Subclasses [PKIXCertPathBuilderResult](PKIXCertPathBuilderResult.md) |--------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------| | [PKIXCertPathBuilderResult](PKIXCertPathBuilderResult.md) | This class represents the successful result of the PKIX certification path builder algorithm. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 A specification of the result of a certification path validator algorithm.
 
-The purpose of this interface is to group (and provide type safety for) all certification path validator results. All results returned by the [CertPathValidator.validate](../java/security/cert/CertPathValidator.md))method must implement this interface.
+The purpose of this interface is to group (and provide type safety for) all certification path validator results. All results returned by the [CertPathValidator.validate](CertPathValidator.md))method must implement this interface.
 
 ## Summary
 
 | Public methods ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](../java/security/cert/CertPathValidatorResult.md))`()` Makes a copy of this`CertPathValidatorResult`. |
+| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](CertPathValidatorResult.md))`()` Makes a copy of this`CertPathValidatorResult`. |
 
 ## Public methods
 

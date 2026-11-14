@@ -11,8 +11,8 @@ open class ParserConfigurationException : Exception
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||
-| | | ↳ | [javax.xml.parsers.ParserConfigurationException](../javax/xml/parsers/ParserConfigurationException.md) |
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) ||
+| | | ↳ | [javax.xml.parsers.ParserConfigurationException](ParserConfigurationException.md) |
 | --- | --- | --- | --- |
 
 Indicates a serious configuration error.
@@ -21,8 +21,8 @@ Indicates a serious configuration error.
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ParserConfigurationException](../javax/xml/parsers/ParserConfigurationException.md))`()` Create a new`ParserConfigurationException`with no detail message. |
-| [ParserConfigurationException](../javax/xml/parsers/ParserConfigurationException.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Create a new`ParserConfigurationException`with the`String`specified as an error message. |
+| [ParserConfigurationException](ParserConfigurationException.md))`()` Create a new`ParserConfigurationException`with no detail message. |
+| [ParserConfigurationException](ParserConfigurationException.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Create a new`ParserConfigurationException`with the`String`specified as an error message. |
 
 ## Public constructors
 

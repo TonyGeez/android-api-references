@@ -4,14 +4,14 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 
 # WebResourceRequest
 
-Kotlin| [Java](../android/webkit/WebResourceRequest.md) 
+Kotlin| [Java](WebResourceRequest.md) 
 | --- | --- |
 
 ```
 interface WebResourceRequest
 ```
 
-| [android.webkit.WebResourceRequest](../android/webkit/WebResourceRequest.md) |
+| [android.webkit.WebResourceRequest](WebResourceRequest.md) |
 
 Encompasses parameters to the android.webkit.WebViewClient#shouldInterceptRequest method.
 
@@ -19,13 +19,13 @@ Encompasses parameters to the android.webkit.WebViewClient#shouldInterceptReques
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getMethod](../android/webkit/WebResourceRequest.md))`()` Gets the method associated with the request, for example "GET". |
-| abstract [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getRequestHeaders](../android/webkit/WebResourceRequest.md))`()` Gets the headers associated with the request. |
-| abstract [Uri](../android/net/Uri.md)! | [getUrl](../android/webkit/WebResourceRequest.md))`()` Gets the URL for which the resource request was made. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getMethod](WebResourceRequest.md))`()` Gets the method associated with the request, for example "GET". |
+| abstract [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getRequestHeaders](WebResourceRequest.md))`()` Gets the headers associated with the request. |
+| abstract [Uri](../android.net/Uri.md)! | [getUrl](WebResourceRequest.md))`()` Gets the URL for which the resource request was made. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasGesture](../android/webkit/WebResourceRequest.md))`()` Gets whether a gesture (such as a click) was associated with the request. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isForMainFrame](../android/webkit/WebResourceRequest.md))`()` Gets whether the request was made in order to fetch the main frame's document. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRedirect](../android/webkit/WebResourceRequest.md))`()` Gets whether the request was a result of a server-side redirect. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasGesture](WebResourceRequest.md))`()` Gets whether a gesture (such as a click) was associated with the request. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isForMainFrame](WebResourceRequest.md))`()` Gets whether the request was made in order to fetch the main frame's document. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRedirect](WebResourceRequest.md))`()` Gets whether the request was a result of a server-side redirect. |
 | --- | --- |
 
 ## Public methods
@@ -70,7 +70,7 @@ Gets the URL for which the resource request was made.
 
 | Return ||
 |------------------------------------------------------------------------------|--------------------------------------------------|
-| [Uri](../android/net/Uri.md)! | the URL for which the resource request was made. |
+| [Uri](../android.net/Uri.md)! | the URL for which the resource request was made. |
 
 ### hasGesture
 

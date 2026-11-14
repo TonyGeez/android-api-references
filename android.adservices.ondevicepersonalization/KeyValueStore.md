@@ -4,16 +4,16 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 
 # KeyValueStore
 
-Kotlin| [Java](../android/adservices/ondevicepersonalization/KeyValueStore.md) 
+Kotlin| [Java](KeyValueStore.md) 
 | --- | --- |
 
 ```
 interface KeyValueStore
 ```
 
-| [android.adservices.ondevicepersonalization.KeyValueStore](../android/adservices/ondevicepersonalization/KeyValueStore.md) |
+| [android.adservices.ondevicepersonalization.KeyValueStore](KeyValueStore.md) |
 
-| Known Direct Subclasses [MutableKeyValueStore](../android/adservices/ondevicepersonalization/MutableKeyValueStore.md) |----------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------| | [MutableKeyValueStore](../android/adservices/ondevicepersonalization/MutableKeyValueStore.md) | An interface to a read-write key-value store. | |
+| Known Direct Subclasses [MutableKeyValueStore](MutableKeyValueStore.md) |----------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------| | [MutableKeyValueStore](MutableKeyValueStore.md) | An interface to a read-write key-value store. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 An interface to a read-only key-value store. Used as a Data Access Object for the REMOTE_DATA table.
@@ -22,8 +22,8 @@ An interface to a read-only key-value store. Used as a Data Access Object for th
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | [get](../android/adservices/ondevicepersonalization/KeyValueStore.md))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Looks up a key in a read-only store. |
-| abstract [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [keySet](../android/adservices/ondevicepersonalization/KeyValueStore.md))`()` Returns a Set view of the keys contained in the REMOTE_DATA table. |
+| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | [get](KeyValueStore.md))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Looks up a key in a read-only store. |
+| abstract [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [keySet](KeyValueStore.md))`()` Returns a Set view of the keys contained in the REMOTE_DATA table. |
 
 ## Public methods
 

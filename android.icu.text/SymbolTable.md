@@ -4,14 +4,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # SymbolTable
 
-Kotlin| [Java](../android/icu/text/SymbolTable.md) 
+Kotlin| [Java](SymbolTable.md) 
 | --- | --- |
 
 ```
 interface SymbolTable
 ```
 
-| [android.icu.text.SymbolTable](../android/icu/text/SymbolTable.md) |
+| [android.icu.text.SymbolTable](SymbolTable.md) |
 
 An interface that defines both lookup protocol and parsing of symbolic names.
 
@@ -27,13 +27,13 @@ Finally, a symbol table defines parsing behavior for symbolic names. All symboli
 
 | Constants ||
 |------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [SYMBOL_REF](../android/icu/text/SymbolTable.md) The character preceding a symbol reference name. |
+| static [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [SYMBOL_REF](SymbolTable.md) The character preceding a symbol reference name. |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)! | [lookup](../android/icu/text/SymbolTable.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Lookup the characters associated with this string and return it. |
-| abstract [UnicodeMatcher](../android/icu/text/UnicodeMatcher.md)! | [lookupMatcher](../android/icu/text/SymbolTable.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Lookup the UnicodeMatcher associated with the given character, and return it. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [parseReference](../android/icu/text/SymbolTable.md))`(`text:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `pos:` ` [ParsePosition](../java/text/ParsePosition.md)!`, `limit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Parse a symbol reference name from the given string, starting at the given position. |
+| abstract [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)! | [lookup](SymbolTable.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Lookup the characters associated with this string and return it. |
+| abstract [UnicodeMatcher](UnicodeMatcher.md)! | [lookupMatcher](SymbolTable.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Lookup the UnicodeMatcher associated with the given character, and return it. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [parseReference](SymbolTable.md))`(`text:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `pos:` ` [ParsePosition](../java.text/ParsePosition.md)!`, `limit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Parse a symbol reference name from the given string, starting at the given position. |
 | --- | --- |
 
 ## Constants
@@ -86,7 +86,7 @@ Lookup the UnicodeMatcher associated with the given character, and return it. Re
 
 | Return ||
 |---------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
-| [UnicodeMatcher](../android/icu/text/UnicodeMatcher.md)! | the UnicodeMatcher object represented by the given character, or null if there is no mapping for ch. |
+| [UnicodeMatcher](UnicodeMatcher.md)! | the UnicodeMatcher object represented by the given character, or null if there is no mapping for ch. |
 
 ### parseReference
 
@@ -105,7 +105,7 @@ Parse a symbol reference name from the given string, starting at the given posit
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `text` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the text to parse for the name |
-| `pos` | [ParsePosition](../java/text/ParsePosition.md)!:on entry, the index of the first character to parse. This is the character following the SYMBOL_REF character. On exit, the index after the last parsed character. If the parse failed, pos is unchanged on exit. |
+| `pos` | [ParsePosition](../java.text/ParsePosition.md)!:on entry, the index of the first character to parse. This is the character following the SYMBOL_REF character. On exit, the index after the last parsed character. If the parse failed, pos is unchanged on exit. |
 | `limit` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the index after the last character to be parsed. |
 | --- | --- |
 

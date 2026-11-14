@@ -4,14 +4,14 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 
 # TextClassificationSessionFactory
 
-Kotlin| [Java](../android/view/textclassifier/TextClassificationSessionFactory.md) 
+Kotlin| [Java](TextClassificationSessionFactory.md) 
 | --- | --- |
 
 ```
 interface TextClassificationSessionFactory
 ```
 
-| [android.view.textclassifier.TextClassificationSessionFactory](../android/view/textclassifier/TextClassificationSessionFactory.md) |
+| [android.view.textclassifier.TextClassificationSessionFactory](TextClassificationSessionFactory.md) |
 
 An interface for creating a session-aware TextClassifier.
 
@@ -19,7 +19,7 @@ An interface for creating a session-aware TextClassifier.
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [TextClassifier](../android/view/textclassifier/TextClassifier.md) | [createTextClassificationSession](../android/view/textclassifier/TextClassificationSessionFactory.md))`(`classificationContext:` ` [TextClassificationContext](../android/view/textclassifier/TextClassificationContext.md)`)` Creates and returns a session-aware TextClassifier. |
+| abstract [TextClassifier](TextClassifier.md) | [createTextClassificationSession](TextClassificationSessionFactory.md))`(`classificationContext:` ` [TextClassificationContext](TextClassificationContext.md)`)` Creates and returns a session-aware TextClassifier. |
 
 ## Public methods
 
@@ -35,8 +35,8 @@ Creates and returns a session-aware TextClassifier.
 
 | Parameters ||
 |-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `classificationContext` | [TextClassificationContext](../android/view/textclassifier/TextClassificationContext.md):the classification context This value cannot be`null`. |
+| `classificationContext` | [TextClassificationContext](TextClassificationContext.md):the classification context This value cannot be`null`. |
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [TextClassifier](../android/view/textclassifier/TextClassifier.md) | This value cannot be`null`. |
+| [TextClassifier](TextClassifier.md) | This value cannot be`null`. |

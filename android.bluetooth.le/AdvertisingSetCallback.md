@@ -4,7 +4,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 
 # AdvertisingSetCallback
 
-Kotlin| [Java](../android/bluetooth/le/AdvertisingSetCallback.md) 
+Kotlin| [Java](AdvertisingSetCallback.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ abstract class AdvertisingSetCallback
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.bluetooth.le.AdvertisingSetCallback](../android/bluetooth/le/AdvertisingSetCallback.md) |
+| ↳ | [android.bluetooth.le.AdvertisingSetCallback](AdvertisingSetCallback.md) |
 
 Bluetooth LE advertising set callbacks, used to deliver advertising operation status.
 
@@ -21,32 +21,32 @@ Bluetooth LE advertising set callbacks, used to deliver advertising operation st
 
 | Constants ||
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ADVERTISE_FAILED_ALREADY_STARTED](../android/bluetooth/le/AdvertisingSetCallback.md) Failed to start advertising as the advertising is already started. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ADVERTISE_FAILED_DATA_TOO_LARGE](../android/bluetooth/le/AdvertisingSetCallback.md) Failed to start advertising as the advertise data to be broadcasted is too large. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ADVERTISE_FAILED_FEATURE_UNSUPPORTED](../android/bluetooth/le/AdvertisingSetCallback.md) This feature is not supported on this platform. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ADVERTISE_FAILED_ALREADY_STARTED](AdvertisingSetCallback.md) Failed to start advertising as the advertising is already started. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ADVERTISE_FAILED_DATA_TOO_LARGE](AdvertisingSetCallback.md) Failed to start advertising as the advertise data to be broadcasted is too large. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ADVERTISE_FAILED_FEATURE_UNSUPPORTED](AdvertisingSetCallback.md) This feature is not supported on this platform. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ADVERTISE_FAILED_INTERNAL_ERROR](../android/bluetooth/le/AdvertisingSetCallback.md) Operation failed due to an internal error. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ADVERTISE_FAILED_TOO_MANY_ADVERTISERS](../android/bluetooth/le/AdvertisingSetCallback.md) Failed to start advertising because no advertising instance is available. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ADVERTISE_SUCCESS](../android/bluetooth/le/AdvertisingSetCallback.md) The requested operation was successful. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ADVERTISE_FAILED_INTERNAL_ERROR](AdvertisingSetCallback.md) Operation failed due to an internal error. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ADVERTISE_FAILED_TOO_MANY_ADVERTISERS](AdvertisingSetCallback.md) Failed to start advertising because no advertising instance is available. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ADVERTISE_SUCCESS](AdvertisingSetCallback.md) The requested operation was successful. |
 | --- | --- |
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [AdvertisingSetCallback](../android/bluetooth/le/AdvertisingSetCallback.md))`()` <br /> |
+| [AdvertisingSetCallback](AdvertisingSetCallback.md))`()` <br /> |
 
 | Public methods ||
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAdvertisingDataSet](../android/bluetooth/le/AdvertisingSetCallback.md))`(`advertisingSet:` ` [AdvertisingSet](../android/bluetooth/le/AdvertisingSet.md)!`, `status:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Callback triggered in response to [AdvertisingSet.setAdvertisingData](../android/bluetooth/le/AdvertisingSet.md))indicating result of the operation. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAdvertisingEnabled](../android/bluetooth/le/AdvertisingSetCallback.md))`(`advertisingSet:` ` [AdvertisingSet](../android/bluetooth/le/AdvertisingSet.md)!`, `enable:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `status:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Callback triggered in response to android. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAdvertisingParametersUpdated](../android/bluetooth/le/AdvertisingSetCallback.md))`(`advertisingSet:` ` [AdvertisingSet](../android/bluetooth/le/AdvertisingSet.md)!`, `txPower:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `status:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Callback triggered in response to [AdvertisingSet.setAdvertisingParameters](../android/bluetooth/le/AdvertisingSet.md))indicating result of the operation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAdvertisingDataSet](AdvertisingSetCallback.md))`(`advertisingSet:` ` [AdvertisingSet](AdvertisingSet.md)!`, `status:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Callback triggered in response to [AdvertisingSet.setAdvertisingData](AdvertisingSet.md))indicating result of the operation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAdvertisingEnabled](AdvertisingSetCallback.md))`(`advertisingSet:` ` [AdvertisingSet](AdvertisingSet.md)!`, `enable:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `status:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Callback triggered in response to android. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAdvertisingParametersUpdated](AdvertisingSetCallback.md))`(`advertisingSet:` ` [AdvertisingSet](AdvertisingSet.md)!`, `txPower:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `status:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Callback triggered in response to [AdvertisingSet.setAdvertisingParameters](AdvertisingSet.md))indicating result of the operation. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAdvertisingSetStarted](../android/bluetooth/le/AdvertisingSetCallback.md))`(`advertisingSet:` ` [AdvertisingSet](../android/bluetooth/le/AdvertisingSet.md)!`, `txPower:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `status:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Callback triggered in response to android. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAdvertisingSetStopped](../android/bluetooth/le/AdvertisingSetCallback.md))`(`advertisingSet:` ` [AdvertisingSet](../android/bluetooth/le/AdvertisingSet.md)!`)` Callback triggered in response to [BluetoothLeAdvertiser.stopAdvertisingSet](../android/bluetooth/le/BluetoothLeAdvertiser.md))indicating advertising set is stopped. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onPeriodicAdvertisingDataSet](../android/bluetooth/le/AdvertisingSetCallback.md))`(`advertisingSet:` ` [AdvertisingSet](../android/bluetooth/le/AdvertisingSet.md)!`, `status:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Callback triggered in response to [AdvertisingSet.setPeriodicAdvertisingData](../android/bluetooth/le/AdvertisingSet.md))indicating result of the operation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAdvertisingSetStarted](AdvertisingSetCallback.md))`(`advertisingSet:` ` [AdvertisingSet](AdvertisingSet.md)!`, `txPower:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `status:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Callback triggered in response to android. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAdvertisingSetStopped](AdvertisingSetCallback.md))`(`advertisingSet:` ` [AdvertisingSet](AdvertisingSet.md)!`)` Callback triggered in response to [BluetoothLeAdvertiser.stopAdvertisingSet](BluetoothLeAdvertiser.md))indicating advertising set is stopped. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onPeriodicAdvertisingDataSet](AdvertisingSetCallback.md))`(`advertisingSet:` ` [AdvertisingSet](AdvertisingSet.md)!`, `status:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Callback triggered in response to [AdvertisingSet.setPeriodicAdvertisingData](AdvertisingSet.md))indicating result of the operation. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onPeriodicAdvertisingEnabled](../android/bluetooth/le/AdvertisingSetCallback.md))`(`advertisingSet:` ` [AdvertisingSet](../android/bluetooth/le/AdvertisingSet.md)!`, `enable:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `status:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Callback triggered in response to [AdvertisingSet.setPeriodicAdvertisingEnabled](../android/bluetooth/le/AdvertisingSet.md))indicating result of the operation. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onPeriodicAdvertisingParametersUpdated](../android/bluetooth/le/AdvertisingSetCallback.md))`(`advertisingSet:` ` [AdvertisingSet](../android/bluetooth/le/AdvertisingSet.md)!`, `status:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Callback triggered in response to [AdvertisingSet.setPeriodicAdvertisingParameters](../android/bluetooth/le/AdvertisingSet.md))indicating result of the operation. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onScanResponseDataSet](../android/bluetooth/le/AdvertisingSetCallback.md))`(`advertisingSet:` ` [AdvertisingSet](../android/bluetooth/le/AdvertisingSet.md)!`, `status:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Callback triggered in response to [AdvertisingSet.setAdvertisingData](../android/bluetooth/le/AdvertisingSet.md))indicating result of the operation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onPeriodicAdvertisingEnabled](AdvertisingSetCallback.md))`(`advertisingSet:` ` [AdvertisingSet](AdvertisingSet.md)!`, `enable:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `status:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Callback triggered in response to [AdvertisingSet.setPeriodicAdvertisingEnabled](AdvertisingSet.md))indicating result of the operation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onPeriodicAdvertisingParametersUpdated](AdvertisingSetCallback.md))`(`advertisingSet:` ` [AdvertisingSet](AdvertisingSet.md)!`, `status:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Callback triggered in response to [AdvertisingSet.setPeriodicAdvertisingParameters](AdvertisingSet.md))indicating result of the operation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onScanResponseDataSet](AdvertisingSetCallback.md))`(`advertisingSet:` ` [AdvertisingSet](AdvertisingSet.md)!`, `status:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Callback triggered in response to [AdvertisingSet.setAdvertisingData](AdvertisingSet.md))indicating result of the operation. |
 | --- | --- |
 
 ## Constants
@@ -146,11 +146,11 @@ open fun onAdvertisingDataSet(
 ): Unit
 ```
 
-Callback triggered in response to [AdvertisingSet.setAdvertisingData](../android/bluetooth/le/AdvertisingSet.md))indicating result of the operation. If status is ADVERTISE_SUCCESS, then data was changed.
+Callback triggered in response to [AdvertisingSet.setAdvertisingData](AdvertisingSet.md))indicating result of the operation. If status is ADVERTISE_SUCCESS, then data was changed.
 
 | Parameters ||
 |------------------|----------------------------------------------------------------------------------------------------------------------------|
-| `advertisingSet` | [AdvertisingSet](../android/bluetooth/le/AdvertisingSet.md)!:The advertising set. |
+| `advertisingSet` | [AdvertisingSet](AdvertisingSet.md)!:The advertising set. |
 | `status` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Status of the operation. |
 
 ### onAdvertisingEnabled
@@ -169,7 +169,7 @@ Callback triggered in response to android.bluetooth.le.BluetoothLeAdvertiser#sta
 
 | Parameters ||
 |------------------|----------------------------------------------------------------------------------------------------------------------------|
-| `advertisingSet` | [AdvertisingSet](../android/bluetooth/le/AdvertisingSet.md)!:The advertising set. |
+| `advertisingSet` | [AdvertisingSet](AdvertisingSet.md)!:The advertising set. |
 | `status` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Status of the operation. |
 
 ### onAdvertisingParametersUpdated
@@ -184,11 +184,11 @@ open fun onAdvertisingParametersUpdated(
 ): Unit
 ```
 
-Callback triggered in response to [AdvertisingSet.setAdvertisingParameters](../android/bluetooth/le/AdvertisingSet.md))indicating result of the operation.
+Callback triggered in response to [AdvertisingSet.setAdvertisingParameters](AdvertisingSet.md))indicating result of the operation.
 
 | Parameters ||
 |------------------|----------------------------------------------------------------------------------------------------------------------------|
-| `advertisingSet` | [AdvertisingSet](../android/bluetooth/le/AdvertisingSet.md)!:The advertising set. |
+| `advertisingSet` | [AdvertisingSet](AdvertisingSet.md)!:The advertising set. |
 | `txPower` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):tx power that will be used for this set. |
 | `status` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Status of the operation. |
 | --- | --- |
@@ -209,7 +209,7 @@ Callback triggered in response to android.bluetooth.le.BluetoothLeAdvertiser#sta
 
 | Parameters ||
 |------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `advertisingSet` | [AdvertisingSet](../android/bluetooth/le/AdvertisingSet.md)!:The advertising set that was started or null if error. |
+| `advertisingSet` | [AdvertisingSet](AdvertisingSet.md)!:The advertising set that was started or null if error. |
 | `txPower` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):tx power that will be used for this set. |
 | `status` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Status of the operation. |
 | --- | --- |
@@ -222,11 +222,11 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 open fun onAdvertisingSetStopped(advertisingSet: AdvertisingSet!): Unit
 ```
 
-Callback triggered in response to [BluetoothLeAdvertiser.stopAdvertisingSet](../android/bluetooth/le/BluetoothLeAdvertiser.md))indicating advertising set is stopped.
+Callback triggered in response to [BluetoothLeAdvertiser.stopAdvertisingSet](BluetoothLeAdvertiser.md))indicating advertising set is stopped.
 
 | Parameters ||
 |------------------|----------------------------------------------------------------------------------------------------------------------------|
-| `advertisingSet` | [AdvertisingSet](../android/bluetooth/le/AdvertisingSet.md)!:The advertising set. |
+| `advertisingSet` | [AdvertisingSet](AdvertisingSet.md)!:The advertising set. |
 
 ### onPeriodicAdvertisingDataSet
 
@@ -239,11 +239,11 @@ open fun onPeriodicAdvertisingDataSet(
 ): Unit
 ```
 
-Callback triggered in response to [AdvertisingSet.setPeriodicAdvertisingData](../android/bluetooth/le/AdvertisingSet.md))indicating result of the operation.
+Callback triggered in response to [AdvertisingSet.setPeriodicAdvertisingData](AdvertisingSet.md))indicating result of the operation.
 
 | Parameters ||
 |------------------|----------------------------------------------------------------------------------------------------------------------------|
-| `advertisingSet` | [AdvertisingSet](../android/bluetooth/le/AdvertisingSet.md)!:The advertising set. |
+| `advertisingSet` | [AdvertisingSet](AdvertisingSet.md)!:The advertising set. |
 | `status` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Status of the operation. |
 
 ### onPeriodicAdvertisingEnabled
@@ -258,11 +258,11 @@ open fun onPeriodicAdvertisingEnabled(
 ): Unit
 ```
 
-Callback triggered in response to [AdvertisingSet.setPeriodicAdvertisingEnabled](../android/bluetooth/le/AdvertisingSet.md))indicating result of the operation.
+Callback triggered in response to [AdvertisingSet.setPeriodicAdvertisingEnabled](AdvertisingSet.md))indicating result of the operation.
 
 | Parameters ||
 |------------------|----------------------------------------------------------------------------------------------------------------------------|
-| `advertisingSet` | [AdvertisingSet](../android/bluetooth/le/AdvertisingSet.md)!:The advertising set. |
+| `advertisingSet` | [AdvertisingSet](AdvertisingSet.md)!:The advertising set. |
 | `status` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Status of the operation. |
 
 ### onPeriodicAdvertisingParametersUpdated
@@ -276,11 +276,11 @@ open fun onPeriodicAdvertisingParametersUpdated(
 ): Unit
 ```
 
-Callback triggered in response to [AdvertisingSet.setPeriodicAdvertisingParameters](../android/bluetooth/le/AdvertisingSet.md))indicating result of the operation.
+Callback triggered in response to [AdvertisingSet.setPeriodicAdvertisingParameters](AdvertisingSet.md))indicating result of the operation.
 
 | Parameters ||
 |------------------|----------------------------------------------------------------------------------------------------------------------------|
-| `advertisingSet` | [AdvertisingSet](../android/bluetooth/le/AdvertisingSet.md)!:The advertising set. |
+| `advertisingSet` | [AdvertisingSet](AdvertisingSet.md)!:The advertising set. |
 | `status` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Status of the operation. |
 
 ### onScanResponseDataSet
@@ -294,9 +294,9 @@ open fun onScanResponseDataSet(
 ): Unit
 ```
 
-Callback triggered in response to [AdvertisingSet.setAdvertisingData](../android/bluetooth/le/AdvertisingSet.md))indicating result of the operation.
+Callback triggered in response to [AdvertisingSet.setAdvertisingData](AdvertisingSet.md))indicating result of the operation.
 
 | Parameters ||
 |------------------|----------------------------------------------------------------------------------------------------------------------------|
-| `advertisingSet` | [AdvertisingSet](../android/bluetooth/le/AdvertisingSet.md)!:The advertising set. |
+| `advertisingSet` | [AdvertisingSet](AdvertisingSet.md)!:The advertising set. |
 | `status` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Status of the operation. |

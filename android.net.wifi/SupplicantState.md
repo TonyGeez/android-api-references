@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # SupplicantState
 
-Kotlin| [Java](../android/net/wifi/SupplicantState.md) 
+Kotlin| [Java](SupplicantState.md) 
 | --- | --- |
 
 ```
@@ -13,10 +13,10 @@ class SupplicantState : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [android.net.wifi.SupplicantState](../android/net/wifi/SupplicantState.md)\> ||
-| | ↳ | [android.net.wifi.SupplicantState](../android/net/wifi/SupplicantState.md) |
+| ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [android.net.wifi.SupplicantState](SupplicantState.md)\> ||
+| | ↳ | [android.net.wifi.SupplicantState](SupplicantState.md) |
 
-| Known Direct Subclasses [SupplicantState.ASSOCIATED](../android/net/wifi/SupplicantState.md), [SupplicantState.ASSOCIATING](../android/net/wifi/SupplicantState.md), [SupplicantState.AUTHENTICATING](../android/net/wifi/SupplicantState.md), [SupplicantState.COMPLETED](../android/net/wifi/SupplicantState.md), [SupplicantState.DISCONNECTED](../android/net/wifi/SupplicantState.md), [SupplicantState.DORMANT](../android/net/wifi/SupplicantState.md), [SupplicantState.FOUR_WAY_HANDSHAKE](../android/net/wifi/SupplicantState.md), [SupplicantState.GROUP_HANDSHAKE](../android/net/wifi/SupplicantState.md), [SupplicantState.INACTIVE](../android/net/wifi/SupplicantState.md), [SupplicantState.INTERFACE_DISABLED](../android/net/wifi/SupplicantState.md), [SupplicantState.INVALID](../android/net/wifi/SupplicantState.md), [SupplicantState.SCANNING](../android/net/wifi/SupplicantState.md), and 1 others. |-----------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------| | [SupplicantState.ASSOCIATED](../android/net/wifi/SupplicantState.md) | Association completed. | | [SupplicantState.ASSOCIATING](../android/net/wifi/SupplicantState.md) | Trying to associate with a BSS/SSID. | | [SupplicantState.AUTHENTICATING](../android/net/wifi/SupplicantState.md) | Trying to authenticate with a BSS/SSID | | [SupplicantState.COMPLETED](../android/net/wifi/SupplicantState.md) | All authentication completed. | | [SupplicantState.DISCONNECTED](../android/net/wifi/SupplicantState.md) | This state indicates that client is not associated, but is likely to start looking for an access point. | | [SupplicantState.DORMANT](../android/net/wifi/SupplicantState.md) | An Android-added state that is reported when a client issues an explicit DISCONNECT command. | | [SupplicantState.FOUR_WAY_HANDSHAKE](../android/net/wifi/SupplicantState.md) | WPA 4-Way Key Handshake in progress. | | [SupplicantState.GROUP_HANDSHAKE](../android/net/wifi/SupplicantState.md) | WPA Group Key Handshake in progress. | | [SupplicantState.INACTIVE](../android/net/wifi/SupplicantState.md) | Inactive state (wpa_supplicant disabled). | | [SupplicantState.INTERFACE_DISABLED](../android/net/wifi/SupplicantState.md) | Interface is disabled | | [SupplicantState.INVALID](../android/net/wifi/SupplicantState.md) | A pseudo-state that should normally never be seen. | | [SupplicantState.SCANNING](../android/net/wifi/SupplicantState.md) | Scanning for a network. | | [SupplicantState.UNINITIALIZED](../android/net/wifi/SupplicantState.md) | No connection to wpa_supplicant. | |
+| Known Direct Subclasses [SupplicantState.ASSOCIATED](SupplicantState.md), [SupplicantState.ASSOCIATING](SupplicantState.md), [SupplicantState.AUTHENTICATING](SupplicantState.md), [SupplicantState.COMPLETED](SupplicantState.md), [SupplicantState.DISCONNECTED](SupplicantState.md), [SupplicantState.DORMANT](SupplicantState.md), [SupplicantState.FOUR_WAY_HANDSHAKE](SupplicantState.md), [SupplicantState.GROUP_HANDSHAKE](SupplicantState.md), [SupplicantState.INACTIVE](SupplicantState.md), [SupplicantState.INTERFACE_DISABLED](SupplicantState.md), [SupplicantState.INVALID](SupplicantState.md), [SupplicantState.SCANNING](SupplicantState.md), and 1 others. |-----------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------| | [SupplicantState.ASSOCIATED](SupplicantState.md) | Association completed. | | [SupplicantState.ASSOCIATING](SupplicantState.md) | Trying to associate with a BSS/SSID. | | [SupplicantState.AUTHENTICATING](SupplicantState.md) | Trying to authenticate with a BSS/SSID | | [SupplicantState.COMPLETED](SupplicantState.md) | All authentication completed. | | [SupplicantState.DISCONNECTED](SupplicantState.md) | This state indicates that client is not associated, but is likely to start looking for an access point. | | [SupplicantState.DORMANT](SupplicantState.md) | An Android-added state that is reported when a client issues an explicit DISCONNECT command. | | [SupplicantState.FOUR_WAY_HANDSHAKE](SupplicantState.md) | WPA 4-Way Key Handshake in progress. | | [SupplicantState.GROUP_HANDSHAKE](SupplicantState.md) | WPA Group Key Handshake in progress. | | [SupplicantState.INACTIVE](SupplicantState.md) | Inactive state (wpa_supplicant disabled). | | [SupplicantState.INTERFACE_DISABLED](SupplicantState.md) | Interface is disabled | | [SupplicantState.INVALID](SupplicantState.md) | A pseudo-state that should normally never be seen. | | [SupplicantState.SCANNING](SupplicantState.md) | Scanning for a network. | | [SupplicantState.UNINITIALIZED](SupplicantState.md) | No connection to wpa_supplicant. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 From
@@ -33,27 +33,27 @@ Note, the order of these enum constants must match the numerical values of the s
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android.os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android.os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android.os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Enum values ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ASSOCIATED](../android/net/wifi/SupplicantState.md) Association completed. |
-| [ASSOCIATING](../android/net/wifi/SupplicantState.md) Trying to associate with a BSS/SSID. |
-| [AUTHENTICATING](../android/net/wifi/SupplicantState.md) Trying to authenticate with a BSS/SSID |
-| [COMPLETED](../android/net/wifi/SupplicantState.md) All authentication completed. |
-| [DISCONNECTED](../android/net/wifi/SupplicantState.md) This state indicates that client is not associated, but is likely to start looking for an access point. |
-| [DORMANT](../android/net/wifi/SupplicantState.md) An Android-added state that is reported when a client issues an explicit DISCONNECT command. |
-| [FOUR_WAY_HANDSHAKE](../android/net/wifi/SupplicantState.md) WPA 4-Way Key Handshake in progress. |
-| [GROUP_HANDSHAKE](../android/net/wifi/SupplicantState.md) WPA Group Key Handshake in progress. |
-| [INACTIVE](../android/net/wifi/SupplicantState.md) Inactive state (wpa_supplicant disabled). |
-| [INTERFACE_DISABLED](../android/net/wifi/SupplicantState.md) Interface is disabled |
-| [INVALID](../android/net/wifi/SupplicantState.md) A pseudo-state that should normally never be seen. |
-| [SCANNING](../android/net/wifi/SupplicantState.md) Scanning for a network. |
-| [UNINITIALIZED](../android/net/wifi/SupplicantState.md) No connection to wpa_supplicant. |
+| [ASSOCIATED](SupplicantState.md) Association completed. |
+| [ASSOCIATING](SupplicantState.md) Trying to associate with a BSS/SSID. |
+| [AUTHENTICATING](SupplicantState.md) Trying to authenticate with a BSS/SSID |
+| [COMPLETED](SupplicantState.md) All authentication completed. |
+| [DISCONNECTED](SupplicantState.md) This state indicates that client is not associated, but is likely to start looking for an access point. |
+| [DORMANT](SupplicantState.md) An Android-added state that is reported when a client issues an explicit DISCONNECT command. |
+| [FOUR_WAY_HANDSHAKE](SupplicantState.md) WPA 4-Way Key Handshake in progress. |
+| [GROUP_HANDSHAKE](SupplicantState.md) WPA Group Key Handshake in progress. |
+| [INACTIVE](SupplicantState.md) Inactive state (wpa_supplicant disabled). |
+| [INTERFACE_DISABLED](SupplicantState.md) Interface is disabled |
+| [INVALID](SupplicantState.md) A pseudo-state that should normally never be seen. |
+| [SCANNING](SupplicantState.md) Scanning for a network. |
+| [UNINITIALIZED](SupplicantState.md) No connection to wpa_supplicant. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isValidState](../android/net/wifi/SupplicantState.md))`(`state:` ` [SupplicantState](../android/net/wifi/SupplicantState.md)!`)` Returns`true`if the supplicant state is valid and`false`otherwise. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isValidState](SupplicantState.md))`(`state:` ` [SupplicantState](SupplicantState.md)!`)` Returns`true`if the supplicant state is valid and`false`otherwise. |
 
 ## Enum values
 
@@ -245,7 +245,7 @@ Returns`true`if the supplicant state is valid and`false`otherwise.
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------|
-| `state` | [SupplicantState](../android/net/wifi/SupplicantState.md)!:The supplicant state |
+| `state` | [SupplicantState](SupplicantState.md)!:The supplicant state |
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------------------------------------------|

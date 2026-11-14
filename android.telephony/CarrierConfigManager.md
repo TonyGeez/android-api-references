@@ -8,7 +8,7 @@ open class CarrierConfigManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.telephony.CarrierConfigManager](../android/telephony/CarrierConfigManager.md) |
+| ↳ | [android.telephony.CarrierConfigManager](CarrierConfigManager.md) |
 
 Provides access to telephony configuration values that are carrier-specific. 
 Requires the `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_TELEPHONY_SUBSCRIPTION:kotlin.String` feature which can be detected using `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#hasSystemFeature(kotlin.String)`.
@@ -572,12 +572,12 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 
 | Public methods ||
 |---|---|
-| open [PersistableBundle](../android/os/PersistableBundle.md)? | `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#getConfig()()` Gets the configuration values for the default subscription. |
-| open [PersistableBundle](../android/os/PersistableBundle.md) | `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#getConfig(kotlin.String)(vararg keys: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Gets the configuration values of the specified config keys applied for the default subscription. |
-| open [PersistableBundle](../android/os/PersistableBundle.md)? | `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#getConfigByComponentForSubId(kotlin.String,%20kotlin.Int)(prefix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, subId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the configuration values for a component using its prefix. |
+| open [PersistableBundle](../android.os/PersistableBundle.md)? | `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#getConfig()()` Gets the configuration values for the default subscription. |
+| open [PersistableBundle](../android.os/PersistableBundle.md) | `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#getConfig(kotlin.String)(vararg keys: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Gets the configuration values of the specified config keys applied for the default subscription. |
+| open [PersistableBundle](../android.os/PersistableBundle.md)? | `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#getConfigByComponentForSubId(kotlin.String,%20kotlin.Int)(prefix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, subId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the configuration values for a component using its prefix. |
 | --- | --- |
-| open [PersistableBundle](../android/os/PersistableBundle.md)? | `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#getConfigForSubId(kotlin.Int)(subId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the configuration values for a particular subscription, which is associated with a specific SIM card. |
-| open [PersistableBundle](../android/os/PersistableBundle.md) | `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#getConfigForSubId(kotlin.Int,%20kotlin.String)(subId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, vararg keys: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Gets the configuration values of the specified keys for a particular subscription. |
+| open [PersistableBundle](../android.os/PersistableBundle.md)? | `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#getConfigForSubId(kotlin.Int)(subId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the configuration values for a particular subscription, which is associated with a specific SIM card. |
+| open [PersistableBundle](../android.os/PersistableBundle.md) | `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#getConfigForSubId(kotlin.Int,%20kotlin.String)(subId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, vararg keys: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Gets the configuration values of the specified keys for a particular subscription. |
 | open static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#isConfigForIdentifiedCarrier(android.os.PersistableBundle)(bundle: https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#!)` Determines whether a configuration `https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#` obtained from `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#getConfig()` or `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#getConfigForSubId(kotlin.Int)` corresponds to an identified carrier. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/CarrierConfigManager#notifyConfigChangedForSubId(kotlin.Int)(subId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Calling this method triggers telephony services to fetch the current carrier configuration. |
@@ -6070,7 +6070,7 @@ After using `https://developer.android.com/reference/kotlin/android/telephony/Ca
 
 | Parameters ||
 |---|---|
-| `bundle` | [PersistableBundle](../android/os/PersistableBundle.md)!: the configuration bundle to be checked. |
+| `bundle` | [PersistableBundle](../android.os/PersistableBundle.md)!: the configuration bundle to be checked. |
 
 | Return ||
 |---|---|
@@ -6113,7 +6113,7 @@ Register a `https://developer.android.com/reference/kotlin/android/telephony/Car
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): The executor on which the listener will be called. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor on which the listener will be called. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `listener` | [CarrierConfigManager.CarrierConfigChangeListener](../android/telephony/CarrierConfigManager.CarrierConfigChangeListener.md): The CarrierConfigChangeListener called when carrier configs has changed. This value cannot be `null`. |
 
 ### unregisterCarrierConfigChangeListener

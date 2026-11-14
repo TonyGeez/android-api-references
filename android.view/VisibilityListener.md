@@ -13,7 +13,7 @@ interface VisibilityListener
 
 | [android.view.ActionProvider.VisibilityListener](../android/view/ActionProvider.VisibilityListener.md) |
 
-Listens to changes in visibility as reported by [ActionProvider.refreshVisibility()](../android/view/ActionProvider.md)).
+Listens to changes in visibility as reported by [ActionProvider.refreshVisibility()](ActionProvider.md)).
 
 ## Summary
 

@@ -5,7 +5,7 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 
 # RSRuntimeException
 
-Kotlin| [Java](../android/renderscript/RSRuntimeException.md) 
+Kotlin| [Java](RSRuntimeException.md) 
 | --- | --- |
 
 ```
@@ -15,12 +15,12 @@ open class RSRuntimeException : RuntimeException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
-| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) ||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) |||
+| | | ↳ | [java.lang.RuntimeException](../java.lang/RuntimeException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.renderscript.RSRuntimeException](../android/renderscript/RSRuntimeException.md) |
+| | | | ↳ | [android.renderscript.RSRuntimeException](RSRuntimeException.md) |
 
-| Known Direct Subclasses [RSDriverException](../android/renderscript/RSDriverException.md), [RSIllegalArgumentException](../android/renderscript/RSIllegalArgumentException.md), [RSInvalidStateException](../android/renderscript/RSInvalidStateException.md) |------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------| | [RSDriverException](../android/renderscript/RSDriverException.md) | Base class for all exceptions thrown by the Android RenderScript | | [RSIllegalArgumentException](../android/renderscript/RSIllegalArgumentException.md) | Base class for all exceptions thrown by the Android RenderScript | | [RSInvalidStateException](../android/renderscript/RSInvalidStateException.md) | Base class for all exceptions thrown by the Android RenderScript | |
+| Known Direct Subclasses [RSDriverException](RSDriverException.md), [RSIllegalArgumentException](RSIllegalArgumentException.md), [RSInvalidStateException](RSInvalidStateException.md) |------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------| | [RSDriverException](RSDriverException.md) | Base class for all exceptions thrown by the Android RenderScript | | [RSIllegalArgumentException](RSIllegalArgumentException.md) | Base class for all exceptions thrown by the Android RenderScript | | [RSInvalidStateException](RSInvalidStateException.md) | Base class for all exceptions thrown by the Android RenderScript | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | **This exception was deprecated in API level 31.**
@@ -33,7 +33,7 @@ Base class for all exceptions thrown by the Android RenderScript
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [RSRuntimeException](../android/renderscript/RSRuntimeException.md))`(`string:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| [RSRuntimeException](RSRuntimeException.md))`(`string:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
 
 ## Public constructors
 

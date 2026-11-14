@@ -9,7 +9,7 @@ class AppSearchBlobHandle : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.appsearch.AppSearchBlobHandle](../android/app/appsearch/AppSearchBlobHandle.md) |
+| ↳ | [android.app.appsearch.AppSearchBlobHandle](AppSearchBlobHandle.md) |
 
 An identifier to represent a blob in AppSearch.
 
@@ -29,7 +29,7 @@ A `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericD
 
 | Public methods ||
 |---|---|
-| static [AppSearchBlobHandle](../android/app/appsearch/AppSearchBlobHandle.md) | `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBlobHandle#createWithSha256(kotlin.ByteArray,%20kotlin.String,%20kotlin.String,%20kotlin.String)(digest: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, databaseName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, namespace: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Create a new AppSearch blob identifier with given digest, package, database and namespace. |
+| static [AppSearchBlobHandle](AppSearchBlobHandle.md) | `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBlobHandle#createWithSha256(kotlin.ByteArray,%20kotlin.String,%20kotlin.String,%20kotlin.String)(digest: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, databaseName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, namespace: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Create a new AppSearch blob identifier with given digest, package, database and namespace. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBlobHandle#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBlobHandle#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | --- | --- |
@@ -45,7 +45,7 @@ A `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericD
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [AppSearchBlobHandle](../android/app/appsearch/AppSearchBlobHandle.md)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBlobHandle#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [AppSearchBlobHandle](AppSearchBlobHandle.md)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBlobHandle#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public methods
 
@@ -241,7 +241,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

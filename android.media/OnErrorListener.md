@@ -19,7 +19,7 @@ Interface definition of a callback to be invoked when there has been an error du
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onError](../android/media/MediaPlayer.OnErrorListener.md))`(`mp:` ` [MediaPlayer](../android/media/MediaPlayer.md)!`, `what:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `extra:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called to indicate an error. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onError](../android/media/MediaPlayer.OnErrorListener.md))`(`mp:` ` [MediaPlayer](MediaPlayer.md)!`, `what:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `extra:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called to indicate an error. |
 
 ## Public methods
 
@@ -39,9 +39,9 @@ Called to indicate an error.
 
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `mp` | [MediaPlayer](../android/media/MediaPlayer.md)!:the MediaPlayer the error pertains to |
-| `what` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the type of error that has occurred: - [MEDIA_ERROR_UNKNOWN](../android/media/MediaPlayer.md) - [MEDIA_ERROR_SERVER_DIED](../android/media/MediaPlayer.md) |
-| `extra` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):an extra code, specific to the error. Typically implementation dependent. - [MEDIA_ERROR_IO](../android/media/MediaPlayer.md) - [MEDIA_ERROR_MALFORMED](../android/media/MediaPlayer.md) - [MEDIA_ERROR_UNSUPPORTED](../android/media/MediaPlayer.md) - [MEDIA_ERROR_TIMED_OUT](../android/media/MediaPlayer.md) - `MEDIA_ERROR_SYSTEM (-2147483648)`- low-level system error. |
+| `mp` | [MediaPlayer](MediaPlayer.md)!:the MediaPlayer the error pertains to |
+| `what` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the type of error that has occurred: - [MEDIA_ERROR_UNKNOWN](MediaPlayer.md) - [MEDIA_ERROR_SERVER_DIED](MediaPlayer.md) |
+| `extra` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):an extra code, specific to the error. Typically implementation dependent. - [MEDIA_ERROR_IO](MediaPlayer.md) - [MEDIA_ERROR_MALFORMED](MediaPlayer.md) - [MEDIA_ERROR_UNSUPPORTED](MediaPlayer.md) - [MEDIA_ERROR_TIMED_OUT](MediaPlayer.md) - `MEDIA_ERROR_SYSTEM (-2147483648)`- low-level system error. |
 | --- | --- |
 
 | Return ||

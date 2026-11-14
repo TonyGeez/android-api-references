@@ -19,7 +19,7 @@ Interface definition of a callback to be invoked when the DRM info becomes avail
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDrmInfo](../android/media/MediaPlayer.OnDrmInfoListener.md))`(`mp:` ` [MediaPlayer](../android/media/MediaPlayer.md)!`, `drmInfo:` ` [MediaPlayer.DrmInfo](../android/media/MediaPlayer.DrmInfo.md)!`)` Called to indicate DRM info is available |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDrmInfo](../android/media/MediaPlayer.OnDrmInfoListener.md))`(`mp:` ` [MediaPlayer](MediaPlayer.md)!`, `drmInfo:` ` [MediaPlayer.DrmInfo](../android/media/MediaPlayer.DrmInfo.md)!`)` Called to indicate DRM info is available |
 
 ## Public methods
 
@@ -38,5 +38,5 @@ Called to indicate DRM info is available
 
 | Parameters ||
 |-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `mp` | [MediaPlayer](../android/media/MediaPlayer.md)!:the`MediaPlayer`associated with this callback |
+| `mp` | [MediaPlayer](MediaPlayer.md)!:the`MediaPlayer`associated with this callback |
 | `drmInfo` | [MediaPlayer.DrmInfo](../android/media/MediaPlayer.DrmInfo.md)!:DRM info of the source including PSSH, and subset of crypto schemes supported by this device |

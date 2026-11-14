@@ -10,9 +10,9 @@ abstract class SignatureSpi
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.SignatureSpi](../java/security/SignatureSpi.md) |
+| ↳ | [java.security.SignatureSpi](SignatureSpi.md) |
 
-| Known Direct Subclasses [Signature](../java/security/Signature.md) |-------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------| | [Signature](../java/security/Signature.md) | The Signature class is used to provide applications the functionality of a digital signature algorithm. | |
+| Known Direct Subclasses [Signature](Signature.md) |-------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------| | [Signature](Signature.md) | The Signature class is used to provide applications the functionality of a digital signature algorithm. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 This class defines the*Service Provider Interface* (**SPI** ) for the`Signature`class, which is used to provide the functionality of a digital signature algorithm. Digital signatures are used for authentication and integrity assurance of digital data. .
@@ -23,36 +23,36 @@ All the abstract methods in this class must be implemented by each cryptographic
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------|---|
-| [SignatureSpi](../java/security/SignatureSpi.md))`()` <br /> |
+| [SignatureSpi](SignatureSpi.md))`()` <br /> |
 
 | Public methods ||
 |---------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [clone](../java/security/SignatureSpi.md))`()` Returns a clone if the implementation is cloneable. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [clone](SignatureSpi.md))`()` Returns a clone if the implementation is cloneable. |
 
 | Protected methods ||
 |--------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [engineGetParameter](../java/security/SignatureSpi.md))`(`param:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Gets the value of the specified algorithm parameter. |
-| open [AlgorithmParameters](../java/security/AlgorithmParameters.md)! | [engineGetParameters](../java/security/SignatureSpi.md))`()` This method is overridden by providers to return the parameters used with this signature engine, or null if this signature engine does not use any parameters. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInitSign](../java/security/SignatureSpi.md))`(`privateKey:` ` [PrivateKey](../java/security/PrivateKey.md)!`)` Initializes this signature object with the specified private key for signing operations. |
+| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [engineGetParameter](SignatureSpi.md))`(`param:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Gets the value of the specified algorithm parameter. |
+| open [AlgorithmParameters](AlgorithmParameters.md)! | [engineGetParameters](SignatureSpi.md))`()` This method is overridden by providers to return the parameters used with this signature engine, or null if this signature engine does not use any parameters. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInitSign](SignatureSpi.md))`(`privateKey:` ` [PrivateKey](PrivateKey.md)!`)` Initializes this signature object with the specified private key for signing operations. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInitSign](../java/security/SignatureSpi.md))`(`privateKey:` ` [PrivateKey](../java/security/PrivateKey.md)!`, `random:` ` [SecureRandom](../java/security/SecureRandom.md)!`)` Initializes this signature object with the specified private key and source of randomness for signing operations. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInitVerify](../java/security/SignatureSpi.md))`(`publicKey:` ` [PublicKey](../java/security/PublicKey.md)!`)` Initializes this signature object with the specified public key for verification operations. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineSetParameter](../java/security/SignatureSpi.md))`(`param:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Sets the specified algorithm parameter to the specified value. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInitSign](SignatureSpi.md))`(`privateKey:` ` [PrivateKey](PrivateKey.md)!`, `random:` ` [SecureRandom](SecureRandom.md)!`)` Initializes this signature object with the specified private key and source of randomness for signing operations. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInitVerify](SignatureSpi.md))`(`publicKey:` ` [PublicKey](PublicKey.md)!`)` Initializes this signature object with the specified public key for verification operations. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineSetParameter](SignatureSpi.md))`(`param:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Sets the specified algorithm parameter to the specified value. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineSetParameter](../java/security/SignatureSpi.md))`(`params:` ` [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)!`)` This method is overridden by providers to initialize this signature engine with the specified parameter set. |
-| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [engineSign](../java/security/SignatureSpi.md))`()` Returns the signature bytes of all the data updated so far. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [engineSign](../java/security/SignatureSpi.md))`(`outbuf:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Finishes this signature operation and stores the resulting signature bytes in the provided buffer`outbuf`, starting at`offset`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineSetParameter](SignatureSpi.md))`(`params:` ` [AlgorithmParameterSpec](../java.security.spec/AlgorithmParameterSpec.md)!`)` This method is overridden by providers to initialize this signature engine with the specified parameter set. |
+| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [engineSign](SignatureSpi.md))`()` Returns the signature bytes of all the data updated so far. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [engineSign](SignatureSpi.md))`(`outbuf:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Finishes this signature operation and stores the resulting signature bytes in the provided buffer`outbuf`, starting at`offset`. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineUpdate](../java/security/SignatureSpi.md))`(`b:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Updates the data to be signed or verified using the specified byte. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineUpdate](../java/security/SignatureSpi.md))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Updates the data to be signed or verified, using the specified array of bytes, starting at the specified offset. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineUpdate](../java/security/SignatureSpi.md))`(`input:` ` [ByteBuffer](../java/nio/ByteBuffer.md)!`)` Updates the data to be signed or verified using the specified ByteBuffer. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineUpdate](SignatureSpi.md))`(`b:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Updates the data to be signed or verified using the specified byte. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineUpdate](SignatureSpi.md))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Updates the data to be signed or verified, using the specified array of bytes, starting at the specified offset. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineUpdate](SignatureSpi.md))`(`input:` ` [ByteBuffer](../java.nio/ByteBuffer.md)!`)` Updates the data to be signed or verified using the specified ByteBuffer. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [engineVerify](../java/security/SignatureSpi.md))`(`sigBytes:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Verifies the passed-in signature. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [engineVerify](../java/security/SignatureSpi.md))`(`sigBytes:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Verifies the passed-in signature in the specified array of bytes, starting at the specified offset. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [engineVerify](SignatureSpi.md))`(`sigBytes:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Verifies the passed-in signature. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [engineVerify](SignatureSpi.md))`(`sigBytes:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Verifies the passed-in signature in the specified array of bytes, starting at the specified offset. |
 
 | Properties ||
 |--------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [SecureRandom](../java/security/SecureRandom.md)! | [appRandom](../java/security/SignatureSpi.md) Application-specified source of randomness. |
+| [SecureRandom](SecureRandom.md)! | [appRandom](SignatureSpi.md) Application-specified source of randomness. |
 
 ## Public constructors
 
@@ -126,7 +126,7 @@ The returned parameters may be the same that were used to initialize this signat
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| [AlgorithmParameters](../java/security/AlgorithmParameters.md)! | the parameters used with this signature engine, or null if this signature engine does not use any parameters |
+| [AlgorithmParameters](AlgorithmParameters.md)! | the parameters used with this signature engine, or null if this signature engine does not use any parameters |
 
 | Exceptions ||
 |-------------------------------------------|------------------------------------------------|
@@ -144,7 +144,7 @@ Initializes this signature object with the specified private key for signing ope
 
 | Parameters ||
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `privateKey` | [PrivateKey](../java/security/PrivateKey.md)!:the private key of the identity whose signature will be generated. |
+| `privateKey` | [PrivateKey](PrivateKey.md)!:the private key of the identity whose signature will be generated. |
 
 | Exceptions ||
 |-------------------------------------|----------------------------------------------------------------------|
@@ -167,8 +167,8 @@ This concrete method has been added to this previously-defined abstract class. (
 
 | Parameters ||
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `privateKey` | [PrivateKey](../java/security/PrivateKey.md)!:the private key of the identity whose signature will be generated. |
-| `random` | [SecureRandom](../java/security/SecureRandom.md)!:the source of randomness |
+| `privateKey` | [PrivateKey](PrivateKey.md)!:the private key of the identity whose signature will be generated. |
+| `random` | [SecureRandom](SecureRandom.md)!:the source of randomness |
 
 | Exceptions ||
 |-------------------------------------|----------------------------------------------------------------------|
@@ -186,7 +186,7 @@ Initializes this signature object with the specified public key for verification
 
 | Parameters ||
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `publicKey` | [PublicKey](../java/security/PublicKey.md)!:the public key of the identity whose signature is going to be verified. |
+| `publicKey` | [PublicKey](PublicKey.md)!:the public key of the identity whose signature is going to be verified. |
 
 | Exceptions ||
 |-------------------------------------|----------------------------------------------------------------------|
@@ -204,7 +204,7 @@ protected abstract fun engineSetParameter(
 ): Unit
 ```
 
-**Deprecated:** *Replaced by [engineSetParameter](../java/security/SignatureSpi.md)).*
+**Deprecated:** *Replaced by [engineSetParameter](SignatureSpi.md)).*
 
 Sets the specified algorithm parameter to the specified value. This method supplies a general-purpose mechanism through which it is possible to set the various parameters of this object. A parameter may be any settable parameter for the algorithm, such as a parameter size, or a source of random bits for signature generation (if appropriate), or an indication of whether or not to perform a specific but optional computation. A uniform algorithm-specific naming scheme for each parameter is desirable but left unspecified at this time.
 
@@ -229,7 +229,7 @@ This method is overridden by providers to initialize this signature engine with 
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------|
-| `params` | [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)!:the parameters |
+| `params` | [AlgorithmParameterSpec](../java.security.spec/AlgorithmParameterSpec.md)!:the parameters |
 
 | Exceptions ||
 |----------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
@@ -340,7 +340,7 @@ Updates the data to be signed or verified using the specified ByteBuffer. Proces
 
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------|
-| `input` | [ByteBuffer](../java/nio/ByteBuffer.md)!:the ByteBuffer |
+| `input` | [ByteBuffer](../java.nio/ByteBuffer.md)!:the ByteBuffer |
 
 ### engineVerify
 

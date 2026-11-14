@@ -8,7 +8,7 @@ open class Semaphore : Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.util.concurrent.Semaphore](../java/util/concurrent/Semaphore.md) |
+| ↳ | [java.util.concurrent.Semaphore](Semaphore.md) |
 
 A counting semaphore. Conceptually, a semaphore maintains a set of permits. Each #acquire blocks if necessary until a permit is available, and then takes it. Each #release adds a permit, potentially releasing a blocking acquirer. However, no actual permit objects are used; the `Semaphore` just keeps a count of the number available and acts accordingly.
 
@@ -69,7 +69,7 @@ Generally, semaphores used to control resource access should be initialized as f
 
 This class also provides convenience methods to `https://developer.android.com/reference/kotlin/java/util/concurrent/Semaphore#acquire(kotlin.Int)` and `https://developer.android.com/reference/kotlin/java/util/concurrent/Semaphore#release(kotlin.Int)` multiple permits at a time. These methods are generally more efficient and effective than loops. However, they do not establish any preference order. For example, if thread A invokes `s.acquire(3`) and thread B invokes `s.acquire(2)`, and two permits become available, then there is no guarantee that thread B will obtain them unless its acquire came first and Semaphore `s` is in fair mode.
 
-Memory consistency effects: Actions in a thread prior to calling a "release" method such as `release()` [*happen-before*](../java/util/concurrent/_package.md) actions following a successful "acquire" method such as `acquire()` in another thread.
+Memory consistency effects: Actions in a thread prior to calling a "release" method such as `release()` [*happen-before*](_package.md) actions following a successful "acquire" method such as `acquire()` in another thread.
 
 ## Summary
 
@@ -80,8 +80,8 @@ Memory consistency effects: Actions in a thread prior to calling a "release" met
 
 | Public methods ||
 |---|---|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/Semaphore#acquire()()` Acquires a permit from this semaphore, blocking until one is available, or the thread is [interrupted](../java/lang/Thread.md)). |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/Semaphore#acquire(kotlin.Int)(permits: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Acquires the given number of permits from this semaphore, blocking until all are available, or the thread is [interrupted](../java/lang/Thread.md)). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/Semaphore#acquire()()` Acquires a permit from this semaphore, blocking until one is available, or the thread is [interrupted](../java.lang/Thread.md)). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/Semaphore#acquire(kotlin.Int)(permits: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Acquires the given number of permits from this semaphore, blocking until all are available, or the thread is [interrupted](../java.lang/Thread.md)). |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/Semaphore#acquireUninterruptibly()()` Acquires a permit from this semaphore, blocking until one is available. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/Semaphore#acquireUninterruptibly(kotlin.Int)(permits: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Acquires the given number of permits from this semaphore, blocking until all are available. |
@@ -98,13 +98,13 @@ Memory consistency effects: Actions in a thread prior to calling a "release" met
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/Semaphore#tryAcquire()()` Acquires a permit from this semaphore, only if one is available at the time of invocation. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/Semaphore#tryAcquire(kotlin.Int)(permits: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Acquires the given number of permits from this semaphore, only if all are available at the time of invocation. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/Semaphore#tryAcquire(kotlin.Int,%20kotlin.Long,%20java.util.concurrent.TimeUnit)(permits: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, timeout: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, unit: https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit!)` Acquires the given number of permits from this semaphore, if all become available within the given waiting time and the current thread has not been [interrupted](../java/lang/Thread.md)) |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/Semaphore#tryAcquire(kotlin.Int,%20kotlin.Long,%20java.util.concurrent.TimeUnit)(permits: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, timeout: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, unit: https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit!)` Acquires the given number of permits from this semaphore, if all become available within the given waiting time and the current thread has not been [interrupted](../java.lang/Thread.md)) |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/Semaphore#tryAcquire(kotlin.Long,%20java.util.concurrent.TimeUnit)(timeout: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, unit: https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit!)` Acquires a permit from this semaphore, if one becomes available within the given waiting time and the current thread has not been [interrupted](../java/lang/Thread.md)). |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/Semaphore#tryAcquire(kotlin.Long,%20java.util.concurrent.TimeUnit)(timeout: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, unit: https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit!)` Acquires a permit from this semaphore, if one becomes available within the given waiting time and the current thread has not been [interrupted](../java.lang/Thread.md)). |
 
 | Protected methods ||
 |---|---|
-| open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Thread](../java/lang/Thread.md)!\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/Semaphore#getQueuedThreads()()` Returns a collection containing threads that may be waiting to acquire. |
+| open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Thread](../java.lang/Thread.md)!\>! | `https://developer.android.com/reference/kotlin/java/util/concurrent/Semaphore#getQueuedThreads()()` Returns a collection containing threads that may be waiting to acquire. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/util/concurrent/Semaphore#reducePermits(kotlin.Int)(reduction: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Shrinks the number of available permits by the indicated reduction. |
 
 ## Public constructors
@@ -150,19 +150,19 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun acquire(): Unit
 ```
 
-Acquires a permit from this semaphore, blocking until one is available, or the thread is [interrupted](../java/lang/Thread.md)).
+Acquires a permit from this semaphore, blocking until one is available, or the thread is [interrupted](../java.lang/Thread.md)).
 
 Acquires a permit, if one is available and returns immediately, reducing the number of available permits by one.
 
 If no permit is available then the current thread becomes disabled for thread scheduling purposes and lies dormant until one of two things happens:
 
 - Some other thread invokes the #release method for this semaphore and the current thread is next to be assigned a permit; or
-- Some other thread [interrupts](../java/lang/Thread.md)) the current thread.
+- Some other thread [interrupts](../java.lang/Thread.md)) the current thread.
 
 If the current thread:
 
 - has its interrupted status set on entry to this method; or
-- is [interrupted](../java/lang/Thread.md)) while waiting for a permit,
+- is [interrupted](../java.lang/Thread.md)) while waiting for a permit,
 
 then `https://developer.android.com/reference/kotlin/java/lang/InterruptedException.html#` is thrown and the current thread's interrupted status is cleared.
 
@@ -178,19 +178,19 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun acquire(permits: Int): Unit
 ```
 
-Acquires the given number of permits from this semaphore, blocking until all are available, or the thread is [interrupted](../java/lang/Thread.md)).
+Acquires the given number of permits from this semaphore, blocking until all are available, or the thread is [interrupted](../java.lang/Thread.md)).
 
 Acquires the given number of permits, if they are available, and returns immediately, reducing the number of available permits by the given amount. This method has the same effect as the loop `for (int i = 0; i < permits; ++i) acquire();` except that it atomically acquires the permits all at once:
 
 If insufficient permits are available then the current thread becomes disabled for thread scheduling purposes and lies dormant until one of two things happens:
 
 - Some other thread invokes one of the `https://developer.android.com/reference/kotlin/java/util/concurrent/Semaphore#release()` methods for this semaphore and the current thread is next to be assigned permits and the number of available permits satisfies this request; or
-- Some other thread [interrupts](../java/lang/Thread.md)) the current thread.
+- Some other thread [interrupts](../java.lang/Thread.md)) the current thread.
 
 If the current thread:
 
 - has its interrupted status set on entry to this method; or
-- is [interrupted](../java/lang/Thread.md)) while waiting for a permit,
+- is [interrupted](../java.lang/Thread.md)) while waiting for a permit,
 
 then `https://developer.android.com/reference/kotlin/java/lang/InterruptedException.html#` is thrown and the current thread's interrupted status is cleared. Any permits that were to be assigned to this thread are instead assigned to other threads trying to acquire permits, as if permits had been made available by a call to `https://developer.android.com/reference/kotlin/java/util/concurrent/Semaphore#release()`.
 
@@ -217,7 +217,7 @@ Acquires a permit, if one is available and returns immediately, reducing the num
 
 If no permit is available then the current thread becomes disabled for thread scheduling purposes and lies dormant until some other thread invokes the #release method for this semaphore and the current thread is next to be assigned a permit.
 
-If the current thread is [interrupted](../java/lang/Thread.md)) while waiting for a permit then it will continue to wait, but the time at which the thread is assigned a permit may change compared to the time it would have received the permit had no interruption occurred. When the thread does return from this method its interrupt status will be set.
+If the current thread is [interrupted](../java.lang/Thread.md)) while waiting for a permit then it will continue to wait, but the time at which the thread is assigned a permit may change compared to the time it would have received the permit had no interruption occurred. When the thread does return from this method its interrupt status will be set.
 
 ### acquireUninterruptibly
 
@@ -233,7 +233,7 @@ Acquires the given number of permits, if they are available, and returns immedia
 
 If insufficient permits are available then the current thread becomes disabled for thread scheduling purposes and lies dormant until some other thread invokes one of the `https://developer.android.com/reference/kotlin/java/util/concurrent/Semaphore#release()` methods for this semaphore and the current thread is next to be assigned permits and the number of available permits satisfies this request.
 
-If the current thread is [interrupted](../java/lang/Thread.md)) while waiting for permits then it will continue to wait and its position in the queue is not affected. When the thread does return from this method its interrupt status will be set.
+If the current thread is [interrupted](../java.lang/Thread.md)) while waiting for permits then it will continue to wait and its position in the queue is not affected. When the thread does return from this method its interrupt status will be set.
 
 | Parameters ||
 |---|---|
@@ -425,14 +425,14 @@ open fun tryAcquire(
 ): Boolean
 ```
 
-Acquires the given number of permits from this semaphore, if all become available within the given waiting time and the current thread has not been [interrupted](../java/lang/Thread.md))
+Acquires the given number of permits from this semaphore, if all become available within the given waiting time and the current thread has not been [interrupted](../java.lang/Thread.md))
 
 Acquires the given number of permits, if they are available and returns immediately, with the value `true`, reducing the number of available permits by the given amount.
 
 If insufficient permits are available then the current thread becomes disabled for thread scheduling purposes and lies dormant until one of three things happens:
 
 - Some other thread invokes one of the `https://developer.android.com/reference/kotlin/java/util/concurrent/Semaphore#release()` methods for this semaphore and the current thread is next to be assigned permits and the number of available permits satisfies this request; or
-- Some other thread [interrupts](../java/lang/Thread.md)) the current thread; or
+- Some other thread [interrupts](../java.lang/Thread.md)) the current thread; or
 - The specified waiting time elapses.
 
 If the permits are acquired then the value `true` is returned.
@@ -440,7 +440,7 @@ If the permits are acquired then the value `true` is returned.
 If the current thread:
 
 - has its interrupted status set on entry to this method; or
-- is [interrupted](../java/lang/Thread.md)) while waiting to acquire the permits,
+- is [interrupted](../java.lang/Thread.md)) while waiting to acquire the permits,
 
 then `https://developer.android.com/reference/kotlin/java/lang/InterruptedException.html#` is thrown and the current thread's interrupted status is cleared. Any permits that were to be assigned to this thread, are instead assigned to other threads trying to acquire permits, as if the permits had been made available by a call to `https://developer.android.com/reference/kotlin/java/util/concurrent/Semaphore#release()`.
 
@@ -450,7 +450,7 @@ If the specified waiting time elapses then the value `false` is returned. If the
 |---|---|
 | `permits` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the number of permits to acquire |
 | `timeout` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the maximum time to wait for the permits |
-| `unit` | [TimeUnit](../java/util/concurrent/TimeUnit.md)!: the time unit of the `timeout` argument |
+| `unit` | [TimeUnit](TimeUnit.md)!: the time unit of the `timeout` argument |
 | --- | --- |
 
 | Return ||
@@ -473,14 +473,14 @@ open fun tryAcquire(
 ): Boolean
 ```
 
-Acquires a permit from this semaphore, if one becomes available within the given waiting time and the current thread has not been [interrupted](../java/lang/Thread.md)).
+Acquires a permit from this semaphore, if one becomes available within the given waiting time and the current thread has not been [interrupted](../java.lang/Thread.md)).
 
 Acquires a permit, if one is available and returns immediately, with the value `true`, reducing the number of available permits by one.
 
 If no permit is available then the current thread becomes disabled for thread scheduling purposes and lies dormant until one of three things happens:
 
 - Some other thread invokes the #release method for this semaphore and the current thread is next to be assigned a permit; or
-- Some other thread [interrupts](../java/lang/Thread.md)) the current thread; or
+- Some other thread [interrupts](../java.lang/Thread.md)) the current thread; or
 - The specified waiting time elapses.
 
 If a permit is acquired then the value `true` is returned.
@@ -488,7 +488,7 @@ If a permit is acquired then the value `true` is returned.
 If the current thread:
 
 - has its interrupted status set on entry to this method; or
-- is [interrupted](../java/lang/Thread.md)) while waiting to acquire a permit,
+- is [interrupted](../java.lang/Thread.md)) while waiting to acquire a permit,
 
 then `https://developer.android.com/reference/kotlin/java/lang/InterruptedException.html#` is thrown and the current thread's interrupted status is cleared.
 
@@ -497,7 +497,7 @@ If the specified waiting time elapses then the value `false` is returned. If the
 | Parameters ||
 |---|---|
 | `timeout` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the maximum time to wait for a permit |
-| `unit` | [TimeUnit](../java/util/concurrent/TimeUnit.md)!: the time unit of the `timeout` argument |
+| `unit` | [TimeUnit](TimeUnit.md)!: the time unit of the `timeout` argument |
 
 | Return ||
 |---|---|

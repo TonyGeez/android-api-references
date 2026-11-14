@@ -13,7 +13,7 @@ interface OnGroupExpandListener
 
 | [android.widget.ExpandableListView.OnGroupExpandListener](../android/widget/ExpandableListView.OnGroupExpandListener.md) |
 
-| Known Direct Subclasses [ExpandableListActivity](../android/app/ExpandableListActivity.md) |-------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [ExpandableListActivity](../android/app/ExpandableListActivity.md) | An activity that displays an expandable list of items by binding to a data source implementing the ExpandableListAdapter, and exposes event handlers when the user selects an item. | |
+| Known Direct Subclasses [ExpandableListActivity](../android.app/ExpandableListActivity.md) |-------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [ExpandableListActivity](../android.app/ExpandableListActivity.md) | An activity that displays an expandable list of items by binding to a data source implementing the ExpandableListAdapter, and exposes event handlers when the user selects an item. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 Used for being notified when a group is expanded

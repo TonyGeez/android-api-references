@@ -4,7 +4,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # MediaMetricsManager
 
-Kotlin| [Java](../android/media/metrics/MediaMetricsManager.md) 
+Kotlin| [Java](MediaMetricsManager.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class MediaMetricsManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.metrics.MediaMetricsManager](../android/media/metrics/MediaMetricsManager.md) |
+| ↳ | [android.media.metrics.MediaMetricsManager](MediaMetricsManager.md) |
 
 This class gives information about, and interacts with media metrics.
 
@@ -21,17 +21,17 @@ This class gives information about, and interacts with media metrics.
 
 | Constants ||
 |------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [INVALID_TIMESTAMP](../android/media/metrics/MediaMetricsManager.md) <br /> |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [INVALID_TIMESTAMP](MediaMetricsManager.md) <br /> |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [BundleSession](../android/media/metrics/BundleSession.md) | [createBundleSession](../android/media/metrics/MediaMetricsManager.md))`()` Creates a generic bundle session. |
-| [EditingSession](../android/media/metrics/EditingSession.md) | [createEditingSession](../android/media/metrics/MediaMetricsManager.md))`()` Creates a editing session. |
-| [PlaybackSession](../android/media/metrics/PlaybackSession.md) | [createPlaybackSession](../android/media/metrics/MediaMetricsManager.md))`()` Creates a playback session. |
+| [BundleSession](BundleSession.md) | [createBundleSession](MediaMetricsManager.md))`()` Creates a generic bundle session. |
+| [EditingSession](EditingSession.md) | [createEditingSession](MediaMetricsManager.md))`()` Creates a editing session. |
+| [PlaybackSession](PlaybackSession.md) | [createPlaybackSession](MediaMetricsManager.md))`()` Creates a playback session. |
 | --- | --- |
-| [RecordingSession](../android/media/metrics/RecordingSession.md) | [createRecordingSession](../android/media/metrics/MediaMetricsManager.md))`()` Creates a recording session. |
-| [TranscodingSession](../android/media/metrics/TranscodingSession.md) | [createTranscodingSession](../android/media/metrics/MediaMetricsManager.md))`()` Creates a transcoding session. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [releaseSessionId](../android/media/metrics/MediaMetricsManager.md))`(`sessionId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Creates a generic bundle session. |
+| [RecordingSession](RecordingSession.md) | [createRecordingSession](MediaMetricsManager.md))`()` Creates a recording session. |
+| [TranscodingSession](TranscodingSession.md) | [createTranscodingSession](MediaMetricsManager.md))`()` Creates a transcoding session. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [releaseSessionId](MediaMetricsManager.md))`(`sessionId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Creates a generic bundle session. |
 | --- | --- |
 
 ## Constants
@@ -60,7 +60,7 @@ Creates a generic bundle session.
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------|-----------------------------|
-| [BundleSession](../android/media/metrics/BundleSession.md) | This value cannot be`null`. |
+| [BundleSession](BundleSession.md) | This value cannot be`null`. |
 
 ### createEditingSession
 
@@ -74,7 +74,7 @@ Creates a editing session.
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------|-----------------------------|
-| [EditingSession](../android/media/metrics/EditingSession.md) | This value cannot be`null`. |
+| [EditingSession](EditingSession.md) | This value cannot be`null`. |
 
 ### createPlaybackSession
 
@@ -88,7 +88,7 @@ Creates a playback session.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------|-----------------------------|
-| [PlaybackSession](../android/media/metrics/PlaybackSession.md) | This value cannot be`null`. |
+| [PlaybackSession](PlaybackSession.md) | This value cannot be`null`. |
 
 ### createRecordingSession
 
@@ -102,7 +102,7 @@ Creates a recording session.
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|-----------------------------|
-| [RecordingSession](../android/media/metrics/RecordingSession.md) | This value cannot be`null`. |
+| [RecordingSession](RecordingSession.md) | This value cannot be`null`. |
 
 ### createTranscodingSession
 
@@ -116,7 +116,7 @@ Creates a transcoding session.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [TranscodingSession](../android/media/metrics/TranscodingSession.md) | This value cannot be`null`. |
+| [TranscodingSession](TranscodingSession.md) | This value cannot be`null`. |
 
 ### releaseSessionId
 

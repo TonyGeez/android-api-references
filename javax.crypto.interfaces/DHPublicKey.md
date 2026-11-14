@@ -8,7 +8,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface DHPublicKey : DHKey, PublicKey
 ```
 
-| [javax.crypto.interfaces.DHPublicKey](../javax/crypto/interfaces/DHPublicKey.md) |
+| [javax.crypto.interfaces.DHPublicKey](DHPublicKey.md) |
 
 The interface to a Diffie-Hellman public key.
 
@@ -16,15 +16,15 @@ The interface to a Diffie-Hellman public key.
 
 | Constants ||
 |------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [serialVersionUID](../javax/crypto/interfaces/DHPublicKey.md) The class fingerprint that is set to indicate serialization compatibility since J2SE 1. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [serialVersionUID](DHPublicKey.md) The class fingerprint that is set to indicate serialization compatibility since J2SE 1. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [BigInteger](../java/math/BigInteger.md)! | [getY](../javax/crypto/interfaces/DHPublicKey.md))`()` Returns the public value,`y`. |
+| abstract [BigInteger](../java.math/BigInteger.md)! | [getY](DHPublicKey.md))`()` Returns the public value,`y`. |
 
 | Inherited functions ||
 |---|---|
-| From class [DHKey](../javax/crypto/interfaces/DHKey.md) |------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------| | [DHParameterSpec](../javax/crypto/spec/DHParameterSpec.md)! | [getParams](../javax/crypto/interfaces/DHKey.md))`()` <br /> Returns the key parameters. <br /> | ||
+| From class [DHKey](DHKey.md) |------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------| | [DHParameterSpec](../javax.crypto.spec/DHParameterSpec.md)! | [getParams](DHKey.md))`()` <br /> Returns the key parameters. <br /> | ||
 
 ## Constants
 
@@ -54,4 +54,4 @@ Returns the public value,`y`.
 
 | Return ||
 |------------------------------------------------------------------------------------------|----------------------|
-| [BigInteger](../java/math/BigInteger.md)! | the public value,`y` |
+| [BigInteger](../java.math/BigInteger.md)! | the public value,`y` |

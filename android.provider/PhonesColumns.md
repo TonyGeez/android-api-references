@@ -19,7 +19,7 @@ interface PhonesColumns
 
 | **This interface was deprecated in API level 5.**
 |
-| see [android.provider.ContactsContract](../android/provider/ContactsContract.md)
+| see [android.provider.ContactsContract](ContactsContract.md)
 
 Columns from the Phones table that other columns join into themselves.
 
@@ -55,7 +55,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val ISPRIMARY: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)*
 
 Whether this is the primary phone number
 
@@ -71,7 +71,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val LABEL: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)*
 
 The user provided label for the phone number, only used if TYPE is TYPE_CUSTOM.
 
@@ -87,7 +87,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val NUMBER: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)*
 
 The phone number as the user entered it.
 
@@ -103,7 +103,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val NUMBER_KEY: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)*
 
 The normalized phone number
 
@@ -119,7 +119,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val TYPE: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)*
 
 The type of the the phone number.
 
@@ -135,7 +135,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val TYPE_CUSTOM: Int
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)* 
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)* 
 
  Value: 0
 
@@ -147,7 +147,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val TYPE_FAX_HOME: Int
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)* 
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)* 
 
  Value: 5
 
@@ -159,7 +159,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val TYPE_FAX_WORK: Int
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)* 
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)* 
 
  Value: 4
 
@@ -171,7 +171,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val TYPE_HOME: Int
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)* 
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)* 
 
  Value: 1
 
@@ -183,7 +183,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val TYPE_MOBILE: Int
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)* 
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)* 
 
  Value: 2
 
@@ -195,7 +195,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val TYPE_OTHER: Int
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)* 
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)* 
 
  Value: 7
 
@@ -207,7 +207,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val TYPE_PAGER: Int
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)* 
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)* 
 
  Value: 6
 
@@ -219,6 +219,6 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val TYPE_WORK: Int
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)* 
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)* 
 
  Value: 3

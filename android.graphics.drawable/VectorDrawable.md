@@ -8,8 +8,8 @@ open class VectorDrawable : Drawable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.graphics.drawable.Drawable](../android/graphics/drawable/Drawable.md) ||
-| | ↳ | [android.graphics.drawable.VectorDrawable](../android/graphics/drawable/VectorDrawable.md) |
+| ↳ | [android.graphics.drawable.Drawable](Drawable.md) ||
+| | ↳ | [android.graphics.drawable.VectorDrawable](VectorDrawable.md) |
 
 This lets you create a drawable based on an XML vector graphic.
 
@@ -225,21 +225,21 @@ And here is a simple example that defines a radial gradient using color items.
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/VectorDrawable#getAlpha()()` Gets the current alpha value for the drawable. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/VectorDrawable#getChangingConfigurations()()` Return a mask of the configuration parameters for which this drawable may change, requiring that it be re-created. |
-| open [ColorFilter](../android/graphics/ColorFilter.md)? | `https://developer.android.com/reference/kotlin/android/graphics/drawable/VectorDrawable#getColorFilter()()` Returns the current color filter, or `null` if none set. |
+| open [ColorFilter](../android.graphics/ColorFilter.md)? | `https://developer.android.com/reference/kotlin/android/graphics/drawable/VectorDrawable#getColorFilter()()` Returns the current color filter, or `null` if none set. |
 | --- | --- |
 | open [Drawable.ConstantState](../android/graphics/drawable/Drawable.ConstantState.md)? | `https://developer.android.com/reference/kotlin/android/graphics/drawable/VectorDrawable#getConstantState()()` Return a `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.ConstantState` instance that holds the shared state of this Drawable. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/VectorDrawable#getIntrinsicHeight()()` Returns the drawable's intrinsic height. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/VectorDrawable#getIntrinsicWidth()()` Returns the drawable's intrinsic width. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/VectorDrawable#getOpacity()()` Return the opacity/transparency of this Drawable. |
-| open [Insets](../android/graphics/Insets.md) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/VectorDrawable#getOpticalInsets()()` Return in insets the layout insets suggested by this Drawable for use with alignment operations during layout. |
+| open [Insets](../android.graphics/Insets.md) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/VectorDrawable#getOpticalInsets()()` Return in insets the layout insets suggested by this Drawable for use with alignment operations during layout. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/VectorDrawable#hasFocusStateSpecified()()` Indicates whether this drawable has at least one state spec explicitly specifying `https://developer.android.com/reference/kotlin/android/R.attr.html#state_focused:kotlin.Int`. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/VectorDrawable#inflate(android.content.res.Resources,%20org.xmlpull.v1.XmlPullParser,%20android.util.AttributeSet,%20android.content.res.Resources.Theme)(r: https://developer.android.com/reference/kotlin/android/content/res/Resources.html#, parser: https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser.html#, attrs: https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#, theme: https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#?)` Inflate this Drawable from an XML resource optionally styled by a theme. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/VectorDrawable#isAutoMirrored()()` Tells if this Drawable will be automatically mirrored when its layout direction is RTL right-to-left. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/VectorDrawable#isStateful()()` Indicates whether this drawable will change its appearance based on state. |
 | --- | --- |
-| open [Drawable](../android/graphics/drawable/Drawable.md) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/VectorDrawable#mutate()()` Make this drawable mutable. |
+| open [Drawable](Drawable.md) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/VectorDrawable#mutate()()` Make this drawable mutable. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/VectorDrawable#setAlpha(kotlin.Int)(alpha: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Specify an alpha value for the drawable. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/VectorDrawable#setAutoMirrored(kotlin.Boolean)(mirrored: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Set whether this Drawable is automatically mirrored when its layout direction is RTL (right-to left). |
 | --- | --- |
@@ -302,7 +302,7 @@ Draw in its bounds (set via setBounds) respecting optional effects such as alpha
 
 | Parameters ||
 |---|---|
-| `canvas` | [Canvas](../android/graphics/Canvas.md): The canvas to draw into. This value cannot be `null`. |
+| `canvas` | [Canvas](../android.graphics/Canvas.md): The canvas to draw into. This value cannot be `null`. |
 
 ### getAlpha
 
@@ -459,9 +459,9 @@ Inflate this Drawable from an XML resource optionally styled by a theme. This ca
 
 | Parameters ||
 |---|---|
-| `r` | [Resources](../android/content/res/Resources.md): This value cannot be `null`. |
-| `parser` | [XmlPullParser](../org/xmlpull/v1/XmlPullParser.md): This value cannot be `null`. |
-| `attrs` | [AttributeSet](../android/util/AttributeSet.md): This value cannot be `null`. |
+| `r` | [Resources](../android.content.res/Resources.md): This value cannot be `null`. |
+| `parser` | [XmlPullParser](../org.xmlpull.v1/XmlPullParser.md): This value cannot be `null`. |
+| `attrs` | [AttributeSet](../android.util/AttributeSet.md): This value cannot be `null`. |
 | --- | --- |
 | `theme` | [Resources.Theme](../android/content/res/Resources.Theme.md)?: This value may be `null`. |
 
@@ -558,7 +558,7 @@ Pass `null` to remove any existing color filter.
 
 | Parameters ||
 |---|---|
-| `colorFilter` | [ColorFilter](../android/graphics/ColorFilter.md)?: The color filter to apply, or `null` to remove the existing color filter |
+| `colorFilter` | [ColorFilter](../android.graphics/ColorFilter.md)?: The color filter to apply, or `null` to remove the existing color filter |
 
 ### setTintBlendMode
 
@@ -576,7 +576,7 @@ Defines how this drawable's tint color should be blended into the drawable befor
 
 | Parameters ||
 |---|---|
-| `blendMode` | [BlendMode](../android/graphics/BlendMode.md)!: This value cannot be `null`. |
+| `blendMode` | [BlendMode](../android.graphics/BlendMode.md)!: This value cannot be `null`. |
 
 ### setTintList
 
@@ -594,7 +594,7 @@ A Drawable's drawing content will be blended together with its tint before it is
 
 | Parameters ||
 |---|---|
-| `tint` | [ColorStateList](../android/content/res/ColorStateList.md)?: Color state list to use for tinting this drawable, or `null` to clear the tint |
+| `tint` | [ColorStateList](../android.content.res/ColorStateList.md)?: Color state list to use for tinting this drawable, or `null` to clear the tint |
 
 ## Protected methods
 

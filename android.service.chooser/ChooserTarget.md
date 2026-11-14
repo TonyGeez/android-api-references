@@ -3,7 +3,7 @@ Deprecated in [API level 30](https://developer.android.com/guide/topics/manifest
 
 # ChooserTarget
 
-Kotlin | [Java](../android/service/chooser/ChooserTarget.md)
+Kotlin | [Java](ChooserTarget.md)
 | --- | --- |
 
 ```
@@ -12,7 +12,7 @@ class ChooserTarget : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.service.chooser.ChooserTarget](../android/service/chooser/ChooserTarget.md) |
+| ↳ | [android.service.chooser.ChooserTarget](ChooserTarget.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 30.**
@@ -38,10 +38,10 @@ Creators of chooser targets should consult the relevant design guidelines for th
 | Public methods ||
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserTarget#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [ComponentName](../android/content/ComponentName.md)! | `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserTarget#getComponentName()()` Returns the ComponentName of the Activity that should be launched for this ChooserTarget. |
-| [Icon](../android/graphics/drawable/Icon.md)! | `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserTarget#getIcon()()` Returns the icon representing this target for display to a user. |
+| [ComponentName](../android.content/ComponentName.md)! | `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserTarget#getComponentName()()` Returns the ComponentName of the Activity that should be launched for this ChooserTarget. |
+| [Icon](../android.graphics.drawable/Icon.md)! | `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserTarget#getIcon()()` Returns the icon representing this target for display to a user. |
 | --- | --- |
-| [Bundle](../android/os/Bundle.md)! | `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserTarget#getIntentExtras()()` Returns the Bundle of extras to be added to an intent launched to this target. |
+| [Bundle](../android.os/Bundle.md)! | `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserTarget#getIntentExtras()()` Returns the Bundle of extras to be added to an intent launched to this target. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserTarget#getScore()()` Returns the ranking score supplied by the creator of this ChooserTarget. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserTarget#getTitle()()` Returns the title of this target for display to a user. |
 | --- | --- |
@@ -50,7 +50,7 @@ Creators of chooser targets should consult the relevant design guidelines for th
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ChooserTarget](../android/service/chooser/ChooserTarget.md)!\> | `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserTarget#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ChooserTarget](ChooserTarget.md)!\> | `https://developer.android.com/reference/kotlin/android/service/chooser/ChooserTarget#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public constructors
 
@@ -80,11 +80,11 @@ Take care not to place custom `https://developer.android.com/reference/kotlin/an
 | Parameters ||
 |---|---|
 | `title` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!: title of this target that will be shown to a user |
-| `icon` | [Icon](../android/graphics/drawable/Icon.md)!: icon to represent this target |
+| `icon` | [Icon](../android.graphics.drawable/Icon.md)!: icon to represent this target |
 | `score` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): ranking score for this target between 0.0f and 1.0f, inclusive |
 | --- | --- |
-| `componentName` | [ComponentName](../android/content/ComponentName.md)!: Name of the component to be launched if this target is chosen |
-| `intentExtras` | [Bundle](../android/os/Bundle.md)?: Bundle of extras to merge with the extras of the launched intent. This value may be `null`. |
+| `componentName` | [ComponentName](../android.content/ComponentName.md)!: Name of the component to be launched if this target is chosen |
+| `intentExtras` | [Bundle](../android.os/Bundle.md)?: Bundle of extras to merge with the extras of the launched intent. This value may be `null`. |
 
 ## Public methods
 
@@ -217,7 +217,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

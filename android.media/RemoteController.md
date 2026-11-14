@@ -9,7 +9,7 @@ class RemoteController
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.RemoteController](../android/media/RemoteController.md) |
+| ↳ | [android.media.RemoteController](RemoteController.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 21.**
@@ -98,7 +98,7 @@ Class constructor.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md)!: the `https://developer.android.com/reference/kotlin/android/content/Context.html#`, must be non-null. |
+| `context` | [Context](../android.content/Context.md)!: the `https://developer.android.com/reference/kotlin/android/content/Context.html#`, must be non-null. |
 | `updateListener` | [RemoteController.OnClientUpdateListener](../android/media/RemoteController.OnClientUpdateListener.md)!: the listener to be called whenever new client information is available, must be non-null. |
 
 | Exceptions ||
@@ -120,9 +120,9 @@ Class constructor.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md)!: the `https://developer.android.com/reference/kotlin/android/content/Context.html#`, must be non-null. |
+| `context` | [Context](../android.content/Context.md)!: the `https://developer.android.com/reference/kotlin/android/content/Context.html#`, must be non-null. |
 | `updateListener` | [RemoteController.OnClientUpdateListener](../android/media/RemoteController.OnClientUpdateListener.md)!: the listener to be called whenever new client information is available, must be non-null. |
-| `looper` | [Looper](../android/os/Looper.md)!: the `https://developer.android.com/reference/kotlin/android/os/Looper.html#` on which to run the event loop, or null to use the current thread's looper. |
+| `looper` | [Looper](../android.os/Looper.md)!: the `https://developer.android.com/reference/kotlin/android/os/Looper.html#` on which to run the event loop, or null to use the current thread's looper. |
 | --- | --- |
 
 | Exceptions ||
@@ -225,7 +225,7 @@ The key event will be sent to the registered receiver (see `https://developer.an
 
 | Parameters ||
 |---|---|
-| `keyEvent` | [KeyEvent](../android/view/KeyEvent.md)!: a media session `https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#`, as defined by `https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#isMediaSessionKey(kotlin.Int)`. |
+| `keyEvent` | [KeyEvent](../android.view/KeyEvent.md)!: a media session `https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#`, as defined by `https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#isMediaSessionKey(kotlin.Int)`. |
 
 | Return ||
 |---|---|

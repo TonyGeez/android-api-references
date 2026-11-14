@@ -8,9 +8,9 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface MatchResult
 ```
 
-| [java.util.regex.MatchResult](../java/util/regex/MatchResult.md) |
+| [java.util.regex.MatchResult](MatchResult.md) |
 
-| Known Direct Subclasses [Matcher](../java/util/regex/Matcher.md) |-----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------| | [Matcher](../java/util/regex/Matcher.md) | An engine that performs match operations on a by interpreting a [Pattern](../java/util/regex/Pattern.md). | |
+| Known Direct Subclasses [Matcher](Matcher.md) |-----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------| | [Matcher](Matcher.md) | An engine that performs match operations on a by interpreting a [Pattern](Pattern.md). | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 The result of a match operation.
@@ -21,15 +21,15 @@ This interface contains query methods used to determine the results of a match a
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [end](../java/util/regex/MatchResult.md))`()` Returns the offset after the last character matched. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [end](../java/util/regex/MatchResult.md))`(`group:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the offset after the last character of the subsequence captured by the given group during this match. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [group](../java/util/regex/MatchResult.md))`()` Returns the input subsequence matched by the previous match. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [end](MatchResult.md))`()` Returns the offset after the last character matched. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [end](MatchResult.md))`(`group:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the offset after the last character of the subsequence captured by the given group during this match. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [group](MatchResult.md))`()` Returns the input subsequence matched by the previous match. |
 | --- | --- |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [group](../java/util/regex/MatchResult.md))`(`group:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the input subsequence captured by the given group during the previous match operation. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [groupCount](../java/util/regex/MatchResult.md))`()` Returns the number of capturing groups in this match result's pattern. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [start](../java/util/regex/MatchResult.md))`()` Returns the start index of the match. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [group](MatchResult.md))`(`group:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the input subsequence captured by the given group during the previous match operation. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [groupCount](MatchResult.md))`()` Returns the number of capturing groups in this match result's pattern. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [start](MatchResult.md))`()` Returns the start index of the match. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [start](../java/util/regex/MatchResult.md))`(`group:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the start index of the subsequence captured by the given group during this match. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [start](MatchResult.md))`(`group:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the start index of the subsequence captured by the given group during this match. |
 
 ## Public methods
 
@@ -61,7 +61,7 @@ abstract fun end(group: Int): Int
 
 Returns the offset after the last character of the subsequence captured by the given group during this match.
 
-[Capturing groups](../java/util/regex/Pattern.md) are indexed from left to right, starting at one. Group zero denotes the entire pattern, so the expression*m.* `end(0)`is equivalent to*m.* `end()`.
+[Capturing groups](Pattern.md) are indexed from left to right, starting at one. Group zero denotes the entire pattern, so the expression*m.* `end(0)`is equivalent to*m.* `end()`.
 
 | Parameters ||
 |---------|-------------------------------------------------------------------------------------------------------------------------------------|
@@ -110,7 +110,7 @@ Returns the input subsequence captured by the given group during the previous ma
 
 For a matcher*m* , input sequence*s* , and group index*g* , the expressions*m.* `group(`*g* `)`and*s.* `substring(`*m.* `start(`*g* `),`*m.* `end(`*g* `))`are equivalent.
 
-[Capturing groups](../java/util/regex/Pattern.md) are indexed from left to right, starting at one. Group zero denotes the entire pattern, so the expression`m.group(0)`is equivalent to`m.group()`.
+[Capturing groups](Pattern.md) are indexed from left to right, starting at one. Group zero denotes the entire pattern, so the expression`m.group(0)`is equivalent to`m.group()`.
 
 If the match was successful but the group specified failed to match any part of the input sequence, then`null`is returned. Note that some groups, for example`(a*)`, match the empty string. This method will return the empty string when such a group successfully matches the empty string in the input.
 
@@ -173,7 +173,7 @@ abstract fun start(group: Int): Int
 
 Returns the start index of the subsequence captured by the given group during this match.
 
-[Capturing groups](../java/util/regex/Pattern.md) are indexed from left to right, starting at one. Group zero denotes the entire pattern, so the expression*m.* `start(0)`is equivalent to*m.* `start()`.
+[Capturing groups](Pattern.md) are indexed from left to right, starting at one. Group zero denotes the entire pattern, so the expression*m.* `start(0)`is equivalent to*m.* `start()`.
 
 | Parameters ||
 |---------|-------------------------------------------------------------------------------------------------------------------------------------|

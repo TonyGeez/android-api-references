@@ -5,7 +5,7 @@ Also in [U Extensions 13](https://developer.android.com/sdkExtensions)
 
 # TemperatureDelta
 
-Kotlin| [Java](../android/health/connect/datatypes/units/TemperatureDelta.md) 
+Kotlin| [Java](TemperatureDelta.md) 
 | --- | --- |
 
 ```
@@ -14,7 +14,7 @@ class TemperatureDelta : Comparable<TemperatureDelta!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.health.connect.datatypes.units.TemperatureDelta](../android/health/connect/datatypes/units/TemperatureDelta.md) |
+| ↳ | [android.health.connect.datatypes.units.TemperatureDelta](TemperatureDelta.md) |
 
 Represents a unit of temperature difference. Supported units: Celsius
 
@@ -22,13 +22,13 @@ Represents a unit of temperature difference. Supported units: Celsius
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](../android/health/connect/datatypes/units/TemperatureDelta.md))`(`other:` ` [TemperatureDelta](../android/health/connect/datatypes/units/TemperatureDelta.md)`)` Compares this object with the specified object for order. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/health/connect/datatypes/units/TemperatureDelta.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| static [TemperatureDelta](../android/health/connect/datatypes/units/TemperatureDelta.md) | [fromCelsius](../android/health/connect/datatypes/units/TemperatureDelta.md))`(`value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Creates a TemperatureDelta object with the specified value in Celsius degrees. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](TemperatureDelta.md))`(`other:` ` [TemperatureDelta](TemperatureDelta.md)`)` Compares this object with the specified object for order. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](TemperatureDelta.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| static [TemperatureDelta](TemperatureDelta.md) | [fromCelsius](TemperatureDelta.md))`(`value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Creates a TemperatureDelta object with the specified value in Celsius degrees. |
 | --- | --- |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getInCelsius](../android/health/connect/datatypes/units/TemperatureDelta.md))`()` Returns temperature delta in celsius |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/health/connect/datatypes/units/TemperatureDelta.md))`()` Returns a hash code value for the object. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/health/connect/datatypes/units/TemperatureDelta.md))`()` <br /> |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getInCelsius](TemperatureDelta.md))`()` Returns temperature delta in celsius |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](TemperatureDelta.md))`()` Returns a hash code value for the object. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](TemperatureDelta.md))`()` <br /> |
 | --- | --- |
 
 ## Public methods
@@ -47,7 +47,7 @@ Compares this object with the specified object for order. Returns a negative int
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `o` | the object to be compared. |
-| `other` | [TemperatureDelta](../android/health/connect/datatypes/units/TemperatureDelta.md):the object to be compared. This value cannot be`null`. |
+| `other` | [TemperatureDelta](TemperatureDelta.md):the object to be compared. This value cannot be`null`. |
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
@@ -94,7 +94,7 @@ Creates a TemperatureDelta object with the specified value in Celsius degrees.
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [TemperatureDelta](../android/health/connect/datatypes/units/TemperatureDelta.md) | This value cannot be`null`. |
+| [TemperatureDelta](TemperatureDelta.md) | This value cannot be`null`. |
 
 ### getInCelsius
 

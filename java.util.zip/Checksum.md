@@ -8,9 +8,9 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface Checksum
 ```
 
-| [java.util.zip.Checksum](../java/util/zip/Checksum.md) |
+| [java.util.zip.Checksum](Checksum.md) |
 
-| Known Direct Subclasses [Adler32](../java/util/zip/Adler32.md), [CRC32](../java/util/zip/CRC32.md), [CRC32C](../java/util/zip/CRC32C.md) |---------------------------------------------------------------------------------|-----------------------------------------------------------------------------| | [Adler32](../java/util/zip/Adler32.md) | A class that can be used to compute the Adler-32 checksum of a data stream. | | [CRC32](../java/util/zip/CRC32.md) | A class that can be used to compute the CRC-32 of a data stream. | | [CRC32C](../java/util/zip/CRC32C.md) | A class that can be used to compute the CRC-32C of a data stream. | |
+| Known Direct Subclasses [Adler32](Adler32.md), [CRC32](CRC32.md), [CRC32C](CRC32C.md) |---------------------------------------------------------------------------------|-----------------------------------------------------------------------------| | [Adler32](Adler32.md) | A class that can be used to compute the Adler-32 checksum of a data stream. | | [CRC32](CRC32.md) | A class that can be used to compute the CRC-32 of a data stream. | | [CRC32C](CRC32C.md) | A class that can be used to compute the CRC-32C of a data stream. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 An interface representing a data checksum.
@@ -19,13 +19,13 @@ An interface representing a data checksum.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getValue](../java/util/zip/Checksum.md))`()` Returns the current checksum value. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](../java/util/zip/Checksum.md))`()` Resets the checksum to its initial value. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](../java/util/zip/Checksum.md))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Updates the current checksum with the specified array of bytes. |
+| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getValue](Checksum.md))`()` Returns the current checksum value. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](Checksum.md))`()` Resets the checksum to its initial value. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](Checksum.md))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Updates the current checksum with the specified array of bytes. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](../java/util/zip/Checksum.md))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Updates the current checksum with the specified array of bytes. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](../java/util/zip/Checksum.md))`(`b:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Updates the current checksum with the specified byte. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](../java/util/zip/Checksum.md))`(`buffer:` ` [ByteBuffer](../java/nio/ByteBuffer.md)!`)` Updates the current checksum with the bytes from the specified buffer. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](Checksum.md))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Updates the current checksum with the specified array of bytes. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](Checksum.md))`(`b:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Updates the current checksum with the specified byte. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [update](Checksum.md))`(`buffer:` ` [ByteBuffer](../java.nio/ByteBuffer.md)!`)` Updates the current checksum with the bytes from the specified buffer. |
 | --- | --- |
 
 ## Public methods
@@ -119,7 +119,7 @@ Updates the current checksum with the bytes from the specified buffer. The check
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------|
-| `buffer` | [ByteBuffer](../java/nio/ByteBuffer.md)!:the ByteBuffer to update the checksum with |
+| `buffer` | [ByteBuffer](../java.nio/ByteBuffer.md)!:the ByteBuffer to update the checksum with |
 
 | Exceptions ||
 |----------------------------------|--------------------|

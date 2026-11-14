@@ -4,7 +4,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 
 # EasyConnectStatusCallback
 
-Kotlin| [Java](../android/net/wifi/EasyConnectStatusCallback.md) 
+Kotlin| [Java](EasyConnectStatusCallback.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ abstract class EasyConnectStatusCallback
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.wifi.EasyConnectStatusCallback](../android/net/wifi/EasyConnectStatusCallback.md) |
+| ↳ | [android.net.wifi.EasyConnectStatusCallback](EasyConnectStatusCallback.md) |
 
 Easy Connect (DPP) Status Callback. Use this callback to get status updates (success, failure, progress) from the Easy Connect operations.
 
@@ -21,24 +21,24 @@ Easy Connect (DPP) Status Callback. Use this callback to get status updates (suc
 
 | Constants ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EASY_CONNECT_EVENT_FAILURE_AUTHENTICATION](../android/net/wifi/EasyConnectStatusCallback.md) Easy Connect Failure event: Bootstrapping/Authentication initialization process failure. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EASY_CONNECT_EVENT_FAILURE_BUSY](../android/net/wifi/EasyConnectStatusCallback.md) Easy Connect Failure event: Easy Connect request while in another Easy Connect exchange. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EASY_CONNECT_EVENT_FAILURE_CANNOT_FIND_NETWORK](../android/net/wifi/EasyConnectStatusCallback.md) Easy Connect R2 Failure event: Enrollee cannot find the network. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EASY_CONNECT_EVENT_FAILURE_AUTHENTICATION](EasyConnectStatusCallback.md) Easy Connect Failure event: Bootstrapping/Authentication initialization process failure. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EASY_CONNECT_EVENT_FAILURE_BUSY](EasyConnectStatusCallback.md) Easy Connect Failure event: Easy Connect request while in another Easy Connect exchange. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EASY_CONNECT_EVENT_FAILURE_CANNOT_FIND_NETWORK](EasyConnectStatusCallback.md) Easy Connect R2 Failure event: Enrollee cannot find the network. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EASY_CONNECT_EVENT_FAILURE_CONFIGURATION](../android/net/wifi/EasyConnectStatusCallback.md) Easy Connect Failure event: Configuration process has failed due to malformed message. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EASY_CONNECT_EVENT_FAILURE_ENROLLEE_AUTHENTICATION](../android/net/wifi/EasyConnectStatusCallback.md) Easy Connect R2 Failure event: Enrollee failed to authenticate with the network. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EASY_CONNECT_EVENT_FAILURE_ENROLLEE_FAILED_TO_SCAN_NETWORK_CHANNEL](../android/net/wifi/EasyConnectStatusCallback.md) Easy Connect Failure event: Enrollee didn't scan the network's operating channel. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EASY_CONNECT_EVENT_FAILURE_CONFIGURATION](EasyConnectStatusCallback.md) Easy Connect Failure event: Configuration process has failed due to malformed message. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EASY_CONNECT_EVENT_FAILURE_ENROLLEE_AUTHENTICATION](EasyConnectStatusCallback.md) Easy Connect R2 Failure event: Enrollee failed to authenticate with the network. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EASY_CONNECT_EVENT_FAILURE_ENROLLEE_FAILED_TO_SCAN_NETWORK_CHANNEL](EasyConnectStatusCallback.md) Easy Connect Failure event: Enrollee didn't scan the network's operating channel. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EASY_CONNECT_EVENT_FAILURE_ENROLLEE_REJECTED_CONFIGURATION](../android/net/wifi/EasyConnectStatusCallback.md) Easy Connect R2 Failure event: Enrollee rejected the configuration. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EASY_CONNECT_EVENT_FAILURE_GENERIC](../android/net/wifi/EasyConnectStatusCallback.md) Easy Connect Failure event: General protocol failure. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EASY_CONNECT_EVENT_FAILURE_INVALID_NETWORK](../android/net/wifi/EasyConnectStatusCallback.md) Easy Connect Failure event: Invalid network provided to Easy Connect configurator. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EASY_CONNECT_EVENT_FAILURE_ENROLLEE_REJECTED_CONFIGURATION](EasyConnectStatusCallback.md) Easy Connect R2 Failure event: Enrollee rejected the configuration. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EASY_CONNECT_EVENT_FAILURE_GENERIC](EasyConnectStatusCallback.md) Easy Connect Failure event: General protocol failure. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EASY_CONNECT_EVENT_FAILURE_INVALID_NETWORK](EasyConnectStatusCallback.md) Easy Connect Failure event: Invalid network provided to Easy Connect configurator. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EASY_CONNECT_EVENT_FAILURE_INVALID_URI](../android/net/wifi/EasyConnectStatusCallback.md) Easy Connect Failure event: Scanned QR code is either not a Easy Connect URI, or the Easy Connect URI has errors. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EASY_CONNECT_EVENT_FAILURE_NOT_COMPATIBLE](../android/net/wifi/EasyConnectStatusCallback.md) Easy Connect Failure event: Both devices are implementing the same role and are incompatible. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EASY_CONNECT_EVENT_FAILURE_NOT_SUPPORTED](../android/net/wifi/EasyConnectStatusCallback.md) Easy Connect Failure event: Feature or option is not supported. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EASY_CONNECT_EVENT_FAILURE_INVALID_URI](EasyConnectStatusCallback.md) Easy Connect Failure event: Scanned QR code is either not a Easy Connect URI, or the Easy Connect URI has errors. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EASY_CONNECT_EVENT_FAILURE_NOT_COMPATIBLE](EasyConnectStatusCallback.md) Easy Connect Failure event: Both devices are implementing the same role and are incompatible. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EASY_CONNECT_EVENT_FAILURE_NOT_SUPPORTED](EasyConnectStatusCallback.md) Easy Connect Failure event: Feature or option is not supported. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EASY_CONNECT_EVENT_FAILURE_TIMEOUT](../android/net/wifi/EasyConnectStatusCallback.md) Easy Connect Failure event: No response from the peer. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EASY_CONNECT_EVENT_FAILURE_URI_GENERATION](../android/net/wifi/EasyConnectStatusCallback.md) Easy Connect Failure event: System failed to generate DPP URI. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EASY_CONNECT_EVENT_FAILURE_TIMEOUT](EasyConnectStatusCallback.md) Easy Connect Failure event: No response from the peer. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EASY_CONNECT_EVENT_FAILURE_URI_GENERATION](EasyConnectStatusCallback.md) Easy Connect Failure event: System failed to generate DPP URI. |
 
 ## Constants
 

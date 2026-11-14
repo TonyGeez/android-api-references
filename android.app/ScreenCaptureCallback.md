@@ -13,7 +13,7 @@ interface ScreenCaptureCallback
 
 | [android.app.Activity.ScreenCaptureCallback](../android/app/Activity.ScreenCaptureCallback.md) |
 
-Interface for observing screen captures of an [Activity](../android/app/Activity.md).
+Interface for observing screen captures of an [Activity](Activity.md).
 
 ## Summary
 

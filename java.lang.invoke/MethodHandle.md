@@ -10,25 +10,25 @@ abstract class MethodHandle
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.lang.invoke.MethodHandle](../java/lang/invoke/MethodHandle.md) |
+| ↳ | [java.lang.invoke.MethodHandle](MethodHandle.md) |
 
-A method handle is a typed, directly executable reference to an underlying method, constructor, field, or similar low-level operation, with optional transformations of arguments or return values. These transformations are quite general, and include such patterns as [conversion](../java/lang/invoke/MethodHandle.md)), [insertion](../java/lang/invoke/MethodHandle.md)), java.lang.invoke.MethodHandles#dropArguments, and [substitution](../java/lang/invoke/MethodHandles.md))
+A method handle is a typed, directly executable reference to an underlying method, constructor, field, or similar low-level operation, with optional transformations of arguments or return values. These transformations are quite general, and include such patterns as [conversion](MethodHandle.md)), [insertion](MethodHandle.md)), java.lang.invoke.MethodHandles#dropArguments, and [substitution](MethodHandles.md))
 
 # Method handle contents
 
-Method handles are dynamically and strongly typed according to their parameter and return types. They are not distinguished by the name or the defining class of their underlying methods. A method handle must be invoked using a symbolic type descriptor which matches the method handle's own [type descriptor](../java/lang/invoke/MethodHandle.md))
+Method handles are dynamically and strongly typed according to their parameter and return types. They are not distinguished by the name or the defining class of their underlying methods. A method handle must be invoked using a symbolic type descriptor which matches the method handle's own [type descriptor](MethodHandle.md))
 
 <br />
 
-Every method handle reports its type descriptor via the [type](../java/lang/invoke/MethodHandle.md))accessor. This type descriptor is a [MethodType](../java/lang/invoke/MethodType.md) object, whose structure is a series of classes, one of which is the return type of the method (or`void.class`if none).
+Every method handle reports its type descriptor via the [type](MethodHandle.md))accessor. This type descriptor is a [MethodType](MethodType.md) object, whose structure is a series of classes, one of which is the return type of the method (or`void.class`if none).
 
 A method handle's type controls the types of invocations it accepts, and the kinds of transformations that apply to it.
 
-A method handle contains a pair of special invoker methods called [invokeExact](../java/lang/invoke/MethodHandle.md))and [invoke](../java/lang/invoke/MethodHandle.md)). Both invoker methods provide direct access to the method handle's underlying method, constructor, field, or other operation, as modified by transformations of arguments and return values. Both invokers accept calls which exactly match the method handle's own type. The plain, inexact invoker also accepts a range of other call types.
+A method handle contains a pair of special invoker methods called [invokeExact](MethodHandle.md))and [invoke](MethodHandle.md)). Both invoker methods provide direct access to the method handle's underlying method, constructor, field, or other operation, as modified by transformations of arguments and return values. Both invokers accept calls which exactly match the method handle's own type. The plain, inexact invoker also accepts a range of other call types.
 
 Method handles are immutable and have no visible state. Of course, they can be bound to underlying methods or data which exhibit state. With respect to the Java Memory Model, any method handle will behave as if all of its (internal) fields are final variables. This means that any method handle made visible to the application will always be fully formed. This is true even if the method handle is published through a shared variable in a data race.
 
-Method handles cannot be subclassed by the user. Implementations may (or may not) create internal subclasses of`MethodHandle`which may be visible via the [Object.getClass](../java/lang/Object.md))operation. The programmer should not draw conclusions about a method handle from its specific class, as the method handle class hierarchy (if any) may change from time to time or across implementations from different vendors.
+Method handles cannot be subclassed by the user. Implementations may (or may not) create internal subclasses of`MethodHandle`which may be visible via the [Object.getClass](../java.lang/Object.md))operation. The programmer should not draw conclusions about a method handle from its specific class, as the method handle class hierarchy (if any) may change from time to time or across implementations from different vendors.
 
 # Method handle compilation
 
@@ -46,17 +46,17 @@ The first time a`invokevirtual`instruction is executed it is linked, by symbolic
 
 When the`invokevirtual`is executed after linking, the receiving method handle's type is first checked by the JVM to ensure that it matches the symbolic type descriptor. If the type match fails, it means that the method which the caller is invoking is not present on the individual method handle being invoked.
 
-In the case of`invokeExact`, the type descriptor of the invocation (after resolving symbolic type names) must exactly match the method type of the receiving method handle. In the case of plain, inexact`invoke`, the resolved type descriptor must be a valid argument to the receiver's [asType](../java/lang/invoke/MethodHandle.md))method. Thus, plain`invoke`is more permissive than`invokeExact`.
+In the case of`invokeExact`, the type descriptor of the invocation (after resolving symbolic type names) must exactly match the method type of the receiving method handle. In the case of plain, inexact`invoke`, the resolved type descriptor must be a valid argument to the receiver's [asType](MethodHandle.md))method. Thus, plain`invoke`is more permissive than`invokeExact`.
 
 After type matching, a call to`invokeExact`directly and immediately invoke the method handle's underlying method (or other behavior, as the case may be).
 
-A call to plain`invoke`works the same as a call to`invokeExact`, if the symbolic type descriptor specified by the caller exactly matches the method handle's own type. If there is a type mismatch,`invoke`attempts to adjust the type of the receiving method handle, as if by a call to [asType](../java/lang/invoke/MethodHandle.md)), to obtain an exactly invokable method handle`M2`. This allows a more powerful negotiation of method type between caller and callee.
+A call to plain`invoke`works the same as a call to`invokeExact`, if the symbolic type descriptor specified by the caller exactly matches the method handle's own type. If there is a type mismatch,`invoke`attempts to adjust the type of the receiving method handle, as if by a call to [asType](MethodHandle.md)), to obtain an exactly invokable method handle`M2`. This allows a more powerful negotiation of method type between caller and callee.
 
 (*Note:* The adjusted method handle`M2`is not directly observable, and implementations are therefore not required to materialize it.)
 
 # Invocation checking
 
-In typical programs, method handle type matching will usually succeed. But if a match fails, the JVM will throw a [WrongMethodTypeException](../java/lang/invoke/WrongMethodTypeException.md), either directly (in the case of`invokeExact`) or indirectly as if by a failed call to`asType`(in the case of`invoke`).
+In typical programs, method handle type matching will usually succeed. But if a match fails, the JVM will throw a [WrongMethodTypeException](WrongMethodTypeException.md), either directly (in the case of`invokeExact`) or indirectly as if by a failed call to`asType`(in the case of`invoke`).
 
 Thus, a method type mismatch which might show up as a linkage error in a statically typed program can show up as a dynamic`WrongMethodTypeException`in a program which uses method handles.
 
@@ -74,7 +74,7 @@ Java code can create a method handle that directly accesses any method, construc
 
 Like classes and strings, method handles that correspond to accessible fields, methods, and constructors can also be represented directly in a class file's constant pool as constants to be loaded by`ldc`bytecodes. A new type of constant pool entry,`CONSTANT_MethodHandle`, refers directly to an associated`CONSTANT_Methodref`,`CONSTANT_InterfaceMethodref`, or`CONSTANT_Fieldref`constant pool entry. (For full details on method handle constants, see sections 4.4.8 and 5.4.3.5 of the Java Virtual Machine Specification.)
 
-Method handles produced by lookups or constant loads from methods or constructors with the variable arity modifier bit (`0x0080`) have a corresponding variable arity, as if they were defined with the help of [asVarargsCollector](../java/lang/invoke/MethodHandle.md)).
+Method handles produced by lookups or constant loads from methods or constructors with the variable arity modifier bit (`0x0080`) have a corresponding variable arity, as if they were defined with the help of [asVarargsCollector](MethodHandle.md)).
 
 A method reference may refer either to a static or non-static method. In the non-static case, the method handle type includes an explicit receiver argument, prepended before any other arguments. In the method handle's type, the initial receiver argument is typed according to the class under which the method was initially requested. (E.g., if a non-static method handle is obtained via`ldc`, the type of the receiver is the class named in the constant pool entry.)
 
@@ -128,11 +128,11 @@ Here are some examples of usage:
  // invokeExact(Ljava/io/PrintStream;Ljava/lang/String;)V
   </code>
 ```
-Each of the above calls to`invokeExact`or plain`invoke`generates a single invokevirtual instruction with the symbolic type descriptor indicated in the following comment. In these examples, the helper method`assertEquals`is assumed to be a method which calls [Objects.equals](../java/util/Objects.md))on its arguments, and asserts that the result is true.
+Each of the above calls to`invokeExact`or plain`invoke`generates a single invokevirtual instruction with the symbolic type descriptor indicated in the following comment. In these examples, the helper method`assertEquals`is assumed to be a method which calls [Objects.equals](../java.util/Objects.md))on its arguments, and asserts that the result is true.
 
 # Exceptions
 
-The methods`invokeExact`and`invoke`are declared to throw [Throwable](../java/lang/Throwable.md), which is to say that there is no static restriction on what a method handle can throw. Since the JVM does not distinguish between checked and unchecked exceptions (other than by their class, of course), there is no particular effect on bytecode shape from ascribing checked exceptions to method handle invocations. But in Java source code, methods which perform method handle calls must either explicitly throw`Throwable`, or else must catch all throwables locally, rethrowing only those which are legal in the context, and wrapping ones which are illegal.
+The methods`invokeExact`and`invoke`are declared to throw [Throwable](../java.lang/Throwable.md), which is to say that there is no static restriction on what a method handle can throw. Since the JVM does not distinguish between checked and unchecked exceptions (other than by their class, of course), there is no particular effect on bytecode shape from ascribing checked exceptions to method handle invocations. But in Java source code, methods which perform method handle calls must either explicitly throw`Throwable`, or else must catch all throwables locally, rethrowing only those which are legal in the context, and wrapping ones which are illegal.
 
 # Signature polymorphism
 
@@ -146,15 +146,15 @@ Bytecode generators, including the compiler back end, are required to emit untra
 
 # Interoperation between method handles and the Core Reflection API
 
-Using factory methods in the [Lookup](../java/lang/invoke/MethodHandles.Lookup.md) API, any class member represented by a Core Reflection API object can be converted to a behaviorally equivalent method handle. For example, a reflective [Method](../java/lang/reflect/Method.md) can be converted to a method handle using [Lookup.unreflect](../java/lang/invoke/MethodHandles.Lookup.md)). The resulting method handles generally provide more direct and efficient access to the underlying class members.
+Using factory methods in the [Lookup](../java/lang/invoke/MethodHandles.Lookup.md) API, any class member represented by a Core Reflection API object can be converted to a behaviorally equivalent method handle. For example, a reflective [Method](../java.lang.reflect/Method.md) can be converted to a method handle using [Lookup.unreflect](../java/lang/invoke/MethodHandles.Lookup.md)). The resulting method handles generally provide more direct and efficient access to the underlying class members.
 
-As a special case, when the Core Reflection API is used to view the signature polymorphic methods`invokeExact`or plain`invoke`in this class, they appear as ordinary non-polymorphic methods. Their reflective appearance, as viewed by [Class.getDeclaredMethod](../java/lang/Class.md)), is unaffected by their special status in this API. For example, java.lang.reflect.Method#getModifiers will report exactly those modifier bits required for any similarly declared method, including in this case`native`and`varargs`bits.
+As a special case, when the Core Reflection API is used to view the signature polymorphic methods`invokeExact`or plain`invoke`in this class, they appear as ordinary non-polymorphic methods. Their reflective appearance, as viewed by [Class.getDeclaredMethod](../java.lang/Class.md)), is unaffected by their special status in this API. For example, java.lang.reflect.Method#getModifiers will report exactly those modifier bits required for any similarly declared method, including in this case`native`and`varargs`bits.
 
-As with any reflected method, these methods (when reflected) may be invoked via [java.lang.reflect.Method.invoke](../java/lang/reflect/Method.md)). However, such reflective calls do not result in method handle invocations. Such a call, if passed the required argument (a single one, of type`Object[]`), will ignore the argument and will throw an`UnsupportedOperationException`.
+As with any reflected method, these methods (when reflected) may be invoked via [java.lang.reflect.Method.invoke](../java.lang.reflect/Method.md)). However, such reflective calls do not result in method handle invocations. Such a call, if passed the required argument (a single one, of type`Object[]`), will ignore the argument and will throw an`UnsupportedOperationException`.
 
 Since`invokevirtual`instructions can natively invoke method handles under any symbolic type descriptor, this reflective view conflicts with the normal presentation of these methods via bytecodes. Thus, these two native methods, when reflectively viewed by`Class.getDeclaredMethod`, may be regarded as placeholders only.
 
-In order to obtain an invoker method for a particular type descriptor, use [MethodHandles.exactInvoker](../java/lang/invoke/MethodHandles.md)), or [MethodHandles.invoker](../java/lang/invoke/MethodHandles.md)). The [Lookup.findVirtual](../java/lang/invoke/MethodHandles.Lookup.md))API is also able to return a method handle to call`invokeExact`or plain`invoke`, for any specified type descriptor .
+In order to obtain an invoker method for a particular type descriptor, use [MethodHandles.exactInvoker](MethodHandles.md)), or [MethodHandles.invoker](MethodHandles.md)). The [Lookup.findVirtual](../java/lang/invoke/MethodHandles.Lookup.md))API is also able to return a method handle to call`invokeExact`or plain`invoke`, for any specified type descriptor .
 
 # Interoperation between method handles and Java generics
 
@@ -162,7 +162,7 @@ A method handle can be obtained on a method, constructor, or field which is decl
 
 Method handles do not represent their function-like types in terms of Java parameterized (generic) types, because there are three mismatches between function-like types and parameterized Java types.
 
-- Method types range over all possible arities, from no arguments to up to the [maximum number](../java/lang/invoke/MethodHandle.md) of allowed arguments. Generics are not variadic, and so cannot represent this.
+- Method types range over all possible arities, from no arguments to up to the [maximum number](MethodHandle.md) of allowed arguments. Generics are not variadic, and so cannot represent this.
 - Method types can specify arguments of primitive types, which Java generic types cannot range over.
 - Higher order functions over method handles (combinators) are often generic across a wide range of function types, including those of multiple arities. It is impossible to represent such genericity with a Java type parameter.
 
@@ -175,33 +175,33 @@ The JVM imposes on all methods and constructors of any kind an absolute limit of
 - A constructor consumes an extra argument for the object which is being constructed.
 - Since a method handle's`invoke`method (or other signature-polymorphic method) is non-virtual, it consumes an extra argument for the method handle itself, in addition to any non-virtual receiver object.
 
-These limits imply that certain method handles cannot be created, solely because of the JVM limit on stacked arguments. For example, if a static JVM method accepts exactly 255 arguments, a method handle cannot be created for it. Attempts to create method handles with impossible method types lead to an [IllegalArgumentException](../java/lang/IllegalArgumentException.md). In particular, a method handle's type must not have an arity of the exact maximum 255.
+These limits imply that certain method handles cannot be created, solely because of the JVM limit on stacked arguments. For example, if a static JVM method accepts exactly 255 arguments, a method handle cannot be created for it. Attempts to create method handles with impossible method types lead to an [IllegalArgumentException](../java.lang/IllegalArgumentException.md). In particular, a method handle's type must not have an arity of the exact maximum 255.
 
 ## Summary
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [MethodHandle](../java/lang/invoke/MethodHandle.md)! | [asCollector](../java/lang/invoke/MethodHandle.md))`(`collectArgPos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `arrayType:` ` [Class](../java/lang/Class.md)<*>!`, `arrayLength:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Makes an*array-collecting*method handle, which accepts a given number of positional arguments starting at a given position, and collects them into an array argument. |
-| open [MethodHandle](../java/lang/invoke/MethodHandle.md)! | [asCollector](../java/lang/invoke/MethodHandle.md))`(`arrayType:` ` [Class](../java/lang/Class.md)<*>!`, `arrayLength:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Makes an*array-collecting*method handle, which accepts a given number of trailing positional arguments and collects them into an array argument. |
-| open [MethodHandle](../java/lang/invoke/MethodHandle.md)! | [asFixedArity](../java/lang/invoke/MethodHandle.md))`()` Makes a*fixed arity*method handle which is otherwise equivalent to the current method handle. |
+| open [MethodHandle](MethodHandle.md)! | [asCollector](MethodHandle.md))`(`collectArgPos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `arrayType:` ` [Class](../java.lang/Class.md)<*>!`, `arrayLength:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Makes an*array-collecting*method handle, which accepts a given number of positional arguments starting at a given position, and collects them into an array argument. |
+| open [MethodHandle](MethodHandle.md)! | [asCollector](MethodHandle.md))`(`arrayType:` ` [Class](../java.lang/Class.md)<*>!`, `arrayLength:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Makes an*array-collecting*method handle, which accepts a given number of trailing positional arguments and collects them into an array argument. |
+| open [MethodHandle](MethodHandle.md)! | [asFixedArity](MethodHandle.md))`()` Makes a*fixed arity*method handle which is otherwise equivalent to the current method handle. |
 | --- | --- |
-| open [MethodHandle](../java/lang/invoke/MethodHandle.md)! | [asSpreader](../java/lang/invoke/MethodHandle.md))`(`spreadArgPos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `arrayType:` ` [Class](../java/lang/Class.md)<*>!`, `arrayLength:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Makes an*array-spreading*method handle, which accepts an array argument at a given position and spreads its elements as positional arguments in place of the array. |
-| open [MethodHandle](../java/lang/invoke/MethodHandle.md)! | [asSpreader](../java/lang/invoke/MethodHandle.md))`(`arrayType:` ` [Class](../java/lang/Class.md)<*>!`, `arrayLength:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Makes an*array-spreading*method handle, which accepts a trailing array argument and spreads its elements as positional arguments. |
-| open [MethodHandle](../java/lang/invoke/MethodHandle.md)! | [asType](../java/lang/invoke/MethodHandle.md))`(`newType:` ` [MethodType](../java/lang/invoke/MethodType.md)!`)` Produces an adapter method handle which adapts the type of the current method handle to a new type. |
+| open [MethodHandle](MethodHandle.md)! | [asSpreader](MethodHandle.md))`(`spreadArgPos:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `arrayType:` ` [Class](../java.lang/Class.md)<*>!`, `arrayLength:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Makes an*array-spreading*method handle, which accepts an array argument at a given position and spreads its elements as positional arguments in place of the array. |
+| open [MethodHandle](MethodHandle.md)! | [asSpreader](MethodHandle.md))`(`arrayType:` ` [Class](../java.lang/Class.md)<*>!`, `arrayLength:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Makes an*array-spreading*method handle, which accepts a trailing array argument and spreads its elements as positional arguments. |
+| open [MethodHandle](MethodHandle.md)! | [asType](MethodHandle.md))`(`newType:` ` [MethodType](MethodType.md)!`)` Produces an adapter method handle which adapts the type of the current method handle to a new type. |
 | --- | --- |
-| open [MethodHandle](../java/lang/invoke/MethodHandle.md)! | [asVarargsCollector](../java/lang/invoke/MethodHandle.md))`(`arrayType:` ` [Class](../java/lang/Class.md)<*>!`)` Makes a*variable arity*adapter which is able to accept any number of trailing positional arguments and collect them into an array argument. |
-| open [MethodHandle](../java/lang/invoke/MethodHandle.md)! | [bindTo](../java/lang/invoke/MethodHandle.md))`(`x:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Binds a value`x`to the first argument of a method handle, without invoking it. |
-| [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [invoke](../java/lang/invoke/MethodHandle.md))`(`vararg` `args:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Invokes the method handle, allowing any caller type descriptor, and optionally performing conversions on arguments and return values. |
+| open [MethodHandle](MethodHandle.md)! | [asVarargsCollector](MethodHandle.md))`(`arrayType:` ` [Class](../java.lang/Class.md)<*>!`)` Makes a*variable arity*adapter which is able to accept any number of trailing positional arguments and collect them into an array argument. |
+| open [MethodHandle](MethodHandle.md)! | [bindTo](MethodHandle.md))`(`x:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Binds a value`x`to the first argument of a method handle, without invoking it. |
+| [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [invoke](MethodHandle.md))`(`vararg` `args:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Invokes the method handle, allowing any caller type descriptor, and optionally performing conversions on arguments and return values. |
 | --- | --- |
-| [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [invokeExact](../java/lang/invoke/MethodHandle.md))`(`vararg` `args:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Invokes the method handle, allowing any caller type descriptor, but requiring an exact type match. |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [invokeWithArguments](../java/lang/invoke/MethodHandle.md))`(`vararg` `arguments:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Performs a variable arity invocation, passing the arguments in the given list to the method handle, as if via an inexact [invoke](../java/lang/invoke/MethodHandle.md))from a call site which mentions only the type`Object`, and whose arity is the length of the argument list. |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [invokeWithArguments](../java/lang/invoke/MethodHandle.md))`(`arguments:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<*>!`)` Performs a variable arity invocation, passing the arguments in the given array to the method handle, as if via an inexact [invoke](../java/lang/invoke/MethodHandle.md))from a call site which mentions only the type`Object`, and whose arity is the length of the argument array. |
+| [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [invokeExact](MethodHandle.md))`(`vararg` `args:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Invokes the method handle, allowing any caller type descriptor, but requiring an exact type match. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [invokeWithArguments](MethodHandle.md))`(`vararg` `arguments:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Performs a variable arity invocation, passing the arguments in the given list to the method handle, as if via an inexact [invoke](MethodHandle.md))from a call site which mentions only the type`Object`, and whose arity is the length of the argument list. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [invokeWithArguments](MethodHandle.md))`(`arguments:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)<*>!`)` Performs a variable arity invocation, passing the arguments in the given array to the method handle, as if via an inexact [invoke](MethodHandle.md))from a call site which mentions only the type`Object`, and whose arity is the length of the argument array. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isVarargsCollector](../java/lang/invoke/MethodHandle.md))`()` Determines if this method handle supports [variable arity](../java/lang/invoke/MethodHandle.md))calls. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/lang/invoke/MethodHandle.md))`()` Returns a string representation of the method handle, starting with the string`"MethodHandle"`and ending with the string representation of the method handle's type. |
-| open [MethodType](../java/lang/invoke/MethodType.md)! | [type](../java/lang/invoke/MethodHandle.md))`()` Reports the type of this method handle. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isVarargsCollector](MethodHandle.md))`()` Determines if this method handle supports [variable arity](MethodHandle.md))calls. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](MethodHandle.md))`()` Returns a string representation of the method handle, starting with the string`"MethodHandle"`and ending with the string representation of the method handle's type. |
+| open [MethodType](MethodType.md)! | [type](MethodHandle.md))`()` Reports the type of this method handle. |
 | --- | --- |
-| open [MethodHandle](../java/lang/invoke/MethodHandle.md)! | [withVarargs](../java/lang/invoke/MethodHandle.md))`(`makeVarargs:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Adapts this method handle to be [variable arity](../java/lang/invoke/MethodHandle.md))if the boolean flag is true, else [fixed arity](../java/lang/invoke/MethodHandle.md)). |
+| open [MethodHandle](MethodHandle.md)! | [withVarargs](MethodHandle.md))`(`makeVarargs:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Adapts this method handle to be [variable arity](MethodHandle.md))if the boolean flag is true, else [fixed arity](MethodHandle.md)). |
 
 ## Public methods
 
@@ -219,29 +219,29 @@ open fun asCollector(
 
 Makes an*array-collecting* method handle, which accepts a given number of positional arguments starting at a given position, and collects them into an array argument. The new method handle adapts, as its*target* , the current method handle. The type of the adapter will be the same as the type of the target, except that the parameter at the position indicated by`collectArgPos`(usually of type`arrayType`) is replaced by`arrayLength`parameters whose type is element type of`arrayType`.
 
-This method behaves very much like [asCollector(java.lang.Class,int)](../java/lang/invoke/MethodHandle.md)), but differs in that its`collectArgPos`argument indicates at which position in the parameter list arguments should be collected. This index is zero-based.
+This method behaves very much like [asCollector(java.lang.Class,int)](MethodHandle.md)), but differs in that its`collectArgPos`argument indicates at which position in the parameter list arguments should be collected. This index is zero-based.
 
 | Parameters ||
 |-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `collectArgPos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the zero-based position in the parameter list at which to start collecting. |
-| `arrayType` | [Class](../java/lang/Class.md)\<\*\>!:often`Object[]`, the type of the array argument which will collect the arguments |
+| `arrayType` | [Class](../java.lang/Class.md)\<\*\>!:often`Object[]`, the type of the array argument which will collect the arguments |
 | `arrayLength` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of arguments to collect into a new array argument |
 | --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-| [MethodHandle](../java/lang/invoke/MethodHandle.md)! | a new method handle which collects some arguments into an array, before calling the original method handle |
+| [MethodHandle](MethodHandle.md)! | a new method handle which collects some arguments into an array, before calling the original method handle |
 
 | Exceptions ||
 |---------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `java.lang.NullPointerException` | if`arrayType`is a null reference |
-| `java.lang.IllegalArgumentException` | if`arrayType`is not an array type or`arrayType`is not assignable to this method handle's array parameter type, or`arrayLength`is not a legal array size, or`collectArgPos`has an illegal value (negative, or greater than the number of arguments), or the resulting method handle's type would have [too many parameters](../java/lang/invoke/MethodHandle.md) |
+| `java.lang.IllegalArgumentException` | if`arrayType`is not an array type or`arrayType`is not assignable to this method handle's array parameter type, or`arrayLength`is not a legal array size, or`collectArgPos`has an illegal value (negative, or greater than the number of arguments), or the resulting method handle's type would have [too many parameters](MethodHandle.md) |
 | `java.lang.invoke.WrongMethodTypeException` | if the implied`asType`call fails |
 | --- | --- |
 
 **See Also**
 
-- [#asCollector(Class, int)](../java/lang/invoke/MethodHandle.md)) 
+- [#asCollector(Class, int)](MethodHandle.md)) 
 
 ### asCollector
 
@@ -256,7 +256,7 @@ open fun asCollector(
 
 Makes an*array-collecting* method handle, which accepts a given number of trailing positional arguments and collects them into an array argument. The new method handle adapts, as its*target* , the current method handle. The type of the adapter will be the same as the type of the target, except that a single trailing parameter (usually of type`arrayType`) is replaced by`arrayLength`parameters whose type is element type of`arrayType`.
 
-If the array type differs from the final argument type on the original target, the original target is adapted to take the array type directly, as if by a call to [asType](../java/lang/invoke/MethodHandle.md)).
+If the array type differs from the final argument type on the original target, the original target is adapted to take the array type directly, as if by a call to [asType](MethodHandle.md)).
 
 When called, the adapter replaces its trailing`arrayLength`arguments by a single new array of type`arrayType`, whose elements comprise (in order) the replaced arguments. Finally the target is called. What the target eventually returns is returned unchanged by the adapter.
 
@@ -264,7 +264,7 @@ When called, the adapter replaces its trailing`arrayLength`arguments by a single
 
 (*Note:* The`arrayType`is often identical to the last parameter type of the original target. It is an explicit argument for symmetry with`asSpreader`, and also to allow the target to use a simple`Object`as its last parameter type.)
 
-In order to create a collecting adapter which is not restricted to a particular number of collected arguments, use [asVarargsCollector](../java/lang/invoke/MethodHandle.md))instead.
+In order to create a collecting adapter which is not restricted to a particular number of collected arguments, use [asVarargsCollector](MethodHandle.md))instead.
 
 Here are some examples of array-collecting method handles: 
 
@@ -299,23 +299,23 @@ Here are some examples of array-collecting method handles:
 
 | Parameters ||
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `arrayType` | [Class](../java/lang/Class.md)\<\*\>!:often`Object[]`, the type of the array argument which will collect the arguments |
+| `arrayType` | [Class](../java.lang/Class.md)\<\*\>!:often`Object[]`, the type of the array argument which will collect the arguments |
 | `arrayLength` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of arguments to collect into a new array argument |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
-| [MethodHandle](../java/lang/invoke/MethodHandle.md)! | a new method handle which collects some trailing argument into an array, before calling the original method handle |
+| [MethodHandle](MethodHandle.md)! | a new method handle which collects some trailing argument into an array, before calling the original method handle |
 
 | Exceptions ||
 |---------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `java.lang.NullPointerException` | if`arrayType`is a null reference |
-| `java.lang.IllegalArgumentException` | if`arrayType`is not an array type or`arrayType`is not assignable to this method handle's trailing parameter type, or`arrayLength`is not a legal array size, or the resulting method handle's type would have [too many parameters](../java/lang/invoke/MethodHandle.md) |
+| `java.lang.IllegalArgumentException` | if`arrayType`is not an array type or`arrayType`is not assignable to this method handle's trailing parameter type, or`arrayLength`is not a legal array size, or the resulting method handle's type would have [too many parameters](MethodHandle.md) |
 | `java.lang.invoke.WrongMethodTypeException` | if the implied`asType`call fails |
 | --- | --- |
 
 **See Also**
 
-- [#asVarargsCollector](../java/lang/invoke/MethodHandle.md)) 
+- [#asVarargsCollector](MethodHandle.md)) 
 
 ### asFixedArity
 
@@ -327,9 +327,9 @@ open fun asFixedArity(): MethodHandle!
 
 Makes a*fixed arity*method handle which is otherwise equivalent to the current method handle.
 
-If the current method handle is not of [variable arity](../java/lang/invoke/MethodHandle.md)), the current method handle is returned. This is true even if the current method handle could not be a valid input to`asVarargsCollector`.
+If the current method handle is not of [variable arity](MethodHandle.md)), the current method handle is returned. This is true even if the current method handle could not be a valid input to`asVarargsCollector`.
 
-Otherwise, the resulting fixed-arity method handle has the same type and behavior of the current method handle, except that [isVarargsCollector](../java/lang/invoke/MethodHandle.md))will be false. The fixed-arity method handle may (or may not) be the a previous argument to`asVarargsCollector`.
+Otherwise, the resulting fixed-arity method handle has the same type and behavior of the current method handle, except that [isVarargsCollector](MethodHandle.md))will be false. The fixed-arity method handle may (or may not) be the a previous argument to`asVarargsCollector`.
 
 Here is an example, of a list-making variable arity method handle: 
 
@@ -357,12 +357,12 @@ Here is an example, of a list-making variable arity method handle:
 
 | Return ||
 |------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| [MethodHandle](../java/lang/invoke/MethodHandle.md)! | a new method handle which accepts only a fixed number of arguments |
+| [MethodHandle](MethodHandle.md)! | a new method handle which accepts only a fixed number of arguments |
 
 **See Also**
 
-- [#asVarargsCollector](../java/lang/invoke/MethodHandle.md))
-- [#isVarargsCollector](../java/lang/invoke/MethodHandle.md)) 
+- [#asVarargsCollector](MethodHandle.md))
+- [#isVarargsCollector](MethodHandle.md)) 
 
 ### asSpreader
 
@@ -378,29 +378,29 @@ open fun asSpreader(
 
 Makes an*array-spreading* method handle, which accepts an array argument at a given position and spreads its elements as positional arguments in place of the array. The new method handle adapts, as its*target* , the current method handle. The type of the adapter will be the same as the type of the target, except that the`arrayLength`parameters of the target's type, starting at the zero-based position`spreadArgPos`, are replaced by a single array parameter of type`arrayType`.
 
-This method behaves very much like [asSpreader(java.lang.Class,int)](../java/lang/invoke/MethodHandle.md)), but accepts an additional`spreadArgPos`argument to indicate at which position in the parameter list the spreading should take place.
+This method behaves very much like [asSpreader(java.lang.Class,int)](MethodHandle.md)), but accepts an additional`spreadArgPos`argument to indicate at which position in the parameter list the spreading should take place.
 
 | Parameters ||
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `spreadArgPos` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the position (zero-based index) in the argument list at which spreading should start. |
-| `arrayType` | [Class](../java/lang/Class.md)\<\*\>!:usually`Object[]`, the type of the array argument from which to extract the spread arguments |
+| `arrayType` | [Class](../java.lang/Class.md)\<\*\>!:usually`Object[]`, the type of the array argument from which to extract the spread arguments |
 | `arrayLength` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of arguments to spread from an incoming array argument |
 | --- | --- |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
-| [MethodHandle](../java/lang/invoke/MethodHandle.md)! | a new method handle which spreads an array argument at a given position, before calling the original method handle |
+| [MethodHandle](MethodHandle.md)! | a new method handle which spreads an array argument at a given position, before calling the original method handle |
 
 | Exceptions ||
 |---------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `java.lang.NullPointerException` | if`arrayType`is a null reference |
-| `java.lang.IllegalArgumentException` | if`arrayType`is not an array type, or if target does not have at least`arrayLength`parameter types, or if`arrayLength`is negative, or if`spreadArgPos`has an illegal value (negative, or together with arrayLength exceeding the number of arguments), or if the resulting method handle's type would have [too many parameters](../java/lang/invoke/MethodHandle.md) |
+| `java.lang.IllegalArgumentException` | if`arrayType`is not an array type, or if target does not have at least`arrayLength`parameter types, or if`arrayLength`is negative, or if`spreadArgPos`has an illegal value (negative, or together with arrayLength exceeding the number of arguments), or if the resulting method handle's type would have [too many parameters](MethodHandle.md) |
 | `java.lang.invoke.WrongMethodTypeException` | if the implied`asType`call fails |
 | --- | --- |
 
 **See Also**
 
-- [#asSpreader(Class, int)](../java/lang/invoke/MethodHandle.md)) 
+- [#asSpreader(Class, int)](MethodHandle.md)) 
 
 ### asSpreader
 
@@ -415,13 +415,13 @@ open fun asSpreader(
 
 Makes an*array-spreading* method handle, which accepts a trailing array argument and spreads its elements as positional arguments. The new method handle adapts, as its*target* , the current method handle. The type of the adapter will be the same as the type of the target, except that the final`arrayLength`parameters of the target's type are replaced by a single array parameter of type`arrayType`.
 
-If the array element type differs from any of the corresponding argument types on the original target, the original target is adapted to take the array elements directly, as if by a call to [asType](../java/lang/invoke/MethodHandle.md)).
+If the array element type differs from any of the corresponding argument types on the original target, the original target is adapted to take the array elements directly, as if by a call to [asType](MethodHandle.md)).
 
 When called, the adapter replaces a trailing array argument by the array's elements, each as its own argument to the target. (The order of the arguments is preserved.) They are converted pairwise by casting and/or unboxing to the types of the trailing parameters of the target. Finally the target is called. What the target eventually returns is returned unchanged by the adapter.
 
 Before calling the target, the adapter verifies that the array contains exactly enough elements to provide a correct argument count to the target method handle. (The array may also be null when zero elements are required.)
 
-When the adapter is called, the length of the supplied`array`argument is queried as if by`array.length`or`arraylength`bytecode. If the adapter accepts a zero-length trailing array argument, the supplied`array`argument can either be a zero-length array or`null`; otherwise, the adapter will throw a`NullPointerException`if the array is`null`and throw an [IllegalArgumentException](../java/lang/IllegalArgumentException.md) if the array does not have the correct number of elements.
+When the adapter is called, the length of the supplied`array`argument is queried as if by`array.length`or`arraylength`bytecode. If the adapter accepts a zero-length trailing array argument, the supplied`array`argument can either be a zero-length array or`null`; otherwise, the adapter will throw a`NullPointerException`if the array is`null`and throw an [IllegalArgumentException](../java.lang/IllegalArgumentException.md) if the array does not have the correct number of elements.
 
 Here are some simple examples of array-spreading method handles: 
 
@@ -472,17 +472,17 @@ Here are some simple examples of array-spreading method handles:
 
 | Parameters ||
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `arrayType` | [Class](../java/lang/Class.md)\<\*\>!:usually`Object[]`, the type of the array argument from which to extract the spread arguments |
+| `arrayType` | [Class](../java.lang/Class.md)\<\*\>!:usually`Object[]`, the type of the array argument from which to extract the spread arguments |
 | `arrayLength` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of arguments to spread from an incoming array argument |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
-| [MethodHandle](../java/lang/invoke/MethodHandle.md)! | a new method handle which spreads its final array argument, before calling the original method handle |
+| [MethodHandle](MethodHandle.md)! | a new method handle which spreads its final array argument, before calling the original method handle |
 
 | Exceptions ||
 |---------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `java.lang.NullPointerException` | if`arrayType`is a null reference |
-| `java.lang.IllegalArgumentException` | if`arrayType`is not an array type, or if target does not have at least`arrayLength`parameter types, or if`arrayLength`is negative, or if the resulting method handle's type would have [too many parameters](../java/lang/invoke/MethodHandle.md) |
+| `java.lang.IllegalArgumentException` | if`arrayType`is not an array type, or if target does not have at least`arrayLength`parameter types, or if`arrayLength`is negative, or if the resulting method handle's type would have [too many parameters](MethodHandle.md) |
 | `java.lang.invoke.WrongMethodTypeException` | if the implied`asType`call fails |
 | --- | --- |
 
@@ -506,16 +506,16 @@ The new method handle, when invoked, will perform the following steps:
 - Invoke the original method handle on the converted argument list.
 - Convert any result returned by the original method handle to the return type of new method handle.
 
-This method provides the crucial behavioral difference between [invokeExact](../java/lang/invoke/MethodHandle.md))and plain, inexact [invoke](../java/lang/invoke/MethodHandle.md)). The two methods perform the same steps when the caller's type descriptor exactly m atches the callee's, but when the types differ, plain [invoke](../java/lang/invoke/MethodHandle.md))also calls`asType`(or some internal equivalent) in order to match up the caller's and callee's types.
+This method provides the crucial behavioral difference between [invokeExact](MethodHandle.md))and plain, inexact [invoke](MethodHandle.md)). The two methods perform the same steps when the caller's type descriptor exactly m atches the callee's, but when the types differ, plain [invoke](MethodHandle.md))also calls`asType`(or some internal equivalent) in order to match up the caller's and callee's types.
 
-If the current method is a variable arity method handle argument list conversion may involve the conversion and collection of several arguments into an array, as [described elsewhere](../java/lang/invoke/MethodHandle.md)). In every other case, all conversions are applied*pairwise*, which means that each argument or return value is converted to exactly one argument or return value (or no return value). The applied conversions are defined by consulting the the corresponding component types of the old and new method handle types.
+If the current method is a variable arity method handle argument list conversion may involve the conversion and collection of several arguments into an array, as [described elsewhere](MethodHandle.md)). In every other case, all conversions are applied*pairwise*, which means that each argument or return value is converted to exactly one argument or return value (or no return value). The applied conversions are defined by consulting the the corresponding component types of the old and new method handle types.
 
 Let*T0* and*T1* be corresponding new and old parameter types, or old and new return types. Specifically, for some valid index`i`, let*T0* `=newType.parameterType(i)`and*T1* `=this.type().parameterType(i)`. Or else, going the other way for return values, let*T0* `=this.type().returnType()`and*T1* `=newType.returnType()`. If the types are the same, the new method handle makes no change to the corresponding argument or return value (if any). Otherwise, one of the following conversions is applied if possible:
 
 - If*T0* and*T1* are references, then a cast to*T1*is applied. (The types do not need to be related in any particular way. This is because a dynamic value of null can convert to any reference type.)
 - If*T0* and*T1* are primitives, then a Java method invocation conversion (JLS 5.3) is applied, if one exists. (Specifically,*T0* must convert to*T1*by a widening primitive conversion.)
 - If*T0* is a primitive and*T1* a reference, a Java casting conversion (JLS 5.5) is applied if one exists. (Specifically, the value is boxed from*T0* to its wrapper class, which is then widened as needed to*T1*.)
-- If*T0* is a reference and*T1* a primitive, an unboxing conversion will be applied at runtime, possibly followed by a Java method invocation conversion (JLS 5.3) on the primitive value. (These are the primitive widening conversions.)*T0* must be a wrapper class or a supertype of one. (In the case where*T0* is Object, these are the conversions allowed by [java.lang.reflect.Method.invoke](../java/lang/reflect/Method.md)).) The unboxing conversion must have a possibility of success, which means that if*T0* is not itself a wrapper class, there must exist at least one wrapper class*TW* which is a subtype of*T0* and whose unboxed primitive value can be widened to*T1*.
+- If*T0* is a reference and*T1* a primitive, an unboxing conversion will be applied at runtime, possibly followed by a Java method invocation conversion (JLS 5.3) on the primitive value. (These are the primitive widening conversions.)*T0* must be a wrapper class or a supertype of one. (In the case where*T0* is Object, these are the conversions allowed by [java.lang.reflect.Method.invoke](../java.lang.reflect/Method.md)).) The unboxing conversion must have a possibility of success, which means that if*T0* is not itself a wrapper class, there must exist at least one wrapper class*TW* which is a subtype of*T0* and whose unboxed primitive value can be widened to*T1*.
 - If the return type*T1*is marked as void, any returned value is discarded
 - If the return type*T0* is void and*T1*a reference, a null value is introduced.
 - If the return type*T0* is void and*T1*a primitive, a zero value is introduced.
@@ -524,15 +524,15 @@ Let*T0* and*T1* be corresponding new and old parameter types, or old and new ret
 
 The method handle conversion cannot be made if any one of the required pairwise conversions cannot be made.
 
-At runtime, the conversions applied to reference arguments or return values may require additional runtime checks which can fail. An unboxing operation may fail because the original reference is null, causing a [NullPointerException](../java/lang/NullPointerException.md). An unboxing operation or a reference cast may also fail on a reference to an object of the wrong type, causing a [ClassCastException](../java/lang/ClassCastException.md). Although an unboxing operation may accept several kinds of wrappers, if none are available, a`ClassCastException`will be thrown.
+At runtime, the conversions applied to reference arguments or return values may require additional runtime checks which can fail. An unboxing operation may fail because the original reference is null, causing a [NullPointerException](../java.lang/NullPointerException.md). An unboxing operation or a reference cast may also fail on a reference to an object of the wrong type, causing a [ClassCastException](../java.lang/ClassCastException.md). Although an unboxing operation may accept several kinds of wrappers, if none are available, a`ClassCastException`will be thrown.
 
 | Parameters ||
 |-----------|--------------------------------------------------------------------------------------------------------------------------------------|
-| `newType` | [MethodType](../java/lang/invoke/MethodType.md)!:the expected type of the new method handle |
+| `newType` | [MethodType](MethodType.md)!:the expected type of the new method handle |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [MethodHandle](../java/lang/invoke/MethodHandle.md)! | a method handle which delegates to`this`after performing any necessary argument conversions, and arranges for any necessary return value conversions |
+| [MethodHandle](MethodHandle.md)! | a method handle which delegates to`this`after performing any necessary argument conversions, and arranges for any necessary return value conversions |
 
 | Exceptions ||
 |---------------------------------------------|----------------------------------|
@@ -541,7 +541,7 @@ At runtime, the conversions applied to reference arguments or return values may 
 
 **See Also**
 
-- [java.lang.invoke.MethodHandles#explicitCastArguments](../java/lang/invoke/MethodHandles.md)) 
+- [java.lang.invoke.MethodHandles#explicitCastArguments](MethodHandles.md)) 
 
 ### asVarargsCollector
 
@@ -553,15 +553,15 @@ open fun asVarargsCollector(arrayType: Class<*>!): MethodHandle!
 
 Makes a*variable arity*adapter which is able to accept any number of trailing positional arguments and collect them into an array argument.
 
-The type and behavior of the adapter will be the same as the type and behavior of the target, except that certain`invoke`and`asType`requests can lead to trailing positional arguments being collected into target's trailing parameter. Also, the [last parameter type](../java/lang/invoke/MethodType.md))of the adapter will be`arrayType`, even if the target has a different last parameter type.
+The type and behavior of the adapter will be the same as the type and behavior of the target, except that certain`invoke`and`asType`requests can lead to trailing positional arguments being collected into target's trailing parameter. Also, the [last parameter type](MethodType.md))of the adapter will be`arrayType`, even if the target has a different last parameter type.
 
 This transformation may return`this`if the method handle is already of variable arity and its trailing parameter type is identical to`arrayType`.
 
-When called with [invokeExact](../java/lang/invoke/MethodHandle.md)), the adapter invokes the target with no argument changes. (*Note:*This behavior is different from a #asCollector, since it accepts a whole array of indeterminate length, rather than a fixed number of arguments.)
+When called with [invokeExact](MethodHandle.md)), the adapter invokes the target with no argument changes. (*Note:*This behavior is different from a #asCollector, since it accepts a whole array of indeterminate length, rather than a fixed number of arguments.)
 
-When called with plain, inexact [invoke](../java/lang/invoke/MethodHandle.md)), if the caller type is the same as the adapter, the adapter invokes the target as with`invokeExact`. (This is the normal behavior for`invoke`when types match.)
+When called with plain, inexact [invoke](MethodHandle.md)), if the caller type is the same as the adapter, the adapter invokes the target as with`invokeExact`. (This is the normal behavior for`invoke`when types match.)
 
-Otherwise, if the caller and adapter arity are the same, and the trailing parameter type of the caller is a reference type identical to or assignable to the trailing parameter type of the adapter, the arguments and return values are converted pairwise, as if by [asType](../java/lang/invoke/MethodHandle.md))on a fixed arity method handle.
+Otherwise, if the caller and adapter arity are the same, and the trailing parameter type of the caller is a reference type identical to or assignable to the trailing parameter type of the adapter, the arguments and return values are converted pairwise, as if by [asType](MethodHandle.md))on a fixed arity method handle.
 
 Otherwise, the arities differ, or the adapter's trailing parameter type is not assignable from the corresponding caller type. In this case, the adapter replaces all trailing arguments from the original trailing argument position onward, by a new array of type`arrayType`, whose elements comprise (in order) the replaced arguments.
 
@@ -571,7 +571,7 @@ In all cases, what the target eventually returns is returned unchanged by the ad
 
 In the final case, it is exactly as if the target method handle were temporarily adapted with a #asCollector to the arity required by the caller type. (As with`asCollector`, if the array length is zero, a shared constant may be used instead of a new array. If the implied call to`asCollector`would throw an`IllegalArgumentException`or`WrongMethodTypeException`, the call to the variable arity adapter must throw`WrongMethodTypeException`.)
 
-The behavior of [asType](../java/lang/invoke/MethodHandle.md))is also specialized for variable arity adapters, to maintain the invariant that plain, inexact`invoke`is always equivalent to an`asType`call to adjust the target type, followed by`invokeExact`. Therefore, a variable arity adapter responds to an`asType`request by building a fixed arity collector, if and only if the adapter and requested type differ either in arity or trailing argument type. The resulting fixed arity collector has its type further adjusted (if necessary) to the requested type by pairwise conversion, as if by another application of`asType`.
+The behavior of [asType](MethodHandle.md))is also specialized for variable arity adapters, to maintain the invariant that plain, inexact`invoke`is always equivalent to an`asType`call to adjust the target type, followed by`invokeExact`. Therefore, a variable arity adapter responds to an`asType`request by building a fixed arity collector, if and only if the adapter and requested type differ either in arity or trailing argument type. The resulting fixed arity collector has its type further adjusted (if necessary) to the requested type by pairwise conversion, as if by another application of`asType`.
 
 When a method handle is obtained by executing an`ldc`instruction of a`CONSTANT_MethodHandle`constant, and the target method is marked as a variable arity method (with the modifier bit`0x0080`), the method handle will accept multiple arities, as if the method handle constant were created by means of a call to`asVarargsCollector`.
 
@@ -612,11 +612,11 @@ Here is an example, of a list-making variable arity method handle:
 
 | Parameters ||
 |-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `arrayType` | [Class](../java/lang/Class.md)\<\*\>!:often`Object[]`, the type of the array argument which will collect the arguments |
+| `arrayType` | [Class](../java.lang/Class.md)\<\*\>!:often`Object[]`, the type of the array argument which will collect the arguments |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| [MethodHandle](../java/lang/invoke/MethodHandle.md)! | a new method handle which can collect any number of trailing arguments into an array, before calling the original method handle |
+| [MethodHandle](MethodHandle.md)! | a new method handle which can collect any number of trailing arguments into an array, before calling the original method handle |
 
 | Exceptions ||
 |--------------------------------------|------------------------------------------------------------------------------------------------------------------|
@@ -625,9 +625,9 @@ Here is an example, of a list-making variable arity method handle:
 
 **See Also**
 
-- [#isVarargsCollector](../java/lang/invoke/MethodHandle.md))
-- [#withVarargs](../java/lang/invoke/MethodHandle.md))
-- [#asFixedArity](../java/lang/invoke/MethodHandle.md)) 
+- [#isVarargsCollector](MethodHandle.md))
+- [#withVarargs](MethodHandle.md))
+- [#asFixedArity](MethodHandle.md)) 
 
 ### bindTo
 
@@ -651,7 +651,7 @@ The reference`x`must be convertible to the first parameter type of the target.
 
 | Return ||
 |------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| [MethodHandle](../java/lang/invoke/MethodHandle.md)! | a new method handle which prepends the given value to the incoming argument list, before calling the original method handle |
+| [MethodHandle](MethodHandle.md)! | a new method handle which prepends the given value to the incoming argument list, before calling the original method handle |
 
 | Exceptions ||
 |--------------------------------------|-------------------------------------------------------------------------------|
@@ -660,7 +660,7 @@ The reference`x`must be convertible to the first parameter type of the target.
 
 **See Also**
 
-- [java.lang.invoke.MethodHandles#insertArguments](../java/lang/invoke/MethodHandles.md)) 
+- [java.lang.invoke.MethodHandles#insertArguments](MethodHandles.md)) 
 
 ### invoke
 
@@ -672,15 +672,15 @@ fun invoke(vararg args: Any!): Any!
 
 Invokes the method handle, allowing any caller type descriptor, and optionally performing conversions on arguments and return values.
 
-If the call site's symbolic type descriptor exactly matches this method handle's [type](../java/lang/invoke/MethodHandle.md)), the call proceeds as if by [invokeExact](../java/lang/invoke/MethodHandle.md)).
+If the call site's symbolic type descriptor exactly matches this method handle's [type](MethodHandle.md)), the call proceeds as if by [invokeExact](MethodHandle.md)).
 
-Otherwise, the call proceeds as if this method handle were first adjusted by calling [asType](../java/lang/invoke/MethodHandle.md))to adjust this method handle to the required type, and then the call proceeds as if by [invokeExact](../java/lang/invoke/MethodHandle.md))on the adjusted method handle.
+Otherwise, the call proceeds as if this method handle were first adjusted by calling [asType](MethodHandle.md))to adjust this method handle to the required type, and then the call proceeds as if by [invokeExact](MethodHandle.md))on the adjusted method handle.
 
 There is no guarantee that the`asType`call is actually made. If the JVM can predict the results of making the call, it may perform adaptations directly on the caller's arguments, and call the target method handle according to its own exact type.
 
-The resolved type descriptor at the call site of`invoke`must be a valid argument to the receivers`asType`method. In particular, the caller must specify the same argument arity as the callee's type, if the callee is not a [variable arity collector](../java/lang/invoke/MethodHandle.md)).
+The resolved type descriptor at the call site of`invoke`must be a valid argument to the receivers`asType`method. In particular, the caller must specify the same argument arity as the callee's type, if the callee is not a [variable arity collector](MethodHandle.md)).
 
-When this method is observed via the Core Reflection API, it will appear as a single native method, taking an object array and returning an object. If this native method is invoked directly via [java.lang.reflect.Method.invoke](../java/lang/reflect/Method.md)), via JNI, or indirectly via [Lookup.unreflect](../java/lang/invoke/MethodHandles.Lookup.md)), it will throw an`UnsupportedOperationException`.
+When this method is observed via the Core Reflection API, it will appear as a single native method, taking an object array and returning an object. If this native method is invoked directly via [java.lang.reflect.Method.invoke](../java.lang.reflect/Method.md)), via JNI, or indirectly via [Lookup.unreflect](../java/lang/invoke/MethodHandles.Lookup.md)), it will throw an`UnsupportedOperationException`.
 
 | Parameters ||
 |--------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -705,9 +705,9 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 fun invokeExact(vararg args: Any!): Any!
 ```
 
-Invokes the method handle, allowing any caller type descriptor, but requiring an exact type match. The symbolic type descriptor at the call site of`invokeExact`must exactly match this method handle's [type](../java/lang/invoke/MethodHandle.md)). No conversions are allowed on arguments or return values.
+Invokes the method handle, allowing any caller type descriptor, but requiring an exact type match. The symbolic type descriptor at the call site of`invokeExact`must exactly match this method handle's [type](MethodHandle.md)). No conversions are allowed on arguments or return values.
 
-When this method is observed via the Core Reflection API, it will appear as a single native method, taking an object array and returning an object. If this native method is invoked directly via [java.lang.reflect.Method.invoke](../java/lang/reflect/Method.md)), via JNI, or indirectly via [Lookup.unreflect](../java/lang/invoke/MethodHandles.Lookup.md)), it will throw an`UnsupportedOperationException`.
+When this method is observed via the Core Reflection API, it will appear as a single native method, taking an object array and returning an object. If this native method is invoked directly via [java.lang.reflect.Method.invoke](../java.lang.reflect/Method.md)), via JNI, or indirectly via [Lookup.unreflect](../java/lang/invoke/MethodHandles.Lookup.md)), it will throw an`UnsupportedOperationException`.
 
 | Parameters ||
 |--------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -730,7 +730,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 open fun invokeWithArguments(vararg arguments: Any!): Any!
 ```
 
-Performs a variable arity invocation, passing the arguments in the given list to the method handle, as if via an inexact [invoke](../java/lang/invoke/MethodHandle.md))from a call site which mentions only the type`Object`, and whose arity is the length of the argument list.
+Performs a variable arity invocation, passing the arguments in the given list to the method handle, as if via an inexact [invoke](MethodHandle.md))from a call site which mentions only the type`Object`, and whose arity is the length of the argument list.
 
 Specifically, execution proceeds as if by the following steps, although the methods are not guaranteed to be called if the JVM can predict their effects.
 
@@ -776,7 +776,7 @@ Unlike the signature polymorphic methods`invokeExact`and`invoke`,`invokeWithArgu
 
 **See Also**
 
-- [java.lang.invoke.MethodHandles#spreadInvoker](../java/lang/invoke/MethodHandles.md)) 
+- [java.lang.invoke.MethodHandles#spreadInvoker](MethodHandles.md)) 
 
 ### invokeWithArguments
 
@@ -786,7 +786,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 open fun invokeWithArguments(arguments: MutableList<*>!): Any!
 ```
 
-Performs a variable arity invocation, passing the arguments in the given array to the method handle, as if via an inexact [invoke](../java/lang/invoke/MethodHandle.md))from a call site which mentions only the type`Object`, and whose arity is the length of the argument array.
+Performs a variable arity invocation, passing the arguments in the given array to the method handle, as if via an inexact [invoke](MethodHandle.md))from a call site which mentions only the type`Object`, and whose arity is the length of the argument array.
 
 This method is also equivalent to the following code: 
 
@@ -819,9 +819,9 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 open fun isVarargsCollector(): Boolean
 ```
 
-Determines if this method handle supports [variable arity](../java/lang/invoke/MethodHandle.md))calls. Such method handles arise from the following sources:
+Determines if this method handle supports [variable arity](MethodHandle.md))calls. Such method handles arise from the following sources:
 
-- a call to [asVarargsCollector](../java/lang/invoke/MethodHandle.md))
+- a call to [asVarargsCollector](MethodHandle.md))
 - a call to a [lookup method](../java/lang/invoke/MethodHandles.Lookup.md) which resolves to a variable arity Java method or constructor
 - an`ldc`instruction of a`CONSTANT_MethodHandle`which resolves to a variable arity Java method or constructor
 
@@ -833,8 +833,8 @@ Determines if this method handle supports [variable arity](../java/lang/invoke/M
 
 **See Also**
 
-- [#asVarargsCollector](../java/lang/invoke/MethodHandle.md))
-- [#asFixedArity](../java/lang/invoke/MethodHandle.md)) 
+- [#asVarargsCollector](MethodHandle.md))
+- [#asFixedArity](MethodHandle.md)) 
 
 ### toString
 
@@ -871,7 +871,7 @@ Reports the type of this method handle. Every invocation of this method handle v
 
 | Return ||
 |-------------------------------------------------------------------------------------------|------------------------|
-| [MethodType](../java/lang/invoke/MethodType.md)! | the method handle type |
+| [MethodType](MethodType.md)! | the method handle type |
 
 ### withVarargs
 
@@ -881,7 +881,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 open fun withVarargs(makeVarargs: Boolean): MethodHandle!
 ```
 
-Adapts this method handle to be [variable arity](../java/lang/invoke/MethodHandle.md))if the boolean flag is true, else [fixed arity](../java/lang/invoke/MethodHandle.md)). If the method handle is already of the proper arity mode, it is returned unchanged.
+Adapts this method handle to be [variable arity](MethodHandle.md))if the boolean flag is true, else [fixed arity](MethodHandle.md)). If the method handle is already of the proper arity mode, it is returned unchanged.
 
 | Parameters ||
 |---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -889,7 +889,7 @@ Adapts this method handle to be [variable arity](../java/lang/invoke/MethodHandl
 
 | Return ||
 |------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
-| [MethodHandle](../java/lang/invoke/MethodHandle.md)! | a method handle of the same type, with possibly adjusted variable arity behavior |
+| [MethodHandle](MethodHandle.md)! | a method handle of the same type, with possibly adjusted variable arity behavior |
 
 | Exceptions ||
 |--------------------------------------|----------------------------------------------------------------------------------------|
@@ -897,5 +897,5 @@ Adapts this method handle to be [variable arity](../java/lang/invoke/MethodHandl
 
 **See Also**
 
-- [#asVarargsCollector](../java/lang/invoke/MethodHandle.md))
-- [#asFixedArity](../java/lang/invoke/MethodHandle.md))
+- [#asVarargsCollector](MethodHandle.md))
+- [#asFixedArity](MethodHandle.md))

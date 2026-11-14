@@ -8,11 +8,11 @@ open class BackupAgentHelper : BackupAgent
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](../android/content/Context.md) ||||
-| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) |||
-| | | ↳ | [android.app.backup.BackupAgent](../android/app/backup/BackupAgent.md) ||
+| ↳ | [android.content.Context](../android.content/Context.md) ||||
+| | ↳ | [android.content.ContextWrapper](../android.content/ContextWrapper.md) |||
+| | | ↳ | [android.app.backup.BackupAgent](BackupAgent.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.app.backup.BackupAgentHelper](../android/app/backup/BackupAgentHelper.md) |
+| | | | ↳ | [android.app.backup.BackupAgentHelper](BackupAgentHelper.md) |
 
 A convenient `https://developer.android.com/reference/kotlin/android/app/backup/BackupAgent` wrapper class that automatically manages heterogeneous data sets within the backup data, each identified by a unique key prefix. When processing a backup or restore operation, the BackupAgentHelper dispatches to one or more installed `https://developer.android.com/reference/kotlin/android/app/backup/BackupHelper` objects, each of which is responsible for a defined subset of the data being processed.
 
@@ -2582,7 +2582,7 @@ If the key prefix already exists, the new helper will replace the old one.
 | Parameters ||
 |---|---|
 | `keyPrefix` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: A string used to disambiguate the various helpers within this agent |
-| `helper` | [BackupHelper](../android/app/backup/BackupHelper.md)!: A backup/restore helper object to be invoked during backup and restore operations. |
+| `helper` | [BackupHelper](BackupHelper.md)!: A backup/restore helper object to be invoked during backup and restore operations. |
 
 ### onBackup
 
@@ -2600,9 +2600,9 @@ Run the backup process on each of the configured handlers.
 
 | Parameters ||
 |---|---|
-| `oldState` | [ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md)!: An open, read-only ParcelFileDescriptor pointing to the last backup state provided by the application. May be `null`, in which case no prior state is being provided and the application should perform a full backup. |
-| `data` | [BackupDataOutput](../android/app/backup/BackupDataOutput.md)!: A structured wrapper around an open, read/write file descriptor pointing to the backup data destination. Typically the application will use backup helper classes to write to this file. |
-| `newState` | [ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md)!: An open, read/write ParcelFileDescriptor pointing to an empty file. The application should record the final backup state here after writing the requested data to the `data` output stream. |
+| `oldState` | [ParcelFileDescriptor](../android.os/ParcelFileDescriptor.md)!: An open, read-only ParcelFileDescriptor pointing to the last backup state provided by the application. May be `null`, in which case no prior state is being provided and the application should perform a full backup. |
+| `data` | [BackupDataOutput](BackupDataOutput.md)!: A structured wrapper around an open, read/write file descriptor pointing to the backup data destination. Typically the application will use backup helper classes to write to this file. |
+| `newState` | [ParcelFileDescriptor](../android.os/ParcelFileDescriptor.md)!: An open, read/write ParcelFileDescriptor pointing to an empty file. The application should record the final backup state here after writing the requested data to the `data` output stream. |
 | --- | --- |
 
 ### onRestore
@@ -2621,7 +2621,7 @@ Run the restore process on each of the configured handlers.
 
 | Parameters ||
 |---|---|
-| `data` | [BackupDataInput](../android/app/backup/BackupDataInput.md)!: A structured wrapper around an open, read-only file descriptor pointing to a full snapshot of the application's data. The application should consume every entity represented in this data stream. |
+| `data` | [BackupDataInput](BackupDataInput.md)!: A structured wrapper around an open, read-only file descriptor pointing to a full snapshot of the application's data. The application should consume every entity represented in this data stream. |
 | `appVersionCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The value of the [`android:versionCode`](https://developer.android.com/guide/topics/manifest/manifest-element.html#vcode) manifest attribute, from the application that backed up this particular data set. This makes it possible for an application's agent to distinguish among any possible older data versions when asked to perform the restore operation. |
-| `newState` | [ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md)!: An open, read/write ParcelFileDescriptor pointing to an empty file. The application should record the final backup state here after restoring its data from the `data` stream. When a full-backup dataset is being restored, this will be `null`. |
+| `newState` | [ParcelFileDescriptor](../android.os/ParcelFileDescriptor.md)!: An open, read/write ParcelFileDescriptor pointing to an empty file. The application should record the final backup state here after restoring its data from the `data` stream. When a full-backup dataset is being restored, this will be `null`. |
 | --- | --- |

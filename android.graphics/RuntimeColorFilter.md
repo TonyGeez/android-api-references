@@ -2,7 +2,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 
 # RuntimeColorFilter
 
-Kotlin | [Java](../android/graphics/RuntimeColorFilter.md)
+Kotlin | [Java](RuntimeColorFilter.md)
 | --- | --- |
 
 ```
@@ -11,8 +11,8 @@ open class RuntimeColorFilter : ColorFilter
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.graphics.ColorFilter](../android/graphics/ColorFilter.md) ||
-| | ↳ | [android.graphics.RuntimeColorFilter](../android/graphics/RuntimeColorFilter.md) |
+| ↳ | [android.graphics.ColorFilter](ColorFilter.md) ||
+| | ↳ | [android.graphics.RuntimeColorFilter](RuntimeColorFilter.md) |
 
 A `https://developer.android.com/reference/kotlin/android/graphics/RuntimeColorFilter#` calculates a per-pixel color based on the output of a user \* defined Android Graphics Shading Language (AGSL) function.
 
@@ -87,7 +87,7 @@ Sets the uniform color value corresponding to this color filter. If the effect d
 | Parameters ||
 |---|---|
 | `uniformName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): name matching the color uniform declared in the AGSL program. This value cannot be `null`. |
-| `color` | [Color](../android/graphics/Color.md): the provided sRGB color. This value cannot be `null`. |
+| `color` | [Color](Color.md): the provided sRGB color. This value cannot be `null`. |
 
 ### setColorUniform
 
@@ -233,7 +233,7 @@ Assigns the uniform color filter to the provided color filter parameter. If the 
 | Parameters ||
 |---|---|
 | `filterName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): name matching the uniform declared in the AGSL program. This value cannot be `null`. |
-| `colorFilter` | [ColorFilter](../android/graphics/ColorFilter.md): filter passed into the AGSL program for sampling. This value cannot be `null`. |
+| `colorFilter` | [ColorFilter](ColorFilter.md): filter passed into the AGSL program for sampling. This value cannot be `null`. |
 
 ### setInputShader
 
@@ -251,7 +251,7 @@ Assigns the uniform shader to the provided shader parameter. If the shader progr
 | Parameters ||
 |---|---|
 | `shaderName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): name matching the uniform declared in the AGSL program. This value cannot be `null`. |
-| `shader` | [Shader](../android/graphics/Shader.md): shader passed into the AGSL program for sampling. This value cannot be `null`. |
+| `shader` | [Shader](Shader.md): shader passed into the AGSL program for sampling. This value cannot be `null`. |
 
 ### setInputXfermode
 
@@ -269,7 +269,7 @@ Assigns the uniform xfermode to the provided xfermode parameter. If the shader p
 | Parameters ||
 |---|---|
 | `xfermodeName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): name matching the uniform declared in the AGSL program. This value cannot be `null`. |
-| `xfermode` | [RuntimeXfermode](../android/graphics/RuntimeXfermode.md): filter passed into the AGSL program for sampling. This value cannot be `null`. |
+| `xfermode` | [RuntimeXfermode](RuntimeXfermode.md): filter passed into the AGSL program for sampling. This value cannot be `null`. |
 
 ### setIntUniform
 

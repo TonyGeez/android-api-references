@@ -9,9 +9,9 @@ class CyclingPedalingCadenceRecord : IntervalRecord
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.health.connect.datatypes.Record](../android/health/connect/datatypes/Record.md) |||
-| | ↳ | [android.health.connect.datatypes.IntervalRecord](../android/health/connect/datatypes/IntervalRecord.md) ||
-| | | ↳ | [android.health.connect.datatypes.CyclingPedalingCadenceRecord](../android/health/connect/datatypes/CyclingPedalingCadenceRecord.md) |
+| ↳ | [android.health.connect.datatypes.Record](Record.md) |||
+| | ↳ | [android.health.connect.datatypes.IntervalRecord](IntervalRecord.md) ||
+| | | ↳ | [android.health.connect.datatypes.CyclingPedalingCadenceRecord](CyclingPedalingCadenceRecord.md) |
 | --- | --- | --- | --- |
 
 Captures the user's cycling pedaling cadence.
@@ -41,9 +41,9 @@ Captures the user's cycling pedaling cadence.
 
 | Properties ||
 |---|---|
-| static [AggregationType](../android/health/connect/datatypes/AggregationType.md)\< [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/CyclingPedalingCadenceRecord#RPM_AVG:android.health.connect.datatypes.AggregationType` Metric identifier to retrieve average cycling pedaling cadence using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
-| static [AggregationType](../android/health/connect/datatypes/AggregationType.md)\< [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/CyclingPedalingCadenceRecord#RPM_MAX:android.health.connect.datatypes.AggregationType` Metric identifier to retrieve maximum cycling pedaling cadence using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
-| static [AggregationType](../android/health/connect/datatypes/AggregationType.md)\< [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/CyclingPedalingCadenceRecord#RPM_MIN:android.health.connect.datatypes.AggregationType` Metric identifier to retrieve minimum cycling pedaling cadence using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
+| static [AggregationType](AggregationType.md)\< [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/CyclingPedalingCadenceRecord#RPM_AVG:android.health.connect.datatypes.AggregationType` Metric identifier to retrieve average cycling pedaling cadence using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
+| static [AggregationType](AggregationType.md)\< [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/CyclingPedalingCadenceRecord#RPM_MAX:android.health.connect.datatypes.AggregationType` Metric identifier to retrieve maximum cycling pedaling cadence using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
+| static [AggregationType](AggregationType.md)\< [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/CyclingPedalingCadenceRecord#RPM_MIN:android.health.connect.datatypes.AggregationType` Metric identifier to retrieve minimum cycling pedaling cadence using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
 | --- | --- |
 
 ## Public methods

@@ -11,8 +11,8 @@ open class InterruptedException : Exception
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||
-| | | ↳ | [java.lang.InterruptedException](../java/lang/InterruptedException.md) |
+| | ↳ | [java.lang.Exception](Exception.md) ||
+| | | ↳ | [java.lang.InterruptedException](InterruptedException.md) |
 | --- | --- | --- | --- |
 
 Thrown when a thread is waiting, sleeping, or otherwise occupied, and the thread is interrupted, either before or during the activity. Occasionally a method may wish to test whether the current thread has been interrupted, and if so, to immediately throw this exception. The following code can be used to achieve this effect: 
@@ -29,8 +29,8 @@ if (Thread.interrupted())  // Clears interrupted status!
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [InterruptedException](../java/lang/InterruptedException.md))`()` Constructs an `InterruptedException` with no detail message. |
-| [InterruptedException](../java/lang/InterruptedException.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an `InterruptedException` with the specified detail message. |
+| [InterruptedException](InterruptedException.md))`()` Constructs an `InterruptedException` with no detail message. |
+| [InterruptedException](InterruptedException.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an `InterruptedException` with the specified detail message. |
 
 ## Public constructors
 

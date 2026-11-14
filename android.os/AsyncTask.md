@@ -9,7 +9,7 @@ abstract class AsyncTask<Params : Any!, Progress : Any!, Result : Any!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.os.AsyncTask](../android/os/AsyncTask.md) |
+| ↳ | [android.os.AsyncTask](AsyncTask.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 30.**
@@ -132,10 +132,10 @@ If you truly want parallel execution, you can invoke `https://developer.android.
 | Public methods ||
 |---|---|
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/AsyncTask#cancel(kotlin.Boolean)(mayInterruptIfRunning: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Attempts to cancel execution of this task. |
-| [AsyncTask](../android/os/AsyncTask.md)\<Params, Progress, Result\>! | `https://developer.android.com/reference/kotlin/android/os/AsyncTask#execute(android.os.AsyncTask.Params)(vararg params: Params)` Executes the task with the specified parameters. |
+| [AsyncTask](AsyncTask.md)\<Params, Progress, Result\>! | `https://developer.android.com/reference/kotlin/android/os/AsyncTask#execute(android.os.AsyncTask.Params)(vararg params: Params)` Executes the task with the specified parameters. |
 | open static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/AsyncTask#execute(java.lang.Runnable)(runnable: https://developer.android.com/reference/kotlin/java/lang/Runnable.html#!)` Convenience version of `https://developer.android.com/reference/kotlin/android/os/AsyncTask#execute(android.os.AsyncTask.Params)` for use with a simple Runnable object. |
 | --- | --- |
-| [AsyncTask](../android/os/AsyncTask.md)\<Params, Progress, Result\>! | `https://developer.android.com/reference/kotlin/android/os/AsyncTask#executeOnExecutor(java.util.concurrent.Executor,%20android.os.AsyncTask.Params)(exec: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#!, vararg params: Params)` Executes the task with the specified parameters. |
+| [AsyncTask](AsyncTask.md)\<Params, Progress, Result\>! | `https://developer.android.com/reference/kotlin/android/os/AsyncTask#executeOnExecutor(java.util.concurrent.Executor,%20android.os.AsyncTask.Params)(exec: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#!, vararg params: Params)` Executes the task with the specified parameters. |
 | Result | `https://developer.android.com/reference/kotlin/android/os/AsyncTask#get()()` Waits if necessary for the computation to complete, and then retrieves its result. |
 | Result | `https://developer.android.com/reference/kotlin/android/os/AsyncTask#get(kotlin.Long,%20java.util.concurrent.TimeUnit)(timeout: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, unit: https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit.html#!)` Waits if necessary for at most the given time for the computation to complete, and then retrieves its result. |
 | --- | --- |
@@ -156,8 +156,8 @@ If you truly want parallel execution, you can invoke `https://developer.android.
 
 | Properties ||
 |---|---|
-| static [Executor](../java/util/concurrent/Executor.md)! | `https://developer.android.com/reference/kotlin/android/os/AsyncTask#SERIAL_EXECUTOR:java.util.concurrent.Executor` An `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that executes tasks one at a time in serial order. |
-| static [Executor](../java/util/concurrent/Executor.md)! | `https://developer.android.com/reference/kotlin/android/os/AsyncTask#THREAD_POOL_EXECUTOR:java.util.concurrent.Executor` An `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that can be used to execute tasks in parallel. |
+| static [Executor](../java.util.concurrent/Executor.md)! | `https://developer.android.com/reference/kotlin/android/os/AsyncTask#SERIAL_EXECUTOR:java.util.concurrent.Executor` An `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that executes tasks one at a time in serial order. |
+| static [Executor](../java.util.concurrent/Executor.md)! | `https://developer.android.com/reference/kotlin/android/os/AsyncTask#THREAD_POOL_EXECUTOR:java.util.concurrent.Executor` An `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that can be used to execute tasks in parallel. |
 
 ## Public constructors
 
@@ -279,7 +279,7 @@ This method must be called from the main thread of your app.
 
 | Parameters ||
 |---|---|
-| `exec` | [Executor](../java/util/concurrent/Executor.md)!: The executor to use. `https://developer.android.com/reference/kotlin/android/os/AsyncTask#THREAD_POOL_EXECUTOR:java.util.concurrent.Executor` is available as a convenient process-wide thread pool for tasks that are loosely coupled. |
+| `exec` | [Executor](../java.util.concurrent/Executor.md)!: The executor to use. `https://developer.android.com/reference/kotlin/android/os/AsyncTask#THREAD_POOL_EXECUTOR:java.util.concurrent.Executor` is available as a convenient process-wide thread pool for tasks that are loosely coupled. |
 | `params` | Params: The parameters of the task. |
 
 | Return ||
@@ -335,7 +335,7 @@ Waits if necessary for at most the given time for the computation to complete, a
 | Parameters ||
 |---|---|
 | `timeout` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): Time to wait before cancelling the operation. |
-| `unit` | [TimeUnit](../java/util/concurrent/TimeUnit.md)!: The time unit for the timeout. |
+| `unit` | [TimeUnit](../java.util.concurrent/TimeUnit.md)!: The time unit for the timeout. |
 
 | Return ||
 |---|---|

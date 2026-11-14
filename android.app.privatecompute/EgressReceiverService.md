@@ -8,11 +8,11 @@ abstract class EgressReceiverService : Service
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](../android/content/Context.md) ||||
-| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) |||
-| | | ↳ | [android.app.Service](../android/app/Service.md) ||
+| ↳ | [android.content.Context](../android.content/Context.md) ||||
+| | ↳ | [android.content.ContextWrapper](../android.content/ContextWrapper.md) |||
+| | | ↳ | [android.app.Service](../android.app/Service.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.app.privatecompute.EgressReceiverService](../android/app/privatecompute/EgressReceiverService.md) |
+| | | | ↳ | [android.app.privatecompute.EgressReceiverService](EgressReceiverService.md) |
 
 Base Service to be implemented by the partner agent proxy process to receive egress queries from a client running inside the Private Compute Core (PCC) sandbox.
 
@@ -1047,7 +1047,7 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 
 | Public methods ||
 |---|---|
-| [IBinder](../android/os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/app/privatecompute/EgressReceiverService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#?)` Entry point for binding. |
+| [IBinder](../android.os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/app/privatecompute/EgressReceiverService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#?)` Entry point for binding. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/privatecompute/EgressReceiverService#onQueryReceived(android.app.privatecompute.AssistantQueryRequest,%20android.os.OutcomeReceiver)(request: https://developer.android.com/reference/kotlin/android/app/privatecompute/AssistantQueryRequest, callback: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://developer.android.com/reference/kotlin/android/app/privatecompute/AssistantQueryResponse!, https://developer.android.com/reference/kotlin/android/app/privatecompute/PccEgressException!>)` Called when a query is received from a client running inside the Private Compute Core (PCC) sandbox. |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/app/Service.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/app/Service.html#attachBaseContext(android.content.Context)(newBase: https://developer.android.com/reference/kotlin/android/content/Context.html#!)`
@@ -2777,7 +2777,7 @@ Entry point for binding. This method is final to prevent overriding, ensuring th
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md)?: This value may be `null`. |
+| `intent` | [Intent](../android.content/Intent.md)?: This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -2801,5 +2801,5 @@ This method must be called from the main thread of your app.
 
 | Parameters ||
 |---|---|
-| `request` | [AssistantQueryRequest](../android/app/privatecompute/AssistantQueryRequest.md): The `https://developer.android.com/reference/kotlin/android/app/privatecompute/AssistantQueryRequest` containing the query payload. This value cannot be `null`. |
-| `callback` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [AssistantQueryResponse](../android/app/privatecompute/AssistantQueryResponse.md)!, [PccEgressException](../android/app/privatecompute/PccEgressException.md)!\>: The `https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#` to return the result or error. This value cannot be `null`. |
+| `request` | [AssistantQueryRequest](AssistantQueryRequest.md): The `https://developer.android.com/reference/kotlin/android/app/privatecompute/AssistantQueryRequest` containing the query payload. This value cannot be `null`. |
+| `callback` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [AssistantQueryResponse](AssistantQueryResponse.md)!, [PccEgressException](PccEgressException.md)!\>: The `https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#` to return the result or error. This value cannot be `null`. |

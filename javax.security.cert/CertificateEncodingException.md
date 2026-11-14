@@ -11,10 +11,10 @@ open class CertificateEncodingException : CertificateException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
-| | | ↳ | [javax.security.cert.CertificateException](../javax/security/cert/CertificateException.md) ||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) |||
+| | | ↳ | [javax.security.cert.CertificateException](CertificateException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [javax.security.cert.CertificateEncodingException](../javax/security/cert/CertificateEncodingException.md) |
+| | | | ↳ | [javax.security.cert.CertificateEncodingException](CertificateEncodingException.md) |
 
 Certificate Encoding Exception. This is thrown whenever an error occurs whilst attempting to encode a certificate.
 
@@ -24,8 +24,8 @@ Certificate Encoding Exception. This is thrown whenever an error occurs whilst a
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [CertificateEncodingException](../javax/security/cert/CertificateEncodingException.md))`()` Constructs a CertificateEncodingException with no detail message. |
-| [CertificateEncodingException](../javax/security/cert/CertificateEncodingException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a CertificateEncodingException with the specified detail message. |
+| [CertificateEncodingException](CertificateEncodingException.md))`()` Constructs a CertificateEncodingException with no detail message. |
+| [CertificateEncodingException](CertificateEncodingException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a CertificateEncodingException with the specified detail message. |
 
 ## Public constructors
 

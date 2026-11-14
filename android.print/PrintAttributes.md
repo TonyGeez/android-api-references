@@ -2,7 +2,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 
 # PrintAttributes
 
-Kotlin | [Java](../android/print/PrintAttributes.md)
+Kotlin | [Java](PrintAttributes.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class PrintAttributes : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.print.PrintAttributes](../android/print/PrintAttributes.md) |
+| ↳ | [android.print.PrintAttributes](PrintAttributes.md) |
 
 This class represents the attributes of a print job. These attributes describe how the printed content should be laid out. For example, the print attributes may state that the content should be laid out on a letter size with 300 DPI (dots per inch) resolution, have a margin of 10 mills (thousand of an inch) on all sides, and be black and white.
 
@@ -56,7 +56,7 @@ This class represents the attributes of a print job. These attributes describe h
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [PrintAttributes](../android/print/PrintAttributes.md)!\> | `https://developer.android.com/reference/kotlin/android/print/PrintAttributes#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [PrintAttributes](PrintAttributes.md)!\> | `https://developer.android.com/reference/kotlin/android/print/PrintAttributes#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 

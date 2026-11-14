@@ -4,7 +4,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # Event
 
-Kotlin| [Java](../android/media/metrics/Event.md) 
+Kotlin| [Java](Event.md) 
 | --- | --- |
 
 ```
@@ -13,9 +13,9 @@ abstract class Event
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.metrics.Event](../android/media/metrics/Event.md) |
+| ↳ | [android.media.metrics.Event](Event.md) |
 
-| Known Direct Subclasses [EditingEndedEvent](../android/media/metrics/EditingEndedEvent.md), [NetworkEvent](../android/media/metrics/NetworkEvent.md), [PlaybackErrorEvent](../android/media/metrics/PlaybackErrorEvent.md), [PlaybackStateEvent](../android/media/metrics/PlaybackStateEvent.md), [TrackChangeEvent](../android/media/metrics/TrackChangeEvent.md) |---------------------------------------------------------------------------------------------------------------|----------------------------------------------| | [EditingEndedEvent](../android/media/metrics/EditingEndedEvent.md) | Event for an editing operation having ended. | | [NetworkEvent](../android/media/metrics/NetworkEvent.md) | Media network event. | | [PlaybackErrorEvent](../android/media/metrics/PlaybackErrorEvent.md) | Playback error event. | | [PlaybackStateEvent](../android/media/metrics/PlaybackStateEvent.md) | Playback state event. | | [TrackChangeEvent](../android/media/metrics/TrackChangeEvent.md) | Playback track change event. | |
+| Known Direct Subclasses [EditingEndedEvent](EditingEndedEvent.md), [NetworkEvent](NetworkEvent.md), [PlaybackErrorEvent](PlaybackErrorEvent.md), [PlaybackStateEvent](PlaybackStateEvent.md), [TrackChangeEvent](TrackChangeEvent.md) |---------------------------------------------------------------------------------------------------------------|----------------------------------------------| | [EditingEndedEvent](EditingEndedEvent.md) | Event for an editing operation having ended. | | [NetworkEvent](NetworkEvent.md) | Media network event. | | [PlaybackErrorEvent](PlaybackErrorEvent.md) | Playback error event. | | [PlaybackStateEvent](PlaybackStateEvent.md) | Playback state event. | | [TrackChangeEvent](TrackChangeEvent.md) | Playback track change event. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Abstract class for metrics events.
@@ -24,8 +24,8 @@ Abstract class for metrics events.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Bundle](../android/os/Bundle.md) | [getMetricsBundle](../android/media/metrics/Event.md))`()` Gets metrics-related information that is not supported by dedicated methods. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTimeSinceCreatedMillis](../android/media/metrics/Event.md))`()` Gets time since the corresponding log session is created in millisecond. |
+| open [Bundle](../android.os/Bundle.md) | [getMetricsBundle](Event.md))`()` Gets metrics-related information that is not supported by dedicated methods. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTimeSinceCreatedMillis](Event.md))`()` Gets time since the corresponding log session is created in millisecond. |
 
 ## Public methods
 
@@ -43,7 +43,7 @@ It is intended to be used for backwards compatibility by the metrics infrastruct
 
 | Return ||
 |----------------------------------------------------------------------------------|-----------------------------|
-| [Bundle](../android/os/Bundle.md) | This value cannot be`null`. |
+| [Bundle](../android.os/Bundle.md) | This value cannot be`null`. |
 
 ### getTimeSinceCreatedMillis
 
@@ -61,6 +61,6 @@ Gets time since the corresponding log session is created in millisecond.
 
 **See Also**
 
-- [android.media.metrics.LogSessionId](../android/media/metrics/LogSessionId.md)
-- [android.media.metrics.PlaybackSession](../android/media/metrics/PlaybackSession.md)
-- [android.media.metrics.RecordingSession](../android/media/metrics/RecordingSession.md)
+- [android.media.metrics.LogSessionId](LogSessionId.md)
+- [android.media.metrics.PlaybackSession](PlaybackSession.md)
+- [android.media.metrics.RecordingSession](RecordingSession.md)

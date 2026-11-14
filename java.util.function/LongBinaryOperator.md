@@ -8,17 +8,17 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 @FunctionalInterface interface LongBinaryOperator
 ```
 
-| [java.util.function.LongBinaryOperator](../java/util/function/LongBinaryOperator.md) |
+| [java.util.function.LongBinaryOperator](LongBinaryOperator.md) |
 
-Represents an operation upon two`long`-valued operands and producing a`long`-valued result. This is the primitive type specialization of [BinaryOperator](../java/util/function/BinaryOperator.md) for`long`.
+Represents an operation upon two`long`-valued operands and producing a`long`-valued result. This is the primitive type specialization of [BinaryOperator](BinaryOperator.md) for`long`.
 
-This is a [functional interface](../java/util/function/_package.md) whose functional method is [applyAsLong(long,long)](../java/util/function/LongBinaryOperator.md)).
+This is a [functional interface](_package.md) whose functional method is [applyAsLong(long,long)](LongBinaryOperator.md)).
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [applyAsLong](../java/util/function/LongBinaryOperator.md))`(`left:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `right:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Applies this operator to the given operands. |
+| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [applyAsLong](LongBinaryOperator.md))`(`left:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `right:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Applies this operator to the given operands. |
 
 ## Public methods
 

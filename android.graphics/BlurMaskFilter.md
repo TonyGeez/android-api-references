@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # BlurMaskFilter
 
-Kotlin| [Java](../android/graphics/BlurMaskFilter.md) 
+Kotlin| [Java](BlurMaskFilter.md) 
 | --- | --- |
 
 ```
@@ -13,8 +13,8 @@ open class BlurMaskFilter : MaskFilter
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.graphics.MaskFilter](../android/graphics/MaskFilter.md) ||
-| | ↳ | [android.graphics.BlurMaskFilter](../android/graphics/BlurMaskFilter.md) |
+| ↳ | [android.graphics.MaskFilter](MaskFilter.md) ||
+| | ↳ | [android.graphics.BlurMaskFilter](BlurMaskFilter.md) |
 
 This takes a mask, and blurs its edge by the specified radius. Whether or or not to include the original mask, and whether the blur goes outside, inside, or straddles, the original mask's border, is controlled by the Blur enum.
 
@@ -26,11 +26,11 @@ This takes a mask, and blurs its edge by the specified radius. Whether or or not
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [BlurMaskFilter](../android/graphics/BlurMaskFilter.md))`(`radius:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `style:` ` [BlurMaskFilter.Blur](../android/graphics/BlurMaskFilter.Blur.md)!`)` Create a blur maskfilter. |
+| [BlurMaskFilter](BlurMaskFilter.md))`(`radius:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `style:` ` [BlurMaskFilter.Blur](../android/graphics/BlurMaskFilter.Blur.md)!`)` Create a blur maskfilter. |
 
 | Inherited functions ||
 |---|---|
-| From class [MaskFilter](../android/graphics/MaskFilter.md) |------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](../android/graphics/MaskFilter.md))`()` <br /> | ||
+| From class [MaskFilter](MaskFilter.md) |------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](MaskFilter.md))`()` <br /> | ||
 
 ## Public constructors
 

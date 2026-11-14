@@ -3,7 +3,7 @@ Deprecated in [API level 28](https://developer.android.com/guide/topics/manifest
 
 # AsyncTaskLoader
 
-Kotlin | [Java](../android/content/AsyncTaskLoader.md)
+Kotlin | [Java](AsyncTaskLoader.md)
 | --- | --- |
 
 ```
@@ -12,10 +12,10 @@ abstract class AsyncTaskLoader<D : Any!> : Loader<D>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.content.Loader](../android/content/Loader.md)\<D\> ||
-| | ↳ | [android.content.AsyncTaskLoader](../android/content/AsyncTaskLoader.md) |
+| ↳ | [android.content.Loader](Loader.md)\<D\> ||
+| | ↳ | [android.content.AsyncTaskLoader](AsyncTaskLoader.md) |
 
-| Known Direct Subclasses [CursorLoader](../android/content/CursorLoader.md) |---|---| | [CursorLoader](../android/content/CursorLoader.md) | A loader that queries the `https://developer.android.com/reference/kotlin/android/content/ContentResolver` and returns a `https://developer.android.com/reference/kotlin/android/database/Cursor.html#`. | |
+| Known Direct Subclasses [CursorLoader](CursorLoader.md) |---|---| | [CursorLoader](CursorLoader.md) | A loader that queries the `https://developer.android.com/reference/kotlin/android/content/ContentResolver` and returns a `https://developer.android.com/reference/kotlin/android/database/Cursor.html#`. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 | **This class was deprecated in API level 28.**
@@ -104,8 +104,8 @@ Print the Loader's state into the given stream.
 | Parameters ||
 |---|---|
 | `prefix` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: Text to print at the front of each line. |
-| `fd` | [FileDescriptor](../java/io/FileDescriptor.md)!: The raw file descriptor that the dump is being sent to. |
-| `writer` | [PrintWriter](../java/io/PrintWriter.md)!: A PrintWriter to which the dump is to be set. |
+| `fd` | [FileDescriptor](../java.io/FileDescriptor.md)!: The raw file descriptor that the dump is being sent to. |
+| `writer` | [PrintWriter](../java.io/PrintWriter.md)!: A PrintWriter to which the dump is to be set. |
 | --- | --- |
 | `args` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!: Additional arguments to the dump request. |
 

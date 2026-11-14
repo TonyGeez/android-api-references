@@ -8,7 +8,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface DatagramSocketImplFactory
 ```
 
-| [java.net.DatagramSocketImplFactory](../java/net/DatagramSocketImplFactory.md) |
+| [java.net.DatagramSocketImplFactory](DatagramSocketImplFactory.md) |
 
 This interface defines a factory for datagram socket implementations. It is used by the classes `DatagramSocket` to create actual socket implementations.
 
@@ -16,7 +16,7 @@ This interface defines a factory for datagram socket implementations. It is used
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [DatagramSocketImpl](../java/net/DatagramSocketImpl.md)! | [createDatagramSocketImpl](../java/net/DatagramSocketImplFactory.md))`()` Creates a new `DatagramSocketImpl` instance. |
+| abstract [DatagramSocketImpl](DatagramSocketImpl.md)! | [createDatagramSocketImpl](DatagramSocketImplFactory.md))`()` Creates a new `DatagramSocketImpl` instance. |
 
 ## Public methods
 
@@ -32,8 +32,8 @@ Creates a new `DatagramSocketImpl` instance.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------|-----------------------------------------|
-| [DatagramSocketImpl](../java/net/DatagramSocketImpl.md)! | a new instance of `DatagramSocketImpl`. |
+| [DatagramSocketImpl](DatagramSocketImpl.md)! | a new instance of `DatagramSocketImpl`. |
 
 **See Also**
 
-- [java.net.DatagramSocketImpl](../java/net/DatagramSocketImpl.md)
+- [java.net.DatagramSocketImpl](DatagramSocketImpl.md)

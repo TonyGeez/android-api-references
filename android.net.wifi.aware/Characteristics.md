@@ -8,7 +8,7 @@ class Characteristics : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.wifi.aware.Characteristics](../android/net/wifi/aware/Characteristics.md) |
+| ↳ | [android.net.wifi.aware.Characteristics](Characteristics.md) |
 
 The characteristics of the Wi-Fi Aware implementation.
 
@@ -63,7 +63,7 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [Characteristics](../android/net/wifi/aware/Characteristics.md)!\> | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/Characteristics#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [Characteristics](Characteristics.md)!\> | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/Characteristics#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -372,7 +372,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

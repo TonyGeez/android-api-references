@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # DashPathEffect
 
-Kotlin| [Java](../android/graphics/DashPathEffect.md) 
+Kotlin| [Java](DashPathEffect.md) 
 | --- | --- |
 
 ```
@@ -13,18 +13,18 @@ open class DashPathEffect : PathEffect
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.graphics.PathEffect](../android/graphics/PathEffect.md) ||
-| | ↳ | [android.graphics.DashPathEffect](../android/graphics/DashPathEffect.md) |
+| ↳ | [android.graphics.PathEffect](PathEffect.md) ||
+| | ↳ | [android.graphics.DashPathEffect](DashPathEffect.md) |
 
 ## Summary
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [DashPathEffect](../android/graphics/DashPathEffect.md))`(`intervals:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`, `phase:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` The intervals array must contain an even number of entries (\>=2), with the even indices specifying the "on" intervals, and the odd indices specifying the "off" intervals. |
+| [DashPathEffect](DashPathEffect.md))`(`intervals:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`, `phase:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` The intervals array must contain an even number of entries (\>=2), with the even indices specifying the "on" intervals, and the odd indices specifying the "off" intervals. |
 
 | Inherited functions ||
 |---|---|
-| From class [PathEffect](../android/graphics/PathEffect.md) |------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](../android/graphics/PathEffect.md))`()` <br /> | ||
+| From class [PathEffect](PathEffect.md) |------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](PathEffect.md))`()` <br /> | ||
 
 ## Public constructors
 

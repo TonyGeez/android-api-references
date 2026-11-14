@@ -4,7 +4,7 @@ Added in [API level 12](https://developer.android.com/guide/topics/manifest/uses
 
 # UsbDevice
 
-Kotlin| [Java](../android/hardware/usb/UsbDevice.md) 
+Kotlin| [Java](UsbDevice.md) 
 | --- | --- |
 
 ```
@@ -13,11 +13,11 @@ open class UsbDevice : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.hardware.usb.UsbDevice](../android/hardware/usb/UsbDevice.md) |
+| ↳ | [android.hardware.usb.UsbDevice](UsbDevice.md) |
 
-This class represents a USB device attached to the android device with the android device acting as the USB host. Each device contains one or more [UsbInterface](../android/hardware/usb/UsbInterface.md) s, each of which contains a number of [UsbEndpoint](../android/hardware/usb/UsbEndpoint.md) s (the channels via which data is transmitted over USB).
+This class represents a USB device attached to the android device with the android device acting as the USB host. Each device contains one or more [UsbInterface](UsbInterface.md) s, each of which contains a number of [UsbEndpoint](UsbEndpoint.md) s (the channels via which data is transmitted over USB).
 
-This class contains information (along with [UsbInterface](../android/hardware/usb/UsbInterface.md) and [UsbEndpoint](../android/hardware/usb/UsbEndpoint.md)) that describes the capabilities of the USB device. To communicate with the device, you open a [UsbDeviceConnection](../android/hardware/usb/UsbDeviceConnection.md) for the device and use [UsbRequest](../android/hardware/usb/UsbRequest.md) to send and receive data on an endpoint. android.hardware.usb.UsbDeviceConnection#controlTransfer is used for control requests on endpoint zero.
+This class contains information (along with [UsbInterface](UsbInterface.md) and [UsbEndpoint](UsbEndpoint.md)) that describes the capabilities of the USB device. To communicate with the device, you open a [UsbDeviceConnection](UsbDeviceConnection.md) for the device and use [UsbRequest](UsbRequest.md) to send and receive data on an endpoint. android.hardware.usb.UsbDeviceConnection#controlTransfer is used for control requests on endpoint zero.
 |
 | ### Developer Guides
 |
@@ -27,43 +27,43 @@ This class contains information (along with [UsbInterface](../android/hardware/u
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android.os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android.os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android.os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/hardware/usb/UsbDevice.md))`()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/hardware/usb/UsbDevice.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| open [UsbConfiguration](../android/hardware/usb/UsbConfiguration.md) | [getConfiguration](../android/hardware/usb/UsbDevice.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the [UsbConfiguration](../android/hardware/usb/UsbConfiguration.md) at the given index. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](UsbDevice.md))`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](UsbDevice.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| open [UsbConfiguration](UsbConfiguration.md) | [getConfiguration](UsbDevice.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the [UsbConfiguration](UsbConfiguration.md) at the given index. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getConfigurationCount](../android/hardware/usb/UsbDevice.md))`()` Returns the number of [UsbConfiguration](../android/hardware/usb/UsbConfiguration.md) s this device contains. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDeviceClass](../android/hardware/usb/UsbDevice.md))`()` Returns the devices's class field. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDeviceId](../android/hardware/usb/UsbDevice.md))`()` Returns a unique integer ID for the device. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getConfigurationCount](UsbDevice.md))`()` Returns the number of [UsbConfiguration](UsbConfiguration.md) s this device contains. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDeviceClass](UsbDevice.md))`()` Returns the devices's class field. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDeviceId](UsbDevice.md))`()` Returns a unique integer ID for the device. |
 | --- | --- |
-| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDeviceId](../android/hardware/usb/UsbDevice.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getDeviceName](../android/hardware/usb/UsbDevice.md))`()` Returns the name of the device. |
-| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDeviceName](../android/hardware/usb/UsbDevice.md))`(`id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| openstatic [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDeviceId](UsbDevice.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getDeviceName](UsbDevice.md))`()` Returns the name of the device. |
+| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDeviceName](UsbDevice.md))`(`id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDeviceProtocol](../android/hardware/usb/UsbDevice.md))`()` Returns the device's protocol field. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDeviceSubclass](../android/hardware/usb/UsbDevice.md))`()` Returns the device's subclass field. |
-| open [UsbInterface](../android/hardware/usb/UsbInterface.md) | [getInterface](../android/hardware/usb/UsbDevice.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the [UsbInterface](../android/hardware/usb/UsbInterface.md) at the given index. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDeviceProtocol](UsbDevice.md))`()` Returns the device's protocol field. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDeviceSubclass](UsbDevice.md))`()` Returns the device's subclass field. |
+| open [UsbInterface](UsbInterface.md) | [getInterface](UsbDevice.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the [UsbInterface](UsbInterface.md) at the given index. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInterfaceCount](../android/hardware/usb/UsbDevice.md))`()` Returns the number of [UsbInterface](../android/hardware/usb/UsbInterface.md) s this device contains. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getManufacturerName](../android/hardware/usb/UsbDevice.md))`()` Returns the manufacturer name of the device. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getProductId](../android/hardware/usb/UsbDevice.md))`()` Returns a product ID for the device. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInterfaceCount](UsbDevice.md))`()` Returns the number of [UsbInterface](UsbInterface.md) s this device contains. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getManufacturerName](UsbDevice.md))`()` Returns the manufacturer name of the device. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getProductId](UsbDevice.md))`()` Returns a product ID for the device. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getProductName](../android/hardware/usb/UsbDevice.md))`()` Returns the product name of the device. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getSerialNumber](../android/hardware/usb/UsbDevice.md))`()` Returns the serial number of the device. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getVendorId](../android/hardware/usb/UsbDevice.md))`()` Returns a vendor ID for the device. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getProductName](UsbDevice.md))`()` Returns the product name of the device. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getSerialNumber](UsbDevice.md))`()` Returns the serial number of the device. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getVendorId](UsbDevice.md))`()` Returns a vendor ID for the device. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getVersion](../android/hardware/usb/UsbDevice.md))`()` Returns the version number of the device. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/hardware/usb/UsbDevice.md))`()` <br /> |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/hardware/usb/UsbDevice.md))`()` <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getVersion](UsbDevice.md))`()` Returns the version number of the device. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](UsbDevice.md))`()` <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](UsbDevice.md))`()` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/hardware/usb/UsbDevice.md))`(`parcel:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](UsbDevice.md))`(`parcel:` ` [Parcel](../android.os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [UsbDevice](../android/hardware/usb/UsbDevice.md)!\> | [CREATOR](../android/hardware/usb/UsbDevice.md) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [UsbDevice](UsbDevice.md)!\> | [CREATOR](UsbDevice.md) <br /> |
 
 ## Public methods
 
@@ -77,7 +77,7 @@ open fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) |
 
 ### equals
 
@@ -116,11 +116,11 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 open fun getConfiguration(index: Int): UsbConfiguration
 ```
 
-Returns the [UsbConfiguration](../android/hardware/usb/UsbConfiguration.md) at the given index.
+Returns the [UsbConfiguration](UsbConfiguration.md) at the given index.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------|-----------------------------------------------|
-| [UsbConfiguration](../android/hardware/usb/UsbConfiguration.md) | the configuration This value cannot be`null`. |
+| [UsbConfiguration](UsbConfiguration.md) | the configuration This value cannot be`null`. |
 
 ### getConfigurationCount
 
@@ -130,7 +130,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 open fun getConfigurationCount(): Int
 ```
 
-Returns the number of [UsbConfiguration](../android/hardware/usb/UsbConfiguration.md) s this device contains.
+Returns the number of [UsbConfiguration](UsbConfiguration.md) s this device contains.
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------|
@@ -144,7 +144,7 @@ Added in [API level 12](https://developer.android.com/guide/topics/manifest/uses
 open fun getDeviceClass(): Int
 ```
 
-Returns the devices's class field. Some useful constants for USB device classes can be found in [UsbConstants](../android/hardware/usb/UsbConstants.md).
+Returns the devices's class field. Some useful constants for USB device classes can be found in [UsbConstants](UsbConstants.md).
 
 | Return ||
 |----------------------------------------------------------------------------|---------------------|
@@ -230,11 +230,11 @@ Added in [API level 12](https://developer.android.com/guide/topics/manifest/uses
 open fun getInterface(index: Int): UsbInterface
 ```
 
-Returns the [UsbInterface](../android/hardware/usb/UsbInterface.md) at the given index. For devices with multiple configurations, you will probably want to use [UsbConfiguration.getInterface](../android/hardware/usb/UsbConfiguration.md))instead.
+Returns the [UsbInterface](UsbInterface.md) at the given index. For devices with multiple configurations, you will probably want to use [UsbConfiguration.getInterface](UsbConfiguration.md))instead.
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|-------------------------------------------|
-| [UsbInterface](../android/hardware/usb/UsbInterface.md) | the interface This value cannot be`null`. |
+| [UsbInterface](UsbInterface.md) | the interface This value cannot be`null`. |
 
 ### getInterfaceCount
 
@@ -244,7 +244,7 @@ Added in [API level 12](https://developer.android.com/guide/topics/manifest/uses
 open fun getInterfaceCount(): Int
 ```
 
-Returns the number of [UsbInterface](../android/hardware/usb/UsbInterface.md) s this device contains. For devices with multiple configurations, you will probably want to use [UsbConfiguration.getInterfaceCount](../android/hardware/usb/UsbConfiguration.md))instead.
+Returns the number of [UsbInterface](UsbInterface.md) s this device contains. For devices with multiple configurations, you will probably want to use [UsbConfiguration.getInterfaceCount](UsbConfiguration.md))instead.
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------|
@@ -376,7 +376,7 @@ open fun writeToParcel(
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `dest` | The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

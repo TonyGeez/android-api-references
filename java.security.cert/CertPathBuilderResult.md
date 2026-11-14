@@ -8,12 +8,12 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface CertPathBuilderResult : Cloneable
 ```
 
-| [java.security.cert.CertPathBuilderResult](../java/security/cert/CertPathBuilderResult.md) |
+| [java.security.cert.CertPathBuilderResult](CertPathBuilderResult.md) |
 
-| Known Direct Subclasses [PKIXCertPathBuilderResult](../java/security/cert/PKIXCertPathBuilderResult.md) |--------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------| | [PKIXCertPathBuilderResult](../java/security/cert/PKIXCertPathBuilderResult.md) | This class represents the successful result of the PKIX certification path builder algorithm. | |
+| Known Direct Subclasses [PKIXCertPathBuilderResult](PKIXCertPathBuilderResult.md) |--------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------| | [PKIXCertPathBuilderResult](PKIXCertPathBuilderResult.md) | This class represents the successful result of the PKIX certification path builder algorithm. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
-A specification of the result of a certification path builder algorithm. All results returned by the [CertPathBuilder.build](../java/security/cert/CertPathBuilder.md))method must implement this interface.
+A specification of the result of a certification path builder algorithm. All results returned by the [CertPathBuilder.build](CertPathBuilder.md))method must implement this interface.
 
 At a minimum, a`CertPathBuilderResult`contains the`CertPath`built by the`CertPathBuilder`instance. Implementations of this interface may add methods to return implementation or algorithm specific information, such as debugging information or certification path validation results.
 
@@ -25,8 +25,8 @@ Unless otherwise specified, the methods defined in this interface are not thread
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](../java/security/cert/CertPathBuilderResult.md))`()` Makes a copy of this`CertPathBuilderResult`. |
-| abstract [CertPath](../java/security/cert/CertPath.md)! | [getCertPath](../java/security/cert/CertPathBuilderResult.md))`()` Returns the built certification path. |
+| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](CertPathBuilderResult.md))`()` Makes a copy of this`CertPathBuilderResult`. |
+| abstract [CertPath](CertPath.md)! | [getCertPath](CertPathBuilderResult.md))`()` Returns the built certification path. |
 
 ## Public methods
 
@@ -60,4 +60,4 @@ Returns the built certification path.
 
 | Return ||
 |-----------------------------------------------------------------------------------------|--------------------------------------|
-| [CertPath](../java/security/cert/CertPath.md)! | the certification path (never`null`) |
+| [CertPath](CertPath.md)! | the certification path (never`null`) |

@@ -8,11 +8,11 @@ abstract class DataMigrationToPccService : Service
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](../android/content/Context.md) ||||
-| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) |||
-| | | ↳ | [android.app.Service](../android/app/Service.md) ||
+| ↳ | [android.content.Context](../android.content/Context.md) ||||
+| | ↳ | [android.content.ContextWrapper](../android.content/ContextWrapper.md) |||
+| | | ↳ | [android.app.Service](../android.app/Service.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.app.privatecompute.DataMigrationToPccService](../android/app/privatecompute/DataMigrationToPccService.md) |
+| | | | ↳ | [android.app.privatecompute.DataMigrationToPccService](DataMigrationToPccService.md) |
 
 Base class for a service that handles data migration to the Private Compute Core (PCC) storage of an application.
 
@@ -1048,7 +1048,7 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 
 | Public methods ||
 |---|---|
-| [IBinder](../android/os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/app/privatecompute/DataMigrationToPccService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#?)` Return the communication channel to the service. |
+| [IBinder](../android.os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/app/privatecompute/DataMigrationToPccService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#?)` Return the communication channel to the service. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/privatecompute/DataMigrationToPccService#onMigrationRequested(java.util.function.Consumer)(callback: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://developer.android.com/reference/kotlin/android/app/privatecompute/MigrationRequestResult!>)` Called when the framework triggers a migration request on behalf of a PCC component. |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/app/Service.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/app/Service.html#attachBaseContext(android.content.Context)(newBase: https://developer.android.com/reference/kotlin/android/content/Context.html#!)`
@@ -2792,7 +2792,7 @@ Return the communication channel to the service. May return null if clients can 
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md)?: This value may be `null`. |
+| `intent` | [Intent](../android.content/Intent.md)?: This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -2810,4 +2810,4 @@ Called when the framework triggers a migration request on behalf of a PCC compon
 
 | Parameters ||
 |---|---|
-| `callback` | [Consumer](../java/util/function/Consumer.md)\< [MigrationRequestResult](../android/app/privatecompute/MigrationRequestResult.md)!\>: Use this to send a result back to the requesting PCC process and signal to the system whether migration has been accepted. This value cannot be `null`. |
+| `callback` | [Consumer](../java.util.function/Consumer.md)\< [MigrationRequestResult](MigrationRequestResult.md)!\>: Use this to send a result back to the requesting PCC process and signal to the system whether migration has been accepted. This value cannot be `null`. |

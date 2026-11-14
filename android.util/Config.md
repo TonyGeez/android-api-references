@@ -5,7 +5,7 @@ Deprecated in [API level 14](https://developer.android.com/guide/topics/manifest
 
 # Config
 
-Kotlin| [Java](../android/util/Config.md) 
+Kotlin| [Java](Config.md) 
 | --- | --- |
 
 ```
@@ -14,7 +14,7 @@ class Config
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.util.Config](../android/util/Config.md) |
+| ↳ | [android.util.Config](Config.md) |
 
 | **This class was deprecated in API level 14.**
 |
@@ -24,12 +24,12 @@ class Config
 
 | Constants ||
 |------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [DEBUG](../android/util/Config.md) <br /> |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [LOGD](../android/util/Config.md) <br /> |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [LOGV](../android/util/Config.md) <br /> |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [DEBUG](Config.md) <br /> |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [LOGD](Config.md) <br /> |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [LOGV](Config.md) <br /> |
 | --- | --- |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [PROFILE](../android/util/Config.md) <br /> |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [RELEASE](../android/util/Config.md) <br /> |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [PROFILE](Config.md) <br /> |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [RELEASE](Config.md) <br /> |
 
 ## Constants
 

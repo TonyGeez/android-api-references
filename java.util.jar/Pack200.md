@@ -10,7 +10,7 @@ abstract class Pack200
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.util.jar.Pack200](../java/util/jar/Pack200.md) |
+| ↳ | [java.util.jar.Pack200](Pack200.md) |
 
 Transforms a JAR file to or from a packed stream in Pack200 format. Please refer to Network Transfer Format JSR 200 Specification at<http://jcp.org/aboutJava/communityprocess/review/jsr200/index.html>
 
@@ -68,7 +68,7 @@ Here is an example using packer and unpacker:
 
 A Pack200 file compressed with gzip can be hosted on HTTP/1.1 web servers. The deployment applications can use "Accept-Encoding=pack200-gzip". This indicates to the server that the client application desires a version of the file encoded with Pack200 and further compressed with gzip. Please refer to [Java Deployment Guide](https://docs.oracle.com/javase/8/docs/technotes/guides/deployment/deployment-guide/pack200.html) for more details and techniques.
 
-Unless otherwise noted, passing a null argument to a constructor or method in this class will cause a [NullPointerException](../java/lang/NullPointerException.md) to be thrown.
+Unless otherwise noted, passing a null argument to a constructor or method in this class will cause a [NullPointerException](../java.lang/NullPointerException.md) to be thrown.
 
 ## Summary
 
@@ -79,8 +79,8 @@ Unless otherwise noted, passing a null argument to a constructor or method in th
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [Pack200.Packer](../java/util/jar/Pack200.Packer.md)! | [newPacker](../java/util/jar/Pack200.md))`()` Obtain new instance of a class that implements Packer. |
-| openstatic [Pack200.Unpacker](../java/util/jar/Pack200.Unpacker.md)! | [newUnpacker](../java/util/jar/Pack200.md))`()` Obtain new instance of a class that implements Unpacker. |
+| openstatic [Pack200.Packer](../java/util/jar/Pack200.Packer.md)! | [newPacker](Pack200.md))`()` Obtain new instance of a class that implements Packer. |
+| openstatic [Pack200.Unpacker](../java/util/jar/Pack200.Unpacker.md)! | [newUnpacker](Pack200.md))`()` Obtain new instance of a class that implements Unpacker. |
 
 ## Public methods
 

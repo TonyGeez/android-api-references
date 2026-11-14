@@ -9,11 +9,11 @@ class IkeIOException : IkeNonProtocolException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
-| | | ↳ | [android.net.ipsec.ike.exceptions.IkeException](../android/net/ipsec/ike/exceptions/IkeException.md) |||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) ||||
+| | | ↳ | [android.net.ipsec.ike.exceptions.IkeException](IkeException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.net.ipsec.ike.exceptions.IkeNonProtocolException](../android/net/ipsec/ike/exceptions/IkeNonProtocolException.md) ||
-| | | | | ↳ | [android.net.ipsec.ike.exceptions.IkeIOException](../android/net/ipsec/ike/exceptions/IkeIOException.md) |
+| | | | ↳ | [android.net.ipsec.ike.exceptions.IkeNonProtocolException](IkeNonProtocolException.md) ||
+| | | | | ↳ | [android.net.ipsec.ike.exceptions.IkeIOException](IkeIOException.md) |
 
 Wrapper for I/O exceptions encountered during IKE operations.
 
@@ -29,7 +29,7 @@ Wrapper for I/O exceptions encountered during IKE operations.
 
 | Properties ||
 |---|---|
-| [IOException](../java/io/IOException.md) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/exceptions/IkeIOException#cause:java.io.IOException` Returns the cause of this IkeIOException. |
+| [IOException](../java.io/IOException.md) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/exceptions/IkeIOException#cause:java.io.IOException` Returns the cause of this IkeIOException. |
 
 ## Public constructors
 
@@ -47,7 +47,7 @@ Callers are not generally expected to instantiate this object themselves, except
 
 | Parameters ||
 |---|---|
-| `cause` | [IOException](../java/io/IOException.md): the cause (which is saved for later retrieval by the `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/exceptions/IkeIOException#cause:java.io.IOException` method). This value cannot be `null`. |
+| `cause` | [IOException](../java.io/IOException.md): the cause (which is saved for later retrieval by the `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/exceptions/IkeIOException#cause:java.io.IOException` method). This value cannot be `null`. |
 
 ## Public methods
 

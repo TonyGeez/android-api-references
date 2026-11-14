@@ -35,4 +35,4 @@ Callback method to be invoked when the window visibility changes in the view tre
 
 | Parameters ||
 |--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `visibility` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The new visibility of the window. Value is [android.view.View#VISIBLE](../android/view/View.md), [android.view.View#INVISIBLE](../android/view/View.md), or [android.view.View#GONE](../android/view/View.md) |
+| `visibility` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The new visibility of the window. Value is [android.view.View#VISIBLE](View.md), [android.view.View#INVISIBLE](View.md), or [android.view.View#GONE](View.md) |

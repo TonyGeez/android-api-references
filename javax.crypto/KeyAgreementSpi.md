@@ -10,11 +10,11 @@ abstract class KeyAgreementSpi
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.crypto.KeyAgreementSpi](../javax/crypto/KeyAgreementSpi.md) |
+| ↳ | [javax.crypto.KeyAgreementSpi](KeyAgreementSpi.md) |
 
 This class defines the*Service Provider Interface* (**SPI** ) for the`KeyAgreement`class. All the abstract methods in this class must be implemented by each cryptographic service provider who wishes to supply the implementation of a particular key agreement algorithm.
 
-The keys involved in establishing a shared secret are created by one of the key generators (`KeyPairGenerator`or`KeyGenerator`), a`KeyFactory`, or as a result from an intermediate phase of the key agreement protocol ([engineDoPhase](../javax/crypto/KeyAgreementSpi.md))).
+The keys involved in establishing a shared secret are created by one of the key generators (`KeyPairGenerator`or`KeyGenerator`), a`KeyFactory`, or as a result from an intermediate phase of the key agreement protocol ([engineDoPhase](KeyAgreementSpi.md))).
 
 For each of the correspondents in the key exchange,`engineDoPhase`needs to be called. For example, if the key exchange is with one other party,`engineDoPhase`needs to be called once, with the`lastPhase`flag set to`true`. If the key exchange is with two other parties,`engineDoPhase`needs to be called twice, the first time setting the`lastPhase`flag to`false`, and the second time setting it to`true`. There may be any number of parties involved in a key exchange.
 
@@ -22,17 +22,17 @@ For each of the correspondents in the key exchange,`engineDoPhase`needs to be ca
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------|---|
-| [KeyAgreementSpi](../javax/crypto/KeyAgreementSpi.md))`()` <br /> |
+| [KeyAgreementSpi](KeyAgreementSpi.md))`()` <br /> |
 
 | Protected methods ||
 |--------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Key](../java/security/Key.md)! | [engineDoPhase](../javax/crypto/KeyAgreementSpi.md))`(`key:` ` [Key](../java/security/Key.md)!`, `lastPhase:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Executes the next phase of this key agreement with the given key that was received from one of the other parties involved in this key agreement. |
-| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [engineGenerateSecret](../javax/crypto/KeyAgreementSpi.md))`()` Generates the shared secret and returns it in a new buffer. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [engineGenerateSecret](../javax/crypto/KeyAgreementSpi.md))`(`sharedSecret:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Generates the shared secret, and places it into the buffer`sharedSecret`, beginning at`offset`inclusive. |
+| abstract [Key](../java.security/Key.md)! | [engineDoPhase](KeyAgreementSpi.md))`(`key:` ` [Key](../java.security/Key.md)!`, `lastPhase:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Executes the next phase of this key agreement with the given key that was received from one of the other parties involved in this key agreement. |
+| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [engineGenerateSecret](KeyAgreementSpi.md))`()` Generates the shared secret and returns it in a new buffer. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [engineGenerateSecret](KeyAgreementSpi.md))`(`sharedSecret:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Generates the shared secret, and places it into the buffer`sharedSecret`, beginning at`offset`inclusive. |
 | --- | --- |
-| abstract [SecretKey](../javax/crypto/SecretKey.md)! | [engineGenerateSecret](../javax/crypto/KeyAgreementSpi.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates the shared secret and returns it as a secret key object of the requested algorithm type. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](../javax/crypto/KeyAgreementSpi.md))`(`key:` ` [Key](../java/security/Key.md)!`, `random:` ` [SecureRandom](../java/security/SecureRandom.md)!`)` Initializes this key agreement with the given key and source of randomness. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](../javax/crypto/KeyAgreementSpi.md))`(`key:` ` [Key](../java/security/Key.md)!`, `params:` ` [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)!`, `random:` ` [SecureRandom](../java/security/SecureRandom.md)!`)` Initializes this key agreement with the given key, set of algorithm parameters, and source of randomness. |
+| abstract [SecretKey](SecretKey.md)! | [engineGenerateSecret](KeyAgreementSpi.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates the shared secret and returns it as a secret key object of the requested algorithm type. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](KeyAgreementSpi.md))`(`key:` ` [Key](../java.security/Key.md)!`, `random:` ` [SecureRandom](../java.security/SecureRandom.md)!`)` Initializes this key agreement with the given key and source of randomness. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](KeyAgreementSpi.md))`(`key:` ` [Key](../java.security/Key.md)!`, `params:` ` [AlgorithmParameterSpec](../java.security.spec/AlgorithmParameterSpec.md)!`, `random:` ` [SecureRandom](../java.security/SecureRandom.md)!`)` Initializes this key agreement with the given key, set of algorithm parameters, and source of randomness. |
 | --- | --- |
 
 ## Public constructors
@@ -62,12 +62,12 @@ Executes the next phase of this key agreement with the given key that was receiv
 
 | Parameters ||
 |-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `key` | [Key](../java/security/Key.md)!:the key for this phase. For example, in the case of Diffie-Hellman between 2 parties, this would be the other party's Diffie-Hellman public key. |
+| `key` | [Key](../java.security/Key.md)!:the key for this phase. For example, in the case of Diffie-Hellman between 2 parties, this would be the other party's Diffie-Hellman public key. |
 | `lastPhase` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):flag which indicates whether or not this is the last phase of this key agreement. |
 
 | Return ||
 |--------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
-| [Key](../java/security/Key.md)! | the (intermediate) key resulting from this phase, or null if this phase does not yield a key |
+| [Key](../java.security/Key.md)! | the (intermediate) key resulting from this phase, or null if this phase does not yield a key |
 
 | Exceptions ||
 |-------------------------------------|---------------------------------------------------|
@@ -143,7 +143,7 @@ This method resets this`KeyAgreementSpi`object, so that it can be reused for fur
 
 | Return ||
 |-------------------------------------------------------------------------------------|-----------------------|
-| [SecretKey](../javax/crypto/SecretKey.md)! | the shared secret key |
+| [SecretKey](SecretKey.md)! | the shared secret key |
 
 | Exceptions ||
 |------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -169,8 +169,8 @@ If the key agreement algorithm requires random bytes, it gets them from the give
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `key` | [Key](../java/security/Key.md)!:the party's private information. For example, in the case of the Diffie-Hellman key agreement, this would be the party's own Diffie-Hellman private key. |
-| `random` | [SecureRandom](../java/security/SecureRandom.md)!:the source of randomness |
+| `key` | [Key](../java.security/Key.md)!:the party's private information. For example, in the case of the Diffie-Hellman key agreement, this would be the party's own Diffie-Hellman private key. |
+| `random` | [SecureRandom](../java.security/SecureRandom.md)!:the source of randomness |
 
 | Exceptions ||
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
@@ -192,9 +192,9 @@ Initializes this key agreement with the given key, set of algorithm parameters, 
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `key` | [Key](../java/security/Key.md)!:the party's private information. For example, in the case of the Diffie-Hellman key agreement, this would be the party's own Diffie-Hellman private key. |
-| `params` | [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)!:the key agreement parameters |
-| `random` | [SecureRandom](../java/security/SecureRandom.md)!:the source of randomness |
+| `key` | [Key](../java.security/Key.md)!:the party's private information. For example, in the case of the Diffie-Hellman key agreement, this would be the party's own Diffie-Hellman private key. |
+| `params` | [AlgorithmParameterSpec](../java.security.spec/AlgorithmParameterSpec.md)!:the key agreement parameters |
+| `random` | [SecureRandom](../java.security/SecureRandom.md)!:the source of randomness |
 | --- | --- |
 
 | Exceptions ||

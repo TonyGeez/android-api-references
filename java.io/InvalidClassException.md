@@ -11,11 +11,11 @@ open class InvalidClassException : ObjectStreamException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
-| | | ↳ | [java.io.IOException](../java/io/IOException.md) |||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) ||||
+| | | ↳ | [java.io.IOException](IOException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.io.ObjectStreamException](../java/io/ObjectStreamException.md) ||
-| | | | | ↳ | [java.io.InvalidClassException](../java/io/InvalidClassException.md) |
+| | | | ↳ | [java.io.ObjectStreamException](ObjectStreamException.md) ||
+| | | | | ↳ | [java.io.InvalidClassException](InvalidClassException.md) |
 
 Thrown when the Serialization runtime detects one of the following problems with a Class.
 
@@ -31,13 +31,13 @@ Thrown when the Serialization runtime detects one of the following problems with
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [InvalidClassException](../java/io/InvalidClassException.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Report an InvalidClassException for the reason specified. |
-| [InvalidClassException](../java/io/InvalidClassException.md))`(`cname:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an InvalidClassException object. |
+| [InvalidClassException](InvalidClassException.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Report an InvalidClassException for the reason specified. |
+| [InvalidClassException](InvalidClassException.md))`(`cname:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an InvalidClassException object. |
 
 | Properties ||
 |---------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [classname](../java/io/InvalidClassException.md) Name of the invalid class. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [message](../java/io/InvalidClassException.md) Produce the message and include the classname, if present. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [classname](InvalidClassException.md) Name of the invalid class. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [message](InvalidClassException.md) Produce the message and include the classname, if present. |
 
 ## Public constructors
 

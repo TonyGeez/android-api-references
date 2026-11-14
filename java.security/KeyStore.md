@@ -8,7 +8,7 @@ open class KeyStore
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.KeyStore](../java/security/KeyStore.md) |
+| ↳ | [java.security.KeyStore](KeyStore.md) |
 
 This class represents a storage facility for cryptographic keys and certificates.
 
@@ -141,28 +141,28 @@ These types are described in the [KeyStore section](https://docs.oracle.com/java
 
 | Public methods ||
 |---|---|
-| [Enumeration](../java/util/Enumeration.md)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/security/KeyStore#aliases()()` Lists all the alias names of this keystore. |
+| [Enumeration](../java.util/Enumeration.md)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/security/KeyStore#aliases()()` Lists all the alias names of this keystore. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/security/KeyStore#containsAlias(kotlin.String)(alias: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Checks if the given alias exists in this keystore. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/KeyStore#deleteEntry(kotlin.String)(alias: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Deletes the entry identified by the given alias from this keystore. |
 | --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/security/KeyStore#entryInstanceOf(kotlin.String,%20java.lang.Class)(alias: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, entryClass: https://developer.android.com/reference/kotlin/java/lang/Class.html#<out https://developer.android.com/reference/kotlin/java/security/KeyStore.Entry!>!)` Determines if the keystore `Entry` for the specified `alias` is an instance or subclass of the specified `entryClass`. |
-| [Certificate](../java/security/cert/Certificate.md)! | `https://developer.android.com/reference/kotlin/java/security/KeyStore#getCertificate(kotlin.String)(alias: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the certificate associated with the given alias. |
+| [Certificate](../java.security.cert/Certificate.md)! | `https://developer.android.com/reference/kotlin/java/security/KeyStore#getCertificate(kotlin.String)(alias: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the certificate associated with the given alias. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/security/KeyStore#getCertificateAlias(java.security.cert.Certificate)(cert: https://developer.android.com/reference/kotlin/java/security/cert/Certificate!)` Returns the (alias) name of the first keystore entry whose certificate matches the given certificate. |
 | --- | --- |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Certificate](../java/security/cert/Certificate.md)!\>! | `https://developer.android.com/reference/kotlin/java/security/KeyStore#getCertificateChain(kotlin.String)(alias: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the certificate chain associated with the given alias. |
-| [Date](../java/util/Date.md)! | `https://developer.android.com/reference/kotlin/java/security/KeyStore#getCreationDate(kotlin.String)(alias: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the creation date of the entry identified by the given alias. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Certificate](../java.security.cert/Certificate.md)!\>! | `https://developer.android.com/reference/kotlin/java/security/KeyStore#getCertificateChain(kotlin.String)(alias: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the certificate chain associated with the given alias. |
+| [Date](../java.util/Date.md)! | `https://developer.android.com/reference/kotlin/java/security/KeyStore#getCreationDate(kotlin.String)(alias: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the creation date of the entry identified by the given alias. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/security/KeyStore#getDefaultType()()` Returns the default keystore type as specified by the `keystore.type` security property, or the string "jks" (acronym for "Java keystore") if no such property exists. |
 | --- | --- |
 | [KeyStore.Entry](../java/security/KeyStore.Entry.md)! | `https://developer.android.com/reference/kotlin/java/security/KeyStore#getEntry(kotlin.String,%20java.security.KeyStore.ProtectionParameter)(alias: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, protParam: https://developer.android.com/reference/kotlin/java/security/KeyStore.ProtectionParameter!)` Gets a keystore `Entry` for the specified alias with the specified protection parameter. |
-| static [KeyStore](../java/security/KeyStore.md)! | `https://developer.android.com/reference/kotlin/java/security/KeyStore#getInstance(java.io.File,%20kotlin.CharArray)(file: https://developer.android.com/reference/kotlin/java/io/File.html#!, password: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html!)` Returns a loaded keystore object of the appropriate keystore type. |
-| static [KeyStore](../java/security/KeyStore.md)! | `https://developer.android.com/reference/kotlin/java/security/KeyStore#getInstance(java.io.File,%20java.security.KeyStore.LoadStoreParameter)(file: https://developer.android.com/reference/kotlin/java/io/File.html#!, param: https://developer.android.com/reference/kotlin/java/security/KeyStore.LoadStoreParameter!)` Returns a loaded keystore object of the appropriate keystore type. |
+| static [KeyStore](KeyStore.md)! | `https://developer.android.com/reference/kotlin/java/security/KeyStore#getInstance(java.io.File,%20kotlin.CharArray)(file: https://developer.android.com/reference/kotlin/java/io/File.html#!, password: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html!)` Returns a loaded keystore object of the appropriate keystore type. |
+| static [KeyStore](KeyStore.md)! | `https://developer.android.com/reference/kotlin/java/security/KeyStore#getInstance(java.io.File,%20java.security.KeyStore.LoadStoreParameter)(file: https://developer.android.com/reference/kotlin/java/io/File.html#!, param: https://developer.android.com/reference/kotlin/java/security/KeyStore.LoadStoreParameter!)` Returns a loaded keystore object of the appropriate keystore type. |
 | --- | --- |
-| open static [KeyStore](../java/security/KeyStore.md)! | `https://developer.android.com/reference/kotlin/java/security/KeyStore#getInstance(kotlin.String)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns a keystore object of the specified type. |
-| open static [KeyStore](../java/security/KeyStore.md)! | `https://developer.android.com/reference/kotlin/java/security/KeyStore#getInstance(kotlin.String,%20kotlin.String)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, provider: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns a keystore object of the specified type. |
-| open static [KeyStore](../java/security/KeyStore.md)! | `https://developer.android.com/reference/kotlin/java/security/KeyStore#getInstance(kotlin.String,%20java.security.Provider)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, provider: https://developer.android.com/reference/kotlin/java/security/Provider!)` Returns a keystore object of the specified type. |
+| open static [KeyStore](KeyStore.md)! | `https://developer.android.com/reference/kotlin/java/security/KeyStore#getInstance(kotlin.String)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns a keystore object of the specified type. |
+| open static [KeyStore](KeyStore.md)! | `https://developer.android.com/reference/kotlin/java/security/KeyStore#getInstance(kotlin.String,%20kotlin.String)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, provider: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns a keystore object of the specified type. |
+| open static [KeyStore](KeyStore.md)! | `https://developer.android.com/reference/kotlin/java/security/KeyStore#getInstance(kotlin.String,%20java.security.Provider)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, provider: https://developer.android.com/reference/kotlin/java/security/Provider!)` Returns a keystore object of the specified type. |
 | --- | --- |
-| [Key](../java/security/Key.md)! | `https://developer.android.com/reference/kotlin/java/security/KeyStore#getKey(kotlin.String,%20kotlin.CharArray)(alias: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, password: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html!)` Returns the key associated with the given alias, using the given password to recover it. |
-| [Provider](../java/security/Provider.md)! | `https://developer.android.com/reference/kotlin/java/security/KeyStore#getProvider()()` Returns the provider of this keystore. |
+| [Key](Key.md)! | `https://developer.android.com/reference/kotlin/java/security/KeyStore#getKey(kotlin.String,%20kotlin.CharArray)(alias: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, password: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html!)` Returns the key associated with the given alias, using the given password to recover it. |
+| [Provider](Provider.md)! | `https://developer.android.com/reference/kotlin/java/security/KeyStore#getProvider()()` Returns the provider of this keystore. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/security/KeyStore#getType()()` Returns the type of this keystore. |
 | --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/security/KeyStore#isCertificateEntry(kotlin.String)(alias: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns true if the entry identified by the given alias was created by a call to `setCertificateEntry`, or created by a call to `setEntry` with a `TrustedCertificateEntry`. |
@@ -197,8 +197,8 @@ Creates a KeyStore object of the given type, and encapsulates the given provider
 
 | Parameters ||
 |---|---|
-| `keyStoreSpi` | [KeyStoreSpi](../java/security/KeyStoreSpi.md)!: the provider implementation. |
-| `provider` | [Provider](../java/security/Provider.md)!: the provider. |
+| `keyStoreSpi` | [KeyStoreSpi](KeyStoreSpi.md)!: the provider implementation. |
+| `provider` | [Provider](Provider.md)!: the provider. |
 | `type` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the keystore type. |
 | --- | --- |
 
@@ -278,7 +278,7 @@ Determines if the keystore `Entry` for the specified `alias` is an instance or s
 | Parameters ||
 |---|---|
 | `alias` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the alias name |
-| `entryClass` | [Class](../java/lang/Class.md)\<out [KeyStore.Entry](../java/security/KeyStore.Entry.md)!\>!: the entry class |
+| `entryClass` | [Class](../java.lang/Class.md)\<out [KeyStore.Entry](../java/security/KeyStore.Entry.md)!\>!: the entry class |
 
 | Return ||
 |---|---|
@@ -331,7 +331,7 @@ If the entry being considered was created by a call to `setKeyEntry`, or created
 
 | Parameters ||
 |---|---|
-| `cert` | [Certificate](../java/security/cert/Certificate.md)!: the certificate to match with. |
+| `cert` | [Certificate](../java.security.cert/Certificate.md)!: the certificate to match with. |
 
 | Return ||
 |---|---|
@@ -457,13 +457,13 @@ Returns a loaded keystore object of the appropriate keystore type. First the key
 
 A password may be given to unlock the keystore (e.g. the keystore resides on a hardware token device), or to check the integrity of the keystore data. If a password is not given for integrity checking, then integrity checking is not performed.
 
-This method traverses the list of registered security [providers](../java/security/Provider.md), starting with the most preferred Provider. For each `https://developer.android.com/reference/kotlin/java/security/KeyStoreSpi` implementation supported by a Provider, it invokes the `https://developer.android.com/reference/kotlin/java/security/KeyStoreSpi#engineProbe(java.io.InputStream)` method to determine if it supports the specified keystore. A new KeyStore object is returned that encapsulates the KeyStoreSpi implementation from the first Provider that supports the specified file.
+This method traverses the list of registered security [providers](Provider.md), starting with the most preferred Provider. For each `https://developer.android.com/reference/kotlin/java/security/KeyStoreSpi` implementation supported by a Provider, it invokes the `https://developer.android.com/reference/kotlin/java/security/KeyStoreSpi#engineProbe(java.io.InputStream)` method to determine if it supports the specified keystore. A new KeyStore object is returned that encapsulates the KeyStoreSpi implementation from the first Provider that supports the specified file.
 
 Note that the list of registered providers may be retrieved via the `https://developer.android.com/reference/kotlin/java/security/Security#getProviders()` method.
 
 | Parameters ||
 |---|---|
-| `file` | [File](../java/io/File.md)!: the keystore file |
+| `file` | [File](../java.io/File.md)!: the keystore file |
 | `password` | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!: the keystore password, which may be `null` |
 
 | Return ||
@@ -499,13 +499,13 @@ static fun getInstance(
 
 Returns a loaded keystore object of the appropriate keystore type. First the keystore type is determined by probing the specified file. Then a keystore object is instantiated and loaded using the data from that file. A `LoadStoreParameter` may be supplied which specifies how to unlock the keystore data or perform an integrity check.
 
-This method traverses the list of registered security [providers](../java/security/Provider.md), starting with the most preferred Provider. For each `https://developer.android.com/reference/kotlin/java/security/KeyStoreSpi` implementation supported by a Provider, it invokes the `https://developer.android.com/reference/kotlin/java/security/KeyStoreSpi#engineProbe(java.io.InputStream)` method to determine if it supports the specified keystore. A new KeyStore object is returned that encapsulates the KeyStoreSpi implementation from the first Provider that supports the specified file.
+This method traverses the list of registered security [providers](Provider.md), starting with the most preferred Provider. For each `https://developer.android.com/reference/kotlin/java/security/KeyStoreSpi` implementation supported by a Provider, it invokes the `https://developer.android.com/reference/kotlin/java/security/KeyStoreSpi#engineProbe(java.io.InputStream)` method to determine if it supports the specified keystore. A new KeyStore object is returned that encapsulates the KeyStoreSpi implementation from the first Provider that supports the specified file.
 
 Note that the list of registered providers may be retrieved via the `https://developer.android.com/reference/kotlin/java/security/Security#getProviders()` method.
 
 | Parameters ||
 |---|---|
-| `file` | [File](../java/io/File.md)!: the keystore file |
+| `file` | [File](../java.io/File.md)!: the keystore file |
 | `param` | [KeyStore.LoadStoreParameter](../java/security/KeyStore.LoadStoreParameter.md)!: the `LoadStoreParameter` that specifies how to load the keystore, which may be `null` |
 
 | Return ||
@@ -613,7 +613,7 @@ A new KeyStore object encapsulating the KeyStoreSpi implementation from the spec
 | Parameters ||
 |---|---|
 | `type` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the type of keystore. See the KeyStore section in the [Java Security Standard Algorithm Names Specification](https://docs.oracle.com/en/java/javase/17/docs/specs/security/standard-names.html#keystore-types) for information about standard keystore types. |
-| `provider` | [Provider](../java/security/Provider.md)!: the provider. |
+| `provider` | [Provider](Provider.md)!: the provider. |
 
 | Return ||
 |---|---|
@@ -752,7 +752,7 @@ Note that if this keystore has already been loaded, it is reinitialized and load
 
 | Parameters ||
 |---|---|
-| `stream` | [InputStream](../java/io/InputStream.md)!: the input stream from which the keystore is loaded, or `null` |
+| `stream` | [InputStream](../java.io/InputStream.md)!: the input stream from which the keystore is loaded, or `null` |
 | `password` | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!: the password used to check the integrity of the keystore, the password used to unlock the keystore, or `null` |
 
 | Exceptions ||
@@ -804,7 +804,7 @@ If the given alias identifies an existing entry created by a call to `setCertifi
 | Parameters ||
 |---|---|
 | `alias` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the alias name |
-| `cert` | [Certificate](../java/security/cert/Certificate.md)!: the certificate |
+| `cert` | [Certificate](../java.security.cert/Certificate.md)!: the certificate |
 
 | Exceptions ||
 |---|---|
@@ -864,7 +864,7 @@ If the given alias already exists, the keystore information associated with it i
 |---|---|
 | `alias` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the alias name |
 | `key` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!: the key (in protected format) to be associated with the alias |
-| `chain` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Certificate](../java/security/cert/Certificate.md)!\>!: the certificate chain for the corresponding public key (only useful if the protected key is of type `java.security.PrivateKey`). |
+| `chain` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Certificate](../java.security.cert/Certificate.md)!\>!: the certificate chain for the corresponding public key (only useful if the protected key is of type `java.security.PrivateKey`). |
 | --- | --- |
 
 | Exceptions ||
@@ -893,10 +893,10 @@ If the given alias already exists, the keystore information associated with it i
 | Parameters ||
 |---|---|
 | `alias` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the alias name |
-| `key` | [Key](../java/security/Key.md)!: the key to be associated with the alias |
+| `key` | [Key](Key.md)!: the key to be associated with the alias |
 | `password` | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!: the password to protect the key |
 | --- | --- |
-| `chain` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Certificate](../java/security/cert/Certificate.md)!\>!: the certificate chain for the corresponding public key (only required if the given key is of type `java.security.PrivateKey`). |
+| `chain` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Certificate](../java.security.cert/Certificate.md)!\>!: the certificate chain for the corresponding public key (only required if the given key is of type `java.security.PrivateKey`). |
 
 | Exceptions ||
 |---|---|
@@ -935,7 +935,7 @@ Stores this keystore to the given output stream, and protects its integrity with
 
 | Parameters ||
 |---|---|
-| `stream` | [OutputStream](../java/io/OutputStream.md)!: the output stream to which this keystore is written. |
+| `stream` | [OutputStream](../java.io/OutputStream.md)!: the output stream to which this keystore is written. |
 | `password` | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!: the password to generate the keystore integrity check |
 
 | Exceptions ||

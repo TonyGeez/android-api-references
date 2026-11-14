@@ -10,7 +10,7 @@ open class TrustAnchor
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.cert.TrustAnchor](../java/security/cert/TrustAnchor.md) |
+| ↳ | [java.security.cert.TrustAnchor](TrustAnchor.md) |
 
 A trust anchor or most-trusted Certification Authority (CA).
 
@@ -24,19 +24,19 @@ All`TrustAnchor`objects must be immutable and thread-safe. That is, multiple thr
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [TrustAnchor](../java/security/cert/TrustAnchor.md))`(`caName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `pubKey:` ` [PublicKey](../java/security/PublicKey.md)!`, `nameConstraints:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Creates an instance of`TrustAnchor`where the most-trusted CA is specified as a distinguished name and public key. |
-| [TrustAnchor](../java/security/cert/TrustAnchor.md))`(`trustedCert:` ` [X509Certificate](../java/security/cert/X509Certificate.md)!`, `nameConstraints:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Creates an instance of`TrustAnchor`with the specified`X509Certificate`and optional name constraints, which are intended to be used as additional constraints when validating an X. |
-| [TrustAnchor](../java/security/cert/TrustAnchor.md))`(`caPrincipal:` ` [X500Principal](../javax/security/auth/x500/X500Principal.md)!`, `pubKey:` ` [PublicKey](../java/security/PublicKey.md)!`, `nameConstraints:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Creates an instance of`TrustAnchor`where the most-trusted CA is specified as an X500Principal and public key. |
+| [TrustAnchor](TrustAnchor.md))`(`caName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `pubKey:` ` [PublicKey](../java.security/PublicKey.md)!`, `nameConstraints:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Creates an instance of`TrustAnchor`where the most-trusted CA is specified as a distinguished name and public key. |
+| [TrustAnchor](TrustAnchor.md))`(`trustedCert:` ` [X509Certificate](X509Certificate.md)!`, `nameConstraints:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Creates an instance of`TrustAnchor`with the specified`X509Certificate`and optional name constraints, which are intended to be used as additional constraints when validating an X. |
+| [TrustAnchor](TrustAnchor.md))`(`caPrincipal:` ` [X500Principal](../javax.security.auth.x500/X500Principal.md)!`, `pubKey:` ` [PublicKey](../java.security/PublicKey.md)!`, `nameConstraints:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Creates an instance of`TrustAnchor`where the most-trusted CA is specified as an X500Principal and public key. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [X500Principal](../javax/security/auth/x500/X500Principal.md)! | [getCA](../java/security/cert/TrustAnchor.md))`()` Returns the name of the most-trusted CA as an X500Principal. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getCAName](../java/security/cert/TrustAnchor.md))`()` Returns the name of the most-trusted CA in RFC 2253`String`format. |
-| [PublicKey](../java/security/PublicKey.md)! | [getCAPublicKey](../java/security/cert/TrustAnchor.md))`()` Returns the public key of the most-trusted CA. |
+| [X500Principal](../javax.security.auth.x500/X500Principal.md)! | [getCA](TrustAnchor.md))`()` Returns the name of the most-trusted CA as an X500Principal. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getCAName](TrustAnchor.md))`()` Returns the name of the most-trusted CA in RFC 2253`String`format. |
+| [PublicKey](../java.security/PublicKey.md)! | [getCAPublicKey](TrustAnchor.md))`()` Returns the public key of the most-trusted CA. |
 | --- | --- |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getNameConstraints](../java/security/cert/TrustAnchor.md))`()` Returns the name constraints parameter. |
-| [X509Certificate](../java/security/cert/X509Certificate.md)! | [getTrustedCert](../java/security/cert/TrustAnchor.md))`()` Returns the most-trusted CA certificate. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/security/cert/TrustAnchor.md))`()` Returns a formatted string describing the`TrustAnchor`. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getNameConstraints](TrustAnchor.md))`()` Returns the name constraints parameter. |
+| [X509Certificate](X509Certificate.md)! | [getTrustedCert](TrustAnchor.md))`()` Returns the most-trusted CA certificate. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](TrustAnchor.md))`()` Returns a formatted string describing the`TrustAnchor`. |
 | --- | --- |
 
 ## Public constructors
@@ -61,7 +61,7 @@ Note that the name constraints byte array supplied here is cloned to protect aga
 | Parameters ||
 |-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `caName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the X.500 distinguished name of the most-trusted CA in [RFC 2253](http://www.ietf.org/rfc/rfc2253.txt)`String`format |
-| `pubKey` | [PublicKey](../java/security/PublicKey.md)!:the public key of the most-trusted CA |
+| `pubKey` | [PublicKey](../java.security/PublicKey.md)!:the public key of the most-trusted CA |
 | `nameConstraints` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:a byte array containing the ASN.1 DER encoding of a NameConstraints extension to be used for checking name constraints. Only the value of the extension is included, not the OID or criticality flag. Specify`null`to omit the parameter. |
 | --- | --- |
 
@@ -115,7 +115,7 @@ Note that the name constraints byte array supplied is cloned to protect against 
 
 | Parameters ||
 |-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `trustedCert` | [X509Certificate](../java/security/cert/X509Certificate.md)!:a trusted`X509Certificate` |
+| `trustedCert` | [X509Certificate](X509Certificate.md)!:a trusted`X509Certificate` |
 | `nameConstraints` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:a byte array containing the ASN.1 DER encoding of a NameConstraints extension to be used for checking name constraints. Only the value of the extension is included, not the OID or criticality flag. Specify`null`to omit the parameter. |
 
 | Exceptions ||
@@ -142,8 +142,8 @@ Note that the name constraints byte array supplied here is cloned to protect aga
 
 | Parameters ||
 |-------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `caPrincipal` | [X500Principal](../javax/security/auth/x500/X500Principal.md)!:the name of the most-trusted CA as X500Principal |
-| `pubKey` | [PublicKey](../java/security/PublicKey.md)!:the public key of the most-trusted CA |
+| `caPrincipal` | [X500Principal](../javax.security.auth.x500/X500Principal.md)!:the name of the most-trusted CA as X500Principal |
+| `pubKey` | [PublicKey](../java.security/PublicKey.md)!:the public key of the most-trusted CA |
 | `nameConstraints` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:a byte array containing the ASN.1 DER encoding of a NameConstraints extension to be used for checking name constraints. Only the value of the extension is included, not the OID or criticality flag. Specify`null`to omit the parameter. |
 | --- | --- |
 
@@ -165,7 +165,7 @@ Returns the name of the most-trusted CA as an X500Principal.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [X500Principal](../javax/security/auth/x500/X500Principal.md)! | the X.500 distinguished name of the most-trusted CA, or`null`if the trust anchor was not specified as a trusted public key and name or X500Principal pair |
+| [X500Principal](../javax.security.auth.x500/X500Principal.md)! | the X.500 distinguished name of the most-trusted CA, or`null`if the trust anchor was not specified as a trusted public key and name or X500Principal pair |
 
 ### getCAName
 
@@ -193,7 +193,7 @@ Returns the public key of the most-trusted CA.
 
 | Return ||
 |--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| [PublicKey](../java/security/PublicKey.md)! | the public key of the most-trusted CA, or`null`if the trust anchor was not specified as a trusted public key and name or X500Principal pair |
+| [PublicKey](../java.security/PublicKey.md)! | the public key of the most-trusted CA, or`null`if the trust anchor was not specified as a trusted public key and name or X500Principal pair |
 
 ### getNameConstraints
 
@@ -225,7 +225,7 @@ Returns the most-trusted CA certificate.
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| [X509Certificate](../java/security/cert/X509Certificate.md)! | a trusted`X509Certificate`or`null`if the trust anchor was not specified as a trusted certificate |
+| [X509Certificate](X509Certificate.md)! | a trusted`X509Certificate`or`null`if the trust anchor was not specified as a trusted certificate |
 
 ### toString
 

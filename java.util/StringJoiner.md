@@ -10,7 +10,7 @@ class StringJoiner
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.util.StringJoiner](../java/util/StringJoiner.md) |
+| ↳ | [java.util.StringJoiner](StringJoiner.md) |
 
 `StringJoiner`is used to construct a sequence of characters separated by a delimiter and optionally starting with a supplied prefix and ending with a supplied suffix.
 
@@ -20,17 +20,17 @@ Prior to adding something to the`StringJoiner`, its`sj.toString()`method will, b
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [StringJoiner](../java/util/StringJoiner.md))`(`delimiter:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Constructs a`StringJoiner`with no characters in it, with no`prefix`or`suffix`, and a copy of the supplied`delimiter`. |
-| [StringJoiner](../java/util/StringJoiner.md))`(`delimiter:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `prefix:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `suffix:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Constructs a`StringJoiner`with no characters in it using copies of the supplied`prefix`,`delimiter`and`suffix`. |
+| [StringJoiner](StringJoiner.md))`(`delimiter:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Constructs a`StringJoiner`with no characters in it, with no`prefix`or`suffix`, and a copy of the supplied`delimiter`. |
+| [StringJoiner](StringJoiner.md))`(`delimiter:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `prefix:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `suffix:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Constructs a`StringJoiner`with no characters in it using copies of the supplied`prefix`,`delimiter`and`suffix`. |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [StringJoiner](../java/util/StringJoiner.md)! | [add](../java/util/StringJoiner.md))`(`newElement:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Adds a copy of the given`CharSequence`value as the next element of the`StringJoiner`value. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [length](../java/util/StringJoiner.md))`()` Returns the length of the`String`representation of this`StringJoiner`. |
-| [StringJoiner](../java/util/StringJoiner.md)! | [merge](../java/util/StringJoiner.md))`(`other:` ` [StringJoiner](../java/util/StringJoiner.md)!`)` Adds the contents of the given`StringJoiner`without prefix and suffix as the next element if it is non-empty. |
+| [StringJoiner](StringJoiner.md)! | [add](StringJoiner.md))`(`newElement:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Adds a copy of the given`CharSequence`value as the next element of the`StringJoiner`value. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [length](StringJoiner.md))`()` Returns the length of the`String`representation of this`StringJoiner`. |
+| [StringJoiner](StringJoiner.md)! | [merge](StringJoiner.md))`(`other:` ` [StringJoiner](StringJoiner.md)!`)` Adds the contents of the given`StringJoiner`without prefix and suffix as the next element if it is non-empty. |
 | --- | --- |
-| [StringJoiner](../java/util/StringJoiner.md)! | [setEmptyValue](../java/util/StringJoiner.md))`(`emptyValue:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Sets the sequence of characters to be used when determining the string representation of this`StringJoiner`and no elements have been added yet, that is, when it is empty. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/util/StringJoiner.md))`()` Returns the current value, consisting of the`prefix`, the values added so far separated by the`delimiter`, and the`suffix`, unless no elements have been added in which case, the`prefix + suffix`or the`emptyValue`characters are returned. |
+| [StringJoiner](StringJoiner.md)! | [setEmptyValue](StringJoiner.md))`(`emptyValue:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Sets the sequence of characters to be used when determining the string representation of this`StringJoiner`and no elements have been added yet, that is, when it is empty. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](StringJoiner.md))`()` Returns the current value, consisting of the`prefix`, the values added so far separated by the`delimiter`, and the`suffix`, unless no elements have been added in which case, the`prefix + suffix`or the`emptyValue`characters are returned. |
 
 ## Public constructors
 
@@ -94,7 +94,7 @@ Adds a copy of the given`CharSequence`value as the next element of the`StringJoi
 
 | Return ||
 |-----------------------------------------------------------------------------------------|-----------------------------------|
-| [StringJoiner](../java/util/StringJoiner.md)! | a reference to this`StringJoiner` |
+| [StringJoiner](StringJoiner.md)! | a reference to this`StringJoiner` |
 
 ### length
 
@@ -120,17 +120,17 @@ fun merge(other: StringJoiner!): StringJoiner!
 
 Adds the contents of the given`StringJoiner`without prefix and suffix as the next element if it is non-empty. If the given`StringJoiner`is empty, the call has no effect.
 
-A`StringJoiner`is empty if [add()](../java/util/StringJoiner.md))has never been called, and if`merge()`has never been called with a non-empty`StringJoiner`argument.
+A`StringJoiner`is empty if [add()](StringJoiner.md))has never been called, and if`merge()`has never been called with a non-empty`StringJoiner`argument.
 
 If the other`StringJoiner`is using a different delimiter, then elements from the other`StringJoiner`are concatenated with that delimiter and the result is appended to this`StringJoiner`as a single element.
 
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `other` | [StringJoiner](../java/util/StringJoiner.md)!:The`StringJoiner`whose contents should be merged into this one |
+| `other` | [StringJoiner](StringJoiner.md)!:The`StringJoiner`whose contents should be merged into this one |
 
 | Return ||
 |-----------------------------------------------------------------------------------------|--------------------|
-| [StringJoiner](../java/util/StringJoiner.md)! | This`StringJoiner` |
+| [StringJoiner](StringJoiner.md)! | This`StringJoiner` |
 
 | Exceptions ||
 |----------------------------------|-----------------------------------|
@@ -152,7 +152,7 @@ Sets the sequence of characters to be used when determining the string represent
 
 | Return ||
 |-----------------------------------------------------------------------------------------|------------------------------------------------------|
-| [StringJoiner](../java/util/StringJoiner.md)! | this`StringJoiner`itself so the calls may be chained |
+| [StringJoiner](StringJoiner.md)! | this`StringJoiner`itself so the calls may be chained |
 
 | Exceptions ||
 |----------------------------------|----------------------------------------|

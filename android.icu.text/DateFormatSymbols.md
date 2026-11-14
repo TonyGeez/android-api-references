@@ -4,7 +4,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # DateFormatSymbols
 
-Kotlin| [Java](../android/icu/text/DateFormatSymbols.md) 
+Kotlin| [Java](DateFormatSymbols.md) 
 | --- | --- |
 
 ```
@@ -13,13 +13,13 @@ open class DateFormatSymbols : Cloneable, Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.icu.text.DateFormatSymbols](../android/icu/text/DateFormatSymbols.md) |
+| ↳ | [android.icu.text.DateFormatSymbols](DateFormatSymbols.md) |
 
-**\[icu enhancement\]** ICU's replacement for [java.text.DateFormatSymbols](../java/text/DateFormatSymbols.md). Methods, fields, and other functionality specific to ICU are labeled '**\[icu\]**'.
+**\[icu enhancement\]** ICU's replacement for [java.text.DateFormatSymbols](../java.text/DateFormatSymbols.md). Methods, fields, and other functionality specific to ICU are labeled '**\[icu\]**'.
 
 `DateFormatSymbols`is a public class for encapsulating localizable date-time formatting data, such as the names of the months, the names of the days of the week, and the time zone data.`DateFormat`and`SimpleDateFormat`both use`DateFormatSymbols`to encapsulate this information.
 
-Typically you shouldn't use`DateFormatSymbols`directly. Rather, you are encouraged to create a date-time formatter with the`DateFormat`class's factory methods:`getTimeInstance`,`getDateInstance`, or`getDateTimeInstance`. These methods automatically create a`DateFormatSymbols`for the formatter so that you don't have to. After the formatter is created, you may modify its format pattern using the`setPattern`method. For more information about creating formatters using`DateFormat`'s factory methods, see [DateFormat](../android/icu/text/DateFormat.md).
+Typically you shouldn't use`DateFormatSymbols`directly. Rather, you are encouraged to create a date-time formatter with the`DateFormat`class's factory methods:`getTimeInstance`,`getDateInstance`, or`getDateTimeInstance`. These methods automatically create a`DateFormatSymbols`for the formatter so that you don't have to. After the formatter is created, you may modify its format pattern using the`setPattern`method. For more information about creating formatters using`DateFormat`'s factory methods, see [DateFormat](DateFormat.md).
 
 If you decide to create a date-time formatter with a specific format pattern for a specific locale, you can do so with: 
 
@@ -36,82 +36,82 @@ New`DateFormatSymbols`subclasses may be added to support`SimpleDateFormat`for da
 
 | Constants ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ABBREVIATED](../android/icu/text/DateFormatSymbols.md) **\[icu\]**Constant for width. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT](../android/icu/text/DateFormatSymbols.md) **\[icu\]**Constant for context. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NARROW](../android/icu/text/DateFormatSymbols.md) **\[icu\]**Constant for width. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ABBREVIATED](DateFormatSymbols.md) **\[icu\]**Constant for width. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FORMAT](DateFormatSymbols.md) **\[icu\]**Constant for context. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NARROW](DateFormatSymbols.md) **\[icu\]**Constant for width. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SHORT](../android/icu/text/DateFormatSymbols.md) **\[icu\]**Constant for width; only supported for weekdays. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STANDALONE](../android/icu/text/DateFormatSymbols.md) **\[icu\]**Constant for context. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIDE](../android/icu/text/DateFormatSymbols.md) **\[icu\]**Constant for width. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SHORT](DateFormatSymbols.md) **\[icu\]**Constant for width; only supported for weekdays. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STANDALONE](DateFormatSymbols.md) **\[icu\]**Constant for context. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WIDE](DateFormatSymbols.md) **\[icu\]**Constant for width. |
 | --- | --- |
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [DateFormatSymbols](../android/icu/text/DateFormatSymbols.md))`()` Constructs a DateFormatSymbols object by loading format data from resources for the default`FORMAT`locale. |
-| [DateFormatSymbols](../android/icu/text/DateFormatSymbols.md))`(`cal:` ` [Calendar](../android/icu/util/Calendar.md)!`, `locale:` ` [ULocale](../android/icu/util/ULocale.md)!`)` Returns the [DateFormatSymbols](../android/icu/text/DateFormatSymbols.md) object that should be used to format a calendar system's dates in the given locale. |
-| [DateFormatSymbols](../android/icu/text/DateFormatSymbols.md))`(`cal:` ` [Calendar](../android/icu/util/Calendar.md)!`, `locale:` ` [Locale](../java/util/Locale.md)!`)` Returns the [DateFormatSymbols](../android/icu/text/DateFormatSymbols.md) object that should be used to format a calendar system's dates in the given locale. |
-| [DateFormatSymbols](../android/icu/text/DateFormatSymbols.md))`(`locale:` ` [ULocale](../android/icu/util/ULocale.md)!`)` **\[icu\]**Constructs a DateFormatSymbols object by loading format data from resources for the given ulocale. |
-| [DateFormatSymbols](../android/icu/text/DateFormatSymbols.md))`(`calendarClass:` ` [Class](../java/lang/Class.md)<out` ` [Calendar](../android/icu/util/Calendar.md)!>!`, `locale:` ` [ULocale](../android/icu/util/ULocale.md)!`)` Variant of DateFormatSymbols(Calendar, ULocale) that takes the Calendar class instead of a Calendar instance. |
-| [DateFormatSymbols](../android/icu/text/DateFormatSymbols.md))`(`calendarClass:` ` [Class](../java/lang/Class.md)<out` ` [Calendar](../android/icu/util/Calendar.md)!>!`, `locale:` ` [Locale](../java/util/Locale.md)!`)` Variant of DateFormatSymbols(Calendar, Locale) that takes the Calendar class instead of a Calendar instance. |
-| [DateFormatSymbols](../android/icu/text/DateFormatSymbols.md))`(`locale:` ` [Locale](../java/util/Locale.md)!`)` Constructs a DateFormatSymbols object by loading format data from resources for the given locale. |
-| [DateFormatSymbols](../android/icu/text/DateFormatSymbols.md))`(`bundle:` ` [ResourceBundle](../java/util/ResourceBundle.md)!`, `locale:` ` [ULocale](../android/icu/util/ULocale.md)!`)` Fetches a custom calendar's DateFormatSymbols out of the given resource bundle. |
-| [DateFormatSymbols](../android/icu/text/DateFormatSymbols.md))`(`bundle:` ` [ResourceBundle](../java/util/ResourceBundle.md)!`, `locale:` ` [Locale](../java/util/Locale.md)!`)` Fetches a custom calendar's DateFormatSymbols out of the given resource bundle. |
+| [DateFormatSymbols](DateFormatSymbols.md))`()` Constructs a DateFormatSymbols object by loading format data from resources for the default`FORMAT`locale. |
+| [DateFormatSymbols](DateFormatSymbols.md))`(`cal:` ` [Calendar](../android.icu.util/Calendar.md)!`, `locale:` ` [ULocale](../android.icu.util/ULocale.md)!`)` Returns the [DateFormatSymbols](DateFormatSymbols.md) object that should be used to format a calendar system's dates in the given locale. |
+| [DateFormatSymbols](DateFormatSymbols.md))`(`cal:` ` [Calendar](../android.icu.util/Calendar.md)!`, `locale:` ` [Locale](../java.util/Locale.md)!`)` Returns the [DateFormatSymbols](DateFormatSymbols.md) object that should be used to format a calendar system's dates in the given locale. |
+| [DateFormatSymbols](DateFormatSymbols.md))`(`locale:` ` [ULocale](../android.icu.util/ULocale.md)!`)` **\[icu\]**Constructs a DateFormatSymbols object by loading format data from resources for the given ulocale. |
+| [DateFormatSymbols](DateFormatSymbols.md))`(`calendarClass:` ` [Class](../java.lang/Class.md)<out` ` [Calendar](../android.icu.util/Calendar.md)!>!`, `locale:` ` [ULocale](../android.icu.util/ULocale.md)!`)` Variant of DateFormatSymbols(Calendar, ULocale) that takes the Calendar class instead of a Calendar instance. |
+| [DateFormatSymbols](DateFormatSymbols.md))`(`calendarClass:` ` [Class](../java.lang/Class.md)<out` ` [Calendar](../android.icu.util/Calendar.md)!>!`, `locale:` ` [Locale](../java.util/Locale.md)!`)` Variant of DateFormatSymbols(Calendar, Locale) that takes the Calendar class instead of a Calendar instance. |
+| [DateFormatSymbols](DateFormatSymbols.md))`(`locale:` ` [Locale](../java.util/Locale.md)!`)` Constructs a DateFormatSymbols object by loading format data from resources for the given locale. |
+| [DateFormatSymbols](DateFormatSymbols.md))`(`bundle:` ` [ResourceBundle](../java.util/ResourceBundle.md)!`, `locale:` ` [ULocale](../android.icu.util/ULocale.md)!`)` Fetches a custom calendar's DateFormatSymbols out of the given resource bundle. |
+| [DateFormatSymbols](DateFormatSymbols.md))`(`bundle:` ` [ResourceBundle](../java.util/ResourceBundle.md)!`, `locale:` ` [Locale](../java.util/Locale.md)!`)` Fetches a custom calendar's DateFormatSymbols out of the given resource bundle. |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](../android/icu/text/DateFormatSymbols.md))`()` Overrides clone. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/icu/text/DateFormatSymbols.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Overrides equals. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getAmPmStrings](../android/icu/text/DateFormatSymbols.md))`()` Returns am/pm strings. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](DateFormatSymbols.md))`()` Overrides clone. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](DateFormatSymbols.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Overrides equals. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getAmPmStrings](DateFormatSymbols.md))`()` Returns am/pm strings. |
 | --- | --- |
-| openstatic [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Locale](../java/util/Locale.md)!\>! | [getAvailableLocales](../android/icu/text/DateFormatSymbols.md))`()` Returns an array of all locales for which the`getInstance`methods of this class can return localized instances. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getEraNames](../android/icu/text/DateFormatSymbols.md))`()` **\[icu\]**Returns full era name strings. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getEras](../android/icu/text/DateFormatSymbols.md))`()` Returns abbreviated era strings. |
+| openstatic [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Locale](../java.util/Locale.md)!\>! | [getAvailableLocales](DateFormatSymbols.md))`()` Returns an array of all locales for which the`getInstance`methods of this class can return localized instances. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getEraNames](DateFormatSymbols.md))`()` **\[icu\]**Returns full era name strings. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getEras](DateFormatSymbols.md))`()` Returns abbreviated era strings. |
 | --- | --- |
-| openstatic [DateFormatSymbols](../android/icu/text/DateFormatSymbols.md)! | [getInstance](../android/icu/text/DateFormatSymbols.md))`()` Returns a DateFormatSymbols instance for the default locale. |
-| openstatic [DateFormatSymbols](../android/icu/text/DateFormatSymbols.md)! | [getInstance](../android/icu/text/DateFormatSymbols.md))`(`locale:` ` [ULocale](../android/icu/util/ULocale.md)!`)` **\[icu\]**Returns a DateFormatSymbols instance for the given locale. |
-| openstatic [DateFormatSymbols](../android/icu/text/DateFormatSymbols.md)! | [getInstance](../android/icu/text/DateFormatSymbols.md))`(`locale:` ` [Locale](../java/util/Locale.md)!`)` Returns a DateFormatSymbols instance for the given locale. |
+| openstatic [DateFormatSymbols](DateFormatSymbols.md)! | [getInstance](DateFormatSymbols.md))`()` Returns a DateFormatSymbols instance for the default locale. |
+| openstatic [DateFormatSymbols](DateFormatSymbols.md)! | [getInstance](DateFormatSymbols.md))`(`locale:` ` [ULocale](../android.icu.util/ULocale.md)!`)` **\[icu\]**Returns a DateFormatSymbols instance for the given locale. |
+| openstatic [DateFormatSymbols](DateFormatSymbols.md)! | [getInstance](DateFormatSymbols.md))`(`locale:` ` [Locale](../java.util/Locale.md)!`)` Returns a DateFormatSymbols instance for the given locale. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getLocalPatternChars](../android/icu/text/DateFormatSymbols.md))`()` Returns localized date-time pattern characters. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getMonths](../android/icu/text/DateFormatSymbols.md))`()` Returns month strings. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getMonths](../android/icu/text/DateFormatSymbols.md))`(`context:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns month strings. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getLocalPatternChars](DateFormatSymbols.md))`()` Returns localized date-time pattern characters. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getMonths](DateFormatSymbols.md))`()` Returns month strings. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getMonths](DateFormatSymbols.md))`(`context:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns month strings. |
 | --- | --- |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getNarrowEras](../android/icu/text/DateFormatSymbols.md))`()` **\[icu\]**Returns narrow era name strings. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getQuarters](../android/icu/text/DateFormatSymbols.md))`(`context:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]**Returns quarter strings. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getShortMonths](../android/icu/text/DateFormatSymbols.md))`()` Returns short month strings. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getNarrowEras](DateFormatSymbols.md))`()` **\[icu\]**Returns narrow era name strings. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getQuarters](DateFormatSymbols.md))`(`context:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]**Returns quarter strings. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getShortMonths](DateFormatSymbols.md))`()` Returns short month strings. |
 | --- | --- |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getShortWeekdays](../android/icu/text/DateFormatSymbols.md))`()` Returns abbreviated weekday strings; for example: "Sun", "Mon", etc. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getWeekdays](../android/icu/text/DateFormatSymbols.md))`()` Returns wide weekday strings. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getWeekdays](../android/icu/text/DateFormatSymbols.md))`(`context:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns weekday strings. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getShortWeekdays](DateFormatSymbols.md))`()` Returns abbreviated weekday strings; for example: "Sun", "Mon", etc. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getWeekdays](DateFormatSymbols.md))`()` Returns wide weekday strings. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getWeekdays](DateFormatSymbols.md))`(`context:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns weekday strings. |
 | --- | --- |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getYearNames](../android/icu/text/DateFormatSymbols.md))`(`context:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns cyclic year name strings if the calendar has them, for example: "jia-zi", "yi-chou", etc. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getZodiacNames](../android/icu/text/DateFormatSymbols.md))`(`context:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns calendar zodiac name strings if the calendar has them, for example: "Rat", "Ox", "Tiger", etc. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!\>! | [getZoneStrings](../android/icu/text/DateFormatSymbols.md))`()` Returns time zone strings. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getYearNames](DateFormatSymbols.md))`(`context:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns cyclic year name strings if the calendar has them, for example: "jia-zi", "yi-chou", etc. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getZodiacNames](DateFormatSymbols.md))`(`context:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns calendar zodiac name strings if the calendar has them, for example: "Rat", "Ox", "Tiger", etc. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!\>! | [getZoneStrings](DateFormatSymbols.md))`()` Returns time zone strings. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/icu/text/DateFormatSymbols.md))`()` Override hashCode. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAmPmStrings](../android/icu/text/DateFormatSymbols.md))`(`newAmpms:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Sets am/pm strings. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEraNames](../android/icu/text/DateFormatSymbols.md))`(`newEraNames:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` **\[icu\]**Sets full era name strings. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](DateFormatSymbols.md))`()` Override hashCode. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAmPmStrings](DateFormatSymbols.md))`(`newAmpms:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Sets am/pm strings. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEraNames](DateFormatSymbols.md))`(`newEraNames:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` **\[icu\]**Sets full era name strings. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEras](../android/icu/text/DateFormatSymbols.md))`(`newEras:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Sets abbreviated era strings. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLocalPatternChars](../android/icu/text/DateFormatSymbols.md))`(`newLocalPatternChars:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets localized date-time pattern characters. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMonths](../android/icu/text/DateFormatSymbols.md))`(`newMonths:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Sets month strings. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEras](DateFormatSymbols.md))`(`newEras:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Sets abbreviated era strings. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLocalPatternChars](DateFormatSymbols.md))`(`newLocalPatternChars:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets localized date-time pattern characters. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMonths](DateFormatSymbols.md))`(`newMonths:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Sets month strings. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMonths](../android/icu/text/DateFormatSymbols.md))`(`newMonths:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `context:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets month strings. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setNarrowEras](../android/icu/text/DateFormatSymbols.md))`(`newNarrowEras:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` **\[icu\]**Sets narrow era name strings. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setQuarters](../android/icu/text/DateFormatSymbols.md))`(`newQuarters:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `context:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]**Sets quarter strings. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMonths](DateFormatSymbols.md))`(`newMonths:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `context:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets month strings. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setNarrowEras](DateFormatSymbols.md))`(`newNarrowEras:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` **\[icu\]**Sets narrow era name strings. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setQuarters](DateFormatSymbols.md))`(`newQuarters:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `context:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]**Sets quarter strings. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setShortMonths](../android/icu/text/DateFormatSymbols.md))`(`newShortMonths:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Sets short month strings. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setShortWeekdays](../android/icu/text/DateFormatSymbols.md))`(`newAbbrevWeekdays:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Sets abbreviated weekday strings; for example: "Sun", "Mon", etc. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setWeekdays](../android/icu/text/DateFormatSymbols.md))`(`newWeekdays:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Sets wide weekday strings. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setShortMonths](DateFormatSymbols.md))`(`newShortMonths:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Sets short month strings. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setShortWeekdays](DateFormatSymbols.md))`(`newAbbrevWeekdays:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Sets abbreviated weekday strings; for example: "Sun", "Mon", etc. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setWeekdays](DateFormatSymbols.md))`(`newWeekdays:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Sets wide weekday strings. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setWeekdays](../android/icu/text/DateFormatSymbols.md))`(`newWeekdays:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `context:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets weekday strings. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setYearNames](../android/icu/text/DateFormatSymbols.md))`(`yearNames:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `context:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets cyclic year name strings, for example: "jia-zi", "yi-chou", etc. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setZodiacNames](../android/icu/text/DateFormatSymbols.md))`(`zodiacNames:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `context:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets calendar zodiac name strings, for example: "Rat", "Ox", "Tiger", etc. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setWeekdays](DateFormatSymbols.md))`(`newWeekdays:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `context:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets weekday strings. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setYearNames](DateFormatSymbols.md))`(`yearNames:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `context:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets cyclic year name strings, for example: "jia-zi", "yi-chou", etc. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setZodiacNames](DateFormatSymbols.md))`(`zodiacNames:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`, `context:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets calendar zodiac name strings, for example: "Rat", "Ox", "Tiger", etc. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setZoneStrings](../android/icu/text/DateFormatSymbols.md))`(`newZoneStrings:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!>!`)` Sets time zone strings. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setZoneStrings](DateFormatSymbols.md))`(`newZoneStrings:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!>!`)` Sets time zone strings. |
 
 | Protected methods ||
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [initializeData](../android/icu/text/DateFormatSymbols.md))`(`desiredLocale:` ` [ULocale](../android/icu/util/ULocale.md)!`, `type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Initializes format symbols for the locale and calendar type |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [initializeData](DateFormatSymbols.md))`(`desiredLocale:` ` [ULocale](../android.icu.util/ULocale.md)!`, `type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Initializes format symbols for the locale and calendar type |
 
 ## Constants
 
@@ -217,16 +217,16 @@ DateFormatSymbols(
     locale: ULocale!)
 ```
 
-Returns the [DateFormatSymbols](../android/icu/text/DateFormatSymbols.md) object that should be used to format a calendar system's dates in the given locale.
+Returns the [DateFormatSymbols](DateFormatSymbols.md) object that should be used to format a calendar system's dates in the given locale.
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `cal` | [Calendar](../android/icu/util/Calendar.md)!:The calendar system whose date format symbols are desired. |
-| `locale` | [ULocale](../android/icu/util/ULocale.md)!:The ulocale whose symbols are desired. |
+| `cal` | [Calendar](../android.icu.util/Calendar.md)!:The calendar system whose date format symbols are desired. |
+| `locale` | [ULocale](../android.icu.util/ULocale.md)!:The ulocale whose symbols are desired. |
 
 **See Also**
 
-- [android.icu.text.DateFormatSymbols#DateFormatSymbols(java.util.Locale)](../android/icu/text/DateFormatSymbols.md)) 
+- [android.icu.text.DateFormatSymbols#DateFormatSymbols(java.util.Locale)](DateFormatSymbols.md)) 
 
 ### DateFormatSymbols
 
@@ -238,16 +238,16 @@ DateFormatSymbols(
     locale: Locale!)
 ```
 
-Returns the [DateFormatSymbols](../android/icu/text/DateFormatSymbols.md) object that should be used to format a calendar system's dates in the given locale.
+Returns the [DateFormatSymbols](DateFormatSymbols.md) object that should be used to format a calendar system's dates in the given locale.
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `cal` | [Calendar](../android/icu/util/Calendar.md)!:The calendar system whose date format symbols are desired. |
-| `locale` | [Locale](../java/util/Locale.md)!:The locale whose symbols are desired. |
+| `cal` | [Calendar](../android.icu.util/Calendar.md)!:The calendar system whose date format symbols are desired. |
+| `locale` | [Locale](../java.util/Locale.md)!:The locale whose symbols are desired. |
 
 **See Also**
 
-- [android.icu.text.DateFormatSymbols#DateFormatSymbols(java.util.Locale)](../android/icu/text/DateFormatSymbols.md)) 
+- [android.icu.text.DateFormatSymbols#DateFormatSymbols(java.util.Locale)](DateFormatSymbols.md)) 
 
 ### DateFormatSymbols
 
@@ -276,7 +276,7 @@ DateFormatSymbols(
 Variant of DateFormatSymbols(Calendar, ULocale) that takes the Calendar class instead of a Calendar instance. 
 **See Also**
 
-- [#DateFormatSymbols(Calendar, Locale)](../android/icu/text/DateFormatSymbols.md)) 
+- [#DateFormatSymbols(Calendar, Locale)](DateFormatSymbols.md)) 
 
 ### DateFormatSymbols
 
@@ -291,7 +291,7 @@ DateFormatSymbols(
 Variant of DateFormatSymbols(Calendar, Locale) that takes the Calendar class instead of a Calendar instance. 
 **See Also**
 
-- [#DateFormatSymbols(Calendar, Locale)](../android/icu/text/DateFormatSymbols.md)) 
+- [#DateFormatSymbols(Calendar, Locale)](DateFormatSymbols.md)) 
 
 ### DateFormatSymbols
 
@@ -320,7 +320,7 @@ DateFormatSymbols(
 Fetches a custom calendar's DateFormatSymbols out of the given resource bundle. Symbols that are not overridden are inherited from the default DateFormatSymbols for the locale. 
 **See Also**
 
-- [android.icu.text.DateFormatSymbols#DateFormatSymbols(java.util.Locale)](../android/icu/text/DateFormatSymbols.md)) 
+- [android.icu.text.DateFormatSymbols#DateFormatSymbols(java.util.Locale)](DateFormatSymbols.md)) 
 
 ### DateFormatSymbols
 
@@ -335,7 +335,7 @@ DateFormatSymbols(
 Fetches a custom calendar's DateFormatSymbols out of the given resource bundle. Symbols that are not overridden are inherited from the default DateFormatSymbols for the locale. 
 **See Also**
 
-- [android.icu.text.DateFormatSymbols#DateFormatSymbols(java.util.Locale)](../android/icu/text/DateFormatSymbols.md))
+- [android.icu.text.DateFormatSymbols#DateFormatSymbols(java.util.Locale)](DateFormatSymbols.md))
 
 ## Public methods
 
@@ -401,7 +401,7 @@ Returns an array of all locales for which the`getInstance`methods of this class 
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Locale](../java/util/Locale.md)!>! | An array of`Locale`s for which localized`DateFormatSymbols`instances are available. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Locale](../java.util/Locale.md)!>! | An array of`Locale`s for which localized`DateFormatSymbols`instances are available. |
 
 ### getEraNames
 
@@ -443,7 +443,7 @@ Returns a DateFormatSymbols instance for the default locale.**\[icu\] Note:** Un
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------|-------------------------------|
-| [DateFormatSymbols](../android/icu/text/DateFormatSymbols.md)! | A DateFormatSymbols instance. |
+| [DateFormatSymbols](DateFormatSymbols.md)! | A DateFormatSymbols instance. |
 
 ### getInstance
 
@@ -457,11 +457,11 @@ open static fun getInstance(locale: ULocale!): DateFormatSymbols!
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------|
-| `locale` | [ULocale](../android/icu/util/ULocale.md)!:the locale. |
+| `locale` | [ULocale](../android.icu.util/ULocale.md)!:the locale. |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------|-------------------------------|
-| [DateFormatSymbols](../android/icu/text/DateFormatSymbols.md)! | A DateFormatSymbols instance. |
+| [DateFormatSymbols](DateFormatSymbols.md)! | A DateFormatSymbols instance. |
 
 ### getInstance
 
@@ -475,11 +475,11 @@ Returns a DateFormatSymbols instance for the given locale.**\[icu\] Note:** Unli
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------|
-| `locale` | [Locale](../java/util/Locale.md)!:the locale. |
+| `locale` | [Locale](../java.util/Locale.md)!:the locale. |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------|-------------------------------|
-| [DateFormatSymbols](../android/icu/text/DateFormatSymbols.md)! | A DateFormatSymbols instance. |
+| [DateFormatSymbols](DateFormatSymbols.md)! | A DateFormatSymbols instance. |
 
 ### getLocalPatternChars
 
@@ -697,7 +697,7 @@ The array returned by this API is a two dimensional String array and each row co
 
 When a localized display name is not available, the corresponding array element will be`null`.
 
-**Note** : ICU implements the time zone display name formatting algorithm specified by [UTS#35 Unicode Locale Data Markup Language(LDML)](http://www.unicode.org/reports/tr35/). The algorithm supports historic display name changes and various different types of names not available in [java.text.DateFormatSymbols#getZoneStrings()](../java/text/DateFormatSymbols.md)). For accessing the full set of time zone string data used by ICU implementation, you should use [TimeZoneNames](../android/icu/text/TimeZoneNames.md) APIs instead.
+**Note** : ICU implements the time zone display name formatting algorithm specified by [UTS#35 Unicode Locale Data Markup Language(LDML)](http://www.unicode.org/reports/tr35/). The algorithm supports historic display name changes and various different types of names not available in [java.text.DateFormatSymbols#getZoneStrings()](../java.text/DateFormatSymbols.md)). For accessing the full set of time zone string data used by ICU implementation, you should use [TimeZoneNames](TimeZoneNames.md) APIs instead.
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------|
@@ -958,7 +958,7 @@ open fun setZoneStrings(newZoneStrings: Array<Array<String!>!>!): Unit
 
 Sets time zone strings.
 
-**Note** : [SimpleDateFormat](../android/icu/text/SimpleDateFormat.md) no longer uses the zone strings stored in a`DateFormatSymbols`. Therefore, the time zone strings set by this method have no effects in an instance of`SimpleDateFormat`for formatting time zones. If you want to customize time zone display names formatted by`SimpleDateFormat`, you should customize [TimeZoneFormat](../android/icu/text/TimeZoneFormat.md) and set the instance by [SimpleDateFormat.setTimeZoneFormat(TimeZoneFormat)](../android/icu/text/SimpleDateFormat.md))instead.
+**Note** : [SimpleDateFormat](SimpleDateFormat.md) no longer uses the zone strings stored in a`DateFormatSymbols`. Therefore, the time zone strings set by this method have no effects in an instance of`SimpleDateFormat`for formatting time zones. If you want to customize time zone display names formatted by`SimpleDateFormat`, you should customize [TimeZoneFormat](TimeZoneFormat.md) and set the instance by [SimpleDateFormat.setTimeZoneFormat(TimeZoneFormat)](SimpleDateFormat.md))instead.
 
 | Parameters ||
 |------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -981,5 +981,5 @@ Initializes format symbols for the locale and calendar type
 
 | Parameters ||
 |-----------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| `desiredLocale` | [ULocale](../android/icu/util/ULocale.md)!:The locale whose symbols are desired. |
+| `desiredLocale` | [ULocale](../android.icu.util/ULocale.md)!:The locale whose symbols are desired. |
 | `type` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The calendar type whose date format symbols are desired. |

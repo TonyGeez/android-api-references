@@ -8,7 +8,7 @@ class PictureInPictureParams : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.PictureInPictureParams](../android/app/PictureInPictureParams.md) |
+| ↳ | [android.app.PictureInPictureParams](PictureInPictureParams.md) |
 
 Represents a set of parameters used to initialize and update an Activity in picture-in-picture mode.
 
@@ -34,17 +34,17 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/PictureInPictureParams#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/PictureInPictureParams#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [RemoteAction](../android/app/RemoteAction.md)!\> | `https://developer.android.com/reference/kotlin/android/app/PictureInPictureParams#getActions()()` Returns the list of user actions that are associated with the activity when in picture-in-picture mode. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [RemoteAction](RemoteAction.md)!\> | `https://developer.android.com/reference/kotlin/android/app/PictureInPictureParams#getActions()()` Returns the list of user actions that are associated with the activity when in picture-in-picture mode. |
 | --- | --- |
-| [Rational](../android/util/Rational.md)? | `https://developer.android.com/reference/kotlin/android/app/PictureInPictureParams#getAspectRatio()()` Returns the expected aspect ratio of the picture-in-picture window. |
-| [RemoteAction](../android/app/RemoteAction.md)? | `https://developer.android.com/reference/kotlin/android/app/PictureInPictureParams#getCloseAction()()` Returns the action that is to replace the system close action. |
-| [Rational](../android/util/Rational.md)? | `https://developer.android.com/reference/kotlin/android/app/PictureInPictureParams#getExpandedAspectRatio()()` Returns the desired aspect ratio of the expanded picture-in-picture window. |
+| [Rational](../android.util/Rational.md)? | `https://developer.android.com/reference/kotlin/android/app/PictureInPictureParams#getAspectRatio()()` Returns the expected aspect ratio of the picture-in-picture window. |
+| [RemoteAction](RemoteAction.md)? | `https://developer.android.com/reference/kotlin/android/app/PictureInPictureParams#getCloseAction()()` Returns the action that is to replace the system close action. |
+| [Rational](../android.util/Rational.md)? | `https://developer.android.com/reference/kotlin/android/app/PictureInPictureParams#getExpandedAspectRatio()()` Returns the desired aspect ratio of the expanded picture-in-picture window. |
 | --- | --- |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [RemoteAction](../android/app/RemoteAction.md)!\> | `https://developer.android.com/reference/kotlin/android/app/PictureInPictureParams#getOverlayActions()()` Returns the set of overlay actions that are associated with the activity when in picture-in-picture mode. |
-| [RemoteAction](../android/app/RemoteAction.md)? | `https://developer.android.com/reference/kotlin/android/app/PictureInPictureParams#getPrimaryAction()()` Returns the action that is to be used as the primary action in the PiP menu. |
-| [RemoteAction](../android/app/RemoteAction.md)? | `https://developer.android.com/reference/kotlin/android/app/PictureInPictureParams#getPrimaryOverlayAction()()` Returns the primary overlay action that is associated with the activity when in picture-in-picture mode. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [RemoteAction](RemoteAction.md)!\> | `https://developer.android.com/reference/kotlin/android/app/PictureInPictureParams#getOverlayActions()()` Returns the set of overlay actions that are associated with the activity when in picture-in-picture mode. |
+| [RemoteAction](RemoteAction.md)? | `https://developer.android.com/reference/kotlin/android/app/PictureInPictureParams#getPrimaryAction()()` Returns the action that is to be used as the primary action in the PiP menu. |
+| [RemoteAction](RemoteAction.md)? | `https://developer.android.com/reference/kotlin/android/app/PictureInPictureParams#getPrimaryOverlayAction()()` Returns the primary overlay action that is associated with the activity when in picture-in-picture mode. |
 | --- | --- |
-| [Rect](../android/graphics/Rect.md)? | `https://developer.android.com/reference/kotlin/android/app/PictureInPictureParams#getSourceRectHint()()` Returns the source rect hint. |
+| [Rect](../android.graphics/Rect.md)? | `https://developer.android.com/reference/kotlin/android/app/PictureInPictureParams#getSourceRectHint()()` Returns the source rect hint. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/app/PictureInPictureParams#getSubtitle()()` Returns the subtitle of the picture-in-picture window that may be displayed to the user. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/app/PictureInPictureParams#getTitle()()` Returns the title of the picture-in-picture window that may be displayed to the user. |
 | --- | --- |
@@ -57,7 +57,7 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [PictureInPictureParams](../android/app/PictureInPictureParams.md)!\> | `https://developer.android.com/reference/kotlin/android/app/PictureInPictureParams#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [PictureInPictureParams](PictureInPictureParams.md)!\> | `https://developer.android.com/reference/kotlin/android/app/PictureInPictureParams#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public methods
 

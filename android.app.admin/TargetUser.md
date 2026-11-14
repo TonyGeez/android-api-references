@@ -4,7 +4,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # TargetUser
 
-Kotlin| [Java](../android/app/admin/TargetUser.md) 
+Kotlin| [Java](TargetUser.md) 
 | --- | --- |
 
 ```
@@ -13,24 +13,24 @@ class TargetUser
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.admin.TargetUser](../android/app/admin/TargetUser.md) |
+| ↳ | [android.app.admin.TargetUser](TargetUser.md) |
 
-Class representing the target user of a policy set by an admin (set from [DevicePolicyManager](../android/app/admin/DevicePolicyManager.md)), this is passed in to [PolicyUpdateReceiver.onPolicySetResult](../android/app/admin/PolicyUpdateReceiver.md))and [PolicyUpdateReceiver.onPolicyChanged](../android/app/admin/PolicyUpdateReceiver.md)).
+Class representing the target user of a policy set by an admin (set from [DevicePolicyManager](DevicePolicyManager.md)), this is passed in to [PolicyUpdateReceiver.onPolicySetResult](PolicyUpdateReceiver.md))and [PolicyUpdateReceiver.onPolicyChanged](PolicyUpdateReceiver.md)).
 
 ## Summary
 
 | Public methods ||
 |------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/app/admin/TargetUser.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/app/admin/TargetUser.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](TargetUser.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](TargetUser.md))`()` <br /> |
 
 | Properties ||
 |--------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [TargetUser](../android/app/admin/TargetUser.md) | [GLOBAL](../android/app/admin/TargetUser.md) This indicates the policy is a global policy. |
-| static [TargetUser](../android/app/admin/TargetUser.md) | [LOCAL_USER](../android/app/admin/TargetUser.md) Indicates that the policy relates to the user the admin is installed on. |
-| static [TargetUser](../android/app/admin/TargetUser.md) | [PARENT_USER](../android/app/admin/TargetUser.md) For admins of profiles, this indicates that the policy relates to the parent profile. |
+| static [TargetUser](TargetUser.md) | [GLOBAL](TargetUser.md) This indicates the policy is a global policy. |
+| static [TargetUser](TargetUser.md) | [LOCAL_USER](TargetUser.md) Indicates that the policy relates to the user the admin is installed on. |
+| static [TargetUser](TargetUser.md) | [PARENT_USER](TargetUser.md) For admins of profiles, this indicates that the policy relates to the parent profile. |
 | --- | --- |
-| static [TargetUser](../android/app/admin/TargetUser.md) | [UNKNOWN_USER](../android/app/admin/TargetUser.md) Indicates that the policy relates to some unknown user on the device. |
+| static [TargetUser](TargetUser.md) | [UNKNOWN_USER](TargetUser.md) Indicates that the policy relates to some unknown user on the device. |
 
 ## Public methods
 

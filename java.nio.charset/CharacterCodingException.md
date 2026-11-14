@@ -11,12 +11,12 @@ open class CharacterCodingException : IOException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
-| | | ↳ | [java.io.IOException](../java/io/IOException.md) ||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) |||
+| | | ↳ | [java.io.IOException](../java.io/IOException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.nio.charset.CharacterCodingException](../java/nio/charset/CharacterCodingException.md) |
+| | | | ↳ | [java.nio.charset.CharacterCodingException](CharacterCodingException.md) |
 
-| Known Direct Subclasses [MalformedInputException](../java/nio/charset/MalformedInputException.md), [UnmappableCharacterException](../java/nio/charset/UnmappableCharacterException.md) |------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [MalformedInputException](../java/nio/charset/MalformedInputException.md) | Checked exception thrown when an input byte sequence is not legal for given charset, or an input character sequence is not a legal sixteen-bit Unicode sequence. | | [UnmappableCharacterException](../java/nio/charset/UnmappableCharacterException.md) | Checked exception thrown when an input character (or byte) sequence is valid but cannot be mapped to an output byte (or character) sequence. | |
+| Known Direct Subclasses [MalformedInputException](MalformedInputException.md), [UnmappableCharacterException](UnmappableCharacterException.md) |------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [MalformedInputException](MalformedInputException.md) | Checked exception thrown when an input byte sequence is not legal for given charset, or an input character sequence is not a legal sixteen-bit Unicode sequence. | | [UnmappableCharacterException](UnmappableCharacterException.md) | Checked exception thrown when an input character (or byte) sequence is valid but cannot be mapped to an output byte (or character) sequence. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Checked exception thrown when a character encoding or decoding error occurs.
@@ -25,7 +25,7 @@ Checked exception thrown when a character encoding or decoding error occurs.
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [CharacterCodingException](../java/nio/charset/CharacterCodingException.md))`()` Constructs an instance of this class. |
+| [CharacterCodingException](CharacterCodingException.md))`()` Constructs an instance of this class. |
 
 ## Public constructors
 

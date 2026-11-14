@@ -8,7 +8,7 @@ class AuthenticationPolicyManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.security.authenticationpolicy.AuthenticationPolicyManager](../android/security/authenticationpolicy/AuthenticationPolicyManager.md) |
+| ↳ | [android.security.authenticationpolicy.AuthenticationPolicyManager](AuthenticationPolicyManager.md) |
 
 AuthenticationPolicyManager is a centralized interface for managing authentication related policies on the device. AuthenticationPolicyManager is designed to protect Android users by integrating with apps and key system components, such as the lock screen. It is not related to enterprise control surfaces and does not offer additional administrative controls.
 
@@ -109,7 +109,7 @@ Using this API may also require meeting additional requirements, such as showing
 
 | Parameters ||
 |---|---|
-| `associationToken` | [UUID](../java/util/UUID.md): the association token of the remote device where this request will be processed. This value cannot be `null`. |
-| `callbackExecutor` | [Executor](../java/util/concurrent/Executor.md): the executor on which to invoke the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `callback` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!, [CrossDeviceAuthenticationException](../android/security/authenticationpolicy/CrossDeviceAuthenticationException.md)!\>: the receiver for the encrypted request on success, or an exception on failure. This value cannot be `null`. |
+| `associationToken` | [UUID](../java.util/UUID.md): the association token of the remote device where this request will be processed. This value cannot be `null`. |
+| `callbackExecutor` | [Executor](../java.util.concurrent/Executor.md): the executor on which to invoke the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `callback` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!, [CrossDeviceAuthenticationException](CrossDeviceAuthenticationException.md)!\>: the receiver for the encrypted request on success, or an exception on failure. This value cannot be `null`. |
 | --- | --- |

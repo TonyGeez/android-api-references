@@ -8,7 +8,7 @@ class Class<T : Any!> : AnnotatedElement, GenericDeclaration, Serializable, 
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.lang.Class](../java/lang/Class.md) |
+| ↳ | [java.lang.Class](Class.md) |
 
 Instances of the class represent classes and interfaces in a running Java application. An enum class and a record class are kinds of class; an annotation interface is a kind of interface. Every array also belongs to a class that is reflected as a object that is shared by all arrays with the same element type and number of dimensions. The primitive Java types (`boolean`, `byte`, `char`, `short`, `int`, `long`, `float`, and `double`), and the keyword are also represented as objects.
 
@@ -37,79 +37,79 @@ Some methods of class `Class` expose whether the declaration of a class or inter
 
 | Public methods ||
 |---|---|
-| [Class](../java/lang/Class.md)\<\*\> | `https://developer.android.com/reference/kotlin/java/lang/Class#arrayType()()` Returns a `Class` for an array type whose component type is described by this [Class](../java/lang/Class.md). |
-| [Class](../java/lang/Class.md)\<out U\> | `https://developer.android.com/reference/kotlin/java/lang/Class#asSubclass(java.lang.Class)(clazz: https://developer.android.com/reference/kotlin/java/lang/Class#<U>)` Casts this `Class` object to represent a subclass of the class represented by the specified class object. |
+| [Class](Class.md)\<\*\> | `https://developer.android.com/reference/kotlin/java/lang/Class#arrayType()()` Returns a `Class` for an array type whose component type is described by this [Class](Class.md). |
+| [Class](Class.md)\<out U\> | `https://developer.android.com/reference/kotlin/java/lang/Class#asSubclass(java.lang.Class)(clazz: https://developer.android.com/reference/kotlin/java/lang/Class#<U>)` Casts this `Class` object to represent a subclass of the class represented by the specified class object. |
 | T? | `https://developer.android.com/reference/kotlin/java/lang/Class#cast(kotlin.Any)(obj: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Casts an object to the class or interface represented by this `Class` object. |
 | --- | --- |
-| [Class](../java/lang/Class.md)\<\*\>? | `https://developer.android.com/reference/kotlin/java/lang/Class#componentType()()` Returns the component type of this `Class`, if it describes an array type, or `null` otherwise. |
+| [Class](Class.md)\<\*\>? | `https://developer.android.com/reference/kotlin/java/lang/Class#componentType()()` Returns the component type of this `Class`, if it describes an array type, or `null` otherwise. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Class#descriptorString()()` Returns the descriptor string of the entity (class, interface, array class, primitive type, or `void`) represented by this `Class` object. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Class#desiredAssertionStatus()()` Returns the assertion status that would be assigned to this class if it were to be initialized at the time this method is invoked. |
 | --- | --- |
-| static [Class](../java/lang/Class.md)\<\*\> | `https://developer.android.com/reference/kotlin/java/lang/Class#forName(kotlin.String)(className: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns the `Class` object associated with the class or interface with the given string name. |
-| static [Class](../java/lang/Class.md)\<\*\> | `https://developer.android.com/reference/kotlin/java/lang/Class#forName(kotlin.String,%20kotlin.Boolean,%20java.lang.ClassLoader)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, initialize: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, loader: https://developer.android.com/reference/kotlin/java/lang/ClassLoader?)` Returns the `Class` object associated with the class or interface with the given string name, using the given class loader. |
+| static [Class](Class.md)\<\*\> | `https://developer.android.com/reference/kotlin/java/lang/Class#forName(kotlin.String)(className: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns the `Class` object associated with the class or interface with the given string name. |
+| static [Class](Class.md)\<\*\> | `https://developer.android.com/reference/kotlin/java/lang/Class#forName(kotlin.String,%20kotlin.Boolean,%20java.lang.ClassLoader)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, initialize: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, loader: https://developer.android.com/reference/kotlin/java/lang/ClassLoader?)` Returns the `Class` object associated with the class or interface with the given string name, using the given class loader. |
 | A? | `https://developer.android.com/reference/kotlin/java/lang/Class#getAnnotation(java.lang.Class)(annotationClass: https://developer.android.com/reference/kotlin/java/lang/Class#<A>)` Returns this element's annotation for the specified type if such an annotation is *present*, else null. |
 | --- | --- |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Annotation](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-annotation/index.html)!\> | `https://developer.android.com/reference/kotlin/java/lang/Class#getAnnotations()()` Returns annotations that are *present* on this element. |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<A\> | `https://developer.android.com/reference/kotlin/java/lang/Class#getAnnotationsByType(java.lang.Class)(annotationClass: https://developer.android.com/reference/kotlin/java/lang/Class#<A>)` Returns annotations that are *associated* with this element. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/java/lang/Class#getCanonicalName()()` Returns the canonical name of the underlying class as defined by The Java Language Specification. |
 | --- | --- |
-| [ClassLoader](../java/lang/ClassLoader.md)? | `https://developer.android.com/reference/kotlin/java/lang/Class#getClassLoader()()` Returns the class loader for the class. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Class](../java/lang/Class.md)\<\*\>!\> | `https://developer.android.com/reference/kotlin/java/lang/Class#getClasses()()` Returns an array containing `Class` objects representing all the public classes and interfaces that are members of the class represented by this `Class` object. |
-| [Class](../java/lang/Class.md)\<\*\>? | `https://developer.android.com/reference/kotlin/java/lang/Class#getComponentType()()` Returns the `Class` representing the component type of an array. |
+| [ClassLoader](ClassLoader.md)? | `https://developer.android.com/reference/kotlin/java/lang/Class#getClassLoader()()` Returns the class loader for the class. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Class](Class.md)\<\*\>!\> | `https://developer.android.com/reference/kotlin/java/lang/Class#getClasses()()` Returns an array containing `Class` objects representing all the public classes and interfaces that are members of the class represented by this `Class` object. |
+| [Class](Class.md)\<\*\>? | `https://developer.android.com/reference/kotlin/java/lang/Class#getComponentType()()` Returns the `Class` representing the component type of an array. |
 | --- | --- |
-| [Constructor](../java/lang/reflect/Constructor.md)\<T\> | `https://developer.android.com/reference/kotlin/java/lang/Class#getConstructor(java.lang.Class)(vararg parameterTypes: https://developer.android.com/reference/kotlin/java/lang/Class#<*>!)` Returns a `Constructor` object that reflects the specified public constructor of the class represented by this `Class` object. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Constructor](../java/lang/reflect/Constructor.md)\<\*\>!\> | `https://developer.android.com/reference/kotlin/java/lang/Class#getConstructors()()` Returns an array containing `Constructor` objects reflecting all the public constructors of the class represented by this `Class` object. |
+| [Constructor](../java.lang.reflect/Constructor.md)\<T\> | `https://developer.android.com/reference/kotlin/java/lang/Class#getConstructor(java.lang.Class)(vararg parameterTypes: https://developer.android.com/reference/kotlin/java/lang/Class#<*>!)` Returns a `Constructor` object that reflects the specified public constructor of the class represented by this `Class` object. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Constructor](../java.lang.reflect/Constructor.md)\<\*\>!\> | `https://developer.android.com/reference/kotlin/java/lang/Class#getConstructors()()` Returns an array containing `Constructor` objects reflecting all the public constructors of the class represented by this `Class` object. |
 | A? | `https://developer.android.com/reference/kotlin/java/lang/Class#getDeclaredAnnotation(java.lang.Class)(annotationClass: https://developer.android.com/reference/kotlin/java/lang/Class#<A>)` Returns this element's annotation for the specified type if such an annotation is *directly present*, else null. |
 | --- | --- |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Annotation](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-annotation/index.html)!\> | `https://developer.android.com/reference/kotlin/java/lang/Class#getDeclaredAnnotations()()` Returns annotations that are *directly present* on this element. |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<A\> | `https://developer.android.com/reference/kotlin/java/lang/Class#getDeclaredAnnotationsByType(java.lang.Class)(annotationClass: https://developer.android.com/reference/kotlin/java/lang/Class#<A>)` Returns this element's annotation(s) for the specified type if such annotations are either *directly present* or *indirectly present*. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Class](../java/lang/Class.md)\<\*\>!\> | `https://developer.android.com/reference/kotlin/java/lang/Class#getDeclaredClasses()()` Returns an array of `Class` objects reflecting all the classes and interfaces declared as members of the class represented by this `Class` object. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Class](Class.md)\<\*\>!\> | `https://developer.android.com/reference/kotlin/java/lang/Class#getDeclaredClasses()()` Returns an array of `Class` objects reflecting all the classes and interfaces declared as members of the class represented by this `Class` object. |
 | --- | --- |
-| [Constructor](../java/lang/reflect/Constructor.md)\<T\> | `https://developer.android.com/reference/kotlin/java/lang/Class#getDeclaredConstructor(java.lang.Class)(vararg parameterTypes: https://developer.android.com/reference/kotlin/java/lang/Class#<*>!)` Returns a `Constructor` object that reflects the specified constructor of the class or interface represented by this `Class` object. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Constructor](../java/lang/reflect/Constructor.md)\<\*\>!\> | `https://developer.android.com/reference/kotlin/java/lang/Class#getDeclaredConstructors()()` Returns an array of `Constructor` objects reflecting all the constructors declared by the class represented by this `Class` object. |
-| [Field](../java/lang/reflect/Field.md) | `https://developer.android.com/reference/kotlin/java/lang/Class#getDeclaredField(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns a `Field` object that reflects the specified declared field of the class or interface represented by this `Class` object. |
+| [Constructor](../java.lang.reflect/Constructor.md)\<T\> | `https://developer.android.com/reference/kotlin/java/lang/Class#getDeclaredConstructor(java.lang.Class)(vararg parameterTypes: https://developer.android.com/reference/kotlin/java/lang/Class#<*>!)` Returns a `Constructor` object that reflects the specified constructor of the class or interface represented by this `Class` object. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Constructor](../java.lang.reflect/Constructor.md)\<\*\>!\> | `https://developer.android.com/reference/kotlin/java/lang/Class#getDeclaredConstructors()()` Returns an array of `Constructor` objects reflecting all the constructors declared by the class represented by this `Class` object. |
+| [Field](../java.lang.reflect/Field.md) | `https://developer.android.com/reference/kotlin/java/lang/Class#getDeclaredField(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns a `Field` object that reflects the specified declared field of the class or interface represented by this `Class` object. |
 | --- | --- |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Field](../java/lang/reflect/Field.md)!\> | `https://developer.android.com/reference/kotlin/java/lang/Class#getDeclaredFields()()` Returns an array of `Field` objects reflecting all the fields declared by the class or interface represented by this `Class` object. |
-| [Method](../java/lang/reflect/Method.md) | `https://developer.android.com/reference/kotlin/java/lang/Class#getDeclaredMethod(kotlin.String,%20java.lang.Class)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, vararg parameterTypes: https://developer.android.com/reference/kotlin/java/lang/Class#<*>!)` Returns a `Method` object that reflects the specified declared method of the class or interface represented by this `Class` object. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Method](../java/lang/reflect/Method.md)!\> | `https://developer.android.com/reference/kotlin/java/lang/Class#getDeclaredMethods()()` Returns an array containing `Method` objects reflecting all the declared methods of the class or interface represented by this `Class` object, including public, protected, default (package) access, and private methods, but excluding inherited methods. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Field](../java.lang.reflect/Field.md)!\> | `https://developer.android.com/reference/kotlin/java/lang/Class#getDeclaredFields()()` Returns an array of `Field` objects reflecting all the fields declared by the class or interface represented by this `Class` object. |
+| [Method](../java.lang.reflect/Method.md) | `https://developer.android.com/reference/kotlin/java/lang/Class#getDeclaredMethod(kotlin.String,%20java.lang.Class)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, vararg parameterTypes: https://developer.android.com/reference/kotlin/java/lang/Class#<*>!)` Returns a `Method` object that reflects the specified declared method of the class or interface represented by this `Class` object. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Method](../java.lang.reflect/Method.md)!\> | `https://developer.android.com/reference/kotlin/java/lang/Class#getDeclaredMethods()()` Returns an array containing `Method` objects reflecting all the declared methods of the class or interface represented by this `Class` object, including public, protected, default (package) access, and private methods, but excluding inherited methods. |
 | --- | --- |
-| [Class](../java/lang/Class.md)\<\*\>? | `https://developer.android.com/reference/kotlin/java/lang/Class#getDeclaringClass()()` If the class or interface represented by this `Class` object is a member of another class, returns the `Class` object representing the class in which it was declared. |
-| [Class](../java/lang/Class.md)\<\*\>? | `https://developer.android.com/reference/kotlin/java/lang/Class#getEnclosingClass()()` Returns the immediately enclosing class of the underlying class. |
-| [Constructor](../java/lang/reflect/Constructor.md)\<\*\>? | `https://developer.android.com/reference/kotlin/java/lang/Class#getEnclosingConstructor()()` If this `Class` object represents a local or anonymous class within a constructor, returns a `https://developer.android.com/reference/kotlin/java/lang/reflect/Constructor` object representing the immediately enclosing constructor of the underlying class. |
+| [Class](Class.md)\<\*\>? | `https://developer.android.com/reference/kotlin/java/lang/Class#getDeclaringClass()()` If the class or interface represented by this `Class` object is a member of another class, returns the `Class` object representing the class in which it was declared. |
+| [Class](Class.md)\<\*\>? | `https://developer.android.com/reference/kotlin/java/lang/Class#getEnclosingClass()()` Returns the immediately enclosing class of the underlying class. |
+| [Constructor](../java.lang.reflect/Constructor.md)\<\*\>? | `https://developer.android.com/reference/kotlin/java/lang/Class#getEnclosingConstructor()()` If this `Class` object represents a local or anonymous class within a constructor, returns a `https://developer.android.com/reference/kotlin/java/lang/reflect/Constructor` object representing the immediately enclosing constructor of the underlying class. |
 | --- | --- |
-| [Method](../java/lang/reflect/Method.md)? | `https://developer.android.com/reference/kotlin/java/lang/Class#getEnclosingMethod()()` If this `Class` object represents a local or anonymous class within a method, returns a `https://developer.android.com/reference/kotlin/java/lang/reflect/Method` object representing the immediately enclosing method of the underlying class. |
+| [Method](../java.lang.reflect/Method.md)? | `https://developer.android.com/reference/kotlin/java/lang/Class#getEnclosingMethod()()` If this `Class` object represents a local or anonymous class within a method, returns a `https://developer.android.com/reference/kotlin/java/lang/reflect/Method` object representing the immediately enclosing method of the underlying class. |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>? | `https://developer.android.com/reference/kotlin/java/lang/Class#getEnumConstants()()` Returns the elements of this enum class or null if this Class object does not represent an enum class. |
-| [Field](../java/lang/reflect/Field.md) | `https://developer.android.com/reference/kotlin/java/lang/Class#getField(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns a `Field` object that reflects the specified public member field of the class or interface represented by this `Class` object. |
+| [Field](../java.lang.reflect/Field.md) | `https://developer.android.com/reference/kotlin/java/lang/Class#getField(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns a `Field` object that reflects the specified public member field of the class or interface represented by this `Class` object. |
 | --- | --- |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Field](../java/lang/reflect/Field.md)!\> | `https://developer.android.com/reference/kotlin/java/lang/Class#getFields()()` Returns an array containing `Field` objects reflecting all the accessible public fields of the class or interface represented by this `Class` object. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Type](../java/lang/reflect/Type.md)!\> | `https://developer.android.com/reference/kotlin/java/lang/Class#getGenericInterfaces()()` Returns the `Type`s representing the interfaces directly implemented by the class or interface represented by this `Class` object. |
-| [Type](../java/lang/reflect/Type.md)? | `https://developer.android.com/reference/kotlin/java/lang/Class#getGenericSuperclass()()` Returns the `Type` representing the direct superclass of the entity (class, interface, primitive type or void) represented by this `Class` object. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Field](../java.lang.reflect/Field.md)!\> | `https://developer.android.com/reference/kotlin/java/lang/Class#getFields()()` Returns an array containing `Field` objects reflecting all the accessible public fields of the class or interface represented by this `Class` object. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Type](../java.lang.reflect/Type.md)!\> | `https://developer.android.com/reference/kotlin/java/lang/Class#getGenericInterfaces()()` Returns the `Type`s representing the interfaces directly implemented by the class or interface represented by this `Class` object. |
+| [Type](../java.lang.reflect/Type.md)? | `https://developer.android.com/reference/kotlin/java/lang/Class#getGenericSuperclass()()` Returns the `Type` representing the direct superclass of the entity (class, interface, primitive type or void) represented by this `Class` object. |
 | --- | --- |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Class](../java/lang/Class.md)\<\*\>!\> | `https://developer.android.com/reference/kotlin/java/lang/Class#getInterfaces()()` Returns the interfaces directly implemented by the class or interface represented by this object. |
-| [Method](../java/lang/reflect/Method.md) | `https://developer.android.com/reference/kotlin/java/lang/Class#getMethod(kotlin.String,%20java.lang.Class)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, vararg parameterTypes: https://developer.android.com/reference/kotlin/java/lang/Class#<*>!)` Returns a `Method` object that reflects the specified public member method of the class or interface represented by this `Class` object. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Method](../java/lang/reflect/Method.md)!\> | `https://developer.android.com/reference/kotlin/java/lang/Class#getMethods()()` Returns an array containing `Method` objects reflecting all the public methods of the class or interface represented by this `Class` object, including those declared by the class or interface and those inherited from superclasses and superinterfaces. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Class](Class.md)\<\*\>!\> | `https://developer.android.com/reference/kotlin/java/lang/Class#getInterfaces()()` Returns the interfaces directly implemented by the class or interface represented by this object. |
+| [Method](../java.lang.reflect/Method.md) | `https://developer.android.com/reference/kotlin/java/lang/Class#getMethod(kotlin.String,%20java.lang.Class)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, vararg parameterTypes: https://developer.android.com/reference/kotlin/java/lang/Class#<*>!)` Returns a `Method` object that reflects the specified public member method of the class or interface represented by this `Class` object. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Method](../java.lang.reflect/Method.md)!\> | `https://developer.android.com/reference/kotlin/java/lang/Class#getMethods()()` Returns an array containing `Method` objects reflecting all the public methods of the class or interface represented by this `Class` object, including those declared by the class or interface and those inherited from superclasses and superinterfaces. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Class#getModifiers()()` Returns the Java language modifiers for this class or interface, encoded in an integer. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Class#getName()()` Returns the name of the entity (class, interface, array class, primitive type, or void) represented by this `Class` object. |
-| [Class](../java/lang/Class.md)\<\*\> | `https://developer.android.com/reference/kotlin/java/lang/Class#getNestHost()()` Returns the nest host of the [nest](../java/lang/Class.md) to which the class or interface represented by this `Class` object belongs. |
+| [Class](Class.md)\<\*\> | `https://developer.android.com/reference/kotlin/java/lang/Class#getNestHost()()` Returns the nest host of the [nest](Class.md) to which the class or interface represented by this `Class` object belongs. |
 | --- | --- |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Class](../java/lang/Class.md)\<\*\>!\> | `https://developer.android.com/reference/kotlin/java/lang/Class#getNestMembers()()` Returns an array containing `Class` objects representing all the classes and interfaces that are members of the nest to which the class or interface represented by this `Class` object belongs. |
-| [Package](../java/lang/Package.md)? | `https://developer.android.com/reference/kotlin/java/lang/Class#getPackage()()` Gets the package of this class. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Class](Class.md)\<\*\>!\> | `https://developer.android.com/reference/kotlin/java/lang/Class#getNestMembers()()` Returns an array containing `Class` objects representing all the classes and interfaces that are members of the nest to which the class or interface represented by this `Class` object belongs. |
+| [Package](Package.md)? | `https://developer.android.com/reference/kotlin/java/lang/Class#getPackage()()` Gets the package of this class. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Class#getPackageName()()` Returns the fully qualified package name. |
 | --- | --- |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Class](../java/lang/Class.md)\<\*\>!\>? | `https://developer.android.com/reference/kotlin/java/lang/Class#getPermittedSubclasses()()` Returns an array containing `Class` objects representing the direct subinterfaces or subclasses permitted to extend or implement this class or interface if it is sealed. |
-| [ProtectionDomain](../java/security/ProtectionDomain.md)? | `https://developer.android.com/reference/kotlin/java/lang/Class#getProtectionDomain()()` Returns the `ProtectionDomain` of this class. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [RecordComponent](../java/lang/reflect/RecordComponent.md)!\>? | `https://developer.android.com/reference/kotlin/java/lang/Class#getRecordComponents()()` Returns an array of `RecordComponent` objects representing all the record components of this record class, or `null` if this class is not a record class. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Class](Class.md)\<\*\>!\>? | `https://developer.android.com/reference/kotlin/java/lang/Class#getPermittedSubclasses()()` Returns an array containing `Class` objects representing the direct subinterfaces or subclasses permitted to extend or implement this class or interface if it is sealed. |
+| [ProtectionDomain](../java.security/ProtectionDomain.md)? | `https://developer.android.com/reference/kotlin/java/lang/Class#getProtectionDomain()()` Returns the `ProtectionDomain` of this class. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [RecordComponent](../java.lang.reflect/RecordComponent.md)!\>? | `https://developer.android.com/reference/kotlin/java/lang/Class#getRecordComponents()()` Returns an array of `RecordComponent` objects representing all the record components of this record class, or `null` if this class is not a record class. |
 | --- | --- |
-| [URL](../java/net/URL.md)? | `https://developer.android.com/reference/kotlin/java/lang/Class#getResource(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Finds a resource with a given name. |
-| [InputStream](../java/io/InputStream.md)? | `https://developer.android.com/reference/kotlin/java/lang/Class#getResourceAsStream(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Finds a resource with a given name. |
+| [URL](../java.net/URL.md)? | `https://developer.android.com/reference/kotlin/java/lang/Class#getResource(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Finds a resource with a given name. |
+| [InputStream](../java.io/InputStream.md)? | `https://developer.android.com/reference/kotlin/java/lang/Class#getResourceAsStream(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Finds a resource with a given name. |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>? | `https://developer.android.com/reference/kotlin/java/lang/Class#getSigners()()` Gets the signers of this class. |
 | --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Class#getSimpleName()()` Returns the simple name of the underlying class as given in the source code. |
-| [Class](../java/lang/Class.md)\<in T\>? | `https://developer.android.com/reference/kotlin/java/lang/Class#getSuperclass()()` Returns the `Class` representing the direct superclass of the entity (class, interface, primitive type or void) represented by this `Class`. |
+| [Class](Class.md)\<in T\>? | `https://developer.android.com/reference/kotlin/java/lang/Class#getSuperclass()()` Returns the `Class` representing the direct superclass of the entity (class, interface, primitive type or void) represented by this `Class`. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Class#getTypeName()()` Return an informative string for the name of this class or interface. |
 | --- | --- |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [TypeVariable](../java/lang/reflect/TypeVariable.md)\< [Class](../java/lang/Class.md)\<T\>!\>!\> | `https://developer.android.com/reference/kotlin/java/lang/Class#getTypeParameters()()` Returns an array of `TypeVariable` objects that represent the type variables declared by the generic declaration represented by this `GenericDeclaration` object, in declaration order. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [TypeVariable](../java.lang.reflect/TypeVariable.md)\< [Class](Class.md)\<T\>!\>!\> | `https://developer.android.com/reference/kotlin/java/lang/Class#getTypeParameters()()` Returns an array of `TypeVariable` objects that represent the type variables declared by the generic declaration represented by this `GenericDeclaration` object, in declaration order. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Class#isAnnotation()()` Returns true if this `Class` object represents an annotation interface. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/Class#isAnnotationPresent(java.lang.Class)(annotationClass: https://developer.android.com/reference/kotlin/java/lang/Class#<out https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-annotation/index.html!>)` Returns true if an annotation for the specified type is *present* on this element, else false. |
 | --- | --- |
@@ -145,7 +145,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 fun arrayType(): Class<*>
 ```
 
-Returns a `Class` for an array type whose component type is described by this [Class](../java/lang/Class.md).
+Returns a `Class` for an array type whose component type is described by this [Class](Class.md).
 
 | Return ||
 |---|---|
@@ -166,7 +166,7 @@ This method is useful when a client needs to "narrow" the type of a `Class` obje
 | Parameters ||
 |---|---|
 | `<U>` | the type to cast this `Class` object to |
-| `clazz` | [Class](../java/lang/Class.md)\<U\>: the class of the type to cast this `Class` object to |
+| `clazz` | [Class](Class.md)\<U\>: the class of the type to cast this `Class` object to |
 
 | Return ||
 |---|---|
@@ -311,7 +311,7 @@ For example, in an instance method the expression:
 |---|---|
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): fully qualified name of the desired class |
 | `initialize` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): if `true` the class will be initialized (which implies linking). See Section {@jls \* 12.4} of The Java Language Specification. |
-| `loader` | [ClassLoader](../java/lang/ClassLoader.md)?: class loader from which the class must be loaded |
+| `loader` | [ClassLoader](ClassLoader.md)?: class loader from which the class must be loaded |
 | --- | --- |
 
 | Return ||
@@ -345,7 +345,7 @@ Note that any annotation returned by this method is a declaration annotation.
 | Parameters ||
 |---|---|
 | `<T>` | the type of the annotation to query for and return if present |
-| `annotationClass` | [Class](../java/lang/Class.md)\<A\>: the Class object corresponding to the annotation type |
+| `annotationClass` | [Class](Class.md)\<A\>: the Class object corresponding to the annotation type |
 
 | Return ||
 |---|---|
@@ -386,7 +386,7 @@ Note that any annotations returned by this method are declaration annotations.
 | Parameters ||
 |---|---|
 | `<T>` | the type of the annotation to query for and return if present |
-| `annotationClass` | [Class](../java/lang/Class.md)\<A\>: the Class object corresponding to the annotation type |
+| `annotationClass` | [Class](Class.md)\<A\>: the Class object corresponding to the annotation type |
 
 | Return ||
 |---|---|
@@ -406,8 +406,8 @@ fun getCanonicalName(): String?
 
 Returns the canonical name of the underlying class as defined by The Java Language Specification. Returns `null` if the underlying class does not have a canonical name. Classes without canonical names include:
 
-- a [local class](../java/lang/Class.md))
-- a [anonymous class](../java/lang/Class.md))
+- a [local class](Class.md))
+- a [anonymous class](Class.md))
 - an array whose component type does not have a canonical name
 
 <br />
@@ -483,7 +483,7 @@ The constructor to reflect is the public constructor of the class represented by
 
 | Parameters ||
 |---|---|
-| `parameterTypes` | [Class](../java/lang/Class.md)\<\*\>!: the parameter array |
+| `parameterTypes` | [Class](Class.md)\<\*\>!: the parameter array |
 
 | Return ||
 |---|---|
@@ -527,7 +527,7 @@ Note that any annotation returned by this method is a declaration annotation.
 | Parameters ||
 |---|---|
 | `<T>` | the type of the annotation to query for and return if directly present |
-| `annotationClass` | [Class](../java/lang/Class.md)\<A\>: the Class object corresponding to the annotation type |
+| `annotationClass` | [Class](Class.md)\<A\>: the Class object corresponding to the annotation type |
 
 | Return ||
 |---|---|
@@ -568,7 +568,7 @@ Note that any annotations returned by this method are declaration annotations.
 | Parameters ||
 |---|---|
 | `<T>` | the type of the annotation to query for and return if directly or indirectly present |
-| `annotationClass` | [Class](../java/lang/Class.md)\<A\>: the Class object corresponding to the annotation type |
+| `annotationClass` | [Class](Class.md)\<A\>: the Class object corresponding to the annotation type |
 
 | Return ||
 |---|---|
@@ -608,7 +608,7 @@ Returns a `Constructor` object that reflects the specified constructor of the cl
 
 | Parameters ||
 |---|---|
-| `parameterTypes` | [Class](../java/lang/Class.md)\<\*\>!: the parameter array |
+| `parameterTypes` | [Class](Class.md)\<\*\>!: the parameter array |
 
 | Return ||
 |---|---|
@@ -708,7 +708,7 @@ If this `Class` object represents an array type, then this method does not find 
 | Parameters ||
 |---|---|
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): the name of the method |
-| `parameterTypes` | [Class](../java/lang/Class.md)\<\*\>!: the parameter array |
+| `parameterTypes` | [Class](Class.md)\<\*\>!: the parameter array |
 
 | Return ||
 |---|---|
@@ -729,7 +729,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun getDeclaredMethods(): Array<Method!>
 ```
 
-Returns an array containing `Method` objects reflecting all the declared methods of the class or interface represented by this `Class` object, including public, protected, default (package) access, and private methods, but excluding inherited methods. The declared methods may include methods *not* in the source of the class or interface, including [bridge methods](../java/lang/reflect/Method.md)) and other [synthetic](../java/lang/reflect/Executable.md)) methods added by compilers.
+Returns an array containing `Method` objects reflecting all the declared methods of the class or interface represented by this `Class` object, including public, protected, default (package) access, and private methods, but excluding inherited methods. The declared methods may include methods *not* in the source of the class or interface, including [bridge methods](../java.lang.reflect/Method.md)) and other [synthetic](../java.lang.reflect/Executable.md)) methods added by compilers.
 
 If this `Class` object represents a class or interface that has multiple declared methods with the same name and parameter types, but different return types, then the returned array has a `Method` object for each such method.
 
@@ -997,7 +997,7 @@ Generally, the method to be reflected is determined by the 4 step algorithm that
 | Parameters ||
 |---|---|
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): the name of the method |
-| `parameterTypes` | [Class](../java/lang/Class.md)\<\*\>!: the list of parameters |
+| `parameterTypes` | [Class](Class.md)\<\*\>!: the list of parameters |
 
 | Return ||
 |---|---|
@@ -1090,7 +1090,7 @@ If this `Class` object represents an array class, then the result is a string co
 | `byte` | `B` |
 | `char` | `C` |
 | --- | --- |
-| class or interface with [binary name](../java/lang/ClassLoader.md) *N* | `L`*N* `;` |
+| class or interface with [binary name](ClassLoader.md) *N* | `L`*N* `;` |
 | `double` | `D` |
 | `float` | `F` |
 | --- | --- |
@@ -1127,7 +1127,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 fun getNestHost(): Class<*>
 ```
 
-Returns the nest host of the [nest](../java/lang/Class.md) to which the class or interface represented by this `Class` object belongs. Every class and interface belongs to exactly one nest. If the nest host of this class or interface has previously been determined, then this method returns the nest host. If the nest host of this class or interface has not previously been determined, then this method determines the nest host using the algorithm of JVMS 5.4.4, and returns it. Often, a class or interface belongs to a nest consisting only of itself, in which case this method returns `this` to indicate that the class or interface is the nest host.
+Returns the nest host of the [nest](Class.md) to which the class or interface represented by this `Class` object belongs. Every class and interface belongs to exactly one nest. If the nest host of this class or interface has previously been determined, then this method returns the nest host. If the nest host of this class or interface has not previously been determined, then this method determines the nest host using the algorithm of JVMS 5.4.4, and returns it. Often, a class or interface belongs to a nest consisting only of itself, in which case this method returns `this` to indicate that the class or interface is the nest host.
 
 If this `Class` object represents a primitive type, an array type, or `void`, then this method returns `this`, indicating that the represented entity belongs to the nest consisting only of itself, and is the nest host.
 
@@ -1143,7 +1143,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 fun getNestMembers(): Array<Class<*>!>
 ```
 
-Returns an array containing `Class` objects representing all the classes and interfaces that are members of the nest to which the class or interface represented by this `Class` object belongs. First, this method obtains the [nest host](../java/lang/Class.md)), `H`, of the nest to which the class or interface represented by this `Class` object belongs. The zeroth element of the returned array is `H`. Then, for each class or interface `C` which is recorded by `H` as being a member of its nest, this method attempts to obtain the `Class` object for `C` (using [the defining class](../java/lang/Class.md)) of the current `Class` object), and then obtains the [nest host](../java/lang/Class.md)) of the nest to which `C` belongs. The classes and interfaces which are recorded by `H` as being members of its nest, and for which `H` can be determined as their nest host, are indicated by subsequent elements of the returned array. The order of such elements is unspecified. Duplicates are permitted.
+Returns an array containing `Class` objects representing all the classes and interfaces that are members of the nest to which the class or interface represented by this `Class` object belongs. First, this method obtains the [nest host](Class.md)), `H`, of the nest to which the class or interface represented by this `Class` object belongs. The zeroth element of the returned array is `H`. Then, for each class or interface `C` which is recorded by `H` as being a member of its nest, this method attempts to obtain the `Class` object for `C` (using [the defining class](Class.md)) of the current `Class` object), and then obtains the [nest host](Class.md)) of the nest to which `C` belongs. The classes and interfaces which are recorded by `H` as being members of its nest, and for which `H` can be determined as their nest host, are indicated by subsequent elements of the returned array. The order of such elements is unspecified. Duplicates are permitted.
 
 If this `Class` object represents a primitive type, an array type, or `void`, then this method returns a single-element array containing `this`.
 
@@ -1183,9 +1183,9 @@ Returns the fully qualified package name.
 
 If this class is a top level class, then this method returns the fully qualified name of the package that the class is a member of, or the empty string if the class is in an unnamed package.
 
-If this class is a member class, then this method is equivalent to invoking `getPackageName()` on the [enclosing class](../java/lang/Class.md)).
+If this class is a member class, then this method is equivalent to invoking `getPackageName()` on the [enclosing class](Class.md)).
 
-If this class is a [local class](../java/lang/Class.md)) or an [anonymous class](../java/lang/Class.md)), then this method is equivalent to invoking `getPackageName()` on the [declaring class](../java/lang/Class.md)) of the [enclosing method](../java/lang/Class.md)) or [enclosing constructor](../java/lang/Class.md)).
+If this class is a [local class](Class.md)) or an [anonymous class](Class.md)), then this method is equivalent to invoking `getPackageName()` on the [declaring class](Class.md)) of the [enclosing method](Class.md)) or [enclosing constructor](Class.md)).
 
 If this class represents an array type then this method returns the package name of the element type. If this class represents a primitive type or void then the package name "`java.lang`" is returned.
 
@@ -1201,7 +1201,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 fun getPermittedSubclasses(): Array<Class<*>!>?
 ```
 
-Returns an array containing `Class` objects representing the direct subinterfaces or subclasses permitted to extend or implement this class or interface if it is sealed. The order of such elements is unspecified. The array is empty if this sealed class or interface has no permitted subclass. If this `Class` object represents a primitive type, `void`, an array type, or a class or interface that is not sealed, that is `https://developer.android.com/reference/kotlin/java/lang/Class#isSealed()` returns `false`, then this method returns `null`. Conversely, if `https://developer.android.com/reference/kotlin/java/lang/Class#isSealed()` returns `true`, then this method returns a non-null value. For each class or interface `C` which is recorded as a permitted direct subinterface or subclass of this class or interface, this method attempts to obtain the `Class` object for `C` (using [the defining class](../java/lang/Class.md)) of the current `Class` object). The `Class` objects which can be obtained and which are direct subinterfaces or subclasses of this class or interface, are indicated by elements of the returned array. If a `Class` object cannot be obtained, it is silently ignored, and not included in the result array.
+Returns an array containing `Class` objects representing the direct subinterfaces or subclasses permitted to extend or implement this class or interface if it is sealed. The order of such elements is unspecified. The array is empty if this sealed class or interface has no permitted subclass. If this `Class` object represents a primitive type, `void`, an array type, or a class or interface that is not sealed, that is `https://developer.android.com/reference/kotlin/java/lang/Class#isSealed()` returns `false`, then this method returns `null`. Conversely, if `https://developer.android.com/reference/kotlin/java/lang/Class#isSealed()` returns `true`, then this method returns a non-null value. For each class or interface `C` which is recorded as a permitted direct subinterface or subclass of this class or interface, this method attempts to obtain the `Class` object for `C` (using [the defining class](Class.md)) of the current `Class` object). The `Class` objects which can be obtained and which are direct subinterfaces or subclasses of this class or interface, are indicated by elements of the returned array. If a `Class` object cannot be obtained, it is silently ignored, and not included in the result array.
 
 | Return ||
 |---|---|
@@ -1260,7 +1260,7 @@ fun getResource(name: String): URL?
 
 Finds a resource with a given name.
 
-The rules for searching resources associated with a given class are implemented by the defining [class loader](../java/lang/ClassLoader.md) of the class. This method delegates to this `Class` object's class loader. If this `Class` object was loaded by the bootstrap class loader, the method delegates to `https://developer.android.com/reference/kotlin/java/lang/ClassLoader#getSystemResource(kotlin.String)`.
+The rules for searching resources associated with a given class are implemented by the defining [class loader](ClassLoader.md) of the class. This method delegates to this `Class` object's class loader. If this `Class` object was loaded by the bootstrap class loader, the method delegates to `https://developer.android.com/reference/kotlin/java/lang/ClassLoader#getSystemResource(kotlin.String)`.
 
 Before delegation, an absolute resource name is constructed from the given resource name using this algorithm:
 
@@ -1291,7 +1291,7 @@ fun getResourceAsStream(name: String): InputStream?
 
 Finds a resource with a given name.
 
-The rules for searching resources associated with a given class are implemented by the defining [class loader](../java/lang/ClassLoader.md) of the class. This method delegates to this `Class` object's class loader. If this `Class` object was loaded by the bootstrap class loader, the method delegates to `https://developer.android.com/reference/kotlin/java/lang/ClassLoader#getSystemResourceAsStream(kotlin.String)`.
+The rules for searching resources associated with a given class are implemented by the defining [class loader](ClassLoader.md) of the class. This method delegates to this `Class` object's class loader. If this `Class` object was loaded by the bootstrap class loader, the method delegates to `https://developer.android.com/reference/kotlin/java/lang/ClassLoader#getSystemResourceAsStream(kotlin.String)`.
 
 Before delegation, an absolute resource name is constructed from the given resource name using this algorithm:
 
@@ -1334,9 +1334,9 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun getSimpleName(): String
 ```
 
-Returns the simple name of the underlying class as given in the source code. An empty string is returned if the underlying class is [anonymous](../java/lang/Class.md)). A [synthetic class](../java/lang/Class.md)), one not present in source code, can have a non-empty name including special characters, such as "`$`".
+Returns the simple name of the underlying class as given in the source code. An empty string is returned if the underlying class is [anonymous](Class.md)). A [synthetic class](Class.md)), one not present in source code, can have a non-empty name including special characters, such as "`$`".
 
-The simple name of an [array class](../java/lang/Class.md)) is the simple name of the component type with "\[\]" appended. In particular the simple name of an array class whose component type is anonymous is "\[\]".
+The simple name of an [array class](Class.md)) is the simple name of the component type with "\[\]" appended. In particular the simple name of an array class whose component type is anonymous is "\[\]".
 
 | Return ||
 |---|---|
@@ -1418,7 +1418,7 @@ The body of the default method is specified to be the code above.
 
 | Parameters ||
 |---|---|
-| `annotationClass` | [Class](../java/lang/Class.md)\<out [Annotation](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-annotation/index.html)!\>: the Class object corresponding to the annotation type |
+| `annotationClass` | [Class](Class.md)\<out [Annotation](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-annotation/index.html)!\>: the Class object corresponding to the annotation type |
 
 | Return ||
 |---|---|
@@ -1470,7 +1470,7 @@ Specifically, this method tests whether the type represented by the specified `C
 
 | Parameters ||
 |---|---|
-| `cls` | [Class](../java/lang/Class.md)\<\*\>: the `Class` object to be checked |
+| `cls` | [Class](Class.md)\<\*\>: the `Class` object to be checked |
 
 | Return ||
 |---|---|
@@ -1564,11 +1564,11 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 fun isNestmateOf(c: Class<*>): Boolean
 ```
 
-Determines if the given `Class` is a nestmate of the class or interface represented by this `Class` object. Two classes or interfaces are nestmates if they have the same [nest host](../java/lang/Class.md)).
+Determines if the given `Class` is a nestmate of the class or interface represented by this `Class` object. Two classes or interfaces are nestmates if they have the same [nest host](Class.md)).
 
 | Parameters ||
 |---|---|
-| `c` | [Class](../java/lang/Class.md)\<\*\>: the class to check |
+| `c` | [Class](Class.md)\<\*\>: the class to check |
 
 | Return ||
 |---|---|
@@ -1614,7 +1614,7 @@ fun isRecord(): Boolean
 
 Returns `true` if and only if this class is a record class.
 
-The [direct superclass](../java/lang/Class.md)) of a record class is `java.lang.Record`. A record class is [final](../java/lang/reflect/Modifier.md). A record class has (possibly zero) record components; `https://developer.android.com/reference/kotlin/java/lang/Class#getRecordComponents()` returns a non-null but possibly empty value for a record.
+The [direct superclass](Class.md)) of a record class is `java.lang.Record`. A record class is [final](../java.lang.reflect/Modifier.md). A record class has (possibly zero) record components; `https://developer.android.com/reference/kotlin/java/lang/Class#getRecordComponents()` returns a non-null but possibly empty value for a record.
 
 Note that class `https://developer.android.com/reference/kotlin/java/lang/Record` is not a record class and thus invoking this method on class `Record` returns `false`.
 

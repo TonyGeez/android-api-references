@@ -10,7 +10,7 @@ abstract class X509CRLEntry : X509Extension
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.cert.X509CRLEntry](../java/security/cert/X509CRLEntry.md) |
+| ↳ | [java.security.cert.X509CRLEntry](X509CRLEntry.md) |
 
 Abstract class for a revoked certificate in a CRL (Certificate Revocation List). The ASN.1 definition for*revokedCertificates*is: 
 
@@ -41,26 +41,26 @@ revokedCertificates    SEQUENCE OF SEQUENCE  {
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------|---|
-| [X509CRLEntry](../java/security/cert/X509CRLEntry.md))`()` <br /> |
+| [X509CRLEntry](X509CRLEntry.md))`()` <br /> |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/security/cert/X509CRLEntry.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this CRL entry for equality with the given object. |
-| open [X500Principal](../javax/security/auth/x500/X500Principal.md)! | [getCertificateIssuer](../java/security/cert/X509CRLEntry.md))`()` Get the issuer of the X509Certificate described by this entry. |
-| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getEncoded](../java/security/cert/X509CRLEntry.md))`()` Returns the ASN. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](X509CRLEntry.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this CRL entry for equality with the given object. |
+| open [X500Principal](../javax.security.auth.x500/X500Principal.md)! | [getCertificateIssuer](X509CRLEntry.md))`()` Get the issuer of the X509Certificate described by this entry. |
+| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getEncoded](X509CRLEntry.md))`()` Returns the ASN. |
 | --- | --- |
-| abstract [Date](../java/util/Date.md)! | [getRevocationDate](../java/security/cert/X509CRLEntry.md))`()` Gets the revocation date from this X509CRLEntry, the*revocationDate*. |
-| open [CRLReason](../java/security/cert/CRLReason.md)! | [getRevocationReason](../java/security/cert/X509CRLEntry.md))`()` Returns the reason the certificate has been revoked, as specified in the Reason Code extension of this CRL entry. |
-| abstract [BigInteger](../java/math/BigInteger.md)! | [getSerialNumber](../java/security/cert/X509CRLEntry.md))`()` Gets the serial number from this X509CRLEntry, the*userCertificate*. |
+| abstract [Date](../java.util/Date.md)! | [getRevocationDate](X509CRLEntry.md))`()` Gets the revocation date from this X509CRLEntry, the*revocationDate*. |
+| open [CRLReason](CRLReason.md)! | [getRevocationReason](X509CRLEntry.md))`()` Returns the reason the certificate has been revoked, as specified in the Reason Code extension of this CRL entry. |
+| abstract [BigInteger](../java.math/BigInteger.md)! | [getSerialNumber](X509CRLEntry.md))`()` Gets the serial number from this X509CRLEntry, the*userCertificate*. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasExtensions](../java/security/cert/X509CRLEntry.md))`()` Returns true if this CRL entry has extensions. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/security/cert/X509CRLEntry.md))`()` Returns a hashcode value for this CRL entry from its encoded form. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/security/cert/X509CRLEntry.md))`()` Returns a string representation of this CRL entry. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasExtensions](X509CRLEntry.md))`()` Returns true if this CRL entry has extensions. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](X509CRLEntry.md))`()` Returns a hashcode value for this CRL entry from its encoded form. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](X509CRLEntry.md))`()` Returns a string representation of this CRL entry. |
 | --- | --- |
 
 | Inherited functions ||
 |---|---|
-| From class [X509Extension](../java/security/cert/X509Extension.md) |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>! | [getCriticalExtensionOIDs](../java/security/cert/X509Extension.md))`()` <br /> Gets a Set of the OID strings for the extension(s) marked CRITICAL in the certificate/CRL managed by the object implementing this interface. Here is sample code to get a Set of critical extensions from an X509Certificate and print the OIDs: ```kotlin <code>X509Certificate cert = null; try (InputStream inStrm = new FileInputStream("DER-encoded-Cert")) { CertificateFactory cf = CertificateFactory.getInstance("X.509"); cert = (X509Certificate)cf.generateCertificate(inStrm); } Set&lt;String&gt; critSet = cert.getCriticalExtensionOIDs(); if (critSet != null &amp;&amp; !critSet.isEmpty()) { System.out.println("Set of critical extensions:"); for (String oid : critSet) { System.out.println(oid); } } </code> ``` <br /> <br /> | | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getExtensionValue](../java/security/cert/X509Extension.md))`(`oid:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> Gets the DER-encoded OCTET string for the extension value (*extnValue* ) identified by the passed-in`oid`String. The`oid`string is represented by a set of nonnegative whole numbers separated by periods. For example: | OID*(Object Identifier)* | Extension Name | | 2.5.29.14 | SubjectKeyIdentifier | | 2.5.29.15 | KeyUsage | | 2.5.29.16 | PrivateKeyUsage | | 2.5.29.17 | SubjectAlternativeName | | 2.5.29.18 | IssuerAlternativeName | | 2.5.29.19 | BasicConstraints | | 2.5.29.30 | NameConstraints | | 2.5.29.33 | PolicyMappings | | 2.5.29.35 | AuthorityKeyIdentifier | | 2.5.29.36 | PolicyConstraints | |--------------------------|------------------------| <br /> | | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>! | [getNonCriticalExtensionOIDs](../java/security/cert/X509Extension.md))`()` <br /> Gets a Set of the OID strings for the extension(s) marked NON-CRITICAL in the certificate/CRL managed by the object implementing this interface. Here is sample code to get a Set of non-critical extensions from an X509CRL revoked certificate entry and print the OIDs: ```kotlin <code>CertificateFactory cf = null; X509CRL crl = null; try (InputStream inStrm = new FileInputStream("DER-encoded-CRL")) { cf = CertificateFactory.getInstance("X.509"); crl = (X509CRL)cf.generateCRL(inStrm); } byte[] certData = &lt;DER-encoded certificate data&gt; ByteArrayInputStream bais = new ByteArrayInputStream(certData); X509Certificate cert = (X509Certificate)cf.generateCertificate(bais); X509CRLEntry badCert = crl.getRevokedCertificate(cert.getSerialNumber()); if (badCert != null) { Set&lt;String&gt; nonCritSet = badCert.getNonCriticalExtensionOIDs(); if (nonCritSet != null) for (String oid : nonCritSet) { System.out.println(oid); } } </code> ``` <br /> <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasUnsupportedCriticalExtension](../java/security/cert/X509Extension.md))`()` <br /> Check if there is a critical extension that is not supported. <br /> | ||
+| From class [X509Extension](X509Extension.md) |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>! | [getCriticalExtensionOIDs](X509Extension.md))`()` <br /> Gets a Set of the OID strings for the extension(s) marked CRITICAL in the certificate/CRL managed by the object implementing this interface. Here is sample code to get a Set of critical extensions from an X509Certificate and print the OIDs: ```kotlin <code>X509Certificate cert = null; try (InputStream inStrm = new FileInputStream("DER-encoded-Cert")) { CertificateFactory cf = CertificateFactory.getInstance("X.509"); cert = (X509Certificate)cf.generateCertificate(inStrm); } Set&lt;String&gt; critSet = cert.getCriticalExtensionOIDs(); if (critSet != null &amp;&amp; !critSet.isEmpty()) { System.out.println("Set of critical extensions:"); for (String oid : critSet) { System.out.println(oid); } } </code> ``` <br /> <br /> | | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getExtensionValue](X509Extension.md))`(`oid:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> Gets the DER-encoded OCTET string for the extension value (*extnValue* ) identified by the passed-in`oid`String. The`oid`string is represented by a set of nonnegative whole numbers separated by periods. For example: | OID*(Object Identifier)* | Extension Name | | 2.5.29.14 | SubjectKeyIdentifier | | 2.5.29.15 | KeyUsage | | 2.5.29.16 | PrivateKeyUsage | | 2.5.29.17 | SubjectAlternativeName | | 2.5.29.18 | IssuerAlternativeName | | 2.5.29.19 | BasicConstraints | | 2.5.29.30 | NameConstraints | | 2.5.29.33 | PolicyMappings | | 2.5.29.35 | AuthorityKeyIdentifier | | 2.5.29.36 | PolicyConstraints | |--------------------------|------------------------| <br /> | | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>! | [getNonCriticalExtensionOIDs](X509Extension.md))`()` <br /> Gets a Set of the OID strings for the extension(s) marked NON-CRITICAL in the certificate/CRL managed by the object implementing this interface. Here is sample code to get a Set of non-critical extensions from an X509CRL revoked certificate entry and print the OIDs: ```kotlin <code>CertificateFactory cf = null; X509CRL crl = null; try (InputStream inStrm = new FileInputStream("DER-encoded-CRL")) { cf = CertificateFactory.getInstance("X.509"); crl = (X509CRL)cf.generateCRL(inStrm); } byte[] certData = &lt;DER-encoded certificate data&gt; ByteArrayInputStream bais = new ByteArrayInputStream(certData); X509Certificate cert = (X509Certificate)cf.generateCertificate(bais); X509CRLEntry badCert = crl.getRevokedCertificate(cert.getSerialNumber()); if (badCert != null) { Set&lt;String&gt; nonCritSet = badCert.getNonCriticalExtensionOIDs(); if (nonCritSet != null) for (String oid : nonCritSet) { System.out.println(oid); } } </code> ``` <br /> <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasUnsupportedCriticalExtension](X509Extension.md))`()` <br /> Check if there is a critical extension that is not supported. <br /> | ||
 
 ## Public constructors
 
@@ -107,7 +107,7 @@ This method is used with indirect CRLs. The default implementation always return
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
-| [X500Principal](../javax/security/auth/x500/X500Principal.md)! | the issuer of the X509Certificate described by this entry or null if it is issued by the CRL issuer. |
+| [X500Principal](../javax.security.auth.x500/X500Principal.md)! | the issuer of the X509Certificate described by this entry or null if it is issued by the CRL issuer. |
 
 ### getEncoded
 
@@ -139,7 +139,7 @@ Gets the revocation date from this X509CRLEntry, the*revocationDate*.
 
 | Return ||
 |------------------------------------------------------------------------------|----------------------|
-| [Date](../java/util/Date.md)! | the revocation date. |
+| [Date](../java.util/Date.md)! | the revocation date. |
 
 ### getRevocationReason
 
@@ -153,7 +153,7 @@ Returns the reason the certificate has been revoked, as specified in the Reason 
 
 | Return ||
 |-------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| [CRLReason](../java/security/cert/CRLReason.md)! | the reason the certificate has been revoked, or`null`if this CRL entry does not have a Reason Code extension |
+| [CRLReason](CRLReason.md)! | the reason the certificate has been revoked, or`null`if this CRL entry does not have a Reason Code extension |
 
 ### getSerialNumber
 
@@ -167,7 +167,7 @@ Gets the serial number from this X509CRLEntry, the*userCertificate*.
 
 | Return ||
 |------------------------------------------------------------------------------------------|--------------------|
-| [BigInteger](../java/math/BigInteger.md)! | the serial number. |
+| [BigInteger](../java.math/BigInteger.md)! | the serial number. |
 
 ### hasExtensions
 

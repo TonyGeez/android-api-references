@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # Log
 
-Kotlin| [Java](../android/util/Log.md) 
+Kotlin| [Java](Log.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class Log
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.util.Log](../android/util/Log.md) |
+| ↳ | [android.util.Log](Log.md) |
 
 API for sending log output.
 
@@ -45,39 +45,39 @@ Note: The return value from the logging functions in this class may vary between
 
 | Constants ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ASSERT](../android/util/Log.md) Priority constant for the println method. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEBUG](../android/util/Log.md) Priority constant for the println method; use Log. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR](../android/util/Log.md) Priority constant for the println method; use Log. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ASSERT](Log.md) Priority constant for the println method. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEBUG](Log.md) Priority constant for the println method; use Log. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR](Log.md) Priority constant for the println method; use Log. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INFO](../android/util/Log.md) Priority constant for the println method; use Log. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VERBOSE](../android/util/Log.md) Priority constant for the println method; use Log. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WARN](../android/util/Log.md) Priority constant for the println method; use Log. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INFO](Log.md) Priority constant for the println method; use Log. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VERBOSE](Log.md) Priority constant for the println method; use Log. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WARN](Log.md) Priority constant for the println method; use Log. |
 | --- | --- |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [d](../android/util/Log.md))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Send a [DEBUG](../android/util/Log.md) log message. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [d](../android/util/Log.md))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `tr:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?`)` Send a [DEBUG](../android/util/Log.md) log message and log the exception. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [e](../android/util/Log.md))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Send an [ERROR](../android/util/Log.md) log message. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [d](Log.md))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Send a [DEBUG](Log.md) log message. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [d](Log.md))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `tr:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?`)` Send a [DEBUG](Log.md) log message and log the exception. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [e](Log.md))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Send an [ERROR](Log.md) log message. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [e](../android/util/Log.md))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `tr:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?`)` Send a [ERROR](../android/util/Log.md) log message and log the exception. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getStackTraceString](../android/util/Log.md))`(`tr:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?`)` Handy function to get a loggable stack trace from a Throwable |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [i](../android/util/Log.md))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Send an [INFO](../android/util/Log.md) log message. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [e](Log.md))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `tr:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?`)` Send a [ERROR](Log.md) log message and log the exception. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getStackTraceString](Log.md))`(`tr:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?`)` Handy function to get a loggable stack trace from a Throwable |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [i](Log.md))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Send an [INFO](Log.md) log message. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [i](../android/util/Log.md))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `tr:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?`)` Send a [INFO](../android/util/Log.md) log message and log the exception. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLoggable](../android/util/Log.md))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `level:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Checks to see whether or not a log for the specified tag is loggable at the specified level. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [println](../android/util/Log.md))`(`priority:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Low-level logging call. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [i](Log.md))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `tr:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?`)` Send a [INFO](Log.md) log message and log the exception. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLoggable](Log.md))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `level:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Checks to see whether or not a log for the specified tag is loggable at the specified level. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [println](Log.md))`(`priority:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Low-level logging call. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [v](../android/util/Log.md))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Send a [VERBOSE](../android/util/Log.md) log message. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [v](../android/util/Log.md))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `tr:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?`)` Send a [VERBOSE](../android/util/Log.md) log message and log the exception. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [w](../android/util/Log.md))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Send a [WARN](../android/util/Log.md) log message. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [v](Log.md))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Send a [VERBOSE](Log.md) log message. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [v](Log.md))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `tr:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?`)` Send a [VERBOSE](Log.md) log message and log the exception. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [w](Log.md))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Send a [WARN](Log.md) log message. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [w](../android/util/Log.md))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `tr:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?`)` Send a [WARN](../android/util/Log.md) log message and log the exception. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [w](../android/util/Log.md))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `tr:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?`)` Send a [WARN](../android/util/Log.md) log message and log the exception. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [wtf](../android/util/Log.md))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` What a Terrible Failure: Report a condition that should never happen. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [w](Log.md))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `tr:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?`)` Send a [WARN](Log.md) log message and log the exception. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [w](Log.md))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `tr:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?`)` Send a [WARN](Log.md) log message and log the exception. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [wtf](Log.md))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` What a Terrible Failure: Report a condition that should never happen. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [wtf](../android/util/Log.md))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `tr:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?`)` What a Terrible Failure: Report an exception that should never happen. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [wtf](../android/util/Log.md))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `tr:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)`)` What a Terrible Failure: Report an exception that should never happen. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [wtf](Log.md))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `tr:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?`)` What a Terrible Failure: Report an exception that should never happen. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [wtf](Log.md))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `tr:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)`)` What a Terrible Failure: Report an exception that should never happen. |
 
 ## Constants
 
@@ -166,7 +166,7 @@ static fun d(
 ): Int
 ```
 
-Send a [DEBUG](../android/util/Log.md) log message.
+Send a [DEBUG](Log.md) log message.
 
 | Parameters ||
 |-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -175,7 +175,7 @@ Send a [DEBUG](../android/util/Log.md) log message.
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | A positive value if the message was loggable (see [isLoggable](../android/util/Log.md))). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | A positive value if the message was loggable (see [isLoggable](Log.md))). |
 
 ### d
 
@@ -189,7 +189,7 @@ static fun d(
 ): Int
 ```
 
-Send a [DEBUG](../android/util/Log.md) log message and log the exception.
+Send a [DEBUG](Log.md) log message and log the exception.
 
 | Parameters ||
 |-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -200,7 +200,7 @@ Send a [DEBUG](../android/util/Log.md) log message and log the exception.
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | A positive value if the message was loggable (see [isLoggable](../android/util/Log.md))). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | A positive value if the message was loggable (see [isLoggable](Log.md))). |
 
 ### e
 
@@ -213,7 +213,7 @@ static fun e(
 ): Int
 ```
 
-Send an [ERROR](../android/util/Log.md) log message.
+Send an [ERROR](Log.md) log message.
 
 | Parameters ||
 |-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -222,7 +222,7 @@ Send an [ERROR](../android/util/Log.md) log message.
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | A positive value if the message was loggable (see [isLoggable](../android/util/Log.md))). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | A positive value if the message was loggable (see [isLoggable](Log.md))). |
 
 ### e
 
@@ -236,7 +236,7 @@ static fun e(
 ): Int
 ```
 
-Send a [ERROR](../android/util/Log.md) log message and log the exception.
+Send a [ERROR](Log.md) log message and log the exception.
 
 | Parameters ||
 |-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -247,7 +247,7 @@ Send a [ERROR](../android/util/Log.md) log message and log the exception.
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | A positive value if the message was loggable (see [isLoggable](../android/util/Log.md))). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | A positive value if the message was loggable (see [isLoggable](Log.md))). |
 
 ### getStackTraceString
 
@@ -280,7 +280,7 @@ static fun i(
 ): Int
 ```
 
-Send an [INFO](../android/util/Log.md) log message.
+Send an [INFO](Log.md) log message.
 
 | Parameters ||
 |-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -289,7 +289,7 @@ Send an [INFO](../android/util/Log.md) log message.
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | A positive value if the message was loggable (see [isLoggable](../android/util/Log.md))). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | A positive value if the message was loggable (see [isLoggable](Log.md))). |
 
 ### i
 
@@ -303,7 +303,7 @@ static fun i(
 ): Int
 ```
 
-Send a [INFO](../android/util/Log.md) log message and log the exception.
+Send a [INFO](Log.md) log message and log the exception.
 
 | Parameters ||
 |-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -328,7 +328,7 @@ Checks to see whether or not a log for the specified tag is loggable at the spec
 | Parameters ||
 |---------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `tag` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:The tag to check. This value may be`null`. |
-| `level` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The level to check. Value is [android.util.Log#ASSERT](../android/util/Log.md), [android.util.Log#ERROR](../android/util/Log.md), [android.util.Log#WARN](../android/util/Log.md), [android.util.Log#INFO](../android/util/Log.md), [android.util.Log#DEBUG](../android/util/Log.md), or [android.util.Log#VERBOSE](../android/util/Log.md) |
+| `level` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The level to check. Value is [android.util.Log#ASSERT](Log.md), [android.util.Log#ERROR](Log.md), [android.util.Log#WARN](Log.md), [android.util.Log#INFO](Log.md), [android.util.Log#DEBUG](Log.md), or [android.util.Log#VERBOSE](Log.md) |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------------|
@@ -354,14 +354,14 @@ Low-level logging call.
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `priority` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The priority/type of this log message Value is [android.util.Log#ASSERT](../android/util/Log.md), [android.util.Log#ERROR](../android/util/Log.md), [android.util.Log#WARN](../android/util/Log.md), [android.util.Log#INFO](../android/util/Log.md), [android.util.Log#DEBUG](../android/util/Log.md), or [android.util.Log#VERBOSE](../android/util/Log.md) |
+| `priority` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The priority/type of this log message Value is [android.util.Log#ASSERT](Log.md), [android.util.Log#ERROR](Log.md), [android.util.Log#WARN](Log.md), [android.util.Log#INFO](Log.md), [android.util.Log#DEBUG](Log.md), or [android.util.Log#VERBOSE](Log.md) |
 | `tag` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:Used to identify the source of a log message. It usually identifies the class or activity where the log call occurs. This value may be`null`. |
 | `msg` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):The message you would like logged. This value cannot be`null`. |
 | --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | A positive value if the message was loggable (see [isLoggable](../android/util/Log.md))). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | A positive value if the message was loggable (see [isLoggable](Log.md))). |
 
 ### v
 
@@ -374,7 +374,7 @@ static fun v(
 ): Int
 ```
 
-Send a [VERBOSE](../android/util/Log.md) log message.
+Send a [VERBOSE](Log.md) log message.
 
 | Parameters ||
 |-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -383,7 +383,7 @@ Send a [VERBOSE](../android/util/Log.md) log message.
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | A positive value if the message was loggable (see [isLoggable](../android/util/Log.md))). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | A positive value if the message was loggable (see [isLoggable](Log.md))). |
 
 ### v
 
@@ -397,7 +397,7 @@ static fun v(
 ): Int
 ```
 
-Send a [VERBOSE](../android/util/Log.md) log message and log the exception.
+Send a [VERBOSE](Log.md) log message and log the exception.
 
 | Parameters ||
 |-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -408,7 +408,7 @@ Send a [VERBOSE](../android/util/Log.md) log message and log the exception.
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | A positive value if the message was loggable (see [isLoggable](../android/util/Log.md))). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | A positive value if the message was loggable (see [isLoggable](Log.md))). |
 
 ### w
 
@@ -421,7 +421,7 @@ static fun w(
 ): Int
 ```
 
-Send a [WARN](../android/util/Log.md) log message.
+Send a [WARN](Log.md) log message.
 
 | Parameters ||
 |-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -430,7 +430,7 @@ Send a [WARN](../android/util/Log.md) log message.
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | A positive value if the message was loggable (see [isLoggable](../android/util/Log.md))). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | A positive value if the message was loggable (see [isLoggable](Log.md))). |
 
 ### w
 
@@ -444,7 +444,7 @@ static fun w(
 ): Int
 ```
 
-Send a [WARN](../android/util/Log.md) log message and log the exception.
+Send a [WARN](Log.md) log message and log the exception.
 
 | Parameters ||
 |-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -455,7 +455,7 @@ Send a [WARN](../android/util/Log.md) log message and log the exception.
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | A positive value if the message was loggable (see [isLoggable](../android/util/Log.md))). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | A positive value if the message was loggable (see [isLoggable](Log.md))). |
 
 ### w
 
@@ -468,7 +468,7 @@ static fun w(
 ): Int
 ```
 
-Send a [WARN](../android/util/Log.md) log message and log the exception.
+Send a [WARN](Log.md) log message and log the exception.
 
 | Parameters ||
 |-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -477,7 +477,7 @@ Send a [WARN](../android/util/Log.md) log message and log the exception.
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | A positive value if the message was loggable (see [isLoggable](../android/util/Log.md))). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | A positive value if the message was loggable (see [isLoggable](Log.md))). |
 
 ### wtf
 
@@ -490,7 +490,7 @@ static fun wtf(
 ): Int
 ```
 
-What a Terrible Failure: Report a condition that should never happen. The error will always be logged at level ASSERT with the call stack. Depending on system configuration, a report may be added to the [android.os.DropBoxManager](../android/os/DropBoxManager.md) and/or the process may be terminated immediately with an error dialog.
+What a Terrible Failure: Report a condition that should never happen. The error will always be logged at level ASSERT with the call stack. Depending on system configuration, a report may be added to the [android.os.DropBoxManager](../android.os/DropBoxManager.md) and/or the process may be terminated immediately with an error dialog.
 
 | Parameters ||
 |-------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -499,7 +499,7 @@ What a Terrible Failure: Report a condition that should never happen. The error 
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | A positive value if the message was loggable (see [isLoggable](../android/util/Log.md))). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | A positive value if the message was loggable (see [isLoggable](Log.md))). |
 
 ### wtf
 
@@ -513,7 +513,7 @@ static fun wtf(
 ): Int
 ```
 
-What a Terrible Failure: Report an exception that should never happen. Similar to [wtf(java.lang.String,java.lang.Throwable)](../android/util/Log.md)), with a message as well.
+What a Terrible Failure: Report an exception that should never happen. Similar to [wtf(java.lang.String,java.lang.Throwable)](Log.md)), with a message as well.
 
 | Parameters ||
 |-------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -524,7 +524,7 @@ What a Terrible Failure: Report an exception that should never happen. Similar t
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | A positive value if the message was loggable (see [isLoggable](../android/util/Log.md))). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | A positive value if the message was loggable (see [isLoggable](Log.md))). |
 
 ### wtf
 
@@ -537,7 +537,7 @@ static fun wtf(
 ): Int
 ```
 
-What a Terrible Failure: Report an exception that should never happen. Similar to [wtf(java.lang.String,java.lang.String)](../android/util/Log.md)), with an exception to log.
+What a Terrible Failure: Report an exception that should never happen. Similar to [wtf(java.lang.String,java.lang.String)](Log.md)), with an exception to log.
 
 | Parameters ||
 |-------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -546,4 +546,4 @@ What a Terrible Failure: Report an exception that should never happen. Similar t
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | A positive value if the message was loggable (see [isLoggable](../android/util/Log.md))). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | A positive value if the message was loggable (see [isLoggable](Log.md))). |

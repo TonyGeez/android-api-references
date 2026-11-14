@@ -4,7 +4,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 
 # Matrix44
 
-Kotlin| [Java](../android/graphics/Matrix44.md) 
+Kotlin| [Java](Matrix44.md) 
 | --- | --- |
 
 ```
@@ -13,40 +13,40 @@ open class Matrix44
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.graphics.Matrix44](../android/graphics/Matrix44.md) |
+| ↳ | [android.graphics.Matrix44](Matrix44.md) |
 
-The Matrix44 class holds a 4x4 matrix for transforming coordinates. It is similar to [Matrix](../android/graphics/Matrix.md), and should be used when you want to manipulate the canvas in 3D. Values are kept in row-major order. The values and operations are treated as column vectors.
+The Matrix44 class holds a 4x4 matrix for transforming coordinates. It is similar to [Matrix](Matrix.md), and should be used when you want to manipulate the canvas in 3D. Values are kept in row-major order. The values and operations are treated as column vectors.
 
 ## Summary
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Matrix44](../android/graphics/Matrix44.md))`()` The default Matrix44 constructor will instantiate an identity matrix. |
-| [Matrix44](../android/graphics/Matrix44.md))`(`mat:` ` [Matrix](../android/graphics/Matrix.md)`)` Creates and returns a Matrix44 by taking the 3x3 Matrix and placing it on the 0 of the z-axis by setting row`2`and column`2`to the identity as seen in the following operation: ```kotlin [ a b c ] [ a b 0 c ] [ d e f ] -> [ d e 0 f ] [ g h i ] [ 0 0 1 0 ] [ g h 0 i ] ``` <br /> |
+| [Matrix44](Matrix44.md))`()` The default Matrix44 constructor will instantiate an identity matrix. |
+| [Matrix44](Matrix44.md))`(`mat:` ` [Matrix](Matrix.md)`)` Creates and returns a Matrix44 by taking the 3x3 Matrix and placing it on the 0 of the z-axis by setting row`2`and column`2`to the identity as seen in the following operation: ```kotlin [ a b c ] [ a b 0 c ] [ d e f ] -> [ d e 0 f ] [ g h i ] [ 0 0 1 0 ] [ g h 0 i ] ``` <br /> |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Matrix44](../android/graphics/Matrix44.md) | [concat](../android/graphics/Matrix44.md))`(`b:` ` [Matrix44](../android/graphics/Matrix44.md)`)` Multiplies \`this\` matrix (A) and provided Matrix (B) in the order of A \* B. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/graphics/Matrix44.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [get](../android/graphics/Matrix44.md))`(`row:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `col:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the value at the matrix's row and column. |
+| open [Matrix44](Matrix44.md) | [concat](Matrix44.md))`(`b:` ` [Matrix44](Matrix44.md)`)` Multiplies \`this\` matrix (A) and provided Matrix (B) in the order of A \* B. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](Matrix44.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [get](Matrix44.md))`(`row:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `col:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the value at the matrix's row and column. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getValues](../android/graphics/Matrix44.md))`(`dst:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)`)` Copies matrix values into the provided array in row-major order. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/graphics/Matrix44.md))`()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [invert](../android/graphics/Matrix44.md))`()` Inverts the Matrix44, then return true if successful, false if unable to invert. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getValues](Matrix44.md))`(`dst:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)`)` Copies matrix values into the provided array in row-major order. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](Matrix44.md))`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [invert](Matrix44.md))`()` Inverts the Matrix44, then return true if successful, false if unable to invert. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isIdentity](../android/graphics/Matrix44.md))`()` Returns true if Matrix44 is equal to identity matrix. |
-| open [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html) | [map](../android/graphics/Matrix44.md))`(`x:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `y:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `z:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `w:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Multiplies (x, y, z, w) vector by the Matrix44, then returns the new (x, y, z, w). |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [map](../android/graphics/Matrix44.md))`(`x:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `y:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `z:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `w:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `dst:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)`)` Multiplies (x, y, z, w) vector by the Matrix44, then returns the new (x, y, z, w). |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isIdentity](Matrix44.md))`()` Returns true if Matrix44 is equal to identity matrix. |
+| open [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html) | [map](Matrix44.md))`(`x:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `y:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `z:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `w:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Multiplies (x, y, z, w) vector by the Matrix44, then returns the new (x, y, z, w). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [map](Matrix44.md))`(`x:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `y:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `z:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `w:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `dst:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)`)` Multiplies (x, y, z, w) vector by the Matrix44, then returns the new (x, y, z, w). |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](../android/graphics/Matrix44.md))`()` Sets the Matrix44 to the identity matrix. |
-| open [Matrix44](../android/graphics/Matrix44.md) | [rotate](../android/graphics/Matrix44.md))`(`deg:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `xComp:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `yComp:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `zComp:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Applies a rotation around a given axis, then returns self. |
-| open [Matrix44](../android/graphics/Matrix44.md) | [scale](../android/graphics/Matrix44.md))`(`x:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `y:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `z:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Applies scaling factors to \`this\` Matrix44, then returns self. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](Matrix44.md))`()` Sets the Matrix44 to the identity matrix. |
+| open [Matrix44](Matrix44.md) | [rotate](Matrix44.md))`(`deg:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `xComp:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `yComp:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `zComp:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Applies a rotation around a given axis, then returns self. |
+| open [Matrix44](Matrix44.md) | [scale](Matrix44.md))`(`x:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `y:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `z:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Applies scaling factors to \`this\` Matrix44, then returns self. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [set](../android/graphics/Matrix44.md))`(`row:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `col:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `val:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the value at the matrix's row and column to the provided value. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setValues](../android/graphics/Matrix44.md))`(`src:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)`)` Replaces the Matrix's values with the values in the provided array. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/graphics/Matrix44.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [set](Matrix44.md))`(`row:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `col:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `val:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the value at the matrix's row and column to the provided value. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setValues](Matrix44.md))`(`src:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)`)` Replaces the Matrix's values with the values in the provided array. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](Matrix44.md))`()` <br /> |
 | --- | --- |
-| open [Matrix44](../android/graphics/Matrix44.md) | [translate](../android/graphics/Matrix44.md))`(`x:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `y:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `z:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Applies a translation to \`this\` Matrix44, then returns self. |
+| open [Matrix44](Matrix44.md) | [translate](Matrix44.md))`(`x:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `y:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `z:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Applies a translation to \`this\` Matrix44, then returns self. |
 
 ## Public constructors
 
@@ -82,7 +82,7 @@ Creates and returns a Matrix44 by taking the 3x3 Matrix and placing it on the 0 
 
 | Parameters ||
 |-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `mat` | [Matrix](../android/graphics/Matrix.md):A 3x3 Matrix to be converted (original Matrix will not be changed) This value cannot be`null`. |
+| `mat` | [Matrix](Matrix.md):A 3x3 Matrix to be converted (original Matrix will not be changed) This value cannot be`null`. |
 
 ## Public methods
 
@@ -98,11 +98,11 @@ Multiplies \`this\` matrix (A) and provided Matrix (B) in the order of A \* B. T
 
 | Parameters ||
 |-----|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `b` | [Matrix44](../android/graphics/Matrix44.md):The second Matrix in the concatenation operation This value cannot be`null`. |
+| `b` | [Matrix44](Matrix44.md):The second Matrix in the concatenation operation This value cannot be`null`. |
 
 | Return ||
 |---------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
-| [Matrix44](../android/graphics/Matrix44.md) | A reference to this Matrix, which can be used to chain Matrix operations This value cannot be`null`. |
+| [Matrix44](Matrix44.md) | A reference to this Matrix, which can be used to chain Matrix operations This value cannot be`null`. |
 
 ### equals
 
@@ -266,7 +266,7 @@ Applies a rotation around a given axis, then returns self.`x`,`y`,`z`represent t
 
 | Return ||
 |---------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
-| [Matrix44](../android/graphics/Matrix44.md) | A reference to this Matrix, which can be used to chain Matrix operations This value cannot be`null`. |
+| [Matrix44](Matrix44.md) | A reference to this Matrix, which can be used to chain Matrix operations This value cannot be`null`. |
 
 ### scale
 
@@ -291,7 +291,7 @@ Applies scaling factors to \`this\` Matrix44, then returns self. Pass 1s for no 
 
 | Return ||
 |---------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
-| [Matrix44](../android/graphics/Matrix44.md) | A reference to this Matrix, which can be used to chain Matrix operations This value cannot be`null`. |
+| [Matrix44](Matrix44.md) | A reference to this Matrix, which can be used to chain Matrix operations This value cannot be`null`. |
 
 ### set
 
@@ -367,4 +367,4 @@ Applies a translation to \`this\` Matrix44, then returns self.
 
 | Return ||
 |---------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
-| [Matrix44](../android/graphics/Matrix44.md) | A reference to this Matrix, which can be used to chain Matrix operations This value cannot be`null`. |
+| [Matrix44](Matrix44.md) | A reference to this Matrix, which can be used to chain Matrix operations This value cannot be`null`. |

@@ -4,7 +4,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # DeadSystemException
 
-Kotlin| [Java](../android/os/DeadSystemException.md) 
+Kotlin| [Java](DeadSystemException.md) 
 | --- | --- |
 
 ```
@@ -14,12 +14,12 @@ open class DeadSystemException : DeadObjectException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||||
 | --- | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||||
-| | | ↳ | [android.util.AndroidException](../android/util/AndroidException.md) ||||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) |||||
+| | | ↳ | [android.util.AndroidException](../android.util/AndroidException.md) ||||
 | --- | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.os.RemoteException](../android/os/RemoteException.md) |||
-| | | | | ↳ | [android.os.DeadObjectException](../android/os/DeadObjectException.md) ||
-| | | | | | ↳ | [android.os.DeadSystemException](../android/os/DeadSystemException.md) |
+| | | | ↳ | [android.os.RemoteException](RemoteException.md) |||
+| | | | | ↳ | [android.os.DeadObjectException](DeadObjectException.md) ||
+| | | | | | ↳ | [android.os.DeadSystemException](DeadSystemException.md) |
 | --- | --- | --- | --- | --- | --- | --- |
 
 The core Android system has died and is going through a runtime restart. All running apps will be promptly killed.
@@ -28,7 +28,7 @@ The core Android system has died and is going through a runtime restart. All run
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------|---|
-| [DeadSystemException](../android/os/DeadSystemException.md))`()` <br /> |
+| [DeadSystemException](DeadSystemException.md))`()` <br /> |
 
 ## Public constructors
 

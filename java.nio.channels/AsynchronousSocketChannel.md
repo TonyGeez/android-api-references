@@ -8,7 +8,7 @@ abstract class AsynchronousSocketChannel : AsynchronousByteChannel, NetworkCha
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.nio.channels.AsynchronousSocketChannel](../java/nio/channels/AsynchronousSocketChannel.md) |
+| ↳ | [java.nio.channels.AsynchronousSocketChannel](AsynchronousSocketChannel.md) |
 
 An asynchronous channel for stream-oriented connecting sockets.
 
@@ -44,27 +44,27 @@ The `https://developer.android.com/reference/kotlin/java/nio/channels/Asynchrono
 
 | Public methods ||
 |---|---|
-| abstract [AsynchronousSocketChannel](../java/nio/channels/AsynchronousSocketChannel.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel#bind(java.net.SocketAddress)(local: https://developer.android.com/reference/kotlin/java/net/SocketAddress.html#!)` <br /> |
-| abstract [Future](../java/util/concurrent/Future.md)\< [Void](../java/lang/Void.md)!\>! | `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel#connect(java.net.SocketAddress)(remote: https://developer.android.com/reference/kotlin/java/net/SocketAddress.html#!)` Connects this channel. |
+| abstract [AsynchronousSocketChannel](AsynchronousSocketChannel.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel#bind(java.net.SocketAddress)(local: https://developer.android.com/reference/kotlin/java/net/SocketAddress.html#!)` <br /> |
+| abstract [Future](../java.util.concurrent/Future.md)\< [Void](../java.lang/Void.md)!\>! | `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel#connect(java.net.SocketAddress)(remote: https://developer.android.com/reference/kotlin/java/net/SocketAddress.html#!)` Connects this channel. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel#connect(java.net.SocketAddress,%20java.nio.channels.AsynchronousSocketChannel.connect.A,%20java.nio.channels.CompletionHandler)(remote: https://developer.android.com/reference/kotlin/java/net/SocketAddress.html#!, attachment: A, handler: https://developer.android.com/reference/kotlin/java/nio/channels/CompletionHandler<https://developer.android.com/reference/kotlin/java/lang/Void.html#!, in A>!)` Connects this channel. |
 | --- | --- |
-| abstract [SocketAddress](../java/net/SocketAddress.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel#getLocalAddress()()` Returns the socket address that this channel's socket is bound to. |
-| abstract [SocketAddress](../java/net/SocketAddress.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel#getRemoteAddress()()` Returns the remote address to which this channel's socket is connected. |
-| open static [AsynchronousSocketChannel](../java/nio/channels/AsynchronousSocketChannel.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel#open()()` Opens an asynchronous socket channel. |
+| abstract [SocketAddress](../java.net/SocketAddress.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel#getLocalAddress()()` Returns the socket address that this channel's socket is bound to. |
+| abstract [SocketAddress](../java.net/SocketAddress.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel#getRemoteAddress()()` Returns the remote address to which this channel's socket is connected. |
+| open static [AsynchronousSocketChannel](AsynchronousSocketChannel.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel#open()()` Opens an asynchronous socket channel. |
 | --- | --- |
-| open static [AsynchronousSocketChannel](../java/nio/channels/AsynchronousSocketChannel.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel#open(java.nio.channels.AsynchronousChannelGroup)(group: https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousChannelGroup!)` Opens an asynchronous socket channel. |
-| [AsynchronousChannelProvider](../java/nio/channels/spi/AsynchronousChannelProvider.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel#provider()()` Returns the provider that created this channel. |
-| abstract [Future](../java/util/concurrent/Future.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel#read(java.nio.ByteBuffer)(dst: https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#!)` <br /> |
+| open static [AsynchronousSocketChannel](AsynchronousSocketChannel.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel#open(java.nio.channels.AsynchronousChannelGroup)(group: https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousChannelGroup!)` Opens an asynchronous socket channel. |
+| [AsynchronousChannelProvider](../java.nio.channels.spi/AsynchronousChannelProvider.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel#provider()()` Returns the provider that created this channel. |
+| abstract [Future](../java.util.concurrent/Future.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel#read(java.nio.ByteBuffer)(dst: https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#!)` <br /> |
 | --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel#read(java.nio.ByteBuffer,%20java.nio.channels.AsynchronousSocketChannel.read.A,%20java.nio.channels.CompletionHandler)(dst: https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#!, attachment: A, handler: https://developer.android.com/reference/kotlin/java/nio/channels/CompletionHandler<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html!, in A>!)` <br /> |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel#read(java.nio.ByteBuffer,%20kotlin.Long,%20java.util.concurrent.TimeUnit,%20java.nio.channels.AsynchronousSocketChannel.read.A,%20java.nio.channels.CompletionHandler)(dst: https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#!, timeout: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, unit: https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit.html#!, attachment: A, handler: https://developer.android.com/reference/kotlin/java/nio/channels/CompletionHandler<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html!, in A>!)` Reads a sequence of bytes from this channel into the given buffer. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel#read(kotlin.Array,%20kotlin.Int,%20kotlin.Int,%20kotlin.Long,%20java.util.concurrent.TimeUnit,%20java.nio.channels.AsynchronousSocketChannel.read.A,%20java.nio.channels.CompletionHandler)(dsts: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#!>!, offset: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, length: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, timeout: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, unit: https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit.html#!, attachment: A, handler: https://developer.android.com/reference/kotlin/java/nio/channels/CompletionHandler<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html!, in A>!)` Reads a sequence of bytes from this channel into a subsequence of the given buffers. |
 | --- | --- |
-| abstract [AsynchronousSocketChannel](../java/nio/channels/AsynchronousSocketChannel.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel#setOption(java.net.SocketOption,%20java.nio.channels.AsynchronousSocketChannel.setOption.T)(name: https://developer.android.com/reference/kotlin/java/net/SocketOption.html#<T>!, value: T)` <br /> |
-| abstract [AsynchronousSocketChannel](../java/nio/channels/AsynchronousSocketChannel.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel#shutdownInput()()` Shutdown the connection for reading without closing the channel. |
-| abstract [AsynchronousSocketChannel](../java/nio/channels/AsynchronousSocketChannel.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel#shutdownOutput()()` Shutdown the connection for writing without closing the channel. |
+| abstract [AsynchronousSocketChannel](AsynchronousSocketChannel.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel#setOption(java.net.SocketOption,%20java.nio.channels.AsynchronousSocketChannel.setOption.T)(name: https://developer.android.com/reference/kotlin/java/net/SocketOption.html#<T>!, value: T)` <br /> |
+| abstract [AsynchronousSocketChannel](AsynchronousSocketChannel.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel#shutdownInput()()` Shutdown the connection for reading without closing the channel. |
+| abstract [AsynchronousSocketChannel](AsynchronousSocketChannel.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel#shutdownOutput()()` Shutdown the connection for writing without closing the channel. |
 | --- | --- |
-| abstract [Future](../java/util/concurrent/Future.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel#write(java.nio.ByteBuffer)(src: https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#!)` <br /> |
+| abstract [Future](../java.util.concurrent/Future.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel#write(java.nio.ByteBuffer)(src: https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#!)` <br /> |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel#write(java.nio.ByteBuffer,%20java.nio.channels.AsynchronousSocketChannel.write.A,%20java.nio.channels.CompletionHandler)(src: https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#!, attachment: A, handler: https://developer.android.com/reference/kotlin/java/nio/channels/CompletionHandler<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html!, in A>!)` <br /> |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousSocketChannel#write(java.nio.ByteBuffer,%20kotlin.Long,%20java.util.concurrent.TimeUnit,%20java.nio.channels.AsynchronousSocketChannel.write.A,%20java.nio.channels.CompletionHandler)(src: https://developer.android.com/reference/kotlin/java/nio/ByteBuffer.html#!, timeout: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, unit: https://developer.android.com/reference/kotlin/java/util/concurrent/TimeUnit.html#!, attachment: A, handler: https://developer.android.com/reference/kotlin/java/nio/channels/CompletionHandler<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html!, in A>!)` Writes a sequence of bytes to this channel from the given buffer. |
 | --- | --- |
@@ -89,7 +89,7 @@ Initializes a new instance of this class.
 
 | Parameters ||
 |---|---|
-| `provider` | [AsynchronousChannelProvider](../java/nio/channels/spi/AsynchronousChannelProvider.md)!: The provider that created this channel |
+| `provider` | [AsynchronousChannelProvider](../java.nio.channels.spi/AsynchronousChannelProvider.md)!: The provider that created this channel |
 
 ## Public methods
 
@@ -103,7 +103,7 @@ abstract fun bind(local: SocketAddress!): AsynchronousSocketChannel!
 
 | Parameters ||
 |---|---|
-| `local` | [SocketAddress](../java/net/SocketAddress.md)!: The address to bind the socket, or `null` to bind the socket to an automatically assigned socket address |
+| `local` | [SocketAddress](../java.net/SocketAddress.md)!: The address to bind the socket, or `null` to bind the socket to an automatically assigned socket address |
 
 | Return ||
 |---|---|
@@ -134,7 +134,7 @@ This method initiates an operation to connect this channel. This method behaves 
 
 | Parameters ||
 |---|---|
-| `remote` | [SocketAddress](../java/net/SocketAddress.md)!: The remote address to which this channel is to be connected |
+| `remote` | [SocketAddress](../java.net/SocketAddress.md)!: The remote address to which this channel is to be connected |
 
 | Return ||
 |---|---|
@@ -170,10 +170,10 @@ This method performs exactly the same security checks as the `https://developer.
 | Parameters ||
 |---|---|
 | `<A>` | The type of the attachment |
-| `remote` | [SocketAddress](../java/net/SocketAddress.md)!: The remote address to which this channel is to be connected |
+| `remote` | [SocketAddress](../java.net/SocketAddress.md)!: The remote address to which this channel is to be connected |
 | `attachment` | A: The object to attach to the I/O operation; can be `null` |
 | --- | --- |
-| `handler` | [CompletionHandler](../java/nio/channels/CompletionHandler.md)\< [Void](../java/lang/Void.md)!, in A\>!: The handler for consuming the result |
+| `handler` | [CompletionHandler](CompletionHandler.md)\< [Void](../java.lang/Void.md)!, in A\>!: The handler for consuming the result |
 
 | Exceptions ||
 |---|---|
@@ -273,7 +273,7 @@ The new channel is created by invoking the `https://developer.android.com/refere
 
 | Parameters ||
 |---|---|
-| `group` | [AsynchronousChannelGroup](../java/nio/channels/AsynchronousChannelGroup.md)!: The group to which the newly constructed channel should be bound, or `null` for the default group |
+| `group` | [AsynchronousChannelGroup](AsynchronousChannelGroup.md)!: The group to which the newly constructed channel should be bound, or `null` for the default group |
 
 | Return ||
 |---|---|
@@ -308,7 +308,7 @@ abstract fun read(dst: ByteBuffer!): Future<Int!>!
 
 | Parameters ||
 |---|---|
-| `dst` | [ByteBuffer](../java/nio/ByteBuffer.md)!: The buffer into which bytes are to be transferred |
+| `dst` | [ByteBuffer](../java.nio/ByteBuffer.md)!: The buffer into which bytes are to be transferred |
 
 | Return ||
 |---|---|
@@ -336,10 +336,10 @@ fun <A : Any!> read(
 | Parameters ||
 |---|---|
 | `<A>` | The type of the attachment |
-| `dst` | [ByteBuffer](../java/nio/ByteBuffer.md)!: The buffer into which bytes are to be transferred |
+| `dst` | [ByteBuffer](../java.nio/ByteBuffer.md)!: The buffer into which bytes are to be transferred |
 | `attachment` | A: The object to attach to the I/O operation; can be `null` |
 | --- | --- |
-| `handler` | [CompletionHandler](../java/nio/channels/CompletionHandler.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!, in A\>!: The completion handler |
+| `handler` | [CompletionHandler](CompletionHandler.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!, in A\>!: The completion handler |
 
 | Exceptions ||
 |---|---|
@@ -374,12 +374,12 @@ Otherwise this method works in the same manner as the `https://developer.android
 | Parameters ||
 |---|---|
 | `<A>` | The type of the attachment |
-| `dst` | [ByteBuffer](../java/nio/ByteBuffer.md)!: The buffer into which bytes are to be transferred |
+| `dst` | [ByteBuffer](../java.nio/ByteBuffer.md)!: The buffer into which bytes are to be transferred |
 | `timeout` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The maximum time for the I/O operation to complete |
 | --- | --- |
-| `unit` | [TimeUnit](../java/util/concurrent/TimeUnit.md)!: The time unit of the `timeout` argument |
+| `unit` | [TimeUnit](../java.util.concurrent/TimeUnit.md)!: The time unit of the `timeout` argument |
 | `attachment` | A: The object to attach to the I/O operation; can be `null` |
-| `handler` | [CompletionHandler](../java/nio/channels/CompletionHandler.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!, in A\>!: The handler for consuming the result |
+| `handler` | [CompletionHandler](CompletionHandler.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!, in A\>!: The handler for consuming the result |
 | --- | --- |
 
 | Exceptions ||
@@ -424,15 +424,15 @@ If a timeout is specified and the timeout elapses before the operation completes
 | Parameters ||
 |---|---|
 | `<A>` | The type of the attachment |
-| `dsts` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ByteBuffer](../java/nio/ByteBuffer.md)!\>!: The buffers into which bytes are to be transferred |
+| `dsts` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ByteBuffer](../java.nio/ByteBuffer.md)!\>!: The buffers into which bytes are to be transferred |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The offset within the buffer array of the first buffer into which bytes are to be transferred; must be non-negative and no larger than `dsts.length` |
 | --- | --- |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The maximum number of buffers to be accessed; must be non-negative and no larger than `dsts.length - offset` |
 | `timeout` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The maximum time for the I/O operation to complete |
-| `unit` | [TimeUnit](../java/util/concurrent/TimeUnit.md)!: The time unit of the `timeout` argument |
+| `unit` | [TimeUnit](../java.util.concurrent/TimeUnit.md)!: The time unit of the `timeout` argument |
 | --- | --- |
 | `attachment` | A: The object to attach to the I/O operation; can be `null` |
-| `handler` | [CompletionHandler](../java/nio/channels/CompletionHandler.md)\< [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)!, in A\>!: The handler for consuming the result |
+| `handler` | [CompletionHandler](CompletionHandler.md)\< [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)!, in A\>!: The handler for consuming the result |
 
 | Exceptions ||
 |---|---|
@@ -457,7 +457,7 @@ abstract fun <T : Any!> setOption(
 | Parameters ||
 |---|---|
 | `<T>` | The type of the socket option value |
-| `name` | [SocketOption](../java/net/SocketOption.md)\<T\>!: The socket option |
+| `name` | [SocketOption](../java.net/SocketOption.md)\<T\>!: The socket option |
 | `value` | T: The value of the socket option. A value of `null` may be a valid value for some socket options. |
 | --- | --- |
 
@@ -529,7 +529,7 @@ abstract fun write(src: ByteBuffer!): Future<Int!>!
 
 | Parameters ||
 |---|---|
-| `src` | [ByteBuffer](../java/nio/ByteBuffer.md)!: The buffer from which bytes are to be retrieved |
+| `src` | [ByteBuffer](../java.nio/ByteBuffer.md)!: The buffer from which bytes are to be retrieved |
 
 | Return ||
 |---|---|
@@ -555,10 +555,10 @@ fun <A : Any!> write(
 | Parameters ||
 |---|---|
 | `<A>` | The type of the attachment |
-| `src` | [ByteBuffer](../java/nio/ByteBuffer.md)!: The buffer from which bytes are to be retrieved |
+| `src` | [ByteBuffer](../java.nio/ByteBuffer.md)!: The buffer from which bytes are to be retrieved |
 | `attachment` | A: The object to attach to the I/O operation; can be `null` |
 | --- | --- |
-| `handler` | [CompletionHandler](../java/nio/channels/CompletionHandler.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!, in A\>!: The completion handler object |
+| `handler` | [CompletionHandler](CompletionHandler.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!, in A\>!: The completion handler object |
 
 | Exceptions ||
 |---|---|
@@ -592,12 +592,12 @@ Otherwise this method works in the same manner as the `https://developer.android
 | Parameters ||
 |---|---|
 | `<A>` | The type of the attachment |
-| `src` | [ByteBuffer](../java/nio/ByteBuffer.md)!: The buffer from which bytes are to be retrieved |
+| `src` | [ByteBuffer](../java.nio/ByteBuffer.md)!: The buffer from which bytes are to be retrieved |
 | `timeout` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The maximum time for the I/O operation to complete |
 | --- | --- |
-| `unit` | [TimeUnit](../java/util/concurrent/TimeUnit.md)!: The time unit of the `timeout` argument |
+| `unit` | [TimeUnit](../java.util.concurrent/TimeUnit.md)!: The time unit of the `timeout` argument |
 | `attachment` | A: The object to attach to the I/O operation; can be `null` |
-| `handler` | [CompletionHandler](../java/nio/channels/CompletionHandler.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!, in A\>!: The handler for consuming the result |
+| `handler` | [CompletionHandler](CompletionHandler.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!, in A\>!: The handler for consuming the result |
 | --- | --- |
 
 | Exceptions ||
@@ -641,15 +641,15 @@ If a timeout is specified and the timeout elapses before the operation completes
 | Parameters ||
 |---|---|
 | `<A>` | The type of the attachment |
-| `srcs` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ByteBuffer](../java/nio/ByteBuffer.md)!\>!: The buffers from which bytes are to be retrieved |
+| `srcs` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [ByteBuffer](../java.nio/ByteBuffer.md)!\>!: The buffers from which bytes are to be retrieved |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The offset within the buffer array of the first buffer from which bytes are to be retrieved; must be non-negative and no larger than `srcs.length` |
 | --- | --- |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The maximum number of buffers to be accessed; must be non-negative and no larger than `srcs.length - offset` |
 | `timeout` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The maximum time for the I/O operation to complete |
-| `unit` | [TimeUnit](../java/util/concurrent/TimeUnit.md)!: The time unit of the `timeout` argument |
+| `unit` | [TimeUnit](../java.util.concurrent/TimeUnit.md)!: The time unit of the `timeout` argument |
 | --- | --- |
 | `attachment` | A: The object to attach to the I/O operation; can be `null` |
-| `handler` | [CompletionHandler](../java/nio/channels/CompletionHandler.md)\< [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)!, in A\>!: The handler for consuming the result |
+| `handler` | [CompletionHandler](CompletionHandler.md)\< [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)!, in A\>!: The handler for consuming the result |
 
 | Exceptions ||
 |---|---|

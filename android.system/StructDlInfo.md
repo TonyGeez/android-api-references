@@ -4,7 +4,7 @@ Added in [API level 36.1](https://developer.android.com/guide/topics/manifest/us
 
 # StructDlInfo
 
-Kotlin| [Java](../android/system/StructDlInfo.md) 
+Kotlin| [Java](StructDlInfo.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class StructDlInfo
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.system.StructDlInfo](../android/system/StructDlInfo.md) |
+| ↳ | [android.system.StructDlInfo](StructDlInfo.md) |
 
 Corresponds to C's`struct Dl_info`.
 
@@ -21,19 +21,19 @@ Corresponds to C's`struct Dl_info`.
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [StructDlInfo](../android/system/StructDlInfo.md))`(`dli_fname:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `dli_fbase:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `dli_sname:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `dli_saddr:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` <br /> |
+| [StructDlInfo](StructDlInfo.md))`(`dli_fname:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `dli_fbase:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `dli_sname:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `dli_saddr:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` <br /> |
 
 | Public methods ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/system/StructDlInfo.md))`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](StructDlInfo.md))`()` <br /> |
 
 | Properties ||
 |-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [dli_fbase](../android/system/StructDlInfo.md) Base address at which shared object is loaded |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [dli_fname](../android/system/StructDlInfo.md) Pathname of shared object that contains address |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [dli_saddr](../android/system/StructDlInfo.md) Exact address of symbol named in dli_sname |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [dli_fbase](StructDlInfo.md) Base address at which shared object is loaded |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [dli_fname](StructDlInfo.md) Pathname of shared object that contains address |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [dli_saddr](StructDlInfo.md) Exact address of symbol named in dli_sname |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [dli_sname](../android/system/StructDlInfo.md) Name of symbol whose definition overlaps addr |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [dli_sname](StructDlInfo.md) Name of symbol whose definition overlaps addr |
 
 ## Public constructors
 

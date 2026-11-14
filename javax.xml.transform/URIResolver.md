@@ -8,7 +8,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 interface URIResolver
 ```
 
-| [javax.xml.transform.URIResolver](../javax/xml/transform/URIResolver.md) |
+| [javax.xml.transform.URIResolver](URIResolver.md) |
 
 An object that implements this interface that can be called by the processor to turn a URI used in document(), xsl:import, or xsl:include into a Source object.
 
@@ -16,7 +16,7 @@ An object that implements this interface that can be called by the processor to 
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Source](../javax/xml/transform/Source.md)! | [resolve](../javax/xml/transform/URIResolver.md))`(`href:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `base:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Called by the processor when it encounters an xsl:include, xsl:import, or document() function. |
+| abstract [Source](Source.md)! | [resolve](URIResolver.md))`(`href:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `base:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Called by the processor when it encounters an xsl:include, xsl:import, or document() function. |
 
 ## Public methods
 
@@ -40,7 +40,7 @@ Called by the processor when it encounters an xsl:include, xsl:import, or docume
 
 | Return ||
 |--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
-| [Source](../javax/xml/transform/Source.md)! | A Source object, or null if the href cannot be resolved, and the processor should try to resolve the URI itself. |
+| [Source](Source.md)! | A Source object, or null if the href cannot be resolved, and the processor should try to resolve the URI itself. |
 
 | Exceptions ||
 |--------------------------------------------|----------------------------------------------------|

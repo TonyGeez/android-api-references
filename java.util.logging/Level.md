@@ -10,7 +10,7 @@ open class Level : Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.util.logging.Level](../java/util/logging/Level.md) |
+| ↳ | [java.util.logging.Level](Level.md) |
 
 The Level class defines a set of standard logging levels that can be used to control logging output. The logging Level objects are ordered and are specified by ordered integers. Enabling logging at a given level also enables logging at all higher levels.
 
@@ -34,35 +34,35 @@ It is possible for third parties to define additional logging levels by subclass
 
 | Protected constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Level](../java/util/logging/Level.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a named Level with a given integer value. |
-| [Level](../java/util/logging/Level.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `resourceBundleName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Create a named Level with a given integer value and a given localization resource name. |
+| [Level](Level.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a named Level with a given integer value. |
+| [Level](Level.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `resourceBundleName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Create a named Level with a given integer value and a given localization resource name. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/util/logging/Level.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compare two objects for value equality. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getLocalizedName](../java/util/logging/Level.md))`()` Return the localized string name of the Level, for the current default locale. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getName](../java/util/logging/Level.md))`()` Return the non-localized string name of the Level. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](Level.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compare two objects for value equality. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getLocalizedName](Level.md))`()` Return the localized string name of the Level, for the current default locale. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getName](Level.md))`()` Return the non-localized string name of the Level. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getResourceBundleName](../java/util/logging/Level.md))`()` Return the level's localization resource bundle name, or null if no localization bundle is defined. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/util/logging/Level.md))`()` Generate a hashcode. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [intValue](../java/util/logging/Level.md))`()` Get the integer value for this level. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getResourceBundleName](Level.md))`()` Return the level's localization resource bundle name, or null if no localization bundle is defined. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](Level.md))`()` Generate a hashcode. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [intValue](Level.md))`()` Get the integer value for this level. |
 | --- | --- |
-| openstatic [Level](../java/util/logging/Level.md) | [parse](../java/util/logging/Level.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Parse a level name string into a Level. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/util/logging/Level.md))`()` Returns a string representation of this Level. |
+| openstatic [Level](Level.md) | [parse](Level.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Parse a level name string into a Level. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](Level.md))`()` Returns a string representation of this Level. |
 
 | Properties ||
 |----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Level](../java/util/logging/Level.md) | [ALL](../java/util/logging/Level.md) ALL indicates that all messages should be logged. |
-| static [Level](../java/util/logging/Level.md) | [CONFIG](../java/util/logging/Level.md) CONFIG is a message level for static configuration messages. |
-| static [Level](../java/util/logging/Level.md) | [FINE](../java/util/logging/Level.md) FINE is a message level providing tracing information. |
+| static [Level](Level.md) | [ALL](Level.md) ALL indicates that all messages should be logged. |
+| static [Level](Level.md) | [CONFIG](Level.md) CONFIG is a message level for static configuration messages. |
+| static [Level](Level.md) | [FINE](Level.md) FINE is a message level providing tracing information. |
 | --- | --- |
-| static [Level](../java/util/logging/Level.md) | [FINER](../java/util/logging/Level.md) FINER indicates a fairly detailed tracing message. |
-| static [Level](../java/util/logging/Level.md) | [FINEST](../java/util/logging/Level.md) FINEST indicates a highly detailed tracing message. |
-| static [Level](../java/util/logging/Level.md) | [INFO](../java/util/logging/Level.md) INFO is a message level for informational messages. |
+| static [Level](Level.md) | [FINER](Level.md) FINER indicates a fairly detailed tracing message. |
+| static [Level](Level.md) | [FINEST](Level.md) FINEST indicates a highly detailed tracing message. |
+| static [Level](Level.md) | [INFO](Level.md) INFO is a message level for informational messages. |
 | --- | --- |
-| static [Level](../java/util/logging/Level.md) | [OFF](../java/util/logging/Level.md) OFF is a special level that can be used to turn off logging. |
-| static [Level](../java/util/logging/Level.md) | [SEVERE](../java/util/logging/Level.md) SEVERE is a message level indicating a serious failure. |
-| static [Level](../java/util/logging/Level.md) | [WARNING](../java/util/logging/Level.md) WARNING is a message level indicating a potential problem. |
+| static [Level](Level.md) | [OFF](Level.md) OFF is a special level that can be used to turn off logging. |
+| static [Level](Level.md) | [SEVERE](Level.md) SEVERE is a message level indicating a serious failure. |
+| static [Level](Level.md) | [WARNING](Level.md) WARNING is a message level indicating a potential problem. |
 | --- | --- |
 
 ## Protected constructors
@@ -231,7 +231,7 @@ For example:
 
 | Return ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Level](../java/util/logging/Level.md) | The parsed value. Passing an integer that corresponds to a known name (e.g., 700) will return the associated name (e.g.,`CONFIG`). Passing an integer that does not (e.g., 1) will return a new level name initialized to that value. |
+| [Level](Level.md) | The parsed value. Passing an integer that corresponds to a known name (e.g., 700) will return the associated name (e.g.,`CONFIG`). Passing an integer that does not (e.g., 1) will return a new level name initialized to that value. |
 
 | Exceptions ||
 |--------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

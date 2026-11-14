@@ -10,7 +10,7 @@ open class EllipticCurve
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.spec.EllipticCurve](../java/security/spec/EllipticCurve.md) |
+| ↳ | [java.security.spec.EllipticCurve](EllipticCurve.md) |
 
 This immutable class holds the necessary values needed to represent an elliptic curve.
 
@@ -18,18 +18,18 @@ This immutable class holds the necessary values needed to represent an elliptic 
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [EllipticCurve](../java/security/spec/EllipticCurve.md))`(`field:` ` [ECField](../java/security/spec/ECField.md)!`, `a:` ` [BigInteger](../java/math/BigInteger.md)!`, `b:` ` [BigInteger](../java/math/BigInteger.md)!`)` Creates an elliptic curve with the specified elliptic field`field`and the coefficients`a`and`b`. |
-| [EllipticCurve](../java/security/spec/EllipticCurve.md))`(`field:` ` [ECField](../java/security/spec/ECField.md)!`, `a:` ` [BigInteger](../java/math/BigInteger.md)!`, `b:` ` [BigInteger](../java/math/BigInteger.md)!`, `seed:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Creates an elliptic curve with the specified elliptic field`field`, the coefficients`a`and`b`, and the`seed`used for curve generation. |
+| [EllipticCurve](EllipticCurve.md))`(`field:` ` [ECField](ECField.md)!`, `a:` ` [BigInteger](../java.math/BigInteger.md)!`, `b:` ` [BigInteger](../java.math/BigInteger.md)!`)` Creates an elliptic curve with the specified elliptic field`field`and the coefficients`a`and`b`. |
+| [EllipticCurve](EllipticCurve.md))`(`field:` ` [ECField](ECField.md)!`, `a:` ` [BigInteger](../java.math/BigInteger.md)!`, `b:` ` [BigInteger](../java.math/BigInteger.md)!`, `seed:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Creates an elliptic curve with the specified elliptic field`field`, the coefficients`a`and`b`, and the`seed`used for curve generation. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/security/spec/EllipticCurve.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this elliptic curve for equality with the specified object. |
-| open [BigInteger](../java/math/BigInteger.md)! | [getA](../java/security/spec/EllipticCurve.md))`()` Returns the first coefficient`a`of the elliptic curve. |
-| open [BigInteger](../java/math/BigInteger.md)! | [getB](../java/security/spec/EllipticCurve.md))`()` Returns the second coefficient`b`of the elliptic curve. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](EllipticCurve.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this elliptic curve for equality with the specified object. |
+| open [BigInteger](../java.math/BigInteger.md)! | [getA](EllipticCurve.md))`()` Returns the first coefficient`a`of the elliptic curve. |
+| open [BigInteger](../java.math/BigInteger.md)! | [getB](EllipticCurve.md))`()` Returns the second coefficient`b`of the elliptic curve. |
 | --- | --- |
-| open [ECField](../java/security/spec/ECField.md)! | [getField](../java/security/spec/EllipticCurve.md))`()` Returns the finite field`field`that this elliptic curve is over. |
-| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getSeed](../java/security/spec/EllipticCurve.md))`()` Returns the seeding bytes`seed`used during curve generation. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/security/spec/EllipticCurve.md))`()` Returns a hash code value for this elliptic curve. |
+| open [ECField](ECField.md)! | [getField](EllipticCurve.md))`()` Returns the finite field`field`that this elliptic curve is over. |
+| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getSeed](EllipticCurve.md))`()` Returns the seeding bytes`seed`used during curve generation. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](EllipticCurve.md))`()` Returns a hash code value for this elliptic curve. |
 | --- | --- |
 
 ## Public constructors
@@ -49,9 +49,9 @@ Creates an elliptic curve with the specified elliptic field`field`and the coeffi
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------------------------------|
-| `field` | [ECField](../java/security/spec/ECField.md)!:the finite field that this elliptic curve is over. |
-| `a` | [BigInteger](../java/math/BigInteger.md)!:the first coefficient of this elliptic curve. |
-| `b` | [BigInteger](../java/math/BigInteger.md)!:the second coefficient of this elliptic curve. |
+| `field` | [ECField](ECField.md)!:the finite field that this elliptic curve is over. |
+| `a` | [BigInteger](../java.math/BigInteger.md)!:the first coefficient of this elliptic curve. |
+| `b` | [BigInteger](../java.math/BigInteger.md)!:the second coefficient of this elliptic curve. |
 | --- | --- |
 
 | Exceptions ||
@@ -75,9 +75,9 @@ Creates an elliptic curve with the specified elliptic field`field`, the coeffici
 
 | Parameters ||
 |---------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `field` | [ECField](../java/security/spec/ECField.md)!:the finite field that this elliptic curve is over. |
-| `a` | [BigInteger](../java/math/BigInteger.md)!:the first coefficient of this elliptic curve. |
-| `b` | [BigInteger](../java/math/BigInteger.md)!:the second coefficient of this elliptic curve. |
+| `field` | [ECField](ECField.md)!:the finite field that this elliptic curve is over. |
+| `a` | [BigInteger](../java.math/BigInteger.md)!:the first coefficient of this elliptic curve. |
+| `b` | [BigInteger](../java.math/BigInteger.md)!:the second coefficient of this elliptic curve. |
 | --- | --- |
 | `seed` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the bytes used during curve generation for later validation. Contents of this array are copied to protect against subsequent modification. |
 
@@ -118,7 +118,7 @@ Returns the first coefficient`a`of the elliptic curve.
 
 | Return ||
 |------------------------------------------------------------------------------------------|---------------------------|
-| [BigInteger](../java/math/BigInteger.md)! | the first coefficient`a`. |
+| [BigInteger](../java.math/BigInteger.md)! | the first coefficient`a`. |
 
 ### getB
 
@@ -132,7 +132,7 @@ Returns the second coefficient`b`of the elliptic curve.
 
 | Return ||
 |------------------------------------------------------------------------------------------|----------------------------|
-| [BigInteger](../java/math/BigInteger.md)! | the second coefficient`b`. |
+| [BigInteger](../java.math/BigInteger.md)! | the second coefficient`b`. |
 
 ### getField
 
@@ -146,7 +146,7 @@ Returns the finite field`field`that this elliptic curve is over.
 
 | Return ||
 |---------------------------------------------------------------------------------------|------------------------------------------|
-| [ECField](../java/security/spec/ECField.md)! | the field`field`that this curve is over. |
+| [ECField](ECField.md)! | the field`field`that this curve is over. |
 
 ### getSeed
 

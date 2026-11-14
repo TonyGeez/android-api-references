@@ -2,14 +2,14 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 
 # AssetsProvider
 
-Kotlin | [Java](../android/content/res/loader/AssetsProvider.md)
+Kotlin | [Java](AssetsProvider.md)
 | --- | --- |
 
 ```
 interface AssetsProvider
 ```
 
-| [android.content.res.loader.AssetsProvider](../android/content/res/loader/AssetsProvider.md) |
+| [android.content.res.loader.AssetsProvider](AssetsProvider.md) |
 
 Provides callbacks that allow for the value of a file-based resources or assets of a `https://developer.android.com/reference/kotlin/android/content/res/loader/ResourcesProvider` to be specified or overridden.
 
@@ -17,7 +17,7 @@ Provides callbacks that allow for the value of a file-based resources or assets 
 
 | Public methods ||
 |---|---|
-| open [AssetFileDescriptor](../android/content/res/AssetFileDescriptor.md)? | `https://developer.android.com/reference/kotlin/android/content/res/loader/AssetsProvider#loadAssetFd(kotlin.String,%20kotlin.Int)(path: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, accessMode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Callback that allows the value of a file-based resources or asset to be specified or overridden. |
+| open [AssetFileDescriptor](../android.content.res/AssetFileDescriptor.md)? | `https://developer.android.com/reference/kotlin/android/content/res/loader/AssetsProvider#loadAssetFd(kotlin.String,%20kotlin.Int)(path: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, accessMode: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Callback that allows the value of a file-based resources or asset to be specified or overridden. |
 
 ## Public methods
 

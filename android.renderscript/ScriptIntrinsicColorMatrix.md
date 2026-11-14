@@ -5,7 +5,7 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 
 # ScriptIntrinsicColorMatrix
 
-Kotlin| [Java](../android/renderscript/ScriptIntrinsicColorMatrix.md) 
+Kotlin| [Java](ScriptIntrinsicColorMatrix.md) 
 | --- | --- |
 
 ```
@@ -14,37 +14,37 @@ class ScriptIntrinsicColorMatrix : ScriptIntrinsic
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.renderscript.BaseObj](../android/renderscript/BaseObj.md) ||||
-| | ↳ | [android.renderscript.Script](../android/renderscript/Script.md) |||
-| | | ↳ | [android.renderscript.ScriptIntrinsic](../android/renderscript/ScriptIntrinsic.md) ||
+| ↳ | [android.renderscript.BaseObj](BaseObj.md) ||||
+| | ↳ | [android.renderscript.Script](Script.md) |||
+| | | ↳ | [android.renderscript.ScriptIntrinsic](ScriptIntrinsic.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.renderscript.ScriptIntrinsicColorMatrix](../android/renderscript/ScriptIntrinsicColorMatrix.md) |
+| | | | ↳ | [android.renderscript.ScriptIntrinsicColorMatrix](ScriptIntrinsicColorMatrix.md) |
 
 | **This class was deprecated in API level 31.**
 |
 | Renderscript has been deprecated in API level 31. Please refer to the [migration guide](https://developer.android.com/guide/topics/renderscript/migration-guide) for the proposed alternatives.
 
-Intrinsic for applying a color matrix to allocations. If the element type is [Element.DataType.UNSIGNED_8](../android/renderscript/Element.DataType.md), it is converted to [Element.DataType.FLOAT_32](../android/renderscript/Element.DataType.md) and normalized from (0-255) to (0-1). If the incoming vector size is less than four, a [Element.F32_4](../android/renderscript/Element.md))is created by filling the missing vector channels with zero. This value is then multiplied by the 4x4 color matrix as performed by rsMatrixMultiply(), adding a [Element.F32_4](../android/renderscript/Element.md)), and then writing it to the output [Allocation](../android/renderscript/Allocation.md). If the ouptut type is unsigned, the value is normalized from (0-1) to (0-255) and converted. If the output vector size is less than four, the unused channels are discarded. Supported elements types are [Element.U8](../android/renderscript/Element.md)), [android.renderscript.Element#U8_2](../android/renderscript/Element.md)), [Element.U8_3](../android/renderscript/Element.md)), [Element.U8_4](../android/renderscript/Element.md)), [Element.F32](../android/renderscript/Element.md)), [Element.F32_2](../android/renderscript/Element.md)), [android.renderscript.Element#F32_3](../android/renderscript/Element.md)), and [Element.F32_4](../android/renderscript/Element.md)).
+Intrinsic for applying a color matrix to allocations. If the element type is [Element.DataType.UNSIGNED_8](../android/renderscript/Element.DataType.md), it is converted to [Element.DataType.FLOAT_32](../android/renderscript/Element.DataType.md) and normalized from (0-255) to (0-1). If the incoming vector size is less than four, a [Element.F32_4](Element.md))is created by filling the missing vector channels with zero. This value is then multiplied by the 4x4 color matrix as performed by rsMatrixMultiply(), adding a [Element.F32_4](Element.md)), and then writing it to the output [Allocation](Allocation.md). If the ouptut type is unsigned, the value is normalized from (0-1) to (0-255) and converted. If the output vector size is less than four, the unused channels are discarded. Supported elements types are [Element.U8](Element.md)), [android.renderscript.Element#U8_2](Element.md)), [Element.U8_3](Element.md)), [Element.U8_4](Element.md)), [Element.F32](Element.md)), [Element.F32_2](Element.md)), [android.renderscript.Element#F32_3](Element.md)), and [Element.F32_4](Element.md)).
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [ScriptIntrinsicColorMatrix](../android/renderscript/ScriptIntrinsicColorMatrix.md)! | [create](../android/renderscript/ScriptIntrinsicColorMatrix.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`)` Create an intrinsic for applying a color matrix to an allocation. |
-| static [ScriptIntrinsicColorMatrix](../android/renderscript/ScriptIntrinsicColorMatrix.md)! | [create](../android/renderscript/ScriptIntrinsicColorMatrix.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`, `e:` ` [Element](../android/renderscript/Element.md)!`)` Create an intrinsic for applying a color matrix to an allocation. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](../android/renderscript/ScriptIntrinsicColorMatrix.md))`(`ain:` ` [Allocation](../android/renderscript/Allocation.md)!`, `aout:` ` [Allocation](../android/renderscript/Allocation.md)!`)` Invoke the kernel and apply the matrix to each cell of input [Allocation](../android/renderscript/Allocation.md) and copy to the output [Allocation](../android/renderscript/Allocation.md). |
+| static [ScriptIntrinsicColorMatrix](ScriptIntrinsicColorMatrix.md)! | [create](ScriptIntrinsicColorMatrix.md))`(`rs:` ` [RenderScript](RenderScript.md)!`)` Create an intrinsic for applying a color matrix to an allocation. |
+| static [ScriptIntrinsicColorMatrix](ScriptIntrinsicColorMatrix.md)! | [create](ScriptIntrinsicColorMatrix.md))`(`rs:` ` [RenderScript](RenderScript.md)!`, `e:` ` [Element](Element.md)!`)` Create an intrinsic for applying a color matrix to an allocation. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](ScriptIntrinsicColorMatrix.md))`(`ain:` ` [Allocation](Allocation.md)!`, `aout:` ` [Allocation](Allocation.md)!`)` Invoke the kernel and apply the matrix to each cell of input [Allocation](Allocation.md) and copy to the output [Allocation](Allocation.md). |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](../android/renderscript/ScriptIntrinsicColorMatrix.md))`(`ain:` ` [Allocation](../android/renderscript/Allocation.md)!`, `aout:` ` [Allocation](../android/renderscript/Allocation.md)!`, `opt:` ` [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!`)` Invoke the kernel and apply the matrix to each cell of input [Allocation](../android/renderscript/Allocation.md) and copy to the output [Allocation](../android/renderscript/Allocation.md). |
-| [Script.KernelID](../android/renderscript/Script.KernelID.md)! | [getKernelID](../android/renderscript/ScriptIntrinsicColorMatrix.md))`()` Get a KernelID for this intrinsic kernel. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAdd](../android/renderscript/ScriptIntrinsicColorMatrix.md))`(`f:` ` [Float4](../android/renderscript/Float4.md)!`)` Set the value to be added after the color matrix has been applied. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](ScriptIntrinsicColorMatrix.md))`(`ain:` ` [Allocation](Allocation.md)!`, `aout:` ` [Allocation](Allocation.md)!`, `opt:` ` [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!`)` Invoke the kernel and apply the matrix to each cell of input [Allocation](Allocation.md) and copy to the output [Allocation](Allocation.md). |
+| [Script.KernelID](../android/renderscript/Script.KernelID.md)! | [getKernelID](ScriptIntrinsicColorMatrix.md))`()` Get a KernelID for this intrinsic kernel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAdd](ScriptIntrinsicColorMatrix.md))`(`f:` ` [Float4](Float4.md)!`)` Set the value to be added after the color matrix has been applied. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAdd](../android/renderscript/ScriptIntrinsicColorMatrix.md))`(`r:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `g:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `b:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `a:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Set the value to be added after the color matrix has been applied. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setColorMatrix](../android/renderscript/ScriptIntrinsicColorMatrix.md))`(`m:` ` [Matrix3f](../android/renderscript/Matrix3f.md)!`)` Set the color matrix which will be applied to each cell of the image. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setColorMatrix](../android/renderscript/ScriptIntrinsicColorMatrix.md))`(`m:` ` [Matrix4f](../android/renderscript/Matrix4f.md)!`)` Set the color matrix which will be applied to each cell of the image. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAdd](ScriptIntrinsicColorMatrix.md))`(`r:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `g:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `b:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `a:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Set the value to be added after the color matrix has been applied. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setColorMatrix](ScriptIntrinsicColorMatrix.md))`(`m:` ` [Matrix3f](Matrix3f.md)!`)` Set the color matrix which will be applied to each cell of the image. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setColorMatrix](ScriptIntrinsicColorMatrix.md))`(`m:` ` [Matrix4f](Matrix4f.md)!`)` Set the color matrix which will be applied to each cell of the image. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setGreyscale](../android/renderscript/ScriptIntrinsicColorMatrix.md))`()` Set a color matrix to convert from RGB to luminance. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRGBtoYUV](../android/renderscript/ScriptIntrinsicColorMatrix.md))`()` Set the matrix to convert from RGB to YUV with a direct copy of the 4th channel. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setYUVtoRGB](../android/renderscript/ScriptIntrinsicColorMatrix.md))`()` Set the matrix to convert from YUV to RGB with a direct copy of the 4th channel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setGreyscale](ScriptIntrinsicColorMatrix.md))`()` Set a color matrix to convert from RGB to luminance. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRGBtoYUV](ScriptIntrinsicColorMatrix.md))`()` Set the matrix to convert from RGB to YUV with a direct copy of the 4th channel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setYUVtoRGB](ScriptIntrinsicColorMatrix.md))`()` Set the matrix to convert from YUV to RGB with a direct copy of the 4th channel. |
 | --- | --- |
 
 ## Public methods
@@ -64,11 +64,11 @@ Create an intrinsic for applying a color matrix to an allocation.
 
 | Parameters ||
 |------|----------------------------------------------------------------------------------------------------------------------------|
-| `rs` | [RenderScript](../android/renderscript/RenderScript.md)!:The RenderScript context |
+| `rs` | [RenderScript](RenderScript.md)!:The RenderScript context |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------------|----------------------------|
-| [ScriptIntrinsicColorMatrix](../android/renderscript/ScriptIntrinsicColorMatrix.md)! | ScriptIntrinsicColorMatrix |
+| [ScriptIntrinsicColorMatrix](ScriptIntrinsicColorMatrix.md)! | ScriptIntrinsicColorMatrix |
 
 ### create
 
@@ -88,12 +88,12 @@ Create an intrinsic for applying a color matrix to an allocation.
 
 | Parameters ||
 |------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `rs` | [RenderScript](../android/renderscript/RenderScript.md)!:The RenderScript context |
-| `e` | [Element](../android/renderscript/Element.md)!:Element type for inputs and outputs, As of API 19, this parameter is ignored. The Element type check is performed in the kernel launch. |
+| `rs` | [RenderScript](RenderScript.md)!:The RenderScript context |
+| `e` | [Element](Element.md)!:Element type for inputs and outputs, As of API 19, this parameter is ignored. The Element type check is performed in the kernel launch. |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------------|----------------------------|
-| [ScriptIntrinsicColorMatrix](../android/renderscript/ScriptIntrinsicColorMatrix.md)! | ScriptIntrinsicColorMatrix |
+| [ScriptIntrinsicColorMatrix](ScriptIntrinsicColorMatrix.md)! | ScriptIntrinsicColorMatrix |
 
 ### forEach
 
@@ -108,12 +108,12 @@ fun forEach(
 
 **Deprecated:** *Deprecated in Java.*
 
-Invoke the kernel and apply the matrix to each cell of input [Allocation](../android/renderscript/Allocation.md) and copy to the output [Allocation](../android/renderscript/Allocation.md). If the vector size of the input is less than four, the remaining components are treated as zero for the matrix multiply. If the output vector size is less than four, the unused vector components are discarded.
+Invoke the kernel and apply the matrix to each cell of input [Allocation](Allocation.md) and copy to the output [Allocation](Allocation.md). If the vector size of the input is less than four, the remaining components are treated as zero for the matrix multiply. If the output vector size is less than four, the unused vector components are discarded.
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------------------|
-| `ain` | [Allocation](../android/renderscript/Allocation.md)!:Input allocation |
-| `aout` | [Allocation](../android/renderscript/Allocation.md)!:Output allocation |
+| `ain` | [Allocation](Allocation.md)!:Input allocation |
+| `aout` | [Allocation](Allocation.md)!:Output allocation |
 
 ### forEach
 
@@ -130,12 +130,12 @@ fun forEach(
 
 **Deprecated:** *Deprecated in Java.*
 
-Invoke the kernel and apply the matrix to each cell of input [Allocation](../android/renderscript/Allocation.md) and copy to the output [Allocation](../android/renderscript/Allocation.md). If the vector size of the input is less than four, the remaining components are treated as zero for the matrix multiply. If the output vector size is less than four, the unused vector components are discarded.
+Invoke the kernel and apply the matrix to each cell of input [Allocation](Allocation.md) and copy to the output [Allocation](Allocation.md). If the vector size of the input is less than four, the remaining components are treated as zero for the matrix multiply. If the output vector size is less than four, the unused vector components are discarded.
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| `ain` | [Allocation](../android/renderscript/Allocation.md)!:Input allocation |
-| `aout` | [Allocation](../android/renderscript/Allocation.md)!:Output allocation |
+| `ain` | [Allocation](Allocation.md)!:Input allocation |
+| `aout` | [Allocation](Allocation.md)!:Output allocation |
 | `opt` | [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!:LaunchOptions for clipping |
 | --- | --- |
 
@@ -170,7 +170,7 @@ Set the value to be added after the color matrix has been applied. The default v
 
 | Parameters ||
 |-----|---------------------------------------------------------------------------------------------------------------------|
-| `f` | [Float4](../android/renderscript/Float4.md)!:The float4 value to be added. |
+| `f` | [Float4](Float4.md)!:The float4 value to be added. |
 
 ### setAdd
 
@@ -212,7 +212,7 @@ Set the color matrix which will be applied to each cell of the image. This will 
 
 | Parameters ||
 |-----|------------------------------------------------------------------------------------------------------------------|
-| `m` | [Matrix3f](../android/renderscript/Matrix3f.md)!:The 3x3 matrix to set. |
+| `m` | [Matrix3f](Matrix3f.md)!:The 3x3 matrix to set. |
 
 ### setColorMatrix
 
@@ -228,7 +228,7 @@ Set the color matrix which will be applied to each cell of the image.
 
 | Parameters ||
 |-----|------------------------------------------------------------------------------------------------------------------|
-| `m` | [Matrix4f](../android/renderscript/Matrix4f.md)!:The 4x4 matrix to set. |
+| `m` | [Matrix4f](Matrix4f.md)!:The 4x4 matrix to set. |
 
 ### setGreyscale
 

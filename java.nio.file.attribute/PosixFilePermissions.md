@@ -10,17 +10,17 @@ class PosixFilePermissions
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.nio.file.attribute.PosixFilePermissions](../java/nio/file/attribute/PosixFilePermissions.md) |
+| ↳ | [java.nio.file.attribute.PosixFilePermissions](PosixFilePermissions.md) |
 
-This class consists exclusively of static methods that operate on sets of [PosixFilePermission](../java/nio/file/attribute/PosixFilePermission.md) objects.
+This class consists exclusively of static methods that operate on sets of [PosixFilePermission](PosixFilePermission.md) objects.
 
 ## Summary
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [FileAttribute](../java/nio/file/attribute/FileAttribute.md)\< [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [PosixFilePermission](../java/nio/file/attribute/PosixFilePermission.md)!\>!\>! | [asFileAttribute](../java/nio/file/attribute/PosixFilePermissions.md))`(`perms:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [PosixFilePermission](../java/nio/file/attribute/PosixFilePermission.md)!>!`)` Creates a [FileAttribute](../java/nio/file/attribute/FileAttribute.md), encapsulating a copy of the given file permissions, suitable for passing to the [createFile](../java/nio/file/Files.md))or [createDirectory](../java/nio/file/Files.md))methods. |
-| static [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [PosixFilePermission](../java/nio/file/attribute/PosixFilePermission.md)!\>! | [fromString](../java/nio/file/attribute/PosixFilePermissions.md))`(`perms:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the set of permissions corresponding to a given`String`representation. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toString](../java/nio/file/attribute/PosixFilePermissions.md))`(`perms:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [PosixFilePermission](../java/nio/file/attribute/PosixFilePermission.md)!>!`)` Returns the`String`representation of a set of permissions. |
+| static [FileAttribute](FileAttribute.md)\< [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [PosixFilePermission](PosixFilePermission.md)!\>!\>! | [asFileAttribute](PosixFilePermissions.md))`(`perms:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [PosixFilePermission](PosixFilePermission.md)!>!`)` Creates a [FileAttribute](FileAttribute.md), encapsulating a copy of the given file permissions, suitable for passing to the [createFile](../java.nio.file/Files.md))or [createDirectory](../java.nio.file/Files.md))methods. |
+| static [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [PosixFilePermission](PosixFilePermission.md)!\>! | [fromString](PosixFilePermissions.md))`(`perms:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the set of permissions corresponding to a given`String`representation. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toString](PosixFilePermissions.md))`(`perms:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [PosixFilePermission](PosixFilePermission.md)!>!`)` Returns the`String`representation of a set of permissions. |
 | --- | --- |
 
 ## Public methods
@@ -33,15 +33,15 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 static fun asFileAttribute(perms: MutableSet<PosixFilePermission!>!): FileAttribute<MutableSet<PosixFilePermission!>!>!
 ```
 
-Creates a [FileAttribute](../java/nio/file/attribute/FileAttribute.md), encapsulating a copy of the given file permissions, suitable for passing to the [createFile](../java/nio/file/Files.md))or [createDirectory](../java/nio/file/Files.md))methods.
+Creates a [FileAttribute](FileAttribute.md), encapsulating a copy of the given file permissions, suitable for passing to the [createFile](../java.nio.file/Files.md))or [createDirectory](../java.nio.file/Files.md))methods.
 
 | Parameters ||
 |---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `perms` | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [PosixFilePermission](../java/nio/file/attribute/PosixFilePermission.md)!\>!:the set of permissions |
+| `perms` | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [PosixFilePermission](PosixFilePermission.md)!\>!:the set of permissions |
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [FileAttribute](../java/nio/file/attribute/FileAttribute.md)< [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [PosixFilePermission](../java/nio/file/attribute/PosixFilePermission.md)!>!>! | an attribute encapsulating the given file permissions with [name](../java/nio/file/attribute/FileAttribute.md))`"posix:permissions"` |
+| [FileAttribute](FileAttribute.md)< [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [PosixFilePermission](PosixFilePermission.md)!>!>! | an attribute encapsulating the given file permissions with [name](FileAttribute.md))`"posix:permissions"` |
 
 | Exceptions ||
 |--------------------------------|------------------------------------------------------------------------|
@@ -72,7 +72,7 @@ Set<PosixFilePermission> perms = PosixFilePermissions.fromString("rwxr-x---");
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------|
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [PosixFilePermission](../java/nio/file/attribute/PosixFilePermission.md)!>! | the resulting set of permissions |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [PosixFilePermission](PosixFilePermission.md)!>! | the resulting set of permissions |
 
 | Exceptions ||
 |--------------------------------------|-----------------------------------------------------------|
@@ -80,7 +80,7 @@ Set<PosixFilePermission> perms = PosixFilePermissions.fromString("rwxr-x---");
 
 **See Also**
 
-- [#toString(Set)](../java/nio/file/attribute/PosixFilePermissions.md)) 
+- [#toString(Set)](PosixFilePermissions.md)) 
 
 ### toString
 
@@ -90,13 +90,13 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 static fun toString(perms: MutableSet<PosixFilePermission!>!): String!
 ```
 
-Returns the`String`representation of a set of permissions. It is guaranteed that the returned`String`can be parsed by the [fromString](../java/nio/file/attribute/PosixFilePermissions.md))method.
+Returns the`String`representation of a set of permissions. It is guaranteed that the returned`String`can be parsed by the [fromString](PosixFilePermissions.md))method.
 
 If the set contains`null`or elements that are not of type`PosixFilePermission`then these elements are ignored.
 
 | Parameters ||
 |---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `perms` | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [PosixFilePermission](../java/nio/file/attribute/PosixFilePermission.md)!\>!:the set of permissions |
+| `perms` | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [PosixFilePermission](PosixFilePermission.md)!\>!:the set of permissions |
 
 | Return ||
 |-----------------------------------------------------------------------------------|-------------------------------------------------|

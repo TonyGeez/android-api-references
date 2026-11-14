@@ -8,8 +8,8 @@ class UriCustomizationAction : CustomizationAction
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.hardware.input.CustomizationAction](../android/hardware/input/CustomizationAction.md) ||
-| | ↳ | [android.hardware.input.UriCustomizationAction](../android/hardware/input/UriCustomizationAction.md) |
+| ↳ | [android.hardware.input.CustomizationAction](CustomizationAction.md) ||
+| | ↳ | [android.hardware.input.UriCustomizationAction](UriCustomizationAction.md) |
 
 Represents an action that requires an accompanying URI to execute.
 
@@ -32,7 +32,7 @@ Examples include opening a specific file, navigating to a URL, or opening a dire
 |---|---|
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/UriCustomizationAction#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/UriCustomizationAction#getType()()` Gets the action type associated with this customization. |
-| [Uri](../android/net/Uri.md) | `https://developer.android.com/reference/kotlin/android/hardware/input/UriCustomizationAction#getUri()()` Gets the URI for this action. |
+| [Uri](../android.net/Uri.md) | `https://developer.android.com/reference/kotlin/android/hardware/input/UriCustomizationAction#getUri()()` Gets the URI for this action. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/input/UriCustomizationAction#hashCode()()` Returns a hash code value for the object. |
 
@@ -97,7 +97,7 @@ Creates a new `https://developer.android.com/reference/kotlin/android/hardware/i
 | Parameters ||
 |---|---|
 | `actionType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The type of action to create. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/hardware/input/UriCustomizationAction#TYPE_OPEN_FILE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/hardware/input/UriCustomizationAction#TYPE_OPEN_FOLDER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/hardware/input/UriCustomizationAction#TYPE_OPEN_URL:kotlin.Int` |
-| `uri` | [Uri](../android/net/Uri.md): The URI to be opened. This value cannot be `null`. |
+| `uri` | [Uri](../android.net/Uri.md): The URI to be opened. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|

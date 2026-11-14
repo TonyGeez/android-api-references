@@ -8,7 +8,7 @@ class URL : Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.net.URL](../java/net/URL.md) |
+| ↳ | [java.net.URL](URL.md) |
 
 Class `URL` represents a Uniform Resource Locator, a pointer to a "resource" on the World Wide Web. A resource can be something as simple as a file or a directory, or it can be a reference to a more complicated object, such as a query to a database or to a search engine. More information on the types of URLs and their formats can be found at: [*Types of URL*](http://web.archive.org/web/20051219043731/http://archive.ncsa.uiuc.edu/SDG/Software/Mosaic/Demo/url-primer.html)
 
@@ -28,7 +28,7 @@ http://www.example.com:1080/docs/resource1.html
   
 ```
 
-The syntax of `URL` is defined by [*RFC 2396: Uniform Resource Identifiers (URI): Generic Syntax*](http://www.ietf.org/rfc/rfc2396.txt), amended by [*RFC 2732: Format for Literal IPv6 Addresses in URLs*](http://www.ietf.org/rfc/rfc2732.txt). The Literal IPv6 address format also supports scope_ids. The syntax and usage of scope_ids is described [here](../java/net/Inet6Address.md).
+The syntax of `URL` is defined by [*RFC 2396: Uniform Resource Identifiers (URI): Generic Syntax*](http://www.ietf.org/rfc/rfc2396.txt), amended by [*RFC 2732: Format for Literal IPv6 Addresses in URLs*](http://www.ietf.org/rfc/rfc2732.txt). The Literal IPv6 address format also supports scope_ids. The syntax and usage of scope_ids is described [here](Inet6Address.md).
 
 A URL may have appended to it a "fragment", also known as a "ref" or a "reference". The fragment is indicated by the sharp sign character "#" followed by more characters. For example,
 
@@ -102,17 +102,17 @@ The `https://developer.android.com/reference/kotlin/java/net/URLEncoder` and `ht
 | --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/net/URL#getUserInfo()()` Gets the userInfo part of this `URL`. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/URL#hashCode()()` Creates an integer suitable for hash table indexing. |
-| [URLConnection](../java/net/URLConnection.md)! | `https://developer.android.com/reference/kotlin/java/net/URL#openConnection()()` Returns a `https://developer.android.com/reference/kotlin/java/net/URLConnection` instance that represents a connection to the remote object referred to by the `URL`. |
+| [URLConnection](URLConnection.md)! | `https://developer.android.com/reference/kotlin/java/net/URL#openConnection()()` Returns a `https://developer.android.com/reference/kotlin/java/net/URLConnection` instance that represents a connection to the remote object referred to by the `URL`. |
 | --- | --- |
-| [URLConnection](../java/net/URLConnection.md)! | `https://developer.android.com/reference/kotlin/java/net/URL#openConnection(java.net.Proxy)(proxy: https://developer.android.com/reference/kotlin/java/net/Proxy!)` Same as `https://developer.android.com/reference/kotlin/java/net/URL#openConnection()`, except that the connection will be made through the specified proxy; Protocol handlers that do not support proxing will ignore the proxy parameter and make a normal connection. |
-| [InputStream](../java/io/InputStream.md)! | `https://developer.android.com/reference/kotlin/java/net/URL#openStream()()` Opens a connection to this `URL` and returns an `InputStream` for reading from that connection. |
+| [URLConnection](URLConnection.md)! | `https://developer.android.com/reference/kotlin/java/net/URL#openConnection(java.net.Proxy)(proxy: https://developer.android.com/reference/kotlin/java/net/Proxy!)` Same as `https://developer.android.com/reference/kotlin/java/net/URL#openConnection()`, except that the connection will be made through the specified proxy; Protocol handlers that do not support proxing will ignore the proxy parameter and make a normal connection. |
+| [InputStream](../java.io/InputStream.md)! | `https://developer.android.com/reference/kotlin/java/net/URL#openStream()()` Opens a connection to this `URL` and returns an `InputStream` for reading from that connection. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/net/URL#sameFile(java.net.URL)(other: https://developer.android.com/reference/kotlin/java/net/URL#!)` Compares two URLs, excluding the fragment component. |
 | --- | --- |
 | static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/net/URL#setURLStreamHandlerFactory(java.net.URLStreamHandlerFactory)(fac: https://developer.android.com/reference/kotlin/java/net/URLStreamHandlerFactory!)` Sets an application's `URLStreamHandlerFactory`. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/net/URL#toExternalForm()()` Constructs a string representation of this `URL`. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/net/URL#toString()()` Constructs a string representation of this `URL`. |
 | --- | --- |
-| [URI](../java/net/URI.md)! | `https://developer.android.com/reference/kotlin/java/net/URL#toURI()()` Returns a `https://developer.android.com/reference/kotlin/java/net/URI` equivalent to this URL. |
+| [URI](URI.md)! | `https://developer.android.com/reference/kotlin/java/net/URL#toURI()()` Returns a `https://developer.android.com/reference/kotlin/java/net/URI` equivalent to this URL. |
 
 ## Public constructors
 
@@ -236,7 +236,7 @@ If the handler is not null and there is a security manager, the security manager
 | `port` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the port number on the host. |
 | --- | --- |
 | `file` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the file on the host |
-| `handler` | [URLStreamHandler](../java/net/URLStreamHandler.md)!: the stream handler for the URL. |
+| `handler` | [URLStreamHandler](URLStreamHandler.md)!: the stream handler for the URL. |
 
 | Exceptions ||
 |---|---|
@@ -313,7 +313,7 @@ For a more detailed description of URL parsing, refer to RFC2396.
 
 | Parameters ||
 |---|---|
-| `context` | [URL](../java/net/URL.md)!: the context in which to parse the specification. |
+| `context` | [URL](URL.md)!: the context in which to parse the specification. |
 | `spec` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the `String` to parse as a URL. |
 
 | Exceptions ||
@@ -341,9 +341,9 @@ Creates a URL by parsing the given spec with the specified handler within a spec
 
 | Parameters ||
 |---|---|
-| `context` | [URL](../java/net/URL.md)!: the context in which to parse the specification. |
+| `context` | [URL](URL.md)!: the context in which to parse the specification. |
 | `spec` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the `String` to parse as a URL. |
-| `handler` | [URLStreamHandler](../java/net/URLStreamHandler.md)!: the stream handler for the URL. |
+| `handler` | [URLStreamHandler](URLStreamHandler.md)!: the stream handler for the URL. |
 | --- | --- |
 
 | Exceptions ||
@@ -456,7 +456,7 @@ openConnection().getContent(Class[])
 
 | Parameters ||
 |---|---|
-| `classes` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Class](../java/lang/Class.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>!\>!: an array of Java types |
+| `classes` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Class](../java.lang/Class.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>!\>!: an array of Java types |
 
 | Return ||
 |---|---|
@@ -624,9 +624,9 @@ fun openConnection(): URLConnection!
 
 Returns a `https://developer.android.com/reference/kotlin/java/net/URLConnection` instance that represents a connection to the remote object referred to by the `URL`.
 
-A new instance of [URLConnection](../java/net/URLConnection.md) is created every time when invoking the [URLStreamHandler.openConnection(URL)](../java/net/URLStreamHandler.md)) method of the protocol handler for this URL.
+A new instance of [URLConnection](URLConnection.md) is created every time when invoking the [URLStreamHandler.openConnection(URL)](URLStreamHandler.md)) method of the protocol handler for this URL.
 
-It should be noted that a URLConnection instance does not establish the actual network connection on creation. This will happen only when calling [URLConnection.connect()](../java/net/URLConnection.md)).
+It should be noted that a URLConnection instance does not establish the actual network connection on creation. This will happen only when calling [URLConnection.connect()](URLConnection.md)).
 
 If for the URL's protocol (such as HTTP or JAR), there exists a public, specialized URLConnection subclass belonging to one of the following packages or one of their subpackages: java.lang, java.io, java.util, java.net, the connection returned will be of that subclass. For example, for HTTP an HttpURLConnection will be returned, and for JAR a JarURLConnection will be returned.
 
@@ -654,7 +654,7 @@ Same as `https://developer.android.com/reference/kotlin/java/net/URL#openConnect
 
 | Parameters ||
 |---|---|
-| `proxy` | [Proxy](../java/net/Proxy.md)!: the Proxy through which this connection will be made. If direct connection is desired, Proxy.NO_PROXY should be specified. |
+| `proxy` | [Proxy](Proxy.md)!: the Proxy through which this connection will be made. If direct connection is desired, Proxy.NO_PROXY should be specified. |
 
 | Return ||
 |---|---|
@@ -718,7 +718,7 @@ Returns `true` if this `URL` and the `other` argument are equal without taking t
 
 | Parameters ||
 |---|---|
-| `other` | [URL](../java/net/URL.md)!: the `URL` to compare against. |
+| `other` | [URL](URL.md)!: the `URL` to compare against. |
 
 | Return ||
 |---|---|
@@ -740,7 +740,7 @@ If there is a security manager, this method first calls the security manager's `
 
 | Parameters ||
 |---|---|
-| `fac` | [URLStreamHandlerFactory](../java/net/URLStreamHandlerFactory.md)!: the desired factory. |
+| `fac` | [URLStreamHandlerFactory](URLStreamHandlerFactory.md)!: the desired factory. |
 
 | Exceptions ||
 |---|---|

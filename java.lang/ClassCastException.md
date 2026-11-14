@@ -11,10 +11,10 @@ open class ClassCastException : RuntimeException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
-| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) ||
+| | ↳ | [java.lang.Exception](Exception.md) |||
+| | | ↳ | [java.lang.RuntimeException](RuntimeException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.ClassCastException](../java/lang/ClassCastException.md) |
+| | | | ↳ | [java.lang.ClassCastException](ClassCastException.md) |
 
 Thrown to indicate that the code has attempted to cast an object to a subclass of which it is not an instance. For example, the following code generates a`ClassCastException`: 
 
@@ -30,8 +30,8 @@ Object x = new Integer(0);
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ClassCastException](../java/lang/ClassCastException.md))`()` Constructs a`ClassCastException`with no detail message. |
-| [ClassCastException](../java/lang/ClassCastException.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a`ClassCastException`with the specified detail message. |
+| [ClassCastException](ClassCastException.md))`()` Constructs a`ClassCastException`with no detail message. |
+| [ClassCastException](ClassCastException.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a`ClassCastException`with the specified detail message. |
 
 ## Public constructors
 

@@ -8,10 +8,10 @@ open class InputStreamReader : Reader
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.io.Reader](../java/io/Reader.md) ||
-| | ↳ | [java.io.InputStreamReader](../java/io/InputStreamReader.md) |
+| ↳ | [java.io.Reader](Reader.md) ||
+| | ↳ | [java.io.InputStreamReader](InputStreamReader.md) |
 
-| Known Direct Subclasses [FileReader](../java/io/FileReader.md) |---|---| | [FileReader](../java/io/FileReader.md) | Reads text from character files using a default buffer size. | |
+| Known Direct Subclasses [FileReader](FileReader.md) |---|---| | [FileReader](FileReader.md) | Reads text from character files using a default buffer size. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 An InputStreamReader is a bridge from byte streams to character streams: It reads bytes and decodes them into characters using a specified `https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#`. The charset that it uses may be specified by name or may be given explicitly, or the platform's `https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#defaultCharset()` may be accepted.
@@ -68,7 +68,7 @@ Creates an InputStreamReader that uses the `https://developer.android.com/refere
 
 | Parameters ||
 |---|---|
-| `in` | [InputStream](../java/io/InputStream.md)!: An InputStream |
+| `in` | [InputStream](InputStream.md)!: An InputStream |
 
 **See Also**
 
@@ -88,7 +88,7 @@ Creates an InputStreamReader that uses the named charset.
 
 | Parameters ||
 |---|---|
-| `in` | [InputStream](../java/io/InputStream.md)!: An InputStream |
+| `in` | [InputStream](InputStream.md)!: An InputStream |
 | `charsetName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The name of a supported `https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#` |
 
 | Exceptions ||
@@ -109,8 +109,8 @@ Creates an InputStreamReader that uses the given charset.
 
 | Parameters ||
 |---|---|
-| `in` | [InputStream](../java/io/InputStream.md)!: An InputStream |
-| `cs` | [Charset](../java/nio/charset/Charset.md)!: A charset |
+| `in` | [InputStream](InputStream.md)!: An InputStream |
+| `cs` | [Charset](../java.nio.charset/Charset.md)!: A charset |
 
 ### InputStreamReader
 
@@ -126,8 +126,8 @@ Creates an InputStreamReader that uses the given charset decoder.
 
 | Parameters ||
 |---|---|
-| `in` | [InputStream](../java/io/InputStream.md)!: An InputStream |
-| `dec` | [CharsetDecoder](../java/nio/charset/CharsetDecoder.md)!: A charset decoder |
+| `in` | [InputStream](InputStream.md)!: An InputStream |
+| `dec` | [CharsetDecoder](../java.nio.charset/CharsetDecoder.md)!: A charset decoder |
 
 ## Public methods
 
@@ -229,7 +229,7 @@ Attempts to read characters into the specified character buffer. The buffer is u
 | Parameters ||
 |---|---|
 | `cb` | the buffer to read characters into |
-| `target` | [CharBuffer](../java/nio/CharBuffer.md)!: the buffer to read characters into |
+| `target` | [CharBuffer](../java.nio/CharBuffer.md)!: the buffer to read characters into |
 
 | Return ||
 |---|---|

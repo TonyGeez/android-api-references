@@ -5,7 +5,7 @@ Deprecated in [API level 28](https://developer.android.com/guide/topics/manifest
 
 # FragmentTransaction
 
-Kotlin| [Java](../android/app/FragmentTransaction.md) 
+Kotlin| [Java](FragmentTransaction.md) 
 | --- | --- |
 
 ```
@@ -14,7 +14,7 @@ abstract class FragmentTransaction
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.FragmentTransaction](../android/app/FragmentTransaction.md) |
+| ↳ | [android.app.FragmentTransaction](FragmentTransaction.md) |
 
 | **This class was deprecated in API level 28.**
 |
@@ -32,61 +32,61 @@ API for performing a set of Fragment operations.
 
 | Constants ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSIT_ENTER_MASK](../android/app/FragmentTransaction.md) Bit mask that is set for all enter transitions. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSIT_EXIT_MASK](../android/app/FragmentTransaction.md) Bit mask that is set for all exit transitions. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSIT_FRAGMENT_CLOSE](../android/app/FragmentTransaction.md) Fragment is being removed from the stack |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSIT_ENTER_MASK](FragmentTransaction.md) Bit mask that is set for all enter transitions. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSIT_EXIT_MASK](FragmentTransaction.md) Bit mask that is set for all exit transitions. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSIT_FRAGMENT_CLOSE](FragmentTransaction.md) Fragment is being removed from the stack |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSIT_FRAGMENT_FADE](../android/app/FragmentTransaction.md) Fragment should simply fade in or out; that is, no strong navigation associated with it except that it is appearing or disappearing for some reason. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSIT_FRAGMENT_OPEN](../android/app/FragmentTransaction.md) Fragment is being added onto the stack |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSIT_NONE](../android/app/FragmentTransaction.md) No animation for transition. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSIT_FRAGMENT_FADE](FragmentTransaction.md) Fragment should simply fade in or out; that is, no strong navigation associated with it except that it is appearing or disappearing for some reason. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSIT_FRAGMENT_OPEN](FragmentTransaction.md) Fragment is being added onto the stack |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSIT_NONE](FragmentTransaction.md) No animation for transition. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSIT_UNSET](../android/app/FragmentTransaction.md) Not set up for a transition. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSIT_UNSET](FragmentTransaction.md) Not set up for a transition. |
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------|---|
-| [FragmentTransaction](../android/app/FragmentTransaction.md))`()` <br /> |
+| [FragmentTransaction](FragmentTransaction.md))`()` <br /> |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [FragmentTransaction](../android/app/FragmentTransaction.md)! | [add](../android/app/FragmentTransaction.md))`(`fragment:` ` [Fragment](../android/app/Fragment.md)!`, `tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Calls [add(int,android.app.Fragment,java.lang.String)](../android/app/FragmentTransaction.md))with a 0 containerViewId. |
-| abstract [FragmentTransaction](../android/app/FragmentTransaction.md)! | [add](../android/app/FragmentTransaction.md))`(`containerViewId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `fragment:` ` [Fragment](../android/app/Fragment.md)!`)` Calls [add(int,android.app.Fragment,java.lang.String)](../android/app/FragmentTransaction.md))with a null tag. |
-| abstract [FragmentTransaction](../android/app/FragmentTransaction.md)! | [add](../android/app/FragmentTransaction.md))`(`containerViewId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `fragment:` ` [Fragment](../android/app/Fragment.md)!`, `tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Add a fragment to the activity state. |
+| abstract [FragmentTransaction](FragmentTransaction.md)! | [add](FragmentTransaction.md))`(`fragment:` ` [Fragment](Fragment.md)!`, `tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Calls [add(int,android.app.Fragment,java.lang.String)](FragmentTransaction.md))with a 0 containerViewId. |
+| abstract [FragmentTransaction](FragmentTransaction.md)! | [add](FragmentTransaction.md))`(`containerViewId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `fragment:` ` [Fragment](Fragment.md)!`)` Calls [add(int,android.app.Fragment,java.lang.String)](FragmentTransaction.md))with a null tag. |
+| abstract [FragmentTransaction](FragmentTransaction.md)! | [add](FragmentTransaction.md))`(`containerViewId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `fragment:` ` [Fragment](Fragment.md)!`, `tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Add a fragment to the activity state. |
 | --- | --- |
-| abstract [FragmentTransaction](../android/app/FragmentTransaction.md)! | [addSharedElement](../android/app/FragmentTransaction.md))`(`sharedElement:` ` [View](../android/view/View.md)!`, `name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Used with to map a View from a removed or hidden Fragment to a View from a shown or added Fragment. |
-| abstract [FragmentTransaction](../android/app/FragmentTransaction.md)! | [addToBackStack](../android/app/FragmentTransaction.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Add this transaction to the back stack. |
-| abstract [FragmentTransaction](../android/app/FragmentTransaction.md)! | [attach](../android/app/FragmentTransaction.md))`(`fragment:` ` [Fragment](../android/app/Fragment.md)!`)` Re-attach a fragment after it had previously been detached from the UI with [detach(android.app.Fragment)](../android/app/FragmentTransaction.md)). |
+| abstract [FragmentTransaction](FragmentTransaction.md)! | [addSharedElement](FragmentTransaction.md))`(`sharedElement:` ` [View](../android.view/View.md)!`, `name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Used with to map a View from a removed or hidden Fragment to a View from a shown or added Fragment. |
+| abstract [FragmentTransaction](FragmentTransaction.md)! | [addToBackStack](FragmentTransaction.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Add this transaction to the back stack. |
+| abstract [FragmentTransaction](FragmentTransaction.md)! | [attach](FragmentTransaction.md))`(`fragment:` ` [Fragment](Fragment.md)!`)` Re-attach a fragment after it had previously been detached from the UI with [detach(android.app.Fragment)](FragmentTransaction.md)). |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [commit](../android/app/FragmentTransaction.md))`()` Schedules a commit of this transaction. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [commitAllowingStateLoss](../android/app/FragmentTransaction.md))`()` Like [commit](../android/app/FragmentTransaction.md))but allows the commit to be executed after an activity's state is saved. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [commitNow](../android/app/FragmentTransaction.md))`()` Commits this transaction synchronously. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [commit](FragmentTransaction.md))`()` Schedules a commit of this transaction. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [commitAllowingStateLoss](FragmentTransaction.md))`()` Like [commit](FragmentTransaction.md))but allows the commit to be executed after an activity's state is saved. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [commitNow](FragmentTransaction.md))`()` Commits this transaction synchronously. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [commitNowAllowingStateLoss](../android/app/FragmentTransaction.md))`()` Like [commitNow](../android/app/FragmentTransaction.md))but allows the commit to be executed after an activity's state is saved. |
-| abstract [FragmentTransaction](../android/app/FragmentTransaction.md)! | [detach](../android/app/FragmentTransaction.md))`(`fragment:` ` [Fragment](../android/app/Fragment.md)!`)` Detach the given fragment from the UI. |
-| abstract [FragmentTransaction](../android/app/FragmentTransaction.md)! | [disallowAddToBackStack](../android/app/FragmentTransaction.md))`()` Disallow calls to [addToBackStack(java.lang.String)](../android/app/FragmentTransaction.md)). |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [commitNowAllowingStateLoss](FragmentTransaction.md))`()` Like [commitNow](FragmentTransaction.md))but allows the commit to be executed after an activity's state is saved. |
+| abstract [FragmentTransaction](FragmentTransaction.md)! | [detach](FragmentTransaction.md))`(`fragment:` ` [Fragment](Fragment.md)!`)` Detach the given fragment from the UI. |
+| abstract [FragmentTransaction](FragmentTransaction.md)! | [disallowAddToBackStack](FragmentTransaction.md))`()` Disallow calls to [addToBackStack(java.lang.String)](FragmentTransaction.md)). |
 | --- | --- |
-| abstract [FragmentTransaction](../android/app/FragmentTransaction.md)! | [hide](../android/app/FragmentTransaction.md))`(`fragment:` ` [Fragment](../android/app/Fragment.md)!`)` Hides an existing fragment. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAddToBackStackAllowed](../android/app/FragmentTransaction.md))`()` Returns true if this FragmentTransaction is allowed to be added to the back stack. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](../android/app/FragmentTransaction.md))`()` <br /> |
+| abstract [FragmentTransaction](FragmentTransaction.md)! | [hide](FragmentTransaction.md))`(`fragment:` ` [Fragment](Fragment.md)!`)` Hides an existing fragment. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAddToBackStackAllowed](FragmentTransaction.md))`()` Returns true if this FragmentTransaction is allowed to be added to the back stack. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](FragmentTransaction.md))`()` <br /> |
 | --- | --- |
-| abstract [FragmentTransaction](../android/app/FragmentTransaction.md)! | [remove](../android/app/FragmentTransaction.md))`(`fragment:` ` [Fragment](../android/app/Fragment.md)!`)` Remove an existing fragment. |
-| abstract [FragmentTransaction](../android/app/FragmentTransaction.md)! | [replace](../android/app/FragmentTransaction.md))`(`containerViewId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `fragment:` ` [Fragment](../android/app/Fragment.md)!`)` Calls [replace(int,android.app.Fragment,java.lang.String)](../android/app/FragmentTransaction.md))with a null tag. |
-| abstract [FragmentTransaction](../android/app/FragmentTransaction.md)! | [replace](../android/app/FragmentTransaction.md))`(`containerViewId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `fragment:` ` [Fragment](../android/app/Fragment.md)!`, `tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Replace an existing fragment that was added to a container. |
+| abstract [FragmentTransaction](FragmentTransaction.md)! | [remove](FragmentTransaction.md))`(`fragment:` ` [Fragment](Fragment.md)!`)` Remove an existing fragment. |
+| abstract [FragmentTransaction](FragmentTransaction.md)! | [replace](FragmentTransaction.md))`(`containerViewId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `fragment:` ` [Fragment](Fragment.md)!`)` Calls [replace(int,android.app.Fragment,java.lang.String)](FragmentTransaction.md))with a null tag. |
+| abstract [FragmentTransaction](FragmentTransaction.md)! | [replace](FragmentTransaction.md))`(`containerViewId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `fragment:` ` [Fragment](Fragment.md)!`, `tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Replace an existing fragment that was added to a container. |
 | --- | --- |
-| abstract [FragmentTransaction](../android/app/FragmentTransaction.md)! | [runOnCommit](../android/app/FragmentTransaction.md))`(`runnable:` ` [Runnable](../java/lang/Runnable.md)!`)` Add a Runnable to this transaction that will be run after this transaction has been committed. |
-| abstract [FragmentTransaction](../android/app/FragmentTransaction.md)! | [setBreadCrumbShortTitle](../android/app/FragmentTransaction.md))`(`res:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the short title to show as a bread crumb when this transaction is on the back stack, as used by [FragmentBreadCrumbs](../android/app/FragmentBreadCrumbs.md). |
-| abstract [FragmentTransaction](../android/app/FragmentTransaction.md)! | [setBreadCrumbShortTitle](../android/app/FragmentTransaction.md))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Like [setBreadCrumbShortTitle(int)](../android/app/FragmentTransaction.md))but taking a raw string; this method is*not*recommended, as the string can not be changed later if the locale changes. |
+| abstract [FragmentTransaction](FragmentTransaction.md)! | [runOnCommit](FragmentTransaction.md))`(`runnable:` ` [Runnable](../java.lang/Runnable.md)!`)` Add a Runnable to this transaction that will be run after this transaction has been committed. |
+| abstract [FragmentTransaction](FragmentTransaction.md)! | [setBreadCrumbShortTitle](FragmentTransaction.md))`(`res:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the short title to show as a bread crumb when this transaction is on the back stack, as used by [FragmentBreadCrumbs](FragmentBreadCrumbs.md). |
+| abstract [FragmentTransaction](FragmentTransaction.md)! | [setBreadCrumbShortTitle](FragmentTransaction.md))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Like [setBreadCrumbShortTitle(int)](FragmentTransaction.md))but taking a raw string; this method is*not*recommended, as the string can not be changed later if the locale changes. |
 | --- | --- |
-| abstract [FragmentTransaction](../android/app/FragmentTransaction.md)! | [setBreadCrumbTitle](../android/app/FragmentTransaction.md))`(`res:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the full title to show as a bread crumb when this transaction is on the back stack, as used by [FragmentBreadCrumbs](../android/app/FragmentBreadCrumbs.md). |
-| abstract [FragmentTransaction](../android/app/FragmentTransaction.md)! | [setBreadCrumbTitle](../android/app/FragmentTransaction.md))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Like [setBreadCrumbTitle(int)](../android/app/FragmentTransaction.md))but taking a raw string; this method is*not*recommended, as the string can not be changed later if the locale changes. |
-| abstract [FragmentTransaction](../android/app/FragmentTransaction.md)! | [setCustomAnimations](../android/app/FragmentTransaction.md))`(`enter:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `exit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set specific animation resources to run for the fragments that are entering and exiting in this transaction. |
+| abstract [FragmentTransaction](FragmentTransaction.md)! | [setBreadCrumbTitle](FragmentTransaction.md))`(`res:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the full title to show as a bread crumb when this transaction is on the back stack, as used by [FragmentBreadCrumbs](FragmentBreadCrumbs.md). |
+| abstract [FragmentTransaction](FragmentTransaction.md)! | [setBreadCrumbTitle](FragmentTransaction.md))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Like [setBreadCrumbTitle(int)](FragmentTransaction.md))but taking a raw string; this method is*not*recommended, as the string can not be changed later if the locale changes. |
+| abstract [FragmentTransaction](FragmentTransaction.md)! | [setCustomAnimations](FragmentTransaction.md))`(`enter:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `exit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set specific animation resources to run for the fragments that are entering and exiting in this transaction. |
 | --- | --- |
-| abstract [FragmentTransaction](../android/app/FragmentTransaction.md)! | [setCustomAnimations](../android/app/FragmentTransaction.md))`(`enter:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `exit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `popEnter:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `popExit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set specific animation resources to run for the fragments that are entering and exiting in this transaction. |
-| abstract [FragmentTransaction](../android/app/FragmentTransaction.md)! | [setPrimaryNavigationFragment](../android/app/FragmentTransaction.md))`(`fragment:` ` [Fragment](../android/app/Fragment.md)!`)` Set a currently active fragment in this FragmentManager as the primary navigation fragment. |
-| abstract [FragmentTransaction](../android/app/FragmentTransaction.md)! | [setReorderingAllowed](../android/app/FragmentTransaction.md))`(`reorderingAllowed:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets whether or not to allow optimizing operations within and across transactions. |
+| abstract [FragmentTransaction](FragmentTransaction.md)! | [setCustomAnimations](FragmentTransaction.md))`(`enter:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `exit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `popEnter:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `popExit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set specific animation resources to run for the fragments that are entering and exiting in this transaction. |
+| abstract [FragmentTransaction](FragmentTransaction.md)! | [setPrimaryNavigationFragment](FragmentTransaction.md))`(`fragment:` ` [Fragment](Fragment.md)!`)` Set a currently active fragment in this FragmentManager as the primary navigation fragment. |
+| abstract [FragmentTransaction](FragmentTransaction.md)! | [setReorderingAllowed](FragmentTransaction.md))`(`reorderingAllowed:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets whether or not to allow optimizing operations within and across transactions. |
 | --- | --- |
-| abstract [FragmentTransaction](../android/app/FragmentTransaction.md)! | [setTransition](../android/app/FragmentTransaction.md))`(`transit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Select a standard transition animation for this transaction. |
-| abstract [FragmentTransaction](../android/app/FragmentTransaction.md)! | [setTransitionStyle](../android/app/FragmentTransaction.md))`(`styleRes:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set a custom style resource that will be used for resolving transit animations. |
-| abstract [FragmentTransaction](../android/app/FragmentTransaction.md)! | [show](../android/app/FragmentTransaction.md))`(`fragment:` ` [Fragment](../android/app/Fragment.md)!`)` Shows a previously hidden fragment. |
+| abstract [FragmentTransaction](FragmentTransaction.md)! | [setTransition](FragmentTransaction.md))`(`transit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Select a standard transition animation for this transaction. |
+| abstract [FragmentTransaction](FragmentTransaction.md)! | [setTransitionStyle](FragmentTransaction.md))`(`styleRes:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set a custom style resource that will be used for resolving transit animations. |
+| abstract [FragmentTransaction](FragmentTransaction.md)! | [show](FragmentTransaction.md))`(`fragment:` ` [Fragment](Fragment.md)!`)` Shows a previously hidden fragment. |
 | --- | --- |
 
 ## Constants
@@ -212,7 +212,7 @@ abstract fun add(
 
 **Deprecated:** *Deprecated in Java.*
 
-Calls [add(int,android.app.Fragment,java.lang.String)](../android/app/FragmentTransaction.md))with a 0 containerViewId. 
+Calls [add(int,android.app.Fragment,java.lang.String)](FragmentTransaction.md))with a 0 containerViewId. 
 
 ### add
 
@@ -227,7 +227,7 @@ abstract fun add(
 
 **Deprecated:** *Deprecated in Java.*
 
-Calls [add(int,android.app.Fragment,java.lang.String)](../android/app/FragmentTransaction.md))with a null tag. 
+Calls [add(int,android.app.Fragment,java.lang.String)](FragmentTransaction.md))with a null tag. 
 
 ### add
 
@@ -243,18 +243,18 @@ abstract fun add(
 
 **Deprecated:** *Deprecated in Java.*
 
-Add a fragment to the activity state. This fragment may optionally also have its view (if [Fragment.onCreateView](../android/app/Fragment.md))returns non-null) inserted into a container view of the activity.
+Add a fragment to the activity state. This fragment may optionally also have its view (if [Fragment.onCreateView](Fragment.md))returns non-null) inserted into a container view of the activity.
 
 | Parameters ||
 |-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `containerViewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Optional identifier of the container this fragment is to be placed in. If 0, it will not be placed in a container. |
-| `fragment` | [Fragment](../android/app/Fragment.md)!:The fragment to be added. This fragment must not already be added to the activity. |
-| `tag` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Optional tag name for the fragment, to later retrieve the fragment with [FragmentManager.findFragmentByTag(String)](../android/app/FragmentManager.md)). |
+| `fragment` | [Fragment](Fragment.md)!:The fragment to be added. This fragment must not already be added to the activity. |
+| `tag` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Optional tag name for the fragment, to later retrieve the fragment with [FragmentManager.findFragmentByTag(String)](FragmentManager.md)). |
 | --- | --- |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------|------------------------------------------------|
-| [FragmentTransaction](../android/app/FragmentTransaction.md)! | Returns the same FragmentTransaction instance. |
+| [FragmentTransaction](FragmentTransaction.md)! | Returns the same FragmentTransaction instance. |
 
 ### addSharedElement
 
@@ -274,7 +274,7 @@ Used with to map a View from a removed or hidden Fragment to a View from a shown
 
 | Parameters ||
 |-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `sharedElement` | [View](../android/view/View.md)!:A View in a disappearing Fragment to match with a View in an appearing Fragment. |
+| `sharedElement` | [View](../android.view/View.md)!:A View in a disappearing Fragment to match with a View in an appearing Fragment. |
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The transitionName for a View in an appearing Fragment to match to the shared element. |
 
 ### addToBackStack
@@ -304,15 +304,15 @@ abstract fun attach(fragment: Fragment!): FragmentTransaction!
 
 **Deprecated:** *Deprecated in Java.*
 
-Re-attach a fragment after it had previously been detached from the UI with [detach(android.app.Fragment)](../android/app/FragmentTransaction.md)). This causes its view hierarchy to be re-created, attached to the UI, and displayed.
+Re-attach a fragment after it had previously been detached from the UI with [detach(android.app.Fragment)](FragmentTransaction.md)). This causes its view hierarchy to be re-created, attached to the UI, and displayed.
 
 | Parameters ||
 |------------|---------------------------------------------------------------------------------------------------------------|
-| `fragment` | [Fragment](../android/app/Fragment.md)!:The fragment to be attached. |
+| `fragment` | [Fragment](Fragment.md)!:The fragment to be attached. |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------|------------------------------------------------|
-| [FragmentTransaction](../android/app/FragmentTransaction.md)! | Returns the same FragmentTransaction instance. |
+| [FragmentTransaction](FragmentTransaction.md)! | Returns the same FragmentTransaction instance. |
 
 ### commit
 
@@ -326,11 +326,11 @@ abstract fun commit(): Int
 
 Schedules a commit of this transaction. The commit does not happen immediately; it will be scheduled as work on the main thread to be done the next time that thread is ready.
 
-A transaction can only be committed with this method prior to its containing activity saving its state. If the commit is attempted after that point, an exception will be thrown. This is because the state after the commit can be lost if the activity needs to be restored from its state. See [commitAllowingStateLoss()](../android/app/FragmentTransaction.md))for situations where it may be okay to lose the commit.
+A transaction can only be committed with this method prior to its containing activity saving its state. If the commit is attempted after that point, an exception will be thrown. This is because the state after the commit can be lost if the activity needs to be restored from its state. See [commitAllowingStateLoss()](FragmentTransaction.md))for situations where it may be okay to lose the commit.
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Returns the identifier of this transaction's back stack entry, if [addToBackStack(java.lang.String)](../android/app/FragmentTransaction.md))had been called. Otherwise, returns a negative number. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Returns the identifier of this transaction's back stack entry, if [addToBackStack(java.lang.String)](FragmentTransaction.md))had been called. Otherwise, returns a negative number. |
 
 ### commitAllowingStateLoss
 
@@ -342,7 +342,7 @@ abstract fun commitAllowingStateLoss(): Int
 
 **Deprecated:** *Deprecated in Java.*
 
-Like [commit](../android/app/FragmentTransaction.md))but allows the commit to be executed after an activity's state is saved. This is dangerous because the commit can be lost if the activity needs to later be restored from its state, so this should only be used for cases where it is okay for the UI state to change unexpectedly on the user. 
+Like [commit](FragmentTransaction.md))but allows the commit to be executed after an activity's state is saved. This is dangerous because the commit can be lost if the activity needs to later be restored from its state, so this should only be used for cases where it is okay for the UI state to change unexpectedly on the user. 
 
 ### commitNow
 
@@ -357,11 +357,11 @@ abstract fun commitNow(): Unit
 
 Commits this transaction synchronously. Any added fragments will be initialized and brought completely to the lifecycle state of their host and any removed fragments will be torn down accordingly before this call returns. Committing a transaction in this way allows fragments to be added as dedicated, encapsulated components that monitor the lifecycle state of their host while providing firmer ordering guarantees around when those fragments are fully initialized and ready. Fragments that manage views will have those views created and attached.
 
-Calling`commitNow`is preferable to calling [commit()](../android/app/FragmentTransaction.md))followed by [FragmentManager.executePendingTransactions()](../android/app/FragmentManager.md))as the latter will have the side effect of attempting to commit*all*currently pending transactions whether that is the desired behavior or not.
+Calling`commitNow`is preferable to calling [commit()](FragmentTransaction.md))followed by [FragmentManager.executePendingTransactions()](FragmentManager.md))as the latter will have the side effect of attempting to commit*all*currently pending transactions whether that is the desired behavior or not.
 
-Transactions committed in this way may not be added to the FragmentManager's back stack, as doing so would break other expected ordering guarantees for other asynchronously committed transactions. This method will throw [IllegalStateException](../java/lang/IllegalStateException.md) if the transaction previously requested to be added to the back stack with [addToBackStack(java.lang.String)](../android/app/FragmentTransaction.md)).
+Transactions committed in this way may not be added to the FragmentManager's back stack, as doing so would break other expected ordering guarantees for other asynchronously committed transactions. This method will throw [IllegalStateException](../java.lang/IllegalStateException.md) if the transaction previously requested to be added to the back stack with [addToBackStack(java.lang.String)](FragmentTransaction.md)).
 
-A transaction can only be committed with this method prior to its containing activity saving its state. If the commit is attempted after that point, an exception will be thrown. This is because the state after the commit can be lost if the activity needs to be restored from its state. See [commitAllowingStateLoss()](../android/app/FragmentTransaction.md))for situations where it may be okay to lose the commit. 
+A transaction can only be committed with this method prior to its containing activity saving its state. If the commit is attempted after that point, an exception will be thrown. This is because the state after the commit can be lost if the activity needs to be restored from its state. See [commitAllowingStateLoss()](FragmentTransaction.md))for situations where it may be okay to lose the commit. 
 
 ### commitNowAllowingStateLoss
 
@@ -374,7 +374,7 @@ abstract fun commitNowAllowingStateLoss(): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Like [commitNow](../android/app/FragmentTransaction.md))but allows the commit to be executed after an activity's state is saved. This is dangerous because the commit can be lost if the activity needs to later be restored from its state, so this should only be used for cases where it is okay for the UI state to change unexpectedly on the user. 
+Like [commitNow](FragmentTransaction.md))but allows the commit to be executed after an activity's state is saved. This is dangerous because the commit can be lost if the activity needs to later be restored from its state, so this should only be used for cases where it is okay for the UI state to change unexpectedly on the user. 
 
 ### detach
 
@@ -391,11 +391,11 @@ Detach the given fragment from the UI. This is the same state as when it is put 
 
 | Parameters ||
 |------------|---------------------------------------------------------------------------------------------------------------|
-| `fragment` | [Fragment](../android/app/Fragment.md)!:The fragment to be detached. |
+| `fragment` | [Fragment](Fragment.md)!:The fragment to be detached. |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------|------------------------------------------------|
-| [FragmentTransaction](../android/app/FragmentTransaction.md)! | Returns the same FragmentTransaction instance. |
+| [FragmentTransaction](FragmentTransaction.md)! | Returns the same FragmentTransaction instance. |
 
 ### disallowAddToBackStack
 
@@ -407,7 +407,7 @@ abstract fun disallowAddToBackStack(): FragmentTransaction!
 
 **Deprecated:** *Deprecated in Java.*
 
-Disallow calls to [addToBackStack(java.lang.String)](../android/app/FragmentTransaction.md)). Any future calls to addToBackStack will throw [IllegalStateException](../java/lang/IllegalStateException.md). If addToBackStack has already been called, this method will throw IllegalStateException. 
+Disallow calls to [addToBackStack(java.lang.String)](FragmentTransaction.md)). Any future calls to addToBackStack will throw [IllegalStateException](../java.lang/IllegalStateException.md). If addToBackStack has already been called, this method will throw IllegalStateException. 
 
 ### hide
 
@@ -423,11 +423,11 @@ Hides an existing fragment. This is only relevant for fragments whose views have
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------|
-| `fragment` | [Fragment](../android/app/Fragment.md)!:The fragment to be hidden. |
+| `fragment` | [Fragment](Fragment.md)!:The fragment to be hidden. |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------|------------------------------------------------|
-| [FragmentTransaction](../android/app/FragmentTransaction.md)! | Returns the same FragmentTransaction instance. |
+| [FragmentTransaction](FragmentTransaction.md)! | Returns the same FragmentTransaction instance. |
 
 ### isAddToBackStackAllowed
 
@@ -439,11 +439,11 @@ abstract fun isAddToBackStackAllowed(): Boolean
 
 **Deprecated:** *Deprecated in Java.*
 
-Returns true if this FragmentTransaction is allowed to be added to the back stack. If this method would return false, [addToBackStack(java.lang.String)](../android/app/FragmentTransaction.md))will throw [IllegalStateException](../java/lang/IllegalStateException.md).
+Returns true if this FragmentTransaction is allowed to be added to the back stack. If this method would return false, [addToBackStack(java.lang.String)](FragmentTransaction.md))will throw [IllegalStateException](../java.lang/IllegalStateException.md).
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | True if [addToBackStack(java.lang.String)](../android/app/FragmentTransaction.md))is permitted on this transaction. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | True if [addToBackStack(java.lang.String)](FragmentTransaction.md))is permitted on this transaction. |
 
 ### isEmpty
 
@@ -473,11 +473,11 @@ Remove an existing fragment. If it was added to a container, its view is also re
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------|
-| `fragment` | [Fragment](../android/app/Fragment.md)!:The fragment to be removed. |
+| `fragment` | [Fragment](Fragment.md)!:The fragment to be removed. |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------|------------------------------------------------|
-| [FragmentTransaction](../android/app/FragmentTransaction.md)! | Returns the same FragmentTransaction instance. |
+| [FragmentTransaction](FragmentTransaction.md)! | Returns the same FragmentTransaction instance. |
 
 ### replace
 
@@ -492,7 +492,7 @@ abstract fun replace(
 
 **Deprecated:** *Deprecated in Java.*
 
-Calls [replace(int,android.app.Fragment,java.lang.String)](../android/app/FragmentTransaction.md))with a null tag. 
+Calls [replace(int,android.app.Fragment,java.lang.String)](FragmentTransaction.md))with a null tag. 
 
 ### replace
 
@@ -508,18 +508,18 @@ abstract fun replace(
 
 **Deprecated:** *Deprecated in Java.*
 
-Replace an existing fragment that was added to a container. This is essentially the same as calling [remove(android.app.Fragment)](../android/app/FragmentTransaction.md))for all currently added fragments that were added with the same containerViewId and then [add(int,android.app.Fragment,java.lang.String)](../android/app/FragmentTransaction.md))with the same arguments given here.
+Replace an existing fragment that was added to a container. This is essentially the same as calling [remove(android.app.Fragment)](FragmentTransaction.md))for all currently added fragments that were added with the same containerViewId and then [add(int,android.app.Fragment,java.lang.String)](FragmentTransaction.md))with the same arguments given here.
 
 | Parameters ||
 |-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `containerViewId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Identifier of the container whose fragment(s) are to be replaced. |
-| `fragment` | [Fragment](../android/app/Fragment.md)!:The new fragment to place in the container. |
-| `tag` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Optional tag name for the fragment, to later retrieve the fragment with [FragmentManager.findFragmentByTag(String)](../android/app/FragmentManager.md)). |
+| `fragment` | [Fragment](Fragment.md)!:The new fragment to place in the container. |
+| `tag` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Optional tag name for the fragment, to later retrieve the fragment with [FragmentManager.findFragmentByTag(String)](FragmentManager.md)). |
 | --- | --- |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------|------------------------------------------------|
-| [FragmentTransaction](../android/app/FragmentTransaction.md)! | Returns the same FragmentTransaction instance. |
+| [FragmentTransaction](FragmentTransaction.md)! | Returns the same FragmentTransaction instance. |
 
 ### runOnCommit
 
@@ -532,23 +532,23 @@ abstract fun runOnCommit(runnable: Runnable!): FragmentTransaction!
 
 **Deprecated:** *Deprecated in Java.*
 
-Add a Runnable to this transaction that will be run after this transaction has been committed. If fragment transactions are [optimized](../android/app/FragmentTransaction.md))this may be after other subsequent fragment operations have also taken place, or operations in this transaction may have been optimized out due to the presence of a subsequent fragment transaction in the batch.
+Add a Runnable to this transaction that will be run after this transaction has been committed. If fragment transactions are [optimized](FragmentTransaction.md))this may be after other subsequent fragment operations have also taken place, or operations in this transaction may have been optimized out due to the presence of a subsequent fragment transaction in the batch.
 
-If a transaction is committed using [commitAllowingStateLoss()](../android/app/FragmentTransaction.md))this runnable may be executed when the FragmentManager is in a state where new transactions may not be committed without allowing state loss.
+If a transaction is committed using [commitAllowingStateLoss()](FragmentTransaction.md))this runnable may be executed when the FragmentManager is in a state where new transactions may not be committed without allowing state loss.
 
-`runOnCommit`may not be used with transactions [added to the back stack](../android/app/FragmentTransaction.md))as Runnables cannot be persisted with back stack state. [IllegalStateException](../java/lang/IllegalStateException.md) will be thrown if [addToBackStack(java.lang.String)](../android/app/FragmentTransaction.md))has been previously called for this transaction or if it is called after a call to`runOnCommit`.
+`runOnCommit`may not be used with transactions [added to the back stack](FragmentTransaction.md))as Runnables cannot be persisted with back stack state. [IllegalStateException](../java.lang/IllegalStateException.md) will be thrown if [addToBackStack(java.lang.String)](FragmentTransaction.md))has been previously called for this transaction or if it is called after a call to`runOnCommit`.
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------|
-| `runnable` | [Runnable](../java/lang/Runnable.md)!:Runnable to add |
+| `runnable` | [Runnable](../java.lang/Runnable.md)!:Runnable to add |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------|--------------------------|
-| [FragmentTransaction](../android/app/FragmentTransaction.md)! | this FragmentTransaction |
+| [FragmentTransaction](FragmentTransaction.md)! | this FragmentTransaction |
 
 | Exceptions ||
 |-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.IllegalStateException` | if [addToBackStack(java.lang.String)](../android/app/FragmentTransaction.md))has been called |
+| `java.lang.IllegalStateException` | if [addToBackStack(java.lang.String)](FragmentTransaction.md))has been called |
 
 ### setBreadCrumbShortTitle
 
@@ -560,7 +560,7 @@ abstract fun setBreadCrumbShortTitle(res: Int): FragmentTransaction!
 
 **Deprecated:** *Deprecated in Java.*
 
-Set the short title to show as a bread crumb when this transaction is on the back stack, as used by [FragmentBreadCrumbs](../android/app/FragmentBreadCrumbs.md).
+Set the short title to show as a bread crumb when this transaction is on the back stack, as used by [FragmentBreadCrumbs](FragmentBreadCrumbs.md).
 
 | Parameters ||
 |-------|--------------------------------------------------------------------------------------------------------------------|
@@ -576,7 +576,7 @@ abstract fun setBreadCrumbShortTitle(text: CharSequence!): FragmentTransaction!
 
 **Deprecated:** *Deprecated in Java.*
 
-Like [setBreadCrumbShortTitle(int)](../android/app/FragmentTransaction.md))but taking a raw string; this method is*not*recommended, as the string can not be changed later if the locale changes. 
+Like [setBreadCrumbShortTitle(int)](FragmentTransaction.md))but taking a raw string; this method is*not*recommended, as the string can not be changed later if the locale changes. 
 
 ### setBreadCrumbTitle
 
@@ -588,7 +588,7 @@ abstract fun setBreadCrumbTitle(res: Int): FragmentTransaction!
 
 **Deprecated:** *Deprecated in Java.*
 
-Set the full title to show as a bread crumb when this transaction is on the back stack, as used by [FragmentBreadCrumbs](../android/app/FragmentBreadCrumbs.md).
+Set the full title to show as a bread crumb when this transaction is on the back stack, as used by [FragmentBreadCrumbs](FragmentBreadCrumbs.md).
 
 | Parameters ||
 |-------|--------------------------------------------------------------------------------------------------------------------|
@@ -604,7 +604,7 @@ abstract fun setBreadCrumbTitle(text: CharSequence!): FragmentTransaction!
 
 **Deprecated:** *Deprecated in Java.*
 
-Like [setBreadCrumbTitle(int)](../android/app/FragmentTransaction.md))but taking a raw string; this method is*not*recommended, as the string can not be changed later if the locale changes. 
+Like [setBreadCrumbTitle(int)](FragmentTransaction.md))but taking a raw string; this method is*not*recommended, as the string can not be changed later if the locale changes. 
 
 ### setCustomAnimations
 
@@ -652,17 +652,17 @@ abstract fun setPrimaryNavigationFragment(fragment: Fragment!): FragmentTransac
 
 Set a currently active fragment in this FragmentManager as the primary navigation fragment.
 
-The primary navigation fragment's [child FragmentManager](../android/app/Fragment.md))will be called first to process delegated navigation actions such as [FragmentManager.popBackStack()](../android/app/FragmentManager.md))if no ID or transaction name is provided to pop to. Navigation operations outside of the fragment system may choose to delegate those actions to the primary navigation fragment as returned by [FragmentManager.getPrimaryNavigationFragment()](../android/app/FragmentManager.md)).
+The primary navigation fragment's [child FragmentManager](Fragment.md))will be called first to process delegated navigation actions such as [FragmentManager.popBackStack()](FragmentManager.md))if no ID or transaction name is provided to pop to. Navigation operations outside of the fragment system may choose to delegate those actions to the primary navigation fragment as returned by [FragmentManager.getPrimaryNavigationFragment()](FragmentManager.md)).
 
 The fragment provided must currently be added to the FragmentManager to be set as a primary navigation fragment, or previously added as part of this transaction.
 
 | Parameters ||
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| `fragment` | [Fragment](../android/app/Fragment.md)!:the fragment to set as the primary navigation fragment |
+| `fragment` | [Fragment](Fragment.md)!:the fragment to set as the primary navigation fragment |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------|---------------------------------------|
-| [FragmentTransaction](../android/app/FragmentTransaction.md)! | the same FragmentTransaction instance |
+| [FragmentTransaction](FragmentTransaction.md)! | the same FragmentTransaction instance |
 
 ### setReorderingAllowed
 
@@ -679,7 +679,7 @@ Sets whether or not to allow optimizing operations within and across transaction
 
 The side effect of removing redundant operations is that fragments may have state changes out of the expected order. For example, one transaction adds fragment A, a second adds fragment B, then a third removes fragment A. Without removing the redundant operations, fragment B could expect that while it is being created, fragment A will also exist because fragment A will be removed after fragment B was added. With removing redundant operations, fragment B cannot expect fragment A to exist when it has been created because fragment A's add/remove will be optimized out.
 
-It can also reorder the state changes of Fragments to allow for better Transitions. Added Fragments may have [Fragment.onCreate(Bundle)](../android/app/Fragment.md))called before replaced Fragments have [Fragment.onDestroy()](../android/app/Fragment.md))called.
+It can also reorder the state changes of Fragments to allow for better Transitions. Added Fragments may have [Fragment.onCreate(Bundle)](Fragment.md))called before replaced Fragments have [Fragment.onDestroy()](Fragment.md))called.
 
 The default is`false`for applications targeting version versions prior to O and`true`for applications targeting O and later.
 
@@ -697,11 +697,11 @@ abstract fun setTransition(transit: Int): FragmentTransaction!
 
 **Deprecated:** *Deprecated in Java.*
 
-Select a standard transition animation for this transaction. May be one of [TRANSIT_NONE](../android/app/FragmentTransaction.md), [TRANSIT_FRAGMENT_OPEN](../android/app/FragmentTransaction.md), [TRANSIT_FRAGMENT_CLOSE](../android/app/FragmentTransaction.md), or [TRANSIT_FRAGMENT_FADE](../android/app/FragmentTransaction.md).
+Select a standard transition animation for this transaction. May be one of [TRANSIT_NONE](FragmentTransaction.md), [TRANSIT_FRAGMENT_OPEN](FragmentTransaction.md), [TRANSIT_FRAGMENT_CLOSE](FragmentTransaction.md), or [TRANSIT_FRAGMENT_FADE](FragmentTransaction.md).
 
 | Parameters ||
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `transit` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is [android.app.FragmentTransaction#TRANSIT_NONE](../android/app/FragmentTransaction.md), [android.app.FragmentTransaction#TRANSIT_FRAGMENT_OPEN](../android/app/FragmentTransaction.md), [android.app.FragmentTransaction#TRANSIT_FRAGMENT_CLOSE](../android/app/FragmentTransaction.md), or [android.app.FragmentTransaction#TRANSIT_FRAGMENT_FADE](../android/app/FragmentTransaction.md) |
+| `transit` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is [android.app.FragmentTransaction#TRANSIT_NONE](FragmentTransaction.md), [android.app.FragmentTransaction#TRANSIT_FRAGMENT_OPEN](FragmentTransaction.md), [android.app.FragmentTransaction#TRANSIT_FRAGMENT_CLOSE](FragmentTransaction.md), or [android.app.FragmentTransaction#TRANSIT_FRAGMENT_FADE](FragmentTransaction.md) |
 
 ### setTransitionStyle
 
@@ -729,8 +729,8 @@ Shows a previously hidden fragment. This is only relevant for fragments whose vi
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------|
-| `fragment` | [Fragment](../android/app/Fragment.md)!:The fragment to be shown. |
+| `fragment` | [Fragment](Fragment.md)!:The fragment to be shown. |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------|------------------------------------------------|
-| [FragmentTransaction](../android/app/FragmentTransaction.md)! | Returns the same FragmentTransaction instance. |
+| [FragmentTransaction](FragmentTransaction.md)! | Returns the same FragmentTransaction instance. |

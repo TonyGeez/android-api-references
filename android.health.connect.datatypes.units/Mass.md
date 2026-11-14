@@ -4,7 +4,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # Mass
 
-Kotlin| [Java](../android/health/connect/datatypes/units/Mass.md) 
+Kotlin| [Java](Mass.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class Mass : Comparable<Mass!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.health.connect.datatypes.units.Mass](../android/health/connect/datatypes/units/Mass.md) |
+| ↳ | [android.health.connect.datatypes.units.Mass](Mass.md) |
 
 Represents a unit of mass. Supported units: grams
 
@@ -21,13 +21,13 @@ Represents a unit of mass. Supported units: grams
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](../android/health/connect/datatypes/units/Mass.md))`(`other:` ` [Mass](../android/health/connect/datatypes/units/Mass.md)`)` Compares this object with the specified object for order. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/health/connect/datatypes/units/Mass.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| static [Mass](../android/health/connect/datatypes/units/Mass.md) | [fromGrams](../android/health/connect/datatypes/units/Mass.md))`(`value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Creates a Mass object with the specified value in grams. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](Mass.md))`(`other:` ` [Mass](Mass.md)`)` Compares this object with the specified object for order. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](Mass.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| static [Mass](Mass.md) | [fromGrams](Mass.md))`(`value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Creates a Mass object with the specified value in grams. |
 | --- | --- |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getInGrams](../android/health/connect/datatypes/units/Mass.md))`()` Returns mass in grams |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/health/connect/datatypes/units/Mass.md))`()` Returns a hash code value for the object. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/health/connect/datatypes/units/Mass.md))`()` <br /> |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getInGrams](Mass.md))`()` Returns mass in grams |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](Mass.md))`()` Returns a hash code value for the object. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](Mass.md))`()` <br /> |
 | --- | --- |
 
 ## Public methods
@@ -45,7 +45,7 @@ Compares this object with the specified object for order. Returns a negative int
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `o` | the object to be compared. |
-| `other` | [Mass](../android/health/connect/datatypes/units/Mass.md):the object to be compared. This value cannot be`null`. |
+| `other` | [Mass](Mass.md):the object to be compared. This value cannot be`null`. |
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
@@ -91,7 +91,7 @@ Creates a Mass object with the specified value in grams.
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------|-----------------------------|
-| [Mass](../android/health/connect/datatypes/units/Mass.md) | This value cannot be`null`. |
+| [Mass](Mass.md) | This value cannot be`null`. |
 
 ### getInGrams
 

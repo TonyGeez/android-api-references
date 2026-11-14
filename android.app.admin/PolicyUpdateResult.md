@@ -4,7 +4,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # PolicyUpdateResult
 
-Kotlin | [Java](../android/app/admin/PolicyUpdateResult.md) 
+Kotlin | [Java](PolicyUpdateResult.md) 
 | --- | --- |
 
 ```
@@ -13,30 +13,30 @@ class PolicyUpdateResult
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.admin.PolicyUpdateResult](../android/app/admin/PolicyUpdateResult.md) |
+| ↳ | [android.app.admin.PolicyUpdateResult](PolicyUpdateResult.md) |
 
-Class containing the reason for the policy (set from [DevicePolicyManager](../android/app/admin/DevicePolicyManager.md)) update (e.g. success, failure reasons, etc.). This is passed in to [PolicyUpdateReceiver.onPolicySetResult](../android/app/admin/PolicyUpdateReceiver.md))) and [PolicyUpdateReceiver.onPolicyChanged](../android/app/admin/PolicyUpdateReceiver.md))).
+Class containing the reason for the policy (set from [DevicePolicyManager](DevicePolicyManager.md)) update (e.g. success, failure reasons, etc.). This is passed in to [PolicyUpdateReceiver.onPolicySetResult](PolicyUpdateReceiver.md))) and [PolicyUpdateReceiver.onPolicyChanged](PolicyUpdateReceiver.md))).
 
 ## Summary
 
 | Constants ||
 |-----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESULT_FAILURE_CONFLICTING_ADMIN_POLICY](../android/app/admin/PolicyUpdateResult.md) Result code to indicate that the policy has not been enforced or has changed because another admin has set a conflicting policy on the device. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESULT_FAILURE_HARDWARE_LIMITATION](../android/app/admin/PolicyUpdateResult.md) Result code to indicate that the policy set by the admin has not been enforced because of a permanent hardware limitation/issue. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESULT_FAILURE_STORAGE_LIMIT_REACHED](../android/app/admin/PolicyUpdateResult.md) Result code to indicate that the policy set by the admin has not been enforced because the local storage has reached its max limit. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESULT_FAILURE_CONFLICTING_ADMIN_POLICY](PolicyUpdateResult.md) Result code to indicate that the policy has not been enforced or has changed because another admin has set a conflicting policy on the device. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESULT_FAILURE_HARDWARE_LIMITATION](PolicyUpdateResult.md) Result code to indicate that the policy set by the admin has not been enforced because of a permanent hardware limitation/issue. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESULT_FAILURE_STORAGE_LIMIT_REACHED](PolicyUpdateResult.md) Result code to indicate that the policy set by the admin has not been enforced because the local storage has reached its max limit. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESULT_FAILURE_UNKNOWN](../android/app/admin/PolicyUpdateResult.md) Result code to indicate that the policy has not been enforced or has changed for an unknown reason. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESULT_POLICY_CLEARED](../android/app/admin/PolicyUpdateResult.md) Result code to indicate that the policy set by the admin has been successfully cleared, admins will no longer receive policy updates for this policy after this point. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESULT_POLICY_SET](../android/app/admin/PolicyUpdateResult.md) Result code to indicate that the policy has been changed to the desired value set by the admin. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESULT_FAILURE_UNKNOWN](PolicyUpdateResult.md) Result code to indicate that the policy has not been enforced or has changed for an unknown reason. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESULT_POLICY_CLEARED](PolicyUpdateResult.md) Result code to indicate that the policy set by the admin has been successfully cleared, admins will no longer receive policy updates for this policy after this point. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RESULT_POLICY_SET](PolicyUpdateResult.md) Result code to indicate that the policy has been changed to the desired value set by the admin. |
 | --- | --- |
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [PolicyUpdateResult](../android/app/admin/PolicyUpdateResult.md))`(`resultCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructor for `PolicyUpdateResult` that takes in a result code describing why the policy has changed. |
+| [PolicyUpdateResult](PolicyUpdateResult.md))`(`resultCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructor for `PolicyUpdateResult` that takes in a result code describing why the policy has changed. |
 
 | Public methods ||
 |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getResultCode](../android/app/admin/PolicyUpdateResult.md))`()` Returns result code describing why the policy has changed. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getResultCode](PolicyUpdateResult.md))`()` Returns result code describing why the policy has changed. |
 
 ## Constants
 
@@ -134,7 +134,7 @@ Constructor for `PolicyUpdateResult` that takes in a result code describing why 
 
 | Parameters ||
 |--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `resultCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Describes why the policy has changed. Value is [android.app.admin.PolicyUpdateResult#RESULT_FAILURE_UNKNOWN](../android/app/admin/PolicyUpdateResult.md), [android.app.admin.PolicyUpdateResult#RESULT_POLICY_SET](../android/app/admin/PolicyUpdateResult.md), [android.app.admin.PolicyUpdateResult#RESULT_FAILURE_CONFLICTING_ADMIN_POLICY](../android/app/admin/PolicyUpdateResult.md), [android.app.admin.PolicyUpdateResult#RESULT_POLICY_CLEARED](../android/app/admin/PolicyUpdateResult.md), [android.app.admin.PolicyUpdateResult#RESULT_FAILURE_STORAGE_LIMIT_REACHED](../android/app/admin/PolicyUpdateResult.md), or [android.app.admin.PolicyUpdateResult#RESULT_FAILURE_HARDWARE_LIMITATION](../android/app/admin/PolicyUpdateResult.md) |
+| `resultCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Describes why the policy has changed. Value is [android.app.admin.PolicyUpdateResult#RESULT_FAILURE_UNKNOWN](PolicyUpdateResult.md), [android.app.admin.PolicyUpdateResult#RESULT_POLICY_SET](PolicyUpdateResult.md), [android.app.admin.PolicyUpdateResult#RESULT_FAILURE_CONFLICTING_ADMIN_POLICY](PolicyUpdateResult.md), [android.app.admin.PolicyUpdateResult#RESULT_POLICY_CLEARED](PolicyUpdateResult.md), [android.app.admin.PolicyUpdateResult#RESULT_FAILURE_STORAGE_LIMIT_REACHED](PolicyUpdateResult.md), or [android.app.admin.PolicyUpdateResult#RESULT_FAILURE_HARDWARE_LIMITATION](PolicyUpdateResult.md) |
 
 ## Public methods
 
@@ -150,4 +150,4 @@ Returns result code describing why the policy has changed.
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.app.admin.PolicyUpdateResult#RESULT_FAILURE_UNKNOWN](../android/app/admin/PolicyUpdateResult.md), [android.app.admin.PolicyUpdateResult#RESULT_POLICY_SET](../android/app/admin/PolicyUpdateResult.md), [android.app.admin.PolicyUpdateResult#RESULT_FAILURE_CONFLICTING_ADMIN_POLICY](../android/app/admin/PolicyUpdateResult.md), [android.app.admin.PolicyUpdateResult#RESULT_POLICY_CLEARED](../android/app/admin/PolicyUpdateResult.md), [android.app.admin.PolicyUpdateResult#RESULT_FAILURE_STORAGE_LIMIT_REACHED](../android/app/admin/PolicyUpdateResult.md), or [android.app.admin.PolicyUpdateResult#RESULT_FAILURE_HARDWARE_LIMITATION](../android/app/admin/PolicyUpdateResult.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.app.admin.PolicyUpdateResult#RESULT_FAILURE_UNKNOWN](PolicyUpdateResult.md), [android.app.admin.PolicyUpdateResult#RESULT_POLICY_SET](PolicyUpdateResult.md), [android.app.admin.PolicyUpdateResult#RESULT_FAILURE_CONFLICTING_ADMIN_POLICY](PolicyUpdateResult.md), [android.app.admin.PolicyUpdateResult#RESULT_POLICY_CLEARED](PolicyUpdateResult.md), [android.app.admin.PolicyUpdateResult#RESULT_FAILURE_STORAGE_LIMIT_REACHED](PolicyUpdateResult.md), or [android.app.admin.PolicyUpdateResult#RESULT_FAILURE_HARDWARE_LIMITATION](PolicyUpdateResult.md) |

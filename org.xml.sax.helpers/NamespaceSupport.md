@@ -8,7 +8,7 @@ open class NamespaceSupport
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [org.xml.sax.helpers.NamespaceSupport](../org/xml/sax/helpers/NamespaceSupport.md) |
+| ↳ | [org.xml.sax.helpers.NamespaceSupport](NamespaceSupport.md) |
 
 Encapsulate Namespace logic for use by applications using SAX, or internally by SAX drivers. *This module, both source code and documentation, is in the Public Domain, and comes with **NO WARRANTY**.* See <http://www.saxproject.org> for further information.
 
@@ -58,11 +58,11 @@ Although SAX drivers (parsers) may choose to use this class to implement namespa
 | Public methods ||
 |---|---|
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#declarePrefix(kotlin.String,%20kotlin.String)(prefix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, uri: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Declare a Namespace prefix. |
-| open [Enumeration](../java/util/Enumeration.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#getDeclaredPrefixes()()` Return an enumeration of all prefixes declared in this context. |
+| open [Enumeration](../java.util/Enumeration.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#getDeclaredPrefixes()()` Return an enumeration of all prefixes declared in this context. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#getPrefix(kotlin.String)(uri: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Return one of the prefixes mapped to a Namespace URI. |
 | --- | --- |
-| open [Enumeration](../java/util/Enumeration.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#getPrefixes()()` Return an enumeration of all prefixes whose declarations are active in the current context. |
-| open [Enumeration](../java/util/Enumeration.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#getPrefixes(kotlin.String)(uri: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Return an enumeration of all prefixes for a given URI whose declarations are active in the current context. |
+| open [Enumeration](../java.util/Enumeration.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#getPrefixes()()` Return an enumeration of all prefixes whose declarations are active in the current context. |
+| open [Enumeration](../java.util/Enumeration.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#getPrefixes(kotlin.String)(uri: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Return an enumeration of all prefixes for a given URI whose declarations are active in the current context. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#getURI(kotlin.String)(prefix: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Look up a prefix and get the currently-mapped Namespace URI. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/org/xml/sax/helpers/NamespaceSupport#isNamespaceDeclUris()()` Returns true if namespace declaration attributes are placed into a namespace. |

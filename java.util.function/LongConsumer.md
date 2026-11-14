@@ -8,21 +8,21 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 @FunctionalInterface interface LongConsumer
 ```
 
-| [java.util.function.LongConsumer](../java/util/function/LongConsumer.md) |
+| [java.util.function.LongConsumer](LongConsumer.md) |
 
-| Known Direct Subclasses [LongStream.Builder](../java/util/stream/LongStream.Builder.md), [LongSummaryStatistics](../java/util/LongSummaryStatistics.md) |----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------| | [LongStream.Builder](../java/util/stream/LongStream.Builder.md) | A mutable builder for a`LongStream`. | | [LongSummaryStatistics](../java/util/LongSummaryStatistics.md) | A state object for collecting statistics such as count, min, max, sum, and average. | |
+| Known Direct Subclasses [LongStream.Builder](../java/util/stream/LongStream.Builder.md), [LongSummaryStatistics](../java.util/LongSummaryStatistics.md) |----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------| | [LongStream.Builder](../java/util/stream/LongStream.Builder.md) | A mutable builder for a`LongStream`. | | [LongSummaryStatistics](../java.util/LongSummaryStatistics.md) | A state object for collecting statistics such as count, min, max, sum, and average. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-Represents an operation that accepts a single`long`-valued argument and returns no result. This is the primitive type specialization of [Consumer](../java/util/function/Consumer.md) for`long`. Unlike most other functional interfaces,`LongConsumer`is expected to operate via side-effects.
+Represents an operation that accepts a single`long`-valued argument and returns no result. This is the primitive type specialization of [Consumer](Consumer.md) for`long`. Unlike most other functional interfaces,`LongConsumer`is expected to operate via side-effects.
 
-This is a [functional interface](../java/util/function/_package.md) whose functional method is [accept(long)](../java/util/function/LongConsumer.md)).
+This is a [functional interface](_package.md) whose functional method is [accept(long)](LongConsumer.md)).
 
 ## Summary
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [accept](../java/util/function/LongConsumer.md))`(`value:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Performs this operation on the given argument. |
-| open [LongConsumer](../java/util/function/LongConsumer.md)! | [andThen](../java/util/function/LongConsumer.md))`(`after:` ` [LongConsumer](../java/util/function/LongConsumer.md)!`)` Returns a composed`LongConsumer`that performs, in sequence, this operation followed by the`after`operation. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [accept](LongConsumer.md))`(`value:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Performs this operation on the given argument. |
+| open [LongConsumer](LongConsumer.md)! | [andThen](LongConsumer.md))`(`after:` ` [LongConsumer](LongConsumer.md)!`)` Returns a composed`LongConsumer`that performs, in sequence, this operation followed by the`after`operation. |
 
 ## Public methods
 
@@ -52,11 +52,11 @@ Returns a composed`LongConsumer`that performs, in sequence, this operation follo
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| `after` | [LongConsumer](../java/util/function/LongConsumer.md)!:the operation to perform after this operation |
+| `after` | [LongConsumer](LongConsumer.md)!:the operation to perform after this operation |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| [LongConsumer](../java/util/function/LongConsumer.md)! | a composed`LongConsumer`that performs in sequence this operation followed by the`after`operation |
+| [LongConsumer](LongConsumer.md)! | a composed`LongConsumer`that performs in sequence this operation followed by the`after`operation |
 
 | Exceptions ||
 |----------------------------------|------------------|

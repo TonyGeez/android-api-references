@@ -10,25 +10,25 @@ abstract class SelectionKey
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.nio.channels.SelectionKey](../java/nio/channels/SelectionKey.md) |
+| ↳ | [java.nio.channels.SelectionKey](SelectionKey.md) |
 
-| Known Direct Subclasses [AbstractSelectionKey](../java/nio/channels/spi/AbstractSelectionKey.md) |-------------------------------------------------------------------------------------------------------------------|-----------------------------------------------| | [AbstractSelectionKey](../java/nio/channels/spi/AbstractSelectionKey.md) | Base implementation class for selection keys. | |
+| Known Direct Subclasses [AbstractSelectionKey](../java.nio.channels.spi/AbstractSelectionKey.md) |-------------------------------------------------------------------------------------------------------------------|-----------------------------------------------| | [AbstractSelectionKey](../java.nio.channels.spi/AbstractSelectionKey.md) | Base implementation class for selection keys. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
-A token representing the registration of a [SelectableChannel](../java/nio/channels/SelectableChannel.md) with a [Selector](../java/nio/channels/Selector.md).
+A token representing the registration of a [SelectableChannel](SelectableChannel.md) with a [Selector](Selector.md).
 
-A selection key is created each time a channel is registered with a selector. A key remains valid until it is*cancelled* by invoking its [cancel](../java/nio/channels/SelectionKey.md))method, by closing its channel, or by closing its selector. Cancelling a key does not immediately remove it from its selector; it is instead added to the selector's [*cancelled-key set*](../java/nio/channels/Selector.md) for removal during the next selection operation. The validity of a key may be tested by invoking its [isValid](../java/nio/channels/SelectionKey.md))method.
+A selection key is created each time a channel is registered with a selector. A key remains valid until it is*cancelled* by invoking its [cancel](SelectionKey.md))method, by closing its channel, or by closing its selector. Cancelling a key does not immediately remove it from its selector; it is instead added to the selector's [*cancelled-key set*](Selector.md) for removal during the next selection operation. The validity of a key may be tested by invoking its [isValid](SelectionKey.md))method.
 
 A selection key contains two*operation sets*represented as integer values. Each bit of an operation set denotes a category of selectable operations that are supported by the key's channel.
 
-- The*interest set* determines which operation categories will be tested for readiness the next time one of the selector's selection methods is invoked. The interest set is initialized with the value given when the key is created; it may later be changed via the [interestOps(int)](../java/nio/channels/SelectionKey.md))method.
+- The*interest set* determines which operation categories will be tested for readiness the next time one of the selector's selection methods is invoked. The interest set is initialized with the value given when the key is created; it may later be changed via the [interestOps(int)](SelectionKey.md))method.
 - The*ready set*identifies the operation categories for which the key's channel has been detected to be ready by the key's selector. The ready set is initialized to zero when the key is created; it may later be updated by the selector during a selection operation, but it cannot be updated directly.
 
 That a selection key's ready set indicates that its channel is ready for some operation category is a hint, but not a guarantee, that an operation in such a category may be performed by a thread without causing the thread to block. A ready set is most likely to be accurate immediately after the completion of a selection operation. It is likely to be made inaccurate by external events and by I/O operations that are invoked upon the corresponding channel.
 
-This class defines all known operation-set bits, but precisely which bits are supported by a given channel depends upon the type of the channel. Each subclass of [SelectableChannel](../java/nio/channels/SelectableChannel.md) defines an [validOps()](../java/nio/channels/SelectableChannel.md))method which returns a set identifying just those operations that are supported by the channel. An attempt to set or test an operation-set bit that is not supported by a key's channel will result in an appropriate run-time exception.
+This class defines all known operation-set bits, but precisely which bits are supported by a given channel depends upon the type of the channel. Each subclass of [SelectableChannel](SelectableChannel.md) defines an [validOps()](SelectableChannel.md))method which returns a set identifying just those operations that are supported by the channel. An attempt to set or test an operation-set bit that is not supported by a key's channel will result in an appropriate run-time exception.
 
-It is often necessary to associate some application-specific data with a selection key, for example an object that represents the state of a higher-level protocol and handles readiness notifications in order to implement that protocol. Selection keys therefore support the*attachment* of a single arbitrary object to a key. An object can be attached via the [attach](../java/nio/channels/SelectionKey.md))method and then later retrieved via the [attachment](../java/nio/channels/SelectionKey.md))method.
+It is often necessary to associate some application-specific data with a selection key, for example an object that represents the state of a higher-level protocol and handles readiness notifications in order to implement that protocol. Selection keys therefore support the*attachment* of a single arbitrary object to a key. An object can be attached via the [attach](SelectionKey.md))method and then later retrieved via the [attachment](SelectionKey.md))method.
 
 Selection keys are safe for use by multiple concurrent threads. A selection operation will always use the interest-set value that was current at the moment that the operation began.
 
@@ -36,37 +36,37 @@ Selection keys are safe for use by multiple concurrent threads. A selection oper
 
 | Constants ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_ACCEPT](../java/nio/channels/SelectionKey.md) Operation-set bit for socket-accept operations. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CONNECT](../java/nio/channels/SelectionKey.md) Operation-set bit for socket-connect operations. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_READ](../java/nio/channels/SelectionKey.md) Operation-set bit for read operations. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_ACCEPT](SelectionKey.md) Operation-set bit for socket-accept operations. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CONNECT](SelectionKey.md) Operation-set bit for socket-connect operations. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_READ](SelectionKey.md) Operation-set bit for read operations. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_WRITE](../java/nio/channels/SelectionKey.md) Operation-set bit for write operations. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_WRITE](SelectionKey.md) Operation-set bit for write operations. |
 
 | Protected constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SelectionKey](../java/nio/channels/SelectionKey.md))`()` Constructs an instance of this class. |
+| [SelectionKey](SelectionKey.md))`()` Constructs an instance of this class. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [attach](../java/nio/channels/SelectionKey.md))`(`ob:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Attaches the given object to this key. |
-| [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [attachment](../java/nio/channels/SelectionKey.md))`()` Retrieves the current attachment. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [cancel](../java/nio/channels/SelectionKey.md))`()` Requests that the registration of this key's channel with its selector be cancelled. |
+| [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [attach](SelectionKey.md))`(`ob:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Attaches the given object to this key. |
+| [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [attachment](SelectionKey.md))`()` Retrieves the current attachment. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [cancel](SelectionKey.md))`()` Requests that the registration of this key's channel with its selector be cancelled. |
 | --- | --- |
-| abstract [SelectableChannel](../java/nio/channels/SelectableChannel.md)! | [channel](../java/nio/channels/SelectionKey.md))`()` Returns the channel for which this key was created. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [interestOps](../java/nio/channels/SelectionKey.md))`()` Retrieves this key's interest set. |
-| abstract [SelectionKey](../java/nio/channels/SelectionKey.md)! | [interestOps](../java/nio/channels/SelectionKey.md))`(`ops:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets this key's interest set to the given value. |
+| abstract [SelectableChannel](SelectableChannel.md)! | [channel](SelectionKey.md))`()` Returns the channel for which this key was created. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [interestOps](SelectionKey.md))`()` Retrieves this key's interest set. |
+| abstract [SelectionKey](SelectionKey.md)! | [interestOps](SelectionKey.md))`(`ops:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets this key's interest set to the given value. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [interestOpsAnd](../java/nio/channels/SelectionKey.md))`(`ops:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Atomically sets this key's interest set to the bitwise intersection ("and") of the existing interest set and the given value. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [interestOpsOr](../java/nio/channels/SelectionKey.md))`(`ops:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Atomically sets this key's interest set to the bitwise union ("or") of the existing interest set and the given value. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAcceptable](../java/nio/channels/SelectionKey.md))`()` Tests whether this key's channel is ready to accept a new socket connection. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [interestOpsAnd](SelectionKey.md))`(`ops:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Atomically sets this key's interest set to the bitwise intersection ("and") of the existing interest set and the given value. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [interestOpsOr](SelectionKey.md))`(`ops:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Atomically sets this key's interest set to the bitwise union ("or") of the existing interest set and the given value. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAcceptable](SelectionKey.md))`()` Tests whether this key's channel is ready to accept a new socket connection. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isConnectable](../java/nio/channels/SelectionKey.md))`()` Tests whether this key's channel has either finished, or failed to finish, its socket-connection operation. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isReadable](../java/nio/channels/SelectionKey.md))`()` Tests whether this key's channel is ready for reading. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isValid](../java/nio/channels/SelectionKey.md))`()` Tells whether or not this key is valid. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isConnectable](SelectionKey.md))`()` Tests whether this key's channel has either finished, or failed to finish, its socket-connection operation. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isReadable](SelectionKey.md))`()` Tests whether this key's channel is ready for reading. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isValid](SelectionKey.md))`()` Tells whether or not this key is valid. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isWritable](../java/nio/channels/SelectionKey.md))`()` Tests whether this key's channel is ready for writing. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [readyOps](../java/nio/channels/SelectionKey.md))`()` Retrieves this key's ready-operation set. |
-| abstract [Selector](../java/nio/channels/Selector.md)! | [selector](../java/nio/channels/SelectionKey.md))`()` Returns the selector for which this key was created. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isWritable](SelectionKey.md))`()` Tests whether this key's channel is ready for writing. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [readyOps](SelectionKey.md))`()` Retrieves this key's ready-operation set. |
+| abstract [Selector](Selector.md)! | [selector](SelectionKey.md))`()` Returns the selector for which this key was created. |
 | --- | --- |
 
 ## Constants
@@ -81,7 +81,7 @@ static val OP_ACCEPT: Int
 
 Operation-set bit for socket-accept operations.
 
-Suppose that a selection key's interest set contains`OP_ACCEPT`at the start of a [selection operation](../java/nio/channels/Selector.md). If the selector detects that the corresponding server-socket channel is ready to accept another connection, or has an error pending, then it will add`OP_ACCEPT`to the key's ready set. 
+Suppose that a selection key's interest set contains`OP_ACCEPT`at the start of a [selection operation](Selector.md). If the selector detects that the corresponding server-socket channel is ready to accept another connection, or has an error pending, then it will add`OP_ACCEPT`to the key's ready set. 
 
  Value: 16
 
@@ -95,7 +95,7 @@ static val OP_CONNECT: Int
 
 Operation-set bit for socket-connect operations.
 
-Suppose that a selection key's interest set contains`OP_CONNECT`at the start of a [selection operation](../java/nio/channels/Selector.md). If the selector detects that the corresponding socket channel is ready to complete its connection sequence, or has an error pending, then it will add`OP_CONNECT`to the key's ready set. 
+Suppose that a selection key's interest set contains`OP_CONNECT`at the start of a [selection operation](Selector.md). If the selector detects that the corresponding socket channel is ready to complete its connection sequence, or has an error pending, then it will add`OP_CONNECT`to the key's ready set. 
 
  Value: 8
 
@@ -109,7 +109,7 @@ static val OP_READ: Int
 
 Operation-set bit for read operations.
 
-Suppose that a selection key's interest set contains`OP_READ`at the start of a [selection operation](../java/nio/channels/Selector.md). If the selector detects that the corresponding channel is ready for reading, has reached end-of-stream, has been remotely shut down for further reading, or has an error pending, then it will add`OP_READ`to the key's ready-operation set. 
+Suppose that a selection key's interest set contains`OP_READ`at the start of a [selection operation](Selector.md). If the selector detects that the corresponding channel is ready for reading, has reached end-of-stream, has been remotely shut down for further reading, or has an error pending, then it will add`OP_READ`to the key's ready-operation set. 
 
  Value: 1
 
@@ -123,7 +123,7 @@ static val OP_WRITE: Int
 
 Operation-set bit for write operations.
 
-Suppose that a selection key's interest set contains`OP_WRITE`at the start of a [selection operation](../java/nio/channels/Selector.md). If the selector detects that the corresponding channel is ready for writing, has been remotely shut down for further writing, or has an error pending, then it will add`OP_WRITE`to the key's ready set. 
+Suppose that a selection key's interest set contains`OP_WRITE`at the start of a [selection operation](Selector.md). If the selector detects that the corresponding channel is ready for writing, has been remotely shut down for further writing, or has an error pending, then it will add`OP_WRITE`to the key's ready set. 
 
  Value: 4
 
@@ -151,7 +151,7 @@ fun attach(ob: Any!): Any!
 
 Attaches the given object to this key.
 
-An attached object may later be retrieved via the [attachment](../java/nio/channels/SelectionKey.md))method. Only one object may be attached at a time; invoking this method causes any previous attachment to be discarded. The current attachment may be discarded by attaching`null`.
+An attached object may later be retrieved via the [attachment](SelectionKey.md))method. Only one object may be attached at a time; invoking this method causes any previous attachment to be discarded. The current attachment may be discarded by attaching`null`.
 
 | Parameters ||
 |------|---------------------------------------------------------------------------------------------------------------------|
@@ -201,7 +201,7 @@ Returns the channel for which this key was created. This method will continue to
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------|--------------------|
-| [SelectableChannel](../java/nio/channels/SelectableChannel.md)! | This key's channel |
+| [SelectableChannel](SelectableChannel.md)! | This key's channel |
 
 ### interestOps
 
@@ -241,7 +241,7 @@ This method may be invoked at any time. If this method is invoked while a select
 
 | Return ||
 |-------------------------------------------------------------------------------------------------|--------------------|
-| [SelectionKey](../java/nio/channels/SelectionKey.md)! | This selection key |
+| [SelectionKey](SelectionKey.md)! | This selection key |
 
 | Exceptions ||
 |-------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -256,7 +256,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 open fun interestOpsAnd(ops: Int): Int
 ```
 
-Atomically sets this key's interest set to the bitwise intersection ("and") of the existing interest set and the given value. This method is guaranteed to be atomic with respect to other concurrent calls to this method or to [interestOpsOr(int)](../java/nio/channels/SelectionKey.md)).
+Atomically sets this key's interest set to the bitwise intersection ("and") of the existing interest set and the given value. This method is guaranteed to be atomic with respect to other concurrent calls to this method or to [interestOpsOr(int)](SelectionKey.md)).
 
 This method may be invoked at any time. If this method is invoked while a selection operation is in progress then it has no effect upon that operation; the change to the key's interest set will be seen by the next selection operation.
 
@@ -280,7 +280,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 open fun interestOpsOr(ops: Int): Int
 ```
 
-Atomically sets this key's interest set to the bitwise union ("or") of the existing interest set and the given value. This method is guaranteed to be atomic with respect to other concurrent calls to this method or to [interestOpsAnd(int)](../java/nio/channels/SelectionKey.md)).
+Atomically sets this key's interest set to the bitwise union ("or") of the existing interest set and the given value. This method is guaranteed to be atomic with respect to other concurrent calls to this method or to [interestOpsAnd(int)](SelectionKey.md)).
 
 This method may be invoked at any time. If this method is invoked while a selection operation is in progress then it has no effect upon that operation; the change to the key's interest set will be seen by the next selection operation.
 
@@ -453,4 +453,4 @@ Returns the selector for which this key was created. This method will continue t
 
 | Return ||
 |----------------------------------------------------------------------------------------|---------------------|
-| [Selector](../java/nio/channels/Selector.md)! | This key's selector |
+| [Selector](Selector.md)! | This key's selector |

@@ -5,7 +5,7 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 
 # RenderScript
 
-Kotlin| [Java](../android/renderscript/RenderScript.md) 
+Kotlin| [Java](RenderScript.md) 
 | --- | --- |
 
 ```
@@ -14,7 +14,7 @@ open class RenderScript
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.renderscript.RenderScript](../android/renderscript/RenderScript.md) |
+| ↳ | [android.renderscript.RenderScript](RenderScript.md) |
 
 | **This class was deprecated in API level 31.**
 |
@@ -40,38 +40,38 @@ This class provides access to a RenderScript context, which controls RenderScrip
 
 | Constants ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CREATE_FLAG_LOW_LATENCY](../android/renderscript/RenderScript.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CREATE_FLAG_LOW_POWER](../android/renderscript/RenderScript.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CREATE_FLAG_NONE](../android/renderscript/RenderScript.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CREATE_FLAG_LOW_LATENCY](RenderScript.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CREATE_FLAG_LOW_POWER](RenderScript.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CREATE_FLAG_NONE](RenderScript.md) <br /> |
 | --- | --- |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [contextDump](../android/renderscript/RenderScript.md))`()` Print the currently available debugging information about the state of the RS context to the log. |
-| openstatic [RenderScript](../android/renderscript/RenderScript.md)! | [create](../android/renderscript/RenderScript.md))`(`ctx:` ` [Context](../android/content/Context.md)!`)` calls create(ctx, ContextType.NORMAL, CREATE_FLAG_NONE) See documentation for @create for details |
-| openstatic [RenderScript](../android/renderscript/RenderScript.md)! | [create](../android/renderscript/RenderScript.md))`(`ctx:` ` [Context](../android/content/Context.md)!`, `ct:` ` [RenderScript.ContextType](../android/renderscript/RenderScript.ContextType.md)!`)` calls create(ctx, ct, CREATE_FLAG_NONE) See documentation for @create for details |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [contextDump](RenderScript.md))`()` Print the currently available debugging information about the state of the RS context to the log. |
+| openstatic [RenderScript](RenderScript.md)! | [create](RenderScript.md))`(`ctx:` ` [Context](../android.content/Context.md)!`)` calls create(ctx, ContextType.NORMAL, CREATE_FLAG_NONE) See documentation for @create for details |
+| openstatic [RenderScript](RenderScript.md)! | [create](RenderScript.md))`(`ctx:` ` [Context](../android.content/Context.md)!`, `ct:` ` [RenderScript.ContextType](../android/renderscript/RenderScript.ContextType.md)!`)` calls create(ctx, ct, CREATE_FLAG_NONE) See documentation for @create for details |
 | --- | --- |
-| openstatic [RenderScript](../android/renderscript/RenderScript.md)! | [create](../android/renderscript/RenderScript.md))`(`ctx:` ` [Context](../android/content/Context.md)!`, `ct:` ` [RenderScript.ContextType](../android/renderscript/RenderScript.ContextType.md)!`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets or creates a RenderScript context of the specified type. |
-| openstatic [RenderScript](../android/renderscript/RenderScript.md)! | [createMultiContext](../android/renderscript/RenderScript.md))`(`ctx:` ` [Context](../android/content/Context.md)!`, `ct:` ` [RenderScript.ContextType](../android/renderscript/RenderScript.ContextType.md)!`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `API_number:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a RenderScript context. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [destroy](../android/renderscript/RenderScript.md))`()` Destroys this RenderScript context. |
+| openstatic [RenderScript](RenderScript.md)! | [create](RenderScript.md))`(`ctx:` ` [Context](../android.content/Context.md)!`, `ct:` ` [RenderScript.ContextType](../android/renderscript/RenderScript.ContextType.md)!`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets or creates a RenderScript context of the specified type. |
+| openstatic [RenderScript](RenderScript.md)! | [createMultiContext](RenderScript.md))`(`ctx:` ` [Context](../android.content/Context.md)!`, `ct:` ` [RenderScript.ContextType](../android/renderscript/RenderScript.ContextType.md)!`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `API_number:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a RenderScript context. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [destroy](RenderScript.md))`()` Destroys this RenderScript context. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finish](../android/renderscript/RenderScript.md))`()` Wait for any pending asynchronous opeations (such as copies to a RS allocation or RS script executions) to complete. |
-| [Context](../android/content/Context.md)! | [getApplicationContext](../android/renderscript/RenderScript.md))`()` Gets the application context associated with the RenderScript context. |
-| open [RenderScript.RSErrorHandler](../android/renderscript/RenderScript.RSErrorHandler.md)! | [getErrorHandler](../android/renderscript/RenderScript.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finish](RenderScript.md))`()` Wait for any pending asynchronous opeations (such as copies to a RS allocation or RS script executions) to complete. |
+| [Context](../android.content/Context.md)! | [getApplicationContext](RenderScript.md))`()` Gets the application context associated with the RenderScript context. |
+| open [RenderScript.RSErrorHandler](../android/renderscript/RenderScript.RSErrorHandler.md)! | [getErrorHandler](RenderScript.md))`()` <br /> |
 | --- | --- |
-| open [RenderScript.RSMessageHandler](../android/renderscript/RenderScript.RSMessageHandler.md)! | [getMessageHandler](../android/renderscript/RenderScript.md))`()` <br /> |
-| openstatic [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getMinorVersion](../android/renderscript/RenderScript.md))`()` Returns an identifier that can be used to identify a particular minor version of RS. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [releaseAllContexts](../android/renderscript/RenderScript.md))`()` Releases all the process contexts. |
+| open [RenderScript.RSMessageHandler](../android/renderscript/RenderScript.RSMessageHandler.md)! | [getMessageHandler](RenderScript.md))`()` <br /> |
+| openstatic [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getMinorVersion](RenderScript.md))`()` Returns an identifier that can be used to identify a particular minor version of RS. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [releaseAllContexts](RenderScript.md))`()` Releases all the process contexts. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [sendMessage](../android/renderscript/RenderScript.md))`(`id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `data:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` Place a message into the message queue to be sent back to the message handler once all previous commands have been executed. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setErrorHandler](../android/renderscript/RenderScript.md))`(`msg:` ` [RenderScript.RSErrorHandler](../android/renderscript/RenderScript.RSErrorHandler.md)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMessageHandler](../android/renderscript/RenderScript.md))`(`msg:` ` [RenderScript.RSMessageHandler](../android/renderscript/RenderScript.RSMessageHandler.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [sendMessage](RenderScript.md))`(`id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `data:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` Place a message into the message queue to be sent back to the message handler once all previous commands have been executed. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setErrorHandler](RenderScript.md))`(`msg:` ` [RenderScript.RSErrorHandler](../android/renderscript/RenderScript.RSErrorHandler.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMessageHandler](RenderScript.md))`(`msg:` ` [RenderScript.RSMessageHandler](../android/renderscript/RenderScript.RSMessageHandler.md)!`)` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPriority](../android/renderscript/RenderScript.md))`(`p:` ` [RenderScript.Priority](../android/renderscript/RenderScript.Priority.md)!`)` Change the priority of the worker threads for this context. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPriority](RenderScript.md))`(`p:` ` [RenderScript.Priority](../android/renderscript/RenderScript.Priority.md)!`)` Change the priority of the worker threads for this context. |
 
 | Protected methods ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](../android/renderscript/RenderScript.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](RenderScript.md))`()` <br /> |
 
 ## Constants
 
@@ -142,11 +142,11 @@ calls create(ctx, ContextType.NORMAL, CREATE_FLAG_NONE) See documentation for @c
 
 | Parameters ||
 |-------|-------------------------------------------------------------------------------------------------------|
-| `ctx` | [Context](../android/content/Context.md)!:The context. |
+| `ctx` | [Context](../android.content/Context.md)!:The context. |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------|--------------|
-| [RenderScript](../android/renderscript/RenderScript.md)! | RenderScript |
+| [RenderScript](RenderScript.md)! | RenderScript |
 
 ### create
 
@@ -166,12 +166,12 @@ calls create(ctx, ct, CREATE_FLAG_NONE) See documentation for @create for detail
 
 | Parameters ||
 |-------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `ctx` | [Context](../android/content/Context.md)!:The context. |
+| `ctx` | [Context](../android.content/Context.md)!:The context. |
 | `ct` | [RenderScript.ContextType](../android/renderscript/RenderScript.ContextType.md)!:The type of context to be created. |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------|--------------|
-| [RenderScript](../android/renderscript/RenderScript.md)! | RenderScript |
+| [RenderScript](RenderScript.md)! | RenderScript |
 
 ### create
 
@@ -192,14 +192,14 @@ Gets or creates a RenderScript context of the specified type. The returned conte
 
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `ctx` | [Context](../android/content/Context.md)!:The context. |
+| `ctx` | [Context](../android.content/Context.md)!:The context. |
 | `ct` | [RenderScript.ContextType](../android/renderscript/RenderScript.ContextType.md)!:The type of context to be created. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The OR of the CREATE_FLAG_\* options desired |
 | --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------|--------------|
-| [RenderScript](../android/renderscript/RenderScript.md)! | RenderScript |
+| [RenderScript](RenderScript.md)! | RenderScript |
 
 ### createMultiContext
 
@@ -221,11 +221,11 @@ Create a RenderScript context. This is an advanced function intended for applica
 
 | Parameters ||
 |-------|-------------------------------------------------------------------------------------------------------|
-| `ctx` | [Context](../android/content/Context.md)!:The context. |
+| `ctx` | [Context](../android.content/Context.md)!:The context. |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------|--------------|
-| [RenderScript](../android/renderscript/RenderScript.md)! | RenderScript |
+| [RenderScript](RenderScript.md)! | RenderScript |
 
 ### destroy
 
@@ -265,7 +265,7 @@ Gets the application context associated with the RenderScript context.
 
 | Return ||
 |------------------------------------------------------------------------------------------|--------------------------|
-| [Context](../android/content/Context.md)! | The application context. |
+| [Context](../android.content/Context.md)! | The application context. |
 
 ### getErrorHandler
 

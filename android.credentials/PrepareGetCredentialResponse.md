@@ -2,7 +2,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # PrepareGetCredentialResponse
 
-Kotlin | [Java](../android/credentials/PrepareGetCredentialResponse.md)
+Kotlin | [Java](PrepareGetCredentialResponse.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class PrepareGetCredentialResponse
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.credentials.PrepareGetCredentialResponse](../android/credentials/PrepareGetCredentialResponse.md) |
+| ↳ | [android.credentials.PrepareGetCredentialResponse](PrepareGetCredentialResponse.md) |
 
 A response object that prefetches user app credentials and provides metadata about them. It can then be used to issue the full credential retrieval flow via the `https://developer.android.com/reference/kotlin/android/credentials/CredentialManager#getCredential(android.content.Context,%20android.credentials.PrepareGetCredentialResponse.PendingGetCredentialHandle,%20android.os.CancellationSignal,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)` method to perform the remaining flows such as consent collection and credential selection, to officially retrieve a credential.
 

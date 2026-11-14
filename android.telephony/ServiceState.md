@@ -2,7 +2,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # ServiceState
 
-Kotlin | [Java](../android/telephony/ServiceState.md)
+Kotlin | [Java](ServiceState.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ open class ServiceState : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.telephony.ServiceState](../android/telephony/ServiceState.md) |
+| ↳ | [android.telephony.ServiceState](ServiceState.md) |
 
 Contains phone state and service related information. The following phone information is included in returned ServiceState:
 
@@ -62,7 +62,7 @@ For historical reasons this class is not declared as final; however, it should b
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/ServiceState#getDuplexMode()()` Get the current duplex mode |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/ServiceState#getIsManualSelection()()` Get current network selection mode. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [NetworkRegistrationInfo](../android/telephony/NetworkRegistrationInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/telephony/ServiceState#getNetworkRegistrationInfoList()()` Get all of the available network registration info. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [NetworkRegistrationInfo](NetworkRegistrationInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/telephony/ServiceState#getNetworkRegistrationInfoList()()` Get all of the available network registration info. |
 | --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telephony/ServiceState#getOperatorAlphaLong()()` Get current registered operator name in long alphanumeric format. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telephony/ServiceState#getOperatorAlphaShort()()` Get current registered operator name in short alphanumeric format. |
@@ -92,7 +92,7 @@ For historical reasons this class is not declared as final; however, it should b
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ServiceState](../android/telephony/ServiceState.md)!\> | `https://developer.android.com/reference/kotlin/android/telephony/ServiceState#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ServiceState](ServiceState.md)!\> | `https://developer.android.com/reference/kotlin/android/telephony/ServiceState#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -228,7 +228,7 @@ Copy constructors
 
 | Parameters ||
 |---|---|
-| `s` | [ServiceState](../android/telephony/ServiceState.md)!: Source service state |
+| `s` | [ServiceState](ServiceState.md)!: Source service state |
 
 ## Public methods
 

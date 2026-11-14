@@ -4,7 +4,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 
 # PermissionRequest
 
-Kotlin| [Java](../android/webkit/PermissionRequest.md) 
+Kotlin| [Java](PermissionRequest.md) 
 | --- | --- |
 
 ```
@@ -13,9 +13,9 @@ abstract class PermissionRequest
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.webkit.PermissionRequest](../android/webkit/PermissionRequest.md) |
+| ↳ | [android.webkit.PermissionRequest](PermissionRequest.md) |
 
-This class defines a permission request and is used when web content requests access to protected resources. The permission request related events are delivered via [WebChromeClient.onPermissionRequest](../android/webkit/WebChromeClient.md))and [WebChromeClient.onPermissionRequestCanceled](../android/webkit/WebChromeClient.md)). Either [grant()](../android/webkit/PermissionRequest.md))or [deny()](../android/webkit/PermissionRequest.md))must be called in UI thread to respond to the request. New protected resources whose names are not defined here may be requested in future versions of WebView, even when running on an older Android release. To avoid unintentionally granting requests for new permissions, you should pass the specific permissions you intend to grant to [grant()](../android/webkit/PermissionRequest.md)), and avoid writing code like this example: 
+This class defines a permission request and is used when web content requests access to protected resources. The permission request related events are delivered via [WebChromeClient.onPermissionRequest](WebChromeClient.md))and [WebChromeClient.onPermissionRequestCanceled](WebChromeClient.md)). Either [grant()](PermissionRequest.md))or [deny()](PermissionRequest.md))must be called in UI thread to respond to the request. New protected resources whose names are not defined here may be requested in future versions of WebView, even when running on an older Android release. To avoid unintentionally granting requests for new permissions, you should pass the specific permissions you intend to grant to [grant()](PermissionRequest.md)), and avoid writing code like this example: 
 
 ```kotlin
 permissionRequest.grant(permissionRequest.getResources())  // This is wrong!!!
@@ -29,23 +29,23 @@ See the WebView's release notes for information about new protected resources.
 
 | Constants ||
 |----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [RESOURCE_AUDIO_CAPTURE](../android/webkit/PermissionRequest.md) Resource belongs to audio capture device, like microphone. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [RESOURCE_MIDI_SYSEX](../android/webkit/PermissionRequest.md) Resource will allow sysex messages to be sent to or received from MIDI devices. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [RESOURCE_PROTECTED_MEDIA_ID](../android/webkit/PermissionRequest.md) Resource belongs to protected media identifier. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [RESOURCE_AUDIO_CAPTURE](PermissionRequest.md) Resource belongs to audio capture device, like microphone. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [RESOURCE_MIDI_SYSEX](PermissionRequest.md) Resource will allow sysex messages to be sent to or received from MIDI devices. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [RESOURCE_PROTECTED_MEDIA_ID](PermissionRequest.md) Resource belongs to protected media identifier. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [RESOURCE_VIDEO_CAPTURE](../android/webkit/PermissionRequest.md) Resource belongs to video capture device, like camera. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [RESOURCE_VIDEO_CAPTURE](PermissionRequest.md) Resource belongs to video capture device, like camera. |
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------|---|
-| [PermissionRequest](../android/webkit/PermissionRequest.md))`()` <br /> |
+| [PermissionRequest](PermissionRequest.md))`()` <br /> |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [deny](../android/webkit/PermissionRequest.md))`()` Call this method to deny the request. |
-| abstract [Uri](../android/net/Uri.md)! | [getOrigin](../android/webkit/PermissionRequest.md))`()` Call this method to get the origin of the web page which is trying to access the restricted resources. |
-| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getResources](../android/webkit/PermissionRequest.md))`()` Call this method to get the resources the web page is trying to access. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [deny](PermissionRequest.md))`()` Call this method to deny the request. |
+| abstract [Uri](../android.net/Uri.md)! | [getOrigin](PermissionRequest.md))`()` Call this method to get the origin of the web page which is trying to access the restricted resources. |
+| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getResources](PermissionRequest.md))`()` Call this method to get the resources the web page is trying to access. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [grant](../android/webkit/PermissionRequest.md))`(`resources:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Call this method to grant origin the permission to access the given resources. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [grant](PermissionRequest.md))`(`resources:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Call this method to grant origin the permission to access the given resources. |
 
 ## Constants
 
@@ -129,7 +129,7 @@ Call this method to get the origin of the web page which is trying to access the
 
 | Return ||
 |------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| [Uri](../android/net/Uri.md)! | the origin of web content which attempt to access the restricted resources. |
+| [Uri](../android.net/Uri.md)! | the origin of web content which attempt to access the restricted resources. |
 
 ### getResources
 
@@ -157,4 +157,4 @@ Call this method to grant origin the permission to access the given resources. T
 
 | Parameters ||
 |-------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `resources` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!:the resources granted to be accessed by origin, to grant request, the requested resources returned by [getResources()](../android/webkit/PermissionRequest.md))must be equals or a subset of granted resources. This parameter is designed to avoid granting permission by accident especially when new resources are requested by web content. |
+| `resources` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!:the resources granted to be accessed by origin, to grant request, the requested resources returned by [getResources()](PermissionRequest.md))must be equals or a subset of granted resources. This parameter is designed to avoid granting permission by accident especially when new resources are requested by web content. |

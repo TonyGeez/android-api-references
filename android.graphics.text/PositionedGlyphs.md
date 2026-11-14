@@ -4,7 +4,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # PositionedGlyphs
 
-Kotlin| [Java](../android/graphics/text/PositionedGlyphs.md) 
+Kotlin| [Java](PositionedGlyphs.md) 
 | --- | --- |
 
 ```
@@ -13,40 +13,40 @@ class PositionedGlyphs
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.graphics.text.PositionedGlyphs](../android/graphics/text/PositionedGlyphs.md) |
+| ↳ | [android.graphics.text.PositionedGlyphs](PositionedGlyphs.md) |
 
-Text shaping result object for single style text. You can get text shaping result by[TextRunShaper.shapeTextRun(char[], int, int, int, int, float, float, boolean, Paint)](https://developer.android.com/reference/kotlin/android/graphics/text/TextRunShaper#shapeTextRun(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Float,%20kotlin.Float,%20kotlin.Boolean,%20android.graphics.Paint))and [TextRunShaper.shapeTextRun(CharSequence, int, int, int, int, float, float, boolean,](../android/graphics/text/TextRunShaper.md)).
+Text shaping result object for single style text. You can get text shaping result by[TextRunShaper.shapeTextRun(char[], int, int, int, int, float, float, boolean, Paint)](https://developer.android.com/reference/kotlin/android/graphics/text/TextRunShaper#shapeTextRun(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Float,%20kotlin.Float,%20kotlin.Boolean,%20android.graphics.Paint))and [TextRunShaper.shapeTextRun(CharSequence, int, int, int, int, float, float, boolean,](TextRunShaper.md)).
 
 ## Summary
 
 | Constants ||
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [NO_OVERRIDE](../android/graphics/text/PositionedGlyphs.md) A special value returned by [getWeightOverride(int)](../android/graphics/text/PositionedGlyphs.md))and [getItalicOverride(int)](../android/graphics/text/PositionedGlyphs.md))that indicates no font variation setting is overridden. |
+| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [NO_OVERRIDE](PositionedGlyphs.md) A special value returned by [getWeightOverride(int)](PositionedGlyphs.md))and [getItalicOverride(int)](PositionedGlyphs.md))that indicates no font variation setting is overridden. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/graphics/text/PositionedGlyphs.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getAdvance](../android/graphics/text/PositionedGlyphs.md))`()` Returns the total amount of advance consumed by this positioned glyphs. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getAscent](../android/graphics/text/PositionedGlyphs.md))`()` Effective ascent value of this positioned glyphs. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](PositionedGlyphs.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getAdvance](PositionedGlyphs.md))`()` Returns the total amount of advance consumed by this positioned glyphs. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getAscent](PositionedGlyphs.md))`()` Effective ascent value of this positioned glyphs. |
 | --- | --- |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getDescent](../android/graphics/text/PositionedGlyphs.md))`()` Effective descent value of this positioned glyphs. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getFakeBold](../android/graphics/text/PositionedGlyphs.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns true if the fake bold option used for drawing, otherwise false. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getFakeItalic](../android/graphics/text/PositionedGlyphs.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns true if the fake italic option used for drawing, otherwise false. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getDescent](PositionedGlyphs.md))`()` Effective descent value of this positioned glyphs. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getFakeBold](PositionedGlyphs.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns true if the fake bold option used for drawing, otherwise false. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getFakeItalic](PositionedGlyphs.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns true if the fake italic option used for drawing, otherwise false. |
 | --- | --- |
-| [Font](../android/graphics/fonts/Font.md) | [getFont](../android/graphics/text/PositionedGlyphs.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the font object used for drawing the glyph at the given index. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getGlyphId](../android/graphics/text/PositionedGlyphs.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the glyph ID used for drawing the glyph at the given index. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getGlyphX](../android/graphics/text/PositionedGlyphs.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the x coordinate of the glyph position at the given index. |
+| [Font](../android.graphics.fonts/Font.md) | [getFont](PositionedGlyphs.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the font object used for drawing the glyph at the given index. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getGlyphId](PositionedGlyphs.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the glyph ID used for drawing the glyph at the given index. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getGlyphX](PositionedGlyphs.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the x coordinate of the glyph position at the given index. |
 | --- | --- |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getGlyphY](../android/graphics/text/PositionedGlyphs.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the y coordinate of the glyph position at the given index. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getItalicOverride](../android/graphics/text/PositionedGlyphs.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns overridden italic value if the font is variable font and \`ital\` value is overridden for drawing. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getOffsetX](../android/graphics/text/PositionedGlyphs.md))`()` Returns the amount of X offset added to glyph position. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getGlyphY](PositionedGlyphs.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the y coordinate of the glyph position at the given index. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getItalicOverride](PositionedGlyphs.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns overridden italic value if the font is variable font and \`ital\` value is overridden for drawing. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getOffsetX](PositionedGlyphs.md))`()` Returns the amount of X offset added to glyph position. |
 | --- | --- |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getOffsetY](../android/graphics/text/PositionedGlyphs.md))`()` Returns the amount of Y offset added to glyph position. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getWeightOverride](../android/graphics/text/PositionedGlyphs.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns overridden weight value if the font is variable font and \`wght\` value is overridden for drawing. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [glyphCount](../android/graphics/text/PositionedGlyphs.md))`()` Returns the number of glyphs stored. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getOffsetY](PositionedGlyphs.md))`()` Returns the amount of Y offset added to glyph position. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getWeightOverride](PositionedGlyphs.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns overridden weight value if the font is variable font and \`wght\` value is overridden for drawing. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [glyphCount](PositionedGlyphs.md))`()` Returns the number of glyphs stored. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/graphics/text/PositionedGlyphs.md))`()` <br /> |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/graphics/text/PositionedGlyphs.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](PositionedGlyphs.md))`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](PositionedGlyphs.md))`()` <br /> |
 
 ## Constants
 
@@ -58,7 +58,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 static val NO_OVERRIDE: Float
 ```
 
-A special value returned by [getWeightOverride(int)](../android/graphics/text/PositionedGlyphs.md))and [getItalicOverride(int)](../android/graphics/text/PositionedGlyphs.md))that indicates no font variation setting is overridden. 
+A special value returned by [getWeightOverride(int)](PositionedGlyphs.md))and [getItalicOverride(int)](PositionedGlyphs.md))that indicates no font variation setting is overridden. 
 
  Value: 1.4E-45f
 
@@ -174,7 +174,7 @@ Returns the font object used for drawing the glyph at the given index.
 
 | Return ||
 |------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
-| [Font](../android/graphics/fonts/Font.md) | the font object used for drawing the glyph at the given index This value cannot be`null`. |
+| [Font](../android.graphics.fonts/Font.md) | the font object used for drawing the glyph at the given index This value cannot be`null`. |
 
 ### getGlyphId
 
@@ -238,7 +238,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun getItalicOverride(index: Int): Float
 ```
 
-Returns overridden italic value if the font is variable font and \`ital\` value is overridden for drawing. Otherwise returns [NO_OVERRIDE](../android/graphics/text/PositionedGlyphs.md).
+Returns overridden italic value if the font is variable font and \`ital\` value is overridden for drawing. Otherwise returns [NO_OVERRIDE](PositionedGlyphs.md).
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------|
@@ -246,7 +246,7 @@ Returns overridden italic value if the font is variable font and \`ital\` value 
 
 | Return ||
 |--------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | overridden weight value or [NO_OVERRIDE](../android/graphics/text/PositionedGlyphs.md). |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | overridden weight value or [NO_OVERRIDE](PositionedGlyphs.md). |
 
 ### getOffsetX
 
@@ -284,7 +284,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun getWeightOverride(index: Int): Float
 ```
 
-Returns overridden weight value if the font is variable font and \`wght\` value is overridden for drawing. Otherwise returns [NO_OVERRIDE](../android/graphics/text/PositionedGlyphs.md).
+Returns overridden weight value if the font is variable font and \`wght\` value is overridden for drawing. Otherwise returns [NO_OVERRIDE](PositionedGlyphs.md).
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------|
@@ -292,7 +292,7 @@ Returns overridden weight value if the font is variable font and \`wght\` value 
 
 | Return ||
 |--------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | overridden weight value or [NO_OVERRIDE](../android/graphics/text/PositionedGlyphs.md). |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | overridden weight value or [NO_OVERRIDE](PositionedGlyphs.md). |
 
 ### glyphCount
 

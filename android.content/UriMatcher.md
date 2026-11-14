@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # UriMatcher
 
-Kotlin| [Java](../android/content/UriMatcher.md) 
+Kotlin| [Java](UriMatcher.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class UriMatcher
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.content.UriMatcher](../android/content/UriMatcher.md) |
+| ↳ | [android.content.UriMatcher](UriMatcher.md) |
 
 Utility class to aid in matching URIs in content providers.
 
@@ -70,7 +70,7 @@ sURIMatcher.addURI("contacts", "/people", PEOPLE);
  
 ```
 
-Then when you need to match against a URI, call [match](../android/content/UriMatcher.md)), providing the URL that you have been given. You can use the result to build a query, return a type, insert or delete a row, or whatever you need, without duplicating all of the if-else logic that you would otherwise need. For example: 
+Then when you need to match against a URI, call [match](UriMatcher.md)), providing the URL that you have been given. You can use the result to build a query, return a type, insert or delete a row, or whatever you need, without duplicating all of the if-else logic that you would otherwise need. For example: 
 
 ```kotlin
 public String getType(Uri url)
@@ -122,16 +122,16 @@ public String getType(Uri url)
 
 | Constants ||
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NO_MATCH](../android/content/UriMatcher.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NO_MATCH](UriMatcher.md) <br /> |
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [UriMatcher](../android/content/UriMatcher.md))`(`code:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates the root node of the URI tree. |
+| [UriMatcher](UriMatcher.md))`(`code:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates the root node of the URI tree. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addURI](../android/content/UriMatcher.md))`(`authority:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `code:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Add a URI to match, and the code to return when this URI is matched. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [match](../android/content/UriMatcher.md))`(`uri:` ` [Uri](../android/net/Uri.md)!`)` Try to match against the path in a url. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addURI](UriMatcher.md))`(`authority:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `path:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `code:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Add a URI to match, and the code to return when this URI is matched. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [match](UriMatcher.md))`(`uri:` ` [Uri](../android.net/Uri.md)!`)` Try to match against the path in a url. |
 
 ## Constants
 
@@ -198,7 +198,7 @@ Try to match against the path in a url.
 
 | Parameters ||
 |-------|------------------------------------------------------------------------------------------------------------------------|
-| `uri` | [Uri](../android/net/Uri.md)!:The url whose path we will match against. |
+| `uri` | [Uri](../android.net/Uri.md)!:The url whose path we will match against. |
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------|

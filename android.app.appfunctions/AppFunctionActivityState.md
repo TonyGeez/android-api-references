@@ -8,7 +8,7 @@ class AppFunctionActivityState : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.appfunctions.AppFunctionActivityState](../android/app/appfunctions/AppFunctionActivityState.md) |
+| ↳ | [android.app.appfunctions.AppFunctionActivityState](AppFunctionActivityState.md) |
 
 The state of an activity from the perspective of app functions, retrieved using `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionManager#getAppFunctionActivityStates(kotlin.collections.MutableSet,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`.
 
@@ -26,7 +26,7 @@ This holds which app functions are registered for a given activity, a property t
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionActivityState#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [AppFunctionActivityId](../android/app/appfunctions/AppFunctionActivityId.md) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionActivityState#getActivityId()()` Returns the `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionActivityId` associated with this state. |
 | --- | --- |
-| [ArraySet](../android/util/ArraySet.md)\< [AppFunctionName](../android/app/appfunctions/AppFunctionName.md)!\> | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionActivityState#getFunctionNames()()` Returns the set of `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionName`s that are registered for the `https://developer.android.com/reference/kotlin/android/app/Activity.html#` referenced by `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionActivityState#getActivityId()`. |
+| [ArraySet](../android.util/ArraySet.md)\< [AppFunctionName](../android/app/appfunctions/AppFunctionName.md)!\> | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionActivityState#getFunctionNames()()` Returns the set of `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionName`s that are registered for the `https://developer.android.com/reference/kotlin/android/app/Activity.html#` referenced by `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionActivityState#getActivityId()`. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionActivityState#hashCode()()` Returns a hash code value for the object. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionActivityState#toString()()` Returns a string representation of the object. |
 | --- | --- |
@@ -34,7 +34,7 @@ This holds which app functions are registered for a given activity, a property t
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [AppFunctionActivityState](../android/app/appfunctions/AppFunctionActivityState.md)!\> | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionActivityState#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [AppFunctionActivityState](AppFunctionActivityState.md)!\> | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionActivityState#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public methods
 
@@ -157,7 +157,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

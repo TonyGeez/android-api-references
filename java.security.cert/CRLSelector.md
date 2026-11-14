@@ -8,9 +8,9 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface CRLSelector : Cloneable
 ```
 
-| [java.security.cert.CRLSelector](../java/security/cert/CRLSelector.md) |
+| [java.security.cert.CRLSelector](CRLSelector.md) |
 
-| Known Direct Subclasses [X509CRLSelector](../java/security/cert/X509CRLSelector.md) |------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------| | [X509CRLSelector](../java/security/cert/X509CRLSelector.md) | A`CRLSelector`that selects`X509CRLs`that match all specified criteria. | |
+| Known Direct Subclasses [X509CRLSelector](X509CRLSelector.md) |------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------| | [X509CRLSelector](X509CRLSelector.md) | A`CRLSelector`that selects`X509CRLs`that match all specified criteria. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 A selector that defines a set of criteria for selecting`CRL`s. Classes that implement this interface are often used to specify which`CRL`s should be retrieved from a`CertStore`.
@@ -23,8 +23,8 @@ Unless otherwise specified, the methods defined in this interface are not thread
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](../java/security/cert/CRLSelector.md))`()` Makes a copy of this`CRLSelector`. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [match](../java/security/cert/CRLSelector.md))`(`crl:` ` [CRL](../java/security/cert/CRL.md)!`)` Decides whether a`CRL`should be selected. |
+| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](CRLSelector.md))`()` Makes a copy of this`CRLSelector`. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [match](CRLSelector.md))`(`crl:` ` [CRL](CRL.md)!`)` Decides whether a`CRL`should be selected. |
 
 ## Public methods
 
@@ -58,7 +58,7 @@ Decides whether a`CRL`should be selected.
 
 | Parameters ||
 |-------|-----------------------------------------------------------------------------------------------------|
-| `crl` | [CRL](../java/security/cert/CRL.md)!:the`CRL`to be checked |
+| `crl` | [CRL](CRL.md)!:the`CRL`to be checked |
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------------------|

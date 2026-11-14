@@ -2,7 +2,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 
 # EuiccInfo
 
-Kotlin | [Java](../android/telephony/euicc/EuiccInfo.md)
+Kotlin | [Java](EuiccInfo.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class EuiccInfo : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.telephony.euicc.EuiccInfo](../android/telephony/euicc/EuiccInfo.md) |
+| ↳ | [android.telephony.euicc.EuiccInfo](EuiccInfo.md) |
 
 Information about an eUICC chip/device.
 
@@ -34,7 +34,7 @@ Information about an eUICC chip/device.
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [EuiccInfo](../android/telephony/euicc/EuiccInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccInfo#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [EuiccInfo](EuiccInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccInfo#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public constructors
 
@@ -95,7 +95,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

@@ -2,7 +2,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # ConnectivityManager
 
-Kotlin | [Java](../android/net/ConnectivityManager.md)
+Kotlin | [Java](ConnectivityManager.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ open class ConnectivityManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.ConnectivityManager](../android/net/ConnectivityManager.md) |
+| ↳ | [android.net.ConnectivityManager](ConnectivityManager.md) |
 
 Class that answers queries about the state of network connectivity. It also notifies applications when network connectivity changes.
 
@@ -81,29 +81,29 @@ The primary responsibilities of this class are to:
 |---|---|
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager#addDefaultNetworkActiveListener(android.net.ConnectivityManager.OnNetworkActiveListener)(l: https://developer.android.com/reference/kotlin/android/net/ConnectivityManager.OnNetworkActiveListener!)` Start listening to reports when the system's default data network is active, meaning it is a good time to perform network traffic. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager#bindProcessToNetwork(android.net.Network)(network: https://developer.android.com/reference/kotlin/android/net/Network?)` Binds the current process to `network`. |
-| open [SocketKeepalive](../android/net/SocketKeepalive.md) | `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager#createSocketKeepalive(android.net.Network,%20android.net.IpSecManager.UdpEncapsulationSocket,%20java.net.InetAddress,%20java.net.InetAddress,%20java.util.concurrent.Executor,%20android.net.SocketKeepalive.Callback)(network: https://developer.android.com/reference/kotlin/android/net/Network, socket: https://developer.android.com/reference/kotlin/android/net/IpSecManager.UdpEncapsulationSocket, source: https://developer.android.com/reference/kotlin/java/net/InetAddress.html#, destination: https://developer.android.com/reference/kotlin/java/net/InetAddress.html#, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/net/SocketKeepalive.Callback)` Request that keepalives be started on a IPsec NAT-T socket. |
+| open [SocketKeepalive](SocketKeepalive.md) | `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager#createSocketKeepalive(android.net.Network,%20android.net.IpSecManager.UdpEncapsulationSocket,%20java.net.InetAddress,%20java.net.InetAddress,%20java.util.concurrent.Executor,%20android.net.SocketKeepalive.Callback)(network: https://developer.android.com/reference/kotlin/android/net/Network, socket: https://developer.android.com/reference/kotlin/android/net/IpSecManager.UdpEncapsulationSocket, source: https://developer.android.com/reference/kotlin/java/net/InetAddress.html#, destination: https://developer.android.com/reference/kotlin/java/net/InetAddress.html#, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/net/SocketKeepalive.Callback)` Request that keepalives be started on a IPsec NAT-T socket. |
 | --- | --- |
-| open [Network](../android/net/Network.md)? | `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager#getActiveNetwork()()` Returns a `https://developer.android.com/reference/kotlin/android/net/Network` object corresponding to the currently active default data network. |
-| open [NetworkInfo](../android/net/NetworkInfo.md)? | `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager#getActiveNetworkInfo()()` Returns details about the currently active default data network. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [NetworkInfo](../android/net/NetworkInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager#getAllNetworkInfo()()` Returns connection status information about all network types supported by the device. |
+| open [Network](Network.md)? | `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager#getActiveNetwork()()` Returns a `https://developer.android.com/reference/kotlin/android/net/Network` object corresponding to the currently active default data network. |
+| open [NetworkInfo](NetworkInfo.md)? | `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager#getActiveNetworkInfo()()` Returns details about the currently active default data network. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [NetworkInfo](NetworkInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager#getAllNetworkInfo()()` Returns connection status information about all network types supported by the device. |
 | --- | --- |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Network](../android/net/Network.md)!\> | `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager#getAllNetworks()()` Returns an array of all `https://developer.android.com/reference/kotlin/android/net/Network` currently tracked by the framework. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Network](Network.md)!\> | `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager#getAllNetworks()()` Returns an array of all `https://developer.android.com/reference/kotlin/android/net/Network` currently tracked by the framework. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager#getBackgroundDataSetting()()` Returns the value of the setting for background data usage. |
-| open [Network](../android/net/Network.md)? | `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager#getBoundNetworkForProcess()()` Returns the `https://developer.android.com/reference/kotlin/android/net/Network` currently bound to this process via `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager#bindProcessToNetwork(android.net.Network)`, or `null` if no `https://developer.android.com/reference/kotlin/android/net/Network` is explicitly bound. |
+| open [Network](Network.md)? | `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager#getBoundNetworkForProcess()()` Returns the `https://developer.android.com/reference/kotlin/android/net/Network` currently bound to this process via `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager#bindProcessToNetwork(android.net.Network)`, or `null` if no `https://developer.android.com/reference/kotlin/android/net/Network` is explicitly bound. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager#getConnectionOwnerUid(kotlin.Int,%20java.net.InetSocketAddress,%20java.net.InetSocketAddress)(protocol: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, local: https://developer.android.com/reference/kotlin/java/net/InetSocketAddress.html#, remote: https://developer.android.com/reference/kotlin/java/net/InetSocketAddress.html#)` Returns the `uid` of the owner of a network connection. |
-| open [ProxyInfo](../android/net/ProxyInfo.md)? | `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager#getDefaultProxy()()` Get the current default HTTP proxy settings. |
-| open [LinkProperties](../android/net/LinkProperties.md)? | `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager#getLinkProperties(android.net.Network)(network: https://developer.android.com/reference/kotlin/android/net/Network?)` Get the `https://developer.android.com/reference/kotlin/android/net/LinkProperties` for the given `https://developer.android.com/reference/kotlin/android/net/Network`. |
+| open [ProxyInfo](ProxyInfo.md)? | `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager#getDefaultProxy()()` Get the current default HTTP proxy settings. |
+| open [LinkProperties](LinkProperties.md)? | `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager#getLinkProperties(android.net.Network)(network: https://developer.android.com/reference/kotlin/android/net/Network?)` Get the `https://developer.android.com/reference/kotlin/android/net/LinkProperties` for the given `https://developer.android.com/reference/kotlin/android/net/Network`. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager#getMultipathPreference(android.net.Network)(network: https://developer.android.com/reference/kotlin/android/net/Network?)` Provides a hint to the calling application on whether it is desirable to use the multinetwork APIs (e.g., android.net.Network#openConnection, android.net.Network#bindSocket, etc.) for multipath data transfer on this network when it is not the system default network. |
-| open [NetworkCapabilities](../android/net/NetworkCapabilities.md)? | `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager#getNetworkCapabilities(android.net.Network)(network: https://developer.android.com/reference/kotlin/android/net/Network?)` Get the `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities` for the given `https://developer.android.com/reference/kotlin/android/net/Network`, or null. |
-| open [NetworkInfo](../android/net/NetworkInfo.md)? | `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager#getNetworkInfo(android.net.Network)(network: https://developer.android.com/reference/kotlin/android/net/Network?)` Returns connection status information about a particular Network. |
+| open [NetworkCapabilities](NetworkCapabilities.md)? | `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager#getNetworkCapabilities(android.net.Network)(network: https://developer.android.com/reference/kotlin/android/net/Network?)` Get the `https://developer.android.com/reference/kotlin/android/net/NetworkCapabilities` for the given `https://developer.android.com/reference/kotlin/android/net/Network`, or null. |
+| open [NetworkInfo](NetworkInfo.md)? | `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager#getNetworkInfo(android.net.Network)(network: https://developer.android.com/reference/kotlin/android/net/Network?)` Returns connection status information about a particular Network. |
 | --- | --- |
-| open [NetworkInfo](../android/net/NetworkInfo.md)? | `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager#getNetworkInfo(kotlin.Int)(networkType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns connection status information about a particular network type. |
+| open [NetworkInfo](NetworkInfo.md)? | `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager#getNetworkInfo(kotlin.Int)(networkType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns connection status information about a particular network type. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager#getNetworkPreference()()` Retrieves the current preferred network type. |
 | open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager#getNetworkWatchlistConfigHash()()` The network watchlist is a list of domains and IP addresses that are associated with potentially harmful apps. |
 | --- | --- |
-| open static [Network](../android/net/Network.md)? | `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager#getProcessDefaultNetwork()()` Returns the `https://developer.android.com/reference/kotlin/android/net/Network` currently bound to this process via `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager#bindProcessToNetwork(android.net.Network)`, or `null` if no `https://developer.android.com/reference/kotlin/android/net/Network` is explicitly bound. |
+| open static [Network](Network.md)? | `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager#getProcessDefaultNetwork()()` Returns the `https://developer.android.com/reference/kotlin/android/net/Network` currently bound to this process via `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager#bindProcessToNetwork(android.net.Network)`, or `null` if no `https://developer.android.com/reference/kotlin/android/net/Network` is explicitly bound. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager#getRestrictBackgroundStatus()()` Determines if the calling application is subject to metered network restrictions while running on background. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager#isActiveNetworkMetered()()` Returns if the currently active data network is metered. |
 | --- | --- |
@@ -668,7 +668,7 @@ Binds the current process to `network`. All Sockets created in the future (and n
 
 | Parameters ||
 |---|---|
-| `network` | [Network](../android/net/Network.md)?: The `https://developer.android.com/reference/kotlin/android/net/Network` to bind the current process to, or `null` to clear the current binding. |
+| `network` | [Network](Network.md)?: The `https://developer.android.com/reference/kotlin/android/net/Network` to bind the current process to, or `null` to clear the current binding. |
 
 | Return ||
 |---|---|
@@ -693,12 +693,12 @@ Request that keepalives be started on a IPsec NAT-T socket.
 
 | Parameters ||
 |---|---|
-| `network` | [Network](../android/net/Network.md): The `https://developer.android.com/reference/kotlin/android/net/Network` the socket is on. This value cannot be `null`. |
+| `network` | [Network](Network.md): The `https://developer.android.com/reference/kotlin/android/net/Network` the socket is on. This value cannot be `null`. |
 | `socket` | [IpSecManager.UdpEncapsulationSocket](../android/net/IpSecManager.UdpEncapsulationSocket.md): The socket that needs to be kept alive. This value cannot be `null`. |
-| `source` | [InetAddress](../java/net/InetAddress.md): The source address of the `https://developer.android.com/reference/kotlin/android/net/IpSecManager.UdpEncapsulationSocket`. This value cannot be `null`. |
+| `source` | [InetAddress](../java.net/InetAddress.md): The source address of the `https://developer.android.com/reference/kotlin/android/net/IpSecManager.UdpEncapsulationSocket`. This value cannot be `null`. |
 | --- | --- |
-| `destination` | [InetAddress](../java/net/InetAddress.md): The destination address of the `https://developer.android.com/reference/kotlin/android/net/IpSecManager.UdpEncapsulationSocket`. This value cannot be `null`. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): The executor on which callback will be invoked. The provided `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` must run callback sequentially, otherwise the order of callbacks cannot be guaranteed. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `destination` | [InetAddress](../java.net/InetAddress.md): The destination address of the `https://developer.android.com/reference/kotlin/android/net/IpSecManager.UdpEncapsulationSocket`. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor on which callback will be invoked. The provided `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` must run callback sequentially, otherwise the order of callbacks cannot be guaranteed. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [SocketKeepalive.Callback](../android/net/SocketKeepalive.Callback.md): A `https://developer.android.com/reference/kotlin/android/net/SocketKeepalive.Callback`. Used for notifications about keepalive changes. Must be extended by applications that use this API. This value cannot be `null`. |
 | --- | --- |
 
@@ -827,8 +827,8 @@ Returns the `uid` of the owner of a network connection.
 | Parameters ||
 |---|---|
 | `protocol` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The protocol of the connection. Only `IPPROTO_TCP` and `IPPROTO_UDP` currently supported. |
-| `local` | [InetSocketAddress](../java/net/InetSocketAddress.md): The local `https://developer.android.com/reference/kotlin/java/net/InetSocketAddress.html#` of a connection. This value cannot be `null`. |
-| `remote` | [InetSocketAddress](../java/net/InetSocketAddress.md): The remote `https://developer.android.com/reference/kotlin/java/net/InetSocketAddress.html#` of a connection. This value cannot be `null`. |
+| `local` | [InetSocketAddress](../java.net/InetSocketAddress.md): The local `https://developer.android.com/reference/kotlin/java/net/InetSocketAddress.html#` of a connection. This value cannot be `null`. |
+| `remote` | [InetSocketAddress](../java.net/InetSocketAddress.md): The remote `https://developer.android.com/reference/kotlin/java/net/InetSocketAddress.html#` of a connection. This value cannot be `null`. |
 | --- | --- |
 
 | Return ||
@@ -867,7 +867,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `network` | [Network](../android/net/Network.md)?: The `https://developer.android.com/reference/kotlin/android/net/Network` object identifying the network in question. This value may be `null`. |
+| `network` | [Network](Network.md)?: The `https://developer.android.com/reference/kotlin/android/net/Network` object identifying the network in question. This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -886,7 +886,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `network` | [Network](../android/net/Network.md)?: The network on which the application desires to use multipath data. If `null`, this method will return a preference that will generally apply to metered networks. |
+| `network` | [Network](Network.md)?: The network on which the application desires to use multipath data. If `null`, this method will return a preference that will generally apply to metered networks. |
 
 | Return ||
 |---|---|
@@ -906,7 +906,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `network` | [Network](../android/net/Network.md)?: The `https://developer.android.com/reference/kotlin/android/net/Network` object identifying the network in question. This value may be `null`. |
+| `network` | [Network](Network.md)?: The `https://developer.android.com/reference/kotlin/android/net/Network` object identifying the network in question. This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -928,7 +928,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `network` | [Network](../android/net/Network.md)?: `https://developer.android.com/reference/kotlin/android/net/Network` specifying which network in which you're interested. This value may be `null`. |
+| `network` | [Network](Network.md)?: `https://developer.android.com/reference/kotlin/android/net/Network` specifying which network in which you're interested. This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -1083,9 +1083,9 @@ To avoid performance issues due to apps leaking callbacks, the system will limit
 
 | Parameters ||
 |---|---|
-| `request` | [NetworkRequest](../android/net/NetworkRequest.md): `https://developer.android.com/reference/kotlin/android/net/NetworkRequest` describing this request. This value cannot be `null`. |
+| `request` | [NetworkRequest](NetworkRequest.md): `https://developer.android.com/reference/kotlin/android/net/NetworkRequest` describing this request. This value cannot be `null`. |
 | `networkCallback` | [ConnectivityManager.NetworkCallback](../android/net/ConnectivityManager.NetworkCallback.md): The `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager.NetworkCallback` that the system will call as suitable networks change state. This value cannot be `null`. |
-| `handler` | [Handler](../android/os/Handler.md): `https://developer.android.com/reference/kotlin/android/os/Handler.html#` to specify the thread upon which the callback will be invoked. This value cannot be `null`. |
+| `handler` | [Handler](../android.os/Handler.md): `https://developer.android.com/reference/kotlin/android/os/Handler.html#` to specify the thread upon which the callback will be invoked. This value cannot be `null`. |
 | --- | --- |
 
 | Exceptions ||
@@ -1132,7 +1132,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 | Parameters ||
 |---|---|
 | `networkCallback` | [ConnectivityManager.NetworkCallback](../android/net/ConnectivityManager.NetworkCallback.md): The `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager.NetworkCallback` that the system will call as the application's default network changes. This value cannot be `null`. |
-| `handler` | [Handler](../android/os/Handler.md): `https://developer.android.com/reference/kotlin/android/os/Handler.html#` to specify the thread upon which the callback will be invoked. This value cannot be `null`. |
+| `handler` | [Handler](../android.os/Handler.md): `https://developer.android.com/reference/kotlin/android/os/Handler.html#` to specify the thread upon which the callback will be invoked. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -1164,8 +1164,8 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `request` | [NetworkRequest](../android/net/NetworkRequest.md): `https://developer.android.com/reference/kotlin/android/net/NetworkRequest` describing this request. This value cannot be `null`. |
-| `operation` | [PendingIntent](../android/app/PendingIntent.md): Action to perform when the network is available (corresponds to the `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager.NetworkCallback#onAvailable(android.net.Network)` call. Typically comes from `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#getBroadcast(android.content.Context,%20kotlin.Int,%20android.content.Intent,%20kotlin.Int)`. Cannot be null. |
+| `request` | [NetworkRequest](NetworkRequest.md): `https://developer.android.com/reference/kotlin/android/net/NetworkRequest` describing this request. This value cannot be `null`. |
+| `operation` | [PendingIntent](../android.app/PendingIntent.md): Action to perform when the network is available (corresponds to the `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager.NetworkCallback#onAvailable(android.net.Network)` call. Typically comes from `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#getBroadcast(android.content.Context,%20kotlin.Int,%20android.content.Intent,%20kotlin.Int)`. Cannot be null. |
 
 | Exceptions ||
 |---|---|
@@ -1189,7 +1189,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `request` | [NetworkRequest](../android/net/NetworkRequest.md): `https://developer.android.com/reference/kotlin/android/net/NetworkRequest` describing this request. This value cannot be `null`. |
+| `request` | [NetworkRequest](NetworkRequest.md): `https://developer.android.com/reference/kotlin/android/net/NetworkRequest` describing this request. This value cannot be `null`. |
 | `networkCallback` | [ConnectivityManager.NetworkCallback](../android/net/ConnectivityManager.NetworkCallback.md): The `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager.NetworkCallback` that the system will call as suitable networks change state. The callback is invoked on the default internal Handler. This value cannot be `null`. |
 
 | Exceptions ||
@@ -1215,9 +1215,9 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `request` | [NetworkRequest](../android/net/NetworkRequest.md): `https://developer.android.com/reference/kotlin/android/net/NetworkRequest` describing this request. This value cannot be `null`. |
+| `request` | [NetworkRequest](NetworkRequest.md): `https://developer.android.com/reference/kotlin/android/net/NetworkRequest` describing this request. This value cannot be `null`. |
 | `networkCallback` | [ConnectivityManager.NetworkCallback](../android/net/ConnectivityManager.NetworkCallback.md): The `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager.NetworkCallback` that the system will call as suitable networks change state. This value cannot be `null`. |
-| `handler` | [Handler](../android/os/Handler.md): `https://developer.android.com/reference/kotlin/android/os/Handler.html#` to specify the thread upon which the callback will be invoked. This value cannot be `null`. |
+| `handler` | [Handler](../android.os/Handler.md): `https://developer.android.com/reference/kotlin/android/os/Handler.html#` to specify the thread upon which the callback will be invoked. This value cannot be `null`. |
 | --- | --- |
 
 | Exceptions ||
@@ -1238,7 +1238,7 @@ This method has the same behavior as `https://developer.android.com/reference/ko
 
 | Parameters ||
 |---|---|
-| `operation` | [PendingIntent](../android/app/PendingIntent.md): A PendingIntent equal (as defined by `https://developer.android.com/reference/kotlin/android/content/Intent.html#filterEquals(android.content.Intent)`) to the PendingIntent passed to `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager#requestNetwork(android.net.NetworkRequest,%20android.app.PendingIntent)` with the corresponding NetworkRequest you'd like to remove. Cannot be null. |
+| `operation` | [PendingIntent](../android.app/PendingIntent.md): A PendingIntent equal (as defined by `https://developer.android.com/reference/kotlin/android/content/Intent.html#filterEquals(android.content.Intent)`) to the PendingIntent passed to `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager#requestNetwork(android.net.NetworkRequest,%20android.app.PendingIntent)` with the corresponding NetworkRequest you'd like to remove. Cannot be null. |
 
 ### removeDefaultNetworkActiveListener
 
@@ -1269,7 +1269,7 @@ Report a problem network to the framework. This provides a hint to the system th
 
 | Parameters ||
 |---|---|
-| `network` | [Network](../android/net/Network.md)?: The `https://developer.android.com/reference/kotlin/android/net/Network` the application was attempting to use or `null` to indicate the current default network. |
+| `network` | [Network](Network.md)?: The `https://developer.android.com/reference/kotlin/android/net/Network` the application was attempting to use or `null` to indicate the current default network. |
 
 ### reportNetworkConnectivity
 
@@ -1286,7 +1286,7 @@ Report to the framework whether a network has working connectivity. This provide
 
 | Parameters ||
 |---|---|
-| `network` | [Network](../android/net/Network.md)?: The `https://developer.android.com/reference/kotlin/android/net/Network` the application was attempting to use or `null` to indicate the current default network. |
+| `network` | [Network](Network.md)?: The `https://developer.android.com/reference/kotlin/android/net/Network` the application was attempting to use or `null` to indicate the current default network. |
 | `hasConnectivity` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): `true` if the application was able to successfully access the Internet using `network` or `false` if not. |
 
 ### requestBandwidthUpdate
@@ -1301,7 +1301,7 @@ Requests bandwidth update for a given `https://developer.android.com/reference/k
 
 | Parameters ||
 |---|---|
-| `network` | [Network](../android/net/Network.md): `https://developer.android.com/reference/kotlin/android/net/Network` specifying which network you're interested. This value cannot be `null`. |
+| `network` | [Network](Network.md): `https://developer.android.com/reference/kotlin/android/net/Network` specifying which network you're interested. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -1336,8 +1336,8 @@ This method requires the caller to hold either the `https://developer.android.co
 
 | Parameters ||
 |---|---|
-| `request` | [NetworkRequest](../android/net/NetworkRequest.md): `https://developer.android.com/reference/kotlin/android/net/NetworkRequest` describing this request. This value cannot be `null`. |
-| `operation` | [PendingIntent](../android/app/PendingIntent.md): Action to perform when the network is available (corresponds to the `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager.NetworkCallback#onAvailable(android.net.Network)` call. Typically comes from `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#getBroadcast(android.content.Context,%20kotlin.Int,%20android.content.Intent,%20kotlin.Int)`. Cannot be null. |
+| `request` | [NetworkRequest](NetworkRequest.md): `https://developer.android.com/reference/kotlin/android/net/NetworkRequest` describing this request. This value cannot be `null`. |
+| `operation` | [PendingIntent](../android.app/PendingIntent.md): Action to perform when the network is available (corresponds to the `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager.NetworkCallback#onAvailable(android.net.Network)` call. Typically comes from `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#getBroadcast(android.content.Context,%20kotlin.Int,%20android.content.Intent,%20kotlin.Int)`. Cannot be null. |
 
 | Exceptions ||
 |---|---|
@@ -1379,7 +1379,7 @@ To avoid performance issues due to apps leaking callbacks, the system will limit
 
 | Parameters ||
 |---|---|
-| `request` | [NetworkRequest](../android/net/NetworkRequest.md): `https://developer.android.com/reference/kotlin/android/net/NetworkRequest` describing this request. This value cannot be `null`. |
+| `request` | [NetworkRequest](NetworkRequest.md): `https://developer.android.com/reference/kotlin/android/net/NetworkRequest` describing this request. This value cannot be `null`. |
 | `networkCallback` | [ConnectivityManager.NetworkCallback](../android/net/ConnectivityManager.NetworkCallback.md): The `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager.NetworkCallback` to be utilized for this request. Note the callback must not be shared - it uniquely specifies this request. The callback is invoked on the default internal Handler. This value cannot be `null`. |
 
 | Exceptions ||
@@ -1407,9 +1407,9 @@ This method has the same permission requirements as `https://developer.android.c
 
 | Parameters ||
 |---|---|
-| `request` | [NetworkRequest](../android/net/NetworkRequest.md): `https://developer.android.com/reference/kotlin/android/net/NetworkRequest` describing this request. This value cannot be `null`. |
+| `request` | [NetworkRequest](NetworkRequest.md): `https://developer.android.com/reference/kotlin/android/net/NetworkRequest` describing this request. This value cannot be `null`. |
 | `networkCallback` | [ConnectivityManager.NetworkCallback](../android/net/ConnectivityManager.NetworkCallback.md): The `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager.NetworkCallback` to be utilized for this request. Note the callback must not be shared - it uniquely specifies this request. This value cannot be `null`. |
-| `handler` | [Handler](../android/os/Handler.md): `https://developer.android.com/reference/kotlin/android/os/Handler.html#` to specify the thread upon which the callback will be invoked. This value cannot be `null`. |
+| `handler` | [Handler](../android.os/Handler.md): `https://developer.android.com/reference/kotlin/android/os/Handler.html#` to specify the thread upon which the callback will be invoked. This value cannot be `null`. |
 | --- | --- |
 
 ### requestNetwork
@@ -1431,9 +1431,9 @@ This method has the same permission requirements as `https://developer.android.c
 
 | Parameters ||
 |---|---|
-| `request` | [NetworkRequest](../android/net/NetworkRequest.md): `https://developer.android.com/reference/kotlin/android/net/NetworkRequest` describing this request. This value cannot be `null`. |
+| `request` | [NetworkRequest](NetworkRequest.md): `https://developer.android.com/reference/kotlin/android/net/NetworkRequest` describing this request. This value cannot be `null`. |
 | `networkCallback` | [ConnectivityManager.NetworkCallback](../android/net/ConnectivityManager.NetworkCallback.md): The `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager.NetworkCallback` to be utilized for this request. Note the callback must not be shared - it uniquely specifies this request. This value cannot be `null`. |
-| `handler` | [Handler](../android/os/Handler.md): `https://developer.android.com/reference/kotlin/android/os/Handler.html#` to specify the thread upon which the callback will be invoked. This value cannot be `null`. |
+| `handler` | [Handler](../android.os/Handler.md): `https://developer.android.com/reference/kotlin/android/os/Handler.html#` to specify the thread upon which the callback will be invoked. This value cannot be `null`. |
 | --- | --- |
 | `timeoutMs` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The time in milliseconds to attempt looking for a suitable network before `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager.NetworkCallback#onUnavailable()` is called. |
 
@@ -1457,7 +1457,7 @@ This method has the same permission requirements as `https://developer.android.c
 
 | Parameters ||
 |---|---|
-| `request` | [NetworkRequest](../android/net/NetworkRequest.md): `https://developer.android.com/reference/kotlin/android/net/NetworkRequest` describing this request. This value cannot be `null`. |
+| `request` | [NetworkRequest](NetworkRequest.md): `https://developer.android.com/reference/kotlin/android/net/NetworkRequest` describing this request. This value cannot be `null`. |
 | `networkCallback` | [ConnectivityManager.NetworkCallback](../android/net/ConnectivityManager.NetworkCallback.md): The `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager.NetworkCallback` to be utilized for this request. Note the callback must not be shared - it uniquely specifies this request. This value cannot be `null`. |
 | `timeoutMs` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The time in milliseconds to attempt looking for a suitable network before `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager.NetworkCallback#onUnavailable()` is called. The timeout must be a positive value (i.e. \>0). |
 | --- | --- |
@@ -1479,8 +1479,8 @@ Reserve a network to satisfy a set of `https://developer.android.com/reference/k
 
 | Parameters ||
 |---|---|
-| `request` | [NetworkRequest](../android/net/NetworkRequest.md): `https://developer.android.com/reference/kotlin/android/net/NetworkRequest` describing this request. This value cannot be `null`. |
-| `handler` | [Handler](../android/os/Handler.md): `https://developer.android.com/reference/kotlin/android/os/Handler.html#` to specify the thread upon which the callback will be invoked. This value cannot be `null`. |
+| `request` | [NetworkRequest](NetworkRequest.md): `https://developer.android.com/reference/kotlin/android/net/NetworkRequest` describing this request. This value cannot be `null`. |
+| `handler` | [Handler](../android.os/Handler.md): `https://developer.android.com/reference/kotlin/android/os/Handler.html#` to specify the thread upon which the callback will be invoked. This value cannot be `null`. |
 | `networkCallback` | [ConnectivityManager.NetworkCallback](../android/net/ConnectivityManager.NetworkCallback.md): The `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager.NetworkCallback` to be utilized for this request. Note the callback must not be shared - it uniquely specifies this request. This value cannot be `null`. |
 | --- | --- |
 
@@ -1516,7 +1516,7 @@ Binds the current process to `network`. All Sockets created in the future (and n
 
 | Parameters ||
 |---|---|
-| `network` | [Network](../android/net/Network.md)?: The `https://developer.android.com/reference/kotlin/android/net/Network` to bind the current process to, or `null` to clear the current binding. |
+| `network` | [Network](Network.md)?: The `https://developer.android.com/reference/kotlin/android/net/Network` to bind the current process to, or `null` to clear the current binding. |
 
 | Return ||
 |---|---|
@@ -1534,7 +1534,7 @@ Unregisters a callback previously registered via `https://developer.android.com/
 
 | Parameters ||
 |---|---|
-| `operation` | [PendingIntent](../android/app/PendingIntent.md): A PendingIntent equal (as defined by `https://developer.android.com/reference/kotlin/android/content/Intent.html#filterEquals(android.content.Intent)`) to the PendingIntent passed to `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager#registerNetworkCallback(android.net.NetworkRequest,%20android.app.PendingIntent)`. Cannot be null. |
+| `operation` | [PendingIntent](../android.app/PendingIntent.md): A PendingIntent equal (as defined by `https://developer.android.com/reference/kotlin/android/content/Intent.html#filterEquals(android.content.Intent)`) to the PendingIntent passed to `https://developer.android.com/reference/kotlin/android/net/ConnectivityManager#registerNetworkCallback(android.net.NetworkRequest,%20android.app.PendingIntent)`. Cannot be null. |
 
 ### unregisterNetworkCallback
 

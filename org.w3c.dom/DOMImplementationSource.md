@@ -8,7 +8,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 interface DOMImplementationSource
 ```
 
-| [org.w3c.dom.DOMImplementationSource](../org/w3c/dom/DOMImplementationSource.md) |
+| [org.w3c.dom.DOMImplementationSource](DOMImplementationSource.md) |
 
 This interface permits a DOM implementer to supply one or more implementations, based upon requested features and versions, as specified in . Each implemented`DOMImplementationSource`object is listed in the binding-specific list of available sources so that its`DOMImplementation`objects are made available.
 
@@ -18,8 +18,8 @@ See also the [Document Object Model (DOM) Level 3 Core Specification](http://www
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [DOMImplementation](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-d-o-m-implementation/index.html)! | [getDOMImplementation](../org/w3c/dom/DOMImplementationSource.md))`(`features:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` A method to request the first DOM implementation that supports the specified features. |
-| abstract [DOMImplementationList](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-d-o-m-implementation-list/index.html)! | [getDOMImplementationList](../org/w3c/dom/DOMImplementationSource.md))`(`features:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` A method to request a list of DOM implementations that support the specified features and versions, as specified in . |
+| abstract [DOMImplementation](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-d-o-m-implementation/index.html)! | [getDOMImplementation](DOMImplementationSource.md))`(`features:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` A method to request the first DOM implementation that supports the specified features. |
+| abstract [DOMImplementationList](https://kotlinlang.org/api/latest/jvm/stdlib/org.w3c.dom/-d-o-m-implementation-list/index.html)! | [getDOMImplementationList](DOMImplementationSource.md))`(`features:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` A method to request a list of DOM implementations that support the specified features and versions, as specified in . |
 
 ## Public methods
 

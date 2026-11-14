@@ -4,7 +4,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 
 # ExtractedTextRequest
 
-Kotlin| [Java](../android/view/inputmethod/ExtractedTextRequest.md) 
+Kotlin| [Java](ExtractedTextRequest.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class ExtractedTextRequest : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.inputmethod.ExtractedTextRequest](../android/view/inputmethod/ExtractedTextRequest.md) |
+| ↳ | [android.view.inputmethod.ExtractedTextRequest](ExtractedTextRequest.md) |
 
 Description of what an input method would like from an application when extract text from its input editor.
 
@@ -21,25 +21,25 @@ Description of what an input method would like from an application when extract 
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android.os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android.os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android.os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ExtractedTextRequest](../android/view/inputmethod/ExtractedTextRequest.md))`()` <br /> |
+| [ExtractedTextRequest](ExtractedTextRequest.md))`()` <br /> |
 
 | Public methods ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/view/inputmethod/ExtractedTextRequest.md))`()` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/view/inputmethod/ExtractedTextRequest.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Used to package this object into a [Parcel](../android/os/Parcel.md). |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](ExtractedTextRequest.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](ExtractedTextRequest.md))`(`dest:` ` [Parcel](../android.os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Used to package this object into a [Parcel](../android.os/Parcel.md). |
 
 | Properties ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ExtractedTextRequest](../android/view/inputmethod/ExtractedTextRequest.md)!\> | [CREATOR](../android/view/inputmethod/ExtractedTextRequest.md) Used to make this class parcelable. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [flags](../android/view/inputmethod/ExtractedTextRequest.md) Additional request flags, having the same possible values as the flags parameter of [InputConnection.getTextBeforeCursor()](../android/view/inputmethod/InputConnection.md)). |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hintMaxChars](../android/view/inputmethod/ExtractedTextRequest.md) Hint for the maximum number of characters to return. |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ExtractedTextRequest](ExtractedTextRequest.md)!\> | [CREATOR](ExtractedTextRequest.md) Used to make this class parcelable. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [flags](ExtractedTextRequest.md) Additional request flags, having the same possible values as the flags parameter of [InputConnection.getTextBeforeCursor()](InputConnection.md)). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hintMaxChars](ExtractedTextRequest.md) Hint for the maximum number of characters to return. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hintMaxLines](../android/view/inputmethod/ExtractedTextRequest.md) Hint for the maximum number of lines to return. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [token](../android/view/inputmethod/ExtractedTextRequest.md) Arbitrary integer that can be supplied in the request, which will be delivered back when reporting updates. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hintMaxLines](ExtractedTextRequest.md) Hint for the maximum number of lines to return. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [token](ExtractedTextRequest.md) Arbitrary integer that can be supplied in the request, which will be delivered back when reporting updates. |
 
 ## Public constructors
 
@@ -61,7 +61,7 @@ open fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) |
 
 ### writeToParcel
 
@@ -74,11 +74,11 @@ open fun writeToParcel(
 ): Unit
 ```
 
-Used to package this object into a [Parcel](../android/os/Parcel.md).
+Used to package this object into a [Parcel](../android.os/Parcel.md).
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](../android/os/Parcel.md):The [Parcel](../android/os/Parcel.md) to be written. |
+| `dest` | [Parcel](../android.os/Parcel.md):The [Parcel](../android.os/Parcel.md) to be written. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The flags used for parceling. |
 
 ## Properties
@@ -101,7 +101,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 var flags: Int
 ```
 
-Additional request flags, having the same possible values as the flags parameter of [InputConnection.getTextBeforeCursor()](../android/view/inputmethod/InputConnection.md)). 
+Additional request flags, having the same possible values as the flags parameter of [InputConnection.getTextBeforeCursor()](InputConnection.md)). 
 
 ### hintMaxChars
 

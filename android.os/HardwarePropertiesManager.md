@@ -4,7 +4,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # HardwarePropertiesManager
 
-Kotlin| [Java](../android/os/HardwarePropertiesManager.md) 
+Kotlin| [Java](HardwarePropertiesManager.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class HardwarePropertiesManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.os.HardwarePropertiesManager](../android/os/HardwarePropertiesManager.md) |
+| ↳ | [android.os.HardwarePropertiesManager](HardwarePropertiesManager.md) |
 
 The HardwarePropertiesManager class provides a mechanism of accessing hardware state of a device: CPU, GPU and battery temperatures, CPU usage per core, fan speed, etc.
 
@@ -21,24 +21,24 @@ The HardwarePropertiesManager class provides a mechanism of accessing hardware s
 
 | Constants ||
 |--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEVICE_TEMPERATURE_BATTERY](../android/os/HardwarePropertiesManager.md) Temperature of battery in Celsius. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEVICE_TEMPERATURE_CPU](../android/os/HardwarePropertiesManager.md) Temperature of CPUs in Celsius. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEVICE_TEMPERATURE_GPU](../android/os/HardwarePropertiesManager.md) Temperature of GPUs in Celsius. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEVICE_TEMPERATURE_BATTERY](HardwarePropertiesManager.md) Temperature of battery in Celsius. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEVICE_TEMPERATURE_CPU](HardwarePropertiesManager.md) Temperature of CPUs in Celsius. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEVICE_TEMPERATURE_GPU](HardwarePropertiesManager.md) Temperature of GPUs in Celsius. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEVICE_TEMPERATURE_SKIN](../android/os/HardwarePropertiesManager.md) Temperature of device skin in Celsius. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TEMPERATURE_CURRENT](../android/os/HardwarePropertiesManager.md) Get current temperature. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TEMPERATURE_SHUTDOWN](../android/os/HardwarePropertiesManager.md) Get shutdown temperature threshold. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEVICE_TEMPERATURE_SKIN](HardwarePropertiesManager.md) Temperature of device skin in Celsius. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TEMPERATURE_CURRENT](HardwarePropertiesManager.md) Get current temperature. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TEMPERATURE_SHUTDOWN](HardwarePropertiesManager.md) Get shutdown temperature threshold. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TEMPERATURE_THROTTLING](../android/os/HardwarePropertiesManager.md) Get throttling temperature threshold. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TEMPERATURE_THROTTLING_BELOW_VR_MIN](../android/os/HardwarePropertiesManager.md) Get throttling temperature threshold above which minimum clockrates for VR mode will not be met. |
-| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [UNDEFINED_TEMPERATURE](../android/os/HardwarePropertiesManager.md) Undefined temperature constant. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TEMPERATURE_THROTTLING](HardwarePropertiesManager.md) Get throttling temperature threshold. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TEMPERATURE_THROTTLING_BELOW_VR_MIN](HardwarePropertiesManager.md) Get throttling temperature threshold above which minimum clockrates for VR mode will not be met. |
+| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [UNDEFINED_TEMPERATURE](HardwarePropertiesManager.md) Undefined temperature constant. |
 | --- | --- |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [CpuUsageInfo](../android/os/CpuUsageInfo.md)!\> | [getCpuUsages](../android/os/HardwarePropertiesManager.md))`()` Return an array of CPU usage info for each core. |
-| open [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html) | [getDeviceTemperatures](../android/os/HardwarePropertiesManager.md))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `source:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return an array of device temperatures in Celsius. |
-| open [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html) | [getFanSpeeds](../android/os/HardwarePropertiesManager.md))`()` Return an array of fan speeds in RPM. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [CpuUsageInfo](CpuUsageInfo.md)!\> | [getCpuUsages](HardwarePropertiesManager.md))`()` Return an array of CPU usage info for each core. |
+| open [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html) | [getDeviceTemperatures](HardwarePropertiesManager.md))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `source:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return an array of device temperatures in Celsius. |
+| open [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html) | [getFanSpeeds](HardwarePropertiesManager.md))`()` Return an array of fan speeds in RPM. |
 | --- | --- |
 
 ## Constants
@@ -165,7 +165,7 @@ Return an array of CPU usage info for each core.
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [CpuUsageInfo](../android/os/CpuUsageInfo.md)!> | an array of [android.os.CpuUsageInfo](../android/os/CpuUsageInfo.md) for each core. Return`null`for each unplugged core. Empty if CPU usage is not supported on this system. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [CpuUsageInfo](CpuUsageInfo.md)!> | an array of [android.os.CpuUsageInfo](CpuUsageInfo.md) for each core. Return`null`for each unplugged core. Empty if CPU usage is not supported on this system. |
 
 | Exceptions ||
 |-------------------------------|----------------------------------------------------------------------------------------------------------------------------|
@@ -186,12 +186,12 @@ Return an array of device temperatures in Celsius.
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `type` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):type of requested device temperature, one of [DEVICE_TEMPERATURE_CPU](../android/os/HardwarePropertiesManager.md), [DEVICE_TEMPERATURE_GPU](../android/os/HardwarePropertiesManager.md), [DEVICE_TEMPERATURE_BATTERY](../android/os/HardwarePropertiesManager.md) or [DEVICE_TEMPERATURE_SKIN](../android/os/HardwarePropertiesManager.md). Value is [android.os.HardwarePropertiesManager#DEVICE_TEMPERATURE_CPU](../android/os/HardwarePropertiesManager.md), [android.os.HardwarePropertiesManager#DEVICE_TEMPERATURE_GPU](../android/os/HardwarePropertiesManager.md), [android.os.HardwarePropertiesManager#DEVICE_TEMPERATURE_BATTERY](../android/os/HardwarePropertiesManager.md), or [android.os.HardwarePropertiesManager#DEVICE_TEMPERATURE_SKIN](../android/os/HardwarePropertiesManager.md) |
-| `source` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):source of requested device temperature, one of [TEMPERATURE_CURRENT](../android/os/HardwarePropertiesManager.md), [TEMPERATURE_THROTTLING](../android/os/HardwarePropertiesManager.md), [TEMPERATURE_THROTTLING_BELOW_VR_MIN](../android/os/HardwarePropertiesManager.md) or [TEMPERATURE_SHUTDOWN](../android/os/HardwarePropertiesManager.md). Value is [android.os.HardwarePropertiesManager#TEMPERATURE_CURRENT](../android/os/HardwarePropertiesManager.md), [android.os.HardwarePropertiesManager#TEMPERATURE_THROTTLING](../android/os/HardwarePropertiesManager.md), [android.os.HardwarePropertiesManager#TEMPERATURE_SHUTDOWN](../android/os/HardwarePropertiesManager.md), or [android.os.HardwarePropertiesManager#TEMPERATURE_THROTTLING_BELOW_VR_MIN](../android/os/HardwarePropertiesManager.md) |
+| `type` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):type of requested device temperature, one of [DEVICE_TEMPERATURE_CPU](HardwarePropertiesManager.md), [DEVICE_TEMPERATURE_GPU](HardwarePropertiesManager.md), [DEVICE_TEMPERATURE_BATTERY](HardwarePropertiesManager.md) or [DEVICE_TEMPERATURE_SKIN](HardwarePropertiesManager.md). Value is [android.os.HardwarePropertiesManager#DEVICE_TEMPERATURE_CPU](HardwarePropertiesManager.md), [android.os.HardwarePropertiesManager#DEVICE_TEMPERATURE_GPU](HardwarePropertiesManager.md), [android.os.HardwarePropertiesManager#DEVICE_TEMPERATURE_BATTERY](HardwarePropertiesManager.md), or [android.os.HardwarePropertiesManager#DEVICE_TEMPERATURE_SKIN](HardwarePropertiesManager.md) |
+| `source` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):source of requested device temperature, one of [TEMPERATURE_CURRENT](HardwarePropertiesManager.md), [TEMPERATURE_THROTTLING](HardwarePropertiesManager.md), [TEMPERATURE_THROTTLING_BELOW_VR_MIN](HardwarePropertiesManager.md) or [TEMPERATURE_SHUTDOWN](HardwarePropertiesManager.md). Value is [android.os.HardwarePropertiesManager#TEMPERATURE_CURRENT](HardwarePropertiesManager.md), [android.os.HardwarePropertiesManager#TEMPERATURE_THROTTLING](HardwarePropertiesManager.md), [android.os.HardwarePropertiesManager#TEMPERATURE_SHUTDOWN](HardwarePropertiesManager.md), or [android.os.HardwarePropertiesManager#TEMPERATURE_THROTTLING_BELOW_VR_MIN](HardwarePropertiesManager.md) |
 
 | Return ||
 |-------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html) | an array of requested float device temperatures. Temperature equals to [UNDEFINED_TEMPERATURE](../android/os/HardwarePropertiesManager.md) if undefined. Empty if platform doesn't provide the queried temperature. This value cannot be`null`. |
+| [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html) | an array of requested float device temperatures. Temperature equals to [UNDEFINED_TEMPERATURE](HardwarePropertiesManager.md) if undefined. Empty if platform doesn't provide the queried temperature. This value cannot be`null`. |
 
 | Exceptions ||
 |-------------------------------|----------------------------------------------------------------------------------------------------------------------------|

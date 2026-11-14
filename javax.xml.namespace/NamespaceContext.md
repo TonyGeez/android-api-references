@@ -8,7 +8,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 interface NamespaceContext
 ```
 
-| [javax.xml.namespace.NamespaceContext](../javax/xml/namespace/NamespaceContext.md) |
+| [javax.xml.namespace.NamespaceContext](NamespaceContext.md) |
 
 Interface for read only XML Namespace context processing.
 
@@ -47,9 +47,9 @@ A prefix can only be bound to a**single**Namespace URI in the current scope.
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getNamespaceURI](../javax/xml/namespace/NamespaceContext.md))`(`prefix:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Get Namespace URI bound to a prefix in the current scope. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPrefix](../javax/xml/namespace/NamespaceContext.md))`(`namespaceURI:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Get prefix bound to Namespace URI in the current scope. |
-| abstract [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?\>! | [getPrefixes](../javax/xml/namespace/NamespaceContext.md))`(`namespaceURI:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Get all prefixes bound to a Namespace URI in the current scope. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getNamespaceURI](NamespaceContext.md))`(`prefix:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Get Namespace URI bound to a prefix in the current scope. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPrefix](NamespaceContext.md))`(`namespaceURI:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Get prefix bound to Namespace URI in the current scope. |
+| abstract [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?\>! | [getPrefixes](NamespaceContext.md))`(`namespaceURI:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Get all prefixes bound to a Namespace URI in the current scope. |
 | --- | --- |
 
 ## Public methods
@@ -69,10 +69,10 @@ When requesting a Namespace URI by prefix, the following table describes the ret
 | `getNamespaceURI(prefix)`return value for specified prefixes ||
 | --- | --- |
 | prefix parameter | Namespace URI return value |
-| `DEFAULT_NS_PREFIX`("") | default Namespace URI in the current scope or [XMLConstants.NULL_NS_URI("")](../javax/xml/XMLConstants.md) when there is no default Namespace URI in the current scope |
+| `DEFAULT_NS_PREFIX`("") | default Namespace URI in the current scope or [XMLConstants.NULL_NS_URI("")](../javax.xml/XMLConstants.md) when there is no default Namespace URI in the current scope |
 | bound prefix | Namespace URI bound to prefix in current scope |
 | --- | --- |
-| unbound prefix | [XMLConstants.NULL_NS_URI("")](../javax/xml/XMLConstants.md) |
+| unbound prefix | [XMLConstants.NULL_NS_URI("")](../javax.xml/XMLConstants.md) |
 | `XMLConstants.XML_NS_PREFIX`("xml") | `XMLConstants.XML_NS_URI`("http://www.w3.org/XML/1998/namespace") |
 | `XMLConstants.XMLNS_ATTRIBUTE`("xmlns") | `XMLConstants.XMLNS_ATTRIBUTE_NS_URI`("http://www.w3.org/2000/xmlns/") |
 | --- | --- |
@@ -96,7 +96,7 @@ abstract fun getPrefix(namespaceURI: String!): String!
 
 Get prefix bound to Namespace URI in the current scope.
 
-To get all prefixes bound to a Namespace URI in the current scope, use [getPrefixes(java.lang.String)](../javax/xml/namespace/NamespaceContext.md)).
+To get all prefixes bound to a Namespace URI in the current scope, use [getPrefixes(java.lang.String)](NamespaceContext.md)).
 
 When requesting a prefix by Namespace URI, the following table describes the returned prefix value for all Namespace URI values:
 

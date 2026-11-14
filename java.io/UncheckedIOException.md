@@ -11,23 +11,23 @@ open class UncheckedIOException : RuntimeException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
-| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) ||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) |||
+| | | ↳ | [java.lang.RuntimeException](../java.lang/RuntimeException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.io.UncheckedIOException](../java/io/UncheckedIOException.md) |
+| | | | ↳ | [java.io.UncheckedIOException](UncheckedIOException.md) |
 
-Wraps an [IOException](../java/io/IOException.md) with an unchecked exception.
+Wraps an [IOException](IOException.md) with an unchecked exception.
 
 ## Summary
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [UncheckedIOException](../java/io/UncheckedIOException.md))`(`cause:` ` [IOException](../java/io/IOException.md)!`)` Constructs an instance of this class. |
-| [UncheckedIOException](../java/io/UncheckedIOException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [IOException](../java/io/IOException.md)!`)` Constructs an instance of this class. |
+| [UncheckedIOException](UncheckedIOException.md))`(`cause:` ` [IOException](IOException.md)!`)` Constructs an instance of this class. |
+| [UncheckedIOException](UncheckedIOException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [IOException](IOException.md)!`)` Constructs an instance of this class. |
 
 | Properties ||
 |----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [IOException](../java/io/IOException.md)? | [cause](../java/io/UncheckedIOException.md) Returns the cause of this exception. |
+| open [IOException](IOException.md)? | [cause](UncheckedIOException.md) Returns the cause of this exception. |
 
 ## Public constructors
 
@@ -43,7 +43,7 @@ Constructs an instance of this class.
 
 | Parameters ||
 |---------|-----------------------------------------------------------------------------------------------------|
-| `cause` | [IOException](../java/io/IOException.md)!:the`IOException` |
+| `cause` | [IOException](IOException.md)!:the`IOException` |
 
 | Exceptions ||
 |----------------------------------|-----------------------|
@@ -64,7 +64,7 @@ Constructs an instance of this class.
 | Parameters ||
 |-----------|-------------------------------------------------------------------------------------------------------------------|
 | `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the detail message, can be null |
-| `cause` | [IOException](../java/io/IOException.md)!:the`IOException` |
+| `cause` | [IOException](IOException.md)!:the`IOException` |
 
 | Exceptions ||
 |----------------------------------|-----------------------|
@@ -84,4 +84,4 @@ Returns the cause of this exception.
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------------------------------------|
-| [IOException](../java/io/IOException.md)? | the`IOException`which is the cause of this exception. |
+| [IOException](IOException.md)? | the`IOException`which is the cause of this exception. |

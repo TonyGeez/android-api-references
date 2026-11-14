@@ -13,14 +13,14 @@ interface OnDataCaptureListener
 
 | [android.media.audiofx.Visualizer.OnDataCaptureListener](../android/media/audiofx/Visualizer.OnDataCaptureListener.md) |
 
-The OnDataCaptureListener interface defines methods called by the Visualizer to periodically update the audio visualization capture. The client application can implement this interface and register the listener with the [setDataCaptureListener(android.media.audiofx.Visualizer.OnDataCaptureListener,int,boolean,boolean)](../android/media/audiofx/Visualizer.md))method.
+The OnDataCaptureListener interface defines methods called by the Visualizer to periodically update the audio visualization capture. The client application can implement this interface and register the listener with the [setDataCaptureListener(android.media.audiofx.Visualizer.OnDataCaptureListener,int,boolean,boolean)](Visualizer.md))method.
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onFftDataCapture](../android/media/audiofx/Visualizer.OnDataCaptureListener.md))`(`visualizer:` ` [Visualizer](../android/media/audiofx/Visualizer.md)!`, `fft:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `samplingRate:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Method called when a new frequency capture is available. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onWaveFormDataCapture](../android/media/audiofx/Visualizer.OnDataCaptureListener.md))`(`visualizer:` ` [Visualizer](../android/media/audiofx/Visualizer.md)!`, `waveform:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `samplingRate:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Method called when a new waveform capture is available. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onFftDataCapture](../android/media/audiofx/Visualizer.OnDataCaptureListener.md))`(`visualizer:` ` [Visualizer](Visualizer.md)!`, `fft:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `samplingRate:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Method called when a new frequency capture is available. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onWaveFormDataCapture](../android/media/audiofx/Visualizer.OnDataCaptureListener.md))`(`visualizer:` ` [Visualizer](Visualizer.md)!`, `waveform:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `samplingRate:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Method called when a new waveform capture is available. |
 
 ## Public methods
 
@@ -44,7 +44,7 @@ For the explanation of the fft data array layout, and the example code for proce
 
 | Parameters ||
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `visualizer` | [Visualizer](../android/media/audiofx/Visualizer.md)!:Visualizer object on which the listener is registered. |
+| `visualizer` | [Visualizer](Visualizer.md)!:Visualizer object on which the listener is registered. |
 | `fft` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:array of bytes containing the frequency representation. |
 | `samplingRate` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):sampling rate of the visualized audio. |
 | --- | --- |
@@ -67,7 +67,7 @@ Data in the waveform buffer is valid only within the scope of the callback. Appl
 
 | Parameters ||
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `visualizer` | [Visualizer](../android/media/audiofx/Visualizer.md)!:Visualizer object on which the listener is registered. |
+| `visualizer` | [Visualizer](Visualizer.md)!:Visualizer object on which the listener is registered. |
 | `waveform` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:array of bytes containing the waveform representation. |
 | `samplingRate` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):sampling rate of the visualized audio. |
 | --- | --- |

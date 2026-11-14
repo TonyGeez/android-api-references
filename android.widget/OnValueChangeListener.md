@@ -19,7 +19,7 @@ Interface to listen for changes of the current value.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onValueChange](../android/widget/NumberPicker.OnValueChangeListener.md))`(`picker:` ` [NumberPicker](../android/widget/NumberPicker.md)!`, `oldVal:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `newVal:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called upon a change of the current value. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onValueChange](../android/widget/NumberPicker.OnValueChangeListener.md))`(`picker:` ` [NumberPicker](NumberPicker.md)!`, `oldVal:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `newVal:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called upon a change of the current value. |
 
 ## Public methods
 
@@ -39,7 +39,7 @@ Called upon a change of the current value.
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| `picker` | [NumberPicker](../android/widget/NumberPicker.md)!:The NumberPicker associated with this listener. |
+| `picker` | [NumberPicker](NumberPicker.md)!:The NumberPicker associated with this listener. |
 | `oldVal` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The previous value. |
 | `newVal` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The new value. |
 | --- | --- |

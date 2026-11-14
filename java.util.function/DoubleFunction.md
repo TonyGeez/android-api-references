@@ -8,17 +8,17 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 @FunctionalInterface interface DoubleFunction<R : Any!>
 ```
 
-| [java.util.function.DoubleFunction](../java/util/function/DoubleFunction.md) |
+| [java.util.function.DoubleFunction](DoubleFunction.md) |
 
-Represents a function that accepts a double-valued argument and produces a result. This is the`double`-consuming primitive specialization for [Function](../java/util/function/Function.md).
+Represents a function that accepts a double-valued argument and produces a result. This is the`double`-consuming primitive specialization for [Function](Function.md).
 
-This is a [functional interface](../java/util/function/_package.md) whose functional method is [apply(double)](../java/util/function/DoubleFunction.md)).
+This is a [functional interface](_package.md) whose functional method is [apply(double)](DoubleFunction.md)).
 
 ## Summary
 
 | Public methods ||
 |-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstractR | [apply](../java/util/function/DoubleFunction.md))`(`value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Applies this function to the given argument. |
+| abstractR | [apply](DoubleFunction.md))`(`value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Applies this function to the given argument. |
 
 ## Public methods
 

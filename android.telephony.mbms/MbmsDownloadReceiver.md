@@ -8,8 +8,8 @@ open class MbmsDownloadReceiver : BroadcastReceiver
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.content.BroadcastReceiver](../android/content/BroadcastReceiver.md) ||
-| | ↳ | [android.telephony.mbms.MbmsDownloadReceiver](../android/telephony/mbms/MbmsDownloadReceiver.md) |
+| ↳ | [android.content.BroadcastReceiver](../android.content/BroadcastReceiver.md) ||
+| | ↳ | [android.telephony.mbms.MbmsDownloadReceiver](MbmsDownloadReceiver.md) |
 
 The `https://developer.android.com/reference/kotlin/android/content/BroadcastReceiver.html#` responsible for handling intents sent from the middleware. Apps that wish to download using MBMS APIs should declare this class in their AndroidManifest.xml as follows:
 
@@ -67,5 +67,5 @@ The Intent filters used in android.content.Context#registerReceiver and in appli
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md)!: The Context in which the receiver is running. |
-| `intent` | [Intent](../android/content/Intent.md)!: The Intent being received. |
+| `context` | [Context](../android.content/Context.md)!: The Context in which the receiver is running. |
+| `intent` | [Intent](../android.content/Intent.md)!: The Intent being received. |

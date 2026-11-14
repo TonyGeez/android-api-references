@@ -8,14 +8,14 @@ open class AnimatedVectorDrawable : Drawable, Animatable2
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.graphics.drawable.Drawable](../android/graphics/drawable/Drawable.md) ||
-| | ↳ | [android.graphics.drawable.AnimatedVectorDrawable](../android/graphics/drawable/AnimatedVectorDrawable.md) |
+| ↳ | [android.graphics.drawable.Drawable](Drawable.md) ||
+| | ↳ | [android.graphics.drawable.AnimatedVectorDrawable](AnimatedVectorDrawable.md) |
 
 This class animates properties of a `https://developer.android.com/reference/kotlin/android/graphics/drawable/VectorDrawable` with animations defined using `https://developer.android.com/reference/kotlin/android/animation/ObjectAnimator.html#` or `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet.html#`.
 
 Starting from API 25, AnimatedVectorDrawable runs on RenderThread (as opposed to on UI thread for earlier APIs). This means animations in AnimatedVectorDrawable can remain smooth even when there is heavy workload on the UI thread. Note: If the UI thread is unresponsive, RenderThread may continue animating until the UI thread is capable of pushing another frame. Therefore, it is not possible to precisely coordinate a RenderThread-enabled AnimatedVectorDrawable with UI thread animations. Additionally, `https://developer.android.com/reference/kotlin/android/graphics/drawable/Animatable2.AnimationCallback#onAnimationEnd(android.graphics.drawable.Drawable)` will be called the frame after the AnimatedVectorDrawable finishes on the RenderThread.
 
-AnimatedVectorDrawable can be defined in either [three separate XML files](../android/graphics/drawable/AnimatedVectorDrawable.md), or [one XML](../android/graphics/drawable/AnimatedVectorDrawable.md).
+AnimatedVectorDrawable can be defined in either [three separate XML files](AnimatedVectorDrawable.md), or [one XML](AnimatedVectorDrawable.md).
 
 ### Define an AnimatedVectorDrawable in three separate XML files
 
@@ -56,7 +56,7 @@ AnimatedVectorDrawable can be defined in either [three separate XML files](../an
 
  <br />
 
- Below is an example of a VectorDrawable defined in vectordrawable.xml. This VectorDrawable is referred to by its file name (not including file suffix) in the [AnimatedVectorDrawable XML example](../android/graphics/drawable/AnimatedVectorDrawable.md).
+ Below is an example of a VectorDrawable defined in vectordrawable.xml. This VectorDrawable is referred to by its file name (not including file suffix) in the [AnimatedVectorDrawable XML example](AnimatedVectorDrawable.md).
 
   ```kotlin
   <vector xmlns:android="http://schemas.android.com/apk/res/android"
@@ -82,7 +82,7 @@ AnimatedVectorDrawable can be defined in either [three separate XML files](../an
  #### XML for AnimatedVectorDrawable
 
  An AnimatedVectorDrawable element has a VectorDrawable attribute, and one or more target element(s). The target element can specify its target by android:name attribute, and link the target with the proper ObjectAnimator or AnimatorSet by android:animation attribute.
- The following code sample defines an AnimatedVectorDrawable. Note that the names refer to the groups and paths in the [VectorDrawable XML above](../android/graphics/drawable/AnimatedVectorDrawable.md).
+ The following code sample defines an AnimatedVectorDrawable. Note that the names refer to the groups and paths in the [VectorDrawable XML above](AnimatedVectorDrawable.md).
 
   ```kotlin
   <animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
@@ -100,7 +100,7 @@ AnimatedVectorDrawable can be defined in either [three separate XML files](../an
 
  #### XML for Animations defined using ObjectAnimator or AnimatorSet
 
- From the previous [example of AnimatedVectorDrawable](../android/graphics/drawable/AnimatedVectorDrawable.md), two animations were used: rotation.xml and path_morph.xml.
+ From the previous [example of AnimatedVectorDrawable](AnimatedVectorDrawable.md), two animations were used: rotation.xml and path_morph.xml.
  rotation.xml rotates the target group from 0 degree to 360 degrees over 6000ms:
 
   ```kotlin
@@ -181,9 +181,9 @@ Since the AAPT tool supports a new format that bundles several related XML files
 
 | XML attributes ||
 |---|---|
-| [`android:animation`](../android/graphics/drawable/AnimatedVectorDrawable.md) | The animation for the target path, group or vector drawable. |
-| [`android:drawable`](../android/graphics/drawable/AnimatedVectorDrawable.md) | The static vector drawable. |
-| [`android:name`](../android/graphics/drawable/AnimatedVectorDrawable.md) | The name of the target path, group or vector drawable. |
+| [`android:animation`](AnimatedVectorDrawable.md) | The animation for the target path, group or vector drawable. |
+| [`android:drawable`](AnimatedVectorDrawable.md) | The static vector drawable. |
+| [`android:name`](AnimatedVectorDrawable.md) | The name of the target path, group or vector drawable. |
 | --- | --- |
 
 | Public constructors ||
@@ -200,20 +200,20 @@ Since the AAPT tool supports a new format that bundles several related XML files
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimatedVectorDrawable#getAlpha()()` For API 25 and later, AnimatedVectorDrawable runs on RenderThread. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimatedVectorDrawable#getChangingConfigurations()()` Return a mask of the configuration parameters for which this drawable may change, requiring that it be re-created. |
 | --- | --- |
-| open [ColorFilter](../android/graphics/ColorFilter.md)? | `https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimatedVectorDrawable#getColorFilter()()` Returns the current color filter, or `null` if none set. |
+| open [ColorFilter](../android.graphics/ColorFilter.md)? | `https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimatedVectorDrawable#getColorFilter()()` Returns the current color filter, or `null` if none set. |
 | open [Drawable.ConstantState](../android/graphics/drawable/Drawable.ConstantState.md)? | `https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimatedVectorDrawable#getConstantState()()` Return a `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.ConstantState` instance that holds the shared state of this Drawable. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimatedVectorDrawable#getIntrinsicHeight()()` Returns the drawable's intrinsic height. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimatedVectorDrawable#getIntrinsicWidth()()` Returns the drawable's intrinsic width. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimatedVectorDrawable#getOpacity()()` Return the opacity/transparency of this Drawable. |
-| open [Insets](../android/graphics/Insets.md) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimatedVectorDrawable#getOpticalInsets()()` Return in insets the layout insets suggested by this Drawable for use with alignment operations during layout. |
+| open [Insets](../android.graphics/Insets.md) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimatedVectorDrawable#getOpticalInsets()()` Return in insets the layout insets suggested by this Drawable for use with alignment operations during layout. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimatedVectorDrawable#getOutline(android.graphics.Outline)(outline: https://developer.android.com/reference/kotlin/android/graphics/Outline.html#)` Called to get the drawable to populate the Outline that defines its drawing area. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimatedVectorDrawable#inflate(android.content.res.Resources,%20org.xmlpull.v1.XmlPullParser,%20android.util.AttributeSet,%20android.content.res.Resources.Theme)(res: https://developer.android.com/reference/kotlin/android/content/res/Resources.html#, parser: https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser.html#, attrs: https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#, theme: https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#?)` Inflate this Drawable from an XML resource optionally styled by a theme. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimatedVectorDrawable#isRunning()()` Indicates whether the animation is running. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimatedVectorDrawable#isStateful()()` Indicates whether this drawable will change its appearance based on state. |
-| open [Drawable](../android/graphics/drawable/Drawable.md) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimatedVectorDrawable#mutate()()` Make this drawable mutable. |
+| open [Drawable](Drawable.md) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimatedVectorDrawable#mutate()()` Make this drawable mutable. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimatedVectorDrawable#onLayoutDirectionChanged(kotlin.Int)(layoutDirection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called when the drawable's resolved layout direction changes. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/AnimatedVectorDrawable#registerAnimationCallback(android.graphics.drawable.Animatable2.AnimationCallback)(callback: https://developer.android.com/reference/kotlin/android/graphics/drawable/Animatable2.AnimationCallback)` Adds a callback to listen to the animation events. |
@@ -331,7 +331,7 @@ Draws the AnimatedVectorDrawable into the given canvas.
 
 | Parameters ||
 |---|---|
-| `canvas` | [Canvas](../android/graphics/Canvas.md): The canvas to draw into |
+| `canvas` | [Canvas](../android.graphics/Canvas.md): The canvas to draw into |
 
 ### getAlpha
 
@@ -471,7 +471,7 @@ The default behavior defines the outline to be the bounding rectangle of 0 alpha
 
 | Parameters ||
 |---|---|
-| `outline` | [Outline](../android/graphics/Outline.md): This value cannot be `null`. |
+| `outline` | [Outline](../android.graphics/Outline.md): This value cannot be `null`. |
 
 ### inflate
 
@@ -491,8 +491,8 @@ Inflate this Drawable from an XML resource optionally styled by a theme. This ca
 | Parameters ||
 |---|---|
 | `r` | Resources used to resolve attribute values. This value cannot be `null`. |
-| `parser` | [XmlPullParser](../org/xmlpull/v1/XmlPullParser.md): XML parser from which to inflate this Drawable. This value cannot be `null`. |
-| `attrs` | [AttributeSet](../android/util/AttributeSet.md): Base set of attribute values. This value cannot be `null`. |
+| `parser` | [XmlPullParser](../org.xmlpull.v1/XmlPullParser.md): XML parser from which to inflate this Drawable. This value cannot be `null`. |
+| `attrs` | [AttributeSet](../android.util/AttributeSet.md): Base set of attribute values. This value cannot be `null`. |
 | --- | --- |
 | `theme` | [Resources.Theme](../android/content/res/Resources.Theme.md)?: Theme to apply, may be null |
 
@@ -617,7 +617,7 @@ Pass `null` to remove any existing color filter.
 
 | Parameters ||
 |---|---|
-| `colorFilter` | [ColorFilter](../android/graphics/ColorFilter.md)?: The color filter to apply, or `null` to remove the existing color filter |
+| `colorFilter` | [ColorFilter](../android.graphics/ColorFilter.md)?: The color filter to apply, or `null` to remove the existing color filter |
 
 ### setHotspot
 
@@ -676,7 +676,7 @@ Defines how this drawable's tint color should be blended into the drawable befor
 
 | Parameters ||
 |---|---|
-| `blendMode` | [BlendMode](../android/graphics/BlendMode.md)!: This value cannot be `null`. |
+| `blendMode` | [BlendMode](../android.graphics/BlendMode.md)!: This value cannot be `null`. |
 
 ### setTintList
 
@@ -694,7 +694,7 @@ A Drawable's drawing content will be blended together with its tint before it is
 
 | Parameters ||
 |---|---|
-| `tint` | [ColorStateList](../android/content/res/ColorStateList.md)?: Color state list to use for tinting this drawable, or `null` to clear the tint |
+| `tint` | [ColorStateList](../android.content.res/ColorStateList.md)?: Color state list to use for tinting this drawable, or `null` to clear the tint |
 
 ### setVisible
 
@@ -770,7 +770,7 @@ Override this in your subclass to change appearance if you vary based on the bou
 
 | Parameters ||
 |---|---|
-| `bounds` | [Rect](../android/graphics/Rect.md): This value cannot be `null`. |
+| `bounds` | [Rect](../android.graphics/Rect.md): This value cannot be `null`. |
 
 ### onLevelChange
 

@@ -4,7 +4,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # SelectFormat
 
-Kotlin | [Java](../android/icu/text/SelectFormat.md) 
+Kotlin | [Java](SelectFormat.md) 
 | --- | --- |
 
 ```
@@ -13,8 +13,8 @@ open class SelectFormat : Format
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.text.Format](../java/text/Format.md) ||
-| | ↳ | [android.icu.text.SelectFormat](../android/icu/text/SelectFormat.md) |
+| ↳ | [java.text.Format](../java.text/Format.md) ||
+| | ↳ | [android.icu.text.SelectFormat](SelectFormat.md) |
 
 `SelectFormat` supports the creation of internationalized messages by selecting phrases based on keywords. The pattern specifies how to map keywords to phrases and provides a default phrase. The object provided to the format method is a string that's matched against the keywords. If there is a match, the corresponding phrase is selected; otherwise, the default phrase is used.
 
@@ -87,24 +87,24 @@ Produces the output:
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SelectFormat](../android/icu/text/SelectFormat.md))`(`pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a new `SelectFormat` for a given pattern string. |
+| [SelectFormat](SelectFormat.md))`(`pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a new `SelectFormat` for a given pattern string. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [applyPattern](../android/icu/text/SelectFormat.md))`(`pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the pattern used by this select format. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/icu/text/SelectFormat.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| open [StringBuffer](../java/lang/StringBuffer.md)! | [format](../android/icu/text/SelectFormat.md))`(`keyword:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `toAppendTo:` ` [StringBuffer](../java/lang/StringBuffer.md)!`, `pos:` ` [FieldPosition](../java/text/FieldPosition.md)!`)` Selects the phrase for the given keyword. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [applyPattern](SelectFormat.md))`(`pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the pattern used by this select format. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](SelectFormat.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| open [StringBuffer](../java.lang/StringBuffer.md)! | [format](SelectFormat.md))`(`keyword:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `toAppendTo:` ` [StringBuffer](../java.lang/StringBuffer.md)!`, `pos:` ` [FieldPosition](../java.text/FieldPosition.md)!`)` Selects the phrase for the given keyword. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](../android/icu/text/SelectFormat.md))`(`keyword:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Selects the phrase for the given keyword. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/icu/text/SelectFormat.md))`()` Returns a hash code value for the object. |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [parseObject](../android/icu/text/SelectFormat.md))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `pos:` ` [ParsePosition](../java/text/ParsePosition.md)!`)` This method is not supported by `SelectFormat`. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](SelectFormat.md))`(`keyword:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Selects the phrase for the given keyword. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](SelectFormat.md))`()` Returns a hash code value for the object. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [parseObject](SelectFormat.md))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `pos:` ` [ParsePosition](../java.text/ParsePosition.md)!`)` This method is not supported by `SelectFormat`. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toPattern](../android/icu/text/SelectFormat.md))`()` Returns the pattern for this `SelectFormat` |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/icu/text/SelectFormat.md))`()` Returns a string representation of the object. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toPattern](SelectFormat.md))`()` Returns the pattern for this `SelectFormat` |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](SelectFormat.md))`()` Returns a string representation of the object. |
 
 | Inherited functions ||
 |---|---|
-| From class [Format](../java/text/Format.md) |----------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](../java/text/Format.md))`()` Creates and returns a copy of this object. <br /> | | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](../java/text/Format.md))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Formats an object to produce a string. This is equivalent to [format](../java/text/Format.md))`(obj, new StringBuffer(), new FieldPosition(0)).toString();` <br /> | | [AttributedCharacterIterator](../java/text/AttributedCharacterIterator.md)! | [formatToCharacterIterator](../java/text/Format.md))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Formats an Object producing an `AttributedCharacterIterator`. You can use the returned `AttributedCharacterIterator` to build the resulting String, as well as to determine information about the resulting String. Each attribute key of the AttributedCharacterIterator will be of type `Field`. It is up to each `Format` implementation to define what the legal values are for each attribute in the `AttributedCharacterIterator`, but typically the attribute key is also used as the attribute value. The default implementation creates an `AttributedCharacterIterator` with no attributes. Subclasses that support fields should override this and create an `AttributedCharacterIterator` with meaningful attributes. <br /> | | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [parseObject](../java/text/Format.md))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Parses text from the beginning of the given string to produce an object. The method may not use the entire text of the given string. <br /> | ||
+| From class [Format](../java.text/Format.md) |----------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](../java.text/Format.md))`()` Creates and returns a copy of this object. <br /> | | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](../java.text/Format.md))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Formats an object to produce a string. This is equivalent to [format](../java.text/Format.md))`(obj, new StringBuffer(), new FieldPosition(0)).toString();` <br /> | | [AttributedCharacterIterator](../java.text/AttributedCharacterIterator.md)! | [formatToCharacterIterator](../java.text/Format.md))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Formats an Object producing an `AttributedCharacterIterator`. You can use the returned `AttributedCharacterIterator` to build the resulting String, as well as to determine information about the resulting String. Each attribute key of the AttributedCharacterIterator will be of type `Field`. It is up to each `Format` implementation to define what the legal values are for each attribute in the `AttributedCharacterIterator`, but typically the attribute key is also used as the attribute value. The default implementation creates an `AttributedCharacterIterator` with no attributes. Subclasses that support fields should override this and create an `AttributedCharacterIterator` with meaningful attributes. <br /> | | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [parseObject](../java.text/Format.md))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Parses text from the beginning of the given string to produce an object. The method may not use the entire text of the given string. <br /> | ||
 
 ## Public constructors
 
@@ -187,14 +187,14 @@ Selects the phrase for the given keyword. and appends the formatted message to t
 | Parameters ||
 |--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `obj` | The object to format |
-| `toAppendTo` | [StringBuffer](../java/lang/StringBuffer.md)!: the selected phrase will be appended to this `StringBuffer`. |
-| `pos` | [FieldPosition](../java/text/FieldPosition.md)!: will be ignored by this method. |
+| `toAppendTo` | [StringBuffer](../java.lang/StringBuffer.md)!: the selected phrase will be appended to this `StringBuffer`. |
+| `pos` | [FieldPosition](../java.text/FieldPosition.md)!: will be ignored by this method. |
 | --- | --- |
 | `keyword` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!: a phrase selection keyword. |
 
 | Return ||
 |----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-| [StringBuffer](../java/lang/StringBuffer.md)! | the string buffer passed in as toAppendTo, with formatted text appended. |
+| [StringBuffer](../java.lang/StringBuffer.md)! | the string buffer passed in as toAppendTo, with formatted text appended. |
 
 | Exceptions ||
 |--------------------------------------|----------------------------------------------------------------------|
@@ -231,13 +231,13 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun hashCode(): Int
 ```
 
-Returns a hash code value for the object. This method is supported for the benefit of hash tables such as those provided by [java.util.HashMap](../java/util/HashMap.md).
+Returns a hash code value for the object. This method is supported for the benefit of hash tables such as those provided by [java.util.HashMap](../java.util/HashMap.md).
 
 The general contract of `hashCode` is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the `hashCode` method must consistently return the same integer, provided no information used in `equals` comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the [equals](../java/lang/Object.md)) method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
-- It is *not* required that if two objects are unequal according to the [equals](../java/lang/Object.md)) method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the [equals](../java.lang/Object.md)) method, then calling the `hashCode` method on each of the two objects must produce the same integer result.
+- It is *not* required that if two objects are unequal according to the [equals](../java.lang/Object.md)) method, then calling the `hashCode` method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------|
@@ -259,7 +259,7 @@ This method is not supported by `SelectFormat`.
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `source` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the string to be parsed. |
-| `pos` | [ParsePosition](../java/text/ParsePosition.md)!: defines the position where parsing is to begin, and upon return, the position where parsing left off. If the position has not changed upon return, then parsing failed. |
+| `pos` | [ParsePosition](../java.text/ParsePosition.md)!: defines the position where parsing is to begin, and upon return, the position where parsing left off. If the position has not changed upon return, then parsing failed. |
 
 | Return ||
 |-----------------------------------------------------------------------------|-----------------------------------------------|

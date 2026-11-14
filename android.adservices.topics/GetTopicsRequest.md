@@ -5,7 +5,7 @@ Also in [Ad Services Extensions 4](https://developer.android.com/sdkExtensions)
 
 # GetTopicsRequest
 
-Kotlin| [Java](../android/adservices/topics/GetTopicsRequest.md) 
+Kotlin| [Java](GetTopicsRequest.md) 
 | --- | --- |
 
 ```
@@ -14,7 +14,7 @@ class GetTopicsRequest
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.adservices.topics.GetTopicsRequest](../android/adservices/topics/GetTopicsRequest.md) |
+| ↳ | [android.adservices.topics.GetTopicsRequest](GetTopicsRequest.md) |
 
 Get Topics Request.
 
@@ -22,12 +22,12 @@ Get Topics Request.
 
 | Nested classes ||
 |---|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](../android/adservices/topics/GetTopicsRequest.Builder.md) Builder for [GetTopicsRequest](../android/adservices/topics/GetTopicsRequest.md) objects. |
+| | [Builder](../android/adservices/topics/GetTopicsRequest.Builder.md) Builder for [GetTopicsRequest](GetTopicsRequest.md) objects. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getAdsSdkName](../android/adservices/topics/GetTopicsRequest.md))`()` Get the Sdk Name. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [shouldRecordObservation](../android/adservices/topics/GetTopicsRequest.md))`()` Get Record Observation. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getAdsSdkName](GetTopicsRequest.md))`()` Get the Sdk Name. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [shouldRecordObservation](GetTopicsRequest.md))`()` Get Record Observation. |
 
 ## Public methods
 

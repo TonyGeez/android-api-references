@@ -2,7 +2,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # ContentObservable
 
-Kotlin | [Java](../android/database/ContentObservable.md)
+Kotlin | [Java](ContentObservable.md)
 | --- | --- |
 
 ```
@@ -11,8 +11,8 @@ open class ContentObservable : Observable<ContentObserver!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.database.Observable](../android/database/Observable.md)\< [android.database.ContentObserver](../android/database/ContentObserver.md)\> ||
-| | ↳ | [android.database.ContentObservable](../android/database/ContentObservable.md) |
+| ↳ | [android.database.Observable](Observable.md)\< [android.database.ContentObserver](ContentObserver.md)\> ||
+| | ↳ | [android.database.ContentObservable](ContentObservable.md) |
 
 A specialization of `https://developer.android.com/reference/kotlin/android/database/Observable` for `https://developer.android.com/reference/kotlin/android/database/ContentObserver` that provides methods for sending notifications to a list of `https://developer.android.com/reference/kotlin/android/database/ContentObserver` objects.
 
@@ -85,7 +85,7 @@ If `selfChange` is true, only delivers the notification to the observer if it ha
 | Parameters ||
 |---|---|
 | `selfChange` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): True if this is a self-change notification. |
-| `uri` | [Uri](../android/net/Uri.md)!: The Uri of the changed content, or null if unknown. |
+| `uri` | [Uri](../android.net/Uri.md)!: The Uri of the changed content, or null if unknown. |
 
 ### notifyChange
 
@@ -116,7 +116,7 @@ Adds an observer to the list. The observer cannot be null and it must not alread
 
 | Parameters ||
 |---|---|
-| `observer` | [ContentObserver](../android/database/ContentObserver.md)!: the observer to register |
+| `observer` | [ContentObserver](ContentObserver.md)!: the observer to register |
 
 | Exceptions ||
 |---|---|

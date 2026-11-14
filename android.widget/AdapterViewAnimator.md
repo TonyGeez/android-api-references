@@ -8,14 +8,14 @@ abstract class AdapterViewAnimator : AdapterView<Adapter!>, Advanceable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.view.View](../android/view/View.md) ||||
-| | ↳ | [android.view.ViewGroup](../android/view/ViewGroup.md) |||
-| | | ↳ | [android.widget.AdapterView](../android/widget/AdapterView.md)\< [android.widget.Adapter](../android/widget/Adapter.md)\> ||
+| ↳ | [android.view.View](../android.view/View.md) ||||
+| | ↳ | [android.view.ViewGroup](../android.view/ViewGroup.md) |||
+| | | ↳ | [android.widget.AdapterView](AdapterView.md)\< [android.widget.Adapter](Adapter.md)\> ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.widget.AdapterViewAnimator](../android/widget/AdapterViewAnimator.md) |
+| | | | ↳ | [android.widget.AdapterViewAnimator](AdapterViewAnimator.md) |
 
-Known Direct Subclasses [AdapterViewFlipper](../android/widget/AdapterViewFlipper.md), [StackView](../android/widget/StackView.md) [AdapterViewFlipper](../android/widget/AdapterViewFlipper.md) Simple `https://developer.android.com/reference/kotlin/android/widget/ViewAnimator` that will animate between two or more views that have been added to it.
-[StackView](../android/widget/StackView.md) A view that displays its children in a stack and allows users to discretely swipe through the children.
+Known Direct Subclasses [AdapterViewFlipper](AdapterViewFlipper.md), [StackView](StackView.md) [AdapterViewFlipper](AdapterViewFlipper.md) Simple `https://developer.android.com/reference/kotlin/android/widget/ViewAnimator` that will animate between two or more views that have been added to it.
+[StackView](StackView.md) A view that displays its children in a stack and allows users to discretely swipe through the children.
 
 Base class for a `https://developer.android.com/reference/kotlin/android/widget/AdapterView` that will perform animations when switching between its views.
 
@@ -23,11 +23,11 @@ Base class for a `https://developer.android.com/reference/kotlin/android/widget/
 
 | XML attributes ||
 |---|---|
-| [`android:animateFirstView`](../android/widget/AdapterViewAnimator.md) | Defines whether to animate the current View when the ViewAnimation is first displayed. |
-| [`android:inAnimation`](../android/widget/AdapterViewAnimator.md) | Identifier for the animation to use when a view is shown. |
-| [`android:loopViews`](../android/widget/AdapterViewAnimator.md) | Defines whether the animator loops to the first view once it has reached the end of the list. |
+| [`android:animateFirstView`](AdapterViewAnimator.md) | Defines whether to animate the current View when the ViewAnimation is first displayed. |
+| [`android:inAnimation`](AdapterViewAnimator.md) | Identifier for the animation to use when a view is shown. |
+| [`android:loopViews`](AdapterViewAnimator.md) | Defines whether the animator loops to the first view once it has reached the end of the list. |
 | --- | --- |
-| [`android:outAnimation`](../android/widget/AdapterViewAnimator.md) | Identifier for the animation to use when a view is hidden. |
+| [`android:outAnimation`](AdapterViewAnimator.md) | Identifier for the animation to use when a view is hidden. |
 
 Inherited XML attributes From class `https://developer.android.com/reference/kotlin/android/view/View.html#` `https://developer.android.com/reference/kotlin/android/view/View.html#attr_View` Whether or not this view is a heading for accessibility purposes.
 
@@ -640,7 +640,7 @@ Hint indicating that this view can be autofilled with a credit card expiration d
 
 It should be used when the credit card expiration date is represented by just one view; if it is represented by more than one (for example, one view for the month and another view for the year), then each of these views should use the hint specific for the unit (`https://developer.android.com/reference/kotlin/android/view/View.html#AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DAY:kotlin.String`, `https://developer.android.com/reference/kotlin/android/view/View.html#AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_MONTH:kotlin.String`, or `https://developer.android.com/reference/kotlin/android/view/View.html#AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_YEAR:kotlin.String`).
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DATE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DATE}`).
 
 When annotating a view with this hint, it's recommended to use a date autofill value to avoid ambiguity when the autofill service provides a value for it. To understand why a value can be ambiguous, consider "April of 2020", which could be represented as either of the following options:
 
@@ -665,7 +665,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card expiration day.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DAY}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DAY}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -675,7 +675,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card expiration month.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_MONTH}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_MONTH}`).
 
 When annotating a view with this hint, it's recommended to use a text autofill value whose value is the numerical representation of the month, starting on `1` to avoid ambiguity when the autofill service provides a value for it. To understand why a value can be ambiguous, consider "January", which could be represented as either of
 
@@ -695,7 +695,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card expiration year.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_YEAR}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_YEAR}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -705,7 +705,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card number.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_NUMBER}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_NUMBER}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -715,7 +715,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card security code.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_SECURITY_CODE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_SECURITY_CODE}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -725,7 +725,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with an email address.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_EMAIL_ADDRESS}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_EMAIL_ADDRESS}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -735,7 +735,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a user's real name.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_NAME}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_NAME}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -745,7 +745,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a password.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_PASSWORD}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_PASSWORD}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -755,7 +755,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a phone number.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_PHONE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_PHONE}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -765,7 +765,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a postal address.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_ADDRESS}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_ADDRESS}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -775,7 +775,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a postal code.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_CODE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_CODE}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -785,7 +785,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a username.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_USERNAME}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_USERNAME}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -955,7 +955,7 @@ Find views that render the specified text.
 
 This view wants keystrokes.
 
-Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android/view/View.md)
+Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android.view/View.md)
 
 <br />
 
@@ -975,7 +975,7 @@ View flag indicating whether `https://developer.android.com/reference/kotlin/and
 
 This view determines focusability automatically. This is the default.
 
-Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android/view/View.md)
+Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android.view/View.md)
 
 <br />
 
@@ -1017,7 +1017,7 @@ Use with `https://developer.android.com/reference/kotlin/android/view/View.html#
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/view/View.html#GONE:kotlin.Int`
 
-This view is invisible, and it doesn't take any space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android/view/View.md)
+This view is invisible, and it doesn't take any space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android.view/View.md)
 
 <br />
 
@@ -1113,7 +1113,7 @@ The view is important for content capture, but its children (if any) will not be
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/view/View.html#INVISIBLE:kotlin.Int`
 
-This view is invisible, but it still takes up space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android/view/View.md)
+This view is invisible, but it still takes up space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android.view/View.md)
 
 <br />
 
@@ -1207,7 +1207,7 @@ Bit of `https://developer.android.com/reference/kotlin/android/view/View.html#ge
 
 This view does not want keystrokes.
 
-Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android/view/View.md)
+Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android.view/View.md)
 
 <br />
 
@@ -1664,7 +1664,7 @@ The logging tag used by this class with android.util.Log.
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/view/View.html#VISIBLE:kotlin.Int`
 
-This view is visible. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android/view/View.md)
+This view is visible. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android.view/View.md)
 
 <br />
 
@@ -1766,20 +1766,20 @@ The item view type returned by `https://developer.android.com/reference/kotlin/a
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AdapterViewAnimator#fyiWillBeAdvancedByHostKThx()()` Called by an `https://developer.android.com/reference/kotlin/android/appwidget/AppWidgetHost.html#` to indicate that it will be automatically advancing the views of this `https://developer.android.com/reference/kotlin/android/widget/AdapterViewAnimator#` by calling `https://developer.android.com/reference/kotlin/android/widget/AdapterViewAnimator#advance()` at some point in the future. |
 | --- | --- |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/widget/AdapterViewAnimator#getAccessibilityClassName()()` Return the class name of this object to be used for accessibility purposes. |
-| open [Adapter](../android/widget/Adapter.md)! | `https://developer.android.com/reference/kotlin/android/widget/AdapterViewAnimator#getAdapter()()` Returns the adapter currently associated with this widget. |
+| open [Adapter](Adapter.md)! | `https://developer.android.com/reference/kotlin/android/widget/AdapterViewAnimator#getAdapter()()` Returns the adapter currently associated with this widget. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AdapterViewAnimator#getBaseline()()` Return the offset of the widget's text baseline from the widget's top boundary. |
 | --- | --- |
-| open [View](../android/view/View.md)! | `https://developer.android.com/reference/kotlin/android/widget/AdapterViewAnimator#getCurrentView()()` Returns the View corresponding to the currently displayed child. |
+| open [View](../android.view/View.md)! | `https://developer.android.com/reference/kotlin/android/widget/AdapterViewAnimator#getCurrentView()()` Returns the View corresponding to the currently displayed child. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AdapterViewAnimator#getDisplayedChild()()` Returns the index of the currently displayed child view. |
-| open [ObjectAnimator](../android/animation/ObjectAnimator.md)! | `https://developer.android.com/reference/kotlin/android/widget/AdapterViewAnimator#getInAnimation()()` Returns the current animation used to animate a View that enters the screen. |
+| open [ObjectAnimator](../android.animation/ObjectAnimator.md)! | `https://developer.android.com/reference/kotlin/android/widget/AdapterViewAnimator#getInAnimation()()` Returns the current animation used to animate a View that enters the screen. |
 | --- | --- |
-| open [ObjectAnimator](../android/animation/ObjectAnimator.md)! | `https://developer.android.com/reference/kotlin/android/widget/AdapterViewAnimator#getOutAnimation()()` Returns the current animation used to animate a View that exits the screen. |
-| open [View](../android/view/View.md)! | `https://developer.android.com/reference/kotlin/android/widget/AdapterViewAnimator#getSelectedView()()` <br /> |
+| open [ObjectAnimator](../android.animation/ObjectAnimator.md)! | `https://developer.android.com/reference/kotlin/android/widget/AdapterViewAnimator#getOutAnimation()()` Returns the current animation used to animate a View that exits the screen. |
+| open [View](../android.view/View.md)! | `https://developer.android.com/reference/kotlin/android/widget/AdapterViewAnimator#getSelectedView()()` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AdapterViewAnimator#onRemoteAdapterConnected()()` Called back when the adapter connects to the RemoteViewsService. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AdapterViewAnimator#onRemoteAdapterDisconnected()()` Called back when the adapter disconnects from the RemoteViewsService. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AdapterViewAnimator#onRestoreInstanceState(android.os.Parcelable)(state: https://developer.android.com/reference/kotlin/android/os/Parcelable.html#!)` Hook allowing a view to re-apply a representation of its internal state that had previously been generated by `https://developer.android.com/reference/kotlin/android/view/View.html#onSaveInstanceState()`. |
-| open [Parcelable](../android/os/Parcelable.md)? | `https://developer.android.com/reference/kotlin/android/widget/AdapterViewAnimator#onSaveInstanceState()()` Hook allowing a view to generate a representation of its internal state that can later be used to create a new instance with that same state. |
+| open [Parcelable](../android.os/Parcelable.md)? | `https://developer.android.com/reference/kotlin/android/widget/AdapterViewAnimator#onSaveInstanceState()()` Hook allowing a view to generate a representation of its internal state that can later be used to create a new instance with that same state. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AdapterViewAnimator#onTouchEvent(android.view.MotionEvent)(ev: https://developer.android.com/reference/kotlin/android/view/MotionEvent.html#!)` Implement this method to handle pointer events. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/AdapterViewAnimator#setAdapter(android.widget.Adapter)(adapter: https://developer.android.com/reference/kotlin/android/widget/Adapter!)` Sets the adapter that provides the data and the views to represent the data in this widget. |
@@ -7475,7 +7475,7 @@ Sets the amount that the view is scaled in Y around the pivot point, as a propor
 
 Sets whether this View should be a focusable element for screen readers and include non-focusable Views from its subtree when providing feedback.
 
-Note: this is similar to using [`android:focusable`, but does not impact input focus behavior.](../android/view/View.md)
+Note: this is similar to using [`android:focusable`, but does not impact input focus behavior.](../android.view/View.md)
 
 <br />
 
@@ -8669,7 +8669,7 @@ If you override this method you *must* call through to the superclass implementa
 
 | Parameters ||
 |---|---|
-| `state` | [Parcelable](../android/os/Parcelable.md)!: The frozen state that had previously been returned by `https://developer.android.com/reference/kotlin/android/view/View.html#onSaveInstanceState()`. |
+| `state` | [Parcelable](../android.os/Parcelable.md)!: The frozen state that had previously been returned by `https://developer.android.com/reference/kotlin/android/view/View.html#onSaveInstanceState()`. |
 
 ### onSaveInstanceState
 
@@ -8726,7 +8726,7 @@ Sets the adapter that provides the data and the views to represent the data in t
 
 | Parameters ||
 |---|---|
-| `adapter` | [Adapter](../android/widget/Adapter.md)!: The adapter to use to create this view's content. |
+| `adapter` | [Adapter](Adapter.md)!: The adapter to use to create this view's content. |
 
 ### setAnimateFirstView
 
@@ -8768,7 +8768,7 @@ Specifies the animation used to animate a View that enters the screen.
 
 | Parameters ||
 |---|---|
-| `inAnimation` | [ObjectAnimator](../android/animation/ObjectAnimator.md)!: The animation started when a View enters the screen. |
+| `inAnimation` | [ObjectAnimator](../android.animation/ObjectAnimator.md)!: The animation started when a View enters the screen. |
 
 **See Also**
 
@@ -8790,7 +8790,7 @@ Specifies the animation used to animate a View that enters the screen.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md)!: The application's environment. |
+| `context` | [Context](../android.content/Context.md)!: The application's environment. |
 | `resourceID` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The resource id of the animation. |
 
 **See Also**
@@ -8810,7 +8810,7 @@ Specifies the animation used to animate a View that exit the screen.
 
 | Parameters ||
 |---|---|
-| `outAnimation` | [ObjectAnimator](../android/animation/ObjectAnimator.md)!: The animation started when a View exit the screen. |
+| `outAnimation` | [ObjectAnimator](../android.animation/ObjectAnimator.md)!: The animation started when a View exit the screen. |
 
 **See Also**
 
@@ -8832,7 +8832,7 @@ Specifies the animation used to animate a View that exit the screen.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md)!: The application's environment. |
+| `context` | [Context](../android.content/Context.md)!: The application's environment. |
 | `resourceID` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The resource id of the animation. |
 
 **See Also**
@@ -8852,7 +8852,7 @@ Sets up this AdapterViewAnimator to use a remote views adapter which connects to
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md)!: the intent used to identify the RemoteViewsService for the adapter to connect to. |
+| `intent` | [Intent](../android.content/Intent.md)!: the intent used to identify the RemoteViewsService for the adapter to connect to. |
 
 ### setSelection
 

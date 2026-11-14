@@ -2,11 +2,11 @@
 
 # android
 
-Kotlin| [Java](./_package.md)
+Kotlin| [Java](_package.md)
 | --- | --- |
 
 ## Classes
 
-| [Manifest](./Manifest.md) | <br /> |
+| [Manifest](Manifest.md) | <br /> |
 | --- | --- |
-| [R](./R.md) | <br /> |
+| [R](R.md) | <br /> |

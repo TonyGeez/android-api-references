@@ -2,7 +2,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 
 # FileUtils
 
-Kotlin | [Java](../android/os/FileUtils.md)
+Kotlin | [Java](FileUtils.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class FileUtils
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.os.FileUtils](../android/os/FileUtils.md) |
+| ↳ | [android.os.FileUtils](FileUtils.md) |
 
 Utility methods useful for working with files.
 
@@ -49,7 +49,7 @@ Closes the given object quietly, ignoring any checked exceptions. Does nothing i
 
 | Parameters ||
 |---|---|
-| `fd` | [FileDescriptor](../java/io/FileDescriptor.md)?: This value may be `null`. |
+| `fd` | [FileDescriptor](../java.io/FileDescriptor.md)?: This value may be `null`. |
 
 ### closeQuietly
 
@@ -66,7 +66,7 @@ Closes the given object quietly, ignoring any checked exceptions. Does nothing i
 
 | Parameters ||
 |---|---|
-| `closeable` | [AutoCloseable](../java/lang/AutoCloseable.md)?: This value may be `null`. |
+| `closeable` | [AutoCloseable](../java.lang/AutoCloseable.md)?: This value may be `null`. |
 
 ### copy
 
@@ -85,8 +85,8 @@ Attempts to use several optimization strategies to copy the data in the kernel b
 
 | Parameters ||
 |---|---|
-| `in` | [FileDescriptor](../java/io/FileDescriptor.md): This value cannot be `null`. |
-| `out` | [FileDescriptor](../java/io/FileDescriptor.md): This value cannot be `null`. |
+| `in` | [FileDescriptor](../java.io/FileDescriptor.md): This value cannot be `null`. |
+| `out` | [FileDescriptor](../java.io/FileDescriptor.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -112,11 +112,11 @@ Attempts to use several optimization strategies to copy the data in the kernel b
 
 | Parameters ||
 |---|---|
-| `in` | [FileDescriptor](../java/io/FileDescriptor.md): This value cannot be `null`. |
-| `out` | [FileDescriptor](../java/io/FileDescriptor.md): This value cannot be `null`. |
-| `signal` | [CancellationSignal](../android/os/CancellationSignal.md)?: to signal if the copy should be cancelled early. This value may be `null`. |
+| `in` | [FileDescriptor](../java.io/FileDescriptor.md): This value cannot be `null`. |
+| `out` | [FileDescriptor](../java.io/FileDescriptor.md): This value cannot be `null`. |
+| `signal` | [CancellationSignal](CancellationSignal.md)?: to signal if the copy should be cancelled early. This value may be `null`. |
 | --- | --- |
-| `executor` | [Executor](../java/util/concurrent/Executor.md)?: that listener events should be delivered via. This value may be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md)?: that listener events should be delivered via. This value may be `null`. |
 | `listener` | [FileUtils.ProgressListener](../android/os/FileUtils.ProgressListener.md)?: to be periodically notified as the copy progresses. This value may be `null`. |
 
 | Return ||
@@ -140,8 +140,8 @@ Attempts to use several optimization strategies to copy the data in the kernel b
 
 | Parameters ||
 |---|---|
-| `in` | [InputStream](../java/io/InputStream.md): This value cannot be `null`. |
-| `out` | [OutputStream](../java/io/OutputStream.md): This value cannot be `null`. |
+| `in` | [InputStream](../java.io/InputStream.md): This value cannot be `null`. |
+| `out` | [OutputStream](../java.io/OutputStream.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -167,11 +167,11 @@ Attempts to use several optimization strategies to copy the data in the kernel b
 
 | Parameters ||
 |---|---|
-| `in` | [InputStream](../java/io/InputStream.md): This value cannot be `null`. |
-| `out` | [OutputStream](../java/io/OutputStream.md): This value cannot be `null`. |
-| `signal` | [CancellationSignal](../android/os/CancellationSignal.md)?: to signal if the copy should be cancelled early. This value may be `null`. |
+| `in` | [InputStream](../java.io/InputStream.md): This value cannot be `null`. |
+| `out` | [OutputStream](../java.io/OutputStream.md): This value cannot be `null`. |
+| `signal` | [CancellationSignal](CancellationSignal.md)?: to signal if the copy should be cancelled early. This value may be `null`. |
 | --- | --- |
-| `executor` | [Executor](../java/util/concurrent/Executor.md)?: that listener events should be delivered via. This value may be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md)?: that listener events should be delivered via. This value may be `null`. |
 | `listener` | [FileUtils.ProgressListener](../android/os/FileUtils.ProgressListener.md)?: to be periodically notified as the copy progresses. This value may be `null`. |
 
 | Return ||

@@ -19,11 +19,11 @@ Interface for callback invocation for service registration
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onRegistrationFailed](../android/net/nsd/NsdManager.RegistrationListener.md))`(`serviceInfo:` ` [NsdServiceInfo](../android/net/nsd/NsdServiceInfo.md)!`, `errorCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onServiceRegistered](../android/net/nsd/NsdManager.RegistrationListener.md))`(`serviceInfo:` ` [NsdServiceInfo](../android/net/nsd/NsdServiceInfo.md)!`)` <br /> |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onServiceUnregistered](../android/net/nsd/NsdManager.RegistrationListener.md))`(`serviceInfo:` ` [NsdServiceInfo](../android/net/nsd/NsdServiceInfo.md)!`)` <br /> |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onRegistrationFailed](../android/net/nsd/NsdManager.RegistrationListener.md))`(`serviceInfo:` ` [NsdServiceInfo](NsdServiceInfo.md)!`, `errorCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onServiceRegistered](../android/net/nsd/NsdManager.RegistrationListener.md))`(`serviceInfo:` ` [NsdServiceInfo](NsdServiceInfo.md)!`)` <br /> |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onServiceUnregistered](../android/net/nsd/NsdManager.RegistrationListener.md))`(`serviceInfo:` ` [NsdServiceInfo](NsdServiceInfo.md)!`)` <br /> |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onUnregistrationFailed](../android/net/nsd/NsdManager.RegistrationListener.md))`(`serviceInfo:` ` [NsdServiceInfo](../android/net/nsd/NsdServiceInfo.md)!`, `errorCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onUnregistrationFailed](../android/net/nsd/NsdManager.RegistrationListener.md))`(`serviceInfo:` ` [NsdServiceInfo](NsdServiceInfo.md)!`, `errorCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 ## Public methods
 

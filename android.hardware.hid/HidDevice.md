@@ -8,7 +8,7 @@ class HidDevice : AutoCloseable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.hardware.hid.HidDevice](../android/hardware/hid/HidDevice.md) |
+| ↳ | [android.hardware.hid.HidDevice](HidDevice.md) |
 
 Represents a Human Interface Device (HID) connected to the system.
 
@@ -203,8 +203,8 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 | Parameters ||
 |---|---|
 | `reportId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the feature report to get. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): the executor on which the callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `callback` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [Report](../android/hardware/hid/Report.md)!, [Exception](../java/lang/Exception.md)!\>: the callback object to be used to notify of the report or an error. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): the executor on which the callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `callback` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [Report](Report.md)!, [Exception](../java.lang/Exception.md)!\>: the callback object to be used to notify of the report or an error. This value cannot be `null`. |
 | --- | --- |
 
 | Exceptions ||
@@ -377,8 +377,8 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): The executor on which the callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `callback` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [HidDevice](../android/hardware/hid/HidDevice.md)!, [Exception](../java/lang/Exception.md)!\>: The object to be notified of success or failure. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor on which the callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `callback` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [HidDevice](HidDevice.md)!, [Exception](../java.lang/Exception.md)!\>: The object to be notified of success or failure. This value cannot be `null`. |
 
 ### registerEventListener
 
@@ -396,8 +396,8 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): The executor on which callback events will be executed. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `listener` | [HidEventListener](../android/hardware/hid/HidEventListener.md): The callback listener to register. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor on which callback events will be executed. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `listener` | [HidEventListener](HidEventListener.md): The callback listener to register. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -429,9 +429,9 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `report` | [Report](../android/hardware/hid/Report.md): the feature report to send. This value cannot be `null`. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): the executor on which the callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `callback` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [Void](../java/lang/Void.md)!, [Exception](../java/lang/Exception.md)!\>: the callback object to be used to notify of an error. This value cannot be `null`. |
+| `report` | [Report](Report.md): the feature report to send. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): the executor on which the callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `callback` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [Void](../java.lang/Void.md)!, [Exception](../java.lang/Exception.md)!\>: the callback object to be used to notify of an error. This value cannot be `null`. |
 | --- | --- |
 
 | Exceptions ||
@@ -464,9 +464,9 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `report` | [Report](../android/hardware/hid/Report.md): the output report to send. This value cannot be `null`. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): the executor on which the callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `callback` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [Void](../java/lang/Void.md)!, [Exception](../java/lang/Exception.md)!\>: the callback object to be used to notify of an error. This value cannot be `null`. |
+| `report` | [Report](Report.md): the output report to send. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): the executor on which the callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `callback` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [Void](../java.lang/Void.md)!, [Exception](../java.lang/Exception.md)!\>: the callback object to be used to notify of an error. This value cannot be `null`. |
 | --- | --- |
 
 | Exceptions ||
@@ -499,4 +499,4 @@ Unregisters an active listener from receiving input reports.
 
 | Parameters ||
 |---|---|
-| `listener` | [HidEventListener](../android/hardware/hid/HidEventListener.md): The callback listener to unregister. This value cannot be `null`. |
+| `listener` | [HidEventListener](HidEventListener.md): The callback listener to unregister. This value cannot be `null`. |

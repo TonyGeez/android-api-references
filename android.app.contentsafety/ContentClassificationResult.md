@@ -8,7 +8,7 @@ class ContentClassificationResult : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.contentsafety.ContentClassificationResult](../android/app/contentsafety/ContentClassificationResult.md) |
+| ↳ | [android.app.contentsafety.ContentClassificationResult](ContentClassificationResult.md) |
 
 A result reported by a Content Safety app in response to a content classification request.
 
@@ -41,14 +41,14 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | Public methods ||
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/contentsafety/ContentClassificationResult#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [LocusId](../android/content/LocusId.md) | `https://developer.android.com/reference/kotlin/android/app/contentsafety/ContentClassificationResult#getLocusId()()` Returns the `https://developer.android.com/reference/kotlin/android/content/LocusId.html#` of the content that was classified. |
+| [LocusId](../android.content/LocusId.md) | `https://developer.android.com/reference/kotlin/android/app/contentsafety/ContentClassificationResult#getLocusId()()` Returns the `https://developer.android.com/reference/kotlin/android/content/LocusId.html#` of the content that was classified. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/contentsafety/ContentClassificationResult#getType()()` Returns the classification type of the content. |
 | --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/contentsafety/ContentClassificationResult#writeToParcel(android.os.Parcel,%20kotlin.Int)(parcel: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ContentClassificationResult](../android/app/contentsafety/ContentClassificationResult.md)!\> | `https://developer.android.com/reference/kotlin/android/app/contentsafety/ContentClassificationResult#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ContentClassificationResult](ContentClassificationResult.md)!\> | `https://developer.android.com/reference/kotlin/android/app/contentsafety/ContentClassificationResult#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -116,7 +116,7 @@ Creates a new content classification result.
 
 | Parameters ||
 |---|---|
-| `locusId` | [LocusId](../android/content/LocusId.md): the `https://developer.android.com/reference/kotlin/android/content/LocusId.html#` of the content that was classified. This value cannot be `null`. |
+| `locusId` | [LocusId](../android.content/LocusId.md): the `https://developer.android.com/reference/kotlin/android/content/LocusId.html#` of the content that was classified. This value cannot be `null`. |
 | `type` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the classification type of the content. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/app/contentsafety/ContentClassificationResult#TYPE_UNCLASSIFIED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/contentsafety/ContentClassificationResult#TYPE_ALLOWED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/contentsafety/ContentClassificationResult#TYPE_WARNING:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/contentsafety/ContentClassificationResult#TYPE_BLOCKED:kotlin.Int` |
 
 ## Public methods
@@ -180,7 +180,7 @@ Flatten this object in to a Parcel.
 |---|---|
 | `dest` | The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
-| `parcel` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
+| `parcel` | [Parcel](../android.os/Parcel.md): This value cannot be `null`. |
 | --- | --- |
 
 ## Properties

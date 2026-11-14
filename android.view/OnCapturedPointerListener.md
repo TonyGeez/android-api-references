@@ -19,7 +19,7 @@ Interface definition for a callback to be invoked when a captured pointer event 
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onCapturedPointer](../android/view/View.OnCapturedPointerListener.md))`(`view:` ` [View](../android/view/View.md)!`, `event:` ` [MotionEvent](../android/view/MotionEvent.md)!`)` Called when a captured pointer event is dispatched to a view. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onCapturedPointer](../android/view/View.OnCapturedPointerListener.md))`(`view:` ` [View](View.md)!`, `event:` ` [MotionEvent](MotionEvent.md)!`)` Called when a captured pointer event is dispatched to a view. |
 
 ## Public methods
 
@@ -38,8 +38,8 @@ Called when a captured pointer event is dispatched to a view.
 
 | Parameters ||
 |---------|-----------------------------------------------------------------------------------------------------------------------|
-| `view` | [View](../android/view/View.md)!:The view this event has been dispatched to. |
-| `event` | [MotionEvent](../android/view/MotionEvent.md)!:The captured event. |
+| `view` | [View](View.md)!:The view this event has been dispatched to. |
+| `event` | [MotionEvent](MotionEvent.md)!:The captured event. |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------------|

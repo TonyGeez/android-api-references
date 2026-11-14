@@ -4,14 +4,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # ValueIterator
 
-Kotlin| [Java](../android/icu/util/ValueIterator.md) 
+Kotlin| [Java](ValueIterator.md) 
 | --- | --- |
 
 ```
 interface ValueIterator
 ```
 
-| [android.icu.util.ValueIterator](../android/icu/util/ValueIterator.md) |
+| [android.icu.util.ValueIterator](ValueIterator.md) |
 
 Interface for enabling iteration over sets of \<int, Object\>, where int is the sorted integer index in ascending order, and Object its associated value.
 
@@ -39,9 +39,9 @@ ValueIterator iterator = UCharacter.getNameIterator();
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [next](../android/icu/util/ValueIterator.md))`(`element:` ` [ValueIterator.Element](../android/icu/util/ValueIterator.Element.md)!`)` Returns the next result for this iteration and returns true if we are not at the end of the iteration, false otherwise. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](../android/icu/util/ValueIterator.md))`()` Resets the iterator to start iterating from the integer index Integer. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRange](../android/icu/util/ValueIterator.md))`(`start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `limit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Restricts the range of integers to iterate and resets the iteration to begin at the index argument start. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [next](ValueIterator.md))`(`element:` ` [ValueIterator.Element](../android/icu/util/ValueIterator.Element.md)!`)` Returns the next result for this iteration and returns true if we are not at the end of the iteration, false otherwise. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](ValueIterator.md))`()` Resets the iterator to start iterating from the integer index Integer. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRange](ValueIterator.md))`(`start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `limit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Restricts the range of integers to iterate and resets the iteration to begin at the index argument start. |
 | --- | --- |
 
 ## Public methods

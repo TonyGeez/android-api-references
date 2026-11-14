@@ -4,7 +4,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # UCharacter
 
-Kotlin| [Java](../android/icu/lang/UCharacter.md) 
+Kotlin| [Java](UCharacter.md) 
 | --- | --- |
 
 ```
@@ -13,13 +13,13 @@ class UCharacter : UCharacterEnums.ECharacterCategory, UCharacterEnums.ECharac
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.icu.lang.UCharacter](../android/icu/lang/UCharacter.md) |
+| ↳ | [android.icu.lang.UCharacter](UCharacter.md) |
 
-**\[icu enhancement\]** ICU's replacement for [java.lang.Character](../java/lang/Character.md). Methods, fields, and other functionality specific to ICU are labeled '**\[icu\]**'.
+**\[icu enhancement\]** ICU's replacement for [java.lang.Character](../java.lang/Character.md). Methods, fields, and other functionality specific to ICU are labeled '**\[icu\]**'.
 
-The UCharacter class provides extensions to the [java.lang.Character](../java/lang/Character.md) class. These extensions provide support for more Unicode properties. Each ICU release supports the latest version of Unicode available at that time.
+The UCharacter class provides extensions to the [java.lang.Character](../java.lang/Character.md) class. These extensions provide support for more Unicode properties. Each ICU release supports the latest version of Unicode available at that time.
 
-For some time before Java 5 added support for supplementary Unicode code points, The ICU UCharacter class and many other ICU classes already supported them. Some UCharacter methods and constants were widened slightly differently than how the Character class methods and constants were widened later. In particular, [Character.MAX_VALUE](../java/lang/Character.md) is still a char with the value U+FFFF, while the [UCharacter.MAX_VALUE](../android/icu/lang/UCharacter.md) is an int with the value U+10FFFF.
+For some time before Java 5 added support for supplementary Unicode code points, The ICU UCharacter class and many other ICU classes already supported them. Some UCharacter methods and constants were widened slightly differently than how the Character class methods and constants were widened later. In particular, [Character.MAX_VALUE](../java.lang/Character.md) is still a char with the value U+FFFF, while the [UCharacter.MAX_VALUE](UCharacter.md) is an int with the value U+10FFFF.
 
 Code points are represented in these API using ints. While it would be more convenient in Java to have a separate primitive datatype for them, ints suffice in the meantime.
 
@@ -100,178 +100,178 @@ This class is not subclassable.
 
 | Constants ||
 |----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FOLD_CASE_DEFAULT](../android/icu/lang/UCharacter.md) **\[icu\]**Option value for case folding: use default mappings defined in CaseFolding. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FOLD_CASE_EXCLUDE_SPECIAL_I](../android/icu/lang/UCharacter.md) **\[icu\]**Option value for case folding: Use the modified set of mappings provided in CaseFolding. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAX_CODE_POINT](../android/icu/lang/UCharacter.md) Constant U+10FFFF, same as [Character.MAX_CODE_POINT](../java/lang/Character.md). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FOLD_CASE_DEFAULT](UCharacter.md) **\[icu\]**Option value for case folding: use default mappings defined in CaseFolding. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FOLD_CASE_EXCLUDE_SPECIAL_I](UCharacter.md) **\[icu\]**Option value for case folding: Use the modified set of mappings provided in CaseFolding. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAX_CODE_POINT](UCharacter.md) Constant U+10FFFF, same as [Character.MAX_CODE_POINT](../java.lang/Character.md). |
 | --- | --- |
-| static [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [MAX_HIGH_SURROGATE](../android/icu/lang/UCharacter.md) Constant U+DBFF, same as [Character.MAX_HIGH_SURROGATE](../java/lang/Character.md). |
-| static [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [MAX_LOW_SURROGATE](../android/icu/lang/UCharacter.md) Constant U+DFFF, same as [Character.MAX_LOW_SURROGATE](../java/lang/Character.md). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAX_RADIX](../android/icu/lang/UCharacter.md) Compatibility constant for Java Character's MAX_RADIX. |
+| static [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [MAX_HIGH_SURROGATE](UCharacter.md) Constant U+DBFF, same as [Character.MAX_HIGH_SURROGATE](../java.lang/Character.md). |
+| static [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [MAX_LOW_SURROGATE](UCharacter.md) Constant U+DFFF, same as [Character.MAX_LOW_SURROGATE](../java.lang/Character.md). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAX_RADIX](UCharacter.md) Compatibility constant for Java Character's MAX_RADIX. |
 | --- | --- |
-| static [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [MAX_SURROGATE](../android/icu/lang/UCharacter.md) Constant U+DFFF, same as [Character.MAX_SURROGATE](../java/lang/Character.md). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAX_VALUE](../android/icu/lang/UCharacter.md) The highest Unicode code point value (scalar value), constant U+10FFFF (uses 21 bits). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIN_CODE_POINT](../android/icu/lang/UCharacter.md) Constant U+0000, same as [Character.MIN_CODE_POINT](../java/lang/Character.md). |
+| static [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [MAX_SURROGATE](UCharacter.md) Constant U+DFFF, same as [Character.MAX_SURROGATE](../java.lang/Character.md). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAX_VALUE](UCharacter.md) The highest Unicode code point value (scalar value), constant U+10FFFF (uses 21 bits). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIN_CODE_POINT](UCharacter.md) Constant U+0000, same as [Character.MIN_CODE_POINT](../java.lang/Character.md). |
 | --- | --- |
-| static [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [MIN_HIGH_SURROGATE](../android/icu/lang/UCharacter.md) Constant U+D800, same as [Character.MIN_HIGH_SURROGATE](../java/lang/Character.md). |
-| static [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [MIN_LOW_SURROGATE](../android/icu/lang/UCharacter.md) Constant U+DC00, same as [Character.MIN_LOW_SURROGATE](../java/lang/Character.md). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIN_RADIX](../android/icu/lang/UCharacter.md) Compatibility constant for Java Character's MIN_RADIX. |
+| static [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [MIN_HIGH_SURROGATE](UCharacter.md) Constant U+D800, same as [Character.MIN_HIGH_SURROGATE](../java.lang/Character.md). |
+| static [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [MIN_LOW_SURROGATE](UCharacter.md) Constant U+DC00, same as [Character.MIN_LOW_SURROGATE](../java.lang/Character.md). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIN_RADIX](UCharacter.md) Compatibility constant for Java Character's MIN_RADIX. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIN_SUPPLEMENTARY_CODE_POINT](../android/icu/lang/UCharacter.md) Constant U+10000, same as [Character.MIN_SUPPLEMENTARY_CODE_POINT](../java/lang/Character.md). |
-| static [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [MIN_SURROGATE](../android/icu/lang/UCharacter.md) Constant U+D800, same as [Character.MIN_SURROGATE](../java/lang/Character.md). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIN_VALUE](../android/icu/lang/UCharacter.md) The lowest Unicode code point value, constant 0. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIN_SUPPLEMENTARY_CODE_POINT](UCharacter.md) Constant U+10000, same as [Character.MIN_SUPPLEMENTARY_CODE_POINT](../java.lang/Character.md). |
+| static [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [MIN_SURROGATE](UCharacter.md) Constant U+D800, same as [Character.MIN_SURROGATE](../java.lang/Character.md). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIN_VALUE](UCharacter.md) The lowest Unicode code point value, constant 0. |
 | --- | --- |
-| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [NO_NUMERIC_VALUE](../android/icu/lang/UCharacter.md) Special value that is returned by getUnicodeNumericValue(int) when no numeric value is defined for a code point. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REPLACEMENT_CHAR](../android/icu/lang/UCharacter.md) Unicode value used when translating into Unicode encoding form and there is no existing character. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SUPPLEMENTARY_MIN_VALUE](../android/icu/lang/UCharacter.md) The minimum value for Supplementary code points, constant U+10000. |
+| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [NO_NUMERIC_VALUE](UCharacter.md) Special value that is returned by getUnicodeNumericValue(int) when no numeric value is defined for a code point. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REPLACEMENT_CHAR](UCharacter.md) Unicode value used when translating into Unicode encoding form and there is no existing character. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SUPPLEMENTARY_MIN_VALUE](UCharacter.md) The minimum value for Supplementary code points, constant U+10000. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TITLECASE_NO_BREAK_ADJUSTMENT](../android/icu/lang/UCharacter.md) Do not adjust the titlecasing indexes from BreakIterator::next() indexes; titlecase exactly the characters at breaks from the iterator. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TITLECASE_NO_LOWERCASE](../android/icu/lang/UCharacter.md) Do not lowercase non-initial parts of words when titlecasing. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TITLECASE_NO_BREAK_ADJUSTMENT](UCharacter.md) Do not adjust the titlecasing indexes from BreakIterator::next() indexes; titlecase exactly the characters at breaks from the iterator. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TITLECASE_NO_LOWERCASE](UCharacter.md) Do not lowercase non-initial parts of words when titlecasing. |
 
 | Inherited constants ||
 |---|---|
-| From class [ECharacterDirection](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) |------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ARABIC_NUMBER](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Directional type AN <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BLOCK_SEPARATOR](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Directional type B <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BOUNDARY_NEUTRAL](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Directional type BN <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [COMMON_NUMBER_SEPARATOR](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Directional type CS <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_ARABIC_NUMBER](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Equivalent to [java.lang.Character#DIRECTIONALITY_ARABIC_NUMBER](../java/lang/Character.md). Synonym of [ARABIC_NUMBER](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_BOUNDARY_NEUTRAL](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Equivalent to [java.lang.Character#DIRECTIONALITY_BOUNDARY_NEUTRAL](../java/lang/Character.md). Synonym of [BOUNDARY_NEUTRAL](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_COMMON_NUMBER_SEPARATOR](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Equivalent to [java.lang.Character#DIRECTIONALITY_COMMON_NUMBER_SEPARATOR](../java/lang/Character.md). Synonym of [COMMON_NUMBER_SEPARATOR](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_EUROPEAN_NUMBER](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Equivalent to [java.lang.Character#DIRECTIONALITY_EUROPEAN_NUMBER](../java/lang/Character.md). Synonym of [EUROPEAN_NUMBER](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_EUROPEAN_NUMBER_SEPARATOR](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Equivalent to [java.lang.Character#DIRECTIONALITY_EUROPEAN_NUMBER_SEPARATOR](../java/lang/Character.md). Synonym of [EUROPEAN_NUMBER_SEPARATOR](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_EUROPEAN_NUMBER_TERMINATOR](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Equivalent to [java.lang.Character#DIRECTIONALITY_EUROPEAN_NUMBER_TERMINATOR](../java/lang/Character.md). Synonym of [EUROPEAN_NUMBER_TERMINATOR](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_LEFT_TO_RIGHT](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Equivalent to [java.lang.Character#DIRECTIONALITY_LEFT_TO_RIGHT](../java/lang/Character.md). Synonym of [LEFT_TO_RIGHT](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_LEFT_TO_RIGHT_EMBEDDING](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Equivalent to [java.lang.Character#DIRECTIONALITY_LEFT_TO_RIGHT_EMBEDDING](../java/lang/Character.md). Synonym of [LEFT_TO_RIGHT_EMBEDDING](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_LEFT_TO_RIGHT_OVERRIDE](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Equivalent to [java.lang.Character#DIRECTIONALITY_LEFT_TO_RIGHT_OVERRIDE](../java/lang/Character.md). Synonym of [LEFT_TO_RIGHT_OVERRIDE](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_NONSPACING_MARK](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Equivalent to [java.lang.Character#DIRECTIONALITY_NONSPACING_MARK](../java/lang/Character.md). Synonym of [DIR_NON_SPACING_MARK](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_OTHER_NEUTRALS](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Equivalent to [java.lang.Character#DIRECTIONALITY_OTHER_NEUTRALS](../java/lang/Character.md). Synonym of [OTHER_NEUTRAL](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_PARAGRAPH_SEPARATOR](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Equivalent to [java.lang.Character#DIRECTIONALITY_PARAGRAPH_SEPARATOR](../java/lang/Character.md). Synonym of [BLOCK_SEPARATOR](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_POP_DIRECTIONAL_FORMAT](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Equivalent to [java.lang.Character#DIRECTIONALITY_POP_DIRECTIONAL_FORMAT](../java/lang/Character.md). Synonym of [POP_DIRECTIONAL_FORMAT](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_RIGHT_TO_LEFT](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Equivalent to [java.lang.Character#DIRECTIONALITY_RIGHT_TO_LEFT](../java/lang/Character.md). Synonym of [RIGHT_TO_LEFT](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_RIGHT_TO_LEFT_ARABIC](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Equivalent to [java.lang.Character#DIRECTIONALITY_RIGHT_TO_LEFT_ARABIC](../java/lang/Character.md). Synonym of [RIGHT_TO_LEFT_ARABIC](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_RIGHT_TO_LEFT_EMBEDDING](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Equivalent to [java.lang.Character#DIRECTIONALITY_RIGHT_TO_LEFT_EMBEDDING](../java/lang/Character.md). Synonym of [RIGHT_TO_LEFT_EMBEDDING](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_RIGHT_TO_LEFT_OVERRIDE](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Equivalent to [java.lang.Character#DIRECTIONALITY_RIGHT_TO_LEFT_OVERRIDE](../java/lang/Character.md). Synonym of [RIGHT_TO_LEFT_OVERRIDE](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_SEGMENT_SEPARATOR](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Equivalent to [java.lang.Character#DIRECTIONALITY_SEGMENT_SEPARATOR](../java/lang/Character.md). Synonym of [SEGMENT_SEPARATOR](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_UNDEFINED](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Undefined bidirectional character type. Undefined`char`values have undefined directionality in the Unicode specification. <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_WHITESPACE](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Equivalent to [java.lang.Character#DIRECTIONALITY_WHITESPACE](../java/lang/Character.md). Synonym of [WHITE_SPACE_NEUTRAL](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DIR_NON_SPACING_MARK](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Directional type NSM <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EUROPEAN_NUMBER](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Directional type EN <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EUROPEAN_NUMBER_SEPARATOR](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Directional type ES <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EUROPEAN_NUMBER_TERMINATOR](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Directional type ET <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [FIRST_STRONG_ISOLATE](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Directional type FSI <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LEFT_TO_RIGHT](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Directional type L <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LEFT_TO_RIGHT_EMBEDDING](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Directional type LRE <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [LEFT_TO_RIGHT_ISOLATE](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Directional type LRI <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LEFT_TO_RIGHT_OVERRIDE](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Directional type LRO <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OTHER_NEUTRAL](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Directional type ON <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [POP_DIRECTIONAL_FORMAT](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Directional type PDF <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [POP_DIRECTIONAL_ISOLATE](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Directional type PDI <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RIGHT_TO_LEFT](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Directional type R <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RIGHT_TO_LEFT_ARABIC](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Directional type AL <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RIGHT_TO_LEFT_EMBEDDING](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Directional type RLE <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [RIGHT_TO_LEFT_ISOLATE](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Directional type RLI <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RIGHT_TO_LEFT_OVERRIDE](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Directional type RLO <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SEGMENT_SEPARATOR](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Directional type S <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WHITE_SPACE_NEUTRAL](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Directional type WS <br /> | ||
+| From class [ECharacterDirection](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) |------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ARABIC_NUMBER](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Directional type AN <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BLOCK_SEPARATOR](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Directional type B <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BOUNDARY_NEUTRAL](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Directional type BN <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [COMMON_NUMBER_SEPARATOR](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Directional type CS <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_ARABIC_NUMBER](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Equivalent to [java.lang.Character#DIRECTIONALITY_ARABIC_NUMBER](../java.lang/Character.md). Synonym of [ARABIC_NUMBER](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_BOUNDARY_NEUTRAL](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Equivalent to [java.lang.Character#DIRECTIONALITY_BOUNDARY_NEUTRAL](../java.lang/Character.md). Synonym of [BOUNDARY_NEUTRAL](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_COMMON_NUMBER_SEPARATOR](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Equivalent to [java.lang.Character#DIRECTIONALITY_COMMON_NUMBER_SEPARATOR](../java.lang/Character.md). Synonym of [COMMON_NUMBER_SEPARATOR](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_EUROPEAN_NUMBER](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Equivalent to [java.lang.Character#DIRECTIONALITY_EUROPEAN_NUMBER](../java.lang/Character.md). Synonym of [EUROPEAN_NUMBER](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_EUROPEAN_NUMBER_SEPARATOR](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Equivalent to [java.lang.Character#DIRECTIONALITY_EUROPEAN_NUMBER_SEPARATOR](../java.lang/Character.md). Synonym of [EUROPEAN_NUMBER_SEPARATOR](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_EUROPEAN_NUMBER_TERMINATOR](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Equivalent to [java.lang.Character#DIRECTIONALITY_EUROPEAN_NUMBER_TERMINATOR](../java.lang/Character.md). Synonym of [EUROPEAN_NUMBER_TERMINATOR](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_LEFT_TO_RIGHT](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Equivalent to [java.lang.Character#DIRECTIONALITY_LEFT_TO_RIGHT](../java.lang/Character.md). Synonym of [LEFT_TO_RIGHT](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_LEFT_TO_RIGHT_EMBEDDING](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Equivalent to [java.lang.Character#DIRECTIONALITY_LEFT_TO_RIGHT_EMBEDDING](../java.lang/Character.md). Synonym of [LEFT_TO_RIGHT_EMBEDDING](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_LEFT_TO_RIGHT_OVERRIDE](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Equivalent to [java.lang.Character#DIRECTIONALITY_LEFT_TO_RIGHT_OVERRIDE](../java.lang/Character.md). Synonym of [LEFT_TO_RIGHT_OVERRIDE](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_NONSPACING_MARK](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Equivalent to [java.lang.Character#DIRECTIONALITY_NONSPACING_MARK](../java.lang/Character.md). Synonym of [DIR_NON_SPACING_MARK](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_OTHER_NEUTRALS](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Equivalent to [java.lang.Character#DIRECTIONALITY_OTHER_NEUTRALS](../java.lang/Character.md). Synonym of [OTHER_NEUTRAL](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_PARAGRAPH_SEPARATOR](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Equivalent to [java.lang.Character#DIRECTIONALITY_PARAGRAPH_SEPARATOR](../java.lang/Character.md). Synonym of [BLOCK_SEPARATOR](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_POP_DIRECTIONAL_FORMAT](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Equivalent to [java.lang.Character#DIRECTIONALITY_POP_DIRECTIONAL_FORMAT](../java.lang/Character.md). Synonym of [POP_DIRECTIONAL_FORMAT](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_RIGHT_TO_LEFT](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Equivalent to [java.lang.Character#DIRECTIONALITY_RIGHT_TO_LEFT](../java.lang/Character.md). Synonym of [RIGHT_TO_LEFT](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_RIGHT_TO_LEFT_ARABIC](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Equivalent to [java.lang.Character#DIRECTIONALITY_RIGHT_TO_LEFT_ARABIC](../java.lang/Character.md). Synonym of [RIGHT_TO_LEFT_ARABIC](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_RIGHT_TO_LEFT_EMBEDDING](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Equivalent to [java.lang.Character#DIRECTIONALITY_RIGHT_TO_LEFT_EMBEDDING](../java.lang/Character.md). Synonym of [RIGHT_TO_LEFT_EMBEDDING](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_RIGHT_TO_LEFT_OVERRIDE](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Equivalent to [java.lang.Character#DIRECTIONALITY_RIGHT_TO_LEFT_OVERRIDE](../java.lang/Character.md). Synonym of [RIGHT_TO_LEFT_OVERRIDE](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_SEGMENT_SEPARATOR](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Equivalent to [java.lang.Character#DIRECTIONALITY_SEGMENT_SEPARATOR](../java.lang/Character.md). Synonym of [SEGMENT_SEPARATOR](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_UNDEFINED](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Undefined bidirectional character type. Undefined`char`values have undefined directionality in the Unicode specification. <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DIRECTIONALITY_WHITESPACE](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Equivalent to [java.lang.Character#DIRECTIONALITY_WHITESPACE](../java.lang/Character.md). Synonym of [WHITE_SPACE_NEUTRAL](../android/icu/lang/UCharacterEnums.ECharacterDirection.md). <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DIR_NON_SPACING_MARK](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Directional type NSM <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EUROPEAN_NUMBER](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Directional type EN <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EUROPEAN_NUMBER_SEPARATOR](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Directional type ES <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EUROPEAN_NUMBER_TERMINATOR](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Directional type ET <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [FIRST_STRONG_ISOLATE](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Directional type FSI <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LEFT_TO_RIGHT](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Directional type L <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LEFT_TO_RIGHT_EMBEDDING](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Directional type LRE <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [LEFT_TO_RIGHT_ISOLATE](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Directional type LRI <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LEFT_TO_RIGHT_OVERRIDE](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Directional type LRO <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OTHER_NEUTRAL](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Directional type ON <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [POP_DIRECTIONAL_FORMAT](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Directional type PDF <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [POP_DIRECTIONAL_ISOLATE](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Directional type PDI <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RIGHT_TO_LEFT](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Directional type R <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RIGHT_TO_LEFT_ARABIC](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Directional type AL <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RIGHT_TO_LEFT_EMBEDDING](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Directional type RLE <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [RIGHT_TO_LEFT_ISOLATE](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Directional type RLI <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RIGHT_TO_LEFT_OVERRIDE](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Directional type RLO <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SEGMENT_SEPARATOR](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Directional type S <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WHITE_SPACE_NEUTRAL](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) <br /> Directional type WS <br /> | ||
 | From class [ECharacterCategory](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) |------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [COMBINING_SPACING_MARK](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) <br /> Character type Mc <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [CONNECTOR_PUNCTUATION](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) <br /> Character type Pc <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [CONTROL](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) <br /> Character type Cc <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [CURRENCY_SYMBOL](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) <br /> Character type Sc <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DASH_PUNCTUATION](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) <br /> Character type Pd <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [DECIMAL_DIGIT_NUMBER](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) <br /> Character type Nd <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [ENCLOSING_MARK](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) <br /> Character type Me <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [END_PUNCTUATION](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) <br /> Character type Pe <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [FINAL_PUNCTUATION](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) <br /> Character type Pf <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [FINAL_QUOTE_PUNCTUATION](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) <br /> Character type Pf This name is compatible with java.lang.Character's name for this type. <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [FORMAT](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) <br /> Character type Cf <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [GENERAL_OTHER_TYPES](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) <br /> Character type Cn Not Assigned (no characters in \[UnicodeData.txt\] have this property) <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [INITIAL_PUNCTUATION](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) <br /> Character type Pi <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [INITIAL_QUOTE_PUNCTUATION](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) <br /> Character type Pi This name is compatible with java.lang.Character's name for this type. <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [LETTER_NUMBER](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) <br /> Character type Nl <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [LINE_SEPARATOR](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) <br /> Character type Zl <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [LOWERCASE_LETTER](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) <br /> Character type Ll <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [MATH_SYMBOL](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) <br /> Character type Sm <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [MODIFIER_LETTER](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) <br /> Character type Lm <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [MODIFIER_SYMBOL](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) <br /> Character type Sk <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [NON_SPACING_MARK](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) <br /> Character type Mn <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [OTHER_LETTER](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) <br /> Character type Lo <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [OTHER_NUMBER](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) <br /> Character type No <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [OTHER_PUNCTUATION](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) <br /> Character type Po <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [OTHER_SYMBOL](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) <br /> Character type So <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [PARAGRAPH_SEPARATOR](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) <br /> Character type Zp <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [PRIVATE_USE](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) <br /> Character type Co <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [SPACE_SEPARATOR](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) <br /> Character type Zs <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [START_PUNCTUATION](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) <br /> Character type Ps <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [SURROGATE](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) <br /> Character type Cs <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [TITLECASE_LETTER](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) <br /> Character type Lt <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [UNASSIGNED](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) <br /> Unassigned character type <br /> | | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [UPPERCASE_LETTER](../android/icu/lang/UCharacterEnums.ECharacterCategory.md) <br /> Character type Lu <br /> | ||
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [charCount](../android/icu/lang/UCharacter.md))`(`cp:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Same as [Character.charCount](../java/lang/Character.md)). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [codePointAt](../android/icu/lang/UCharacter.md))`(`text:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Same as[Character.codePointAt(char[], int)](https://developer.android.com/reference/kotlin/java/lang/Character.html#codePointAt(kotlin.CharArray,%20kotlin.Int)). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [codePointAt](../android/icu/lang/UCharacter.md))`(`text:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `limit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Same as[Character.codePointAt(char[], int, int)](https://developer.android.com/reference/kotlin/java/lang/Character.html#codePointAt(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int)). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [charCount](UCharacter.md))`(`cp:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Same as [Character.charCount](../java.lang/Character.md)). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [codePointAt](UCharacter.md))`(`text:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Same as[Character.codePointAt(char[], int)](https://developer.android.com/reference/kotlin/java/lang/Character.html#codePointAt(kotlin.CharArray,%20kotlin.Int)). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [codePointAt](UCharacter.md))`(`text:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `limit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Same as[Character.codePointAt(char[], int, int)](https://developer.android.com/reference/kotlin/java/lang/Character.html#codePointAt(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int)). |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [codePointAt](../android/icu/lang/UCharacter.md))`(`seq:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Same as [Character.codePointAt(CharSequence, int)](../java/lang/Character.md)). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [codePointBefore](../android/icu/lang/UCharacter.md))`(`text:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Same as[Character.codePointBefore(char[], int)](https://developer.android.com/reference/kotlin/java/lang/Character.html#codePointBefore(kotlin.CharArray,%20kotlin.Int)). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [codePointBefore](../android/icu/lang/UCharacter.md))`(`text:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `limit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Same as[Character.codePointBefore(char[], int, int)](https://developer.android.com/reference/kotlin/java/lang/Character.html#codePointBefore(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int)). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [codePointAt](UCharacter.md))`(`seq:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Same as [Character.codePointAt(CharSequence, int)](../java.lang/Character.md)). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [codePointBefore](UCharacter.md))`(`text:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Same as[Character.codePointBefore(char[], int)](https://developer.android.com/reference/kotlin/java/lang/Character.html#codePointBefore(kotlin.CharArray,%20kotlin.Int)). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [codePointBefore](UCharacter.md))`(`text:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `limit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Same as[Character.codePointBefore(char[], int, int)](https://developer.android.com/reference/kotlin/java/lang/Character.html#codePointBefore(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int)). |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [codePointBefore](../android/icu/lang/UCharacter.md))`(`seq:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Same as [Character.codePointBefore(CharSequence, int)](../java/lang/Character.md)). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [codePointCount](../android/icu/lang/UCharacter.md))`(`text:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `limit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Equivalent to the[Character.codePointCount(char[], int, int)](https://developer.android.com/reference/kotlin/java/lang/Character.html#codePointCount(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int))method, for convenience. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [codePointCount](../android/icu/lang/UCharacter.md))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `limit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Equivalent to the [Character.codePointCount(CharSequence, int, int)](../java/lang/Character.md))method, for convenience. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [codePointBefore](UCharacter.md))`(`seq:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Same as [Character.codePointBefore(CharSequence, int)](../java.lang/Character.md)). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [codePointCount](UCharacter.md))`(`text:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `limit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Equivalent to the[Character.codePointCount(char[], int, int)](https://developer.android.com/reference/kotlin/java/lang/Character.html#codePointCount(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int))method, for convenience. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [codePointCount](UCharacter.md))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `limit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Equivalent to the [Character.codePointCount(CharSequence, int, int)](../java.lang/Character.md))method, for convenience. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [digit](../android/icu/lang/UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returnss the numeric value of a decimal digit code point. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [digit](../android/icu/lang/UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `radix:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returnss the numeric value of a decimal digit code point. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [foldCase](../android/icu/lang/UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `defaultmapping:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` **\[icu\]**The given character is mapped to its case folding equivalent according to UnicodeData. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [digit](UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returnss the numeric value of a decimal digit code point. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [digit](UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `radix:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returnss the numeric value of a decimal digit code point. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [foldCase](UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `defaultmapping:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` **\[icu\]**The given character is mapped to its case folding equivalent according to UnicodeData. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [foldCase](../android/icu/lang/UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `options:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]**The given character is mapped to its case folding equivalent according to UnicodeData. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [foldCase](../android/icu/lang/UCharacter.md))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `defaultmapping:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` **\[icu\]**The given string is mapped to its case folding equivalent according to UnicodeData. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [foldCase](../android/icu/lang/UCharacter.md))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `options:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]**The given string is mapped to its case folding equivalent according to UnicodeData. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [foldCase](UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `options:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]**The given character is mapped to its case folding equivalent according to UnicodeData. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [foldCase](UCharacter.md))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `defaultmapping:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` **\[icu\]**The given string is mapped to its case folding equivalent according to UnicodeData. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [foldCase](UCharacter.md))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `options:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]**The given string is mapped to its case folding equivalent according to UnicodeData. |
 | --- | --- |
-| static [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [forDigit](../android/icu/lang/UCharacter.md))`(`digit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `radix:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Provide the java. |
-| static [VersionInfo](../android/icu/util/VersionInfo.md)! | [getAge](../android/icu/lang/UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]**Returns the "age" of the code point. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBidiPairedBracket](../android/icu/lang/UCharacter.md))`(`c:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]**Maps the specified character to its paired bracket character. |
+| static [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [forDigit](UCharacter.md))`(`digit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `radix:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Provide the java. |
+| static [VersionInfo](../android.icu.util/VersionInfo.md)! | [getAge](UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]**Returns the "age" of the code point. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBidiPairedBracket](UCharacter.md))`(`c:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]**Maps the specified character to its paired bracket character. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCharFromExtendedName](../android/icu/lang/UCharacter.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]** |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCharFromName](../android/icu/lang/UCharacter.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]** |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCharFromNameAlias](../android/icu/lang/UCharacter.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]** |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCharFromExtendedName](UCharacter.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]** |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCharFromName](UCharacter.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]** |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCharFromNameAlias](UCharacter.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]** |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCodePoint](../android/icu/lang/UCharacter.md))`(`char16:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` **\[icu\]**Returns the code point corresponding to the BMP code point. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCodePoint](../android/icu/lang/UCharacter.md))`(`lead:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`, `trail:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` **\[icu\]**Returns a code point corresponding to the two surrogate code units. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCodePoint](../android/icu/lang/UCharacter.md))`(`lead:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `trail:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]**Returns a code point corresponding to the two surrogate code units. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCodePoint](UCharacter.md))`(`char16:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` **\[icu\]**Returns the code point corresponding to the BMP code point. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCodePoint](UCharacter.md))`(`lead:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`, `trail:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` **\[icu\]**Returns a code point corresponding to the two surrogate code units. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCodePoint](UCharacter.md))`(`lead:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `trail:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]**Returns a code point corresponding to the two surrogate code units. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCombiningClass](../android/icu/lang/UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]**Returns the combining class of the argument codepoint |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDirection](../android/icu/lang/UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]**Returns the Bidirection property of a code point. |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [getDirectionality](../android/icu/lang/UCharacter.md))`(`cp:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Equivalent to the [Character.getDirectionality(char)](../java/lang/Character.md))method, for convenience. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCombiningClass](UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]**Returns the combining class of the argument codepoint |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDirection](UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]**Returns the Bidirection property of a code point. |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [getDirectionality](UCharacter.md))`(`cp:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Equivalent to the [Character.getDirectionality(char)](../java.lang/Character.md))method, for convenience. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getExtendedName](../android/icu/lang/UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]**Returns a name for a valid codepoint. |
-| static [ValueIterator](../android/icu/util/ValueIterator.md)! | [getExtendedNameIterator](../android/icu/lang/UCharacter.md))`()` **\[icu\]** |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHanNumericValue](../android/icu/lang/UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]**Returns the numeric value of a Han character. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getExtendedName](UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]**Returns a name for a valid codepoint. |
+| static [ValueIterator](../android.icu.util/ValueIterator.md)! | [getExtendedNameIterator](UCharacter.md))`()` **\[icu\]** |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHanNumericValue](UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]**Returns the numeric value of a Han character. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIntPropertyMaxValue](../android/icu/lang/UCharacter.md))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]**Returns the maximum value for an integer/binary Unicode property. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIntPropertyMinValue](../android/icu/lang/UCharacter.md))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]**Returns the minimum value for an integer/binary Unicode property type. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIntPropertyValue](../android/icu/lang/UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]**Returns the property value for a Unicode property type of a code point. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIntPropertyMaxValue](UCharacter.md))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]**Returns the maximum value for an integer/binary Unicode property. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIntPropertyMinValue](UCharacter.md))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]**Returns the minimum value for an integer/binary Unicode property type. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIntPropertyValue](UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]**Returns the property value for a Unicode property type of a code point. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMirror](../android/icu/lang/UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]**Maps the specified code point to a "mirror-image" code point. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](../android/icu/lang/UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]** Returns the most current Unicode name of the argument code point, or null if the character is unassigned or outside the range`UCharacter.MIN_VALUE`and`UCharacter.MAX_VALUE`or does not have a name. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](../android/icu/lang/UCharacter.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `separator:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Returns the names for each of the characters in a string |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMirror](UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]**Maps the specified code point to a "mirror-image" code point. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]** Returns the most current Unicode name of the argument code point, or null if the character is unassigned or outside the range`UCharacter.MIN_VALUE`and`UCharacter.MAX_VALUE`or does not have a name. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](UCharacter.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `separator:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Returns the names for each of the characters in a string |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getNameAlias](../android/icu/lang/UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]**Returns the corrected name from NameAliases. |
-| static [ValueIterator](../android/icu/util/ValueIterator.md)! | [getNameIterator](../android/icu/lang/UCharacter.md))`()` **\[icu\]** |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getNumericValue](../android/icu/lang/UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the numeric value of the code point as a nonnegative integer. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getNameAlias](UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]**Returns the corrected name from NameAliases. |
+| static [ValueIterator](../android.icu.util/ValueIterator.md)! | [getNameIterator](UCharacter.md))`()` **\[icu\]** |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getNumericValue](UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the numeric value of the code point as a nonnegative integer. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPropertyEnum](../android/icu/lang/UCharacter.md))`(`propertyAlias:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` **\[icu\]**Return the UProperty selector for a given property name, as specified in the Unicode database file PropertyAliases. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPropertyName](../android/icu/lang/UCharacter.md))`(`property:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `nameChoice:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]**Return the Unicode name for a given property, as given in the Unicode database file PropertyAliases. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPropertyValueEnum](../android/icu/lang/UCharacter.md))`(`property:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `valueAlias:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` **\[icu\]**Return the property value integer for a given value name, as specified in the Unicode database file PropertyValueAliases. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPropertyEnum](UCharacter.md))`(`propertyAlias:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` **\[icu\]**Return the UProperty selector for a given property name, as specified in the Unicode database file PropertyAliases. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPropertyName](UCharacter.md))`(`property:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `nameChoice:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]**Return the Unicode name for a given property, as given in the Unicode database file PropertyAliases. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPropertyValueEnum](UCharacter.md))`(`property:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `valueAlias:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` **\[icu\]**Return the property value integer for a given value name, as specified in the Unicode database file PropertyValueAliases. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPropertyValueName](../android/icu/lang/UCharacter.md))`(`property:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `nameChoice:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]**Return the Unicode name for a given property value, as given in the Unicode database file PropertyValueAliases. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getType](../android/icu/lang/UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a value indicating a code point's Unicode category. |
-| static [RangeValueIterator](../android/icu/util/RangeValueIterator.md)! | [getTypeIterator](../android/icu/lang/UCharacter.md))`()` **\[icu\]** |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPropertyValueName](UCharacter.md))`(`property:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `nameChoice:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]**Return the Unicode name for a given property value, as given in the Unicode database file PropertyValueAliases. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getType](UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a value indicating a code point's Unicode category. |
+| static [RangeValueIterator](../android.icu.util/RangeValueIterator.md)! | [getTypeIterator](UCharacter.md))`()` **\[icu\]** |
 | --- | --- |
-| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getUnicodeNumericValue](../android/icu/lang/UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]**Returns the numeric value for a Unicode code point as defined in the Unicode Character Database. |
-| static [VersionInfo](../android/icu/util/VersionInfo.md)! | [getUnicodeVersion](../android/icu/lang/UCharacter.md))`()` **\[icu\]**Returns the version of Unicode data used. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasBinaryProperty](../android/icu/lang/UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `property:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]**Check a binary Unicode property for a code point. |
+| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getUnicodeNumericValue](UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]**Returns the numeric value for a Unicode code point as defined in the Unicode Character Database. |
+| static [VersionInfo](../android.icu.util/VersionInfo.md)! | [getUnicodeVersion](UCharacter.md))`()` **\[icu\]**Returns the version of Unicode data used. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasBinaryProperty](UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `property:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]**Check a binary Unicode property for a code point. |
 | --- | --- |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasBinaryProperty](../android/icu/lang/UCharacter.md))`(`s:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `property:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]**Returns true if the property is true for the string. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isBMP](../android/icu/lang/UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]**Determines if the code point is in the BMP plane. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isBaseForm](../android/icu/lang/UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]**Determines whether the specified code point is of base form. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasBinaryProperty](UCharacter.md))`(`s:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `property:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]**Returns true if the property is true for the string. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isBMP](UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]**Determines if the code point is in the BMP plane. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isBaseForm](UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]**Determines whether the specified code point is of base form. |
 | --- | --- |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDefined](../android/icu/lang/UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Determines if a code point has a defined meaning in the up-to-date Unicode standard. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDigit](../android/icu/lang/UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Determines if a code point is a Java digit. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isHighSurrogate](../android/icu/lang/UCharacter.md))`(`ch:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Same as [Character.isHighSurrogate](../java/lang/Character.md)), |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDefined](UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Determines if a code point has a defined meaning in the up-to-date Unicode standard. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDigit](UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Determines if a code point is a Java digit. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isHighSurrogate](UCharacter.md))`(`ch:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Same as [Character.isHighSurrogate](../java.lang/Character.md)), |
 | --- | --- |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isHighSurrogate](../android/icu/lang/UCharacter.md))`(`codePoint:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Same as [Character.isHighSurrogate](../java/lang/Character.md)), except that the ICU version accepts`int`for code points. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isISOControl](../android/icu/lang/UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Determines if the specified code point is an ISO control character. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isIdentifierIgnorable](../android/icu/lang/UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Determines if the specified code point should be regarded as an ignorable character in a Java identifier. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isHighSurrogate](UCharacter.md))`(`codePoint:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Same as [Character.isHighSurrogate](../java.lang/Character.md)), except that the ICU version accepts`int`for code points. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isISOControl](UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Determines if the specified code point is an ISO control character. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isIdentifierIgnorable](UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Determines if the specified code point should be regarded as an ignorable character in a Java identifier. |
 | --- | --- |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isJavaIdentifierPart](../android/icu/lang/UCharacter.md))`(`cp:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Compatibility override of Java method, delegates to java. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isJavaIdentifierStart](../android/icu/lang/UCharacter.md))`(`cp:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Compatibility override of Java method, delegates to java. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLegal](../android/icu/lang/UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]**A code point is illegal if and only if - Out of bounds, less than 0 or greater than UCharacter.MAX_VALUE - A surrogate value, 0xD800 to 0xDFFF - Not-a-character, having the form 0x xxFFFF or 0x xxFFFE Note: legal does not mean that it is assigned in this version of Unicode. <br /> |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isJavaIdentifierPart](UCharacter.md))`(`cp:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Compatibility override of Java method, delegates to java. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isJavaIdentifierStart](UCharacter.md))`(`cp:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Compatibility override of Java method, delegates to java. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLegal](UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]**A code point is illegal if and only if - Out of bounds, less than 0 or greater than UCharacter.MAX_VALUE - A surrogate value, 0xD800 to 0xDFFF - Not-a-character, having the form 0x xxFFFF or 0x xxFFFE Note: legal does not mean that it is assigned in this version of Unicode. <br /> |
 | --- | --- |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLegal](../android/icu/lang/UCharacter.md))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**A string is legal iff all its code points are legal. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLetter](../android/icu/lang/UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Determines if the specified code point is a letter. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLetterOrDigit](../android/icu/lang/UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Determines if the specified code point is a letter or digit. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLegal](UCharacter.md))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**A string is legal iff all its code points are legal. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLetter](UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Determines if the specified code point is a letter. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLetterOrDigit](UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Determines if the specified code point is a letter or digit. |
 | --- | --- |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLowSurrogate](../android/icu/lang/UCharacter.md))`(`ch:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Same as [Character.isLowSurrogate](../java/lang/Character.md)), |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLowSurrogate](../android/icu/lang/UCharacter.md))`(`codePoint:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Same as [Character.isLowSurrogate](../java/lang/Character.md)), except that the ICU version accepts`int`for code points. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLowerCase](../android/icu/lang/UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Determines if the specified code point is a lowercase character. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLowSurrogate](UCharacter.md))`(`ch:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Same as [Character.isLowSurrogate](../java.lang/Character.md)), |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLowSurrogate](UCharacter.md))`(`codePoint:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Same as [Character.isLowSurrogate](../java.lang/Character.md)), except that the ICU version accepts`int`for code points. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLowerCase](UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Determines if the specified code point is a lowercase character. |
 | --- | --- |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMirrored](../android/icu/lang/UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Determines whether the code point has the "mirrored" property. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPrintable](../android/icu/lang/UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]**Determines whether the specified code point is a printable character according to the Unicode standard. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSpaceChar](../android/icu/lang/UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Determines if the specified code point is a Unicode specified space character, i. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMirrored](UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Determines whether the code point has the "mirrored" property. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPrintable](UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]**Determines whether the specified code point is a printable character according to the Unicode standard. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSpaceChar](UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Determines if the specified code point is a Unicode specified space character, i. |
 | --- | --- |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSupplementary](../android/icu/lang/UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]**Determines if the code point is a supplementary character. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSupplementaryCodePoint](../android/icu/lang/UCharacter.md))`(`cp:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Same as [Character.isSupplementaryCodePoint](../java/lang/Character.md)). |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSurrogatePair](../android/icu/lang/UCharacter.md))`(`high:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`, `low:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Same as [Character.isSurrogatePair](../java/lang/Character.md)). |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSupplementary](UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]**Determines if the code point is a supplementary character. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSupplementaryCodePoint](UCharacter.md))`(`cp:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Same as [Character.isSupplementaryCodePoint](../java.lang/Character.md)). |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSurrogatePair](UCharacter.md))`(`high:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`, `low:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Same as [Character.isSurrogatePair](../java.lang/Character.md)). |
 | --- | --- |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSurrogatePair](../android/icu/lang/UCharacter.md))`(`high:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `low:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Same as [Character.isSurrogatePair](../java/lang/Character.md)), except that the ICU version accepts`int`for code points. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isTitleCase](../android/icu/lang/UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Determines if the specified code point is a titlecase character. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isUAlphabetic](../android/icu/lang/UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]** |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSurrogatePair](UCharacter.md))`(`high:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `low:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Same as [Character.isSurrogatePair](../java.lang/Character.md)), except that the ICU version accepts`int`for code points. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isTitleCase](UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Determines if the specified code point is a titlecase character. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isUAlphabetic](UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]** |
 | --- | --- |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isULowercase](../android/icu/lang/UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]** |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isUUppercase](../android/icu/lang/UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]** |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isUWhiteSpace](../android/icu/lang/UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]** |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isULowercase](UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]** |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isUUppercase](UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]** |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isUWhiteSpace](UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]** |
 | --- | --- |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isUnicodeIdentifierPart](../android/icu/lang/UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Determines if the specified character is permissible as a non-initial character of an identifier according to UAX #31 Unicode Identifier and Pattern Syntax. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isUnicodeIdentifierStart](../android/icu/lang/UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Determines if the specified character is permissible as the first character in an identifier according to UAX #31 Unicode Identifier and Pattern Syntax. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isUpperCase](../android/icu/lang/UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Determines if the specified code point is an uppercase character. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isUnicodeIdentifierPart](UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Determines if the specified character is permissible as a non-initial character of an identifier according to UAX #31 Unicode Identifier and Pattern Syntax. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isUnicodeIdentifierStart](UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Determines if the specified character is permissible as the first character in an identifier according to UAX #31 Unicode Identifier and Pattern Syntax. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isUpperCase](UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Determines if the specified code point is an uppercase character. |
 | --- | --- |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isValidCodePoint](../android/icu/lang/UCharacter.md))`(`cp:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Equivalent to [Character.isValidCodePoint](../java/lang/Character.md)). |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isWhitespace](../android/icu/lang/UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Determines if the specified code point is a white space character. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [offsetByCodePoints](../android/icu/lang/UCharacter.md))`(`text:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `codePointOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Equivalent to the[Character.offsetByCodePoints(char[], int, int, int, int)](https://developer.android.com/reference/kotlin/java/lang/Character.html#offsetByCodePoints(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))method, for convenience. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isValidCodePoint](UCharacter.md))`(`cp:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Equivalent to [Character.isValidCodePoint](../java.lang/Character.md)). |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isWhitespace](UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Determines if the specified code point is a white space character. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [offsetByCodePoints](UCharacter.md))`(`text:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `codePointOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Equivalent to the[Character.offsetByCodePoints(char[], int, int, int, int)](https://developer.android.com/reference/kotlin/java/lang/Character.html#offsetByCodePoints(kotlin.CharArray,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int))method, for convenience. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [offsetByCodePoints](../android/icu/lang/UCharacter.md))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `codePointOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Equivalent to the [Character.offsetByCodePoints(CharSequence, int, int)](../java/lang/Character.md))method, for convenience. |
-| static [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)! | [toChars](../android/icu/lang/UCharacter.md))`(`cp:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Same as [Character.toChars(int)](../java/lang/Character.md)). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [toChars](../android/icu/lang/UCharacter.md))`(`cp:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dst:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `dstIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Same as[Character.toChars(int, char[], int)](https://developer.android.com/reference/kotlin/java/lang/Character.html#toChars(kotlin.Int,%20kotlin.CharArray,%20kotlin.Int)). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [offsetByCodePoints](UCharacter.md))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `codePointOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Equivalent to the [Character.offsetByCodePoints(CharSequence, int, int)](../java.lang/Character.md))method, for convenience. |
+| static [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)! | [toChars](UCharacter.md))`(`cp:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Same as [Character.toChars(int)](../java.lang/Character.md)). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [toChars](UCharacter.md))`(`cp:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dst:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `dstIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Same as[Character.toChars(int, char[], int)](https://developer.android.com/reference/kotlin/java/lang/Character.html#toChars(kotlin.Int,%20kotlin.CharArray,%20kotlin.Int)). |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [toCodePoint](../android/icu/lang/UCharacter.md))`(`high:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`, `low:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Same as [Character.toCodePoint](../java/lang/Character.md)). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [toCodePoint](../android/icu/lang/UCharacter.md))`(`high:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `low:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Same as [Character.toCodePoint](../java/lang/Character.md)), except that the ICU version accepts`int`for code points. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toLowerCase](../android/icu/lang/UCharacter.md))`(`locale:` ` [ULocale](../android/icu/util/ULocale.md)!`, `str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the lowercase version of the argument string. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [toCodePoint](UCharacter.md))`(`high:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`, `low:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Same as [Character.toCodePoint](../java.lang/Character.md)). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [toCodePoint](UCharacter.md))`(`high:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `low:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Same as [Character.toCodePoint](../java.lang/Character.md)), except that the ICU version accepts`int`for code points. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toLowerCase](UCharacter.md))`(`locale:` ` [ULocale](../android.icu.util/ULocale.md)!`, `str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the lowercase version of the argument string. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [toLowerCase](../android/icu/lang/UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` The given code point is mapped to its lowercase equivalent; if the code point has no lowercase equivalent, the code point itself is returned. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toLowerCase](../android/icu/lang/UCharacter.md))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the lowercase version of the argument string. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toLowerCase](../android/icu/lang/UCharacter.md))`(`locale:` ` [Locale](../java/util/Locale.md)!`, `str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the lowercase version of the argument string. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [toLowerCase](UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` The given code point is mapped to its lowercase equivalent; if the code point has no lowercase equivalent, the code point itself is returned. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toLowerCase](UCharacter.md))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the lowercase version of the argument string. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toLowerCase](UCharacter.md))`(`locale:` ` [Locale](../java.util/Locale.md)!`, `str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the lowercase version of the argument string. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toString](../android/icu/lang/UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Converts argument code point and returns a String object representing the code point's value in UTF-16 format. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toTitleCase](../android/icu/lang/UCharacter.md))`(`locale:` ` [ULocale](../android/icu/util/ULocale.md)!`, `str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `titleIter:` ` [BreakIterator](../android/icu/text/BreakIterator.md)!`)` Returns the titlecase version of the argument string. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toTitleCase](../android/icu/lang/UCharacter.md))`(`locale:` ` [ULocale](../android/icu/util/ULocale.md)!`, `str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `titleIter:` ` [BreakIterator](../android/icu/text/BreakIterator.md)!`, `options:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the titlecase version of the argument string. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toString](UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Converts argument code point and returns a String object representing the code point's value in UTF-16 format. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toTitleCase](UCharacter.md))`(`locale:` ` [ULocale](../android.icu.util/ULocale.md)!`, `str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `titleIter:` ` [BreakIterator](../android.icu.text/BreakIterator.md)!`)` Returns the titlecase version of the argument string. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toTitleCase](UCharacter.md))`(`locale:` ` [ULocale](../android.icu.util/ULocale.md)!`, `str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `titleIter:` ` [BreakIterator](../android.icu.text/BreakIterator.md)!`, `options:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the titlecase version of the argument string. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [toTitleCase](../android/icu/lang/UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Converts the code point argument to titlecase. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toTitleCase](../android/icu/lang/UCharacter.md))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `breakiter:` ` [BreakIterator](../android/icu/text/BreakIterator.md)!`)` Returns the titlecase version of the argument string. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toTitleCase](../android/icu/lang/UCharacter.md))`(`locale:` ` [Locale](../java/util/Locale.md)!`, `str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `breakiter:` ` [BreakIterator](../android/icu/text/BreakIterator.md)!`)` Returns the titlecase version of the argument string. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [toTitleCase](UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Converts the code point argument to titlecase. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toTitleCase](UCharacter.md))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `breakiter:` ` [BreakIterator](../android.icu.text/BreakIterator.md)!`)` Returns the titlecase version of the argument string. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toTitleCase](UCharacter.md))`(`locale:` ` [Locale](../java.util/Locale.md)!`, `str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `breakiter:` ` [BreakIterator](../android.icu.text/BreakIterator.md)!`)` Returns the titlecase version of the argument string. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toTitleCase](../android/icu/lang/UCharacter.md))`(`locale:` ` [Locale](../java/util/Locale.md)!`, `str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `titleIter:` ` [BreakIterator](../android/icu/text/BreakIterator.md)!`, `options:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]** |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toUpperCase](../android/icu/lang/UCharacter.md))`(`locale:` ` [ULocale](../android/icu/util/ULocale.md)!`, `str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the uppercase version of the argument string. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [toUpperCase](../android/icu/lang/UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Converts the character argument to uppercase. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toTitleCase](UCharacter.md))`(`locale:` ` [Locale](../java.util/Locale.md)!`, `str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `titleIter:` ` [BreakIterator](../android.icu.text/BreakIterator.md)!`, `options:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` **\[icu\]** |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toUpperCase](UCharacter.md))`(`locale:` ` [ULocale](../android.icu.util/ULocale.md)!`, `str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the uppercase version of the argument string. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [toUpperCase](UCharacter.md))`(`ch:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Converts the character argument to uppercase. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toUpperCase](../android/icu/lang/UCharacter.md))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the uppercase version of the argument string. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toUpperCase](../android/icu/lang/UCharacter.md))`(`locale:` ` [Locale](../java/util/Locale.md)!`, `str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the uppercase version of the argument string. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toUpperCase](UCharacter.md))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the uppercase version of the argument string. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toUpperCase](UCharacter.md))`(`locale:` ` [Locale](../java.util/Locale.md)!`, `str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the uppercase version of the argument string. |
 
 ## Constants
 
@@ -311,7 +311,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val MAX_CODE_POINT: Int
 ```
 
-Constant U+10FFFF, same as [Character.MAX_CODE_POINT](../java/lang/Character.md). 
+Constant U+10FFFF, same as [Character.MAX_CODE_POINT](../java.lang/Character.md). 
 
  Value: 1114111
 
@@ -323,7 +323,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val MAX_HIGH_SURROGATE: Char
 ```
 
-Constant U+DBFF, same as [Character.MAX_HIGH_SURROGATE](../java/lang/Character.md). 
+Constant U+DBFF, same as [Character.MAX_HIGH_SURROGATE](../java.lang/Character.md). 
 
  Value: '\udbff'
 
@@ -335,7 +335,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val MAX_LOW_SURROGATE: Char
 ```
 
-Constant U+DFFF, same as [Character.MAX_LOW_SURROGATE](../java/lang/Character.md). 
+Constant U+DFFF, same as [Character.MAX_LOW_SURROGATE](../java.lang/Character.md). 
 
  Value: '\udfff'
 
@@ -359,7 +359,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val MAX_SURROGATE: Char
 ```
 
-Constant U+DFFF, same as [Character.MAX_SURROGATE](../java/lang/Character.md). 
+Constant U+DFFF, same as [Character.MAX_SURROGATE](../java.lang/Character.md). 
 
  Value: '\udfff'
 
@@ -371,9 +371,9 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val MAX_VALUE: Int
 ```
 
-The highest Unicode code point value (scalar value), constant U+10FFFF (uses 21 bits). Same as [Character.MAX_CODE_POINT](../java/lang/Character.md).
+The highest Unicode code point value (scalar value), constant U+10FFFF (uses 21 bits). Same as [Character.MAX_CODE_POINT](../java.lang/Character.md).
 
-Up-to-date Unicode implementation of [Character.MAX_VALUE](../java/lang/Character.md) which is still a char with the value U+FFFF. 
+Up-to-date Unicode implementation of [Character.MAX_VALUE](../java.lang/Character.md) which is still a char with the value U+FFFF. 
 
  Value: 1114111
 
@@ -385,7 +385,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val MIN_CODE_POINT: Int
 ```
 
-Constant U+0000, same as [Character.MIN_CODE_POINT](../java/lang/Character.md). 
+Constant U+0000, same as [Character.MIN_CODE_POINT](../java.lang/Character.md). 
 
  Value: 0
 
@@ -397,7 +397,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val MIN_HIGH_SURROGATE: Char
 ```
 
-Constant U+D800, same as [Character.MIN_HIGH_SURROGATE](../java/lang/Character.md). 
+Constant U+D800, same as [Character.MIN_HIGH_SURROGATE](../java.lang/Character.md). 
 
  Value: '\ud800'
 
@@ -409,7 +409,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val MIN_LOW_SURROGATE: Char
 ```
 
-Constant U+DC00, same as [Character.MIN_LOW_SURROGATE](../java/lang/Character.md). 
+Constant U+DC00, same as [Character.MIN_LOW_SURROGATE](../java.lang/Character.md). 
 
  Value: '\udc00'
 
@@ -433,7 +433,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val MIN_SUPPLEMENTARY_CODE_POINT: Int
 ```
 
-Constant U+10000, same as [Character.MIN_SUPPLEMENTARY_CODE_POINT](../java/lang/Character.md). 
+Constant U+10000, same as [Character.MIN_SUPPLEMENTARY_CODE_POINT](../java.lang/Character.md). 
 
  Value: 65536
 
@@ -445,7 +445,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val MIN_SURROGATE: Char
 ```
 
-Constant U+D800, same as [Character.MIN_SURROGATE](../java/lang/Character.md). 
+Constant U+D800, same as [Character.MIN_SURROGATE](../java.lang/Character.md). 
 
  Value: '\ud800'
 
@@ -457,7 +457,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val MIN_VALUE: Int
 ```
 
-The lowest Unicode code point value, constant 0. Same as [Character.MIN_CODE_POINT](../java/lang/Character.md), same integer value as [Character.MIN_VALUE](../java/lang/Character.md). 
+The lowest Unicode code point value, constant 0. Same as [Character.MIN_CODE_POINT](../java.lang/Character.md), same integer value as [Character.MIN_VALUE](../java.lang/Character.md). 
 
  Value: 0
 
@@ -475,7 +475,7 @@ Special value that is returned by getUnicodeNumericValue(int) when no numeric va
 
 **See Also**
 
-- [#getUnicodeNumericValue](../android/icu/lang/UCharacter.md)) 
+- [#getUnicodeNumericValue](UCharacter.md)) 
 
 ### REPLACEMENT_CHAR
 
@@ -497,7 +497,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val SUPPLEMENTARY_MIN_VALUE: Int
 ```
 
-The minimum value for Supplementary code points, constant U+10000. Same as [Character.MIN_SUPPLEMENTARY_CODE_POINT](../java/lang/Character.md). 
+The minimum value for Supplementary code points, constant U+10000. Same as [Character.MIN_SUPPLEMENTARY_CODE_POINT](../java.lang/Character.md). 
 
  Value: 65536
 
@@ -515,7 +515,7 @@ Do not adjust the titlecasing indexes from BreakIterator::next() indexes; titlec
 
 **See Also**
 
-- [#TITLECASE_NO_LOWERCASE](../android/icu/lang/UCharacter.md) 
+- [#TITLECASE_NO_LOWERCASE](UCharacter.md) 
 
 ### TITLECASE_NO_LOWERCASE
 
@@ -541,7 +541,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static fun charCount(cp: Int): Int
 ```
 
-Same as [Character.charCount](../java/lang/Character.md)). Returns the number of chars needed to represent the code point (1 or 2). This does not check the code point for validity.
+Same as [Character.charCount](../java.lang/Character.md)). Returns the number of chars needed to represent the code point (1 or 2). This does not check the code point for validity.
 
 | Parameters ||
 |------|----------------------------------------------------------------------------------------------------|
@@ -609,7 +609,7 @@ static fun codePointAt(
 ): Int
 ```
 
-Same as [Character.codePointAt(CharSequence, int)](../java/lang/Character.md)). Returns the code point at index. This examines only the characters at index and index+1.
+Same as [Character.codePointAt(CharSequence, int)](../java.lang/Character.md)). Returns the code point at index. This examines only the characters at index and index+1.
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------|
@@ -678,7 +678,7 @@ static fun codePointBefore(
 ): Int
 ```
 
-Same as [Character.codePointBefore(CharSequence, int)](../java/lang/Character.md)). Return the code point before index. This examines only the characters at index-1 and index-2.
+Same as [Character.codePointBefore(CharSequence, int)](../java.lang/Character.md)). Return the code point before index. This examines only the characters at index-1 and index-2.
 
 | Parameters ||
 |---------|-----------------------------------------------------------------------------------------------------------------------------------------|
@@ -726,7 +726,7 @@ static fun codePointCount(
 ): Int
 ```
 
-Equivalent to the [Character.codePointCount(CharSequence, int, int)](../java/lang/Character.md))method, for convenience. Counts the number of code points in the range of text.
+Equivalent to the [Character.codePointCount(CharSequence, int, int)](../java.lang/Character.md))method, for convenience. Counts the number of code points in the range of text.
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------------|
@@ -815,7 +815,7 @@ This function only returns the simple, single-code point case mapping. Full case
 
 **See Also**
 
-- [#foldCase(String, boolean)](../android/icu/lang/UCharacter.md)) 
+- [#foldCase(String, boolean)](UCharacter.md)) 
 
 ### foldCase
 
@@ -843,7 +843,7 @@ This function only returns the simple, single-code point case mapping. Full case
 
 **See Also**
 
-- [#foldCase(String, boolean)](../android/icu/lang/UCharacter.md)) 
+- [#foldCase(String, boolean)](UCharacter.md)) 
 
 ### foldCase
 
@@ -869,7 +869,7 @@ static fun foldCase(
 
 **See Also**
 
-- [#foldCase(int, boolean)](../android/icu/lang/UCharacter.md)) 
+- [#foldCase(int, boolean)](UCharacter.md)) 
 
 ### foldCase
 
@@ -895,7 +895,7 @@ static fun foldCase(
 
 **See Also**
 
-- [#foldCase(int, boolean)](../android/icu/lang/UCharacter.md)) 
+- [#foldCase(int, boolean)](UCharacter.md)) 
 
 ### forDigit
 
@@ -932,7 +932,7 @@ The data is from the UCD file DerivedAge.txt.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------|----------------------------|
-| [VersionInfo](../android/icu/util/VersionInfo.md)! | the Unicode version number |
+| [VersionInfo](../android.icu.util/VersionInfo.md)! | the Unicode version number |
 
 ### getBidiPairedBracket
 
@@ -954,9 +954,9 @@ static fun getBidiPairedBracket(c: Int): Int
 
 **See Also**
 
-- [android.icu.lang.UProperty#BIDI_PAIRED_BRACKET](../android/icu/lang/UProperty.md)
-- [android.icu.lang.UProperty#BIDI_PAIRED_BRACKET_TYPE](../android/icu/lang/UProperty.md)
-- [#getMirror(int)](../android/icu/lang/UCharacter.md)) 
+- [android.icu.lang.UProperty#BIDI_PAIRED_BRACKET](UProperty.md)
+- [android.icu.lang.UProperty#BIDI_PAIRED_BRACKET_TYPE](UProperty.md)
+- [#getMirror(int)](UCharacter.md)) 
 
 ### getCharFromExtendedName
 
@@ -1100,7 +1100,7 @@ static fun getCodePoint(
 
 **See Also**
 
-- [#toCodePoint(int, int)](../android/icu/lang/UCharacter.md)) 
+- [#toCodePoint(int, int)](UCharacter.md)) 
 
 ### getCombiningClass
 
@@ -1129,7 +1129,7 @@ static fun getDirection(ch: Int): Int
 ```
 
 **\[icu\]** Returns the Bidirection property of a code point. For example, 0x0041 (letter A) has the LEFT_TO_RIGHT directional property. 
-Result returned belongs to the interface [UCharacterDirection](../android/icu/lang/UCharacterDirection.md)
+Result returned belongs to the interface [UCharacterDirection](UCharacterDirection.md)
 
 | Parameters ||
 |------|--------------------------------------------------------------------------------------------------------------------------|
@@ -1147,7 +1147,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static fun getDirectionality(cp: Int): Byte
 ```
 
-Equivalent to the [Character.getDirectionality(char)](../java/lang/Character.md))method, for convenience. Returns a byte representing the directionality of the character.**\[icu\] Note:** Unlike [Character.getDirectionality(char)](../java/lang/Character.md)), this returns DIRECTIONALITY_LEFT_TO_RIGHT for undefined or out-of-bounds characters.**\[icu\] Note:** The return value must be tested using the constants defined in [UCharacterDirection](../android/icu/lang/UCharacterDirection.md) and its interface [UCharacterEnums.ECharacterDirection](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) since the values are different from the ones defined by`java.lang.Character`.
+Equivalent to the [Character.getDirectionality(char)](../java.lang/Character.md))method, for convenience. Returns a byte representing the directionality of the character.**\[icu\] Note:** Unlike [Character.getDirectionality(char)](../java.lang/Character.md)), this returns DIRECTIONALITY_LEFT_TO_RIGHT for undefined or out-of-bounds characters.**\[icu\] Note:** The return value must be tested using the constants defined in [UCharacterDirection](UCharacterDirection.md) and its interface [UCharacterEnums.ECharacterDirection](../android/icu/lang/UCharacterEnums.ECharacterDirection.md) since the values are different from the ones defined by`java.lang.Character`.
 
 | Parameters ||
 |------|----------------------------------------------------------------------------------------------------|
@@ -1159,7 +1159,7 @@ Equivalent to the [Character.getDirectionality(char)](../java/lang/Character.md)
 
 **See Also**
 
-- [#getDirection](../android/icu/lang/UCharacter.md)) 
+- [#getDirection](UCharacter.md)) 
 
 ### getExtendedName
 
@@ -1218,7 +1218,7 @@ The maximal range which the name iterator iterates is from
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------|-------------|
-| [ValueIterator](../android/icu/util/ValueIterator.md)! | an iterator |
+| [ValueIterator](../android.icu.util/ValueIterator.md)! | an iterator |
 
 ### getHanNumericValue
 
@@ -1232,7 +1232,7 @@ static fun getHanNumericValue(ch: Int): Int
 
 This returns the value of Han 'numeric' code points, including those for zero, ten, hundred, thousand, ten thousand, and hundred million. This includes both the standard and 'checkwriting' characters, the 'big circle' zero character, and the standard zero character.
 
-Note: The Unicode Standard has numeric values for more Han characters recognized by this method (see [getNumericValue(int)](../android/icu/lang/UCharacter.md))and the UCD file DerivedNumericValues.txt), and a [android.icu.text.NumberFormat](../android/icu/text/NumberFormat.md) can be used with a Chinese [android.icu.text.NumberingSystem](../android/icu/text/NumberingSystem.md).
+Note: The Unicode Standard has numeric values for more Han characters recognized by this method (see [getNumericValue(int)](UCharacter.md))and the UCD file DerivedNumericValues.txt), and a [android.icu.text.NumberFormat](../android.icu.text/NumberFormat.md) can be used with a Chinese [android.icu.text.NumberingSystem](../android.icu.text/NumberingSystem.md).
 
 | Parameters ||
 |------|------------------------------------------------------------------------------------------------|
@@ -1270,10 +1270,10 @@ For undefined UProperty constant values, min/max values will be 0/-1.
 
 **See Also**
 
-- [android.icu.lang.UProperty](../android/icu/lang/UProperty.md)
-- [#getUnicodeVersion](../android/icu/lang/UCharacter.md))
-- [#getIntPropertyMaxValue](../android/icu/lang/UCharacter.md))
-- [#getIntPropertyValue](../android/icu/lang/UCharacter.md)) 
+- [android.icu.lang.UProperty](UProperty.md)
+- [#getUnicodeVersion](UCharacter.md))
+- [#getIntPropertyMaxValue](UCharacter.md))
+- [#getIntPropertyValue](UCharacter.md)) 
 
 ### getIntPropertyMinValue
 
@@ -1295,10 +1295,10 @@ static fun getIntPropertyMinValue(type: Int): Int
 
 **See Also**
 
-- [android.icu.lang.UProperty](../android/icu/lang/UProperty.md)
-- [#getUnicodeVersion](../android/icu/lang/UCharacter.md))
-- [#getIntPropertyMaxValue](../android/icu/lang/UCharacter.md))
-- [#getIntPropertyValue](../android/icu/lang/UCharacter.md)) 
+- [android.icu.lang.UProperty](UProperty.md)
+- [#getUnicodeVersion](UCharacter.md))
+- [#getIntPropertyMaxValue](UCharacter.md))
+- [#getIntPropertyValue](UCharacter.md)) 
 
 ### getIntPropertyValue
 
@@ -1338,10 +1338,10 @@ Sample usage:
 
 **See Also**
 
-- [android.icu.lang.UProperty](../android/icu/lang/UProperty.md)
-- [#getIntPropertyMinValue](../android/icu/lang/UCharacter.md))
-- [#getIntPropertyMaxValue](../android/icu/lang/UCharacter.md))
-- [#getUnicodeVersion](../android/icu/lang/UCharacter.md)) 
+- [android.icu.lang.UProperty](UProperty.md)
+- [#getIntPropertyMinValue](UCharacter.md))
+- [#getIntPropertyMaxValue](UCharacter.md))
+- [#getUnicodeVersion](UCharacter.md)) 
 
 ### getMirror
 
@@ -1453,7 +1453,7 @@ The maximal range which the name iterator iterates is from UCharacter.MIN_VALUE 
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------|-------------|
-| [ValueIterator](../android/icu/util/ValueIterator.md)! | an iterator |
+| [ValueIterator](../android.icu.util/ValueIterator.md)! | an iterator |
 
 ### getNumericValue
 
@@ -1499,7 +1499,7 @@ static fun getPropertyEnum(propertyAlias: CharSequence!): Int
 
 **See Also**
 
-- [android.icu.lang.UProperty](../android/icu/lang/UProperty.md) 
+- [android.icu.lang.UProperty](UProperty.md) 
 
 ### getPropertyName
 
@@ -1529,7 +1529,7 @@ static fun getPropertyName(
 
 **See Also**
 
-- [android.icu.lang.UProperty](../android/icu/lang/UProperty.md)
+- [android.icu.lang.UProperty](UProperty.md)
 - [android.icu.lang.UProperty.NameChoice](../android/icu/lang/UProperty.NameChoice.md) 
 
 ### getPropertyValueEnum
@@ -1560,7 +1560,7 @@ static fun getPropertyValueEnum(
 
 **See Also**
 
-- [android.icu.lang.UProperty](../android/icu/lang/UProperty.md) 
+- [android.icu.lang.UProperty](UProperty.md) 
 
 ### getPropertyValueName
 
@@ -1593,7 +1593,7 @@ static fun getPropertyValueName(
 
 **See Also**
 
-- [android.icu.lang.UProperty](../android/icu/lang/UProperty.md)
+- [android.icu.lang.UProperty](UProperty.md)
 - [android.icu.lang.UProperty.NameChoice](../android/icu/lang/UProperty.NameChoice.md) 
 
 ### getType
@@ -1605,7 +1605,7 @@ static fun getType(ch: Int): Int
 ```
 
 Returns a value indicating a code point's Unicode category. Up-to-date Unicode implementation of java.lang.Character.getType() except for the above mentioned code points that had their category changed. 
-Return results are constants from the interface [UCharacterCategory](../android/icu/lang/UCharacterCategory.md) 
+Return results are constants from the interface [UCharacterCategory](UCharacterCategory.md) 
 *NOTE:* the UCharacterCategory values are*not*compatible with those returned by java.lang.Character.getType. UCharacterCategory values match the ones used in ICU4C, while java.lang.Character type values, though similar, skip the value 17.
 
 | Parameters ||
@@ -1646,7 +1646,7 @@ RangeValueIterator iterator = UCharacter.getTypeIterator();
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------|-------------|
-| [RangeValueIterator](../android/icu/util/RangeValueIterator.md)! | an iterator |
+| [RangeValueIterator](../android.icu.util/RangeValueIterator.md)! | an iterator |
 
 ### getUnicodeNumericValue
 
@@ -1684,7 +1684,7 @@ static fun getUnicodeVersion(): VersionInfo!
 
 | Return ||
 |---------------------------------------------------------------------------------------------------|---------------------------------|
-| [VersionInfo](../android/icu/util/VersionInfo.md)! | the unicode version number used |
+| [VersionInfo](../android.icu.util/VersionInfo.md)! | the unicode version number used |
 
 ### hasBinaryProperty
 
@@ -1722,7 +1722,7 @@ Important: If ICU is built with UCD files from Unicode versions below 3.2, then 
 
 **See Also**
 
-- [android.icu.lang.UProperty](../android/icu/lang/UProperty.md) 
+- [android.icu.lang.UProperty](UProperty.md) 
 
 ### hasBinaryProperty
 
@@ -1735,7 +1735,7 @@ static fun hasBinaryProperty(
 ): Boolean
 ```
 
-**\[icu\]** Returns true if the property is true for the string. Same as [hasBinaryProperty(int,int)](../android/icu/lang/UCharacter.md))if the string contains exactly one code point.
+**\[icu\]** Returns true if the property is true for the string. Same as [hasBinaryProperty(int,int)](UCharacter.md))if the string contains exactly one code point.
 
 Most properties apply only to single code points. [UTS #51 Unicode Emoji](https://www.unicode.org/reports/tr51/#Emoji_Sets) defines several properties of strings.
 
@@ -1750,7 +1750,7 @@ Most properties apply only to single code points. [UTS #51 Unicode Emoji](https:
 
 **See Also**
 
-- [android.icu.lang.UProperty](../android/icu/lang/UProperty.md) 
+- [android.icu.lang.UProperty](UProperty.md) 
 
 ### isBMP
 
@@ -1835,7 +1835,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static fun isHighSurrogate(ch: Char): Boolean
 ```
 
-Same as [Character.isHighSurrogate](../java/lang/Character.md)),
+Same as [Character.isHighSurrogate](../java.lang/Character.md)),
 
 | Parameters ||
 |------|------------------------------------------------------------------------------------------------|
@@ -1853,7 +1853,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 static fun isHighSurrogate(codePoint: Int): Boolean
 ```
 
-Same as [Character.isHighSurrogate](../java/lang/Character.md)), except that the ICU version accepts`int`for code points.
+Same as [Character.isHighSurrogate](../java.lang/Character.md)), except that the ICU version accepts`int`for code points.
 
 | Parameters ||
 |-------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -2036,7 +2036,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static fun isLowSurrogate(ch: Char): Boolean
 ```
 
-Same as [Character.isLowSurrogate](../java/lang/Character.md)),
+Same as [Character.isLowSurrogate](../java.lang/Character.md)),
 
 | Parameters ||
 |------|------------------------------------------------------------------------------------------------|
@@ -2054,7 +2054,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 static fun isLowSurrogate(codePoint: Int): Boolean
 ```
 
-Same as [Character.isLowSurrogate](../java/lang/Character.md)), except that the ICU version accepts`int`for code points.
+Same as [Character.isLowSurrogate](../java.lang/Character.md)), except that the ICU version accepts`int`for code points.
 
 | Parameters ||
 |-------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -2146,7 +2146,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static fun isSupplementary(ch: Int): Boolean
 ```
 
-**\[icu\]** Determines if the code point is a supplementary character. A code point is a supplementary character if and only if it is greater than [SUPPLEMENTARY_MIN_VALUE](../android/icu/lang/UCharacter.md)
+**\[icu\]** Determines if the code point is a supplementary character. A code point is a supplementary character if and only if it is greater than [SUPPLEMENTARY_MIN_VALUE](UCharacter.md)
 
 | Parameters ||
 |------|--------------------------------------------------------------------------------------------------------------------------------------------|
@@ -2164,7 +2164,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static fun isSupplementaryCodePoint(cp: Int): Boolean
 ```
 
-Same as [Character.isSupplementaryCodePoint](../java/lang/Character.md)).
+Same as [Character.isSupplementaryCodePoint](../java.lang/Character.md)).
 
 | Parameters ||
 |------|----------------------------------------------------------------------------------------------------|
@@ -2185,7 +2185,7 @@ static fun isSurrogatePair(
 ): Boolean
 ```
 
-Same as [Character.isSurrogatePair](../java/lang/Character.md)).
+Same as [Character.isSurrogatePair](../java.lang/Character.md)).
 
 | Parameters ||
 |--------|---------------------------------------------------------------------------------------------------|
@@ -2207,7 +2207,7 @@ static fun isSurrogatePair(
 ): Boolean
 ```
 
-Same as [Character.isSurrogatePair](../java/lang/Character.md)), except that the ICU version accepts`int`for code points.
+Same as [Character.isSurrogatePair](../java.lang/Character.md)), except that the ICU version accepts`int`for code points.
 
 | Parameters ||
 |--------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -2328,9 +2328,9 @@ static fun isUnicodeIdentifierPart(ch: Int): Boolean
 
 Determines if the specified character is permissible as a non-initial character of an identifier according to UAX #31 Unicode Identifier and Pattern Syntax.
 
-Same as Unicode ID_Continue ([UProperty.ID_CONTINUE](../android/icu/lang/UProperty.md)).
+Same as Unicode ID_Continue ([UProperty.ID_CONTINUE](UProperty.md)).
 
-Note that this differs from [java.lang.Character#isUnicodeIdentifierPart(char)](../java/lang/Character.md))which implements a different identifier profile.
+Note that this differs from [java.lang.Character#isUnicodeIdentifierPart(char)](../java.lang/Character.md))which implements a different identifier profile.
 
 | Parameters ||
 |------|--------------------------------------------------------------------------------------------------------|
@@ -2350,9 +2350,9 @@ static fun isUnicodeIdentifierStart(ch: Int): Boolean
 
 Determines if the specified character is permissible as the first character in an identifier according to UAX #31 Unicode Identifier and Pattern Syntax.
 
-Same as Unicode ID_Start ([UProperty.ID_START](../android/icu/lang/UProperty.md)).
+Same as Unicode ID_Start ([UProperty.ID_START](UProperty.md)).
 
-Note that this differs from [java.lang.Character#isUnicodeIdentifierStart(char)](../java/lang/Character.md))which implements a different identifier profile.
+Note that this differs from [java.lang.Character#isUnicodeIdentifierStart(char)](../java.lang/Character.md))which implements a different identifier profile.
 
 | Parameters ||
 |------|--------------------------------------------------------------------------------------------------------|
@@ -2391,7 +2391,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static fun isValidCodePoint(cp: Int): Boolean
 ```
 
-Equivalent to [Character.isValidCodePoint](../java/lang/Character.md)).
+Equivalent to [Character.isValidCodePoint](../java.lang/Character.md)).
 
 | Parameters ||
 |------|----------------------------------------------------------------------------------------------------|
@@ -2477,7 +2477,7 @@ static fun offsetByCodePoints(
 ): Int
 ```
 
-Equivalent to the [Character.offsetByCodePoints(CharSequence, int, int)](../java/lang/Character.md))method, for convenience. Adjusts the char index by a code point offset.
+Equivalent to the [Character.offsetByCodePoints(CharSequence, int, int)](../java.lang/Character.md))method, for convenience. Adjusts the char index by a code point offset.
 
 | Parameters ||
 |-------------------|-----------------------------------------------------------------------------------------------------------------------------------|
@@ -2498,7 +2498,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static fun toChars(cp: Int): CharArray!
 ```
 
-Same as [Character.toChars(int)](../java/lang/Character.md)). Returns a char array representing the code point.
+Same as [Character.toChars(int)](../java.lang/Character.md)). Returns a char array representing the code point.
 
 | Parameters ||
 |------|------------------------------------------------------------------------------------------------------|
@@ -2552,7 +2552,7 @@ static fun toCodePoint(
 ): Int
 ```
 
-Same as [Character.toCodePoint](../java/lang/Character.md)). Returns the code point represented by the two surrogate code units. This does not check the surrogate pair for validity.
+Same as [Character.toCodePoint](../java.lang/Character.md)). Returns the code point represented by the two surrogate code units. This does not check the surrogate pair for validity.
 
 | Parameters ||
 |--------|--------------------------------------------------------------------------------------------------------|
@@ -2574,7 +2574,7 @@ static fun toCodePoint(
 ): Int
 ```
 
-Same as [Character.toCodePoint](../java/lang/Character.md)), except that the ICU version accepts`int`for code points. Returns the code point represented by the two surrogate code units. This does not check the surrogate pair for validity.
+Same as [Character.toCodePoint](../java.lang/Character.md)), except that the ICU version accepts`int`for code points. Returns the code point represented by the two surrogate code units. This does not check the surrogate pair for validity.
 
 | Parameters ||
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -2587,7 +2587,7 @@ Same as [Character.toCodePoint](../java/lang/Character.md)), except that the ICU
 
 **See Also**
 
-- [#getCodePoint(int, int)](../android/icu/lang/UCharacter.md)) 
+- [#getCodePoint(int, int)](UCharacter.md)) 
 
 ### toLowerCase
 
@@ -2604,7 +2604,7 @@ Returns the lowercase version of the argument string. Casing is dependent on the
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------|
-| `locale` | [ULocale](../android/icu/util/ULocale.md)!:which string is to be converted in |
+| `locale` | [ULocale](../android.icu.util/ULocale.md)!:which string is to be converted in |
 | `str` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:source string to be performed on |
 
 | Return ||
@@ -2664,7 +2664,7 @@ Returns the lowercase version of the argument string. Casing is dependent on the
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------------|
-| `locale` | [Locale](../java/util/Locale.md)!:which string is to be converted in |
+| `locale` | [Locale](../java.util/Locale.md)!:which string is to be converted in |
 | `str` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:source string to be performed on |
 
 | Return ||
@@ -2713,9 +2713,9 @@ Casing is dependent on the argument locale and context-sensitive
 
 | Parameters ||
 |-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `locale` | [ULocale](../android/icu/util/ULocale.md)!:which string is to be converted in |
+| `locale` | [ULocale](../android.icu.util/ULocale.md)!:which string is to be converted in |
 | `str` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:source string to be performed on |
-| `titleIter` | [BreakIterator](../android/icu/text/BreakIterator.md)!:break iterator to determine the positions in which the character should be title cased. |
+| `titleIter` | [BreakIterator](../android.icu.text/BreakIterator.md)!:break iterator to determine the positions in which the character should be title cased. |
 | --- | --- |
 
 | Return ||
@@ -2745,9 +2745,9 @@ Casing is dependent on the argument locale and context-sensitive
 
 | Parameters ||
 |-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `locale` | [ULocale](../android/icu/util/ULocale.md)!:which string is to be converted in |
+| `locale` | [ULocale](../android.icu.util/ULocale.md)!:which string is to be converted in |
 | `str` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:source string to be performed on |
-| `titleIter` | [BreakIterator](../android/icu/text/BreakIterator.md)!:break iterator to determine the positions in which the character should be title cased. |
+| `titleIter` | [BreakIterator](../android.icu.text/BreakIterator.md)!:break iterator to determine the positions in which the character should be title cased. |
 | --- | --- |
 | `options` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):bit set to modify the titlecasing operation |
 
@@ -2757,8 +2757,8 @@ Casing is dependent on the argument locale and context-sensitive
 
 **See Also**
 
-- [#TITLECASE_NO_LOWERCASE](../android/icu/lang/UCharacter.md)
-- [#TITLECASE_NO_BREAK_ADJUSTMENT](../android/icu/lang/UCharacter.md) 
+- [#TITLECASE_NO_LOWERCASE](UCharacter.md)
+- [#TITLECASE_NO_BREAK_ADJUSTMENT](UCharacter.md) 
 
 ### toTitleCase
 
@@ -2802,7 +2802,7 @@ Casing is dependent on the default locale and context-sensitive
 | Parameters ||
 |-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `str` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:source string to be performed on |
-| `breakiter` | [BreakIterator](../android/icu/text/BreakIterator.md)!:break iterator to determine the positions in which the character should be title cased. |
+| `breakiter` | [BreakIterator](../android.icu.text/BreakIterator.md)!:break iterator to determine the positions in which the character should be title cased. |
 
 | Return ||
 |-----------------------------------------------------------------------------------|------------------------------------------|
@@ -2830,9 +2830,9 @@ Casing is dependent on the argument locale and context-sensitive
 
 | Parameters ||
 |-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `locale` | [Locale](../java/util/Locale.md)!:which string is to be converted in |
+| `locale` | [Locale](../java.util/Locale.md)!:which string is to be converted in |
 | `str` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:source string to be performed on |
-| `breakiter` | [BreakIterator](../android/icu/text/BreakIterator.md)!:break iterator to determine the positions in which the character should be title cased. |
+| `breakiter` | [BreakIterator](../android.icu.text/BreakIterator.md)!:break iterator to determine the positions in which the character should be title cased. |
 | --- | --- |
 
 | Return ||
@@ -2864,9 +2864,9 @@ Casing is dependent on the argument locale and context-sensitive
 
 | Parameters ||
 |-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `locale` | [Locale](../java/util/Locale.md)!:which string is to be converted in |
+| `locale` | [Locale](../java.util/Locale.md)!:which string is to be converted in |
 | `str` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:source string to be performed on |
-| `titleIter` | [BreakIterator](../android/icu/text/BreakIterator.md)!:break iterator to determine the positions in which the character should be title cased. |
+| `titleIter` | [BreakIterator](../android.icu.text/BreakIterator.md)!:break iterator to determine the positions in which the character should be title cased. |
 | --- | --- |
 | `options` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):bit set to modify the titlecasing operation |
 
@@ -2876,8 +2876,8 @@ Casing is dependent on the argument locale and context-sensitive
 
 **See Also**
 
-- [#TITLECASE_NO_LOWERCASE](../android/icu/lang/UCharacter.md)
-- [#TITLECASE_NO_BREAK_ADJUSTMENT](../android/icu/lang/UCharacter.md) 
+- [#TITLECASE_NO_LOWERCASE](UCharacter.md)
+- [#TITLECASE_NO_BREAK_ADJUSTMENT](UCharacter.md) 
 
 ### toUpperCase
 
@@ -2894,7 +2894,7 @@ Returns the uppercase version of the argument string. Casing is dependent on the
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------|
-| `locale` | [ULocale](../android/icu/util/ULocale.md)!:which string is to be converted in |
+| `locale` | [ULocale](../android.icu.util/ULocale.md)!:which string is to be converted in |
 | `str` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:source string to be performed on |
 
 | Return ||
@@ -2954,7 +2954,7 @@ Returns the uppercase version of the argument string. Casing is dependent on the
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------------|
-| `locale` | [Locale](../java/util/Locale.md)!:which string is to be converted in |
+| `locale` | [Locale](../java.util/Locale.md)!:which string is to be converted in |
 | `str` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:source string to be performed on |
 
 | Return ||

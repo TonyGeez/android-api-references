@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # DisplayMetrics
 
-Kotlin| [Java](../android/util/DisplayMetrics.md) 
+Kotlin| [Java](DisplayMetrics.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class DisplayMetrics
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.util.DisplayMetrics](../android/util/DisplayMetrics.md) |
+| ↳ | [android.util.DisplayMetrics](DisplayMetrics.md) |
 
 A structure describing general information about a display, such as its size, density, and font scaling.
 
@@ -23,75 +23,75 @@ To access the DisplayMetrics members, retrieve display metrics like this:
 context.getResources().getDisplayMetrics();
 ```
 
-For UI layout, obtain [android.view.WindowMetrics](../android/view/WindowMetrics.md) from [WindowManager.getCurrentWindowMetrics()](../android/view/WindowManager.md)).`DisplayMetrics`should only be used for obtaining display related properties, such as [xdpi](../android/util/DisplayMetrics.md) and [ydpi](../android/util/DisplayMetrics.md)
+For UI layout, obtain [android.view.WindowMetrics](../android.view/WindowMetrics.md) from [WindowManager.getCurrentWindowMetrics()](../android.view/WindowManager.md)).`DisplayMetrics`should only be used for obtaining display related properties, such as [xdpi](DisplayMetrics.md) and [ydpi](DisplayMetrics.md)
 
-See [density](../android/util/DisplayMetrics.md) for more information about the differences between [xdpi](../android/util/DisplayMetrics.md), [ydpi](../android/util/DisplayMetrics.md) and [density](../android/util/DisplayMetrics.md).
+See [density](DisplayMetrics.md) for more information about the differences between [xdpi](DisplayMetrics.md), [ydpi](DisplayMetrics.md) and [density](DisplayMetrics.md).
 
 ## Summary
 
 | Constants ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DENSITY_140](../android/util/DisplayMetrics.md) Intermediate density for screens that sit between [DENSITY_LOW](../android/util/DisplayMetrics.md)(120dpi) and [DENSITY_MEDIUM](../android/util/DisplayMetrics.md)(160dpi). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DENSITY_180](../android/util/DisplayMetrics.md) Intermediate density for screens that sit between [DENSITY_MEDIUM](../android/util/DisplayMetrics.md)(160dpi) and [DENSITY_HIGH](../android/util/DisplayMetrics.md)(240dpi). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DENSITY_200](../android/util/DisplayMetrics.md) Intermediate density for screens that sit between [DENSITY_MEDIUM](../android/util/DisplayMetrics.md)(160dpi) and [DENSITY_HIGH](../android/util/DisplayMetrics.md)(240dpi). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DENSITY_140](DisplayMetrics.md) Intermediate density for screens that sit between [DENSITY_LOW](DisplayMetrics.md)(120dpi) and [DENSITY_MEDIUM](DisplayMetrics.md)(160dpi). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DENSITY_180](DisplayMetrics.md) Intermediate density for screens that sit between [DENSITY_MEDIUM](DisplayMetrics.md)(160dpi) and [DENSITY_HIGH](DisplayMetrics.md)(240dpi). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DENSITY_200](DisplayMetrics.md) Intermediate density for screens that sit between [DENSITY_MEDIUM](DisplayMetrics.md)(160dpi) and [DENSITY_HIGH](DisplayMetrics.md)(240dpi). |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DENSITY_220](../android/util/DisplayMetrics.md) Intermediate density for screens that sit between [DENSITY_MEDIUM](../android/util/DisplayMetrics.md)(160dpi) and [DENSITY_HIGH](../android/util/DisplayMetrics.md)(240dpi). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DENSITY_260](../android/util/DisplayMetrics.md) Intermediate density for screens that sit between [DENSITY_HIGH](../android/util/DisplayMetrics.md)(240dpi) and [DENSITY_XHIGH](../android/util/DisplayMetrics.md)(320dpi). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DENSITY_280](../android/util/DisplayMetrics.md) Intermediate density for screens that sit between [DENSITY_HIGH](../android/util/DisplayMetrics.md)(240dpi) and [DENSITY_XHIGH](../android/util/DisplayMetrics.md)(320dpi). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DENSITY_220](DisplayMetrics.md) Intermediate density for screens that sit between [DENSITY_MEDIUM](DisplayMetrics.md)(160dpi) and [DENSITY_HIGH](DisplayMetrics.md)(240dpi). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DENSITY_260](DisplayMetrics.md) Intermediate density for screens that sit between [DENSITY_HIGH](DisplayMetrics.md)(240dpi) and [DENSITY_XHIGH](DisplayMetrics.md)(320dpi). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DENSITY_280](DisplayMetrics.md) Intermediate density for screens that sit between [DENSITY_HIGH](DisplayMetrics.md)(240dpi) and [DENSITY_XHIGH](DisplayMetrics.md)(320dpi). |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DENSITY_300](../android/util/DisplayMetrics.md) Intermediate density for screens that sit between [DENSITY_HIGH](../android/util/DisplayMetrics.md)(240dpi) and [DENSITY_XHIGH](../android/util/DisplayMetrics.md)(320dpi). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DENSITY_340](../android/util/DisplayMetrics.md) Intermediate density for screens that sit somewhere between [DENSITY_XHIGH](../android/util/DisplayMetrics.md)(320 dpi) and [DENSITY_XXHIGH](../android/util/DisplayMetrics.md)(480 dpi). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DENSITY_360](../android/util/DisplayMetrics.md) Intermediate density for screens that sit somewhere between [DENSITY_XHIGH](../android/util/DisplayMetrics.md)(320 dpi) and [DENSITY_XXHIGH](../android/util/DisplayMetrics.md)(480 dpi). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DENSITY_300](DisplayMetrics.md) Intermediate density for screens that sit between [DENSITY_HIGH](DisplayMetrics.md)(240dpi) and [DENSITY_XHIGH](DisplayMetrics.md)(320dpi). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DENSITY_340](DisplayMetrics.md) Intermediate density for screens that sit somewhere between [DENSITY_XHIGH](DisplayMetrics.md)(320 dpi) and [DENSITY_XXHIGH](DisplayMetrics.md)(480 dpi). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DENSITY_360](DisplayMetrics.md) Intermediate density for screens that sit somewhere between [DENSITY_XHIGH](DisplayMetrics.md)(320 dpi) and [DENSITY_XXHIGH](DisplayMetrics.md)(480 dpi). |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DENSITY_390](../android/util/DisplayMetrics.md) Intermediate density for screens that sit somewhere between [DENSITY_XHIGH](../android/util/DisplayMetrics.md)(320 dpi) and [DENSITY_XXHIGH](../android/util/DisplayMetrics.md)(480 dpi). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DENSITY_400](../android/util/DisplayMetrics.md) Intermediate density for screens that sit somewhere between [DENSITY_XHIGH](../android/util/DisplayMetrics.md)(320 dpi) and [DENSITY_XXHIGH](../android/util/DisplayMetrics.md)(480 dpi). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DENSITY_420](../android/util/DisplayMetrics.md) Intermediate density for screens that sit somewhere between [DENSITY_XHIGH](../android/util/DisplayMetrics.md)(320 dpi) and [DENSITY_XXHIGH](../android/util/DisplayMetrics.md)(480 dpi). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DENSITY_390](DisplayMetrics.md) Intermediate density for screens that sit somewhere between [DENSITY_XHIGH](DisplayMetrics.md)(320 dpi) and [DENSITY_XXHIGH](DisplayMetrics.md)(480 dpi). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DENSITY_400](DisplayMetrics.md) Intermediate density for screens that sit somewhere between [DENSITY_XHIGH](DisplayMetrics.md)(320 dpi) and [DENSITY_XXHIGH](DisplayMetrics.md)(480 dpi). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DENSITY_420](DisplayMetrics.md) Intermediate density for screens that sit somewhere between [DENSITY_XHIGH](DisplayMetrics.md)(320 dpi) and [DENSITY_XXHIGH](DisplayMetrics.md)(480 dpi). |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DENSITY_440](../android/util/DisplayMetrics.md) Intermediate density for screens that sit somewhere between [DENSITY_XHIGH](../android/util/DisplayMetrics.md)(320 dpi) and [DENSITY_XXHIGH](../android/util/DisplayMetrics.md)(480 dpi). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DENSITY_450](../android/util/DisplayMetrics.md) Intermediate density for screens that sit somewhere between [DENSITY_XHIGH](../android/util/DisplayMetrics.md)(320 dpi) and [DENSITY_XXHIGH](../android/util/DisplayMetrics.md)(480 dpi). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DENSITY_520](../android/util/DisplayMetrics.md) Intermediate density for screens that sit somewhere between [DENSITY_XXHIGH](../android/util/DisplayMetrics.md)(480 dpi) and [DENSITY_XXXHIGH](../android/util/DisplayMetrics.md)(640 dpi). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DENSITY_440](DisplayMetrics.md) Intermediate density for screens that sit somewhere between [DENSITY_XHIGH](DisplayMetrics.md)(320 dpi) and [DENSITY_XXHIGH](DisplayMetrics.md)(480 dpi). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DENSITY_450](DisplayMetrics.md) Intermediate density for screens that sit somewhere between [DENSITY_XHIGH](DisplayMetrics.md)(320 dpi) and [DENSITY_XXHIGH](DisplayMetrics.md)(480 dpi). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DENSITY_520](DisplayMetrics.md) Intermediate density for screens that sit somewhere between [DENSITY_XXHIGH](DisplayMetrics.md)(480 dpi) and [DENSITY_XXXHIGH](DisplayMetrics.md)(640 dpi). |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DENSITY_560](../android/util/DisplayMetrics.md) Intermediate density for screens that sit somewhere between [DENSITY_XXHIGH](../android/util/DisplayMetrics.md)(480 dpi) and [DENSITY_XXXHIGH](../android/util/DisplayMetrics.md)(640 dpi). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DENSITY_600](../android/util/DisplayMetrics.md) Intermediate density for screens that sit somewhere between [DENSITY_XXHIGH](../android/util/DisplayMetrics.md)(480 dpi) and [DENSITY_XXXHIGH](../android/util/DisplayMetrics.md)(640 dpi). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DENSITY_DEFAULT](../android/util/DisplayMetrics.md) The reference density used throughout the system. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DENSITY_560](DisplayMetrics.md) Intermediate density for screens that sit somewhere between [DENSITY_XXHIGH](DisplayMetrics.md)(480 dpi) and [DENSITY_XXXHIGH](DisplayMetrics.md)(640 dpi). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DENSITY_600](DisplayMetrics.md) Intermediate density for screens that sit somewhere between [DENSITY_XXHIGH](DisplayMetrics.md)(480 dpi) and [DENSITY_XXXHIGH](DisplayMetrics.md)(640 dpi). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DENSITY_DEFAULT](DisplayMetrics.md) The reference density used throughout the system. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DENSITY_HIGH](../android/util/DisplayMetrics.md) Standard quantized DPI for high-density screens. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DENSITY_LOW](../android/util/DisplayMetrics.md) Standard quantized DPI for low-density screens. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DENSITY_MEDIUM](../android/util/DisplayMetrics.md) Standard quantized DPI for medium-density screens. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DENSITY_HIGH](DisplayMetrics.md) Standard quantized DPI for high-density screens. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DENSITY_LOW](DisplayMetrics.md) Standard quantized DPI for low-density screens. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DENSITY_MEDIUM](DisplayMetrics.md) Standard quantized DPI for medium-density screens. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DENSITY_TV](../android/util/DisplayMetrics.md) This is a secondary density, added for some common screen configurations. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DENSITY_XHIGH](../android/util/DisplayMetrics.md) Standard quantized DPI for extra-high-density screens. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DENSITY_XXHIGH](../android/util/DisplayMetrics.md) Standard quantized DPI for extra-extra-high-density screens. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DENSITY_TV](DisplayMetrics.md) This is a secondary density, added for some common screen configurations. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DENSITY_XHIGH](DisplayMetrics.md) Standard quantized DPI for extra-high-density screens. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DENSITY_XXHIGH](DisplayMetrics.md) Standard quantized DPI for extra-extra-high-density screens. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DENSITY_XXXHIGH](../android/util/DisplayMetrics.md) Standard quantized DPI for extra-extra-extra-high-density screens. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DENSITY_XXXHIGH](DisplayMetrics.md) Standard quantized DPI for extra-extra-extra-high-density screens. |
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------|---|
-| [DisplayMetrics](../android/util/DisplayMetrics.md))`()` <br /> |
+| [DisplayMetrics](DisplayMetrics.md))`()` <br /> |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/util/DisplayMetrics.md))`(`other:` ` [DisplayMetrics](../android/util/DisplayMetrics.md)!`)` Returns true if these display metrics equal the other display metrics. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/util/DisplayMetrics.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/util/DisplayMetrics.md))`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](DisplayMetrics.md))`(`other:` ` [DisplayMetrics](DisplayMetrics.md)!`)` Returns true if these display metrics equal the other display metrics. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](DisplayMetrics.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](DisplayMetrics.md))`()` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTo](../android/util/DisplayMetrics.md))`(`o:` ` [DisplayMetrics](../android/util/DisplayMetrics.md)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setToDefaults](../android/util/DisplayMetrics.md))`()` <br /> |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/util/DisplayMetrics.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTo](DisplayMetrics.md))`(`o:` ` [DisplayMetrics](DisplayMetrics.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setToDefaults](DisplayMetrics.md))`()` <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](DisplayMetrics.md))`()` <br /> |
 | --- | --- |
 
 | Properties ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DENSITY_DEVICE_STABLE](../android/util/DisplayMetrics.md) The device's stable density. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [density](../android/util/DisplayMetrics.md) The logical density of the display. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [densityDpi](../android/util/DisplayMetrics.md) The screen density expressed as dots-per-inch. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DENSITY_DEVICE_STABLE](DisplayMetrics.md) The device's stable density. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [density](DisplayMetrics.md) The logical density of the display. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [densityDpi](DisplayMetrics.md) The screen density expressed as dots-per-inch. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [heightPixels](../android/util/DisplayMetrics.md) The absolute height of the available display size in pixels. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [scaledDensity](../android/util/DisplayMetrics.md) A scaling factor for fonts displayed on the display. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [widthPixels](../android/util/DisplayMetrics.md) The absolute width of the available display size in pixels. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [heightPixels](DisplayMetrics.md) The absolute height of the available display size in pixels. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [scaledDensity](DisplayMetrics.md) A scaling factor for fonts displayed on the display. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [widthPixels](DisplayMetrics.md) The absolute width of the available display size in pixels. |
 | --- | --- |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [xdpi](../android/util/DisplayMetrics.md) The exact physical pixels per inch of the screen in the X dimension. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [ydpi](../android/util/DisplayMetrics.md) The exact physical pixels per inch of the screen in the Y dimension. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [xdpi](DisplayMetrics.md) The exact physical pixels per inch of the screen in the X dimension. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [ydpi](DisplayMetrics.md) The exact physical pixels per inch of the screen in the Y dimension. |
 
 ## Constants
 
@@ -103,7 +103,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 static val DENSITY_140: Int
 ```
 
-Intermediate density for screens that sit between [DENSITY_LOW](../android/util/DisplayMetrics.md)(120dpi) and [DENSITY_MEDIUM](../android/util/DisplayMetrics.md)(160dpi). This is not a density that applications should target, instead relying on the system to scale their [DENSITY_MEDIUM](../android/util/DisplayMetrics.md) assets for them. 
+Intermediate density for screens that sit between [DENSITY_LOW](DisplayMetrics.md)(120dpi) and [DENSITY_MEDIUM](DisplayMetrics.md)(160dpi). This is not a density that applications should target, instead relying on the system to scale their [DENSITY_MEDIUM](DisplayMetrics.md) assets for them. 
 
  Value: 140
 
@@ -115,7 +115,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 static val DENSITY_180: Int
 ```
 
-Intermediate density for screens that sit between [DENSITY_MEDIUM](../android/util/DisplayMetrics.md)(160dpi) and [DENSITY_HIGH](../android/util/DisplayMetrics.md)(240dpi). This is not a density that applications should target, instead relying on the system to scale their [DENSITY_HIGH](../android/util/DisplayMetrics.md) assets for them. 
+Intermediate density for screens that sit between [DENSITY_MEDIUM](DisplayMetrics.md)(160dpi) and [DENSITY_HIGH](DisplayMetrics.md)(240dpi). This is not a density that applications should target, instead relying on the system to scale their [DENSITY_HIGH](DisplayMetrics.md) assets for them. 
 
  Value: 180
 
@@ -127,7 +127,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 static val DENSITY_200: Int
 ```
 
-Intermediate density for screens that sit between [DENSITY_MEDIUM](../android/util/DisplayMetrics.md)(160dpi) and [DENSITY_HIGH](../android/util/DisplayMetrics.md)(240dpi). This is not a density that applications should target, instead relying on the system to scale their [DENSITY_HIGH](../android/util/DisplayMetrics.md) assets for them. 
+Intermediate density for screens that sit between [DENSITY_MEDIUM](DisplayMetrics.md)(160dpi) and [DENSITY_HIGH](DisplayMetrics.md)(240dpi). This is not a density that applications should target, instead relying on the system to scale their [DENSITY_HIGH](DisplayMetrics.md) assets for them. 
 
  Value: 200
 
@@ -139,7 +139,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 static val DENSITY_220: Int
 ```
 
-Intermediate density for screens that sit between [DENSITY_MEDIUM](../android/util/DisplayMetrics.md)(160dpi) and [DENSITY_HIGH](../android/util/DisplayMetrics.md)(240dpi). This is not a density that applications should target, instead relying on the system to scale their [DENSITY_HIGH](../android/util/DisplayMetrics.md) assets for them. 
+Intermediate density for screens that sit between [DENSITY_MEDIUM](DisplayMetrics.md)(160dpi) and [DENSITY_HIGH](DisplayMetrics.md)(240dpi). This is not a density that applications should target, instead relying on the system to scale their [DENSITY_HIGH](DisplayMetrics.md) assets for them. 
 
  Value: 220
 
@@ -151,7 +151,7 @@ Added in [API level 25](https://developer.android.com/guide/topics/manifest/uses
 static val DENSITY_260: Int
 ```
 
-Intermediate density for screens that sit between [DENSITY_HIGH](../android/util/DisplayMetrics.md)(240dpi) and [DENSITY_XHIGH](../android/util/DisplayMetrics.md)(320dpi). This is not a density that applications should target, instead relying on the system to scale their [DENSITY_XHIGH](../android/util/DisplayMetrics.md) assets for them. 
+Intermediate density for screens that sit between [DENSITY_HIGH](DisplayMetrics.md)(240dpi) and [DENSITY_XHIGH](DisplayMetrics.md)(320dpi). This is not a density that applications should target, instead relying on the system to scale their [DENSITY_XHIGH](DisplayMetrics.md) assets for them. 
 
  Value: 260
 
@@ -163,7 +163,7 @@ Added in [API level 22](https://developer.android.com/guide/topics/manifest/uses
 static val DENSITY_280: Int
 ```
 
-Intermediate density for screens that sit between [DENSITY_HIGH](../android/util/DisplayMetrics.md)(240dpi) and [DENSITY_XHIGH](../android/util/DisplayMetrics.md)(320dpi). This is not a density that applications should target, instead relying on the system to scale their [DENSITY_XHIGH](../android/util/DisplayMetrics.md) assets for them. 
+Intermediate density for screens that sit between [DENSITY_HIGH](DisplayMetrics.md)(240dpi) and [DENSITY_XHIGH](DisplayMetrics.md)(320dpi). This is not a density that applications should target, instead relying on the system to scale their [DENSITY_XHIGH](DisplayMetrics.md) assets for them. 
 
  Value: 280
 
@@ -175,7 +175,7 @@ Added in [API level 25](https://developer.android.com/guide/topics/manifest/uses
 static val DENSITY_300: Int
 ```
 
-Intermediate density for screens that sit between [DENSITY_HIGH](../android/util/DisplayMetrics.md)(240dpi) and [DENSITY_XHIGH](../android/util/DisplayMetrics.md)(320dpi). This is not a density that applications should target, instead relying on the system to scale their [DENSITY_XHIGH](../android/util/DisplayMetrics.md) assets for them. 
+Intermediate density for screens that sit between [DENSITY_HIGH](DisplayMetrics.md)(240dpi) and [DENSITY_XHIGH](DisplayMetrics.md)(320dpi). This is not a density that applications should target, instead relying on the system to scale their [DENSITY_XHIGH](DisplayMetrics.md) assets for them. 
 
  Value: 300
 
@@ -187,7 +187,7 @@ Added in [API level 25](https://developer.android.com/guide/topics/manifest/uses
 static val DENSITY_340: Int
 ```
 
-Intermediate density for screens that sit somewhere between [DENSITY_XHIGH](../android/util/DisplayMetrics.md)(320 dpi) and [DENSITY_XXHIGH](../android/util/DisplayMetrics.md)(480 dpi). This is not a density that applications should target, instead relying on the system to scale their [DENSITY_XXHIGH](../android/util/DisplayMetrics.md) assets for them. 
+Intermediate density for screens that sit somewhere between [DENSITY_XHIGH](DisplayMetrics.md)(320 dpi) and [DENSITY_XXHIGH](DisplayMetrics.md)(480 dpi). This is not a density that applications should target, instead relying on the system to scale their [DENSITY_XXHIGH](DisplayMetrics.md) assets for them. 
 
  Value: 340
 
@@ -199,7 +199,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 static val DENSITY_360: Int
 ```
 
-Intermediate density for screens that sit somewhere between [DENSITY_XHIGH](../android/util/DisplayMetrics.md)(320 dpi) and [DENSITY_XXHIGH](../android/util/DisplayMetrics.md)(480 dpi). This is not a density that applications should target, instead relying on the system to scale their [DENSITY_XXHIGH](../android/util/DisplayMetrics.md) assets for them. 
+Intermediate density for screens that sit somewhere between [DENSITY_XHIGH](DisplayMetrics.md)(320 dpi) and [DENSITY_XXHIGH](DisplayMetrics.md)(480 dpi). This is not a density that applications should target, instead relying on the system to scale their [DENSITY_XXHIGH](DisplayMetrics.md) assets for them. 
 
  Value: 360
 
@@ -211,7 +211,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 static val DENSITY_390: Int
 ```
 
-Intermediate density for screens that sit somewhere between [DENSITY_XHIGH](../android/util/DisplayMetrics.md)(320 dpi) and [DENSITY_XXHIGH](../android/util/DisplayMetrics.md)(480 dpi). This is not a density that applications should target, instead relying on the system to scale their [DENSITY_XXHIGH](../android/util/DisplayMetrics.md) assets for them. 
+Intermediate density for screens that sit somewhere between [DENSITY_XHIGH](DisplayMetrics.md)(320 dpi) and [DENSITY_XXHIGH](DisplayMetrics.md)(480 dpi). This is not a density that applications should target, instead relying on the system to scale their [DENSITY_XXHIGH](DisplayMetrics.md) assets for them. 
 
  Value: 390
 
@@ -223,7 +223,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 static val DENSITY_400: Int
 ```
 
-Intermediate density for screens that sit somewhere between [DENSITY_XHIGH](../android/util/DisplayMetrics.md)(320 dpi) and [DENSITY_XXHIGH](../android/util/DisplayMetrics.md)(480 dpi). This is not a density that applications should target, instead relying on the system to scale their [DENSITY_XXHIGH](../android/util/DisplayMetrics.md) assets for them. 
+Intermediate density for screens that sit somewhere between [DENSITY_XHIGH](DisplayMetrics.md)(320 dpi) and [DENSITY_XXHIGH](DisplayMetrics.md)(480 dpi). This is not a density that applications should target, instead relying on the system to scale their [DENSITY_XXHIGH](DisplayMetrics.md) assets for them. 
 
  Value: 400
 
@@ -235,7 +235,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 static val DENSITY_420: Int
 ```
 
-Intermediate density for screens that sit somewhere between [DENSITY_XHIGH](../android/util/DisplayMetrics.md)(320 dpi) and [DENSITY_XXHIGH](../android/util/DisplayMetrics.md)(480 dpi). This is not a density that applications should target, instead relying on the system to scale their [DENSITY_XXHIGH](../android/util/DisplayMetrics.md) assets for them. 
+Intermediate density for screens that sit somewhere between [DENSITY_XHIGH](DisplayMetrics.md)(320 dpi) and [DENSITY_XXHIGH](DisplayMetrics.md)(480 dpi). This is not a density that applications should target, instead relying on the system to scale their [DENSITY_XXHIGH](DisplayMetrics.md) assets for them. 
 
  Value: 420
 
@@ -247,7 +247,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 static val DENSITY_440: Int
 ```
 
-Intermediate density for screens that sit somewhere between [DENSITY_XHIGH](../android/util/DisplayMetrics.md)(320 dpi) and [DENSITY_XXHIGH](../android/util/DisplayMetrics.md)(480 dpi). This is not a density that applications should target, instead relying on the system to scale their [DENSITY_XXHIGH](../android/util/DisplayMetrics.md) assets for them. 
+Intermediate density for screens that sit somewhere between [DENSITY_XHIGH](DisplayMetrics.md)(320 dpi) and [DENSITY_XXHIGH](DisplayMetrics.md)(480 dpi). This is not a density that applications should target, instead relying on the system to scale their [DENSITY_XXHIGH](DisplayMetrics.md) assets for them. 
 
  Value: 440
 
@@ -259,7 +259,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 static val DENSITY_450: Int
 ```
 
-Intermediate density for screens that sit somewhere between [DENSITY_XHIGH](../android/util/DisplayMetrics.md)(320 dpi) and [DENSITY_XXHIGH](../android/util/DisplayMetrics.md)(480 dpi). This is not a density that applications should target, instead relying on the system to scale their [DENSITY_XXHIGH](../android/util/DisplayMetrics.md) assets for them. 
+Intermediate density for screens that sit somewhere between [DENSITY_XHIGH](DisplayMetrics.md)(320 dpi) and [DENSITY_XXHIGH](DisplayMetrics.md)(480 dpi). This is not a density that applications should target, instead relying on the system to scale their [DENSITY_XXHIGH](DisplayMetrics.md) assets for them. 
 
  Value: 450
 
@@ -271,7 +271,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val DENSITY_520: Int
 ```
 
-Intermediate density for screens that sit somewhere between [DENSITY_XXHIGH](../android/util/DisplayMetrics.md)(480 dpi) and [DENSITY_XXXHIGH](../android/util/DisplayMetrics.md)(640 dpi). This is not a density that applications should target, instead relying on the system to scale their [DENSITY_XXXHIGH](../android/util/DisplayMetrics.md) assets for them. 
+Intermediate density for screens that sit somewhere between [DENSITY_XXHIGH](DisplayMetrics.md)(480 dpi) and [DENSITY_XXXHIGH](DisplayMetrics.md)(640 dpi). This is not a density that applications should target, instead relying on the system to scale their [DENSITY_XXXHIGH](DisplayMetrics.md) assets for them. 
 
  Value: 520
 
@@ -283,7 +283,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val DENSITY_560: Int
 ```
 
-Intermediate density for screens that sit somewhere between [DENSITY_XXHIGH](../android/util/DisplayMetrics.md)(480 dpi) and [DENSITY_XXXHIGH](../android/util/DisplayMetrics.md)(640 dpi). This is not a density that applications should target, instead relying on the system to scale their [DENSITY_XXXHIGH](../android/util/DisplayMetrics.md) assets for them. 
+Intermediate density for screens that sit somewhere between [DENSITY_XXHIGH](DisplayMetrics.md)(480 dpi) and [DENSITY_XXXHIGH](DisplayMetrics.md)(640 dpi). This is not a density that applications should target, instead relying on the system to scale their [DENSITY_XXXHIGH](DisplayMetrics.md) assets for them. 
 
  Value: 560
 
@@ -295,7 +295,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 static val DENSITY_600: Int
 ```
 
-Intermediate density for screens that sit somewhere between [DENSITY_XXHIGH](../android/util/DisplayMetrics.md)(480 dpi) and [DENSITY_XXXHIGH](../android/util/DisplayMetrics.md)(640 dpi). This is not a density that applications should target, instead relying on the system to scale their [DENSITY_XXXHIGH](../android/util/DisplayMetrics.md) assets for them. 
+Intermediate density for screens that sit somewhere between [DENSITY_XXHIGH](DisplayMetrics.md)(480 dpi) and [DENSITY_XXXHIGH](DisplayMetrics.md)(640 dpi). This is not a density that applications should target, instead relying on the system to scale their [DENSITY_XXXHIGH](DisplayMetrics.md) assets for them. 
 
  Value: 600
 
@@ -355,9 +355,9 @@ Added in [API level 13](https://developer.android.com/guide/topics/manifest/uses
 static val DENSITY_TV: Int
 ```
 
-This is a secondary density, added for some common screen configurations. It is recommended that applications not generally target this as a first class density -- that is, don't supply specific graphics for this density, instead allow the platform to scale from other densities (typically [DENSITY_HIGH](../android/util/DisplayMetrics.md)) as appropriate. In most cases (such as using bitmaps in [android.graphics.drawable.Drawable](../android/graphics/drawable/Drawable.md)) the platform can perform this scaling at load time, so the only cost is some slight startup runtime overhead.
+This is a secondary density, added for some common screen configurations. It is recommended that applications not generally target this as a first class density -- that is, don't supply specific graphics for this density, instead allow the platform to scale from other densities (typically [DENSITY_HIGH](DisplayMetrics.md)) as appropriate. In most cases (such as using bitmaps in [android.graphics.drawable.Drawable](../android.graphics.drawable/Drawable.md)) the platform can perform this scaling at load time, so the only cost is some slight startup runtime overhead.
 
-This density was original introduced to correspond with a 720p TV screen: the density for 1080p televisions is [DENSITY_XHIGH](../android/util/DisplayMetrics.md), and the value here provides the same UI size for a TV running at 720p. It has also found use in 7" tablets, when these devices have 1280x720 displays. 
+This density was original introduced to correspond with a 720p TV screen: the density for 1080p televisions is [DENSITY_XHIGH](DisplayMetrics.md), and the value here provides the same UI size for a TV running at 720p. It has also found use in 7" tablets, when these devices have 1280x720 displays. 
 
  Value: 213
 
@@ -421,7 +421,7 @@ Returns true if these display metrics equal the other display metrics.
 
 | Parameters ||
 |---------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| `other` | [DisplayMetrics](../android/util/DisplayMetrics.md)!:The display metrics with which to compare. |
+| `other` | [DisplayMetrics](DisplayMetrics.md)!:The display metrics with which to compare. |
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------------------------------|
@@ -508,7 +508,7 @@ static val DENSITY_DEVICE_STABLE: Int
 
 The device's stable density.
 
-This value is constant at run time and may not reflect the current display density. To obtain the current density for a specific display, use [densityDpi](../android/util/DisplayMetrics.md). 
+This value is constant at run time and may not reflect the current display density. To obtain the current density for a specific display, use [densityDpi](DisplayMetrics.md). 
 
 ### density
 
@@ -520,10 +520,10 @@ var density: Float
 
 The logical density of the display. This is a scaling factor for the Density Independent Pixel unit, where one DIP is one pixel on an approximately 160 dpi screen (for example a 240x320, 1.5"x2" screen), providing the baseline of the system's display. Thus on a 160dpi screen this density value will be 1; on a 120 dpi screen it would be .75; etc.
 
-This value does not exactly follow the real screen size (as given by [xdpi](../android/util/DisplayMetrics.md) and [ydpi](../android/util/DisplayMetrics.md)), but rather is used to scale the size of the overall UI in steps based on gross changes in the display dpi. For example, a 240x320 screen will have a density of 1 even if its width is 1.8", 1.3", etc. However, if the screen resolution is increased to 320x480 but the screen size remained 1.5"x2" then the density would be increased (probably to 1.5). 
+This value does not exactly follow the real screen size (as given by [xdpi](DisplayMetrics.md) and [ydpi](DisplayMetrics.md)), but rather is used to scale the size of the overall UI in steps based on gross changes in the display dpi. For example, a 240x320 screen will have a density of 1 even if its width is 1.8", 1.3", etc. However, if the screen resolution is increased to 320x480 but the screen size remained 1.5"x2" then the density would be increased (probably to 1.5). 
 **See Also**
 
-- [#DENSITY_DEFAULT](../android/util/DisplayMetrics.md) 
+- [#DENSITY_DEFAULT](DisplayMetrics.md) 
 
 ### densityDpi
 
@@ -534,7 +534,7 @@ var densityDpi: Int
 ```
 
 The screen density expressed as dots-per-inch. May be any one of the`DENSITY_`constants defined above. New constants are frequently added, and constants added on new Android versions may be backported to previous Android versions, so applications should not strongly rely on density matching one of the enum constants. 
-Value is [android.util.DisplayMetrics#DENSITY_LOW](../android/util/DisplayMetrics.md), [android.util.DisplayMetrics#DENSITY_140](../android/util/DisplayMetrics.md), [android.util.DisplayMetrics#DENSITY_MEDIUM](../android/util/DisplayMetrics.md), [android.util.DisplayMetrics#DENSITY_180](../android/util/DisplayMetrics.md), [android.util.DisplayMetrics#DENSITY_200](../android/util/DisplayMetrics.md), [android.util.DisplayMetrics#DENSITY_TV](../android/util/DisplayMetrics.md), [android.util.DisplayMetrics#DENSITY_220](../android/util/DisplayMetrics.md), [android.util.DisplayMetrics#DENSITY_HIGH](../android/util/DisplayMetrics.md), [android.util.DisplayMetrics#DENSITY_260](../android/util/DisplayMetrics.md), [android.util.DisplayMetrics#DENSITY_280](../android/util/DisplayMetrics.md), [android.util.DisplayMetrics#DENSITY_300](../android/util/DisplayMetrics.md), [android.util.DisplayMetrics#DENSITY_XHIGH](../android/util/DisplayMetrics.md), [android.util.DisplayMetrics#DENSITY_340](../android/util/DisplayMetrics.md), [android.util.DisplayMetrics#DENSITY_360](../android/util/DisplayMetrics.md), [android.util.DisplayMetrics#DENSITY_390](../android/util/DisplayMetrics.md), [android.util.DisplayMetrics#DENSITY_400](../android/util/DisplayMetrics.md), [android.util.DisplayMetrics#DENSITY_420](../android/util/DisplayMetrics.md), [android.util.DisplayMetrics#DENSITY_440](../android/util/DisplayMetrics.md), [android.util.DisplayMetrics#DENSITY_450](../android/util/DisplayMetrics.md), [android.util.DisplayMetrics#DENSITY_XXHIGH](../android/util/DisplayMetrics.md), [android.util.DisplayMetrics#DENSITY_520](../android/util/DisplayMetrics.md), [android.util.DisplayMetrics#DENSITY_560](../android/util/DisplayMetrics.md), [android.util.DisplayMetrics#DENSITY_600](../android/util/DisplayMetrics.md), or [android.util.DisplayMetrics#DENSITY_XXXHIGH](../android/util/DisplayMetrics.md) 
+Value is [android.util.DisplayMetrics#DENSITY_LOW](DisplayMetrics.md), [android.util.DisplayMetrics#DENSITY_140](DisplayMetrics.md), [android.util.DisplayMetrics#DENSITY_MEDIUM](DisplayMetrics.md), [android.util.DisplayMetrics#DENSITY_180](DisplayMetrics.md), [android.util.DisplayMetrics#DENSITY_200](DisplayMetrics.md), [android.util.DisplayMetrics#DENSITY_TV](DisplayMetrics.md), [android.util.DisplayMetrics#DENSITY_220](DisplayMetrics.md), [android.util.DisplayMetrics#DENSITY_HIGH](DisplayMetrics.md), [android.util.DisplayMetrics#DENSITY_260](DisplayMetrics.md), [android.util.DisplayMetrics#DENSITY_280](DisplayMetrics.md), [android.util.DisplayMetrics#DENSITY_300](DisplayMetrics.md), [android.util.DisplayMetrics#DENSITY_XHIGH](DisplayMetrics.md), [android.util.DisplayMetrics#DENSITY_340](DisplayMetrics.md), [android.util.DisplayMetrics#DENSITY_360](DisplayMetrics.md), [android.util.DisplayMetrics#DENSITY_390](DisplayMetrics.md), [android.util.DisplayMetrics#DENSITY_400](DisplayMetrics.md), [android.util.DisplayMetrics#DENSITY_420](DisplayMetrics.md), [android.util.DisplayMetrics#DENSITY_440](DisplayMetrics.md), [android.util.DisplayMetrics#DENSITY_450](DisplayMetrics.md), [android.util.DisplayMetrics#DENSITY_XXHIGH](DisplayMetrics.md), [android.util.DisplayMetrics#DENSITY_520](DisplayMetrics.md), [android.util.DisplayMetrics#DENSITY_560](DisplayMetrics.md), [android.util.DisplayMetrics#DENSITY_600](DisplayMetrics.md), or [android.util.DisplayMetrics#DENSITY_XXXHIGH](DisplayMetrics.md) 
 
 ### heightPixels
 
@@ -555,9 +555,9 @@ Deprecated in [API level 34](https://developer.android.com/guide/topics/manifest
 var scaledDensity: Float
 ```
 
-**Deprecated:** *this scalar factor is no longer accurate due to adaptive non-linear font scaling. Please use [TypedValue.applyDimension(int, float, DisplayMetrics)](../android/util/TypedValue.md))or [TypedValue.deriveDimension(int, float, DisplayMetrics)](../android/util/TypedValue.md))to convert between SP font sizes and pixels.*
+**Deprecated:** *this scalar factor is no longer accurate due to adaptive non-linear font scaling. Please use [TypedValue.applyDimension(int, float, DisplayMetrics)](TypedValue.md))or [TypedValue.deriveDimension(int, float, DisplayMetrics)](TypedValue.md))to convert between SP font sizes and pixels.*
 
-A scaling factor for fonts displayed on the display. This is the same as [density](../android/util/DisplayMetrics.md), except that it may be adjusted in smaller increments at runtime based on a user preference for the font size. 
+A scaling factor for fonts displayed on the display. This is the same as [density](DisplayMetrics.md), except that it may be adjusted in smaller increments at runtime based on a user preference for the font size. 
 
 ### widthPixels
 

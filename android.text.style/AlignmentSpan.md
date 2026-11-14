@@ -4,16 +4,16 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # AlignmentSpan
 
-Kotlin| [Java](../android/text/style/AlignmentSpan.md) 
+Kotlin| [Java](AlignmentSpan.md) 
 | --- | --- |
 
 ```
 interface AlignmentSpan : ParagraphStyle
 ```
 
-| [android.text.style.AlignmentSpan](../android/text/style/AlignmentSpan.md) |
+| [android.text.style.AlignmentSpan](AlignmentSpan.md) |
 
-| Known Direct Subclasses [AlignmentSpan.Standard](../android/text/style/AlignmentSpan.Standard.md) |--------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------| | [AlignmentSpan.Standard](../android/text/style/AlignmentSpan.Standard.md) | Default implementation of the [AlignmentSpan](../android/text/style/AlignmentSpan.md). | |
+| Known Direct Subclasses [AlignmentSpan.Standard](../android/text/style/AlignmentSpan.Standard.md) |--------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------| | [AlignmentSpan.Standard](../android/text/style/AlignmentSpan.Standard.md) | Default implementation of the [AlignmentSpan](AlignmentSpan.md). | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 Span that allows defining the alignment of text at the paragraph level.
@@ -22,11 +22,11 @@ Span that allows defining the alignment of text at the paragraph level.
 
 | Nested classes ||
 |------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open | [Standard](../android/text/style/AlignmentSpan.Standard.md) Default implementation of the [AlignmentSpan](../android/text/style/AlignmentSpan.md). |
+| open | [Standard](../android/text/style/AlignmentSpan.Standard.md) Default implementation of the [AlignmentSpan](AlignmentSpan.md). |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Layout.Alignment](../android/text/Layout.Alignment.md)! | [getAlignment](../android/text/style/AlignmentSpan.md))`()` Returns the alignment of the text. |
+| abstract [Layout.Alignment](../android/text/Layout.Alignment.md)! | [getAlignment](AlignmentSpan.md))`()` Returns the alignment of the text. |
 
 ## Public methods
 

@@ -4,7 +4,7 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 
 # SyncStateContract
 
-Kotlin| [Java](../android/provider/SyncStateContract.md) 
+Kotlin| [Java](SyncStateContract.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class SyncStateContract
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.provider.SyncStateContract](../android/provider/SyncStateContract.md) |
+| ↳ | [android.provider.SyncStateContract](SyncStateContract.md) |
 
 The ContentProvider contract for associating data with ana data array account. This may be used by providers that want to store this data in a standard way.
 
@@ -28,7 +28,7 @@ The ContentProvider contract for associating data with ana data array account. T
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SyncStateContract](../android/provider/SyncStateContract.md))`()` <br /> |
+| [SyncStateContract](SyncStateContract.md))`()` <br /> |
 
 ## Public constructors
 

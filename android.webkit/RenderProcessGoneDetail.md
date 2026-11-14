@@ -4,7 +4,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 
 # RenderProcessGoneDetail
 
-Kotlin| [Java](../android/webkit/RenderProcessGoneDetail.md) 
+Kotlin| [Java](RenderProcessGoneDetail.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ abstract class RenderProcessGoneDetail
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.webkit.RenderProcessGoneDetail](../android/webkit/RenderProcessGoneDetail.md) |
+| ↳ | [android.webkit.RenderProcessGoneDetail](RenderProcessGoneDetail.md) |
 
 This class provides more specific information about why the render process exited. The application may use this to decide how to handle the situation.
 
@@ -21,12 +21,12 @@ This class provides more specific information about why the render process exite
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [RenderProcessGoneDetail](../android/webkit/RenderProcessGoneDetail.md))`()` <br /> |
+| [RenderProcessGoneDetail](RenderProcessGoneDetail.md))`()` <br /> |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [didCrash](../android/webkit/RenderProcessGoneDetail.md))`()` Indicates whether the render process was observed to crash, or whether it was killed by the system. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [rendererPriorityAtExit](../android/webkit/RenderProcessGoneDetail.md))`()` Returns the renderer priority that was set at the time that the renderer exited. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [didCrash](RenderProcessGoneDetail.md))`()` Indicates whether the render process was observed to crash, or whether it was killed by the system. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [rendererPriorityAtExit](RenderProcessGoneDetail.md))`()` Returns the renderer priority that was set at the time that the renderer exited. |
 
 ## Public constructors
 
@@ -64,8 +64,8 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 abstract fun rendererPriorityAtExit(): Int
 ```
 
-Returns the renderer priority that was set at the time that the renderer exited. This may be greater than the priority that any individual [WebView](../android/webkit/WebView.md) requested using [WebView.setRendererPriorityPolicy](../android/webkit/WebView.md)).
+Returns the renderer priority that was set at the time that the renderer exited. This may be greater than the priority that any individual [WebView](WebView.md) requested using [WebView.setRendererPriorityPolicy](WebView.md)).
 
 | Return ||
 |----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the priority of the renderer at exit. Value is [android.webkit.WebView#RENDERER_PRIORITY_WAIVED](../android/webkit/WebView.md), [android.webkit.WebView#RENDERER_PRIORITY_BOUND](../android/webkit/WebView.md), or [android.webkit.WebView#RENDERER_PRIORITY_IMPORTANT](../android/webkit/WebView.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the priority of the renderer at exit. Value is [android.webkit.WebView#RENDERER_PRIORITY_WAIVED](WebView.md), [android.webkit.WebView#RENDERER_PRIORITY_BOUND](WebView.md), or [android.webkit.WebView#RENDERER_PRIORITY_IMPORTANT](WebView.md) |

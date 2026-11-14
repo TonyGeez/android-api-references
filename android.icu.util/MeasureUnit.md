@@ -4,7 +4,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # MeasureUnit
 
-Kotlin| [Java](../android/icu/util/MeasureUnit.md) 
+Kotlin| [Java](MeasureUnit.md) 
 | --- | --- |
 
 ```
@@ -13,9 +13,9 @@ open class MeasureUnit : Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.icu.util.MeasureUnit](../android/icu/util/MeasureUnit.md) |
+| ↳ | [android.icu.util.MeasureUnit](MeasureUnit.md) |
 
-| Known Direct Subclasses [Currency](../android/icu/util/Currency.md), [TimeUnit](../android/icu/util/TimeUnit.md) |--------------------------------------------------------------------------------------|-----------------------------------------------------------| | [Currency](../android/icu/util/Currency.md) | A class encapsulating a currency, as defined by ISO 4217. | | [TimeUnit](../android/icu/util/TimeUnit.md) | Measurement unit for time units. | |
+| Known Direct Subclasses [Currency](Currency.md), [TimeUnit](TimeUnit.md) |--------------------------------------------------------------------------------------|-----------------------------------------------------------| | [Currency](Currency.md) | A class encapsulating a currency, as defined by ISO 4217. | | [TimeUnit](TimeUnit.md) | Measurement unit for time units. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 A unit such as length, mass, volume, currency, etc. A unit is coupled with a numeric amount to produce a Measure. MeasureUnit objects are immutable. All subclasses must guarantee that. (However, subclassing is discouraged.)
@@ -29,242 +29,242 @@ A unit such as length, mass, volume, currency, etc. A unit is coupled with a num
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/icu/util/MeasureUnit.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| openstatic [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [forIdentifier](../android/icu/util/MeasureUnit.md))`(`identifier:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Construct a MeasureUnit from a CLDR Core Unit Identifier, defined in UTS 35. |
-| openstatic [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [MeasureUnit](../android/icu/util/MeasureUnit.md)!\>! | [getAvailable](../android/icu/util/MeasureUnit.md))`()` Get all of the available units. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](MeasureUnit.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| openstatic [MeasureUnit](MeasureUnit.md)! | [forIdentifier](MeasureUnit.md))`(`identifier:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Construct a MeasureUnit from a CLDR Core Unit Identifier, defined in UTS 35. |
+| openstatic [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [MeasureUnit](MeasureUnit.md)!\>! | [getAvailable](MeasureUnit.md))`()` Get all of the available units. |
 | --- | --- |
-| openstatic [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [MeasureUnit](../android/icu/util/MeasureUnit.md)!\>! | [getAvailable](../android/icu/util/MeasureUnit.md))`(`type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` For the given type, return the available units. |
-| openstatic [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getAvailableTypes](../android/icu/util/MeasureUnit.md))`()` Get all of the available units' types. |
-| open [MeasureUnit.Complexity](../android/icu/util/MeasureUnit.Complexity.md)! | [getComplexity](../android/icu/util/MeasureUnit.md))`()` Compute the complexity of the unit. |
+| openstatic [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [MeasureUnit](MeasureUnit.md)!\>! | [getAvailable](MeasureUnit.md))`(`type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` For the given type, return the available units. |
+| openstatic [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getAvailableTypes](MeasureUnit.md))`()` Get all of the available units' types. |
+| open [MeasureUnit.Complexity](../android/icu/util/MeasureUnit.Complexity.md)! | [getComplexity](MeasureUnit.md))`()` Compute the complexity of the unit. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDimensionality](../android/icu/util/MeasureUnit.md))`()` Returns the dimensionality (power) of this MeasureUnit. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getIdentifier](../android/icu/util/MeasureUnit.md))`()` Get CLDR Unit Identifier for this MeasureUnit, as defined in UTS 35. |
-| open [MeasureUnit.MeasurePrefix](../android/icu/util/MeasureUnit.MeasurePrefix.md)! | [getPrefix](../android/icu/util/MeasureUnit.md))`()` Returns the current SI or binary prefix of this SINGLE unit. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDimensionality](MeasureUnit.md))`()` Returns the dimensionality (power) of this MeasureUnit. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getIdentifier](MeasureUnit.md))`()` Get CLDR Unit Identifier for this MeasureUnit, as defined in UTS 35. |
+| open [MeasureUnit.MeasurePrefix](../android/icu/util/MeasureUnit.MeasurePrefix.md)! | [getPrefix](MeasureUnit.md))`()` Returns the current SI or binary prefix of this SINGLE unit. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSubtype](../android/icu/util/MeasureUnit.md))`()` Get the subType, such as "foot". |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getType](../android/icu/util/MeasureUnit.md))`()` Get the type, such as "length". |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/icu/util/MeasureUnit.md))`()` Returns a hash code value for the object. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSubtype](MeasureUnit.md))`()` Get the subType, such as "foot". |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getType](MeasureUnit.md))`()` Get the type, such as "length". |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](MeasureUnit.md))`()` Returns a hash code value for the object. |
 | --- | --- |
-| open [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [product](../android/icu/util/MeasureUnit.md))`(`other:` ` [MeasureUnit](../android/icu/util/MeasureUnit.md)!`)` Computes the product of this unit with another unit. |
-| open [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [reciprocal](../android/icu/util/MeasureUnit.md))`()` Computes the reciprocal of this MeasureUnit, with the numerator and denominator flipped. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MeasureUnit](../android/icu/util/MeasureUnit.md)!\>! | [splitToSingleUnits](../android/icu/util/MeasureUnit.md))`()` Returns the list of SINGLE units contained within a sequence of COMPOUND units. |
+| open [MeasureUnit](MeasureUnit.md)! | [product](MeasureUnit.md))`(`other:` ` [MeasureUnit](MeasureUnit.md)!`)` Computes the product of this unit with another unit. |
+| open [MeasureUnit](MeasureUnit.md)! | [reciprocal](MeasureUnit.md))`()` Computes the reciprocal of this MeasureUnit, with the numerator and denominator flipped. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MeasureUnit](MeasureUnit.md)!\>! | [splitToSingleUnits](MeasureUnit.md))`()` Returns the list of SINGLE units contained within a sequence of COMPOUND units. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/icu/util/MeasureUnit.md))`()` Returns a string representation of the object. |
-| open [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [withDimensionality](../android/icu/util/MeasureUnit.md))`(`dimensionality:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a MeasureUnit which is this SINGLE unit augmented with the specified dimensionality (power). |
-| open [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [withPrefix](../android/icu/util/MeasureUnit.md))`(`prefix:` ` [MeasureUnit.MeasurePrefix](../android/icu/util/MeasureUnit.MeasurePrefix.md)!`)` Creates a MeasureUnit which is this SINGLE unit augmented with the specified prefix. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](MeasureUnit.md))`()` Returns a string representation of the object. |
+| open [MeasureUnit](MeasureUnit.md)! | [withDimensionality](MeasureUnit.md))`(`dimensionality:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a MeasureUnit which is this SINGLE unit augmented with the specified dimensionality (power). |
+| open [MeasureUnit](MeasureUnit.md)! | [withPrefix](MeasureUnit.md))`(`prefix:` ` [MeasureUnit.MeasurePrefix](../android/icu/util/MeasureUnit.MeasurePrefix.md)!`)` Creates a MeasureUnit which is this SINGLE unit augmented with the specified prefix. |
 | --- | --- |
 
 | Properties ||
 |----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [ACRE](../android/icu/util/MeasureUnit.md) Constant for unit of area: acre |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [ACRE_FOOT](../android/icu/util/MeasureUnit.md) Constant for unit of volume: acre-foot |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [AMPERE](../android/icu/util/MeasureUnit.md) Constant for unit of electric: ampere |
+| static [MeasureUnit](MeasureUnit.md)! | [ACRE](MeasureUnit.md) Constant for unit of area: acre |
+| static [MeasureUnit](MeasureUnit.md)! | [ACRE_FOOT](MeasureUnit.md) Constant for unit of volume: acre-foot |
+| static [MeasureUnit](MeasureUnit.md)! | [AMPERE](MeasureUnit.md) Constant for unit of electric: ampere |
 | --- | --- |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [ARC_MINUTE](../android/icu/util/MeasureUnit.md) Constant for unit of angle: arc-minute |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [ARC_SECOND](../android/icu/util/MeasureUnit.md) Constant for unit of angle: arc-second |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [ASTRONOMICAL_UNIT](../android/icu/util/MeasureUnit.md) Constant for unit of length: astronomical-unit |
+| static [MeasureUnit](MeasureUnit.md)! | [ARC_MINUTE](MeasureUnit.md) Constant for unit of angle: arc-minute |
+| static [MeasureUnit](MeasureUnit.md)! | [ARC_SECOND](MeasureUnit.md) Constant for unit of angle: arc-second |
+| static [MeasureUnit](MeasureUnit.md)! | [ASTRONOMICAL_UNIT](MeasureUnit.md) Constant for unit of length: astronomical-unit |
 | --- | --- |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [ATMOSPHERE](../android/icu/util/MeasureUnit.md) Constant for unit of pressure: atmosphere |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [BEAUFORT](../android/icu/util/MeasureUnit.md) Constant for unit of speed: beaufort |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [BIT](../android/icu/util/MeasureUnit.md) Constant for unit of digital: bit |
+| static [MeasureUnit](MeasureUnit.md)! | [ATMOSPHERE](MeasureUnit.md) Constant for unit of pressure: atmosphere |
+| static [MeasureUnit](MeasureUnit.md)! | [BEAUFORT](MeasureUnit.md) Constant for unit of speed: beaufort |
+| static [MeasureUnit](MeasureUnit.md)! | [BIT](MeasureUnit.md) Constant for unit of digital: bit |
 | --- | --- |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [BUSHEL](../android/icu/util/MeasureUnit.md) Constant for unit of volume: bushel |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [BYTE](../android/icu/util/MeasureUnit.md) Constant for unit of digital: byte |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [CALORIE](../android/icu/util/MeasureUnit.md) Constant for unit of energy: calorie |
+| static [MeasureUnit](MeasureUnit.md)! | [BUSHEL](MeasureUnit.md) Constant for unit of volume: bushel |
+| static [MeasureUnit](MeasureUnit.md)! | [BYTE](MeasureUnit.md) Constant for unit of digital: byte |
+| static [MeasureUnit](MeasureUnit.md)! | [CALORIE](MeasureUnit.md) Constant for unit of energy: calorie |
 | --- | --- |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [CANDELA](../android/icu/util/MeasureUnit.md) Constant for unit of light: candela |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [CARAT](../android/icu/util/MeasureUnit.md) Constant for unit of mass: carat |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [CELSIUS](../android/icu/util/MeasureUnit.md) Constant for unit of temperature: celsius |
+| static [MeasureUnit](MeasureUnit.md)! | [CANDELA](MeasureUnit.md) Constant for unit of light: candela |
+| static [MeasureUnit](MeasureUnit.md)! | [CARAT](MeasureUnit.md) Constant for unit of mass: carat |
+| static [MeasureUnit](MeasureUnit.md)! | [CELSIUS](MeasureUnit.md) Constant for unit of temperature: celsius |
 | --- | --- |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [CENTILITER](../android/icu/util/MeasureUnit.md) Constant for unit of volume: centiliter |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [CENTIMETER](../android/icu/util/MeasureUnit.md) Constant for unit of length: centimeter |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [CENTURY](../android/icu/util/MeasureUnit.md) Constant for unit of duration: century |
+| static [MeasureUnit](MeasureUnit.md)! | [CENTILITER](MeasureUnit.md) Constant for unit of volume: centiliter |
+| static [MeasureUnit](MeasureUnit.md)! | [CENTIMETER](MeasureUnit.md) Constant for unit of length: centimeter |
+| static [MeasureUnit](MeasureUnit.md)! | [CENTURY](MeasureUnit.md) Constant for unit of duration: century |
 | --- | --- |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [CUBIC_CENTIMETER](../android/icu/util/MeasureUnit.md) Constant for unit of volume: cubic-centimeter |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [CUBIC_FOOT](../android/icu/util/MeasureUnit.md) Constant for unit of volume: cubic-foot |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [CUBIC_INCH](../android/icu/util/MeasureUnit.md) Constant for unit of volume: cubic-inch |
+| static [MeasureUnit](MeasureUnit.md)! | [CUBIC_CENTIMETER](MeasureUnit.md) Constant for unit of volume: cubic-centimeter |
+| static [MeasureUnit](MeasureUnit.md)! | [CUBIC_FOOT](MeasureUnit.md) Constant for unit of volume: cubic-foot |
+| static [MeasureUnit](MeasureUnit.md)! | [CUBIC_INCH](MeasureUnit.md) Constant for unit of volume: cubic-inch |
 | --- | --- |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [CUBIC_KILOMETER](../android/icu/util/MeasureUnit.md) Constant for unit of volume: cubic-kilometer |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [CUBIC_METER](../android/icu/util/MeasureUnit.md) Constant for unit of volume: cubic-meter |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [CUBIC_MILE](../android/icu/util/MeasureUnit.md) Constant for unit of volume: cubic-mile |
+| static [MeasureUnit](MeasureUnit.md)! | [CUBIC_KILOMETER](MeasureUnit.md) Constant for unit of volume: cubic-kilometer |
+| static [MeasureUnit](MeasureUnit.md)! | [CUBIC_METER](MeasureUnit.md) Constant for unit of volume: cubic-meter |
+| static [MeasureUnit](MeasureUnit.md)! | [CUBIC_MILE](MeasureUnit.md) Constant for unit of volume: cubic-mile |
 | --- | --- |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [CUBIC_YARD](../android/icu/util/MeasureUnit.md) Constant for unit of volume: cubic-yard |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [CUP](../android/icu/util/MeasureUnit.md) Constant for unit of volume: cup |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [CUP_METRIC](../android/icu/util/MeasureUnit.md) Constant for unit of volume: cup-metric |
+| static [MeasureUnit](MeasureUnit.md)! | [CUBIC_YARD](MeasureUnit.md) Constant for unit of volume: cubic-yard |
+| static [MeasureUnit](MeasureUnit.md)! | [CUP](MeasureUnit.md) Constant for unit of volume: cup |
+| static [MeasureUnit](MeasureUnit.md)! | [CUP_METRIC](MeasureUnit.md) Constant for unit of volume: cup-metric |
 | --- | --- |
-| static [TimeUnit](../android/icu/util/TimeUnit.md)! | [DAY](../android/icu/util/MeasureUnit.md) Constant for unit of duration: day |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [DECADE](../android/icu/util/MeasureUnit.md) Constant for unit of duration: decade |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [DECILITER](../android/icu/util/MeasureUnit.md) Constant for unit of volume: deciliter |
+| static [TimeUnit](TimeUnit.md)! | [DAY](MeasureUnit.md) Constant for unit of duration: day |
+| static [MeasureUnit](MeasureUnit.md)! | [DECADE](MeasureUnit.md) Constant for unit of duration: decade |
+| static [MeasureUnit](MeasureUnit.md)! | [DECILITER](MeasureUnit.md) Constant for unit of volume: deciliter |
 | --- | --- |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [DECIMETER](../android/icu/util/MeasureUnit.md) Constant for unit of length: decimeter |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [DEGREE](../android/icu/util/MeasureUnit.md) Constant for unit of angle: degree |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [DOT](../android/icu/util/MeasureUnit.md) Constant for unit of graphics: dot |
+| static [MeasureUnit](MeasureUnit.md)! | [DECIMETER](MeasureUnit.md) Constant for unit of length: decimeter |
+| static [MeasureUnit](MeasureUnit.md)! | [DEGREE](MeasureUnit.md) Constant for unit of angle: degree |
+| static [MeasureUnit](MeasureUnit.md)! | [DOT](MeasureUnit.md) Constant for unit of graphics: dot |
 | --- | --- |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [DOT_PER_CENTIMETER](../android/icu/util/MeasureUnit.md) Constant for unit of graphics: dot-per-centimeter |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [DOT_PER_INCH](../android/icu/util/MeasureUnit.md) Constant for unit of graphics: dot-per-inch |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [EM](../android/icu/util/MeasureUnit.md) Constant for unit of graphics: em |
+| static [MeasureUnit](MeasureUnit.md)! | [DOT_PER_CENTIMETER](MeasureUnit.md) Constant for unit of graphics: dot-per-centimeter |
+| static [MeasureUnit](MeasureUnit.md)! | [DOT_PER_INCH](MeasureUnit.md) Constant for unit of graphics: dot-per-inch |
+| static [MeasureUnit](MeasureUnit.md)! | [EM](MeasureUnit.md) Constant for unit of graphics: em |
 | --- | --- |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [FAHRENHEIT](../android/icu/util/MeasureUnit.md) Constant for unit of temperature: fahrenheit |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [FATHOM](../android/icu/util/MeasureUnit.md) Constant for unit of length: fathom |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [FLUID_OUNCE](../android/icu/util/MeasureUnit.md) Constant for unit of volume: fluid-ounce |
+| static [MeasureUnit](MeasureUnit.md)! | [FAHRENHEIT](MeasureUnit.md) Constant for unit of temperature: fahrenheit |
+| static [MeasureUnit](MeasureUnit.md)! | [FATHOM](MeasureUnit.md) Constant for unit of length: fathom |
+| static [MeasureUnit](MeasureUnit.md)! | [FLUID_OUNCE](MeasureUnit.md) Constant for unit of volume: fluid-ounce |
 | --- | --- |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [FOODCALORIE](../android/icu/util/MeasureUnit.md) Constant for unit of energy: foodcalorie |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [FOOT](../android/icu/util/MeasureUnit.md) Constant for unit of length: foot |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [FURLONG](../android/icu/util/MeasureUnit.md) Constant for unit of length: furlong |
+| static [MeasureUnit](MeasureUnit.md)! | [FOODCALORIE](MeasureUnit.md) Constant for unit of energy: foodcalorie |
+| static [MeasureUnit](MeasureUnit.md)! | [FOOT](MeasureUnit.md) Constant for unit of length: foot |
+| static [MeasureUnit](MeasureUnit.md)! | [FURLONG](MeasureUnit.md) Constant for unit of length: furlong |
 | --- | --- |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [GALLON](../android/icu/util/MeasureUnit.md) Constant for unit of volume: gallon |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [GALLON_IMPERIAL](../android/icu/util/MeasureUnit.md) Constant for unit of volume: gallon-imperial |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [GASOLINE_ENERGY_DENSITY](../android/icu/util/MeasureUnit.md) Constant for unit of pressure: gasoline-energy-density |
+| static [MeasureUnit](MeasureUnit.md)! | [GALLON](MeasureUnit.md) Constant for unit of volume: gallon |
+| static [MeasureUnit](MeasureUnit.md)! | [GALLON_IMPERIAL](MeasureUnit.md) Constant for unit of volume: gallon-imperial |
+| static [MeasureUnit](MeasureUnit.md)! | [GASOLINE_ENERGY_DENSITY](MeasureUnit.md) Constant for unit of pressure: gasoline-energy-density |
 | --- | --- |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [GENERIC_TEMPERATURE](../android/icu/util/MeasureUnit.md) Constant for unit of temperature: generic |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [GIGABIT](../android/icu/util/MeasureUnit.md) Constant for unit of digital: gigabit |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [GIGABYTE](../android/icu/util/MeasureUnit.md) Constant for unit of digital: gigabyte |
+| static [MeasureUnit](MeasureUnit.md)! | [GENERIC_TEMPERATURE](MeasureUnit.md) Constant for unit of temperature: generic |
+| static [MeasureUnit](MeasureUnit.md)! | [GIGABIT](MeasureUnit.md) Constant for unit of digital: gigabit |
+| static [MeasureUnit](MeasureUnit.md)! | [GIGABYTE](MeasureUnit.md) Constant for unit of digital: gigabyte |
 | --- | --- |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [GIGAHERTZ](../android/icu/util/MeasureUnit.md) Constant for unit of frequency: gigahertz |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [GIGAWATT](../android/icu/util/MeasureUnit.md) Constant for unit of power: gigawatt |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [GRAM](../android/icu/util/MeasureUnit.md) Constant for unit of mass: gram |
+| static [MeasureUnit](MeasureUnit.md)! | [GIGAHERTZ](MeasureUnit.md) Constant for unit of frequency: gigahertz |
+| static [MeasureUnit](MeasureUnit.md)! | [GIGAWATT](MeasureUnit.md) Constant for unit of power: gigawatt |
+| static [MeasureUnit](MeasureUnit.md)! | [GRAM](MeasureUnit.md) Constant for unit of mass: gram |
 | --- | --- |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [G_FORCE](../android/icu/util/MeasureUnit.md) Constant for unit of acceleration: g-force |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [HECTARE](../android/icu/util/MeasureUnit.md) Constant for unit of area: hectare |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [HECTOLITER](../android/icu/util/MeasureUnit.md) Constant for unit of volume: hectoliter |
+| static [MeasureUnit](MeasureUnit.md)! | [G_FORCE](MeasureUnit.md) Constant for unit of acceleration: g-force |
+| static [MeasureUnit](MeasureUnit.md)! | [HECTARE](MeasureUnit.md) Constant for unit of area: hectare |
+| static [MeasureUnit](MeasureUnit.md)! | [HECTOLITER](MeasureUnit.md) Constant for unit of volume: hectoliter |
 | --- | --- |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [HECTOPASCAL](../android/icu/util/MeasureUnit.md) Constant for unit of pressure: hectopascal |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [HERTZ](../android/icu/util/MeasureUnit.md) Constant for unit of frequency: hertz |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [HORSEPOWER](../android/icu/util/MeasureUnit.md) Constant for unit of power: horsepower |
+| static [MeasureUnit](MeasureUnit.md)! | [HECTOPASCAL](MeasureUnit.md) Constant for unit of pressure: hectopascal |
+| static [MeasureUnit](MeasureUnit.md)! | [HERTZ](MeasureUnit.md) Constant for unit of frequency: hertz |
+| static [MeasureUnit](MeasureUnit.md)! | [HORSEPOWER](MeasureUnit.md) Constant for unit of power: horsepower |
 | --- | --- |
-| static [TimeUnit](../android/icu/util/TimeUnit.md)! | [HOUR](../android/icu/util/MeasureUnit.md) Constant for unit of duration: hour |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [INCH](../android/icu/util/MeasureUnit.md) Constant for unit of length: inch |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [INCH_HG](../android/icu/util/MeasureUnit.md) Constant for unit of pressure: inch-ofhg |
+| static [TimeUnit](TimeUnit.md)! | [HOUR](MeasureUnit.md) Constant for unit of duration: hour |
+| static [MeasureUnit](MeasureUnit.md)! | [INCH](MeasureUnit.md) Constant for unit of length: inch |
+| static [MeasureUnit](MeasureUnit.md)! | [INCH_HG](MeasureUnit.md) Constant for unit of pressure: inch-ofhg |
 | --- | --- |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [ITEM](../android/icu/util/MeasureUnit.md) Constant for unit of concentr: item |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [JOULE](../android/icu/util/MeasureUnit.md) Constant for unit of energy: joule |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [KARAT](../android/icu/util/MeasureUnit.md) Constant for unit of concentr: karat |
+| static [MeasureUnit](MeasureUnit.md)! | [ITEM](MeasureUnit.md) Constant for unit of concentr: item |
+| static [MeasureUnit](MeasureUnit.md)! | [JOULE](MeasureUnit.md) Constant for unit of energy: joule |
+| static [MeasureUnit](MeasureUnit.md)! | [KARAT](MeasureUnit.md) Constant for unit of concentr: karat |
 | --- | --- |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [KELVIN](../android/icu/util/MeasureUnit.md) Constant for unit of temperature: kelvin |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [KILOBIT](../android/icu/util/MeasureUnit.md) Constant for unit of digital: kilobit |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [KILOBYTE](../android/icu/util/MeasureUnit.md) Constant for unit of digital: kilobyte |
+| static [MeasureUnit](MeasureUnit.md)! | [KELVIN](MeasureUnit.md) Constant for unit of temperature: kelvin |
+| static [MeasureUnit](MeasureUnit.md)! | [KILOBIT](MeasureUnit.md) Constant for unit of digital: kilobit |
+| static [MeasureUnit](MeasureUnit.md)! | [KILOBYTE](MeasureUnit.md) Constant for unit of digital: kilobyte |
 | --- | --- |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [KILOCALORIE](../android/icu/util/MeasureUnit.md) Constant for unit of energy: kilocalorie |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [KILOGRAM](../android/icu/util/MeasureUnit.md) Constant for unit of mass: kilogram |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [KILOHERTZ](../android/icu/util/MeasureUnit.md) Constant for unit of frequency: kilohertz |
+| static [MeasureUnit](MeasureUnit.md)! | [KILOCALORIE](MeasureUnit.md) Constant for unit of energy: kilocalorie |
+| static [MeasureUnit](MeasureUnit.md)! | [KILOGRAM](MeasureUnit.md) Constant for unit of mass: kilogram |
+| static [MeasureUnit](MeasureUnit.md)! | [KILOHERTZ](MeasureUnit.md) Constant for unit of frequency: kilohertz |
 | --- | --- |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [KILOJOULE](../android/icu/util/MeasureUnit.md) Constant for unit of energy: kilojoule |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [KILOMETER](../android/icu/util/MeasureUnit.md) Constant for unit of length: kilometer |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [KILOMETER_PER_HOUR](../android/icu/util/MeasureUnit.md) Constant for unit of speed: kilometer-per-hour |
+| static [MeasureUnit](MeasureUnit.md)! | [KILOJOULE](MeasureUnit.md) Constant for unit of energy: kilojoule |
+| static [MeasureUnit](MeasureUnit.md)! | [KILOMETER](MeasureUnit.md) Constant for unit of length: kilometer |
+| static [MeasureUnit](MeasureUnit.md)! | [KILOMETER_PER_HOUR](MeasureUnit.md) Constant for unit of speed: kilometer-per-hour |
 | --- | --- |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [KILOWATT](../android/icu/util/MeasureUnit.md) Constant for unit of power: kilowatt |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [KILOWATT_HOUR](../android/icu/util/MeasureUnit.md) Constant for unit of energy: kilowatt-hour |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [KILOWATT_HOUR_PER_100_KILOMETER](../android/icu/util/MeasureUnit.md) Constant for unit of force: kilowatt-hour-per-100-kilometer |
+| static [MeasureUnit](MeasureUnit.md)! | [KILOWATT](MeasureUnit.md) Constant for unit of power: kilowatt |
+| static [MeasureUnit](MeasureUnit.md)! | [KILOWATT_HOUR](MeasureUnit.md) Constant for unit of energy: kilowatt-hour |
+| static [MeasureUnit](MeasureUnit.md)! | [KILOWATT_HOUR_PER_100_KILOMETER](MeasureUnit.md) Constant for unit of force: kilowatt-hour-per-100-kilometer |
 | --- | --- |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [KNOT](../android/icu/util/MeasureUnit.md) Constant for unit of speed: knot |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [LIGHT_YEAR](../android/icu/util/MeasureUnit.md) Constant for unit of length: light-year |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [LITER](../android/icu/util/MeasureUnit.md) Constant for unit of volume: liter |
+| static [MeasureUnit](MeasureUnit.md)! | [KNOT](MeasureUnit.md) Constant for unit of speed: knot |
+| static [MeasureUnit](MeasureUnit.md)! | [LIGHT_YEAR](MeasureUnit.md) Constant for unit of length: light-year |
+| static [MeasureUnit](MeasureUnit.md)! | [LITER](MeasureUnit.md) Constant for unit of volume: liter |
 | --- | --- |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [LITER_PER_100KILOMETERS](../android/icu/util/MeasureUnit.md) Constant for unit of consumption: liter-per-100-kilometer |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [LITER_PER_KILOMETER](../android/icu/util/MeasureUnit.md) Constant for unit of consumption: liter-per-kilometer |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [LUMEN](../android/icu/util/MeasureUnit.md) Constant for unit of light: lumen |
+| static [MeasureUnit](MeasureUnit.md)! | [LITER_PER_100KILOMETERS](MeasureUnit.md) Constant for unit of consumption: liter-per-100-kilometer |
+| static [MeasureUnit](MeasureUnit.md)! | [LITER_PER_KILOMETER](MeasureUnit.md) Constant for unit of consumption: liter-per-kilometer |
+| static [MeasureUnit](MeasureUnit.md)! | [LUMEN](MeasureUnit.md) Constant for unit of light: lumen |
 | --- | --- |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [LUX](../android/icu/util/MeasureUnit.md) Constant for unit of light: lux |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [MEGABIT](../android/icu/util/MeasureUnit.md) Constant for unit of digital: megabit |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [MEGABYTE](../android/icu/util/MeasureUnit.md) Constant for unit of digital: megabyte |
+| static [MeasureUnit](MeasureUnit.md)! | [LUX](MeasureUnit.md) Constant for unit of light: lux |
+| static [MeasureUnit](MeasureUnit.md)! | [MEGABIT](MeasureUnit.md) Constant for unit of digital: megabit |
+| static [MeasureUnit](MeasureUnit.md)! | [MEGABYTE](MeasureUnit.md) Constant for unit of digital: megabyte |
 | --- | --- |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [MEGAHERTZ](../android/icu/util/MeasureUnit.md) Constant for unit of frequency: megahertz |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [MEGALITER](../android/icu/util/MeasureUnit.md) Constant for unit of volume: megaliter |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [MEGAPIXEL](../android/icu/util/MeasureUnit.md) Constant for unit of graphics: megapixel |
+| static [MeasureUnit](MeasureUnit.md)! | [MEGAHERTZ](MeasureUnit.md) Constant for unit of frequency: megahertz |
+| static [MeasureUnit](MeasureUnit.md)! | [MEGALITER](MeasureUnit.md) Constant for unit of volume: megaliter |
+| static [MeasureUnit](MeasureUnit.md)! | [MEGAPIXEL](MeasureUnit.md) Constant for unit of graphics: megapixel |
 | --- | --- |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [MEGAWATT](../android/icu/util/MeasureUnit.md) Constant for unit of power: megawatt |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [METER](../android/icu/util/MeasureUnit.md) Constant for unit of length: meter |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [METER_PER_SECOND](../android/icu/util/MeasureUnit.md) Constant for unit of speed: meter-per-second |
+| static [MeasureUnit](MeasureUnit.md)! | [MEGAWATT](MeasureUnit.md) Constant for unit of power: megawatt |
+| static [MeasureUnit](MeasureUnit.md)! | [METER](MeasureUnit.md) Constant for unit of length: meter |
+| static [MeasureUnit](MeasureUnit.md)! | [METER_PER_SECOND](MeasureUnit.md) Constant for unit of speed: meter-per-second |
 | --- | --- |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [METER_PER_SECOND_SQUARED](../android/icu/util/MeasureUnit.md) Constant for unit of acceleration: meter-per-square-second |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [METRIC_TON](../android/icu/util/MeasureUnit.md) Constant for unit of mass: metric-ton (renamed to tonne in CLDR 42 / ICU 72). |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [MICROGRAM](../android/icu/util/MeasureUnit.md) Constant for unit of mass: microgram |
+| static [MeasureUnit](MeasureUnit.md)! | [METER_PER_SECOND_SQUARED](MeasureUnit.md) Constant for unit of acceleration: meter-per-square-second |
+| static [MeasureUnit](MeasureUnit.md)! | [METRIC_TON](MeasureUnit.md) Constant for unit of mass: metric-ton (renamed to tonne in CLDR 42 / ICU 72). |
+| static [MeasureUnit](MeasureUnit.md)! | [MICROGRAM](MeasureUnit.md) Constant for unit of mass: microgram |
 | --- | --- |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [MICROMETER](../android/icu/util/MeasureUnit.md) Constant for unit of length: micrometer |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [MICROSECOND](../android/icu/util/MeasureUnit.md) Constant for unit of duration: microsecond |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [MILE](../android/icu/util/MeasureUnit.md) Constant for unit of length: mile |
+| static [MeasureUnit](MeasureUnit.md)! | [MICROMETER](MeasureUnit.md) Constant for unit of length: micrometer |
+| static [MeasureUnit](MeasureUnit.md)! | [MICROSECOND](MeasureUnit.md) Constant for unit of duration: microsecond |
+| static [MeasureUnit](MeasureUnit.md)! | [MILE](MeasureUnit.md) Constant for unit of length: mile |
 | --- | --- |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [MILE_PER_GALLON](../android/icu/util/MeasureUnit.md) Constant for unit of consumption: mile-per-gallon |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [MILE_PER_GALLON_IMPERIAL](../android/icu/util/MeasureUnit.md) Constant for unit of consumption: mile-per-gallon-imperial |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [MILE_PER_HOUR](../android/icu/util/MeasureUnit.md) Constant for unit of speed: mile-per-hour |
+| static [MeasureUnit](MeasureUnit.md)! | [MILE_PER_GALLON](MeasureUnit.md) Constant for unit of consumption: mile-per-gallon |
+| static [MeasureUnit](MeasureUnit.md)! | [MILE_PER_GALLON_IMPERIAL](MeasureUnit.md) Constant for unit of consumption: mile-per-gallon-imperial |
+| static [MeasureUnit](MeasureUnit.md)! | [MILE_PER_HOUR](MeasureUnit.md) Constant for unit of speed: mile-per-hour |
 | --- | --- |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [MILE_SCANDINAVIAN](../android/icu/util/MeasureUnit.md) Constant for unit of length: mile-scandinavian |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [MILLIAMPERE](../android/icu/util/MeasureUnit.md) Constant for unit of electric: milliampere |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [MILLIBAR](../android/icu/util/MeasureUnit.md) Constant for unit of pressure: millibar |
+| static [MeasureUnit](MeasureUnit.md)! | [MILE_SCANDINAVIAN](MeasureUnit.md) Constant for unit of length: mile-scandinavian |
+| static [MeasureUnit](MeasureUnit.md)! | [MILLIAMPERE](MeasureUnit.md) Constant for unit of electric: milliampere |
+| static [MeasureUnit](MeasureUnit.md)! | [MILLIBAR](MeasureUnit.md) Constant for unit of pressure: millibar |
 | --- | --- |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [MILLIGRAM](../android/icu/util/MeasureUnit.md) Constant for unit of mass: milligram |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [MILLIGRAM_OFGLUCOSE_PER_DECILITER](../android/icu/util/MeasureUnit.md) Constant for unit of concentr: milligram-ofglucose-per-deciliter |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [MILLIGRAM_PER_DECILITER](../android/icu/util/MeasureUnit.md) Constant for unit of concentr: milligram-per-deciliter |
+| static [MeasureUnit](MeasureUnit.md)! | [MILLIGRAM](MeasureUnit.md) Constant for unit of mass: milligram |
+| static [MeasureUnit](MeasureUnit.md)! | [MILLIGRAM_OFGLUCOSE_PER_DECILITER](MeasureUnit.md) Constant for unit of concentr: milligram-ofglucose-per-deciliter |
+| static [MeasureUnit](MeasureUnit.md)! | [MILLIGRAM_PER_DECILITER](MeasureUnit.md) Constant for unit of concentr: milligram-per-deciliter |
 | --- | --- |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [MILLILITER](../android/icu/util/MeasureUnit.md) Constant for unit of volume: milliliter |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [MILLIMETER](../android/icu/util/MeasureUnit.md) Constant for unit of length: millimeter |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [MILLIMETER_OF_MERCURY](../android/icu/util/MeasureUnit.md) Constant for unit of pressure: millimeter-ofhg |
+| static [MeasureUnit](MeasureUnit.md)! | [MILLILITER](MeasureUnit.md) Constant for unit of volume: milliliter |
+| static [MeasureUnit](MeasureUnit.md)! | [MILLIMETER](MeasureUnit.md) Constant for unit of length: millimeter |
+| static [MeasureUnit](MeasureUnit.md)! | [MILLIMETER_OF_MERCURY](MeasureUnit.md) Constant for unit of pressure: millimeter-ofhg |
 | --- | --- |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [MILLIMOLE_PER_LITER](../android/icu/util/MeasureUnit.md) Constant for unit of concentr: millimole-per-liter |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [MILLISECOND](../android/icu/util/MeasureUnit.md) Constant for unit of duration: millisecond |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [MILLIWATT](../android/icu/util/MeasureUnit.md) Constant for unit of power: milliwatt |
+| static [MeasureUnit](MeasureUnit.md)! | [MILLIMOLE_PER_LITER](MeasureUnit.md) Constant for unit of concentr: millimole-per-liter |
+| static [MeasureUnit](MeasureUnit.md)! | [MILLISECOND](MeasureUnit.md) Constant for unit of duration: millisecond |
+| static [MeasureUnit](MeasureUnit.md)! | [MILLIWATT](MeasureUnit.md) Constant for unit of power: milliwatt |
 | --- | --- |
-| static [TimeUnit](../android/icu/util/TimeUnit.md)! | [MINUTE](../android/icu/util/MeasureUnit.md) Constant for unit of duration: minute |
-| static [TimeUnit](../android/icu/util/TimeUnit.md)! | [MONTH](../android/icu/util/MeasureUnit.md) Constant for unit of duration: month |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [NANOMETER](../android/icu/util/MeasureUnit.md) Constant for unit of length: nanometer |
+| static [TimeUnit](TimeUnit.md)! | [MINUTE](MeasureUnit.md) Constant for unit of duration: minute |
+| static [TimeUnit](TimeUnit.md)! | [MONTH](MeasureUnit.md) Constant for unit of duration: month |
+| static [MeasureUnit](MeasureUnit.md)! | [NANOMETER](MeasureUnit.md) Constant for unit of length: nanometer |
 | --- | --- |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [NANOSECOND](../android/icu/util/MeasureUnit.md) Constant for unit of duration: nanosecond |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [NAUTICAL_MILE](../android/icu/util/MeasureUnit.md) Constant for unit of length: nautical-mile |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [OHM](../android/icu/util/MeasureUnit.md) Constant for unit of electric: ohm |
+| static [MeasureUnit](MeasureUnit.md)! | [NANOSECOND](MeasureUnit.md) Constant for unit of duration: nanosecond |
+| static [MeasureUnit](MeasureUnit.md)! | [NAUTICAL_MILE](MeasureUnit.md) Constant for unit of length: nautical-mile |
+| static [MeasureUnit](MeasureUnit.md)! | [OHM](MeasureUnit.md) Constant for unit of electric: ohm |
 | --- | --- |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [OUNCE](../android/icu/util/MeasureUnit.md) Constant for unit of mass: ounce |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [OUNCE_TROY](../android/icu/util/MeasureUnit.md) Constant for unit of mass: ounce-troy |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [PARSEC](../android/icu/util/MeasureUnit.md) Constant for unit of length: parsec |
+| static [MeasureUnit](MeasureUnit.md)! | [OUNCE](MeasureUnit.md) Constant for unit of mass: ounce |
+| static [MeasureUnit](MeasureUnit.md)! | [OUNCE_TROY](MeasureUnit.md) Constant for unit of mass: ounce-troy |
+| static [MeasureUnit](MeasureUnit.md)! | [PARSEC](MeasureUnit.md) Constant for unit of length: parsec |
 | --- | --- |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [PART_PER_MILLION](../android/icu/util/MeasureUnit.md) Constant for unit of concentr: permillion |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [PERCENT](../android/icu/util/MeasureUnit.md) Constant for unit of concentr: percent |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [PERMILLE](../android/icu/util/MeasureUnit.md) Constant for unit of concentr: permille |
+| static [MeasureUnit](MeasureUnit.md)! | [PART_PER_MILLION](MeasureUnit.md) Constant for unit of concentr: permillion |
+| static [MeasureUnit](MeasureUnit.md)! | [PERCENT](MeasureUnit.md) Constant for unit of concentr: percent |
+| static [MeasureUnit](MeasureUnit.md)! | [PERMILLE](MeasureUnit.md) Constant for unit of concentr: permille |
 | --- | --- |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [PETABYTE](../android/icu/util/MeasureUnit.md) Constant for unit of digital: petabyte |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [PICOMETER](../android/icu/util/MeasureUnit.md) Constant for unit of length: picometer |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [PINT](../android/icu/util/MeasureUnit.md) Constant for unit of volume: pint |
+| static [MeasureUnit](MeasureUnit.md)! | [PETABYTE](MeasureUnit.md) Constant for unit of digital: petabyte |
+| static [MeasureUnit](MeasureUnit.md)! | [PICOMETER](MeasureUnit.md) Constant for unit of length: picometer |
+| static [MeasureUnit](MeasureUnit.md)! | [PINT](MeasureUnit.md) Constant for unit of volume: pint |
 | --- | --- |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [PINT_METRIC](../android/icu/util/MeasureUnit.md) Constant for unit of volume: pint-metric |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [PIXEL](../android/icu/util/MeasureUnit.md) Constant for unit of graphics: pixel |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [PIXEL_PER_CENTIMETER](../android/icu/util/MeasureUnit.md) Constant for unit of graphics: pixel-per-centimeter |
+| static [MeasureUnit](MeasureUnit.md)! | [PINT_METRIC](MeasureUnit.md) Constant for unit of volume: pint-metric |
+| static [MeasureUnit](MeasureUnit.md)! | [PIXEL](MeasureUnit.md) Constant for unit of graphics: pixel |
+| static [MeasureUnit](MeasureUnit.md)! | [PIXEL_PER_CENTIMETER](MeasureUnit.md) Constant for unit of graphics: pixel-per-centimeter |
 | --- | --- |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [PIXEL_PER_INCH](../android/icu/util/MeasureUnit.md) Constant for unit of graphics: pixel-per-inch |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [POINT](../android/icu/util/MeasureUnit.md) Constant for unit of length: point |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [POUND](../android/icu/util/MeasureUnit.md) Constant for unit of mass: pound |
+| static [MeasureUnit](MeasureUnit.md)! | [PIXEL_PER_INCH](MeasureUnit.md) Constant for unit of graphics: pixel-per-inch |
+| static [MeasureUnit](MeasureUnit.md)! | [POINT](MeasureUnit.md) Constant for unit of length: point |
+| static [MeasureUnit](MeasureUnit.md)! | [POUND](MeasureUnit.md) Constant for unit of mass: pound |
 | --- | --- |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [POUND_PER_SQUARE_INCH](../android/icu/util/MeasureUnit.md) Constant for unit of pressure: pound-force-per-square-inch |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [QUART](../android/icu/util/MeasureUnit.md) Constant for unit of volume: quart |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [QUARTER](../android/icu/util/MeasureUnit.md) Constant for unit of duration: quarter |
+| static [MeasureUnit](MeasureUnit.md)! | [POUND_PER_SQUARE_INCH](MeasureUnit.md) Constant for unit of pressure: pound-force-per-square-inch |
+| static [MeasureUnit](MeasureUnit.md)! | [QUART](MeasureUnit.md) Constant for unit of volume: quart |
+| static [MeasureUnit](MeasureUnit.md)! | [QUARTER](MeasureUnit.md) Constant for unit of duration: quarter |
 | --- | --- |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [RADIAN](../android/icu/util/MeasureUnit.md) Constant for unit of angle: radian |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [REVOLUTION_ANGLE](../android/icu/util/MeasureUnit.md) Constant for unit of angle: revolution |
-| static [TimeUnit](../android/icu/util/TimeUnit.md)! | [SECOND](../android/icu/util/MeasureUnit.md) Constant for unit of duration: second |
+| static [MeasureUnit](MeasureUnit.md)! | [RADIAN](MeasureUnit.md) Constant for unit of angle: radian |
+| static [MeasureUnit](MeasureUnit.md)! | [REVOLUTION_ANGLE](MeasureUnit.md) Constant for unit of angle: revolution |
+| static [TimeUnit](TimeUnit.md)! | [SECOND](MeasureUnit.md) Constant for unit of duration: second |
 | --- | --- |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [SQUARE_CENTIMETER](../android/icu/util/MeasureUnit.md) Constant for unit of area: square-centimeter |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [SQUARE_FOOT](../android/icu/util/MeasureUnit.md) Constant for unit of area: square-foot |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [SQUARE_INCH](../android/icu/util/MeasureUnit.md) Constant for unit of area: square-inch |
+| static [MeasureUnit](MeasureUnit.md)! | [SQUARE_CENTIMETER](MeasureUnit.md) Constant for unit of area: square-centimeter |
+| static [MeasureUnit](MeasureUnit.md)! | [SQUARE_FOOT](MeasureUnit.md) Constant for unit of area: square-foot |
+| static [MeasureUnit](MeasureUnit.md)! | [SQUARE_INCH](MeasureUnit.md) Constant for unit of area: square-inch |
 | --- | --- |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [SQUARE_KILOMETER](../android/icu/util/MeasureUnit.md) Constant for unit of area: square-kilometer |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [SQUARE_METER](../android/icu/util/MeasureUnit.md) Constant for unit of area: square-meter |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [SQUARE_MILE](../android/icu/util/MeasureUnit.md) Constant for unit of area: square-mile |
+| static [MeasureUnit](MeasureUnit.md)! | [SQUARE_KILOMETER](MeasureUnit.md) Constant for unit of area: square-kilometer |
+| static [MeasureUnit](MeasureUnit.md)! | [SQUARE_METER](MeasureUnit.md) Constant for unit of area: square-meter |
+| static [MeasureUnit](MeasureUnit.md)! | [SQUARE_MILE](MeasureUnit.md) Constant for unit of area: square-mile |
 | --- | --- |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [SQUARE_YARD](../android/icu/util/MeasureUnit.md) Constant for unit of area: square-yard |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [STONE](../android/icu/util/MeasureUnit.md) Constant for unit of mass: stone |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [TABLESPOON](../android/icu/util/MeasureUnit.md) Constant for unit of volume: tablespoon |
+| static [MeasureUnit](MeasureUnit.md)! | [SQUARE_YARD](MeasureUnit.md) Constant for unit of area: square-yard |
+| static [MeasureUnit](MeasureUnit.md)! | [STONE](MeasureUnit.md) Constant for unit of mass: stone |
+| static [MeasureUnit](MeasureUnit.md)! | [TABLESPOON](MeasureUnit.md) Constant for unit of volume: tablespoon |
 | --- | --- |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [TEASPOON](../android/icu/util/MeasureUnit.md) Constant for unit of volume: teaspoon |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [TERABIT](../android/icu/util/MeasureUnit.md) Constant for unit of digital: terabit |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [TERABYTE](../android/icu/util/MeasureUnit.md) Constant for unit of digital: terabyte |
+| static [MeasureUnit](MeasureUnit.md)! | [TEASPOON](MeasureUnit.md) Constant for unit of volume: teaspoon |
+| static [MeasureUnit](MeasureUnit.md)! | [TERABIT](MeasureUnit.md) Constant for unit of digital: terabit |
+| static [MeasureUnit](MeasureUnit.md)! | [TERABYTE](MeasureUnit.md) Constant for unit of digital: terabyte |
 | --- | --- |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [TON](../android/icu/util/MeasureUnit.md) Constant for unit of mass: ton |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [TONNE](../android/icu/util/MeasureUnit.md) Constant for unit of mass: tonne |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [VOLT](../android/icu/util/MeasureUnit.md) Constant for unit of electric: volt |
+| static [MeasureUnit](MeasureUnit.md)! | [TON](MeasureUnit.md) Constant for unit of mass: ton |
+| static [MeasureUnit](MeasureUnit.md)! | [TONNE](MeasureUnit.md) Constant for unit of mass: tonne |
+| static [MeasureUnit](MeasureUnit.md)! | [VOLT](MeasureUnit.md) Constant for unit of electric: volt |
 | --- | --- |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [WATT](../android/icu/util/MeasureUnit.md) Constant for unit of power: watt |
-| static [TimeUnit](../android/icu/util/TimeUnit.md)! | [WEEK](../android/icu/util/MeasureUnit.md) Constant for unit of duration: week |
-| static [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [YARD](../android/icu/util/MeasureUnit.md) Constant for unit of length: yard |
+| static [MeasureUnit](MeasureUnit.md)! | [WATT](MeasureUnit.md) Constant for unit of power: watt |
+| static [TimeUnit](TimeUnit.md)! | [WEEK](MeasureUnit.md) Constant for unit of duration: week |
+| static [MeasureUnit](MeasureUnit.md)! | [YARD](MeasureUnit.md) Constant for unit of length: yard |
 | --- | --- |
-| static [TimeUnit](../android/icu/util/TimeUnit.md)! | [YEAR](../android/icu/util/MeasureUnit.md) Constant for unit of duration: year |
+| static [TimeUnit](TimeUnit.md)! | [YEAR](MeasureUnit.md) Constant for unit of duration: year |
 
 ## Public methods
 
@@ -347,7 +347,7 @@ For the given type, return the available units.
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [MeasureUnit](../android/icu/util/MeasureUnit.md)!>! | the available units for type. Returned set is unmodifiable. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [MeasureUnit](MeasureUnit.md)!>! | the available units for type. Returned set is unmodifiable. |
 
 ### getAvailableTypes
 
@@ -455,13 +455,13 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun hashCode(): Int
 ```
 
-Returns a hash code value for the object. This method is supported for the benefit of hash tables such as those provided by [java.util.HashMap](../java/util/HashMap.md).
+Returns a hash code value for the object. This method is supported for the benefit of hash tables such as those provided by [java.util.HashMap](../java.util/HashMap.md).
 
 The general contract of`hashCode`is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the`hashCode`method must consistently return the same integer, provided no information used in`equals`comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the [equals](../java/lang/Object.md))method, then calling the`hashCode`method on each of the two objects must produce the same integer result.
-- It is*not* required that if two objects are unequal according to the [equals](../java/lang/Object.md))method, then calling the`hashCode`method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the [equals](../java.lang/Object.md))method, then calling the`hashCode`method on each of the two objects must produce the same integer result.
+- It is*not* required that if two objects are unequal according to the [equals](../java.lang/Object.md))method, then calling the`hashCode`method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------|
@@ -485,11 +485,11 @@ NOTE: Only works on SINGLE and COMPOUND units. If either unit (receivee and argu
 
 | Parameters ||
 |---------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| `other` | [MeasureUnit](../android/icu/util/MeasureUnit.md)!:The MeasureUnit to multiply with the target. |
+| `other` | [MeasureUnit](MeasureUnit.md)!:The MeasureUnit to multiply with the target. |
 
 | Return ||
 |----------------------------------------------------------------------------------------------|--------------------------------------------------------|
-| [MeasureUnit](../android/icu/util/MeasureUnit.md)! | The product of the target unit with the provided unit. |
+| [MeasureUnit](MeasureUnit.md)! | The product of the target unit with the provided unit. |
 
 | Exceptions ||
 |-------------------------------------------|-----------------------|
@@ -511,7 +511,7 @@ NOTE: Only works on SINGLE and COMPOUND units. If this is a MIXED unit, an error
 
 | Return ||
 |----------------------------------------------------------------------------------------------|------------------------------------|
-| [MeasureUnit](../android/icu/util/MeasureUnit.md)! | The reciprocal of the target unit. |
+| [MeasureUnit](MeasureUnit.md)! | The reciprocal of the target unit. |
 
 | Exceptions ||
 |-------------------------------------------|-----------------------|
@@ -533,7 +533,7 @@ If this is a SINGLE unit, a list of length 1 will be returned.
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [MeasureUnit](../android/icu/util/MeasureUnit.md)!>! | An unmodifiable list of single units |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [MeasureUnit](MeasureUnit.md)!>! | An unmodifiable list of single units |
 
 ### toString
 
@@ -567,7 +567,7 @@ NOTE: Only works on SINGLE units. If this is a COMPOUND or MIXED unit, an except
 
 | Return ||
 |----------------------------------------------------------------------------------------------|--------------------|
-| [MeasureUnit](../android/icu/util/MeasureUnit.md)! | A new SINGLE unit. |
+| [MeasureUnit](MeasureUnit.md)! | A new SINGLE unit. |
 
 | Exceptions ||
 |-------------------------------------------|-----------------------------------|
@@ -593,7 +593,7 @@ NOTE: Only works on SINGLE units. If this is a COMPOUND or MIXED unit, an error 
 
 | Return ||
 |----------------------------------------------------------------------------------------------|--------------------|
-| [MeasureUnit](../android/icu/util/MeasureUnit.md)! | A new SINGLE unit. |
+| [MeasureUnit](MeasureUnit.md)! | A new SINGLE unit. |
 
 | Exceptions ||
 |-------------------------------------------|-------------------------------------------|

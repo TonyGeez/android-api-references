@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # CharArrayBuffer
 
-Kotlin| [Java](../android/database/CharArrayBuffer.md) 
+Kotlin| [Java](CharArrayBuffer.md) 
 | --- | --- |
 
 ```
@@ -13,21 +13,21 @@ class CharArrayBuffer
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.database.CharArrayBuffer](../android/database/CharArrayBuffer.md) |
+| ↳ | [android.database.CharArrayBuffer](CharArrayBuffer.md) |
 
-This is used for [Cursor.copyStringToBuffer](../android/database/Cursor.md))
+This is used for [Cursor.copyStringToBuffer](Cursor.md))
 
 ## Summary
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [CharArrayBuffer](../android/database/CharArrayBuffer.md))`(`buf:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`)` <br /> |
-| [CharArrayBuffer](../android/database/CharArrayBuffer.md))`(`size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [CharArrayBuffer](CharArrayBuffer.md))`(`buf:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`)` <br /> |
+| [CharArrayBuffer](CharArrayBuffer.md))`(`size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||
 |------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)! | [data](../android/database/CharArrayBuffer.md) <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [sizeCopied](../android/database/CharArrayBuffer.md) <br /> |
+| [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)! | [data](CharArrayBuffer.md) <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [sizeCopied](CharArrayBuffer.md) <br /> |
 
 ## Public constructors
 

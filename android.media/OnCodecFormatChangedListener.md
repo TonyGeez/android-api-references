@@ -19,7 +19,7 @@ Interface definition for a listener for codec format changes.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onCodecFormatChanged](../android/media/AudioTrack.OnCodecFormatChangedListener.md))`(`audioTrack:` ` [AudioTrack](../android/media/AudioTrack.md)`, `info:` ` [AudioMetadataReadMap](../android/media/AudioMetadataReadMap.md)?`)` Called when the compressed codec format changes. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onCodecFormatChanged](../android/media/AudioTrack.OnCodecFormatChangedListener.md))`(`audioTrack:` ` [AudioTrack](AudioTrack.md)`, `info:` ` [AudioMetadataReadMap](AudioMetadataReadMap.md)?`)` Called when the compressed codec format changes. |
 
 ## Public methods
 
@@ -38,5 +38,5 @@ Called when the compressed codec format changes.
 
 | Parameters ||
 |--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `audioTrack` | [AudioTrack](../android/media/AudioTrack.md):is the`AudioTrack`instance associated with the codec. This value cannot be`null`. |
-| `info` | [AudioMetadataReadMap](../android/media/AudioMetadataReadMap.md)?:is a [AudioMetadataReadMap](../android/media/AudioMetadataReadMap.md) of values which contains decoded format changes reported by the codec. Not all hardware codecs indicate codec format changes. Acceptable keys are taken from`AudioMetadata.Format.KEY_*`range, with the associated value type. This value may be`null`. |
+| `audioTrack` | [AudioTrack](AudioTrack.md):is the`AudioTrack`instance associated with the codec. This value cannot be`null`. |
+| `info` | [AudioMetadataReadMap](AudioMetadataReadMap.md)?:is a [AudioMetadataReadMap](AudioMetadataReadMap.md) of values which contains decoded format changes reported by the codec. Not all hardware codecs indicate codec format changes. Acceptable keys are taken from`AudioMetadata.Format.KEY_*`range, with the associated value type. This value may be`null`. |

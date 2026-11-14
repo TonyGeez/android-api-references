@@ -10,10 +10,10 @@ open class EphemeralPublicKeyNotFoundException : IdentityCredentialException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
-| | | ↳ | [android.security.identity.IdentityCredentialException](../android/security/identity/IdentityCredentialException.md) ||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) |||
+| | | ↳ | [android.security.identity.IdentityCredentialException](IdentityCredentialException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.security.identity.EphemeralPublicKeyNotFoundException](../android/security/identity/EphemeralPublicKeyNotFoundException.md) |
+| | | | ↳ | [android.security.identity.EphemeralPublicKeyNotFoundException](EphemeralPublicKeyNotFoundException.md) |
 
 > [!CAUTION]
 > **This exception was deprecated in API level 37.2.**

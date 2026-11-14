@@ -2,7 +2,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # RotateAnimation
 
-Kotlin | [Java](../android/view/animation/RotateAnimation.md)
+Kotlin | [Java](RotateAnimation.md)
 | --- | --- |
 
 ```
@@ -11,8 +11,8 @@ open class RotateAnimation : Animation
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.view.animation.Animation](../android/view/animation/Animation.md) ||
-| | ↳ | [android.view.animation.RotateAnimation](../android/view/animation/RotateAnimation.md) |
+| ↳ | [android.view.animation.Animation](Animation.md) ||
+| | ↳ | [android.view.animation.RotateAnimation](RotateAnimation.md) |
 
 An animation that controls the rotation of an object. This rotation takes place in the X-Y plane. You can specify the point to use for the center of the rotation, where (0,0) is the top left point. If not specified, (0,0) is the default rotation point.
 
@@ -57,8 +57,8 @@ Constructor used when a RotateAnimation is loaded from a resource.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md)!: Application context to use |
-| `attrs` | [AttributeSet](../android/util/AttributeSet.md)!: Attribute set from which to read values |
+| `context` | [Context](../android.content/Context.md)!: Application context to use |
+| `attrs` | [AttributeSet](../android.util/AttributeSet.md)!: Attribute set from which to read values |
 
 ### RotateAnimation
 
@@ -171,4 +171,4 @@ Helper for getTransformation. Subclasses should implement this to apply their tr
 | Parameters ||
 |---|---|
 | `interpolatedTime` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): The value of the normalized time (0.0 to 1.0) after it has been run through the interpolation function. |
-| `t` | [Transformation](../android/view/animation/Transformation.md)!: The Transformation object to fill in with the current transforms. |
+| `t` | [Transformation](Transformation.md)!: The Transformation object to fill in with the current transforms. |

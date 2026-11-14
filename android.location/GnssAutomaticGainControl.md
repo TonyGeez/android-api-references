@@ -4,7 +4,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 
 # GnssAutomaticGainControl
 
-Kotlin| [Java](../android/location/GnssAutomaticGainControl.md) 
+Kotlin| [Java](GnssAutomaticGainControl.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class GnssAutomaticGainControl : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.location.GnssAutomaticGainControl](../android/location/GnssAutomaticGainControl.md) |
+| ↳ | [android.location.GnssAutomaticGainControl](GnssAutomaticGainControl.md) |
 
 A class that contains GNSS Automatic Gain Control (AGC) information.
 
@@ -25,28 +25,28 @@ Note: Different hardware designs (e.g. antenna, pre-amplification, or other RF H
 
 | Nested classes ||
 |---|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](../android/location/GnssAutomaticGainControl.Builder.md) Builder for [GnssAutomaticGainControl](../android/location/GnssAutomaticGainControl.md) |
+| | [Builder](../android/location/GnssAutomaticGainControl.Builder.md) Builder for [GnssAutomaticGainControl](GnssAutomaticGainControl.md) |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android.os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android.os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android.os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/location/GnssAutomaticGainControl.md))`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/location/GnssAutomaticGainControl.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getCarrierFrequencyHz](../android/location/GnssAutomaticGainControl.md))`()` Gets the carrier frequency of the tracked signal. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](GnssAutomaticGainControl.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](GnssAutomaticGainControl.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getCarrierFrequencyHz](GnssAutomaticGainControl.md))`()` Gets the carrier frequency of the tracked signal. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getConstellationType](../android/location/GnssAutomaticGainControl.md))`()` Gets the constellation type. |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getLevelDb](../android/location/GnssAutomaticGainControl.md))`()` Gets the Automatic Gain Control level in dB. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/location/GnssAutomaticGainControl.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getConstellationType](GnssAutomaticGainControl.md))`()` Gets the constellation type. |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getLevelDb](GnssAutomaticGainControl.md))`()` Gets the Automatic Gain Control level in dB. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](GnssAutomaticGainControl.md))`()` <br /> |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/location/GnssAutomaticGainControl.md))`()` Returns a string representation of the object. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/location/GnssAutomaticGainControl.md))`(`parcel:` ` [Parcel](../android/os/Parcel.md)`, `flag:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](GnssAutomaticGainControl.md))`()` Returns a string representation of the object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](GnssAutomaticGainControl.md))`(`parcel:` ` [Parcel](../android.os/Parcel.md)`, `flag:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [GnssAutomaticGainControl](../android/location/GnssAutomaticGainControl.md)!\> | [CREATOR](../android/location/GnssAutomaticGainControl.md) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [GnssAutomaticGainControl](GnssAutomaticGainControl.md)!\> | [CREATOR](GnssAutomaticGainControl.md) <br /> |
 
 ## Public methods
 
@@ -60,7 +60,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) |
 
 ### equals
 
@@ -104,11 +104,11 @@ fun getConstellationType(): Int
 
 Gets the constellation type.
 
-The return value is one of those constants with`CONSTELLATION_`prefix in [GnssStatus](../android/location/GnssStatus.md).
+The return value is one of those constants with`CONSTELLATION_`prefix in [GnssStatus](GnssStatus.md).
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.location.GnssStatus#CONSTELLATION_UNKNOWN](../android/location/GnssStatus.md), [android.location.GnssStatus#CONSTELLATION_GPS](../android/location/GnssStatus.md), [android.location.GnssStatus#CONSTELLATION_SBAS](../android/location/GnssStatus.md), [android.location.GnssStatus#CONSTELLATION_GLONASS](../android/location/GnssStatus.md), [android.location.GnssStatus#CONSTELLATION_QZSS](../android/location/GnssStatus.md), [android.location.GnssStatus#CONSTELLATION_BEIDOU](../android/location/GnssStatus.md), [android.location.GnssStatus#CONSTELLATION_GALILEO](../android/location/GnssStatus.md), or [android.location.GnssStatus#CONSTELLATION_IRNSS](../android/location/GnssStatus.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.location.GnssStatus#CONSTELLATION_UNKNOWN](GnssStatus.md), [android.location.GnssStatus#CONSTELLATION_GPS](GnssStatus.md), [android.location.GnssStatus#CONSTELLATION_SBAS](GnssStatus.md), [android.location.GnssStatus#CONSTELLATION_GLONASS](GnssStatus.md), [android.location.GnssStatus#CONSTELLATION_QZSS](GnssStatus.md), [android.location.GnssStatus#CONSTELLATION_BEIDOU](GnssStatus.md), [android.location.GnssStatus#CONSTELLATION_GALILEO](GnssStatus.md), or [android.location.GnssStatus#CONSTELLATION_IRNSS](GnssStatus.md) |
 
 ### getLevelDb
 
@@ -166,8 +166,8 @@ Flatten this object in to a Parcel.
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `dest` | The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
-| `parcel` | [Parcel](../android/os/Parcel.md):This value cannot be`null`. |
+| `flags` | Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `parcel` | [Parcel](../android.os/Parcel.md):This value cannot be`null`. |
 | --- | --- |
 
 ## Properties

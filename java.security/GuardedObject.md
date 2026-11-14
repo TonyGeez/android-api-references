@@ -10,7 +10,7 @@ open class GuardedObject : Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.GuardedObject](../java/security/GuardedObject.md) |
+| ↳ | [java.security.GuardedObject](GuardedObject.md) |
 
 A GuardedObject is an object that is used to protect access to another object.
 
@@ -20,11 +20,11 @@ A GuardedObject encapsulates a target object and a Guard object, such that acces
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [GuardedObject](../java/security/GuardedObject.md))`(`object:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `guard:` ` [Guard](../java/security/Guard.md)!`)` Constructs a GuardedObject using the specified object and guard. |
+| [GuardedObject](GuardedObject.md))`(`object:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `guard:` ` [Guard](Guard.md)!`)` Constructs a GuardedObject using the specified object and guard. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getObject](../java/security/GuardedObject.md))`()` Retrieves the guarded object, or throws an exception if access to the guarded object is denied by the guard. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getObject](GuardedObject.md))`()` Retrieves the guarded object, or throws an exception if access to the guarded object is denied by the guard. |
 
 ## Public constructors
 
@@ -43,7 +43,7 @@ Constructs a GuardedObject using the specified object and guard. If the Guard ob
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------------------------|
 | `object` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:the object to be guarded. |
-| `guard` | [Guard](../java/security/Guard.md)!:the Guard object that guards access to the object. |
+| `guard` | [Guard](Guard.md)!:the Guard object that guards access to the object. |
 
 ## Public methods
 

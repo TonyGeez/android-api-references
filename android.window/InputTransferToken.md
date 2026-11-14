@@ -8,7 +8,7 @@ class InputTransferToken : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.window.InputTransferToken](../android/window/InputTransferToken.md) |
+| ↳ | [android.window.InputTransferToken](InputTransferToken.md) |
 
 A token that can be used to request focus on or to transfer touch gesture to a `https://developer.android.com/reference/kotlin/android/view/SurfaceControlViewHost.html#` or `https://developer.android.com/reference/kotlin/android/view/SurfaceControl.html#` that has an input channel.
 
@@ -40,7 +40,7 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [InputTransferToken](../android/window/InputTransferToken.md)!\> | `https://developer.android.com/reference/kotlin/android/window/InputTransferToken#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [InputTransferToken](InputTransferToken.md)!\> | `https://developer.android.com/reference/kotlin/android/window/InputTransferToken#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public methods
 
@@ -121,7 +121,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

@@ -2,7 +2,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 
 # GatewayInfo
 
-Kotlin | [Java](../android/telecom/GatewayInfo.md)
+Kotlin | [Java](GatewayInfo.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ open class GatewayInfo : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.telecom.GatewayInfo](../android/telecom/GatewayInfo.md) |
+| ↳ | [android.telecom.GatewayInfo](GatewayInfo.md) |
 
 Encapsulated gateway address information for outgoing call. When calls are made, the system provides a facility to specify two addresses for the call: one to display as the address being dialed and a separate (gateway) address to actually dial. Telecom provides this information to `https://developer.android.com/reference/kotlin/android/telecom/ConnectionService`s when placing the call as an instance of `GatewayInfo`.
 
@@ -33,17 +33,17 @@ The data consists of an address to call, an address to display and the package n
 | Public methods ||
 |---|---|
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/GatewayInfo#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| open [Uri](../android/net/Uri.md)! | `https://developer.android.com/reference/kotlin/android/telecom/GatewayInfo#getGatewayAddress()()` Returns the gateway address to dial when placing the call. |
+| open [Uri](../android.net/Uri.md)! | `https://developer.android.com/reference/kotlin/android/telecom/GatewayInfo#getGatewayAddress()()` Returns the gateway address to dial when placing the call. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telecom/GatewayInfo#getGatewayProviderPackageName()()` Package name of the gateway provider service that provided the gateway information. |
 | --- | --- |
-| open [Uri](../android/net/Uri.md)! | `https://developer.android.com/reference/kotlin/android/telecom/GatewayInfo#getOriginalAddress()()` Returns the address that the user is trying to connect to via the gateway. |
+| open [Uri](../android.net/Uri.md)! | `https://developer.android.com/reference/kotlin/android/telecom/GatewayInfo#getOriginalAddress()()` Returns the address that the user is trying to connect to via the gateway. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/GatewayInfo#isEmpty()()` Indicates whether this `GatewayInfo` instance contains any data. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/GatewayInfo#writeToParcel(android.os.Parcel,%20kotlin.Int)(destination: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 | --- | --- |
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [GatewayInfo](../android/telecom/GatewayInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/telecom/GatewayInfo#CREATOR:android.os.Parcelable.Creator` The Parcelable interface. |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [GatewayInfo](GatewayInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/telecom/GatewayInfo#CREATOR:android.os.Parcelable.Creator` The Parcelable interface. |
 
 ## Public constructors
 

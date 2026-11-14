@@ -19,7 +19,7 @@ interface SettingsColumns
 
 | **This interface was deprecated in API level 5.**
 |
-| see [android.provider.ContactsContract](../android/provider/ContactsContract.md)
+| see [android.provider.ContactsContract](ContactsContract.md)
 
 Columns from the Settings table that other columns join into themselves.
 
@@ -43,7 +43,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val KEY: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)*
 
 The key of this setting.
 
@@ -59,7 +59,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val VALUE: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)*
 
 The value of this setting.
 
@@ -75,7 +75,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val _SYNC_ACCOUNT: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)*
 
 The _SYNC_ACCOUNT to which this setting corresponds. This may be null.
 
@@ -92,7 +92,7 @@ Deprecated in [API level 5](https://developer.android.com/guide/topics/manifest/
 static val _SYNC_ACCOUNT_TYPE: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)*
 
 The _SYNC_ACCOUNT_TYPE to which this setting corresponds. This may be null.
 

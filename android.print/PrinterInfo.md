@@ -4,7 +4,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 
 # PrinterInfo
 
-Kotlin| [Java](../android/print/PrinterInfo.md) 
+Kotlin| [Java](PrinterInfo.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class PrinterInfo : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.print.PrinterInfo](../android/print/PrinterInfo.md) |
+| ↳ | [android.print.PrinterInfo](PrinterInfo.md) |
 
 This class represents the description of a printer. Instances of this class are created by print services to report to the system the printers they manage. The information of this class has two major components, printer properties such as name, id, status, description and printer capabilities which describe the various print modes a printer supports such as media sizes, margins, etc.
 
@@ -23,38 +23,38 @@ Once [built](../android/print/PrinterInfo.Builder.md))the objects are immutable.
 
 | Nested classes ||
 |---|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](../android/print/PrinterInfo.Builder.md) Builder for creating of a [PrinterInfo](../android/print/PrinterInfo.md). |
+| | [Builder](../android/print/PrinterInfo.Builder.md) Builder for creating of a [PrinterInfo](PrinterInfo.md). |
 
 | Constants ||
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_BUSY](../android/print/PrinterInfo.md) Printer status: the printer is busy printing. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_IDLE](../android/print/PrinterInfo.md) Printer status: the printer is idle and ready to print. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_UNAVAILABLE](../android/print/PrinterInfo.md) Printer status: the printer is not available. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_BUSY](PrinterInfo.md) Printer status: the printer is busy printing. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_IDLE](PrinterInfo.md) Printer status: the printer is idle and ready to print. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATUS_UNAVAILABLE](PrinterInfo.md) Printer status: the printer is not available. |
 | --- | --- |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android.os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android.os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android.os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/print/PrinterInfo.md))`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/print/PrinterInfo.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [PrinterCapabilitiesInfo](../android/print/PrinterCapabilitiesInfo.md)? | [getCapabilities](../android/print/PrinterInfo.md))`()` Gets the printer capabilities. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](PrinterInfo.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](PrinterInfo.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [PrinterCapabilitiesInfo](PrinterCapabilitiesInfo.md)? | [getCapabilities](PrinterInfo.md))`()` Gets the printer capabilities. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getDescription](../android/print/PrinterInfo.md))`()` Gets the printer description. |
-| [PrinterId](../android/print/PrinterId.md) | [getId](../android/print/PrinterInfo.md))`()` Get the globally unique printer id. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getName](../android/print/PrinterInfo.md))`()` Get the printer name. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getDescription](PrinterInfo.md))`()` Gets the printer description. |
+| [PrinterId](PrinterId.md) | [getId](PrinterInfo.md))`()` Get the globally unique printer id. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getName](PrinterInfo.md))`()` Get the printer name. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStatus](../android/print/PrinterInfo.md))`()` Gets the printer status. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/print/PrinterInfo.md))`()` <br /> |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/print/PrinterInfo.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStatus](PrinterInfo.md))`()` Gets the printer status. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](PrinterInfo.md))`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](PrinterInfo.md))`()` <br /> |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/print/PrinterInfo.md))`(`parcel:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](PrinterInfo.md))`(`parcel:` ` [Parcel](../android.os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [PrinterInfo](../android/print/PrinterInfo.md)!\> | [CREATOR](../android/print/PrinterInfo.md) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [PrinterInfo](PrinterInfo.md)!\> | [CREATOR](PrinterInfo.md) <br /> |
 
 ## Constants
 
@@ -106,7 +106,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) |
 
 ### equals
 
@@ -148,7 +148,7 @@ Gets the printer capabilities.
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------|--------------------------------------------|
-| [PrinterCapabilitiesInfo](../android/print/PrinterCapabilitiesInfo.md)? | The capabilities. This value may be`null`. |
+| [PrinterCapabilitiesInfo](PrinterCapabilitiesInfo.md)? | The capabilities. This value may be`null`. |
 
 ### getDescription
 
@@ -176,7 +176,7 @@ Get the globally unique printer id.
 
 | Return ||
 |-------------------------------------------------------------------------------------|---------------------------------------------|
-| [PrinterId](../android/print/PrinterId.md) | The printer id. This value cannot be`null`. |
+| [PrinterId](PrinterId.md) | The printer id. This value cannot be`null`. |
 
 ### getName
 
@@ -204,13 +204,13 @@ Gets the printer status.
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The status. Value is [android.print.PrinterInfo#STATUS_IDLE](../android/print/PrinterInfo.md), [android.print.PrinterInfo#STATUS_BUSY](../android/print/PrinterInfo.md), or [android.print.PrinterInfo#STATUS_UNAVAILABLE](../android/print/PrinterInfo.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The status. Value is [android.print.PrinterInfo#STATUS_IDLE](PrinterInfo.md), [android.print.PrinterInfo#STATUS_BUSY](PrinterInfo.md), or [android.print.PrinterInfo#STATUS_UNAVAILABLE](PrinterInfo.md) |
 
 **See Also**
 
-- [#STATUS_BUSY](../android/print/PrinterInfo.md)
-- [#STATUS_IDLE](../android/print/PrinterInfo.md)
-- [#STATUS_UNAVAILABLE](../android/print/PrinterInfo.md) 
+- [#STATUS_BUSY](PrinterInfo.md)
+- [#STATUS_IDLE](PrinterInfo.md)
+- [#STATUS_UNAVAILABLE](PrinterInfo.md) 
 
 ### hashCode
 
@@ -250,7 +250,7 @@ fun writeToParcel(
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `dest` | The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

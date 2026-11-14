@@ -5,7 +5,7 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 
 # Int2
 
-Kotlin| [Java](../android/renderscript/Int2.md) 
+Kotlin| [Java](Int2.md) 
 | --- | --- |
 
 ```
@@ -14,7 +14,7 @@ open class Int2
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.renderscript.Int2](../android/renderscript/Int2.md) |
+| ↳ | [android.renderscript.Int2](Int2.md) |
 
 | **This class was deprecated in API level 31.**
 |
@@ -26,13 +26,13 @@ Vector version of the basic int type. Provides two int fields packed.
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Int2](../android/renderscript/Int2.md))`()` <br /> |
-| [Int2](../android/renderscript/Int2.md))`(`x:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `y:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [Int2](Int2.md))`()` <br /> |
+| [Int2](Int2.md))`(`x:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `y:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||
 |----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [x](../android/renderscript/Int2.md) <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [y](../android/renderscript/Int2.md) <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [x](Int2.md) <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [y](Int2.md) <br /> |
 
 ## Public constructors
 

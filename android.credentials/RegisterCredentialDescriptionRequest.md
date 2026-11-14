@@ -4,7 +4,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # RegisterCredentialDescriptionRequest
 
-Kotlin| [Java](../android/credentials/RegisterCredentialDescriptionRequest.md) 
+Kotlin| [Java](RegisterCredentialDescriptionRequest.md) 
 | --- | --- |
 
 ```
@@ -13,31 +13,31 @@ class RegisterCredentialDescriptionRequest : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.credentials.RegisterCredentialDescriptionRequest](../android/credentials/RegisterCredentialDescriptionRequest.md) |
+| ↳ | [android.credentials.RegisterCredentialDescriptionRequest](RegisterCredentialDescriptionRequest.md) |
 
-A request to register a [ComponentName](../android/content/ComponentName.md) that contains an actively provisioned [Credential](../android/credentials/Credential.md) represented by a [CredentialDescription](../android/credentials/CredentialDescription.md).
+A request to register a [ComponentName](../android.content/ComponentName.md) that contains an actively provisioned [Credential](Credential.md) represented by a [CredentialDescription](CredentialDescription.md).
 
 ## Summary
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android.os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android.os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android.os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [RegisterCredentialDescriptionRequest](../android/credentials/RegisterCredentialDescriptionRequest.md))`(`credentialDescription:` ` [CredentialDescription](../android/credentials/CredentialDescription.md)`)` <br /> |
-| [RegisterCredentialDescriptionRequest](../android/credentials/RegisterCredentialDescriptionRequest.md))`(`credentialDescriptions:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [CredentialDescription](../android/credentials/CredentialDescription.md)!>`)` <br /> |
+| [RegisterCredentialDescriptionRequest](RegisterCredentialDescriptionRequest.md))`(`credentialDescription:` ` [CredentialDescription](CredentialDescription.md)`)` <br /> |
+| [RegisterCredentialDescriptionRequest](RegisterCredentialDescriptionRequest.md))`(`credentialDescriptions:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [CredentialDescription](CredentialDescription.md)!>`)` <br /> |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/credentials/RegisterCredentialDescriptionRequest.md))`()` <br /> |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [CredentialDescription](../android/credentials/CredentialDescription.md)!\> | [getCredentialDescriptions](../android/credentials/RegisterCredentialDescriptionRequest.md))`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/credentials/RegisterCredentialDescriptionRequest.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](RegisterCredentialDescriptionRequest.md))`()` <br /> |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [CredentialDescription](CredentialDescription.md)!\> | [getCredentialDescriptions](RegisterCredentialDescriptionRequest.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](RegisterCredentialDescriptionRequest.md))`(`dest:` ` [Parcel](../android.os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 | --- | --- |
 
 | Properties ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [RegisterCredentialDescriptionRequest](../android/credentials/RegisterCredentialDescriptionRequest.md)!\> | [CREATOR](../android/credentials/RegisterCredentialDescriptionRequest.md) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [RegisterCredentialDescriptionRequest](RegisterCredentialDescriptionRequest.md)!\> | [CREATOR](RegisterCredentialDescriptionRequest.md) <br /> |
 
 ## Public constructors
 
@@ -51,7 +51,7 @@ RegisterCredentialDescriptionRequest(credentialDescription: CredentialDescripti
 
 | Parameters ||
 |-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| `credentialDescription` | [CredentialDescription](../android/credentials/CredentialDescription.md):This value cannot be`null`. |
+| `credentialDescription` | [CredentialDescription](CredentialDescription.md):This value cannot be`null`. |
 
 ### RegisterCredentialDescriptionRequest
 
@@ -63,7 +63,7 @@ RegisterCredentialDescriptionRequest(credentialDescriptions: MutableSet<Credent
 
 | Parameters ||
 |--------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `credentialDescriptions` | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [CredentialDescription](../android/credentials/CredentialDescription.md)!\>:This value cannot be`null`. |
+| `credentialDescriptions` | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [CredentialDescription](CredentialDescription.md)!\>:This value cannot be`null`. |
 
 ## Public methods
 
@@ -77,7 +77,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) |
 
 ### getCredentialDescriptions
 
@@ -89,7 +89,7 @@ fun getCredentialDescriptions(): MutableSet<CredentialDescription!>
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [CredentialDescription](../android/credentials/CredentialDescription.md)!> | This value cannot be`null`. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [CredentialDescription](CredentialDescription.md)!> | This value cannot be`null`. |
 
 ### writeToParcel
 
@@ -106,8 +106,8 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](../android/os/Parcel.md):This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android.os/Parcel.md):This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

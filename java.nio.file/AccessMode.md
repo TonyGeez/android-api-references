@@ -10,10 +10,10 @@ class AccessMode
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.nio.file.AccessMode](../java/nio/file/AccessMode.md)\> ||
-| | ↳ | [java.nio.file.AccessMode](../java/nio/file/AccessMode.md) |
+| ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.nio.file.AccessMode](AccessMode.md)\> ||
+| | ↳ | [java.nio.file.AccessMode](AccessMode.md) |
 
-| Known Direct Subclasses [AccessMode.EXECUTE](../java/nio/file/AccessMode.md), [AccessMode.READ](../java/nio/file/AccessMode.md), [AccessMode.WRITE](../java/nio/file/AccessMode.md) |------------------------------------------------------------------------------------------------------------------|----------------------| | [AccessMode.EXECUTE](../java/nio/file/AccessMode.md) | Test execute access. | | [AccessMode.READ](../java/nio/file/AccessMode.md) | Test read access. | | [AccessMode.WRITE](../java/nio/file/AccessMode.md) | Test write access. | |
+| Known Direct Subclasses [AccessMode.EXECUTE](AccessMode.md), [AccessMode.READ](AccessMode.md), [AccessMode.WRITE](AccessMode.md) |------------------------------------------------------------------------------------------------------------------|----------------------| | [AccessMode.EXECUTE](AccessMode.md) | Test execute access. | | [AccessMode.READ](AccessMode.md) | Test read access. | | [AccessMode.WRITE](AccessMode.md) | Test write access. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Defines access modes used to test the accessibility of a file.
@@ -22,9 +22,9 @@ Defines access modes used to test the accessibility of a file.
 
 | Enum values ||
 |----------------------------------------------------------------------------------------------------------------------------|---|
-| [EXECUTE](../java/nio/file/AccessMode.md) Test execute access. |
-| [READ](../java/nio/file/AccessMode.md) Test read access. |
-| [WRITE](../java/nio/file/AccessMode.md) Test write access. |
+| [EXECUTE](AccessMode.md) Test execute access. |
+| [READ](AccessMode.md) Test read access. |
+| [WRITE](AccessMode.md) Test write access. |
 
 ## Enum values
 

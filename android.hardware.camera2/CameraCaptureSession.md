@@ -8,9 +8,9 @@ abstract class CameraCaptureSession : AutoCloseable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.hardware.camera2.CameraCaptureSession](../android/hardware/camera2/CameraCaptureSession.md) |
+| ↳ | [android.hardware.camera2.CameraCaptureSession](CameraCaptureSession.md) |
 
-| Known Direct Subclasses [CameraConstrainedHighSpeedCaptureSession](../android/hardware/camera2/CameraConstrainedHighSpeedCaptureSession.md), [CameraOfflineSession](../android/hardware/camera2/CameraOfflineSession.md) |---|---| | [CameraConstrainedHighSpeedCaptureSession](../android/hardware/camera2/CameraConstrainedHighSpeedCaptureSession.md) | A constrained high speed capture session for a `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice`, used for capturing high speed images from the `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice` for high speed video recording use case. | | [CameraOfflineSession](../android/hardware/camera2/CameraOfflineSession.md) | A camera capture session that was switched to offline mode via successful call to `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession#switchToOffline(kotlin.collections.MutableCollection,%20java.util.concurrent.Executor,%20android.hardware.camera2.CameraOfflineSession.CameraOfflineSessionCallback)`. | |
+| Known Direct Subclasses [CameraConstrainedHighSpeedCaptureSession](CameraConstrainedHighSpeedCaptureSession.md), [CameraOfflineSession](CameraOfflineSession.md) |---|---| | [CameraConstrainedHighSpeedCaptureSession](CameraConstrainedHighSpeedCaptureSession.md) | A constrained high speed capture session for a `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice`, used for capturing high speed images from the `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice` for high speed video recording use case. | | [CameraOfflineSession](CameraOfflineSession.md) | A camera capture session that was switched to offline mode via successful call to `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession#switchToOffline(kotlin.collections.MutableCollection,%20java.util.concurrent.Executor,%20android.hardware.camera2.CameraOfflineSession.CameraOfflineSessionCallback)`. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 A configured capture session for a `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice`, used for capturing images from the camera or reprocessing images captured from the camera in the same session previously.
@@ -47,8 +47,8 @@ A closed session clears any repeating requests (as if `https://developer.android
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession#close()()` Close this capture session asynchronously. |
 | --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession#finalizeOutputConfigurations(kotlin.collections.MutableList)(outputConfigs: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration!>!)` Finalize the output configurations that now have their deferred and/or extra Surfaces included. |
-| abstract [CameraDevice](../android/hardware/camera2/CameraDevice.md) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession#getDevice()()` Get the camera device that this session is created for. |
-| abstract [Surface](../android/view/Surface.md)? | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession#getInputSurface()()` Get the input Surface associated with a reprocessable capture session. |
+| abstract [CameraDevice](CameraDevice.md) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession#getDevice()()` Get the camera device that this session is created for. |
+| abstract [Surface](../android.view/Surface.md)? | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession#getInputSurface()()` Get the input Surface associated with a reprocessable capture session. |
 | --- | --- |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession#isReprocessable()()` Return if the application can submit reprocess capture requests with this camera capture session. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession#prepare(android.view.Surface)(surface: https://developer.android.com/reference/kotlin/android/view/Surface.html#)` Pre-allocate all buffers for an output Surface. |
@@ -60,7 +60,7 @@ A closed session clears any repeating requests (as if `https://developer.android
 | --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession#stopRepeating()()` Cancel any ongoing repeating capture set by either `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession#setRepeatingRequest(android.hardware.camera2.CaptureRequest,%20android.hardware.camera2.CameraCaptureSession.CaptureCallback,%20android.os.Handler)` or `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession#setRepeatingBurst(kotlin.collections.MutableList,%20android.hardware.camera2.CameraCaptureSession.CaptureCallback,%20android.os.Handler)`. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession#supportsOfflineProcessing(android.view.Surface)(surface: https://developer.android.com/reference/kotlin/android/view/Surface.html#)` Query whether a given Surface is able to support offline mode. |
-| open [CameraOfflineSession](../android/hardware/camera2/CameraOfflineSession.md)? | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession#switchToOffline(kotlin.collections.MutableCollection,%20java.util.concurrent.Executor,%20android.hardware.camera2.CameraOfflineSession.CameraOfflineSessionCallback)(offlineSurfaces: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html<https://developer.android.com/reference/kotlin/android/view/Surface.html#!>, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, listener: https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraOfflineSession.CameraOfflineSessionCallback)` Switch the current capture session and a given set of registered camera surfaces to offline processing mode. |
+| open [CameraOfflineSession](CameraOfflineSession.md)? | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession#switchToOffline(kotlin.collections.MutableCollection,%20java.util.concurrent.Executor,%20android.hardware.camera2.CameraOfflineSession.CameraOfflineSessionCallback)(offlineSurfaces: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html<https://developer.android.com/reference/kotlin/android/view/Surface.html#!>, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, listener: https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraOfflineSession.CameraOfflineSessionCallback)` Switch the current capture session and a given set of registered camera surfaces to offline processing mode. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession#updateOutputConfiguration(android.hardware.camera2.params.OutputConfiguration)(config: https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration!)` Update `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration` after configuration finalization see `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession#finalizeOutputConfigurations(kotlin.collections.MutableList)`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession#updateOutputConfigurations(kotlin.collections.MutableList)(configurations: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration!>)` Update the output configurations for this camera session. |
@@ -132,9 +132,9 @@ Submitting a request that targets Surfaces with an unsupported dynamic range com
 
 | Parameters ||
 |---|---|
-| `request` | [CaptureRequest](../android/hardware/camera2/CaptureRequest.md): the settings for this capture. This value cannot be `null`. |
+| `request` | [CaptureRequest](CaptureRequest.md): the settings for this capture. This value cannot be `null`. |
 | `listener` | [CameraCaptureSession.CaptureCallback](../android/hardware/camera2/CameraCaptureSession.CaptureCallback.md)?: The callback object to notify once this request has been processed. If null, no metadata will be produced for this capture, although image data will still be produced. |
-| `handler` | [Handler](../android/os/Handler.md)?: the handler on which the listener should be invoked, or `null` to use the current thread's `https://developer.android.com/reference/kotlin/android/os/Looper.html#`. |
+| `handler` | [Handler](../android.os/Handler.md)?: the handler on which the listener should be invoked, or `null` to use the current thread's `https://developer.android.com/reference/kotlin/android/os/Looper.html#`. |
 | --- | --- |
 
 | Return ||
@@ -181,9 +181,9 @@ Submitting a request that targets Surfaces with an unsupported dynamic range com
 
 | Parameters ||
 |---|---|
-| `requests` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [CaptureRequest](../android/hardware/camera2/CaptureRequest.md)!\>: the list of settings for this burst capture. This value cannot be `null`. |
+| `requests` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [CaptureRequest](CaptureRequest.md)!\>: the list of settings for this burst capture. This value cannot be `null`. |
 | `listener` | [CameraCaptureSession.CaptureCallback](../android/hardware/camera2/CameraCaptureSession.CaptureCallback.md)?: The callback object to notify each time one of the requests in the burst has been processed. If null, no metadata will be produced for any requests in this burst, although image data will still be produced. |
-| `handler` | [Handler](../android/os/Handler.md)?: the handler on which the listener should be invoked, or `null` to use the current thread's `https://developer.android.com/reference/kotlin/android/os/Looper.html#`. |
+| `handler` | [Handler](../android.os/Handler.md)?: the handler on which the listener should be invoked, or `null` to use the current thread's `https://developer.android.com/reference/kotlin/android/os/Looper.html#`. |
 | --- | --- |
 
 | Return ||
@@ -223,8 +223,8 @@ The behavior of this method matches that of `https://developer.android.com/refer
 
 | Parameters ||
 |---|---|
-| `requests` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [CaptureRequest](../android/hardware/camera2/CaptureRequest.md)!\>: the list of settings for this burst capture. This value cannot be `null`. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): the executor which will be used for invoking the listener. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `requests` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [CaptureRequest](CaptureRequest.md)!\>: the list of settings for this burst capture. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): the executor which will be used for invoking the listener. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `listener` | [CameraCaptureSession.CaptureCallback](../android/hardware/camera2/CameraCaptureSession.CaptureCallback.md): The callback object to notify each time one of the requests in the burst has been processed. This value cannot be `null`. |
 | --- | --- |
 
@@ -265,8 +265,8 @@ The behavior of this method matches that of `https://developer.android.com/refer
 
 | Parameters ||
 |---|---|
-| `request` | [CaptureRequest](../android/hardware/camera2/CaptureRequest.md): the settings for this capture. This value cannot be `null`. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): the executor which will be used for invoking the listener. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `request` | [CaptureRequest](CaptureRequest.md): the settings for this capture. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): the executor which will be used for invoking the listener. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `listener` | [CameraCaptureSession.CaptureCallback](../android/hardware/camera2/CameraCaptureSession.CaptureCallback.md): The callback object to notify once this request has been processed. This value cannot be `null`. |
 | --- | --- |
 
@@ -342,7 +342,7 @@ This method is not supported by `https://developer.android.com/reference/kotlin/
 
 | Parameters ||
 |---|---|
-| `outputConfigs` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [OutputConfiguration](../android/hardware/camera2/params/OutputConfiguration.md)!\>!: a list of `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration` that have had `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#addSurface(android.view.Surface)` invoked with a valid output Surface after `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#createCaptureSessionByOutputConfigurations(kotlin.collections.MutableList,%20android.hardware.camera2.CameraCaptureSession.StateCallback,%20android.os.Handler)`. |
+| `outputConfigs` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [OutputConfiguration](../android.hardware.camera2.params/OutputConfiguration.md)!\>!: a list of `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration` that have had `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#addSurface(android.view.Surface)` invoked with a valid output Surface after `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice#createCaptureSessionByOutputConfigurations(kotlin.collections.MutableList,%20android.hardware.camera2.CameraCaptureSession.StateCallback,%20android.os.Handler)`. |
 
 | Exceptions ||
 |---|---|
@@ -433,7 +433,7 @@ Note that if 2 surfaces share the same stream via `https://developer.android.com
 
 | Parameters ||
 |---|---|
-| `surface` | [Surface](../android/view/Surface.md): the output Surface for which buffers should be pre-allocated. Must be one of the output Surfaces used to create this session. This value cannot be `null`. |
+| `surface` | [Surface](../android.view/Surface.md): the output Surface for which buffers should be pre-allocated. Must be one of the output Surfaces used to create this session. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -476,9 +476,9 @@ Submitting a request that targets Surfaces with an unsupported dynamic range com
 
 | Parameters ||
 |---|---|
-| `requests` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [CaptureRequest](../android/hardware/camera2/CaptureRequest.md)!\>: the list of requests to cycle through indefinitely. This value cannot be `null`. |
+| `requests` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [CaptureRequest](CaptureRequest.md)!\>: the list of requests to cycle through indefinitely. This value cannot be `null`. |
 | `listener` | [CameraCaptureSession.CaptureCallback](../android/hardware/camera2/CameraCaptureSession.CaptureCallback.md)?: The callback object to notify each time one of the requests in the repeating bursts has finished processing. If null, no metadata will be produced for this stream of requests, although image data will still be produced. |
-| `handler` | [Handler](../android/os/Handler.md)?: the handler on which the listener should be invoked, or `null` to use the current thread's `https://developer.android.com/reference/kotlin/android/os/Looper.html#`. |
+| `handler` | [Handler](../android.os/Handler.md)?: the handler on which the listener should be invoked, or `null` to use the current thread's `https://developer.android.com/reference/kotlin/android/os/Looper.html#`. |
 | --- | --- |
 
 | Return ||
@@ -519,8 +519,8 @@ The behavior of this method matches that of `https://developer.android.com/refer
 
 | Parameters ||
 |---|---|
-| `requests` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [CaptureRequest](../android/hardware/camera2/CaptureRequest.md)!\>: the list of requests to cycle through indefinitely. This value cannot be `null`. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): the executor which will be used for invoking the listener. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `requests` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [CaptureRequest](CaptureRequest.md)!\>: the list of requests to cycle through indefinitely. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): the executor which will be used for invoking the listener. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `listener` | [CameraCaptureSession.CaptureCallback](../android/hardware/camera2/CameraCaptureSession.CaptureCallback.md): The callback object to notify each time one of the requests in the repeating bursts has finished processing. This value cannot be `null`. |
 | --- | --- |
 
@@ -574,9 +574,9 @@ Submitting a request that targets Surfaces with an unsupported dynamic range com
 
 | Parameters ||
 |---|---|
-| `request` | [CaptureRequest](../android/hardware/camera2/CaptureRequest.md): the request to repeat indefinitely. This value cannot be `null`. |
+| `request` | [CaptureRequest](CaptureRequest.md): the request to repeat indefinitely. This value cannot be `null`. |
 | `listener` | [CameraCaptureSession.CaptureCallback](../android/hardware/camera2/CameraCaptureSession.CaptureCallback.md)?: The callback object to notify every time the request finishes processing. If null, no metadata will be produced for this stream of requests, although image data will still be produced. |
-| `handler` | [Handler](../android/os/Handler.md)?: the handler on which the listener should be invoked, or `null` to use the current thread's `https://developer.android.com/reference/kotlin/android/os/Looper.html#`. |
+| `handler` | [Handler](../android.os/Handler.md)?: the handler on which the listener should be invoked, or `null` to use the current thread's `https://developer.android.com/reference/kotlin/android/os/Looper.html#`. |
 | --- | --- |
 
 | Return ||
@@ -617,8 +617,8 @@ The behavior of this method matches that of `https://developer.android.com/refer
 
 | Parameters ||
 |---|---|
-| `request` | [CaptureRequest](../android/hardware/camera2/CaptureRequest.md): the request to repeat indefinitely. This value cannot be `null`. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): the executor which will be used for invoking the listener. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `request` | [CaptureRequest](CaptureRequest.md): the request to repeat indefinitely. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): the executor which will be used for invoking the listener. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `listener` | [CameraCaptureSession.CaptureCallback](../android/hardware/camera2/CameraCaptureSession.CaptureCallback.md): The callback object to notify every time the request finishes processing. This value cannot be `null`. |
 | --- | --- |
 
@@ -679,7 +679,7 @@ Surfaces that support offline mode can be passed as arguments to `https://develo
 
 | Parameters ||
 |---|---|
-| `surface` | [Surface](../android/view/Surface.md): An input/output surface that was used to create this session or the result of `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession#getInputSurface()`. This value cannot be `null`. |
+| `surface` | [Surface](../android.view/Surface.md): An input/output surface that was used to create this session or the result of `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession#getInputSurface()`. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -718,8 +718,8 @@ Please note that after a successful call to this method the currently active cap
 
 | Parameters ||
 |---|---|
-| `offlineSurfaces` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Surface](../android/view/Surface.md)!\>: Client-specified collection of input/output camera registered surfaces that need to be switched to offline mode along with their pending capture requests. Do note that not all camera registered surfaces can be switched to offline mode. Offline processing support for individual surfaces can be queried using `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession#supportsOfflineProcessing(android.view.Surface)`. Additionally offline mode switches are not available for shared surfaces `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#enableSurfaceSharing()` and surfaces as part of a surface group. This value cannot be `null`. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): The executor which will be used for invoking the offline callback listener. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `offlineSurfaces` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Surface](../android.view/Surface.md)!\>: Client-specified collection of input/output camera registered surfaces that need to be switched to offline mode along with their pending capture requests. Do note that not all camera registered surfaces can be switched to offline mode. Offline processing support for individual surfaces can be queried using `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCaptureSession#supportsOfflineProcessing(android.view.Surface)`. Additionally offline mode switches are not available for shared surfaces `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#enableSurfaceSharing()` and surfaces as part of a surface group. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor which will be used for invoking the offline callback listener. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `listener` | [CameraOfflineSession.CameraOfflineSessionCallback](../android/hardware/camera2/CameraOfflineSession.CameraOfflineSessionCallback.md): The callback object to notify for offline session events. This value cannot be `null`. |
 | --- | --- |
 
@@ -757,7 +757,7 @@ Surfaces that get added must not be part of any other registered `https://develo
 
 | Parameters ||
 |---|---|
-| `config` | [OutputConfiguration](../android/hardware/camera2/params/OutputConfiguration.md)!: Modified output configuration. |
+| `config` | [OutputConfiguration](../android.hardware.camera2.params/OutputConfiguration.md)!: Modified output configuration. |
 
 | Exceptions ||
 |---|---|
@@ -786,7 +786,7 @@ Any active requests that target replaced surfaces will be stopped by this call. 
 
 | Parameters ||
 |---|---|
-| `configurations` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [OutputConfiguration](../android/hardware/camera2/params/OutputConfiguration.md)!\>: A list of `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration` objects with the updated surface information. The size of this list must be equal to the number of currently configured outputs. This value cannot be `null`. |
+| `configurations` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [OutputConfiguration](../android.hardware.camera2.params/OutputConfiguration.md)!\>: A list of `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration` objects with the updated surface information. The size of this list must be equal to the number of currently configured outputs. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|

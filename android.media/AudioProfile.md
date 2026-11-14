@@ -8,7 +8,7 @@ open class AudioProfile : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.AudioProfile](../android/media/AudioProfile.md) |
+| ↳ | [android.media.AudioProfile](AudioProfile.md) |
 
 An AudioProfile is specific to an audio format and lists supported sampling rates and channel masks for that format. An `https://developer.android.com/reference/kotlin/android/media/AudioDeviceInfo` has a list of supported AudioProfiles. There can be multiple profiles whose encoding format is the same. This usually happens when an encoding format is only supported when it is encapsulated by some particular encapsulation types. If there are multiple encapsulation types that can carry this encoding format, they will be reported in different audio profiles. The application can choose any of the encapsulation types.
 
@@ -43,7 +43,7 @@ An AudioProfile is specific to an audio format and lists supported sampling rate
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [AudioProfile](../android/media/AudioProfile.md)!\> | `https://developer.android.com/reference/kotlin/android/media/AudioProfile#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [AudioProfile](AudioProfile.md)!\> | `https://developer.android.com/reference/kotlin/android/media/AudioProfile#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -244,7 +244,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

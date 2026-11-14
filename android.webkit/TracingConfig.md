@@ -4,7 +4,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 
 # TracingConfig
 
-Kotlin| [Java](../android/webkit/TracingConfig.md) 
+Kotlin| [Java](TracingConfig.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class TracingConfig
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.webkit.TracingConfig](../android/webkit/TracingConfig.md) |
+| ↳ | [android.webkit.TracingConfig](TracingConfig.md) |
 
 Holds tracing configuration information and predefined settings.
 
@@ -21,29 +21,29 @@ Holds tracing configuration information and predefined settings.
 
 | Nested classes ||
 |------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open | [Builder](../android/webkit/TracingConfig.Builder.md) Builder used to create [TracingConfig](../android/webkit/TracingConfig.md) objects. |
+| open | [Builder](../android/webkit/TracingConfig.Builder.md) Builder used to create [TracingConfig](TracingConfig.md) objects. |
 
 | Constants ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CATEGORIES_ALL](../android/webkit/TracingConfig.md) Predefined set of categories, includes all categories enabled by default in chromium. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CATEGORIES_ANDROID_WEBVIEW](../android/webkit/TracingConfig.md) Predefined set of categories typically useful for analyzing WebViews. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CATEGORIES_FRAME_VIEWER](../android/webkit/TracingConfig.md) Predefined set of categories for studying difficult rendering performance problems. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CATEGORIES_ALL](TracingConfig.md) Predefined set of categories, includes all categories enabled by default in chromium. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CATEGORIES_ANDROID_WEBVIEW](TracingConfig.md) Predefined set of categories typically useful for analyzing WebViews. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CATEGORIES_FRAME_VIEWER](TracingConfig.md) Predefined set of categories for studying difficult rendering performance problems. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CATEGORIES_INPUT_LATENCY](../android/webkit/TracingConfig.md) Predefined set of categories for analyzing input latency issues. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CATEGORIES_JAVASCRIPT_AND_RENDERING](../android/webkit/TracingConfig.md) Predefined set of categories for analyzing javascript and rendering issues. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CATEGORIES_NONE](../android/webkit/TracingConfig.md) Indicates that there are no predefined categories. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CATEGORIES_INPUT_LATENCY](TracingConfig.md) Predefined set of categories for analyzing input latency issues. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CATEGORIES_JAVASCRIPT_AND_RENDERING](TracingConfig.md) Predefined set of categories for analyzing javascript and rendering issues. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CATEGORIES_NONE](TracingConfig.md) Indicates that there are no predefined categories. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CATEGORIES_RENDERING](../android/webkit/TracingConfig.md) Predefined set of categories for analyzing rendering issues. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CATEGORIES_WEB_DEVELOPER](../android/webkit/TracingConfig.md) Predefined set of categories typically useful for web developers. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RECORD_CONTINUOUSLY](../android/webkit/TracingConfig.md) Record trace events continuously using an internal ring buffer. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CATEGORIES_RENDERING](TracingConfig.md) Predefined set of categories for analyzing rendering issues. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CATEGORIES_WEB_DEVELOPER](TracingConfig.md) Predefined set of categories typically useful for web developers. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RECORD_CONTINUOUSLY](TracingConfig.md) Record trace events continuously using an internal ring buffer. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RECORD_UNTIL_FULL](../android/webkit/TracingConfig.md) Record trace events until the internal tracing buffer is full. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RECORD_UNTIL_FULL](TracingConfig.md) Record trace events until the internal tracing buffer is full. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getCustomIncludedCategories](../android/webkit/TracingConfig.md))`()` Returns the list of included custom category patterns for this configuration. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPredefinedCategories](../android/webkit/TracingConfig.md))`()` Returns a bitmask of the predefined category sets of this configuration. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTracingMode](../android/webkit/TracingConfig.md))`()` Returns the tracing mode of this configuration. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getCustomIncludedCategories](TracingConfig.md))`()` Returns the list of included custom category patterns for this configuration. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPredefinedCategories](TracingConfig.md))`()` Returns a bitmask of the predefined category sets of this configuration. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTracingMode](TracingConfig.md))`()` Returns the tracing mode of this configuration. |
 | --- | --- |
 
 ## Constants
@@ -152,7 +152,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 static val RECORD_CONTINUOUSLY: Int
 ```
 
-Record trace events continuously using an internal ring buffer. Default tracing mode. Overwrites old events if they exceed buffer capacity. Uses less memory than the [RECORD_UNTIL_FULL](../android/webkit/TracingConfig.md) mode. Depending on the implementation typically allows up to 64k events to be stored. 
+Record trace events continuously using an internal ring buffer. Default tracing mode. Overwrites old events if they exceed buffer capacity. Uses less memory than the [RECORD_UNTIL_FULL](TracingConfig.md) mode. Depending on the implementation typically allows up to 64k events to be stored. 
 
  Value: 1
 
@@ -164,7 +164,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 static val RECORD_UNTIL_FULL: Int
 ```
 
-Record trace events until the internal tracing buffer is full. Typically the buffer memory usage is larger than [RECORD_CONTINUOUSLY](../android/webkit/TracingConfig.md). Depending on the implementation typically allows up to 256k events to be stored. 
+Record trace events until the internal tracing buffer is full. Typically the buffer memory usage is larger than [RECORD_CONTINUOUSLY](TracingConfig.md). Depending on the implementation typically allows up to 256k events to be stored. 
 
  Value: 0
 
@@ -196,7 +196,7 @@ Returns a bitmask of the predefined category sets of this configuration.
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Bitmask of predefined category sets. Value is either`0`or a combination of [android.webkit.TracingConfig#CATEGORIES_NONE](../android/webkit/TracingConfig.md), [android.webkit.TracingConfig#CATEGORIES_ALL](../android/webkit/TracingConfig.md), [android.webkit.TracingConfig#CATEGORIES_ANDROID_WEBVIEW](../android/webkit/TracingConfig.md), [android.webkit.TracingConfig#CATEGORIES_WEB_DEVELOPER](../android/webkit/TracingConfig.md), [android.webkit.TracingConfig#CATEGORIES_INPUT_LATENCY](../android/webkit/TracingConfig.md), [android.webkit.TracingConfig#CATEGORIES_RENDERING](../android/webkit/TracingConfig.md), [android.webkit.TracingConfig#CATEGORIES_JAVASCRIPT_AND_RENDERING](../android/webkit/TracingConfig.md), and [android.webkit.TracingConfig#CATEGORIES_FRAME_VIEWER](../android/webkit/TracingConfig.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Bitmask of predefined category sets. Value is either`0`or a combination of [android.webkit.TracingConfig#CATEGORIES_NONE](TracingConfig.md), [android.webkit.TracingConfig#CATEGORIES_ALL](TracingConfig.md), [android.webkit.TracingConfig#CATEGORIES_ANDROID_WEBVIEW](TracingConfig.md), [android.webkit.TracingConfig#CATEGORIES_WEB_DEVELOPER](TracingConfig.md), [android.webkit.TracingConfig#CATEGORIES_INPUT_LATENCY](TracingConfig.md), [android.webkit.TracingConfig#CATEGORIES_RENDERING](TracingConfig.md), [android.webkit.TracingConfig#CATEGORIES_JAVASCRIPT_AND_RENDERING](TracingConfig.md), and [android.webkit.TracingConfig#CATEGORIES_FRAME_VIEWER](TracingConfig.md) |
 
 ### getTracingMode
 
@@ -210,4 +210,4 @@ Returns the tracing mode of this configuration.
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The tracing mode of this configuration. Value is [android.webkit.TracingConfig#RECORD_UNTIL_FULL](../android/webkit/TracingConfig.md), or [android.webkit.TracingConfig#RECORD_CONTINUOUSLY](../android/webkit/TracingConfig.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The tracing mode of this configuration. Value is [android.webkit.TracingConfig#RECORD_UNTIL_FULL](TracingConfig.md), or [android.webkit.TracingConfig#RECORD_CONTINUOUSLY](TracingConfig.md) |

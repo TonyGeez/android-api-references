@@ -10,10 +10,10 @@ open class StreamHandler : Handler
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.util.logging.Handler](../java/util/logging/Handler.md) ||
-| | ↳ | [java.util.logging.StreamHandler](../java/util/logging/StreamHandler.md) |
+| ↳ | [java.util.logging.Handler](Handler.md) ||
+| | ↳ | [java.util.logging.StreamHandler](StreamHandler.md) |
 
-| Known Direct Subclasses [ConsoleHandler](../java/util/logging/ConsoleHandler.md), [FileHandler](../java/util/logging/FileHandler.md), [SocketHandler](../java/util/logging/SocketHandler.md) |---------------------------------------------------------------------------------------------------|---------------------------------------------------| | [ConsoleHandler](../java/util/logging/ConsoleHandler.md) | This Handler publishes log records to System.err. | | [FileHandler](../java/util/logging/FileHandler.md) | Simple file logging Handler. | | [SocketHandler](../java/util/logging/SocketHandler.md) | Simple network logging Handler. | |
+| Known Direct Subclasses [ConsoleHandler](ConsoleHandler.md), [FileHandler](FileHandler.md), [SocketHandler](SocketHandler.md) |---------------------------------------------------------------------------------------------------|---------------------------------------------------| | [ConsoleHandler](ConsoleHandler.md) | This Handler publishes log records to System.err. | | [FileHandler](FileHandler.md) | Simple file logging Handler. | | [SocketHandler](SocketHandler.md) | Simple network logging Handler. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Stream based logging Handler.
@@ -45,25 +45,25 @@ For a custom handler, e.g. com.foo.MyHandler, the properties would be:
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [StreamHandler](../java/util/logging/StreamHandler.md))`()` Create a StreamHandler, with no current output stream. |
-| [StreamHandler](../java/util/logging/StreamHandler.md))`(`out:` ` [OutputStream](../java/io/OutputStream.md)!`, `formatter:` ` [Formatter](../java/util/logging/Formatter.md)!`)` Create a StreamHandler with a given Formatter and output stream. |
+| [StreamHandler](StreamHandler.md))`()` Create a StreamHandler, with no current output stream. |
+| [StreamHandler](StreamHandler.md))`(`out:` ` [OutputStream](../java.io/OutputStream.md)!`, `formatter:` ` [Formatter](Formatter.md)!`)` Create a StreamHandler with a given Formatter and output stream. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../java/util/logging/StreamHandler.md))`()` Close the current output stream. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [flush](../java/util/logging/StreamHandler.md))`()` Flush any buffered messages. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLoggable](../java/util/logging/StreamHandler.md))`(`record:` ` [LogRecord](../java/util/logging/LogRecord.md)!`)` Check if this Handler would actually log a given LogRecord. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](StreamHandler.md))`()` Close the current output stream. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [flush](StreamHandler.md))`()` Flush any buffered messages. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLoggable](StreamHandler.md))`(`record:` ` [LogRecord](LogRecord.md)!`)` Check if this Handler would actually log a given LogRecord. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [publish](../java/util/logging/StreamHandler.md))`(`record:` ` [LogRecord](../java/util/logging/LogRecord.md)!`)` Format and publish a LogRecord. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEncoding](../java/util/logging/StreamHandler.md))`(`encoding:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set (or change) the character encoding used by this Handler. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [publish](StreamHandler.md))`(`record:` ` [LogRecord](LogRecord.md)!`)` Format and publish a LogRecord. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEncoding](StreamHandler.md))`(`encoding:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set (or change) the character encoding used by this Handler. |
 
 | Protected methods ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOutputStream](../java/util/logging/StreamHandler.md))`(`out:` ` [OutputStream](../java/io/OutputStream.md)!`)` Change the output stream. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOutputStream](StreamHandler.md))`(`out:` ` [OutputStream](../java.io/OutputStream.md)!`)` Change the output stream. |
 
 | Inherited functions ||
 |---|---|
-| From class [Handler](../java/util/logging/Handler.md) |------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getEncoding](../java/util/logging/Handler.md))`()` <br /> Return the character encoding for this Handler. <br /> | | [ErrorManager](../java/util/logging/ErrorManager.md)! | [getErrorManager](../java/util/logging/Handler.md))`()` <br /> Retrieves the ErrorManager for this Handler. <br /> | | [Filter](../java/util/logging/Filter.md)! | [getFilter](../java/util/logging/Handler.md))`()` <br /> Get the current Filter for this Handler. <br /> | | [Formatter](../java/util/logging/Formatter.md)! | [getFormatter](../java/util/logging/Handler.md))`()` <br /> Return the Formatter for this Handler. <br /> | | [Level](../java/util/logging/Level.md)! | [getLevel](../java/util/logging/Handler.md))`()` <br /> Get the log level specifying which messages will be logged by this Handler. Message levels lower than this level will be discarded. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reportError](../java/util/logging/Handler.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `ex:` ` [Exception](../java/lang/Exception.md)!`, `code:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> Protected convenience method to report an error to this Handler's ErrorManager. Note that this method retrieves and uses the ErrorManager without doing a security check. It can therefore be used in environments where the caller may be non-privileged. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setErrorManager](../java/util/logging/Handler.md))`(`em:` ` [ErrorManager](../java/util/logging/ErrorManager.md)!`)` <br /> Define an ErrorManager for this Handler. The ErrorManager's "error" method will be invoked if any errors occur while using this Handler. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFilter](../java/util/logging/Handler.md))`(`newFilter:` ` [Filter](../java/util/logging/Filter.md)!`)` <br /> Set a Filter to control output on this Handler. For each call of publish the Handler will call this Filter (if it is non-null) to check if the LogRecord should be published or discarded. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFormatter](../java/util/logging/Handler.md))`(`newFormatter:` ` [Formatter](../java/util/logging/Formatter.md)!`)` <br /> Set a Formatter. This Formatter will be used to format LogRecords for this Handler. Some Handlers may not use Formatters, in which case the Formatter will be remembered, but not used. <br /> <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLevel](../java/util/logging/Handler.md))`(`newLevel:` ` [Level](../java/util/logging/Level.md)!`)` <br /> Set the log level specifying which message levels will be logged by this Handler. Message levels lower than this value will be discarded. The intention is to allow developers to turn on voluminous logging, but to limit the messages that are sent to certain Handlers. <br /> | ||
+| From class [Handler](Handler.md) |------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getEncoding](Handler.md))`()` <br /> Return the character encoding for this Handler. <br /> | | [ErrorManager](ErrorManager.md)! | [getErrorManager](Handler.md))`()` <br /> Retrieves the ErrorManager for this Handler. <br /> | | [Filter](Filter.md)! | [getFilter](Handler.md))`()` <br /> Get the current Filter for this Handler. <br /> | | [Formatter](Formatter.md)! | [getFormatter](Handler.md))`()` <br /> Return the Formatter for this Handler. <br /> | | [Level](Level.md)! | [getLevel](Handler.md))`()` <br /> Get the log level specifying which messages will be logged by this Handler. Message levels lower than this level will be discarded. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reportError](Handler.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `ex:` ` [Exception](../java.lang/Exception.md)!`, `code:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> Protected convenience method to report an error to this Handler's ErrorManager. Note that this method retrieves and uses the ErrorManager without doing a security check. It can therefore be used in environments where the caller may be non-privileged. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setErrorManager](Handler.md))`(`em:` ` [ErrorManager](ErrorManager.md)!`)` <br /> Define an ErrorManager for this Handler. The ErrorManager's "error" method will be invoked if any errors occur while using this Handler. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFilter](Handler.md))`(`newFilter:` ` [Filter](Filter.md)!`)` <br /> Set a Filter to control output on this Handler. For each call of publish the Handler will call this Filter (if it is non-null) to check if the LogRecord should be published or discarded. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFormatter](Handler.md))`(`newFormatter:` ` [Formatter](Formatter.md)!`)` <br /> Set a Formatter. This Formatter will be used to format LogRecords for this Handler. Some Handlers may not use Formatters, in which case the Formatter will be remembered, but not used. <br /> <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLevel](Handler.md))`(`newLevel:` ` [Level](Level.md)!`)` <br /> Set the log level specifying which message levels will be logged by this Handler. Message levels lower than this value will be discarded. The intention is to allow developers to turn on voluminous logging, but to limit the messages that are sent to certain Handlers. <br /> | ||
 
 ## Public constructors
 
@@ -93,8 +93,8 @@ Create a StreamHandler with a given Formatter and output stream.
 
 | Parameters ||
 |-------------|--------------------------------------------------------------------------------------------------------------------------------|
-| `out` | [OutputStream](../java/io/OutputStream.md)!:the target output stream |
-| `formatter` | [Formatter](../java/util/logging/Formatter.md)!:Formatter to be used to format output |
+| `out` | [OutputStream](../java.io/OutputStream.md)!:the target output stream |
+| `formatter` | [Formatter](Formatter.md)!:Formatter to be used to format output |
 
 ## Public methods
 
@@ -140,7 +140,7 @@ This method checks if the LogRecord has an appropriate level and whether it sati
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------|
-| `record` | [LogRecord](../java/util/logging/LogRecord.md)!:a LogRecord |
+| `record` | [LogRecord](LogRecord.md)!:a LogRecord |
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------------------------------|
@@ -162,7 +162,7 @@ If this is the first LogRecord to be written to a given OutputStream, the Format
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `record` | [LogRecord](../java/util/logging/LogRecord.md)!:description of the log event. A null record is silently ignored and is not published |
+| `record` | [LogRecord](LogRecord.md)!:description of the log event. A null record is silently ignored and is not published |
 
 ### setEncoding
 
@@ -201,7 +201,7 @@ If there is a current output stream then the Formatter's tail string is written 
 
 | Parameters ||
 |-------|--------------------------------------------------------------------------------------------------------------------------------|
-| `out` | [OutputStream](../java/io/OutputStream.md)!:New output stream. May not be null. |
+| `out` | [OutputStream](../java.io/OutputStream.md)!:New output stream. May not be null. |
 
 | Exceptions ||
 |-------------------------------|--------------------------------------------------------------------------------------------|

@@ -19,7 +19,7 @@ Interface for callback invocation when connection info is available
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onConnectionInfoAvailable](../android/net/wifi/p2p/WifiP2pManager.ConnectionInfoListener.md))`(`info:` ` [WifiP2pInfo](../android/net/wifi/p2p/WifiP2pInfo.md)!`)` The requested connection info is available |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onConnectionInfoAvailable](../android/net/wifi/p2p/WifiP2pManager.ConnectionInfoListener.md))`(`info:` ` [WifiP2pInfo](WifiP2pInfo.md)!`)` The requested connection info is available |
 
 ## Public methods
 
@@ -35,4 +35,4 @@ The requested connection info is available
 
 | Parameters ||
 |--------|---------------------------------------------------------------------------------------------------------------------------|
-| `info` | [WifiP2pInfo](../android/net/wifi/p2p/WifiP2pInfo.md)!:Wi-Fi p2p connection info |
+| `info` | [WifiP2pInfo](WifiP2pInfo.md)!:Wi-Fi p2p connection info |

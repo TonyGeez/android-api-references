@@ -10,12 +10,12 @@ abstract class AbstractCollection<E : Any!> : MutableCollection<E>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.util.AbstractCollection](../java/util/AbstractCollection.md) |
+| ↳ | [java.util.AbstractCollection](AbstractCollection.md) |
 
-| Known Direct Subclasses [AbstractList](../java/util/AbstractList.md), [AbstractQueue](../java/util/AbstractQueue.md), [AbstractSet](../java/util/AbstractSet.md), [ArrayDeque](../java/util/ArrayDeque.md), [ConcurrentLinkedDeque](../java/util/concurrent/ConcurrentLinkedDeque.md) |--------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [AbstractList](../java/util/AbstractList.md) | This class provides a skeletal implementation of the [List](../java/util/List.md) interface to minimize the effort required to implement this interface backed by a "random access" data store (such as an array). | | [AbstractQueue](../java/util/AbstractQueue.md) | This class provides skeletal implementations of some [Queue](../java/util/Queue.md) operations. | | [AbstractSet](../java/util/AbstractSet.md) | This class provides a skeletal implementation of the`Set`interface to minimize the effort required to implement this interface. | | [ArrayDeque](../java/util/ArrayDeque.md) | Resizable-array implementation of the [Deque](../java/util/Deque.md) interface. | | [ConcurrentLinkedDeque](../java/util/concurrent/ConcurrentLinkedDeque.md) | An unbounded concurrent [deque](../java/util/Deque.md) based on linked nodes. | |
+| Known Direct Subclasses [AbstractList](AbstractList.md), [AbstractQueue](AbstractQueue.md), [AbstractSet](AbstractSet.md), [ArrayDeque](ArrayDeque.md), [ConcurrentLinkedDeque](../java.util.concurrent/ConcurrentLinkedDeque.md) |--------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [AbstractList](AbstractList.md) | This class provides a skeletal implementation of the [List](List.md) interface to minimize the effort required to implement this interface backed by a "random access" data store (such as an array). | | [AbstractQueue](AbstractQueue.md) | This class provides skeletal implementations of some [Queue](Queue.md) operations. | | [AbstractSet](AbstractSet.md) | This class provides a skeletal implementation of the`Set`interface to minimize the effort required to implement this interface. | | [ArrayDeque](ArrayDeque.md) | Resizable-array implementation of the [Deque](Deque.md) interface. | | [ConcurrentLinkedDeque](../java.util.concurrent/ConcurrentLinkedDeque.md) | An unbounded concurrent [deque](Deque.md) based on linked nodes. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [AbstractSequentialList](../java/util/AbstractSequentialList.md), [ArrayBlockingQueue](../java/util/concurrent/ArrayBlockingQueue.md), [ArrayList](../java/util/ArrayList.md), [ConcurrentLinkedQueue](../java/util/concurrent/ConcurrentLinkedQueue.md), [ConcurrentSkipListSet](../java/util/concurrent/ConcurrentSkipListSet.md), [CopyOnWriteArraySet](../java/util/concurrent/CopyOnWriteArraySet.md), [DelayQueue](../java/util/concurrent/DelayQueue.md), [EnumSet](../java/util/EnumSet.md), [HashSet](../java/util/HashSet.md), [LinkedBlockingDeque](../java/util/concurrent/LinkedBlockingDeque.md), [LinkedBlockingQueue](../java/util/concurrent/LinkedBlockingQueue.md), [LinkedHashSet](../java/util/LinkedHashSet.md), and 8 others. |--------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [AbstractSequentialList](../java/util/AbstractSequentialList.md) | This class provides a skeletal implementation of the`List`interface to minimize the effort required to implement this interface backed by a "sequential access" data store (such as a linked list). | | [ArrayBlockingQueue](../java/util/concurrent/ArrayBlockingQueue.md) | A bounded [blocking queue](../java/util/concurrent/BlockingQueue.md) backed by an array. | | [ArrayList](../java/util/ArrayList.md) | Resizable-array implementation of the`List`interface. | | [ConcurrentLinkedQueue](../java/util/concurrent/ConcurrentLinkedQueue.md) | An unbounded thread-safe [queue](../java/util/Queue.md) based on linked nodes. | | [ConcurrentSkipListSet](../java/util/concurrent/ConcurrentSkipListSet.md) | A scalable concurrent [NavigableSet](../java/util/NavigableSet.md) implementation based on a [ConcurrentSkipListMap](../java/util/concurrent/ConcurrentSkipListMap.md). | | [CopyOnWriteArraySet](../java/util/concurrent/CopyOnWriteArraySet.md) | A [Set](../java/util/Set.md) that uses an internal [CopyOnWriteArrayList](../java/util/concurrent/CopyOnWriteArrayList.md) for all of its operations. | | [DelayQueue](../java/util/concurrent/DelayQueue.md) | An unbounded [blocking queue](../java/util/concurrent/BlockingQueue.md) of [Delayed](../java/util/concurrent/Delayed.md) elements, in which an element generally becomes eligible for removal when its delay has expired. | | [EnumSet](../java/util/EnumSet.md) | A specialized [Set](../java/util/Set.md) implementation for use with enum types. | | [HashSet](../java/util/HashSet.md) | This class implements the`Set`interface, backed by a hash table (actually a`HashMap`instance). | | [LinkedBlockingDeque](../java/util/concurrent/LinkedBlockingDeque.md) | An optionally-bounded [blocking deque](../java/util/concurrent/BlockingDeque.md) based on linked nodes. | | [LinkedBlockingQueue](../java/util/concurrent/LinkedBlockingQueue.md) | An optionally-bounded [blocking queue](../java/util/concurrent/BlockingQueue.md) based on linked nodes. | | [LinkedHashSet](../java/util/LinkedHashSet.md) | Hash table and linked list implementation of the`Set`interface, with well-defined encounter order. | | [LinkedList](../java/util/LinkedList.md) | Doubly-linked list implementation of the`List`and`Deque`interfaces. | | [LinkedTransferQueue](../java/util/concurrent/LinkedTransferQueue.md) | An unbounded [TransferQueue](../java/util/concurrent/TransferQueue.md) based on linked nodes. | | [PriorityBlockingQueue](../java/util/concurrent/PriorityBlockingQueue.md) | An unbounded [blocking queue](../java/util/concurrent/BlockingQueue.md) that uses the same ordering rules as class [PriorityQueue](../java/util/PriorityQueue.md) and supplies blocking retrieval operations. | | [PriorityQueue](../java/util/PriorityQueue.md) | An unbounded priority [queue](../java/util/Queue.md) based on a priority heap. | | [Stack](../java/util/Stack.md) | The`Stack`class represents a last-in-first-out (LIFO) stack of objects. | | [SynchronousQueue](../java/util/concurrent/SynchronousQueue.md) | A [blocking queue](../java/util/concurrent/BlockingQueue.md) in which each insert operation must wait for a corresponding remove operation by another thread, and vice versa. | | [TreeSet](../java/util/TreeSet.md) | A [NavigableSet](../java/util/NavigableSet.md) implementation based on a [TreeMap](../java/util/TreeMap.md). | | [Vector](../java/util/Vector.md) | The`Vector`class implements a growable array of objects. | |
+| Known Indirect Subclasses [AbstractSequentialList](AbstractSequentialList.md), [ArrayBlockingQueue](../java.util.concurrent/ArrayBlockingQueue.md), [ArrayList](ArrayList.md), [ConcurrentLinkedQueue](../java.util.concurrent/ConcurrentLinkedQueue.md), [ConcurrentSkipListSet](../java.util.concurrent/ConcurrentSkipListSet.md), [CopyOnWriteArraySet](../java.util.concurrent/CopyOnWriteArraySet.md), [DelayQueue](../java.util.concurrent/DelayQueue.md), [EnumSet](EnumSet.md), [HashSet](HashSet.md), [LinkedBlockingDeque](../java.util.concurrent/LinkedBlockingDeque.md), [LinkedBlockingQueue](../java.util.concurrent/LinkedBlockingQueue.md), [LinkedHashSet](LinkedHashSet.md), and 8 others. |--------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [AbstractSequentialList](AbstractSequentialList.md) | This class provides a skeletal implementation of the`List`interface to minimize the effort required to implement this interface backed by a "sequential access" data store (such as a linked list). | | [ArrayBlockingQueue](../java.util.concurrent/ArrayBlockingQueue.md) | A bounded [blocking queue](../java.util.concurrent/BlockingQueue.md) backed by an array. | | [ArrayList](ArrayList.md) | Resizable-array implementation of the`List`interface. | | [ConcurrentLinkedQueue](../java.util.concurrent/ConcurrentLinkedQueue.md) | An unbounded thread-safe [queue](Queue.md) based on linked nodes. | | [ConcurrentSkipListSet](../java.util.concurrent/ConcurrentSkipListSet.md) | A scalable concurrent [NavigableSet](NavigableSet.md) implementation based on a [ConcurrentSkipListMap](../java.util.concurrent/ConcurrentSkipListMap.md). | | [CopyOnWriteArraySet](../java.util.concurrent/CopyOnWriteArraySet.md) | A [Set](Set.md) that uses an internal [CopyOnWriteArrayList](../java.util.concurrent/CopyOnWriteArrayList.md) for all of its operations. | | [DelayQueue](../java.util.concurrent/DelayQueue.md) | An unbounded [blocking queue](../java.util.concurrent/BlockingQueue.md) of [Delayed](../java.util.concurrent/Delayed.md) elements, in which an element generally becomes eligible for removal when its delay has expired. | | [EnumSet](EnumSet.md) | A specialized [Set](Set.md) implementation for use with enum types. | | [HashSet](HashSet.md) | This class implements the`Set`interface, backed by a hash table (actually a`HashMap`instance). | | [LinkedBlockingDeque](../java.util.concurrent/LinkedBlockingDeque.md) | An optionally-bounded [blocking deque](../java.util.concurrent/BlockingDeque.md) based on linked nodes. | | [LinkedBlockingQueue](../java.util.concurrent/LinkedBlockingQueue.md) | An optionally-bounded [blocking queue](../java.util.concurrent/BlockingQueue.md) based on linked nodes. | | [LinkedHashSet](LinkedHashSet.md) | Hash table and linked list implementation of the`Set`interface, with well-defined encounter order. | | [LinkedList](LinkedList.md) | Doubly-linked list implementation of the`List`and`Deque`interfaces. | | [LinkedTransferQueue](../java.util.concurrent/LinkedTransferQueue.md) | An unbounded [TransferQueue](../java.util.concurrent/TransferQueue.md) based on linked nodes. | | [PriorityBlockingQueue](../java.util.concurrent/PriorityBlockingQueue.md) | An unbounded [blocking queue](../java.util.concurrent/BlockingQueue.md) that uses the same ordering rules as class [PriorityQueue](PriorityQueue.md) and supplies blocking retrieval operations. | | [PriorityQueue](PriorityQueue.md) | An unbounded priority [queue](Queue.md) based on a priority heap. | | [Stack](Stack.md) | The`Stack`class represents a last-in-first-out (LIFO) stack of objects. | | [SynchronousQueue](../java.util.concurrent/SynchronousQueue.md) | A [blocking queue](../java.util.concurrent/BlockingQueue.md) in which each insert operation must wait for a corresponding remove operation by another thread, and vice versa. | | [TreeSet](TreeSet.md) | A [NavigableSet](NavigableSet.md) implementation based on a [TreeMap](TreeMap.md). | | [Vector](Vector.md) | The`Vector`class implements a growable array of objects. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 This class provides a skeletal implementation of the`Collection`interface, to minimize the effort required to implement this interface.
@@ -34,31 +34,31 @@ This class is a member of the [Java Collections Framework](https://developer.and
 
 | Protected constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [AbstractCollection](../java/util/AbstractCollection.md))`()` Sole constructor. |
+| [AbstractCollection](AbstractCollection.md))`()` Sole constructor. |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [add](../java/util/AbstractCollection.md))`(`element:` `E`)` Ensures that this collection contains the specified element (optional operation). |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addAll](../java/util/AbstractCollection.md))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` Adds all of the elements in the specified collection to this collection (optional operation). |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](../java/util/AbstractCollection.md))`()` Removes all of the elements from this collection (optional operation). |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [add](AbstractCollection.md))`(`element:` `E`)` Ensures that this collection contains the specified element (optional operation). |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addAll](AbstractCollection.md))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` Adds all of the elements in the specified collection to this collection (optional operation). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](AbstractCollection.md))`()` Removes all of the elements from this collection (optional operation). |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [contains](../java/util/AbstractCollection.md))`(`element:` `E?`)` Returns`true`if this collection contains the specified element. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsAll](../java/util/AbstractCollection.md))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` Returns`true`if this collection contains all of the elements in the specified collection. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](../java/util/AbstractCollection.md))`()` Returns`true`if this collection contains no elements. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [contains](AbstractCollection.md))`(`element:` `E?`)` Returns`true`if this collection contains the specified element. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsAll](AbstractCollection.md))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` Returns`true`if this collection contains all of the elements in the specified collection. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](AbstractCollection.md))`()` Returns`true`if this collection contains no elements. |
 | --- | --- |
-| abstract [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\<E\> | [iterator](../java/util/AbstractCollection.md))`()` Returns an iterator over the elements contained in this collection. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [remove](../java/util/AbstractCollection.md))`(`element:` `E?`)` Removes a single instance of the specified element from this collection, if it is present (optional operation). |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeAll](../java/util/AbstractCollection.md))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` Removes all of this collection's elements that are also contained in the specified collection (optional operation). |
+| abstract [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\<E\> | [iterator](AbstractCollection.md))`()` Returns an iterator over the elements contained in this collection. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [remove](AbstractCollection.md))`(`element:` `E?`)` Removes a single instance of the specified element from this collection, if it is present (optional operation). |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeAll](AbstractCollection.md))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` Removes all of this collection's elements that are also contained in the specified collection (optional operation). |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [retainAll](../java/util/AbstractCollection.md))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` Retains only the elements in this collection that are contained in the specified collection (optional operation). |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\> | [toArray](../java/util/AbstractCollection.md))`()` Returns an array containing all of the elements in this collection. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\> | [toArray](../java/util/AbstractCollection.md))`(`a:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<T>`)` Returns an array containing all of the elements in this collection; the runtime type of the returned array is that of the specified array. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [retainAll](AbstractCollection.md))`(`elements:` ` [Collection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-collection/index.html)<E>`)` Retains only the elements in this collection that are contained in the specified collection (optional operation). |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\> | [toArray](AbstractCollection.md))`()` Returns an array containing all of the elements in this collection. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\> | [toArray](AbstractCollection.md))`(`a:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)<T>`)` Returns an array containing all of the elements in this collection; the runtime type of the returned array is that of the specified array. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/util/AbstractCollection.md))`()` Returns a string representation of this collection. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](AbstractCollection.md))`()` Returns a string representation of this collection. |
 
 | Properties ||
 |------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [size](../java/util/AbstractCollection.md) <br /> |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [size](AbstractCollection.md) <br /> |
 
 ## Protected constructors
 
@@ -113,7 +113,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun addAll(elements: Collection<E>): Boolean
 ```
 
-Adds all of the elements in the specified collection to this collection (optional operation). The behavior of this operation is undefined if the specified collection is modified while the operation is in progress. (This implies that the behavior of this call is undefined if the specified collection is this collection, and this collection is nonempty.) If the specified collection has a defined [encounter order](../java/util/SequencedCollection.md), processing of its elements generally occurs in that order.
+Adds all of the elements in the specified collection to this collection (optional operation). The behavior of this operation is undefined if the specified collection is modified while the operation is in progress. (This implies that the behavior of this call is undefined if the specified collection is this collection, and this collection is nonempty.) If the specified collection has a defined [encounter order](SequencedCollection.md), processing of its elements generally occurs in that order.
 
 | Parameters ||
 |-----|---------------------------------------------------------------|
@@ -134,7 +134,7 @@ Adds all of the elements in the specified collection to this collection (optiona
 
 **See Also**
 
-- [#add(Object)](../java/util/AbstractCollection.md)) 
+- [#add(Object)](AbstractCollection.md)) 
 
 ### clear
 
@@ -198,7 +198,7 @@ Returns`true`if this collection contains all of the elements in the specified co
 
 **See Also**
 
-- [#contains(Object)](../java/util/AbstractCollection.md)) 
+- [#contains(Object)](AbstractCollection.md)) 
 
 ### isEmpty
 
@@ -280,8 +280,8 @@ Removes all of this collection's elements that are also contained in the specifi
 
 **See Also**
 
-- [#remove(Object)](../java/util/AbstractCollection.md))
-- [#contains(Object)](../java/util/AbstractCollection.md)) 
+- [#remove(Object)](AbstractCollection.md))
+- [#contains(Object)](AbstractCollection.md)) 
 
 ### retainAll
 
@@ -310,8 +310,8 @@ Retains only the elements in this collection that are contained in the specified
 
 **See Also**
 
-- [#remove(Object)](../java/util/AbstractCollection.md))
-- [#contains(Object)](../java/util/AbstractCollection.md)) 
+- [#remove(Object)](AbstractCollection.md))
+- [#contains(Object)](AbstractCollection.md)) 
 
 ### toArray
 
@@ -321,13 +321,13 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun toArray(): Array<Any!>
 ```
 
-Returns an array containing all of the elements in this collection. If this collection makes any guarantees as to what order its elements are returned by its iterator, this method must return the elements in the same order. The returned array's [runtime component type](../java/lang/Class.md))is`Object`.
+Returns an array containing all of the elements in this collection. If this collection makes any guarantees as to what order its elements are returned by its iterator, this method must return the elements in the same order. The returned array's [runtime component type](../java.lang/Class.md))is`Object`.
 
 The returned array will be "safe" in that no references to it are maintained by this collection. (In other words, this method must allocate a new array even if this collection is backed by an array). The caller is thus free to modify the returned array.
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!> | an array, whose [type](../java/lang/Class.md))is`Object`, containing all of the elements in this collection |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!> | an array, whose [type](../java.lang/Class.md))is`Object`, containing all of the elements in this collection |
 
 ### toArray
 
@@ -354,7 +354,7 @@ If this collection makes any guarantees as to what order its elements are return
 
 | Exceptions ||
 |----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.ArrayStoreException` | if the runtime type of any element in this collection is not assignable to the [runtime component type](../java/lang/Class.md))of the specified array |
+| `java.lang.ArrayStoreException` | if the runtime type of any element in this collection is not assignable to the [runtime component type](../java.lang/Class.md))of the specified array |
 | `java.lang.NullPointerException` | if the specified array is null |
 
 ### toString
@@ -365,7 +365,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun toString(): String
 ```
 
-Returns a string representation of this collection. The string representation consists of a list of the collection's elements in the order they are returned by its iterator, enclosed in square brackets (`"[]"`). Adjacent elements are separated by the characters`", "`(comma and space). Elements are converted to strings as by [String.valueOf(Object)](../java/lang/String.md)).
+Returns a string representation of this collection. The string representation consists of a list of the collection's elements in the order they are returned by its iterator, enclosed in square brackets (`"[]"`). Adjacent elements are separated by the characters`", "`(comma and space). Elements are converted to strings as by [String.valueOf(Object)](../java.lang/String.md)).
 
 | Return ||
 |----------------------------------------------------------------------------------|--------------------------------------------|

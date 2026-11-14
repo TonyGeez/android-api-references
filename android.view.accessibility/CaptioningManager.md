@@ -4,7 +4,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 
 # CaptioningManager
 
-Kotlin| [Java](../android/view/accessibility/CaptioningManager.md) 
+Kotlin| [Java](CaptioningManager.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class CaptioningManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.accessibility.CaptioningManager](../android/view/accessibility/CaptioningManager.md) |
+| ↳ | [android.view.accessibility.CaptioningManager](CaptioningManager.md) |
 
 Contains methods for accessing and monitoring preferred video captioning state and visual properties.
 
@@ -26,17 +26,17 @@ Contains methods for accessing and monitoring preferred video captioning state a
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addCaptioningChangeListener](../android/view/accessibility/CaptioningManager.md))`(`listener:` ` [CaptioningManager.CaptioningChangeListener](../android/view/accessibility/CaptioningManager.CaptioningChangeListener.md)`)` Adds a listener for changes in the user's preferred captioning enabled state and visual properties. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getFontScale](../android/view/accessibility/CaptioningManager.md))`()` <br /> |
-| [Locale](../java/util/Locale.md)? | [getLocale](../android/view/accessibility/CaptioningManager.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addCaptioningChangeListener](CaptioningManager.md))`(`listener:` ` [CaptioningManager.CaptioningChangeListener](../android/view/accessibility/CaptioningManager.CaptioningChangeListener.md)`)` Adds a listener for changes in the user's preferred captioning enabled state and visual properties. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getFontScale](CaptioningManager.md))`()` <br /> |
+| [Locale](../java.util/Locale.md)? | [getLocale](CaptioningManager.md))`()` <br /> |
 | --- | --- |
-| open [CaptioningManager.CaptionStyle](../android/view/accessibility/CaptioningManager.CaptionStyle.md) | [getUserStyle](../android/view/accessibility/CaptioningManager.md))`()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isCallCaptioningEnabled](../android/view/accessibility/CaptioningManager.md))`()` Returns true if system wide call captioning is enabled for this device. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEnabled](../android/view/accessibility/CaptioningManager.md))`()` <br /> |
+| open [CaptioningManager.CaptionStyle](../android/view/accessibility/CaptioningManager.CaptionStyle.md) | [getUserStyle](CaptioningManager.md))`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isCallCaptioningEnabled](CaptioningManager.md))`()` Returns true if system wide call captioning is enabled for this device. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEnabled](CaptioningManager.md))`()` <br /> |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSystemAudioCaptioningEnabled](../android/view/accessibility/CaptioningManager.md))`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSystemAudioCaptioningUiEnabled](../android/view/accessibility/CaptioningManager.md))`()` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeCaptioningChangeListener](../android/view/accessibility/CaptioningManager.md))`(`listener:` ` [CaptioningManager.CaptioningChangeListener](../android/view/accessibility/CaptioningManager.CaptioningChangeListener.md)`)` Removes a listener previously added using [addCaptioningChangeListener](../android/view/accessibility/CaptioningManager.md)). |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSystemAudioCaptioningEnabled](CaptioningManager.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSystemAudioCaptioningUiEnabled](CaptioningManager.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeCaptioningChangeListener](CaptioningManager.md))`(`listener:` ` [CaptioningManager.CaptioningChangeListener](../android/view/accessibility/CaptioningManager.CaptioningChangeListener.md)`)` Removes a listener previously added using [addCaptioningChangeListener](CaptioningManager.md)). |
 | --- | --- |
 
 ## Public methods
@@ -77,7 +77,7 @@ fun getLocale(): Locale?
 
 | Return ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| [Locale](../java/util/Locale.md)? | the locale for the user's preferred captioning language, or null if not specified |
+| [Locale](../java.util/Locale.md)? | the locale for the user's preferred captioning language, or null if not specified |
 
 ### getUserStyle
 
@@ -145,7 +145,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 open fun removeCaptioningChangeListener(listener: CaptioningManager.CaptioningChangeListener): Unit
 ```
 
-Removes a listener previously added using [addCaptioningChangeListener](../android/view/accessibility/CaptioningManager.md)).
+Removes a listener previously added using [addCaptioningChangeListener](CaptioningManager.md)).
 
 | Parameters ||
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

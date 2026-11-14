@@ -10,44 +10,44 @@ abstract class AtomicLongFieldUpdater<T : Any!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.util.concurrent.atomic.AtomicLongFieldUpdater](../java/util/concurrent/atomic/AtomicLongFieldUpdater.md) |
+| ↳ | [java.util.concurrent.atomic.AtomicLongFieldUpdater](AtomicLongFieldUpdater.md) |
 
 A reflection-based utility that enables atomic updates to designated`volatile long`fields of designated classes. This class is designed for use in atomic data structures in which several fields of the same node are independently subject to atomic updates.
 
 Note that the guarantees of the`compareAndSet`method in this class are weaker than in other atomic classes. Because this class cannot ensure that all uses of the field are appropriate for purposes of atomic access, it can guarantee atomicity only with respect to other invocations of`compareAndSet`and`set`on the same updater.
 
-Object arguments for parameters of type`T`that are not instances of the class passed to [newUpdater](../java/util/concurrent/atomic/AtomicLongFieldUpdater.md))will result in a [ClassCastException](../java/lang/ClassCastException.md) being thrown.
+Object arguments for parameters of type`T`that are not instances of the class passed to [newUpdater](AtomicLongFieldUpdater.md))will result in a [ClassCastException](../java.lang/ClassCastException.md) being thrown.
 
 ## Summary
 
 | Protected constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [AtomicLongFieldUpdater](../java/util/concurrent/atomic/AtomicLongFieldUpdater.md))`()` Protected do-nothing constructor for use by subclasses. |
+| [AtomicLongFieldUpdater](AtomicLongFieldUpdater.md))`()` Protected do-nothing constructor for use by subclasses. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [accumulateAndGet](../java/util/concurrent/atomic/AtomicLongFieldUpdater.md))`(`obj:` `T`, `x:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `accumulatorFunction:` ` [LongBinaryOperator](../java/util/function/LongBinaryOperator.md)!`)` Atomically updates (with memory effects as specified by [java.lang.invoke.VarHandle#compareAndSet](../java/lang/invoke/VarHandle.md))) the field of the given object managed by this updater with the results of applying the given function to the current and given values, returning the updated value. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [addAndGet](../java/util/concurrent/atomic/AtomicLongFieldUpdater.md))`(`obj:` `T`, `delta:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Atomically adds the given value to the current value of the field of the given object managed by this updater. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [compareAndSet](../java/util/concurrent/atomic/AtomicLongFieldUpdater.md))`(`obj:` `T`, `expect:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `update:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Atomically sets the field of the given object managed by this updater to the given updated value if the current value`==`the expected value. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [accumulateAndGet](AtomicLongFieldUpdater.md))`(`obj:` `T`, `x:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `accumulatorFunction:` ` [LongBinaryOperator](../java.util.function/LongBinaryOperator.md)!`)` Atomically updates (with memory effects as specified by [java.lang.invoke.VarHandle#compareAndSet](../java.lang.invoke/VarHandle.md))) the field of the given object managed by this updater with the results of applying the given function to the current and given values, returning the updated value. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [addAndGet](AtomicLongFieldUpdater.md))`(`obj:` `T`, `delta:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Atomically adds the given value to the current value of the field of the given object managed by this updater. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [compareAndSet](AtomicLongFieldUpdater.md))`(`obj:` `T`, `expect:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `update:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Atomically sets the field of the given object managed by this updater to the given updated value if the current value`==`the expected value. |
 | --- | --- |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [decrementAndGet](../java/util/concurrent/atomic/AtomicLongFieldUpdater.md))`(`obj:` `T`)` Atomically decrements by one the current value of the field of the given object managed by this updater. |
-| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [get](../java/util/concurrent/atomic/AtomicLongFieldUpdater.md))`(`obj:` `T`)` Returns the current value held in the field of the given object managed by this updater. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAndAccumulate](../java/util/concurrent/atomic/AtomicLongFieldUpdater.md))`(`obj:` `T`, `x:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `accumulatorFunction:` ` [LongBinaryOperator](../java/util/function/LongBinaryOperator.md)!`)` Atomically updates (with memory effects as specified by [java.lang.invoke.VarHandle#compareAndSet](../java/lang/invoke/VarHandle.md))) the field of the given object managed by this updater with the results of applying the given function to the current and given values, returning the previous value. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [decrementAndGet](AtomicLongFieldUpdater.md))`(`obj:` `T`)` Atomically decrements by one the current value of the field of the given object managed by this updater. |
+| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [get](AtomicLongFieldUpdater.md))`(`obj:` `T`)` Returns the current value held in the field of the given object managed by this updater. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAndAccumulate](AtomicLongFieldUpdater.md))`(`obj:` `T`, `x:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `accumulatorFunction:` ` [LongBinaryOperator](../java.util.function/LongBinaryOperator.md)!`)` Atomically updates (with memory effects as specified by [java.lang.invoke.VarHandle#compareAndSet](../java.lang.invoke/VarHandle.md))) the field of the given object managed by this updater with the results of applying the given function to the current and given values, returning the previous value. |
 | --- | --- |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAndAdd](../java/util/concurrent/atomic/AtomicLongFieldUpdater.md))`(`obj:` `T`, `delta:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Atomically adds the given value to the current value of the field of the given object managed by this updater. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAndDecrement](../java/util/concurrent/atomic/AtomicLongFieldUpdater.md))`(`obj:` `T`)` Atomically decrements by one the current value of the field of the given object managed by this updater. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAndIncrement](../java/util/concurrent/atomic/AtomicLongFieldUpdater.md))`(`obj:` `T`)` Atomically increments by one the current value of the field of the given object managed by this updater. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAndAdd](AtomicLongFieldUpdater.md))`(`obj:` `T`, `delta:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Atomically adds the given value to the current value of the field of the given object managed by this updater. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAndDecrement](AtomicLongFieldUpdater.md))`(`obj:` `T`)` Atomically decrements by one the current value of the field of the given object managed by this updater. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAndIncrement](AtomicLongFieldUpdater.md))`(`obj:` `T`)` Atomically increments by one the current value of the field of the given object managed by this updater. |
 | --- | --- |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAndSet](../java/util/concurrent/atomic/AtomicLongFieldUpdater.md))`(`obj:` `T`, `newValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Atomically sets the field of the given object managed by this updater to the given value and returns the old value. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAndUpdate](../java/util/concurrent/atomic/AtomicLongFieldUpdater.md))`(`obj:` `T`, `updateFunction:` ` [LongUnaryOperator](../java/util/function/LongUnaryOperator.md)!`)` Atomically updates (with memory effects as specified by [java.lang.invoke.VarHandle#compareAndSet](../java/lang/invoke/VarHandle.md))) the field of the given object managed by this updater with the results of applying the given function, returning the previous value. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [incrementAndGet](../java/util/concurrent/atomic/AtomicLongFieldUpdater.md))`(`obj:` `T`)` Atomically increments by one the current value of the field of the given object managed by this updater. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAndSet](AtomicLongFieldUpdater.md))`(`obj:` `T`, `newValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Atomically sets the field of the given object managed by this updater to the given value and returns the old value. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getAndUpdate](AtomicLongFieldUpdater.md))`(`obj:` `T`, `updateFunction:` ` [LongUnaryOperator](../java.util.function/LongUnaryOperator.md)!`)` Atomically updates (with memory effects as specified by [java.lang.invoke.VarHandle#compareAndSet](../java.lang.invoke/VarHandle.md))) the field of the given object managed by this updater with the results of applying the given function, returning the previous value. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [incrementAndGet](AtomicLongFieldUpdater.md))`(`obj:` `T`)` Atomically increments by one the current value of the field of the given object managed by this updater. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [lazySet](../java/util/concurrent/atomic/AtomicLongFieldUpdater.md))`(`obj:` `T`, `newValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Eventually sets the field of the given object managed by this updater to the given updated value. |
-| openstatic [AtomicLongFieldUpdater](../java/util/concurrent/atomic/AtomicLongFieldUpdater.md)\<U\>! | [newUpdater](../java/util/concurrent/atomic/AtomicLongFieldUpdater.md))`(`tclass:` ` [Class](../java/lang/Class.md)<U>!`, `fieldName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates and returns an updater for objects with the given field. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [set](../java/util/concurrent/atomic/AtomicLongFieldUpdater.md))`(`obj:` `T`, `newValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the field of the given object managed by this updater to the given updated value. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [lazySet](AtomicLongFieldUpdater.md))`(`obj:` `T`, `newValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Eventually sets the field of the given object managed by this updater to the given updated value. |
+| openstatic [AtomicLongFieldUpdater](AtomicLongFieldUpdater.md)\<U\>! | [newUpdater](AtomicLongFieldUpdater.md))`(`tclass:` ` [Class](../java.lang/Class.md)<U>!`, `fieldName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates and returns an updater for objects with the given field. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [set](AtomicLongFieldUpdater.md))`(`obj:` `T`, `newValue:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the field of the given object managed by this updater to the given updated value. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [updateAndGet](../java/util/concurrent/atomic/AtomicLongFieldUpdater.md))`(`obj:` `T`, `updateFunction:` ` [LongUnaryOperator](../java/util/function/LongUnaryOperator.md)!`)` Atomically updates (with memory effects as specified by [java.lang.invoke.VarHandle#compareAndSet](../java/lang/invoke/VarHandle.md))) the field of the given object managed by this updater with the results of applying the given function, returning the updated value. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [weakCompareAndSet](../java/util/concurrent/atomic/AtomicLongFieldUpdater.md))`(`obj:` `T`, `expect:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `update:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Atomically sets the field of the given object managed by this updater to the given updated value if the current value`==`the expected value. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [updateAndGet](AtomicLongFieldUpdater.md))`(`obj:` `T`, `updateFunction:` ` [LongUnaryOperator](../java.util.function/LongUnaryOperator.md)!`)` Atomically updates (with memory effects as specified by [java.lang.invoke.VarHandle#compareAndSet](../java.lang.invoke/VarHandle.md))) the field of the given object managed by this updater with the results of applying the given function, returning the updated value. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [weakCompareAndSet](AtomicLongFieldUpdater.md))`(`obj:` `T`, `expect:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `update:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Atomically sets the field of the given object managed by this updater to the given updated value if the current value`==`the expected value. |
 
 ## Protected constructors
 
@@ -75,13 +75,13 @@ fun accumulateAndGet(
 ): Long
 ```
 
-Atomically updates (with memory effects as specified by [java.lang.invoke.VarHandle#compareAndSet](../java/lang/invoke/VarHandle.md))) the field of the given object managed by this updater with the results of applying the given function to the current and given values, returning the updated value. The function should be side-effect-free, since it may be re-applied when attempted updates fail due to contention among threads. The function is applied with the current value as its first argument, and the given update as the second argument.
+Atomically updates (with memory effects as specified by [java.lang.invoke.VarHandle#compareAndSet](../java.lang.invoke/VarHandle.md))) the field of the given object managed by this updater with the results of applying the given function to the current and given values, returning the updated value. The function should be side-effect-free, since it may be re-applied when attempted updates fail due to contention among threads. The function is applied with the current value as its first argument, and the given update as the second argument.
 
 | Parameters ||
 |-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `obj` | T:An object whose field to get and set |
 | `x` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the update value |
-| `accumulatorFunction` | [LongBinaryOperator](../java/util/function/LongBinaryOperator.md)!:a side-effect-free function of two arguments |
+| `accumulatorFunction` | [LongBinaryOperator](../java.util.function/LongBinaryOperator.md)!:a side-effect-free function of two arguments |
 | --- | --- |
 
 | Return ||
@@ -183,13 +183,13 @@ fun getAndAccumulate(
 ): Long
 ```
 
-Atomically updates (with memory effects as specified by [java.lang.invoke.VarHandle#compareAndSet](../java/lang/invoke/VarHandle.md))) the field of the given object managed by this updater with the results of applying the given function to the current and given values, returning the previous value. The function should be side-effect-free, since it may be re-applied when attempted updates fail due to contention among threads. The function is applied with the current value as its first argument, and the given update as the second argument.
+Atomically updates (with memory effects as specified by [java.lang.invoke.VarHandle#compareAndSet](../java.lang.invoke/VarHandle.md))) the field of the given object managed by this updater with the results of applying the given function to the current and given values, returning the previous value. The function should be side-effect-free, since it may be re-applied when attempted updates fail due to contention among threads. The function is applied with the current value as its first argument, and the given update as the second argument.
 
 | Parameters ||
 |-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `obj` | T:An object whose field to get and set |
 | `x` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the update value |
-| `accumulatorFunction` | [LongBinaryOperator](../java/util/function/LongBinaryOperator.md)!:a side-effect-free function of two arguments |
+| `accumulatorFunction` | [LongBinaryOperator](../java.util.function/LongBinaryOperator.md)!:a side-effect-free function of two arguments |
 | --- | --- |
 
 | Return ||
@@ -287,12 +287,12 @@ fun getAndUpdate(
 ): Long
 ```
 
-Atomically updates (with memory effects as specified by [java.lang.invoke.VarHandle#compareAndSet](../java/lang/invoke/VarHandle.md))) the field of the given object managed by this updater with the results of applying the given function, returning the previous value. The function should be side-effect-free, since it may be re-applied when attempted updates fail due to contention among threads.
+Atomically updates (with memory effects as specified by [java.lang.invoke.VarHandle#compareAndSet](../java.lang.invoke/VarHandle.md))) the field of the given object managed by this updater with the results of applying the given function, returning the previous value. The function should be side-effect-free, since it may be re-applied when attempted updates fail due to contention among threads.
 
 | Parameters ||
 |------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
 | `obj` | T:An object whose field to get and set |
-| `updateFunction` | [LongUnaryOperator](../java/util/function/LongUnaryOperator.md)!:a side-effect-free function |
+| `updateFunction` | [LongUnaryOperator](../java.util.function/LongUnaryOperator.md)!:a side-effect-free function |
 
 | Return ||
 |------------------------------------------------------------------------------|--------------------|
@@ -349,14 +349,14 @@ Creates and returns an updater for objects with the given field. The Class argum
 
 | Parameters ||
 |-------------|--------------------------------------------------------------------------------------------------------------------------------|
-| `tclass` | [Class](../java/lang/Class.md)\<U\>!:the class of the objects holding the field |
+| `tclass` | [Class](../java.lang/Class.md)\<U\>!:the class of the objects holding the field |
 | `fieldName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the name of the field to be updated |
 | `<U>` | the type of instances of tclass |
 | --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------|-------------|
-| [AtomicLongFieldUpdater](../java/util/concurrent/atomic/AtomicLongFieldUpdater.md)<U>! | the updater |
+| [AtomicLongFieldUpdater](AtomicLongFieldUpdater.md)<U>! | the updater |
 
 | Exceptions ||
 |--------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -392,12 +392,12 @@ fun updateAndGet(
 ): Long
 ```
 
-Atomically updates (with memory effects as specified by [java.lang.invoke.VarHandle#compareAndSet](../java/lang/invoke/VarHandle.md))) the field of the given object managed by this updater with the results of applying the given function, returning the updated value. The function should be side-effect-free, since it may be re-applied when attempted updates fail due to contention among threads.
+Atomically updates (with memory effects as specified by [java.lang.invoke.VarHandle#compareAndSet](../java.lang.invoke/VarHandle.md))) the field of the given object managed by this updater with the results of applying the given function, returning the updated value. The function should be side-effect-free, since it may be re-applied when attempted updates fail due to contention among threads.
 
 | Parameters ||
 |------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
 | `obj` | T:An object whose field to get and set |
-| `updateFunction` | [LongUnaryOperator](../java/util/function/LongUnaryOperator.md)!:a side-effect-free function |
+| `updateFunction` | [LongUnaryOperator](../java.util.function/LongUnaryOperator.md)!:a side-effect-free function |
 
 | Return ||
 |------------------------------------------------------------------------------|-------------------|

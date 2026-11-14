@@ -8,7 +8,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface DSAKeyPairGenerator
 ```
 
-| [java.security.interfaces.DSAKeyPairGenerator](../java/security/interfaces/DSAKeyPairGenerator.md) |
+| [java.security.interfaces.DSAKeyPairGenerator](DSAKeyPairGenerator.md) |
 
 An interface to an object capable of generating DSA key pairs.
 
@@ -28,8 +28,8 @@ Note: Some earlier implementations of this interface may not support larger valu
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [initialize](../java/security/interfaces/DSAKeyPairGenerator.md))`(`modlen:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `genParams:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `random:` ` [SecureRandom](../java/security/SecureRandom.md)!`)` Initializes the key pair generator for a given modulus length (instead of parameters), and an optional SecureRandom bit source. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [initialize](../java/security/interfaces/DSAKeyPairGenerator.md))`(`params:` ` [DSAParams](../java/security/interfaces/DSAParams.md)!`, `random:` ` [SecureRandom](../java/security/SecureRandom.md)!`)` Initializes the key pair generator using the DSA family parameters (p,q and g) and an optional SecureRandom bit source. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [initialize](DSAKeyPairGenerator.md))`(`modlen:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `genParams:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `random:` ` [SecureRandom](../java.security/SecureRandom.md)!`)` Initializes the key pair generator for a given modulus length (instead of parameters), and an optional SecureRandom bit source. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [initialize](DSAKeyPairGenerator.md))`(`params:` ` [DSAParams](DSAParams.md)!`, `random:` ` [SecureRandom](../java.security/SecureRandom.md)!`)` Initializes the key pair generator using the DSA family parameters (p,q and g) and an optional SecureRandom bit source. |
 
 ## Public methods
 
@@ -52,7 +52,7 @@ If`genParams`is true, this method generates new p, q and g parameters. If it is 
 | Parameters ||
 |-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `modlen` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the modulus length in bits. Valid values are any multiple of 64 between 512 and 1024, inclusive, 2048, and 3072. |
-| `random` | [SecureRandom](../java/security/SecureRandom.md)!:the random bit source to use to generate key bits; can be null. |
+| `random` | [SecureRandom](../java.security/SecureRandom.md)!:the random bit source to use to generate key bits; can be null. |
 | `genParams` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):whether or not to generate new parameters for the modulus length requested. |
 | --- | --- |
 
@@ -75,8 +75,8 @@ Initializes the key pair generator using the DSA family parameters (p,q and g) a
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `params` | [DSAParams](../java/security/interfaces/DSAParams.md)!:the parameters to use to generate the keys. |
-| `random` | [SecureRandom](../java/security/SecureRandom.md)!:the random bit source to use to generate key bits; can be null. |
+| `params` | [DSAParams](DSAParams.md)!:the parameters to use to generate the keys. |
+| `random` | [SecureRandom](../java.security/SecureRandom.md)!:the random bit source to use to generate key bits; can be null. |
 
 | Exceptions ||
 |-------------------------------------------|-------------------------------------------------------|

@@ -10,7 +10,7 @@ open class DHParameterSpec : AlgorithmParameterSpec
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.crypto.spec.DHParameterSpec](../javax/crypto/spec/DHParameterSpec.md) |
+| ↳ | [javax.crypto.spec.DHParameterSpec](DHParameterSpec.md) |
 
 This class specifies the set of parameters used with the Diffie-Hellman algorithm, as specified in PKCS #3:*Diffie-Hellman Key-Agreement Standard*.
 
@@ -24,14 +24,14 @@ Note that this class does not perform any validation on specified parameters. Th
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [DHParameterSpec](../javax/crypto/spec/DHParameterSpec.md))`(`p:` ` [BigInteger](../java/math/BigInteger.md)!`, `g:` ` [BigInteger](../java/math/BigInteger.md)!`)` Constructs a parameter set for Diffie-Hellman, using a prime modulus`p`and a base generator`g`. |
-| [DHParameterSpec](../javax/crypto/spec/DHParameterSpec.md))`(`p:` ` [BigInteger](../java/math/BigInteger.md)!`, `g:` ` [BigInteger](../java/math/BigInteger.md)!`, `l:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a parameter set for Diffie-Hellman, using a prime modulus`p`, a base generator`g`, and the size in bits,`l`, of the random exponent (private value). |
+| [DHParameterSpec](DHParameterSpec.md))`(`p:` ` [BigInteger](../java.math/BigInteger.md)!`, `g:` ` [BigInteger](../java.math/BigInteger.md)!`)` Constructs a parameter set for Diffie-Hellman, using a prime modulus`p`and a base generator`g`. |
+| [DHParameterSpec](DHParameterSpec.md))`(`p:` ` [BigInteger](../java.math/BigInteger.md)!`, `g:` ` [BigInteger](../java.math/BigInteger.md)!`, `l:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a parameter set for Diffie-Hellman, using a prime modulus`p`, a base generator`g`, and the size in bits,`l`, of the random exponent (private value). |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [BigInteger](../java/math/BigInteger.md)! | [getG](../javax/crypto/spec/DHParameterSpec.md))`()` Returns the base generator`g`. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getL](../javax/crypto/spec/DHParameterSpec.md))`()` Returns the size in bits,`l`, of the random exponent (private value). |
-| open [BigInteger](../java/math/BigInteger.md)! | [getP](../javax/crypto/spec/DHParameterSpec.md))`()` Returns the prime modulus`p`. |
+| open [BigInteger](../java.math/BigInteger.md)! | [getG](DHParameterSpec.md))`()` Returns the base generator`g`. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getL](DHParameterSpec.md))`()` Returns the size in bits,`l`, of the random exponent (private value). |
+| open [BigInteger](../java.math/BigInteger.md)! | [getP](DHParameterSpec.md))`()` Returns the prime modulus`p`. |
 | --- | --- |
 
 ## Public constructors
@@ -50,8 +50,8 @@ Constructs a parameter set for Diffie-Hellman, using a prime modulus`p`and a bas
 
 | Parameters ||
 |-----|-------------------------------------------------------------------------------------------------------------|
-| `p` | [BigInteger](../java/math/BigInteger.md)!:the prime modulus |
-| `g` | [BigInteger](../java/math/BigInteger.md)!:the base generator |
+| `p` | [BigInteger](../java.math/BigInteger.md)!:the prime modulus |
+| `g` | [BigInteger](../java.math/BigInteger.md)!:the base generator |
 
 ### DHParameterSpec
 
@@ -68,8 +68,8 @@ Constructs a parameter set for Diffie-Hellman, using a prime modulus`p`, a base 
 
 | Parameters ||
 |-----|------------------------------------------------------------------------------------------------------------------------------------|
-| `p` | [BigInteger](../java/math/BigInteger.md)!:the prime modulus |
-| `g` | [BigInteger](../java/math/BigInteger.md)!:the base generator |
+| `p` | [BigInteger](../java.math/BigInteger.md)!:the prime modulus |
+| `g` | [BigInteger](../java.math/BigInteger.md)!:the base generator |
 | `l` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the size in bits of the random exponent (private value) |
 | --- | --- |
 
@@ -87,7 +87,7 @@ Returns the base generator`g`.
 
 | Return ||
 |------------------------------------------------------------------------------------------|-----------------------|
-| [BigInteger](../java/math/BigInteger.md)! | the base generator`g` |
+| [BigInteger](../java.math/BigInteger.md)! | the base generator`g` |
 
 ### getL
 
@@ -115,4 +115,4 @@ Returns the prime modulus`p`.
 
 | Return ||
 |------------------------------------------------------------------------------------------|----------------------|
-| [BigInteger](../java/math/BigInteger.md)! | the prime modulus`p` |
+| [BigInteger](../java.math/BigInteger.md)! | the prime modulus`p` |

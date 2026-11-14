@@ -5,7 +5,7 @@ Also in [Ad Services Extensions 4](https://developer.android.com/sdkExtensions)
 
 # AdServicesPermissions
 
-Kotlin| [Java](../android/adservices/common/AdServicesPermissions.md) 
+Kotlin| [Java](AdServicesPermissions.md) 
 | --- | --- |
 
 ```
@@ -14,7 +14,7 @@ open class AdServicesPermissions
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.adservices.common.AdServicesPermissions](../android/adservices/common/AdServicesPermissions.md) |
+| ↳ | [android.adservices.common.AdServicesPermissions](AdServicesPermissions.md) |
 
 Permissions used by the AdServices APIs.
 
@@ -22,13 +22,13 @@ Permissions used by the AdServices APIs.
 
 | Constants ||
 |----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACCESS_ADSERVICES_AD_ID](../android/adservices/common/AdServicesPermissions.md) This permission needs to be declared by the caller of Advertising ID APIs. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACCESS_ADSERVICES_AD_SELECTION](../android/adservices/common/AdServicesPermissions.md) This permission needs to be declared by the caller of Protected Signals APIs. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACCESS_ADSERVICES_ATTRIBUTION](../android/adservices/common/AdServicesPermissions.md) This permission needs to be declared by the caller of Attribution APIs. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACCESS_ADSERVICES_AD_ID](AdServicesPermissions.md) This permission needs to be declared by the caller of Advertising ID APIs. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACCESS_ADSERVICES_AD_SELECTION](AdServicesPermissions.md) This permission needs to be declared by the caller of Protected Signals APIs. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACCESS_ADSERVICES_ATTRIBUTION](AdServicesPermissions.md) This permission needs to be declared by the caller of Attribution APIs. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACCESS_ADSERVICES_CUSTOM_AUDIENCE](../android/adservices/common/AdServicesPermissions.md) This permission needs to be declared by the caller of Custom Audiences APIs. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACCESS_ADSERVICES_PROTECTED_SIGNALS](../android/adservices/common/AdServicesPermissions.md) This permission needs to be declared by the caller of Protected Signals APIs. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACCESS_ADSERVICES_TOPICS](../android/adservices/common/AdServicesPermissions.md) This permission needs to be declared by the caller of Topics APIs. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACCESS_ADSERVICES_CUSTOM_AUDIENCE](AdServicesPermissions.md) This permission needs to be declared by the caller of Custom Audiences APIs. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACCESS_ADSERVICES_PROTECTED_SIGNALS](AdServicesPermissions.md) This permission needs to be declared by the caller of Protected Signals APIs. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACCESS_ADSERVICES_TOPICS](AdServicesPermissions.md) This permission needs to be declared by the caller of Topics APIs. |
 | --- | --- |
 
 ## Constants

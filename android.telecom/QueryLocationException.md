@@ -4,7 +4,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # QueryLocationException
 
-Kotlin| [Java](../android/telecom/QueryLocationException.md) 
+Kotlin| [Java](QueryLocationException.md) 
 | --- | --- |
 
 ```
@@ -14,46 +14,46 @@ class QueryLocationException : RuntimeException, Parcelable
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
-| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) ||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) |||
+| | | ↳ | [java.lang.RuntimeException](../java.lang/RuntimeException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.telecom.QueryLocationException](../android/telecom/QueryLocationException.md) |
+| | | | ↳ | [android.telecom.QueryLocationException](QueryLocationException.md) |
 
-This class represents a set of exceptions that can occur when requesting a [Connection.queryLocationForEmergency(long, String, Executor, OutcomeReceiver)](../android/telecom/Connection.md))
+This class represents a set of exceptions that can occur when requesting a [Connection.queryLocationForEmergency(long, String, Executor, OutcomeReceiver)](Connection.md))
 
 ## Summary
 
 | Constants ||
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_NOT_ALLOWED_FOR_NON_EMERGENCY_CONNECTIONS](../android/telecom/QueryLocationException.md) The operation has failed due to a location query being requested for a non-emergency connection. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_NOT_PERMITTED](../android/telecom/QueryLocationException.md) The operation has failed because it is not permitted. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_PREVIOUS_REQUEST_EXISTS](../android/telecom/QueryLocationException.md) The operation was rejected due to an existing request. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_NOT_ALLOWED_FOR_NON_EMERGENCY_CONNECTIONS](QueryLocationException.md) The operation has failed due to a location query being requested for a non-emergency connection. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_NOT_PERMITTED](QueryLocationException.md) The operation has failed because it is not permitted. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_PREVIOUS_REQUEST_EXISTS](QueryLocationException.md) The operation was rejected due to an existing request. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_REQUEST_TIME_OUT](../android/telecom/QueryLocationException.md) The operation was not completed on time. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_SERVICE_UNAVAILABLE](../android/telecom/QueryLocationException.md) The operation has failed due to the service is not available. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_UNSPECIFIED](../android/telecom/QueryLocationException.md) The operation has failed due to an unknown or unspecified error. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_REQUEST_TIME_OUT](QueryLocationException.md) The operation was not completed on time. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_SERVICE_UNAVAILABLE](QueryLocationException.md) The operation has failed due to the service is not available. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ERROR_UNSPECIFIED](QueryLocationException.md) The operation has failed due to an unknown or unspecified error. |
 | --- | --- |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android.os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android.os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android.os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [QueryLocationException](../android/telecom/QueryLocationException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` <br /> |
-| [QueryLocationException](../android/telecom/QueryLocationException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `code:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| [QueryLocationException](../android/telecom/QueryLocationException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `code:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?`)` <br /> |
+| [QueryLocationException](QueryLocationException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` <br /> |
+| [QueryLocationException](QueryLocationException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `code:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [QueryLocationException](QueryLocationException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `code:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?`)` <br /> |
 
 | Public methods ||
 |------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/telecom/QueryLocationException.md))`()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCode](../android/telecom/QueryLocationException.md))`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/telecom/QueryLocationException.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](QueryLocationException.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCode](QueryLocationException.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](QueryLocationException.md))`(`dest:` ` [Parcel](../android.os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
 
 | Properties ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [QueryLocationException](../android/telecom/QueryLocationException.md)!\> | [CREATOR](../android/telecom/QueryLocationException.md) Responsible for creating QueryLocationException objects for deserialized Parcels. |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [QueryLocationException](QueryLocationException.md)!\> | [CREATOR](QueryLocationException.md) Responsible for creating QueryLocationException objects for deserialized Parcels. |
 
 ## Constants
 
@@ -156,7 +156,7 @@ QueryLocationException(
 | Parameters ||
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:This value may be`null`. |
-| `code` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is [android.telecom.QueryLocationException#ERROR_REQUEST_TIME_OUT](../android/telecom/QueryLocationException.md), [android.telecom.QueryLocationException#ERROR_PREVIOUS_REQUEST_EXISTS](../android/telecom/QueryLocationException.md), [android.telecom.QueryLocationException#ERROR_NOT_PERMITTED](../android/telecom/QueryLocationException.md), [android.telecom.QueryLocationException#ERROR_NOT_ALLOWED_FOR_NON_EMERGENCY_CONNECTIONS](../android/telecom/QueryLocationException.md), [android.telecom.QueryLocationException#ERROR_SERVICE_UNAVAILABLE](../android/telecom/QueryLocationException.md), or [android.telecom.QueryLocationException#ERROR_UNSPECIFIED](../android/telecom/QueryLocationException.md) |
+| `code` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is [android.telecom.QueryLocationException#ERROR_REQUEST_TIME_OUT](QueryLocationException.md), [android.telecom.QueryLocationException#ERROR_PREVIOUS_REQUEST_EXISTS](QueryLocationException.md), [android.telecom.QueryLocationException#ERROR_NOT_PERMITTED](QueryLocationException.md), [android.telecom.QueryLocationException#ERROR_NOT_ALLOWED_FOR_NON_EMERGENCY_CONNECTIONS](QueryLocationException.md), [android.telecom.QueryLocationException#ERROR_SERVICE_UNAVAILABLE](QueryLocationException.md), or [android.telecom.QueryLocationException#ERROR_UNSPECIFIED](QueryLocationException.md) |
 
 ### QueryLocationException
 
@@ -172,7 +172,7 @@ QueryLocationException(
 | Parameters ||
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:This value may be`null`. |
-| `code` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is [android.telecom.QueryLocationException#ERROR_REQUEST_TIME_OUT](../android/telecom/QueryLocationException.md), [android.telecom.QueryLocationException#ERROR_PREVIOUS_REQUEST_EXISTS](../android/telecom/QueryLocationException.md), [android.telecom.QueryLocationException#ERROR_NOT_PERMITTED](../android/telecom/QueryLocationException.md), [android.telecom.QueryLocationException#ERROR_NOT_ALLOWED_FOR_NON_EMERGENCY_CONNECTIONS](../android/telecom/QueryLocationException.md), [android.telecom.QueryLocationException#ERROR_SERVICE_UNAVAILABLE](../android/telecom/QueryLocationException.md), or [android.telecom.QueryLocationException#ERROR_UNSPECIFIED](../android/telecom/QueryLocationException.md) |
+| `code` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is [android.telecom.QueryLocationException#ERROR_REQUEST_TIME_OUT](QueryLocationException.md), [android.telecom.QueryLocationException#ERROR_PREVIOUS_REQUEST_EXISTS](QueryLocationException.md), [android.telecom.QueryLocationException#ERROR_NOT_PERMITTED](QueryLocationException.md), [android.telecom.QueryLocationException#ERROR_NOT_ALLOWED_FOR_NON_EMERGENCY_CONNECTIONS](QueryLocationException.md), [android.telecom.QueryLocationException#ERROR_SERVICE_UNAVAILABLE](QueryLocationException.md), or [android.telecom.QueryLocationException#ERROR_UNSPECIFIED](QueryLocationException.md) |
 | `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?:This value may be`null`. |
 | --- | --- |
 
@@ -188,7 +188,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) |
 
 ### getCode
 
@@ -200,7 +200,7 @@ fun getCode(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.telecom.QueryLocationException#ERROR_REQUEST_TIME_OUT](../android/telecom/QueryLocationException.md), [android.telecom.QueryLocationException#ERROR_PREVIOUS_REQUEST_EXISTS](../android/telecom/QueryLocationException.md), [android.telecom.QueryLocationException#ERROR_NOT_PERMITTED](../android/telecom/QueryLocationException.md), [android.telecom.QueryLocationException#ERROR_NOT_ALLOWED_FOR_NON_EMERGENCY_CONNECTIONS](../android/telecom/QueryLocationException.md), [android.telecom.QueryLocationException#ERROR_SERVICE_UNAVAILABLE](../android/telecom/QueryLocationException.md), or [android.telecom.QueryLocationException#ERROR_UNSPECIFIED](../android/telecom/QueryLocationException.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.telecom.QueryLocationException#ERROR_REQUEST_TIME_OUT](QueryLocationException.md), [android.telecom.QueryLocationException#ERROR_PREVIOUS_REQUEST_EXISTS](QueryLocationException.md), [android.telecom.QueryLocationException#ERROR_NOT_PERMITTED](QueryLocationException.md), [android.telecom.QueryLocationException#ERROR_NOT_ALLOWED_FOR_NON_EMERGENCY_CONNECTIONS](QueryLocationException.md), [android.telecom.QueryLocationException#ERROR_SERVICE_UNAVAILABLE](QueryLocationException.md), or [android.telecom.QueryLocationException#ERROR_UNSPECIFIED](QueryLocationException.md) |
 
 ### writeToParcel
 
@@ -215,8 +215,8 @@ fun writeToParcel(
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](../android/os/Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android.os/Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

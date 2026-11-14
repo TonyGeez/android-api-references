@@ -8,11 +8,11 @@ abstract class QuickAccessWalletService : Service
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](../android/content/Context.md) ||||
-| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) |||
-| | | ↳ | [android.app.Service](../android/app/Service.md) ||
+| ↳ | [android.content.Context](../android.content/Context.md) ||||
+| | ↳ | [android.content.ContextWrapper](../android.content/ContextWrapper.md) |||
+| | | ↳ | [android.app.Service](../android.app/Service.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.service.quickaccesswallet.QuickAccessWalletService](../android/service/quickaccesswallet/QuickAccessWalletService.md) |
+| | | | ↳ | [android.service.quickaccesswallet.QuickAccessWalletService](QuickAccessWalletService.md) |
 
 A `QuickAccessWalletService` provides a list of `WalletCard`s shown in the Quick Access Wallet. The Quick Access Wallet allows the user to change their selected payment method and access other important passes, such as tickets and transit passes, without leaving the context of their current app.
 
@@ -1116,9 +1116,9 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 
 | Public methods ||
 |---|---|
-| open [PendingIntent](../android/app/PendingIntent.md)? | `https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/QuickAccessWalletService#getGestureTargetActivityPendingIntent()()` Specify a `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` to be launched on user gesture. |
-| open [PendingIntent](../android/app/PendingIntent.md)? | `https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/QuickAccessWalletService#getTargetActivityPendingIntent()()` Specify a `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` to be launched as the "Quick Access" activity. |
-| open [IBinder](../android/os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/QuickAccessWalletService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Return the communication channel to the service. |
+| open [PendingIntent](../android.app/PendingIntent.md)? | `https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/QuickAccessWalletService#getGestureTargetActivityPendingIntent()()` Specify a `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` to be launched on user gesture. |
+| open [PendingIntent](../android.app/PendingIntent.md)? | `https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/QuickAccessWalletService#getTargetActivityPendingIntent()()` Specify a `https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#` to be launched as the "Quick Access" activity. |
+| open [IBinder](../android.os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/QuickAccessWalletService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Return the communication channel to the service. |
 | --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/QuickAccessWalletService#onWalletCardSelected(android.service.quickaccesswallet.SelectWalletCardRequest)(request: https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/SelectWalletCardRequest)` A wallet card was selected. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/QuickAccessWalletService#onWalletCardsRequested(android.service.quickaccesswallet.GetWalletCardsRequest,%20android.service.quickaccesswallet.GetWalletCardsCallback)(request: https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/GetWalletCardsRequest, callback: https://developer.android.com/reference/kotlin/android/service/quickaccesswallet/GetWalletCardsCallback)` Called when the user requests the service to provide wallet cards. |
@@ -2924,7 +2924,7 @@ Return the communication channel to the service. May return null if clients can 
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md): This value cannot be `null`. |
+| `intent` | [Intent](../android.content/Intent.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -2944,7 +2944,7 @@ Card selection events are especially important to NFC payment applications becau
 
 | Parameters ||
 |---|---|
-| `request` | [SelectWalletCardRequest](../android/service/quickaccesswallet/SelectWalletCardRequest.md): This value cannot be `null`. |
+| `request` | [SelectWalletCardRequest](SelectWalletCardRequest.md): This value cannot be `null`. |
 
 ### onWalletCardsRequested
 
@@ -2963,8 +2963,8 @@ This method will be called on the main thread, but the callback may be called fr
 
 | Parameters ||
 |---|---|
-| `request` | [GetWalletCardsRequest](../android/service/quickaccesswallet/GetWalletCardsRequest.md): This value cannot be `null`. |
-| `callback` | [GetWalletCardsCallback](../android/service/quickaccesswallet/GetWalletCardsCallback.md): This value cannot be `null`. |
+| `request` | [GetWalletCardsRequest](GetWalletCardsRequest.md): This value cannot be `null`. |
+| `callback` | [GetWalletCardsCallback](GetWalletCardsCallback.md): This value cannot be `null`. |
 
 ### onWalletDismissed
 
@@ -2990,4 +2990,4 @@ Background events may require that the Quick Access Wallet view be updated. For 
 
 | Parameters ||
 |---|---|
-| `serviceEvent` | [WalletServiceEvent](../android/service/quickaccesswallet/WalletServiceEvent.md): This value cannot be `null`. |
+| `serviceEvent` | [WalletServiceEvent](WalletServiceEvent.md): This value cannot be `null`. |

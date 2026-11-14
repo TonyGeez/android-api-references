@@ -19,7 +19,7 @@ The callback interface used to indicate the user is done filling in the time (e.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTimeSet](../android/app/TimePickerDialog.OnTimeSetListener.md))`(`view:` ` [TimePicker](../android/widget/TimePicker.md)!`, `hourOfDay:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `minute:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when the user is done setting a new time and the dialog has closed. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTimeSet](../android/app/TimePickerDialog.OnTimeSetListener.md))`(`view:` ` [TimePicker](../android.widget/TimePicker.md)!`, `hourOfDay:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `minute:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when the user is done setting a new time and the dialog has closed. |
 
 ## Public methods
 
@@ -39,7 +39,7 @@ Called when the user is done setting a new time and the dialog has closed.
 
 | Parameters ||
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------|
-| `view` | [TimePicker](../android/widget/TimePicker.md)!:the view associated with this listener |
+| `view` | [TimePicker](../android.widget/TimePicker.md)!:the view associated with this listener |
 | `hourOfDay` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the hour that was set |
 | `minute` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the minute that was set |
 | --- | --- |

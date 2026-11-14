@@ -10,35 +10,35 @@ abstract class Enum<E : Enum<E>!> : Comparable<E>, Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.lang.Enum](../java/lang/Enum.md) |
+| ↳ | [java.lang.Enum](Enum.md) |
 
 This is the common base class of all Java language enumeration classes. More information about enums, including descriptions of the implicitly declared methods synthesized by the compiler, can be found in section {@jls 8.9} of The Java Language Specification. Enumeration classes are all serializable and receive special handling by the serialization mechanism. The serialized representation used for enum constants cannot be customized. Declarations of methods and fields that would otherwise interact with serialization are ignored, including`serialVersionUID`; see the Java Object Serialization Specification for details.
 
-Note that when using an enumeration type as the type of a set or as the type of the keys in a map, specialized and efficient [set](../java/util/EnumSet.md) and implementations are available.
+Note that when using an enumeration type as the type of a set or as the type of the keys in a map, specialized and efficient [set](../java.util/EnumSet.md) and implementations are available.
 
 ## Summary
 
 | Protected constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Enum](../java/lang/Enum.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `ordinal:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sole constructor. |
+| [Enum](Enum.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `ordinal:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sole constructor. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](../java/lang/Enum.md))`(`other:` `E`)` Compares this enum with the specified object for order. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/lang/Enum.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Returns true if the specified object is equal to this enum constant. |
-| [Class](../java/lang/Class.md)\<E\> | [getDeclaringClass](../java/lang/Enum.md))`()` Returns the Class object corresponding to this enum constant's enum type. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](Enum.md))`(`other:` `E`)` Compares this enum with the specified object for order. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](Enum.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Returns true if the specified object is equal to this enum constant. |
+| [Class](Class.md)\<E\> | [getDeclaringClass](Enum.md))`()` Returns the Class object corresponding to this enum constant's enum type. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/lang/Enum.md))`()` Returns a hash code for this enum constant. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [name](../java/lang/Enum.md))`()` Returns the name of this enum constant, exactly as declared in its enum declaration. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ordinal](../java/lang/Enum.md))`()` Returns the ordinal of this enumeration constant (its position in its enum declaration, where the initial constant is assigned an ordinal of zero). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](Enum.md))`()` Returns a hash code for this enum constant. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [name](Enum.md))`()` Returns the name of this enum constant, exactly as declared in its enum declaration. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ordinal](Enum.md))`()` Returns the ordinal of this enumeration constant (its position in its enum declaration, where the initial constant is assigned an ordinal of zero). |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/lang/Enum.md))`()` Returns the name of this enum constant, as contained in the declaration. |
-| openstaticT | [valueOf](../java/lang/Enum.md))`(`enumClass:` ` [Class](../java/lang/Class.md)<T>`, `name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns the enum constant of the specified enum class with the specified name. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](Enum.md))`()` Returns the name of this enum constant, as contained in the declaration. |
+| openstaticT | [valueOf](Enum.md))`(`enumClass:` ` [Class](Class.md)<T>`, `name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns the enum constant of the specified enum class with the specified name. |
 
 | Protected methods ||
 |------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](../java/lang/Enum.md))`()` Throws CloneNotSupportedException. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](../java/lang/Enum.md))`()` enum classes cannot have finalize methods. |
+| [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](Enum.md))`()` Throws CloneNotSupportedException. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](Enum.md))`()` enum classes cannot have finalize methods. |
 
 ## Protected constructors
 
@@ -111,11 +111,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun getDeclaringClass(): Class<E>
 ```
 
-Returns the Class object corresponding to this enum constant's enum type. Two enum constants e1 and e2 are of the same enum type if and only if e1.getDeclaringClass() == e2.getDeclaringClass(). (The value returned by this method may differ from the one returned by the [Object.getClass](../java/lang/Object.md))method for enum constants with constant-specific class bodies.)
+Returns the Class object corresponding to this enum constant's enum type. Two enum constants e1 and e2 are of the same enum type if and only if e1.getDeclaringClass() == e2.getDeclaringClass(). (The value returned by this method may differ from the one returned by the [Object.getClass](Object.md))method for enum constants with constant-specific class bodies.)
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------------------------------------|
-| [Class](../java/lang/Class.md)<E> | the Class object corresponding to this enum constant's enum type |
+| [Class](Class.md)<E> | the Class object corresponding to this enum constant's enum type |
 
 ### hashCode
 
@@ -139,7 +139,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun name(): String
 ```
 
-Returns the name of this enum constant, exactly as declared in its enum declaration.**Most programmers should use the [toString](../java/lang/Enum.md))method in preference to this one, as the toString method may return a more user-friendly name.**This method is designed primarily for use in specialized situations where correctness depends on getting the exact name, which will not vary from release to release.
+Returns the name of this enum constant, exactly as declared in its enum declaration.**Most programmers should use the [toString](Enum.md))method in preference to this one, as the toString method may return a more user-friendly name.**This method is designed primarily for use in specialized situations where correctness depends on getting the exact name, which will not vary from release to release.
 
 | Return ||
 |----------------------------------------------------------------------------------|--------------------------------|
@@ -153,7 +153,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun ordinal(): Int
 ```
 
-Returns the ordinal of this enumeration constant (its position in its enum declaration, where the initial constant is assigned an ordinal of zero). Most programmers will have no use for this method. It is designed for use by sophisticated enum-based data structures, such as [java.util.EnumSet](../java/util/EnumSet.md) and [java.util.EnumMap](../java/util/EnumMap.md).
+Returns the ordinal of this enumeration constant (its position in its enum declaration, where the initial constant is assigned an ordinal of zero). Most programmers will have no use for this method. It is designed for use by sophisticated enum-based data structures, such as [java.util.EnumSet](../java.util/EnumSet.md) and [java.util.EnumMap](../java.util/EnumMap.md).
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------------|
@@ -191,7 +191,7 @@ Note that for a particular enum class`T`, the implicitly declared`public static 
 | Parameters ||
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 | `<T>` | The enum class whose constant is to be returned |
-| `enumClass` | [Class](../java/lang/Class.md)\<T\>:the`Class`object of the enum class from which to return a constant |
+| `enumClass` | [Class](Class.md)\<T\>:the`Class`object of the enum class from which to return a constant |
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):the name of the constant to return |
 | --- | --- |
 

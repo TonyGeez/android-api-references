@@ -8,7 +8,7 @@ open class SpeechRecognizer
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.speech.SpeechRecognizer](../android/speech/SpeechRecognizer.md) |
+| ↳ | [android.speech.SpeechRecognizer](SpeechRecognizer.md) |
 
 This class provides access to the speech recognition service. This service allows access to the speech recognizer. Do not instantiate this class directly, instead, call `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#createSpeechRecognizer(android.content.Context)`. This class's methods must be invoked only from the main application thread.
 
@@ -68,10 +68,10 @@ Please note that the application must have `https://developer.android.com/refere
 |---|---|
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#cancel()()` Cancels the speech recognition. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#checkRecognitionSupport(android.content.Intent,%20java.util.concurrent.Executor,%20android.speech.RecognitionSupportCallback)(recognizerIntent: https://developer.android.com/reference/kotlin/android/content/Intent.html#, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, supportListener: https://developer.android.com/reference/kotlin/android/speech/RecognitionSupportCallback)` Checks whether `recognizerIntent` is supported by `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#startListening(android.content.Intent)`. |
-| open static [SpeechRecognizer](../android/speech/SpeechRecognizer.md) | `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#createOnDeviceSpeechRecognizer(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Factory method to create a new `SpeechRecognizer`. |
+| open static [SpeechRecognizer](SpeechRecognizer.md) | `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#createOnDeviceSpeechRecognizer(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Factory method to create a new `SpeechRecognizer`. |
 | --- | --- |
-| open static [SpeechRecognizer](../android/speech/SpeechRecognizer.md)! | `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#createSpeechRecognizer(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!)` Factory method to create a new `SpeechRecognizer`. |
-| open static [SpeechRecognizer](../android/speech/SpeechRecognizer.md)! | `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#createSpeechRecognizer(android.content.Context,%20android.content.ComponentName)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, serviceComponent: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#!)` Factory method to create a new `SpeechRecognizer`. |
+| open static [SpeechRecognizer](SpeechRecognizer.md)! | `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#createSpeechRecognizer(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!)` Factory method to create a new `SpeechRecognizer`. |
+| open static [SpeechRecognizer](SpeechRecognizer.md)! | `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#createSpeechRecognizer(android.content.Context,%20android.content.ComponentName)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!, serviceComponent: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#!)` Factory method to create a new `SpeechRecognizer`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#destroy()()` Destroys the `SpeechRecognizer` object. |
 | --- | --- |
 | open static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#isOnDeviceRecognitionAvailable(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#)` Checks whether an on-device speech recognition service is available on the system. |
@@ -495,9 +495,9 @@ Checks whether `recognizerIntent` is supported by `https://developer.android.com
 
 | Parameters ||
 |---|---|
-| `recognizerIntent` | [Intent](../android/content/Intent.md): contains parameters for the recognition to be performed. The intent may also contain optional extras. See `https://developer.android.com/reference/kotlin/android/speech/RecognizerIntent` for the list of supported extras, any unlisted extra might be ignored. This value cannot be `null`. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `supportListener` | [RecognitionSupportCallback](../android/speech/RecognitionSupportCallback.md): the listener on which to receive the support query results. This value cannot be `null`. |
+| `recognizerIntent` | [Intent](../android.content/Intent.md): contains parameters for the recognition to be performed. The intent may also contain optional extras. See `https://developer.android.com/reference/kotlin/android/speech/RecognizerIntent` for the list of supported extras, any unlisted extra might be ignored. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `supportListener` | [RecognitionSupportCallback](RecognitionSupportCallback.md): the listener on which to receive the support query results. This value cannot be `null`. |
 | --- | --- |
 
 ### createOnDeviceSpeechRecognizer
@@ -517,7 +517,7 @@ This method must be called from the main thread of your app.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md): in which to create `SpeechRecognizer` This value cannot be `null`. |
+| `context` | [Context](../android.content/Context.md): in which to create `SpeechRecognizer` This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -555,7 +555,7 @@ This method must be called from the main thread of your app.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md)!: in which to create `SpeechRecognizer` |
+| `context` | [Context](../android.content/Context.md)!: in which to create `SpeechRecognizer` |
 
 | Return ||
 |---|---|
@@ -594,8 +594,8 @@ This method must be called from the main thread of your app.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md)!: in which to create `SpeechRecognizer` |
-| `serviceComponent` | [ComponentName](../android/content/ComponentName.md)!: the `https://developer.android.com/reference/kotlin/android/content/ComponentName.html#` of a specific service to direct this `SpeechRecognizer` to |
+| `context` | [Context](../android.content/Context.md)!: in which to create `SpeechRecognizer` |
+| `serviceComponent` | [ComponentName](../android.content/ComponentName.md)!: the `https://developer.android.com/reference/kotlin/android/content/ComponentName.html#` of a specific service to direct this `SpeechRecognizer` to |
 
 | Return ||
 |---|---|
@@ -623,7 +623,7 @@ Checks whether an on-device speech recognition service is available on the syste
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md): with which on-device `SpeechRecognizer` will be created. This value cannot be `null`. |
+| `context` | [Context](../android.content/Context.md): with which on-device `SpeechRecognizer` will be created. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -641,7 +641,7 @@ Checks whether a speech recognition service is available on the system. If this 
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md): with which `SpeechRecognizer` will be created. This value cannot be `null`. |
+| `context` | [Context](../android.content/Context.md): with which `SpeechRecognizer` will be created. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -660,7 +660,7 @@ This method must be called from the main thread of your app.
 
 | Parameters ||
 |---|---|
-| `listener` | [RecognitionListener](../android/speech/RecognitionListener.md)!: listener that will receive all the callbacks from the created `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#`, this must not be null. |
+| `listener` | [RecognitionListener](RecognitionListener.md)!: listener that will receive all the callbacks from the created `https://developer.android.com/reference/kotlin/android/speech/SpeechRecognizer#`, this must not be null. |
 
 ### startListening
 
@@ -675,7 +675,7 @@ This method must be called from the main thread of your app.
 
 | Parameters ||
 |---|---|
-| `recognizerIntent` | [Intent](../android/content/Intent.md)!: contains parameters for the recognition to be performed. The intent may also contain optional extras, see `https://developer.android.com/reference/kotlin/android/speech/RecognizerIntent`. If these values are not set explicitly, default values will be used by the recognizer. |
+| `recognizerIntent` | [Intent](../android.content/Intent.md)!: contains parameters for the recognition to be performed. The intent may also contain optional extras, see `https://developer.android.com/reference/kotlin/android/speech/RecognizerIntent`. If these values are not set explicitly, default values will be used by the recognizer. |
 
 ### stopListening
 
@@ -706,7 +706,7 @@ Attempts to download the support for the given `recognizerIntent`. This might tr
 
 | Parameters ||
 |---|---|
-| `recognizerIntent` | [Intent](../android/content/Intent.md): contains parameters for the recognition to be performed. The intent may also contain optional extras, see `https://developer.android.com/reference/kotlin/android/speech/RecognizerIntent`. This value cannot be `null`. |
+| `recognizerIntent` | [Intent](../android.content/Intent.md): contains parameters for the recognition to be performed. The intent may also contain optional extras, see `https://developer.android.com/reference/kotlin/android/speech/RecognizerIntent`. This value cannot be `null`. |
 
 ### triggerModelDownload
 
@@ -730,7 +730,7 @@ The updates about the model download request are received via the given `https:/
 
 | Parameters ||
 |---|---|
-| `recognizerIntent` | [Intent](../android/content/Intent.md): contains parameters for the recognition to be performed. The intent may also contain optional extras, see `https://developer.android.com/reference/kotlin/android/speech/RecognizerIntent`. This value cannot be `null`. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): for dispatching listener callbacks. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `listener` | [ModelDownloadListener](../android/speech/ModelDownloadListener.md): on which to receive updates about the model download request. This value cannot be `null`. |
+| `recognizerIntent` | [Intent](../android.content/Intent.md): contains parameters for the recognition to be performed. The intent may also contain optional extras, see `https://developer.android.com/reference/kotlin/android/speech/RecognizerIntent`. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): for dispatching listener callbacks. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `listener` | [ModelDownloadListener](ModelDownloadListener.md): on which to receive updates about the model download request. This value cannot be `null`. |
 | --- | --- |

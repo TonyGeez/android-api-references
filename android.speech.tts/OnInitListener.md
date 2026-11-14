@@ -35,4 +35,4 @@ Called to signal the completion of the TextToSpeech engine initialization.
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `status` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): [TextToSpeech.SUCCESS](../android/speech/tts/TextToSpeech.md) or [TextToSpeech.ERROR](../android/speech/tts/TextToSpeech.md). |
+| `status` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): [TextToSpeech.SUCCESS](TextToSpeech.md) or [TextToSpeech.ERROR](TextToSpeech.md). |

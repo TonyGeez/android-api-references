@@ -5,7 +5,7 @@ Deprecated in [API level 30](https://developer.android.com/guide/topics/manifest
 
 # DrmStore
 
-Kotlin| [Java](../android/drm/DrmStore.md) 
+Kotlin| [Java](DrmStore.md) 
 | --- | --- |
 
 ```
@@ -14,11 +14,11 @@ open class DrmStore
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.drm.DrmStore](../android/drm/DrmStore.md) |
+| ↳ | [android.drm.DrmStore](DrmStore.md) |
 
 | **This class was deprecated in API level 30.**
 |
-| Please use [android.media.MediaDrm](../android/media/MediaDrm.md)
+| Please use [android.media.MediaDrm](../android.media/MediaDrm.md)
 
 Defines constants that are used by the DRM framework.
 
@@ -35,7 +35,7 @@ Defines constants that are used by the DRM framework.
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------|---|
-| [DrmStore](../android/drm/DrmStore.md))`()` <br /> |
+| [DrmStore](DrmStore.md))`()` <br /> |
 
 ## Public constructors
 

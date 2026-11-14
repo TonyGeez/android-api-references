@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # ComposePathEffect
 
-Kotlin | [Java](../android/graphics/ComposePathEffect.md) 
+Kotlin | [Java](ComposePathEffect.md) 
 | --- | --- |
 
 ```
@@ -13,18 +13,18 @@ open class ComposePathEffect : PathEffect
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.graphics.PathEffect](../android/graphics/PathEffect.md) ||
-| | ↳ | [android.graphics.ComposePathEffect](../android/graphics/ComposePathEffect.md) |
+| ↳ | [android.graphics.PathEffect](PathEffect.md) ||
+| | ↳ | [android.graphics.ComposePathEffect](ComposePathEffect.md) |
 
 ## Summary
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ComposePathEffect](../android/graphics/ComposePathEffect.md))`(`outerpe:` ` [PathEffect](../android/graphics/PathEffect.md)!`, `innerpe:` ` [PathEffect](../android/graphics/PathEffect.md)!`)` Construct a PathEffect whose effect is to apply first the inner effect and the outer pathEffect (e.g. outer(inner(path))). |
+| [ComposePathEffect](ComposePathEffect.md))`(`outerpe:` ` [PathEffect](PathEffect.md)!`, `innerpe:` ` [PathEffect](PathEffect.md)!`)` Construct a PathEffect whose effect is to apply first the inner effect and the outer pathEffect (e.g. outer(inner(path))). |
 
 | Inherited functions ||
 |---|---|
-| From class [PathEffect](../android/graphics/PathEffect.md) |------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](../android/graphics/PathEffect.md))`()` <br /> | ||
+| From class [PathEffect](PathEffect.md) |------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](PathEffect.md))`()` <br /> | ||
 
 ## Public constructors
 

@@ -5,7 +5,7 @@ Deprecated in [API level 13](https://developer.android.com/guide/topics/manifest
 
 # LocalActivityManager
 
-Kotlin| [Java](../android/app/LocalActivityManager.md) 
+Kotlin| [Java](LocalActivityManager.md) 
 | --- | --- |
 
 ```
@@ -14,37 +14,37 @@ open class LocalActivityManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.LocalActivityManager](../android/app/LocalActivityManager.md) |
+| ↳ | [android.app.LocalActivityManager](LocalActivityManager.md) |
 
 | **This class was deprecated in API level 13.**
 |
-| Use the new [Fragment](../android/app/Fragment.md) and [FragmentManager](../android/app/FragmentManager.md) APIs instead; these are also available on older platforms through the Android compatibility package.
+| Use the new [Fragment](Fragment.md) and [FragmentManager](FragmentManager.md) APIs instead; these are also available on older platforms through the Android compatibility package.
 
-Helper class for managing multiple running embedded activities in the same process. This class is not normally used directly, but rather created for you as part of the [android.app.ActivityGroup](../android/app/ActivityGroup.md) implementation.
+Helper class for managing multiple running embedded activities in the same process. This class is not normally used directly, but rather created for you as part of the [android.app.ActivityGroup](ActivityGroup.md) implementation.
 
 ## Summary
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [LocalActivityManager](../android/app/LocalActivityManager.md))`(`parent:` ` [Activity](../android/app/Activity.md)!`, `singleMode:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Create a new LocalActivityManager for holding activities running within the given parent. |
+| [LocalActivityManager](LocalActivityManager.md))`(`parent:` ` [Activity](Activity.md)!`, `singleMode:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Create a new LocalActivityManager for holding activities running within the given parent. |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Window](../android/view/Window.md)! | [destroyActivity](../android/app/LocalActivityManager.md))`(`id:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `finish:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Destroy the activity associated with a particular id. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dispatchCreate](../android/app/LocalActivityManager.md))`(`state:` ` [Bundle](../android/os/Bundle.md)!`)` Restore a state that was previously returned by [saveInstanceState](../android/app/LocalActivityManager.md)). |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dispatchDestroy](../android/app/LocalActivityManager.md))`(`finishing:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Called by the container activity in its [Activity.onDestroy](../android/app/Activity.md))so that LocalActivityManager can perform the corresponding action on the activities it holds. |
+| open [Window](../android.view/Window.md)! | [destroyActivity](LocalActivityManager.md))`(`id:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `finish:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Destroy the activity associated with a particular id. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dispatchCreate](LocalActivityManager.md))`(`state:` ` [Bundle](../android.os/Bundle.md)!`)` Restore a state that was previously returned by [saveInstanceState](LocalActivityManager.md)). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dispatchDestroy](LocalActivityManager.md))`(`finishing:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Called by the container activity in its [Activity.onDestroy](Activity.md))so that LocalActivityManager can perform the corresponding action on the activities it holds. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dispatchPause](../android/app/LocalActivityManager.md))`(`finishing:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Called by the container activity in its [Activity.onPause](../android/app/Activity.md))so that LocalActivityManager can perform the corresponding action on the activities it holds. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dispatchResume](../android/app/LocalActivityManager.md))`()` Called by the container activity in its [Activity.onResume](../android/app/Activity.md))so that LocalActivityManager can perform the corresponding action on the activities it holds. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dispatchStop](../android/app/LocalActivityManager.md))`()` Called by the container activity in its [Activity.onStop](../android/app/Activity.md))so that LocalActivityManager can perform the corresponding action on the activities it holds. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dispatchPause](LocalActivityManager.md))`(`finishing:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Called by the container activity in its [Activity.onPause](Activity.md))so that LocalActivityManager can perform the corresponding action on the activities it holds. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dispatchResume](LocalActivityManager.md))`()` Called by the container activity in its [Activity.onResume](Activity.md))so that LocalActivityManager can perform the corresponding action on the activities it holds. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dispatchStop](LocalActivityManager.md))`()` Called by the container activity in its [Activity.onStop](Activity.md))so that LocalActivityManager can perform the corresponding action on the activities it holds. |
 | --- | --- |
-| open [Activity](../android/app/Activity.md)! | [getActivity](../android/app/LocalActivityManager.md))`(`id:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Return the Activity object associated with a string ID. |
-| open [Activity](../android/app/Activity.md)! | [getCurrentActivity](../android/app/LocalActivityManager.md))`()` Retrieve the Activity that is currently running. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getCurrentId](../android/app/LocalActivityManager.md))`()` Retrieve the ID of the activity that is currently running. |
+| open [Activity](Activity.md)! | [getActivity](LocalActivityManager.md))`(`id:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Return the Activity object associated with a string ID. |
+| open [Activity](Activity.md)! | [getCurrentActivity](LocalActivityManager.md))`()` Retrieve the Activity that is currently running. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getCurrentId](LocalActivityManager.md))`()` Retrieve the ID of the activity that is currently running. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeAllActivities](../android/app/LocalActivityManager.md))`()` Remove all activities from this LocalActivityManager, performing an [Activity.onDestroy](../android/app/Activity.md))on any that are currently instantiated. |
-| open [Bundle](../android/os/Bundle.md)! | [saveInstanceState](../android/app/LocalActivityManager.md))`()` Retrieve the state of all activities known by the group. |
-| open [Window](../android/view/Window.md)! | [startActivity](../android/app/LocalActivityManager.md))`(`id:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `intent:` ` [Intent](../android/content/Intent.md)!`)` Start a new activity running in the group. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeAllActivities](LocalActivityManager.md))`()` Remove all activities from this LocalActivityManager, performing an [Activity.onDestroy](Activity.md))on any that are currently instantiated. |
+| open [Bundle](../android.os/Bundle.md)! | [saveInstanceState](LocalActivityManager.md))`()` Retrieve the state of all activities known by the group. |
+| open [Window](../android.view/Window.md)! | [startActivity](LocalActivityManager.md))`(`id:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `intent:` ` [Intent](../android.content/Intent.md)!`)` Start a new activity running in the group. |
 | --- | --- |
 
 ## Public constructors
@@ -63,7 +63,7 @@ Create a new LocalActivityManager for holding activities running within the give
 
 | Parameters ||
 |--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `parent` | [Activity](../android/app/Activity.md)!:the host of the embedded activities |
+| `parent` | [Activity](Activity.md)!:the host of the embedded activities |
 | `singleMode` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):True if the LocalActivityManger should keep a maximum of one activity resumed |
 
 ## Public methods
@@ -90,7 +90,7 @@ Destroy the activity associated with a particular id. This activity will go thro
 
 | Return ||
 |-------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
-| [Window](../android/view/Window.md)! | Returns the window that was used to display the activity, or null if there was none. |
+| [Window](../android.view/Window.md)! | Returns the window that was used to display the activity, or null if there was none. |
 
 ### dispatchCreate
 
@@ -102,17 +102,17 @@ open fun dispatchCreate(state: Bundle!): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Restore a state that was previously returned by [saveInstanceState](../android/app/LocalActivityManager.md)). This adds to the activity group information about all activity IDs that had previously been saved, even if they have not been started yet, so if the user later navigates to them the correct state will be restored.
+Restore a state that was previously returned by [saveInstanceState](LocalActivityManager.md)). This adds to the activity group information about all activity IDs that had previously been saved, even if they have not been started yet, so if the user later navigates to them the correct state will be restored.
 
 Note: This does**not**change the current running activity, or start whatever activity was previously running when the state was saved. That is up to the client to do, in whatever way it thinks is best.
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------------------------------|
-| `state` | [Bundle](../android/os/Bundle.md)!:a previously saved state; does nothing if this is null |
+| `state` | [Bundle](../android.os/Bundle.md)!:a previously saved state; does nothing if this is null |
 
 **See Also**
 
-- [#saveInstanceState](../android/app/LocalActivityManager.md)) 
+- [#saveInstanceState](LocalActivityManager.md)) 
 
 ### dispatchDestroy
 
@@ -124,10 +124,10 @@ open fun dispatchDestroy(finishing: Boolean): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Called by the container activity in its [Activity.onDestroy](../android/app/Activity.md))so that LocalActivityManager can perform the corresponding action on the activities it holds. 
+Called by the container activity in its [Activity.onDestroy](Activity.md))so that LocalActivityManager can perform the corresponding action on the activities it holds. 
 **See Also**
 
-- [android.app.Activity#onDestroy](../android/app/Activity.md)) 
+- [android.app.Activity#onDestroy](Activity.md)) 
 
 ### dispatchPause
 
@@ -139,7 +139,7 @@ open fun dispatchPause(finishing: Boolean): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Called by the container activity in its [Activity.onPause](../android/app/Activity.md))so that LocalActivityManager can perform the corresponding action on the activities it holds.
+Called by the container activity in its [Activity.onPause](Activity.md))so that LocalActivityManager can perform the corresponding action on the activities it holds.
 
 | Parameters ||
 |-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -147,8 +147,8 @@ Called by the container activity in its [Activity.onPause](../android/app/Activi
 
 **See Also**
 
-- [android.app.Activity#onPause](../android/app/Activity.md))
-- [android.app.Activity#isFinishing](../android/app/Activity.md)) 
+- [android.app.Activity#onPause](Activity.md))
+- [android.app.Activity#isFinishing](Activity.md)) 
 
 ### dispatchResume
 
@@ -160,10 +160,10 @@ open fun dispatchResume(): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Called by the container activity in its [Activity.onResume](../android/app/Activity.md))so that LocalActivityManager can perform the corresponding action on the activities it holds. 
+Called by the container activity in its [Activity.onResume](Activity.md))so that LocalActivityManager can perform the corresponding action on the activities it holds. 
 **See Also**
 
-- [android.app.Activity#onResume](../android/app/Activity.md)) 
+- [android.app.Activity#onResume](Activity.md)) 
 
 ### dispatchStop
 
@@ -175,10 +175,10 @@ open fun dispatchStop(): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Called by the container activity in its [Activity.onStop](../android/app/Activity.md))so that LocalActivityManager can perform the corresponding action on the activities it holds. 
+Called by the container activity in its [Activity.onStop](Activity.md))so that LocalActivityManager can perform the corresponding action on the activities it holds. 
 **See Also**
 
-- [android.app.Activity#onStop](../android/app/Activity.md)) 
+- [android.app.Activity#onStop](Activity.md)) 
 
 ### getActivity
 
@@ -194,11 +194,11 @@ Return the Activity object associated with a string ID.
 
 | Return ||
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-| [Activity](../android/app/Activity.md)! | the associated Activity object, or null if the id is unknown or its activity is not currently instantiated |
+| [Activity](Activity.md)! | the associated Activity object, or null if the id is unknown or its activity is not currently instantiated |
 
 **See Also**
 
-- [#startActivity](../android/app/LocalActivityManager.md)) 
+- [#startActivity](LocalActivityManager.md)) 
 
 ### getCurrentActivity
 
@@ -214,12 +214,12 @@ Retrieve the Activity that is currently running.
 
 | Return ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------|
-| [Activity](../android/app/Activity.md)! | the currently running (resumed) Activity, or null if there is not one |
+| [Activity](Activity.md)! | the currently running (resumed) Activity, or null if there is not one |
 
 **See Also**
 
-- [#startActivity](../android/app/LocalActivityManager.md))
-- [#getCurrentId](../android/app/LocalActivityManager.md)) 
+- [#startActivity](LocalActivityManager.md))
+- [#getCurrentId](LocalActivityManager.md)) 
 
 ### getCurrentId
 
@@ -239,8 +239,8 @@ Retrieve the ID of the activity that is currently running.
 
 **See Also**
 
-- [#startActivity](../android/app/LocalActivityManager.md))
-- [#getCurrentActivity](../android/app/LocalActivityManager.md)) 
+- [#startActivity](LocalActivityManager.md))
+- [#getCurrentActivity](LocalActivityManager.md)) 
 
 ### removeAllActivities
 
@@ -252,7 +252,7 @@ open fun removeAllActivities(): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Remove all activities from this LocalActivityManager, performing an [Activity.onDestroy](../android/app/Activity.md))on any that are currently instantiated. 
+Remove all activities from this LocalActivityManager, performing an [Activity.onDestroy](Activity.md))on any that are currently instantiated. 
 
 ### saveInstanceState
 
@@ -268,11 +268,11 @@ Retrieve the state of all activities known by the group. For activities that hav
 
 | Return ||
 |-----------------------------------------------------------------------------------|------------------------------------------------------------------|
-| [Bundle](../android/os/Bundle.md)! | a Bundle holding the newly created state of all known activities |
+| [Bundle](../android.os/Bundle.md)! | a Bundle holding the newly created state of all known activities |
 
 **See Also**
 
-- [#dispatchCreate](../android/app/LocalActivityManager.md)) 
+- [#dispatchCreate](LocalActivityManager.md)) 
 
 ### startActivity
 
@@ -292,22 +292,22 @@ Start a new activity running in the group. Every activity you start must have a 
 When there had previously been an activity started under this id, it may either be destroyed and a new one started, or the current one re-used, based on these conditions, in order:
 
 - If the Intent maps to a different activity component than is currently running, the current activity is finished and a new one started.
-- If the current activity uses a non-multiple launch mode (such as singleTop), or the Intent has the [Intent.FLAG_ACTIVITY_SINGLE_TOP](../android/content/Intent.md) flag set, then the current activity will remain running and its [Activity.onNewIntent()](../android/app/Activity.md))method called.
-- If the new Intent is the same (excluding extras) as the previous one, and the new Intent does not have the [Intent.FLAG_ACTIVITY_CLEAR_TOP](../android/content/Intent.md) set, then the current activity will remain running as-is.
+- If the current activity uses a non-multiple launch mode (such as singleTop), or the Intent has the [Intent.FLAG_ACTIVITY_SINGLE_TOP](../android.content/Intent.md) flag set, then the current activity will remain running and its [Activity.onNewIntent()](Activity.md))method called.
+- If the new Intent is the same (excluding extras) as the previous one, and the new Intent does not have the [Intent.FLAG_ACTIVITY_CLEAR_TOP](../android.content/Intent.md) set, then the current activity will remain running as-is.
 - Otherwise, the current activity will be finished and a new one started.
 
-If the given Intent can not be resolved to an available Activity, this method throws [android.content.ActivityNotFoundException](../android/content/ActivityNotFoundException.md).
+If the given Intent can not be resolved to an available Activity, this method throws [android.content.ActivityNotFoundException](../android.content/ActivityNotFoundException.md).
 
 Warning: There is an issue where, if the Intent does not include an explicit component, we can restore the state for a different activity class than was previously running when the state was saved (if the set of available activities changes between those points).
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------|
 | `id` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:Unique identifier of the activity to be started |
-| `intent` | [Intent](../android/content/Intent.md)!:The Intent describing the activity to be started |
+| `intent` | [Intent](../android.content/Intent.md)!:The Intent describing the activity to be started |
 
 | Return ||
 |-------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Window](../android/view/Window.md)! | Returns the window of the activity. The caller needs to take care of adding this window to a view hierarchy, and likewise dealing with removing the old window if the activity has changed. |
+| [Window](../android.view/Window.md)! | Returns the window of the activity. The caller needs to take care of adding this window to a view hierarchy, and likewise dealing with removing the old window if the activity has changed. |
 
 | Exceptions ||
 |---------------------------------------------|---|

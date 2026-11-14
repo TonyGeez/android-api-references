@@ -19,7 +19,7 @@ Listener for the event of selecting a share target.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onShareTargetSelected](../android/widget/ShareActionProvider.OnShareTargetSelectedListener.md))`(`source:` ` [ShareActionProvider](../android/widget/ShareActionProvider.md)!`, `intent:` ` [Intent](../android/content/Intent.md)!`)` Called when a share target has been selected. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onShareTargetSelected](../android/widget/ShareActionProvider.OnShareTargetSelectedListener.md))`(`source:` ` [ShareActionProvider](ShareActionProvider.md)!`, `intent:` ` [Intent](../android.content/Intent.md)!`)` Called when a share target has been selected. |
 
 ## Public methods
 
@@ -42,8 +42,8 @@ Called when a share target has been selected. The client can decide whether to p
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| `source` | [ShareActionProvider](../android/widget/ShareActionProvider.md)!:The source of the notification. |
-| `intent` | [Intent](../android/content/Intent.md)!:The intent for launching the chosen share target. |
+| `source` | [ShareActionProvider](ShareActionProvider.md)!:The source of the notification. |
+| `intent` | [Intent](../android.content/Intent.md)!:The intent for launching the chosen share target. |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------------------------------------------|

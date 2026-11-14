@@ -4,7 +4,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # ConstrainedFieldPosition
 
-Kotlin| [Java](../android/icu/text/ConstrainedFieldPosition.md) 
+Kotlin| [Java](ConstrainedFieldPosition.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class ConstrainedFieldPosition
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.icu.text.ConstrainedFieldPosition](../android/icu/text/ConstrainedFieldPosition.md) |
+| ↳ | [android.icu.text.ConstrainedFieldPosition](ConstrainedFieldPosition.md) |
 
 Represents a span of a string containing a given field. This class differs from FieldPosition in the following ways: 1. It has information on the field category. 2. It allows you to set constraints to use when iterating over field positions. 3. It is used for the newer FormattedValue APIs.
 
@@ -21,25 +21,25 @@ Represents a span of a string containing a given field. This class differs from 
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ConstrainedFieldPosition](../android/icu/text/ConstrainedFieldPosition.md))`()` Initializes a CategoryFieldPosition. |
+| [ConstrainedFieldPosition](ConstrainedFieldPosition.md))`()` Initializes a CategoryFieldPosition. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [constrainClass](../android/icu/text/ConstrainedFieldPosition.md))`(`classConstraint:` ` [Class](../java/lang/Class.md)<*>!`)` Sets a constraint on the field class. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [constrainField](../android/icu/text/ConstrainedFieldPosition.md))`(`field:` ` [Format.Field](../java/text/Format.Field.md)!`)` Sets a constraint on the field. |
-| open [Format.Field](../java/text/Format.Field.md)! | [getField](../android/icu/text/ConstrainedFieldPosition.md))`()` Gets the field for the current position. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [constrainClass](ConstrainedFieldPosition.md))`(`classConstraint:` ` [Class](../java.lang/Class.md)<*>!`)` Sets a constraint on the field class. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [constrainField](ConstrainedFieldPosition.md))`(`field:` ` [Format.Field](../java/text/Format.Field.md)!`)` Sets a constraint on the field. |
+| open [Format.Field](../java/text/Format.Field.md)! | [getField](ConstrainedFieldPosition.md))`()` Gets the field for the current position. |
 | --- | --- |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getFieldValue](../android/icu/text/ConstrainedFieldPosition.md))`()` Gets the value associated with the current field position. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getInt64IterationContext](../android/icu/text/ConstrainedFieldPosition.md))`()` Gets an int64 that FormattedValue implementations may use for storage. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLimit](../android/icu/text/ConstrainedFieldPosition.md))`()` Gets the EXCLUSIVE end index stored for the current position. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getFieldValue](ConstrainedFieldPosition.md))`()` Gets the value associated with the current field position. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getInt64IterationContext](ConstrainedFieldPosition.md))`()` Gets an int64 that FormattedValue implementations may use for storage. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLimit](ConstrainedFieldPosition.md))`()` Gets the EXCLUSIVE end index stored for the current position. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStart](../android/icu/text/ConstrainedFieldPosition.md))`()` Gets the INCLUSIVE start index for the current position. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [matchesField](../android/icu/text/ConstrainedFieldPosition.md))`(`field:` ` [Format.Field](../java/text/Format.Field.md)!`, `fieldValue:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Determines whether a given field and value should be included given the constraints. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](../android/icu/text/ConstrainedFieldPosition.md))`()` Resets this ConstrainedFieldPosition to its initial state, as if it were newly created: - Removes any constraints that may have been set on the instance. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStart](ConstrainedFieldPosition.md))`()` Gets the INCLUSIVE start index for the current position. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [matchesField](ConstrainedFieldPosition.md))`(`field:` ` [Format.Field](../java/text/Format.Field.md)!`, `fieldValue:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Determines whether a given field and value should be included given the constraints. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](ConstrainedFieldPosition.md))`()` Resets this ConstrainedFieldPosition to its initial state, as if it were newly created: - Removes any constraints that may have been set on the instance. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInt64IterationContext](../android/icu/text/ConstrainedFieldPosition.md))`(`context:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets an int64 that FormattedValue implementations may use for storage. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setState](../android/icu/text/ConstrainedFieldPosition.md))`(`field:` ` [Format.Field](../java/text/Format.Field.md)!`, `value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `limit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets new values for the primary public getters. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/icu/text/ConstrainedFieldPosition.md))`()` Returns a string representation of the object. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInt64IterationContext](ConstrainedFieldPosition.md))`(`context:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets an int64 that FormattedValue implementations may use for storage. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setState](ConstrainedFieldPosition.md))`(`field:` ` [Format.Field](../java/text/Format.Field.md)!`, `value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `limit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets new values for the primary public getters. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](ConstrainedFieldPosition.md))`()` Returns a string representation of the object. |
 | --- | --- |
 
 ## Public constructors
@@ -64,7 +64,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 open fun constrainClass(classConstraint: Class<*>!): Unit
 ```
 
-Sets a constraint on the field class. When this instance of ConstrainedFieldPosition is passed to [FormattedValue.nextPosition](../android/icu/text/FormattedValue.md)), positions are skipped unless the field is an instance of the class constraint, including subclasses. Any previously set constraints are cleared. For example, to loop over only the number-related fields: 
+Sets a constraint on the field class. When this instance of ConstrainedFieldPosition is passed to [FormattedValue.nextPosition](FormattedValue.md)), positions are skipped unless the field is an instance of the class constraint, including subclasses. Any previously set constraints are cleared. For example, to loop over only the number-related fields: 
 
 ```kotlin
 ConstrainedFieldPosition cfpos;
@@ -79,7 +79,7 @@ ConstrainedFieldPosition cfpos;
 
 | Parameters ||
 |-------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| `classConstraint` | [Class](../java/lang/Class.md)\<\*\>!:The field class to fix when iterating. |
+| `classConstraint` | [Class](../java.lang/Class.md)\<\*\>!:The field class to fix when iterating. |
 
 ### constrainField
 
@@ -89,7 +89,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 open fun constrainField(field: Format.Field!): Unit
 ```
 
-Sets a constraint on the field. When this instance of ConstrainedFieldPosition is passed to [FormattedValue.nextPosition](../android/icu/text/FormattedValue.md)), positions are skipped unless they have the given field. Any previously set constraints are cleared. For example, to loop over all grouping separators: 
+Sets a constraint on the field. When this instance of ConstrainedFieldPosition is passed to [FormattedValue.nextPosition](FormattedValue.md)), positions are skipped unless they have the given field. Any previously set constraints are cleared. For example, to loop over all grouping separators: 
 
 ```kotlin
 ConstrainedFieldPosition cfpos;
@@ -147,7 +147,7 @@ Gets an int64 that FormattedValue implementations may use for storage. The initi
 
 | Return ||
 |------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | The current iteration context from [setInt64IterationContext](../android/icu/text/ConstrainedFieldPosition.md)). |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | The current iteration context from [setInt64IterationContext](ConstrainedFieldPosition.md)). |
 
 ### getLimit
 

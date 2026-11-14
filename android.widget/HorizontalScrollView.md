@@ -8,11 +8,11 @@ open class HorizontalScrollView : FrameLayout
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.view.View](../android/view/View.md) ||||
-| | ↳ | [android.view.ViewGroup](../android/view/ViewGroup.md) |||
-| | | ↳ | [android.widget.FrameLayout](../android/widget/FrameLayout.md) ||
+| ↳ | [android.view.View](../android.view/View.md) ||||
+| | ↳ | [android.view.ViewGroup](../android.view/ViewGroup.md) |||
+| | | ↳ | [android.widget.FrameLayout](FrameLayout.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.widget.HorizontalScrollView](../android/widget/HorizontalScrollView.md) |
+| | | | ↳ | [android.widget.HorizontalScrollView](HorizontalScrollView.md) |
 
 Layout container for a view hierarchy that can be scrolled by the user, allowing it to be larger than the physical display. A HorizontalScrollView is a `https://developer.android.com/reference/kotlin/android/widget/FrameLayout`, meaning you should place one child in it containing the entire contents to scroll; this child may itself be a layout manager with a complex hierarchy of objects. A child that is often used is a `https://developer.android.com/reference/kotlin/android/widget/LinearLayout` in a horizontal orientation, presenting a horizontal array of top-level items that the user can scroll through.
 
@@ -24,7 +24,7 @@ HorizontalScrollView only supports horizontal scrolling. For vertical scrolling,
 
 | XML attributes ||
 |---|---|
-| [`android:fillViewport`](../android/widget/HorizontalScrollView.md) | Defines whether the scrollview should stretch its content to fill the viewport. |
+| [`android:fillViewport`](HorizontalScrollView.md) | Defines whether the scrollview should stretch its content to fill the viewport. |
 
 Inherited XML attributes From class `https://developer.android.com/reference/kotlin/android/widget/FrameLayout` `https://developer.android.com/reference/kotlin/android/widget/FrameLayout#attr_FrameLayout` Determines whether to measure all children or just those in the VISIBLE or INVISIBLE state when measuring. Defaults to false.
 
@@ -643,7 +643,7 @@ Hint indicating that this view can be autofilled with a credit card expiration d
 
 It should be used when the credit card expiration date is represented by just one view; if it is represented by more than one (for example, one view for the month and another view for the year), then each of these views should use the hint specific for the unit (`https://developer.android.com/reference/kotlin/android/view/View.html#AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DAY:kotlin.String`, `https://developer.android.com/reference/kotlin/android/view/View.html#AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_MONTH:kotlin.String`, or `https://developer.android.com/reference/kotlin/android/view/View.html#AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_YEAR:kotlin.String`).
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DATE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DATE}`).
 
 When annotating a view with this hint, it's recommended to use a date autofill value to avoid ambiguity when the autofill service provides a value for it. To understand why a value can be ambiguous, consider "April of 2020", which could be represented as either of the following options:
 
@@ -668,7 +668,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card expiration day.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DAY}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_DAY}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -678,7 +678,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card expiration month.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_MONTH}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_MONTH}`).
 
 When annotating a view with this hint, it's recommended to use a text autofill value whose value is the numerical representation of the month, starting on `1` to avoid ambiguity when the autofill service provides a value for it. To understand why a value can be ambiguous, consider "January", which could be represented as either of
 
@@ -698,7 +698,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card expiration year.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_YEAR}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_EXPIRATION_YEAR}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -708,7 +708,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card number.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_NUMBER}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_NUMBER}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -718,7 +718,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a credit card security code.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_SECURITY_CODE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_CREDIT_CARD_SECURITY_CODE}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -728,7 +728,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with an email address.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_EMAIL_ADDRESS}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_EMAIL_ADDRESS}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -738,7 +738,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a user's real name.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_NAME}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_NAME}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -748,7 +748,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a password.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_PASSWORD}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_PASSWORD}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -758,7 +758,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a phone number.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_PHONE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_PHONE}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -768,7 +768,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a postal address.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_ADDRESS}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_ADDRESS}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -778,7 +778,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a postal code.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_CODE}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_POSTAL_CODE}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -788,7 +788,7 @@ See `https://developer.android.com/reference/kotlin/android/view/View.html#setAu
 
 Hint indicating that this view can be autofilled with a username.
 
-Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android/view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_USERNAME}`).
+Can be used with either `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` or [`android:autofillHint`](../android.view/View.md) (in which case the value should be `{@value #AUTOFILL_HINT_USERNAME}`).
 
 See `https://developer.android.com/reference/kotlin/android/view/View.html#setAutofillHints(kotlin.String)` for more info about autofill hints.
 
@@ -958,7 +958,7 @@ Find views that render the specified text.
 
 This view wants keystrokes.
 
-Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android/view/View.md)
+Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android.view/View.md)
 
 <br />
 
@@ -978,7 +978,7 @@ View flag indicating whether `https://developer.android.com/reference/kotlin/and
 
 This view determines focusability automatically. This is the default.
 
-Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android/view/View.md)
+Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android.view/View.md)
 
 <br />
 
@@ -1020,7 +1020,7 @@ Use with `https://developer.android.com/reference/kotlin/android/view/View.html#
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/view/View.html#GONE:kotlin.Int`
 
-This view is invisible, and it doesn't take any space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android/view/View.md)
+This view is invisible, and it doesn't take any space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android.view/View.md)
 
 <br />
 
@@ -1116,7 +1116,7 @@ The view is important for content capture, but its children (if any) will not be
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/view/View.html#INVISIBLE:kotlin.Int`
 
-This view is invisible, but it still takes up space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android/view/View.md)
+This view is invisible, but it still takes up space for layout purposes. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android.view/View.md)
 
 <br />
 
@@ -1210,7 +1210,7 @@ Bit of `https://developer.android.com/reference/kotlin/android/view/View.html#ge
 
 This view does not want keystrokes.
 
-Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android/view/View.md)
+Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setFocusable(kotlin.Int)` and [`android:focusable`.](../android.view/View.md)
 
 <br />
 
@@ -1667,7 +1667,7 @@ The logging tag used by this class with android.util.Log.
 
 `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html` `https://developer.android.com/reference/kotlin/android/view/View.html#VISIBLE:kotlin.Int`
 
-This view is visible. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android/view/View.md)
+This view is visible. Use with `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` and [`android:visibility`.](../android.view/View.md)
 
 <br />
 
@@ -1804,7 +1804,7 @@ Used to indicate that the scrolling drawing cache should be kept in memory.
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/widget/HorizontalScrollView#onRequestFocusInDescendants(kotlin.Int,%20android.graphics.Rect)(direction: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, previouslyFocusedRect: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#!)` When looking for focus in children of a scroll view, need to be a little more careful not to give focus to something that is scrolled off screen. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/HorizontalScrollView#onRestoreInstanceState(android.os.Parcelable)(state: https://developer.android.com/reference/kotlin/android/os/Parcelable.html#!)` Hook allowing a view to re-apply a representation of its internal state that had previously been generated by `https://developer.android.com/reference/kotlin/android/view/View.html#onSaveInstanceState()`. |
 | --- | --- |
-| open [Parcelable](../android/os/Parcelable.md)? | `https://developer.android.com/reference/kotlin/android/widget/HorizontalScrollView#onSaveInstanceState()()` Hook allowing a view to generate a representation of its internal state that can later be used to create a new instance with that same state. |
+| open [Parcelable](../android.os/Parcelable.md)? | `https://developer.android.com/reference/kotlin/android/widget/HorizontalScrollView#onSaveInstanceState()()` Hook allowing a view to generate a representation of its internal state that can later be used to create a new instance with that same state. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/widget/HorizontalScrollView#onSizeChanged(kotlin.Int,%20kotlin.Int,%20kotlin.Int,%20kotlin.Int)(w: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, oldw: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, oldh: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` This is called during layout when the size of this view has changed. |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#addChildrenForAccessibility(java.util.ArrayList)(outChildren: https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://developer.android.com/reference/kotlin/android/view/View.html#!>!)`
@@ -7530,7 +7530,7 @@ Sets the amount that the view is scaled in Y around the pivot point, as a propor
 
 Sets whether this View should be a focusable element for screen readers and include non-focusable Views from its subtree when providing feedback.
 
-Note: this is similar to using [`android:focusable`, but does not impact input focus behavior.](../android/view/View.md)
+Note: this is similar to using [`android:focusable`, but does not impact input focus behavior.](../android.view/View.md)
 
 <br />
 
@@ -8352,7 +8352,7 @@ Adds a child view. If no layout parameters are already set on the child, the def
 
 | Parameters ||
 |---|---|
-| `child` | [View](../android/view/View.md)!: the child view to add |
+| `child` | [View](../android.view/View.md)!: the child view to add |
 
 ### addView
 
@@ -8373,7 +8373,7 @@ Adds a child view with the specified layout parameters.
 |---|---|
 | `view` | The view to be added to this window. |
 | `params` | [ViewGroup.LayoutParams](../android/view/ViewGroup.LayoutParams.md)!: the layout parameters to set on the child |
-| `child` | [View](../android/view/View.md)!: the child view to add |
+| `child` | [View](../android.view/View.md)!: the child view to add |
 | --- | --- |
 
 ### addView
@@ -8393,7 +8393,7 @@ Adds a child view. If no layout parameters are already set on the child, the def
 
 | Parameters ||
 |---|---|
-| `child` | [View](../android/view/View.md)!: the child view to add |
+| `child` | [View](../android.view/View.md)!: the child view to add |
 | `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the position at which to add the child |
 
 ### addView
@@ -8414,7 +8414,7 @@ Adds a child view with the specified layout parameters.
 
 | Parameters ||
 |---|---|
-| `child` | [View](../android/view/View.md)!: the child view to add |
+| `child` | [View](../android.view/View.md)!: the child view to add |
 | `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the position at which to add the child or -1 to add last |
 | `params` | [ViewGroup.LayoutParams](../android/view/ViewGroup.LayoutParams.md)!: the layout parameters to set on the child |
 | --- | --- |
@@ -8459,7 +8459,7 @@ Dispatch a key event to the next view on the focus path. This path runs from the
 
 | Parameters ||
 |---|---|
-| `event` | [KeyEvent](../android/view/KeyEvent.md)!: The key event to be dispatched. |
+| `event` | [KeyEvent](../android.view/KeyEvent.md)!: The key event to be dispatched. |
 
 | Return ||
 |---|---|
@@ -8478,7 +8478,7 @@ If you override this method you *must* call through to the superclass implementa
 
 | Parameters ||
 |---|---|
-| `canvas` | [Canvas](../android/graphics/Canvas.md): The Canvas to which the View is rendered. This value cannot be `null`. |
+| `canvas` | [Canvas](../android.graphics/Canvas.md): The Canvas to which the View is rendered. This value cannot be `null`. |
 
 ### executeKeyEvent
 
@@ -8492,7 +8492,7 @@ You can call this function yourself to have the scroll view perform scrolling fr
 
 | Parameters ||
 |---|---|
-| `event` | [KeyEvent](../android/view/KeyEvent.md)!: The key event to execute. |
+| `event` | [KeyEvent](../android.view/KeyEvent.md)!: The key event to execute. |
 
 | Return ||
 |---|---|
@@ -8658,7 +8658,7 @@ public boolean onGenericMotionEvent(MotionEvent event) {
 
 | Parameters ||
 |---|---|
-| `event` | [MotionEvent](../android/view/MotionEvent.md)!: The generic motion event being processed. |
+| `event` | [MotionEvent](../android.view/MotionEvent.md)!: The generic motion event being processed. |
 
 | Return ||
 |---|---|
@@ -8683,7 +8683,7 @@ Using this function takes some care, as it has a fairly complicated interaction 
 
 | Parameters ||
 |---|---|
-| `ev` | [MotionEvent](../android/view/MotionEvent.md)!: The motion event being dispatched down the hierarchy. |
+| `ev` | [MotionEvent](../android.view/MotionEvent.md)!: The motion event being dispatched down the hierarchy. |
 
 | Return ||
 |---|---|
@@ -8748,8 +8748,8 @@ Called when a child of this parent wants focus
 
 | Parameters ||
 |---|---|
-| `child` | [View](../android/view/View.md)!: The child of this ViewParent that wants focus. This view will contain the focused view. It is not necessarily the view that actually has focus. |
-| `focused` | [View](../android/view/View.md)!: The view that is a descendant of child that actually has focus |
+| `child` | [View](../android.view/View.md)!: The child of this ViewParent that wants focus. This view will contain the focused view. It is not necessarily the view that actually has focus. |
+| `focused` | [View](../android.view/View.md)!: The view that is a descendant of child that actually has focus |
 
 ### requestChildRectangleOnScreen
 
@@ -8777,8 +8777,8 @@ Called when a child of this group wants a particular rectangle to be positioned 
 
 | Parameters ||
 |---|---|
-| `child` | [View](../android/view/View.md): The direct child making the request. This value cannot be `null`. |
-| `rectangle` | [Rect](../android/graphics/Rect.md)!: The rectangle in the child's coordinates the child wishes to be on the screen. |
+| `child` | [View](../android.view/View.md): The direct child making the request. This value cannot be `null`. |
+| `rectangle` | [Rect](../android.graphics/Rect.md)!: The rectangle in the child's coordinates the child wishes to be on the screen. |
 | `immediate` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): True to forbid animated or delayed scrolling, false otherwise |
 | --- | --- |
 
@@ -9019,7 +9019,7 @@ Compute the amount to scroll in the X direction in order to get a rectangle comp
 
 | Parameters ||
 |---|---|
-| `rect` | [Rect](../android/graphics/Rect.md)!: The rect. |
+| `rect` | [Rect](../android.graphics/Rect.md)!: The rect. |
 
 | Return ||
 |---|---|
@@ -9069,7 +9069,7 @@ Ask one of the children of this view to measure itself, taking into account both
 
 | Parameters ||
 |---|---|
-| `child` | [View](../android/view/View.md)!: The child to measure |
+| `child` | [View](../android.view/View.md)!: The child to measure |
 | `parentWidthMeasureSpec` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The width requirements for this view |
 | `parentHeightMeasureSpec` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The height requirements for this view |
 | --- | --- |
@@ -9092,7 +9092,7 @@ Ask one of the children of this view to measure itself, taking into account both
 
 | Parameters ||
 |---|---|
-| `child` | [View](../android/view/View.md)!: The child to measure |
+| `child` | [View](../android.view/View.md)!: The child to measure |
 | `parentWidthMeasureSpec` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The width requirements for this view |
 | `widthUsed` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Extra space that has been used up by the parent horizontally (possibly by other children of the parent) |
 | --- | --- |
@@ -9187,7 +9187,7 @@ When looking for focus in children of a scroll view, need to be a little more ca
 | Parameters ||
 |---|---|
 | `direction` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): One of FOCUS_UP, FOCUS_DOWN, FOCUS_LEFT, and FOCUS_RIGHT |
-| `previouslyFocusedRect` | [Rect](../android/graphics/Rect.md)!: The rectangle (in this View's coordinate system) to give a finer grained hint about where focus is coming from. May be null if there is no hint. |
+| `previouslyFocusedRect` | [Rect](../android.graphics/Rect.md)!: The rectangle (in this View's coordinate system) to give a finer grained hint about where focus is coming from. May be null if there is no hint. |
 
 | Return ||
 |---|---|
@@ -9206,7 +9206,7 @@ If you override this method you *must* call through to the superclass implementa
 
 | Parameters ||
 |---|---|
-| `state` | [Parcelable](../android/os/Parcelable.md)!: The frozen state that had previously been returned by `https://developer.android.com/reference/kotlin/android/view/View.html#onSaveInstanceState()`. |
+| `state` | [Parcelable](../android.os/Parcelable.md)!: The frozen state that had previously been returned by `https://developer.android.com/reference/kotlin/android/view/View.html#onSaveInstanceState()`. |
 
 ### onSaveInstanceState
 

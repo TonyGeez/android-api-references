@@ -8,7 +8,7 @@ class BluetoothHeadset : BluetoothProfile
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.bluetooth.BluetoothHeadset](../android/bluetooth/BluetoothHeadset.md) |
+| ↳ | [android.bluetooth.BluetoothHeadset](BluetoothHeadset.md) |
 
 Public API for controlling the Bluetooth Headset Service. This includes both Bluetooth Headset and Handsfree (v1.5) profiles.
 
@@ -167,10 +167,10 @@ The profile is in disconnecting state
 | Public methods ||
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHeadset#getCodecType(android.bluetooth.BluetoothDevice)(device: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice)` Get the codec type of the given HFP connected device. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothDevice](../android/bluetooth/BluetoothDevice.md)!\>! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHeadset#getConnectedDevices()()` Get connected devices for this specific profile. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothDevice](BluetoothDevice.md)!\>! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHeadset#getConnectedDevices()()` Get connected devices for this specific profile. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHeadset#getConnectionState(android.bluetooth.BluetoothDevice)(device: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice!)` Get the current connection state of the profile For apps targeting `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#S:kotlin.Int` or or higher, this requires the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#BLUETOOTH_CONNECT:kotlin.String` permission which can be gained with `https://developer.android.com/reference/kotlin/android/app/Activity.html#requestPermissions(kotlin.Array,%20kotlin.Int)`. |
 | --- | --- |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothDevice](../android/bluetooth/BluetoothDevice.md)!\>! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHeadset#getDevicesMatchingConnectionStates(kotlin.IntArray)(states: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html!)` Get a list of devices that match any of the given connection states. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [BluetoothDevice](BluetoothDevice.md)!\>! | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHeadset#getDevicesMatchingConnectionStates(kotlin.IntArray)(states: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html!)` Get a list of devices that match any of the given connection states. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHeadset#isAudioConnected(android.bluetooth.BluetoothDevice)(device: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice!)` Check if Bluetooth SCO audio is connected. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothHeadset#isNoiseReductionSupported(android.bluetooth.BluetoothDevice)(device: https://developer.android.com/reference/kotlin/android/bluetooth/BluetoothDevice)` Checks whether the headset supports some form of noise reduction. |
 | --- | --- |
@@ -529,7 +529,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `device` | [BluetoothDevice](../android/bluetooth/BluetoothDevice.md): The remote Bluetooth device. Must not be null. |
+| `device` | [BluetoothDevice](BluetoothDevice.md): The remote Bluetooth device. Must not be null. |
 
 | Return ||
 |---|---|
@@ -567,7 +567,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `device` | [BluetoothDevice](../android/bluetooth/BluetoothDevice.md)!: Remote bluetooth device. |
+| `device` | [BluetoothDevice](BluetoothDevice.md)!: Remote bluetooth device. |
 
 | Return ||
 |---|---|
@@ -610,7 +610,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `device` | [BluetoothDevice](../android/bluetooth/BluetoothDevice.md)!: Bluetooth headset |
+| `device` | [BluetoothDevice](BluetoothDevice.md)!: Bluetooth headset |
 
 | Return ||
 |---|---|
@@ -631,7 +631,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `device` | [BluetoothDevice](../android/bluetooth/BluetoothDevice.md): Bluetooth device. This value cannot be `null`. |
+| `device` | [BluetoothDevice](BluetoothDevice.md): Bluetooth device. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -652,7 +652,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `device` | [BluetoothDevice](../android/bluetooth/BluetoothDevice.md): Bluetooth device. This value cannot be `null`. |
+| `device` | [BluetoothDevice](BluetoothDevice.md): Bluetooth device. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -681,7 +681,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `device` | [BluetoothDevice](../android/bluetooth/BluetoothDevice.md)!: Bluetooth headset. |
+| `device` | [BluetoothDevice](BluetoothDevice.md)!: Bluetooth headset. |
 | `command` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: A vendor-specific command. |
 | `arg` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The argument that will be attached to the command. |
 | --- | --- |
@@ -713,7 +713,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `device` | [BluetoothDevice](../android/bluetooth/BluetoothDevice.md)!: Bluetooth headset |
+| `device` | [BluetoothDevice](BluetoothDevice.md)!: Bluetooth headset |
 
 | Return ||
 |---|---|
@@ -736,7 +736,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `device` | [BluetoothDevice](../android/bluetooth/BluetoothDevice.md)!: Bluetooth headset |
+| `device` | [BluetoothDevice](BluetoothDevice.md)!: Bluetooth headset |
 
 | Return ||
 |---|---|

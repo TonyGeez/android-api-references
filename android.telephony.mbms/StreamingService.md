@@ -2,7 +2,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 
 # StreamingService
 
-Kotlin | [Java](../android/telephony/mbms/StreamingService.md)
+Kotlin | [Java](StreamingService.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ open class StreamingService : AutoCloseable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.telephony.mbms.StreamingService](../android/telephony/mbms/StreamingService.md) |
+| ↳ | [android.telephony.mbms.StreamingService](StreamingService.md) |
 
 Class used to represent a single MBMS stream. After a stream has been started with `https://developer.android.com/reference/kotlin/android/telephony/MbmsStreamingSession.html#startStreaming(android.telephony.mbms.StreamingServiceInfo,%20java.util.concurrent.Executor,%20android.telephony.mbms.StreamingServiceCallback)`, this class is used to hold information about the stream and control it.
 
@@ -39,8 +39,8 @@ Class used to represent a single MBMS stream. After a stream has been started wi
 | Public methods ||
 |---|---|
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/mbms/StreamingService#close()()` Stop streaming this service. |
-| open [StreamingServiceInfo](../android/telephony/mbms/StreamingServiceInfo.md)! | `https://developer.android.com/reference/kotlin/android/telephony/mbms/StreamingService#getInfo()()` Retrieve the `https://developer.android.com/reference/kotlin/android/telephony/mbms/StreamingServiceInfo` corresponding to this stream. |
-| open [Uri](../android/net/Uri.md)? | `https://developer.android.com/reference/kotlin/android/telephony/mbms/StreamingService#getPlaybackUri()()` Retrieve the Uri used to play this stream. |
+| open [StreamingServiceInfo](StreamingServiceInfo.md)! | `https://developer.android.com/reference/kotlin/android/telephony/mbms/StreamingService#getInfo()()` Retrieve the `https://developer.android.com/reference/kotlin/android/telephony/mbms/StreamingServiceInfo` corresponding to this stream. |
+| open [Uri](../android.net/Uri.md)? | `https://developer.android.com/reference/kotlin/android/telephony/mbms/StreamingService#getPlaybackUri()()` Retrieve the Uri used to play this stream. |
 | --- | --- |
 
 ## Constants

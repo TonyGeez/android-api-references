@@ -11,9 +11,9 @@ abstract class Identity : Principal, Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.Identity](../java/security/Identity.md) |
+| ↳ | [java.security.Identity](Identity.md) |
 
-| Known Direct Subclasses [IdentityScope](../java/security/IdentityScope.md), [Signer](../java/security/Signer.md) |---------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------| | [IdentityScope](../java/security/IdentityScope.md) | This class represents a scope for identities. | | [Signer](../java/security/Signer.md) | This class is used to represent an Identity that can also digitally sign data. | |
+| Known Direct Subclasses [IdentityScope](IdentityScope.md), [Signer](Signer.md) |---------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------| | [IdentityScope](IdentityScope.md) | This class represents a scope for identities. | | [Signer](Signer.md) | This class is used to represent an Identity that can also digitally sign data. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | **This class was deprecated in API level 3.**
@@ -32,40 +32,40 @@ An Identity can be subclassed, to include postal and email addresses, telephone 
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Identity](../java/security/Identity.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an identity with the specified name and no scope. |
-| [Identity](../java/security/Identity.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `scope:` ` [IdentityScope](../java/security/IdentityScope.md)!`)` Constructs an identity with the specified name and scope. |
+| [Identity](Identity.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an identity with the specified name and no scope. |
+| [Identity](Identity.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `scope:` ` [IdentityScope](IdentityScope.md)!`)` Constructs an identity with the specified name and scope. |
 
 | Protected constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Identity](../java/security/Identity.md))`()` Constructor for serialization only. |
+| [Identity](Identity.md))`()` Constructor for serialization only. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addCertificate](../java/security/Identity.md))`(`certificate:` ` [Certificate](../java/security/Certificate.md)!`)` Adds a certificate for this identity. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Certificate](../java/security/Certificate.md)!\>! | [certificates](../java/security/Identity.md))`()` Returns a copy of all the certificates for this identity. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/security/Identity.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Tests for equality between the specified object and this identity. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addCertificate](Identity.md))`(`certificate:` ` [Certificate](Certificate.md)!`)` Adds a certificate for this identity. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Certificate](Certificate.md)!\>! | [certificates](Identity.md))`()` Returns a copy of all the certificates for this identity. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](Identity.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Tests for equality between the specified object and this identity. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getInfo](../java/security/Identity.md))`()` Returns general information previously specified for this identity. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](../java/security/Identity.md))`()` Returns this identity's name. |
-| open [PublicKey](../java/security/PublicKey.md)! | [getPublicKey](../java/security/Identity.md))`()` Returns this identity's public key. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getInfo](Identity.md))`()` Returns general information previously specified for this identity. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](Identity.md))`()` Returns this identity's name. |
+| open [PublicKey](PublicKey.md)! | [getPublicKey](Identity.md))`()` Returns this identity's public key. |
 | --- | --- |
-| [IdentityScope](../java/security/IdentityScope.md)! | [getScope](../java/security/Identity.md))`()` Returns this identity's scope. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/security/Identity.md))`()` Returns a hashcode for this identity. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeCertificate](../java/security/Identity.md))`(`certificate:` ` [Certificate](../java/security/Certificate.md)!`)` Removes a certificate from this identity. |
+| [IdentityScope](IdentityScope.md)! | [getScope](Identity.md))`()` Returns this identity's scope. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](Identity.md))`()` Returns a hashcode for this identity. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeCertificate](Identity.md))`(`certificate:` ` [Certificate](Certificate.md)!`)` Removes a certificate from this identity. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInfo](../java/security/Identity.md))`(`info:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Specifies a general information string for this identity. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPublicKey](../java/security/Identity.md))`(`key:` ` [PublicKey](../java/security/PublicKey.md)!`)` Sets this identity's public key. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/security/Identity.md))`()` Returns a short string describing this identity, telling its name and its scope (if any). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInfo](Identity.md))`(`info:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Specifies a general information string for this identity. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPublicKey](Identity.md))`(`key:` ` [PublicKey](PublicKey.md)!`)` Sets this identity's public key. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](Identity.md))`()` Returns a short string describing this identity, telling its name and its scope (if any). |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toString](../java/security/Identity.md))`(`detailed:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Returns a string representation of this identity, with optionally more details than that provided by the`toString`method without any arguments. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toString](Identity.md))`(`detailed:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Returns a string representation of this identity, with optionally more details than that provided by the`toString`method without any arguments. |
 
 | Protected methods ||
 |----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [identityEquals](../java/security/Identity.md))`(`identity:` ` [Identity](../java/security/Identity.md)!`)` Tests for equality between the specified identity and this identity. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [identityEquals](Identity.md))`(`identity:` ` [Identity](Identity.md)!`)` Tests for equality between the specified identity and this identity. |
 
 | Inherited functions ||
 |---|---|
-| From class [Principal](../java/security/Principal.md) |------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [implies](../java/security/Principal.md))`(`subject:` ` [Subject](../javax/security/auth/Subject.md)!`)` <br /> Returns true if the specified subject is implied by this principal. <br /> | ||
+| From class [Principal](Principal.md) |------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [implies](Principal.md))`(`subject:` ` [Subject](../javax.security.auth/Subject.md)!`)` <br /> Returns true if the specified subject is implied by this principal. <br /> | ||
 
 ## Public constructors
 
@@ -98,7 +98,7 @@ Constructs an identity with the specified name and scope.
 | Parameters ||
 |---------|-------------------------------------------------------------------------------------------------------------------------|
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the identity name. |
-| `scope` | [IdentityScope](../java/security/IdentityScope.md)!:the scope of the identity. |
+| `scope` | [IdentityScope](IdentityScope.md)!:the scope of the identity. |
 
 | Exceptions ||
 |----------------------------------------|------------------------------------------------------------------|
@@ -134,7 +134,7 @@ First, if there is a security manager, its`checkSecurityAccess`method is called 
 
 | Parameters ||
 |---------------|-----------------------------------------------------------------------------------------------------------------------|
-| `certificate` | [Certificate](../java/security/Certificate.md)!:the certificate to be added. |
+| `certificate` | [Certificate](Certificate.md)!:the certificate to be added. |
 
 | Exceptions ||
 |----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -143,7 +143,7 @@ First, if there is a security manager, its`checkSecurityAccess`method is called 
 
 **See Also**
 
-- [java.lang.SecurityManager#checkSecurityAccess](../java/lang/SecurityManager.md)) 
+- [java.lang.SecurityManager#checkSecurityAccess](../java.lang/SecurityManager.md)) 
 
 ### certificates
 
@@ -159,7 +159,7 @@ Returns a copy of all the certificates for this identity.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Certificate](../java/security/Certificate.md)!>! | a copy of all the certificates for this identity. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Certificate](Certificate.md)!>! | a copy of all the certificates for this identity. |
 
 ### equals
 
@@ -171,7 +171,7 @@ fun equals(other: Any?): Boolean
 
 **Deprecated:** *Deprecated in Java.*
 
-Tests for equality between the specified object and this identity. This first tests to see if the entities actually refer to the same object, in which case it returns true. Next, it checks to see if the entities have the same name and the same scope. If they do, the method returns true. Otherwise, it calls [identityEquals](../java/security/Identity.md)), which subclasses should override.
+Tests for equality between the specified object and this identity. This first tests to see if the entities actually refer to the same object, in which case it returns true. Next, it checks to see if the entities have the same name and the same scope. If they do, the method returns true. Otherwise, it calls [identityEquals](Identity.md)), which subclasses should override.
 
 | Parameters ||
 |------------|-----------------------------------------------------|
@@ -186,7 +186,7 @@ Tests for equality between the specified object and this identity. This first te
 
 **See Also**
 
-- [#identityEquals](../java/security/Identity.md)) 
+- [#identityEquals](Identity.md)) 
 
 ### getInfo
 
@@ -206,7 +206,7 @@ Returns general information previously specified for this identity.
 
 **See Also**
 
-- [#setInfo](../java/security/Identity.md)) 
+- [#setInfo](Identity.md)) 
 
 ### getName
 
@@ -238,11 +238,11 @@ Returns this identity's public key.
 
 | Return ||
 |--------------------------------------------------------------------------------------|-----------------------------------|
-| [PublicKey](../java/security/PublicKey.md)! | the public key for this identity. |
+| [PublicKey](PublicKey.md)! | the public key for this identity. |
 
 **See Also**
 
-- [#setPublicKey](../java/security/Identity.md)) 
+- [#setPublicKey](Identity.md)) 
 
 ### getScope
 
@@ -258,7 +258,7 @@ Returns this identity's scope.
 
 | Return ||
 |----------------------------------------------------------------------------------------------|-----------------------------|
-| [IdentityScope](../java/security/IdentityScope.md)! | the scope of this identity. |
+| [IdentityScope](IdentityScope.md)! | the scope of this identity. |
 
 ### hashCode
 
@@ -292,7 +292,7 @@ First, if there is a security manager, its`checkSecurityAccess`method is called 
 
 | Parameters ||
 |---------------|-------------------------------------------------------------------------------------------------------------------------|
-| `certificate` | [Certificate](../java/security/Certificate.md)!:the certificate to be removed. |
+| `certificate` | [Certificate](Certificate.md)!:the certificate to be removed. |
 
 | Exceptions ||
 |----------------------------------------|-------------------------------------------------------------------------------------------------------|
@@ -301,7 +301,7 @@ First, if there is a security manager, its`checkSecurityAccess`method is called 
 
 **See Also**
 
-- [java.lang.SecurityManager#checkSecurityAccess](../java/lang/SecurityManager.md)) 
+- [java.lang.SecurityManager#checkSecurityAccess](../java.lang/SecurityManager.md)) 
 
 ### setInfo
 
@@ -327,8 +327,8 @@ First, if there is a security manager, its`checkSecurityAccess`method is called 
 
 **See Also**
 
-- [#getInfo](../java/security/Identity.md))
-- [java.lang.SecurityManager#checkSecurityAccess](../java/lang/SecurityManager.md)) 
+- [#getInfo](Identity.md))
+- [java.lang.SecurityManager#checkSecurityAccess](../java.lang/SecurityManager.md)) 
 
 ### setPublicKey
 
@@ -346,7 +346,7 @@ First, if there is a security manager, its`checkSecurityAccess`method is called 
 
 | Parameters ||
 |-------|------------------------------------------------------------------------------------------------------------------------|
-| `key` | [PublicKey](../java/security/PublicKey.md)!:the public key for this identity. |
+| `key` | [PublicKey](PublicKey.md)!:the public key for this identity. |
 
 | Exceptions ||
 |----------------------------------------|-------------------------------------------------------------------------------------------------------|
@@ -355,8 +355,8 @@ First, if there is a security manager, its`checkSecurityAccess`method is called 
 
 **See Also**
 
-- [#getPublicKey](../java/security/Identity.md))
-- [java.lang.SecurityManager#checkSecurityAccess](../java/lang/SecurityManager.md)) 
+- [#getPublicKey](Identity.md))
+- [java.lang.SecurityManager#checkSecurityAccess](../java.lang/SecurityManager.md)) 
 
 ### toString
 
@@ -382,7 +382,7 @@ First, if there is a security manager, its`checkSecurityAccess`method is called 
 
 **See Also**
 
-- [java.lang.SecurityManager#checkSecurityAccess](../java/lang/SecurityManager.md)) 
+- [java.lang.SecurityManager#checkSecurityAccess](../java.lang/SecurityManager.md)) 
 
 ### toString
 
@@ -412,7 +412,7 @@ First, if there is a security manager, its`checkSecurityAccess`method is called 
 
 **See Also**
 
-- [java.lang.SecurityManager#checkSecurityAccess](../java/lang/SecurityManager.md))
+- [java.lang.SecurityManager#checkSecurityAccess](../java.lang/SecurityManager.md))
 
 ## Protected methods
 
@@ -430,7 +430,7 @@ Tests for equality between the specified identity and this identity. This method
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| `identity` | [Identity](../java/security/Identity.md)!:the identity to test for equality with this identity. |
+| `identity` | [Identity](Identity.md)!:the identity to test for equality with this identity. |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------------|
@@ -438,4 +438,4 @@ Tests for equality between the specified identity and this identity. This method
 
 **See Also**
 
-- [#equals](../java/security/Identity.md))
+- [#equals](Identity.md))

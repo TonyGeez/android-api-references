@@ -10,8 +10,8 @@ open class NodeChangeEvent : EventObject
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.util.EventObject](../java/util/EventObject.md) ||
-| | ↳ | [java.util.prefs.NodeChangeEvent](../java/util/prefs/NodeChangeEvent.md) |
+| ↳ | [java.util.EventObject](../java.util/EventObject.md) ||
+| | ↳ | [java.util.prefs.NodeChangeEvent](NodeChangeEvent.md) |
 
 An event emitted by a Preferences node to indicate that a child of that node has been added or removed.
 
@@ -21,20 +21,20 @@ Note, that although NodeChangeEvent inherits Serializable interface from java.ut
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [NodeChangeEvent](../java/util/prefs/NodeChangeEvent.md))`(`parent:` ` [Preferences](../java/util/prefs/Preferences.md)!`, `child:` ` [Preferences](../java/util/prefs/Preferences.md)!`)` Constructs a new`NodeChangeEvent`instance. |
+| [NodeChangeEvent](NodeChangeEvent.md))`(`parent:` ` [Preferences](Preferences.md)!`, `child:` ` [Preferences](Preferences.md)!`)` Constructs a new`NodeChangeEvent`instance. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Preferences](../java/util/prefs/Preferences.md)! | [getChild](../java/util/prefs/NodeChangeEvent.md))`()` Returns the node that was added or removed. |
-| open [Preferences](../java/util/prefs/Preferences.md)! | [getParent](../java/util/prefs/NodeChangeEvent.md))`()` Returns the parent of the node that was added or removed. |
+| open [Preferences](Preferences.md)! | [getChild](NodeChangeEvent.md))`()` Returns the node that was added or removed. |
+| open [Preferences](Preferences.md)! | [getParent](NodeChangeEvent.md))`()` Returns the parent of the node that was added or removed. |
 
 | Inherited functions ||
 |---|---|
-| From class [EventObject](../java/util/EventObject.md) |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getSource](../java/util/EventObject.md))`()` <br /> The object on which the Event initially occurred. <br /> | | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/util/EventObject.md))`()` <br /> Returns a String representation of this EventObject. <br /> | ||
+| From class [EventObject](../java.util/EventObject.md) |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getSource](../java.util/EventObject.md))`()` <br /> The object on which the Event initially occurred. <br /> | | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java.util/EventObject.md))`()` <br /> Returns a String representation of this EventObject. <br /> | ||
 
 | Inherited properties ||
 |---|---|
-| From class [EventObject](../java/util/EventObject.md) |-----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [source](../java/util/EventObject.md) <br /> The object on which the Event initially occurred. <br /> | ||
+| From class [EventObject](../java.util/EventObject.md) |-----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [source](../java.util/EventObject.md) <br /> The object on which the Event initially occurred. <br /> | ||
 
 ## Public constructors
 
@@ -52,8 +52,8 @@ Constructs a new`NodeChangeEvent`instance.
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| `parent` | [Preferences](../java/util/prefs/Preferences.md)!:The parent of the node that was added or removed. |
-| `child` | [Preferences](../java/util/prefs/Preferences.md)!:The node that was added or removed. |
+| `parent` | [Preferences](Preferences.md)!:The parent of the node that was added or removed. |
+| `child` | [Preferences](Preferences.md)!:The node that was added or removed. |
 
 ## Public methods
 
@@ -69,7 +69,7 @@ Returns the node that was added or removed.
 
 | Return ||
 |--------------------------------------------------------------------------------------------|-------------------------------------|
-| [Preferences](../java/util/prefs/Preferences.md)! | The node that was added or removed. |
+| [Preferences](Preferences.md)! | The node that was added or removed. |
 
 ### getParent
 
@@ -83,4 +83,4 @@ Returns the parent of the node that was added or removed.
 
 | Return ||
 |--------------------------------------------------------------------------------------------|--------------------------------------------------------------|
-| [Preferences](../java/util/prefs/Preferences.md)! | The parent Preferences node whose child was added or removed |
+| [Preferences](Preferences.md)! | The parent Preferences node whose child was added or removed |

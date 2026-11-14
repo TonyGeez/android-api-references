@@ -2,7 +2,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # Calendar
 
-Kotlin | [Java](../android/icu/util/Calendar.md)
+Kotlin | [Java](Calendar.md)
 | --- | --- |
 
 ```
@@ -11,12 +11,12 @@ abstract class Calendar : Cloneable, Comparable<Calendar!>, Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.icu.util.Calendar](../android/icu/util/Calendar.md) |
+| ↳ | [android.icu.util.Calendar](Calendar.md) |
 
-| Known Direct Subclasses [ChineseCalendar](../android/icu/util/ChineseCalendar.md), [CopticCalendar](../android/icu/util/CopticCalendar.md), [EthiopicCalendar](../android/icu/util/EthiopicCalendar.md), [GregorianCalendar](../android/icu/util/GregorianCalendar.md), [HebrewCalendar](../android/icu/util/HebrewCalendar.md), [IndianCalendar](../android/icu/util/IndianCalendar.md), [IslamicCalendar](../android/icu/util/IslamicCalendar.md) |---|---| | [ChineseCalendar](../android/icu/util/ChineseCalendar.md) | `ChineseCalendar` is a concrete subclass of `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#` that implements a traditional Chinese calendar. | | [CopticCalendar](../android/icu/util/CopticCalendar.md) | Implement the Coptic calendar system. | | [EthiopicCalendar](../android/icu/util/EthiopicCalendar.md) | Implement the Ethiopic calendar system. | | [GregorianCalendar](../android/icu/util/GregorianCalendar.md) | **\[icu enhancement\]** ICU's replacement for `https://developer.android.com/reference/kotlin/java/util/GregorianCalendar.html#`. | | [HebrewCalendar](../android/icu/util/HebrewCalendar.md) | `HebrewCalendar` is a subclass of `Calendar` that that implements the traditional Hebrew calendar. | | [IndianCalendar](../android/icu/util/IndianCalendar.md) | `IndianCalendar` is a subclass of `GregorianCalendar` that numbers years since the birth of the Buddha. | | [IslamicCalendar](../android/icu/util/IslamicCalendar.md) | `IslamicCalendar` is a subclass of `Calendar` that that implements the Islamic civil and religious calendars. | |
+| Known Direct Subclasses [ChineseCalendar](ChineseCalendar.md), [CopticCalendar](../android/icu/util/CopticCalendar.md), [EthiopicCalendar](../android/icu/util/EthiopicCalendar.md), [GregorianCalendar](GregorianCalendar.md), [HebrewCalendar](HebrewCalendar.md), [IndianCalendar](../android/icu/util/IndianCalendar.md), [IslamicCalendar](IslamicCalendar.md) |---|---| | [ChineseCalendar](ChineseCalendar.md) | `ChineseCalendar` is a concrete subclass of `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#` that implements a traditional Chinese calendar. | | [CopticCalendar](../android/icu/util/CopticCalendar.md) | Implement the Coptic calendar system. | | [EthiopicCalendar](../android/icu/util/EthiopicCalendar.md) | Implement the Ethiopic calendar system. | | [GregorianCalendar](GregorianCalendar.md) | **\[icu enhancement\]** ICU's replacement for `https://developer.android.com/reference/kotlin/java/util/GregorianCalendar.html#`. | | [HebrewCalendar](HebrewCalendar.md) | `HebrewCalendar` is a subclass of `Calendar` that that implements the traditional Hebrew calendar. | | [IndianCalendar](../android/icu/util/IndianCalendar.md) | `IndianCalendar` is a subclass of `GregorianCalendar` that numbers years since the birth of the Buddha. | | [IslamicCalendar](IslamicCalendar.md) | `IslamicCalendar` is a subclass of `Calendar` that that implements the Islamic civil and religious calendars. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [BuddhistCalendar](../android/icu/util/BuddhistCalendar.md), [JapaneseCalendar](../android/icu/util/JapaneseCalendar.md), [TaiwanCalendar](../android/icu/util/TaiwanCalendar.md) |---|---| | [BuddhistCalendar](../android/icu/util/BuddhistCalendar.md) | `BuddhistCalendar` is a subclass of `GregorianCalendar` that numbers years since the birth of the Buddha. | | [JapaneseCalendar](../android/icu/util/JapaneseCalendar.md) | `JapaneseCalendar` is a subclass of `GregorianCalendar` that numbers years and eras based on the reigns of the Japanese emperors. | | [TaiwanCalendar](../android/icu/util/TaiwanCalendar.md) | `TaiwanCalendar` is a subclass of `GregorianCalendar` that numbers years since 1912. | |
+| Known Indirect Subclasses [BuddhistCalendar](BuddhistCalendar.md), [JapaneseCalendar](JapaneseCalendar.md), [TaiwanCalendar](TaiwanCalendar.md) |---|---| | [BuddhistCalendar](BuddhistCalendar.md) | `BuddhistCalendar` is a subclass of `GregorianCalendar` that numbers years since the birth of the Buddha. | | [JapaneseCalendar](JapaneseCalendar.md) | `JapaneseCalendar` is a subclass of `GregorianCalendar` that numbers years and eras based on the reigns of the Japanese emperors. | | [TaiwanCalendar](TaiwanCalendar.md) | `TaiwanCalendar` is a subclass of `GregorianCalendar` that numbers years since 1912. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 **\[icu enhancement\]** ICU's replacement for `https://developer.android.com/reference/kotlin/java/util/Calendar.html#`. Methods, fields, and other functionality specific to ICU are labeled '**\[icu\]**'.
@@ -305,9 +305,9 @@ General notes
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getActualMaximum(kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the maximum value that this field could have, given the current date. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getActualMinimum(kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the minimum value that this field could have, given the current date. |
 | --- | --- |
-| open static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Locale](../java/util/Locale.md)!\>! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getAvailableLocales()()` Returns the list of locales for which Calendars are installed. |
-| open [DateFormat](../android/icu/text/DateFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getDateTimeFormat(kotlin.Int,%20kotlin.Int,%20android.icu.util.ULocale)(dateStyle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, timeStyle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, loc: https://developer.android.com/reference/kotlin/android/icu/util/ULocale!)` **\[icu\]** Returns a `DateFormat` appropriate to this calendar. |
-| open [DateFormat](../android/icu/text/DateFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getDateTimeFormat(kotlin.Int,%20kotlin.Int,%20java.util.Locale)(dateStyle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, timeStyle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, loc: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` **\[icu\]** Returns a `DateFormat` appropriate to this calendar. |
+| open static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Locale](../java.util/Locale.md)!\>! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getAvailableLocales()()` Returns the list of locales for which Calendars are installed. |
+| open [DateFormat](../android.icu.text/DateFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getDateTimeFormat(kotlin.Int,%20kotlin.Int,%20android.icu.util.ULocale)(dateStyle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, timeStyle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, loc: https://developer.android.com/reference/kotlin/android/icu/util/ULocale!)` **\[icu\]** Returns a `DateFormat` appropriate to this calendar. |
+| open [DateFormat](../android.icu.text/DateFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getDateTimeFormat(kotlin.Int,%20kotlin.Int,%20java.util.Locale)(dateStyle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, timeStyle: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, loc: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` **\[icu\]** Returns a `DateFormat` appropriate to this calendar. |
 | --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getDisplayName(android.icu.util.ULocale)(loc: https://developer.android.com/reference/kotlin/android/icu/util/ULocale!)` Returns the name of this calendar in the language of the given locale. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getDisplayName(java.util.Locale)(loc: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Returns the name of this calendar in the language of the given locale. |
@@ -315,14 +315,14 @@ General notes
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getFirstDayOfWeek()()` Returns what the first day of the week is, where 1 = `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#SUNDAY:kotlin.Int` and 7 = `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#SATURDAY:kotlin.Int`. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getGreatestMinimum(kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the highest minimum value for the given field if varies. |
-| open static [Calendar](../android/icu/util/Calendar.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getInstance()()` Returns a calendar using the default time zone and locale. |
+| open static [Calendar](Calendar.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getInstance()()` Returns a calendar using the default time zone and locale. |
 | --- | --- |
-| open static [Calendar](../android/icu/util/Calendar.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getInstance(android.icu.util.TimeZone)(zone: https://developer.android.com/reference/kotlin/android/icu/util/TimeZone!)` Returns a calendar using the specified time zone and default locale. |
-| open static [Calendar](../android/icu/util/Calendar.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getInstance(android.icu.util.TimeZone,%20android.icu.util.ULocale)(zone: https://developer.android.com/reference/kotlin/android/icu/util/TimeZone!, locale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale!)` Returns a calendar with the specified time zone and locale. |
-| open static [Calendar](../android/icu/util/Calendar.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getInstance(android.icu.util.TimeZone,%20java.util.Locale)(zone: https://developer.android.com/reference/kotlin/android/icu/util/TimeZone!, aLocale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Returns a calendar with the specified time zone and locale. |
+| open static [Calendar](Calendar.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getInstance(android.icu.util.TimeZone)(zone: https://developer.android.com/reference/kotlin/android/icu/util/TimeZone!)` Returns a calendar using the specified time zone and default locale. |
+| open static [Calendar](Calendar.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getInstance(android.icu.util.TimeZone,%20android.icu.util.ULocale)(zone: https://developer.android.com/reference/kotlin/android/icu/util/TimeZone!, locale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale!)` Returns a calendar with the specified time zone and locale. |
+| open static [Calendar](Calendar.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getInstance(android.icu.util.TimeZone,%20java.util.Locale)(zone: https://developer.android.com/reference/kotlin/android/icu/util/TimeZone!, aLocale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Returns a calendar with the specified time zone and locale. |
 | --- | --- |
-| open static [Calendar](../android/icu/util/Calendar.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getInstance(android.icu.util.ULocale)(locale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale!)` Returns a calendar using the default time zone and specified locale. |
-| open static [Calendar](../android/icu/util/Calendar.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getInstance(java.util.Locale)(aLocale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Returns a calendar using the default time zone and specified locale. |
+| open static [Calendar](Calendar.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getInstance(android.icu.util.ULocale)(locale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale!)` Returns a calendar using the default time zone and specified locale. |
+| open static [Calendar](Calendar.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getInstance(java.util.Locale)(aLocale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Returns a calendar using the default time zone and specified locale. |
 | static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getKeywordValuesForLocale(kotlin.String,%20android.icu.util.ULocale,%20kotlin.Boolean)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, locale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale!, commonlyUsed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` **\[icu\]** Given a key and a locale, returns an array of string values in a preferred order that would make a difference. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getLeastMaximum(kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the lowest maximum value for the given field if varies. |
@@ -334,10 +334,10 @@ General notes
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getSkippedWallTimeOption()()` **\[icu\]**Gets the behavior for handling skipped wall time at positive time zone offset transitions. |
 | --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getTemporalMonthCode()()` Gets The Temporal monthCode value corresponding to the month for the date. |
-| [Date](../java/util/Date.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getTime()()` Returns this Calendar's current time. |
+| [Date](../java.util/Date.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getTime()()` Returns this Calendar's current time. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getTimeInMillis()()` Returns this Calendar's current time as a long. |
 | --- | --- |
-| open [TimeZone](../android/icu/util/TimeZone.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getTimeZone()()` Returns the time zone. |
+| open [TimeZone](TimeZone.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getTimeZone()()` Returns the time zone. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getType()()` **\[icu\]** Returns the calendar type name string for this Calendar object. |
 | open [Calendar.WeekData](../android/icu/util/Calendar.WeekData.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#getWeekData()()` **\[icu\]** Return simple, immutable struct-like class for access to the week data in this calendar. |
 | --- | --- |
@@ -371,7 +371,7 @@ General notes
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#setTimeInMillis(kotlin.Long)(millis: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Sets this Calendar's current time from the given long value. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#setTimeZone(android.icu.util.TimeZone)(value: https://developer.android.com/reference/kotlin/android/icu/util/TimeZone!)` Sets the time zone with the given time zone value. |
-| open [Calendar](../android/icu/util/Calendar.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#setWeekData(android.icu.util.Calendar.WeekData)(wdata: https://developer.android.com/reference/kotlin/android/icu/util/Calendar.WeekData!)` **\[icu\]** Set data in this calendar based on the WeekData input. |
+| open [Calendar](Calendar.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#setWeekData(android.icu.util.Calendar.WeekData)(wdata: https://developer.android.com/reference/kotlin/android/icu/util/Calendar.WeekData!)` **\[icu\]** Set data in this calendar based on the WeekData input. |
 | --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#toString()()` Returns a string representation of this calendar. |
 
@@ -411,10 +411,10 @@ General notes
 | --- | --- |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#handleComputeMonthStart(kotlin.Int,%20kotlin.Int,%20kotlin.Boolean)(eyear: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, month: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, useMonth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Returns the Julian day number of day before the first day of the given month in the given extended year. |
 | open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#handleCreateFields()()` Subclasses that use additional fields beyond those defined in `Calendar` should override this method to return an `int[]` array of the appropriate length. |
-| open [DateFormat](../android/icu/text/DateFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#handleGetDateFormat(kotlin.String,%20android.icu.util.ULocale)(pattern: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, locale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale!)` Creates a `DateFormat` appropriate to this calendar. |
+| open [DateFormat](../android.icu.text/DateFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#handleGetDateFormat(kotlin.String,%20android.icu.util.ULocale)(pattern: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, locale: https://developer.android.com/reference/kotlin/android/icu/util/ULocale!)` Creates a `DateFormat` appropriate to this calendar. |
 | --- | --- |
-| open [DateFormat](../android/icu/text/DateFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#handleGetDateFormat(kotlin.String,%20kotlin.String,%20java.util.Locale)(pattern: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, override: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Creates a `DateFormat` appropriate to this calendar. |
-| open [DateFormat](../android/icu/text/DateFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#handleGetDateFormat(kotlin.String,%20java.util.Locale)(pattern: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Creates a `DateFormat` appropriate to this calendar. |
+| open [DateFormat](../android.icu.text/DateFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#handleGetDateFormat(kotlin.String,%20kotlin.String,%20java.util.Locale)(pattern: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, override: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Creates a `DateFormat` appropriate to this calendar. |
+| open [DateFormat](../android.icu.text/DateFormat.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#handleGetDateFormat(kotlin.String,%20java.util.Locale)(pattern: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, locale: https://developer.android.com/reference/kotlin/java/util/Locale.html#!)` Creates a `DateFormat` appropriate to this calendar. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#handleGetExtendedYear()()` Returns the extended year defined by the current fields. |
 | --- | --- |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#handleGetLimit(kotlin.Int,%20kotlin.Int)(field: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, limitType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Subclass API for defining limits of different types. |
@@ -448,8 +448,8 @@ General notes
 
 | Properties ||
 |---|---|
-| static [Date](../java/util/Date.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#MAX_DATE:java.util.Date` The maximum supported `Date`. |
-| static [Date](../java/util/Date.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#MIN_DATE:java.util.Date` The minimum supported `Date`. |
+| static [Date](../java.util/Date.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#MAX_DATE:java.util.Date` The maximum supported `Date`. |
+| static [Date](../java.util/Date.md)! | `https://developer.android.com/reference/kotlin/android/icu/util/Calendar#MIN_DATE:java.util.Date` The minimum supported `Date`. |
 
 ## Constants
 
@@ -1461,8 +1461,8 @@ Constructs a calendar with the specified time zone and locale.
 
 | Parameters ||
 |---|---|
-| `zone` | [TimeZone](../android/icu/util/TimeZone.md)!: the time zone to use |
-| `locale` | [ULocale](../android/icu/util/ULocale.md)!: the ulocale for the week data |
+| `zone` | [TimeZone](TimeZone.md)!: the time zone to use |
+| `locale` | [ULocale](ULocale.md)!: the ulocale for the week data |
 
 ### Calendar
 
@@ -1478,8 +1478,8 @@ Constructs a calendar with the specified time zone and locale.
 
 | Parameters ||
 |---|---|
-| `zone` | [TimeZone](../android/icu/util/TimeZone.md)!: the time zone to use |
-| `aLocale` | [Locale](../java/util/Locale.md)!: the locale for the week data |
+| `zone` | [TimeZone](TimeZone.md)!: the time zone to use |
+| `aLocale` | [Locale](../java.util/Locale.md)!: the locale for the week data |
 
 ## Public methods
 
@@ -1684,7 +1684,7 @@ one might expect that `m1 == -m2 && d1 == -d2`. However, this is not generally t
 
 | Parameters ||
 |---|---|
-| `when` | [Date](../java/util/Date.md)!: the date to compare this calendar's time to |
+| `when` | [Date](../java.util/Date.md)!: the date to compare this calendar's time to |
 | `field` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the field in which to compute the result |
 
 | Return ||
@@ -1891,7 +1891,7 @@ Returns a calendar using the specified time zone and default locale.
 
 | Parameters ||
 |---|---|
-| `zone` | [TimeZone](../android/icu/util/TimeZone.md)!: the time zone to use |
+| `zone` | [TimeZone](TimeZone.md)!: the time zone to use |
 
 | Return ||
 |---|---|
@@ -1912,8 +1912,8 @@ Returns a calendar with the specified time zone and locale.
 
 | Parameters ||
 |---|---|
-| `zone` | [TimeZone](../android/icu/util/TimeZone.md)!: the time zone to use |
-| `locale` | [ULocale](../android/icu/util/ULocale.md)!: the ulocale for the week data |
+| `zone` | [TimeZone](TimeZone.md)!: the time zone to use |
+| `locale` | [ULocale](ULocale.md)!: the ulocale for the week data |
 
 | Return ||
 |---|---|
@@ -1934,8 +1934,8 @@ Returns a calendar with the specified time zone and locale.
 
 | Parameters ||
 |---|---|
-| `zone` | [TimeZone](../android/icu/util/TimeZone.md)!: the time zone to use |
-| `aLocale` | [Locale](../java/util/Locale.md)!: the locale for the week data |
+| `zone` | [TimeZone](TimeZone.md)!: the time zone to use |
+| `aLocale` | [Locale](../java.util/Locale.md)!: the locale for the week data |
 
 | Return ||
 |---|---|
@@ -1953,7 +1953,7 @@ Returns a calendar using the default time zone and specified locale.
 
 | Parameters ||
 |---|---|
-| `locale` | [ULocale](../android/icu/util/ULocale.md)!: the ulocale for the week data |
+| `locale` | [ULocale](ULocale.md)!: the ulocale for the week data |
 
 | Return ||
 |---|---|
@@ -1971,7 +1971,7 @@ Returns a calendar using the default time zone and specified locale.
 
 | Parameters ||
 |---|---|
-| `aLocale` | [Locale](../java/util/Locale.md)!: the locale for the week data |
+| `aLocale` | [Locale](../java.util/Locale.md)!: the locale for the week data |
 
 | Return ||
 |---|---|
@@ -1994,7 +1994,7 @@ static fun getKeywordValuesForLocale(
 | Parameters ||
 |---|---|
 | `key` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: one of the keys supported by this service. For now, only "calendar" is supported. |
-| `locale` | [ULocale](../android/icu/util/ULocale.md)!: the locale |
+| `locale` | [ULocale](ULocale.md)!: the locale |
 | `commonlyUsed` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): if set to true it will return only commonly used values with the given locale in preferred order. Otherwise, it will return all the available values for the locale. |
 | --- | --- |
 
@@ -2255,7 +2255,7 @@ open fun isEquivalentTo(other: Calendar!): Boolean
 
 | Parameters ||
 |---|---|
-| `other` | [Calendar](../android/icu/util/Calendar.md)!: the Calendar to be compared with this Calendar |
+| `other` | [Calendar](Calendar.md)!: the Calendar to be compared with this Calendar |
 
 ### isLenient
 
@@ -2311,7 +2311,7 @@ open fun isWeekend(date: Date!): Boolean
 
 | Parameters ||
 |---|---|
-| `date` | [Date](../java/util/Date.md)!: the date and time |
+| `date` | [Date](../java.util/Date.md)!: the date and time |
 
 | Return ||
 |---|---|
@@ -2616,7 +2616,7 @@ Note: Calling `setTime` with `Date(Long.MAX_VALUE)` or `Date(Long.MIN_VALUE)` ma
 
 | Parameters ||
 |---|---|
-| `date` | [Date](../java/util/Date.md)!: the given Date. |
+| `date` | [Date](../java.util/Date.md)!: the given Date. |
 
 ### setTimeInMillis
 
@@ -2644,7 +2644,7 @@ Sets the time zone with the given time zone value.
 
 | Parameters ||
 |---|---|
-| `value` | [TimeZone](../android/icu/util/TimeZone.md)!: the given time zone. |
+| `value` | [TimeZone](TimeZone.md)!: the given time zone. |
 
 ### setWeekData
 
@@ -3142,7 +3142,7 @@ Creates a `DateFormat` appropriate to this calendar. This is a framework method 
 | Parameters ||
 |---|---|
 | `pattern` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the pattern, specific to the `DateFormat` subclass |
-| `locale` | [ULocale](../android/icu/util/ULocale.md)!: the locale for which the symbols should be drawn |
+| `locale` | [ULocale](ULocale.md)!: the locale for which the symbols should be drawn |
 
 | Return ||
 |---|---|
@@ -3166,7 +3166,7 @@ Creates a `DateFormat` appropriate to this calendar. This is a framework method 
 |---|---|
 | `pattern` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the pattern, specific to the `DateFormat` subclass |
 | `override` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The override string. A numbering system override string can take one of the following forms: 1). If just a numbering system name is specified, it applies to all numeric fields in the date format pattern. 2). To specify an alternate numbering system on a field by field basis, use the field letters from the pattern followed by an = sign, followed by the numbering system name. For example, to specify that just the year be formatted using Hebrew digits, use the override "y=hebr". Multiple overrides can be specified in a single string by separating them with a semi-colon. For example, the override string "m=thai;y=deva" would format using Thai digits for the month and Devanagari digits for the year. |
-| `locale` | [Locale](../java/util/Locale.md)!: the locale for which the symbols should be drawn |
+| `locale` | [Locale](../java.util/Locale.md)!: the locale for which the symbols should be drawn |
 | --- | --- |
 
 | Return ||
@@ -3189,7 +3189,7 @@ Creates a `DateFormat` appropriate to this calendar. This is a framework method 
 | Parameters ||
 |---|---|
 | `pattern` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the pattern, specific to the `DateFormat` subclass |
-| `locale` | [Locale](../java/util/Locale.md)!: the locale for which the symbols should be drawn |
+| `locale` | [Locale](../java.util/Locale.md)!: the locale for which the symbols should be drawn |
 
 | Return ||
 |---|---|

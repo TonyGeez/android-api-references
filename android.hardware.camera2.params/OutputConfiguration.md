@@ -8,7 +8,7 @@ class OutputConfiguration : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.hardware.camera2.params.OutputConfiguration](../android/hardware/camera2/params/OutputConfiguration.md) |
+| ↳ | [android.hardware.camera2.params.OutputConfiguration](OutputConfiguration.md) |
 
 A class for describing camera output, which contains a `https://developer.android.com/reference/kotlin/android/view/Surface.html#` and its specific configuration for creating capture session.
 
@@ -66,15 +66,15 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 |---|---|
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#addSensorPixelModeUsed(kotlin.Int)(sensorPixelModeUsed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Add a sensor pixel mode that this OutputConfiguration will be used in. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#addSurface(android.view.Surface)(surface: https://developer.android.com/reference/kotlin/android/view/Surface.html#)` Add a surface to this OutputConfiguration. |
-| static [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [OutputConfiguration](../android/hardware/camera2/params/OutputConfiguration.md)!\> | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#createInstancesForMultiResolutionOutput(android.hardware.camera2.MultiResolutionImageReader)(multiResolutionImageReader: https://developer.android.com/reference/kotlin/android/hardware/camera2/MultiResolutionImageReader.html#)` Create a list of `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#` instances for the outputs used by a `https://developer.android.com/reference/kotlin/android/hardware/camera2/MultiResolutionImageReader.html#`. |
+| static [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [OutputConfiguration](OutputConfiguration.md)!\> | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#createInstancesForMultiResolutionOutput(android.hardware.camera2.MultiResolutionImageReader)(multiResolutionImageReader: https://developer.android.com/reference/kotlin/android/hardware/camera2/MultiResolutionImageReader.html#)` Create a list of `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#` instances for the outputs used by a `https://developer.android.com/reference/kotlin/android/hardware/camera2/MultiResolutionImageReader.html#`. |
 | --- | --- |
-| static [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [OutputConfiguration](../android/hardware/camera2/params/OutputConfiguration.md)!\> | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#createInstancesForMultiResolutionOutput(kotlin.collections.MutableCollection,%20kotlin.Int)(streams: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html<https://developer.android.com/reference/kotlin/android/hardware/camera2/params/MultiResolutionStreamInfo!>, format: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a list of `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#` instances for a `https://developer.android.com/reference/kotlin/android/hardware/camera2/MultiResolutionImageReader.html#`. |
+| static [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [OutputConfiguration](OutputConfiguration.md)!\> | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#createInstancesForMultiResolutionOutput(kotlin.collections.MutableCollection,%20kotlin.Int)(streams: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html<https://developer.android.com/reference/kotlin/android/hardware/camera2/params/MultiResolutionStreamInfo!>, format: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a list of `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#` instances for a `https://developer.android.com/reference/kotlin/android/hardware/camera2/MultiResolutionImageReader.html#`. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#enableSurfaceSharing()()` Enable multiple surfaces sharing the same OutputConfiguration |
 | --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Check if this `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#` is equal to another `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#`. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#getConfiguredFormat()()` Get the configured format associated with this `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#`. |
-| [Size](../android/util/Size.md) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#getConfiguredSize()()` Get the latest configured size associated with this `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#`. |
+| [Size](../android.util/Size.md) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#getConfiguredSize()()` Get the latest configured size associated with this `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#`. |
 | --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#getDynamicRangeProfile()()` Return current dynamic range profile. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#getMaxSharedSurfaceCount()()` Get the maximum supported shared `https://developer.android.com/reference/kotlin/android/view/Surface.html#` count. |
@@ -84,16 +84,16 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#getPhysicalCameraId()()` Get the physical camera ID associated with this `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#`. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#getStreamUseCase()()` Get the current stream use case |
 | --- | --- |
-| [Surface](../android/view/Surface.md)? | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#getSurface()()` Get the `https://developer.android.com/reference/kotlin/android/view/Surface.html#` associated with this `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#`. |
+| [Surface](../android.view/Surface.md)? | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#getSurface()()` Get the `https://developer.android.com/reference/kotlin/android/view/Surface.html#` associated with this `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#`. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#getSurfaceGroupId()()` Get the surface group ID associated with this `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#`. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Surface](../android/view/Surface.md)!\> | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#getSurfaces()()` Get the immutable list of surfaces associated with this `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Surface](../android.view/Surface.md)!\> | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#getSurfaces()()` Get the immutable list of surfaces associated with this `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#`. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#getTimestampBase()()` Get the current timestamp base |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#getUsage()()` Get the usage flag associated with this `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#`. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#hashCode()()` Returns a hash code value for the object. |
 | --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#isReadoutTimestampEnabled()()` Whether readout timestamp is used for this OutputConfiguration. |
-| [OutputConfiguration](../android/hardware/camera2/params/OutputConfiguration.md) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#makeDeferredAndRemoveSurfaces()()` Clear any valid output surfaces and mark the configuration as deferred. |
+| [OutputConfiguration](OutputConfiguration.md) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#makeDeferredAndRemoveSurfaces()()` Clear any valid output surfaces and mark the configuration as deferred. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#removeSensorPixelModeUsed(kotlin.Int)(sensorPixelModeUsed: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Remove a sensor pixel mode, previously added through addSensorPixelModeUsed, from this OutputConfiguration. |
 | --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#removeSurface(android.view.Surface)(surface: https://developer.android.com/reference/kotlin/android/view/Surface.html#)` Remove a surface from this OutputConfiguration. |
@@ -112,7 +112,7 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [OutputConfiguration](../android/hardware/camera2/params/OutputConfiguration.md)!\> | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [OutputConfiguration](OutputConfiguration.md)!\> | `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -304,8 +304,8 @@ An OutputConfiguration object created by this constructor can be used for `https
 
 | Parameters ||
 |---|---|
-| `surfaceSize` | [Size](../android/util/Size.md): Size for the deferred surface. This value cannot be `null`. |
-| `klass` | [Class](../java/lang/Class.md)\<T\>: a non-`null` `https://developer.android.com/reference/kotlin/java/lang/Class.html#` object reference that indicates the source of this surface. Only `https://developer.android.com/reference/kotlin/android/view/SurfaceHolder.html#`, `https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture.html#`, `https://developer.android.com/reference/kotlin/android/media/MediaRecorder.html#`, and `https://developer.android.com/reference/kotlin/android/media/MediaCodec.html#` are supported. Before `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#VANILLA_ICE_CREAM:kotlin.Int`, only `https://developer.android.com/reference/kotlin/android/view/SurfaceHolder.html#` and `https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture.html#` are supported. |
+| `surfaceSize` | [Size](../android.util/Size.md): Size for the deferred surface. This value cannot be `null`. |
+| `klass` | [Class](../java.lang/Class.md)\<T\>: a non-`null` `https://developer.android.com/reference/kotlin/java/lang/Class.html#` object reference that indicates the source of this surface. Only `https://developer.android.com/reference/kotlin/android/view/SurfaceHolder.html#`, `https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture.html#`, `https://developer.android.com/reference/kotlin/android/media/MediaRecorder.html#`, and `https://developer.android.com/reference/kotlin/android/media/MediaCodec.html#` are supported. Before `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#VANILLA_ICE_CREAM:kotlin.Int`, only `https://developer.android.com/reference/kotlin/android/view/SurfaceHolder.html#` and `https://developer.android.com/reference/kotlin/android/graphics/SurfaceTexture.html#` are supported. |
 
 | Exceptions ||
 |---|---|
@@ -323,7 +323,7 @@ Create a new `https://developer.android.com/reference/kotlin/android/hardware/ca
 
 | Parameters ||
 |---|---|
-| `surface` | [Surface](../android/view/Surface.md): A Surface for camera to output to. This constructor creates a default configuration, with a surface group ID of {@value #SURFACE_GROUP_ID_NONE}. . This value cannot be `null`. |
+| `surface` | [Surface](../android.view/Surface.md): A Surface for camera to output to. This constructor creates a default configuration, with a surface group ID of {@value #SURFACE_GROUP_ID_NONE}. . This value cannot be `null`. |
 
 ### OutputConfiguration
 
@@ -344,7 +344,7 @@ An OutputConfiguration object created by this constructor can be used for `https
 | Parameters ||
 |---|---|
 | `format` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The format of the ImageReader output. This must be one of the `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#` or `https://developer.android.com/reference/kotlin/android/graphics/PixelFormat.html#` constants. Note that not all formats are supported by the camera device. |
-| `surfaceSize` | [Size](../android/util/Size.md): Size for the ImageReader surface. This value cannot be `null`. |
+| `surfaceSize` | [Size](../android.util/Size.md): Size for the ImageReader surface. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -370,7 +370,7 @@ An OutputConfiguration object created by this constructor can be used for `https
 | Parameters ||
 |---|---|
 | `format` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The format of the ImageReader output. This must be one of the `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#` or `https://developer.android.com/reference/kotlin/android/graphics/PixelFormat.html#` constants. Note that not all formats are supported by the camera device. |
-| `surfaceSize` | [Size](../android/util/Size.md): Size for the ImageReader surface. This value cannot be `null`. |
+| `surfaceSize` | [Size](../android.util/Size.md): Size for the ImageReader surface. This value cannot be `null`. |
 | `usage` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The usage flags of the ImageReader output surface. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/hardware/HardwareBuffer.html#USAGE_CPU_READ_RARELY:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/hardware/HardwareBuffer.html#USAGE_CPU_READ_OFTEN:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/hardware/HardwareBuffer.html#USAGE_CPU_WRITE_RARELY:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/hardware/HardwareBuffer.html#USAGE_CPU_WRITE_OFTEN:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/hardware/HardwareBuffer.html#USAGE_GPU_SAMPLED_IMAGE:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/hardware/HardwareBuffer.html#USAGE_GPU_COLOR_OUTPUT:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/hardware/HardwareBuffer.html#USAGE_COMPOSER_OVERLAY:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/hardware/HardwareBuffer.html#USAGE_PROTECTED_CONTENT:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/hardware/HardwareBuffer.html#USAGE_VIDEO_ENCODE:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/hardware/HardwareBuffer.html#USAGE_GPU_DATA_BUFFER:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/hardware/HardwareBuffer.html#USAGE_SENSOR_DIRECT_DATA:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/hardware/HardwareBuffer.html#USAGE_GPU_CUBE_MAP:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/hardware/HardwareBuffer.html#USAGE_GPU_MIPMAP_COMPLETE:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/hardware/HardwareBuffer.html#USAGE_FRONT_BUFFER:kotlin.Long` |
 | --- | --- |
 
@@ -399,7 +399,7 @@ It is not an error to include output streams with the same group ID in the same 
 | Parameters ||
 |---|---|
 | `surfaceGroupId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): A group ID for this output, used for sharing memory between multiple outputs. |
-| `surface` | [Surface](../android/view/Surface.md): A Surface for camera to output to. This value cannot be `null`. |
+| `surface` | [Surface](../android.view/Surface.md): A Surface for camera to output to. This value cannot be `null`. |
 
 ### OutputConfiguration
 
@@ -422,7 +422,7 @@ An OutputConfiguration object created by this constructor can be used for `https
 |---|---|
 | `surfaceGroupId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): A group ID for this output, used for sharing memory between multiple outputs. |
 | `format` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The format of the ImageReader output. This must be one of the `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#` or `https://developer.android.com/reference/kotlin/android/graphics/PixelFormat.html#` constants. Note that not all formats are supported by the camera device. |
-| `surfaceSize` | [Size](../android/util/Size.md): Size for the ImageReader surface. This value cannot be `null`. |
+| `surfaceSize` | [Size](../android.util/Size.md): Size for the ImageReader surface. This value cannot be `null`. |
 | --- | --- |
 
 | Exceptions ||
@@ -451,7 +451,7 @@ An OutputConfiguration object created by this constructor can be used for `https
 |---|---|
 | `surfaceGroupId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): A group ID for this output, used for sharing memory between multiple outputs. |
 | `format` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The format of the ImageReader output. This must be one of the `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#` or `https://developer.android.com/reference/kotlin/android/graphics/PixelFormat.html#` constants. Note that not all formats are supported by the camera device. |
-| `surfaceSize` | [Size](../android/util/Size.md): Size for the ImageReader surface. This value cannot be `null`. |
+| `surfaceSize` | [Size](../android.util/Size.md): Size for the ImageReader surface. This value cannot be `null`. |
 | --- | --- |
 | `usage` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The usage flags of the ImageReader output surface. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/hardware/HardwareBuffer.html#USAGE_CPU_READ_RARELY:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/hardware/HardwareBuffer.html#USAGE_CPU_READ_OFTEN:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/hardware/HardwareBuffer.html#USAGE_CPU_WRITE_RARELY:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/hardware/HardwareBuffer.html#USAGE_CPU_WRITE_OFTEN:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/hardware/HardwareBuffer.html#USAGE_GPU_SAMPLED_IMAGE:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/hardware/HardwareBuffer.html#USAGE_GPU_COLOR_OUTPUT:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/hardware/HardwareBuffer.html#USAGE_COMPOSER_OVERLAY:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/hardware/HardwareBuffer.html#USAGE_PROTECTED_CONTENT:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/hardware/HardwareBuffer.html#USAGE_VIDEO_ENCODE:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/hardware/HardwareBuffer.html#USAGE_GPU_DATA_BUFFER:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/hardware/HardwareBuffer.html#USAGE_SENSOR_DIRECT_DATA:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/hardware/HardwareBuffer.html#USAGE_GPU_CUBE_MAP:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/hardware/HardwareBuffer.html#USAGE_GPU_MIPMAP_COMPLETE:kotlin.Long` - `https://developer.android.com/reference/kotlin/android/hardware/HardwareBuffer.html#USAGE_FRONT_BUFFER:kotlin.Long` |
 
@@ -504,7 +504,7 @@ If the OutputConfiguration already contains a Surface, `https://developer.androi
 
 | Parameters ||
 |---|---|
-| `surface` | [Surface](../android/view/Surface.md): The surface to be added. This value cannot be `null`. |
+| `surface` | [Surface](../android.view/Surface.md): The surface to be added. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -529,7 +529,7 @@ As of `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_C
 
 | Parameters ||
 |---|---|
-| `multiResolutionImageReader` | [MultiResolutionImageReader](../android/hardware/camera2/MultiResolutionImageReader.md): The multi-resolution image reader object. This value cannot be `null`. |
+| `multiResolutionImageReader` | [MultiResolutionImageReader](../android.hardware.camera2/MultiResolutionImageReader.md): The multi-resolution image reader object. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -554,7 +554,7 @@ This constructor takes same arguments used to create a `https://developer.androi
 
 | Parameters ||
 |---|---|
-| `streams` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [MultiResolutionStreamInfo](../android/hardware/camera2/params/MultiResolutionStreamInfo.md)!\>: The group of multi-resolution stream info objects, which are used to create a multi-resolution image reader containing a number of ImageReaders. This value cannot be `null`. |
+| `streams` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [MultiResolutionStreamInfo](MultiResolutionStreamInfo.md)!\>: The group of multi-resolution stream info objects, which are used to create a multi-resolution image reader containing a number of ImageReaders. This value cannot be `null`. |
 | `format` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The format of the MultiResolutionImageReader. This must be one of the `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#` or `https://developer.android.com/reference/kotlin/android/graphics/PixelFormat.html#` constants supported by the camera device. Note that not all formats are supported, like `https://developer.android.com/reference/kotlin/android/graphics/ImageFormat.html#NV21:kotlin.Int`. The supported multi-resolution reader format can be queried by `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/MultiResolutionStreamConfigurationMap#getOutputFormats()`. |
 
 | Return ||
@@ -724,7 +724,7 @@ If only `https://developer.android.com/reference/kotlin/android/hardware/camera2
 
 | Parameters ||
 |---|---|
-| `surface` | [Surface](../android/view/Surface.md): This value cannot be `null`. |
+| `surface` | [Surface](../android.view/Surface.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -929,7 +929,7 @@ Surfaces added via calls to `https://developer.android.com/reference/kotlin/andr
 
 | Parameters ||
 |---|---|
-| `surface` | [Surface](../android/view/Surface.md): The surface to be removed. This value cannot be `null`. |
+| `surface` | [Surface](../android.view/Surface.md): The surface to be removed. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -976,7 +976,7 @@ For efficiency, the mirror effect is applied as a transform flag, so it is only 
 
 | Parameters ||
 |---|---|
-| `surface` | [Surface](../android/view/Surface.md): This value cannot be `null`. |
+| `surface` | [Surface](../android.view/Surface.md): This value cannot be `null`. |
 | `mirrorMode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Value is one of the following: - `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#MIRROR_MODE_AUTO:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#MIRROR_MODE_NONE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#MIRROR_MODE_H:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#MIRROR_MODE_V:kotlin.Int` |
 
 | Exceptions ||
@@ -1094,8 +1094,8 @@ This function should be used together with #createInstancesForMultiResolutionOut
 
 | Parameters ||
 |---|---|
-| `outputConfigurations` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [OutputConfiguration](../android/hardware/camera2/params/OutputConfiguration.md)!\>: The OutputConfiguration objects created by #createInstancesForMultiResolutionOutput This value cannot be `null`. |
-| `multiResolutionImageReader` | [MultiResolutionImageReader](../android/hardware/camera2/MultiResolutionImageReader.md): The MultiResolutionImageReader object created from the same MultiResolutionStreamInfo parameters as `outputConfigurations`. This value cannot be `null`. |
+| `outputConfigurations` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [OutputConfiguration](OutputConfiguration.md)!\>: The OutputConfiguration objects created by #createInstancesForMultiResolutionOutput This value cannot be `null`. |
+| `multiResolutionImageReader` | [MultiResolutionImageReader](../android.hardware.camera2/MultiResolutionImageReader.md): The MultiResolutionImageReader object created from the same MultiResolutionStreamInfo parameters as `outputConfigurations`. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -1141,7 +1141,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

@@ -10,50 +10,50 @@ open class AtomicReference<V : Any!> : Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.util.concurrent.atomic.AtomicReference](../java/util/concurrent/atomic/AtomicReference.md) |
+| ↳ | [java.util.concurrent.atomic.AtomicReference](AtomicReference.md) |
 
-An object reference that may be updated atomically. See the [VarHandle](../java/lang/invoke/VarHandle.md) specification for descriptions of the properties of atomic accesses.
+An object reference that may be updated atomically. See the [VarHandle](../java.lang.invoke/VarHandle.md) specification for descriptions of the properties of atomic accesses.
 
 ## Summary
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [AtomicReference](../java/util/concurrent/atomic/AtomicReference.md))`()` Creates a new AtomicReference with null initial value. |
-| [AtomicReference](../java/util/concurrent/atomic/AtomicReference.md))`(`initialValue:` `V`)` Creates a new AtomicReference with the given initial value. |
+| [AtomicReference](AtomicReference.md))`()` Creates a new AtomicReference with null initial value. |
+| [AtomicReference](AtomicReference.md))`(`initialValue:` `V`)` Creates a new AtomicReference with the given initial value. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| V | [accumulateAndGet](../java/util/concurrent/atomic/AtomicReference.md))`(`x:` `V`, `accumulatorFunction:` ` [BinaryOperator](../java/util/function/BinaryOperator.md)<V>!`)` Atomically updates (with memory effects as specified by [java.lang.invoke.VarHandle#compareAndSet](../java/lang/invoke/VarHandle.md))) the current value with the results of applying the given function to the current and given values, returning the updated value. |
-| V | [compareAndExchange](../java/util/concurrent/atomic/AtomicReference.md))`(`expectedValue:` `V`, `newValue:` `V`)` Atomically sets the value to`newValue`if the current value, referred to as the*witness value* ,`== expectedValue`, with memory effects as specified by [VarHandle.compareAndExchange](../java/lang/invoke/VarHandle.md)). |
-| V | [compareAndExchangeAcquire](../java/util/concurrent/atomic/AtomicReference.md))`(`expectedValue:` `V`, `newValue:` `V`)` Atomically sets the value to`newValue`if the current value, referred to as the*witness value* ,`== expectedValue`, with memory effects as specified by [VarHandle.compareAndExchangeAcquire](../java/lang/invoke/VarHandle.md)). |
+| V | [accumulateAndGet](AtomicReference.md))`(`x:` `V`, `accumulatorFunction:` ` [BinaryOperator](../java.util.function/BinaryOperator.md)<V>!`)` Atomically updates (with memory effects as specified by [java.lang.invoke.VarHandle#compareAndSet](../java.lang.invoke/VarHandle.md))) the current value with the results of applying the given function to the current and given values, returning the updated value. |
+| V | [compareAndExchange](AtomicReference.md))`(`expectedValue:` `V`, `newValue:` `V`)` Atomically sets the value to`newValue`if the current value, referred to as the*witness value* ,`== expectedValue`, with memory effects as specified by [VarHandle.compareAndExchange](../java.lang.invoke/VarHandle.md)). |
+| V | [compareAndExchangeAcquire](AtomicReference.md))`(`expectedValue:` `V`, `newValue:` `V`)` Atomically sets the value to`newValue`if the current value, referred to as the*witness value* ,`== expectedValue`, with memory effects as specified by [VarHandle.compareAndExchangeAcquire](../java.lang.invoke/VarHandle.md)). |
 | --- | --- |
-| V | [compareAndExchangeRelease](../java/util/concurrent/atomic/AtomicReference.md))`(`expectedValue:` `V`, `newValue:` `V`)` Atomically sets the value to`newValue`if the current value, referred to as the*witness value* ,`== expectedValue`, with memory effects as specified by [VarHandle.compareAndExchangeRelease](../java/lang/invoke/VarHandle.md)). |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [compareAndSet](../java/util/concurrent/atomic/AtomicReference.md))`(`expectedValue:` `V`, `newValue:` `V`)` Atomically sets the value to`newValue`if the current value`== expectedValue`, with memory effects as specified by [VarHandle.compareAndSet](../java/lang/invoke/VarHandle.md)). |
-| V | [get](../java/util/concurrent/atomic/AtomicReference.md))`()` Returns the current value, with memory effects as specified by [VarHandle.getVolatile](../java/lang/invoke/VarHandle.md)). |
+| V | [compareAndExchangeRelease](AtomicReference.md))`(`expectedValue:` `V`, `newValue:` `V`)` Atomically sets the value to`newValue`if the current value, referred to as the*witness value* ,`== expectedValue`, with memory effects as specified by [VarHandle.compareAndExchangeRelease](../java.lang.invoke/VarHandle.md)). |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [compareAndSet](AtomicReference.md))`(`expectedValue:` `V`, `newValue:` `V`)` Atomically sets the value to`newValue`if the current value`== expectedValue`, with memory effects as specified by [VarHandle.compareAndSet](../java.lang.invoke/VarHandle.md)). |
+| V | [get](AtomicReference.md))`()` Returns the current value, with memory effects as specified by [VarHandle.getVolatile](../java.lang.invoke/VarHandle.md)). |
 | --- | --- |
-| V | [getAcquire](../java/util/concurrent/atomic/AtomicReference.md))`()` Returns the current value, with memory effects as specified by [VarHandle.getAcquire](../java/lang/invoke/VarHandle.md)). |
-| V | [getAndAccumulate](../java/util/concurrent/atomic/AtomicReference.md))`(`x:` `V`, `accumulatorFunction:` ` [BinaryOperator](../java/util/function/BinaryOperator.md)<V>!`)` Atomically updates (with memory effects as specified by [java.lang.invoke.VarHandle#compareAndSet](../java/lang/invoke/VarHandle.md))) the current value with the results of applying the given function to the current and given values, returning the previous value. |
-| V | [getAndSet](../java/util/concurrent/atomic/AtomicReference.md))`(`newValue:` `V`)` Atomically sets the value to`newValue`and returns the old value, with memory effects as specified by [VarHandle.getAndSet](../java/lang/invoke/VarHandle.md)). |
+| V | [getAcquire](AtomicReference.md))`()` Returns the current value, with memory effects as specified by [VarHandle.getAcquire](../java.lang.invoke/VarHandle.md)). |
+| V | [getAndAccumulate](AtomicReference.md))`(`x:` `V`, `accumulatorFunction:` ` [BinaryOperator](../java.util.function/BinaryOperator.md)<V>!`)` Atomically updates (with memory effects as specified by [java.lang.invoke.VarHandle#compareAndSet](../java.lang.invoke/VarHandle.md))) the current value with the results of applying the given function to the current and given values, returning the previous value. |
+| V | [getAndSet](AtomicReference.md))`(`newValue:` `V`)` Atomically sets the value to`newValue`and returns the old value, with memory effects as specified by [VarHandle.getAndSet](../java.lang.invoke/VarHandle.md)). |
 | --- | --- |
-| V | [getAndUpdate](../java/util/concurrent/atomic/AtomicReference.md))`(`updateFunction:` ` [UnaryOperator](../java/util/function/UnaryOperator.md)<V>!`)` Atomically updates (with memory effects as specified by [java.lang.invoke.VarHandle#compareAndSet](../java/lang/invoke/VarHandle.md))) the current value with the results of applying the given function, returning the previous value. |
-| V | [getOpaque](../java/util/concurrent/atomic/AtomicReference.md))`()` Returns the current value, with memory effects as specified by [VarHandle.getOpaque](../java/lang/invoke/VarHandle.md)). |
-| V | [getPlain](../java/util/concurrent/atomic/AtomicReference.md))`()` Returns the current value, with memory semantics of reading as if the variable was declared non-`volatile`. |
+| V | [getAndUpdate](AtomicReference.md))`(`updateFunction:` ` [UnaryOperator](../java.util.function/UnaryOperator.md)<V>!`)` Atomically updates (with memory effects as specified by [java.lang.invoke.VarHandle#compareAndSet](../java.lang.invoke/VarHandle.md))) the current value with the results of applying the given function, returning the previous value. |
+| V | [getOpaque](AtomicReference.md))`()` Returns the current value, with memory effects as specified by [VarHandle.getOpaque](../java.lang.invoke/VarHandle.md)). |
+| V | [getPlain](AtomicReference.md))`()` Returns the current value, with memory semantics of reading as if the variable was declared non-`volatile`. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [lazySet](../java/util/concurrent/atomic/AtomicReference.md))`(`newValue:` `V`)` Sets the value to`newValue`, with memory effects as specified by [VarHandle.setRelease](../java/lang/invoke/VarHandle.md)). |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [set](../java/util/concurrent/atomic/AtomicReference.md))`(`newValue:` `V`)` Sets the value to`newValue`, with memory effects as specified by [VarHandle.setVolatile](../java/lang/invoke/VarHandle.md)). |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOpaque](../java/util/concurrent/atomic/AtomicReference.md))`(`newValue:` `V`)` Sets the value to`newValue`, with memory effects as specified by [VarHandle.setOpaque](../java/lang/invoke/VarHandle.md)). |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [lazySet](AtomicReference.md))`(`newValue:` `V`)` Sets the value to`newValue`, with memory effects as specified by [VarHandle.setRelease](../java.lang.invoke/VarHandle.md)). |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [set](AtomicReference.md))`(`newValue:` `V`)` Sets the value to`newValue`, with memory effects as specified by [VarHandle.setVolatile](../java.lang.invoke/VarHandle.md)). |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOpaque](AtomicReference.md))`(`newValue:` `V`)` Sets the value to`newValue`, with memory effects as specified by [VarHandle.setOpaque](../java.lang.invoke/VarHandle.md)). |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPlain](../java/util/concurrent/atomic/AtomicReference.md))`(`newValue:` `V`)` Sets the value to`newValue`, with memory semantics of setting as if the variable was declared non-`volatile`and non-`final`. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRelease](../java/util/concurrent/atomic/AtomicReference.md))`(`newValue:` `V`)` Sets the value to`newValue`, with memory effects as specified by [VarHandle.setRelease](../java/lang/invoke/VarHandle.md)). |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/util/concurrent/atomic/AtomicReference.md))`()` Returns the String representation of the current value. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPlain](AtomicReference.md))`(`newValue:` `V`)` Sets the value to`newValue`, with memory semantics of setting as if the variable was declared non-`volatile`and non-`final`. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRelease](AtomicReference.md))`(`newValue:` `V`)` Sets the value to`newValue`, with memory effects as specified by [VarHandle.setRelease](../java.lang.invoke/VarHandle.md)). |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](AtomicReference.md))`()` Returns the String representation of the current value. |
 | --- | --- |
-| V | [updateAndGet](../java/util/concurrent/atomic/AtomicReference.md))`(`updateFunction:` ` [UnaryOperator](../java/util/function/UnaryOperator.md)<V>!`)` Atomically updates (with memory effects as specified by [java.lang.invoke.VarHandle#compareAndSet](../java/lang/invoke/VarHandle.md))) the current value with the results of applying the given function, returning the updated value. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [weakCompareAndSet](../java/util/concurrent/atomic/AtomicReference.md))`(`expectedValue:` `V`, `newValue:` `V`)` Possibly atomically sets the value to`newValue`if the current value`== expectedValue`, with memory effects as specified by [VarHandle.weakCompareAndSetPlain](../java/lang/invoke/VarHandle.md)). |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [weakCompareAndSetAcquire](../java/util/concurrent/atomic/AtomicReference.md))`(`expectedValue:` `V`, `newValue:` `V`)` Possibly atomically sets the value to`newValue`if the current value`== expectedValue`, with memory effects as specified by [VarHandle.weakCompareAndSetAcquire](../java/lang/invoke/VarHandle.md)). |
+| V | [updateAndGet](AtomicReference.md))`(`updateFunction:` ` [UnaryOperator](../java.util.function/UnaryOperator.md)<V>!`)` Atomically updates (with memory effects as specified by [java.lang.invoke.VarHandle#compareAndSet](../java.lang.invoke/VarHandle.md))) the current value with the results of applying the given function, returning the updated value. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [weakCompareAndSet](AtomicReference.md))`(`expectedValue:` `V`, `newValue:` `V`)` Possibly atomically sets the value to`newValue`if the current value`== expectedValue`, with memory effects as specified by [VarHandle.weakCompareAndSetPlain](../java.lang.invoke/VarHandle.md)). |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [weakCompareAndSetAcquire](AtomicReference.md))`(`expectedValue:` `V`, `newValue:` `V`)` Possibly atomically sets the value to`newValue`if the current value`== expectedValue`, with memory effects as specified by [VarHandle.weakCompareAndSetAcquire](../java.lang.invoke/VarHandle.md)). |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [weakCompareAndSetPlain](../java/util/concurrent/atomic/AtomicReference.md))`(`expectedValue:` `V`, `newValue:` `V`)` Possibly atomically sets the value to`newValue`if the current value`== expectedValue`, with memory effects as specified by [VarHandle.weakCompareAndSetPlain](../java/lang/invoke/VarHandle.md)). |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [weakCompareAndSetRelease](../java/util/concurrent/atomic/AtomicReference.md))`(`expectedValue:` `V`, `newValue:` `V`)` Possibly atomically sets the value to`newValue`if the current value`== expectedValue`, with memory effects as specified by [VarHandle.weakCompareAndSetRelease](../java/lang/invoke/VarHandle.md)). |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [weakCompareAndSetVolatile](../java/util/concurrent/atomic/AtomicReference.md))`(`expectedValue:` `V`, `newValue:` `V`)` Possibly atomically sets the value to`newValue`if the current value`== expectedValue`, with memory effects as specified by [VarHandle.weakCompareAndSet](../java/lang/invoke/VarHandle.md)). |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [weakCompareAndSetPlain](AtomicReference.md))`(`expectedValue:` `V`, `newValue:` `V`)` Possibly atomically sets the value to`newValue`if the current value`== expectedValue`, with memory effects as specified by [VarHandle.weakCompareAndSetPlain](../java.lang.invoke/VarHandle.md)). |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [weakCompareAndSetRelease](AtomicReference.md))`(`expectedValue:` `V`, `newValue:` `V`)` Possibly atomically sets the value to`newValue`if the current value`== expectedValue`, with memory effects as specified by [VarHandle.weakCompareAndSetRelease](../java.lang.invoke/VarHandle.md)). |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [weakCompareAndSetVolatile](AtomicReference.md))`(`expectedValue:` `V`, `newValue:` `V`)` Possibly atomically sets the value to`newValue`if the current value`== expectedValue`, with memory effects as specified by [VarHandle.weakCompareAndSet](../java.lang.invoke/VarHandle.md)). |
 | --- | --- |
 
 ## Public constructors
@@ -95,12 +95,12 @@ fun accumulateAndGet(
 ): V
 ```
 
-Atomically updates (with memory effects as specified by [java.lang.invoke.VarHandle#compareAndSet](../java/lang/invoke/VarHandle.md))) the current value with the results of applying the given function to the current and given values, returning the updated value. The function should be side-effect-free, since it may be re-applied when attempted updates fail due to contention among threads. The function is applied with the current value as its first argument, and the given update as the second argument.
+Atomically updates (with memory effects as specified by [java.lang.invoke.VarHandle#compareAndSet](../java.lang.invoke/VarHandle.md))) the current value with the results of applying the given function to the current and given values, returning the updated value. The function should be side-effect-free, since it may be re-applied when attempted updates fail due to contention among threads. The function is applied with the current value as its first argument, and the given update as the second argument.
 
 | Parameters ||
 |-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `x` | V:the update value |
-| `accumulatorFunction` | [BinaryOperator](../java/util/function/BinaryOperator.md)\<V\>!:a side-effect-free function of two arguments |
+| `accumulatorFunction` | [BinaryOperator](../java.util.function/BinaryOperator.md)\<V\>!:a side-effect-free function of two arguments |
 
 | Return ||
 |---|-------------------|
@@ -117,7 +117,7 @@ fun compareAndExchange(
 ): V
 ```
 
-Atomically sets the value to`newValue`if the current value, referred to as the*witness value* ,`== expectedValue`, with memory effects as specified by [VarHandle.compareAndExchange](../java/lang/invoke/VarHandle.md)).
+Atomically sets the value to`newValue`if the current value, referred to as the*witness value* ,`== expectedValue`, with memory effects as specified by [VarHandle.compareAndExchange](../java.lang.invoke/VarHandle.md)).
 
 | Parameters ||
 |-----------------|----------------------|
@@ -139,7 +139,7 @@ fun compareAndExchangeAcquire(
 ): V
 ```
 
-Atomically sets the value to`newValue`if the current value, referred to as the*witness value* ,`== expectedValue`, with memory effects as specified by [VarHandle.compareAndExchangeAcquire](../java/lang/invoke/VarHandle.md)).
+Atomically sets the value to`newValue`if the current value, referred to as the*witness value* ,`== expectedValue`, with memory effects as specified by [VarHandle.compareAndExchangeAcquire](../java.lang.invoke/VarHandle.md)).
 
 | Parameters ||
 |-----------------|----------------------|
@@ -161,7 +161,7 @@ fun compareAndExchangeRelease(
 ): V
 ```
 
-Atomically sets the value to`newValue`if the current value, referred to as the*witness value* ,`== expectedValue`, with memory effects as specified by [VarHandle.compareAndExchangeRelease](../java/lang/invoke/VarHandle.md)).
+Atomically sets the value to`newValue`if the current value, referred to as the*witness value* ,`== expectedValue`, with memory effects as specified by [VarHandle.compareAndExchangeRelease](../java.lang.invoke/VarHandle.md)).
 
 | Parameters ||
 |-----------------|----------------------|
@@ -183,7 +183,7 @@ fun compareAndSet(
 ): Boolean
 ```
 
-Atomically sets the value to`newValue`if the current value`== expectedValue`, with memory effects as specified by [VarHandle.compareAndSet](../java/lang/invoke/VarHandle.md)).
+Atomically sets the value to`newValue`if the current value`== expectedValue`, with memory effects as specified by [VarHandle.compareAndSet](../java.lang.invoke/VarHandle.md)).
 
 | Parameters ||
 |-----------------|----------------------|
@@ -202,7 +202,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun get(): V
 ```
 
-Returns the current value, with memory effects as specified by [VarHandle.getVolatile](../java/lang/invoke/VarHandle.md)).
+Returns the current value, with memory effects as specified by [VarHandle.getVolatile](../java.lang.invoke/VarHandle.md)).
 
 | Return ||
 |---|-------------------|
@@ -216,7 +216,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 fun getAcquire(): V
 ```
 
-Returns the current value, with memory effects as specified by [VarHandle.getAcquire](../java/lang/invoke/VarHandle.md)).
+Returns the current value, with memory effects as specified by [VarHandle.getAcquire](../java.lang.invoke/VarHandle.md)).
 
 | Return ||
 |---|-----------|
@@ -233,12 +233,12 @@ fun getAndAccumulate(
 ): V
 ```
 
-Atomically updates (with memory effects as specified by [java.lang.invoke.VarHandle#compareAndSet](../java/lang/invoke/VarHandle.md))) the current value with the results of applying the given function to the current and given values, returning the previous value. The function should be side-effect-free, since it may be re-applied when attempted updates fail due to contention among threads. The function is applied with the current value as its first argument, and the given update as the second argument.
+Atomically updates (with memory effects as specified by [java.lang.invoke.VarHandle#compareAndSet](../java.lang.invoke/VarHandle.md))) the current value with the results of applying the given function to the current and given values, returning the previous value. The function should be side-effect-free, since it may be re-applied when attempted updates fail due to contention among threads. The function is applied with the current value as its first argument, and the given update as the second argument.
 
 | Parameters ||
 |-----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `x` | V:the update value |
-| `accumulatorFunction` | [BinaryOperator](../java/util/function/BinaryOperator.md)\<V\>!:a side-effect-free function of two arguments |
+| `accumulatorFunction` | [BinaryOperator](../java.util.function/BinaryOperator.md)\<V\>!:a side-effect-free function of two arguments |
 
 | Return ||
 |---|--------------------|
@@ -252,7 +252,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun getAndSet(newValue: V): V
 ```
 
-Atomically sets the value to`newValue`and returns the old value, with memory effects as specified by [VarHandle.getAndSet](../java/lang/invoke/VarHandle.md)).
+Atomically sets the value to`newValue`and returns the old value, with memory effects as specified by [VarHandle.getAndSet](../java.lang.invoke/VarHandle.md)).
 
 | Parameters ||
 |------------|-----------------|
@@ -270,11 +270,11 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 fun getAndUpdate(updateFunction: UnaryOperator<V>!): V
 ```
 
-Atomically updates (with memory effects as specified by [java.lang.invoke.VarHandle#compareAndSet](../java/lang/invoke/VarHandle.md))) the current value with the results of applying the given function, returning the previous value. The function should be side-effect-free, since it may be re-applied when attempted updates fail due to contention among threads.
+Atomically updates (with memory effects as specified by [java.lang.invoke.VarHandle#compareAndSet](../java.lang.invoke/VarHandle.md))) the current value with the results of applying the given function, returning the previous value. The function should be side-effect-free, since it may be re-applied when attempted updates fail due to contention among threads.
 
 | Parameters ||
 |------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| `updateFunction` | [UnaryOperator](../java/util/function/UnaryOperator.md)\<V\>!:a side-effect-free function |
+| `updateFunction` | [UnaryOperator](../java.util.function/UnaryOperator.md)\<V\>!:a side-effect-free function |
 
 | Return ||
 |---|--------------------|
@@ -288,7 +288,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 fun getOpaque(): V
 ```
 
-Returns the current value, with memory effects as specified by [VarHandle.getOpaque](../java/lang/invoke/VarHandle.md)).
+Returns the current value, with memory effects as specified by [VarHandle.getOpaque](../java.lang.invoke/VarHandle.md)).
 
 | Return ||
 |---|-----------|
@@ -316,7 +316,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 fun lazySet(newValue: V): Unit
 ```
 
-Sets the value to`newValue`, with memory effects as specified by [VarHandle.setRelease](../java/lang/invoke/VarHandle.md)).
+Sets the value to`newValue`, with memory effects as specified by [VarHandle.setRelease](../java.lang.invoke/VarHandle.md)).
 
 | Parameters ||
 |------------|-----------------|
@@ -330,7 +330,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun set(newValue: V): Unit
 ```
 
-Sets the value to`newValue`, with memory effects as specified by [VarHandle.setVolatile](../java/lang/invoke/VarHandle.md)).
+Sets the value to`newValue`, with memory effects as specified by [VarHandle.setVolatile](../java.lang.invoke/VarHandle.md)).
 
 | Parameters ||
 |------------|-----------------|
@@ -344,7 +344,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 fun setOpaque(newValue: V): Unit
 ```
 
-Sets the value to`newValue`, with memory effects as specified by [VarHandle.setOpaque](../java/lang/invoke/VarHandle.md)).
+Sets the value to`newValue`, with memory effects as specified by [VarHandle.setOpaque](../java.lang.invoke/VarHandle.md)).
 
 | Parameters ||
 |------------|-----------------|
@@ -372,7 +372,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 fun setRelease(newValue: V): Unit
 ```
 
-Sets the value to`newValue`, with memory effects as specified by [VarHandle.setRelease](../java/lang/invoke/VarHandle.md)).
+Sets the value to`newValue`, with memory effects as specified by [VarHandle.setRelease](../java.lang.invoke/VarHandle.md)).
 
 | Parameters ||
 |------------|-----------------|
@@ -400,11 +400,11 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 fun updateAndGet(updateFunction: UnaryOperator<V>!): V
 ```
 
-Atomically updates (with memory effects as specified by [java.lang.invoke.VarHandle#compareAndSet](../java/lang/invoke/VarHandle.md))) the current value with the results of applying the given function, returning the updated value. The function should be side-effect-free, since it may be re-applied when attempted updates fail due to contention among threads.
+Atomically updates (with memory effects as specified by [java.lang.invoke.VarHandle#compareAndSet](../java.lang.invoke/VarHandle.md))) the current value with the results of applying the given function, returning the updated value. The function should be side-effect-free, since it may be re-applied when attempted updates fail due to contention among threads.
 
 | Parameters ||
 |------------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| `updateFunction` | [UnaryOperator](../java/util/function/UnaryOperator.md)\<V\>!:a side-effect-free function |
+| `updateFunction` | [UnaryOperator](../java.util.function/UnaryOperator.md)\<V\>!:a side-effect-free function |
 
 | Return ||
 |---|-------------------|
@@ -422,9 +422,9 @@ fun weakCompareAndSet(
 ): Boolean
 ```
 
-**Deprecated:** *This method has plain memory effects but the method name implies volatile memory effects (see methods such as [compareAndExchange](../java/util/concurrent/atomic/AtomicReference.md))and [compareAndSet](../java/util/concurrent/atomic/AtomicReference.md))). To avoid confusion over plain or volatile memory effects it is recommended that the method [weakCompareAndSetPlain](../java/util/concurrent/atomic/AtomicReference.md))be used instead.*
+**Deprecated:** *This method has plain memory effects but the method name implies volatile memory effects (see methods such as [compareAndExchange](AtomicReference.md))and [compareAndSet](AtomicReference.md))). To avoid confusion over plain or volatile memory effects it is recommended that the method [weakCompareAndSetPlain](AtomicReference.md))be used instead.*
 
-Possibly atomically sets the value to`newValue`if the current value`== expectedValue`, with memory effects as specified by [VarHandle.weakCompareAndSetPlain](../java/lang/invoke/VarHandle.md)).
+Possibly atomically sets the value to`newValue`if the current value`== expectedValue`, with memory effects as specified by [VarHandle.weakCompareAndSetPlain](../java.lang.invoke/VarHandle.md)).
 
 | Parameters ||
 |-----------------|----------------------|
@@ -437,7 +437,7 @@ Possibly atomically sets the value to`newValue`if the current value`== expectedV
 
 **See Also**
 
-- [#weakCompareAndSetPlain](../java/util/concurrent/atomic/AtomicReference.md)) 
+- [#weakCompareAndSetPlain](AtomicReference.md)) 
 
 ### weakCompareAndSetAcquire
 
@@ -450,7 +450,7 @@ fun weakCompareAndSetAcquire(
 ): Boolean
 ```
 
-Possibly atomically sets the value to`newValue`if the current value`== expectedValue`, with memory effects as specified by [VarHandle.weakCompareAndSetAcquire](../java/lang/invoke/VarHandle.md)).
+Possibly atomically sets the value to`newValue`if the current value`== expectedValue`, with memory effects as specified by [VarHandle.weakCompareAndSetAcquire](../java.lang.invoke/VarHandle.md)).
 
 | Parameters ||
 |-----------------|----------------------|
@@ -472,7 +472,7 @@ fun weakCompareAndSetPlain(
 ): Boolean
 ```
 
-Possibly atomically sets the value to`newValue`if the current value`== expectedValue`, with memory effects as specified by [VarHandle.weakCompareAndSetPlain](../java/lang/invoke/VarHandle.md)).
+Possibly atomically sets the value to`newValue`if the current value`== expectedValue`, with memory effects as specified by [VarHandle.weakCompareAndSetPlain](../java.lang.invoke/VarHandle.md)).
 
 | Parameters ||
 |-----------------|----------------------|
@@ -494,7 +494,7 @@ fun weakCompareAndSetRelease(
 ): Boolean
 ```
 
-Possibly atomically sets the value to`newValue`if the current value`== expectedValue`, with memory effects as specified by [VarHandle.weakCompareAndSetRelease](../java/lang/invoke/VarHandle.md)).
+Possibly atomically sets the value to`newValue`if the current value`== expectedValue`, with memory effects as specified by [VarHandle.weakCompareAndSetRelease](../java.lang.invoke/VarHandle.md)).
 
 | Parameters ||
 |-----------------|----------------------|
@@ -516,7 +516,7 @@ fun weakCompareAndSetVolatile(
 ): Boolean
 ```
 
-Possibly atomically sets the value to`newValue`if the current value`== expectedValue`, with memory effects as specified by [VarHandle.weakCompareAndSet](../java/lang/invoke/VarHandle.md)).
+Possibly atomically sets the value to`newValue`if the current value`== expectedValue`, with memory effects as specified by [VarHandle.weakCompareAndSet](../java.lang.invoke/VarHandle.md)).
 
 | Parameters ||
 |-----------------|----------------------|

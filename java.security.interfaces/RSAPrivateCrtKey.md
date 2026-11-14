@@ -8,7 +8,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface RSAPrivateCrtKey : RSAPrivateKey
 ```
 
-| [java.security.interfaces.RSAPrivateCrtKey](../java/security/interfaces/RSAPrivateCrtKey.md) |
+| [java.security.interfaces.RSAPrivateCrtKey](RSAPrivateCrtKey.md) |
 
 The interface to an RSA private key, as defined in the [PKCS#1 v2.2](https://tools.ietf.org/rfc/rfc8017.txt) standard, using the*Chinese Remainder Theorem*(CRT) information values.
 
@@ -16,23 +16,23 @@ The interface to an RSA private key, as defined in the [PKCS#1 v2.2](https://too
 
 | Constants ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [serialVersionUID](../java/security/interfaces/RSAPrivateCrtKey.md) The type fingerprint that is set to indicate serialization compatibility with a previous version of the type. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [serialVersionUID](RSAPrivateCrtKey.md) The type fingerprint that is set to indicate serialization compatibility with a previous version of the type. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [BigInteger](../java/math/BigInteger.md)! | [getCrtCoefficient](../java/security/interfaces/RSAPrivateCrtKey.md))`()` Returns the crtCoefficient. |
-| abstract [BigInteger](../java/math/BigInteger.md)! | [getPrimeExponentP](../java/security/interfaces/RSAPrivateCrtKey.md))`()` Returns the primeExponentP. |
-| abstract [BigInteger](../java/math/BigInteger.md)! | [getPrimeExponentQ](../java/security/interfaces/RSAPrivateCrtKey.md))`()` Returns the primeExponentQ. |
+| abstract [BigInteger](../java.math/BigInteger.md)! | [getCrtCoefficient](RSAPrivateCrtKey.md))`()` Returns the crtCoefficient. |
+| abstract [BigInteger](../java.math/BigInteger.md)! | [getPrimeExponentP](RSAPrivateCrtKey.md))`()` Returns the primeExponentP. |
+| abstract [BigInteger](../java.math/BigInteger.md)! | [getPrimeExponentQ](RSAPrivateCrtKey.md))`()` Returns the primeExponentQ. |
 | --- | --- |
-| abstract [BigInteger](../java/math/BigInteger.md)! | [getPrimeP](../java/security/interfaces/RSAPrivateCrtKey.md))`()` Returns the primeP. |
-| abstract [BigInteger](../java/math/BigInteger.md)! | [getPrimeQ](../java/security/interfaces/RSAPrivateCrtKey.md))`()` Returns the primeQ. |
-| abstract [BigInteger](../java/math/BigInteger.md)! | [getPublicExponent](../java/security/interfaces/RSAPrivateCrtKey.md))`()` Returns the public exponent. |
+| abstract [BigInteger](../java.math/BigInteger.md)! | [getPrimeP](RSAPrivateCrtKey.md))`()` Returns the primeP. |
+| abstract [BigInteger](../java.math/BigInteger.md)! | [getPrimeQ](RSAPrivateCrtKey.md))`()` Returns the primeQ. |
+| abstract [BigInteger](../java.math/BigInteger.md)! | [getPublicExponent](RSAPrivateCrtKey.md))`()` Returns the public exponent. |
 | --- | --- |
 
 | Inherited functions ||
 |---|---|
-| From class [RSAKey](../java/security/interfaces/RSAKey.md) |---------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [BigInteger](../java/math/BigInteger.md)! | [getModulus](../java/security/interfaces/RSAKey.md))`()` <br /> Returns the modulus. <br /> | | [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)! | [getParams](../java/security/interfaces/RSAKey.md))`()` <br /> Returns the parameters associated with this key. The parameters are optional and may be either explicitly specified or implicitly created during key pair generation. <br /> | ||
-| From class [RSAPrivateKey](../java/security/interfaces/RSAPrivateKey.md) |------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [BigInteger](../java/math/BigInteger.md)! | [getPrivateExponent](../java/security/interfaces/RSAPrivateKey.md))`()` <br /> Returns the private exponent. <br /> | ||
+| From class [RSAKey](RSAKey.md) |---------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [BigInteger](../java.math/BigInteger.md)! | [getModulus](RSAKey.md))`()` <br /> Returns the modulus. <br /> | | [AlgorithmParameterSpec](../java.security.spec/AlgorithmParameterSpec.md)! | [getParams](RSAKey.md))`()` <br /> Returns the parameters associated with this key. The parameters are optional and may be either explicitly specified or implicitly created during key pair generation. <br /> | ||
+| From class [RSAPrivateKey](RSAPrivateKey.md) |------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [BigInteger](../java.math/BigInteger.md)! | [getPrivateExponent](RSAPrivateKey.md))`()` <br /> Returns the private exponent. <br /> | ||
 
 ## Constants
 
@@ -65,7 +65,7 @@ Returns the crtCoefficient.
 
 | Return ||
 |------------------------------------------------------------------------------------------|--------------------|
-| [BigInteger](../java/math/BigInteger.md)! | the crtCoefficient |
+| [BigInteger](../java.math/BigInteger.md)! | the crtCoefficient |
 
 ### getPrimeExponentP
 
@@ -79,7 +79,7 @@ Returns the primeExponentP.
 
 | Return ||
 |------------------------------------------------------------------------------------------|--------------------|
-| [BigInteger](../java/math/BigInteger.md)! | the primeExponentP |
+| [BigInteger](../java.math/BigInteger.md)! | the primeExponentP |
 
 ### getPrimeExponentQ
 
@@ -93,7 +93,7 @@ Returns the primeExponentQ.
 
 | Return ||
 |------------------------------------------------------------------------------------------|--------------------|
-| [BigInteger](../java/math/BigInteger.md)! | the primeExponentQ |
+| [BigInteger](../java.math/BigInteger.md)! | the primeExponentQ |
 
 ### getPrimeP
 
@@ -107,7 +107,7 @@ Returns the primeP.
 
 | Return ||
 |------------------------------------------------------------------------------------------|------------|
-| [BigInteger](../java/math/BigInteger.md)! | the primeP |
+| [BigInteger](../java.math/BigInteger.md)! | the primeP |
 
 ### getPrimeQ
 
@@ -121,7 +121,7 @@ Returns the primeQ.
 
 | Return ||
 |------------------------------------------------------------------------------------------|------------|
-| [BigInteger](../java/math/BigInteger.md)! | the primeQ |
+| [BigInteger](../java.math/BigInteger.md)! | the primeQ |
 
 ### getPublicExponent
 
@@ -135,4 +135,4 @@ Returns the public exponent.
 
 | Return ||
 |------------------------------------------------------------------------------------------|---------------------|
-| [BigInteger](../java/math/BigInteger.md)! | the public exponent |
+| [BigInteger](../java.math/BigInteger.md)! | the public exponent |

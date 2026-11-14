@@ -8,9 +8,9 @@ open class DigestOutputStream : FilterOutputStream
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [java.io.OutputStream](../java/io/OutputStream.md) |||
-| | ↳ | [java.io.FilterOutputStream](../java/io/FilterOutputStream.md) ||
-| | | ↳ | [java.security.DigestOutputStream](../java/security/DigestOutputStream.md) |
+| ↳ | [java.io.OutputStream](../java.io/OutputStream.md) |||
+| | ↳ | [java.io.FilterOutputStream](../java.io/FilterOutputStream.md) ||
+| | | ↳ | [java.security.DigestOutputStream](DigestOutputStream.md) |
 | --- | --- | --- | --- |
 
 A transparent stream that updates the associated message digest using the bits going through the stream.
@@ -27,7 +27,7 @@ It is possible to turn this stream on or off (see `https://developer.android.com
 
 | Public methods ||
 |---|---|
-| open [MessageDigest](../java/security/MessageDigest.md)! | `https://developer.android.com/reference/kotlin/java/security/DigestOutputStream#getMessageDigest()()` Returns the message digest associated with this stream. |
+| open [MessageDigest](MessageDigest.md)! | `https://developer.android.com/reference/kotlin/java/security/DigestOutputStream#getMessageDigest()()` Returns the message digest associated with this stream. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/DigestOutputStream#on(kotlin.Boolean)(on: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Turns the digest function on or off. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/DigestOutputStream#setMessageDigest(java.security.MessageDigest)(digest: https://developer.android.com/reference/kotlin/java/security/MessageDigest!)` Associates the specified message digest with this stream. |
 | --- | --- |
@@ -43,7 +43,7 @@ It is possible to turn this stream on or off (see `https://developer.android.com
 
 | Properties ||
 |---|---|
-| [MessageDigest](../java/security/MessageDigest.md)! | `https://developer.android.com/reference/kotlin/java/security/DigestOutputStream#digest:java.security.MessageDigest` The message digest associated with this stream. |
+| [MessageDigest](MessageDigest.md)! | `https://developer.android.com/reference/kotlin/java/security/DigestOutputStream#digest:java.security.MessageDigest` The message digest associated with this stream. |
 
 | Inherited properties ||
 |---|---|
@@ -65,8 +65,8 @@ Creates a digest output stream, using the specified output stream and message di
 
 | Parameters ||
 |---|---|
-| `stream` | [OutputStream](../java/io/OutputStream.md)!: the output stream. |
-| `digest` | [MessageDigest](../java/security/MessageDigest.md)!: the message digest to associate with this stream. |
+| `stream` | [OutputStream](../java.io/OutputStream.md)!: the output stream. |
+| `digest` | [MessageDigest](MessageDigest.md)!: the message digest to associate with this stream. |
 
 ## Public methods
 
@@ -114,7 +114,7 @@ Associates the specified message digest with this stream.
 
 | Parameters ||
 |---|---|
-| `digest` | [MessageDigest](../java/security/MessageDigest.md)!: the message digest to be associated with this stream. |
+| `digest` | [MessageDigest](MessageDigest.md)!: the message digest to be associated with this stream. |
 
 **See Also**
 

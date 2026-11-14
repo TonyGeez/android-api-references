@@ -10,23 +10,23 @@ abstract class CharBuffer : Buffer, Appendable, CharSequence, Comparable<CharB
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.nio.Buffer](../java/nio/Buffer.md) ||
-| | ↳ | [java.nio.CharBuffer](../java/nio/CharBuffer.md) |
+| ↳ | [java.nio.Buffer](Buffer.md) ||
+| | ↳ | [java.nio.CharBuffer](CharBuffer.md) |
 
 A char buffer.
 
 This class defines four categories of operations upon char buffers:
 
-- Absolute and relative [*get*](../java/nio/CharBuffer.md))and [*put*](../java/nio/CharBuffer.md))methods that read and write single chars;
-- Absolute and relative [*bulk get*](../java/nio/CharBuffer.md))methods that transfer contiguous sequences of chars from this buffer into an array; and
-- Absolute and relative [*bulk put*](../java/nio/CharBuffer.md))methods that transfer contiguous sequences of chars from a char array, string, or some other char buffer into this buffer; and
-- A method for [compacting](../java/nio/CharBuffer.md))a char buffer.
+- Absolute and relative [*get*](CharBuffer.md))and [*put*](CharBuffer.md))methods that read and write single chars;
+- Absolute and relative [*bulk get*](CharBuffer.md))methods that transfer contiguous sequences of chars from this buffer into an array; and
+- Absolute and relative [*bulk put*](CharBuffer.md))methods that transfer contiguous sequences of chars from a char array, string, or some other char buffer into this buffer; and
+- A method for [compacting](CharBuffer.md))a char buffer.
 
-Char buffers can be created either by [*allocation*](../java/nio/CharBuffer.md)), which allocates space for the buffer's content, by [*wrapping*](../java/nio/CharBuffer.md))an existing char array or string into a buffer, or by creating a [*view*](../java/nio/ByteBuffer.md) of an existing byte buffer.
+Char buffers can be created either by [*allocation*](CharBuffer.md)), which allocates space for the buffer's content, by [*wrapping*](CharBuffer.md))an existing char array or string into a buffer, or by creating a [*view*](ByteBuffer.md) of an existing byte buffer.
 
-Like a byte buffer, a char buffer is either [*direct* or*non-direct*](../java/nio/ByteBuffer.md). A char buffer created via the`wrap`methods of this class will be non-direct. A char buffer created as a view of a byte buffer will be direct if, and only if, the byte buffer itself is direct. Whether or not a char buffer is direct may be determined by invoking the [isDirect](../java/nio/CharBuffer.md))method.
+Like a byte buffer, a char buffer is either [*direct* or*non-direct*](ByteBuffer.md). A char buffer created via the`wrap`methods of this class will be non-direct. A char buffer created as a view of a byte buffer will be direct if, and only if, the byte buffer itself is direct. Whether or not a char buffer is direct may be determined by invoking the [isDirect](CharBuffer.md))method.
 
-This class implements the [CharSequence](../java/lang/CharSequence.md) interface so that character buffers may be used wherever character sequences are accepted, for example in the regular-expression package [java.util.regex](../java/util/regex/_package.md). The methods defined by`CharSequence`operate relative to the current position of the buffer when they are invoked.
+This class implements the [CharSequence](../java.lang/CharSequence.md) interface so that character buffers may be used wherever character sequences are accepted, for example in the regular-expression package [java.util.regex](../java.util.regex/_package.md). The methods defined by`CharSequence`operate relative to the current position of the buffer when they are invoked.
 
 Methods in this class that do not otherwise have a value to return are specified to return the buffer upon which they are invoked. This allows method invocations to be chained. The sequence of statements 
 
@@ -46,82 +46,82 @@ cb.put("text/").put(subtype).put("; charset=").put(enc);
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [CharBuffer](../java/nio/CharBuffer.md)! | [allocate](../java/nio/CharBuffer.md))`(`capacity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Allocates a new char buffer. |
-| open [CharBuffer](../java/nio/CharBuffer.md) | [append](../java/nio/CharBuffer.md))`(`c:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Appends the specified char to this buffer*(optional operation)*. |
-| open [CharBuffer](../java/nio/CharBuffer.md) | [append](../java/nio/CharBuffer.md))`(`csq:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)?`)` Appends the specified character sequence to this buffer*(optional operation)*. |
+| openstatic [CharBuffer](CharBuffer.md)! | [allocate](CharBuffer.md))`(`capacity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Allocates a new char buffer. |
+| open [CharBuffer](CharBuffer.md) | [append](CharBuffer.md))`(`c:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Appends the specified char to this buffer*(optional operation)*. |
+| open [CharBuffer](CharBuffer.md) | [append](CharBuffer.md))`(`csq:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)?`)` Appends the specified character sequence to this buffer*(optional operation)*. |
 | --- | --- |
-| open [CharBuffer](../java/nio/CharBuffer.md) | [append](../java/nio/CharBuffer.md))`(`csq:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)?`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Appends a subsequence of the specified character sequence to this buffer*(optional operation)*. |
-| [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)! | [array](../java/nio/CharBuffer.md))`()` Returns the char array that backs this buffer*(optional operation)*. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [arrayOffset](../java/nio/CharBuffer.md))`()` Returns the offset within this buffer's backing array of the first element of the buffer*(optional operation)*. |
+| open [CharBuffer](CharBuffer.md) | [append](CharBuffer.md))`(`csq:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)?`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Appends a subsequence of the specified character sequence to this buffer*(optional operation)*. |
+| [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)! | [array](CharBuffer.md))`()` Returns the char array that backs this buffer*(optional operation)*. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [arrayOffset](CharBuffer.md))`()` Returns the offset within this buffer's backing array of the first element of the buffer*(optional operation)*. |
 | --- | --- |
-| abstract [CharBuffer](../java/nio/CharBuffer.md)! | [asReadOnlyBuffer](../java/nio/CharBuffer.md))`()` Creates a new, read-only char buffer that shares this buffer's content. |
-| open [IntStream](../java/util/stream/IntStream.md) | [chars](../java/nio/CharBuffer.md))`()` <br /> |
-| open [Buffer](../java/nio/Buffer.md)! | [clear](../java/nio/CharBuffer.md))`()` Clears this buffer. |
+| abstract [CharBuffer](CharBuffer.md)! | [asReadOnlyBuffer](CharBuffer.md))`()` Creates a new, read-only char buffer that shares this buffer's content. |
+| open [IntStream](../java.util.stream/IntStream.md) | [chars](CharBuffer.md))`()` <br /> |
+| open [Buffer](Buffer.md)! | [clear](CharBuffer.md))`()` Clears this buffer. |
 | --- | --- |
-| abstract [CharBuffer](../java/nio/CharBuffer.md)! | [compact](../java/nio/CharBuffer.md))`()` Compacts this buffer*(optional operation)*. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](../java/nio/CharBuffer.md))`(`other:` ` [CharBuffer](../java/nio/CharBuffer.md)!`)` Compares this buffer to another. |
-| abstract [CharBuffer](../java/nio/CharBuffer.md)! | [duplicate](../java/nio/CharBuffer.md))`()` Creates a new char buffer that shares this buffer's content. |
+| abstract [CharBuffer](CharBuffer.md)! | [compact](CharBuffer.md))`()` Compacts this buffer*(optional operation)*. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](CharBuffer.md))`(`other:` ` [CharBuffer](CharBuffer.md)!`)` Compares this buffer to another. |
+| abstract [CharBuffer](CharBuffer.md)! | [duplicate](CharBuffer.md))`()` Creates a new char buffer that shares this buffer's content. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/nio/CharBuffer.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Tells whether or not this buffer is equal to another object. |
-| open [Buffer](../java/nio/Buffer.md)! | [flip](../java/nio/CharBuffer.md))`()` Flips this buffer. |
-| abstract [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [get](../java/nio/CharBuffer.md))`()` Relative*get*method. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](CharBuffer.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Tells whether or not this buffer is equal to another object. |
+| open [Buffer](Buffer.md)! | [flip](CharBuffer.md))`()` Flips this buffer. |
+| abstract [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [get](CharBuffer.md))`()` Relative*get*method. |
 | --- | --- |
-| open [CharBuffer](../java/nio/CharBuffer.md)! | [get](../java/nio/CharBuffer.md))`(`dst:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`)` Relative bulk*get*method. |
-| open [CharBuffer](../java/nio/CharBuffer.md)! | [get](../java/nio/CharBuffer.md))`(`dst:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Relative bulk*get*method. |
-| abstract [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [get](../java/nio/CharBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Absolute*get*method. |
+| open [CharBuffer](CharBuffer.md)! | [get](CharBuffer.md))`(`dst:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`)` Relative bulk*get*method. |
+| open [CharBuffer](CharBuffer.md)! | [get](CharBuffer.md))`(`dst:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Relative bulk*get*method. |
+| abstract [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [get](CharBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Absolute*get*method. |
 | --- | --- |
-| open [CharBuffer](../java/nio/CharBuffer.md)! | [get](../java/nio/CharBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dst:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`)` Absolute bulk*get*method. |
-| open [CharBuffer](../java/nio/CharBuffer.md)! | [get](../java/nio/CharBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dst:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Absolute bulk*get*method. |
-| [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [get](../java/nio/CharBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [CharBuffer](CharBuffer.md)! | [get](CharBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dst:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`)` Absolute bulk*get*method. |
+| open [CharBuffer](CharBuffer.md)! | [get](CharBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dst:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Absolute bulk*get*method. |
+| [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [get](CharBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasArray](../java/nio/CharBuffer.md))`()` Tells whether or not this buffer is backed by an accessible char array. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/nio/CharBuffer.md))`()` Returns the current hash code of this buffer. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDirect](../java/nio/CharBuffer.md))`()` Tells whether or not this char buffer is direct. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasArray](CharBuffer.md))`()` Tells whether or not this buffer is backed by an accessible char array. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](CharBuffer.md))`()` Returns the current hash code of this buffer. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDirect](CharBuffer.md))`()` Tells whether or not this char buffer is direct. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](../java/nio/CharBuffer.md))`()` Returns`true`if this character buffer is empty. |
-| open [Buffer](../java/nio/Buffer.md)! | [limit](../java/nio/CharBuffer.md))`(`newLimit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets this buffer's limit. |
-| open [Buffer](../java/nio/Buffer.md)! | [mark](../java/nio/CharBuffer.md))`()` Sets this buffer's mark at its position. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](CharBuffer.md))`()` Returns`true`if this character buffer is empty. |
+| open [Buffer](Buffer.md)! | [limit](CharBuffer.md))`(`newLimit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets this buffer's limit. |
+| open [Buffer](Buffer.md)! | [mark](CharBuffer.md))`()` Sets this buffer's mark at its position. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [mismatch](../java/nio/CharBuffer.md))`(`that:` ` [CharBuffer](../java/nio/CharBuffer.md)!`)` Finds and returns the relative index of the first mismatch between this buffer and a given buffer. |
-| abstract [ByteOrder](../java/nio/ByteOrder.md)! | [order](../java/nio/CharBuffer.md))`()` Retrieves this buffer's byte order. |
-| open [Buffer](../java/nio/Buffer.md)! | [position](../java/nio/CharBuffer.md))`(`newPosition:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets this buffer's position. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [mismatch](CharBuffer.md))`(`that:` ` [CharBuffer](CharBuffer.md)!`)` Finds and returns the relative index of the first mismatch between this buffer and a given buffer. |
+| abstract [ByteOrder](ByteOrder.md)! | [order](CharBuffer.md))`()` Retrieves this buffer's byte order. |
+| open [Buffer](Buffer.md)! | [position](CharBuffer.md))`(`newPosition:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets this buffer's position. |
 | --- | --- |
-| abstract [CharBuffer](../java/nio/CharBuffer.md)! | [put](../java/nio/CharBuffer.md))`(`c:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Relative*put* method*(optional operation)*. |
-| [CharBuffer](../java/nio/CharBuffer.md)! | [put](../java/nio/CharBuffer.md))`(`src:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`)` Relative bulk*put* method*(optional operation)*. |
-| open [CharBuffer](../java/nio/CharBuffer.md)! | [put](../java/nio/CharBuffer.md))`(`src:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Relative bulk*put* method*(optional operation)*. |
+| abstract [CharBuffer](CharBuffer.md)! | [put](CharBuffer.md))`(`c:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Relative*put* method*(optional operation)*. |
+| [CharBuffer](CharBuffer.md)! | [put](CharBuffer.md))`(`src:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`)` Relative bulk*put* method*(optional operation)*. |
+| open [CharBuffer](CharBuffer.md)! | [put](CharBuffer.md))`(`src:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Relative bulk*put* method*(optional operation)*. |
 | --- | --- |
-| abstract [CharBuffer](../java/nio/CharBuffer.md)! | [put](../java/nio/CharBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `c:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Absolute*put* method*(optional operation)*. |
-| open [CharBuffer](../java/nio/CharBuffer.md)! | [put](../java/nio/CharBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `src:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`)` Absolute bulk*put* method*(optional operation)*. |
-| open [CharBuffer](../java/nio/CharBuffer.md)! | [put](../java/nio/CharBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `src:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Absolute bulk*put* method*(optional operation)*. |
+| abstract [CharBuffer](CharBuffer.md)! | [put](CharBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `c:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Absolute*put* method*(optional operation)*. |
+| open [CharBuffer](CharBuffer.md)! | [put](CharBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `src:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`)` Absolute bulk*put* method*(optional operation)*. |
+| open [CharBuffer](CharBuffer.md)! | [put](CharBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `src:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Absolute bulk*put* method*(optional operation)*. |
 | --- | --- |
-| open [CharBuffer](../java/nio/CharBuffer.md)! | [put](../java/nio/CharBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `src:` ` [CharBuffer](../java/nio/CharBuffer.md)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Absolute bulk*put* method*(optional operation)*. |
-| [CharBuffer](../java/nio/CharBuffer.md)! | [put](../java/nio/CharBuffer.md))`(`src:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Relative bulk*put* method*(optional operation)*. |
-| open [CharBuffer](../java/nio/CharBuffer.md)! | [put](../java/nio/CharBuffer.md))`(`src:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Relative bulk*put* method*(optional operation)*. |
+| open [CharBuffer](CharBuffer.md)! | [put](CharBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `src:` ` [CharBuffer](CharBuffer.md)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Absolute bulk*put* method*(optional operation)*. |
+| [CharBuffer](CharBuffer.md)! | [put](CharBuffer.md))`(`src:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Relative bulk*put* method*(optional operation)*. |
+| open [CharBuffer](CharBuffer.md)! | [put](CharBuffer.md))`(`src:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Relative bulk*put* method*(optional operation)*. |
 | --- | --- |
-| open [CharBuffer](../java/nio/CharBuffer.md)! | [put](../java/nio/CharBuffer.md))`(`src:` ` [CharBuffer](../java/nio/CharBuffer.md)!`)` Relative bulk*put* method*(optional operation)*. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](../java/nio/CharBuffer.md))`(`target:` ` [CharBuffer](../java/nio/CharBuffer.md)!`)` Attempts to read characters into the specified character buffer. |
-| open [Buffer](../java/nio/Buffer.md)! | [reset](../java/nio/CharBuffer.md))`()` Resets this buffer's position to the previously-marked position. |
+| open [CharBuffer](CharBuffer.md)! | [put](CharBuffer.md))`(`src:` ` [CharBuffer](CharBuffer.md)!`)` Relative bulk*put* method*(optional operation)*. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [read](CharBuffer.md))`(`target:` ` [CharBuffer](CharBuffer.md)!`)` Attempts to read characters into the specified character buffer. |
+| open [Buffer](Buffer.md)! | [reset](CharBuffer.md))`()` Resets this buffer's position to the previously-marked position. |
 | --- | --- |
-| open [Buffer](../java/nio/Buffer.md)! | [rewind](../java/nio/CharBuffer.md))`()` Rewinds this buffer. |
-| abstract [CharBuffer](../java/nio/CharBuffer.md)! | [slice](../java/nio/CharBuffer.md))`()` Creates a new char buffer whose content is a shared subsequence of this buffer's content. |
-| abstract [CharBuffer](../java/nio/CharBuffer.md)! | [slice](../java/nio/CharBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a new char buffer whose content is a shared subsequence of this buffer's content. |
+| open [Buffer](Buffer.md)! | [rewind](CharBuffer.md))`()` Rewinds this buffer. |
+| abstract [CharBuffer](CharBuffer.md)! | [slice](CharBuffer.md))`()` Creates a new char buffer whose content is a shared subsequence of this buffer's content. |
+| abstract [CharBuffer](CharBuffer.md)! | [slice](CharBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a new char buffer whose content is a shared subsequence of this buffer's content. |
 | --- | --- |
-| abstract [CharBuffer](../java/nio/CharBuffer.md) | [subSequence](../java/nio/CharBuffer.md))`(`startIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `endIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a new character buffer that represents the specified subsequence of this buffer, relative to the current position. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/nio/CharBuffer.md))`()` Returns a string containing the characters in this buffer. |
-| openstatic [CharBuffer](../java/nio/CharBuffer.md)! | [wrap](../java/nio/CharBuffer.md))`(`array:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`)` Wraps a char array into a buffer. |
+| abstract [CharBuffer](CharBuffer.md) | [subSequence](CharBuffer.md))`(`startIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `endIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a new character buffer that represents the specified subsequence of this buffer, relative to the current position. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](CharBuffer.md))`()` Returns a string containing the characters in this buffer. |
+| openstatic [CharBuffer](CharBuffer.md)! | [wrap](CharBuffer.md))`(`array:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`)` Wraps a char array into a buffer. |
 | --- | --- |
-| openstatic [CharBuffer](../java/nio/CharBuffer.md)! | [wrap](../java/nio/CharBuffer.md))`(`array:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Wraps a char array into a buffer. |
-| openstatic [CharBuffer](../java/nio/CharBuffer.md)! | [wrap](../java/nio/CharBuffer.md))`(`csq:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Wraps a character sequence into a buffer. |
-| openstatic [CharBuffer](../java/nio/CharBuffer.md)! | [wrap](../java/nio/CharBuffer.md))`(`csq:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Wraps a character sequence into a buffer. |
+| openstatic [CharBuffer](CharBuffer.md)! | [wrap](CharBuffer.md))`(`array:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Wraps a char array into a buffer. |
+| openstatic [CharBuffer](CharBuffer.md)! | [wrap](CharBuffer.md))`(`csq:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Wraps a character sequence into a buffer. |
+| openstatic [CharBuffer](CharBuffer.md)! | [wrap](CharBuffer.md))`(`csq:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Wraps a character sequence into a buffer. |
 | --- | --- |
 
 | Inherited functions ||
 |---|---|
-| From class [Buffer](../java/nio/Buffer.md) |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [capacity](../java/nio/Buffer.md))`()` <br /> Returns this buffer's capacity. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasRemaining](../java/nio/Buffer.md))`()` <br /> Tells whether there are any elements between the current position and the limit. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isReadOnly](../java/nio/Buffer.md))`()` <br /> Tells whether or not this buffer is read-only. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [limit](../java/nio/Buffer.md))`()` <br /> Returns this buffer's limit. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [position](../java/nio/Buffer.md))`()` <br /> Returns this buffer's position. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [remaining](../java/nio/Buffer.md))`()` <br /> Returns the number of elements between the current position and the limit. <br /> | ||
+| From class [Buffer](Buffer.md) |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [capacity](Buffer.md))`()` <br /> Returns this buffer's capacity. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasRemaining](Buffer.md))`()` <br /> Tells whether there are any elements between the current position and the limit. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isReadOnly](Buffer.md))`()` <br /> Tells whether or not this buffer is read-only. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [limit](Buffer.md))`()` <br /> Returns this buffer's limit. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [position](Buffer.md))`()` <br /> Returns this buffer's position. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [remaining](Buffer.md))`()` <br /> Returns the number of elements between the current position and the limit. <br /> | ||
 
 | Properties ||
 |----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [length](../java/nio/CharBuffer.md) Returns the length of this character buffer. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [length](CharBuffer.md) Returns the length of this character buffer. |
 
 ## Public methods
 
@@ -135,7 +135,7 @@ open static fun allocate(capacity: Int): CharBuffer!
 
 Allocates a new char buffer.
 
-The new buffer's position will be zero, its limit will be its capacity, its mark will be undefined, each of its elements will be initialized to zero, and its byte order will be the [native order](../java/nio/ByteOrder.md))of the underlying hardware. It will have a [backing array](../java/nio/CharBuffer.md)), and its [array offset](../java/nio/CharBuffer.md))will be zero.
+The new buffer's position will be zero, its limit will be its capacity, its mark will be undefined, each of its elements will be initialized to zero, and its byte order will be the [native order](ByteOrder.md))of the underlying hardware. It will have a [backing array](CharBuffer.md)), and its [array offset](CharBuffer.md))will be zero.
 
 | Parameters ||
 |------------|----------------------------------------------------------------------------------------------------------------|
@@ -143,7 +143,7 @@ The new buffer's position will be zero, its limit will be its capacity, its mark
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------|
-| [CharBuffer](../java/nio/CharBuffer.md)! | The new char buffer |
+| [CharBuffer](CharBuffer.md)! | The new char buffer |
 
 | Exceptions ||
 |--------------------------------------|---------------------------------------|
@@ -171,7 +171,7 @@ dst.put(c)
 
 | Return ||
 |-----------------------------------------------------------------------------------|-------------|
-| [CharBuffer](../java/nio/CharBuffer.md) | This buffer |
+| [CharBuffer](CharBuffer.md) | This buffer |
 
 | Exceptions ||
 |------------------------------------|-----------------------------------------------|
@@ -196,7 +196,7 @@ An invocation of this method of the form`dst.append(csq)`behaves in exactly the 
 dst.put(csq.toString()) 
 ```
 
-Depending on the specification of`toString`for the character sequence`csq`, the entire sequence may not be appended. For instance, invoking the [toString](../java/nio/CharBuffer.md))method of a character buffer will return a subsequence whose content depends upon the buffer's position and limit.
+Depending on the specification of`toString`for the character sequence`csq`, the entire sequence may not be appended. For instance, invoking the [toString](CharBuffer.md))method of a character buffer will return a subsequence whose content depends upon the buffer's position and limit.
 
 | Parameters ||
 |-------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -204,7 +204,7 @@ Depending on the specification of`toString`for the character sequence`csq`, the 
 
 | Return ||
 |-----------------------------------------------------------------------------------|-------------|
-| [CharBuffer](../java/nio/CharBuffer.md) | This buffer |
+| [CharBuffer](CharBuffer.md) | This buffer |
 
 | Exceptions ||
 |------------------------------------|-----------------------------------------------|
@@ -242,7 +242,7 @@ dst.put(csq.subSequence(start, end).toString())
 
 | Return ||
 |-----------------------------------------------------------------------------------|-------------|
-| [CharBuffer](../java/nio/CharBuffer.md) | This buffer |
+| [CharBuffer](CharBuffer.md) | This buffer |
 
 | Exceptions ||
 |---------------------------------------|------------------------------------------------------------------------------------------------|
@@ -264,7 +264,7 @@ Returns the char array that backs this buffer*(optional operation)*.
 
 Modifications to this buffer's content will cause the returned array's content to be modified, and vice versa.
 
-Invoke the [hasArray](../java/nio/CharBuffer.md))method before invoking this method in order to ensure that this buffer has an accessible backing array.
+Invoke the [hasArray](CharBuffer.md))method before invoking this method in order to ensure that this buffer has an accessible backing array.
 
 | Return ||
 |------------------------------------------------------------------------------------------|----------------------------------|
@@ -287,7 +287,7 @@ Returns the offset within this buffer's backing array of the first element of th
 
 If this buffer is backed by an array then buffer position*p* corresponds to array index*p* +`arrayOffset()`.
 
-Invoke the [hasArray](../java/nio/CharBuffer.md))method before invoking this method in order to ensure that this buffer has an accessible backing array.
+Invoke the [hasArray](CharBuffer.md))method before invoking this method in order to ensure that this buffer has an accessible backing array.
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------|
@@ -312,11 +312,11 @@ The content of the new buffer will be that of this buffer. Changes to this buffe
 
 The new buffer's capacity, limit, position, mark values, and byte order will be identical to those of this buffer.
 
-If this buffer is itself read-only then this method behaves in exactly the same way as the [duplicate](../java/nio/CharBuffer.md))method.
+If this buffer is itself read-only then this method behaves in exactly the same way as the [duplicate](CharBuffer.md))method.
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------|
-| [CharBuffer](../java/nio/CharBuffer.md)! | The new, read-only char buffer |
+| [CharBuffer](CharBuffer.md)! | The new, read-only char buffer |
 
 ### chars
 
@@ -328,7 +328,7 @@ open fun chars(): IntStream
 
 | Return ||
 |----------------------------------------------------------------------------------------------|------------------------------------------------|
-| [IntStream](../java/util/stream/IntStream.md) | an IntStream of char values from this sequence |
+| [IntStream](../java.util.stream/IntStream.md) | an IntStream of char values from this sequence |
 
 ### clear
 
@@ -351,7 +351,7 @@ This method does not actually erase the data in the buffer, but it is named as i
 
 | Return ||
 |---------------------------------------------------------------------------|-------------|
-| [Buffer](../java/nio/Buffer.md)! | This buffer |
+| [Buffer](Buffer.md)! | This buffer |
 
 ### compact
 
@@ -369,7 +369,7 @@ The buffer's position is set to the number of chars copied, rather than to zero,
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------|
-| [CharBuffer](../java/nio/CharBuffer.md)! | This buffer |
+| [CharBuffer](CharBuffer.md)! | This buffer |
 
 | Exceptions ||
 |------------------------------------|-----------------------------|
@@ -385,7 +385,7 @@ open fun compareTo(other: CharBuffer!): Int
 
 Compares this buffer to another.
 
-Two char buffers are compared by comparing their sequences of remaining elements lexicographically, without regard to the starting position of each sequence within its corresponding buffer. Pairs of`char`elements are compared as if by invoking [Character.compare(char,char)](../java/lang/Character.md)).
+Two char buffers are compared by comparing their sequences of remaining elements lexicographically, without regard to the starting position of each sequence within its corresponding buffer. Pairs of`char`elements are compared as if by invoking [Character.compare(char,char)](../java.lang/Character.md)).
 
 A char buffer is not comparable to any other type of object.
 
@@ -418,7 +418,7 @@ The new buffer's capacity, limit, position, mark values, and byte order will be 
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------|
-| [CharBuffer](../java/nio/CharBuffer.md)! | The new char buffer |
+| [CharBuffer](CharBuffer.md)! | The new char buffer |
 
 ### equals
 
@@ -466,11 +466,11 @@ buf.put(magic);    // Prepend header
   out.write(buf);    // Write header + data to channel
 ```
 
-This method is often used in conjunction with the [compact](../java/nio/ByteBuffer.md))method when transferring data from one place to another.
+This method is often used in conjunction with the [compact](ByteBuffer.md))method when transferring data from one place to another.
 
 | Return ||
 |---------------------------------------------------------------------------|-------------|
-| [Buffer](../java/nio/Buffer.md)! | This buffer |
+| [Buffer](Buffer.md)! | This buffer |
 
 ### get
 
@@ -512,7 +512,7 @@ src.get(a, 0, a.length)
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------|
-| [CharBuffer](../java/nio/CharBuffer.md)! | This buffer |
+| [CharBuffer](CharBuffer.md)! | This buffer |
 
 | Exceptions ||
 |-------------------------------------|---------------------------------------------------------------|
@@ -532,7 +532,7 @@ open fun get(
 
 Relative bulk*get*method.
 
-This method transfers chars from this buffer into the given destination array. If there are fewer chars remaining in the buffer than are required to satisfy the request, that is, if`length``>``remaining()`, then no chars are transferred and a [BufferUnderflowException](../java/nio/BufferUnderflowException.md) is thrown.
+This method transfers chars from this buffer into the given destination array. If there are fewer chars remaining in the buffer than are required to satisfy the request, that is, if`length``>``remaining()`, then no chars are transferred and a [BufferUnderflowException](BufferUnderflowException.md) is thrown.
 
 Otherwise, this method copies`length`chars from this buffer into the given array, starting at the current position of this buffer and at the given offset in the array. The position of this buffer is then incremented by`length`.
 
@@ -554,7 +554,7 @@ except that it first checks that there are sufficient chars in this buffer and i
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------|
-| [CharBuffer](../java/nio/CharBuffer.md)! | This buffer |
+| [CharBuffer](CharBuffer.md)! | This buffer |
 
 | Exceptions ||
 |---------------------------------------|----------------------------------------------------------------------|
@@ -609,7 +609,7 @@ src.get(index, dst, 0, dst.length)
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------|
-| [CharBuffer](../java/nio/CharBuffer.md)! | This buffer |
+| [CharBuffer](CharBuffer.md)! | This buffer |
 
 | Exceptions ||
 |---------------------------------------|-----------------------------------------------------------------------------------|
@@ -650,7 +650,7 @@ An invocation of this method of the form`src.get(index, dst, offset, length)`has
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------|
-| [CharBuffer](../java/nio/CharBuffer.md)! | This buffer |
+| [CharBuffer](CharBuffer.md)! | This buffer |
 
 | Exceptions ||
 |---------------------------------------|--------------------------------------------------------------------------------|
@@ -672,7 +672,7 @@ fun hasArray(): Boolean
 
 Tells whether or not this buffer is backed by an accessible char array.
 
-If this method returns`true`then the [array](../java/nio/CharBuffer.md))and [arrayOffset](../java/nio/CharBuffer.md))methods may safely be invoked.
+If this method returns`true`then the [array](CharBuffer.md))and [arrayOffset](CharBuffer.md))methods may safely be invoked.
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
@@ -740,7 +740,7 @@ Sets this buffer's limit. If the position is larger than the new limit then it i
 
 | Return ||
 |---------------------------------------------------------------------------|-------------|
-| [Buffer](../java/nio/Buffer.md)! | This buffer |
+| [Buffer](Buffer.md)! | This buffer |
 
 | Exceptions ||
 |--------------------------------------|----------------------------------------------|
@@ -758,7 +758,7 @@ Sets this buffer's mark at its position.
 
 | Return ||
 |---------------------------------------------------------------------------|-------------|
-| [Buffer](../java/nio/Buffer.md)! | This buffer |
+| [Buffer](Buffer.md)! | This buffer |
 
 ### mismatch
 
@@ -768,13 +768,13 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 open fun mismatch(that: CharBuffer!): Int
 ```
 
-Finds and returns the relative index of the first mismatch between this buffer and a given buffer. The index is relative to the [position](../java/nio/Buffer.md))of each buffer and will be in the range of 0 (inclusive) up to the smaller of the [remaining](../java/nio/Buffer.md))elements in each buffer (exclusive).
+Finds and returns the relative index of the first mismatch between this buffer and a given buffer. The index is relative to the [position](Buffer.md))of each buffer and will be in the range of 0 (inclusive) up to the smaller of the [remaining](Buffer.md))elements in each buffer (exclusive).
 
 If the two buffers share a common prefix then the returned index is the length of the common prefix and it follows that there is a mismatch between the two buffers at that index within the respective buffers. If one buffer is a proper prefix of the other then the returned index is the smaller of the remaining elements in each buffer, and it follows that the index is only valid for the buffer with the larger number of remaining elements. Otherwise, there is no mismatch.
 
 | Parameters ||
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| `that` | [CharBuffer](../java/nio/CharBuffer.md)!:The byte buffer to be tested for a mismatch with this buffer |
+| `that` | [CharBuffer](CharBuffer.md)!:The byte buffer to be tested for a mismatch with this buffer |
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
@@ -790,11 +790,11 @@ abstract fun order(): ByteOrder!
 
 Retrieves this buffer's byte order.
 
-The byte order of a char buffer created by allocation or by wrapping an existing`char`array is the [native order](../java/nio/ByteOrder.md))of the underlying hardware. The byte order of a char buffer created as a [view](../java/nio/ByteBuffer.md) of a byte buffer is that of the byte buffer at the moment that the view is created.
+The byte order of a char buffer created by allocation or by wrapping an existing`char`array is the [native order](ByteOrder.md))of the underlying hardware. The byte order of a char buffer created as a [view](ByteBuffer.md) of a byte buffer is that of the byte buffer at the moment that the view is created.
 
 | Return ||
 |---------------------------------------------------------------------------------|--------------------------|
-| [ByteOrder](../java/nio/ByteOrder.md)! | This buffer's byte order |
+| [ByteOrder](ByteOrder.md)! | This buffer's byte order |
 
 ### position
 
@@ -812,7 +812,7 @@ Sets this buffer's position. If the mark is defined and larger than the new posi
 
 | Return ||
 |---------------------------------------------------------------------------|-------------|
-| [Buffer](../java/nio/Buffer.md)! | This buffer |
+| [Buffer](Buffer.md)! | This buffer |
 
 | Exceptions ||
 |--------------------------------------|-------------------------------------------------|
@@ -836,7 +836,7 @@ Writes the given char into this buffer at the current position, and then increme
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------|
-| [CharBuffer](../java/nio/CharBuffer.md)! | This buffer |
+| [CharBuffer](CharBuffer.md)! | This buffer |
 
 | Exceptions ||
 |------------------------------------|-----------------------------------------------------------------|
@@ -865,7 +865,7 @@ dst.put(a, 0, a.length)
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------|
-| [CharBuffer](../java/nio/CharBuffer.md)! | This buffer |
+| [CharBuffer](CharBuffer.md)! | This buffer |
 
 | Exceptions ||
 |------------------------------------|-----------------------------------------------|
@@ -886,7 +886,7 @@ open fun put(
 
 Relative bulk*put* method*(optional operation)*.
 
-This method transfers chars into this buffer from the given source array. If there are more chars to be copied from the array than remain in this buffer, that is, if`length``>``remaining()`, then no chars are transferred and a [BufferOverflowException](../java/nio/BufferOverflowException.md) is thrown.
+This method transfers chars into this buffer from the given source array. If there are more chars to be copied from the array than remain in this buffer, that is, if`length``>``remaining()`, then no chars are transferred and a [BufferOverflowException](BufferOverflowException.md) is thrown.
 
 Otherwise, this method copies`length`chars from the given array into this buffer, starting at the given offset in the array and at the current position of this buffer. The position of this buffer is then incremented by`length`.
 
@@ -908,7 +908,7 @@ except that it first checks that there is sufficient space in this buffer and it
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------|
-| [CharBuffer](../java/nio/CharBuffer.md)! | This buffer |
+| [CharBuffer](CharBuffer.md)! | This buffer |
 
 | Exceptions ||
 |---------------------------------------|----------------------------------------------------------------------|
@@ -939,7 +939,7 @@ Writes the given char into this buffer at the given index.
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------|
-| [CharBuffer](../java/nio/CharBuffer.md)! | This buffer |
+| [CharBuffer](CharBuffer.md)! | This buffer |
 
 | Exceptions ||
 |---------------------------------------|-------------------------------------------------------------|
@@ -972,7 +972,7 @@ dst.put(index, src, 0, src.length);
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------|
-| [CharBuffer](../java/nio/CharBuffer.md)! | This buffer |
+| [CharBuffer](CharBuffer.md)! | This buffer |
 
 | Exceptions ||
 |---------------------------------------|-----------------------------------------------------------------------------------|
@@ -1014,7 +1014,7 @@ An invocation of this method of the form`dst.put(index, src, offset, length)`has
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------|
-| [CharBuffer](../java/nio/CharBuffer.md)! | This buffer |
+| [CharBuffer](CharBuffer.md)! | This buffer |
 
 | Exceptions ||
 |---------------------------------------|--------------------------------------------------------------------------------|
@@ -1050,14 +1050,14 @@ except that it first checks the consistency of the supplied parameters and it is
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The index in this buffer at which the first char will be written; must be non-negative and less than`limit()` |
-| `src` | [CharBuffer](../java/nio/CharBuffer.md)!:The buffer from which chars are to be read |
+| `src` | [CharBuffer](CharBuffer.md)!:The buffer from which chars are to be read |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The index within the source buffer of the first char to be read; must be non-negative and less than`src.limit()` |
 | --- | --- |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The number of chars to be read from the given buffer; must be non-negative and no larger than the smaller of`limit() - index`and`src.limit() - offset` |
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------|
-| [CharBuffer](../java/nio/CharBuffer.md)! | This buffer |
+| [CharBuffer](CharBuffer.md)! | This buffer |
 
 | Exceptions ||
 |---------------------------------------|--------------------------------------------------------------------------------|
@@ -1086,7 +1086,7 @@ dst.put(s, 0, s.length())
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------|
-| [CharBuffer](../java/nio/CharBuffer.md)! | This buffer |
+| [CharBuffer](CharBuffer.md)! | This buffer |
 
 | Exceptions ||
 |------------------------------------|-----------------------------------------------|
@@ -1107,7 +1107,7 @@ open fun put(
 
 Relative bulk*put* method*(optional operation)*.
 
-This method transfers chars from the given string into this buffer. If there are more chars to be copied from the string than remain in this buffer, that is, if`end - start``>``remaining()`, then no chars are transferred and a [BufferOverflowException](../java/nio/BufferOverflowException.md) is thrown.
+This method transfers chars from the given string into this buffer. If there are more chars to be copied from the string than remain in this buffer, that is, if`end - start``>``remaining()`, then no chars are transferred and a [BufferOverflowException](BufferOverflowException.md) is thrown.
 
 Otherwise, this method copies*n* =`end`-`start`chars from the given string into this buffer, starting at the given`start`index and at the current position of this buffer. The position of this buffer is then incremented by*n*.
 
@@ -1129,7 +1129,7 @@ except that it first checks that there is sufficient space in this buffer and it
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------|
-| [CharBuffer](../java/nio/CharBuffer.md)! | This buffer |
+| [CharBuffer](CharBuffer.md)! | This buffer |
 
 | Exceptions ||
 |---------------------------------------|------------------------------------------------------------------|
@@ -1148,7 +1148,7 @@ open fun put(src: CharBuffer!): CharBuffer!
 
 Relative bulk*put* method*(optional operation)*.
 
-This method transfers the chars remaining in the given source buffer into this buffer. If there are more chars remaining in the source buffer than in this buffer, that is, if`src.remaining()``>``remaining()`, then no chars are transferred and a [BufferOverflowException](../java/nio/BufferOverflowException.md) is thrown.
+This method transfers the chars remaining in the given source buffer into this buffer. If there are more chars remaining in the source buffer than in this buffer, that is, if`src.remaining()``>``remaining()`, then no chars are transferred and a [BufferOverflowException](BufferOverflowException.md) is thrown.
 
 Otherwise, this method copies*n* =`src.remaining()`chars from the given buffer into this buffer, starting at each buffer's current position. The positions of both buffers are then incremented by*n*.
 
@@ -1162,11 +1162,11 @@ except that it first checks that there is sufficient space in this buffer and it
 
 | Parameters ||
 |-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `src` | [CharBuffer](../java/nio/CharBuffer.md)!:The source buffer from which chars are to be read; must not be this buffer |
+| `src` | [CharBuffer](CharBuffer.md)!:The source buffer from which chars are to be read; must not be this buffer |
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------|
-| [CharBuffer](../java/nio/CharBuffer.md)! | This buffer |
+| [CharBuffer](CharBuffer.md)! | This buffer |
 
 | Exceptions ||
 |--------------------------------------|--------------------------------------------------------------------------------------------|
@@ -1188,7 +1188,7 @@ Attempts to read characters into the specified character buffer. The buffer is u
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------|
 | `cb` | the buffer to read characters into |
-| `target` | [CharBuffer](../java/nio/CharBuffer.md)!:the buffer to read characters into |
+| `target` | [CharBuffer](CharBuffer.md)!:the buffer to read characters into |
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
@@ -1215,7 +1215,7 @@ Invoking this method neither changes nor discards the mark's value.
 
 | Return ||
 |---------------------------------------------------------------------------|-------------|
-| [Buffer](../java/nio/Buffer.md)! | This buffer |
+| [Buffer](Buffer.md)! | This buffer |
 
 | Exceptions ||
 |---------------------------------|------------------------------|
@@ -1241,7 +1241,7 @@ out.write(buf);    // Write remaining data
 
 | Return ||
 |---------------------------------------------------------------------------|-------------|
-| [Buffer](../java/nio/Buffer.md)! | This buffer |
+| [Buffer](Buffer.md)! | This buffer |
 
 ### slice
 
@@ -1259,7 +1259,7 @@ The new buffer's position will be zero, its capacity and its limit will be the n
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------|
-| [CharBuffer](../java/nio/CharBuffer.md)! | The new char buffer |
+| [CharBuffer](CharBuffer.md)! | The new char buffer |
 
 ### slice
 
@@ -1280,12 +1280,12 @@ The new buffer's position will be zero, its capacity and its limit will be`lengt
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The position in this buffer at which the content of the new buffer will start; must be non-negative and no larger than [limit()](../java/nio/Buffer.md)) |
+| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The position in this buffer at which the content of the new buffer will start; must be non-negative and no larger than [limit()](Buffer.md)) |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The number of elements the new buffer will contain; must be non-negative and no larger than`limit() - index` |
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------|
-| [CharBuffer](../java/nio/CharBuffer.md)! | The new buffer |
+| [CharBuffer](CharBuffer.md)! | The new buffer |
 
 | Exceptions ||
 |---------------------------------------|-------------------------------------------------------------------------------------------------|
@@ -1313,7 +1313,7 @@ The new buffer will share this buffer's content; that is, if the content of this
 
 | Return ||
 |-----------------------------------------------------------------------------------|--------------------------|
-| [CharBuffer](../java/nio/CharBuffer.md) | The new character buffer |
+| [CharBuffer](CharBuffer.md) | The new character buffer |
 
 | Exceptions ||
 |---------------------------------------|---------------------------------------------------|
@@ -1345,7 +1345,7 @@ open static fun wrap(array: CharArray!): CharBuffer!
 
 Wraps a char array into a buffer.
 
-The new buffer will be backed by the given char array; that is, modifications to the buffer will cause the array to be modified and vice versa. The new buffer's capacity and limit will be`array.length`, its position will be zero, its mark will be undefined, and its byte order will be the [native order](../java/nio/ByteOrder.md))of the underlying hardware. Its [backing array](../java/nio/CharBuffer.md))will be the given array, and its [array offset](../java/nio/CharBuffer.md))will be zero.
+The new buffer will be backed by the given char array; that is, modifications to the buffer will cause the array to be modified and vice versa. The new buffer's capacity and limit will be`array.length`, its position will be zero, its mark will be undefined, and its byte order will be the [native order](ByteOrder.md))of the underlying hardware. Its [backing array](CharBuffer.md))will be the given array, and its [array offset](CharBuffer.md))will be zero.
 
 | Parameters ||
 |---------|-------------------------------------------------------------------------------------------------------------------------------|
@@ -1353,7 +1353,7 @@ The new buffer will be backed by the given char array; that is, modifications to
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------|
-| [CharBuffer](../java/nio/CharBuffer.md)! | The new char buffer |
+| [CharBuffer](CharBuffer.md)! | The new char buffer |
 
 ### wrap
 
@@ -1369,7 +1369,7 @@ open static fun wrap(
 
 Wraps a char array into a buffer.
 
-The new buffer will be backed by the given char array; that is, modifications to the buffer will cause the array to be modified and vice versa. The new buffer's capacity will be`array.length`, its position will be`offset`, its limit will be`offset + length`, its mark will be undefined, and its byte order will be the [native order](../java/nio/ByteOrder.md))of the underlying hardware. Its [backing array](../java/nio/CharBuffer.md))will be the given array, and its [array offset](../java/nio/CharBuffer.md))will be zero.
+The new buffer will be backed by the given char array; that is, modifications to the buffer will cause the array to be modified and vice versa. The new buffer's capacity will be`array.length`, its position will be`offset`, its limit will be`offset + length`, its mark will be undefined, and its byte order will be the [native order](ByteOrder.md))of the underlying hardware. Its [backing array](CharBuffer.md))will be the given array, and its [array offset](CharBuffer.md))will be zero.
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1380,7 +1380,7 @@ The new buffer will be backed by the given char array; that is, modifications to
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------|
-| [CharBuffer](../java/nio/CharBuffer.md)! | The new char buffer |
+| [CharBuffer](CharBuffer.md)! | The new char buffer |
 
 | Exceptions ||
 |---------------------------------------|----------------------------------------------------------------------|
@@ -1404,7 +1404,7 @@ The content of the new, read-only buffer will be the content of the given charac
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------|
-| [CharBuffer](../java/nio/CharBuffer.md)! | The new character buffer |
+| [CharBuffer](CharBuffer.md)! | The new character buffer |
 
 ### wrap
 
@@ -1431,7 +1431,7 @@ The content of the new, read-only buffer will be the content of the given charac
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------|
-| [CharBuffer](../java/nio/CharBuffer.md)! | The new character buffer |
+| [CharBuffer](CharBuffer.md)! | The new character buffer |
 
 | Exceptions ||
 |---------------------------------------|------------------------------------------------------------------|

@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # PaintFlagsDrawFilter
 
-Kotlin| [Java](../android/graphics/PaintFlagsDrawFilter.md) 
+Kotlin| [Java](PaintFlagsDrawFilter.md) 
 | --- | --- |
 
 ```
@@ -13,18 +13,18 @@ open class PaintFlagsDrawFilter : DrawFilter
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.graphics.DrawFilter](../android/graphics/DrawFilter.md) ||
-| | ↳ | [android.graphics.PaintFlagsDrawFilter](../android/graphics/PaintFlagsDrawFilter.md) |
+| ↳ | [android.graphics.DrawFilter](DrawFilter.md) ||
+| | ↳ | [android.graphics.PaintFlagsDrawFilter](PaintFlagsDrawFilter.md) |
 
 ## Summary
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [PaintFlagsDrawFilter](../android/graphics/PaintFlagsDrawFilter.md))`(`clearBits:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `setBits:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Subclass of DrawFilter that affects every paint by first clearing the specified clearBits in the paint's flags, and then setting the specified setBits in the paint's flags. |
+| [PaintFlagsDrawFilter](PaintFlagsDrawFilter.md))`(`clearBits:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `setBits:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Subclass of DrawFilter that affects every paint by first clearing the specified clearBits in the paint's flags, and then setting the specified setBits in the paint's flags. |
 
 | Inherited functions ||
 |---|---|
-| From class [DrawFilter](../android/graphics/DrawFilter.md) |------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](../android/graphics/DrawFilter.md))`()` <br /> | ||
+| From class [DrawFilter](DrawFilter.md) |------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](DrawFilter.md))`()` <br /> | ||
 
 ## Public constructors
 

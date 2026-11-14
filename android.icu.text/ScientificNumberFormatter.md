@@ -4,7 +4,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 
 # ScientificNumberFormatter
 
-Kotlin| [Java](../android/icu/text/ScientificNumberFormatter.md) 
+Kotlin| [Java](ScientificNumberFormatter.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class ScientificNumberFormatter
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.icu.text.ScientificNumberFormatter](../android/icu/text/ScientificNumberFormatter.md) |
+| ↳ | [android.icu.text.ScientificNumberFormatter](ScientificNumberFormatter.md) |
 
 A formatter that formats numbers in user-friendly scientific notation. ScientificNumberFormatter instances are immutable and thread-safe. Sample code: 
 
@@ -36,12 +36,12 @@ ULocale en = new ULocale("en");
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](../android/icu/text/ScientificNumberFormatter.md))`(`number:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Formats a number |
-| static [ScientificNumberFormatter](../android/icu/text/ScientificNumberFormatter.md)! | [getMarkupInstance](../android/icu/text/ScientificNumberFormatter.md))`(`df:` ` [DecimalFormat](../android/icu/text/DecimalFormat.md)!`, `beginMarkup:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `endMarkup:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Gets a ScientificNumberFormatter instance that uses markup for exponents. |
-| static [ScientificNumberFormatter](../android/icu/text/ScientificNumberFormatter.md)! | [getMarkupInstance](../android/icu/text/ScientificNumberFormatter.md))`(`locale:` ` [ULocale](../android/icu/util/ULocale.md)!`, `beginMarkup:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `endMarkup:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Gets a ScientificNumberFormatter instance that uses markup for exponents for this locale. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](ScientificNumberFormatter.md))`(`number:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Formats a number |
+| static [ScientificNumberFormatter](ScientificNumberFormatter.md)! | [getMarkupInstance](ScientificNumberFormatter.md))`(`df:` ` [DecimalFormat](DecimalFormat.md)!`, `beginMarkup:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `endMarkup:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Gets a ScientificNumberFormatter instance that uses markup for exponents. |
+| static [ScientificNumberFormatter](ScientificNumberFormatter.md)! | [getMarkupInstance](ScientificNumberFormatter.md))`(`locale:` ` [ULocale](../android.icu.util/ULocale.md)!`, `beginMarkup:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `endMarkup:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Gets a ScientificNumberFormatter instance that uses markup for exponents for this locale. |
 | --- | --- |
-| static [ScientificNumberFormatter](../android/icu/text/ScientificNumberFormatter.md)! | [getSuperscriptInstance](../android/icu/text/ScientificNumberFormatter.md))`(`df:` ` [DecimalFormat](../android/icu/text/DecimalFormat.md)!`)` Gets a ScientificNumberFormatter instance that uses superscript characters for exponents. |
-| static [ScientificNumberFormatter](../android/icu/text/ScientificNumberFormatter.md)! | [getSuperscriptInstance](../android/icu/text/ScientificNumberFormatter.md))`(`locale:` ` [ULocale](../android/icu/util/ULocale.md)!`)` Gets a ScientificNumberFormatter instance that uses superscript characters for exponents for this locale. |
+| static [ScientificNumberFormatter](ScientificNumberFormatter.md)! | [getSuperscriptInstance](ScientificNumberFormatter.md))`(`df:` ` [DecimalFormat](DecimalFormat.md)!`)` Gets a ScientificNumberFormatter instance that uses superscript characters for exponents. |
+| static [ScientificNumberFormatter](ScientificNumberFormatter.md)! | [getSuperscriptInstance](ScientificNumberFormatter.md))`(`locale:` ` [ULocale](../android.icu.util/ULocale.md)!`)` Gets a ScientificNumberFormatter instance that uses superscript characters for exponents for this locale. |
 
 ## Public methods
 
@@ -79,14 +79,14 @@ Gets a ScientificNumberFormatter instance that uses markup for exponents.
 
 | Parameters ||
 |---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `df` | [DecimalFormat](../android/icu/text/DecimalFormat.md)!:The DecimalFormat must be configured for scientific notation. Caller may safely change df after this call as this method clones it when creating the ScientificNumberFormatter. |
+| `df` | [DecimalFormat](DecimalFormat.md)!:The DecimalFormat must be configured for scientific notation. Caller may safely change df after this call as this method clones it when creating the ScientificNumberFormatter. |
 | `beginMarkup` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the markup to start superscript e.g`<sup>` |
 | `endMarkup` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the markup to end superscript e.g`</sup>` |
 | --- | --- |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------|-----------------------------------------|
-| [ScientificNumberFormatter](../android/icu/text/ScientificNumberFormatter.md)! | The ScientificNumberFormatter instance. |
+| [ScientificNumberFormatter](ScientificNumberFormatter.md)! | The ScientificNumberFormatter instance. |
 
 ### getMarkupInstance
 
@@ -104,14 +104,14 @@ Gets a ScientificNumberFormatter instance that uses markup for exponents for thi
 
 | Parameters ||
 |---------------|------------------------------------------------------------------------------------------------------------------------------|
-| `locale` | [ULocale](../android/icu/util/ULocale.md)!:The locale |
+| `locale` | [ULocale](../android.icu.util/ULocale.md)!:The locale |
 | `beginMarkup` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the markup to start superscript e.g`<sup>` |
 | `endMarkup` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the markup to end superscript e.g`</sup>` |
 | --- | --- |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------|-----------------------------------------|
-| [ScientificNumberFormatter](../android/icu/text/ScientificNumberFormatter.md)! | The ScientificNumberFormatter instance. |
+| [ScientificNumberFormatter](ScientificNumberFormatter.md)! | The ScientificNumberFormatter instance. |
 
 ### getSuperscriptInstance
 
@@ -125,11 +125,11 @@ Gets a ScientificNumberFormatter instance that uses superscript characters for e
 
 | Parameters ||
 |------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `df` | [DecimalFormat](../android/icu/text/DecimalFormat.md)!:The DecimalFormat must be configured for scientific notation. Caller may safely change df after this call as this method clones it when creating the ScientificNumberFormatter. |
+| `df` | [DecimalFormat](DecimalFormat.md)!:The DecimalFormat must be configured for scientific notation. Caller may safely change df after this call as this method clones it when creating the ScientificNumberFormatter. |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------|-----------------------------------------|
-| [ScientificNumberFormatter](../android/icu/text/ScientificNumberFormatter.md)! | the ScientificNumberFormatter instance. |
+| [ScientificNumberFormatter](ScientificNumberFormatter.md)! | the ScientificNumberFormatter instance. |
 
 ### getSuperscriptInstance
 
@@ -143,8 +143,8 @@ Gets a ScientificNumberFormatter instance that uses superscript characters for e
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------|
-| `locale` | [ULocale](../android/icu/util/ULocale.md)!:The locale |
+| `locale` | [ULocale](../android.icu.util/ULocale.md)!:The locale |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------|-----------------------------------------|
-| [ScientificNumberFormatter](../android/icu/text/ScientificNumberFormatter.md)! | The ScientificNumberFormatter instance. |
+| [ScientificNumberFormatter](ScientificNumberFormatter.md)! | The ScientificNumberFormatter instance. |

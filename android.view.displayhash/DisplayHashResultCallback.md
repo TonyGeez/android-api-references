@@ -4,34 +4,34 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # DisplayHashResultCallback
 
-Kotlin| [Java](../android/view/displayhash/DisplayHashResultCallback.md) 
+Kotlin| [Java](DisplayHashResultCallback.md) 
 | --- | --- |
 
 ```
 interface DisplayHashResultCallback
 ```
 
-| [android.view.displayhash.DisplayHashResultCallback](../android/view/displayhash/DisplayHashResultCallback.md) |
+| [android.view.displayhash.DisplayHashResultCallback](DisplayHashResultCallback.md) |
 
-Use when calling [View.generateDisplayHash(String, Rect, Executor,](../android/view/View.md)). The callback will only invoke either [onDisplayHashResult](../android/view/displayhash/DisplayHashResultCallback.md))when the system successfully generated the [DisplayHash](../android/view/displayhash/DisplayHash.md) or [onDisplayHashError(int)](../android/view/displayhash/DisplayHashResultCallback.md))when it failed.
+Use when calling [View.generateDisplayHash(String, Rect, Executor,](../android.view/View.md)). The callback will only invoke either [onDisplayHashResult](DisplayHashResultCallback.md))when the system successfully generated the [DisplayHash](DisplayHash.md) or [onDisplayHashError(int)](DisplayHashResultCallback.md))when it failed.
 
 ## Summary
 
 | Constants ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DISPLAY_HASH_ERROR_INVALID_BOUNDS](../android/view/displayhash/DisplayHashResultCallback.md) The bounds used when requesting the hash hash were invalid or empty. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DISPLAY_HASH_ERROR_INVALID_HASH_ALGORITHM](../android/view/displayhash/DisplayHashResultCallback.md) The hash algorithm sent to generate the hash was invalid. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DISPLAY_HASH_ERROR_MISSING_WINDOW](../android/view/displayhash/DisplayHashResultCallback.md) The window for the view that requested the hash is no longer around. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DISPLAY_HASH_ERROR_INVALID_BOUNDS](DisplayHashResultCallback.md) The bounds used when requesting the hash hash were invalid or empty. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DISPLAY_HASH_ERROR_INVALID_HASH_ALGORITHM](DisplayHashResultCallback.md) The hash algorithm sent to generate the hash was invalid. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DISPLAY_HASH_ERROR_MISSING_WINDOW](DisplayHashResultCallback.md) The window for the view that requested the hash is no longer around. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DISPLAY_HASH_ERROR_NOT_VISIBLE_ON_SCREEN](../android/view/displayhash/DisplayHashResultCallback.md) The view that requested the hash is not visible on screen. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DISPLAY_HASH_ERROR_TOO_MANY_REQUESTS](../android/view/displayhash/DisplayHashResultCallback.md) The caller requested to generate the hash too frequently. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DISPLAY_HASH_ERROR_UNKNOWN](../android/view/displayhash/DisplayHashResultCallback.md) An unknown error occurred. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DISPLAY_HASH_ERROR_NOT_VISIBLE_ON_SCREEN](DisplayHashResultCallback.md) The view that requested the hash is not visible on screen. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DISPLAY_HASH_ERROR_TOO_MANY_REQUESTS](DisplayHashResultCallback.md) The caller requested to generate the hash too frequently. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DISPLAY_HASH_ERROR_UNKNOWN](DisplayHashResultCallback.md) An unknown error occurred. |
 | --- | --- |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDisplayHashError](../android/view/displayhash/DisplayHashResultCallback.md))`(`errorCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Callback invoked when [android.view.View#generateDisplayHash(String, Rect, Executor, * DisplayHashResultCallback)](../android/view/View.md))results in an error and cannot generate a display hash. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDisplayHashResult](../android/view/displayhash/DisplayHashResultCallback.md))`(`displayHash:` ` [DisplayHash](../android/view/displayhash/DisplayHash.md)`)` Callback invoked when calling [android.view.View#generateDisplayHash(String, Rect, Executor, * DisplayHashResultCallback)](../android/view/View.md)) |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDisplayHashError](DisplayHashResultCallback.md))`(`errorCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Callback invoked when [android.view.View#generateDisplayHash(String, Rect, Executor, * DisplayHashResultCallback)](../android.view/View.md))results in an error and cannot generate a display hash. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDisplayHashResult](DisplayHashResultCallback.md))`(`displayHash:` ` [DisplayHash](DisplayHash.md)`)` Callback invoked when calling [android.view.View#generateDisplayHash(String, Rect, Executor, * DisplayHashResultCallback)](../android.view/View.md)) |
 
 ## Constants
 
@@ -55,7 +55,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 static val DISPLAY_HASH_ERROR_INVALID_HASH_ALGORITHM: Int
 ```
 
-The hash algorithm sent to generate the hash was invalid. This means the value is not one of the supported values in [DisplayHashManager.getSupportedHashAlgorithms()](../android/view/displayhash/DisplayHashManager.md)) 
+The hash algorithm sent to generate the hash was invalid. This means the value is not one of the supported values in [DisplayHashManager.getSupportedHashAlgorithms()](DisplayHashManager.md)) 
 
  Value: -5
 
@@ -117,11 +117,11 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 abstract fun onDisplayHashError(errorCode: Int): Unit
 ```
 
-Callback invoked when [android.view.View#generateDisplayHash(String, Rect, Executor, * DisplayHashResultCallback)](../android/view/View.md))results in an error and cannot generate a display hash.
+Callback invoked when [android.view.View#generateDisplayHash(String, Rect, Executor, * DisplayHashResultCallback)](../android.view/View.md))results in an error and cannot generate a display hash.
 
 | Parameters ||
 |-------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `errorCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the error code Value is [android.view.displayhash.DisplayHashResultCallback#DISPLAY_HASH_ERROR_UNKNOWN](../android/view/displayhash/DisplayHashResultCallback.md), [android.view.displayhash.DisplayHashResultCallback#DISPLAY_HASH_ERROR_INVALID_BOUNDS](../android/view/displayhash/DisplayHashResultCallback.md), [android.view.displayhash.DisplayHashResultCallback#DISPLAY_HASH_ERROR_MISSING_WINDOW](../android/view/displayhash/DisplayHashResultCallback.md), [android.view.displayhash.DisplayHashResultCallback#DISPLAY_HASH_ERROR_NOT_VISIBLE_ON_SCREEN](../android/view/displayhash/DisplayHashResultCallback.md), [android.view.displayhash.DisplayHashResultCallback#DISPLAY_HASH_ERROR_INVALID_HASH_ALGORITHM](../android/view/displayhash/DisplayHashResultCallback.md), or [android.view.displayhash.DisplayHashResultCallback#DISPLAY_HASH_ERROR_TOO_MANY_REQUESTS](../android/view/displayhash/DisplayHashResultCallback.md) |
+| `errorCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the error code Value is [android.view.displayhash.DisplayHashResultCallback#DISPLAY_HASH_ERROR_UNKNOWN](DisplayHashResultCallback.md), [android.view.displayhash.DisplayHashResultCallback#DISPLAY_HASH_ERROR_INVALID_BOUNDS](DisplayHashResultCallback.md), [android.view.displayhash.DisplayHashResultCallback#DISPLAY_HASH_ERROR_MISSING_WINDOW](DisplayHashResultCallback.md), [android.view.displayhash.DisplayHashResultCallback#DISPLAY_HASH_ERROR_NOT_VISIBLE_ON_SCREEN](DisplayHashResultCallback.md), [android.view.displayhash.DisplayHashResultCallback#DISPLAY_HASH_ERROR_INVALID_HASH_ALGORITHM](DisplayHashResultCallback.md), or [android.view.displayhash.DisplayHashResultCallback#DISPLAY_HASH_ERROR_TOO_MANY_REQUESTS](DisplayHashResultCallback.md) |
 
 ### onDisplayHashResult
 
@@ -131,8 +131,8 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 abstract fun onDisplayHashResult(displayHash: DisplayHash): Unit
 ```
 
-Callback invoked when calling [android.view.View#generateDisplayHash(String, Rect, Executor, * DisplayHashResultCallback)](../android/view/View.md))
+Callback invoked when calling [android.view.View#generateDisplayHash(String, Rect, Executor, * DisplayHashResultCallback)](../android.view/View.md))
 
 | Parameters ||
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `displayHash` | [DisplayHash](../android/view/displayhash/DisplayHash.md):The DisplayHash generated. If the hash cannot be generated, [onDisplayHashError(int)](../android/view/displayhash/DisplayHashResultCallback.md))will be called instead This value cannot be`null`. |
+| `displayHash` | [DisplayHash](DisplayHash.md):The DisplayHash generated. If the hash cannot be generated, [onDisplayHashError(int)](DisplayHashResultCallback.md))will be called instead This value cannot be`null`. |

@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # ViewDebug
 
-Kotlin| [Java](../android/view/ViewDebug.md) 
+Kotlin| [Java](ViewDebug.md) 
 | --- | --- |
 
 ```
@@ -13,9 +13,9 @@ open class ViewDebug
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.ViewDebug](../android/view/ViewDebug.md) |
+| ↳ | [android.view.ViewDebug](ViewDebug.md) |
 
-Various debugging/tracing tools related to [View](../android/view/View.md) and the view hierarchy.
+Various debugging/tracing tools related to [View](View.md) and the view hierarchy.
 
 ## Summary
 
@@ -32,24 +32,24 @@ Various debugging/tracing tools related to [View](../android/view/View.md) and t
 
 | Constants ||
 |------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [TRACE_HIERARCHY](../android/view/ViewDebug.md) <br /> |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [TRACE_RECYCLER](../android/view/ViewDebug.md) <br /> |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [TRACE_HIERARCHY](ViewDebug.md) <br /> |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [TRACE_RECYCLER](ViewDebug.md) <br /> |
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------|---|
-| [ViewDebug](../android/view/ViewDebug.md))`()` <br /> |
+| [ViewDebug](ViewDebug.md))`()` <br /> |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dumpCapturedView](../android/view/ViewDebug.md))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `view:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Dump view info for id based instrument test generation (and possibly further data analysis). |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startHierarchyTracing](../android/view/ViewDebug.md))`(`prefix:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `view:` ` [View](../android/view/View.md)!`)` <br /> |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startRecyclerTracing](../android/view/ViewDebug.md))`(`prefix:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `view:` ` [View](../android/view/View.md)!`)` <br /> |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dumpCapturedView](ViewDebug.md))`(`tag:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `view:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Dump view info for id based instrument test generation (and possibly further data analysis). |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startHierarchyTracing](ViewDebug.md))`(`prefix:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `view:` ` [View](View.md)!`)` <br /> |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startRecyclerTracing](ViewDebug.md))`(`prefix:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `view:` ` [View](View.md)!`)` <br /> |
 | --- | --- |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [stopHierarchyTracing](../android/view/ViewDebug.md))`()` <br /> |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [stopRecyclerTracing](../android/view/ViewDebug.md))`()` <br /> |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [trace](../android/view/ViewDebug.md))`(`view:` ` [View](../android/view/View.md)!`, `type:` ` [ViewDebug.HierarchyTraceType](../android/view/ViewDebug.HierarchyTraceType.md)!`)` <br /> |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [stopHierarchyTracing](ViewDebug.md))`()` <br /> |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [stopRecyclerTracing](ViewDebug.md))`()` <br /> |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [trace](ViewDebug.md))`(`view:` ` [View](View.md)!`, `type:` ` [ViewDebug.HierarchyTraceType](../android/view/ViewDebug.HierarchyTraceType.md)!`)` <br /> |
 | --- | --- |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [trace](../android/view/ViewDebug.md))`(`view:` ` [View](../android/view/View.md)!`, `type:` ` [ViewDebug.RecyclerTraceType](../android/view/ViewDebug.RecyclerTraceType.md)!`, `vararg` `parameters:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [trace](ViewDebug.md))`(`view:` ` [View](View.md)!`, `type:` ` [ViewDebug.RecyclerTraceType](../android/view/ViewDebug.RecyclerTraceType.md)!`, `vararg` `parameters:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 ## Constants
 

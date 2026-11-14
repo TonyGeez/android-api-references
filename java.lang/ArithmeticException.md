@@ -9,12 +9,12 @@ open class ArithmeticException : RuntimeException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
-| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) ||
+| | ↳ | [java.lang.Exception](Exception.md) |||
+| | | ↳ | [java.lang.RuntimeException](RuntimeException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.ArithmeticException](../java/lang/ArithmeticException.md) |
+| | | | ↳ | [java.lang.ArithmeticException](ArithmeticException.md) |
 
-Thrown when an exceptional arithmetic condition has occurred. For example, an integer "divide by zero" throws an instance of this class. `ArithmeticException` objects may be constructed by the virtual machine as if [suppression were disabled and/or the](../java/lang/Throwable.md)).
+Thrown when an exceptional arithmetic condition has occurred. For example, an integer "divide by zero" throws an instance of this class. `ArithmeticException` objects may be constructed by the virtual machine as if [suppression were disabled and/or the](Throwable.md)).
 
 ## Summary
 

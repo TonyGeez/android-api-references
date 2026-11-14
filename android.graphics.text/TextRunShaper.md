@@ -4,7 +4,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # TextRunShaper
 
-Kotlin| [Java](../android/graphics/text/TextRunShaper.md) 
+Kotlin| [Java](TextRunShaper.md) 
 | --- | --- |
 
 ```
@@ -13,16 +13,16 @@ open class TextRunShaper
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.graphics.text.TextRunShaper](../android/graphics/text/TextRunShaper.md) |
+| ↳ | [android.graphics.text.TextRunShaper](TextRunShaper.md) |
 
-Provides conversion from a text into glyph array. Text shaping is a preprocess for drawing text into canvas with glyphs. The glyph is a most primitive unit of the text drawing, consist of glyph identifier in the font file and its position and style. You can draw the shape result to Canvas by calling Canvas#drawGlyphs. For most of the use cases, [android.text.TextShaper](../android/text/TextShaper.md) will provide text shaping functionalities needed. [TextRunShaper](../android/graphics/text/TextRunShaper.md) is a lower level API that is used by [android.text.TextShaper](../android/text/TextShaper.md).
+Provides conversion from a text into glyph array. Text shaping is a preprocess for drawing text into canvas with glyphs. The glyph is a most primitive unit of the text drawing, consist of glyph identifier in the font file and its position and style. You can draw the shape result to Canvas by calling Canvas#drawGlyphs. For most of the use cases, [android.text.TextShaper](../android.text/TextShaper.md) will provide text shaping functionalities needed. [TextRunShaper](TextRunShaper.md) is a lower level API that is used by [android.text.TextShaper](../android.text/TextShaper.md).
 
 ## Summary
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [PositionedGlyphs](../android/graphics/text/PositionedGlyphs.md) | [shapeTextRun](../android/graphics/text/TextRunShaper.md))`(`text:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `contextStart:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `contextCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `xOffset:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `yOffset:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `isRtl:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `paint:` ` [Paint](../android/graphics/Paint.md)`)` Shape non-styled text. |
-| openstatic [PositionedGlyphs](../android/graphics/text/PositionedGlyphs.md) | [shapeTextRun](../android/graphics/text/TextRunShaper.md))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `contextStart:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `contextCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `xOffset:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `yOffset:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `isRtl:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `paint:` ` [Paint](../android/graphics/Paint.md)`)` Shape non-styled text. |
+| openstatic [PositionedGlyphs](PositionedGlyphs.md) | [shapeTextRun](TextRunShaper.md))`(`text:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `contextStart:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `contextCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `xOffset:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `yOffset:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `isRtl:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `paint:` ` [Paint](../android.graphics/Paint.md)`)` Shape non-styled text. |
+| openstatic [PositionedGlyphs](PositionedGlyphs.md) | [shapeTextRun](TextRunShaper.md))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `contextStart:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `contextCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `xOffset:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `yOffset:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `isRtl:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `paint:` ` [Paint](../android.graphics/Paint.md)`)` Shape non-styled text. |
 
 ## Public methods
 
@@ -58,12 +58,12 @@ Shape non-styled text. This function shapes the text of the given range under th
 | --- | --- |
 | `yOffset` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):an additional amount of y offset of the result glyphs. |
 | `isRtl` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):true if this text is shaped for RTL direction, false otherwise. |
-| `paint` | [Paint](../android/graphics/Paint.md):a paint used for shaping text. This value cannot be`null`. |
+| `paint` | [Paint](../android.graphics/Paint.md):a paint used for shaping text. This value cannot be`null`. |
 | --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|---------------------------------------------|
-| [PositionedGlyphs](../android/graphics/text/PositionedGlyphs.md) | a shape result. This value cannot be`null`. |
+| [PositionedGlyphs](PositionedGlyphs.md) | a shape result. This value cannot be`null`. |
 
 ### shapeTextRun
 
@@ -97,9 +97,9 @@ Shape non-styled text. This function shapes the text of the given range under th
 | --- | --- |
 | `yOffset` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):an additional amount of y offset of the result glyphs. |
 | `isRtl` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):true if this text is shaped for RTL direction, false otherwise. |
-| `paint` | [Paint](../android/graphics/Paint.md):a paint used for shaping text. This value cannot be`null`. |
+| `paint` | [Paint](../android.graphics/Paint.md):a paint used for shaping text. This value cannot be`null`. |
 | --- | --- |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|--------------------------------------------|
-| [PositionedGlyphs](../android/graphics/text/PositionedGlyphs.md) | a shape result This value cannot be`null`. |
+| [PositionedGlyphs](PositionedGlyphs.md) | a shape result This value cannot be`null`. |

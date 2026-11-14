@@ -11,10 +11,10 @@ open class UnsatisfiedLinkError : LinkageError
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Error](../java/lang/Error.md) |||
-| | | ↳ | [java.lang.LinkageError](../java/lang/LinkageError.md) ||
+| | ↳ | [java.lang.Error](Error.md) |||
+| | | ↳ | [java.lang.LinkageError](LinkageError.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.UnsatisfiedLinkError](../java/lang/UnsatisfiedLinkError.md) |
+| | | | ↳ | [java.lang.UnsatisfiedLinkError](UnsatisfiedLinkError.md) |
 
 Thrown if the Java Virtual Machine cannot find an appropriate native-language definition of a method declared`native`.
 
@@ -22,8 +22,8 @@ Thrown if the Java Virtual Machine cannot find an appropriate native-language de
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [UnsatisfiedLinkError](../java/lang/UnsatisfiedLinkError.md))`()` Constructs an`UnsatisfiedLinkError`with no detail message. |
-| [UnsatisfiedLinkError](../java/lang/UnsatisfiedLinkError.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an`UnsatisfiedLinkError`with the specified detail message. |
+| [UnsatisfiedLinkError](UnsatisfiedLinkError.md))`()` Constructs an`UnsatisfiedLinkError`with no detail message. |
+| [UnsatisfiedLinkError](UnsatisfiedLinkError.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an`UnsatisfiedLinkError`with the specified detail message. |
 
 ## Public constructors
 

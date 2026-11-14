@@ -11,11 +11,11 @@ open class AlreadyBoundException : IllegalStateException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
-| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) |||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) ||||
+| | | ↳ | [java.lang.RuntimeException](../java.lang/RuntimeException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.IllegalStateException](../java/lang/IllegalStateException.md) ||
-| | | | | ↳ | [java.nio.channels.AlreadyBoundException](../java/nio/channels/AlreadyBoundException.md) |
+| | | | ↳ | [java.lang.IllegalStateException](../java.lang/IllegalStateException.md) ||
+| | | | | ↳ | [java.nio.channels.AlreadyBoundException](AlreadyBoundException.md) |
 
 Unchecked exception thrown when an attempt is made to bind the socket a network oriented channel that is already bound.
 
@@ -23,7 +23,7 @@ Unchecked exception thrown when an attempt is made to bind the socket a network 
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [AlreadyBoundException](../java/nio/channels/AlreadyBoundException.md))`()` Constructs an instance of this class. |
+| [AlreadyBoundException](AlreadyBoundException.md))`()` Constructs an instance of this class. |
 
 ## Public constructors
 

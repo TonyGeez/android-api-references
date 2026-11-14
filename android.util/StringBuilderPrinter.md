@@ -2,7 +2,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # StringBuilderPrinter
 
-Kotlin | [Java](../android/util/StringBuilderPrinter.md)
+Kotlin | [Java](StringBuilderPrinter.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ open class StringBuilderPrinter : Printer
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.util.StringBuilderPrinter](../android/util/StringBuilderPrinter.md) |
+| ↳ | [android.util.StringBuilderPrinter](StringBuilderPrinter.md) |
 
 Implementation of a `https://developer.android.com/reference/kotlin/android/util/Printer` that sends its output to a `https://developer.android.com/reference/kotlin/java/lang/StringBuilder.html#`.
 
@@ -39,7 +39,7 @@ Create a new Printer that sends to a StringBuilder object.
 
 | Parameters ||
 |---|---|
-| `builder` | [StringBuilder](../java/lang/StringBuilder.md)!: The StringBuilder where you would like output to go. |
+| `builder` | [StringBuilder](../java.lang/StringBuilder.md)!: The StringBuilder where you would like output to go. |
 
 ## Public methods
 

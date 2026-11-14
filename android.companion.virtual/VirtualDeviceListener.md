@@ -46,7 +46,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 open fun onVirtualDeviceCreated(deviceId: Int): Unit
 ```
 
-Called whenever a new virtual device has been added to the system. Use [VirtualDeviceManager.getVirtualDevice(int)](../android/companion/virtual/VirtualDeviceManager.md))to get more information about the device.
+Called whenever a new virtual device has been added to the system. Use [VirtualDeviceManager.getVirtualDevice(int)](VirtualDeviceManager.md))to get more information about the device.
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------|

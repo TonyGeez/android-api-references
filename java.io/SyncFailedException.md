@@ -11,10 +11,10 @@ open class SyncFailedException : IOException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
-| | | ↳ | [java.io.IOException](../java/io/IOException.md) ||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) |||
+| | | ↳ | [java.io.IOException](IOException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.io.SyncFailedException](../java/io/SyncFailedException.md) |
+| | | | ↳ | [java.io.SyncFailedException](SyncFailedException.md) |
 
 Signals that a sync operation has failed.
 
@@ -22,7 +22,7 @@ Signals that a sync operation has failed.
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SyncFailedException](../java/io/SyncFailedException.md))`(`desc:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an SyncFailedException with a detail message. |
+| [SyncFailedException](SyncFailedException.md))`(`desc:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an SyncFailedException with a detail message. |
 
 ## Public constructors
 

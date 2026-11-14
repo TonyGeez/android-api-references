@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # MemoryFile
 
-Kotlin| [Java](../android/os/MemoryFile.md) 
+Kotlin| [Java](MemoryFile.md) 
 | --- | --- |
 
 ```
@@ -13,28 +13,28 @@ open class MemoryFile
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.os.MemoryFile](../android/os/MemoryFile.md) |
+| ↳ | [android.os.MemoryFile](MemoryFile.md) |
 
-MemoryFile is a wrapper for [SharedMemory](../android/os/SharedMemory.md) which can optionally be set to purgeable. Applications should generally prefer to use [SharedMemory](../android/os/SharedMemory.md) which offers more flexible access \& control over the shared memory region than MemoryFile does. Purgeable files may have their contents reclaimed by the kernel in low memory conditions (only if allowPurging is set to true). After a file is purged, attempts to read or write the file will cause an IOException to be thrown.
+MemoryFile is a wrapper for [SharedMemory](SharedMemory.md) which can optionally be set to purgeable. Applications should generally prefer to use [SharedMemory](SharedMemory.md) which offers more flexible access \& control over the shared memory region than MemoryFile does. Purgeable files may have their contents reclaimed by the kernel in low memory conditions (only if allowPurging is set to true). After a file is purged, attempts to read or write the file will cause an IOException to be thrown.
 
 ## Summary
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [MemoryFile](../android/os/MemoryFile.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Allocates a new ashmem region. |
+| [MemoryFile](MemoryFile.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Allocates a new ashmem region. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [allowPurging](../android/os/MemoryFile.md))`(`allowPurging:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Enables or disables purging of the memory file. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../android/os/MemoryFile.md))`()` Closes the memory file. |
-| open [InputStream](../java/io/InputStream.md)! | [getInputStream](../android/os/MemoryFile.md))`()` Creates a new InputStream for reading from the memory file. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [allowPurging](MemoryFile.md))`(`allowPurging:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Enables or disables purging of the memory file. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](MemoryFile.md))`()` Closes the memory file. |
+| open [InputStream](../java.io/InputStream.md)! | [getInputStream](MemoryFile.md))`()` Creates a new InputStream for reading from the memory file. |
 | --- | --- |
-| open [OutputStream](../java/io/OutputStream.md)! | [getOutputStream](../android/os/MemoryFile.md))`()` Creates a new OutputStream for writing to the memory file. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPurgingAllowed](../android/os/MemoryFile.md))`()` Is memory file purging enabled? |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [length](../android/os/MemoryFile.md))`()` Returns the length of the memory file. |
+| open [OutputStream](../java.io/OutputStream.md)! | [getOutputStream](MemoryFile.md))`()` Creates a new OutputStream for writing to the memory file. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPurgingAllowed](MemoryFile.md))`()` Is memory file purging enabled? |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [length](MemoryFile.md))`()` Returns the length of the memory file. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [readBytes](../android/os/MemoryFile.md))`(`buffer:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `srcOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `destOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Reads bytes from the memory file. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeBytes](../android/os/MemoryFile.md))`(`buffer:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `srcOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `destOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Write bytes to the memory file. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [readBytes](MemoryFile.md))`(`buffer:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `srcOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `destOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Reads bytes from the memory file. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeBytes](MemoryFile.md))`(`buffer:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `srcOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `destOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Write bytes to the memory file. |
 
 ## Public constructors
 
@@ -70,7 +70,7 @@ Deprecated in [API level 27](https://developer.android.com/guide/topics/manifest
 open fun allowPurging(allowPurging: Boolean): Boolean
 ```
 
-**Deprecated:** *Purgable is considered generally fragile and hard to use safely. Applications are recommend to instead use [android.content.ComponentCallbacks2#onTrimMemory(int)](../android/content/ComponentCallbacks2.md))to react to memory events and release shared memory regions as appropriate.*
+**Deprecated:** *Purgable is considered generally fragile and hard to use safely. Applications are recommend to instead use [android.content.ComponentCallbacks2#onTrimMemory(int)](../android.content/ComponentCallbacks2.md))to react to memory events and release shared memory regions as appropriate.*
 
 Enables or disables purging of the memory file.
 
@@ -104,7 +104,7 @@ Creates a new InputStream for reading from the memory file.
 
 | Return ||
 |------------------------------------------------------------------------------------------|-------------|
-| [InputStream](../java/io/InputStream.md)! | InputStream |
+| [InputStream](../java.io/InputStream.md)! | InputStream |
 
 ### getOutputStream
 
@@ -118,7 +118,7 @@ Creates a new OutputStream for writing to the memory file.
 
 | Return ||
 |--------------------------------------------------------------------------------------------|--------------|
-| [OutputStream](../java/io/OutputStream.md)! | OutputStream |
+| [OutputStream](../java.io/OutputStream.md)! | OutputStream |
 
 ### isPurgingAllowed
 
@@ -129,7 +129,7 @@ Deprecated in [API level 27](https://developer.android.com/guide/topics/manifest
 open fun isPurgingAllowed(): Boolean
 ```
 
-**Deprecated:** *Purgable is considered generally fragile and hard to use safely. Applications are recommend to instead use [android.content.ComponentCallbacks2#onTrimMemory(int)](../android/content/ComponentCallbacks2.md))to react to memory events and release shared memory regions as appropriate.*
+**Deprecated:** *Purgable is considered generally fragile and hard to use safely. Applications are recommend to instead use [android.content.ComponentCallbacks2#onTrimMemory(int)](../android.content/ComponentCallbacks2.md))to react to memory events and release shared memory regions as appropriate.*
 
 Is memory file purging enabled?
 

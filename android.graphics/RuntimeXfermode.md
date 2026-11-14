@@ -4,7 +4,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 
 # RuntimeXfermode
 
-Kotlin| [Java](../android/graphics/RuntimeXfermode.md) 
+Kotlin| [Java](RuntimeXfermode.md) 
 | --- | --- |
 
 ```
@@ -13,10 +13,10 @@ open class RuntimeXfermode : Xfermode
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.graphics.Xfermode](../android/graphics/Xfermode.md) ||
-| | ↳ | [android.graphics.RuntimeXfermode](../android/graphics/RuntimeXfermode.md) |
+| ↳ | [android.graphics.Xfermode](Xfermode.md) ||
+| | ↳ | [android.graphics.RuntimeXfermode](RuntimeXfermode.md) |
 
-A [RuntimeXfermode](../android/graphics/RuntimeXfermode.md) calculates a per-pixel color based on the output of a user \* defined Android Graphics Shading Language (AGSL) function.
+A [RuntimeXfermode](RuntimeXfermode.md) calculates a per-pixel color based on the output of a user \* defined Android Graphics Shading Language (AGSL) function.
 
 This AGSL function takes in two input colors to be operated on. These colors are in sRGB \* and the output is also interpreted as sRGB. The AGSL function signature expects a single input \* of color (packed as a half4 or float4 or vec4). 
 
@@ -29,31 +29,31 @@ vec4 main(half4 src, half4 dst);
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [RuntimeXfermode](../android/graphics/RuntimeXfermode.md))`(`agsl:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Creates a new RuntimeBlender. |
+| [RuntimeXfermode](RuntimeXfermode.md))`(`agsl:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Creates a new RuntimeBlender. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setColorUniform](../android/graphics/RuntimeXfermode.md))`(`uniformName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `color:` ` [Color](../android/graphics/Color.md)`)` Sets the uniform color value corresponding to this color filter. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setColorUniform](../android/graphics/RuntimeXfermode.md))`(`uniformName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `color:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the uniform color value corresponding to this color filter. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setColorUniform](../android/graphics/RuntimeXfermode.md))`(`uniformName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `color:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the uniform color value corresponding to this color filter. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setColorUniform](RuntimeXfermode.md))`(`uniformName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `color:` ` [Color](Color.md)`)` Sets the uniform color value corresponding to this color filter. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setColorUniform](RuntimeXfermode.md))`(`uniformName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `color:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the uniform color value corresponding to this color filter. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setColorUniform](RuntimeXfermode.md))`(`uniformName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `color:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Sets the uniform color value corresponding to this color filter. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFloatUniform](../android/graphics/RuntimeXfermode.md))`(`uniformName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the uniform value corresponding to this color filter. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFloatUniform](../android/graphics/RuntimeXfermode.md))`(`uniformName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `value1:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `value2:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the uniform value corresponding to this color filter. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFloatUniform](../android/graphics/RuntimeXfermode.md))`(`uniformName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `value1:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `value2:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `value3:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the uniform value corresponding to this color filter. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFloatUniform](RuntimeXfermode.md))`(`uniformName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `value:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the uniform value corresponding to this color filter. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFloatUniform](RuntimeXfermode.md))`(`uniformName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `value1:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `value2:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the uniform value corresponding to this color filter. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFloatUniform](RuntimeXfermode.md))`(`uniformName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `value1:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `value2:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `value3:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the uniform value corresponding to this color filter. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFloatUniform](../android/graphics/RuntimeXfermode.md))`(`uniformName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `value1:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `value2:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `value3:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `value4:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the uniform value corresponding to this color filter. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFloatUniform](../android/graphics/RuntimeXfermode.md))`(`uniformName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `values:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)`)` Sets the uniform value corresponding to this color filter. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInputColorFilter](../android/graphics/RuntimeXfermode.md))`(`filterName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `colorFilter:` ` [ColorFilter](../android/graphics/ColorFilter.md)`)` Assigns the uniform color filter to the provided color filter parameter. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFloatUniform](RuntimeXfermode.md))`(`uniformName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `value1:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `value2:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `value3:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `value4:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the uniform value corresponding to this color filter. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFloatUniform](RuntimeXfermode.md))`(`uniformName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `values:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)`)` Sets the uniform value corresponding to this color filter. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInputColorFilter](RuntimeXfermode.md))`(`filterName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `colorFilter:` ` [ColorFilter](ColorFilter.md)`)` Assigns the uniform color filter to the provided color filter parameter. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInputShader](../android/graphics/RuntimeXfermode.md))`(`shaderName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `shader:` ` [Shader](../android/graphics/Shader.md)`)` Assigns the uniform shader to the provided shader parameter. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInputXfermode](../android/graphics/RuntimeXfermode.md))`(`xfermodeName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `xfermode:` ` [RuntimeXfermode](../android/graphics/RuntimeXfermode.md)`)` Assigns the uniform xfermode to the provided xfermode parameter. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setIntUniform](../android/graphics/RuntimeXfermode.md))`(`uniformName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the uniform value corresponding to this color filter. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInputShader](RuntimeXfermode.md))`(`shaderName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `shader:` ` [Shader](Shader.md)`)` Assigns the uniform shader to the provided shader parameter. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInputXfermode](RuntimeXfermode.md))`(`xfermodeName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `xfermode:` ` [RuntimeXfermode](RuntimeXfermode.md)`)` Assigns the uniform xfermode to the provided xfermode parameter. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setIntUniform](RuntimeXfermode.md))`(`uniformName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the uniform value corresponding to this color filter. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setIntUniform](../android/graphics/RuntimeXfermode.md))`(`uniformName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `value1:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value2:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the uniform value corresponding to this color filter. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setIntUniform](../android/graphics/RuntimeXfermode.md))`(`uniformName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `value1:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value2:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value3:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the uniform value corresponding to this color filter. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setIntUniform](../android/graphics/RuntimeXfermode.md))`(`uniformName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `value1:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value2:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value3:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value4:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the uniform value corresponding to this color filter. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setIntUniform](RuntimeXfermode.md))`(`uniformName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `value1:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value2:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the uniform value corresponding to this color filter. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setIntUniform](RuntimeXfermode.md))`(`uniformName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `value1:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value2:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value3:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the uniform value corresponding to this color filter. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setIntUniform](RuntimeXfermode.md))`(`uniformName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `value1:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value2:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value3:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value4:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the uniform value corresponding to this color filter. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setIntUniform](../android/graphics/RuntimeXfermode.md))`(`uniformName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `values:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)`)` Sets the uniform value corresponding to this color filter. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setIntUniform](RuntimeXfermode.md))`(`uniformName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `values:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)`)` Sets the uniform value corresponding to this color filter. |
 
 ## Public constructors
 
@@ -89,7 +89,7 @@ Sets the uniform color value corresponding to this color filter. If the effect d
 | Parameters ||
 |---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `uniformName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):name matching the color uniform declared in the AGSL program This value cannot be`null`. |
-| `color` | [Color](../android/graphics/Color.md):the provided sRGB color This value cannot be`null`. |
+| `color` | [Color](Color.md):the provided sRGB color This value cannot be`null`. |
 
 ### setColorUniform
 
@@ -235,7 +235,7 @@ Assigns the uniform color filter to the provided color filter parameter. If the 
 | Parameters ||
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `filterName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):name matching the uniform declared in the AGSL program This value cannot be`null`. |
-| `colorFilter` | [ColorFilter](../android/graphics/ColorFilter.md):filter passed into the AGSL program for sampling This value cannot be`null`. |
+| `colorFilter` | [ColorFilter](ColorFilter.md):filter passed into the AGSL program for sampling This value cannot be`null`. |
 
 ### setInputShader
 
@@ -253,7 +253,7 @@ Assigns the uniform shader to the provided shader parameter. If the shader progr
 | Parameters ||
 |--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `shaderName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):name matching the uniform declared in the AGSL program This value cannot be`null`. |
-| `shader` | [Shader](../android/graphics/Shader.md):shader passed into the AGSL program for sampling This value cannot be`null`. |
+| `shader` | [Shader](Shader.md):shader passed into the AGSL program for sampling This value cannot be`null`. |
 
 ### setInputXfermode
 
@@ -271,7 +271,7 @@ Assigns the uniform xfermode to the provided xfermode parameter. If the shader p
 | Parameters ||
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `xfermodeName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):name matching the uniform declared in the AGSL program This value cannot be`null`. |
-| `xfermode` | [RuntimeXfermode](../android/graphics/RuntimeXfermode.md):xfermode function passed into the AGSL program for sampling This value cannot be`null`. |
+| `xfermode` | [RuntimeXfermode](RuntimeXfermode.md):xfermode function passed into the AGSL program for sampling This value cannot be`null`. |
 
 ### setIntUniform
 

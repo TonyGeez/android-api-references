@@ -10,7 +10,7 @@ open class KeyFactory
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.KeyFactory](../java/security/KeyFactory.md) |
+| ↳ | [java.security.KeyFactory](KeyFactory.md) |
 
 Key factories are used to convert*keys* (opaque cryptographic keys of type`Key`) into*key specifications*(transparent representations of the underlying key material), and vice versa.
 
@@ -48,21 +48,21 @@ Android provides the following`KeyFactory`algorithms:
 
 | Protected constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [KeyFactory](../java/security/KeyFactory.md))`(`keyFacSpi:` ` [KeyFactorySpi](../java/security/KeyFactorySpi.md)!`, `provider:` ` [Provider](../java/security/Provider.md)!`, `algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a KeyFactory object. |
+| [KeyFactory](KeyFactory.md))`(`keyFacSpi:` ` [KeyFactorySpi](KeyFactorySpi.md)!`, `provider:` ` [Provider](Provider.md)!`, `algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a KeyFactory object. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [PrivateKey](../java/security/PrivateKey.md)! | [generatePrivate](../java/security/KeyFactory.md))`(`keySpec:` ` [KeySpec](../java/security/spec/KeySpec.md)!`)` Generates a private key object from the provided key specification (key material). |
-| [PublicKey](../java/security/PublicKey.md)! | [generatePublic](../java/security/KeyFactory.md))`(`keySpec:` ` [KeySpec](../java/security/spec/KeySpec.md)!`)` Generates a public key object from the provided key specification (key material). |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAlgorithm](../java/security/KeyFactory.md))`()` Gets the name of the algorithm associated with this`KeyFactory`. |
+| [PrivateKey](PrivateKey.md)! | [generatePrivate](KeyFactory.md))`(`keySpec:` ` [KeySpec](../java.security.spec/KeySpec.md)!`)` Generates a private key object from the provided key specification (key material). |
+| [PublicKey](PublicKey.md)! | [generatePublic](KeyFactory.md))`(`keySpec:` ` [KeySpec](../java.security.spec/KeySpec.md)!`)` Generates a public key object from the provided key specification (key material). |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAlgorithm](KeyFactory.md))`()` Gets the name of the algorithm associated with this`KeyFactory`. |
 | --- | --- |
-| openstatic [KeyFactory](../java/security/KeyFactory.md)! | [getInstance](../java/security/KeyFactory.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a KeyFactory object that converts public/private keys of the specified algorithm. |
-| openstatic [KeyFactory](../java/security/KeyFactory.md)! | [getInstance](../java/security/KeyFactory.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a KeyFactory object that converts public/private keys of the specified algorithm. |
-| openstatic [KeyFactory](../java/security/KeyFactory.md)! | [getInstance](../java/security/KeyFactory.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [Provider](../java/security/Provider.md)!`)` Returns a KeyFactory object that converts public/private keys of the specified algorithm. |
+| openstatic [KeyFactory](KeyFactory.md)! | [getInstance](KeyFactory.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a KeyFactory object that converts public/private keys of the specified algorithm. |
+| openstatic [KeyFactory](KeyFactory.md)! | [getInstance](KeyFactory.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns a KeyFactory object that converts public/private keys of the specified algorithm. |
+| openstatic [KeyFactory](KeyFactory.md)! | [getInstance](KeyFactory.md))`(`algorithm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `provider:` ` [Provider](Provider.md)!`)` Returns a KeyFactory object that converts public/private keys of the specified algorithm. |
 | --- | --- |
-| T | [getKeySpec](../java/security/KeyFactory.md))`(`key:` ` [Key](../java/security/Key.md)!`, `keySpec:` ` [Class](../java/lang/Class.md)<T>!`)` Returns a specification (key material) of the given key object. |
-| [Provider](../java/security/Provider.md)! | [getProvider](../java/security/KeyFactory.md))`()` Returns the provider of this key factory object. |
-| [Key](../java/security/Key.md)! | [translateKey](../java/security/KeyFactory.md))`(`key:` ` [Key](../java/security/Key.md)!`)` Translates a key object, whose provider may be unknown or potentially untrusted, into a corresponding key object of this key factory. |
+| T | [getKeySpec](KeyFactory.md))`(`key:` ` [Key](Key.md)!`, `keySpec:` ` [Class](../java.lang/Class.md)<T>!`)` Returns a specification (key material) of the given key object. |
+| [Provider](Provider.md)! | [getProvider](KeyFactory.md))`()` Returns the provider of this key factory object. |
+| [Key](Key.md)! | [translateKey](KeyFactory.md))`(`key:` ` [Key](Key.md)!`)` Translates a key object, whose provider may be unknown or potentially untrusted, into a corresponding key object of this key factory. |
 | --- | --- |
 
 ## Protected constructors
@@ -82,8 +82,8 @@ Creates a KeyFactory object.
 
 | Parameters ||
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| `keyFacSpi` | [KeyFactorySpi](../java/security/KeyFactorySpi.md)!:the delegate |
-| `provider` | [Provider](../java/security/Provider.md)!:the provider |
+| `keyFacSpi` | [KeyFactorySpi](KeyFactorySpi.md)!:the delegate |
+| `provider` | [Provider](Provider.md)!:the provider |
 | `algorithm` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the name of the algorithm to associate with this`KeyFactory` |
 | --- | --- |
 
@@ -101,11 +101,11 @@ Generates a private key object from the provided key specification (key material
 
 | Parameters ||
 |-----------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| `keySpec` | [KeySpec](../java/security/spec/KeySpec.md)!:the specification (key material) of the private key. |
+| `keySpec` | [KeySpec](../java.security.spec/KeySpec.md)!:the specification (key material) of the private key. |
 
 | Return ||
 |----------------------------------------------------------------------------------------|------------------|
-| [PrivateKey](../java/security/PrivateKey.md)! | the private key. |
+| [PrivateKey](PrivateKey.md)! | the private key. |
 
 | Exceptions ||
 |----------------------------------------------|------------------------------------------------------------------------------------------------|
@@ -123,11 +123,11 @@ Generates a public key object from the provided key specification (key material)
 
 | Parameters ||
 |-----------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| `keySpec` | [KeySpec](../java/security/spec/KeySpec.md)!:the specification (key material) of the public key. |
+| `keySpec` | [KeySpec](../java.security.spec/KeySpec.md)!:the specification (key material) of the public key. |
 
 | Return ||
 |--------------------------------------------------------------------------------------|-----------------|
-| [PublicKey](../java/security/PublicKey.md)! | the public key. |
+| [PublicKey](PublicKey.md)! | the public key. |
 
 | Exceptions ||
 |----------------------------------------------|-----------------------------------------------------------------------------------------------|
@@ -159,7 +159,7 @@ Returns a KeyFactory object that converts public/private keys of the specified a
 
 This method traverses the list of registered security Providers, starting with the most preferred Provider. A new KeyFactory object encapsulating the KeyFactorySpi implementation from the first Provider that supports the specified algorithm is returned.
 
-Note that the list of registered providers may be retrieved via the [Security.getProviders()](../java/security/Security.md))method.
+Note that the list of registered providers may be retrieved via the [Security.getProviders()](Security.md))method.
 
 | Parameters ||
 |-------------|----------------------------------------------------------------------------------------------------------------------------|
@@ -167,7 +167,7 @@ Note that the list of registered providers may be retrieved via the [Security.ge
 
 | Return ||
 |-----------------------------------------------------------------------------------------|---------------------------|
-| [KeyFactory](../java/security/KeyFactory.md)! | the new`KeyFactory`object |
+| [KeyFactory](KeyFactory.md)! | the new`KeyFactory`object |
 
 | Exceptions ||
 |------------------------------------------|------------------------------------------------------------------------------------|
@@ -176,7 +176,7 @@ Note that the list of registered providers may be retrieved via the [Security.ge
 
 **See Also**
 
-- [java.security.Provider](../java/security/Provider.md) 
+- [java.security.Provider](Provider.md) 
 
 ### getInstance
 
@@ -193,7 +193,7 @@ Returns a KeyFactory object that converts public/private keys of the specified a
 
 A new KeyFactory object encapsulating the KeyFactorySpi implementation from the specified provider is returned. The specified provider must be registered in the security provider list.
 
-Note that the list of registered providers may be retrieved via the [Security.getProviders()](../java/security/Security.md))method.
+Note that the list of registered providers may be retrieved via the [Security.getProviders()](Security.md))method.
 
 | Parameters ||
 |-------------|----------------------------------------------------------------------------------------------------------------------------|
@@ -202,7 +202,7 @@ Note that the list of registered providers may be retrieved via the [Security.ge
 
 | Return ||
 |-----------------------------------------------------------------------------------------|---------------------------|
-| [KeyFactory](../java/security/KeyFactory.md)! | the new`KeyFactory`object |
+| [KeyFactory](KeyFactory.md)! | the new`KeyFactory`object |
 
 | Exceptions ||
 |------------------------------------------|------------------------------------------------------------------------------------------------------------|
@@ -214,7 +214,7 @@ Note that the list of registered providers may be retrieved via the [Security.ge
 
 **See Also**
 
-- [java.security.Provider](../java/security/Provider.md) 
+- [java.security.Provider](Provider.md) 
 
 ### getInstance
 
@@ -234,11 +234,11 @@ A new KeyFactory object encapsulating the KeyFactorySpi implementation from the 
 | Parameters ||
 |-------------|----------------------------------------------------------------------------------------------------------------------------|
 | `algorithm` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the name of the requested key algorithm. |
-| `provider` | [Provider](../java/security/Provider.md)!:the provider. |
+| `provider` | [Provider](Provider.md)!:the provider. |
 
 | Return ||
 |-----------------------------------------------------------------------------------------|---------------------------|
-| [KeyFactory](../java/security/KeyFactory.md)! | the new`KeyFactory`object |
+| [KeyFactory](KeyFactory.md)! | the new`KeyFactory`object |
 
 | Exceptions ||
 |------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
@@ -249,7 +249,7 @@ A new KeyFactory object encapsulating the KeyFactorySpi implementation from the 
 
 **See Also**
 
-- [java.security.Provider](../java/security/Provider.md) 
+- [java.security.Provider](Provider.md) 
 
 ### getKeySpec
 
@@ -267,8 +267,8 @@ Returns a specification (key material) of the given key object.`keySpec`identifi
 | Parameters ||
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `<T>` | the type of the key specification to be returned |
-| `key` | [Key](../java/security/Key.md)!:the key. |
-| `keySpec` | [Class](../java/lang/Class.md)\<T\>!:the specification class in which the key material should be returned. |
+| `key` | [Key](Key.md)!:the key. |
+| `keySpec` | [Class](../java.lang/Class.md)\<T\>!:the specification class in which the key material should be returned. |
 | --- | --- |
 
 | Return ||
@@ -291,7 +291,7 @@ Returns the provider of this key factory object.
 
 | Return ||
 |------------------------------------------------------------------------------------|-----------------------------------------|
-| [Provider](../java/security/Provider.md)! | the provider of this key factory object |
+| [Provider](Provider.md)! | the provider of this key factory object |
 
 ### translateKey
 
@@ -305,11 +305,11 @@ Translates a key object, whose provider may be unknown or potentially untrusted,
 
 | Parameters ||
 |-------|--------------------------------------------------------------------------------------------------------------------------|
-| `key` | [Key](../java/security/Key.md)!:the key whose provider is unknown or untrusted. |
+| `key` | [Key](Key.md)!:the key whose provider is unknown or untrusted. |
 
 | Return ||
 |--------------------------------------------------------------------------|---------------------|
-| [Key](../java/security/Key.md)! | the translated key. |
+| [Key](Key.md)! | the translated key. |
 
 | Exceptions ||
 |-------------------------------------|-----------------------------------------------------------|

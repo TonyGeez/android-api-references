@@ -4,7 +4,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # MessageFormat
 
-Kotlin| [Java](../android/icu/text/MessageFormat.md) 
+Kotlin| [Java](MessageFormat.md) 
 | --- | --- |
 
 ```
@@ -13,12 +13,12 @@ open class MessageFormat : UFormat
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [java.text.Format](../java/text/Format.md) |||
-| | ↳ | [android.icu.text.UFormat](../android/icu/text/UFormat.md) ||
-| | | ↳ | [android.icu.text.MessageFormat](../android/icu/text/MessageFormat.md) |
+| ↳ | [java.text.Format](../java.text/Format.md) |||
+| | ↳ | [android.icu.text.UFormat](UFormat.md) ||
+| | | ↳ | [android.icu.text.MessageFormat](MessageFormat.md) |
 | --- | --- | --- | --- |
 
-**\[icu enhancement\]** ICU's replacement for [java.text.MessageFormat](../java/text/MessageFormat.md). Methods, fields, and other functionality specific to ICU are labeled '**\[icu\]**'.
+**\[icu enhancement\]** ICU's replacement for [java.text.MessageFormat](../java.text/MessageFormat.md). Methods, fields, and other functionality specific to ICU are labeled '**\[icu\]**'.
 
 MessageFormat prepares strings for display to users, with optional arguments (variables/placeholders). The arguments can occur in any order, which is necessary for translation into languages with different grammars.
 
@@ -26,7 +26,7 @@ A MessageFormat is constructed from a*pattern*string with arguments in {curly br
 
 `MessageFormat`differs from the other`Format`classes in that you create a`MessageFormat`object with one of its constructors (not with a`getInstance`style factory method). Factory methods aren't necessary because`MessageFormat`itself doesn't implement locale-specific behavior. Any locale-specific behavior is defined by the pattern that you provide and the subformats used for inserted arguments.
 
-Arguments can be named (using identifiers) or numbered (using small ASCII-digit integers). Some of the API methods work only with argument numbers and throw an exception if the pattern has named arguments (see [usesNamedArguments()](../android/icu/text/MessageFormat.md))).
+Arguments can be named (using identifiers) or numbered (using small ASCII-digit integers). Some of the API methods work only with argument numbers and throw an exception if the pattern has named arguments (see [usesNamedArguments()](MessageFormat.md))).
 
 An argument might not specify any format type. In this case, a Number value is formatted with a default (for the locale) NumberFormat, a Date value is formatted with a default (for the locale) DateFormat, and for any other value its toString() value is used.
 
@@ -177,7 +177,7 @@ MessageFormat msgFmt = new MessageFormat(
   There are 3 files on "MyDisk".
   
 ```
-See [PluralFormat](../android/icu/text/PluralFormat.md) and [PluralRules](../android/icu/text/PluralRules.md) for details.
+See [PluralFormat](PluralFormat.md) and [PluralRules](PluralRules.md) for details.
 
 #### Synchronization
 
@@ -191,57 +191,57 @@ MessageFormats are not synchronized. It is recommended to create separate format
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [MessageFormat](../android/icu/text/MessageFormat.md))`(`pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a MessageFormat for the default`FORMAT`locale and the specified pattern. |
-| [MessageFormat](../android/icu/text/MessageFormat.md))`(`pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `locale:` ` [ULocale](../android/icu/util/ULocale.md)!`)` Constructs a MessageFormat for the specified locale and pattern. |
-| [MessageFormat](../android/icu/text/MessageFormat.md))`(`pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `locale:` ` [Locale](../java/util/Locale.md)!`)` Constructs a MessageFormat for the specified locale and pattern. |
+| [MessageFormat](MessageFormat.md))`(`pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a MessageFormat for the default`FORMAT`locale and the specified pattern. |
+| [MessageFormat](MessageFormat.md))`(`pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `locale:` ` [ULocale](../android.icu.util/ULocale.md)!`)` Constructs a MessageFormat for the specified locale and pattern. |
+| [MessageFormat](MessageFormat.md))`(`pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `locale:` ` [Locale](../java.util/Locale.md)!`)` Constructs a MessageFormat for the specified locale and pattern. |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [applyPattern](../android/icu/text/MessageFormat.md))`(`pttrn:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the pattern used by this message format. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [applyPattern](../android/icu/text/MessageFormat.md))`(`pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `aposMode:` ` [MessagePattern.ApostropheMode](../android/icu/text/MessagePattern.ApostropheMode.md)!`)` **\[icu\]**Sets the ApostropheMode and the pattern used by this message format. |
-| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [autoQuoteApostrophe](../android/icu/text/MessageFormat.md))`(`pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Converts an 'apostrophe-friendly' pattern into a standard pattern. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [applyPattern](MessageFormat.md))`(`pttrn:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the pattern used by this message format. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [applyPattern](MessageFormat.md))`(`pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `aposMode:` ` [MessagePattern.ApostropheMode](../android/icu/text/MessagePattern.ApostropheMode.md)!`)` **\[icu\]**Sets the ApostropheMode and the pattern used by this message format. |
+| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [autoQuoteApostrophe](MessageFormat.md))`(`pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Converts an 'apostrophe-friendly' pattern into a standard pattern. |
 | --- | --- |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](../android/icu/text/MessageFormat.md))`()` Creates and returns a copy of this object. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/icu/text/MessageFormat.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [StringBuffer](../java/lang/StringBuffer.md)! | [format](../android/icu/text/MessageFormat.md))`(`arguments:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `result:` ` [StringBuffer](../java/lang/StringBuffer.md)!`, `pos:` ` [FieldPosition](../java/text/FieldPosition.md)!`)` Formats a map or array of objects and appends the`MessageFormat`'s pattern, with format elements replaced by the formatted objects, to the provided`StringBuffer`. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](MessageFormat.md))`()` Creates and returns a copy of this object. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](MessageFormat.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [StringBuffer](../java.lang/StringBuffer.md)! | [format](MessageFormat.md))`(`arguments:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `result:` ` [StringBuffer](../java.lang/StringBuffer.md)!`, `pos:` ` [FieldPosition](../java.text/FieldPosition.md)!`)` Formats a map or array of objects and appends the`MessageFormat`'s pattern, with format elements replaced by the formatted objects, to the provided`StringBuffer`. |
 | --- | --- |
-| [StringBuffer](../java/lang/StringBuffer.md)! | [format](../android/icu/text/MessageFormat.md))`(`arguments:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`, `result:` ` [StringBuffer](../java/lang/StringBuffer.md)!`, `pos:` ` [FieldPosition](../java/text/FieldPosition.md)!`)` Formats an array of objects and appends the`MessageFormat`'s pattern, with arguments replaced by the formatted objects, to the provided`StringBuffer`. |
-| [StringBuffer](../java/lang/StringBuffer.md)! | [format](../android/icu/text/MessageFormat.md))`(`arguments:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`, `result:` ` [StringBuffer](../java/lang/StringBuffer.md)!`, `pos:` ` [FieldPosition](../java/text/FieldPosition.md)!`)` Formats a map of objects and appends the`MessageFormat`'s pattern, with arguments replaced by the formatted objects, to the provided`StringBuffer`. |
-| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](../android/icu/text/MessageFormat.md))`(`pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `vararg` `arguments:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Creates a MessageFormat with the given pattern and uses it to format the given arguments. |
+| [StringBuffer](../java.lang/StringBuffer.md)! | [format](MessageFormat.md))`(`arguments:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`, `result:` ` [StringBuffer](../java.lang/StringBuffer.md)!`, `pos:` ` [FieldPosition](../java.text/FieldPosition.md)!`)` Formats an array of objects and appends the`MessageFormat`'s pattern, with arguments replaced by the formatted objects, to the provided`StringBuffer`. |
+| [StringBuffer](../java.lang/StringBuffer.md)! | [format](MessageFormat.md))`(`arguments:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`, `result:` ` [StringBuffer](../java.lang/StringBuffer.md)!`, `pos:` ` [FieldPosition](../java.text/FieldPosition.md)!`)` Formats a map of objects and appends the`MessageFormat`'s pattern, with arguments replaced by the formatted objects, to the provided`StringBuffer`. |
+| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](MessageFormat.md))`(`pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `vararg` `arguments:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Creates a MessageFormat with the given pattern and uses it to format the given arguments. |
 | --- | --- |
-| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](../android/icu/text/MessageFormat.md))`(`pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `arguments:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`)` Creates a MessageFormat with the given pattern and uses it to format the given arguments. |
-| open [AttributedCharacterIterator](../java/text/AttributedCharacterIterator.md)! | [formatToCharacterIterator](../android/icu/text/MessageFormat.md))`(`arguments:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Formats an array of objects and inserts them into the`MessageFormat`'s pattern, producing an`AttributedCharacterIterator`. |
-| open [MessagePattern.ApostropheMode](../android/icu/text/MessagePattern.ApostropheMode.md)! | [getApostropheMode](../android/icu/text/MessageFormat.md))`()` **\[icu\]** |
+| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](MessageFormat.md))`(`pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `arguments:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`)` Creates a MessageFormat with the given pattern and uses it to format the given arguments. |
+| open [AttributedCharacterIterator](../java.text/AttributedCharacterIterator.md)! | [formatToCharacterIterator](MessageFormat.md))`(`arguments:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Formats an array of objects and inserts them into the`MessageFormat`'s pattern, producing an`AttributedCharacterIterator`. |
+| open [MessagePattern.ApostropheMode](../android/icu/text/MessagePattern.ApostropheMode.md)! | [getApostropheMode](MessageFormat.md))`()` **\[icu\]** |
 | --- | --- |
-| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getArgumentNames](../android/icu/text/MessageFormat.md))`()` **\[icu\]**Returns the top-level argument names. |
-| open [Format](../java/text/Format.md)! | [getFormatByArgumentName](../android/icu/text/MessageFormat.md))`(`argumentName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Returns the first top-level format associated with the given argument name. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Format](../java/text/Format.md)!\>! | [getFormats](../android/icu/text/MessageFormat.md))`()` Returns the Format objects used for the format elements in the previously set pattern string. |
+| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getArgumentNames](MessageFormat.md))`()` **\[icu\]**Returns the top-level argument names. |
+| open [Format](../java.text/Format.md)! | [getFormatByArgumentName](MessageFormat.md))`(`argumentName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Returns the first top-level format associated with the given argument name. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Format](../java.text/Format.md)!\>! | [getFormats](MessageFormat.md))`()` Returns the Format objects used for the format elements in the previously set pattern string. |
 | --- | --- |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Format](../java/text/Format.md)!\>! | [getFormatsByArgumentIndex](../android/icu/text/MessageFormat.md))`()` Returns the Format objects used for the values passed into`format`methods or returned from`parse`methods. |
-| open [Locale](../java/util/Locale.md)! | [getLocale](../android/icu/text/MessageFormat.md))`()` Returns the locale that's used when creating or comparing subformats. |
-| open [ULocale](../android/icu/util/ULocale.md)! | [getULocale](../android/icu/text/MessageFormat.md))`()` **\[icu\]**Returns the locale that's used when creating argument Format objects. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Format](../java.text/Format.md)!\>! | [getFormatsByArgumentIndex](MessageFormat.md))`()` Returns the Format objects used for the values passed into`format`methods or returned from`parse`methods. |
+| open [Locale](../java.util/Locale.md)! | [getLocale](MessageFormat.md))`()` Returns the locale that's used when creating or comparing subformats. |
+| open [ULocale](../android.icu.util/ULocale.md)! | [getULocale](MessageFormat.md))`()` **\[icu\]**Returns the locale that's used when creating argument Format objects. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/icu/text/MessageFormat.md))`()` Returns a hash code value for the object. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | [parse](../android/icu/text/MessageFormat.md))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Parses text from the beginning of the given string to produce an object array. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | [parse](../android/icu/text/MessageFormat.md))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `pos:` ` [ParsePosition](../java/text/ParsePosition.md)!`)` Parses the string. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](MessageFormat.md))`()` Returns a hash code value for the object. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | [parse](MessageFormat.md))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Parses text from the beginning of the given string to produce an object array. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | [parse](MessageFormat.md))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `pos:` ` [ParsePosition](../java.text/ParsePosition.md)!`)` Parses the string. |
 | --- | --- |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [parseObject](../android/icu/text/MessageFormat.md))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `pos:` ` [ParsePosition](../java/text/ParsePosition.md)!`)` Parses text from a string to produce an object array or Map. |
-| open [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | [parseToMap](../android/icu/text/MessageFormat.md))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Parses text from the beginning of the given string to produce a map from argument to values. |
-| open [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | [parseToMap](../android/icu/text/MessageFormat.md))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `pos:` ` [ParsePosition](../java/text/ParsePosition.md)!`)` **\[icu\]**Parses the string, returning the results in a Map. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [parseObject](MessageFormat.md))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `pos:` ` [ParsePosition](../java.text/ParsePosition.md)!`)` Parses text from a string to produce an object array or Map. |
+| open [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | [parseToMap](MessageFormat.md))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` **\[icu\]**Parses text from the beginning of the given string to produce a map from argument to values. |
+| open [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | [parseToMap](MessageFormat.md))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `pos:` ` [ParsePosition](../java.text/ParsePosition.md)!`)` **\[icu\]**Parses the string, returning the results in a Map. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFormat](../android/icu/text/MessageFormat.md))`(`formatElementIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `newFormat:` ` [Format](../java/text/Format.md)!`)` Sets the Format object to use for the format element with the given format element index within the previously set pattern string. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFormatByArgumentIndex](../android/icu/text/MessageFormat.md))`(`argumentIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `newFormat:` ` [Format](../java/text/Format.md)!`)` Sets the Format object to use for the format elements within the previously set pattern string that use the given argument index. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFormatByArgumentName](../android/icu/text/MessageFormat.md))`(`argumentName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `newFormat:` ` [Format](../java/text/Format.md)!`)` **\[icu\]**Sets the Format object to use for the format elements within the previously set pattern string that use the given argument name. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFormat](MessageFormat.md))`(`formatElementIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `newFormat:` ` [Format](../java.text/Format.md)!`)` Sets the Format object to use for the format element with the given format element index within the previously set pattern string. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFormatByArgumentIndex](MessageFormat.md))`(`argumentIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `newFormat:` ` [Format](../java.text/Format.md)!`)` Sets the Format object to use for the format elements within the previously set pattern string that use the given argument index. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFormatByArgumentName](MessageFormat.md))`(`argumentName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `newFormat:` ` [Format](../java.text/Format.md)!`)` **\[icu\]**Sets the Format object to use for the format elements within the previously set pattern string that use the given argument name. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFormats](../android/icu/text/MessageFormat.md))`(`newFormats:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Format](../java/text/Format.md)!>!`)` Sets the Format objects to use for the format elements in the previously set pattern string. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFormatsByArgumentIndex](../android/icu/text/MessageFormat.md))`(`newFormats:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Format](../java/text/Format.md)!>!`)` Sets the Format objects to use for the values passed into`format`methods or returned from`parse`methods. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFormatsByArgumentName](../android/icu/text/MessageFormat.md))`(`newFormats:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [Format](../java/text/Format.md)!>!`)` **\[icu\]** Sets the Format objects to use for the values passed into`format`methods or returned from`parse`methods. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFormats](MessageFormat.md))`(`newFormats:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Format](../java.text/Format.md)!>!`)` Sets the Format objects to use for the format elements in the previously set pattern string. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFormatsByArgumentIndex](MessageFormat.md))`(`newFormats:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Format](../java.text/Format.md)!>!`)` Sets the Format objects to use for the values passed into`format`methods or returned from`parse`methods. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFormatsByArgumentName](MessageFormat.md))`(`newFormats:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [Format](../java.text/Format.md)!>!`)` **\[icu\]** Sets the Format objects to use for the values passed into`format`methods or returned from`parse`methods. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLocale](../android/icu/text/MessageFormat.md))`(`locale:` ` [ULocale](../android/icu/util/ULocale.md)!`)` Sets the locale to be used for creating argument Format objects. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLocale](../android/icu/text/MessageFormat.md))`(`locale:` ` [Locale](../java/util/Locale.md)!`)` Sets the locale to be used for creating argument Format objects. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toPattern](../android/icu/text/MessageFormat.md))`()` Returns the applied pattern string. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLocale](MessageFormat.md))`(`locale:` ` [ULocale](../android.icu.util/ULocale.md)!`)` Sets the locale to be used for creating argument Format objects. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLocale](MessageFormat.md))`(`locale:` ` [Locale](../java.util/Locale.md)!`)` Sets the locale to be used for creating argument Format objects. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toPattern](MessageFormat.md))`()` Returns the applied pattern string. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [usesNamedArguments](../android/icu/text/MessageFormat.md))`()` **\[icu\]**Returns true if this MessageFormat uses named arguments, and false otherwise. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [usesNamedArguments](MessageFormat.md))`()` **\[icu\]**Returns true if this MessageFormat uses named arguments, and false otherwise. |
 
 ## Public constructors
 
@@ -282,7 +282,7 @@ Constructs a MessageFormat for the specified locale and pattern. Sets the locale
 | Parameters ||
 |-----------|------------------------------------------------------------------------------------------------------------------------------|
 | `pattern` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the pattern for this message format |
-| `locale` | [ULocale](../android/icu/util/ULocale.md)!:the locale for this message format |
+| `locale` | [ULocale](../android.icu.util/ULocale.md)!:the locale for this message format |
 
 | Exceptions ||
 |--------------------------------------|---------------------------|
@@ -303,7 +303,7 @@ Constructs a MessageFormat for the specified locale and pattern. Sets the locale
 | Parameters ||
 |-----------|-----------------------------------------------------------------------------------------------------------------------|
 | `pattern` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the pattern for this message format |
-| `locale` | [Locale](../java/util/Locale.md)!:the locale for this message format |
+| `locale` | [Locale](../java.util/Locale.md)!:the locale for this message format |
 
 | Exceptions ||
 |--------------------------------------|---------------------------|
@@ -319,7 +319,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun applyPattern(pttrn: String!): Unit
 ```
 
-Sets the pattern used by this message format. Parses the pattern and caches Format objects for simple argument types. Patterns and their interpretation are specified in the [class description](../android/icu/text/MessageFormat.md).
+Sets the pattern used by this message format. Parses the pattern and caches Format objects for simple argument types. Patterns and their interpretation are specified in the [class description](MessageFormat.md).
 
 | Parameters ||
 |---------|-----------------------------------------------------------------------------------------------------------------------|
@@ -340,7 +340,7 @@ open fun applyPattern(
 ): Unit
 ```
 
-**\[icu\]** Sets the ApostropheMode and the pattern used by this message format. Parses the pattern and caches Format objects for simple argument types. Patterns and their interpretation are specified in the [class description](../android/icu/text/MessageFormat.md).
+**\[icu\]** Sets the ApostropheMode and the pattern used by this message format. Parses the pattern and caches Format objects for simple argument types. Patterns and their interpretation are specified in the [class description](MessageFormat.md).
 
 This method is best used only once on a given object to avoid confusion about the mode, and after constructing the object with an empty pattern string to minimize overhead.
 
@@ -365,11 +365,11 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open static fun autoQuoteApostrophe(pattern: String!): String!
 ```
 
-**\[icu\]** Converts an 'apostrophe-friendly' pattern into a standard pattern.*This is obsolete for ICU 4.8 and higher MessageFormat pattern strings.* It can still be useful together with [java.text.MessageFormat](../java/text/MessageFormat.md).
+**\[icu\]** Converts an 'apostrophe-friendly' pattern into a standard pattern.*This is obsolete for ICU 4.8 and higher MessageFormat pattern strings.* It can still be useful together with [java.text.MessageFormat](../java.text/MessageFormat.md).
 
-See the class description for more about apostrophes and quoting, and differences between ICU and [java.text.MessageFormat](../java/text/MessageFormat.md).
+See the class description for more about apostrophes and quoting, and differences between ICU and [java.text.MessageFormat](../java.text/MessageFormat.md).
 
-[java.text.MessageFormat](../java/text/MessageFormat.md) and ICU 4.6 and earlier MessageFormat treat all ASCII apostrophes as quotes, which is problematic in some languages, e.g. French, where apostrophe is commonly used. This utility assumes that only an unpaired apostrophe immediately before a brace is a true quote. Other unpaired apostrophes are paired, and the resulting standard pattern string is returned.
+[java.text.MessageFormat](../java.text/MessageFormat.md) and ICU 4.6 and earlier MessageFormat treat all ASCII apostrophes as quotes, which is problematic in some languages, e.g. French, where apostrophe is commonly used. This utility assumes that only an unpaired apostrophe immediately before a brace is a true quote. Other unpaired apostrophes are paired, and the resulting standard pattern string is returned.
 
 **Note**: It is not guaranteed that the returned pattern is indeed a valid pattern. The only effect is to convert between patterns having different quoting semantics.
 
@@ -441,20 +441,20 @@ fun format(
 ): StringBuffer!
 ```
 
-Formats a map or array of objects and appends the`MessageFormat`'s pattern, with format elements replaced by the formatted objects, to the provided`StringBuffer`. This is equivalent to either of [format](../android/icu/text/MessageFormat.md))`((Object[]) arguments, result, pos)` [format](../android/icu/text/MessageFormat.md))`((Map) arguments, result, pos)`A map must be provided if this format uses named arguments, otherwise an IllegalArgumentException will be thrown.
+Formats a map or array of objects and appends the`MessageFormat`'s pattern, with format elements replaced by the formatted objects, to the provided`StringBuffer`. This is equivalent to either of [format](MessageFormat.md))`((Object[]) arguments, result, pos)` [format](MessageFormat.md))`((Map) arguments, result, pos)`A map must be provided if this format uses named arguments, otherwise an IllegalArgumentException will be thrown.
 
 | Parameters ||
 |--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `obj` | The object to format |
 | `toAppendTo` | where the text is to be appended |
-| `pos` | [FieldPosition](../java/text/FieldPosition.md)!:On input: an alignment field, if desired On output: the offsets of the alignment field |
+| `pos` | [FieldPosition](../java.text/FieldPosition.md)!:On input: an alignment field, if desired On output: the offsets of the alignment field |
 | --- | --- |
 | `arguments` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:a map or array of objects to be formatted |
-| `result` | [StringBuffer](../java/lang/StringBuffer.md)!:where text is appended |
+| `result` | [StringBuffer](../java.lang/StringBuffer.md)!:where text is appended |
 
 | Return ||
 |----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-| [StringBuffer](../java/lang/StringBuffer.md)! | the string buffer passed in as`toAppendTo`, with formatted text appended |
+| [StringBuffer](../java.lang/StringBuffer.md)! | the string buffer passed in as`toAppendTo`, with formatted text appended |
 
 | Exceptions ||
 |--------------------------------------|-------------------------------------------------------------------------|
@@ -495,8 +495,8 @@ If`pos`is non-null, and refers to`Field.ARGUMENT`, the location of the first for
 | Parameters ||
 |-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `arguments` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>!:an array of objects to be formatted and substituted. |
-| `result` | [StringBuffer](../java/lang/StringBuffer.md)!:where text is appended. |
-| `pos` | [FieldPosition](../java/text/FieldPosition.md)!:On input: an alignment field, if desired. On output: the offsets of the alignment field. |
+| `result` | [StringBuffer](../java.lang/StringBuffer.md)!:where text is appended. |
+| `pos` | [FieldPosition](../java.text/FieldPosition.md)!:On input: an alignment field, if desired. On output: the offsets of the alignment field. |
 | --- | --- |
 
 | Exceptions ||
@@ -526,13 +526,13 @@ An argument is*unavailable* if`arguments`is`null`or does not have a value corres
 | Parameters ||
 |-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `arguments` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>!:a map of objects to be formatted and substituted. |
-| `result` | [StringBuffer](../java/lang/StringBuffer.md)!:where text is appended. |
-| `pos` | [FieldPosition](../java/text/FieldPosition.md)!:On input: an alignment field, if desired. On output: the offsets of the alignment field. |
+| `result` | [StringBuffer](../java.lang/StringBuffer.md)!:where text is appended. |
+| `pos` | [FieldPosition](../java.text/FieldPosition.md)!:On input: an alignment field, if desired. On output: the offsets of the alignment field. |
 | --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------------------------|----------------------------|
-| [StringBuffer](../java/lang/StringBuffer.md)! | the passed-in StringBuffer |
+| [StringBuffer](../java.lang/StringBuffer.md)! | the passed-in StringBuffer |
 
 | Exceptions ||
 |--------------------------------------|----------------------------------------------------------------------------------------------------------------------|
@@ -549,7 +549,7 @@ open static fun format(
 ): String!
 ```
 
-Creates a MessageFormat with the given pattern and uses it to format the given arguments. This is equivalent to`(new ` [MessageFormat](../android/icu/text/MessageFormat.md))`(pattern)).` [format](../android/icu/text/MessageFormat.md))`(arguments, new StringBuffer(), null).toString()`
+Creates a MessageFormat with the given pattern and uses it to format the given arguments. This is equivalent to`(new ` [MessageFormat](MessageFormat.md))`(pattern)).` [format](MessageFormat.md))`(arguments, new StringBuffer(), null).toString()`
 
 | Exceptions ||
 |--------------------------------------|-------------------------------------|
@@ -576,7 +576,7 @@ Creates a MessageFormat with the given pattern and uses it to format the given a
 
 **See Also**
 
-- [#format(Map, StringBuffer, FieldPosition)](../android/icu/text/MessageFormat.md))
+- [#format(Map, StringBuffer, FieldPosition)](MessageFormat.md))
 - [#format(String, Object[])](https://developer.android.com/reference/kotlin/android/icu/text/MessageFormat#format(kotlin.String,%20kotlin.Any)) 
 
 ### formatToCharacterIterator
@@ -590,7 +590,7 @@ open fun formatToCharacterIterator(arguments: Any!): AttributedCharacterIterato
 Formats an array of objects and inserts them into the`MessageFormat`'s pattern, producing an`AttributedCharacterIterator`. You can use the returned`AttributedCharacterIterator`to build the resulting String, as well as to determine information about the resulting String.
 
 The text of the returned`AttributedCharacterIterator`is the same that would be returned by
-[format](../android/icu/text/MessageFormat.md))`(arguments, new StringBuffer(), null).toString()`
+[format](MessageFormat.md))`(arguments, new StringBuffer(), null).toString()`
 
 In addition, the`AttributedCharacterIterator`contains at least attributes indicating where text was generated from an argument in the`arguments`array. The keys of these attributes are of type`MessageFormat.Field`, their values are`Integer`objects indicating the index in the`arguments`array of the argument from which the text was generated.
 
@@ -603,7 +603,7 @@ The attributes/value from the underlying`Format`instances that`MessageFormat`use
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
-| [AttributedCharacterIterator](../java/text/AttributedCharacterIterator.md)! | AttributedCharacterIterator describing the formatted value. |
+| [AttributedCharacterIterator](../java.text/AttributedCharacterIterator.md)! | AttributedCharacterIterator describing the formatted value. |
 
 | Exceptions ||
 |--------------------------------------|----------------------------------------------------------------------------------------------------------------------|
@@ -634,7 +634,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun getArgumentNames(): MutableSet<String!>!
 ```
 
-**\[icu\]** Returns the top-level argument names. For more details, see [setFormatByArgumentName(java.lang.String,java.text.Format)](../android/icu/text/MessageFormat.md)).
+**\[icu\]** Returns the top-level argument names. For more details, see [setFormatByArgumentName(java.lang.String,java.text.Format)](MessageFormat.md)).
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
@@ -648,7 +648,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun getFormatByArgumentName(argumentName: String!): Format!
 ```
 
-**\[icu\]** Returns the first top-level format associated with the given argument name. For more details, see [setFormatByArgumentName(java.lang.String,java.text.Format)](../android/icu/text/MessageFormat.md)).
+**\[icu\]** Returns the first top-level format associated with the given argument name. For more details, see [setFormatByArgumentName(java.lang.String,java.text.Format)](MessageFormat.md)).
 
 | Parameters ||
 |----------------|---------------------------------------------------------------------------------------------------------------------|
@@ -656,7 +656,7 @@ open fun getFormatByArgumentName(argumentName: String!): Format!
 
 | Return ||
 |----------------------------------------------------------------------------------|------------------------------------------------------------------|
-| [Format](../java/text/Format.md)! | the Format associated with the name, or null if there isn't one. |
+| [Format](../java.text/Format.md)! | the Format associated with the name, or null if there isn't one. |
 
 ### getFormats
 
@@ -668,11 +668,11 @@ open fun getFormats(): Array<Format!>!
 
 Returns the Format objects used for the format elements in the previously set pattern string. The order of formats in the returned array corresponds to the order of format elements in the pattern string.
 
-Since the order of format elements in a pattern string often changes during localization, it's generally better to use the [getFormatsByArgumentIndex()](../android/icu/text/MessageFormat.md))method, which assumes an order of formats corresponding to the order of elements in the`arguments`array passed to the`format`methods or the result array returned by the`parse`methods. This method is only supported when exclusively numbers are used for argument names. Otherwise an IllegalArgumentException is thrown.
+Since the order of format elements in a pattern string often changes during localization, it's generally better to use the [getFormatsByArgumentIndex()](MessageFormat.md))method, which assumes an order of formats corresponding to the order of elements in the`arguments`array passed to the`format`methods or the result array returned by the`parse`methods. This method is only supported when exclusively numbers are used for argument names. Otherwise an IllegalArgumentException is thrown.
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Format](../java/text/Format.md)!>! | the formats used for the format elements in the pattern |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Format](../java.text/Format.md)!>! | the formats used for the format elements in the pattern |
 
 | Exceptions ||
 |--------------------------------------|-------------------------------------|
@@ -692,7 +692,7 @@ If an argument index is used for more than one format element in the pattern str
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Format](../java/text/Format.md)!>! | the formats used for the arguments within the pattern |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Format](../java.text/Format.md)!>! | the formats used for the arguments within the pattern |
 
 | Exceptions ||
 |--------------------------------------|-------------------------------------|
@@ -710,7 +710,7 @@ Returns the locale that's used when creating or comparing subformats.
 
 | Return ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------|
-| [Locale](../java/util/Locale.md)! | the locale used when creating or comparing subformats |
+| [Locale](../java.util/Locale.md)! | the locale used when creating or comparing subformats |
 
 ### getULocale
 
@@ -724,7 +724,7 @@ open fun getULocale(): ULocale!
 
 | Return ||
 |-------------------------------------------------------------------------------------------|-------------------------------------------------------|
-| [ULocale](../android/icu/util/ULocale.md)! | the locale used when creating or comparing subformats |
+| [ULocale](../android.icu.util/ULocale.md)! | the locale used when creating or comparing subformats |
 
 ### hashCode
 
@@ -734,13 +734,13 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun hashCode(): Int
 ```
 
-Returns a hash code value for the object. This method is supported for the benefit of hash tables such as those provided by [java.util.HashMap](../java/util/HashMap.md).
+Returns a hash code value for the object. This method is supported for the benefit of hash tables such as those provided by [java.util.HashMap](../java.util/HashMap.md).
 
 The general contract of`hashCode`is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the`hashCode`method must consistently return the same integer, provided no information used in`equals`comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the [equals](../java/lang/Object.md))method, then calling the`hashCode`method on each of the two objects must produce the same integer result.
-- It is*not* required that if two objects are unequal according to the [equals](../java/lang/Object.md))method, then calling the`hashCode`method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the [equals](../java.lang/Object.md))method, then calling the`hashCode`method on each of the two objects must produce the same integer result.
+- It is*not* required that if two objects are unequal according to the [equals](../java.lang/Object.md))method, then calling the`hashCode`method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------|
@@ -756,7 +756,7 @@ open fun parse(source: String!): Array<Any!>!
 
 Parses text from the beginning of the given string to produce an object array. The method may not use the entire text of the given string.
 
-See the [parse(java.lang.String,java.text.ParsePosition)](../android/icu/text/MessageFormat.md))method for more information on message parsing.
+See the [parse(java.lang.String,java.text.ParsePosition)](MessageFormat.md))method for more information on message parsing.
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------|
@@ -813,12 +813,12 @@ Parses text from a string to produce an object array or Map.
 
 The method attempts to parse text starting at the index given by`pos`. If parsing succeeds, then the index of`pos`is updated to the index after the last character used (parsing does not necessarily use all characters up to the end of the string), and the parsed object array is returned. The updated`pos`can be used to indicate the starting point for the next call to this method. If an error occurs, then the index of`pos`is not changed, the error index of`pos`is set to the index of the character where the error occurred, and null is returned.
 
-See the [parse(java.lang.String,java.text.ParsePosition)](../android/icu/text/MessageFormat.md))method for more information on message parsing.
+See the [parse(java.lang.String,java.text.ParsePosition)](MessageFormat.md))method for more information on message parsing.
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `source` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:A`String`, part of which should be parsed. |
-| `pos` | [ParsePosition](../java/text/ParsePosition.md)!:A`ParsePosition`object with index and error index information as described above. |
+| `pos` | [ParsePosition](../java.text/ParsePosition.md)!:A`ParsePosition`object with index and error index information as described above. |
 
 | Return ||
 |-----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -838,7 +838,7 @@ open fun parseToMap(source: String!): MutableMap<String!, Any!>!
 
 **\[icu\]**Parses text from the beginning of the given string to produce a map from argument to values. The method may not use the entire text of the given string.
 
-See the [parse(java.lang.String,java.text.ParsePosition)](../android/icu/text/MessageFormat.md))method for more information on message parsing.
+See the [parse(java.lang.String,java.text.ParsePosition)](MessageFormat.md))method for more information on message parsing.
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------|
@@ -854,7 +854,7 @@ See the [parse(java.lang.String,java.text.ParsePosition)](../android/icu/text/Me
 
 **See Also**
 
-- [#parseToMap(String, ParsePosition)](../android/icu/text/MessageFormat.md)) 
+- [#parseToMap(String, ParsePosition)](MessageFormat.md)) 
 
 ### parseToMap
 
@@ -872,7 +872,7 @@ open fun parseToMap(
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `source` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the text to parse |
-| `pos` | [ParsePosition](../java/text/ParsePosition.md)!:the position at which to start parsing. on return, contains the result of the parse. |
+| `pos` | [ParsePosition](../java.text/ParsePosition.md)!:the position at which to start parsing. on return, contains the result of the parse. |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------|
@@ -891,12 +891,12 @@ open fun setFormat(
 
 Sets the Format object to use for the format element with the given format element index within the previously set pattern string. The format element index is the zero-based number of the format element counting from the start of the pattern string.
 
-Since the order of format elements in a pattern string often changes during localization, it is generally better to use the [setFormatByArgumentIndex](../android/icu/text/MessageFormat.md))method, which accesses format elements based on the argument index they specify.
+Since the order of format elements in a pattern string often changes during localization, it is generally better to use the [setFormatByArgumentIndex](MessageFormat.md))method, which accesses format elements based on the argument index they specify.
 
 | Parameters ||
 |----------------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | `formatElementIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the index of a format element within the pattern |
-| `newFormat` | [Format](../java/text/Format.md)!:the format to use for the specified format element |
+| `newFormat` | [Format](../java.text/Format.md)!:the format to use for the specified format element |
 
 | Exceptions ||
 |--------------------------------------------|------------------------------------------------------------------------------------------------------|
@@ -920,7 +920,7 @@ If the argument index is used for more than one format element in the pattern st
 | Parameters ||
 |-----------------|-------------------------------------------------------------------------------------------------------------------------------|
 | `argumentIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the argument index for which to use the new format |
-| `newFormat` | [Format](../java/text/Format.md)!:the new format to use |
+| `newFormat` | [Format](../java.text/Format.md)!:the new format to use |
 
 | Exceptions ||
 |--------------------------------------|-------------------------------------|
@@ -946,7 +946,7 @@ This API may be used on formats that do not use named arguments. In this case`ar
 | Parameters ||
 |----------------|----------------------------------------------------------------------------------------------------------------------|
 | `argumentName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the name of the argument to change |
-| `newFormat` | [Format](../java/text/Format.md)!:the new format to use |
+| `newFormat` | [Format](../java.text/Format.md)!:the new format to use |
 
 ### setFormats
 
@@ -960,11 +960,11 @@ Sets the Format objects to use for the format elements in the previously set pat
 
 If more formats are provided than needed by the pattern string, the remaining ones are ignored. If fewer formats are provided than needed, then only the first`newFormats.length`formats are replaced.
 
-Since the order of format elements in a pattern string often changes during localization, it is generally better to use the [setFormatsByArgumentIndex](../android/icu/text/MessageFormat.md))method, which assumes an order of formats corresponding to the order of elements in the`arguments`array passed to the`format`methods or the result array returned by the`parse`methods.
+Since the order of format elements in a pattern string often changes during localization, it is generally better to use the [setFormatsByArgumentIndex](MessageFormat.md))method, which assumes an order of formats corresponding to the order of elements in the`arguments`array passed to the`format`methods or the result array returned by the`parse`methods.
 
 | Parameters ||
 |--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `newFormats` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Format](../java/text/Format.md)!\>!:the new formats to use |
+| `newFormats` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Format](../java.text/Format.md)!\>!:the new formats to use |
 
 | Exceptions ||
 |----------------------------------|-----------------------|
@@ -984,7 +984,7 @@ If an argument index is used for more than one format element in the pattern str
 
 | Parameters ||
 |--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `newFormats` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Format](../java/text/Format.md)!\>!:the new formats to use |
+| `newFormats` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Format](../java.text/Format.md)!\>!:the new formats to use |
 
 | Exceptions ||
 |--------------------------------------|----------------------------------------|
@@ -1007,7 +1007,7 @@ This may be called on formats that do not use named arguments. In this case the 
 
 | Parameters ||
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `newFormats` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Format](../java/text/Format.md)!\>!:a map from String to Format providing new formats for named arguments. |
+| `newFormats` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Format](../java.text/Format.md)!\>!:a map from String to Format providing new formats for named arguments. |
 
 ### setLocale
 
@@ -1017,11 +1017,11 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun setLocale(locale: ULocale!): Unit
 ```
 
-Sets the locale to be used for creating argument Format objects. This affects subsequent calls to the #applyPattern method as well as to the`format`and [formatToCharacterIterator](../android/icu/text/MessageFormat.md))methods.
+Sets the locale to be used for creating argument Format objects. This affects subsequent calls to the #applyPattern method as well as to the`format`and [formatToCharacterIterator](MessageFormat.md))methods.
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `locale` | [ULocale](../android/icu/util/ULocale.md)!:the locale to be used when creating or comparing subformats |
+| `locale` | [ULocale](../android.icu.util/ULocale.md)!:the locale to be used when creating or comparing subformats |
 
 ### setLocale
 
@@ -1031,11 +1031,11 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun setLocale(locale: Locale!): Unit
 ```
 
-Sets the locale to be used for creating argument Format objects. This affects subsequent calls to the #applyPattern method as well as to the`format`and [formatToCharacterIterator](../android/icu/text/MessageFormat.md))methods.
+Sets the locale to be used for creating argument Format objects. This affects subsequent calls to the #applyPattern method as well as to the`format`and [formatToCharacterIterator](MessageFormat.md))methods.
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| `locale` | [Locale](../java/util/Locale.md)!:the locale to be used when creating or comparing subformats |
+| `locale` | [Locale](../java.util/Locale.md)!:the locale to be used when creating or comparing subformats |
 
 ### toPattern
 

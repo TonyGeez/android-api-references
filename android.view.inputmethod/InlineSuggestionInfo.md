@@ -4,7 +4,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 
 # InlineSuggestionInfo
 
-Kotlin| [Java](../android/view/inputmethod/InlineSuggestionInfo.md) 
+Kotlin| [Java](InlineSuggestionInfo.md) 
 | --- | --- |
 
 ```
@@ -13,43 +13,43 @@ class InlineSuggestionInfo : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.inputmethod.InlineSuggestionInfo](../android/view/inputmethod/InlineSuggestionInfo.md) |
+| ↳ | [android.view.inputmethod.InlineSuggestionInfo](InlineSuggestionInfo.md) |
 
-This class represents the description of an inline suggestion. It contains information to help the IME to decide where and when to show the suggestions. See [InlineSuggestion](../android/view/inputmethod/InlineSuggestion.md) for more information.
+This class represents the description of an inline suggestion. It contains information to help the IME to decide where and when to show the suggestions. See [InlineSuggestion](InlineSuggestion.md) for more information.
 
 ## Summary
 
 | Constants ||
 |----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SOURCE_AUTOFILL](../android/view/inputmethod/InlineSuggestionInfo.md) Suggestion source: the suggestion is made by the user selected autofill service. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SOURCE_PLATFORM](../android/view/inputmethod/InlineSuggestionInfo.md) Suggestion source: the suggestion is made by the platform. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TYPE_ACTION](../android/view/inputmethod/InlineSuggestionInfo.md) UI type: the UI contains an widget that will launch an intent when tapped. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SOURCE_AUTOFILL](InlineSuggestionInfo.md) Suggestion source: the suggestion is made by the user selected autofill service. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SOURCE_PLATFORM](InlineSuggestionInfo.md) Suggestion source: the suggestion is made by the platform. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TYPE_ACTION](InlineSuggestionInfo.md) UI type: the UI contains an widget that will launch an intent when tapped. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TYPE_SUGGESTION](../android/view/inputmethod/InlineSuggestionInfo.md) UI type: the UI contains an Autofill suggestion that will autofill the fields when tapped. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [TYPE_SUGGESTION](InlineSuggestionInfo.md) UI type: the UI contains an Autofill suggestion that will autofill the fields when tapped. |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android.os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android.os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android.os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/view/inputmethod/InlineSuggestionInfo.md))`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/view/inputmethod/InlineSuggestionInfo.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | [getAutofillHints](../android/view/inputmethod/InlineSuggestionInfo.md))`()` Hints for the type of data being suggested. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](InlineSuggestionInfo.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](InlineSuggestionInfo.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | [getAutofillHints](InlineSuggestionInfo.md))`()` Hints for the type of data being suggested. |
 | --- | --- |
-| [InlinePresentationSpec](../android/widget/inline/InlinePresentationSpec.md) | [getInlinePresentationSpec](../android/view/inputmethod/InlineSuggestionInfo.md))`()` The presentation spec to which the inflated suggestion view abides. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getSource](../android/view/inputmethod/InlineSuggestionInfo.md))`()` The source from which the suggestion is provided. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getType](../android/view/inputmethod/InlineSuggestionInfo.md))`()` The type of the UI. |
+| [InlinePresentationSpec](../android.widget.inline/InlinePresentationSpec.md) | [getInlinePresentationSpec](InlineSuggestionInfo.md))`()` The presentation spec to which the inflated suggestion view abides. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getSource](InlineSuggestionInfo.md))`()` The source from which the suggestion is provided. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getType](InlineSuggestionInfo.md))`()` The type of the UI. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/view/inputmethod/InlineSuggestionInfo.md))`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPinned](../android/view/inputmethod/InlineSuggestionInfo.md))`()` Whether the suggestion should be pinned or not. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/view/inputmethod/InlineSuggestionInfo.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](InlineSuggestionInfo.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPinned](InlineSuggestionInfo.md))`()` Whether the suggestion should be pinned or not. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](InlineSuggestionInfo.md))`()` <br /> |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/view/inputmethod/InlineSuggestionInfo.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](InlineSuggestionInfo.md))`(`dest:` ` [Parcel](../android.os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [InlineSuggestionInfo](../android/view/inputmethod/InlineSuggestionInfo.md)!\> | [CREATOR](../android/view/inputmethod/InlineSuggestionInfo.md) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [InlineSuggestionInfo](InlineSuggestionInfo.md)!\> | [CREATOR](InlineSuggestionInfo.md) <br /> |
 
 ## Constants
 
@@ -62,7 +62,7 @@ static val SOURCE_AUTOFILL: String
 ```
 
 Suggestion source: the suggestion is made by the user selected autofill service. 
-Value is [android.view.inputmethod.InlineSuggestionInfo#SOURCE_AUTOFILL](../android/view/inputmethod/InlineSuggestionInfo.md), or [android.view.inputmethod.InlineSuggestionInfo#SOURCE_PLATFORM](../android/view/inputmethod/InlineSuggestionInfo.md) 
+Value is [android.view.inputmethod.InlineSuggestionInfo#SOURCE_AUTOFILL](InlineSuggestionInfo.md), or [android.view.inputmethod.InlineSuggestionInfo#SOURCE_PLATFORM](InlineSuggestionInfo.md) 
 
  Value: "android:autofill"
 
@@ -75,7 +75,7 @@ static val SOURCE_PLATFORM: String
 ```
 
 Suggestion source: the suggestion is made by the platform. 
-Value is [android.view.inputmethod.InlineSuggestionInfo#SOURCE_AUTOFILL](../android/view/inputmethod/InlineSuggestionInfo.md), or [android.view.inputmethod.InlineSuggestionInfo#SOURCE_PLATFORM](../android/view/inputmethod/InlineSuggestionInfo.md) 
+Value is [android.view.inputmethod.InlineSuggestionInfo#SOURCE_AUTOFILL](InlineSuggestionInfo.md), or [android.view.inputmethod.InlineSuggestionInfo#SOURCE_PLATFORM](InlineSuggestionInfo.md) 
 
  Value: "android:platform"
 
@@ -88,7 +88,7 @@ static val TYPE_ACTION: String
 ```
 
 UI type: the UI contains an widget that will launch an intent when tapped. 
-Value is [android.view.inputmethod.InlineSuggestionInfo#TYPE_SUGGESTION](../android/view/inputmethod/InlineSuggestionInfo.md), or [android.view.inputmethod.InlineSuggestionInfo#TYPE_ACTION](../android/view/inputmethod/InlineSuggestionInfo.md) 
+Value is [android.view.inputmethod.InlineSuggestionInfo#TYPE_SUGGESTION](InlineSuggestionInfo.md), or [android.view.inputmethod.InlineSuggestionInfo#TYPE_ACTION](InlineSuggestionInfo.md) 
 
  Value: "android:autofill:action"
 
@@ -101,7 +101,7 @@ static val TYPE_SUGGESTION: String
 ```
 
 UI type: the UI contains an Autofill suggestion that will autofill the fields when tapped. 
-Value is [android.view.inputmethod.InlineSuggestionInfo#TYPE_SUGGESTION](../android/view/inputmethod/InlineSuggestionInfo.md), or [android.view.inputmethod.InlineSuggestionInfo#TYPE_ACTION](../android/view/inputmethod/InlineSuggestionInfo.md) 
+Value is [android.view.inputmethod.InlineSuggestionInfo#TYPE_SUGGESTION](InlineSuggestionInfo.md), or [android.view.inputmethod.InlineSuggestionInfo#TYPE_ACTION](InlineSuggestionInfo.md) 
 
  Value: "android:autofill:suggestion"
 
@@ -117,7 +117,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) |
 
 ### equals
 
@@ -174,7 +174,7 @@ The presentation spec to which the inflated suggestion view abides.
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [InlinePresentationSpec](../android/widget/inline/InlinePresentationSpec.md) | This value cannot be`null`. |
+| [InlinePresentationSpec](../android.widget.inline/InlinePresentationSpec.md) | This value cannot be`null`. |
 
 ### getSource
 
@@ -188,7 +188,7 @@ The source from which the suggestion is provided.
 
 | Return ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | This value cannot be`null`. Value is [android.view.inputmethod.InlineSuggestionInfo#SOURCE_AUTOFILL](../android/view/inputmethod/InlineSuggestionInfo.md), or [android.view.inputmethod.InlineSuggestionInfo#SOURCE_PLATFORM](../android/view/inputmethod/InlineSuggestionInfo.md) |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | This value cannot be`null`. Value is [android.view.inputmethod.InlineSuggestionInfo#SOURCE_AUTOFILL](InlineSuggestionInfo.md), or [android.view.inputmethod.InlineSuggestionInfo#SOURCE_PLATFORM](InlineSuggestionInfo.md) |
 
 ### getType
 
@@ -202,7 +202,7 @@ The type of the UI.
 
 | Return ||
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | This value cannot be`null`. Value is [android.view.inputmethod.InlineSuggestionInfo#TYPE_SUGGESTION](../android/view/inputmethod/InlineSuggestionInfo.md), or [android.view.inputmethod.InlineSuggestionInfo#TYPE_ACTION](../android/view/inputmethod/InlineSuggestionInfo.md) |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | This value cannot be`null`. Value is [android.view.inputmethod.InlineSuggestionInfo#TYPE_SUGGESTION](InlineSuggestionInfo.md), or [android.view.inputmethod.InlineSuggestionInfo#TYPE_ACTION](InlineSuggestionInfo.md) |
 
 ### hashCode
 
@@ -253,8 +253,8 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](../android/os/Parcel.md):This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android.os/Parcel.md):This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

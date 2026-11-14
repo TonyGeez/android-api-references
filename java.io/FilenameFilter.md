@@ -8,7 +8,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 @FunctionalInterface interface FilenameFilter
 ```
 
-| [java.io.FilenameFilter](../java/io/FilenameFilter.md) |
+| [java.io.FilenameFilter](FilenameFilter.md) |
 
 Instances of classes that implement this interface are used to filter filenames. These instances are used to filter directory listings in the`list`method of class`File`, and by the Abstract Window Toolkit's file dialog component.
 
@@ -16,7 +16,7 @@ Instances of classes that implement this interface are used to filter filenames.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [accept](../java/io/FilenameFilter.md))`(`dir:` ` [File](../java/io/File.md)!`, `name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Tests if a specified file should be included in a file list. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [accept](FilenameFilter.md))`(`dir:` ` [File](File.md)!`, `name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Tests if a specified file should be included in a file list. |
 
 ## Public methods
 
@@ -35,7 +35,7 @@ Tests if a specified file should be included in a file list.
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------------------|
-| `dir` | [File](../java/io/File.md)!:the directory in which the file was found. |
+| `dir` | [File](File.md)!:the directory in which the file was found. |
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the name of the file. |
 
 | Return ||

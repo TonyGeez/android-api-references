@@ -11,9 +11,9 @@
 
 ## Classes
 
-| [AdvertisingRequest](../android/net/nsd/AdvertisingRequest.md) | Encapsulates parameters for android. |
+| [AdvertisingRequest](AdvertisingRequest.md) | Encapsulates parameters for android. |
 | --- | --- |
-| [DiscoveryRequest](../android/net/nsd/DiscoveryRequest.md) | Encapsulates parameters for android. |
-| [NsdManager](../android/net/nsd/NsdManager.md) | Provides APIs for discovering and advertising network services on the local network. |
-| [NsdServiceInfo](../android/net/nsd/NsdServiceInfo.md) | A class representing service information for network service discovery |
+| [DiscoveryRequest](DiscoveryRequest.md) | Encapsulates parameters for android. |
+| [NsdManager](NsdManager.md) | Provides APIs for discovering and advertising network services on the local network. |
+| [NsdServiceInfo](NsdServiceInfo.md) | A class representing service information for network service discovery |
 | --- | --- |

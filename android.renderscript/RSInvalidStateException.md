@@ -5,7 +5,7 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 
 # RSInvalidStateException
 
-Kotlin| [Java](../android/renderscript/RSInvalidStateException.md) 
+Kotlin| [Java](RSInvalidStateException.md) 
 | --- | --- |
 
 ```
@@ -15,11 +15,11 @@ open class RSInvalidStateException : RSRuntimeException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
-| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) |||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) ||||
+| | | ↳ | [java.lang.RuntimeException](../java.lang/RuntimeException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.renderscript.RSRuntimeException](../android/renderscript/RSRuntimeException.md) ||
-| | | | | ↳ | [android.renderscript.RSInvalidStateException](../android/renderscript/RSInvalidStateException.md) |
+| | | | ↳ | [android.renderscript.RSRuntimeException](RSRuntimeException.md) ||
+| | | | | ↳ | [android.renderscript.RSInvalidStateException](RSInvalidStateException.md) |
 
 | **This exception was deprecated in API level 31.**
 |
@@ -31,7 +31,7 @@ Base class for all exceptions thrown by the Android RenderScript
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [RSInvalidStateException](../android/renderscript/RSInvalidStateException.md))`(`string:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| [RSInvalidStateException](RSInvalidStateException.md))`(`string:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
 
 ## Public constructors
 

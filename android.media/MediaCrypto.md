@@ -4,7 +4,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 
 # MediaCrypto
 
-Kotlin| [Java](../android/media/MediaCrypto.md) 
+Kotlin| [Java](MediaCrypto.md) 
 | --- | --- |
 
 ```
@@ -13,27 +13,27 @@ class MediaCrypto
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.MediaCrypto](../android/media/MediaCrypto.md) |
+| ↳ | [android.media.MediaCrypto](MediaCrypto.md) |
 
-MediaCrypto class can be used in conjunction with [android.media.MediaCodec](../android/media/MediaCodec.md) to decode encrypted media data. Crypto schemes are assigned 16 byte UUIDs, the method [isCryptoSchemeSupported](../android/media/MediaCrypto.md))can be used to query if a given scheme is supported on the device.
+MediaCrypto class can be used in conjunction with [android.media.MediaCodec](MediaCodec.md) to decode encrypted media data. Crypto schemes are assigned 16 byte UUIDs, the method [isCryptoSchemeSupported](MediaCrypto.md))can be used to query if a given scheme is supported on the device.
 
 ## Summary
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [MediaCrypto](../android/media/MediaCrypto.md))`(`uuid:` ` [UUID](../java/util/UUID.md)`, `sessionId:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`)` Instantiate a MediaCrypto object and associate it with a MediaDrm session |
+| [MediaCrypto](MediaCrypto.md))`(`uuid:` ` [UUID](../java.util/UUID.md)`, `sessionId:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`)` Instantiate a MediaCrypto object and associate it with a MediaDrm session |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isCryptoSchemeSupported](../android/media/MediaCrypto.md))`(`uuid:` ` [UUID](../java/util/UUID.md)`)` Query if the given scheme identified by its UUID is supported on this device. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [release](../android/media/MediaCrypto.md))`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [requiresSecureDecoderComponent](../android/media/MediaCrypto.md))`(`mime:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Query if the crypto scheme requires the use of a secure decoder to decode data of the given mime type. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isCryptoSchemeSupported](MediaCrypto.md))`(`uuid:` ` [UUID](../java.util/UUID.md)`)` Query if the given scheme identified by its UUID is supported on this device. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [release](MediaCrypto.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [requiresSecureDecoderComponent](MediaCrypto.md))`(`mime:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Query if the crypto scheme requires the use of a secure decoder to decode data of the given mime type. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMediaDrmSession](../android/media/MediaCrypto.md))`(`sessionId:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`)` Associate a new MediaDrm session with this MediaCrypto instance. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMediaDrmSession](MediaCrypto.md))`(`sessionId:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`)` Associate a new MediaDrm session with this MediaCrypto instance. |
 
 | Protected methods ||
 |------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](../android/media/MediaCrypto.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](MediaCrypto.md))`()` <br /> |
 
 ## Public constructors
 
@@ -51,8 +51,8 @@ Instantiate a MediaCrypto object and associate it with a MediaDrm session
 
 | Parameters ||
 |-------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `uuid` | [UUID](../java/util/UUID.md):The UUID of the crypto scheme. This value cannot be`null`. |
-| `sessionId` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html):The MediaDrm sessionId to associate with this MediaCrypto session. The sessionId may be changed after the MediaCrypto is created using [setMediaDrmSession](../android/media/MediaCrypto.md))This value cannot be`null`. |
+| `uuid` | [UUID](../java.util/UUID.md):The UUID of the crypto scheme. This value cannot be`null`. |
+| `sessionId` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html):The MediaDrm sessionId to associate with this MediaCrypto session. The sessionId may be changed after the MediaCrypto is created using [setMediaDrmSession](MediaCrypto.md))This value cannot be`null`. |
 
 ## Public methods
 
@@ -68,7 +68,7 @@ Query if the given scheme identified by its UUID is supported on this device.
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------------------------|
-| `uuid` | [UUID](../java/util/UUID.md):The UUID of the crypto scheme. This value cannot be`null`. |
+| `uuid` | [UUID](../java.util/UUID.md):The UUID of the crypto scheme. This value cannot be`null`. |
 
 ### release
 
@@ -102,7 +102,7 @@ fun setMediaDrmSession(sessionId: ByteArray): Unit
 
 Associate a new MediaDrm session with this MediaCrypto instance.
 
-The MediaDrm session is used to securely load decryption keys for a crypto scheme. The crypto keys loaded through the MediaDrm session may be selected for use during the decryption operation performed by [android.media.MediaCodec#queueSecureInputBuffer](../android/media/MediaCodec.md))by specifying their key IDs in the [android.media.MediaCodec.CryptoInfo#key](../android/media/MediaCodec.CryptoInfo.md) field.
+The MediaDrm session is used to securely load decryption keys for a crypto scheme. The crypto keys loaded through the MediaDrm session may be selected for use during the decryption operation performed by [android.media.MediaCodec#queueSecureInputBuffer](MediaCodec.md))by specifying their key IDs in the [android.media.MediaCodec.CryptoInfo#key](../android/media/MediaCodec.CryptoInfo.md) field.
 
 | Parameters ||
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

@@ -9,7 +9,7 @@ Deprecated in [API level 33](https://developer.android.com/guide/topics/manifest
 interface Permission
 ```
 
-| [java.security.acl.Permission](../java/security/acl/Permission.md) |
+| [java.security.acl.Permission](Permission.md) |
 
 | **This interface was deprecated in API level 33.**
 |

@@ -8,7 +8,7 @@ open class WifiP2pManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.wifi.p2p.WifiP2pManager](../android/net/wifi/p2p/WifiP2pManager.md) |
+| ↳ | [android.net.wifi.p2p.WifiP2pManager](WifiP2pManager.md) |
 
 This class provides the API for managing Wi-Fi peer-to-peer connectivity. This lets an application discover available peers, setup connection to peers and query for the list of peers. When a p2p connection is formed over wifi, the device continues to maintain the uplink connection over mobile or any other available network for internet connectivity on the device.
 
@@ -792,7 +792,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 | Parameters ||
 |---|---|
 | `c` | [WifiP2pManager.Channel](../android/net/wifi/p2p/WifiP2pManager.Channel.md): is the channel created at `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager#initialize(android.content.Context,%20android.os.Looper,%20android.net.wifi.p2p.WifiP2pManager.ChannelListener)`. This value cannot be `null`. |
-| `deviceAddress` | [MacAddress](../android/net/MacAddress.md): the peer which is bound to the external approver. This value cannot be `null`. |
+| `deviceAddress` | [MacAddress](../android.net/MacAddress.md): the peer which is bound to the external approver. This value cannot be `null`. |
 | `listener` | [WifiP2pManager.ExternalApproverRequestListener](../android/net/wifi/p2p/WifiP2pManager.ExternalApproverRequestListener.md): for callback when the framework needs to notify the external approver. This value cannot be `null`. |
 | --- | --- |
 
@@ -822,7 +822,7 @@ If targeting `https://developer.android.com/reference/kotlin/android/os/Build.VE
 | Parameters ||
 |---|---|
 | `channel` | [WifiP2pManager.Channel](../android/net/wifi/p2p/WifiP2pManager.Channel.md)!: is the channel created at `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager#initialize(android.content.Context,%20android.os.Looper,%20android.net.wifi.p2p.WifiP2pManager.ChannelListener)` |
-| `servInfo` | [WifiP2pServiceInfo](../android/net/wifi/p2p/nsd/WifiP2pServiceInfo.md)!: is a local service information. |
+| `servInfo` | [WifiP2pServiceInfo](../android.net.wifi.p2p.nsd/WifiP2pServiceInfo.md)!: is a local service information. |
 | `listener` | [WifiP2pManager.ActionListener](../android/net/wifi/p2p/WifiP2pManager.ActionListener.md)!: for callbacks on success or failure. Can be null. |
 | --- | --- |
 
@@ -851,7 +851,7 @@ The added service requests can be cleared with calls to `https://developer.andro
 | Parameters ||
 |---|---|
 | `channel` | [WifiP2pManager.Channel](../android/net/wifi/p2p/WifiP2pManager.Channel.md)!: is the channel created at `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager#initialize(android.content.Context,%20android.os.Looper,%20android.net.wifi.p2p.WifiP2pManager.ChannelListener)` |
-| `req` | [WifiP2pServiceRequest](../android/net/wifi/p2p/nsd/WifiP2pServiceRequest.md)!: is the service discovery request. |
+| `req` | [WifiP2pServiceRequest](../android.net.wifi.p2p.nsd/WifiP2pServiceRequest.md)!: is the service discovery request. |
 | `listener` | [WifiP2pManager.ActionListener](../android/net/wifi/p2p/WifiP2pManager.ActionListener.md)!: for callbacks on success or failure. Can be null. |
 | --- | --- |
 
@@ -944,7 +944,7 @@ If targeting `https://developer.android.com/reference/kotlin/android/os/Build.VE
 | Parameters ||
 |---|---|
 | `channel` | [WifiP2pManager.Channel](../android/net/wifi/p2p/WifiP2pManager.Channel.md)!: is the channel created at `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager#initialize(android.content.Context,%20android.os.Looper,%20android.net.wifi.p2p.WifiP2pManager.ChannelListener)` |
-| `config` | [WifiP2pConfig](../android/net/wifi/p2p/WifiP2pConfig.md)!: options as described in `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig` class |
+| `config` | [WifiP2pConfig](WifiP2pConfig.md)!: options as described in `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig` class |
 | `listener` | [WifiP2pManager.ActionListener](../android/net/wifi/p2p/WifiP2pManager.ActionListener.md)!: for callbacks on success or failure. Can be null. |
 | --- | --- |
 
@@ -975,7 +975,7 @@ If targeting `https://developer.android.com/reference/kotlin/android/os/Build.VE
 | Parameters ||
 |---|---|
 | `channel` | [WifiP2pManager.Channel](../android/net/wifi/p2p/WifiP2pManager.Channel.md): is the channel created at `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager#initialize(android.content.Context,%20android.os.Looper,%20android.net.wifi.p2p.WifiP2pManager.ChannelListener)`. This value cannot be `null`. |
-| `config` | [WifiP2pConfig](../android/net/wifi/p2p/WifiP2pConfig.md)?: the configuration of a p2p group. This value may be `null`. |
+| `config` | [WifiP2pConfig](WifiP2pConfig.md)?: the configuration of a p2p group. This value may be `null`. |
 | `listener` | [WifiP2pManager.ActionListener](../android/net/wifi/p2p/WifiP2pManager.ActionListener.md)?: for callbacks on success or failure. Can be null. |
 | --- | --- |
 
@@ -1143,7 +1143,7 @@ The application must have `https://developer.android.com/reference/kotlin/androi
 | Parameters ||
 |---|---|
 | `channel` | [WifiP2pManager.Channel](../android/net/wifi/p2p/WifiP2pManager.Channel.md): is the channel created at `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager#initialize(android.content.Context,%20android.os.Looper,%20android.net.wifi.p2p.WifiP2pManager.ChannelListener)` This value cannot be `null`. |
-| `config` | [WifiP2pUsdBasedServiceDiscoveryConfig](../android/net/wifi/p2p/WifiP2pUsdBasedServiceDiscoveryConfig.md): is the configuration for this USD based service discovery. This value cannot be `null`. |
+| `config` | [WifiP2pUsdBasedServiceDiscoveryConfig](WifiP2pUsdBasedServiceDiscoveryConfig.md): is the configuration for this USD based service discovery. This value cannot be `null`. |
 | `listener` | [WifiP2pManager.ActionListener](../android/net/wifi/p2p/WifiP2pManager.ActionListener.md)?: for callbacks on success or failure. Can be null. |
 | --- | --- |
 
@@ -1170,8 +1170,8 @@ If targeting `https://developer.android.com/reference/kotlin/android/os/Build.VE
 | Parameters ||
 |---|---|
 | `c` | [WifiP2pManager.Channel](../android/net/wifi/p2p/WifiP2pManager.Channel.md): It is the channel created at `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager#initialize(android.content.Context,%20android.os.Looper,%20android.net.wifi.p2p.WifiP2pManager.ChannelListener)`. This value cannot be `null`. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): The executor on which callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `resultsCallback` | [Consumer](../java/util/function/Consumer.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>: A callback that will return listen state `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager#WIFI_P2P_LISTEN_STOPPED:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager#WIFI_P2P_LISTEN_STARTED:kotlin.Int` This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor on which callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `resultsCallback` | [Consumer](../java.util.function/Consumer.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>: A callback that will return listen state `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager#WIFI_P2P_LISTEN_STOPPED:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager#WIFI_P2P_LISTEN_STARTED:kotlin.Int` This value cannot be `null`. |
 | --- | --- |
 
 ### getP2pMaxAllowedVendorElementsLengthBytes
@@ -1200,8 +1200,8 @@ Registers the application with the Wi-Fi framework. This function must be the fi
 
 | Parameters ||
 |---|---|
-| `srcContext` | [Context](../android/content/Context.md)!: is the context of the source |
-| `srcLooper` | [Looper](../android/os/Looper.md)!: is the Looper on which the callbacks are receivied |
+| `srcContext` | [Context](../android.content/Context.md)!: is the context of the source |
+| `srcLooper` | [Looper](../android.os/Looper.md)!: is the Looper on which the callbacks are receivied |
 | `listener` | [WifiP2pManager.ChannelListener](../android/net/wifi/p2p/WifiP2pManager.ChannelListener.md)!: for callback at loss of framework communication. Can be null. |
 | --- | --- |
 
@@ -1310,7 +1310,7 @@ Add a listener to listen to Wi-Fi p2p various changes.
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): the Executor on which to execute the callbacks. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): the Executor on which to execute the callbacks. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `listener` | [WifiP2pManager.WifiP2pListener](../android/net/wifi/p2p/WifiP2pManager.WifiP2pListener.md): listener for the Wi-Fi p2p connection changes. This value cannot be `null`. |
 
 | Exceptions ||
@@ -1341,7 +1341,7 @@ Use `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2p
 | Parameters ||
 |---|---|
 | `channel` | [WifiP2pManager.Channel](../android/net/wifi/p2p/WifiP2pManager.Channel.md): is the channel created at `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager#initialize(android.content.Context,%20android.os.Looper,%20android.net.wifi.p2p.WifiP2pManager.ChannelListener)` This value cannot be `null`. |
-| `peerAddress` | [MacAddress](../android/net/MacAddress.md): MAC address of the client. This value cannot be `null`. |
+| `peerAddress` | [MacAddress](../android.net/MacAddress.md): MAC address of the client. This value cannot be `null`. |
 | `listener` | [WifiP2pManager.ActionListener](../android/net/wifi/p2p/WifiP2pManager.ActionListener.md)?: for callbacks on success or failure. Can be null. |
 | --- | --- |
 
@@ -1363,7 +1363,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 | Parameters ||
 |---|---|
 | `c` | [WifiP2pManager.Channel](../android/net/wifi/p2p/WifiP2pManager.Channel.md): is the channel created at `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager#initialize(android.content.Context,%20android.os.Looper,%20android.net.wifi.p2p.WifiP2pManager.ChannelListener)`. This value cannot be `null`. |
-| `deviceAddress` | [MacAddress](../android/net/MacAddress.md): the peer which is bound to the external approver. This value cannot be `null`. |
+| `deviceAddress` | [MacAddress](../android.net/MacAddress.md): the peer which is bound to the external approver. This value cannot be `null`. |
 | `listener` | [WifiP2pManager.ActionListener](../android/net/wifi/p2p/WifiP2pManager.ActionListener.md)?: for callback on success or failure. This value may be `null`. |
 | --- | --- |
 
@@ -1406,7 +1406,7 @@ The function call immediately returns after sending a request to remove a local 
 | Parameters ||
 |---|---|
 | `channel` | [WifiP2pManager.Channel](../android/net/wifi/p2p/WifiP2pManager.Channel.md)!: is the channel created at `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager#initialize(android.content.Context,%20android.os.Looper,%20android.net.wifi.p2p.WifiP2pManager.ChannelListener)` |
-| `servInfo` | [WifiP2pServiceInfo](../android/net/wifi/p2p/nsd/WifiP2pServiceInfo.md)!: is the local service information. |
+| `servInfo` | [WifiP2pServiceInfo](../android.net.wifi.p2p.nsd/WifiP2pServiceInfo.md)!: is the local service information. |
 | `listener` | [WifiP2pManager.ActionListener](../android/net/wifi/p2p/WifiP2pManager.ActionListener.md)!: for callbacks on success or failure. Can be null. |
 | --- | --- |
 
@@ -1429,7 +1429,7 @@ The function call immediately returns after sending a request to remove service 
 | Parameters ||
 |---|---|
 | `channel` | [WifiP2pManager.Channel](../android/net/wifi/p2p/WifiP2pManager.Channel.md)!: is the channel created at `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager#initialize(android.content.Context,%20android.os.Looper,%20android.net.wifi.p2p.WifiP2pManager.ChannelListener)` |
-| `req` | [WifiP2pServiceRequest](../android/net/wifi/p2p/nsd/WifiP2pServiceRequest.md)!: is the service discovery request. |
+| `req` | [WifiP2pServiceRequest](../android.net.wifi.p2p.nsd/WifiP2pServiceRequest.md)!: is the service discovery request. |
 | `listener` | [WifiP2pManager.ActionListener](../android/net/wifi/p2p/WifiP2pManager.ActionListener.md)!: for callbacks on success or failure. Can be null. |
 | --- | --- |
 
@@ -1502,8 +1502,8 @@ The application must have `https://developer.android.com/reference/kotlin/androi
 | Parameters ||
 |---|---|
 | `c` | [WifiP2pManager.Channel](../android/net/wifi/p2p/WifiP2pManager.Channel.md): It is the channel created at `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager#initialize(android.content.Context,%20android.os.Looper,%20android.net.wifi.p2p.WifiP2pManager.ChannelListener)`. This value cannot be `null`. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): The executor on which callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `callback` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [WifiP2pDirInfo](../android/net/wifi/p2p/WifiP2pDirInfo.md)!, [Exception](../java/lang/Exception.md)!\>: An OutcomeReceiver callback for receiving `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDirInfo` via `https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#onResult(android.os.OutcomeReceiver.R)`. This callback will return null when DIR info doesn't exist. When this API call fails due to permission issues, state machine is busy etc., `https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#onError(android.os.OutcomeReceiver.E)` is called. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor on which callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `callback` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [WifiP2pDirInfo](WifiP2pDirInfo.md)!, [Exception](../java.lang/Exception.md)!\>: An OutcomeReceiver callback for receiving `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDirInfo` via `https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#onResult(android.os.OutcomeReceiver.R)`. This callback will return null when DIR info doesn't exist. When this API call fails due to permission issues, state machine is busy etc., `https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#onError(android.os.OutcomeReceiver.E)` is called. |
 | --- | --- |
 
 ### requestDiscoveryState
@@ -1631,7 +1631,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 | Parameters ||
 |---|---|
 | `c` | [WifiP2pManager.Channel](../android/net/wifi/p2p/WifiP2pManager.Channel.md): is the channel created at `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager#initialize(android.content.Context,%20android.os.Looper,%20android.net.wifi.p2p.WifiP2pManager.ChannelListener)`. This value cannot be `null`. |
-| `deviceAddress` | [MacAddress](../android/net/MacAddress.md): the peer which is bound to the external approver. This value cannot be `null`. |
+| `deviceAddress` | [MacAddress](../android.net/MacAddress.md): the peer which is bound to the external approver. This value cannot be `null`. |
 | `result` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the response for the incoming request. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager#CONNECTION_REQUEST_ACCEPT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager#CONNECTION_REQUEST_REJECT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager#CONNECTION_REQUEST_DEFER_TO_SERVICE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager#CONNECTION_REQUEST_DEFER_SHOW_PIN_TO_SERVICE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager#CONNECTION_REQUEST_DEFER_SHOW_PASSWORD_TO_SERVICE:kotlin.Int` |
 | --- | --- |
 | `listener` | [WifiP2pManager.ActionListener](../android/net/wifi/p2p/WifiP2pManager.ActionListener.md)?: for callback on success or failure. This value may be `null`. |
@@ -1656,7 +1656,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 | Parameters ||
 |---|---|
 | `c` | [WifiP2pManager.Channel](../android/net/wifi/p2p/WifiP2pManager.Channel.md): is the channel created at `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager#initialize(android.content.Context,%20android.os.Looper,%20android.net.wifi.p2p.WifiP2pManager.ChannelListener)`. This value cannot be `null`. |
-| `deviceAddress` | [MacAddress](../android/net/MacAddress.md): the peer which is bound to the external approver. This value cannot be `null`. |
+| `deviceAddress` | [MacAddress](../android.net/MacAddress.md): the peer which is bound to the external approver. This value cannot be `null`. |
 | `result` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the response for the incoming request. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager#CONNECTION_REQUEST_ACCEPT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager#CONNECTION_REQUEST_REJECT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager#CONNECTION_REQUEST_DEFER_TO_SERVICE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager#CONNECTION_REQUEST_DEFER_SHOW_PIN_TO_SERVICE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager#CONNECTION_REQUEST_DEFER_SHOW_PASSWORD_TO_SERVICE:kotlin.Int` |
 | --- | --- |
 | `pinOrPassword` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: the WPS PIN or Wi-Fi Direct R2 pairing bootstrapping PIN/Password for the incoming request. This value may be `null`. |
@@ -1773,7 +1773,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 | Parameters ||
 |---|---|
 | `channel` | [WifiP2pManager.Channel](../android/net/wifi/p2p/WifiP2pManager.Channel.md): is the channel created at `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager#initialize(android.content.Context,%20android.os.Looper,%20android.net.wifi.p2p.WifiP2pManager.ChannelListener)` This value cannot be `null`. |
-| `wfdInfo` | [WifiP2pWfdInfo](../android/net/wifi/p2p/WifiP2pWfdInfo.md): the Wifi Display information to set. This value cannot be `null`. |
+| `wfdInfo` | [WifiP2pWfdInfo](WifiP2pWfdInfo.md): the Wifi Display information to set. This value cannot be `null`. |
 | `listener` | [WifiP2pManager.ActionListener](../android/net/wifi/p2p/WifiP2pManager.ActionListener.md)?: for callbacks on success or failure. Can be null. |
 | --- | --- |
 
@@ -1814,7 +1814,7 @@ Initiate peer discovery. A discovery process involves scanning for available Wi-
 | Parameters ||
 |---|---|
 | `channel` | [WifiP2pManager.Channel](../android/net/wifi/p2p/WifiP2pManager.Channel.md): is the channel created at `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager#initialize(android.content.Context,%20android.os.Looper,%20android.net.wifi.p2p.WifiP2pManager.ChannelListener)` This value cannot be `null`. |
-| `config` | [WifiP2pDiscoveryConfig](../android/net/wifi/p2p/WifiP2pDiscoveryConfig.md): is the configuration for this peer discovery. This value cannot be `null`. |
+| `config` | [WifiP2pDiscoveryConfig](WifiP2pDiscoveryConfig.md): is the configuration for this peer discovery. This value cannot be `null`. |
 | `listener` | [WifiP2pManager.ActionListener](../android/net/wifi/p2p/WifiP2pManager.ActionListener.md)?: for callbacks on success or failure. This value may be `null`. |
 | --- | --- |
 
@@ -1846,8 +1846,8 @@ The application must have `https://developer.android.com/reference/kotlin/androi
 | Parameters ||
 |---|---|
 | `channel` | [WifiP2pManager.Channel](../android/net/wifi/p2p/WifiP2pManager.Channel.md): is the channel created at `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager#initialize(android.content.Context,%20android.os.Looper,%20android.net.wifi.p2p.WifiP2pManager.ChannelListener)` This value cannot be `null`. |
-| `servInfo` | [WifiP2pServiceInfo](../android/net/wifi/p2p/nsd/WifiP2pServiceInfo.md): is a local service information. This value cannot be `null`. |
-| `config` | [WifiP2pUsdBasedLocalServiceAdvertisementConfig](../android/net/wifi/p2p/WifiP2pUsdBasedLocalServiceAdvertisementConfig.md): is the configuration for this service discovery advertisement. This value cannot be `null`. |
+| `servInfo` | [WifiP2pServiceInfo](../android.net.wifi.p2p.nsd/WifiP2pServiceInfo.md): is a local service information. This value cannot be `null`. |
+| `config` | [WifiP2pUsdBasedLocalServiceAdvertisementConfig](WifiP2pUsdBasedLocalServiceAdvertisementConfig.md): is the configuration for this service discovery advertisement. This value cannot be `null`. |
 | --- | --- |
 | `listener` | [WifiP2pManager.ActionListener](../android/net/wifi/p2p/WifiP2pManager.ActionListener.md)?: for callbacks on success or failure. Can be null. |
 
@@ -1931,7 +1931,7 @@ The application must have `https://developer.android.com/reference/kotlin/androi
 | Parameters ||
 |---|---|
 | `c` | [WifiP2pManager.Channel](../android/net/wifi/p2p/WifiP2pManager.Channel.md): It is the channel created at `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pManager#initialize(android.content.Context,%20android.os.Looper,%20android.net.wifi.p2p.WifiP2pManager.ChannelListener)`. This value cannot be `null`. |
-| `dirInfo` | [WifiP2pDirInfo](../android/net/wifi/p2p/WifiP2pDirInfo.md): `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDirInfo` to validate. This value cannot be `null`. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): The executor on which callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `dirInfo` | [WifiP2pDirInfo](WifiP2pDirInfo.md): `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDirInfo` to validate. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor on which callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | --- | --- |
-| `callback` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!, [Exception](../java/lang/Exception.md)!\>: An OutcomeReceiver callback for receiving the result via `https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#onResult(android.os.OutcomeReceiver.R)` indicating whether the DIR info of P2P device is of a paired device. {code true} for paired, `false` for not paired. When this API call fails due to permission issues, state machine is busy etc., `https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#onError(android.os.OutcomeReceiver.E)` is called. This value cannot be `null`. |
+| `callback` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!, [Exception](../java.lang/Exception.md)!\>: An OutcomeReceiver callback for receiving the result via `https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#onResult(android.os.OutcomeReceiver.R)` indicating whether the DIR info of P2P device is of a paired device. {code true} for paired, `false` for not paired. When this API call fails due to permission issues, state machine is busy etc., `https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#onError(android.os.OutcomeReceiver.E)` is called. This value cannot be `null`. |

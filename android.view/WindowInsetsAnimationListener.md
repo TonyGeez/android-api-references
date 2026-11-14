@@ -39,7 +39,7 @@ Called after a window insets animation has ended.
 
 | Parameters ||
 |---|---|
-| `animation` | [WindowInsetsAnimation](../android/view/WindowInsetsAnimation.md): The animation that has ended. This value cannot be `null`. |
+| `animation` | [WindowInsetsAnimation](WindowInsetsAnimation.md): The animation that has ended. This value cannot be `null`. |
 
 ### onPrepare
 
@@ -55,4 +55,4 @@ This is called before the final insets are dispatched to the view hierarchy via 
 
 | Parameters ||
 |---|---|
-| `animation` | [WindowInsetsAnimation](../android/view/WindowInsetsAnimation.md): The animation that is about to start. This value cannot be `null`. |
+| `animation` | [WindowInsetsAnimation](WindowInsetsAnimation.md): The animation that is about to start. This value cannot be `null`. |

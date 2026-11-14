@@ -4,7 +4,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # MeshSpecification
 
-Kotlin| [Java](../android/graphics/MeshSpecification.md) 
+Kotlin| [Java](MeshSpecification.md) 
 | --- | --- |
 
 ```
@@ -13,9 +13,9 @@ open class MeshSpecification
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.graphics.MeshSpecification](../android/graphics/MeshSpecification.md) |
+| ↳ | [android.graphics.MeshSpecification](MeshSpecification.md) |
 
-Class responsible for holding specifications for [Mesh](../android/graphics/Mesh.md) creations. This class generates a [MeshSpecification](../android/graphics/MeshSpecification.md) via the[MeshSpecification.make(Attribute[], int, Varying[], String, String)](https://developer.android.com/reference/kotlin/android/graphics/MeshSpecification#make(kotlin.Array,%20kotlin.Int,%20kotlin.Array,%20kotlin.String,%20kotlin.String))method, where multiple parameters to set up the mesh are supplied, including attributes, vertex stride, [Varying](../android/graphics/MeshSpecification.Varying.md), and vertex/fragment shaders. There are also additional methods to provide an optional [ColorSpace](../android/graphics/ColorSpace.md) as well as an alpha type. For example a vertex shader that leverages a [Varying](../android/graphics/MeshSpecification.Varying.md) may look like the following: 
+Class responsible for holding specifications for [Mesh](Mesh.md) creations. This class generates a [MeshSpecification](MeshSpecification.md) via the[MeshSpecification.make(Attribute[], int, Varying[], String, String)](https://developer.android.com/reference/kotlin/android/graphics/MeshSpecification#make(kotlin.Array,%20kotlin.Int,%20kotlin.Array,%20kotlin.String,%20kotlin.String))method, where multiple parameters to set up the mesh are supplied, including attributes, vertex stride, [Varying](../android/graphics/MeshSpecification.Varying.md), and vertex/fragment shaders. There are also additional methods to provide an optional [ColorSpace](ColorSpace.md) as well as an alpha type. For example a vertex shader that leverages a [Varying](../android/graphics/MeshSpecification.Varying.md) may look like the following: 
 
 ```kotlin
 Varyings main(const Attributes attributes) {
@@ -34,7 +34,7 @@ float2 main(const Varyings varyings, out float4 color) {
        }
   
 ```
-The color returned from this fragment shader is blended with the other parameters that are configured on the Paint object (ex. [Paint.setBlendMode(BlendMode)](../android/graphics/Paint.md))used to draw the mesh. The position returned in the fragment shader can be consumed by any following fragment shaders in the shader chain. See https://developer.android.com/develop/ui/views/graphics/agsl for more information regarding Android Graphics Shader Language. Note that there are several limitations on various mesh specifications: 1. The max amount of attributes allowed is 8. 2. The offset alignment length is 4 bytes. 2. The max stride length is 1024. 3. The max amount of varyings is 6. These should be kept in mind when generating a mesh specification, as exceeding them will lead to errors.
+The color returned from this fragment shader is blended with the other parameters that are configured on the Paint object (ex. [Paint.setBlendMode(BlendMode)](Paint.md))used to draw the mesh. The position returned in the fragment shader can be consumed by any following fragment shaders in the shader chain. See https://developer.android.com/develop/ui/views/graphics/agsl for more information regarding Android Graphics Shader Language. Note that there are several limitations on various mesh specifications: 1. The max amount of attributes allowed is 8. 2. The offset alignment length is 4 bytes. 2. The max stride length is 1024. 3. The max amount of varyings is 6. These should be kept in mind when generating a mesh specification, as exceeding them will lead to errors.
 
 <br />
 
@@ -47,24 +47,24 @@ The color returned from this fragment shader is blended with the other parameter
 
 | Constants ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ALPHA_TYPE_OPAQUE](../android/graphics/MeshSpecification.md) Pixel is opaque. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ALPHA_TYPE_PREMULTIPLIED](../android/graphics/MeshSpecification.md) Pixel components are premultiplied by alpha. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ALPHA_TYPE_UNKNOWN](../android/graphics/MeshSpecification.md) uninitialized. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ALPHA_TYPE_OPAQUE](MeshSpecification.md) Pixel is opaque. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ALPHA_TYPE_PREMULTIPLIED](MeshSpecification.md) Pixel components are premultiplied by alpha. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ALPHA_TYPE_UNKNOWN](MeshSpecification.md) uninitialized. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ALPHA_TYPE_UNPREMULTIPLIED](../android/graphics/MeshSpecification.md) Pixel components are independent of alpha. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_FLOAT](../android/graphics/MeshSpecification.md) Represents one float. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_FLOAT2](../android/graphics/MeshSpecification.md) Represents two floats. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ALPHA_TYPE_UNPREMULTIPLIED](MeshSpecification.md) Pixel components are independent of alpha. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_FLOAT](MeshSpecification.md) Represents one float. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_FLOAT2](MeshSpecification.md) Represents two floats. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_FLOAT3](../android/graphics/MeshSpecification.md) Represents three floats. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_FLOAT4](../android/graphics/MeshSpecification.md) Represents four floats. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_UBYTE4](../android/graphics/MeshSpecification.md) Represents four bytes. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_FLOAT3](MeshSpecification.md) Represents three floats. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_FLOAT4](MeshSpecification.md) Represents four floats. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_UBYTE4](MeshSpecification.md) Represents four bytes. |
 | --- | --- |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [MeshSpecification](../android/graphics/MeshSpecification.md) | [make](../android/graphics/MeshSpecification.md))`(`attributes:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [MeshSpecification.Attribute](../android/graphics/MeshSpecification.Attribute.md)!>`, `vertexStride:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `varyings:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [MeshSpecification.Varying](../android/graphics/MeshSpecification.Varying.md)!>`, `vertexShader:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `fragmentShader:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Creates a [MeshSpecification](../android/graphics/MeshSpecification.md) object for use within [Mesh](../android/graphics/Mesh.md). |
-| openstatic [MeshSpecification](../android/graphics/MeshSpecification.md) | [make](../android/graphics/MeshSpecification.md))`(`attributes:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [MeshSpecification.Attribute](../android/graphics/MeshSpecification.Attribute.md)!>`, `vertexStride:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `varyings:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [MeshSpecification.Varying](../android/graphics/MeshSpecification.Varying.md)!>`, `vertexShader:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `fragmentShader:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `colorSpace:` ` [ColorSpace](../android/graphics/ColorSpace.md)`)` Creates a [MeshSpecification](../android/graphics/MeshSpecification.md) object. |
-| openstatic [MeshSpecification](../android/graphics/MeshSpecification.md) | [make](../android/graphics/MeshSpecification.md))`(`attributes:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [MeshSpecification.Attribute](../android/graphics/MeshSpecification.Attribute.md)!>`, `vertexStride:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `varyings:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [MeshSpecification.Varying](../android/graphics/MeshSpecification.Varying.md)!>`, `vertexShader:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `fragmentShader:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `colorSpace:` ` [ColorSpace](../android/graphics/ColorSpace.md)`, `alphaType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a [MeshSpecification](../android/graphics/MeshSpecification.md) object. |
+| openstatic [MeshSpecification](MeshSpecification.md) | [make](MeshSpecification.md))`(`attributes:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [MeshSpecification.Attribute](../android/graphics/MeshSpecification.Attribute.md)!>`, `vertexStride:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `varyings:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [MeshSpecification.Varying](../android/graphics/MeshSpecification.Varying.md)!>`, `vertexShader:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `fragmentShader:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Creates a [MeshSpecification](MeshSpecification.md) object for use within [Mesh](Mesh.md). |
+| openstatic [MeshSpecification](MeshSpecification.md) | [make](MeshSpecification.md))`(`attributes:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [MeshSpecification.Attribute](../android/graphics/MeshSpecification.Attribute.md)!>`, `vertexStride:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `varyings:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [MeshSpecification.Varying](../android/graphics/MeshSpecification.Varying.md)!>`, `vertexShader:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `fragmentShader:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `colorSpace:` ` [ColorSpace](ColorSpace.md)`)` Creates a [MeshSpecification](MeshSpecification.md) object. |
+| openstatic [MeshSpecification](MeshSpecification.md) | [make](MeshSpecification.md))`(`attributes:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [MeshSpecification.Attribute](../android/graphics/MeshSpecification.Attribute.md)!>`, `vertexStride:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `varyings:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [MeshSpecification.Varying](../android/graphics/MeshSpecification.Varying.md)!>`, `vertexShader:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `fragmentShader:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `colorSpace:` ` [ColorSpace](ColorSpace.md)`, `alphaType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a [MeshSpecification](MeshSpecification.md) object. |
 | --- | --- |
 
 ## Constants
@@ -193,7 +193,7 @@ open static fun make(
 ): MeshSpecification
 ```
 
-Creates a [MeshSpecification](../android/graphics/MeshSpecification.md) object for use within [Mesh](../android/graphics/Mesh.md). This uses a default color space of [ColorSpace.Named.SRGB](../android/graphics/ColorSpace.Named.md) and alphaType of [ALPHA_TYPE_PREMULTIPLIED](../android/graphics/MeshSpecification.md).
+Creates a [MeshSpecification](MeshSpecification.md) object for use within [Mesh](Mesh.md). This uses a default color space of [ColorSpace.Named.SRGB](../android/graphics/ColorSpace.Named.md) and alphaType of [ALPHA_TYPE_PREMULTIPLIED](MeshSpecification.md).
 
 | Parameters ||
 |------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -201,12 +201,12 @@ Creates a [MeshSpecification](../android/graphics/MeshSpecification.md) object f
 | `vertexStride` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):length of vertex stride in bytes. This should be the size of a single vertex' attributes. Max of 1024 is accepted. Value is between 1 and 1024 inclusive |
 | `varyings` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [MeshSpecification.Varying](../android/graphics/MeshSpecification.Varying.md)!\>:List of varyings represented by [Varying](../android/graphics/MeshSpecification.Varying.md). Can hold a max of 6. Note that \`position\` is provided by default, does not need to be provided in the list, and does not count towards the 6 varyings allowed. This value cannot be`null`. |
 | --- | --- |
-| `vertexShader` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):vertex shader to be supplied to the mesh. Ensure that the position varying is set within the shader to get proper results. See [MeshSpecification](../android/graphics/MeshSpecification.md) for an example vertex shader implementation This value cannot be`null`. |
-| `fragmentShader` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):fragment shader to be supplied to the mesh. See [MeshSpecification](../android/graphics/MeshSpecification.md) for an example fragment shader implementation This value cannot be`null`. |
+| `vertexShader` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):vertex shader to be supplied to the mesh. Ensure that the position varying is set within the shader to get proper results. See [MeshSpecification](MeshSpecification.md) for an example vertex shader implementation This value cannot be`null`. |
+| `fragmentShader` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):fragment shader to be supplied to the mesh. See [MeshSpecification](MeshSpecification.md) for an example fragment shader implementation This value cannot be`null`. |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [MeshSpecification](../android/graphics/MeshSpecification.md) | [MeshSpecification](../android/graphics/MeshSpecification.md) object for use when creating [Mesh](../android/graphics/Mesh.md) This value cannot be`null`. |
+| [MeshSpecification](MeshSpecification.md) | [MeshSpecification](MeshSpecification.md) object for use when creating [Mesh](Mesh.md) This value cannot be`null`. |
 
 ### make
 
@@ -223,7 +223,7 @@ open static fun make(
 ): MeshSpecification
 ```
 
-Creates a [MeshSpecification](../android/graphics/MeshSpecification.md) object. This uses a default alphaType of [ALPHA_TYPE_PREMULTIPLIED](../android/graphics/MeshSpecification.md).
+Creates a [MeshSpecification](MeshSpecification.md) object. This uses a default alphaType of [ALPHA_TYPE_PREMULTIPLIED](MeshSpecification.md).
 
 | Parameters ||
 |------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -231,14 +231,14 @@ Creates a [MeshSpecification](../android/graphics/MeshSpecification.md) object. 
 | `vertexStride` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):length of vertex stride in bytes. This should be the size of a single vertex' attributes. Max of 1024 is accepted. Value is between 1 and 1024 inclusive |
 | `varyings` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [MeshSpecification.Varying](../android/graphics/MeshSpecification.Varying.md)!\>:List of varyings represented by [Varying](../android/graphics/MeshSpecification.Varying.md). Can hold a max of 6. Note that \`position\` is provided by default, does not need to be provided in the list, and does not count towards the 6 varyings allowed. This value cannot be`null`. |
 | --- | --- |
-| `vertexShader` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):vertex shader to be supplied to the mesh. Ensure that the position varying is set within the shader to get proper results. See [MeshSpecification](../android/graphics/MeshSpecification.md) for an example vertex shader implementation This value cannot be`null`. |
-| `fragmentShader` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):fragment shader to be supplied to the mesh. See [MeshSpecification](../android/graphics/MeshSpecification.md) for an example fragment shader implementation This value cannot be`null`. |
-| `colorSpace` | [ColorSpace](../android/graphics/ColorSpace.md): [ColorSpace](../android/graphics/ColorSpace.md) to tell what color space to work in. This value cannot be`null`. |
+| `vertexShader` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):vertex shader to be supplied to the mesh. Ensure that the position varying is set within the shader to get proper results. See [MeshSpecification](MeshSpecification.md) for an example vertex shader implementation This value cannot be`null`. |
+| `fragmentShader` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):fragment shader to be supplied to the mesh. See [MeshSpecification](MeshSpecification.md) for an example fragment shader implementation This value cannot be`null`. |
+| `colorSpace` | [ColorSpace](ColorSpace.md): [ColorSpace](ColorSpace.md) to tell what color space to work in. This value cannot be`null`. |
 | --- | --- |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [MeshSpecification](../android/graphics/MeshSpecification.md) | [MeshSpecification](../android/graphics/MeshSpecification.md) object for use when creating [Mesh](../android/graphics/Mesh.md) This value cannot be`null`. |
+| [MeshSpecification](MeshSpecification.md) | [MeshSpecification](MeshSpecification.md) object for use when creating [Mesh](Mesh.md) This value cannot be`null`. |
 
 ### make
 
@@ -256,7 +256,7 @@ open static fun make(
 ): MeshSpecification
 ```
 
-Creates a [MeshSpecification](../android/graphics/MeshSpecification.md) object.
+Creates a [MeshSpecification](MeshSpecification.md) object.
 
 | Parameters ||
 |------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -264,12 +264,12 @@ Creates a [MeshSpecification](../android/graphics/MeshSpecification.md) object.
 | `vertexStride` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):length of vertex stride in bytes. This should be the size of a single vertex' attributes. Max of 1024 is accepted. Value is between 1 and 1024 inclusive |
 | `varyings` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [MeshSpecification.Varying](../android/graphics/MeshSpecification.Varying.md)!\>:List of varyings represented by [Varying](../android/graphics/MeshSpecification.Varying.md). Can hold a max of 6. Note that \`position\` is provided by default, does not need to be provided in the list, and does not count towards the 6 varyings allowed. This value cannot be`null`. |
 | --- | --- |
-| `vertexShader` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):vertex shader to be supplied to the mesh. Ensure that the position varying is set within the shader to get proper results. See [MeshSpecification](../android/graphics/MeshSpecification.md) for an example vertex shader implementation This value cannot be`null`. |
-| `fragmentShader` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):fragment shader to be supplied to the mesh. See [MeshSpecification](../android/graphics/MeshSpecification.md) for an example fragment shader implementation This value cannot be`null`. |
-| `colorSpace` | [ColorSpace](../android/graphics/ColorSpace.md): [ColorSpace](../android/graphics/ColorSpace.md) to tell what color space to work in. This value cannot be`null`. |
+| `vertexShader` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):vertex shader to be supplied to the mesh. Ensure that the position varying is set within the shader to get proper results. See [MeshSpecification](MeshSpecification.md) for an example vertex shader implementation This value cannot be`null`. |
+| `fragmentShader` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):fragment shader to be supplied to the mesh. See [MeshSpecification](MeshSpecification.md) for an example fragment shader implementation This value cannot be`null`. |
+| `colorSpace` | [ColorSpace](ColorSpace.md): [ColorSpace](ColorSpace.md) to tell what color space to work in. This value cannot be`null`. |
 | --- | --- |
-| `alphaType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Describes how to interpret the alpha component for a pixel. Must be one of [MeshSpecification.ALPHA_TYPE_UNKNOWN](../android/graphics/MeshSpecification.md), [MeshSpecification.ALPHA_TYPE_OPAQUE](../android/graphics/MeshSpecification.md), [MeshSpecification.ALPHA_TYPE_PREMULTIPLIED](../android/graphics/MeshSpecification.md), or [MeshSpecification.ALPHA_TYPE_UNPREMULTIPLIED](../android/graphics/MeshSpecification.md) Value is [android.graphics.MeshSpecification#ALPHA_TYPE_UNKNOWN](../android/graphics/MeshSpecification.md), [android.graphics.MeshSpecification#ALPHA_TYPE_OPAQUE](../android/graphics/MeshSpecification.md), [android.graphics.MeshSpecification#ALPHA_TYPE_PREMULTIPLIED](../android/graphics/MeshSpecification.md), or [android.graphics.MeshSpecification#ALPHA_TYPE_UNPREMULTIPLIED](../android/graphics/MeshSpecification.md) |
+| `alphaType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Describes how to interpret the alpha component for a pixel. Must be one of [MeshSpecification.ALPHA_TYPE_UNKNOWN](MeshSpecification.md), [MeshSpecification.ALPHA_TYPE_OPAQUE](MeshSpecification.md), [MeshSpecification.ALPHA_TYPE_PREMULTIPLIED](MeshSpecification.md), or [MeshSpecification.ALPHA_TYPE_UNPREMULTIPLIED](MeshSpecification.md) Value is [android.graphics.MeshSpecification#ALPHA_TYPE_UNKNOWN](MeshSpecification.md), [android.graphics.MeshSpecification#ALPHA_TYPE_OPAQUE](MeshSpecification.md), [android.graphics.MeshSpecification#ALPHA_TYPE_PREMULTIPLIED](MeshSpecification.md), or [android.graphics.MeshSpecification#ALPHA_TYPE_UNPREMULTIPLIED](MeshSpecification.md) |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [MeshSpecification](../android/graphics/MeshSpecification.md) | [MeshSpecification](../android/graphics/MeshSpecification.md) object for use when creating [Mesh](../android/graphics/Mesh.md) This value cannot be`null`. |
+| [MeshSpecification](MeshSpecification.md) | [MeshSpecification](MeshSpecification.md) object for use when creating [Mesh](Mesh.md) This value cannot be`null`. |

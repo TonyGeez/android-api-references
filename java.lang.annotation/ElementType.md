@@ -10,21 +10,21 @@ class ElementType
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.lang.annotation.ElementType](../java/lang/annotation/ElementType.md)\> ||
-| | ↳ | [java.lang.annotation.ElementType](../java/lang/annotation/ElementType.md) |
+| ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.lang.annotation.ElementType](ElementType.md)\> ||
+| | ↳ | [java.lang.annotation.ElementType](ElementType.md) |
 
-| Known Direct Subclasses [ElementType.ANNOTATION_TYPE](../java/lang/annotation/ElementType.md), [ElementType.CONSTRUCTOR](../java/lang/annotation/ElementType.md), [ElementType.FIELD](../java/lang/annotation/ElementType.md), [ElementType.LOCAL_VARIABLE](../java/lang/annotation/ElementType.md), [ElementType.METHOD](../java/lang/annotation/ElementType.md), [ElementType.MODULE](../java/lang/annotation/ElementType.md), [ElementType.PACKAGE](../java/lang/annotation/ElementType.md), [ElementType.PARAMETER](../java/lang/annotation/ElementType.md), [ElementType.RECORD_COMPONENT](../java/lang/annotation/ElementType.md), [ElementType.TYPE](../java/lang/annotation/ElementType.md), [ElementType.TYPE_PARAMETER](../java/lang/annotation/ElementType.md), [ElementType.TYPE_USE](../java/lang/annotation/ElementType.md) |---------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------| | [ElementType.ANNOTATION_TYPE](../java/lang/annotation/ElementType.md) | Annotation interface declaration (Formerly known as an annotation type.) | | [ElementType.CONSTRUCTOR](../java/lang/annotation/ElementType.md) | Constructor declaration | | [ElementType.FIELD](../java/lang/annotation/ElementType.md) | Field declaration (includes enum constants) | | [ElementType.LOCAL_VARIABLE](../java/lang/annotation/ElementType.md) | Local variable declaration | | [ElementType.METHOD](../java/lang/annotation/ElementType.md) | Method declaration | | [ElementType.MODULE](../java/lang/annotation/ElementType.md) | Module declaration. | | [ElementType.PACKAGE](../java/lang/annotation/ElementType.md) | Package declaration | | [ElementType.PARAMETER](../java/lang/annotation/ElementType.md) | Formal parameter declaration | | [ElementType.RECORD_COMPONENT](../java/lang/annotation/ElementType.md) | Record component | | [ElementType.TYPE](../java/lang/annotation/ElementType.md) | Class, interface (including annotation interface), enum, or record declaration | | [ElementType.TYPE_PARAMETER](../java/lang/annotation/ElementType.md) | Type parameter declaration | | [ElementType.TYPE_USE](../java/lang/annotation/ElementType.md) | Use of a type | |
+| Known Direct Subclasses [ElementType.ANNOTATION_TYPE](ElementType.md), [ElementType.CONSTRUCTOR](ElementType.md), [ElementType.FIELD](ElementType.md), [ElementType.LOCAL_VARIABLE](ElementType.md), [ElementType.METHOD](ElementType.md), [ElementType.MODULE](ElementType.md), [ElementType.PACKAGE](ElementType.md), [ElementType.PARAMETER](ElementType.md), [ElementType.RECORD_COMPONENT](ElementType.md), [ElementType.TYPE](ElementType.md), [ElementType.TYPE_PARAMETER](ElementType.md), [ElementType.TYPE_USE](ElementType.md) |---------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------| | [ElementType.ANNOTATION_TYPE](ElementType.md) | Annotation interface declaration (Formerly known as an annotation type.) | | [ElementType.CONSTRUCTOR](ElementType.md) | Constructor declaration | | [ElementType.FIELD](ElementType.md) | Field declaration (includes enum constants) | | [ElementType.LOCAL_VARIABLE](ElementType.md) | Local variable declaration | | [ElementType.METHOD](ElementType.md) | Method declaration | | [ElementType.MODULE](ElementType.md) | Module declaration. | | [ElementType.PACKAGE](ElementType.md) | Package declaration | | [ElementType.PARAMETER](ElementType.md) | Formal parameter declaration | | [ElementType.RECORD_COMPONENT](ElementType.md) | Record component | | [ElementType.TYPE](ElementType.md) | Class, interface (including annotation interface), enum, or record declaration | | [ElementType.TYPE_PARAMETER](ElementType.md) | Type parameter declaration | | [ElementType.TYPE_USE](ElementType.md) | Use of a type | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-The constants of this enumerated class provide a simple classification of the syntactic locations where annotations may appear in a Java program. These constants are used in [Target](../java/lang/annotation/Target.md) meta-annotations to specify where it is legal to write annotations of a given type.
+The constants of this enumerated class provide a simple classification of the syntactic locations where annotations may appear in a Java program. These constants are used in [Target](Target.md) meta-annotations to specify where it is legal to write annotations of a given type.
 
 The syntactic locations where annotations may appear are split into*declaration contexts* , where annotations apply to declarations, and*type contexts*, where annotations apply to types used in declarations and expressions.
 
-The constants [ANNOTATION_TYPE](../java/lang/annotation/ElementType.md), [CONSTRUCTOR](../java/lang/annotation/ElementType.md), [FIELD](../java/lang/annotation/ElementType.md), [LOCAL_VARIABLE](../java/lang/annotation/ElementType.md), [METHOD](../java/lang/annotation/ElementType.md), [PACKAGE](../java/lang/annotation/ElementType.md), [MODULE](../java/lang/annotation/ElementType.md), [PARAMETER](../java/lang/annotation/ElementType.md), [TYPE](../java/lang/annotation/ElementType.md), and [TYPE_PARAMETER](../java/lang/annotation/ElementType.md) correspond to the declaration contexts in JLS 9.6.4.1.
+The constants [ANNOTATION_TYPE](ElementType.md), [CONSTRUCTOR](ElementType.md), [FIELD](ElementType.md), [LOCAL_VARIABLE](ElementType.md), [METHOD](ElementType.md), [PACKAGE](ElementType.md), [MODULE](ElementType.md), [PARAMETER](ElementType.md), [TYPE](ElementType.md), and [TYPE_PARAMETER](ElementType.md) correspond to the declaration contexts in JLS 9.6.4.1.
 
 For example, an annotation whose interface is meta-annotated with`@Target(ElementType.FIELD)`may only be written as a modifier for a field declaration.
 
-The constant [TYPE_USE](../java/lang/annotation/ElementType.md) corresponds to the type contexts in JLS 4.11, as well as to two declaration contexts: class and interface declarations (including annotation declarations) and type parameter declarations.
+The constant [TYPE_USE](ElementType.md) corresponds to the type contexts in JLS 4.11, as well as to two declaration contexts: class and interface declarations (including annotation declarations) and type parameter declarations.
 
 For example, an annotation whose interface is meta-annotated with`@Target(ElementType.TYPE_USE)`may be written on the class or interface of a field (or within the class or interface of the field, if it is a nested or parameterized class or interface, or array class), and may also appear as a modifier for, say, a class declaration.
 
@@ -34,18 +34,18 @@ The`TYPE_USE`constant includes class and interface declarations and type paramet
 
 | Enum values ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ANNOTATION_TYPE](../java/lang/annotation/ElementType.md) Annotation interface declaration (Formerly known as an annotation type.) |
-| [CONSTRUCTOR](../java/lang/annotation/ElementType.md) Constructor declaration |
-| [FIELD](../java/lang/annotation/ElementType.md) Field declaration (includes enum constants) |
-| [LOCAL_VARIABLE](../java/lang/annotation/ElementType.md) Local variable declaration |
-| [METHOD](../java/lang/annotation/ElementType.md) Method declaration |
-| [MODULE](../java/lang/annotation/ElementType.md) Module declaration. |
-| [PACKAGE](../java/lang/annotation/ElementType.md) Package declaration |
-| [PARAMETER](../java/lang/annotation/ElementType.md) Formal parameter declaration |
-| [RECORD_COMPONENT](../java/lang/annotation/ElementType.md) Record component |
-| [TYPE](../java/lang/annotation/ElementType.md) Class, interface (including annotation interface), enum, or record declaration |
-| [TYPE_PARAMETER](../java/lang/annotation/ElementType.md) Type parameter declaration |
-| [TYPE_USE](../java/lang/annotation/ElementType.md) Use of a type |
+| [ANNOTATION_TYPE](ElementType.md) Annotation interface declaration (Formerly known as an annotation type.) |
+| [CONSTRUCTOR](ElementType.md) Constructor declaration |
+| [FIELD](ElementType.md) Field declaration (includes enum constants) |
+| [LOCAL_VARIABLE](ElementType.md) Local variable declaration |
+| [METHOD](ElementType.md) Method declaration |
+| [MODULE](ElementType.md) Module declaration. |
+| [PACKAGE](ElementType.md) Package declaration |
+| [PARAMETER](ElementType.md) Formal parameter declaration |
+| [RECORD_COMPONENT](ElementType.md) Record component |
+| [TYPE](ElementType.md) Class, interface (including annotation interface), enum, or record declaration |
+| [TYPE_PARAMETER](ElementType.md) Type parameter declaration |
+| [TYPE_USE](ElementType.md) Use of a type |
 
 ## Enum values
 

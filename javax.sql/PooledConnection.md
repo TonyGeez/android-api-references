@@ -8,7 +8,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface PooledConnection
 ```
 
-| [javax.sql.PooledConnection](../javax/sql/PooledConnection.md) |
+| [javax.sql.PooledConnection](PooledConnection.md) |
 
 An object that provides hooks for connection pool management. A`PooledConnection`object represents a physical connection to a data source. The connection can be recycled rather than being closed when an application is finished with it, thus reducing the number of connections that need to be made.
 
@@ -30,13 +30,13 @@ A connection pool manager is often also a statement pool manager, maintining a p
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addConnectionEventListener](../javax/sql/PooledConnection.md))`(`listener:` ` [ConnectionEventListener](../javax/sql/ConnectionEventListener.md)!`)` Registers the given event listener so that it will be notified when an event occurs on this`PooledConnection`object. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addStatementEventListener](../javax/sql/PooledConnection.md))`(`listener:` ` [StatementEventListener](../javax/sql/StatementEventListener.md)!`)` Registers a`StatementEventListener`with this`PooledConnection`object. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../javax/sql/PooledConnection.md))`()` Closes the physical connection that this`PooledConnection`object represents. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addConnectionEventListener](PooledConnection.md))`(`listener:` ` [ConnectionEventListener](ConnectionEventListener.md)!`)` Registers the given event listener so that it will be notified when an event occurs on this`PooledConnection`object. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addStatementEventListener](PooledConnection.md))`(`listener:` ` [StatementEventListener](StatementEventListener.md)!`)` Registers a`StatementEventListener`with this`PooledConnection`object. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](PooledConnection.md))`()` Closes the physical connection that this`PooledConnection`object represents. |
 | --- | --- |
-| abstract [Connection](../java/sql/Connection.md)! | [getConnection](../javax/sql/PooledConnection.md))`()` Creates and returns a`Connection`object that is a handle for the physical connection that this`PooledConnection`object represents. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeConnectionEventListener](../javax/sql/PooledConnection.md))`(`listener:` ` [ConnectionEventListener](../javax/sql/ConnectionEventListener.md)!`)` Removes the given event listener from the list of components that will be notified when an event occurs on this`PooledConnection`object. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeStatementEventListener](../javax/sql/PooledConnection.md))`(`listener:` ` [StatementEventListener](../javax/sql/StatementEventListener.md)!`)` Removes the specified`StatementEventListener`from the list of components that will be notified when the driver detects that a`PreparedStatement`has been closed or is invalid. |
+| abstract [Connection](../java.sql/Connection.md)! | [getConnection](PooledConnection.md))`()` Creates and returns a`Connection`object that is a handle for the physical connection that this`PooledConnection`object represents. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeConnectionEventListener](PooledConnection.md))`(`listener:` ` [ConnectionEventListener](ConnectionEventListener.md)!`)` Removes the given event listener from the list of components that will be notified when an event occurs on this`PooledConnection`object. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeStatementEventListener](PooledConnection.md))`(`listener:` ` [StatementEventListener](StatementEventListener.md)!`)` Removes the specified`StatementEventListener`from the list of components that will be notified when the driver detects that a`PreparedStatement`has been closed or is invalid. |
 | --- | --- |
 
 ## Public methods
@@ -53,11 +53,11 @@ Registers the given event listener so that it will be notified when an event occ
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `listener` | [ConnectionEventListener](../javax/sql/ConnectionEventListener.md)!:a component, usually the connection pool manager, that has implemented the`ConnectionEventListener`interface and wants to be notified when the connection is closed or has an error |
+| `listener` | [ConnectionEventListener](ConnectionEventListener.md)!:a component, usually the connection pool manager, that has implemented the`ConnectionEventListener`interface and wants to be notified when the connection is closed or has an error |
 
 **See Also**
 
-- [#removeConnectionEventListener](../javax/sql/PooledConnection.md)) 
+- [#removeConnectionEventListener](PooledConnection.md)) 
 
 ### addStatementEventListener
 
@@ -73,7 +73,7 @@ Registers a`StatementEventListener`with this`PooledConnection`object. Components
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `listener` | [StatementEventListener](../javax/sql/StatementEventListener.md)!:an component which implements the`StatementEventListener`interface that is to be registered with this`PooledConnection`object <br /> |
+| `listener` | [StatementEventListener](StatementEventListener.md)!:an component which implements the`StatementEventListener`interface that is to be registered with this`PooledConnection`object <br /> |
 
 ### close
 
@@ -85,7 +85,7 @@ abstract fun close(): Unit
 
 Closes the physical connection that this`PooledConnection`object represents. An application never calls this method directly; it is called by the connection pool module, or manager.
 
-See the [interface description](../javax/sql/PooledConnection.md) for more information.
+See the [interface description](PooledConnection.md) for more information.
 
 | Exceptions ||
 |-----------------------------------|-------------------------------------------------|
@@ -100,11 +100,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun getConnection(): Connection!
 ```
 
-Creates and returns a`Connection`object that is a handle for the physical connection that this`PooledConnection`object represents. The connection pool manager calls this method when an application has called the method`DataSource.getConnection`and there are no`PooledConnection`objects available. See the [interface description](../javax/sql/PooledConnection.md) for more information.
+Creates and returns a`Connection`object that is a handle for the physical connection that this`PooledConnection`object represents. The connection pool manager calls this method when an application has called the method`DataSource.getConnection`and there are no`PooledConnection`objects available. See the [interface description](PooledConnection.md) for more information.
 
 | Return ||
 |-----------------------------------------------------------------------------------------|----------------------------------------------------------------------|
-| [Connection](../java/sql/Connection.md)! | a`Connection`object that is a handle to this`PooledConnection`object |
+| [Connection](../java.sql/Connection.md)! | a`Connection`object that is a handle to this`PooledConnection`object |
 
 | Exceptions ||
 |-----------------------------------|-------------------------------------------------|
@@ -123,11 +123,11 @@ Removes the given event listener from the list of components that will be notifi
 
 | Parameters ||
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `listener` | [ConnectionEventListener](../javax/sql/ConnectionEventListener.md)!:a component, usually the connection pool manager, that has implemented the`ConnectionEventListener`interface and been registered with this`PooledConnection`object as a listener |
+| `listener` | [ConnectionEventListener](ConnectionEventListener.md)!:a component, usually the connection pool manager, that has implemented the`ConnectionEventListener`interface and been registered with this`PooledConnection`object as a listener |
 
 **See Also**
 
-- [#addConnectionEventListener](../javax/sql/PooledConnection.md)) 
+- [#addConnectionEventListener](PooledConnection.md)) 
 
 ### removeStatementEventListener
 
@@ -143,4 +143,4 @@ Removes the specified`StatementEventListener`from the list of components that wi
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `listener` | [StatementEventListener](../javax/sql/StatementEventListener.md)!:the component which implements the`StatementEventListener`interface that was previously registered with this`PooledConnection`object <br /> |
+| `listener` | [StatementEventListener](StatementEventListener.md)!:the component which implements the`StatementEventListener`interface that was previously registered with this`PooledConnection`object <br /> |

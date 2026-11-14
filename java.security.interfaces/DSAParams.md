@@ -8,9 +8,9 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface DSAParams
 ```
 
-| [java.security.interfaces.DSAParams](../java/security/interfaces/DSAParams.md) |
+| [java.security.interfaces.DSAParams](DSAParams.md) |
 
-| Known Direct Subclasses [DSAParameterSpec](../java/security/spec/DSAParameterSpec.md) |--------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------| | [DSAParameterSpec](../java/security/spec/DSAParameterSpec.md) | This class specifies the set of parameters used with the DSA algorithm. | |
+| Known Direct Subclasses [DSAParameterSpec](../java.security.spec/DSAParameterSpec.md) |--------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------| | [DSAParameterSpec](../java.security.spec/DSAParameterSpec.md) | This class specifies the set of parameters used with the DSA algorithm. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 Interface to a DSA-specific set of key parameters, which defines a DSA*key family*. DSA (Digital Signature Algorithm) is defined in NIST's FIPS-186.
@@ -19,9 +19,9 @@ Interface to a DSA-specific set of key parameters, which defines a DSA*key famil
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| abstract [BigInteger](../java/math/BigInteger.md)! | [getG](../java/security/interfaces/DSAParams.md))`()` Returns the base,`g`. |
-| abstract [BigInteger](../java/math/BigInteger.md)! | [getP](../java/security/interfaces/DSAParams.md))`()` Returns the prime,`p`. |
-| abstract [BigInteger](../java/math/BigInteger.md)! | [getQ](../java/security/interfaces/DSAParams.md))`()` Returns the subprime,`q`. |
+| abstract [BigInteger](../java.math/BigInteger.md)! | [getG](DSAParams.md))`()` Returns the base,`g`. |
+| abstract [BigInteger](../java.math/BigInteger.md)! | [getP](DSAParams.md))`()` Returns the prime,`p`. |
+| abstract [BigInteger](../java.math/BigInteger.md)! | [getQ](DSAParams.md))`()` Returns the subprime,`q`. |
 | --- | --- |
 
 ## Public methods
@@ -38,7 +38,7 @@ Returns the base,`g`.
 
 | Return ||
 |------------------------------------------------------------------------------------------|---------------|
-| [BigInteger](../java/math/BigInteger.md)! | the base,`g`. |
+| [BigInteger](../java.math/BigInteger.md)! | the base,`g`. |
 
 ### getP
 
@@ -52,7 +52,7 @@ Returns the prime,`p`.
 
 | Return ||
 |------------------------------------------------------------------------------------------|----------------|
-| [BigInteger](../java/math/BigInteger.md)! | the prime,`p`. |
+| [BigInteger](../java.math/BigInteger.md)! | the prime,`p`. |
 
 ### getQ
 
@@ -66,4 +66,4 @@ Returns the subprime,`q`.
 
 | Return ||
 |------------------------------------------------------------------------------------------|-------------------|
-| [BigInteger](../java/math/BigInteger.md)! | the subprime,`q`. |
+| [BigInteger](../java.math/BigInteger.md)! | the subprime,`q`. |

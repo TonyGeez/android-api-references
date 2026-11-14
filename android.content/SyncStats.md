@@ -4,7 +4,7 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 
 # SyncStats
 
-Kotlin| [Java](../android/content/SyncStats.md) 
+Kotlin| [Java](SyncStats.md) 
 | --- | --- |
 
 ```
@@ -13,44 +13,44 @@ open class SyncStats : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.content.SyncStats](../android/content/SyncStats.md) |
+| ↳ | [android.content.SyncStats](SyncStats.md) |
 
-Used to record various statistics about the result of a sync operation. The SyncManager gets access to these via a [SyncResult](../android/content/SyncResult.md) and uses some of them to determine the disposition of the sync. See [SyncResult](../android/content/SyncResult.md) for further dicussion on how the SyncManager uses these values.
+Used to record various statistics about the result of a sync operation. The SyncManager gets access to these via a [SyncResult](SyncResult.md) and uses some of them to determine the disposition of the sync. See [SyncResult](SyncResult.md) for further dicussion on how the SyncManager uses these values.
 
 ## Summary
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android.os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android.os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android.os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SyncStats](../android/content/SyncStats.md))`()` <br /> |
-| [SyncStats](../android/content/SyncStats.md))`(`in:` ` [Parcel](../android/os/Parcel.md)!`)` <br /> |
+| [SyncStats](SyncStats.md))`()` <br /> |
+| [SyncStats](SyncStats.md))`(`in:` ` [Parcel](../android.os/Parcel.md)!`)` <br /> |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](../android/content/SyncStats.md))`()` Reset all the counters to 0. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/content/SyncStats.md))`()` <br /> |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/content/SyncStats.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](SyncStats.md))`()` Reset all the counters to 0. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](SyncStats.md))`()` <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](SyncStats.md))`()` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/content/SyncStats.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](SyncStats.md))`(`dest:` ` [Parcel](../android.os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [SyncStats](../android/content/SyncStats.md)!\> | [CREATOR](../android/content/SyncStats.md) <br /> |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [numAuthExceptions](../android/content/SyncStats.md) The SyncAdapter was unable to authenticate the [android.accounts.Account](../android/accounts/Account.md) that was specified in the request. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [numConflictDetectedExceptions](../android/content/SyncStats.md) The SyncAdapter detected that there was an unrecoverable version conflict when it attempted to update or delete a version of a resource on the server. |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [SyncStats](SyncStats.md)!\> | [CREATOR](SyncStats.md) <br /> |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [numAuthExceptions](SyncStats.md) The SyncAdapter was unable to authenticate the [android.accounts.Account](../android.accounts/Account.md) that was specified in the request. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [numConflictDetectedExceptions](SyncStats.md) The SyncAdapter detected that there was an unrecoverable version conflict when it attempted to update or delete a version of a resource on the server. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [numDeletes](../android/content/SyncStats.md) Counter for tracking how many deletes were performed by the sync operation, as defined by the SyncAdapter. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [numEntries](../android/content/SyncStats.md) Counter for tracking how many entries were affected by the sync operation, as defined by the SyncAdapter. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [numInserts](../android/content/SyncStats.md) Counter for tracking how many inserts were performed by the sync operation, as defined by the SyncAdapter. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [numDeletes](SyncStats.md) Counter for tracking how many deletes were performed by the sync operation, as defined by the SyncAdapter. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [numEntries](SyncStats.md) Counter for tracking how many entries were affected by the sync operation, as defined by the SyncAdapter. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [numInserts](SyncStats.md) Counter for tracking how many inserts were performed by the sync operation, as defined by the SyncAdapter. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [numIoExceptions](../android/content/SyncStats.md) The SyncAdapter had a problem, most likely with the network connectivity or a timeout while waiting for a network response. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [numParseExceptions](../android/content/SyncStats.md) The SyncAdapter had a problem with the data it received from the server or the storage later. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [numSkippedEntries](../android/content/SyncStats.md) Counter for tracking how many entries, either from the server or the local store, were ignored during the sync operation. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [numIoExceptions](SyncStats.md) The SyncAdapter had a problem, most likely with the network connectivity or a timeout while waiting for a network response. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [numParseExceptions](SyncStats.md) The SyncAdapter had a problem with the data it received from the server or the storage later. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [numSkippedEntries](SyncStats.md) Counter for tracking how many entries, either from the server or the local store, were ignored during the sync operation. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [numUpdates](../android/content/SyncStats.md) Counter for tracking how many updates were performed by the sync operation, as defined by the SyncAdapter. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [numUpdates](SyncStats.md) Counter for tracking how many updates were performed by the sync operation, as defined by the SyncAdapter. |
 
 ## Public constructors
 
@@ -92,7 +92,7 @@ open fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) |
 
 ### toString
 
@@ -119,8 +119,8 @@ open fun writeToParcel(
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](../android/os/Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android.os/Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 
@@ -140,7 +140,7 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 var numAuthExceptions: Long
 ```
 
-The SyncAdapter was unable to authenticate the [android.accounts.Account](../android/accounts/Account.md) that was specified in the request. The user needs to take some action to resolve before a future request can expect to succeed. This is considered a hard error. 
+The SyncAdapter was unable to authenticate the [android.accounts.Account](../android.accounts/Account.md) that was specified in the request. The user needs to take some action to resolve before a future request can expect to succeed. This is considered a hard error. 
 
 ### numConflictDetectedExceptions
 

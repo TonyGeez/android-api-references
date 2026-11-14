@@ -19,7 +19,7 @@ Interface definition for a callback to be invoked when colors change on a wallpa
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onColorsChanged](../android/app/WallpaperManager.OnColorsChangedListener.md))`(`colors:` ` [WallpaperColors](../android/app/WallpaperColors.md)?`, `which:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when colors change. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onColorsChanged](../android/app/WallpaperManager.OnColorsChangedListener.md))`(`colors:` ` [WallpaperColors](WallpaperColors.md)?`, `which:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when colors change. |
 
 ## Public methods
 
@@ -34,12 +34,12 @@ abstract fun onColorsChanged(
 ): Unit
 ```
 
-Called when colors change. A [android.app.WallpaperColors](../android/app/WallpaperColors.md) object containing a simplified color histogram will be given.
+Called when colors change. A [android.app.WallpaperColors](WallpaperColors.md) object containing a simplified color histogram will be given.
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `colors` | [WallpaperColors](../android/app/WallpaperColors.md)?:Wallpaper color info,`null`when not available. |
-| `which` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):A combination of [FLAG_LOCK](../android/app/WallpaperManager.md) and [FLAG_SYSTEM](../android/app/WallpaperManager.md) |
+| `colors` | [WallpaperColors](WallpaperColors.md)?:Wallpaper color info,`null`when not available. |
+| `which` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):A combination of [FLAG_LOCK](WallpaperManager.md) and [FLAG_SYSTEM](WallpaperManager.md) |
 
 **See Also**
 

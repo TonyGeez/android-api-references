@@ -11,7 +11,7 @@ class Byte : Number, Comparable<Byte!>
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
 | ↳ | [kotlin.Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html) ||
-| | ↳ | [java.lang.Byte](../java/lang/Byte.md) |
+| | ↳ | [java.lang.Byte](Byte.md) |
 
 The`Byte`class wraps a value of primitive type`byte`in an object. An object of type`Byte`contains a single field whose type is`byte`.
 
@@ -21,52 +21,52 @@ In addition, this class provides several methods for converting a`byte`to a`Stri
 
 | Constants ||
 |------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BYTES](../java/lang/Byte.md) The number of bytes used to represent a`byte`value in two's complement binary form. |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [MAX_VALUE](../java/lang/Byte.md) A constant holding the maximum value a`byte`can have, 27-1. |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [MIN_VALUE](../java/lang/Byte.md) A constant holding the minimum value a`byte`can have, -27. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BYTES](Byte.md) The number of bytes used to represent a`byte`value in two's complement binary form. |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [MAX_VALUE](Byte.md) A constant holding the maximum value a`byte`can have, 27-1. |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [MIN_VALUE](Byte.md) A constant holding the minimum value a`byte`can have, -27. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIZE](../java/lang/Byte.md) The number of bits used to represent a`byte`value in two's complement binary form. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIZE](Byte.md) The number of bits used to represent a`byte`value in two's complement binary form. |
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Byte](../java/lang/Byte.md))`(`value:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Constructs a newly allocated`Byte`object that represents the specified`byte`value. |
-| [Byte](../java/lang/Byte.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Constructs a newly allocated`Byte`object that represents the`byte`value indicated by the`String`parameter. |
+| [Byte](Byte.md))`(`value:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Constructs a newly allocated`Byte`object that represents the specified`byte`value. |
+| [Byte](Byte.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Constructs a newly allocated`Byte`object that represents the`byte`value indicated by the`String`parameter. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compare](../java/lang/Byte.md))`(`x:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`, `y:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Compares two`byte`values numerically. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](../java/lang/Byte.md))`(`other:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Compares two`Byte`objects numerically. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareUnsigned](../java/lang/Byte.md))`(`x:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`, `y:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Compares two`byte`values numerically treating the values as unsigned. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compare](Byte.md))`(`x:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`, `y:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Compares two`byte`values numerically. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](Byte.md))`(`other:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Compares two`Byte`objects numerically. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareUnsigned](Byte.md))`(`x:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`, `y:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Compares two`byte`values numerically treating the values as unsigned. |
 | --- | --- |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [decode](../java/lang/Byte.md))`(`nm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Decodes a`String`into a`Byte`. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/lang/Byte.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this object to the specified object. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/lang/Byte.md))`()` Returns a hash code for this`Byte`; equal to the result of invoking`intValue()`. |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [decode](Byte.md))`(`nm:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Decodes a`String`into a`Byte`. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](Byte.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this object to the specified object. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](Byte.md))`()` Returns a hash code for this`Byte`; equal to the result of invoking`intValue()`. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/lang/Byte.md))`(`value:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Returns a hash code for a`byte`value; compatible with`Byte.hashCode()`. |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [parseByte](../java/lang/Byte.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Parses the string argument as a signed decimal`byte`. |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [parseByte](../java/lang/Byte.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `radix:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Parses the string argument as a signed`byte`in the radix specified by the second argument. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](Byte.md))`(`value:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Returns a hash code for a`byte`value; compatible with`Byte.hashCode()`. |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [parseByte](Byte.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Parses the string argument as a signed decimal`byte`. |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [parseByte](Byte.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `radix:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Parses the string argument as a signed`byte`in the radix specified by the second argument. |
 | --- | --- |
-| [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [toByte](../java/lang/Byte.md))`()` Returns the value of this`Byte`as a`byte`. |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [toDouble](../java/lang/Byte.md))`()` Returns the value of this`Byte`as a`double`after a widening primitive conversion. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [toFloat](../java/lang/Byte.md))`()` Returns the value of this`Byte`as a`float`after a widening primitive conversion. |
+| [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [toByte](Byte.md))`()` Returns the value of this`Byte`as a`byte`. |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [toDouble](Byte.md))`()` Returns the value of this`Byte`as a`double`after a widening primitive conversion. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [toFloat](Byte.md))`()` Returns the value of this`Byte`as a`float`after a widening primitive conversion. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [toInt](../java/lang/Byte.md))`()` Returns the value of this`Byte`as an`int`after a widening primitive conversion. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toLong](../java/lang/Byte.md))`()` Returns the value of this`Byte`as a`long`after a widening primitive conversion. |
-| [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [toShort](../java/lang/Byte.md))`()` Returns the value of this`Byte`as a`short`after a widening primitive conversion. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [toInt](Byte.md))`()` Returns the value of this`Byte`as an`int`after a widening primitive conversion. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toLong](Byte.md))`()` Returns the value of this`Byte`as a`long`after a widening primitive conversion. |
+| [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [toShort](Byte.md))`()` Returns the value of this`Byte`as a`short`after a widening primitive conversion. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/lang/Byte.md))`()` Returns a`String`object representing this`Byte`'s value. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/lang/Byte.md))`(`b:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Returns a new`String`object representing the specified`byte`. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [toUnsignedInt](../java/lang/Byte.md))`(`x:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Converts the argument to an`int`by an unsigned conversion. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](Byte.md))`()` Returns a`String`object representing this`Byte`'s value. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](Byte.md))`(`b:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Returns a new`String`object representing the specified`byte`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [toUnsignedInt](Byte.md))`(`x:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Converts the argument to an`int`by an unsigned conversion. |
 | --- | --- |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toUnsignedLong](../java/lang/Byte.md))`(`x:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Converts the argument to a`long`by an unsigned conversion. |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [valueOf](../java/lang/Byte.md))`(`b:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Returns a`Byte`instance representing the specified`byte`value. |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [valueOf](../java/lang/Byte.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns a`Byte`object holding the value given by the specified`String`. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toUnsignedLong](Byte.md))`(`x:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Converts the argument to a`long`by an unsigned conversion. |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [valueOf](Byte.md))`(`b:` ` [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)`)` Returns a`Byte`instance representing the specified`byte`value. |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [valueOf](Byte.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns a`Byte`object holding the value given by the specified`String`. |
 | --- | --- |
-| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [valueOf](../java/lang/Byte.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `radix:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a`Byte`object holding the value extracted from the specified`String`when parsed with the radix given by the second argument. |
+| static [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [valueOf](Byte.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `radix:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a`Byte`object holding the value extracted from the specified`String`when parsed with the radix given by the second argument. |
 
 | Properties ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Class](../java/lang/Class.md)\< [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)!\>! | [TYPE](../java/lang/Byte.md) The`Class`instance representing the primitive type`byte`. |
+| static [Class](Class.md)\< [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)!\>! | [TYPE](Byte.md) The`Class`instance representing the primitive type`byte`. |
 
 ## Constants
 
@@ -128,7 +128,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 Byte(value: Byte)
 ```
 
-**Deprecated:** *It is rarely appropriate to use this constructor. The static factory [valueOf(byte)](../java/lang/Byte.md))is generally a better choice, as it is likely to yield significantly better space and time performance.*
+**Deprecated:** *It is rarely appropriate to use this constructor. The static factory [valueOf(byte)](Byte.md))is generally a better choice, as it is likely to yield significantly better space and time performance.*
 
 Constructs a newly allocated`Byte`object that represents the specified`byte`value.
 
@@ -144,7 +144,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 Byte(s: String)
 ```
 
-**Deprecated:** *It is rarely appropriate to use this constructor. Use [parseByte(java.lang.String)](../java/lang/Byte.md))to convert a string to a`byte`primitive, or use [valueOf(java.lang.String)](../java/lang/Byte.md))to convert a string to a`Byte`object.*
+**Deprecated:** *It is rarely appropriate to use this constructor. Use [parseByte(java.lang.String)](Byte.md))to convert a string to a`byte`primitive, or use [valueOf(java.lang.String)](Byte.md))to convert a string to a`Byte`object.*
 
 Constructs a newly allocated`Byte`object that represents the`byte`value indicated by the`String`parameter. The string is converted to a`byte`value in exactly the manner used by the`parseByte`method for radix 10.
 
@@ -257,7 +257,7 @@ Decodes a`String`into a`Byte`. Accepts decimal, hexadecimal, and octal numbers g
 
 <br />
 
-The sequence of characters following an optional sign and/or radix specifier ("`0x`", "`0X`", "", or leading zero) is parsed as by the`Byte.parseByte`method with the indicated radix (10, 16, or 8). This sequence of characters must represent a positive value or a [NumberFormatException](../java/lang/NumberFormatException.md) will be thrown. The result is negated if first character of the specified`String`is the minus sign. No whitespace characters are permitted in the`String`.
+The sequence of characters following an optional sign and/or radix specifier ("`0x`", "`0X`", "", or leading zero) is parsed as by the`Byte.parseByte`method with the indicated radix (10, 16, or 8). This sequence of characters must represent a positive value or a [NumberFormatException](NumberFormatException.md) will be thrown. The result is negated if first character of the specified`String`is the minus sign. No whitespace characters are permitted in the`String`.
 
 | Parameters ||
 |------|--------------------------------------------------------------------------------------------------------|
@@ -273,7 +273,7 @@ The sequence of characters following an optional sign and/or radix specifier ("`
 
 **See Also**
 
-- [java.lang.Byte#parseByte(java.lang.String, int)](../java/lang/Byte.md)) 
+- [java.lang.Byte#parseByte(java.lang.String, int)](Byte.md)) 
 
 ### equals
 
@@ -333,7 +333,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static fun parseByte(s: String): Byte
 ```
 
-Parses the string argument as a signed decimal`byte`. The characters in the string must all be decimal digits, except that the first character may be an ASCII minus sign`'-'`(`'\u005Cu002D'`) to indicate a negative value or an ASCII plus sign`'+'`(`'\u005Cu002B'`) to indicate a positive value. The resulting`byte`value is returned, exactly as if the argument and the radix 10 were given as arguments to the [parseByte(java.lang.String,int)](../java/lang/Byte.md))method.
+Parses the string argument as a signed decimal`byte`. The characters in the string must all be decimal digits, except that the first character may be an ASCII minus sign`'-'`(`'\u005Cu002D'`) to indicate a negative value or an ASCII plus sign`'+'`(`'\u005Cu002B'`) to indicate a positive value. The resulting`byte`value is returned, exactly as if the argument and the radix 10 were given as arguments to the [parseByte(java.lang.String,int)](Byte.md))method.
 
 | Parameters ||
 |-----|-------------------------------------------------------------------------------------------------------------------------------------------|
@@ -358,12 +358,12 @@ static fun parseByte(
 ): Byte
 ```
 
-Parses the string argument as a signed`byte`in the radix specified by the second argument. The characters in the string must all be digits, of the specified radix (as determined by whether [java.lang.Character#digit(char, * int)](../java/lang/Character.md))returns a nonnegative value) except that the first character may be an ASCII minus sign`'-'`(`'\u005Cu002D'`) to indicate a negative value or an ASCII plus sign`'+'`(`'\u005Cu002B'`) to indicate a positive value. The resulting`byte`value is returned.
+Parses the string argument as a signed`byte`in the radix specified by the second argument. The characters in the string must all be digits, of the specified radix (as determined by whether [java.lang.Character#digit(char, * int)](Character.md))returns a nonnegative value) except that the first character may be an ASCII minus sign`'-'`(`'\u005Cu002D'`) to indicate a negative value or an ASCII plus sign`'+'`(`'\u005Cu002B'`) to indicate a positive value. The resulting`byte`value is returned.
 
 An exception of type`NumberFormatException`is thrown if any of the following situations occurs:
 
 - The first argument is`null`or is a string of length zero.
-- The radix is either smaller than [java.lang.Character#MIN_RADIX](../java/lang/Character.md) or larger than [java.lang.Character#MAX_RADIX](../java/lang/Character.md).
+- The radix is either smaller than [java.lang.Character#MIN_RADIX](Character.md) or larger than [java.lang.Character#MAX_RADIX](Character.md).
 - Any character of the string is not a digit of the specified radix, except that the first character may be a minus sign`'-'`(`'\u005Cu002D'`) or plus sign`'+'`(`'\u005Cu002B'`) provided that the string is longer than length 1.
 - The value represented by the string is not a value of type`byte`.
 
@@ -472,7 +472,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun toString(): String
 ```
 
-Returns a`String`object representing this`Byte`'s value. The value is converted to signed decimal representation and returned as a string, exactly as if the`byte`value were given as an argument to the [java.lang.Byte#toString(byte)](../java/lang/Byte.md))method.
+Returns a`String`object representing this`Byte`'s value. The value is converted to signed decimal representation and returned as a string, exactly as if the`byte`value were given as an argument to the [java.lang.Byte#toString(byte)](Byte.md))method.
 
 | Return ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------|
@@ -498,7 +498,7 @@ Returns a new`String`object representing the specified`byte`. The radix is assum
 
 **See Also**
 
-- [java.lang.Integer#toString(int)](../java/lang/Integer.md)) 
+- [java.lang.Integer#toString(int)](Integer.md)) 
 
 ### toUnsignedInt
 
@@ -544,7 +544,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static fun valueOf(b: Byte): Byte
 ```
 
-Returns a`Byte`instance representing the specified`byte`value. If a new`Byte`instance is not required, this method should generally be used in preference to the constructor [Byte(byte)](../java/lang/Byte.md)), as this method is likely to yield significantly better space and time performance since all byte values are cached.
+Returns a`Byte`instance representing the specified`byte`value. If a new`Byte`instance is not required, this method should generally be used in preference to the constructor [Byte(byte)](Byte.md)), as this method is likely to yield significantly better space and time performance since all byte values are cached.
 
 | Parameters ||
 |-----|--------------------------------------------------------------------------------------------|
@@ -562,7 +562,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static fun valueOf(s: String): Byte
 ```
 
-Returns a`Byte`object holding the value given by the specified`String`. The argument is interpreted as representing a signed decimal`byte`, exactly as if the argument were given to the [parseByte(java.lang.String)](../java/lang/Byte.md))method. The result is a`Byte`object that represents the`byte`value specified by the string.
+Returns a`Byte`object holding the value given by the specified`String`. The argument is interpreted as representing a signed decimal`byte`, exactly as if the argument were given to the [parseByte(java.lang.String)](Byte.md))method. The result is a`Byte`object that represents the`byte`value specified by the string.
 
 In other words, this method returns a`Byte`object equal to the value of:
 `new Byte(Byte.parseByte(s))`
@@ -590,7 +590,7 @@ static fun valueOf(
 ): Byte
 ```
 
-Returns a`Byte`object holding the value extracted from the specified`String`when parsed with the radix given by the second argument. The first argument is interpreted as representing a signed`byte`in the radix specified by the second argument, exactly as if the argument were given to the [parseByte(java.lang.String,int)](../java/lang/Byte.md))method. The result is a`Byte`object that represents the`byte`value specified by the string.
+Returns a`Byte`object holding the value extracted from the specified`String`when parsed with the radix given by the second argument. The first argument is interpreted as representing a signed`byte`in the radix specified by the second argument, exactly as if the argument were given to the [parseByte(java.lang.String,int)](Byte.md))method. The result is a`Byte`object that represents the`byte`value specified by the string.
 
 In other words, this method returns a`Byte`object equal to the value of:
 `new Byte(Byte.parseByte(s, radix))`

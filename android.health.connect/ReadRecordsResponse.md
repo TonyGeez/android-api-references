@@ -4,7 +4,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # ReadRecordsResponse
 
-Kotlin| [Java](../android/health/connect/ReadRecordsResponse.md) 
+Kotlin| [Java](ReadRecordsResponse.md) 
 | --- | --- |
 
 ```
@@ -13,16 +13,16 @@ open class ReadRecordsResponse<T : Record!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.health.connect.ReadRecordsResponse](../android/health/connect/ReadRecordsResponse.md) |
+| ↳ | [android.health.connect.ReadRecordsResponse](ReadRecordsResponse.md) |
 
-Response containing list of Records for [HealthConnectManager.readRecords](../android/health/connect/HealthConnectManager.md)).
+Response containing list of Records for [HealthConnectManager.readRecords](HealthConnectManager.md)).
 
 ## Summary
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getNextPageToken](../android/health/connect/ReadRecordsResponse.md))`()` Returns a page token to read the next page of the result. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<T\> | [getRecords](../android/health/connect/ReadRecordsResponse.md))`()` <br /> |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getNextPageToken](ReadRecordsResponse.md))`()` Returns a page token to read the next page of the result. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<T\> | [getRecords](ReadRecordsResponse.md))`()` <br /> |
 
 ## Public methods
 

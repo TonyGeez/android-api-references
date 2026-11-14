@@ -4,7 +4,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # AppSearchManager
 
-Kotlin| [Java](../android/app/appsearch/AppSearchManager.md) 
+Kotlin| [Java](AppSearchManager.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class AppSearchManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.appsearch.AppSearchManager](../android/app/appsearch/AppSearchManager.md) |
+| ↳ | [android.app.appsearch.AppSearchManager](AppSearchManager.md) |
 
 Provides access to the centralized AppSearch index maintained by the system.
 
@@ -23,7 +23,7 @@ AppSearch is an offline, on-device search library for managing structured data f
 - An API for applications to explicitly grant read-access permission of their data to other applications.**See: [android.app.appsearch.SetSchemaRequest.Builder#setSchemaTypeVisibilityForPackage](../android/app/appsearch/SetSchemaRequest.Builder.md))**
 - An API for applications to opt into or out of having their data displayed on System UI surfaces by the System-designated global querier.**See: [android.app.appsearch.SetSchemaRequest.Builder#setSchemaTypeDisplayedBySystem](../android/app/appsearch/SetSchemaRequest.Builder.md))**
 
-Applications create a database by opening an [AppSearchSession](../android/app/appsearch/AppSearchSession.md).
+Applications create a database by opening an [AppSearchSession](AppSearchSession.md).
 
 Example: 
 
@@ -37,7 +37,7 @@ AppSearchManager appSearchManager = context.getSystemService(AppSearchManager.cl
   });
 ```
 
-After opening the session, a schema must be set in order to define the organizational structure of data. The schema is set by calling [AppSearchSession.setSchema](../android/app/appsearch/AppSearchSession.md)). The schema is composed of a collection of [AppSearchSchema](../android/app/appsearch/AppSearchSchema.md) objects, each of which defines a unique type of data.
+After opening the session, a schema must be set in order to define the organizational structure of data. The schema is set by calling [AppSearchSession.setSchema](AppSearchSession.md)). The schema is composed of a collection of [AppSearchSchema](AppSearchSchema.md) objects, each of which defines a unique type of data.
 
 Example: 
 
@@ -58,9 +58,9 @@ AppSearchSchema emailSchemaType = new AppSearchSchema.Builder("Email")
   });
 ```
 
-The basic unit of data in AppSearch is represented as a [GenericDocument](../android/app/appsearch/GenericDocument.md) object, containing an ID, namespace, time-to-live, score, and properties. A namespace organizes a logical group of documents. For example, a namespace can be created to group documents on a per-account basis. An ID identifies a single document within a namespace. The combination of namespace and ID uniquely identifies a [GenericDocument](../android/app/appsearch/GenericDocument.md) in the database.
+The basic unit of data in AppSearch is represented as a [GenericDocument](GenericDocument.md) object, containing an ID, namespace, time-to-live, score, and properties. A namespace organizes a logical group of documents. For example, a namespace can be created to group documents on a per-account basis. An ID identifies a single document within a namespace. The combination of namespace and ID uniquely identifies a [GenericDocument](GenericDocument.md) in the database.
 
-Once the schema has been set, [GenericDocument](../android/app/appsearch/GenericDocument.md) objects can be put into the database and indexed by calling [AppSearchSession.put](../android/app/appsearch/AppSearchSession.md)).
+Once the schema has been set, [GenericDocument](GenericDocument.md) objects can be put into the database and indexed by calling [AppSearchSession.put](AppSearchSession.md)).
 
 Example: 
 
@@ -81,11 +81,11 @@ Example:
   });
 ```
 
-Searching within the database is done by calling [AppSearchSession.search](../android/app/appsearch/AppSearchSession.md))and providing the query string to search for, as well as a [SearchSpec](../android/app/appsearch/SearchSpec.md).
+Searching within the database is done by calling [AppSearchSession.search](AppSearchSession.md))and providing the query string to search for, as well as a [SearchSpec](SearchSpec.md).
 
-Alternatively, [AppSearchSession.getByDocumentId](../android/app/appsearch/AppSearchSession.md))can be called to retrieve documents by namespace and ID.
+Alternatively, [AppSearchSession.getByDocumentId](AppSearchSession.md))can be called to retrieve documents by namespace and ID.
 
-Document removal is done either by time-to-live expiration, or explicitly calling a remove operation. Remove operations can be done by namespace and ID via [android.app.appsearch.AppSearchSession#remove(android.app.appsearch.RemoveByDocumentIdRequest,java.util.concurrent.Executor,android.app.appsearch.BatchResultCallback)](../android/app/appsearch/AppSearchSession.md)), or by query via [AppSearchSession.remove(String, SearchSpec, Executor, Consumer)](../android/app/appsearch/AppSearchSession.md)).
+Document removal is done either by time-to-live expiration, or explicitly calling a remove operation. Remove operations can be done by namespace and ID via [android.app.appsearch.AppSearchSession#remove(android.app.appsearch.RemoveByDocumentIdRequest,java.util.concurrent.Executor,android.app.appsearch.BatchResultCallback)](AppSearchSession.md)), or by query via [AppSearchSession.remove(String, SearchSpec, Executor, Consumer)](AppSearchSession.md)).
 
 ## Summary
 
@@ -95,9 +95,9 @@ Document removal is done either by time-to-live expiration, or explicitly callin
 
 | Public methods ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [createEnterpriseGlobalSearchSession](../android/app/appsearch/AppSearchManager.md))`(`executor:` ` [Executor](../java/util/concurrent/Executor.md)`, `callback:` ` [Consumer](../java/util/function/Consumer.md)< [AppSearchResult](../android/app/appsearch/AppSearchResult.md)< [EnterpriseGlobalSearchSession](../android/app/appsearch/EnterpriseGlobalSearchSession.md)!>!>`)` Creates a new [EnterpriseGlobalSearchSession](../android/app/appsearch/EnterpriseGlobalSearchSession.md) |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [createGlobalSearchSession](../android/app/appsearch/AppSearchManager.md))`(`executor:` ` [Executor](../java/util/concurrent/Executor.md)`, `callback:` ` [Consumer](../java/util/function/Consumer.md)< [AppSearchResult](../android/app/appsearch/AppSearchResult.md)< [GlobalSearchSession](../android/app/appsearch/GlobalSearchSession.md)!>!>`)` Creates a new [GlobalSearchSession](../android/app/appsearch/GlobalSearchSession.md). |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [createSearchSession](../android/app/appsearch/AppSearchManager.md))`(`searchContext:` ` [AppSearchManager.SearchContext](../android/app/appsearch/AppSearchManager.SearchContext.md)`, `executor:` ` [Executor](../java/util/concurrent/Executor.md)`, `callback:` ` [Consumer](../java/util/function/Consumer.md)< [AppSearchResult](../android/app/appsearch/AppSearchResult.md)< [AppSearchSession](../android/app/appsearch/AppSearchSession.md)!>!>`)` Creates a new [AppSearchSession](../android/app/appsearch/AppSearchSession.md). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [createEnterpriseGlobalSearchSession](AppSearchManager.md))`(`executor:` ` [Executor](../java.util.concurrent/Executor.md)`, `callback:` ` [Consumer](../java.util.function/Consumer.md)< [AppSearchResult](AppSearchResult.md)< [EnterpriseGlobalSearchSession](EnterpriseGlobalSearchSession.md)!>!>`)` Creates a new [EnterpriseGlobalSearchSession](EnterpriseGlobalSearchSession.md) |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [createGlobalSearchSession](AppSearchManager.md))`(`executor:` ` [Executor](../java.util.concurrent/Executor.md)`, `callback:` ` [Consumer](../java.util.function/Consumer.md)< [AppSearchResult](AppSearchResult.md)< [GlobalSearchSession](GlobalSearchSession.md)!>!>`)` Creates a new [GlobalSearchSession](GlobalSearchSession.md). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [createSearchSession](AppSearchManager.md))`(`searchContext:` ` [AppSearchManager.SearchContext](../android/app/appsearch/AppSearchManager.SearchContext.md)`, `executor:` ` [Executor](../java.util.concurrent/Executor.md)`, `callback:` ` [Consumer](../java.util.function/Consumer.md)< [AppSearchResult](AppSearchResult.md)< [AppSearchSession](AppSearchSession.md)!>!>`)` Creates a new [AppSearchSession](AppSearchSession.md). |
 | --- | --- |
 
 ## Public methods
@@ -114,7 +114,7 @@ open fun createEnterpriseGlobalSearchSession(
 ): Unit
 ```
 
-Creates a new [EnterpriseGlobalSearchSession](../android/app/appsearch/EnterpriseGlobalSearchSession.md)
+Creates a new [EnterpriseGlobalSearchSession](EnterpriseGlobalSearchSession.md)
 
 EnterpriseGlobalSearchSession queries data from the user's work profile, allowing apps running on the personal profile to access a limited subset of work profile data. Enterprise access must be explicitly enabled on schemas, and schemas may also specify additional permissions required for enterprise access.
 
@@ -122,8 +122,8 @@ This process requires an AppSearch native indexing file system. If it's not crea
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `executor` | [Executor](../java/util/concurrent/Executor.md):Executor on which to invoke the callback. This value cannot be`null`. Callback and listener events are dispatched through this [Executor](../java/util/concurrent/Executor.md), providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use [Context.getMainExecutor()](../android/content/Context.md)). Otherwise, provide an [Executor](../java/util/concurrent/Executor.md) that dispatches to an appropriate thread. |
-| `callback` | [Consumer](../java/util/function/Consumer.md)\< [AppSearchResult](../android/app/appsearch/AppSearchResult.md)\< [EnterpriseGlobalSearchSession](../android/app/appsearch/EnterpriseGlobalSearchSession.md)!\>!\>:The [AppSearchResult](../android/app/appsearch/AppSearchResult.md)\< [EnterpriseGlobalSearchSession](../android/app/appsearch/EnterpriseGlobalSearchSession.md)\> of performing this operation. Or a [AppSearchResult](../android/app/appsearch/AppSearchResult.md) with failure reason code and error information. This value cannot be`null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md):Executor on which to invoke the callback. This value cannot be`null`. Callback and listener events are dispatched through this [Executor](../java.util.concurrent/Executor.md), providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use [Context.getMainExecutor()](../android.content/Context.md)). Otherwise, provide an [Executor](../java.util.concurrent/Executor.md) that dispatches to an appropriate thread. |
+| `callback` | [Consumer](../java.util.function/Consumer.md)\< [AppSearchResult](AppSearchResult.md)\< [EnterpriseGlobalSearchSession](EnterpriseGlobalSearchSession.md)!\>!\>:The [AppSearchResult](AppSearchResult.md)\< [EnterpriseGlobalSearchSession](EnterpriseGlobalSearchSession.md)\> of performing this operation. Or a [AppSearchResult](AppSearchResult.md) with failure reason code and error information. This value cannot be`null`. |
 
 ### createGlobalSearchSession
 
@@ -136,14 +136,14 @@ open fun createGlobalSearchSession(
 ): Unit
 ```
 
-Creates a new [GlobalSearchSession](../android/app/appsearch/GlobalSearchSession.md).
+Creates a new [GlobalSearchSession](GlobalSearchSession.md).
 
 This process requires an AppSearch native indexing file system. If it's not created, the initialization process will create one under the user's credential encrypted directory.
 
 | Parameters ||
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `executor` | [Executor](../java/util/concurrent/Executor.md):Executor on which to invoke the callback. This value cannot be`null`. Callback and listener events are dispatched through this [Executor](../java/util/concurrent/Executor.md), providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use [Context.getMainExecutor()](../android/content/Context.md)). Otherwise, provide an [Executor](../java/util/concurrent/Executor.md) that dispatches to an appropriate thread. |
-| `callback` | [Consumer](../java/util/function/Consumer.md)\< [AppSearchResult](../android/app/appsearch/AppSearchResult.md)\< [GlobalSearchSession](../android/app/appsearch/GlobalSearchSession.md)!\>!\>:The [AppSearchResult](../android/app/appsearch/AppSearchResult.md)\< [GlobalSearchSession](../android/app/appsearch/GlobalSearchSession.md)\> of performing this operation. Or a [AppSearchResult](../android/app/appsearch/AppSearchResult.md) with failure reason code and error information. This value cannot be`null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md):Executor on which to invoke the callback. This value cannot be`null`. Callback and listener events are dispatched through this [Executor](../java.util.concurrent/Executor.md), providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use [Context.getMainExecutor()](../android.content/Context.md)). Otherwise, provide an [Executor](../java.util.concurrent/Executor.md) that dispatches to an appropriate thread. |
+| `callback` | [Consumer](../java.util.function/Consumer.md)\< [AppSearchResult](AppSearchResult.md)\< [GlobalSearchSession](GlobalSearchSession.md)!\>!\>:The [AppSearchResult](AppSearchResult.md)\< [GlobalSearchSession](GlobalSearchSession.md)\> of performing this operation. Or a [AppSearchResult](AppSearchResult.md) with failure reason code and error information. This value cannot be`null`. |
 
 ### createSearchSession
 
@@ -157,13 +157,13 @@ open fun createSearchSession(
 ): Unit
 ```
 
-Creates a new [AppSearchSession](../android/app/appsearch/AppSearchSession.md).
+Creates a new [AppSearchSession](AppSearchSession.md).
 
 This process requires an AppSearch native indexing file system. If it's not created, the initialization process will create one under the user's credential encrypted directory.
 
 | Parameters ||
 |-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `searchContext` | [AppSearchManager.SearchContext](../android/app/appsearch/AppSearchManager.SearchContext.md):The [SearchContext](../android/app/appsearch/AppSearchManager.SearchContext.md) contains all information to create a new [AppSearchSession](../android/app/appsearch/AppSearchSession.md) This value cannot be`null`. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md):Executor on which to invoke the callback. This value cannot be`null`. Callback and listener events are dispatched through this [Executor](../java/util/concurrent/Executor.md), providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use [Context.getMainExecutor()](../android/content/Context.md)). Otherwise, provide an [Executor](../java/util/concurrent/Executor.md) that dispatches to an appropriate thread. |
-| `callback` | [Consumer](../java/util/function/Consumer.md)\< [AppSearchResult](../android/app/appsearch/AppSearchResult.md)\< [AppSearchSession](../android/app/appsearch/AppSearchSession.md)!\>!\>:The [AppSearchResult](../android/app/appsearch/AppSearchResult.md)\< [AppSearchSession](../android/app/appsearch/AppSearchSession.md)\> of performing this operation. Or a [AppSearchResult](../android/app/appsearch/AppSearchResult.md) with failure reason code and error information. This value cannot be`null`. |
+| `searchContext` | [AppSearchManager.SearchContext](../android/app/appsearch/AppSearchManager.SearchContext.md):The [SearchContext](../android/app/appsearch/AppSearchManager.SearchContext.md) contains all information to create a new [AppSearchSession](AppSearchSession.md) This value cannot be`null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md):Executor on which to invoke the callback. This value cannot be`null`. Callback and listener events are dispatched through this [Executor](../java.util.concurrent/Executor.md), providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use [Context.getMainExecutor()](../android.content/Context.md)). Otherwise, provide an [Executor](../java.util.concurrent/Executor.md) that dispatches to an appropriate thread. |
+| `callback` | [Consumer](../java.util.function/Consumer.md)\< [AppSearchResult](AppSearchResult.md)\< [AppSearchSession](AppSearchSession.md)!\>!\>:The [AppSearchResult](AppSearchResult.md)\< [AppSearchSession](AppSearchSession.md)\> of performing this operation. Or a [AppSearchResult](AppSearchResult.md) with failure reason code and error information. This value cannot be`null`. |
 | --- | --- |

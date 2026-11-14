@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # HeaderViewListAdapter
 
-Kotlin| [Java](../android/widget/HeaderViewListAdapter.md) 
+Kotlin| [Java](HeaderViewListAdapter.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class HeaderViewListAdapter : Filterable, WrapperListAdapter
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.widget.HeaderViewListAdapter](../android/widget/HeaderViewListAdapter.md) |
+| ↳ | [android.widget.HeaderViewListAdapter](HeaderViewListAdapter.md) |
 
 ListAdapter used when a ListView has header views. This ListAdapter wraps another one and also keeps track of the header views and their associated data objects.
 
@@ -23,33 +23,33 @@ This is intended as a base class; you will probably not need to use this class d
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [HeaderViewListAdapter](../android/widget/HeaderViewListAdapter.md))`(`headerViewInfos:` ` [ArrayList](../java/util/ArrayList.md)< [ListView.FixedViewInfo](../android/widget/ListView.FixedViewInfo.md)!>!`, `footerViewInfos:` ` [ArrayList](../java/util/ArrayList.md)< [ListView.FixedViewInfo](../android/widget/ListView.FixedViewInfo.md)!>!`, `adapter:` ` [ListAdapter](../android/widget/ListAdapter.md)!`)` <br /> |
+| [HeaderViewListAdapter](HeaderViewListAdapter.md))`(`headerViewInfos:` ` [ArrayList](../java.util/ArrayList.md)< [ListView.FixedViewInfo](../android/widget/ListView.FixedViewInfo.md)!>!`, `footerViewInfos:` ` [ArrayList](../java.util/ArrayList.md)< [ListView.FixedViewInfo](../android/widget/ListView.FixedViewInfo.md)!>!`, `adapter:` ` [ListAdapter](ListAdapter.md)!`)` <br /> |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [areAllItemsEnabled](../android/widget/HeaderViewListAdapter.md))`()` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCount](../android/widget/HeaderViewListAdapter.md))`()` <br /> |
-| open [Filter](../android/widget/Filter.md)! | [getFilter](../android/widget/HeaderViewListAdapter.md))`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [areAllItemsEnabled](HeaderViewListAdapter.md))`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCount](HeaderViewListAdapter.md))`()` <br /> |
+| open [Filter](Filter.md)! | [getFilter](HeaderViewListAdapter.md))`()` <br /> |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFootersCount](../android/widget/HeaderViewListAdapter.md))`()` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHeadersCount](../android/widget/HeaderViewListAdapter.md))`()` <br /> |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getItem](../android/widget/HeaderViewListAdapter.md))`(`position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFootersCount](HeaderViewListAdapter.md))`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHeadersCount](HeaderViewListAdapter.md))`()` <br /> |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getItem](HeaderViewListAdapter.md))`(`position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getItemId](../android/widget/HeaderViewListAdapter.md))`(`position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getItemViewType](../android/widget/HeaderViewListAdapter.md))`(`position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| open [View](../android/view/View.md)! | [getView](../android/widget/HeaderViewListAdapter.md))`(`position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `convertView:` ` [View](../android/view/View.md)!`, `parent:` ` [ViewGroup](../android/view/ViewGroup.md)!`)` <br /> |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getItemId](HeaderViewListAdapter.md))`(`position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getItemViewType](HeaderViewListAdapter.md))`(`position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [View](../android.view/View.md)! | [getView](HeaderViewListAdapter.md))`(`position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `convertView:` ` [View](../android.view/View.md)!`, `parent:` ` [ViewGroup](../android.view/ViewGroup.md)!`)` <br /> |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getViewTypeCount](../android/widget/HeaderViewListAdapter.md))`()` <br /> |
-| open [ListAdapter](../android/widget/ListAdapter.md)! | [getWrappedAdapter](../android/widget/HeaderViewListAdapter.md))`()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasStableIds](../android/widget/HeaderViewListAdapter.md))`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getViewTypeCount](HeaderViewListAdapter.md))`()` <br /> |
+| open [ListAdapter](ListAdapter.md)! | [getWrappedAdapter](HeaderViewListAdapter.md))`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasStableIds](HeaderViewListAdapter.md))`()` <br /> |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](../android/widget/HeaderViewListAdapter.md))`()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEnabled](../android/widget/HeaderViewListAdapter.md))`(`position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerDataSetObserver](../android/widget/HeaderViewListAdapter.md))`(`observer:` ` [DataSetObserver](../android/database/DataSetObserver.md)!`)` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](HeaderViewListAdapter.md))`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEnabled](HeaderViewListAdapter.md))`(`position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerDataSetObserver](HeaderViewListAdapter.md))`(`observer:` ` [DataSetObserver](../android.database/DataSetObserver.md)!`)` <br /> |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeFooter](../android/widget/HeaderViewListAdapter.md))`(`v:` ` [View](../android/view/View.md)!`)` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeHeader](../android/widget/HeaderViewListAdapter.md))`(`v:` ` [View](../android/view/View.md)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterDataSetObserver](../android/widget/HeaderViewListAdapter.md))`(`observer:` ` [DataSetObserver](../android/database/DataSetObserver.md)!`)` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeFooter](HeaderViewListAdapter.md))`(`v:` ` [View](../android.view/View.md)!`)` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [removeHeader](HeaderViewListAdapter.md))`(`v:` ` [View](../android.view/View.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterDataSetObserver](HeaderViewListAdapter.md))`(`observer:` ` [DataSetObserver](../android.database/DataSetObserver.md)!`)` <br /> |
 | --- | --- |
 
 ## Public constructors
@@ -101,7 +101,7 @@ open fun getFilter(): Filter!
 
 | Return ||
 |---------------------------------------------------------------------------------|---------------------------------|
-| [Filter](../android/widget/Filter.md)! | a filter used to constrain data |
+| [Filter](Filter.md)! | a filter used to constrain data |
 
 ### getFootersCount
 
@@ -165,7 +165,7 @@ open fun getItemViewType(position: Int): Int
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | An integer representing the type of View. Two views should share the same type if one can be converted to the other in [getView](../android/widget/Adapter.md)). Note: Integers must be in the range 0 to [getViewTypeCount](../android/widget/Adapter.md))- 1. [IGNORE_ITEM_VIEW_TYPE](../android/widget/Adapter.md) can also be returned. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | An integer representing the type of View. Two views should share the same type if one can be converted to the other in [getView](Adapter.md)). Note: Integers must be in the range 0 to [getViewTypeCount](Adapter.md))- 1. [IGNORE_ITEM_VIEW_TYPE](Adapter.md) can also be returned. |
 
 ### getView
 
@@ -182,13 +182,13 @@ open fun getView(
 | Parameters ||
 |---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `position` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The position of the item within the adapter's data set of the item whose view we want. |
-| `convertView` | [View](../android/view/View.md)!:The old view to reuse, if possible. Note: You should check that this view is non-null and of an appropriate type before using. If it is not possible to convert this view to display the correct data, this method can create a new view. Heterogeneous lists can specify their number of view types, so that this View is always of the right type (see [getViewTypeCount()](../android/widget/Adapter.md))and [getItemViewType(int)](../android/widget/Adapter.md))). |
-| `parent` | [ViewGroup](../android/view/ViewGroup.md)!:The parent that this view will eventually be attached to |
+| `convertView` | [View](../android.view/View.md)!:The old view to reuse, if possible. Note: You should check that this view is non-null and of an appropriate type before using. If it is not possible to convert this view to display the correct data, this method can create a new view. Heterogeneous lists can specify their number of view types, so that this View is always of the right type (see [getViewTypeCount()](Adapter.md))and [getItemViewType(int)](Adapter.md))). |
+| `parent` | [ViewGroup](../android.view/ViewGroup.md)!:The parent that this view will eventually be attached to |
 | --- | --- |
 
 | Return ||
 |---------------------------------------------------------------------------------|-------------------------------------------------------------|
-| [View](../android/view/View.md)! | A View corresponding to the data at the specified position. |
+| [View](../android.view/View.md)! | A View corresponding to the data at the specified position. |
 
 ### getViewTypeCount
 
@@ -212,7 +212,7 @@ open fun getWrappedAdapter(): ListAdapter!
 
 | Return ||
 |-------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| [ListAdapter](../android/widget/ListAdapter.md)! | The [android.widget.ListAdapter](../android/widget/ListAdapter.md) wrapped by this adapter. |
+| [ListAdapter](ListAdapter.md)! | The [android.widget.ListAdapter](ListAdapter.md) wrapped by this adapter. |
 
 ### hasStableIds
 
@@ -264,7 +264,7 @@ open fun registerDataSetObserver(observer: DataSetObserver!): Unit
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `observer` | [DataSetObserver](../android/database/DataSetObserver.md)!:the object that gets notified when the data set changes. |
+| `observer` | [DataSetObserver](../android.database/DataSetObserver.md)!:the object that gets notified when the data set changes. |
 
 ### removeFooter
 
@@ -292,4 +292,4 @@ open fun unregisterDataSetObserver(observer: DataSetObserver!): Unit
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| `observer` | [DataSetObserver](../android/database/DataSetObserver.md)!:the object to unregister. |
+| `observer` | [DataSetObserver](../android.database/DataSetObserver.md)!:the object to unregister. |

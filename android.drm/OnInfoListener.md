@@ -24,7 +24,7 @@ Interface definition for a callback that receives status messages and warnings d
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onInfo](../android/drm/DrmManagerClient.OnInfoListener.md))`(`client:` ` [DrmManagerClient](../android/drm/DrmManagerClient.md)!`, `event:` ` [DrmInfoEvent](../android/drm/DrmInfoEvent.md)!`)` Called when the DRM framework sends status or warning information during registration and rights acquisition. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onInfo](../android/drm/DrmManagerClient.OnInfoListener.md))`(`client:` ` [DrmManagerClient](DrmManagerClient.md)!`, `event:` ` [DrmInfoEvent](DrmInfoEvent.md)!`)` Called when the DRM framework sends status or warning information during registration and rights acquisition. |
 
 ## Public methods
 
@@ -45,5 +45,5 @@ Called when the DRM framework sends status or warning information during registr
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `client` | [DrmManagerClient](../android/drm/DrmManagerClient.md)!:The`DrmManagerClient`instance. |
-| `event` | [DrmInfoEvent](../android/drm/DrmInfoEvent.md)!:The [DrmInfoEvent](../android/drm/DrmInfoEvent.md) instance that wraps the status information or warnings. |
+| `client` | [DrmManagerClient](DrmManagerClient.md)!:The`DrmManagerClient`instance. |
+| `event` | [DrmInfoEvent](DrmInfoEvent.md)!:The [DrmInfoEvent](DrmInfoEvent.md) instance that wraps the status information or warnings. |

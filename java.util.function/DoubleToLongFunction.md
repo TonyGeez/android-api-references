@@ -8,17 +8,17 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 @FunctionalInterface interface DoubleToLongFunction
 ```
 
-| [java.util.function.DoubleToLongFunction](../java/util/function/DoubleToLongFunction.md) |
+| [java.util.function.DoubleToLongFunction](DoubleToLongFunction.md) |
 
-Represents a function that accepts a double-valued argument and produces a long-valued result. This is the`double`-to-`long`primitive specialization for [Function](../java/util/function/Function.md).
+Represents a function that accepts a double-valued argument and produces a long-valued result. This is the`double`-to-`long`primitive specialization for [Function](Function.md).
 
-This is a [functional interface](../java/util/function/_package.md) whose functional method is [applyAsLong(double)](../java/util/function/DoubleToLongFunction.md)).
+This is a [functional interface](_package.md) whose functional method is [applyAsLong(double)](DoubleToLongFunction.md)).
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [applyAsLong](../java/util/function/DoubleToLongFunction.md))`(`value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Applies this function to the given argument. |
+| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [applyAsLong](DoubleToLongFunction.md))`(`value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Applies this function to the given argument. |
 
 ## Public methods
 

@@ -13,15 +13,15 @@ interface Callback
 
 | [android.view.ActionMode.Callback](../android/view/ActionMode.Callback.md) |
 
-| Known Direct Subclasses [AbsListView.MultiChoiceModeListener](../android/widget/AbsListView.MultiChoiceModeListener.md), [ActionMode.Callback2](../android/view/ActionMode.Callback2.md) |------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [AbsListView.MultiChoiceModeListener](../android/widget/AbsListView.MultiChoiceModeListener.md) | A MultiChoiceModeListener receives events for [AbsListView.CHOICE_MODE_MULTIPLE_MODAL](../android/widget/AbsListView.md). | | [ActionMode.Callback2](../android/view/ActionMode.Callback2.md) | Extension of [ActionMode.Callback](../android/view/ActionMode.Callback.md) to provide content rect information. | |
+| Known Direct Subclasses [AbsListView.MultiChoiceModeListener](../android/widget/AbsListView.MultiChoiceModeListener.md), [ActionMode.Callback2](../android/view/ActionMode.Callback2.md) |------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [AbsListView.MultiChoiceModeListener](../android/widget/AbsListView.MultiChoiceModeListener.md) | A MultiChoiceModeListener receives events for [AbsListView.CHOICE_MODE_MULTIPLE_MODAL](../android.widget/AbsListView.md). | | [ActionMode.Callback2](../android/view/ActionMode.Callback2.md) | Extension of [ActionMode.Callback](../android/view/ActionMode.Callback.md) to provide content rect information. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-Callback interface for action modes. Supplied to [View.startActionMode(Callback)](../android/view/View.md)), a Callback configures and handles events raised by a user's interaction with an action mode.
+Callback interface for action modes. Supplied to [View.startActionMode(Callback)](View.md)), a Callback configures and handles events raised by a user's interaction with an action mode.
 
 An action mode's lifecycle is as follows:
 
 - [Callback.onCreateActionMode(ActionMode, Menu)](../android/view/ActionMode.Callback.md))once on initial creation
-- [Callback.onPrepareActionMode(ActionMode, Menu)](../android/view/ActionMode.Callback.md))after creation and any time the [ActionMode](../android/view/ActionMode.md) is invalidated
+- [Callback.onPrepareActionMode(ActionMode, Menu)](../android/view/ActionMode.Callback.md))after creation and any time the [ActionMode](ActionMode.md) is invalidated
 - [Callback.onActionItemClicked(ActionMode, MenuItem)](../android/view/ActionMode.Callback.md))any time a contextual action button is clicked
 - [Callback.onDestroyActionMode(ActionMode)](../android/view/ActionMode.Callback.md))when the action mode is closed
 
@@ -29,11 +29,11 @@ An action mode's lifecycle is as follows:
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onActionItemClicked](../android/view/ActionMode.Callback.md))`(`mode:` ` [ActionMode](../android/view/ActionMode.md)!`, `item:` ` [MenuItem](../android/view/MenuItem.md)!`)` Called to report a user click on an action button. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onCreateActionMode](../android/view/ActionMode.Callback.md))`(`mode:` ` [ActionMode](../android/view/ActionMode.md)!`, `menu:` ` [Menu](../android/view/Menu.md)!`)` Called when action mode is first created. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDestroyActionMode](../android/view/ActionMode.Callback.md))`(`mode:` ` [ActionMode](../android/view/ActionMode.md)!`)` Called when an action mode is about to be exited and destroyed. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onActionItemClicked](../android/view/ActionMode.Callback.md))`(`mode:` ` [ActionMode](ActionMode.md)!`, `item:` ` [MenuItem](MenuItem.md)!`)` Called to report a user click on an action button. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onCreateActionMode](../android/view/ActionMode.Callback.md))`(`mode:` ` [ActionMode](ActionMode.md)!`, `menu:` ` [Menu](Menu.md)!`)` Called when action mode is first created. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDestroyActionMode](../android/view/ActionMode.Callback.md))`(`mode:` ` [ActionMode](ActionMode.md)!`)` Called when an action mode is about to be exited and destroyed. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onPrepareActionMode](../android/view/ActionMode.Callback.md))`(`mode:` ` [ActionMode](../android/view/ActionMode.md)!`, `menu:` ` [Menu](../android/view/Menu.md)!`)` Called to refresh an action mode's action menu whenever it is invalidated. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onPrepareActionMode](../android/view/ActionMode.Callback.md))`(`mode:` ` [ActionMode](ActionMode.md)!`, `menu:` ` [Menu](Menu.md)!`)` Called to refresh an action mode's action menu whenever it is invalidated. |
 
 ## Public methods
 
@@ -52,8 +52,8 @@ Called to report a user click on an action button.
 
 | Parameters ||
 |--------|--------------------------------------------------------------------------------------------------------------|
-| `mode` | [ActionMode](../android/view/ActionMode.md)!:The current ActionMode |
-| `item` | [MenuItem](../android/view/MenuItem.md)!:The item that was clicked |
+| `mode` | [ActionMode](ActionMode.md)!:The current ActionMode |
+| `item` | [MenuItem](MenuItem.md)!:The item that was clicked |
 
 | Return ||
 |------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
@@ -74,8 +74,8 @@ Called when action mode is first created. The menu supplied will be used to gene
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------|
-| `mode` | [ActionMode](../android/view/ActionMode.md)!:ActionMode being created |
-| `menu` | [Menu](../android/view/Menu.md)!:Menu used to populate action buttons |
+| `mode` | [ActionMode](ActionMode.md)!:ActionMode being created |
+| `menu` | [Menu](Menu.md)!:Menu used to populate action buttons |
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
@@ -93,7 +93,7 @@ Called when an action mode is about to be exited and destroyed.
 
 | Parameters ||
 |--------|------------------------------------------------------------------------------------------------------------------------------|
-| `mode` | [ActionMode](../android/view/ActionMode.md)!:The current ActionMode being destroyed |
+| `mode` | [ActionMode](ActionMode.md)!:The current ActionMode being destroyed |
 
 ### onPrepareActionMode
 
@@ -110,8 +110,8 @@ Called to refresh an action mode's action menu whenever it is invalidated.
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------------------|
-| `mode` | [ActionMode](../android/view/ActionMode.md)!:ActionMode being prepared |
-| `menu` | [Menu](../android/view/Menu.md)!:Menu used to populate action buttons |
+| `mode` | [ActionMode](ActionMode.md)!:ActionMode being prepared |
+| `menu` | [Menu](Menu.md)!:Menu used to populate action buttons |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------------|

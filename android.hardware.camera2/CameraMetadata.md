@@ -2,7 +2,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 
 # CameraMetadata
 
-Kotlin | [Java](../android/hardware/camera2/CameraMetadata.md)
+Kotlin | [Java](CameraMetadata.md)
 | --- | --- |
 
 ```
@@ -11,12 +11,12 @@ abstract class CameraMetadata<TKey : Any!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.hardware.camera2.CameraMetadata](../android/hardware/camera2/CameraMetadata.md) |
+| ↳ | [android.hardware.camera2.CameraMetadata](CameraMetadata.md) |
 
-| Known Direct Subclasses [CameraCharacteristics](../android/hardware/camera2/CameraCharacteristics.md), [CaptureRequest](../android/hardware/camera2/CaptureRequest.md), [CaptureResult](../android/hardware/camera2/CaptureResult.md) |---|---| | [CameraCharacteristics](../android/hardware/camera2/CameraCharacteristics.md) | The properties describing a `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice`. | | [CaptureRequest](../android/hardware/camera2/CaptureRequest.md) | An immutable package of settings and outputs needed to capture a single image from the camera device. | | [CaptureResult](../android/hardware/camera2/CaptureResult.md) | The subset of the results of a single image capture from the image sensor. | |
+| Known Direct Subclasses [CameraCharacteristics](CameraCharacteristics.md), [CaptureRequest](CaptureRequest.md), [CaptureResult](CaptureResult.md) |---|---| | [CameraCharacteristics](CameraCharacteristics.md) | The properties describing a `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraDevice`. | | [CaptureRequest](CaptureRequest.md) | An immutable package of settings and outputs needed to capture a single image from the camera device. | | [CaptureResult](CaptureResult.md) | The subset of the results of a single image capture from the image sensor. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [TotalCaptureResult](../android/hardware/camera2/TotalCaptureResult.md) |---|---| | [TotalCaptureResult](../android/hardware/camera2/TotalCaptureResult.md) | The total assembled results of a single image capture from the image sensor. | |
+| Known Indirect Subclasses [TotalCaptureResult](TotalCaptureResult.md) |---|---| | [TotalCaptureResult](TotalCaptureResult.md) | The total assembled results of a single image capture from the image sensor. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 The base class for camera controls and information.
@@ -3524,7 +3524,7 @@ static val INFO_SUPPORTED_HARDWARE_LEVEL_3: Int
 
 This camera device is capable of YUV reprocessing and RAW data capture, in addition to FULL-level capabilities.
 
-The stream configurations listed in the `LEVEL_3`, `RAW`, `FULL`, `LEGACY` and `LIMITED` [tables](../android/hardware/camera2/CameraDevice.md) in the documentation are guaranteed to be supported.
+The stream configurations listed in the `LEVEL_3`, `RAW`, `FULL`, `LEGACY` and `LIMITED` [tables](CameraDevice.md) in the documentation are guaranteed to be supported.
 
 The following additional capabilities are guaranteed to be supported:
 
@@ -3585,7 +3585,7 @@ static val INFO_SUPPORTED_HARDWARE_LEVEL_FULL: Int
 
 This camera device is capable of supporting advanced imaging applications.
 
-The stream configurations listed in the `FULL`, `LEGACY` and `LIMITED` [tables](../android/hardware/camera2/CameraDevice.md) in the documentation are guaranteed to be supported.
+The stream configurations listed in the `FULL`, `LEGACY` and `LIMITED` [tables](CameraDevice.md) in the documentation are guaranteed to be supported.
 
 A `FULL` device will support below capabilities:
 
@@ -3619,7 +3619,7 @@ static val INFO_SUPPORTED_HARDWARE_LEVEL_LEGACY: Int
 
 This camera device is running in backward compatibility mode.
 
-Only the stream configurations listed in the `LEGACY` [table](../android/hardware/camera2/CameraDevice.md) in the documentation are supported.
+Only the stream configurations listed in the `LEGACY` [table](CameraDevice.md) in the documentation are supported.
 
 A `LEGACY` device does not support per-frame control, manual sensor control, manual post-processing, arbitrary cropping regions, and has relaxed performance constraints. No additional capabilities beyond `BACKWARD_COMPATIBLE` will ever be listed by a `LEGACY` device in `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#REQUEST_AVAILABLE_CAPABILITIES:android.hardware.camera2.CameraCharacteristics.Key`.
 
@@ -3645,7 +3645,7 @@ static val INFO_SUPPORTED_HARDWARE_LEVEL_LIMITED: Int
 
 This camera device does not have enough capabilities to qualify as a `FULL` device or better.
 
-Only the stream configurations listed in the `LEGACY` and `LIMITED` [tables](../android/hardware/camera2/CameraDevice.md) in the documentation are guaranteed to be supported.
+Only the stream configurations listed in the `LEGACY` and `LIMITED` [tables](CameraDevice.md) in the documentation are guaranteed to be supported.
 
 All `LIMITED` devices support the `BACKWARDS_COMPATIBLE` capability, indicating basic support for color image capture. The only exception is that the device may alternatively support only the `DEPTH_OUTPUT` capability, if it can only output depth measurements and not color images.
 
@@ -4218,7 +4218,7 @@ static val REQUEST_AVAILABLE_CAPABILITIES_DYNAMIC_RANGE_TEN_BIT: Int
 The device supports one or more 10-bit camera outputs according to the dynamic range profiles specified in `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/DynamicRangeProfiles#getSupportedProfiles()`. They can be configured as part of the capture session initialization via `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/OutputConfiguration#setDynamicRangeProfile(kotlin.Long)`. Cameras that enable this capability must also support the following:
 
 - Profile `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/DynamicRangeProfiles#HLG10:kotlin.Long`
-- All mandatory stream combinations for this specific capability as per [documentation](../android/hardware/camera2/CameraDevice.md)
+- All mandatory stream combinations for this specific capability as per [documentation](CameraDevice.md)
 - In case the device is not able to capture some combination of supported standard 8-bit and/or 10-bit dynamic range profiles within the same capture request, then those constraints must be listed in `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/DynamicRangeProfiles#getProfileCaptureRequestConstraints(kotlin.Long)`
 - Recommended dynamic range profile listed in `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#REQUEST_RECOMMENDED_TEN_BIT_DYNAMIC_RANGE_PROFILE:android.hardware.camera2.CameraCharacteristics.Key`.
 
@@ -4688,7 +4688,7 @@ This capability requires the camera device to support the following stream use c
 
 `https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraCharacteristics#SCALER_AVAILABLE_STREAM_USE_CASES:android.hardware.camera2.CameraCharacteristics.Key` lists all of the supported stream use cases.
 
-Refer to the [guideline](../android/hardware/camera2/CameraDevice.md) for the mandatory stream combinations involving stream use cases, which can also be queried via `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/MandatoryStreamCombination`.
+Refer to the [guideline](CameraDevice.md) for the mandatory stream combinations involving stream use cases, which can also be queried via `https://developer.android.com/reference/kotlin/android/hardware/camera2/params/MandatoryStreamCombination`.
 
  Value: 19
 

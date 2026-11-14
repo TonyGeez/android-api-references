@@ -8,9 +8,9 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface LexicalHandler
 ```
 
-| [org.xml.sax.ext.LexicalHandler](../org/xml/sax/ext/LexicalHandler.md) |
+| [org.xml.sax.ext.LexicalHandler](LexicalHandler.md) |
 
-| Known Direct Subclasses [DefaultHandler2](../org/xml/sax/ext/DefaultHandler2.md), [TransformerHandler](../javax/xml/transform/sax/TransformerHandler.md) |-----------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [DefaultHandler2](../org/xml/sax/ext/DefaultHandler2.md) | This class extends the SAX2 base handler class to support the SAX2 [LexicalHandler](../org/xml/sax/ext/LexicalHandler.md), [DeclHandler](../org/xml/sax/ext/DeclHandler.md), and [EntityResolver2](../org/xml/sax/ext/EntityResolver2.md) extensions. | | [TransformerHandler](../javax/xml/transform/sax/TransformerHandler.md) | A TransformerHandler listens for SAX ContentHandler parse events and transforms them to a Result. | |
+| Known Direct Subclasses [DefaultHandler2](DefaultHandler2.md), [TransformerHandler](../javax.xml.transform.sax/TransformerHandler.md) |-----------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [DefaultHandler2](DefaultHandler2.md) | This class extends the SAX2 base handler class to support the SAX2 [LexicalHandler](LexicalHandler.md), [DeclHandler](DeclHandler.md), and [EntityResolver2](EntityResolver2.md) extensions. | | [TransformerHandler](../javax.xml.transform.sax/TransformerHandler.md) | A TransformerHandler listens for SAX ContentHandler parse events and transforms them to a Result. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 SAX2 extension handler for lexical events.*This module, both source code and documentation, is in the Public Domain, and comes with**NO WARRANTY**.* See<http://www.saxproject.org>for further information.
@@ -19,21 +19,21 @@ This is an optional extension handler for SAX2 to provide lexical information ab
 
 The events in the lexical handler apply to the entire document, not just to the document element, and all lexical handler events must appear between the content handler's startDocument and endDocument events.
 
-To set the LexicalHandler for an XML reader, use the [setProperty](../org/xml/sax/XMLReader.md))method with the property name`http://xml.org/sax/properties/lexical-handler`and an object implementing this interface (or null) as the value. If the reader does not report lexical events, it will throw a [SAXNotRecognizedException](../org/xml/sax/SAXNotRecognizedException.md) when you attempt to register the handler.
+To set the LexicalHandler for an XML reader, use the [setProperty](../org.xml.sax/XMLReader.md))method with the property name`http://xml.org/sax/properties/lexical-handler`and an object implementing this interface (or null) as the value. If the reader does not report lexical events, it will throw a [SAXNotRecognizedException](../org.xml.sax/SAXNotRecognizedException.md) when you attempt to register the handler.
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [comment](../org/xml/sax/ext/LexicalHandler.md))`(`ch:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Report an XML comment anywhere in the document. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [endCDATA](../org/xml/sax/ext/LexicalHandler.md))`()` Report the end of a CDATA section. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [endDTD](../org/xml/sax/ext/LexicalHandler.md))`()` Report the end of DTD declarations. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [comment](LexicalHandler.md))`(`ch:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Report an XML comment anywhere in the document. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [endCDATA](LexicalHandler.md))`()` Report the end of a CDATA section. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [endDTD](LexicalHandler.md))`()` Report the end of DTD declarations. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [endEntity](../org/xml/sax/ext/LexicalHandler.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Report the end of an entity. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startCDATA](../org/xml/sax/ext/LexicalHandler.md))`()` Report the start of a CDATA section. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startDTD](../org/xml/sax/ext/LexicalHandler.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `publicId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Report the start of DTD declarations, if any. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [endEntity](LexicalHandler.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Report the end of an entity. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startCDATA](LexicalHandler.md))`()` Report the start of a CDATA section. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startDTD](LexicalHandler.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `publicId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Report the start of DTD declarations, if any. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startEntity](../org/xml/sax/ext/LexicalHandler.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Report the beginning of some internal and external XML entities. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startEntity](LexicalHandler.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Report the beginning of some internal and external XML entities. |
 
 ## Public methods
 
@@ -80,7 +80,7 @@ Report the end of a CDATA section.
 
 **See Also**
 
-- [#startCDATA](../org/xml/sax/ext/LexicalHandler.md)) 
+- [#startCDATA](LexicalHandler.md)) 
 
 ### endDTD
 
@@ -100,7 +100,7 @@ This method is intended to report the end of the DOCTYPE declaration; if the doc
 
 **See Also**
 
-- [#startDTD](../org/xml/sax/ext/LexicalHandler.md)) 
+- [#startDTD](LexicalHandler.md)) 
 
 ### endEntity
 
@@ -122,7 +122,7 @@ Report the end of an entity.
 
 **See Also**
 
-- [#startEntity](../org/xml/sax/ext/LexicalHandler.md)) 
+- [#startEntity](LexicalHandler.md)) 
 
 ### startCDATA
 
@@ -134,7 +134,7 @@ abstract fun startCDATA(): Unit
 
 Report the start of a CDATA section.
 
-The contents of the CDATA section will be reported through the regular [characters](../org/xml/sax/ContentHandler.md))event; this event is intended only to report the boundary.
+The contents of the CDATA section will be reported through the regular [characters](../org.xml.sax/ContentHandler.md))event; this event is intended only to report the boundary.
 
 | Exceptions ||
 |----------------------------|-----------------------------------------|
@@ -142,7 +142,7 @@ The contents of the CDATA section will be reported through the regular [characte
 
 **See Also**
 
-- [#endCDATA](../org/xml/sax/ext/LexicalHandler.md)) 
+- [#endCDATA](LexicalHandler.md)) 
 
 ### startDTD
 
@@ -160,9 +160,9 @@ Report the start of DTD declarations, if any.
 
 This method is intended to report the beginning of the DOCTYPE declaration; if the document has no DOCTYPE declaration, this method will not be invoked.
 
-All declarations reported through [DTDHandler](../org/xml/sax/DTDHandler.md) or [DeclHandler](../org/xml/sax/ext/DeclHandler.md) events must appear between the startDTD and [endDTD](../org/xml/sax/ext/LexicalHandler.md))events. Declarations are assumed to belong to the internal DTD subset unless they appear between [startEntity](../org/xml/sax/ext/LexicalHandler.md))and [endEntity](../org/xml/sax/ext/LexicalHandler.md))events. Comments and processing instructions from the DTD should also be reported between the startDTD and endDTD events, in their original order of (logical) occurrence; they are not required to appear in their correct locations relative to DTDHandler or DeclHandler events, however.
+All declarations reported through [DTDHandler](../org.xml.sax/DTDHandler.md) or [DeclHandler](DeclHandler.md) events must appear between the startDTD and [endDTD](LexicalHandler.md))events. Declarations are assumed to belong to the internal DTD subset unless they appear between [startEntity](LexicalHandler.md))and [endEntity](LexicalHandler.md))events. Comments and processing instructions from the DTD should also be reported between the startDTD and endDTD events, in their original order of (logical) occurrence; they are not required to appear in their correct locations relative to DTDHandler or DeclHandler events, however.
 
-Note that the start/endDTD events will appear within the start/endDocument events from ContentHandler and before the first [startElement](../org/xml/sax/ContentHandler.md))event.
+Note that the start/endDTD events will appear within the start/endDocument events from ContentHandler and before the first [startElement](../org.xml.sax/ContentHandler.md))event.
 
 | Parameters ||
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -177,8 +177,8 @@ Note that the start/endDTD events will appear within the start/endDocument event
 
 **See Also**
 
-- [#endDTD](../org/xml/sax/ext/LexicalHandler.md))
-- [#startEntity](../org/xml/sax/ext/LexicalHandler.md)) 
+- [#endDTD](LexicalHandler.md))
+- [#startEntity](LexicalHandler.md)) 
 
 ### startEntity
 
@@ -194,9 +194,9 @@ The reporting of parameter entities (including the external DTD subset) is optio
 
 General entities are reported with their regular names, parameter entities have '%' prepended to their names, and the external DTD subset has the pseudo-entity name "\[dtd\]".
 
-When a SAX2 driver is providing these events, all other events must be properly nested within start/end entity events. There is no additional requirement that events from [DeclHandler](../org/xml/sax/ext/DeclHandler.md) or [DTDHandler](../org/xml/sax/DTDHandler.md) be properly ordered.
+When a SAX2 driver is providing these events, all other events must be properly nested within start/end entity events. There is no additional requirement that events from [DeclHandler](DeclHandler.md) or [DTDHandler](../org.xml.sax/DTDHandler.md) be properly ordered.
 
-Note that skipped entities will be reported through the [skippedEntity](../org/xml/sax/ContentHandler.md))event, which is part of the ContentHandler interface.
+Note that skipped entities will be reported through the [skippedEntity](../org.xml.sax/ContentHandler.md))event, which is part of the ContentHandler interface.
 
 Because of the streaming event model that SAX uses, some entity boundaries cannot be reported under any circumstances:
 
@@ -219,6 +219,6 @@ All start/endEntity events must be properly nested.
 
 **See Also**
 
-- [#endEntity](../org/xml/sax/ext/LexicalHandler.md))
-- [org.xml.sax.ext.DeclHandler#internalEntityDecl](../org/xml/sax/ext/DeclHandler.md))
-- [org.xml.sax.ext.DeclHandler#externalEntityDecl](../org/xml/sax/ext/DeclHandler.md))
+- [#endEntity](LexicalHandler.md))
+- [org.xml.sax.ext.DeclHandler#internalEntityDecl](DeclHandler.md))
+- [org.xml.sax.ext.DeclHandler#externalEntityDecl](DeclHandler.md))

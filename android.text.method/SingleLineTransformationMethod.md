@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # SingleLineTransformationMethod
 
-Kotlin| [Java](../android/text/method/SingleLineTransformationMethod.md) 
+Kotlin| [Java](SingleLineTransformationMethod.md) 
 | --- | --- |
 
 ```
@@ -13,8 +13,8 @@ open class SingleLineTransformationMethod : ReplacementTransformationMethod
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.text.method.ReplacementTransformationMethod](../android/text/method/ReplacementTransformationMethod.md) ||
-| | ↳ | [android.text.method.SingleLineTransformationMethod](../android/text/method/SingleLineTransformationMethod.md) |
+| ↳ | [android.text.method.ReplacementTransformationMethod](ReplacementTransformationMethod.md) ||
+| | ↳ | [android.text.method.SingleLineTransformationMethod](SingleLineTransformationMethod.md) |
 
 This transformation method causes any newline characters (\\n) to be displayed as spaces instead of causing line breaks, and causes carriage return characters (\\r) to have no appearance.
 
@@ -22,20 +22,20 @@ This transformation method causes any newline characters (\\n) to be displayed a
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SingleLineTransformationMethod](../android/text/method/SingleLineTransformationMethod.md))`()` <br /> |
+| [SingleLineTransformationMethod](SingleLineTransformationMethod.md))`()` <br /> |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [SingleLineTransformationMethod](../android/text/method/SingleLineTransformationMethod.md)! | [getInstance](../android/text/method/SingleLineTransformationMethod.md))`()` <br /> |
+| openstatic [SingleLineTransformationMethod](SingleLineTransformationMethod.md)! | [getInstance](SingleLineTransformationMethod.md))`()` <br /> |
 
 | Protected methods ||
 |----------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)! | [getOriginal](../android/text/method/SingleLineTransformationMethod.md))`()` The characters to be replaced are \\n and \\r. |
-| open [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)! | [getReplacement](../android/text/method/SingleLineTransformationMethod.md))`()` The character \\n is replaced with is space; the character \\r is replaced with is FEFF (zero width space). |
+| open [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)! | [getOriginal](SingleLineTransformationMethod.md))`()` The characters to be replaced are \\n and \\r. |
+| open [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)! | [getReplacement](SingleLineTransformationMethod.md))`()` The character \\n is replaced with is space; the character \\r is replaced with is FEFF (zero width space). |
 
 | Inherited functions ||
 |---|---|
-| From class [ReplacementTransformationMethod](../android/text/method/ReplacementTransformationMethod.md) |------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [getTransformation](../android/text/method/ReplacementTransformationMethod.md))`(`source:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `v:` ` [View](../android/view/View.md)!`)` <br /> Returns a CharSequence that will mirror the contents of the source CharSequence but with the characters in [getOriginal](../android/text/method/ReplacementTransformationMethod.md))replaced by ones from [getReplacement](../android/text/method/ReplacementTransformationMethod.md)). <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onFocusChanged](../android/text/method/ReplacementTransformationMethod.md))`(`view:` ` [View](../android/view/View.md)!`, `sourceText:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `focused:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `direction:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `previouslyFocusedRect:` ` [Rect](../android/graphics/Rect.md)!`)` <br /> | ||
+| From class [ReplacementTransformationMethod](ReplacementTransformationMethod.md) |------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [getTransformation](ReplacementTransformationMethod.md))`(`source:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `v:` ` [View](../android.view/View.md)!`)` <br /> Returns a CharSequence that will mirror the contents of the source CharSequence but with the characters in [getOriginal](ReplacementTransformationMethod.md))replaced by ones from [getReplacement](ReplacementTransformationMethod.md)). <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onFocusChanged](ReplacementTransformationMethod.md))`(`view:` ` [View](../android.view/View.md)!`, `sourceText:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `focused:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `direction:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `previouslyFocusedRect:` ` [Rect](../android.graphics/Rect.md)!`)` <br /> | ||
 
 ## Public constructors
 

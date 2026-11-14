@@ -54,11 +54,11 @@ Columns in the Data table.
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [IS_SUPER_PRIMARY](../android/provider/ContactsContract.DataColumns.md) Whether this is the primary entry of its kind for the aggregate contact it belongs to. |
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [MIMETYPE](../android/provider/ContactsContract.DataColumns.md) The MIME type of the item represented by this row. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [PREFERRED_PHONE_ACCOUNT_COMPONENT_NAME](../android/provider/ContactsContract.DataColumns.md) The flattened [android.content.ComponentName](../android/content/ComponentName.md) of a that is the preferred`PhoneAccountHandle`to call the contact with. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [PREFERRED_PHONE_ACCOUNT_COMPONENT_NAME](../android/provider/ContactsContract.DataColumns.md) The flattened [android.content.ComponentName](../android.content/ComponentName.md) of a that is the preferred`PhoneAccountHandle`to call the contact with. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [PREFERRED_PHONE_ACCOUNT_ID](../android/provider/ContactsContract.DataColumns.md) The ID of a that is the preferred`PhoneAccountHandle`to call the contact with. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [RAW_CONTACT_ID](../android/provider/ContactsContract.DataColumns.md) A reference to the [RawContacts._ID](../android/provider/BaseColumns.md) that this data belongs to. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [RES_PACKAGE](../android/provider/ContactsContract.DataColumns.md) The package name to use when creating [Resources](../android/content/res/Resources.md) objects for this data row. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [RAW_CONTACT_ID](../android/provider/ContactsContract.DataColumns.md) A reference to the [RawContacts._ID](BaseColumns.md) that this data belongs to. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [RES_PACKAGE](../android/provider/ContactsContract.DataColumns.md) The package name to use when creating [Resources](../android.content.res/Resources.md) objects for this data row. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SYNC1](../android/provider/ContactsContract.DataColumns.md) Generic column for use by sync adapters. |
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SYNC2](../android/provider/ContactsContract.DataColumns.md) Generic column for use by sync adapters. |
@@ -77,7 +77,7 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 static val CARRIER_PRESENCE: String
 ```
 
-**Deprecated:** *The contacts database will only show presence information on devices where [android.telephony.CarrierConfigManager#KEY_USE_RCS_PRESENCE_BOOL](../android/telephony/CarrierConfigManager.md) is true, otherwise use [android.telephony.ims.RcsUceAdapter](../android/telephony/ims/RcsUceAdapter.md).*
+**Deprecated:** *The contacts database will only show presence information on devices where [android.telephony.CarrierConfigManager#KEY_USE_RCS_PRESENCE_BOOL](../android.telephony/CarrierConfigManager.md) is true, otherwise use [android.telephony.ims.RcsUceAdapter](../android.telephony.ims/RcsUceAdapter.md).*
 
 Carrier presence information.
 
@@ -316,7 +316,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 static val IS_READ_ONLY: String
 ```
 
-The "read-only" flag: "0" by default, "1" if the row cannot be modified or deleted except by a sync adapter. See [ContactsContract.CALLER_IS_SYNCADAPTER](../android/provider/ContactsContract.md).
+The "read-only" flag: "0" by default, "1" if the row cannot be modified or deleted except by a sync adapter. See [ContactsContract.CALLER_IS_SYNCADAPTER](ContactsContract.md).
 
 Type: INTEGER 
 
@@ -356,19 +356,19 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 static val PREFERRED_PHONE_ACCOUNT_COMPONENT_NAME: String
 ```
 
-The flattened [android.content.ComponentName](../android/content/ComponentName.md) of a that is the preferred`PhoneAccountHandle`to call the contact with.
+The flattened [android.content.ComponentName](../android.content/ComponentName.md) of a that is the preferred`PhoneAccountHandle`to call the contact with.
 
-On a multi-SIM device this field can be used in a [CommonDataKinds.Phone](../android/provider/ContactsContract.CommonDataKinds.Phone.md) row to indicate the [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md) to call the number with, instead of using [android.telecom.TelecomManager#getDefaultOutgoingPhoneAccount(String)](../android/telecom/TelecomManager.md))or asking every time.
+On a multi-SIM device this field can be used in a [CommonDataKinds.Phone](../android/provider/ContactsContract.CommonDataKinds.Phone.md) row to indicate the [PhoneAccountHandle](../android.telecom/PhoneAccountHandle.md) to call the number with, instead of using [android.telecom.TelecomManager#getDefaultOutgoingPhoneAccount(String)](../android.telecom/TelecomManager.md))or asking every time.
 
-[android.telecom.TelecomManager#placeCall(Uri, android.os.Bundle)](../android/telecom/TelecomManager.md))should be called with [android.telecom.TelecomManager#EXTRA_PHONE_ACCOUNT_HANDLE](../android/telecom/TelecomManager.md) set to the [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md) using the [ComponentName](../android/content/ComponentName.md) from this field. 
+[android.telecom.TelecomManager#placeCall(Uri, android.os.Bundle)](../android.telecom/TelecomManager.md))should be called with [android.telecom.TelecomManager#EXTRA_PHONE_ACCOUNT_HANDLE](../android.telecom/TelecomManager.md) set to the [PhoneAccountHandle](../android.telecom/PhoneAccountHandle.md) using the [ComponentName](../android.content/ComponentName.md) from this field. 
 
  Value: "preferred_phone_account_component_name"
 
 **See Also**
 
 - [#PREFERRED_PHONE_ACCOUNT_ID](../android/provider/ContactsContract.DataColumns.md)
-- [android.telecom.PhoneAccountHandle#getComponentName()](../android/telecom/PhoneAccountHandle.md))
-- [android.content.ComponentName#flattenToString()](../android/content/ComponentName.md)) 
+- [android.telecom.PhoneAccountHandle#getComponentName()](../android.telecom/PhoneAccountHandle.md))
+- [android.content.ComponentName#flattenToString()](../android.content/ComponentName.md)) 
 
 ### PREFERRED_PHONE_ACCOUNT_ID
 
@@ -380,16 +380,16 @@ static val PREFERRED_PHONE_ACCOUNT_ID: String
 
 The ID of a that is the preferred`PhoneAccountHandle`to call the contact with. Used by [CommonDataKinds.Phone](../android/provider/ContactsContract.CommonDataKinds.Phone.md).
 
-On a multi-SIM device this field can be used in a [CommonDataKinds.Phone](../android/provider/ContactsContract.CommonDataKinds.Phone.md) row to indicate the [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md) to call the number with, instead of using [android.telecom.TelecomManager#getDefaultOutgoingPhoneAccount(String)](../android/telecom/TelecomManager.md))or asking every time.
+On a multi-SIM device this field can be used in a [CommonDataKinds.Phone](../android/provider/ContactsContract.CommonDataKinds.Phone.md) row to indicate the [PhoneAccountHandle](../android.telecom/PhoneAccountHandle.md) to call the number with, instead of using [android.telecom.TelecomManager#getDefaultOutgoingPhoneAccount(String)](../android.telecom/TelecomManager.md))or asking every time.
 
-[android.telecom.TelecomManager#placeCall(Uri, android.os.Bundle)](../android/telecom/TelecomManager.md))should be called with [android.telecom.TelecomManager#EXTRA_PHONE_ACCOUNT_HANDLE](../android/telecom/TelecomManager.md) set to the [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md) using the id from this field. 
+[android.telecom.TelecomManager#placeCall(Uri, android.os.Bundle)](../android.telecom/TelecomManager.md))should be called with [android.telecom.TelecomManager#EXTRA_PHONE_ACCOUNT_HANDLE](../android.telecom/TelecomManager.md) set to the [PhoneAccountHandle](../android.telecom/PhoneAccountHandle.md) using the id from this field. 
 
  Value: "preferred_phone_account_id"
 
 **See Also**
 
 - [#PREFERRED_PHONE_ACCOUNT_COMPONENT_NAME](../android/provider/ContactsContract.DataColumns.md)
-- [android.telecom.PhoneAccountHandle#getId()](../android/telecom/PhoneAccountHandle.md)) 
+- [android.telecom.PhoneAccountHandle#getId()](../android.telecom/PhoneAccountHandle.md)) 
 
 ### RAW_CONTACT_ID
 
@@ -399,7 +399,7 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 static val RAW_CONTACT_ID: String
 ```
 
-A reference to the [RawContacts._ID](../android/provider/BaseColumns.md) that this data belongs to. 
+A reference to the [RawContacts._ID](BaseColumns.md) that this data belongs to. 
 
  Value: "raw_contact_id"
 
@@ -411,7 +411,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val RES_PACKAGE: String
 ```
 
-The package name to use when creating [Resources](../android/content/res/Resources.md) objects for this data row. This value is only designed for use when building user interfaces, and should not be used to infer the owner. 
+The package name to use when creating [Resources](../android.content.res/Resources.md) objects for this data row. This value is only designed for use when building user interfaces, and should not be used to infer the owner. 
 
  Value: "res_package"
 

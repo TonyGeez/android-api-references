@@ -8,7 +8,7 @@ class DisplayLuts
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.hardware.DisplayLuts](../android/hardware/DisplayLuts.md) |
+| ↳ | [android.hardware.DisplayLuts](DisplayLuts.md) |
 
 DisplayLuts provides the developers to apply Lookup Tables (Luts) to a `https://developer.android.com/reference/kotlin/android/view/SurfaceControl.html#`. Luts provides ways to control tonemapping for specific content. The general flow for how DisplayLuts fits into a display pipeline is as follows:
 

@@ -4,7 +4,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 
 # NdefRecord
 
-Kotlin| [Java](../android/nfc/NdefRecord.md) 
+Kotlin| [Java](NdefRecord.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class NdefRecord : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.nfc.NdefRecord](../android/nfc/NdefRecord.md) |
+| ↳ | [android.nfc.NdefRecord](NdefRecord.md) |
 
 Represents an immutable NDEF Record.
 
@@ -29,78 +29,78 @@ A logical NDEF Record always contains a 3-bit TNF (Type Name Field) that provide
 - *id*: identifier meta-data, not commonly used
 - *payload*: the actual payload
 
-Helpers such as android.nfc.NdefRecord#createUri, [NdefRecord.createMime](../android/nfc/NdefRecord.md))and [NdefRecord.createExternal](../android/nfc/NdefRecord.md))are included to create well-formatted NDEF Records with correctly set tnf, type, id and payload fields, please use these helpers whenever possible.
+Helpers such as android.nfc.NdefRecord#createUri, [NdefRecord.createMime](NdefRecord.md))and [NdefRecord.createExternal](NdefRecord.md))are included to create well-formatted NDEF Records with correctly set tnf, type, id and payload fields, please use these helpers whenever possible.
 
 Use the constructor[NdefRecord(short,byte[],byte[],byte[])](https://developer.android.com/reference/kotlin/android/nfc/NdefRecord#NdefRecord(kotlin.Short,%20kotlin.ByteArray,%20kotlin.ByteArray,%20kotlin.ByteArray))if you know what you are doing and what to set the fields individually. Only basic validation is performed with this constructor, so it is possible to create records that do not confirm to the strict NFC Forum specifications.
 
-The binary representation of an NDEF Record includes additional flags to indicate location with an NDEF message, provide support for chunking of NDEF records, and to pack optional fields. This class does not expose those details. To write an NDEF Record as binary you must first put it into an [NdefMessage](../android/nfc/NdefMessage.md), then call [NdefMessage.toByteArray()](../android/nfc/NdefMessage.md)).
+The binary representation of an NDEF Record includes additional flags to indicate location with an NDEF message, provide support for chunking of NDEF records, and to pack optional fields. This class does not expose those details. To write an NDEF Record as binary you must first put it into an [NdefMessage](NdefMessage.md), then call [NdefMessage.toByteArray()](NdefMessage.md)).
 
-[NdefMessage](../android/nfc/NdefMessage.md) and [NdefRecord](../android/nfc/NdefRecord.md) implementations are always available, even on Android devices that do not have NFC hardware.
+[NdefMessage](NdefMessage.md) and [NdefRecord](NdefRecord.md) implementations are always available, even on Android devices that do not have NFC hardware.
 
-[NdefRecord](../android/nfc/NdefRecord.md) s are intended to be immutable (and thread-safe), however they may contain mutable fields. So take care not to modify mutable fields passed into constructors, or modify mutable fields obtained by getter methods, unless such modification is explicitly marked as safe.
+[NdefRecord](NdefRecord.md) s are intended to be immutable (and thread-safe), however they may contain mutable fields. So take care not to modify mutable fields passed into constructors, or modify mutable fields obtained by getter methods, unless such modification is explicitly marked as safe.
 
 ## Summary
 
 | Constants ||
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [TNF_ABSOLUTE_URI](../android/nfc/NdefRecord.md) Indicates the type field contains an absolute-URI BNF construct defined by RFC 3986. |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [TNF_EMPTY](../android/nfc/NdefRecord.md) Indicates the record is empty. |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [TNF_EXTERNAL_TYPE](../android/nfc/NdefRecord.md) Indicates the type field contains an external type name. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [TNF_ABSOLUTE_URI](NdefRecord.md) Indicates the type field contains an absolute-URI BNF construct defined by RFC 3986. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [TNF_EMPTY](NdefRecord.md) Indicates the record is empty. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [TNF_EXTERNAL_TYPE](NdefRecord.md) Indicates the type field contains an external type name. |
 | --- | --- |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [TNF_MIME_MEDIA](../android/nfc/NdefRecord.md) Indicates the type field contains a media-type BNF construct, defined by RFC 2046. |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [TNF_UNCHANGED](../android/nfc/NdefRecord.md) Indicates the payload is an intermediate or final chunk of a chunked NDEF Record. |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [TNF_UNKNOWN](../android/nfc/NdefRecord.md) Indicates the payload type is unknown. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [TNF_MIME_MEDIA](NdefRecord.md) Indicates the type field contains a media-type BNF construct, defined by RFC 2046. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [TNF_UNCHANGED](NdefRecord.md) Indicates the payload is an intermediate or final chunk of a chunked NDEF Record. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [TNF_UNKNOWN](NdefRecord.md) Indicates the payload type is unknown. |
 | --- | --- |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [TNF_WELL_KNOWN](../android/nfc/NdefRecord.md) Indicates the type field contains a well-known RTD type name. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [TNF_WELL_KNOWN](NdefRecord.md) Indicates the type field contains a well-known RTD type name. |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android.os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android.os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android.os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [NdefRecord](../android/nfc/NdefRecord.md))`(`data:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Construct an NDEF Record from raw bytes. |
-| [NdefRecord](../android/nfc/NdefRecord.md))`(`tnf:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`, `type:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `id:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `payload:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Construct an NDEF Record from its component fields. |
+| [NdefRecord](NdefRecord.md))`(`data:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Construct an NDEF Record from raw bytes. |
+| [NdefRecord](NdefRecord.md))`(`tnf:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`, `type:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `id:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `payload:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Construct an NDEF Record from its component fields. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [NdefRecord](../android/nfc/NdefRecord.md)! | [createApplicationRecord](../android/nfc/NdefRecord.md))`(`packageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Create a new Android Application Record (AAR). |
-| static [NdefRecord](../android/nfc/NdefRecord.md)! | [createExternal](../android/nfc/NdefRecord.md))`(`domain:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `data:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Create a new NDEF Record containing external (application-specific) data. |
-| static [NdefRecord](../android/nfc/NdefRecord.md)! | [createMime](../android/nfc/NdefRecord.md))`(`mimeType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `mimeData:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Create a new NDEF Record containing MIME data. |
+| static [NdefRecord](NdefRecord.md)! | [createApplicationRecord](NdefRecord.md))`(`packageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Create a new Android Application Record (AAR). |
+| static [NdefRecord](NdefRecord.md)! | [createExternal](NdefRecord.md))`(`domain:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `type:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `data:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Create a new NDEF Record containing external (application-specific) data. |
+| static [NdefRecord](NdefRecord.md)! | [createMime](NdefRecord.md))`(`mimeType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `mimeData:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Create a new NDEF Record containing MIME data. |
 | --- | --- |
-| static [NdefRecord](../android/nfc/NdefRecord.md)! | [createTextRecord](../android/nfc/NdefRecord.md))`(`languageCode:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `text:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Create a new NDEF record containing UTF-8 text data. |
-| static [NdefRecord](../android/nfc/NdefRecord.md)! | [createUri](../android/nfc/NdefRecord.md))`(`uri:` ` [Uri](../android/net/Uri.md)!`)` Create a new NDEF Record containing a URI. |
-| static [NdefRecord](../android/nfc/NdefRecord.md)! | [createUri](../android/nfc/NdefRecord.md))`(`uriString:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Create a new NDEF Record containing a URI. |
+| static [NdefRecord](NdefRecord.md)! | [createTextRecord](NdefRecord.md))`(`languageCode:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `text:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Create a new NDEF record containing UTF-8 text data. |
+| static [NdefRecord](NdefRecord.md)! | [createUri](NdefRecord.md))`(`uri:` ` [Uri](../android.net/Uri.md)!`)` Create a new NDEF Record containing a URI. |
+| static [NdefRecord](NdefRecord.md)! | [createUri](NdefRecord.md))`(`uriString:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Create a new NDEF Record containing a URI. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/nfc/NdefRecord.md))`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/nfc/NdefRecord.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Returns true if the specified NDEF Record contains identical tnf, type, id and payload fields. |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getId](../android/nfc/NdefRecord.md))`()` Returns the variable length ID. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](NdefRecord.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](NdefRecord.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Returns true if the specified NDEF Record contains identical tnf, type, id and payload fields. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getId](NdefRecord.md))`()` Returns the variable length ID. |
 | --- | --- |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getPayload](../android/nfc/NdefRecord.md))`()` Returns the variable length payload. |
-| [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [getTnf](../android/nfc/NdefRecord.md))`()` Returns the 3-bit TNF. |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getType](../android/nfc/NdefRecord.md))`()` Returns the variable length Type field. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getPayload](NdefRecord.md))`()` Returns the variable length payload. |
+| [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [getTnf](NdefRecord.md))`()` Returns the 3-bit TNF. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getType](NdefRecord.md))`()` Returns the variable length Type field. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/nfc/NdefRecord.md))`()` <br /> |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [toByteArray](../android/nfc/NdefRecord.md))`()` Return this NDEF Record as a byte array. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toMimeType](../android/nfc/NdefRecord.md))`()` Map this record to a MIME type, or return null if it cannot be mapped. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](NdefRecord.md))`()` <br /> |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [toByteArray](NdefRecord.md))`()` Return this NDEF Record as a byte array. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toMimeType](NdefRecord.md))`()` Map this record to a MIME type, or return null if it cannot be mapped. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/nfc/NdefRecord.md))`()` <br /> |
-| [Uri](../android/net/Uri.md)! | [toUri](../android/nfc/NdefRecord.md))`()` Map this record to a URI, or return null if it cannot be mapped. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/nfc/NdefRecord.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](NdefRecord.md))`()` <br /> |
+| [Uri](../android.net/Uri.md)! | [toUri](NdefRecord.md))`()` Map this record to a URI, or return null if it cannot be mapped. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](NdefRecord.md))`(`dest:` ` [Parcel](../android.os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
 
 | Properties ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [NdefRecord](../android/nfc/NdefRecord.md)!\> | [CREATOR](../android/nfc/NdefRecord.md) <br /> |
-| static [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [RTD_ALTERNATIVE_CARRIER](../android/nfc/NdefRecord.md) RTD Alternative Carrier type. |
-| static [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [RTD_HANDOVER_CARRIER](../android/nfc/NdefRecord.md) RTD Handover Carrier type. |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [NdefRecord](NdefRecord.md)!\> | [CREATOR](NdefRecord.md) <br /> |
+| static [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [RTD_ALTERNATIVE_CARRIER](NdefRecord.md) RTD Alternative Carrier type. |
+| static [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [RTD_HANDOVER_CARRIER](NdefRecord.md) RTD Handover Carrier type. |
 | --- | --- |
-| static [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [RTD_HANDOVER_REQUEST](../android/nfc/NdefRecord.md) RTD Handover Request type. |
-| static [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [RTD_HANDOVER_SELECT](../android/nfc/NdefRecord.md) RTD Handover Select type. |
-| static [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [RTD_SMART_POSTER](../android/nfc/NdefRecord.md) RTD Smart Poster type. |
+| static [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [RTD_HANDOVER_REQUEST](NdefRecord.md) RTD Handover Request type. |
+| static [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [RTD_HANDOVER_SELECT](NdefRecord.md) RTD Handover Select type. |
+| static [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [RTD_SMART_POSTER](NdefRecord.md) RTD Smart Poster type. |
 | --- | --- |
-| static [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [RTD_TEXT](../android/nfc/NdefRecord.md) RTD Text type. |
-| static [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [RTD_URI](../android/nfc/NdefRecord.md) RTD URI type. |
+| static [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [RTD_TEXT](NdefRecord.md) RTD Text type. |
+| static [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [RTD_URI](NdefRecord.md) RTD URI type. |
 
 ## Constants
 
@@ -144,7 +144,7 @@ static val TNF_EXTERNAL_TYPE: Short
 
 Indicates the type field contains an external type name.
 
-Used to encode custom payloads. When creating new records use the helper [createExternal](../android/nfc/NdefRecord.md)).
+Used to encode custom payloads. When creating new records use the helper [createExternal](NdefRecord.md)).
 
 The external-type RTD format is specified in NFCForum-TS-RTD_1.0.
 
@@ -156,7 +156,7 @@ Note this TNF should not be used with RTD_TEXT or RTD_URI constants. Those are w
 
 **See Also**
 
-- [#createExternal](../android/nfc/NdefRecord.md)) 
+- [#createExternal](NdefRecord.md)) 
 
 ### TNF_MIME_MEDIA
 
@@ -168,13 +168,13 @@ static val TNF_MIME_MEDIA: Short
 
 Indicates the type field contains a media-type BNF construct, defined by RFC 2046.
 
-Use this with MIME type names such as "image/jpeg", or using the helper [createMime](../android/nfc/NdefRecord.md)). 
+Use this with MIME type names such as "image/jpeg", or using the helper [createMime](NdefRecord.md)). 
 
  Value: 2
 
 **See Also**
 
-- [#createMime](../android/nfc/NdefRecord.md)) 
+- [#createMime](NdefRecord.md)) 
 
 ### TNF_UNCHANGED
 
@@ -186,7 +186,7 @@ static val TNF_UNCHANGED: Short
 
 Indicates the payload is an intermediate or final chunk of a chunked NDEF Record.
 
-TNF_UNCHANGED can not be used with this class since all [NdefRecord](../android/nfc/NdefRecord.md) s are already unchunked, however they may appear in the binary format. 
+TNF_UNCHANGED can not be used with this class since all [NdefRecord](NdefRecord.md) s are already unchunked, however they may appear in the binary format. 
 
  Value: 6
 
@@ -216,7 +216,7 @@ static val TNF_WELL_KNOWN: Short
 
 Indicates the type field contains a well-known RTD type name.
 
-Use this tnf with RTD types such as [RTD_TEXT](../android/nfc/NdefRecord.md), [RTD_URI](../android/nfc/NdefRecord.md).
+Use this tnf with RTD types such as [RTD_TEXT](NdefRecord.md), [RTD_URI](NdefRecord.md).
 
 The RTD type name format is specified in NFCForum-TS-RTD_1.0. 
 
@@ -224,9 +224,9 @@ The RTD type name format is specified in NFCForum-TS-RTD_1.0.
 
 **See Also**
 
-- [#RTD_URI](../android/nfc/NdefRecord.md)
-- [#RTD_TEXT](../android/nfc/NdefRecord.md)
-- [#RTD_SMART_POSTER](../android/nfc/NdefRecord.md)
+- [#RTD_URI](NdefRecord.md)
+- [#RTD_TEXT](NdefRecord.md)
+- [#RTD_SMART_POSTER](NdefRecord.md)
 
 ## Public constructors
 
@@ -270,20 +270,20 @@ NdefRecord(
 
 Construct an NDEF Record from its component fields.
 
-Recommend to use helpers such as {#createUri} or { [createExternal](../android/nfc/NdefRecord.md))where possible, since they perform stricter validation that the record is correctly formatted as per NDEF specifications. However if you know what you are doing then this constructor offers the most flexibility.
+Recommend to use helpers such as {#createUri} or { [createExternal](NdefRecord.md))where possible, since they perform stricter validation that the record is correctly formatted as per NDEF specifications. However if you know what you are doing then this constructor offers the most flexibility.
 
-An [NdefRecord](../android/nfc/NdefRecord.md) represents a logical (complete) record, and cannot represent NDEF Record chunks.
+An [NdefRecord](NdefRecord.md) represents a logical (complete) record, and cannot represent NDEF Record chunks.
 
 Basic validation of the tnf, type, id and payload is performed as per the following rules:
 
 - The tnf paramter must be a 3-bit value.
-- Records with a tnf of [TNF_EMPTY](../android/nfc/NdefRecord.md) cannot have a type, id or payload.
-- Records with a tnf of [TNF_UNKNOWN](../android/nfc/NdefRecord.md) or 0x07 cannot have a type.
-- Records with a tnf of [TNF_UNCHANGED](../android/nfc/NdefRecord.md) are not allowed since this class only represents complete (unchunked) records.
+- Records with a tnf of [TNF_EMPTY](NdefRecord.md) cannot have a type, id or payload.
+- Records with a tnf of [TNF_UNKNOWN](NdefRecord.md) or 0x07 cannot have a type.
+- Records with a tnf of [TNF_UNCHANGED](NdefRecord.md) are not allowed since this class only represents complete (unchunked) records.
 
 This minimal validation is specified by NFCForum-TS-NDEF_1.0 section 3.2.6 (Type Name Format).
 
-If any of the above validation steps fail then [IllegalArgumentException](../java/lang/IllegalArgumentException.md) is thrown.
+If any of the above validation steps fail then [IllegalArgumentException](../java.lang/IllegalArgumentException.md) is thrown.
 
 Deep inspection of the type, id and payload fields is not performed, so it is possible to create NDEF Records that conform to section 3.2.6 but fail other more strict NDEF specification requirements. For example, the payload may be invalid given the tnf and type.
 
@@ -315,11 +315,11 @@ Create a new Android Application Record (AAR).
 
 This record indicates to other Android devices the package that should be used to handle the entire NDEF message. You can embed this record anywhere into your message to ensure that the intended package receives the message.
 
-When an Android device dispatches an [NdefMessage](../android/nfc/NdefMessage.md) containing one or more Android application records, the applications contained in those records will be the preferred target for the [NfcAdapter.ACTION_NDEF_DISCOVERED](../android/nfc/NfcAdapter.md) intent, in the order in which they appear in the message. This dispatch behavior was first added to Android in Ice Cream Sandwich.
+When an Android device dispatches an [NdefMessage](NdefMessage.md) containing one or more Android application records, the applications contained in those records will be the preferred target for the [NfcAdapter.ACTION_NDEF_DISCOVERED](NfcAdapter.md) intent, in the order in which they appear in the message. This dispatch behavior was first added to Android in Ice Cream Sandwich.
 
 If none of the applications have a are installed on the device, a Market link will be opened to the first application.
 
-Note that Android application records do not overrule applications that have called [NfcAdapter.enableForegroundDispatch](../android/nfc/NfcAdapter.md)).
+Note that Android application records do not overrule applications that have called [NfcAdapter.enableForegroundDispatch](NfcAdapter.md)).
 
 | Parameters ||
 |---------------|--------------------------------------------------------------------------------------------------------|
@@ -327,7 +327,7 @@ Note that Android application records do not overrule applications that have cal
 
 | Return ||
 |---------------------------------------------------------------------------------------|---------------------------------|
-| [NdefRecord](../android/nfc/NdefRecord.md)! | Android application NDEF record |
+| [NdefRecord](NdefRecord.md)! | Android application NDEF record |
 
 ### createExternal
 
@@ -347,7 +347,7 @@ Use this method to encode application specific data into an NDEF Record. The dat
 
 NFC Forum requires that the domain and type used in an external record are treated as case insensitive, however Android intent filtering is always case sensitive. So this method will force the domain and type to lower-case before creating the NDEF Record.
 
-The unchecked exception [IllegalArgumentException](../java/lang/IllegalArgumentException.md) will be thrown if the domain and type have serious problems, for example if either field is empty, so always catch this exception if you are passing user-generated data into this method.
+The unchecked exception [IllegalArgumentException](../java.lang/IllegalArgumentException.md) will be thrown if the domain and type have serious problems, for example if either field is empty, so always catch this exception if you are passing user-generated data into this method.
 
 There are no such restrictions on the payload data.
 
@@ -379,7 +379,7 @@ Create a new NDEF Record containing MIME data.
 
 Use this method to encode MIME-typed data into an NDEF Record, such as "text/plain", or "image/jpeg".
 
-The mimeType parameter will be normalized with [Intent.normalizeMimeType](../android/content/Intent.md))to follow Android best practices for intent filtering, for example to force lower-case. However the unchecked exception [IllegalArgumentException](../java/lang/IllegalArgumentException.md) may be thrown if the mimeType parameter has serious problems, for example if it is empty, so always catch this exception if you are passing user-generated data into this method.
+The mimeType parameter will be normalized with [Intent.normalizeMimeType](../android.content/Intent.md))to follow Android best practices for intent filtering, for example to force lower-case. However the unchecked exception [IllegalArgumentException](../java.lang/IllegalArgumentException.md) may be thrown if the mimeType parameter has serious problems, for example if it is empty, so always catch this exception if you are passing user-generated data into this method.
 
 For efficiency, This method might not make an internal copy of the mimeData byte array, so take care not to modify the mimeData byte array while still using the returned NdefRecord.
 
@@ -390,7 +390,7 @@ For efficiency, This method might not make an internal copy of the mimeData byte
 
 | Return ||
 |---------------------------------------------------------------------------------------|-----------------------------------------------|
-| [NdefRecord](../android/nfc/NdefRecord.md)! | an NDEF Record containing the MIME-typed data |
+| [NdefRecord](NdefRecord.md)! | an NDEF Record containing the MIME-typed data |
 
 | Exceptions ||
 |----------------------------|-------------------------------------|
@@ -432,19 +432,19 @@ Create a new NDEF Record containing a URI.
 
 Use this method to encode a URI (or URL) into an NDEF Record.
 
-Uses the well known URI type representation: [TNF_WELL_KNOWN](../android/nfc/NdefRecord.md) and [RTD_URI](../android/nfc/NdefRecord.md). This is the most efficient encoding of a URI into NDEF.
+Uses the well known URI type representation: [TNF_WELL_KNOWN](NdefRecord.md) and [RTD_URI](NdefRecord.md). This is the most efficient encoding of a URI into NDEF.
 
-The uri parameter will be normalized with [Uri.normalizeScheme](../android/net/Uri.md))to set the scheme to lower case to follow Android best practices for intent filtering. However the unchecked exception [IllegalArgumentException](../java/lang/IllegalArgumentException.md) may be thrown if the uri parameter has serious problems, for example if it is empty, so always catch this exception if you are passing user-generated data into this method.
+The uri parameter will be normalized with [Uri.normalizeScheme](../android.net/Uri.md))to set the scheme to lower case to follow Android best practices for intent filtering. However the unchecked exception [IllegalArgumentException](../java.lang/IllegalArgumentException.md) may be thrown if the uri parameter has serious problems, for example if it is empty, so always catch this exception if you are passing user-generated data into this method.
 
 Reference specification: NFCForum-TS-RTD_URI_1.0
 
 | Parameters ||
 |-------|---------------------------------------------------------------------------------------------|
-| `uri` | [Uri](../android/net/Uri.md)!:URI to encode. |
+| `uri` | [Uri](../android.net/Uri.md)!:URI to encode. |
 
 | Return ||
 |---------------------------------------------------------------------------------------|-----------------------------------|
-| [NdefRecord](../android/nfc/NdefRecord.md)! | an NDEF Record containing the URI |
+| [NdefRecord](NdefRecord.md)! | an NDEF Record containing the URI |
 
 | Exceptions ||
 |----------------------------|--------------------------------|
@@ -462,9 +462,9 @@ Create a new NDEF Record containing a URI.
 
 Use this method to encode a URI (or URL) into an NDEF Record.
 
-Uses the well known URI type representation: [TNF_WELL_KNOWN](../android/nfc/NdefRecord.md) and [RTD_URI](../android/nfc/NdefRecord.md). This is the most efficient encoding of a URI into NDEF.
+Uses the well known URI type representation: [TNF_WELL_KNOWN](NdefRecord.md) and [RTD_URI](NdefRecord.md). This is the most efficient encoding of a URI into NDEF.
 
-The uriString parameter will be normalized with [Uri.normalizeScheme](../android/net/Uri.md))to set the scheme to lower case to follow Android best practices for intent filtering. However the unchecked exception [IllegalArgumentException](../java/lang/IllegalArgumentException.md) may be thrown if the uriString parameter has serious problems, for example if it is empty, so always catch this exception if you are passing user-generated data into this method.
+The uriString parameter will be normalized with [Uri.normalizeScheme](../android.net/Uri.md))to set the scheme to lower case to follow Android best practices for intent filtering. However the unchecked exception [IllegalArgumentException](../java.lang/IllegalArgumentException.md) may be thrown if the uriString parameter has serious problems, for example if it is empty, so always catch this exception if you are passing user-generated data into this method.
 
 Reference specification: NFCForum-TS-RTD_URI_1.0
 
@@ -474,7 +474,7 @@ Reference specification: NFCForum-TS-RTD_URI_1.0
 
 | Return ||
 |---------------------------------------------------------------------------------------|-----------------------------------|
-| [NdefRecord](../android/nfc/NdefRecord.md)! | an NDEF Record containing the URI |
+| [NdefRecord](NdefRecord.md)! | an NDEF Record containing the URI |
 
 | Exceptions ||
 |----------------------------|--------------------------------------|
@@ -490,7 +490,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) |
 
 ### equals
 
@@ -581,11 +581,11 @@ Deprecated in [API level 16](https://developer.android.com/guide/topics/manifest
 fun toByteArray(): ByteArray!
 ```
 
-**Deprecated:** *use [NdefMessage.toByteArray()](../android/nfc/NdefMessage.md))instead*
+**Deprecated:** *use [NdefMessage.toByteArray()](NdefMessage.md))instead*
 
 Return this NDEF Record as a byte array.
 
-This method is deprecated, use [NdefMessage.toByteArray](../android/nfc/NdefMessage.md))instead. This is because the NDEF binary format is not defined for a record outside of the context of a message: the MB and ME flags cannot be set without knowing the location inside a message.
+This method is deprecated, use [NdefMessage.toByteArray](NdefMessage.md))instead. This is because the NDEF binary format is not defined for a record outside of the context of a message: the MB and ME flags cannot be set without knowing the location inside a message.
 
 This implementation will attempt to serialize a single record by always setting the MB and ME flags (in other words, assume this is a single-record NDEF Message).
 
@@ -601,13 +601,13 @@ fun toMimeType(): String!
 
 Map this record to a MIME type, or return null if it cannot be mapped.
 
-Currently this method considers all [TNF_MIME_MEDIA](../android/nfc/NdefRecord.md) records to be MIME records, as well as some [TNF_WELL_KNOWN](../android/nfc/NdefRecord.md) records such as [RTD_TEXT](../android/nfc/NdefRecord.md). If this is a MIME record then the MIME type as string is returned, otherwise null is returned.
+Currently this method considers all [TNF_MIME_MEDIA](NdefRecord.md) records to be MIME records, as well as some [TNF_WELL_KNOWN](NdefRecord.md) records such as [RTD_TEXT](NdefRecord.md). If this is a MIME record then the MIME type as string is returned, otherwise null is returned.
 
 This method does not perform validation that the MIME type is actually valid. It always attempts to return a string containing the type if this is a MIME record.
 
-The returned MIME type will by normalized to lower-case using [Intent.normalizeMimeType](../android/content/Intent.md)).
+The returned MIME type will by normalized to lower-case using [Intent.normalizeMimeType](../android.content/Intent.md)).
 
-The MIME payload can be obtained using [getPayload](../android/nfc/NdefRecord.md)).
+The MIME payload can be obtained using [getPayload](NdefRecord.md)).
 
 | Return ||
 |-----------------------------------------------------------------------------------|-------------------------------------------------------------|
@@ -637,22 +637,22 @@ Map this record to a URI, or return null if it cannot be mapped.
 
 Currently this method considers the following to be URI records:
 
-- [TNF_ABSOLUTE_URI](../android/nfc/NdefRecord.md) records.
-- [TNF_WELL_KNOWN](../android/nfc/NdefRecord.md) with a type of [RTD_URI](../android/nfc/NdefRecord.md).
-- [TNF_WELL_KNOWN](../android/nfc/NdefRecord.md) with a type of [RTD_SMART_POSTER](../android/nfc/NdefRecord.md) and containing a URI record in the NDEF message nested in the payload.
-- [TNF_EXTERNAL_TYPE](../android/nfc/NdefRecord.md) records.
+- [TNF_ABSOLUTE_URI](NdefRecord.md) records.
+- [TNF_WELL_KNOWN](NdefRecord.md) with a type of [RTD_URI](NdefRecord.md).
+- [TNF_WELL_KNOWN](NdefRecord.md) with a type of [RTD_SMART_POSTER](NdefRecord.md) and containing a URI record in the NDEF message nested in the payload.
+- [TNF_EXTERNAL_TYPE](NdefRecord.md) records.
 
 If this is not a URI record by the above rules, then null is returned.
 
 This method does not perform validation that the URI is actually valid: it always attempts to create and return a URI if this record appears to be a URI record by the above rules.
 
-The returned URI will be normalized to have a lower case scheme using [Uri.normalizeScheme](../android/net/Uri.md)).
+The returned URI will be normalized to have a lower case scheme using [Uri.normalizeScheme](../android.net/Uri.md)).
 
 <br />
 
 | Return ||
 |------------------------------------------------------------------------------|------------------------------------------|
-| [Uri](../android/net/Uri.md)! | URI, or null if this is not a URI record |
+| [Uri](../android.net/Uri.md)! | URI, or null if this is not a URI record |
 
 ### writeToParcel
 
@@ -667,8 +667,8 @@ fun writeToParcel(
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](../android/os/Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android.os/Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 
@@ -691,7 +691,7 @@ static val RTD_ALTERNATIVE_CARRIER: ByteArray!
 RTD Alternative Carrier type. For use with TNF_WELL_KNOWN. 
 **See Also**
 
-- [#TNF_WELL_KNOWN](../android/nfc/NdefRecord.md) 
+- [#TNF_WELL_KNOWN](NdefRecord.md) 
 
 ### RTD_HANDOVER_CARRIER
 
@@ -704,7 +704,7 @@ static val RTD_HANDOVER_CARRIER: ByteArray!
 RTD Handover Carrier type. For use with TNF_WELL_KNOWN. 
 **See Also**
 
-- [#TNF_WELL_KNOWN](../android/nfc/NdefRecord.md) 
+- [#TNF_WELL_KNOWN](NdefRecord.md) 
 
 ### RTD_HANDOVER_REQUEST
 
@@ -717,7 +717,7 @@ static val RTD_HANDOVER_REQUEST: ByteArray!
 RTD Handover Request type. For use with TNF_WELL_KNOWN. 
 **See Also**
 
-- [#TNF_WELL_KNOWN](../android/nfc/NdefRecord.md) 
+- [#TNF_WELL_KNOWN](NdefRecord.md) 
 
 ### RTD_HANDOVER_SELECT
 
@@ -730,7 +730,7 @@ static val RTD_HANDOVER_SELECT: ByteArray!
 RTD Handover Select type. For use with TNF_WELL_KNOWN. 
 **See Also**
 
-- [#TNF_WELL_KNOWN](../android/nfc/NdefRecord.md) 
+- [#TNF_WELL_KNOWN](NdefRecord.md) 
 
 ### RTD_SMART_POSTER
 
@@ -743,7 +743,7 @@ static val RTD_SMART_POSTER: ByteArray!
 RTD Smart Poster type. For use with TNF_WELL_KNOWN. 
 **See Also**
 
-- [#TNF_WELL_KNOWN](../android/nfc/NdefRecord.md) 
+- [#TNF_WELL_KNOWN](NdefRecord.md) 
 
 ### RTD_TEXT
 
@@ -756,7 +756,7 @@ static val RTD_TEXT: ByteArray!
 RTD Text type. For use with TNF_WELL_KNOWN. 
 **See Also**
 
-- [#TNF_WELL_KNOWN](../android/nfc/NdefRecord.md) 
+- [#TNF_WELL_KNOWN](NdefRecord.md) 
 
 ### RTD_URI
 
@@ -769,4 +769,4 @@ static val RTD_URI: ByteArray!
 RTD URI type. For use with TNF_WELL_KNOWN. 
 **See Also**
 
-- [#TNF_WELL_KNOWN](../android/nfc/NdefRecord.md)
+- [#TNF_WELL_KNOWN](NdefRecord.md)

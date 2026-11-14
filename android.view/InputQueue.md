@@ -4,7 +4,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 
 # InputQueue
 
-Kotlin| [Java](../android/view/InputQueue.md) 
+Kotlin| [Java](InputQueue.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class InputQueue
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.InputQueue](../android/view/InputQueue.md) |
+| ↳ | [android.view.InputQueue](InputQueue.md) |
 
 An input queue provides a mechanism for an application to receive incoming input events. Currently only usable from native code.
 
@@ -25,7 +25,7 @@ An input queue provides a mechanism for an application to receive incoming input
 
 | Protected methods ||
 |------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](../android/view/InputQueue.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](InputQueue.md))`()` <br /> |
 
 ## Protected methods
 

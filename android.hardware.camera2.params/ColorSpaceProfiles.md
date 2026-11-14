@@ -2,7 +2,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # ColorSpaceProfiles
 
-Kotlin | [Java](../android/hardware/camera2/params/ColorSpaceProfiles.md)
+Kotlin | [Java](ColorSpaceProfiles.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class ColorSpaceProfiles
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.hardware.camera2.params.ColorSpaceProfiles](../android/hardware/camera2/params/ColorSpaceProfiles.md) |
+| ↳ | [android.hardware.camera2.params.ColorSpaceProfiles](ColorSpaceProfiles.md) |
 
 Immutable class with information about supported color space profiles.
 

@@ -11,12 +11,12 @@ open class ClosedByInterruptException : AsynchronousCloseException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||||
 | --- | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||||
-| | | ↳ | [java.io.IOException](../java/io/IOException.md) ||||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) |||||
+| | | ↳ | [java.io.IOException](../java.io/IOException.md) ||||
 | --- | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.nio.channels.ClosedChannelException](../java/nio/channels/ClosedChannelException.md) |||
-| | | | | ↳ | [java.nio.channels.AsynchronousCloseException](../java/nio/channels/AsynchronousCloseException.md) ||
-| | | | | | ↳ | [java.nio.channels.ClosedByInterruptException](../java/nio/channels/ClosedByInterruptException.md) |
+| | | | ↳ | [java.nio.channels.ClosedChannelException](ClosedChannelException.md) |||
+| | | | | ↳ | [java.nio.channels.AsynchronousCloseException](AsynchronousCloseException.md) ||
+| | | | | | ↳ | [java.nio.channels.ClosedByInterruptException](ClosedByInterruptException.md) |
 | --- | --- | --- | --- | --- | --- | --- |
 
 Checked exception received by a thread when another thread interrupts it while it is blocked in an I/O operation upon a channel. Before this exception is thrown the channel will have been closed and the interrupt status of the previously-blocked thread will have been set.
@@ -25,7 +25,7 @@ Checked exception received by a thread when another thread interrupts it while i
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ClosedByInterruptException](../java/nio/channels/ClosedByInterruptException.md))`()` Constructs an instance of this class. |
+| [ClosedByInterruptException](ClosedByInterruptException.md))`()` Constructs an instance of this class. |
 
 ## Public constructors
 

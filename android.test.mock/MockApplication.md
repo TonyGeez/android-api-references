@@ -9,11 +9,11 @@ open class MockApplication : Application
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](../android/content/Context.md) ||||
-| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) |||
-| | | ↳ | [android.app.Application](../android/app/Application.md) ||
+| ↳ | [android.content.Context](../android.content/Context.md) ||||
+| | ↳ | [android.content.ContextWrapper](../android.content/ContextWrapper.md) |||
+| | | ↳ | [android.app.Application](../android.app/Application.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.test.mock.MockApplication](../android/test/mock/MockApplication.md) |
+| | | | ↳ | [android.test.mock.MockApplication](MockApplication.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 24.**
@@ -2551,7 +2551,7 @@ For more information, read [Handling Runtime Changes](https://developer.android.
 
 | Parameters ||
 |---|---|
-| `newConfig` | [Configuration](../android/content/res/Configuration.md): This value cannot be `null`. |
+| `newConfig` | [Configuration](../android.content.res/Configuration.md): This value cannot be `null`. |
 
 ### onCreate
 

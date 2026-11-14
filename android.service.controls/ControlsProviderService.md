@@ -8,11 +8,11 @@ abstract class ControlsProviderService : Service
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](../android/content/Context.md) ||||
-| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) |||
-| | | ↳ | [android.app.Service](../android/app/Service.md) ||
+| ↳ | [android.content.Context](../android.content/Context.md) ||||
+| | ↳ | [android.content.ContextWrapper](../android.content/ContextWrapper.md) |||
+| | | ↳ | [android.app.Service](../android.app/Service.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.service.controls.ControlsProviderService](../android/service/controls/ControlsProviderService.md) |
+| | | | ↳ | [android.service.controls.ControlsProviderService](ControlsProviderService.md) |
 
 Service implementation allowing applications to contribute controls to the System UI.
 
@@ -1053,11 +1053,11 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 
 | Public methods ||
 |---|---|
-| abstract [Flow.Publisher](../java/util/concurrent/Flow.Publisher.md)\< [Control](../android/service/controls/Control.md)!\> | `https://developer.android.com/reference/kotlin/android/service/controls/ControlsProviderService#createPublisherFor(kotlin.collections.MutableList)(controlIds: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>)` Return a valid Publisher for the given controlIds. |
-| abstract [Flow.Publisher](../java/util/concurrent/Flow.Publisher.md)\< [Control](../android/service/controls/Control.md)!\> | `https://developer.android.com/reference/kotlin/android/service/controls/ControlsProviderService#createPublisherForAllAvailable()()` Publisher for all available controls Retrieve all available controls. |
-| open [Flow.Publisher](../java/util/concurrent/Flow.Publisher.md)\< [Control](../android/service/controls/Control.md)!\>? | `https://developer.android.com/reference/kotlin/android/service/controls/ControlsProviderService#createPublisherForSuggested()()` (Optional) Publisher for suggested controls The service may be asked to provide a small number of recommended controls, in order to suggest some controls to the user for favoriting. |
+| abstract [Flow.Publisher](../java/util/concurrent/Flow.Publisher.md)\< [Control](Control.md)!\> | `https://developer.android.com/reference/kotlin/android/service/controls/ControlsProviderService#createPublisherFor(kotlin.collections.MutableList)(controlIds: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>)` Return a valid Publisher for the given controlIds. |
+| abstract [Flow.Publisher](../java/util/concurrent/Flow.Publisher.md)\< [Control](Control.md)!\> | `https://developer.android.com/reference/kotlin/android/service/controls/ControlsProviderService#createPublisherForAllAvailable()()` Publisher for all available controls Retrieve all available controls. |
+| open [Flow.Publisher](../java/util/concurrent/Flow.Publisher.md)\< [Control](Control.md)!\>? | `https://developer.android.com/reference/kotlin/android/service/controls/ControlsProviderService#createPublisherForSuggested()()` (Optional) Publisher for suggested controls The service may be asked to provide a small number of recommended controls, in order to suggest some controls to the user for favoriting. |
 | --- | --- |
-| [IBinder](../android/os/IBinder.md) | `https://developer.android.com/reference/kotlin/android/service/controls/ControlsProviderService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Return the communication channel to the service. |
+| [IBinder](../android.os/IBinder.md) | `https://developer.android.com/reference/kotlin/android/service/controls/ControlsProviderService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Return the communication channel to the service. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/service/controls/ControlsProviderService#onUnbind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Called when all clients have disconnected from a particular interface published by the service. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/controls/ControlsProviderService#performControlAction(kotlin.String,%20android.service.controls.actions.ControlAction,%20java.util.function.Consumer)(controlId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, action: https://developer.android.com/reference/kotlin/android/service/controls/actions/ControlAction, consumer: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html!>)` The user has interacted with a Control. |
 | --- | --- |
@@ -2907,7 +2907,7 @@ Return the communication channel to the service. May return null if clients can 
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md): This value cannot be `null`. |
+| `intent` | [Intent](../android.content/Intent.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -2925,7 +2925,7 @@ Called when all clients have disconnected from a particular interface published 
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md): This value cannot be `null`. |
+| `intent` | [Intent](../android.content/Intent.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -2948,8 +2948,8 @@ The user has interacted with a Control. The action is dictated by the type of `h
 | Parameters ||
 |---|---|
 | `controlId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): This value cannot be `null`. |
-| `action` | [ControlAction](../android/service/controls/actions/ControlAction.md): This value cannot be `null`. |
-| `consumer` | [Consumer](../java/util/function/Consumer.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>: This value cannot be `null`. |
+| `action` | [ControlAction](../android.service.controls.actions/ControlAction.md): This value cannot be `null`. |
+| `consumer` | [Consumer](../java.util.function/Consumer.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>: This value cannot be `null`. |
 | --- | --- |
 
 ### requestAddControl
@@ -2969,7 +2969,7 @@ SystemUI may not honor this request in some cases, for example if the requested 
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md): A context. This value cannot be `null`. |
-| `componentName` | [ComponentName](../android/content/ComponentName.md): Component name of the `https://developer.android.com/reference/kotlin/android/service/controls/ControlsProviderService#` This value cannot be `null`. |
-| `control` | [Control](../android/service/controls/Control.md): A stateless control to show to the user. This value cannot be `null`. |
+| `context` | [Context](../android.content/Context.md): A context. This value cannot be `null`. |
+| `componentName` | [ComponentName](../android.content/ComponentName.md): Component name of the `https://developer.android.com/reference/kotlin/android/service/controls/ControlsProviderService#` This value cannot be `null`. |
+| `control` | [Control](Control.md): A stateless control to show to the user. This value cannot be `null`. |
 | --- | --- |

@@ -10,11 +10,11 @@ class NumericShaper : Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.awt.font.NumericShaper](../java/awt/font/NumericShaper.md) |
+| ↳ | [java.awt.font.NumericShaper](NumericShaper.md) |
 
 The class is used to convert Latin-1 (European) digits to other Unicode decimal digits. Users of this class will primarily be people who wish to present data using national digit shapes, but find it more convenient to represent the data internally using Latin-1 (European) digits. This does not interpret the deprecated numeric shape selector character (U+206E).
 
-Instances of`NumericShaper`are typically applied as attributes to text with the [NUMERIC_SHAPING](../java/awt/font/TextAttribute.md) attribute of the`TextAttribute`class. For example, this code snippet causes a`TextLayout`to shape European digits to Arabic in an Arabic context: 
+Instances of`NumericShaper`are typically applied as attributes to text with the [NUMERIC_SHAPING](TextAttribute.md) attribute of the`TextAttribute`class. For example, this code snippet causes a`TextLayout`to shape European digits to Arabic in an Arabic context: 
 
 ```kotlin
 Map map = new HashMap();
@@ -48,7 +48,7 @@ char[] text = ...;
 
 **Bit mask- and enum-based Unicode ranges**
 
-This class supports two different programming interfaces to represent Unicode ranges for script-specific digits: bit mask-based ones, such as [NumericShaper.ARABIC](../java/awt/font/NumericShaper.md), and enum-based ones, such as [NumericShaper.Range.ARABIC](../java/awt/font/NumericShaper.Range.md). Multiple ranges can be specified by ORing bit mask-based constants, such as: 
+This class supports two different programming interfaces to represent Unicode ranges for script-specific digits: bit mask-based ones, such as [NumericShaper.ARABIC](NumericShaper.md), and enum-based ones, such as [NumericShaper.Range.ARABIC](../java/awt/font/NumericShaper.Range.md). Multiple ranges can be specified by ORing bit mask-based constants, such as: 
 
 ```kotlin
 NumericShaper.ARABIC | NumericShaper.TAMIL
@@ -70,7 +70,7 @@ A Unicode range may have more than one set of decimal digits. If multiple decima
 
 | Unicode Range | `NumericShaper`Constants | Precedence |
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
-| Arabic | [NumericShaper.ARABIC](../java/awt/font/NumericShaper.md) [NumericShaper.EASTERN_ARABIC](../java/awt/font/NumericShaper.md) | [NumericShaper.EASTERN_ARABIC](../java/awt/font/NumericShaper.md) |
+| Arabic | [NumericShaper.ARABIC](NumericShaper.md) [NumericShaper.EASTERN_ARABIC](NumericShaper.md) | [NumericShaper.EASTERN_ARABIC](NumericShaper.md) |
 | Arabic | [NumericShaper.Range.ARABIC](../java/awt/font/NumericShaper.Range.md) [NumericShaper.Range.EASTERN_ARABIC](../java/awt/font/NumericShaper.Range.md) | [NumericShaper.Range.EASTERN_ARABIC](../java/awt/font/NumericShaper.Range.md) |
 | Tai Tham | [NumericShaper.Range.TAI_THAM_HORA](../java/awt/font/NumericShaper.Range.md) [NumericShaper.Range.TAI_THAM_THAM](../java/awt/font/NumericShaper.Range.md) | [NumericShaper.Range.TAI_THAM_THAM](../java/awt/font/NumericShaper.Range.md) |
 | --- | --- | --- |
@@ -83,54 +83,54 @@ A Unicode range may have more than one set of decimal digits. If multiple decima
 
 | Constants ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ALL_RANGES](../java/awt/font/NumericShaper.md) Identifies all ranges, for full contextual shaping. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ARABIC](../java/awt/font/NumericShaper.md) Identifies the ARABIC range and decimal base. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BENGALI](../java/awt/font/NumericShaper.md) Identifies the BENGALI range and decimal base. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ALL_RANGES](NumericShaper.md) Identifies all ranges, for full contextual shaping. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ARABIC](NumericShaper.md) Identifies the ARABIC range and decimal base. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BENGALI](NumericShaper.md) Identifies the BENGALI range and decimal base. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEVANAGARI](../java/awt/font/NumericShaper.md) Identifies the DEVANAGARI range and decimal base. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EASTERN_ARABIC](../java/awt/font/NumericShaper.md) Identifies the ARABIC range and ARABIC_EXTENDED decimal base. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ETHIOPIC](../java/awt/font/NumericShaper.md) Identifies the ETHIOPIC range and decimal base. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEVANAGARI](NumericShaper.md) Identifies the DEVANAGARI range and decimal base. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EASTERN_ARABIC](NumericShaper.md) Identifies the ARABIC range and ARABIC_EXTENDED decimal base. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ETHIOPIC](NumericShaper.md) Identifies the ETHIOPIC range and decimal base. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EUROPEAN](../java/awt/font/NumericShaper.md) Identifies the Latin-1 (European) and extended range, and Latin-1 (European) decimal base. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GUJARATI](../java/awt/font/NumericShaper.md) Identifies the GUJARATI range and decimal base. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GURMUKHI](../java/awt/font/NumericShaper.md) Identifies the GURMUKHI range and decimal base. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EUROPEAN](NumericShaper.md) Identifies the Latin-1 (European) and extended range, and Latin-1 (European) decimal base. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GUJARATI](NumericShaper.md) Identifies the GUJARATI range and decimal base. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GURMUKHI](NumericShaper.md) Identifies the GURMUKHI range and decimal base. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [KANNADA](../java/awt/font/NumericShaper.md) Identifies the KANNADA range and decimal base. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [KHMER](../java/awt/font/NumericShaper.md) Identifies the KHMER range and decimal base. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LAO](../java/awt/font/NumericShaper.md) Identifies the LAO range and decimal base. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [KANNADA](NumericShaper.md) Identifies the KANNADA range and decimal base. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [KHMER](NumericShaper.md) Identifies the KHMER range and decimal base. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LAO](NumericShaper.md) Identifies the LAO range and decimal base. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MALAYALAM](../java/awt/font/NumericShaper.md) Identifies the MALAYALAM range and decimal base. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MONGOLIAN](../java/awt/font/NumericShaper.md) Identifies the MONGOLIAN range and decimal base. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MYANMAR](../java/awt/font/NumericShaper.md) Identifies the MYANMAR range and decimal base. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MALAYALAM](NumericShaper.md) Identifies the MALAYALAM range and decimal base. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MONGOLIAN](NumericShaper.md) Identifies the MONGOLIAN range and decimal base. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MYANMAR](NumericShaper.md) Identifies the MYANMAR range and decimal base. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ORIYA](../java/awt/font/NumericShaper.md) Identifies the ORIYA range and decimal base. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TAMIL](../java/awt/font/NumericShaper.md) Identifies the TAMIL range and decimal base. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TELUGU](../java/awt/font/NumericShaper.md) Identifies the TELUGU range and decimal base. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ORIYA](NumericShaper.md) Identifies the ORIYA range and decimal base. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TAMIL](NumericShaper.md) Identifies the TAMIL range and decimal base. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TELUGU](NumericShaper.md) Identifies the TELUGU range and decimal base. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [THAI](../java/awt/font/NumericShaper.md) Identifies the THAI range and decimal base. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIBETAN](../java/awt/font/NumericShaper.md) Identifies the TIBETAN range and decimal base. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [THAI](NumericShaper.md) Identifies the THAI range and decimal base. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TIBETAN](NumericShaper.md) Identifies the TIBETAN range and decimal base. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/awt/font/NumericShaper.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Returns`true`if the specified object is an instance of`NumericShaper`and shapes identically to this one, regardless of the range representations, the bit mask or the enum. |
-| static [NumericShaper](../java/awt/font/NumericShaper.md)! | [getContextualShaper](../java/awt/font/NumericShaper.md))`(`ranges:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a contextual shaper for the provided unicode range(s). |
-| static [NumericShaper](../java/awt/font/NumericShaper.md)! | [getContextualShaper](../java/awt/font/NumericShaper.md))`(`ranges:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `defaultContext:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a contextual shaper for the provided unicode range(s). |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](NumericShaper.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Returns`true`if the specified object is an instance of`NumericShaper`and shapes identically to this one, regardless of the range representations, the bit mask or the enum. |
+| static [NumericShaper](NumericShaper.md)! | [getContextualShaper](NumericShaper.md))`(`ranges:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a contextual shaper for the provided unicode range(s). |
+| static [NumericShaper](NumericShaper.md)! | [getContextualShaper](NumericShaper.md))`(`ranges:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `defaultContext:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a contextual shaper for the provided unicode range(s). |
 | --- | --- |
-| static [NumericShaper](../java/awt/font/NumericShaper.md)! | [getContextualShaper](../java/awt/font/NumericShaper.md))`(`ranges:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [NumericShaper.Range](../java/awt/font/NumericShaper.Range.md)!>!`)` Returns a contextual shaper for the provided Unicode range(s). |
-| static [NumericShaper](../java/awt/font/NumericShaper.md)! | [getContextualShaper](../java/awt/font/NumericShaper.md))`(`ranges:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [NumericShaper.Range](../java/awt/font/NumericShaper.Range.md)!>!`, `defaultContext:` ` [NumericShaper.Range](../java/awt/font/NumericShaper.Range.md)!`)` Returns a contextual shaper for the provided Unicode range(s). |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [NumericShaper.Range](../java/awt/font/NumericShaper.Range.md)!\>! | [getRangeSet](../java/awt/font/NumericShaper.md))`()` Returns a`Set`representing all the Unicode ranges in this`NumericShaper`that will be shaped. |
+| static [NumericShaper](NumericShaper.md)! | [getContextualShaper](NumericShaper.md))`(`ranges:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [NumericShaper.Range](../java/awt/font/NumericShaper.Range.md)!>!`)` Returns a contextual shaper for the provided Unicode range(s). |
+| static [NumericShaper](NumericShaper.md)! | [getContextualShaper](NumericShaper.md))`(`ranges:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [NumericShaper.Range](../java/awt/font/NumericShaper.Range.md)!>!`, `defaultContext:` ` [NumericShaper.Range](../java/awt/font/NumericShaper.Range.md)!`)` Returns a contextual shaper for the provided Unicode range(s). |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [NumericShaper.Range](../java/awt/font/NumericShaper.Range.md)!\>! | [getRangeSet](NumericShaper.md))`()` Returns a`Set`representing all the Unicode ranges in this`NumericShaper`that will be shaped. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRanges](../java/awt/font/NumericShaper.md))`()` Returns an`int`that ORs together the values for all the ranges that will be shaped. |
-| static [NumericShaper](../java/awt/font/NumericShaper.md)! | [getShaper](../java/awt/font/NumericShaper.md))`(`singleRange:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a shaper for the provided unicode range. |
-| static [NumericShaper](../java/awt/font/NumericShaper.md)! | [getShaper](../java/awt/font/NumericShaper.md))`(`singleRange:` ` [NumericShaper.Range](../java/awt/font/NumericShaper.Range.md)!`)` Returns a shaper for the provided Unicode range. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRanges](NumericShaper.md))`()` Returns an`int`that ORs together the values for all the ranges that will be shaped. |
+| static [NumericShaper](NumericShaper.md)! | [getShaper](NumericShaper.md))`(`singleRange:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a shaper for the provided unicode range. |
+| static [NumericShaper](NumericShaper.md)! | [getShaper](NumericShaper.md))`(`singleRange:` ` [NumericShaper.Range](../java/awt/font/NumericShaper.Range.md)!`)` Returns a shaper for the provided Unicode range. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/awt/font/NumericShaper.md))`()` Returns a hash code for this shaper. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isContextual](../java/awt/font/NumericShaper.md))`()` Returns a`boolean`indicating whether or not this shaper shapes contextually. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [shape](../java/awt/font/NumericShaper.md))`(`text:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Converts the digits in the text that occur between start and start + count. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](NumericShaper.md))`()` Returns a hash code for this shaper. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isContextual](NumericShaper.md))`()` Returns a`boolean`indicating whether or not this shaper shapes contextually. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [shape](NumericShaper.md))`(`text:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Converts the digits in the text that occur between start and start + count. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [shape](../java/awt/font/NumericShaper.md))`(`text:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `context:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Converts the digits in the text that occur between start and start + count, using the provided context. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [shape](../java/awt/font/NumericShaper.md))`(`text:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `context:` ` [NumericShaper.Range](../java/awt/font/NumericShaper.Range.md)!`)` Converts the digits in the text that occur between`start`and`start + count`, using the provided`context`. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/awt/font/NumericShaper.md))`()` Returns a`String`that describes this shaper. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [shape](NumericShaper.md))`(`text:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `context:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Converts the digits in the text that occur between start and start + count, using the provided context. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [shape](NumericShaper.md))`(`text:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `count:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `context:` ` [NumericShaper.Range](../java/awt/font/NumericShaper.Range.md)!`)` Converts the digits in the text that occur between`start`and`start + count`, using the provided`context`. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](NumericShaper.md))`()` Returns a`String`that describes this shaper. |
 | --- | --- |
 
 ## Constants
@@ -409,7 +409,7 @@ NumericShaper ns1 = NumericShaper.getShaper(NumericShaper.ARABIC);
 
 **See Also**
 
-- [java.lang.Object#equals(java.lang.Object)](../java/lang/Object.md)) 
+- [java.lang.Object#equals(java.lang.Object)](../java.lang/Object.md)) 
 
 ### getContextualShaper
 
@@ -428,7 +428,7 @@ Returns a contextual shaper for the provided unicode range(s). Latin-1 (EUROPEAN
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|-----------------------------------|
-| [NumericShaper](../java/awt/font/NumericShaper.md)! | a shaper for the specified ranges |
+| [NumericShaper](NumericShaper.md)! | a shaper for the specified ranges |
 
 ### getContextualShaper
 
@@ -451,7 +451,7 @@ Returns a contextual shaper for the provided unicode range(s). Latin-1 (EUROPEAN
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|--------------------------------------------|
-| [NumericShaper](../java/awt/font/NumericShaper.md)! | a shaper for the specified Unicode ranges. |
+| [NumericShaper](NumericShaper.md)! | a shaper for the specified Unicode ranges. |
 
 | Exceptions ||
 |--------------------------------------|--------------------------------------------------------------|
@@ -475,7 +475,7 @@ The shaper assumes EUROPEAN as the starting context, that is, if EUROPEAN digits
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|----------------------------------------------|
-| [NumericShaper](../java/awt/font/NumericShaper.md)! | a contextual shaper for the specified ranges |
+| [NumericShaper](NumericShaper.md)! | a contextual shaper for the specified ranges |
 
 | Exceptions ||
 |----------------------------------|---------------------|
@@ -501,7 +501,7 @@ Returns a contextual shaper for the provided Unicode range(s). The Latin-1 (EURO
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|-------------------------------------------------------|
-| [NumericShaper](../java/awt/font/NumericShaper.md)! | a contextual shaper for the specified Unicode ranges. |
+| [NumericShaper](NumericShaper.md)! | a contextual shaper for the specified Unicode ranges. |
 
 | Exceptions ||
 |----------------------------------|--------------------------------------|
@@ -534,7 +534,7 @@ Returns an`int`that ORs together the values for all the ranges that will be shap
 For example, to check if a shaper shapes to Arabic, you would use the following:
 `if ((shaper.getRanges() & shaper.ARABIC) != 0) &#123; ... `
 
-Note that this method supports only the bit mask-based ranges. Call [getRangeSet()](../java/awt/font/NumericShaper.md))for the enum-based ranges.
+Note that this method supports only the bit mask-based ranges. Call [getRangeSet()](NumericShaper.md))for the enum-based ranges.
 
 | Return ||
 |----------------------------------------------------------------------------|---------------------------------------------|
@@ -556,7 +556,7 @@ Returns a shaper for the provided unicode range. All Latin-1 (EUROPEAN) digits a
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|---------------------------------|
-| [NumericShaper](../java/awt/font/NumericShaper.md)! | a non-contextual numeric shaper |
+| [NumericShaper](NumericShaper.md)! | a non-contextual numeric shaper |
 
 | Exceptions ||
 |--------------------------------------|------------------------------------|
@@ -578,7 +578,7 @@ Returns a shaper for the provided Unicode range. All Latin-1 (EUROPEAN) digits a
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|----------------------------------|
-| [NumericShaper](../java/awt/font/NumericShaper.md)! | a non-contextual`NumericShaper`. |
+| [NumericShaper](NumericShaper.md)! | a non-contextual`NumericShaper`. |
 
 | Exceptions ||
 |----------------------------------|-------------------------|
@@ -600,7 +600,7 @@ Returns a hash code for this shaper.
 
 **See Also**
 
-- [java.lang.Object#hashCode](../java/lang/Object.md)) 
+- [java.lang.Object#hashCode](../java.lang/Object.md)) 
 
 ### isContextual
 

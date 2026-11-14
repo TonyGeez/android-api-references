@@ -8,7 +8,7 @@ class YearMonth : Comparable<YearMonth!>, Serializable, Temporal, TemporalAdju
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.time.YearMonth](../java/time/YearMonth.md) |
+| ↳ | [java.time.YearMonth](YearMonth.md) |
 
 A year-month in the ISO-8601 calendar system, such as `2007-12`.
 
@@ -22,19 +22,19 @@ The ISO-8601 calendar system is the modern civil calendar system used today in m
 
 | Public methods ||
 |---|---|
-| [Temporal](../java/time/temporal/Temporal.md)! | `https://developer.android.com/reference/kotlin/java/time/YearMonth#adjustInto(java.time.temporal.Temporal)(temporal: https://developer.android.com/reference/kotlin/java/time/temporal/Temporal!)` Adjusts the specified temporal object to have this year-month. |
-| [LocalDate](../java/time/LocalDate.md)! | `https://developer.android.com/reference/kotlin/java/time/YearMonth#atDay(kotlin.Int)(dayOfMonth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Combines this year-month with a day-of-month to create a `LocalDate`. |
-| [LocalDate](../java/time/LocalDate.md)! | `https://developer.android.com/reference/kotlin/java/time/YearMonth#atEndOfMonth()()` Returns a `LocalDate` at the end of the month. |
+| [Temporal](../java.time.temporal/Temporal.md)! | `https://developer.android.com/reference/kotlin/java/time/YearMonth#adjustInto(java.time.temporal.Temporal)(temporal: https://developer.android.com/reference/kotlin/java/time/temporal/Temporal!)` Adjusts the specified temporal object to have this year-month. |
+| [LocalDate](LocalDate.md)! | `https://developer.android.com/reference/kotlin/java/time/YearMonth#atDay(kotlin.Int)(dayOfMonth: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Combines this year-month with a day-of-month to create a `LocalDate`. |
+| [LocalDate](LocalDate.md)! | `https://developer.android.com/reference/kotlin/java/time/YearMonth#atEndOfMonth()()` Returns a `LocalDate` at the end of the month. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/YearMonth#compareTo(java.time.YearMonth)(other: https://developer.android.com/reference/kotlin/java/time/YearMonth#!)` Compares this year-month to another year-month. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/time/YearMonth#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Checks if this year-month is equal to another year-month. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/time/YearMonth#format(java.time.format.DateTimeFormatter)(formatter: https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter!)` Formats this year-month using the specified formatter. |
 | --- | --- |
-| static [YearMonth](../java/time/YearMonth.md)! | `https://developer.android.com/reference/kotlin/java/time/YearMonth#from(java.time.temporal.TemporalAccessor)(temporal: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor!)` Obtains an instance of `YearMonth` from a temporal object. |
+| static [YearMonth](YearMonth.md)! | `https://developer.android.com/reference/kotlin/java/time/YearMonth#from(java.time.temporal.TemporalAccessor)(temporal: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAccessor!)` Obtains an instance of `YearMonth` from a temporal object. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/YearMonth#get(java.time.temporal.TemporalField)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField!)` Gets the value of the specified field from this year-month as an `int`. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/time/YearMonth#getLong(java.time.temporal.TemporalField)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField!)` Gets the value of the specified field from this year-month as a `long`. |
 | --- | --- |
-| [Month](../java/time/Month.md)! | `https://developer.android.com/reference/kotlin/java/time/YearMonth#getMonth()()` Gets the month-of-year field using the `Month` enum. |
+| [Month](Month.md)! | `https://developer.android.com/reference/kotlin/java/time/YearMonth#getMonth()()` Gets the month-of-year field using the `Month` enum. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/YearMonth#getMonthValue()()` Gets the month-of-year field from 1 to 12. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/YearMonth#getYear()()` Gets the year field. |
 | --- | --- |
@@ -50,36 +50,36 @@ The ISO-8601 calendar system is the modern civil calendar system used today in m
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/YearMonth#lengthOfMonth()()` Returns the length of the month, taking account of the year. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/time/YearMonth#lengthOfYear()()` Returns the length of the year. |
 | --- | --- |
-| [YearMonth](../java/time/YearMonth.md)! | `https://developer.android.com/reference/kotlin/java/time/YearMonth#minus(java.time.temporal.TemporalAmount)(amountToSubtract: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAmount!)` Returns a copy of this year-month with the specified amount subtracted. |
-| [YearMonth](../java/time/YearMonth.md)! | `https://developer.android.com/reference/kotlin/java/time/YearMonth#minus(kotlin.Long,%20java.time.temporal.TemporalUnit)(amountToSubtract: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, unit: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit!)` Returns a copy of this year-month with the specified amount subtracted. |
-| [YearMonth](../java/time/YearMonth.md)! | `https://developer.android.com/reference/kotlin/java/time/YearMonth#minusMonths(kotlin.Long)(monthsToSubtract: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this `YearMonth` with the specified number of months subtracted. |
+| [YearMonth](YearMonth.md)! | `https://developer.android.com/reference/kotlin/java/time/YearMonth#minus(java.time.temporal.TemporalAmount)(amountToSubtract: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAmount!)` Returns a copy of this year-month with the specified amount subtracted. |
+| [YearMonth](YearMonth.md)! | `https://developer.android.com/reference/kotlin/java/time/YearMonth#minus(kotlin.Long,%20java.time.temporal.TemporalUnit)(amountToSubtract: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, unit: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit!)` Returns a copy of this year-month with the specified amount subtracted. |
+| [YearMonth](YearMonth.md)! | `https://developer.android.com/reference/kotlin/java/time/YearMonth#minusMonths(kotlin.Long)(monthsToSubtract: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this `YearMonth` with the specified number of months subtracted. |
 | --- | --- |
-| [YearMonth](../java/time/YearMonth.md)! | `https://developer.android.com/reference/kotlin/java/time/YearMonth#minusYears(kotlin.Long)(yearsToSubtract: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this `YearMonth` with the specified number of years subtracted. |
-| static [YearMonth](../java/time/YearMonth.md)! | `https://developer.android.com/reference/kotlin/java/time/YearMonth#now()()` Obtains the current year-month from the system clock in the default time-zone. |
-| static [YearMonth](../java/time/YearMonth.md)! | `https://developer.android.com/reference/kotlin/java/time/YearMonth#now(java.time.Clock)(clock: https://developer.android.com/reference/kotlin/java/time/Clock!)` Obtains the current year-month from the specified clock. |
+| [YearMonth](YearMonth.md)! | `https://developer.android.com/reference/kotlin/java/time/YearMonth#minusYears(kotlin.Long)(yearsToSubtract: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this `YearMonth` with the specified number of years subtracted. |
+| static [YearMonth](YearMonth.md)! | `https://developer.android.com/reference/kotlin/java/time/YearMonth#now()()` Obtains the current year-month from the system clock in the default time-zone. |
+| static [YearMonth](YearMonth.md)! | `https://developer.android.com/reference/kotlin/java/time/YearMonth#now(java.time.Clock)(clock: https://developer.android.com/reference/kotlin/java/time/Clock!)` Obtains the current year-month from the specified clock. |
 | --- | --- |
-| static [YearMonth](../java/time/YearMonth.md)! | `https://developer.android.com/reference/kotlin/java/time/YearMonth#now(java.time.ZoneId)(zone: https://developer.android.com/reference/kotlin/java/time/ZoneId!)` Obtains the current year-month from the system clock in the specified time-zone. |
-| static [YearMonth](../java/time/YearMonth.md)! | `https://developer.android.com/reference/kotlin/java/time/YearMonth#of(kotlin.Int,%20kotlin.Int)(year: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, month: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtains an instance of `YearMonth` from a year and month. |
-| static [YearMonth](../java/time/YearMonth.md)! | `https://developer.android.com/reference/kotlin/java/time/YearMonth#of(kotlin.Int,%20java.time.Month)(year: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, month: https://developer.android.com/reference/kotlin/java/time/Month!)` Obtains an instance of `YearMonth` from a year and month. |
+| static [YearMonth](YearMonth.md)! | `https://developer.android.com/reference/kotlin/java/time/YearMonth#now(java.time.ZoneId)(zone: https://developer.android.com/reference/kotlin/java/time/ZoneId!)` Obtains the current year-month from the system clock in the specified time-zone. |
+| static [YearMonth](YearMonth.md)! | `https://developer.android.com/reference/kotlin/java/time/YearMonth#of(kotlin.Int,%20kotlin.Int)(year: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, month: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Obtains an instance of `YearMonth` from a year and month. |
+| static [YearMonth](YearMonth.md)! | `https://developer.android.com/reference/kotlin/java/time/YearMonth#of(kotlin.Int,%20java.time.Month)(year: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, month: https://developer.android.com/reference/kotlin/java/time/Month!)` Obtains an instance of `YearMonth` from a year and month. |
 | --- | --- |
-| static [YearMonth](../java/time/YearMonth.md)! | `https://developer.android.com/reference/kotlin/java/time/YearMonth#parse(kotlin.CharSequence)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Obtains an instance of `YearMonth` from a text string such as `2007-12`. |
-| static [YearMonth](../java/time/YearMonth.md)! | `https://developer.android.com/reference/kotlin/java/time/YearMonth#parse(kotlin.CharSequence,%20java.time.format.DateTimeFormatter)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, formatter: https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter!)` Obtains an instance of `YearMonth` from a text string using a specific formatter. |
-| [YearMonth](../java/time/YearMonth.md)! | `https://developer.android.com/reference/kotlin/java/time/YearMonth#plus(java.time.temporal.TemporalAmount)(amountToAdd: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAmount!)` Returns a copy of this year-month with the specified amount added. |
+| static [YearMonth](YearMonth.md)! | `https://developer.android.com/reference/kotlin/java/time/YearMonth#parse(kotlin.CharSequence)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Obtains an instance of `YearMonth` from a text string such as `2007-12`. |
+| static [YearMonth](YearMonth.md)! | `https://developer.android.com/reference/kotlin/java/time/YearMonth#parse(kotlin.CharSequence,%20java.time.format.DateTimeFormatter)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, formatter: https://developer.android.com/reference/kotlin/java/time/format/DateTimeFormatter!)` Obtains an instance of `YearMonth` from a text string using a specific formatter. |
+| [YearMonth](YearMonth.md)! | `https://developer.android.com/reference/kotlin/java/time/YearMonth#plus(java.time.temporal.TemporalAmount)(amountToAdd: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAmount!)` Returns a copy of this year-month with the specified amount added. |
 | --- | --- |
-| [YearMonth](../java/time/YearMonth.md)! | `https://developer.android.com/reference/kotlin/java/time/YearMonth#plus(kotlin.Long,%20java.time.temporal.TemporalUnit)(amountToAdd: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, unit: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit!)` Returns a copy of this year-month with the specified amount added. |
-| [YearMonth](../java/time/YearMonth.md)! | `https://developer.android.com/reference/kotlin/java/time/YearMonth#plusMonths(kotlin.Long)(monthsToAdd: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this `YearMonth` with the specified number of months added. |
-| [YearMonth](../java/time/YearMonth.md)! | `https://developer.android.com/reference/kotlin/java/time/YearMonth#plusYears(kotlin.Long)(yearsToAdd: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this `YearMonth` with the specified number of years added. |
+| [YearMonth](YearMonth.md)! | `https://developer.android.com/reference/kotlin/java/time/YearMonth#plus(kotlin.Long,%20java.time.temporal.TemporalUnit)(amountToAdd: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, unit: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit!)` Returns a copy of this year-month with the specified amount added. |
+| [YearMonth](YearMonth.md)! | `https://developer.android.com/reference/kotlin/java/time/YearMonth#plusMonths(kotlin.Long)(monthsToAdd: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this `YearMonth` with the specified number of months added. |
+| [YearMonth](YearMonth.md)! | `https://developer.android.com/reference/kotlin/java/time/YearMonth#plusYears(kotlin.Long)(yearsToAdd: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this `YearMonth` with the specified number of years added. |
 | --- | --- |
 | R | `https://developer.android.com/reference/kotlin/java/time/YearMonth#query(java.time.temporal.TemporalQuery)(query: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalQuery<R>!)` Queries this year-month using the specified query. |
-| [ValueRange](../java/time/temporal/ValueRange.md)! | `https://developer.android.com/reference/kotlin/java/time/YearMonth#range(java.time.temporal.TemporalField)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField!)` Gets the range of valid values for the specified field. |
+| [ValueRange](../java.time.temporal/ValueRange.md)! | `https://developer.android.com/reference/kotlin/java/time/YearMonth#range(java.time.temporal.TemporalField)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField!)` Gets the range of valid values for the specified field. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/time/YearMonth#toString()()` Outputs this year-month as a `String`, such as `2007-12`. |
 | --- | --- |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/java/time/YearMonth#until(java.time.temporal.Temporal,%20java.time.temporal.TemporalUnit)(endExclusive: https://developer.android.com/reference/kotlin/java/time/temporal/Temporal!, unit: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalUnit!)` Calculates the amount of time until another year-month in terms of the specified unit. |
-| [YearMonth](../java/time/YearMonth.md)! | `https://developer.android.com/reference/kotlin/java/time/YearMonth#with(java.time.temporal.TemporalAdjuster)(adjuster: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAdjuster!)` Returns an adjusted copy of this year-month. |
-| [YearMonth](../java/time/YearMonth.md)! | `https://developer.android.com/reference/kotlin/java/time/YearMonth#with(java.time.temporal.TemporalField,%20kotlin.Long)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField!, newValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this year-month with the specified field set to a new value. |
+| [YearMonth](YearMonth.md)! | `https://developer.android.com/reference/kotlin/java/time/YearMonth#with(java.time.temporal.TemporalAdjuster)(adjuster: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalAdjuster!)` Returns an adjusted copy of this year-month. |
+| [YearMonth](YearMonth.md)! | `https://developer.android.com/reference/kotlin/java/time/YearMonth#with(java.time.temporal.TemporalField,%20kotlin.Long)(field: https://developer.android.com/reference/kotlin/java/time/temporal/TemporalField!, newValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Returns a copy of this year-month with the specified field set to a new value. |
 | --- | --- |
-| [YearMonth](../java/time/YearMonth.md)! | `https://developer.android.com/reference/kotlin/java/time/YearMonth#withMonth(kotlin.Int)(month: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a copy of this `YearMonth` with the month-of-year altered. |
-| [YearMonth](../java/time/YearMonth.md)! | `https://developer.android.com/reference/kotlin/java/time/YearMonth#withYear(kotlin.Int)(year: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a copy of this `YearMonth` with the year altered. |
+| [YearMonth](YearMonth.md)! | `https://developer.android.com/reference/kotlin/java/time/YearMonth#withMonth(kotlin.Int)(month: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a copy of this `YearMonth` with the month-of-year altered. |
+| [YearMonth](YearMonth.md)! | `https://developer.android.com/reference/kotlin/java/time/YearMonth#withYear(kotlin.Int)(year: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a copy of this `YearMonth` with the year altered. |
 
 ## Public methods
 
@@ -110,7 +110,7 @@ This instance is immutable and unaffected by this method call.
 
 | Parameters ||
 |---|---|
-| `temporal` | [Temporal](../java/time/temporal/Temporal.md)!: the target object to be adjusted, not null |
+| `temporal` | [Temporal](../java.time.temporal/Temporal.md)!: the target object to be adjusted, not null |
 
 | Return ||
 |---|---|
@@ -196,7 +196,7 @@ The comparison is based first on the value of the year, then on the value of the
 | Parameters ||
 |---|---|
 | `o` | the object to be compared. |
-| `other` | [YearMonth](../java/time/YearMonth.md)!: the other year-month to compare to, not null |
+| `other` | [YearMonth](YearMonth.md)!: the other year-month to compare to, not null |
 
 | Return ||
 |---|---|
@@ -241,7 +241,7 @@ This year-month will be passed to the formatter to produce a string.
 
 | Parameters ||
 |---|---|
-| `formatter` | [DateTimeFormatter](../java/time/format/DateTimeFormatter.md)!: the formatter to use, not null |
+| `formatter` | [DateTimeFormatter](../java.time.format/DateTimeFormatter.md)!: the formatter to use, not null |
 
 | Return ||
 |---|---|
@@ -269,7 +269,7 @@ This method matches the signature of the functional interface `https://developer
 
 | Parameters ||
 |---|---|
-| `temporal` | [TemporalAccessor](../java/time/temporal/TemporalAccessor.md)!: the temporal object to convert, not null |
+| `temporal` | [TemporalAccessor](../java.time.temporal/TemporalAccessor.md)!: the temporal object to convert, not null |
 
 | Return ||
 |---|---|
@@ -297,7 +297,7 @@ If the field is not a `ChronoField`, then the result of this method is obtained 
 
 | Parameters ||
 |---|---|
-| `field` | [TemporalField](../java/time/temporal/TemporalField.md)!: the field to get, not null |
+| `field` | [TemporalField](../java.time.temporal/TemporalField.md)!: the field to get, not null |
 
 | Return ||
 |---|---|
@@ -328,7 +328,7 @@ If the field is not a `ChronoField`, then the result of this method is obtained 
 
 | Parameters ||
 |---|---|
-| `field` | [TemporalField](../java/time/temporal/TemporalField.md)!: the field to get, not null |
+| `field` | [TemporalField](../java.time.temporal/TemporalField.md)!: the field to get, not null |
 
 | Return ||
 |---|---|
@@ -425,7 +425,7 @@ Checks if this year-month is after the specified year-month.
 
 | Parameters ||
 |---|---|
-| `other` | [YearMonth](../java/time/YearMonth.md)!: the other year-month to compare to, not null |
+| `other` | [YearMonth](YearMonth.md)!: the other year-month to compare to, not null |
 
 | Return ||
 |---|---|
@@ -443,7 +443,7 @@ Checks if this year-month is before the specified year-month.
 
 | Parameters ||
 |---|---|
-| `other` | [YearMonth](../java/time/YearMonth.md)!: the other year-month to compare to, not null |
+| `other` | [YearMonth](YearMonth.md)!: the other year-month to compare to, not null |
 
 | Return ||
 |---|---|
@@ -495,7 +495,7 @@ If the field is not a `ChronoField`, then the result of this method is obtained 
 
 | Parameters ||
 |---|---|
-| `field` | [TemporalField](../java/time/temporal/TemporalField.md)!: the field to check, null returns false |
+| `field` | [TemporalField](../java.time.temporal/TemporalField.md)!: the field to check, null returns false |
 
 | Return ||
 |---|---|
@@ -528,7 +528,7 @@ If the unit is not a `ChronoUnit`, then the result of this method is obtained by
 
 | Parameters ||
 |---|---|
-| `unit` | [TemporalUnit](../java/time/temporal/TemporalUnit.md)!: the unit to check, null returns false |
+| `unit` | [TemporalUnit](../java.time.temporal/TemporalUnit.md)!: the unit to check, null returns false |
 
 | Return ||
 |---|---|
@@ -605,7 +605,7 @@ This instance is immutable and unaffected by this method call.
 | Parameters ||
 |---|---|
 | `amount` | the amount to subtract, not null |
-| `amountToSubtract` | [TemporalAmount](../java/time/temporal/TemporalAmount.md)!: the amount to subtract, not null |
+| `amountToSubtract` | [TemporalAmount](../java.time.temporal/TemporalAmount.md)!: the amount to subtract, not null |
 
 | Return ||
 |---|---|
@@ -638,7 +638,7 @@ This instance is immutable and unaffected by this method call.
 | Parameters ||
 |---|---|
 | `amountToSubtract` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the amount of the unit to subtract from the result, may be negative |
-| `unit` | [TemporalUnit](../java/time/temporal/TemporalUnit.md)!: the unit of the amount to subtract, not null |
+| `unit` | [TemporalUnit](../java.time.temporal/TemporalUnit.md)!: the unit of the amount to subtract, not null |
 
 | Return ||
 |---|---|
@@ -731,7 +731,7 @@ This will query the specified clock to obtain the current year-month. Using this
 
 | Parameters ||
 |---|---|
-| `clock` | [Clock](../java/time/Clock.md)!: the clock to use, not null |
+| `clock` | [Clock](Clock.md)!: the clock to use, not null |
 
 | Return ||
 |---|---|
@@ -753,7 +753,7 @@ Using this method will prevent the ability to use an alternate clock for testing
 
 | Parameters ||
 |---|---|
-| `zone` | [ZoneId](../java/time/ZoneId.md)!: the zone ID to use, not null |
+| `zone` | [ZoneId](ZoneId.md)!: the zone ID to use, not null |
 
 | Return ||
 |---|---|
@@ -801,7 +801,7 @@ Obtains an instance of `YearMonth` from a year and month.
 | Parameters ||
 |---|---|
 | `year` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the year to represent, from MIN_YEAR to MAX_YEAR |
-| `month` | [Month](../java/time/Month.md)!: the month-of-year to represent, not null |
+| `month` | [Month](Month.md)!: the month-of-year to represent, not null |
 
 | Return ||
 |---|---|
@@ -853,7 +853,7 @@ The text is parsed using the formatter, returning a year-month.
 | Parameters ||
 |---|---|
 | `text` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!: the text to parse, not null |
-| `formatter` | [DateTimeFormatter](../java/time/format/DateTimeFormatter.md)!: the formatter to use, not null |
+| `formatter` | [DateTimeFormatter](../java.time.format/DateTimeFormatter.md)!: the formatter to use, not null |
 
 | Return ||
 |---|---|
@@ -882,7 +882,7 @@ This instance is immutable and unaffected by this method call.
 | Parameters ||
 |---|---|
 | `amount` | the amount to add, not null |
-| `amountToAdd` | [TemporalAmount](../java/time/temporal/TemporalAmount.md)!: the amount to add, not null |
+| `amountToAdd` | [TemporalAmount](../java.time.temporal/TemporalAmount.md)!: the amount to add, not null |
 
 | Return ||
 |---|---|
@@ -926,7 +926,7 @@ This instance is immutable and unaffected by this method call.
 | Parameters ||
 |---|---|
 | `amountToAdd` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the amount of the unit to add to the result, may be negative |
-| `unit` | [TemporalUnit](../java/time/temporal/TemporalUnit.md)!: the unit of the amount to add, not null |
+| `unit` | [TemporalUnit](../java.time.temporal/TemporalUnit.md)!: the unit of the amount to add, not null |
 
 | Return ||
 |---|---|
@@ -1004,7 +1004,7 @@ The result of this method is obtained by invoking the `https://developer.android
 | Parameters ||
 |---|---|
 | `<R>` | the type of the result |
-| `query` | [TemporalQuery](../java/time/temporal/TemporalQuery.md)\<R\>!: the query to invoke, not null |
+| `query` | [TemporalQuery](../java.time.temporal/TemporalQuery.md)\<R\>!: the query to invoke, not null |
 
 | Return ||
 |---|---|
@@ -1033,7 +1033,7 @@ If the field is not a `ChronoField`, then the result of this method is obtained 
 
 | Parameters ||
 |---|---|
-| `field` | [TemporalField](../java/time/temporal/TemporalField.md)!: the field to query the range for, not null |
+| `field` | [TemporalField](../java.time.temporal/TemporalField.md)!: the field to query the range for, not null |
 
 | Return ||
 |---|---|
@@ -1095,8 +1095,8 @@ This instance is immutable and unaffected by this method call.
 
 | Parameters ||
 |---|---|
-| `endExclusive` | [Temporal](../java/time/temporal/Temporal.md)!: the end date, exclusive, which is converted to a `YearMonth`, not null |
-| `unit` | [TemporalUnit](../java/time/temporal/TemporalUnit.md)!: the unit to measure the amount in, not null |
+| `endExclusive` | [Temporal](../java.time.temporal/Temporal.md)!: the end date, exclusive, which is converted to a `YearMonth`, not null |
+| `unit` | [TemporalUnit](../java.time.temporal/TemporalUnit.md)!: the unit to measure the amount in, not null |
 
 | Return ||
 |---|---|
@@ -1129,7 +1129,7 @@ This instance is immutable and unaffected by this method call.
 
 | Parameters ||
 |---|---|
-| `adjuster` | [TemporalAdjuster](../java/time/temporal/TemporalAdjuster.md)!: the adjuster to use, not null |
+| `adjuster` | [TemporalAdjuster](../java.time.temporal/TemporalAdjuster.md)!: the adjuster to use, not null |
 
 | Return ||
 |---|---|
@@ -1173,7 +1173,7 @@ This instance is immutable and unaffected by this method call.
 
 | Parameters ||
 |---|---|
-| `field` | [TemporalField](../java/time/temporal/TemporalField.md)!: the field to set in the result, not null |
+| `field` | [TemporalField](../java.time.temporal/TemporalField.md)!: the field to set in the result, not null |
 | `newValue` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the new value of the field in the result |
 
 | Return ||

@@ -10,9 +10,9 @@ open class RSAPrivateKeySpec : KeySpec
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.spec.RSAPrivateKeySpec](../java/security/spec/RSAPrivateKeySpec.md) |
+| ↳ | [java.security.spec.RSAPrivateKeySpec](RSAPrivateKeySpec.md) |
 
-| Known Direct Subclasses [RSAMultiPrimePrivateCrtKeySpec](../java/security/spec/RSAMultiPrimePrivateCrtKeySpec.md), [RSAPrivateCrtKeySpec](../java/security/spec/RSAPrivateCrtKeySpec.md) |------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [RSAMultiPrimePrivateCrtKeySpec](../java/security/spec/RSAMultiPrimePrivateCrtKeySpec.md) | This class specifies an RSA multi-prime private key, as defined in the [PKCS#1 v2.2](https://tools.ietf.org/rfc/rfc8017.txt) standard using the Chinese Remainder Theorem (CRT) information values for efficiency. | | [RSAPrivateCrtKeySpec](../java/security/spec/RSAPrivateCrtKeySpec.md) | This class specifies an RSA private key, as defined in the [PKCS#1 v2.2](https://tools.ietf.org/rfc/rfc8017.txt) standard, using the Chinese Remainder Theorem (CRT) information values for efficiency. | |
+| Known Direct Subclasses [RSAMultiPrimePrivateCrtKeySpec](RSAMultiPrimePrivateCrtKeySpec.md), [RSAPrivateCrtKeySpec](RSAPrivateCrtKeySpec.md) |------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [RSAMultiPrimePrivateCrtKeySpec](RSAMultiPrimePrivateCrtKeySpec.md) | This class specifies an RSA multi-prime private key, as defined in the [PKCS#1 v2.2](https://tools.ietf.org/rfc/rfc8017.txt) standard using the Chinese Remainder Theorem (CRT) information values for efficiency. | | [RSAPrivateCrtKeySpec](RSAPrivateCrtKeySpec.md) | This class specifies an RSA private key, as defined in the [PKCS#1 v2.2](https://tools.ietf.org/rfc/rfc8017.txt) standard, using the Chinese Remainder Theorem (CRT) information values for efficiency. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 This class specifies an RSA private key.
@@ -21,14 +21,14 @@ This class specifies an RSA private key.
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [RSAPrivateKeySpec](../java/security/spec/RSAPrivateKeySpec.md))`(`modulus:` ` [BigInteger](../java/math/BigInteger.md)!`, `privateExponent:` ` [BigInteger](../java/math/BigInteger.md)!`)` Creates a new RSAPrivateKeySpec. |
-| [RSAPrivateKeySpec](../java/security/spec/RSAPrivateKeySpec.md))`(`modulus:` ` [BigInteger](../java/math/BigInteger.md)!`, `privateExponent:` ` [BigInteger](../java/math/BigInteger.md)!`, `params:` ` [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)!`)` Creates a new RSAPrivateKeySpec with additional key parameters. |
+| [RSAPrivateKeySpec](RSAPrivateKeySpec.md))`(`modulus:` ` [BigInteger](../java.math/BigInteger.md)!`, `privateExponent:` ` [BigInteger](../java.math/BigInteger.md)!`)` Creates a new RSAPrivateKeySpec. |
+| [RSAPrivateKeySpec](RSAPrivateKeySpec.md))`(`modulus:` ` [BigInteger](../java.math/BigInteger.md)!`, `privateExponent:` ` [BigInteger](../java.math/BigInteger.md)!`, `params:` ` [AlgorithmParameterSpec](AlgorithmParameterSpec.md)!`)` Creates a new RSAPrivateKeySpec with additional key parameters. |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [BigInteger](../java/math/BigInteger.md)! | [getModulus](../java/security/spec/RSAPrivateKeySpec.md))`()` Returns the modulus. |
-| open [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)! | [getParams](../java/security/spec/RSAPrivateKeySpec.md))`()` Returns the parameters associated with this key, may be null if not present. |
-| open [BigInteger](../java/math/BigInteger.md)! | [getPrivateExponent](../java/security/spec/RSAPrivateKeySpec.md))`()` Returns the private exponent. |
+| open [BigInteger](../java.math/BigInteger.md)! | [getModulus](RSAPrivateKeySpec.md))`()` Returns the modulus. |
+| open [AlgorithmParameterSpec](AlgorithmParameterSpec.md)! | [getParams](RSAPrivateKeySpec.md))`()` Returns the parameters associated with this key, may be null if not present. |
+| open [BigInteger](../java.math/BigInteger.md)! | [getPrivateExponent](RSAPrivateKeySpec.md))`()` Returns the private exponent. |
 | --- | --- |
 
 ## Public constructors
@@ -47,8 +47,8 @@ Creates a new RSAPrivateKeySpec.
 
 | Parameters ||
 |-------------------|---------------------------------------------------------------------------------------------------------------|
-| `modulus` | [BigInteger](../java/math/BigInteger.md)!:the modulus |
-| `privateExponent` | [BigInteger](../java/math/BigInteger.md)!:the private exponent |
+| `modulus` | [BigInteger](../java.math/BigInteger.md)!:the modulus |
+| `privateExponent` | [BigInteger](../java.math/BigInteger.md)!:the private exponent |
 
 ### RSAPrivateKeySpec
 
@@ -65,9 +65,9 @@ Creates a new RSAPrivateKeySpec with additional key parameters.
 
 | Parameters ||
 |-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `modulus` | [BigInteger](../java/math/BigInteger.md)!:the modulus |
-| `privateExponent` | [BigInteger](../java/math/BigInteger.md)!:the private exponent |
-| `params` | [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)!:the parameters associated with this key, may be null |
+| `modulus` | [BigInteger](../java.math/BigInteger.md)!:the modulus |
+| `privateExponent` | [BigInteger](../java.math/BigInteger.md)!:the private exponent |
+| `params` | [AlgorithmParameterSpec](AlgorithmParameterSpec.md)!:the parameters associated with this key, may be null |
 | --- | --- |
 
 ## Public methods
@@ -84,7 +84,7 @@ Returns the modulus.
 
 | Return ||
 |------------------------------------------------------------------------------------------|-------------|
-| [BigInteger](../java/math/BigInteger.md)! | the modulus |
+| [BigInteger](../java.math/BigInteger.md)! | the modulus |
 
 ### getParams
 
@@ -98,7 +98,7 @@ Returns the parameters associated with this key, may be null if not present.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------|-----------------------------------------|
-| [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)! | the parameters associated with this key |
+| [AlgorithmParameterSpec](AlgorithmParameterSpec.md)! | the parameters associated with this key |
 
 ### getPrivateExponent
 
@@ -112,4 +112,4 @@ Returns the private exponent.
 
 | Return ||
 |------------------------------------------------------------------------------------------|----------------------|
-| [BigInteger](../java/math/BigInteger.md)! | the private exponent |
+| [BigInteger](../java.math/BigInteger.md)! | the private exponent |

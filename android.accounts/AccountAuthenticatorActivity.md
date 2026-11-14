@@ -9,12 +9,12 @@ open class AccountAuthenticatorActivity : Activity
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](../android/content/Context.md) |||||
-| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) ||||
-| | | ↳ | [android.view.ContextThemeWrapper](../android/view/ContextThemeWrapper.md) |||
+| ↳ | [android.content.Context](../android.content/Context.md) |||||
+| | ↳ | [android.content.ContextWrapper](../android.content/ContextWrapper.md) ||||
+| | | ↳ | [android.view.ContextThemeWrapper](../android.view/ContextThemeWrapper.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.app.Activity](../android/app/Activity.md) ||
-| | | | | ↳ | [android.accounts.AccountAuthenticatorActivity](../android/accounts/AccountAuthenticatorActivity.md) |
+| | | | ↳ | [android.app.Activity](../android.app/Activity.md) ||
+| | | | | ↳ | [android.accounts.AccountAuthenticatorActivity](AccountAuthenticatorActivity.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 30.**
@@ -4903,7 +4903,7 @@ Set the result that is to be sent as the result of the request that caused this 
 
 | Parameters ||
 |---|---|
-| `result` | [Bundle](../android/os/Bundle.md)!: this is returned as the result of the AbstractAccountAuthenticator request |
+| `result` | [Bundle](../android.os/Bundle.md)!: this is returned as the result of the AbstractAccountAuthenticator request |
 
 ## Protected methods
 
@@ -4922,4 +4922,4 @@ Retrieves the AccountAuthenticatorResponse from either the intent of the icicle,
 | Parameters ||
 |---|---|
 | `savedInstanceState` | If the activity is being re-initialized after previously being shut down then this Bundle contains the data it most recently supplied in #onSaveInstanceState. ***Note: Otherwise it is null.*** |
-| `icicle` | [Bundle](../android/os/Bundle.md)?: the save instance data of this Activity, may be null |
+| `icicle` | [Bundle](../android.os/Bundle.md)?: the save instance data of this Activity, may be null |

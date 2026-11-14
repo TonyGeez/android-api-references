@@ -9,9 +9,9 @@ class SleepSessionRecord : IntervalRecord
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.health.connect.datatypes.Record](../android/health/connect/datatypes/Record.md) |||
-| | ↳ | [android.health.connect.datatypes.IntervalRecord](../android/health/connect/datatypes/IntervalRecord.md) ||
-| | | ↳ | [android.health.connect.datatypes.SleepSessionRecord](../android/health/connect/datatypes/SleepSessionRecord.md) |
+| ↳ | [android.health.connect.datatypes.Record](Record.md) |||
+| | ↳ | [android.health.connect.datatypes.IntervalRecord](IntervalRecord.md) ||
+| | | ↳ | [android.health.connect.datatypes.SleepSessionRecord](SleepSessionRecord.md) |
 | --- | --- | --- | --- |
 
 Captures the user's sleep length and its stages. Each record represents a time interval for a full sleep session.
@@ -47,7 +47,7 @@ All `https://developer.android.com/reference/kotlin/android/health/connect/datat
 
 | Properties ||
 |---|---|
-| static [AggregationType](../android/health/connect/datatypes/AggregationType.md)\< [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/SleepSessionRecord#SLEEP_DURATION_TOTAL:android.health.connect.datatypes.AggregationType` Metric identifier to retrieve total sleep session duration using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#`. |
+| static [AggregationType](AggregationType.md)\< [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/SleepSessionRecord#SLEEP_DURATION_TOTAL:android.health.connect.datatypes.AggregationType` Metric identifier to retrieve total sleep session duration using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#`. |
 
 ## Public methods
 

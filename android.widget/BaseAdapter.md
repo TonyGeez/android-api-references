@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # BaseAdapter
 
-Kotlin| [Java](../android/widget/BaseAdapter.md) 
+Kotlin| [Java](BaseAdapter.md) 
 | --- | --- |
 
 ```
@@ -13,41 +13,41 @@ abstract class BaseAdapter : ListAdapter, SpinnerAdapter
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.widget.BaseAdapter](../android/widget/BaseAdapter.md) |
+| ↳ | [android.widget.BaseAdapter](BaseAdapter.md) |
 
-| Known Direct Subclasses [ArrayAdapter](../android/widget/ArrayAdapter.md), [CursorAdapter](../android/widget/CursorAdapter.md), [SimpleAdapter](../android/widget/SimpleAdapter.md) |----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [ArrayAdapter](../android/widget/ArrayAdapter.md) | You can use this adapter to provide views for an [AdapterView](../android/widget/AdapterView.md), Returns a view for each object in a collection of data objects you provide, and can be used with list-based user interface widgets such as [ListView](../android/widget/ListView.md) or [Spinner](../android/widget/Spinner.md). | | [CursorAdapter](../android/widget/CursorAdapter.md) | Adapter that exposes data from a [Cursor](../android/database/Cursor.md) to a [ListView](../android/widget/ListView.md) widget. | | [SimpleAdapter](../android/widget/SimpleAdapter.md) | An easy adapter to map static data to views defined in an XML file. | |
+| Known Direct Subclasses [ArrayAdapter](ArrayAdapter.md), [CursorAdapter](CursorAdapter.md), [SimpleAdapter](SimpleAdapter.md) |----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [ArrayAdapter](ArrayAdapter.md) | You can use this adapter to provide views for an [AdapterView](AdapterView.md), Returns a view for each object in a collection of data objects you provide, and can be used with list-based user interface widgets such as [ListView](ListView.md) or [Spinner](Spinner.md). | | [CursorAdapter](CursorAdapter.md) | Adapter that exposes data from a [Cursor](../android.database/Cursor.md) to a [ListView](ListView.md) widget. | | [SimpleAdapter](SimpleAdapter.md) | An easy adapter to map static data to views defined in an XML file. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [ResourceCursorAdapter](../android/widget/ResourceCursorAdapter.md), [SimpleCursorAdapter](../android/widget/SimpleCursorAdapter.md) |--------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------| | [ResourceCursorAdapter](../android/widget/ResourceCursorAdapter.md) | An easy adapter that creates views defined in an XML file. | | [SimpleCursorAdapter](../android/widget/SimpleCursorAdapter.md) | An easy adapter to map columns from a cursor to TextViews or ImageViews defined in an XML file. | |
+| Known Indirect Subclasses [ResourceCursorAdapter](ResourceCursorAdapter.md), [SimpleCursorAdapter](SimpleCursorAdapter.md) |--------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------| | [ResourceCursorAdapter](ResourceCursorAdapter.md) | An easy adapter that creates views defined in an XML file. | | [SimpleCursorAdapter](SimpleCursorAdapter.md) | An easy adapter to map columns from a cursor to TextViews or ImageViews defined in an XML file. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-Common base class of common implementation for an [Adapter](../android/widget/Adapter.md) that can be used in both [ListView](../android/widget/ListView.md)(by implementing the specialized [ListAdapter](../android/widget/ListAdapter.md) interface) and [Spinner](../android/widget/Spinner.md)(by implementing the specialized [SpinnerAdapter](../android/widget/SpinnerAdapter.md) interface).
+Common base class of common implementation for an [Adapter](Adapter.md) that can be used in both [ListView](ListView.md)(by implementing the specialized [ListAdapter](ListAdapter.md) interface) and [Spinner](Spinner.md)(by implementing the specialized [SpinnerAdapter](SpinnerAdapter.md) interface).
 
 ## Summary
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------|---|
-| [BaseAdapter](../android/widget/BaseAdapter.md))`()` <br /> |
+| [BaseAdapter](BaseAdapter.md))`()` <br /> |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [areAllItemsEnabled](../android/widget/BaseAdapter.md))`()` <br /> |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!\>? | [getAutofillOptions](../android/widget/BaseAdapter.md))`()` <br /> |
-| open [View](../android/view/View.md)! | [getDropDownView](../android/widget/BaseAdapter.md))`(`position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `convertView:` ` [View](../android/view/View.md)!`, `parent:` ` [ViewGroup](../android/view/ViewGroup.md)!`)` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [areAllItemsEnabled](BaseAdapter.md))`()` <br /> |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!\>? | [getAutofillOptions](BaseAdapter.md))`()` <br /> |
+| open [View](../android.view/View.md)! | [getDropDownView](BaseAdapter.md))`(`position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `convertView:` ` [View](../android.view/View.md)!`, `parent:` ` [ViewGroup](../android.view/ViewGroup.md)!`)` <br /> |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getItemViewType](../android/widget/BaseAdapter.md))`(`position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getViewTypeCount](../android/widget/BaseAdapter.md))`()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasStableIds](../android/widget/BaseAdapter.md))`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getItemViewType](BaseAdapter.md))`(`position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getViewTypeCount](BaseAdapter.md))`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasStableIds](BaseAdapter.md))`()` <br /> |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](../android/widget/BaseAdapter.md))`()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEnabled](../android/widget/BaseAdapter.md))`(`position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [notifyDataSetChanged](../android/widget/BaseAdapter.md))`()` Notifies the attached observers that the underlying data has been changed and any View reflecting the data set should refresh itself. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](BaseAdapter.md))`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEnabled](BaseAdapter.md))`(`position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [notifyDataSetChanged](BaseAdapter.md))`()` Notifies the attached observers that the underlying data has been changed and any View reflecting the data set should refresh itself. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [notifyDataSetInvalidated](../android/widget/BaseAdapter.md))`()` Notifies the attached observers that the underlying data is no longer valid or available. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerDataSetObserver](../android/widget/BaseAdapter.md))`(`observer:` ` [DataSetObserver](../android/database/DataSetObserver.md)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAutofillOptions](../android/widget/BaseAdapter.md))`(`vararg` `options:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Sets the value returned by [getAutofillOptions()](../android/widget/BaseAdapter.md)) |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [notifyDataSetInvalidated](BaseAdapter.md))`()` Notifies the attached observers that the underlying data is no longer valid or available. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerDataSetObserver](BaseAdapter.md))`(`observer:` ` [DataSetObserver](../android.database/DataSetObserver.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAutofillOptions](BaseAdapter.md))`(`vararg` `options:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Sets the value returned by [getAutofillOptions()](BaseAdapter.md)) |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterDataSetObserver](../android/widget/BaseAdapter.md))`(`observer:` ` [DataSetObserver](../android/database/DataSetObserver.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterDataSetObserver](BaseAdapter.md))`(`observer:` ` [DataSetObserver](../android.database/DataSetObserver.md)!`)` <br /> |
 
 ## Public constructors
 
@@ -98,13 +98,13 @@ open fun getDropDownView(
 | Parameters ||
 |---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `position` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):index of the item whose view we want. |
-| `convertView` | [View](../android/view/View.md)!:the old view to reuse, if possible. Note: You should check that this view is non-null and of an appropriate type before using. If it is not possible to convert this view to display the correct data, this method can create a new view. |
-| `parent` | [ViewGroup](../android/view/ViewGroup.md)!:the parent that this view will eventually be attached to |
+| `convertView` | [View](../android.view/View.md)!:the old view to reuse, if possible. Note: You should check that this view is non-null and of an appropriate type before using. If it is not possible to convert this view to display the correct data, this method can create a new view. |
+| `parent` | [ViewGroup](../android.view/ViewGroup.md)!:the parent that this view will eventually be attached to |
 | --- | --- |
 
 | Return ||
 |---------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| [View](../android/view/View.md)! | a [android.view.View](../android/view/View.md) corresponding to the data at the specified position. |
+| [View](../android.view/View.md)! | a [android.view.View](../android.view/View.md) corresponding to the data at the specified position. |
 
 ### getItemViewType
 
@@ -120,7 +120,7 @@ open fun getItemViewType(position: Int): Int
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | An integer representing the type of View. Two views should share the same type if one can be converted to the other in [getView](../android/widget/Adapter.md)). Note: Integers must be in the range 0 to [getViewTypeCount](../android/widget/Adapter.md))- 1. [IGNORE_ITEM_VIEW_TYPE](../android/widget/Adapter.md) can also be returned. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | An integer representing the type of View. Two views should share the same type if one can be converted to the other in [getView](Adapter.md)). Note: Integers must be in the range 0 to [getViewTypeCount](Adapter.md))- 1. [IGNORE_ITEM_VIEW_TYPE](Adapter.md) can also be returned. |
 
 ### getViewTypeCount
 
@@ -204,7 +204,7 @@ open fun registerDataSetObserver(observer: DataSetObserver!): Unit
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `observer` | [DataSetObserver](../android/database/DataSetObserver.md)!:the object that gets notified when the data set changes. |
+| `observer` | [DataSetObserver](../android.database/DataSetObserver.md)!:the object that gets notified when the data set changes. |
 
 ### setAutofillOptions
 
@@ -214,7 +214,7 @@ Added in [API level 27](https://developer.android.com/guide/topics/manifest/uses
 open fun setAutofillOptions(vararg options: CharSequence!): Unit
 ```
 
-Sets the value returned by [getAutofillOptions()](../android/widget/BaseAdapter.md))
+Sets the value returned by [getAutofillOptions()](BaseAdapter.md))
 
 | Parameters ||
 |-----------|-------------------------------------------------------------------------------------------------------------------------|
@@ -230,4 +230,4 @@ open fun unregisterDataSetObserver(observer: DataSetObserver!): Unit
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| `observer` | [DataSetObserver](../android/database/DataSetObserver.md)!:the object to unregister. |
+| `observer` | [DataSetObserver](../android.database/DataSetObserver.md)!:the object to unregister. |

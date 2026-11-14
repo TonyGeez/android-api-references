@@ -11,10 +11,10 @@ open class EnumConstantNotPresentException : RuntimeException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
-| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) ||
+| | ↳ | [java.lang.Exception](Exception.md) |||
+| | | ↳ | [java.lang.RuntimeException](RuntimeException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.EnumConstantNotPresentException](../java/lang/EnumConstantNotPresentException.md) |
+| | | | ↳ | [java.lang.EnumConstantNotPresentException](EnumConstantNotPresentException.md) |
 
 Thrown when an application tries to access an enum constant by name and the enum type contains no constant with the specified name. This exception can be thrown by the .
 
@@ -22,12 +22,12 @@ Thrown when an application tries to access an enum constant by name and the enum
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [EnumConstantNotPresentException](../java/lang/EnumConstantNotPresentException.md))`(`enumType:` ` [Class](../java/lang/Class.md)<out` ` [Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)< [Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)<*>>!>!`, `constantName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an`EnumConstantNotPresentException`for the specified constant. |
+| [EnumConstantNotPresentException](EnumConstantNotPresentException.md))`(`enumType:` ` [Class](Class.md)<out` ` [Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)< [Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)<*>>!>!`, `constantName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an`EnumConstantNotPresentException`for the specified constant. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [constantName](../java/lang/EnumConstantNotPresentException.md))`()` Returns the name of the missing enum constant. |
-| open [Class](../java/lang/Class.md)\<out [Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\<\*\>\>!\>! | [enumType](../java/lang/EnumConstantNotPresentException.md))`()` Returns the type of the missing enum constant. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [constantName](EnumConstantNotPresentException.md))`()` Returns the name of the missing enum constant. |
+| open [Class](Class.md)\<out [Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\<\*\>\>!\>! | [enumType](EnumConstantNotPresentException.md))`()` Returns the type of the missing enum constant. |
 
 ## Public constructors
 
@@ -45,7 +45,7 @@ Constructs an`EnumConstantNotPresentException`for the specified constant.
 
 | Parameters ||
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `enumType` | [Class](../java/lang/Class.md)\<out [Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\<\*\>\>!\>!:the type of the missing enum constant |
+| `enumType` | [Class](Class.md)\<out [Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\<\*\>\>!\>!:the type of the missing enum constant |
 | `constantName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the name of the missing enum constant |
 
 ## Public methods
@@ -76,4 +76,4 @@ Returns the type of the missing enum constant.
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
-| [Class](../java/lang/Class.md)<out` ` [Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)< [Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)<*>>!>! | the type of the missing enum constant |
+| [Class](Class.md)<out` ` [Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)< [Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)<*>>!>! | the type of the missing enum constant |

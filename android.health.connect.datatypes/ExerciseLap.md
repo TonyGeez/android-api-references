@@ -4,7 +4,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # ExerciseLap
 
-Kotlin| [Java](../android/health/connect/datatypes/ExerciseLap.md) 
+Kotlin| [Java](ExerciseLap.md) 
 | --- | --- |
 
 ```
@@ -13,26 +13,26 @@ class ExerciseLap
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.health.connect.datatypes.ExerciseLap](../android/health/connect/datatypes/ExerciseLap.md) |
+| ↳ | [android.health.connect.datatypes.ExerciseLap](ExerciseLap.md) |
 
-Captures the time of a lap within exercise session. Part of [ExerciseSessionRecord](../android/health/connect/datatypes/ExerciseSessionRecord.md).
+Captures the time of a lap within exercise session. Part of [ExerciseSessionRecord](ExerciseSessionRecord.md).
 
-Each record contains the start and end time and optional [Length](../android/health/connect/datatypes/units/Length.md) of the lap (e.g. pool length while swimming or a track lap while running). There may or may not be direct correlation with [ExerciseSegment](../android/health/connect/datatypes/ExerciseSegment.md) start and end times, e.g. [ExerciseSessionRecord](../android/health/connect/datatypes/ExerciseSessionRecord.md) of type running without any segments can be divided as laps of different lengths.
+Each record contains the start and end time and optional [Length](../android.health.connect.datatypes.units/Length.md) of the lap (e.g. pool length while swimming or a track lap while running). There may or may not be direct correlation with [ExerciseSegment](ExerciseSegment.md) start and end times, e.g. [ExerciseSessionRecord](ExerciseSessionRecord.md) of type running without any segments can be divided as laps of different lengths.
 
 ## Summary
 
 | Nested classes ||
 |---|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](../android/health/connect/datatypes/ExerciseLap.Builder.md) Builder class for [ExerciseLap](../android/health/connect/datatypes/ExerciseLap.md) |
+| | [Builder](../android/health/connect/datatypes/ExerciseLap.Builder.md) Builder class for [ExerciseLap](ExerciseLap.md) |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/health/connect/datatypes/ExerciseLap.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [Instant](../java/time/Instant.md) | [getEndTime](../android/health/connect/datatypes/ExerciseLap.md))`()` <br /> |
-| [Length](../android/health/connect/datatypes/units/Length.md)? | [getLength](../android/health/connect/datatypes/ExerciseLap.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](ExerciseLap.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [Instant](../java.time/Instant.md) | [getEndTime](ExerciseLap.md))`()` <br /> |
+| [Length](../android.health.connect.datatypes.units/Length.md)? | [getLength](ExerciseLap.md))`()` <br /> |
 | --- | --- |
-| [Instant](../java/time/Instant.md) | [getStartTime](../android/health/connect/datatypes/ExerciseLap.md))`()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/health/connect/datatypes/ExerciseLap.md))`()` <br /> |
+| [Instant](../java.time/Instant.md) | [getStartTime](ExerciseLap.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](ExerciseLap.md))`()` <br /> |
 
 ## Public methods
 
@@ -75,7 +75,7 @@ fun getEndTime(): Instant
 
 | Return ||
 |-----------------------------------------------------------------------------------|-----------------------------|
-| [Instant](../java/time/Instant.md) | This value cannot be`null`. |
+| [Instant](../java.time/Instant.md) | This value cannot be`null`. |
 
 ### getLength
 
@@ -87,7 +87,7 @@ fun getLength(): Length?
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------|--------------------------|
-| [Length](../android/health/connect/datatypes/units/Length.md)? | This value may be`null`. |
+| [Length](../android.health.connect.datatypes.units/Length.md)? | This value may be`null`. |
 
 ### getStartTime
 
@@ -99,7 +99,7 @@ fun getStartTime(): Instant
 
 | Return ||
 |-----------------------------------------------------------------------------------|-----------------------------|
-| [Instant](../java/time/Instant.md) | This value cannot be`null`. |
+| [Instant](../java.time/Instant.md) | This value cannot be`null`. |
 
 ### hashCode
 

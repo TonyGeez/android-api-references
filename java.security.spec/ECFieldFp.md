@@ -10,7 +10,7 @@ open class ECFieldFp : ECField
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.spec.ECFieldFp](../java/security/spec/ECFieldFp.md) |
+| ↳ | [java.security.spec.ECFieldFp](ECFieldFp.md) |
 
 This immutable class defines an elliptic curve (EC) prime finite field.
 
@@ -18,15 +18,15 @@ This immutable class defines an elliptic curve (EC) prime finite field.
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ECFieldFp](../java/security/spec/ECFieldFp.md))`(`p:` ` [BigInteger](../java/math/BigInteger.md)!`)` Creates an elliptic curve prime finite field with the specified prime`p`. |
+| [ECFieldFp](ECFieldFp.md))`(`p:` ` [BigInteger](../java.math/BigInteger.md)!`)` Creates an elliptic curve prime finite field with the specified prime`p`. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/security/spec/ECFieldFp.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this prime finite field for equality with the specified object. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFieldSize](../java/security/spec/ECFieldFp.md))`()` Returns the field size in bits which is size of prime p for this prime finite field. |
-| open [BigInteger](../java/math/BigInteger.md)! | [getP](../java/security/spec/ECFieldFp.md))`()` Returns the prime`p`of this prime finite field. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](ECFieldFp.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this prime finite field for equality with the specified object. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFieldSize](ECFieldFp.md))`()` Returns the field size in bits which is size of prime p for this prime finite field. |
+| open [BigInteger](../java.math/BigInteger.md)! | [getP](ECFieldFp.md))`()` Returns the prime`p`of this prime finite field. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/security/spec/ECFieldFp.md))`()` Returns a hash code value for this prime finite field. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](ECFieldFp.md))`()` Returns a hash code value for this prime finite field. |
 
 ## Public constructors
 
@@ -42,7 +42,7 @@ Creates an elliptic curve prime finite field with the specified prime`p`.
 
 | Parameters ||
 |-----|-----------------------------------------------------------------------------------------------------|
-| `p` | [BigInteger](../java/math/BigInteger.md)!:the prime. |
+| `p` | [BigInteger](../java.math/BigInteger.md)!:the prime. |
 
 | Exceptions ||
 |--------------------------------------|-----------------------|
@@ -95,7 +95,7 @@ Returns the prime`p`of this prime finite field.
 
 | Return ||
 |------------------------------------------------------------------------------------------|------------|
-| [BigInteger](../java/math/BigInteger.md)! | the prime. |
+| [BigInteger](../java.math/BigInteger.md)! | the prime. |
 
 ### hashCode
 

@@ -4,7 +4,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 
 # CpuHeadroomParams
 
-Kotlin| [Java](../android/os/CpuHeadroomParams.md) 
+Kotlin| [Java](CpuHeadroomParams.md) 
 | --- | --- |
 
 ```
@@ -13,9 +13,9 @@ class CpuHeadroomParams
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.os.CpuHeadroomParams](../android/os/CpuHeadroomParams.md) |
+| ↳ | [android.os.CpuHeadroomParams](CpuHeadroomParams.md) |
 
-Headroom request params used by [SystemHealthManager.getCpuHeadroom(CpuHeadroomParams)](../android/os/health/SystemHealthManager.md)).
+Headroom request params used by [SystemHealthManager.getCpuHeadroom(CpuHeadroomParams)](../android.os.health/SystemHealthManager.md)).
 
 This class is immutable and one should use the [Builder](../android/os/CpuHeadroomParams.Builder.md) to build a new instance.
 
@@ -27,20 +27,20 @@ This class is immutable and one should use the [Builder](../android/os/CpuHeadro
 
 | Constants ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CPU_HEADROOM_CALCULATION_TYPE_AVERAGE](../android/os/CpuHeadroomParams.md) The headroom calculation type bases on average value over a specified window. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CPU_HEADROOM_CALCULATION_TYPE_MIN](../android/os/CpuHeadroomParams.md) The headroom calculation type bases on minimum value over a specified window. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CPU_HEADROOM_CALCULATION_TYPE_AVERAGE](CpuHeadroomParams.md) The headroom calculation type bases on average value over a specified window. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CPU_HEADROOM_CALCULATION_TYPE_MIN](CpuHeadroomParams.md) The headroom calculation type bases on minimum value over a specified window. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/os/CpuHeadroomParams.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCalculationType](../android/os/CpuHeadroomParams.md))`()` Gets the headroom calculation type. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getCalculationWindowMillis](../android/os/CpuHeadroomParams.md))`()` Gets the headroom calculation window size in milliseconds. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](CpuHeadroomParams.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCalculationType](CpuHeadroomParams.md))`()` Gets the headroom calculation type. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getCalculationWindowMillis](CpuHeadroomParams.md))`()` Gets the headroom calculation window size in milliseconds. |
 | --- | --- |
-| [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | [getTids](../android/os/CpuHeadroomParams.md))`()` Gets the TIDs to track. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/os/CpuHeadroomParams.md))`()` <br /> |
-| [CpuHeadroomParams.Builder](../android/os/CpuHeadroomParams.Builder.md) | [toBuilder](../android/os/CpuHeadroomParams.md))`()` Returns a new builder with the same values as this object. |
+| [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | [getTids](CpuHeadroomParams.md))`()` Gets the TIDs to track. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](CpuHeadroomParams.md))`()` <br /> |
+| [CpuHeadroomParams.Builder](../android/os/CpuHeadroomParams.Builder.md) | [toBuilder](CpuHeadroomParams.md))`()` Returns a new builder with the same values as this object. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/os/CpuHeadroomParams.md))`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](CpuHeadroomParams.md))`()` <br /> |
 
 ## Constants
 
@@ -100,7 +100,7 @@ This will return the default value chosen by the device if not set.
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.os.CpuHeadroomParams#CPU_HEADROOM_CALCULATION_TYPE_MIN](../android/os/CpuHeadroomParams.md), or [android.os.CpuHeadroomParams#CPU_HEADROOM_CALCULATION_TYPE_AVERAGE](../android/os/CpuHeadroomParams.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.os.CpuHeadroomParams#CPU_HEADROOM_CALCULATION_TYPE_MIN](CpuHeadroomParams.md), or [android.os.CpuHeadroomParams#CPU_HEADROOM_CALCULATION_TYPE_AVERAGE](CpuHeadroomParams.md) |
 
 ### getCalculationWindowMillis
 

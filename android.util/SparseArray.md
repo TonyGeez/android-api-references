@@ -8,9 +8,9 @@ open class SparseArray<E : Any!> : Cloneable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.util.SparseArray](../android/util/SparseArray.md) |
+| ↳ | [android.util.SparseArray](SparseArray.md) |
 
-`SparseArray` maps integers to Objects and, unlike a normal array of Objects, its indices can contain gaps. `SparseArray` is intended to be more memory-efficient than a [`HashMap`](../reference/java/util/HashMap.md), because it avoids auto-boxing keys and its data structure doesn't rely on an extra entry object for each mapping.
+`SparseArray` maps integers to Objects and, unlike a normal array of Objects, its indices can contain gaps. `SparseArray` is intended to be more memory-efficient than a [`HashMap`](../java.util/HashMap.md), because it avoids auto-boxing keys and its data structure doesn't rely on an extra entry object for each mapping.
 
 Note that this container keeps its mappings in an array data structure, using a binary search to find keys. The implementation is not intended to be appropriate for data structures that may contain large numbers of items. It is generally slower than a `HashMap` because lookups require a binary search, and adds and removes require inserting and deleting entries in the array. For containers holding up to hundreds of items, the performance difference is less than 50%.
 
@@ -29,7 +29,7 @@ It is possible to iterate over the items in this container using `https://develo
 |---|---|
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/util/SparseArray#append(kotlin.Int,%20android.util.SparseArray.E)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, value: E)` Puts a key/value pair into the array, optimizing for the case where the key is greater than all existing keys in the array. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/util/SparseArray#clear()()` Removes all key-value mappings from this SparseArray. |
-| open [SparseArray](../android/util/SparseArray.md)\<E\> | `https://developer.android.com/reference/kotlin/android/util/SparseArray#clone()()` Creates and returns a copy of this object. |
+| open [SparseArray](SparseArray.md)\<E\> | `https://developer.android.com/reference/kotlin/android/util/SparseArray#clone()()` Creates and returns a copy of this object. |
 | --- | --- |
 | open E? | `https://developer.android.com/reference/kotlin/android/util/SparseArray#compute(kotlin.Int,%20android.util.function.IntObjFunction)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, function: https://developer.android.com/reference/kotlin/android/util/function/IntObjFunction<in E, out E>)` Attempts to compute a new mapped value for the specified key based on its current mapping (or null if there is no current mapping). |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/util/SparseArray#contains(kotlin.Int)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns true if the key exists in the array. |
@@ -159,7 +159,7 @@ Attempts to compute a new mapped value for the specified key based on its curren
 | Parameters ||
 |---|---|
 | `key` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The key to compute the value for. |
-| `function` | [IntObjFunction](../android/util/function/IntObjFunction.md)\<in E, out E\>: The function to compute the new value. This value cannot be `null`. |
+| `function` | [IntObjFunction](../android.util.function/IntObjFunction.md)\<in E, out E\>: The function to compute the new value. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -195,7 +195,7 @@ Compares the contents of this `https://developer.android.com/reference/kotlin/an
 
 | Parameters ||
 |---|---|
-| `other` | [SparseArray](../android/util/SparseArray.md)\<\*\>?: This value may be `null`. |
+| `other` | [SparseArray](SparseArray.md)\<\*\>?: This value may be `null`. |
 
 ### contentHashCode
 

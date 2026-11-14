@@ -4,7 +4,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 
 # AccessNetworkConstants
 
-Kotlin| [Java](../android/telephony/AccessNetworkConstants.md) 
+Kotlin| [Java](AccessNetworkConstants.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class AccessNetworkConstants
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.telephony.AccessNetworkConstants](../android/telephony/AccessNetworkConstants.md) |
+| ↳ | [android.telephony.AccessNetworkConstants](AccessNetworkConstants.md) |
 
 Contains access network related constants.
 
@@ -30,8 +30,8 @@ Contains access network related constants.
 
 | Constants ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSPORT_TYPE_WLAN](../android/telephony/AccessNetworkConstants.md) Transport type for Wireless Local Area Networks (i.e. Wifi) |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSPORT_TYPE_WWAN](../android/telephony/AccessNetworkConstants.md) Transport type for Wireless Wide Area Networks (i.e. Cellular) |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSPORT_TYPE_WLAN](AccessNetworkConstants.md) Transport type for Wireless Local Area Networks (i.e. Wifi) |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSPORT_TYPE_WWAN](AccessNetworkConstants.md) Transport type for Wireless Wide Area Networks (i.e. Cellular) |
 
 ## Constants
 

@@ -8,12 +8,12 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 interface ProtocolFamily
 ```
 
-| [java.net.ProtocolFamily](../java/net/ProtocolFamily.md) |
+| [java.net.ProtocolFamily](ProtocolFamily.md) |
 
-| Known Direct Subclasses [StandardProtocolFamily](../java/net/StandardProtocolFamily.md) |----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------| | [StandardProtocolFamily](../java/net/StandardProtocolFamily.md) | Defines the standard families of communication protocols. | |
+| Known Direct Subclasses [StandardProtocolFamily](StandardProtocolFamily.md) |----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------| | [StandardProtocolFamily](StandardProtocolFamily.md) | Defines the standard families of communication protocols. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [StandardProtocolFamily.INET](../java/net/StandardProtocolFamily.md), [StandardProtocolFamily.INET6](../java/net/StandardProtocolFamily.md), [StandardProtocolFamily.UNIX](../java/net/StandardProtocolFamily.md) |---------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------| | [StandardProtocolFamily.INET](../java/net/StandardProtocolFamily.md) | Internet Protocol Version 4 (IPv4) | | [StandardProtocolFamily.INET6](../java/net/StandardProtocolFamily.md) | Internet Protocol Version 6 (IPv6) | | [StandardProtocolFamily.UNIX](../java/net/StandardProtocolFamily.md) | Unix domain (Local) interprocess communication. | |
+| Known Indirect Subclasses [StandardProtocolFamily.INET](StandardProtocolFamily.md), [StandardProtocolFamily.INET6](StandardProtocolFamily.md), [StandardProtocolFamily.UNIX](StandardProtocolFamily.md) |---------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------| | [StandardProtocolFamily.INET](StandardProtocolFamily.md) | Internet Protocol Version 4 (IPv4) | | [StandardProtocolFamily.INET6](StandardProtocolFamily.md) | Internet Protocol Version 6 (IPv6) | | [StandardProtocolFamily.UNIX](StandardProtocolFamily.md) | Unix domain (Local) interprocess communication. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Represents a family of communication protocols.
@@ -22,7 +22,7 @@ Represents a family of communication protocols.
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [name](../java/net/ProtocolFamily.md))`()` Returns the name of the protocol family. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [name](ProtocolFamily.md))`()` Returns the name of the protocol family. |
 
 ## Public methods
 

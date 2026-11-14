@@ -2,7 +2,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 
 # MediaQualityManager
 
-Kotlin | [Java](../android/media/quality/MediaQualityManager.md)
+Kotlin | [Java](MediaQualityManager.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class MediaQualityManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.quality.MediaQualityManager](../android/media/quality/MediaQualityManager.md) |
+| ↳ | [android.media.quality.MediaQualityManager](MediaQualityManager.md) |
 
 Central system API to the overall media quality, which arbitrates interaction between applications and media quality service.
 
@@ -31,12 +31,12 @@ Central system API to the overall media quality, which arbitrates interaction be
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/quality/MediaQualityManager#createPictureProfile(android.media.quality.PictureProfile)(pp: https://developer.android.com/reference/kotlin/android/media/quality/PictureProfile)` Creates a picture profile and store it in the system. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/quality/MediaQualityManager#createSoundProfile(android.media.quality.SoundProfile)(sp: https://developer.android.com/reference/kotlin/android/media/quality/SoundProfile)` Creates a sound profile and store it in the system. |
 | --- | --- |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PictureProfile](../android/media/quality/PictureProfile.md)!\> | `https://developer.android.com/reference/kotlin/android/media/quality/MediaQualityManager#getAvailablePictureProfiles(android.media.quality.MediaQualityManager.ProfileQueryParams)(options: https://developer.android.com/reference/kotlin/android/media/quality/MediaQualityManager.ProfileQueryParams?)` Gets profiles that available to the caller. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SoundProfile](../android/media/quality/SoundProfile.md)!\> | `https://developer.android.com/reference/kotlin/android/media/quality/MediaQualityManager#getAvailableSoundProfiles(android.media.quality.MediaQualityManager.ProfileQueryParams)(options: https://developer.android.com/reference/kotlin/android/media/quality/MediaQualityManager.ProfileQueryParams?)` Gets profiles that available to the caller package. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ParameterCapability](../android/media/quality/ParameterCapability.md)!\> | `https://developer.android.com/reference/kotlin/android/media/quality/MediaQualityManager#getParameterCapabilities(kotlin.collections.MutableList)(names: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>)` Gets capability information of the given parameters. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PictureProfile](PictureProfile.md)!\> | `https://developer.android.com/reference/kotlin/android/media/quality/MediaQualityManager#getAvailablePictureProfiles(android.media.quality.MediaQualityManager.ProfileQueryParams)(options: https://developer.android.com/reference/kotlin/android/media/quality/MediaQualityManager.ProfileQueryParams?)` Gets profiles that available to the caller. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SoundProfile](SoundProfile.md)!\> | `https://developer.android.com/reference/kotlin/android/media/quality/MediaQualityManager#getAvailableSoundProfiles(android.media.quality.MediaQualityManager.ProfileQueryParams)(options: https://developer.android.com/reference/kotlin/android/media/quality/MediaQualityManager.ProfileQueryParams?)` Gets profiles that available to the caller package. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ParameterCapability](ParameterCapability.md)!\> | `https://developer.android.com/reference/kotlin/android/media/quality/MediaQualityManager#getParameterCapabilities(kotlin.collections.MutableList)(names: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>)` Gets capability information of the given parameters. |
 | --- | --- |
-| [PictureProfile](../android/media/quality/PictureProfile.md)? | `https://developer.android.com/reference/kotlin/android/media/quality/MediaQualityManager#getPictureProfile(kotlin.Int,%20kotlin.String,%20android.media.quality.MediaQualityManager.ProfileQueryParams)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, options: https://developer.android.com/reference/kotlin/android/media/quality/MediaQualityManager.ProfileQueryParams?)` Gets picture profile by given profile type and name. |
-| [SoundProfile](../android/media/quality/SoundProfile.md)? | `https://developer.android.com/reference/kotlin/android/media/quality/MediaQualityManager#getSoundProfile(kotlin.Int,%20kotlin.String,%20android.media.quality.MediaQualityManager.ProfileQueryParams)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, options: https://developer.android.com/reference/kotlin/android/media/quality/MediaQualityManager.ProfileQueryParams?)` Gets sound profile by given profile type and name. |
+| [PictureProfile](PictureProfile.md)? | `https://developer.android.com/reference/kotlin/android/media/quality/MediaQualityManager#getPictureProfile(kotlin.Int,%20kotlin.String,%20android.media.quality.MediaQualityManager.ProfileQueryParams)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, options: https://developer.android.com/reference/kotlin/android/media/quality/MediaQualityManager.ProfileQueryParams?)` Gets picture profile by given profile type and name. |
+| [SoundProfile](SoundProfile.md)? | `https://developer.android.com/reference/kotlin/android/media/quality/MediaQualityManager#getSoundProfile(kotlin.Int,%20kotlin.String,%20android.media.quality.MediaQualityManager.ProfileQueryParams)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, options: https://developer.android.com/reference/kotlin/android/media/quality/MediaQualityManager.ProfileQueryParams?)` Gets sound profile by given profile type and name. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/quality/MediaQualityManager#isAmbientBacklightEnabled()()` Returns `true` if ambient backlight is enabled; `false` otherwise. |
 | --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/media/quality/MediaQualityManager#isAutoPictureQualityEnabled()()` Returns `true` if auto picture quality is enabled; `false` otherwise. |
@@ -78,8 +78,8 @@ Adds an active picture listener for the contents owner by the caller.
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. This value cannot be `null`. |
-| `listener` | [Consumer](../java/util/function/Consumer.md)\< [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ActiveProcessingPicture](../android/media/quality/ActiveProcessingPicture.md)!\>!\>: This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. This value cannot be `null`. |
+| `listener` | [Consumer](../java.util.function/Consumer.md)\< [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ActiveProcessingPicture](ActiveProcessingPicture.md)!\>!\>: This value cannot be `null`. |
 
 ### createPictureProfile
 
@@ -95,7 +95,7 @@ If the profile is created successfully, `https://developer.android.com/reference
 
 | Parameters ||
 |---|---|
-| `pp` | [PictureProfile](../android/media/quality/PictureProfile.md): the `https://developer.android.com/reference/kotlin/android/media/quality/PictureProfile` object to be created. This value cannot be `null`. |
+| `pp` | [PictureProfile](PictureProfile.md): the `https://developer.android.com/reference/kotlin/android/media/quality/PictureProfile` object to be created. This value cannot be `null`. |
 
 ### createSoundProfile
 
@@ -111,7 +111,7 @@ If the profile is created successfully, `https://developer.android.com/reference
 
 | Parameters ||
 |---|---|
-| `sp` | [SoundProfile](../android/media/quality/SoundProfile.md): the `https://developer.android.com/reference/kotlin/android/media/quality/SoundProfile` object to be created. This value cannot be `null`. |
+| `sp` | [SoundProfile](SoundProfile.md): the `https://developer.android.com/reference/kotlin/android/media/quality/SoundProfile` object to be created. This value cannot be `null`. |
 
 ### getAvailablePictureProfiles
 
@@ -282,7 +282,7 @@ Registers a `https://developer.android.com/reference/kotlin/android/media/qualit
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [MediaQualityManager.AmbientBacklightCallback](../android/media/quality/MediaQualityManager.AmbientBacklightCallback.md): This value cannot be `null`. |
 
 ### registerPictureProfileCallback
@@ -300,7 +300,7 @@ Registers a `https://developer.android.com/reference/kotlin/android/media/qualit
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [MediaQualityManager.PictureProfileCallback](../android/media/quality/MediaQualityManager.PictureProfileCallback.md): This value cannot be `null`. |
 
 ### registerSoundProfileCallback
@@ -318,7 +318,7 @@ Registers a `https://developer.android.com/reference/kotlin/android/media/qualit
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [MediaQualityManager.SoundProfileCallback](../android/media/quality/MediaQualityManager.SoundProfileCallback.md): This value cannot be `null`. |
 
 ### removeActiveProcessingPictureListener
@@ -333,7 +333,7 @@ Removes an active picture listener for the contents.
 
 | Parameters ||
 |---|---|
-| `listener` | [Consumer](../java/util/function/Consumer.md)\< [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ActiveProcessingPicture](../android/media/quality/ActiveProcessingPicture.md)!\>!\>: This value cannot be `null`. |
+| `listener` | [Consumer](../java.util.function/Consumer.md)\< [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ActiveProcessingPicture](ActiveProcessingPicture.md)!\>!\>: This value cannot be `null`. |
 
 ### removePictureProfile
 
@@ -389,7 +389,7 @@ Set the ambient backlight settings.
 
 | Parameters ||
 |---|---|
-| `settings` | [AmbientBacklightSettings](../android/media/quality/AmbientBacklightSettings.md): The settings to use for the backlight detector. This value cannot be `null`. |
+| `settings` | [AmbientBacklightSettings](AmbientBacklightSettings.md): The settings to use for the backlight detector. This value cannot be `null`. |
 
 ### unregisterAmbientBacklightCallback
 
@@ -449,7 +449,7 @@ Updates an existing picture profile and store it in the system.
 | Parameters ||
 |---|---|
 | `profileId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): the id of the object to be updated. This value cannot be `null`. |
-| `pp` | [PictureProfile](../android/media/quality/PictureProfile.md): the `https://developer.android.com/reference/kotlin/android/media/quality/PictureProfile` object to be updated. This value cannot be `null`. |
+| `pp` | [PictureProfile](PictureProfile.md): the `https://developer.android.com/reference/kotlin/android/media/quality/PictureProfile` object to be updated. This value cannot be `null`. |
 
 ### updateSoundProfile
 
@@ -467,4 +467,4 @@ Updates an existing sound profile and store it in the system.
 | Parameters ||
 |---|---|
 | `profileId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): the id of the object to be updated. This value cannot be `null`. |
-| `sp` | [SoundProfile](../android/media/quality/SoundProfile.md): the `https://developer.android.com/reference/kotlin/android/media/quality/SoundProfile` object to be updated. This value cannot be `null`. |
+| `sp` | [SoundProfile](SoundProfile.md): the `https://developer.android.com/reference/kotlin/android/media/quality/SoundProfile` object to be updated. This value cannot be `null`. |

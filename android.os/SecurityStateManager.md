@@ -8,7 +8,7 @@ open class SecurityStateManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.os.SecurityStateManager](../android/os/SecurityStateManager.md) |
+| ↳ | [android.os.SecurityStateManager](SecurityStateManager.md) |
 
 SecurityStateManager provides the functionality to query the security status of the system and platform components. For example, this includes the system and vendor security patch level.
 
@@ -25,7 +25,7 @@ SecurityStateManager provides the functionality to query the security status of 
 
 | Public methods ||
 |---|---|
-| open [Bundle](../android/os/Bundle.md) | `https://developer.android.com/reference/kotlin/android/os/SecurityStateManager#getGlobalSecurityState()()` Returns the current global security state. |
+| open [Bundle](Bundle.md) | `https://developer.android.com/reference/kotlin/android/os/SecurityStateManager#getGlobalSecurityState()()` Returns the current global security state. |
 
 ## Constants
 

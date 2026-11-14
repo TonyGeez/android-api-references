@@ -9,9 +9,9 @@ class SkinTemperatureRecord : IntervalRecord
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.health.connect.datatypes.Record](../android/health/connect/datatypes/Record.md) |||
-| | ↳ | [android.health.connect.datatypes.IntervalRecord](../android/health/connect/datatypes/IntervalRecord.md) ||
-| | | ↳ | [android.health.connect.datatypes.SkinTemperatureRecord](../android/health/connect/datatypes/SkinTemperatureRecord.md) |
+| ↳ | [android.health.connect.datatypes.Record](Record.md) |||
+| | ↳ | [android.health.connect.datatypes.IntervalRecord](IntervalRecord.md) ||
+| | | ↳ | [android.health.connect.datatypes.SkinTemperatureRecord](SkinTemperatureRecord.md) |
 | --- | --- | --- | --- |
 
 Captures the skin temperature of a user. Each record can represent a series of measurements of temperature differences.
@@ -38,7 +38,7 @@ Captures the skin temperature of a user. Each record can represent a series of m
 | Public methods ||
 |---|---|
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/SkinTemperatureRecord#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [Temperature](../android/health/connect/datatypes/units/Temperature.md)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/SkinTemperatureRecord#getBaseline()()` <br /> |
+| [Temperature](../android.health.connect.datatypes.units/Temperature.md)? | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/SkinTemperatureRecord#getBaseline()()` <br /> |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SkinTemperatureRecord.Delta](../android/health/connect/datatypes/SkinTemperatureRecord.Delta.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/SkinTemperatureRecord#getDeltas()()` <br /> |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/SkinTemperatureRecord#getMeasurementLocation()()` <br /> |
@@ -51,9 +51,9 @@ Captures the skin temperature of a user. Each record can represent a series of m
 
 | Properties ||
 |---|---|
-| static [AggregationType](../android/health/connect/datatypes/AggregationType.md)\< [TemperatureDelta](../android/health/connect/datatypes/units/TemperatureDelta.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/SkinTemperatureRecord#SKIN_TEMPERATURE_DELTA_AVG:android.health.connect.datatypes.AggregationType` Metric identifier to retrieve average skin temperature delta using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#`. |
-| static [AggregationType](../android/health/connect/datatypes/AggregationType.md)\< [TemperatureDelta](../android/health/connect/datatypes/units/TemperatureDelta.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/SkinTemperatureRecord#SKIN_TEMPERATURE_DELTA_MAX:android.health.connect.datatypes.AggregationType` Metric identifier to retrieve maximum skin temperature delta using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#`. |
-| static [AggregationType](../android/health/connect/datatypes/AggregationType.md)\< [TemperatureDelta](../android/health/connect/datatypes/units/TemperatureDelta.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/SkinTemperatureRecord#SKIN_TEMPERATURE_DELTA_MIN:android.health.connect.datatypes.AggregationType` Metric identifier to retrieve minimum skin temperature delta using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#`. |
+| static [AggregationType](AggregationType.md)\< [TemperatureDelta](../android.health.connect.datatypes.units/TemperatureDelta.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/SkinTemperatureRecord#SKIN_TEMPERATURE_DELTA_AVG:android.health.connect.datatypes.AggregationType` Metric identifier to retrieve average skin temperature delta using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#`. |
+| static [AggregationType](AggregationType.md)\< [TemperatureDelta](../android.health.connect.datatypes.units/TemperatureDelta.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/SkinTemperatureRecord#SKIN_TEMPERATURE_DELTA_MAX:android.health.connect.datatypes.AggregationType` Metric identifier to retrieve maximum skin temperature delta using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#`. |
+| static [AggregationType](AggregationType.md)\< [TemperatureDelta](../android.health.connect.datatypes.units/TemperatureDelta.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/SkinTemperatureRecord#SKIN_TEMPERATURE_DELTA_MIN:android.health.connect.datatypes.AggregationType` Metric identifier to retrieve minimum skin temperature delta using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#`. |
 | --- | --- |
 
 ## Constants

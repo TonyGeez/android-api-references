@@ -4,16 +4,16 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # EndTextElementListener
 
-Kotlin| [Java](../android/sax/EndTextElementListener.md) 
+Kotlin| [Java](EndTextElementListener.md) 
 | --- | --- |
 
 ```
 interface EndTextElementListener
 ```
 
-| [android.sax.EndTextElementListener](../android/sax/EndTextElementListener.md) |
+| [android.sax.EndTextElementListener](EndTextElementListener.md) |
 
-| Known Direct Subclasses [TextElementListener](../android/sax/TextElementListener.md) |-------------------------------------------------------------------------------------------------------|--------------------------------------------------------| | [TextElementListener](../android/sax/TextElementListener.md) | Listens for the beginning and ending of text elements. | |
+| Known Direct Subclasses [TextElementListener](TextElementListener.md) |-------------------------------------------------------------------------------------------------------|--------------------------------------------------------| | [TextElementListener](TextElementListener.md) | Listens for the beginning and ending of text elements. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 Listens for the end of text elements.
@@ -22,7 +22,7 @@ Listens for the end of text elements.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [end](../android/sax/EndTextElementListener.md))`(`body:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Invoked at the end of a text element with the body of the element. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [end](EndTextElementListener.md))`(`body:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Invoked at the end of a text element with the body of the element. |
 
 ## Public methods
 

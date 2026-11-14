@@ -5,7 +5,7 @@ Deprecated in [API level 30](https://developer.android.com/guide/topics/manifest
 
 # DrmUtils
 
-Kotlin | [Java](../android/drm/DrmUtils.md) 
+Kotlin | [Java](DrmUtils.md) 
 | --- | --- |
 
 ```
@@ -14,11 +14,11 @@ open class DrmUtils
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.drm.DrmUtils](../android/drm/DrmUtils.md) |
+| ↳ | [android.drm.DrmUtils](DrmUtils.md) |
 
 | **This class was deprecated in API level 30.**
 |
-| Please use [android.media.MediaDrm](../android/media/MediaDrm.md)
+| Please use [android.media.MediaDrm](../android.media/MediaDrm.md)
 
 A utility class that provides operations for parsing extended metadata embedded in DRM constraint information. If a DRM scheme has specific constraints beyond the standard constraints, the constraints will show up in the [DrmStore.ConstraintsColumns.EXTENDED_METADATA](../android/drm/DrmStore.ConstraintsColumns.md) key. You can use [DrmUtils.ExtendedMetadataParser](../android/drm/DrmUtils.ExtendedMetadataParser.md) to iterate over those values.
 
@@ -30,11 +30,11 @@ A utility class that provides operations for parsing extended metadata embedded 
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------|---|
-| [DrmUtils](../android/drm/DrmUtils.md))`()` <br /> |
+| [DrmUtils](DrmUtils.md))`()` <br /> |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open static [DrmUtils.ExtendedMetadataParser](../android/drm/DrmUtils.ExtendedMetadataParser.md)! | [getExtendedMetadataParser](../android/drm/DrmUtils.md))`(`extendedMetadata:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Gets an instance of [DrmUtils.ExtendedMetadataParser](../android/drm/DrmUtils.ExtendedMetadataParser.md), which can be used to parse extended metadata embedded in DRM constraint information. |
+| open static [DrmUtils.ExtendedMetadataParser](../android/drm/DrmUtils.ExtendedMetadataParser.md)! | [getExtendedMetadataParser](DrmUtils.md))`(`extendedMetadata:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Gets an instance of [DrmUtils.ExtendedMetadataParser](../android/drm/DrmUtils.ExtendedMetadataParser.md), which can be used to parse extended metadata embedded in DRM constraint information. |
 
 ## Public constructors
 

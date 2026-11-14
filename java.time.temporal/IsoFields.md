@@ -10,7 +10,7 @@ class IsoFields
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.time.temporal.IsoFields](../java/time/temporal/IsoFields.md) |
+| ↳ | [java.time.temporal.IsoFields](IsoFields.md) |
 
 Fields and units specific to the ISO-8601 calendar system, including quarter-of-year and week-based-year.
 
@@ -24,9 +24,9 @@ January, February and March are in Q1. April, May and June are in Q2. July, Augu
 
 The complete date is expressed using three fields:
 
-- [DAY_OF_QUARTER](../java/time/temporal/IsoFields.md)- the day within the quarter, from 1 to 90, 91 or 92
-- [QUARTER_OF_YEAR](../java/time/temporal/IsoFields.md)- the quarter within the year, from 1 to 4
-- [YEAR](../java/time/temporal/ChronoField.md)- the standard ISO year
+- [DAY_OF_QUARTER](IsoFields.md)- the day within the quarter, from 1 to 90, 91 or 92
+- [QUARTER_OF_YEAR](IsoFields.md)- the quarter within the year, from 1 to 4
+- [YEAR](ChronoField.md)- the standard ISO year
 
 ## Week based years
 
@@ -34,9 +34,9 @@ The ISO-8601 standard was originally intended as a data interchange format, defi
 
 The date is expressed using three fields:
 
-- [DAY_OF_WEEK](../java/time/temporal/ChronoField.md)- the standard field defining the day-of-week from Monday (1) to Sunday (7)
-- [WEEK_OF_WEEK_BASED_YEAR](../java/time/temporal/IsoFields.md)- the week within the week-based-year
-- [WEEK_BASED_YEAR](../java/time/temporal/IsoFields.md)- the week-based-year
+- [DAY_OF_WEEK](ChronoField.md)- the standard field defining the day-of-week from Monday (1) to Sunday (7)
+- [WEEK_OF_WEEK_BASED_YEAR](IsoFields.md)- the week within the week-based-year
+- [WEEK_BASED_YEAR](IsoFields.md)- the week-based-year
 
 The week-based-year itself is defined relative to the standard ISO proleptic year. It differs from the standard year in that it always starts on a Monday.
 
@@ -69,13 +69,13 @@ For example:
 
 | Properties ||
 |---------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [TemporalField](../java/time/temporal/TemporalField.md)! | [DAY_OF_QUARTER](../java/time/temporal/IsoFields.md) The field that represents the day-of-quarter. |
-| static [TemporalField](../java/time/temporal/TemporalField.md)! | [QUARTER_OF_YEAR](../java/time/temporal/IsoFields.md) The field that represents the quarter-of-year. |
-| static [TemporalUnit](../java/time/temporal/TemporalUnit.md)! | [QUARTER_YEARS](../java/time/temporal/IsoFields.md) Unit that represents the concept of a quarter-year. |
+| static [TemporalField](TemporalField.md)! | [DAY_OF_QUARTER](IsoFields.md) The field that represents the day-of-quarter. |
+| static [TemporalField](TemporalField.md)! | [QUARTER_OF_YEAR](IsoFields.md) The field that represents the quarter-of-year. |
+| static [TemporalUnit](TemporalUnit.md)! | [QUARTER_YEARS](IsoFields.md) Unit that represents the concept of a quarter-year. |
 | --- | --- |
-| static [TemporalField](../java/time/temporal/TemporalField.md)! | [WEEK_BASED_YEAR](../java/time/temporal/IsoFields.md) The field that represents the week-based-year. |
-| static [TemporalUnit](../java/time/temporal/TemporalUnit.md)! | [WEEK_BASED_YEARS](../java/time/temporal/IsoFields.md) The unit that represents week-based-years for the purpose of addition and subtraction. |
-| static [TemporalField](../java/time/temporal/TemporalField.md)! | [WEEK_OF_WEEK_BASED_YEAR](../java/time/temporal/IsoFields.md) The field that represents the week-of-week-based-year. |
+| static [TemporalField](TemporalField.md)! | [WEEK_BASED_YEAR](IsoFields.md) The field that represents the week-based-year. |
+| static [TemporalUnit](TemporalUnit.md)! | [WEEK_BASED_YEARS](IsoFields.md) The unit that represents week-based-years for the purpose of addition and subtraction. |
+| static [TemporalField](TemporalField.md)! | [WEEK_OF_WEEK_BASED_YEAR](IsoFields.md) The field that represents the week-of-week-based-year. |
 | --- | --- |
 
 ## Properties
@@ -98,11 +98,11 @@ When setting this field, the value is allowed to be partially lenient, taking an
 
 In the resolving phase of parsing, a date can be created from a year, quarter-of-year and day-of-quarter.
 
-In [strict mode](../java/time/format/ResolverStyle.md), all three fields are validated against their range of valid values. The day-of-quarter field is validated from 1 to 90, 91 or 92 depending on the year and quarter.
+In [strict mode](../java.time.format/ResolverStyle.md), all three fields are validated against their range of valid values. The day-of-quarter field is validated from 1 to 90, 91 or 92 depending on the year and quarter.
 
-In [smart mode](../java/time/format/ResolverStyle.md), all three fields are validated against their range of valid values. The day-of-quarter field is validated between 1 and 92, ignoring the actual range based on the year and quarter. If the day-of-quarter exceeds the actual range by one day, then the resulting date is one day later. If the day-of-quarter exceeds the actual range by two days, then the resulting date is two days later.
+In [smart mode](../java.time.format/ResolverStyle.md), all three fields are validated against their range of valid values. The day-of-quarter field is validated between 1 and 92, ignoring the actual range based on the year and quarter. If the day-of-quarter exceeds the actual range by one day, then the resulting date is one day later. If the day-of-quarter exceeds the actual range by two days, then the resulting date is two days later.
 
-In [lenient mode](../java/time/format/ResolverStyle.md), only the year is validated against the range of valid values. The resulting date is calculated equivalent to the following three stage approach. First, create a date on the first of January in the requested year. Then take the quarter-of-year, subtract one, and add the amount in quarters to the date. Finally, take the day-of-quarter, subtract one, and add the amount in days to the date.
+In [lenient mode](../java.time.format/ResolverStyle.md), only the year is validated against the range of valid values. The resulting date is calculated equivalent to the following three stage approach. First, create a date on the first of January in the requested year. Then take the quarter-of-year, subtract one, and add the amount in quarters to the date. Finally, take the day-of-quarter, subtract one, and add the amount in days to the date.
 
 This unit is an immutable and thread-safe singleton. 
 
@@ -120,7 +120,7 @@ This field allows the quarter-of-year value to be queried and set. The quarter-o
 
 The quarter-of-year can only be calculated if the month-of-year is available.
 
-In the resolving phase of parsing, a date can be created from a year, quarter-of-year and day-of-quarter. See [DAY_OF_QUARTER](../java/time/temporal/IsoFields.md) for details.
+In the resolving phase of parsing, a date can be created from a year, quarter-of-year and day-of-quarter. See [DAY_OF_QUARTER](IsoFields.md) for details.
 
 This unit is an immutable and thread-safe singleton. 
 
@@ -148,9 +148,9 @@ The field that represents the week-based-year.
 
 This field allows the week-based-year value to be queried and set.
 
-The field has a range that matches [LocalDate.MAX](../java/time/LocalDate.md) and [LocalDate.MIN](../java/time/LocalDate.md).
+The field has a range that matches [LocalDate.MAX](../java.time/LocalDate.md) and [LocalDate.MIN](../java.time/LocalDate.md).
 
-In the resolving phase of parsing, a date can be created from a week-based-year, week-of-week-based-year and day-of-week. See [WEEK_OF_WEEK_BASED_YEAR](../java/time/temporal/IsoFields.md) for details.
+In the resolving phase of parsing, a date can be created from a week-based-year, week-of-week-based-year and day-of-week. See [WEEK_OF_WEEK_BASED_YEAR](IsoFields.md) for details.
 
 This unit is an immutable and thread-safe singleton. 
 
@@ -184,10 +184,10 @@ This field allows the week of the week-based-year value to be queried and set. T
 
 In the resolving phase of parsing, a date can be created from a week-based-year, week-of-week-based-year and day-of-week.
 
-In [strict mode](../java/time/format/ResolverStyle.md), all three fields are validated against their range of valid values. The week-of-week-based-year field is validated from 1 to 52 or 53 depending on the week-based-year.
+In [strict mode](../java.time.format/ResolverStyle.md), all three fields are validated against their range of valid values. The week-of-week-based-year field is validated from 1 to 52 or 53 depending on the week-based-year.
 
-In [smart mode](../java/time/format/ResolverStyle.md), all three fields are validated against their range of valid values. The week-of-week-based-year field is validated between 1 and 53, ignoring the week-based-year. If the week-of-week-based-year is 53, but the week-based-year only has 52 weeks, then the resulting date is in week 1 of the following week-based-year.
+In [smart mode](../java.time.format/ResolverStyle.md), all three fields are validated against their range of valid values. The week-of-week-based-year field is validated between 1 and 53, ignoring the week-based-year. If the week-of-week-based-year is 53, but the week-based-year only has 52 weeks, then the resulting date is in week 1 of the following week-based-year.
 
-In [lenient mode](../java/time/format/ResolverStyle.md), only the week-based-year is validated against the range of valid values. If the day-of-week is outside the range 1 to 7, then the resulting date is adjusted by a suitable number of weeks to reduce the day-of-week to the range 1 to 7. If the week-of-week-based-year value is outside the range 1 to 52, then any excess weeks are added or subtracted from the resulting date.
+In [lenient mode](../java.time.format/ResolverStyle.md), only the week-based-year is validated against the range of valid values. If the day-of-week is outside the range 1 to 7, then the resulting date is adjusted by a suitable number of weeks to reduce the day-of-week to the range 1 to 7. If the week-of-week-based-year value is outside the range 1 to 52, then any excess weeks are added or subtracted from the resulting date.
 
 This unit is an immutable and thread-safe singleton.

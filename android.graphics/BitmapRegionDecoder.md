@@ -4,7 +4,7 @@ Added in [API level 10](https://developer.android.com/guide/topics/manifest/uses
 
 # BitmapRegionDecoder
 
-Kotlin| [Java](../android/graphics/BitmapRegionDecoder.md) 
+Kotlin| [Java](BitmapRegionDecoder.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class BitmapRegionDecoder
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.graphics.BitmapRegionDecoder](../android/graphics/BitmapRegionDecoder.md) |
+| ↳ | [android.graphics.BitmapRegionDecoder](BitmapRegionDecoder.md) |
 
 BitmapRegionDecoder can be used to decode a rectangle region from an image. BitmapRegionDecoder is particularly useful when an original image is large and you only need parts of the image.
 
@@ -23,27 +23,27 @@ To create a BitmapRegionDecoder, call newInstance(...). Given a BitmapRegionDeco
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Bitmap](../android/graphics/Bitmap.md)! | [decodeRegion](../android/graphics/BitmapRegionDecoder.md))`(`rect:` ` [Rect](../android/graphics/Rect.md)!`, `options:` ` [BitmapFactory.Options](../android/graphics/BitmapFactory.Options.md)!`)` Decodes a rectangle region in the image specified by rect. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHeight](../android/graphics/BitmapRegionDecoder.md))`()` Returns the original image's height |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWidth](../android/graphics/BitmapRegionDecoder.md))`()` Returns the original image's width |
+| [Bitmap](Bitmap.md)! | [decodeRegion](BitmapRegionDecoder.md))`(`rect:` ` [Rect](Rect.md)!`, `options:` ` [BitmapFactory.Options](../android/graphics/BitmapFactory.Options.md)!`)` Decodes a rectangle region in the image specified by rect. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHeight](BitmapRegionDecoder.md))`()` Returns the original image's height |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWidth](BitmapRegionDecoder.md))`()` Returns the original image's width |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRecycled](../android/graphics/BitmapRegionDecoder.md))`()` Returns true if this region decoder has been recycled. |
-| static [BitmapRegionDecoder](../android/graphics/BitmapRegionDecoder.md) | [newInstance](../android/graphics/BitmapRegionDecoder.md))`(`pfd:` ` [ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md)`)` Create a BitmapRegionDecoder from the file descriptor. |
-| static [BitmapRegionDecoder](../android/graphics/BitmapRegionDecoder.md) | [newInstance](../android/graphics/BitmapRegionDecoder.md))`(`data:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a BitmapRegionDecoder from the specified byte array. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRecycled](BitmapRegionDecoder.md))`()` Returns true if this region decoder has been recycled. |
+| static [BitmapRegionDecoder](BitmapRegionDecoder.md) | [newInstance](BitmapRegionDecoder.md))`(`pfd:` ` [ParcelFileDescriptor](../android.os/ParcelFileDescriptor.md)`)` Create a BitmapRegionDecoder from the file descriptor. |
+| static [BitmapRegionDecoder](BitmapRegionDecoder.md) | [newInstance](BitmapRegionDecoder.md))`(`data:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a BitmapRegionDecoder from the specified byte array. |
 | --- | --- |
-| static [BitmapRegionDecoder](../android/graphics/BitmapRegionDecoder.md) | [newInstance](../android/graphics/BitmapRegionDecoder.md))`(`data:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `isShareable:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Create a BitmapRegionDecoder from the specified byte array. |
-| static [BitmapRegionDecoder](../android/graphics/BitmapRegionDecoder.md) | [newInstance](../android/graphics/BitmapRegionDecoder.md))`(`fd:` ` [FileDescriptor](../java/io/FileDescriptor.md)`, `isShareable:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Create a BitmapRegionDecoder from the file descriptor. |
-| static [BitmapRegionDecoder](../android/graphics/BitmapRegionDecoder.md)? | [newInstance](../android/graphics/BitmapRegionDecoder.md))`(`is:` ` [InputStream](../java/io/InputStream.md)`)` Create a BitmapRegionDecoder from an input stream. |
+| static [BitmapRegionDecoder](BitmapRegionDecoder.md) | [newInstance](BitmapRegionDecoder.md))`(`data:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `isShareable:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Create a BitmapRegionDecoder from the specified byte array. |
+| static [BitmapRegionDecoder](BitmapRegionDecoder.md) | [newInstance](BitmapRegionDecoder.md))`(`fd:` ` [FileDescriptor](../java.io/FileDescriptor.md)`, `isShareable:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Create a BitmapRegionDecoder from the file descriptor. |
+| static [BitmapRegionDecoder](BitmapRegionDecoder.md)? | [newInstance](BitmapRegionDecoder.md))`(`is:` ` [InputStream](../java.io/InputStream.md)`)` Create a BitmapRegionDecoder from an input stream. |
 | --- | --- |
-| static [BitmapRegionDecoder](../android/graphics/BitmapRegionDecoder.md)? | [newInstance](../android/graphics/BitmapRegionDecoder.md))`(`is:` ` [InputStream](../java/io/InputStream.md)`, `isShareable:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Create a BitmapRegionDecoder from an input stream. |
-| static [BitmapRegionDecoder](../android/graphics/BitmapRegionDecoder.md) | [newInstance](../android/graphics/BitmapRegionDecoder.md))`(`pathName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Create a BitmapRegionDecoder from a file path. |
-| static [BitmapRegionDecoder](../android/graphics/BitmapRegionDecoder.md) | [newInstance](../android/graphics/BitmapRegionDecoder.md))`(`pathName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `isShareable:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Create a BitmapRegionDecoder from a file path. |
+| static [BitmapRegionDecoder](BitmapRegionDecoder.md)? | [newInstance](BitmapRegionDecoder.md))`(`is:` ` [InputStream](../java.io/InputStream.md)`, `isShareable:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Create a BitmapRegionDecoder from an input stream. |
+| static [BitmapRegionDecoder](BitmapRegionDecoder.md) | [newInstance](BitmapRegionDecoder.md))`(`pathName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Create a BitmapRegionDecoder from a file path. |
+| static [BitmapRegionDecoder](BitmapRegionDecoder.md) | [newInstance](BitmapRegionDecoder.md))`(`pathName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `isShareable:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Create a BitmapRegionDecoder from a file path. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [recycle](../android/graphics/BitmapRegionDecoder.md))`()` Frees up the memory associated with this region decoder, and mark the region decoder as "dead", meaning it will throw an exception if decodeRegion(), getWidth() or getHeight() is called. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [recycle](BitmapRegionDecoder.md))`()` Frees up the memory associated with this region decoder, and mark the region decoder as "dead", meaning it will throw an exception if decodeRegion(), getWidth() or getHeight() is called. |
 
 | Protected methods ||
 |------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](../android/graphics/BitmapRegionDecoder.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](BitmapRegionDecoder.md))`()` <br /> |
 
 ## Public methods
 
@@ -62,12 +62,12 @@ Decodes a rectangle region in the image specified by rect.
 
 | Parameters ||
 |-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `rect` | [Rect](../android/graphics/Rect.md)!:The rectangle that specified the region to be decode. |
+| `rect` | [Rect](Rect.md)!:The rectangle that specified the region to be decode. |
 | `options` | [BitmapFactory.Options](../android/graphics/BitmapFactory.Options.md)!:null-ok; Options that control downsampling. inPurgeable is not supported. |
 
 | Return ||
 |-----------------------------------------------------------------------------------|---------------------------------------------------------------------|
-| [Bitmap](../android/graphics/Bitmap.md)! | The decoded bitmap, or null if the image data could not be decoded. |
+| [Bitmap](Bitmap.md)! | The decoded bitmap, or null if the image data could not be decoded. |
 
 | Exceptions ||
 |--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -119,11 +119,11 @@ Create a BitmapRegionDecoder from the file descriptor. The position within the d
 
 | Parameters ||
 |-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `pfd` | [ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md):The parcel file descriptor containing the data to decode This value cannot be`null`. |
+| `pfd` | [ParcelFileDescriptor](../android.os/ParcelFileDescriptor.md):The parcel file descriptor containing the data to decode This value cannot be`null`. |
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [BitmapRegionDecoder](../android/graphics/BitmapRegionDecoder.md) | This value cannot be`null`. |
+| [BitmapRegionDecoder](BitmapRegionDecoder.md) | This value cannot be`null`. |
 
 | Exceptions ||
 |-----------------------|-------------------------------------------------------------|
@@ -152,7 +152,7 @@ Create a BitmapRegionDecoder from the specified byte array. Currently only the J
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [BitmapRegionDecoder](../android/graphics/BitmapRegionDecoder.md) | This value cannot be`null`. |
+| [BitmapRegionDecoder](BitmapRegionDecoder.md) | This value cannot be`null`. |
 
 | Exceptions ||
 |-----------------------|-------------------------------------------------------------|
@@ -186,7 +186,7 @@ Create a BitmapRegionDecoder from the specified byte array. Currently only the J
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [BitmapRegionDecoder](../android/graphics/BitmapRegionDecoder.md) | This value cannot be`null`. |
+| [BitmapRegionDecoder](BitmapRegionDecoder.md) | This value cannot be`null`. |
 
 | Exceptions ||
 |-----------------------|-------------------------------------------------------------|
@@ -204,18 +204,18 @@ static fun newInstance(
 ): BitmapRegionDecoder
 ```
 
-**Deprecated:** *In favor of [newInstance(android.os.ParcelFileDescriptor)](../android/graphics/BitmapRegionDecoder.md))*
+**Deprecated:** *In favor of [newInstance(android.os.ParcelFileDescriptor)](BitmapRegionDecoder.md))*
 
 Create a BitmapRegionDecoder from the file descriptor. The position within the descriptor will not be changed when this returns, so the descriptor can be used again as is. Currently only the JPEG, PNG, WebP and HEIF formats are supported.
 
 | Parameters ||
 |---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `fd` | [FileDescriptor](../java/io/FileDescriptor.md):The file descriptor containing the data to decode This value cannot be`null`. |
+| `fd` | [FileDescriptor](../java.io/FileDescriptor.md):The file descriptor containing the data to decode This value cannot be`null`. |
 | `isShareable` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):This field has been ignored since [Build.VERSION_CODES.KITKAT](../android/os/Build.VERSION_CODES.md). |
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [BitmapRegionDecoder](../android/graphics/BitmapRegionDecoder.md) | This value cannot be`null`. |
+| [BitmapRegionDecoder](BitmapRegionDecoder.md) | This value cannot be`null`. |
 
 | Exceptions ||
 |-----------------------|-------------------------------------------------------------|
@@ -233,11 +233,11 @@ Create a BitmapRegionDecoder from an input stream. The stream's position will be
 
 | Parameters ||
 |------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `is` | [InputStream](../java/io/InputStream.md):The input stream that holds the raw data to be decoded into a BitmapRegionDecoder. This value cannot be`null`. |
+| `is` | [InputStream](../java.io/InputStream.md):The input stream that holds the raw data to be decoded into a BitmapRegionDecoder. This value cannot be`null`. |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------|----------------------------------------------------|
-| [BitmapRegionDecoder](../android/graphics/BitmapRegionDecoder.md)? | A new BitmapRegionDecoder, or`null`if`is`is`null`. |
+| [BitmapRegionDecoder](BitmapRegionDecoder.md)? | A new BitmapRegionDecoder, or`null`if`is`is`null`. |
 
 | Exceptions ||
 |-----------------------|-------------------------------------------------------------|
@@ -255,9 +255,9 @@ static fun newInstance(
 ): BitmapRegionDecoder?
 ```
 
-**Deprecated:** *In favor of [newInstance(java.io.InputStream)](../android/graphics/BitmapRegionDecoder.md))*
+**Deprecated:** *In favor of [newInstance(java.io.InputStream)](BitmapRegionDecoder.md))*
 
-*Prior to [Build.VERSION_CODES.KITKAT](../android/os/Build.VERSION_CODES.md), if [is.markSupported()](../java/io/InputStream.md))returns true,`is.mark(1024)`would be called. As of [Build.VERSION_CODES.KITKAT](../android/os/Build.VERSION_CODES.md), this is no longer the case.*
+*Prior to [Build.VERSION_CODES.KITKAT](../android/os/Build.VERSION_CODES.md), if [is.markSupported()](../java.io/InputStream.md))returns true,`is.mark(1024)`would be called. As of [Build.VERSION_CODES.KITKAT](../android/os/Build.VERSION_CODES.md), this is no longer the case.*
 
 <br />
 
@@ -265,12 +265,12 @@ Create a BitmapRegionDecoder from an input stream. The stream's position will be
 
 | Parameters ||
 |---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `is` | [InputStream](../java/io/InputStream.md):The input stream that holds the raw data to be decoded into a BitmapRegionDecoder. This value cannot be`null`. |
+| `is` | [InputStream](../java.io/InputStream.md):The input stream that holds the raw data to be decoded into a BitmapRegionDecoder. This value cannot be`null`. |
 | `isShareable` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):This field has always been ignored. |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------|----------------------------------------------------|
-| [BitmapRegionDecoder](../android/graphics/BitmapRegionDecoder.md)? | A new BitmapRegionDecoder, or`null`if`is`is`null`. |
+| [BitmapRegionDecoder](BitmapRegionDecoder.md)? | A new BitmapRegionDecoder, or`null`if`is`is`null`. |
 
 | Exceptions ||
 |-----------------------|-------------------------------------------------------------|
@@ -292,7 +292,7 @@ Create a BitmapRegionDecoder from a file path. Currently only the JPEG, PNG, Web
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [BitmapRegionDecoder](../android/graphics/BitmapRegionDecoder.md) | This value cannot be`null`. |
+| [BitmapRegionDecoder](BitmapRegionDecoder.md) | This value cannot be`null`. |
 
 | Exceptions ||
 |-----------------------|-------------------------------------------------------------|
@@ -310,7 +310,7 @@ static fun newInstance(
 ): BitmapRegionDecoder
 ```
 
-**Deprecated:** *In favor of [newInstance(java.lang.String)](../android/graphics/BitmapRegionDecoder.md))*
+**Deprecated:** *In favor of [newInstance(java.lang.String)](BitmapRegionDecoder.md))*
 
 Create a BitmapRegionDecoder from a file path. Currently only the JPEG, PNG, WebP and HEIF formats are supported.
 
@@ -321,7 +321,7 @@ Create a BitmapRegionDecoder from a file path. Currently only the JPEG, PNG, Web
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [BitmapRegionDecoder](../android/graphics/BitmapRegionDecoder.md) | This value cannot be`null`. |
+| [BitmapRegionDecoder](BitmapRegionDecoder.md) | This value cannot be`null`. |
 
 | Exceptions ||
 |-----------------------|-------------------------------------------------------------|

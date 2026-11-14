@@ -5,7 +5,7 @@ Deprecated in [API level 24](https://developer.android.com/guide/topics/manifest
 
 # AndroidTestRunner
 
-Kotlin| [Java](../android/test/AndroidTestRunner.md) 
+Kotlin| [Java](AndroidTestRunner.md) 
 | --- | --- |
 
 ```
@@ -14,7 +14,7 @@ open class AndroidTestRunner
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.test.AndroidTestRunner](../android/test/AndroidTestRunner.md) |
+| ↳ | [android.test.AndroidTestRunner](AndroidTestRunner.md) |
 
 | **This class was deprecated in API level 24.**
 |
@@ -24,36 +24,36 @@ open class AndroidTestRunner
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------|---|
-| [AndroidTestRunner](../android/test/AndroidTestRunner.md))`()` <br /> |
+| [AndroidTestRunner](AndroidTestRunner.md))`()` <br /> |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addTestListener](../android/test/AndroidTestRunner.md))`(`testListener:` `TestListener!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearTestListeners](../android/test/AndroidTestRunner.md))`()` <br /> |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<TestCase!\>! | [getTestCases](../android/test/AndroidTestRunner.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addTestListener](AndroidTestRunner.md))`(`testListener:` `TestListener!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearTestListeners](AndroidTestRunner.md))`()` <br /> |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\<TestCase!\>! | [getTestCases](AndroidTestRunner.md))`()` <br /> |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getTestClassName](../android/test/AndroidTestRunner.md))`()` <br /> |
-| openTestResult! | [getTestResult](../android/test/AndroidTestRunner.md))`()` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [runTest](../android/test/AndroidTestRunner.md))`()` <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getTestClassName](AndroidTestRunner.md))`()` <br /> |
+| openTestResult! | [getTestResult](AndroidTestRunner.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [runTest](AndroidTestRunner.md))`()` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [runTest](../android/test/AndroidTestRunner.md))`(`testResult:` `TestResult!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setContext](../android/test/AndroidTestRunner.md))`(`context:` ` [Context](../android/content/Context.md)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInstrumentaiton](../android/test/AndroidTestRunner.md))`(`instrumentation:` ` [Instrumentation](../android/app/Instrumentation.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [runTest](AndroidTestRunner.md))`(`testResult:` `TestResult!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setContext](AndroidTestRunner.md))`(`context:` ` [Context](../android.content/Context.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInstrumentaiton](AndroidTestRunner.md))`(`instrumentation:` ` [Instrumentation](../android.app/Instrumentation.md)!`)` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInstrumentation](../android/test/AndroidTestRunner.md))`(`instrumentation:` ` [Instrumentation](../android/app/Instrumentation.md)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTest](../android/test/AndroidTestRunner.md))`(`test:` `Test!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTestClassName](../android/test/AndroidTestRunner.md))`(`testClassName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `testMethodName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInstrumentation](AndroidTestRunner.md))`(`instrumentation:` ` [Instrumentation](../android.app/Instrumentation.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTest](AndroidTestRunner.md))`(`test:` `Test!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTestClassName](AndroidTestRunner.md))`(`testClassName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `testMethodName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [testEnded](../android/test/AndroidTestRunner.md))`(`testName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [testFailed](../android/test/AndroidTestRunner.md))`(`status:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `test:` `Test!`, `t:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [testStarted](../android/test/AndroidTestRunner.md))`(`testName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [testEnded](AndroidTestRunner.md))`(`testName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [testFailed](AndroidTestRunner.md))`(`status:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `test:` `Test!`, `t:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [testStarted](AndroidTestRunner.md))`(`testName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
 | --- | --- |
 
 | Protected methods ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openTestResult! | [createTestResult](../android/test/AndroidTestRunner.md))`()` <br /> |
-| open [Class](../java/lang/Class.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | [loadSuiteClass](../android/test/AndroidTestRunner.md))`(`suiteClassName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [runFailed](../android/test/AndroidTestRunner.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| openTestResult! | [createTestResult](AndroidTestRunner.md))`()` <br /> |
+| open [Class](../java.lang/Class.md)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\>! | [loadSuiteClass](AndroidTestRunner.md))`(`suiteClassName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [runFailed](AndroidTestRunner.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
 | --- | --- |
 
 ## Public constructors
@@ -155,7 +155,7 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 open fun setInstrumentaiton(instrumentation: Instrumentation!): Unit
 ```
 
-**Deprecated:** *Incorrect spelling, use [setInstrumentation(android.app.Instrumentation)](../android/test/AndroidTestRunner.md))instead.* 
+**Deprecated:** *Incorrect spelling, use [setInstrumentation(android.app.Instrumentation)](AndroidTestRunner.md))instead.* 
 
 ### setInstrumentation
 

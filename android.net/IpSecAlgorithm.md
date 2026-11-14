@@ -8,7 +8,7 @@ class IpSecAlgorithm : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.IpSecAlgorithm](../android/net/IpSecAlgorithm.md) |
+| ↳ | [android.net.IpSecAlgorithm](IpSecAlgorithm.md) |
 
 This class represents a single algorithm that can be used by an `https://developer.android.com/reference/kotlin/android/net/IpSecTransform`.
 
@@ -62,7 +62,7 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [IpSecAlgorithm](../android/net/IpSecAlgorithm.md)!\> | `https://developer.android.com/reference/kotlin/android/net/IpSecAlgorithm#CREATOR:android.os.Parcelable.Creator` Parcelable Creator |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [IpSecAlgorithm](IpSecAlgorithm.md)!\> | `https://developer.android.com/reference/kotlin/android/net/IpSecAlgorithm#CREATOR:android.os.Parcelable.Creator` Parcelable Creator |
 
 ## Constants
 

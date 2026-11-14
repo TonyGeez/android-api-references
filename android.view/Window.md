@@ -8,7 +8,7 @@ abstract class Window
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.Window](../android/view/Window.md) |
+| ↳ | [android.view.Window](Window.md) |
 
 Abstract base class for a top-level window look and behavior policy. An instance of this class should be used as the top-level view added to the window manager. It provides standard UI policies such as a background, title area, default key processing, etc.
 
@@ -86,47 +86,47 @@ The framework will instantiate an implementation of this class on behalf of the 
 | [Window.Callback](../android/view/Window.Callback.md)! | `https://developer.android.com/reference/kotlin/android/view/Window#getCallback()()` Return the current Callback interface for this window. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#getColorMode()()` Returns the requested color mode of the window, one of `https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#COLOR_MODE_DEFAULT:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#COLOR_MODE_WIDE_COLOR_GAMUT:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/content/pm/ActivityInfo.html#COLOR_MODE_HDR:kotlin.Int`. |
 | --- | --- |
-| [Window](../android/view/Window.md)! | `https://developer.android.com/reference/kotlin/android/view/Window#getContainer()()` Return the container for this Window. |
-| open [Scene](../android/transition/Scene.md)! | `https://developer.android.com/reference/kotlin/android/view/Window#getContentScene()()` Retrieve the `https://developer.android.com/reference/kotlin/android/transition/Scene.html#` representing this window's current content. |
-| [Context](../android/content/Context.md)! | `https://developer.android.com/reference/kotlin/android/view/Window#getContext()()` Return the Context this window policy is running in, for retrieving resources and other information. |
+| [Window](Window.md)! | `https://developer.android.com/reference/kotlin/android/view/Window#getContainer()()` Return the container for this Window. |
+| open [Scene](../android.transition/Scene.md)! | `https://developer.android.com/reference/kotlin/android/view/Window#getContentScene()()` Retrieve the `https://developer.android.com/reference/kotlin/android/transition/Scene.html#` representing this window's current content. |
+| [Context](../android.content/Context.md)! | `https://developer.android.com/reference/kotlin/android/view/Window#getContext()()` Return the Context this window policy is running in, for retrieving resources and other information. |
 | --- | --- |
-| abstract [View](../android/view/View.md)? | `https://developer.android.com/reference/kotlin/android/view/Window#getCurrentFocus()()` Return the view in this Window that currently has focus, or null if there are none. |
-| abstract [View](../android/view/View.md) | `https://developer.android.com/reference/kotlin/android/view/Window#getDecorView()()` Retrieve the top-level window decor view (containing the standard window frame/decorations and the client's content inside of that), which can be added as a window to the window manager. |
+| abstract [View](View.md)? | `https://developer.android.com/reference/kotlin/android/view/Window#getCurrentFocus()()` Return the view in this Window that currently has focus, or null if there are none. |
+| abstract [View](View.md) | `https://developer.android.com/reference/kotlin/android/view/Window#getDecorView()()` Retrieve the top-level window decor view (containing the standard window frame/decorations and the client's content inside of that), which can be added as a window to the window manager. |
 | open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#getDefaultFeatures(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!)` Return the feature bits set by default on a window. |
 | --- | --- |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#getDesiredHdrHeadroom()()` Get the desired amount of HDR headroom as set by `https://developer.android.com/reference/kotlin/android/view/Window#setDesiredHdrHeadroom(kotlin.Float)` |
-| open [Transition](../android/transition/Transition.md)! | `https://developer.android.com/reference/kotlin/android/view/Window#getEnterTransition()()` Returns the transition used to move Views into the initial scene. |
-| open [Transition](../android/transition/Transition.md)! | `https://developer.android.com/reference/kotlin/android/view/Window#getExitTransition()()` Returns the Transition that will be used to move Views out of the scene when starting a new Activity. |
+| open [Transition](../android.transition/Transition.md)! | `https://developer.android.com/reference/kotlin/android/view/Window#getEnterTransition()()` Returns the transition used to move Views into the initial scene. |
+| open [Transition](../android.transition/Transition.md)! | `https://developer.android.com/reference/kotlin/android/view/Window#getExitTransition()()` Returns the Transition that will be used to move Views out of the scene when starting a new Activity. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#getFrameRateBoostOnTouchEnabled()()` Get whether frame rate touch boost is enabled `https://developer.android.com/reference/kotlin/android/view/Window#setFrameRateBoostOnTouchEnabled(kotlin.Boolean)` |
-| open [WindowInsetsController](../android/view/WindowInsetsController.md)? | `https://developer.android.com/reference/kotlin/android/view/Window#getInsetsController()()` <br /> |
-| abstract [LayoutInflater](../android/view/LayoutInflater.md) | `https://developer.android.com/reference/kotlin/android/view/Window#getLayoutInflater()()` Quick access to the `https://developer.android.com/reference/kotlin/android/view/LayoutInflater` instance that this Window retrieved from its Context. |
+| open [WindowInsetsController](WindowInsetsController.md)? | `https://developer.android.com/reference/kotlin/android/view/Window#getInsetsController()()` <br /> |
+| abstract [LayoutInflater](LayoutInflater.md) | `https://developer.android.com/reference/kotlin/android/view/Window#getLayoutInflater()()` Quick access to the `https://developer.android.com/reference/kotlin/android/view/LayoutInflater` instance that this Window retrieved from its Context. |
 | --- | --- |
-| open [MediaController](../android/media/session/MediaController.md)! | `https://developer.android.com/reference/kotlin/android/view/Window#getMediaController()()` Gets the `https://developer.android.com/reference/kotlin/android/media/session/MediaController.html#` that was previously set. |
+| open [MediaController](../android.media.session/MediaController.md)! | `https://developer.android.com/reference/kotlin/android/view/Window#getMediaController()()` Gets the `https://developer.android.com/reference/kotlin/android/media/session/MediaController.html#` that was previously set. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#getNavigationBarColor()()` <br /> |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#getNavigationBarDividerColor()()` Retrieves the color of the navigation bar divider. |
 | --- | --- |
-| open [OnBackInvokedDispatcher](../android/window/OnBackInvokedDispatcher.md) | `https://developer.android.com/reference/kotlin/android/view/Window#getOnBackInvokedDispatcher()()` Returns the `https://developer.android.com/reference/kotlin/android/window/OnBackInvokedDispatcher.html#` instance associated with this window. |
-| open [Transition](../android/transition/Transition.md)! | `https://developer.android.com/reference/kotlin/android/view/Window#getReenterTransition()()` Returns the Transition that will be used to move Views in to the scene when returning from a previously-started Activity. |
-| open [Transition](../android/transition/Transition.md)! | `https://developer.android.com/reference/kotlin/android/view/Window#getReturnTransition()()` Returns the Transition that will be used to move Views out of the scene when the Window is preparing to close, for example after a call to `https://developer.android.com/reference/kotlin/android/app/Activity.html#finishAfterTransition()`. |
+| open [OnBackInvokedDispatcher](../android.window/OnBackInvokedDispatcher.md) | `https://developer.android.com/reference/kotlin/android/view/Window#getOnBackInvokedDispatcher()()` Returns the `https://developer.android.com/reference/kotlin/android/window/OnBackInvokedDispatcher.html#` instance associated with this window. |
+| open [Transition](../android.transition/Transition.md)! | `https://developer.android.com/reference/kotlin/android/view/Window#getReenterTransition()()` Returns the Transition that will be used to move Views in to the scene when returning from a previously-started Activity. |
+| open [Transition](../android.transition/Transition.md)! | `https://developer.android.com/reference/kotlin/android/view/Window#getReturnTransition()()` Returns the Transition that will be used to move Views out of the scene when the Window is preparing to close, for example after a call to `https://developer.android.com/reference/kotlin/android/app/Activity.html#finishAfterTransition()`. |
 | --- | --- |
-| open [AttachedSurfaceControl](../android/view/AttachedSurfaceControl.md)? | `https://developer.android.com/reference/kotlin/android/view/Window#getRootSurfaceControl()()` This will be null before a content view is added, e. |
-| open [Transition](../android/transition/Transition.md)! | `https://developer.android.com/reference/kotlin/android/view/Window#getSharedElementEnterTransition()()` Returns the Transition that will be used for shared elements transferred into the content Scene. |
-| open [Transition](../android/transition/Transition.md)! | `https://developer.android.com/reference/kotlin/android/view/Window#getSharedElementExitTransition()()` Returns the Transition to use for shared elements in the launching Window prior to transferring to the launched Activity's Window. |
+| open [AttachedSurfaceControl](AttachedSurfaceControl.md)? | `https://developer.android.com/reference/kotlin/android/view/Window#getRootSurfaceControl()()` This will be null before a content view is added, e. |
+| open [Transition](../android.transition/Transition.md)! | `https://developer.android.com/reference/kotlin/android/view/Window#getSharedElementEnterTransition()()` Returns the Transition that will be used for shared elements transferred into the content Scene. |
+| open [Transition](../android.transition/Transition.md)! | `https://developer.android.com/reference/kotlin/android/view/Window#getSharedElementExitTransition()()` Returns the Transition to use for shared elements in the launching Window prior to transferring to the launched Activity's Window. |
 | --- | --- |
-| open [Transition](../android/transition/Transition.md)! | `https://developer.android.com/reference/kotlin/android/view/Window#getSharedElementReenterTransition()()` Returns the Transition that will be used for shared elements reentering from a started Activity after it has returned the shared element to it start location. |
-| open [Transition](../android/transition/Transition.md)! | `https://developer.android.com/reference/kotlin/android/view/Window#getSharedElementReturnTransition()()` Returns the Transition that will be used for shared elements transferred back to a calling Activity. |
+| open [Transition](../android.transition/Transition.md)! | `https://developer.android.com/reference/kotlin/android/view/Window#getSharedElementReenterTransition()()` Returns the Transition that will be used for shared elements reentering from a started Activity after it has returned the shared element to it start location. |
+| open [Transition](../android.transition/Transition.md)! | `https://developer.android.com/reference/kotlin/android/view/Window#getSharedElementReturnTransition()()` Returns the Transition that will be used for shared elements transferred back to a calling Activity. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#getSharedElementsUseOverlay()()` Returns `true` when shared elements should use an Overlay during shared element transitions or `false` when they should animate as part of the normal View hierarchy. |
 | --- | --- |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#getStatusBarColor()()` <br /> |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Rect](../android/graphics/Rect.md)!\> | `https://developer.android.com/reference/kotlin/android/view/Window#getSystemGestureExclusionRects()()` Retrieve the list of areas within this window's coordinate space where the system should not intercept touch or other pointing device gestures. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Rect](../android.graphics/Rect.md)!\> | `https://developer.android.com/reference/kotlin/android/view/Window#getSystemGestureExclusionRects()()` Retrieve the list of areas within this window's coordinate space where the system should not intercept touch or other pointing device gestures. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#getTransitionBackgroundFadeDuration()()` Returns the duration, in milliseconds, of the window background fade when transitioning into or away from an Activity when called with an Activity Transition. |
 | --- | --- |
-| open [TransitionManager](../android/transition/TransitionManager.md)! | `https://developer.android.com/reference/kotlin/android/view/Window#getTransitionManager()()` Retrieve the `https://developer.android.com/reference/kotlin/android/transition/TransitionManager.html#` responsible for for default transitions in this window. |
+| open [TransitionManager](../android.transition/TransitionManager.md)! | `https://developer.android.com/reference/kotlin/android/view/Window#getTransitionManager()()` Retrieve the `https://developer.android.com/reference/kotlin/android/transition/TransitionManager.html#` responsible for for default transitions in this window. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#getVolumeControlStream()()` <br /> |
-| open [WindowManager](../android/view/WindowManager.md)! | `https://developer.android.com/reference/kotlin/android/view/Window#getWindowManager()()` Return the window manager allowing this Window to display its own windows. |
+| open [WindowManager](WindowManager.md)! | `https://developer.android.com/reference/kotlin/android/view/Window#getWindowManager()()` Return the window manager allowing this Window to display its own windows. |
 | --- | --- |
-| [TypedArray](../android/content/res/TypedArray.md)! | `https://developer.android.com/reference/kotlin/android/view/Window#getWindowStyle()()` Return the `https://developer.android.com/reference/kotlin/android/R.styleable.html#Window:kotlin.IntArray` attributes from this window's theme. |
+| [TypedArray](../android.content.res/TypedArray.md)! | `https://developer.android.com/reference/kotlin/android/view/Window#getWindowStyle()()` Return the `https://developer.android.com/reference/kotlin/android/R.styleable.html#Window:kotlin.IntArray` attributes from this window's theme. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#hasChildren()()` <br /> |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#hasFeature(kotlin.Int)(feature: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Query for the availability of a certain feature. |
 | --- | --- |
@@ -146,7 +146,7 @@ The framework will instantiate an implementation of this class on behalf of the 
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#onConfigurationChanged(android.content.res.Configuration)(newConfig: https://developer.android.com/reference/kotlin/android/content/res/Configuration.html#!)` Should be called when the configuration is changed. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#openPanel(kotlin.Int,%20android.view.KeyEvent)(featureId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, event: https://developer.android.com/reference/kotlin/android/view/KeyEvent!)` <br /> |
 | --- | --- |
-| abstract [View](../android/view/View.md)! | `https://developer.android.com/reference/kotlin/android/view/Window#peekDecorView()()` Retrieve the current decor view, but only if it has already been created; otherwise returns null. |
+| abstract [View](View.md)! | `https://developer.android.com/reference/kotlin/android/view/Window#peekDecorView()()` Retrieve the current decor view, but only if it has already been created; otherwise returns null. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#performContextMenuIdentifierAction(kotlin.Int,%20kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#performPanelIdentifierAction(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(featureId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
 | --- | --- |
@@ -158,7 +158,7 @@ The framework will instantiate an implementation of this class on behalf of the 
 | T | `https://developer.android.com/reference/kotlin/android/view/Window#requireViewById(kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Finds a view that was identified by the `android:id` XML attribute that was processed in android. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#restoreHierarchyState(android.os.Bundle)(savedInstanceState: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` <br /> |
 | --- | --- |
-| abstract [Bundle](../android/os/Bundle.md)! | `https://developer.android.com/reference/kotlin/android/view/Window#saveHierarchyState()()` <br /> |
+| abstract [Bundle](../android.os/Bundle.md)! | `https://developer.android.com/reference/kotlin/android/view/Window#saveHierarchyState()()` <br /> |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setAllowEnterTransitionOverlap(kotlin.Boolean)(allow: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Controls how the transition set in `https://developer.android.com/reference/kotlin/android/view/Window#setEnterTransition(android.transition.Transition)` overlaps with the exit transition of the calling Activity. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/Window#setAllowReturnTransitionOverlap(kotlin.Boolean)(allow: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Controls how the transition set in `https://developer.android.com/reference/kotlin/android/view/Window#setExitTransition(android.transition.Transition)` overlaps with the exit transition of the called Activity when reentering after if finishes. |
 | --- | --- |
@@ -704,7 +704,7 @@ Variation on `https://developer.android.com/reference/kotlin/android/view/Window
 
 | Parameters ||
 |---|---|
-| `view` | [View](../android/view/View.md)!: The desired content to display. |
+| `view` | [View](View.md)!: The desired content to display. |
 | `params` | [ViewGroup.LayoutParams](../android/view/ViewGroup.LayoutParams.md)!: Layout parameters for the view. |
 
 ### addFlags
@@ -963,7 +963,7 @@ Return the feature bits set by default on a window.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md)!: The context used to access resources |
+| `context` | [Context](../android.content/Context.md)!: The context used to access resources |
 
 ### getDesiredHdrHeadroom
 
@@ -1379,7 +1379,7 @@ Inject an event to window locally.
 
 | Parameters ||
 |---|---|
-| `event` | [InputEvent](../android/view/InputEvent.md)!: A key or touch event to inject to this window. |
+| `event` | [InputEvent](InputEvent.md)!: A key or touch event to inject to this window. |
 
 ### invalidatePanelMenu
 
@@ -1468,7 +1468,7 @@ Is a keypress one of the defined shortcut keys for this window.
 | Parameters ||
 |---|---|
 | `keyCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the key code from `https://developer.android.com/reference/kotlin/android/view/KeyEvent` to check. |
-| `event` | [KeyEvent](../android/view/KeyEvent.md)!: the `https://developer.android.com/reference/kotlin/android/view/KeyEvent` to use to help check. |
+| `event` | [KeyEvent](KeyEvent.md)!: the `https://developer.android.com/reference/kotlin/android/view/KeyEvent` to use to help check. |
 
 ### isStatusBarContrastEnforced
 
@@ -1529,7 +1529,7 @@ Should be called when the configuration is changed.
 
 | Parameters ||
 |---|---|
-| `newConfig` | [Configuration](../android/content/res/Configuration.md)!: The new configuration. |
+| `newConfig` | [Configuration](../android.content.res/Configuration.md)!: The new configuration. |
 
 ### openPanel
 
@@ -1608,7 +1608,7 @@ Used to provide scroll capture support for an arbitrary window. This registeres 
 
 | Parameters ||
 |---|---|
-| `callback` | [ScrollCaptureCallback](../android/view/ScrollCaptureCallback.md): the callback to add. This value cannot be `null`. |
+| `callback` | [ScrollCaptureCallback](ScrollCaptureCallback.md): the callback to add. This value cannot be `null`. |
 
 ### removeOnFrameMetricsAvailableListener
 
@@ -1762,7 +1762,7 @@ Change the background of this window to a custom Drawable. Setting the backgroun
 
 | Parameters ||
 |---|---|
-| `drawable` | [Drawable](../android/graphics/drawable/Drawable.md)!: The new Drawable to use for this window's background. |
+| `drawable` | [Drawable](../android.graphics.drawable/Drawable.md)!: The new Drawable to use for this window's background. |
 
 ### setBackgroundDrawableResource
 
@@ -1871,7 +1871,7 @@ Set the container for this window. If not set, the DecorWindow operates as a top
 
 | Parameters ||
 |---|---|
-| `container` | [Window](../android/view/Window.md)!: The desired containing Window. |
+| `container` | [Window](Window.md)!: The desired containing Window. |
 
 ### setContentView
 
@@ -1885,7 +1885,7 @@ Convenience for `https://developer.android.com/reference/kotlin/android/view/Win
 
 | Parameters ||
 |---|---|
-| `view` | [View](../android/view/View.md)!: The desired content to display. |
+| `view` | [View](View.md)!: The desired content to display. |
 
 **See Also**
 
@@ -1910,7 +1910,7 @@ If `https://developer.android.com/reference/kotlin/android/view/Window#FEATURE_C
 
 | Parameters ||
 |---|---|
-| `view` | [View](../android/view/View.md)!: The desired content to display. |
+| `view` | [View](View.md)!: The desired content to display. |
 | `params` | [ViewGroup.LayoutParams](../android/view/ViewGroup.LayoutParams.md)!: Layout parameters for the view. |
 
 **See Also**
@@ -2060,7 +2060,7 @@ Sets the Transition that will be used to move Views into the initial scene. The 
 
 | Parameters ||
 |---|---|
-| `transition` | [Transition](../android/transition/Transition.md)!: The Transition to use to move Views into the initial Scene. |
+| `transition` | [Transition](../android.transition/Transition.md)!: The Transition to use to move Views into the initial Scene. |
 
 ### setExitTransition
 
@@ -2074,7 +2074,7 @@ Sets the Transition that will be used to move Views out of the scene when starti
 
 | Parameters ||
 |---|---|
-| `transition` | [Transition](../android/transition/Transition.md)!: The Transition to use to move Views out of the scene when calling a new Activity. |
+| `transition` | [Transition](../android.transition/Transition.md)!: The Transition to use to move Views out of the scene when calling a new Activity. |
 
 ### setFeatureDrawable
 
@@ -2092,7 +2092,7 @@ Set an explicit Drawable value for feature of this window. You must have called 
 | Parameters ||
 |---|---|
 | `featureId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The desired drawable feature to change. Features are constants defined by Window. |
-| `drawable` | [Drawable](../android/graphics/drawable/Drawable.md)!: A Drawable object to display. |
+| `drawable` | [Drawable](../android.graphics.drawable/Drawable.md)!: A Drawable object to display. |
 
 ### setFeatureDrawableAlpha
 
@@ -2152,7 +2152,7 @@ The only URI currently supported is "content:", specifying an image in a content
 | Parameters ||
 |---|---|
 | `featureId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The desired drawable feature to change. Features are constants defined by Window. |
-| `uri` | [Uri](../android/net/Uri.md)!: The desired URI. |
+| `uri` | [Uri](../android.net/Uri.md)!: The desired URI. |
 
 **See Also**
 
@@ -2372,7 +2372,7 @@ Sets a `https://developer.android.com/reference/kotlin/android/media/session/Med
 
 | Parameters ||
 |---|---|
-| `controller` | [MediaController](../android/media/session/MediaController.md)!: The controller for the session which should receive media keys and volume changes. |
+| `controller` | [MediaController](../android.media.session/MediaController.md)!: The controller for the session which should receive media keys and volume changes. |
 
 **See Also**
 
@@ -2480,7 +2480,7 @@ Sets the Transition that will be used to move Views in to the scene when returni
 
 | Parameters ||
 |---|---|
-| `transition` | [Transition](../android/transition/Transition.md)!: The Transition to use to move Views into the scene when reentering from a previously-started Activity. |
+| `transition` | [Transition](../android.transition/Transition.md)!: The Transition to use to move Views into the scene when reentering from a previously-started Activity. |
 
 ### setResizingCaptionDrawable
 
@@ -2518,7 +2518,7 @@ Sets the Transition that will be used to move Views out of the scene when the Wi
 
 | Parameters ||
 |---|---|
-| `transition` | [Transition](../android/transition/Transition.md)!: The Transition to use to move Views out of the Scene when the Window is preparing to close. |
+| `transition` | [Transition](../android.transition/Transition.md)!: The Transition to use to move Views out of the Scene when the Window is preparing to close. |
 
 ### setSharedElementEnterTransition
 
@@ -2532,7 +2532,7 @@ Sets the Transition that will be used for shared elements transferred into the c
 
 | Parameters ||
 |---|---|
-| `transition` | [Transition](../android/transition/Transition.md)!: The Transition to use for shared elements transferred into the content Scene. |
+| `transition` | [Transition](../android.transition/Transition.md)!: The Transition to use for shared elements transferred into the content Scene. |
 
 ### setSharedElementExitTransition
 
@@ -2546,7 +2546,7 @@ Sets the Transition that will be used for shared elements after starting a new A
 
 | Parameters ||
 |---|---|
-| `transition` | [Transition](../android/transition/Transition.md)!: The Transition to use for shared elements in the launching Window prior to transferring to the launched Activity's Window. |
+| `transition` | [Transition](../android.transition/Transition.md)!: The Transition to use for shared elements in the launching Window prior to transferring to the launched Activity's Window. |
 
 ### setSharedElementReenterTransition
 
@@ -2560,7 +2560,7 @@ Sets the Transition that will be used for shared elements reentering from a star
 
 | Parameters ||
 |---|---|
-| `transition` | [Transition](../android/transition/Transition.md)!: The Transition to use for shared elements in the launching Window after the shared element has returned to the Window. |
+| `transition` | [Transition](../android.transition/Transition.md)!: The Transition to use for shared elements in the launching Window after the shared element has returned to the Window. |
 
 ### setSharedElementReturnTransition
 
@@ -2574,7 +2574,7 @@ Sets the Transition that will be used for shared elements transferred back to a 
 
 | Parameters ||
 |---|---|
-| `transition` | [Transition](../android/transition/Transition.md)!: The Transition to use for shared elements transferred out of the content Scene. |
+| `transition` | [Transition](../android.transition/Transition.md)!: The Transition to use for shared elements transferred out of the content Scene. |
 
 ### setSharedElementsUseOverlay
 
@@ -2676,7 +2676,7 @@ Do not modify the provided list after this method is called.
 
 | Parameters ||
 |---|---|
-| `rects` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Rect](../android/graphics/Rect.md)!\>: A list of precision gesture regions that this window needs to function correctly. This value cannot be `null`. |
+| `rects` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Rect](../android.graphics/Rect.md)!\>: A list of precision gesture regions that this window needs to function correctly. This value cannot be `null`. |
 
 ### setTitle
 
@@ -2736,7 +2736,7 @@ Set the `https://developer.android.com/reference/kotlin/android/transition/Trans
 
 | Parameters ||
 |---|---|
-| `tm` | [TransitionManager](../android/transition/TransitionManager.md)!: The TransitionManager to use for scene changes. |
+| `tm` | [TransitionManager](../android.transition/TransitionManager.md)!: The TransitionManager to use for scene changes. |
 
 ### setType
 
@@ -2823,8 +2823,8 @@ If `wm` is not `null`, this method will creates a new instance of `https://devel
 
 | Parameters ||
 |---|---|
-| `wm` | [WindowManager](../android/view/WindowManager.md)!: the window manager for adding new windows. |
-| `appToken` | [IBinder](../android/os/IBinder.md)!: the token of the window, which applies to the `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams#token:android.os.IBinder` of `https://developer.android.com/reference/kotlin/android/view/Window#getAttributes()` if specified. |
+| `wm` | [WindowManager](WindowManager.md)!: the window manager for adding new windows. |
+| `appToken` | [IBinder](../android.os/IBinder.md)!: the token of the window, which applies to the `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams#token:android.os.IBinder` of `https://developer.android.com/reference/kotlin/android/view/Window#getAttributes()` if specified. |
 | `appName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the name of the window, which applies to the `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams#getTitle()` of `https://developer.android.com/reference/kotlin/android/view/Window#getAttributes()` if specified. |
 | --- | --- |
 
@@ -2847,8 +2847,8 @@ If `wm` is not `null`, this method will creates a new instance of `https://devel
 
 | Parameters ||
 |---|---|
-| `wm` | [WindowManager](../android/view/WindowManager.md)!: the window manager for adding new windows. |
-| `appToken` | [IBinder](../android/os/IBinder.md)!: the token of the window, which applies to the `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams#token:android.os.IBinder` of `https://developer.android.com/reference/kotlin/android/view/Window#getAttributes()` if specified. |
+| `wm` | [WindowManager](WindowManager.md)!: the window manager for adding new windows. |
+| `appToken` | [IBinder](../android.os/IBinder.md)!: the token of the window, which applies to the `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams#token:android.os.IBinder` of `https://developer.android.com/reference/kotlin/android/view/Window#getAttributes()` if specified. |
 | `appName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the name of the window, which applies to the `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams#getTitle()` of `https://developer.android.com/reference/kotlin/android/view/Window#getAttributes()` if specified. |
 | --- | --- |
 | `hardwareAccelerated` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): indicate whether this window or its sub-windows should be hardware accelerated, which is default to `false`. |
@@ -2956,7 +2956,7 @@ Unregisters a `https://developer.android.com/reference/kotlin/android/view/Scrol
 
 | Parameters ||
 |---|---|
-| `callback` | [ScrollCaptureCallback](../android/view/ScrollCaptureCallback.md): the callback to remove. This value cannot be `null`. |
+| `callback` | [ScrollCaptureCallback](ScrollCaptureCallback.md): the callback to remove. This value cannot be `null`. |
 
 ## Protected methods
 

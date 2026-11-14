@@ -10,7 +10,7 @@ class AppInstallFilters : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.adservices.common.AppInstallFilters](../android/adservices/common/AppInstallFilters.md) |
+| ↳ | [android.adservices.common.AppInstallFilters](AppInstallFilters.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 37.**
@@ -46,7 +46,7 @@ Note that the filtering is based on any package with one of the listed package n
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [AppInstallFilters](../android/adservices/common/AppInstallFilters.md)!\> | `https://developer.android.com/reference/kotlin/android/adservices/common/AppInstallFilters#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [AppInstallFilters](AppInstallFilters.md)!\> | `https://developer.android.com/reference/kotlin/android/adservices/common/AppInstallFilters#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public methods
 
@@ -160,7 +160,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

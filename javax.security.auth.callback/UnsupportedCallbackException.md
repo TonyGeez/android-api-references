@@ -11,8 +11,8 @@ open class UnsupportedCallbackException : Exception
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||
-| | | ↳ | [javax.security.auth.callback.UnsupportedCallbackException](../javax/security/auth/callback/UnsupportedCallbackException.md) |
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) ||
+| | | ↳ | [javax.security.auth.callback.UnsupportedCallbackException](UnsupportedCallbackException.md) |
 | --- | --- | --- | --- |
 
 Signals that a`CallbackHandler`does not recognize a particular`Callback`.
@@ -21,12 +21,12 @@ Signals that a`CallbackHandler`does not recognize a particular`Callback`.
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [UnsupportedCallbackException](../javax/security/auth/callback/UnsupportedCallbackException.md))`(`callback:` ` [Callback](../javax/security/auth/callback/Callback.md)!`)` Constructs a`UnsupportedCallbackException`with no detail message. |
-| [UnsupportedCallbackException](../javax/security/auth/callback/UnsupportedCallbackException.md))`(`callback:` ` [Callback](../javax/security/auth/callback/Callback.md)!`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a UnsupportedCallbackException with the specified detail message. |
+| [UnsupportedCallbackException](UnsupportedCallbackException.md))`(`callback:` ` [Callback](Callback.md)!`)` Constructs a`UnsupportedCallbackException`with no detail message. |
+| [UnsupportedCallbackException](UnsupportedCallbackException.md))`(`callback:` ` [Callback](Callback.md)!`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a UnsupportedCallbackException with the specified detail message. |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Callback](../javax/security/auth/callback/Callback.md)! | [getCallback](../javax/security/auth/callback/UnsupportedCallbackException.md))`()` Get the unrecognized`Callback`. |
+| open [Callback](Callback.md)! | [getCallback](UnsupportedCallbackException.md))`()` Get the unrecognized`Callback`. |
 
 ## Public constructors
 
@@ -44,7 +44,7 @@ Constructs a`UnsupportedCallbackException`with no detail message.
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------|
-| `callback` | [Callback](../javax/security/auth/callback/Callback.md)!:the unrecognized`Callback`. |
+| `callback` | [Callback](Callback.md)!:the unrecognized`Callback`. |
 
 ### UnsupportedCallbackException
 
@@ -62,7 +62,7 @@ Constructs a UnsupportedCallbackException with the specified detail message. A d
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------------------|
-| `callback` | [Callback](../javax/security/auth/callback/Callback.md)!:the unrecognized`Callback`. <br /> |
+| `callback` | [Callback](Callback.md)!:the unrecognized`Callback`. <br /> |
 | `msg` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the detail message. |
 
 ## Public methods
@@ -81,4 +81,4 @@ Get the unrecognized`Callback`.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------|-----------------------------|
-| [Callback](../javax/security/auth/callback/Callback.md)! | the unrecognized`Callback`. |
+| [Callback](Callback.md)! | the unrecognized`Callback`. |

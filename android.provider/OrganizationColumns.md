@@ -19,7 +19,7 @@ interface OrganizationColumns
 
 | **This interface was deprecated in API level 5.**
 |
-| see [android.provider.ContactsContract](../android/provider/ContactsContract.md)
+| see [android.provider.ContactsContract](ContactsContract.md)
 
 Columns from the Organizations table that other columns join into themselves.
 
@@ -50,7 +50,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val COMPANY: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)*
 
 The name of the company for this organization.
 
@@ -66,7 +66,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val ISPRIMARY: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)*
 
 Whether this is the primary organization
 
@@ -82,7 +82,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val LABEL: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)*
 
 The user provided label, only used if TYPE is TYPE_CUSTOM.
 
@@ -98,7 +98,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val PERSON_ID: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)*
 
 The person this organization is tied to.
 
@@ -114,7 +114,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val TITLE: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)*
 
 The title within this organization.
 
@@ -130,7 +130,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val TYPE: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)*
 
 The type of the organizations.
 
@@ -146,7 +146,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val TYPE_CUSTOM: Int
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)* 
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)* 
 
  Value: 0
 
@@ -158,7 +158,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val TYPE_OTHER: Int
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)* 
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)* 
 
  Value: 2
 
@@ -170,6 +170,6 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val TYPE_WORK: Int
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)* 
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)* 
 
  Value: 1

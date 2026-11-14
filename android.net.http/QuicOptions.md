@@ -5,7 +5,7 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 
 # QuicOptions
 
-Kotlin| [Java](../android/net/http/QuicOptions.md) 
+Kotlin| [Java](QuicOptions.md) 
 | --- | --- |
 
 ```
@@ -14,7 +14,7 @@ open class QuicOptions
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.http.QuicOptions](../android/net/http/QuicOptions.md) |
+| ↳ | [android.net.http.QuicOptions](QuicOptions.md) |
 
 Configuration options for QUIC.
 
@@ -24,16 +24,16 @@ The settings in this class are only relevant if QUIC is enabled. Use [HttpEngine
 
 | Nested classes ||
 |---|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](../android/net/http/QuicOptions.Builder.md) Builder for [QuicOptions](../android/net/http/QuicOptions.md). |
+| | [Builder](../android/net/http/QuicOptions.Builder.md) Builder for [QuicOptions](QuicOptions.md). |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getAllowedQuicHosts](../android/net/http/QuicOptions.md))`()` See [Builder.addAllowedQuicHost](../android/net/http/QuicOptions.Builder.md)) |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getHandshakeUserAgent](../android/net/http/QuicOptions.md))`()` See [Builder.setHandshakeUserAgent](../android/net/http/QuicOptions.Builder.md)) |
-| open [Duration](../java/time/Duration.md)? | [getIdleConnectionTimeout](../android/net/http/QuicOptions.md))`()` See [Builder.setIdleConnectionTimeout](../android/net/http/QuicOptions.Builder.md)) |
+| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getAllowedQuicHosts](QuicOptions.md))`()` See [Builder.addAllowedQuicHost](../android/net/http/QuicOptions.Builder.md)) |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getHandshakeUserAgent](QuicOptions.md))`()` See [Builder.setHandshakeUserAgent](../android/net/http/QuicOptions.Builder.md)) |
+| open [Duration](../java.time/Duration.md)? | [getIdleConnectionTimeout](QuicOptions.md))`()` See [Builder.setIdleConnectionTimeout](../android/net/http/QuicOptions.Builder.md)) |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInMemoryServerConfigsCacheSize](../android/net/http/QuicOptions.md))`()` See [Builder.setInMemoryServerConfigsCacheSize](../android/net/http/QuicOptions.Builder.md)) |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasInMemoryServerConfigsCacheSize](../android/net/http/QuicOptions.md))`()` See [Builder.setInMemoryServerConfigsCacheSize](../android/net/http/QuicOptions.Builder.md)) |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInMemoryServerConfigsCacheSize](QuicOptions.md))`()` See [Builder.setInMemoryServerConfigsCacheSize](../android/net/http/QuicOptions.Builder.md)) |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasInMemoryServerConfigsCacheSize](QuicOptions.md))`()` See [Builder.setInMemoryServerConfigsCacheSize](../android/net/http/QuicOptions.Builder.md)) |
 
 ## Public methods
 
@@ -80,7 +80,7 @@ See [Builder.setIdleConnectionTimeout](../android/net/http/QuicOptions.Builder.m
 
 | Return ||
 |--------------------------------------------------------------------------------------|--------------------------|
-| [Duration](../java/time/Duration.md)? | This value may be`null`. |
+| [Duration](../java.time/Duration.md)? | This value may be`null`. |
 
 ### getInMemoryServerConfigsCacheSize
 

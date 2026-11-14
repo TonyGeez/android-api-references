@@ -8,7 +8,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 @Target([AnnotationTarget.CONSTRUCTOR, AnnotationTarget.FIELD, AnnotationTarget.LOCAL_VARIABLE, AnnotationTarget.FUNCTION, AnnotationTarget.PROPERTY_GETTER, AnnotationTarget.PROPERTY_SETTER, AnnotationTarget.VALUE_PARAMETER, AnnotationTarget.CLASS, AnnotationTarget.FILE]) class Deprecated
 ```
 
-| [java.lang.Deprecated](../java/lang/Deprecated.md) |
+| [java.lang.Deprecated](Deprecated.md) |
 
 A program element annotated`@Deprecated`is one that programmers are discouraged from using. An element may be deprecated for any of several reasons, for example, its usage is likely to lead to errors; it may be changed incompatibly or removed in a future version; it has been superseded by a newer, usually preferable alternative; or it is obsolete.
 
@@ -24,12 +24,12 @@ This annotation type has a boolean-valued element`forRemoval`. A value of`true`i
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Deprecated](../java/lang/Deprecated.md))`(`forRemoval:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `since:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` A program element annotated`@Deprecated`is one that programmers are discouraged from using. |
+| [Deprecated](Deprecated.md))`(`forRemoval:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `since:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` A program element annotated`@Deprecated`is one that programmers are discouraged from using. |
 
 | Properties ||
 |------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [forRemoval](../java/lang/Deprecated.md) Indicates whether the annotated element is subject to removal in a future version. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [since](../java/lang/Deprecated.md) Returns the version in which the annotated element became deprecated. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [forRemoval](Deprecated.md) Indicates whether the annotated element is subject to removal in a future version. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [since](Deprecated.md) Returns the version in which the annotated element became deprecated. |
 
 ## Public constructors
 

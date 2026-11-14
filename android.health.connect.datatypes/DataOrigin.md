@@ -4,7 +4,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # DataOrigin
 
-Kotlin| [Java](../android/health/connect/datatypes/DataOrigin.md) 
+Kotlin| [Java](DataOrigin.md) 
 | --- | --- |
 
 ```
@@ -13,9 +13,9 @@ class DataOrigin
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.health.connect.datatypes.DataOrigin](../android/health/connect/datatypes/DataOrigin.md) |
+| ↳ | [android.health.connect.datatypes.DataOrigin](DataOrigin.md) |
 
-Specifies the contributing source/application of any [Record](../android/health/connect/datatypes/Record.md)
+Specifies the contributing source/application of any [Record](Record.md)
 
 ## Summary
 
@@ -25,9 +25,9 @@ Specifies the contributing source/application of any [Record](../android/health/
 
 | Public methods ||
 |------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/health/connect/datatypes/DataOrigin.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getPackageName](../android/health/connect/datatypes/DataOrigin.md))`()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/health/connect/datatypes/DataOrigin.md))`()` Returns a hash code value for the object. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](DataOrigin.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getPackageName](DataOrigin.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](DataOrigin.md))`()` Returns a hash code value for the object. |
 | --- | --- |
 
 ## Public methods

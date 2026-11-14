@@ -10,19 +10,19 @@ class Cleaner
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.lang.ref.Cleaner](../java/lang/ref/Cleaner.md) |
+| ↳ | [java.lang.ref.Cleaner](Cleaner.md) |
 
 `Cleaner`manages a set of object references and corresponding cleaning actions.
 
-Cleaning actions are [registered](../java/lang/ref/Cleaner.md))to run after the cleaner is notified that the object has become phantom reachable. The cleaner uses [PhantomReference](../java/lang/ref/PhantomReference.md) and [ReferenceQueue](../java/lang/ref/ReferenceQueue.md) to be notified when the [reachability](../java/lang/ref/_package.md) changes.
+Cleaning actions are [registered](Cleaner.md))to run after the cleaner is notified that the object has become phantom reachable. The cleaner uses [PhantomReference](PhantomReference.md) and [ReferenceQueue](ReferenceQueue.md) to be notified when the [reachability](_package.md) changes.
 
-Each cleaner operates independently, managing the pending cleaning actions and handling threading and termination when the cleaner is no longer in use. Registering an object reference and corresponding cleaning action returns a [Cleanable](../java/lang/ref/Cleaner.Cleanable.md). The most efficient use is to explicitly invoke the [clean](../java/lang/ref/Cleaner.Cleanable.md))method when the object is closed or no longer needed. The cleaning action is a [Runnable](../java/lang/Runnable.md) to be invoked at most once when the object has become phantom reachable unless it has already been explicitly cleaned. Note that the cleaning action must not refer to the object being registered. If so, the object will not become phantom reachable and the cleaning action will not be invoked automatically.
+Each cleaner operates independently, managing the pending cleaning actions and handling threading and termination when the cleaner is no longer in use. Registering an object reference and corresponding cleaning action returns a [Cleanable](../java/lang/ref/Cleaner.Cleanable.md). The most efficient use is to explicitly invoke the [clean](../java/lang/ref/Cleaner.Cleanable.md))method when the object is closed or no longer needed. The cleaning action is a [Runnable](../java.lang/Runnable.md) to be invoked at most once when the object has become phantom reachable unless it has already been explicitly cleaned. Note that the cleaning action must not refer to the object being registered. If so, the object will not become phantom reachable and the cleaning action will not be invoked automatically.
 
 The execution of the cleaning action is performed by a thread associated with the cleaner. The thread runs until all registered cleaning actions have completed and the cleaner itself is reclaimed by the garbage collector.
 
-The behavior of cleaners during [System.exit](../java/lang/System.md))is implementation specific. No guarantees are made relating to whether cleaning actions are invoked or not.
+The behavior of cleaners during [System.exit](../java.lang/System.md))is implementation specific. No guarantees are made relating to whether cleaning actions are invoked or not.
 
-Unless otherwise noted, passing a`null`argument to a constructor or method in this class will cause a [NullPointerException](../java/lang/NullPointerException.md) to be thrown.
+Unless otherwise noted, passing a`null`argument to a constructor or method in this class will cause a [NullPointerException](../java.lang/NullPointerException.md) to be thrown.
 
 ## Summary
 
@@ -32,9 +32,9 @@ Unless otherwise noted, passing a`null`argument to a constructor or method in th
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Cleaner](../java/lang/ref/Cleaner.md)! | [create](../java/lang/ref/Cleaner.md))`()` Returns a new`Cleaner`. |
-| static [Cleaner](../java/lang/ref/Cleaner.md)! | [create](../java/lang/ref/Cleaner.md))`(`threadFactory:` ` [ThreadFactory](../java/util/concurrent/ThreadFactory.md)!`)` Returns a new`Cleaner`using a`Thread`from the`ThreadFactory`. |
-| [Cleaner.Cleanable](../java/lang/ref/Cleaner.Cleanable.md)! | [register](../java/lang/ref/Cleaner.md))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `action:` ` [Runnable](../java/lang/Runnable.md)!`)` Registers an object and a cleaning action to run when the object becomes phantom reachable. |
+| static [Cleaner](Cleaner.md)! | [create](Cleaner.md))`()` Returns a new`Cleaner`. |
+| static [Cleaner](Cleaner.md)! | [create](Cleaner.md))`(`threadFactory:` ` [ThreadFactory](../java.util.concurrent/ThreadFactory.md)!`)` Returns a new`Cleaner`using a`Thread`from the`ThreadFactory`. |
+| [Cleaner.Cleanable](../java/lang/ref/Cleaner.Cleanable.md)! | [register](Cleaner.md))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `action:` ` [Runnable](../java.lang/Runnable.md)!`)` Registers an object and a cleaning action to run when the object becomes phantom reachable. |
 | --- | --- |
 
 ## Public methods
@@ -49,7 +49,7 @@ static fun create(): Cleaner!
 
 Returns a new`Cleaner`.
 
-The cleaner creates a [daemon thread](../java/lang/Thread.md))to process the phantom reachable objects and to invoke cleaning actions. The [context class loader](../java/lang/Thread.md))of the thread is set to the [system class loader](../java/lang/ClassLoader.md)). The thread has no permissions, enforced only if a [SecurityManager is set](../java/lang/System.md)).
+The cleaner creates a [daemon thread](../java.lang/Thread.md))to process the phantom reachable objects and to invoke cleaning actions. The [context class loader](../java.lang/Thread.md))of the thread is set to the [system class loader](../java.lang/ClassLoader.md)). The thread has no permissions, enforced only if a [SecurityManager is set](../java.lang/System.md)).
 
 All exceptions thrown by the cleaning actions in this thread are ignored.
 
@@ -57,7 +57,7 @@ The cleaner terminates when it is phantom reachable and all of the registered cl
 
 | Return ||
 |-----------------------------------------------------------------------------------|----------------|
-| [Cleaner](../java/lang/ref/Cleaner.md)! | a new`Cleaner` |
+| [Cleaner](Cleaner.md)! | a new`Cleaner` |
 
 | Exceptions ||
 |-------------------------------|---------------------------------------------------------------------|
@@ -73,17 +73,17 @@ static fun create(threadFactory: ThreadFactory!): Cleaner!
 
 Returns a new`Cleaner`using a`Thread`from the`ThreadFactory`.
 
-A thread from the thread factory's [newThread](../java/util/concurrent/ThreadFactory.md))method is set to be a [daemon thread](../java/lang/Thread.md))and started to process phantom reachable objects and invoke cleaning actions. On each call the [thread factory](../java/util/concurrent/ThreadFactory.md))must provide a Thread that is suitable for performing the cleaning actions.
+A thread from the thread factory's [newThread](../java.util.concurrent/ThreadFactory.md))method is set to be a [daemon thread](../java.lang/Thread.md))and started to process phantom reachable objects and invoke cleaning actions. On each call the [thread factory](../java.util.concurrent/ThreadFactory.md))must provide a Thread that is suitable for performing the cleaning actions.
 
 The cleaner terminates when it is phantom reachable and all of the registered cleaning actions are complete.
 
 | Parameters ||
 |-----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `threadFactory` | [ThreadFactory](../java/util/concurrent/ThreadFactory.md)!:a`ThreadFactory`to return a new`Thread`to process cleaning actions |
+| `threadFactory` | [ThreadFactory](../java.util.concurrent/ThreadFactory.md)!:a`ThreadFactory`to return a new`Thread`to process cleaning actions |
 
 | Return ||
 |-----------------------------------------------------------------------------------|----------------|
-| [Cleaner](../java/lang/ref/Cleaner.md)! | a new`Cleaner` |
+| [Cleaner](Cleaner.md)! | a new`Cleaner` |
 
 | Exceptions ||
 |-----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
@@ -101,12 +101,12 @@ fun register(
 ): Cleaner.Cleanable!
 ```
 
-Registers an object and a cleaning action to run when the object becomes phantom reachable. Refer to the [API Note](../java/lang/ref/Cleaner.md) above for cautions about the behavior of cleaning actions.
+Registers an object and a cleaning action to run when the object becomes phantom reachable. Refer to the [API Note](Cleaner.md) above for cautions about the behavior of cleaning actions.
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
 | `obj` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:the object to monitor |
-| `action` | [Runnable](../java/lang/Runnable.md)!:a`Runnable`to invoke when the object becomes phantom reachable |
+| `action` | [Runnable](../java.lang/Runnable.md)!:a`Runnable`to invoke when the object becomes phantom reachable |
 
 | Return ||
 |------------------------------------------------------------------------------------------------------|----------------------|

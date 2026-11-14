@@ -2,7 +2,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # DiscretePathEffect
 
-Kotlin | [Java](../android/graphics/DiscretePathEffect.md)
+Kotlin | [Java](DiscretePathEffect.md)
 | --- | --- |
 
 ```
@@ -11,8 +11,8 @@ open class DiscretePathEffect : PathEffect
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.graphics.PathEffect](../android/graphics/PathEffect.md) ||
-| | ↳ | [android.graphics.DiscretePathEffect](../android/graphics/DiscretePathEffect.md) |
+| ↳ | [android.graphics.PathEffect](PathEffect.md) ||
+| | ↳ | [android.graphics.DiscretePathEffect](DiscretePathEffect.md) |
 
 ## Summary
 

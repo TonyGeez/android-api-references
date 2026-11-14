@@ -8,11 +8,11 @@ abstract class CredentialProviderService : Service
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](../android/content/Context.md) ||||
-| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) |||
-| | | ↳ | [android.app.Service](../android/app/Service.md) ||
+| ↳ | [android.content.Context](../android.content/Context.md) ||||
+| | ↳ | [android.content.ContextWrapper](../android.content/ContextWrapper.md) |||
+| | | ↳ | [android.app.Service](../android.app/Service.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.service.credentials.CredentialProviderService](../android/service/credentials/CredentialProviderService.md) |
+| | | | ↳ | [android.service.credentials.CredentialProviderService](CredentialProviderService.md) |
 
 Service to be extended by credential providers, in order to return user credentials to the framework.
 
@@ -1059,7 +1059,7 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 |---|---|
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/credentials/CredentialProviderService#onBeginCreateCredential(android.service.credentials.BeginCreateCredentialRequest,%20android.os.CancellationSignal,%20android.os.OutcomeReceiver)(request: https://developer.android.com/reference/kotlin/android/service/credentials/BeginCreateCredentialRequest, cancellationSignal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#, callback: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://developer.android.com/reference/kotlin/android/service/credentials/BeginCreateCredentialResponse!, https://developer.android.com/reference/kotlin/android/credentials/CreateCredentialException.html#!>)` Called by the android system to create a credential. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/credentials/CredentialProviderService#onBeginGetCredential(android.service.credentials.BeginGetCredentialRequest,%20android.os.CancellationSignal,%20android.os.OutcomeReceiver)(request: https://developer.android.com/reference/kotlin/android/service/credentials/BeginGetCredentialRequest, cancellationSignal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#, callback: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://developer.android.com/reference/kotlin/android/service/credentials/BeginGetCredentialResponse!, https://developer.android.com/reference/kotlin/android/credentials/GetCredentialException.html#!>)` Called by the android system to retrieve user credentials from the connected provider service. |
-| [IBinder](../android/os/IBinder.md) | `https://developer.android.com/reference/kotlin/android/service/credentials/CredentialProviderService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Return the communication channel to the service. |
+| [IBinder](../android.os/IBinder.md) | `https://developer.android.com/reference/kotlin/android/service/credentials/CredentialProviderService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Return the communication channel to the service. |
 | --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/credentials/CredentialProviderService#onClearCredentialState(android.service.credentials.ClearCredentialStateRequest,%20android.os.CancellationSignal,%20android.os.OutcomeReceiver)(request: https://developer.android.com/reference/kotlin/android/service/credentials/ClearCredentialStateRequest, cancellationSignal: https://developer.android.com/reference/kotlin/android/os/CancellationSignal.html#, callback: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://developer.android.com/reference/kotlin/java/lang/Void.html#!, https://developer.android.com/reference/kotlin/android/credentials/ClearCredentialStateException.html#!>)` Called by the android system to clear the credential state. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/credentials/CredentialProviderService#onCreate()()` Called by the system when the service is first created. |
@@ -2919,9 +2919,9 @@ Called by the android system to create a credential.
 
 | Parameters ||
 |---|---|
-| `request` | [BeginCreateCredentialRequest](../android/service/credentials/BeginCreateCredentialRequest.md): The credential creation request for the provider to handle. This value cannot be `null`. |
-| `cancellationSignal` | [CancellationSignal](../android/os/CancellationSignal.md): Signal for providers to listen to any cancellation requests from the android system. This value cannot be `null`. |
-| `callback` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [BeginCreateCredentialResponse](../android/service/credentials/BeginCreateCredentialResponse.md)!, [CreateCredentialException](../android/credentials/CreateCredentialException.md)!\>: Object used to relay the response of the credential creation request. This value cannot be `null`. |
+| `request` | [BeginCreateCredentialRequest](BeginCreateCredentialRequest.md): The credential creation request for the provider to handle. This value cannot be `null`. |
+| `cancellationSignal` | [CancellationSignal](../android.os/CancellationSignal.md): Signal for providers to listen to any cancellation requests from the android system. This value cannot be `null`. |
+| `callback` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [BeginCreateCredentialResponse](BeginCreateCredentialResponse.md)!, [CreateCredentialException](../android.credentials/CreateCredentialException.md)!\>: Object used to relay the response of the credential creation request. This value cannot be `null`. |
 | --- | --- |
 
 ### onBeginGetCredential
@@ -2944,9 +2944,9 @@ If a `https://developer.android.com/reference/kotlin/android/app/PendingIntent.h
 
 | Parameters ||
 |---|---|
-| `request` | [BeginGetCredentialRequest](../android/service/credentials/BeginGetCredentialRequest.md): the request for the provider to handle. This value cannot be `null`. |
-| `cancellationSignal` | [CancellationSignal](../android/os/CancellationSignal.md): signal for providers to listen to any cancellation requests from the android system. This value cannot be `null`. |
-| `callback` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [BeginGetCredentialResponse](../android/service/credentials/BeginGetCredentialResponse.md)!, [GetCredentialException](../android/credentials/GetCredentialException.md)!\>: object used to relay the response of the credentials request. This value cannot be `null`. |
+| `request` | [BeginGetCredentialRequest](BeginGetCredentialRequest.md): the request for the provider to handle. This value cannot be `null`. |
+| `cancellationSignal` | [CancellationSignal](../android.os/CancellationSignal.md): signal for providers to listen to any cancellation requests from the android system. This value cannot be `null`. |
+| `callback` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [BeginGetCredentialResponse](BeginGetCredentialResponse.md)!, [GetCredentialException](../android.credentials/GetCredentialException.md)!\>: object used to relay the response of the credentials request. This value cannot be `null`. |
 | --- | --- |
 
 ### onBind
@@ -2963,7 +2963,7 @@ Return the communication channel to the service. May return null if clients can 
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md): This value cannot be `null`. |
+| `intent` | [Intent](../android.content/Intent.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -2985,9 +2985,9 @@ Called by the android system to clear the credential state. This api isinvoked b
 
 | Parameters ||
 |---|---|
-| `request` | [ClearCredentialStateRequest](../android/service/credentials/ClearCredentialStateRequest.md): The clear credential request for the provider to handle. This value cannot be `null`. |
-| `cancellationSignal` | [CancellationSignal](../android/os/CancellationSignal.md): Signal for providers to listen to any cancellation requests from the android system. This value cannot be `null`. |
-| `callback` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [Void](../java/lang/Void.md)!, [ClearCredentialStateException](../android/credentials/ClearCredentialStateException.md)!\>: Object used to relay the result of the request. This value cannot be `null`. |
+| `request` | [ClearCredentialStateRequest](ClearCredentialStateRequest.md): The clear credential request for the provider to handle. This value cannot be `null`. |
+| `cancellationSignal` | [CancellationSignal](../android.os/CancellationSignal.md): Signal for providers to listen to any cancellation requests from the android system. This value cannot be `null`. |
+| `callback` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [Void](../java.lang/Void.md)!, [ClearCredentialStateException](../android.credentials/ClearCredentialStateException.md)!\>: Object used to relay the result of the request. This value cannot be `null`. |
 | --- | --- |
 
 ### onCreate

@@ -2,7 +2,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 
 # UsbConfiguration
 
-Kotlin | [Java](../android/hardware/usb/UsbConfiguration.md)
+Kotlin | [Java](UsbConfiguration.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ open class UsbConfiguration : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.hardware.usb.UsbConfiguration](../android/hardware/usb/UsbConfiguration.md) |
+| ↳ | [android.hardware.usb.UsbConfiguration](UsbConfiguration.md) |
 
 A class representing a configuration on a `https://developer.android.com/reference/kotlin/android/hardware/usb/UsbDevice`. A USB configuration can have one or more interfaces, each one providing a different piece of functionality, separate from the other interfaces. An interface will have one or more `https://developer.android.com/reference/kotlin/android/hardware/usb/UsbEndpoint`s, which are the channels by which the host transfers data with the device.
 
@@ -33,7 +33,7 @@ A class representing a configuration on a `https://developer.android.com/referen
 |---|---|
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConfiguration#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConfiguration#getId()()` Returns the configuration's ID field. |
-| open [UsbInterface](../android/hardware/usb/UsbInterface.md) | `https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConfiguration#getInterface(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the `https://developer.android.com/reference/kotlin/android/hardware/usb/UsbInterface` at the given index. |
+| open [UsbInterface](UsbInterface.md) | `https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConfiguration#getInterface(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the `https://developer.android.com/reference/kotlin/android/hardware/usb/UsbInterface` at the given index. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConfiguration#getInterfaceCount()()` Returns the number of `https://developer.android.com/reference/kotlin/android/hardware/usb/UsbInterface`s this configuration contains. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConfiguration#getMaxPower()()` Returns the configuration's max power consumption, in milliamps. |
@@ -47,7 +47,7 @@ A class representing a configuration on a `https://developer.android.com/referen
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [UsbConfiguration](../android/hardware/usb/UsbConfiguration.md)!\> | `https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConfiguration#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [UsbConfiguration](UsbConfiguration.md)!\> | `https://developer.android.com/reference/kotlin/android/hardware/usb/UsbConfiguration#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public methods
 

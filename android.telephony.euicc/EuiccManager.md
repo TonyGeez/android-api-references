@@ -2,7 +2,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 
 # EuiccManager
 
-Kotlin | [Java](../android/telephony/euicc/EuiccManager.md)
+Kotlin | [Java](EuiccManager.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ open class EuiccManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.telephony.euicc.EuiccManager](../android/telephony/euicc/EuiccManager.md) |
+| ↳ | [android.telephony.euicc.EuiccManager](EuiccManager.md) |
 
 EuiccManager is the application interface to eUICCs, or eSIMs/embedded SIMs.
 
@@ -87,13 +87,13 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 
 | Public methods ||
 |---|---|
-| open [EuiccManager](../android/telephony/euicc/EuiccManager.md) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#createForCardId(kotlin.Int)(cardId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a new EuiccManager object pinned to the given card ID. |
+| open [EuiccManager](EuiccManager.md) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#createForCardId(kotlin.Int)(cardId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Create a new EuiccManager object pinned to the given card ID. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#deleteSubscription(kotlin.Int,%20android.app.PendingIntent)(subscriptionId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, callbackIntent: https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#!)` Deletes the given subscription. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#downloadSubscription(android.telephony.euicc.DownloadableSubscription,%20kotlin.Boolean,%20android.app.PendingIntent)(subscription: https://developer.android.com/reference/kotlin/android/telephony/euicc/DownloadableSubscription!, switchAfterDownload: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, callbackIntent: https://developer.android.com/reference/kotlin/android/app/PendingIntent.html#!)` Attempt to download the given `https://developer.android.com/reference/kotlin/android/telephony/euicc/DownloadableSubscription`. |
 | --- | --- |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#getAvailableMemoryInBytes()()` Returns the available memory in bytes of the eUICC. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#getEid()()` Returns the EID identifying the eUICC hardware. |
-| open [EuiccInfo](../android/telephony/euicc/EuiccInfo.md)? | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#getEuiccInfo()()` Returns information about the eUICC chip/device. |
+| open [EuiccInfo](EuiccInfo.md)? | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#getEuiccInfo()()` Returns information about the eUICC chip/device. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#isEnabled()()` Whether embedded subscriptions are currently enabled. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#isSimPortAvailable(kotlin.Int)(portIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns whether the passing portIndex is available. |
@@ -820,7 +820,7 @@ Requires android.Manifest.permission.WRITE_EMBEDDED_SUBSCRIPTIONS or `https://de
 | Parameters ||
 |---|---|
 | `subscriptionId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the ID of the subscription to delete. |
-| `callbackIntent` | [PendingIntent](../android/app/PendingIntent.md)!: a PendingIntent to launch when the operation completes. |
+| `callbackIntent` | [PendingIntent](../android.app/PendingIntent.md)!: a PendingIntent to launch when the operation completes. |
 
 | Exceptions ||
 |---|---|
@@ -857,9 +857,9 @@ Requires android.Manifest.permission.WRITE_EMBEDDED_SUBSCRIPTIONS or `https://de
 
 | Parameters ||
 |---|---|
-| `subscription` | [DownloadableSubscription](../android/telephony/euicc/DownloadableSubscription.md)!: the subscription to download. |
+| `subscription` | [DownloadableSubscription](DownloadableSubscription.md)!: the subscription to download. |
 | `switchAfterDownload` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): if true, the profile will be activated upon successful download. |
-| `callbackIntent` | [PendingIntent](../android/app/PendingIntent.md)!: a PendingIntent to launch when the operation completes. |
+| `callbackIntent` | [PendingIntent](../android.app/PendingIntent.md)!: a PendingIntent to launch when the operation completes. |
 | --- | --- |
 
 | Exceptions ||
@@ -988,11 +988,11 @@ This method may only be called once for a particular error.
 
 | Parameters ||
 |---|---|
-| `activity` | [Activity](../android/app/Activity.md)!: the calling activity (which should be in the foreground). |
+| `activity` | [Activity](../android.app/Activity.md)!: the calling activity (which should be in the foreground). |
 | `requestCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): an application-specific request code which will be provided to android.app.Activity#onActivityResult upon completion. Note that the operation may still be in progress when the resolution activity completes; it is not fully finished until the callback intent is triggered. |
-| `resultIntent` | [Intent](../android/content/Intent.md)!: the Intent provided to the initial callback intent which failed with `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#EMBEDDED_SUBSCRIPTION_RESULT_RESOLVABLE_ERROR:kotlin.Int`. |
+| `resultIntent` | [Intent](../android.content/Intent.md)!: the Intent provided to the initial callback intent which failed with `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#EMBEDDED_SUBSCRIPTION_RESULT_RESOLVABLE_ERROR:kotlin.Int`. |
 | --- | --- |
-| `callbackIntent` | [PendingIntent](../android/app/PendingIntent.md)!: a PendingIntent to launch when the operation completes. This is trigered upon completion of the original operation that required user resolution. |
+| `callbackIntent` | [PendingIntent](../android.app/PendingIntent.md)!: a PendingIntent to launch when the operation completes. This is trigered upon completion of the original operation that required user resolution. |
 
 | Exceptions ||
 |---|---|
@@ -1028,7 +1028,7 @@ Requires android.Manifest.permission.WRITE_EMBEDDED_SUBSCRIPTIONS
 | Parameters ||
 |---|---|
 | `subscriptionId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the ID of the subscription to enable. May be `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager.html#INVALID_SUBSCRIPTION_ID:kotlin.Int` to deactivate the current profile without activating another profile to replace it. Calling apps targeting on android T must use `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#switchToSubscription(kotlin.Int,%20kotlin.Int,%20android.app.PendingIntent)` API for disable profile, port index can be found from `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionInfo.html#getPortIndex()`. If it's a disable operation, requires the `android.Manifest.permission#WRITE_EMBEDDED_SUBSCRIPTIONS` permission, or the calling app must be authorized to manage the active subscription on the target eUICC. |
-| `callbackIntent` | [PendingIntent](../android/app/PendingIntent.md)!: a PendingIntent to launch when the operation completes. |
+| `callbackIntent` | [PendingIntent](../android.app/PendingIntent.md)!: a PendingIntent to launch when the operation completes. |
 
 | Exceptions ||
 |---|---|
@@ -1063,7 +1063,7 @@ Requires android.Manifest.permission.WRITE_EMBEDDED_SUBSCRIPTIONS
 |---|---|
 | `subscriptionId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the ID of the subscription to enable. May be `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionManager.html#INVALID_SUBSCRIPTION_ID:kotlin.Int` to deactivate the current profile without activating another profile to replace it. If it's a disable operation, requires the `android.Manifest.permission#WRITE_EMBEDDED_SUBSCRIPTIONS` permission, or the calling app must be authorized to manage the active subscription on the target eUICC. From Android T, multiple enabled profiles is supported. Calling apps targeting on android T must use `https://developer.android.com/reference/kotlin/android/telephony/euicc/EuiccManager#switchToSubscription(kotlin.Int,%20kotlin.Int,%20android.app.PendingIntent)` API for disable profile, port index can be found from `https://developer.android.com/reference/kotlin/android/telephony/SubscriptionInfo.html#getPortIndex()`. |
 | `portIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index of the port to target for the enabled subscription |
-| `callbackIntent` | [PendingIntent](../android/app/PendingIntent.md): a PendingIntent to launch when the operation completes. This value cannot be `null`. |
+| `callbackIntent` | [PendingIntent](../android.app/PendingIntent.md): a PendingIntent to launch when the operation completes. This value cannot be `null`. |
 | --- | --- |
 
 | Exceptions ||
@@ -1091,7 +1091,7 @@ Requires android.Manifest.permission.WRITE_EMBEDDED_SUBSCRIPTIONS
 |---|---|
 | `subscriptionId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the ID of the subscription to update. |
 | `nickname` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: the new nickname to apply. This value may be `null`. |
-| `callbackIntent` | [PendingIntent](../android/app/PendingIntent.md): a PendingIntent to launch when the operation completes. This value cannot be `null`. |
+| `callbackIntent` | [PendingIntent](../android.app/PendingIntent.md): a PendingIntent to launch when the operation completes. This value cannot be `null`. |
 | --- | --- |
 
 | Exceptions ||

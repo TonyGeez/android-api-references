@@ -2,7 +2,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 
 # WifiAwareChannelInfo
 
-Kotlin | [Java](../android/net/wifi/aware/WifiAwareChannelInfo.md)
+Kotlin | [Java](WifiAwareChannelInfo.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class WifiAwareChannelInfo : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.wifi.aware.WifiAwareChannelInfo](../android/net/wifi/aware/WifiAwareChannelInfo.md) |
+| ↳ | [android.net.wifi.aware.WifiAwareChannelInfo](WifiAwareChannelInfo.md) |
 
 Wi-Fi Aware data-path channel information. The information can be extracted from the `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareNetworkInfo` using `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareNetworkInfo#getChannelInfoList()` ()}. Wi-Fi Aware data-path channel information includes the channel frequency, bandwidth and num of the spatial streams.
 
@@ -36,7 +36,7 @@ Wi-Fi Aware data-path channel information. The information can be extracted from
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [WifiAwareChannelInfo](../android/net/wifi/aware/WifiAwareChannelInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareChannelInfo#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [WifiAwareChannelInfo](WifiAwareChannelInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/net/wifi/aware/WifiAwareChannelInfo#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public methods
 
@@ -173,7 +173,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

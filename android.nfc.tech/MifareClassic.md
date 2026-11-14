@@ -2,7 +2,7 @@ Added in [API level 10](https://developer.android.com/guide/topics/manifest/uses
 
 # MifareClassic
 
-Kotlin | [Java](../android/nfc/tech/MifareClassic.md)
+Kotlin | [Java](MifareClassic.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class MifareClassic : TagTechnology
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.nfc.tech.MifareClassic](../android/nfc/tech/MifareClassic.md) |
+| ↳ | [android.nfc.tech.MifareClassic](MifareClassic.md) |
 
 Provides access to MIFARE Classic properties and I/O operations on a `https://developer.android.com/reference/kotlin/android/nfc/Tag.html#`.
 
@@ -65,7 +65,7 @@ Three well-known authentication keys are defined in this class: `https://develop
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic#connect()()` Enable I/O operations to the tag from this `https://developer.android.com/reference/kotlin/android/nfc/tech/TagTechnology` object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic#decrement(kotlin.Int,%20kotlin.Int)(blockIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Decrement a value block, storing the result in the temporary block on the tag. |
 | --- | --- |
-| static [MifareClassic](../android/nfc/tech/MifareClassic.md)! | `https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic#get(android.nfc.Tag)(tag: https://developer.android.com/reference/kotlin/android/nfc/Tag.html#!)` Get an instance of `https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic#` for the given tag. |
+| static [MifareClassic](MifareClassic.md)! | `https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic#get(android.nfc.Tag)(tag: https://developer.android.com/reference/kotlin/android/nfc/Tag.html#!)` Get an instance of `https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic#` for the given tag. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic#getBlockCount()()` Return the total number of MIFARE Classic blocks. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic#getBlockCountInSector(kotlin.Int)(sectorIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return the number of blocks in the given sector. |
 | --- | --- |
@@ -73,7 +73,7 @@ Three well-known authentication keys are defined in this class: `https://develop
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic#getSectorCount()()` Return the number of MIFARE Classic sectors. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic#getSize()()` Return the size of the tag in bytes |
 | --- | --- |
-| [Tag](../android/nfc/Tag.md)! | `https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic#getTag()()` Get the `https://developer.android.com/reference/kotlin/android/nfc/Tag.html#` object backing this `https://developer.android.com/reference/kotlin/android/nfc/tech/TagTechnology` object. |
+| [Tag](../android.nfc/Tag.md)! | `https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic#getTag()()` Get the `https://developer.android.com/reference/kotlin/android/nfc/Tag.html#` object backing this `https://developer.android.com/reference/kotlin/android/nfc/tech/TagTechnology` object. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic#getTimeout()()` Get the current `https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic#transceive(kotlin.ByteArray)` timeout in milliseconds. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/tech/MifareClassic#getType()()` Return the type of this MIFARE Classic compatible tag. |
 | --- | --- |
@@ -388,7 +388,7 @@ Returns null if `https://developer.android.com/reference/kotlin/android/nfc/tech
 
 | Parameters ||
 |---|---|
-| `tag` | [Tag](../android/nfc/Tag.md)!: an MIFARE Classic compatible tag |
+| `tag` | [Tag](../android.nfc/Tag.md)!: an MIFARE Classic compatible tag |
 
 | Return ||
 |---|---|

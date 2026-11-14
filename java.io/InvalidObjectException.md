@@ -11,11 +11,11 @@ open class InvalidObjectException : ObjectStreamException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
-| | | ↳ | [java.io.IOException](../java/io/IOException.md) |||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) ||||
+| | | ↳ | [java.io.IOException](IOException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.io.ObjectStreamException](../java/io/ObjectStreamException.md) ||
-| | | | | ↳ | [java.io.InvalidObjectException](../java/io/InvalidObjectException.md) |
+| | | | ↳ | [java.io.ObjectStreamException](ObjectStreamException.md) ||
+| | | | | ↳ | [java.io.InvalidObjectException](InvalidObjectException.md) |
 
 Indicates that one or more deserialized objects failed validation tests. The argument should provide the reason for the failure.
 
@@ -23,7 +23,7 @@ Indicates that one or more deserialized objects failed validation tests. The arg
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [InvalidObjectException](../java/io/InvalidObjectException.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an `InvalidObjectException`. |
+| [InvalidObjectException](InvalidObjectException.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an `InvalidObjectException`. |
 
 ## Public constructors
 
@@ -43,4 +43,4 @@ Constructs an `InvalidObjectException`.
 
 **See Also**
 
-- [java.io.ObjectInputValidation](../java/io/ObjectInputValidation.md)
+- [java.io.ObjectInputValidation](ObjectInputValidation.md)

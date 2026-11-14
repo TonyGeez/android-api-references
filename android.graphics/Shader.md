@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # Shader
 
-Kotlin| [Java](../android/graphics/Shader.md) 
+Kotlin| [Java](Shader.md) 
 | --- | --- |
 
 ```
@@ -13,9 +13,9 @@ open class Shader
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.graphics.Shader](../android/graphics/Shader.md) |
+| ↳ | [android.graphics.Shader](Shader.md) |
 
-| Known Direct Subclasses [BitmapShader](../android/graphics/BitmapShader.md), [ComposeShader](../android/graphics/ComposeShader.md), [LinearGradient](../android/graphics/LinearGradient.md), [RadialGradient](../android/graphics/RadialGradient.md), [RuntimeShader](../android/graphics/RuntimeShader.md), [SweepGradient](../android/graphics/SweepGradient.md) |--------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [BitmapShader](../android/graphics/BitmapShader.md) | Shader used to draw a bitmap as a texture. | | [ComposeShader](../android/graphics/ComposeShader.md) | A subclass of shader that returns the composition of two other shaders, combined by an [android.graphics.Xfermode](../android/graphics/Xfermode.md) subclass. | | [LinearGradient](../android/graphics/LinearGradient.md) | <br /> | | [RadialGradient](../android/graphics/RadialGradient.md) | <br /> | | [RuntimeShader](../android/graphics/RuntimeShader.md) | A [RuntimeShader](../android/graphics/RuntimeShader.md) calculates a per-pixel color based on the output of a user defined Android Graphics Shading Language (AGSL) function. | | [SweepGradient](../android/graphics/SweepGradient.md) | <br /> | |
+| Known Direct Subclasses [BitmapShader](BitmapShader.md), [ComposeShader](ComposeShader.md), [LinearGradient](LinearGradient.md), [RadialGradient](RadialGradient.md), [RuntimeShader](RuntimeShader.md), [SweepGradient](SweepGradient.md) |--------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [BitmapShader](BitmapShader.md) | Shader used to draw a bitmap as a texture. | | [ComposeShader](ComposeShader.md) | A subclass of shader that returns the composition of two other shaders, combined by an [android.graphics.Xfermode](Xfermode.md) subclass. | | [LinearGradient](LinearGradient.md) | <br /> | | [RadialGradient](RadialGradient.md) | <br /> | | [RuntimeShader](RuntimeShader.md) | A [RuntimeShader](RuntimeShader.md) calculates a per-pixel color based on the output of a user defined Android Graphics Shading Language (AGSL) function. | | [SweepGradient](SweepGradient.md) | <br /> | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Shader is the base class for objects that return horizontal spans of colors during drawing. A subclass of Shader is installed in a Paint calling paint.setShader(shader). After that any object (other than a bitmap) that is drawn with that paint will get its color(s) from the shader.
@@ -28,12 +28,12 @@ Shader is the base class for objects that return horizontal spans of colors duri
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------|---|
-| [Shader](../android/graphics/Shader.md))`()` <br /> |
+| [Shader](Shader.md))`()` <br /> |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getLocalMatrix](../android/graphics/Shader.md))`(`localM:` ` [Matrix](../android/graphics/Matrix.md)`)` Return true if the shader has a non-identity local matrix. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLocalMatrix](../android/graphics/Shader.md))`(`localM:` ` [Matrix](../android/graphics/Matrix.md)?`)` Set the shader's local matrix. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getLocalMatrix](Shader.md))`(`localM:` ` [Matrix](Matrix.md)`)` Return true if the shader has a non-identity local matrix. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLocalMatrix](Shader.md))`(`localM:` ` [Matrix](Matrix.md)?`)` Set the shader's local matrix. |
 
 ## Public constructors
 
@@ -61,7 +61,7 @@ Return true if the shader has a non-identity local matrix.
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `localM` | [Matrix](../android/graphics/Matrix.md):Set to the local matrix of the shader, if the shader's matrix is non-null. |
+| `localM` | [Matrix](Matrix.md):Set to the local matrix of the shader, if the shader's matrix is non-null. |
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------------------------------------------|
@@ -79,4 +79,4 @@ Set the shader's local matrix. Passing null will reset the shader's matrix to id
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| `localM` | [Matrix](../android/graphics/Matrix.md)?:The shader's new local matrix, or null to specify identity |
+| `localM` | [Matrix](Matrix.md)?:The shader's new local matrix, or null to specify identity |

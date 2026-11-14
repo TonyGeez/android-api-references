@@ -2,7 +2,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # Camera
 
-Kotlin | [Java](../android/graphics/Camera.md)
+Kotlin | [Java](Camera.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ open class Camera
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.graphics.Camera](../android/graphics/Camera.md) |
+| ↳ | [android.graphics.Camera](Camera.md) |
 
 A camera instance can be used to compute 3D transformations and generate a matrix that can be applied, for instance, on a `https://developer.android.com/reference/kotlin/android/graphics/Canvas`.
 
@@ -72,7 +72,7 @@ Computes the matrix corresponding to the current transformation and applies it t
 
 | Parameters ||
 |---|---|
-| `canvas` | [Canvas](../android/graphics/Canvas.md)!: The Canvas to set the transform matrix onto |
+| `canvas` | [Canvas](Canvas.md)!: The Canvas to set the transform matrix onto |
 
 ### dotWithNormal
 
@@ -137,7 +137,7 @@ Computes the matrix corresponding to the current transformation and copies it to
 
 | Parameters ||
 |---|---|
-| `matrix` | [Matrix](../android/graphics/Matrix.md)!: The matrix to copy the current transforms into |
+| `matrix` | [Matrix](Matrix.md)!: The matrix to copy the current transforms into |
 
 ### restore
 

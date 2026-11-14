@@ -19,7 +19,7 @@ interface PhotosColumns
 
 | **This interface was deprecated in API level 5.**
 |
-| see [android.provider.ContactsContract](../android/provider/ContactsContract.md)
+| see [android.provider.ContactsContract](ContactsContract.md)
 
 Columns from the Photos table that other columns join into themselves.
 
@@ -46,7 +46,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val DATA: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)*
 
 The image data, or null if there is no image.
 
@@ -62,7 +62,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val DOWNLOAD_REQUIRED: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)*
 
 non-zero if a download is required and the photo isn't marked as a bad resource. You must specify this in the columns in order to use it in the where clause.
 
@@ -78,7 +78,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val EXISTS_ON_SERVER: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)*
 
 non-zero if this photo is known to exist on the server
 
@@ -94,7 +94,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val LOCAL_VERSION: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)*
 
 The _SYNC_VERSION of the photo that was last downloaded
 
@@ -110,7 +110,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val PERSON_ID: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)*
 
 The person this photo is associated with.
 
@@ -126,7 +126,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val SYNC_ERROR: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)*
 
 Contains the description of the upload or download error from the previous attempt. If null then the previous attempt succeeded.
 

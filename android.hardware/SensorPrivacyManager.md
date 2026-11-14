@@ -4,7 +4,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # SensorPrivacyManager
 
-Kotlin| [Java](../android/hardware/SensorPrivacyManager.md) 
+Kotlin| [Java](SensorPrivacyManager.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class SensorPrivacyManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.hardware.SensorPrivacyManager](../android/hardware/SensorPrivacyManager.md) |
+| ↳ | [android.hardware.SensorPrivacyManager](SensorPrivacyManager.md) |
 
 This class provides information about the microphone and camera toggles.
 
@@ -21,17 +21,17 @@ This class provides information about the microphone and camera toggles.
 
 | Nested classes ||
 |---|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Sensors](../android/hardware/SensorPrivacyManager.Sensors.md) Sensor constants which are used in [SensorPrivacyManager](../android/hardware/SensorPrivacyManager.md) |
+| | [Sensors](../android/hardware/SensorPrivacyManager.Sensors.md) Sensor constants which are used in [SensorPrivacyManager](SensorPrivacyManager.md) |
 
 | Constants ||
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TOGGLE_TYPE_HARDWARE](../android/hardware/SensorPrivacyManager.md) Constant for hardware toggle. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TOGGLE_TYPE_SOFTWARE](../android/hardware/SensorPrivacyManager.md) Constant for software toggle. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TOGGLE_TYPE_HARDWARE](SensorPrivacyManager.md) Constant for hardware toggle. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TOGGLE_TYPE_SOFTWARE](SensorPrivacyManager.md) Constant for software toggle. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsSensorToggle](../android/hardware/SensorPrivacyManager.md))`(`sensor:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Checks if the given toggle is supported on this device |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsSensorToggle](../android/hardware/SensorPrivacyManager.md))`(`toggleType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `sensor:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Checks if the given toggle is supported on this device |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsSensorToggle](SensorPrivacyManager.md))`(`sensor:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Checks if the given toggle is supported on this device |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsSensorToggle](SensorPrivacyManager.md))`(`toggleType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `sensor:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Checks if the given toggle is supported on this device |
 
 ## Constants
 
@@ -95,7 +95,7 @@ Checks if the given toggle is supported on this device
 | Parameters ||
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `sensor` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The sensor to check Value is [android.hardware.SensorPrivacyManager.Sensors#MICROPHONE](../android/hardware/SensorPrivacyManager.Sensors.md), or [android.hardware.SensorPrivacyManager.Sensors#CAMERA](../android/hardware/SensorPrivacyManager.Sensors.md) |
-| `toggleType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is [android.hardware.SensorPrivacyManager#TOGGLE_TYPE_SOFTWARE](../android/hardware/SensorPrivacyManager.md), or [android.hardware.SensorPrivacyManager#TOGGLE_TYPE_HARDWARE](../android/hardware/SensorPrivacyManager.md) |
+| `toggleType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is [android.hardware.SensorPrivacyManager#TOGGLE_TYPE_SOFTWARE](SensorPrivacyManager.md), or [android.hardware.SensorPrivacyManager#TOGGLE_TYPE_HARDWARE](SensorPrivacyManager.md) |
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------------------------------------------------------|

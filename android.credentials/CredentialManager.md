@@ -8,7 +8,7 @@ class CredentialManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.credentials.CredentialManager](../android/credentials/CredentialManager.md) |
+| ↳ | [android.credentials.CredentialManager](CredentialManager.md) |
 
 Manages user authentication flows.
 
@@ -55,11 +55,11 @@ A credential provider may have stored an active credential session and use it to
 
 | Parameters ||
 |---|---|
-| `request` | [ClearCredentialStateRequest](../android/credentials/ClearCredentialStateRequest.md): the request data. This value cannot be `null`. |
-| `cancellationSignal` | [CancellationSignal](../android/os/CancellationSignal.md)?: an optional signal that allows for cancelling this call. This value may be `null`. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): the callback will take place on this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. This value cannot be `null`. |
+| `request` | [ClearCredentialStateRequest](ClearCredentialStateRequest.md): the request data. This value cannot be `null`. |
+| `cancellationSignal` | [CancellationSignal](../android.os/CancellationSignal.md)?: an optional signal that allows for cancelling this call. This value may be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): the callback will take place on this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. This value cannot be `null`. |
 | --- | --- |
-| `callback` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [Void](../java/lang/Void.md)!, [ClearCredentialStateException](../android/credentials/ClearCredentialStateException.md)!\>: the callback invoked when the request succeeds or fails. This value cannot be `null`. |
+| `callback` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [Void](../java.lang/Void.md)!, [ClearCredentialStateException](ClearCredentialStateException.md)!\>: the callback invoked when the request succeeds or fails. This value cannot be `null`. |
 
 ### createCredential
 
@@ -81,12 +81,12 @@ The execution can potentially launch UI flows to collect user consent to creatin
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md): the context used to launch any UI needed; use an activity context to make sure the UI will be launched within the same task stack. This value cannot be `null`. |
-| `request` | [CreateCredentialRequest](../android/credentials/CreateCredentialRequest.md): the request specifying type(s) of credentials to get from the user. This value cannot be `null`. |
-| `cancellationSignal` | [CancellationSignal](../android/os/CancellationSignal.md)?: an optional signal that allows for cancelling this call. This value may be `null`. |
+| `context` | [Context](../android.content/Context.md): the context used to launch any UI needed; use an activity context to make sure the UI will be launched within the same task stack. This value cannot be `null`. |
+| `request` | [CreateCredentialRequest](CreateCredentialRequest.md): the request specifying type(s) of credentials to get from the user. This value cannot be `null`. |
+| `cancellationSignal` | [CancellationSignal](../android.os/CancellationSignal.md)?: an optional signal that allows for cancelling this call. This value may be `null`. |
 | --- | --- |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): the callback will take place on this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. This value cannot be `null`. |
-| `callback` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [CreateCredentialResponse](../android/credentials/CreateCredentialResponse.md)!, [CreateCredentialException](../android/credentials/CreateCredentialException.md)!\>: the callback invoked when the request succeeds or fails. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): the callback will take place on this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. This value cannot be `null`. |
+| `callback` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [CreateCredentialResponse](CreateCredentialResponse.md)!, [CreateCredentialException](CreateCredentialException.md)!\>: the callback invoked when the request succeeds or fails. This value cannot be `null`. |
 
 ### getCredential
 
@@ -108,12 +108,12 @@ The execution can potentially launch UI flows to collect user consent to using a
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md): the context used to launch any UI needed; use an activity context to make sure the UI will be launched within the same task stack. This value cannot be `null`. |
-| `request` | [GetCredentialRequest](../android/credentials/GetCredentialRequest.md): the request specifying type(s) of credentials to get from the user. This value cannot be `null`. |
-| `cancellationSignal` | [CancellationSignal](../android/os/CancellationSignal.md)?: an optional signal that allows for cancelling this call. This value may be `null`. |
+| `context` | [Context](../android.content/Context.md): the context used to launch any UI needed; use an activity context to make sure the UI will be launched within the same task stack. This value cannot be `null`. |
+| `request` | [GetCredentialRequest](GetCredentialRequest.md): the request specifying type(s) of credentials to get from the user. This value cannot be `null`. |
+| `cancellationSignal` | [CancellationSignal](../android.os/CancellationSignal.md)?: an optional signal that allows for cancelling this call. This value may be `null`. |
 | --- | --- |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): the callback will take place on this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. This value cannot be `null`. |
-| `callback` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [GetCredentialResponse](../android/credentials/GetCredentialResponse.md)!, [GetCredentialException](../android/credentials/GetCredentialException.md)!\>: the callback invoked when the request succeeds or fails. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): the callback will take place on this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. This value cannot be `null`. |
+| `callback` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [GetCredentialResponse](GetCredentialResponse.md)!, [GetCredentialException](GetCredentialException.md)!\>: the callback invoked when the request succeeds or fails. This value cannot be `null`. |
 
 ### getCredential
 
@@ -137,12 +137,12 @@ Use this API to complete the full credential retrieval operation after you initi
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md): the context used to launch any UI needed; use an activity context to make sure the UI will be launched within the same task stack. This value cannot be `null`. |
+| `context` | [Context](../android.content/Context.md): the context used to launch any UI needed; use an activity context to make sure the UI will be launched within the same task stack. This value cannot be `null`. |
 | `pendingGetCredentialHandle` | [PrepareGetCredentialResponse.PendingGetCredentialHandle](../android/credentials/PrepareGetCredentialResponse.PendingGetCredentialHandle.md): the handle representing the pending operation to resume. This value cannot be `null`. |
-| `cancellationSignal` | [CancellationSignal](../android/os/CancellationSignal.md)?: an optional signal that allows for cancelling this call. This value may be `null`. |
+| `cancellationSignal` | [CancellationSignal](../android.os/CancellationSignal.md)?: an optional signal that allows for cancelling this call. This value may be `null`. |
 | --- | --- |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): the callback will take place on this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. This value cannot be `null`. |
-| `callback` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [GetCredentialResponse](../android/credentials/GetCredentialResponse.md)!, [GetCredentialException](../android/credentials/GetCredentialException.md)!\>: the callback invoked when the request succeeds or fails. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): the callback will take place on this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. This value cannot be `null`. |
+| `callback` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [GetCredentialResponse](GetCredentialResponse.md)!, [GetCredentialException](GetCredentialException.md)!\>: the callback invoked when the request succeeds or fails. This value cannot be `null`. |
 
 ### isEnabledCredentialProviderService
 
@@ -156,7 +156,7 @@ Returns `true` if the calling application provides a CredentialProviderService t
 
 | Parameters ||
 |---|---|
-| `componentName` | [ComponentName](../android/content/ComponentName.md): the component name to check is enabled. This value cannot be `null`. |
+| `componentName` | [ComponentName](../android.content/ComponentName.md): the component name to check is enabled. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -182,11 +182,11 @@ This API doesn't invoke any UI. It only performs the preparation work so that yo
 
 | Parameters ||
 |---|---|
-| `request` | [GetCredentialRequest](../android/credentials/GetCredentialRequest.md): the request specifying type(s) of credentials to get from the user. This value cannot be `null`. |
-| `cancellationSignal` | [CancellationSignal](../android/os/CancellationSignal.md)?: an optional signal that allows for cancelling this call. This value may be `null`. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): the callback will take place on this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. This value cannot be `null`. |
+| `request` | [GetCredentialRequest](GetCredentialRequest.md): the request specifying type(s) of credentials to get from the user. This value cannot be `null`. |
+| `cancellationSignal` | [CancellationSignal](../android.os/CancellationSignal.md)?: an optional signal that allows for cancelling this call. This value may be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): the callback will take place on this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. This value cannot be `null`. |
 | --- | --- |
-| `callback` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [PrepareGetCredentialResponse](../android/credentials/PrepareGetCredentialResponse.md)!, [GetCredentialException](../android/credentials/GetCredentialException.md)!\>: the callback invoked when the request succeeds or fails. This value cannot be `null`. |
+| `callback` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [PrepareGetCredentialResponse](PrepareGetCredentialResponse.md)!, [GetCredentialException](GetCredentialException.md)!\>: the callback invoked when the request succeeds or fails. This value cannot be `null`. |
 
 ### registerCredentialDescription
 
@@ -200,7 +200,7 @@ Registers a `https://developer.android.com/reference/kotlin/android/credentials/
 
 | Parameters ||
 |---|---|
-| `request` | [RegisterCredentialDescriptionRequest](../android/credentials/RegisterCredentialDescriptionRequest.md): the request data. This value cannot be `null`. |
+| `request` | [RegisterCredentialDescriptionRequest](RegisterCredentialDescriptionRequest.md): the request data. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -219,7 +219,7 @@ Unregisters a `https://developer.android.com/reference/kotlin/android/credential
 
 | Parameters ||
 |---|---|
-| `request` | [UnregisterCredentialDescriptionRequest](../android/credentials/UnregisterCredentialDescriptionRequest.md): the request data. This value cannot be `null`. |
+| `request` | [UnregisterCredentialDescriptionRequest](UnregisterCredentialDescriptionRequest.md): the request data. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|

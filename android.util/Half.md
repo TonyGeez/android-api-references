@@ -2,7 +2,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 
 # Half
 
-Kotlin | [Java](../android/util/Half.md)
+Kotlin | [Java](Half.md)
 | --- | --- |
 
 ```
@@ -12,7 +12,7 @@ class Half : Number, Comparable<Half!>
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
 | ↳ | [kotlin.Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html) ||
-| | ↳ | [android.util.Half](../android/util/Half.md) |
+| | ↳ | [android.util.Half](Half.md) |
 
 The `Half` class is a wrapper and a utility class to manipulate half-precision 16-bit [IEEE 754](https://en.wikipedia.org/wiki/Half-precision_floating-point_format) floating point data types (also called fp16 or binary16). A half-precision float can be created from or converted to single-precision floats, and is stored in a short data type. To distinguish short values holding half-precision floats from regular short values, it is recommended to use the `@HalfFloat` annotation.
 
@@ -170,9 +170,9 @@ This table shows that numbers higher than 1024 lose all fractional precision.
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/util/Half#toString(kotlin.Short)(h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)` Returns a string representation of the specified half-precision float value. |
 | static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | `https://developer.android.com/reference/kotlin/android/util/Half#trunc(kotlin.Short)(h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)` Returns the truncated half-precision float value of the specified half-precision float value. |
 | --- | --- |
-| static [Half](../android/util/Half.md) | `https://developer.android.com/reference/kotlin/android/util/Half#valueOf(kotlin.Float)(f: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Returns a `Half` instance representing the specified float value. |
-| static [Half](../android/util/Half.md) | `https://developer.android.com/reference/kotlin/android/util/Half#valueOf(kotlin.String)(s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns a `Half` instance representing the specified string value. |
-| static [Half](../android/util/Half.md) | `https://developer.android.com/reference/kotlin/android/util/Half#valueOf(kotlin.Short)(h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)` Returns a `Half` instance representing the specified half-precision float value. |
+| static [Half](Half.md) | `https://developer.android.com/reference/kotlin/android/util/Half#valueOf(kotlin.Float)(f: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Returns a `Half` instance representing the specified float value. |
+| static [Half](Half.md) | `https://developer.android.com/reference/kotlin/android/util/Half#valueOf(kotlin.String)(s: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns a `Half` instance representing the specified string value. |
+| static [Half](Half.md) | `https://developer.android.com/reference/kotlin/android/util/Half#valueOf(kotlin.Short)(h: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)` Returns a `Half` instance representing the specified half-precision float value. |
 | --- | --- |
 
 ## Constants

@@ -8,11 +8,11 @@ abstract class VisualVoicemailService : Service
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](../android/content/Context.md) ||||
-| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) |||
-| | | ↳ | [android.app.Service](../android/app/Service.md) ||
+| ↳ | [android.content.Context](../android.content/Context.md) ||||
+| | ↳ | [android.content.ContextWrapper](../android.content/ContextWrapper.md) |||
+| | | ↳ | [android.app.Service](../android.app/Service.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.telephony.VisualVoicemailService](../android/telephony/VisualVoicemailService.md) |
+| | | | ↳ | [android.telephony.VisualVoicemailService](VisualVoicemailService.md) |
 
 This service is implemented by dialer apps that wishes to handle OMTP or similar visual voicemails. Telephony binds to this service when the cell service is first connected, a visual voicemail SMS has been received, or when a SIM has been removed. Telephony will only bind to the default dialer for such events (See `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager.html#getDefaultDialerPackage()`). The `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService.html#` precedes the VisualVoicemailService in the SMS filtering chain and may intercept the visual voicemail SMS before it reaches this service.
 
@@ -1063,7 +1063,7 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 
 | Public methods ||
 |---|---|
-| open [IBinder](../android/os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
+| open [IBinder](../android.os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailService#onCellServiceConnected(android.telephony.VisualVoicemailService.VisualVoicemailTask,%20android.telecom.PhoneAccountHandle)(task: https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailService.VisualVoicemailTask!, phoneAccountHandle: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle.html#!)` Called when the cellular service is connected on a `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle.html#` for the first time, or when the carrier config has changed. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailService#onSimRemoved(android.telephony.VisualVoicemailService.VisualVoicemailTask,%20android.telecom.PhoneAccountHandle)(task: https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailService.VisualVoicemailTask!, phoneAccountHandle: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle.html#!)` Called when a SIM is removed. |
 | --- | --- |
@@ -2799,7 +2799,7 @@ Return the communication channel to the service. May return null if clients can 
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
+| `intent` | [Intent](../android.content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
 
 | Return ||
 |---|---|
@@ -2822,7 +2822,7 @@ This method must be called from the main thread of your app.
 | Parameters ||
 |---|---|
 | `task` | [VisualVoicemailService.VisualVoicemailTask](../android/telephony/VisualVoicemailService.VisualVoicemailTask.md)!: The task representing this event. `https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailService.VisualVoicemailTask#finish()` must be called when the task is completed. |
-| `phoneAccountHandle` | [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md)!: The `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle.html#` triggering this event. |
+| `phoneAccountHandle` | [PhoneAccountHandle](../android.telecom/PhoneAccountHandle.md)!: The `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle.html#` triggering this event. |
 
 ### onSimRemoved
 
@@ -2841,7 +2841,7 @@ This method must be called from the main thread of your app.
 | Parameters ||
 |---|---|
 | `task` | [VisualVoicemailService.VisualVoicemailTask](../android/telephony/VisualVoicemailService.VisualVoicemailTask.md)!: The task representing this event. `https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailService.VisualVoicemailTask#finish()` must be called when the task is completed. |
-| `phoneAccountHandle` | [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md)!: The `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle.html#` triggering this event. |
+| `phoneAccountHandle` | [PhoneAccountHandle](../android.telecom/PhoneAccountHandle.md)!: The `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle.html#` triggering this event. |
 
 ### onSmsReceived
 
@@ -2860,7 +2860,7 @@ This method must be called from the main thread of your app.
 | Parameters ||
 |---|---|
 | `task` | [VisualVoicemailService.VisualVoicemailTask](../android/telephony/VisualVoicemailService.VisualVoicemailTask.md)!: The task representing this event. `https://developer.android.com/reference/kotlin/android/telephony/VisualVoicemailService.VisualVoicemailTask#finish()` must be called when the task is completed. |
-| `sms` | [VisualVoicemailSms](../android/telephony/VisualVoicemailSms.md)!: The content of the received SMS. |
+| `sms` | [VisualVoicemailSms](VisualVoicemailSms.md)!: The content of the received SMS. |
 
 ### onStopped
 

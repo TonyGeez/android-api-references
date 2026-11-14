@@ -8,7 +8,7 @@ open class SSLParameters
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.net.ssl.SSLParameters](../javax/net/ssl/SSLParameters.md) |
+| ↳ | [javax.net.ssl.SSLParameters](SSLParameters.md) |
 
 Encapsulates parameters for an SSL/TLS connection. The parameters are the list of ciphersuites to be accepted in an SSL/TLS handshake, the list of protocols to be allowed, the endpoint identification algorithm during SSL/TLS handshaking, the Server Name Indication (SNI), the algorithm constraints and whether SSL/TLS servers should request or require client authentication, etc.
 
@@ -26,7 +26,7 @@ SSLParameters can be applied to a connection via the methods `https://developer.
 
 | Public methods ||
 |---|---|
-| open [AlgorithmConstraints](../java/security/AlgorithmConstraints.md)! | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLParameters#getAlgorithmConstraints()()` Returns the cryptographic algorithm constraints. |
+| open [AlgorithmConstraints](../java.security/AlgorithmConstraints.md)! | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLParameters#getAlgorithmConstraints()()` Returns the cryptographic algorithm constraints. |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLParameters#getApplicationProtocols()()` Returns a prioritized array of application-layer protocol names that can be negotiated over the SSL/TLS protocols. |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLParameters#getCipherSuites()()` Returns a copy of the array of ciphersuites or null if none have been set. |
 | --- | --- |
@@ -35,8 +35,8 @@ SSLParameters can be applied to a connection via the methods `https://developer.
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLParameters#getNeedClientAuth()()` Returns whether client authentication should be required. |
 | --- | --- |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLParameters#getProtocols()()` Returns a copy of the array of protocols or null if none have been set. |
-| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [SNIMatcher](../javax/net/ssl/SNIMatcher.md)!\>! | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLParameters#getSNIMatchers()()` Returns a `https://developer.android.com/reference/kotlin/java/util/Collection.html#` containing all `https://developer.android.com/reference/kotlin/javax/net/ssl/SNIMatcher`s of the Server Name Indication (SNI) parameter, or null if none has been set. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SNIServerName](../javax/net/ssl/SNIServerName.md)!\>! | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLParameters#getServerNames()()` Returns a `https://developer.android.com/reference/kotlin/java/util/List.html#` containing all `https://developer.android.com/reference/kotlin/javax/net/ssl/SNIServerName`s of the Server Name Indication (SNI) parameter, or null if none has been set. |
+| [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [SNIMatcher](SNIMatcher.md)!\>! | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLParameters#getSNIMatchers()()` Returns a `https://developer.android.com/reference/kotlin/java/util/Collection.html#` containing all `https://developer.android.com/reference/kotlin/javax/net/ssl/SNIMatcher`s of the Server Name Indication (SNI) parameter, or null if none has been set. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SNIServerName](SNIServerName.md)!\>! | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLParameters#getServerNames()()` Returns a `https://developer.android.com/reference/kotlin/java/util/List.html#` containing all `https://developer.android.com/reference/kotlin/javax/net/ssl/SNIServerName`s of the Server Name Indication (SNI) parameter, or null if none has been set. |
 | --- | --- |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLParameters#getUseCipherSuitesOrder()()` Returns whether the local cipher suites preference should be honored. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/javax/net/ssl/SSLParameters#getWantClientAuth()()` Returns whether client authentication should be requested. |
@@ -347,7 +347,7 @@ If the `constraints` parameter is non-null, every cryptographic algorithm, key a
 
 | Parameters ||
 |---|---|
-| `constraints` | [AlgorithmConstraints](../java/security/AlgorithmConstraints.md)!: the algorithm constraints (or null) |
+| `constraints` | [AlgorithmConstraints](../java.security/AlgorithmConstraints.md)!: the algorithm constraints (or null) |
 
 ### setApplicationProtocols
 
@@ -433,7 +433,7 @@ The set of named groups that will be used over the SSL/TLS/DTLS connections is d
 
 | Exceptions ||
 |---|---|
-| `java.lang.IllegalArgumentException` | if any element in the `namedGroups` array is a duplicate, `null` or [blank](../java/lang/String.md)). |
+| `java.lang.IllegalArgumentException` | if any element in the `namedGroups` array is a duplicate, `null` or [blank](../java.lang/String.md)). |
 
 **See Also**
 
@@ -483,7 +483,7 @@ Note that the `matchers` collection is cloned to protect against subsequent modi
 
 | Parameters ||
 |---|---|
-| `matchers` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [SNIMatcher](../javax/net/ssl/SNIMatcher.md)!\>!: the collection of `https://developer.android.com/reference/kotlin/javax/net/ssl/SNIMatcher`s (or null) |
+| `matchers` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [SNIMatcher](SNIMatcher.md)!\>!: the collection of `https://developer.android.com/reference/kotlin/javax/net/ssl/SNIMatcher`s (or null) |
 
 | Exceptions ||
 |---|---|
@@ -512,7 +512,7 @@ Note that the `serverNames` list is cloned to protect against subsequent modific
 
 | Parameters ||
 |---|---|
-| `serverNames` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SNIServerName](../javax/net/ssl/SNIServerName.md)!\>!: the list of desired `https://developer.android.com/reference/kotlin/javax/net/ssl/SNIServerName`s (or null) |
+| `serverNames` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SNIServerName](SNIServerName.md)!\>!: the list of desired `https://developer.android.com/reference/kotlin/javax/net/ssl/SNIServerName`s (or null) |
 
 | Exceptions ||
 |---|---|

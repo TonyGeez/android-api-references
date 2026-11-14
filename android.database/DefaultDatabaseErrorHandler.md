@@ -4,7 +4,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 
 # DefaultDatabaseErrorHandler
 
-Kotlin| [Java](../android/database/DefaultDatabaseErrorHandler.md) 
+Kotlin| [Java](DefaultDatabaseErrorHandler.md) 
 | --- | --- |
 
 ```
@@ -13,28 +13,28 @@ class DefaultDatabaseErrorHandler : DatabaseErrorHandler
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.database.DefaultDatabaseErrorHandler](../android/database/DefaultDatabaseErrorHandler.md) |
+| ↳ | [android.database.DefaultDatabaseErrorHandler](DefaultDatabaseErrorHandler.md) |
 
 Default class used to define the action to take when database corruption is reported by sqlite.
 
-An application can specify an implementation of [DatabaseErrorHandler](../android/database/DatabaseErrorHandler.md) on the following:
+An application can specify an implementation of [DatabaseErrorHandler](DatabaseErrorHandler.md) on the following:
 
-- [SQLiteDatabase.openOrCreateDatabase(String,](../android/database/sqlite/SQLiteDatabase.md))
-- [SQLiteDatabase.openDatabase(String,](../android/database/sqlite/SQLiteDatabase.md))
+- [SQLiteDatabase.openOrCreateDatabase(String,](../android.database.sqlite/SQLiteDatabase.md))
+- [SQLiteDatabase.openDatabase(String,](../android.database.sqlite/SQLiteDatabase.md))
 
-The specified [DatabaseErrorHandler](../android/database/DatabaseErrorHandler.md) is used to handle database corruption errors, if they occur.
+The specified [DatabaseErrorHandler](DatabaseErrorHandler.md) is used to handle database corruption errors, if they occur.
 
-If null is specified for the DatabaseErrorHandler param in the above calls, this class is used as the default [DatabaseErrorHandler](../android/database/DatabaseErrorHandler.md).
+If null is specified for the DatabaseErrorHandler param in the above calls, this class is used as the default [DatabaseErrorHandler](DatabaseErrorHandler.md).
 
 ## Summary
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [DefaultDatabaseErrorHandler](../android/database/DefaultDatabaseErrorHandler.md))`()` <br /> |
+| [DefaultDatabaseErrorHandler](DefaultDatabaseErrorHandler.md))`()` <br /> |
 
 | Public methods ||
 |------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onCorruption](../android/database/DefaultDatabaseErrorHandler.md))`(`dbObj:` ` [SQLiteDatabase](../android/database/sqlite/SQLiteDatabase.md)!`)` defines the default method to be invoked when database corruption is detected. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onCorruption](DefaultDatabaseErrorHandler.md))`(`dbObj:` ` [SQLiteDatabase](../android.database.sqlite/SQLiteDatabase.md)!`)` defines the default method to be invoked when database corruption is detected. |
 
 ## Public constructors
 
@@ -58,4 +58,4 @@ defines the default method to be invoked when database corruption is detected.
 
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dbObj` | [SQLiteDatabase](../android/database/sqlite/SQLiteDatabase.md)!:the [SQLiteDatabase](../android/database/sqlite/SQLiteDatabase.md) object representing the database on which corruption is detected. |
+| `dbObj` | [SQLiteDatabase](../android.database.sqlite/SQLiteDatabase.md)!:the [SQLiteDatabase](../android.database.sqlite/SQLiteDatabase.md) object representing the database on which corruption is detected. |

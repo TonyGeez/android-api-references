@@ -9,7 +9,7 @@ open class Keyboard
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.inputmethodservice.Keyboard](../android/inputmethodservice/Keyboard.md) |
+| ↳ | [android.inputmethodservice.Keyboard](Keyboard.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 29.**
@@ -44,11 +44,11 @@ The layout file for a keyboard contains XML that looks like the following snippe
 
 | XML attributes ||
 |---|---|
-| [`android:horizontalGap`](../android/inputmethodservice/Keyboard.md) | Default horizontal gap between keys. |
-| [`android:keyHeight`](../android/inputmethodservice/Keyboard.md) | Default height of a key, in pixels or percentage of display width. |
-| [`android:keyWidth`](../android/inputmethodservice/Keyboard.md) | Default width of a key, in pixels or percentage of display width. |
+| [`android:horizontalGap`](Keyboard.md) | Default horizontal gap between keys. |
+| [`android:keyHeight`](Keyboard.md) | Default height of a key, in pixels or percentage of display width. |
+| [`android:keyWidth`](Keyboard.md) | Default width of a key, in pixels or percentage of display width. |
 | --- | --- |
-| [`android:verticalGap`](../android/inputmethodservice/Keyboard.md) | Default vertical gap between rows of keys. |
+| [`android:verticalGap`](Keyboard.md) | Default vertical gap between rows of keys. |
 
 | Constants ||
 |---|---|
@@ -270,7 +270,7 @@ Creates a keyboard from the given xml key layout file.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md)!: the application or service context |
+| `context` | [Context](../android.content/Context.md)!: the application or service context |
 | `xmlLayoutResId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the resource file that contains the keyboard layout and keys. |
 
 ### Keyboard
@@ -288,7 +288,7 @@ Creates a keyboard from the given xml key layout file. Weeds out rows that have 
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md)!: the application or service context |
+| `context` | [Context](../android.content/Context.md)!: the application or service context |
 | `xmlLayoutResId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the resource file that contains the keyboard layout and keys. |
 | `modeId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): keyboard mode identifier |
 | --- | --- |
@@ -310,7 +310,7 @@ Creates a keyboard from the given xml key layout file. Weeds out rows that have 
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md)!: the application or service context |
+| `context` | [Context](../android.content/Context.md)!: the application or service context |
 | `xmlLayoutResId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the resource file that contains the keyboard layout and keys. |
 | `modeId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): keyboard mode identifier |
 | --- | --- |
@@ -336,7 +336,7 @@ If the specified number of columns is -1, then the keyboard will fit as many key
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md)!: the application or service context |
+| `context` | [Context](../android.content/Context.md)!: the application or service context |
 | `layoutTemplateResId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the layout template file, containing no keys. |
 | `characters` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!: the list of characters to display on the keyboard. One key will be created for each character. |
 | --- | --- |

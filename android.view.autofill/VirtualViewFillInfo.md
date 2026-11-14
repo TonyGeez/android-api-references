@@ -4,7 +4,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # VirtualViewFillInfo
 
-Kotlin| [Java](../android/view/autofill/VirtualViewFillInfo.md) 
+Kotlin| [Java](VirtualViewFillInfo.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class VirtualViewFillInfo
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.autofill.VirtualViewFillInfo](../android/view/autofill/VirtualViewFillInfo.md) |
+| ↳ | [android.view.autofill.VirtualViewFillInfo](VirtualViewFillInfo.md) |
 
 Information for the virtual view to the autofill framework.
 
@@ -21,11 +21,11 @@ Information for the virtual view to the autofill framework.
 
 | Nested classes ||
 |---|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](../android/view/autofill/VirtualViewFillInfo.Builder.md) A builder for [VirtualViewFillInfo](../android/view/autofill/VirtualViewFillInfo.md) |
+| | [Builder](../android/view/autofill/VirtualViewFillInfo.Builder.md) A builder for [VirtualViewFillInfo](VirtualViewFillInfo.md) |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | [getAutofillHints](../android/view/autofill/VirtualViewFillInfo.md))`()` Autofill hints of the virtual view. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | [getAutofillHints](VirtualViewFillInfo.md))`()` Autofill hints of the virtual view. |
 
 ## Public methods
 
@@ -45,4 +45,4 @@ Autofill hints of the virtual view.
 
 **See Also**
 
-- [android.view.View#setAutofillHints(String...)](../android/view/View.md))
+- [android.view.View#setAutofillHints(String...)](../android.view/View.md))

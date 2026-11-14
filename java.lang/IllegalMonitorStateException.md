@@ -11,10 +11,10 @@ open class IllegalMonitorStateException : RuntimeException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
-| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) ||
+| | ↳ | [java.lang.Exception](Exception.md) |||
+| | | ↳ | [java.lang.RuntimeException](RuntimeException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.IllegalMonitorStateException](../java/lang/IllegalMonitorStateException.md) |
+| | | | ↳ | [java.lang.IllegalMonitorStateException](IllegalMonitorStateException.md) |
 
 Thrown to indicate that a thread has attempted to wait on an object's monitor or to notify other threads waiting on an object's monitor without owning the specified monitor.
 
@@ -22,8 +22,8 @@ Thrown to indicate that a thread has attempted to wait on an object's monitor or
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [IllegalMonitorStateException](../java/lang/IllegalMonitorStateException.md))`()` Constructs an`IllegalMonitorStateException`with no detail message. |
-| [IllegalMonitorStateException](../java/lang/IllegalMonitorStateException.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an`IllegalMonitorStateException`with the specified detail message. |
+| [IllegalMonitorStateException](IllegalMonitorStateException.md))`()` Constructs an`IllegalMonitorStateException`with no detail message. |
+| [IllegalMonitorStateException](IllegalMonitorStateException.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an`IllegalMonitorStateException`with the specified detail message. |
 
 ## Public constructors
 

@@ -8,11 +8,11 @@ abstract class TvInputService : Service
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](../android/content/Context.md) ||||
-| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) |||
-| | | ↳ | [android.app.Service](../android/app/Service.md) ||
+| ↳ | [android.content.Context](../android.content/Context.md) ||||
+| | ↳ | [android.content.ContextWrapper](../android.content/ContextWrapper.md) |||
+| | | ↳ | [android.app.Service](../android.app/Service.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.media.tv.TvInputService](../android/media/tv/TvInputService.md) |
+| | | | ↳ | [android.media.tv.TvInputService](TvInputService.md) |
 
 The TvInputService class represents a TV input or source such as HDMI or built-in tuner which provides pass-through video or broadcast TV programs.
 
@@ -1062,7 +1062,7 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 
 | Public methods ||
 |---|---|
-| [IBinder](../android/os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/media/tv/TvInputService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
+| [IBinder](../android.os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/media/tv/TvInputService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
 | open [TvInputService.RecordingSession](../android/media/tv/TvInputService.RecordingSession.md)? | `https://developer.android.com/reference/kotlin/android/media/tv/TvInputService#onCreateRecordingSession(kotlin.String)(inputId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns a concrete implementation of `https://developer.android.com/reference/kotlin/android/media/tv/TvInputService.RecordingSession`. |
 | open [TvInputService.RecordingSession](../android/media/tv/TvInputService.RecordingSession.md)? | `https://developer.android.com/reference/kotlin/android/media/tv/TvInputService#onCreateRecordingSession(kotlin.String,%20kotlin.String)(inputId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, sessionId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns a concrete implementation of `https://developer.android.com/reference/kotlin/android/media/tv/TvInputService.RecordingSession`. |
 | --- | --- |
@@ -2872,7 +2872,7 @@ Return the communication channel to the service. May return null if clients can 
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
+| `intent` | [Intent](../android.content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
 
 | Return ||
 |---|---|
@@ -2978,7 +2978,7 @@ For any apps that needs sessionId to request tuner resources from TunerResourceM
 |---|---|
 | `inputId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The ID of the TV input associated with the session. This value cannot be `null`. |
 | `sessionId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): the unique sessionId created by TIF when session is created. This value cannot be `null`. |
-| `tvAppAttributionSource` | [AttributionSource](../android/content/AttributionSource.md): The Attribution Source of the TV App. This value cannot be `null`. |
+| `tvAppAttributionSource` | [AttributionSource](../android.content/AttributionSource.md): The Attribution Source of the TV App. This value cannot be `null`. |
 | --- | --- |
 
 | Return ||

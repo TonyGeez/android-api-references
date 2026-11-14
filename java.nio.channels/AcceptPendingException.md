@@ -11,11 +11,11 @@ open class AcceptPendingException : IllegalStateException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
-| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) |||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) ||||
+| | | ↳ | [java.lang.RuntimeException](../java.lang/RuntimeException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.IllegalStateException](../java/lang/IllegalStateException.md) ||
-| | | | | ↳ | [java.nio.channels.AcceptPendingException](../java/nio/channels/AcceptPendingException.md) |
+| | | | ↳ | [java.lang.IllegalStateException](../java.lang/IllegalStateException.md) ||
+| | | | | ↳ | [java.nio.channels.AcceptPendingException](AcceptPendingException.md) |
 
 Unchecked exception thrown when an attempt is made to initiate an accept operation on a channel and a previous accept operation has not completed.
 
@@ -23,7 +23,7 @@ Unchecked exception thrown when an attempt is made to initiate an accept operati
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [AcceptPendingException](../java/nio/channels/AcceptPendingException.md))`()` Constructs an instance of this class. |
+| [AcceptPendingException](AcceptPendingException.md))`()` Constructs an instance of this class. |
 
 ## Public constructors
 

@@ -4,7 +4,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 
 # MediaDataSource
 
-Kotlin| [Java](../android/media/MediaDataSource.md) 
+Kotlin| [Java](MediaDataSource.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ abstract class MediaDataSource : Closeable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.MediaDataSource](../android/media/MediaDataSource.md) |
+| ↳ | [android.media.MediaDataSource](MediaDataSource.md) |
 
 For supplying media data to the framework. Implement this if your app has special requirements for the way media data is obtained.
 
@@ -23,16 +23,16 @@ Methods of this interface may be called on multiple different threads. There wil
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------|---|
-| [MediaDataSource](../android/media/MediaDataSource.md))`()` <br /> |
+| [MediaDataSource](MediaDataSource.md))`()` <br /> |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getSize](../android/media/MediaDataSource.md))`()` Called to get the size of the data source. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [readAt](../android/media/MediaDataSource.md))`(`position:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `buffer:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called to request data from the given position. |
+| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getSize](MediaDataSource.md))`()` Called to get the size of the data source. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [readAt](MediaDataSource.md))`(`position:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `buffer:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called to request data from the given position. |
 
 | Inherited functions ||
 |---|---|
-| From class [Closeable](../java/io/Closeable.md) |------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../java/io/Closeable.md))`()` <br /> Closes this stream and releases any system resources associated with it. If the stream is already closed then invoking this method has no effect. As noted in [AutoCloseable.close()](../java/lang/AutoCloseable.md)), cases where the close may fail require careful attention. It is strongly advised to relinquish the underlying resources and to internally*mark* the`Closeable`as closed, prior to throwing the`IOException`. <br /> | ||
+| From class [Closeable](../java.io/Closeable.md) |------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../java.io/Closeable.md))`()` <br /> Closes this stream and releases any system resources associated with it. If the stream is already closed then invoking this method has no effect. As noted in [AutoCloseable.close()](../java.lang/AutoCloseable.md)), cases where the close may fail require careful attention. It is strongly advised to relinquish the underlying resources and to internally*mark* the`Closeable`as closed, prior to throwing the`IOException`. <br /> | ||
 
 ## Public constructors
 

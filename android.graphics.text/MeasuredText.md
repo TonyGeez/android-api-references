@@ -4,7 +4,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 
 # MeasuredText
 
-Kotlin| [Java](../android/graphics/text/MeasuredText.md) 
+Kotlin| [Java](MeasuredText.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class MeasuredText
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.graphics.text.MeasuredText](../android/graphics/text/MeasuredText.md) |
+| ↳ | [android.graphics.text.MeasuredText](MeasuredText.md) |
 
 Result of text shaping of the single paragraph string.
 
@@ -38,15 +38,15 @@ Result of text shaping of the single paragraph string.
 
 | Nested classes ||
 |---|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](../android/graphics/text/MeasuredText.Builder.md) Helper class for creating a [MeasuredText](../android/graphics/text/MeasuredText.md). |
+| | [Builder](../android/graphics/text/MeasuredText.Builder.md) Helper class for creating a [MeasuredText](MeasuredText.md). |
 
 | Public methods ||
 |------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getBounds](../android/graphics/text/MeasuredText.md))`(`start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `rect:` ` [Rect](../android/graphics/Rect.md)`)` Retrieves the boundary box of the given range |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getCharWidthAt](../android/graphics/text/MeasuredText.md))`(`offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the width of the character at the given offset. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getFontMetricsInt](../android/graphics/text/MeasuredText.md))`(`start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `outMetrics:` ` [Paint.FontMetricsInt](../android/graphics/Paint.FontMetricsInt.md)`)` Retrieves the font metrics of the given range |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getBounds](MeasuredText.md))`(`start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `rect:` ` [Rect](../android.graphics/Rect.md)`)` Retrieves the boundary box of the given range |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getCharWidthAt](MeasuredText.md))`(`offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the width of the character at the given offset. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getFontMetricsInt](MeasuredText.md))`(`start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `outMetrics:` ` [Paint.FontMetricsInt](../android/graphics/Paint.FontMetricsInt.md)`)` Retrieves the font metrics of the given range |
 | --- | --- |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getWidth](../android/graphics/text/MeasuredText.md))`(`start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the width of a given range. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getWidth](MeasuredText.md))`(`start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the width of a given range. |
 
 ## Public methods
 
@@ -68,7 +68,7 @@ Retrieves the boundary box of the given range
 |---------|----------------------------------------------------------------------------------------------------------------------------------------|
 | `start` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):an inclusive start index of the range Value is 0 or greater |
 | `end` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):an exclusive end index of the range Value is 0 or greater |
-| `rect` | [Rect](../android/graphics/Rect.md):an output parameter This value cannot be`null`. |
+| `rect` | [Rect](../android.graphics/Rect.md):an output parameter This value cannot be`null`. |
 | --- | --- |
 
 ### getCharWidthAt

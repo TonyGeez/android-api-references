@@ -10,9 +10,9 @@ open class DecimalFormat : NumberFormat
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [java.text.Format](../java/text/Format.md) |||
-| | ↳ | [java.text.NumberFormat](../java/text/NumberFormat.md) ||
-| | | ↳ | [java.text.DecimalFormat](../java/text/DecimalFormat.md) |
+| ↳ | [java.text.Format](Format.md) |||
+| | ↳ | [java.text.NumberFormat](NumberFormat.md) ||
+| | | ↳ | [java.text.DecimalFormat](DecimalFormat.md) |
 | --- | --- | --- | --- |
 
 is a concrete subclass of`NumberFormat`that formats decimal numbers. It has a variety of features designed to make it possible to parse and format numbers in any locale, including support for Western, Arabic, and Indic digits. It also supports different kinds of numbers, including integers (123), fixed-point numbers (123.4), scientific notation (1.23E4), percentages (12%), and currency amounts ($123). All of these can be localized.
@@ -84,7 +84,7 @@ Numbers in scientific notation are expressed as the product of a mantissa and a 
 
 ### Rounding
 
-`DecimalFormat`provides rounding modes defined in [java.math.RoundingMode](../java/math/RoundingMode.md) for formatting. By default, it uses [RoundingMode.HALF_EVEN](../java/math/RoundingMode.md).
+`DecimalFormat`provides rounding modes defined in [java.math.RoundingMode](../java.math/RoundingMode.md) for formatting. By default, it uses [RoundingMode.HALF_EVEN](../java.math/RoundingMode.md).
 
 ### Digits
 
@@ -145,82 +145,82 @@ Decimal formats are generally not synchronized. It is recommended to create sepa
 
 | Inherited constants ||
 |---|---|
-| From class [NumberFormat](../java/text/NumberFormat.md) |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FRACTION_FIELD](../java/text/NumberFormat.md) <br /> Field constant used to construct a FieldPosition object. Signifies that the position of the fraction part of a formatted number should be returned. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INTEGER_FIELD](../java/text/NumberFormat.md) <br /> Field constant used to construct a FieldPosition object. Signifies that the position of the integer part of a formatted number should be returned. <br /> | ||
+| From class [NumberFormat](NumberFormat.md) |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FRACTION_FIELD](NumberFormat.md) <br /> Field constant used to construct a FieldPosition object. Signifies that the position of the fraction part of a formatted number should be returned. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INTEGER_FIELD](NumberFormat.md) <br /> Field constant used to construct a FieldPosition object. Signifies that the position of the integer part of a formatted number should be returned. <br /> | ||
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [DecimalFormat](../java/text/DecimalFormat.md))`()` Creates a DecimalFormat using the default pattern and symbols for the default [FORMAT](../java/util/Locale.Category.md) locale. |
-| [DecimalFormat](../java/text/DecimalFormat.md))`(`pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a DecimalFormat using the given pattern and the symbols for the default [FORMAT](../java/util/Locale.Category.md) locale. |
-| [DecimalFormat](../java/text/DecimalFormat.md))`(`pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `symbols:` ` [DecimalFormatSymbols](../java/text/DecimalFormatSymbols.md)!`)` Creates a DecimalFormat using the given pattern and symbols. |
+| [DecimalFormat](DecimalFormat.md))`()` Creates a DecimalFormat using the default pattern and symbols for the default [FORMAT](../java/util/Locale.Category.md) locale. |
+| [DecimalFormat](DecimalFormat.md))`(`pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a DecimalFormat using the given pattern and the symbols for the default [FORMAT](../java/util/Locale.Category.md) locale. |
+| [DecimalFormat](DecimalFormat.md))`(`pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `symbols:` ` [DecimalFormatSymbols](DecimalFormatSymbols.md)!`)` Creates a DecimalFormat using the given pattern and symbols. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [applyLocalizedPattern](../java/text/DecimalFormat.md))`(`pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Apply the given pattern to this Format object. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [applyPattern](../java/text/DecimalFormat.md))`(`pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Apply the given pattern to this Format object. |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](../java/text/DecimalFormat.md))`()` Standard override; no change in semantics. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [applyLocalizedPattern](DecimalFormat.md))`(`pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Apply the given pattern to this Format object. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [applyPattern](DecimalFormat.md))`(`pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Apply the given pattern to this Format object. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](DecimalFormat.md))`()` Standard override; no change in semantics. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/text/DecimalFormat.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Overrides equals |
-| open [StringBuffer](../java/lang/StringBuffer.md) | [format](../java/text/DecimalFormat.md))`(`number:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `result:` ` [StringBuffer](../java/lang/StringBuffer.md)`, `fieldPosition:` ` [FieldPosition](../java/text/FieldPosition.md)`)` Formats a double to produce a string. |
-| [StringBuffer](../java/lang/StringBuffer.md) | [format](../java/text/DecimalFormat.md))`(`number:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`, `toAppendTo:` ` [StringBuffer](../java/lang/StringBuffer.md)`, `pos:` ` [FieldPosition](../java/text/FieldPosition.md)`)` Formats a number and appends the resulting text to the given string buffer. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](DecimalFormat.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Overrides equals |
+| open [StringBuffer](../java.lang/StringBuffer.md) | [format](DecimalFormat.md))`(`number:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `result:` ` [StringBuffer](../java.lang/StringBuffer.md)`, `fieldPosition:` ` [FieldPosition](FieldPosition.md)`)` Formats a double to produce a string. |
+| [StringBuffer](../java.lang/StringBuffer.md) | [format](DecimalFormat.md))`(`number:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)`, `toAppendTo:` ` [StringBuffer](../java.lang/StringBuffer.md)`, `pos:` ` [FieldPosition](FieldPosition.md)`)` Formats a number and appends the resulting text to the given string buffer. |
 | --- | --- |
-| open [StringBuffer](../java/lang/StringBuffer.md) | [format](../java/text/DecimalFormat.md))`(`number:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `result:` ` [StringBuffer](../java/lang/StringBuffer.md)`, `fieldPosition:` ` [FieldPosition](../java/text/FieldPosition.md)`)` Format a long to produce a string. |
-| open [AttributedCharacterIterator](../java/text/AttributedCharacterIterator.md)! | [formatToCharacterIterator](../java/text/DecimalFormat.md))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Formats an Object producing an`AttributedCharacterIterator`. |
-| open [Currency](../java/util/Currency.md)? | [getCurrency](../java/text/DecimalFormat.md))`()` Gets the currency used by this decimal format when formatting currency values. |
+| open [StringBuffer](../java.lang/StringBuffer.md) | [format](DecimalFormat.md))`(`number:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `result:` ` [StringBuffer](../java.lang/StringBuffer.md)`, `fieldPosition:` ` [FieldPosition](FieldPosition.md)`)` Format a long to produce a string. |
+| open [AttributedCharacterIterator](AttributedCharacterIterator.md)! | [formatToCharacterIterator](DecimalFormat.md))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Formats an Object producing an`AttributedCharacterIterator`. |
+| open [Currency](../java.util/Currency.md)? | [getCurrency](DecimalFormat.md))`()` Gets the currency used by this decimal format when formatting currency values. |
 | --- | --- |
-| open [DecimalFormatSymbols](../java/text/DecimalFormatSymbols.md)! | [getDecimalFormatSymbols](../java/text/DecimalFormat.md))`()` Returns a copy of the decimal format symbols, which is generally not changed by the programmer or user. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getGroupingSize](../java/text/DecimalFormat.md))`()` Return the grouping size. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaximumFractionDigits](../java/text/DecimalFormat.md))`()` Gets the maximum number of digits allowed in the fraction portion of a number. |
+| open [DecimalFormatSymbols](DecimalFormatSymbols.md)! | [getDecimalFormatSymbols](DecimalFormat.md))`()` Returns a copy of the decimal format symbols, which is generally not changed by the programmer or user. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getGroupingSize](DecimalFormat.md))`()` Return the grouping size. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaximumFractionDigits](DecimalFormat.md))`()` Gets the maximum number of digits allowed in the fraction portion of a number. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaximumIntegerDigits](../java/text/DecimalFormat.md))`()` Gets the maximum number of digits allowed in the integer portion of a number. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMinimumFractionDigits](../java/text/DecimalFormat.md))`()` Gets the minimum number of digits allowed in the fraction portion of a number. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMinimumIntegerDigits](../java/text/DecimalFormat.md))`()` Gets the minimum number of digits allowed in the integer portion of a number. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaximumIntegerDigits](DecimalFormat.md))`()` Gets the maximum number of digits allowed in the integer portion of a number. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMinimumFractionDigits](DecimalFormat.md))`()` Gets the minimum number of digits allowed in the fraction portion of a number. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMinimumIntegerDigits](DecimalFormat.md))`()` Gets the minimum number of digits allowed in the integer portion of a number. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMultiplier](../java/text/DecimalFormat.md))`()` Gets the multiplier for use in percent, per mille, and similar formats. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getNegativePrefix](../java/text/DecimalFormat.md))`()` Get the negative prefix. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getNegativeSuffix](../java/text/DecimalFormat.md))`()` Get the negative suffix. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMultiplier](DecimalFormat.md))`()` Gets the multiplier for use in percent, per mille, and similar formats. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getNegativePrefix](DecimalFormat.md))`()` Get the negative prefix. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getNegativeSuffix](DecimalFormat.md))`()` Get the negative suffix. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPositivePrefix](../java/text/DecimalFormat.md))`()` Get the positive prefix. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPositiveSuffix](../java/text/DecimalFormat.md))`()` Get the positive suffix. |
-| open [RoundingMode](../java/math/RoundingMode.md) | [getRoundingMode](../java/text/DecimalFormat.md))`()` Gets the [java.math.RoundingMode](../java/math/RoundingMode.md) used in this DecimalFormat. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPositivePrefix](DecimalFormat.md))`()` Get the positive prefix. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPositiveSuffix](DecimalFormat.md))`()` Get the positive suffix. |
+| open [RoundingMode](../java.math/RoundingMode.md) | [getRoundingMode](DecimalFormat.md))`()` Gets the [java.math.RoundingMode](../java.math/RoundingMode.md) used in this DecimalFormat. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/text/DecimalFormat.md))`()` Overrides hashCode |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDecimalSeparatorAlwaysShown](../java/text/DecimalFormat.md))`()` Allows you to get the behavior of the decimal separator with integers. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isGroupingUsed](../java/text/DecimalFormat.md))`()` Returns true if grouping is used in this format. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](DecimalFormat.md))`()` Overrides hashCode |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDecimalSeparatorAlwaysShown](DecimalFormat.md))`()` Allows you to get the behavior of the decimal separator with integers. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isGroupingUsed](DecimalFormat.md))`()` Returns true if grouping is used in this format. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isParseBigDecimal](../java/text/DecimalFormat.md))`()` Returns whether the [parse(java.lang.String,java.text.ParsePosition)](../java/text/DecimalFormat.md))method returns`BigDecimal`. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isParseIntegerOnly](../java/text/DecimalFormat.md))`()` Returns true if this format will parse numbers as integers only. |
-| open [Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html)? | [parse](../java/text/DecimalFormat.md))`(`text:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `pos:` ` [ParsePosition](../java/text/ParsePosition.md)`)` Parses text from a string to produce a`Number`. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isParseBigDecimal](DecimalFormat.md))`()` Returns whether the [parse(java.lang.String,java.text.ParsePosition)](DecimalFormat.md))method returns`BigDecimal`. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isParseIntegerOnly](DecimalFormat.md))`()` Returns true if this format will parse numbers as integers only. |
+| open [Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html)? | [parse](DecimalFormat.md))`(`text:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `pos:` ` [ParsePosition](ParsePosition.md)`)` Parses text from a string to produce a`Number`. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCurrency](../java/text/DecimalFormat.md))`(`currency:` ` [Currency](../java/util/Currency.md)`)` Sets the currency used by this number format when formatting currency values. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDecimalFormatSymbols](../java/text/DecimalFormat.md))`(`newSymbols:` ` [DecimalFormatSymbols](../java/text/DecimalFormatSymbols.md)!`)` Sets the decimal format symbols, which is generally not changed by the programmer or user. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDecimalSeparatorAlwaysShown](../java/text/DecimalFormat.md))`(`newValue:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Allows you to set the behavior of the decimal separator with integers. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCurrency](DecimalFormat.md))`(`currency:` ` [Currency](../java.util/Currency.md)`)` Sets the currency used by this number format when formatting currency values. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDecimalFormatSymbols](DecimalFormat.md))`(`newSymbols:` ` [DecimalFormatSymbols](DecimalFormatSymbols.md)!`)` Sets the decimal format symbols, which is generally not changed by the programmer or user. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDecimalSeparatorAlwaysShown](DecimalFormat.md))`(`newValue:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Allows you to set the behavior of the decimal separator with integers. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setGroupingSize](../java/text/DecimalFormat.md))`(`newValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the grouping size. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setGroupingUsed](../java/text/DecimalFormat.md))`(`newValue:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Set whether or not grouping will be used in this format. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMaximumFractionDigits](../java/text/DecimalFormat.md))`(`newValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the maximum number of digits allowed in the fraction portion of a number. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setGroupingSize](DecimalFormat.md))`(`newValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the grouping size. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setGroupingUsed](DecimalFormat.md))`(`newValue:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Set whether or not grouping will be used in this format. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMaximumFractionDigits](DecimalFormat.md))`(`newValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the maximum number of digits allowed in the fraction portion of a number. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMaximumIntegerDigits](../java/text/DecimalFormat.md))`(`newValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the maximum number of digits allowed in the integer portion of a number. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMinimumFractionDigits](../java/text/DecimalFormat.md))`(`newValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the minimum number of digits allowed in the fraction portion of a number. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMinimumIntegerDigits](../java/text/DecimalFormat.md))`(`newValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the minimum number of digits allowed in the integer portion of a number. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMaximumIntegerDigits](DecimalFormat.md))`(`newValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the maximum number of digits allowed in the integer portion of a number. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMinimumFractionDigits](DecimalFormat.md))`(`newValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the minimum number of digits allowed in the fraction portion of a number. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMinimumIntegerDigits](DecimalFormat.md))`(`newValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the minimum number of digits allowed in the integer portion of a number. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMultiplier](../java/text/DecimalFormat.md))`(`newValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the multiplier for use in percent, per mille, and similar formats. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setNegativePrefix](../java/text/DecimalFormat.md))`(`newValue:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the negative prefix. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setNegativeSuffix](../java/text/DecimalFormat.md))`(`newValue:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the negative suffix. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMultiplier](DecimalFormat.md))`(`newValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the multiplier for use in percent, per mille, and similar formats. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setNegativePrefix](DecimalFormat.md))`(`newValue:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the negative prefix. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setNegativeSuffix](DecimalFormat.md))`(`newValue:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the negative suffix. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setParseBigDecimal](../java/text/DecimalFormat.md))`(`newValue:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets whether the [parse(java.lang.String,java.text.ParsePosition)](../java/text/DecimalFormat.md))method returns`BigDecimal`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setParseIntegerOnly](../java/text/DecimalFormat.md))`(`value:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets whether or not numbers should be parsed as integers only. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPositivePrefix](../java/text/DecimalFormat.md))`(`newValue:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the positive prefix. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setParseBigDecimal](DecimalFormat.md))`(`newValue:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets whether the [parse(java.lang.String,java.text.ParsePosition)](DecimalFormat.md))method returns`BigDecimal`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setParseIntegerOnly](DecimalFormat.md))`(`value:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets whether or not numbers should be parsed as integers only. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPositivePrefix](DecimalFormat.md))`(`newValue:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the positive prefix. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPositiveSuffix](../java/text/DecimalFormat.md))`(`newValue:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the positive suffix. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRoundingMode](../java/text/DecimalFormat.md))`(`roundingMode:` ` [RoundingMode](../java/math/RoundingMode.md)?`)` Sets the [java.math.RoundingMode](../java/math/RoundingMode.md) used in this DecimalFormat. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toLocalizedPattern](../java/text/DecimalFormat.md))`()` Synthesizes a localized pattern string that represents the current state of this Format object. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPositiveSuffix](DecimalFormat.md))`(`newValue:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the positive suffix. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRoundingMode](DecimalFormat.md))`(`roundingMode:` ` [RoundingMode](../java.math/RoundingMode.md)?`)` Sets the [java.math.RoundingMode](../java.math/RoundingMode.md) used in this DecimalFormat. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toLocalizedPattern](DecimalFormat.md))`()` Synthesizes a localized pattern string that represents the current state of this Format object. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toPattern](../java/text/DecimalFormat.md))`()` Synthesizes a pattern string that represents the current state of this Format object. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toPattern](DecimalFormat.md))`()` Synthesizes a pattern string that represents the current state of this Format object. |
 
 | Inherited functions ||
 |---|---|
-| From class [NumberFormat](../java/text/NumberFormat.md) |------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [format](../java/text/NumberFormat.md))`(`number:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` <br /> Specialization of format. <br /> | | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [format](../java/text/NumberFormat.md))`(`number:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` <br /> Specialization of format. <br /> | | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Locale](../java/util/Locale.md)!> | [getAvailableLocales](../java/text/NumberFormat.md))`()` <br /> Returns a scientific format for the current default locale. /\*public\* static final NumberFormat getScientificInstance() { return getInstance(Locale.getDefault(Locale.Category.FORMAT), null, SCIENTIFICSTYLE); } /\*\* Returns a scientific format for the specified locale. <br /> | | [NumberFormat](../java/text/NumberFormat.md) | [getCurrencyInstance](../java/text/NumberFormat.md))`()` <br /> Returns a currency format for the current default [FORMAT](../java/util/Locale.Category.md) locale. This is equivalent to calling [getCurrencyInstance(Locale.getDefault(Locale.Category.FORMAT))](../java/text/NumberFormat.md)). <br /> | | [NumberFormat](../java/text/NumberFormat.md) | [getCurrencyInstance](../java/text/NumberFormat.md))`(`inLocale:` ` [Locale](../java/util/Locale.md)`)` <br /> Returns a currency format for the specified locale. If the specified locale contains the "`cf`" ([currency format style](https://www.unicode.org/reports/tr35/tr35.html#UnicodeCurrencyFormatIdentifier)) [Unicode extension](../java/util/Locale.md), the returned currency format uses the style if it is available. Otherwise, the style uses the default "`standard`" currency format. For example, if the style designates "`account`", negative currency amounts use a pair of parentheses in some locales. <br /> | | [NumberFormat](../java/text/NumberFormat.md) | [getInstance](../java/text/NumberFormat.md))`()` <br /> Returns a general-purpose number format for the current default [FORMAT](../java/util/Locale.Category.md) locale. This is the same as calling [getNumberInstance()](../java/text/NumberFormat.md)). <br /> | | [NumberFormat](../java/text/NumberFormat.md) | [getInstance](../java/text/NumberFormat.md))`(`inLocale:` ` [Locale](../java/util/Locale.md)`)` <br /> Returns a general-purpose number format for the specified locale. This is the same as calling [getNumberInstance(inLocale)](../java/text/NumberFormat.md)). <br /> | | [NumberFormat](../java/text/NumberFormat.md) | [getIntegerInstance](../java/text/NumberFormat.md))`()` <br /> Returns an integer number format for the current default [FORMAT](../java/util/Locale.Category.md) locale. The returned number format is configured to round floating point numbers to the nearest integer using half-even rounding (see [RoundingMode.HALF_EVEN](../java/math/RoundingMode.md)) for formatting, and to parse only the integer part of an input string (see [isParseIntegerOnly](../java/text/NumberFormat.md))). This is equivalent to calling [getIntegerInstance(Locale.getDefault(Locale.Category.FORMAT))](../java/text/NumberFormat.md)). <br /> | | [NumberFormat](../java/text/NumberFormat.md) | [getIntegerInstance](../java/text/NumberFormat.md))`(`inLocale:` ` [Locale](../java/util/Locale.md)`)` <br /> Returns an integer number format for the specified locale. The returned number format is configured to round floating point numbers to the nearest integer using half-even rounding (see [RoundingMode.HALF_EVEN](../java/math/RoundingMode.md)) for formatting, and to parse only the integer part of an input string (see [isParseIntegerOnly](../java/text/NumberFormat.md))). <br /> | | [NumberFormat](../java/text/NumberFormat.md) | [getNumberInstance](../java/text/NumberFormat.md))`()` <br /> Returns a general-purpose number format for the current default [FORMAT](../java/util/Locale.Category.md) locale. This is equivalent to calling [getNumberInstance(Locale.getDefault(Locale.Category.FORMAT))](../java/text/NumberFormat.md)). <br /> | | [NumberFormat](../java/text/NumberFormat.md) | [getNumberInstance](../java/text/NumberFormat.md))`(`inLocale:` ` [Locale](../java/util/Locale.md)`)` <br /> Returns a general-purpose number format for the specified locale. <br /> | | [NumberFormat](../java/text/NumberFormat.md) | [getPercentInstance](../java/text/NumberFormat.md))`()` <br /> Returns a percentage format for the current default [FORMAT](../java/util/Locale.Category.md) locale. This is equivalent to calling [getPercentInstance(Locale.getDefault(Locale.Category.FORMAT))](../java/text/NumberFormat.md)). <br /> | | [NumberFormat](../java/text/NumberFormat.md) | [getPercentInstance](../java/text/NumberFormat.md))`(`inLocale:` ` [Locale](../java/util/Locale.md)`)` <br /> Returns a percentage format for the specified locale. <br /> | | [Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html)? | [parse](../java/text/NumberFormat.md))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` <br /> Parses text from the beginning of the given string to produce a number. The method may not use the entire text of the given string. See the [parse(java.lang.String,java.text.ParsePosition)](../java/text/NumberFormat.md))method for more information on number parsing. **WARNING:** Don't use this method to deserialize a number. The underlying localized number format and parsing behaviors can change across Android versions as common usage in the locale changes. Consider using the parse methods in the boxed types, e.g. [Long.parseLong(String)](../java/lang/Long.md)), or [java.math.BigDecimal](../java/math/BigDecimal.md) for deserializing a locale-independent decimal number. <br /> | | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? | [parseObject](../java/text/NumberFormat.md))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `pos:` ` [ParsePosition](../java/text/ParsePosition.md)`)` <br /> Parses text from a string to produce a`Number`. The method attempts to parse text starting at the index given by`pos`. If parsing succeeds, then the index of`pos`is updated to the index after the last character used (parsing does not necessarily use all characters up to the end of the string), and the parsed number is returned. The updated`pos`can be used to indicate the starting point for the next call to this method. If an error occurs, then the index of`pos`is not changed, the error index of`pos`is set to the index of the character where the error occurred, and null is returned. See the [parse(java.lang.String,java.text.ParsePosition)](../java/text/NumberFormat.md))method for more information on number parsing. <br /> | ||
-| From class [Format](../java/text/Format.md) |----------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](../java/text/Format.md))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` <br /> Formats an object to produce a string. This is equivalent to [format](../java/text/Format.md))`(obj, new StringBuffer(), new FieldPosition(0)).toString();` <br /> | | [AttributedCharacterIterator](../java/text/AttributedCharacterIterator.md)! | [formatToCharacterIterator](../java/text/Format.md))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` <br /> Formats an Object producing an`AttributedCharacterIterator`. You can use the returned`AttributedCharacterIterator`to build the resulting String, as well as to determine information about the resulting String. Each attribute key of the AttributedCharacterIterator will be of type`Field`. It is up to each`Format`implementation to define what the legal values are for each attribute in the`AttributedCharacterIterator`, but typically the attribute key is also used as the attribute value. The default implementation creates an`AttributedCharacterIterator`with no attributes. Subclasses that support fields should override this and create an`AttributedCharacterIterator`with meaningful attributes. <br /> | | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [parseObject](../java/text/Format.md))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> Parses text from the beginning of the given string to produce an object. The method may not use the entire text of the given string. <br /> | ||
+| From class [NumberFormat](NumberFormat.md) |------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [format](NumberFormat.md))`(`number:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` <br /> Specialization of format. <br /> | | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [format](NumberFormat.md))`(`number:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` <br /> Specialization of format. <br /> | | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Locale](../java.util/Locale.md)!> | [getAvailableLocales](NumberFormat.md))`()` <br /> Returns a scientific format for the current default locale. /\*public\* static final NumberFormat getScientificInstance() { return getInstance(Locale.getDefault(Locale.Category.FORMAT), null, SCIENTIFICSTYLE); } /\*\* Returns a scientific format for the specified locale. <br /> | | [NumberFormat](NumberFormat.md) | [getCurrencyInstance](NumberFormat.md))`()` <br /> Returns a currency format for the current default [FORMAT](../java/util/Locale.Category.md) locale. This is equivalent to calling [getCurrencyInstance(Locale.getDefault(Locale.Category.FORMAT))](NumberFormat.md)). <br /> | | [NumberFormat](NumberFormat.md) | [getCurrencyInstance](NumberFormat.md))`(`inLocale:` ` [Locale](../java.util/Locale.md)`)` <br /> Returns a currency format for the specified locale. If the specified locale contains the "`cf`" ([currency format style](https://www.unicode.org/reports/tr35/tr35.html#UnicodeCurrencyFormatIdentifier)) [Unicode extension](../java.util/Locale.md), the returned currency format uses the style if it is available. Otherwise, the style uses the default "`standard`" currency format. For example, if the style designates "`account`", negative currency amounts use a pair of parentheses in some locales. <br /> | | [NumberFormat](NumberFormat.md) | [getInstance](NumberFormat.md))`()` <br /> Returns a general-purpose number format for the current default [FORMAT](../java/util/Locale.Category.md) locale. This is the same as calling [getNumberInstance()](NumberFormat.md)). <br /> | | [NumberFormat](NumberFormat.md) | [getInstance](NumberFormat.md))`(`inLocale:` ` [Locale](../java.util/Locale.md)`)` <br /> Returns a general-purpose number format for the specified locale. This is the same as calling [getNumberInstance(inLocale)](NumberFormat.md)). <br /> | | [NumberFormat](NumberFormat.md) | [getIntegerInstance](NumberFormat.md))`()` <br /> Returns an integer number format for the current default [FORMAT](../java/util/Locale.Category.md) locale. The returned number format is configured to round floating point numbers to the nearest integer using half-even rounding (see [RoundingMode.HALF_EVEN](../java.math/RoundingMode.md)) for formatting, and to parse only the integer part of an input string (see [isParseIntegerOnly](NumberFormat.md))). This is equivalent to calling [getIntegerInstance(Locale.getDefault(Locale.Category.FORMAT))](NumberFormat.md)). <br /> | | [NumberFormat](NumberFormat.md) | [getIntegerInstance](NumberFormat.md))`(`inLocale:` ` [Locale](../java.util/Locale.md)`)` <br /> Returns an integer number format for the specified locale. The returned number format is configured to round floating point numbers to the nearest integer using half-even rounding (see [RoundingMode.HALF_EVEN](../java.math/RoundingMode.md)) for formatting, and to parse only the integer part of an input string (see [isParseIntegerOnly](NumberFormat.md))). <br /> | | [NumberFormat](NumberFormat.md) | [getNumberInstance](NumberFormat.md))`()` <br /> Returns a general-purpose number format for the current default [FORMAT](../java/util/Locale.Category.md) locale. This is equivalent to calling [getNumberInstance(Locale.getDefault(Locale.Category.FORMAT))](NumberFormat.md)). <br /> | | [NumberFormat](NumberFormat.md) | [getNumberInstance](NumberFormat.md))`(`inLocale:` ` [Locale](../java.util/Locale.md)`)` <br /> Returns a general-purpose number format for the specified locale. <br /> | | [NumberFormat](NumberFormat.md) | [getPercentInstance](NumberFormat.md))`()` <br /> Returns a percentage format for the current default [FORMAT](../java/util/Locale.Category.md) locale. This is equivalent to calling [getPercentInstance(Locale.getDefault(Locale.Category.FORMAT))](NumberFormat.md)). <br /> | | [NumberFormat](NumberFormat.md) | [getPercentInstance](NumberFormat.md))`(`inLocale:` ` [Locale](../java.util/Locale.md)`)` <br /> Returns a percentage format for the specified locale. <br /> | | [Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html)? | [parse](NumberFormat.md))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` <br /> Parses text from the beginning of the given string to produce a number. The method may not use the entire text of the given string. See the [parse(java.lang.String,java.text.ParsePosition)](NumberFormat.md))method for more information on number parsing. **WARNING:** Don't use this method to deserialize a number. The underlying localized number format and parsing behaviors can change across Android versions as common usage in the locale changes. Consider using the parse methods in the boxed types, e.g. [Long.parseLong(String)](../java.lang/Long.md)), or [java.math.BigDecimal](../java.math/BigDecimal.md) for deserializing a locale-independent decimal number. <br /> | | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? | [parseObject](NumberFormat.md))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `pos:` ` [ParsePosition](ParsePosition.md)`)` <br /> Parses text from a string to produce a`Number`. The method attempts to parse text starting at the index given by`pos`. If parsing succeeds, then the index of`pos`is updated to the index after the last character used (parsing does not necessarily use all characters up to the end of the string), and the parsed number is returned. The updated`pos`can be used to indicate the starting point for the next call to this method. If an error occurs, then the index of`pos`is not changed, the error index of`pos`is set to the index of the character where the error occurred, and null is returned. See the [parse(java.lang.String,java.text.ParsePosition)](NumberFormat.md))method for more information on number parsing. <br /> | ||
+| From class [Format](Format.md) |----------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](Format.md))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` <br /> Formats an object to produce a string. This is equivalent to [format](Format.md))`(obj, new StringBuffer(), new FieldPosition(0)).toString();` <br /> | | [AttributedCharacterIterator](AttributedCharacterIterator.md)! | [formatToCharacterIterator](Format.md))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` <br /> Formats an Object producing an`AttributedCharacterIterator`. You can use the returned`AttributedCharacterIterator`to build the resulting String, as well as to determine information about the resulting String. Each attribute key of the AttributedCharacterIterator will be of type`Field`. It is up to each`Format`implementation to define what the legal values are for each attribute in the`AttributedCharacterIterator`, but typically the attribute key is also used as the attribute value. The default implementation creates an`AttributedCharacterIterator`with no attributes. Subclasses that support fields should override this and create an`AttributedCharacterIterator`with meaningful attributes. <br /> | | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [parseObject](Format.md))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> Parses text from the beginning of the given string to produce an object. The method may not use the entire text of the given string. <br /> | ||
 
 ## Public constructors
 
@@ -277,7 +277,7 @@ To obtain standard formats for a given locale, use the factory methods on Number
 | Parameters ||
 |-----------|--------------------------------------------------------------------------------------------------------------------------------------|
 | `pattern` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:a non-localized pattern string |
-| `symbols` | [DecimalFormatSymbols](../java/text/DecimalFormatSymbols.md)!:the set of symbols to be used |
+| `symbols` | [DecimalFormatSymbols](DecimalFormatSymbols.md)!:the set of symbols to be used |
 
 | Exceptions ||
 |--------------------------------------|---------------------------------------|
@@ -286,7 +286,7 @@ To obtain standard formats for a given locale, use the factory methods on Number
 
 **See Also**
 
-- [java.text.DecimalFormatSymbols](../java/text/DecimalFormatSymbols.md)
+- [java.text.DecimalFormatSymbols](DecimalFormatSymbols.md)
 
 ## Public methods
 
@@ -402,14 +402,14 @@ Formats a double to produce a string.
 |-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `number` | [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html):The double to format |
 | `toAppendTo` | the StringBuffer to which the formatted text is to be appended |
-| `pos` | keeps track on the position of the field within the returned string. For example, for formatting a number`1234567.89`in`Locale.US`locale, if the given`fieldPosition`is [NumberFormat.INTEGER_FIELD](../java/text/NumberFormat.md), the begin index and end index of`fieldPosition`will be set to 0 and 9, respectively for the output string`1,234,567.89`. |
+| `pos` | keeps track on the position of the field within the returned string. For example, for formatting a number`1234567.89`in`Locale.US`locale, if the given`fieldPosition`is [NumberFormat.INTEGER_FIELD](NumberFormat.md), the begin index and end index of`fieldPosition`will be set to 0 and 9, respectively for the output string`1,234,567.89`. |
 | --- | --- |
-| `result` | [StringBuffer](../java/lang/StringBuffer.md):where the text is to be appended |
-| `fieldPosition` | [FieldPosition](../java/text/FieldPosition.md):keeps track on the position of the field within the returned string. For example, for formatting a number`1234567.89`in`Locale.US`locale, if the given`fieldPosition`is [NumberFormat.INTEGER_FIELD](../java/text/NumberFormat.md), the begin index and end index of`fieldPosition`will be set to 0 and 9, respectively for the output string`1,234,567.89`. |
+| `result` | [StringBuffer](../java.lang/StringBuffer.md):where the text is to be appended |
+| `fieldPosition` | [FieldPosition](FieldPosition.md):keeps track on the position of the field within the returned string. For example, for formatting a number`1234567.89`in`Locale.US`locale, if the given`fieldPosition`is [NumberFormat.INTEGER_FIELD](NumberFormat.md), the begin index and end index of`fieldPosition`will be set to 0 and 9, respectively for the output string`1,234,567.89`. |
 
 | Return ||
 |---------------------------------------------------------------------------------------------|-----------------------------|
-| [StringBuffer](../java/lang/StringBuffer.md) | The formatted number string |
+| [StringBuffer](../java.lang/StringBuffer.md) | The formatted number string |
 
 | Exceptions ||
 |----------------------------------|--------------------------------------------------------------------------------|
@@ -418,7 +418,7 @@ Formats a double to produce a string.
 
 **See Also**
 
-- [java.text.FieldPosition](../java/text/FieldPosition.md) 
+- [java.text.FieldPosition](FieldPosition.md) 
 
 ### format
 
@@ -432,21 +432,21 @@ fun format(
 ): StringBuffer
 ```
 
-Formats a number and appends the resulting text to the given string buffer. The number can be of any subclass of [java.lang.Number](../java/lang/Number.md).
+Formats a number and appends the resulting text to the given string buffer. The number can be of any subclass of [java.lang.Number](../java.lang/Number.md).
 
 This implementation uses the maximum precision permitted.
 
 | Parameters ||
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `obj` | The object to format |
-| `toAppendTo` | [StringBuffer](../java/lang/StringBuffer.md):the`StringBuffer`to which the formatted text is to be appended |
-| `pos` | [FieldPosition](../java/text/FieldPosition.md):keeps track on the position of the field within the returned string. For example, for formatting a number`1234567.89`in`Locale.US`locale, if the given`fieldPosition`is [NumberFormat.INTEGER_FIELD](../java/text/NumberFormat.md), the begin index and end index of`fieldPosition`will be set to 0 and 9, respectively for the output string`1,234,567.89`. |
+| `toAppendTo` | [StringBuffer](../java.lang/StringBuffer.md):the`StringBuffer`to which the formatted text is to be appended |
+| `pos` | [FieldPosition](FieldPosition.md):keeps track on the position of the field within the returned string. For example, for formatting a number`1234567.89`in`Locale.US`locale, if the given`fieldPosition`is [NumberFormat.INTEGER_FIELD](NumberFormat.md), the begin index and end index of`fieldPosition`will be set to 0 and 9, respectively for the output string`1,234,567.89`. |
 | --- | --- |
 | `number` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html):the number to format |
 
 | Return ||
 |---------------------------------------------------------------------------------------------|------------------------------------|
-| [StringBuffer](../java/lang/StringBuffer.md) | the value passed in as`toAppendTo` |
+| [StringBuffer](../java.lang/StringBuffer.md) | the value passed in as`toAppendTo` |
 
 | Exceptions ||
 |--------------------------------------|--------------------------------------------------------------------------------|
@@ -457,7 +457,7 @@ This implementation uses the maximum precision permitted.
 
 **See Also**
 
-- [java.text.FieldPosition](../java/text/FieldPosition.md) 
+- [java.text.FieldPosition](FieldPosition.md) 
 
 ### format
 
@@ -477,14 +477,14 @@ Format a long to produce a string.
 |-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `number` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The long to format |
 | `toAppendTo` | the StringBuffer to which the formatted text is to be appended |
-| `pos` | keeps track on the position of the field within the returned string. For example, for formatting a number`123456789`in`Locale.US`locale, if the given`fieldPosition`is [NumberFormat.INTEGER_FIELD](../java/text/NumberFormat.md), the begin index and end index of`fieldPosition`will be set to 0 and 11, respectively for the output string`123,456,789`. |
+| `pos` | keeps track on the position of the field within the returned string. For example, for formatting a number`123456789`in`Locale.US`locale, if the given`fieldPosition`is [NumberFormat.INTEGER_FIELD](NumberFormat.md), the begin index and end index of`fieldPosition`will be set to 0 and 11, respectively for the output string`123,456,789`. |
 | --- | --- |
-| `result` | [StringBuffer](../java/lang/StringBuffer.md):where the text is to be appended |
-| `fieldPosition` | [FieldPosition](../java/text/FieldPosition.md):keeps track on the position of the field within the returned string. For example, for formatting a number`123456789`in`Locale.US`locale, if the given`fieldPosition`is [NumberFormat.INTEGER_FIELD](../java/text/NumberFormat.md), the begin index and end index of`fieldPosition`will be set to 0 and 11, respectively for the output string`123,456,789`. |
+| `result` | [StringBuffer](../java.lang/StringBuffer.md):where the text is to be appended |
+| `fieldPosition` | [FieldPosition](FieldPosition.md):keeps track on the position of the field within the returned string. For example, for formatting a number`123456789`in`Locale.US`locale, if the given`fieldPosition`is [NumberFormat.INTEGER_FIELD](NumberFormat.md), the begin index and end index of`fieldPosition`will be set to 0 and 11, respectively for the output string`123,456,789`. |
 
 | Return ||
 |---------------------------------------------------------------------------------------------|-----------------------------|
-| [StringBuffer](../java/lang/StringBuffer.md) | The formatted number string |
+| [StringBuffer](../java.lang/StringBuffer.md) | The formatted number string |
 
 | Exceptions ||
 |----------------------------------|--------------------------------------------------------------------------------|
@@ -493,7 +493,7 @@ Format a long to produce a string.
 
 **See Also**
 
-- [java.text.FieldPosition](../java/text/FieldPosition.md) 
+- [java.text.FieldPosition](FieldPosition.md) 
 
 ### formatToCharacterIterator
 
@@ -513,7 +513,7 @@ Each attribute key of the AttributedCharacterIterator will be of type`NumberForm
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
-| [AttributedCharacterIterator](../java/text/AttributedCharacterIterator.md)! | AttributedCharacterIterator describing the formatted value. |
+| [AttributedCharacterIterator](AttributedCharacterIterator.md)! | AttributedCharacterIterator describing the formatted value. |
 
 | Exceptions ||
 |--------------------------------------|--------------------------------------------------------------------------------|
@@ -530,11 +530,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun getCurrency(): Currency?
 ```
 
-Gets the currency used by this decimal format when formatting currency values. The currency is obtained by calling [DecimalFormatSymbols.getCurrency](../java/text/DecimalFormatSymbols.md))on this number format's symbols.
+Gets the currency used by this decimal format when formatting currency values. The currency is obtained by calling [DecimalFormatSymbols.getCurrency](DecimalFormatSymbols.md))on this number format's symbols.
 
 | Return ||
 |--------------------------------------------------------------------------------------|----------------------------------------------------|
-| [Currency](../java/util/Currency.md)? | the currency used by this decimal format, or`null` |
+| [Currency](../java.util/Currency.md)? | the currency used by this decimal format, or`null` |
 
 | Exceptions ||
 |-------------------------------------------|------------------------------------------------------------------|
@@ -552,11 +552,11 @@ Returns a copy of the decimal format symbols, which is generally not changed by 
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------|--------------------------------------------|
-| [DecimalFormatSymbols](../java/text/DecimalFormatSymbols.md)! | a copy of the desired DecimalFormatSymbols |
+| [DecimalFormatSymbols](DecimalFormatSymbols.md)! | a copy of the desired DecimalFormatSymbols |
 
 **See Also**
 
-- [java.text.DecimalFormatSymbols](../java/text/DecimalFormatSymbols.md) 
+- [java.text.DecimalFormatSymbols](DecimalFormatSymbols.md) 
 
 ### getGroupingSize
 
@@ -566,7 +566,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun getGroupingSize(): Int
 ```
 
-Return the grouping size. Grouping size is the number of digits between grouping separators in the integer portion of a number. For example, in the number "123,456.78", the grouping size is 3. Grouping size of zero designates that grouping is not used, which provides the same formatting as if calling [setGroupingUsed(false)](../java/text/DecimalFormat.md)).
+Return the grouping size. Grouping size is the number of digits between grouping separators in the integer portion of a number. For example, in the number "123,456.78", the grouping size is 3. Grouping size of zero designates that grouping is not used, which provides the same formatting as if calling [setGroupingUsed(false)](DecimalFormat.md)).
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------|
@@ -574,9 +574,9 @@ Return the grouping size. Grouping size is the number of digits between grouping
 
 **See Also**
 
-- [#setGroupingSize](../java/text/DecimalFormat.md))
-- [java.text.NumberFormat#isGroupingUsed](../java/text/NumberFormat.md))
-- [java.text.DecimalFormatSymbols#getGroupingSeparator](../java/text/DecimalFormatSymbols.md)) 
+- [#setGroupingSize](DecimalFormat.md))
+- [java.text.NumberFormat#isGroupingUsed](NumberFormat.md))
+- [java.text.DecimalFormatSymbols#getGroupingSeparator](DecimalFormatSymbols.md)) 
 
 ### getMaximumFractionDigits
 
@@ -594,7 +594,7 @@ Gets the maximum number of digits allowed in the fraction portion of a number. F
 
 **See Also**
 
-- [#setMaximumFractionDigits](../java/text/DecimalFormat.md)) 
+- [#setMaximumFractionDigits](DecimalFormat.md)) 
 
 ### getMaximumIntegerDigits
 
@@ -612,7 +612,7 @@ Gets the maximum number of digits allowed in the integer portion of a number. Fo
 
 **See Also**
 
-- [#setMaximumIntegerDigits](../java/text/DecimalFormat.md)) 
+- [#setMaximumIntegerDigits](DecimalFormat.md)) 
 
 ### getMinimumFractionDigits
 
@@ -630,7 +630,7 @@ Gets the minimum number of digits allowed in the fraction portion of a number. F
 
 **See Also**
 
-- [#setMinimumFractionDigits](../java/text/DecimalFormat.md)) 
+- [#setMinimumFractionDigits](DecimalFormat.md)) 
 
 ### getMinimumIntegerDigits
 
@@ -648,7 +648,7 @@ Gets the minimum number of digits allowed in the integer portion of a number. Fo
 
 **See Also**
 
-- [#setMinimumIntegerDigits](../java/text/DecimalFormat.md)) 
+- [#setMinimumIntegerDigits](DecimalFormat.md)) 
 
 ### getMultiplier
 
@@ -666,7 +666,7 @@ Gets the multiplier for use in percent, per mille, and similar formats.
 
 **See Also**
 
-- [#setMultiplier(int)](../java/text/DecimalFormat.md)) 
+- [#setMultiplier(int)](DecimalFormat.md)) 
 
 ### getNegativePrefix
 
@@ -740,11 +740,11 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 open fun getRoundingMode(): RoundingMode
 ```
 
-Gets the [java.math.RoundingMode](../java/math/RoundingMode.md) used in this DecimalFormat.
+Gets the [java.math.RoundingMode](../java.math/RoundingMode.md) used in this DecimalFormat.
 
 | Return ||
 |---------------------------------------------------------------------------------------------|-----------------------------------------------|
-| [RoundingMode](../java/math/RoundingMode.md) | The`RoundingMode`used for this DecimalFormat. |
+| [RoundingMode](../java.math/RoundingMode.md) | The`RoundingMode`used for this DecimalFormat. |
 
 | Exceptions ||
 |-------------------------------------------|---------------------------------------------------------|
@@ -752,7 +752,7 @@ Gets the [java.math.RoundingMode](../java/math/RoundingMode.md) used in this Dec
 
 **See Also**
 
-- [#setRoundingMode(RoundingMode)](../java/text/DecimalFormat.md)) 
+- [#setRoundingMode(RoundingMode)](DecimalFormat.md)) 
 
 ### hashCode
 
@@ -806,7 +806,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun isParseBigDecimal(): Boolean
 ```
 
-Returns whether the [parse(java.lang.String,java.text.ParsePosition)](../java/text/DecimalFormat.md))method returns`BigDecimal`. The default value is false.
+Returns whether the [parse(java.lang.String,java.text.ParsePosition)](DecimalFormat.md))method returns`BigDecimal`. The default value is false.
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------------|
@@ -814,7 +814,7 @@ Returns whether the [parse(java.lang.String,java.text.ParsePosition)](../java/te
 
 **See Also**
 
-- [#setParseBigDecimal](../java/text/DecimalFormat.md)) 
+- [#setParseBigDecimal](DecimalFormat.md)) 
 
 ### isParseIntegerOnly
 
@@ -845,12 +845,12 @@ Parses text from a string to produce a`Number`.
 
 The method attempts to parse text starting at the index given by`pos`. If parsing succeeds, then the index of`pos`is updated to the index after the last character used (parsing does not necessarily use all characters up to the end of the string), and the parsed number is returned. The updated`pos`can be used to indicate the starting point for the next call to this method. If an error occurs, then the index of`pos`is not changed, the error index of`pos`is set to the index of the character where the error occurred, and null is returned.
 
-The subclass returned depends on the value of [isParseBigDecimal](../java/text/DecimalFormat.md))as well as on the string being parsed.
+The subclass returned depends on the value of [isParseBigDecimal](DecimalFormat.md))as well as on the string being parsed.
 
 - If`isParseBigDecimal()`is false (the default), most integer values are returned as`Long`objects, no matter how they are written:`"17"`and`"17.000"`both parse to`Long(17)`. Values that cannot fit into a`Long`are returned as`Double`s. This includes values with a fractional part, infinite values,`NaN`, and the value -0.0.`DecimalFormat`does*not* decide whether to return a`Double`or a`Long`based on the presence of a decimal separator in the source string. Doing so would prevent integers that overflow the mantissa of a double, such as`"-9,223,372,036,854,775,808.00"`, from being parsed accurately.
 
  Callers may use the`Number`methods`doubleValue`,`longValue`, etc., to obtain the type they want.
-- If`isParseBigDecimal()`is true, values are returned as`BigDecimal`objects. The values are the ones constructed by [java.math.BigDecimal#BigDecimal(String)](../java/math/BigDecimal.md))for corresponding strings in locale-independent format. The special cases negative and positive infinity and NaN are returned as`Double`instances holding the values of the corresponding`Double`constants.
+- If`isParseBigDecimal()`is true, values are returned as`BigDecimal`objects. The values are the ones constructed by [java.math.BigDecimal#BigDecimal(String)](../java.math/BigDecimal.md))for corresponding strings in locale-independent format. The special cases negative and positive infinity and NaN are returned as`Double`instances holding the values of the corresponding`Double`constants.
 
 `DecimalFormat`parses all Unicode characters that represent decimal digits, as defined by`Character.digit()`. In addition,`DecimalFormat`also recognizes as digits the ten consecutive characters starting with the localized zero digit defined in the`DecimalFormatSymbols`object.
 
@@ -860,7 +860,7 @@ The subclass returned depends on the value of [isParseBigDecimal](../java/text/D
 | `parsePosition` | the parse position |
 | `text` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):the string to be parsed |
 | --- | --- |
-| `pos` | [ParsePosition](../java/text/ParsePosition.md):A`ParsePosition`object with index and error index information as described above. |
+| `pos` | [ParsePosition](ParsePosition.md):A`ParsePosition`object with index and error index information as described above. |
 
 | Return ||
 |-----------------------------------------------------------------------------------|----------------------------------------------|
@@ -878,11 +878,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun setCurrency(currency: Currency): Unit
 ```
 
-Sets the currency used by this number format when formatting currency values. This does not update the minimum or maximum number of fraction digits used by the number format. The currency is set by calling [DecimalFormatSymbols.setCurrency](../java/text/DecimalFormatSymbols.md))on this number format's symbols.
+Sets the currency used by this number format when formatting currency values. This does not update the minimum or maximum number of fraction digits used by the number format. The currency is set by calling [DecimalFormatSymbols.setCurrency](DecimalFormatSymbols.md))on this number format's symbols.
 
 | Parameters ||
 |------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| `currency` | [Currency](../java/util/Currency.md):the new currency to be used by this decimal format |
+| `currency` | [Currency](../java.util/Currency.md):the new currency to be used by this decimal format |
 
 | Exceptions ||
 |-------------------------------------------|------------------------------------------------------------------|
@@ -901,11 +901,11 @@ Sets the decimal format symbols, which is generally not changed by the programme
 
 | Parameters ||
 |--------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| `newSymbols` | [DecimalFormatSymbols](../java/text/DecimalFormatSymbols.md)!:desired DecimalFormatSymbols |
+| `newSymbols` | [DecimalFormatSymbols](DecimalFormatSymbols.md)!:desired DecimalFormatSymbols |
 
 **See Also**
 
-- [java.text.DecimalFormatSymbols](../java/text/DecimalFormatSymbols.md) 
+- [java.text.DecimalFormatSymbols](DecimalFormatSymbols.md) 
 
 ### setDecimalSeparatorAlwaysShown
 
@@ -931,9 +931,9 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun setGroupingSize(newValue: Int): Unit
 ```
 
-Set the grouping size. Grouping size is the number of digits between grouping separators in the integer portion of a number. For example, in the number "123,456.78", the grouping size is 3. Grouping size of zero designates that grouping is not used, which provides the same formatting as if calling [setGroupingUsed(false)](../java/text/DecimalFormat.md)).
+Set the grouping size. Grouping size is the number of digits between grouping separators in the integer portion of a number. For example, in the number "123,456.78", the grouping size is 3. Grouping size of zero designates that grouping is not used, which provides the same formatting as if calling [setGroupingUsed(false)](DecimalFormat.md)).
 
-The value passed in is converted to a byte, which may lose information. Values that are negative or greater than [Byte.MAX_VALUE](../java/lang/Byte.md), will throw an`IllegalArgumentException`.
+The value passed in is converted to a byte, which may lose information. Values that are negative or greater than [Byte.MAX_VALUE](../java.lang/Byte.md), will throw an`IllegalArgumentException`.
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------|
@@ -941,13 +941,13 @@ The value passed in is converted to a byte, which may lose information. Values t
 
 | Exceptions ||
 |--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.IllegalArgumentException` | if`newValue`is negative or greater than [Byte.MAX_VALUE](../java/lang/Byte.md) |
+| `java.lang.IllegalArgumentException` | if`newValue`is negative or greater than [Byte.MAX_VALUE](../java.lang/Byte.md) |
 
 **See Also**
 
-- [#getGroupingSize](../java/text/DecimalFormat.md))
-- [java.text.NumberFormat#setGroupingUsed](../java/text/NumberFormat.md))
-- [java.text.DecimalFormatSymbols#setGroupingSeparator](../java/text/DecimalFormatSymbols.md)) 
+- [#getGroupingSize](DecimalFormat.md))
+- [java.text.NumberFormat#setGroupingUsed](NumberFormat.md))
+- [java.text.DecimalFormatSymbols#setGroupingSeparator](DecimalFormatSymbols.md)) 
 
 ### setGroupingUsed
 
@@ -979,7 +979,7 @@ Sets the maximum number of digits allowed in the fraction portion of a number. F
 
 **See Also**
 
-- [java.text.NumberFormat#setMaximumFractionDigits](../java/text/NumberFormat.md)) 
+- [java.text.NumberFormat#setMaximumFractionDigits](NumberFormat.md)) 
 
 ### setMaximumIntegerDigits
 
@@ -997,7 +997,7 @@ Sets the maximum number of digits allowed in the integer portion of a number. Fo
 
 **See Also**
 
-- [java.text.NumberFormat#setMaximumIntegerDigits](../java/text/NumberFormat.md)) 
+- [java.text.NumberFormat#setMaximumIntegerDigits](NumberFormat.md)) 
 
 ### setMinimumFractionDigits
 
@@ -1015,7 +1015,7 @@ Sets the minimum number of digits allowed in the fraction portion of a number. F
 
 **See Also**
 
-- [java.text.NumberFormat#setMinimumFractionDigits](../java/text/NumberFormat.md)) 
+- [java.text.NumberFormat#setMinimumFractionDigits](NumberFormat.md)) 
 
 ### setMinimumIntegerDigits
 
@@ -1033,7 +1033,7 @@ Sets the minimum number of digits allowed in the integer portion of a number. Fo
 
 **See Also**
 
-- [java.text.NumberFormat#setMinimumIntegerDigits](../java/text/NumberFormat.md)) 
+- [java.text.NumberFormat#setMinimumIntegerDigits](NumberFormat.md)) 
 
 ### setMultiplier
 
@@ -1053,7 +1053,7 @@ Example: with multiplier 100, 1.23 is formatted as "123", and "123" is parsed in
 
 **See Also**
 
-- [#getMultiplier](../java/text/DecimalFormat.md)) 
+- [#getMultiplier](DecimalFormat.md)) 
 
 ### setNegativePrefix
 
@@ -1095,7 +1095,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun setParseBigDecimal(newValue: Boolean): Unit
 ```
 
-Sets whether the [parse(java.lang.String,java.text.ParsePosition)](../java/text/DecimalFormat.md))method returns`BigDecimal`.
+Sets whether the [parse(java.lang.String,java.text.ParsePosition)](DecimalFormat.md))method returns`BigDecimal`.
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1103,7 +1103,7 @@ Sets whether the [parse(java.lang.String,java.text.ParsePosition)](../java/text/
 
 **See Also**
 
-- [#isParseBigDecimal](../java/text/DecimalFormat.md)) 
+- [#isParseBigDecimal](DecimalFormat.md)) 
 
 ### setParseIntegerOnly
 
@@ -1159,11 +1159,11 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 open fun setRoundingMode(roundingMode: RoundingMode?): Unit
 ```
 
-Sets the [java.math.RoundingMode](../java/math/RoundingMode.md) used in this DecimalFormat.
+Sets the [java.math.RoundingMode](../java.math/RoundingMode.md) used in this DecimalFormat.
 
 | Parameters ||
 |----------------|--------------------------------------------------------------------------------------------------------------------------|
-| `roundingMode` | [RoundingMode](../java/math/RoundingMode.md)?:The`RoundingMode`to be used |
+| `roundingMode` | [RoundingMode](../java.math/RoundingMode.md)?:The`RoundingMode`to be used |
 
 | Exceptions ||
 |-------------------------------------------|---------------------------------------------------------|
@@ -1190,7 +1190,7 @@ Synthesizes a localized pattern string that represents the current state of this
 
 **See Also**
 
-- [#applyPattern](../java/text/DecimalFormat.md)) 
+- [#applyPattern](DecimalFormat.md)) 
 
 ### toPattern
 
@@ -1208,4 +1208,4 @@ Synthesizes a pattern string that represents the current state of this Format ob
 
 **See Also**
 
-- [#applyPattern](../java/text/DecimalFormat.md))
+- [#applyPattern](DecimalFormat.md))

@@ -11,13 +11,13 @@ open class SQLNonTransientConnectionException : SQLNonTransientException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
-| | | ↳ | [java.sql.SQLException](../java/sql/SQLException.md) |||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) ||||
+| | | ↳ | [java.sql.SQLException](SQLException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.sql.SQLNonTransientException](../java/sql/SQLNonTransientException.md) ||
-| | | | | ↳ | [java.sql.SQLNonTransientConnectionException](../java/sql/SQLNonTransientConnectionException.md) |
+| | | | ↳ | [java.sql.SQLNonTransientException](SQLNonTransientException.md) ||
+| | | | | ↳ | [java.sql.SQLNonTransientConnectionException](SQLNonTransientConnectionException.md) |
 
-The subclass of [SQLException](../java/sql/SQLException.md) thrown for the SQLState class value '*08*', or under vendor-specified conditions. This indicates that the connection operation that failed will not succeed if the operation is retried without the cause of the failure being corrected.
+The subclass of [SQLException](SQLException.md) thrown for the SQLState class value '*08*', or under vendor-specified conditions. This indicates that the connection operation that failed will not succeed if the operation is retried without the cause of the failure being corrected.
 
 Please consult your driver vendor documentation for the vendor-specified conditions for which this`Exception`may be thrown.
 
@@ -25,14 +25,14 @@ Please consult your driver vendor documentation for the vendor-specified conditi
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SQLNonTransientConnectionException](../java/sql/SQLNonTransientConnectionException.md))`()` Constructs a`SQLNonTransientConnectionException`object. |
-| [SQLNonTransientConnectionException](../java/sql/SQLNonTransientConnectionException.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a`SQLNonTransientConnectionException`object with a given`reason`. |
-| [SQLNonTransientConnectionException](../java/sql/SQLNonTransientConnectionException.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `SQLState:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a`SQLNonTransientConnectionException`object with a given`reason`and`SQLState`. |
-| [SQLNonTransientConnectionException](../java/sql/SQLNonTransientConnectionException.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `SQLState:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `vendorCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a`SQLNonTransientConnectionException`object with a given`reason`,`SQLState`and`vendorCode`. |
-| [SQLNonTransientConnectionException](../java/sql/SQLNonTransientConnectionException.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `SQLState:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `vendorCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a`SQLNonTransientConnectionException`object with a given`reason`,`SQLState`,`vendorCode`and`cause`. |
-| [SQLNonTransientConnectionException](../java/sql/SQLNonTransientConnectionException.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `SQLState:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a`SQLNonTransientConnectionException`object with a given`reason`,`SQLState`and`cause`. |
-| [SQLNonTransientConnectionException](../java/sql/SQLNonTransientConnectionException.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a`SQLTransientException`object with a given`reason`and`cause`. |
-| [SQLNonTransientConnectionException](../java/sql/SQLNonTransientConnectionException.md))`(`cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a`SQLNonTransientConnectionException`object with a given`cause`. |
+| [SQLNonTransientConnectionException](SQLNonTransientConnectionException.md))`()` Constructs a`SQLNonTransientConnectionException`object. |
+| [SQLNonTransientConnectionException](SQLNonTransientConnectionException.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a`SQLNonTransientConnectionException`object with a given`reason`. |
+| [SQLNonTransientConnectionException](SQLNonTransientConnectionException.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `SQLState:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a`SQLNonTransientConnectionException`object with a given`reason`and`SQLState`. |
+| [SQLNonTransientConnectionException](SQLNonTransientConnectionException.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `SQLState:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `vendorCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a`SQLNonTransientConnectionException`object with a given`reason`,`SQLState`and`vendorCode`. |
+| [SQLNonTransientConnectionException](SQLNonTransientConnectionException.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `SQLState:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `vendorCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a`SQLNonTransientConnectionException`object with a given`reason`,`SQLState`,`vendorCode`and`cause`. |
+| [SQLNonTransientConnectionException](SQLNonTransientConnectionException.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `SQLState:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a`SQLNonTransientConnectionException`object with a given`reason`,`SQLState`and`cause`. |
+| [SQLNonTransientConnectionException](SQLNonTransientConnectionException.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a`SQLTransientException`object with a given`reason`and`cause`. |
+| [SQLNonTransientConnectionException](SQLNonTransientConnectionException.md))`(`cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a`SQLNonTransientConnectionException`object with a given`cause`. |
 
 ## Public constructors
 
@@ -44,7 +44,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 SQLNonTransientConnectionException()
 ```
 
-Constructs a`SQLNonTransientConnectionException`object. The`reason`,`SQLState`are initialized to`null`and the vendor code is initialized to 0. The`cause`is not initialized, and may subsequently be initialized by a call to the [Throwable.initCause(java.lang.Throwable)](../java/lang/Throwable.md))method.
+Constructs a`SQLNonTransientConnectionException`object. The`reason`,`SQLState`are initialized to`null`and the vendor code is initialized to 0. The`cause`is not initialized, and may subsequently be initialized by a call to the [Throwable.initCause(java.lang.Throwable)](../java.lang/Throwable.md))method.
 
 <br />
 
@@ -56,7 +56,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 SQLNonTransientConnectionException(reason: String!)
 ```
 
-Constructs a`SQLNonTransientConnectionException`object with a given`reason`. The`SQLState`is initialized to`null`and the vender code is initialized to 0. The`cause`is not initialized, and may subsequently be initialized by a call to the [Throwable.initCause(java.lang.Throwable)](../java/lang/Throwable.md))method.
+Constructs a`SQLNonTransientConnectionException`object with a given`reason`. The`SQLState`is initialized to`null`and the vender code is initialized to 0. The`cause`is not initialized, and may subsequently be initialized by a call to the [Throwable.initCause(java.lang.Throwable)](../java.lang/Throwable.md))method.
 
 <br />
 
@@ -74,7 +74,7 @@ SQLNonTransientConnectionException(
     SQLState: String!)
 ```
 
-Constructs a`SQLNonTransientConnectionException`object with a given`reason`and`SQLState`. The`cause`is not initialized, and may subsequently be initialized by a call to the [Throwable.initCause(java.lang.Throwable)](../java/lang/Throwable.md))method. The vendor code is initialized to 0.
+Constructs a`SQLNonTransientConnectionException`object with a given`reason`and`SQLState`. The`cause`is not initialized, and may subsequently be initialized by a call to the [Throwable.initCause(java.lang.Throwable)](../java.lang/Throwable.md))method. The vendor code is initialized to 0.
 
 <br />
 
@@ -94,7 +94,7 @@ SQLNonTransientConnectionException(
     vendorCode: Int)
 ```
 
-Constructs a`SQLNonTransientConnectionException`object with a given`reason`,`SQLState`and`vendorCode`. The`cause`is not initialized, and may subsequently be initialized by a call to the [Throwable.initCause(java.lang.Throwable)](../java/lang/Throwable.md))method.
+Constructs a`SQLNonTransientConnectionException`object with a given`reason`,`SQLState`and`vendorCode`. The`cause`is not initialized, and may subsequently be initialized by a call to the [Throwable.initCause(java.lang.Throwable)](../java.lang/Throwable.md))method.
 
 <br />
 

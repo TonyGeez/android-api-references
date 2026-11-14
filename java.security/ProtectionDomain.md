@@ -10,7 +10,7 @@ open class ProtectionDomain
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.ProtectionDomain](../java/security/ProtectionDomain.md) |
+| ↳ | [java.security.ProtectionDomain](ProtectionDomain.md) |
 
 Legacy security code; do not use.
 
@@ -18,17 +18,17 @@ Legacy security code; do not use.
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ProtectionDomain](../java/security/ProtectionDomain.md))`(`codesource:` ` [CodeSource](../java/security/CodeSource.md)!`, `permissions:` ` [PermissionCollection](../java/security/PermissionCollection.md)!`)` <br /> |
-| [ProtectionDomain](../java/security/ProtectionDomain.md))`(`codesource:` ` [CodeSource](../java/security/CodeSource.md)!`, `permissions:` ` [PermissionCollection](../java/security/PermissionCollection.md)!`, `classloader:` ` [ClassLoader](../java/lang/ClassLoader.md)!`, `principals:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Principal](../java/security/Principal.md)!>!`)` <br /> |
+| [ProtectionDomain](ProtectionDomain.md))`(`codesource:` ` [CodeSource](CodeSource.md)!`, `permissions:` ` [PermissionCollection](PermissionCollection.md)!`)` <br /> |
+| [ProtectionDomain](ProtectionDomain.md))`(`codesource:` ` [CodeSource](CodeSource.md)!`, `permissions:` ` [PermissionCollection](PermissionCollection.md)!`, `classloader:` ` [ClassLoader](../java.lang/ClassLoader.md)!`, `principals:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Principal](Principal.md)!>!`)` <br /> |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [ClassLoader](../java/lang/ClassLoader.md)! | [getClassLoader](../java/security/ProtectionDomain.md))`()` <br /> |
-| [CodeSource](../java/security/CodeSource.md)! | [getCodeSource](../java/security/ProtectionDomain.md))`()` <br /> |
-| [PermissionCollection](../java/security/PermissionCollection.md)! | [getPermissions](../java/security/ProtectionDomain.md))`()` <br /> |
+| [ClassLoader](../java.lang/ClassLoader.md)! | [getClassLoader](ProtectionDomain.md))`()` <br /> |
+| [CodeSource](CodeSource.md)! | [getCodeSource](ProtectionDomain.md))`()` <br /> |
+| [PermissionCollection](PermissionCollection.md)! | [getPermissions](ProtectionDomain.md))`()` <br /> |
 | --- | --- |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Principal](../java/security/Principal.md)!\>! | [getPrincipals](../java/security/ProtectionDomain.md))`()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [implies](../java/security/ProtectionDomain.md))`(`permission:` ` [Permission](../java/security/Permission.md)!`)` <br /> |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Principal](Principal.md)!\>! | [getPrincipals](ProtectionDomain.md))`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [implies](ProtectionDomain.md))`(`permission:` ` [Permission](Permission.md)!`)` <br /> |
 
 ## Public constructors
 

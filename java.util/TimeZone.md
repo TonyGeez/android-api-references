@@ -10,9 +10,9 @@ abstract class TimeZone : Cloneable, Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.util.TimeZone](../java/util/TimeZone.md) |
+| ↳ | [java.util.TimeZone](TimeZone.md) |
 
-| Known Direct Subclasses [SimpleTimeZone](../java/util/SimpleTimeZone.md) |-------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------| | [SimpleTimeZone](../java/util/SimpleTimeZone.md) | `SimpleTimeZone`is a concrete subclass of`TimeZone`that represents a time zone for use with a Gregorian calendar. | |
+| Known Direct Subclasses [SimpleTimeZone](SimpleTimeZone.md) |-------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------| | [SimpleTimeZone](SimpleTimeZone.md) | `SimpleTimeZone`is a concrete subclass of`TimeZone`that represents a time zone for use with a Gregorian calendar. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 represents a time zone offset, and also figures out daylight savings.
@@ -49,45 +49,45 @@ For compatibility with JDK 1.1.x, some other three-letter time zone IDs (such as
 
 | Constants ||
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LONG](../java/util/TimeZone.md) A style specifier for`getDisplayName()`indicating a long name, such as "Pacific Standard Time. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SHORT](../java/util/TimeZone.md) A style specifier for`getDisplayName()`indicating a short name, such as "PST. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LONG](TimeZone.md) A style specifier for`getDisplayName()`indicating a long name, such as "Pacific Standard Time. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SHORT](TimeZone.md) A style specifier for`getDisplayName()`indicating a short name, such as "PST. |
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------|---|
-| [TimeZone](../java/util/TimeZone.md))`()` Sole constructor. |
+| [TimeZone](TimeZone.md))`()` Sole constructor. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](../java/util/TimeZone.md))`()` Creates a copy of this`TimeZone`. |
-| openstatic [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getAvailableIDs](../java/util/TimeZone.md))`()` Gets all the available IDs supported. |
-| openstatic [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getAvailableIDs](../java/util/TimeZone.md))`(`rawOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the available IDs according to the given time zone offset in milliseconds. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](TimeZone.md))`()` Creates a copy of this`TimeZone`. |
+| openstatic [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getAvailableIDs](TimeZone.md))`()` Gets all the available IDs supported. |
+| openstatic [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getAvailableIDs](TimeZone.md))`(`rawOffset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the available IDs according to the given time zone offset in milliseconds. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDSTSavings](../java/util/TimeZone.md))`()` Returns the amount of time to be added to local standard time to get local wall clock time. |
-| openstatic [TimeZone](../java/util/TimeZone.md)! | [getDefault](../java/util/TimeZone.md))`()` Gets the default`TimeZone`for this host. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayName](../java/util/TimeZone.md))`()` Returns a long standard time name of this`TimeZone`suitable for presentation to the user in the default locale. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDSTSavings](TimeZone.md))`()` Returns the amount of time to be added to local standard time to get local wall clock time. |
+| openstatic [TimeZone](TimeZone.md)! | [getDefault](TimeZone.md))`()` Gets the default`TimeZone`for this host. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayName](TimeZone.md))`()` Returns a long standard time name of this`TimeZone`suitable for presentation to the user in the default locale. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayName](../java/util/TimeZone.md))`(`daylight:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `style:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a name in the specified`style`of this`TimeZone`suitable for presentation to the user in the default locale. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayName](../java/util/TimeZone.md))`(`daylightTime:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `style:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `locale:` ` [Locale](../java/util/Locale.md)!`)` Returns the [short](../java/util/TimeZone.md) or [long](../java/util/TimeZone.md) name of this time zone with either standard or daylight time, as written in`locale`. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayName](../java/util/TimeZone.md))`(`locale:` ` [Locale](../java/util/Locale.md)!`)` Returns a long standard time name of this`TimeZone`suitable for presentation to the user in the specified`locale`. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayName](TimeZone.md))`(`daylight:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `style:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a name in the specified`style`of this`TimeZone`suitable for presentation to the user in the default locale. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayName](TimeZone.md))`(`daylightTime:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `style:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `locale:` ` [Locale](Locale.md)!`)` Returns the [short](TimeZone.md) or [long](TimeZone.md) name of this time zone with either standard or daylight time, as written in`locale`. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayName](TimeZone.md))`(`locale:` ` [Locale](Locale.md)!`)` Returns a long standard time name of this`TimeZone`suitable for presentation to the user in the specified`locale`. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getID](../java/util/TimeZone.md))`()` Gets the ID of this time zone. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOffset](../java/util/TimeZone.md))`(`era:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `year:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `month:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `day:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dayOfWeek:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `milliseconds:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the time zone offset, for current date, modified in case of daylight savings. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOffset](../java/util/TimeZone.md))`(`date:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the offset of this time zone from UTC at the specified date. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getID](TimeZone.md))`()` Gets the ID of this time zone. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOffset](TimeZone.md))`(`era:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `year:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `month:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `day:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dayOfWeek:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `milliseconds:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the time zone offset, for current date, modified in case of daylight savings. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOffset](TimeZone.md))`(`date:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the offset of this time zone from UTC at the specified date. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRawOffset](../java/util/TimeZone.md))`()` Returns the amount of time in milliseconds to add to UTC to get standard time in this time zone. |
-| openstatic [TimeZone](../java/util/TimeZone.md)! | [getTimeZone](../java/util/TimeZone.md))`(`id:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Gets the`TimeZone`for the given ID. |
-| openstatic [TimeZone](../java/util/TimeZone.md)! | [getTimeZone](../java/util/TimeZone.md))`(`zoneId:` ` [ZoneId](../java/time/ZoneId.md)!`)` Gets the`TimeZone`for the given`zoneId`. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRawOffset](TimeZone.md))`()` Returns the amount of time in milliseconds to add to UTC to get standard time in this time zone. |
+| openstatic [TimeZone](TimeZone.md)! | [getTimeZone](TimeZone.md))`(`id:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Gets the`TimeZone`for the given ID. |
+| openstatic [TimeZone](TimeZone.md)! | [getTimeZone](TimeZone.md))`(`zoneId:` ` [ZoneId](../java.time/ZoneId.md)!`)` Gets the`TimeZone`for the given`zoneId`. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasSameRules](../java/util/TimeZone.md))`(`other:` ` [TimeZone](../java/util/TimeZone.md)!`)` Returns true if this zone has the same rule and offset as another zone. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [inDaylightTime](../java/util/TimeZone.md))`(`date:` ` [Date](../java/util/Date.md)!`)` Queries if the given`date`is in Daylight Saving Time in this time zone. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [observesDaylightTime](../java/util/TimeZone.md))`()` Returns`true`if this`TimeZone`is currently in Daylight Saving Time, or if a transition from Standard Time to Daylight Saving Time occurs at any future time. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasSameRules](TimeZone.md))`(`other:` ` [TimeZone](TimeZone.md)!`)` Returns true if this zone has the same rule and offset as another zone. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [inDaylightTime](TimeZone.md))`(`date:` ` [Date](Date.md)!`)` Queries if the given`date`is in Daylight Saving Time in this time zone. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [observesDaylightTime](TimeZone.md))`()` Returns`true`if this`TimeZone`is currently in Daylight Saving Time, or if a transition from Standard Time to Daylight Saving Time occurs at any future time. |
 | --- | --- |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDefault](../java/util/TimeZone.md))`(`timeZone:` ` [TimeZone](../java/util/TimeZone.md)!`)` Sets the`TimeZone`that is returned by the`getDefault`method. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setID](../java/util/TimeZone.md))`(`ID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the time zone ID. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRawOffset](../java/util/TimeZone.md))`(`offsetMillis:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the base time zone offset to GMT. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDefault](TimeZone.md))`(`timeZone:` ` [TimeZone](TimeZone.md)!`)` Sets the`TimeZone`that is returned by the`getDefault`method. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setID](TimeZone.md))`(`ID:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the time zone ID. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRawOffset](TimeZone.md))`(`offsetMillis:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the base time zone offset to GMT. |
 | --- | --- |
-| open [ZoneId](../java/time/ZoneId.md)! | [toZoneId](../java/util/TimeZone.md))`()` Converts this`TimeZone`object to a`ZoneId`. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [useDaylightTime](../java/util/TimeZone.md))`()` Queries if this`TimeZone`uses Daylight Saving Time. |
+| open [ZoneId](../java.time/ZoneId.md)! | [toZoneId](TimeZone.md))`()` Converts this`TimeZone`object to a`ZoneId`. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [useDaylightTime](TimeZone.md))`()` Queries if this`TimeZone`uses Daylight Saving Time. |
 
 ## Constants
 
@@ -105,7 +105,7 @@ A style specifier for`getDisplayName()`indicating a long name, such as "Pacific 
 
 **See Also**
 
-- [#SHORT](../java/util/TimeZone.md) 
+- [#SHORT](TimeZone.md) 
 
 ### SHORT
 
@@ -121,7 +121,7 @@ A style specifier for`getDisplayName()`indicating a short name, such as "PST."
 
 **See Also**
 
-- [#LONG](../java/util/TimeZone.md)
+- [#LONG](TimeZone.md)
 
 ## Public constructors
 
@@ -201,11 +201,11 @@ open fun getDSTSavings(): Int
 
 Returns the amount of time to be added to local standard time to get local wall clock time.
 
-The default implementation returns 3600000 milliseconds (i.e., one hour) if a call to [useDaylightTime()](../java/util/TimeZone.md))returns`true`. Otherwise, 0 (zero) is returned.
+The default implementation returns 3600000 milliseconds (i.e., one hour) if a call to [useDaylightTime()](TimeZone.md))returns`true`. Otherwise, 0 (zero) is returned.
 
 If an underlying`TimeZone`implementation subclass supports historical and future Daylight Saving Time schedule changes, this method returns the amount of saving time of the last known Daylight Saving Time rule that can be a future prediction.
 
-If the amount of saving time at any given time stamp is required, construct a [Calendar](../java/util/Calendar.md) with this`TimeZone`and the time stamp, and call [Calendar.get](../java/util/Calendar.md))`(` [Calendar.DST_OFFSET](../java/util/Calendar.md)`)`.
+If the amount of saving time at any given time stamp is required, construct a [Calendar](Calendar.md) with this`TimeZone`and the time stamp, and call [Calendar.get](Calendar.md))`(` [Calendar.DST_OFFSET](Calendar.md)`)`.
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------------------|
@@ -213,10 +213,10 @@ If the amount of saving time at any given time stamp is required, construct a [C
 
 **See Also**
 
-- [#inDaylightTime(Date)](../java/util/TimeZone.md))
-- [#getOffset(long)](../java/util/TimeZone.md))
-- [#getOffset(int,int,int,int,int,int)](../java/util/TimeZone.md))
-- [java.util.Calendar#ZONE_OFFSET](../java/util/Calendar.md) 
+- [#inDaylightTime(Date)](TimeZone.md))
+- [#getOffset(long)](TimeZone.md))
+- [#getOffset(int,int,int,int,int,int)](TimeZone.md))
+- [java.util.Calendar#ZONE_OFFSET](Calendar.md) 
 
 ### getDefault
 
@@ -230,11 +230,11 @@ Gets the default`TimeZone`for this host. The source of the default`TimeZone`may 
 
 | Return ||
 |---------------------------------------------------------------------------------|----------------------|
-| [TimeZone](../java/util/TimeZone.md)! | a default`TimeZone`. |
+| [TimeZone](TimeZone.md)! | a default`TimeZone`. |
 
 **See Also**
 
-- [#setDefault(TimeZone)](../java/util/TimeZone.md)) 
+- [#setDefault(TimeZone)](TimeZone.md)) 
 
 ### getDisplayName
 
@@ -255,8 +255,8 @@ This method is equivalent to:
 
 **See Also**
 
-- [#getDisplayName(boolean, int, Locale)](../java/util/TimeZone.md))
-- [java.util.Locale#getDefault(Locale.Category)](../java/util/Locale.md))
+- [#getDisplayName(boolean, int, Locale)](TimeZone.md))
+- [java.util.Locale#getDefault(Locale.Category)](Locale.md))
 - [java.util.Locale.Category](../java/util/Locale.Category.md) 
 
 ### getDisplayName
@@ -278,7 +278,7 @@ This method is equivalent to:
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `daylight` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):`true`specifying a Daylight Saving Time name, or`false`specifying a Standard Time name |
-| `style` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):either [LONG](../java/util/TimeZone.md) or [SHORT](../java/util/TimeZone.md) |
+| `style` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):either [LONG](TimeZone.md) or [SHORT](TimeZone.md) |
 
 | Return ||
 |-----------------------------------------------------------------------------------|------------------------------------------------------------------|
@@ -290,10 +290,10 @@ This method is equivalent to:
 
 **See Also**
 
-- [#getDisplayName(boolean, int, Locale)](../java/util/TimeZone.md))
-- [java.util.Locale#getDefault(Locale.Category)](../java/util/Locale.md))
+- [#getDisplayName(boolean, int, Locale)](TimeZone.md))
+- [java.util.Locale#getDefault(Locale.Category)](Locale.md))
 - [java.util.Locale.Category](../java/util/Locale.Category.md)
-- [java.text.DateFormatSymbols#getZoneStrings()](../java/text/DateFormatSymbols.md)) 
+- [java.text.DateFormatSymbols#getZoneStrings()](../java.text/DateFormatSymbols.md)) 
 
 ### getDisplayName
 
@@ -307,13 +307,13 @@ open fun getDisplayName(
 ): String!
 ```
 
-Returns the [short](../java/util/TimeZone.md) or [long](../java/util/TimeZone.md) name of this time zone with either standard or daylight time, as written in`locale`. If the name is not available, the result is in the format`GMT[+-]hh:mm`.
+Returns the [short](TimeZone.md) or [long](TimeZone.md) name of this time zone with either standard or daylight time, as written in`locale`. If the name is not available, the result is in the format`GMT[+-]hh:mm`.
 
 | Parameters ||
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `daylightTime` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):`true`specifying a Daylight Saving Time name, or`false`specifying a Standard Time name |
-| `style` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):either [LONG](../java/util/TimeZone.md) or [SHORT](../java/util/TimeZone.md) |
-| `locale` | [Locale](../java/util/Locale.md)!:the locale in which to supply the display name. |
+| `style` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):either [LONG](TimeZone.md) or [SHORT](TimeZone.md) |
+| `locale` | [Locale](Locale.md)!:the locale in which to supply the display name. |
 | --- | --- |
 
 | Return ||
@@ -327,7 +327,7 @@ Returns the [short](../java/util/TimeZone.md) or [long](../java/util/TimeZone.md
 
 **See Also**
 
-- [java.text.DateFormatSymbols#getZoneStrings()](../java/text/DateFormatSymbols.md)) 
+- [java.text.DateFormatSymbols#getZoneStrings()](../java.text/DateFormatSymbols.md)) 
 
 ### getDisplayName
 
@@ -344,7 +344,7 @@ This method is equivalent to:
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------------|
-| `locale` | [Locale](../java/util/Locale.md)!:the locale in which to supply the display name. |
+| `locale` | [Locale](Locale.md)!:the locale in which to supply the display name. |
 
 | Return ||
 |-----------------------------------------------------------------------------------|----------------------------------------------------------------|
@@ -356,7 +356,7 @@ This method is equivalent to:
 
 **See Also**
 
-- [#getDisplayName(boolean, int, Locale)](../java/util/TimeZone.md)) 
+- [#getDisplayName(boolean, int, Locale)](TimeZone.md)) 
 
 ### getID
 
@@ -408,8 +408,8 @@ This method returns a historically correct offset if an underlying`TimeZone`impl
 
 **See Also**
 
-- [java.util.Calendar#ZONE_OFFSET](../java/util/Calendar.md)
-- [java.util.Calendar#DST_OFFSET](../java/util/Calendar.md) 
+- [java.util.Calendar#ZONE_OFFSET](Calendar.md)
+- [java.util.Calendar#DST_OFFSET](Calendar.md) 
 
 ### getOffset
 
@@ -433,8 +433,8 @@ This method returns a historically correct offset value if an underlying TimeZon
 
 **See Also**
 
-- [java.util.Calendar#ZONE_OFFSET](../java/util/Calendar.md)
-- [java.util.Calendar#DST_OFFSET](../java/util/Calendar.md) 
+- [java.util.Calendar#ZONE_OFFSET](Calendar.md)
+- [java.util.Calendar#DST_OFFSET](Calendar.md) 
 
 ### getRawOffset
 
@@ -454,7 +454,7 @@ If an underlying`TimeZone`implementation subclass supports historical GMT offset
 
 **See Also**
 
-- [java.util.Calendar#ZONE_OFFSET](../java/util/Calendar.md) 
+- [java.util.Calendar#ZONE_OFFSET](Calendar.md) 
 
 ### getTimeZone
 
@@ -472,7 +472,7 @@ Gets the`TimeZone`for the given ID.
 
 | Return ||
 |---------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| [TimeZone](../java/util/TimeZone.md)! | the specified`TimeZone`, or the GMT zone if the given ID cannot be understood. |
+| [TimeZone](TimeZone.md)! | the specified`TimeZone`, or the GMT zone if the given ID cannot be understood. |
 
 | Exceptions ||
 |----------------------------------|----------------|
@@ -490,11 +490,11 @@ Gets the`TimeZone`for the given`zoneId`.
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `zoneId` | [ZoneId](../java/time/ZoneId.md)!:a [ZoneId](../java/time/ZoneId.md) from which the time zone ID is obtained |
+| `zoneId` | [ZoneId](../java.time/ZoneId.md)!:a [ZoneId](../java.time/ZoneId.md) from which the time zone ID is obtained |
 
 | Return ||
 |---------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| [TimeZone](../java/util/TimeZone.md)! | the specified`TimeZone`, or the GMT zone if the given ID cannot be understood. |
+| [TimeZone](TimeZone.md)! | the specified`TimeZone`, or the GMT zone if the given ID cannot be understood. |
 
 | Exceptions ||
 |----------------------------------|--------------------|
@@ -512,7 +512,7 @@ Returns true if this zone has the same rule and offset as another zone. That is,
 
 | Parameters ||
 |---------|-------------------------------------------------------------------------------------------------------------------------|
-| `other` | [TimeZone](../java/util/TimeZone.md)!:the`TimeZone`object to be compared with |
+| `other` | [TimeZone](TimeZone.md)!:the`TimeZone`object to be compared with |
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
@@ -530,7 +530,7 @@ Queries if the given`date`is in Daylight Saving Time in this time zone.
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------|
-| `date` | [Date](../java/util/Date.md)!:the given Date. |
+| `date` | [Date](Date.md)!:the given Date. |
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------------------------------------|
@@ -559,8 +559,8 @@ The default implementation returns`true`if`useDaylightTime()`or`inDaylightTime(n
 **See Also**
 
 - <https://developer.android.com/reference/kotlin/java/util/TimeZone#useDaylightTime()>
-- [#inDaylightTime(Date)](../java/util/TimeZone.md))
-- [java.util.Calendar#DST_OFFSET](../java/util/Calendar.md) 
+- [#inDaylightTime(Date)](TimeZone.md))
+- [java.util.Calendar#DST_OFFSET](Calendar.md) 
 
 ### setDefault
 
@@ -574,11 +574,11 @@ Sets the`TimeZone`that is returned by the`getDefault`method.`zone`is cached. If`
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------|
-| `timeZone` | [TimeZone](../java/util/TimeZone.md)!:the new default`TimeZone`, or null |
+| `timeZone` | [TimeZone](TimeZone.md)!:the new default`TimeZone`, or null |
 
 **See Also**
 
-- [#getDefault](../java/util/TimeZone.md)) 
+- [#getDefault](TimeZone.md)) 
 
 ### setID
 
@@ -626,7 +626,7 @@ Converts this`TimeZone`object to a`ZoneId`.
 
 | Return ||
 |----------------------------------------------------------------------------------|------------------------------------------------------------|
-| [ZoneId](../java/time/ZoneId.md)! | a`ZoneId`representing the same time zone as this`TimeZone` |
+| [ZoneId](../java.time/ZoneId.md)! | a`ZoneId`representing the same time zone as this`TimeZone` |
 
 ### useDaylightTime
 
@@ -638,7 +638,7 @@ abstract fun useDaylightTime(): Boolean
 
 Queries if this`TimeZone`uses Daylight Saving Time.
 
-If an underlying`TimeZone`implementation subclass supports historical and future Daylight Saving Time schedule changes, this method refers to the last known Daylight Saving Time rule that can be a future prediction and may not be the same as the current rule. Consider calling [observesDaylightTime()](../java/util/TimeZone.md))if the current rule should also be taken into account.
+If an underlying`TimeZone`implementation subclass supports historical and future Daylight Saving Time schedule changes, this method refers to the last known Daylight Saving Time rule that can be a future prediction and may not be the same as the current rule. Consider calling [observesDaylightTime()](TimeZone.md))if the current rule should also be taken into account.
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------------------------------------------------------------|
@@ -646,5 +646,5 @@ If an underlying`TimeZone`implementation subclass supports historical and future
 
 **See Also**
 
-- [#inDaylightTime(Date)](../java/util/TimeZone.md))
-- [java.util.Calendar#DST_OFFSET](../java/util/Calendar.md)
+- [#inDaylightTime(Date)](TimeZone.md))
+- [java.util.Calendar#DST_OFFSET](Calendar.md)

@@ -4,7 +4,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 
 # Notation
 
-Kotlin| [Java](../android/icu/number/Notation.md) 
+Kotlin| [Java](Notation.md) 
 | --- | --- |
 
 ```
@@ -13,9 +13,9 @@ open class Notation
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.icu.number.Notation](../android/icu/number/Notation.md) |
+| ↳ | [android.icu.number.Notation](Notation.md) |
 
-| Known Direct Subclasses [CompactNotation](../android/icu/number/CompactNotation.md), [ScientificNotation](../android/icu/number/ScientificNotation.md), [SimpleNotation](../android/icu/number/SimpleNotation.md) |------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------| | [CompactNotation](../android/icu/number/CompactNotation.md) | A class that defines the scientific notation style to be used when formatting numbers in NumberFormatter. | | [ScientificNotation](../android/icu/number/ScientificNotation.md) | A class that defines the scientific notation style to be used when formatting numbers in NumberFormatter. | | [SimpleNotation](../android/icu/number/SimpleNotation.md) | A class that defines the simple notation style to be used when formatting numbers in NumberFormatter. | |
+| Known Direct Subclasses [CompactNotation](CompactNotation.md), [ScientificNotation](ScientificNotation.md), [SimpleNotation](SimpleNotation.md) |------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------| | [CompactNotation](CompactNotation.md) | A class that defines the scientific notation style to be used when formatting numbers in NumberFormatter. | | [ScientificNotation](ScientificNotation.md) | A class that defines the scientific notation style to be used when formatting numbers in NumberFormatter. | | [SimpleNotation](SimpleNotation.md) | A class that defines the simple notation style to be used when formatting numbers in NumberFormatter. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 A class that defines the notation style to be used when formatting numbers in NumberFormatter.
@@ -24,12 +24,12 @@ A class that defines the notation style to be used when formatting numbers in Nu
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [CompactNotation](../android/icu/number/CompactNotation.md)! | [compactLong](../android/icu/number/Notation.md))`()` Print the number using long-form compact notation. |
-| openstatic [CompactNotation](../android/icu/number/CompactNotation.md)! | [compactShort](../android/icu/number/Notation.md))`()` Print the number using short-form compact notation. |
-| openstatic [ScientificNotation](../android/icu/number/ScientificNotation.md)! | [engineering](../android/icu/number/Notation.md))`()` Print the number using engineering notation, a variant of scientific notation in which the exponent must be divisible by 3. |
+| openstatic [CompactNotation](CompactNotation.md)! | [compactLong](Notation.md))`()` Print the number using long-form compact notation. |
+| openstatic [CompactNotation](CompactNotation.md)! | [compactShort](Notation.md))`()` Print the number using short-form compact notation. |
+| openstatic [ScientificNotation](ScientificNotation.md)! | [engineering](Notation.md))`()` Print the number using engineering notation, a variant of scientific notation in which the exponent must be divisible by 3. |
 | --- | --- |
-| openstatic [ScientificNotation](../android/icu/number/ScientificNotation.md)! | [scientific](../android/icu/number/Notation.md))`()` Print the number using scientific notation (also known as scientific form, standard index form, or standard form in the UK). |
-| openstatic [SimpleNotation](../android/icu/number/SimpleNotation.md)! | [simple](../android/icu/number/Notation.md))`()` Print the number using simple notation without any scaling by powers of ten. |
+| openstatic [ScientificNotation](ScientificNotation.md)! | [scientific](Notation.md))`()` Print the number using scientific notation (also known as scientific form, standard index form, or standard form in the UK). |
+| openstatic [SimpleNotation](SimpleNotation.md)! | [simple](Notation.md))`()` Print the number using simple notation without any scaling by powers of ten. |
 
 ## Public methods
 
@@ -41,7 +41,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 open static fun compactLong(): CompactNotation!
 ```
 
-Print the number using long-form compact notation. For more information on compact notation, see [compactShort](../android/icu/number/Notation.md)).
+Print the number using long-form compact notation. For more information on compact notation, see [compactShort](Notation.md)).
 
 In long form, the powers of ten are spelled out fully. Example outputs in*en-US*when printing 8.765E7 through 8.765E0: 
 
@@ -59,11 +59,11 @@ In long form, the powers of ten are spelled out fully. Example outputs in*en-US*
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| [CompactNotation](../android/icu/number/CompactNotation.md)! | A CompactNotation for passing to the NumberFormatter notation() setter. |
+| [CompactNotation](CompactNotation.md)! | A CompactNotation for passing to the NumberFormatter notation() setter. |
 
 **See Also**
 
-- [android.icu.number.NumberFormatter](../android/icu/number/NumberFormatter.md) 
+- [android.icu.number.NumberFormatter](NumberFormatter.md) 
 
 ### compactShort
 
@@ -102,11 +102,11 @@ Rounder.integer().withMinDigits(2)
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| [CompactNotation](../android/icu/number/CompactNotation.md)! | A CompactNotation for passing to the NumberFormatter notation() setter. |
+| [CompactNotation](CompactNotation.md)! | A CompactNotation for passing to the NumberFormatter notation() setter. |
 
 **See Also**
 
-- [android.icu.number.NumberFormatter](../android/icu/number/NumberFormatter.md) 
+- [android.icu.number.NumberFormatter](NumberFormatter.md) 
 
 ### engineering
 
@@ -135,11 +135,11 @@ Example outputs in*en-US*when printing 8.765E4 through 8.765E-3:
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| [ScientificNotation](../android/icu/number/ScientificNotation.md)! | A ScientificNotation for chaining or passing to the NumberFormatter notation() setter. |
+| [ScientificNotation](ScientificNotation.md)! | A ScientificNotation for chaining or passing to the NumberFormatter notation() setter. |
 
 **See Also**
 
-- [android.icu.number.NumberFormatter](../android/icu/number/NumberFormatter.md) 
+- [android.icu.number.NumberFormatter](NumberFormatter.md) 
 
 ### scientific
 
@@ -168,11 +168,11 @@ Example outputs in*en-US*when printing 8.765E4 through 8.765E-3:
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| [ScientificNotation](../android/icu/number/ScientificNotation.md)! | A ScientificNotation for chaining or passing to the NumberFormatter notation() setter. |
+| [ScientificNotation](ScientificNotation.md)! | A ScientificNotation for chaining or passing to the NumberFormatter notation() setter. |
 
 **See Also**
 
-- [android.icu.number.NumberFormatter](../android/icu/number/NumberFormatter.md) 
+- [android.icu.number.NumberFormatter](NumberFormatter.md) 
 
 ### simple
 
@@ -202,8 +202,8 @@ Example outputs in*en-US*when printing 8.765E7 through 8.765E0:
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------|
-| [SimpleNotation](../android/icu/number/SimpleNotation.md)! | A SimpleNotation for passing to the NumberFormatter notation() setter. |
+| [SimpleNotation](SimpleNotation.md)! | A SimpleNotation for passing to the NumberFormatter notation() setter. |
 
 **See Also**
 
-- [android.icu.number.NumberFormatter](../android/icu/number/NumberFormatter.md)
+- [android.icu.number.NumberFormatter](NumberFormatter.md)

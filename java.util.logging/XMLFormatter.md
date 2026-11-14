@@ -10,8 +10,8 @@ open class XMLFormatter : Formatter
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.util.logging.Formatter](../java/util/logging/Formatter.md) ||
-| | ↳ | [java.util.logging.XMLFormatter](../java/util/logging/XMLFormatter.md) |
+| ↳ | [java.util.logging.Formatter](Formatter.md) ||
+| | ↳ | [java.util.logging.XMLFormatter](XMLFormatter.md) |
 
 Format a LogRecord into a standard XML format.
 
@@ -23,18 +23,18 @@ The XMLFormatter can be used with arbitrary character encodings, but it is recom
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------|---|
-| [XMLFormatter](../java/util/logging/XMLFormatter.md))`()` <br /> |
+| [XMLFormatter](XMLFormatter.md))`()` <br /> |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](../java/util/logging/XMLFormatter.md))`(`record:` ` [LogRecord](../java/util/logging/LogRecord.md)!`)` Format the given message to XML. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getHead](../java/util/logging/XMLFormatter.md))`(`h:` ` [Handler](../java/util/logging/Handler.md)!`)` Return the header string for a set of XML formatted records. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getTail](../java/util/logging/XMLFormatter.md))`(`h:` ` [Handler](../java/util/logging/Handler.md)!`)` Return the tail string for a set of XML formatted records. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](XMLFormatter.md))`(`record:` ` [LogRecord](LogRecord.md)!`)` Format the given message to XML. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getHead](XMLFormatter.md))`(`h:` ` [Handler](Handler.md)!`)` Return the header string for a set of XML formatted records. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getTail](XMLFormatter.md))`(`h:` ` [Handler](Handler.md)!`)` Return the tail string for a set of XML formatted records. |
 | --- | --- |
 
 | Inherited functions ||
 |---|---|
-| From class [Formatter](../java/util/logging/Formatter.md) |-----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [formatMessage](../java/util/logging/Formatter.md))`(`record:` ` [LogRecord](../java/util/logging/LogRecord.md)!`)` <br /> Localize and format the message string from a log record. This method is provided as a convenience for Formatter subclasses to use when they are performing formatting. The message string is first localized to a format string using the record's ResourceBundle. (If there is no ResourceBundle, or if the message key is not found, then the key is used as the format string.) The format String uses java.text style formatting. - If there are no parameters, no formatter is used. - Otherwise, if the string contains "{0" then java.text.MessageFormat is used to format the string. - Otherwise no formatting is performed. <br /> <br /> | ||
+| From class [Formatter](Formatter.md) |-----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [formatMessage](Formatter.md))`(`record:` ` [LogRecord](LogRecord.md)!`)` <br /> Localize and format the message string from a log record. This method is provided as a convenience for Formatter subclasses to use when they are performing formatting. The message string is first localized to a format string using the record's ResourceBundle. (If there is no ResourceBundle, or if the message key is not found, then the key is used as the format string.) The format String uses java.text style formatting. - If there are no parameters, no formatter is used. - Otherwise, if the string contains "{0" then java.text.MessageFormat is used to format the string. - Otherwise no formatting is performed. <br /> <br /> | ||
 
 ## Public constructors
 
@@ -58,11 +58,11 @@ open fun format(record: LogRecord!): String!
 
 Format the given message to XML.
 
-This method can be overridden in a subclass. It is recommended to use the [Formatter.formatMessage](../java/util/logging/Formatter.md))convenience method to localize and format the message field.
+This method can be overridden in a subclass. It is recommended to use the [Formatter.formatMessage](Formatter.md))convenience method to localize and format the message field.
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------------------|
-| `record` | [LogRecord](../java/util/logging/LogRecord.md)!:the log record to be formatted. |
+| `record` | [LogRecord](LogRecord.md)!:the log record to be formatted. |
 
 | Return ||
 |-----------------------------------------------------------------------------------|------------------------|
@@ -80,7 +80,7 @@ Return the header string for a set of XML formatted records.
 
 | Parameters ||
 |-----|-----------------------------------------------------------------------------------------------------------------------|
-| `h` | [Handler](../java/util/logging/Handler.md)!:The target handler (can be null) |
+| `h` | [Handler](Handler.md)!:The target handler (can be null) |
 
 | Return ||
 |-----------------------------------------------------------------------------------|--------------------|
@@ -98,7 +98,7 @@ Return the tail string for a set of XML formatted records.
 
 | Parameters ||
 |-----|-----------------------------------------------------------------------------------------------------------------------|
-| `h` | [Handler](../java/util/logging/Handler.md)!:The target handler (can be null) |
+| `h` | [Handler](Handler.md)!:The target handler (can be null) |
 
 | Return ||
 |-----------------------------------------------------------------------------------|--------------------|

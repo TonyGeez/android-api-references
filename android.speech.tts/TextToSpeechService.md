@@ -8,11 +8,11 @@ abstract class TextToSpeechService : Service
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](../android/content/Context.md) ||||
-| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) |||
-| | | ↳ | [android.app.Service](../android/app/Service.md) ||
+| ↳ | [android.content.Context](../android.content/Context.md) ||||
+| | ↳ | [android.content.ContextWrapper](../android.content/ContextWrapper.md) |||
+| | | ↳ | [android.app.Service](../android.app/Service.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.speech.tts.TextToSpeechService](../android/speech/tts/TextToSpeechService.md) |
+| | | | ↳ | [android.speech.tts.TextToSpeechService](TextToSpeechService.md) |
 
 Abstract base class for TTS engine implementations. The following methods need to be implemented:
 
@@ -1058,12 +1058,12 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 
 | Public methods ||
 |---|---|
-| open [IBinder](../android/os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/speech/tts/TextToSpeechService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
+| open [IBinder](../android.os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/speech/tts/TextToSpeechService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/speech/tts/TextToSpeechService#onCreate()()` Called by the system when the service is first created. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/speech/tts/TextToSpeechService#onDestroy()()` Called by the system to notify a Service that it is no longer used and is being removed. |
 | --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/speech/tts/TextToSpeechService#onGetDefaultVoiceNameFor(kotlin.String,%20kotlin.String,%20kotlin.String)(lang: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, country: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, variant: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Return a name of the default voice for a given locale. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Voice](../android/speech/tts/Voice.md)!\>! | `https://developer.android.com/reference/kotlin/android/speech/tts/TextToSpeechService#onGetVoices()()` Queries the service for a set of supported voices. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Voice](Voice.md)!\>! | `https://developer.android.com/reference/kotlin/android/speech/tts/TextToSpeechService#onGetVoices()()` Queries the service for a set of supported voices. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/speech/tts/TextToSpeechService#onIsValidVoiceName(kotlin.String)(voiceName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Checks whether the engine supports a voice with a given name. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/speech/tts/TextToSpeechService#onLoadVoice(kotlin.String)(voiceName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Notifies the engine that it should load a speech synthesis voice. |
@@ -2782,7 +2782,7 @@ Return the communication channel to the service. May return null if clients can 
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
+| `intent` | [Intent](../android.content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
 
 | Return ||
 |---|---|
@@ -3005,5 +3005,5 @@ Tells the service to synthesize speech from the given text. This method should b
 
 | Parameters ||
 |---|---|
-| `request` | [SynthesisRequest](../android/speech/tts/SynthesisRequest.md)!: The synthesis request. |
-| `callback` | [SynthesisCallback](../android/speech/tts/SynthesisCallback.md)!: The callback that the engine must use to make data available for playback or for writing to a file. |
+| `request` | [SynthesisRequest](SynthesisRequest.md)!: The synthesis request. |
+| `callback` | [SynthesisCallback](SynthesisCallback.md)!: The callback that the engine must use to make data available for playback or for writing to a file. |

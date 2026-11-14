@@ -5,14 +5,14 @@ Deprecated in [API level 24](https://developer.android.com/guide/topics/manifest
 
 # PerformanceTestCase
 
-Kotlin| [Java](../android/test/PerformanceTestCase.md) 
+Kotlin| [Java](PerformanceTestCase.md) 
 | --- | --- |
 
 ```
 interface PerformanceTestCase
 ```
 
-| [android.test.PerformanceTestCase](../android/test/PerformanceTestCase.md) |
+| [android.test.PerformanceTestCase](PerformanceTestCase.md) |
 
 | **This interface was deprecated in API level 24.**
 |
@@ -24,12 +24,12 @@ More complex interface performance for test cases. If you want your test to be u
 
 | Nested classes ||
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract | [Intermediates](../android/test/PerformanceTestCase.Intermediates.md) Callbacks for [PerformanceTestCase](../android/test/PerformanceTestCase.md). |
+| abstract | [Intermediates](../android/test/PerformanceTestCase.Intermediates.md) Callbacks for [PerformanceTestCase](PerformanceTestCase.md). |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPerformanceOnly](../android/test/PerformanceTestCase.md))`()` This method is used to determine what modes this test case can run in. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [startPerformance](../android/test/PerformanceTestCase.md))`(`intermediates:` ` [PerformanceTestCase.Intermediates](../android/test/PerformanceTestCase.Intermediates.md)!`)` Set up to begin performance tests. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPerformanceOnly](PerformanceTestCase.md))`()` This method is used to determine what modes this test case can run in. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [startPerformance](PerformanceTestCase.md))`(`intermediates:` ` [PerformanceTestCase.Intermediates](../android/test/PerformanceTestCase.Intermediates.md)!`)` Set up to begin performance tests. |
 
 ## Public methods
 

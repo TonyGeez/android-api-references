@@ -3,7 +3,7 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 
 # RingtonePreference
 
-Kotlin | [Java](../android/preference/RingtonePreference.md)
+Kotlin | [Java](RingtonePreference.md)
 | --- | --- |
 
 ```
@@ -12,8 +12,8 @@ open class RingtonePreference : Preference, PreferenceManager.OnActivityResult
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.preference.Preference](../android/preference/Preference.md) ||
-| | ↳ | [android.preference.RingtonePreference](../android/preference/RingtonePreference.md) |
+| ↳ | [android.preference.Preference](Preference.md) ||
+| | ↳ | [android.preference.RingtonePreference](RingtonePreference.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 29.**
@@ -28,9 +28,9 @@ If the user chooses the "Default" item, the saved string will be one of `https:/
 
 | XML attributes ||
 |---|---|
-| [`android:ringtoneType`](../android/preference/RingtonePreference.md) | Which ringtone type(s) to show in the picker. |
-| [`android:showDefault`](../android/preference/RingtonePreference.md) | Whether to show an item for a default sound. |
-| [`android:showSilent`](../android/preference/RingtonePreference.md) | Whether to show an item for 'Silent'. |
+| [`android:ringtoneType`](RingtonePreference.md) | Which ringtone type(s) to show in the picker. |
+| [`android:showDefault`](RingtonePreference.md) | Whether to show an item for a default sound. |
+| [`android:showSilent`](RingtonePreference.md) | Whether to show an item for 'Silent'. |
 | --- | --- |
 
 | Inherited XML attributes ||
@@ -67,7 +67,7 @@ If the user chooses the "Default" item, the saved string will be one of `https:/
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | `https://developer.android.com/reference/kotlin/android/preference/RingtonePreference#onGetDefaultValue(android.content.res.TypedArray,%20kotlin.Int)(a: https://developer.android.com/reference/kotlin/android/content/res/TypedArray.html#!, index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called when a Preference is being inflated and the default value attribute needs to be read. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/preference/RingtonePreference#onPrepareRingtonePickerIntent(android.content.Intent)(ringtonePickerIntent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Prepares the intent to launch the ringtone picker. |
-| open [Uri](../android/net/Uri.md)! | `https://developer.android.com/reference/kotlin/android/preference/RingtonePreference#onRestoreRingtone()()` Called when the chooser is about to be shown and the current ringtone should be marked. |
+| open [Uri](../android.net/Uri.md)! | `https://developer.android.com/reference/kotlin/android/preference/RingtonePreference#onRestoreRingtone()()` Called when the chooser is about to be shown and the current ringtone should be marked. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/preference/RingtonePreference#onSaveRingtone(android.net.Uri)(ringtoneUri: https://developer.android.com/reference/kotlin/android/net/Uri.html#!)` Called when a ringtone is chosen. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/preference/RingtonePreference#onSetInitialValue(kotlin.Boolean,%20kotlin.Any)(restorePersistedValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, defaultValueObj: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html!)` Implement this to set the initial value of the Preference. |
@@ -307,7 +307,7 @@ Called when this Preference has been attached to a Preference hierarchy. Make su
 
 | Parameters ||
 |---|---|
-| `preferenceManager` | [PreferenceManager](../android/preference/PreferenceManager.md)!: The PreferenceManager of the hierarchy. |
+| `preferenceManager` | [PreferenceManager](PreferenceManager.md)!: The PreferenceManager of the hierarchy. |
 
 ### onClick
 
@@ -340,7 +340,7 @@ For example, if the value type is String, the body of the method would proxy to 
 
 | Parameters ||
 |---|---|
-| `a` | [TypedArray](../android/content/res/TypedArray.md)!: The set of attributes. |
+| `a` | [TypedArray](../android.content.res/TypedArray.md)!: The set of attributes. |
 | `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The index of the default value attribute. |
 
 | Return ||
@@ -361,7 +361,7 @@ Prepares the intent to launch the ringtone picker. This can be modified to adjus
 
 | Parameters ||
 |---|---|
-| `ringtonePickerIntent` | [Intent](../android/content/Intent.md)!: The ringtone picker intent that can be modified by putting extras. |
+| `ringtonePickerIntent` | [Intent](../android.content/Intent.md)!: The ringtone picker intent that can be modified by putting extras. |
 
 ### onRestoreRingtone
 
@@ -397,7 +397,7 @@ By default, this saves the ringtone URI to the persistent storage as a string.
 
 | Parameters ||
 |---|---|
-| `ringtoneUri` | [Uri](../android/net/Uri.md)!: The chosen ringtone's `https://developer.android.com/reference/kotlin/android/net/Uri.html#`. Can be null. |
+| `ringtoneUri` | [Uri](../android.net/Uri.md)!: The chosen ringtone's `https://developer.android.com/reference/kotlin/android/net/Uri.html#`. Can be null. |
 
 ### onSetInitialValue
 

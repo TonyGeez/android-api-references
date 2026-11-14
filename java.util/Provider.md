@@ -12,14 +12,14 @@ interface Provider<S : Any!> : Supplier<S>
 
 Represents a service provider located by`ServiceLoader`.
 
-When using a loader's [stream()](../java/util/ServiceLoader.md))method then the elements are of type`Provider`. This allows processing to select or filter on the provider class without instantiating the provider.
+When using a loader's [stream()](ServiceLoader.md))method then the elements are of type`Provider`. This allows processing to select or filter on the provider class without instantiating the provider.
 
 ## Summary
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
 | abstractS | [get](../java/util/ServiceLoader.Provider.md))`()` Returns an instance of the provider. |
-| abstract [Class](../java/lang/Class.md)\<outS\>! | [type](../java/util/ServiceLoader.Provider.md))`()` Returns the provider type. |
+| abstract [Class](../java.lang/Class.md)\<outS\>! | [type](../java/util/ServiceLoader.Provider.md))`()` Returns the provider type. |
 
 ## Public methods
 
@@ -55,4 +55,4 @@ When a module declares that the provider class is created by a provider factory 
 
 | Return ||
 |-----------------------------------------------------------------------------------------|-------------------|
-| [Class](../java/lang/Class.md)<out` `S>! | The provider type |
+| [Class](../java.lang/Class.md)<out` `S>! | The provider type |

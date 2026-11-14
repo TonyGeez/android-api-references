@@ -8,7 +8,7 @@ class IkeTrafficSelector
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.ipsec.ike.IkeTrafficSelector](../android/net/ipsec/ike/IkeTrafficSelector.md) |
+| ↳ | [android.net.ipsec.ike.IkeTrafficSelector](IkeTrafficSelector.md) |
 
 IkeTrafficSelector represents a Traffic Selector of a Child Session.
 
@@ -30,10 +30,10 @@ Callers can propose `https://developer.android.com/reference/kotlin/android/net/
 | Properties ||
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeTrafficSelector#endPort:kotlin.Int` The largest port number allowed by this Traffic Selector. |
-| [InetAddress](../java/net/InetAddress.md) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeTrafficSelector#endingAddress:java.net.InetAddress` The largest address included in this Traffic Selector. |
+| [InetAddress](../java.net/InetAddress.md) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeTrafficSelector#endingAddress:java.net.InetAddress` The largest address included in this Traffic Selector. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeTrafficSelector#startPort:kotlin.Int` The smallest port number allowed by this Traffic Selector. |
 | --- | --- |
-| [InetAddress](../java/net/InetAddress.md) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeTrafficSelector#startingAddress:java.net.InetAddress` The smallest address included in this Traffic Selector. |
+| [InetAddress](../java.net/InetAddress.md) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeTrafficSelector#startingAddress:java.net.InetAddress` The smallest address included in this Traffic Selector. |
 
 ## Public constructors
 
@@ -57,9 +57,9 @@ Android platform does not support port-based routing. The port range negotiation
 |---|---|
 | `startPort` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the smallest port number allowed by this Traffic Selector. |
 | `endPort` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the largest port number allowed by this Traffic Selector. |
-| `startingAddress` | [InetAddress](../java/net/InetAddress.md): the smallest address included in this Traffic Selector. This value cannot be `null`. |
+| `startingAddress` | [InetAddress](../java.net/InetAddress.md): the smallest address included in this Traffic Selector. This value cannot be `null`. |
 | --- | --- |
-| `endingAddress` | [InetAddress](../java/net/InetAddress.md): the largest address included in this Traffic Selector. This value cannot be `null`. |
+| `endingAddress` | [InetAddress](../java.net/InetAddress.md): the largest address included in this Traffic Selector. This value cannot be `null`. |
 
 ## Public methods
 

@@ -8,7 +8,7 @@ class SavedDatasetsInfo
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.service.autofill.SavedDatasetsInfo](../android/service/autofill/SavedDatasetsInfo.md) |
+| ↳ | [android.service.autofill.SavedDatasetsInfo](SavedDatasetsInfo.md) |
 
 A result returned from `https://developer.android.com/reference/kotlin/android/service/autofill/AutofillService#onSavedDatasetsInfoRequest(android.service.autofill.SavedDatasetsInfoCallback)`.
 

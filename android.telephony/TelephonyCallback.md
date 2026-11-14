@@ -4,7 +4,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # TelephonyCallback
 
-Kotlin| [Java](../android/telephony/TelephonyCallback.md) 
+Kotlin| [Java](TelephonyCallback.md) 
 | --- | --- |
 
 ```
@@ -13,11 +13,11 @@ open class TelephonyCallback
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.telephony.TelephonyCallback](../android/telephony/TelephonyCallback.md) |
+| ↳ | [android.telephony.TelephonyCallback](TelephonyCallback.md) |
 
 A callback class for monitoring changes in specific telephony states on the device, including service state, signal strength, message waiting indicator (voicemail), and others.
 
-To register a callback, use a [TelephonyCallback](../android/telephony/TelephonyCallback.md) which implements interfaces regarding EVENT_\*. For example, FakeServiceStateCallback extends [TelephonyCallback](../android/telephony/TelephonyCallback.md) implements [TelephonyCallback.ServiceStateListener](../android/telephony/TelephonyCallback.ServiceStateListener.md).
+To register a callback, use a [TelephonyCallback](TelephonyCallback.md) which implements interfaces regarding EVENT_\*. For example, FakeServiceStateCallback extends [TelephonyCallback](TelephonyCallback.md) implements [TelephonyCallback.ServiceStateListener](../android/telephony/TelephonyCallback.ServiceStateListener.md).
 
 Then override the methods for the state that you wish to receive updates for, and pass the executor and your TelephonyCallback object to android.telephony.TelephonyManager#registerTelephonyCallback. Methods are called when the state changes, as well as once on initial registration.
 
@@ -58,7 +58,7 @@ Note that access to some telephony information is permission-protected. Your app
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------|---|
-| [TelephonyCallback](../android/telephony/TelephonyCallback.md))`()` <br /> |
+| [TelephonyCallback](TelephonyCallback.md))`()` <br /> |
 
 ## Public constructors
 

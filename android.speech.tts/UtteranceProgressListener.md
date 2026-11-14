@@ -4,7 +4,7 @@ Added in [API level 15](https://developer.android.com/guide/topics/manifest/uses
 
 # UtteranceProgressListener
 
-Kotlin| [Java](../android/speech/tts/UtteranceProgressListener.md) 
+Kotlin| [Java](UtteranceProgressListener.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ abstract class UtteranceProgressListener
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.speech.tts.UtteranceProgressListener](../android/speech/tts/UtteranceProgressListener.md) |
+| ↳ | [android.speech.tts.UtteranceProgressListener](UtteranceProgressListener.md) |
 
 Listener for events relating to the progress of an utterance through the synthesis queue. Each utterance is associated with a call to android.speech.tts.TextToSpeech#speak or android.speech.tts.TextToSpeech#synthesizeToFile with an associated utterance identifier, as per [TextToSpeech.Engine.KEY_PARAM_UTTERANCE_ID](../android/speech/tts/TextToSpeech.Engine.md). The callbacks specified in this method can be called from multiple threads.
 
@@ -21,20 +21,20 @@ Listener for events relating to the progress of an utterance through the synthes
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [UtteranceProgressListener](../android/speech/tts/UtteranceProgressListener.md))`()` <br /> |
+| [UtteranceProgressListener](UtteranceProgressListener.md))`()` <br /> |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAudioAvailable](../android/speech/tts/UtteranceProgressListener.md))`(`utteranceId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `audio:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` This is called when a chunk of audio is ready for consumption. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onBeginSynthesis](../android/speech/tts/UtteranceProgressListener.md))`(`utteranceId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `sampleRateInHz:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `audioFormat:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `channelCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when the TTS engine begins to synthesize the audio for a request. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDone](../android/speech/tts/UtteranceProgressListener.md))`(`utteranceId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Called when an utterance has successfully completed processing. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAudioAvailable](UtteranceProgressListener.md))`(`utteranceId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `audio:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` This is called when a chunk of audio is ready for consumption. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onBeginSynthesis](UtteranceProgressListener.md))`(`utteranceId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `sampleRateInHz:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `audioFormat:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `channelCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when the TTS engine begins to synthesize the audio for a request. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDone](UtteranceProgressListener.md))`(`utteranceId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Called when an utterance has successfully completed processing. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onError](../android/speech/tts/UtteranceProgressListener.md))`(`utteranceId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Called when an error has occurred during processing. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onError](../android/speech/tts/UtteranceProgressListener.md))`(`utteranceId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `errorCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when an error has occurred during processing. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onRangeStart](../android/speech/tts/UtteranceProgressListener.md))`(`utteranceId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `frame:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` This is called when the TTS service is about to speak the specified range of the utterance with the given utteranceId. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onError](UtteranceProgressListener.md))`(`utteranceId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Called when an error has occurred during processing. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onError](UtteranceProgressListener.md))`(`utteranceId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `errorCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when an error has occurred during processing. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onRangeStart](UtteranceProgressListener.md))`(`utteranceId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `frame:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` This is called when the TTS service is about to speak the specified range of the utterance with the given utteranceId. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStart](../android/speech/tts/UtteranceProgressListener.md))`(`utteranceId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Called when an utterance "starts" as perceived by the caller. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStop](../android/speech/tts/UtteranceProgressListener.md))`(`utteranceId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `interrupted:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Called when an utterance has been stopped while in progress or flushed from the synthesis queue. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStart](UtteranceProgressListener.md))`(`utteranceId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Called when an utterance "starts" as perceived by the caller. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStop](UtteranceProgressListener.md))`(`utteranceId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `interrupted:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Called when an utterance has been stopped while in progress or flushed from the synthesis queue. |
 
 ## Public constructors
 
@@ -59,14 +59,14 @@ open fun onAudioAvailable(
 
 This is called when a chunk of audio is ready for consumption.
 
-The audio parameter is a copy of what will be synthesized to the speakers (when synthesis was initiated with a android.speech.tts.TextToSpeech#speak call) or written to the file system (for android.speech.tts.TextToSpeech#synthesizeToFile). The audio bytes are delivered in one or more chunks; if [onDone](../android/speech/tts/UtteranceProgressListener.md))or #onError is called all chunks have been received.
+The audio parameter is a copy of what will be synthesized to the speakers (when synthesis was initiated with a android.speech.tts.TextToSpeech#speak call) or written to the file system (for android.speech.tts.TextToSpeech#synthesizeToFile). The audio bytes are delivered in one or more chunks; if [onDone](UtteranceProgressListener.md))or #onError is called all chunks have been received.
 
 The audio received here may not be played for some time depending on buffer sizes and the amount of items on the synthesis queue.
 
 | Parameters ||
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `utteranceId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The utterance ID of the utterance. |
-| `audio` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:A chunk of audio; the format can be known by listening to [onBeginSynthesis(java.lang.String,int,int,int)](../android/speech/tts/UtteranceProgressListener.md)). |
+| `audio` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:A chunk of audio; the format can be known by listening to [onBeginSynthesis(java.lang.String,int,int,int)](UtteranceProgressListener.md)). |
 
 ### onBeginSynthesis
 
@@ -83,7 +83,7 @@ open fun onBeginSynthesis(
 
 Called when the TTS engine begins to synthesize the audio for a request.
 
-It provides information about the format of the byte array for subsequent [onAudioAvailable](../android/speech/tts/UtteranceProgressListener.md))calls.
+It provides information about the format of the byte array for subsequent [onAudioAvailable](UtteranceProgressListener.md))calls.
 
 This is called when the TTS engine starts synthesizing audio for the request. If an application wishes to know when the audio is about to start playing, {#onStart(String)} should be used instead.
 
@@ -91,7 +91,7 @@ This is called when the TTS engine starts synthesizing audio for the request. If
 |------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `utteranceId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The utterance ID of the utterance. |
 | `sampleRateInHz` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Sample rate in hertz of the generated audio. |
-| `audioFormat` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Audio format of the generated audio. Should be one of [AudioFormat.ENCODING_PCM_8BIT](../android/media/AudioFormat.md), [AudioFormat.ENCODING_PCM_16BIT](../android/media/AudioFormat.md) or [AudioFormat.ENCODING_PCM_FLOAT](../android/media/AudioFormat.md). |
+| `audioFormat` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Audio format of the generated audio. Should be one of [AudioFormat.ENCODING_PCM_8BIT](../android.media/AudioFormat.md), [AudioFormat.ENCODING_PCM_16BIT](../android.media/AudioFormat.md) or [AudioFormat.ENCODING_PCM_FLOAT](../android.media/AudioFormat.md). |
 | --- | --- |
 | `channelCount` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The number of channels. |
 
@@ -103,7 +103,7 @@ Added in [API level 15](https://developer.android.com/guide/topics/manifest/uses
 abstract fun onDone(utteranceId: String!): Unit
 ```
 
-Called when an utterance has successfully completed processing. All audio will have been played back by this point for audible output, and all output will have been written to disk for file synthesis requests. This request is guaranteed to be called after [onStart(java.lang.String)](../android/speech/tts/UtteranceProgressListener.md)).
+Called when an utterance has successfully completed processing. All audio will have been played back by this point for audible output, and all output will have been written to disk for file synthesis requests. This request is guaranteed to be called after [onStart(java.lang.String)](UtteranceProgressListener.md)).
 
 | Parameters ||
 |---------------|----------------------------------------------------------------------------------------------------------------------|
@@ -118,9 +118,9 @@ Deprecated in [API level 21](https://developer.android.com/guide/topics/manifest
 abstract fun onError(utteranceId: String!): Unit
 ```
 
-**Deprecated:** *Use [onError(java.lang.String,int)](../android/speech/tts/UtteranceProgressListener.md))instead*
+**Deprecated:** *Use [onError(java.lang.String,int)](UtteranceProgressListener.md))instead*
 
-Called when an error has occurred during processing. This can be called at any point in the synthesis process. Note that there might be calls to [onStart(java.lang.String)](../android/speech/tts/UtteranceProgressListener.md))for specified utteranceId but there will never be a call to both [onDone(java.lang.String)](../android/speech/tts/UtteranceProgressListener.md))and [onError(java.lang.String)](../android/speech/tts/UtteranceProgressListener.md))for the same utterance.
+Called when an error has occurred during processing. This can be called at any point in the synthesis process. Note that there might be calls to [onStart(java.lang.String)](UtteranceProgressListener.md))for specified utteranceId but there will never be a call to both [onDone(java.lang.String)](UtteranceProgressListener.md))and [onError(java.lang.String)](UtteranceProgressListener.md))for the same utterance.
 
 | Parameters ||
 |---------------|----------------------------------------------------------------------------------------------------------------------|
@@ -137,12 +137,12 @@ open fun onError(
 ): Unit
 ```
 
-Called when an error has occurred during processing. This can be called at any point in the synthesis process. Note that there might be calls to [onStart(java.lang.String)](../android/speech/tts/UtteranceProgressListener.md))for specified utteranceId but there will never be a call to both [onDone(java.lang.String)](../android/speech/tts/UtteranceProgressListener.md))and [onError(java.lang.String,int)](../android/speech/tts/UtteranceProgressListener.md))for the same utterance. The default implementation calls [onError(java.lang.String)](../android/speech/tts/UtteranceProgressListener.md)).
+Called when an error has occurred during processing. This can be called at any point in the synthesis process. Note that there might be calls to [onStart(java.lang.String)](UtteranceProgressListener.md))for specified utteranceId but there will never be a call to both [onDone(java.lang.String)](UtteranceProgressListener.md))and [onError(java.lang.String,int)](UtteranceProgressListener.md))for the same utterance. The default implementation calls [onError(java.lang.String)](UtteranceProgressListener.md)).
 
 | Parameters ||
 |---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `utteranceId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The utterance ID of the utterance. |
-| `errorCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):one of the ERROR_\* codes from [TextToSpeech](../android/speech/tts/TextToSpeech.md) |
+| `errorCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):one of the ERROR_\* codes from [TextToSpeech](TextToSpeech.md) |
 
 ### onRangeStart
 
@@ -159,11 +159,11 @@ open fun onRangeStart(
 
 This is called when the TTS service is about to speak the specified range of the utterance with the given utteranceId.
 
-This method is called when the audio is expected to start playing on the speaker. Note that this is different from [onAudioAvailable](../android/speech/tts/UtteranceProgressListener.md))which is called as soon as the audio is generated.
+This method is called when the audio is expected to start playing on the speaker. Note that this is different from [onAudioAvailable](UtteranceProgressListener.md))which is called as soon as the audio is generated.
 
 This information can be used, for example, to highlight ranges of the text while it is spoken.
 
-Only called if the engine supplies timing information by calling [android.speech.tts.SynthesisCallback#rangeStart(int,int,int)](../android/speech/tts/SynthesisCallback.md)).
+Only called if the engine supplies timing information by calling [android.speech.tts.SynthesisCallback#rangeStart(int,int,int)](SynthesisCallback.md)).
 
 | Parameters ||
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -198,7 +198,7 @@ open fun onStop(
 ): Unit
 ```
 
-Called when an utterance has been stopped while in progress or flushed from the synthesis queue. This can happen if a client calls [TextToSpeech.stop()](../android/speech/tts/TextToSpeech.md))or uses [TextToSpeech.QUEUE_FLUSH](../android/speech/tts/TextToSpeech.md) as an argument with the android.speech.tts.TextToSpeech#speak or android.speech.tts.TextToSpeech#synthesizeToFile methods.
+Called when an utterance has been stopped while in progress or flushed from the synthesis queue. This can happen if a client calls [TextToSpeech.stop()](TextToSpeech.md))or uses [TextToSpeech.QUEUE_FLUSH](TextToSpeech.md) as an argument with the android.speech.tts.TextToSpeech#speak or android.speech.tts.TextToSpeech#synthesizeToFile methods.
 
 | Parameters ||
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

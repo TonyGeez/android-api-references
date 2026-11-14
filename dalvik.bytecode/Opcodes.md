@@ -8,7 +8,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface Opcodes
 ```
 
-| [dalvik.bytecode.Opcodes](../dalvik/bytecode/Opcodes.md) |
+| [dalvik.bytecode.Opcodes](Opcodes.md) |
 
 A list of all normal (not implementation-specific) Dalvik opcodes.
 
@@ -16,381 +16,381 @@ A list of all normal (not implementation-specific) Dalvik opcodes.
 
 | Constants ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_ADD_DOUBLE](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_ADD_DOUBLE_2ADDR](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_ADD_FLOAT](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_ADD_FLOAT_2ADDR](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_ADD_INT](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_ADD_INT_2ADDR](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_ADD_INT_LIT16](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_ADD_INT_LIT8](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_ADD_LONG](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_ADD_LONG_2ADDR](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_AGET](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_AGET_BOOLEAN](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_AGET_BYTE](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_AGET_CHAR](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_AGET_OBJECT](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_AGET_SHORT](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_AGET_WIDE](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_AND_INT](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_AND_INT_2ADDR](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_AND_INT_LIT16](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_AND_INT_LIT8](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_AND_LONG](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_AND_LONG_2ADDR](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_APUT](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_APUT_BOOLEAN](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_APUT_BYTE](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_APUT_CHAR](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_APUT_OBJECT](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_APUT_SHORT](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_APUT_WIDE](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_ARRAY_LENGTH](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_BREAKPOINT](../dalvik/bytecode/Opcodes.md) Implementation detail. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CHECK_CAST](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CHECK_CAST_JUMBO](../dalvik/bytecode/Opcodes.md) Never implemented; do not use. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CMPG_DOUBLE](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CMPG_FLOAT](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CMPL_DOUBLE](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CMPL_FLOAT](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CMP_LONG](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CONST](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CONST_16](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CONST_4](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CONST_CLASS](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CONST_CLASS_JUMBO](../dalvik/bytecode/Opcodes.md) Never implemented; do not use. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CONST_HIGH16](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CONST_METHOD_HANDLE](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CONST_METHOD_TYPE](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CONST_STRING](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CONST_STRING_JUMBO](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CONST_WIDE](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CONST_WIDE_16](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CONST_WIDE_32](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CONST_WIDE_HIGH16](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_DIV_DOUBLE](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_DIV_DOUBLE_2ADDR](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_DIV_FLOAT](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_DIV_FLOAT_2ADDR](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_DIV_INT](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_DIV_INT_2ADDR](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_DIV_INT_LIT16](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_DIV_INT_LIT8](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_DIV_LONG](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_DIV_LONG_2ADDR](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_DOUBLE_TO_FLOAT](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_DOUBLE_TO_INT](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_DOUBLE_TO_LONG](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_EXECUTE_INLINE](../dalvik/bytecode/Opcodes.md) Implementation detail. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_EXECUTE_INLINE_RANGE](../dalvik/bytecode/Opcodes.md) Implementation detail. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_FILLED_NEW_ARRAY](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_FILLED_NEW_ARRAY_JUMBO](../dalvik/bytecode/Opcodes.md) Never implemented; do not use. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_FILLED_NEW_ARRAY_RANGE](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_FILL_ARRAY_DATA](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_FLOAT_TO_DOUBLE](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_FLOAT_TO_INT](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_FLOAT_TO_LONG](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_GOTO](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_GOTO_16](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_GOTO_32](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IF_EQ](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IF_EQZ](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IF_GE](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IF_GEZ](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IF_GT](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IF_GTZ](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IF_LE](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IF_LEZ](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IF_LT](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IF_LTZ](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IF_NE](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IF_NEZ](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IGET](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IGET_BOOLEAN](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IGET_BOOLEAN_JUMBO](../dalvik/bytecode/Opcodes.md) Never implemented; do not use. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IGET_BYTE](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IGET_BYTE_JUMBO](../dalvik/bytecode/Opcodes.md) Never implemented; do not use. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IGET_CHAR](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IGET_CHAR_JUMBO](../dalvik/bytecode/Opcodes.md) Never implemented; do not use. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IGET_JUMBO](../dalvik/bytecode/Opcodes.md) Never implemented; do not use. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IGET_OBJECT](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IGET_OBJECT_JUMBO](../dalvik/bytecode/Opcodes.md) Never implemented; do not use. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IGET_OBJECT_QUICK](../dalvik/bytecode/Opcodes.md) Implementation detail. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IGET_QUICK](../dalvik/bytecode/Opcodes.md) Implementation detail. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IGET_SHORT](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IGET_SHORT_JUMBO](../dalvik/bytecode/Opcodes.md) Never implemented; do not use. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IGET_WIDE](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IGET_WIDE_JUMBO](../dalvik/bytecode/Opcodes.md) Never implemented; do not use. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IGET_WIDE_QUICK](../dalvik/bytecode/Opcodes.md) Implementation detail. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IGET_WIDE_VOLATILE](../dalvik/bytecode/Opcodes.md) Implementation detail. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INSTANCE_OF](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INSTANCE_OF_JUMBO](../dalvik/bytecode/Opcodes.md) Never implemented; do not use. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INT_TO_BYTE](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INT_TO_CHAR](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INT_TO_DOUBLE](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INT_TO_FLOAT](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INT_TO_LONG](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INT_TO_SHORT](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_CUSTOM](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_CUSTOM_RANGE](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_DIRECT](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_DIRECT_EMPTY](../dalvik/bytecode/Opcodes.md) Implementation detail. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_DIRECT_JUMBO](../dalvik/bytecode/Opcodes.md) Never implemented; do not use. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_DIRECT_RANGE](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_INTERFACE](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_INTERFACE_JUMBO](../dalvik/bytecode/Opcodes.md) Never implemented; do not use. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_INTERFACE_RANGE](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_POLYMORPHIC](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_POLYMORPHIC_RANGE](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_STATIC](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_STATIC_JUMBO](../dalvik/bytecode/Opcodes.md) Never implemented; do not use. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_STATIC_RANGE](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_SUPER](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_SUPER_JUMBO](../dalvik/bytecode/Opcodes.md) Never implemented; do not use. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_SUPER_QUICK](../dalvik/bytecode/Opcodes.md) Implementation detail. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_SUPER_QUICK_RANGE](../dalvik/bytecode/Opcodes.md) Implementation detail. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_SUPER_RANGE](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_VIRTUAL](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_VIRTUAL_JUMBO](../dalvik/bytecode/Opcodes.md) Never implemented; do not use. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_VIRTUAL_QUICK](../dalvik/bytecode/Opcodes.md) Implementation detail. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_VIRTUAL_QUICK_RANGE](../dalvik/bytecode/Opcodes.md) Implementation detail. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_VIRTUAL_RANGE](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IPUT](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IPUT_BOOLEAN](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IPUT_BOOLEAN_JUMBO](../dalvik/bytecode/Opcodes.md) Never implemented; do not use. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IPUT_BYTE](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IPUT_BYTE_JUMBO](../dalvik/bytecode/Opcodes.md) Never implemented; do not use. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IPUT_CHAR](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IPUT_CHAR_JUMBO](../dalvik/bytecode/Opcodes.md) Never implemented; do not use. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IPUT_JUMBO](../dalvik/bytecode/Opcodes.md) Never implemented; do not use. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IPUT_OBJECT](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IPUT_OBJECT_JUMBO](../dalvik/bytecode/Opcodes.md) Never implemented; do not use. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IPUT_OBJECT_QUICK](../dalvik/bytecode/Opcodes.md) Implementation detail. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IPUT_QUICK](../dalvik/bytecode/Opcodes.md) Implementation detail. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IPUT_SHORT](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IPUT_SHORT_JUMBO](../dalvik/bytecode/Opcodes.md) Never implemented; do not use. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IPUT_WIDE](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IPUT_WIDE_JUMBO](../dalvik/bytecode/Opcodes.md) Never implemented; do not use. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IPUT_WIDE_QUICK](../dalvik/bytecode/Opcodes.md) Implementation detail. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IPUT_WIDE_VOLATILE](../dalvik/bytecode/Opcodes.md) Implementation detail. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_LONG_TO_DOUBLE](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_LONG_TO_FLOAT](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_LONG_TO_INT](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MONITOR_ENTER](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MONITOR_EXIT](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MOVE](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MOVE_16](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MOVE_EXCEPTION](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MOVE_FROM16](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MOVE_OBJECT](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MOVE_OBJECT_16](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MOVE_OBJECT_FROM16](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MOVE_RESULT](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MOVE_RESULT_OBJECT](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MOVE_RESULT_WIDE](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MOVE_WIDE](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MOVE_WIDE_16](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MOVE_WIDE_FROM16](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MUL_DOUBLE](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MUL_DOUBLE_2ADDR](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MUL_FLOAT](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MUL_FLOAT_2ADDR](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MUL_INT](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MUL_INT_2ADDR](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MUL_INT_LIT16](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MUL_INT_LIT8](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MUL_LONG](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MUL_LONG_2ADDR](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_NEG_DOUBLE](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_NEG_FLOAT](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_NEG_INT](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_NEG_LONG](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_NEW_ARRAY](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_NEW_ARRAY_JUMBO](../dalvik/bytecode/Opcodes.md) Never implemented; do not use. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_NEW_INSTANCE](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_NEW_INSTANCE_JUMBO](../dalvik/bytecode/Opcodes.md) Never implemented; do not use. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_NOP](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_NOT_INT](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_NOT_LONG](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_OR_INT](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_OR_INT_2ADDR](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_OR_INT_LIT16](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_OR_INT_LIT8](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_OR_LONG](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_OR_LONG_2ADDR](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_PACKED_SWITCH](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_REM_DOUBLE](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_REM_DOUBLE_2ADDR](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_REM_FLOAT](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_REM_FLOAT_2ADDR](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_REM_INT](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_REM_INT_2ADDR](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_REM_INT_LIT16](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_REM_INT_LIT8](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_REM_LONG](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_REM_LONG_2ADDR](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_RETURN](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_RETURN_OBJECT](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_RETURN_VOID](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_RETURN_WIDE](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_RSUB_INT](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_RSUB_INT_LIT8](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SGET](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SGET_BOOLEAN](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SGET_BOOLEAN_JUMBO](../dalvik/bytecode/Opcodes.md) Never implemented; do not use. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SGET_BYTE](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SGET_BYTE_JUMBO](../dalvik/bytecode/Opcodes.md) Never implemented; do not use. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SGET_CHAR](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SGET_CHAR_JUMBO](../dalvik/bytecode/Opcodes.md) Never implemented; do not use. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SGET_JUMBO](../dalvik/bytecode/Opcodes.md) Never implemented; do not use. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SGET_OBJECT](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SGET_OBJECT_JUMBO](../dalvik/bytecode/Opcodes.md) Never implemented; do not use. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SGET_SHORT](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SGET_SHORT_JUMBO](../dalvik/bytecode/Opcodes.md) Never implemented; do not use. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SGET_WIDE](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SGET_WIDE_JUMBO](../dalvik/bytecode/Opcodes.md) Never implemented; do not use. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SGET_WIDE_VOLATILE](../dalvik/bytecode/Opcodes.md) Implementation detail. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SHL_INT](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SHL_INT_2ADDR](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SHL_INT_LIT8](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SHL_LONG](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SHL_LONG_2ADDR](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SHR_INT](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SHR_INT_2ADDR](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SHR_INT_LIT8](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SHR_LONG](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SHR_LONG_2ADDR](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SPARSE_SWITCH](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SPUT](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SPUT_BOOLEAN](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SPUT_BOOLEAN_JUMBO](../dalvik/bytecode/Opcodes.md) Never implemented; do not use. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SPUT_BYTE](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SPUT_BYTE_JUMBO](../dalvik/bytecode/Opcodes.md) Never implemented; do not use. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SPUT_CHAR](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SPUT_CHAR_JUMBO](../dalvik/bytecode/Opcodes.md) Never implemented; do not use. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SPUT_JUMBO](../dalvik/bytecode/Opcodes.md) Never implemented; do not use. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SPUT_OBJECT](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SPUT_OBJECT_JUMBO](../dalvik/bytecode/Opcodes.md) Never implemented; do not use. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SPUT_SHORT](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SPUT_SHORT_JUMBO](../dalvik/bytecode/Opcodes.md) Never implemented; do not use. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SPUT_WIDE](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SPUT_WIDE_JUMBO](../dalvik/bytecode/Opcodes.md) Never implemented; do not use. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SPUT_WIDE_VOLATILE](../dalvik/bytecode/Opcodes.md) Implementation detail. |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SUB_DOUBLE](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SUB_DOUBLE_2ADDR](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SUB_FLOAT](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SUB_FLOAT_2ADDR](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SUB_INT](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SUB_INT_2ADDR](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SUB_LONG](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SUB_LONG_2ADDR](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_THROW](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_THROW_VERIFICATION_ERROR](../dalvik/bytecode/Opcodes.md) Implementation detail. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_USHR_INT](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_USHR_INT_2ADDR](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_USHR_INT_LIT8](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_USHR_LONG](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_USHR_LONG_2ADDR](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_XOR_INT](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_XOR_INT_2ADDR](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_XOR_INT_LIT16](../dalvik/bytecode/Opcodes.md) <br /> |
-| --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_XOR_INT_LIT8](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_XOR_LONG](../dalvik/bytecode/Opcodes.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_XOR_LONG_2ADDR](../dalvik/bytecode/Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_ADD_DOUBLE](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_ADD_DOUBLE_2ADDR](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_ADD_FLOAT](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_ADD_FLOAT_2ADDR](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_ADD_INT](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_ADD_INT_2ADDR](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_ADD_INT_LIT16](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_ADD_INT_LIT8](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_ADD_LONG](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_ADD_LONG_2ADDR](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_AGET](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_AGET_BOOLEAN](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_AGET_BYTE](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_AGET_CHAR](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_AGET_OBJECT](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_AGET_SHORT](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_AGET_WIDE](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_AND_INT](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_AND_INT_2ADDR](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_AND_INT_LIT16](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_AND_INT_LIT8](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_AND_LONG](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_AND_LONG_2ADDR](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_APUT](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_APUT_BOOLEAN](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_APUT_BYTE](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_APUT_CHAR](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_APUT_OBJECT](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_APUT_SHORT](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_APUT_WIDE](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_ARRAY_LENGTH](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_BREAKPOINT](Opcodes.md) Implementation detail. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CHECK_CAST](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CHECK_CAST_JUMBO](Opcodes.md) Never implemented; do not use. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CMPG_DOUBLE](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CMPG_FLOAT](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CMPL_DOUBLE](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CMPL_FLOAT](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CMP_LONG](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CONST](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CONST_16](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CONST_4](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CONST_CLASS](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CONST_CLASS_JUMBO](Opcodes.md) Never implemented; do not use. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CONST_HIGH16](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CONST_METHOD_HANDLE](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CONST_METHOD_TYPE](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CONST_STRING](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CONST_STRING_JUMBO](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CONST_WIDE](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CONST_WIDE_16](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CONST_WIDE_32](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_CONST_WIDE_HIGH16](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_DIV_DOUBLE](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_DIV_DOUBLE_2ADDR](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_DIV_FLOAT](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_DIV_FLOAT_2ADDR](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_DIV_INT](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_DIV_INT_2ADDR](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_DIV_INT_LIT16](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_DIV_INT_LIT8](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_DIV_LONG](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_DIV_LONG_2ADDR](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_DOUBLE_TO_FLOAT](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_DOUBLE_TO_INT](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_DOUBLE_TO_LONG](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_EXECUTE_INLINE](Opcodes.md) Implementation detail. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_EXECUTE_INLINE_RANGE](Opcodes.md) Implementation detail. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_FILLED_NEW_ARRAY](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_FILLED_NEW_ARRAY_JUMBO](Opcodes.md) Never implemented; do not use. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_FILLED_NEW_ARRAY_RANGE](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_FILL_ARRAY_DATA](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_FLOAT_TO_DOUBLE](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_FLOAT_TO_INT](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_FLOAT_TO_LONG](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_GOTO](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_GOTO_16](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_GOTO_32](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IF_EQ](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IF_EQZ](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IF_GE](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IF_GEZ](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IF_GT](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IF_GTZ](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IF_LE](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IF_LEZ](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IF_LT](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IF_LTZ](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IF_NE](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IF_NEZ](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IGET](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IGET_BOOLEAN](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IGET_BOOLEAN_JUMBO](Opcodes.md) Never implemented; do not use. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IGET_BYTE](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IGET_BYTE_JUMBO](Opcodes.md) Never implemented; do not use. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IGET_CHAR](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IGET_CHAR_JUMBO](Opcodes.md) Never implemented; do not use. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IGET_JUMBO](Opcodes.md) Never implemented; do not use. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IGET_OBJECT](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IGET_OBJECT_JUMBO](Opcodes.md) Never implemented; do not use. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IGET_OBJECT_QUICK](Opcodes.md) Implementation detail. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IGET_QUICK](Opcodes.md) Implementation detail. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IGET_SHORT](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IGET_SHORT_JUMBO](Opcodes.md) Never implemented; do not use. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IGET_WIDE](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IGET_WIDE_JUMBO](Opcodes.md) Never implemented; do not use. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IGET_WIDE_QUICK](Opcodes.md) Implementation detail. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IGET_WIDE_VOLATILE](Opcodes.md) Implementation detail. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INSTANCE_OF](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INSTANCE_OF_JUMBO](Opcodes.md) Never implemented; do not use. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INT_TO_BYTE](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INT_TO_CHAR](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INT_TO_DOUBLE](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INT_TO_FLOAT](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INT_TO_LONG](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INT_TO_SHORT](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_CUSTOM](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_CUSTOM_RANGE](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_DIRECT](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_DIRECT_EMPTY](Opcodes.md) Implementation detail. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_DIRECT_JUMBO](Opcodes.md) Never implemented; do not use. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_DIRECT_RANGE](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_INTERFACE](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_INTERFACE_JUMBO](Opcodes.md) Never implemented; do not use. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_INTERFACE_RANGE](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_POLYMORPHIC](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_POLYMORPHIC_RANGE](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_STATIC](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_STATIC_JUMBO](Opcodes.md) Never implemented; do not use. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_STATIC_RANGE](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_SUPER](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_SUPER_JUMBO](Opcodes.md) Never implemented; do not use. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_SUPER_QUICK](Opcodes.md) Implementation detail. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_SUPER_QUICK_RANGE](Opcodes.md) Implementation detail. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_SUPER_RANGE](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_VIRTUAL](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_VIRTUAL_JUMBO](Opcodes.md) Never implemented; do not use. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_VIRTUAL_QUICK](Opcodes.md) Implementation detail. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_VIRTUAL_QUICK_RANGE](Opcodes.md) Implementation detail. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_INVOKE_VIRTUAL_RANGE](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IPUT](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IPUT_BOOLEAN](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IPUT_BOOLEAN_JUMBO](Opcodes.md) Never implemented; do not use. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IPUT_BYTE](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IPUT_BYTE_JUMBO](Opcodes.md) Never implemented; do not use. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IPUT_CHAR](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IPUT_CHAR_JUMBO](Opcodes.md) Never implemented; do not use. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IPUT_JUMBO](Opcodes.md) Never implemented; do not use. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IPUT_OBJECT](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IPUT_OBJECT_JUMBO](Opcodes.md) Never implemented; do not use. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IPUT_OBJECT_QUICK](Opcodes.md) Implementation detail. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IPUT_QUICK](Opcodes.md) Implementation detail. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IPUT_SHORT](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IPUT_SHORT_JUMBO](Opcodes.md) Never implemented; do not use. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IPUT_WIDE](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IPUT_WIDE_JUMBO](Opcodes.md) Never implemented; do not use. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IPUT_WIDE_QUICK](Opcodes.md) Implementation detail. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_IPUT_WIDE_VOLATILE](Opcodes.md) Implementation detail. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_LONG_TO_DOUBLE](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_LONG_TO_FLOAT](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_LONG_TO_INT](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MONITOR_ENTER](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MONITOR_EXIT](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MOVE](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MOVE_16](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MOVE_EXCEPTION](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MOVE_FROM16](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MOVE_OBJECT](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MOVE_OBJECT_16](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MOVE_OBJECT_FROM16](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MOVE_RESULT](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MOVE_RESULT_OBJECT](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MOVE_RESULT_WIDE](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MOVE_WIDE](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MOVE_WIDE_16](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MOVE_WIDE_FROM16](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MUL_DOUBLE](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MUL_DOUBLE_2ADDR](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MUL_FLOAT](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MUL_FLOAT_2ADDR](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MUL_INT](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MUL_INT_2ADDR](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MUL_INT_LIT16](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MUL_INT_LIT8](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MUL_LONG](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_MUL_LONG_2ADDR](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_NEG_DOUBLE](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_NEG_FLOAT](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_NEG_INT](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_NEG_LONG](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_NEW_ARRAY](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_NEW_ARRAY_JUMBO](Opcodes.md) Never implemented; do not use. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_NEW_INSTANCE](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_NEW_INSTANCE_JUMBO](Opcodes.md) Never implemented; do not use. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_NOP](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_NOT_INT](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_NOT_LONG](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_OR_INT](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_OR_INT_2ADDR](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_OR_INT_LIT16](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_OR_INT_LIT8](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_OR_LONG](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_OR_LONG_2ADDR](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_PACKED_SWITCH](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_REM_DOUBLE](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_REM_DOUBLE_2ADDR](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_REM_FLOAT](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_REM_FLOAT_2ADDR](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_REM_INT](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_REM_INT_2ADDR](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_REM_INT_LIT16](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_REM_INT_LIT8](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_REM_LONG](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_REM_LONG_2ADDR](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_RETURN](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_RETURN_OBJECT](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_RETURN_VOID](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_RETURN_WIDE](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_RSUB_INT](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_RSUB_INT_LIT8](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SGET](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SGET_BOOLEAN](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SGET_BOOLEAN_JUMBO](Opcodes.md) Never implemented; do not use. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SGET_BYTE](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SGET_BYTE_JUMBO](Opcodes.md) Never implemented; do not use. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SGET_CHAR](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SGET_CHAR_JUMBO](Opcodes.md) Never implemented; do not use. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SGET_JUMBO](Opcodes.md) Never implemented; do not use. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SGET_OBJECT](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SGET_OBJECT_JUMBO](Opcodes.md) Never implemented; do not use. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SGET_SHORT](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SGET_SHORT_JUMBO](Opcodes.md) Never implemented; do not use. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SGET_WIDE](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SGET_WIDE_JUMBO](Opcodes.md) Never implemented; do not use. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SGET_WIDE_VOLATILE](Opcodes.md) Implementation detail. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SHL_INT](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SHL_INT_2ADDR](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SHL_INT_LIT8](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SHL_LONG](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SHL_LONG_2ADDR](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SHR_INT](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SHR_INT_2ADDR](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SHR_INT_LIT8](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SHR_LONG](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SHR_LONG_2ADDR](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SPARSE_SWITCH](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SPUT](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SPUT_BOOLEAN](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SPUT_BOOLEAN_JUMBO](Opcodes.md) Never implemented; do not use. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SPUT_BYTE](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SPUT_BYTE_JUMBO](Opcodes.md) Never implemented; do not use. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SPUT_CHAR](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SPUT_CHAR_JUMBO](Opcodes.md) Never implemented; do not use. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SPUT_JUMBO](Opcodes.md) Never implemented; do not use. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SPUT_OBJECT](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SPUT_OBJECT_JUMBO](Opcodes.md) Never implemented; do not use. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SPUT_SHORT](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SPUT_SHORT_JUMBO](Opcodes.md) Never implemented; do not use. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SPUT_WIDE](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SPUT_WIDE_JUMBO](Opcodes.md) Never implemented; do not use. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SPUT_WIDE_VOLATILE](Opcodes.md) Implementation detail. |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SUB_DOUBLE](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SUB_DOUBLE_2ADDR](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SUB_FLOAT](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SUB_FLOAT_2ADDR](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SUB_INT](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SUB_INT_2ADDR](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SUB_LONG](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_SUB_LONG_2ADDR](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_THROW](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_THROW_VERIFICATION_ERROR](Opcodes.md) Implementation detail. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_USHR_INT](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_USHR_INT_2ADDR](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_USHR_INT_LIT8](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_USHR_LONG](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_USHR_LONG_2ADDR](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_XOR_INT](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_XOR_INT_2ADDR](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_XOR_INT_LIT16](Opcodes.md) <br /> |
+| --- | --- |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_XOR_INT_LIT8](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_XOR_LONG](Opcodes.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OP_XOR_LONG_2ADDR](Opcodes.md) <br /> |
 | --- | --- |
 
 ## Constants

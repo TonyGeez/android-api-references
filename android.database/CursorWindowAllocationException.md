@@ -4,7 +4,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 
 # CursorWindowAllocationException
 
-Kotlin| [Java](../android/database/CursorWindowAllocationException.md) 
+Kotlin| [Java](CursorWindowAllocationException.md) 
 | --- | --- |
 
 ```
@@ -14,10 +14,10 @@ open class CursorWindowAllocationException : RuntimeException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
-| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) ||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) |||
+| | | ↳ | [java.lang.RuntimeException](../java.lang/RuntimeException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.database.CursorWindowAllocationException](../android/database/CursorWindowAllocationException.md) |
+| | | | ↳ | [android.database.CursorWindowAllocationException](CursorWindowAllocationException.md) |
 
 This exception is thrown when a CursorWindow couldn't be allocated, most probably due to memory not being available.
 
@@ -25,7 +25,7 @@ This exception is thrown when a CursorWindow couldn't be allocated, most probabl
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [CursorWindowAllocationException](../android/database/CursorWindowAllocationException.md))`(`description:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` <br /> |
+| [CursorWindowAllocationException](CursorWindowAllocationException.md))`(`description:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` <br /> |
 
 ## Public constructors
 

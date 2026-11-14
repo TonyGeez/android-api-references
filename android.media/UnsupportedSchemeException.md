@@ -4,7 +4,7 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 
 # UnsupportedSchemeException
 
-Kotlin| [Java](../android/media/UnsupportedSchemeException.md) 
+Kotlin| [Java](UnsupportedSchemeException.md) 
 | --- | --- |
 
 ```
@@ -14,10 +14,10 @@ class UnsupportedSchemeException : MediaDrmException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
-| | | ↳ | [android.media.MediaDrmException](../android/media/MediaDrmException.md) ||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) |||
+| | | ↳ | [android.media.MediaDrmException](MediaDrmException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.media.UnsupportedSchemeException](../android/media/UnsupportedSchemeException.md) |
+| | | | ↳ | [android.media.UnsupportedSchemeException](UnsupportedSchemeException.md) |
 
 Exception thrown when an attempt is made to construct a MediaDrm object using a crypto scheme UUID that is not supported by the device
 
@@ -25,11 +25,11 @@ Exception thrown when an attempt is made to construct a MediaDrm object using a 
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [UnsupportedSchemeException](../android/media/UnsupportedSchemeException.md))`(`detailMessage:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| [UnsupportedSchemeException](UnsupportedSchemeException.md))`(`detailMessage:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
 
 | Inherited functions ||
 |---|---|
-| From class [MediaDrmException](../android/media/MediaDrmException.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getErrorContext](../android/media/MediaDrmException.md))`()` <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOemError](../android/media/MediaDrmException.md))`()` <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getVendorError](../android/media/MediaDrmException.md))`()` <br /> | ||
+| From class [MediaDrmException](MediaDrmException.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getErrorContext](MediaDrmException.md))`()` <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOemError](MediaDrmException.md))`()` <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getVendorError](MediaDrmException.md))`()` <br /> | ||
 
 ## Public constructors
 

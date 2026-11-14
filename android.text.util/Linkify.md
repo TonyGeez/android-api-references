@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # Linkify
 
-Kotlin| [Java](../android/text/util/Linkify.md) 
+Kotlin| [Java](Linkify.md) 
 | --- | --- |
 
 ```
@@ -13,11 +13,11 @@ open class Linkify
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.text.util.Linkify](../android/text/util/Linkify.md) |
+| ↳ | [android.text.util.Linkify](Linkify.md) |
 
 Linkify take a piece of text and a regular expression and turns all of the regex matches in the text into clickable links. This is particularly useful for matching things like email addresses, web URLs, etc. and making them actionable. Alone with the pattern that is to be matched, a URL scheme prefix is also required. Any pattern match that does not begin with the supplied scheme will have the scheme prepended to the matched text when the clickable URL is created. For instance, if you are matching web URLs you would supply the scheme`http://`. If the pattern matches example.com, which does not have a URL scheme prefix, the supplied scheme will be prepended to create`http://example.com`when the clickable URL link is created.
 
-**Note:** When using [MAP_ADDRESSES](../android/text/util/Linkify.md) or [ALL](../android/text/util/Linkify.md) to match street addresses on API level [android.os.Build.VERSION_CODES#O_MR1](../android/os/Build.VERSION_CODES.md) and earlier, methods in this class may throw [android.util.AndroidRuntimeException](../android/util/AndroidRuntimeException.md) or other exceptions if the device's WebView implementation is currently being updated, because [android.webkit.WebView#findAddress](../android/webkit/WebView.md))is required to match street addresses.
+**Note:** When using [MAP_ADDRESSES](Linkify.md) or [ALL](Linkify.md) to match street addresses on API level [android.os.Build.VERSION_CODES#O_MR1](../android/os/Build.VERSION_CODES.md) and earlier, methods in this class may throw [android.util.AndroidRuntimeException](../android.util/AndroidRuntimeException.md) or other exceptions if the device's WebView implementation is currently being updated, because [android.webkit.WebView#findAddress](../android.webkit/WebView.md))is required to match street addresses.
 
 ## Summary
 
@@ -28,38 +28,38 @@ Linkify take a piece of text and a regular expression and turns all of the regex
 
 | Constants ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ALL](../android/text/util/Linkify.md) Bit mask indicating that all available patterns should be matched in methods that take an options mask. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EMAIL_ADDRESSES](../android/text/util/Linkify.md) Bit field indicating that email addresses should be matched in methods that take an options mask |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAP_ADDRESSES](../android/text/util/Linkify.md) Bit field indicating that street addresses should be matched in methods that take an options mask. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ALL](Linkify.md) Bit mask indicating that all available patterns should be matched in methods that take an options mask. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EMAIL_ADDRESSES](Linkify.md) Bit field indicating that email addresses should be matched in methods that take an options mask |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAP_ADDRESSES](Linkify.md) Bit field indicating that street addresses should be matched in methods that take an options mask. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PHONE_NUMBERS](../android/text/util/Linkify.md) Bit field indicating that phone numbers should be matched in methods that take an options mask |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WEB_URLS](../android/text/util/Linkify.md) Bit field indicating that web URLs should be matched in methods that take an options mask |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PHONE_NUMBERS](Linkify.md) Bit field indicating that phone numbers should be matched in methods that take an options mask |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WEB_URLS](Linkify.md) Bit field indicating that web URLs should be matched in methods that take an options mask |
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------|---|
-| [Linkify](../android/text/util/Linkify.md))`()` <br /> |
+| [Linkify](Linkify.md))`()` <br /> |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addLinks](../android/text/util/Linkify.md))`(`text:` ` [Spannable](../android/text/Spannable.md)`, `mask:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Scans the text of the provided Spannable and turns all occurrences of the link types indicated in the mask into clickable links. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addLinks](../android/text/util/Linkify.md))`(`text:` ` [Spannable](../android/text/Spannable.md)`, `mask:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `urlSpanFactory:` ` [Function](../java/util/function/Function.md)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [URLSpan](../android/text/style/URLSpan.md)!>?`)` Scans the text of the provided Spannable and turns all occurrences of the link types indicated in the mask into clickable links. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addLinks](../android/text/util/Linkify.md))`(`text:` ` [Spannable](../android/text/Spannable.md)`, `pattern:` ` [Pattern](../java/util/regex/Pattern.md)`, `scheme:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Applies a regex to a Spannable turning the matches into links. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addLinks](Linkify.md))`(`text:` ` [Spannable](../android.text/Spannable.md)`, `mask:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Scans the text of the provided Spannable and turns all occurrences of the link types indicated in the mask into clickable links. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addLinks](Linkify.md))`(`text:` ` [Spannable](../android.text/Spannable.md)`, `mask:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `urlSpanFactory:` ` [Function](../java.util.function/Function.md)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [URLSpan](../android.text.style/URLSpan.md)!>?`)` Scans the text of the provided Spannable and turns all occurrences of the link types indicated in the mask into clickable links. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addLinks](Linkify.md))`(`text:` ` [Spannable](../android.text/Spannable.md)`, `pattern:` ` [Pattern](../java.util.regex/Pattern.md)`, `scheme:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Applies a regex to a Spannable turning the matches into links. |
 | --- | --- |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addLinks](../android/text/util/Linkify.md))`(`spannable:` ` [Spannable](../android/text/Spannable.md)`, `pattern:` ` [Pattern](../java/util/regex/Pattern.md)`, `scheme:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `matchFilter:` ` [Linkify.MatchFilter](../android/text/util/Linkify.MatchFilter.md)?`, `transformFilter:` ` [Linkify.TransformFilter](../android/text/util/Linkify.TransformFilter.md)?`)` Applies a regex to a Spannable turning the matches into links. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addLinks](../android/text/util/Linkify.md))`(`spannable:` ` [Spannable](../android/text/Spannable.md)`, `pattern:` ` [Pattern](../java/util/regex/Pattern.md)`, `defaultScheme:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `schemes:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>?`, `matchFilter:` ` [Linkify.MatchFilter](../android/text/util/Linkify.MatchFilter.md)?`, `transformFilter:` ` [Linkify.TransformFilter](../android/text/util/Linkify.TransformFilter.md)?`)` Applies a regex to a Spannable turning the matches into links. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addLinks](../android/text/util/Linkify.md))`(`spannable:` ` [Spannable](../android/text/Spannable.md)`, `pattern:` ` [Pattern](../java/util/regex/Pattern.md)`, `defaultScheme:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `schemes:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>?`, `matchFilter:` ` [Linkify.MatchFilter](../android/text/util/Linkify.MatchFilter.md)?`, `transformFilter:` ` [Linkify.TransformFilter](../android/text/util/Linkify.TransformFilter.md)?`, `urlSpanFactory:` ` [Function](../java/util/function/Function.md)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [URLSpan](../android/text/style/URLSpan.md)!>?`)` Applies a regex to a Spannable turning the matches into links. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addLinks](Linkify.md))`(`spannable:` ` [Spannable](../android.text/Spannable.md)`, `pattern:` ` [Pattern](../java.util.regex/Pattern.md)`, `scheme:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `matchFilter:` ` [Linkify.MatchFilter](../android/text/util/Linkify.MatchFilter.md)?`, `transformFilter:` ` [Linkify.TransformFilter](../android/text/util/Linkify.TransformFilter.md)?`)` Applies a regex to a Spannable turning the matches into links. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addLinks](Linkify.md))`(`spannable:` ` [Spannable](../android.text/Spannable.md)`, `pattern:` ` [Pattern](../java.util.regex/Pattern.md)`, `defaultScheme:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `schemes:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>?`, `matchFilter:` ` [Linkify.MatchFilter](../android/text/util/Linkify.MatchFilter.md)?`, `transformFilter:` ` [Linkify.TransformFilter](../android/text/util/Linkify.TransformFilter.md)?`)` Applies a regex to a Spannable turning the matches into links. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addLinks](Linkify.md))`(`spannable:` ` [Spannable](../android.text/Spannable.md)`, `pattern:` ` [Pattern](../java.util.regex/Pattern.md)`, `defaultScheme:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `schemes:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>?`, `matchFilter:` ` [Linkify.MatchFilter](../android/text/util/Linkify.MatchFilter.md)?`, `transformFilter:` ` [Linkify.TransformFilter](../android/text/util/Linkify.TransformFilter.md)?`, `urlSpanFactory:` ` [Function](../java.util.function/Function.md)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [URLSpan](../android.text.style/URLSpan.md)!>?`)` Applies a regex to a Spannable turning the matches into links. |
 | --- | --- |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addLinks](../android/text/util/Linkify.md))`(`text:` ` [TextView](../android/widget/TextView.md)`, `mask:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Scans the text of the provided TextView and turns all occurrences of the link types indicated in the mask into clickable links. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addLinks](../android/text/util/Linkify.md))`(`text:` ` [TextView](../android/widget/TextView.md)`, `pattern:` ` [Pattern](../java/util/regex/Pattern.md)`, `scheme:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Applies a regex to the text of a TextView turning the matches into links. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addLinks](../android/text/util/Linkify.md))`(`text:` ` [TextView](../android/widget/TextView.md)`, `pattern:` ` [Pattern](../java/util/regex/Pattern.md)`, `scheme:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `matchFilter:` ` [Linkify.MatchFilter](../android/text/util/Linkify.MatchFilter.md)?`, `transformFilter:` ` [Linkify.TransformFilter](../android/text/util/Linkify.TransformFilter.md)?`)` Applies a regex to the text of a TextView turning the matches into links. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [addLinks](Linkify.md))`(`text:` ` [TextView](../android.widget/TextView.md)`, `mask:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Scans the text of the provided TextView and turns all occurrences of the link types indicated in the mask into clickable links. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addLinks](Linkify.md))`(`text:` ` [TextView](../android.widget/TextView.md)`, `pattern:` ` [Pattern](../java.util.regex/Pattern.md)`, `scheme:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Applies a regex to the text of a TextView turning the matches into links. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addLinks](Linkify.md))`(`text:` ` [TextView](../android.widget/TextView.md)`, `pattern:` ` [Pattern](../java.util.regex/Pattern.md)`, `scheme:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `matchFilter:` ` [Linkify.MatchFilter](../android/text/util/Linkify.MatchFilter.md)?`, `transformFilter:` ` [Linkify.TransformFilter](../android/text/util/Linkify.TransformFilter.md)?`)` Applies a regex to the text of a TextView turning the matches into links. |
 | --- | --- |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addLinks](../android/text/util/Linkify.md))`(`text:` ` [TextView](../android/widget/TextView.md)`, `pattern:` ` [Pattern](../java/util/regex/Pattern.md)`, `defaultScheme:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `schemes:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>?`, `matchFilter:` ` [Linkify.MatchFilter](../android/text/util/Linkify.MatchFilter.md)?`, `transformFilter:` ` [Linkify.TransformFilter](../android/text/util/Linkify.TransformFilter.md)?`)` Applies a regex to the text of a TextView turning the matches into links. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addLinks](Linkify.md))`(`text:` ` [TextView](../android.widget/TextView.md)`, `pattern:` ` [Pattern](../java.util.regex/Pattern.md)`, `defaultScheme:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `schemes:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>?`, `matchFilter:` ` [Linkify.MatchFilter](../android/text/util/Linkify.MatchFilter.md)?`, `transformFilter:` ` [Linkify.TransformFilter](../android/text/util/Linkify.TransformFilter.md)?`)` Applies a regex to the text of a TextView turning the matches into links. |
 
 | Properties ||
 |----------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Linkify.MatchFilter](../android/text/util/Linkify.MatchFilter.md)! | [sPhoneNumberMatchFilter](../android/text/util/Linkify.md) Filters out URL matches that don't have enough digits to be a phone number. |
-| static [Linkify.TransformFilter](../android/text/util/Linkify.TransformFilter.md)! | [sPhoneNumberTransformFilter](../android/text/util/Linkify.md) Transforms matched phone number text into something suitable to be used in a tel: URL. |
-| static [Linkify.MatchFilter](../android/text/util/Linkify.MatchFilter.md)! | [sUrlMatchFilter](../android/text/util/Linkify.md) Filters out web URL matches that occur after an at-sign (@). |
+| static [Linkify.MatchFilter](../android/text/util/Linkify.MatchFilter.md)! | [sPhoneNumberMatchFilter](Linkify.md) Filters out URL matches that don't have enough digits to be a phone number. |
+| static [Linkify.TransformFilter](../android/text/util/Linkify.TransformFilter.md)! | [sPhoneNumberTransformFilter](Linkify.md) Transforms matched phone number text into something suitable to be used in a tel: URL. |
+| static [Linkify.MatchFilter](../android/text/util/Linkify.MatchFilter.md)! | [sUrlMatchFilter](Linkify.md) Filters out web URL matches that occur after an at-sign (@). |
 | --- | --- |
 
 ## Constants
@@ -73,9 +73,9 @@ Deprecated in [API level 33](https://developer.android.com/guide/topics/manifest
 static val ALL: Int
 ```
 
-**Deprecated:** *use android.view.textclassifier.TextClassifier#generateLinks( \* TextLinks.Request) instead, and avoid [ALL](../android/text/util/Linkify.md) even when targeting API levels where no alternative is available.*
+**Deprecated:** *use android.view.textclassifier.TextClassifier#generateLinks( \* TextLinks.Request) instead, and avoid [ALL](Linkify.md) even when targeting API levels where no alternative is available.*
 
-Bit mask indicating that all available patterns should be matched in methods that take an options mask. Note that this should be avoided, as the [MAP_ADDRESSES](../android/text/util/Linkify.md) field uses the [android.webkit.WebView#findAddress( * String)](../android/webkit/WebView.md))method, which has various limitations and has been deprecated: see the documentation for [android.webkit.WebView#findAddress(String)](../android/webkit/WebView.md))for more information. 
+Bit mask indicating that all available patterns should be matched in methods that take an options mask. Note that this should be avoided, as the [MAP_ADDRESSES](Linkify.md) field uses the [android.webkit.WebView#findAddress( * String)](../android.webkit/WebView.md))method, which has various limitations and has been deprecated: see the documentation for [android.webkit.WebView#findAddress(String)](../android.webkit/WebView.md))for more information. 
 
  Value: 15
 
@@ -100,9 +100,9 @@ Deprecated in [API level 28](https://developer.android.com/guide/topics/manifest
 static val MAP_ADDRESSES: Int
 ```
 
-**Deprecated:** *use android.view.textclassifier.TextClassifier#generateLinks( \* TextLinks.Request) instead, and avoid [MAP_ADDRESSES](../android/text/util/Linkify.md) even when targeting API levels where no alternative is available.*
+**Deprecated:** *use android.view.textclassifier.TextClassifier#generateLinks( \* TextLinks.Request) instead, and avoid [MAP_ADDRESSES](Linkify.md) even when targeting API levels where no alternative is available.*
 
-Bit field indicating that street addresses should be matched in methods that take an options mask. Note that this should be avoided, as it uses the [android.webkit.WebView#findAddress(String)](../android/webkit/WebView.md))method, which has various limitations and has been deprecated: see the documentation for [android.webkit.WebView#findAddress(String)](../android/webkit/WebView.md))for more information. 
+Bit field indicating that street addresses should be matched in methods that take an options mask. Note that this should be avoided, as it uses the [android.webkit.WebView#findAddress(String)](../android.webkit/WebView.md))method, which has various limitations and has been deprecated: see the documentation for [android.webkit.WebView#findAddress(String)](../android.webkit/WebView.md))for more information. 
 
  Value: 8
 
@@ -155,8 +155,8 @@ Scans the text of the provided Spannable and turns all occurrences of the link t
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `text` | [Spannable](../android/text/Spannable.md):Spannable whose text is to be marked-up with links This value cannot be`null`. |
-| `mask` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Mask to define which kinds of links will be searched. Value is either`0`or a combination of [android.text.util.Linkify#WEB_URLS](../android/text/util/Linkify.md), [android.text.util.Linkify#EMAIL_ADDRESSES](../android/text/util/Linkify.md), [android.text.util.Linkify#PHONE_NUMBERS](../android/text/util/Linkify.md), [android.text.util.Linkify#MAP_ADDRESSES](../android/text/util/Linkify.md), and [android.text.util.Linkify#ALL](../android/text/util/Linkify.md) |
+| `text` | [Spannable](../android.text/Spannable.md):Spannable whose text is to be marked-up with links This value cannot be`null`. |
+| `mask` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Mask to define which kinds of links will be searched. Value is either`0`or a combination of [android.text.util.Linkify#WEB_URLS](Linkify.md), [android.text.util.Linkify#EMAIL_ADDRESSES](Linkify.md), [android.text.util.Linkify#PHONE_NUMBERS](Linkify.md), [android.text.util.Linkify#MAP_ADDRESSES](Linkify.md), and [android.text.util.Linkify#ALL](Linkify.md) |
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------------------------------|
@@ -164,7 +164,7 @@ Scans the text of the provided Spannable and turns all occurrences of the link t
 
 **See Also**
 
-- [#addLinks(Spannable, int, Function)](../android/text/util/Linkify.md)) 
+- [#addLinks(Spannable, int, Function)](Linkify.md)) 
 
 ### addLinks
 
@@ -182,9 +182,9 @@ Scans the text of the provided Spannable and turns all occurrences of the link t
 
 | Parameters ||
 |------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `text` | [Spannable](../android/text/Spannable.md):Spannable whose text is to be marked-up with links This value cannot be`null`. |
-| `mask` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):mask to define which kinds of links will be searched Value is either`0`or a combination of [android.text.util.Linkify#WEB_URLS](../android/text/util/Linkify.md), [android.text.util.Linkify#EMAIL_ADDRESSES](../android/text/util/Linkify.md), [android.text.util.Linkify#PHONE_NUMBERS](../android/text/util/Linkify.md), [android.text.util.Linkify#MAP_ADDRESSES](../android/text/util/Linkify.md), and [android.text.util.Linkify#ALL](../android/text/util/Linkify.md) |
-| `urlSpanFactory` | [Function](../java/util/function/Function.md)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [URLSpan](../android/text/style/URLSpan.md)!\>?:function used to create [URLSpan](../android/text/style/URLSpan.md) s This value may be`null`. |
+| `text` | [Spannable](../android.text/Spannable.md):Spannable whose text is to be marked-up with links This value cannot be`null`. |
+| `mask` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):mask to define which kinds of links will be searched Value is either`0`or a combination of [android.text.util.Linkify#WEB_URLS](Linkify.md), [android.text.util.Linkify#EMAIL_ADDRESSES](Linkify.md), [android.text.util.Linkify#PHONE_NUMBERS](Linkify.md), [android.text.util.Linkify#MAP_ADDRESSES](Linkify.md), and [android.text.util.Linkify#ALL](Linkify.md) |
+| `urlSpanFactory` | [Function](../java.util.function/Function.md)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [URLSpan](../android.text.style/URLSpan.md)!\>?:function used to create [URLSpan](../android.text.style/URLSpan.md) s This value may be`null`. |
 | --- | --- |
 
 | Return ||
@@ -207,8 +207,8 @@ Applies a regex to a Spannable turning the matches into links.
 
 | Parameters ||
 |-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `text` | [Spannable](../android/text/Spannable.md):Spannable whose text is to be marked-up with links This value cannot be`null`. |
-| `pattern` | [Pattern](../java/util/regex/Pattern.md):Regex pattern to be used for finding links This value cannot be`null`. |
+| `text` | [Spannable](../android.text/Spannable.md):Spannable whose text is to be marked-up with links This value cannot be`null`. |
+| `pattern` | [Pattern](../java.util.regex/Pattern.md):Regex pattern to be used for finding links This value cannot be`null`. |
 | `scheme` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:URL scheme string (eg`http://`) to be prepended to the links that do not start with this scheme. This value may be`null`. |
 | --- | --- |
 
@@ -234,8 +234,8 @@ Applies a regex to a Spannable turning the matches into links.
 
 | Parameters ||
 |-------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `spannable` | [Spannable](../android/text/Spannable.md):Spannable whose text is to be marked-up with links This value cannot be`null`. |
-| `pattern` | [Pattern](../java/util/regex/Pattern.md):Regex pattern to be used for finding links This value cannot be`null`. |
+| `spannable` | [Spannable](../android.text/Spannable.md):Spannable whose text is to be marked-up with links This value cannot be`null`. |
+| `pattern` | [Pattern](../java.util.regex/Pattern.md):Regex pattern to be used for finding links This value cannot be`null`. |
 | `scheme` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:URL scheme string (eg`http://`) to be prepended to the links that do not start with this scheme. This value may be`null`. |
 | --- | --- |
 | `matchFilter` | [Linkify.MatchFilter](../android/text/util/Linkify.MatchFilter.md)?:The filter that is used to allow the client code additional control over which pattern matches are to be converted into links. This value may be`null`. |
@@ -268,8 +268,8 @@ Applies a regex to a Spannable turning the matches into links.
 
 | Parameters ||
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `spannable` | [Spannable](../android/text/Spannable.md):Spannable whose text is to be marked-up with links. This value cannot be`null`. |
-| `pattern` | [Pattern](../java/util/regex/Pattern.md):Regex pattern to be used for finding links. This value cannot be`null`. |
+| `spannable` | [Spannable](../android.text/Spannable.md):Spannable whose text is to be marked-up with links. This value cannot be`null`. |
+| `pattern` | [Pattern](../java.util.regex/Pattern.md):Regex pattern to be used for finding links. This value cannot be`null`. |
 | `defaultScheme` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:The default scheme to be prepended to links if the link does not start with one of the`schemes`given. This value may be`null`. |
 | --- | --- |
 | `schemes` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?:Array of schemes (eg`http://`) to check if the link found contains a scheme. Passing a null or empty value means prepend defaultScheme to all links. |
@@ -305,15 +305,15 @@ Applies a regex to a Spannable turning the matches into links.
 
 | Parameters ||
 |-------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `spannable` | [Spannable](../android/text/Spannable.md):spannable whose text is to be marked-up with links. This value cannot be`null`. |
-| `pattern` | [Pattern](../java/util/regex/Pattern.md):regex pattern to be used for finding links. This value cannot be`null`. |
+| `spannable` | [Spannable](../android.text/Spannable.md):spannable whose text is to be marked-up with links. This value cannot be`null`. |
+| `pattern` | [Pattern](../java.util.regex/Pattern.md):regex pattern to be used for finding links. This value cannot be`null`. |
 | `defaultScheme` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:the default scheme to be prepended to links if the link does not start with one of the`schemes`given. This value may be`null`. |
 | --- | --- |
 | `schemes` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?:array of schemes (eg`http://`) to check if the link found contains a scheme. Passing a null or empty value means prepend defaultScheme to all links. |
 | `matchFilter` | [Linkify.MatchFilter](../android/text/util/Linkify.MatchFilter.md)?:the filter that is used to allow the client code additional control over which pattern matches are to be converted into links. This value may be`null`. |
 | `transformFilter` | [Linkify.TransformFilter](../android/text/util/Linkify.TransformFilter.md)?:filter to allow the client code to update the link found. This value may be`null`. |
 | --- | --- |
-| `urlSpanFactory` | [Function](../java/util/function/Function.md)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [URLSpan](../android/text/style/URLSpan.md)!\>?:function used to create [URLSpan](../android/text/style/URLSpan.md) s This value may be`null`. |
+| `urlSpanFactory` | [Function](../java.util.function/Function.md)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [URLSpan](../android.text.style/URLSpan.md)!\>?:function used to create [URLSpan](../android.text.style/URLSpan.md) s This value may be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------------------------------|
@@ -334,8 +334,8 @@ Scans the text of the provided TextView and turns all occurrences of the link ty
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `text` | [TextView](../android/widget/TextView.md):TextView whose text is to be marked-up with links This value cannot be`null`. |
-| `mask` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Mask to define which kinds of links will be searched. Value is either`0`or a combination of [android.text.util.Linkify#WEB_URLS](../android/text/util/Linkify.md), [android.text.util.Linkify#EMAIL_ADDRESSES](../android/text/util/Linkify.md), [android.text.util.Linkify#PHONE_NUMBERS](../android/text/util/Linkify.md), [android.text.util.Linkify#MAP_ADDRESSES](../android/text/util/Linkify.md), and [android.text.util.Linkify#ALL](../android/text/util/Linkify.md) |
+| `text` | [TextView](../android.widget/TextView.md):TextView whose text is to be marked-up with links This value cannot be`null`. |
+| `mask` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Mask to define which kinds of links will be searched. Value is either`0`or a combination of [android.text.util.Linkify#WEB_URLS](Linkify.md), [android.text.util.Linkify#EMAIL_ADDRESSES](Linkify.md), [android.text.util.Linkify#PHONE_NUMBERS](Linkify.md), [android.text.util.Linkify#MAP_ADDRESSES](Linkify.md), and [android.text.util.Linkify#ALL](Linkify.md) |
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------------------------------|
@@ -343,7 +343,7 @@ Scans the text of the provided TextView and turns all occurrences of the link ty
 
 **See Also**
 
-- [#addLinks(Spannable, int, Function)](../android/text/util/Linkify.md)) 
+- [#addLinks(Spannable, int, Function)](Linkify.md)) 
 
 ### addLinks
 
@@ -361,8 +361,8 @@ Applies a regex to the text of a TextView turning the matches into links. If lin
 
 | Parameters ||
 |-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `text` | [TextView](../android/widget/TextView.md):TextView whose text is to be marked-up with links This value cannot be`null`. |
-| `pattern` | [Pattern](../java/util/regex/Pattern.md):Regex pattern to be used for finding links This value cannot be`null`. |
+| `text` | [TextView](../android.widget/TextView.md):TextView whose text is to be marked-up with links This value cannot be`null`. |
+| `pattern` | [Pattern](../java.util.regex/Pattern.md):Regex pattern to be used for finding links This value cannot be`null`. |
 | `scheme` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:URL scheme string (eg`http://`) to be prepended to the links that do not start with this scheme. This value may be`null`. |
 | --- | --- |
 
@@ -384,8 +384,8 @@ Applies a regex to the text of a TextView turning the matches into links. If lin
 
 | Parameters ||
 |-------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `text` | [TextView](../android/widget/TextView.md):TextView whose text is to be marked-up with links This value cannot be`null`. |
-| `pattern` | [Pattern](../java/util/regex/Pattern.md):Regex pattern to be used for finding links This value cannot be`null`. |
+| `text` | [TextView](../android.widget/TextView.md):TextView whose text is to be marked-up with links This value cannot be`null`. |
+| `pattern` | [Pattern](../java.util.regex/Pattern.md):Regex pattern to be used for finding links This value cannot be`null`. |
 | `scheme` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:URL scheme string (eg`http://`) to be prepended to the links that do not start with this scheme. This value may be`null`. |
 | --- | --- |
 | `matchFilter` | [Linkify.MatchFilter](../android/text/util/Linkify.MatchFilter.md)?:The filter that is used to allow the client code additional control over which pattern matches are to be converted into links. This value may be`null`. |
@@ -410,8 +410,8 @@ Applies a regex to the text of a TextView turning the matches into links. If lin
 
 | Parameters ||
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `text` | [TextView](../android/widget/TextView.md):TextView whose text is to be marked-up with links. This value cannot be`null`. |
-| `pattern` | [Pattern](../java/util/regex/Pattern.md):Regex pattern to be used for finding links. This value cannot be`null`. |
+| `text` | [TextView](../android.widget/TextView.md):TextView whose text is to be marked-up with links. This value cannot be`null`. |
+| `pattern` | [Pattern](../java.util.regex/Pattern.md):Regex pattern to be used for finding links. This value cannot be`null`. |
 | `defaultScheme` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:The default scheme to be prepended to links if the link does not start with one of the`schemes`given. This value may be`null`. |
 | --- | --- |
 | `schemes` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?:Array of schemes (eg`http://`) to check if the link found contains a scheme. Passing a null or empty value means prepend defaultScheme to all links. |

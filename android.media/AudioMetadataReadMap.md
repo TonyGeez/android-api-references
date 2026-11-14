@@ -4,19 +4,19 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 
 # AudioMetadataReadMap
 
-Kotlin| [Java](../android/media/AudioMetadataReadMap.md) 
+Kotlin| [Java](AudioMetadataReadMap.md) 
 | --- | --- |
 
 ```
 interface AudioMetadataReadMap
 ```
 
-| [android.media.AudioMetadataReadMap](../android/media/AudioMetadataReadMap.md) |
+| [android.media.AudioMetadataReadMap](AudioMetadataReadMap.md) |
 
-| Known Direct Subclasses [AudioMetadataMap](../android/media/AudioMetadataMap.md) |---------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [AudioMetadataMap](../android/media/AudioMetadataMap.md) | AudioMetadataMap is a writeable`Map`-style interface of [AudioMetadata.Key](../android/media/AudioMetadata.Key.md) value pairs. | |
+| Known Direct Subclasses [AudioMetadataMap](AudioMetadataMap.md) |---------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [AudioMetadataMap](AudioMetadataMap.md) | AudioMetadataMap is a writeable`Map`-style interface of [AudioMetadata.Key](../android/media/AudioMetadata.Key.md) value pairs. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
-A read only`Map`-style interface of [AudioMetadata.Key](../android/media/AudioMetadata.Key.md) value pairs used for [AudioMetadata](../android/media/AudioMetadata.md).
+A read only`Map`-style interface of [AudioMetadata.Key](../android/media/AudioMetadata.Key.md) value pairs used for [AudioMetadata](AudioMetadata.md).
 
 Using a [AudioMetadata.Key](../android/media/AudioMetadata.Key.md) interface, this map looks up the corresponding value. Read-only maps are thread-safe for lookup, but the underlying object values may need their own thread protection if mutable.
 {@see AudioMetadataMap}
@@ -25,11 +25,11 @@ Using a [AudioMetadata.Key](../android/media/AudioMetadata.Key.md) interface, th
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsKey](../android/media/AudioMetadataReadMap.md))`(`key:` ` [AudioMetadata.Key](../android/media/AudioMetadata.Key.md)<T>`)` Returns true if the key exists in the map. |
-| abstract [AudioMetadataMap](../android/media/AudioMetadataMap.md) | [dup](../android/media/AudioMetadataReadMap.md))`()` Returns a copy of the map. |
-| abstractT? | [get](../android/media/AudioMetadataReadMap.md))`(`key:` ` [AudioMetadata.Key](../android/media/AudioMetadata.Key.md)<T>`)` Returns the value associated with the key. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsKey](AudioMetadataReadMap.md))`(`key:` ` [AudioMetadata.Key](../android/media/AudioMetadata.Key.md)<T>`)` Returns true if the key exists in the map. |
+| abstract [AudioMetadataMap](AudioMetadataMap.md) | [dup](AudioMetadataReadMap.md))`()` Returns a copy of the map. |
+| abstractT? | [get](AudioMetadataReadMap.md))`(`key:` ` [AudioMetadata.Key](../android/media/AudioMetadata.Key.md)<T>`)` Returns the value associated with the key. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [size](../android/media/AudioMetadataReadMap.md))`()` Returns the number of elements in the map. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [size](AudioMetadataReadMap.md))`()` Returns the number of elements in the map. |
 
 ## Public methods
 
@@ -60,11 +60,11 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 abstract fun dup(): AudioMetadataMap
 ```
 
-Returns a copy of the map. This is intended for safe conversion between a [AudioMetadataReadMap](../android/media/AudioMetadataReadMap.md) interface and a [AudioMetadataMap](../android/media/AudioMetadataMap.md) interface. Currently only simple objects are used for key values which means a shallow copy is sufficient.
+Returns a copy of the map. This is intended for safe conversion between a [AudioMetadataReadMap](AudioMetadataReadMap.md) interface and a [AudioMetadataMap](AudioMetadataMap.md) interface. Currently only simple objects are used for key values which means a shallow copy is sufficient.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| [AudioMetadataMap](../android/media/AudioMetadataMap.md) | a Map copied from the existing map. This value cannot be`null`. |
+| [AudioMetadataMap](AudioMetadataMap.md) | a Map copied from the existing map. This value cannot be`null`. |
 
 ### get
 

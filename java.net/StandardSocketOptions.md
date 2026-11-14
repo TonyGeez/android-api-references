@@ -10,11 +10,11 @@ class StandardSocketOptions
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.net.StandardSocketOptions](../java/net/StandardSocketOptions.md) |
+| ↳ | [java.net.StandardSocketOptions](StandardSocketOptions.md) |
 
 Defines the*standard*socket options.
 
-The [name](../java/net/SocketOption.md))of each socket option defined by this class is its field name.
+The [name](SocketOption.md))of each socket option defined by this class is its field name.
 
 In this release, the socket options defined here are used by channels in the package.
 
@@ -22,21 +22,21 @@ In this release, the socket options defined here are used by channels in the pac
 
 | Properties ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [SocketOption](../java/net/SocketOption.md)\< [NetworkInterface](../java/net/NetworkInterface.md)!\>! | [IP_MULTICAST_IF](../java/net/StandardSocketOptions.md) The network interface for Internet Protocol (IP) multicast datagrams. |
-| static [SocketOption](../java/net/SocketOption.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>! | [IP_MULTICAST_LOOP](../java/net/StandardSocketOptions.md) Loopback for Internet Protocol (IP) multicast datagrams. |
-| static [SocketOption](../java/net/SocketOption.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>! | [IP_MULTICAST_TTL](../java/net/StandardSocketOptions.md) The*time-to-live*for Internet Protocol (IP) multicast datagrams. |
+| static [SocketOption](SocketOption.md)\< [NetworkInterface](NetworkInterface.md)!\>! | [IP_MULTICAST_IF](StandardSocketOptions.md) The network interface for Internet Protocol (IP) multicast datagrams. |
+| static [SocketOption](SocketOption.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>! | [IP_MULTICAST_LOOP](StandardSocketOptions.md) Loopback for Internet Protocol (IP) multicast datagrams. |
+| static [SocketOption](SocketOption.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>! | [IP_MULTICAST_TTL](StandardSocketOptions.md) The*time-to-live*for Internet Protocol (IP) multicast datagrams. |
 | --- | --- |
-| static [SocketOption](../java/net/SocketOption.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>! | [IP_TOS](../java/net/StandardSocketOptions.md) The Type of Service (ToS) octet in the Internet Protocol (IP) header. |
-| static [SocketOption](../java/net/SocketOption.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>! | [SO_BROADCAST](../java/net/StandardSocketOptions.md) Allow transmission of broadcast datagrams. |
-| static [SocketOption](../java/net/SocketOption.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>! | [SO_KEEPALIVE](../java/net/StandardSocketOptions.md) Keep connection alive. |
+| static [SocketOption](SocketOption.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>! | [IP_TOS](StandardSocketOptions.md) The Type of Service (ToS) octet in the Internet Protocol (IP) header. |
+| static [SocketOption](SocketOption.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>! | [SO_BROADCAST](StandardSocketOptions.md) Allow transmission of broadcast datagrams. |
+| static [SocketOption](SocketOption.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>! | [SO_KEEPALIVE](StandardSocketOptions.md) Keep connection alive. |
 | --- | --- |
-| static [SocketOption](../java/net/SocketOption.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>! | [SO_LINGER](../java/net/StandardSocketOptions.md) Linger on close if data is present. |
-| static [SocketOption](../java/net/SocketOption.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>! | [SO_RCVBUF](../java/net/StandardSocketOptions.md) The size of the socket receive buffer. |
-| static [SocketOption](../java/net/SocketOption.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>! | [SO_REUSEADDR](../java/net/StandardSocketOptions.md) Re-use address. |
+| static [SocketOption](SocketOption.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>! | [SO_LINGER](StandardSocketOptions.md) Linger on close if data is present. |
+| static [SocketOption](SocketOption.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>! | [SO_RCVBUF](StandardSocketOptions.md) The size of the socket receive buffer. |
+| static [SocketOption](SocketOption.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>! | [SO_REUSEADDR](StandardSocketOptions.md) Re-use address. |
 | --- | --- |
-| static [SocketOption](../java/net/SocketOption.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>! | [SO_REUSEPORT](../java/net/StandardSocketOptions.md) Re-use port. |
-| static [SocketOption](../java/net/SocketOption.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>! | [SO_SNDBUF](../java/net/StandardSocketOptions.md) The size of the socket send buffer. |
-| static [SocketOption](../java/net/SocketOption.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>! | [TCP_NODELAY](../java/net/StandardSocketOptions.md) Disable the Nagle algorithm. |
+| static [SocketOption](SocketOption.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>! | [SO_REUSEPORT](StandardSocketOptions.md) Re-use port. |
+| static [SocketOption](SocketOption.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>! | [SO_SNDBUF](StandardSocketOptions.md) The size of the socket send buffer. |
+| static [SocketOption](SocketOption.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>! | [TCP_NODELAY](StandardSocketOptions.md) Disable the Nagle algorithm. |
 | --- | --- |
 
 ## Properties
@@ -51,13 +51,13 @@ static val IP_MULTICAST_IF: SocketOption<NetworkInterface!>!
 
 The network interface for Internet Protocol (IP) multicast datagrams.
 
-The value of this socket option is a [NetworkInterface](../java/net/NetworkInterface.md) that represents the outgoing interface for multicast datagrams sent by the datagram-oriented socket. For [IPv6](../java/net/StandardProtocolFamily.md) sockets then it is system dependent whether setting this option also sets the outgoing interface for multicast datagrams sent to IPv4 addresses.
+The value of this socket option is a [NetworkInterface](NetworkInterface.md) that represents the outgoing interface for multicast datagrams sent by the datagram-oriented socket. For [IPv6](StandardProtocolFamily.md) sockets then it is system dependent whether setting this option also sets the outgoing interface for multicast datagrams sent to IPv4 addresses.
 
 The initial/default value of this socket option may be`null`to indicate that outgoing interface will be selected by the operating system, typically based on the network routing tables. An implementation allows this socket option to be set after the socket is bound. Whether the socket option can be queried or changed prior to binding the socket is system dependent. 
 **See Also**
 
-- [java.nio.channels.MulticastChannel](../java/nio/channels/MulticastChannel.md)
-- [java.net.MulticastSocket#setInterface](../java/net/MulticastSocket.md)) 
+- [java.nio.channels.MulticastChannel](../java.nio.channels/MulticastChannel.md)
+- [java.net.MulticastSocket#setInterface](MulticastSocket.md)) 
 
 ### IP_MULTICAST_LOOP
 
@@ -71,13 +71,13 @@ Loopback for Internet Protocol (IP) multicast datagrams.
 
 The value of this socket option is a`Boolean`that controls the*loopback*of multicast datagrams. The value of the socket option represents if the option is enabled or disabled.
 
-The exact semantics of this socket options are system dependent. In particular, it is system dependent whether the loopback applies to multicast datagrams sent from the socket or received by the socket. For [IPv6](../java/net/StandardProtocolFamily.md) sockets then it is system dependent whether the option also applies to multicast datagrams sent to IPv4 addresses.
+The exact semantics of this socket options are system dependent. In particular, it is system dependent whether the loopback applies to multicast datagrams sent from the socket or received by the socket. For [IPv6](StandardProtocolFamily.md) sockets then it is system dependent whether the option also applies to multicast datagrams sent to IPv4 addresses.
 
 The initial/default value of this socket option is`TRUE`. An implementation allows this socket option to be set after the socket is bound. Whether the socket option can be queried or changed prior to binding the socket is system dependent. 
 **See Also**
 
-- [java.nio.channels.MulticastChannel](../java/nio/channels/MulticastChannel.md)
-- [java.net.MulticastSocket#setLoopbackMode](../java/net/MulticastSocket.md)) 
+- [java.nio.channels.MulticastChannel](../java.nio.channels/MulticastChannel.md)
+- [java.net.MulticastSocket#setLoopbackMode](MulticastSocket.md)) 
 
 ### IP_MULTICAST_TTL
 
@@ -89,13 +89,13 @@ static val IP_MULTICAST_TTL: SocketOption<Int!>!
 
 The*time-to-live*for Internet Protocol (IP) multicast datagrams.
 
-The value of this socket option is an`Integer`in the range`0 <= value <= 255`. It is used to control the scope of multicast datagrams sent by the datagram-oriented socket. In the case of an [IPv4](../java/net/StandardProtocolFamily.md) socket the option is the time-to-live (TTL) on multicast datagrams sent by the socket. Datagrams with a TTL of zero are not transmitted on the network but may be delivered locally. In the case of an [IPv6](../java/net/StandardProtocolFamily.md) socket the option is the*hop limit* which is number of*hops* that the datagram can pass through before expiring on the network. For IPv6 sockets it is system dependent whether the option also sets the*time-to-live*on multicast datagrams sent to IPv4 addresses.
+The value of this socket option is an`Integer`in the range`0 <= value <= 255`. It is used to control the scope of multicast datagrams sent by the datagram-oriented socket. In the case of an [IPv4](StandardProtocolFamily.md) socket the option is the time-to-live (TTL) on multicast datagrams sent by the socket. Datagrams with a TTL of zero are not transmitted on the network but may be delivered locally. In the case of an [IPv6](StandardProtocolFamily.md) socket the option is the*hop limit* which is number of*hops* that the datagram can pass through before expiring on the network. For IPv6 sockets it is system dependent whether the option also sets the*time-to-live*on multicast datagrams sent to IPv4 addresses.
 
 The initial/default value of the time-to-live setting is typically`1`. An implementation allows this socket option to be set after the socket is bound. Whether the socket option can be queried or changed prior to binding the socket is system dependent. 
 **See Also**
 
-- [java.nio.channels.MulticastChannel](../java/nio/channels/MulticastChannel.md)
-- [java.net.MulticastSocket#setTimeToLive](../java/net/MulticastSocket.md)) 
+- [java.nio.channels.MulticastChannel](../java.nio.channels/MulticastChannel.md)
+- [java.net.MulticastSocket#setTimeToLive](MulticastSocket.md)) 
 
 ### IP_TOS
 
@@ -107,14 +107,14 @@ static val IP_TOS: SocketOption<Int!>!
 
 The Type of Service (ToS) octet in the Internet Protocol (IP) header.
 
-The value of this socket option is an`Integer`representing the value of the ToS octet in IP packets sent by sockets to an [IPv4](../java/net/StandardProtocolFamily.md) socket. The interpretation of the ToS octet is network specific and is not defined by this class. Further information on the ToS octet can be found in [RFC 1349](http://www.ietf.org/rfc/rfc1349.txt) and [RFC 2474](http://www.ietf.org/rfc/rfc2474.txt). The value of the socket option is a*hint*. An implementation may ignore the value, or ignore specific values.
+The value of this socket option is an`Integer`representing the value of the ToS octet in IP packets sent by sockets to an [IPv4](StandardProtocolFamily.md) socket. The interpretation of the ToS octet is network specific and is not defined by this class. Further information on the ToS octet can be found in [RFC 1349](http://www.ietf.org/rfc/rfc1349.txt) and [RFC 2474](http://www.ietf.org/rfc/rfc2474.txt). The value of the socket option is a*hint*. An implementation may ignore the value, or ignore specific values.
 
 The initial/default value of the TOS field in the ToS octet is implementation specific but will typically be`0`. For datagram-oriented sockets the option may be configured at any time after the socket has been bound. The new value of the octet is used when sending subsequent datagrams. It is system dependent whether this option can be queried or changed prior to binding the socket.
 
-The behavior of this socket option on a stream-oriented socket, or an [IPv6](../java/net/StandardProtocolFamily.md) socket, is not defined in this release. 
+The behavior of this socket option on a stream-oriented socket, or an [IPv6](StandardProtocolFamily.md) socket, is not defined in this release. 
 **See Also**
 
-- [java.net.DatagramSocket#setTrafficClass](../java/net/DatagramSocket.md)) 
+- [java.net.DatagramSocket#setTrafficClass](DatagramSocket.md)) 
 
 ### SO_BROADCAST
 
@@ -126,12 +126,12 @@ static val SO_BROADCAST: SocketOption<Boolean!>!
 
 Allow transmission of broadcast datagrams.
 
-The value of this socket option is a`Boolean`that represents whether the option is enabled or disabled. The option is specific to datagram-oriented sockets sending to [IPv4](../java/net/Inet4Address.md) broadcast addresses. When the socket option is enabled then the socket can be used to send*broadcast datagrams*.
+The value of this socket option is a`Boolean`that represents whether the option is enabled or disabled. The option is specific to datagram-oriented sockets sending to [IPv4](Inet4Address.md) broadcast addresses. When the socket option is enabled then the socket can be used to send*broadcast datagrams*.
 
 The initial value of this socket option is`FALSE`. The socket option may be enabled or disabled at any time. Some operating systems may require that the Java virtual machine be started with implementation specific privileges to enable this option or send broadcast datagrams. 
 **See Also**
 
-- [java.net.DatagramSocket#setBroadcast](../java/net/DatagramSocket.md)) 
+- [java.net.DatagramSocket#setBroadcast](DatagramSocket.md)) 
 
 ### SO_KEEPALIVE
 
@@ -148,7 +148,7 @@ The value of this socket option is a`Boolean`that represents whether the option 
 The initial value of this socket option is`FALSE`. The socket option may be enabled or disabled at any time. 
 **See Also**
 
-- [java.net.Socket#setKeepAlive](../java/net/Socket.md)) 
+- [java.net.Socket#setKeepAlive](Socket.md)) 
 
 ### SO_LINGER
 
@@ -162,12 +162,12 @@ Linger on close if data is present.
 
 The value of this socket option is an`Integer`that controls the action taken when unsent data is queued on the socket and a method to close the socket is invoked. If the value of the socket option is zero or greater, then it represents a timeout value, in seconds, known as the*linger interval* . The linger interval is the timeout for the`close`method to block while the operating system attempts to transmit the unsent data or it decides that it is unable to transmit the data. If the value of the socket option is less than zero then the option is disabled. In that case the`close`method does not wait until unsent data is transmitted; if possible the operating system will transmit any unsent data before the connection is closed.
 
-This socket option is intended for use with sockets that are configured in [blocking](../java/nio/channels/SelectableChannel.md))mode only. The behavior of the`close`method when this option is enabled on a non-blocking socket is not defined.
+This socket option is intended for use with sockets that are configured in [blocking](../java.nio.channels/SelectableChannel.md))mode only. The behavior of the`close`method when this option is enabled on a non-blocking socket is not defined.
 
 The initial value of this socket option is a negative value, meaning that the option is disabled. The option may be enabled, or the linger interval changed, at any time. The maximum value of the linger interval is system dependent. Setting the linger interval to a value that is greater than its maximum value causes the linger interval to be set to its maximum value. 
 **See Also**
 
-- [java.net.Socket#setSoLinger](../java/net/Socket.md)) 
+- [java.net.Socket#setSoLinger](Socket.md)) 
 
 ### SO_RCVBUF
 
@@ -190,8 +190,8 @@ The initial/default size of the socket receive buffer and the range of allowable
 An implementation allows this socket option to be set before the socket is bound or connected. Whether an implementation allows the socket receive buffer to be changed after the socket is bound is system dependent. 
 **See Also**
 
-- [java.net.Socket#setReceiveBufferSize](../java/net/Socket.md))
-- [java.net.ServerSocket#setReceiveBufferSize](../java/net/ServerSocket.md)) 
+- [java.net.Socket#setReceiveBufferSize](Socket.md))
+- [java.net.ServerSocket#setReceiveBufferSize](ServerSocket.md)) 
 
 ### SO_REUSEADDR
 
@@ -212,7 +212,7 @@ For datagram-oriented sockets the socket option is used to allow multiple progra
 An implementation allows this socket option to be set before the socket is bound or connected. Changing the value of this socket option after the socket is bound has no effect. The default value of this socket option is system dependent. 
 **See Also**
 
-- [java.net.ServerSocket#setReuseAddress](../java/net/ServerSocket.md)) 
+- [java.net.ServerSocket#setReuseAddress](ServerSocket.md)) 
 
 ### SO_REUSEPORT
 
@@ -251,7 +251,7 @@ The initial/default size of the socket send buffer and the range of allowable va
 An implementation allows this socket option to be set before the socket is bound or connected. Whether an implementation allows the socket send buffer to be changed after the socket is bound is system dependent. 
 **See Also**
 
-- [java.net.Socket#setSendBufferSize](../java/net/Socket.md)) 
+- [java.net.Socket#setSendBufferSize](Socket.md)) 
 
 ### TCP_NODELAY
 
@@ -268,4 +268,4 @@ The value of this socket option is a`Boolean`that represents whether the option 
 The default value of this socket option is`FALSE`. The socket option should only be enabled in cases where it is known that the coalescing impacts performance. The socket option may be enabled at any time. In other words, the Nagle Algorithm can be disabled. Once the option is enabled, it is system dependent whether it can be subsequently disabled. If it cannot, then invoking the`setOption`method to disable the option has no effect. 
 **See Also**
 
-- [java.net.Socket#setTcpNoDelay](../java/net/Socket.md))
+- [java.net.Socket#setTcpNoDelay](Socket.md))

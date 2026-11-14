@@ -9,7 +9,7 @@ abstract class PresentationSession
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.security.identity.PresentationSession](../android/security/identity/PresentationSession.md) |
+| ↳ | [android.security.identity.PresentationSession](PresentationSession.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 37.2.**
@@ -24,8 +24,8 @@ This should be used for all interactions with a remote verifier instead of the n
 
 | Public methods ||
 |---|---|
-| abstract [CredentialDataResult](../android/security/identity/CredentialDataResult.md)? | `https://developer.android.com/reference/kotlin/android/security/identity/PresentationSession#getCredentialData(kotlin.String,%20android.security.identity.CredentialDataRequest)(credentialName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, request: https://developer.android.com/reference/kotlin/android/security/identity/CredentialDataRequest)` Retrieves data from a named credential in the current presentation session. |
-| abstract [KeyPair](../java/security/KeyPair.md) | `https://developer.android.com/reference/kotlin/android/security/identity/PresentationSession#getEphemeralKeyPair()()` Gets the ephemeral key pair to use to establish a secure channel with the verifier. |
+| abstract [CredentialDataResult](CredentialDataResult.md)? | `https://developer.android.com/reference/kotlin/android/security/identity/PresentationSession#getCredentialData(kotlin.String,%20android.security.identity.CredentialDataRequest)(credentialName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, request: https://developer.android.com/reference/kotlin/android/security/identity/CredentialDataRequest)` Retrieves data from a named credential in the current presentation session. |
+| abstract [KeyPair](../java.security/KeyPair.md) | `https://developer.android.com/reference/kotlin/android/security/identity/PresentationSession#getEphemeralKeyPair()()` Gets the ephemeral key pair to use to establish a secure channel with the verifier. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/security/identity/PresentationSession#setReaderEphemeralPublicKey(java.security.PublicKey)(readerEphemeralPublicKey: https://developer.android.com/reference/kotlin/java/security/PublicKey.html#)` Set the ephemeral public key provided by the verifier. |
 | --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/security/identity/PresentationSession#setSessionTranscript(kotlin.ByteArray)(sessionTranscript: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)` Set the session transcript. |
@@ -79,7 +79,7 @@ Note that the request message CBOR is used only for enforcing reader authenticat
 | Parameters ||
 |---|---|
 | `credentialName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): the name of the credential to retrieve. This value cannot be `null`. |
-| `request` | [CredentialDataRequest](../android/security/identity/CredentialDataRequest.md): the data to retrieve from the credential. This value cannot be `null`. |
+| `request` | [CredentialDataRequest](CredentialDataRequest.md): the data to retrieve from the credential. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -131,7 +131,7 @@ This method can only be called once per `https://developer.android.com/reference
 
 | Parameters ||
 |---|---|
-| `readerEphemeralPublicKey` | [PublicKey](../java/security/PublicKey.md): The ephemeral public key provided by the reader to establish a secure session. This value cannot be `null`. |
+| `readerEphemeralPublicKey` | [PublicKey](../java.security/PublicKey.md): The ephemeral public key provided by the reader to establish a secure session. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|

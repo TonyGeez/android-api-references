@@ -8,11 +8,11 @@ abstract class WallpaperService : Service
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](../android/content/Context.md) ||||
-| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) |||
-| | | ↳ | [android.app.Service](../android/app/Service.md) ||
+| ↳ | [android.content.Context](../android.content/Context.md) ||||
+| | ↳ | [android.content.ContextWrapper](../android.content/ContextWrapper.md) |||
+| | | ↳ | [android.app.Service](../android.app/Service.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.service.wallpaper.WallpaperService](../android/service/wallpaper/WallpaperService.md) |
+| | | | ↳ | [android.service.wallpaper.WallpaperService](WallpaperService.md) |
 
 A wallpaper service is responsible for showing a live wallpaper behind applications that would like to sit on top of it. This service object itself does very little -- its only purpose is to generate instances of `https://developer.android.com/reference/kotlin/android/service/wallpaper/WallpaperService.Engine` as needed. Implementing a wallpaper thus involves subclassing from this, subclassing an Engine implementation, and implementing `https://developer.android.com/reference/kotlin/android/service/wallpaper/WallpaperService#onCreateEngine()` to return a new instance of your engine.
 
@@ -1050,7 +1050,7 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 
 | Public methods ||
 |---|---|
-| [IBinder](../android/os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/service/wallpaper/WallpaperService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Implement to return the implementation of the internal accessibility service interface. |
+| [IBinder](../android.os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/service/wallpaper/WallpaperService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Implement to return the implementation of the internal accessibility service interface. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/wallpaper/WallpaperService#onCreate()()` Called by the system when the service is first created. |
 | abstract [WallpaperService.Engine](../android/service/wallpaper/WallpaperService.Engine.md)! | `https://developer.android.com/reference/kotlin/android/service/wallpaper/WallpaperService#onCreateEngine()()` Must be implemented to return a new instance of the wallpaper's engine. |
 | --- | --- |
@@ -2782,7 +2782,7 @@ Implement to return the implementation of the internal accessibility service int
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
+| `intent` | [Intent](../android.content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
 
 | Return ||
 |---|---|
@@ -2822,7 +2822,7 @@ This method must be called from the main thread of your app.
 
 | Parameters ||
 |---|---|
-| `description` | [WallpaperDescription](../android/app/wallpaper/WallpaperDescription.md): content to display. This value cannot be `null`. |
+| `description` | [WallpaperDescription](../android.app.wallpaper/WallpaperDescription.md): content to display. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -2856,7 +2856,7 @@ Print the Service's state into the given stream. This gets invoked if you run "a
 
 | Parameters ||
 |---|---|
-| `fd` | [FileDescriptor](../java/io/FileDescriptor.md)!: The raw file descriptor that the dump is being sent to. |
+| `fd` | [FileDescriptor](../java.io/FileDescriptor.md)!: The raw file descriptor that the dump is being sent to. |
 | `writer` | The PrintWriter to which you should dump your state. This will be closed for you after you return. |
 | `args` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!: additional arguments to the dump request. |
 | --- | --- |

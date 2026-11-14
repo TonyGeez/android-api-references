@@ -11,11 +11,11 @@ open class NotYetBoundException : IllegalStateException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
-| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) |||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) ||||
+| | | ↳ | [java.lang.RuntimeException](../java.lang/RuntimeException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.IllegalStateException](../java/lang/IllegalStateException.md) ||
-| | | | | ↳ | [java.nio.channels.NotYetBoundException](../java/nio/channels/NotYetBoundException.md) |
+| | | | ↳ | [java.lang.IllegalStateException](../java.lang/IllegalStateException.md) ||
+| | | | | ↳ | [java.nio.channels.NotYetBoundException](NotYetBoundException.md) |
 
 Unchecked exception thrown when an attempt is made to invoke an I/O operation upon a server socket channel that is not yet bound.
 
@@ -23,7 +23,7 @@ Unchecked exception thrown when an attempt is made to invoke an I/O operation up
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [NotYetBoundException](../java/nio/channels/NotYetBoundException.md))`()` Constructs an instance of this class. |
+| [NotYetBoundException](NotYetBoundException.md))`()` Constructs an instance of this class. |
 
 ## Public constructors
 

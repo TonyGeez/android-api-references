@@ -4,7 +4,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # BroadcastOptions
 
-Kotlin| [Java](../android/app/BroadcastOptions.md) 
+Kotlin| [Java](BroadcastOptions.md) 
 | --- | --- |
 
 ```
@@ -13,41 +13,41 @@ open class BroadcastOptions
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.BroadcastOptions](../android/app/BroadcastOptions.md) |
+| ↳ | [android.app.BroadcastOptions](BroadcastOptions.md) |
 
-Helper class for building an options Bundle that can be used with [Context.sendBroadcast(Intent)](../android/content/Context.md))and related methods.
+Helper class for building an options Bundle that can be used with [Context.sendBroadcast(Intent)](../android.content/Context.md))and related methods.
 
 ## Summary
 
 | Constants ||
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEFERRAL_POLICY_DEFAULT](../android/app/BroadcastOptions.md) Deferral policy that indicates no desire has been expressed, and that the system should use a reasonable default behavior. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEFERRAL_POLICY_NONE](../android/app/BroadcastOptions.md) Deferral policy that indicates a strong desire that no receiver of this broadcast should be deferred. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEFERRAL_POLICY_UNTIL_ACTIVE](../android/app/BroadcastOptions.md) Deferral policy that indicates a strong desire that each receiver of this broadcast should be deferred until that receiver's process is in an active (non-cached) state. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEFERRAL_POLICY_DEFAULT](BroadcastOptions.md) Deferral policy that indicates no desire has been expressed, and that the system should use a reasonable default behavior. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEFERRAL_POLICY_NONE](BroadcastOptions.md) Deferral policy that indicates a strong desire that no receiver of this broadcast should be deferred. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEFERRAL_POLICY_UNTIL_ACTIVE](BroadcastOptions.md) Deferral policy that indicates a strong desire that each receiver of this broadcast should be deferred until that receiver's process is in an active (non-cached) state. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DELIVERY_GROUP_POLICY_ALL](../android/app/BroadcastOptions.md) Delivery group policy that indicates that all the broadcasts in the delivery group need to be delivered as is. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DELIVERY_GROUP_POLICY_MOST_RECENT](../android/app/BroadcastOptions.md) Delivery group policy that indicates that only the most recent broadcast in the delivery group need to be delivered and the rest can be dropped. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DELIVERY_GROUP_POLICY_ALL](BroadcastOptions.md) Delivery group policy that indicates that all the broadcasts in the delivery group need to be delivered as is. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DELIVERY_GROUP_POLICY_MOST_RECENT](BroadcastOptions.md) Delivery group policy that indicates that only the most recent broadcast in the delivery group need to be delivered and the rest can be dropped. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearDeferralPolicy](../android/app/BroadcastOptions.md))`()` Clears any deferral policy for this broadcast that specifies how this broadcast can be deferred for delivery at some future point. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearDeliveryGroupMatchingKey](../android/app/BroadcastOptions.md))`()` Clears the namespace and key that was previously set using [setDeliveryGroupMatchingKey(java.lang.String,java.lang.String)](../android/app/BroadcastOptions.md)). |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearDeliveryGroupPolicy](../android/app/BroadcastOptions.md))`()` Clears any previously set delivery group policies using [setDeliveryGroupMatchingKey(java.lang.String,java.lang.String)](../android/app/BroadcastOptions.md))and resets the delivery group policy to the default value ([DELIVERY_GROUP_POLICY_ALL](../android/app/BroadcastOptions.md)). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearDeferralPolicy](BroadcastOptions.md))`()` Clears any deferral policy for this broadcast that specifies how this broadcast can be deferred for delivery at some future point. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearDeliveryGroupMatchingKey](BroadcastOptions.md))`()` Clears the namespace and key that was previously set using [setDeliveryGroupMatchingKey(java.lang.String,java.lang.String)](BroadcastOptions.md)). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearDeliveryGroupPolicy](BroadcastOptions.md))`()` Clears any previously set delivery group policies using [setDeliveryGroupMatchingKey(java.lang.String,java.lang.String)](BroadcastOptions.md))and resets the delivery group policy to the default value ([DELIVERY_GROUP_POLICY_ALL](BroadcastOptions.md)). |
 | --- | --- |
-| openstatic [BroadcastOptions](../android/app/BroadcastOptions.md) | [fromBundle](../android/app/BroadcastOptions.md))`(`options:` ` [Bundle](../android/os/Bundle.md)`)` Returns a [BroadcastOptions](../android/app/BroadcastOptions.md) parsed from the given [Bundle](../android/os/Bundle.md), typically generated from [toBundle()](../android/app/BroadcastOptions.md)). |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDeferralPolicy](../android/app/BroadcastOptions.md))`()` Gets deferral policy for this broadcast that specifies how this broadcast can be deferred for delivery at some future point. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getDeliveryGroupMatchingKey](../android/app/BroadcastOptions.md))`()` Return the namespace and key that is used to identify the delivery group that this broadcast belongs to. |
+| openstatic [BroadcastOptions](BroadcastOptions.md) | [fromBundle](BroadcastOptions.md))`(`options:` ` [Bundle](../android.os/Bundle.md)`)` Returns a [BroadcastOptions](BroadcastOptions.md) parsed from the given [Bundle](../android.os/Bundle.md), typically generated from [toBundle()](BroadcastOptions.md)). |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDeferralPolicy](BroadcastOptions.md))`()` Gets deferral policy for this broadcast that specifies how this broadcast can be deferred for delivery at some future point. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getDeliveryGroupMatchingKey](BroadcastOptions.md))`()` Return the namespace and key that is used to identify the delivery group that this broadcast belongs to. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDeliveryGroupPolicy](../android/app/BroadcastOptions.md))`()` Get the delivery group policy for this broadcast that specifies how multiple broadcasts belonging to the same delivery group has to be handled. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isShareIdentityEnabled](../android/app/BroadcastOptions.md))`()` Returns whether the broadcasting app has opted-in to sharing its identity with the receiver. |
-| openstatic [BroadcastOptions](../android/app/BroadcastOptions.md) | [makeBasic](../android/app/BroadcastOptions.md))`()` Creates a basic [BroadcastOptions](../android/app/BroadcastOptions.md) with no options initially set. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDeliveryGroupPolicy](BroadcastOptions.md))`()` Get the delivery group policy for this broadcast that specifies how multiple broadcasts belonging to the same delivery group has to be handled. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isShareIdentityEnabled](BroadcastOptions.md))`()` Returns whether the broadcasting app has opted-in to sharing its identity with the receiver. |
+| openstatic [BroadcastOptions](BroadcastOptions.md) | [makeBasic](BroadcastOptions.md))`()` Creates a basic [BroadcastOptions](BroadcastOptions.md) with no options initially set. |
 | --- | --- |
-| open [BroadcastOptions](../android/app/BroadcastOptions.md) | [setDeferralPolicy](../android/app/BroadcastOptions.md))`(`deferralPolicy:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets deferral policy for this broadcast that specifies how this broadcast can be deferred for delivery at some future point. |
-| open [BroadcastOptions](../android/app/BroadcastOptions.md) | [setDeliveryGroupMatchingKey](../android/app/BroadcastOptions.md))`(`namespace:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Set namespace and key to identify the delivery group that this broadcast belongs to. |
-| open [BroadcastOptions](../android/app/BroadcastOptions.md) | [setDeliveryGroupPolicy](../android/app/BroadcastOptions.md))`(`policy:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set delivery group policy for this broadcast to specify how multiple broadcasts belonging to the same delivery group has to be handled. |
+| open [BroadcastOptions](BroadcastOptions.md) | [setDeferralPolicy](BroadcastOptions.md))`(`deferralPolicy:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets deferral policy for this broadcast that specifies how this broadcast can be deferred for delivery at some future point. |
+| open [BroadcastOptions](BroadcastOptions.md) | [setDeliveryGroupMatchingKey](BroadcastOptions.md))`(`namespace:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Set namespace and key to identify the delivery group that this broadcast belongs to. |
+| open [BroadcastOptions](BroadcastOptions.md) | [setDeliveryGroupPolicy](BroadcastOptions.md))`(`policy:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set delivery group policy for this broadcast to specify how multiple broadcasts belonging to the same delivery group has to be handled. |
 | --- | --- |
-| open [BroadcastOptions](../android/app/BroadcastOptions.md) | [setShareIdentityEnabled](../android/app/BroadcastOptions.md))`(`shareIdentityEnabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets whether the identity of the broadcasting app should be shared with all receivers that will receive this broadcast. |
-| open [Bundle](../android/os/Bundle.md) | [toBundle](../android/app/BroadcastOptions.md))`()` Returns the created options as a Bundle, which can be passed to [Context.sendBroadcast(Intent)](../android/content/Context.md))and related methods. |
+| open [BroadcastOptions](BroadcastOptions.md) | [setShareIdentityEnabled](BroadcastOptions.md))`(`shareIdentityEnabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets whether the identity of the broadcasting app should be shared with all receivers that will receive this broadcast. |
+| open [Bundle](../android.os/Bundle.md) | [toBundle](BroadcastOptions.md))`()` Returns the created options as a Bundle, which can be passed to [Context.sendBroadcast(Intent)](../android.content/Context.md))and related methods. |
 
 ## Constants
 
@@ -137,7 +137,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 open fun clearDeliveryGroupMatchingKey(): Unit
 ```
 
-Clears the namespace and key that was previously set using [setDeliveryGroupMatchingKey(java.lang.String,java.lang.String)](../android/app/BroadcastOptions.md)). 
+Clears the namespace and key that was previously set using [setDeliveryGroupMatchingKey(java.lang.String,java.lang.String)](BroadcastOptions.md)). 
 
 ### clearDeliveryGroupPolicy
 
@@ -147,7 +147,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 open fun clearDeliveryGroupPolicy(): Unit
 ```
 
-Clears any previously set delivery group policies using [setDeliveryGroupMatchingKey(java.lang.String,java.lang.String)](../android/app/BroadcastOptions.md))and resets the delivery group policy to the default value ([DELIVERY_GROUP_POLICY_ALL](../android/app/BroadcastOptions.md)). 
+Clears any previously set delivery group policies using [setDeliveryGroupMatchingKey(java.lang.String,java.lang.String)](BroadcastOptions.md))and resets the delivery group policy to the default value ([DELIVERY_GROUP_POLICY_ALL](BroadcastOptions.md)). 
 
 ### fromBundle
 
@@ -157,15 +157,15 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 open static fun fromBundle(options: Bundle): BroadcastOptions
 ```
 
-Returns a [BroadcastOptions](../android/app/BroadcastOptions.md) parsed from the given [Bundle](../android/os/Bundle.md), typically generated from [toBundle()](../android/app/BroadcastOptions.md)).
+Returns a [BroadcastOptions](BroadcastOptions.md) parsed from the given [Bundle](../android.os/Bundle.md), typically generated from [toBundle()](BroadcastOptions.md)).
 
 | Parameters ||
 |-----------|--------------------------------------------------------------------------------------------------------------|
-| `options` | [Bundle](../android/os/Bundle.md):This value cannot be`null`. |
+| `options` | [Bundle](../android.os/Bundle.md):This value cannot be`null`. |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|-----------------------------|
-| [BroadcastOptions](../android/app/BroadcastOptions.md) | This value cannot be`null`. |
+| [BroadcastOptions](BroadcastOptions.md) | This value cannot be`null`. |
 
 ### getDeferralPolicy
 
@@ -179,7 +179,7 @@ Gets deferral policy for this broadcast that specifies how this broadcast can be
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.app.BroadcastOptions#DEFERRAL_POLICY_DEFAULT](../android/app/BroadcastOptions.md), [android.app.BroadcastOptions#DEFERRAL_POLICY_NONE](../android/app/BroadcastOptions.md), or [android.app.BroadcastOptions#DEFERRAL_POLICY_UNTIL_ACTIVE](../android/app/BroadcastOptions.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.app.BroadcastOptions#DEFERRAL_POLICY_DEFAULT](BroadcastOptions.md), [android.app.BroadcastOptions#DEFERRAL_POLICY_NONE](BroadcastOptions.md), or [android.app.BroadcastOptions#DEFERRAL_POLICY_UNTIL_ACTIVE](BroadcastOptions.md) |
 
 ### getDeliveryGroupMatchingKey
 
@@ -193,7 +193,7 @@ Return the namespace and key that is used to identify the delivery group that th
 
 | Return ||
 |-----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | the delivery group namespace and key that was previously set using [setDeliveryGroupMatchingKey(java.lang.String,java.lang.String)](../android/app/BroadcastOptions.md)), concatenated with a`:`. This value may be`null`. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | the delivery group namespace and key that was previously set using [setDeliveryGroupMatchingKey(java.lang.String,java.lang.String)](BroadcastOptions.md)), concatenated with a`:`. This value may be`null`. |
 
 ### getDeliveryGroupPolicy
 
@@ -207,7 +207,7 @@ Get the delivery group policy for this broadcast that specifies how multiple bro
 
 | Return ||
 |----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.app.BroadcastOptions#DELIVERY_GROUP_POLICY_ALL](../android/app/BroadcastOptions.md), [android.app.BroadcastOptions#DELIVERY_GROUP_POLICY_MOST_RECENT](../android/app/BroadcastOptions.md), or android.app.BroadcastOptions.DELIVERY_GROUP_POLICY_MERGED |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.app.BroadcastOptions#DELIVERY_GROUP_POLICY_ALL](BroadcastOptions.md), [android.app.BroadcastOptions#DELIVERY_GROUP_POLICY_MOST_RECENT](BroadcastOptions.md), or android.app.BroadcastOptions.DELIVERY_GROUP_POLICY_MERGED |
 
 ### isShareIdentityEnabled
 
@@ -225,9 +225,9 @@ Returns whether the broadcasting app has opted-in to sharing its identity with t
 
 **See Also**
 
-- [#setShareIdentityEnabled(boolean)](../android/app/BroadcastOptions.md))
-- [android.content.BroadcastReceiver#getSentFromUid()](../android/content/BroadcastReceiver.md))
-- [android.content.BroadcastReceiver#getSentFromPackage()](../android/content/BroadcastReceiver.md)) 
+- [#setShareIdentityEnabled(boolean)](BroadcastOptions.md))
+- [android.content.BroadcastReceiver#getSentFromUid()](../android.content/BroadcastReceiver.md))
+- [android.content.BroadcastReceiver#getSentFromPackage()](../android.content/BroadcastReceiver.md)) 
 
 ### makeBasic
 
@@ -237,11 +237,11 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 open static fun makeBasic(): BroadcastOptions
 ```
 
-Creates a basic [BroadcastOptions](../android/app/BroadcastOptions.md) with no options initially set.
+Creates a basic [BroadcastOptions](BroadcastOptions.md) with no options initially set.
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
-| [BroadcastOptions](../android/app/BroadcastOptions.md) | an instance of`BroadcastOptions`against which options can be set This value cannot be`null`. |
+| [BroadcastOptions](BroadcastOptions.md) | an instance of`BroadcastOptions`against which options can be set This value cannot be`null`. |
 
 ### setDeferralPolicy
 
@@ -255,11 +255,11 @@ Sets deferral policy for this broadcast that specifies how this broadcast can be
 
 | Parameters ||
 |------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `deferralPolicy` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is [android.app.BroadcastOptions#DEFERRAL_POLICY_DEFAULT](../android/app/BroadcastOptions.md), [android.app.BroadcastOptions#DEFERRAL_POLICY_NONE](../android/app/BroadcastOptions.md), or [android.app.BroadcastOptions#DEFERRAL_POLICY_UNTIL_ACTIVE](../android/app/BroadcastOptions.md) |
+| `deferralPolicy` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is [android.app.BroadcastOptions#DEFERRAL_POLICY_DEFAULT](BroadcastOptions.md), [android.app.BroadcastOptions#DEFERRAL_POLICY_NONE](BroadcastOptions.md), or [android.app.BroadcastOptions#DEFERRAL_POLICY_UNTIL_ACTIVE](BroadcastOptions.md) |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|-----------------------------|
-| [BroadcastOptions](../android/app/BroadcastOptions.md) | This value cannot be`null`. |
+| [BroadcastOptions](BroadcastOptions.md) | This value cannot be`null`. |
 
 ### setDeliveryGroupMatchingKey
 
@@ -276,7 +276,7 @@ Set namespace and key to identify the delivery group that this broadcast belongs
 
 If`namespace`and`key`are specified, then another broadcast will be considered to be in the same delivery group as this iff it has the same`namespace`and`key`.
 
-If not matching key using this API then by default [Intent.filterEquals(Intent)](../android/content/Intent.md))will be used to identify the delivery group.
+If not matching key using this API then by default [Intent.filterEquals(Intent)](../android.content/Intent.md))will be used to identify the delivery group.
 
 | Parameters ||
 |-------------|--------------------------------------------------------------------------------------------------------------|
@@ -285,7 +285,7 @@ If not matching key using this API then by default [Intent.filterEquals(Intent)]
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|-----------------------------|
-| [BroadcastOptions](../android/app/BroadcastOptions.md) | This value cannot be`null`. |
+| [BroadcastOptions](BroadcastOptions.md) | This value cannot be`null`. |
 
 ### setDeliveryGroupPolicy
 
@@ -299,11 +299,11 @@ Set delivery group policy for this broadcast to specify how multiple broadcasts 
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `policy` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is [android.app.BroadcastOptions#DELIVERY_GROUP_POLICY_ALL](../android/app/BroadcastOptions.md), [android.app.BroadcastOptions#DELIVERY_GROUP_POLICY_MOST_RECENT](../android/app/BroadcastOptions.md), or android.app.BroadcastOptions.DELIVERY_GROUP_POLICY_MERGED |
+| `policy` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is [android.app.BroadcastOptions#DELIVERY_GROUP_POLICY_ALL](BroadcastOptions.md), [android.app.BroadcastOptions#DELIVERY_GROUP_POLICY_MOST_RECENT](BroadcastOptions.md), or android.app.BroadcastOptions.DELIVERY_GROUP_POLICY_MERGED |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|-----------------------------|
-| [BroadcastOptions](../android/app/BroadcastOptions.md) | This value cannot be`null`. |
+| [BroadcastOptions](BroadcastOptions.md) | This value cannot be`null`. |
 
 ### setShareIdentityEnabled
 
@@ -325,12 +325,12 @@ Defaults to`false`if not set.
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| [BroadcastOptions](../android/app/BroadcastOptions.md) | `this` [BroadcastOptions](../android/app/BroadcastOptions.md) instance This value cannot be`null`. |
+| [BroadcastOptions](BroadcastOptions.md) | `this` [BroadcastOptions](BroadcastOptions.md) instance This value cannot be`null`. |
 
 **See Also**
 
-- [android.content.BroadcastReceiver#getSentFromUid()](../android/content/BroadcastReceiver.md))
-- [android.content.BroadcastReceiver#getSentFromPackage()](../android/content/BroadcastReceiver.md)) 
+- [android.content.BroadcastReceiver#getSentFromUid()](../android.content/BroadcastReceiver.md))
+- [android.content.BroadcastReceiver#getSentFromPackage()](../android.content/BroadcastReceiver.md)) 
 
 ### toBundle
 
@@ -340,11 +340,11 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 open fun toBundle(): Bundle
 ```
 
-Returns the created options as a Bundle, which can be passed to [Context.sendBroadcast(Intent)](../android/content/Context.md))and related methods. Note that the returned Bundle is still owned by the BroadcastOptions object; you must not modify it, but can supply it to the sendBroadcast methods that take an options Bundle.
+Returns the created options as a Bundle, which can be passed to [Context.sendBroadcast(Intent)](../android.content/Context.md))and related methods. Note that the returned Bundle is still owned by the BroadcastOptions object; you must not modify it, but can supply it to the sendBroadcast methods that take an options Bundle.
 
 | Return ||
 |----------------------------------------------------------------------------------|-----------------------------|
-| [Bundle](../android/os/Bundle.md) | This value cannot be`null`. |
+| [Bundle](../android.os/Bundle.md) | This value cannot be`null`. |
 
 | Exceptions ||
 |-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|

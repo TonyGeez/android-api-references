@@ -8,7 +8,7 @@ open class PackageIdentifier
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.appsearch.PackageIdentifier](../android/app/appsearch/PackageIdentifier.md) |
+| ↳ | [android.app.appsearch.PackageIdentifier](PackageIdentifier.md) |
 
 This class represents a uniquely identifiable package.
 

@@ -10,11 +10,11 @@ abstract class Clock : InstantSource
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.time.Clock](../java/time/Clock.md) |
+| ↳ | [java.time.Clock](Clock.md) |
 
 A clock providing access to the current instant, date and time using a time-zone.
 
-Instances of this abstract class are used to access a pluggable representation of the current instant, which can be interpreted using the stored time-zone to find the current date and time. For example,`Clock`can be used instead of [System.currentTimeMillis()](../java/lang/System.md))and [TimeZone.getDefault()](../java/util/TimeZone.md)).
+Instances of this abstract class are used to access a pluggable representation of the current instant, which can be interpreted using the stored time-zone to find the current date and time. For example,`Clock`can be used instead of [System.currentTimeMillis()](../java.lang/System.md))and [TimeZone.getDefault()](../java.util/TimeZone.md)).
 
 Use of a`Clock`is optional. All key date-time classes also have a`now()`factory method that uses the system clock in the default time zone. The primary purpose of this abstraction is to allow alternate clocks to be plugged in as and when required. Applications use an object to obtain the current time rather than a static method. This can simplify testing.
 
@@ -34,37 +34,37 @@ public class MyBean {
    }
   
 ```
-This approach allows an alternative clock, such as [fixed](../java/time/Clock.md))or [offset](../java/time/Clock.md))to be used during testing.
+This approach allows an alternative clock, such as [fixed](Clock.md))or [offset](Clock.md))to be used during testing.
 
-The`system`factory methods provide clocks based on the best available system clock. This may use [System.currentTimeMillis()](../java/lang/System.md)), or a higher resolution clock if one is available.
+The`system`factory methods provide clocks based on the best available system clock. This may use [System.currentTimeMillis()](../java.lang/System.md)), or a higher resolution clock if one is available.
 
 ## Summary
 
 | Protected constructors ||
 |---------------------------------------------------------------------------------------------------------------------------|---|
-| [Clock](../java/time/Clock.md))`()` Constructor accessible by subclasses. |
+| [Clock](Clock.md))`()` Constructor accessible by subclasses. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/time/Clock.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Checks if this clock is equal to another clock. |
-| openstatic [Clock](../java/time/Clock.md)! | [fixed](../java/time/Clock.md))`(`fixedInstant:` ` [Instant](../java/time/Instant.md)!`, `zone:` ` [ZoneId](../java/time/ZoneId.md)!`)` Obtains a clock that always returns the same instant. |
-| abstract [ZoneId](../java/time/ZoneId.md)! | [getZone](../java/time/Clock.md))`()` Gets the time-zone being used to create dates and times. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](Clock.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Checks if this clock is equal to another clock. |
+| openstatic [Clock](Clock.md)! | [fixed](Clock.md))`(`fixedInstant:` ` [Instant](Instant.md)!`, `zone:` ` [ZoneId](ZoneId.md)!`)` Obtains a clock that always returns the same instant. |
+| abstract [ZoneId](ZoneId.md)! | [getZone](Clock.md))`()` Gets the time-zone being used to create dates and times. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/time/Clock.md))`()` A hash code for this clock. |
-| abstract [Instant](../java/time/Instant.md)! | [instant](../java/time/Clock.md))`()` Gets the current instant of the clock. |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [millis](../java/time/Clock.md))`()` Gets the current millisecond instant of the clock. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](Clock.md))`()` A hash code for this clock. |
+| abstract [Instant](Instant.md)! | [instant](Clock.md))`()` Gets the current instant of the clock. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [millis](Clock.md))`()` Gets the current millisecond instant of the clock. |
 | --- | --- |
-| openstatic [Clock](../java/time/Clock.md)! | [offset](../java/time/Clock.md))`(`baseClock:` ` [Clock](../java/time/Clock.md)!`, `offsetDuration:` ` [Duration](../java/time/Duration.md)!`)` Obtains a clock that returns instants from the specified clock with the specified duration added. |
-| openstatic [Clock](../java/time/Clock.md)! | [system](../java/time/Clock.md))`(`zone:` ` [ZoneId](../java/time/ZoneId.md)!`)` Obtains a clock that returns the current instant using the best available system clock. |
-| openstatic [Clock](../java/time/Clock.md)! | [systemDefaultZone](../java/time/Clock.md))`()` Obtains a clock that returns the current instant using the best available system clock, converting to date and time using the default time-zone. |
+| openstatic [Clock](Clock.md)! | [offset](Clock.md))`(`baseClock:` ` [Clock](Clock.md)!`, `offsetDuration:` ` [Duration](Duration.md)!`)` Obtains a clock that returns instants from the specified clock with the specified duration added. |
+| openstatic [Clock](Clock.md)! | [system](Clock.md))`(`zone:` ` [ZoneId](ZoneId.md)!`)` Obtains a clock that returns the current instant using the best available system clock. |
+| openstatic [Clock](Clock.md)! | [systemDefaultZone](Clock.md))`()` Obtains a clock that returns the current instant using the best available system clock, converting to date and time using the default time-zone. |
 | --- | --- |
-| openstatic [Clock](../java/time/Clock.md)! | [systemUTC](../java/time/Clock.md))`()` Obtains a clock that returns the current instant using the best available system clock, converting to date and time using the UTC time-zone. |
-| openstatic [Clock](../java/time/Clock.md)! | [tick](../java/time/Clock.md))`(`baseClock:` ` [Clock](../java/time/Clock.md)!`, `tickDuration:` ` [Duration](../java/time/Duration.md)!`)` Obtains a clock that returns instants from the specified clock truncated to the nearest occurrence of the specified duration. |
-| openstatic [Clock](../java/time/Clock.md)! | [tickMillis](../java/time/Clock.md))`(`zone:` ` [ZoneId](../java/time/ZoneId.md)!`)` Obtains a clock that returns the current instant ticking in whole milliseconds using the best available system clock. |
+| openstatic [Clock](Clock.md)! | [systemUTC](Clock.md))`()` Obtains a clock that returns the current instant using the best available system clock, converting to date and time using the UTC time-zone. |
+| openstatic [Clock](Clock.md)! | [tick](Clock.md))`(`baseClock:` ` [Clock](Clock.md)!`, `tickDuration:` ` [Duration](Duration.md)!`)` Obtains a clock that returns instants from the specified clock truncated to the nearest occurrence of the specified duration. |
+| openstatic [Clock](Clock.md)! | [tickMillis](Clock.md))`(`zone:` ` [ZoneId](ZoneId.md)!`)` Obtains a clock that returns the current instant ticking in whole milliseconds using the best available system clock. |
 | --- | --- |
-| openstatic [Clock](../java/time/Clock.md)! | [tickMinutes](../java/time/Clock.md))`(`zone:` ` [ZoneId](../java/time/ZoneId.md)!`)` Obtains a clock that returns the current instant ticking in whole minutes using the best available system clock. |
-| openstatic [Clock](../java/time/Clock.md)! | [tickSeconds](../java/time/Clock.md))`(`zone:` ` [ZoneId](../java/time/ZoneId.md)!`)` Obtains a clock that returns the current instant ticking in whole seconds using the best available system clock. |
-| abstract [Clock](../java/time/Clock.md)! | [withZone](../java/time/Clock.md))`(`zone:` ` [ZoneId](../java/time/ZoneId.md)!`)` Returns a copy of this clock with a different time-zone. |
+| openstatic [Clock](Clock.md)! | [tickMinutes](Clock.md))`(`zone:` ` [ZoneId](ZoneId.md)!`)` Obtains a clock that returns the current instant ticking in whole minutes using the best available system clock. |
+| openstatic [Clock](Clock.md)! | [tickSeconds](Clock.md))`(`zone:` ` [ZoneId](ZoneId.md)!`)` Obtains a clock that returns the current instant ticking in whole seconds using the best available system clock. |
+| abstract [Clock](Clock.md)! | [withZone](Clock.md))`(`zone:` ` [ZoneId](ZoneId.md)!`)` Returns a copy of this clock with a different time-zone. |
 | --- | --- |
 
 ## Protected constructors
@@ -91,7 +91,7 @@ open fun equals(other: Any?): Boolean
 
 Checks if this clock is equal to another clock.
 
-Clocks should override this method to compare equals based on their state and to meet the contract of [Object.equals](../java/lang/Object.md)). If not overridden, the behavior is defined by [Object.equals](../java/lang/Object.md))
+Clocks should override this method to compare equals based on their state and to meet the contract of [Object.equals](../java.lang/Object.md)). If not overridden, the behavior is defined by [Object.equals](../java.lang/Object.md))
 
 | Parameters ||
 |-------|-----------------------------------------|
@@ -120,12 +120,12 @@ The returned implementation is immutable, thread-safe and`Serializable`.
 
 | Parameters ||
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| `fixedInstant` | [Instant](../java/time/Instant.md)!:the instant to use as the clock, not null |
-| `zone` | [ZoneId](../java/time/ZoneId.md)!:the time-zone to use to convert the instant to date-time, not null |
+| `fixedInstant` | [Instant](Instant.md)!:the instant to use as the clock, not null |
+| `zone` | [ZoneId](ZoneId.md)!:the time-zone to use to convert the instant to date-time, not null |
 
 | Return ||
 |---------------------------------------------------------------------------|--------------------------------------------------------|
-| [Clock](../java/time/Clock.md)! | a clock that always returns the same instant, not null |
+| [Clock](Clock.md)! | a clock that always returns the same instant, not null |
 
 ### getZone
 
@@ -141,7 +141,7 @@ A clock will typically obtain the current instant and then convert that to a dat
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------|
-| [ZoneId](../java/time/ZoneId.md)! | the time-zone being used to interpret instants, not null |
+| [ZoneId](ZoneId.md)! | the time-zone being used to interpret instants, not null |
 
 ### hashCode
 
@@ -153,7 +153,7 @@ open fun hashCode(): Int
 
 A hash code for this clock.
 
-Clocks should override this method based on their state and to meet the contract of [Object.hashCode](../java/lang/Object.md)). If not overridden, the behavior is defined by [Object.hashCode](../java/lang/Object.md))
+Clocks should override this method based on their state and to meet the contract of [Object.hashCode](../java.lang/Object.md)). If not overridden, the behavior is defined by [Object.hashCode](../java.lang/Object.md))
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------|
@@ -173,7 +173,7 @@ This returns an instant representing the current instant as defined by the clock
 
 | Return ||
 |------------------------------------------------------------------------------|-----------------------------------------------|
-| [Instant](../java/time/Instant.md)! | the current instant from this clock, not null |
+| [Instant](Instant.md)! | the current instant from this clock, not null |
 
 | Exceptions ||
 |-------------------------------|-----------------------------------------------------------------------|
@@ -189,11 +189,11 @@ open fun millis(): Long
 
 Gets the current millisecond instant of the clock.
 
-This returns the millisecond-based instant, measured from 1970-01-01T00:00Z (UTC). This is equivalent to the definition of [System.currentTimeMillis()](../java/lang/System.md)).
+This returns the millisecond-based instant, measured from 1970-01-01T00:00Z (UTC). This is equivalent to the definition of [System.currentTimeMillis()](../java.lang/System.md)).
 
-Most applications should avoid this method and use [Instant](../java/time/Instant.md) to represent an instant on the time-line rather than a raw millisecond value. This method is provided to allow the use of the clock in high performance use cases where the creation of an object would be unacceptable.
+Most applications should avoid this method and use [Instant](Instant.md) to represent an instant on the time-line rather than a raw millisecond value. This method is provided to allow the use of the clock in high performance use cases where the creation of an object would be unacceptable.
 
-The default implementation currently calls [instant](../java/time/Clock.md)).
+The default implementation currently calls [instant](Clock.md)).
 
 | Return ||
 |------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
@@ -224,12 +224,12 @@ The returned implementation is immutable, thread-safe and`Serializable`providing
 
 | Parameters ||
 |------------------|---------------------------------------------------------------------------------------------------------------------------|
-| `baseClock` | [Clock](../java/time/Clock.md)!:the base clock to add the duration to, not null |
-| `offsetDuration` | [Duration](../java/time/Duration.md)!:the duration to add, not null |
+| `baseClock` | [Clock](Clock.md)!:the base clock to add the duration to, not null |
+| `offsetDuration` | [Duration](Duration.md)!:the duration to add, not null |
 
 | Return ||
 |---------------------------------------------------------------------------|-------------------------------------------------------------------|
-| [Clock](../java/time/Clock.md)! | a clock based on the base clock with the duration added, not null |
+| [Clock](Clock.md)! | a clock based on the base clock with the duration added, not null |
 
 ### system
 
@@ -241,7 +241,7 @@ open static fun system(zone: ZoneId!): Clock!
 
 Obtains a clock that returns the current instant using the best available system clock.
 
-This clock is based on the best available system clock. This may use [System.currentTimeMillis()](../java/lang/System.md)), or a higher resolution clock if one is available.
+This clock is based on the best available system clock. This may use [System.currentTimeMillis()](../java.lang/System.md)), or a higher resolution clock if one is available.
 
 Conversion from instant to date or time uses the specified time-zone.
 
@@ -249,11 +249,11 @@ The returned implementation is immutable, thread-safe and`Serializable`.
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| `zone` | [ZoneId](../java/time/ZoneId.md)!:the time-zone to use to convert the instant to date-time, not null |
+| `zone` | [ZoneId](ZoneId.md)!:the time-zone to use to convert the instant to date-time, not null |
 
 | Return ||
 |---------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| [Clock](../java/time/Clock.md)! | a clock that uses the best available system clock in the specified zone, not null |
+| [Clock](Clock.md)! | a clock that uses the best available system clock in the specified zone, not null |
 
 ### systemDefaultZone
 
@@ -265,19 +265,19 @@ open static fun systemDefaultZone(): Clock!
 
 Obtains a clock that returns the current instant using the best available system clock, converting to date and time using the default time-zone.
 
-This clock is based on the best available system clock. This may use [System.currentTimeMillis()](../java/lang/System.md)), or a higher resolution clock if one is available.
+This clock is based on the best available system clock. This may use [System.currentTimeMillis()](../java.lang/System.md)), or a higher resolution clock if one is available.
 
-Using this method hard codes a dependency to the default time-zone into your application. It is recommended to avoid this and use a specific time-zone whenever possible. The [UTC clock](../java/time/Clock.md))should be used when you need the current instant without the date or time.
+Using this method hard codes a dependency to the default time-zone into your application. It is recommended to avoid this and use a specific time-zone whenever possible. The [UTC clock](Clock.md))should be used when you need the current instant without the date or time.
 
 The returned implementation is immutable, thread-safe and`Serializable`. It is equivalent to`system(ZoneId.systemDefault())`.
 
 | Return ||
 |---------------------------------------------------------------------------|---------------------------------------------------------------------------------|
-| [Clock](../java/time/Clock.md)! | a clock that uses the best available system clock in the default zone, not null |
+| [Clock](Clock.md)! | a clock that uses the best available system clock in the default zone, not null |
 
 **See Also**
 
-- [java.time.ZoneId#systemDefault()](../java/time/ZoneId.md)) 
+- [java.time.ZoneId#systemDefault()](ZoneId.md)) 
 
 ### systemUTC
 
@@ -289,17 +289,17 @@ open static fun systemUTC(): Clock!
 
 Obtains a clock that returns the current instant using the best available system clock, converting to date and time using the UTC time-zone.
 
-This clock, rather than [systemDefaultZone()](../java/time/Clock.md)), should be used when you need the current instant without the date or time.
+This clock, rather than [systemDefaultZone()](Clock.md)), should be used when you need the current instant without the date or time.
 
-This clock is based on the best available system clock. This may use [System.currentTimeMillis()](../java/lang/System.md)), or a higher resolution clock if one is available.
+This clock is based on the best available system clock. This may use [System.currentTimeMillis()](../java.lang/System.md)), or a higher resolution clock if one is available.
 
-Conversion from instant to date or time uses the [UTC time-zone](../java/time/ZoneOffset.md).
+Conversion from instant to date or time uses the [UTC time-zone](ZoneOffset.md).
 
 The returned implementation is immutable, thread-safe and`Serializable`. It is equivalent to`system(ZoneOffset.UTC)`.
 
 | Return ||
 |---------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| [Clock](../java/time/Clock.md)! | a clock that uses the best available system clock in the UTC zone, not null |
+| [Clock](Clock.md)! | a clock that uses the best available system clock in the UTC zone, not null |
 
 ### tick
 
@@ -326,12 +326,12 @@ The returned implementation is immutable, thread-safe and`Serializable`providing
 
 | Parameters ||
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| `baseClock` | [Clock](../java/time/Clock.md)!:the base clock to base the ticking clock on, not null |
-| `tickDuration` | [Duration](../java/time/Duration.md)!:the duration of each visible tick, not negative, not null |
+| `baseClock` | [Clock](Clock.md)!:the base clock to base the ticking clock on, not null |
+| `tickDuration` | [Duration](Duration.md)!:the duration of each visible tick, not negative, not null |
 
 | Return ||
 |---------------------------------------------------------------------------|-------------------------------------------------------------|
-| [Clock](../java/time/Clock.md)! | a clock that ticks in whole units of the duration, not null |
+| [Clock](Clock.md)! | a clock that ticks in whole units of the duration, not null |
 
 | Exceptions ||
 |--------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
@@ -348,7 +348,7 @@ open static fun tickMillis(zone: ZoneId!): Clock!
 
 Obtains a clock that returns the current instant ticking in whole milliseconds using the best available system clock.
 
-This clock will always have the nano-of-second field truncated to milliseconds. This ensures that the visible time ticks in whole milliseconds. The underlying clock is the best available system clock, equivalent to using [system(java.time.ZoneId)](../java/time/Clock.md)).
+This clock will always have the nano-of-second field truncated to milliseconds. This ensures that the visible time ticks in whole milliseconds. The underlying clock is the best available system clock, equivalent to using [system(java.time.ZoneId)](Clock.md)).
 
 Implementations may use a caching strategy for performance reasons. As such, it is possible that the start of the millisecond observed via this clock will be later than that observed directly via the underlying clock.
 
@@ -356,11 +356,11 @@ The returned implementation is immutable, thread-safe and`Serializable`. It is e
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| `zone` | [ZoneId](../java/time/ZoneId.md)!:the time-zone to use to convert the instant to date-time, not null |
+| `zone` | [ZoneId](ZoneId.md)!:the time-zone to use to convert the instant to date-time, not null |
 
 | Return ||
 |---------------------------------------------------------------------------|-----------------------------------------------------------------------------|
-| [Clock](../java/time/Clock.md)! | a clock that ticks in whole milliseconds using the specified zone, not null |
+| [Clock](Clock.md)! | a clock that ticks in whole milliseconds using the specified zone, not null |
 
 ### tickMinutes
 
@@ -372,7 +372,7 @@ open static fun tickMinutes(zone: ZoneId!): Clock!
 
 Obtains a clock that returns the current instant ticking in whole minutes using the best available system clock.
 
-This clock will always have the nano-of-second and second-of-minute fields set to zero. This ensures that the visible time ticks in whole minutes. The underlying clock is the best available system clock, equivalent to using [system(java.time.ZoneId)](../java/time/Clock.md)).
+This clock will always have the nano-of-second and second-of-minute fields set to zero. This ensures that the visible time ticks in whole minutes. The underlying clock is the best available system clock, equivalent to using [system(java.time.ZoneId)](Clock.md)).
 
 Implementations may use a caching strategy for performance reasons. As such, it is possible that the start of the minute observed via this clock will be later than that observed directly via the underlying clock.
 
@@ -380,11 +380,11 @@ The returned implementation is immutable, thread-safe and`Serializable`. It is e
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| `zone` | [ZoneId](../java/time/ZoneId.md)!:the time-zone to use to convert the instant to date-time, not null |
+| `zone` | [ZoneId](ZoneId.md)!:the time-zone to use to convert the instant to date-time, not null |
 
 | Return ||
 |---------------------------------------------------------------------------|------------------------------------------------------------------------|
-| [Clock](../java/time/Clock.md)! | a clock that ticks in whole minutes using the specified zone, not null |
+| [Clock](Clock.md)! | a clock that ticks in whole minutes using the specified zone, not null |
 
 ### tickSeconds
 
@@ -396,7 +396,7 @@ open static fun tickSeconds(zone: ZoneId!): Clock!
 
 Obtains a clock that returns the current instant ticking in whole seconds using the best available system clock.
 
-This clock will always have the nano-of-second field set to zero. This ensures that the visible time ticks in whole seconds. The underlying clock is the best available system clock, equivalent to using [system(java.time.ZoneId)](../java/time/Clock.md)).
+This clock will always have the nano-of-second field set to zero. This ensures that the visible time ticks in whole seconds. The underlying clock is the best available system clock, equivalent to using [system(java.time.ZoneId)](Clock.md)).
 
 Implementations may use a caching strategy for performance reasons. As such, it is possible that the start of the second observed via this clock will be later than that observed directly via the underlying clock.
 
@@ -404,11 +404,11 @@ The returned implementation is immutable, thread-safe and`Serializable`. It is e
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| `zone` | [ZoneId](../java/time/ZoneId.md)!:the time-zone to use to convert the instant to date-time, not null |
+| `zone` | [ZoneId](ZoneId.md)!:the time-zone to use to convert the instant to date-time, not null |
 
 | Return ||
 |---------------------------------------------------------------------------|------------------------------------------------------------------------|
-| [Clock](../java/time/Clock.md)! | a clock that ticks in whole seconds using the specified zone, not null |
+| [Clock](Clock.md)! | a clock that ticks in whole seconds using the specified zone, not null |
 
 ### withZone
 
@@ -424,8 +424,8 @@ A clock will typically obtain the current instant and then convert that to a dat
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------------------|
-| `zone` | [ZoneId](../java/time/ZoneId.md)!:the time-zone to change to, not null |
+| `zone` | [ZoneId](ZoneId.md)!:the time-zone to change to, not null |
 
 | Return ||
 |---------------------------------------------------------------------------|--------------------------------------------------------------------|
-| [Clock](../java/time/Clock.md)! | a clock based on this clock with the specified time-zone, not null |
+| [Clock](Clock.md)! | a clock based on this clock with the specified time-zone, not null |

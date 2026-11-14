@@ -5,7 +5,7 @@ Deprecated in [API level 11](https://developer.android.com/guide/topics/manifest
 
 # ClipboardManager
 
-Kotlin| [Java](../android/text/ClipboardManager.md) 
+Kotlin| [Java](ClipboardManager.md) 
 | --- | --- |
 
 ```
@@ -14,26 +14,26 @@ abstract class ClipboardManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.text.ClipboardManager](../android/text/ClipboardManager.md) |
+| ↳ | [android.text.ClipboardManager](ClipboardManager.md) |
 
-| Known Direct Subclasses [ClipboardManager](../android/content/ClipboardManager.md) |-----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------| | [ClipboardManager](../android/content/ClipboardManager.md) | Interface to the clipboard service, for placing and retrieving text in the global clipboard. | |
+| Known Direct Subclasses [ClipboardManager](../android.content/ClipboardManager.md) |-----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------| | [ClipboardManager](../android.content/ClipboardManager.md) | Interface to the clipboard service, for placing and retrieving text in the global clipboard. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 | **This class was deprecated in API level 11.**
 |
-| Old text-only interface to the clipboard. See [android.content.ClipboardManager](../android/content/ClipboardManager.md) for the modern API.
+| Old text-only interface to the clipboard. See [android.content.ClipboardManager](../android.content/ClipboardManager.md) for the modern API.
 
 ## Summary
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------|---|
-| [ClipboardManager](../android/text/ClipboardManager.md))`()` <br /> |
+| [ClipboardManager](ClipboardManager.md))`()` <br /> |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [getText](../android/text/ClipboardManager.md))`()` Returns the text on the clipboard. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasText](../android/text/ClipboardManager.md))`()` Returns true if the clipboard contains text; false otherwise. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setText](../android/text/ClipboardManager.md))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Sets the contents of the clipboard to the specified text. |
+| abstract [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [getText](ClipboardManager.md))`()` Returns the text on the clipboard. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasText](ClipboardManager.md))`()` Returns true if the clipboard contains text; false otherwise. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setText](ClipboardManager.md))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Sets the contents of the clipboard to the specified text. |
 | --- | --- |
 
 ## Public constructors

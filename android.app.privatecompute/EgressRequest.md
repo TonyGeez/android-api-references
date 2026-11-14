@@ -8,9 +8,9 @@ abstract class EgressRequest<R : EgressResponse!> : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.privatecompute.EgressRequest](../android/app/privatecompute/EgressRequest.md) |
+| ↳ | [android.app.privatecompute.EgressRequest](EgressRequest.md) |
 
-Known Direct Subclasses [AssistantQueryRequest](../android/app/privatecompute/AssistantQueryRequest.md) [AssistantQueryRequest](../android/app/privatecompute/AssistantQueryRequest.md) Request object specifically for Assistant Query Egress operations.
+Known Direct Subclasses [AssistantQueryRequest](AssistantQueryRequest.md) [AssistantQueryRequest](AssistantQueryRequest.md) Request object specifically for Assistant Query Egress operations.
 
 Abstract base request class for PccSandboxManager.egressData operations.
 
@@ -37,7 +37,7 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [EgressRequest](../android/app/privatecompute/EgressRequest.md)\<\*\>!\> | `https://developer.android.com/reference/kotlin/android/app/privatecompute/EgressRequest#CREATOR:android.os.Parcelable.Creator` Creator for `https://developer.android.com/reference/kotlin/android/app/privatecompute/EgressRequest#` instance from a `https://developer.android.com/reference/kotlin/android/os/Parcel.html#`. |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [EgressRequest](EgressRequest.md)\<\*\>!\> | `https://developer.android.com/reference/kotlin/android/app/privatecompute/EgressRequest#CREATOR:android.os.Parcelable.Creator` Creator for `https://developer.android.com/reference/kotlin/android/app/privatecompute/EgressRequest#` instance from a `https://developer.android.com/reference/kotlin/android/os/Parcel.html#`. |
 
 ## Public methods
 
@@ -70,7 +70,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

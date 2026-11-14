@@ -24,7 +24,7 @@ Interface for receiving icons from the database.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onReceivedIcon](../android/webkit/WebIconDatabase.IconListener.md))`(`url:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `icon:` ` [Bitmap](../android/graphics/Bitmap.md)!`)` Called when the icon has been retrieved from the database and the result is non-null. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onReceivedIcon](../android/webkit/WebIconDatabase.IconListener.md))`(`url:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `icon:` ` [Bitmap](../android.graphics/Bitmap.md)!`)` Called when the icon has been retrieved from the database and the result is non-null. |
 
 ## Public methods
 
@@ -46,4 +46,4 @@ Called when the icon has been retrieved from the database and the result is non-
 | Parameters ||
 |--------|------------------------------------------------------------------------------------------------------------------------|
 | `url` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The url passed in the request. |
-| `icon` | [Bitmap](../android/graphics/Bitmap.md)!:The favicon for the given url. |
+| `icon` | [Bitmap](../android.graphics/Bitmap.md)!:The favicon for the given url. |

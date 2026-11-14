@@ -4,7 +4,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 
 # TaskStackBuilder
 
-Kotlin| [Java](../android/app/TaskStackBuilder.md) 
+Kotlin| [Java](TaskStackBuilder.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class TaskStackBuilder
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.TaskStackBuilder](../android/app/TaskStackBuilder.md) |
+| ↳ | [android.app.TaskStackBuilder](TaskStackBuilder.md) |
 
 Utility class for constructing synthetic back stacks for cross-task navigation on Android 3.0 and newer.
 
@@ -31,23 +31,23 @@ TaskStackBuilder provides a way to obey the correct conventions around cross-tas
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [TaskStackBuilder](../android/app/TaskStackBuilder.md)! | [addNextIntent](../android/app/TaskStackBuilder.md))`(`nextIntent:` ` [Intent](../android/content/Intent.md)!`)` Add a new Intent to the task stack. |
-| open [TaskStackBuilder](../android/app/TaskStackBuilder.md)! | [addNextIntentWithParentStack](../android/app/TaskStackBuilder.md))`(`nextIntent:` ` [Intent](../android/content/Intent.md)!`)` Add a new Intent with the resolved chain of parents for the target activity to the task stack. |
-| open [TaskStackBuilder](../android/app/TaskStackBuilder.md)! | [addParentStack](../android/app/TaskStackBuilder.md))`(`sourceActivity:` ` [Activity](../android/app/Activity.md)!`)` Add the activity parent chain as specified by the [getParentActivityIntent()](../android/app/Activity.md))method of the activity specified and the [parentActivityName](../android/R.attr.md) attributes of each successive activity (or activity-alias) element in the application's manifest to the task stack builder. |
+| open [TaskStackBuilder](TaskStackBuilder.md)! | [addNextIntent](TaskStackBuilder.md))`(`nextIntent:` ` [Intent](../android.content/Intent.md)!`)` Add a new Intent to the task stack. |
+| open [TaskStackBuilder](TaskStackBuilder.md)! | [addNextIntentWithParentStack](TaskStackBuilder.md))`(`nextIntent:` ` [Intent](../android.content/Intent.md)!`)` Add a new Intent with the resolved chain of parents for the target activity to the task stack. |
+| open [TaskStackBuilder](TaskStackBuilder.md)! | [addParentStack](TaskStackBuilder.md))`(`sourceActivity:` ` [Activity](Activity.md)!`)` Add the activity parent chain as specified by the [getParentActivityIntent()](Activity.md))method of the activity specified and the [parentActivityName](../android/R.attr.md) attributes of each successive activity (or activity-alias) element in the application's manifest to the task stack builder. |
 | --- | --- |
-| open [TaskStackBuilder](../android/app/TaskStackBuilder.md)! | [addParentStack](../android/app/TaskStackBuilder.md))`(`sourceActivityName:` ` [ComponentName](../android/content/ComponentName.md)!`)` Add the activity parent chain as specified by the [parentActivityName](../android/R.attr.md) attribute of the activity (or activity-alias) element in the application's manifest to the task stack builder. |
-| open [TaskStackBuilder](../android/app/TaskStackBuilder.md)! | [addParentStack](../android/app/TaskStackBuilder.md))`(`sourceActivityClass:` ` [Class](../java/lang/Class.md)<*>!`)` Add the activity parent chain as specified by the [parentActivityName](../android/R.attr.md) attribute of the activity (or activity-alias) element in the application's manifest to the task stack builder. |
-| openstatic [TaskStackBuilder](../android/app/TaskStackBuilder.md)! | [create](../android/app/TaskStackBuilder.md))`(`context:` ` [Context](../android/content/Context.md)!`)` Return a new TaskStackBuilder for launching a fresh task stack consisting of a series of activities. |
+| open [TaskStackBuilder](TaskStackBuilder.md)! | [addParentStack](TaskStackBuilder.md))`(`sourceActivityName:` ` [ComponentName](../android.content/ComponentName.md)!`)` Add the activity parent chain as specified by the [parentActivityName](../android/R.attr.md) attribute of the activity (or activity-alias) element in the application's manifest to the task stack builder. |
+| open [TaskStackBuilder](TaskStackBuilder.md)! | [addParentStack](TaskStackBuilder.md))`(`sourceActivityClass:` ` [Class](../java.lang/Class.md)<*>!`)` Add the activity parent chain as specified by the [parentActivityName](../android/R.attr.md) attribute of the activity (or activity-alias) element in the application's manifest to the task stack builder. |
+| openstatic [TaskStackBuilder](TaskStackBuilder.md)! | [create](TaskStackBuilder.md))`(`context:` ` [Context](../android.content/Context.md)!`)` Return a new TaskStackBuilder for launching a fresh task stack consisting of a series of activities. |
 | --- | --- |
-| open [Intent](../android/content/Intent.md)! | [editIntentAt](../android/app/TaskStackBuilder.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the intent at the specified index for modification. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIntentCount](../android/app/TaskStackBuilder.md))`()` <br /> |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Intent](../android/content/Intent.md)!\> | [getIntents](../android/app/TaskStackBuilder.md))`()` Return an array containing the intents added to this builder. |
+| open [Intent](../android.content/Intent.md)! | [editIntentAt](TaskStackBuilder.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the intent at the specified index for modification. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIntentCount](TaskStackBuilder.md))`()` <br /> |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Intent](../android.content/Intent.md)!\> | [getIntents](TaskStackBuilder.md))`()` Return an array containing the intents added to this builder. |
 | --- | --- |
-| open [PendingIntent](../android/app/PendingIntent.md)! | [getPendingIntent](../android/app/TaskStackBuilder.md))`(`requestCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Obtain a [PendingIntent](../android/app/PendingIntent.md) for launching the task constructed by this builder so far. |
-| open [PendingIntent](../android/app/PendingIntent.md)! | [getPendingIntent](../android/app/TaskStackBuilder.md))`(`requestCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `options:` ` [Bundle](../android/os/Bundle.md)!`)` Obtain a [PendingIntent](../android/app/PendingIntent.md) for launching the task constructed by this builder so far. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startActivities](../android/app/TaskStackBuilder.md))`()` Start the task stack constructed by this builder. |
+| open [PendingIntent](PendingIntent.md)! | [getPendingIntent](TaskStackBuilder.md))`(`requestCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Obtain a [PendingIntent](PendingIntent.md) for launching the task constructed by this builder so far. |
+| open [PendingIntent](PendingIntent.md)! | [getPendingIntent](TaskStackBuilder.md))`(`requestCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `options:` ` [Bundle](../android.os/Bundle.md)!`)` Obtain a [PendingIntent](PendingIntent.md) for launching the task constructed by this builder so far. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startActivities](TaskStackBuilder.md))`()` Start the task stack constructed by this builder. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startActivities](../android/app/TaskStackBuilder.md))`(`options:` ` [Bundle](../android/os/Bundle.md)!`)` Start the task stack constructed by this builder. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startActivities](TaskStackBuilder.md))`(`options:` ` [Bundle](../android.os/Bundle.md)!`)` Start the task stack constructed by this builder. |
 
 ## Public methods
 
@@ -63,11 +63,11 @@ Add a new Intent to the task stack. The most recently added Intent will invoke t
 
 | Parameters ||
 |--------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| `nextIntent` | [Intent](../android/content/Intent.md)!:Intent for the next Activity in the synthesized task stack |
+| `nextIntent` | [Intent](../android.content/Intent.md)!:Intent for the next Activity in the synthesized task stack |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------|-------------------------------------------|
-| [TaskStackBuilder](../android/app/TaskStackBuilder.md)! | This TaskStackBuilder for method chaining |
+| [TaskStackBuilder](TaskStackBuilder.md)! | This TaskStackBuilder for method chaining |
 
 ### addNextIntentWithParentStack
 
@@ -79,15 +79,15 @@ open fun addNextIntentWithParentStack(nextIntent: Intent!): TaskStackBuilder!
 
 Add a new Intent with the resolved chain of parents for the target activity to the task stack.
 
-This is equivalent to calling [addParentStack](../android/app/TaskStackBuilder.md))with the resolved ComponentName of nextIntent (if it can be resolved), followed by [addNextIntent](../android/app/TaskStackBuilder.md))with nextIntent.
+This is equivalent to calling [addParentStack](TaskStackBuilder.md))with the resolved ComponentName of nextIntent (if it can be resolved), followed by [addNextIntent](TaskStackBuilder.md))with nextIntent.
 
 | Parameters ||
 |--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `nextIntent` | [Intent](../android/content/Intent.md)!:Intent for the topmost Activity in the synthesized task stack. Its chain of parents as specified in the manifest will be added. |
+| `nextIntent` | [Intent](../android.content/Intent.md)!:Intent for the topmost Activity in the synthesized task stack. Its chain of parents as specified in the manifest will be added. |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------|--------------------------------------------|
-| [TaskStackBuilder](../android/app/TaskStackBuilder.md)! | This TaskStackBuilder for method chaining. |
+| [TaskStackBuilder](TaskStackBuilder.md)! | This TaskStackBuilder for method chaining. |
 
 ### addParentStack
 
@@ -97,15 +97,15 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 open fun addParentStack(sourceActivity: Activity!): TaskStackBuilder!
 ```
 
-Add the activity parent chain as specified by the [getParentActivityIntent()](../android/app/Activity.md))method of the activity specified and the [parentActivityName](../android/R.attr.md) attributes of each successive activity (or activity-alias) element in the application's manifest to the task stack builder.
+Add the activity parent chain as specified by the [getParentActivityIntent()](Activity.md))method of the activity specified and the [parentActivityName](../android/R.attr.md) attributes of each successive activity (or activity-alias) element in the application's manifest to the task stack builder.
 
 | Parameters ||
 |------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| `sourceActivity` | [Activity](../android/app/Activity.md)!:All parents of this activity will be added |
+| `sourceActivity` | [Activity](Activity.md)!:All parents of this activity will be added |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------|-------------------------------------------|
-| [TaskStackBuilder](../android/app/TaskStackBuilder.md)! | This TaskStackBuilder for method chaining |
+| [TaskStackBuilder](TaskStackBuilder.md)! | This TaskStackBuilder for method chaining |
 
 ### addParentStack
 
@@ -119,11 +119,11 @@ Add the activity parent chain as specified by the [parentActivityName](../androi
 
 | Parameters ||
 |----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `sourceActivityName` | [ComponentName](../android/content/ComponentName.md)!:Must specify an Activity component. All parents of this activity will be added |
+| `sourceActivityName` | [ComponentName](../android.content/ComponentName.md)!:Must specify an Activity component. All parents of this activity will be added |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------|-------------------------------------------|
-| [TaskStackBuilder](../android/app/TaskStackBuilder.md)! | This TaskStackBuilder for method chaining |
+| [TaskStackBuilder](TaskStackBuilder.md)! | This TaskStackBuilder for method chaining |
 
 ### addParentStack
 
@@ -137,11 +137,11 @@ Add the activity parent chain as specified by the [parentActivityName](../androi
 
 | Parameters ||
 |-----------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| `sourceActivityClass` | [Class](../java/lang/Class.md)\<\*\>!:All parents of this activity will be added |
+| `sourceActivityClass` | [Class](../java.lang/Class.md)\<\*\>!:All parents of this activity will be added |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------|-------------------------------------------|
-| [TaskStackBuilder](../android/app/TaskStackBuilder.md)! | This TaskStackBuilder for method chaining |
+| [TaskStackBuilder](TaskStackBuilder.md)! | This TaskStackBuilder for method chaining |
 
 ### create
 
@@ -155,11 +155,11 @@ Return a new TaskStackBuilder for launching a fresh task stack consisting of a s
 
 | Parameters ||
 |-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](../android/content/Context.md)!:The context that will launch the new task stack or generate a PendingIntent |
+| `context` | [Context](../android.content/Context.md)!:The context that will launch the new task stack or generate a PendingIntent |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------|------------------------|
-| [TaskStackBuilder](../android/app/TaskStackBuilder.md)! | A new TaskStackBuilder |
+| [TaskStackBuilder](TaskStackBuilder.md)! | A new TaskStackBuilder |
 
 ### editIntentAt
 
@@ -169,7 +169,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 open fun editIntentAt(index: Int): Intent!
 ```
 
-Return the intent at the specified index for modification. Useful if you need to modify the flags or extras of an intent that was previously added, for example with [addParentStack(android.app.Activity)](../android/app/TaskStackBuilder.md)).
+Return the intent at the specified index for modification. Useful if you need to modify the flags or extras of an intent that was previously added, for example with [addParentStack(android.app.Activity)](TaskStackBuilder.md)).
 
 | Parameters ||
 |---------|----------------------------------------------------------------------------------------------------------|
@@ -177,7 +177,7 @@ Return the intent at the specified index for modification. Useful if you need to
 
 | Return ||
 |----------------------------------------------------------------------------------------|------------------------------|
-| [Intent](../android/content/Intent.md)! | the intent at position index |
+| [Intent](../android.content/Intent.md)! | the intent at position index |
 
 ### getIntentCount
 
@@ -203,7 +203,7 @@ Return an array containing the intents added to this builder. The intent at the 
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Intent](../android/content/Intent.md)!> | An array containing the intents added to this builder. This value cannot be`null`. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Intent](../android.content/Intent.md)!> | An array containing the intents added to this builder. This value cannot be`null`. |
 
 ### getPendingIntent
 
@@ -216,16 +216,16 @@ open fun getPendingIntent(
 ): PendingIntent!
 ```
 
-Obtain a [PendingIntent](../android/app/PendingIntent.md) for launching the task constructed by this builder so far.
+Obtain a [PendingIntent](PendingIntent.md) for launching the task constructed by this builder so far.
 
 | Parameters ||
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `requestCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Private request code for the sender |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):May be [PendingIntent.FLAG_ONE_SHOT](../android/app/PendingIntent.md), [PendingIntent.FLAG_NO_CREATE](../android/app/PendingIntent.md), [PendingIntent.FLAG_CANCEL_CURRENT](../android/app/PendingIntent.md), [PendingIntent.FLAG_UPDATE_CURRENT](../android/app/PendingIntent.md), or any of the flags supported by [Intent.fillIn(Intent, int)](../android/content/Intent.md))to control which unspecified parts of the intent that can be supplied when the actual send happens. Value is either`0`or a combination of [android.app.PendingIntent#FLAG_ONE_SHOT](../android/app/PendingIntent.md), [android.app.PendingIntent#FLAG_NO_CREATE](../android/app/PendingIntent.md), [android.app.PendingIntent#FLAG_CANCEL_CURRENT](../android/app/PendingIntent.md), [android.app.PendingIntent#FLAG_UPDATE_CURRENT](../android/app/PendingIntent.md), [android.app.PendingIntent#FLAG_IMMUTABLE](../android/app/PendingIntent.md), [android.app.PendingIntent#FLAG_MUTABLE](../android/app/PendingIntent.md), android.app.PendingIntent.FLAG_MUTABLE_UNAUDITED, [android.app.PendingIntent#FLAG_ALLOW_UNSAFE_IMPLICIT_INTENT](../android/app/PendingIntent.md), [android.content.Intent#FILL_IN_ACTION](../android/content/Intent.md), [android.content.Intent#FILL_IN_DATA](../android/content/Intent.md), [android.content.Intent#FILL_IN_CATEGORIES](../android/content/Intent.md), [android.content.Intent#FILL_IN_COMPONENT](../android/content/Intent.md), [android.content.Intent#FILL_IN_PACKAGE](../android/content/Intent.md), [android.content.Intent#FILL_IN_SOURCE_BOUNDS](../android/content/Intent.md), [android.content.Intent#FILL_IN_SELECTOR](../android/content/Intent.md), and [android.content.Intent#FILL_IN_CLIP_DATA](../android/content/Intent.md) |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):May be [PendingIntent.FLAG_ONE_SHOT](PendingIntent.md), [PendingIntent.FLAG_NO_CREATE](PendingIntent.md), [PendingIntent.FLAG_CANCEL_CURRENT](PendingIntent.md), [PendingIntent.FLAG_UPDATE_CURRENT](PendingIntent.md), or any of the flags supported by [Intent.fillIn(Intent, int)](../android.content/Intent.md))to control which unspecified parts of the intent that can be supplied when the actual send happens. Value is either`0`or a combination of [android.app.PendingIntent#FLAG_ONE_SHOT](PendingIntent.md), [android.app.PendingIntent#FLAG_NO_CREATE](PendingIntent.md), [android.app.PendingIntent#FLAG_CANCEL_CURRENT](PendingIntent.md), [android.app.PendingIntent#FLAG_UPDATE_CURRENT](PendingIntent.md), [android.app.PendingIntent#FLAG_IMMUTABLE](PendingIntent.md), [android.app.PendingIntent#FLAG_MUTABLE](PendingIntent.md), android.app.PendingIntent.FLAG_MUTABLE_UNAUDITED, [android.app.PendingIntent#FLAG_ALLOW_UNSAFE_IMPLICIT_INTENT](PendingIntent.md), [android.content.Intent#FILL_IN_ACTION](../android.content/Intent.md), [android.content.Intent#FILL_IN_DATA](../android.content/Intent.md), [android.content.Intent#FILL_IN_CATEGORIES](../android.content/Intent.md), [android.content.Intent#FILL_IN_COMPONENT](../android.content/Intent.md), [android.content.Intent#FILL_IN_PACKAGE](../android.content/Intent.md), [android.content.Intent#FILL_IN_SOURCE_BOUNDS](../android.content/Intent.md), [android.content.Intent#FILL_IN_SELECTOR](../android.content/Intent.md), and [android.content.Intent#FILL_IN_CLIP_DATA](../android.content/Intent.md) |
 
 | Return ||
 |--------------------------------------------------------------------------------------------|----------------------------|
-| [PendingIntent](../android/app/PendingIntent.md)! | The obtained PendingIntent |
+| [PendingIntent](PendingIntent.md)! | The obtained PendingIntent |
 
 ### getPendingIntent
 
@@ -239,18 +239,18 @@ open fun getPendingIntent(
 ): PendingIntent!
 ```
 
-Obtain a [PendingIntent](../android/app/PendingIntent.md) for launching the task constructed by this builder so far.
+Obtain a [PendingIntent](PendingIntent.md) for launching the task constructed by this builder so far.
 
 | Parameters ||
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `requestCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Private request code for the sender |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):May be [PendingIntent.FLAG_ONE_SHOT](../android/app/PendingIntent.md), [PendingIntent.FLAG_NO_CREATE](../android/app/PendingIntent.md), [PendingIntent.FLAG_CANCEL_CURRENT](../android/app/PendingIntent.md), [PendingIntent.FLAG_UPDATE_CURRENT](../android/app/PendingIntent.md), or any of the flags supported by [Intent.fillIn(Intent, int)](../android/content/Intent.md))to control which unspecified parts of the intent that can be supplied when the actual send happens. Value is either`0`or a combination of [android.app.PendingIntent#FLAG_ONE_SHOT](../android/app/PendingIntent.md), [android.app.PendingIntent#FLAG_NO_CREATE](../android/app/PendingIntent.md), [android.app.PendingIntent#FLAG_CANCEL_CURRENT](../android/app/PendingIntent.md), [android.app.PendingIntent#FLAG_UPDATE_CURRENT](../android/app/PendingIntent.md), [android.app.PendingIntent#FLAG_IMMUTABLE](../android/app/PendingIntent.md), [android.app.PendingIntent#FLAG_MUTABLE](../android/app/PendingIntent.md), android.app.PendingIntent.FLAG_MUTABLE_UNAUDITED, [android.app.PendingIntent#FLAG_ALLOW_UNSAFE_IMPLICIT_INTENT](../android/app/PendingIntent.md), [android.content.Intent#FILL_IN_ACTION](../android/content/Intent.md), [android.content.Intent#FILL_IN_DATA](../android/content/Intent.md), [android.content.Intent#FILL_IN_CATEGORIES](../android/content/Intent.md), [android.content.Intent#FILL_IN_COMPONENT](../android/content/Intent.md), [android.content.Intent#FILL_IN_PACKAGE](../android/content/Intent.md), [android.content.Intent#FILL_IN_SOURCE_BOUNDS](../android/content/Intent.md), [android.content.Intent#FILL_IN_SELECTOR](../android/content/Intent.md), and [android.content.Intent#FILL_IN_CLIP_DATA](../android/content/Intent.md) |
-| `options` | [Bundle](../android/os/Bundle.md)!:Additional options for how the Activity should be started. See [android.content.Context#startActivity(Intent, Bundle)](../android/content/Context.md))Context.startActivity(Intent, Bundle)} for more details. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):May be [PendingIntent.FLAG_ONE_SHOT](PendingIntent.md), [PendingIntent.FLAG_NO_CREATE](PendingIntent.md), [PendingIntent.FLAG_CANCEL_CURRENT](PendingIntent.md), [PendingIntent.FLAG_UPDATE_CURRENT](PendingIntent.md), or any of the flags supported by [Intent.fillIn(Intent, int)](../android.content/Intent.md))to control which unspecified parts of the intent that can be supplied when the actual send happens. Value is either`0`or a combination of [android.app.PendingIntent#FLAG_ONE_SHOT](PendingIntent.md), [android.app.PendingIntent#FLAG_NO_CREATE](PendingIntent.md), [android.app.PendingIntent#FLAG_CANCEL_CURRENT](PendingIntent.md), [android.app.PendingIntent#FLAG_UPDATE_CURRENT](PendingIntent.md), [android.app.PendingIntent#FLAG_IMMUTABLE](PendingIntent.md), [android.app.PendingIntent#FLAG_MUTABLE](PendingIntent.md), android.app.PendingIntent.FLAG_MUTABLE_UNAUDITED, [android.app.PendingIntent#FLAG_ALLOW_UNSAFE_IMPLICIT_INTENT](PendingIntent.md), [android.content.Intent#FILL_IN_ACTION](../android.content/Intent.md), [android.content.Intent#FILL_IN_DATA](../android.content/Intent.md), [android.content.Intent#FILL_IN_CATEGORIES](../android.content/Intent.md), [android.content.Intent#FILL_IN_COMPONENT](../android.content/Intent.md), [android.content.Intent#FILL_IN_PACKAGE](../android.content/Intent.md), [android.content.Intent#FILL_IN_SOURCE_BOUNDS](../android.content/Intent.md), [android.content.Intent#FILL_IN_SELECTOR](../android.content/Intent.md), and [android.content.Intent#FILL_IN_CLIP_DATA](../android.content/Intent.md) |
+| `options` | [Bundle](../android.os/Bundle.md)!:Additional options for how the Activity should be started. See [android.content.Context#startActivity(Intent, Bundle)](../android.content/Context.md))Context.startActivity(Intent, Bundle)} for more details. |
 | --- | --- |
 
 | Return ||
 |--------------------------------------------------------------------------------------------|----------------------------|
-| [PendingIntent](../android/app/PendingIntent.md)! | The obtained PendingIntent |
+| [PendingIntent](PendingIntent.md)! | The obtained PendingIntent |
 
 ### startActivities
 
@@ -274,4 +274,4 @@ Start the task stack constructed by this builder.
 
 | Parameters ||
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `options` | [Bundle](../android/os/Bundle.md)!:Additional options for how the Activity should be started. See [android.content.Context#startActivity(Intent, Bundle)](../android/content/Context.md))Context.startActivity(Intent, Bundle)} for more details. |
+| `options` | [Bundle](../android.os/Bundle.md)!:Additional options for how the Activity should be started. See [android.content.Context#startActivity(Intent, Bundle)](../android.content/Context.md))Context.startActivity(Intent, Bundle)} for more details. |

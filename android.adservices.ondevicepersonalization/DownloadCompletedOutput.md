@@ -4,7 +4,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 
 # DownloadCompletedOutput
 
-Kotlin| [Java](../android/adservices/ondevicepersonalization/DownloadCompletedOutput.md) 
+Kotlin| [Java](DownloadCompletedOutput.md) 
 | --- | --- |
 
 ```
@@ -13,21 +13,21 @@ class DownloadCompletedOutput
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.adservices.ondevicepersonalization.DownloadCompletedOutput](../android/adservices/ondevicepersonalization/DownloadCompletedOutput.md) |
+| ↳ | [android.adservices.ondevicepersonalization.DownloadCompletedOutput](DownloadCompletedOutput.md) |
 
-The result returned by [android.adservices.ondevicepersonalization.IsolatedWorker#onDownloadCompleted(android.adservices.ondevicepersonalization.DownloadCompletedInput,android.os.OutcomeReceiver)](../android/adservices/ondevicepersonalization/IsolatedWorker.md)).
+The result returned by [android.adservices.ondevicepersonalization.IsolatedWorker#onDownloadCompleted(android.adservices.ondevicepersonalization.DownloadCompletedInput,android.os.OutcomeReceiver)](IsolatedWorker.md)).
 
 ## Summary
 
 | Nested classes ||
 |---|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](../android/adservices/ondevicepersonalization/DownloadCompletedOutput.Builder.md) A builder for [DownloadCompletedOutput](../android/adservices/ondevicepersonalization/DownloadCompletedOutput.md) |
+| | [Builder](../android/adservices/ondevicepersonalization/DownloadCompletedOutput.Builder.md) A builder for [DownloadCompletedOutput](DownloadCompletedOutput.md) |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/adservices/ondevicepersonalization/DownloadCompletedOutput.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getRetainedKeys](../android/adservices/ondevicepersonalization/DownloadCompletedOutput.md))`()` The keys to be retained in the REMOTE_DATA table. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/adservices/ondevicepersonalization/DownloadCompletedOutput.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](DownloadCompletedOutput.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getRetainedKeys](DownloadCompletedOutput.md))`()` The keys to be retained in the REMOTE_DATA table. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](DownloadCompletedOutput.md))`()` <br /> |
 | --- | --- |
 
 ## Public methods

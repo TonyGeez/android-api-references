@@ -11,12 +11,12 @@ open class InvalidPropertiesFormatException : IOException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
-| | | ↳ | [java.io.IOException](../java/io/IOException.md) ||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) |||
+| | | ↳ | [java.io.IOException](../java.io/IOException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.util.InvalidPropertiesFormatException](../java/util/InvalidPropertiesFormatException.md) |
+| | | | ↳ | [java.util.InvalidPropertiesFormatException](InvalidPropertiesFormatException.md) |
 
-Thrown to indicate that an operation could not complete because the input did not conform to the appropriate XML document type for a collection of properties, as per the [Properties](../java/util/Properties.md) specification.
+Thrown to indicate that an operation could not complete because the input did not conform to the appropriate XML document type for a collection of properties, as per the [Properties](Properties.md) specification.
 
 Note, that although InvalidPropertiesFormatException inherits Serializable interface from Exception, it is not intended to be Serializable. Appropriate serialization methods are implemented to throw NotSerializableException.
 
@@ -24,8 +24,8 @@ Note, that although InvalidPropertiesFormatException inherits Serializable inter
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [InvalidPropertiesFormatException](../java/util/InvalidPropertiesFormatException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an InvalidPropertiesFormatException with the specified detail message. |
-| [InvalidPropertiesFormatException](../java/util/InvalidPropertiesFormatException.md))`(`cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs an InvalidPropertiesFormatException with the specified cause. |
+| [InvalidPropertiesFormatException](InvalidPropertiesFormatException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an InvalidPropertiesFormatException with the specified detail message. |
+| [InvalidPropertiesFormatException](InvalidPropertiesFormatException.md))`(`cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs an InvalidPropertiesFormatException with the specified cause. |
 
 ## Public constructors
 
@@ -41,7 +41,7 @@ Constructs an InvalidPropertiesFormatException with the specified detail message
 
 | Parameters ||
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the detail message. The detail message is saved for later retrieval by the [Throwable.getMessage()](../java/lang/Throwable.md))method. |
+| `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the detail message. The detail message is saved for later retrieval by the [Throwable.getMessage()](../java.lang/Throwable.md))method. |
 
 ### InvalidPropertiesFormatException
 
@@ -55,4 +55,4 @@ Constructs an InvalidPropertiesFormatException with the specified cause.
 
 | Parameters ||
 |---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!:the cause (which is saved for later retrieval by the [Throwable.getCause()](../java/lang/Throwable.md))method). |
+| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!:the cause (which is saved for later retrieval by the [Throwable.getCause()](../java.lang/Throwable.md))method). |

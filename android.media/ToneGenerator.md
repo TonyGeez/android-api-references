@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # ToneGenerator
 
-Kotlin| [Java](../android/media/ToneGenerator.md) 
+Kotlin| [Java](ToneGenerator.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class ToneGenerator
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.ToneGenerator](../android/media/ToneGenerator.md) |
+| ↳ | [android.media.ToneGenerator](ToneGenerator.md) |
 
 This class provides methods to play DTMF tones (ITU-T Recommendation Q.23), call supervisory tones (3GPP TS 22.001, CEPT) and proprietary tones (3GPP TS 31.111). Depending on call state and routing options, tones are mixed to the downlink audio or output to the speaker phone or headset. This API is not for generating tones over the uplink audio path.
 
@@ -21,157 +21,157 @@ This class provides methods to play DTMF tones (ITU-T Recommendation Q.23), call
 
 | Constants ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAX_VOLUME](../android/media/ToneGenerator.md) Maximum volume, for use with [ToneGenerator(int,int)](../android/media/ToneGenerator.md)) |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIN_VOLUME](../android/media/ToneGenerator.md) Minimum volume setting, for use with [ToneGenerator(int,int)](../android/media/ToneGenerator.md)) |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_ABBR_ALERT](../android/media/ToneGenerator.md) CDMA_ABBR_ALERT tone: 1150Hz+770Hz 400ms ON |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAX_VOLUME](ToneGenerator.md) Maximum volume, for use with [ToneGenerator(int,int)](ToneGenerator.md)) |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIN_VOLUME](ToneGenerator.md) Minimum volume setting, for use with [ToneGenerator(int,int)](ToneGenerator.md)) |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_ABBR_ALERT](ToneGenerator.md) CDMA_ABBR_ALERT tone: 1150Hz+770Hz 400ms ON |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_ABBR_INTERCEPT](../android/media/ToneGenerator.md) CDMA Abbr Intercept tone: 440Hz 250ms ON, 620Hz 250ms ON |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_ABBR_REORDER](../android/media/ToneGenerator.md) CDMA Abbr Reorder tone: 480Hz+620Hz 250ms ON, 250ms OFF repeated for 8 times |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_ALERT_AUTOREDIAL_LITE](../android/media/ToneGenerator.md) CDMA Alert Auto Redial tone: {1245Hz 62ms ON, 659Hz 62ms ON} 3 times, 1245 62ms ON |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_ABBR_INTERCEPT](ToneGenerator.md) CDMA Abbr Intercept tone: 440Hz 250ms ON, 620Hz 250ms ON |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_ABBR_REORDER](ToneGenerator.md) CDMA Abbr Reorder tone: 480Hz+620Hz 250ms ON, 250ms OFF repeated for 8 times |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_ALERT_AUTOREDIAL_LITE](ToneGenerator.md) CDMA Alert Auto Redial tone: {1245Hz 62ms ON, 659Hz 62ms ON} 3 times, 1245 62ms ON |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_ALERT_CALL_GUARD](../android/media/ToneGenerator.md) CDMA ALERT CALL GUARD tone: {1319Hz 125ms ON, 125ms OFF} 3 times |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_ALERT_INCALL_LITE](../android/media/ToneGenerator.md) CDMA ALERT INCALL LITE tone: 587Hz 62ms, 784 62ms, 831Hz 62ms, 784Hz 62ms, 1109 62ms, 784Hz 62ms, 831Hz 62ms, 784Hz 62ms |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_ALERT_NETWORK_LITE](../android/media/ToneGenerator.md) CDMA Alert Network Lite tone: 1109Hz 62ms ON, 784Hz 62ms ON, 740Hz 62ms ON 622Hz 62ms ON, 1109Hz 62ms ON |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_ALERT_CALL_GUARD](ToneGenerator.md) CDMA ALERT CALL GUARD tone: {1319Hz 125ms ON, 125ms OFF} 3 times |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_ALERT_INCALL_LITE](ToneGenerator.md) CDMA ALERT INCALL LITE tone: 587Hz 62ms, 784 62ms, 831Hz 62ms, 784Hz 62ms, 1109 62ms, 784Hz 62ms, 831Hz 62ms, 784Hz 62ms |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_ALERT_NETWORK_LITE](ToneGenerator.md) CDMA Alert Network Lite tone: 1109Hz 62ms ON, 784Hz 62ms ON, 740Hz 62ms ON 622Hz 62ms ON, 1109Hz 62ms ON |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_ANSWER](../android/media/ToneGenerator.md) CDMA answer tone: silent tone - defintion Frequency 0, 0ms ON, 0ms OFF |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_CALLDROP_LITE](../android/media/ToneGenerator.md) CDMA CALLDROP LITE tone: 1480Hz 125ms, 1397Hz 125ms, 784Hz 125ms |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_CALL_SIGNAL_ISDN_INTERGROUP](../android/media/ToneGenerator.md) ISDN Call Signal Intergroup tone: {2091Hz 32ms ON, 2556 64ms ON} 8 times, 2091Hz 32ms ON, 400ms OFF, {2091Hz 32ms ON, 2556Hz 64ms ON} times, 2091Hz 32ms ON, 4s OFF. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_ANSWER](ToneGenerator.md) CDMA answer tone: silent tone - defintion Frequency 0, 0ms ON, 0ms OFF |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_CALLDROP_LITE](ToneGenerator.md) CDMA CALLDROP LITE tone: 1480Hz 125ms, 1397Hz 125ms, 784Hz 125ms |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_CALL_SIGNAL_ISDN_INTERGROUP](ToneGenerator.md) ISDN Call Signal Intergroup tone: {2091Hz 32ms ON, 2556 64ms ON} 8 times, 2091Hz 32ms ON, 400ms OFF, {2091Hz 32ms ON, 2556Hz 64ms ON} times, 2091Hz 32ms ON, 4s OFF. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_CALL_SIGNAL_ISDN_NORMAL](../android/media/ToneGenerator.md) ISDN Call Signal Normal tone: {2091Hz 32ms ON, 2556 64ms ON} 20 times, 2091 32ms ON, 2556 48ms ON, 4s OFF |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_CALL_SIGNAL_ISDN_PAT3](../android/media/ToneGenerator.md) ISDN Call sign PAT3 tone: silent tone |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_CALL_SIGNAL_ISDN_PAT5](../android/media/ToneGenerator.md) ISDN Pat5 tone: silent tone |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_CALL_SIGNAL_ISDN_NORMAL](ToneGenerator.md) ISDN Call Signal Normal tone: {2091Hz 32ms ON, 2556 64ms ON} 20 times, 2091 32ms ON, 2556 48ms ON, 4s OFF |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_CALL_SIGNAL_ISDN_PAT3](ToneGenerator.md) ISDN Call sign PAT3 tone: silent tone |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_CALL_SIGNAL_ISDN_PAT5](ToneGenerator.md) ISDN Pat5 tone: silent tone |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_CALL_SIGNAL_ISDN_PAT6](../android/media/ToneGenerator.md) ISDN Pat6 tone: silent tone |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_CALL_SIGNAL_ISDN_PAT7](../android/media/ToneGenerator.md) ISDN Pat7 tone: silent tone |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_CALL_SIGNAL_ISDN_PING_RING](../android/media/ToneGenerator.md) ISDN Ping Ring tone: {2091Hz 32ms ON, 2556Hz 64ms ON} 5 times 2091Hz 20ms ON |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_CALL_SIGNAL_ISDN_PAT6](ToneGenerator.md) ISDN Pat6 tone: silent tone |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_CALL_SIGNAL_ISDN_PAT7](ToneGenerator.md) ISDN Pat7 tone: silent tone |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_CALL_SIGNAL_ISDN_PING_RING](ToneGenerator.md) ISDN Ping Ring tone: {2091Hz 32ms ON, 2556Hz 64ms ON} 5 times 2091Hz 20ms ON |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_CALL_SIGNAL_ISDN_SP_PRI](../android/media/ToneGenerator.md) ISDN Call Signal SP PRI tone:{2091Hz 32ms ON, 2556 64ms ON} 4 times 2091Hz 16ms ON, 200ms OFF, {2091Hz 32ms ON, 2556Hz 64ms ON} 4 times, 2091Hz 16ms ON, 200ms OFF |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_CONFIRM](../android/media/ToneGenerator.md) CDMA Confirm tone: 350Hz+440Hz 100ms ON, 100ms OFF repeated for 3 times |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_DIAL_TONE_LITE](../android/media/ToneGenerator.md) CDMA Dial tone : 425Hz continuous |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_CALL_SIGNAL_ISDN_SP_PRI](ToneGenerator.md) ISDN Call Signal SP PRI tone:{2091Hz 32ms ON, 2556 64ms ON} 4 times 2091Hz 16ms ON, 200ms OFF, {2091Hz 32ms ON, 2556Hz 64ms ON} 4 times, 2091Hz 16ms ON, 200ms OFF |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_CONFIRM](ToneGenerator.md) CDMA Confirm tone: 350Hz+440Hz 100ms ON, 100ms OFF repeated for 3 times |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_DIAL_TONE_LITE](ToneGenerator.md) CDMA Dial tone : 425Hz continuous |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_EMERGENCY_RINGBACK](../android/media/ToneGenerator.md) CDMA EMERGENCY RINGBACK tone: {941Hz 125ms ON, 10ms OFF} 3times 4990ms OFF, REPEAT. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_HIGH_L](../android/media/ToneGenerator.md) TONE_CDMA_HIGH_L tone: {3700Hz 25ms, 4000Hz 25ms} 40 times 4000ms OFF, Repeat . |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_HIGH_PBX_L](../android/media/ToneGenerator.md) CDMA HIGH PBX L: {3700Hz 25ms, 4000Hz 25ms}20 times, 2000ms OFF, REPEAT. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_EMERGENCY_RINGBACK](ToneGenerator.md) CDMA EMERGENCY RINGBACK tone: {941Hz 125ms ON, 10ms OFF} 3times 4990ms OFF, REPEAT. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_HIGH_L](ToneGenerator.md) TONE_CDMA_HIGH_L tone: {3700Hz 25ms, 4000Hz 25ms} 40 times 4000ms OFF, Repeat . |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_HIGH_PBX_L](ToneGenerator.md) CDMA HIGH PBX L: {3700Hz 25ms, 4000Hz 25ms}20 times, 2000ms OFF, REPEAT. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_HIGH_PBX_SLS](../android/media/ToneGenerator.md) CDMA HIGH PBX SSL tone:{3700Hz 25ms, 4000Hz 25ms} 8 times 200ms OFF, {3700Hz 25ms, 4000Hz 25ms} 16 times, 200ms OFF, {3700Hz 25ms, 4000Hz 25ms} 8 times, 1000ms OFF, REPEAT. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_HIGH_PBX_SS](../android/media/ToneGenerator.md) CDMA HIGH PBX SS tone: {3700Hz 25ms, 4000Hz 25ms} 8 times 200 ms OFF, {3700Hz 25ms 4000Hz 25ms}8 times, 2000ms OFF, REPEAT. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_HIGH_PBX_SSL](../android/media/ToneGenerator.md) CDMA HIGH PBX SSL tone:{3700Hz 25ms, 4000Hz 25ms} 8 times 200ms OFF, {3700Hz 25ms, 4000Hz 25ms} 8 times, 200ms OFF, {3700Hz 25ms, 4000Hz 25ms} 16 times, 1000ms OFF, REPEAT. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_HIGH_PBX_SLS](ToneGenerator.md) CDMA HIGH PBX SSL tone:{3700Hz 25ms, 4000Hz 25ms} 8 times 200ms OFF, {3700Hz 25ms, 4000Hz 25ms} 16 times, 200ms OFF, {3700Hz 25ms, 4000Hz 25ms} 8 times, 1000ms OFF, REPEAT. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_HIGH_PBX_SS](ToneGenerator.md) CDMA HIGH PBX SS tone: {3700Hz 25ms, 4000Hz 25ms} 8 times 200 ms OFF, {3700Hz 25ms 4000Hz 25ms}8 times, 2000ms OFF, REPEAT. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_HIGH_PBX_SSL](ToneGenerator.md) CDMA HIGH PBX SSL tone:{3700Hz 25ms, 4000Hz 25ms} 8 times 200ms OFF, {3700Hz 25ms, 4000Hz 25ms} 8 times, 200ms OFF, {3700Hz 25ms, 4000Hz 25ms} 16 times, 1000ms OFF, REPEAT. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_HIGH_PBX_S_X4](../android/media/ToneGenerator.md) CDMA HIGH PBX X S4 tone: {3700Hz 25ms 4000Hz 25ms} 8 times, 200ms OFF, {3700Hz 25ms 4000Hz 25ms} 8 times, 200ms OFF, {3700Hz 25ms 4000Hz 25ms} 8 times, 200ms OFF, {3700Hz 25ms 4000Hz 25ms} 8 times, 800ms OFF, REPEAT. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_HIGH_SLS](../android/media/ToneGenerator.md) CDMA HIGH SLS tone: {3700Hz 25ms, 4000Hz 25ms} 10 times, 500ms OFF, {3700Hz 25ms, 4000Hz 25ms} 20 times, 500ms OFF, {3700Hz 25ms, 4000Hz 25ms} 10 times, 3000ms OFF, REPEAT |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_HIGH_SS](../android/media/ToneGenerator.md) CDMA HIGH SS tone: {3700Hz 25ms, 4000Hz 25ms} repeat 16 times, 400ms OFF, repeat . |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_HIGH_PBX_S_X4](ToneGenerator.md) CDMA HIGH PBX X S4 tone: {3700Hz 25ms 4000Hz 25ms} 8 times, 200ms OFF, {3700Hz 25ms 4000Hz 25ms} 8 times, 200ms OFF, {3700Hz 25ms 4000Hz 25ms} 8 times, 200ms OFF, {3700Hz 25ms 4000Hz 25ms} 8 times, 800ms OFF, REPEAT. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_HIGH_SLS](ToneGenerator.md) CDMA HIGH SLS tone: {3700Hz 25ms, 4000Hz 25ms} 10 times, 500ms OFF, {3700Hz 25ms, 4000Hz 25ms} 20 times, 500ms OFF, {3700Hz 25ms, 4000Hz 25ms} 10 times, 3000ms OFF, REPEAT |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_HIGH_SS](ToneGenerator.md) CDMA HIGH SS tone: {3700Hz 25ms, 4000Hz 25ms} repeat 16 times, 400ms OFF, repeat . |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_HIGH_SSL](../android/media/ToneGenerator.md) CDMA HIGH SSL tone: {3700Hz 25ms, 4000Hz 25ms} 8 times, 200ms OFF, {3700Hz 25ms, 4000Hz 25ms} repeat 8 times, 200ms OFF, {3700Hz 25ms, 4000Hz 25ms} repeat 16 times, 4000ms OFF, repeat . |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_HIGH_SS_2](../android/media/ToneGenerator.md) CDMA HIGH SS2 tone: {3700Hz 25ms, 4000Hz 25ms} 20 times, 1000ms OFF, {3700Hz 25ms, 4000Hz 25ms} 20 times, 3000ms OFF, repeat . |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_HIGH_S_X4](../android/media/ToneGenerator.md) CDMA HIGH S X4 tone: {3700Hz 25ms, 4000Hz 25ms} 10 times, 500ms OFF, {3700Hz 25ms, 4000Hz 25ms} 10 times, 500ms OFF, {3700Hz 25ms, 4000Hz 25ms} 10 times, 500ms OFF, {3700Hz 25ms, 4000Hz 25ms} 10 times, 2500ms OFF, REPEAT. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_HIGH_SSL](ToneGenerator.md) CDMA HIGH SSL tone: {3700Hz 25ms, 4000Hz 25ms} 8 times, 200ms OFF, {3700Hz 25ms, 4000Hz 25ms} repeat 8 times, 200ms OFF, {3700Hz 25ms, 4000Hz 25ms} repeat 16 times, 4000ms OFF, repeat . |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_HIGH_SS_2](ToneGenerator.md) CDMA HIGH SS2 tone: {3700Hz 25ms, 4000Hz 25ms} 20 times, 1000ms OFF, {3700Hz 25ms, 4000Hz 25ms} 20 times, 3000ms OFF, repeat . |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_HIGH_S_X4](ToneGenerator.md) CDMA HIGH S X4 tone: {3700Hz 25ms, 4000Hz 25ms} 10 times, 500ms OFF, {3700Hz 25ms, 4000Hz 25ms} 10 times, 500ms OFF, {3700Hz 25ms, 4000Hz 25ms} 10 times, 500ms OFF, {3700Hz 25ms, 4000Hz 25ms} 10 times, 2500ms OFF, REPEAT. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_INTERCEPT](../android/media/ToneGenerator.md) CDMA Intercept tone: 440Hz 250ms ON, 620Hz 250ms ON . |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_KEYPAD_VOLUME_KEY_LITE](../android/media/ToneGenerator.md) CDMA KEYPAD Volume key lite tone: 941Hz+1477Hz 120ms ON |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_LOW_L](../android/media/ToneGenerator.md) TONE_CDMA_LOW_L tone: {1300Hz 25ms, 1450Hz 25ms} 40 times, 4000ms OFF, Repeat . |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_INTERCEPT](ToneGenerator.md) CDMA Intercept tone: 440Hz 250ms ON, 620Hz 250ms ON . |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_KEYPAD_VOLUME_KEY_LITE](ToneGenerator.md) CDMA KEYPAD Volume key lite tone: 941Hz+1477Hz 120ms ON |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_LOW_L](ToneGenerator.md) TONE_CDMA_LOW_L tone: {1300Hz 25ms, 1450Hz 25ms} 40 times, 4000ms OFF, Repeat . |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_LOW_PBX_L](../android/media/ToneGenerator.md) CDMA LOW PBX L: {1300Hz 25ms,1450Hz 25ms}20 times, 2000ms OFF, REPEAT. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_LOW_PBX_SLS](../android/media/ToneGenerator.md) CDMA HIGH PBX SLS tone:{1300Hz 25ms, 1450Hz 25ms} 8 times 200ms OFF, {1300Hz 25ms, 1450Hz 25ms} 16 times, 200ms OFF, {1300Hz 25ms, 1450Hz 25ms} 8 times, 1000ms OFF, REPEAT. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_LOW_PBX_SS](../android/media/ToneGenerator.md) CDMA LOW PBX SS tone: {1300Hz 25ms, 1450Hz 25ms} 8 times 200 ms OFF, {1300Hz 25ms 1450Hz 25ms}8 times, 2000ms OFF, REPEAT. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_LOW_PBX_L](ToneGenerator.md) CDMA LOW PBX L: {1300Hz 25ms,1450Hz 25ms}20 times, 2000ms OFF, REPEAT. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_LOW_PBX_SLS](ToneGenerator.md) CDMA HIGH PBX SLS tone:{1300Hz 25ms, 1450Hz 25ms} 8 times 200ms OFF, {1300Hz 25ms, 1450Hz 25ms} 16 times, 200ms OFF, {1300Hz 25ms, 1450Hz 25ms} 8 times, 1000ms OFF, REPEAT. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_LOW_PBX_SS](ToneGenerator.md) CDMA LOW PBX SS tone: {1300Hz 25ms, 1450Hz 25ms} 8 times 200 ms OFF, {1300Hz 25ms 1450Hz 25ms}8 times, 2000ms OFF, REPEAT. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_LOW_PBX_SSL](../android/media/ToneGenerator.md) CDMA LOW PBX SSL tone:{1300Hz 25ms, 1450Hz 25ms} 8 times 200ms OFF, {1300Hz 25ms, 1450Hz 25ms} 8 times, 200ms OFF, {1300Hz 25ms, 1450Hz 25ms} 16 times, 1000ms OFF, REPEAT. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_LOW_PBX_S_X4](../android/media/ToneGenerator.md) CDMA LOW PBX X S4 tone: {1300Hz 25ms 1450Hz 25ms} 8 times, 200ms OFF, {1300Hz 25ms 1450Hz 25ms} 8 times, 200ms OFF, {1300Hz 25ms 1450Hz 25ms} 8 times, 200ms OFF, {1300Hz 25ms 1450Hz 25ms} 8 times, 800ms OFF, REPEAT. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_LOW_SLS](../android/media/ToneGenerator.md) CDMA LOW SLS tone: {1300Hz 25ms, 1450Hz 25ms} 10 times, 500ms OFF, {1300Hz 25ms, 1450Hz 25ms} 20 times, 500ms OFF, {1300Hz 25ms, 1450Hz 25ms} 10 times, 3000ms OFF, REPEAT |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_LOW_PBX_SSL](ToneGenerator.md) CDMA LOW PBX SSL tone:{1300Hz 25ms, 1450Hz 25ms} 8 times 200ms OFF, {1300Hz 25ms, 1450Hz 25ms} 8 times, 200ms OFF, {1300Hz 25ms, 1450Hz 25ms} 16 times, 1000ms OFF, REPEAT. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_LOW_PBX_S_X4](ToneGenerator.md) CDMA LOW PBX X S4 tone: {1300Hz 25ms 1450Hz 25ms} 8 times, 200ms OFF, {1300Hz 25ms 1450Hz 25ms} 8 times, 200ms OFF, {1300Hz 25ms 1450Hz 25ms} 8 times, 200ms OFF, {1300Hz 25ms 1450Hz 25ms} 8 times, 800ms OFF, REPEAT. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_LOW_SLS](ToneGenerator.md) CDMA LOW SLS tone: {1300Hz 25ms, 1450Hz 25ms} 10 times, 500ms OFF, {1300Hz 25ms, 1450Hz 25ms} 20 times, 500ms OFF, {1300Hz 25ms, 1450Hz 25ms} 10 times, 3000ms OFF, REPEAT |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_LOW_SS](../android/media/ToneGenerator.md) CDMA LOW SS tone: {1300z 25ms, 1450Hz 25ms} repeat 16 times, 400ms OFF, repeat . |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_LOW_SSL](../android/media/ToneGenerator.md) CDMA LOW SSL tone: {1300Hz 25ms, 1450Hz 25ms} 8 times, 200ms OFF, {1300Hz 25ms, 1450Hz 25ms} repeat 8 times, 200ms OFF, {1300Hz 25ms, 1450Hz 25ms} repeat 16 times, 4000ms OFF, repeat . |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_LOW_SS_2](../android/media/ToneGenerator.md) CDMA LOW SS2 tone: {1300Hz 25ms, 1450Hz 25ms} 20 times, 1000ms OFF, {1300Hz 25ms, 1450Hz 25ms} 20 times, 3000ms OFF, repeat . |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_LOW_SS](ToneGenerator.md) CDMA LOW SS tone: {1300z 25ms, 1450Hz 25ms} repeat 16 times, 400ms OFF, repeat . |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_LOW_SSL](ToneGenerator.md) CDMA LOW SSL tone: {1300Hz 25ms, 1450Hz 25ms} 8 times, 200ms OFF, {1300Hz 25ms, 1450Hz 25ms} repeat 8 times, 200ms OFF, {1300Hz 25ms, 1450Hz 25ms} repeat 16 times, 4000ms OFF, repeat . |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_LOW_SS_2](ToneGenerator.md) CDMA LOW SS2 tone: {1300Hz 25ms, 1450Hz 25ms} 20 times, 1000ms OFF, {1300Hz 25ms, 1450Hz 25ms} 20 times, 3000ms OFF, repeat . |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_LOW_S_X4](../android/media/ToneGenerator.md) CDMA LOW S X4 tone: {2600Hz 25ms, 2900Hz 25ms} 10 times, 500ms OFF, {2600Hz 25ms, 2900Hz 25ms} 10 times, 500ms OFF, {2600Hz 25ms, 2900Hz 25ms} 10 times, 500ms OFF, {2600Hz 25ms, 2900Hz 25ms} 10 times, 2500ms OFF, REPEAT. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_MED_L](../android/media/ToneGenerator.md) TONE_CDMA_MED_L tone: {2600Hz 25ms, 2900Hz 25ms} 40 times 4000ms OFF, Repeat . |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_MED_PBX_L](../android/media/ToneGenerator.md) CDMA MED PBX L: {2600Hz 25ms, 2900Hz 25ms}20 times, 2000ms OFF, REPEAT. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_LOW_S_X4](ToneGenerator.md) CDMA LOW S X4 tone: {2600Hz 25ms, 2900Hz 25ms} 10 times, 500ms OFF, {2600Hz 25ms, 2900Hz 25ms} 10 times, 500ms OFF, {2600Hz 25ms, 2900Hz 25ms} 10 times, 500ms OFF, {2600Hz 25ms, 2900Hz 25ms} 10 times, 2500ms OFF, REPEAT. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_MED_L](ToneGenerator.md) TONE_CDMA_MED_L tone: {2600Hz 25ms, 2900Hz 25ms} 40 times 4000ms OFF, Repeat . |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_MED_PBX_L](ToneGenerator.md) CDMA MED PBX L: {2600Hz 25ms, 2900Hz 25ms}20 times, 2000ms OFF, REPEAT. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_MED_PBX_SLS](../android/media/ToneGenerator.md) CDMA HIGH PBX SLS tone:{2600Hz 25ms, 2900Hz 25ms} 8 times 200ms OFF, {2600Hz 25ms, 2900Hz 25ms} 16 times, 200ms OFF, {2600Hz 25ms, 2900Hz 25ms} 8 times, 1000ms OFF, REPEAT. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_MED_PBX_SS](../android/media/ToneGenerator.md) CDMA MED PBX SS tone: {2600Hz 25ms, 2900Hz 25ms} 8 times 200 ms OFF, {2600Hz 25ms 2900Hz 25ms}8 times, 2000ms OFF, REPEAT. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_MED_PBX_SSL](../android/media/ToneGenerator.md) CDMA MED PBX SSL tone:{2600Hz 25ms, 2900Hz 25ms} 8 times 200ms OFF, {2600Hz 25ms, 2900Hz 25ms} 8 times, 200ms OFF, {2600Hz 25ms, 2900Hz 25ms} 16 times, 1000ms OFF, REPEAT. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_MED_PBX_SLS](ToneGenerator.md) CDMA HIGH PBX SLS tone:{2600Hz 25ms, 2900Hz 25ms} 8 times 200ms OFF, {2600Hz 25ms, 2900Hz 25ms} 16 times, 200ms OFF, {2600Hz 25ms, 2900Hz 25ms} 8 times, 1000ms OFF, REPEAT. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_MED_PBX_SS](ToneGenerator.md) CDMA MED PBX SS tone: {2600Hz 25ms, 2900Hz 25ms} 8 times 200 ms OFF, {2600Hz 25ms 2900Hz 25ms}8 times, 2000ms OFF, REPEAT. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_MED_PBX_SSL](ToneGenerator.md) CDMA MED PBX SSL tone:{2600Hz 25ms, 2900Hz 25ms} 8 times 200ms OFF, {2600Hz 25ms, 2900Hz 25ms} 8 times, 200ms OFF, {2600Hz 25ms, 2900Hz 25ms} 16 times, 1000ms OFF, REPEAT. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_MED_PBX_S_X4](../android/media/ToneGenerator.md) CDMA MED PBX X S4 tone: {2600Hz 25ms 2900Hz 25ms} 8 times, 200ms OFF, {2600Hz 25ms 2900Hz 25ms} 8 times, 200ms OFF, {2600Hz 25ms 2900Hz 25ms} 8 times, 200ms OFF, {2600Hz 25ms 2900Hz 25ms} 8 times, 800ms OFF, REPEAT. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_MED_SLS](../android/media/ToneGenerator.md) CDMA MED SLS tone: {2600Hz 25ms, 2900Hz 25ms} 10 times, 500ms OFF, {2600Hz 25ms, 2900Hz 25ms} 20 times, 500ms OFF, {2600Hz 25ms, 2900Hz 25ms} 10 times, 3000ms OFF, REPEAT |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_MED_SS](../android/media/ToneGenerator.md) CDMA MED SS tone: {2600Hz 25ms, 2900Hz 25ms} repeat 16 times, 400ms OFF, repeat . |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_MED_PBX_S_X4](ToneGenerator.md) CDMA MED PBX X S4 tone: {2600Hz 25ms 2900Hz 25ms} 8 times, 200ms OFF, {2600Hz 25ms 2900Hz 25ms} 8 times, 200ms OFF, {2600Hz 25ms 2900Hz 25ms} 8 times, 200ms OFF, {2600Hz 25ms 2900Hz 25ms} 8 times, 800ms OFF, REPEAT. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_MED_SLS](ToneGenerator.md) CDMA MED SLS tone: {2600Hz 25ms, 2900Hz 25ms} 10 times, 500ms OFF, {2600Hz 25ms, 2900Hz 25ms} 20 times, 500ms OFF, {2600Hz 25ms, 2900Hz 25ms} 10 times, 3000ms OFF, REPEAT |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_MED_SS](ToneGenerator.md) CDMA MED SS tone: {2600Hz 25ms, 2900Hz 25ms} repeat 16 times, 400ms OFF, repeat . |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_MED_SSL](../android/media/ToneGenerator.md) CDMA MED SSL tone: {2600Hz 25ms, 2900Hz 25ms} 8 times, 200ms OFF, {2600Hz 25ms, 2900Hz 25ms} repeat 8 times, 200ms OFF, {2600Hz 25ms, 2900Hz 25ms} repeat 16 times, 4000ms OFF, repeat . |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_MED_SS_2](../android/media/ToneGenerator.md) CDMA MED SS2 tone: {2600Hz 25ms, 2900Hz 25ms} 20 times, 1000ms OFF, {2600Hz 25ms, 2900Hz 25ms} 20 times, 3000ms OFF, repeat . |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_MED_S_X4](../android/media/ToneGenerator.md) CDMA MED S X4 tone: {2600Hz 25ms, 2900Hz 25ms} 10 times, 500ms OFF, {2600Hz 25ms, 2900Hz 25ms} 10 times, 500ms OFF, {2600Hz 25ms, 2900Hz 25ms} 10 times, 500ms OFF, {2600Hz 25ms, 2900Hz 25ms} 10 times, 2500ms OFF, REPEAT. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_MED_SSL](ToneGenerator.md) CDMA MED SSL tone: {2600Hz 25ms, 2900Hz 25ms} 8 times, 200ms OFF, {2600Hz 25ms, 2900Hz 25ms} repeat 8 times, 200ms OFF, {2600Hz 25ms, 2900Hz 25ms} repeat 16 times, 4000ms OFF, repeat . |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_MED_SS_2](ToneGenerator.md) CDMA MED SS2 tone: {2600Hz 25ms, 2900Hz 25ms} 20 times, 1000ms OFF, {2600Hz 25ms, 2900Hz 25ms} 20 times, 3000ms OFF, repeat . |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_MED_S_X4](ToneGenerator.md) CDMA MED S X4 tone: {2600Hz 25ms, 2900Hz 25ms} 10 times, 500ms OFF, {2600Hz 25ms, 2900Hz 25ms} 10 times, 500ms OFF, {2600Hz 25ms, 2900Hz 25ms} 10 times, 500ms OFF, {2600Hz 25ms, 2900Hz 25ms} 10 times, 2500ms OFF, REPEAT. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_NETWORK_BUSY](../android/media/ToneGenerator.md) CDMA Network Busy tone: 480Hz+620Hz 500ms ON, 500ms OFF continuous |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_NETWORK_BUSY_ONE_SHOT](../android/media/ToneGenerator.md) CDMA_NETWORK_BUSY_ONE_SHOT tone: 425Hz 500ms ON, 500ms OFF. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_NETWORK_CALLWAITING](../android/media/ToneGenerator.md) CDMA Network Callwaiting tone: 440Hz 300ms ON |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_NETWORK_BUSY](ToneGenerator.md) CDMA Network Busy tone: 480Hz+620Hz 500ms ON, 500ms OFF continuous |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_NETWORK_BUSY_ONE_SHOT](ToneGenerator.md) CDMA_NETWORK_BUSY_ONE_SHOT tone: 425Hz 500ms ON, 500ms OFF. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_NETWORK_CALLWAITING](ToneGenerator.md) CDMA Network Callwaiting tone: 440Hz 300ms ON |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_NETWORK_USA_RINGBACK](../android/media/ToneGenerator.md) CDMA USA Ringback: 440Hz+480Hz 2s ON, 4000 OFF . |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_ONE_MIN_BEEP](../android/media/ToneGenerator.md) CDMA One Min Beep tone: 1150Hz+770Hz 400ms ON |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_PIP](../android/media/ToneGenerator.md) CDMA PIP tone: 480Hz 100ms ON, 100ms OFF repeated for 4 times |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_NETWORK_USA_RINGBACK](ToneGenerator.md) CDMA USA Ringback: 440Hz+480Hz 2s ON, 4000 OFF . |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_ONE_MIN_BEEP](ToneGenerator.md) CDMA One Min Beep tone: 1150Hz+770Hz 400ms ON |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_PIP](ToneGenerator.md) CDMA PIP tone: 480Hz 100ms ON, 100ms OFF repeated for 4 times |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_PRESSHOLDKEY_LITE](../android/media/ToneGenerator.md) CDMA PRESSHOLDKEY LITE tone: 587Hz 375ms ON, 1175Hz 125ms ON |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_REORDER](../android/media/ToneGenerator.md) CDMA Reorder tone: 480Hz+620Hz 250ms ON, 250ms OFF. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_SIGNAL_OFF](../android/media/ToneGenerator.md) CDMA_SIGNAL_OFF - silent tone |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_PRESSHOLDKEY_LITE](ToneGenerator.md) CDMA PRESSHOLDKEY LITE tone: 587Hz 375ms ON, 1175Hz 125ms ON |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_REORDER](ToneGenerator.md) CDMA Reorder tone: 480Hz+620Hz 250ms ON, 250ms OFF. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_SIGNAL_OFF](ToneGenerator.md) CDMA_SIGNAL_OFF - silent tone |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_SOFT_ERROR_LITE](../android/media/ToneGenerator.md) CDMA SOFT ERROR LITE tone: 1047Hz 125ms ON, 370Hz 125ms |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_DTMF_0](../android/media/ToneGenerator.md) DTMF tone for key 0: 1336Hz, 941Hz, continuous |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_DTMF_1](../android/media/ToneGenerator.md) DTMF tone for key 1: 1209Hz, 697Hz, continuous |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_CDMA_SOFT_ERROR_LITE](ToneGenerator.md) CDMA SOFT ERROR LITE tone: 1047Hz 125ms ON, 370Hz 125ms |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_DTMF_0](ToneGenerator.md) DTMF tone for key 0: 1336Hz, 941Hz, continuous |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_DTMF_1](ToneGenerator.md) DTMF tone for key 1: 1209Hz, 697Hz, continuous |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_DTMF_2](../android/media/ToneGenerator.md) DTMF tone for key 2: 1336Hz, 697Hz, continuous |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_DTMF_3](../android/media/ToneGenerator.md) DTMF tone for key 3: 1477Hz, 697Hz, continuous |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_DTMF_4](../android/media/ToneGenerator.md) DTMF tone for key 4: 1209Hz, 770Hz, continuous |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_DTMF_2](ToneGenerator.md) DTMF tone for key 2: 1336Hz, 697Hz, continuous |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_DTMF_3](ToneGenerator.md) DTMF tone for key 3: 1477Hz, 697Hz, continuous |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_DTMF_4](ToneGenerator.md) DTMF tone for key 4: 1209Hz, 770Hz, continuous |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_DTMF_5](../android/media/ToneGenerator.md) DTMF tone for key 5: 1336Hz, 770Hz, continuous |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_DTMF_6](../android/media/ToneGenerator.md) DTMF tone for key 6: 1477Hz, 770Hz, continuous |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_DTMF_7](../android/media/ToneGenerator.md) DTMF tone for key 7: 1209Hz, 852Hz, continuous |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_DTMF_5](ToneGenerator.md) DTMF tone for key 5: 1336Hz, 770Hz, continuous |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_DTMF_6](ToneGenerator.md) DTMF tone for key 6: 1477Hz, 770Hz, continuous |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_DTMF_7](ToneGenerator.md) DTMF tone for key 7: 1209Hz, 852Hz, continuous |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_DTMF_8](../android/media/ToneGenerator.md) DTMF tone for key 8: 1336Hz, 852Hz, continuous |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_DTMF_9](../android/media/ToneGenerator.md) DTMF tone for key 9: 1477Hz, 852Hz, continuous |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_DTMF_A](../android/media/ToneGenerator.md) DTMF tone for key A: 1633Hz, 697Hz, continuous |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_DTMF_8](ToneGenerator.md) DTMF tone for key 8: 1336Hz, 852Hz, continuous |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_DTMF_9](ToneGenerator.md) DTMF tone for key 9: 1477Hz, 852Hz, continuous |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_DTMF_A](ToneGenerator.md) DTMF tone for key A: 1633Hz, 697Hz, continuous |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_DTMF_B](../android/media/ToneGenerator.md) DTMF tone for key B: 1633Hz, 770Hz, continuous |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_DTMF_C](../android/media/ToneGenerator.md) DTMF tone for key C: 1633Hz, 852Hz, continuous |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_DTMF_D](../android/media/ToneGenerator.md) DTMF tone for key D: 1633Hz, 941Hz, continuous |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_DTMF_B](ToneGenerator.md) DTMF tone for key B: 1633Hz, 770Hz, continuous |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_DTMF_C](ToneGenerator.md) DTMF tone for key C: 1633Hz, 852Hz, continuous |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_DTMF_D](ToneGenerator.md) DTMF tone for key D: 1633Hz, 941Hz, continuous |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_DTMF_P](../android/media/ToneGenerator.md) DTMF tone for key #: 1477Hz, 941Hz, continuous |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_DTMF_S](../android/media/ToneGenerator.md) DTMF tone for key \*: 1209Hz, 941Hz, continuous |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_PROP_ACK](../android/media/ToneGenerator.md) Proprietary tone, positive acknowlegement: 1200Hz, 100ms ON, 100ms OFF 2 bursts |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_DTMF_P](ToneGenerator.md) DTMF tone for key #: 1477Hz, 941Hz, continuous |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_DTMF_S](ToneGenerator.md) DTMF tone for key \*: 1209Hz, 941Hz, continuous |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_PROP_ACK](ToneGenerator.md) Proprietary tone, positive acknowlegement: 1200Hz, 100ms ON, 100ms OFF 2 bursts |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_PROP_BEEP](../android/media/ToneGenerator.md) Proprietary tone, general beep: 400Hz+1200Hz, 35ms ON |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_PROP_BEEP2](../android/media/ToneGenerator.md) Proprietary tone, general double beep: twice 400Hz+1200Hz, 35ms ON, 200ms OFF, 35ms ON |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_PROP_NACK](../android/media/ToneGenerator.md) Proprietary tone, negative acknowlegement: 300Hz+400Hz+500Hz, 400ms ON |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_PROP_BEEP](ToneGenerator.md) Proprietary tone, general beep: 400Hz+1200Hz, 35ms ON |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_PROP_BEEP2](ToneGenerator.md) Proprietary tone, general double beep: twice 400Hz+1200Hz, 35ms ON, 200ms OFF, 35ms ON |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_PROP_NACK](ToneGenerator.md) Proprietary tone, negative acknowlegement: 300Hz+400Hz+500Hz, 400ms ON |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_PROP_PROMPT](../android/media/ToneGenerator.md) Proprietary tone, prompt tone: 400Hz+1200Hz, 200ms ON |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_SUP_BUSY](../android/media/ToneGenerator.md) Call supervisory tone, Busy: CEPT: 425Hz, 500ms ON, 500ms OFF. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_SUP_CALL_WAITING](../android/media/ToneGenerator.md) Call supervisory tone, Call Waiting: CEPT, JAPAN: 425Hz, 200ms ON, 600ms OFF, 200ms ON, 3s OFF. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_PROP_PROMPT](ToneGenerator.md) Proprietary tone, prompt tone: 400Hz+1200Hz, 200ms ON |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_SUP_BUSY](ToneGenerator.md) Call supervisory tone, Busy: CEPT: 425Hz, 500ms ON, 500ms OFF. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_SUP_CALL_WAITING](ToneGenerator.md) Call supervisory tone, Call Waiting: CEPT, JAPAN: 425Hz, 200ms ON, 600ms OFF, 200ms ON, 3s OFF. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_SUP_CONFIRM](../android/media/ToneGenerator.md) Call supervisory tone (IS-95), confirm tone: a 350 Hz tone added to a 440 Hz tone repeated 3 times in a 100 ms on, 100 ms off cycle |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_SUP_CONGESTION](../android/media/ToneGenerator.md) Call supervisory tone, Congestion: CEPT, JAPAN: 425Hz, 200ms ON, 200ms OFF. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_SUP_CONGESTION_ABBREV](../android/media/ToneGenerator.md) Call supervisory tone (IS-95), abbreviated congestion: congestion tone limited to 4 seconds |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_SUP_CONFIRM](ToneGenerator.md) Call supervisory tone (IS-95), confirm tone: a 350 Hz tone added to a 440 Hz tone repeated 3 times in a 100 ms on, 100 ms off cycle |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_SUP_CONGESTION](ToneGenerator.md) Call supervisory tone, Congestion: CEPT, JAPAN: 425Hz, 200ms ON, 200ms OFF. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_SUP_CONGESTION_ABBREV](ToneGenerator.md) Call supervisory tone (IS-95), abbreviated congestion: congestion tone limited to 4 seconds |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_SUP_DIAL](../android/media/ToneGenerator.md) Call supervisory tone, Dial tone: CEPT: 425Hz, continuous ANSI (IS-95): 350Hz+440Hz, continuous JAPAN: 400Hz, continuous |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_SUP_ERROR](../android/media/ToneGenerator.md) Call supervisory tone, Error/Special info: 950Hz+1400Hz+1800Hz, 330ms ON, 1s OFF. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_SUP_INTERCEPT](../android/media/ToneGenerator.md) Call supervisory tone (IS-95), intercept tone: alternating 440 Hz and 620 Hz tones, each on for 250 ms |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_SUP_DIAL](ToneGenerator.md) Call supervisory tone, Dial tone: CEPT: 425Hz, continuous ANSI (IS-95): 350Hz+440Hz, continuous JAPAN: 400Hz, continuous |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_SUP_ERROR](ToneGenerator.md) Call supervisory tone, Error/Special info: 950Hz+1400Hz+1800Hz, 330ms ON, 1s OFF. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_SUP_INTERCEPT](ToneGenerator.md) Call supervisory tone (IS-95), intercept tone: alternating 440 Hz and 620 Hz tones, each on for 250 ms |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_SUP_INTERCEPT_ABBREV](../android/media/ToneGenerator.md) Call supervisory tone (IS-95), abbreviated intercept: intercept tone limited to 4 seconds |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_SUP_PIP](../android/media/ToneGenerator.md) Call supervisory tone (IS-95), pip tone: four bursts of 480 Hz tone (0.1 s on, 0.1 s off). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_SUP_RADIO_ACK](../android/media/ToneGenerator.md) Call supervisory tone, Radio path acknowlegment : CEPT, ANSI: 425Hz, 200ms ON JAPAN: 400Hz, 1s ON, 2s OFF. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_SUP_INTERCEPT_ABBREV](ToneGenerator.md) Call supervisory tone (IS-95), abbreviated intercept: intercept tone limited to 4 seconds |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_SUP_PIP](ToneGenerator.md) Call supervisory tone (IS-95), pip tone: four bursts of 480 Hz tone (0.1 s on, 0.1 s off). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_SUP_RADIO_ACK](ToneGenerator.md) Call supervisory tone, Radio path acknowlegment : CEPT, ANSI: 425Hz, 200ms ON JAPAN: 400Hz, 1s ON, 2s OFF. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_SUP_RADIO_NOTAVAIL](../android/media/ToneGenerator.md) Call supervisory tone, Radio path not available: 425Hz, 200ms ON, 200 OFF 3 bursts |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_SUP_RINGTONE](../android/media/ToneGenerator.md) Call supervisory tone, Ring Tone: CEPT, JAPAN: 425Hz, 1s ON, 4s OFF. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_SUP_RADIO_NOTAVAIL](ToneGenerator.md) Call supervisory tone, Radio path not available: 425Hz, 200ms ON, 200 OFF 3 bursts |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TONE_SUP_RINGTONE](ToneGenerator.md) Call supervisory tone, Ring Tone: CEPT, JAPAN: 425Hz, 1s ON, 4s OFF. |
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ToneGenerator](../android/media/ToneGenerator.md))`(`streamType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `volume:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` ToneGenerator class contructor specifying output stream type and volume. |
+| [ToneGenerator](ToneGenerator.md))`(`streamType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `volume:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` ToneGenerator class contructor specifying output stream type and volume. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAudioSessionId](../android/media/ToneGenerator.md))`()` Returns the audio session ID. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [release](../android/media/ToneGenerator.md))`()` Releases resources associated with this ToneGenerator object. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [startTone](../android/media/ToneGenerator.md))`(`toneType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` This method starts the playback of a tone of the specified type. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAudioSessionId](ToneGenerator.md))`()` Returns the audio session ID. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [release](ToneGenerator.md))`()` Releases resources associated with this ToneGenerator object. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [startTone](ToneGenerator.md))`(`toneType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` This method starts the playback of a tone of the specified type. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [startTone](../android/media/ToneGenerator.md))`(`toneType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `durationMs:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` This method starts the playback of a tone of the specified type for the specified duration. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [stopTone](../android/media/ToneGenerator.md))`()` This method stops the tone currently playing playback. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [startTone](ToneGenerator.md))`(`toneType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `durationMs:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` This method starts the playback of a tone of the specified type for the specified duration. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [stopTone](ToneGenerator.md))`()` This method stops the tone currently playing playback. |
 
 | Protected methods ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](../android/media/ToneGenerator.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](ToneGenerator.md))`()` <br /> |
 
 ## Constants
 
@@ -183,7 +183,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val MAX_VOLUME: Int
 ```
 
-Maximum volume, for use with [ToneGenerator(int,int)](../android/media/ToneGenerator.md)) 
+Maximum volume, for use with [ToneGenerator(int,int)](ToneGenerator.md)) 
 
  Value: 100
 
@@ -195,7 +195,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val MIN_VOLUME: Int
 ```
 
-Minimum volume setting, for use with [ToneGenerator(int,int)](../android/media/ToneGenerator.md)) 
+Minimum volume setting, for use with [ToneGenerator(int,int)](ToneGenerator.md)) 
 
  Value: 0
 
@@ -213,7 +213,7 @@ CDMA_ABBR_ALERT tone: 1150Hz+770Hz 400ms ON
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_ABBR_INTERCEPT
 
@@ -229,7 +229,7 @@ CDMA Abbr Intercept tone: 440Hz 250ms ON, 620Hz 250ms ON
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_ABBR_REORDER
 
@@ -245,7 +245,7 @@ CDMA Abbr Reorder tone: 480Hz+620Hz 250ms ON, 250ms OFF repeated for 8 times
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_ALERT_AUTOREDIAL_LITE
 
@@ -261,7 +261,7 @@ CDMA Alert Auto Redial tone: {1245Hz 62ms ON, 659Hz 62ms ON} 3 times, 1245 62ms 
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_ALERT_CALL_GUARD
 
@@ -277,7 +277,7 @@ CDMA ALERT CALL GUARD tone: {1319Hz 125ms ON, 125ms OFF} 3 times
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_ALERT_INCALL_LITE
 
@@ -293,7 +293,7 @@ CDMA ALERT INCALL LITE tone: 587Hz 62ms, 784 62ms, 831Hz 62ms, 784Hz 62ms, 1109 
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_ALERT_NETWORK_LITE
 
@@ -309,7 +309,7 @@ CDMA Alert Network Lite tone: 1109Hz 62ms ON, 784Hz 62ms ON, 740Hz 62ms ON 622Hz
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_ANSWER
 
@@ -325,7 +325,7 @@ CDMA answer tone: silent tone - defintion Frequency 0, 0ms ON, 0ms OFF
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_CALLDROP_LITE
 
@@ -341,7 +341,7 @@ CDMA CALLDROP LITE tone: 1480Hz 125ms, 1397Hz 125ms, 784Hz 125ms
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_CALL_SIGNAL_ISDN_INTERGROUP
 
@@ -357,7 +357,7 @@ ISDN Call Signal Intergroup tone: {2091Hz 32ms ON, 2556 64ms ON} 8 times, 2091Hz
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_CALL_SIGNAL_ISDN_NORMAL
 
@@ -373,7 +373,7 @@ ISDN Call Signal Normal tone: {2091Hz 32ms ON, 2556 64ms ON} 20 times, 2091 32ms
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_CALL_SIGNAL_ISDN_PAT3
 
@@ -389,7 +389,7 @@ ISDN Call sign PAT3 tone: silent tone
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_CALL_SIGNAL_ISDN_PAT5
 
@@ -405,7 +405,7 @@ ISDN Pat5 tone: silent tone
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_CALL_SIGNAL_ISDN_PAT6
 
@@ -421,7 +421,7 @@ ISDN Pat6 tone: silent tone
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_CALL_SIGNAL_ISDN_PAT7
 
@@ -437,7 +437,7 @@ ISDN Pat7 tone: silent tone
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_CALL_SIGNAL_ISDN_PING_RING
 
@@ -453,7 +453,7 @@ ISDN Ping Ring tone: {2091Hz 32ms ON, 2556Hz 64ms ON} 5 times 2091Hz 20ms ON
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_CALL_SIGNAL_ISDN_SP_PRI
 
@@ -469,7 +469,7 @@ ISDN Call Signal SP PRI tone:{2091Hz 32ms ON, 2556 64ms ON} 4 times 2091Hz 16ms 
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_CONFIRM
 
@@ -485,7 +485,7 @@ CDMA Confirm tone: 350Hz+440Hz 100ms ON, 100ms OFF repeated for 3 times
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_DIAL_TONE_LITE
 
@@ -501,7 +501,7 @@ CDMA Dial tone : 425Hz continuous
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_EMERGENCY_RINGBACK
 
@@ -517,7 +517,7 @@ CDMA EMERGENCY RINGBACK tone: {941Hz 125ms ON, 10ms OFF} 3times 4990ms OFF, REPE
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_HIGH_L
 
@@ -533,7 +533,7 @@ TONE_CDMA_HIGH_L tone: {3700Hz 25ms, 4000Hz 25ms} 40 times 4000ms OFF, Repeat ..
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_HIGH_PBX_L
 
@@ -549,7 +549,7 @@ CDMA HIGH PBX L: {3700Hz 25ms, 4000Hz 25ms}20 times, 2000ms OFF, REPEAT....
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_HIGH_PBX_SLS
 
@@ -565,7 +565,7 @@ CDMA HIGH PBX SSL tone:{3700Hz 25ms, 4000Hz 25ms} 8 times 200ms OFF, {3700Hz 25m
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_HIGH_PBX_SS
 
@@ -581,7 +581,7 @@ CDMA HIGH PBX SS tone: {3700Hz 25ms, 4000Hz 25ms} 8 times 200 ms OFF, {3700Hz 25
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_HIGH_PBX_SSL
 
@@ -597,7 +597,7 @@ CDMA HIGH PBX SSL tone:{3700Hz 25ms, 4000Hz 25ms} 8 times 200ms OFF, {3700Hz 25m
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_HIGH_PBX_S_X4
 
@@ -613,7 +613,7 @@ CDMA HIGH PBX X S4 tone: {3700Hz 25ms 4000Hz 25ms} 8 times, 200ms OFF, {3700Hz 2
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_HIGH_SLS
 
@@ -629,7 +629,7 @@ CDMA HIGH SLS tone: {3700Hz 25ms, 4000Hz 25ms} 10 times, 500ms OFF, {3700Hz 25ms
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_HIGH_SS
 
@@ -645,7 +645,7 @@ CDMA HIGH SS tone: {3700Hz 25ms, 4000Hz 25ms} repeat 16 times, 400ms OFF, repeat
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_HIGH_SSL
 
@@ -661,7 +661,7 @@ CDMA HIGH SSL tone: {3700Hz 25ms, 4000Hz 25ms} 8 times, 200ms OFF, {3700Hz 25ms,
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_HIGH_SS_2
 
@@ -677,7 +677,7 @@ CDMA HIGH SS2 tone: {3700Hz 25ms, 4000Hz 25ms} 20 times, 1000ms OFF, {3700Hz 25m
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_HIGH_S_X4
 
@@ -693,7 +693,7 @@ CDMA HIGH S X4 tone: {3700Hz 25ms, 4000Hz 25ms} 10 times, 500ms OFF, {3700Hz 25m
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_INTERCEPT
 
@@ -709,7 +709,7 @@ CDMA Intercept tone: 440Hz 250ms ON, 620Hz 250ms ON ...
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_KEYPAD_VOLUME_KEY_LITE
 
@@ -725,7 +725,7 @@ CDMA KEYPAD Volume key lite tone: 941Hz+1477Hz 120ms ON
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_LOW_L
 
@@ -741,7 +741,7 @@ TONE_CDMA_LOW_L tone: {1300Hz 25ms, 1450Hz 25ms} 40 times, 4000ms OFF, Repeat ..
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_LOW_PBX_L
 
@@ -757,7 +757,7 @@ CDMA LOW PBX L: {1300Hz 25ms,1450Hz 25ms}20 times, 2000ms OFF, REPEAT....
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_LOW_PBX_SLS
 
@@ -773,7 +773,7 @@ CDMA HIGH PBX SLS tone:{1300Hz 25ms, 1450Hz 25ms} 8 times 200ms OFF, {1300Hz 25m
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_LOW_PBX_SS
 
@@ -789,7 +789,7 @@ CDMA LOW PBX SS tone: {1300Hz 25ms, 1450Hz 25ms} 8 times 200 ms OFF, {1300Hz 25m
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_LOW_PBX_SSL
 
@@ -805,7 +805,7 @@ CDMA LOW PBX SSL tone:{1300Hz 25ms, 1450Hz 25ms} 8 times 200ms OFF, {1300Hz 25ms
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_LOW_PBX_S_X4
 
@@ -821,7 +821,7 @@ CDMA LOW PBX X S4 tone: {1300Hz 25ms 1450Hz 25ms} 8 times, 200ms OFF, {1300Hz 25
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_LOW_SLS
 
@@ -837,7 +837,7 @@ CDMA LOW SLS tone: {1300Hz 25ms, 1450Hz 25ms} 10 times, 500ms OFF, {1300Hz 25ms,
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_LOW_SS
 
@@ -853,7 +853,7 @@ CDMA LOW SS tone: {1300z 25ms, 1450Hz 25ms} repeat 16 times, 400ms OFF, repeat .
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_LOW_SSL
 
@@ -869,7 +869,7 @@ CDMA LOW SSL tone: {1300Hz 25ms, 1450Hz 25ms} 8 times, 200ms OFF, {1300Hz 25ms, 
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_LOW_SS_2
 
@@ -885,7 +885,7 @@ CDMA LOW SS2 tone: {1300Hz 25ms, 1450Hz 25ms} 20 times, 1000ms OFF, {1300Hz 25ms
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_LOW_S_X4
 
@@ -901,7 +901,7 @@ CDMA LOW S X4 tone: {2600Hz 25ms, 2900Hz 25ms} 10 times, 500ms OFF, {2600Hz 25ms
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_MED_L
 
@@ -917,7 +917,7 @@ TONE_CDMA_MED_L tone: {2600Hz 25ms, 2900Hz 25ms} 40 times 4000ms OFF, Repeat ...
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_MED_PBX_L
 
@@ -933,7 +933,7 @@ CDMA MED PBX L: {2600Hz 25ms, 2900Hz 25ms}20 times, 2000ms OFF, REPEAT....
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_MED_PBX_SLS
 
@@ -949,7 +949,7 @@ CDMA HIGH PBX SLS tone:{2600Hz 25ms, 2900Hz 25ms} 8 times 200ms OFF, {2600Hz 25m
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_MED_PBX_SS
 
@@ -965,7 +965,7 @@ CDMA MED PBX SS tone: {2600Hz 25ms, 2900Hz 25ms} 8 times 200 ms OFF, {2600Hz 25m
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_MED_PBX_SSL
 
@@ -981,7 +981,7 @@ CDMA MED PBX SSL tone:{2600Hz 25ms, 2900Hz 25ms} 8 times 200ms OFF, {2600Hz 25ms
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_MED_PBX_S_X4
 
@@ -997,7 +997,7 @@ CDMA MED PBX X S4 tone: {2600Hz 25ms 2900Hz 25ms} 8 times, 200ms OFF, {2600Hz 25
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_MED_SLS
 
@@ -1013,7 +1013,7 @@ CDMA MED SLS tone: {2600Hz 25ms, 2900Hz 25ms} 10 times, 500ms OFF, {2600Hz 25ms,
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_MED_SS
 
@@ -1029,7 +1029,7 @@ CDMA MED SS tone: {2600Hz 25ms, 2900Hz 25ms} repeat 16 times, 400ms OFF, repeat 
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_MED_SSL
 
@@ -1045,7 +1045,7 @@ CDMA MED SSL tone: {2600Hz 25ms, 2900Hz 25ms} 8 times, 200ms OFF, {2600Hz 25ms, 
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_MED_SS_2
 
@@ -1061,7 +1061,7 @@ CDMA MED SS2 tone: {2600Hz 25ms, 2900Hz 25ms} 20 times, 1000ms OFF, {2600Hz 25ms
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_MED_S_X4
 
@@ -1077,7 +1077,7 @@ CDMA MED S X4 tone: {2600Hz 25ms, 2900Hz 25ms} 10 times, 500ms OFF, {2600Hz 25ms
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_NETWORK_BUSY
 
@@ -1093,7 +1093,7 @@ CDMA Network Busy tone: 480Hz+620Hz 500ms ON, 500ms OFF continuous
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_NETWORK_BUSY_ONE_SHOT
 
@@ -1109,7 +1109,7 @@ CDMA_NETWORK_BUSY_ONE_SHOT tone: 425Hz 500ms ON, 500ms OFF.
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_NETWORK_CALLWAITING
 
@@ -1125,7 +1125,7 @@ CDMA Network Callwaiting tone: 440Hz 300ms ON
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_NETWORK_USA_RINGBACK
 
@@ -1141,7 +1141,7 @@ CDMA USA Ringback: 440Hz+480Hz 2s ON, 4000 OFF ...
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_ONE_MIN_BEEP
 
@@ -1157,7 +1157,7 @@ CDMA One Min Beep tone: 1150Hz+770Hz 400ms ON
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_PIP
 
@@ -1173,7 +1173,7 @@ CDMA PIP tone: 480Hz 100ms ON, 100ms OFF repeated for 4 times
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_PRESSHOLDKEY_LITE
 
@@ -1189,7 +1189,7 @@ CDMA PRESSHOLDKEY LITE tone: 587Hz 375ms ON, 1175Hz 125ms ON
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_REORDER
 
@@ -1205,7 +1205,7 @@ CDMA Reorder tone: 480Hz+620Hz 250ms ON, 250ms OFF...
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_SIGNAL_OFF
 
@@ -1221,7 +1221,7 @@ CDMA_SIGNAL_OFF - silent tone
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_CDMA_SOFT_ERROR_LITE
 
@@ -1237,7 +1237,7 @@ CDMA SOFT ERROR LITE tone: 1047Hz 125ms ON, 370Hz 125ms
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_DTMF_0
 
@@ -1255,7 +1255,7 @@ DTMF tone for key 0: 1336Hz, 941Hz, continuous
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_DTMF_1
 
@@ -1271,7 +1271,7 @@ DTMF tone for key 1: 1209Hz, 697Hz, continuous
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_DTMF_2
 
@@ -1287,7 +1287,7 @@ DTMF tone for key 2: 1336Hz, 697Hz, continuous
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_DTMF_3
 
@@ -1303,7 +1303,7 @@ DTMF tone for key 3: 1477Hz, 697Hz, continuous
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_DTMF_4
 
@@ -1319,7 +1319,7 @@ DTMF tone for key 4: 1209Hz, 770Hz, continuous
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_DTMF_5
 
@@ -1335,7 +1335,7 @@ DTMF tone for key 5: 1336Hz, 770Hz, continuous
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_DTMF_6
 
@@ -1351,7 +1351,7 @@ DTMF tone for key 6: 1477Hz, 770Hz, continuous
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_DTMF_7
 
@@ -1367,7 +1367,7 @@ DTMF tone for key 7: 1209Hz, 852Hz, continuous
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_DTMF_8
 
@@ -1383,7 +1383,7 @@ DTMF tone for key 8: 1336Hz, 852Hz, continuous
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_DTMF_9
 
@@ -1399,7 +1399,7 @@ DTMF tone for key 9: 1477Hz, 852Hz, continuous
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_DTMF_A
 
@@ -1415,7 +1415,7 @@ DTMF tone for key A: 1633Hz, 697Hz, continuous
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_DTMF_B
 
@@ -1431,7 +1431,7 @@ DTMF tone for key B: 1633Hz, 770Hz, continuous
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_DTMF_C
 
@@ -1447,7 +1447,7 @@ DTMF tone for key C: 1633Hz, 852Hz, continuous
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_DTMF_D
 
@@ -1463,7 +1463,7 @@ DTMF tone for key D: 1633Hz, 941Hz, continuous
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_DTMF_P
 
@@ -1479,7 +1479,7 @@ DTMF tone for key #: 1477Hz, 941Hz, continuous
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_DTMF_S
 
@@ -1495,7 +1495,7 @@ DTMF tone for key \*: 1209Hz, 941Hz, continuous
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_PROP_ACK
 
@@ -1511,7 +1511,7 @@ Proprietary tone, positive acknowlegement: 1200Hz, 100ms ON, 100ms OFF 2 bursts
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_PROP_BEEP
 
@@ -1527,7 +1527,7 @@ Proprietary tone, general beep: 400Hz+1200Hz, 35ms ON
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_PROP_BEEP2
 
@@ -1543,7 +1543,7 @@ Proprietary tone, general double beep: twice 400Hz+1200Hz, 35ms ON, 200ms OFF, 3
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_PROP_NACK
 
@@ -1559,7 +1559,7 @@ Proprietary tone, negative acknowlegement: 300Hz+400Hz+500Hz, 400ms ON
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_PROP_PROMPT
 
@@ -1575,7 +1575,7 @@ Proprietary tone, prompt tone: 400Hz+1200Hz, 200ms ON
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_SUP_BUSY
 
@@ -1591,7 +1591,7 @@ Call supervisory tone, Busy: CEPT: 425Hz, 500ms ON, 500ms OFF... ANSI (IS-95): 4
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_SUP_CALL_WAITING
 
@@ -1607,7 +1607,7 @@ Call supervisory tone, Call Waiting: CEPT, JAPAN: 425Hz, 200ms ON, 600ms OFF, 20
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_SUP_CONFIRM
 
@@ -1623,7 +1623,7 @@ Call supervisory tone (IS-95), confirm tone: a 350 Hz tone added to a 440 Hz ton
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_SUP_CONGESTION
 
@@ -1639,7 +1639,7 @@ Call supervisory tone, Congestion: CEPT, JAPAN: 425Hz, 200ms ON, 200ms OFF... AN
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_SUP_CONGESTION_ABBREV
 
@@ -1655,7 +1655,7 @@ Call supervisory tone (IS-95), abbreviated congestion: congestion tone limited t
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_SUP_DIAL
 
@@ -1671,7 +1671,7 @@ Call supervisory tone, Dial tone: CEPT: 425Hz, continuous ANSI (IS-95): 350Hz+44
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_SUP_ERROR
 
@@ -1687,7 +1687,7 @@ Call supervisory tone, Error/Special info: 950Hz+1400Hz+1800Hz, 330ms ON, 1s OFF
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_SUP_INTERCEPT
 
@@ -1703,7 +1703,7 @@ Call supervisory tone (IS-95), intercept tone: alternating 440 Hz and 620 Hz ton
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_SUP_INTERCEPT_ABBREV
 
@@ -1719,7 +1719,7 @@ Call supervisory tone (IS-95), abbreviated intercept: intercept tone limited to 
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_SUP_PIP
 
@@ -1735,7 +1735,7 @@ Call supervisory tone (IS-95), pip tone: four bursts of 480 Hz tone (0.1 s on, 0
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_SUP_RADIO_ACK
 
@@ -1751,7 +1751,7 @@ Call supervisory tone, Radio path acknowlegment : CEPT, ANSI: 425Hz, 200ms ON JA
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_SUP_RADIO_NOTAVAIL
 
@@ -1767,7 +1767,7 @@ Call supervisory tone, Radio path not available: 425Hz, 200ms ON, 200 OFF 3 burs
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### TONE_SUP_RINGTONE
 
@@ -1783,7 +1783,7 @@ Call supervisory tone, Ring Tone: CEPT, JAPAN: 425Hz, 1s ON, 4s OFF... ANSI (IS-
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md))
+- [#ToneGenerator(int, int)](ToneGenerator.md))
 
 ## Public constructors
 
@@ -1842,11 +1842,11 @@ This method starts the playback of a tone of the specified type. only one tone c
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `toneType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The type of tone generated chosen from the following list: - [TONE_DTMF_0](../android/media/ToneGenerator.md) - [TONE_DTMF_1](../android/media/ToneGenerator.md) - [TONE_DTMF_2](../android/media/ToneGenerator.md) - [TONE_DTMF_3](../android/media/ToneGenerator.md) - [TONE_DTMF_4](../android/media/ToneGenerator.md) - [TONE_DTMF_5](../android/media/ToneGenerator.md) - [TONE_DTMF_6](../android/media/ToneGenerator.md) - [TONE_DTMF_7](../android/media/ToneGenerator.md) - [TONE_DTMF_8](../android/media/ToneGenerator.md) - [TONE_DTMF_9](../android/media/ToneGenerator.md) - [TONE_DTMF_A](../android/media/ToneGenerator.md) - [TONE_DTMF_B](../android/media/ToneGenerator.md) - [TONE_DTMF_C](../android/media/ToneGenerator.md) - [TONE_DTMF_D](../android/media/ToneGenerator.md) - [TONE_SUP_DIAL](../android/media/ToneGenerator.md) - [TONE_SUP_BUSY](../android/media/ToneGenerator.md) - [TONE_SUP_CONGESTION](../android/media/ToneGenerator.md) - [TONE_SUP_RADIO_ACK](../android/media/ToneGenerator.md) - [TONE_SUP_RADIO_NOTAVAIL](../android/media/ToneGenerator.md) - [TONE_SUP_ERROR](../android/media/ToneGenerator.md) - [TONE_SUP_CALL_WAITING](../android/media/ToneGenerator.md) - [TONE_SUP_RINGTONE](../android/media/ToneGenerator.md) - [TONE_PROP_BEEP](../android/media/ToneGenerator.md) - [TONE_PROP_ACK](../android/media/ToneGenerator.md) - [TONE_PROP_NACK](../android/media/ToneGenerator.md) - [TONE_PROP_PROMPT](../android/media/ToneGenerator.md) - [TONE_PROP_BEEP2](../android/media/ToneGenerator.md) - [TONE_SUP_INTERCEPT](../android/media/ToneGenerator.md) - [TONE_SUP_INTERCEPT_ABBREV](../android/media/ToneGenerator.md) - [TONE_SUP_CONGESTION_ABBREV](../android/media/ToneGenerator.md) - [TONE_SUP_CONFIRM](../android/media/ToneGenerator.md) - [TONE_SUP_PIP](../android/media/ToneGenerator.md) - [TONE_CDMA_DIAL_TONE_LITE](../android/media/ToneGenerator.md) - [TONE_CDMA_NETWORK_USA_RINGBACK](../android/media/ToneGenerator.md) - [TONE_CDMA_INTERCEPT](../android/media/ToneGenerator.md) - [TONE_CDMA_ABBR_INTERCEPT](../android/media/ToneGenerator.md) - [TONE_CDMA_REORDER](../android/media/ToneGenerator.md) - [TONE_CDMA_ABBR_REORDER](../android/media/ToneGenerator.md) - [TONE_CDMA_NETWORK_BUSY](../android/media/ToneGenerator.md) - [TONE_CDMA_CONFIRM](../android/media/ToneGenerator.md) - [TONE_CDMA_ANSWER](../android/media/ToneGenerator.md) - [TONE_CDMA_NETWORK_CALLWAITING](../android/media/ToneGenerator.md) - [TONE_CDMA_PIP](../android/media/ToneGenerator.md) - [TONE_CDMA_CALL_SIGNAL_ISDN_NORMAL](../android/media/ToneGenerator.md) - [TONE_CDMA_CALL_SIGNAL_ISDN_INTERGROUP](../android/media/ToneGenerator.md) - [TONE_CDMA_CALL_SIGNAL_ISDN_SP_PRI](../android/media/ToneGenerator.md) - [TONE_CDMA_CALL_SIGNAL_ISDN_PAT3](../android/media/ToneGenerator.md) - [TONE_CDMA_CALL_SIGNAL_ISDN_PING_RING](../android/media/ToneGenerator.md) - [TONE_CDMA_CALL_SIGNAL_ISDN_PAT5](../android/media/ToneGenerator.md) - [TONE_CDMA_CALL_SIGNAL_ISDN_PAT6](../android/media/ToneGenerator.md) - [TONE_CDMA_CALL_SIGNAL_ISDN_PAT7](../android/media/ToneGenerator.md) - [TONE_CDMA_HIGH_L](../android/media/ToneGenerator.md) - [TONE_CDMA_MED_L](../android/media/ToneGenerator.md) - [TONE_CDMA_LOW_L](../android/media/ToneGenerator.md) - [TONE_CDMA_HIGH_SS](../android/media/ToneGenerator.md) - [TONE_CDMA_MED_SS](../android/media/ToneGenerator.md) - [TONE_CDMA_LOW_SS](../android/media/ToneGenerator.md) - [TONE_CDMA_HIGH_SSL](../android/media/ToneGenerator.md) - [TONE_CDMA_MED_SSL](../android/media/ToneGenerator.md) - [TONE_CDMA_LOW_SSL](../android/media/ToneGenerator.md) - [TONE_CDMA_HIGH_SS_2](../android/media/ToneGenerator.md) - [TONE_CDMA_MED_SS_2](../android/media/ToneGenerator.md) - [TONE_CDMA_LOW_SS_2](../android/media/ToneGenerator.md) - [TONE_CDMA_HIGH_SLS](../android/media/ToneGenerator.md) - [TONE_CDMA_MED_SLS](../android/media/ToneGenerator.md) - [TONE_CDMA_LOW_SLS](../android/media/ToneGenerator.md) - [TONE_CDMA_HIGH_S_X4](../android/media/ToneGenerator.md) - [TONE_CDMA_MED_S_X4](../android/media/ToneGenerator.md) - [TONE_CDMA_LOW_S_X4](../android/media/ToneGenerator.md) - [TONE_CDMA_HIGH_PBX_L](../android/media/ToneGenerator.md) - [TONE_CDMA_MED_PBX_L](../android/media/ToneGenerator.md) - [TONE_CDMA_LOW_PBX_L](../android/media/ToneGenerator.md) - [TONE_CDMA_HIGH_PBX_SS](../android/media/ToneGenerator.md) - [TONE_CDMA_MED_PBX_SS](../android/media/ToneGenerator.md) - [TONE_CDMA_LOW_PBX_SS](../android/media/ToneGenerator.md) - [TONE_CDMA_HIGH_PBX_SSL](../android/media/ToneGenerator.md) - [TONE_CDMA_MED_PBX_SSL](../android/media/ToneGenerator.md) - [TONE_CDMA_LOW_PBX_SSL](../android/media/ToneGenerator.md) - [TONE_CDMA_HIGH_PBX_SLS](../android/media/ToneGenerator.md) - [TONE_CDMA_MED_PBX_SLS](../android/media/ToneGenerator.md) - [TONE_CDMA_LOW_PBX_SLS](../android/media/ToneGenerator.md) - [TONE_CDMA_HIGH_PBX_S_X4](../android/media/ToneGenerator.md) - [TONE_CDMA_MED_PBX_S_X4](../android/media/ToneGenerator.md) - [TONE_CDMA_LOW_PBX_S_X4](../android/media/ToneGenerator.md) - [TONE_CDMA_ALERT_NETWORK_LITE](../android/media/ToneGenerator.md) - [TONE_CDMA_ALERT_AUTOREDIAL_LITE](../android/media/ToneGenerator.md) - [TONE_CDMA_ONE_MIN_BEEP](../android/media/ToneGenerator.md) - [TONE_CDMA_KEYPAD_VOLUME_KEY_LITE](../android/media/ToneGenerator.md) - [TONE_CDMA_PRESSHOLDKEY_LITE](../android/media/ToneGenerator.md) - [TONE_CDMA_ALERT_INCALL_LITE](../android/media/ToneGenerator.md) - [TONE_CDMA_EMERGENCY_RINGBACK](../android/media/ToneGenerator.md) - [TONE_CDMA_ALERT_CALL_GUARD](../android/media/ToneGenerator.md) - [TONE_CDMA_SOFT_ERROR_LITE](../android/media/ToneGenerator.md) - [TONE_CDMA_CALLDROP_LITE](../android/media/ToneGenerator.md) - [TONE_CDMA_NETWORK_BUSY_ONE_SHOT](../android/media/ToneGenerator.md) - [TONE_CDMA_ABBR_ALERT](../android/media/ToneGenerator.md) - [TONE_CDMA_SIGNAL_OFF](../android/media/ToneGenerator.md) |
+| `toneType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The type of tone generated chosen from the following list: - [TONE_DTMF_0](ToneGenerator.md) - [TONE_DTMF_1](ToneGenerator.md) - [TONE_DTMF_2](ToneGenerator.md) - [TONE_DTMF_3](ToneGenerator.md) - [TONE_DTMF_4](ToneGenerator.md) - [TONE_DTMF_5](ToneGenerator.md) - [TONE_DTMF_6](ToneGenerator.md) - [TONE_DTMF_7](ToneGenerator.md) - [TONE_DTMF_8](ToneGenerator.md) - [TONE_DTMF_9](ToneGenerator.md) - [TONE_DTMF_A](ToneGenerator.md) - [TONE_DTMF_B](ToneGenerator.md) - [TONE_DTMF_C](ToneGenerator.md) - [TONE_DTMF_D](ToneGenerator.md) - [TONE_SUP_DIAL](ToneGenerator.md) - [TONE_SUP_BUSY](ToneGenerator.md) - [TONE_SUP_CONGESTION](ToneGenerator.md) - [TONE_SUP_RADIO_ACK](ToneGenerator.md) - [TONE_SUP_RADIO_NOTAVAIL](ToneGenerator.md) - [TONE_SUP_ERROR](ToneGenerator.md) - [TONE_SUP_CALL_WAITING](ToneGenerator.md) - [TONE_SUP_RINGTONE](ToneGenerator.md) - [TONE_PROP_BEEP](ToneGenerator.md) - [TONE_PROP_ACK](ToneGenerator.md) - [TONE_PROP_NACK](ToneGenerator.md) - [TONE_PROP_PROMPT](ToneGenerator.md) - [TONE_PROP_BEEP2](ToneGenerator.md) - [TONE_SUP_INTERCEPT](ToneGenerator.md) - [TONE_SUP_INTERCEPT_ABBREV](ToneGenerator.md) - [TONE_SUP_CONGESTION_ABBREV](ToneGenerator.md) - [TONE_SUP_CONFIRM](ToneGenerator.md) - [TONE_SUP_PIP](ToneGenerator.md) - [TONE_CDMA_DIAL_TONE_LITE](ToneGenerator.md) - [TONE_CDMA_NETWORK_USA_RINGBACK](ToneGenerator.md) - [TONE_CDMA_INTERCEPT](ToneGenerator.md) - [TONE_CDMA_ABBR_INTERCEPT](ToneGenerator.md) - [TONE_CDMA_REORDER](ToneGenerator.md) - [TONE_CDMA_ABBR_REORDER](ToneGenerator.md) - [TONE_CDMA_NETWORK_BUSY](ToneGenerator.md) - [TONE_CDMA_CONFIRM](ToneGenerator.md) - [TONE_CDMA_ANSWER](ToneGenerator.md) - [TONE_CDMA_NETWORK_CALLWAITING](ToneGenerator.md) - [TONE_CDMA_PIP](ToneGenerator.md) - [TONE_CDMA_CALL_SIGNAL_ISDN_NORMAL](ToneGenerator.md) - [TONE_CDMA_CALL_SIGNAL_ISDN_INTERGROUP](ToneGenerator.md) - [TONE_CDMA_CALL_SIGNAL_ISDN_SP_PRI](ToneGenerator.md) - [TONE_CDMA_CALL_SIGNAL_ISDN_PAT3](ToneGenerator.md) - [TONE_CDMA_CALL_SIGNAL_ISDN_PING_RING](ToneGenerator.md) - [TONE_CDMA_CALL_SIGNAL_ISDN_PAT5](ToneGenerator.md) - [TONE_CDMA_CALL_SIGNAL_ISDN_PAT6](ToneGenerator.md) - [TONE_CDMA_CALL_SIGNAL_ISDN_PAT7](ToneGenerator.md) - [TONE_CDMA_HIGH_L](ToneGenerator.md) - [TONE_CDMA_MED_L](ToneGenerator.md) - [TONE_CDMA_LOW_L](ToneGenerator.md) - [TONE_CDMA_HIGH_SS](ToneGenerator.md) - [TONE_CDMA_MED_SS](ToneGenerator.md) - [TONE_CDMA_LOW_SS](ToneGenerator.md) - [TONE_CDMA_HIGH_SSL](ToneGenerator.md) - [TONE_CDMA_MED_SSL](ToneGenerator.md) - [TONE_CDMA_LOW_SSL](ToneGenerator.md) - [TONE_CDMA_HIGH_SS_2](ToneGenerator.md) - [TONE_CDMA_MED_SS_2](ToneGenerator.md) - [TONE_CDMA_LOW_SS_2](ToneGenerator.md) - [TONE_CDMA_HIGH_SLS](ToneGenerator.md) - [TONE_CDMA_MED_SLS](ToneGenerator.md) - [TONE_CDMA_LOW_SLS](ToneGenerator.md) - [TONE_CDMA_HIGH_S_X4](ToneGenerator.md) - [TONE_CDMA_MED_S_X4](ToneGenerator.md) - [TONE_CDMA_LOW_S_X4](ToneGenerator.md) - [TONE_CDMA_HIGH_PBX_L](ToneGenerator.md) - [TONE_CDMA_MED_PBX_L](ToneGenerator.md) - [TONE_CDMA_LOW_PBX_L](ToneGenerator.md) - [TONE_CDMA_HIGH_PBX_SS](ToneGenerator.md) - [TONE_CDMA_MED_PBX_SS](ToneGenerator.md) - [TONE_CDMA_LOW_PBX_SS](ToneGenerator.md) - [TONE_CDMA_HIGH_PBX_SSL](ToneGenerator.md) - [TONE_CDMA_MED_PBX_SSL](ToneGenerator.md) - [TONE_CDMA_LOW_PBX_SSL](ToneGenerator.md) - [TONE_CDMA_HIGH_PBX_SLS](ToneGenerator.md) - [TONE_CDMA_MED_PBX_SLS](ToneGenerator.md) - [TONE_CDMA_LOW_PBX_SLS](ToneGenerator.md) - [TONE_CDMA_HIGH_PBX_S_X4](ToneGenerator.md) - [TONE_CDMA_MED_PBX_S_X4](ToneGenerator.md) - [TONE_CDMA_LOW_PBX_S_X4](ToneGenerator.md) - [TONE_CDMA_ALERT_NETWORK_LITE](ToneGenerator.md) - [TONE_CDMA_ALERT_AUTOREDIAL_LITE](ToneGenerator.md) - [TONE_CDMA_ONE_MIN_BEEP](ToneGenerator.md) - [TONE_CDMA_KEYPAD_VOLUME_KEY_LITE](ToneGenerator.md) - [TONE_CDMA_PRESSHOLDKEY_LITE](ToneGenerator.md) - [TONE_CDMA_ALERT_INCALL_LITE](ToneGenerator.md) - [TONE_CDMA_EMERGENCY_RINGBACK](ToneGenerator.md) - [TONE_CDMA_ALERT_CALL_GUARD](ToneGenerator.md) - [TONE_CDMA_SOFT_ERROR_LITE](ToneGenerator.md) - [TONE_CDMA_CALLDROP_LITE](ToneGenerator.md) - [TONE_CDMA_NETWORK_BUSY_ONE_SHOT](ToneGenerator.md) - [TONE_CDMA_ABBR_ALERT](ToneGenerator.md) - [TONE_CDMA_SIGNAL_OFF](ToneGenerator.md) |
 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md)) 
+- [#ToneGenerator(int, int)](ToneGenerator.md)) 
 
 ### startTone
 
@@ -1863,8 +1863,8 @@ This method starts the playback of a tone of the specified type for the specifie
 
 | Parameters ||
 |--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `toneType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The type of tone generated @see [startTone(int)](../android/media/ToneGenerator.md)). |
-| `durationMs` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The tone duration in milliseconds. If the tone is limited in time by definition, the actual duration will be the minimum of durationMs and the defined tone duration. Setting durationMs to -1, is equivalent to calling [startTone(int)](../android/media/ToneGenerator.md)). |
+| `toneType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The type of tone generated @see [startTone(int)](ToneGenerator.md)). |
+| `durationMs` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The tone duration in milliseconds. If the tone is limited in time by definition, the actual duration will be the minimum of durationMs and the defined tone duration. Setting durationMs to -1, is equivalent to calling [startTone(int)](ToneGenerator.md)). |
 
 ### stopTone
 
@@ -1877,7 +1877,7 @@ open fun stopTone(): Unit
 This method stops the tone currently playing playback. 
 **See Also**
 
-- [#ToneGenerator(int, int)](../android/media/ToneGenerator.md))
+- [#ToneGenerator(int, int)](ToneGenerator.md))
 
 ## Protected methods
 

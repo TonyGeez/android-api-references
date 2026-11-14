@@ -3,7 +3,7 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 
 # ScriptC
 
-Kotlin | [Java](../android/renderscript/ScriptC.md)
+Kotlin | [Java](ScriptC.md)
 | --- | --- |
 
 ```
@@ -12,9 +12,9 @@ open class ScriptC : Script
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.renderscript.BaseObj](../android/renderscript/BaseObj.md) |||
-| | ↳ | [android.renderscript.Script](../android/renderscript/Script.md) ||
-| | | ↳ | [android.renderscript.ScriptC](../android/renderscript/ScriptC.md) |
+| ↳ | [android.renderscript.BaseObj](BaseObj.md) |||
+| | ↳ | [android.renderscript.Script](Script.md) ||
+| | | ↳ | [android.renderscript.ScriptC](ScriptC.md) |
 | --- | --- | --- | --- |
 
 | **This class was deprecated in API level 31.**
@@ -54,8 +54,8 @@ Only intended for use by the generated derived classes.
 
 | Parameters ||
 |---|---|
-| `rs` | [RenderScript](../android/renderscript/RenderScript.md)!: |
-| `resources` | [Resources](../android/content/res/Resources.md)!: |
+| `rs` | [RenderScript](RenderScript.md)!: |
+| `resources` | [Resources](../android.content.res/Resources.md)!: |
 | `resourceID` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): |
 | --- | --- |
 
@@ -75,7 +75,7 @@ Only intended for use by the generated derived classes.
 
 | Parameters ||
 |---|---|
-| `rs` | [RenderScript](../android/renderscript/RenderScript.md)!: |
+| `rs` | [RenderScript](RenderScript.md)!: |
 
 ### ScriptC
 
@@ -92,7 +92,7 @@ Only intended for use by the generated derived classes.
 | Parameters ||
 |---|---|
 | `id` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): |
-| `rs` | [RenderScript](../android/renderscript/RenderScript.md)!: |
+| `rs` | [RenderScript](RenderScript.md)!: |
 
 ### ScriptC
 
@@ -109,4 +109,4 @@ Only intended for use by the generated derived classes.
 | Parameters ||
 |---|---|
 | `id` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): |
-| `rs` | [RenderScript](../android/renderscript/RenderScript.md)!: |
+| `rs` | [RenderScript](RenderScript.md)!: |

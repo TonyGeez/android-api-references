@@ -20,7 +20,7 @@ Listens for changes in available display devices.
 | Public methods ||
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDisplayAdded](../android/hardware/display/DisplayManager.DisplayListener.md))`(`displayId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called whenever a logical display has been added to the system. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDisplayChanged](../android/hardware/display/DisplayManager.DisplayListener.md))`(`displayId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called whenever the properties of a logical [android.view.Display](../android/view/Display.md), such as size and density, have changed. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDisplayChanged](../android/hardware/display/DisplayManager.DisplayListener.md))`(`displayId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called whenever the properties of a logical [android.view.Display](../android.view/Display.md), such as size and density, have changed. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDisplayRemoved](../android/hardware/display/DisplayManager.DisplayListener.md))`(`displayId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called whenever a logical display has been removed from the system. |
 | --- | --- |
 
@@ -34,7 +34,7 @@ Added in [API level 17](https://developer.android.com/guide/topics/manifest/uses
 abstract fun onDisplayAdded(displayId: Int): Unit
 ```
 
-Called whenever a logical display has been added to the system. Use [DisplayManager.getDisplay](../android/hardware/display/DisplayManager.md))to get more information about the display.
+Called whenever a logical display has been added to the system. Use [DisplayManager.getDisplay](DisplayManager.md))to get more information about the display.
 
 | Parameters ||
 |-------------|--------------------------------------------------------------------------------------------------------------------------|
@@ -48,7 +48,7 @@ Added in [API level 17](https://developer.android.com/guide/topics/manifest/uses
 abstract fun onDisplayChanged(displayId: Int): Unit
 ```
 
-Called whenever the properties of a logical [android.view.Display](../android/view/Display.md), such as size and density, have changed.
+Called whenever the properties of a logical [android.view.Display](../android.view/Display.md), such as size and density, have changed.
 
 | Parameters ||
 |-------------|------------------------------------------------------------------------------------------------------------------------|

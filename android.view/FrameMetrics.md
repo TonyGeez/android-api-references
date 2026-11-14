@@ -4,7 +4,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # FrameMetrics
 
-Kotlin| [Java](../android/view/FrameMetrics.md) 
+Kotlin| [Java](FrameMetrics.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class FrameMetrics
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.FrameMetrics](../android/view/FrameMetrics.md) |
+| ↳ | [android.view.FrameMetrics](FrameMetrics.md) |
 
 Class containing timing data for various milestones in a frame lifecycle reported by the rendering subsystem.
 
@@ -23,34 +23,34 @@ Supported metrics can be queried via their corresponding identifier.
 
 | Constants ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ANIMATION_DURATION](../android/view/FrameMetrics.md) Metric identifier for animation callback duration. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [COMMAND_ISSUE_DURATION](../android/view/FrameMetrics.md) Metric identifier for command issue duration. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEADLINE](../android/view/FrameMetrics.md) Metric identifier for the total duration that was available to the app to produce a frame. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ANIMATION_DURATION](FrameMetrics.md) Metric identifier for animation callback duration. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [COMMAND_ISSUE_DURATION](FrameMetrics.md) Metric identifier for command issue duration. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEADLINE](FrameMetrics.md) Metric identifier for the total duration that was available to the app to produce a frame. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DRAW_DURATION](../android/view/FrameMetrics.md) Metric identifier for draw duration. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FIRST_DRAW_FRAME](../android/view/FrameMetrics.md) Metric identifier for a boolean value determining whether this frame was the first to draw in a new Window layout. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FRAME_TIMELINE_VSYNC_ID](../android/view/FrameMetrics.md) Metric identifier for the frame's VSync identifier. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DRAW_DURATION](FrameMetrics.md) Metric identifier for draw duration. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FIRST_DRAW_FRAME](FrameMetrics.md) Metric identifier for a boolean value determining whether this frame was the first to draw in a new Window layout. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FRAME_TIMELINE_VSYNC_ID](FrameMetrics.md) Metric identifier for the frame's VSync identifier. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GPU_DURATION](../android/view/FrameMetrics.md) Metric identifier for GPU duration. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INPUT_HANDLING_DURATION](../android/view/FrameMetrics.md) Metric identifier for input handling duration. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INTENDED_VSYNC_TIMESTAMP](../android/view/FrameMetrics.md) Metric identifier for the timestamp of the intended vsync for this frame. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GPU_DURATION](FrameMetrics.md) Metric identifier for GPU duration. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INPUT_HANDLING_DURATION](FrameMetrics.md) Metric identifier for input handling duration. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INTENDED_VSYNC_TIMESTAMP](FrameMetrics.md) Metric identifier for the timestamp of the intended vsync for this frame. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LAYOUT_MEASURE_DURATION](../android/view/FrameMetrics.md) Metric identifier for layout/measure duration. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SWAP_BUFFERS_DURATION](../android/view/FrameMetrics.md) Metric identifier for swap buffers duration. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SYNC_DURATION](../android/view/FrameMetrics.md) Metric identifier for sync duration. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LAYOUT_MEASURE_DURATION](FrameMetrics.md) Metric identifier for layout/measure duration. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SWAP_BUFFERS_DURATION](FrameMetrics.md) Metric identifier for swap buffers duration. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SYNC_DURATION](FrameMetrics.md) Metric identifier for sync duration. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TOTAL_DURATION](../android/view/FrameMetrics.md) Metric identifier for total frame duration. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNKNOWN_DELAY_DURATION](../android/view/FrameMetrics.md) Metric identifier for unknown delay. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VSYNC_TIMESTAMP](../android/view/FrameMetrics.md) Metric identifier for the timestamp of the actual vsync for this frame. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TOTAL_DURATION](FrameMetrics.md) Metric identifier for total frame duration. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNKNOWN_DELAY_DURATION](FrameMetrics.md) Metric identifier for unknown delay. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VSYNC_TIMESTAMP](FrameMetrics.md) Metric identifier for the timestamp of the actual vsync for this frame. |
 | --- | --- |
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [FrameMetrics](../android/view/FrameMetrics.md))`(`other:` ` [FrameMetrics](../android/view/FrameMetrics.md)!`)` Constructs a FrameMetrics object as a copy. |
+| [FrameMetrics](FrameMetrics.md))`(`other:` ` [FrameMetrics](FrameMetrics.md)!`)` Constructs a FrameMetrics object as a copy. |
 
 | Public methods ||
 |------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getMetric](../android/view/FrameMetrics.md))`(`id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves the value associated with Metric identifier`id`for this frame. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getMetric](FrameMetrics.md))`(`id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves the value associated with Metric identifier`id`for this frame. |
 
 ## Constants
 
@@ -120,7 +120,7 @@ static val FIRST_DRAW_FRAME: Int
 
 Metric identifier for a boolean value determining whether this frame was the first to draw in a new Window layout.
 
-[getMetric(int)](../android/view/FrameMetrics.md))will return 0 for false, 1 for true.
+[getMetric(int)](FrameMetrics.md))will return 0 for false, 1 for true.
 
 First draw frames are expected to be slow and should usually be exempt from display jank calculations as they do not cause skips in animations and are usually hidden by window animations or other tricks. 
 
@@ -178,7 +178,7 @@ static val INTENDED_VSYNC_TIMESTAMP: Int
 
 Metric identifier for the timestamp of the intended vsync for this frame.
 
-The intended start point for the frame. If this value is different from [VSYNC_TIMESTAMP](../android/view/FrameMetrics.md), there was work occurring on the UI thread that prevented it from responding to the vsync signal in a timely fashion. 
+The intended start point for the frame. If this value is different from [VSYNC_TIMESTAMP](FrameMetrics.md), there was work occurring on the UI thread that prevented it from responding to the vsync signal in a timely fashion. 
 
  Value: 10
 
@@ -264,7 +264,7 @@ static val VSYNC_TIMESTAMP: Int
 
 Metric identifier for the timestamp of the actual vsync for this frame.
 
-The time value that was used in all the vsync listeners and drawing for the frame (Choreographer frame callbacks, animations, [View.getDrawingTime()](../android/view/View.md)), etc.) 
+The time value that was used in all the vsync listeners and drawing for the frame (Choreographer frame callbacks, animations, [View.getDrawingTime()](View.md)), etc.) 
 
  Value: 11
 
@@ -284,7 +284,7 @@ Use this method to copy out metrics reported by [Window.OnFrameMetricsAvailableL
 
 | Parameters ||
 |---------|-----------------------------------------------------------------------------------------------------------------------------|
-| `other` | [FrameMetrics](../android/view/FrameMetrics.md)!:the FrameMetrics object to copy. |
+| `other` | [FrameMetrics](FrameMetrics.md)!:the FrameMetrics object to copy. |
 
 ## Public methods
 
@@ -302,7 +302,7 @@ Boolean metrics are represented in \[0,1\], with 0 corresponding to false, and 1
 
 | Parameters ||
 |------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `id` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the metric to retrieve Value is [android.view.FrameMetrics#UNKNOWN_DELAY_DURATION](../android/view/FrameMetrics.md), [android.view.FrameMetrics#INPUT_HANDLING_DURATION](../android/view/FrameMetrics.md), [android.view.FrameMetrics#ANIMATION_DURATION](../android/view/FrameMetrics.md), [android.view.FrameMetrics#LAYOUT_MEASURE_DURATION](../android/view/FrameMetrics.md), [android.view.FrameMetrics#DRAW_DURATION](../android/view/FrameMetrics.md), [android.view.FrameMetrics#SYNC_DURATION](../android/view/FrameMetrics.md), [android.view.FrameMetrics#COMMAND_ISSUE_DURATION](../android/view/FrameMetrics.md), [android.view.FrameMetrics#SWAP_BUFFERS_DURATION](../android/view/FrameMetrics.md), [android.view.FrameMetrics#TOTAL_DURATION](../android/view/FrameMetrics.md), [android.view.FrameMetrics#FIRST_DRAW_FRAME](../android/view/FrameMetrics.md), [android.view.FrameMetrics#INTENDED_VSYNC_TIMESTAMP](../android/view/FrameMetrics.md), [android.view.FrameMetrics#VSYNC_TIMESTAMP](../android/view/FrameMetrics.md), [android.view.FrameMetrics#GPU_DURATION](../android/view/FrameMetrics.md), or [android.view.FrameMetrics#DEADLINE](../android/view/FrameMetrics.md) |
+| `id` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the metric to retrieve Value is [android.view.FrameMetrics#UNKNOWN_DELAY_DURATION](FrameMetrics.md), [android.view.FrameMetrics#INPUT_HANDLING_DURATION](FrameMetrics.md), [android.view.FrameMetrics#ANIMATION_DURATION](FrameMetrics.md), [android.view.FrameMetrics#LAYOUT_MEASURE_DURATION](FrameMetrics.md), [android.view.FrameMetrics#DRAW_DURATION](FrameMetrics.md), [android.view.FrameMetrics#SYNC_DURATION](FrameMetrics.md), [android.view.FrameMetrics#COMMAND_ISSUE_DURATION](FrameMetrics.md), [android.view.FrameMetrics#SWAP_BUFFERS_DURATION](FrameMetrics.md), [android.view.FrameMetrics#TOTAL_DURATION](FrameMetrics.md), [android.view.FrameMetrics#FIRST_DRAW_FRAME](FrameMetrics.md), [android.view.FrameMetrics#INTENDED_VSYNC_TIMESTAMP](FrameMetrics.md), [android.view.FrameMetrics#VSYNC_TIMESTAMP](FrameMetrics.md), [android.view.FrameMetrics#GPU_DURATION](FrameMetrics.md), or [android.view.FrameMetrics#DEADLINE](FrameMetrics.md) |
 
 | Return ||
 |------------------------------------------------------------------------------|-------------------------------------------------------|

@@ -9,9 +9,9 @@ class BasalBodyTemperatureRecord : InstantRecord
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.health.connect.datatypes.Record](../android/health/connect/datatypes/Record.md) |||
-| | ↳ | [android.health.connect.datatypes.InstantRecord](../android/health/connect/datatypes/InstantRecord.md) ||
-| | | ↳ | [android.health.connect.datatypes.BasalBodyTemperatureRecord](../android/health/connect/datatypes/BasalBodyTemperatureRecord.md) |
+| ↳ | [android.health.connect.datatypes.Record](Record.md) |||
+| | ↳ | [android.health.connect.datatypes.InstantRecord](InstantRecord.md) ||
+| | | ↳ | [android.health.connect.datatypes.BasalBodyTemperatureRecord](BasalBodyTemperatureRecord.md) |
 | --- | --- | --- | --- |
 
 Captures the body temperature of a user when at rest (for example, immediately after waking up). Can be used for checking the fertility window. Each data point represents a single instantaneous body temperature measurement.
@@ -30,7 +30,7 @@ Captures the body temperature of a user when at rest (for example, immediately a
 |---|---|
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BasalBodyTemperatureRecord#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BasalBodyTemperatureRecord#getMeasurementLocation()()` <br /> |
-| [Temperature](../android/health/connect/datatypes/units/Temperature.md) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BasalBodyTemperatureRecord#getTemperature()()` <br /> |
+| [Temperature](../android.health.connect.datatypes.units/Temperature.md) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BasalBodyTemperatureRecord#getTemperature()()` <br /> |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BasalBodyTemperatureRecord#hashCode()()` Returns a hash code value for the object. |
 

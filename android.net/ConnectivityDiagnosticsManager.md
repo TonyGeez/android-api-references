@@ -4,7 +4,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 
 # ConnectivityDiagnosticsManager
 
-Kotlin| [Java](../android/net/ConnectivityDiagnosticsManager.md) 
+Kotlin| [Java](ConnectivityDiagnosticsManager.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class ConnectivityDiagnosticsManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.ConnectivityDiagnosticsManager](../android/net/ConnectivityDiagnosticsManager.md) |
+| ↳ | [android.net.ConnectivityDiagnosticsManager](ConnectivityDiagnosticsManager.md) |
 
 Class that provides utilities for collecting network connectivity diagnostics information. Connectivity information is made available through triggerable diagnostics tools and by listening to System validations. Some diagnostics information may be permissions-restricted.
 
@@ -38,8 +38,8 @@ The primary responsibilities of this class are to:
 
 | Public methods ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerConnectivityDiagnosticsCallback](../android/net/ConnectivityDiagnosticsManager.md))`(`request:` ` [NetworkRequest](../android/net/NetworkRequest.md)`, `e:` ` [Executor](../java/util/concurrent/Executor.md)`, `callback:` ` [ConnectivityDiagnosticsManager.ConnectivityDiagnosticsCallback](../android/net/ConnectivityDiagnosticsManager.ConnectivityDiagnosticsCallback.md)`)` Registers a ConnectivityDiagnosticsCallback with the System. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterConnectivityDiagnosticsCallback](../android/net/ConnectivityDiagnosticsManager.md))`(`callback:` ` [ConnectivityDiagnosticsManager.ConnectivityDiagnosticsCallback](../android/net/ConnectivityDiagnosticsManager.ConnectivityDiagnosticsCallback.md)`)` Unregisters a ConnectivityDiagnosticsCallback with the System. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerConnectivityDiagnosticsCallback](ConnectivityDiagnosticsManager.md))`(`request:` ` [NetworkRequest](NetworkRequest.md)`, `e:` ` [Executor](../java.util.concurrent/Executor.md)`, `callback:` ` [ConnectivityDiagnosticsManager.ConnectivityDiagnosticsCallback](../android/net/ConnectivityDiagnosticsManager.ConnectivityDiagnosticsCallback.md)`)` Registers a ConnectivityDiagnosticsCallback with the System. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterConnectivityDiagnosticsCallback](ConnectivityDiagnosticsManager.md))`(`callback:` ` [ConnectivityDiagnosticsManager.ConnectivityDiagnosticsCallback](../android/net/ConnectivityDiagnosticsManager.ConnectivityDiagnosticsCallback.md)`)` Unregisters a ConnectivityDiagnosticsCallback with the System. |
 
 ## Public methods
 
@@ -69,12 +69,12 @@ If a registering app loses its relevant permissions, any callbacks it registered
 
 Each register() call**MUST**use a ConnectivityDiagnosticsCallback instance that is not currently registered. If a ConnectivityDiagnosticsCallback instance is registered with multiple NetworkRequests, an IllegalArgumentException will be thrown.
 
-To avoid performance issues due to apps leaking callbacks, the system will limit the number of outstanding requests to 100 per app (identified by their UID), shared with callbacks in [ConnectivityManager](../android/net/ConnectivityManager.md). Registering a callback with this method will count toward this limit. If this limit is exceeded, an exception will be thrown. To avoid hitting this issue and to conserve resources, make sure to unregister the callbacks with [unregisterConnectivityDiagnosticsCallback](../android/net/ConnectivityDiagnosticsManager.md)).
+To avoid performance issues due to apps leaking callbacks, the system will limit the number of outstanding requests to 100 per app (identified by their UID), shared with callbacks in [ConnectivityManager](ConnectivityManager.md). Registering a callback with this method will count toward this limit. If this limit is exceeded, an exception will be thrown. To avoid hitting this issue and to conserve resources, make sure to unregister the callbacks with [unregisterConnectivityDiagnosticsCallback](ConnectivityDiagnosticsManager.md)).
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `request` | [NetworkRequest](../android/net/NetworkRequest.md):The NetworkRequest that will be used to match with Networks for which callbacks will be fired This value cannot be`null`. |
-| `e` | [Executor](../java/util/concurrent/Executor.md):The Executor to be used for running the callback method invocations This value cannot be`null`. |
+| `request` | [NetworkRequest](NetworkRequest.md):The NetworkRequest that will be used to match with Networks for which callbacks will be fired This value cannot be`null`. |
+| `e` | [Executor](../java.util.concurrent/Executor.md):The Executor to be used for running the callback method invocations This value cannot be`null`. |
 | `callback` | [ConnectivityDiagnosticsManager.ConnectivityDiagnosticsCallback](../android/net/ConnectivityDiagnosticsManager.ConnectivityDiagnosticsCallback.md):The ConnectivityDiagnosticsCallback that the caller wants registered with the System This value cannot be`null`. |
 | --- | --- |
 

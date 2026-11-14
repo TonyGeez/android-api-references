@@ -27,7 +27,7 @@ protected interface RawContactsColumns
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [AGGREGATION_MODE](../android/provider/ContactsContract.RawContactsColumns.md) The aggregation mode for this contact. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [BACKUP_ID](../android/provider/ContactsContract.RawContactsColumns.md) Persistent unique id for each raw_contact within its account. |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CONTACT_ID](../android/provider/ContactsContract.RawContactsColumns.md) A reference to the [ContactsContract.Contacts._ID](../android/provider/BaseColumns.md) that this data belongs to. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [CONTACT_ID](../android/provider/ContactsContract.RawContactsColumns.md) A reference to the [ContactsContract.Contacts._ID](BaseColumns.md) that this data belongs to. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DATA_SET](../android/provider/ContactsContract.RawContactsColumns.md) The data set within the account that this row belongs to. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [DELETED](../android/provider/ContactsContract.RawContactsColumns.md) The "deleted" flag: "0" by default, "1" if the row has been marked for deletion. |
 | --- | --- |
@@ -86,7 +86,7 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 static val CONTACT_ID: String
 ```
 
-A reference to the [ContactsContract.Contacts._ID](../android/provider/BaseColumns.md) that this data belongs to.
+A reference to the [ContactsContract.Contacts._ID](BaseColumns.md) that this data belongs to.
 
 Type: INTEGER 
 
@@ -114,7 +114,7 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 static val DELETED: String
 ```
 
-The "deleted" flag: "0" by default, "1" if the row has been marked for deletion. When android.content.ContentResolver#delete is called on a raw contact, it is marked for deletion and removed from its aggregate contact. The sync adaptor deletes the raw contact on the server and then calls ContactResolver.delete once more, this time passing the [ContactsContract.CALLER_IS_SYNCADAPTER](../android/provider/ContactsContract.md) query parameter to finalize the data removal.
+The "deleted" flag: "0" by default, "1" if the row has been marked for deletion. When android.content.ContentResolver#delete is called on a raw contact, it is marked for deletion and removed from its aggregate contact. The sync adaptor deletes the raw contact on the server and then calls ContactResolver.delete once more, this time passing the [ContactsContract.CALLER_IS_SYNCADAPTER](ContactsContract.md) query parameter to finalize the data removal.
 
 Type: INTEGER 
 
@@ -145,7 +145,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 static val RAW_CONTACT_IS_READ_ONLY: String
 ```
 
-The "read-only" flag: "0" by default, "1" if the row cannot be modified or deleted except by a sync adapter. See [ContactsContract.CALLER_IS_SYNCADAPTER](../android/provider/ContactsContract.md).
+The "read-only" flag: "0" by default, "1" if the row cannot be modified or deleted except by a sync adapter. See [ContactsContract.CALLER_IS_SYNCADAPTER](ContactsContract.md).
 
 Type: INTEGER 
 

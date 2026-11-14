@@ -5,7 +5,7 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 
 # Double3
 
-Kotlin| [Java](../android/renderscript/Double3.md) 
+Kotlin| [Java](Double3.md) 
 | --- | --- |
 
 ```
@@ -14,7 +14,7 @@ open class Double3
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.renderscript.Double3](../android/renderscript/Double3.md) |
+| ↳ | [android.renderscript.Double3](Double3.md) |
 
 | **This class was deprecated in API level 31.**
 |
@@ -26,14 +26,14 @@ Vector version of the basic double type. Provides three double fields packed.
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Double3](../android/renderscript/Double3.md))`()` <br /> |
-| [Double3](../android/renderscript/Double3.md))`(`x:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `y:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `z:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` <br /> |
+| [Double3](Double3.md))`()` <br /> |
+| [Double3](Double3.md))`(`x:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `y:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `z:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` <br /> |
 
 | Properties ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [x](../android/renderscript/Double3.md) <br /> |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [y](../android/renderscript/Double3.md) <br /> |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [z](../android/renderscript/Double3.md) <br /> |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [x](Double3.md) <br /> |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [y](Double3.md) <br /> |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [z](Double3.md) <br /> |
 | --- | --- |
 
 ## Public constructors

@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # Surface
 
-Kotlin| [Java](../android/view/Surface.md) 
+Kotlin| [Java](Surface.md) 
 | --- | --- |
 
 ```
@@ -13,71 +13,71 @@ open class Surface : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.Surface](../android/view/Surface.md) |
+| ↳ | [android.view.Surface](Surface.md) |
 
 Handle onto a raw buffer that is being managed by the screen compositor.
 
-A Surface is generally created by or from a consumer of image buffers (such as a [android.graphics.SurfaceTexture](../android/graphics/SurfaceTexture.md), [android.media.MediaRecorder](../android/media/MediaRecorder.md), or [android.renderscript.Allocation](../android/renderscript/Allocation.md)), and is handed to some kind of producer (such as [OpenGL](../android/opengl/EGL14.md)), [MediaPlayer](../android/media/MediaPlayer.md)), or android.hardware.camera2.CameraDevice#createCaptureSession) to draw into.
+A Surface is generally created by or from a consumer of image buffers (such as a [android.graphics.SurfaceTexture](../android.graphics/SurfaceTexture.md), [android.media.MediaRecorder](../android.media/MediaRecorder.md), or [android.renderscript.Allocation](../android.renderscript/Allocation.md)), and is handed to some kind of producer (such as [OpenGL](../android.opengl/EGL14.md)), [MediaPlayer](../android.media/MediaPlayer.md)), or android.hardware.camera2.CameraDevice#createCaptureSession) to draw into.
 
-**Note:** A Surface acts like a [weak reference](../java/lang/ref/WeakReference.md) to the consumer it is associated with. By itself it will not keep its parent consumer from being reclaimed.
+**Note:** A Surface acts like a [weak reference](../java.lang.ref/WeakReference.md) to the consumer it is associated with. By itself it will not keep its parent consumer from being reclaimed.
 
 ## Summary
 
 | Nested classes ||
 |------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open | [OutOfResourcesException](../android/view/Surface.OutOfResourcesException.md) Exception thrown when a Canvas couldn't be locked with [Surface.lockCanvas](../android/view/Surface.md)), or when a SurfaceTexture could not successfully be allocated. |
+| open | [OutOfResourcesException](../android/view/Surface.OutOfResourcesException.md) Exception thrown when a Canvas couldn't be locked with [Surface.lockCanvas](Surface.md)), or when a SurfaceTexture could not successfully be allocated. |
 
 | Constants ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CHANGE_FRAME_RATE_ALWAYS](../android/view/Surface.md) Change the frame rate even if the transition is going to be non-seamless, i. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CHANGE_FRAME_RATE_ONLY_IF_SEAMLESS](../android/view/Surface.md) Change the frame rate only if the transition is going to be seamless. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FRAME_RATE_COMPATIBILITY_AT_LEAST](../android/view/Surface.md) The surface requests a frame rate that is at least the specified frame rate. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CHANGE_FRAME_RATE_ALWAYS](Surface.md) Change the frame rate even if the transition is going to be non-seamless, i. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CHANGE_FRAME_RATE_ONLY_IF_SEAMLESS](Surface.md) Change the frame rate only if the transition is going to be seamless. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FRAME_RATE_COMPATIBILITY_AT_LEAST](Surface.md) The surface requests a frame rate that is at least the specified frame rate. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FRAME_RATE_COMPATIBILITY_DEFAULT](../android/view/Surface.md) There are no inherent restrictions on the frame rate of this surface. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FRAME_RATE_COMPATIBILITY_FIXED_SOURCE](../android/view/Surface.md) This surface is being used to display content with an inherently fixed frame rate, e. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROTATION_0](../android/view/Surface.md) Rotation constant: 0 degree rotation (natural orientation) |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FRAME_RATE_COMPATIBILITY_DEFAULT](Surface.md) There are no inherent restrictions on the frame rate of this surface. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FRAME_RATE_COMPATIBILITY_FIXED_SOURCE](Surface.md) This surface is being used to display content with an inherently fixed frame rate, e. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROTATION_0](Surface.md) Rotation constant: 0 degree rotation (natural orientation) |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROTATION_180](../android/view/Surface.md) Rotation constant: 180 degree rotation. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROTATION_270](../android/view/Surface.md) Rotation constant: 270 degree rotation. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROTATION_90](../android/view/Surface.md) Rotation constant: 90 degree rotation. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROTATION_180](Surface.md) Rotation constant: 180 degree rotation. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROTATION_270](Surface.md) Rotation constant: 270 degree rotation. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROTATION_90](Surface.md) Rotation constant: 90 degree rotation. |
 | --- | --- |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android.os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android.os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android.os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Surface](../android/view/Surface.md))`(`surfaceTexture:` ` [SurfaceTexture](../android/graphics/SurfaceTexture.md)!`)` Create Surface from a [SurfaceTexture](../android/graphics/SurfaceTexture.md). |
-| [Surface](../android/view/Surface.md))`(`from:` ` [SurfaceControl](../android/view/SurfaceControl.md)`)` Create a Surface associated with a given [SurfaceControl](../android/view/SurfaceControl.md). |
+| [Surface](Surface.md))`(`surfaceTexture:` ` [SurfaceTexture](../android.graphics/SurfaceTexture.md)!`)` Create Surface from a [SurfaceTexture](../android.graphics/SurfaceTexture.md). |
+| [Surface](Surface.md))`(`from:` ` [SurfaceControl](SurfaceControl.md)`)` Create a Surface associated with a given [SurfaceControl](SurfaceControl.md). |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearFrameRate](../android/view/Surface.md))`()` Clears the frame rate which was set for this surface. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/view/Surface.md))`()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isValid](../android/view/Surface.md))`()` Returns true if this object holds a valid surface. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearFrameRate](Surface.md))`()` Clears the frame rate which was set for this surface. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](Surface.md))`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isValid](Surface.md))`()` Returns true if this object holds a valid surface. |
 | --- | --- |
-| open [Canvas](../android/graphics/Canvas.md)! | [lockCanvas](../android/view/Surface.md))`(`inOutDirty:` ` [Rect](../android/graphics/Rect.md)!`)` Gets a [Canvas](../android/graphics/Canvas.md) for drawing into this surface. |
-| open [Canvas](../android/graphics/Canvas.md)! | [lockHardwareCanvas](../android/view/Surface.md))`()` Gets a [Canvas](../android/graphics/Canvas.md) for drawing into this surface. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [readFromParcel](../android/view/Surface.md))`(`source:` ` [Parcel](../android/os/Parcel.md)!`)` <br /> |
+| open [Canvas](../android.graphics/Canvas.md)! | [lockCanvas](Surface.md))`(`inOutDirty:` ` [Rect](../android.graphics/Rect.md)!`)` Gets a [Canvas](../android.graphics/Canvas.md) for drawing into this surface. |
+| open [Canvas](../android.graphics/Canvas.md)! | [lockHardwareCanvas](Surface.md))`()` Gets a [Canvas](../android.graphics/Canvas.md) for drawing into this surface. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [readFromParcel](Surface.md))`(`source:` ` [Parcel](../android.os/Parcel.md)!`)` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [release](../android/view/Surface.md))`()` Release the local reference to the server-side surface. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFrameRate](../android/view/Surface.md))`(`frameRate:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `compatibility:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the intended frame rate for this surface. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFrameRate](../android/view/Surface.md))`(`frameRate:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `compatibility:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `changeFrameRateStrategy:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the intended frame rate for this surface. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [release](Surface.md))`()` Release the local reference to the server-side surface. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFrameRate](Surface.md))`(`frameRate:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `compatibility:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the intended frame rate for this surface. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFrameRate](Surface.md))`(`frameRate:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `compatibility:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `changeFrameRateStrategy:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the intended frame rate for this surface. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/view/Surface.md))`()` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unlockCanvas](../android/view/Surface.md))`(`canvas:` ` [Canvas](../android/graphics/Canvas.md)!`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unlockCanvasAndPost](../android/view/Surface.md))`(`canvas:` ` [Canvas](../android/graphics/Canvas.md)!`)` Posts the new contents of the [Canvas](../android/graphics/Canvas.md) to the surface and releases the [Canvas](../android/graphics/Canvas.md). |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](Surface.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unlockCanvas](Surface.md))`(`canvas:` ` [Canvas](../android.graphics/Canvas.md)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unlockCanvasAndPost](Surface.md))`(`canvas:` ` [Canvas](../android.graphics/Canvas.md)!`)` Posts the new contents of the [Canvas](../android.graphics/Canvas.md) to the surface and releases the [Canvas](../android.graphics/Canvas.md). |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/view/Surface.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](Surface.md))`(`dest:` ` [Parcel](../android.os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Protected methods ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](../android/view/Surface.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](Surface.md))`()` <br /> |
 
 | Properties ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [Surface](../android/view/Surface.md)!\> | [CREATOR](../android/view/Surface.md) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [Surface](Surface.md)!\> | [CREATOR](Surface.md) <br /> |
 
 ## Constants
 
@@ -199,11 +199,11 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 Surface(surfaceTexture: SurfaceTexture!)
 ```
 
-Create Surface from a [SurfaceTexture](../android/graphics/SurfaceTexture.md). Images drawn to the Surface will be made available to the [SurfaceTexture](../android/graphics/SurfaceTexture.md), which can attach them to an OpenGL ES texture via [android.graphics.SurfaceTexture#updateTexImage](../android/graphics/SurfaceTexture.md)). Please note that holding onto the Surface created here is not enough to keep the provided SurfaceTexture from being reclaimed. In that sense, the Surface will act like a [weak reference](../java/lang/ref/WeakReference.md) to the SurfaceTexture.
+Create Surface from a [SurfaceTexture](../android.graphics/SurfaceTexture.md). Images drawn to the Surface will be made available to the [SurfaceTexture](../android.graphics/SurfaceTexture.md), which can attach them to an OpenGL ES texture via [android.graphics.SurfaceTexture#updateTexImage](../android.graphics/SurfaceTexture.md)). Please note that holding onto the Surface created here is not enough to keep the provided SurfaceTexture from being reclaimed. In that sense, the Surface will act like a [weak reference](../java.lang.ref/WeakReference.md) to the SurfaceTexture.
 
 | Parameters ||
 |------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `surfaceTexture` | [SurfaceTexture](../android/graphics/SurfaceTexture.md)!:The [SurfaceTexture](../android/graphics/SurfaceTexture.md) that is updated by this Surface. |
+| `surfaceTexture` | [SurfaceTexture](../android.graphics/SurfaceTexture.md)!:The [SurfaceTexture](../android.graphics/SurfaceTexture.md) that is updated by this Surface. |
 
 | Exceptions ||
 |------------------------------------------------|--------------------------------------|
@@ -217,11 +217,11 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 Surface(from: SurfaceControl)
 ```
 
-Create a Surface associated with a given [SurfaceControl](../android/view/SurfaceControl.md). Buffers submitted to this surface will be displayed by the system compositor according to the parameters specified by the control. Multiple surfaces may be constructed from one SurfaceControl, but only one can be connected (e.g. have an active EGL context) at a time.
+Create a Surface associated with a given [SurfaceControl](SurfaceControl.md). Buffers submitted to this surface will be displayed by the system compositor according to the parameters specified by the control. Multiple surfaces may be constructed from one SurfaceControl, but only one can be connected (e.g. have an active EGL context) at a time.
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `from` | [SurfaceControl](../android/view/SurfaceControl.md):The SurfaceControl to associate this Surface with This value cannot be`null`. |
+| `from` | [SurfaceControl](SurfaceControl.md):The SurfaceControl to associate this Surface with This value cannot be`null`. |
 
 ## Public methods
 
@@ -235,12 +235,12 @@ open fun clearFrameRate(): Unit
 
 Clears the frame rate which was set for this surface.
 
-This is equivalent to calling [setFrameRate(float,int,int)](../android/view/Surface.md))using`0`for`frameRate`.
+This is equivalent to calling [setFrameRate(float,int,int)](Surface.md))using`0`for`frameRate`.
 
 Note that this only has an effect for surfaces presented on the display. If this surface is consumed by something other than the system compositor, e.g. a media codec, this call has no effect. 
 **See Also**
 
-- [#setFrameRate(float, int, int)](../android/view/Surface.md)) 
+- [#setFrameRate(float, int, int)](Surface.md)) 
 
 ### describeContents
 
@@ -252,7 +252,7 @@ open fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) |
 
 ### isValid
 
@@ -276,15 +276,15 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun lockCanvas(inOutDirty: Rect!): Canvas!
 ```
 
-Gets a [Canvas](../android/graphics/Canvas.md) for drawing into this surface. After drawing into the provided [Canvas](../android/graphics/Canvas.md), the caller must invoke [unlockCanvasAndPost](../android/view/Surface.md))to post the new contents to the surface.
+Gets a [Canvas](../android.graphics/Canvas.md) for drawing into this surface. After drawing into the provided [Canvas](../android.graphics/Canvas.md), the caller must invoke [unlockCanvasAndPost](Surface.md))to post the new contents to the surface.
 
 | Parameters ||
 |--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `inOutDirty` | [Rect](../android/graphics/Rect.md)!:A rectangle that represents the dirty region that the caller wants to redraw. This function may choose to expand the dirty rectangle if for example the surface has been resized or if the previous contents of the surface were not available. The caller must redraw the entire dirty region as represented by the contents of the inOutDirty rectangle upon return from this function. The caller may also pass`null`instead, in the case where the entire surface should be redrawn. |
+| `inOutDirty` | [Rect](../android.graphics/Rect.md)!:A rectangle that represents the dirty region that the caller wants to redraw. This function may choose to expand the dirty rectangle if for example the surface has been resized or if the previous contents of the surface were not available. The caller must redraw the entire dirty region as represented by the contents of the inOutDirty rectangle upon return from this function. The caller may also pass`null`instead, in the case where the entire surface should be redrawn. |
 
 | Return ||
 |-----------------------------------------------------------------------------------------|----------------------------------------|
-| [Canvas](../android/graphics/Canvas.md)! | A canvas for drawing into the surface. |
+| [Canvas](../android.graphics/Canvas.md)! | A canvas for drawing into the surface. |
 
 | Exceptions ||
 |------------------------------------------------|-------------------------------------------|
@@ -299,11 +299,11 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 open fun lockHardwareCanvas(): Canvas!
 ```
 
-Gets a [Canvas](../android/graphics/Canvas.md) for drawing into this surface. After drawing into the provided [Canvas](../android/graphics/Canvas.md), the caller must invoke [unlockCanvasAndPost](../android/view/Surface.md))to post the new contents to the surface. Unlike [lockCanvas(android.graphics.Rect)](../android/view/Surface.md))this will return a hardware-accelerated canvas. See the [unsupported drawing operations](https://developer.android.com/guide/topics/graphics/hardware-accel.html#unsupported) for a list of what is and isn't supported in a hardware-accelerated canvas. It is also required to fully cover the surface every time [lockHardwareCanvas()](../android/view/Surface.md))is called as the buffer is not preserved between frames. Partial updates are not supported.
+Gets a [Canvas](../android.graphics/Canvas.md) for drawing into this surface. After drawing into the provided [Canvas](../android.graphics/Canvas.md), the caller must invoke [unlockCanvasAndPost](Surface.md))to post the new contents to the surface. Unlike [lockCanvas(android.graphics.Rect)](Surface.md))this will return a hardware-accelerated canvas. See the [unsupported drawing operations](https://developer.android.com/guide/topics/graphics/hardware-accel.html#unsupported) for a list of what is and isn't supported in a hardware-accelerated canvas. It is also required to fully cover the surface every time [lockHardwareCanvas()](Surface.md))is called as the buffer is not preserved between frames. Partial updates are not supported.
 
 | Return ||
 |-----------------------------------------------------------------------------------------|----------------------------------------|
-| [Canvas](../android/graphics/Canvas.md)! | A canvas for drawing into the surface. |
+| [Canvas](../android.graphics/Canvas.md)! | A canvas for drawing into the surface. |
 
 | Exceptions ||
 |-----------------------------------|---------------------------------|
@@ -343,11 +343,11 @@ Sets the intended frame rate for this surface. Any switching of refresh rates is
 | Parameters ||
 |-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `frameRate` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):Value is 0.0f or greater |
-| `compatibility` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is [android.view.Surface#FRAME_RATE_COMPATIBILITY_DEFAULT](../android/view/Surface.md), [android.view.Surface#FRAME_RATE_COMPATIBILITY_FIXED_SOURCE](../android/view/Surface.md), [android.view.Surface#FRAME_RATE_COMPATIBILITY_AT_LEAST](../android/view/Surface.md), android.view.Surface.FRAME_RATE_COMPATIBILITY_EXACT, or android.view.Surface.FRAME_RATE_COMPATIBILITY_MIN |
+| `compatibility` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is [android.view.Surface#FRAME_RATE_COMPATIBILITY_DEFAULT](Surface.md), [android.view.Surface#FRAME_RATE_COMPATIBILITY_FIXED_SOURCE](Surface.md), [android.view.Surface#FRAME_RATE_COMPATIBILITY_AT_LEAST](Surface.md), android.view.Surface.FRAME_RATE_COMPATIBILITY_EXACT, or android.view.Surface.FRAME_RATE_COMPATIBILITY_MIN |
 
 **See Also**
 
-- [#setFrameRate(float, int, int)](../android/view/Surface.md)) 
+- [#setFrameRate(float, int, int)](Surface.md)) 
 
 ### setFrameRate
 
@@ -370,8 +370,8 @@ Note that this only has an effect for surfaces presented on the display. If this
 | Parameters ||
 |---------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `frameRate` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):The intended frame rate of this surface, in frames per second. 0 is a special value that indicates the app will accept the system's choice for the display frame rate, which is the default behavior if this function isn't called. The`frameRate`parameter does*not*need to be a valid refresh rate for this device's display - e.g., it's fine to pass 30fps to a device that can only run the display at 60fps. Value is 0.0f or greater |
-| `compatibility` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The frame rate compatibility of this surface. The compatibility value may influence the system's choice of display frame rate. This parameter is ignored when`frameRate`is 0. Value is [android.view.Surface#FRAME_RATE_COMPATIBILITY_DEFAULT](../android/view/Surface.md), [android.view.Surface#FRAME_RATE_COMPATIBILITY_FIXED_SOURCE](../android/view/Surface.md), [android.view.Surface#FRAME_RATE_COMPATIBILITY_AT_LEAST](../android/view/Surface.md), android.view.Surface.FRAME_RATE_COMPATIBILITY_EXACT, or android.view.Surface.FRAME_RATE_COMPATIBILITY_MIN |
-| `changeFrameRateStrategy` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Whether display refresh rate transitions caused by this surface should be seamless. A seamless transition is one that doesn't have any visual interruptions, such as a black screen for a second or two. This parameter is ignored when`frameRate`is 0. Value is [android.view.Surface#CHANGE_FRAME_RATE_ONLY_IF_SEAMLESS](../android/view/Surface.md), or [android.view.Surface#CHANGE_FRAME_RATE_ALWAYS](../android/view/Surface.md) |
+| `compatibility` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The frame rate compatibility of this surface. The compatibility value may influence the system's choice of display frame rate. This parameter is ignored when`frameRate`is 0. Value is [android.view.Surface#FRAME_RATE_COMPATIBILITY_DEFAULT](Surface.md), [android.view.Surface#FRAME_RATE_COMPATIBILITY_FIXED_SOURCE](Surface.md), [android.view.Surface#FRAME_RATE_COMPATIBILITY_AT_LEAST](Surface.md), android.view.Surface.FRAME_RATE_COMPATIBILITY_EXACT, or android.view.Surface.FRAME_RATE_COMPATIBILITY_MIN |
+| `changeFrameRateStrategy` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Whether display refresh rate transitions caused by this surface should be seamless. A seamless transition is one that doesn't have any visual interruptions, such as a black screen for a second or two. This parameter is ignored when`frameRate`is 0. Value is [android.view.Surface#CHANGE_FRAME_RATE_ONLY_IF_SEAMLESS](Surface.md), or [android.view.Surface#CHANGE_FRAME_RATE_ALWAYS](Surface.md) |
 | --- | --- |
 
 | Exceptions ||
@@ -413,11 +413,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun unlockCanvasAndPost(canvas: Canvas!): Unit
 ```
 
-Posts the new contents of the [Canvas](../android/graphics/Canvas.md) to the surface and releases the [Canvas](../android/graphics/Canvas.md).
+Posts the new contents of the [Canvas](../android.graphics/Canvas.md) to the surface and releases the [Canvas](../android.graphics/Canvas.md).
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `canvas` | [Canvas](../android/graphics/Canvas.md)!:The canvas previously obtained from [lockCanvas](../android/view/Surface.md)). |
+| `canvas` | [Canvas](../android.graphics/Canvas.md)!:The canvas previously obtained from [lockCanvas](Surface.md)). |
 
 ### writeToParcel
 
@@ -432,8 +432,8 @@ open fun writeToParcel(
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](../android/os/Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android.os/Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Protected methods
 

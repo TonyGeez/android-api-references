@@ -4,16 +4,16 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 
 # Sanitizer
 
-Kotlin| [Java](../android/service/autofill/Sanitizer.md) 
+Kotlin| [Java](Sanitizer.md) 
 | --- | --- |
 
 ```
 interface Sanitizer
 ```
 
-| [android.service.autofill.Sanitizer](../android/service/autofill/Sanitizer.md) |
+| [android.service.autofill.Sanitizer](Sanitizer.md) |
 
-| Known Direct Subclasses [DateValueSanitizer](../android/service/autofill/DateValueSanitizer.md), [TextValueSanitizer](../android/service/autofill/TextValueSanitizer.md) |------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [DateValueSanitizer](../android/service/autofill/DateValueSanitizer.md) | Sanitizes a date [AutofillValue](../android/view/autofill/AutofillValue.md) using a [DateFormat](../android/icu/text/DateFormat.md). | | [TextValueSanitizer](../android/service/autofill/TextValueSanitizer.md) | Sanitizes a text [AutofillValue](../android/view/autofill/AutofillValue.md) using a regular expression (regex) substitution. | |
+| Known Direct Subclasses [DateValueSanitizer](DateValueSanitizer.md), [TextValueSanitizer](TextValueSanitizer.md) |------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [DateValueSanitizer](DateValueSanitizer.md) | Sanitizes a date [AutofillValue](../android.view.autofill/AutofillValue.md) using a [DateFormat](../android.icu.text/DateFormat.md). | | [TextValueSanitizer](TextValueSanitizer.md) | Sanitizes a text [AutofillValue](../android.view.autofill/AutofillValue.md) using a regular expression (regex) substitution. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Helper class used to sanitize user input before using it in a save request.

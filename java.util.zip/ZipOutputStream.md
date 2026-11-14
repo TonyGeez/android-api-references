@@ -10,13 +10,13 @@ open class ZipOutputStream : DeflaterOutputStream
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [java.io.OutputStream](../java/io/OutputStream.md) ||||
-| | ↳ | [java.io.FilterOutputStream](../java/io/FilterOutputStream.md) |||
-| | | ↳ | [java.util.zip.DeflaterOutputStream](../java/util/zip/DeflaterOutputStream.md) ||
+| ↳ | [java.io.OutputStream](../java.io/OutputStream.md) ||||
+| | ↳ | [java.io.FilterOutputStream](../java.io/FilterOutputStream.md) |||
+| | | ↳ | [java.util.zip.DeflaterOutputStream](DeflaterOutputStream.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.util.zip.ZipOutputStream](../java/util/zip/ZipOutputStream.md) |
+| | | | ↳ | [java.util.zip.ZipOutputStream](ZipOutputStream.md) |
 
-| Known Direct Subclasses [JarOutputStream](../java/util/jar/JarOutputStream.md) |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------| | [JarOutputStream](../java/util/jar/JarOutputStream.md) | The`JarOutputStream`class is used to write the contents of a JAR file to any output stream. | |
+| Known Direct Subclasses [JarOutputStream](../java.util.jar/JarOutputStream.md) |-------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------| | [JarOutputStream](../java.util.jar/JarOutputStream.md) | The`JarOutputStream`class is used to write the contents of a JAR file to any output stream. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 This class implements an output stream filter for writing files in the ZIP file format. Includes support for both compressed and uncompressed entries.
@@ -25,92 +25,92 @@ This class implements an output stream filter for writing files in the ZIP file 
 
 | Constants ||
 |------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENATT](../java/util/zip/ZipOutputStream.md) Central directory (CEN) header internal file attributes field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENATX](../java/util/zip/ZipOutputStream.md) Central directory (CEN) header external file attributes field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENCOM](../java/util/zip/ZipOutputStream.md) Central directory (CEN) header comment length field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENATT](ZipOutputStream.md) Central directory (CEN) header internal file attributes field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENATX](ZipOutputStream.md) Central directory (CEN) header external file attributes field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENCOM](ZipOutputStream.md) Central directory (CEN) header comment length field offset. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENCRC](../java/util/zip/ZipOutputStream.md) Central directory (CEN) header uncompressed file crc-32 value field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENDSK](../java/util/zip/ZipOutputStream.md) Central directory (CEN) header disk number start field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENEXT](../java/util/zip/ZipOutputStream.md) Central directory (CEN) header extra field length field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENCRC](ZipOutputStream.md) Central directory (CEN) header uncompressed file crc-32 value field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENDSK](ZipOutputStream.md) Central directory (CEN) header disk number start field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENEXT](ZipOutputStream.md) Central directory (CEN) header extra field length field offset. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENFLG](../java/util/zip/ZipOutputStream.md) Central directory (CEN) header encrypt, decrypt flags field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENHDR](../java/util/zip/ZipOutputStream.md) Central directory (CEN) header size in bytes (including signature). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENHOW](../java/util/zip/ZipOutputStream.md) Central directory (CEN) header compression method field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENFLG](ZipOutputStream.md) Central directory (CEN) header encrypt, decrypt flags field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENHDR](ZipOutputStream.md) Central directory (CEN) header size in bytes (including signature). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENHOW](ZipOutputStream.md) Central directory (CEN) header compression method field offset. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENLEN](../java/util/zip/ZipOutputStream.md) Central directory (CEN) header uncompressed size field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENNAM](../java/util/zip/ZipOutputStream.md) Central directory (CEN) header filename length field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENOFF](../java/util/zip/ZipOutputStream.md) Central directory (CEN) header LOC header offset field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENLEN](ZipOutputStream.md) Central directory (CEN) header uncompressed size field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENNAM](ZipOutputStream.md) Central directory (CEN) header filename length field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENOFF](ZipOutputStream.md) Central directory (CEN) header LOC header offset field offset. |
 | --- | --- |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [CENSIG](../java/util/zip/ZipOutputStream.md) Central directory (CEN) header signature. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENSIZ](../java/util/zip/ZipOutputStream.md) Central directory (CEN) header compressed size field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENTIM](../java/util/zip/ZipOutputStream.md) Central directory (CEN) header modification time field offset. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [CENSIG](ZipOutputStream.md) Central directory (CEN) header signature. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENSIZ](ZipOutputStream.md) Central directory (CEN) header compressed size field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENTIM](ZipOutputStream.md) Central directory (CEN) header modification time field offset. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENVEM](../java/util/zip/ZipOutputStream.md) Central directory (CEN) header version made by field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENVER](../java/util/zip/ZipOutputStream.md) Central directory (CEN) header version needed to extract field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEFLATED](../java/util/zip/ZipOutputStream.md) Compression method for compressed (DEFLATED) entries. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENVEM](ZipOutputStream.md) Central directory (CEN) header version made by field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CENVER](ZipOutputStream.md) Central directory (CEN) header version needed to extract field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEFLATED](ZipOutputStream.md) Compression method for compressed (DEFLATED) entries. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENDCOM](../java/util/zip/ZipOutputStream.md) End of central directory (END) header zip file comment length field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENDHDR](../java/util/zip/ZipOutputStream.md) End of central directory (END) header size in bytes (including signature). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENDOFF](../java/util/zip/ZipOutputStream.md) End of central directory (END) header offset for the first CEN header field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENDCOM](ZipOutputStream.md) End of central directory (END) header zip file comment length field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENDHDR](ZipOutputStream.md) End of central directory (END) header size in bytes (including signature). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENDOFF](ZipOutputStream.md) End of central directory (END) header offset for the first CEN header field offset. |
 | --- | --- |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [ENDSIG](../java/util/zip/ZipOutputStream.md) End of central directory (END) header signature. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENDSIZ](../java/util/zip/ZipOutputStream.md) End of central directory (END) header central directory size in bytes field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENDSUB](../java/util/zip/ZipOutputStream.md) End of central directory (END) header number of entries on this disk field offset. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [ENDSIG](ZipOutputStream.md) End of central directory (END) header signature. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENDSIZ](ZipOutputStream.md) End of central directory (END) header central directory size in bytes field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENDSUB](ZipOutputStream.md) End of central directory (END) header number of entries on this disk field offset. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENDTOT](../java/util/zip/ZipOutputStream.md) End of central directory (END) header total number of entries field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXTCRC](../java/util/zip/ZipOutputStream.md) Extra local (EXT) header uncompressed file crc-32 value field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXTHDR](../java/util/zip/ZipOutputStream.md) Extra local (EXT) header size in bytes (including signature). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ENDTOT](ZipOutputStream.md) End of central directory (END) header total number of entries field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXTCRC](ZipOutputStream.md) Extra local (EXT) header uncompressed file crc-32 value field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXTHDR](ZipOutputStream.md) Extra local (EXT) header size in bytes (including signature). |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXTLEN](../java/util/zip/ZipOutputStream.md) Extra local (EXT) header uncompressed size field offset. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [EXTSIG](../java/util/zip/ZipOutputStream.md) Extra local (EXT) header signature. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXTSIZ](../java/util/zip/ZipOutputStream.md) Extra local (EXT) header compressed size field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXTLEN](ZipOutputStream.md) Extra local (EXT) header uncompressed size field offset. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [EXTSIG](ZipOutputStream.md) Extra local (EXT) header signature. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXTSIZ](ZipOutputStream.md) Extra local (EXT) header compressed size field offset. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCCRC](../java/util/zip/ZipOutputStream.md) Local file (LOC) header uncompressed file crc-32 value field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCEXT](../java/util/zip/ZipOutputStream.md) Local file (LOC) header extra field length field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCFLG](../java/util/zip/ZipOutputStream.md) Local file (LOC) header general purpose bit flag field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCCRC](ZipOutputStream.md) Local file (LOC) header uncompressed file crc-32 value field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCEXT](ZipOutputStream.md) Local file (LOC) header extra field length field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCFLG](ZipOutputStream.md) Local file (LOC) header general purpose bit flag field offset. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCHDR](../java/util/zip/ZipOutputStream.md) Local file (LOC) header size in bytes (including signature). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCHOW](../java/util/zip/ZipOutputStream.md) Local file (LOC) header compression method field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCLEN](../java/util/zip/ZipOutputStream.md) Local file (LOC) header uncompressed size field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCHDR](ZipOutputStream.md) Local file (LOC) header size in bytes (including signature). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCHOW](ZipOutputStream.md) Local file (LOC) header compression method field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCLEN](ZipOutputStream.md) Local file (LOC) header uncompressed size field offset. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCNAM](../java/util/zip/ZipOutputStream.md) Local file (LOC) header filename length field offset. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [LOCSIG](../java/util/zip/ZipOutputStream.md) Local file (LOC) header signature. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCSIZ](../java/util/zip/ZipOutputStream.md) Local file (LOC) header compressed size field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCNAM](ZipOutputStream.md) Local file (LOC) header filename length field offset. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [LOCSIG](ZipOutputStream.md) Local file (LOC) header signature. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCSIZ](ZipOutputStream.md) Local file (LOC) header compressed size field offset. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCTIM](../java/util/zip/ZipOutputStream.md) Local file (LOC) header modification time field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCVER](../java/util/zip/ZipOutputStream.md) Local file (LOC) header version needed to extract field offset. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STORED](../java/util/zip/ZipOutputStream.md) Compression method for uncompressed (STORED) entries. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCTIM](ZipOutputStream.md) Local file (LOC) header modification time field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOCVER](ZipOutputStream.md) Local file (LOC) header version needed to extract field offset. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STORED](ZipOutputStream.md) Compression method for uncompressed (STORED) entries. |
 | --- | --- |
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ZipOutputStream](../java/util/zip/ZipOutputStream.md))`(`out:` ` [OutputStream](../java/io/OutputStream.md)!`)` Creates a new ZIP output stream. |
-| [ZipOutputStream](../java/util/zip/ZipOutputStream.md))`(`out:` ` [OutputStream](../java/io/OutputStream.md)!`, `charset:` ` [Charset](../java/nio/charset/Charset.md)!`)` Creates a new ZIP output stream. |
+| [ZipOutputStream](ZipOutputStream.md))`(`out:` ` [OutputStream](../java.io/OutputStream.md)!`)` Creates a new ZIP output stream. |
+| [ZipOutputStream](ZipOutputStream.md))`(`out:` ` [OutputStream](../java.io/OutputStream.md)!`, `charset:` ` [Charset](../java.nio.charset/Charset.md)!`)` Creates a new ZIP output stream. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../java/util/zip/ZipOutputStream.md))`()` Closes the ZIP output stream as well as the stream being filtered. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [closeEntry](../java/util/zip/ZipOutputStream.md))`()` Closes the current ZIP entry and positions the stream for writing the next entry. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finish](../java/util/zip/ZipOutputStream.md))`()` Finishes writing the contents of the ZIP output stream without closing the underlying stream. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](ZipOutputStream.md))`()` Closes the ZIP output stream as well as the stream being filtered. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [closeEntry](ZipOutputStream.md))`()` Closes the current ZIP entry and positions the stream for writing the next entry. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finish](ZipOutputStream.md))`()` Finishes writing the contents of the ZIP output stream without closing the underlying stream. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [putNextEntry](../java/util/zip/ZipOutputStream.md))`(`e:` ` [ZipEntry](../java/util/zip/ZipEntry.md)!`)` Begins writing a new ZIP file entry and positions the stream to the start of the entry data. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setComment](../java/util/zip/ZipOutputStream.md))`(`comment:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the ZIP file comment. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLevel](../java/util/zip/ZipOutputStream.md))`(`level:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the compression level for subsequent entries which are DEFLATED. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [putNextEntry](ZipOutputStream.md))`(`e:` ` [ZipEntry](ZipEntry.md)!`)` Begins writing a new ZIP file entry and positions the stream to the start of the entry data. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setComment](ZipOutputStream.md))`(`comment:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the ZIP file comment. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLevel](ZipOutputStream.md))`(`level:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the compression level for subsequent entries which are DEFLATED. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMethod](../java/util/zip/ZipOutputStream.md))`(`method:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the default compression method for subsequent entries. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](../java/util/zip/ZipOutputStream.md))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes an array of bytes to the current ZIP entry data. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMethod](ZipOutputStream.md))`(`method:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the default compression method for subsequent entries. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](ZipOutputStream.md))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes an array of bytes to the current ZIP entry data. |
 
 | Inherited functions ||
 |---|---|
-| From class [DeflaterOutputStream](../java/util/zip/DeflaterOutputStream.md) |------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [deflate](../java/util/zip/DeflaterOutputStream.md))`()` <br /> Writes next block of compressed data to the output stream. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [flush](../java/util/zip/DeflaterOutputStream.md))`()` <br /> Flushes the compressed output stream. If [syncFlush](../java/util/zip/DeflaterOutputStream.md))is`true`when this compressed output stream is constructed, this method first flushes the underlying`compressor`with the flush mode [Deflater.SYNC_FLUSH](../java/util/zip/Deflater.md) to force all pending data to be flushed out to the output stream and then flushes the output stream. Otherwise this method only flushes the output stream without flushing the`compressor`. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](../java/util/zip/DeflaterOutputStream.md))`(`b:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> Writes a byte to the compressed output stream. This method will block until the byte can be written. <br /> | ||
-| From class [OutputStream](../java/io/OutputStream.md) |--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [OutputStream](../java/io/OutputStream.md)! | [nullOutputStream](../java/io/OutputStream.md))`()` <br /> Returns a new`OutputStream`which discards all bytes. The returned stream is initially open. The stream is closed by calling the`close()`method. Subsequent calls to`close()`have no effect. While the stream is open, the`write(int)`,`write(byte[])`, and`write(byte[], int, int)`methods do nothing. After the stream has been closed, these methods all throw`IOException`. The`flush()`method does nothing. <br /> | ||
-| From class [FilterOutputStream](../java/io/FilterOutputStream.md) |------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](../java/io/FilterOutputStream.md))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` <br /> Writes`b.length`bytes to this output stream. The`write`method of`FilterOutputStream`calls its`write`method of three arguments with the arguments`b`,`0`, and`b.length`. Note that this method does not call the one-argument`write`method of its underlying output stream with the single argument`b`. <br /> | ||
+| From class [DeflaterOutputStream](DeflaterOutputStream.md) |------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [deflate](DeflaterOutputStream.md))`()` <br /> Writes next block of compressed data to the output stream. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [flush](DeflaterOutputStream.md))`()` <br /> Flushes the compressed output stream. If [syncFlush](DeflaterOutputStream.md))is`true`when this compressed output stream is constructed, this method first flushes the underlying`compressor`with the flush mode [Deflater.SYNC_FLUSH](Deflater.md) to force all pending data to be flushed out to the output stream and then flushes the output stream. Otherwise this method only flushes the output stream without flushing the`compressor`. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](DeflaterOutputStream.md))`(`b:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> Writes a byte to the compressed output stream. This method will block until the byte can be written. <br /> | ||
+| From class [OutputStream](../java.io/OutputStream.md) |--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [OutputStream](../java.io/OutputStream.md)! | [nullOutputStream](../java.io/OutputStream.md))`()` <br /> Returns a new`OutputStream`which discards all bytes. The returned stream is initially open. The stream is closed by calling the`close()`method. Subsequent calls to`close()`have no effect. While the stream is open, the`write(int)`,`write(byte[])`, and`write(byte[], int, int)`methods do nothing. After the stream has been closed, these methods all throw`IOException`. The`flush()`method does nothing. <br /> | ||
+| From class [FilterOutputStream](../java.io/FilterOutputStream.md) |------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](../java.io/FilterOutputStream.md))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` <br /> Writes`b.length`bytes to this output stream. The`write`method of`FilterOutputStream`calls its`write`method of three arguments with the arguments`b`,`0`, and`b.length`. Note that this method does not call the one-argument`write`method of its underlying output stream with the single argument`b`. <br /> | ||
 | --- | --- | --- | --- | --- | --- | --- | --- |
 
 | Inherited properties ||
 |---|---|
-| From class [DeflaterOutputStream](../java/util/zip/DeflaterOutputStream.md) |------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [buf](../java/util/zip/DeflaterOutputStream.md) <br /> Output buffer for writing compressed data. <br /> | | [Deflater](../java/util/zip/Deflater.md)! | [def](../java/util/zip/DeflaterOutputStream.md) <br /> Compressor for this stream. <br /> | ||
-| From class [FilterOutputStream](../java/io/FilterOutputStream.md) |--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [OutputStream](../java/io/OutputStream.md)! | [out](../java/io/FilterOutputStream.md) <br /> The underlying output stream to be filtered. <br /> | ||
+| From class [DeflaterOutputStream](DeflaterOutputStream.md) |------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [buf](DeflaterOutputStream.md) <br /> Output buffer for writing compressed data. <br /> | | [Deflater](Deflater.md)! | [def](DeflaterOutputStream.md) <br /> Compressor for this stream. <br /> | ||
+| From class [FilterOutputStream](../java.io/FilterOutputStream.md) |--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [OutputStream](../java.io/OutputStream.md)! | [out](../java.io/FilterOutputStream.md) <br /> The underlying output stream to be filtered. <br /> | ||
 
 ## Constants
 
@@ -630,11 +630,11 @@ ZipOutputStream(out: OutputStream!)
 
 Creates a new ZIP output stream.
 
-The UTF-8 [charset](../java/nio/charset/Charset.md) is used to encode the entry names and comments.
+The UTF-8 [charset](../java.nio.charset/Charset.md) is used to encode the entry names and comments.
 
 | Parameters ||
 |-------|---------------------------------------------------------------------------------------------------------------------|
-| `out` | [OutputStream](../java/io/OutputStream.md)!:the actual output stream |
+| `out` | [OutputStream](../java.io/OutputStream.md)!:the actual output stream |
 
 ### ZipOutputStream
 
@@ -650,8 +650,8 @@ Creates a new ZIP output stream.
 
 | Parameters ||
 |-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `out` | [OutputStream](../java/io/OutputStream.md)!:the actual output stream |
-| `charset` | [Charset](../java/nio/charset/Charset.md)!:the [charset](../java/nio/charset/Charset.md) to be used to encode the entry names and comments |
+| `out` | [OutputStream](../java.io/OutputStream.md)!:the actual output stream |
+| `charset` | [Charset](../java.nio.charset/Charset.md)!:the [charset](../java.nio.charset/Charset.md) to be used to encode the entry names and comments |
 
 ## Public methods
 
@@ -712,13 +712,13 @@ open fun putNextEntry(e: ZipEntry!): Unit
 
 Begins writing a new ZIP file entry and positions the stream to the start of the entry data. Closes the current entry if still active.
 
-The default compression method will be used if no compression method was specified for the entry. When writing a compressed (DEFLATED) entry, and the compressed size has not been explicitly set with the [ZipEntry.setCompressedSize(long)](../java/util/zip/ZipEntry.md))method, then the compressed size will be set to the actual compressed size after deflation.
+The default compression method will be used if no compression method was specified for the entry. When writing a compressed (DEFLATED) entry, and the compressed size has not been explicitly set with the [ZipEntry.setCompressedSize(long)](ZipEntry.md))method, then the compressed size will be set to the actual compressed size after deflation.
 
 The current time will be used if the entry has no set modification time.
 
 | Parameters ||
 |-----|----------------------------------------------------------------------------------------------------------------|
-| `e` | [ZipEntry](../java/util/zip/ZipEntry.md)!:the ZIP entry to be written |
+| `e` | [ZipEntry](ZipEntry.md)!:the ZIP entry to be written |
 
 | Exceptions ||
 |------------------------------|------------------------------------|

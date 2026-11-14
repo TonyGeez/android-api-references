@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # AccelerateDecelerateInterpolator
 
-Kotlin| [Java](../android/view/animation/AccelerateDecelerateInterpolator.md) 
+Kotlin| [Java](AccelerateDecelerateInterpolator.md) 
 | --- | --- |
 
 ```
@@ -13,8 +13,8 @@ open class AccelerateDecelerateInterpolator : BaseInterpolator
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.view.animation.BaseInterpolator](../android/view/animation/BaseInterpolator.md) ||
-| | ↳ | [android.view.animation.AccelerateDecelerateInterpolator](../android/view/animation/AccelerateDecelerateInterpolator.md) |
+| ↳ | [android.view.animation.BaseInterpolator](BaseInterpolator.md) ||
+| | ↳ | [android.view.animation.AccelerateDecelerateInterpolator](AccelerateDecelerateInterpolator.md) |
 
 An interpolator where the rate of change starts and ends slowly but accelerates through the middle.
 
@@ -22,12 +22,12 @@ An interpolator where the rate of change starts and ends slowly but accelerates 
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [AccelerateDecelerateInterpolator](../android/view/animation/AccelerateDecelerateInterpolator.md))`()` <br /> |
-| [AccelerateDecelerateInterpolator](../android/view/animation/AccelerateDecelerateInterpolator.md))`(`context:` ` [Context](../android/content/Context.md)!`, `attrs:` ` [AttributeSet](../android/util/AttributeSet.md)!`)` <br /> |
+| [AccelerateDecelerateInterpolator](AccelerateDecelerateInterpolator.md))`()` <br /> |
+| [AccelerateDecelerateInterpolator](AccelerateDecelerateInterpolator.md))`(`context:` ` [Context](../android.content/Context.md)!`, `attrs:` ` [AttributeSet](../android.util/AttributeSet.md)!`)` <br /> |
 
 | Public methods ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getInterpolation](../android/view/animation/AccelerateDecelerateInterpolator.md))`(`input:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` <br /> |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getInterpolation](AccelerateDecelerateInterpolator.md))`(`input:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` <br /> |
 
 ## Public constructors
 

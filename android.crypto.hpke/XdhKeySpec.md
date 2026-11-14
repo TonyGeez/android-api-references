@@ -4,7 +4,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 
 # XdhKeySpec
 
-Kotlin| [Java](../android/crypto/hpke/XdhKeySpec.md) 
+Kotlin| [Java](XdhKeySpec.md) 
 | --- | --- |
 
 ```
@@ -13,8 +13,8 @@ class XdhKeySpec : EncodedKeySpec
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.security.spec.EncodedKeySpec](../java/security/spec/EncodedKeySpec.md) ||
-| | ↳ | [android.crypto.hpke.XdhKeySpec](../android/crypto/hpke/XdhKeySpec.md) |
+| ↳ | [java.security.spec.EncodedKeySpec](../java.security.spec/EncodedKeySpec.md) ||
+| | ↳ | [android.crypto.hpke.XdhKeySpec](XdhKeySpec.md) |
 
 External Diffie--Hellman (XDH) key spec holding either a public or private key.
 
@@ -24,19 +24,19 @@ Subclasses`EncodedKeySpec`using the non-Standard "raw" format. The XdhKeyFactory
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [XdhKeySpec](../android/crypto/hpke/XdhKeySpec.md))`(`encoded:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`)` Creates an instance of [XdhKeySpec](../android/crypto/hpke/XdhKeySpec.md) by passing a public or private key in its raw format. |
+| [XdhKeySpec](XdhKeySpec.md))`(`encoded:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`)` Creates an instance of [XdhKeySpec](XdhKeySpec.md) by passing a public or private key in its raw format. |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/crypto/hpke/XdhKeySpec.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getFormat](../android/crypto/hpke/XdhKeySpec.md))`()` Returns the name of the encoding format associated with this key specification. |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [getKey](../android/crypto/hpke/XdhKeySpec.md))`()` Returns the public or private key in its raw format. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](XdhKeySpec.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getFormat](XdhKeySpec.md))`()` Returns the name of the encoding format associated with this key specification. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [getKey](XdhKeySpec.md))`()` Returns the public or private key in its raw format. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/crypto/hpke/XdhKeySpec.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](XdhKeySpec.md))`()` <br /> |
 
 | Inherited functions ||
 |---|---|
-| From class [EncodedKeySpec](../java/security/spec/EncodedKeySpec.md) |------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAlgorithm](../java/security/spec/EncodedKeySpec.md))`()` <br /> Returns the name of the algorithm of the encoded key. <br /> | | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getEncoded](../java/security/spec/EncodedKeySpec.md))`()` <br /> Returns the encoded key. <br /> | ||
+| From class [EncodedKeySpec](../java.security.spec/EncodedKeySpec.md) |------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAlgorithm](../java.security.spec/EncodedKeySpec.md))`()` <br /> Returns the name of the algorithm of the encoded key. <br /> | | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getEncoded](../java.security.spec/EncodedKeySpec.md))`()` <br /> Returns the encoded key. <br /> | ||
 
 ## Public constructors
 
@@ -48,7 +48,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 XdhKeySpec(encoded: ByteArray)
 ```
 
-Creates an instance of [XdhKeySpec](../android/crypto/hpke/XdhKeySpec.md) by passing a public or private key in its raw format.
+Creates an instance of [XdhKeySpec](XdhKeySpec.md) by passing a public or private key in its raw format.
 
 | Parameters ||
 |-----------|---------------------------------------------------------------------------------------------------------------------|
@@ -82,7 +82,7 @@ fun getFormat(): String
 
 Returns the name of the encoding format associated with this key specification.
 
-If the opaque representation of a key (see [Key](../java/security/Key.md)) can be transformed (see [KeyFactory](../java/security/KeyFactory.md)) into this key specification (or a subclass of it),`getFormat`called on the opaque key returns the same value as the`getFormat`method of this key specification.
+If the opaque representation of a key (see [Key](../java.security/Key.md)) can be transformed (see [KeyFactory](../java.security/KeyFactory.md)) into this key specification (or a subclass of it),`getFormat`called on the opaque key returns the same value as the`getFormat`method of this key specification.
 
 | Return ||
 |----------------------------------------------------------------------------------|-----------------------------|

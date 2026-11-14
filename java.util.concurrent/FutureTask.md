@@ -10,11 +10,11 @@ open class FutureTask<V : Any!> : RunnableFuture<V>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.util.concurrent.FutureTask](../java/util/concurrent/FutureTask.md) |
+| ↳ | [java.util.concurrent.FutureTask](FutureTask.md) |
 
-A cancellable asynchronous computation. This class provides a base implementation of [Future](../java/util/concurrent/Future.md), with methods to start and cancel a computation, query to see if the computation is complete, and retrieve the result of the computation. The result can only be retrieved when the computation has completed; the`get`methods will block if the computation has not yet completed. Once the computation has completed, the computation cannot be restarted or cancelled (unless the computation is invoked using [runAndReset](../java/util/concurrent/FutureTask.md))).
+A cancellable asynchronous computation. This class provides a base implementation of [Future](Future.md), with methods to start and cancel a computation, query to see if the computation is complete, and retrieve the result of the computation. The result can only be retrieved when the computation has completed; the`get`methods will block if the computation has not yet completed. Once the computation has completed, the computation cannot be restarted or cancelled (unless the computation is invoked using [runAndReset](FutureTask.md))).
 
-A`FutureTask`can be used to wrap a [Callable](../java/util/concurrent/Callable.md) or [Runnable](../java/lang/Runnable.md) object. Because`FutureTask`implements`Runnable`, a`FutureTask`can be submitted to an [Executor](../java/util/concurrent/Executor.md) for execution.
+A`FutureTask`can be used to wrap a [Callable](Callable.md) or [Runnable](../java.lang/Runnable.md) object. Because`FutureTask`implements`Runnable`, a`FutureTask`can be submitted to an [Executor](Executor.md) for execution.
 
 In addition to serving as a standalone class, this class provides`protected`functionality that may be useful when creating customized task classes.
 
@@ -22,32 +22,32 @@ In addition to serving as a standalone class, this class provides`protected`func
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [FutureTask](../java/util/concurrent/FutureTask.md))`(`runnable:` ` [Runnable](../java/lang/Runnable.md)!`, `result:` `V`)` Creates a`FutureTask`that will, upon running, execute the given`Runnable`, and arrange that`get`will return the given result on successful completion. |
-| [FutureTask](../java/util/concurrent/FutureTask.md))`(`callable:` ` [Callable](../java/util/concurrent/Callable.md)<V>!`)` Creates a`FutureTask`that will, upon running, execute the given`Callable`. |
+| [FutureTask](FutureTask.md))`(`runnable:` ` [Runnable](../java.lang/Runnable.md)!`, `result:` `V`)` Creates a`FutureTask`that will, upon running, execute the given`Runnable`, and arrange that`get`will return the given result on successful completion. |
+| [FutureTask](FutureTask.md))`(`callable:` ` [Callable](Callable.md)<V>!`)` Creates a`FutureTask`that will, upon running, execute the given`Callable`. |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [cancel](../java/util/concurrent/FutureTask.md))`(`mayInterruptIfRunning:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` <br /> |
-| open [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)! | [exceptionNow](../java/util/concurrent/FutureTask.md))`()` <br /> |
-| openV | [get](../java/util/concurrent/FutureTask.md))`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [cancel](FutureTask.md))`(`mayInterruptIfRunning:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` <br /> |
+| open [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)! | [exceptionNow](FutureTask.md))`()` <br /> |
+| openV | [get](FutureTask.md))`()` <br /> |
 | --- | --- |
-| openV | [get](../java/util/concurrent/FutureTask.md))`(`timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TimeUnit](../java/util/concurrent/TimeUnit.md)!`)` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isCancelled](../java/util/concurrent/FutureTask.md))`()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDone](../java/util/concurrent/FutureTask.md))`()` <br /> |
+| openV | [get](FutureTask.md))`(`timeout:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TimeUnit](TimeUnit.md)!`)` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isCancelled](FutureTask.md))`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDone](FutureTask.md))`()` <br /> |
 | --- | --- |
-| openV | [resultNow](../java/util/concurrent/FutureTask.md))`()` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [run](../java/util/concurrent/FutureTask.md))`()` <br /> |
-| open [Future.State](../java/util/concurrent/Future.State.md)! | [state](../java/util/concurrent/FutureTask.md))`()` <br /> |
+| openV | [resultNow](FutureTask.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [run](FutureTask.md))`()` <br /> |
+| open [Future.State](../java/util/concurrent/Future.State.md)! | [state](FutureTask.md))`()` <br /> |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/util/concurrent/FutureTask.md))`()` Returns a string representation of this FutureTask. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](FutureTask.md))`()` Returns a string representation of this FutureTask. |
 
 | Protected methods ||
 |----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [done](../java/util/concurrent/FutureTask.md))`()` Protected method invoked when this task transitions to state`isDone`(whether normally or via cancellation). |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [runAndReset](../java/util/concurrent/FutureTask.md))`()` Executes the computation without setting its result, and then resets this future to initial state, failing to do so if the computation encounters an exception or is cancelled. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [set](../java/util/concurrent/FutureTask.md))`(`v:` `V`)` Sets the result of this future to the given value unless this future has already been set or has been cancelled. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [done](FutureTask.md))`()` Protected method invoked when this task transitions to state`isDone`(whether normally or via cancellation). |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [runAndReset](FutureTask.md))`()` Executes the computation without setting its result, and then resets this future to initial state, failing to do so if the computation encounters an exception or is cancelled. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [set](FutureTask.md))`(`v:` `V`)` Sets the result of this future to the given value unless this future has already been set or has been cancelled. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setException](../java/util/concurrent/FutureTask.md))`(`t:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Causes this future to report an [ExecutionException](../java/util/concurrent/ExecutionException.md) with the given throwable as its cause, unless this future has already been set or has been cancelled. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setException](FutureTask.md))`(`t:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Causes this future to report an [ExecutionException](ExecutionException.md) with the given throwable as its cause, unless this future has already been set or has been cancelled. |
 
 ## Public constructors
 
@@ -65,7 +65,7 @@ Creates a`FutureTask`that will, upon running, execute the given`Runnable`, and a
 
 | Parameters ||
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `runnable` | [Runnable](../java/lang/Runnable.md)!:the runnable task |
+| `runnable` | [Runnable](../java.lang/Runnable.md)!:the runnable task |
 | `result` | V:the result to return on successful completion. If you don't need a particular result, consider using constructions of the form:`Future<?> f = new FutureTask<Void>(runnable, null)` |
 
 | Exceptions ||
@@ -84,7 +84,7 @@ Creates a`FutureTask`that will, upon running, execute the given`Callable`.
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------|
-| `callable` | [Callable](../java/util/concurrent/Callable.md)\<V\>!:the callable task |
+| `callable` | [Callable](Callable.md)\<V\>!:the callable task |
 
 | Exceptions ||
 |----------------------------------|-------------------------|
@@ -157,7 +157,7 @@ open fun get(
 | Parameters ||
 |-----------|---------------------------------------------------------------------------------------------------------------------------------|
 | `timeout` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the maximum time to wait |
-| `unit` | [TimeUnit](../java/util/concurrent/TimeUnit.md)!:the time unit of the timeout argument |
+| `unit` | [TimeUnit](TimeUnit.md)!:the time unit of the timeout argument |
 
 | Return ||
 |---|---------------------|
@@ -291,7 +291,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 protected open fun setException(t: Throwable!): Unit
 ```
 
-Causes this future to report an [ExecutionException](../java/util/concurrent/ExecutionException.md) with the given throwable as its cause, unless this future has already been set or has been cancelled.
+Causes this future to report an [ExecutionException](ExecutionException.md) with the given throwable as its cause, unless this future has already been set or has been cancelled.
 
 This method is invoked internally by the #run method upon failure of the computation.
 

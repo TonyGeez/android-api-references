@@ -6,7 +6,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 interface TextClassifier
 ```
 
-| [android.view.textclassifier.TextClassifier](../android/view/textclassifier/TextClassifier.md) |
+| [android.view.textclassifier.TextClassifier](TextClassifier.md) |
 
 Interface for providing text classification related features.
 
@@ -65,26 +65,26 @@ The TextClassifier may be used to understand the meaning of text, as well as gen
 
 | Public methods ||
 |---|---|
-| open [TextClassification](../android/view/textclassifier/TextClassification.md) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier#classifyText(android.view.textclassifier.TextClassification.Request)(request: https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassification.Request)` Classifies the specified text and returns a `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassification` object that can be used to generate a widget for handling the classified text. |
-| open [TextClassification](../android/view/textclassifier/TextClassification.md) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier#classifyText(kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int,%20android.os.LocaleList)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html, startIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, endIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, defaultLocales: https://developer.android.com/reference/kotlin/android/os/LocaleList.html#?)` Classifies the specified text and returns a `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassification` object that can be used to generate a widget for handling the classified text. |
+| open [TextClassification](TextClassification.md) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier#classifyText(android.view.textclassifier.TextClassification.Request)(request: https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassification.Request)` Classifies the specified text and returns a `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassification` object that can be used to generate a widget for handling the classified text. |
+| open [TextClassification](TextClassification.md) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier#classifyText(kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int,%20android.os.LocaleList)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html, startIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, endIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, defaultLocales: https://developer.android.com/reference/kotlin/android/os/LocaleList.html#?)` Classifies the specified text and returns a `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassification` object that can be used to generate a widget for handling the classified text. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier#destroy()()` Destroys this TextClassifier. |
 | --- | --- |
-| open [TextLanguage](../android/view/textclassifier/TextLanguage.md) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier#detectLanguage(android.view.textclassifier.TextLanguage.Request)(request: https://developer.android.com/reference/kotlin/android/view/textclassifier/TextLanguage.Request)` Detects the language of the text in the given request. |
-| open [TextLinks](../android/view/textclassifier/TextLinks.md) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier#generateLinks(android.view.textclassifier.TextLinks.Request)(request: https://developer.android.com/reference/kotlin/android/view/textclassifier/TextLinks.Request)` Generates and returns a `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextLinks` that may be applied to the text to annotate it with links information. |
+| open [TextLanguage](TextLanguage.md) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier#detectLanguage(android.view.textclassifier.TextLanguage.Request)(request: https://developer.android.com/reference/kotlin/android/view/textclassifier/TextLanguage.Request)` Detects the language of the text in the given request. |
+| open [TextLinks](TextLinks.md) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier#generateLinks(android.view.textclassifier.TextLinks.Request)(request: https://developer.android.com/reference/kotlin/android/view/textclassifier/TextLinks.Request)` Generates and returns a `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextLinks` that may be applied to the text to annotate it with links information. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier#getMaxGenerateLinksTextLength()()` Returns the maximal length of text that can be processed by generateLinks. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier#isDestroyed()()` Returns whether or not this TextClassifier has been destroyed. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier#onSelectionEvent(android.view.textclassifier.SelectionEvent)(event: https://developer.android.com/reference/kotlin/android/view/textclassifier/SelectionEvent)` **NOTE:** Use `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier#onTextClassifierEvent(android.view.textclassifier.TextClassifierEvent)` instead. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier#onTextClassifierEvent(android.view.textclassifier.TextClassifierEvent)(event: https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifierEvent)` Reports a text classifier event. |
 | --- | --- |
-| open [ConversationActions](../android/view/textclassifier/ConversationActions.md) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier#suggestConversationActions(android.view.textclassifier.ConversationActions.Request)(request: https://developer.android.com/reference/kotlin/android/view/textclassifier/ConversationActions.Request)` Suggests and returns a list of actions according to the given conversation. |
-| open [TextSelection](../android/view/textclassifier/TextSelection.md) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier#suggestSelection(android.view.textclassifier.TextSelection.Request)(request: https://developer.android.com/reference/kotlin/android/view/textclassifier/TextSelection.Request)` Returns suggested text selection start and end indices, recognized entity types, and their associated confidence scores. |
-| open [TextSelection](../android/view/textclassifier/TextSelection.md) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier#suggestSelection(kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int,%20android.os.LocaleList)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html, selectionStartIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, selectionEndIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, defaultLocales: https://developer.android.com/reference/kotlin/android/os/LocaleList.html#?)` Returns suggested text selection start and end indices, recognized entity types, and their associated confidence scores. |
+| open [ConversationActions](ConversationActions.md) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier#suggestConversationActions(android.view.textclassifier.ConversationActions.Request)(request: https://developer.android.com/reference/kotlin/android/view/textclassifier/ConversationActions.Request)` Suggests and returns a list of actions according to the given conversation. |
+| open [TextSelection](TextSelection.md) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier#suggestSelection(android.view.textclassifier.TextSelection.Request)(request: https://developer.android.com/reference/kotlin/android/view/textclassifier/TextSelection.Request)` Returns suggested text selection start and end indices, recognized entity types, and their associated confidence scores. |
+| open [TextSelection](TextSelection.md) | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier#suggestSelection(kotlin.CharSequence,%20kotlin.Int,%20kotlin.Int,%20android.os.LocaleList)(text: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html, selectionStartIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, selectionEndIndex: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, defaultLocales: https://developer.android.com/reference/kotlin/android/os/LocaleList.html#?)` Returns suggested text selection start and end indices, recognized entity types, and their associated confidence scores. |
 | --- | --- |
 
 | Properties ||
 |---|---|
-| static [TextClassifier](../android/view/textclassifier/TextClassifier.md)! | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier#NO_OP:android.view.textclassifier.TextClassifier` No-op TextClassifier. |
+| static [TextClassifier](TextClassifier.md)! | `https://developer.android.com/reference/kotlin/android/view/textclassifier/TextClassifier#NO_OP:android.view.textclassifier.TextClassifier` No-op TextClassifier. |
 
 ## Constants
 
@@ -505,7 +505,7 @@ This method may take several seconds to complete, so it should only be called fr
 | `startIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): start index of the text to classify. Value is 0 or greater |
 | `endIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): end index of the text to classify. Value is 0 or greater |
 | --- | --- |
-| `defaultLocales` | [LocaleList](../android/os/LocaleList.md)?: ordered list of locale preferences that may be used to disambiguate the provided text. If no locale preferences exist, set this to null or an empty locale list. |
+| `defaultLocales` | [LocaleList](../android.os/LocaleList.md)?: ordered list of locale preferences that may be used to disambiguate the provided text. If no locale preferences exist, set this to null or an empty locale list. |
 
 | Return ||
 |---|---|
@@ -630,7 +630,7 @@ Reports a selection event.
 
 | Parameters ||
 |---|---|
-| `event` | [SelectionEvent](../android/view/textclassifier/SelectionEvent.md): This value cannot be `null`. |
+| `event` | [SelectionEvent](SelectionEvent.md): This value cannot be `null`. |
 
 ### onTextClassifierEvent
 
@@ -646,7 +646,7 @@ Reports a text classifier event.
 
 | Parameters ||
 |---|---|
-| `event` | [TextClassifierEvent](../android/view/textclassifier/TextClassifierEvent.md): This value cannot be `null`. |
+| `event` | [TextClassifierEvent](TextClassifierEvent.md): This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -726,7 +726,7 @@ This method may take several seconds to complete, so it should only be called fr
 | `selectionStartIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): start index of the selected part of text. Value is 0 or greater |
 | `selectionEndIndex` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): end index of the selected part of text. Value is 0 or greater |
 | --- | --- |
-| `defaultLocales` | [LocaleList](../android/os/LocaleList.md)?: ordered list of locale preferences that may be used to disambiguate the provided text. If no locale preferences exist, set this to null or an empty locale list. |
+| `defaultLocales` | [LocaleList](../android.os/LocaleList.md)?: ordered list of locale preferences that may be used to disambiguate the provided text. If no locale preferences exist, set this to null or an empty locale list. |
 
 | Return ||
 |---|---|

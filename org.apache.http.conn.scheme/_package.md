@@ -4,7 +4,7 @@
 
 ## Interfaces
 
-| [HostNameResolver](../org/apache/http/conn/scheme/HostNameResolver.md) | <br /> |
+| [HostNameResolver](HostNameResolver.md) | <br /> |
 | --- | --- |
-| [LayeredSocketFactory](../org/apache/http/conn/scheme/LayeredSocketFactory.md) | A [SocketFactory](../org/apache/http/conn/scheme/SocketFactory.md) for layered sockets (SSL/TLS). |
-| [SocketFactory](../org/apache/http/conn/scheme/SocketFactory.md) | A factory for creating and connecting sockets. |
+| [LayeredSocketFactory](LayeredSocketFactory.md) | A [SocketFactory](SocketFactory.md) for layered sockets (SSL/TLS). |
+| [SocketFactory](SocketFactory.md) | A factory for creating and connecting sockets. |

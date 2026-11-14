@@ -5,7 +5,7 @@ Deprecated in [API level 21](https://developer.android.com/guide/topics/manifest
 
 # RemoteControlClient
 
-Kotlin| [Java](../android/media/RemoteControlClient.md) 
+Kotlin| [Java](RemoteControlClient.md) 
 | --- | --- |
 
 ```
@@ -14,15 +14,15 @@ open class RemoteControlClient
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.RemoteControlClient](../android/media/RemoteControlClient.md) |
+| ↳ | [android.media.RemoteControlClient](RemoteControlClient.md) |
 
 | **This class was deprecated in API level 21.**
 |
-| Use [MediaSession](../android/media/session/MediaSession.md) instead.
+| Use [MediaSession](../android.media.session/MediaSession.md) instead.
 
 RemoteControlClient enables exposing information meant to be consumed by remote controls capable of displaying metadata, artwork and media transport control buttons.
 
-A remote control client object is associated with a media button event receiver. This event receiver must have been previously registered with [AudioManager.registerMediaButtonEventReceiver(ComponentName)](../android/media/AudioManager.md))before the RemoteControlClient can be registered through [AudioManager.registerRemoteControlClient(RemoteControlClient)](../android/media/AudioManager.md)).
+A remote control client object is associated with a media button event receiver. This event receiver must have been previously registered with [AudioManager.registerMediaButtonEventReceiver(ComponentName)](AudioManager.md))before the RemoteControlClient can be registered through [AudioManager.registerRemoteControlClient(RemoteControlClient)](AudioManager.md)).
 
 Here is an example of creating a RemoteControlClient instance after registering a media button event receiver: 
 
@@ -43,7 +43,7 @@ ComponentName myEventReceiver = new ComponentName(getPackageName(), MyRemoteCont
 
 | Nested classes ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open | [MetadataEditor](../android/media/RemoteControlClient.MetadataEditor.md) Class used to modify metadata in a [RemoteControlClient](../android/media/RemoteControlClient.md) object. |
+| open | [MetadataEditor](../android/media/RemoteControlClient.MetadataEditor.md) Class used to modify metadata in a [RemoteControlClient](RemoteControlClient.md) object. |
 | abstract | [OnGetPlaybackPositionListener](../android/media/RemoteControlClient.OnGetPlaybackPositionListener.md) Interface definition for a callback to be invoked when the media playback position is queried. |
 | abstract | [OnMetadataUpdateListener](../android/media/RemoteControlClient.OnMetadataUpdateListener.md) Interface definition for a callback to be invoked when one of the metadata values has been updated. |
 | --- | --- |
@@ -51,49 +51,49 @@ ComponentName myEventReceiver = new ComponentName(getPackageName(), MyRemoteCont
 
 | Constants ||
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_KEY_MEDIA_FAST_FORWARD](../android/media/RemoteControlClient.md) Flag indicating a RemoteControlClient makes use of the "fast forward" media key. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_KEY_MEDIA_NEXT](../android/media/RemoteControlClient.md) Flag indicating a RemoteControlClient makes use of the "next" media key. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_KEY_MEDIA_PAUSE](../android/media/RemoteControlClient.md) Flag indicating a RemoteControlClient makes use of the "pause" media key. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_KEY_MEDIA_FAST_FORWARD](RemoteControlClient.md) Flag indicating a RemoteControlClient makes use of the "fast forward" media key. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_KEY_MEDIA_NEXT](RemoteControlClient.md) Flag indicating a RemoteControlClient makes use of the "next" media key. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_KEY_MEDIA_PAUSE](RemoteControlClient.md) Flag indicating a RemoteControlClient makes use of the "pause" media key. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_KEY_MEDIA_PLAY](../android/media/RemoteControlClient.md) Flag indicating a RemoteControlClient makes use of the "play" media key. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_KEY_MEDIA_PLAY_PAUSE](../android/media/RemoteControlClient.md) Flag indicating a RemoteControlClient makes use of the "play/pause" media key. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_KEY_MEDIA_POSITION_UPDATE](../android/media/RemoteControlClient.md) Flag indicating a RemoteControlClient can receive changes in the media playback position through the [OnPlaybackPositionUpdateListener](../android/media/RemoteControlClient.OnPlaybackPositionUpdateListener.md) interface. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_KEY_MEDIA_PLAY](RemoteControlClient.md) Flag indicating a RemoteControlClient makes use of the "play" media key. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_KEY_MEDIA_PLAY_PAUSE](RemoteControlClient.md) Flag indicating a RemoteControlClient makes use of the "play/pause" media key. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_KEY_MEDIA_POSITION_UPDATE](RemoteControlClient.md) Flag indicating a RemoteControlClient can receive changes in the media playback position through the [OnPlaybackPositionUpdateListener](../android/media/RemoteControlClient.OnPlaybackPositionUpdateListener.md) interface. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_KEY_MEDIA_PREVIOUS](../android/media/RemoteControlClient.md) Flag indicating a RemoteControlClient makes use of the "previous" media key. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_KEY_MEDIA_RATING](../android/media/RemoteControlClient.md) Flag indicating a RemoteControlClient supports ratings. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_KEY_MEDIA_REWIND](../android/media/RemoteControlClient.md) Flag indicating a RemoteControlClient makes use of the "rewind" media key. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_KEY_MEDIA_PREVIOUS](RemoteControlClient.md) Flag indicating a RemoteControlClient makes use of the "previous" media key. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_KEY_MEDIA_RATING](RemoteControlClient.md) Flag indicating a RemoteControlClient supports ratings. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_KEY_MEDIA_REWIND](RemoteControlClient.md) Flag indicating a RemoteControlClient makes use of the "rewind" media key. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_KEY_MEDIA_STOP](../android/media/RemoteControlClient.md) Flag indicating a RemoteControlClient makes use of the "stop" media key. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PLAYSTATE_BUFFERING](../android/media/RemoteControlClient.md) Playback state of a RemoteControlClient which is buffering data to play before it can start or resume playback. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PLAYSTATE_ERROR](../android/media/RemoteControlClient.md) Playback state of a RemoteControlClient which cannot perform any playback related operation because of an internal error. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FLAG_KEY_MEDIA_STOP](RemoteControlClient.md) Flag indicating a RemoteControlClient makes use of the "stop" media key. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PLAYSTATE_BUFFERING](RemoteControlClient.md) Playback state of a RemoteControlClient which is buffering data to play before it can start or resume playback. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PLAYSTATE_ERROR](RemoteControlClient.md) Playback state of a RemoteControlClient which cannot perform any playback related operation because of an internal error. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PLAYSTATE_FAST_FORWARDING](../android/media/RemoteControlClient.md) Playback state of a RemoteControlClient which is fast forwarding in the media it is currently playing. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PLAYSTATE_PAUSED](../android/media/RemoteControlClient.md) Playback state of a RemoteControlClient which is paused. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PLAYSTATE_PLAYING](../android/media/RemoteControlClient.md) Playback state of a RemoteControlClient which is playing media. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PLAYSTATE_FAST_FORWARDING](RemoteControlClient.md) Playback state of a RemoteControlClient which is fast forwarding in the media it is currently playing. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PLAYSTATE_PAUSED](RemoteControlClient.md) Playback state of a RemoteControlClient which is paused. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PLAYSTATE_PLAYING](RemoteControlClient.md) Playback state of a RemoteControlClient which is playing media. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PLAYSTATE_REWINDING](../android/media/RemoteControlClient.md) Playback state of a RemoteControlClient which is fast rewinding in the media it is currently playing. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PLAYSTATE_SKIPPING_BACKWARDS](../android/media/RemoteControlClient.md) Playback state of a RemoteControlClient which is skipping back to the previous logical chapter (such as a song in a playlist) in the media it is currently playing. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PLAYSTATE_SKIPPING_FORWARDS](../android/media/RemoteControlClient.md) Playback state of a RemoteControlClient which is skipping to the next logical chapter (such as a song in a playlist) in the media it is currently playing. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PLAYSTATE_REWINDING](RemoteControlClient.md) Playback state of a RemoteControlClient which is fast rewinding in the media it is currently playing. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PLAYSTATE_SKIPPING_BACKWARDS](RemoteControlClient.md) Playback state of a RemoteControlClient which is skipping back to the previous logical chapter (such as a song in a playlist) in the media it is currently playing. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PLAYSTATE_SKIPPING_FORWARDS](RemoteControlClient.md) Playback state of a RemoteControlClient which is skipping to the next logical chapter (such as a song in a playlist) in the media it is currently playing. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PLAYSTATE_STOPPED](../android/media/RemoteControlClient.md) Playback state of a RemoteControlClient which is stopped. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PLAYSTATE_STOPPED](RemoteControlClient.md) Playback state of a RemoteControlClient which is stopped. |
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [RemoteControlClient](../android/media/RemoteControlClient.md))`(`mediaButtonIntent:` ` [PendingIntent](../android/app/PendingIntent.md)!`)` Class constructor. |
-| [RemoteControlClient](../android/media/RemoteControlClient.md))`(`mediaButtonIntent:` ` [PendingIntent](../android/app/PendingIntent.md)!`, `looper:` ` [Looper](../android/os/Looper.md)!`)` Class constructor for a remote control client whose internal event handling happens on a user-provided Looper. |
+| [RemoteControlClient](RemoteControlClient.md))`(`mediaButtonIntent:` ` [PendingIntent](../android.app/PendingIntent.md)!`)` Class constructor. |
+| [RemoteControlClient](RemoteControlClient.md))`(`mediaButtonIntent:` ` [PendingIntent](../android.app/PendingIntent.md)!`, `looper:` ` [Looper](../android.os/Looper.md)!`)` Class constructor for a remote control client whose internal event handling happens on a user-provided Looper. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [RemoteControlClient.MetadataEditor](../android/media/RemoteControlClient.MetadataEditor.md)! | [editMetadata](../android/media/RemoteControlClient.md))`(`startEmpty:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Creates a [MetadataEditor](../android/media/RemoteControlClient.MetadataEditor.md). |
-| open [MediaSession](../android/media/session/MediaSession.md)! | [getMediaSession](../android/media/RemoteControlClient.md))`()` Get a [MediaSession](../android/media/session/MediaSession.md) associated with this RCC. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMetadataUpdateListener](../android/media/RemoteControlClient.md))`(`l:` ` [RemoteControlClient.OnMetadataUpdateListener](../android/media/RemoteControlClient.OnMetadataUpdateListener.md)!`)` Sets the listener to be called whenever the metadata is updated. |
+| open [RemoteControlClient.MetadataEditor](../android/media/RemoteControlClient.MetadataEditor.md)! | [editMetadata](RemoteControlClient.md))`(`startEmpty:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Creates a [MetadataEditor](../android/media/RemoteControlClient.MetadataEditor.md). |
+| open [MediaSession](../android.media.session/MediaSession.md)! | [getMediaSession](RemoteControlClient.md))`()` Get a [MediaSession](../android.media.session/MediaSession.md) associated with this RCC. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMetadataUpdateListener](RemoteControlClient.md))`(`l:` ` [RemoteControlClient.OnMetadataUpdateListener](../android/media/RemoteControlClient.OnMetadataUpdateListener.md)!`)` Sets the listener to be called whenever the metadata is updated. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOnGetPlaybackPositionListener](../android/media/RemoteControlClient.md))`(`l:` ` [RemoteControlClient.OnGetPlaybackPositionListener](../android/media/RemoteControlClient.OnGetPlaybackPositionListener.md)!`)` Sets the listener to be called whenever the media current playback position is needed. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPlaybackPositionUpdateListener](../android/media/RemoteControlClient.md))`(`l:` ` [RemoteControlClient.OnPlaybackPositionUpdateListener](../android/media/RemoteControlClient.OnPlaybackPositionUpdateListener.md)!`)` Sets the listener to be called whenever the media playback position is requested to be updated. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPlaybackState](../android/media/RemoteControlClient.md))`(`state:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the current playback state. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOnGetPlaybackPositionListener](RemoteControlClient.md))`(`l:` ` [RemoteControlClient.OnGetPlaybackPositionListener](../android/media/RemoteControlClient.OnGetPlaybackPositionListener.md)!`)` Sets the listener to be called whenever the media current playback position is needed. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPlaybackPositionUpdateListener](RemoteControlClient.md))`(`l:` ` [RemoteControlClient.OnPlaybackPositionUpdateListener](../android/media/RemoteControlClient.OnPlaybackPositionUpdateListener.md)!`)` Sets the listener to be called whenever the media playback position is requested to be updated. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPlaybackState](RemoteControlClient.md))`(`state:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the current playback state. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPlaybackState](../android/media/RemoteControlClient.md))`(`state:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `timeInMs:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `playbackSpeed:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the current playback state and the matching media position for the current playback speed. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTransportControlFlags](../android/media/RemoteControlClient.md))`(`transportControlFlags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the flags for the media transport control buttons that this client supports. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPlaybackState](RemoteControlClient.md))`(`state:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `timeInMs:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `playbackSpeed:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the current playback state and the matching media position for the current playback speed. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTransportControlFlags](RemoteControlClient.md))`(`transportControlFlags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the flags for the media transport control buttons that this client supports. |
 
 ## Constants
 
@@ -113,8 +113,8 @@ Flag indicating a RemoteControlClient makes use of the "fast forward" media key.
 
 **See Also**
 
-- [#setTransportControlFlags(int)](../android/media/RemoteControlClient.md))
-- [android.view.KeyEvent#KEYCODE_MEDIA_FAST_FORWARD](../android/view/KeyEvent.md) 
+- [#setTransportControlFlags(int)](RemoteControlClient.md))
+- [android.view.KeyEvent#KEYCODE_MEDIA_FAST_FORWARD](../android.view/KeyEvent.md) 
 
 ### FLAG_KEY_MEDIA_NEXT
 
@@ -132,8 +132,8 @@ Flag indicating a RemoteControlClient makes use of the "next" media key.
 
 **See Also**
 
-- [#setTransportControlFlags(int)](../android/media/RemoteControlClient.md))
-- [android.view.KeyEvent#KEYCODE_MEDIA_NEXT](../android/view/KeyEvent.md) 
+- [#setTransportControlFlags(int)](RemoteControlClient.md))
+- [android.view.KeyEvent#KEYCODE_MEDIA_NEXT](../android.view/KeyEvent.md) 
 
 ### FLAG_KEY_MEDIA_PAUSE
 
@@ -151,8 +151,8 @@ Flag indicating a RemoteControlClient makes use of the "pause" media key.
 
 **See Also**
 
-- [#setTransportControlFlags(int)](../android/media/RemoteControlClient.md))
-- [android.view.KeyEvent#KEYCODE_MEDIA_PAUSE](../android/view/KeyEvent.md) 
+- [#setTransportControlFlags(int)](RemoteControlClient.md))
+- [android.view.KeyEvent#KEYCODE_MEDIA_PAUSE](../android.view/KeyEvent.md) 
 
 ### FLAG_KEY_MEDIA_PLAY
 
@@ -170,8 +170,8 @@ Flag indicating a RemoteControlClient makes use of the "play" media key.
 
 **See Also**
 
-- [#setTransportControlFlags(int)](../android/media/RemoteControlClient.md))
-- [android.view.KeyEvent#KEYCODE_MEDIA_PLAY](../android/view/KeyEvent.md) 
+- [#setTransportControlFlags(int)](RemoteControlClient.md))
+- [android.view.KeyEvent#KEYCODE_MEDIA_PLAY](../android.view/KeyEvent.md) 
 
 ### FLAG_KEY_MEDIA_PLAY_PAUSE
 
@@ -189,8 +189,8 @@ Flag indicating a RemoteControlClient makes use of the "play/pause" media key.
 
 **See Also**
 
-- [#setTransportControlFlags(int)](../android/media/RemoteControlClient.md))
-- [android.view.KeyEvent#KEYCODE_MEDIA_PLAY_PAUSE](../android/view/KeyEvent.md) 
+- [#setTransportControlFlags(int)](RemoteControlClient.md))
+- [android.view.KeyEvent#KEYCODE_MEDIA_PLAY_PAUSE](../android.view/KeyEvent.md) 
 
 ### FLAG_KEY_MEDIA_POSITION_UPDATE
 
@@ -209,9 +209,9 @@ Flag indicating a RemoteControlClient can receive changes in the media playback 
 
 **See Also**
 
-- [#setTransportControlFlags(int)](../android/media/RemoteControlClient.md))
-- [#setOnGetPlaybackPositionListener(OnGetPlaybackPositionListener)](../android/media/RemoteControlClient.md))
-- [#setPlaybackPositionUpdateListener(OnPlaybackPositionUpdateListener)](../android/media/RemoteControlClient.md)) 
+- [#setTransportControlFlags(int)](RemoteControlClient.md))
+- [#setOnGetPlaybackPositionListener(OnGetPlaybackPositionListener)](RemoteControlClient.md))
+- [#setPlaybackPositionUpdateListener(OnPlaybackPositionUpdateListener)](RemoteControlClient.md)) 
 
 ### FLAG_KEY_MEDIA_PREVIOUS
 
@@ -229,8 +229,8 @@ Flag indicating a RemoteControlClient makes use of the "previous" media key.
 
 **See Also**
 
-- [#setTransportControlFlags(int)](../android/media/RemoteControlClient.md))
-- [android.view.KeyEvent#KEYCODE_MEDIA_PREVIOUS](../android/view/KeyEvent.md) 
+- [#setTransportControlFlags(int)](RemoteControlClient.md))
+- [android.view.KeyEvent#KEYCODE_MEDIA_PREVIOUS](../android.view/KeyEvent.md) 
 
 ### FLAG_KEY_MEDIA_RATING
 
@@ -243,13 +243,13 @@ static val FLAG_KEY_MEDIA_RATING: Int
 
 **Deprecated:** *Deprecated in Java.*
 
-Flag indicating a RemoteControlClient supports ratings. This flag must be set in order for components that display the RemoteControlClient information, to display ratings information, and, if ratings are declared editable (by calling [MediaMetadataEditor.addEditableKey(int)](../android/media/MediaMetadataEditor.md))with the [MediaMetadataEditor.RATING_KEY_BY_USER](../android/media/MediaMetadataEditor.md) key), it will enable the user to rate the media, with values being received through the interface set with [setMetadataUpdateListener(android.media.RemoteControlClient.OnMetadataUpdateListener)](../android/media/RemoteControlClient.md)). 
+Flag indicating a RemoteControlClient supports ratings. This flag must be set in order for components that display the RemoteControlClient information, to display ratings information, and, if ratings are declared editable (by calling [MediaMetadataEditor.addEditableKey(int)](MediaMetadataEditor.md))with the [MediaMetadataEditor.RATING_KEY_BY_USER](MediaMetadataEditor.md) key), it will enable the user to rate the media, with values being received through the interface set with [setMetadataUpdateListener(android.media.RemoteControlClient.OnMetadataUpdateListener)](RemoteControlClient.md)). 
 
  Value: 512
 
 **See Also**
 
-- [#setTransportControlFlags(int)](../android/media/RemoteControlClient.md)) 
+- [#setTransportControlFlags(int)](RemoteControlClient.md)) 
 
 ### FLAG_KEY_MEDIA_REWIND
 
@@ -267,8 +267,8 @@ Flag indicating a RemoteControlClient makes use of the "rewind" media key.
 
 **See Also**
 
-- [#setTransportControlFlags(int)](../android/media/RemoteControlClient.md))
-- [android.view.KeyEvent#KEYCODE_MEDIA_REWIND](../android/view/KeyEvent.md) 
+- [#setTransportControlFlags(int)](RemoteControlClient.md))
+- [android.view.KeyEvent#KEYCODE_MEDIA_REWIND](../android.view/KeyEvent.md) 
 
 ### FLAG_KEY_MEDIA_STOP
 
@@ -286,8 +286,8 @@ Flag indicating a RemoteControlClient makes use of the "stop" media key.
 
 **See Also**
 
-- [#setTransportControlFlags(int)](../android/media/RemoteControlClient.md))
-- [android.view.KeyEvent#KEYCODE_MEDIA_STOP](../android/view/KeyEvent.md) 
+- [#setTransportControlFlags(int)](RemoteControlClient.md))
+- [android.view.KeyEvent#KEYCODE_MEDIA_STOP](../android.view/KeyEvent.md) 
 
 ### PLAYSTATE_BUFFERING
 
@@ -305,7 +305,7 @@ Playback state of a RemoteControlClient which is buffering data to play before i
 
 **See Also**
 
-- [#setPlaybackState(int)](../android/media/RemoteControlClient.md)) 
+- [#setPlaybackState(int)](RemoteControlClient.md)) 
 
 ### PLAYSTATE_ERROR
 
@@ -323,7 +323,7 @@ Playback state of a RemoteControlClient which cannot perform any playback relate
 
 **See Also**
 
-- [#setPlaybackState(int)](../android/media/RemoteControlClient.md)) 
+- [#setPlaybackState(int)](RemoteControlClient.md)) 
 
 ### PLAYSTATE_FAST_FORWARDING
 
@@ -341,7 +341,7 @@ Playback state of a RemoteControlClient which is fast forwarding in the media it
 
 **See Also**
 
-- [#setPlaybackState(int)](../android/media/RemoteControlClient.md)) 
+- [#setPlaybackState(int)](RemoteControlClient.md)) 
 
 ### PLAYSTATE_PAUSED
 
@@ -359,7 +359,7 @@ Playback state of a RemoteControlClient which is paused.
 
 **See Also**
 
-- [#setPlaybackState(int)](../android/media/RemoteControlClient.md)) 
+- [#setPlaybackState(int)](RemoteControlClient.md)) 
 
 ### PLAYSTATE_PLAYING
 
@@ -377,7 +377,7 @@ Playback state of a RemoteControlClient which is playing media.
 
 **See Also**
 
-- [#setPlaybackState(int)](../android/media/RemoteControlClient.md)) 
+- [#setPlaybackState(int)](RemoteControlClient.md)) 
 
 ### PLAYSTATE_REWINDING
 
@@ -395,7 +395,7 @@ Playback state of a RemoteControlClient which is fast rewinding in the media it 
 
 **See Also**
 
-- [#setPlaybackState(int)](../android/media/RemoteControlClient.md)) 
+- [#setPlaybackState(int)](RemoteControlClient.md)) 
 
 ### PLAYSTATE_SKIPPING_BACKWARDS
 
@@ -413,7 +413,7 @@ Playback state of a RemoteControlClient which is skipping back to the previous l
 
 **See Also**
 
-- [#setPlaybackState(int)](../android/media/RemoteControlClient.md)) 
+- [#setPlaybackState(int)](RemoteControlClient.md)) 
 
 ### PLAYSTATE_SKIPPING_FORWARDS
 
@@ -431,7 +431,7 @@ Playback state of a RemoteControlClient which is skipping to the next logical ch
 
 **See Also**
 
-- [#setPlaybackState(int)](../android/media/RemoteControlClient.md)) 
+- [#setPlaybackState(int)](RemoteControlClient.md)) 
 
 ### PLAYSTATE_STOPPED
 
@@ -449,7 +449,7 @@ Playback state of a RemoteControlClient which is stopped.
 
 **See Also**
 
-- [#setPlaybackState(int)](../android/media/RemoteControlClient.md))
+- [#setPlaybackState(int)](RemoteControlClient.md))
 
 ## Public constructors
 
@@ -465,12 +465,12 @@ Class constructor.
 
 | Parameters ||
 |---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `mediaButtonIntent` | [PendingIntent](../android/app/PendingIntent.md)!:The intent that will be sent for the media button events sent by remote controls. This intent needs to have been constructed with the [Intent.ACTION_MEDIA_BUTTON](../android/content/Intent.md) action, and have a component that will handle the intent (set with [Intent.setComponent(ComponentName)](../android/content/Intent.md))) registered with [AudioManager.registerMediaButtonEventReceiver(ComponentName)](../android/media/AudioManager.md))before this new RemoteControlClient can itself be registered with [AudioManager.registerRemoteControlClient(RemoteControlClient)](../android/media/AudioManager.md)). |
+| `mediaButtonIntent` | [PendingIntent](../android.app/PendingIntent.md)!:The intent that will be sent for the media button events sent by remote controls. This intent needs to have been constructed with the [Intent.ACTION_MEDIA_BUTTON](../android.content/Intent.md) action, and have a component that will handle the intent (set with [Intent.setComponent(ComponentName)](../android.content/Intent.md))) registered with [AudioManager.registerMediaButtonEventReceiver(ComponentName)](AudioManager.md))before this new RemoteControlClient can itself be registered with [AudioManager.registerRemoteControlClient(RemoteControlClient)](AudioManager.md)). |
 
 **See Also**
 
-- [android.media.AudioManager#registerMediaButtonEventReceiver(ComponentName)](../android/media/AudioManager.md))
-- [android.media.AudioManager#registerRemoteControlClient(RemoteControlClient)](../android/media/AudioManager.md)) 
+- [android.media.AudioManager#registerMediaButtonEventReceiver(ComponentName)](AudioManager.md))
+- [android.media.AudioManager#registerRemoteControlClient(RemoteControlClient)](AudioManager.md)) 
 
 ### RemoteControlClient
 
@@ -486,13 +486,13 @@ Class constructor for a remote control client whose internal event handling happ
 
 | Parameters ||
 |---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `mediaButtonIntent` | [PendingIntent](../android/app/PendingIntent.md)!:The intent that will be sent for the media button events sent by remote controls. This intent needs to have been constructed with the [Intent.ACTION_MEDIA_BUTTON](../android/content/Intent.md) action, and have a component that will handle the intent (set with [Intent.setComponent(ComponentName)](../android/content/Intent.md))) registered with [AudioManager.registerMediaButtonEventReceiver(ComponentName)](../android/media/AudioManager.md))before this new RemoteControlClient can itself be registered with [AudioManager.registerRemoteControlClient(RemoteControlClient)](../android/media/AudioManager.md)). |
-| `looper` | [Looper](../android/os/Looper.md)!:The Looper running the event loop. |
+| `mediaButtonIntent` | [PendingIntent](../android.app/PendingIntent.md)!:The intent that will be sent for the media button events sent by remote controls. This intent needs to have been constructed with the [Intent.ACTION_MEDIA_BUTTON](../android.content/Intent.md) action, and have a component that will handle the intent (set with [Intent.setComponent(ComponentName)](../android.content/Intent.md))) registered with [AudioManager.registerMediaButtonEventReceiver(ComponentName)](AudioManager.md))before this new RemoteControlClient can itself be registered with [AudioManager.registerRemoteControlClient(RemoteControlClient)](AudioManager.md)). |
+| `looper` | [Looper](../android.os/Looper.md)!:The Looper running the event loop. |
 
 **See Also**
 
-- [android.media.AudioManager#registerMediaButtonEventReceiver(ComponentName)](../android/media/AudioManager.md))
-- [android.media.AudioManager#registerRemoteControlClient(RemoteControlClient)](../android/media/AudioManager.md))
+- [android.media.AudioManager#registerMediaButtonEventReceiver(ComponentName)](AudioManager.md))
+- [android.media.AudioManager#registerRemoteControlClient(RemoteControlClient)](AudioManager.md))
 
 ## Public methods
 
@@ -527,11 +527,11 @@ open fun getMediaSession(): MediaSession!
 
 **Deprecated:** *Deprecated in Java.*
 
-Get a [MediaSession](../android/media/session/MediaSession.md) associated with this RCC. It will only have a session while it is registered with [AudioManager.registerRemoteControlClient](../android/media/AudioManager.md)). The session returned should not be modified directly by the application but may be used with other APIs that require a session.
+Get a [MediaSession](../android.media.session/MediaSession.md) associated with this RCC. It will only have a session while it is registered with [AudioManager.registerRemoteControlClient](AudioManager.md)). The session returned should not be modified directly by the application but may be used with other APIs that require a session.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------|---------------------------------|
-| [MediaSession](../android/media/session/MediaSession.md)! | A media session object or null. |
+| [MediaSession](../android.media.session/MediaSession.md)! | A media session object or null. |
 
 ### setMetadataUpdateListener
 
@@ -598,7 +598,7 @@ Sets the current playback state.
 
 | Parameters ||
 |---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `state` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The current playback state, one of the following values: [PLAYSTATE_STOPPED](../android/media/RemoteControlClient.md), [PLAYSTATE_PAUSED](../android/media/RemoteControlClient.md), [PLAYSTATE_PLAYING](../android/media/RemoteControlClient.md), [PLAYSTATE_FAST_FORWARDING](../android/media/RemoteControlClient.md), [PLAYSTATE_REWINDING](../android/media/RemoteControlClient.md), [PLAYSTATE_SKIPPING_FORWARDS](../android/media/RemoteControlClient.md), [PLAYSTATE_SKIPPING_BACKWARDS](../android/media/RemoteControlClient.md), [PLAYSTATE_BUFFERING](../android/media/RemoteControlClient.md), [PLAYSTATE_ERROR](../android/media/RemoteControlClient.md). |
+| `state` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The current playback state, one of the following values: [PLAYSTATE_STOPPED](RemoteControlClient.md), [PLAYSTATE_PAUSED](RemoteControlClient.md), [PLAYSTATE_PLAYING](RemoteControlClient.md), [PLAYSTATE_FAST_FORWARDING](RemoteControlClient.md), [PLAYSTATE_REWINDING](RemoteControlClient.md), [PLAYSTATE_SKIPPING_FORWARDS](RemoteControlClient.md), [PLAYSTATE_SKIPPING_BACKWARDS](RemoteControlClient.md), [PLAYSTATE_BUFFERING](RemoteControlClient.md), [PLAYSTATE_ERROR](RemoteControlClient.md). |
 
 ### setPlaybackState
 
@@ -619,9 +619,9 @@ Sets the current playback state and the matching media position for the current 
 
 | Parameters ||
 |-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `state` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The current playback state, one of the following values: [PLAYSTATE_STOPPED](../android/media/RemoteControlClient.md), [PLAYSTATE_PAUSED](../android/media/RemoteControlClient.md), [PLAYSTATE_PLAYING](../android/media/RemoteControlClient.md), [PLAYSTATE_FAST_FORWARDING](../android/media/RemoteControlClient.md), [PLAYSTATE_REWINDING](../android/media/RemoteControlClient.md), [PLAYSTATE_SKIPPING_FORWARDS](../android/media/RemoteControlClient.md), [PLAYSTATE_SKIPPING_BACKWARDS](../android/media/RemoteControlClient.md), [PLAYSTATE_BUFFERING](../android/media/RemoteControlClient.md), [PLAYSTATE_ERROR](../android/media/RemoteControlClient.md). |
-| `timeInMs` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):a 0 or positive value for the current media position expressed in ms (same unit as for when sending the media duration, if applicable, with [android.media.MediaMetadataRetriever#METADATA_KEY_DURATION](../android/media/MediaMetadataRetriever.md) in the [RemoteControlClient.MetadataEditor](../android/media/RemoteControlClient.MetadataEditor.md)). Negative values imply that position is not known (e.g. listening to a live stream of a radio) or not applicable (e.g. when state is [PLAYSTATE_BUFFERING](../android/media/RemoteControlClient.md) and nothing had played yet). |
-| `playbackSpeed` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):a value expressed as a ratio of 1x playback: 1.0f is normal playback, 2.0f is 2x, 0.5f is half-speed, -2.0f is rewind at 2x speed. 0.0f means nothing is playing (e.g. when state is [PLAYSTATE_ERROR](../android/media/RemoteControlClient.md)). |
+| `state` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The current playback state, one of the following values: [PLAYSTATE_STOPPED](RemoteControlClient.md), [PLAYSTATE_PAUSED](RemoteControlClient.md), [PLAYSTATE_PLAYING](RemoteControlClient.md), [PLAYSTATE_FAST_FORWARDING](RemoteControlClient.md), [PLAYSTATE_REWINDING](RemoteControlClient.md), [PLAYSTATE_SKIPPING_FORWARDS](RemoteControlClient.md), [PLAYSTATE_SKIPPING_BACKWARDS](RemoteControlClient.md), [PLAYSTATE_BUFFERING](RemoteControlClient.md), [PLAYSTATE_ERROR](RemoteControlClient.md). |
+| `timeInMs` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):a 0 or positive value for the current media position expressed in ms (same unit as for when sending the media duration, if applicable, with [android.media.MediaMetadataRetriever#METADATA_KEY_DURATION](MediaMetadataRetriever.md) in the [RemoteControlClient.MetadataEditor](../android/media/RemoteControlClient.MetadataEditor.md)). Negative values imply that position is not known (e.g. listening to a live stream of a radio) or not applicable (e.g. when state is [PLAYSTATE_BUFFERING](RemoteControlClient.md) and nothing had played yet). |
+| `playbackSpeed` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html):a value expressed as a ratio of 1x playback: 1.0f is normal playback, 2.0f is 2x, 0.5f is half-speed, -2.0f is rewind at 2x speed. 0.0f means nothing is playing (e.g. when state is [PLAYSTATE_ERROR](RemoteControlClient.md)). |
 | --- | --- |
 
 ### setTransportControlFlags
@@ -638,4 +638,4 @@ Sets the flags for the media transport control buttons that this client supports
 
 | Parameters ||
 |-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `transportControlFlags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):A combination of the following flags: [FLAG_KEY_MEDIA_PREVIOUS](../android/media/RemoteControlClient.md), [FLAG_KEY_MEDIA_REWIND](../android/media/RemoteControlClient.md), [FLAG_KEY_MEDIA_PLAY](../android/media/RemoteControlClient.md), [FLAG_KEY_MEDIA_PLAY_PAUSE](../android/media/RemoteControlClient.md), [FLAG_KEY_MEDIA_PAUSE](../android/media/RemoteControlClient.md), [FLAG_KEY_MEDIA_STOP](../android/media/RemoteControlClient.md), [FLAG_KEY_MEDIA_FAST_FORWARD](../android/media/RemoteControlClient.md), [FLAG_KEY_MEDIA_NEXT](../android/media/RemoteControlClient.md), [FLAG_KEY_MEDIA_POSITION_UPDATE](../android/media/RemoteControlClient.md), [FLAG_KEY_MEDIA_RATING](../android/media/RemoteControlClient.md). |
+| `transportControlFlags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):A combination of the following flags: [FLAG_KEY_MEDIA_PREVIOUS](RemoteControlClient.md), [FLAG_KEY_MEDIA_REWIND](RemoteControlClient.md), [FLAG_KEY_MEDIA_PLAY](RemoteControlClient.md), [FLAG_KEY_MEDIA_PLAY_PAUSE](RemoteControlClient.md), [FLAG_KEY_MEDIA_PAUSE](RemoteControlClient.md), [FLAG_KEY_MEDIA_STOP](RemoteControlClient.md), [FLAG_KEY_MEDIA_FAST_FORWARD](RemoteControlClient.md), [FLAG_KEY_MEDIA_NEXT](RemoteControlClient.md), [FLAG_KEY_MEDIA_POSITION_UPDATE](RemoteControlClient.md), [FLAG_KEY_MEDIA_RATING](RemoteControlClient.md). |

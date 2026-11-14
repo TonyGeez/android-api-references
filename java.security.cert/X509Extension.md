@@ -8,14 +8,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface X509Extension
 ```
 
-| [java.security.cert.X509Extension](../java/security/cert/X509Extension.md) |
+| [java.security.cert.X509Extension](X509Extension.md) |
 
-| Known Direct Subclasses [X509CRL](../java/security/cert/X509CRL.md), [X509CRLEntry](../java/security/cert/X509CRLEntry.md), [X509Certificate](../java/security/cert/X509Certificate.md) |------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------| | [X509CRL](../java/security/cert/X509CRL.md) | Abstract class for an X. | | [X509CRLEntry](../java/security/cert/X509CRLEntry.md) | Abstract class for a revoked certificate in a CRL (Certificate Revocation List). | | [X509Certificate](../java/security/cert/X509Certificate.md) | Abstract class for X. | |
+| Known Direct Subclasses [X509CRL](X509CRL.md), [X509CRLEntry](X509CRLEntry.md), [X509Certificate](X509Certificate.md) |------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------| | [X509CRL](X509CRL.md) | Abstract class for an X. | | [X509CRLEntry](X509CRLEntry.md) | Abstract class for a revoked certificate in a CRL (Certificate Revocation List). | | [X509Certificate](X509Certificate.md) | Abstract class for X. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Interface for an X.509 extension.
 
-The extensions defined for X.509 v3 [Certificates](../java/security/cert/X509Certificate.md) and v2 [CRLs](../java/security/cert/X509CRL.md)(Certificate Revocation Lists) provide methods for associating additional attributes with users or public keys, for managing the certification hierarchy, and for managing CRL distribution. The X.509 extensions format also allows communities to define private extensions to carry information unique to those communities.
+The extensions defined for X.509 v3 [Certificates](X509Certificate.md) and v2 [CRLs](X509CRL.md)(Certificate Revocation Lists) provide methods for associating additional attributes with users or public keys, for managing the certification hierarchy, and for managing CRL distribution. The X.509 extensions format also allows communities to define private extensions to carry information unique to those communities.
 
 Each extension in a certificate/CRL may be designated as critical or non-critical. A certificate/CRL-using system (an application validating a certificate/CRL) must reject the certificate/CRL if it encounters a critical extension it does not recognize. A non-critical extension may be ignored if it is not recognized.
 
@@ -40,11 +40,11 @@ Since not all extensions are known, the`getExtensionValue`method returns the DER
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getCriticalExtensionOIDs](../java/security/cert/X509Extension.md))`()` Gets a Set of the OID strings for the extension(s) marked CRITICAL in the certificate/CRL managed by the object implementing this interface. |
-| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getExtensionValue](../java/security/cert/X509Extension.md))`(`oid:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Gets the DER-encoded OCTET string for the extension value (*extnValue* ) identified by the passed-in`oid`String. |
-| abstract [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getNonCriticalExtensionOIDs](../java/security/cert/X509Extension.md))`()` Gets a Set of the OID strings for the extension(s) marked NON-CRITICAL in the certificate/CRL managed by the object implementing this interface. |
+| abstract [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getCriticalExtensionOIDs](X509Extension.md))`()` Gets a Set of the OID strings for the extension(s) marked CRITICAL in the certificate/CRL managed by the object implementing this interface. |
+| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getExtensionValue](X509Extension.md))`(`oid:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Gets the DER-encoded OCTET string for the extension value (*extnValue* ) identified by the passed-in`oid`String. |
+| abstract [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getNonCriticalExtensionOIDs](X509Extension.md))`()` Gets a Set of the OID strings for the extension(s) marked NON-CRITICAL in the certificate/CRL managed by the object implementing this interface. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasUnsupportedCriticalExtension](../java/security/cert/X509Extension.md))`()` Check if there is a critical extension that is not supported. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasUnsupportedCriticalExtension](X509Extension.md))`()` Check if there is a critical extension that is not supported. |
 
 ## Public methods
 

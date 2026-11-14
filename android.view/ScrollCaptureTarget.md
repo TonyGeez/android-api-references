@@ -2,7 +2,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # ScrollCaptureTarget
 
-Kotlin | [Java](../android/view/ScrollCaptureTarget.md)
+Kotlin | [Java](ScrollCaptureTarget.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class ScrollCaptureTarget
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.ScrollCaptureTarget](../android/view/ScrollCaptureTarget.md) |
+| ↳ | [android.view.ScrollCaptureTarget](ScrollCaptureTarget.md) |
 
 A target collects the set of contextual information for a ScrollCaptureHandler discovered during a `https://developer.android.com/reference/kotlin/android/view/View#dispatchScrollCaptureSearch(android.graphics.Rect,%20android.graphics.Point,%20java.util.function.Consumer)`.
 
@@ -23,13 +23,13 @@ A target collects the set of contextual information for a ScrollCaptureHandler d
 
 | Public methods ||
 |---|---|
-| [ScrollCaptureCallback](../android/view/ScrollCaptureCallback.md) | `https://developer.android.com/reference/kotlin/android/view/ScrollCaptureTarget#getCallback()()` <br /> |
-| [View](../android/view/View.md) | `https://developer.android.com/reference/kotlin/android/view/ScrollCaptureTarget#getContainingView()()` <br /> |
+| [ScrollCaptureCallback](ScrollCaptureCallback.md) | `https://developer.android.com/reference/kotlin/android/view/ScrollCaptureTarget#getCallback()()` <br /> |
+| [View](View.md) | `https://developer.android.com/reference/kotlin/android/view/ScrollCaptureTarget#getContainingView()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/ScrollCaptureTarget#getHint()()` <br /> |
 | --- | --- |
-| [Rect](../android/graphics/Rect.md) | `https://developer.android.com/reference/kotlin/android/view/ScrollCaptureTarget#getLocalVisibleRect()()` Returns the visible bounds of the containing view. |
-| [Point](../android/graphics/Point.md) | `https://developer.android.com/reference/kotlin/android/view/ScrollCaptureTarget#getPositionInWindow()()` <br /> |
-| [Rect](../android/graphics/Rect.md)? | `https://developer.android.com/reference/kotlin/android/view/ScrollCaptureTarget#getScrollBounds()()` <br /> |
+| [Rect](../android.graphics/Rect.md) | `https://developer.android.com/reference/kotlin/android/view/ScrollCaptureTarget#getLocalVisibleRect()()` Returns the visible bounds of the containing view. |
+| [Point](../android.graphics/Point.md) | `https://developer.android.com/reference/kotlin/android/view/ScrollCaptureTarget#getPositionInWindow()()` <br /> |
+| [Rect](../android.graphics/Rect.md)? | `https://developer.android.com/reference/kotlin/android/view/ScrollCaptureTarget#getScrollBounds()()` <br /> |
 | --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/ScrollCaptureTarget#setScrollBounds(android.graphics.Rect)(scrollBounds: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#?)` Sets the scroll bounds rect to the intersection of provided rect and the current bounds of the `containing view`. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/ScrollCaptureTarget#toString()()` Returns a string representation of the object. |
@@ -52,11 +52,11 @@ ScrollCaptureTarget(
 
 | Parameters ||
 |---|---|
-| `scrollTarget` | [View](../android/view/View.md): This value cannot be `null`. |
-| `localVisibleRect` | [Rect](../android/graphics/Rect.md): This value cannot be `null`. |
-| `positionInWindow` | [Point](../android/graphics/Point.md): This value cannot be `null`. |
+| `scrollTarget` | [View](View.md): This value cannot be `null`. |
+| `localVisibleRect` | [Rect](../android.graphics/Rect.md): This value cannot be `null`. |
+| `positionInWindow` | [Point](../android.graphics/Point.md): This value cannot be `null`. |
 | --- | --- |
-| `callback` | [ScrollCaptureCallback](../android/view/ScrollCaptureCallback.md): This value cannot be `null`. |
+| `callback` | [ScrollCaptureCallback](ScrollCaptureCallback.md): This value cannot be `null`. |
 
 ## Public methods
 
@@ -154,7 +154,7 @@ Sets the scroll bounds rect to the intersection of provided rect and the current
 
 | Parameters ||
 |---|---|
-| `scrollBounds` | [Rect](../android/graphics/Rect.md)?: This value may be `null`. |
+| `scrollBounds` | [Rect](../android.graphics/Rect.md)?: This value may be `null`. |
 
 ### toString
 
@@ -179,4 +179,4 @@ fun updatePositionInWindow(): Unit
 ```
 
 Refresh the local visible bounds and its offset within the window, based on the current state of the `containing view`. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md)) of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md)) of your app.

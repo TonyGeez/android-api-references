@@ -10,7 +10,7 @@ abstract class SecretKeyFactorySpi
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.crypto.SecretKeyFactorySpi](../javax/crypto/SecretKeyFactorySpi.md) |
+| ↳ | [javax.crypto.SecretKeyFactorySpi](SecretKeyFactorySpi.md) |
 
 This class defines the *Service Provider Interface* (**SPI** ) for the `SecretKeyFactory` class. All the abstract methods in this class must be implemented by each cryptographic service provider who wishes to supply the implementation of a secret-key factory for a particular algorithm.
 
@@ -20,13 +20,13 @@ A provider should document all the key specifications supported by its secret ke
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SecretKeyFactorySpi](../javax/crypto/SecretKeyFactorySpi.md))`()` <br /> |
+| [SecretKeyFactorySpi](SecretKeyFactorySpi.md))`()` <br /> |
 
 | Protected methods ||
 |------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [SecretKey](../javax/crypto/SecretKey.md)! | [engineGenerateSecret](../javax/crypto/SecretKeyFactorySpi.md))`(`keySpec:` ` [KeySpec](../java/security/spec/KeySpec.md)!`)` Generates a `SecretKey` object from the provided key specification (key material). |
-| abstract [KeySpec](../java/security/spec/KeySpec.md)! | [engineGetKeySpec](../javax/crypto/SecretKeyFactorySpi.md))`(`key:` ` [SecretKey](../javax/crypto/SecretKey.md)!`, `keySpec:` ` [Class](../java/lang/Class.md)<*>!`)` Returns a specification (key material) of the given key object in the requested format. |
-| abstract [SecretKey](../javax/crypto/SecretKey.md)! | [engineTranslateKey](../javax/crypto/SecretKeyFactorySpi.md))`(`key:` ` [SecretKey](../javax/crypto/SecretKey.md)!`)` Translates a key object, whose provider may be unknown or potentially untrusted, into a corresponding key object of this secret-key factory. |
+| abstract [SecretKey](SecretKey.md)! | [engineGenerateSecret](SecretKeyFactorySpi.md))`(`keySpec:` ` [KeySpec](../java.security.spec/KeySpec.md)!`)` Generates a `SecretKey` object from the provided key specification (key material). |
+| abstract [KeySpec](../java.security.spec/KeySpec.md)! | [engineGetKeySpec](SecretKeyFactorySpi.md))`(`key:` ` [SecretKey](SecretKey.md)!`, `keySpec:` ` [Class](../java.lang/Class.md)<*>!`)` Returns a specification (key material) of the given key object in the requested format. |
+| abstract [SecretKey](SecretKey.md)! | [engineTranslateKey](SecretKeyFactorySpi.md))`(`key:` ` [SecretKey](SecretKey.md)!`)` Translates a key object, whose provider may be unknown or potentially untrusted, into a corresponding key object of this secret-key factory. |
 | --- | --- |
 
 ## Public constructors
@@ -53,11 +53,11 @@ Generates a `SecretKey` object from the provided key specification (key material
 
 | Parameters ||
 |-----------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| `keySpec` | [KeySpec](../java/security/spec/KeySpec.md)!: the specification (key material) of the secret key |
+| `keySpec` | [KeySpec](../java.security.spec/KeySpec.md)!: the specification (key material) of the secret key |
 
 | Return ||
 |-------------------------------------------------------------------------------------|----------------|
-| [SecretKey](../javax/crypto/SecretKey.md)! | the secret key |
+| [SecretKey](SecretKey.md)! | the secret key |
 
 | Exceptions ||
 |----------------------------------------------|------------------------------------------------------------------------------------------------------|
@@ -78,12 +78,12 @@ Returns a specification (key material) of the given key object in the requested 
 
 | Parameters ||
 |-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `key` | [SecretKey](../javax/crypto/SecretKey.md)!: the key |
-| `keySpec` | [Class](../java/lang/Class.md)\<\*\>!: the requested format in which the key material shall be returned |
+| `key` | [SecretKey](SecretKey.md)!: the key |
+| `keySpec` | [Class](../java.lang/Class.md)\<\*\>!: the requested format in which the key material shall be returned |
 
 | Return ||
 |---------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| [KeySpec](../java/security/spec/KeySpec.md)! | the underlying key specification (key material) in the requested format |
+| [KeySpec](../java.security.spec/KeySpec.md)! | the underlying key specification (key material) in the requested format |
 
 | Exceptions ||
 |----------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -101,11 +101,11 @@ Translates a key object, whose provider may be unknown or potentially untrusted,
 
 | Parameters ||
 |-------|-------------------------------------------------------------------------------------------------------------------------------------|
-| `key` | [SecretKey](../javax/crypto/SecretKey.md)!: the key whose provider is unknown or untrusted |
+| `key` | [SecretKey](SecretKey.md)!: the key whose provider is unknown or untrusted |
 
 | Return ||
 |-------------------------------------------------------------------------------------|--------------------|
-| [SecretKey](../javax/crypto/SecretKey.md)! | the translated key |
+| [SecretKey](SecretKey.md)! | the translated key |
 
 | Exceptions ||
 |-------------------------------------|------------------------------------------------------------------|

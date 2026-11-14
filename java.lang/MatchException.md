@@ -11,10 +11,10 @@ class MatchException : RuntimeException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
-| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) ||
+| | ↳ | [java.lang.Exception](Exception.md) |||
+| | | ↳ | [java.lang.RuntimeException](RuntimeException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.MatchException](../java/lang/MatchException.md) |
+| | | | ↳ | [java.lang.MatchException](MatchException.md) |
 
 Thrown to indicate an unexpected failure in pattern matching.
 
@@ -24,13 +24,13 @@ Thrown to indicate an unexpected failure in pattern matching.
 - `null`values and nested patterns involving sealed classes. If, for example, an interface`I`is`sealed`with two permitted subclasses`A`and`B`, and a record class`R`has a single component of type`I`, then the two record patterns`R(A a)`and`R(B b)`together are considered to be exhaustive for the type`R`, but neither of these patterns will match against the result of`new R(null)`.
 - `null`values and nested record patterns. Given a record class`S`with a single component of type`T`, where`T`is another record class with a single component of type`String`, then the nested record pattern`R(S(var s))`is considered exhaustive for the type`R`but it does not match against the result of`new R(null)`(whereas it does match against the result of`new R(new S(null))`does).
 
-`MatchException`may also be thrown by the process of pattern matching a value against a pattern. For example, pattern matching involving a record pattern may require accessor methods to be implicitly invoked in order to extract the component values. If any of these accessor methods throws an exception, pattern matching completes abruptly and throws`MatchException`. The original exception will be set as a [cause](../java/lang/Throwable.md))of the`MatchException`. No [suppressed](../java/lang/Throwable.md))exceptions will be recorded.
+`MatchException`may also be thrown by the process of pattern matching a value against a pattern. For example, pattern matching involving a record pattern may require accessor methods to be implicitly invoked in order to extract the component values. If any of these accessor methods throws an exception, pattern matching completes abruptly and throws`MatchException`. The original exception will be set as a [cause](Throwable.md))of the`MatchException`. No [suppressed](Throwable.md))exceptions will be recorded.
 
 ## Summary
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [MatchException](../java/lang/MatchException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs an`MatchException`with the specified detail message and cause. |
+| [MatchException](MatchException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs an`MatchException`with the specified detail message and cause. |
 
 ## Public constructors
 
@@ -48,5 +48,5 @@ Constructs an`MatchException`with the specified detail message and cause.
 
 | Parameters ||
 |-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the detail message (which is saved for later retrieval by the [getMessage()](../java/lang/Throwable.md))method). |
-| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!:the cause (which is saved for later retrieval by the [getCause()](../java/lang/Throwable.md))method). (A`null`value is permitted, and indicates that the cause is nonexistent or unknown.) |
+| `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the detail message (which is saved for later retrieval by the [getMessage()](Throwable.md))method). |
+| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!:the cause (which is saved for later retrieval by the [getCause()](Throwable.md))method). (A`null`value is permitted, and indicates that the cause is nonexistent or unknown.) |

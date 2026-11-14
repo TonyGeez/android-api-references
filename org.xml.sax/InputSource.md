@@ -10,7 +10,7 @@ open class InputSource
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [org.xml.sax.InputSource](../org/xml/sax/InputSource.md) |
+| ↳ | [org.xml.sax.InputSource](InputSource.md) |
 
 A single input source for an XML entity.*This module, both source code and documentation, is in the Public Domain, and comes with**NO WARRANTY**.* See<http://www.saxproject.org>for further information.
 
@@ -26,26 +26,26 @@ An InputSource object belongs to the application: the SAX parser shall never mod
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [InputSource](../org/xml/sax/InputSource.md))`()` Zero-argument default constructor. |
-| [InputSource](../org/xml/sax/InputSource.md))`(`byteStream:` ` [InputStream](../java/io/InputStream.md)!`)` Create a new input source with a byte stream. |
-| [InputSource](../org/xml/sax/InputSource.md))`(`characterStream:` ` [Reader](../java/io/Reader.md)!`)` Create a new input source with a character stream. |
-| [InputSource](../org/xml/sax/InputSource.md))`(`systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Create a new input source with a system identifier. |
+| [InputSource](InputSource.md))`()` Zero-argument default constructor. |
+| [InputSource](InputSource.md))`(`byteStream:` ` [InputStream](../java.io/InputStream.md)!`)` Create a new input source with a byte stream. |
+| [InputSource](InputSource.md))`(`characterStream:` ` [Reader](../java.io/Reader.md)!`)` Create a new input source with a character stream. |
+| [InputSource](InputSource.md))`(`systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Create a new input source with a system identifier. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [InputStream](../java/io/InputStream.md)! | [getByteStream](../org/xml/sax/InputSource.md))`()` Get the byte stream for this input source. |
-| open [Reader](../java/io/Reader.md)! | [getCharacterStream](../org/xml/sax/InputSource.md))`()` Get the character stream for this input source. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getEncoding](../org/xml/sax/InputSource.md))`()` Get the character encoding for a byte stream or URI. |
+| open [InputStream](../java.io/InputStream.md)! | [getByteStream](InputSource.md))`()` Get the byte stream for this input source. |
+| open [Reader](../java.io/Reader.md)! | [getCharacterStream](InputSource.md))`()` Get the character stream for this input source. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getEncoding](InputSource.md))`()` Get the character encoding for a byte stream or URI. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPublicId](../org/xml/sax/InputSource.md))`()` Get the public identifier for this input source. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSystemId](../org/xml/sax/InputSource.md))`()` Get the system identifier for this input source. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setByteStream](../org/xml/sax/InputSource.md))`(`byteStream:` ` [InputStream](../java/io/InputStream.md)!`)` Set the byte stream for this input source. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPublicId](InputSource.md))`()` Get the public identifier for this input source. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSystemId](InputSource.md))`()` Get the system identifier for this input source. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setByteStream](InputSource.md))`(`byteStream:` ` [InputStream](../java.io/InputStream.md)!`)` Set the byte stream for this input source. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCharacterStream](../org/xml/sax/InputSource.md))`(`characterStream:` ` [Reader](../java/io/Reader.md)!`)` Set the character stream for this input source. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEncoding](../org/xml/sax/InputSource.md))`(`encoding:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the character encoding, if known. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPublicId](../org/xml/sax/InputSource.md))`(`publicId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the public identifier for this input source. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCharacterStream](InputSource.md))`(`characterStream:` ` [Reader](../java.io/Reader.md)!`)` Set the character stream for this input source. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEncoding](InputSource.md))`(`encoding:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the character encoding, if known. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPublicId](InputSource.md))`(`publicId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the public identifier for this input source. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSystemId](../org/xml/sax/InputSource.md))`(`systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the system identifier for this input source. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSystemId](InputSource.md))`(`systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set the system identifier for this input source. |
 
 ## Public constructors
 
@@ -60,11 +60,11 @@ InputSource()
 Zero-argument default constructor. 
 **See Also**
 
-- [#setPublicId](../org/xml/sax/InputSource.md))
-- [#setSystemId](../org/xml/sax/InputSource.md))
-- [#setByteStream](../org/xml/sax/InputSource.md))
-- [#setCharacterStream](../org/xml/sax/InputSource.md))
-- [#setEncoding](../org/xml/sax/InputSource.md)) 
+- [#setPublicId](InputSource.md))
+- [#setSystemId](InputSource.md))
+- [#setByteStream](InputSource.md))
+- [#setCharacterStream](InputSource.md))
+- [#setEncoding](InputSource.md)) 
 
 ### InputSource
 
@@ -80,15 +80,15 @@ Application writers should use setSystemId() to provide a base for resolving rel
 
 | Parameters ||
 |--------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| `byteStream` | [InputStream](../java/io/InputStream.md)!:The raw byte stream containing the document. |
+| `byteStream` | [InputStream](../java.io/InputStream.md)!:The raw byte stream containing the document. |
 
 **See Also**
 
-- [#setPublicId](../org/xml/sax/InputSource.md))
-- [#setSystemId](../org/xml/sax/InputSource.md))
-- [#setEncoding](../org/xml/sax/InputSource.md))
-- [#setByteStream](../org/xml/sax/InputSource.md))
-- [#setCharacterStream](../org/xml/sax/InputSource.md)) 
+- [#setPublicId](InputSource.md))
+- [#setSystemId](InputSource.md))
+- [#setEncoding](InputSource.md))
+- [#setByteStream](InputSource.md))
+- [#setCharacterStream](InputSource.md)) 
 
 ### InputSource
 
@@ -106,14 +106,14 @@ The character stream shall not include a byte order mark.
 
 | Parameters ||
 |-------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| `characterStream` | [Reader](../java/io/Reader.md)!:The raw character stream containing the document. |
+| `characterStream` | [Reader](../java.io/Reader.md)!:The raw character stream containing the document. |
 
 **See Also**
 
-- [#setPublicId](../org/xml/sax/InputSource.md))
-- [#setSystemId](../org/xml/sax/InputSource.md))
-- [#setByteStream](../org/xml/sax/InputSource.md))
-- [#setCharacterStream](../org/xml/sax/InputSource.md)) 
+- [#setPublicId](InputSource.md))
+- [#setSystemId](InputSource.md))
+- [#setByteStream](InputSource.md))
+- [#setCharacterStream](InputSource.md)) 
 
 ### InputSource
 
@@ -135,11 +135,11 @@ If the system identifier is a URL, it must be fully resolved (it may not be a re
 
 **See Also**
 
-- [#setPublicId](../org/xml/sax/InputSource.md))
-- [#setSystemId](../org/xml/sax/InputSource.md))
-- [#setByteStream](../org/xml/sax/InputSource.md))
-- [#setEncoding](../org/xml/sax/InputSource.md))
-- [#setCharacterStream](../org/xml/sax/InputSource.md))
+- [#setPublicId](InputSource.md))
+- [#setSystemId](InputSource.md))
+- [#setByteStream](InputSource.md))
+- [#setEncoding](InputSource.md))
+- [#setCharacterStream](InputSource.md))
 
 ## Public methods
 
@@ -157,12 +157,12 @@ The getEncoding method will return the character encoding for this byte stream, 
 
 | Return ||
 |------------------------------------------------------------------------------------------|------------------------------------------------|
-| [InputStream](../java/io/InputStream.md)! | The byte stream, or null if none was supplied. |
+| [InputStream](../java.io/InputStream.md)! | The byte stream, or null if none was supplied. |
 
 **See Also**
 
-- [#getEncoding](../org/xml/sax/InputSource.md))
-- [#setByteStream](../org/xml/sax/InputSource.md)) 
+- [#getEncoding](InputSource.md))
+- [#setByteStream](InputSource.md)) 
 
 ### getCharacterStream
 
@@ -176,11 +176,11 @@ Get the character stream for this input source.
 
 | Return ||
 |--------------------------------------------------------------------------------|-----------------------------------------------------|
-| [Reader](../java/io/Reader.md)! | The character stream, or null if none was supplied. |
+| [Reader](../java.io/Reader.md)! | The character stream, or null if none was supplied. |
 
 **See Also**
 
-- [#setCharacterStream](../org/xml/sax/InputSource.md)) 
+- [#setCharacterStream](InputSource.md)) 
 
 ### getEncoding
 
@@ -198,9 +198,9 @@ Get the character encoding for a byte stream or URI. This value will be ignored 
 
 **See Also**
 
-- [#setByteStream](../org/xml/sax/InputSource.md))
-- [#getSystemId](../org/xml/sax/InputSource.md))
-- [#getByteStream](../org/xml/sax/InputSource.md)) 
+- [#setByteStream](InputSource.md))
+- [#getSystemId](InputSource.md))
+- [#getByteStream](InputSource.md)) 
 
 ### getPublicId
 
@@ -218,7 +218,7 @@ Get the public identifier for this input source.
 
 **See Also**
 
-- [#setPublicId](../org/xml/sax/InputSource.md)) 
+- [#setPublicId](InputSource.md)) 
 
 ### getSystemId
 
@@ -240,8 +240,8 @@ If the system ID is a URL, it will be fully resolved.
 
 **See Also**
 
-- [#setSystemId](../org/xml/sax/InputSource.md))
-- [#getEncoding](../org/xml/sax/InputSource.md)) 
+- [#setSystemId](InputSource.md))
+- [#getEncoding](InputSource.md)) 
 
 ### setByteStream
 
@@ -259,14 +259,14 @@ If the application knows the character encoding of the byte stream, it should se
 
 | Parameters ||
 |--------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| `byteStream` | [InputStream](../java/io/InputStream.md)!:A byte stream containing an XML document or other entity. |
+| `byteStream` | [InputStream](../java.io/InputStream.md)!:A byte stream containing an XML document or other entity. |
 
 **See Also**
 
-- [#setEncoding](../org/xml/sax/InputSource.md))
-- [#getByteStream](../org/xml/sax/InputSource.md))
-- [#getEncoding](../org/xml/sax/InputSource.md))
-- [java.io.InputStream](../java/io/InputStream.md) 
+- [#setEncoding](InputSource.md))
+- [#getByteStream](InputSource.md))
+- [#getEncoding](InputSource.md))
+- [java.io.InputStream](../java.io/InputStream.md) 
 
 ### setCharacterStream
 
@@ -282,12 +282,12 @@ If there is a character stream specified, the SAX parser will ignore any byte st
 
 | Parameters ||
 |-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| `characterStream` | [Reader](../java/io/Reader.md)!:The character stream containing the XML document or other entity. |
+| `characterStream` | [Reader](../java.io/Reader.md)!:The character stream containing the XML document or other entity. |
 
 **See Also**
 
-- [#getCharacterStream](../org/xml/sax/InputSource.md))
-- [java.io.Reader](../java/io/Reader.md) 
+- [#getCharacterStream](InputSource.md))
+- [java.io.Reader](../java.io/Reader.md) 
 
 ### setEncoding
 
@@ -309,9 +309,9 @@ This method has no effect when the application provides a character stream.
 
 **See Also**
 
-- [#setSystemId](../org/xml/sax/InputSource.md))
-- [#setByteStream](../org/xml/sax/InputSource.md))
-- [#getEncoding](../org/xml/sax/InputSource.md)) 
+- [#setSystemId](InputSource.md))
+- [#setByteStream](InputSource.md))
+- [#getEncoding](InputSource.md)) 
 
 ### setPublicId
 
@@ -331,9 +331,9 @@ The public identifier is always optional: if the application writer includes one
 
 **See Also**
 
-- [#getPublicId](../org/xml/sax/InputSource.md))
-- [org.xml.sax.Locator#getPublicId](../org/xml/sax/Locator.md))
-- [org.xml.sax.SAXParseException#getPublicId](../org/xml/sax/SAXParseException.md)) 
+- [#getPublicId](InputSource.md))
+- [org.xml.sax.Locator#getPublicId](Locator.md))
+- [org.xml.sax.SAXParseException#getPublicId](SAXParseException.md)) 
 
 ### setSystemId
 
@@ -357,7 +357,7 @@ If the system identifier is a URL, it must be fully resolved (it may not be a re
 
 **See Also**
 
-- [#setEncoding](../org/xml/sax/InputSource.md))
-- [#getSystemId](../org/xml/sax/InputSource.md))
-- [org.xml.sax.Locator#getSystemId](../org/xml/sax/Locator.md))
-- [org.xml.sax.SAXParseException#getSystemId](../org/xml/sax/SAXParseException.md))
+- [#setEncoding](InputSource.md))
+- [#getSystemId](InputSource.md))
+- [org.xml.sax.Locator#getSystemId](Locator.md))
+- [org.xml.sax.SAXParseException#getSystemId](SAXParseException.md))

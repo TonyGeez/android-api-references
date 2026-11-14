@@ -8,21 +8,21 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 @FunctionalInterface interface BiFunction<T : Any!, U : Any!, R : Any!>
 ```
 
-| [java.util.function.BiFunction](../java/util/function/BiFunction.md) |
+| [java.util.function.BiFunction](BiFunction.md) |
 
-| Known Direct Subclasses [BinaryOperator](../java/util/function/BinaryOperator.md) |----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------| | [BinaryOperator](../java/util/function/BinaryOperator.md) | Represents an operation upon two operands of the same type, producing a result of the same type as the operands. | |
+| Known Direct Subclasses [BinaryOperator](BinaryOperator.md) |----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------| | [BinaryOperator](BinaryOperator.md) | Represents an operation upon two operands of the same type, producing a result of the same type as the operands. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
-Represents a function that accepts two arguments and produces a result. This is the two-arity specialization of [Function](../java/util/function/Function.md).
+Represents a function that accepts two arguments and produces a result. This is the two-arity specialization of [Function](Function.md).
 
-This is a [functional interface](../java/util/function/_package.md) whose functional method is [apply(java.lang.Object,java.lang.Object)](../java/util/function/BiFunction.md)).
+This is a [functional interface](_package.md) whose functional method is [apply(java.lang.Object,java.lang.Object)](BiFunction.md)).
 
 ## Summary
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [BiFunction](../java/util/function/BiFunction.md)\<T,U,V\>! | [andThen](../java/util/function/BiFunction.md))`(`after:` ` [Function](../java/util/function/Function.md)<in` `R,` `out` `V>!`)` Returns a composed function that first applies this function to its input, and then applies the`after`function to the result. |
-| abstractR | [apply](../java/util/function/BiFunction.md))`(`t:` `T`, `u:` `U`)` Applies this function to the given arguments. |
+| open [BiFunction](BiFunction.md)\<T,U,V\>! | [andThen](BiFunction.md))`(`after:` ` [Function](Function.md)<in` `R,` `out` `V>!`)` Returns a composed function that first applies this function to its input, and then applies the`after`function to the result. |
+| abstractR | [apply](BiFunction.md))`(`t:` `T`, `u:` `U`)` Applies this function to the given arguments. |
 
 ## Public methods
 
@@ -39,11 +39,11 @@ Returns a composed function that first applies this function to its input, and t
 | Parameters ||
 |---------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `<V>` | the type of output of the`after`function, and of the composed function |
-| `after` | [Function](../java/util/function/Function.md)\<inR,outV\>!:the function to apply after this function is applied |
+| `after` | [Function](Function.md)\<inR,outV\>!:the function to apply after this function is applied |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
-| [BiFunction](../java/util/function/BiFunction.md)<T,` `U,` `V>! | a composed function that first applies this function and then applies the`after`function |
+| [BiFunction](BiFunction.md)<T,` `U,` `V>! | a composed function that first applies this function and then applies the`after`function |
 
 | Exceptions ||
 |----------------------------------|------------------|

@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # Ringtone
 
-Kotlin| [Java](../android/media/Ringtone.md) 
+Kotlin| [Java](Ringtone.md) 
 | --- | --- |
 
 ```
@@ -13,38 +13,38 @@ open class Ringtone
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.Ringtone](../android/media/Ringtone.md) |
+| ↳ | [android.media.Ringtone](Ringtone.md) |
 
 Ringtone provides a quick method for playing a ringtone, notification, or other similar types of sounds.
 
-For ways of retrieving [Ringtone](../android/media/Ringtone.md) objects or to show a ringtone picker, see [RingtoneManager](../android/media/RingtoneManager.md).
+For ways of retrieving [Ringtone](Ringtone.md) objects or to show a ringtone picker, see [RingtoneManager](RingtoneManager.md).
 
 ## Summary
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [AudioAttributes](../android/media/AudioAttributes.md)! | [getAudioAttributes](../android/media/Ringtone.md))`()` Returns the [AudioAttributes](../android/media/AudioAttributes.md) used by this object. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStreamType](../android/media/Ringtone.md))`()` Gets the stream type where this ringtone will be played. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getTitle](../android/media/Ringtone.md))`(`context:` ` [Context](../android/content/Context.md)!`)` Returns a human-presentable title for ringtone. |
+| open [AudioAttributes](AudioAttributes.md)! | [getAudioAttributes](Ringtone.md))`()` Returns the [AudioAttributes](AudioAttributes.md) used by this object. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStreamType](Ringtone.md))`()` Gets the stream type where this ringtone will be played. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getTitle](Ringtone.md))`(`context:` ` [Context](../android.content/Context.md)!`)` Returns a human-presentable title for ringtone. |
 | --- | --- |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getVolume](../android/media/Ringtone.md))`()` Returns the volume scalar set on this player. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isHapticGeneratorEnabled](../android/media/Ringtone.md))`()` Return whether the [android.media.audiofx.HapticGenerator](../android/media/audiofx/HapticGenerator.md) effect is enabled or not. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLooping](../android/media/Ringtone.md))`()` Returns whether the looping mode was enabled on this player. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getVolume](Ringtone.md))`()` Returns the volume scalar set on this player. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isHapticGeneratorEnabled](Ringtone.md))`()` Return whether the [android.media.audiofx.HapticGenerator](../android.media.audiofx/HapticGenerator.md) effect is enabled or not. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLooping](Ringtone.md))`()` Returns whether the looping mode was enabled on this player. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPlaying](../android/media/Ringtone.md))`()` Whether this ringtone is currently playing. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [play](../android/media/Ringtone.md))`()` Plays the ringtone. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAudioAttributes](../android/media/Ringtone.md))`(`attributes:` ` [AudioAttributes](../android/media/AudioAttributes.md)!`)` Sets the [AudioAttributes](../android/media/AudioAttributes.md) for this ringtone. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPlaying](Ringtone.md))`()` Whether this ringtone is currently playing. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [play](Ringtone.md))`()` Plays the ringtone. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAudioAttributes](Ringtone.md))`(`attributes:` ` [AudioAttributes](AudioAttributes.md)!`)` Sets the [AudioAttributes](AudioAttributes.md) for this ringtone. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [setHapticGeneratorEnabled](../android/media/Ringtone.md))`(`enabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Enable or disable the [android.media.audiofx.HapticGenerator](../android/media/audiofx/HapticGenerator.md) effect. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLooping](../android/media/Ringtone.md))`(`looping:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets the player to be looping or non-looping. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStreamType](../android/media/Ringtone.md))`(`streamType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the stream type where this ringtone will be played. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [setHapticGeneratorEnabled](Ringtone.md))`(`enabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Enable or disable the [android.media.audiofx.HapticGenerator](../android.media.audiofx/HapticGenerator.md) effect. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLooping](Ringtone.md))`(`looping:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets the player to be looping or non-looping. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStreamType](Ringtone.md))`(`streamType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the stream type where this ringtone will be played. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setVolume](../android/media/Ringtone.md))`(`volume:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the volume on this player. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [stop](../android/media/Ringtone.md))`()` Stops a playing ringtone. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setVolume](Ringtone.md))`(`volume:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the volume on this player. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [stop](Ringtone.md))`()` Stops a playing ringtone. |
 
 | Protected methods ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](../android/media/Ringtone.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](Ringtone.md))`()` <br /> |
 
 ## Public methods
 
@@ -56,11 +56,11 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 open fun getAudioAttributes(): AudioAttributes!
 ```
 
-Returns the [AudioAttributes](../android/media/AudioAttributes.md) used by this object.
+Returns the [AudioAttributes](AudioAttributes.md) used by this object.
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [AudioAttributes](../android/media/AudioAttributes.md)! | the [AudioAttributes](../android/media/AudioAttributes.md) that were set with [setAudioAttributes(android.media.AudioAttributes)](../android/media/Ringtone.md))or the default attributes if none were set. |
+| [AudioAttributes](AudioAttributes.md)! | the [AudioAttributes](AudioAttributes.md) that were set with [setAudioAttributes(android.media.AudioAttributes)](Ringtone.md))or the default attributes if none were set. |
 
 ### getStreamType
 
@@ -71,13 +71,13 @@ Deprecated in [API level 21](https://developer.android.com/guide/topics/manifest
 open fun getStreamType(): Int
 ```
 
-**Deprecated:** *use of stream types is deprecated, see [setAudioAttributes(android.media.AudioAttributes)](../android/media/Ringtone.md))*
+**Deprecated:** *use of stream types is deprecated, see [setAudioAttributes(android.media.AudioAttributes)](Ringtone.md))*
 
 Gets the stream type where this ringtone will be played.
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The stream type, see [AudioManager](../android/media/AudioManager.md). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The stream type, see [AudioManager](AudioManager.md). |
 
 ### getTitle
 
@@ -91,7 +91,7 @@ Returns a human-presentable title for ringtone. Looks in media content provider.
 
 | Parameters ||
 |-----------|-----------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](../android/content/Context.md)!:A context used for querying. |
+| `context` | [Context](../android.content/Context.md)!:A context used for querying. |
 
 ### getVolume
 
@@ -115,7 +115,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 open fun isHapticGeneratorEnabled(): Boolean
 ```
 
-Return whether the [android.media.audiofx.HapticGenerator](../android/media/audiofx/HapticGenerator.md) effect is enabled or not.
+Return whether the [android.media.audiofx.HapticGenerator](../android.media.audiofx/HapticGenerator.md) effect is enabled or not.
 
 | Return ||
 |------------------------------------------------------------------------------------|-----------------------------------------|
@@ -167,11 +167,11 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 open fun setAudioAttributes(attributes: AudioAttributes!): Unit
 ```
 
-Sets the [AudioAttributes](../android/media/AudioAttributes.md) for this ringtone.
+Sets the [AudioAttributes](AudioAttributes.md) for this ringtone.
 
 | Parameters ||
 |--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `attributes` | [AudioAttributes](../android/media/AudioAttributes.md)!:the non-null attributes characterizing this ringtone. |
+| `attributes` | [AudioAttributes](AudioAttributes.md)!:the non-null attributes characterizing this ringtone. |
 
 ### setHapticGeneratorEnabled
 
@@ -181,7 +181,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 open fun setHapticGeneratorEnabled(enabled: Boolean): Boolean
 ```
 
-Enable or disable the [android.media.audiofx.HapticGenerator](../android/media/audiofx/HapticGenerator.md) effect. The effect can only be enabled on devices that support the effect.
+Enable or disable the [android.media.audiofx.HapticGenerator](../android.media.audiofx/HapticGenerator.md) effect. The effect can only be enabled on devices that support the effect.
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
@@ -189,7 +189,7 @@ Enable or disable the [android.media.audiofx.HapticGenerator](../android/media/a
 
 **See Also**
 
-- [android.media.audiofx.HapticGenerator#isAvailable()](../android/media/audiofx/HapticGenerator.md)) 
+- [android.media.audiofx.HapticGenerator#isAvailable()](../android.media.audiofx/HapticGenerator.md)) 
 
 ### setLooping
 
@@ -214,13 +214,13 @@ Deprecated in [API level 21](https://developer.android.com/guide/topics/manifest
 open fun setStreamType(streamType: Int): Unit
 ```
 
-**Deprecated:** *use [setAudioAttributes(android.media.AudioAttributes)](../android/media/Ringtone.md))*
+**Deprecated:** *use [setAudioAttributes(android.media.AudioAttributes)](Ringtone.md))*
 
 Sets the stream type where this ringtone will be played.
 
 | Parameters ||
 |--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `streamType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The stream, see [AudioManager](../android/media/AudioManager.md). |
+| `streamType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The stream, see [AudioManager](AudioManager.md). |
 
 ### setVolume
 

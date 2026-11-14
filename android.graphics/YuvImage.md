@@ -4,7 +4,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 
 # YuvImage
 
-Kotlin| [Java](../android/graphics/YuvImage.md) 
+Kotlin| [Java](YuvImage.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class YuvImage
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.graphics.YuvImage](../android/graphics/YuvImage.md) |
+| ↳ | [android.graphics.YuvImage](YuvImage.md) |
 
 YuvImage contains YUV data and provides a method that compresses a region of the YUV data to a Jpeg. The YUV data should be provided as a single byte array irrespective of the number of image planes in it. Currently only ImageFormat.NV21 and ImageFormat.YUY2 are supported. To compress a rectangle region in the YUV data, users have to specify the region by left, top, width and height.
 
@@ -21,21 +21,21 @@ YuvImage contains YUV data and provides a method that compresses a region of the
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [YuvImage](../android/graphics/YuvImage.md))`(`yuv:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `format:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `height:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `strides:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` Construct an YuvImage. |
-| [YuvImage](../android/graphics/YuvImage.md))`(`yuv:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`, `format:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `height:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `strides:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)?`, `colorSpace:` ` [ColorSpace](../android/graphics/ColorSpace.md)`)` Construct an YuvImage. |
+| [YuvImage](YuvImage.md))`(`yuv:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `format:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `height:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `strides:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` Construct an YuvImage. |
+| [YuvImage](YuvImage.md))`(`yuv:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`, `format:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `height:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `strides:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)?`, `colorSpace:` ` [ColorSpace](ColorSpace.md)`)` Construct an YuvImage. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [compressToJpeg](../android/graphics/YuvImage.md))`(`rectangle:` ` [Rect](../android/graphics/Rect.md)!`, `quality:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `stream:` ` [OutputStream](../java/io/OutputStream.md)!`)` Compress a rectangle region in the YuvImage to a jpeg. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [compressToJpegR](../android/graphics/YuvImage.md))`(`sdr:` ` [YuvImage](../android/graphics/YuvImage.md)`, `quality:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `stream:` ` [OutputStream](../java/io/OutputStream.md)`)` Compress the HDR image into JPEG/R format. |
-| open [ColorSpace](../android/graphics/ColorSpace.md) | [getColorSpace](../android/graphics/YuvImage.md))`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [compressToJpeg](YuvImage.md))`(`rectangle:` ` [Rect](Rect.md)!`, `quality:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `stream:` ` [OutputStream](../java.io/OutputStream.md)!`)` Compress a rectangle region in the YuvImage to a jpeg. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [compressToJpegR](YuvImage.md))`(`sdr:` ` [YuvImage](YuvImage.md)`, `quality:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `stream:` ` [OutputStream](../java.io/OutputStream.md)`)` Compress the HDR image into JPEG/R format. |
+| open [ColorSpace](ColorSpace.md) | [getColorSpace](YuvImage.md))`()` <br /> |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHeight](../android/graphics/YuvImage.md))`()` <br /> |
-| open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | [getStrides](../android/graphics/YuvImage.md))`()` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWidth](../android/graphics/YuvImage.md))`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHeight](YuvImage.md))`()` <br /> |
+| open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)! | [getStrides](YuvImage.md))`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWidth](YuvImage.md))`()` <br /> |
 | --- | --- |
-| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getYuvData](../android/graphics/YuvImage.md))`()` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getYuvFormat](../android/graphics/YuvImage.md))`()` <br /> |
+| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getYuvData](YuvImage.md))`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getYuvFormat](YuvImage.md))`()` <br /> |
 
 ## Public constructors
 
@@ -52,12 +52,12 @@ YuvImage(
     strides: IntArray!)
 ```
 
-Construct an YuvImage. Use SRGB for as default [ColorSpace](../android/graphics/ColorSpace.md).
+Construct an YuvImage. Use SRGB for as default [ColorSpace](ColorSpace.md).
 
 | Parameters ||
 |-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `yuv` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:The YUV data. In the case of more than one image plane, all the planes must be concatenated into a single byte array. |
-| `format` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The YUV data format as defined in [ImageFormat](../android/graphics/ImageFormat.md). |
+| `format` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The YUV data format as defined in [ImageFormat](ImageFormat.md). |
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The width of the YuvImage. |
 | --- | --- |
 | `height` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The height of the YuvImage. |
@@ -86,12 +86,12 @@ Construct an YuvImage.
 | Parameters ||
 |--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `yuv` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html):The YUV data. In the case of more than one image plane, all the planes must be concatenated into a single byte array. This value cannot be`null`. |
-| `format` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The YUV data format as defined in [ImageFormat](../android/graphics/ImageFormat.md). |
+| `format` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The YUV data format as defined in [ImageFormat](ImageFormat.md). |
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The width of the YuvImage. |
 | --- | --- |
 | `height` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The height of the YuvImage. |
 | `strides` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)?:(Optional) Row bytes of each image plane. If yuv contains padding, the stride of each image must be provided. If strides is null, the method assumes no padding and derives the row bytes by format and width itself. |
-| `colorSpace` | [ColorSpace](../android/graphics/ColorSpace.md):The YUV image color space as defined in [ColorSpace](../android/graphics/ColorSpace.md). If the parameter is null, SRGB will be set as the default value. |
+| `colorSpace` | [ColorSpace](ColorSpace.md):The YUV image color space as defined in [ColorSpace](ColorSpace.md). If the parameter is null, SRGB will be set as the default value. |
 | --- | --- |
 
 | Exceptions ||
@@ -116,9 +116,9 @@ Compress a rectangle region in the YuvImage to a jpeg. For image format, only Im
 
 | Parameters ||
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `rectangle` | [Rect](../android/graphics/Rect.md)!:The rectangle region to be compressed. The medthod checks if rectangle is inside the image. Also, the method modifies rectangle if the chroma pixels in it are not matched with the luma pixels in it. |
+| `rectangle` | [Rect](Rect.md)!:The rectangle region to be compressed. The medthod checks if rectangle is inside the image. Also, the method modifies rectangle if the chroma pixels in it are not matched with the luma pixels in it. |
 | `quality` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Hint to the compressor, 0-100. 0 meaning compress for small size, 100 meaning compress for max quality. |
-| `stream` | [OutputStream](../java/io/OutputStream.md)!:OutputStream to write the compressed data. |
+| `stream` | [OutputStream](../java.io/OutputStream.md)!:OutputStream to write the compressed data. |
 | --- | --- |
 
 | Return ||
@@ -145,9 +145,9 @@ Compress the HDR image into JPEG/R format. Sample usage: hdr_image.compressToJpe
 
 | Parameters ||
 |-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `sdr` | [YuvImage](../android/graphics/YuvImage.md):The SDR image, only ImageFormat.YUV_420_888 is supported. This value cannot be`null`. |
+| `sdr` | [YuvImage](YuvImage.md):The SDR image, only ImageFormat.YUV_420_888 is supported. This value cannot be`null`. |
 | `quality` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Hint to the compressor, 0-100. 0 meaning compress for small size, 100 meaning compress for max quality. |
-| `stream` | [OutputStream](../java/io/OutputStream.md):OutputStream to write the compressed data. This value cannot be`null`. |
+| `stream` | [OutputStream](../java.io/OutputStream.md):OutputStream to write the compressed data. This value cannot be`null`. |
 | --- | --- |
 
 | Return ||
@@ -168,7 +168,7 @@ open fun getColorSpace(): ColorSpace
 
 | Return ||
 |------------------------------------------------------------------------------------------|-----------------------------------------------------------|
-| [ColorSpace](../android/graphics/ColorSpace.md) | the color space of the image. This value cannot be`null`. |
+| [ColorSpace](ColorSpace.md) | the color space of the image. This value cannot be`null`. |
 
 ### getHeight
 
@@ -228,4 +228,4 @@ open fun getYuvFormat(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the YUV format as defined in [ImageFormat](../android/graphics/ImageFormat.md). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the YUV format as defined in [ImageFormat](ImageFormat.md). |

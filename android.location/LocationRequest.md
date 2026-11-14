@@ -2,7 +2,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # LocationRequest
 
-Kotlin | [Java](../android/location/LocationRequest.md)
+Kotlin | [Java](LocationRequest.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class LocationRequest : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.location.LocationRequest](../android/location/LocationRequest.md) |
+| ↳ | [android.location.LocationRequest](LocationRequest.md) |
 
 An encapsulation of various parameters for requesting location via `https://developer.android.com/reference/kotlin/android/location/LocationManager`.
 
@@ -54,7 +54,7 @@ An encapsulation of various parameters for requesting location via `https://deve
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [LocationRequest](../android/location/LocationRequest.md)!\> | `https://developer.android.com/reference/kotlin/android/location/LocationRequest#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [LocationRequest](LocationRequest.md)!\> | `https://developer.android.com/reference/kotlin/android/location/LocationRequest#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -311,7 +311,7 @@ Flatten this object in to a Parcel.
 |---|---|
 | `dest` | The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
-| `parcel` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
+| `parcel` | [Parcel](../android.os/Parcel.md): This value cannot be `null`. |
 | --- | --- |
 
 ## Properties

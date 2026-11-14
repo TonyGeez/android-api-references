@@ -8,7 +8,7 @@ class RangingSession : AutoCloseable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.ranging.RangingSession](../android/ranging/RangingSession.md) |
+| ↳ | [android.ranging.RangingSession](RangingSession.md) |
 
 Represents a session for performing ranging operations. A `https://developer.android.com/reference/kotlin/android/ranging/RangingSession#` manages the lifecycle of a ranging operation, including start, stop, and event callbacks.
 
@@ -29,7 +29,7 @@ This class implements `https://developer.android.com/reference/kotlin/java/lang/
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingSession#reconfigureRangingInterval(kotlin.Int)(intervalSkipCount: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Reconfigures the ranging interval for the current session by setting the interval skip count. |
 | --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingSession#removeDeviceFromRangingSession(android.ranging.RangingDevice)(rangingDevice: https://developer.android.com/reference/kotlin/android/ranging/RangingDevice)` Removes a specific device from an ongoing ranging session. |
-| [CancellationSignal](../android/os/CancellationSignal.md) | `https://developer.android.com/reference/kotlin/android/ranging/RangingSession#start(android.ranging.RangingPreference)(rangingPreference: https://developer.android.com/reference/kotlin/android/ranging/RangingPreference)` Starts the ranging session with the provided ranging preferences. |
+| [CancellationSignal](../android.os/CancellationSignal.md) | `https://developer.android.com/reference/kotlin/android/ranging/RangingSession#start(android.ranging.RangingPreference)(rangingPreference: https://developer.android.com/reference/kotlin/android/ranging/RangingPreference)` Starts the ranging session with the provided ranging preferences. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingSession#stop()()` Stops the ranging session. |
 | --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/RangingSession#toString()()` Returns a string representation of the object. |
@@ -52,7 +52,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `deviceRangingParams` | [RangingConfig](../android/ranging/RangingConfig.md): the ranging parameters for the device to be added, which must be an instance of `https://developer.android.com/reference/kotlin/android/ranging/raw/RawResponderRangingConfig` This value cannot be `null`. |
+| `deviceRangingParams` | [RangingConfig](RangingConfig.md): the ranging parameters for the device to be added, which must be an instance of `https://developer.android.com/reference/kotlin/android/ranging/raw/RawResponderRangingConfig` This value cannot be `null`. |
 
 ### close
 
@@ -99,7 +99,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `rangingDevice` | [RangingDevice](../android/ranging/RangingDevice.md): the device to be removed from the session. This value cannot be `null`. |
+| `rangingDevice` | [RangingDevice](RangingDevice.md): the device to be removed from the session. This value cannot be `null`. |
 
 ### start
 
@@ -123,7 +123,7 @@ This method conditionally requires one or more permissions depending on the tech
 
 | Parameters ||
 |---|---|
-| `rangingPreference` | [RangingPreference](../android/ranging/RangingPreference.md): `https://developer.android.com/reference/kotlin/android/ranging/RangingPreference` the preferences for configuring the ranging session. This value cannot be `null`. |
+| `rangingPreference` | [RangingPreference](RangingPreference.md): `https://developer.android.com/reference/kotlin/android/ranging/RangingPreference` the preferences for configuring the ranging session. This value cannot be `null`. |
 
 | Return ||
 |---|---|

@@ -13,7 +13,7 @@ interface EllipsizeCallback
 
 | [android.text.TextUtils.EllipsizeCallback](../android/text/TextUtils.EllipsizeCallback.md) |
 
-| Known Direct Subclasses [BoringLayout](../android/text/BoringLayout.md) |------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------| | [BoringLayout](../android/text/BoringLayout.md) | A BoringLayout is a very simple Layout implementation for text that fits on a single line and is all left-to-right characters. | |
+| Known Direct Subclasses [BoringLayout](BoringLayout.md) |------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------| | [BoringLayout](BoringLayout.md) | A BoringLayout is a very simple Layout implementation for text that fits on a single line and is all left-to-right characters. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 ## Summary

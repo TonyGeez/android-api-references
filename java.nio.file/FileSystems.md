@@ -8,7 +8,7 @@ class FileSystems
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.nio.file.FileSystems](../java/nio/file/FileSystems.md) |
+| ↳ | [java.nio.file.FileSystems](FileSystems.md) |
 
 Factory methods for file systems. This class defines the `https://developer.android.com/reference/kotlin/java/nio/file/FileSystems#getDefault()` method to get the default file system and factory methods to construct other types of file systems.
 
@@ -24,16 +24,16 @@ If a thread initiates the loading of the installed file system providers and ano
 
 | Public methods ||
 |---|---|
-| static [FileSystem](../java/nio/file/FileSystem.md)! | `https://developer.android.com/reference/kotlin/java/nio/file/FileSystems#getDefault()()` Returns the default `FileSystem`. |
-| static [FileSystem](../java/nio/file/FileSystem.md)! | `https://developer.android.com/reference/kotlin/java/nio/file/FileSystems#getFileSystem(java.net.URI)(uri: https://developer.android.com/reference/kotlin/java/net/URI.html#!)` Returns a reference to an existing `FileSystem`. |
-| static [FileSystem](../java/nio/file/FileSystem.md)! | `https://developer.android.com/reference/kotlin/java/nio/file/FileSystems#newFileSystem(java.net.URI,%20kotlin.collections.MutableMap)(uri: https://developer.android.com/reference/kotlin/java/net/URI.html#!, env: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, *>!)` Constructs a new file system that is identified by a `https://developer.android.com/reference/kotlin/java/net/URI.html#` |
+| static [FileSystem](FileSystem.md)! | `https://developer.android.com/reference/kotlin/java/nio/file/FileSystems#getDefault()()` Returns the default `FileSystem`. |
+| static [FileSystem](FileSystem.md)! | `https://developer.android.com/reference/kotlin/java/nio/file/FileSystems#getFileSystem(java.net.URI)(uri: https://developer.android.com/reference/kotlin/java/net/URI.html#!)` Returns a reference to an existing `FileSystem`. |
+| static [FileSystem](FileSystem.md)! | `https://developer.android.com/reference/kotlin/java/nio/file/FileSystems#newFileSystem(java.net.URI,%20kotlin.collections.MutableMap)(uri: https://developer.android.com/reference/kotlin/java/net/URI.html#!, env: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, *>!)` Constructs a new file system that is identified by a `https://developer.android.com/reference/kotlin/java/net/URI.html#` |
 | --- | --- |
-| static [FileSystem](../java/nio/file/FileSystem.md)! | `https://developer.android.com/reference/kotlin/java/nio/file/FileSystems#newFileSystem(java.net.URI,%20kotlin.collections.MutableMap,%20java.lang.ClassLoader)(uri: https://developer.android.com/reference/kotlin/java/net/URI.html#!, env: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, *>!, loader: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#!)` Constructs a new file system that is identified by a `https://developer.android.com/reference/kotlin/java/net/URI.html#` |
-| static [FileSystem](../java/nio/file/FileSystem.md)! | `https://developer.android.com/reference/kotlin/java/nio/file/FileSystems#newFileSystem(java.nio.file.Path)(path: https://developer.android.com/reference/kotlin/java/nio/file/Path!)` Constructs a new `FileSystem` to access the contents of a file as a file system. |
-| static [FileSystem](../java/nio/file/FileSystem.md)! | `https://developer.android.com/reference/kotlin/java/nio/file/FileSystems#newFileSystem(java.nio.file.Path,%20java.lang.ClassLoader)(path: https://developer.android.com/reference/kotlin/java/nio/file/Path!, loader: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#!)` Constructs a new `FileSystem` to access the contents of a file as a file system. |
+| static [FileSystem](FileSystem.md)! | `https://developer.android.com/reference/kotlin/java/nio/file/FileSystems#newFileSystem(java.net.URI,%20kotlin.collections.MutableMap,%20java.lang.ClassLoader)(uri: https://developer.android.com/reference/kotlin/java/net/URI.html#!, env: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, *>!, loader: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#!)` Constructs a new file system that is identified by a `https://developer.android.com/reference/kotlin/java/net/URI.html#` |
+| static [FileSystem](FileSystem.md)! | `https://developer.android.com/reference/kotlin/java/nio/file/FileSystems#newFileSystem(java.nio.file.Path)(path: https://developer.android.com/reference/kotlin/java/nio/file/Path!)` Constructs a new `FileSystem` to access the contents of a file as a file system. |
+| static [FileSystem](FileSystem.md)! | `https://developer.android.com/reference/kotlin/java/nio/file/FileSystems#newFileSystem(java.nio.file.Path,%20java.lang.ClassLoader)(path: https://developer.android.com/reference/kotlin/java/nio/file/Path!, loader: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#!)` Constructs a new `FileSystem` to access the contents of a file as a file system. |
 | --- | --- |
-| static [FileSystem](../java/nio/file/FileSystem.md)! | `https://developer.android.com/reference/kotlin/java/nio/file/FileSystems#newFileSystem(java.nio.file.Path,%20kotlin.collections.MutableMap)(path: https://developer.android.com/reference/kotlin/java/nio/file/Path!, env: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, *>!)` Constructs a new `FileSystem` to access the contents of a file as a file system. |
-| static [FileSystem](../java/nio/file/FileSystem.md)! | `https://developer.android.com/reference/kotlin/java/nio/file/FileSystems#newFileSystem(java.nio.file.Path,%20kotlin.collections.MutableMap,%20java.lang.ClassLoader)(path: https://developer.android.com/reference/kotlin/java/nio/file/Path!, env: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, *>!, loader: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#!)` Constructs a new `FileSystem` to access the contents of a file as a file system. |
+| static [FileSystem](FileSystem.md)! | `https://developer.android.com/reference/kotlin/java/nio/file/FileSystems#newFileSystem(java.nio.file.Path,%20kotlin.collections.MutableMap)(path: https://developer.android.com/reference/kotlin/java/nio/file/Path!, env: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, *>!)` Constructs a new `FileSystem` to access the contents of a file as a file system. |
+| static [FileSystem](FileSystem.md)! | `https://developer.android.com/reference/kotlin/java/nio/file/FileSystems#newFileSystem(java.nio.file.Path,%20kotlin.collections.MutableMap,%20java.lang.ClassLoader)(path: https://developer.android.com/reference/kotlin/java/nio/file/Path!, env: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, *>!, loader: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#!)` Constructs a new `FileSystem` to access the contents of a file as a file system. |
 
 ## Public methods
 
@@ -75,7 +75,7 @@ If a security manager is installed then a provider implementation may require to
 
 | Parameters ||
 |---|---|
-| `uri` | [URI](../java/net/URI.md)!: the URI to locate the file system |
+| `uri` | [URI](../java.net/URI.md)!: the URI to locate the file system |
 
 | Return ||
 |---|---|
@@ -116,7 +116,7 @@ FileSystem fs = FileSystems.newFileSystem(URI.create("memory:///?name=logfs"),
 
 | Parameters ||
 |---|---|
-| `uri` | [URI](../java/net/URI.md)!: the URI identifying the file system |
+| `uri` | [URI](../java.net/URI.md)!: the URI identifying the file system |
 | `env` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, \*\>!: a map of provider specific properties to configure the file system; may be empty |
 
 | Return ||
@@ -150,9 +150,9 @@ This method first attempts to locate an installed provider in exactly the same m
 
 | Parameters ||
 |---|---|
-| `uri` | [URI](../java/net/URI.md)!: the URI identifying the file system |
+| `uri` | [URI](../java.net/URI.md)!: the URI identifying the file system |
 | `env` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, \*\>!: a map of provider specific properties to configure the file system; may be empty |
-| `loader` | [ClassLoader](../java/lang/ClassLoader.md)!: the class loader to locate the provider or `null` to only attempt to locate an installed provider |
+| `loader` | [ClassLoader](../java.lang/ClassLoader.md)!: the class loader to locate the provider or `null` to only attempt to locate an installed provider |
 | --- | --- |
 
 | Return ||
@@ -186,7 +186,7 @@ This method first attempts to locate an installed provider in exactly the same m
 
 | Parameters ||
 |---|---|
-| `path` | [Path](../java/nio/file/Path.md)!: the path to the file |
+| `path` | [Path](Path.md)!: the path to the file |
 
 | Return ||
 |---|---|
@@ -219,8 +219,8 @@ This method first attempts to locate an installed provider in exactly the same m
 
 | Parameters ||
 |---|---|
-| `path` | [Path](../java/nio/file/Path.md)!: the path to the file |
-| `loader` | [ClassLoader](../java/lang/ClassLoader.md)!: the class loader to locate the provider or `null` to only attempt to locate an installed provider |
+| `path` | [Path](Path.md)!: the path to the file |
+| `loader` | [ClassLoader](../java.lang/ClassLoader.md)!: the class loader to locate the provider or `null` to only attempt to locate an installed provider |
 
 | Return ||
 |---|---|
@@ -253,7 +253,7 @@ This method first attempts to locate an installed provider in exactly the same m
 
 | Parameters ||
 |---|---|
-| `path` | [Path](../java/nio/file/Path.md)!: the path to the file |
+| `path` | [Path](Path.md)!: the path to the file |
 | `env` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, \*\>!: a map of provider specific properties to configure the file system; may be empty |
 
 | Return ||
@@ -288,9 +288,9 @@ This method iterates over the `https://developer.android.com/reference/kotlin/ja
 
 | Parameters ||
 |---|---|
-| `path` | [Path](../java/nio/file/Path.md)!: the path to the file |
+| `path` | [Path](Path.md)!: the path to the file |
 | `env` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, \*\>!: a map of provider specific properties to configure the file system; may be empty |
-| `loader` | [ClassLoader](../java/lang/ClassLoader.md)!: the class loader to locate the provider or `null` to only attempt to locate an installed provider |
+| `loader` | [ClassLoader](../java.lang/ClassLoader.md)!: the class loader to locate the provider or `null` to only attempt to locate an installed provider |
 | --- | --- |
 
 | Return ||

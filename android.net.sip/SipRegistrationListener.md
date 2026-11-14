@@ -5,18 +5,18 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 
 # SipRegistrationListener
 
-Kotlin| [Java](../android/net/sip/SipRegistrationListener.md) 
+Kotlin| [Java](SipRegistrationListener.md) 
 | --- | --- |
 
 ```
 interface SipRegistrationListener
 ```
 
-| [android.net.sip.SipRegistrationListener](../android/net/sip/SipRegistrationListener.md) |
+| [android.net.sip.SipRegistrationListener](SipRegistrationListener.md) |
 
 | **This interface was deprecated in API level 31.**
 |
-| [android.net.sip.SipManager](../android/net/sip/SipManager.md) and associated classes are no longer supported and should not be used as the basis of future VOIP apps.
+| [android.net.sip.SipManager](SipManager.md) and associated classes are no longer supported and should not be used as the basis of future VOIP apps.
 
 Listener for SIP registration events.
 
@@ -24,9 +24,9 @@ Listener for SIP registration events.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onRegistering](../android/net/sip/SipRegistrationListener.md))`(`localProfileUri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Called when a registration request is sent. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onRegistrationDone](../android/net/sip/SipRegistrationListener.md))`(`localProfileUri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `expiryTime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Called when the registration succeeded. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onRegistrationFailed](../android/net/sip/SipRegistrationListener.md))`(`localProfileUri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `errorCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `errorMessage:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Called when the registration failed. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onRegistering](SipRegistrationListener.md))`(`localProfileUri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Called when a registration request is sent. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onRegistrationDone](SipRegistrationListener.md))`(`localProfileUri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `expiryTime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Called when the registration succeeded. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onRegistrationFailed](SipRegistrationListener.md))`(`localProfileUri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `errorCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `errorMessage:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Called when the registration failed. |
 | --- | --- |
 
 ## Public methods
@@ -92,4 +92,4 @@ Called when the registration failed.
 
 **See Also**
 
-- [android.net.sip.SipErrorCode](../android/net/sip/SipErrorCode.md)
+- [android.net.sip.SipErrorCode](SipErrorCode.md)

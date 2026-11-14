@@ -10,7 +10,7 @@ open class ECPoint
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.spec.ECPoint](../java/security/spec/ECPoint.md) |
+| ↳ | [java.security.spec.ECPoint](ECPoint.md) |
 
 This immutable class represents a point on an elliptic curve (EC) in affine coordinates. Other coordinate systems can extend this class to represent this point in other coordinates.
 
@@ -18,19 +18,19 @@ This immutable class represents a point on an elliptic curve (EC) in affine coor
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ECPoint](../java/security/spec/ECPoint.md))`(`x:` ` [BigInteger](../java/math/BigInteger.md)!`, `y:` ` [BigInteger](../java/math/BigInteger.md)!`)` Creates an ECPoint from the specified affine x-coordinate`x`and affine y-coordinate`y`. |
+| [ECPoint](ECPoint.md))`(`x:` ` [BigInteger](../java.math/BigInteger.md)!`, `y:` ` [BigInteger](../java.math/BigInteger.md)!`)` Creates an ECPoint from the specified affine x-coordinate`x`and affine y-coordinate`y`. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/security/spec/ECPoint.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this elliptic curve point for equality with the specified object. |
-| open [BigInteger](../java/math/BigInteger.md)! | [getAffineX](../java/security/spec/ECPoint.md))`()` Returns the affine x-coordinate`x`. |
-| open [BigInteger](../java/math/BigInteger.md)! | [getAffineY](../java/security/spec/ECPoint.md))`()` Returns the affine y-coordinate`y`. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](ECPoint.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this elliptic curve point for equality with the specified object. |
+| open [BigInteger](../java.math/BigInteger.md)! | [getAffineX](ECPoint.md))`()` Returns the affine x-coordinate`x`. |
+| open [BigInteger](../java.math/BigInteger.md)! | [getAffineY](ECPoint.md))`()` Returns the affine y-coordinate`y`. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/security/spec/ECPoint.md))`()` Returns a hash code value for this elliptic curve point. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](ECPoint.md))`()` Returns a hash code value for this elliptic curve point. |
 
 | Properties ||
 |----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [ECPoint](../java/security/spec/ECPoint.md)! | [POINT_INFINITY](../java/security/spec/ECPoint.md) This defines the point at infinity. |
+| static [ECPoint](ECPoint.md)! | [POINT_INFINITY](ECPoint.md) This defines the point at infinity. |
 
 ## Public constructors
 
@@ -48,8 +48,8 @@ Creates an ECPoint from the specified affine x-coordinate`x`and affine y-coordin
 
 | Parameters ||
 |-----|-------------------------------------------------------------------------------------------------------------------|
-| `x` | [BigInteger](../java/math/BigInteger.md)!:the affine x-coordinate. |
-| `y` | [BigInteger](../java/math/BigInteger.md)!:the affine y-coordinate. |
+| `x` | [BigInteger](../java.math/BigInteger.md)!:the affine x-coordinate. |
+| `y` | [BigInteger](../java.math/BigInteger.md)!:the affine y-coordinate. |
 
 | Exceptions ||
 |----------------------------------|--------------------|
@@ -87,7 +87,7 @@ Returns the affine x-coordinate`x`. Note: POINT_INFINITY has a null affine x-coo
 
 | Return ||
 |------------------------------------------------------------------------------------------|--------------------------|
-| [BigInteger](../java/math/BigInteger.md)! | the affine x-coordinate. |
+| [BigInteger](../java.math/BigInteger.md)! | the affine x-coordinate. |
 
 ### getAffineY
 
@@ -101,7 +101,7 @@ Returns the affine y-coordinate`y`. Note: POINT_INFINITY has a null affine y-coo
 
 | Return ||
 |------------------------------------------------------------------------------------------|--------------------------|
-| [BigInteger](../java/math/BigInteger.md)! | the affine y-coordinate. |
+| [BigInteger](../java.math/BigInteger.md)! | the affine y-coordinate. |
 
 ### hashCode
 

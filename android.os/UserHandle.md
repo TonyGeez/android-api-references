@@ -4,7 +4,7 @@ Added in [API level 17](https://developer.android.com/guide/topics/manifest/uses
 
 # UserHandle
 
-Kotlin| [Java](../android/os/UserHandle.md) 
+Kotlin| [Java](UserHandle.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class UserHandle : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.os.UserHandle](../android/os/UserHandle.md) |
+| ↳ | [android.os.UserHandle](UserHandle.md) |
 
 Representation of a user on the device.
 
@@ -21,28 +21,28 @@ Representation of a user on the device.
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](Parcelable.md) |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](Parcelable.md) <br /> Descriptor bit used with [describeContents()](Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](Parcelable.md) <br /> Flag for use with [writeToParcel](Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [UserHandle](../android/os/UserHandle.md))`(`in:` ` [Parcel](../android/os/Parcel.md)!`)` Instantiate a new UserHandle from the data in a Parcel that was previously written with [writeToParcel(android.os.Parcel,int)](../android/os/UserHandle.md)). |
+| [UserHandle](UserHandle.md))`(`in:` ` [Parcel](Parcel.md)!`)` Instantiate a new UserHandle from the data in a Parcel that was previously written with [writeToParcel(android.os.Parcel,int)](UserHandle.md)). |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/os/UserHandle.md))`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/os/UserHandle.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| static [UserHandle](../android/os/UserHandle.md)! | [getUserHandleForUid](../android/os/UserHandle.md))`(`uid:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the user for a given uid. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](UserHandle.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](UserHandle.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| static [UserHandle](UserHandle.md)! | [getUserHandleForUid](UserHandle.md))`(`uid:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the user for a given uid. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/os/UserHandle.md))`()` <br /> |
-| static [UserHandle](../android/os/UserHandle.md)! | [readFromParcel](../android/os/UserHandle.md))`(`in:` ` [Parcel](../android/os/Parcel.md)!`)` Read a UserHandle from a Parcel that was previously written with [writeToParcel(android.os.UserHandle,android.os.Parcel)](../android/os/UserHandle.md)), returning either a null or new object as appropriate. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/os/UserHandle.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](UserHandle.md))`()` <br /> |
+| static [UserHandle](UserHandle.md)! | [readFromParcel](UserHandle.md))`(`in:` ` [Parcel](Parcel.md)!`)` Read a UserHandle from a Parcel that was previously written with [writeToParcel(android.os.UserHandle,android.os.Parcel)](UserHandle.md)), returning either a null or new object as appropriate. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](UserHandle.md))`()` <br /> |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/os/UserHandle.md))`(`out:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/os/UserHandle.md))`(`h:` ` [UserHandle](../android/os/UserHandle.md)!`, `out:` ` [Parcel](../android/os/Parcel.md)!`)` Write a UserHandle to a Parcel, handling null pointers. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](UserHandle.md))`(`out:` ` [Parcel](Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](UserHandle.md))`(`h:` ` [UserHandle](UserHandle.md)!`, `out:` ` [Parcel](Parcel.md)!`)` Write a UserHandle to a Parcel, handling null pointers. |
 
 | Properties ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [UserHandle](../android/os/UserHandle.md)!\> | [CREATOR](../android/os/UserHandle.md) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [UserHandle](UserHandle.md)!\> | [CREATOR](UserHandle.md) <br /> |
 
 ## Public constructors
 
@@ -54,11 +54,11 @@ Added in [API level 17](https://developer.android.com/guide/topics/manifest/uses
 UserHandle(in: Parcel!)
 ```
 
-Instantiate a new UserHandle from the data in a Parcel that was previously written with [writeToParcel(android.os.Parcel,int)](../android/os/UserHandle.md)). Note that you must not use this with data written by [writeToParcel(android.os.UserHandle,android.os.Parcel)](../android/os/UserHandle.md))since it is not possible to handle a null UserHandle here.
+Instantiate a new UserHandle from the data in a Parcel that was previously written with [writeToParcel(android.os.Parcel,int)](UserHandle.md)). Note that you must not use this with data written by [writeToParcel(android.os.UserHandle,android.os.Parcel)](UserHandle.md))since it is not possible to handle a null UserHandle here.
 
 | Parameters ||
 |------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `in` | [Parcel](../android/os/Parcel.md)!:The Parcel containing the previously written UserHandle, positioned at the location in the buffer where it was written. |
+| `in` | [Parcel](Parcel.md)!:The Parcel containing the previously written UserHandle, positioned at the location in the buffer where it was written. |
 
 ## Public methods
 
@@ -72,7 +72,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](Parcelable.md) |
 
 ### equals
 
@@ -118,7 +118,7 @@ Returns the user for a given uid.
 
 | Return ||
 |--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
-| [UserHandle](../android/os/UserHandle.md)! | A [UserHandle](../android/os/UserHandle.md) for that user. |
+| [UserHandle](UserHandle.md)! | A [UserHandle](UserHandle.md) for that user. |
 
 ### hashCode
 
@@ -140,19 +140,19 @@ Added in [API level 17](https://developer.android.com/guide/topics/manifest/uses
 static fun readFromParcel(in: Parcel!): UserHandle!
 ```
 
-Read a UserHandle from a Parcel that was previously written with [writeToParcel(android.os.UserHandle,android.os.Parcel)](../android/os/UserHandle.md)), returning either a null or new object as appropriate.
+Read a UserHandle from a Parcel that was previously written with [writeToParcel(android.os.UserHandle,android.os.Parcel)](UserHandle.md)), returning either a null or new object as appropriate.
 
 | Parameters ||
 |------|--------------------------------------------------------------------------------------------------------------------------|
-| `in` | [Parcel](../android/os/Parcel.md)!:The Parcel from which to read the UserHandle |
+| `in` | [Parcel](Parcel.md)!:The Parcel from which to read the UserHandle |
 
 | Return ||
 |--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
-| [UserHandle](../android/os/UserHandle.md)! | Returns a new UserHandle matching the previously written object, or null if a null had been written. |
+| [UserHandle](UserHandle.md)! | Returns a new UserHandle matching the previously written object, or null if a null had been written. |
 
 **See Also**
 
-- [#writeToParcel(UserHandle, Parcel)](../android/os/UserHandle.md)) 
+- [#writeToParcel(UserHandle, Parcel)](UserHandle.md)) 
 
 ### toString
 
@@ -180,7 +180,7 @@ fun writeToParcel(
 | Parameters ||
 |---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `dest` | The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ### writeToParcel
 
@@ -193,16 +193,16 @@ static fun writeToParcel(
 ): Unit
 ```
 
-Write a UserHandle to a Parcel, handling null pointers. Must be read with [readFromParcel(android.os.Parcel)](../android/os/UserHandle.md)).
+Write a UserHandle to a Parcel, handling null pointers. Must be read with [readFromParcel(android.os.Parcel)](UserHandle.md)).
 
 | Parameters ||
 |-------|--------------------------------------------------------------------------------------------------------------------------------|
-| `h` | [UserHandle](../android/os/UserHandle.md)!:The UserHandle to be written. |
-| `out` | [Parcel](../android/os/Parcel.md)!:The Parcel in which the UserHandle will be placed. |
+| `h` | [UserHandle](UserHandle.md)!:The UserHandle to be written. |
+| `out` | [Parcel](Parcel.md)!:The Parcel in which the UserHandle will be placed. |
 
 **See Also**
 
-- [#readFromParcel(Parcel)](../android/os/UserHandle.md))
+- [#readFromParcel(Parcel)](UserHandle.md))
 
 ## Properties
 

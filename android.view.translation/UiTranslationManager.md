@@ -2,7 +2,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # UiTranslationManager
 
-Kotlin | [Java](../android/view/translation/UiTranslationManager.md)
+Kotlin | [Java](UiTranslationManager.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class UiTranslationManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.translation.UiTranslationManager](../android/view/translation/UiTranslationManager.md) |
+| ↳ | [android.view.translation.UiTranslationManager](UiTranslationManager.md) |
 
 The `https://developer.android.com/reference/kotlin/android/view/translation/UiTranslationManager#` class provides ways for apps to use the ui translation function in framework.
 
@@ -68,8 +68,8 @@ Starting from `https://developer.android.com/reference/kotlin/android/os/Build.V
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `callback` | [UiTranslationStateCallback](../android/view/translation/UiTranslationStateCallback.md): the callback to register for receiving the state change notifications. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `callback` | [UiTranslationStateCallback](UiTranslationStateCallback.md): the callback to register for receiving the state change notifications. This value cannot be `null`. |
 
 ### unregisterUiTranslationStateCallback
 
@@ -83,7 +83,7 @@ Unregister `callback`.
 
 | Parameters ||
 |---|---|
-| `callback` | [UiTranslationStateCallback](../android/view/translation/UiTranslationStateCallback.md): This value cannot be `null`. |
+| `callback` | [UiTranslationStateCallback](UiTranslationStateCallback.md): This value cannot be `null`. |
 
 **See Also**
 

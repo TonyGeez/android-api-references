@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # PrintWriterPrinter
 
-Kotlin| [Java](../android/util/PrintWriterPrinter.md) 
+Kotlin| [Java](PrintWriterPrinter.md) 
 | --- | --- |
 
 ```
@@ -13,19 +13,19 @@ open class PrintWriterPrinter : Printer
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.util.PrintWriterPrinter](../android/util/PrintWriterPrinter.md) |
+| ↳ | [android.util.PrintWriterPrinter](PrintWriterPrinter.md) |
 
-Implementation of a [android.util.Printer](../android/util/Printer.md) that sends its output to a [java.io.PrintWriter](../java/io/PrintWriter.md).
+Implementation of a [android.util.Printer](Printer.md) that sends its output to a [java.io.PrintWriter](../java.io/PrintWriter.md).
 
 ## Summary
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [PrintWriterPrinter](../android/util/PrintWriterPrinter.md))`(`pw:` ` [PrintWriter](../java/io/PrintWriter.md)!`)` Create a new Printer that sends to a PrintWriter object. |
+| [PrintWriterPrinter](PrintWriterPrinter.md))`(`pw:` ` [PrintWriter](../java.io/PrintWriter.md)!`)` Create a new Printer that sends to a PrintWriter object. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [println](../android/util/PrintWriterPrinter.md))`(`x:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [println](PrintWriterPrinter.md))`(`x:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
 
 ## Public constructors
 
@@ -41,7 +41,7 @@ Create a new Printer that sends to a PrintWriter object.
 
 | Parameters ||
 |------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| `pw` | [PrintWriter](../java/io/PrintWriter.md)!:The PrintWriter where you would like output to go. |
+| `pw` | [PrintWriter](../java.io/PrintWriter.md)!:The PrintWriter where you would like output to go. |
 
 ## Public methods
 

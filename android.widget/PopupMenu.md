@@ -4,7 +4,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 
 # PopupMenu
 
-Kotlin| [Java](../android/widget/PopupMenu.md) 
+Kotlin| [Java](PopupMenu.md) 
 | --- | --- |
 
 ```
@@ -13,9 +13,9 @@ open class PopupMenu
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.widget.PopupMenu](../android/widget/PopupMenu.md) |
+| ↳ | [android.widget.PopupMenu](PopupMenu.md) |
 
-A PopupMenu displays a [Menu](../android/view/Menu.md) in a modal popup window anchored to a [View](../android/view/View.md). The popup will appear below the anchor view if there is room, or above it if there is not. If the IME is visible the popup will not overlap it until it is touched. Touching outside of the popup will dismiss it.
+A PopupMenu displays a [Menu](../android.view/Menu.md) in a modal popup window anchored to a [View](../android.view/View.md). The popup will appear below the anchor view if there is room, or above it if there is not. If the IME is visible the popup will not overlap it until it is touched. Touching outside of the popup will dismiss it.
 
 ## Summary
 
@@ -26,26 +26,26 @@ A PopupMenu displays a [Menu](../android/view/Menu.md) in a modal popup window a
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [PopupMenu](../android/widget/PopupMenu.md))`(`context:` ` [Context](../android/content/Context.md)!`, `anchor:` ` [View](../android/view/View.md)!`)` Constructor to create a new popup menu with an anchor view. |
-| [PopupMenu](../android/widget/PopupMenu.md))`(`context:` ` [Context](../android/content/Context.md)!`, `anchor:` ` [View](../android/view/View.md)!`, `gravity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructor to create a new popup menu with an anchor view and alignment gravity. |
-| [PopupMenu](../android/widget/PopupMenu.md))`(`context:` ` [Context](../android/content/Context.md)!`, `anchor:` ` [View](../android/view/View.md)!`, `gravity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `popupStyleAttr:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `popupStyleRes:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructor a create a new popup menu with a specific style. |
+| [PopupMenu](PopupMenu.md))`(`context:` ` [Context](../android.content/Context.md)!`, `anchor:` ` [View](../android.view/View.md)!`)` Constructor to create a new popup menu with an anchor view. |
+| [PopupMenu](PopupMenu.md))`(`context:` ` [Context](../android.content/Context.md)!`, `anchor:` ` [View](../android.view/View.md)!`, `gravity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructor to create a new popup menu with an anchor view and alignment gravity. |
+| [PopupMenu](PopupMenu.md))`(`context:` ` [Context](../android.content/Context.md)!`, `anchor:` ` [View](../android.view/View.md)!`, `gravity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `popupStyleAttr:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `popupStyleRes:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructor a create a new popup menu with a specific style. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dismiss](../android/widget/PopupMenu.md))`()` Dismiss the menu popup. |
-| open [View.OnTouchListener](../android/view/View.OnTouchListener.md)! | [getDragToOpenListener](../android/widget/PopupMenu.md))`()` Returns an [OnTouchListener](../android/view/View.OnTouchListener.md) that can be added to the anchor view to implement drag-to-open behavior. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getGravity](../android/widget/PopupMenu.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dismiss](PopupMenu.md))`()` Dismiss the menu popup. |
+| open [View.OnTouchListener](../android/view/View.OnTouchListener.md)! | [getDragToOpenListener](PopupMenu.md))`()` Returns an [OnTouchListener](../android/view/View.OnTouchListener.md) that can be added to the anchor view to implement drag-to-open behavior. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getGravity](PopupMenu.md))`()` <br /> |
 | --- | --- |
-| open [Menu](../android/view/Menu.md)! | [getMenu](../android/widget/PopupMenu.md))`()` Returns the [Menu](../android/view/Menu.md) associated with this popup. |
-| open [MenuInflater](../android/view/MenuInflater.md)! | [getMenuInflater](../android/widget/PopupMenu.md))`()` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [inflate](../android/widget/PopupMenu.md))`(`menuRes:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Inflate a menu resource into this PopupMenu. |
+| open [Menu](../android.view/Menu.md)! | [getMenu](PopupMenu.md))`()` Returns the [Menu](../android.view/Menu.md) associated with this popup. |
+| open [MenuInflater](../android.view/MenuInflater.md)! | [getMenuInflater](PopupMenu.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [inflate](PopupMenu.md))`(`menuRes:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Inflate a menu resource into this PopupMenu. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setForceShowIcon](../android/widget/PopupMenu.md))`(`forceShowIcon:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets whether the popup menu's adapter is forced to show icons in the menu item views. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setGravity](../android/widget/PopupMenu.md))`(`gravity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the gravity used to align the popup window to its anchor view. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOnDismissListener](../android/widget/PopupMenu.md))`(`listener:` ` [PopupMenu.OnDismissListener](../android/widget/PopupMenu.OnDismissListener.md)!`)` Sets a listener that will be notified when this menu is dismissed. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setForceShowIcon](PopupMenu.md))`(`forceShowIcon:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets whether the popup menu's adapter is forced to show icons in the menu item views. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setGravity](PopupMenu.md))`(`gravity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the gravity used to align the popup window to its anchor view. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOnDismissListener](PopupMenu.md))`(`listener:` ` [PopupMenu.OnDismissListener](../android/widget/PopupMenu.OnDismissListener.md)!`)` Sets a listener that will be notified when this menu is dismissed. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOnMenuItemClickListener](../android/widget/PopupMenu.md))`(`listener:` ` [PopupMenu.OnMenuItemClickListener](../android/widget/PopupMenu.OnMenuItemClickListener.md)!`)` Sets a listener that will be notified when the user selects an item from the menu. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [show](../android/widget/PopupMenu.md))`()` Show the menu popup anchored to the view specified during construction. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOnMenuItemClickListener](PopupMenu.md))`(`listener:` ` [PopupMenu.OnMenuItemClickListener](../android/widget/PopupMenu.OnMenuItemClickListener.md)!`)` Sets a listener that will be notified when the user selects an item from the menu. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [show](PopupMenu.md))`()` Show the menu popup anchored to the view specified during construction. |
 
 ## Public constructors
 
@@ -63,8 +63,8 @@ Constructor to create a new popup menu with an anchor view.
 
 | Parameters ||
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](../android/content/Context.md)!:Context the popup menu is running in, through which it can access the current theme, resources, etc. |
-| `anchor` | [View](../android/view/View.md)!:Anchor view for this popup. The popup will appear below the anchor if there is room, or above it if there is not. |
+| `context` | [Context](../android.content/Context.md)!:Context the popup menu is running in, through which it can access the current theme, resources, etc. |
+| `anchor` | [View](../android.view/View.md)!:Anchor view for this popup. The popup will appear below the anchor if there is room, or above it if there is not. |
 
 ### PopupMenu
 
@@ -81,9 +81,9 @@ Constructor to create a new popup menu with an anchor view and alignment gravity
 
 | Parameters ||
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](../android/content/Context.md)!:Context the popup menu is running in, through which it can access the current theme, resources, etc. |
-| `anchor` | [View](../android/view/View.md)!:Anchor view for this popup. The popup will appear below the anchor if there is room, or above it if there is not. |
-| `gravity` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The [Gravity](../android/view/Gravity.md) value for aligning the popup with its anchor. |
+| `context` | [Context](../android.content/Context.md)!:Context the popup menu is running in, through which it can access the current theme, resources, etc. |
+| `anchor` | [View](../android.view/View.md)!:Anchor view for this popup. The popup will appear below the anchor if there is room, or above it if there is not. |
+| `gravity` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The [Gravity](../android.view/Gravity.md) value for aligning the popup with its anchor. |
 | --- | --- |
 
 ### PopupMenu
@@ -103,9 +103,9 @@ Constructor a create a new popup menu with a specific style.
 
 | Parameters ||
 |------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](../android/content/Context.md)!:Context the popup menu is running in, through which it can access the current theme, resources, etc. |
-| `anchor` | [View](../android/view/View.md)!:Anchor view for this popup. The popup will appear below the anchor if there is room, or above it if there is not. |
-| `gravity` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The [Gravity](../android/view/Gravity.md) value for aligning the popup with its anchor. |
+| `context` | [Context](../android.content/Context.md)!:Context the popup menu is running in, through which it can access the current theme, resources, etc. |
+| `anchor` | [View](../android.view/View.md)!:Anchor view for this popup. The popup will appear below the anchor if there is room, or above it if there is not. |
+| `gravity` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The [Gravity](../android.view/Gravity.md) value for aligning the popup with its anchor. |
 | --- | --- |
 | `popupStyleAttr` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):An attribute in the current theme that contains a reference to a style resource that supplies default values for the popup window. Can be 0 to not look for defaults. |
 | `popupStyleRes` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):A resource identifier of a style resource that supplies default values for the popup window, used only if popupStyleAttr is 0 or can not be found in the theme. Can be 0 to not look for defaults. |
@@ -163,7 +163,7 @@ open fun getGravity(): Int
 
 **See Also**
 
-- [#setGravity(int)](../android/widget/PopupMenu.md)) 
+- [#setGravity(int)](PopupMenu.md)) 
 
 ### getMenu
 
@@ -173,11 +173,11 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 open fun getMenu(): Menu!
 ```
 
-Returns the [Menu](../android/view/Menu.md) associated with this popup. Populate the returned Menu with items before calling [show()](../android/widget/PopupMenu.md)).
+Returns the [Menu](../android.view/Menu.md) associated with this popup. Populate the returned Menu with items before calling [show()](PopupMenu.md)).
 
 | Return ||
 |---------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| [Menu](../android/view/Menu.md)! | the [Menu](../android/view/Menu.md) associated with this popup |
+| [Menu](../android.view/Menu.md)! | the [Menu](../android.view/Menu.md) associated with this popup |
 
 **See Also**
 
@@ -194,7 +194,7 @@ open fun getMenuInflater(): MenuInflater!
 
 | Return ||
 |-------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [MenuInflater](../android/view/MenuInflater.md)! | a [MenuInflater](../android/view/MenuInflater.md) that can be used to inflate menu items from XML into the menu returned by [getMenu()](../android/widget/PopupMenu.md)) |
+| [MenuInflater](../android.view/MenuInflater.md)! | a [MenuInflater](../android.view/MenuInflater.md) that can be used to inflate menu items from XML into the menu returned by [getMenu()](PopupMenu.md)) |
 
 **See Also**
 

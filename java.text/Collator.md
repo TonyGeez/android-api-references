@@ -10,9 +10,9 @@ abstract class Collator : Cloneable, Comparator<Any!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.text.Collator](../java/text/Collator.md) |
+| ↳ | [java.text.Collator](Collator.md) |
 
-| Known Direct Subclasses [RuleBasedCollator](../java/text/RuleBasedCollator.md) |-------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------| | [RuleBasedCollator](../java/text/RuleBasedCollator.md) | The class is a concrete subclass of`Collator`that provides a simple, data-driven, table collator. | |
+| Known Direct Subclasses [RuleBasedCollator](RuleBasedCollator.md) |-------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------| | [RuleBasedCollator](RuleBasedCollator.md) | The class is a concrete subclass of`Collator`that provides a simple, data-driven, table collator. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 The`Collator`class performs locale-sensitive`String`comparison. You use this class to build searching and sorting routines for natural language text.
@@ -46,50 +46,50 @@ You can set a`Collator`'s*strength* property to determine the level of differenc
 ```
 
 For comparing`String`s exactly once, the`compare`method provides the best performance. When sorting a list of`String`s however, it is generally necessary to compare each`String`multiple times. In this case,`CollationKey`s provide better performance. The`CollationKey`class converts a`String`to a series of bits that can be compared bitwise against other`CollationKey`s. A`CollationKey`is created by a`Collator`object for a given`String`. 
-**Note:** `CollationKey`s from different`Collator`s can not be compared. See the class description for [CollationKey](../java/text/CollationKey.md) for an example using`CollationKey`s.
+**Note:** `CollationKey`s from different`Collator`s can not be compared. See the class description for [CollationKey](CollationKey.md) for an example using`CollationKey`s.
 
 ## Summary
 
 | Constants ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CANONICAL_DECOMPOSITION](../java/text/Collator.md) Decomposition mode value. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FULL_DECOMPOSITION](../java/text/Collator.md) Decomposition mode value. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IDENTICAL](../java/text/Collator.md) Collator strength value. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CANONICAL_DECOMPOSITION](Collator.md) Decomposition mode value. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FULL_DECOMPOSITION](Collator.md) Decomposition mode value. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IDENTICAL](Collator.md) Collator strength value. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NO_DECOMPOSITION](../java/text/Collator.md) Decomposition mode value. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PRIMARY](../java/text/Collator.md) Collator strength value. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECONDARY](../java/text/Collator.md) Collator strength value. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NO_DECOMPOSITION](Collator.md) Decomposition mode value. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PRIMARY](Collator.md) Collator strength value. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SECONDARY](Collator.md) Collator strength value. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TERTIARY](../java/text/Collator.md) Collator strength value. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TERTIARY](Collator.md) Collator strength value. |
 
 | Protected constructors ||
 |-------------------------------------------------------------------------------------------------------------------|---|
-| [Collator](../java/text/Collator.md))`()` Default constructor. |
+| [Collator](Collator.md))`()` Default constructor. |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](../java/text/Collator.md))`()` Returns a new collator with the same decomposition mode and strength value as this collator. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compare](../java/text/Collator.md))`(`o1:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `o2:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Compares its two arguments for order. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compare](../java/text/Collator.md))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `target:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Compares the source string to the target string according to the collation rules for this Collator. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](Collator.md))`()` Returns a new collator with the same decomposition mode and strength value as this collator. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compare](Collator.md))`(`o1:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `o2:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Compares its two arguments for order. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compare](Collator.md))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `target:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Compares the source string to the target string according to the collation rules for this Collator. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/text/Collator.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares the equality of two Collators. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/text/Collator.md))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `target:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Convenience method for comparing the equality of two strings based on this Collator's collation rules. |
-| openstatic [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Locale](../java/util/Locale.md)!\>! | [getAvailableLocales](../java/text/Collator.md))`()` Returns an array of all locales for which the`getInstance`methods of this class can return localized instances. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](Collator.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares the equality of two Collators. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](Collator.md))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `target:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Convenience method for comparing the equality of two strings based on this Collator's collation rules. |
+| openstatic [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Locale](../java.util/Locale.md)!\>! | [getAvailableLocales](Collator.md))`()` Returns an array of all locales for which the`getInstance`methods of this class can return localized instances. |
 | --- | --- |
-| abstract [CollationKey](../java/text/CollationKey.md)! | [getCollationKey](../java/text/Collator.md))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Transforms the String into a series of bits that can be compared bitwise to other CollationKeys. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDecomposition](../java/text/Collator.md))`()` Get the decomposition mode of this Collator. |
-| openstatic [Collator](../java/text/Collator.md)! | [getInstance](../java/text/Collator.md))`()` Gets the Collator for the current default locale. |
+| abstract [CollationKey](CollationKey.md)! | [getCollationKey](Collator.md))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Transforms the String into a series of bits that can be compared bitwise to other CollationKeys. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDecomposition](Collator.md))`()` Get the decomposition mode of this Collator. |
+| openstatic [Collator](Collator.md)! | [getInstance](Collator.md))`()` Gets the Collator for the current default locale. |
 | --- | --- |
-| openstatic [Collator](../java/text/Collator.md)! | [getInstance](../java/text/Collator.md))`(`desiredLocale:` ` [Locale](../java/util/Locale.md)!`)` Gets the Collator for the desired locale. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStrength](../java/text/Collator.md))`()` Returns this Collator's strength property. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/text/Collator.md))`()` Generates the hash code for this Collator. |
+| openstatic [Collator](Collator.md)! | [getInstance](Collator.md))`(`desiredLocale:` ` [Locale](../java.util/Locale.md)!`)` Gets the Collator for the desired locale. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStrength](Collator.md))`()` Returns this Collator's strength property. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](Collator.md))`()` Generates the hash code for this Collator. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDecomposition](../java/text/Collator.md))`(`decompositionMode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the decomposition mode of this Collator. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStrength](../java/text/Collator.md))`(`newStrength:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets this Collator's strength property. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDecomposition](Collator.md))`(`decompositionMode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the decomposition mode of this Collator. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setStrength](Collator.md))`(`newStrength:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets this Collator's strength property. |
 
 | Inherited functions ||
 |---|---|
-| From class [Comparator](../java/util/Comparator.md) |---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Comparator](../java/util/Comparator.md)<T>! | [reversed](../java/util/Comparator.md))`()` <br /> Returns a comparator that imposes the reverse ordering of this comparator. <br /> | | [Comparator](../java/util/Comparator.md)<T>! | [thenComparing](../java/util/Comparator.md))`(`other:` ` [Comparator](../java/util/Comparator.md)<in` `T>!`)` <br /> Returns a lexicographic-order comparator with another comparator. If this`Comparator`considers two elements equal, i.e.`compare(a, b) == 0`,`other`is used to determine the order. The returned comparator is serializable if the specified comparator is also serializable. <br /> | | [Comparator](../java/util/Comparator.md)<T>! | [thenComparing](../java/util/Comparator.md))`(`keyExtractor:` ` [Function](../java/util/function/Function.md)<in` `T,` `out` `U>!`)` <br /> Returns a lexicographic-order comparator with a function that extracts a`Comparable`sort key. <br /> | | [Comparator](../java/util/Comparator.md)<T>! | [thenComparing](../java/util/Comparator.md))`(`keyExtractor:` ` [Function](../java/util/function/Function.md)<in` `T,` `out` `U>!`, `keyComparator:` ` [Comparator](../java/util/Comparator.md)<in` `U>!`)` <br /> Returns a lexicographic-order comparator with a function that extracts a key to be compared with the given`Comparator`. <br /> | | [Comparator](../java/util/Comparator.md)<T>! | [thenComparingDouble](../java/util/Comparator.md))`(`keyExtractor:` ` [ToDoubleFunction](../java/util/function/ToDoubleFunction.md)<in` `T>!`)` <br /> Returns a lexicographic-order comparator with a function that extracts a`double`sort key. <br /> | | [Comparator](../java/util/Comparator.md)<T>! | [thenComparingInt](../java/util/Comparator.md))`(`keyExtractor:` ` [ToIntFunction](../java/util/function/ToIntFunction.md)<in` `T>!`)` <br /> Returns a lexicographic-order comparator with a function that extracts an`int`sort key. <br /> | | [Comparator](../java/util/Comparator.md)<T>! | [thenComparingLong](../java/util/Comparator.md))`(`keyExtractor:` ` [ToLongFunction](../java/util/function/ToLongFunction.md)<in` `T>!`)` <br /> Returns a lexicographic-order comparator with a function that extracts a`long`sort key. <br /> | ||
+| From class [Comparator](../java.util/Comparator.md) |---------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Comparator](../java.util/Comparator.md)<T>! | [reversed](../java.util/Comparator.md))`()` <br /> Returns a comparator that imposes the reverse ordering of this comparator. <br /> | | [Comparator](../java.util/Comparator.md)<T>! | [thenComparing](../java.util/Comparator.md))`(`other:` ` [Comparator](../java.util/Comparator.md)<in` `T>!`)` <br /> Returns a lexicographic-order comparator with another comparator. If this`Comparator`considers two elements equal, i.e.`compare(a, b) == 0`,`other`is used to determine the order. The returned comparator is serializable if the specified comparator is also serializable. <br /> | | [Comparator](../java.util/Comparator.md)<T>! | [thenComparing](../java.util/Comparator.md))`(`keyExtractor:` ` [Function](../java.util.function/Function.md)<in` `T,` `out` `U>!`)` <br /> Returns a lexicographic-order comparator with a function that extracts a`Comparable`sort key. <br /> | | [Comparator](../java.util/Comparator.md)<T>! | [thenComparing](../java.util/Comparator.md))`(`keyExtractor:` ` [Function](../java.util.function/Function.md)<in` `T,` `out` `U>!`, `keyComparator:` ` [Comparator](../java.util/Comparator.md)<in` `U>!`)` <br /> Returns a lexicographic-order comparator with a function that extracts a key to be compared with the given`Comparator`. <br /> | | [Comparator](../java.util/Comparator.md)<T>! | [thenComparingDouble](../java.util/Comparator.md))`(`keyExtractor:` ` [ToDoubleFunction](../java.util.function/ToDoubleFunction.md)<in` `T>!`)` <br /> Returns a lexicographic-order comparator with a function that extracts a`double`sort key. <br /> | | [Comparator](../java.util/Comparator.md)<T>! | [thenComparingInt](../java.util/Comparator.md))`(`keyExtractor:` ` [ToIntFunction](../java.util.function/ToIntFunction.md)<in` `T>!`)` <br /> Returns a lexicographic-order comparator with a function that extracts an`int`sort key. <br /> | | [Comparator](../java.util/Comparator.md)<T>! | [thenComparingLong](../java.util/Comparator.md))`(`keyExtractor:` ` [ToLongFunction](../java.util.function/ToLongFunction.md)<in` `T>!`)` <br /> Returns a lexicographic-order comparator with a function that extracts a`long`sort key. <br /> | ||
 
 ## Constants
 
@@ -109,8 +109,8 @@ CANONICAL_DECOMPOSITION corresponds to Normalization Form D as described in [Uni
 
 **See Also**
 
-- [java.text.Collator#getDecomposition](../java/text/Collator.md))
-- [java.text.Collator#setDecomposition](../java/text/Collator.md)) 
+- [java.text.Collator#getDecomposition](Collator.md))
+- [java.text.Collator#setDecomposition](Collator.md)) 
 
 ### FULL_DECOMPOSITION
 
@@ -128,8 +128,8 @@ FULL_DECOMPOSITION corresponds to Normalization Form KD as described in [Unicode
 
 **See Also**
 
-- [java.text.Collator#getDecomposition](../java/text/Collator.md))
-- [java.text.Collator#setDecomposition](../java/text/Collator.md)) 
+- [java.text.Collator#getDecomposition](Collator.md))
+- [java.text.Collator#setDecomposition](Collator.md)) 
 
 ### IDENTICAL
 
@@ -157,8 +157,8 @@ Decomposition mode value. With NO_DECOMPOSITION set, accented characters will no
 
 **See Also**
 
-- [java.text.Collator#getDecomposition](../java/text/Collator.md))
-- [java.text.Collator#setDecomposition](../java/text/Collator.md)) 
+- [java.text.Collator#getDecomposition](Collator.md))
+- [java.text.Collator#setDecomposition](Collator.md)) 
 
 ### PRIMARY
 
@@ -174,8 +174,8 @@ Collator strength value. When set, only PRIMARY differences are considered signi
 
 **See Also**
 
-- [java.text.Collator#setStrength](../java/text/Collator.md))
-- [java.text.Collator#getStrength](../java/text/Collator.md)) 
+- [java.text.Collator#setStrength](Collator.md))
+- [java.text.Collator#getStrength](Collator.md)) 
 
 ### SECONDARY
 
@@ -191,8 +191,8 @@ Collator strength value. When set, only SECONDARY and above differences are cons
 
 **See Also**
 
-- [java.text.Collator#setStrength](../java/text/Collator.md))
-- [java.text.Collator#getStrength](../java/text/Collator.md)) 
+- [java.text.Collator#setStrength](Collator.md))
+- [java.text.Collator#getStrength](Collator.md)) 
 
 ### TERTIARY
 
@@ -208,8 +208,8 @@ Collator strength value. When set, only TERTIARY and above differences are consi
 
 **See Also**
 
-- [java.text.Collator#setStrength](../java/text/Collator.md))
-- [java.text.Collator#getStrength](../java/text/Collator.md))
+- [java.text.Collator#setStrength](Collator.md))
+- [java.text.Collator#getStrength](Collator.md))
 
 ## Protected constructors
 
@@ -246,7 +246,7 @@ Returns a new collator with the same decomposition mode and strength value as th
 
 **See Also**
 
-- [java.lang.Cloneable](../java/lang/Cloneable.md) 
+- [java.lang.Cloneable](../java.lang/Cloneable.md) 
 
 ### compare
 
@@ -279,7 +279,7 @@ This implementation merely returns`compare((String)o1, (String)o2) `.
 
 **See Also**
 
-- [java.util.Comparator](../java/util/Comparator.md) 
+- [java.util.Comparator](../java.util/Comparator.md) 
 
 ### compare
 
@@ -307,8 +307,8 @@ For a one time comparison, this method has the best performance. If a given Stri
 
 **See Also**
 
-- [java.text.CollationKey](../java/text/CollationKey.md)
-- [java.text.Collator#getCollationKey](../java/text/Collator.md)) 
+- [java.text.CollationKey](CollationKey.md)
+- [java.text.Collator#getCollationKey](Collator.md)) 
 
 ### equals
 
@@ -365,7 +365,7 @@ Returns an array of all locales for which the`getInstance`methods of this class 
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Locale](../java/util/Locale.md)!>! | An array of locales for which localized`Collator`instances are available. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Locale](../java.util/Locale.md)!>! | An array of locales for which localized`Collator`instances are available. |
 
 ### getCollationKey
 
@@ -383,11 +383,11 @@ Transforms the String into a series of bits that can be compared bitwise to othe
 
 | Return ||
 |----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| [CollationKey](../java/text/CollationKey.md)! | the CollationKey for the given String based on this Collator's collation rules. If the source String is null, a null CollationKey is returned. |
+| [CollationKey](CollationKey.md)! | the CollationKey for the given String based on this Collator's collation rules. If the source String is null, a null CollationKey is returned. |
 
 **See Also**
 
-- [java.text.CollationKey](../java/text/CollationKey.md) 
+- [java.text.CollationKey](CollationKey.md) 
 
 ### getDecomposition
 
@@ -413,10 +413,10 @@ See the documentation for these three constants for a description of their meani
 
 **See Also**
 
-- [java.text.Collator#setDecomposition](../java/text/Collator.md))
-- [java.text.Collator#NO_DECOMPOSITION](../java/text/Collator.md)
-- [java.text.Collator#CANONICAL_DECOMPOSITION](../java/text/Collator.md)
-- [java.text.Collator#FULL_DECOMPOSITION](../java/text/Collator.md) 
+- [java.text.Collator#setDecomposition](Collator.md))
+- [java.text.Collator#NO_DECOMPOSITION](Collator.md)
+- [java.text.Collator#CANONICAL_DECOMPOSITION](Collator.md)
+- [java.text.Collator#FULL_DECOMPOSITION](Collator.md) 
 
 ### getInstance
 
@@ -430,7 +430,7 @@ Gets the Collator for the current default locale. The default locale is determin
 
 | Return ||
 |---------------------------------------------------------------------------------|----------------------------------------------------------|
-| [Collator](../java/text/Collator.md)! | the Collator for the default locale.(for example, en_US) |
+| [Collator](Collator.md)! | the Collator for the default locale.(for example, en_US) |
 
 **See Also**
 
@@ -446,16 +446,16 @@ Gets the Collator for the desired locale.
 
 | Parameters ||
 |-----------------|------------------------------------------------------------------------------------------------------|
-| `desiredLocale` | [Locale](../java/util/Locale.md)!:the desired locale. |
+| `desiredLocale` | [Locale](../java.util/Locale.md)!:the desired locale. |
 
 | Return ||
 |---------------------------------------------------------------------------------|--------------------------------------|
-| [Collator](../java/text/Collator.md)! | the Collator for the desired locale. |
+| [Collator](Collator.md)! | the Collator for the desired locale. |
 
 **See Also**
 
-- [java.util.Locale](../java/util/Locale.md)
-- [java.util.ResourceBundle](../java/util/ResourceBundle.md) 
+- [java.util.Locale](../java.util/Locale.md)
+- [java.util.ResourceBundle](../java.util/ResourceBundle.md) 
 
 ### getStrength
 
@@ -473,11 +473,11 @@ Returns this Collator's strength property. The strength property determines the 
 
 **See Also**
 
-- [java.text.Collator#setStrength](../java/text/Collator.md))
-- [java.text.Collator#PRIMARY](../java/text/Collator.md)
-- [java.text.Collator#SECONDARY](../java/text/Collator.md)
-- [java.text.Collator#TERTIARY](../java/text/Collator.md)
-- [java.text.Collator#IDENTICAL](../java/text/Collator.md) 
+- [java.text.Collator#setStrength](Collator.md))
+- [java.text.Collator#PRIMARY](Collator.md)
+- [java.text.Collator#SECONDARY](Collator.md)
+- [java.text.Collator#TERTIARY](Collator.md)
+- [java.text.Collator#IDENTICAL](Collator.md) 
 
 ### hashCode
 
@@ -513,10 +513,10 @@ Set the decomposition mode of this Collator. See getDecomposition for a descript
 
 **See Also**
 
-- [java.text.Collator#getDecomposition](../java/text/Collator.md))
-- [java.text.Collator#NO_DECOMPOSITION](../java/text/Collator.md)
-- [java.text.Collator#CANONICAL_DECOMPOSITION](../java/text/Collator.md)
-- [java.text.Collator#FULL_DECOMPOSITION](../java/text/Collator.md) 
+- [java.text.Collator#getDecomposition](Collator.md))
+- [java.text.Collator#NO_DECOMPOSITION](Collator.md)
+- [java.text.Collator#CANONICAL_DECOMPOSITION](Collator.md)
+- [java.text.Collator#FULL_DECOMPOSITION](Collator.md) 
 
 ### setStrength
 
@@ -538,8 +538,8 @@ Sets this Collator's strength property. The strength property determines the min
 
 **See Also**
 
-- [java.text.Collator#getStrength](../java/text/Collator.md))
-- [java.text.Collator#PRIMARY](../java/text/Collator.md)
-- [java.text.Collator#SECONDARY](../java/text/Collator.md)
-- [java.text.Collator#TERTIARY](../java/text/Collator.md)
-- [java.text.Collator#IDENTICAL](../java/text/Collator.md)
+- [java.text.Collator#getStrength](Collator.md))
+- [java.text.Collator#PRIMARY](Collator.md)
+- [java.text.Collator#SECONDARY](Collator.md)
+- [java.text.Collator#TERTIARY](Collator.md)
+- [java.text.Collator#IDENTICAL](Collator.md)

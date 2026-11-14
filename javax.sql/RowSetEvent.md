@@ -10,8 +10,8 @@ open class RowSetEvent : EventObject
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.util.EventObject](../java/util/EventObject.md) ||
-| | ↳ | [javax.sql.RowSetEvent](../javax/sql/RowSetEvent.md) |
+| ↳ | [java.util.EventObject](../java.util/EventObject.md) ||
+| | ↳ | [javax.sql.RowSetEvent](RowSetEvent.md) |
 
 An`Event`object generated when an event occurs to a`RowSet`object. A`RowSetEvent`object is generated when a single row in a rowset is changed, the whole rowset is changed, or the rowset cursor moves.
 
@@ -21,15 +21,15 @@ When an event occurs on a`RowSet`object, one of the`RowSetListener`methods will 
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [RowSetEvent](../javax/sql/RowSetEvent.md))`(`source:` ` [RowSet](../javax/sql/RowSet.md)!`)` Constructs a`RowSetEvent`object initialized with the given`RowSet`object. |
+| [RowSetEvent](RowSetEvent.md))`(`source:` ` [RowSet](RowSet.md)!`)` Constructs a`RowSetEvent`object initialized with the given`RowSet`object. |
 
 | Inherited functions ||
 |---|---|
-| From class [EventObject](../java/util/EventObject.md) |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getSource](../java/util/EventObject.md))`()` <br /> The object on which the Event initially occurred. <br /> | | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/util/EventObject.md))`()` <br /> Returns a String representation of this EventObject. <br /> | ||
+| From class [EventObject](../java.util/EventObject.md) |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getSource](../java.util/EventObject.md))`()` <br /> The object on which the Event initially occurred. <br /> | | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java.util/EventObject.md))`()` <br /> Returns a String representation of this EventObject. <br /> | ||
 
 | Inherited properties ||
 |---|---|
-| From class [EventObject](../java/util/EventObject.md) |-----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [source](../java/util/EventObject.md) <br /> The object on which the Event initially occurred. <br /> | ||
+| From class [EventObject](../java.util/EventObject.md) |-----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [source](../java.util/EventObject.md) <br /> The object on which the Event initially occurred. <br /> | ||
 
 ## Public constructors
 
@@ -45,7 +45,7 @@ Constructs a`RowSetEvent`object initialized with the given`RowSet`object.
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| `source` | [RowSet](../javax/sql/RowSet.md)!:the`RowSet`object whose data has changed or whose cursor has moved |
+| `source` | [RowSet](RowSet.md)!:the`RowSet`object whose data has changed or whose cursor has moved |
 
 | Exceptions ||
 |--------------------------------------|--------------------|

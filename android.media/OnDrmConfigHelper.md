@@ -19,7 +19,7 @@ Interface definition of a callback to be invoked when the app can do DRM configu
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDrmConfig](../android/media/MediaPlayer.OnDrmConfigHelper.md))`(`mp:` ` [MediaPlayer](../android/media/MediaPlayer.md)!`)` Called to give the app the opportunity to configure DRM before the session is created |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDrmConfig](../android/media/MediaPlayer.OnDrmConfigHelper.md))`(`mp:` ` [MediaPlayer](MediaPlayer.md)!`)` Called to give the app the opportunity to configure DRM before the session is created |
 
 ## Public methods
 
@@ -35,4 +35,4 @@ Called to give the app the opportunity to configure DRM before the session is cr
 
 | Parameters ||
 |------|----------------------------------------------------------------------------------------------------------------------------------------|
-| `mp` | [MediaPlayer](../android/media/MediaPlayer.md)!:the`MediaPlayer`associated with this callback |
+| `mp` | [MediaPlayer](MediaPlayer.md)!:the`MediaPlayer`associated with this callback |

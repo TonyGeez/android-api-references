@@ -8,7 +8,7 @@ open class RemoteCallbackList<E : IInterface!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.os.RemoteCallbackList](../android/os/RemoteCallbackList.md) |
+| ↳ | [android.os.RemoteCallbackList](RemoteCallbackList.md) |
 
 Takes care of the grunt work of maintaining a list of remote interfaces, typically for the use of performing callbacks from a `https://developer.android.com/reference/kotlin/android/app/Service.html#` to its clients. In particular, this:
 
@@ -48,7 +48,7 @@ If a registered interface's process goes away, this class will take care of auto
 | --- | --- |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#getBroadcastCookie(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve the cookie associated with the item returned by `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#getBroadcastItem(kotlin.Int)`. |
 | open E | `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#getBroadcastItem(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Retrieve an item in the active broadcast that was previously started with `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#beginBroadcast()`. |
-| open [Executor](../java/util/concurrent/Executor.md)? | `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#getExecutor()()` Returns the executor used when invoking callbacks asynchronously. |
+| open [Executor](../java.util.concurrent/Executor.md)? | `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#getExecutor()()` Returns the executor used when invoking callbacks asynchronously. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#getFrozenCalleePolicy()()` Returns the frozen callee policy. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/RemoteCallbackList#getMaxQueueSize()()` Returns the max queue size. |
@@ -188,7 +188,7 @@ Performs `callback` on each registered interface. This is equivalent to `https:/
 
 | Parameters ||
 |---|---|
-| `callback` | [Consumer](../java/util/function/Consumer.md)\<E\>: This value cannot be `null`. |
+| `callback` | [Consumer](../java.util.function/Consumer.md)\<E\>: This value cannot be `null`. |
 
 ### finishBroadcast
 

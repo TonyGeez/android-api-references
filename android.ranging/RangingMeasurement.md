@@ -2,7 +2,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 
 # RangingMeasurement
 
-Kotlin | [Java](../android/ranging/RangingMeasurement.md)
+Kotlin | [Java](RangingMeasurement.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class RangingMeasurement : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.ranging.RangingMeasurement](../android/ranging/RangingMeasurement.md) |
+| ↳ | [android.ranging.RangingMeasurement](RangingMeasurement.md) |
 
 Represents a ranging measurement.
 
@@ -41,7 +41,7 @@ This class provides a measurement result, such as a distance or angle.
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [RangingMeasurement](../android/ranging/RangingMeasurement.md)!\> | `https://developer.android.com/reference/kotlin/android/ranging/RangingMeasurement#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [RangingMeasurement](RangingMeasurement.md)!\> | `https://developer.android.com/reference/kotlin/android/ranging/RangingMeasurement#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -154,7 +154,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

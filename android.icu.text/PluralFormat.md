@@ -4,7 +4,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # PluralFormat
 
-Kotlin| [Java](../android/icu/text/PluralFormat.md) 
+Kotlin| [Java](PluralFormat.md) 
 | --- | --- |
 
 ```
@@ -13,9 +13,9 @@ open class PluralFormat : UFormat
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [java.text.Format](../java/text/Format.md) |||
-| | ↳ | [android.icu.text.UFormat](../android/icu/text/UFormat.md) ||
-| | | ↳ | [android.icu.text.PluralFormat](../android/icu/text/PluralFormat.md) |
+| ↳ | [java.text.Format](../java.text/Format.md) |||
+| | ↳ | [android.icu.text.UFormat](UFormat.md) ||
+| | | ↳ | [android.icu.text.PluralFormat](PluralFormat.md) |
 | --- | --- | --- | --- |
 
 `PluralFormat`supports the creation of internationalized messages with plural inflection. It is based on*plural selection* , i.e. the caller specifies messages for each plural case that can appear in the user's language and the`PluralFormat`selects the appropriate message based on the number.
@@ -57,48 +57,48 @@ When formatting, the input number is first matched against the explicitValue cla
 
 An unquoted pound sign () in the selected sub-message itself (i.e., outside of arguments nested in the sub-message) is replaced by the input number minus the offset. The number-minus-offset value is formatted using a`NumberFormat`for the`PluralFormat`'s locale. If you need special number formatting, you have to use a`MessageFormat`and explicitly specify a`NumberFormat`argument.**Note:**That argument is formatting without subtracting the offset! If you need a custom format and have a non-zero offset, then you need to pass the number-minus-offset value as a separate parameter.
 
-For a usage example, see the [MessageFormat](../android/icu/text/MessageFormat.md) class documentation.
+For a usage example, see the [MessageFormat](MessageFormat.md) class documentation.
 
 #### Defining Custom Plural Rules
 
 If you need to use`PluralFormat`with custom rules, you can create a`PluralRules`object and pass it to`PluralFormat`'s constructor. If you also specify a locale in this constructor, this locale will be used to format the number in the message texts.
 
-For more information about`PluralRules`, see [PluralRules](../android/icu/text/PluralRules.md).
+For more information about`PluralRules`, see [PluralRules](PluralRules.md).
 
 ## Summary
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [PluralFormat](../android/icu/text/PluralFormat.md))`()` Creates a new cardinal-number`PluralFormat`for the default`FORMAT`locale. |
-| [PluralFormat](../android/icu/text/PluralFormat.md))`(`rules:` ` [PluralRules](../android/icu/text/PluralRules.md)!`)` Creates a new cardinal-number`PluralFormat`for a given set of rules. |
-| [PluralFormat](../android/icu/text/PluralFormat.md))`(`rules:` ` [PluralRules](../android/icu/text/PluralRules.md)!`, `pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a new cardinal-number`PluralFormat`for a given set of rules and a pattern. |
-| [PluralFormat](../android/icu/text/PluralFormat.md))`(`ulocale:` ` [ULocale](../android/icu/util/ULocale.md)!`)` Creates a new cardinal-number`PluralFormat`for a given locale. |
-| [PluralFormat](../android/icu/text/PluralFormat.md))`(`ulocale:` ` [ULocale](../android/icu/util/ULocale.md)!`, `rules:` ` [PluralRules](../android/icu/text/PluralRules.md)!`)` Creates a new cardinal-number`PluralFormat`for a given set of rules. |
-| [PluralFormat](../android/icu/text/PluralFormat.md))`(`ulocale:` ` [ULocale](../android/icu/util/ULocale.md)!`, `rules:` ` [PluralRules](../android/icu/text/PluralRules.md)!`, `pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a new cardinal-number`PluralFormat`for a given set of rules, a pattern and a locale. |
-| [PluralFormat](../android/icu/text/PluralFormat.md))`(`ulocale:` ` [ULocale](../android/icu/util/ULocale.md)!`, `type:` ` [PluralRules.PluralType](../android/icu/text/PluralRules.PluralType.md)!`)` Creates a new`PluralFormat`for the plural type. |
-| [PluralFormat](../android/icu/text/PluralFormat.md))`(`ulocale:` ` [ULocale](../android/icu/util/ULocale.md)!`, `type:` ` [PluralRules.PluralType](../android/icu/text/PluralRules.PluralType.md)!`, `pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a new`PluralFormat`for a plural type, a pattern and a locale. |
-| [PluralFormat](../android/icu/text/PluralFormat.md))`(`ulocale:` ` [ULocale](../android/icu/util/ULocale.md)!`, `pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a new cardinal-number`PluralFormat`for a given pattern string and locale. |
-| [PluralFormat](../android/icu/text/PluralFormat.md))`(`pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a new cardinal-number`PluralFormat`for a given pattern string. |
-| [PluralFormat](../android/icu/text/PluralFormat.md))`(`locale:` ` [Locale](../java/util/Locale.md)!`)` Creates a new cardinal-number`PluralFormat`for a given [java.util.Locale](../java/util/Locale.md). |
-| [PluralFormat](../android/icu/text/PluralFormat.md))`(`locale:` ` [Locale](../java/util/Locale.md)!`, `rules:` ` [PluralRules](../android/icu/text/PluralRules.md)!`)` Creates a new cardinal-number`PluralFormat`for a given set of rules. |
-| [PluralFormat](../android/icu/text/PluralFormat.md))`(`locale:` ` [Locale](../java/util/Locale.md)!`, `type:` ` [PluralRules.PluralType](../android/icu/text/PluralRules.PluralType.md)!`)` Creates a new`PluralFormat`for the plural type. |
+| [PluralFormat](PluralFormat.md))`()` Creates a new cardinal-number`PluralFormat`for the default`FORMAT`locale. |
+| [PluralFormat](PluralFormat.md))`(`rules:` ` [PluralRules](PluralRules.md)!`)` Creates a new cardinal-number`PluralFormat`for a given set of rules. |
+| [PluralFormat](PluralFormat.md))`(`rules:` ` [PluralRules](PluralRules.md)!`, `pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a new cardinal-number`PluralFormat`for a given set of rules and a pattern. |
+| [PluralFormat](PluralFormat.md))`(`ulocale:` ` [ULocale](../android.icu.util/ULocale.md)!`)` Creates a new cardinal-number`PluralFormat`for a given locale. |
+| [PluralFormat](PluralFormat.md))`(`ulocale:` ` [ULocale](../android.icu.util/ULocale.md)!`, `rules:` ` [PluralRules](PluralRules.md)!`)` Creates a new cardinal-number`PluralFormat`for a given set of rules. |
+| [PluralFormat](PluralFormat.md))`(`ulocale:` ` [ULocale](../android.icu.util/ULocale.md)!`, `rules:` ` [PluralRules](PluralRules.md)!`, `pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a new cardinal-number`PluralFormat`for a given set of rules, a pattern and a locale. |
+| [PluralFormat](PluralFormat.md))`(`ulocale:` ` [ULocale](../android.icu.util/ULocale.md)!`, `type:` ` [PluralRules.PluralType](../android/icu/text/PluralRules.PluralType.md)!`)` Creates a new`PluralFormat`for the plural type. |
+| [PluralFormat](PluralFormat.md))`(`ulocale:` ` [ULocale](../android.icu.util/ULocale.md)!`, `type:` ` [PluralRules.PluralType](../android/icu/text/PluralRules.PluralType.md)!`, `pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a new`PluralFormat`for a plural type, a pattern and a locale. |
+| [PluralFormat](PluralFormat.md))`(`ulocale:` ` [ULocale](../android.icu.util/ULocale.md)!`, `pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a new cardinal-number`PluralFormat`for a given pattern string and locale. |
+| [PluralFormat](PluralFormat.md))`(`pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a new cardinal-number`PluralFormat`for a given pattern string. |
+| [PluralFormat](PluralFormat.md))`(`locale:` ` [Locale](../java.util/Locale.md)!`)` Creates a new cardinal-number`PluralFormat`for a given [java.util.Locale](../java.util/Locale.md). |
+| [PluralFormat](PluralFormat.md))`(`locale:` ` [Locale](../java.util/Locale.md)!`, `rules:` ` [PluralRules](PluralRules.md)!`)` Creates a new cardinal-number`PluralFormat`for a given set of rules. |
+| [PluralFormat](PluralFormat.md))`(`locale:` ` [Locale](../java.util/Locale.md)!`, `type:` ` [PluralRules.PluralType](../android/icu/text/PluralRules.PluralType.md)!`)` Creates a new`PluralFormat`for the plural type. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [applyPattern](../android/icu/text/PluralFormat.md))`(`pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the pattern used by this plural format. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/icu/text/PluralFormat.md))`(`rhs:` ` [PluralFormat](../android/icu/text/PluralFormat.md)!`)` Returns true if this equals the provided PluralFormat. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/icu/text/PluralFormat.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [applyPattern](PluralFormat.md))`(`pattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the pattern used by this plural format. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](PluralFormat.md))`(`rhs:` ` [PluralFormat](PluralFormat.md)!`)` Returns true if this equals the provided PluralFormat. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](PluralFormat.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](../android/icu/text/PluralFormat.md))`(`number:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Formats a plural message for a given number. |
-| open [StringBuffer](../java/lang/StringBuffer.md)! | [format](../android/icu/text/PluralFormat.md))`(`number:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `toAppendTo:` ` [StringBuffer](../java/lang/StringBuffer.md)!`, `pos:` ` [FieldPosition](../java/text/FieldPosition.md)!`)` Formats a plural message for a given number and appends the formatted message to the given`StringBuffer`. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/icu/text/PluralFormat.md))`()` Returns a hash code value for the object. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](PluralFormat.md))`(`number:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Formats a plural message for a given number. |
+| open [StringBuffer](../java.lang/StringBuffer.md)! | [format](PluralFormat.md))`(`number:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `toAppendTo:` ` [StringBuffer](../java.lang/StringBuffer.md)!`, `pos:` ` [FieldPosition](../java.text/FieldPosition.md)!`)` Formats a plural message for a given number and appends the formatted message to the given`StringBuffer`. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](PluralFormat.md))`()` Returns a hash code value for the object. |
 | --- | --- |
-| open [Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html)! | [parse](../android/icu/text/PluralFormat.md))`(`text:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `parsePosition:` ` [ParsePosition](../java/text/ParsePosition.md)!`)` This method is not yet supported by`PluralFormat`. |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [parseObject](../android/icu/text/PluralFormat.md))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `pos:` ` [ParsePosition](../java/text/ParsePosition.md)!`)` This method is not yet supported by`PluralFormat`. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setNumberFormat](../android/icu/text/PluralFormat.md))`(`format:` ` [NumberFormat](../android/icu/text/NumberFormat.md)!`)` Sets the number format used by this formatter. |
+| open [Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html)! | [parse](PluralFormat.md))`(`text:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `parsePosition:` ` [ParsePosition](../java.text/ParsePosition.md)!`)` This method is not yet supported by`PluralFormat`. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [parseObject](PluralFormat.md))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `pos:` ` [ParsePosition](../java.text/ParsePosition.md)!`)` This method is not yet supported by`PluralFormat`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setNumberFormat](PluralFormat.md))`(`format:` ` [NumberFormat](NumberFormat.md)!`)` Sets the number format used by this formatter. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toPattern](../android/icu/text/PluralFormat.md))`()` Returns the pattern for this PluralFormat. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/icu/text/PluralFormat.md))`()` Returns a string representation of the object. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toPattern](PluralFormat.md))`()` Returns the pattern for this PluralFormat. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](PluralFormat.md))`()` Returns a string representation of the object. |
 
 ## Public constructors
 
@@ -127,7 +127,7 @@ Creates a new cardinal-number`PluralFormat`for a given set of rules. The standar
 
 | Parameters ||
 |---------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| `rules` | [PluralRules](../android/icu/text/PluralRules.md)!:defines the behavior of the`PluralFormat`object. |
+| `rules` | [PluralRules](PluralRules.md)!:defines the behavior of the`PluralFormat`object. |
 
 **See Also**
 
@@ -147,7 +147,7 @@ Creates a new cardinal-number`PluralFormat`for a given set of rules and a patter
 
 | Parameters ||
 |-----------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| `rules` | [PluralRules](../android/icu/text/PluralRules.md)!:defines the behavior of the`PluralFormat`object. |
+| `rules` | [PluralRules](PluralRules.md)!:defines the behavior of the`PluralFormat`object. |
 | `pattern` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the pattern for this`PluralFormat`. |
 
 | Exceptions ||
@@ -170,7 +170,7 @@ Creates a new cardinal-number`PluralFormat`for a given locale.
 
 | Parameters ||
 |-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `ulocale` | [ULocale](../android/icu/util/ULocale.md)!:the`PluralFormat`will be configured with rules for this locale. This locale will also be used for standard number formatting. |
+| `ulocale` | [ULocale](../android.icu.util/ULocale.md)!:the`PluralFormat`will be configured with rules for this locale. This locale will also be used for standard number formatting. |
 
 ### PluralFormat
 
@@ -186,8 +186,8 @@ Creates a new cardinal-number`PluralFormat`for a given set of rules. The standar
 
 | Parameters ||
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `ulocale` | [ULocale](../android/icu/util/ULocale.md)!:the default number formatting will be done using this locale. |
-| `rules` | [PluralRules](../android/icu/text/PluralRules.md)!:defines the behavior of the`PluralFormat`object. |
+| `ulocale` | [ULocale](../android.icu.util/ULocale.md)!:the default number formatting will be done using this locale. |
+| `rules` | [PluralRules](PluralRules.md)!:defines the behavior of the`PluralFormat`object. |
 
 ### PluralFormat
 
@@ -204,8 +204,8 @@ Creates a new cardinal-number`PluralFormat`for a given set of rules, a pattern a
 
 | Parameters ||
 |-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `ulocale` | [ULocale](../android/icu/util/ULocale.md)!:the`PluralFormat`will be configured with rules for this locale. This locale will also be used for standard number formatting. |
-| `rules` | [PluralRules](../android/icu/text/PluralRules.md)!:defines the behavior of the`PluralFormat`object. |
+| `ulocale` | [ULocale](../android.icu.util/ULocale.md)!:the`PluralFormat`will be configured with rules for this locale. This locale will also be used for standard number formatting. |
+| `rules` | [PluralRules](PluralRules.md)!:defines the behavior of the`PluralFormat`object. |
 | `pattern` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the pattern for this`PluralFormat`. |
 | --- | --- |
 
@@ -227,7 +227,7 @@ Creates a new`PluralFormat`for the plural type. The standard number formatting w
 
 | Parameters ||
 |-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `ulocale` | [ULocale](../android/icu/util/ULocale.md)!:the default number formatting will be done using this locale. |
+| `ulocale` | [ULocale](../android.icu.util/ULocale.md)!:the default number formatting will be done using this locale. |
 | `type` | [PluralRules.PluralType](../android/icu/text/PluralRules.PluralType.md)!:The plural type (e.g., cardinal or ordinal). |
 
 ### PluralFormat
@@ -245,7 +245,7 @@ Creates a new`PluralFormat`for a plural type, a pattern and a locale.
 
 | Parameters ||
 |-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `ulocale` | [ULocale](../android/icu/util/ULocale.md)!:the`PluralFormat`will be configured with rules for this locale. This locale will also be used for standard number formatting. |
+| `ulocale` | [ULocale](../android.icu.util/ULocale.md)!:the`PluralFormat`will be configured with rules for this locale. This locale will also be used for standard number formatting. |
 | `type` | [PluralRules.PluralType](../android/icu/text/PluralRules.PluralType.md)!:The plural type (e.g., cardinal or ordinal). |
 | `pattern` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the pattern for this`PluralFormat`. |
 | --- | --- |
@@ -270,7 +270,7 @@ Example code:
 
 | Parameters ||
 |-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `ulocale` | [ULocale](../android/icu/util/ULocale.md)!:the`PluralFormat`will be configured with rules for this locale. This locale will also be used for standard number formatting. |
+| `ulocale` | [ULocale](../android.icu.util/ULocale.md)!:the`PluralFormat`will be configured with rules for this locale. This locale will also be used for standard number formatting. |
 | `pattern` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the pattern for this`PluralFormat`. |
 
 | Exceptions ||
@@ -307,11 +307,11 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 PluralFormat(locale: Locale!)
 ```
 
-Creates a new cardinal-number`PluralFormat`for a given [java.util.Locale](../java/util/Locale.md).
+Creates a new cardinal-number`PluralFormat`for a given [java.util.Locale](../java.util/Locale.md).
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `locale` | [Locale](../java/util/Locale.md)!:the`PluralFormat`will be configured with rules for this locale. This locale will also be used for standard number formatting. |
+| `locale` | [Locale](../java.util/Locale.md)!:the`PluralFormat`will be configured with rules for this locale. This locale will also be used for standard number formatting. |
 
 ### PluralFormat
 
@@ -327,8 +327,8 @@ Creates a new cardinal-number`PluralFormat`for a given set of rules. The standar
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| `locale` | [Locale](../java/util/Locale.md)!:the default number formatting will be done using this locale. |
-| `rules` | [PluralRules](../android/icu/text/PluralRules.md)!:defines the behavior of the`PluralFormat`object. |
+| `locale` | [Locale](../java.util/Locale.md)!:the default number formatting will be done using this locale. |
+| `rules` | [PluralRules](PluralRules.md)!:defines the behavior of the`PluralFormat`object. |
 
 ### PluralFormat
 
@@ -340,11 +340,11 @@ PluralFormat(
     type: PluralRules.PluralType!)
 ```
 
-Creates a new`PluralFormat`for the plural type. The standard number formatting will be done using the given [java.util.Locale](../java/util/Locale.md).
+Creates a new`PluralFormat`for the plural type. The standard number formatting will be done using the given [java.util.Locale](../java.util/Locale.md).
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `locale` | [Locale](../java/util/Locale.md)!:the default number formatting will be done using this locale. |
+| `locale` | [Locale](../java.util/Locale.md)!:the default number formatting will be done using this locale. |
 | `type` | [PluralRules.PluralType](../android/icu/text/PluralRules.PluralType.md)!:The plural type (e.g., cardinal or ordinal). |
 
 ## Public methods
@@ -379,7 +379,7 @@ Returns true if this equals the provided PluralFormat.
 
 | Parameters ||
 |-------|------------------------------------------------------------------------------------------------------------------------------------|
-| `rhs` | [PluralFormat](../android/icu/text/PluralFormat.md)!:the PluralFormat to compare against |
+| `rhs` | [PluralFormat](PluralFormat.md)!:the PluralFormat to compare against |
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------|
@@ -448,14 +448,14 @@ Formats a plural message for a given number and appends the formatted message to
 | Parameters ||
 |--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `obj` | The object to format |
-| `toAppendTo` | [StringBuffer](../java/lang/StringBuffer.md)!:the formatted message will be appended to this`StringBuffer`. |
-| `pos` | [FieldPosition](../java/text/FieldPosition.md)!:will be ignored by this method. |
+| `toAppendTo` | [StringBuffer](../java.lang/StringBuffer.md)!:the formatted message will be appended to this`StringBuffer`. |
+| `pos` | [FieldPosition](../java.text/FieldPosition.md)!:will be ignored by this method. |
 | --- | --- |
 | `number` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:a number object (instance of`Number`for which the plural message should be formatted. If no pattern has been applied to this`PluralFormat`object yet, the formatted number will be returned. Note: If this object is not an instance of`Number`, the`toAppendTo`will not be modified. |
 
 | Return ||
 |----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-| [StringBuffer](../java/lang/StringBuffer.md)! | the string buffer passed in as toAppendTo, with formatted text appended. |
+| [StringBuffer](../java.lang/StringBuffer.md)! | the string buffer passed in as toAppendTo, with formatted text appended. |
 
 | Exceptions ||
 |--------------------------------------|----------------------------------------|
@@ -470,13 +470,13 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun hashCode(): Int
 ```
 
-Returns a hash code value for the object. This method is supported for the benefit of hash tables such as those provided by [java.util.HashMap](../java/util/HashMap.md).
+Returns a hash code value for the object. This method is supported for the benefit of hash tables such as those provided by [java.util.HashMap](../java.util/HashMap.md).
 
 The general contract of`hashCode`is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the`hashCode`method must consistently return the same integer, provided no information used in`equals`comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the [equals](../java/lang/Object.md))method, then calling the`hashCode`method on each of the two objects must produce the same integer result.
-- It is*not* required that if two objects are unequal according to the [equals](../java/lang/Object.md))method, then calling the`hashCode`method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the [equals](../java.lang/Object.md))method, then calling the`hashCode`method on each of the two objects must produce the same integer result.
+- It is*not* required that if two objects are unequal according to the [equals](../java.lang/Object.md))method, then calling the`hashCode`method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------|
@@ -498,7 +498,7 @@ This method is not yet supported by`PluralFormat`.
 | Parameters ||
 |-----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `text` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the string to be parsed. |
-| `parsePosition` | [ParsePosition](../java/text/ParsePosition.md)!:defines the position where parsing is to begin, and upon return, the position where parsing left off. If the position has not changed upon return, then parsing failed. |
+| `parsePosition` | [ParsePosition](../java.text/ParsePosition.md)!:defines the position where parsing is to begin, and upon return, the position where parsing left off. If the position has not changed upon return, then parsing failed. |
 
 | Return ||
 |-----------------------------------------------------------------------------------|-----------------------------------------------------|
@@ -524,7 +524,7 @@ This method is not yet supported by`PluralFormat`.
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `source` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the string to be parsed. |
-| `pos` | [ParsePosition](../java/text/ParsePosition.md)!:defines the position where parsing is to begin, and upon return, the position where parsing left off. If the position has not changed upon return, then parsing failed. |
+| `pos` | [ParsePosition](../java.text/ParsePosition.md)!:defines the position where parsing is to begin, and upon return, the position where parsing left off. If the position has not changed upon return, then parsing failed. |
 
 | Return ||
 |-----------------------------------------------------------------------------|-----------------------------------------------------|
@@ -547,7 +547,7 @@ Sets the number format used by this formatter. You only need to call this if you
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------|
-| `format` | [NumberFormat](../android/icu/text/NumberFormat.md)!:the number format to use. |
+| `format` | [NumberFormat](NumberFormat.md)!:the number format to use. |
 
 ### toPattern
 

@@ -4,7 +4,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # ChildSessionParams
 
-Kotlin| [Java](../android/net/ipsec/ike/ChildSessionParams.md) 
+Kotlin| [Java](ChildSessionParams.md) 
 | --- | --- |
 
 ```
@@ -13,9 +13,9 @@ abstract class ChildSessionParams
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.ipsec.ike.ChildSessionParams](../android/net/ipsec/ike/ChildSessionParams.md) |
+| ↳ | [android.net.ipsec.ike.ChildSessionParams](ChildSessionParams.md) |
 
-| Known Direct Subclasses [TransportModeChildSessionParams](../android/net/ipsec/ike/TransportModeChildSessionParams.md), [TunnelModeChildSessionParams](../android/net/ipsec/ike/TunnelModeChildSessionParams.md) |-----------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------| | [TransportModeChildSessionParams](../android/net/ipsec/ike/TransportModeChildSessionParams.md) | TransportModeChildSessionParams represents proposed configurations for negotiating a transport mode Child Session. | | [TunnelModeChildSessionParams](../android/net/ipsec/ike/TunnelModeChildSessionParams.md) | TunnelModeChildSessionParams represents proposed configurations for negotiating a tunnel mode Child Session. | |
+| Known Direct Subclasses [TransportModeChildSessionParams](TransportModeChildSessionParams.md), [TunnelModeChildSessionParams](TunnelModeChildSessionParams.md) |-----------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------| | [TransportModeChildSessionParams](TransportModeChildSessionParams.md) | TransportModeChildSessionParams represents proposed configurations for negotiating a transport mode Child Session. | | [TunnelModeChildSessionParams](TunnelModeChildSessionParams.md) | TunnelModeChildSessionParams represents proposed configurations for negotiating a tunnel mode Child Session. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 ChildSessionParams is an abstract class that represents proposed configurations for negotiating a Child Session.
@@ -26,21 +26,21 @@ IKE library will send out KE payload only if user has configured one or more DH 
 
 When requesting the first Child Session in IKE AUTH, IKE library will not propose any DH group even if user has configured it, as per RFC 7296. When rekeying this child session, IKE library will accept DH groups that are configured in its ChildSessionParams. If after rekeying user needs to have the same DH group as that of the IKE Session, then they need to explicitly set the same DH Group in ChildSessionParams.
 
-@see [TunnelModeChildSessionParams](../android/net/ipsec/ike/TunnelModeChildSessionParams.md) and [TransportModeChildSessionParams](../android/net/ipsec/ike/TransportModeChildSessionParams.md)
+@see [TunnelModeChildSessionParams](TunnelModeChildSessionParams.md) and [TransportModeChildSessionParams](TransportModeChildSessionParams.md)
 
 ## Summary
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/net/ipsec/ike/ChildSessionParams.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ChildSaProposal](../android/net/ipsec/ike/ChildSaProposal.md)!\> | [getChildSaProposals](../android/net/ipsec/ike/ChildSessionParams.md))`()` Retrieves all ChildSaProposals configured |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHardLifetimeSeconds](../android/net/ipsec/ike/ChildSessionParams.md))`()` Retrieves hard lifetime in seconds |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](ChildSessionParams.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ChildSaProposal](ChildSaProposal.md)!\> | [getChildSaProposals](ChildSessionParams.md))`()` Retrieves all ChildSaProposals configured |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHardLifetimeSeconds](ChildSessionParams.md))`()` Retrieves hard lifetime in seconds |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [IkeTrafficSelector](../android/net/ipsec/ike/IkeTrafficSelector.md)!\> | [getInboundTrafficSelectors](../android/net/ipsec/ike/ChildSessionParams.md))`()` Retrieves configured inbound traffic selectors |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [IkeTrafficSelector](../android/net/ipsec/ike/IkeTrafficSelector.md)!\> | [getOutboundTrafficSelectors](../android/net/ipsec/ike/ChildSessionParams.md))`()` Retrieves configured outbound traffic selectors |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSoftLifetimeSeconds](../android/net/ipsec/ike/ChildSessionParams.md))`()` Retrieves soft lifetime in seconds |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [IkeTrafficSelector](IkeTrafficSelector.md)!\> | [getInboundTrafficSelectors](ChildSessionParams.md))`()` Retrieves configured inbound traffic selectors |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [IkeTrafficSelector](IkeTrafficSelector.md)!\> | [getOutboundTrafficSelectors](ChildSessionParams.md))`()` Retrieves configured outbound traffic selectors |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSoftLifetimeSeconds](ChildSessionParams.md))`()` Retrieves soft lifetime in seconds |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/net/ipsec/ike/ChildSessionParams.md))`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](ChildSessionParams.md))`()` <br /> |
 
 ## Public methods
 
@@ -72,7 +72,7 @@ Retrieves all ChildSaProposals configured
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [ChildSaProposal](../android/net/ipsec/ike/ChildSaProposal.md)!> | This value cannot be`null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [ChildSaProposal](ChildSaProposal.md)!> | This value cannot be`null`. |
 
 ### getHardLifetimeSeconds
 
@@ -102,7 +102,7 @@ Retrieves configured inbound traffic selectors
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [IkeTrafficSelector](../android/net/ipsec/ike/IkeTrafficSelector.md)!> | This value cannot be`null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [IkeTrafficSelector](IkeTrafficSelector.md)!> | This value cannot be`null`. |
 
 ### getOutboundTrafficSelectors
 
@@ -118,7 +118,7 @@ Retrieves configured outbound traffic selectors
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [IkeTrafficSelector](../android/net/ipsec/ike/IkeTrafficSelector.md)!> | This value cannot be`null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [IkeTrafficSelector](IkeTrafficSelector.md)!> | This value cannot be`null`. |
 
 ### getSoftLifetimeSeconds
 

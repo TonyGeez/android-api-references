@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # BroadcastReceiver
 
-Kotlin| [Java](../android/content/BroadcastReceiver.md) 
+Kotlin| [Java](BroadcastReceiver.md) 
 | --- | --- |
 
 ```
@@ -13,12 +13,12 @@ abstract class BroadcastReceiver
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.content.BroadcastReceiver](../android/content/BroadcastReceiver.md) |
+| ↳ | [android.content.BroadcastReceiver](BroadcastReceiver.md) |
 
-| Known Direct Subclasses [AppWidgetProvider](../android/appwidget/AppWidgetProvider.md), [DelegatedAdminReceiver](../android/app/admin/DelegatedAdminReceiver.md), [DeviceAdminReceiver](../android/app/admin/DeviceAdminReceiver.md), [MbmsDownloadReceiver](../android/telephony/mbms/MbmsDownloadReceiver.md), [PolicyUpdateReceiver](../android/app/admin/PolicyUpdateReceiver.md), [RestrictionsReceiver](../android/service/restrictions/RestrictionsReceiver.md) |--------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [AppWidgetProvider](../android/appwidget/AppWidgetProvider.md) | A convenience class to aid in implementing an AppWidget provider. | | [DelegatedAdminReceiver](../android/app/admin/DelegatedAdminReceiver.md) | Base class for delegated apps to handle callbacks related to their delegated capabilities. | | [DeviceAdminReceiver](../android/app/admin/DeviceAdminReceiver.md) | Base class for implementing a device administration component. | | [MbmsDownloadReceiver](../android/telephony/mbms/MbmsDownloadReceiver.md) | The [BroadcastReceiver](../android/content/BroadcastReceiver.md) responsible for handling intents sent from the middleware. | | [PolicyUpdateReceiver](../android/app/admin/PolicyUpdateReceiver.md) | Base class for implementing a policy update receiver. | | [RestrictionsReceiver](../android/service/restrictions/RestrictionsReceiver.md) | Abstract implementation of a Restrictions Provider BroadcastReceiver. | |
+| Known Direct Subclasses [AppWidgetProvider](../android.appwidget/AppWidgetProvider.md), [DelegatedAdminReceiver](../android.app.admin/DelegatedAdminReceiver.md), [DeviceAdminReceiver](../android.app.admin/DeviceAdminReceiver.md), [MbmsDownloadReceiver](../android.telephony.mbms/MbmsDownloadReceiver.md), [PolicyUpdateReceiver](../android.app.admin/PolicyUpdateReceiver.md), [RestrictionsReceiver](../android.service.restrictions/RestrictionsReceiver.md) |--------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [AppWidgetProvider](../android.appwidget/AppWidgetProvider.md) | A convenience class to aid in implementing an AppWidget provider. | | [DelegatedAdminReceiver](../android.app.admin/DelegatedAdminReceiver.md) | Base class for delegated apps to handle callbacks related to their delegated capabilities. | | [DeviceAdminReceiver](../android.app.admin/DeviceAdminReceiver.md) | Base class for implementing a device administration component. | | [MbmsDownloadReceiver](../android.telephony.mbms/MbmsDownloadReceiver.md) | The [BroadcastReceiver](BroadcastReceiver.md) responsible for handling intents sent from the middleware. | | [PolicyUpdateReceiver](../android.app.admin/PolicyUpdateReceiver.md) | Base class for implementing a policy update receiver. | | [RestrictionsReceiver](../android.service.restrictions/RestrictionsReceiver.md) | Abstract implementation of a Restrictions Provider BroadcastReceiver. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-Base class for code that receives and handles broadcast intents sent by [android.content.Context#sendBroadcast(Intent)](../android/content/Context.md)).
+Base class for code that receives and handles broadcast intents sent by [android.content.Context#sendBroadcast(Intent)](Context.md)).
 
 You can either dynamically register an instance of this class with android.content.Context#registerReceiver or statically declare an implementation with the [<receiver>](../android/R.styleable.md) tag in your`AndroidManifest.xml`.
 |
@@ -34,36 +34,36 @@ You can either dynamically register an instance of this class with android.conte
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------|---|
-| [BroadcastReceiver](../android/content/BroadcastReceiver.md))`()` <br /> |
+| [BroadcastReceiver](BroadcastReceiver.md))`()` <br /> |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [abortBroadcast](../android/content/BroadcastReceiver.md))`()` Sets the flag indicating that this receiver should abort the current broadcast; only works with broadcasts sent through [Context.sendOrderedBroadcast](../android/content/Context.md)). |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearAbortBroadcast](../android/content/BroadcastReceiver.md))`()` Clears the flag indicating that this receiver should abort the current broadcast. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getAbortBroadcast](../android/content/BroadcastReceiver.md))`()` Returns the flag indicating whether or not this receiver should abort the current broadcast. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [abortBroadcast](BroadcastReceiver.md))`()` Sets the flag indicating that this receiver should abort the current broadcast; only works with broadcasts sent through [Context.sendOrderedBroadcast](Context.md)). |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearAbortBroadcast](BroadcastReceiver.md))`()` Clears the flag indicating that this receiver should abort the current broadcast. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getAbortBroadcast](BroadcastReceiver.md))`()` Returns the flag indicating whether or not this receiver should abort the current broadcast. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getDebugUnregister](../android/content/BroadcastReceiver.md))`()` Return the last value given to [setDebugUnregister](../android/content/BroadcastReceiver.md)). |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getResultCode](../android/content/BroadcastReceiver.md))`()` Retrieve the current result code, as set by the previous receiver. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getResultData](../android/content/BroadcastReceiver.md))`()` Retrieve the current result data, as set by the previous receiver. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getDebugUnregister](BroadcastReceiver.md))`()` Return the last value given to [setDebugUnregister](BroadcastReceiver.md)). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getResultCode](BroadcastReceiver.md))`()` Retrieve the current result code, as set by the previous receiver. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getResultData](BroadcastReceiver.md))`()` Retrieve the current result data, as set by the previous receiver. |
 | --- | --- |
-| [Bundle](../android/os/Bundle.md)! | [getResultExtras](../android/content/BroadcastReceiver.md))`(`makeMap:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Retrieve the current result extra data, as set by the previous receiver. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getSentFromPackage](../android/content/BroadcastReceiver.md))`()` Returns the package name of the app that initially sent this broadcast. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSentFromUid](../android/content/BroadcastReceiver.md))`()` Returns the uid of the app that initially sent this broadcast. |
+| [Bundle](../android.os/Bundle.md)! | [getResultExtras](BroadcastReceiver.md))`(`makeMap:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Retrieve the current result extra data, as set by the previous receiver. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getSentFromPackage](BroadcastReceiver.md))`()` Returns the package name of the app that initially sent this broadcast. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSentFromUid](BroadcastReceiver.md))`()` Returns the uid of the app that initially sent this broadcast. |
 | --- | --- |
-| [BroadcastReceiver.PendingResult](../android/content/BroadcastReceiver.PendingResult.md)! | [goAsync](../android/content/BroadcastReceiver.md))`()` This can be called by an application in [onReceive](../android/content/BroadcastReceiver.md))to allow it to keep the broadcast active after returning from that function. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isInitialStickyBroadcast](../android/content/BroadcastReceiver.md))`()` Returns true if the receiver is currently processing the initial value of a sticky broadcast -- that is, the value that was last broadcast and is currently held in the sticky cache, so this is not directly the result of a broadcast right now. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isOrderedBroadcast](../android/content/BroadcastReceiver.md))`()` Returns true if the receiver is currently processing an ordered broadcast. |
+| [BroadcastReceiver.PendingResult](../android/content/BroadcastReceiver.PendingResult.md)! | [goAsync](BroadcastReceiver.md))`()` This can be called by an application in [onReceive](BroadcastReceiver.md))to allow it to keep the broadcast active after returning from that function. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isInitialStickyBroadcast](BroadcastReceiver.md))`()` Returns true if the receiver is currently processing the initial value of a sticky broadcast -- that is, the value that was last broadcast and is currently held in the sticky cache, so this is not directly the result of a broadcast right now. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isOrderedBroadcast](BroadcastReceiver.md))`()` Returns true if the receiver is currently processing an ordered broadcast. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onReceive](../android/content/BroadcastReceiver.md))`(`context:` ` [Context](../android/content/Context.md)!`, `intent:` ` [Intent](../android/content/Intent.md)!`)` This method is called when the BroadcastReceiver is receiving an Intent broadcast. |
-| open [IBinder](../android/os/IBinder.md)! | [peekService](../android/content/BroadcastReceiver.md))`(`myContext:` ` [Context](../android/content/Context.md)!`, `service:` ` [Intent](../android/content/Intent.md)!`)` Provide a binder to an already-bound service. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDebugUnregister](../android/content/BroadcastReceiver.md))`(`debug:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Control inclusion of debugging help for mismatched calls to [Context.registerReceiver()](../android/content/Context.md)). |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onReceive](BroadcastReceiver.md))`(`context:` ` [Context](Context.md)!`, `intent:` ` [Intent](Intent.md)!`)` This method is called when the BroadcastReceiver is receiving an Intent broadcast. |
+| open [IBinder](../android.os/IBinder.md)! | [peekService](BroadcastReceiver.md))`(`myContext:` ` [Context](Context.md)!`, `service:` ` [Intent](Intent.md)!`)` Provide a binder to an already-bound service. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDebugUnregister](BroadcastReceiver.md))`(`debug:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Control inclusion of debugging help for mismatched calls to [Context.registerReceiver()](Context.md)). |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOrderedHint](../android/content/BroadcastReceiver.md))`(`isOrdered:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` For internal use, sets the hint about whether this BroadcastReceiver is running in ordered mode. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setResult](../android/content/BroadcastReceiver.md))`(`code:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `data:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `extras:` ` [Bundle](../android/os/Bundle.md)!`)` Change all of the result data returned from this broadcasts; only works with broadcasts sent through [Context.sendOrderedBroadcast](../android/content/Context.md)). |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setResultCode](../android/content/BroadcastReceiver.md))`(`code:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Change the current result code of this broadcast; only works with broadcasts sent through [Context.sendOrderedBroadcast](../android/content/Context.md)). |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOrderedHint](BroadcastReceiver.md))`(`isOrdered:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` For internal use, sets the hint about whether this BroadcastReceiver is running in ordered mode. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setResult](BroadcastReceiver.md))`(`code:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `data:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `extras:` ` [Bundle](../android.os/Bundle.md)!`)` Change all of the result data returned from this broadcasts; only works with broadcasts sent through [Context.sendOrderedBroadcast](Context.md)). |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setResultCode](BroadcastReceiver.md))`(`code:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Change the current result code of this broadcast; only works with broadcasts sent through [Context.sendOrderedBroadcast](Context.md)). |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setResultData](../android/content/BroadcastReceiver.md))`(`data:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Change the current result data of this broadcast; only works with broadcasts sent through [Context.sendOrderedBroadcast](../android/content/Context.md)). |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setResultExtras](../android/content/BroadcastReceiver.md))`(`extras:` ` [Bundle](../android/os/Bundle.md)!`)` Change the current result extras of this broadcast; only works with broadcasts sent through [Context.sendOrderedBroadcast](../android/content/Context.md)). |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setResultData](BroadcastReceiver.md))`(`data:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Change the current result data of this broadcast; only works with broadcasts sent through [Context.sendOrderedBroadcast](Context.md)). |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setResultExtras](BroadcastReceiver.md))`(`extras:` ` [Bundle](../android.os/Bundle.md)!`)` Change the current result extras of this broadcast; only works with broadcasts sent through [Context.sendOrderedBroadcast](Context.md)). |
 
 ## Public constructors
 
@@ -85,9 +85,9 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun abortBroadcast(): Unit
 ```
 
-Sets the flag indicating that this receiver should abort the current broadcast; only works with broadcasts sent through [Context.sendOrderedBroadcast](../android/content/Context.md)). This will prevent any other broadcast receivers from receiving the broadcast. It will still call [onReceive](../android/content/BroadcastReceiver.md))of the BroadcastReceiver that the caller of [Context.sendOrderedBroadcast](../android/content/Context.md))passed in.
+Sets the flag indicating that this receiver should abort the current broadcast; only works with broadcasts sent through [Context.sendOrderedBroadcast](Context.md)). This will prevent any other broadcast receivers from receiving the broadcast. It will still call [onReceive](BroadcastReceiver.md))of the BroadcastReceiver that the caller of [Context.sendOrderedBroadcast](Context.md))passed in.
 
-**This method does not work with non-ordered broadcasts such as those sent with [Context.sendBroadcast](../android/content/Context.md))** 
+**This method does not work with non-ordered broadcasts such as those sent with [Context.sendBroadcast](Context.md))** 
 
 ### clearAbortBroadcast
 
@@ -121,7 +121,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun getDebugUnregister(): Boolean
 ```
 
-Return the last value given to [setDebugUnregister](../android/content/BroadcastReceiver.md)). 
+Return the last value given to [setDebugUnregister](BroadcastReceiver.md)). 
 
 ### getResultCode
 
@@ -167,7 +167,7 @@ Retrieve the current result extra data, as set by the previous receiver. Any cha
 
 | Return ||
 |-----------------------------------------------------------------------------------|-----------------------------|
-| [Bundle](../android/os/Bundle.md)! | Map The current extras map. |
+| [Bundle](../android.os/Bundle.md)! | Map The current extras map. |
 
 ### getSentFromPackage
 
@@ -195,7 +195,7 @@ Returns the uid of the app that initially sent this broadcast.
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the uid of the broadcasting app or [Process.INVALID_UID](../android/os/Process.md) if the current receiver cannot access the identity of the broadcasting app |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the uid of the broadcasting app or [Process.INVALID_UID](../android.os/Process.md) if the current receiver cannot access the identity of the broadcasting app |
 
 ### goAsync
 
@@ -205,11 +205,11 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 fun goAsync(): BroadcastReceiver.PendingResult!
 ```
 
-This can be called by an application in [onReceive](../android/content/BroadcastReceiver.md))to allow it to keep the broadcast active after returning from that function. This does*not*change the expectation of being relatively responsive to the broadcast, but does allow the implementation to move work related to it over to another thread to avoid glitching the main UI thread due to disk IO.
+This can be called by an application in [onReceive](BroadcastReceiver.md))to allow it to keep the broadcast active after returning from that function. This does*not*change the expectation of being relatively responsive to the broadcast, but does allow the implementation to move work related to it over to another thread to avoid glitching the main UI thread due to disk IO.
 
 As a general rule, broadcast receivers are allowed to run for up to 10 seconds before the system will consider them non-responsive and ANR the app. Since these usually execute on the app's main thread, they are already bound by the \~5 second time limit of various operations that can happen there (not to mention just avoiding UI jank), so the receive limit is generally not of concern. However, once you use`goAsync`, though able to be off the main thread, the broadcast execution limit still applies, and that includes the time spent between calling this method and ultimately [PendingResult.finish()](../android/content/BroadcastReceiver.PendingResult.md)).
 
-If you are taking advantage of this method to have more time to execute, it is useful to know that the available time can be longer in certain situations. In particular, if the broadcast you are receiving is not a foreground broadcast (that is, the sender has not used [Intent.FLAG_RECEIVER_FOREGROUND](../android/content/Intent.md)), then more time is allowed for the receivers to run, allowing them to execute for 30 seconds or even a bit more. This is something that receivers should rarely take advantage of (long work should be punted to another system facility such as [android.app.job.JobScheduler](../android/app/job/JobScheduler.md), [android.app.Service](../android/app/Service.md), or see especially androidx.core.app.JobIntentService), but can be useful in certain rare cases where it is necessary to do some work as soon as the broadcast is delivered. Keep in mind that the work you do here will block further broadcasts until it completes, so taking advantage of this at all excessively can be counter-productive and cause later events to be received more slowly.
+If you are taking advantage of this method to have more time to execute, it is useful to know that the available time can be longer in certain situations. In particular, if the broadcast you are receiving is not a foreground broadcast (that is, the sender has not used [Intent.FLAG_RECEIVER_FOREGROUND](Intent.md)), then more time is allowed for the receivers to run, allowing them to execute for 30 seconds or even a bit more. This is something that receivers should rarely take advantage of (long work should be punted to another system facility such as [android.app.job.JobScheduler](../android.app.job/JobScheduler.md), [android.app.Service](../android.app/Service.md), or see especially androidx.core.app.JobIntentService), but can be useful in certain rare cases where it is necessary to do some work as soon as the broadcast is delivered. Keep in mind that the work you do here will block further broadcasts until it completes, so taking advantage of this at all excessively can be counter-productive and cause later events to be received more slowly.
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -246,16 +246,16 @@ abstract fun onReceive(
 ): Unit
 ```
 
-This method is called when the BroadcastReceiver is receiving an Intent broadcast. During this time you can use the other methods on BroadcastReceiver to view/modify the current result values. This method is always called within the main thread of its process, unless you explicitly asked for it to be scheduled on a different thread using [android.content.Context#registerReceiver(BroadcastReceiver, * IntentFilter, String, android.os.Handler)](../android/content/Context.md)). When it runs on the main thread you should never perform long-running operations in it (there is a timeout of 10 seconds that the system allows before considering the receiver to be blocked and a candidate to be killed). You cannot launch a popup dialog in your implementation of onReceive().
+This method is called when the BroadcastReceiver is receiving an Intent broadcast. During this time you can use the other methods on BroadcastReceiver to view/modify the current result values. This method is always called within the main thread of its process, unless you explicitly asked for it to be scheduled on a different thread using [android.content.Context#registerReceiver(BroadcastReceiver, * IntentFilter, String, android.os.Handler)](Context.md)). When it runs on the main thread you should never perform long-running operations in it (there is a timeout of 10 seconds that the system allows before considering the receiver to be blocked and a candidate to be killed). You cannot launch a popup dialog in your implementation of onReceive().
 
-**If this BroadcastReceiver was launched through a \<receiver\> tag, then the object is no longer alive after returning from this function.** This means you should not perform any operations that return a result to you asynchronously. If you need to perform any follow up background work, schedule a [android.app.job.JobService](../android/app/job/JobService.md) with [android.app.job.JobScheduler](../android/app/job/JobScheduler.md). If you wish to interact with a service that is already running and previously bound using [bindService()](../android/content/Context.md)), you can use [peekService](../android/content/BroadcastReceiver.md)).
+**If this BroadcastReceiver was launched through a \<receiver\> tag, then the object is no longer alive after returning from this function.** This means you should not perform any operations that return a result to you asynchronously. If you need to perform any follow up background work, schedule a [android.app.job.JobService](../android.app.job/JobService.md) with [android.app.job.JobScheduler](../android.app.job/JobScheduler.md). If you wish to interact with a service that is already running and previously bound using [bindService()](Context.md)), you can use [peekService](BroadcastReceiver.md)).
 
-The Intent filters used in android.content.Context#registerReceiver and in application manifests are*not* guaranteed to be exclusive. They are hints to the operating system about how to find suitable recipients. It is possible for senders to force delivery to specific recipients, bypassing filter resolution. For this reason, [onReceive()](../android/content/BroadcastReceiver.md))implementations should respond only to known actions, ignoring any unexpected Intents that they may receive.
+The Intent filters used in android.content.Context#registerReceiver and in application manifests are*not* guaranteed to be exclusive. They are hints to the operating system about how to find suitable recipients. It is possible for senders to force delivery to specific recipients, bypassing filter resolution. For this reason, [onReceive()](BroadcastReceiver.md))implementations should respond only to known actions, ignoring any unexpected Intents that they may receive.
 
 | Parameters ||
 |-----------|----------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](../android/content/Context.md)!:The Context in which the receiver is running. |
-| `intent` | [Intent](../android/content/Intent.md)!:The Intent being received. |
+| `context` | [Context](Context.md)!:The Context in which the receiver is running. |
+| `intent` | [Intent](Intent.md)!:The Intent being received. |
 
 ### peekService
 
@@ -268,12 +268,12 @@ open fun peekService(
 ): IBinder!
 ```
 
-Provide a binder to an already-bound service. This method is synchronous and will not start the target service if it is not present, so it is safe to call from [onReceive](../android/content/BroadcastReceiver.md)). For peekService() to return a non null [android.os.IBinder](../android/os/IBinder.md) interface the service must have published it before. In other words some component must have called [android.content.Context#bindService(Intent, ServiceConnection, int)](../android/content/Context.md))on it.
+Provide a binder to an already-bound service. This method is synchronous and will not start the target service if it is not present, so it is safe to call from [onReceive](BroadcastReceiver.md)). For peekService() to return a non null [android.os.IBinder](../android.os/IBinder.md) interface the service must have published it before. In other words some component must have called [android.content.Context#bindService(Intent, ServiceConnection, int)](Context.md))on it.
 
 | Parameters ||
 |-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `myContext` | [Context](../android/content/Context.md)!:The Context that had been passed to [onReceive(android.content.Context,android.content.Intent)](../android/content/BroadcastReceiver.md)) |
-| `service` | [Intent](../android/content/Intent.md)!:Identifies the already-bound service you wish to use. See [android.content.Context#bindService(Intent, ServiceConnection, int)](../android/content/Context.md))for more information. |
+| `myContext` | [Context](Context.md)!:The Context that had been passed to [onReceive(android.content.Context,android.content.Intent)](BroadcastReceiver.md)) |
+| `service` | [Intent](Intent.md)!:Identifies the already-bound service you wish to use. See [android.content.Context#bindService(Intent, ServiceConnection, int)](Context.md))for more information. |
 
 ### setDebugUnregister
 
@@ -283,7 +283,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun setDebugUnregister(debug: Boolean): Unit
 ```
 
-Control inclusion of debugging help for mismatched calls to [Context.registerReceiver()](../android/content/Context.md)). If called with true, before given to registerReceiver(), then the callstack of the following [Context.unregisterReceiver()](../android/content/Context.md))call is retained, to be printed if a later incorrect unregister call is made. Note that doing this requires retaining information about the BroadcastReceiver for the lifetime of the app, resulting in a leak -- this should only be used for debugging. 
+Control inclusion of debugging help for mismatched calls to [Context.registerReceiver()](Context.md)). If called with true, before given to registerReceiver(), then the callstack of the following [Context.unregisterReceiver()](Context.md))call is retained, to be printed if a later incorrect unregister call is made. Note that doing this requires retaining information about the BroadcastReceiver for the lifetime of the app, resulting in a leak -- this should only be used for debugging. 
 
 ### setOrderedHint
 
@@ -307,15 +307,15 @@ fun setResult(
 ): Unit
 ```
 
-Change all of the result data returned from this broadcasts; only works with broadcasts sent through [Context.sendOrderedBroadcast](../android/content/Context.md)). All current result data is replaced by the value given to this method.
+Change all of the result data returned from this broadcasts; only works with broadcasts sent through [Context.sendOrderedBroadcast](Context.md)). All current result data is replaced by the value given to this method.
 
-**This method does not work with non-ordered broadcasts such as those sent with [Context.sendBroadcast](../android/content/Context.md))**
+**This method does not work with non-ordered broadcasts such as those sent with [Context.sendBroadcast](Context.md))**
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `code` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The new result code. Often uses the Activity [android.app.Activity#RESULT_CANCELED](../android/app/Activity.md) and [android.app.Activity#RESULT_OK](../android/app/Activity.md) constants, though the actual meaning of this value is ultimately up to the broadcaster. |
+| `code` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The new result code. Often uses the Activity [android.app.Activity#RESULT_CANCELED](../android.app/Activity.md) and [android.app.Activity#RESULT_OK](../android.app/Activity.md) constants, though the actual meaning of this value is ultimately up to the broadcaster. |
 | `data` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The new result data. This is an arbitrary string whose interpretation is up to the broadcaster; may be null. |
-| `extras` | [Bundle](../android/os/Bundle.md)!:The new extra data map. This is a Bundle holding arbitrary data, whose interpretation is up to the broadcaster. Can be set to null. This completely replaces the current map (if any). |
+| `extras` | [Bundle](../android.os/Bundle.md)!:The new extra data map. This is a Bundle holding arbitrary data, whose interpretation is up to the broadcaster. Can be set to null. This completely replaces the current map (if any). |
 | --- | --- |
 
 ### setResultCode
@@ -326,9 +326,9 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun setResultCode(code: Int): Unit
 ```
 
-Change the current result code of this broadcast; only works with broadcasts sent through [Context.sendOrderedBroadcast](../android/content/Context.md)). Often uses the Activity [android.app.Activity#RESULT_CANCELED](../android/app/Activity.md) and [android.app.Activity#RESULT_OK](../android/app/Activity.md) constants, though the actual meaning of this value is ultimately up to the broadcaster.
+Change the current result code of this broadcast; only works with broadcasts sent through [Context.sendOrderedBroadcast](Context.md)). Often uses the Activity [android.app.Activity#RESULT_CANCELED](../android.app/Activity.md) and [android.app.Activity#RESULT_OK](../android.app/Activity.md) constants, though the actual meaning of this value is ultimately up to the broadcaster.
 
-This method does not work with non-ordered broadcasts such as those sent with [Context.sendBroadcast](../android/content/Context.md))
+This method does not work with non-ordered broadcasts such as those sent with [Context.sendBroadcast](Context.md))
 
 | Parameters ||
 |--------|-------------------------------------------------------------------------------------------------|
@@ -336,7 +336,7 @@ This method does not work with non-ordered broadcasts such as those sent with [C
 
 **See Also**
 
-- [#setResult(int, String, Bundle)](../android/content/BroadcastReceiver.md)) 
+- [#setResult(int, String, Bundle)](BroadcastReceiver.md)) 
 
 ### setResultData
 
@@ -346,9 +346,9 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun setResultData(data: String!): Unit
 ```
 
-Change the current result data of this broadcast; only works with broadcasts sent through [Context.sendOrderedBroadcast](../android/content/Context.md)). This is an arbitrary string whose interpretation is up to the broadcaster.
+Change the current result data of this broadcast; only works with broadcasts sent through [Context.sendOrderedBroadcast](Context.md)). This is an arbitrary string whose interpretation is up to the broadcaster.
 
-**This method does not work with non-ordered broadcasts such as those sent with [Context.sendBroadcast](../android/content/Context.md))**
+**This method does not work with non-ordered broadcasts such as those sent with [Context.sendBroadcast](Context.md))**
 
 | Parameters ||
 |--------|---------------------------------------------------------------------------------------------------------------------|
@@ -356,7 +356,7 @@ Change the current result data of this broadcast; only works with broadcasts sen
 
 **See Also**
 
-- [#setResult(int, String, Bundle)](../android/content/BroadcastReceiver.md)) 
+- [#setResult(int, String, Bundle)](BroadcastReceiver.md)) 
 
 ### setResultExtras
 
@@ -366,14 +366,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun setResultExtras(extras: Bundle!): Unit
 ```
 
-Change the current result extras of this broadcast; only works with broadcasts sent through [Context.sendOrderedBroadcast](../android/content/Context.md)). This is a Bundle holding arbitrary data, whose interpretation is up to the broadcaster. Can be set to null. Calling this method completely replaces the current map (if any).
+Change the current result extras of this broadcast; only works with broadcasts sent through [Context.sendOrderedBroadcast](Context.md)). This is a Bundle holding arbitrary data, whose interpretation is up to the broadcaster. Can be set to null. Calling this method completely replaces the current map (if any).
 
-**This method does not work with non-ordered broadcasts such as those sent with [Context.sendBroadcast](../android/content/Context.md))**
+**This method does not work with non-ordered broadcasts such as those sent with [Context.sendBroadcast](Context.md))**
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------|
-| `extras` | [Bundle](../android/os/Bundle.md)!:The new extra data map; may be null. |
+| `extras` | [Bundle](../android.os/Bundle.md)!:The new extra data map; may be null. |
 
 **See Also**
 
-- [#setResult(int, String, Bundle)](../android/content/BroadcastReceiver.md))
+- [#setResult(int, String, Bundle)](BroadcastReceiver.md))

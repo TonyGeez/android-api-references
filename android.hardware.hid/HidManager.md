@@ -8,7 +8,7 @@ class HidManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.hardware.hid.HidManager](../android/hardware/hid/HidManager.md) |
+| ↳ | [android.hardware.hid.HidManager](HidManager.md) |
 
 Provides access to Human Interface Device (HID) nodes.
 
@@ -25,7 +25,7 @@ Device access may be restricted when the application is in the background or in 
 | Public methods ||
 |---|---|
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/hid/HidManager#canEnumerateDevices()()` Checks if the calling app has the necessary permissions to enumerate connected HID devices. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [HidDevice](../android/hardware/hid/HidDevice.md)!\> | `https://developer.android.com/reference/kotlin/android/hardware/hid/HidManager#getDevices()()` Returns a list of all currently connected HID devices. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [HidDevice](HidDevice.md)!\> | `https://developer.android.com/reference/kotlin/android/hardware/hid/HidManager#getDevices()()` Returns a list of all currently connected HID devices. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/hid/HidManager#registerListener(android.hardware.hid.HidDeviceListener,%20java.util.concurrent.Executor)(listener: https://developer.android.com/reference/kotlin/android/hardware/hid/HidDeviceListener, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#)` Registers a listener to receive notifications about HID device lifecycle events. |
 | --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/hid/HidManager#unregisterListener(android.hardware.hid.HidDeviceListener)(listener: https://developer.android.com/reference/kotlin/android/hardware/hid/HidDeviceListener)` Unregisters a previously registered listener for HID device lifecycle events. |
@@ -93,8 +93,8 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `listener` | [HidDeviceListener](../android/hardware/hid/HidDeviceListener.md): The listener to receive device addition and removal events. Must not be `null`. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): The executor on which the listener methods will be invoked. Must not be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `listener` | [HidDeviceListener](HidDeviceListener.md): The listener to receive device addition and removal events. Must not be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor on which the listener methods will be invoked. Must not be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 
 **See Also**
 
@@ -117,7 +117,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `listener` | [HidDeviceListener](../android/hardware/hid/HidDeviceListener.md): The listener to unregister. Must not be `null`. |
+| `listener` | [HidDeviceListener](HidDeviceListener.md): The listener to unregister. Must not be `null`. |
 
 **See Also**
 

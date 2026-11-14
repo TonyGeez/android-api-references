@@ -8,9 +8,9 @@ abstract class PermissionCollection : Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.PermissionCollection](../java/security/PermissionCollection.md) |
+| ↳ | [java.security.PermissionCollection](PermissionCollection.md) |
 
-| Known Direct Subclasses [Permissions](../java/security/Permissions.md) |---|---| | [Permissions](../java/security/Permissions.md) | Android doesn't support `https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#`. | |
+| Known Direct Subclasses [Permissions](Permissions.md) |---|---| | [Permissions](Permissions.md) | Android doesn't support `https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#`. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 Android doesn't support `https://developer.android.com/reference/kotlin/java/lang/SecurityManager.html#`. Do not use this class.
@@ -24,7 +24,7 @@ Android doesn't support `https://developer.android.com/reference/kotlin/java/lan
 | Public methods ||
 |---|---|
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/PermissionCollection#add(java.security.Permission)(permission: https://developer.android.com/reference/kotlin/java/security/Permission!)` Adds a permission object to the current collection of permission objects. |
-| abstract [Enumeration](../java/util/Enumeration.md)\< [Permission](../java/security/Permission.md)!\>! | `https://developer.android.com/reference/kotlin/java/security/PermissionCollection#elements()()` Returns an enumeration of all the Permission objects in the collection. |
+| abstract [Enumeration](../java.util/Enumeration.md)\< [Permission](Permission.md)!\>! | `https://developer.android.com/reference/kotlin/java/security/PermissionCollection#elements()()` Returns an enumeration of all the Permission objects in the collection. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/security/PermissionCollection#implies(java.security.Permission)(permission: https://developer.android.com/reference/kotlin/java/security/Permission!)` Checks to see if the specified permission is implied by the collection of Permission objects held in this PermissionCollection. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/security/PermissionCollection#isReadOnly()()` <br /> |
@@ -54,7 +54,7 @@ Adds a permission object to the current collection of permission objects.
 
 | Parameters ||
 |---|---|
-| `permission` | [Permission](../java/security/Permission.md)!: the Permission object to add. |
+| `permission` | [Permission](Permission.md)!: the Permission object to add. |
 
 | Exceptions ||
 |---|---|
@@ -87,7 +87,7 @@ Checks to see if the specified permission is implied by the collection of Permis
 
 | Parameters ||
 |---|---|
-| `permission` | [Permission](../java/security/Permission.md)!: the Permission object to compare. |
+| `permission` | [Permission](Permission.md)!: the Permission object to compare. |
 
 | Return ||
 |---|---|

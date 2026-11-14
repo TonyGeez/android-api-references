@@ -13,13 +13,13 @@ interface OnDeviceOpenedListener
 
 | [android.media.midi.MidiManager.OnDeviceOpenedListener](../android/media/midi/MidiManager.OnDeviceOpenedListener.md) |
 
-Listener class used for receiving the results of [openDevice](../android/media/midi/MidiManager.md))and [openBluetoothDevice](../android/media/midi/MidiManager.md))
+Listener class used for receiving the results of [openDevice](MidiManager.md))and [openBluetoothDevice](MidiManager.md))
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDeviceOpened](../android/media/midi/MidiManager.OnDeviceOpenedListener.md))`(`device:` ` [MidiDevice](../android/media/midi/MidiDevice.md)!`)` Called to respond to a [openDevice](../android/media/midi/MidiManager.md))request |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDeviceOpened](../android/media/midi/MidiManager.OnDeviceOpenedListener.md))`(`device:` ` [MidiDevice](MidiDevice.md)!`)` Called to respond to a [openDevice](MidiManager.md))request |
 
 ## Public methods
 
@@ -31,8 +31,8 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 abstract fun onDeviceOpened(device: MidiDevice!): Unit
 ```
 
-Called to respond to a [openDevice](../android/media/midi/MidiManager.md))request
+Called to respond to a [openDevice](MidiManager.md))request
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `device` | [MidiDevice](../android/media/midi/MidiDevice.md)!:a [MidiDevice](../android/media/midi/MidiDevice.md) for opened device, or null if opening failed |
+| `device` | [MidiDevice](MidiDevice.md)!:a [MidiDevice](MidiDevice.md) for opened device, or null if opening failed |

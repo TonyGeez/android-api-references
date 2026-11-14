@@ -11,11 +11,11 @@ open class CancelledKeyException : IllegalStateException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
-| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) |||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) ||||
+| | | ↳ | [java.lang.RuntimeException](../java.lang/RuntimeException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.IllegalStateException](../java/lang/IllegalStateException.md) ||
-| | | | | ↳ | [java.nio.channels.CancelledKeyException](../java/nio/channels/CancelledKeyException.md) |
+| | | | ↳ | [java.lang.IllegalStateException](../java.lang/IllegalStateException.md) ||
+| | | | | ↳ | [java.nio.channels.CancelledKeyException](CancelledKeyException.md) |
 
 Unchecked exception thrown when an attempt is made to use a selection key that is no longer valid.
 
@@ -23,7 +23,7 @@ Unchecked exception thrown when an attempt is made to use a selection key that i
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [CancelledKeyException](../java/nio/channels/CancelledKeyException.md))`()` Constructs an instance of this class. |
+| [CancelledKeyException](CancelledKeyException.md))`()` Constructs an instance of this class. |
 
 ## Public constructors
 

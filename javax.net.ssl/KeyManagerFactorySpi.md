@@ -10,7 +10,7 @@ abstract class KeyManagerFactorySpi
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.net.ssl.KeyManagerFactorySpi](../javax/net/ssl/KeyManagerFactorySpi.md) |
+| ↳ | [javax.net.ssl.KeyManagerFactorySpi](KeyManagerFactorySpi.md) |
 
 This class defines the*Service Provider Interface* (**SPI** ) for the`KeyManagerFactory`class.
 
@@ -20,13 +20,13 @@ All the abstract methods in this class must be implemented by each cryptographic
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [KeyManagerFactorySpi](../javax/net/ssl/KeyManagerFactorySpi.md))`()` <br /> |
+| [KeyManagerFactorySpi](KeyManagerFactorySpi.md))`()` <br /> |
 
 | Protected methods ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [KeyManager](../javax/net/ssl/KeyManager.md)!\>! | [engineGetKeyManagers](../javax/net/ssl/KeyManagerFactorySpi.md))`()` Returns one key manager for each type of key material. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](../javax/net/ssl/KeyManagerFactorySpi.md))`(`ks:` ` [KeyStore](../java/security/KeyStore.md)!`, `password:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`)` Initializes this factory with a source of key material. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](../javax/net/ssl/KeyManagerFactorySpi.md))`(`spec:` ` [ManagerFactoryParameters](../javax/net/ssl/ManagerFactoryParameters.md)!`)` Initializes this factory with a source of key material. |
+| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [KeyManager](KeyManager.md)!\>! | [engineGetKeyManagers](KeyManagerFactorySpi.md))`()` Returns one key manager for each type of key material. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](KeyManagerFactorySpi.md))`(`ks:` ` [KeyStore](../java.security/KeyStore.md)!`, `password:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`)` Initializes this factory with a source of key material. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](KeyManagerFactorySpi.md))`(`spec:` ` [ManagerFactoryParameters](ManagerFactoryParameters.md)!`)` Initializes this factory with a source of key material. |
 | --- | --- |
 
 ## Public constructors
@@ -53,7 +53,7 @@ Returns one key manager for each type of key material.
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [KeyManager](../javax/net/ssl/KeyManager.md)!>! | the key managers |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [KeyManager](KeyManager.md)!>! | the key managers |
 
 | Exceptions ||
 |-----------------------------------|------------------------------------------------|
@@ -74,7 +74,7 @@ Initializes this factory with a source of key material.
 
 | Parameters ||
 |------------|---------------------------------------------------------------------------------------------------------------------------|
-| `ks` | [KeyStore](../java/security/KeyStore.md)!:the key store or null |
+| `ks` | [KeyStore](../java.security/KeyStore.md)!:the key store or null |
 | `password` | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!:the password for recovering keys |
 
 | Exceptions ||
@@ -102,7 +102,7 @@ In some cases, initialization parameters other than a keystore and password may 
 
 | Parameters ||
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `spec` | [ManagerFactoryParameters](../javax/net/ssl/ManagerFactoryParameters.md)!:an implementation of a provider-specific parameter specification |
+| `spec` | [ManagerFactoryParameters](ManagerFactoryParameters.md)!:an implementation of a provider-specific parameter specification |
 
 | Exceptions ||
 |----------------------------------------------------|-----------------------------------------|
@@ -110,4 +110,4 @@ In some cases, initialization parameters other than a keystore and password may 
 
 **See Also**
 
-- [javax.net.ssl.KeyManagerFactory#init(ManagerFactoryParameters spec)](../javax/net/ssl/KeyManagerFactory.md))
+- [javax.net.ssl.KeyManagerFactory#init(ManagerFactoryParameters spec)](KeyManagerFactory.md))

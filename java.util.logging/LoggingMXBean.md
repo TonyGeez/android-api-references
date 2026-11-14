@@ -8,7 +8,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface LoggingMXBean
 ```
 
-| [java.util.logging.LoggingMXBean](../java/util/logging/LoggingMXBean.md) |
+| [java.util.logging.LoggingMXBean](LoggingMXBean.md) |
 
 The management interface for the logging facility.
 
@@ -24,11 +24,11 @@ There is a single global instance of the LoggingMXBean. The`javax.management.Obj
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getLoggerLevel](../java/util/logging/LoggingMXBean.md))`(`loggerName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Gets the name of the log level associated with the specified logger. |
-| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getLoggerNames](../java/util/logging/LoggingMXBean.md))`()` Returns the list of currently registered logger names. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getParentLoggerName](../java/util/logging/LoggingMXBean.md))`(`loggerName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the name of the parent for the specified logger. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getLoggerLevel](LoggingMXBean.md))`(`loggerName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Gets the name of the log level associated with the specified logger. |
+| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getLoggerNames](LoggingMXBean.md))`()` Returns the list of currently registered logger names. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getParentLoggerName](LoggingMXBean.md))`(`loggerName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the name of the parent for the specified logger. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLoggerLevel](../java/util/logging/LoggingMXBean.md))`(`loggerName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `levelName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the specified logger to the specified new level. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLoggerLevel](LoggingMXBean.md))`(`loggerName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `levelName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the specified logger to the specified new level. |
 
 ## Public methods
 
@@ -40,7 +40,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun getLoggerLevel(loggerName: String!): String!
 ```
 
-Gets the name of the log level associated with the specified logger. If the specified logger does not exist, null is returned. This method first finds the logger of the given name and then returns the name of the log level by calling: [Logger.getLevel()](../java/util/logging/Logger.md)). [getName()](../java/util/logging/Level.md));
+Gets the name of the log level associated with the specified logger. If the specified logger does not exist, null is returned. This method first finds the logger of the given name and then returns the name of the log level by calling: [Logger.getLevel()](Logger.md)). [getName()](Level.md));
 
 If the Level of the specified logger is null, which means that this logger's effective level is inherited from its parent, an empty string will be returned.
 
@@ -54,7 +54,7 @@ If the Level of the specified logger is null, which means that this logger's eff
 
 **See Also**
 
-- [java.util.logging.Logger#getLevel](../java/util/logging/Logger.md)) 
+- [java.util.logging.Logger#getLevel](Logger.md)) 
 
 ### getLoggerNames
 
@@ -64,7 +64,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun getLoggerNames(): MutableList<String!>!
 ```
 
-Returns the list of currently registered logger names. This method calls [LogManager.getLoggerNames](../java/util/logging/LogManager.md))and returns a list of the logger names.
+Returns the list of currently registered logger names. This method calls [LogManager.getLoggerNames](LogManager.md))and returns a list of the logger names.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
@@ -113,4 +113,4 @@ Sets the specified logger to the specified new level. If the levelName is not nu
 
 **See Also**
 
-- [java.util.logging.Logger#setLevel](../java/util/logging/Logger.md))
+- [java.util.logging.Logger#setLevel](Logger.md))

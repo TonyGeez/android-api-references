@@ -2,7 +2,7 @@
 
 # android.net.wifi
 
-Kotlin| [Java](../android/net/wifi/_package.md)
+Kotlin| [Java](_package.md)
 | --- | --- |
 
 ## Interfaces
@@ -16,27 +16,27 @@ Kotlin| [Java](../android/net/wifi/_package.md)
 
 ## Classes
 
-| [BlockingOption](../android/net/wifi/BlockingOption.md) | Options for blocking a network through [WifiManager.disallowCurrentSuggestedNetwork(BlockingOption)](../android/net/wifi/WifiManager.md)) |
+| [BlockingOption](BlockingOption.md) | Options for blocking a network through [WifiManager.disallowCurrentSuggestedNetwork(BlockingOption)](WifiManager.md)) |
 | --- | --- |
-| [EasyConnectStatusCallback](../android/net/wifi/EasyConnectStatusCallback.md) | Easy Connect (DPP) Status Callback. |
-| [MloLink](../android/net/wifi/MloLink.md) | Data structure class representing a Wi-Fi Multi-Link Operation (MLO) link This is only used by 802. |
-| [ScanResult](../android/net/wifi/ScanResult.md) | Describes information about a detected access point. |
+| [EasyConnectStatusCallback](EasyConnectStatusCallback.md) | Easy Connect (DPP) Status Callback. |
+| [MloLink](MloLink.md) | Data structure class representing a Wi-Fi Multi-Link Operation (MLO) link This is only used by 802. |
+| [ScanResult](ScanResult.md) | Describes information about a detected access point. |
 | --- | --- |
-| [SoftApConfiguration](../android/net/wifi/SoftApConfiguration.md) | Configuration for a soft access point (a.k.a. Soft AP, SAP, Hotspot). |
-| [WifiAvailableChannel](../android/net/wifi/WifiAvailableChannel.md) | Contains information about a Wifi channel and bitmask of Wifi operational modes allowed on that channel. |
-| [WifiConfiguration](../android/net/wifi/WifiConfiguration.md) | A class representing a configured Wi-Fi network, including the security configuration. |
+| [SoftApConfiguration](SoftApConfiguration.md) | Configuration for a soft access point (a.k.a. Soft AP, SAP, Hotspot). |
+| [WifiAvailableChannel](WifiAvailableChannel.md) | Contains information about a Wifi channel and bitmask of Wifi operational modes allowed on that channel. |
+| [WifiConfiguration](WifiConfiguration.md) | A class representing a configured Wi-Fi network, including the security configuration. |
 | --- | --- |
-| [WifiEnterpriseConfig](../android/net/wifi/WifiEnterpriseConfig.md) | Enterprise configuration details for Wi-Fi. |
-| [WifiInfo](../android/net/wifi/WifiInfo.md) | Describes the state of any Wi-Fi connection that is active or is in the process of being set up. |
-| [WifiManager](../android/net/wifi/WifiManager.md) | This class provides the primary API for managing all aspects of Wi-Fi connectivity. |
+| [WifiEnterpriseConfig](WifiEnterpriseConfig.md) | Enterprise configuration details for Wi-Fi. |
+| [WifiInfo](WifiInfo.md) | Describes the state of any Wi-Fi connection that is active or is in the process of being set up. |
+| [WifiManager](WifiManager.md) | This class provides the primary API for managing all aspects of Wi-Fi connectivity. |
 | --- | --- |
-| [WifiNetworkSpecifier](../android/net/wifi/WifiNetworkSpecifier.md) | Network specifier object used to request a Wi-Fi network. |
-| [WifiNetworkSuggestion](../android/net/wifi/WifiNetworkSuggestion.md) | The Network Suggestion object is used to provide a Wi-Fi network for consideration when auto-connecting to networks. |
-| [WifiSsid](../android/net/wifi/WifiSsid.md) | Representation of a Wi-Fi Service Set Identifier (SSID). |
+| [WifiNetworkSpecifier](WifiNetworkSpecifier.md) | Network specifier object used to request a Wi-Fi network. |
+| [WifiNetworkSuggestion](WifiNetworkSuggestion.md) | The Network Suggestion object is used to provide a Wi-Fi network for consideration when auto-connecting to networks. |
+| [WifiSsid](WifiSsid.md) | Representation of a Wi-Fi Service Set Identifier (SSID). |
 | --- | --- |
-| [WpsInfo](../android/net/wifi/WpsInfo.md) | A class representing Wi-Fi Protected Setup {@see android. |
+| [WpsInfo](WpsInfo.md) | A class representing Wi-Fi Protected Setup {@see android. |
 
 ## Enums
 
-| [SupplicantState](../android/net/wifi/SupplicantState.md) | From |
+| [SupplicantState](SupplicantState.md) | From |
 | --- | --- |

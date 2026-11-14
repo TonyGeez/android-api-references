@@ -8,15 +8,15 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface DataInput
 ```
 
-| [java.io.DataInput](../java/io/DataInput.md) |
+| [java.io.DataInput](DataInput.md) |
 
-| Known Direct Subclasses [DataInputStream](../java/io/DataInputStream.md), [ObjectInput](../java/io/ObjectInput.md), [RandomAccessFile](../java/io/RandomAccessFile.md) |---------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------| | [DataInputStream](../java/io/DataInputStream.md) | A data input stream lets an application read primitive Java data types from an underlying input stream in a machine-independent way. | | [ObjectInput](../java/io/ObjectInput.md) | ObjectInput extends the DataInput interface to include the reading of objects. | | [RandomAccessFile](../java/io/RandomAccessFile.md) | Instances of this class support both reading and writing to a random access file. | |
+| Known Direct Subclasses [DataInputStream](DataInputStream.md), [ObjectInput](ObjectInput.md), [RandomAccessFile](RandomAccessFile.md) |---------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------| | [DataInputStream](DataInputStream.md) | A data input stream lets an application read primitive Java data types from an underlying input stream in a machine-independent way. | | [ObjectInput](ObjectInput.md) | ObjectInput extends the DataInput interface to include the reading of objects. | | [RandomAccessFile](RandomAccessFile.md) | Instances of this class support both reading and writing to a random access file. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [ObjectInputStream](../java/io/ObjectInputStream.md) |-----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------| | [ObjectInputStream](../java/io/ObjectInputStream.md) | An ObjectInputStream deserializes primitive data and objects previously written using an ObjectOutputStream. | |
+| Known Indirect Subclasses [ObjectInputStream](ObjectInputStream.md) |-----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------| | [ObjectInputStream](ObjectInputStream.md) | An ObjectInputStream deserializes primitive data and objects previously written using an ObjectOutputStream. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
-The `DataInput` interface provides for reading bytes from a binary stream and reconstructing from them data in any of the Java primitive types. There is also a facility for reconstructing a `String` from data in [modified UTF-8](../java/io/DataInput.md) format.
+The `DataInput` interface provides for reading bytes from a binary stream and reconstructing from them data in any of the Java primitive types. There is also a facility for reconstructing a `String` from data in [modified UTF-8](DataInput.md) format.
 
 It is generally true of all the reading routines in this interface that if end of file is reached before the desired number of bytes has been read, an `EOFException` (which is a kind of `IOException`) is thrown. If any byte cannot be read for any reason other than end of file, an `IOException` other than `EOFException` is thrown. In particular, an `IOException` may be thrown if the input stream has been closed.
 
@@ -45,31 +45,31 @@ The differences between this format and the standard UTF-8 format are the follow
 
 - The null byte `'\u005Cu0000'` is encoded in 2-byte format rather than 1-byte, so that the encoded strings never have embedded nulls.
 - Only the 1-byte, 2-byte, and 3-byte formats are used.
-- [Supplementary characters](../java/lang/Character.md) are represented in the form of surrogate pairs.
+- [Supplementary characters](../java.lang/Character.md) are represented in the form of surrogate pairs.
 
 ## Summary
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [readBoolean](../java/io/DataInput.md))`()` Reads one input byte and returns `true` if that byte is nonzero, `false` if that byte is zero. |
-| abstract [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [readByte](../java/io/DataInput.md))`()` Reads and returns one input byte. |
-| abstract [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [readChar](../java/io/DataInput.md))`()` Reads two input bytes and returns a `char` value. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [readBoolean](DataInput.md))`()` Reads one input byte and returns `true` if that byte is nonzero, `false` if that byte is zero. |
+| abstract [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [readByte](DataInput.md))`()` Reads and returns one input byte. |
+| abstract [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [readChar](DataInput.md))`()` Reads two input bytes and returns a `char` value. |
 | --- | --- |
-| abstract [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [readDouble](../java/io/DataInput.md))`()` Reads eight input bytes and returns a `double` value. |
-| abstract [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [readFloat](../java/io/DataInput.md))`()` Reads four input bytes and returns a `float` value. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [readFully](../java/io/DataInput.md))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Reads some bytes from an input stream and stores them into the buffer array `b`. |
+| abstract [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [readDouble](DataInput.md))`()` Reads eight input bytes and returns a `double` value. |
+| abstract [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [readFloat](DataInput.md))`()` Reads four input bytes and returns a `float` value. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [readFully](DataInput.md))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Reads some bytes from an input stream and stores them into the buffer array `b`. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [readFully](../java/io/DataInput.md))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Reads `len` bytes from an input stream. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [readInt](../java/io/DataInput.md))`()` Reads four input bytes and returns an `int` value. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [readLine](../java/io/DataInput.md))`()` Reads the next line of text from the input stream. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [readFully](DataInput.md))`(`b:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Reads `len` bytes from an input stream. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [readInt](DataInput.md))`()` Reads four input bytes and returns an `int` value. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [readLine](DataInput.md))`()` Reads the next line of text from the input stream. |
 | --- | --- |
-| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [readLong](../java/io/DataInput.md))`()` Reads eight input bytes and returns a `long` value. |
-| abstract [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [readShort](../java/io/DataInput.md))`()` Reads two input bytes and returns a `short` value. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [readUTF](../java/io/DataInput.md))`()` Reads in a string that has been encoded using a [modified UTF-8](../java/io/DataInput.md) format. |
+| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [readLong](DataInput.md))`()` Reads eight input bytes and returns a `long` value. |
+| abstract [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [readShort](DataInput.md))`()` Reads two input bytes and returns a `short` value. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [readUTF](DataInput.md))`()` Reads in a string that has been encoded using a [modified UTF-8](DataInput.md) format. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [readUnsignedByte](../java/io/DataInput.md))`()` Reads one input byte, zero-extends it to type `int`, and returns the result, which is therefore in the range `0` through `255`. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [readUnsignedShort](../java/io/DataInput.md))`()` Reads two input bytes and returns an `int` value in the range `0` through `65535`. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [skipBytes](../java/io/DataInput.md))`(`n:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Makes an attempt to skip over `n` bytes of data from the input stream, discarding the skipped bytes. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [readUnsignedByte](DataInput.md))`()` Reads one input byte, zero-extends it to type `int`, and returns the result, which is therefore in the range `0` through `255`. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [readUnsignedShort](DataInput.md))`()` Reads two input bytes and returns an `int` value in the range `0` through `65535`. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [skipBytes](DataInput.md))`(`n:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Makes an attempt to skip over `n` bytes of data from the input stream, discarding the skipped bytes. |
 | --- | --- |
 
 ## Public methods
@@ -361,7 +361,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun readUTF(): String!
 ```
 
-Reads in a string that has been encoded using a [modified UTF-8](../java/io/DataInput.md) format. The general contract of `readUTF` is that it reads a representation of a Unicode character string encoded in modified UTF-8 format; this string of characters is then returned as a `String`.
+Reads in a string that has been encoded using a [modified UTF-8](DataInput.md) format. The general contract of `readUTF` is that it reads a representation of a Unicode character string encoded in modified UTF-8 format; this string of characters is then returned as a `String`.
 
 First, two bytes are read and used to construct an unsigned 16-bit integer in exactly the manner of the `readUnsignedShort` method . This integer value is called the *UTF length* and specifies the number of additional bytes to be read. These bytes are then converted to characters by considering them in groups. The length of each group is computed from the value of the first byte of the group. The byte following a group, if any, is the first byte of the next group.
 

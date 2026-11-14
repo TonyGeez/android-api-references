@@ -8,7 +8,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface GenericArrayType : Type
 ```
 
-| [java.lang.reflect.GenericArrayType](../java/lang/reflect/GenericArrayType.md) |
+| [java.lang.reflect.GenericArrayType](GenericArrayType.md) |
 
 `GenericArrayType`represents an array type whose component type is either a parameterized type or a type variable.
 
@@ -16,11 +16,11 @@ interface GenericArrayType : Type
 
 | Public methods ||
 |---------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Type](../java/lang/reflect/Type.md) | [getGenericComponentType](../java/lang/reflect/GenericArrayType.md))`()` Returns a`Type`object representing the component type of this array. |
+| abstract [Type](Type.md) | [getGenericComponentType](GenericArrayType.md))`()` Returns a`Type`object representing the component type of this array. |
 
 | Inherited functions ||
 |---|---|
-| From class [Type](../java/lang/reflect/Type.md) |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getTypeName](../java/lang/reflect/Type.md))`()` <br /> Returns a string describing this type, including information about any type parameters. <br /> | ||
+| From class [Type](Type.md) |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getTypeName](Type.md))`()` <br /> Returns a string describing this type, including information about any type parameters. <br /> | ||
 
 ## Public methods
 
@@ -32,11 +32,11 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun getGenericComponentType(): Type
 ```
 
-Returns a`Type`object representing the component type of this array. This method creates the component type of the array. See the declaration of for the semantics of the creation process for parameterized types and see [TypeVariable](../java/lang/reflect/TypeVariable.md) for the creation process for type variables.
+Returns a`Type`object representing the component type of this array. This method creates the component type of the array. See the declaration of for the semantics of the creation process for parameterized types and see [TypeVariable](TypeVariable.md) for the creation process for type variables.
 
 | Return ||
 |-------------------------------------------------------------------------------|-------------------------------------------------------------|
-| [Type](../java/lang/reflect/Type.md) | a`Type`object representing the component type of this array |
+| [Type](Type.md) | a`Type`object representing the component type of this array |
 
 | Exceptions ||
 |---------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|

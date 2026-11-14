@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # ColorMatrixColorFilter
 
-Kotlin| [Java](../android/graphics/ColorMatrixColorFilter.md) 
+Kotlin| [Java](ColorMatrixColorFilter.md) 
 | --- | --- |
 
 ```
@@ -13,8 +13,8 @@ open class ColorMatrixColorFilter : ColorFilter
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.graphics.ColorFilter](../android/graphics/ColorFilter.md) ||
-| | ↳ | [android.graphics.ColorMatrixColorFilter](../android/graphics/ColorMatrixColorFilter.md) |
+| ↳ | [android.graphics.ColorFilter](ColorFilter.md) ||
+| | ↳ | [android.graphics.ColorMatrixColorFilter](ColorMatrixColorFilter.md) |
 
 A color filter that transforms colors through a 4x5 color matrix. This filter can be used to change the saturation of pixels, convert from YUV to RGB, etc.
 
@@ -22,12 +22,12 @@ A color filter that transforms colors through a 4x5 color matrix. This filter ca
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ColorMatrixColorFilter](../android/graphics/ColorMatrixColorFilter.md))`(`matrix:` ` [ColorMatrix](../android/graphics/ColorMatrix.md)`)` Create a color filter that transforms colors through a 4x5 color matrix. |
-| [ColorMatrixColorFilter](../android/graphics/ColorMatrixColorFilter.md))`(`array:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)`)` Create a color filter that transforms colors through a 4x5 color matrix. |
+| [ColorMatrixColorFilter](ColorMatrixColorFilter.md))`(`matrix:` ` [ColorMatrix](ColorMatrix.md)`)` Create a color filter that transforms colors through a 4x5 color matrix. |
+| [ColorMatrixColorFilter](ColorMatrixColorFilter.md))`(`array:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)`)` Create a color filter that transforms colors through a 4x5 color matrix. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getColorMatrix](../android/graphics/ColorMatrixColorFilter.md))`(`colorMatrix:` ` [ColorMatrix](../android/graphics/ColorMatrix.md)!`)` Copies the ColorMatrix from the filter into the passed ColorMatrix. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getColorMatrix](ColorMatrixColorFilter.md))`(`colorMatrix:` ` [ColorMatrix](ColorMatrix.md)!`)` Copies the ColorMatrix from the filter into the passed ColorMatrix. |
 
 ## Public constructors
 
@@ -43,7 +43,7 @@ Create a color filter that transforms colors through a 4x5 color matrix.
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `matrix` | [ColorMatrix](../android/graphics/ColorMatrix.md):4x5 matrix used to transform colors. It is copied into the filter, so changes made to the matrix after the filter is constructed will not be reflected in the filter. This value cannot be`null`. |
+| `matrix` | [ColorMatrix](ColorMatrix.md):4x5 matrix used to transform colors. It is copied into the filter, so changes made to the matrix after the filter is constructed will not be reflected in the filter. This value cannot be`null`. |
 
 ### ColorMatrixColorFilter
 
@@ -73,4 +73,4 @@ Copies the ColorMatrix from the filter into the passed ColorMatrix.
 
 | Parameters ||
 |---------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| `colorMatrix` | [ColorMatrix](../android/graphics/ColorMatrix.md)!:Set to the current value of the filter's ColorMatrix. |
+| `colorMatrix` | [ColorMatrix](ColorMatrix.md)!:Set to the current value of the filter's ColorMatrix. |

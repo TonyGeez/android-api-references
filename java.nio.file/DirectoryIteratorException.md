@@ -11,23 +11,23 @@ class DirectoryIteratorException : ConcurrentModificationException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
-| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) |||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) ||||
+| | | ↳ | [java.lang.RuntimeException](../java.lang/RuntimeException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.util.ConcurrentModificationException](../java/util/ConcurrentModificationException.md) ||
-| | | | | ↳ | [java.nio.file.DirectoryIteratorException](../java/nio/file/DirectoryIteratorException.md) |
+| | | | ↳ | [java.util.ConcurrentModificationException](../java.util/ConcurrentModificationException.md) ||
+| | | | | ↳ | [java.nio.file.DirectoryIteratorException](DirectoryIteratorException.md) |
 
-Runtime exception thrown if an I/O error is encountered when iterating over the entries in a directory. The I/O error is retrieved as an [IOException](../java/io/IOException.md) using the [getCause()](../java/nio/file/DirectoryIteratorException.md) method.
+Runtime exception thrown if an I/O error is encountered when iterating over the entries in a directory. The I/O error is retrieved as an [IOException](../java.io/IOException.md) using the [getCause()](DirectoryIteratorException.md) method.
 
 ## Summary
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [DirectoryIteratorException](../java/nio/file/DirectoryIteratorException.md))`(`cause:` ` [IOException](../java/io/IOException.md)!`)` Constructs an instance of this class. |
+| [DirectoryIteratorException](DirectoryIteratorException.md))`(`cause:` ` [IOException](../java.io/IOException.md)!`)` Constructs an instance of this class. |
 
 | Properties ||
 |------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [IOException](../java/io/IOException.md)? | [cause](../java/nio/file/DirectoryIteratorException.md) Returns the cause of this exception. |
+| [IOException](../java.io/IOException.md)? | [cause](DirectoryIteratorException.md) Returns the cause of this exception. |
 
 ## Public constructors
 
@@ -43,7 +43,7 @@ Constructs an instance of this class.
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `cause` | [IOException](../java/io/IOException.md)!:the`IOException`that caused the directory iteration to fail |
+| `cause` | [IOException](../java.io/IOException.md)!:the`IOException`that caused the directory iteration to fail |
 
 | Exceptions ||
 |----------------------------------|-----------------------|
@@ -63,4 +63,4 @@ Returns the cause of this exception.
 
 | Return ||
 |------------------------------------------------------------------------------------------|-----------|
-| [IOException](../java/io/IOException.md)? | the cause |
+| [IOException](../java.io/IOException.md)? | the cause |

@@ -4,7 +4,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 
 # UriRelativeFilter
 
-Kotlin| [Java](../android/content/UriRelativeFilter.md) 
+Kotlin| [Java](UriRelativeFilter.md) 
 | --- | --- |
 
 ```
@@ -13,34 +13,34 @@ class UriRelativeFilter
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.content.UriRelativeFilter](../android/content/UriRelativeFilter.md) |
+| ↳ | [android.content.UriRelativeFilter](UriRelativeFilter.md) |
 
-A filter for matching Intent URI Data as part of a [UriRelativeFilterGroup](../android/content/UriRelativeFilterGroup.md). A single filter can only be matched against either a URI path, query or fragment
+A filter for matching Intent URI Data as part of a [UriRelativeFilterGroup](UriRelativeFilterGroup.md). A single filter can only be matched against either a URI path, query or fragment
 
 ## Summary
 
 | Constants ||
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FRAGMENT](../android/content/UriRelativeFilter.md) Value to indicate that the filter is to be applied to a URI fragment. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PATH](../android/content/UriRelativeFilter.md) Value to indicate that the filter is to be applied to a URI path. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUERY](../android/content/UriRelativeFilter.md) Value to indicate that the filter is to be applied to a URI query. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FRAGMENT](UriRelativeFilter.md) Value to indicate that the filter is to be applied to a URI fragment. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PATH](UriRelativeFilter.md) Value to indicate that the filter is to be applied to a URI path. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUERY](UriRelativeFilter.md) Value to indicate that the filter is to be applied to a URI query. |
 | --- | --- |
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [UriRelativeFilter](../android/content/UriRelativeFilter.md))`(`uriPart:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `patternType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `filter:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Creates a new UriRelativeFilter. |
+| [UriRelativeFilter](UriRelativeFilter.md))`(`uriPart:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `patternType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `filter:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Creates a new UriRelativeFilter. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/content/UriRelativeFilter.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getFilter](../android/content/UriRelativeFilter.md))`()` The string used to filter the URI. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPatternType](../android/content/UriRelativeFilter.md))`()` The pattern type of the filter. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](UriRelativeFilter.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getFilter](UriRelativeFilter.md))`()` The string used to filter the URI. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPatternType](UriRelativeFilter.md))`()` The pattern type of the filter. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getUriPart](../android/content/UriRelativeFilter.md))`()` The URI part this filter operates on. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/content/UriRelativeFilter.md))`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [matchData](../android/content/UriRelativeFilter.md))`(`data:` ` [Uri](../android/net/Uri.md)`)` Match this URI filter against an Intent's data. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getUriPart](UriRelativeFilter.md))`()` The URI part this filter operates on. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](UriRelativeFilter.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [matchData](UriRelativeFilter.md))`(`data:` ` [Uri](../android.net/Uri.md)`)` Match this URI filter against an Intent's data. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/content/UriRelativeFilter.md))`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](UriRelativeFilter.md))`()` <br /> |
 
 ## Constants
 
@@ -97,8 +97,8 @@ Creates a new UriRelativeFilter.
 
 | Parameters ||
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `uriPart` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The URI part this filter operates on. Can be either a [UriRelativeFilter.PATH](../android/content/UriRelativeFilter.md), [UriRelativeFilter.QUERY](../android/content/UriRelativeFilter.md), or [UriRelativeFilter.FRAGMENT](../android/content/UriRelativeFilter.md). Value is [android.content.UriRelativeFilter#PATH](../android/content/UriRelativeFilter.md), [android.content.UriRelativeFilter#QUERY](../android/content/UriRelativeFilter.md), or [android.content.UriRelativeFilter#FRAGMENT](../android/content/UriRelativeFilter.md) |
-| `patternType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The pattern type of the filter. Can be either a [PatternMatcher.PATTERN_LITERAL](../android/os/PatternMatcher.md), [PatternMatcher.PATTERN_PREFIX](../android/os/PatternMatcher.md), [PatternMatcher.PATTERN_SUFFIX](../android/os/PatternMatcher.md), [PatternMatcher.PATTERN_SIMPLE_GLOB](../android/os/PatternMatcher.md), or [PatternMatcher.PATTERN_ADVANCED_GLOB](../android/os/PatternMatcher.md). Value is [android.os.PatternMatcher#PATTERN_LITERAL](../android/os/PatternMatcher.md), [android.os.PatternMatcher#PATTERN_PREFIX](../android/os/PatternMatcher.md), [android.os.PatternMatcher#PATTERN_SIMPLE_GLOB](../android/os/PatternMatcher.md), [android.os.PatternMatcher#PATTERN_ADVANCED_GLOB](../android/os/PatternMatcher.md), or [android.os.PatternMatcher#PATTERN_SUFFIX](../android/os/PatternMatcher.md) |
+| `uriPart` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The URI part this filter operates on. Can be either a [UriRelativeFilter.PATH](UriRelativeFilter.md), [UriRelativeFilter.QUERY](UriRelativeFilter.md), or [UriRelativeFilter.FRAGMENT](UriRelativeFilter.md). Value is [android.content.UriRelativeFilter#PATH](UriRelativeFilter.md), [android.content.UriRelativeFilter#QUERY](UriRelativeFilter.md), or [android.content.UriRelativeFilter#FRAGMENT](UriRelativeFilter.md) |
+| `patternType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The pattern type of the filter. Can be either a [PatternMatcher.PATTERN_LITERAL](../android.os/PatternMatcher.md), [PatternMatcher.PATTERN_PREFIX](../android.os/PatternMatcher.md), [PatternMatcher.PATTERN_SUFFIX](../android.os/PatternMatcher.md), [PatternMatcher.PATTERN_SIMPLE_GLOB](../android.os/PatternMatcher.md), or [PatternMatcher.PATTERN_ADVANCED_GLOB](../android.os/PatternMatcher.md). Value is [android.os.PatternMatcher#PATTERN_LITERAL](../android.os/PatternMatcher.md), [android.os.PatternMatcher#PATTERN_PREFIX](../android.os/PatternMatcher.md), [android.os.PatternMatcher#PATTERN_SIMPLE_GLOB](../android.os/PatternMatcher.md), [android.os.PatternMatcher#PATTERN_ADVANCED_GLOB](../android.os/PatternMatcher.md), or [android.os.PatternMatcher#PATTERN_SUFFIX](../android.os/PatternMatcher.md) |
 | `filter` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):A literal or pattern string depedning on patterType used to match a uriPart . This value cannot be`null`. |
 | --- | --- |
 
@@ -159,7 +159,7 @@ The pattern type of the filter.
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.os.PatternMatcher#PATTERN_LITERAL](../android/os/PatternMatcher.md), [android.os.PatternMatcher#PATTERN_PREFIX](../android/os/PatternMatcher.md), [android.os.PatternMatcher#PATTERN_SIMPLE_GLOB](../android/os/PatternMatcher.md), [android.os.PatternMatcher#PATTERN_ADVANCED_GLOB](../android/os/PatternMatcher.md), or [android.os.PatternMatcher#PATTERN_SUFFIX](../android/os/PatternMatcher.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.os.PatternMatcher#PATTERN_LITERAL](../android.os/PatternMatcher.md), [android.os.PatternMatcher#PATTERN_PREFIX](../android.os/PatternMatcher.md), [android.os.PatternMatcher#PATTERN_SIMPLE_GLOB](../android.os/PatternMatcher.md), [android.os.PatternMatcher#PATTERN_ADVANCED_GLOB](../android.os/PatternMatcher.md), or [android.os.PatternMatcher#PATTERN_SUFFIX](../android.os/PatternMatcher.md) |
 
 ### getUriPart
 
@@ -173,7 +173,7 @@ The URI part this filter operates on.
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.content.UriRelativeFilter#PATH](../android/content/UriRelativeFilter.md), [android.content.UriRelativeFilter#QUERY](../android/content/UriRelativeFilter.md), or [android.content.UriRelativeFilter#FRAGMENT](../android/content/UriRelativeFilter.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.content.UriRelativeFilter#PATH](UriRelativeFilter.md), [android.content.UriRelativeFilter#QUERY](UriRelativeFilter.md), or [android.content.UriRelativeFilter#FRAGMENT](UriRelativeFilter.md) |
 
 ### hashCode
 
@@ -199,7 +199,7 @@ Match this URI filter against an Intent's data. QUERY filters can match against 
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `data` | [Uri](../android/net/Uri.md):The full data string to match against, as supplied in Intent.data. This value cannot be`null`. |
+| `data` | [Uri](../android.net/Uri.md):The full data string to match against, as supplied in Intent.data. This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------|

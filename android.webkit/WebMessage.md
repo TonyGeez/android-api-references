@@ -4,7 +4,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 
 # WebMessage
 
-Kotlin| [Java](../android/webkit/WebMessage.md) 
+Kotlin| [Java](WebMessage.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class WebMessage
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.webkit.WebMessage](../android/webkit/WebMessage.md) |
+| ↳ | [android.webkit.WebMessage](WebMessage.md) |
 
 The Java representation of the HTML5 PostMessage event. See https://html.spec.whatwg.org/multipage/comms.html#the-messageevent-interfaces for definition of a MessageEvent in HTML5.
 
@@ -21,13 +21,13 @@ The Java representation of the HTML5 PostMessage event. See https://html.spec.wh
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [WebMessage](../android/webkit/WebMessage.md))`(`data:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a WebMessage. |
-| [WebMessage](../android/webkit/WebMessage.md))`(`data:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `ports:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [WebMessagePort](../android/webkit/WebMessagePort.md)!>!`)` Creates a WebMessage. |
+| [WebMessage](WebMessage.md))`(`data:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a WebMessage. |
+| [WebMessage](WebMessage.md))`(`data:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `ports:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [WebMessagePort](WebMessagePort.md)!>!`)` Creates a WebMessage. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getData](../android/webkit/WebMessage.md))`()` Returns the data of the message. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [WebMessagePort](../android/webkit/WebMessagePort.md)!\>? | [getPorts](../android/webkit/WebMessage.md))`()` Returns the ports that are sent with the message, or`null`if no port is sent. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getData](WebMessage.md))`()` Returns the data of the message. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [WebMessagePort](WebMessagePort.md)!\>? | [getPorts](WebMessage.md))`()` Returns the ports that are sent with the message, or`null`if no port is sent. |
 
 ## Public constructors
 
@@ -60,7 +60,7 @@ Creates a WebMessage.
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `data` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the data of the message. |
-| `ports` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [WebMessagePort](../android/webkit/WebMessagePort.md)!\>!:the ports that are sent with the message. |
+| `ports` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [WebMessagePort](WebMessagePort.md)!\>!:the ports that are sent with the message. |
 
 ## Public methods
 

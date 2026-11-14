@@ -8,8 +8,8 @@ open class AdaptiveIconDrawable : Drawable, Drawable.Callback
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.graphics.drawable.Drawable](../android/graphics/drawable/Drawable.md) ||
-| | ↳ | [android.graphics.drawable.AdaptiveIconDrawable](../android/graphics/drawable/AdaptiveIconDrawable.md) |
+| ↳ | [android.graphics.drawable.Drawable](Drawable.md) ||
+| | ↳ | [android.graphics.drawable.AdaptiveIconDrawable](AdaptiveIconDrawable.md) |
 
 This class can also be created via XML inflation using `<adaptive-icon>` tag in addition to dynamic creation.
 
@@ -45,23 +45,23 @@ An alternate drawable can be specified using `<monochrome>` tag which can be dra
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/AdaptiveIconDrawable#draw(android.graphics.Canvas)(canvas: https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)` Draw in its bounds (set via setBounds) respecting optional effects such as alpha (set via setAlpha) and color filter (set via setColorFilter). |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/AdaptiveIconDrawable#getAlpha()()` Gets the current alpha value for the drawable. |
-| open [Drawable](../android/graphics/drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/graphics/drawable/AdaptiveIconDrawable#getBackground()()` Returns the foreground drawable managed by this class. |
+| open [Drawable](Drawable.md)! | `https://developer.android.com/reference/kotlin/android/graphics/drawable/AdaptiveIconDrawable#getBackground()()` Returns the foreground drawable managed by this class. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/AdaptiveIconDrawable#getChangingConfigurations()()` Return a mask of the configuration parameters for which this drawable may change, requiring that it be re-created. |
 | --- | --- |
 | open [Drawable.ConstantState](../android/graphics/drawable/Drawable.ConstantState.md)? | `https://developer.android.com/reference/kotlin/android/graphics/drawable/AdaptiveIconDrawable#getConstantState()()` Return a `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.ConstantState` instance that holds the shared state of this Drawable. |
 | open static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/AdaptiveIconDrawable#getExtraInsetFraction()()` All four sides of the layers are padded with extra inset so as to provide extra content to reveal within the clip path when performing affine transformations on the layers. |
-| open [Drawable](../android/graphics/drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/graphics/drawable/AdaptiveIconDrawable#getForeground()()` Returns the foreground drawable managed by this class. |
+| open [Drawable](Drawable.md)! | `https://developer.android.com/reference/kotlin/android/graphics/drawable/AdaptiveIconDrawable#getForeground()()` Returns the foreground drawable managed by this class. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/AdaptiveIconDrawable#getHotspotBounds(android.graphics.Rect)(outRect: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)` Populates `outRect` with the hotspot bounds. |
-| open [Path](../android/graphics/Path.md)! | `https://developer.android.com/reference/kotlin/android/graphics/drawable/AdaptiveIconDrawable#getIconMask()()` When called before the bound is set, the returned path is identical to R. |
+| open [Path](../android.graphics/Path.md)! | `https://developer.android.com/reference/kotlin/android/graphics/drawable/AdaptiveIconDrawable#getIconMask()()` When called before the bound is set, the returned path is identical to R. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/AdaptiveIconDrawable#getIntrinsicHeight()()` Returns the drawable's intrinsic height. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/AdaptiveIconDrawable#getIntrinsicWidth()()` Returns the drawable's intrinsic width. |
-| open [Drawable](../android/graphics/drawable/Drawable.md)? | `https://developer.android.com/reference/kotlin/android/graphics/drawable/AdaptiveIconDrawable#getMonochrome()()` Returns the monochrome version of this drawable. |
+| open [Drawable](Drawable.md)? | `https://developer.android.com/reference/kotlin/android/graphics/drawable/AdaptiveIconDrawable#getMonochrome()()` Returns the monochrome version of this drawable. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/AdaptiveIconDrawable#getOpacity()()` Return the opacity/transparency of this Drawable. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/AdaptiveIconDrawable#getOutline(android.graphics.Outline)(outline: https://developer.android.com/reference/kotlin/android/graphics/Outline.html#)` Called to get the drawable to populate the Outline that defines its drawing area. |
-| open [Region](../android/graphics/Region.md)? | `https://developer.android.com/reference/kotlin/android/graphics/drawable/AdaptiveIconDrawable#getTransparentRegion()()` Returns a Region representing the part of the Drawable that is completely transparent. |
+| open [Region](../android.graphics/Region.md)? | `https://developer.android.com/reference/kotlin/android/graphics/drawable/AdaptiveIconDrawable#getTransparentRegion()()` Returns a Region representing the part of the Drawable that is completely transparent. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/AdaptiveIconDrawable#hasFocusStateSpecified()()` Indicates whether this drawable has at least one state spec explicitly specifying `https://developer.android.com/reference/kotlin/android/R.attr.html#state_focused:kotlin.Int`. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/AdaptiveIconDrawable#inflate(android.content.res.Resources,%20org.xmlpull.v1.XmlPullParser,%20android.util.AttributeSet,%20android.content.res.Resources.Theme)(r: https://developer.android.com/reference/kotlin/android/content/res/Resources.html#, parser: https://developer.android.com/reference/kotlin/org/xmlpull/v1/XmlPullParser.html#, attrs: https://developer.android.com/reference/kotlin/android/util/AttributeSet.html#, theme: https://developer.android.com/reference/kotlin/android/content/res/Resources.Theme.html#?)` Inflate this Drawable from an XML resource optionally styled by a theme. |
@@ -73,7 +73,7 @@ An alternate drawable can be specified using `<monochrome>` tag which can be dra
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/AdaptiveIconDrawable#isStateful()()` Indicates whether this drawable will change its appearance based on state. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/AdaptiveIconDrawable#jumpToCurrentState()()` If this Drawable does transition animations between states, ask that it immediately jump to the current state and skip any active animations. |
-| open [Drawable](../android/graphics/drawable/Drawable.md) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/AdaptiveIconDrawable#mutate()()` Make this drawable mutable. |
+| open [Drawable](Drawable.md) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/AdaptiveIconDrawable#mutate()()` Make this drawable mutable. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/AdaptiveIconDrawable#scheduleDrawable(android.graphics.drawable.Drawable,%20java.lang.Runnable,%20kotlin.Long)(who: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable, what: https://developer.android.com/reference/kotlin/java/lang/Runnable.html#, when: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` A Drawable can call this to schedule the next frame of its animation. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/AdaptiveIconDrawable#setAlpha(kotlin.Int)(alpha: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Specify an alpha value for the drawable. |
@@ -380,8 +380,8 @@ Constructor used to dynamically create this drawable.
 
 | Parameters ||
 |---|---|
-| `backgroundDrawable` | [Drawable](../android/graphics/drawable/Drawable.md)!: drawable that should be rendered in the background |
-| `foregroundDrawable` | [Drawable](../android/graphics/drawable/Drawable.md)!: drawable that should be rendered in the foreground |
+| `backgroundDrawable` | [Drawable](Drawable.md)!: drawable that should be rendered in the background |
+| `foregroundDrawable` | [Drawable](Drawable.md)!: drawable that should be rendered in the foreground |
 
 ### AdaptiveIconDrawable
 
@@ -398,9 +398,9 @@ Constructor used to dynamically create this drawable.
 
 | Parameters ||
 |---|---|
-| `backgroundDrawable` | [Drawable](../android/graphics/drawable/Drawable.md)?: drawable that should be rendered in the background. This value may be `null`. |
-| `foregroundDrawable` | [Drawable](../android/graphics/drawable/Drawable.md)?: drawable that should be rendered in the foreground. This value may be `null`. |
-| `monochromeDrawable` | [Drawable](../android/graphics/drawable/Drawable.md)?: an alternate drawable which can be tinted per system theme color. This value may be `null`. |
+| `backgroundDrawable` | [Drawable](Drawable.md)?: drawable that should be rendered in the background. This value may be `null`. |
+| `foregroundDrawable` | [Drawable](Drawable.md)?: drawable that should be rendered in the foreground. This value may be `null`. |
+| `monochromeDrawable` | [Drawable](Drawable.md)?: an alternate drawable which can be tinted per system theme color. This value may be `null`. |
 | --- | --- |
 
 ## Public methods
@@ -439,7 +439,7 @@ Draw in its bounds (set via setBounds) respecting optional effects such as alpha
 
 | Parameters ||
 |---|---|
-| `canvas` | [Canvas](../android/graphics/Canvas.md): The canvas to draw into. This value cannot be `null`. |
+| `canvas` | [Canvas](../android.graphics/Canvas.md): The canvas to draw into. This value cannot be `null`. |
 
 ### getAlpha
 
@@ -536,7 +536,7 @@ Populates `outRect` with the hotspot bounds.
 
 | Parameters ||
 |---|---|
-| `outRect` | [Rect](../android/graphics/Rect.md): the rect to populate with the hotspot bounds. This value cannot be `null`. |
+| `outRect` | [Rect](../android.graphics/Rect.md): the rect to populate with the hotspot bounds. This value cannot be `null`. |
 
 ### getIconMask
 
@@ -634,7 +634,7 @@ The default behavior defines the outline to be the bounding rectangle of 0 alpha
 
 | Parameters ||
 |---|---|
-| `outline` | [Outline](../android/graphics/Outline.md): This value cannot be `null`. |
+| `outline` | [Outline](../android.graphics/Outline.md): This value cannot be `null`. |
 
 ### getTransparentRegion
 
@@ -683,9 +683,9 @@ Inflate this Drawable from an XML resource optionally styled by a theme. This ca
 
 | Parameters ||
 |---|---|
-| `r` | [Resources](../android/content/res/Resources.md): This value cannot be `null`. |
-| `parser` | [XmlPullParser](../org/xmlpull/v1/XmlPullParser.md): This value cannot be `null`. |
-| `attrs` | [AttributeSet](../android/util/AttributeSet.md): This value cannot be `null`. |
+| `r` | [Resources](../android.content.res/Resources.md): This value cannot be `null`. |
+| `parser` | [XmlPullParser](../org.xmlpull.v1/XmlPullParser.md): This value cannot be `null`. |
+| `attrs` | [AttributeSet](../android.util/AttributeSet.md): This value cannot be `null`. |
 | --- | --- |
 | `theme` | [Resources.Theme](../android/content/res/Resources.Theme.md)?: This value may be `null`. |
 
@@ -706,7 +706,7 @@ Called when the drawable needs to be redrawn. A view at this point should invali
 
 | Parameters ||
 |---|---|
-| `who` | [Drawable](../android/graphics/drawable/Drawable.md): This value cannot be `null`. |
+| `who` | [Drawable](Drawable.md): This value cannot be `null`. |
 
 ### invalidateSelf
 
@@ -796,8 +796,8 @@ A Drawable can call this to schedule the next frame of its animation. An impleme
 
 | Parameters ||
 |---|---|
-| `who` | [Drawable](../android/graphics/drawable/Drawable.md): This value cannot be `null`. |
-| `what` | [Runnable](../java/lang/Runnable.md): This value cannot be `null`. |
+| `who` | [Drawable](Drawable.md): This value cannot be `null`. |
+| `what` | [Runnable](../java.lang/Runnable.md): This value cannot be `null`. |
 | `when` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The time (in milliseconds) to run. The timebase is `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#uptimeMillis()` |
 | --- | --- |
 
@@ -847,7 +847,7 @@ Pass `null` to remove any existing color filter.
 
 | Parameters ||
 |---|---|
-| `colorFilter` | [ColorFilter](../android/graphics/ColorFilter.md)?: The color filter to apply, or `null` to remove the existing color filter |
+| `colorFilter` | [ColorFilter](../android.graphics/ColorFilter.md)?: The color filter to apply, or `null` to remove the existing color filter |
 
 ### setDither
 
@@ -924,7 +924,7 @@ Defines how this drawable's tint color should be blended into the drawable befor
 
 | Parameters ||
 |---|---|
-| `blendMode` | [BlendMode](../android/graphics/BlendMode.md)!: This value cannot be `null`. |
+| `blendMode` | [BlendMode](../android.graphics/BlendMode.md)!: This value cannot be `null`. |
 
 ### setTintList
 
@@ -942,7 +942,7 @@ A Drawable's drawing content will be blended together with its tint before it is
 
 | Parameters ||
 |---|---|
-| `tint` | [ColorStateList](../android/content/res/ColorStateList.md)?: Color state list to use for tinting this drawable, or `null` to clear the tint |
+| `tint` | [ColorStateList](../android.content.res/ColorStateList.md)?: Color state list to use for tinting this drawable, or `null` to clear the tint |
 
 ### setVisible
 
@@ -981,8 +981,8 @@ A Drawable can call this to unschedule an action previously scheduled with `http
 
 | Parameters ||
 |---|---|
-| `who` | [Drawable](../android/graphics/drawable/Drawable.md): This value cannot be `null`. |
-| `what` | [Runnable](../java/lang/Runnable.md): This value cannot be `null`. |
+| `who` | [Drawable](Drawable.md): This value cannot be `null`. |
+| `what` | [Runnable](../java.lang/Runnable.md): This value cannot be `null`. |
 
 ## Protected methods
 
@@ -998,7 +998,7 @@ Override this in your subclass to change appearance if you vary based on the bou
 
 | Parameters ||
 |---|---|
-| `bounds` | [Rect](../android/graphics/Rect.md): This value cannot be `null`. |
+| `bounds` | [Rect](../android.graphics/Rect.md): This value cannot be `null`. |
 
 ### onLevelChange
 

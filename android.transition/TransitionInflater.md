@@ -4,7 +4,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 
 # TransitionInflater
 
-Kotlin| [Java](../android/transition/TransitionInflater.md) 
+Kotlin| [Java](TransitionInflater.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class TransitionInflater
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.transition.TransitionInflater](../android/transition/TransitionInflater.md) |
+| ↳ | [android.transition.TransitionInflater](TransitionInflater.md) |
 
 This class inflates scenes and transitions from resource files. Information on XML resource descriptions for transitions can be found for [android.R.styleable#Transition](../android/R.styleable.md), [android.R.styleable#TransitionSet](../android/R.styleable.md), [android.R.styleable#TransitionTarget](../android/R.styleable.md), [android.R.styleable#Fade](../android/R.styleable.md), and [android.R.styleable#TransitionManager](../android/R.styleable.md).
 
@@ -21,9 +21,9 @@ This class inflates scenes and transitions from resource files. Information on X
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [TransitionInflater](../android/transition/TransitionInflater.md)! | [from](../android/transition/TransitionInflater.md))`(`context:` ` [Context](../android/content/Context.md)!`)` Obtains the TransitionInflater from the given context. |
-| open [Transition](../android/transition/Transition.md)! | [inflateTransition](../android/transition/TransitionInflater.md))`(`resource:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Loads a [Transition](../android/transition/Transition.md) object from a resource |
-| open [TransitionManager](../android/transition/TransitionManager.md)! | [inflateTransitionManager](../android/transition/TransitionInflater.md))`(`resource:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `sceneRoot:` ` [ViewGroup](../android/view/ViewGroup.md)!`)` Loads a [TransitionManager](../android/transition/TransitionManager.md) object from a resource |
+| openstatic [TransitionInflater](TransitionInflater.md)! | [from](TransitionInflater.md))`(`context:` ` [Context](../android.content/Context.md)!`)` Obtains the TransitionInflater from the given context. |
+| open [Transition](Transition.md)! | [inflateTransition](TransitionInflater.md))`(`resource:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Loads a [Transition](Transition.md) object from a resource |
+| open [TransitionManager](TransitionManager.md)! | [inflateTransitionManager](TransitionInflater.md))`(`resource:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `sceneRoot:` ` [ViewGroup](../android.view/ViewGroup.md)!`)` Loads a [TransitionManager](TransitionManager.md) object from a resource |
 | --- | --- |
 
 ## Public methods
@@ -46,7 +46,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 open fun inflateTransition(resource: Int): Transition!
 ```
 
-Loads a [Transition](../android/transition/Transition.md) object from a resource
+Loads a [Transition](Transition.md) object from a resource
 
 | Parameters ||
 |------------|----------------------------------------------------------------------------------------------------------------------|
@@ -54,7 +54,7 @@ Loads a [Transition](../android/transition/Transition.md) object from a resource
 
 | Return ||
 |---------------------------------------------------------------------------------------------|------------------------------|
-| [Transition](../android/transition/Transition.md)! | The loaded Transition object |
+| [Transition](Transition.md)! | The loaded Transition object |
 
 | Exceptions ||
 |---------------------------------------------------|--------------------------------------|
@@ -71,7 +71,7 @@ open fun inflateTransitionManager(
 ): TransitionManager!
 ```
 
-Loads a [TransitionManager](../android/transition/TransitionManager.md) object from a resource
+Loads a [TransitionManager](TransitionManager.md) object from a resource
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------|
@@ -79,7 +79,7 @@ Loads a [TransitionManager](../android/transition/TransitionManager.md) object f
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------|-------------------------------------|
-| [TransitionManager](../android/transition/TransitionManager.md)! | The loaded TransitionManager object |
+| [TransitionManager](TransitionManager.md)! | The loaded TransitionManager object |
 
 | Exceptions ||
 |---------------------------------------------------|----------------------------------------------|

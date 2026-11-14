@@ -8,7 +8,7 @@ abstract class AsynchronousChannelProvider
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.nio.channels.spi.AsynchronousChannelProvider](../java/nio/channels/spi/AsynchronousChannelProvider.md) |
+| ↳ | [java.nio.channels.spi.AsynchronousChannelProvider](AsynchronousChannelProvider.md) |
 
 Service-provider class for asynchronous channels.
 
@@ -24,12 +24,12 @@ All of the methods in this class are safe for use by multiple concurrent threads
 
 | Public methods ||
 |---|---|
-| abstract [AsynchronousChannelGroup](../java/nio/channels/AsynchronousChannelGroup.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/spi/AsynchronousChannelProvider#openAsynchronousChannelGroup(kotlin.Int,%20java.util.concurrent.ThreadFactory)(nThreads: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, threadFactory: https://developer.android.com/reference/kotlin/java/util/concurrent/ThreadFactory.html#!)` Constructs a new asynchronous channel group with a fixed thread pool. |
-| abstract [AsynchronousChannelGroup](../java/nio/channels/AsynchronousChannelGroup.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/spi/AsynchronousChannelProvider#openAsynchronousChannelGroup(java.util.concurrent.ExecutorService,%20kotlin.Int)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/ExecutorService.html#!, initialSize: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Constructs a new asynchronous channel group with the given thread pool. |
-| abstract [AsynchronousServerSocketChannel](../java/nio/channels/AsynchronousServerSocketChannel.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/spi/AsynchronousChannelProvider#openAsynchronousServerSocketChannel(java.nio.channels.AsynchronousChannelGroup)(group: https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousChannelGroup.html#!)` Opens an asynchronous server-socket channel. |
+| abstract [AsynchronousChannelGroup](../java.nio.channels/AsynchronousChannelGroup.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/spi/AsynchronousChannelProvider#openAsynchronousChannelGroup(kotlin.Int,%20java.util.concurrent.ThreadFactory)(nThreads: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, threadFactory: https://developer.android.com/reference/kotlin/java/util/concurrent/ThreadFactory.html#!)` Constructs a new asynchronous channel group with a fixed thread pool. |
+| abstract [AsynchronousChannelGroup](../java.nio.channels/AsynchronousChannelGroup.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/spi/AsynchronousChannelProvider#openAsynchronousChannelGroup(java.util.concurrent.ExecutorService,%20kotlin.Int)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/ExecutorService.html#!, initialSize: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Constructs a new asynchronous channel group with the given thread pool. |
+| abstract [AsynchronousServerSocketChannel](../java.nio.channels/AsynchronousServerSocketChannel.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/spi/AsynchronousChannelProvider#openAsynchronousServerSocketChannel(java.nio.channels.AsynchronousChannelGroup)(group: https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousChannelGroup.html#!)` Opens an asynchronous server-socket channel. |
 | --- | --- |
-| abstract [AsynchronousSocketChannel](../java/nio/channels/AsynchronousSocketChannel.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/spi/AsynchronousChannelProvider#openAsynchronousSocketChannel(java.nio.channels.AsynchronousChannelGroup)(group: https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousChannelGroup.html#!)` Opens an asynchronous socket channel. |
-| open static [AsynchronousChannelProvider](../java/nio/channels/spi/AsynchronousChannelProvider.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/spi/AsynchronousChannelProvider#provider()()` Returns the system-wide default asynchronous channel provider for this invocation of the Java virtual machine. |
+| abstract [AsynchronousSocketChannel](../java.nio.channels/AsynchronousSocketChannel.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/spi/AsynchronousChannelProvider#openAsynchronousSocketChannel(java.nio.channels.AsynchronousChannelGroup)(group: https://developer.android.com/reference/kotlin/java/nio/channels/AsynchronousChannelGroup.html#!)` Opens an asynchronous socket channel. |
+| open static [AsynchronousChannelProvider](AsynchronousChannelProvider.md)! | `https://developer.android.com/reference/kotlin/java/nio/channels/spi/AsynchronousChannelProvider#provider()()` Returns the system-wide default asynchronous channel provider for this invocation of the Java virtual machine. |
 
 ## Protected constructors
 
@@ -65,7 +65,7 @@ Constructs a new asynchronous channel group with a fixed thread pool.
 | Parameters ||
 |---|---|
 | `nThreads` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of threads in the pool |
-| `threadFactory` | [ThreadFactory](../java/util/concurrent/ThreadFactory.md)!: The factory to use when creating new threads |
+| `threadFactory` | [ThreadFactory](../java.util.concurrent/ThreadFactory.md)!: The factory to use when creating new threads |
 
 | Return ||
 |---|---|
@@ -95,7 +95,7 @@ Constructs a new asynchronous channel group with the given thread pool.
 
 | Parameters ||
 |---|---|
-| `executor` | [ExecutorService](../java/util/concurrent/ExecutorService.md)!: The thread pool |
+| `executor` | [ExecutorService](../java.util.concurrent/ExecutorService.md)!: The thread pool |
 | `initialSize` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): A value `>=0` or a negative value for implementation specific default |
 
 | Return ||
@@ -122,7 +122,7 @@ Opens an asynchronous server-socket channel.
 
 | Parameters ||
 |---|---|
-| `group` | [AsynchronousChannelGroup](../java/nio/channels/AsynchronousChannelGroup.md)!: The group to which the channel is bound, or `null` to bind to the default group |
+| `group` | [AsynchronousChannelGroup](../java.nio.channels/AsynchronousChannelGroup.md)!: The group to which the channel is bound, or `null` to bind to the default group |
 
 | Return ||
 |---|---|
@@ -147,7 +147,7 @@ Opens an asynchronous socket channel.
 
 | Parameters ||
 |---|---|
-| `group` | [AsynchronousChannelGroup](../java/nio/channels/AsynchronousChannelGroup.md)!: The group to which the channel is bound, or `null` to bind to the default group |
+| `group` | [AsynchronousChannelGroup](../java.nio.channels/AsynchronousChannelGroup.md)!: The group to which the channel is bound, or `null` to bind to the default group |
 
 | Return ||
 |---|---|

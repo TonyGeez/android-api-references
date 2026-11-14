@@ -4,14 +4,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # RangeValueIterator
 
-Kotlin | [Java](../android/icu/util/RangeValueIterator.md) 
+Kotlin | [Java](RangeValueIterator.md) 
 | --- | --- |
 
 ```
 interface RangeValueIterator
 ```
 
-| [android.icu.util.RangeValueIterator](../android/icu/util/RangeValueIterator.md) |
+| [android.icu.util.RangeValueIterator](RangeValueIterator.md) |
 
 Interface for enabling iteration over sets of \<int index, int value\>, where index is the sorted integer index in ascending order and value, its associated integer value.
 
@@ -48,8 +48,8 @@ RangeValueIterator iterator = UCharacter.getTypeIterator();
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [next](../android/icu/util/RangeValueIterator.md))`(`element:` ` [RangeValueIterator.Element](../android/icu/util/RangeValueIterator.Element.md)!`)` Returns the next maximal result range with a common value and returns true if we are not at the end of the iteration, false otherwise. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](../android/icu/util/RangeValueIterator.md))`()` Resets the iterator to the beginning of the iteration. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [next](RangeValueIterator.md))`(`element:` ` [RangeValueIterator.Element](../android/icu/util/RangeValueIterator.Element.md)!`)` Returns the next maximal result range with a common value and returns true if we are not at the end of the iteration, false otherwise. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](RangeValueIterator.md))`()` Resets the iterator to the beginning of the iteration. |
 
 ## Public methods
 

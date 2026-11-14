@@ -8,11 +8,11 @@ abstract class TvInteractiveAppService : Service
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](../android/content/Context.md) ||||
-| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) |||
-| | | ↳ | [android.app.Service](../android/app/Service.md) ||
+| ↳ | [android.content.Context](../android.content/Context.md) ||||
+| | ↳ | [android.content.ContextWrapper](../android.content/ContextWrapper.md) |||
+| | | ↳ | [android.app.Service](../android.app/Service.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.media.tv.interactive.TvInteractiveAppService](../android/media/tv/interactive/TvInteractiveAppService.md) |
+| | | | ↳ | [android.media.tv.interactive.TvInteractiveAppService](TvInteractiveAppService.md) |
 
 A TV interactive application service is a service that provides runtime environment and runs TV interactive applications.
 
@@ -1086,7 +1086,7 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 |---|---|
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppService#notifyStateChanged(kotlin.Int,%20kotlin.Int,%20kotlin.Int)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, state: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, error: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Notifies the system when the state of the interactive app RTE has been changed. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppService#onAppLinkCommand(android.os.Bundle)(command: https://developer.android.com/reference/kotlin/android/os/Bundle.html#)` Called when app link command is received. |
-| [IBinder](../android/os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Return the communication channel to the service. |
+| [IBinder](../android.os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Return the communication channel to the service. |
 | --- | --- |
 | abstract [TvInteractiveAppService.Session](../android/media/tv/interactive/TvInteractiveAppService.Session.md)? | `https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppService#onCreateSession(kotlin.String,%20kotlin.Int)(iAppServiceId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns a concrete implementation of `https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppService.Session`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/interactive/TvInteractiveAppService#onRegisterAppLinkInfo(android.media.tv.interactive.AppLinkInfo)(appLinkInfo: https://developer.android.com/reference/kotlin/android/media/tv/interactive/AppLinkInfo)` Called when a request to register an Android application link info record is received. |
@@ -3249,7 +3249,7 @@ Called when app link command is received.
 
 | Parameters ||
 |---|---|
-| `command` | [Bundle](../android/os/Bundle.md): This value cannot be `null`. |
+| `command` | [Bundle](../android.os/Bundle.md): This value cannot be `null`. |
 
 **See Also**
 
@@ -3269,7 +3269,7 @@ Return the communication channel to the service. May return null if clients can 
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md): This value cannot be `null`. |
+| `intent` | [Intent](../android.content/Intent.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -3307,7 +3307,7 @@ Called when a request to register an Android application link info record is rec
 
 | Parameters ||
 |---|---|
-| `appLinkInfo` | [AppLinkInfo](../android/media/tv/interactive/AppLinkInfo.md): This value cannot be `null`. |
+| `appLinkInfo` | [AppLinkInfo](AppLinkInfo.md): This value cannot be `null`. |
 
 ### onUnregisterAppLinkInfo
 
@@ -3321,4 +3321,4 @@ Called when a request to unregister an Android application link info record is r
 
 | Parameters ||
 |---|---|
-| `appLinkInfo` | [AppLinkInfo](../android/media/tv/interactive/AppLinkInfo.md): This value cannot be `null`. |
+| `appLinkInfo` | [AppLinkInfo](AppLinkInfo.md): This value cannot be `null`. |

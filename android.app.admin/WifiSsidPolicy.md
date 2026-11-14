@@ -8,7 +8,7 @@ class WifiSsidPolicy : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.admin.WifiSsidPolicy](../android/app/admin/WifiSsidPolicy.md) |
+| ↳ | [android.app.admin.WifiSsidPolicy](WifiSsidPolicy.md) |
 
 Used to indicate the Wi-Fi SSID restriction policy the network must satisfy in order to be eligible for a connection.
 
@@ -43,14 +43,14 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/WifiSsidPolicy#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Two instances of WifiSsidPolicy are considered equal if they have the same WifiSsidPolicyType and the same set of WifiSsids |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/WifiSsidPolicy#getPolicyType()()` Returns the policy type. |
 | --- | --- |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [WifiSsid](../android/net/wifi/WifiSsid.md)!\> | `https://developer.android.com/reference/kotlin/android/app/admin/WifiSsidPolicy#getSsids()()` Returns the set of `https://developer.android.com/reference/kotlin/android/net/wifi/WifiSsid.html#` |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [WifiSsid](../android.net.wifi/WifiSsid.md)!\> | `https://developer.android.com/reference/kotlin/android/app/admin/WifiSsidPolicy#getSsids()()` Returns the set of `https://developer.android.com/reference/kotlin/android/net/wifi/WifiSsid.html#` |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/WifiSsidPolicy#hashCode()()` Returns the hash code value of WifiSsidPolicyType and WifiSsid set |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/WifiSsidPolicy#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 | --- | --- |
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [WifiSsidPolicy](../android/app/admin/WifiSsidPolicy.md)!\> | `https://developer.android.com/reference/kotlin/android/app/admin/WifiSsidPolicy#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [WifiSsidPolicy](WifiSsidPolicy.md)!\> | `https://developer.android.com/reference/kotlin/android/app/admin/WifiSsidPolicy#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -107,7 +107,7 @@ Create the Wi-Fi SSID Policy.
 | Parameters ||
 |---|---|
 | `policyType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): indicate whether the policy is an allowlist or a denylist. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/app/admin/WifiSsidPolicy#WIFI_SSID_POLICY_TYPE_ALLOWLIST:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/admin/WifiSsidPolicy#WIFI_SSID_POLICY_TYPE_DENYLIST:kotlin.Int` |
-| `ssids` | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [WifiSsid](../android/net/wifi/WifiSsid.md)!\>: set of `https://developer.android.com/reference/kotlin/android/net/wifi/WifiSsid.html#` This value cannot be `null`. |
+| `ssids` | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [WifiSsid](../android.net.wifi/WifiSsid.md)!\>: set of `https://developer.android.com/reference/kotlin/android/net/wifi/WifiSsid.html#` This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -204,7 +204,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

@@ -8,17 +8,17 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 @FunctionalInterface interface LongToIntFunction
 ```
 
-| [java.util.function.LongToIntFunction](../java/util/function/LongToIntFunction.md) |
+| [java.util.function.LongToIntFunction](LongToIntFunction.md) |
 
-Represents a function that accepts a long-valued argument and produces an int-valued result. This is the`long`-to-`int`primitive specialization for [Function](../java/util/function/Function.md).
+Represents a function that accepts a long-valued argument and produces an int-valued result. This is the`long`-to-`int`primitive specialization for [Function](Function.md).
 
-This is a [functional interface](../java/util/function/_package.md) whose functional method is [applyAsInt(long)](../java/util/function/LongToIntFunction.md)).
+This is a [functional interface](_package.md) whose functional method is [applyAsInt(long)](LongToIntFunction.md)).
 
 ## Summary
 
 | Public methods ||
 |------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [applyAsInt](../java/util/function/LongToIntFunction.md))`(`value:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Applies this function to the given argument. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [applyAsInt](LongToIntFunction.md))`(`value:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Applies this function to the given argument. |
 
 ## Public methods
 

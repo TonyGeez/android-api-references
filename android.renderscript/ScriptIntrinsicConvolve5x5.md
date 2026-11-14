@@ -5,7 +5,7 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 
 # ScriptIntrinsicConvolve5x5
 
-Kotlin| [Java](../android/renderscript/ScriptIntrinsicConvolve5x5.md) 
+Kotlin| [Java](ScriptIntrinsicConvolve5x5.md) 
 | --- | --- |
 
 ```
@@ -14,11 +14,11 @@ class ScriptIntrinsicConvolve5x5 : ScriptIntrinsic
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.renderscript.BaseObj](../android/renderscript/BaseObj.md) ||||
-| | ↳ | [android.renderscript.Script](../android/renderscript/Script.md) |||
-| | | ↳ | [android.renderscript.ScriptIntrinsic](../android/renderscript/ScriptIntrinsic.md) ||
+| ↳ | [android.renderscript.BaseObj](BaseObj.md) ||||
+| | ↳ | [android.renderscript.Script](Script.md) |||
+| | | ↳ | [android.renderscript.ScriptIntrinsic](ScriptIntrinsic.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.renderscript.ScriptIntrinsicConvolve5x5](../android/renderscript/ScriptIntrinsicConvolve5x5.md) |
+| | | | ↳ | [android.renderscript.ScriptIntrinsicConvolve5x5](ScriptIntrinsicConvolve5x5.md) |
 
 | **This class was deprecated in API level 31.**
 |
@@ -30,15 +30,15 @@ Intrinsic for applying a 5x5 convolve to an allocation.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [ScriptIntrinsicConvolve5x5](../android/renderscript/ScriptIntrinsicConvolve5x5.md)! | [create](../android/renderscript/ScriptIntrinsicConvolve5x5.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`, `e:` ` [Element](../android/renderscript/Element.md)!`)` Supported elements types are [Element.U8](../android/renderscript/Element.md)), [android.renderscript.Element#U8_2](../android/renderscript/Element.md)), [Element.U8_3](../android/renderscript/Element.md)), [Element.U8_4](../android/renderscript/Element.md)), [Element.F32](../android/renderscript/Element.md)), [Element.F32_2](../android/renderscript/Element.md)), [android.renderscript.Element#F32_3](../android/renderscript/Element.md)), and [Element.F32_4](../android/renderscript/Element.md)). |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](../android/renderscript/ScriptIntrinsicConvolve5x5.md))`(`aout:` ` [Allocation](../android/renderscript/Allocation.md)!`)` Apply the filter to the input and save to the specified allocation. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](../android/renderscript/ScriptIntrinsicConvolve5x5.md))`(`aout:` ` [Allocation](../android/renderscript/Allocation.md)!`, `opt:` ` [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!`)` Apply the filter to the input and save to the specified allocation. |
+| static [ScriptIntrinsicConvolve5x5](ScriptIntrinsicConvolve5x5.md)! | [create](ScriptIntrinsicConvolve5x5.md))`(`rs:` ` [RenderScript](RenderScript.md)!`, `e:` ` [Element](Element.md)!`)` Supported elements types are [Element.U8](Element.md)), [android.renderscript.Element#U8_2](Element.md)), [Element.U8_3](Element.md)), [Element.U8_4](Element.md)), [Element.F32](Element.md)), [Element.F32_2](Element.md)), [android.renderscript.Element#F32_3](Element.md)), and [Element.F32_4](Element.md)). |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](ScriptIntrinsicConvolve5x5.md))`(`aout:` ` [Allocation](Allocation.md)!`)` Apply the filter to the input and save to the specified allocation. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](ScriptIntrinsicConvolve5x5.md))`(`aout:` ` [Allocation](Allocation.md)!`, `opt:` ` [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!`)` Apply the filter to the input and save to the specified allocation. |
 | --- | --- |
-| [Script.FieldID](../android/renderscript/Script.FieldID.md)! | [getFieldID_Input](../android/renderscript/ScriptIntrinsicConvolve5x5.md))`()` Get a FieldID for the input field of this intrinsic. |
-| [Script.KernelID](../android/renderscript/Script.KernelID.md)! | [getKernelID](../android/renderscript/ScriptIntrinsicConvolve5x5.md))`()` Get a KernelID for this intrinsic kernel. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCoefficients](../android/renderscript/ScriptIntrinsicConvolve5x5.md))`(`v:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`)` Set the coefficients for the convolve. |
+| [Script.FieldID](../android/renderscript/Script.FieldID.md)! | [getFieldID_Input](ScriptIntrinsicConvolve5x5.md))`()` Get a FieldID for the input field of this intrinsic. |
+| [Script.KernelID](../android/renderscript/Script.KernelID.md)! | [getKernelID](ScriptIntrinsicConvolve5x5.md))`()` Get a KernelID for this intrinsic kernel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCoefficients](ScriptIntrinsicConvolve5x5.md))`(`v:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`)` Set the coefficients for the convolve. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInput](../android/renderscript/ScriptIntrinsicConvolve5x5.md))`(`ain:` ` [Allocation](../android/renderscript/Allocation.md)!`)` Set the input of the 5x5 convolve. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInput](ScriptIntrinsicConvolve5x5.md))`(`ain:` ` [Allocation](Allocation.md)!`)` Set the input of the 5x5 convolve. |
 
 ## Public methods
 
@@ -55,7 +55,7 @@ static fun create(
 
 **Deprecated:** *Deprecated in Java.*
 
-Supported elements types are [Element.U8](../android/renderscript/Element.md)), [android.renderscript.Element#U8_2](../android/renderscript/Element.md)), [Element.U8_3](../android/renderscript/Element.md)), [Element.U8_4](../android/renderscript/Element.md)), [Element.F32](../android/renderscript/Element.md)), [Element.F32_2](../android/renderscript/Element.md)), [android.renderscript.Element#F32_3](../android/renderscript/Element.md)), and [Element.F32_4](../android/renderscript/Element.md)).
+Supported elements types are [Element.U8](Element.md)), [android.renderscript.Element#U8_2](Element.md)), [Element.U8_3](Element.md)), [Element.U8_4](Element.md)), [Element.F32](Element.md)), [Element.F32_2](Element.md)), [android.renderscript.Element#F32_3](Element.md)), and [Element.F32_4](Element.md)).
 
 The default coefficients are:` `
 
@@ -71,12 +71,12 @@ The default coefficients are:` `
 
 | Parameters ||
 |------|------------------------------------------------------------------------------------------------------------------------------|
-| `rs` | [RenderScript](../android/renderscript/RenderScript.md)!:The RenderScript context |
-| `e` | [Element](../android/renderscript/Element.md)!:Element type for intputs and outputs |
+| `rs` | [RenderScript](RenderScript.md)!:The RenderScript context |
+| `e` | [Element](Element.md)!:Element type for intputs and outputs |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------------|----------------------------|
-| [ScriptIntrinsicConvolve5x5](../android/renderscript/ScriptIntrinsicConvolve5x5.md)! | ScriptIntrinsicConvolve5x5 |
+| [ScriptIntrinsicConvolve5x5](ScriptIntrinsicConvolve5x5.md)! | ScriptIntrinsicConvolve5x5 |
 
 ### forEach
 
@@ -92,7 +92,7 @@ Apply the filter to the input and save to the specified allocation.
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| `aout` | [Allocation](../android/renderscript/Allocation.md)!:Output allocation. Must match creation element type. |
+| `aout` | [Allocation](Allocation.md)!:Output allocation. Must match creation element type. |
 
 ### forEach
 
@@ -112,7 +112,7 @@ Apply the filter to the input and save to the specified allocation.
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| `aout` | [Allocation](../android/renderscript/Allocation.md)!:Output allocation. Must match creation element type. |
+| `aout` | [Allocation](Allocation.md)!:Output allocation. Must match creation element type. |
 | `opt` | [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!:LaunchOptions for clipping |
 
 ### getFieldID_Input
@@ -189,4 +189,4 @@ Set the input of the 5x5 convolve. Must match the element type supplied during c
 
 | Parameters ||
 |-------|---------------------------------------------------------------------------------------------------------------------|
-| `ain` | [Allocation](../android/renderscript/Allocation.md)!:The input allocation. |
+| `ain` | [Allocation](Allocation.md)!:The input allocation. |

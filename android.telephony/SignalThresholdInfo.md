@@ -4,7 +4,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # SignalThresholdInfo
 
-Kotlin| [Java](../android/telephony/SignalThresholdInfo.md) 
+Kotlin| [Java](SignalThresholdInfo.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class SignalThresholdInfo : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.telephony.SignalThresholdInfo](../android/telephony/SignalThresholdInfo.md) |
+| ↳ | [android.telephony.SignalThresholdInfo](SignalThresholdInfo.md) |
 
 Defines the threshold value of the signal strength.
 
@@ -21,48 +21,48 @@ Defines the threshold value of the signal strength.
 
 | Nested classes ||
 |---|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](../android/telephony/SignalThresholdInfo.Builder.md) Builder class to create [SignalThresholdInfo](../android/telephony/SignalThresholdInfo.md) objects. |
+| | [Builder](../android/telephony/SignalThresholdInfo.Builder.md) Builder class to create [SignalThresholdInfo](SignalThresholdInfo.md) objects. |
 
 | Constants ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIGNAL_MEASUREMENT_TYPE_ECNO](../android/telephony/SignalThresholdInfo.md) The ratio between the received energy from the pilot signal CPICH per chip (Ec) to the noise density (No). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIGNAL_MEASUREMENT_TYPE_RSCP](../android/telephony/SignalThresholdInfo.md) Received Signal Code Power. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIGNAL_MEASUREMENT_TYPE_RSRP](../android/telephony/SignalThresholdInfo.md) Reference Signal Received Power. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIGNAL_MEASUREMENT_TYPE_ECNO](SignalThresholdInfo.md) The ratio between the received energy from the pilot signal CPICH per chip (Ec) to the noise density (No). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIGNAL_MEASUREMENT_TYPE_RSCP](SignalThresholdInfo.md) Received Signal Code Power. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIGNAL_MEASUREMENT_TYPE_RSRP](SignalThresholdInfo.md) Reference Signal Received Power. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIGNAL_MEASUREMENT_TYPE_RSRQ](../android/telephony/SignalThresholdInfo.md) Reference Signal Received Quality Range: -34 dB to 3 dB; Used RAN: [AccessNetworkConstants.AccessNetworkType.EUTRAN](../android/telephony/AccessNetworkConstants.AccessNetworkType.md) Reference: 3GPP TS 36. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIGNAL_MEASUREMENT_TYPE_RSSI](../android/telephony/SignalThresholdInfo.md) Received Signal Strength Indication. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIGNAL_MEASUREMENT_TYPE_RSSNR](../android/telephony/SignalThresholdInfo.md) Reference Signal Signal to Noise Ratio Range: -20 dB to 30 dB; Used RAN: [AccessNetworkConstants.AccessNetworkType.EUTRAN](../android/telephony/AccessNetworkConstants.AccessNetworkType.md) |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIGNAL_MEASUREMENT_TYPE_RSRQ](SignalThresholdInfo.md) Reference Signal Received Quality Range: -34 dB to 3 dB; Used RAN: [AccessNetworkConstants.AccessNetworkType.EUTRAN](../android/telephony/AccessNetworkConstants.AccessNetworkType.md) Reference: 3GPP TS 36. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIGNAL_MEASUREMENT_TYPE_RSSI](SignalThresholdInfo.md) Received Signal Strength Indication. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIGNAL_MEASUREMENT_TYPE_RSSNR](SignalThresholdInfo.md) Reference Signal Signal to Noise Ratio Range: -20 dB to 30 dB; Used RAN: [AccessNetworkConstants.AccessNetworkType.EUTRAN](../android/telephony/AccessNetworkConstants.AccessNetworkType.md) |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIGNAL_MEASUREMENT_TYPE_SSRSRP](../android/telephony/SignalThresholdInfo.md) 5G SS reference signal received power. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIGNAL_MEASUREMENT_TYPE_SSRSRQ](../android/telephony/SignalThresholdInfo.md) 5G SS reference signal received quality. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIGNAL_MEASUREMENT_TYPE_SSSINR](../android/telephony/SignalThresholdInfo.md) 5G SS signal-to-noise and interference ratio. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIGNAL_MEASUREMENT_TYPE_SSRSRP](SignalThresholdInfo.md) 5G SS reference signal received power. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIGNAL_MEASUREMENT_TYPE_SSRSRQ](SignalThresholdInfo.md) 5G SS reference signal received quality. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIGNAL_MEASUREMENT_TYPE_SSSINR](SignalThresholdInfo.md) 5G SS signal-to-noise and interference ratio. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIGNAL_MEASUREMENT_TYPE_UNKNOWN](../android/telephony/SignalThresholdInfo.md) Unknown signal measurement type. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIGNAL_MEASUREMENT_TYPE_UNKNOWN](SignalThresholdInfo.md) Unknown signal measurement type. |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android.os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android.os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android.os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |---------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/telephony/SignalThresholdInfo.md))`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/telephony/SignalThresholdInfo.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHysteresisDb](../android/telephony/SignalThresholdInfo.md))`()` Get measurement hysteresis db. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](SignalThresholdInfo.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](SignalThresholdInfo.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHysteresisDb](SignalThresholdInfo.md))`()` Get measurement hysteresis db. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaximumNumberOfThresholdsAllowed](../android/telephony/SignalThresholdInfo.md))`()` Get the maximum number of threshold allowed in each SignalThresholdInfo. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMinimumNumberOfThresholdsAllowed](../android/telephony/SignalThresholdInfo.md))`()` Get the minimum number of thresholds allowed in each SignalThresholdInfo. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRadioAccessNetworkType](../android/telephony/SignalThresholdInfo.md))`()` Get the radio access network type. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaximumNumberOfThresholdsAllowed](SignalThresholdInfo.md))`()` Get the maximum number of threshold allowed in each SignalThresholdInfo. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMinimumNumberOfThresholdsAllowed](SignalThresholdInfo.md))`()` Get the minimum number of thresholds allowed in each SignalThresholdInfo. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRadioAccessNetworkType](SignalThresholdInfo.md))`()` Get the radio access network type. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSignalMeasurementType](../android/telephony/SignalThresholdInfo.md))`()` Get the signal measurement type. |
-| [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | [getThresholds](../android/telephony/SignalThresholdInfo.md))`()` Get the signal strength thresholds. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/telephony/SignalThresholdInfo.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSignalMeasurementType](SignalThresholdInfo.md))`()` Get the signal measurement type. |
+| [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | [getThresholds](SignalThresholdInfo.md))`()` Get the signal strength thresholds. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](SignalThresholdInfo.md))`()` <br /> |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/telephony/SignalThresholdInfo.md))`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/telephony/SignalThresholdInfo.md))`(`out:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](SignalThresholdInfo.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](SignalThresholdInfo.md))`(`out:` ` [Parcel](../android.os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [SignalThresholdInfo](../android/telephony/SignalThresholdInfo.md)!\> | [CREATOR](../android/telephony/SignalThresholdInfo.md) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [SignalThresholdInfo](SignalThresholdInfo.md)!\> | [CREATOR](SignalThresholdInfo.md) <br /> |
 
 ## Constants
 
@@ -198,7 +198,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) |
 
 ### equals
 
@@ -284,7 +284,7 @@ Get the signal measurement type.
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the SignalMeasurementType value Value is [android.telephony.SignalThresholdInfo#SIGNAL_MEASUREMENT_TYPE_UNKNOWN](../android/telephony/SignalThresholdInfo.md), [android.telephony.SignalThresholdInfo#SIGNAL_MEASUREMENT_TYPE_RSSI](../android/telephony/SignalThresholdInfo.md), [android.telephony.SignalThresholdInfo#SIGNAL_MEASUREMENT_TYPE_RSCP](../android/telephony/SignalThresholdInfo.md), [android.telephony.SignalThresholdInfo#SIGNAL_MEASUREMENT_TYPE_RSRP](../android/telephony/SignalThresholdInfo.md), [android.telephony.SignalThresholdInfo#SIGNAL_MEASUREMENT_TYPE_RSRQ](../android/telephony/SignalThresholdInfo.md), [android.telephony.SignalThresholdInfo#SIGNAL_MEASUREMENT_TYPE_RSSNR](../android/telephony/SignalThresholdInfo.md), [android.telephony.SignalThresholdInfo#SIGNAL_MEASUREMENT_TYPE_SSRSRP](../android/telephony/SignalThresholdInfo.md), [android.telephony.SignalThresholdInfo#SIGNAL_MEASUREMENT_TYPE_SSRSRQ](../android/telephony/SignalThresholdInfo.md), [android.telephony.SignalThresholdInfo#SIGNAL_MEASUREMENT_TYPE_SSSINR](../android/telephony/SignalThresholdInfo.md), or [android.telephony.SignalThresholdInfo#SIGNAL_MEASUREMENT_TYPE_ECNO](../android/telephony/SignalThresholdInfo.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the SignalMeasurementType value Value is [android.telephony.SignalThresholdInfo#SIGNAL_MEASUREMENT_TYPE_UNKNOWN](SignalThresholdInfo.md), [android.telephony.SignalThresholdInfo#SIGNAL_MEASUREMENT_TYPE_RSSI](SignalThresholdInfo.md), [android.telephony.SignalThresholdInfo#SIGNAL_MEASUREMENT_TYPE_RSCP](SignalThresholdInfo.md), [android.telephony.SignalThresholdInfo#SIGNAL_MEASUREMENT_TYPE_RSRP](SignalThresholdInfo.md), [android.telephony.SignalThresholdInfo#SIGNAL_MEASUREMENT_TYPE_RSRQ](SignalThresholdInfo.md), [android.telephony.SignalThresholdInfo#SIGNAL_MEASUREMENT_TYPE_RSSNR](SignalThresholdInfo.md), [android.telephony.SignalThresholdInfo#SIGNAL_MEASUREMENT_TYPE_SSRSRP](SignalThresholdInfo.md), [android.telephony.SignalThresholdInfo#SIGNAL_MEASUREMENT_TYPE_SSRSRQ](SignalThresholdInfo.md), [android.telephony.SignalThresholdInfo#SIGNAL_MEASUREMENT_TYPE_SSSINR](SignalThresholdInfo.md), or [android.telephony.SignalThresholdInfo#SIGNAL_MEASUREMENT_TYPE_ECNO](SignalThresholdInfo.md) |
 
 ### getThresholds
 
@@ -302,15 +302,15 @@ Get the signal strength thresholds. Signal strength thresholds are a list of int
 
 **See Also**
 
-- [#SIGNAL_MEASUREMENT_TYPE_RSSI](../android/telephony/SignalThresholdInfo.md)
-- [#SIGNAL_MEASUREMENT_TYPE_RSCP](../android/telephony/SignalThresholdInfo.md)
-- [#SIGNAL_MEASUREMENT_TYPE_RSRP](../android/telephony/SignalThresholdInfo.md)
-- [#SIGNAL_MEASUREMENT_TYPE_RSRQ](../android/telephony/SignalThresholdInfo.md)
-- [#SIGNAL_MEASUREMENT_TYPE_RSSNR](../android/telephony/SignalThresholdInfo.md)
-- [#SIGNAL_MEASUREMENT_TYPE_SSRSRP](../android/telephony/SignalThresholdInfo.md)
-- [#SIGNAL_MEASUREMENT_TYPE_SSRSRQ](../android/telephony/SignalThresholdInfo.md)
-- [#SIGNAL_MEASUREMENT_TYPE_SSSINR](../android/telephony/SignalThresholdInfo.md)
-- [#SIGNAL_MEASUREMENT_TYPE_ECNO](../android/telephony/SignalThresholdInfo.md) 
+- [#SIGNAL_MEASUREMENT_TYPE_RSSI](SignalThresholdInfo.md)
+- [#SIGNAL_MEASUREMENT_TYPE_RSCP](SignalThresholdInfo.md)
+- [#SIGNAL_MEASUREMENT_TYPE_RSRP](SignalThresholdInfo.md)
+- [#SIGNAL_MEASUREMENT_TYPE_RSRQ](SignalThresholdInfo.md)
+- [#SIGNAL_MEASUREMENT_TYPE_RSSNR](SignalThresholdInfo.md)
+- [#SIGNAL_MEASUREMENT_TYPE_SSRSRP](SignalThresholdInfo.md)
+- [#SIGNAL_MEASUREMENT_TYPE_SSRSRQ](SignalThresholdInfo.md)
+- [#SIGNAL_MEASUREMENT_TYPE_SSSINR](SignalThresholdInfo.md)
+- [#SIGNAL_MEASUREMENT_TYPE_ECNO](SignalThresholdInfo.md) 
 
 ### hashCode
 
@@ -352,8 +352,8 @@ Flatten this object in to a Parcel.
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `dest` | The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
-| `out` | [Parcel](../android/os/Parcel.md):This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `out` | [Parcel](../android.os/Parcel.md):This value cannot be`null`. |
 | --- | --- |
 
 ## Properties

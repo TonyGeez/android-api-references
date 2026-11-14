@@ -10,10 +10,10 @@ open class PropertyChangeEvent : EventObject
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.util.EventObject](../java/util/EventObject.md) ||
-| | ↳ | [java.beans.PropertyChangeEvent](../java/beans/PropertyChangeEvent.md) |
+| ↳ | [java.util.EventObject](../java.util/EventObject.md) ||
+| | ↳ | [java.beans.PropertyChangeEvent](PropertyChangeEvent.md) |
 
-| Known Direct Subclasses [IndexedPropertyChangeEvent](../java/beans/IndexedPropertyChangeEvent.md) |--------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------| | [IndexedPropertyChangeEvent](../java/beans/IndexedPropertyChangeEvent.md) | An "IndexedPropertyChange" event gets delivered whenever a component that conforms to the JavaBeans™ specification (a "bean") changes a bound indexed property. | |
+| Known Direct Subclasses [IndexedPropertyChangeEvent](IndexedPropertyChangeEvent.md) |--------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------| | [IndexedPropertyChangeEvent](IndexedPropertyChangeEvent.md) | An "IndexedPropertyChange" event gets delivered whenever a component that conforms to the JavaBeans™ specification (a "bean") changes a bound indexed property. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 A "PropertyChange" event gets delivered whenever a bean changes a "bound" or "constrained" property. A PropertyChangeEvent object is sent as an argument to the PropertyChangeListener and VetoableChangeListener methods.
@@ -28,26 +28,26 @@ An event source may send a null object as the name to indicate that an arbitrary
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [PropertyChangeEvent](../java/beans/PropertyChangeEvent.md))`(`source:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `propertyName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `oldValue:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `newValue:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Constructs a new `PropertyChangeEvent`. |
+| [PropertyChangeEvent](PropertyChangeEvent.md))`(`source:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `propertyName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `oldValue:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `newValue:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Constructs a new `PropertyChangeEvent`. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getNewValue](../java/beans/PropertyChangeEvent.md))`()` Gets the new value for the property, expressed as an Object. |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getOldValue](../java/beans/PropertyChangeEvent.md))`()` Gets the old value for the property, expressed as an Object. |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getPropagationId](../java/beans/PropertyChangeEvent.md))`()` The "propagationId" field is reserved for future use. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getNewValue](PropertyChangeEvent.md))`()` Gets the new value for the property, expressed as an Object. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getOldValue](PropertyChangeEvent.md))`()` Gets the old value for the property, expressed as an Object. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getPropagationId](PropertyChangeEvent.md))`()` The "propagationId" field is reserved for future use. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPropertyName](../java/beans/PropertyChangeEvent.md))`()` Gets the programmatic name of the property that was changed. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPropagationId](../java/beans/PropertyChangeEvent.md))`(`propagationId:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Sets the propagationId object for the event. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/beans/PropertyChangeEvent.md))`()` Returns a string representation of the object. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPropertyName](PropertyChangeEvent.md))`()` Gets the programmatic name of the property that was changed. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPropagationId](PropertyChangeEvent.md))`(`propagationId:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Sets the propagationId object for the event. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](PropertyChangeEvent.md))`()` Returns a string representation of the object. |
 | --- | --- |
 
 | Inherited functions ||
 |---|---|
-| From class [EventObject](../java/util/EventObject.md) |-----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getSource](../java/util/EventObject.md))`()` The object on which the Event initially occurred. <br /> | ||
+| From class [EventObject](../java.util/EventObject.md) |-----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getSource](../java.util/EventObject.md))`()` The object on which the Event initially occurred. <br /> | ||
 
 | Inherited properties ||
 |---|---|
-| From class [EventObject](../java/util/EventObject.md) |-----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [source](../java/util/EventObject.md) The object on which the Event initially occurred. <br /> | ||
+| From class [EventObject](../java.util/EventObject.md) |-----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [source](../java.util/EventObject.md) The object on which the Event initially occurred. <br /> | ||
 
 ## Public constructors
 

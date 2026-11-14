@@ -5,7 +5,7 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 
 # ScriptIntrinsicYuvToRGB
 
-Kotlin| [Java](../android/renderscript/ScriptIntrinsicYuvToRGB.md) 
+Kotlin| [Java](ScriptIntrinsicYuvToRGB.md) 
 | --- | --- |
 
 ```
@@ -14,11 +14,11 @@ class ScriptIntrinsicYuvToRGB : ScriptIntrinsic
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.renderscript.BaseObj](../android/renderscript/BaseObj.md) ||||
-| | ↳ | [android.renderscript.Script](../android/renderscript/Script.md) |||
-| | | ↳ | [android.renderscript.ScriptIntrinsic](../android/renderscript/ScriptIntrinsic.md) ||
+| ↳ | [android.renderscript.BaseObj](BaseObj.md) ||||
+| | ↳ | [android.renderscript.Script](Script.md) |||
+| | | ↳ | [android.renderscript.ScriptIntrinsic](ScriptIntrinsic.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.renderscript.ScriptIntrinsicYuvToRGB](../android/renderscript/ScriptIntrinsicYuvToRGB.md) |
+| | | | ↳ | [android.renderscript.ScriptIntrinsicYuvToRGB](ScriptIntrinsicYuvToRGB.md) |
 
 | **This class was deprecated in API level 31.**
 |
@@ -30,12 +30,12 @@ Intrinsic for converting an Android YUV buffer to RGB. The input allocation shou
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [ScriptIntrinsicYuvToRGB](../android/renderscript/ScriptIntrinsicYuvToRGB.md)! | [create](../android/renderscript/ScriptIntrinsicYuvToRGB.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`, `e:` ` [Element](../android/renderscript/Element.md)!`)` Create an intrinsic for converting YUV to RGB. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](../android/renderscript/ScriptIntrinsicYuvToRGB.md))`(`aout:` ` [Allocation](../android/renderscript/Allocation.md)!`)` Convert the image to RGB. |
-| [Script.FieldID](../android/renderscript/Script.FieldID.md)! | [getFieldID_Input](../android/renderscript/ScriptIntrinsicYuvToRGB.md))`()` Get a FieldID for the input field of this intrinsic. |
+| static [ScriptIntrinsicYuvToRGB](ScriptIntrinsicYuvToRGB.md)! | [create](ScriptIntrinsicYuvToRGB.md))`(`rs:` ` [RenderScript](RenderScript.md)!`, `e:` ` [Element](Element.md)!`)` Create an intrinsic for converting YUV to RGB. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](ScriptIntrinsicYuvToRGB.md))`(`aout:` ` [Allocation](Allocation.md)!`)` Convert the image to RGB. |
+| [Script.FieldID](../android/renderscript/Script.FieldID.md)! | [getFieldID_Input](ScriptIntrinsicYuvToRGB.md))`()` Get a FieldID for the input field of this intrinsic. |
 | --- | --- |
-| [Script.KernelID](../android/renderscript/Script.KernelID.md)! | [getKernelID](../android/renderscript/ScriptIntrinsicYuvToRGB.md))`()` Get a KernelID for this intrinsic kernel. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInput](../android/renderscript/ScriptIntrinsicYuvToRGB.md))`(`ain:` ` [Allocation](../android/renderscript/Allocation.md)!`)` Set the input yuv allocation, must be [Element.U8](../android/renderscript/Element.md)). |
+| [Script.KernelID](../android/renderscript/Script.KernelID.md)! | [getKernelID](ScriptIntrinsicYuvToRGB.md))`()` Get a KernelID for this intrinsic kernel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInput](ScriptIntrinsicYuvToRGB.md))`(`ain:` ` [Allocation](Allocation.md)!`)` Set the input yuv allocation, must be [Element.U8](Element.md)). |
 
 ## Public methods
 
@@ -52,16 +52,16 @@ static fun create(
 
 **Deprecated:** *Deprecated in Java.*
 
-Create an intrinsic for converting YUV to RGB. Supported elements types are [Element.U8_4](../android/renderscript/Element.md))
+Create an intrinsic for converting YUV to RGB. Supported elements types are [Element.U8_4](Element.md))
 
 | Parameters ||
 |------|----------------------------------------------------------------------------------------------------------------------------|
-| `rs` | [RenderScript](../android/renderscript/RenderScript.md)!:The RenderScript context |
-| `e` | [Element](../android/renderscript/Element.md)!:Element type for output |
+| `rs` | [RenderScript](RenderScript.md)!:The RenderScript context |
+| `e` | [Element](Element.md)!:Element type for output |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------|-------------------------|
-| [ScriptIntrinsicYuvToRGB](../android/renderscript/ScriptIntrinsicYuvToRGB.md)! | ScriptIntrinsicYuvToRGB |
+| [ScriptIntrinsicYuvToRGB](ScriptIntrinsicYuvToRGB.md)! | ScriptIntrinsicYuvToRGB |
 
 ### forEach
 
@@ -77,7 +77,7 @@ Convert the image to RGB.
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| `aout` | [Allocation](../android/renderscript/Allocation.md)!:Output allocation. Must match creation element type. |
+| `aout` | [Allocation](Allocation.md)!:Output allocation. Must match creation element type. |
 
 ### getFieldID_Input
 
@@ -121,8 +121,8 @@ fun setInput(ain: Allocation!): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Set the input yuv allocation, must be [Element.U8](../android/renderscript/Element.md)).
+Set the input yuv allocation, must be [Element.U8](Element.md)).
 
 | Parameters ||
 |-------|---------------------------------------------------------------------------------------------------------------------|
-| `ain` | [Allocation](../android/renderscript/Allocation.md)!:The input allocation. |
+| `ain` | [Allocation](Allocation.md)!:The input allocation. |

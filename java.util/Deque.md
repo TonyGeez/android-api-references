@@ -6,12 +6,12 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 interface Deque<E : Any!> : Queue<E>, SequencedCollection<E>
 ```
 
-| [java.util.Deque](../java/util/Deque.md) |
+| [java.util.Deque](Deque.md) |
 
-| Known Direct Subclasses [ArrayDeque](../java/util/ArrayDeque.md), [BlockingDeque](../java/util/concurrent/BlockingDeque.md), [ConcurrentLinkedDeque](../java/util/concurrent/ConcurrentLinkedDeque.md), [LinkedList](../java/util/LinkedList.md) |---|---| | [ArrayDeque](../java/util/ArrayDeque.md) | Resizable-array implementation of the `https://developer.android.com/reference/kotlin/java/util/Deque#` interface. | | [BlockingDeque](../java/util/concurrent/BlockingDeque.md) | A `https://developer.android.com/reference/kotlin/java/util/Deque#` that additionally supports blocking operations that wait for the deque to become non-empty when retrieving an element, and wait for space to become available in the deque when storing an element. | | [ConcurrentLinkedDeque](../java/util/concurrent/ConcurrentLinkedDeque.md) | An unbounded concurrent [deque](../java/util/Deque.md) based on linked nodes. | | [LinkedList](../java/util/LinkedList.md) | Doubly-linked list implementation of the `List` and `Deque` interfaces. | |
+| Known Direct Subclasses [ArrayDeque](ArrayDeque.md), [BlockingDeque](../java.util.concurrent/BlockingDeque.md), [ConcurrentLinkedDeque](../java.util.concurrent/ConcurrentLinkedDeque.md), [LinkedList](LinkedList.md) |---|---| | [ArrayDeque](ArrayDeque.md) | Resizable-array implementation of the `https://developer.android.com/reference/kotlin/java/util/Deque#` interface. | | [BlockingDeque](../java.util.concurrent/BlockingDeque.md) | A `https://developer.android.com/reference/kotlin/java/util/Deque#` that additionally supports blocking operations that wait for the deque to become non-empty when retrieving an element, and wait for space to become available in the deque when storing an element. | | [ConcurrentLinkedDeque](../java.util.concurrent/ConcurrentLinkedDeque.md) | An unbounded concurrent [deque](Deque.md) based on linked nodes. | | [LinkedList](LinkedList.md) | Doubly-linked list implementation of the `List` and `Deque` interfaces. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [LinkedBlockingDeque](../java/util/concurrent/LinkedBlockingDeque.md) |---|---| | [LinkedBlockingDeque](../java/util/concurrent/LinkedBlockingDeque.md) | An optionally-bounded [blocking deque](../java/util/concurrent/BlockingDeque.md) based on linked nodes. | |
+| Known Indirect Subclasses [LinkedBlockingDeque](../java.util.concurrent/LinkedBlockingDeque.md) |---|---| | [LinkedBlockingDeque](../java.util.concurrent/LinkedBlockingDeque.md) | An optionally-bounded [blocking deque](../java.util.concurrent/BlockingDeque.md) based on linked nodes. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 A linear collection that supports element insertion and removal at both ends. The name *deque* is short for "double ended queue" and is usually pronounced "deck". Most `Deque` implementations place no fixed limits on the number of elements they may contain, but this interface supports capacity-restricted deques as well as those with no fixed size limit.
@@ -96,7 +96,7 @@ While `Deque` implementations are not strictly required to prohibit the insertio
 | abstract E | `https://developer.android.com/reference/kotlin/java/util/Deque#removeLast()()` Retrieves and removes the last element of this deque. |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/util/Deque#removeLastOccurrence(kotlin.Any)(o: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Removes the last occurrence of the specified element from this deque. |
 | --- | --- |
-| open [Deque](../java/util/Deque.md)\<E\> | `https://developer.android.com/reference/kotlin/java/util/Deque#reversed()()` Returns a reverse-ordered [view](../java/util/Collection.md) of this collection. |
+| open [Deque](Deque.md)\<E\> | `https://developer.android.com/reference/kotlin/java/util/Deque#reversed()()` Returns a reverse-ordered [view](Collection.md) of this collection. |
 
 | Properties ||
 |---|---|
@@ -667,7 +667,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 open fun reversed(): Deque<E>
 ```
 
-Returns a reverse-ordered [view](../java/util/Collection.md) of this collection. The encounter order of elements in the returned view is the inverse of the encounter order of elements in this collection. The reverse ordering affects all order-sensitive operations, including those on the view collections of the returned view. If the collection implementation permits modifications to this view, the modifications "write through" to the underlying collection. Changes to the underlying collection might or might not be visible in this reversed view, depending upon the implementation.
+Returns a reverse-ordered [view](Collection.md) of this collection. The encounter order of elements in the returned view is the inverse of the encounter order of elements in this collection. The reverse ordering affects all order-sensitive operations, including those on the view collections of the returned view. If the collection implementation permits modifications to this view, the modifications "write through" to the underlying collection. Changes to the underlying collection might or might not be visible in this reversed view, depending upon the implementation.
 
 | Return ||
 |---|---|

@@ -4,7 +4,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 
 # RecoverySystem
 
-Kotlin| [Java](../android/os/RecoverySystem.md) 
+Kotlin| [Java](RecoverySystem.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class RecoverySystem
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.os.RecoverySystem](../android/os/RecoverySystem.md) |
+| ↳ | [android.os.RecoverySystem](RecoverySystem.md) |
 
 RecoverySystem contains methods for interacting with the Android recovery system (the separate partition that can be used to install system updates, wipe user data, etc.)
 
@@ -25,11 +25,11 @@ RecoverySystem contains methods for interacting with the Android recovery system
 
 | Public methods ||
 |----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [installPackage](../android/os/RecoverySystem.md))`(`context:` ` [Context](../android/content/Context.md)!`, `packageFile:` ` [File](../java/io/File.md)!`)` Reboots the device in order to install the given update package. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [rebootWipeCache](../android/os/RecoverySystem.md))`(`context:` ` [Context](../android/content/Context.md)!`)` Reboot into the recovery system to wipe the /cache partition. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [rebootWipeUserData](../android/os/RecoverySystem.md))`(`context:` ` [Context](../android/content/Context.md)!`)` Reboots the device and wipes the user data and cache partitions. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [installPackage](RecoverySystem.md))`(`context:` ` [Context](../android.content/Context.md)!`, `packageFile:` ` [File](../java.io/File.md)!`)` Reboots the device in order to install the given update package. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [rebootWipeCache](RecoverySystem.md))`(`context:` ` [Context](../android.content/Context.md)!`)` Reboot into the recovery system to wipe the /cache partition. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [rebootWipeUserData](RecoverySystem.md))`(`context:` ` [Context](../android.content/Context.md)!`)` Reboots the device and wipes the user data and cache partitions. |
 | --- | --- |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [verifyPackage](../android/os/RecoverySystem.md))`(`packageFile:` ` [File](../java/io/File.md)!`, `listener:` ` [RecoverySystem.ProgressListener](../android/os/RecoverySystem.ProgressListener.md)!`, `deviceCertsZipFile:` ` [File](../java/io/File.md)!`)` Verify the cryptographic signature of a system update package before installing it. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [verifyPackage](RecoverySystem.md))`(`packageFile:` ` [File](../java.io/File.md)!`, `listener:` ` [RecoverySystem.ProgressListener](../android/os/RecoverySystem.ProgressListener.md)!`, `deviceCertsZipFile:` ` [File](../java.io/File.md)!`)` Verify the cryptographic signature of a system update package before installing it. |
 
 ## Public methods
 
@@ -49,8 +49,8 @@ Requires android.Manifest.permission.RECOVERY
 
 | Parameters ||
 |---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](../android/content/Context.md)!:the Context to use |
-| `packageFile` | [File](../java/io/File.md)!:the update package to install. Must be on a partition mountable by recovery. (The set of partitions known to recovery may vary from device to device. Generally, /cache and /data are safe.) |
+| `context` | [Context](../android.content/Context.md)!:the Context to use |
+| `packageFile` | [File](../java.io/File.md)!:the update package to install. Must be on a partition mountable by recovery. (The set of partitions known to recovery may vary from device to device. Generally, /cache and /data are safe.) |
 
 | Exceptions ||
 |-----------------------|----------------------------------------------------------------------------|
@@ -82,7 +82,7 @@ Reboots the device and wipes the user data and cache partitions. This is sometim
 
 | Parameters ||
 |-----------|-------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](../android/content/Context.md)!:the Context to use |
+| `context` | [Context](../android.content/Context.md)!:the Context to use |
 
 | Exceptions ||
 |-------------------------------|----------------------------------------------------------------------------|
@@ -105,9 +105,9 @@ Verify the cryptographic signature of a system update package before installing 
 
 | Parameters ||
 |----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `packageFile` | [File](../java/io/File.md)!:the package to be verified |
+| `packageFile` | [File](../java.io/File.md)!:the package to be verified |
 | `listener` | [RecoverySystem.ProgressListener](../android/os/RecoverySystem.ProgressListener.md)!:an object to receive periodic progress updates as verification proceeds. May be null. |
-| `deviceCertsZipFile` | [File](../java/io/File.md)!:the zip file of certificates whose public keys we will accept. Verification succeeds if the package is signed by the private key corresponding to any public key in this file. May be null to use the system default file (currently "/system/etc/security/otacerts.zip"). |
+| `deviceCertsZipFile` | [File](../java.io/File.md)!:the zip file of certificates whose public keys we will accept. Verification succeeds if the package is signed by the private key corresponding to any public key in this file. May be null to use the system default file (currently "/system/etc/security/otacerts.zip"). |
 | --- | --- |
 
 | Exceptions ||

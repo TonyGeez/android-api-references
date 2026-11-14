@@ -4,7 +4,7 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 
 # EapInfo
 
-Kotlin| [Java](../android/net/eap/EapInfo.md) 
+Kotlin| [Java](EapInfo.md) 
 | --- | --- |
 
 ```
@@ -13,9 +13,9 @@ abstract class EapInfo
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.eap.EapInfo](../android/net/eap/EapInfo.md) |
+| ↳ | [android.net.eap.EapInfo](EapInfo.md) |
 
-| Known Direct Subclasses [EapAkaInfo](../android/net/eap/EapAkaInfo.md) |-----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------| | [EapAkaInfo](../android/net/eap/EapAkaInfo.md) | EapAkaInfo represents data provided by the server during EAP AKA authentication | |
+| Known Direct Subclasses [EapAkaInfo](EapAkaInfo.md) |-----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------| | [EapAkaInfo](EapAkaInfo.md) | EapAkaInfo represents data provided by the server during EAP AKA authentication | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 EapInfo represents data provided by the server during EAP authentication
@@ -24,7 +24,7 @@ EapInfo represents data provided by the server during EAP authentication
 
 | Public methods ||
 |----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEapMethodType](../android/net/eap/EapInfo.md))`()` Retrieves EAP method type |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEapMethodType](EapInfo.md))`()` Retrieves EAP method type |
 
 ## Public methods
 

@@ -5,7 +5,7 @@ Also in [S Extensions 18](https://developer.android.com/sdkExtensions)
 
 # PdfPageObjectType
 
-Kotlin| [Java](../android/graphics/pdf/component/PdfPageObjectType.md) 
+Kotlin| [Java](PdfPageObjectType.md) 
 | --- | --- |
 
 ```
@@ -14,7 +14,7 @@ class PdfPageObjectType
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.graphics.pdf.component.PdfPageObjectType](../android/graphics/pdf/component/PdfPageObjectType.md) |
+| ↳ | [android.graphics.pdf.component.PdfPageObjectType](PdfPageObjectType.md) |
 
 This class holds the set of constants representing the types of a PDF page objects.
 
@@ -22,15 +22,15 @@ This class holds the set of constants representing the types of a PDF page objec
 
 | Constants ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IMAGE](../android/graphics/pdf/component/PdfPageObjectType.md) Represents an image page object |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PATH](../android/graphics/pdf/component/PdfPageObjectType.md) Represents a path page object |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TEXT](../android/graphics/pdf/component/PdfPageObjectType.md) Represents a text page object |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IMAGE](PdfPageObjectType.md) Represents an image page object |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PATH](PdfPageObjectType.md) Represents a path page object |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TEXT](PdfPageObjectType.md) Represents a text page object |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNKNOWN](../android/graphics/pdf/component/PdfPageObjectType.md) Represents the type of page object that cannot be determined |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNKNOWN](PdfPageObjectType.md) Represents the type of page object that cannot be determined |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isValidType](../android/graphics/pdf/component/PdfPageObjectType.md))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Checks if the given type is a valid PDF page object type. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isValidType](PdfPageObjectType.md))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Checks if the given type is a valid PDF page object type. |
 
 ## Constants
 

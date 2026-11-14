@@ -9,7 +9,7 @@ open class SurfacePackageToken
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.adservices.ondevicepersonalization.SurfacePackageToken](../android/adservices/ondevicepersonalization/SurfacePackageToken.md) |
+| ↳ | [android.adservices.ondevicepersonalization.SurfacePackageToken](SurfacePackageToken.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 37.**

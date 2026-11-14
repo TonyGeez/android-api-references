@@ -13,7 +13,7 @@ interface HighContrastTextStateChangeListener
 
 | [android.view.accessibility.AccessibilityManager.HighContrastTextStateChangeListener](../android/view/accessibility/AccessibilityManager.HighContrastTextStateChangeListener.md) |
 
-Listener for the system high contrast text state. To listen for changes to the high contrast text state on the device, implement this interface and register it with the system by calling [addHighContrastTextStateChangeListener](../android/view/accessibility/AccessibilityManager.md)).
+Listener for the system high contrast text state. To listen for changes to the high contrast text state on the device, implement this interface and register it with the system by calling [addHighContrastTextStateChangeListener](AccessibilityManager.md)).
 
 ## Summary
 

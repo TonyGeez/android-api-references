@@ -19,7 +19,7 @@ The OnEnableStatusChangeListener interface defines a method called by the AudioE
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onEnableStatusChange](../android/media/audiofx/AudioEffect.OnEnableStatusChangeListener.md))`(`effect:` ` [AudioEffect](../android/media/audiofx/AudioEffect.md)!`, `enabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Called on the listener to notify it that the effect engine has been enabled or disabled. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onEnableStatusChange](../android/media/audiofx/AudioEffect.OnEnableStatusChangeListener.md))`(`effect:` ` [AudioEffect](AudioEffect.md)!`, `enabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Called on the listener to notify it that the effect engine has been enabled or disabled. |
 
 ## Public methods
 
@@ -38,5 +38,5 @@ Called on the listener to notify it that the effect engine has been enabled or d
 
 | Parameters ||
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| `effect` | [AudioEffect](../android/media/audiofx/AudioEffect.md)!:the effect on which the interface is registered. |
+| `effect` | [AudioEffect](AudioEffect.md)!:the effect on which the interface is registered. |
 | `enabled` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):new effect state. |

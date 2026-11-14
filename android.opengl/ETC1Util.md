@@ -4,7 +4,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 
 # ETC1Util
 
-Kotlin| [Java](../android/opengl/ETC1Util.md) 
+Kotlin| [Java](ETC1Util.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class ETC1Util
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.opengl.ETC1Util](../android/opengl/ETC1Util.md) |
+| ↳ | [android.opengl.ETC1Util](ETC1Util.md) |
 
 Utility methods for using ETC1 compressed textures.
 
@@ -25,17 +25,17 @@ Utility methods for using ETC1 compressed textures.
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------|---|
-| [ETC1Util](../android/opengl/ETC1Util.md))`()` <br /> |
+| [ETC1Util](ETC1Util.md))`()` <br /> |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [ETC1Util.ETC1Texture](../android/opengl/ETC1Util.ETC1Texture.md)! | [compressTexture](../android/opengl/ETC1Util.md))`(`input:` ` [Buffer](../java/nio/Buffer.md)!`, `width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `height:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pixelSize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `stride:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Helper function that compresses an image into an ETC1Texture. |
-| openstatic [ETC1Util.ETC1Texture](../android/opengl/ETC1Util.ETC1Texture.md)! | [createTexture](../android/opengl/ETC1Util.md))`(`input:` ` [InputStream](../java/io/InputStream.md)!`)` Create a new ETC1Texture from an input stream containing a PKM formatted compressed texture. |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isETC1Supported](../android/opengl/ETC1Util.md))`()` Check if ETC1 texture compression is supported by the active OpenGL ES context. |
+| openstatic [ETC1Util.ETC1Texture](../android/opengl/ETC1Util.ETC1Texture.md)! | [compressTexture](ETC1Util.md))`(`input:` ` [Buffer](../java.nio/Buffer.md)!`, `width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `height:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pixelSize:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `stride:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Helper function that compresses an image into an ETC1Texture. |
+| openstatic [ETC1Util.ETC1Texture](../android/opengl/ETC1Util.ETC1Texture.md)! | [createTexture](ETC1Util.md))`(`input:` ` [InputStream](../java.io/InputStream.md)!`)` Create a new ETC1Texture from an input stream containing a PKM formatted compressed texture. |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isETC1Supported](ETC1Util.md))`()` Check if ETC1 texture compression is supported by the active OpenGL ES context. |
 | --- | --- |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [loadTexture](../android/opengl/ETC1Util.md))`(`target:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `level:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `border:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `fallbackFormat:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `fallbackType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `texture:` ` [ETC1Util.ETC1Texture](../android/opengl/ETC1Util.ETC1Texture.md)!`)` Convenience method to load an ETC1 texture whether or not the active OpenGL context supports the ETC1 texture compression format. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [loadTexture](../android/opengl/ETC1Util.md))`(`target:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `level:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `border:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `fallbackFormat:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `fallbackType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `input:` ` [InputStream](../java/io/InputStream.md)!`)` Convenience method to load an ETC1 texture whether or not the active OpenGL context supports the ETC1 texture compression format. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeTexture](../android/opengl/ETC1Util.md))`(`texture:` ` [ETC1Util.ETC1Texture](../android/opengl/ETC1Util.ETC1Texture.md)!`, `output:` ` [OutputStream](../java/io/OutputStream.md)!`)` Helper function that writes an ETC1Texture to an output stream formatted as a PKM file. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [loadTexture](ETC1Util.md))`(`target:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `level:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `border:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `fallbackFormat:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `fallbackType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `texture:` ` [ETC1Util.ETC1Texture](../android/opengl/ETC1Util.ETC1Texture.md)!`)` Convenience method to load an ETC1 texture whether or not the active OpenGL context supports the ETC1 texture compression format. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [loadTexture](ETC1Util.md))`(`target:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `level:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `border:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `fallbackFormat:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `fallbackType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `input:` ` [InputStream](../java.io/InputStream.md)!`)` Convenience method to load an ETC1 texture whether or not the active OpenGL context supports the ETC1 texture compression format. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeTexture](ETC1Util.md))`(`texture:` ` [ETC1Util.ETC1Texture](../android/opengl/ETC1Util.ETC1Texture.md)!`, `output:` ` [OutputStream](../java.io/OutputStream.md)!`)` Helper function that writes an ETC1Texture to an output stream formatted as a PKM file. |
 | --- | --- |
 
 ## Public constructors
@@ -66,7 +66,7 @@ Helper function that compresses an image into an ETC1Texture.
 
 | Parameters ||
 |-------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| `input` | [Buffer](../java/nio/Buffer.md)!:a native order direct buffer containing the image data |
+| `input` | [Buffer](../java.nio/Buffer.md)!:a native order direct buffer containing the image data |
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the width of the image in pixels |
 | `height` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the height of the image in pixels |
 | --- | --- |
@@ -89,7 +89,7 @@ Create a new ETC1Texture from an input stream containing a PKM formatted compres
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `input` | [InputStream](../java/io/InputStream.md)!:an input stream containing a PKM formatted compressed texture. |
+| `input` | [InputStream](../java.io/InputStream.md)!:an input stream containing a PKM formatted compressed texture. |
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------|--------------------------------------------|
@@ -166,7 +166,7 @@ Convenience method to load an ETC1 texture whether or not the active OpenGL cont
 | --- | --- |
 | `fallbackFormat` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the format to use if ETC1 texture compression is not supported. Must be GL_RGB. |
 | `fallbackType` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the type to use if ETC1 texture compression is not supported. Can be either GL_UNSIGNED_SHORT_5_6_5, which implies 16-bits-per-pixel, or GL_UNSIGNED_BYTE, which implies 24-bits-per-pixel. |
-| `input` | [InputStream](../java/io/InputStream.md)!:the input stream containing an ETC1 texture in PKM format. |
+| `input` | [InputStream](../java.io/InputStream.md)!:the input stream containing an ETC1 texture in PKM format. |
 | --- | --- |
 
 | Exceptions ||
@@ -189,7 +189,7 @@ Helper function that writes an ETC1Texture to an output stream formatted as a PK
 | Parameters ||
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------|
 | `texture` | [ETC1Util.ETC1Texture](../android/opengl/ETC1Util.ETC1Texture.md)!:the input texture. |
-| `output` | [OutputStream](../java/io/OutputStream.md)!:the stream to write the formatted texture data to. |
+| `output` | [OutputStream](../java.io/OutputStream.md)!:the stream to write the formatted texture data to. |
 
 | Exceptions ||
 |-----------------------|---|

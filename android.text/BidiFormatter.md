@@ -4,7 +4,7 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 
 # BidiFormatter
 
-Kotlin| [Java](../android/text/BidiFormatter.md) 
+Kotlin| [Java](BidiFormatter.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class BidiFormatter
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.text.BidiFormatter](../android/text/BidiFormatter.md) |
+| ↳ | [android.text.BidiFormatter](BidiFormatter.md) |
 
 Utility class for formatting text for display in a potentially opposite-directionality context without garbling. The directionality of the context is set at formatter creation and the directionality of the text can be either estimated or passed in when known.
 
@@ -39,25 +39,25 @@ Providing these wrapping services is the basic purpose of the bidi formatter.
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [BidiFormatter](../android/text/BidiFormatter.md)! | [getInstance](../android/text/BidiFormatter.md))`()` Factory for creating an instance of BidiFormatter for the default locale directionality. |
-| static [BidiFormatter](../android/text/BidiFormatter.md)! | [getInstance](../android/text/BidiFormatter.md))`(`rtlContext:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Factory for creating an instance of BidiFormatter given the context directionality. |
-| static [BidiFormatter](../android/text/BidiFormatter.md)! | [getInstance](../android/text/BidiFormatter.md))`(`locale:` ` [Locale](../java/util/Locale.md)!`)` Factory for creating an instance of BidiFormatter given the context locale. |
+| static [BidiFormatter](BidiFormatter.md)! | [getInstance](BidiFormatter.md))`()` Factory for creating an instance of BidiFormatter for the default locale directionality. |
+| static [BidiFormatter](BidiFormatter.md)! | [getInstance](BidiFormatter.md))`(`rtlContext:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Factory for creating an instance of BidiFormatter given the context directionality. |
+| static [BidiFormatter](BidiFormatter.md)! | [getInstance](BidiFormatter.md))`(`locale:` ` [Locale](../java.util/Locale.md)!`)` Factory for creating an instance of BidiFormatter given the context locale. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getStereoReset](../android/text/BidiFormatter.md))`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRtl](../android/text/BidiFormatter.md))`(`str:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Operates like [isRtl(java.lang.String)](../android/text/BidiFormatter.md)), but takes a CharSequence instead of a string |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRtl](../android/text/BidiFormatter.md))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Estimates the directionality of a string using the default text direction heuristic. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getStereoReset](BidiFormatter.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRtl](BidiFormatter.md))`(`str:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Operates like [isRtl(java.lang.String)](BidiFormatter.md)), but takes a CharSequence instead of a string |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRtl](BidiFormatter.md))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Estimates the directionality of a string using the default text direction heuristic. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRtlContext](../android/text/BidiFormatter.md))`()` <br /> |
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [unicodeWrap](../android/text/BidiFormatter.md))`(`str:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Operates like [unicodeWrap(java.lang.CharSequence,android.text.TextDirectionHeuristic,boolean)](../android/text/BidiFormatter.md)), but uses the formatter's default direction estimation algorithm and assumes`isolate`is true. |
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [unicodeWrap](../android/text/BidiFormatter.md))`(`str:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `heuristic:` ` [TextDirectionHeuristic](../android/text/TextDirectionHeuristic.md)!`)` Operates like [unicodeWrap(java.lang.CharSequence,android.text.TextDirectionHeuristic,boolean)](../android/text/BidiFormatter.md)), but assumes`isolate`is true. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRtlContext](BidiFormatter.md))`()` <br /> |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [unicodeWrap](BidiFormatter.md))`(`str:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Operates like [unicodeWrap(java.lang.CharSequence,android.text.TextDirectionHeuristic,boolean)](BidiFormatter.md)), but uses the formatter's default direction estimation algorithm and assumes`isolate`is true. |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [unicodeWrap](BidiFormatter.md))`(`str:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `heuristic:` ` [TextDirectionHeuristic](TextDirectionHeuristic.md)!`)` Operates like [unicodeWrap(java.lang.CharSequence,android.text.TextDirectionHeuristic,boolean)](BidiFormatter.md)), but assumes`isolate`is true. |
 | --- | --- |
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | [unicodeWrap](../android/text/BidiFormatter.md))`(`str:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)?`, `heuristic:` ` [TextDirectionHeuristic](../android/text/TextDirectionHeuristic.md)!`, `isolate:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Operates like [unicodeWrap(java.lang.String,android.text.TextDirectionHeuristic,boolean)](../android/text/BidiFormatter.md)), but takes a CharSequence instead of a string |
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [unicodeWrap](../android/text/BidiFormatter.md))`(`str:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `isolate:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Operates like [unicodeWrap(java.lang.CharSequence,android.text.TextDirectionHeuristic,boolean)](../android/text/BidiFormatter.md)), but uses the formatter's default direction estimation algorithm. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [unicodeWrap](../android/text/BidiFormatter.md))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Operates like [unicodeWrap(java.lang.String,android.text.TextDirectionHeuristic,boolean)](../android/text/BidiFormatter.md)), but uses the formatter's default direction estimation algorithm and assumes`isolate`is true. |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | [unicodeWrap](BidiFormatter.md))`(`str:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)?`, `heuristic:` ` [TextDirectionHeuristic](TextDirectionHeuristic.md)!`, `isolate:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Operates like [unicodeWrap(java.lang.String,android.text.TextDirectionHeuristic,boolean)](BidiFormatter.md)), but takes a CharSequence instead of a string |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [unicodeWrap](BidiFormatter.md))`(`str:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `isolate:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Operates like [unicodeWrap(java.lang.CharSequence,android.text.TextDirectionHeuristic,boolean)](BidiFormatter.md)), but uses the formatter's default direction estimation algorithm. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [unicodeWrap](BidiFormatter.md))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Operates like [unicodeWrap(java.lang.String,android.text.TextDirectionHeuristic,boolean)](BidiFormatter.md)), but uses the formatter's default direction estimation algorithm and assumes`isolate`is true. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [unicodeWrap](../android/text/BidiFormatter.md))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `heuristic:` ` [TextDirectionHeuristic](../android/text/TextDirectionHeuristic.md)!`)` Operates like [unicodeWrap(java.lang.String,android.text.TextDirectionHeuristic,boolean)](../android/text/BidiFormatter.md)), but assumes`isolate`is true. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [unicodeWrap](../android/text/BidiFormatter.md))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `heuristic:` ` [TextDirectionHeuristic](../android/text/TextDirectionHeuristic.md)!`, `isolate:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Formats a string of given directionality for use in plain-text output of the context directionality, so an opposite-directionality string is neither garbled nor garbles its surroundings. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [unicodeWrap](../android/text/BidiFormatter.md))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `isolate:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Operates like [unicodeWrap(java.lang.String,android.text.TextDirectionHeuristic,boolean)](../android/text/BidiFormatter.md)), but uses the formatter's default direction estimation algorithm. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [unicodeWrap](BidiFormatter.md))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `heuristic:` ` [TextDirectionHeuristic](TextDirectionHeuristic.md)!`)` Operates like [unicodeWrap(java.lang.String,android.text.TextDirectionHeuristic,boolean)](BidiFormatter.md)), but assumes`isolate`is true. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [unicodeWrap](BidiFormatter.md))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `heuristic:` ` [TextDirectionHeuristic](TextDirectionHeuristic.md)!`, `isolate:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Formats a string of given directionality for use in plain-text output of the context directionality, so an opposite-directionality string is neither garbled nor garbles its surroundings. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [unicodeWrap](BidiFormatter.md))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `isolate:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Operates like [unicodeWrap(java.lang.String,android.text.TextDirectionHeuristic,boolean)](BidiFormatter.md)), but uses the formatter's default direction estimation algorithm. |
 | --- | --- |
 
 ## Public methods
@@ -98,7 +98,7 @@ Factory for creating an instance of BidiFormatter given the context locale. This
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------|
-| `locale` | [Locale](../java/util/Locale.md)!:The context locale. |
+| `locale` | [Locale](../java.util/Locale.md)!:The context locale. |
 
 ### getStereoReset
 
@@ -120,7 +120,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 fun isRtl(str: CharSequence!): Boolean
 ```
 
-Operates like [isRtl(java.lang.String)](../android/text/BidiFormatter.md)), but takes a CharSequence instead of a string
+Operates like [isRtl(java.lang.String)](BidiFormatter.md)), but takes a CharSequence instead of a string
 
 | Parameters ||
 |-------|------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -168,7 +168,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 fun unicodeWrap(str: CharSequence!): CharSequence!
 ```
 
-Operates like [unicodeWrap(java.lang.CharSequence,android.text.TextDirectionHeuristic,boolean)](../android/text/BidiFormatter.md)), but uses the formatter's default direction estimation algorithm and assumes`isolate`is true.
+Operates like [unicodeWrap(java.lang.CharSequence,android.text.TextDirectionHeuristic,boolean)](BidiFormatter.md)), but uses the formatter's default direction estimation algorithm and assumes`isolate`is true.
 
 | Parameters ||
 |-------|------------------------------------------------------------------------------------------------------------------------|
@@ -189,12 +189,12 @@ fun unicodeWrap(
 ): CharSequence!
 ```
 
-Operates like [unicodeWrap(java.lang.CharSequence,android.text.TextDirectionHeuristic,boolean)](../android/text/BidiFormatter.md)), but assumes`isolate`is true.
+Operates like [unicodeWrap(java.lang.CharSequence,android.text.TextDirectionHeuristic,boolean)](BidiFormatter.md)), but assumes`isolate`is true.
 
 | Parameters ||
 |-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `str` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!:The input CharSequence. |
-| `heuristic` | [TextDirectionHeuristic](../android/text/TextDirectionHeuristic.md)!:The algorithm to be used to estimate the CharSequence's overall direction. See [TextDirectionHeuristics](../android/text/TextDirectionHeuristics.md) for pre-defined heuristics. |
+| `heuristic` | [TextDirectionHeuristic](TextDirectionHeuristic.md)!:The algorithm to be used to estimate the CharSequence's overall direction. See [TextDirectionHeuristics](TextDirectionHeuristics.md) for pre-defined heuristics. |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|---------------------------------------------------------|
@@ -212,12 +212,12 @@ fun unicodeWrap(
 ): CharSequence?
 ```
 
-Operates like [unicodeWrap(java.lang.String,android.text.TextDirectionHeuristic,boolean)](../android/text/BidiFormatter.md)), but takes a CharSequence instead of a string
+Operates like [unicodeWrap(java.lang.String,android.text.TextDirectionHeuristic,boolean)](BidiFormatter.md)), but takes a CharSequence instead of a string
 
 | Parameters ||
 |-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `str` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)?:The input CharSequence. This value may be`null`. |
-| `heuristic` | [TextDirectionHeuristic](../android/text/TextDirectionHeuristic.md)!:The algorithm to be used to estimate the CharSequence's overall direction. See [TextDirectionHeuristics](../android/text/TextDirectionHeuristics.md) for pre-defined heuristics. |
+| `heuristic` | [TextDirectionHeuristic](TextDirectionHeuristic.md)!:The algorithm to be used to estimate the CharSequence's overall direction. See [TextDirectionHeuristics](TextDirectionHeuristics.md) for pre-defined heuristics. |
 | `isolate` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):Whether to directionally isolate the CharSequence to prevent it from garbling the content around it |
 | --- | --- |
 
@@ -236,7 +236,7 @@ fun unicodeWrap(
 ): CharSequence!
 ```
 
-Operates like [unicodeWrap(java.lang.CharSequence,android.text.TextDirectionHeuristic,boolean)](../android/text/BidiFormatter.md)), but uses the formatter's default direction estimation algorithm.
+Operates like [unicodeWrap(java.lang.CharSequence,android.text.TextDirectionHeuristic,boolean)](BidiFormatter.md)), but uses the formatter's default direction estimation algorithm.
 
 | Parameters ||
 |-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -255,7 +255,7 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 fun unicodeWrap(str: String!): String!
 ```
 
-Operates like [unicodeWrap(java.lang.String,android.text.TextDirectionHeuristic,boolean)](../android/text/BidiFormatter.md)), but uses the formatter's default direction estimation algorithm and assumes`isolate`is true.
+Operates like [unicodeWrap(java.lang.String,android.text.TextDirectionHeuristic,boolean)](BidiFormatter.md)), but uses the formatter's default direction estimation algorithm and assumes`isolate`is true.
 
 | Parameters ||
 |-------|-----------------------------------------------------------------------------------------------------|
@@ -276,12 +276,12 @@ fun unicodeWrap(
 ): String!
 ```
 
-Operates like [unicodeWrap(java.lang.String,android.text.TextDirectionHeuristic,boolean)](../android/text/BidiFormatter.md)), but assumes`isolate`is true.
+Operates like [unicodeWrap(java.lang.String,android.text.TextDirectionHeuristic,boolean)](BidiFormatter.md)), but assumes`isolate`is true.
 
 | Parameters ||
 |-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `str` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The input string. |
-| `heuristic` | [TextDirectionHeuristic](../android/text/TextDirectionHeuristic.md)!:The algorithm to be used to estimate the string's overall direction. See [TextDirectionHeuristics](../android/text/TextDirectionHeuristics.md) for pre-defined heuristics. |
+| `heuristic` | [TextDirectionHeuristic](TextDirectionHeuristic.md)!:The algorithm to be used to estimate the string's overall direction. See [TextDirectionHeuristics](TextDirectionHeuristics.md) for pre-defined heuristics. |
 
 | Return ||
 |-----------------------------------------------------------------------------------|---------------------------------------------------|
@@ -310,7 +310,7 @@ Does \*not\* do HTML-escaping.
 | Parameters ||
 |-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `str` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:The input string. This value may be`null`. |
-| `heuristic` | [TextDirectionHeuristic](../android/text/TextDirectionHeuristic.md)!:The algorithm to be used to estimate the string's overall direction. See [TextDirectionHeuristics](../android/text/TextDirectionHeuristics.md) for pre-defined heuristics. |
+| `heuristic` | [TextDirectionHeuristic](TextDirectionHeuristic.md)!:The algorithm to be used to estimate the string's overall direction. See [TextDirectionHeuristics](TextDirectionHeuristics.md) for pre-defined heuristics. |
 | `isolate` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):Whether to directionally isolate the string to prevent it from garbling the content around it |
 | --- | --- |
 
@@ -329,7 +329,7 @@ fun unicodeWrap(
 ): String!
 ```
 
-Operates like [unicodeWrap(java.lang.String,android.text.TextDirectionHeuristic,boolean)](../android/text/BidiFormatter.md)), but uses the formatter's default direction estimation algorithm.
+Operates like [unicodeWrap(java.lang.String,android.text.TextDirectionHeuristic,boolean)](BidiFormatter.md)), but uses the formatter's default direction estimation algorithm.
 
 | Parameters ||
 |-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

@@ -8,7 +8,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface Savepoint
 ```
 
-| [java.sql.Savepoint](../java/sql/Savepoint.md) |
+| [java.sql.Savepoint](Savepoint.md) |
 
 The representation of a savepoint, which is a point within the current transaction that can be referenced from the`Connection.rollback`method. When a transaction is rolled back to a savepoint all changes made after that savepoint are undone.
 
@@ -18,8 +18,8 @@ Savepoints can be either named or unnamed. Unnamed savepoints are identified by 
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSavepointId](../java/sql/Savepoint.md))`()` Retrieves the generated ID for the savepoint that this`Savepoint`object represents. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSavepointName](../java/sql/Savepoint.md))`()` Retrieves the name of the savepoint that this`Savepoint`object represents. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSavepointId](Savepoint.md))`()` Retrieves the generated ID for the savepoint that this`Savepoint`object represents. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSavepointName](Savepoint.md))`()` Retrieves the name of the savepoint that this`Savepoint`object represents. |
 
 ## Public methods
 

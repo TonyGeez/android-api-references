@@ -11,11 +11,11 @@ open class XPathFunctionException : XPathExpressionException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
-| | | ↳ | [javax.xml.xpath.XPathException](../javax/xml/xpath/XPathException.md) |||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) ||||
+| | | ↳ | [javax.xml.xpath.XPathException](XPathException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [javax.xml.xpath.XPathExpressionException](../javax/xml/xpath/XPathExpressionException.md) ||
-| | | | | ↳ | [javax.xml.xpath.XPathFunctionException](../javax/xml/xpath/XPathFunctionException.md) |
+| | | | ↳ | [javax.xml.xpath.XPathExpressionException](XPathExpressionException.md) ||
+| | | | | ↳ | [javax.xml.xpath.XPathFunctionException](XPathFunctionException.md) |
 
 `XPathFunctionException`represents an error with an XPath function.
 
@@ -25,8 +25,8 @@ open class XPathFunctionException : XPathExpressionException
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [XPathFunctionException](../javax/xml/xpath/XPathFunctionException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a new`XPathFunctionException`with the specified detail`message`. |
-| [XPathFunctionException](../javax/xml/xpath/XPathFunctionException.md))`(`cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a new`XPathFunctionException`with the specified`cause`. |
+| [XPathFunctionException](XPathFunctionException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a new`XPathFunctionException`with the specified detail`message`. |
+| [XPathFunctionException](XPathFunctionException.md))`(`cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a new`XPathFunctionException`with the specified`cause`. |
 
 ## Public constructors
 

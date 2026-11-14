@@ -10,21 +10,21 @@ abstract class ShortBuffer : Buffer, Comparable<ShortBuffer!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.nio.Buffer](../java/nio/Buffer.md) ||
-| | ↳ | [java.nio.ShortBuffer](../java/nio/ShortBuffer.md) |
+| ↳ | [java.nio.Buffer](Buffer.md) ||
+| | ↳ | [java.nio.ShortBuffer](ShortBuffer.md) |
 
 A short buffer.
 
 This class defines four categories of operations upon short buffers:
 
-- Absolute and relative [*get*](../java/nio/ShortBuffer.md))and [*put*](../java/nio/ShortBuffer.md))methods that read and write single shorts;
-- Absolute and relative [*bulk get*](../java/nio/ShortBuffer.md))methods that transfer contiguous sequences of shorts from this buffer into an array; and
-- Absolute and relative [*bulk put*](../java/nio/ShortBuffer.md))methods that transfer contiguous sequences of shorts from a short array or some other short buffer into this buffer; and
-- A method for [compacting](../java/nio/ShortBuffer.md))a short buffer.
+- Absolute and relative [*get*](ShortBuffer.md))and [*put*](ShortBuffer.md))methods that read and write single shorts;
+- Absolute and relative [*bulk get*](ShortBuffer.md))methods that transfer contiguous sequences of shorts from this buffer into an array; and
+- Absolute and relative [*bulk put*](ShortBuffer.md))methods that transfer contiguous sequences of shorts from a short array or some other short buffer into this buffer; and
+- A method for [compacting](ShortBuffer.md))a short buffer.
 
-Short buffers can be created either by [*allocation*](../java/nio/ShortBuffer.md)), which allocates space for the buffer's content, by [*wrapping*](../java/nio/ShortBuffer.md))an existing short array into a buffer, or by creating a [*view*](../java/nio/ByteBuffer.md) of an existing byte buffer.
+Short buffers can be created either by [*allocation*](ShortBuffer.md)), which allocates space for the buffer's content, by [*wrapping*](ShortBuffer.md))an existing short array into a buffer, or by creating a [*view*](ByteBuffer.md) of an existing byte buffer.
 
-Like a byte buffer, a short buffer is either [*direct* or*non-direct*](../java/nio/ByteBuffer.md). A short buffer created via the`wrap`methods of this class will be non-direct. A short buffer created as a view of a byte buffer will be direct if, and only if, the byte buffer itself is direct. Whether or not a short buffer is direct may be determined by invoking the [isDirect](../java/nio/ShortBuffer.md))method.
+Like a byte buffer, a short buffer is either [*direct* or*non-direct*](ByteBuffer.md). A short buffer created via the`wrap`methods of this class will be non-direct. A short buffer created as a view of a byte buffer will be direct if, and only if, the byte buffer itself is direct. Whether or not a short buffer is direct may be determined by invoking the [isDirect](ShortBuffer.md))method.
 
 Methods in this class that do not otherwise have a value to return are specified to return the buffer upon which they are invoked. This allows method invocations to be chained.
 
@@ -32,62 +32,62 @@ Methods in this class that do not otherwise have a value to return are specified
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [ShortBuffer](../java/nio/ShortBuffer.md)! | [allocate](../java/nio/ShortBuffer.md))`(`capacity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Allocates a new short buffer. |
-| [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html)! | [array](../java/nio/ShortBuffer.md))`()` Returns the short array that backs this buffer*(optional operation)*. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [arrayOffset](../java/nio/ShortBuffer.md))`()` Returns the offset within this buffer's backing array of the first element of the buffer*(optional operation)*. |
+| openstatic [ShortBuffer](ShortBuffer.md)! | [allocate](ShortBuffer.md))`(`capacity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Allocates a new short buffer. |
+| [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html)! | [array](ShortBuffer.md))`()` Returns the short array that backs this buffer*(optional operation)*. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [arrayOffset](ShortBuffer.md))`()` Returns the offset within this buffer's backing array of the first element of the buffer*(optional operation)*. |
 | --- | --- |
-| abstract [ShortBuffer](../java/nio/ShortBuffer.md)! | [asReadOnlyBuffer](../java/nio/ShortBuffer.md))`()` Creates a new, read-only short buffer that shares this buffer's content. |
-| open [Buffer](../java/nio/Buffer.md)! | [clear](../java/nio/ShortBuffer.md))`()` Clears this buffer. |
-| abstract [ShortBuffer](../java/nio/ShortBuffer.md)! | [compact](../java/nio/ShortBuffer.md))`()` Compacts this buffer*(optional operation)*. |
+| abstract [ShortBuffer](ShortBuffer.md)! | [asReadOnlyBuffer](ShortBuffer.md))`()` Creates a new, read-only short buffer that shares this buffer's content. |
+| open [Buffer](Buffer.md)! | [clear](ShortBuffer.md))`()` Clears this buffer. |
+| abstract [ShortBuffer](ShortBuffer.md)! | [compact](ShortBuffer.md))`()` Compacts this buffer*(optional operation)*. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](../java/nio/ShortBuffer.md))`(`other:` ` [ShortBuffer](../java/nio/ShortBuffer.md)!`)` Compares this buffer to another. |
-| abstract [ShortBuffer](../java/nio/ShortBuffer.md)! | [duplicate](../java/nio/ShortBuffer.md))`()` Creates a new short buffer that shares this buffer's content. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/nio/ShortBuffer.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Tells whether or not this buffer is equal to another object. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](ShortBuffer.md))`(`other:` ` [ShortBuffer](ShortBuffer.md)!`)` Compares this buffer to another. |
+| abstract [ShortBuffer](ShortBuffer.md)! | [duplicate](ShortBuffer.md))`()` Creates a new short buffer that shares this buffer's content. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](ShortBuffer.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Tells whether or not this buffer is equal to another object. |
 | --- | --- |
-| open [Buffer](../java/nio/Buffer.md)! | [flip](../java/nio/ShortBuffer.md))`()` Flips this buffer. |
-| abstract [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [get](../java/nio/ShortBuffer.md))`()` Relative*get*method. |
-| abstract [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [get](../java/nio/ShortBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Absolute*get*method. |
+| open [Buffer](Buffer.md)! | [flip](ShortBuffer.md))`()` Flips this buffer. |
+| abstract [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [get](ShortBuffer.md))`()` Relative*get*method. |
+| abstract [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [get](ShortBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Absolute*get*method. |
 | --- | --- |
-| open [ShortBuffer](../java/nio/ShortBuffer.md)! | [get](../java/nio/ShortBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dst:` ` [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html)!`)` Absolute bulk*get*method. |
-| open [ShortBuffer](../java/nio/ShortBuffer.md)! | [get](../java/nio/ShortBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dst:` ` [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Absolute bulk*get*method. |
-| open [ShortBuffer](../java/nio/ShortBuffer.md)! | [get](../java/nio/ShortBuffer.md))`(`dst:` ` [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html)!`)` Relative bulk*get*method. |
+| open [ShortBuffer](ShortBuffer.md)! | [get](ShortBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dst:` ` [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html)!`)` Absolute bulk*get*method. |
+| open [ShortBuffer](ShortBuffer.md)! | [get](ShortBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dst:` ` [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Absolute bulk*get*method. |
+| open [ShortBuffer](ShortBuffer.md)! | [get](ShortBuffer.md))`(`dst:` ` [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html)!`)` Relative bulk*get*method. |
 | --- | --- |
-| open [ShortBuffer](../java/nio/ShortBuffer.md)! | [get](../java/nio/ShortBuffer.md))`(`dst:` ` [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Relative bulk*get*method. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasArray](../java/nio/ShortBuffer.md))`()` Tells whether or not this buffer is backed by an accessible short array. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/nio/ShortBuffer.md))`()` Returns the current hash code of this buffer. |
+| open [ShortBuffer](ShortBuffer.md)! | [get](ShortBuffer.md))`(`dst:` ` [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Relative bulk*get*method. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasArray](ShortBuffer.md))`()` Tells whether or not this buffer is backed by an accessible short array. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](ShortBuffer.md))`()` Returns the current hash code of this buffer. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDirect](../java/nio/ShortBuffer.md))`()` Tells whether or not this short buffer is direct. |
-| open [Buffer](../java/nio/Buffer.md)! | [limit](../java/nio/ShortBuffer.md))`(`newLimit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets this buffer's limit. |
-| open [Buffer](../java/nio/Buffer.md)! | [mark](../java/nio/ShortBuffer.md))`()` Sets this buffer's mark at its position. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDirect](ShortBuffer.md))`()` Tells whether or not this short buffer is direct. |
+| open [Buffer](Buffer.md)! | [limit](ShortBuffer.md))`(`newLimit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets this buffer's limit. |
+| open [Buffer](Buffer.md)! | [mark](ShortBuffer.md))`()` Sets this buffer's mark at its position. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [mismatch](../java/nio/ShortBuffer.md))`(`that:` ` [ShortBuffer](../java/nio/ShortBuffer.md)!`)` Finds and returns the relative index of the first mismatch between this buffer and a given buffer. |
-| abstract [ByteOrder](../java/nio/ByteOrder.md)! | [order](../java/nio/ShortBuffer.md))`()` Retrieves this buffer's byte order. |
-| open [Buffer](../java/nio/Buffer.md)! | [position](../java/nio/ShortBuffer.md))`(`newPosition:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets this buffer's position. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [mismatch](ShortBuffer.md))`(`that:` ` [ShortBuffer](ShortBuffer.md)!`)` Finds and returns the relative index of the first mismatch between this buffer and a given buffer. |
+| abstract [ByteOrder](ByteOrder.md)! | [order](ShortBuffer.md))`()` Retrieves this buffer's byte order. |
+| open [Buffer](Buffer.md)! | [position](ShortBuffer.md))`(`newPosition:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets this buffer's position. |
 | --- | --- |
-| open [ShortBuffer](../java/nio/ShortBuffer.md)! | [put](../java/nio/ShortBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `src:` ` [ShortBuffer](../java/nio/ShortBuffer.md)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Absolute bulk*put* method*(optional operation)*. |
-| abstract [ShortBuffer](../java/nio/ShortBuffer.md)! | [put](../java/nio/ShortBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `s:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` Absolute*put* method*(optional operation)*. |
-| open [ShortBuffer](../java/nio/ShortBuffer.md)! | [put](../java/nio/ShortBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `src:` ` [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html)!`)` Absolute bulk*put* method*(optional operation)*. |
+| open [ShortBuffer](ShortBuffer.md)! | [put](ShortBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `src:` ` [ShortBuffer](ShortBuffer.md)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Absolute bulk*put* method*(optional operation)*. |
+| abstract [ShortBuffer](ShortBuffer.md)! | [put](ShortBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `s:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` Absolute*put* method*(optional operation)*. |
+| open [ShortBuffer](ShortBuffer.md)! | [put](ShortBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `src:` ` [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html)!`)` Absolute bulk*put* method*(optional operation)*. |
 | --- | --- |
-| open [ShortBuffer](../java/nio/ShortBuffer.md)! | [put](../java/nio/ShortBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `src:` ` [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Absolute bulk*put* method*(optional operation)*. |
-| open [ShortBuffer](../java/nio/ShortBuffer.md)! | [put](../java/nio/ShortBuffer.md))`(`src:` ` [ShortBuffer](../java/nio/ShortBuffer.md)!`)` Relative bulk*put* method*(optional operation)*. |
-| abstract [ShortBuffer](../java/nio/ShortBuffer.md)! | [put](../java/nio/ShortBuffer.md))`(`s:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` Relative*put* method*(optional operation)*. |
+| open [ShortBuffer](ShortBuffer.md)! | [put](ShortBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `src:` ` [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Absolute bulk*put* method*(optional operation)*. |
+| open [ShortBuffer](ShortBuffer.md)! | [put](ShortBuffer.md))`(`src:` ` [ShortBuffer](ShortBuffer.md)!`)` Relative bulk*put* method*(optional operation)*. |
+| abstract [ShortBuffer](ShortBuffer.md)! | [put](ShortBuffer.md))`(`s:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`)` Relative*put* method*(optional operation)*. |
 | --- | --- |
-| [ShortBuffer](../java/nio/ShortBuffer.md)! | [put](../java/nio/ShortBuffer.md))`(`src:` ` [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html)!`)` Relative bulk*put* method*(optional operation)*. |
-| open [ShortBuffer](../java/nio/ShortBuffer.md)! | [put](../java/nio/ShortBuffer.md))`(`src:` ` [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Relative bulk*put* method*(optional operation)*. |
-| open [Buffer](../java/nio/Buffer.md)! | [reset](../java/nio/ShortBuffer.md))`()` Resets this buffer's position to the previously-marked position. |
+| [ShortBuffer](ShortBuffer.md)! | [put](ShortBuffer.md))`(`src:` ` [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html)!`)` Relative bulk*put* method*(optional operation)*. |
+| open [ShortBuffer](ShortBuffer.md)! | [put](ShortBuffer.md))`(`src:` ` [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Relative bulk*put* method*(optional operation)*. |
+| open [Buffer](Buffer.md)! | [reset](ShortBuffer.md))`()` Resets this buffer's position to the previously-marked position. |
 | --- | --- |
-| open [Buffer](../java/nio/Buffer.md)! | [rewind](../java/nio/ShortBuffer.md))`()` Rewinds this buffer. |
-| abstract [ShortBuffer](../java/nio/ShortBuffer.md)! | [slice](../java/nio/ShortBuffer.md))`()` Creates a new short buffer whose content is a shared subsequence of this buffer's content. |
-| abstract [ShortBuffer](../java/nio/ShortBuffer.md)! | [slice](../java/nio/ShortBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a new short buffer whose content is a shared subsequence of this buffer's content. |
+| open [Buffer](Buffer.md)! | [rewind](ShortBuffer.md))`()` Rewinds this buffer. |
+| abstract [ShortBuffer](ShortBuffer.md)! | [slice](ShortBuffer.md))`()` Creates a new short buffer whose content is a shared subsequence of this buffer's content. |
+| abstract [ShortBuffer](ShortBuffer.md)! | [slice](ShortBuffer.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a new short buffer whose content is a shared subsequence of this buffer's content. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/nio/ShortBuffer.md))`()` Returns a string summarizing the state of this buffer. |
-| openstatic [ShortBuffer](../java/nio/ShortBuffer.md)! | [wrap](../java/nio/ShortBuffer.md))`(`array:` ` [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html)!`)` Wraps a short array into a buffer. |
-| openstatic [ShortBuffer](../java/nio/ShortBuffer.md)! | [wrap](../java/nio/ShortBuffer.md))`(`array:` ` [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Wraps a short array into a buffer. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](ShortBuffer.md))`()` Returns a string summarizing the state of this buffer. |
+| openstatic [ShortBuffer](ShortBuffer.md)! | [wrap](ShortBuffer.md))`(`array:` ` [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html)!`)` Wraps a short array into a buffer. |
+| openstatic [ShortBuffer](ShortBuffer.md)! | [wrap](ShortBuffer.md))`(`array:` ` [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Wraps a short array into a buffer. |
 | --- | --- |
 
 | Inherited functions ||
 |---|---|
-| From class [Buffer](../java/nio/Buffer.md) |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [capacity](../java/nio/Buffer.md))`()` <br /> Returns this buffer's capacity. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasRemaining](../java/nio/Buffer.md))`()` <br /> Tells whether there are any elements between the current position and the limit. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isReadOnly](../java/nio/Buffer.md))`()` <br /> Tells whether or not this buffer is read-only. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [limit](../java/nio/Buffer.md))`()` <br /> Returns this buffer's limit. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [position](../java/nio/Buffer.md))`()` <br /> Returns this buffer's position. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [remaining](../java/nio/Buffer.md))`()` <br /> Returns the number of elements between the current position and the limit. <br /> | ||
+| From class [Buffer](Buffer.md) |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [capacity](Buffer.md))`()` <br /> Returns this buffer's capacity. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasRemaining](Buffer.md))`()` <br /> Tells whether there are any elements between the current position and the limit. <br /> | | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isReadOnly](Buffer.md))`()` <br /> Tells whether or not this buffer is read-only. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [limit](Buffer.md))`()` <br /> Returns this buffer's limit. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [position](Buffer.md))`()` <br /> Returns this buffer's position. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [remaining](Buffer.md))`()` <br /> Returns the number of elements between the current position and the limit. <br /> | ||
 
 ## Public methods
 
@@ -101,7 +101,7 @@ open static fun allocate(capacity: Int): ShortBuffer!
 
 Allocates a new short buffer.
 
-The new buffer's position will be zero, its limit will be its capacity, its mark will be undefined, each of its elements will be initialized to zero, and its byte order will be the [native order](../java/nio/ByteOrder.md))of the underlying hardware. It will have a [backing array](../java/nio/ShortBuffer.md)), and its [array offset](../java/nio/ShortBuffer.md))will be zero.
+The new buffer's position will be zero, its limit will be its capacity, its mark will be undefined, each of its elements will be initialized to zero, and its byte order will be the [native order](ByteOrder.md))of the underlying hardware. It will have a [backing array](ShortBuffer.md)), and its [array offset](ShortBuffer.md))will be zero.
 
 | Parameters ||
 |------------|-----------------------------------------------------------------------------------------------------------------|
@@ -109,7 +109,7 @@ The new buffer's position will be zero, its limit will be its capacity, its mark
 
 | Return ||
 |--------------------------------------------------------------------------------------|----------------------|
-| [ShortBuffer](../java/nio/ShortBuffer.md)! | The new short buffer |
+| [ShortBuffer](ShortBuffer.md)! | The new short buffer |
 
 | Exceptions ||
 |--------------------------------------|---------------------------------------|
@@ -127,7 +127,7 @@ Returns the short array that backs this buffer*(optional operation)*.
 
 Modifications to this buffer's content will cause the returned array's content to be modified, and vice versa.
 
-Invoke the [hasArray](../java/nio/ShortBuffer.md))method before invoking this method in order to ensure that this buffer has an accessible backing array.
+Invoke the [hasArray](ShortBuffer.md))method before invoking this method in order to ensure that this buffer has an accessible backing array.
 
 | Return ||
 |--------------------------------------------------------------------------------------------|----------------------------------|
@@ -150,7 +150,7 @@ Returns the offset within this buffer's backing array of the first element of th
 
 If this buffer is backed by an array then buffer position*p* corresponds to array index*p* +`arrayOffset()`.
 
-Invoke the [hasArray](../java/nio/ShortBuffer.md))method before invoking this method in order to ensure that this buffer has an accessible backing array.
+Invoke the [hasArray](ShortBuffer.md))method before invoking this method in order to ensure that this buffer has an accessible backing array.
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------|
@@ -175,11 +175,11 @@ The content of the new buffer will be that of this buffer. Changes to this buffe
 
 The new buffer's capacity, limit, position, mark values, and byte order will be identical to those of this buffer.
 
-If this buffer is itself read-only then this method behaves in exactly the same way as the [duplicate](../java/nio/ShortBuffer.md))method.
+If this buffer is itself read-only then this method behaves in exactly the same way as the [duplicate](ShortBuffer.md))method.
 
 | Return ||
 |--------------------------------------------------------------------------------------|---------------------------------|
-| [ShortBuffer](../java/nio/ShortBuffer.md)! | The new, read-only short buffer |
+| [ShortBuffer](ShortBuffer.md)! | The new, read-only short buffer |
 
 ### clear
 
@@ -202,7 +202,7 @@ This method does not actually erase the data in the buffer, but it is named as i
 
 | Return ||
 |---------------------------------------------------------------------------|-------------|
-| [Buffer](../java/nio/Buffer.md)! | This buffer |
+| [Buffer](Buffer.md)! | This buffer |
 
 ### compact
 
@@ -220,7 +220,7 @@ The buffer's position is set to the number of shorts copied, rather than to zero
 
 | Return ||
 |--------------------------------------------------------------------------------------|-------------|
-| [ShortBuffer](../java/nio/ShortBuffer.md)! | This buffer |
+| [ShortBuffer](ShortBuffer.md)! | This buffer |
 
 | Exceptions ||
 |------------------------------------|-----------------------------|
@@ -236,7 +236,7 @@ open fun compareTo(other: ShortBuffer!): Int
 
 Compares this buffer to another.
 
-Two short buffers are compared by comparing their sequences of remaining elements lexicographically, without regard to the starting position of each sequence within its corresponding buffer. Pairs of`short`elements are compared as if by invoking [Short.compare(short,short)](../java/lang/Short.md)).
+Two short buffers are compared by comparing their sequences of remaining elements lexicographically, without regard to the starting position of each sequence within its corresponding buffer. Pairs of`short`elements are compared as if by invoking [Short.compare(short,short)](../java.lang/Short.md)).
 
 A short buffer is not comparable to any other type of object.
 
@@ -269,7 +269,7 @@ The new buffer's capacity, limit, position, mark values, and byte order will be 
 
 | Return ||
 |--------------------------------------------------------------------------------------|----------------------|
-| [ShortBuffer](../java/nio/ShortBuffer.md)! | The new short buffer |
+| [ShortBuffer](ShortBuffer.md)! | The new short buffer |
 
 ### equals
 
@@ -317,11 +317,11 @@ buf.put(magic);    // Prepend header
   out.write(buf);    // Write header + data to channel
 ```
 
-This method is often used in conjunction with the [compact](../java/nio/ByteBuffer.md))method when transferring data from one place to another.
+This method is often used in conjunction with the [compact](ByteBuffer.md))method when transferring data from one place to another.
 
 | Return ||
 |---------------------------------------------------------------------------|-------------|
-| [Buffer](../java/nio/Buffer.md)! | This buffer |
+| [Buffer](Buffer.md)! | This buffer |
 
 ### get
 
@@ -389,7 +389,7 @@ src.get(index, dst, 0, dst.length)
 
 | Return ||
 |--------------------------------------------------------------------------------------|-------------|
-| [ShortBuffer](../java/nio/ShortBuffer.md)! | This buffer |
+| [ShortBuffer](ShortBuffer.md)! | This buffer |
 
 | Exceptions ||
 |---------------------------------------|-----------------------------------------------------------------------------------|
@@ -430,7 +430,7 @@ An invocation of this method of the form`src.get(index, dst, offset, length)`has
 
 | Return ||
 |--------------------------------------------------------------------------------------|-------------|
-| [ShortBuffer](../java/nio/ShortBuffer.md)! | This buffer |
+| [ShortBuffer](ShortBuffer.md)! | This buffer |
 
 | Exceptions ||
 |---------------------------------------|--------------------------------------------------------------------------------|
@@ -458,7 +458,7 @@ src.get(a, 0, a.length)
 
 | Return ||
 |--------------------------------------------------------------------------------------|-------------|
-| [ShortBuffer](../java/nio/ShortBuffer.md)! | This buffer |
+| [ShortBuffer](ShortBuffer.md)! | This buffer |
 
 | Exceptions ||
 |-------------------------------------|----------------------------------------------------------------|
@@ -478,7 +478,7 @@ open fun get(
 
 Relative bulk*get*method.
 
-This method transfers shorts from this buffer into the given destination array. If there are fewer shorts remaining in the buffer than are required to satisfy the request, that is, if`length``>``remaining()`, then no shorts are transferred and a [BufferUnderflowException](../java/nio/BufferUnderflowException.md) is thrown.
+This method transfers shorts from this buffer into the given destination array. If there are fewer shorts remaining in the buffer than are required to satisfy the request, that is, if`length``>``remaining()`, then no shorts are transferred and a [BufferUnderflowException](BufferUnderflowException.md) is thrown.
 
 Otherwise, this method copies`length`shorts from this buffer into the given array, starting at the current position of this buffer and at the given offset in the array. The position of this buffer is then incremented by`length`.
 
@@ -500,7 +500,7 @@ except that it first checks that there are sufficient shorts in this buffer and 
 
 | Return ||
 |--------------------------------------------------------------------------------------|-------------|
-| [ShortBuffer](../java/nio/ShortBuffer.md)! | This buffer |
+| [ShortBuffer](ShortBuffer.md)! | This buffer |
 
 | Exceptions ||
 |---------------------------------------|----------------------------------------------------------------------|
@@ -517,7 +517,7 @@ fun hasArray(): Boolean
 
 Tells whether or not this buffer is backed by an accessible short array.
 
-If this method returns`true`then the [array](../java/nio/ShortBuffer.md))and [arrayOffset](../java/nio/ShortBuffer.md))methods may safely be invoked.
+If this method returns`true`then the [array](ShortBuffer.md))and [arrayOffset](ShortBuffer.md))methods may safely be invoked.
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
@@ -571,7 +571,7 @@ Sets this buffer's limit. If the position is larger than the new limit then it i
 
 | Return ||
 |---------------------------------------------------------------------------|-------------|
-| [Buffer](../java/nio/Buffer.md)! | This buffer |
+| [Buffer](Buffer.md)! | This buffer |
 
 | Exceptions ||
 |--------------------------------------|----------------------------------------------|
@@ -589,7 +589,7 @@ Sets this buffer's mark at its position.
 
 | Return ||
 |---------------------------------------------------------------------------|-------------|
-| [Buffer](../java/nio/Buffer.md)! | This buffer |
+| [Buffer](Buffer.md)! | This buffer |
 
 ### mismatch
 
@@ -599,13 +599,13 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 open fun mismatch(that: ShortBuffer!): Int
 ```
 
-Finds and returns the relative index of the first mismatch between this buffer and a given buffer. The index is relative to the [position](../java/nio/Buffer.md))of each buffer and will be in the range of 0 (inclusive) up to the smaller of the [remaining](../java/nio/Buffer.md))elements in each buffer (exclusive).
+Finds and returns the relative index of the first mismatch between this buffer and a given buffer. The index is relative to the [position](Buffer.md))of each buffer and will be in the range of 0 (inclusive) up to the smaller of the [remaining](Buffer.md))elements in each buffer (exclusive).
 
 If the two buffers share a common prefix then the returned index is the length of the common prefix and it follows that there is a mismatch between the two buffers at that index within the respective buffers. If one buffer is a proper prefix of the other then the returned index is the smaller of the remaining elements in each buffer, and it follows that the index is only valid for the buffer with the larger number of remaining elements. Otherwise, there is no mismatch.
 
 | Parameters ||
 |--------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| `that` | [ShortBuffer](../java/nio/ShortBuffer.md)!:The byte buffer to be tested for a mismatch with this buffer |
+| `that` | [ShortBuffer](ShortBuffer.md)!:The byte buffer to be tested for a mismatch with this buffer |
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
@@ -621,11 +621,11 @@ abstract fun order(): ByteOrder!
 
 Retrieves this buffer's byte order.
 
-The byte order of a short buffer created by allocation or by wrapping an existing`short`array is the [native order](../java/nio/ByteOrder.md))of the underlying hardware. The byte order of a short buffer created as a [view](../java/nio/ByteBuffer.md) of a byte buffer is that of the byte buffer at the moment that the view is created.
+The byte order of a short buffer created by allocation or by wrapping an existing`short`array is the [native order](ByteOrder.md))of the underlying hardware. The byte order of a short buffer created as a [view](ByteBuffer.md) of a byte buffer is that of the byte buffer at the moment that the view is created.
 
 | Return ||
 |---------------------------------------------------------------------------------|--------------------------|
-| [ByteOrder](../java/nio/ByteOrder.md)! | This buffer's byte order |
+| [ByteOrder](ByteOrder.md)! | This buffer's byte order |
 
 ### position
 
@@ -643,7 +643,7 @@ Sets this buffer's position. If the mark is defined and larger than the new posi
 
 | Return ||
 |---------------------------------------------------------------------------|-------------|
-| [Buffer](../java/nio/Buffer.md)! | This buffer |
+| [Buffer](Buffer.md)! | This buffer |
 
 | Exceptions ||
 |--------------------------------------|-------------------------------------------------|
@@ -678,14 +678,14 @@ except that it first checks the consistency of the supplied parameters and it is
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The index in this buffer at which the first short will be written; must be non-negative and less than`limit()` |
-| `src` | [ShortBuffer](../java/nio/ShortBuffer.md)!:The buffer from which shorts are to be read |
+| `src` | [ShortBuffer](ShortBuffer.md)!:The buffer from which shorts are to be read |
 | `offset` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The index within the source buffer of the first short to be read; must be non-negative and less than`src.limit()` |
 | --- | --- |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The number of shorts to be read from the given buffer; must be non-negative and no larger than the smaller of`limit() - index`and`src.limit() - offset` |
 
 | Return ||
 |--------------------------------------------------------------------------------------|-------------|
-| [ShortBuffer](../java/nio/ShortBuffer.md)! | This buffer |
+| [ShortBuffer](ShortBuffer.md)! | This buffer |
 
 | Exceptions ||
 |---------------------------------------|--------------------------------------------------------------------------------|
@@ -714,7 +714,7 @@ Writes the given short into this buffer at the given index.
 
 | Return ||
 |--------------------------------------------------------------------------------------|-------------|
-| [ShortBuffer](../java/nio/ShortBuffer.md)! | This buffer |
+| [ShortBuffer](ShortBuffer.md)! | This buffer |
 
 | Exceptions ||
 |---------------------------------------|-------------------------------------------------------------|
@@ -747,7 +747,7 @@ dst.put(index, src, 0, src.length);
 
 | Return ||
 |--------------------------------------------------------------------------------------|-------------|
-| [ShortBuffer](../java/nio/ShortBuffer.md)! | This buffer |
+| [ShortBuffer](ShortBuffer.md)! | This buffer |
 
 | Exceptions ||
 |---------------------------------------|-----------------------------------------------------------------------------------|
@@ -789,7 +789,7 @@ An invocation of this method of the form`dst.put(index, src, offset, length)`has
 
 | Return ||
 |--------------------------------------------------------------------------------------|-------------|
-| [ShortBuffer](../java/nio/ShortBuffer.md)! | This buffer |
+| [ShortBuffer](ShortBuffer.md)! | This buffer |
 
 | Exceptions ||
 |---------------------------------------|--------------------------------------------------------------------------------|
@@ -806,7 +806,7 @@ open fun put(src: ShortBuffer!): ShortBuffer!
 
 Relative bulk*put* method*(optional operation)*.
 
-This method transfers the shorts remaining in the given source buffer into this buffer. If there are more shorts remaining in the source buffer than in this buffer, that is, if`src.remaining()``>``remaining()`, then no shorts are transferred and a [BufferOverflowException](../java/nio/BufferOverflowException.md) is thrown.
+This method transfers the shorts remaining in the given source buffer into this buffer. If there are more shorts remaining in the source buffer than in this buffer, that is, if`src.remaining()``>``remaining()`, then no shorts are transferred and a [BufferOverflowException](BufferOverflowException.md) is thrown.
 
 Otherwise, this method copies*n* =`src.remaining()`shorts from the given buffer into this buffer, starting at each buffer's current position. The positions of both buffers are then incremented by*n*.
 
@@ -820,11 +820,11 @@ except that it first checks that there is sufficient space in this buffer and it
 
 | Parameters ||
 |-------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `src` | [ShortBuffer](../java/nio/ShortBuffer.md)!:The source buffer from which shorts are to be read; must not be this buffer |
+| `src` | [ShortBuffer](ShortBuffer.md)!:The source buffer from which shorts are to be read; must not be this buffer |
 
 | Return ||
 |--------------------------------------------------------------------------------------|-------------|
-| [ShortBuffer](../java/nio/ShortBuffer.md)! | This buffer |
+| [ShortBuffer](ShortBuffer.md)! | This buffer |
 
 | Exceptions ||
 |--------------------------------------|---------------------------------------------------------------------------------------------|
@@ -851,7 +851,7 @@ Writes the given short into this buffer at the current position, and then increm
 
 | Return ||
 |--------------------------------------------------------------------------------------|-------------|
-| [ShortBuffer](../java/nio/ShortBuffer.md)! | This buffer |
+| [ShortBuffer](ShortBuffer.md)! | This buffer |
 
 | Exceptions ||
 |------------------------------------|-----------------------------------------------------------------|
@@ -880,7 +880,7 @@ dst.put(a, 0, a.length)
 
 | Return ||
 |--------------------------------------------------------------------------------------|-------------|
-| [ShortBuffer](../java/nio/ShortBuffer.md)! | This buffer |
+| [ShortBuffer](ShortBuffer.md)! | This buffer |
 
 | Exceptions ||
 |------------------------------------|-----------------------------------------------|
@@ -901,7 +901,7 @@ open fun put(
 
 Relative bulk*put* method*(optional operation)*.
 
-This method transfers shorts into this buffer from the given source array. If there are more shorts to be copied from the array than remain in this buffer, that is, if`length``>``remaining()`, then no shorts are transferred and a [BufferOverflowException](../java/nio/BufferOverflowException.md) is thrown.
+This method transfers shorts into this buffer from the given source array. If there are more shorts to be copied from the array than remain in this buffer, that is, if`length``>``remaining()`, then no shorts are transferred and a [BufferOverflowException](BufferOverflowException.md) is thrown.
 
 Otherwise, this method copies`length`shorts from the given array into this buffer, starting at the given offset in the array and at the current position of this buffer. The position of this buffer is then incremented by`length`.
 
@@ -923,7 +923,7 @@ except that it first checks that there is sufficient space in this buffer and it
 
 | Return ||
 |--------------------------------------------------------------------------------------|-------------|
-| [ShortBuffer](../java/nio/ShortBuffer.md)! | This buffer |
+| [ShortBuffer](ShortBuffer.md)! | This buffer |
 
 | Exceptions ||
 |---------------------------------------|----------------------------------------------------------------------|
@@ -946,7 +946,7 @@ Invoking this method neither changes nor discards the mark's value.
 
 | Return ||
 |---------------------------------------------------------------------------|-------------|
-| [Buffer](../java/nio/Buffer.md)! | This buffer |
+| [Buffer](Buffer.md)! | This buffer |
 
 | Exceptions ||
 |---------------------------------|------------------------------|
@@ -972,7 +972,7 @@ out.write(buf);    // Write remaining data
 
 | Return ||
 |---------------------------------------------------------------------------|-------------|
-| [Buffer](../java/nio/Buffer.md)! | This buffer |
+| [Buffer](Buffer.md)! | This buffer |
 
 ### slice
 
@@ -990,7 +990,7 @@ The new buffer's position will be zero, its capacity and its limit will be the n
 
 | Return ||
 |--------------------------------------------------------------------------------------|----------------------|
-| [ShortBuffer](../java/nio/ShortBuffer.md)! | The new short buffer |
+| [ShortBuffer](ShortBuffer.md)! | The new short buffer |
 
 ### slice
 
@@ -1011,12 +1011,12 @@ The new buffer's position will be zero, its capacity and its limit will be`lengt
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The position in this buffer at which the content of the new buffer will start; must be non-negative and no larger than [limit()](../java/nio/Buffer.md)) |
+| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The position in this buffer at which the content of the new buffer will start; must be non-negative and no larger than [limit()](Buffer.md)) |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The number of elements the new buffer will contain; must be non-negative and no larger than`limit() - index` |
 
 | Return ||
 |--------------------------------------------------------------------------------------|----------------|
-| [ShortBuffer](../java/nio/ShortBuffer.md)! | The new buffer |
+| [ShortBuffer](ShortBuffer.md)! | The new buffer |
 
 | Exceptions ||
 |---------------------------------------|-------------------------------------------------------------------------------------------------|
@@ -1046,7 +1046,7 @@ open static fun wrap(array: ShortArray!): ShortBuffer!
 
 Wraps a short array into a buffer.
 
-The new buffer will be backed by the given short array; that is, modifications to the buffer will cause the array to be modified and vice versa. The new buffer's capacity and limit will be`array.length`, its position will be zero, its mark will be undefined, and its byte order will be the [native order](../java/nio/ByteOrder.md))of the underlying hardware. Its [backing array](../java/nio/ShortBuffer.md))will be the given array, and its [array offset](../java/nio/ShortBuffer.md))will be zero.
+The new buffer will be backed by the given short array; that is, modifications to the buffer will cause the array to be modified and vice versa. The new buffer's capacity and limit will be`array.length`, its position will be zero, its mark will be undefined, and its byte order will be the [native order](ByteOrder.md))of the underlying hardware. Its [backing array](ShortBuffer.md))will be the given array, and its [array offset](ShortBuffer.md))will be zero.
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------|
@@ -1054,7 +1054,7 @@ The new buffer will be backed by the given short array; that is, modifications t
 
 | Return ||
 |--------------------------------------------------------------------------------------|----------------------|
-| [ShortBuffer](../java/nio/ShortBuffer.md)! | The new short buffer |
+| [ShortBuffer](ShortBuffer.md)! | The new short buffer |
 
 ### wrap
 
@@ -1070,7 +1070,7 @@ open static fun wrap(
 
 Wraps a short array into a buffer.
 
-The new buffer will be backed by the given short array; that is, modifications to the buffer will cause the array to be modified and vice versa. The new buffer's capacity will be`array.length`, its position will be`offset`, its limit will be`offset + length`, its mark will be undefined, and its byte order will be the [native order](../java/nio/ByteOrder.md))of the underlying hardware. Its [backing array](../java/nio/ShortBuffer.md))will be the given array, and its [array offset](../java/nio/ShortBuffer.md))will be zero.
+The new buffer will be backed by the given short array; that is, modifications to the buffer will cause the array to be modified and vice versa. The new buffer's capacity will be`array.length`, its position will be`offset`, its limit will be`offset + length`, its mark will be undefined, and its byte order will be the [native order](ByteOrder.md))of the underlying hardware. Its [backing array](ShortBuffer.md))will be the given array, and its [array offset](ShortBuffer.md))will be zero.
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1081,7 +1081,7 @@ The new buffer will be backed by the given short array; that is, modifications t
 
 | Return ||
 |--------------------------------------------------------------------------------------|----------------------|
-| [ShortBuffer](../java/nio/ShortBuffer.md)! | The new short buffer |
+| [ShortBuffer](ShortBuffer.md)! | The new short buffer |
 
 | Exceptions ||
 |---------------------------------------|----------------------------------------------------------------------|

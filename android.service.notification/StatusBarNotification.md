@@ -2,7 +2,7 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 
 # StatusBarNotification
 
-Kotlin | [Java](../android/service/notification/StatusBarNotification.md)
+Kotlin | [Java](StatusBarNotification.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ open class StatusBarNotification : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.service.notification.StatusBarNotification](../android/service/notification/StatusBarNotification.md) |
+| ↳ | [android.service.notification.StatusBarNotification](StatusBarNotification.md) |
 
 Class encapsulating a Notification. Sent by the NotificationManagerService to clients including the status bar and any `https://developer.android.com/reference/kotlin/android/service/notification/NotificationListenerService`s.
 
@@ -28,13 +28,13 @@ Class encapsulating a Notification. Sent by the NotificationManagerService to cl
 
 | Public methods ||
 |---|---|
-| open [StatusBarNotification](../android/service/notification/StatusBarNotification.md)! | `https://developer.android.com/reference/kotlin/android/service/notification/StatusBarNotification#clone()()` Creates and returns a copy of this object. |
+| open [StatusBarNotification](StatusBarNotification.md)! | `https://developer.android.com/reference/kotlin/android/service/notification/StatusBarNotification#clone()()` Creates and returns a copy of this object. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/StatusBarNotification#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/service/notification/StatusBarNotification#getGroupKey()()` A key that indicates the group with which this message ranks. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/StatusBarNotification#getId()()` The id supplied to `https://developer.android.com/reference/kotlin/android/app/NotificationManager.html#notify(kotlin.Int,%20android.app.Notification)`. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/service/notification/StatusBarNotification#getKey()()` A unique instance key for this notification record. |
-| open [Notification](../android/app/Notification.md)! | `https://developer.android.com/reference/kotlin/android/service/notification/StatusBarNotification#getNotification()()` The `https://developer.android.com/reference/kotlin/android/app/Notification.html#` supplied to `https://developer.android.com/reference/kotlin/android/app/NotificationManager.html#notify(kotlin.Int,%20android.app.Notification)`. |
+| open [Notification](../android.app/Notification.md)! | `https://developer.android.com/reference/kotlin/android/service/notification/StatusBarNotification#getNotification()()` The `https://developer.android.com/reference/kotlin/android/app/Notification.html#` supplied to `https://developer.android.com/reference/kotlin/android/app/NotificationManager.html#notify(kotlin.Int,%20android.app.Notification)`. |
 | --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/StatusBarNotification#getOpPkg()()` The package that posted the notification. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/service/notification/StatusBarNotification#getOverrideGroupKey()()` Returns the override group key. |
@@ -44,7 +44,7 @@ Class encapsulating a Notification. Sent by the NotificationManagerService to cl
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/service/notification/StatusBarNotification#getTag()()` The tag supplied to `https://developer.android.com/reference/kotlin/android/app/NotificationManager.html#notify(kotlin.Int,%20android.app.Notification)`, or null if no tag was specified. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/StatusBarNotification#getUid()()` The notifying app's (`https://developer.android.com/reference/kotlin/android/service/notification/StatusBarNotification#getPackageName()`'s) uid. |
 | --- | --- |
-| open [UserHandle](../android/os/UserHandle.md)! | `https://developer.android.com/reference/kotlin/android/service/notification/StatusBarNotification#getUser()()` The `https://developer.android.com/reference/kotlin/android/os/UserHandle.html#` for whom this notification is intended. |
+| open [UserHandle](../android.os/UserHandle.md)! | `https://developer.android.com/reference/kotlin/android/service/notification/StatusBarNotification#getUser()()` The `https://developer.android.com/reference/kotlin/android/os/UserHandle.html#` for whom this notification is intended. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/StatusBarNotification#getUserId()()` Returns a userid for whom this notification is intended. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/StatusBarNotification#isAppGroup()()` Returns true if application asked that this notification be part of a group. |
 | --- | --- |
@@ -59,7 +59,7 @@ Class encapsulating a Notification. Sent by the NotificationManagerService to cl
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [StatusBarNotification](../android/service/notification/StatusBarNotification.md)!\> | `https://developer.android.com/reference/kotlin/android/service/notification/StatusBarNotification#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [StatusBarNotification](StatusBarNotification.md)!\> | `https://developer.android.com/reference/kotlin/android/service/notification/StatusBarNotification#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public constructors
 

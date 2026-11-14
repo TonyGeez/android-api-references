@@ -10,15 +10,15 @@ class RoundingMode
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.math.RoundingMode](../java/math/RoundingMode.md)\> ||
-| | ↳ | [java.math.RoundingMode](../java/math/RoundingMode.md) |
+| ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.math.RoundingMode](RoundingMode.md)\> ||
+| | ↳ | [java.math.RoundingMode](RoundingMode.md) |
 
-| Known Direct Subclasses [RoundingMode.CEILING](../java/math/RoundingMode.md), [RoundingMode.DOWN](../java/math/RoundingMode.md), [RoundingMode.FLOOR](../java/math/RoundingMode.md), [RoundingMode.HALF_DOWN](../java/math/RoundingMode.md), [RoundingMode.HALF_EVEN](../java/math/RoundingMode.md), [RoundingMode.HALF_UP](../java/math/RoundingMode.md), [RoundingMode.UNNECESSARY](../java/math/RoundingMode.md), [RoundingMode.UP](../java/math/RoundingMode.md) |--------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------| | [RoundingMode.CEILING](../java/math/RoundingMode.md) | Rounding mode to round towards positive infinity. | | [RoundingMode.DOWN](../java/math/RoundingMode.md) | Rounding mode to round towards zero. | | [RoundingMode.FLOOR](../java/math/RoundingMode.md) | Rounding mode to round towards negative infinity. | | [RoundingMode.HALF_DOWN](../java/math/RoundingMode.md) | Rounding mode to round towards "nearest neighbor" unless both neighbors are equidistant, in which case round down. | | [RoundingMode.HALF_EVEN](../java/math/RoundingMode.md) | Rounding mode to round towards the "nearest neighbor" unless both neighbors are equidistant, in which case, round towards the even neighbor. | | [RoundingMode.HALF_UP](../java/math/RoundingMode.md) | Rounding mode to round towards "nearest neighbor" unless both neighbors are equidistant, in which case round up. | | [RoundingMode.UNNECESSARY](../java/math/RoundingMode.md) | Rounding mode to assert that the requested operation has an exact result, hence no rounding is necessary. | | [RoundingMode.UP](../java/math/RoundingMode.md) | Rounding mode to round away from zero. | |
+| Known Direct Subclasses [RoundingMode.CEILING](RoundingMode.md), [RoundingMode.DOWN](RoundingMode.md), [RoundingMode.FLOOR](RoundingMode.md), [RoundingMode.HALF_DOWN](RoundingMode.md), [RoundingMode.HALF_EVEN](RoundingMode.md), [RoundingMode.HALF_UP](RoundingMode.md), [RoundingMode.UNNECESSARY](RoundingMode.md), [RoundingMode.UP](RoundingMode.md) |--------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------| | [RoundingMode.CEILING](RoundingMode.md) | Rounding mode to round towards positive infinity. | | [RoundingMode.DOWN](RoundingMode.md) | Rounding mode to round towards zero. | | [RoundingMode.FLOOR](RoundingMode.md) | Rounding mode to round towards negative infinity. | | [RoundingMode.HALF_DOWN](RoundingMode.md) | Rounding mode to round towards "nearest neighbor" unless both neighbors are equidistant, in which case round down. | | [RoundingMode.HALF_EVEN](RoundingMode.md) | Rounding mode to round towards the "nearest neighbor" unless both neighbors are equidistant, in which case, round towards the even neighbor. | | [RoundingMode.HALF_UP](RoundingMode.md) | Rounding mode to round towards "nearest neighbor" unless both neighbors are equidistant, in which case round up. | | [RoundingMode.UNNECESSARY](RoundingMode.md) | Rounding mode to assert that the requested operation has an exact result, hence no rounding is necessary. | | [RoundingMode.UP](RoundingMode.md) | Rounding mode to round away from zero. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Specifies a*rounding policy* for numerical operations capable of discarding precision. Each rounding mode indicates how the least significant returned digit of a rounded result is to be calculated. If fewer digits are returned than the digits needed to represent the exact numerical result, the discarded digits will be referred to as the*discarded fraction*regardless the digits' contribution to the value of the number. In other words, considered as a numerical value, the discarded fraction could have an absolute value greater than one.
 
-Each rounding mode description includes a table listing how different two-digit decimal values would round to a one digit decimal value under the rounding mode in question. The result column in the tables could be gotten by creating a`BigDecimal`number with the specified value, forming a [MathContext](../java/math/MathContext.md) object with the proper settings (`precision`set to`1`, and the`roundingMode`set to the rounding mode in question), and calling [round](../java/math/BigDecimal.md))on this number with the proper`MathContext`. A summary table showing the results of these rounding operations for all rounding modes appears below.
+Each rounding mode description includes a table listing how different two-digit decimal values would round to a one digit decimal value under the rounding mode in question. The result column in the tables could be gotten by creating a`BigDecimal`number with the specified value, forming a [MathContext](MathContext.md) object with the proper settings (`precision`set to`1`, and the`roundingMode`set to the rounding mode in question), and calling [round](BigDecimal.md))on this number with the proper`MathContext`. A summary table showing the results of these rounding operations for all rounding modes appears below.
 **Summary of Rounding Operations Under Different Rounding Modes**
 
 | Input Number | Result of rounding input to one digit with the given rounding mode ||||||||
@@ -39,24 +39,24 @@ Each rounding mode description includes a table listing how different two-digit 
 | -5.5 | -6 | -5 | -5 | -6 | -6 | -5 | -6 | throw`ArithmeticException` |
 |--------------|------|--------|-----------|---------|-----------|-------------|-------------|----------------------------|
 
-This`enum`is intended to replace the integer-based enumeration of rounding mode constants in [BigDecimal](../java/math/BigDecimal.md)([BigDecimal.ROUND_UP](../java/math/BigDecimal.md), [BigDecimal.ROUND_DOWN](../java/math/BigDecimal.md), etc. ).
+This`enum`is intended to replace the integer-based enumeration of rounding mode constants in [BigDecimal](BigDecimal.md)([BigDecimal.ROUND_UP](BigDecimal.md), [BigDecimal.ROUND_DOWN](BigDecimal.md), etc. ).
 
 ## Summary
 
 | Enum values ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [CEILING](../java/math/RoundingMode.md) Rounding mode to round towards positive infinity. |
-| [DOWN](../java/math/RoundingMode.md) Rounding mode to round towards zero. |
-| [FLOOR](../java/math/RoundingMode.md) Rounding mode to round towards negative infinity. |
-| [HALF_DOWN](../java/math/RoundingMode.md) Rounding mode to round towards "nearest neighbor" unless both neighbors are equidistant, in which case round down. |
-| [HALF_EVEN](../java/math/RoundingMode.md) Rounding mode to round towards the "nearest neighbor" unless both neighbors are equidistant, in which case, round towards the even neighbor. |
-| [HALF_UP](../java/math/RoundingMode.md) Rounding mode to round towards "nearest neighbor" unless both neighbors are equidistant, in which case round up. |
-| [UNNECESSARY](../java/math/RoundingMode.md) Rounding mode to assert that the requested operation has an exact result, hence no rounding is necessary. |
-| [UP](../java/math/RoundingMode.md) Rounding mode to round away from zero. |
+| [CEILING](RoundingMode.md) Rounding mode to round towards positive infinity. |
+| [DOWN](RoundingMode.md) Rounding mode to round towards zero. |
+| [FLOOR](RoundingMode.md) Rounding mode to round towards negative infinity. |
+| [HALF_DOWN](RoundingMode.md) Rounding mode to round towards "nearest neighbor" unless both neighbors are equidistant, in which case round down. |
+| [HALF_EVEN](RoundingMode.md) Rounding mode to round towards the "nearest neighbor" unless both neighbors are equidistant, in which case, round towards the even neighbor. |
+| [HALF_UP](RoundingMode.md) Rounding mode to round towards "nearest neighbor" unless both neighbors are equidistant, in which case round up. |
+| [UNNECESSARY](RoundingMode.md) Rounding mode to assert that the requested operation has an exact result, hence no rounding is necessary. |
+| [UP](RoundingMode.md) Rounding mode to round away from zero. |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [RoundingMode](../java/math/RoundingMode.md)! | [valueOf](../java/math/RoundingMode.md))`(`rm:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the`RoundingMode`object corresponding to a legacy integer rounding mode constant in [BigDecimal](../java/math/BigDecimal.md). |
+| static [RoundingMode](RoundingMode.md)! | [valueOf](RoundingMode.md))`(`rm:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the`RoundingMode`object corresponding to a legacy integer rounding mode constant in [BigDecimal](BigDecimal.md). |
 
 ## Enum values
 
@@ -302,7 +302,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static fun valueOf(rm: Int): RoundingMode!
 ```
 
-Returns the`RoundingMode`object corresponding to a legacy integer rounding mode constant in [BigDecimal](../java/math/BigDecimal.md).
+Returns the`RoundingMode`object corresponding to a legacy integer rounding mode constant in [BigDecimal](BigDecimal.md).
 
 | Parameters ||
 |------|--------------------------------------------------------------------------------------------------------------------|
@@ -310,7 +310,7 @@ Returns the`RoundingMode`object corresponding to a legacy integer rounding mode 
 
 | Return ||
 |-----------------------------------------------------------------------------------------|---------------------------------------------------|
-| [RoundingMode](../java/math/RoundingMode.md)! | `RoundingMode`corresponding to the given integer. |
+| [RoundingMode](RoundingMode.md)! | `RoundingMode`corresponding to the given integer. |
 
 | Exceptions ||
 |--------------------------------------|-------------------------|

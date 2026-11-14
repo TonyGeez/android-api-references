@@ -8,7 +8,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface Iterable<T : Any!>
 ```
 
-| [java.lang.Iterable](../java/lang/Iterable.md) |
+| [java.lang.Iterable](Iterable.md) |
 
 Implementing this interface allows an object to be the target of the enhanced`for`statement (sometimes called the "for-each loop" statement).
 
@@ -16,9 +16,9 @@ Implementing this interface allows an object to be the target of the enhanced`fo
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](../java/lang/Iterable.md))`(`action:` ` [Consumer](../java/util/function/Consumer.md)<in` `T>`)` Performs the given action for each element of the`Iterable`until all elements have been processed or the action throws an exception. |
-| abstract [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\<T\> | [iterator](../java/lang/Iterable.md))`()` Returns an iterator over elements of type`T`. |
-| open [Spliterator](../java/util/Spliterator.md)\<T\> | [spliterator](../java/lang/Iterable.md))`()` Creates a [Spliterator](../java/util/Spliterator.md) over the elements described by this`Iterable`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](Iterable.md))`(`action:` ` [Consumer](../java.util.function/Consumer.md)<in` `T>`)` Performs the given action for each element of the`Iterable`until all elements have been processed or the action throws an exception. |
+| abstract [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\<T\> | [iterator](Iterable.md))`()` Returns an iterator over elements of type`T`. |
+| open [Spliterator](../java.util/Spliterator.md)\<T\> | [spliterator](Iterable.md))`()` Creates a [Spliterator](../java.util/Spliterator.md) over the elements described by this`Iterable`. |
 | --- | --- |
 
 ## Public methods
@@ -37,7 +37,7 @@ The behavior of this method is unspecified if the action performs side-effects t
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| `action` | [Consumer](../java/util/function/Consumer.md)\<inT\>:The action to be performed for each element |
+| `action` | [Consumer](../java.util.function/Consumer.md)\<inT\>:The action to be performed for each element |
 
 | Exceptions ||
 |----------------------------------|---------------------------------|
@@ -65,8 +65,8 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun spliterator(): Spliterator<T>
 ```
 
-Creates a [Spliterator](../java/util/Spliterator.md) over the elements described by this`Iterable`.
+Creates a [Spliterator](../java.util/Spliterator.md) over the elements described by this`Iterable`.
 
 | Return ||
 |----------------------------------------------------------------------------------------------|--------------------------------------------------------------|
-| [Spliterator](../java/util/Spliterator.md)<T> | a`Spliterator`over the elements described by this`Iterable`. |
+| [Spliterator](../java.util/Spliterator.md)<T> | a`Spliterator`over the elements described by this`Iterable`. |

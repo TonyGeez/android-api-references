@@ -4,14 +4,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # IInterface
 
-Kotlin| [Java](../android/os/IInterface.md) 
+Kotlin| [Java](IInterface.md) 
 | --- | --- |
 
 ```
 interface IInterface
 ```
 
-| [android.os.IInterface](../android/os/IInterface.md) |
+| [android.os.IInterface](IInterface.md) |
 
 Base class for Binder interfaces. When defining a new interface, you must derive it from IInterface.
 
@@ -19,7 +19,7 @@ Base class for Binder interfaces. When defining a new interface, you must derive
 
 | Public methods ||
 |---------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [IBinder](../android/os/IBinder.md)! | [asBinder](../android/os/IInterface.md))`()` Retrieve the Binder object associated with this interface. |
+| abstract [IBinder](IBinder.md)! | [asBinder](IInterface.md))`()` Retrieve the Binder object associated with this interface. |
 
 ## Public methods
 

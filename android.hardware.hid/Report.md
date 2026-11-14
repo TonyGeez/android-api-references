@@ -8,7 +8,7 @@ class Report
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.hardware.hid.Report](../android/hardware/hid/Report.md) |
+| ↳ | [android.hardware.hid.Report](Report.md) |
 
 Represents a Human Interface Device (HID) report exchanged between a host and a HID device.
 
@@ -24,7 +24,7 @@ A HID report contains structured data defined by the device's report descriptor.
 | Public methods ||
 |---|---|
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/hid/Report#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [ByteBuffer](../java/nio/ByteBuffer.md) | `https://developer.android.com/reference/kotlin/android/hardware/hid/Report#getData()()` Returns the data provided by the device for the report ID. |
+| [ByteBuffer](../java.nio/ByteBuffer.md) | `https://developer.android.com/reference/kotlin/android/hardware/hid/Report#getData()()` Returns the data provided by the device for the report ID. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/hid/Report#getReportId()()` Accessor for the report ID. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/hardware/hid/Report#hashCode()()` Returns a hash code value for the object. |
@@ -48,7 +48,7 @@ To prevent external modification, the provided `https://developer.android.com/re
 | Parameters ||
 |---|---|
 | `reportId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the ID for this report format, or zero if report IDs are not used. |
-| `data` | [ByteBuffer](../java/nio/ByteBuffer.md): the non-null buffer containing the raw binary report payload. |
+| `data` | [ByteBuffer](../java.nio/ByteBuffer.md): the non-null buffer containing the raw binary report payload. |
 
 ### Report
 
@@ -62,7 +62,7 @@ Constructor for a report that does not use report ID.
 
 | Parameters ||
 |---|---|
-| `data` | [ByteBuffer](../java/nio/ByteBuffer.md): the report data. This value cannot be `null`. |
+| `data` | [ByteBuffer](../java.nio/ByteBuffer.md): the report data. This value cannot be `null`. |
 
 ## Public methods
 

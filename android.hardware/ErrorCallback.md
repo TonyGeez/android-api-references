@@ -16,7 +16,7 @@ interface ErrorCallback
 
 | **This interface was deprecated in API level 21.**
 |
-| We recommend using the new [android.hardware.camera2](../android/hardware/camera2/_package.md) API for new applications.
+| We recommend using the new [android.hardware.camera2](../android.hardware.camera2/_package.md) API for new applications.
 
 Callback interface for camera error notification.
 
@@ -24,7 +24,7 @@ Callback interface for camera error notification.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onError](../android/hardware/Camera.ErrorCallback.md))`(`error:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `camera:` ` [Camera](../android/hardware/Camera.md)!`)` Callback for camera errors. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onError](../android/hardware/Camera.ErrorCallback.md))`(`error:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `camera:` ` [Camera](Camera.md)!`)` Callback for camera errors. |
 
 ## Public methods
 
@@ -45,5 +45,5 @@ Callback for camera errors.
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `error` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):error code: - [CAMERA_ERROR_UNKNOWN](../android/hardware/Camera.md) - [CAMERA_ERROR_SERVER_DIED](../android/hardware/Camera.md) |
-| `camera` | [Camera](../android/hardware/Camera.md)!:the Camera service object |
+| `error` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):error code: - [CAMERA_ERROR_UNKNOWN](Camera.md) - [CAMERA_ERROR_SERVER_DIED](Camera.md) |
+| `camera` | [Camera](Camera.md)!:the Camera service object |

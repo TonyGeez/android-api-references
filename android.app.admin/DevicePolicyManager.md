@@ -8,21 +8,21 @@ open class DevicePolicyManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.admin.DevicePolicyManager](../android/app/admin/DevicePolicyManager.md) |
+| ↳ | [android.app.admin.DevicePolicyManager](DevicePolicyManager.md) |
 
 Manages device policy and restrictions applied to the user of the device or apps running on the device.
 
 This class contains three types of methods:
 
-1. Those aimed at [managing apps](../android/app/admin/DevicePolicyManager.md)
-2. Those aimed at the [Device Policy Management Role Holder](../android/app/admin/DevicePolicyManager.md)
-3. Those aimed at [apps which wish to respect device policy](../android/app/admin/DevicePolicyManager.md)
+1. Those aimed at [managing apps](DevicePolicyManager.md)
+2. Those aimed at the [Device Policy Management Role Holder](DevicePolicyManager.md)
+3. Those aimed at [apps which wish to respect device policy](DevicePolicyManager.md)
 
 The intended caller for each API is indicated in its Javadoc.
 
 **Managing Apps**
 
-Apps can be made capable of setting device policy ("Managing Apps") either by being set as a [Device Administrator](../android/app/admin/DevicePolicyManager.md), being set as a [Device Policy Controller](../android/app/admin/DevicePolicyManager.md), or by holding the appropriate [Permissions](../android/app/admin/DevicePolicyManager.md).
+Apps can be made capable of setting device policy ("Managing Apps") either by being set as a [Device Administrator](DevicePolicyManager.md), being set as a [Device Policy Controller](DevicePolicyManager.md), or by holding the appropriate [Permissions](DevicePolicyManager.md).
 
 A **Device Administrator** is an app which is able to enforce device policies that it has declared in its device admin XML file. An app can prompt the user to give it device administrator privileges using the `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#ACTION_ADD_DEVICE_ADMIN:kotlin.String` action.
 
@@ -31,21 +31,21 @@ For more information about Device Administration, read the [Device Administratio
 Device Administrator apps can also be recognised as **Device Policy Controllers**. Device Policy Controllers can be one of two types:
 
 - A *Device Owner* , which only ever exists on the `https://developer.android.com/reference/kotlin/android/os/UserManager.html#isSystemUser()` or Main User, is the most powerful type of Device Policy Controller and can affect policy across the device.
-- A *Profile Owner* , which can exist on any user, can affect policy on the user it is on, and when it is running on `https://developer.android.com/reference/kotlin/android/os/UserManager.html#isProfile()` has [limited](../android/app/admin/DevicePolicyManager.md) ability to affect policy on its parent.
+- A *Profile Owner* , which can exist on any user, can affect policy on the user it is on, and when it is running on `https://developer.android.com/reference/kotlin/android/os/UserManager.html#isProfile()` has [limited](DevicePolicyManager.md) ability to affect policy on its parent.
 
 Additional capabilities can be provided to Device Policy Controllers in the following circumstances:
 
-- A Profile Owner on an [organization owned](../android/app/admin/DevicePolicyManager.md) device has access to additional abilities, both [affecting policy on the profile's](../android/app/admin/DevicePolicyManager.md) parent and also the profile itself.
+- A Profile Owner on an [organization owned](DevicePolicyManager.md) device has access to additional abilities, both [affecting policy on the profile's](DevicePolicyManager.md) parent and also the profile itself.
 - A Profile Owner running on the `https://developer.android.com/reference/kotlin/android/os/UserManager.html#isSystemUser()` has access to additional capabilities which affect the `https://developer.android.com/reference/kotlin/android/os/UserManager.html#isSystemUser()` and also the whole device.
-- A Profile Owner running on an [affiliated](../android/app/admin/DevicePolicyManager.md) user has capabilities similar to that of a [Device Owner](../android/app/admin/DevicePolicyManager.md)
+- A Profile Owner running on an [affiliated](DevicePolicyManager.md) user has capabilities similar to that of a [Device Owner](DevicePolicyManager.md)
 
 For more information, see [Building a Device Policy Controller](https://developer.android.com/work/dpc/build-dpc).
 
-[Permissions](../android/app/admin/DevicePolicyManager.md) are generally only given to apps fulfilling particular key roles on the device (such as managing `https://developer.android.com/reference/kotlin/android/devicelock/DeviceLockManager.html#`).
+[Permissions](DevicePolicyManager.md) are generally only given to apps fulfilling particular key roles on the device (such as managing `https://developer.android.com/reference/kotlin/android/devicelock/DeviceLockManager.html#`).
 
 **Device Policy Management Role Holder**
 
-One app on the device fulfills the Device Policy Management Role and is trusted with managing the overall state of Device Policy. This has access to much more powerful methods than [managing apps](../android/app/admin/DevicePolicyManager.md).
+One app on the device fulfills the Device Policy Management Role and is trusted with managing the overall state of Device Policy. This has access to much more powerful methods than [managing apps](DevicePolicyManager.md).
 
 **Querying Device Policy**
 
@@ -53,7 +53,7 @@ In most cases, regular apps do not need to concern themselves with device policy
 
 **Managed Provisioning**
 
-Managed Provisioning is the process of recognising an app as a [Device Owner](../android/app/admin/DevicePolicyManager.md) or [Profile Owner](../android/app/admin/DevicePolicyManager.md). It involves presenting education and consent screens to the user to ensure they are aware of the capabilities this grants the [Device Policy Controller](../android/app/admin/DevicePolicyManager.md)
+Managed Provisioning is the process of recognising an app as a [Device Owner](DevicePolicyManager.md) or [Profile Owner](DevicePolicyManager.md). It involves presenting education and consent screens to the user to ensure they are aware of the capabilities this grants the [Device Policy Controller](DevicePolicyManager.md)
 
 For more information on provisioning, see [Building a Device Policy Controller](https://developer.android.com/work/dpc/build-dpc).
 
@@ -61,10 +61,10 @@ A **Managed Profile** enables data separation. For example to use a device both 
 
 **Affiliation**
 
-Using the `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setAffiliationIds(android.content.ComponentName,%20kotlin.collections.MutableSet)` method, a [Device Owner](../android/app/admin/DevicePolicyManager.md) can set a list of affiliation ids for the `https://developer.android.com/reference/kotlin/android/os/UserManager.html#isSystemUser()`. Any [Profile Owner](../android/app/admin/DevicePolicyManager.md) on the same device can also call `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setAffiliationIds(android.content.ComponentName,%20kotlin.collections.MutableSet)` to set affiliation ids for the `https://developer.android.com/reference/kotlin/android/os/UserManager.html#` it is on. When there is the same ID present in both lists, the user is said to be "affiliated" and we can refer to the [Profile Owner](../android/app/admin/DevicePolicyManager.md) as a "profile owner on an affiliated user" or an "affiliated profile owner". Becoming affiliated grants the [Profile Owner](../android/app/admin/DevicePolicyManager.md) capabilities similar to that of the [Device Owner](../android/app/admin/DevicePolicyManager.md). It also allows use of the #bindDeviceAdminServiceAsUser APIs for direct communication between the [Device Owner](../android/app/admin/DevicePolicyManager.md) and affiliated [Profile Owners](../android/app/admin/DevicePolicyManager.md).
+Using the `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setAffiliationIds(android.content.ComponentName,%20kotlin.collections.MutableSet)` method, a [Device Owner](DevicePolicyManager.md) can set a list of affiliation ids for the `https://developer.android.com/reference/kotlin/android/os/UserManager.html#isSystemUser()`. Any [Profile Owner](DevicePolicyManager.md) on the same device can also call `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setAffiliationIds(android.content.ComponentName,%20kotlin.collections.MutableSet)` to set affiliation ids for the `https://developer.android.com/reference/kotlin/android/os/UserManager.html#` it is on. When there is the same ID present in both lists, the user is said to be "affiliated" and we can refer to the [Profile Owner](DevicePolicyManager.md) as a "profile owner on an affiliated user" or an "affiliated profile owner". Becoming affiliated grants the [Profile Owner](DevicePolicyManager.md) capabilities similar to that of the [Device Owner](DevicePolicyManager.md). It also allows use of the #bindDeviceAdminServiceAsUser APIs for direct communication between the [Device Owner](DevicePolicyManager.md) and affiliated [Profile Owners](DevicePolicyManager.md).
 
 **Organization Owned**
-An organization owned device is one which is not owned by the person making use of the device and is instead owned by an organization such as their employer or education provider. These devices are recognised as being organization owned either by the presence of a [device owner](../android/app/admin/DevicePolicyManager.md) or of a `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#isOrganizationOwnedDeviceWithManagedProfile()`.
+An organization owned device is one which is not owned by the person making use of the device and is instead owned by an organization such as their employer or education provider. These devices are recognised as being organization owned either by the presence of a [device owner](DevicePolicyManager.md) or of a `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#isOrganizationOwnedDeviceWithManagedProfile()`.
 
 Profile owners running on an [organization owned](../android/app/admin/organization-owned.md) device can exercise additional capabilities using the `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getParentProfileInstance(android.content.ComponentName)` API which apply to the parent user. Each API will indicate if it is usable in this way.
 
@@ -100,7 +100,7 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#ACTION_PROVISIONING_SUCCESSFUL:kotlin.String` Activity action: This activity action is sent to indicate that provisioning of a managed profile or managed device has completed successfully. |
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#ACTION_PROVISION_MANAGED_DEVICE:kotlin.String` Activity action: Starts the provisioning flow which sets up a managed device. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#ACTION_PROVISION_MANAGED_PROFILE:kotlin.String` Activity action: Starts the provisioning flow which sets up a [managed profile](../android/app/admin/DevicePolicyManager.md). |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#ACTION_PROVISION_MANAGED_PROFILE:kotlin.String` Activity action: Starts the provisioning flow which sets up a [managed profile](DevicePolicyManager.md). |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#ACTION_SET_NEW_PARENT_PROFILE_PASSWORD:kotlin.String` Activity action: have the user enter a new password for the parent profile. |
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#ACTION_SET_NEW_PASSWORD:kotlin.String` Activity action: have the user enter a new password. |
@@ -153,18 +153,18 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#EXTRA_PASSWORD_COMPLEXITY:kotlin.String` An integer indicating the complexity level of the new password an app would like the user to set when launching the action `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#ACTION_SET_NEW_PASSWORD:kotlin.String`. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#EXTRA_PROVISIONING_ACCOUNT_TO_MIGRATE:kotlin.String` An `https://developer.android.com/reference/kotlin/android/accounts/Account.html#` extra holding the account to migrate during managed profile provisioning. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#EXTRA_PROVISIONING_ADMIN_EXTRAS_BUNDLE:kotlin.String` A `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` extra of type `https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#` that is passed directly to the [Device Policy Controller](../android/app/admin/DevicePolicyManager.md) after [provisioning](../android/app/admin/DevicePolicyManager.md). |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#EXTRA_PROVISIONING_ADMIN_EXTRAS_BUNDLE:kotlin.String` A `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` extra of type `https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#` that is passed directly to the [Device Policy Controller](DevicePolicyManager.md) after [provisioning](DevicePolicyManager.md). |
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#EXTRA_PROVISIONING_ALLOWED_PROVISIONING_MODES:kotlin.String` An `https://developer.android.com/reference/kotlin/java/util/ArrayList.html#` of `https://developer.android.com/reference/kotlin/java/lang/Integer.html#` extra specifying the allowed provisioning modes. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#EXTRA_PROVISIONING_ALLOW_OFFLINE:kotlin.String` A boolean extra indicating whether offline provisioning should be used. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#EXTRA_PROVISIONING_DEVICE_ADMIN_COMPONENT_NAME:kotlin.String` A ComponentName extra indicating the `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` of the application that will be set as the [Device Policy Controller](../android/app/admin/DevicePolicyManager.md). |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#EXTRA_PROVISIONING_DEVICE_ADMIN_COMPONENT_NAME:kotlin.String` A ComponentName extra indicating the `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` of the application that will be set as the [Device Policy Controller](DevicePolicyManager.md). |
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#EXTRA_PROVISIONING_DEVICE_ADMIN_MINIMUM_VERSION_CODE:kotlin.String` An int extra holding a minimum required version code for the device admin package. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#EXTRA_PROVISIONING_DEVICE_ADMIN_PACKAGE_CHECKSUM:kotlin.String` A String extra holding the URL-safe base64 encoded SHA-256 hash of the file at download location specified in `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#EXTRA_PROVISIONING_DEVICE_ADMIN_PACKAGE_DOWNLOAD_LOCATION:kotlin.String`. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#EXTRA_PROVISIONING_DEVICE_ADMIN_PACKAGE_DOWNLOAD_COOKIE_HEADER:kotlin.String` A String extra holding a http cookie header which should be used in the http request to the url specified in `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#EXTRA_PROVISIONING_DEVICE_ADMIN_PACKAGE_DOWNLOAD_LOCATION:kotlin.String`. |
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#EXTRA_PROVISIONING_DEVICE_ADMIN_PACKAGE_DOWNLOAD_LOCATION:kotlin.String` A String extra holding a url that specifies the download location of the device admin package. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#EXTRA_PROVISIONING_DEVICE_ADMIN_PACKAGE_NAME:kotlin.String` A String extra holding the package name of the application that will be set as [Device Policy Controller](../android/app/admin/DevicePolicyManager.md). |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#EXTRA_PROVISIONING_DEVICE_ADMIN_PACKAGE_NAME:kotlin.String` A String extra holding the package name of the application that will be set as [Device Policy Controller](DevicePolicyManager.md). |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#EXTRA_PROVISIONING_DEVICE_ADMIN_SIGNATURE_CHECKSUM:kotlin.String` A String extra holding the URL-safe base64 encoded SHA-256 checksum of any signature of the android package archive at the download location specified in `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#EXTRA_PROVISIONING_DEVICE_ADMIN_PACKAGE_DOWNLOAD_LOCATION:kotlin.String`. |
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#EXTRA_PROVISIONING_DISCLAIMERS:kotlin.String` A `https://developer.android.com/reference/kotlin/android/os/Bundle.html#`\[\] extra consisting of list of disclaimer headers and disclaimer contents. |
@@ -189,9 +189,9 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 | --- | --- |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#EXTRA_PROVISIONING_SHOULD_LAUNCH_RESULT_INTENT:kotlin.String` A boolean extra that determines whether the provisioning flow should launch the resulting launch intent, if one is supplied by the device policy management role holder via `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#EXTRA_RESULT_LAUNCH_INTENT:kotlin.String`. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#EXTRA_PROVISIONING_SKIP_EDUCATION_SCREENS:kotlin.String` A boolean extra indicating if the education screens from the provisioning flow should be skipped. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#EXTRA_PROVISIONING_SKIP_ENCRYPTION:kotlin.String` A boolean extra indicating whether device encryption can be skipped as part of [provisioning](../android/app/admin/DevicePolicyManager.md). |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#EXTRA_PROVISIONING_SKIP_ENCRYPTION:kotlin.String` A boolean extra indicating whether device encryption can be skipped as part of [provisioning](DevicePolicyManager.md). |
 | --- | --- |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#EXTRA_PROVISIONING_SKIP_USER_CONSENT:kotlin.String` A boolean extra indicating if the user consent steps from the [provisioning flow](../android/app/admin/DevicePolicyManager.md) should be skipped. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#EXTRA_PROVISIONING_SKIP_USER_CONSENT:kotlin.String` A boolean extra indicating if the user consent steps from the [provisioning flow](DevicePolicyManager.md) should be skipped. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#EXTRA_PROVISIONING_TIME_ZONE:kotlin.String` A String extra holding the time zone `https://developer.android.com/reference/kotlin/android/app/AlarmManager.html#` that the device will be set to. |
 | static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#EXTRA_PROVISIONING_USE_MOBILE_DATA:kotlin.String` A boolean extra indicating if mobile data should be used during the provisioning flow for downloading the admin app. |
 | --- | --- |
@@ -368,23 +368,23 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#clearResetPasswordToken(android.content.ComponentName)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#?)` Called by a profile, device owner or holder of the permission `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MANAGE_DEVICE_POLICY_RESET_PASSWORD:kotlin.String` to revoke the current password reset token. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#clearUserRestriction(android.content.ComponentName,%20kotlin.String)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#?, key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Called by a profile owner, device owner or a holder of any permission that is associated with a user restriction to clear a user restriction specified by the key. |
 | --- | --- |
-| open [Intent](../android/content/Intent.md)! | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#createAdminSupportIntent(kotlin.String)(restriction: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Called by any app to display a support dialog when a feature was disabled by an admin. |
-| open [UserHandle](../android/os/UserHandle.md)? | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#createAndManageUser(android.content.ComponentName,%20kotlin.String,%20android.content.ComponentName,%20android.os.PersistableBundle,%20kotlin.Int)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, profileOwner: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, adminExtras: https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#?, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called by a device owner to create a user with the specified name and a given component of the calling package as profile owner. |
+| open [Intent](../android.content/Intent.md)! | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#createAdminSupportIntent(kotlin.String)(restriction: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Called by any app to display a support dialog when a feature was disabled by an admin. |
+| open [UserHandle](../android.os/UserHandle.md)? | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#createAndManageUser(android.content.ComponentName,%20kotlin.String,%20android.content.ComponentName,%20android.os.PersistableBundle,%20kotlin.Int)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, profileOwner: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#, adminExtras: https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#?, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called by a device owner to create a user with the specified name and a given component of the calling package as profile owner. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#enableSystemApp(android.content.ComponentName,%20android.content.Intent)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#?, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Re-enable system apps by intent that were disabled by default when the user was initialized. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#enableSystemApp(android.content.ComponentName,%20kotlin.String)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#?, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Re-enable a system app that was disabled by default when the user was initialized. |
-| open [AttestedKeyPair](../android/security/AttestedKeyPair.md)! | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#generateKeyPair(android.content.ComponentName,%20kotlin.String,%20android.security.keystore.KeyGenParameterSpec,%20kotlin.Int)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#?, algorithm: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, keySpec: https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec.html#, idAttestationFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` This API can be called by the following to generate a new private/public key pair: - Device owner - Profile owner - Delegated certificate installer - Credential management app - An app that holds the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MANAGE_DEVICE_POLICY_CERTIFICATES:kotlin.String` permission If the device supports key generation via secure hardware, this method is useful for creating a key in KeyChain that never left the secure hardware. <br /> |
-| open [AttestedKeyPair](../android/security/AttestedKeyPair.md) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#generateKeyPair(kotlin.String,%20android.security.keystore.KeyGenParameterSpec,%20kotlin.Int,%20kotlin.Int)(algorithm: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, keySpec: https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec.html#, idAttestationFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, scope: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Generates a new private/public key pair with a specified scope. |
+| open [AttestedKeyPair](../android.security/AttestedKeyPair.md)! | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#generateKeyPair(android.content.ComponentName,%20kotlin.String,%20android.security.keystore.KeyGenParameterSpec,%20kotlin.Int)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#?, algorithm: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, keySpec: https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec.html#, idAttestationFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` This API can be called by the following to generate a new private/public key pair: - Device owner - Profile owner - Delegated certificate installer - Credential management app - An app that holds the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MANAGE_DEVICE_POLICY_CERTIFICATES:kotlin.String` permission If the device supports key generation via secure hardware, this method is useful for creating a key in KeyChain that never left the secure hardware. <br /> |
+| open [AttestedKeyPair](../android.security/AttestedKeyPair.md) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#generateKeyPair(kotlin.String,%20android.security.keystore.KeyGenParameterSpec,%20kotlin.Int,%20kotlin.Int)(algorithm: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, keySpec: https://developer.android.com/reference/kotlin/android/security/keystore/KeyGenParameterSpec.html#, idAttestationFlags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, scope: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Generates a new private/public key pair with a specified scope. |
 | --- | --- |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getAccountTypesWithManagementDisabled()()` Gets the array of accounts for which account management is disabled by the profile owner or device owner. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ComponentName](../android/content/ComponentName.md)!\>? | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getActiveAdmins()()` Return a list of all currently active device administrators' component names. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ComponentName](../android.content/ComponentName.md)!\>? | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getActiveAdmins()()` Return a list of all currently active device administrators' component names. |
 | open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getAffiliationIds(android.content.ComponentName)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Returns the set of affiliation ids previously set via `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setAffiliationIds(android.content.ComponentName,%20kotlin.collections.MutableSet)`, or an empty set if none have been set. |
 | --- | --- |
 | open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getAlwaysOnVpnLockdownWhitelist(android.content.ComponentName)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Called by device or profile owner to query the set of packages that are allowed to access the network directly when always-on VPN is in lockdown mode but not connected. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getAlwaysOnVpnPackage(android.content.ComponentName)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Called by a device or profile owner to read the name of the package administering an always-on VPN connection for the current user. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getAppFunctionsPolicy()()` Returns the current `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionManager.html#` policy. |
 | --- | --- |
-| open [Bundle](../android/os/Bundle.md) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getApplicationRestrictions(android.content.ComponentName,%20kotlin.String)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#?, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Retrieves the application restrictions for a given target application running in the calling user. |
+| open [Bundle](../android.os/Bundle.md) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getApplicationRestrictions(android.content.ComponentName,%20kotlin.String)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#?, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Retrieves the application restrictions for a given target application running in the calling user. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getApplicationRestrictionsManagingPackage(android.content.ComponentName)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Called by a profile owner or device owner to retrieve the application restrictions managing package for the current user, or `null` if none is set. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getAutoTimeEnabled(android.content.ComponentName)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#?)` Returns true if auto time is enabled on the device. |
 | --- | --- |
@@ -393,14 +393,14 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getAutoTimeZoneEnabled(android.content.ComponentName)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#?)` Returns true if auto time zone is enabled on the device. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getAutoTimeZonePolicy()()` Returns auto time zone policy's current state. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [UserHandle](../android/os/UserHandle.md)!\> | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getBindDeviceAdminTargetUsers(android.content.ComponentName)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Returns the list of target users that the calling device owner or owner of secondary user can use when calling #bindDeviceAdminServiceAsUser. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [UserHandle](../android.os/UserHandle.md)!\> | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getBindDeviceAdminTargetUsers(android.content.ComponentName)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Returns the list of target users that the calling device owner or owner of secondary user can use when calling #bindDeviceAdminServiceAsUser. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getBluetoothContactSharingDisabled(android.content.ComponentName)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Called by a profile owner of a managed profile to determine whether or not Bluetooth devices cannot access enterprise contacts. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getCameraDisabled(android.content.ComponentName)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#?)` Determine whether or not the device's cameras have been disabled for this user, either by the calling admin, if specified, or all admins. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getCertInstallerPackage(android.content.ComponentName)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Called by a profile owner or device owner to retrieve the certificate installer for the user, or `null` if none is set. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getContentProtectionPolicy(android.content.ComponentName)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#?)` Returns the current content protection policy. |
 | --- | --- |
-| open [PackagePolicy](../android/app/admin/PackagePolicy.md)? | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getCredentialManagerPolicy()()` Called by a device owner or profile owner of a managed profile to retrieve the credential manager policy. |
+| open [PackagePolicy](PackagePolicy.md)? | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getCredentialManagerPolicy()()` Called by a device owner or profile owner of a managed profile to retrieve the credential manager policy. |
 | open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getCrossProfileCalendarPackages(android.content.ComponentName)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Gets a set of package names that are allowed to access cross-profile calendar APIs. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getCrossProfileCallerIdDisabled(android.content.ComponentName)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Called by a profile owner of a managed profile to determine whether or not caller-Id information has been disabled. |
 | --- | --- |
@@ -417,7 +417,7 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getEndUserSessionMessage(android.content.ComponentName)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Returns the user session end message. |
 | --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getEnrollmentSpecificId()()` Returns an enrollment-specific identifier of this device, which is guaranteed to be the same value for the same device, enrolled into the same organization by the same managing app. |
-| open [FactoryResetProtectionPolicy](../android/app/admin/FactoryResetProtectionPolicy.md)? | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getFactoryResetProtectionPolicy(android.content.ComponentName)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#?)` Callable by device owner or profile owner of an organization-owned device, to retrieve the current factory reset protection (FRP) policy set previously by `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setFactoryResetProtectionPolicy(android.content.ComponentName,%20android.app.admin.FactoryResetProtectionPolicy)`. |
+| open [FactoryResetProtectionPolicy](FactoryResetProtectionPolicy.md)? | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getFactoryResetProtectionPolicy(android.content.ComponentName)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#?)` Callable by device owner or profile owner of an organization-owned device, to retrieve the current factory reset protection (FRP) policy set previously by `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setFactoryResetProtectionPolicy(android.content.ComponentName,%20android.app.admin.FactoryResetProtectionPolicy)`. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getGlobalPrivateDnsHost(android.content.ComponentName)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Returns the system-wide Private DNS host. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getGlobalPrivateDnsMode(android.content.ComponentName)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Returns the system-wide Private DNS mode. |
@@ -432,11 +432,11 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getLockTaskPackages(android.content.ComponentName)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#?)` Returns the list of packages allowed to start the lock task mode. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getLongSupportMessage(android.content.ComponentName)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Called by a device admin to get the long support message. |
 | --- | --- |
-| open [PackagePolicy](../android/app/admin/PackagePolicy.md)? | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getManagedProfileCallerIdAccessPolicy()()` Called by a profile owner of a managed profile to retrieve the caller id policy. |
-| open [PackagePolicy](../android/app/admin/PackagePolicy.md)? | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getManagedProfileContactsAccessPolicy()()` Called by a profile owner of a managed profile to determine the current policy applied to managed profile contacts. |
+| open [PackagePolicy](PackagePolicy.md)? | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getManagedProfileCallerIdAccessPolicy()()` Called by a profile owner of a managed profile to retrieve the caller id policy. |
+| open [PackagePolicy](PackagePolicy.md)? | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getManagedProfileContactsAccessPolicy()()` Called by a profile owner of a managed profile to determine the current policy applied to managed profile contacts. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getManagedProfileMaximumTimeOff(android.content.ComponentName)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Called by a profile owner of an organization-owned managed profile to get maximum time the profile is allowed to be turned off. |
 | --- | --- |
-| open [ManagedSubscriptionsPolicy](../android/app/admin/ManagedSubscriptionsPolicy.md) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getManagedSubscriptionsPolicy()()` Returns the current `https://developer.android.com/reference/kotlin/android/app/admin/ManagedSubscriptionsPolicy`. |
+| open [ManagedSubscriptionsPolicy](ManagedSubscriptionsPolicy.md) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getManagedSubscriptionsPolicy()()` Returns the current `https://developer.android.com/reference/kotlin/android/app/admin/ManagedSubscriptionsPolicy`. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getMaximumFailedPasswordsForWipe(android.content.ComponentName)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#?)` Retrieve the current maximum number of login attempts that are allowed before the device or profile is wiped, for a particular admin or all admins that set restrictions on this user and its participating profiles. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getMaximumTimeToLock(android.content.ComponentName)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#?)` Retrieve the current maximum time to unlock for a particular admin or all admins that set restrictions on this user and its participating profiles. |
 | --- | --- |
@@ -449,8 +449,8 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getOrganizationColor(android.content.ComponentName)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Called by a profile owner of a managed profile to retrieve the color used for customization. |
 | --- | --- |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getOrganizationName(android.content.ComponentName)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#?)` Called by the device owner (since API 26) or profile owner (since API 24) or holders of the permission `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MANAGE_DEVICE_POLICY_ORGANIZATION_IDENTITY:kotlin.String` to retrieve the name of the organization under management. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ApnSetting](../android/telephony/data/ApnSetting.md)!\>! | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getOverrideApns(android.content.ComponentName)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Called by device owner or managed profile owner to get all override APNs inserted by device owner or managed profile owner previously using `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#addOverrideApn(android.content.ComponentName,%20android.telephony.data.ApnSetting)`. |
-| open [DevicePolicyManager](../android/app/admin/DevicePolicyManager.md) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getParentProfileInstance(android.content.ComponentName)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#?)` Called by the profile owner of a managed profile or other apps in a managed profile to obtain a `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#` whose calls act on the parent profile. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ApnSetting](../android.telephony.data/ApnSetting.md)!\>! | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getOverrideApns(android.content.ComponentName)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Called by device owner or managed profile owner to get all override APNs inserted by device owner or managed profile owner previously using `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#addOverrideApn(android.content.ComponentName,%20android.telephony.data.ApnSetting)`. |
+| open [DevicePolicyManager](DevicePolicyManager.md) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getParentProfileInstance(android.content.ComponentName)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#?)` Called by the profile owner of a managed profile or other apps in a managed profile to obtain a `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#` whose calls act on the parent profile. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getPasswordComplexity()()` Returns how complex the current user's screen lock is. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getPasswordExpiration(android.content.ComponentName)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#?)` Get the current password expiration time for a particular admin or all admins that set restrictions on this user and its participating profiles. |
@@ -469,7 +469,7 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getPasswordMinimumUpperCase(android.content.ComponentName)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#?)` Retrieve the current number of upper case letters required in the password for a particular admin or all admins that set restrictions on this user and its participating profiles. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getPasswordQuality(android.content.ComponentName)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#?)` Retrieve the current minimum password quality for a particular admin or all admins that set restrictions on this user and its participating profiles. |
-| open [SystemUpdateInfo](../android/app/admin/SystemUpdateInfo.md)? | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getPendingSystemUpdate(android.content.ComponentName)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#?)` Get information about a pending system update. |
+| open [SystemUpdateInfo](SystemUpdateInfo.md)? | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getPendingSystemUpdate(android.content.ComponentName)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#?)` Get information about a pending system update. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getPermissionGrantState(android.content.ComponentName,%20kotlin.String,%20kotlin.String)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#?, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, permission: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns the current grant state of a runtime permission for a specific application. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getPermissionPolicy(android.content.ComponentName)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#!)` Returns the current runtime permission policy set by the device or profile owner. |
@@ -480,16 +480,16 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getPersonalAppsSuspendedReasons(android.content.ComponentName)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Called by profile owner of an organization-owned managed profile to check whether personal apps are suspended. |
 | open T? | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getPolicy(android.app.admin.PolicyIdentifier,%20kotlin.Int)(id: https://developer.android.com/reference/kotlin/android/app/admin/PolicyIdentifier<T>, scope: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the value of the given policy, as it was set by the caller. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PreferentialNetworkServiceConfig](../android/app/admin/PreferentialNetworkServiceConfig.md)!\> | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getPreferentialNetworkServiceConfigs()()` Get preferential network configuration |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PreferentialNetworkServiceConfig](PreferentialNetworkServiceConfig.md)!\> | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getPreferentialNetworkServiceConfigs()()` Get preferential network configuration |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getRequiredPasswordComplexity()()` Gets the password complexity requirement set by `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setRequiredPasswordComplexity(kotlin.Int)`, for the current user. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getRequiredStrongAuthTimeout(android.content.ComponentName)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#?)` Determine for how long the user will be able to use secondary, non strong auth for authentication, since last strong method authentication (password, pin or pattern) was used. |
 | --- | --- |
 | open T? | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getResolvedDeviceWidePolicy(android.app.admin.PolicyIdentifier)(id: https://developer.android.com/reference/kotlin/android/app/admin/PolicyIdentifier<T>)` Returns the resolved value of the given device-wide policy. |
 | open T? | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getResolvedPerUserPolicy(android.app.admin.PolicyIdentifier)(id: https://developer.android.com/reference/kotlin/android/app/admin/PolicyIdentifier<T>)` Returns the resolved value of the given per-user policy. |
-| open [DevicePolicyResourcesManager](../android/app/admin/DevicePolicyResourcesManager.md) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getResources()()` Returns a `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyResourcesManager` containing the required APIs to set, reset, and get device policy related resources. |
+| open [DevicePolicyResourcesManager](DevicePolicyResourcesManager.md) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getResources()()` Returns a `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyResourcesManager` containing the required APIs to set, reset, and get device policy related resources. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getScreenCaptureDisabled(android.content.ComponentName)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#?)` Determine whether or not screen capture has been disabled by the calling admin, if specified, or all admins. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [UserHandle](../android/os/UserHandle.md)!\>! | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getSecondaryUsers(android.content.ComponentName)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Called by a device owner to list all secondary users on the device. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [UserHandle](../android.os/UserHandle.md)!\>! | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getSecondaryUsers(android.content.ComponentName)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Called by a device owner to list all secondary users on the device. |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getShortSupportMessage(android.content.ComponentName)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#?)` Called by a device admin or holder of the permission `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MANAGE_DEVICE_POLICY_SUPPORT_MESSAGE:kotlin.String` to get the short support message. |
 | --- | --- |
 | open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getStartUserSessionMessage(android.content.ComponentName)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Returns the user session start message. |
@@ -497,16 +497,16 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getStorageEncryptionStatus()()` Called by an application that is administering the device to determine the current encryption status of the device. |
 | --- | --- |
 | open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getSubscriptionIds()()` Returns the subscription ids of all subscriptions which were downloaded by the calling admin. |
-| open [SystemUpdatePolicy](../android/app/admin/SystemUpdatePolicy.md)? | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getSystemUpdatePolicy()()` Retrieve a local system update policy set previously by `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setSystemUpdatePolicy(android.content.ComponentName,%20android.app.admin.SystemUpdatePolicy)`. |
-| open [PersistableBundle](../android/os/PersistableBundle.md)? | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getTransferOwnershipBundle()()` Returns the data passed from the current administrator to the new administrator during an ownership transfer. |
+| open [SystemUpdatePolicy](SystemUpdatePolicy.md)? | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getSystemUpdatePolicy()()` Retrieve a local system update policy set previously by `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setSystemUpdatePolicy(android.content.ComponentName,%20android.app.admin.SystemUpdatePolicy)`. |
+| open [PersistableBundle](../android.os/PersistableBundle.md)? | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getTransferOwnershipBundle()()` Returns the data passed from the current administrator to the new administrator during an ownership transfer. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PersistableBundle](../android/os/PersistableBundle.md)!\>? | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getTrustAgentConfiguration(android.content.ComponentName,%20android.content.ComponentName)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#?, agent: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Gets configuration for the given trust agent based on aggregating all calls to `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setTrustAgentConfiguration(android.content.ComponentName,%20android.content.ComponentName,%20android.os.PersistableBundle)` for all device admins. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PersistableBundle](../android.os/PersistableBundle.md)!\>? | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getTrustAgentConfiguration(android.content.ComponentName,%20android.content.ComponentName)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#?, agent: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Gets configuration for the given trust agent based on aggregating all calls to `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setTrustAgentConfiguration(android.content.ComponentName,%20android.content.ComponentName,%20android.os.PersistableBundle)` for all device admins. |
 | open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getUserControlDisabledPackages(android.content.ComponentName)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#?)` Returns the list of packages over which user control is disabled by a device or profile owner or holders of the permission `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MANAGE_DEVICE_POLICY_APPS_CONTROL:kotlin.String`. |
-| open [Bundle](../android/os/Bundle.md) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getUserRestrictions(android.content.ComponentName)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Called by an admin to get user restrictions set by themselves with `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#addUserRestriction(android.content.ComponentName,%20kotlin.String)`. |
+| open [Bundle](../android.os/Bundle.md) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getUserRestrictions(android.content.ComponentName)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` Called by an admin to get user restrictions set by themselves with `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#addUserRestriction(android.content.ComponentName,%20kotlin.String)`. |
 | --- | --- |
-| open [Bundle](../android/os/Bundle.md) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getUserRestrictionsGlobally()()` Called by a profile or device owner to get global user restrictions set with `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#addUserRestrictionGlobally(kotlin.String)`. |
+| open [Bundle](../android.os/Bundle.md) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getUserRestrictionsGlobally()()` Called by a profile or device owner to get global user restrictions set with `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#addUserRestrictionGlobally(kotlin.String)`. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getWifiMacAddress(android.content.ComponentName)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#?)` Gets the MAC address of the Wi-Fi device. |
-| open [WifiSsidPolicy](../android/app/admin/WifiSsidPolicy.md)? | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getWifiSsidPolicy()()` Returns the current Wi-Fi SSID policy. |
+| open [WifiSsidPolicy](WifiSsidPolicy.md)? | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getWifiSsidPolicy()()` Returns the current Wi-Fi SSID policy. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#grantKeyPairToApp(android.content.ComponentName,%20kotlin.String,%20kotlin.String)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#?, alias: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Called by a device or profile owner, or delegated certificate chooser (an app that has been delegated the `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#DELEGATION_CERT_SELECTION:kotlin.String` privilege), to grant an application access to an already-installed (or generated) KeyChain key. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#grantKeyPairToApp(kotlin.String,%20kotlin.String,%20kotlin.Int)(alias: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, scope: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called by a device or profile owner, delegated certificate chooser (an app that has been delegated the `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#DELEGATION_CERT_SELECTION:kotlin.String` privilege), or permission caller, to grant an application access to an already-installed (or generated) KeyChain key in the specified scope. |
@@ -577,7 +577,7 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#isUsbDataSignalingEnabled()()` Returns whether USB data signaling is currently enabled. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#isUsingUnifiedPassword(android.content.ComponentName)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#)` When called by a profile owner of a managed profile returns true if the profile uses unified challenge with its parent user. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [UserHandle](../android/os/UserHandle.md)!\> | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#listForegroundAffiliatedUsers()()` Gets the list of `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#isAffiliatedUser()` users running on foreground. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [UserHandle](../android.os/UserHandle.md)!\> | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#listForegroundAffiliatedUsers()()` Gets the list of `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#isAffiliatedUser()` users running on foreground. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#lockNow()()` Make the device lock immediately, as if the lock screen timeout has expired at the point of this call. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#lockNow(kotlin.Int)(flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Make the device lock immediately, as if the lock screen timeout has expired at the point of this call. |
@@ -596,7 +596,7 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#resetPassword(kotlin.String,%20kotlin.Int)(password: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Force a new password for device unlock (the password needed to access the entire device) or the work profile challenge on the current user. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#resetPasswordWithToken(android.content.ComponentName,%20kotlin.String,%20kotlin.ByteArray,%20kotlin.Int)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#?, password: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, token: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html!, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called by device or profile owner to force set a new device unlock password or a managed profile challenge on current user. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [NetworkEvent](../android/app/admin/NetworkEvent.md)!\>? | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#retrieveNetworkLogs(android.content.ComponentName,%20kotlin.Long)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#?, batchToken: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Called by device owner, profile owner of a managed profile or delegated app with `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#DELEGATION_NETWORK_LOGGING:kotlin.String` to retrieve the most recent batch of network logging events. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [NetworkEvent](NetworkEvent.md)!\>? | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#retrieveNetworkLogs(android.content.ComponentName,%20kotlin.Long)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#?, batchToken: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Called by device owner, profile owner of a managed profile or delegated app with `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#DELEGATION_NETWORK_LOGGING:kotlin.String` to retrieve the most recent batch of network logging events. |
 | open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SecurityLog.SecurityEvent](../android/app/admin/SecurityLog.SecurityEvent.md)!\>? | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#retrievePreRebootSecurityLogs(android.content.ComponentName)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#?)` Called by device owner or profile owner of an organization-owned managed profile to retrieve device logs from before the device's last reboot. |
 | open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SecurityLog.SecurityEvent](../android/app/admin/SecurityLog.SecurityEvent.md)!\>? | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#retrieveSecurityLogs(android.content.ComponentName)(admin: https://developer.android.com/reference/kotlin/android/content/ComponentName.html#?)` Called by device owner or profile owner of an organization-owned managed profile to retrieve all new security logging entries since the last call to this API after device boots. |
 | --- | --- |
@@ -1043,7 +1043,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val ACTION_PROVISION_MANAGED_PROFILE: String
 ```
 
-Activity action: Starts the provisioning flow which sets up a [managed profile](../android/app/admin/DevicePolicyManager.md).
+Activity action: Starts the provisioning flow which sets up a [managed profile](DevicePolicyManager.md).
 
 It is possible to check if provisioning is allowed or not by querying the method `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#isProvisioningAllowed(kotlin.String)`.
 
@@ -1065,7 +1065,7 @@ The intent may contain the following extras:
 | --- | --- | --- |
 | `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#EXTRA_PROVISIONING_ALLOW_OFFLINE:kotlin.String` | On `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#TIRAMISU:kotlin.Int`+, when set to true this will **force** offline provisioning instead of allowing it ||
 
-When [managed provisioning](../android/app/admin/DevicePolicyManager.md) has completed, broadcasts are sent to the application specified in the provisioning intent. The `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#ACTION_PROFILE_PROVISIONING_COMPLETE:kotlin.String` broadcast is sent in the managed profile and the `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#ACTION_MANAGED_PROFILE_PROVISIONED:kotlin.String` broadcast is sent in the primary profile.
+When [managed provisioning](DevicePolicyManager.md) has completed, broadcasts are sent to the application specified in the provisioning intent. The `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#ACTION_PROFILE_PROVISIONING_COMPLETE:kotlin.String` broadcast is sent in the managed profile and the `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#ACTION_MANAGED_PROFILE_PROVISIONED:kotlin.String` broadcast is sent in the primary profile.
 
 From version `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#O:kotlin.Int`, when managed provisioning has completed, along with the above broadcast, activity intent `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#ACTION_PROVISIONING_SUCCESSFUL:kotlin.String` will also be sent to the profile owner.
 
@@ -1073,7 +1073,7 @@ If provisioning fails, the managed profile is removed so the device returns to i
 
 If launched with `https://developer.android.com/reference/kotlin/android/app/Activity.html#startActivityForResult(android.content.Intent,%20kotlin.Int)` a result code of `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_OK:kotlin.Int` indicates that the synchronous part of the provisioning flow was successful, although this doesn't guarantee the full flow will succeed. Conversely a result code of `https://developer.android.com/reference/kotlin/android/app/Activity.html#RESULT_CANCELED:kotlin.Int` indicates that the user backed-out of provisioning or some precondition for provisioning wasn't met.
 
-If a [device policy management role holder](../android/app/admin/DevicePolicyManager.md) updater is present on the device, an internet connection attempt must be made prior to launching this intent.
+If a [device policy management role holder](DevicePolicyManager.md) updater is present on the device, an internet connection attempt must be made prior to launching this intent.
 
  Value: "android.app.action.PROVISION_MANAGED_PROFILE"
 
@@ -1636,7 +1636,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_PROVISIONING_ADMIN_EXTRAS_BUNDLE: String
 ```
 
-A `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` extra of type `https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#` that is passed directly to the [Device Policy Controller](../android/app/admin/DevicePolicyManager.md) after [provisioning](../android/app/admin/DevicePolicyManager.md).
+A `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#` extra of type `https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#` that is passed directly to the [Device Policy Controller](DevicePolicyManager.md) after [provisioning](DevicePolicyManager.md).
 
 Starting from `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#M:kotlin.Int`, if used with `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#MIME_TYPE_PROVISIONING_NFC:kotlin.String` as part of NFC managed device provisioning, the NFC message should contain a stringified `https://developer.android.com/reference/kotlin/java/util/Properties.html#` instance, whose string properties will be converted into a `https://developer.android.com/reference/kotlin/android/os/PersistableBundle.html#` and passed to the management application after provisioning.
 
@@ -1685,7 +1685,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_PROVISIONING_DEVICE_ADMIN_COMPONENT_NAME: String
 ```
 
-A ComponentName extra indicating the `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` of the application that will be set as the [Device Policy Controller](../android/app/admin/DevicePolicyManager.md).
+A ComponentName extra indicating the `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` of the application that will be set as the [Device Policy Controller](DevicePolicyManager.md).
 
 If an application starts provisioning directly via an intent with action `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#ACTION_PROVISION_MANAGED_DEVICE:kotlin.String` the package name of this component has to match the package name of the application that started provisioning.
 
@@ -1764,9 +1764,9 @@ static val EXTRA_PROVISIONING_DEVICE_ADMIN_PACKAGE_NAME: String
 
 **Deprecated:** *Use `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#EXTRA_PROVISIONING_DEVICE_ADMIN_COMPONENT_NAME:kotlin.String`.*
 
-A String extra holding the package name of the application that will be set as [Device Policy Controller](../android/app/admin/DevicePolicyManager.md).
+A String extra holding the package name of the application that will be set as [Device Policy Controller](DevicePolicyManager.md).
 
-When this extra is set, the application must have exactly one `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver`. This receiver will be set as the [Device Policy Controller](../android/app/admin/DevicePolicyManager.md).
+When this extra is set, the application must have exactly one `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver`. This receiver will be set as the [Device Policy Controller](DevicePolicyManager.md).
 
  Value: "android.app.extra.PROVISIONING_DEVICE_ADMIN_PACKAGE_NAME"
 
@@ -1990,7 +1990,7 @@ Deprecated in [API level 33](https://developer.android.com/guide/topics/manifest
 static val EXTRA_PROVISIONING_LOGO_URI: String
 ```
 
-**Deprecated:** *Logo customization is no longer supported in the [provisioning flow](../android/app/admin/DevicePolicyManager.md).*
+**Deprecated:** *Logo customization is no longer supported in the [provisioning flow](DevicePolicyManager.md).*
 
 A `https://developer.android.com/reference/kotlin/android/net/Uri.html#` extra pointing to a logo image. This image will be shown during the provisioning. If this extra is not passed, a default image will be shown.
 
@@ -2116,7 +2116,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 static val EXTRA_PROVISIONING_SKIP_ENCRYPTION: String
 ```
 
-A boolean extra indicating whether device encryption can be skipped as part of [provisioning](../android/app/admin/DevicePolicyManager.md).
+A boolean extra indicating whether device encryption can be skipped as part of [provisioning](DevicePolicyManager.md).
 
 Use in an NFC record with `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#MIME_TYPE_PROVISIONING_NFC:kotlin.String` or an intent with action `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#ACTION_PROVISION_MANAGED_DEVICE:kotlin.String` that starts device owner provisioning.
 
@@ -2135,7 +2135,7 @@ static val EXTRA_PROVISIONING_SKIP_USER_CONSENT: String
 
 **Deprecated:** *this extra is no longer relevant as device owners cannot create managed profiles*
 
-A boolean extra indicating if the user consent steps from the [provisioning flow](../android/app/admin/DevicePolicyManager.md) should be skipped.
+A boolean extra indicating if the user consent steps from the [provisioning flow](DevicePolicyManager.md) should be skipped.
 
 If unspecified, defaults to `false`.
 
@@ -3773,8 +3773,8 @@ Called by the profile owner of a managed profile so that some intents sent in th
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value may be `null`. |
-| `filter` | [IntentFilter](../android/content/IntentFilter.md)!: The `https://developer.android.com/reference/kotlin/android/content/IntentFilter.html#` the intent has to match to be also resolved in the other profile |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value may be `null`. |
+| `filter` | [IntentFilter](../android.content/IntentFilter.md)!: The `https://developer.android.com/reference/kotlin/android/content/IntentFilter.html#` the intent has to match to be also resolved in the other profile |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#FLAG_MANAGED_CAN_ACCESS_PARENT:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#FLAG_PARENT_CAN_ACCESS_MANAGED:kotlin.Int` are supported. |
 | --- | --- |
 
@@ -3799,7 +3799,7 @@ Called by the profile owner of a managed profile or a holder of the permission `
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The package from which widget providers are allowlisted. |
 
 | Return ||
@@ -3850,8 +3850,8 @@ Starting from Android version `https://developer.android.com/reference/kotlin/an
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
-| `apnSetting` | [ApnSetting](../android/telephony/data/ApnSetting.md): the override APN to insert. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `apnSetting` | [ApnSetting](../android.telephony.data/ApnSetting.md): the override APN to insert. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -3900,9 +3900,9 @@ NOTE: Performs disk I/O and shouldn't be called on the main thread.
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
-| `filter` | [IntentFilter](../android/content/IntentFilter.md)!: The IntentFilter for which a default handler is added. |
-| `activity` | [ComponentName](../android/content/ComponentName.md): The Activity that is added as default intent handler. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
+| `filter` | [IntentFilter](../android.content/IntentFilter.md)!: The IntentFilter for which a default handler is added. |
+| `activity` | [ComponentName](../android.content/ComponentName.md): The Activity that is added as default intent handler. This value cannot be `null`. |
 | --- | --- |
 
 | Exceptions ||
@@ -3938,7 +3938,7 @@ If there has been a change to the policy, `https://developer.android.com/referen
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with or `null` if the caller is not a device admin. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with or `null` if the caller is not a device admin. |
 | `key` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The key of the restriction. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#ALLOW_PARENT_PROFILE_APP_LINKING:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_ADD_MANAGED_PROFILE:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_ADD_PRIVATE_PROFILE:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_ADD_USER:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_ADD_WIFI_CONFIG:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_ADJUST_VOLUME:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_AIRPLANE_MODE:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_AMBIENT_DISPLAY:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_APPS_CONTROL:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_ASSIST_CONTENT:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_AUTOFILL:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_BLUETOOTH:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_BLUETOOTH_SHARING:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_CAMERA_TOGGLE:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_CELLULAR_2G:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_CHANGE_NEAR_FIELD_COMMUNICATION_RADIO:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_CHANGE_WIFI_STATE:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_CONFIG_BLUETOOTH:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_CONFIG_BRIGHTNESS:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_CONFIG_CELL_BROADCASTS:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_CONFIG_CREDENTIALS:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_CONFIG_DATE_TIME:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_CONFIG_DEFAULT_APPS:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_CONFIG_LOCALE:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_CONFIG_LOCATION:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_CONFIG_MOBILE_NETWORKS:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_CONFIG_PRIVATE_DNS:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_CONFIG_SCREEN_TIMEOUT:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_CONFIG_TETHERING:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_CONFIG_VPN:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_CONFIG_WIFI:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_CONTENT_CAPTURE:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_CONTENT_SUGGESTIONS:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_CREATE_WINDOWS:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_CROSS_PROFILE_COPY_PASTE:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_DATA_ROAMING:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_DEBUGGING_FEATURES:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_FACTORY_RESET:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_FUN:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_GRANT_ADMIN:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_TASK_CONTINUITY_HANDOFF:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_INSTALL_APPS:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_INSTALL_UNKNOWN_SOURCES:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_INSTALL_UNKNOWN_SOURCES_GLOBALLY:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_INSTALL_UNKNOWN_SOURCES_INCLUDING_REGISTERED_APP_STORES:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_MICROPHONE_TOGGLE:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_MODIFY_ACCOUNTS:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_MOUNT_PHYSICAL_MEDIA:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_NEAR_FIELD_COMMUNICATION_RADIO:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_NETWORK_RESET:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_OUTGOING_BEAM:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_OUTGOING_CALLS:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_PRINTING:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_REMOVE_MANAGED_PROFILE:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_REMOVE_USER:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_SAFE_BOOT:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_SET_USER_ICON:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_SET_WALLPAPER:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_SHARE_INTO_MANAGED_PROFILE:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_SHARE_LOCATION:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_SHARING_ADMIN_CONFIGURED_WIFI:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_SIM_GLOBALLY:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_SMS:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_SYSTEM_ERROR_DIALOGS:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_THREAD_NETWORK:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_ULTRA_WIDEBAND_RADIO:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_UNIFIED_PASSWORD:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_UNINSTALL_APPS:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_UNMUTE_MICROPHONE:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_USB_FILE_TRANSFER:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_USER_SWITCH:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_WIFI_DIRECT:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_WIFI_TETHERING:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#ENSURE_VERIFY_APPS:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#KEY_RESTRICTIONS_PENDING:kotlin.String` |
 
 | Exceptions ||
@@ -3996,12 +3996,12 @@ See `https://developer.android.com/reference/kotlin/android/app/admin/DevicePoli
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): This value cannot be `null`. |
-| `serviceIntent` | [Intent](../android/content/Intent.md): This value cannot be `null`. |
-| `conn` | [ServiceConnection](../android/content/ServiceConnection.md): This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): This value cannot be `null`. |
+| `serviceIntent` | [Intent](../android.content/Intent.md): This value cannot be `null`. |
+| `conn` | [ServiceConnection](../android.content/ServiceConnection.md): This value cannot be `null`. |
 | --- | --- |
 | `flags` | [Context.BindServiceFlags](../android/content/Context.BindServiceFlags.md): This value cannot be `null`. |
-| `targetUser` | [UserHandle](../android/os/UserHandle.md): This value cannot be `null`. |
+| `targetUser` | [UserHandle](../android.os/UserHandle.md): This value cannot be `null`. |
 
 ### bindDeviceAdminServiceAsUser
 
@@ -4025,12 +4025,12 @@ Note: This method used to be available for communication between device owner an
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
-| `serviceIntent` | [Intent](../android/content/Intent.md): Identifies the service to connect to. The Intent must specify either an explicit component name or a package name to match an `https://developer.android.com/reference/kotlin/android/content/IntentFilter.html#` published by a service. This value cannot be `null`. |
-| `conn` | [ServiceConnection](../android/content/ServiceConnection.md): Receives information as the service is started and stopped in main thread. This must be a valid `https://developer.android.com/reference/kotlin/android/content/ServiceConnection.html#` object; it must not be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `serviceIntent` | [Intent](../android.content/Intent.md): Identifies the service to connect to. The Intent must specify either an explicit component name or a package name to match an `https://developer.android.com/reference/kotlin/android/content/IntentFilter.html#` published by a service. This value cannot be `null`. |
+| `conn` | [ServiceConnection](../android.content/ServiceConnection.md): Receives information as the service is started and stopped in main thread. This must be a valid `https://developer.android.com/reference/kotlin/android/content/ServiceConnection.html#` object; it must not be `null`. |
 | --- | --- |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Operation options for the binding operation. See `https://developer.android.com/reference/kotlin/android/content/Context.html#bindService(android.content.Intent,%20android.content.ServiceConnection,%20kotlin.Int)`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/content/Context.html#BIND_AUTO_CREATE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context.html#BIND_DEBUG_UNBIND:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context.html#BIND_NOT_FOREGROUND:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context.html#BIND_ABOVE_CLIENT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context.html#BIND_ALLOW_OOM_MANAGEMENT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context.html#BIND_WAIVE_PRIORITY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context.html#BIND_IMPORTANT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context.html#BIND_ADJUST_WITH_ACTIVITY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context.html#BIND_NOT_PERCEPTIBLE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context.html#BIND_ALLOW_ACTIVITY_STARTS:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context.html#BIND_INCLUDE_CAPABILITIES:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context.html#BIND_SHARED_ISOLATED_PROCESS:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context.html#BIND_PACKAGE_ISOLATED_PROCESS:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/content/Context.html#BIND_EXTERNAL_SERVICE:kotlin.Int` |
-| `targetUser` | [UserHandle](../android/os/UserHandle.md): Which user to bind to. Must be one of the users returned by `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getBindDeviceAdminTargetUsers(android.content.ComponentName)`, otherwise a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` will be thrown. This value cannot be `null`. |
+| `targetUser` | [UserHandle](../android.os/UserHandle.md): Which user to bind to. Must be one of the users returned by `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getBindDeviceAdminTargetUsers(android.content.ComponentName)`, otherwise a `https://developer.android.com/reference/kotlin/java/lang/SecurityException.html#` will be thrown. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -4088,9 +4088,9 @@ Called by the device owner or profile owner to clear application user data of a 
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The name of the package which will have its user data wiped. This value cannot be `null`. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): The executor through which the listener should be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor through which the listener should be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | --- | --- |
 | `listener` | [DevicePolicyManager.OnClearApplicationUserDataListener](../android/app/admin/DevicePolicyManager.OnClearApplicationUserDataListener.md): A callback object that will inform the caller when the clearing is done. This value cannot be `null`. |
 
@@ -4112,7 +4112,7 @@ Called by a profile owner of a managed profile to remove the cross-profile inten
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value may be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value may be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -4167,7 +4167,7 @@ If there has been a change to the policy, `https://developer.android.com/referen
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The name of the package for which preferences are removed. |
 
 | Exceptions ||
@@ -4191,7 +4191,7 @@ While some policies previously set by the profile owner will be cleared by this 
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): The component to remove as the profile owner. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): The component to remove as the profile owner. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -4212,7 +4212,7 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -4251,7 +4251,7 @@ If there has been a change to the policy, `https://developer.android.com/referen
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with or `null` if the caller is not a device admin. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with or `null` if the caller is not a device admin. |
 | `key` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The key of the restriction. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#ALLOW_PARENT_PROFILE_APP_LINKING:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_ADD_MANAGED_PROFILE:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_ADD_PRIVATE_PROFILE:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_ADD_USER:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_ADD_WIFI_CONFIG:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_ADJUST_VOLUME:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_AIRPLANE_MODE:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_AMBIENT_DISPLAY:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_APPS_CONTROL:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_ASSIST_CONTENT:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_AUTOFILL:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_BLUETOOTH:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_BLUETOOTH_SHARING:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_CAMERA_TOGGLE:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_CELLULAR_2G:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_CHANGE_NEAR_FIELD_COMMUNICATION_RADIO:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_CHANGE_WIFI_STATE:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_CONFIG_BLUETOOTH:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_CONFIG_BRIGHTNESS:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_CONFIG_CELL_BROADCASTS:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_CONFIG_CREDENTIALS:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_CONFIG_DATE_TIME:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_CONFIG_DEFAULT_APPS:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_CONFIG_LOCALE:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_CONFIG_LOCATION:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_CONFIG_MOBILE_NETWORKS:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_CONFIG_PRIVATE_DNS:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_CONFIG_SCREEN_TIMEOUT:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_CONFIG_TETHERING:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_CONFIG_VPN:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_CONFIG_WIFI:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_CONTENT_CAPTURE:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_CONTENT_SUGGESTIONS:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_CREATE_WINDOWS:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_CROSS_PROFILE_COPY_PASTE:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_DATA_ROAMING:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_DEBUGGING_FEATURES:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_FACTORY_RESET:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_FUN:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_GRANT_ADMIN:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_TASK_CONTINUITY_HANDOFF:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_INSTALL_APPS:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_INSTALL_UNKNOWN_SOURCES:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_INSTALL_UNKNOWN_SOURCES_GLOBALLY:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_INSTALL_UNKNOWN_SOURCES_INCLUDING_REGISTERED_APP_STORES:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_MICROPHONE_TOGGLE:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_MODIFY_ACCOUNTS:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_MOUNT_PHYSICAL_MEDIA:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_NEAR_FIELD_COMMUNICATION_RADIO:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_NETWORK_RESET:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_OUTGOING_BEAM:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_OUTGOING_CALLS:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_PRINTING:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_REMOVE_MANAGED_PROFILE:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_REMOVE_USER:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_SAFE_BOOT:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_SET_USER_ICON:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_SET_WALLPAPER:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_SHARE_INTO_MANAGED_PROFILE:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_SHARE_LOCATION:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_SHARING_ADMIN_CONFIGURED_WIFI:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_SIM_GLOBALLY:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_SMS:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_SYSTEM_ERROR_DIALOGS:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_THREAD_NETWORK:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_ULTRA_WIDEBAND_RADIO:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_UNIFIED_PASSWORD:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_UNINSTALL_APPS:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_UNMUTE_MICROPHONE:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_USB_FILE_TRANSFER:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_USER_SWITCH:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_WIFI_DIRECT:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#DISALLOW_WIFI_TETHERING:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#ENSURE_VERIFY_APPS:kotlin.String` - `https://developer.android.com/reference/kotlin/android/os/UserManager.html#KEY_RESTRICTIONS_PENDING:kotlin.String` |
 
 | Exceptions ||
@@ -4300,11 +4300,11 @@ From `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CO
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The user's name. This value cannot be `null`. |
-| `profileOwner` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` will be profile owner. Has to be in the same package as admin, otherwise no user is created and an IllegalArgumentException is thrown. This value cannot be `null`. |
+| `profileOwner` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` will be profile owner. Has to be in the same package as admin, otherwise no user is created and an IllegalArgumentException is thrown. This value cannot be `null`. |
 | --- | --- |
-| `adminExtras` | [PersistableBundle](../android/os/PersistableBundle.md)?: Extras that will be passed to onEnable of the admin receiver on the new user. This value may be `null`. |
+| `adminExtras` | [PersistableBundle](../android.os/PersistableBundle.md)?: Extras that will be passed to onEnable of the admin receiver on the new user. This value may be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#SKIP_SETUP_WIZARD:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#MAKE_USER_EPHEMERAL:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#LEAVE_ALL_SYSTEM_APPS_ENABLED:kotlin.Int` are supported. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#SKIP_SETUP_WIZARD:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#MAKE_USER_EPHEMERAL:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#LEAVE_ALL_SYSTEM_APPS_ENABLED:kotlin.Int` |
 
 | Return ||
@@ -4335,8 +4335,8 @@ Re-enable system apps by intent that were disabled by default when the user was 
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with, or `null` if the caller is an enable system app delegate. |
-| `intent` | [Intent](../android/content/Intent.md)!: An intent matching the app(s) to be installed. All apps that resolve for this intent will be re-enabled in the calling profile. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with, or `null` if the caller is an enable system app delegate. |
+| `intent` | [Intent](../android.content/Intent.md)!: An intent matching the app(s) to be installed. All apps that resolve for this intent will be re-enabled in the calling profile. |
 
 | Return ||
 |---|---|
@@ -4366,7 +4366,7 @@ Re-enable a system app that was disabled by default when the user was initialize
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with, or `null` if the caller is an enable system app delegate. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with, or `null` if the caller is an enable system app delegate. |
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The package to be re-enabled in the calling profile. |
 
 | Exceptions ||
@@ -4425,9 +4425,9 @@ Attestation using `https://developer.android.com/reference/kotlin/android/app/ad
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with, or `null` if the caller is not a device admin. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with, or `null` if the caller is not a device admin. |
 | `algorithm` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The key generation algorithm, see `https://developer.android.com/reference/kotlin/java/security/KeyPairGenerator.html#`. This value cannot be `null`. |
-| `keySpec` | [KeyGenParameterSpec](../android/security/keystore/KeyGenParameterSpec.md): Specification of the key to generate, see `https://developer.android.com/reference/kotlin/java/security/KeyPairGenerator.html#`. This value cannot be `null`. |
+| `keySpec` | [KeyGenParameterSpec](../android.security.keystore/KeyGenParameterSpec.md): Specification of the key to generate, see `https://developer.android.com/reference/kotlin/java/security/KeyPairGenerator.html#`. This value cannot be `null`. |
 | --- | --- |
 | `idAttestationFlags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): A bitmask of the identifiers that should be included in the attestation record (`ID_TYPE_BASE_INFO`, `ID_TYPE_SERIAL`, `ID_TYPE_IMEI` and `ID_TYPE_MEID`), and `ID_TYPE_INDIVIDUAL_ATTESTATION` if the attestation record should be signed using an individual attestation certificate. `0` should be passed in if no device identification is required in the attestation record and the batch attestation certificate should be used. If any flag is specified, then an attestation challenge must be included in the `keySpec`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#ID_TYPE_BASE_INFO:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#ID_TYPE_SERIAL:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#ID_TYPE_IMEI:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#ID_TYPE_MEID:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#ID_TYPE_INDIVIDUAL_ATTESTATION:kotlin.Int` |
 
@@ -4477,7 +4477,7 @@ Key differences in this overload:
 | Parameters ||
 |---|---|
 | `algorithm` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The key generation algorithm, see `https://developer.android.com/reference/kotlin/java/security/KeyPairGenerator.html#`. This value cannot be `null`. |
-| `keySpec` | [KeyGenParameterSpec](../android/security/keystore/KeyGenParameterSpec.md): Specification of the key to generate, see `https://developer.android.com/reference/kotlin/java/security/KeyPairGenerator.html#`. This value cannot be `null`. |
+| `keySpec` | [KeyGenParameterSpec](../android.security.keystore/KeyGenParameterSpec.md): Specification of the key to generate, see `https://developer.android.com/reference/kotlin/java/security/KeyPairGenerator.html#`. This value cannot be `null`. |
 | `idAttestationFlags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): A bitmask of the identifiers that should be included in the attestation record. See base method for details. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#ID_TYPE_BASE_INFO:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#ID_TYPE_SERIAL:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#ID_TYPE_IMEI:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#ID_TYPE_MEID:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#ID_TYPE_INDIVIDUAL_ATTESTATION:kotlin.Int` |
 | --- | --- |
 | `scope` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The scope of the key pair: `https://developer.android.com/reference/kotlin/android/security/KeyChainManager.html#KEYPAIR_SCOPE_USER:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/security/KeyChainManager.html#KEYPAIR_SCOPE_DEVICE:kotlin.Int`. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/security/KeyChainManager.html#KEYPAIR_SCOPE_USER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/security/KeyChainManager.html#KEYPAIR_SCOPE_DEVICE:kotlin.Int` |
@@ -4539,7 +4539,7 @@ Returns the set of affiliation ids previously set via `https://developer.android
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -4557,7 +4557,7 @@ Called by device or profile owner to query the set of packages that are allowed 
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -4579,7 +4579,7 @@ Called by a device or profile owner to read the name of the package administerin
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -4629,7 +4629,7 @@ This method may take several seconds to complete, so it should only be called fr
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with, or `null` if called by the application restrictions managing package. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with, or `null` if called by the application restrictions managing package. |
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The name of the package to fetch restricted settings of. |
 
 | Return ||
@@ -4660,7 +4660,7 @@ Called by a profile owner or device owner to retrieve the application restrictio
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -4682,7 +4682,7 @@ Returns true if auto time is enabled on the device.
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -4737,7 +4737,7 @@ Returns true if auto time zone is enabled on the device.
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -4779,7 +4779,7 @@ A device owner can bind to a service from a secondary managed user and vice vers
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -4801,7 +4801,7 @@ This API works on managed profile only.
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -4823,7 +4823,7 @@ This method can be called on the `https://developer.android.com/reference/kotlin
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: The name of the admin component to check, or `null` to check whether any admins have disabled the camera |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: The name of the admin component to check, or `null` to check whether any admins have disabled the camera |
 
 ### getCertInstallerPackage
 
@@ -4840,7 +4840,7 @@ Called by a profile owner or device owner to retrieve the certificate installer 
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -4864,7 +4864,7 @@ The returned policy will be the current resolved policy rather than the policy s
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -4913,7 +4913,7 @@ Called by a profile owner of a managed profile.
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -4946,7 +4946,7 @@ Starting with `https://developer.android.com/reference/kotlin/android/os/Build.V
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -4971,7 +4971,7 @@ Starting with `https://developer.android.com/reference/kotlin/android/os/Build.V
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -4993,7 +4993,7 @@ Note that other apps not included in the returned set may be able to request use
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): the `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): the `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -5011,7 +5011,7 @@ Called by the profile owner of a managed profile or a holder of the permission `
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -5066,7 +5066,7 @@ Called by a profile owner or device owner to retrieve a list of delegate package
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 | `delegationScope` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The scope whose delegates should be retrieved. This value cannot be `null`. |
 
 | Return ||
@@ -5092,7 +5092,7 @@ Called by a profile owner or device owner to retrieve a list of the scopes given
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with, or `null` if the caller is `delegatedPackage`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with, or `null` if the caller is `delegatedPackage`. |
 | `delegatedPackage` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The package name of the app whose scopes should be retrieved. This value cannot be `null`. |
 
 | Return ||
@@ -5139,7 +5139,7 @@ Returns the user session end message.
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -5179,7 +5179,7 @@ This method can also be called by the FRP management agent on device or with the
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with or `null` if the caller is not a device admin |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with or `null` if the caller is not a device admin |
 
 | Return ||
 |---|---|
@@ -5202,7 +5202,7 @@ Returns the system-wide Private DNS host.
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -5226,7 +5226,7 @@ This may be called by the device owner. Starting from Android 18, it can also be
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -5248,7 +5248,7 @@ Returns all CA certificates that are currently trusted, excluding system CA cert
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with, or `null` if calling from a delegated certificate installer. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with, or `null` if calling from a delegated certificate installer. |
 
 | Return ||
 |---|---|
@@ -5272,7 +5272,7 @@ Please note that packages returned in this method are not automatically pre-cach
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with, or `null` if the caller is a keep uninstalled packages delegate. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with, or `null` if the caller is a keep uninstalled packages delegate. |
 
 | Return ||
 |---|---|
@@ -5359,7 +5359,7 @@ This method can be called on the `https://developer.android.com/reference/kotlin
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: The name of the admin component to check, or `null` to check whether any admins have disabled features in keyguard. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: The name of the admin component to check, or `null` to check whether any admins have disabled features in keyguard. |
 
 | Return ||
 |---|---|
@@ -5381,7 +5381,7 @@ Starting from `https://developer.android.com/reference/kotlin/android/os/Build.V
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -5412,7 +5412,7 @@ Starting from `https://developer.android.com/reference/kotlin/android/os/Build.V
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -5439,7 +5439,7 @@ Called by a device admin to get the long support message.
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -5501,7 +5501,7 @@ Called by a profile owner of an organization-owned managed profile to get maximu
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -5546,7 +5546,7 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: The name of the admin component to check, or `null` to aggregate all admins. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: The name of the admin component to check, or `null` to aggregate all admins. |
 
 ### getMaximumTimeToLock
 
@@ -5562,7 +5562,7 @@ This method can be called on the `https://developer.android.com/reference/kotlin
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: The name of the admin component to check, or `null` to aggregate all admins. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: The name of the admin component to check, or `null` to aggregate all admins. |
 
 | Return ||
 |---|---|
@@ -5580,7 +5580,7 @@ Called by a device or profile owner to retrieve the list of packages which are r
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -5673,7 +5673,7 @@ Called by a profile owner of a managed profile to retrieve the color used for cu
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -5695,7 +5695,7 @@ Called by the device owner (since API 26) or profile owner (since API 24) or hol
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -5717,7 +5717,7 @@ Called by device owner or managed profile owner to get all override APNs inserte
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -5782,7 +5782,7 @@ The following methods are supported for the parent instance, all other methods w
 - `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setRequiredPasswordComplexity(kotlin.Int)`
 - `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getRequiredPasswordComplexity()`
 
-The following methods are supported for the parent instance but can only be called by the profile owner on an [organization owned](../android/app/admin/DevicePolicyManager.md) managed profile:
+The following methods are supported for the parent instance but can only be called by the profile owner on an [organization owned](DevicePolicyManager.md) managed profile:
 
 - `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#getPasswordComplexity()`
 - `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setCameraDisabled(android.content.ComponentName,%20kotlin.Boolean)`
@@ -5796,7 +5796,7 @@ The following methods are supported for the parent instance but can only be call
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with or `null` if the caller is not a profile owner. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with or `null` if the caller is not a profile owner. |
 
 | Return ||
 |---|---|
@@ -5848,7 +5848,7 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: The name of the admin component to check, or `null` to aggregate all admins. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: The name of the admin component to check, or `null` to aggregate all admins. |
 
 | Return ||
 |---|---|
@@ -5871,7 +5871,7 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: The name of the admin component to check, or `null` to aggregate all admins. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: The name of the admin component to check, or `null` to aggregate all admins. |
 
 | Return ||
 |---|---|
@@ -5894,7 +5894,7 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: The name of the admin component to check, or `null` to aggregate all admins. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: The name of the admin component to check, or `null` to aggregate all admins. |
 
 | Return ||
 |---|---|
@@ -5939,7 +5939,7 @@ This method can be called on the `https://developer.android.com/reference/kotlin
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: The name of the admin component to check, or `null` to aggregate all admins. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: The name of the admin component to check, or `null` to aggregate all admins. |
 
 ### getPasswordMinimumLetters
 
@@ -5960,7 +5960,7 @@ This method can be called on the `https://developer.android.com/reference/kotlin
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: The name of the admin component to check, or `null` to aggregate all admins. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: The name of the admin component to check, or `null` to aggregate all admins. |
 
 | Return ||
 |---|---|
@@ -5985,7 +5985,7 @@ This method can be called on the `https://developer.android.com/reference/kotlin
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: The name of the admin component to check, or `null` to aggregate all admins. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: The name of the admin component to check, or `null` to aggregate all admins. |
 
 | Return ||
 |---|---|
@@ -6010,7 +6010,7 @@ This method can be called on the `https://developer.android.com/reference/kotlin
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: The name of the admin component to check, or `null` to aggregate all admins. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: The name of the admin component to check, or `null` to aggregate all admins. |
 
 | Return ||
 |---|---|
@@ -6035,7 +6035,7 @@ This method can be called on the `https://developer.android.com/reference/kotlin
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: The name of the admin component to check, or `null` to aggregate all admins. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: The name of the admin component to check, or `null` to aggregate all admins. |
 
 | Return ||
 |---|---|
@@ -6060,7 +6060,7 @@ This method can be called on the `https://developer.android.com/reference/kotlin
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: The name of the admin component to check, or `null` to aggregate all admins. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: The name of the admin component to check, or `null` to aggregate all admins. |
 
 | Return ||
 |---|---|
@@ -6085,7 +6085,7 @@ This method can be called on the `https://developer.android.com/reference/kotlin
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: The name of the admin component to check, or `null` to aggregate all admins. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: The name of the admin component to check, or `null` to aggregate all admins. |
 
 | Return ||
 |---|---|
@@ -6110,7 +6110,7 @@ Note: on devices not supporting `https://developer.android.com/reference/kotlin/
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: The name of the admin component to check, or `null` to aggregate all admins. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: The name of the admin component to check, or `null` to aggregate all admins. |
 
 ### getPendingSystemUpdate
 
@@ -6124,7 +6124,7 @@ Get information about a pending system update. Can be called by device or profil
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which profile or device owner this request is associated with. This value may be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which profile or device owner this request is associated with. This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -6154,7 +6154,7 @@ Returns the current grant state of a runtime permission for a specific applicati
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The application to check the grant state for. This value cannot be `null`. |
 | `permission` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The permission to check for. This value cannot be `null`. |
 | --- | --- |
@@ -6186,7 +6186,7 @@ Returns the current runtime permission policy set by the device or profile owner
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)!: Which profile or device owner this request is associated with. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)!: Which profile or device owner this request is associated with. |
 
 | Return ||
 |---|---|
@@ -6206,7 +6206,7 @@ An empty list means no accessibility services except system services are allowed
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -6230,7 +6230,7 @@ An empty list means no notification listener services except system ones are all
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): This value cannot be `null`. |
 
 ### getPermittedInputMethods
 
@@ -6248,7 +6248,7 @@ An empty list means no input methods except system input methods are allowed. Nu
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -6270,7 +6270,7 @@ Called by profile owner of an organization-owned managed profile to check whethe
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -6298,7 +6298,7 @@ Use `https://developer.android.com/reference/kotlin/android/app/admin/DevicePoli
 | Parameters ||
 |---|---|
 | `<T>` | The type of the policy. |
-| `id` | [PolicyIdentifier](../android/app/admin/PolicyIdentifier.md)\<T\>: The identifier of the policy to get. This value cannot be `null`. |
+| `id` | [PolicyIdentifier](PolicyIdentifier.md)\<T\>: The identifier of the policy to get. This value cannot be `null`. |
 | `scope` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The scope with which the policy was set. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#POLICY_SCOPE_USER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#POLICY_SCOPE_DEVICE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#POLICY_SCOPE_PARENT_USER:kotlin.Int` |
 | --- | --- |
 
@@ -6375,7 +6375,7 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: The name of the admin component to check, or `null` to aggregate across all participating admins. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: The name of the admin component to check, or `null` to aggregate across all participating admins. |
 
 | Return ||
 |---|---|
@@ -6400,7 +6400,7 @@ Returns null when the policy is not set.
 | Parameters ||
 |---|---|
 | `<T>` | The type of the policy. |
-| `id` | [PolicyIdentifier](../android/app/admin/PolicyIdentifier.md)\<T\>: Which policy to retrieve. This value cannot be `null`. |
+| `id` | [PolicyIdentifier](PolicyIdentifier.md)\<T\>: Which policy to retrieve. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -6430,7 +6430,7 @@ Returns null when the policy is not set.
 | Parameters ||
 |---|---|
 | `<T>` | The type of the policy. |
-| `id` | [PolicyIdentifier](../android/app/admin/PolicyIdentifier.md)\<T\>: Which policy to retrieve. This value cannot be `null`. |
+| `id` | [PolicyIdentifier](PolicyIdentifier.md)\<T\>: Which policy to retrieve. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -6469,7 +6469,7 @@ This method can be called on the `https://developer.android.com/reference/kotlin
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: The name of the admin component to check, or `null` to check whether any admins have disabled screen capture. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: The name of the admin component to check, or `null` to check whether any admins have disabled screen capture. |
 
 ### getSecondaryUsers
 
@@ -6485,7 +6485,7 @@ Used for various user management APIs, including `https://developer.android.com/
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -6514,7 +6514,7 @@ Called by a device admin or holder of the permission `https://developer.android.
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -6536,7 +6536,7 @@ Returns the user session start message.
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -6555,7 +6555,7 @@ open fun getStorageEncryption(admin: ComponentName?): Boolean
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. If null, this will return the requested encryption setting as an aggregate of all active administrators. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. If null, this will return the requested encryption setting as an aggregate of all active administrators. |
 
 | Return ||
 |---|---|
@@ -6661,8 +6661,8 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. If null, this function returns a list of configurations for all admins that declare `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#KEYGUARD_DISABLE_TRUST_AGENTS:kotlin.Int`. If any admin declares `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#KEYGUARD_DISABLE_TRUST_AGENTS:kotlin.Int` but doesn't call `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setTrustAgentConfiguration(android.content.ComponentName,%20android.content.ComponentName,%20android.os.PersistableBundle)` for this `agent` or calls it with a null configuration, null is returned. |
-| `agent` | [ComponentName](../android/content/ComponentName.md): Which component to get enabled features for. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. If null, this function returns a list of configurations for all admins that declare `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#KEYGUARD_DISABLE_TRUST_AGENTS:kotlin.Int`. If any admin declares `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#KEYGUARD_DISABLE_TRUST_AGENTS:kotlin.Int` but doesn't call `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setTrustAgentConfiguration(android.content.ComponentName,%20android.content.ComponentName,%20android.os.PersistableBundle)` for this `agent` or calls it with a null configuration, null is returned. |
+| `agent` | [ComponentName](../android.content/ComponentName.md): Which component to get enabled features for. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -6682,7 +6682,7 @@ Starting from `https://developer.android.com/reference/kotlin/android/os/Build.V
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -6712,7 +6712,7 @@ Note that this is different that the returned restrictions for callers targeting
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -6757,7 +6757,7 @@ The caller must be a device owner, a profile owner on an organization-owned devi
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which admin this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which admin this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -6805,7 +6805,7 @@ Called by a device or profile owner, or delegated certificate chooser (an app th
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with, or `null` if calling from a delegated certificate chooser. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with, or `null` if calling from a delegated certificate chooser. |
 | `alias` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The alias of the key to grant access to. This value cannot be `null`. |
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The name of the (already installed) package to grant access to. This value cannot be `null`. |
 | --- | --- |
@@ -6929,7 +6929,7 @@ Returns whether this certificate is installed as a trusted CA.
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with, or `null` if calling from a delegated certificate installer. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with, or `null` if calling from a delegated certificate installer. |
 | `certBuffer` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!: encoded form of the certificate to look up. |
 
 | Exceptions ||
@@ -6951,7 +6951,7 @@ Returns true if an administrator has been granted a particular device policy. Th
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Must be an active administrator, or an exception will be thrown. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Must be an active administrator, or an exception will be thrown. This value cannot be `null`. |
 | `usesPolicy` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Which uses-policy to check, as defined in `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminInfo`. |
 
 | Exceptions ||
@@ -7048,7 +7048,7 @@ Called by a device owner or a profile owner of an organization-owned managed pro
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: admin Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value may be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: admin Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value may be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -7071,7 +7071,7 @@ Inserted user CAs aren't automatically trusted by apps in Android 7.0 (API level
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with, or `null` if calling from a delegated certificate installer. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with, or `null` if calling from a delegated certificate installer. |
 | `certBuffer` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!: encoded form of the certificate to install. |
 
 | Return ||
@@ -7102,7 +7102,7 @@ Install an existing package that has been installed in another user, or has been
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The package to be installed in the calling profile. |
 
 | Return ||
@@ -7155,9 +7155,9 @@ Note: If the provided `alias` is of an existing alias, all former grants that ap
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with, or `null` if the caller is not a device admin. |
-| `privKey` | [PrivateKey](../java/security/PrivateKey.md): The private key to install. This value cannot be `null`. |
-| `cert` | [Certificate](../java/security/cert/Certificate.md): The certificate to install. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with, or `null` if the caller is not a device admin. |
+| `privKey` | [PrivateKey](../java.security/PrivateKey.md): The private key to install. This value cannot be `null`. |
+| `cert` | [Certificate](../java.security.cert/Certificate.md): The certificate to install. This value cannot be `null`. |
 | --- | --- |
 | `alias` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The private key alias under which to install the certificate. If a certificate with that alias already exists, it will be overwritten. This value cannot be `null`. |
 
@@ -7208,9 +7208,9 @@ Note: If the provided `alias` is of an existing alias, all former grants that ap
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with, or `null` if the caller is not a device admin. |
-| `privKey` | [PrivateKey](../java/security/PrivateKey.md): The private key to install. This value cannot be `null`. |
-| `certs` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Certificate](../java/security/cert/Certificate.md)!\>: The certificate chain to install. The chain should start with the leaf certificate and include the chain of trust in order. This will be returned by `https://developer.android.com/reference/kotlin/android/security/KeyChain.html#getCertificateChain(android.content.Context,%20kotlin.String)`. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with, or `null` if the caller is not a device admin. |
+| `privKey` | [PrivateKey](../java.security/PrivateKey.md): The private key to install. This value cannot be `null`. |
+| `certs` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Certificate](../java.security.cert/Certificate.md)!\>: The certificate chain to install. The chain should start with the leaf certificate and include the chain of trust in order. This will be returned by `https://developer.android.com/reference/kotlin/android/security/KeyChain.html#getCertificateChain(android.content.Context,%20kotlin.String)`. This value cannot be `null`. |
 | --- | --- |
 | `alias` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The private key alias under which to install the certificate. If a certificate with that alias already exists, it will be overwritten. This value cannot be `null`. |
 | `requestAccess` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): `true` to request that the calling app be granted access to the credentials immediately. Otherwise, access to the credentials will be gated by user approval. |
@@ -7271,9 +7271,9 @@ Note: If the provided `alias` is of an existing alias, all former grants that ap
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with, or `null` if the caller is not a device admin. |
-| `privKey` | [PrivateKey](../java/security/PrivateKey.md): The private key to install. This value cannot be `null`. |
-| `certs` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Certificate](../java/security/cert/Certificate.md)!\>: The certificate chain to install. The chain should start with the leaf certificate and include the chain of trust in order. This will be returned by `https://developer.android.com/reference/kotlin/android/security/KeyChain.html#getCertificateChain(android.content.Context,%20kotlin.String)`. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with, or `null` if the caller is not a device admin. |
+| `privKey` | [PrivateKey](../java.security/PrivateKey.md): The private key to install. This value cannot be `null`. |
+| `certs` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Certificate](../java.security.cert/Certificate.md)!\>: The certificate chain to install. The chain should start with the leaf certificate and include the chain of trust in order. This will be returned by `https://developer.android.com/reference/kotlin/android/security/KeyChain.html#getCertificateChain(android.content.Context,%20kotlin.String)`. This value cannot be `null`. |
 | --- | --- |
 | `alias` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The private key alias under which to install the certificate. If a certificate with that alias already exists, it will be overwritten. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Flags to request that the calling app be granted access to the credentials and set the key to be user-selectable. See `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#INSTALLKEY_SET_USER_SELECTABLE:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#INSTALLKEY_REQUEST_CREDENTIALS_ACCESS:kotlin.Int`. |
@@ -7309,9 +7309,9 @@ Called by device owner or profile owner of an organization-owned managed profile
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: The `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` that this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
-| `updateFilePath` | [Uri](../android/net/Uri.md): A Uri of the file that contains the update. The file should be readable by the calling app. This value cannot be `null`. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): The executor through which the callback should be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: The `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` that this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
+| `updateFilePath` | [Uri](../android.net/Uri.md): A Uri of the file that contains the update. The file should be readable by the calling app. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor through which the callback should be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | --- | --- |
 | `callback` | [DevicePolicyManager.InstallSystemUpdateCallback](../android/app/admin/DevicePolicyManager.InstallSystemUpdateCallback.md): A callback object that will inform the caller when installing an update fails. This value cannot be `null`. |
 
@@ -7395,7 +7395,7 @@ Return true if the given administrator component is currently active (enabled) i
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): The administrator component to check for. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): The administrator component to check for. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -7428,7 +7428,7 @@ Called by device or profile owner to query whether current always-on VPN is conf
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -7457,7 +7457,7 @@ Starting from `https://developer.android.com/reference/kotlin/android/os/Build.V
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with, or `null` if the caller is not a device admin. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with, or `null` if the caller is not a device admin. |
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The name of the package to retrieve the hidden status of. |
 
 | Return ||
@@ -7490,7 +7490,7 @@ Backup service manages all backup and restore mechanisms on the device.
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -7527,7 +7527,7 @@ Returns whether Common Criteria mode is currently enabled. Device owner and prof
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -7619,7 +7619,7 @@ Checks if the profile owner is running in an ephemeral user.
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -7721,7 +7721,7 @@ Return if this user is a managed profile of another user. An admin can become th
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which profile owner this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which profile owner this request is associated with. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -7739,7 +7739,7 @@ Called by profile or device owners to check whether the global volume mute is on
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -7775,7 +7775,7 @@ Return whether network logging is enabled by a device owner or profile owner of 
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Can only be `null` if the caller is a delegated app with `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#DELEGATION_NETWORK_LOGGING:kotlin.String` or has MANAGE_USERS permission. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Can only be `null` if the caller is a delegated app with `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#DELEGATION_NETWORK_LOGGING:kotlin.String` or has MANAGE_USERS permission. |
 
 | Return ||
 |---|---|
@@ -7836,7 +7836,7 @@ Called by device owner to check if override APNs are currently enabled.
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -7865,7 +7865,7 @@ Determine if a package is suspended. This function can be called by a device own
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The name of the package to retrieve the suspended status of. |
 
 | Return ||
@@ -7959,7 +7959,7 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -8004,7 +8004,7 @@ Can only be called by the device owner or a profile owner of an organization-own
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which device admin this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which device admin this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -8060,7 +8060,7 @@ Starting from `https://developer.android.com/reference/kotlin/android/os/Build.V
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: The name of the admin component whose blocking policy will be checked, or `null` to check whether any admin has blocked the uninstallation. Starting from `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#UPSIDE_DOWN_CAKE:kotlin.Int` admin will be ignored and assumed `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: The name of the admin component whose blocking policy will be checked, or `null` to check whether any admin has blocked the uninstallation. Starting from `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#UPSIDE_DOWN_CAKE:kotlin.Int` admin will be ignored and assumed `null`. |
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: package to check. |
 
 | Return ||
@@ -8113,7 +8113,7 @@ When called by a profile owner of a managed profile returns true if the profile 
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -8218,7 +8218,7 @@ Notice that on devices running with `https://developer.android.com/reference/kot
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -8244,7 +8244,7 @@ Called by device owner or holders of the permission android.Manifest.permission#
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which device owner this request is associated with. Can be null if the caller holds the permission. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which device owner this request is associated with. Can be null if the caller holds the permission. |
 
 | Exceptions ||
 |---|---|
@@ -8269,7 +8269,7 @@ Note that the operation is not synchronous and the admin might still be active (
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): The administration compononent to remove. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): The administration compononent to remove. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -8295,7 +8295,7 @@ Called by the profile owner of a managed profile or a holder of the permission `
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The package from which widget providers are no longer allowlisted. |
 
 | Return ||
@@ -8335,7 +8335,7 @@ From Android `https://developer.android.com/reference/kotlin/android/os/Build.VE
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with, or `null` if the caller is not a device admin. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with, or `null` if the caller is not a device admin. |
 | `alias` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The private key alias under which the certificate is installed. This value cannot be `null`. |
 
 | Return ||
@@ -8412,7 +8412,7 @@ Starting from Android version `https://developer.android.com/reference/kotlin/an
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 | `apnId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the `id` of the override APN to remove |
 
 | Return ||
@@ -8442,8 +8442,8 @@ Called by a device owner to remove a user/profile and all associated data. The p
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
-| `userHandle` | [UserHandle](../android/os/UserHandle.md): the user to remove. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `userHandle` | [UserHandle](../android.os/UserHandle.md): the user to remove. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -8467,7 +8467,7 @@ If the device contains secondary users or profiles, they must be affiliated with
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -8550,7 +8550,7 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
 | `password` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The new password for the user. `null` or empty clears the password. |
 | `token` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!: the password reset token previously provisioned by `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#setResetPasswordToken(android.content.ComponentName,%20kotlin.ByteArray)`. |
 | --- | --- |
@@ -8590,7 +8590,7 @@ If the caller is not a profile owner and a secondary user or profile is created,
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with, or `null` if called by a delegated app. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with, or `null` if called by a delegated app. |
 | `batchToken` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): A token of the batch to retrieve |
 
 | Return ||
@@ -8622,7 +8622,7 @@ When called by a device owner, if there is any other user or profile on the devi
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which device admin this request is associated with, or `null` if called by a delegated app. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which device admin this request is associated with, or `null` if called by a delegated app. |
 
 | Return ||
 |---|---|
@@ -8653,7 +8653,7 @@ When called by a device owner, if there is any other user or profile on the devi
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which device admin this request is associated with, or `null` if called by a delegated app. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which device admin this request is associated with, or `null` if called by a delegated app. |
 
 | Return ||
 |---|---|
@@ -8684,7 +8684,7 @@ Called by a device or profile owner, or delegated certificate chooser (an app th
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with, or `null` if calling from a delegated certificate chooser. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with, or `null` if calling from a delegated certificate chooser. |
 | `alias` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The alias of the key to revoke access from. This value cannot be `null`. |
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The name of the (already installed) package to revoke access from. This value cannot be `null`. |
 | --- | --- |
@@ -8826,7 +8826,7 @@ If there has been a change to the policy, `https://developer.android.com/referen
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
 | `accountType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: For which account management is disabled or enabled. |
 | `disabled` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): The boolean indicating that account management will be disabled (true) or enabled (false). |
 | --- | --- |
@@ -8856,7 +8856,7 @@ Note: This method used to be available for affiliating device owner and profile 
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which device owner, or owner of secondary user, this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which device owner, or owner of secondary user, this request is associated with. This value cannot be `null`. |
 | `ids` | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>: A set of opaque non-empty affiliation ids. This value cannot be `null`. |
 
 | Exceptions ||
@@ -8895,7 +8895,7 @@ Starting from `https://developer.android.com/reference/kotlin/android/os/Build.V
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): This value cannot be `null`. |
 | `vpnPackage` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: The package name for an installed VPN app on the device, or `null` to remove an existing always-on VPN configuration. |
 | `lockdownEnabled` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): `true` to disallow networking when the VPN is not connected or `false` otherwise. This has no effect when clearing. |
 | --- | --- |
@@ -8934,7 +8934,7 @@ Setting always-on VPN package to `null` or using `https://developer.android.com/
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): This value cannot be `null`. |
 | `vpnPackage` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: package name for an installed VPN app on the device, or `null` to remove an existing always-on VPN configuration |
 | `lockdownEnabled` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): `true` to disallow networking when the VPN is not connected or `false` otherwise. This has no effect when clearing. |
 | --- | --- |
@@ -8994,7 +8994,7 @@ If there has been a change to the policy, `https://developer.android.com/referen
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with, or `null` if the caller is not a device admin. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with, or `null` if the caller is not a device admin. |
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The name of the package to hide or unhide. |
 | `hidden` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): `true` if the package should be hidden, `false` if it should be unhidden. |
 | --- | --- |
@@ -9049,9 +9049,9 @@ This method may take several seconds to complete, so it should only be called fr
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with, or `null` if called by the application restrictions managing package. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with, or `null` if called by the application restrictions managing package. |
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The name of the package to update restricted settings for. |
-| `settings` | [Bundle](../android/os/Bundle.md)!: A `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` to be parsed by the receiving application, conveying a new set of active restrictions. |
+| `settings` | [Bundle](../android.os/Bundle.md)!: A `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` to be parsed by the receiving application, conveying a new set of active restrictions. |
 | --- | --- |
 
 | Exceptions ||
@@ -9087,7 +9087,7 @@ The supplied application restriction managing package must be installed when cal
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: The package name which will be given access to application restrictions APIs. If `null` is given the current package will be cleared. |
 
 | Exceptions ||
@@ -9112,7 +9112,7 @@ Callers are recommended to use `https://developer.android.com/reference/kotlin/a
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
 | `enabled` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): Whether time should be obtained automatically from the network or not. |
 
 | Exceptions ||
@@ -9163,7 +9163,7 @@ Staring from Android 11, this API switches to use `https://developer.android.com
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 | `required` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): Whether auto time is set required or not. |
 
 | Exceptions ||
@@ -9187,7 +9187,7 @@ Callers are recommended to use `https://developer.android.com/reference/kotlin/a
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with or Null if the caller is not a device admin. This value may be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with or Null if the caller is not a device admin. This value may be `null`. |
 | `enabled` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): Whether time zone should be obtained automatically from the network or not. |
 
 | Exceptions ||
@@ -9235,7 +9235,7 @@ By default, backup service is disabled on a device with device owner, and within
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 | `enabled` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): `true` to enable the backup service, `false` to disable it. |
 
 | Exceptions ||
@@ -9261,7 +9261,7 @@ This API works on managed profile only.
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 | `disabled` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): If true, bluetooth devices cannot access enterprise contacts. |
 
 | Exceptions ||
@@ -9301,7 +9301,7 @@ If there has been a change to the policy, `https://developer.android.com/referen
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with or null if the caller is not a device admin |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with or null if the caller is not a device admin |
 | `disabled` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): Whether or not the camera should be disabled. |
 
 | Exceptions ||
@@ -9330,7 +9330,7 @@ Delegated certificate installer is a per-user state. The delegated access is per
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 | `installerPackage` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: The package name of the certificate installer which will be given access. If `null` is given the current package will be cleared. |
 
 | Exceptions ||
@@ -9361,7 +9361,7 @@ Common Criteria mode is disabled by default.
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
 | `enabled` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): whether Common Criteria mode should be enabled or not. |
 
 ### setConfiguredNetworksLockdownState
@@ -9381,7 +9381,7 @@ WiFi network configuration lockdown is controlled by a global settings `https://
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: admin Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: admin Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
 | `lockdown` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): Whether the admin configured networks should be unmodifiable by the user. |
 
 | Exceptions ||
@@ -9413,7 +9413,7 @@ If there has been a change to the policy, `https://developer.android.com/referen
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
 | `policy` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The content protection policy to set. One of `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#CONTENT_PROTECTION_NOT_CONTROLLED_BY_POLICY:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#CONTENT_PROTECTION_DISABLED:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#CONTENT_PROTECTION_ENABLED:kotlin.Int`. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#CONTENT_PROTECTION_NOT_CONTROLLED_BY_POLICY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#CONTENT_PROTECTION_DISABLED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#CONTENT_PROTECTION_ENABLED:kotlin.Int` |
 
 | Exceptions ||
@@ -9440,7 +9440,7 @@ A `https://developer.android.com/reference/kotlin/android/app/admin/PackagePolic
 
 | Parameters ||
 |---|---|
-| `policy` | [PackagePolicy](../android/app/admin/PackagePolicy.md)?: the policy to set, setting this value to `null` will allow all packages |
+| `policy` | [PackagePolicy](PackagePolicy.md)?: the policy to set, setting this value to `null` will allow all packages |
 
 | Exceptions ||
 |---|---|
@@ -9468,7 +9468,7 @@ Calling with a `null` value for the set disables the restriction so that all pac
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 | `packageNames` | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?: set of packages to be allowlisted. This value may be `null`. |
 
 | Exceptions ||
@@ -9501,7 +9501,7 @@ Starting with `https://developer.android.com/reference/kotlin/android/os/Build.V
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 | `disabled` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): If true caller-Id information in the managed profile is not displayed. |
 
 | Exceptions ||
@@ -9528,7 +9528,7 @@ The calling device admin must be a profile owner. If it is not, a security excep
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 | `disabled` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): If true contacts search in the managed profile is not displayed. |
 
 | Exceptions ||
@@ -9558,7 +9558,7 @@ When previously-set cross-profile packages are missing from `packageNames`, the 
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): the `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): the `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 | `packageNames` | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>: the new cross-profile package names. This value cannot be `null`. |
 
 ### setCrossProfileWidgetProviders
@@ -9629,7 +9629,7 @@ Starting from Android `https://developer.android.com/reference/kotlin/android/os
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The name of the package to set as the default SMS application. This value cannot be `null`. |
 
 | Exceptions ||
@@ -9659,7 +9659,7 @@ Delegated scopes are a per-user state. The delegated access is persistent until 
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 | `delegatePackage` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The package name of the app which will be given access. This value cannot be `null`. |
 | `scopes` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>: The groups of privileged APIs whose access should be granted to `delegatedPackage`. This value cannot be `null`. |
 | --- | --- |
@@ -9693,7 +9693,7 @@ May be called by the device owner or the profile owner of an organization-owned 
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: The name of the admin component to check. Null if the caller is not a device admin. This value may be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: The name of the admin component to check. Null if the caller is not a device admin. This value may be `null`. |
 | `info` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!: Device owner information which will be displayed instead of the user owner info. |
 
 | Exceptions ||
@@ -9719,7 +9719,7 @@ If the message needs to be localized, it is the responsibility of the `https://d
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 | `endUserSessionMessage` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)?: message for ending user session, or `null` to use system default message. |
 
 | Exceptions ||
@@ -9741,8 +9741,8 @@ Callable by device owner or profile owner of an organization-owned device, to se
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
-| `policy` | [FactoryResetProtectionPolicy](../android/app/admin/FactoryResetProtectionPolicy.md)?: the new FRP policy, or `null` to clear the current policy. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
+| `policy` | [FactoryResetProtectionPolicy](FactoryResetProtectionPolicy.md)?: the new FRP policy, or `null` to clear the current policy. |
 
 | Exceptions ||
 |---|---|
@@ -9765,7 +9765,7 @@ Note: The device owner won't be able to set the global private DNS mode if there
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -9799,7 +9799,7 @@ This method may take several seconds to complete, so it should only be called fr
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 | `privateDnsHost` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The hostname of a server that implements DNS over TLS (RFC7858). This value cannot be `null`. |
 
 | Return ||
@@ -9852,7 +9852,7 @@ Changing the following settings has no effect as of `https://developer.android.c
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 | `setting` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The name of the setting to update. |
 | `value` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The value to update the setting to. |
 | --- | --- |
@@ -9878,7 +9878,7 @@ Please note that setting this policy does not imply that specified apps will be 
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with, or `null` if the caller is a keep uninstalled packages delegate. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with, or `null` if the caller is a keep uninstalled packages delegate. |
 | `packageNames` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>: List of package names to keep cached. This value cannot be `null`. |
 
 | Exceptions ||
@@ -9916,9 +9916,9 @@ From Android `https://developer.android.com/reference/kotlin/android/os/Build.VE
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with, or `null` if the caller is not a device admin. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with, or `null` if the caller is not a device admin. |
 | `alias` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The private key alias under which to install the certificate. The `alias` should denote an existing private key. If a certificate with that alias already exists, it will be overwritten. This value cannot be `null`. |
-| `certs` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Certificate](../java/security/cert/Certificate.md)!\>: The certificate chain to install. The chain should start with the leaf certificate and include the chain of trust in order. This will be returned by `https://developer.android.com/reference/kotlin/android/security/KeyChain.html#getCertificateChain(android.content.Context,%20kotlin.String)`. This value cannot be `null`. |
+| `certs` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Certificate](../java.security.cert/Certificate.md)!\>: The certificate chain to install. The chain should start with the leaf certificate and include the chain of trust in order. This will be returned by `https://developer.android.com/reference/kotlin/android/security/KeyChain.html#getCertificateChain(android.content.Context,%20kotlin.String)`. This value cannot be `null`. |
 | --- | --- |
 | `isUserSelectable` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): `true` to indicate that a user can select this key via the certificate selection prompt, `false` to indicate that this key can only be granted access by implementing `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onChoosePrivateKeyAlias(android.content.Context,%20android.content.Intent,%20kotlin.Int,%20android.net.Uri,%20kotlin.String)`. |
 
@@ -9955,7 +9955,7 @@ Key differences in this overload:
 | Parameters ||
 |---|---|
 | `alias` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The private key alias under which to install the certificate. This value cannot be `null`. |
-| `certs` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Certificate](../java/security/cert/Certificate.md)!\>: The certificate chain to install. This value cannot be `null`. |
+| `certs` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Certificate](../java.security.cert/Certificate.md)!\>: The certificate chain to install. This value cannot be `null`. |
 | `isUserSelectable` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): `true` to indicate that a user can select this key via the certificate selection prompt, `false` to indicate that this key can only be granted access by implementing `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver#onChoosePrivateKeyAlias(android.content.Context,%20android.content.Intent,%20kotlin.Int,%20android.net.Uri,%20kotlin.String)` or calling #grantKeyPairToApp and #grantKeyPairToWifiAuth. |
 | --- | --- |
 | `scope` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The scope of the key pair: `https://developer.android.com/reference/kotlin/android/security/KeyChainManager.html#KEYPAIR_SCOPE_USER:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/security/KeyChainManager.html#KEYPAIR_SCOPE_DEVICE:kotlin.Int`. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/security/KeyChainManager.html#KEYPAIR_SCOPE_USER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/security/KeyChainManager.html#KEYPAIR_SCOPE_DEVICE:kotlin.Int` |
@@ -9987,7 +9987,7 @@ As of `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_C
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 | `disabled` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): `true` disables the keyguard, `false` reenables it. |
 
 | Return ||
@@ -10043,7 +10043,7 @@ The admin can check which features have been disabled by calling `https://develo
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
 | `which` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The disabled features flag which can be either `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#KEYGUARD_DISABLE_FEATURES_NONE:kotlin.Int` (default), `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#KEYGUARD_DISABLE_FEATURES_ALL:kotlin.Int`, or a combination of `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#KEYGUARD_DISABLE_WIDGETS_ALL:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#KEYGUARD_DISABLE_SECURE_CAMERA:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#KEYGUARD_DISABLE_SECURE_NOTIFICATIONS:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#KEYGUARD_DISABLE_TRUST_AGENTS:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#KEYGUARD_DISABLE_UNREDACTED_NOTIFICATIONS:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#KEYGUARD_DISABLE_FINGERPRINT:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#KEYGUARD_DISABLE_FACE:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#KEYGUARD_DISABLE_IRIS:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#KEYGUARD_DISABLE_SHORTCUTS_ALL:kotlin.Int`. |
 
 | Exceptions ||
@@ -10065,7 +10065,7 @@ Called by device owners to set the user's global location setting.
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 | `locationEnabled` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): whether location should be enabled or disabled. **Note:** on `https://developer.android.com/reference/kotlin/android/content/pm/PackageManager.html#FEATURE_AUTOMOTIVE:kotlin.String`, calls to disable will be ignored. |
 
 | Exceptions ||
@@ -10101,7 +10101,7 @@ Starting from `https://developer.android.com/reference/kotlin/android/os/Build.V
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The system features enabled during lock task mode. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#LOCK_TASK_FEATURE_NONE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#LOCK_TASK_FEATURE_SYSTEM_INFO:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#LOCK_TASK_FEATURE_NOTIFICATIONS:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#LOCK_TASK_FEATURE_HOME:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#LOCK_TASK_FEATURE_OVERVIEW:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#LOCK_TASK_FEATURE_GLOBAL_ACTIONS:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#LOCK_TASK_FEATURE_KEYGUARD:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#LOCK_TASK_FEATURE_BLOCK_ACTIVITY_START_IN_TASK:kotlin.Int` |
 
 | Exceptions ||
@@ -10143,7 +10143,7 @@ Starting from `https://developer.android.com/reference/kotlin/android/os/Build.V
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
 | `packages` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>: The list of packages allowed to enter lock task mode. This value cannot be `null`. |
 
 | Exceptions ||
@@ -10173,7 +10173,7 @@ Called by a device owner to specify whether logout is enabled for all secondary 
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 | `enabled` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): whether logout should be enabled or not. |
 
 | Exceptions ||
@@ -10197,7 +10197,7 @@ If the long support message needs to be localized, it is the responsibility of t
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 | `message` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)?: Long message to be displayed to the user in settings or null to clear the existing message. |
 
 | Exceptions ||
@@ -10226,7 +10226,7 @@ A `https://developer.android.com/reference/kotlin/android/app/admin/PackagePolic
 
 | Parameters ||
 |---|---|
-| `policy` | [PackagePolicy](../android/app/admin/PackagePolicy.md)?: the policy to set, setting this value to `null` will allow all packages |
+| `policy` | [PackagePolicy](PackagePolicy.md)?: the policy to set, setting this value to `null` will allow all packages |
 
 | Exceptions ||
 |---|---|
@@ -10250,7 +10250,7 @@ A `https://developer.android.com/reference/kotlin/android/app/admin/PackagePolic
 
 | Parameters ||
 |---|---|
-| `policy` | [PackagePolicy](../android/app/admin/PackagePolicy.md)?: the policy to set, setting this value to `null` will allow all packages |
+| `policy` | [PackagePolicy](PackagePolicy.md)?: the policy to set, setting this value to `null` will allow all packages |
 
 | Exceptions ||
 |---|---|
@@ -10273,7 +10273,7 @@ When personal apps are suspended, an ongoing notification about that is shown to
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 | `timeoutMillis` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): Maximum time the profile is allowed to be off in milliseconds or 0 if not limited. The minimum non-zero value corresponds to 72 hours. If an admin sets a smaller non-zero value, 72 hours will be set instead. |
 
 | Exceptions ||
@@ -10300,7 +10300,7 @@ This API can only be called during device setup.
 
 | Parameters ||
 |---|---|
-| `policy` | [ManagedSubscriptionsPolicy](../android/app/admin/ManagedSubscriptionsPolicy.md)?: `https://developer.android.com/reference/kotlin/android/app/admin/ManagedSubscriptionsPolicy` policy, passing null for this resets the policy to be the default. |
+| `policy` | [ManagedSubscriptionsPolicy](ManagedSubscriptionsPolicy.md)?: `https://developer.android.com/reference/kotlin/android/app/admin/ManagedSubscriptionsPolicy` policy, passing null for this resets the policy to be the default. |
 
 | Exceptions ||
 |---|---|
@@ -10328,7 +10328,7 @@ Called by profile or device owners to set the global volume mute on or off. This
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 | `on` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): `true` to mute global volume, `false` to turn mute off. |
 
 | Exceptions ||
@@ -10359,7 +10359,7 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
 | `num` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The number of failed password attempts at which point the device or profile will be wiped. |
 
 | Exceptions ||
@@ -10385,7 +10385,7 @@ This method can be called on the `https://developer.android.com/reference/kotlin
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
 | `timeMs` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The new desired maximum time to lock in milliseconds. A value of 0 means there is no restriction. |
 
 | Exceptions ||
@@ -10407,7 +10407,7 @@ Called by a device or profile owner to restrict packages from using metered data
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 | `packageNames` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>: the list of package names to be restricted. This value cannot be `null`. |
 
 | Return ||
@@ -10539,7 +10539,7 @@ It is possible to directly intercept layer 3 traffic leaving the device using an
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with, or `null` if called by a delegated app. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with, or `null` if called by a delegated app. |
 | `enabled` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): whether network logging should be enabled or not. |
 
 | Exceptions ||
@@ -10573,7 +10573,7 @@ Starting from Android R, the organization color will no longer be used as the ba
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 | `color` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The 24bit (0xRRGGBB) representation of the color to be used. |
 
 | Exceptions ||
@@ -10611,7 +10611,7 @@ If the organization name needs to be localized, it is the responsibility of the 
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
 | `title` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)?: The organization name or `null` to clear a previously set name. |
 
 | Exceptions ||
@@ -10637,7 +10637,7 @@ Note: Enterprise APNs added by managed profile owners do not need to be enabled 
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 | `enabled` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): `true` if override APNs should be enabled, `false` otherwise |
 
 | Exceptions ||
@@ -10666,7 +10666,7 @@ Some apps cannot be suspended, such as device admins, the active launcher, the r
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
 | `packageNames` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>: The package names to suspend or unsuspend. This value cannot be `null`. |
 | `suspended` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): If set to `true` than the packages will be suspended, if set to `false` the packages will be unsuspended. |
 | --- | --- |
@@ -10712,7 +10712,7 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
 | `timeout` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The limit (in ms) that a password can remain in effect. A value of 0 means there is no restriction (unlimited). |
 
 | Exceptions ||
@@ -10741,7 +10741,7 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The new desired length of password history. A value of 0 means there is no restriction. |
 
 | Exceptions ||
@@ -10774,7 +10774,7 @@ Note: this method is ignored on {PackageManager#FEATURE_AUTOMOTIVE automotive bu
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The new desired minimum password length. A value of 0 means there is no restriction. |
 
 | Exceptions ||
@@ -10808,7 +10808,7 @@ Note: this method is ignored on {PackageManager#FEATURE_AUTOMOTIVE automotive bu
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The new desired minimum number of letters required in the password. A value of 0 means there is no restriction. |
 
 | Exceptions ||
@@ -10842,7 +10842,7 @@ Note: this method is ignored on {PackageManager#FEATURE_AUTOMOTIVE automotive bu
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The new desired minimum number of lower case letters required in the password. A value of 0 means there is no restriction. |
 
 | Exceptions ||
@@ -10876,7 +10876,7 @@ Note: this method is ignored on {PackageManager#FEATURE_AUTOMOTIVE automotive bu
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The new desired minimum number of letters required in the password. A value of 0 means there is no restriction. |
 
 | Exceptions ||
@@ -10910,7 +10910,7 @@ Note: this method is ignored on {PackageManager#FEATURE_AUTOMOTIVE automotive bu
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The new desired minimum number of numerical digits required in the password. A value of 0 means there is no restriction. |
 
 | Exceptions ||
@@ -10944,7 +10944,7 @@ Note: this method is ignored on {PackageManager#FEATURE_AUTOMOTIVE automotive bu
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The new desired minimum number of symbols required in the password. A value of 0 means there is no restriction. |
 
 | Exceptions ||
@@ -10978,7 +10978,7 @@ Note: this method is ignored on {PackageManager#FEATURE_AUTOMOTIVE automotive bu
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 | `length` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The new desired minimum number of upper case letters required in the password. A value of 0 means there is no restriction. |
 
 | Exceptions ||
@@ -11016,7 +11016,7 @@ Note: this method is ignored on {PackageManager#FEATURE_AUTOMOTIVE automotive bu
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 | `quality` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The new desired quality. One of `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#PASSWORD_QUALITY_UNSPECIFIED:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#PASSWORD_QUALITY_BIOMETRIC_WEAK:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#PASSWORD_QUALITY_SOMETHING:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#PASSWORD_QUALITY_NUMERIC:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#PASSWORD_QUALITY_NUMERIC_COMPLEX:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#PASSWORD_QUALITY_ALPHABETIC:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#PASSWORD_QUALITY_ALPHANUMERIC:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#PASSWORD_QUALITY_COMPLEX:kotlin.Int`. |
 
 | Exceptions ||
@@ -11088,7 +11088,7 @@ A managed profile owner may not grant these permissions (i.e. call this method w
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The application to grant or revoke a permission to. This value cannot be `null`. |
 | `permission` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The permission to grant or revoke. This value cannot be `null`. |
 | --- | --- |
@@ -11131,7 +11131,7 @@ NOTE: On devices running `https://developer.android.com/reference/kotlin/android
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which profile or device owner this request is associated with, or `null` if the caller is a set permission policy delegate. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which profile or device owner this request is associated with, or `null` if the caller is a set permission policy delegate. |
 | `policy` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): One of the policy constants `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#PERMISSION_POLICY_PROMPT:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#PERMISSION_POLICY_AUTO_GRANT:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#PERMISSION_POLICY_AUTO_DENY:kotlin.Int`. |
 
 | Exceptions ||
@@ -11163,7 +11163,7 @@ System accessibility services are always available to the user and this method c
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 | `packageNames` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!: List of accessibility service package names. |
 
 | Return ||
@@ -11193,7 +11193,7 @@ If a device or profile owner want to stop notification listeners in their user f
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 | `packageList` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?: List of package names to allowlist. This value may be `null`. |
 
 | Return ||
@@ -11236,7 +11236,7 @@ System input methods are always available to the user - this method can't modify
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
 | `packageNames` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!: List of input method package names. |
 
 | Return ||
@@ -11263,7 +11263,7 @@ Called by a profile owner of an organization-owned managed profile to suspend pe
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 | `suspended` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): Whether personal apps should be suspended. |
 
 | Exceptions ||
@@ -11291,7 +11291,7 @@ Use `https://developer.android.com/reference/kotlin/android/app/admin/DevicePoli
 | Parameters ||
 |---|---|
 | `<T>` | The type of the policy. |
-| `id` | [PolicyIdentifier](../android/app/admin/PolicyIdentifier.md)\<T\>: The identifier of the policy to set. See android.app.admin.policies for available policy identifiers. This value cannot be `null`. |
+| `id` | [PolicyIdentifier](PolicyIdentifier.md)\<T\>: The identifier of the policy to set. See android.app.admin.policies for available policy identifiers. This value cannot be `null`. |
 | `scope` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The scope the policy will apply to. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#POLICY_SCOPE_USER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#POLICY_SCOPE_DEVICE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#POLICY_SCOPE_PARENT_USER:kotlin.Int` |
 | --- | --- |
 | `value` | T?: The value of the policy. If value is set to null, the policy is cleared. Check the documentation of individual identifiers for more details. |
@@ -11313,7 +11313,7 @@ Sets preferential network configurations. An example of a supported preferential
 
 | Parameters ||
 |---|---|
-| `preferentialNetworkServiceConfigs` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PreferentialNetworkServiceConfig](../android/app/admin/PreferentialNetworkServiceConfig.md)!\>: list of preferential network configurations. This value cannot be `null`. |
+| `preferentialNetworkServiceConfigs` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PreferentialNetworkServiceConfig](PreferentialNetworkServiceConfig.md)!\>: list of preferential network configurations. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -11359,7 +11359,7 @@ Sets the enabled state of the profile. A profile should be enabled only once it 
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -11384,7 +11384,7 @@ Sets the name of the profile. In the device owner case it sets the name of the u
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associate with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associate with. This value cannot be `null`. |
 | `profileName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The name of the profile. If the name is longer than 200 characters it will be truncated. |
 
 | Exceptions ||
@@ -11417,8 +11417,8 @@ Note: The device owner won't be able to set a global HTTP proxy if there are una
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
-| `proxyInfo` | [ProxyInfo](../android/net/ProxyInfo.md)?: The a `https://developer.android.com/reference/kotlin/android/net/ProxyInfo.html#` object defining the new global HTTP proxy. A `null` value will clear the global HTTP proxy. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `proxyInfo` | [ProxyInfo](../android.net/ProxyInfo.md)?: The a `https://developer.android.com/reference/kotlin/android/net/ProxyInfo.html#` object defining the new global HTTP proxy. A `null` value will clear the global HTTP proxy. |
 
 | Exceptions ||
 |---|---|
@@ -11489,7 +11489,7 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
 | `timeoutMs` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The new timeout in milliseconds, after which the user will have to unlock with strong authentication method. A value of 0 means the admin is not participating in controlling the timeout. The minimum and maximum timeouts are platform-defined and are typically 1 hour and 72 hours, respectively. Though discouraged, the admin may choose to require strong auth at all times using `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#KEYGUARD_DISABLE_FINGERPRINT:kotlin.Int` and/or `https://developer.android.com/reference/kotlin/android/app/admin/DevicePolicyManager#KEYGUARD_DISABLE_TRUST_AGENTS:kotlin.Int`. |
 
 | Exceptions ||
@@ -11520,7 +11520,7 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
 | `token` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!: a secure token a least 32-byte long, which must be generated by a cryptographically strong random number generator. |
 
 | Return ||
@@ -11551,8 +11551,8 @@ Only a device owner or profile owner can designate the restrictions provider.
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
-| `provider` | [ComponentName](../android/content/ComponentName.md)?: The component name of the service that implements `https://developer.android.com/reference/kotlin/android/service/restrictions/RestrictionsReceiver.html#`. If this param is null, it removes the restrictions provider previously assigned. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `provider` | [ComponentName](../android.content/ComponentName.md)?: The component name of the service that implements `https://developer.android.com/reference/kotlin/android/service/restrictions/RestrictionsReceiver.html#`. If this param is null, it removes the restrictions provider previously assigned. |
 
 | Exceptions ||
 |---|---|
@@ -11579,7 +11579,7 @@ From version `https://developer.android.com/reference/kotlin/android/os/Build.VE
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
 | `disabled` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): Whether screen capture is disabled or not. |
 
 | Exceptions ||
@@ -11615,7 +11615,7 @@ A device owner can additionally update the following settings:
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 | `setting` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The name of the setting to update. |
 | `value` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The value to update the setting to. |
 | --- | --- |
@@ -11649,7 +11649,7 @@ If there has been a change to the policy, `https://developer.android.com/referen
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which device admin this request is associated with, or `null` if called by a delegated app. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which device admin this request is associated with, or `null` if called by a delegated app. |
 | `enabled` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): whether security logging should be enabled or not. |
 
 | Exceptions ||
@@ -11678,7 +11678,7 @@ If the short support message needs to be localized, it is the responsibility of 
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
 | `message` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)?: Short message to be displayed to the user in settings or null to clear the existing message. |
 
 | Exceptions ||
@@ -11708,7 +11708,7 @@ If the message needs to be localized, it is the responsibility of the `https://d
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 | `startUserSessionMessage` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)?: message for starting user session, or `null` to use system default message. |
 
 | Exceptions ||
@@ -11734,7 +11734,7 @@ This policy does not have any effect while on the lock screen, where the status 
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
 | `disabled` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): `true` disables the status bar, `false` reenables it. |
 
 | Return ||
@@ -11772,7 +11772,7 @@ Important Note: On some devices, it is possible to encrypt storage without requi
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 | `encrypt` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): true to request encryption, false to release any previous request |
 
 | Return ||
@@ -11807,7 +11807,7 @@ Starting from Android `https://developer.android.com/reference/kotlin/android/os
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 | `setting` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The name of the setting to update. This value cannot be `null`. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/provider/Settings.System.html#SCREEN_BRIGHTNESS_MODE:kotlin.String` - `https://developer.android.com/reference/kotlin/android/provider/Settings.System.html#SCREEN_BRIGHTNESS:kotlin.String` - `https://developer.android.com/reference/kotlin/android/provider/Settings.System.html#SCREEN_OFF_TIMEOUT:kotlin.String` |
 | `value` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The value to update the setting to. |
 | --- | --- |
@@ -11837,8 +11837,8 @@ If the supplied system update policy has freeze periods set but the freeze perio
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. All components in the package can set system update policies and the most recent policy takes effect. This should be null if the caller is not a device admin. |
-| `policy` | [SystemUpdatePolicy](../android/app/admin/SystemUpdatePolicy.md)!: the new policy, or `null` to clear the current policy. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. All components in the package can set system update policies and the most recent policy takes effect. This should be null if the caller is not a device admin. |
+| `policy` | [SystemUpdatePolicy](SystemUpdatePolicy.md)!: the new policy, or `null` to clear the current policy. |
 
 | Exceptions ||
 |---|---|
@@ -11867,7 +11867,7 @@ Called by a device owner or a profile owner of an organization-owned managed pro
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
 | `millis` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): time in milliseconds since the Epoch |
 
 | Return ||
@@ -11893,7 +11893,7 @@ Called by a device owner or a profile owner of an organization-owned managed pro
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
 | `timeZone` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: one of the Olson ids from the list returned by java.util.TimeZone#getAvailableIDs |
 
 | Return ||
@@ -11933,9 +11933,9 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
-| `target` | [ComponentName](../android/content/ComponentName.md): Component name of the agent to be configured. This value cannot be `null`. |
-| `configuration` | [PersistableBundle](../android/os/PersistableBundle.md)!: Trust-agent-specific feature configuration bundle. Please consult documentation of the specific trust agent to determine the interpretation of this bundle. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
+| `target` | [ComponentName](../android.content/ComponentName.md): Component name of the agent to be configured. This value cannot be `null`. |
+| `configuration` | [PersistableBundle](../android.os/PersistableBundle.md)!: Trust-agent-specific feature configuration bundle. Please consult documentation of the specific trust agent to determine the interpretation of this bundle. |
 | --- | --- |
 
 | Exceptions ||
@@ -11967,7 +11967,7 @@ If there has been a change to the policy, `https://developer.android.com/referen
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: package to change. |
 | `uninstallBlocked` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): true if the user shouldn't be able to uninstall the package. |
 | --- | --- |
@@ -12030,7 +12030,7 @@ If there has been a change to the policy, `https://developer.android.com/referen
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. Null if the caller is not a device admin. This value may be `null`. |
 | `packages` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>: The package names for the apps. This value cannot be `null`. |
 
 | Exceptions ||
@@ -12052,8 +12052,8 @@ Called by profile or device owners to set the user's photo.
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
-| `icon` | [Bitmap](../android/graphics/Bitmap.md)!: the bitmap to set as the photo. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `icon` | [Bitmap](../android.graphics/Bitmap.md)!: the bitmap to set as the photo. |
 
 | Exceptions ||
 |---|---|
@@ -12071,7 +12071,7 @@ Called by device owner or profile owner of an organization-owned managed profile
 
 | Parameters ||
 |---|---|
-| `policy` | [WifiSsidPolicy](../android/app/admin/WifiSsidPolicy.md)?: Wi-Fi SSID policy. This value may be `null`. |
+| `policy` | [WifiSsidPolicy](WifiSsidPolicy.md)?: Wi-Fi SSID policy. This value may be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -12092,8 +12092,8 @@ Called by a device owner to start the specified secondary user in background.
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
-| `userHandle` | [UserHandle](../android/os/UserHandle.md): the user to be started in background. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `userHandle` | [UserHandle](../android.os/UserHandle.md): the user to be started in background. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -12122,8 +12122,8 @@ Called by a device owner to stop the specified secondary user.
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
-| `userHandle` | [UserHandle](../android/os/UserHandle.md): the user to be stopped. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `userHandle` | [UserHandle](../android.os/UserHandle.md): the user to be stopped. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -12152,8 +12152,8 @@ Called by a device owner to switch the specified secondary user to the foregroun
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
-| `userHandle` | [UserHandle](../android/os/UserHandle.md)?: the user to switch to; null will switch to primary. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `userHandle` | [UserHandle](../android.os/UserHandle.md)?: the user to switch to; null will switch to primary. |
 
 | Return ||
 |---|---|
@@ -12195,9 +12195,9 @@ The incoming target administrator must have the `<support-transfer-ownership />`
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
-| `target` | [ComponentName](../android/content/ComponentName.md): which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` we want the new administrator to be. This value cannot be `null`. |
-| `bundle` | [PersistableBundle](../android/os/PersistableBundle.md)?: data to be sent to the new administrator. This value may be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `target` | [ComponentName](../android.content/ComponentName.md): which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` we want the new administrator to be. This value cannot be `null`. |
+| `bundle` | [PersistableBundle](../android.os/PersistableBundle.md)?: data to be sent to the new administrator. This value may be `null`. |
 | --- | --- |
 
 | Exceptions ||
@@ -12217,7 +12217,7 @@ Uninstalls all custom trusted CA certificates from the profile. Certificates ins
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with, or `null` if calling from a delegated certificate installer. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with, or `null` if calling from a delegated certificate installer. |
 
 | Exceptions ||
 |---|---|
@@ -12238,7 +12238,7 @@ Uninstalls the given certificate from trusted user CAs, if present. The caller m
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with, or `null` if calling from a delegated certificate installer. |
+| `admin` | [ComponentName](../android.content/ComponentName.md)?: Which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with, or `null` if calling from a delegated certificate installer. |
 | `certBuffer` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!: encoded form of the certificate to remove. |
 
 | Exceptions ||
@@ -12276,9 +12276,9 @@ Starting from Android version `https://developer.android.com/reference/kotlin/an
 
 | Parameters ||
 |---|---|
-| `admin` | [ComponentName](../android/content/ComponentName.md): which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
+| `admin` | [ComponentName](../android.content/ComponentName.md): which `https://developer.android.com/reference/kotlin/android/app/admin/DeviceAdminReceiver` this request is associated with. This value cannot be `null`. |
 | `apnId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the `id` of the override APN to update |
-| `apnSetting` | [ApnSetting](../android/telephony/data/ApnSetting.md): the override APN to update. This value cannot be `null`. |
+| `apnSetting` | [ApnSetting](../android.telephony.data/ApnSetting.md): the override APN to update. This value cannot be `null`. |
 | --- | --- |
 
 | Return ||

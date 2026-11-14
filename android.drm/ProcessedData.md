@@ -5,7 +5,7 @@ Deprecated in [API level 30](https://developer.android.com/guide/topics/manifest
 
 # ProcessedData
 
-Kotlin| [Java](../android/drm/ProcessedData.md) 
+Kotlin| [Java](ProcessedData.md) 
 | --- | --- |
 
 ```
@@ -14,21 +14,21 @@ open class ProcessedData
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.drm.ProcessedData](../android/drm/ProcessedData.md) |
+| ↳ | [android.drm.ProcessedData](ProcessedData.md) |
 
 | **This class was deprecated in API level 30.**
 |
-| Please use [android.media.MediaDrm](../android/media/MediaDrm.md)
+| Please use [android.media.MediaDrm](../android.media/MediaDrm.md)
 
-An entity class that wraps the result of a [processDrmInfo()](../android/drm/DrmManagerClient.md))transaction between a device and a DRM server. In a license acquisition scenario this class holds the rights information in binary form.
+An entity class that wraps the result of a [processDrmInfo()](DrmManagerClient.md))transaction between a device and a DRM server. In a license acquisition scenario this class holds the rights information in binary form.
 
 ## Summary
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAccountId](../android/drm/ProcessedData.md))`()` Retrieves the account ID associated with this object. |
-| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getData](../android/drm/ProcessedData.md))`()` Retrieves the processed data. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSubscriptionId](../android/drm/ProcessedData.md))`()` Returns the subscription ID associated with this object. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAccountId](ProcessedData.md))`()` Retrieves the account ID associated with this object. |
+| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getData](ProcessedData.md))`()` Retrieves the processed data. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSubscriptionId](ProcessedData.md))`()` Returns the subscription ID associated with this object. |
 | --- | --- |
 
 ## Public methods

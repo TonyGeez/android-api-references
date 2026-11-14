@@ -19,9 +19,9 @@ A callback that notifies clients when the progress level has been changed. This 
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onProgressChanged](../android/widget/SeekBar.OnSeekBarChangeListener.md))`(`seekBar:` ` [SeekBar](../android/widget/SeekBar.md)!`, `progress:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `fromUser:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Notification that the progress level has changed. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStartTrackingTouch](../android/widget/SeekBar.OnSeekBarChangeListener.md))`(`seekBar:` ` [SeekBar](../android/widget/SeekBar.md)!`)` Notification that the user has started a touch gesture. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStopTrackingTouch](../android/widget/SeekBar.OnSeekBarChangeListener.md))`(`seekBar:` ` [SeekBar](../android/widget/SeekBar.md)!`)` Notification that the user has finished a touch gesture. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onProgressChanged](../android/widget/SeekBar.OnSeekBarChangeListener.md))`(`seekBar:` ` [SeekBar](SeekBar.md)!`, `progress:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `fromUser:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Notification that the progress level has changed. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStartTrackingTouch](../android/widget/SeekBar.OnSeekBarChangeListener.md))`(`seekBar:` ` [SeekBar](SeekBar.md)!`)` Notification that the user has started a touch gesture. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStopTrackingTouch](../android/widget/SeekBar.OnSeekBarChangeListener.md))`(`seekBar:` ` [SeekBar](SeekBar.md)!`)` Notification that the user has finished a touch gesture. |
 | --- | --- |
 
 ## Public methods
@@ -42,8 +42,8 @@ Notification that the progress level has changed. Clients can use the fromUser p
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `seekBar` | [SeekBar](../android/widget/SeekBar.md)!:The SeekBar whose progress has changed |
-| `progress` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The current progress level. This will be in the range min..max where min and max were set by [ProgressBar.setMin(int)](../android/widget/ProgressBar.md))and [ProgressBar.setMax(int)](../android/widget/ProgressBar.md)), respectively. (The default values for min is 0 and max is 100.) |
+| `seekBar` | [SeekBar](SeekBar.md)!:The SeekBar whose progress has changed |
+| `progress` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The current progress level. This will be in the range min..max where min and max were set by [ProgressBar.setMin(int)](ProgressBar.md))and [ProgressBar.setMax(int)](ProgressBar.md)), respectively. (The default values for min is 0 and max is 100.) |
 | `fromUser` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):True if the progress change was initiated by the user. |
 | --- | --- |
 
@@ -59,7 +59,7 @@ Notification that the user has started a touch gesture. Clients may want to use 
 
 | Parameters ||
 |-----------|--------------------------------------------------------------------------------------------------------------------------------|
-| `seekBar` | [SeekBar](../android/widget/SeekBar.md)!:The SeekBar in which the touch gesture began |
+| `seekBar` | [SeekBar](SeekBar.md)!:The SeekBar in which the touch gesture began |
 
 ### onStopTrackingTouch
 
@@ -73,4 +73,4 @@ Notification that the user has finished a touch gesture. Clients may want to use
 
 | Parameters ||
 |-----------|--------------------------------------------------------------------------------------------------------------------------------|
-| `seekBar` | [SeekBar](../android/widget/SeekBar.md)!:The SeekBar in which the touch gesture began |
+| `seekBar` | [SeekBar](SeekBar.md)!:The SeekBar in which the touch gesture began |

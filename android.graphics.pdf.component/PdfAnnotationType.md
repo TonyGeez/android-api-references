@@ -5,7 +5,7 @@ Also in [S Extensions 18](https://developer.android.com/sdkExtensions)
 
 # PdfAnnotationType
 
-Kotlin| [Java](../android/graphics/pdf/component/PdfAnnotationType.md) 
+Kotlin| [Java](PdfAnnotationType.md) 
 | --- | --- |
 
 ```
@@ -14,7 +14,7 @@ class PdfAnnotationType
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.graphics.pdf.component.PdfAnnotationType](../android/graphics/pdf/component/PdfAnnotationType.md) |
+| ↳ | [android.graphics.pdf.component.PdfAnnotationType](PdfAnnotationType.md) |
 
 This class holds the set of constants representing the types of a PDF annotation.
 
@@ -22,11 +22,11 @@ This class holds the set of constants representing the types of a PDF annotation
 
 | Constants ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FREETEXT](../android/graphics/pdf/component/PdfAnnotationType.md) Represents a freetext annotation |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HIGHLIGHT](../android/graphics/pdf/component/PdfAnnotationType.md) Represents a highlight annotation |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STAMP](../android/graphics/pdf/component/PdfAnnotationType.md) Represents a stamp annotation |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FREETEXT](PdfAnnotationType.md) Represents a freetext annotation |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HIGHLIGHT](PdfAnnotationType.md) Represents a highlight annotation |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STAMP](PdfAnnotationType.md) Represents a stamp annotation |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNKNOWN](../android/graphics/pdf/component/PdfAnnotationType.md) Represents the type of annotation that cannot be determined |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNKNOWN](PdfAnnotationType.md) Represents the type of annotation that cannot be determined |
 
 ## Constants
 

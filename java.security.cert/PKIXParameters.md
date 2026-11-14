@@ -8,9 +8,9 @@ open class PKIXParameters : CertPathParameters
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.cert.PKIXParameters](../java/security/cert/PKIXParameters.md) |
+| ↳ | [java.security.cert.PKIXParameters](PKIXParameters.md) |
 
-| Known Direct Subclasses [PKIXBuilderParameters](../java/security/cert/PKIXBuilderParameters.md) |---|---| | [PKIXBuilderParameters](../java/security/cert/PKIXBuilderParameters.md) | Parameters used as input for the PKIX `CertPathBuilder` algorithm. | |
+| Known Direct Subclasses [PKIXBuilderParameters](PKIXBuilderParameters.md) |---|---| | [PKIXBuilderParameters](PKIXBuilderParameters.md) | Parameters used as input for the PKIX `CertPathBuilder` algorithm. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 Parameters used as input for the PKIX `CertPathValidator` algorithm.
@@ -40,16 +40,16 @@ Unless otherwise specified, the methods defined in this class are not thread-saf
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/PKIXParameters#addCertStore(java.security.cert.CertStore)(store: https://developer.android.com/reference/kotlin/java/security/cert/CertStore!)` Adds a `CertStore` to the end of the list of `CertStore`s used in finding certificates and CRLs. |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/PKIXParameters#clone()()` Makes a copy of this `PKIXParameters` object. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PKIXCertPathChecker](../java/security/cert/PKIXCertPathChecker.md)!\>! | `https://developer.android.com/reference/kotlin/java/security/cert/PKIXParameters#getCertPathCheckers()()` Returns the `List` of certification path checkers. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [CertStore](../java/security/cert/CertStore.md)!\>! | `https://developer.android.com/reference/kotlin/java/security/cert/PKIXParameters#getCertStores()()` Returns an immutable `List` of `CertStore`s that are used to find certificates and CRLs. |
-| open [Date](../java/util/Date.md)! | `https://developer.android.com/reference/kotlin/java/security/cert/PKIXParameters#getDate()()` Returns the time for which the validity of the certification path should be determined. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PKIXCertPathChecker](PKIXCertPathChecker.md)!\>! | `https://developer.android.com/reference/kotlin/java/security/cert/PKIXParameters#getCertPathCheckers()()` Returns the `List` of certification path checkers. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [CertStore](CertStore.md)!\>! | `https://developer.android.com/reference/kotlin/java/security/cert/PKIXParameters#getCertStores()()` Returns an immutable `List` of `CertStore`s that are used to find certificates and CRLs. |
+| open [Date](../java.util/Date.md)! | `https://developer.android.com/reference/kotlin/java/security/cert/PKIXParameters#getDate()()` Returns the time for which the validity of the certification path should be determined. |
 | --- | --- |
 | open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/java/security/cert/PKIXParameters#getInitialPolicies()()` Returns an immutable `Set` of initial policy identifiers (OID strings), indicating that any one of these policies would be acceptable to the certificate user for the purposes of certification path processing. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/PKIXParameters#getPolicyQualifiersRejected()()` Gets the PolicyQualifiersRejected flag. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/security/cert/PKIXParameters#getSigProvider()()` Returns the signature provider's name, or `null` if not set. |
 | --- | --- |
-| open [CertSelector](../java/security/cert/CertSelector.md)! | `https://developer.android.com/reference/kotlin/java/security/cert/PKIXParameters#getTargetCertConstraints()()` Returns the required constraints on the target certificate. |
-| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [TrustAnchor](../java/security/cert/TrustAnchor.md)!\>! | `https://developer.android.com/reference/kotlin/java/security/cert/PKIXParameters#getTrustAnchors()()` Returns an immutable `Set` of the most-trusted CAs. |
+| open [CertSelector](CertSelector.md)! | `https://developer.android.com/reference/kotlin/java/security/cert/PKIXParameters#getTargetCertConstraints()()` Returns the required constraints on the target certificate. |
+| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [TrustAnchor](TrustAnchor.md)!\>! | `https://developer.android.com/reference/kotlin/java/security/cert/PKIXParameters#getTrustAnchors()()` Returns an immutable `Set` of the most-trusted CAs. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/PKIXParameters#isAnyPolicyInhibited()()` Checks whether the any policy OID should be processed if it is included in a certificate. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/security/cert/PKIXParameters#isExplicitPolicyRequired()()` Checks if explicit policy is required. |
@@ -88,7 +88,7 @@ Creates an instance of `PKIXParameters` that populates the set of most-trusted C
 
 | Parameters ||
 |---|---|
-| `keystore` | [KeyStore](../java/security/KeyStore.md)!: a `KeyStore` from which the set of most-trusted CAs will be populated |
+| `keystore` | [KeyStore](../java.security/KeyStore.md)!: a `KeyStore` from which the set of most-trusted CAs will be populated |
 
 | Exceptions ||
 |---|---|
@@ -111,7 +111,7 @@ Note that the `Set` is copied to protect against subsequent modifications.
 
 | Parameters ||
 |---|---|
-| `trustAnchors` | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [TrustAnchor](../java/security/cert/TrustAnchor.md)!\>!: a `Set` of `TrustAnchor`s |
+| `trustAnchors` | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [TrustAnchor](TrustAnchor.md)!\>!: a `Set` of `TrustAnchor`s |
 
 | Exceptions ||
 |---|---|
@@ -136,7 +136,7 @@ Note that the `PKIXCertPathChecker` is cloned to protect against subsequent modi
 
 | Parameters ||
 |---|---|
-| `checker` | [PKIXCertPathChecker](../java/security/cert/PKIXCertPathChecker.md)!: a `PKIXCertPathChecker` to add to the list of checks. If `null`, the checker is ignored (not added to list). |
+| `checker` | [PKIXCertPathChecker](PKIXCertPathChecker.md)!: a `PKIXCertPathChecker` to add to the list of checks. If `null`, the checker is ignored (not added to list). |
 
 ### addCertStore
 
@@ -150,7 +150,7 @@ Adds a `CertStore` to the end of the list of `CertStore`s used in finding certif
 
 | Parameters ||
 |---|---|
-| `store` | [CertStore](../java/security/cert/CertStore.md)!: the `CertStore` to add. If `null`, the store is ignored (not added to list). |
+| `store` | [CertStore](CertStore.md)!: the `CertStore` to add. If `null`, the store is ignored (not added to list). |
 
 ### clone
 
@@ -410,7 +410,7 @@ Note that the `List` supplied here is copied and each `PKIXCertPathChecker` in t
 
 | Parameters ||
 |---|---|
-| `checkers` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PKIXCertPathChecker](../java/security/cert/PKIXCertPathChecker.md)!\>!: a `List` of `PKIXCertPathChecker`s. May be `null`, in which case no additional checkers will be used. |
+| `checkers` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PKIXCertPathChecker](PKIXCertPathChecker.md)!\>!: a `List` of `PKIXCertPathChecker`s. May be `null`, in which case no additional checkers will be used. |
 
 | Exceptions ||
 |---|---|
@@ -434,7 +434,7 @@ Note that the `List` is copied to protect against subsequent modifications.
 
 | Parameters ||
 |---|---|
-| `stores` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [CertStore](../java/security/cert/CertStore.md)!\>!: a `List` of `CertStore`s (or `null`) |
+| `stores` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [CertStore](CertStore.md)!\>!: a `List` of `CertStore`s (or `null`) |
 
 | Exceptions ||
 |---|---|
@@ -458,7 +458,7 @@ Note that the `Date` supplied here is copied to protect against subsequent modif
 
 | Parameters ||
 |---|---|
-| `date` | [Date](../java/util/Date.md)!: the `Date`, or `null` for the current time |
+| `date` | [Date](../java.util/Date.md)!: the `Date`, or `null` for the current time |
 
 **See Also**
 
@@ -587,7 +587,7 @@ Note that the `CertSelector` specified is cloned to protect against subsequent m
 
 | Parameters ||
 |---|---|
-| `selector` | [CertSelector](../java/security/cert/CertSelector.md)!: a `CertSelector` specifying the constraints on the target certificate (or `null`) |
+| `selector` | [CertSelector](CertSelector.md)!: a `CertSelector` specifying the constraints on the target certificate (or `null`) |
 
 **See Also**
 
@@ -607,7 +607,7 @@ Note that the `Set` is copied to protect against subsequent modifications.
 
 | Parameters ||
 |---|---|
-| `trustAnchors` | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [TrustAnchor](../java/security/cert/TrustAnchor.md)!\>!: a `Set` of `TrustAnchor`s |
+| `trustAnchors` | [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [TrustAnchor](TrustAnchor.md)!\>!: a `Set` of `TrustAnchor`s |
 
 | Exceptions ||
 |---|---|

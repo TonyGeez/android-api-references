@@ -2,7 +2,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 
 # ConfigurationInfo
 
-Kotlin | [Java](../android/content/pm/ConfigurationInfo.md)
+Kotlin | [Java](ConfigurationInfo.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ open class ConfigurationInfo : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.content.pm.ConfigurationInfo](../android/content/pm/ConfigurationInfo.md) |
+| ↳ | [android.content.pm.ConfigurationInfo](ConfigurationInfo.md) |
 
 Information you can retrieve about hardware configuration preferences declared by an application. This corresponds to information collected from the AndroidManifest.xml's \<uses-configuration\> and \<uses-feature\> tags.
 
@@ -43,7 +43,7 @@ Information you can retrieve about hardware configuration preferences declared b
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ConfigurationInfo](../android/content/pm/ConfigurationInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/ConfigurationInfo#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ConfigurationInfo](ConfigurationInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/ConfigurationInfo#CREATOR:android.os.Parcelable.Creator` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ConfigurationInfo#reqGlEsVersion:kotlin.Int` The GLES version used by an application. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ConfigurationInfo#reqInputFeatures:kotlin.Int` Flags associated with the input features. |
 | --- | --- |
@@ -167,7 +167,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

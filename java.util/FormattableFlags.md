@@ -10,17 +10,17 @@ open class FormattableFlags
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.util.FormattableFlags](../java/util/FormattableFlags.md) |
+| ↳ | [java.util.FormattableFlags](FormattableFlags.md) |
 
-FormattableFlags are passed to the [Formattable.formatTo()](../java/util/Formattable.md))method and modify the output format for [Formattables](../java/util/Formattable.md). Implementations of [Formattable](../java/util/Formattable.md) are responsible for interpreting and validating any flags.
+FormattableFlags are passed to the [Formattable.formatTo()](Formattable.md))method and modify the output format for [Formattables](Formattable.md). Implementations of [Formattable](Formattable.md) are responsible for interpreting and validating any flags.
 
 ## Summary
 
 | Constants ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ALTERNATE](../java/util/FormattableFlags.md) Requires the output to use an alternate form. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LEFT_JUSTIFY](../java/util/FormattableFlags.md) Left-justifies the output. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UPPERCASE](../java/util/FormattableFlags.md) Converts the output to upper case according to the rules of the [locale](../java/util/Locale.md) given during creation of the`formatter`argument of the [formatTo()](../java/util/Formattable.md))method. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ALTERNATE](FormattableFlags.md) Requires the output to use an alternate form. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LEFT_JUSTIFY](FormattableFlags.md) Left-justifies the output. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UPPERCASE](FormattableFlags.md) Converts the output to upper case according to the rules of the [locale](Locale.md) given during creation of the`formatter`argument of the [formatTo()](Formattable.md))method. |
 | --- | --- |
 
 ## Constants
@@ -61,7 +61,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val UPPERCASE: Int
 ```
 
-Converts the output to upper case according to the rules of the [locale](../java/util/Locale.md) given during creation of the`formatter`argument of the [formatTo()](../java/util/Formattable.md))method. The output should be equivalent the following invocation of [String.toUpperCase(java.util.Locale)](../java/lang/String.md)) 
+Converts the output to upper case according to the rules of the [locale](Locale.md) given during creation of the`formatter`argument of the [formatTo()](Formattable.md))method. The output should be equivalent the following invocation of [String.toUpperCase(java.util.Locale)](../java.lang/String.md)) 
 
 ```kotlin
 out.toUpperCase() 

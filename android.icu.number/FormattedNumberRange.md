@@ -4,7 +4,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 
 # FormattedNumberRange
 
-Kotlin| [Java](../android/icu/number/FormattedNumberRange.md) 
+Kotlin| [Java](FormattedNumberRange.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class FormattedNumberRange : FormattedValue
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.icu.number.FormattedNumberRange](../android/icu/number/FormattedNumberRange.md) |
+| ↳ | [android.icu.number.FormattedNumberRange](FormattedNumberRange.md) |
 
 The result of a number range formatting operation. This class allows the result to be exported in several data types, including a String, an AttributedCharacterIterator, and a BigDecimal. Instances of this class are immutable and thread-safe.
 
@@ -21,24 +21,24 @@ The result of a number range formatting operation. This class allows the result 
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openA | [appendTo](../android/icu/number/FormattedNumberRange.md))`(`appendable:` `A`)` Appends the formatted string to an Appendable. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/icu/number/FormattedNumberRange.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [get](../android/icu/number/FormattedNumberRange.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the`char`value at the specified index. |
+| openA | [appendTo](FormattedNumberRange.md))`(`appendable:` `A`)` Appends the formatted string to an Appendable. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](FormattedNumberRange.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [get](FormattedNumberRange.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the`char`value at the specified index. |
 | --- | --- |
-| open [BigDecimal](../java/math/BigDecimal.md)! | [getFirstBigDecimal](../android/icu/number/FormattedNumberRange.md))`()` Export the first formatted number as a BigDecimal. |
-| open [NumberRangeFormatter.RangeIdentityResult](../android/icu/number/NumberRangeFormatter.RangeIdentityResult.md)! | [getIdentityResult](../android/icu/number/FormattedNumberRange.md))`()` Returns whether the pair of numbers was successfully formatted as a range or whether an identity fallback was used. |
-| open [BigDecimal](../java/math/BigDecimal.md)! | [getSecondBigDecimal](../android/icu/number/FormattedNumberRange.md))`()` Export the second formatted number as a BigDecimal. |
+| open [BigDecimal](../java.math/BigDecimal.md)! | [getFirstBigDecimal](FormattedNumberRange.md))`()` Export the first formatted number as a BigDecimal. |
+| open [NumberRangeFormatter.RangeIdentityResult](../android/icu/number/NumberRangeFormatter.RangeIdentityResult.md)! | [getIdentityResult](FormattedNumberRange.md))`()` Returns whether the pair of numbers was successfully formatted as a range or whether an identity fallback was used. |
+| open [BigDecimal](../java.math/BigDecimal.md)! | [getSecondBigDecimal](FormattedNumberRange.md))`()` Export the second formatted number as a BigDecimal. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/icu/number/FormattedNumberRange.md))`()` Returns a hash code value for the object. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [nextPosition](../android/icu/number/FormattedNumberRange.md))`(`cfpos:` ` [ConstrainedFieldPosition](../android/icu/text/ConstrainedFieldPosition.md)!`)` Iterates over field positions in the FormattedValue. |
-| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | [subSequence](../android/icu/number/FormattedNumberRange.md))`(`startIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `endIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a`CharSequence`that is a subsequence of this sequence. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](FormattedNumberRange.md))`()` Returns a hash code value for the object. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [nextPosition](FormattedNumberRange.md))`(`cfpos:` ` [ConstrainedFieldPosition](../android.icu.text/ConstrainedFieldPosition.md)!`)` Iterates over field positions in the FormattedValue. |
+| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | [subSequence](FormattedNumberRange.md))`(`startIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `endIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a`CharSequence`that is a subsequence of this sequence. |
 | --- | --- |
-| open [AttributedCharacterIterator](../java/text/AttributedCharacterIterator.md)! | [toCharacterIterator](../android/icu/number/FormattedNumberRange.md))`()` Exports the formatted number as an AttributedCharacterIterator. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/icu/number/FormattedNumberRange.md))`()` Returns a string representation of the object. |
+| open [AttributedCharacterIterator](../java.text/AttributedCharacterIterator.md)! | [toCharacterIterator](FormattedNumberRange.md))`()` Exports the formatted number as an AttributedCharacterIterator. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](FormattedNumberRange.md))`()` Returns a string representation of the object. |
 
 | Properties ||
 |--------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [length](../android/icu/number/FormattedNumberRange.md) Returns the length of this character sequence. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [length](FormattedNumberRange.md) Returns the length of this character sequence. |
 
 ## Public methods
 
@@ -52,7 +52,7 @@ open fun <A : Appendable!> appendTo(appendable: A): A
 
 Appends the formatted string to an Appendable.
 
-If an IOException occurs when appending to the Appendable, an unchecked [ICUUncheckedIOException](../android/icu/util/ICUUncheckedIOException.md) is thrown instead.
+If an IOException occurs when appending to the Appendable, an unchecked [ICUUncheckedIOException](../android.icu.util/ICUUncheckedIOException.md) is thrown instead.
 
 | Parameters ||
 |--------------|--------------------------------------------------------|
@@ -130,12 +130,12 @@ Export the first formatted number as a BigDecimal. This endpoint is useful for o
 
 | Return ||
 |------------------------------------------------------------------------------------------|------------------------------------------------------------|
-| [BigDecimal](../java/math/BigDecimal.md)! | A BigDecimal representation of the first formatted number. |
+| [BigDecimal](../java.math/BigDecimal.md)! | A BigDecimal representation of the first formatted number. |
 
 **See Also**
 
-- [android.icu.number.NumberRangeFormatter](../android/icu/number/NumberRangeFormatter.md)
-- [#getSecondBigDecimal](../android/icu/number/FormattedNumberRange.md)) 
+- [android.icu.number.NumberRangeFormatter](NumberRangeFormatter.md)
+- [#getSecondBigDecimal](FormattedNumberRange.md)) 
 
 ### getIdentityResult
 
@@ -153,7 +153,7 @@ Returns whether the pair of numbers was successfully formatted as a range or whe
 
 **See Also**
 
-- [android.icu.number.NumberRangeFormatter](../android/icu/number/NumberRangeFormatter.md)
+- [android.icu.number.NumberRangeFormatter](NumberRangeFormatter.md)
 - [android.icu.number.NumberRangeFormatter.RangeIdentityFallback](../android/icu/number/NumberRangeFormatter.RangeIdentityFallback.md) 
 
 ### getSecondBigDecimal
@@ -168,12 +168,12 @@ Export the second formatted number as a BigDecimal. This endpoint is useful for 
 
 | Return ||
 |------------------------------------------------------------------------------------------|-------------------------------------------------------------|
-| [BigDecimal](../java/math/BigDecimal.md)! | A BigDecimal representation of the second formatted number. |
+| [BigDecimal](../java.math/BigDecimal.md)! | A BigDecimal representation of the second formatted number. |
 
 **See Also**
 
-- [android.icu.number.NumberRangeFormatter](../android/icu/number/NumberRangeFormatter.md)
-- [#getFirstBigDecimal](../android/icu/number/FormattedNumberRange.md)) 
+- [android.icu.number.NumberRangeFormatter](NumberRangeFormatter.md)
+- [#getFirstBigDecimal](FormattedNumberRange.md)) 
 
 ### hashCode
 
@@ -183,13 +183,13 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 open fun hashCode(): Int
 ```
 
-Returns a hash code value for the object. This method is supported for the benefit of hash tables such as those provided by [java.util.HashMap](../java/util/HashMap.md).
+Returns a hash code value for the object. This method is supported for the benefit of hash tables such as those provided by [java.util.HashMap](../java.util/HashMap.md).
 
 The general contract of`hashCode`is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the`hashCode`method must consistently return the same integer, provided no information used in`equals`comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the [equals](../java/lang/Object.md))method, then calling the`hashCode`method on each of the two objects must produce the same integer result.
-- It is*not* required that if two objects are unequal according to the [equals](../java/lang/Object.md))method, then calling the`hashCode`method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the [equals](../java.lang/Object.md))method, then calling the`hashCode`method on each of the two objects must produce the same integer result.
+- It is*not* required that if two objects are unequal according to the [equals](../java.lang/Object.md))method, then calling the`hashCode`method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------|
@@ -217,7 +217,7 @@ ConstrainedFieldPosition cfpos = new ConstrainedFieldPosition();
 
 | Parameters ||
 |---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `cfpos` | [ConstrainedFieldPosition](../android/icu/text/ConstrainedFieldPosition.md)!:The object used for iteration state. This can provide constraints to iterate over only one specific field; see [ConstrainedFieldPosition.constrainField](../android/icu/text/ConstrainedFieldPosition.md)). |
+| `cfpos` | [ConstrainedFieldPosition](../android.icu.text/ConstrainedFieldPosition.md)!:The object used for iteration state. This can provide constraints to iterate over only one specific field; see [ConstrainedFieldPosition.constrainField](../android.icu.text/ConstrainedFieldPosition.md)). |
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------------------------------------------------|
@@ -259,11 +259,11 @@ open fun toCharacterIterator(): AttributedCharacterIterator!
 
 Exports the formatted number as an AttributedCharacterIterator.
 
-Consider using [nextPosition](../android/icu/text/FormattedValue.md))if you are trying to get field information.
+Consider using [nextPosition](../android.icu.text/FormattedValue.md))if you are trying to get field information.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------|
-| [AttributedCharacterIterator](../java/text/AttributedCharacterIterator.md)! | An AttributedCharacterIterator containing full field information. |
+| [AttributedCharacterIterator](../java.text/AttributedCharacterIterator.md)! | An AttributedCharacterIterator containing full field information. |
 
 ### toString
 

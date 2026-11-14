@@ -4,7 +4,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # UCharacterEnums
 
-Kotlin| [Java](../android/icu/lang/UCharacterEnums.md) 
+Kotlin| [Java](UCharacterEnums.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class UCharacterEnums
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.icu.lang.UCharacterEnums](../android/icu/lang/UCharacterEnums.md) |
+| ↳ | [android.icu.lang.UCharacterEnums](UCharacterEnums.md) |
 
 A container for the different 'enumerated types' used by UCharacter.
 

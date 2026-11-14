@@ -3,7 +3,7 @@ Deprecated in [API level 16](https://developer.android.com/guide/topics/manifest
 
 # ComparisonFailure
 
-Kotlin | [Java](../android/test/ComparisonFailure.md)
+Kotlin | [Java](ComparisonFailure.md)
 | --- | --- |
 
 ```
@@ -13,10 +13,10 @@ open class ComparisonFailure : AssertionFailedError
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Error](../java/lang/Error.md) |||
-| | | ↳ | [android.test.AssertionFailedError](../android/test/AssertionFailedError.md) ||
+| | ↳ | [java.lang.Error](../java.lang/Error.md) |||
+| | | ↳ | [android.test.AssertionFailedError](AssertionFailedError.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.test.ComparisonFailure](../android/test/ComparisonFailure.md) |
+| | | | ↳ | [android.test.ComparisonFailure](ComparisonFailure.md) |
 
 | **This exception was deprecated in API level 16.**
 |

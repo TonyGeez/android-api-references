@@ -10,7 +10,7 @@ open class SdkSandboxController
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.sdksandbox.sdkprovider.SdkSandboxController](../android/app/sdksandbox/sdkprovider/SdkSandboxController.md) |
+| ↳ | [android.app.sdksandbox.sdkprovider.SdkSandboxController](SdkSandboxController.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 37.**
@@ -27,13 +27,13 @@ Controller that is used by SDK loaded in the sandbox to access information provi
 
 | Public methods ||
 |---|---|
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AppOwnedSdkSandboxInterface](../android/app/sdksandbox/AppOwnedSdkSandboxInterface.md)!\> | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/sdkprovider/SdkSandboxController#getAppOwnedSdkSandboxInterfaces()()` Fetches all `https://developer.android.com/reference/kotlin/android/app/sdksandbox/AppOwnedSdkSandboxInterface.html#` that are registered by the app. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AppOwnedSdkSandboxInterface](../android.app.sdksandbox/AppOwnedSdkSandboxInterface.md)!\> | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/sdkprovider/SdkSandboxController#getAppOwnedSdkSandboxInterfaces()()` Fetches all `https://developer.android.com/reference/kotlin/android/app/sdksandbox/AppOwnedSdkSandboxInterface.html#` that are registered by the app. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/sdkprovider/SdkSandboxController#getClientPackageName()()` Returns the package name of the client app. |
-| open [SharedPreferences](../android/content/SharedPreferences.md) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/sdkprovider/SdkSandboxController#getClientSharedPreferences()()` Returns `https://developer.android.com/reference/kotlin/android/content/SharedPreferences.html#` containing data synced from the client app. |
+| open [SharedPreferences](../android.content/SharedPreferences.md) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/sdkprovider/SdkSandboxController#getClientSharedPreferences()()` Returns `https://developer.android.com/reference/kotlin/android/content/SharedPreferences.html#` containing data synced from the client app. |
 | --- | --- |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SandboxedSdk](../android/app/sdksandbox/SandboxedSdk.md)!\> | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/sdkprovider/SdkSandboxController#getSandboxedSdks()()` Fetches information about Sdks that are loaded in the sandbox. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SandboxedSdk](../android.app.sdksandbox/SandboxedSdk.md)!\> | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/sdkprovider/SdkSandboxController#getSandboxedSdks()()` Fetches information about Sdks that are loaded in the sandbox. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/sdkprovider/SdkSandboxController#loadSdk(kotlin.String,%20android.os.Bundle,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(sdkName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, params: https://developer.android.com/reference/kotlin/android/os/Bundle.html#, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, receiver: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://developer.android.com/reference/kotlin/android/app/sdksandbox/SandboxedSdk.html#!, https://developer.android.com/reference/kotlin/android/app/sdksandbox/LoadSdkException.html#!>)` Loads SDK in an SDK sandbox java process. |
-| open [IBinder](../android/os/IBinder.md) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/sdkprovider/SdkSandboxController#registerSdkSandboxActivityHandler(android.app.sdksandbox.sdkprovider.SdkSandboxActivityHandler)(sdkSandboxActivityHandler: https://developer.android.com/reference/kotlin/android/app/sdksandbox/sdkprovider/SdkSandboxActivityHandler)` Returns an identifier for a `https://developer.android.com/reference/kotlin/android/app/sdksandbox/sdkprovider/SdkSandboxActivityHandler` after registering it. |
+| open [IBinder](../android.os/IBinder.md) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/sdkprovider/SdkSandboxController#registerSdkSandboxActivityHandler(android.app.sdksandbox.sdkprovider.SdkSandboxActivityHandler)(sdkSandboxActivityHandler: https://developer.android.com/reference/kotlin/android/app/sdksandbox/sdkprovider/SdkSandboxActivityHandler)` Returns an identifier for a `https://developer.android.com/reference/kotlin/android/app/sdksandbox/sdkprovider/SdkSandboxActivityHandler` after registering it. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/sdkprovider/SdkSandboxController#registerSdkSandboxClientImportanceListener(java.util.concurrent.Executor,%20android.app.sdksandbox.sdkprovider.SdkSandboxClientImportanceListener)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, listener: https://developer.android.com/reference/kotlin/android/app/sdksandbox/sdkprovider/SdkSandboxClientImportanceListener)` Registers a listener to be notified of changes in the client's process importance. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/sdksandbox/sdkprovider/SdkSandboxController#unregisterSdkSandboxActivityHandler(android.app.sdksandbox.sdkprovider.SdkSandboxActivityHandler)(sdkSandboxActivityHandler: https://developer.android.com/reference/kotlin/android/app/sdksandbox/sdkprovider/SdkSandboxActivityHandler)` Unregister an already registered `https://developer.android.com/reference/kotlin/android/app/sdksandbox/sdkprovider/SdkSandboxActivityHandler`. |
@@ -152,10 +152,10 @@ Loads SDK in an SDK sandbox java process.
 | Parameters ||
 |---|---|
 | `sdkName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): This value cannot be `null`. |
-| `params` | [Bundle](../android/os/Bundle.md): This value cannot be `null`. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `params` | [Bundle](../android.os/Bundle.md): This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | --- | --- |
-| `receiver` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [SandboxedSdk](../android/app/sdksandbox/SandboxedSdk.md)!, [LoadSdkException](../android/app/sdksandbox/LoadSdkException.md)!\>: This value cannot be `null`. |
+| `receiver` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [SandboxedSdk](../android.app.sdksandbox/SandboxedSdk.md)!, [LoadSdkException](../android.app.sdksandbox/LoadSdkException.md)!\>: This value cannot be `null`. |
 
 ### registerSdkSandboxActivityHandler
 
@@ -173,7 +173,7 @@ Returns an identifier for a `https://developer.android.com/reference/kotlin/andr
 
 | Parameters ||
 |---|---|
-| `sdkSandboxActivityHandler` | [SdkSandboxActivityHandler](../android/app/sdksandbox/sdkprovider/SdkSandboxActivityHandler.md): This value cannot be `null`. |
+| `sdkSandboxActivityHandler` | [SdkSandboxActivityHandler](SdkSandboxActivityHandler.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -198,8 +198,8 @@ Registers a listener to be notified of changes in the client's process importanc
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `listener` | [SdkSandboxClientImportanceListener](../android/app/sdksandbox/sdkprovider/SdkSandboxClientImportanceListener.md): This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `listener` | [SdkSandboxClientImportanceListener](SdkSandboxClientImportanceListener.md): This value cannot be `null`. |
 
 ### unregisterSdkSandboxActivityHandler
 
@@ -217,7 +217,7 @@ Unregister an already registered `https://developer.android.com/reference/kotlin
 
 | Parameters ||
 |---|---|
-| `sdkSandboxActivityHandler` | [SdkSandboxActivityHandler](../android/app/sdksandbox/sdkprovider/SdkSandboxActivityHandler.md): This value cannot be `null`. |
+| `sdkSandboxActivityHandler` | [SdkSandboxActivityHandler](SdkSandboxActivityHandler.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -239,4 +239,4 @@ Unregisters a listener previously registered.
 
 | Parameters ||
 |---|---|
-| `listener` | [SdkSandboxClientImportanceListener](../android/app/sdksandbox/sdkprovider/SdkSandboxClientImportanceListener.md): This value cannot be `null`. |
+| `listener` | [SdkSandboxClientImportanceListener](SdkSandboxClientImportanceListener.md): This value cannot be `null`. |

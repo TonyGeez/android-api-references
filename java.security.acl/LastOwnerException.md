@@ -12,8 +12,8 @@ open class LastOwnerException : Exception
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||
-| | | ↳ | [java.security.acl.LastOwnerException](../java/security/acl/LastOwnerException.md) |
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) ||
+| | | ↳ | [java.security.acl.LastOwnerException](LastOwnerException.md) |
 | --- | --- | --- | --- |
 
 | **This exception was deprecated in API level 33.**
@@ -26,7 +26,7 @@ This is an exception that is thrown whenever an attempt is made to delete the la
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [LastOwnerException](../java/security/acl/LastOwnerException.md))`()` Constructs a LastOwnerException. |
+| [LastOwnerException](LastOwnerException.md))`()` Constructs a LastOwnerException. |
 
 ## Public constructors
 

@@ -2,7 +2,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # Selection
 
-Kotlin | [Java](../android/text/Selection.md)
+Kotlin | [Java](Selection.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ open class Selection
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.text.Selection](../android/text/Selection.md) |
+| ↳ | [android.text.Selection](Selection.md) |
 
 Utility class for manipulating cursors and selections in CharSequences. A cursor is a selection where the start and end are at the same offset.
 
@@ -132,7 +132,7 @@ Extend the selection to the closest paragraph end offset.
 
 | Parameters ||
 |---|---|
-| `text` | [Spannable](../android/text/Spannable.md): the spannable text. This value cannot be `null`. |
+| `text` | [Spannable](Spannable.md): the spannable text. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -150,7 +150,7 @@ Extend the selection to the closest paragraph start offset.
 
 | Parameters ||
 |---|---|
-| `text` | [Spannable](../android/text/Spannable.md): the spannable text. This value cannot be `null`. |
+| `text` | [Spannable](Spannable.md): the spannable text. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -265,8 +265,8 @@ Move the cursor to the closest paragraph end offset.
 
 | Parameters ||
 |---|---|
-| `text` | [Spannable](../android/text/Spannable.md): the spannable text. This value cannot be `null`. |
-| `layout` | [Layout](../android/text/Layout.md): layout to be used for drawing. This value cannot be `null`. |
+| `text` | [Spannable](Spannable.md): the spannable text. This value cannot be `null`. |
+| `layout` | [Layout](Layout.md): layout to be used for drawing. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -287,8 +287,8 @@ Move the cursor to the closest paragraph start offset.
 
 | Parameters ||
 |---|---|
-| `text` | [Spannable](../android/text/Spannable.md): the spannable text. This value cannot be `null`. |
-| `layout` | [Layout](../android/text/Layout.md): layout to be used for drawing. This value cannot be `null`. |
+| `text` | [Spannable](Spannable.md): the spannable text. This value cannot be `null`. |
+| `layout` | [Layout](Layout.md): layout to be used for drawing. This value cannot be `null`. |
 
 | Return ||
 |---|---|

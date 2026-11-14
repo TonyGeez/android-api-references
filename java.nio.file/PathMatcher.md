@@ -8,7 +8,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 @FunctionalInterface interface PathMatcher
 ```
 
-| [java.nio.file.PathMatcher](../java/nio/file/PathMatcher.md) |
+| [java.nio.file.PathMatcher](PathMatcher.md) |
 
 An interface that is implemented by objects that perform match operations on paths.
 
@@ -16,7 +16,7 @@ An interface that is implemented by objects that perform match operations on pat
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [matches](../java/nio/file/PathMatcher.md))`(`path:` ` [Path](../java/nio/file/Path.md)!`)` Tells if given path matches this matcher's pattern. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [matches](PathMatcher.md))`(`path:` ` [Path](Path.md)!`)` Tells if given path matches this matcher's pattern. |
 
 ## Public methods
 
@@ -32,7 +32,7 @@ Tells if given path matches this matcher's pattern.
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------|
-| `path` | [Path](../java/nio/file/Path.md)!:the path to match |
+| `path` | [Path](Path.md)!:the path to match |
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------------------------------------------------------|

@@ -2,7 +2,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # TranslationContext
 
-Kotlin | [Java](../android/view/translation/TranslationContext.md)
+Kotlin | [Java](TranslationContext.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class TranslationContext : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.translation.TranslationContext](../android/view/translation/TranslationContext.md) |
+| ↳ | [android.view.translation.TranslationContext](TranslationContext.md) |
 
 Info class holding information for `https://developer.android.com/reference/kotlin/android/view/translation/Translator`s and used by `https://developer.android.com/reference/kotlin/android/view/translation/TranslationManager#createOnDeviceTranslator(android.view.translation.TranslationContext,%20java.util.concurrent.Executor,%20java.util.function.Consumer)`.
 
@@ -35,8 +35,8 @@ Info class holding information for `https://developer.android.com/reference/kotl
 | Public methods ||
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/translation/TranslationContext#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [TranslationSpec](../android/view/translation/TranslationSpec.md) | `https://developer.android.com/reference/kotlin/android/view/translation/TranslationContext#getSourceSpec()()` `https://developer.android.com/reference/kotlin/android/view/translation/TranslationSpec` describing the source data to be translated. |
-| [TranslationSpec](../android/view/translation/TranslationSpec.md) | `https://developer.android.com/reference/kotlin/android/view/translation/TranslationContext#getTargetSpec()()` `https://developer.android.com/reference/kotlin/android/view/translation/TranslationSpec` describing the target translated data. |
+| [TranslationSpec](TranslationSpec.md) | `https://developer.android.com/reference/kotlin/android/view/translation/TranslationContext#getSourceSpec()()` `https://developer.android.com/reference/kotlin/android/view/translation/TranslationSpec` describing the source data to be translated. |
+| [TranslationSpec](TranslationSpec.md) | `https://developer.android.com/reference/kotlin/android/view/translation/TranslationContext#getTargetSpec()()` `https://developer.android.com/reference/kotlin/android/view/translation/TranslationSpec` describing the target translated data. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/translation/TranslationContext#getTranslationFlags()()` Translation flags to be used by the `https://developer.android.com/reference/kotlin/android/view/translation/Translator` |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/view/translation/TranslationContext#toString()()` Returns a string representation of the object. |
@@ -45,7 +45,7 @@ Info class holding information for `https://developer.android.com/reference/kotl
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [TranslationContext](../android/view/translation/TranslationContext.md)!\> | `https://developer.android.com/reference/kotlin/android/view/translation/TranslationContext#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [TranslationContext](TranslationContext.md)!\> | `https://developer.android.com/reference/kotlin/android/view/translation/TranslationContext#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -193,7 +193,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

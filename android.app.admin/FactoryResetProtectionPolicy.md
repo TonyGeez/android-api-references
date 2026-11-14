@@ -8,7 +8,7 @@ class FactoryResetProtectionPolicy : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.admin.FactoryResetProtectionPolicy](../android/app/admin/FactoryResetProtectionPolicy.md) |
+| ↳ | [android.app.admin.FactoryResetProtectionPolicy](FactoryResetProtectionPolicy.md) |
 
 The factory reset protection policy determines which accounts can unlock a device that has gone through untrusted factory reset.
 
@@ -45,7 +45,7 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [FactoryResetProtectionPolicy](../android/app/admin/FactoryResetProtectionPolicy.md)!\> | `https://developer.android.com/reference/kotlin/android/app/admin/FactoryResetProtectionPolicy#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [FactoryResetProtectionPolicy](FactoryResetProtectionPolicy.md)!\> | `https://developer.android.com/reference/kotlin/android/app/admin/FactoryResetProtectionPolicy#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public methods
 
@@ -116,7 +116,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): This value may be `null`. |
 
 ## Properties

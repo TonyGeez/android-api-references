@@ -11,12 +11,12 @@ open class BadPaddingException : GeneralSecurityException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
-| | | ↳ | [java.security.GeneralSecurityException](../java/security/GeneralSecurityException.md) ||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) |||
+| | | ↳ | [java.security.GeneralSecurityException](../java.security/GeneralSecurityException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [javax.crypto.BadPaddingException](../javax/crypto/BadPaddingException.md) |
+| | | | ↳ | [javax.crypto.BadPaddingException](BadPaddingException.md) |
 
-| Known Direct Subclasses [AEADBadTagException](../javax/crypto/AEADBadTagException.md) |--------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [AEADBadTagException](../javax/crypto/AEADBadTagException.md) | This exception is thrown when a [Cipher](../javax/crypto/Cipher.md) operating in an AEAD mode (such as GCM/CCM) is unable to verify the supplied authentication tag. | |
+| Known Direct Subclasses [AEADBadTagException](AEADBadTagException.md) |--------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [AEADBadTagException](AEADBadTagException.md) | This exception is thrown when a [Cipher](Cipher.md) operating in an AEAD mode (such as GCM/CCM) is unable to verify the supplied authentication tag. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 This exception is thrown when a particular padding mechanism is expected for the input data but the data is not padded properly.
@@ -25,8 +25,8 @@ This exception is thrown when a particular padding mechanism is expected for the
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [BadPaddingException](../javax/crypto/BadPaddingException.md))`()` Constructs a BadPaddingException with no detail message. |
-| [BadPaddingException](../javax/crypto/BadPaddingException.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a BadPaddingException with the specified detail message. |
+| [BadPaddingException](BadPaddingException.md))`()` Constructs a BadPaddingException with no detail message. |
+| [BadPaddingException](BadPaddingException.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a BadPaddingException with the specified detail message. |
 
 ## Public constructors
 

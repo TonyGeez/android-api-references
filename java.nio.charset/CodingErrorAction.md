@@ -10,23 +10,23 @@ open class CodingErrorAction
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.nio.charset.CodingErrorAction](../java/nio/charset/CodingErrorAction.md) |
+| ↳ | [java.nio.charset.CodingErrorAction](CodingErrorAction.md) |
 
 A typesafe enumeration for coding-error actions.
 
-Instances of this class are used to specify how malformed-input and unmappable-character errors are to be handled by charset [decoders](../java/nio/charset/CharsetDecoder.md) and [encoders](../java/nio/charset/CharsetEncoder.md).
+Instances of this class are used to specify how malformed-input and unmappable-character errors are to be handled by charset [decoders](CharsetDecoder.md) and [encoders](CharsetEncoder.md).
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/nio/charset/CodingErrorAction.md))`()` Returns a string describing this action. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](CodingErrorAction.md))`()` Returns a string describing this action. |
 
 | Properties ||
 |----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [CodingErrorAction](../java/nio/charset/CodingErrorAction.md)! | [IGNORE](../java/nio/charset/CodingErrorAction.md) Action indicating that a coding error is to be handled by dropping the erroneous input and resuming the coding operation. |
-| static [CodingErrorAction](../java/nio/charset/CodingErrorAction.md)! | [REPLACE](../java/nio/charset/CodingErrorAction.md) Action indicating that a coding error is to be handled by dropping the erroneous input, appending the coder's replacement value to the output buffer, and resuming the coding operation. |
-| static [CodingErrorAction](../java/nio/charset/CodingErrorAction.md)! | [REPORT](../java/nio/charset/CodingErrorAction.md) Action indicating that a coding error is to be reported, either by returning a [CoderResult](../java/nio/charset/CoderResult.md) object or by throwing a [CharacterCodingException](../java/nio/charset/CharacterCodingException.md), whichever is appropriate for the method implementing the coding process. |
+| static [CodingErrorAction](CodingErrorAction.md)! | [IGNORE](CodingErrorAction.md) Action indicating that a coding error is to be handled by dropping the erroneous input and resuming the coding operation. |
+| static [CodingErrorAction](CodingErrorAction.md)! | [REPLACE](CodingErrorAction.md) Action indicating that a coding error is to be handled by dropping the erroneous input, appending the coder's replacement value to the output buffer, and resuming the coding operation. |
+| static [CodingErrorAction](CodingErrorAction.md)! | [REPORT](CodingErrorAction.md) Action indicating that a coding error is to be reported, either by returning a [CoderResult](CoderResult.md) object or by throwing a [CharacterCodingException](CharacterCodingException.md), whichever is appropriate for the method implementing the coding process. |
 | --- | --- |
 
 ## Public methods
@@ -75,4 +75,4 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val REPORT: CodingErrorAction!
 ```
 
-Action indicating that a coding error is to be reported, either by returning a [CoderResult](../java/nio/charset/CoderResult.md) object or by throwing a [CharacterCodingException](../java/nio/charset/CharacterCodingException.md), whichever is appropriate for the method implementing the coding process.
+Action indicating that a coding error is to be reported, either by returning a [CoderResult](CoderResult.md) object or by throwing a [CharacterCodingException](CharacterCodingException.md), whichever is appropriate for the method implementing the coding process.

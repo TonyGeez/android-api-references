@@ -4,7 +4,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 
 # MediaRouter
 
-Kotlin| [Java](../android/media/MediaRouter.md) 
+Kotlin| [Java](MediaRouter.md) 
 | --- | --- |
 
 ```
@@ -13,13 +13,13 @@ open class MediaRouter
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.MediaRouter](../android/media/MediaRouter.md) |
+| ↳ | [android.media.MediaRouter](MediaRouter.md) |
 
 This API is not recommended for new applications. Use the [AndroidX](https://developer.android.com/jetpack/androidx.html) [Media Router Library](../androidx/mediarouter/media/_package.md) for consistent behavior across all devices.
 
 MediaRouter allows applications to control the routing of media channels and streams from the current device to external speakers and destination devices.
 
-A MediaRouter is retrieved through [Context.getSystemService()](../android/content/Context.md))of a [Context.MEDIA_ROUTER_SERVICE](../android/content/Context.md).
+A MediaRouter is retrieved through [Context.getSystemService()](../android.content/Context.md))of a [Context.MEDIA_ROUTER_SERVICE](../android.content/Context.md).
 
 This API is not thread-safe; all interactions with it must be done from the main thread of the process.
 
@@ -39,36 +39,36 @@ This API is not thread-safe; all interactions with it must be done from the main
 
 | Constants ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CALLBACK_FLAG_PERFORM_ACTIVE_SCAN](../android/media/MediaRouter.md) Flag for #addCallback: Actively scan for routes while this callback is registered. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CALLBACK_FLAG_UNFILTERED_EVENTS](../android/media/MediaRouter.md) Flag for #addCallback: Do not filter route events. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROUTE_TYPE_LIVE_AUDIO](../android/media/MediaRouter.md) Route type flag for live audio. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CALLBACK_FLAG_PERFORM_ACTIVE_SCAN](MediaRouter.md) Flag for #addCallback: Actively scan for routes while this callback is registered. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CALLBACK_FLAG_UNFILTERED_EVENTS](MediaRouter.md) Flag for #addCallback: Do not filter route events. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROUTE_TYPE_LIVE_AUDIO](MediaRouter.md) Route type flag for live audio. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROUTE_TYPE_LIVE_VIDEO](../android/media/MediaRouter.md) Route type flag for live video. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROUTE_TYPE_USER](../android/media/MediaRouter.md) Route type flag for application-specific usage. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROUTE_TYPE_LIVE_VIDEO](MediaRouter.md) Route type flag for live video. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ROUTE_TYPE_USER](MediaRouter.md) Route type flag for application-specific usage. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addCallback](../android/media/MediaRouter.md))`(`types:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `cb:` ` [MediaRouter.Callback](../android/media/MediaRouter.Callback.md)!`)` Add a callback to listen to events about specific kinds of media routes. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addCallback](../android/media/MediaRouter.md))`(`types:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `cb:` ` [MediaRouter.Callback](../android/media/MediaRouter.Callback.md)!`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Add a callback to listen to events about specific kinds of media routes. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addUserRoute](../android/media/MediaRouter.md))`(`info:` ` [MediaRouter.UserRouteInfo](../android/media/MediaRouter.UserRouteInfo.md)!`)` Add an app-specified route for media to the MediaRouter. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addCallback](MediaRouter.md))`(`types:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `cb:` ` [MediaRouter.Callback](../android/media/MediaRouter.Callback.md)!`)` Add a callback to listen to events about specific kinds of media routes. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addCallback](MediaRouter.md))`(`types:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `cb:` ` [MediaRouter.Callback](../android/media/MediaRouter.Callback.md)!`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Add a callback to listen to events about specific kinds of media routes. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addUserRoute](MediaRouter.md))`(`info:` ` [MediaRouter.UserRouteInfo](../android/media/MediaRouter.UserRouteInfo.md)!`)` Add an app-specified route for media to the MediaRouter. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearUserRoutes](../android/media/MediaRouter.md))`()` Remove all app-specified routes from the MediaRouter. |
-| open [MediaRouter.RouteCategory](../android/media/MediaRouter.RouteCategory.md)! | [createRouteCategory](../android/media/MediaRouter.md))`(`nameResId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `isGroupable:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Create a new route category. |
-| open [MediaRouter.RouteCategory](../android/media/MediaRouter.RouteCategory.md)! | [createRouteCategory](../android/media/MediaRouter.md))`(`name:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `isGroupable:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Create a new route category. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearUserRoutes](MediaRouter.md))`()` Remove all app-specified routes from the MediaRouter. |
+| open [MediaRouter.RouteCategory](../android/media/MediaRouter.RouteCategory.md)! | [createRouteCategory](MediaRouter.md))`(`nameResId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `isGroupable:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Create a new route category. |
+| open [MediaRouter.RouteCategory](../android/media/MediaRouter.RouteCategory.md)! | [createRouteCategory](MediaRouter.md))`(`name:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `isGroupable:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Create a new route category. |
 | --- | --- |
-| open [MediaRouter.UserRouteInfo](../android/media/MediaRouter.UserRouteInfo.md)! | [createUserRoute](../android/media/MediaRouter.md))`(`category:` ` [MediaRouter.RouteCategory](../android/media/MediaRouter.RouteCategory.md)!`)` Create a new user route that may be modified and registered for use by the application. |
-| open [MediaRouter.RouteCategory](../android/media/MediaRouter.RouteCategory.md)! | [getCategoryAt](../android/media/MediaRouter.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the [category](../android/media/MediaRouter.RouteCategory.md) at the given index. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCategoryCount](../android/media/MediaRouter.md))`()` Return the number of [categories](../android/media/MediaRouter.RouteCategory.md) currently represented by routes known to this MediaRouter. |
+| open [MediaRouter.UserRouteInfo](../android/media/MediaRouter.UserRouteInfo.md)! | [createUserRoute](MediaRouter.md))`(`category:` ` [MediaRouter.RouteCategory](../android/media/MediaRouter.RouteCategory.md)!`)` Create a new user route that may be modified and registered for use by the application. |
+| open [MediaRouter.RouteCategory](../android/media/MediaRouter.RouteCategory.md)! | [getCategoryAt](MediaRouter.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the [category](../android/media/MediaRouter.RouteCategory.md) at the given index. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCategoryCount](MediaRouter.md))`()` Return the number of [categories](../android/media/MediaRouter.RouteCategory.md) currently represented by routes known to this MediaRouter. |
 | --- | --- |
-| open [MediaRouter.RouteInfo](../android/media/MediaRouter.RouteInfo.md)! | [getDefaultRoute](../android/media/MediaRouter.md))`()` Gets the default route for playing media content on the system. |
-| open [MediaRouter.RouteInfo](../android/media/MediaRouter.RouteInfo.md)! | [getRouteAt](../android/media/MediaRouter.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the route at the specified index. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRouteCount](../android/media/MediaRouter.md))`()` Return the number of [routes](../android/media/MediaRouter.RouteInfo.md) currently known to this MediaRouter. |
+| open [MediaRouter.RouteInfo](../android/media/MediaRouter.RouteInfo.md)! | [getDefaultRoute](MediaRouter.md))`()` Gets the default route for playing media content on the system. |
+| open [MediaRouter.RouteInfo](../android/media/MediaRouter.RouteInfo.md)! | [getRouteAt](MediaRouter.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the route at the specified index. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRouteCount](MediaRouter.md))`()` Return the number of [routes](../android/media/MediaRouter.RouteInfo.md) currently known to this MediaRouter. |
 | --- | --- |
-| open [MediaRouter.RouteInfo](../android/media/MediaRouter.RouteInfo.md)! | [getSelectedRoute](../android/media/MediaRouter.md))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the currently selected route for any of the given types |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeCallback](../android/media/MediaRouter.md))`(`cb:` ` [MediaRouter.Callback](../android/media/MediaRouter.Callback.md)!`)` Remove the specified callback. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeUserRoute](../android/media/MediaRouter.md))`(`info:` ` [MediaRouter.UserRouteInfo](../android/media/MediaRouter.UserRouteInfo.md)!`)` Remove an app-specified route for media from the MediaRouter. |
+| open [MediaRouter.RouteInfo](../android/media/MediaRouter.RouteInfo.md)! | [getSelectedRoute](MediaRouter.md))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the currently selected route for any of the given types |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeCallback](MediaRouter.md))`(`cb:` ` [MediaRouter.Callback](../android/media/MediaRouter.Callback.md)!`)` Remove the specified callback. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeUserRoute](MediaRouter.md))`(`info:` ` [MediaRouter.UserRouteInfo](../android/media/MediaRouter.UserRouteInfo.md)!`)` Remove an app-specified route for media from the MediaRouter. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [selectRoute](../android/media/MediaRouter.md))`(`types:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `route:` ` [MediaRouter.RouteInfo](../android/media/MediaRouter.RouteInfo.md)`)` Select the specified route to use for output of the given media types. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [selectRoute](MediaRouter.md))`(`types:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `route:` ` [MediaRouter.RouteInfo](../android/media/MediaRouter.RouteInfo.md)`)` Select the specified route to use for output of the given media types. |
 
 ## Constants
 
@@ -128,16 +128,16 @@ static val ROUTE_TYPE_LIVE_VIDEO: Int
 
 Route type flag for live video.
 
-A device that supports live video routing will allow a mirrored version of the device's primary display or a customized [Presentation](../android/app/Presentation.md) to be routed to supported destinations.
+A device that supports live video routing will allow a mirrored version of the device's primary display or a customized [Presentation](../android.app/Presentation.md) to be routed to supported destinations.
 
-Once initiated, display mirroring is transparent to the application. While remote routing is active the application may use a [Presentation](../android/app/Presentation.md) to replace the mirrored view on the external display with different content. 
+Once initiated, display mirroring is transparent to the application. While remote routing is active the application may use a [Presentation](../android.app/Presentation.md) to replace the mirrored view on the external display with different content. 
 
  Value: 2
 
 **See Also**
 
 - [android.media.MediaRouter.RouteInfo#getPresentationDisplay()](../android/media/MediaRouter.RouteInfo.md))
-- [android.app.Presentation](../android/app/Presentation.md) 
+- [android.app.Presentation](../android.app/Presentation.md) 
 
 ### ROUTE_TYPE_USER
 
@@ -168,7 +168,7 @@ open fun addCallback(
 
 Add a callback to listen to events about specific kinds of media routes. If the specified callback is already registered, its registration will be updated for any additional route types specified.
 
-This is a convenience method that has the same effect as calling [addCallback(int,android.media.MediaRouter.Callback,int)](../android/media/MediaRouter.md))without flags.
+This is a convenience method that has the same effect as calling [addCallback(int,android.media.MediaRouter.Callback,int)](MediaRouter.md))without flags.
 
 | Parameters ||
 |---------|----------------------------------------------------------------------------------------------------------------------------|
@@ -189,13 +189,13 @@ open fun addCallback(
 
 Add a callback to listen to events about specific kinds of media routes. If the specified callback is already registered, its registration will be updated for any additional route types specified.
 
-By default, the callback will only be invoked for events that affect routes that match the specified selector. The filtering may be disabled by specifying the [CALLBACK_FLAG_UNFILTERED_EVENTS](../android/media/MediaRouter.md) flag.
+By default, the callback will only be invoked for events that affect routes that match the specified selector. The filtering may be disabled by specifying the [CALLBACK_FLAG_UNFILTERED_EVENTS](MediaRouter.md) flag.
 
 | Parameters ||
 |---------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `types` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Types of routes this callback is interested in |
 | `cb` | [MediaRouter.Callback](../android/media/MediaRouter.Callback.md)!:Callback to add |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Flags to control the behavior of the callback. May be zero or a combination of [CALLBACK_FLAG_PERFORM_ACTIVE_SCAN](../android/media/MediaRouter.md) and [CALLBACK_FLAG_UNFILTERED_EVENTS](../android/media/MediaRouter.md). |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Flags to control the behavior of the callback. May be zero or a combination of [CALLBACK_FLAG_PERFORM_ACTIVE_SCAN](MediaRouter.md) and [CALLBACK_FLAG_UNFILTERED_EVENTS](MediaRouter.md). |
 | --- | --- |
 
 ### addUserRoute
@@ -206,7 +206,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 open fun addUserRoute(info: MediaRouter.UserRouteInfo!): Unit
 ```
 
-Add an app-specified route for media to the MediaRouter. App-specified route definitions are created using [createUserRoute(android.media.MediaRouter.RouteCategory)](../android/media/MediaRouter.md))
+Add an app-specified route for media to the MediaRouter. App-specified route definitions are created using [createUserRoute(android.media.MediaRouter.RouteCategory)](MediaRouter.md))
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -214,8 +214,8 @@ Add an app-specified route for media to the MediaRouter. App-specified route def
 
 **See Also**
 
-- [#createUserRoute(RouteCategory)](../android/media/MediaRouter.md))
-- [#removeUserRoute(UserRouteInfo)](../android/media/MediaRouter.md)) 
+- [#createUserRoute(RouteCategory)](MediaRouter.md))
+- [#removeUserRoute(UserRouteInfo)](MediaRouter.md)) 
 
 ### clearUserRoutes
 
@@ -228,7 +228,7 @@ open fun clearUserRoutes(): Unit
 Remove all app-specified routes from the MediaRouter. 
 **See Also**
 
-- [#removeUserRoute(UserRouteInfo)](../android/media/MediaRouter.md)) 
+- [#removeUserRoute(UserRouteInfo)](MediaRouter.md)) 
 
 ### createRouteCategory
 
@@ -294,9 +294,9 @@ Create a new user route that may be modified and registered for use by the appli
 
 **See Also**
 
-- [#addUserRoute(UserRouteInfo)](../android/media/MediaRouter.md))
-- [#removeUserRoute(UserRouteInfo)](../android/media/MediaRouter.md))
-- [#createRouteCategory(CharSequence, boolean)](../android/media/MediaRouter.md)) 
+- [#addUserRoute(UserRouteInfo)](MediaRouter.md))
+- [#removeUserRoute(UserRouteInfo)](MediaRouter.md))
+- [#createRouteCategory(CharSequence, boolean)](MediaRouter.md)) 
 
 ### getCategoryAt
 
@@ -426,7 +426,7 @@ Remove an app-specified route for media from the MediaRouter.
 
 **See Also**
 
-- [#addUserRoute(UserRouteInfo)](../android/media/MediaRouter.md)) 
+- [#addUserRoute(UserRouteInfo)](MediaRouter.md)) 
 
 ### selectRoute
 

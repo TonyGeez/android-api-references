@@ -19,7 +19,7 @@ Used for receiving GNSS antenna info from the GNSS engine.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onGnssAntennaInfoReceived](../android/location/GnssAntennaInfo.Listener.md))`(`gnssAntennaInfos:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [GnssAntennaInfo](../android/location/GnssAntennaInfo.md)!>`)` Invoked on a change to GNSS antenna info. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onGnssAntennaInfoReceived](../android/location/GnssAntennaInfo.Listener.md))`(`gnssAntennaInfos:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [GnssAntennaInfo](GnssAntennaInfo.md)!>`)` Invoked on a change to GNSS antenna info. |
 
 ## Public methods
 
@@ -35,4 +35,4 @@ Invoked on a change to GNSS antenna info.
 
 | Parameters ||
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `gnssAntennaInfos` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [GnssAntennaInfo](../android/location/GnssAntennaInfo.md)!\>:This value cannot be`null`. |
+| `gnssAntennaInfos` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [GnssAntennaInfo](GnssAntennaInfo.md)!\>:This value cannot be`null`. |

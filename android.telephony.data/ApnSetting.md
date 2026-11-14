@@ -8,7 +8,7 @@ open class ApnSetting : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.telephony.data.ApnSetting](../android/telephony/data/ApnSetting.md) |
+| ↳ | [android.telephony.data.ApnSetting](ApnSetting.md) |
 
 An Access Point Name (APN) configuration for a carrier data connection.
 
@@ -91,11 +91,11 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getEntryName()()` Gets the human-readable name that describes the APN. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getId()()` Returns the unique database id for this entry. |
-| open [InetAddress](../java/net/InetAddress.md)! | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getMmsProxyAddress()()` Gets the MMS proxy address configured for the APN. |
+| open [InetAddress](../java.net/InetAddress.md)! | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getMmsProxyAddress()()` Gets the MMS proxy address configured for the APN. |
 | --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getMmsProxyAddressAsString()()` Returns the MMS proxy address of the APN. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getMmsProxyPort()()` Returns the MMS proxy port of the APN. |
-| open [Uri](../android/net/Uri.md)! | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getMmsc()()` Returns the MMSC Uri of the APN. |
+| open [Uri](../android.net/Uri.md)! | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getMmsc()()` Returns the MMSC Uri of the APN. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getMtuV4()()` Returns the default MTU (Maximum Transmission Unit) size in bytes of the IPv4 routes brought up by this APN setting. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getMtuV6()()` Returns the MTU size of the IPv6 mobile interface to which the APN connected. |
@@ -107,7 +107,7 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getProfileId()()` Returns the profile id to which the APN saved in modem. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getProtocol()()` Returns the protocol to use to connect to this APN. |
-| open [InetAddress](../java/net/InetAddress.md)! | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getProxyAddress()()` Gets the HTTP proxy address configured for the APN. |
+| open [InetAddress](../java.net/InetAddress.md)! | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getProxyAddress()()` Gets the HTTP proxy address configured for the APN. |
 | --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getProxyAddressAsString()()` Returns the proxy address of the APN. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#getProxyPort()()` Returns the proxy address of the APN. |
@@ -125,7 +125,7 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ApnSetting](../android/telephony/data/ApnSetting.md)!\> | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ApnSetting](ApnSetting.md)!\> | `https://developer.android.com/reference/kotlin/android/telephony/data/ApnSetting#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -1004,7 +1004,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

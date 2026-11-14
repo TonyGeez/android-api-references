@@ -8,11 +8,11 @@ open class LayerDrawable : Drawable, Drawable.Callback
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.graphics.drawable.Drawable](../android/graphics/drawable/Drawable.md) ||
-| | ↳ | [android.graphics.drawable.LayerDrawable](../android/graphics/drawable/LayerDrawable.md) |
+| ↳ | [android.graphics.drawable.Drawable](Drawable.md) ||
+| | ↳ | [android.graphics.drawable.LayerDrawable](LayerDrawable.md) |
 
-Known Direct Subclasses [RippleDrawable](../android/graphics/drawable/RippleDrawable.md), [TransitionDrawable](../android/graphics/drawable/TransitionDrawable.md) [RippleDrawable](../android/graphics/drawable/RippleDrawable.md) Drawable that shows a ripple effect in response to state changes.
-[TransitionDrawable](../android/graphics/drawable/TransitionDrawable.md) An extension of LayerDrawables that is intended to cross-fade between the first and second layer.
+Known Direct Subclasses [RippleDrawable](RippleDrawable.md), [TransitionDrawable](TransitionDrawable.md) [RippleDrawable](RippleDrawable.md) Drawable that shows a ripple effect in response to state changes.
+[TransitionDrawable](TransitionDrawable.md) An extension of LayerDrawables that is intended to cross-fade between the first and second layer.
 
 A Drawable that manages an array of other Drawables. These are drawn in array order, so the element with the largest index will be drawn on top.
 
@@ -24,21 +24,21 @@ For more information, see the guide to [Drawable Resources](https://developer.an
 
 | XML attributes ||
 |---|---|
-| [`android:bottom`](../android/graphics/drawable/LayerDrawable.md) | Bottom inset to apply to the layer. |
-| [`android:drawable`](../android/graphics/drawable/LayerDrawable.md) | Drawable used to render the layer. |
-| [`android:end`](../android/graphics/drawable/LayerDrawable.md) | End inset to apply to the layer. |
+| [`android:bottom`](LayerDrawable.md) | Bottom inset to apply to the layer. |
+| [`android:drawable`](LayerDrawable.md) | Drawable used to render the layer. |
+| [`android:end`](LayerDrawable.md) | End inset to apply to the layer. |
 | --- | --- |
-| [`android:gravity`](../android/graphics/drawable/LayerDrawable.md) | Gravity used to align the layer within its container. |
-| [`android:height`](../android/graphics/drawable/LayerDrawable.md) | Height of the layer. |
-| [`android:id`](../android/graphics/drawable/LayerDrawable.md) | Identifier of the layer. |
+| [`android:gravity`](LayerDrawable.md) | Gravity used to align the layer within its container. |
+| [`android:height`](LayerDrawable.md) | Height of the layer. |
+| [`android:id`](LayerDrawable.md) | Identifier of the layer. |
 | --- | --- |
-| [`android:left`](../android/graphics/drawable/LayerDrawable.md) | Left inset to apply to the layer. |
-| [`android:paddingMode`](../android/graphics/drawable/LayerDrawable.md) | Indicates how layer padding should affect the bounds of subsequent layers. |
-| [`android:right`](../android/graphics/drawable/LayerDrawable.md) | Right inset to apply to the layer. |
+| [`android:left`](LayerDrawable.md) | Left inset to apply to the layer. |
+| [`android:paddingMode`](LayerDrawable.md) | Indicates how layer padding should affect the bounds of subsequent layers. |
+| [`android:right`](LayerDrawable.md) | Right inset to apply to the layer. |
 | --- | --- |
-| [`android:start`](../android/graphics/drawable/LayerDrawable.md) | Start inset to apply to the layer. |
-| [`android:top`](../android/graphics/drawable/LayerDrawable.md) | Top inset to apply to the layer. |
-| [`android:width`](../android/graphics/drawable/LayerDrawable.md) | Width of the layer. |
+| [`android:start`](LayerDrawable.md) | Start inset to apply to the layer. |
+| [`android:top`](LayerDrawable.md) | Top inset to apply to the layer. |
+| [`android:width`](LayerDrawable.md) | Width of the layer. |
 | --- | --- |
 
 | Constants ||
@@ -59,7 +59,7 @@ For more information, see the guide to [Drawable Resources](https://developer.an
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/LayerDrawable#canApplyTheme()()` <br /> |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/LayerDrawable#draw(android.graphics.Canvas)(canvas: https://developer.android.com/reference/kotlin/android/graphics/Canvas.html#)` Draw in its bounds (set via setBounds) respecting optional effects such as alpha (set via setAlpha) and color filter (set via setColorFilter). |
-| open [Drawable](../android/graphics/drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/graphics/drawable/LayerDrawable#findDrawableByLayerId(kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Looks for a layer with the given ID and returns its `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable`. |
+| open [Drawable](Drawable.md)! | `https://developer.android.com/reference/kotlin/android/graphics/drawable/LayerDrawable#findDrawableByLayerId(kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Looks for a layer with the given ID and returns its `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable`. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/LayerDrawable#findIndexByLayerId(kotlin.Int)(id: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the layer with the specified `id`. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/LayerDrawable#getAlpha()()` Gets the current alpha value for the drawable. |
@@ -67,7 +67,7 @@ For more information, see the guide to [Drawable Resources](https://developer.an
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/LayerDrawable#getChangingConfigurations()()` Return a mask of the configuration parameters for which this drawable may change, requiring that it be re-created. |
 | --- | --- |
 | open [Drawable.ConstantState](../android/graphics/drawable/Drawable.ConstantState.md)? | `https://developer.android.com/reference/kotlin/android/graphics/drawable/LayerDrawable#getConstantState()()` Return a `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable.ConstantState` instance that holds the shared state of this Drawable. |
-| open [Drawable](../android/graphics/drawable/Drawable.md)! | `https://developer.android.com/reference/kotlin/android/graphics/drawable/LayerDrawable#getDrawable(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the drawable for the layer at the specified index. |
+| open [Drawable](Drawable.md)! | `https://developer.android.com/reference/kotlin/android/graphics/drawable/LayerDrawable#getDrawable(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the drawable for the layer at the specified index. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/LayerDrawable#getEndPadding()()` Returns the end padding in pixels. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/LayerDrawable#getHotspotBounds(android.graphics.Rect)(outRect: https://developer.android.com/reference/kotlin/android/graphics/Rect.html#)` Populates `outRect` with the hotspot bounds. |
@@ -108,7 +108,7 @@ For more information, see the guide to [Drawable Resources](https://developer.an
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/LayerDrawable#isStateful()()` Indicates whether this drawable will change its appearance based on state. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/LayerDrawable#jumpToCurrentState()()` If this Drawable does transition animations between states, ask that it immediately jump to the current state and skip any active animations. |
-| open [Drawable](../android/graphics/drawable/Drawable.md) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/LayerDrawable#mutate()()` Make this drawable mutable. |
+| open [Drawable](Drawable.md) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/LayerDrawable#mutate()()` Make this drawable mutable. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/LayerDrawable#onLayoutDirectionChanged(kotlin.Int)(layoutDirection: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Called when the drawable's resolved layout direction changes. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/drawable/LayerDrawable#scheduleDrawable(android.graphics.drawable.Drawable,%20java.lang.Runnable,%20kotlin.Long)(who: https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable, what: https://developer.android.com/reference/kotlin/java/lang/Runnable.html#, when: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` A Drawable can call this to schedule the next frame of its animation. |
@@ -627,7 +627,7 @@ Creates a new layer drawable with the list of specified layers.
 
 | Parameters ||
 |---|---|
-| `layers` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Drawable](../android/graphics/drawable/Drawable.md)!\>: a list of drawables to use as layers in this new drawable, must be non-null |
+| `layers` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Drawable](Drawable.md)!\>: a list of drawables to use as layers in this new drawable, must be non-null |
 
 ## Public methods
 
@@ -643,7 +643,7 @@ Adds a new layer containing the specified `drawable` to the end of the layer lis
 
 | Parameters ||
 |---|---|
-| `dr` | [Drawable](../android/graphics/drawable/Drawable.md)!: The drawable to add as a new layer. |
+| `dr` | [Drawable](Drawable.md)!: The drawable to add as a new layer. |
 
 | Return ||
 |---|---|
@@ -683,7 +683,7 @@ Draw in its bounds (set via setBounds) respecting optional effects such as alpha
 
 | Parameters ||
 |---|---|
-| `canvas` | [Canvas](../android/graphics/Canvas.md): The canvas to draw into. This value cannot be `null`. |
+| `canvas` | [Canvas](../android.graphics/Canvas.md): The canvas to draw into. This value cannot be `null`. |
 
 ### findDrawableByLayerId
 
@@ -844,7 +844,7 @@ Populates `outRect` with the hotspot bounds.
 
 | Parameters ||
 |---|---|
-| `outRect` | [Rect](../android/graphics/Rect.md): the rect to populate with the hotspot bounds. This value cannot be `null`. |
+| `outRect` | [Rect](../android.graphics/Rect.md): the rect to populate with the hotspot bounds. This value cannot be `null`. |
 
 ### getId
 
@@ -1123,7 +1123,7 @@ Populates `outline` with the first available (non-empty) layer outline.
 
 | Parameters ||
 |---|---|
-| `outline` | [Outline](../android/graphics/Outline.md): Outline in which to place the first available layer outline. This value cannot be `null`. |
+| `outline` | [Outline](../android.graphics/Outline.md): Outline in which to place the first available layer outline. This value cannot be `null`. |
 
 ### getPadding
 
@@ -1137,7 +1137,7 @@ Return in padding the insets suggested by this Drawable for placing content insi
 
 | Parameters ||
 |---|---|
-| `padding` | [Rect](../android/graphics/Rect.md): This value cannot be `null`. |
+| `padding` | [Rect](../android.graphics/Rect.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -1256,9 +1256,9 @@ Inflate this Drawable from an XML resource optionally styled by a theme. This ca
 
 | Parameters ||
 |---|---|
-| `r` | [Resources](../android/content/res/Resources.md): This value cannot be `null`. |
-| `parser` | [XmlPullParser](../org/xmlpull/v1/XmlPullParser.md): This value cannot be `null`. |
-| `attrs` | [AttributeSet](../android/util/AttributeSet.md): This value cannot be `null`. |
+| `r` | [Resources](../android.content.res/Resources.md): This value cannot be `null`. |
+| `parser` | [XmlPullParser](../org.xmlpull.v1/XmlPullParser.md): This value cannot be `null`. |
+| `attrs` | [AttributeSet](../android.util/AttributeSet.md): This value cannot be `null`. |
 | --- | --- |
 | `theme` | [Resources.Theme](../android/content/res/Resources.Theme.md)?: This value may be `null`. |
 
@@ -1279,7 +1279,7 @@ Called when the drawable needs to be redrawn. A view at this point should invali
 
 | Parameters ||
 |---|---|
-| `who` | [Drawable](../android/graphics/drawable/Drawable.md): This value cannot be `null`. |
+| `who` | [Drawable](Drawable.md): This value cannot be `null`. |
 
 ### isAutoMirrored
 
@@ -1377,8 +1377,8 @@ A Drawable can call this to schedule the next frame of its animation. An impleme
 
 | Parameters ||
 |---|---|
-| `who` | [Drawable](../android/graphics/drawable/Drawable.md): This value cannot be `null`. |
-| `what` | [Runnable](../java/lang/Runnable.md): This value cannot be `null`. |
+| `who` | [Drawable](Drawable.md): This value cannot be `null`. |
+| `what` | [Runnable](../java.lang/Runnable.md): This value cannot be `null`. |
 | `when` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): The time (in milliseconds) to run. The timebase is `https://developer.android.com/reference/kotlin/android/os/SystemClock.html#uptimeMillis()` |
 | --- | --- |
 
@@ -1428,7 +1428,7 @@ Pass `null` to remove any existing color filter.
 
 | Parameters ||
 |---|---|
-| `colorFilter` | [ColorFilter](../android/graphics/ColorFilter.md)?: The color filter to apply, or `null` to remove the existing color filter |
+| `colorFilter` | [ColorFilter](../android.graphics/ColorFilter.md)?: The color filter to apply, or `null` to remove the existing color filter |
 
 ### setDither
 
@@ -1456,7 +1456,7 @@ Sets the drawable for the layer at the specified index.
 | Parameters ||
 |---|---|
 | `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The index of the layer to modify, must be in the range `0...getNumberOfLayers()-1`. |
-| `drawable` | [Drawable](../android/graphics/drawable/Drawable.md)!: The drawable to set for the layer. |
+| `drawable` | [Drawable](Drawable.md)!: The drawable to set for the layer. |
 
 **See Also**
 
@@ -1478,7 +1478,7 @@ Replaces the `https://developer.android.com/reference/kotlin/android/graphics/dr
 | Parameters ||
 |---|---|
 | `id` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The layer ID to search for. |
-| `drawable` | [Drawable](../android/graphics/drawable/Drawable.md)!: The replacement `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable`. |
+| `drawable` | [Drawable](Drawable.md)!: The replacement `https://developer.android.com/reference/kotlin/android/graphics/drawable/Drawable`. |
 
 | Return ||
 |---|---|
@@ -1894,7 +1894,7 @@ Defines how this drawable's tint color should be blended into the drawable befor
 
 | Parameters ||
 |---|---|
-| `blendMode` | [BlendMode](../android/graphics/BlendMode.md)!: This value cannot be `null`. |
+| `blendMode` | [BlendMode](../android.graphics/BlendMode.md)!: This value cannot be `null`. |
 
 ### setTintList
 
@@ -1912,7 +1912,7 @@ A Drawable's drawing content will be blended together with its tint before it is
 
 | Parameters ||
 |---|---|
-| `tint` | [ColorStateList](../android/content/res/ColorStateList.md)?: Color state list to use for tinting this drawable, or `null` to clear the tint |
+| `tint` | [ColorStateList](../android.content.res/ColorStateList.md)?: Color state list to use for tinting this drawable, or `null` to clear the tint |
 
 ### setVisible
 
@@ -1951,8 +1951,8 @@ A Drawable can call this to unschedule an action previously scheduled with `http
 
 | Parameters ||
 |---|---|
-| `who` | [Drawable](../android/graphics/drawable/Drawable.md): This value cannot be `null`. |
-| `what` | [Runnable](../java/lang/Runnable.md): This value cannot be `null`. |
+| `who` | [Drawable](Drawable.md): This value cannot be `null`. |
+| `what` | [Runnable](../java.lang/Runnable.md): This value cannot be `null`. |
 
 ## Protected methods
 
@@ -1968,7 +1968,7 @@ Override this in your subclass to change appearance if you vary based on the bou
 
 | Parameters ||
 |---|---|
-| `bounds` | [Rect](../android/graphics/Rect.md): This value cannot be `null`. |
+| `bounds` | [Rect](../android.graphics/Rect.md): This value cannot be `null`. |
 
 ### onLevelChange
 

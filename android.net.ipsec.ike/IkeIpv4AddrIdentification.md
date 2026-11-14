@@ -8,8 +8,8 @@ class IkeIpv4AddrIdentification : IkeIdentification
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.net.ipsec.ike.IkeIdentification](../android/net/ipsec/ike/IkeIdentification.md) ||
-| | ↳ | [android.net.ipsec.ike.IkeIpv4AddrIdentification](../android/net/ipsec/ike/IkeIpv4AddrIdentification.md) |
+| ↳ | [android.net.ipsec.ike.IkeIdentification](IkeIdentification.md) ||
+| | ↳ | [android.net.ipsec.ike.IkeIpv4AddrIdentification](IkeIpv4AddrIdentification.md) |
 
 IkeIpv4AddrIdentification represents an IKE entity identification based on IPv4 address.
 
@@ -26,7 +26,7 @@ IkeIpv4AddrIdentification represents an IKE entity identification based on IPv4 
 
 | Properties ||
 |---|---|
-| [Inet4Address](../java/net/Inet4Address.md) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeIpv4AddrIdentification#ipv4Address:java.net.Inet4Address` The IPv4 address. |
+| [Inet4Address](../java.net/Inet4Address.md) | `https://developer.android.com/reference/kotlin/android/net/ipsec/ike/IkeIpv4AddrIdentification#ipv4Address:java.net.Inet4Address` The IPv4 address. |
 
 ## Public constructors
 
@@ -42,7 +42,7 @@ Construct an instance of `https://developer.android.com/reference/kotlin/android
 
 | Parameters ||
 |---|---|
-| `address` | [Inet4Address](../java/net/Inet4Address.md): the IPv4 address. This value cannot be `null`. |
+| `address` | [Inet4Address](../java.net/Inet4Address.md): the IPv4 address. This value cannot be `null`. |
 
 ## Public methods
 

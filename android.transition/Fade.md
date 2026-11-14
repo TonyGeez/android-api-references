@@ -2,7 +2,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 
 # Fade
 
-Kotlin | [Java](../android/transition/Fade.md)
+Kotlin | [Java](Fade.md)
 | --- | --- |
 
 ```
@@ -11,9 +11,9 @@ open class Fade : Visibility
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.transition.Transition](../android/transition/Transition.md) |||
-| | ↳ | [android.transition.Visibility](../android/transition/Visibility.md) ||
-| | | ↳ | [android.transition.Fade](../android/transition/Fade.md) |
+| ↳ | [android.transition.Transition](Transition.md) |||
+| | ↳ | [android.transition.Visibility](Visibility.md) ||
+| | | ↳ | [android.transition.Fade](Fade.md) |
 | --- | --- | --- | --- |
 
 This transition tracks changes to the visibility of target views in the start and end scenes and fades views in or out when they become visible or non-visible. Visibility is determined by both the `https://developer.android.com/reference/kotlin/android/view/View.html#setVisibility(kotlin.Int)` state of the view as well as whether it is parented in the current view hierarchy.
@@ -43,8 +43,8 @@ A Fade transition can be described in a resource file by using the tag `fade`, a
 | Public methods ||
 |---|---|
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/transition/Fade#captureStartValues(android.transition.TransitionValues)(transitionValues: https://developer.android.com/reference/kotlin/android/transition/TransitionValues!)` Captures the values in the start scene for the properties that this transition monitors. |
-| open [Animator](../android/animation/Animator.md)! | `https://developer.android.com/reference/kotlin/android/transition/Fade#onAppear(android.view.ViewGroup,%20android.view.View,%20android.transition.TransitionValues,%20android.transition.TransitionValues)(sceneRoot: https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#!, view: https://developer.android.com/reference/kotlin/android/view/View.html#!, startValues: https://developer.android.com/reference/kotlin/android/transition/TransitionValues!, endValues: https://developer.android.com/reference/kotlin/android/transition/TransitionValues!)` The default implementation of this method returns a null Animator. |
-| open [Animator](../android/animation/Animator.md)! | `https://developer.android.com/reference/kotlin/android/transition/Fade#onDisappear(android.view.ViewGroup,%20android.view.View,%20android.transition.TransitionValues,%20android.transition.TransitionValues)(sceneRoot: https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#!, view: https://developer.android.com/reference/kotlin/android/view/View.html#!, startValues: https://developer.android.com/reference/kotlin/android/transition/TransitionValues!, endValues: https://developer.android.com/reference/kotlin/android/transition/TransitionValues!)` The default implementation of this method returns a null Animator. |
+| open [Animator](../android.animation/Animator.md)! | `https://developer.android.com/reference/kotlin/android/transition/Fade#onAppear(android.view.ViewGroup,%20android.view.View,%20android.transition.TransitionValues,%20android.transition.TransitionValues)(sceneRoot: https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#!, view: https://developer.android.com/reference/kotlin/android/view/View.html#!, startValues: https://developer.android.com/reference/kotlin/android/transition/TransitionValues!, endValues: https://developer.android.com/reference/kotlin/android/transition/TransitionValues!)` The default implementation of this method returns a null Animator. |
+| open [Animator](../android.animation/Animator.md)! | `https://developer.android.com/reference/kotlin/android/transition/Fade#onDisappear(android.view.ViewGroup,%20android.view.View,%20android.transition.TransitionValues,%20android.transition.TransitionValues)(sceneRoot: https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#!, view: https://developer.android.com/reference/kotlin/android/view/View.html#!, startValues: https://developer.android.com/reference/kotlin/android/transition/TransitionValues!, endValues: https://developer.android.com/reference/kotlin/android/transition/TransitionValues!)` The default implementation of this method returns a null Animator. |
 | --- | --- |
 
 | Inherited functions ||
@@ -130,7 +130,7 @@ Subclasses must implement this method. The method should only be called by the t
 
 | Parameters ||
 |---|---|
-| `transitionValues` | [TransitionValues](../android/transition/TransitionValues.md)!: The holder for any values that the Transition wishes to store. Values are stored in the `values` field of this TransitionValues object and are keyed from a String value. For example, to store a view's rotation value, a transition might call `transitionValues.values.put("appname:transitionname:rotation", view.getRotation())`. The target view will already be stored in the transitionValues structure when this method is called. |
+| `transitionValues` | [TransitionValues](TransitionValues.md)!: The holder for any values that the Transition wishes to store. Values are stored in the `values` field of this TransitionValues object and are keyed from a String value. For example, to store a view's rotation value, a transition might call `transitionValues.values.put("appname:transitionname:rotation", view.getRotation())`. The target view will already be stored in the transitionValues structure when this method is called. |
 
 ### onAppear
 
@@ -149,11 +149,11 @@ The default implementation of this method returns a null Animator. Subclasses sh
 
 | Parameters ||
 |---|---|
-| `sceneRoot` | [ViewGroup](../android/view/ViewGroup.md)!: The root of the transition hierarchy |
-| `view` | [View](../android/view/View.md)!: The View to make appear. This will be in the target scene's View hierarchy and will be VISIBLE. |
-| `startValues` | [TransitionValues](../android/transition/TransitionValues.md)!: The target values in the start scene |
+| `sceneRoot` | [ViewGroup](../android.view/ViewGroup.md)!: The root of the transition hierarchy |
+| `view` | [View](../android.view/View.md)!: The View to make appear. This will be in the target scene's View hierarchy and will be VISIBLE. |
+| `startValues` | [TransitionValues](TransitionValues.md)!: The target values in the start scene |
 | --- | --- |
-| `endValues` | [TransitionValues](../android/transition/TransitionValues.md)!: The target values in the end scene |
+| `endValues` | [TransitionValues](TransitionValues.md)!: The target values in the end scene |
 
 | Return ||
 |---|---|
@@ -176,11 +176,11 @@ The default implementation of this method returns a null Animator. Subclasses sh
 
 | Parameters ||
 |---|---|
-| `sceneRoot` | [ViewGroup](../android/view/ViewGroup.md)!: The root of the transition hierarchy |
-| `view` | [View](../android/view/View.md)!: The View to make disappear. This will be in the target scene's View hierarchy or in an `https://developer.android.com/reference/kotlin/android/view/ViewGroupOverlay.html#` and will be VISIBLE. |
-| `startValues` | [TransitionValues](../android/transition/TransitionValues.md)!: The target values in the start scene |
+| `sceneRoot` | [ViewGroup](../android.view/ViewGroup.md)!: The root of the transition hierarchy |
+| `view` | [View](../android.view/View.md)!: The View to make disappear. This will be in the target scene's View hierarchy or in an `https://developer.android.com/reference/kotlin/android/view/ViewGroupOverlay.html#` and will be VISIBLE. |
+| `startValues` | [TransitionValues](TransitionValues.md)!: The target values in the start scene |
 | --- | --- |
-| `endValues` | [TransitionValues](../android/transition/TransitionValues.md)!: The target values in the end scene |
+| `endValues` | [TransitionValues](TransitionValues.md)!: The target values in the end scene |
 
 | Return ||
 |---|---|

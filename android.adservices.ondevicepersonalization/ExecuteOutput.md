@@ -4,7 +4,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 
 # ExecuteOutput
 
-Kotlin| [Java](../android/adservices/ondevicepersonalization/ExecuteOutput.md) 
+Kotlin| [Java](ExecuteOutput.md) 
 | --- | --- |
 
 ```
@@ -13,27 +13,27 @@ class ExecuteOutput
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.adservices.ondevicepersonalization.ExecuteOutput](../android/adservices/ondevicepersonalization/ExecuteOutput.md) |
+| ↳ | [android.adservices.ondevicepersonalization.ExecuteOutput](ExecuteOutput.md) |
 
-The result returned by [IsolatedWorker.onExecute(ExecuteInput, android.os.OutcomeReceiver)](../android/adservices/ondevicepersonalization/IsolatedWorker.md))in response to a call to`OnDevicePersonalizationManager#execute(ComponentName, PersistableBundle, java.util.concurrent.Executor, OutcomeReceiver)`from a client app.
+The result returned by [IsolatedWorker.onExecute(ExecuteInput, android.os.OutcomeReceiver)](IsolatedWorker.md))in response to a call to`OnDevicePersonalizationManager#execute(ComponentName, PersistableBundle, java.util.concurrent.Executor, OutcomeReceiver)`from a client app.
 
 ## Summary
 
 | Nested classes ||
 |---|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](../android/adservices/ondevicepersonalization/ExecuteOutput.Builder.md) A builder for [ExecuteOutput](../android/adservices/ondevicepersonalization/ExecuteOutput.md) |
+| | [Builder](../android/adservices/ondevicepersonalization/ExecuteOutput.Builder.md) A builder for [ExecuteOutput](ExecuteOutput.md) |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/adservices/ondevicepersonalization/ExecuteOutput.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBestValue](../android/adservices/ondevicepersonalization/ExecuteOutput.md))`()` An integer value that an [IsolatedService](../android/adservices/ondevicepersonalization/IsolatedService.md) may optionally return to a calling app, by setting this field to the value between 0 and [android.adservices.ondevicepersonalization.ExecuteInIsolatedServiceRequest.OutputSpec#getMaxIntValue()](../android/adservices/ondevicepersonalization/ExecuteInIsolatedServiceRequest.OutputSpec.md)). |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [EventLogRecord](../android/adservices/ondevicepersonalization/EventLogRecord.md)!\> | [getEventLogRecords](../android/adservices/ondevicepersonalization/ExecuteOutput.md))`()` A list of [EventLogRecord](../android/adservices/ondevicepersonalization/EventLogRecord.md) objects to be written to the EVENTS table. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](ExecuteOutput.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBestValue](ExecuteOutput.md))`()` An integer value that an [IsolatedService](IsolatedService.md) may optionally return to a calling app, by setting this field to the value between 0 and [android.adservices.ondevicepersonalization.ExecuteInIsolatedServiceRequest.OutputSpec#getMaxIntValue()](../android/adservices/ondevicepersonalization/ExecuteInIsolatedServiceRequest.OutputSpec.md)). |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [EventLogRecord](EventLogRecord.md)!\> | [getEventLogRecords](ExecuteOutput.md))`()` A list of [EventLogRecord](EventLogRecord.md) objects to be written to the EVENTS table. |
 | --- | --- |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | [getOutputData](../android/adservices/ondevicepersonalization/ExecuteOutput.md))`()` A byte array that an [IsolatedService](../android/adservices/ondevicepersonalization/IsolatedService.md) may optionally return to a calling app, by setting this field to a non-null value. |
-| [RenderingConfig](../android/adservices/ondevicepersonalization/RenderingConfig.md)? | [getRenderingConfig](../android/adservices/ondevicepersonalization/ExecuteOutput.md))`()` A [RenderingConfig](../android/adservices/ondevicepersonalization/RenderingConfig.md) object that contains information about the content to be rendered in the client app view. |
-| [RequestLogRecord](../android/adservices/ondevicepersonalization/RequestLogRecord.md)? | [getRequestLogRecord](../android/adservices/ondevicepersonalization/ExecuteOutput.md))`()` Persistent data to be written to the REQUESTS table after [IsolatedWorker.onExecute(ExecuteInput, android.os.OutcomeReceiver)](../android/adservices/ondevicepersonalization/IsolatedWorker.md))completes. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)? | [getOutputData](ExecuteOutput.md))`()` A byte array that an [IsolatedService](IsolatedService.md) may optionally return to a calling app, by setting this field to a non-null value. |
+| [RenderingConfig](RenderingConfig.md)? | [getRenderingConfig](ExecuteOutput.md))`()` A [RenderingConfig](RenderingConfig.md) object that contains information about the content to be rendered in the client app view. |
+| [RequestLogRecord](RequestLogRecord.md)? | [getRequestLogRecord](ExecuteOutput.md))`()` Persistent data to be written to the REQUESTS table after [IsolatedWorker.onExecute(ExecuteInput, android.os.OutcomeReceiver)](IsolatedWorker.md))completes. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/adservices/ondevicepersonalization/ExecuteOutput.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](ExecuteOutput.md))`()` <br /> |
 
 ## Public methods
 
@@ -74,11 +74,11 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 fun getBestValue(): Int
 ```
 
-An integer value that an [IsolatedService](../android/adservices/ondevicepersonalization/IsolatedService.md) may optionally return to a calling app, by setting this field to the value between 0 and [android.adservices.ondevicepersonalization.ExecuteInIsolatedServiceRequest.OutputSpec#getMaxIntValue()](../android/adservices/ondevicepersonalization/ExecuteInIsolatedServiceRequest.OutputSpec.md)). The noise will be added to the value of this field before returned to the caller of [android.adservices.ondevicepersonalization.OnDevicePersonalizationManager#executeInIsolatedService](../android/adservices/ondevicepersonalization/OnDevicePersonalizationManager.md)). In order to get this field, the (calling app package, isolated service package) pair must be present in an allowlist that permits data to be returned and [android.adservices.ondevicepersonalization.ExecuteInIsolatedServiceRequest.OutputSpec#buildBestValueSpec](../android/adservices/ondevicepersonalization/ExecuteInIsolatedServiceRequest.OutputSpec.md))is set.
+An integer value that an [IsolatedService](IsolatedService.md) may optionally return to a calling app, by setting this field to the value between 0 and [android.adservices.ondevicepersonalization.ExecuteInIsolatedServiceRequest.OutputSpec#getMaxIntValue()](../android/adservices/ondevicepersonalization/ExecuteInIsolatedServiceRequest.OutputSpec.md)). The noise will be added to the value of this field before returned to the caller of [android.adservices.ondevicepersonalization.OnDevicePersonalizationManager#executeInIsolatedService](OnDevicePersonalizationManager.md)). In order to get this field, the (calling app package, isolated service package) pair must be present in an allowlist that permits data to be returned and [android.adservices.ondevicepersonalization.ExecuteInIsolatedServiceRequest.OutputSpec#buildBestValueSpec](../android/adservices/ondevicepersonalization/ExecuteInIsolatedServiceRequest.OutputSpec.md))is set.
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.adservices.ondevicepersonalization.ExecuteInIsolatedServiceResponse#DEFAULT_BEST_VALUE](../android/adservices/ondevicepersonalization/ExecuteInIsolatedServiceResponse.md) or greater |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.adservices.ondevicepersonalization.ExecuteInIsolatedServiceResponse#DEFAULT_BEST_VALUE](ExecuteInIsolatedServiceResponse.md) or greater |
 
 ### getEventLogRecords
 
@@ -88,11 +88,11 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun getEventLogRecords(): MutableList<EventLogRecord!>
 ```
 
-A list of [EventLogRecord](../android/adservices/ondevicepersonalization/EventLogRecord.md) objects to be written to the EVENTS table. Each [EventLogRecord](../android/adservices/ondevicepersonalization/EventLogRecord.md) must be associated with an existing [RequestLogRecord](../android/adservices/ondevicepersonalization/RequestLogRecord.md) in the REQUESTS table, specified using [EventLogRecord.Builder.setRequestLogRecord(RequestLogRecord)](../android/adservices/ondevicepersonalization/EventLogRecord.Builder.md)). If the [RequestLogRecord](../android/adservices/ondevicepersonalization/RequestLogRecord.md) is not specified, the [EventLogRecord](../android/adservices/ondevicepersonalization/EventLogRecord.md) will not be written.
+A list of [EventLogRecord](EventLogRecord.md) objects to be written to the EVENTS table. Each [EventLogRecord](EventLogRecord.md) must be associated with an existing [RequestLogRecord](RequestLogRecord.md) in the REQUESTS table, specified using [EventLogRecord.Builder.setRequestLogRecord(RequestLogRecord)](../android/adservices/ondevicepersonalization/EventLogRecord.Builder.md)). If the [RequestLogRecord](RequestLogRecord.md) is not specified, the [EventLogRecord](EventLogRecord.md) will not be written.
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [EventLogRecord](../android/adservices/ondevicepersonalization/EventLogRecord.md)!> | This value cannot be`null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [EventLogRecord](EventLogRecord.md)!> | This value cannot be`null`. |
 
 ### getOutputData
 
@@ -102,7 +102,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun getOutputData(): ByteArray?
 ```
 
-A byte array that an [IsolatedService](../android/adservices/ondevicepersonalization/IsolatedService.md) may optionally return to a calling app, by setting this field to a non-null value. The contents of this array will be returned to the caller of [OnDevicePersonalizationManager.execute](../android/adservices/ondevicepersonalization/OnDevicePersonalizationManager.md))if returning data from isolated processes is allowed by policy and the (calling app package, isolated service package) pair is present in an allowlist that permits data to be returned. 
+A byte array that an [IsolatedService](IsolatedService.md) may optionally return to a calling app, by setting this field to a non-null value. The contents of this array will be returned to the caller of [OnDevicePersonalizationManager.execute](OnDevicePersonalizationManager.md))if returning data from isolated processes is allowed by policy and the (calling app package, isolated service package) pair is present in an allowlist that permits data to be returned. 
 
 ### getRenderingConfig
 
@@ -112,7 +112,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun getRenderingConfig(): RenderingConfig?
 ```
 
-A [RenderingConfig](../android/adservices/ondevicepersonalization/RenderingConfig.md) object that contains information about the content to be rendered in the client app view. Can be null if no content is to be rendered. 
+A [RenderingConfig](RenderingConfig.md) object that contains information about the content to be rendered in the client app view. Can be null if no content is to be rendered. 
 
 ### getRequestLogRecord
 
@@ -122,7 +122,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun getRequestLogRecord(): RequestLogRecord?
 ```
 
-Persistent data to be written to the REQUESTS table after [IsolatedWorker.onExecute(ExecuteInput, android.os.OutcomeReceiver)](../android/adservices/ondevicepersonalization/IsolatedWorker.md))completes. If null, no persistent data will be written. 
+Persistent data to be written to the REQUESTS table after [IsolatedWorker.onExecute(ExecuteInput, android.os.OutcomeReceiver)](IsolatedWorker.md))completes. If null, no persistent data will be written. 
 
 ### hashCode
 

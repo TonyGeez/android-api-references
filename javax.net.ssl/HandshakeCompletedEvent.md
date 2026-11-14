@@ -10,8 +10,8 @@ open class HandshakeCompletedEvent : EventObject
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.util.EventObject](../java/util/EventObject.md) ||
-| | ↳ | [javax.net.ssl.HandshakeCompletedEvent](../javax/net/ssl/HandshakeCompletedEvent.md) |
+| ↳ | [java.util.EventObject](../java.util/EventObject.md) ||
+| | ↳ | [javax.net.ssl.HandshakeCompletedEvent](HandshakeCompletedEvent.md) |
 
 This event indicates that an SSL handshake completed on a given SSL connection. All of the core information about that handshake's result is captured through an "SSLSession" object. As a convenience, this event class provides direct access to some important session attributes.
 
@@ -21,28 +21,28 @@ The source of this event is the SSLSocket on which handshaking just completed.
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [HandshakeCompletedEvent](../javax/net/ssl/HandshakeCompletedEvent.md))`(`sock:` ` [SSLSocket](../javax/net/ssl/SSLSocket.md)!`, `s:` ` [SSLSession](../javax/net/ssl/SSLSession.md)!`)` Constructs a new HandshakeCompletedEvent. |
+| [HandshakeCompletedEvent](HandshakeCompletedEvent.md))`(`sock:` ` [SSLSocket](SSLSocket.md)!`, `s:` ` [SSLSession](SSLSession.md)!`)` Constructs a new HandshakeCompletedEvent. |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getCipherSuite](../javax/net/ssl/HandshakeCompletedEvent.md))`()` Returns the cipher suite in use by the session which was produced by the handshake. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Certificate](../java/security/cert/Certificate.md)!\>! | [getLocalCertificates](../javax/net/ssl/HandshakeCompletedEvent.md))`()` Returns the certificate(s) that were sent to the peer during handshaking. |
-| open [Principal](../java/security/Principal.md)! | [getLocalPrincipal](../javax/net/ssl/HandshakeCompletedEvent.md))`()` Returns the principal that was sent to the peer during handshaking. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getCipherSuite](HandshakeCompletedEvent.md))`()` Returns the cipher suite in use by the session which was produced by the handshake. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Certificate](../java.security.cert/Certificate.md)!\>! | [getLocalCertificates](HandshakeCompletedEvent.md))`()` Returns the certificate(s) that were sent to the peer during handshaking. |
+| open [Principal](../java.security/Principal.md)! | [getLocalPrincipal](HandshakeCompletedEvent.md))`()` Returns the principal that was sent to the peer during handshaking. |
 | --- | --- |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [X509Certificate](../javax/security/cert/X509Certificate.md)!\>! | [getPeerCertificateChain](../javax/net/ssl/HandshakeCompletedEvent.md))`()` Returns the identity of the peer which was identified as part of defining the session. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Certificate](../java/security/cert/Certificate.md)!\>! | [getPeerCertificates](../javax/net/ssl/HandshakeCompletedEvent.md))`()` Returns the identity of the peer which was established as part of defining the session. |
-| open [Principal](../java/security/Principal.md)! | [getPeerPrincipal](../javax/net/ssl/HandshakeCompletedEvent.md))`()` Returns the identity of the peer which was established as part of defining the session. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [X509Certificate](../javax.security.cert/X509Certificate.md)!\>! | [getPeerCertificateChain](HandshakeCompletedEvent.md))`()` Returns the identity of the peer which was identified as part of defining the session. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Certificate](../java.security.cert/Certificate.md)!\>! | [getPeerCertificates](HandshakeCompletedEvent.md))`()` Returns the identity of the peer which was established as part of defining the session. |
+| open [Principal](../java.security/Principal.md)! | [getPeerPrincipal](HandshakeCompletedEvent.md))`()` Returns the identity of the peer which was established as part of defining the session. |
 | --- | --- |
-| open [SSLSession](../javax/net/ssl/SSLSession.md)! | [getSession](../javax/net/ssl/HandshakeCompletedEvent.md))`()` Returns the session that triggered this event. |
-| open [SSLSocket](../javax/net/ssl/SSLSocket.md)! | [getSocket](../javax/net/ssl/HandshakeCompletedEvent.md))`()` Returns the socket which is the source of this event. |
+| open [SSLSession](SSLSession.md)! | [getSession](HandshakeCompletedEvent.md))`()` Returns the session that triggered this event. |
+| open [SSLSocket](SSLSocket.md)! | [getSocket](HandshakeCompletedEvent.md))`()` Returns the socket which is the source of this event. |
 
 | Inherited functions ||
 |---|---|
-| From class [EventObject](../java/util/EventObject.md) |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getSource](../java/util/EventObject.md))`()` <br /> The object on which the Event initially occurred. <br /> | | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/util/EventObject.md))`()` <br /> Returns a String representation of this EventObject. <br /> | ||
+| From class [EventObject](../java.util/EventObject.md) |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getSource](../java.util/EventObject.md))`()` <br /> The object on which the Event initially occurred. <br /> | | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java.util/EventObject.md))`()` <br /> Returns a String representation of this EventObject. <br /> | ||
 
 | Inherited properties ||
 |---|---|
-| From class [EventObject](../java/util/EventObject.md) |-----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [source](../java/util/EventObject.md) <br /> The object on which the Event initially occurred. <br /> | ||
+| From class [EventObject](../java.util/EventObject.md) |-----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [source](../java.util/EventObject.md) <br /> The object on which the Event initially occurred. <br /> | ||
 
 ## Public constructors
 
@@ -60,8 +60,8 @@ Constructs a new HandshakeCompletedEvent.
 
 | Parameters ||
 |--------|--------------------------------------------------------------------------------------------------------------------------------------|
-| `sock` | [SSLSocket](../javax/net/ssl/SSLSocket.md)!:the SSLSocket acting as the source of the event |
-| `s` | [SSLSession](../javax/net/ssl/SSLSession.md)!:the SSLSession this event is associated with |
+| `sock` | [SSLSocket](SSLSocket.md)!:the SSLSocket acting as the source of the event |
+| `s` | [SSLSession](SSLSession.md)!:the SSLSession this event is associated with |
 
 ## Public methods
 
@@ -91,7 +91,7 @@ Returns the certificate(s) that were sent to the peer during handshaking. Note: 
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Certificate](../java/security/cert/Certificate.md)!>! | an ordered array of certificates, with the local certificate first followed by any certificate authorities. If no certificates were sent, then null is returned. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Certificate](../java.security.cert/Certificate.md)!>! | an ordered array of certificates, with the local certificate first followed by any certificate authorities. If no certificates were sent, then null is returned. |
 
 **See Also**
 
@@ -109,7 +109,7 @@ Returns the principal that was sent to the peer during handshaking.
 
 | Return ||
 |--------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Principal](../java/security/Principal.md)! | the principal sent to the peer. Returns an X500Principal of the end-entity certificate for X509-based cipher suites, and KerberosPrincipal for Kerberos cipher suites. If no principal was sent, then null is returned. |
+| [Principal](../java.security/Principal.md)! | the principal sent to the peer. Returns an X500Principal of the end-entity certificate for X509-based cipher suites, and KerberosPrincipal for Kerberos cipher suites. If no principal was sent, then null is returned. |
 
 **See Also**
 
@@ -126,11 +126,11 @@ open fun getPeerCertificateChain(): Array<X509Certificate!>!
 
 Returns the identity of the peer which was identified as part of defining the session. Note: This method can be used only when using certificate-based cipher suites; using it with non-certificate-based cipher suites, such as Kerberos, will throw an SSLPeerUnverifiedException.
 
-*Note: this method exists for compatibility with previous releases. New applications should use [getPeerCertificates](../javax/net/ssl/HandshakeCompletedEvent.md))instead.*
+*Note: this method exists for compatibility with previous releases. New applications should use [getPeerCertificates](HandshakeCompletedEvent.md))instead.*
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [X509Certificate](../javax/security/cert/X509Certificate.md)!>! | an ordered array of peer X.509 certificates, with the peer's own certificate first followed by any certificate authorities. (The certificates are in the original JSSE [javax.security.cert.X509Certificate](../javax/security/cert/X509Certificate.md) format). |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [X509Certificate](../javax.security.cert/X509Certificate.md)!>! | an ordered array of peer X.509 certificates, with the peer's own certificate first followed by any certificate authorities. (The certificates are in the original JSSE [javax.security.cert.X509Certificate](../javax.security.cert/X509Certificate.md) format). |
 
 | Exceptions ||
 |--------------------------------------------|------------------------------|
@@ -152,7 +152,7 @@ Returns the identity of the peer which was established as part of defining the s
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Certificate](../java/security/cert/Certificate.md)!>! | an ordered array of the peer certificates, with the peer's own certificate first followed by any certificate authorities. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Certificate](../java.security.cert/Certificate.md)!>! | an ordered array of the peer certificates, with the peer's own certificate first followed by any certificate authorities. |
 
 | Exceptions ||
 |--------------------------------------------|------------------------------|
@@ -174,7 +174,7 @@ Returns the identity of the peer which was established as part of defining the s
 
 | Return ||
 |--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Principal](../java/security/Principal.md)! | the peer's principal. Returns an X500Principal of the end-entity certiticate for X509-based cipher suites, and KerberosPrincipal for Kerberos cipher suites. |
+| [Principal](../java.security/Principal.md)! | the peer's principal. Returns an X500Principal of the end-entity certiticate for X509-based cipher suites, and KerberosPrincipal for Kerberos cipher suites. |
 
 | Exceptions ||
 |--------------------------------------------|----------------------------------------------|
@@ -197,7 +197,7 @@ Returns the session that triggered this event.
 
 | Return ||
 |----------------------------------------------------------------------------------------|-----------------------------------|
-| [SSLSession](../javax/net/ssl/SSLSession.md)! | the`SSLSession`for this handshake |
+| [SSLSession](SSLSession.md)! | the`SSLSession`for this handshake |
 
 ### getSocket
 
@@ -211,4 +211,4 @@ Returns the socket which is the source of this event. (This is a convenience fun
 
 | Return ||
 |--------------------------------------------------------------------------------------|----------------------------------------------|
-| [SSLSocket](../javax/net/ssl/SSLSocket.md)! | the socket on which the connection was made. |
+| [SSLSocket](SSLSocket.md)! | the socket on which the connection was made. |

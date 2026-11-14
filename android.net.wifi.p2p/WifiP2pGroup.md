@@ -8,7 +8,7 @@ open class WifiP2pGroup : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.wifi.p2p.WifiP2pGroup](../android/net/wifi/p2p/WifiP2pGroup.md) |
+| ↳ | [android.net.wifi.p2p.WifiP2pGroup](WifiP2pGroup.md) |
 
 A class representing a Wi-Fi P2p group. A p2p group consists of a single group owner and one or more clients. In the case of a group with only two devices, one will be the group owner and the other will be a group client.
 
@@ -37,19 +37,19 @@ A class representing a Wi-Fi P2p group. A p2p group consists of a single group o
 | Public methods ||
 |---|---|
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#describeContents()()` Implement the Parcelable interface |
-| open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [WifiP2pDevice](../android/net/wifi/p2p/WifiP2pDevice.md)!\>! | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#getClientList()()` Get the list of clients currently part of the p2p group |
+| open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [WifiP2pDevice](WifiP2pDevice.md)!\>! | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#getClientList()()` Get the list of clients currently part of the p2p group |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#getFrequency()()` Get the operating frequency (in MHz) of the p2p group |
 | --- | --- |
-| open [MacAddress](../android/net/MacAddress.md)? | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#getGroupOwnerBssid()()` Returns the BSSID, if this device is the group owner of the P2P group supporting Wi-Fi Direct R2 protocol. |
+| open [MacAddress](../android.net/MacAddress.md)? | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#getGroupOwnerBssid()()` Returns the BSSID, if this device is the group owner of the P2P group supporting Wi-Fi Direct R2 protocol. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#getInterface()()` Get the interface name on which the group is created |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#getNetworkId()()` The network ID of the P2P group in wpa_supplicant. |
 | --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#getNetworkName()()` Get the network name (SSID) of the group. |
-| open [WifiP2pDevice](../android/net/wifi/p2p/WifiP2pDevice.md)! | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#getOwner()()` Get the details of the group owner as a `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDevice` object |
+| open [WifiP2pDevice](WifiP2pDevice.md)! | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#getOwner()()` Get the details of the group owner as a `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pDevice` object |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#getPassphrase()()` Get the passphrase of the group. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#getSecurityType()()` Get the security type of the group. |
-| open [WifiP2pConnectionInfo](../android/net/wifi/p2p/WifiP2pConnectionInfo.md)? | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#getWifiP2pGroupClientConnectionInfo()()` Gets the P2P connection information for this device if it is a client in the group. |
+| open [WifiP2pConnectionInfo](WifiP2pConnectionInfo.md)? | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#getWifiP2pGroupClientConnectionInfo()()` Gets the P2P connection information for this device if it is a client in the group. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#isGroupOwner()()` Check whether this device is the group owner of the created p2p group |
 | --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#toString()()` Returns a string representation of the object. |
@@ -57,7 +57,7 @@ A class representing a Wi-Fi P2p group. A p2p group consists of a single group o
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [WifiP2pGroup](../android/net/wifi/p2p/WifiP2pGroup.md)!\> | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#CREATOR:android.os.Parcelable.Creator` Implement the Parcelable interface |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [WifiP2pGroup](WifiP2pGroup.md)!\> | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pGroup#CREATOR:android.os.Parcelable.Creator` Implement the Parcelable interface |
 
 ## Constants
 
@@ -336,7 +336,7 @@ Implement the Parcelable interface
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

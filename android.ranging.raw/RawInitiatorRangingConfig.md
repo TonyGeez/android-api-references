@@ -2,7 +2,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 
 # RawInitiatorRangingConfig
 
-Kotlin | [Java](../android/ranging/raw/RawInitiatorRangingConfig.md)
+Kotlin | [Java](RawInitiatorRangingConfig.md)
 | --- | --- |
 
 ```
@@ -11,8 +11,8 @@ class RawInitiatorRangingConfig : RangingConfig, Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.ranging.RangingConfig](../android/ranging/RangingConfig.md) ||
-| | ↳ | [android.ranging.raw.RawInitiatorRangingConfig](../android/ranging/raw/RawInitiatorRangingConfig.md) |
+| ↳ | [android.ranging.RangingConfig](../android.ranging/RangingConfig.md) ||
+| | ↳ | [android.ranging.raw.RawInitiatorRangingConfig](RawInitiatorRangingConfig.md) |
 
 Represents the configuration for initiating a raw ranging session. This class encapsulates a list of `https://developer.android.com/reference/kotlin/android/ranging/raw/RawRangingDevice` objects that participate in the session.
 
@@ -30,7 +30,7 @@ Represents the configuration for initiating a raw ranging session. This class en
 | Public methods ||
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/raw/RawInitiatorRangingConfig#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [RawRangingDevice](../android/ranging/raw/RawRangingDevice.md)!\> | `https://developer.android.com/reference/kotlin/android/ranging/raw/RawInitiatorRangingConfig#getRawRangingDevices()()` Returns the list of `https://developer.android.com/reference/kotlin/android/ranging/raw/RawRangingDevice` objects involved in this session. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [RawRangingDevice](RawRangingDevice.md)!\> | `https://developer.android.com/reference/kotlin/android/ranging/raw/RawInitiatorRangingConfig#getRawRangingDevices()()` Returns the list of `https://developer.android.com/reference/kotlin/android/ranging/raw/RawRangingDevice` objects involved in this session. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/raw/RawInitiatorRangingConfig#toString()()` Returns a string representation of the object. |
 | --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/raw/RawInitiatorRangingConfig#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
@@ -42,7 +42,7 @@ Represents the configuration for initiating a raw ranging session. This class en
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [RawInitiatorRangingConfig](../android/ranging/raw/RawInitiatorRangingConfig.md)!\> | `https://developer.android.com/reference/kotlin/android/ranging/raw/RawInitiatorRangingConfig#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [RawInitiatorRangingConfig](RawInitiatorRangingConfig.md)!\> | `https://developer.android.com/reference/kotlin/android/ranging/raw/RawInitiatorRangingConfig#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public methods
 
@@ -103,7 +103,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

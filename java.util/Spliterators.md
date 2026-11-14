@@ -10,9 +10,9 @@ class Spliterators
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.util.Spliterators](../java/util/Spliterators.md) |
+| ↳ | [java.util.Spliterators](Spliterators.md) |
 
-Static classes and methods for operating on or creating instances of [Spliterator](../java/util/Spliterator.md) and its primitive specializations [Spliterator.OfInt](../java/util/Spliterator.OfInt.md), [Spliterator.OfLong](../java/util/Spliterator.OfLong.md), and [Spliterator.OfDouble](../java/util/Spliterator.OfDouble.md).
+Static classes and methods for operating on or creating instances of [Spliterator](Spliterator.md) and its primitive specializations [Spliterator.OfInt](../java/util/Spliterator.OfInt.md), [Spliterator.OfLong](../java/util/Spliterator.OfLong.md), and [Spliterator.OfDouble](../java/util/Spliterator.OfDouble.md).
 
 ## Summary
 
@@ -26,39 +26,39 @@ Static classes and methods for operating on or creating instances of [Spliterato
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Spliterator.OfDouble](../java/util/Spliterator.OfDouble.md)! | [emptyDoubleSpliterator](../java/util/Spliterators.md))`()` Creates an empty `Spliterator.OfDouble` |
-| static [Spliterator.OfInt](../java/util/Spliterator.OfInt.md)! | [emptyIntSpliterator](../java/util/Spliterators.md))`()` Creates an empty `Spliterator.OfInt` |
-| static [Spliterator.OfLong](../java/util/Spliterator.OfLong.md)! | [emptyLongSpliterator](../java/util/Spliterators.md))`()` Creates an empty `Spliterator.OfLong` |
+| static [Spliterator.OfDouble](../java/util/Spliterator.OfDouble.md)! | [emptyDoubleSpliterator](Spliterators.md))`()` Creates an empty `Spliterator.OfDouble` |
+| static [Spliterator.OfInt](../java/util/Spliterator.OfInt.md)! | [emptyIntSpliterator](Spliterators.md))`()` Creates an empty `Spliterator.OfInt` |
+| static [Spliterator.OfLong](../java/util/Spliterator.OfLong.md)! | [emptyLongSpliterator](Spliterators.md))`()` Creates an empty `Spliterator.OfLong` |
 | --- | --- |
-| static [Spliterator](../java/util/Spliterator.md)\<T\>! | [emptySpliterator](../java/util/Spliterators.md))`()` Creates an empty `Spliterator` |
-| static [PrimitiveIterator.OfDouble](../java/util/PrimitiveIterator.OfDouble.md)! | [iterator](../java/util/Spliterators.md))`(`spliterator:` ` [Spliterator.OfDouble](../java/util/Spliterator.OfDouble.md)!`)` Creates an `PrimitiveIterator.OfDouble` from a `Spliterator.OfDouble`. |
-| static [PrimitiveIterator.OfInt](../java/util/PrimitiveIterator.OfInt.md)! | [iterator](../java/util/Spliterators.md))`(`spliterator:` ` [Spliterator.OfInt](../java/util/Spliterator.OfInt.md)!`)` Creates an `PrimitiveIterator.OfInt` from a `Spliterator.OfInt`. |
+| static [Spliterator](Spliterator.md)\<T\>! | [emptySpliterator](Spliterators.md))`()` Creates an empty `Spliterator` |
+| static [PrimitiveIterator.OfDouble](../java/util/PrimitiveIterator.OfDouble.md)! | [iterator](Spliterators.md))`(`spliterator:` ` [Spliterator.OfDouble](../java/util/Spliterator.OfDouble.md)!`)` Creates an `PrimitiveIterator.OfDouble` from a `Spliterator.OfDouble`. |
+| static [PrimitiveIterator.OfInt](../java/util/PrimitiveIterator.OfInt.md)! | [iterator](Spliterators.md))`(`spliterator:` ` [Spliterator.OfInt](../java/util/Spliterator.OfInt.md)!`)` Creates an `PrimitiveIterator.OfInt` from a `Spliterator.OfInt`. |
 | --- | --- |
-| static [PrimitiveIterator.OfLong](../java/util/PrimitiveIterator.OfLong.md)! | [iterator](../java/util/Spliterators.md))`(`spliterator:` ` [Spliterator.OfLong](../java/util/Spliterator.OfLong.md)!`)` Creates an `PrimitiveIterator.OfLong` from a `Spliterator.OfLong`. |
-| static [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\<T\>! | [iterator](../java/util/Spliterators.md))`(`spliterator:` ` [Spliterator](../java/util/Spliterator.md)<out` `T>!`)` Creates an `Iterator` from a `Spliterator`. |
-| static [Spliterator.OfDouble](../java/util/Spliterator.OfDouble.md)! | [spliterator](../java/util/Spliterators.md))`(`array:` ` [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html)!`, `additionalCharacteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator.OfDouble` covering the elements of a given array, using a customized set of spliterator characteristics. |
+| static [PrimitiveIterator.OfLong](../java/util/PrimitiveIterator.OfLong.md)! | [iterator](Spliterators.md))`(`spliterator:` ` [Spliterator.OfLong](../java/util/Spliterator.OfLong.md)!`)` Creates an `PrimitiveIterator.OfLong` from a `Spliterator.OfLong`. |
+| static [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\<T\>! | [iterator](Spliterators.md))`(`spliterator:` ` [Spliterator](Spliterator.md)<out` `T>!`)` Creates an `Iterator` from a `Spliterator`. |
+| static [Spliterator.OfDouble](../java/util/Spliterator.OfDouble.md)! | [spliterator](Spliterators.md))`(`array:` ` [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html)!`, `additionalCharacteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator.OfDouble` covering the elements of a given array, using a customized set of spliterator characteristics. |
 | --- | --- |
-| static [Spliterator.OfDouble](../java/util/Spliterator.OfDouble.md)! | [spliterator](../java/util/Spliterators.md))`(`array:` ` [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html)!`, `fromIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `toIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `additionalCharacteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator.OfDouble` covering a range of elements of a given array, using a customized set of spliterator characteristics. |
-| static [Spliterator.OfInt](../java/util/Spliterator.OfInt.md)! | [spliterator](../java/util/Spliterators.md))`(`array:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `additionalCharacteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator.OfInt` covering the elements of a given array, using a customized set of spliterator characteristics. |
-| static [Spliterator.OfInt](../java/util/Spliterator.OfInt.md)! | [spliterator](../java/util/Spliterators.md))`(`array:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `fromIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `toIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `additionalCharacteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator.OfInt` covering a range of elements of a given array, using a customized set of spliterator characteristics. |
+| static [Spliterator.OfDouble](../java/util/Spliterator.OfDouble.md)! | [spliterator](Spliterators.md))`(`array:` ` [DoubleArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double-array/index.html)!`, `fromIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `toIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `additionalCharacteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator.OfDouble` covering a range of elements of a given array, using a customized set of spliterator characteristics. |
+| static [Spliterator.OfInt](../java/util/Spliterator.OfInt.md)! | [spliterator](Spliterators.md))`(`array:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `additionalCharacteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator.OfInt` covering the elements of a given array, using a customized set of spliterator characteristics. |
+| static [Spliterator.OfInt](../java/util/Spliterator.OfInt.md)! | [spliterator](Spliterators.md))`(`array:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `fromIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `toIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `additionalCharacteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator.OfInt` covering a range of elements of a given array, using a customized set of spliterator characteristics. |
 | --- | --- |
-| static [Spliterator](../java/util/Spliterator.md)\<T\>! | [spliterator](../java/util/Spliterators.md))`(`array:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`, `additionalCharacteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator` covering the elements of a given array, using a customized set of spliterator characteristics. |
-| static [Spliterator](../java/util/Spliterator.md)\<T\>! | [spliterator](../java/util/Spliterators.md))`(`array:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`, `fromIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `toIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `additionalCharacteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator` covering a range of elements of a given array, using a customized set of spliterator characteristics. |
-| static [Spliterator](../java/util/Spliterator.md)\<T\>! | [spliterator](../java/util/Spliterators.md))`(`c:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` `T>!`, `characteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator` using the given collection's [iterator](../java/util/Collection.md)) as the source of elements, and reporting its [size](../java/util/Collection.md)) as its initial size. |
+| static [Spliterator](Spliterator.md)\<T\>! | [spliterator](Spliterators.md))`(`array:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`, `additionalCharacteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator` covering the elements of a given array, using a customized set of spliterator characteristics. |
+| static [Spliterator](Spliterator.md)\<T\>! | [spliterator](Spliterators.md))`(`array:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`, `fromIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `toIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `additionalCharacteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator` covering a range of elements of a given array, using a customized set of spliterator characteristics. |
+| static [Spliterator](Spliterator.md)\<T\>! | [spliterator](Spliterators.md))`(`c:` ` [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)<out` `T>!`, `characteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator` using the given collection's [iterator](Collection.md)) as the source of elements, and reporting its [size](Collection.md)) as its initial size. |
 | --- | --- |
-| static [Spliterator](../java/util/Spliterator.md)\<T\>! | [spliterator](../java/util/Spliterators.md))`(`iterator:` ` [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)<T>!`, `size:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `characteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator` using a given `Iterator` as the source of elements, and with a given initially reported size. |
-| static [Spliterator.OfDouble](../java/util/Spliterator.OfDouble.md)! | [spliterator](../java/util/Spliterators.md))`(`iterator:` ` [PrimitiveIterator.OfDouble](../java/util/PrimitiveIterator.OfDouble.md)!`, `size:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `characteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator.OfDouble` using a given `DoubleStream.DoubleIterator` as the source of elements, and with a given initially reported size. |
-| static [Spliterator.OfInt](../java/util/Spliterator.OfInt.md)! | [spliterator](../java/util/Spliterators.md))`(`iterator:` ` [PrimitiveIterator.OfInt](../java/util/PrimitiveIterator.OfInt.md)!`, `size:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `characteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator.OfInt` using a given `IntStream.IntIterator` as the source of elements, and with a given initially reported size. |
+| static [Spliterator](Spliterator.md)\<T\>! | [spliterator](Spliterators.md))`(`iterator:` ` [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)<T>!`, `size:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `characteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator` using a given `Iterator` as the source of elements, and with a given initially reported size. |
+| static [Spliterator.OfDouble](../java/util/Spliterator.OfDouble.md)! | [spliterator](Spliterators.md))`(`iterator:` ` [PrimitiveIterator.OfDouble](../java/util/PrimitiveIterator.OfDouble.md)!`, `size:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `characteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator.OfDouble` using a given `DoubleStream.DoubleIterator` as the source of elements, and with a given initially reported size. |
+| static [Spliterator.OfInt](../java/util/Spliterator.OfInt.md)! | [spliterator](Spliterators.md))`(`iterator:` ` [PrimitiveIterator.OfInt](../java/util/PrimitiveIterator.OfInt.md)!`, `size:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `characteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator.OfInt` using a given `IntStream.IntIterator` as the source of elements, and with a given initially reported size. |
 | --- | --- |
-| static [Spliterator.OfLong](../java/util/Spliterator.OfLong.md)! | [spliterator](../java/util/Spliterators.md))`(`iterator:` ` [PrimitiveIterator.OfLong](../java/util/PrimitiveIterator.OfLong.md)!`, `size:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `characteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator.OfLong` using a given `LongStream.LongIterator` as the source of elements, and with a given initially reported size. |
-| static [Spliterator.OfLong](../java/util/Spliterator.OfLong.md)! | [spliterator](../java/util/Spliterators.md))`(`array:` ` [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)!`, `additionalCharacteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator.OfLong` covering the elements of a given array, using a customized set of spliterator characteristics. |
-| static [Spliterator.OfLong](../java/util/Spliterator.OfLong.md)! | [spliterator](../java/util/Spliterators.md))`(`array:` ` [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)!`, `fromIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `toIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `additionalCharacteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator.OfLong` covering a range of elements of a given array, using a customized set of spliterator characteristics. |
+| static [Spliterator.OfLong](../java/util/Spliterator.OfLong.md)! | [spliterator](Spliterators.md))`(`iterator:` ` [PrimitiveIterator.OfLong](../java/util/PrimitiveIterator.OfLong.md)!`, `size:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `characteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator.OfLong` using a given `LongStream.LongIterator` as the source of elements, and with a given initially reported size. |
+| static [Spliterator.OfLong](../java/util/Spliterator.OfLong.md)! | [spliterator](Spliterators.md))`(`array:` ` [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)!`, `additionalCharacteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator.OfLong` covering the elements of a given array, using a customized set of spliterator characteristics. |
+| static [Spliterator.OfLong](../java/util/Spliterator.OfLong.md)! | [spliterator](Spliterators.md))`(`array:` ` [LongArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long-array/index.html)!`, `fromIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `toIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `additionalCharacteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator.OfLong` covering a range of elements of a given array, using a customized set of spliterator characteristics. |
 | --- | --- |
-| static [Spliterator](../java/util/Spliterator.md)\<T\>! | [spliteratorUnknownSize](../java/util/Spliterators.md))`(`iterator:` ` [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)<T>!`, `characteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator` using a given `Iterator` as the source of elements, with no initial size estimate. |
-| static [Spliterator.OfDouble](../java/util/Spliterator.OfDouble.md)! | [spliteratorUnknownSize](../java/util/Spliterators.md))`(`iterator:` ` [PrimitiveIterator.OfDouble](../java/util/PrimitiveIterator.OfDouble.md)!`, `characteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator.OfDouble` using a given `DoubleStream.DoubleIterator` as the source of elements, with no initial size estimate. |
-| static [Spliterator.OfInt](../java/util/Spliterator.OfInt.md)! | [spliteratorUnknownSize](../java/util/Spliterators.md))`(`iterator:` ` [PrimitiveIterator.OfInt](../java/util/PrimitiveIterator.OfInt.md)!`, `characteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator.OfInt` using a given `IntStream.IntIterator` as the source of elements, with no initial size estimate. |
+| static [Spliterator](Spliterator.md)\<T\>! | [spliteratorUnknownSize](Spliterators.md))`(`iterator:` ` [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)<T>!`, `characteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator` using a given `Iterator` as the source of elements, with no initial size estimate. |
+| static [Spliterator.OfDouble](../java/util/Spliterator.OfDouble.md)! | [spliteratorUnknownSize](Spliterators.md))`(`iterator:` ` [PrimitiveIterator.OfDouble](../java/util/PrimitiveIterator.OfDouble.md)!`, `characteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator.OfDouble` using a given `DoubleStream.DoubleIterator` as the source of elements, with no initial size estimate. |
+| static [Spliterator.OfInt](../java/util/Spliterator.OfInt.md)! | [spliteratorUnknownSize](Spliterators.md))`(`iterator:` ` [PrimitiveIterator.OfInt](../java/util/PrimitiveIterator.OfInt.md)!`, `characteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator.OfInt` using a given `IntStream.IntIterator` as the source of elements, with no initial size estimate. |
 | --- | --- |
-| static [Spliterator.OfLong](../java/util/Spliterator.OfLong.md)! | [spliteratorUnknownSize](../java/util/Spliterators.md))`(`iterator:` ` [PrimitiveIterator.OfLong](../java/util/PrimitiveIterator.OfLong.md)!`, `characteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator.OfLong` using a given `LongStream.LongIterator` as the source of elements, with no initial size estimate. |
+| static [Spliterator.OfLong](../java/util/Spliterator.OfLong.md)! | [spliteratorUnknownSize](Spliterators.md))`(`iterator:` ` [PrimitiveIterator.OfLong](../java/util/PrimitiveIterator.OfLong.md)!`, `characteristics:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a `Spliterator.OfLong` using a given `LongStream.LongIterator` as the source of elements, with no initial size estimate. |
 
 ## Public methods
 
@@ -72,7 +72,7 @@ static fun emptyDoubleSpliterator(): Spliterator.OfDouble!
 
 Creates an empty `Spliterator.OfDouble`
 
-The empty spliterator reports [Spliterator.SIZED](../java/util/Spliterator.md) and [Spliterator.SUBSIZED](../java/util/Spliterator.md). Calls to [java.util.Spliterator#trySplit()](../java/util/Spliterator.md)) always return `null`.
+The empty spliterator reports [Spliterator.SIZED](Spliterator.md) and [Spliterator.SUBSIZED](Spliterator.md). Calls to [java.util.Spliterator#trySplit()](Spliterator.md)) always return `null`.
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------|----------------------|
@@ -88,7 +88,7 @@ static fun emptyIntSpliterator(): Spliterator.OfInt!
 
 Creates an empty `Spliterator.OfInt`
 
-The empty spliterator reports [Spliterator.SIZED](../java/util/Spliterator.md) and [Spliterator.SUBSIZED](../java/util/Spliterator.md). Calls to [java.util.Spliterator#trySplit()](../java/util/Spliterator.md)) always return `null`.
+The empty spliterator reports [Spliterator.SIZED](Spliterator.md) and [Spliterator.SUBSIZED](Spliterator.md). Calls to [java.util.Spliterator#trySplit()](Spliterator.md)) always return `null`.
 
 | Return ||
 |--------------------------------------------------------------------------------------------------|----------------------|
@@ -104,7 +104,7 @@ static fun emptyLongSpliterator(): Spliterator.OfLong!
 
 Creates an empty `Spliterator.OfLong`
 
-The empty spliterator reports [Spliterator.SIZED](../java/util/Spliterator.md) and [Spliterator.SUBSIZED](../java/util/Spliterator.md). Calls to [java.util.Spliterator#trySplit()](../java/util/Spliterator.md)) always return `null`.
+The empty spliterator reports [Spliterator.SIZED](Spliterator.md) and [Spliterator.SUBSIZED](Spliterator.md). Calls to [java.util.Spliterator#trySplit()](Spliterator.md)) always return `null`.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------|----------------------|
@@ -120,7 +120,7 @@ static fun <T : Any!> emptySpliterator(): Spliterator<T>!
 
 Creates an empty `Spliterator`
 
-The empty spliterator reports [Spliterator.SIZED](../java/util/Spliterator.md) and [Spliterator.SUBSIZED](../java/util/Spliterator.md). Calls to [java.util.Spliterator#trySplit()](../java/util/Spliterator.md)) always return `null`.
+The empty spliterator reports [Spliterator.SIZED](Spliterator.md) and [Spliterator.SUBSIZED](Spliterator.md). Calls to [java.util.Spliterator#trySplit()](Spliterator.md)) always return `null`.
 
 | Parameters ||
 |-------|------------------|
@@ -128,7 +128,7 @@ The empty spliterator reports [Spliterator.SIZED](../java/util/Spliterator.md) a
 
 | Return ||
 |-----------------------------------------------------------------------------------------|----------------------|
-| [Spliterator](../java/util/Spliterator.md)<T>! | An empty spliterator |
+| [Spliterator](Spliterator.md)<T>! | An empty spliterator |
 
 ### iterator
 
@@ -217,7 +217,7 @@ Traversal of elements should be accomplished through the iterator. The behaviour
 | Parameters ||
 |---------------|----------------------------------------------------------------------------------------------------------------|
 | `<T>` | Type of elements |
-| `spliterator` | [Spliterator](../java/util/Spliterator.md)\<out T\>!: The spliterator |
+| `spliterator` | [Spliterator](Spliterator.md)\<out T\>!: The spliterator |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------|-------------|
@@ -401,7 +401,7 @@ The returned spliterator always reports the characteristics `SIZED` and `SUBSIZE
 
 | Return ||
 |-----------------------------------------------------------------------------------------|----------------------------|
-| [Spliterator](../java/util/Spliterator.md)<T>! | A spliterator for an array |
+| [Spliterator](Spliterator.md)<T>! | A spliterator for an array |
 
 | Exceptions ||
 |----------------------------------|------------------------------|
@@ -441,7 +441,7 @@ The returned spliterator always reports the characteristics `SIZED` and `SUBSIZE
 
 | Return ||
 |-----------------------------------------------------------------------------------------|----------------------------|
-| [Spliterator](../java/util/Spliterator.md)<T>! | A spliterator for an array |
+| [Spliterator](Spliterator.md)<T>! | A spliterator for an array |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------------------------------------------------------------------|
@@ -463,9 +463,9 @@ static fun <T : Any!> spliterator(
 ): Spliterator<T>!
 ```
 
-Creates a `Spliterator` using the given collection's [iterator](../java/util/Collection.md)) as the source of elements, and reporting its [size](../java/util/Collection.md)) as its initial size.
+Creates a `Spliterator` using the given collection's [iterator](Collection.md)) as the source of elements, and reporting its [size](Collection.md)) as its initial size.
 
-The spliterator is * [late-binding](../java/util/Spliterator.md)* , inherits the *fail-fast* properties of the collection's iterator, and implements `trySplit` to permit limited parallelism.
+The spliterator is * [late-binding](Spliterator.md)* , inherits the *fail-fast* properties of the collection's iterator, and implements `trySplit` to permit limited parallelism.
 
 | Parameters ||
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -476,7 +476,7 @@ The spliterator is * [late-binding](../java/util/Spliterator.md)* , inherits the
 
 | Return ||
 |-----------------------------------------------------------------------------------------|--------------------------------|
-| [Spliterator](../java/util/Spliterator.md)<T>! | A spliterator from an iterator |
+| [Spliterator](Spliterator.md)<T>! | A spliterator from an iterator |
 
 | Exceptions ||
 |----------------------------------|-----------------------------------|
@@ -496,7 +496,7 @@ static fun <T : Any!> spliterator(
 
 Creates a `Spliterator` using a given `Iterator` as the source of elements, and with a given initially reported size.
 
-The spliterator is not * [late-binding](../java/util/Spliterator.md)* , inherits the *fail-fast* properties of the iterator, and implements `trySplit` to permit limited parallelism.
+The spliterator is not * [late-binding](Spliterator.md)* , inherits the *fail-fast* properties of the iterator, and implements `trySplit` to permit limited parallelism.
 
 Traversal of elements should be accomplished through the spliterator. The behaviour of splitting and traversal is undefined if the iterator is operated on after the spliterator is returned, or the initially reported size is not equal to the actual number of elements in the source.
 
@@ -510,7 +510,7 @@ Traversal of elements should be accomplished through the spliterator. The behavi
 
 | Return ||
 |-----------------------------------------------------------------------------------------|--------------------------------|
-| [Spliterator](../java/util/Spliterator.md)<T>! | A spliterator from an iterator |
+| [Spliterator](Spliterator.md)<T>! | A spliterator from an iterator |
 
 | Exceptions ||
 |----------------------------------|---------------------------------|
@@ -530,7 +530,7 @@ static fun spliterator(
 
 Creates a `Spliterator.OfDouble` using a given `DoubleStream.DoubleIterator` as the source of elements, and with a given initially reported size.
 
-The spliterator is not * [late-binding](../java/util/Spliterator.md)* , inherits the *fail-fast* properties of the iterator, and implements `trySplit` to permit limited parallelism.
+The spliterator is not * [late-binding](Spliterator.md)* , inherits the *fail-fast* properties of the iterator, and implements `trySplit` to permit limited parallelism.
 
 Traversal of elements should be accomplished through the spliterator. The behaviour of splitting and traversal is undefined if the iterator is operated on after the spliterator is returned, or the initially reported size is not equal to the actual number of elements in the source.
 
@@ -563,7 +563,7 @@ static fun spliterator(
 
 Creates a `Spliterator.OfInt` using a given `IntStream.IntIterator` as the source of elements, and with a given initially reported size.
 
-The spliterator is not * [late-binding](../java/util/Spliterator.md)* , inherits the *fail-fast* properties of the iterator, and implements `trySplit` to permit limited parallelism.
+The spliterator is not * [late-binding](Spliterator.md)* , inherits the *fail-fast* properties of the iterator, and implements `trySplit` to permit limited parallelism.
 
 Traversal of elements should be accomplished through the spliterator. The behaviour of splitting and traversal is undefined if the iterator is operated on after the spliterator is returned, or the initially reported size is not equal to the actual number of elements in the source.
 
@@ -596,7 +596,7 @@ static fun spliterator(
 
 Creates a `Spliterator.OfLong` using a given `LongStream.LongIterator` as the source of elements, and with a given initially reported size.
 
-The spliterator is not * [late-binding](../java/util/Spliterator.md)* , inherits the *fail-fast* properties of the iterator, and implements `trySplit` to permit limited parallelism.
+The spliterator is not * [late-binding](Spliterator.md)* , inherits the *fail-fast* properties of the iterator, and implements `trySplit` to permit limited parallelism.
 
 Traversal of elements should be accomplished through the spliterator. The behaviour of splitting and traversal is undefined if the iterator is operated on after the spliterator is returned, or the initially reported size is not equal to the actual number of elements in the source.
 
@@ -702,7 +702,7 @@ static fun <T : Any!> spliteratorUnknownSize(
 
 Creates a `Spliterator` using a given `Iterator` as the source of elements, with no initial size estimate.
 
-The spliterator is not * [late-binding](../java/util/Spliterator.md)* , inherits the *fail-fast* properties of the iterator, and implements `trySplit` to permit limited parallelism.
+The spliterator is not * [late-binding](Spliterator.md)* , inherits the *fail-fast* properties of the iterator, and implements `trySplit` to permit limited parallelism.
 
 Traversal of elements should be accomplished through the spliterator. The behaviour of splitting and traversal is undefined if the iterator is operated on after the spliterator is returned.
 
@@ -715,7 +715,7 @@ Traversal of elements should be accomplished through the spliterator. The behavi
 
 | Return ||
 |-----------------------------------------------------------------------------------------|--------------------------------|
-| [Spliterator](../java/util/Spliterator.md)<T>! | A spliterator from an iterator |
+| [Spliterator](Spliterator.md)<T>! | A spliterator from an iterator |
 
 | Exceptions ||
 |----------------------------------|---------------------------------|
@@ -734,7 +734,7 @@ static fun spliteratorUnknownSize(
 
 Creates a `Spliterator.OfDouble` using a given `DoubleStream.DoubleIterator` as the source of elements, with no initial size estimate.
 
-The spliterator is not * [late-binding](../java/util/Spliterator.md)* , inherits the *fail-fast* properties of the iterator, and implements `trySplit` to permit limited parallelism.
+The spliterator is not * [late-binding](Spliterator.md)* , inherits the *fail-fast* properties of the iterator, and implements `trySplit` to permit limited parallelism.
 
 Traversal of elements should be accomplished through the spliterator. The behaviour of splitting and traversal is undefined if the iterator is operated on after the spliterator is returned.
 
@@ -764,7 +764,7 @@ static fun spliteratorUnknownSize(
 
 Creates a `Spliterator.OfInt` using a given `IntStream.IntIterator` as the source of elements, with no initial size estimate.
 
-The spliterator is not * [late-binding](../java/util/Spliterator.md)* , inherits the *fail-fast* properties of the iterator, and implements `trySplit` to permit limited parallelism.
+The spliterator is not * [late-binding](Spliterator.md)* , inherits the *fail-fast* properties of the iterator, and implements `trySplit` to permit limited parallelism.
 
 Traversal of elements should be accomplished through the spliterator. The behaviour of splitting and traversal is undefined if the iterator is operated on after the spliterator is returned.
 
@@ -794,7 +794,7 @@ static fun spliteratorUnknownSize(
 
 Creates a `Spliterator.OfLong` using a given `LongStream.LongIterator` as the source of elements, with no initial size estimate.
 
-The spliterator is not * [late-binding](../java/util/Spliterator.md)* , inherits the *fail-fast* properties of the iterator, and implements `trySplit` to permit limited parallelism.
+The spliterator is not * [late-binding](Spliterator.md)* , inherits the *fail-fast* properties of the iterator, and implements `trySplit` to permit limited parallelism.
 
 Traversal of elements should be accomplished through the spliterator. The behaviour of splitting and traversal is undefined if the iterator is operated on after the spliterator is returned.
 

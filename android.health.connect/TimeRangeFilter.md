@@ -4,16 +4,16 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # TimeRangeFilter
 
-Kotlin| [Java](../android/health/connect/TimeRangeFilter.md) 
+Kotlin| [Java](TimeRangeFilter.md) 
 | --- | --- |
 
 ```
 interface TimeRangeFilter
 ```
 
-| [android.health.connect.TimeRangeFilter](../android/health/connect/TimeRangeFilter.md) |
+| [android.health.connect.TimeRangeFilter](TimeRangeFilter.md) |
 
-| Known Direct Subclasses [LocalTimeRangeFilter](../android/health/connect/LocalTimeRangeFilter.md), [TimeInstantRangeFilter](../android/health/connect/TimeInstantRangeFilter.md) |------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------| | [LocalTimeRangeFilter](../android/health/connect/LocalTimeRangeFilter.md) | Specification of local time range for health connect requests. | | [TimeInstantRangeFilter](../android/health/connect/TimeInstantRangeFilter.md) | Specification of time range for read and delete requests. | |
+| Known Direct Subclasses [LocalTimeRangeFilter](LocalTimeRangeFilter.md), [TimeInstantRangeFilter](TimeInstantRangeFilter.md) |------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------| | [LocalTimeRangeFilter](LocalTimeRangeFilter.md) | Specification of local time range for health connect requests. | | [TimeInstantRangeFilter](TimeInstantRangeFilter.md) | Specification of time range for read and delete requests. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 A Base class to represent a request for time range for read and delete requests. Internally represents a SQLLite \* argument that specifies start and end time to put in as SQLLite parameters.

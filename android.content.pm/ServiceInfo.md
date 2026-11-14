@@ -8,9 +8,9 @@ open class ServiceInfo : ComponentInfo, Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.content.pm.PackageItemInfo](../android/content/pm/PackageItemInfo.md) |||
-| | ↳ | [android.content.pm.ComponentInfo](../android/content/pm/ComponentInfo.md) ||
-| | | ↳ | [android.content.pm.ServiceInfo](../android/content/pm/ServiceInfo.md) |
+| ↳ | [android.content.pm.PackageItemInfo](PackageItemInfo.md) |||
+| | ↳ | [android.content.pm.ComponentInfo](ComponentInfo.md) ||
+| | | ↳ | [android.content.pm.ServiceInfo](ServiceInfo.md) |
 | --- | --- | --- | --- |
 
 Information you can retrieve about a particular application service. This corresponds to information collected from the AndroidManifest.xml's \<service\> tags.
@@ -154,7 +154,7 @@ Load an XML resource attached to the meta-data of this item. This will retrieved
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ServiceInfo](../android/content/pm/ServiceInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ServiceInfo](ServiceInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo#CREATOR:android.os.Parcelable.Creator` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo#flags:kotlin.Int` Options that have been set in the service declaration in the manifest. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/content/pm/ServiceInfo#permission:kotlin.String` Optional name of a permission required to be able to access this Service. |
 | --- | --- |
@@ -754,7 +754,7 @@ open fun writeToParcel(
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

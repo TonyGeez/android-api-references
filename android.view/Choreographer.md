@@ -4,7 +4,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 
 # Choreographer
 
-Kotlin| [Java](../android/view/Choreographer.md) 
+Kotlin| [Java](Choreographer.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class Choreographer
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.Choreographer](../android/view/Choreographer.md) |
+| ↳ | [android.view.Choreographer](Choreographer.md) |
 
 Coordinates the timing of animations, input and drawing.
 
@@ -21,18 +21,18 @@ The choreographer receives timing pulses (such as vertical synchronization) from
 
 Applications typically interact with the choreographer indirectly using higher level abstractions in the animation framework or the view hierarchy. Here are some examples of things you can do using the higher-level APIs.
 
-- To post an animation to be processed on a regular time basis synchronized with display frame rendering, use [android.animation.ValueAnimator#start](../android/animation/ValueAnimator.md)).
-- To post a [Runnable](../java/lang/Runnable.md) to be invoked once at the beginning of the next display frame, use [View.postOnAnimation](../android/view/View.md)).
-- To post a [Runnable](../java/lang/Runnable.md) to be invoked once at the beginning of the next display frame after a delay, use [View.postOnAnimationDelayed](../android/view/View.md)).
-- To post a call to [View.invalidate()](../android/view/View.md))to occur once at the beginning of the next display frame, use [View.postInvalidateOnAnimation()](../android/view/View.md))or [View.postInvalidateOnAnimation(int, int, int, int)](../android/view/View.md)).
-- To ensure that the contents of a [View](../android/view/View.md) scroll smoothly and are drawn in sync with display frame rendering, do nothing. This already happens automatically. [View.onDraw](../android/view/View.md))will be called at the appropriate time.
+- To post an animation to be processed on a regular time basis synchronized with display frame rendering, use [android.animation.ValueAnimator#start](../android.animation/ValueAnimator.md)).
+- To post a [Runnable](../java.lang/Runnable.md) to be invoked once at the beginning of the next display frame, use [View.postOnAnimation](View.md)).
+- To post a [Runnable](../java.lang/Runnable.md) to be invoked once at the beginning of the next display frame after a delay, use [View.postOnAnimationDelayed](View.md)).
+- To post a call to [View.invalidate()](View.md))to occur once at the beginning of the next display frame, use [View.postInvalidateOnAnimation()](View.md))or [View.postInvalidateOnAnimation(int, int, int, int)](View.md)).
+- To ensure that the contents of a [View](View.md) scroll smoothly and are drawn in sync with display frame rendering, do nothing. This already happens automatically. [View.onDraw](View.md))will be called at the appropriate time.
 
 However, there are a few cases where you might want to use the functions of the choreographer directly in your application. Here are some examples.
 
-- If your application does its rendering in a different thread, possibly using GL, or does not use the animation framework or view hierarchy at all and you want to ensure that it is appropriately synchronized with the display, then use [Choreographer.postFrameCallback](../android/view/Choreographer.md)).
+- If your application does its rendering in a different thread, possibly using GL, or does not use the animation framework or view hierarchy at all and you want to ensure that it is appropriately synchronized with the display, then use [Choreographer.postFrameCallback](Choreographer.md)).
 - ... and that's about it.
 
-Each [Looper](../android/os/Looper.md) thread has its own choreographer. Other threads can post callbacks to run on the choreographer but they will run on the [Looper](../android/os/Looper.md) to which the choreographer belongs.
+Each [Looper](../android.os/Looper.md) thread has its own choreographer. Other threads can post callbacks to run on the choreographer but they will run on the [Looper](../android.os/Looper.md) to which the choreographer belongs.
 
 ## Summary
 
@@ -46,13 +46,13 @@ Each [Looper](../android/os/Looper.md) thread has its own choreographer. Other t
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Choreographer](../android/view/Choreographer.md)! | [getInstance](../android/view/Choreographer.md))`()` Gets the choreographer for the calling thread. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [postFrameCallback](../android/view/Choreographer.md))`(`callback:` ` [Choreographer.FrameCallback](../android/view/Choreographer.FrameCallback.md)!`)` Posts a frame callback to run on the next frame. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [postFrameCallbackDelayed](../android/view/Choreographer.md))`(`callback:` ` [Choreographer.FrameCallback](../android/view/Choreographer.FrameCallback.md)!`, `delayMillis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Posts a frame callback to run on the next frame after the specified delay. |
+| static [Choreographer](Choreographer.md)! | [getInstance](Choreographer.md))`()` Gets the choreographer for the calling thread. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [postFrameCallback](Choreographer.md))`(`callback:` ` [Choreographer.FrameCallback](../android/view/Choreographer.FrameCallback.md)!`)` Posts a frame callback to run on the next frame. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [postFrameCallbackDelayed](Choreographer.md))`(`callback:` ` [Choreographer.FrameCallback](../android/view/Choreographer.FrameCallback.md)!`, `delayMillis:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Posts a frame callback to run on the next frame after the specified delay. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [postVsyncCallback](../android/view/Choreographer.md))`(`callback:` ` [Choreographer.VsyncCallback](../android/view/Choreographer.VsyncCallback.md)`)` Posts a vsync callback to run on the next frame. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeFrameCallback](../android/view/Choreographer.md))`(`callback:` ` [Choreographer.FrameCallback](../android/view/Choreographer.FrameCallback.md)!`)` Removes a previously posted frame callback. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeVsyncCallback](../android/view/Choreographer.md))`(`callback:` ` [Choreographer.VsyncCallback](../android/view/Choreographer.VsyncCallback.md)?`)` Removes a previously posted vsync callback. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [postVsyncCallback](Choreographer.md))`(`callback:` ` [Choreographer.VsyncCallback](../android/view/Choreographer.VsyncCallback.md)`)` Posts a vsync callback to run on the next frame. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeFrameCallback](Choreographer.md))`(`callback:` ` [Choreographer.FrameCallback](../android/view/Choreographer.FrameCallback.md)!`)` Removes a previously posted frame callback. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeVsyncCallback](Choreographer.md))`(`callback:` ` [Choreographer.VsyncCallback](../android/view/Choreographer.VsyncCallback.md)?`)` Removes a previously posted vsync callback. |
 | --- | --- |
 
 ## Public methods
@@ -65,11 +65,11 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 static fun getInstance(): Choreographer!
 ```
 
-Gets the choreographer for the calling thread. Must be called from a thread that already has a [android.os.Looper](../android/os/Looper.md) associated with it.
+Gets the choreographer for the calling thread. Must be called from a thread that already has a [android.os.Looper](../android.os/Looper.md) associated with it.
 
 | Return ||
 |----------------------------------------------------------------------------------------------|------------------------------------|
-| [Choreographer](../android/view/Choreographer.md)! | The choreographer for this thread. |
+| [Choreographer](Choreographer.md)! | The choreographer for this thread. |
 
 | Exceptions ||
 |-----------------------------------|---------------------------------------|
@@ -93,8 +93,8 @@ The callback runs once then is automatically removed.
 
 **See Also**
 
-- [#postFrameCallbackDelayed](../android/view/Choreographer.md))
-- [#removeFrameCallback](../android/view/Choreographer.md)) 
+- [#postFrameCallbackDelayed](Choreographer.md))
+- [#removeFrameCallback](Choreographer.md)) 
 
 ### postFrameCallbackDelayed
 
@@ -118,8 +118,8 @@ The callback runs once then is automatically removed.
 
 **See Also**
 
-- [#postFrameCallback](../android/view/Choreographer.md))
-- [#removeFrameCallback](../android/view/Choreographer.md)) 
+- [#postFrameCallback](Choreographer.md))
+- [#removeFrameCallback](Choreographer.md)) 
 
 ### postVsyncCallback
 
@@ -139,7 +139,7 @@ The callback runs once then is automatically removed.
 
 **See Also**
 
-- [#removeVsyncCallback](../android/view/Choreographer.md)) 
+- [#removeVsyncCallback](Choreographer.md)) 
 
 ### removeFrameCallback
 
@@ -157,8 +157,8 @@ Removes a previously posted frame callback.
 
 **See Also**
 
-- [#postFrameCallback](../android/view/Choreographer.md))
-- [#postFrameCallbackDelayed](../android/view/Choreographer.md)) 
+- [#postFrameCallback](Choreographer.md))
+- [#postFrameCallbackDelayed](Choreographer.md)) 
 
 ### removeVsyncCallback
 
@@ -176,4 +176,4 @@ Removes a previously posted vsync callback.
 
 **See Also**
 
-- [#postVsyncCallback](../android/view/Choreographer.md))
+- [#postVsyncCallback](Choreographer.md))

@@ -2,7 +2,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # IntProperty
 
-Kotlin | [Java](../android/util/IntProperty.md)
+Kotlin | [Java](IntProperty.md)
 | --- | --- |
 
 ```
@@ -11,8 +11,8 @@ abstract class IntProperty<T : Any!> : Property<T, Int!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.util.Property](../android/util/Property.md)\<T, [kotlin.Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)\> ||
-| | ↳ | [android.util.IntProperty](../android/util/IntProperty.md) |
+| ↳ | [android.util.Property](Property.md)\<T, [kotlin.Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)\> ||
+| | ↳ | [android.util.IntProperty](IntProperty.md) |
 
 An implementation of `https://developer.android.com/reference/kotlin/android/util/Property` to be used specifically with fields of type `int`. This type-specific subclass enables performance benefit by allowing calls to a `https://developer.android.com/reference/kotlin/android/util/IntProperty#setValue(android.util.IntProperty.T,%20kotlin.Int)` function that takes the primitive `int` type and avoids autoboxing and other overhead associated with the `Integer` class.
 

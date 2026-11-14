@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # TouchDelegate
 
-Kotlin| [Java](../android/view/TouchDelegate.md) 
+Kotlin| [Java](TouchDelegate.md) 
 | --- | --- |
 
 ```
@@ -13,31 +13,31 @@ open class TouchDelegate
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.TouchDelegate](../android/view/TouchDelegate.md) |
+| ↳ | [android.view.TouchDelegate](TouchDelegate.md) |
 
 Helper class to handle situations where you want a view to have a larger touch area than its actual view bounds. The view whose touch area is changed is called the delegate view. This class should be used by an ancestor of the delegate. To use a TouchDelegate, first create an instance that specifies the bounds that should be mapped to the delegate and the delegate view itself.
 
-The ancestor should then forward all of its touch events received in its [android.view.View#onTouchEvent(MotionEvent)](../android/view/View.md))to [onTouchEvent(android.view.MotionEvent)](../android/view/TouchDelegate.md)).
+The ancestor should then forward all of its touch events received in its [android.view.View#onTouchEvent(MotionEvent)](View.md))to [onTouchEvent(android.view.MotionEvent)](TouchDelegate.md)).
 
 ## Summary
 
 | Constants ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ABOVE](../android/view/TouchDelegate.md) The touchable region of the View extends above its actual extent. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BELOW](../android/view/TouchDelegate.md) The touchable region of the View extends below its actual extent. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TO_LEFT](../android/view/TouchDelegate.md) The touchable region of the View extends to the left of its actual extent. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ABOVE](TouchDelegate.md) The touchable region of the View extends above its actual extent. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BELOW](TouchDelegate.md) The touchable region of the View extends below its actual extent. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TO_LEFT](TouchDelegate.md) The touchable region of the View extends to the left of its actual extent. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TO_RIGHT](../android/view/TouchDelegate.md) The touchable region of the View extends to the right of its actual extent. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TO_RIGHT](TouchDelegate.md) The touchable region of the View extends to the right of its actual extent. |
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [TouchDelegate](../android/view/TouchDelegate.md))`(`bounds:` ` [Rect](../android/graphics/Rect.md)!`, `delegateView:` ` [View](../android/view/View.md)!`)` Constructor |
+| [TouchDelegate](TouchDelegate.md))`(`bounds:` ` [Rect](../android.graphics/Rect.md)!`, `delegateView:` ` [View](View.md)!`)` Constructor |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [AccessibilityNodeInfo.TouchDelegateInfo](../android/view/accessibility/AccessibilityNodeInfo.TouchDelegateInfo.md) | [getTouchDelegateInfo](../android/view/TouchDelegate.md))`()` Return a [TouchDelegateInfo](../android/view/accessibility/AccessibilityNodeInfo.TouchDelegateInfo.md) mapping from regions (in view coordinates) to delegated views for accessibility usage. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onTouchEvent](../android/view/TouchDelegate.md))`(`event:` ` [MotionEvent](../android/view/MotionEvent.md)`)` Forward touch events to the delegate view if the event is within the bounds specified in the constructor. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onTouchExplorationHoverEvent](../android/view/TouchDelegate.md))`(`event:` ` [MotionEvent](../android/view/MotionEvent.md)`)` Forward hover events to the delegate view if the event is within the bounds specified in the constructor and touch exploration is enabled. |
+| open [AccessibilityNodeInfo.TouchDelegateInfo](../android/view/accessibility/AccessibilityNodeInfo.TouchDelegateInfo.md) | [getTouchDelegateInfo](TouchDelegate.md))`()` Return a [TouchDelegateInfo](../android/view/accessibility/AccessibilityNodeInfo.TouchDelegateInfo.md) mapping from regions (in view coordinates) to delegated views for accessibility usage. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onTouchEvent](TouchDelegate.md))`(`event:` ` [MotionEvent](MotionEvent.md)`)` Forward touch events to the delegate view if the event is within the bounds specified in the constructor. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onTouchExplorationHoverEvent](TouchDelegate.md))`(`event:` ` [MotionEvent](MotionEvent.md)`)` Forward hover events to the delegate view if the event is within the bounds specified in the constructor and touch exploration is enabled. |
 | --- | --- |
 
 ## Constants
@@ -106,8 +106,8 @@ Constructor
 
 | Parameters ||
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `bounds` | [Rect](../android/graphics/Rect.md)!:Bounds in local coordinates of the containing view that should be mapped to the delegate view |
-| `delegateView` | [View](../android/view/View.md)!:The view that should receive motion events |
+| `bounds` | [Rect](../android.graphics/Rect.md)!:Bounds in local coordinates of the containing view that should be mapped to the delegate view |
+| `delegateView` | [View](View.md)!:The view that should receive motion events |
 
 ## Public methods
 
@@ -137,7 +137,7 @@ Forward touch events to the delegate view if the event is within the bounds spec
 
 | Parameters ||
 |---------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| `event` | [MotionEvent](../android/view/MotionEvent.md):The touch event to forward This value cannot be`null`. |
+| `event` | [MotionEvent](MotionEvent.md):The touch event to forward This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------------------------------|
@@ -157,7 +157,7 @@ This method is provided for accessibility purposes so touch exploration, which i
 
 | Parameters ||
 |---------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| `event` | [MotionEvent](../android/view/MotionEvent.md):The hover event to forward This value cannot be`null`. |
+| `event` | [MotionEvent](MotionEvent.md):The hover event to forward This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------------------------------|
@@ -165,4 +165,4 @@ This method is provided for accessibility purposes so touch exploration, which i
 
 **See Also**
 
-- [android.view.accessibility.AccessibilityManager#isTouchExplorationEnabled](../android/view/accessibility/AccessibilityManager.md))
+- [android.view.accessibility.AccessibilityManager#isTouchExplorationEnabled](../android.view.accessibility/AccessibilityManager.md))

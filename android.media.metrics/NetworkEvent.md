@@ -4,7 +4,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # NetworkEvent
 
-Kotlin| [Java](../android/media/metrics/NetworkEvent.md) 
+Kotlin| [Java](NetworkEvent.md) 
 | --- | --- |
 
 ```
@@ -13,8 +13,8 @@ class NetworkEvent : Event, Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.media.metrics.Event](../android/media/metrics/Event.md) ||
-| | ↳ | [android.media.metrics.NetworkEvent](../android/media/metrics/NetworkEvent.md) |
+| ↳ | [android.media.metrics.Event](Event.md) ||
+| | ↳ | [android.media.metrics.NetworkEvent](NetworkEvent.md) |
 
 Media network event.
 
@@ -22,44 +22,44 @@ Media network event.
 
 | Nested classes ||
 |---|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](../android/media/metrics/NetworkEvent.Builder.md) A builder for [NetworkEvent](../android/media/metrics/NetworkEvent.md) |
+| | [Builder](../android/media/metrics/NetworkEvent.Builder.md) A builder for [NetworkEvent](NetworkEvent.md) |
 
 | Constants ||
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NETWORK_TYPE_2G](../android/media/metrics/NetworkEvent.md) 2G network |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NETWORK_TYPE_3G](../android/media/metrics/NetworkEvent.md) 3G network |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NETWORK_TYPE_4G](../android/media/metrics/NetworkEvent.md) 4G network |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NETWORK_TYPE_2G](NetworkEvent.md) 2G network |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NETWORK_TYPE_3G](NetworkEvent.md) 3G network |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NETWORK_TYPE_4G](NetworkEvent.md) 4G network |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NETWORK_TYPE_5G_NSA](../android/media/metrics/NetworkEvent.md) 5G NSA network |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NETWORK_TYPE_5G_SA](../android/media/metrics/NetworkEvent.md) 5G SA network |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NETWORK_TYPE_ETHERNET](../android/media/metrics/NetworkEvent.md) Ethernet network |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NETWORK_TYPE_5G_NSA](NetworkEvent.md) 5G NSA network |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NETWORK_TYPE_5G_SA](NetworkEvent.md) 5G SA network |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NETWORK_TYPE_ETHERNET](NetworkEvent.md) Ethernet network |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NETWORK_TYPE_OFFLINE](../android/media/metrics/NetworkEvent.md) Not network connected |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NETWORK_TYPE_OTHER](../android/media/metrics/NetworkEvent.md) Other network type |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NETWORK_TYPE_UNKNOWN](../android/media/metrics/NetworkEvent.md) Network type is not known. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NETWORK_TYPE_OFFLINE](NetworkEvent.md) Not network connected |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NETWORK_TYPE_OTHER](NetworkEvent.md) Other network type |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NETWORK_TYPE_UNKNOWN](NetworkEvent.md) Network type is not known. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NETWORK_TYPE_WIFI](../android/media/metrics/NetworkEvent.md) Wi-Fi network |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NETWORK_TYPE_WIFI](NetworkEvent.md) Wi-Fi network |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android.os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android.os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android.os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/media/metrics/NetworkEvent.md))`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/media/metrics/NetworkEvent.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [Bundle](../android/os/Bundle.md) | [getMetricsBundle](../android/media/metrics/NetworkEvent.md))`()` Gets metrics-related information that is not supported by dedicated methods. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](NetworkEvent.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](NetworkEvent.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [Bundle](../android.os/Bundle.md) | [getMetricsBundle](NetworkEvent.md))`()` Gets metrics-related information that is not supported by dedicated methods. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getNetworkType](../android/media/metrics/NetworkEvent.md))`()` Gets network type. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTimeSinceCreatedMillis](../android/media/metrics/NetworkEvent.md))`()` Gets timestamp since the creation of the log session in milliseconds. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/media/metrics/NetworkEvent.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getNetworkType](NetworkEvent.md))`()` Gets network type. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTimeSinceCreatedMillis](NetworkEvent.md))`()` Gets timestamp since the creation of the log session in milliseconds. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](NetworkEvent.md))`()` <br /> |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/media/metrics/NetworkEvent.md))`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/media/metrics/NetworkEvent.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](NetworkEvent.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](NetworkEvent.md))`(`dest:` ` [Parcel](../android.os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [NetworkEvent](../android/media/metrics/NetworkEvent.md)!\> | [CREATOR](../android/media/metrics/NetworkEvent.md) Used to read a NetworkEvent from a Parcel. |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [NetworkEvent](NetworkEvent.md)!\> | [CREATOR](NetworkEvent.md) Used to read a NetworkEvent from a Parcel. |
 
 ## Constants
 
@@ -195,7 +195,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) |
 
 ### equals
 
@@ -240,7 +240,7 @@ It is intended to be used for backwards compatibility by the metrics infrastruct
 
 | Return ||
 |----------------------------------------------------------------------------------|-----------------------------|
-| [Bundle](../android/os/Bundle.md) | This value cannot be`null`. |
+| [Bundle](../android.os/Bundle.md) | This value cannot be`null`. |
 
 ### getNetworkType
 
@@ -254,7 +254,7 @@ Gets network type.
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.media.metrics.NetworkEvent#NETWORK_TYPE_UNKNOWN](../android/media/metrics/NetworkEvent.md), [android.media.metrics.NetworkEvent#NETWORK_TYPE_OTHER](../android/media/metrics/NetworkEvent.md), [android.media.metrics.NetworkEvent#NETWORK_TYPE_WIFI](../android/media/metrics/NetworkEvent.md), [android.media.metrics.NetworkEvent#NETWORK_TYPE_ETHERNET](../android/media/metrics/NetworkEvent.md), [android.media.metrics.NetworkEvent#NETWORK_TYPE_2G](../android/media/metrics/NetworkEvent.md), [android.media.metrics.NetworkEvent#NETWORK_TYPE_3G](../android/media/metrics/NetworkEvent.md), [android.media.metrics.NetworkEvent#NETWORK_TYPE_4G](../android/media/metrics/NetworkEvent.md), [android.media.metrics.NetworkEvent#NETWORK_TYPE_5G_NSA](../android/media/metrics/NetworkEvent.md), [android.media.metrics.NetworkEvent#NETWORK_TYPE_5G_SA](../android/media/metrics/NetworkEvent.md), or [android.media.metrics.NetworkEvent#NETWORK_TYPE_OFFLINE](../android/media/metrics/NetworkEvent.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.media.metrics.NetworkEvent#NETWORK_TYPE_UNKNOWN](NetworkEvent.md), [android.media.metrics.NetworkEvent#NETWORK_TYPE_OTHER](NetworkEvent.md), [android.media.metrics.NetworkEvent#NETWORK_TYPE_WIFI](NetworkEvent.md), [android.media.metrics.NetworkEvent#NETWORK_TYPE_ETHERNET](NetworkEvent.md), [android.media.metrics.NetworkEvent#NETWORK_TYPE_2G](NetworkEvent.md), [android.media.metrics.NetworkEvent#NETWORK_TYPE_3G](NetworkEvent.md), [android.media.metrics.NetworkEvent#NETWORK_TYPE_4G](NetworkEvent.md), [android.media.metrics.NetworkEvent#NETWORK_TYPE_5G_NSA](NetworkEvent.md), [android.media.metrics.NetworkEvent#NETWORK_TYPE_5G_SA](NetworkEvent.md), or [android.media.metrics.NetworkEvent#NETWORK_TYPE_OFFLINE](NetworkEvent.md) |
 
 ### getTimeSinceCreatedMillis
 
@@ -272,9 +272,9 @@ Gets timestamp since the creation of the log session in milliseconds.
 
 **See Also**
 
-- [android.media.metrics.LogSessionId](../android/media/metrics/LogSessionId.md)
-- [android.media.metrics.PlaybackSession](../android/media/metrics/PlaybackSession.md)
-- [android.media.metrics.RecordingSession](../android/media/metrics/RecordingSession.md) 
+- [android.media.metrics.LogSessionId](LogSessionId.md)
+- [android.media.metrics.PlaybackSession](PlaybackSession.md)
+- [android.media.metrics.RecordingSession](RecordingSession.md) 
 
 ### hashCode
 
@@ -315,8 +315,8 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](../android/os/Parcel.md):This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android.os/Parcel.md):This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

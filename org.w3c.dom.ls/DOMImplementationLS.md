@@ -8,7 +8,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 interface DOMImplementationLS
 ```
 
-| [org.w3c.dom.ls.DOMImplementationLS](../org/w3c/dom/ls/DOMImplementationLS.md) |
+| [org.w3c.dom.ls.DOMImplementationLS](DOMImplementationLS.md) |
 
 `DOMImplementationLS` contains the factory methods for creating Load and Save objects.
 
@@ -20,16 +20,16 @@ See also the [Document Object Model (DOM) Level 3 Load and Save Specification](h
 
 | Constants ||
 |---------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [MODE_ASYNCHRONOUS](../org/w3c/dom/ls/DOMImplementationLS.md) Create an asynchronous `LSParser`. |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [MODE_SYNCHRONOUS](../org/w3c/dom/ls/DOMImplementationLS.md) Create a synchronous `LSParser`. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [MODE_ASYNCHRONOUS](DOMImplementationLS.md) Create an asynchronous `LSParser`. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [MODE_SYNCHRONOUS](DOMImplementationLS.md) Create a synchronous `LSParser`. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [LSInput](../org/w3c/dom/ls/LSInput.md)! | [createLSInput](../org/w3c/dom/ls/DOMImplementationLS.md))`()` Create a new empty input source object where `LSInput.characterStream`, `LSInput.byteStream` , `LSInput.stringData` `LSInput.systemId`, `LSInput.publicId`, `LSInput.baseURI`, and `LSInput.encoding` are null, and `LSInput.certifiedText` is false. |
-| abstract [LSOutput](../org/w3c/dom/ls/LSOutput.md)! | [createLSOutput](../org/w3c/dom/ls/DOMImplementationLS.md))`()` Create a new empty output destination object where `LSOutput.characterStream`, `LSOutput.byteStream`, `LSOutput.systemId`, `LSOutput.encoding` are null. |
-| abstract [LSParser](../org/w3c/dom/ls/LSParser.md)! | [createLSParser](../org/w3c/dom/ls/DOMImplementationLS.md))`(`mode:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`, `schemaType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Create a new `LSParser`. |
+| abstract [LSInput](LSInput.md)! | [createLSInput](DOMImplementationLS.md))`()` Create a new empty input source object where `LSInput.characterStream`, `LSInput.byteStream` , `LSInput.stringData` `LSInput.systemId`, `LSInput.publicId`, `LSInput.baseURI`, and `LSInput.encoding` are null, and `LSInput.certifiedText` is false. |
+| abstract [LSOutput](LSOutput.md)! | [createLSOutput](DOMImplementationLS.md))`()` Create a new empty output destination object where `LSOutput.characterStream`, `LSOutput.byteStream`, `LSOutput.systemId`, `LSOutput.encoding` are null. |
+| abstract [LSParser](LSParser.md)! | [createLSParser](DOMImplementationLS.md))`(`mode:` ` [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)`, `schemaType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Create a new `LSParser`. |
 | --- | --- |
-| abstract [LSSerializer](../org/w3c/dom/ls/LSSerializer.md)! | [createLSSerializer](../org/w3c/dom/ls/DOMImplementationLS.md))`()` Create a new `LSSerializer` object. |
+| abstract [LSSerializer](LSSerializer.md)! | [createLSSerializer](DOMImplementationLS.md))`()` Create a new `LSSerializer` object. |
 
 ## Constants
 
@@ -71,7 +71,7 @@ Create a new empty input source object where `LSInput.characterStream`, `LSInput
 
 | Return ||
 |-----------------------------------------------------------------------------------|---------------------------------|
-| [LSInput](../org/w3c/dom/ls/LSInput.md)! | The newly created input object. |
+| [LSInput](LSInput.md)! | The newly created input object. |
 
 ### createLSOutput
 
@@ -85,7 +85,7 @@ Create a new empty output destination object where `LSOutput.characterStream`, `
 
 | Return ||
 |-------------------------------------------------------------------------------------|----------------------------------|
-| [LSOutput](../org/w3c/dom/ls/LSOutput.md)! | The newly created output object. |
+| [LSOutput](LSOutput.md)! | The newly created output object. |
 
 ### createLSParser
 
@@ -107,7 +107,7 @@ Create a new `LSParser`. The newly constructed parser may then be configured by 
 
 | Return ||
 |-------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [LSParser](../org/w3c/dom/ls/LSParser.md)! | The newly created `LSParser` object. This `LSParser` is either synchronous or asynchronous depending on the value of the `mode` argument. **Note:** By default, the newly created `LSParser` does not contain a `DOMErrorHandler`, i.e. the value of the " [error-handler](http://www.w3.org/TR/DOM-Level-3-Core/core.html#parameter-error-handler)" configuration parameter is `null`. However, implementations may provide a default error handler at creation time. In that case, the initial value of the `"error-handler"` configuration parameter on the new `LSParser` object contains a reference to the default error handler. |
+| [LSParser](LSParser.md)! | The newly created `LSParser` object. This `LSParser` is either synchronous or asynchronous depending on the value of the `mode` argument. **Note:** By default, the newly created `LSParser` does not contain a `DOMErrorHandler`, i.e. the value of the " [error-handler](http://www.w3.org/TR/DOM-Level-3-Core/core.html#parameter-error-handler)" configuration parameter is `null`. However, implementations may provide a default error handler at creation time. In that case, the initial value of the `"error-handler"` configuration parameter on the new `LSParser` object contains a reference to the default error handler. |
 
 | Exceptions ||
 |----------------------------|----------------------------------------------------------------------------------|
@@ -125,4 +125,4 @@ Create a new `LSSerializer` object.
 
 | Return ||
 |---------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [LSSerializer](../org/w3c/dom/ls/LSSerializer.md)! | The newly created `LSSerializer` object. **Note:** By default, the newly created `LSSerializer` has no `DOMErrorHandler`, i.e. the value of the `"error-handler"` configuration parameter is `null`. However, implementations may provide a default error handler at creation time. In that case, the initial value of the `"error-handler"` configuration parameter on the new `LSSerializer` object contains a reference to the default error handler. |
+| [LSSerializer](LSSerializer.md)! | The newly created `LSSerializer` object. **Note:** By default, the newly created `LSSerializer` has no `DOMErrorHandler`, i.e. the value of the `"error-handler"` configuration parameter is `null`. However, implementations may provide a default error handler at creation time. In that case, the initial value of the `"error-handler"` configuration parameter on the new `LSSerializer` object contains a reference to the default error handler. |

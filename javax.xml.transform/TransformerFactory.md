@@ -10,12 +10,12 @@ abstract class TransformerFactory
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.xml.transform.TransformerFactory](../javax/xml/transform/TransformerFactory.md) |
+| ↳ | [javax.xml.transform.TransformerFactory](TransformerFactory.md) |
 
-| Known Direct Subclasses [SAXTransformerFactory](../javax/xml/transform/sax/SAXTransformerFactory.md) |-----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------| | [SAXTransformerFactory](../javax/xml/transform/sax/SAXTransformerFactory.md) | This class extends TransformerFactory to provide SAX-specific factory methods. | |
+| Known Direct Subclasses [SAXTransformerFactory](../javax.xml.transform.sax/SAXTransformerFactory.md) |-----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------| | [SAXTransformerFactory](../javax.xml.transform.sax/SAXTransformerFactory.md) | This class extends TransformerFactory to provide SAX-specific factory methods. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
-A TransformerFactory instance can be used to create [javax.xml.transform.Transformer](../javax/xml/transform/Transformer.md) and [javax.xml.transform.Templates](../javax/xml/transform/Templates.md) objects.
+A TransformerFactory instance can be used to create [javax.xml.transform.Transformer](Transformer.md) and [javax.xml.transform.Templates](Templates.md) objects.
 
 The system property that determines which Factory implementation to create is named`"javax.xml.transform.TransformerFactory"`. This property names a concrete subclass of the`TransformerFactory`abstract class. If the property is not defined, a platform default is be used.
 
@@ -23,28 +23,28 @@ The system property that determines which Factory implementation to create is na
 
 | Protected constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [TransformerFactory](../javax/xml/transform/TransformerFactory.md))`()` Default constructor is protected on purpose. |
+| [TransformerFactory](TransformerFactory.md))`()` Default constructor is protected on purpose. |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Source](../javax/xml/transform/Source.md)! | [getAssociatedStylesheet](../javax/xml/transform/TransformerFactory.md))`(`source:` ` [Source](../javax/xml/transform/Source.md)!`, `media:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `title:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `charset:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Get the stylesheet specification(s) associated with the XML`Source`document via the [xml-stylesheet processing instruction](http://www.w3.org/TR/xml-stylesheet/) that match the given criteria. |
-| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getAttribute](../javax/xml/transform/TransformerFactory.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Allows the user to retrieve specific attributes on the underlying implementation. |
-| abstract [ErrorListener](../javax/xml/transform/ErrorListener.md)! | [getErrorListener](../javax/xml/transform/TransformerFactory.md))`()` Get the error event handler for the TransformerFactory. |
+| abstract [Source](Source.md)! | [getAssociatedStylesheet](TransformerFactory.md))`(`source:` ` [Source](Source.md)!`, `media:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `title:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `charset:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Get the stylesheet specification(s) associated with the XML`Source`document via the [xml-stylesheet processing instruction](http://www.w3.org/TR/xml-stylesheet/) that match the given criteria. |
+| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getAttribute](TransformerFactory.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Allows the user to retrieve specific attributes on the underlying implementation. |
+| abstract [ErrorListener](ErrorListener.md)! | [getErrorListener](TransformerFactory.md))`()` Get the error event handler for the TransformerFactory. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getFeature](../javax/xml/transform/TransformerFactory.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Look up the value of a feature. |
-| abstract [URIResolver](../javax/xml/transform/URIResolver.md)! | [getURIResolver](../javax/xml/transform/TransformerFactory.md))`()` Get the object that is used by default during the transformation to resolve URIs used in document(), xsl:import, or xsl:include. |
-| openstatic [TransformerFactory](../javax/xml/transform/TransformerFactory.md)! | [newInstance](../javax/xml/transform/TransformerFactory.md))`()` Returns Android's implementation of`TransformerFactory`. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getFeature](TransformerFactory.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Look up the value of a feature. |
+| abstract [URIResolver](URIResolver.md)! | [getURIResolver](TransformerFactory.md))`()` Get the object that is used by default during the transformation to resolve URIs used in document(), xsl:import, or xsl:include. |
+| openstatic [TransformerFactory](TransformerFactory.md)! | [newInstance](TransformerFactory.md))`()` Returns Android's implementation of`TransformerFactory`. |
 | --- | --- |
-| openstatic [TransformerFactory](../javax/xml/transform/TransformerFactory.md)! | [newInstance](../javax/xml/transform/TransformerFactory.md))`(`factoryClassName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `classLoader:` ` [ClassLoader](../java/lang/ClassLoader.md)!`)` Returns an instance of the named implementation of`TransformerFactory`. |
-| abstract [Templates](../javax/xml/transform/Templates.md)! | [newTemplates](../javax/xml/transform/TransformerFactory.md))`(`source:` ` [Source](../javax/xml/transform/Source.md)!`)` Process the Source into a Templates object, which is a a compiled representation of the source. |
-| abstract [Transformer](../javax/xml/transform/Transformer.md)! | [newTransformer](../javax/xml/transform/TransformerFactory.md))`()` Create a new`Transformer`that performs a copy of the`Source`to the`Result`. |
+| openstatic [TransformerFactory](TransformerFactory.md)! | [newInstance](TransformerFactory.md))`(`factoryClassName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `classLoader:` ` [ClassLoader](../java.lang/ClassLoader.md)!`)` Returns an instance of the named implementation of`TransformerFactory`. |
+| abstract [Templates](Templates.md)! | [newTemplates](TransformerFactory.md))`(`source:` ` [Source](Source.md)!`)` Process the Source into a Templates object, which is a a compiled representation of the source. |
+| abstract [Transformer](Transformer.md)! | [newTransformer](TransformerFactory.md))`()` Create a new`Transformer`that performs a copy of the`Source`to the`Result`. |
 | --- | --- |
-| abstract [Transformer](../javax/xml/transform/Transformer.md)! | [newTransformer](../javax/xml/transform/TransformerFactory.md))`(`source:` ` [Source](../javax/xml/transform/Source.md)!`)` Process the`Source`into a`Transformer``Object`. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAttribute](../javax/xml/transform/TransformerFactory.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Allows the user to set specific attributes on the underlying implementation. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setErrorListener](../javax/xml/transform/TransformerFactory.md))`(`listener:` ` [ErrorListener](../javax/xml/transform/ErrorListener.md)!`)` Set the error event listener for the TransformerFactory, which is used for the processing of transformation instructions, and not for the transformation itself. |
+| abstract [Transformer](Transformer.md)! | [newTransformer](TransformerFactory.md))`(`source:` ` [Source](Source.md)!`)` Process the`Source`into a`Transformer``Object`. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAttribute](TransformerFactory.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Allows the user to set specific attributes on the underlying implementation. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setErrorListener](TransformerFactory.md))`(`listener:` ` [ErrorListener](ErrorListener.md)!`)` Set the error event listener for the TransformerFactory, which is used for the processing of transformation instructions, and not for the transformation itself. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFeature](../javax/xml/transform/TransformerFactory.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Set a feature for this`TransformerFactory`and`Transformer`s or`Template`s created by this factory. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setURIResolver](../javax/xml/transform/TransformerFactory.md))`(`resolver:` ` [URIResolver](../javax/xml/transform/URIResolver.md)!`)` Set an object that is used by default during the transformation to resolve URIs used in document(), xsl:import, or xsl:include. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFeature](TransformerFactory.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Set a feature for this`TransformerFactory`and`Transformer`s or`Template`s created by this factory. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setURIResolver](TransformerFactory.md))`(`resolver:` ` [URIResolver](URIResolver.md)!`)` Set an object that is used by default during the transformation to resolve URIs used in document(), xsl:import, or xsl:include. |
 
 ## Protected constructors
 
@@ -77,7 +77,7 @@ Get the stylesheet specification(s) associated with the XML`Source`document via 
 
 | Parameters ||
 |-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `source` | [Source](../javax/xml/transform/Source.md)!:The XML source document. |
+| `source` | [Source](Source.md)!:The XML source document. |
 | `media` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The media attribute to be matched. May be null, in which case the preferred templates will be used (i.e. alternate = no). |
 | `title` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The value of the title attribute to match. May be null. |
 | --- | --- |
@@ -85,7 +85,7 @@ Get the stylesheet specification(s) associated with the XML`Source`document via 
 
 | Return ||
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------|
-| [Source](../javax/xml/transform/Source.md)! | A`Source``Object`suitable for passing to the`TransformerFactory`. |
+| [Source](Source.md)! | A`Source``Object`suitable for passing to the`TransformerFactory`. |
 
 | Exceptions ||
 |---------------------------------------------------------|--------------------------------------------------------------------------|
@@ -123,7 +123,7 @@ Get the error event handler for the TransformerFactory.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------|--------------------------------------------------------|
-| [ErrorListener](../javax/xml/transform/ErrorListener.md)! | The current error handler, which should never be null. |
+| [ErrorListener](ErrorListener.md)! | The current error handler, which should never be null. |
 
 ### getFeature
 
@@ -135,7 +135,7 @@ abstract fun getFeature(name: String!): Boolean
 
 Look up the value of a feature.
 
-Feature names are fully qualified [java.net.URI](../java/net/URI.md) s. Implementations may define their own features.`false`is returned if this`TransformerFactory`or the`Transformer`s or`Template`s it creates cannot support the feature. It is possible for an`TransformerFactory`to expose a feature value but be unable to change its state.
+Feature names are fully qualified [java.net.URI](../java.net/URI.md) s. Implementations may define their own features.`false`is returned if this`TransformerFactory`or the`Transformer`s or`Template`s it creates cannot support the feature. It is possible for an`TransformerFactory`to expose a feature value but be unable to change its state.
 
 | Parameters ||
 |--------|-------------------------------------------------------------------------------------------------|
@@ -161,7 +161,7 @@ Get the object that is used by default during the transformation to resolve URIs
 
 | Return ||
 |------------------------------------------------------------------------------------------------|---------------------------------------------------|
-| [URIResolver](../javax/xml/transform/URIResolver.md)! | The URIResolver that was set with setURIResolver. |
+| [URIResolver](URIResolver.md)! | The URIResolver that was set with setURIResolver. |
 
 ### newInstance
 
@@ -206,11 +206,11 @@ Process the Source into a Templates object, which is a a compiled representation
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------|
-| `source` | [Source](../javax/xml/transform/Source.md)!:An object that holds a URL, input stream, etc. |
+| `source` | [Source](Source.md)!:An object that holds a URL, input stream, etc. |
 
 | Return ||
 |--------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| [Templates](../javax/xml/transform/Templates.md)! | A Templates object capable of being used for transformation purposes, never null. |
+| [Templates](Templates.md)! | A Templates object capable of being used for transformation purposes, never null. |
 
 | Exceptions ||
 |---------------------------------------------------------|-----------------------------------------------------------------------------------------|
@@ -228,7 +228,7 @@ Create a new`Transformer`that performs a copy of the`Source`to the`Result`. i.e.
 
 | Return ||
 |------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
-| [Transformer](../javax/xml/transform/Transformer.md)! | A Transformer object that may be used to perform a transformation in a single thread, never null. |
+| [Transformer](Transformer.md)! | A Transformer object that may be used to perform a transformation in a single thread, never null. |
 
 | Exceptions ||
 |---------------------------------------------------------|----------------------------------------------------------------|
@@ -246,11 +246,11 @@ Process the`Source`into a`Transformer``Object`. The`Source`is an XSLT document t
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `source` | [Source](../javax/xml/transform/Source.md)!:`Source `of XSLT document used to create`Transformer`. Examples of XML`Source`s include [StreamSource](../javax/xml/transform/stream/StreamSource.md), [SAXSource](../javax/xml/transform/sax/SAXSource.md) and [DOMSource](../javax/xml/transform/dom/DOMSource.md). |
+| `source` | [Source](Source.md)!:`Source `of XSLT document used to create`Transformer`. Examples of XML`Source`s include [StreamSource](../javax.xml.transform.stream/StreamSource.md), [SAXSource](../javax.xml.transform.sax/SAXSource.md) and [DOMSource](../javax.xml.transform.dom/DOMSource.md). |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-| [Transformer](../javax/xml/transform/Transformer.md)! | A`Transformer`object that may be used to perform a transformation in a single`Thread`, never`null`. |
+| [Transformer](Transformer.md)! | A`Transformer`object that may be used to perform a transformation in a single`Thread`, never`null`. |
 
 | Exceptions ||
 |---------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
@@ -288,7 +288,7 @@ Set the error event listener for the TransformerFactory, which is used for the p
 
 | Parameters ||
 |------------|----------------------------------------------------------------------------------------------------------------------------|
-| `listener` | [ErrorListener](../javax/xml/transform/ErrorListener.md)!:The new error listener. |
+| `listener` | [ErrorListener](ErrorListener.md)!:The new error listener. |
 
 ### setFeature
 
@@ -303,11 +303,11 @@ abstract fun setFeature(
 
 Set a feature for this`TransformerFactory`and`Transformer`s or`Template`s created by this factory.
 
-Feature names are fully qualified [java.net.URI](../java/net/URI.md) s. Implementations may define their own features. An [TransformerConfigurationException](../javax/xml/transform/TransformerConfigurationException.md) is thrown if this`TransformerFactory`or the`Transformer`s or`Template`s it creates cannot support the feature. It is possible for an`TransformerFactory`to expose a feature value but be unable to change its state.
+Feature names are fully qualified [java.net.URI](../java.net/URI.md) s. Implementations may define their own features. An [TransformerConfigurationException](TransformerConfigurationException.md) is thrown if this`TransformerFactory`or the`Transformer`s or`Template`s it creates cannot support the feature. It is possible for an`TransformerFactory`to expose a feature value but be unable to change its state.
 
-All implementations are required to support the [javax.xml.XMLConstants#FEATURE_SECURE_PROCESSING](../javax/xml/XMLConstants.md) feature. When the feature is:
+All implementations are required to support the [javax.xml.XMLConstants#FEATURE_SECURE_PROCESSING](../javax.xml/XMLConstants.md) feature. When the feature is:
 
-- `true`: the implementation will limit XML processing to conform to implementation limits and behave in a secure fashion as defined by the implementation. Examples include resolving user defined style sheets and functions. If XML processing is limited for security reasons, it will be reported via a call to the registered [ErrorListener.fatalError(TransformerException exception)](../javax/xml/transform/ErrorListener.md)). See [setErrorListener(javax.xml.transform.ErrorListener)](../javax/xml/transform/TransformerFactory.md)).
+- `true`: the implementation will limit XML processing to conform to implementation limits and behave in a secure fashion as defined by the implementation. Examples include resolving user defined style sheets and functions. If XML processing is limited for security reasons, it will be reported via a call to the registered [ErrorListener.fatalError(TransformerException exception)](ErrorListener.md)). See [setErrorListener(javax.xml.transform.ErrorListener)](TransformerFactory.md)).
 - `false`: the implementation will processing XML according to the XML specifications without regard to possible implementation limits.
 
 | Parameters ||
@@ -332,4 +332,4 @@ Set an object that is used by default during the transformation to resolve URIs 
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `resolver` | [URIResolver](../javax/xml/transform/URIResolver.md)!:An object that implements the URIResolver interface, or null. |
+| `resolver` | [URIResolver](URIResolver.md)!:An object that implements the URIResolver interface, or null. |

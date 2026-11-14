@@ -10,13 +10,13 @@ class Flow
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.util.concurrent.Flow](../java/util/concurrent/Flow.md) |
+| ↳ | [java.util.concurrent.Flow](Flow.md) |
 
 Interrelated interfaces and static methods for establishing flow-controlled components in which [Publishers](../java/util/concurrent/Flow.Publisher.md) produce items consumed by one or more [Subscribers](../java/util/concurrent/Flow.Subscriber.md), each managed by a [Subscription](../java/util/concurrent/Flow.Subscription.md).
 
 These interfaces correspond to the [reactive-streams](http://www.reactive-streams.org/) specification. They apply in both concurrent and distributed asynchronous settings: All (seven) methods are defined in`void`"one-way" message style. Communication relies on a simple form of flow control (method [Subscription.request](../java/util/concurrent/Flow.Subscription.md))) that can be used to avoid resource management problems that may otherwise occur in "push" based systems.
 
-**Examples.** A [Publisher](../java/util/concurrent/Flow.Publisher.md) usually defines its own [Subscription](../java/util/concurrent/Flow.Subscription.md) implementation; constructing one in method`subscribe`and issuing it to the calling [Subscriber](../java/util/concurrent/Flow.Subscriber.md). It publishes items to the subscriber asynchronously, normally using an [Executor](../java/util/concurrent/Executor.md). For example, here is a very simple publisher that only issues (when requested) a single`TRUE`item to a single subscriber. Because the subscriber receives only a single item, this class does not use buffering and ordering control required in most implementations. 
+**Examples.** A [Publisher](../java/util/concurrent/Flow.Publisher.md) usually defines its own [Subscription](../java/util/concurrent/Flow.Subscription.md) implementation; constructing one in method`subscribe`and issuing it to the calling [Subscriber](../java/util/concurrent/Flow.Subscriber.md). It publishes items to the subscriber asynchronously, normally using an [Executor](Executor.md). For example, here is a very simple publisher that only issues (when requested) a single`TRUE`item to a single subscriber. Because the subscriber receives only a single item, this class does not use buffering and ordering control required in most implementations. 
 
 ```kotlin
 <code>class OneShotPublisher implements Publisher&lt;Boolean&gt; {
@@ -89,7 +89,7 @@ A [Subscriber](../java/util/concurrent/Flow.Subscriber.md) arranges that items b
   }</code>
 ```
 
-The default value of [defaultBufferSize](../java/util/concurrent/Flow.md))may provide a useful starting point for choosing request sizes and capacities in Flow components based on expected rates, resources, and usages. Or, when flow control is never needed, a subscriber may initially request an effectively unbounded number of items, as in: 
+The default value of [defaultBufferSize](Flow.md))may provide a useful starting point for choosing request sizes and capacities in Flow components based on expected rates, resources, and usages. Or, when flow control is never needed, a subscriber may initially request an effectively unbounded number of items, as in: 
 
 ```kotlin
 <code>class UnboundedSubscriber&lt;T&gt; implements Subscriber&lt;T&gt; {
@@ -115,7 +115,7 @@ The default value of [defaultBufferSize](../java/util/concurrent/Flow.md))may pr
 
 | Public methods ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [defaultBufferSize](../java/util/concurrent/Flow.md))`()` Returns a default value for Publisher or Subscriber buffering, that may be used in the absence of other constraints. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [defaultBufferSize](Flow.md))`()` Returns a default value for Publisher or Subscriber buffering, that may be used in the absence of other constraints. |
 
 ## Public methods
 

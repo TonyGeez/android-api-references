@@ -3,7 +3,7 @@ Also in [S Extensions 7](https://developer.android.com/sdkExtensions)
 
 # DnsOptions
 
-Kotlin | [Java](../android/net/http/DnsOptions.md)
+Kotlin | [Java](DnsOptions.md)
 | --- | --- |
 
 ```
@@ -12,7 +12,7 @@ class DnsOptions
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.http.DnsOptions](../android/net/http/DnsOptions.md) |
+| ↳ | [android.net.http.DnsOptions](DnsOptions.md) |
 
 A class configuring the host resolution functionality. Note that while we refer to `DNS` as the most common mechanism being used for brevity, settings apply to other means of resolving hostnames like hosts file resolution.
 
@@ -44,7 +44,7 @@ Most configuration in this class is only applicable if the built-in DNS resolver
 | Public methods ||
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/http/DnsOptions#getPersistHostCache()()` See `https://developer.android.com/reference/kotlin/android/net/http/DnsOptions.Builder#setPersistHostCache(kotlin.Int)` |
-| [Duration](../java/time/Duration.md)? | `https://developer.android.com/reference/kotlin/android/net/http/DnsOptions#getPersistHostCachePeriod()()` See `https://developer.android.com/reference/kotlin/android/net/http/DnsOptions.Builder#setPersistHostCachePeriod(java.time.Duration)` |
+| [Duration](../java.time/Duration.md)? | `https://developer.android.com/reference/kotlin/android/net/http/DnsOptions#getPersistHostCachePeriod()()` See `https://developer.android.com/reference/kotlin/android/net/http/DnsOptions.Builder#setPersistHostCachePeriod(java.time.Duration)` |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/http/DnsOptions#getPreestablishConnectionsToStaleDnsResults()()` See `https://developer.android.com/reference/kotlin/android/net/http/DnsOptions.Builder#setPreestablishConnectionsToStaleDnsResults(kotlin.Int)` |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/http/DnsOptions#getStaleDns()()` See `https://developer.android.com/reference/kotlin/android/net/http/DnsOptions.Builder#setStaleDns(kotlin.Int)` |

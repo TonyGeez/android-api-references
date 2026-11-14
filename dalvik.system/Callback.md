@@ -30,7 +30,7 @@ open fun onZipEntryAccess(path: String): Unit
 
 Called to check the validity of the path of a zip entry. The default implementation accepts all paths without raising any exceptions.
 
-This method will be called by [java.util.zip.ZipInputStream#getNextEntry](../java/util/zip/ZipInputStream.md))or [java.util.zip.ZipFile#ZipFile(String)](../java/util/zip/ZipFile.md)).
+This method will be called by [java.util.zip.ZipInputStream#getNextEntry](../java.util.zip/ZipInputStream.md))or [java.util.zip.ZipFile#ZipFile(String)](../java.util.zip/ZipFile.md)).
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------------------------------------------|

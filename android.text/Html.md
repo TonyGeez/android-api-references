@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # Html
 
-Kotlin| [Java](../android/text/Html.md) 
+Kotlin| [Java](Html.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class Html
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.text.Html](../android/text/Html.md) |
+| ↳ | [android.text.Html](Html.md) |
 
 This class processes HTML strings into displayable styled text. Not all HTML tags are supported.
 
@@ -26,32 +26,32 @@ This class processes HTML strings into displayable styled text. Not all HTML tag
 
 | Constants ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FROM_HTML_MODE_COMPACT](../android/text/Html.md) Flags for [fromHtml(java.lang.String,int,android.text.Html.ImageGetter,android.text.Html.TagHandler)](../android/text/Html.md)): Separate block-level elements with line breaks (single newline character) in between. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FROM_HTML_MODE_LEGACY](../android/text/Html.md) Flags for [fromHtml(java.lang.String,int,android.text.Html.ImageGetter,android.text.Html.TagHandler)](../android/text/Html.md)): Separate block-level elements with blank lines (two newline characters) in between. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FROM_HTML_OPTION_USE_CSS_COLORS](../android/text/Html.md) Flag indicating that CSS color values should be used instead of those defined in [Color](../android/graphics/Color.md). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FROM_HTML_MODE_COMPACT](Html.md) Flags for [fromHtml(java.lang.String,int,android.text.Html.ImageGetter,android.text.Html.TagHandler)](Html.md)): Separate block-level elements with line breaks (single newline character) in between. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FROM_HTML_MODE_LEGACY](Html.md) Flags for [fromHtml(java.lang.String,int,android.text.Html.ImageGetter,android.text.Html.TagHandler)](Html.md)): Separate block-level elements with blank lines (two newline characters) in between. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FROM_HTML_OPTION_USE_CSS_COLORS](Html.md) Flag indicating that CSS color values should be used instead of those defined in [Color](../android.graphics/Color.md). |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FROM_HTML_SEPARATOR_LINE_BREAK_BLOCKQUOTE](../android/text/Html.md) Flag indicating that texts inside \<blockquote\> elements will be separated from other texts with one newline character by default. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FROM_HTML_SEPARATOR_LINE_BREAK_DIV](../android/text/Html.md) Flag indicating that texts inside \<div\> elements will be separated from other texts with one newline character by default. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FROM_HTML_SEPARATOR_LINE_BREAK_HEADING](../android/text/Html.md) Flag indicating that texts inside \<h1\>\~\<h6\> elements will be separated from other texts with one newline character by default. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FROM_HTML_SEPARATOR_LINE_BREAK_BLOCKQUOTE](Html.md) Flag indicating that texts inside \<blockquote\> elements will be separated from other texts with one newline character by default. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FROM_HTML_SEPARATOR_LINE_BREAK_DIV](Html.md) Flag indicating that texts inside \<div\> elements will be separated from other texts with one newline character by default. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FROM_HTML_SEPARATOR_LINE_BREAK_HEADING](Html.md) Flag indicating that texts inside \<h1\>\~\<h6\> elements will be separated from other texts with one newline character by default. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FROM_HTML_SEPARATOR_LINE_BREAK_LIST](../android/text/Html.md) Flag indicating that texts inside \<ul\> elements will be separated from other texts with one newline character by default. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FROM_HTML_SEPARATOR_LINE_BREAK_LIST_ITEM](../android/text/Html.md) Flag indicating that texts inside \<li\> elements will be separated from other texts with one newline character by default. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FROM_HTML_SEPARATOR_LINE_BREAK_PARAGRAPH](../android/text/Html.md) Flag indicating that texts inside \<p\> elements will be separated from other texts with one newline character by default. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FROM_HTML_SEPARATOR_LINE_BREAK_LIST](Html.md) Flag indicating that texts inside \<ul\> elements will be separated from other texts with one newline character by default. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FROM_HTML_SEPARATOR_LINE_BREAK_LIST_ITEM](Html.md) Flag indicating that texts inside \<li\> elements will be separated from other texts with one newline character by default. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FROM_HTML_SEPARATOR_LINE_BREAK_PARAGRAPH](Html.md) Flag indicating that texts inside \<p\> elements will be separated from other texts with one newline character by default. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TO_HTML_PARAGRAPH_LINES_CONSECUTIVE](../android/text/Html.md) Option for [toHtml(android.text.Spanned,int)](../android/text/Html.md)): Wrap consecutive lines of text delimited by '\\n' inside \<p\> elements. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TO_HTML_PARAGRAPH_LINES_INDIVIDUAL](../android/text/Html.md) Option for [toHtml(android.text.Spanned,int)](../android/text/Html.md)): Wrap each line of text delimited by '\\n' inside a \<p\> or a \<li\> element. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TO_HTML_PARAGRAPH_LINES_CONSECUTIVE](Html.md) Option for [toHtml(android.text.Spanned,int)](Html.md)): Wrap consecutive lines of text delimited by '\\n' inside \<p\> elements. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TO_HTML_PARAGRAPH_LINES_INDIVIDUAL](Html.md) Option for [toHtml(android.text.Spanned,int)](Html.md)): Wrap each line of text delimited by '\\n' inside a \<p\> or a \<li\> element. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [escapeHtml](../android/text/Html.md))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Returns an HTML escaped representation of the given plain text. |
-| openstatic [Spanned](../android/text/Spanned.md)! | [fromHtml](../android/text/Html.md))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns displayable styled text from the provided HTML string with the legacy flags [FROM_HTML_MODE_LEGACY](../android/text/Html.md). |
-| openstatic [Spanned](../android/text/Spanned.md)! | [fromHtml](../android/text/Html.md))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `imageGetter:` ` [Html.ImageGetter](../android/text/Html.ImageGetter.md)!`, `tagHandler:` ` [Html.TagHandler](../android/text/Html.TagHandler.md)!`)` Returns displayable styled text from the provided HTML string with the legacy flags [FROM_HTML_MODE_LEGACY](../android/text/Html.md). |
+| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [escapeHtml](Html.md))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Returns an HTML escaped representation of the given plain text. |
+| openstatic [Spanned](Spanned.md)! | [fromHtml](Html.md))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns displayable styled text from the provided HTML string with the legacy flags [FROM_HTML_MODE_LEGACY](Html.md). |
+| openstatic [Spanned](Spanned.md)! | [fromHtml](Html.md))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `imageGetter:` ` [Html.ImageGetter](../android/text/Html.ImageGetter.md)!`, `tagHandler:` ` [Html.TagHandler](../android/text/Html.TagHandler.md)!`)` Returns displayable styled text from the provided HTML string with the legacy flags [FROM_HTML_MODE_LEGACY](Html.md). |
 | --- | --- |
-| openstatic [Spanned](../android/text/Spanned.md)! | [fromHtml](../android/text/Html.md))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns displayable styled text from the provided HTML string. |
-| openstatic [Spanned](../android/text/Spanned.md)! | [fromHtml](../android/text/Html.md))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `imageGetter:` ` [Html.ImageGetter](../android/text/Html.ImageGetter.md)!`, `tagHandler:` ` [Html.TagHandler](../android/text/Html.TagHandler.md)!`)` Returns displayable styled text from the provided HTML string. |
-| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toHtml](../android/text/Html.md))`(`text:` ` [Spanned](../android/text/Spanned.md)!`)` <br /> |
+| openstatic [Spanned](Spanned.md)! | [fromHtml](Html.md))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns displayable styled text from the provided HTML string. |
+| openstatic [Spanned](Spanned.md)! | [fromHtml](Html.md))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `imageGetter:` ` [Html.ImageGetter](../android/text/Html.ImageGetter.md)!`, `tagHandler:` ` [Html.TagHandler](../android/text/Html.TagHandler.md)!`)` Returns displayable styled text from the provided HTML string. |
+| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toHtml](Html.md))`(`text:` ` [Spanned](Spanned.md)!`)` <br /> |
 | --- | --- |
-| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toHtml](../android/text/Html.md))`(`text:` ` [Spanned](../android/text/Spanned.md)!`, `option:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns an HTML representation of the provided Spanned text. |
+| openstatic [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [toHtml](Html.md))`(`text:` ` [Spanned](Spanned.md)!`, `option:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns an HTML representation of the provided Spanned text. |
 
 ## Constants
 
@@ -63,7 +63,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val FROM_HTML_MODE_COMPACT: Int
 ```
 
-Flags for [fromHtml(java.lang.String,int,android.text.Html.ImageGetter,android.text.Html.TagHandler)](../android/text/Html.md)): Separate block-level elements with line breaks (single newline character) in between. This inverts the [Spanned](../android/text/Spanned.md) to HTML string conversion done with the option [TO_HTML_PARAGRAPH_LINES_INDIVIDUAL](../android/text/Html.md). 
+Flags for [fromHtml(java.lang.String,int,android.text.Html.ImageGetter,android.text.Html.TagHandler)](Html.md)): Separate block-level elements with line breaks (single newline character) in between. This inverts the [Spanned](Spanned.md) to HTML string conversion done with the option [TO_HTML_PARAGRAPH_LINES_INDIVIDUAL](Html.md). 
 
  Value: 63
 
@@ -75,7 +75,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val FROM_HTML_MODE_LEGACY: Int
 ```
 
-Flags for [fromHtml(java.lang.String,int,android.text.Html.ImageGetter,android.text.Html.TagHandler)](../android/text/Html.md)): Separate block-level elements with blank lines (two newline characters) in between. This is the legacy behavior prior to N. 
+Flags for [fromHtml(java.lang.String,int,android.text.Html.ImageGetter,android.text.Html.TagHandler)](Html.md)): Separate block-level elements with blank lines (two newline characters) in between. This is the legacy behavior prior to N. 
 
  Value: 0
 
@@ -87,7 +87,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val FROM_HTML_OPTION_USE_CSS_COLORS: Int
 ```
 
-Flag indicating that CSS color values should be used instead of those defined in [Color](../android/graphics/Color.md). 
+Flag indicating that CSS color values should be used instead of those defined in [Color](../android.graphics/Color.md). 
 
  Value: 256
 
@@ -171,7 +171,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val TO_HTML_PARAGRAPH_LINES_CONSECUTIVE: Int
 ```
 
-Option for [toHtml(android.text.Spanned,int)](../android/text/Html.md)): Wrap consecutive lines of text delimited by '\\n' inside \<p\> elements. [BulletSpan](../android/text/style/BulletSpan.md) s are ignored. 
+Option for [toHtml(android.text.Spanned,int)](Html.md)): Wrap consecutive lines of text delimited by '\\n' inside \<p\> elements. [BulletSpan](../android.text.style/BulletSpan.md) s are ignored. 
 
  Value: 0
 
@@ -183,7 +183,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val TO_HTML_PARAGRAPH_LINES_INDIVIDUAL: Int
 ```
 
-Option for [toHtml(android.text.Spanned,int)](../android/text/Html.md)): Wrap each line of text delimited by '\\n' inside a \<p\> or a \<li\> element. This allows [ParagraphStyle](../android/text/style/ParagraphStyle.md) s attached to be encoded as CSS styles within the corresponding \<p\> or \<li\> element. 
+Option for [toHtml(android.text.Spanned,int)](Html.md)): Wrap each line of text delimited by '\\n' inside a \<p\> or a \<li\> element. This allows [ParagraphStyle](../android.text.style/ParagraphStyle.md) s attached to be encoded as CSS styles within the corresponding \<p\> or \<li\> element. 
 
  Value: 1
 
@@ -208,9 +208,9 @@ Deprecated in [API level 24](https://developer.android.com/guide/topics/manifest
 open static fun fromHtml(source: String!): Spanned!
 ```
 
-**Deprecated:** *use [fromHtml(java.lang.String,int)](../android/text/Html.md))instead.*
+**Deprecated:** *use [fromHtml(java.lang.String,int)](Html.md))instead.*
 
-Returns displayable styled text from the provided HTML string with the legacy flags [FROM_HTML_MODE_LEGACY](../android/text/Html.md). 
+Returns displayable styled text from the provided HTML string with the legacy flags [FROM_HTML_MODE_LEGACY](Html.md). 
 
 ### fromHtml
 
@@ -225,9 +225,9 @@ open static fun fromHtml(
 ): Spanned!
 ```
 
-**Deprecated:** *use [fromHtml(java.lang.String,int,android.text.Html.ImageGetter,android.text.Html.TagHandler)](../android/text/Html.md))instead.*
+**Deprecated:** *use [fromHtml(java.lang.String,int,android.text.Html.ImageGetter,android.text.Html.TagHandler)](Html.md))instead.*
 
-Returns displayable styled text from the provided HTML string with the legacy flags [FROM_HTML_MODE_LEGACY](../android/text/Html.md). 
+Returns displayable styled text from the provided HTML string with the legacy flags [FROM_HTML_MODE_LEGACY](Html.md). 
 
 ### fromHtml
 
@@ -270,7 +270,7 @@ Deprecated in [API level 24](https://developer.android.com/guide/topics/manifest
 open static fun toHtml(text: Spanned!): String!
 ```
 
-**Deprecated:** *use [toHtml(android.text.Spanned,int)](../android/text/Html.md))instead.* 
+**Deprecated:** *use [toHtml(android.text.Spanned,int)](Html.md))instead.* 
 
 ### toHtml
 
@@ -287,8 +287,8 @@ Returns an HTML representation of the provided Spanned text. A best effort is ma
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `text` | [Spanned](../android/text/Spanned.md)!:input text to convert |
-| `option` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):one of [TO_HTML_PARAGRAPH_LINES_CONSECUTIVE](../android/text/Html.md) or [TO_HTML_PARAGRAPH_LINES_INDIVIDUAL](../android/text/Html.md) |
+| `text` | [Spanned](Spanned.md)!:input text to convert |
+| `option` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):one of [TO_HTML_PARAGRAPH_LINES_CONSECUTIVE](Html.md) or [TO_HTML_PARAGRAPH_LINES_INDIVIDUAL](Html.md) |
 
 | Return ||
 |-----------------------------------------------------------------------------------|-------------------------------------------|

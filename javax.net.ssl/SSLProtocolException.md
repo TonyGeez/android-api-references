@@ -11,11 +11,11 @@ open class SSLProtocolException : SSLException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
-| | | ↳ | [java.io.IOException](../java/io/IOException.md) |||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) ||||
+| | | ↳ | [java.io.IOException](../java.io/IOException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [javax.net.ssl.SSLException](../javax/net/ssl/SSLException.md) ||
-| | | | | ↳ | [javax.net.ssl.SSLProtocolException](../javax/net/ssl/SSLProtocolException.md) |
+| | | | ↳ | [javax.net.ssl.SSLException](SSLException.md) ||
+| | | | | ↳ | [javax.net.ssl.SSLProtocolException](SSLProtocolException.md) |
 
 Reports an error in the operation of the SSL protocol. Normally this indicates a flaw in one of the protocol implementations.
 
@@ -23,7 +23,7 @@ Reports an error in the operation of the SSL protocol. Normally this indicates a
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SSLProtocolException](../javax/net/ssl/SSLProtocolException.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an exception reporting an SSL protocol error detected by an SSL subsystem. |
+| [SSLProtocolException](SSLProtocolException.md))`(`reason:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an exception reporting an SSL protocol error detected by an SSL subsystem. |
 
 ## Public constructors
 

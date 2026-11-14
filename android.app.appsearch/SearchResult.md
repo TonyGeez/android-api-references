@@ -8,7 +8,7 @@ class SearchResult : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.appsearch.SearchResult](../android/app/appsearch/SearchResult.md) |
+| ↳ | [android.app.appsearch.SearchResult](SearchResult.md) |
 
 This class represents one of the results obtained from an AppSearch query.
 
@@ -38,10 +38,10 @@ This allows clients to obtain:
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchResult#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchResult#getDatabaseName()()` Contains the database name that stored the `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument`. |
-| [GenericDocument](../android/app/appsearch/GenericDocument.md) | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchResult#getGenericDocument()()` Contains the matching `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument`. |
+| [GenericDocument](GenericDocument.md) | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchResult#getGenericDocument()()` Contains the matching `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument`. |
 | --- | --- |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchResult#getInformationalRankingSignals()()` Returns the informational ranking signals of the `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument`, according to the expressions added in android. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SearchResult](../android/app/appsearch/SearchResult.md)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchResult#getJoinedResults()()` Gets a list of `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchResult#` joined from the join operation. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SearchResult](SearchResult.md)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchResult#getJoinedResults()()` Gets a list of `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchResult#` joined from the join operation. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [SearchResult.MatchInfo](../android/app/appsearch/SearchResult.MatchInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchResult#getMatchInfos()()` Returns a list of `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchResult.MatchInfo`s providing information about how the document in `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchResult#getGenericDocument()` matched the query. |
 | --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchResult#getPackageName()()` Contains the package name of the app that stored the `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument`. |
@@ -52,7 +52,7 @@ This allows clients to obtain:
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [SearchResult](../android/app/appsearch/SearchResult.md)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchResult#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [SearchResult](SearchResult.md)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/SearchResult#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public methods
 
@@ -219,7 +219,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

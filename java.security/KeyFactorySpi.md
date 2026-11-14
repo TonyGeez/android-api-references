@@ -10,7 +10,7 @@ abstract class KeyFactorySpi
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.KeyFactorySpi](../java/security/KeyFactorySpi.md) |
+| ↳ | [java.security.KeyFactorySpi](KeyFactorySpi.md) |
 
 This class defines the *Service Provider Interface* (**SPI** ) for the `KeyFactory` class. All the abstract methods in this class must be implemented by each cryptographic service provider who wishes to supply the implementation of a key factory for a particular algorithm.
 
@@ -26,15 +26,15 @@ A provider should document all the key specifications supported by its key facto
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------|---|
-| [KeyFactorySpi](../java/security/KeyFactorySpi.md))`()` <br /> |
+| [KeyFactorySpi](KeyFactorySpi.md))`()` <br /> |
 
 | Protected methods ||
 |-------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [PrivateKey](../java/security/PrivateKey.md)! | [engineGeneratePrivate](../java/security/KeyFactorySpi.md))`(`keySpec:` ` [KeySpec](../java/security/spec/KeySpec.md)!`)` Generates a private key object from the provided key specification (key material). |
-| abstract [PublicKey](../java/security/PublicKey.md)! | [engineGeneratePublic](../java/security/KeyFactorySpi.md))`(`keySpec:` ` [KeySpec](../java/security/spec/KeySpec.md)!`)` Generates a public key object from the provided key specification (key material). |
-| abstract T | [engineGetKeySpec](../java/security/KeyFactorySpi.md))`(`key:` ` [Key](../java/security/Key.md)!`, `keySpec:` ` [Class](../java/lang/Class.md)<T>!`)` Returns a specification (key material) of the given key object. |
+| abstract [PrivateKey](PrivateKey.md)! | [engineGeneratePrivate](KeyFactorySpi.md))`(`keySpec:` ` [KeySpec](../java.security.spec/KeySpec.md)!`)` Generates a private key object from the provided key specification (key material). |
+| abstract [PublicKey](PublicKey.md)! | [engineGeneratePublic](KeyFactorySpi.md))`(`keySpec:` ` [KeySpec](../java.security.spec/KeySpec.md)!`)` Generates a public key object from the provided key specification (key material). |
+| abstract T | [engineGetKeySpec](KeyFactorySpi.md))`(`key:` ` [Key](Key.md)!`, `keySpec:` ` [Class](../java.lang/Class.md)<T>!`)` Returns a specification (key material) of the given key object. |
 | --- | --- |
-| abstract [Key](../java/security/Key.md)! | [engineTranslateKey](../java/security/KeyFactorySpi.md))`(`key:` ` [Key](../java/security/Key.md)!`)` Translates a key object, whose provider may be unknown or potentially untrusted, into a corresponding key object of this key factory. |
+| abstract [Key](Key.md)! | [engineTranslateKey](KeyFactorySpi.md))`(`key:` ` [Key](Key.md)!`)` Translates a key object, whose provider may be unknown or potentially untrusted, into a corresponding key object of this key factory. |
 
 ## Public constructors
 
@@ -60,11 +60,11 @@ Generates a private key object from the provided key specification (key material
 
 | Parameters ||
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| `keySpec` | [KeySpec](../java/security/spec/KeySpec.md)!: the specification (key material) of the private key. |
+| `keySpec` | [KeySpec](../java.security.spec/KeySpec.md)!: the specification (key material) of the private key. |
 
 | Return ||
 |----------------------------------------------------------------------------------------|------------------|
-| [PrivateKey](../java/security/PrivateKey.md)! | the private key. |
+| [PrivateKey](PrivateKey.md)! | the private key. |
 
 | Exceptions ||
 |----------------------------------------------|------------------------------------------------------------------------------------------------|
@@ -82,11 +82,11 @@ Generates a public key object from the provided key specification (key material)
 
 | Parameters ||
 |-----------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| `keySpec` | [KeySpec](../java/security/spec/KeySpec.md)!: the specification (key material) of the public key. |
+| `keySpec` | [KeySpec](../java.security.spec/KeySpec.md)!: the specification (key material) of the public key. |
 
 | Return ||
 |--------------------------------------------------------------------------------------|-----------------|
-| [PublicKey](../java/security/PublicKey.md)! | the public key. |
+| [PublicKey](PublicKey.md)! | the public key. |
 
 | Exceptions ||
 |----------------------------------------------|-----------------------------------------------------------------------------------------------|
@@ -108,8 +108,8 @@ Returns a specification (key material) of the given key object. `keySpec` identi
 | Parameters ||
 |-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `<T>` | the type of the key specification to be returned |
-| `key` | [Key](../java/security/Key.md)!: the key. |
-| `keySpec` | [Class](../java/lang/Class.md)\<T\>!: the specification class in which the key material should be returned. |
+| `key` | [Key](Key.md)!: the key. |
+| `keySpec` | [Class](../java.lang/Class.md)\<T\>!: the specification class in which the key material should be returned. |
 | --- | --- |
 
 | Return ||
@@ -132,11 +132,11 @@ Translates a key object, whose provider may be unknown or potentially untrusted,
 
 | Parameters ||
 |-------|---------------------------------------------------------------------------------------------------------------------------|
-| `key` | [Key](../java/security/Key.md)!: the key whose provider is unknown or untrusted. |
+| `key` | [Key](Key.md)!: the key whose provider is unknown or untrusted. |
 
 | Return ||
 |--------------------------------------------------------------------------|---------------------|
-| [Key](../java/security/Key.md)! | the translated key. |
+| [Key](Key.md)! | the translated key. |
 
 | Exceptions ||
 |-------------------------------------|-----------------------------------------------------------|

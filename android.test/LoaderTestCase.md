@@ -2,7 +2,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 
 # LoaderTestCase
 
-Kotlin | [Java](../android/test/LoaderTestCase.md)
+Kotlin | [Java](LoaderTestCase.md)
 | --- | --- |
 
 ```
@@ -11,8 +11,8 @@ open class LoaderTestCase : AndroidTestCase
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.test.AndroidTestCase](../android/test/AndroidTestCase.md) ||
-| | ↳ | [android.test.LoaderTestCase](../android/test/LoaderTestCase.md) |
+| ↳ | [android.test.AndroidTestCase](AndroidTestCase.md) ||
+| | ↳ | [android.test.LoaderTestCase](LoaderTestCase.md) |
 
 A convenience class for testing `https://developer.android.com/reference/kotlin/android/content/Loader.html#`s. This test case provides a simple way to synchronously get the result from a Loader making it easy to assert that the Loader returns the expected result.
 
@@ -56,7 +56,7 @@ Runs a Loader synchronously and returns the result of the load. The loader will 
 
 | Parameters ||
 |---|---|
-| `loader` | [Loader](../android/content/Loader.md)\<T\>!: The loader to run synchronously |
+| `loader` | [Loader](../android.content/Loader.md)\<T\>!: The loader to run synchronously |
 
 | Return ||
 |---|---|

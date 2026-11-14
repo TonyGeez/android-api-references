@@ -8,14 +8,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface ReadWriteLock
 ```
 
-| [java.util.concurrent.locks.ReadWriteLock](../java/util/concurrent/locks/ReadWriteLock.md) |
+| [java.util.concurrent.locks.ReadWriteLock](ReadWriteLock.md) |
 
-| Known Direct Subclasses [ReentrantReadWriteLock](../java/util/concurrent/locks/ReentrantReadWriteLock.md) |----------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [ReentrantReadWriteLock](../java/util/concurrent/locks/ReentrantReadWriteLock.md) | An implementation of [ReadWriteLock](../java/util/concurrent/locks/ReadWriteLock.md) supporting similar semantics to [ReentrantLock](../java/util/concurrent/locks/ReentrantLock.md). | |
+| Known Direct Subclasses [ReentrantReadWriteLock](ReentrantReadWriteLock.md) |----------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [ReentrantReadWriteLock](ReentrantReadWriteLock.md) | An implementation of [ReadWriteLock](ReadWriteLock.md) supporting similar semantics to [ReentrantLock](ReentrantLock.md). | |
 | --- | --- | --- | --- | --- | --- | --- |
 
-A`ReadWriteLock`maintains a pair of associated [locks](../java/util/concurrent/locks/Lock.md), one for read-only operations and one for writing. The [read lock](../java/util/concurrent/locks/ReadWriteLock.md))may be held simultaneously by multiple reader threads, so long as there are no writers. The [write lock](../java/util/concurrent/locks/ReadWriteLock.md))is exclusive.
+A`ReadWriteLock`maintains a pair of associated [locks](Lock.md), one for read-only operations and one for writing. The [read lock](ReadWriteLock.md))may be held simultaneously by multiple reader threads, so long as there are no writers. The [write lock](ReadWriteLock.md))is exclusive.
 
-All`ReadWriteLock`implementations must guarantee that the memory synchronization effects of`writeLock`operations (as specified in the [Lock](../java/util/concurrent/locks/Lock.md) interface) also hold with respect to the associated`readLock`. That is, a thread successfully acquiring the read lock will see all updates made upon previous release of the write lock.
+All`ReadWriteLock`implementations must guarantee that the memory synchronization effects of`writeLock`operations (as specified in the [Lock](Lock.md) interface) also hold with respect to the associated`readLock`. That is, a thread successfully acquiring the read lock will see all updates made upon previous release of the write lock.
 
 A read-write lock allows for a greater level of concurrency in accessing shared data than that permitted by a mutual exclusion lock. It exploits the fact that while only a single thread at a time (a*writer* thread) can modify the shared data, in many cases any number of threads can concurrently read the data (hence*reader*threads). In theory, the increase in concurrency permitted by the use of a read-write lock will lead to performance improvements over the use of a mutual exclusion lock. In practice this increase in concurrency will only be fully realized on a multi-processor, and then only if the access patterns for the shared data are suitable.
 
@@ -34,8 +34,8 @@ You should consider all of these things when evaluating the suitability of a giv
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Lock](../java/util/concurrent/locks/Lock.md)! | [readLock](../java/util/concurrent/locks/ReadWriteLock.md))`()` Returns the lock used for reading. |
-| abstract [Lock](../java/util/concurrent/locks/Lock.md)! | [writeLock](../java/util/concurrent/locks/ReadWriteLock.md))`()` Returns the lock used for writing. |
+| abstract [Lock](Lock.md)! | [readLock](ReadWriteLock.md))`()` Returns the lock used for reading. |
+| abstract [Lock](Lock.md)! | [writeLock](ReadWriteLock.md))`()` Returns the lock used for writing. |
 
 ## Public methods
 
@@ -51,7 +51,7 @@ Returns the lock used for reading.
 
 | Return ||
 |-----------------------------------------------------------------------------------------|---------------------------|
-| [Lock](../java/util/concurrent/locks/Lock.md)! | the lock used for reading |
+| [Lock](Lock.md)! | the lock used for reading |
 
 ### writeLock
 
@@ -65,4 +65,4 @@ Returns the lock used for writing.
 
 | Return ||
 |-----------------------------------------------------------------------------------------|---------------------------|
-| [Lock](../java/util/concurrent/locks/Lock.md)! | the lock used for writing |
+| [Lock](Lock.md)! | the lock used for writing |

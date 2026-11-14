@@ -8,7 +8,7 @@ class CompletionInfo : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.inputmethod.CompletionInfo](../android/view/inputmethod/CompletionInfo.md) |
+| ↳ | [android.view.inputmethod.CompletionInfo](CompletionInfo.md) |
 
 Information about a single text completion that an editor has reported to an input method.
 
@@ -51,7 +51,7 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [CompletionInfo](../android/view/inputmethod/CompletionInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/view/inputmethod/CompletionInfo#CREATOR:android.os.Parcelable.Creator` Used to make this class parcelable. |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [CompletionInfo](CompletionInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/view/inputmethod/CompletionInfo#CREATOR:android.os.Parcelable.Creator` Used to make this class parcelable. |
 
 ## Public constructors
 
@@ -182,7 +182,7 @@ Used to package this object into a `https://developer.android.com/reference/kotl
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): The `https://developer.android.com/reference/kotlin/android/os/Parcel.html#` to be written. |
+| `dest` | [Parcel](../android.os/Parcel.md): The `https://developer.android.com/reference/kotlin/android/os/Parcel.html#` to be written. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The flags used for parceling. |
 
 ## Properties

@@ -2,7 +2,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # MatrixCursor
 
-Kotlin | [Java](../android/database/MatrixCursor.md)
+Kotlin | [Java](MatrixCursor.md)
 | --- | --- |
 
 ```
@@ -11,8 +11,8 @@ open class MatrixCursor : AbstractCursor
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.database.AbstractCursor](../android/database/AbstractCursor.md) ||
-| | ↳ | [android.database.MatrixCursor](../android/database/MatrixCursor.md) |
+| ↳ | [android.database.AbstractCursor](AbstractCursor.md) ||
+| | ↳ | [android.database.MatrixCursor](MatrixCursor.md) |
 
 A mutable cursor implementation backed by an array of `Object`s. Use `https://developer.android.com/reference/kotlin/android/database/MatrixCursor#newRow()` to add rows. Automatically expands internal capacity as needed.
 

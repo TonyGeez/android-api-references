@@ -4,16 +4,16 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 
 # MicrophoneDirection
 
-Kotlin| [Java](../android/media/MicrophoneDirection.md) 
+Kotlin| [Java](MicrophoneDirection.md) 
 | --- | --- |
 
 ```
 interface MicrophoneDirection
 ```
 
-| [android.media.MicrophoneDirection](../android/media/MicrophoneDirection.md) |
+| [android.media.MicrophoneDirection](MicrophoneDirection.md) |
 
-| Known Direct Subclasses [AudioRecord](../android/media/AudioRecord.md), [MediaRecorder](../android/media/MediaRecorder.md) |---------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------| | [AudioRecord](../android/media/AudioRecord.md) | The AudioRecord class manages the audio resources for Java applications to record audio from the audio input hardware of the platform. | | [MediaRecorder](../android/media/MediaRecorder.md) | Used to record audio and video. | |
+| Known Direct Subclasses [AudioRecord](AudioRecord.md), [MediaRecorder](MediaRecorder.md) |---------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------| | [AudioRecord](AudioRecord.md) | The AudioRecord class manages the audio resources for Java applications to record audio from the audio input hardware of the platform. | | [MediaRecorder](MediaRecorder.md) | Used to record audio and video. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Interface defining mechanism for controlling the directionality and field width of audio capture.
@@ -22,16 +22,16 @@ Interface defining mechanism for controlling the directionality and field width 
 
 | Constants ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIC_DIRECTION_AWAY_FROM_USER](../android/media/MicrophoneDirection.md) Optimize capture for audio coming from the side of the device pointing away from the user. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIC_DIRECTION_EXTERNAL](../android/media/MicrophoneDirection.md) Optimize capture for audio coming from an off-device microphone. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIC_DIRECTION_TOWARDS_USER](../android/media/MicrophoneDirection.md) Optimize capture for audio coming from the side of the device facing the user. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIC_DIRECTION_AWAY_FROM_USER](MicrophoneDirection.md) Optimize capture for audio coming from the side of the device pointing away from the user. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIC_DIRECTION_EXTERNAL](MicrophoneDirection.md) Optimize capture for audio coming from an off-device microphone. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIC_DIRECTION_TOWARDS_USER](MicrophoneDirection.md) Optimize capture for audio coming from the side of the device facing the user. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIC_DIRECTION_UNSPECIFIED](../android/media/MicrophoneDirection.md) Don't do any directionality processing of the activated microphone(s). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIC_DIRECTION_UNSPECIFIED](MicrophoneDirection.md) Don't do any directionality processing of the activated microphone(s). |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [setPreferredMicrophoneDirection](../android/media/MicrophoneDirection.md))`(`direction:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Specifies the logical microphone (for processing). |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [setPreferredMicrophoneFieldDimension](../android/media/MicrophoneDirection.md))`(`zoom:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Specifies the zoom factor (i.e. the field dimension) for the selected microphone (for processing). |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [setPreferredMicrophoneDirection](MicrophoneDirection.md))`(`direction:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Specifies the logical microphone (for processing). |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [setPreferredMicrophoneFieldDimension](MicrophoneDirection.md))`(`zoom:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Specifies the zoom factor (i.e. the field dimension) for the selected microphone (for processing). |
 
 ## Constants
 
@@ -97,7 +97,7 @@ Specifies the logical microphone (for processing). Applications can use this to 
 
 | Parameters ||
 |-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `direction` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Direction constant. Value is [android.media.MicrophoneDirection#MIC_DIRECTION_UNSPECIFIED](../android/media/MicrophoneDirection.md), [android.media.MicrophoneDirection#MIC_DIRECTION_TOWARDS_USER](../android/media/MicrophoneDirection.md), [android.media.MicrophoneDirection#MIC_DIRECTION_AWAY_FROM_USER](../android/media/MicrophoneDirection.md), or [android.media.MicrophoneDirection#MIC_DIRECTION_EXTERNAL](../android/media/MicrophoneDirection.md) |
+| `direction` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Direction constant. Value is [android.media.MicrophoneDirection#MIC_DIRECTION_UNSPECIFIED](MicrophoneDirection.md), [android.media.MicrophoneDirection#MIC_DIRECTION_TOWARDS_USER](MicrophoneDirection.md), [android.media.MicrophoneDirection#MIC_DIRECTION_AWAY_FROM_USER](MicrophoneDirection.md), or [android.media.MicrophoneDirection#MIC_DIRECTION_EXTERNAL](MicrophoneDirection.md) |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------|

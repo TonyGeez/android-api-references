@@ -8,11 +8,11 @@ abstract class CarrierMessagingService : Service
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](../android/content/Context.md) ||||
-| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) |||
-| | | ↳ | [android.app.Service](../android/app/Service.md) ||
+| ↳ | [android.content.Context](../android.content/Context.md) ||||
+| | ↳ | [android.content.ContextWrapper](../android.content/ContextWrapper.md) |||
+| | | ↳ | [android.app.Service](../android.app/Service.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.service.carrier.CarrierMessagingService](../android/service/carrier/CarrierMessagingService.md) |
+| | | | ↳ | [android.service.carrier.CarrierMessagingService](CarrierMessagingService.md) |
 
 A service that receives calls from the system when new SMS and MMS are sent or received.
 
@@ -1136,7 +1136,7 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 
 | Public methods ||
 |---|---|
-| open [IBinder](../android/os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Return the communication channel to the service. |
+| open [IBinder](../android.os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Return the communication channel to the service. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService#onDownloadMms(android.net.Uri,%20kotlin.Int,%20android.net.Uri,%20android.service.carrier.CarrierMessagingService.ResultCallback)(contentUri: https://developer.android.com/reference/kotlin/android/net/Uri.html#, subId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, location: https://developer.android.com/reference/kotlin/android/net/Uri.html#, callback: https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService.ResultCallback<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html!>)` Override this method to download MMSs received. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService#onFilterSms(android.service.carrier.MessagePdu,%20kotlin.String,%20kotlin.Int,%20kotlin.Int,%20android.service.carrier.CarrierMessagingService.ResultCallback)(pdu: https://developer.android.com/reference/kotlin/android/service/carrier/MessagePdu, format: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, destPort: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, subId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, callback: https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService.ResultCallback<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html!>)` Override this method to filter inbound SMS messages. |
 | --- | --- |
@@ -3697,7 +3697,7 @@ Return the communication channel to the service. May return null if clients can 
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md): This value cannot be `null`. |
+| `intent` | [Intent](../android.content/Intent.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -3720,9 +3720,9 @@ Override this method to download MMSs received.
 
 | Parameters ||
 |---|---|
-| `contentUri` | [Uri](../android/net/Uri.md): the content provider URI of the PDU to be downloaded. This value cannot be `null`. |
+| `contentUri` | [Uri](../android.net/Uri.md): the content provider URI of the PDU to be downloaded. This value cannot be `null`. |
 | `subId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): SMS subscription ID of the SIM |
-| `location` | [Uri](../android/net/Uri.md): the URI of the message to be downloaded. This value cannot be `null`. |
+| `location` | [Uri](../android.net/Uri.md): the URI of the message to be downloaded. This value cannot be `null`. |
 | --- | --- |
 | `callback` | [CarrierMessagingService.ResultCallback](../android/service/carrier/CarrierMessagingService.ResultCallback.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>: result callback. Call with a status code which is one of `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService#DOWNLOAD_STATUS_OK:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService#DOWNLOAD_STATUS_RETRY_ON_CARRIER_NETWORK:kotlin.Int`, or `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService#DOWNLOAD_STATUS_ERROR:kotlin.Int`. This value cannot be `null`. |
 
@@ -3747,7 +3747,7 @@ Override this method to filter inbound SMS messages.
 
 | Parameters ||
 |---|---|
-| `pdu` | [MessagePdu](../android/service/carrier/MessagePdu.md): the PDUs of the message. This value cannot be `null`. |
+| `pdu` | [MessagePdu](MessagePdu.md): the PDUs of the message. This value cannot be `null`. |
 | `format` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): the format of the PDUs, typically "3gpp" or "3gpp2". This value cannot be `null`. |
 | `destPort` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the destination port of a binary SMS, this will be -1 for text SMS |
 | --- | --- |
@@ -3774,7 +3774,7 @@ This method will be called once for every incoming text SMS. You can invoke the 
 
 | Parameters ||
 |---|---|
-| `pdu` | [MessagePdu](../android/service/carrier/MessagePdu.md): the PDUs of the message. This value cannot be `null`. |
+| `pdu` | [MessagePdu](MessagePdu.md): the PDUs of the message. This value cannot be `null`. |
 | `format` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): the format of the PDUs, typically "3gpp" or "3gpp2". This value cannot be `null`. |
 | `destPort` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the destination port of a binary SMS, this will be -1 for text SMS |
 | --- | --- |
@@ -3854,9 +3854,9 @@ Override this method to intercept MMSs sent from the device.
 
 | Parameters ||
 |---|---|
-| `pduUri` | [Uri](../android/net/Uri.md): the content provider URI of the PDU to send. This value cannot be `null`. |
+| `pduUri` | [Uri](../android.net/Uri.md): the content provider URI of the PDU to send. This value cannot be `null`. |
 | `subId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): SMS subscription ID of the SIM |
-| `location` | [Uri](../android/net/Uri.md)?: the optional URI to send this MMS PDU. If this is {code null}, the PDU should be sent to the default MMSC URL. |
+| `location` | [Uri](../android.net/Uri.md)?: the optional URI to send this MMS PDU. If this is {code null}, the PDU should be sent to the default MMSC URL. |
 | --- | --- |
 | `callback` | [CarrierMessagingService.ResultCallback](../android/service/carrier/CarrierMessagingService.ResultCallback.md)\< [CarrierMessagingService.SendMmsResult](../android/service/carrier/CarrierMessagingService.SendMmsResult.md)!\>: result callback. Call with a `https://developer.android.com/reference/kotlin/android/service/carrier/CarrierMessagingService.SendMmsResult`. This value cannot be `null`. |
 

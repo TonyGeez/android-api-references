@@ -10,7 +10,7 @@ open class GCMParameterSpec : AlgorithmParameterSpec
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.crypto.spec.GCMParameterSpec](../javax/crypto/spec/GCMParameterSpec.md) |
+| ↳ | [javax.crypto.spec.GCMParameterSpec](GCMParameterSpec.md) |
 
 Specifies the set of parameters required by a using the Galois/Counter Mode (GCM) mode.
 
@@ -29,13 +29,13 @@ The GCM specification states that`tLen`may only have the values {128, 120, 112, 
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [GCMParameterSpec](../javax/crypto/spec/GCMParameterSpec.md))`(`tLen:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `src:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Constructs a GCMParameterSpec using the specified authentication tag bit-length and IV buffer. |
-| [GCMParameterSpec](../javax/crypto/spec/GCMParameterSpec.md))`(`tLen:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `src:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a GCMParameterSpec object using the specified authentication tag bit-length and a subset of the specified buffer as the IV. |
+| [GCMParameterSpec](GCMParameterSpec.md))`(`tLen:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `src:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Constructs a GCMParameterSpec using the specified authentication tag bit-length and IV buffer. |
+| [GCMParameterSpec](GCMParameterSpec.md))`(`tLen:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `src:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a GCMParameterSpec object using the specified authentication tag bit-length and a subset of the specified buffer as the IV. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getIV](../javax/crypto/spec/GCMParameterSpec.md))`()` Returns the Initialization Vector (IV). |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTLen](../javax/crypto/spec/GCMParameterSpec.md))`()` Returns the authentication tag length. |
+| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getIV](GCMParameterSpec.md))`()` Returns the Initialization Vector (IV). |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTLen](GCMParameterSpec.md))`()` Returns the authentication tag length. |
 
 ## Public constructors
 

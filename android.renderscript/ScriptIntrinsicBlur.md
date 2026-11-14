@@ -5,7 +5,7 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 
 # ScriptIntrinsicBlur
 
-Kotlin| [Java](../android/renderscript/ScriptIntrinsicBlur.md) 
+Kotlin| [Java](ScriptIntrinsicBlur.md) 
 | --- | --- |
 
 ```
@@ -14,11 +14,11 @@ class ScriptIntrinsicBlur : ScriptIntrinsic
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.renderscript.BaseObj](../android/renderscript/BaseObj.md) ||||
-| | ↳ | [android.renderscript.Script](../android/renderscript/Script.md) |||
-| | | ↳ | [android.renderscript.ScriptIntrinsic](../android/renderscript/ScriptIntrinsic.md) ||
+| ↳ | [android.renderscript.BaseObj](BaseObj.md) ||||
+| | ↳ | [android.renderscript.Script](Script.md) |||
+| | | ↳ | [android.renderscript.ScriptIntrinsic](ScriptIntrinsic.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.renderscript.ScriptIntrinsicBlur](../android/renderscript/ScriptIntrinsicBlur.md) |
+| | | | ↳ | [android.renderscript.ScriptIntrinsicBlur](ScriptIntrinsicBlur.md) |
 
 | **This class was deprecated in API level 31.**
 |
@@ -30,15 +30,15 @@ Intrinsic Gausian blur filter. Applies a gaussian blur of the specified radius t
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [ScriptIntrinsicBlur](../android/renderscript/ScriptIntrinsicBlur.md)! | [create](../android/renderscript/ScriptIntrinsicBlur.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`, `e:` ` [Element](../android/renderscript/Element.md)!`)` Create an intrinsic for applying a blur to an allocation. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](../android/renderscript/ScriptIntrinsicBlur.md))`(`aout:` ` [Allocation](../android/renderscript/Allocation.md)!`)` Apply the filter to the input and save to the specified allocation. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](../android/renderscript/ScriptIntrinsicBlur.md))`(`aout:` ` [Allocation](../android/renderscript/Allocation.md)!`, `opt:` ` [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!`)` Apply the filter to the input and save to the specified allocation. |
+| static [ScriptIntrinsicBlur](ScriptIntrinsicBlur.md)! | [create](ScriptIntrinsicBlur.md))`(`rs:` ` [RenderScript](RenderScript.md)!`, `e:` ` [Element](Element.md)!`)` Create an intrinsic for applying a blur to an allocation. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](ScriptIntrinsicBlur.md))`(`aout:` ` [Allocation](Allocation.md)!`)` Apply the filter to the input and save to the specified allocation. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](ScriptIntrinsicBlur.md))`(`aout:` ` [Allocation](Allocation.md)!`, `opt:` ` [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!`)` Apply the filter to the input and save to the specified allocation. |
 | --- | --- |
-| [Script.FieldID](../android/renderscript/Script.FieldID.md)! | [getFieldID_Input](../android/renderscript/ScriptIntrinsicBlur.md))`()` Get a FieldID for the input field of this intrinsic. |
-| [Script.KernelID](../android/renderscript/Script.KernelID.md)! | [getKernelID](../android/renderscript/ScriptIntrinsicBlur.md))`()` Get a KernelID for this intrinsic kernel. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInput](../android/renderscript/ScriptIntrinsicBlur.md))`(`ain:` ` [Allocation](../android/renderscript/Allocation.md)!`)` Set the input of the blur. |
+| [Script.FieldID](../android/renderscript/Script.FieldID.md)! | [getFieldID_Input](ScriptIntrinsicBlur.md))`()` Get a FieldID for the input field of this intrinsic. |
+| [Script.KernelID](../android/renderscript/Script.KernelID.md)! | [getKernelID](ScriptIntrinsicBlur.md))`()` Get a KernelID for this intrinsic kernel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInput](ScriptIntrinsicBlur.md))`(`ain:` ` [Allocation](Allocation.md)!`)` Set the input of the blur. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRadius](../android/renderscript/ScriptIntrinsicBlur.md))`(`radius:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Set the radius of the Blur. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRadius](ScriptIntrinsicBlur.md))`(`radius:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Set the radius of the Blur. |
 
 ## Public methods
 
@@ -55,16 +55,16 @@ static fun create(
 
 **Deprecated:** *Deprecated in Java.*
 
-Create an intrinsic for applying a blur to an allocation. The default radius is 5.0. Supported elements types are [Element.U8](../android/renderscript/Element.md)), [Element.U8_4](../android/renderscript/Element.md)).
+Create an intrinsic for applying a blur to an allocation. The default radius is 5.0. Supported elements types are [Element.U8](Element.md)), [Element.U8_4](Element.md)).
 
 | Parameters ||
 |------|-----------------------------------------------------------------------------------------------------------------------------|
-| `rs` | [RenderScript](../android/renderscript/RenderScript.md)!:The RenderScript context |
-| `e` | [Element](../android/renderscript/Element.md)!:Element type for inputs and outputs |
+| `rs` | [RenderScript](RenderScript.md)!:The RenderScript context |
+| `e` | [Element](Element.md)!:Element type for inputs and outputs |
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------|---------------------|
-| [ScriptIntrinsicBlur](../android/renderscript/ScriptIntrinsicBlur.md)! | ScriptIntrinsicBlur |
+| [ScriptIntrinsicBlur](ScriptIntrinsicBlur.md)! | ScriptIntrinsicBlur |
 
 ### forEach
 
@@ -80,7 +80,7 @@ Apply the filter to the input and save to the specified allocation.
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| `aout` | [Allocation](../android/renderscript/Allocation.md)!:Output allocation. Must match creation element type. |
+| `aout` | [Allocation](Allocation.md)!:Output allocation. Must match creation element type. |
 
 ### forEach
 
@@ -100,7 +100,7 @@ Apply the filter to the input and save to the specified allocation.
 
 | Parameters ||
 |--------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| `aout` | [Allocation](../android/renderscript/Allocation.md)!:Output allocation. Must match creation element type. |
+| `aout` | [Allocation](Allocation.md)!:Output allocation. Must match creation element type. |
 | `opt` | [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!:LaunchOptions for clipping |
 
 ### getFieldID_Input
@@ -149,7 +149,7 @@ Set the input of the blur. Must match the element type supplied during create.
 
 | Parameters ||
 |-------|--------------------------------------------------------------------------------------------------------------------|
-| `ain` | [Allocation](../android/renderscript/Allocation.md)!:The input allocation |
+| `ain` | [Allocation](Allocation.md)!:The input allocation |
 
 ### setRadius
 

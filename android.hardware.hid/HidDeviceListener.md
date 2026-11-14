@@ -6,7 +6,7 @@ Added in [API level 37.1](https://developer.android.com/guide/topics/manifest/us
 interface HidDeviceListener
 ```
 
-| [android.hardware.hid.HidDeviceListener](../android/hardware/hid/HidDeviceListener.md) |
+| [android.hardware.hid.HidDeviceListener](HidDeviceListener.md) |
 
 Interface for receiving HID device connectivity updates.
 
@@ -31,7 +31,7 @@ Called when a HID device is added.
 
 | Parameters ||
 |---|---|
-| `device` | [HidDevice](../android/hardware/hid/HidDevice.md): The HID device that was added. This value cannot be `null`. |
+| `device` | [HidDevice](HidDevice.md): The HID device that was added. This value cannot be `null`. |
 
 ### onHidDeviceRemoved
 
@@ -45,4 +45,4 @@ Called when a HID device is removed.
 
 | Parameters ||
 |---|---|
-| `device` | [HidDevice](../android/hardware/hid/HidDevice.md): The HID device that was removed. This value cannot be `null`. |
+| `device` | [HidDevice](HidDevice.md): The HID device that was removed. This value cannot be `null`. |

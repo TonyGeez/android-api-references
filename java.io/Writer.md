@@ -10,12 +10,12 @@ abstract class Writer : Appendable, Closeable, Flushable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.io.Writer](../java/io/Writer.md) |
+| ↳ | [java.io.Writer](Writer.md) |
 
-| Known Direct Subclasses [BufferedWriter](../java/io/BufferedWriter.md), [CharArrayWriter](../java/io/CharArrayWriter.md), [FilterWriter](../java/io/FilterWriter.md), [OutputStreamWriter](../java/io/OutputStreamWriter.md), [PipedWriter](../java/io/PipedWriter.md), [PrintWriter](../java/io/PrintWriter.md), [StringWriter](../java/io/StringWriter.md) |-------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------| | [BufferedWriter](../java/io/BufferedWriter.md) | Writes text to a character-output stream, buffering characters so as to provide for the efficient writing of single characters, arrays, and strings. | | [CharArrayWriter](../java/io/CharArrayWriter.md) | This class implements a character buffer that can be used as an Writer. | | [FilterWriter](../java/io/FilterWriter.md) | Abstract class for writing filtered character streams. | | [OutputStreamWriter](../java/io/OutputStreamWriter.md) | An OutputStreamWriter is a bridge from character streams to byte streams: Characters written to it are encoded into bytes using a specified . | | [PipedWriter](../java/io/PipedWriter.md) | Piped character-output streams. | | [PrintWriter](../java/io/PrintWriter.md) | Prints formatted representations of objects to a text-output stream. | | [StringWriter](../java/io/StringWriter.md) | A character stream that collects its output in a string buffer, which can then be used to construct a string. | |
+| Known Direct Subclasses [BufferedWriter](BufferedWriter.md), [CharArrayWriter](CharArrayWriter.md), [FilterWriter](FilterWriter.md), [OutputStreamWriter](OutputStreamWriter.md), [PipedWriter](PipedWriter.md), [PrintWriter](PrintWriter.md), [StringWriter](StringWriter.md) |-------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------| | [BufferedWriter](BufferedWriter.md) | Writes text to a character-output stream, buffering characters so as to provide for the efficient writing of single characters, arrays, and strings. | | [CharArrayWriter](CharArrayWriter.md) | This class implements a character buffer that can be used as an Writer. | | [FilterWriter](FilterWriter.md) | Abstract class for writing filtered character streams. | | [OutputStreamWriter](OutputStreamWriter.md) | An OutputStreamWriter is a bridge from character streams to byte streams: Characters written to it are encoded into bytes using a specified . | | [PipedWriter](PipedWriter.md) | Piped character-output streams. | | [PrintWriter](PrintWriter.md) | Prints formatted representations of objects to a text-output stream. | | [StringWriter](StringWriter.md) | A character stream that collects its output in a string buffer, which can then be used to construct a string. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [FileWriter](../java/io/FileWriter.md) |---------------------------------------------------------------------------------|-------------------------------------------------------------| | [FileWriter](../java/io/FileWriter.md) | Writes text to character files using a default buffer size. | |
+| Known Indirect Subclasses [FileWriter](FileWriter.md) |---------------------------------------------------------------------------------|-------------------------------------------------------------| | [FileWriter](FileWriter.md) | Writes text to character files using a default buffer size. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 Abstract class for writing to character streams. The only methods that a subclass must implement are write(char\[\], int, int), flush(), and close(). Most subclasses, however, will override some of the methods defined here in order to provide higher efficiency, additional functionality, or both.
@@ -24,29 +24,29 @@ Abstract class for writing to character streams. The only methods that a subclas
 
 | Protected constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Writer](../java/io/Writer.md))`()` Creates a new character-stream writer whose critical sections will synchronize on the writer itself. |
-| [Writer](../java/io/Writer.md))`(`lock:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Creates a new character-stream writer whose critical sections will synchronize on the given object. |
+| [Writer](Writer.md))`()` Creates a new character-stream writer whose critical sections will synchronize on the writer itself. |
+| [Writer](Writer.md))`(`lock:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Creates a new character-stream writer whose critical sections will synchronize on the given object. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Writer](../java/io/Writer.md) | [append](../java/io/Writer.md))`(`c:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Appends the specified character to this writer. |
-| open [Writer](../java/io/Writer.md) | [append](../java/io/Writer.md))`(`csq:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)?`)` Appends the specified character sequence to this writer. |
-| open [Writer](../java/io/Writer.md) | [append](../java/io/Writer.md))`(`csq:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)?`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Appends a subsequence of the specified character sequence to this writer. |
+| open [Writer](Writer.md) | [append](Writer.md))`(`c:` ` [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html)`)` Appends the specified character to this writer. |
+| open [Writer](Writer.md) | [append](Writer.md))`(`csq:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)?`)` Appends the specified character sequence to this writer. |
+| open [Writer](Writer.md) | [append](Writer.md))`(`csq:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)?`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Appends a subsequence of the specified character sequence to this writer. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../java/io/Writer.md))`()` Closes the stream, flushing it first. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [flush](../java/io/Writer.md))`()` Flushes the stream. |
-| open static [Writer](../java/io/Writer.md)! | [nullWriter](../java/io/Writer.md))`()` Returns a new `Writer` which discards all characters. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](Writer.md))`()` Closes the stream, flushing it first. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [flush](Writer.md))`()` Flushes the stream. |
+| open static [Writer](Writer.md)! | [nullWriter](Writer.md))`()` Returns a new `Writer` which discards all characters. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](../java/io/Writer.md))`(`cbuf:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`)` Writes an array of characters. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](../java/io/Writer.md))`(`cbuf:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes a portion of an array of characters. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](../java/io/Writer.md))`(`c:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes a single character. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](Writer.md))`(`cbuf:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`)` Writes an array of characters. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](Writer.md))`(`cbuf:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes a portion of an array of characters. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](Writer.md))`(`c:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes a single character. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](../java/io/Writer.md))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Writes a string. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](../java/io/Writer.md))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes a portion of a string. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](Writer.md))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Writes a string. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [write](Writer.md))`(`str:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `off:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `len:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Writes a portion of a string. |
 
 | Properties ||
 |-----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [lock](../java/io/Writer.md) The object used to synchronize operations on this stream. |
+| [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [lock](Writer.md) The object used to synchronize operations on this stream. |
 
 ## Protected constructors
 
@@ -98,7 +98,7 @@ out.write(c)
 
 | Return ||
 |--------------------------------------------------------------------------|-------------|
-| [Writer](../java/io/Writer.md) | This writer |
+| [Writer](Writer.md) | This writer |
 
 | Exceptions ||
 |-----------------------|------------------------|
@@ -128,7 +128,7 @@ Depending on the specification of `toString` for the character sequence `csq`, t
 
 | Return ||
 |--------------------------------------------------------------------------|-------------|
-| [Writer](../java/io/Writer.md) | This writer |
+| [Writer](Writer.md) | This writer |
 
 | Exceptions ||
 |-----------------------|------------------------|
@@ -164,7 +164,7 @@ An invocation of this method of the form `out.append(csq, start, end)` when `csq
 
 | Return ||
 |--------------------------------------------------------------------------|-------------|
-| [Writer](../java/io/Writer.md) | This writer |
+| [Writer](Writer.md) | This writer |
 
 | Exceptions ||
 |---------------------------------------|----------------------------------------------------------------------------------------------------------|
@@ -214,11 +214,11 @@ Returns a new `Writer` which discards all characters. The returned stream is ini
 
 While the stream is open, the `append(char)`, `append(CharSequence)`, `append(CharSequence, int, int)`, `flush()`, `write(int)`, `write(char[])`, and `write(char[], int, int)` methods do nothing. After the stream has been closed, these methods all throw `IOException`.
 
-The [object](../java/io/Writer.md) used to synchronize operations on the returned `Writer` is not specified.
+The [object](Writer.md) used to synchronize operations on the returned `Writer` is not specified.
 
 | Return ||
 |---------------------------------------------------------------------------|------------------------------------------|
-| [Writer](../java/io/Writer.md)! | a `Writer` which discards all characters |
+| [Writer](Writer.md)! | a `Writer` which discards all characters |
 
 ### write
 

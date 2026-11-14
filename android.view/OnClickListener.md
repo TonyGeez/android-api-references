@@ -13,7 +13,7 @@ interface OnClickListener
 
 | [android.view.View.OnClickListener](../android/view/View.OnClickListener.md) |
 
-| Known Direct Subclasses [CharacterPickerDialog](../android/text/method/CharacterPickerDialog.md), [KeyboardView](../android/inputmethodservice/KeyboardView.md), [QuickContactBadge](../android/widget/QuickContactBadge.md) |-------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------| | [CharacterPickerDialog](../android/text/method/CharacterPickerDialog.md) | Dialog for choosing accented characters related to a base character. | | [KeyboardView](../android/inputmethodservice/KeyboardView.md) | A view that renders a virtual [Keyboard](../android/inputmethodservice/Keyboard.md). | | [QuickContactBadge](../android/widget/QuickContactBadge.md) | Widget used to show an image with the standard QuickContact badge and on-click behavior. | |
+| Known Direct Subclasses [CharacterPickerDialog](../android.text.method/CharacterPickerDialog.md), [KeyboardView](../android.inputmethodservice/KeyboardView.md), [QuickContactBadge](../android.widget/QuickContactBadge.md) |-------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------| | [CharacterPickerDialog](../android.text.method/CharacterPickerDialog.md) | Dialog for choosing accented characters related to a base character. | | [KeyboardView](../android.inputmethodservice/KeyboardView.md) | A view that renders a virtual [Keyboard](../android.inputmethodservice/Keyboard.md). | | [QuickContactBadge](../android.widget/QuickContactBadge.md) | Widget used to show an image with the standard QuickContact badge and on-click behavior. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Interface definition for a callback to be invoked when a view is clicked.
@@ -22,7 +22,7 @@ Interface definition for a callback to be invoked when a view is clicked.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onClick](../android/view/View.OnClickListener.md))`(`v:` ` [View](../android/view/View.md)!`)` Called when a view has been clicked. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onClick](../android/view/View.OnClickListener.md))`(`v:` ` [View](View.md)!`)` Called when a view has been clicked. |
 
 ## Public methods
 
@@ -38,4 +38,4 @@ Called when a view has been clicked.
 
 | Parameters ||
 |-----|------------------------------------------------------------------------------------------------------|
-| `v` | [View](../android/view/View.md)!:The view that was clicked. |
+| `v` | [View](View.md)!:The view that was clicked. |

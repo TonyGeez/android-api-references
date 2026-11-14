@@ -5,7 +5,7 @@ Also in [Ad Services Extensions 10](https://developer.android.com/sdkExtensions)
 
 # AddAdSelectionFromOutcomesOverrideRequest
 
-Kotlin| [Java](../android/adservices/adselection/AddAdSelectionFromOutcomesOverrideRequest.md) 
+Kotlin| [Java](AddAdSelectionFromOutcomesOverrideRequest.md) 
 | --- | --- |
 
 ```
@@ -14,23 +14,23 @@ open class AddAdSelectionFromOutcomesOverrideRequest
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.adservices.adselection.AddAdSelectionFromOutcomesOverrideRequest](../android/adservices/adselection/AddAdSelectionFromOutcomesOverrideRequest.md) |
+| ↳ | [android.adservices.adselection.AddAdSelectionFromOutcomesOverrideRequest](AddAdSelectionFromOutcomesOverrideRequest.md) |
 
-This POJO represents the [android.adservices.adselection.TestAdSelectionManager#overrideAdSelectionFromOutcomesConfigRemoteInfo](../android/adservices/adselection/TestAdSelectionManager.md))( AddAdSelectionOverrideRequest, Executor, OutcomeReceiver)} request
+This POJO represents the [android.adservices.adselection.TestAdSelectionManager#overrideAdSelectionFromOutcomesConfigRemoteInfo](TestAdSelectionManager.md))( AddAdSelectionOverrideRequest, Executor, OutcomeReceiver)} request
 
-It contains, a [AdSelectionFromOutcomesConfig](../android/adservices/adselection/AdSelectionFromOutcomesConfig.md) which will serve as the identifier for the specific override, a`String`selectionLogicJs and`String`selectionSignals field representing the override value
+It contains, a [AdSelectionFromOutcomesConfig](AdSelectionFromOutcomesConfig.md) which will serve as the identifier for the specific override, a`String`selectionLogicJs and`String`selectionSignals field representing the override value
 
 ## Summary
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [AddAdSelectionFromOutcomesOverrideRequest](../android/adservices/adselection/AddAdSelectionFromOutcomesOverrideRequest.md))`(`adSelectionFromOutcomesConfig:` ` [AdSelectionFromOutcomesConfig](../android/adservices/adselection/AdSelectionFromOutcomesConfig.md)`, `outcomeSelectionLogicJs:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `outcomeSelectionTrustedSignals:` ` [AdSelectionSignals](../android/adservices/common/AdSelectionSignals.md)`)` Builds a [AddAdSelectionFromOutcomesOverrideRequest](../android/adservices/adselection/AddAdSelectionFromOutcomesOverrideRequest.md) instance. |
+| [AddAdSelectionFromOutcomesOverrideRequest](AddAdSelectionFromOutcomesOverrideRequest.md))`(`adSelectionFromOutcomesConfig:` ` [AdSelectionFromOutcomesConfig](AdSelectionFromOutcomesConfig.md)`, `outcomeSelectionLogicJs:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `outcomeSelectionTrustedSignals:` ` [AdSelectionSignals](../android.adservices.common/AdSelectionSignals.md)`)` Builds a [AddAdSelectionFromOutcomesOverrideRequest](AddAdSelectionFromOutcomesOverrideRequest.md) instance. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [AdSelectionFromOutcomesConfig](../android/adservices/adselection/AdSelectionFromOutcomesConfig.md) | [getAdSelectionFromOutcomesConfig](../android/adservices/adselection/AddAdSelectionFromOutcomesOverrideRequest.md))`()` <br /> |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getOutcomeSelectionLogicJs](../android/adservices/adselection/AddAdSelectionFromOutcomesOverrideRequest.md))`()` <br /> |
-| open [AdSelectionSignals](../android/adservices/common/AdSelectionSignals.md) | [getOutcomeSelectionTrustedSignals](../android/adservices/adselection/AddAdSelectionFromOutcomesOverrideRequest.md))`()` <br /> |
+| open [AdSelectionFromOutcomesConfig](AdSelectionFromOutcomesConfig.md) | [getAdSelectionFromOutcomesConfig](AddAdSelectionFromOutcomesOverrideRequest.md))`()` <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getOutcomeSelectionLogicJs](AddAdSelectionFromOutcomesOverrideRequest.md))`()` <br /> |
+| open [AdSelectionSignals](../android.adservices.common/AdSelectionSignals.md) | [getOutcomeSelectionTrustedSignals](AddAdSelectionFromOutcomesOverrideRequest.md))`()` <br /> |
 | --- | --- |
 
 ## Public constructors
@@ -47,13 +47,13 @@ AddAdSelectionFromOutcomesOverrideRequest(
     outcomeSelectionTrustedSignals: AdSelectionSignals)
 ```
 
-Builds a [AddAdSelectionFromOutcomesOverrideRequest](../android/adservices/adselection/AddAdSelectionFromOutcomesOverrideRequest.md) instance.
+Builds a [AddAdSelectionFromOutcomesOverrideRequest](AddAdSelectionFromOutcomesOverrideRequest.md) instance.
 
 | Parameters ||
 |----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `adSelectionFromOutcomesConfig` | [AdSelectionFromOutcomesConfig](../android/adservices/adselection/AdSelectionFromOutcomesConfig.md):This value cannot be`null`. |
+| `adSelectionFromOutcomesConfig` | [AdSelectionFromOutcomesConfig](AdSelectionFromOutcomesConfig.md):This value cannot be`null`. |
 | `outcomeSelectionLogicJs` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html):This value cannot be`null`. |
-| `outcomeSelectionTrustedSignals` | [AdSelectionSignals](../android/adservices/common/AdSelectionSignals.md):This value cannot be`null`. |
+| `outcomeSelectionTrustedSignals` | [AdSelectionSignals](../android.adservices.common/AdSelectionSignals.md):This value cannot be`null`. |
 | --- | --- |
 
 ## Public methods
@@ -69,7 +69,7 @@ open fun getAdSelectionFromOutcomesConfig(): AdSelectionFromOutcomesConfig
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [AdSelectionFromOutcomesConfig](../android/adservices/adselection/AdSelectionFromOutcomesConfig.md) | an instance of [AdSelectionFromOutcomesConfig](../android/adservices/adselection/AdSelectionFromOutcomesConfig.md), the configuration of the ad selection process. This configuration provides the data necessary to run Ad Selection flow that generates bids and scores to find a wining ad for rendering. This value cannot be`null`. |
+| [AdSelectionFromOutcomesConfig](AdSelectionFromOutcomesConfig.md) | an instance of [AdSelectionFromOutcomesConfig](AdSelectionFromOutcomesConfig.md), the configuration of the ad selection process. This configuration provides the data necessary to run Ad Selection flow that generates bids and scores to find a wining ad for rendering. This value cannot be`null`. |
 
 ### getOutcomeSelectionLogicJs
 
@@ -95,4 +95,4 @@ open fun getOutcomeSelectionTrustedSignals(): AdSelectionSignals
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [AdSelectionSignals](../android/adservices/common/AdSelectionSignals.md) | The override trusted scoring signals, should be a valid json string. The trusted signals would be fed into the outcome selection logic during ad outcome selection. This value cannot be`null`. |
+| [AdSelectionSignals](../android.adservices.common/AdSelectionSignals.md) | The override trusted scoring signals, should be a valid json string. The trusted signals would be fed into the outcome selection logic during ad outcome selection. This value cannot be`null`. |

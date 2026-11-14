@@ -10,7 +10,7 @@ open class PSSParameterSpec : AlgorithmParameterSpec
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.spec.PSSParameterSpec](../java/security/spec/PSSParameterSpec.md) |
+| ↳ | [java.security.spec.PSSParameterSpec](PSSParameterSpec.md) |
 
 This class specifies a parameter spec for RSASSA-PSS signature scheme, as defined in the [PKCS#1 v2.2](https://tools.ietf.org/rfc/rfc8017.txt) standard.
 
@@ -57,27 +57,27 @@ Note: the PSSParameterSpec.DEFAULT uses the following: message digest -- "SHA-1"
 
 | Constants ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRAILER_FIELD_BC](../java/security/spec/PSSParameterSpec.md) The`TrailerFieldBC`constant as defined in PKCS#1 |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRAILER_FIELD_BC](PSSParameterSpec.md) The`TrailerFieldBC`constant as defined in PKCS#1 |
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [PSSParameterSpec](../java/security/spec/PSSParameterSpec.md))`(`saltLen:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a new`PSSParameterSpec`using the specified salt length and other default values as defined in PKCS#1. |
-| [PSSParameterSpec](../java/security/spec/PSSParameterSpec.md))`(`mdName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `mgfName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `mgfSpec:` ` [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)!`, `saltLen:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `trailerField:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a new`PSSParameterSpec`as defined in the PKCS #1 standard using the specified message digest, mask generation function, parameters for mask generation function, salt length, and trailer field values. |
+| [PSSParameterSpec](PSSParameterSpec.md))`(`saltLen:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a new`PSSParameterSpec`using the specified salt length and other default values as defined in PKCS#1. |
+| [PSSParameterSpec](PSSParameterSpec.md))`(`mdName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `mgfName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `mgfSpec:` ` [AlgorithmParameterSpec](AlgorithmParameterSpec.md)!`, `saltLen:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `trailerField:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a new`PSSParameterSpec`as defined in the PKCS #1 standard using the specified message digest, mask generation function, parameters for mask generation function, salt length, and trailer field values. |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDigestAlgorithm](../java/security/spec/PSSParameterSpec.md))`()` Returns the message digest algorithm name. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getMGFAlgorithm](../java/security/spec/PSSParameterSpec.md))`()` Returns the mask generation function algorithm name. |
-| open [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)! | [getMGFParameters](../java/security/spec/PSSParameterSpec.md))`()` Returns the parameters for the mask generation function. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDigestAlgorithm](PSSParameterSpec.md))`()` Returns the message digest algorithm name. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getMGFAlgorithm](PSSParameterSpec.md))`()` Returns the mask generation function algorithm name. |
+| open [AlgorithmParameterSpec](AlgorithmParameterSpec.md)! | [getMGFParameters](PSSParameterSpec.md))`()` Returns the parameters for the mask generation function. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSaltLength](../java/security/spec/PSSParameterSpec.md))`()` Returns the salt length in bytes. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTrailerField](../java/security/spec/PSSParameterSpec.md))`()` Returns the value for the trailer field. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/security/spec/PSSParameterSpec.md))`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSaltLength](PSSParameterSpec.md))`()` Returns the salt length in bytes. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTrailerField](PSSParameterSpec.md))`()` Returns the value for the trailer field. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](PSSParameterSpec.md))`()` <br /> |
 | --- | --- |
 
 | Properties ||
 |----------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [PSSParameterSpec](../java/security/spec/PSSParameterSpec.md)! | [DEFAULT](../java/security/spec/PSSParameterSpec.md) The PSS parameter set with all default values |
+| static [PSSParameterSpec](PSSParameterSpec.md)! | [DEFAULT](PSSParameterSpec.md) The PSS parameter set with all default values |
 
 ## Constants
 
@@ -132,7 +132,7 @@ Creates a new`PSSParameterSpec`as defined in the PKCS #1 standard using the spec
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `mdName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the algorithm name of the hash function |
 | `mgfName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the algorithm name of the mask generation function |
-| `mgfSpec` | [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)!:the parameters for the mask generation function. If null is specified, null will be returned by getMGFParameters(). |
+| `mgfSpec` | [AlgorithmParameterSpec](AlgorithmParameterSpec.md)!:the parameters for the mask generation function. If null is specified, null will be returned by getMGFParameters(). |
 | --- | --- |
 | `saltLen` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the length of salt |
 | `trailerField` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the value of the trailer field |
@@ -184,7 +184,7 @@ Returns the parameters for the mask generation function.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------|-------------------------------------------------|
-| [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)! | the parameters for the mask generation function |
+| [AlgorithmParameterSpec](AlgorithmParameterSpec.md)! | the parameters for the mask generation function |
 
 ### getSaltLength
 

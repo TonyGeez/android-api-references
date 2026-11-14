@@ -8,7 +8,7 @@ class AppFunctionMetadata : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.appfunctions.AppFunctionMetadata](../android/app/appfunctions/AppFunctionMetadata.md) |
+| ↳ | [android.app.appfunctions.AppFunctionMetadata](AppFunctionMetadata.md) |
 
 Contains an app function's metadata, essential for its invocation and discovery, retrieved using `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionManager#searchAppFunctions(android.app.appfunctions.AppFunctionSearchSpec,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)`.
 
@@ -77,11 +77,11 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionMetadata#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionMetadata#getAccessLevel()()` Returns the minimum access level required to call the function. |
 | --- | --- |
-| [GenericDocument](../android/app/appsearch/GenericDocument.md) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionMetadata#getMetadataDocument()()` Returns the app function's metadata as a `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument.html#`. |
+| [GenericDocument](../android.app.appsearch/GenericDocument.md) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionMetadata#getMetadataDocument()()` Returns the app function's metadata as a `https://developer.android.com/reference/kotlin/android/app/appsearch/GenericDocument.html#`. |
 | [AppFunctionName](../android/app/appfunctions/AppFunctionName.md) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionMetadata#getName()()` Returns the qualified name of the app function. |
 | [AppFunctionPackageMetadata](../android/app/appfunctions/AppFunctionPackageMetadata.md) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionMetadata#getPackageMetadata()()` Returns the `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionPackageMetadata` of the enclosing package. |
 | --- | --- |
-| [AppFunctionSchemaMetadata](../android/app/appfunctions/AppFunctionSchemaMetadata.md)? | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionMetadata#getSchemaMetadata()()` Returns the identifying metadata for a pre-defined schema which this app function implements. |
+| [AppFunctionSchemaMetadata](AppFunctionSchemaMetadata.md)? | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionMetadata#getSchemaMetadata()()` Returns the identifying metadata for a pre-defined schema which this app function implements. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionMetadata#getScope()()` Returns the scope of the app function. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionMetadata#hashCode()()` Returns a hash code value for the object. |
 | --- | --- |
@@ -90,7 +90,7 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [AppFunctionMetadata](../android/app/appfunctions/AppFunctionMetadata.md)!\> | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionMetadata#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [AppFunctionMetadata](AppFunctionMetadata.md)!\> | `https://developer.android.com/reference/kotlin/android/app/appfunctions/AppFunctionMetadata#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -529,7 +529,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

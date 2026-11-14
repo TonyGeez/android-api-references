@@ -6,7 +6,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface WindowManager : ViewManager
 ```
 
-| [android.view.WindowManager](../android/view/WindowManager.md) |
+| [android.view.WindowManager](WindowManager.md) |
 
 The interface that apps use to talk to the window manager.
 
@@ -67,18 +67,18 @@ The simplest way to show a window on a particular display is to create a `https:
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/WindowManager#addProposedRotationListener(java.util.concurrent.Executor,%20java.util.function.IntConsumer)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, listener: https://developer.android.com/reference/kotlin/java/util/function/IntConsumer.html#)` Adds a listener to start monitoring the proposed rotation of the current associated context. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/WindowManager#addScreenRecordingCallback(java.util.concurrent.Executor,%20java.util.function.Consumer)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html!>)` Adds a screen recording callback. |
-| open [WindowMetrics](../android/view/WindowMetrics.md) | `https://developer.android.com/reference/kotlin/android/view/WindowManager#getCurrentWindowMetrics()()` Returns the `https://developer.android.com/reference/kotlin/android/view/WindowMetrics` according to the current system state. |
-| abstract [Display](../android/view/Display.md)! | `https://developer.android.com/reference/kotlin/android/view/WindowManager#getDefaultDisplay()()` Returns the `https://developer.android.com/reference/kotlin/android/view/Display` upon which this `https://developer.android.com/reference/kotlin/android/view/WindowManager#` instance will create new windows. |
+| open [WindowMetrics](WindowMetrics.md) | `https://developer.android.com/reference/kotlin/android/view/WindowManager#getCurrentWindowMetrics()()` Returns the `https://developer.android.com/reference/kotlin/android/view/WindowMetrics` according to the current system state. |
+| abstract [Display](Display.md)! | `https://developer.android.com/reference/kotlin/android/view/WindowManager#getDefaultDisplay()()` Returns the `https://developer.android.com/reference/kotlin/android/view/Display` upon which this `https://developer.android.com/reference/kotlin/android/view/WindowManager#` instance will create new windows. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/WindowManager#getDisplayEngagementMode(kotlin.Int)(displayId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the user engagement mode for a specific display. |
-| open [WindowMetrics](../android/view/WindowMetrics.md) | `https://developer.android.com/reference/kotlin/android/view/WindowManager#getMaximumWindowMetrics()()` Returns the largest `https://developer.android.com/reference/kotlin/android/view/WindowMetrics` an app may expect in the current system state. |
+| open [WindowMetrics](WindowMetrics.md) | `https://developer.android.com/reference/kotlin/android/view/WindowManager#getMaximumWindowMetrics()()` Returns the largest `https://developer.android.com/reference/kotlin/android/view/WindowMetrics` an app may expect in the current system state. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/WindowManager#isCrossWindowBlurEnabled()()` Returns whether cross-window blur is currently enabled. |
 | --- | --- |
-| open [InputTransferToken](../android/window/InputTransferToken.md) | `https://developer.android.com/reference/kotlin/android/view/WindowManager#registerBatchedSurfaceControlInputReceiver(android.window.InputTransferToken,%20android.view.SurfaceControl,%20android.view.Choreographer,%20android.view.SurfaceControlInputReceiver)(hostInputTransferToken: https://developer.android.com/reference/kotlin/android/window/InputTransferToken.html#, surfaceControl: https://developer.android.com/reference/kotlin/android/view/SurfaceControl, choreographer: https://developer.android.com/reference/kotlin/android/view/Choreographer, receiver: https://developer.android.com/reference/kotlin/android/view/SurfaceControlInputReceiver)` Registers a `https://developer.android.com/reference/kotlin/android/view/SurfaceControlInputReceiver` for a `https://developer.android.com/reference/kotlin/android/view/SurfaceControl` that will receive batched input event. |
+| open [InputTransferToken](../android.window/InputTransferToken.md) | `https://developer.android.com/reference/kotlin/android/view/WindowManager#registerBatchedSurfaceControlInputReceiver(android.window.InputTransferToken,%20android.view.SurfaceControl,%20android.view.Choreographer,%20android.view.SurfaceControlInputReceiver)(hostInputTransferToken: https://developer.android.com/reference/kotlin/android/window/InputTransferToken.html#, surfaceControl: https://developer.android.com/reference/kotlin/android/view/SurfaceControl, choreographer: https://developer.android.com/reference/kotlin/android/view/Choreographer, receiver: https://developer.android.com/reference/kotlin/android/view/SurfaceControlInputReceiver)` Registers a `https://developer.android.com/reference/kotlin/android/view/SurfaceControlInputReceiver` for a `https://developer.android.com/reference/kotlin/android/view/SurfaceControl` that will receive batched input event. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/WindowManager#registerDisplayEngagementModeCallback(java.util.concurrent.Executor,%20java.util.function.Consumer)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://developer.android.com/reference/kotlin/android/view/WindowManager.DisplayEngagementModeState!>)` Registers a callback for display engagement mode changes. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/WindowManager#registerTrustedPresentationListener(android.os.IBinder,%20android.window.TrustedPresentationThresholds,%20java.util.concurrent.Executor,%20java.util.function.Consumer)(window: https://developer.android.com/reference/kotlin/android/os/IBinder.html#, thresholds: https://developer.android.com/reference/kotlin/android/window/TrustedPresentationThresholds.html#, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, listener: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html!>)` Sets a callback to receive feedback about the presentation of a `https://developer.android.com/reference/kotlin/android/view/Window`. |
 | --- | --- |
-| open [InputTransferToken](../android/window/InputTransferToken.md) | `https://developer.android.com/reference/kotlin/android/view/WindowManager#registerUnbatchedSurfaceControlInputReceiver(android.window.InputTransferToken,%20android.view.SurfaceControl,%20android.os.Looper,%20android.view.SurfaceControlInputReceiver)(hostInputTransferToken: https://developer.android.com/reference/kotlin/android/window/InputTransferToken.html#, surfaceControl: https://developer.android.com/reference/kotlin/android/view/SurfaceControl, looper: https://developer.android.com/reference/kotlin/android/os/Looper.html#, receiver: https://developer.android.com/reference/kotlin/android/view/SurfaceControlInputReceiver)` Registers a `https://developer.android.com/reference/kotlin/android/view/SurfaceControlInputReceiver` for a `https://developer.android.com/reference/kotlin/android/view/SurfaceControl` that will receive every input event. |
+| open [InputTransferToken](../android.window/InputTransferToken.md) | `https://developer.android.com/reference/kotlin/android/view/WindowManager#registerUnbatchedSurfaceControlInputReceiver(android.window.InputTransferToken,%20android.view.SurfaceControl,%20android.os.Looper,%20android.view.SurfaceControlInputReceiver)(hostInputTransferToken: https://developer.android.com/reference/kotlin/android/window/InputTransferToken.html#, surfaceControl: https://developer.android.com/reference/kotlin/android/view/SurfaceControl, looper: https://developer.android.com/reference/kotlin/android/os/Looper.html#, receiver: https://developer.android.com/reference/kotlin/android/view/SurfaceControlInputReceiver)` Registers a `https://developer.android.com/reference/kotlin/android/view/SurfaceControlInputReceiver` for a `https://developer.android.com/reference/kotlin/android/view/SurfaceControl` that will receive every input event. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/WindowManager#removeCrossWindowBlurEnabledListener(java.util.function.Consumer)(listener: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html!>)` Removes a listener, previously added with #addCrossWindowBlurEnabledListener |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/WindowManager#removeProposedRotationListener(java.util.function.IntConsumer)(listener: https://developer.android.com/reference/kotlin/java/util/function/IntConsumer.html#)` Removes a listener, previously added with `https://developer.android.com/reference/kotlin/android/view/WindowManager#addProposedRotationListener(java.util.concurrent.Executor,%20java.util.function.IntConsumer)`. |
 | --- | --- |
@@ -806,8 +806,8 @@ If the listener is added successfully, it will be called immediately with the cu
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` to handle the listener callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `listener` | [Consumer](../java/util/function/Consumer.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>: the listener to be added. It will be called back with a boolean parameter, which is true if cross-window blur is enabled and false if it is disabled. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` to handle the listener callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `listener` | [Consumer](../java.util.function/Consumer.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>: the listener to be added. It will be called back with a boolean parameter, which is true if cross-window blur is enabled and false if it is disabled. This value cannot be `null`. |
 
 **See Also**
 
@@ -834,7 +834,7 @@ If the listener is added successfully, it will be called immediately with the cu
 
 | Parameters ||
 |---|---|
-| `listener` | [Consumer](../java/util/function/Consumer.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>: the listener to be added. It will be called back with a boolean parameter, which is true if cross-window blur is enabled and false if it is disabled. This value cannot be `null`. |
+| `listener` | [Consumer](../java.util.function/Consumer.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>: the listener to be added. It will be called back with a boolean parameter, which is true if cross-window blur is enabled and false if it is disabled. This value cannot be `null`. |
 
 **See Also**
 
@@ -858,8 +858,8 @@ Adds a listener to start monitoring the proposed rotation of the current associa
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): The executor on which callback method will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `listener` | [IntConsumer](../java/util/function/IntConsumer.md): Called when the proposed rotation for the context is being delivered. The reported rotation can be `https://developer.android.com/reference/kotlin/android/view/Surface#ROTATION_0:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/Surface#ROTATION_90:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/Surface#ROTATION_180:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/view/Surface#ROTATION_270:kotlin.Int`. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor on which callback method will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `listener` | [IntConsumer](../java.util.function/IntConsumer.md): Called when the proposed rotation for the context is being delivered. The reported rotation can be `https://developer.android.com/reference/kotlin/android/view/Surface#ROTATION_0:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/Surface#ROTATION_90:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/Surface#ROTATION_180:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/view/Surface#ROTATION_270:kotlin.Int`. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|
@@ -893,8 +893,8 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): The executor on which callback method will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `callback` | [Consumer](../java/util/function/Consumer.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>: The callback that will be invoked when screen recording visibility changes. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor on which callback method will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `callback` | [Consumer](../java.util.function/Consumer.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>: The callback that will be invoked when screen recording visibility changes. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -1035,11 +1035,11 @@ Registers a `https://developer.android.com/reference/kotlin/android/view/Surface
 
 | Parameters ||
 |---|---|
-| `hostInputTransferToken` | [InputTransferToken](../android/window/InputTransferToken.md): The host token to link the embedded. This is used to handle transferring touch gesture from host to embedded and for ANRs to ensure the host receives the ANR if any issues with touch on the embedded. This value cannot be `null`. |
-| `surfaceControl` | [SurfaceControl](../android/view/SurfaceControl.md): The SurfaceControl to register the InputChannel for. This value cannot be `null`. |
-| `choreographer` | [Choreographer](../android/view/Choreographer.md): The Choreographer used for batching. This should match the rendering Choreographer. This value cannot be `null`. |
+| `hostInputTransferToken` | [InputTransferToken](../android.window/InputTransferToken.md): The host token to link the embedded. This is used to handle transferring touch gesture from host to embedded and for ANRs to ensure the host receives the ANR if any issues with touch on the embedded. This value cannot be `null`. |
+| `surfaceControl` | [SurfaceControl](SurfaceControl.md): The SurfaceControl to register the InputChannel for. This value cannot be `null`. |
+| `choreographer` | [Choreographer](Choreographer.md): The Choreographer used for batching. This should match the rendering Choreographer. This value cannot be `null`. |
 | --- | --- |
-| `receiver` | [SurfaceControlInputReceiver](../android/view/SurfaceControlInputReceiver.md): The SurfaceControlInputReceiver that will receive the input events. This value cannot be `null`. |
+| `receiver` | [SurfaceControlInputReceiver](SurfaceControlInputReceiver.md): The SurfaceControlInputReceiver that will receive the input events. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -1060,8 +1060,8 @@ Registers a callback for display engagement mode changes. The callback will be i
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): The executor to run the callback on. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `callback` | [Consumer](../java/util/function/Consumer.md)\< [WindowManager.DisplayEngagementModeState](../android/view/WindowManager.DisplayEngagementModeState.md)!\>: The callback to register. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor to run the callback on. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `callback` | [Consumer](../java.util.function/Consumer.md)\< [WindowManager.DisplayEngagementModeState](../android/view/WindowManager.DisplayEngagementModeState.md)!\>: The callback to register. This value cannot be `null`. |
 
 ### registerTrustedPresentationListener
 
@@ -1103,11 +1103,11 @@ Notice that this is not completely accurate, as we have double counted the regio
 
 | Parameters ||
 |---|---|
-| `window` | [IBinder](../android/os/IBinder.md): The Window to add the trusted presentation listener for. This can be retrieved from `https://developer.android.com/reference/kotlin/android/view/View#getWindowToken()`. This value cannot be `null`. |
-| `thresholds` | [TrustedPresentationThresholds](../android/window/TrustedPresentationThresholds.md): The `https://developer.android.com/reference/kotlin/android/window/TrustedPresentationThresholds.html#` that will specify when the to invoke the callback. This value cannot be `null`. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): The `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` where the callback will be invoked on. This value cannot be `null`. |
+| `window` | [IBinder](../android.os/IBinder.md): The Window to add the trusted presentation listener for. This can be retrieved from `https://developer.android.com/reference/kotlin/android/view/View#getWindowToken()`. This value cannot be `null`. |
+| `thresholds` | [TrustedPresentationThresholds](../android.window/TrustedPresentationThresholds.md): The `https://developer.android.com/reference/kotlin/android/window/TrustedPresentationThresholds.html#` that will specify when the to invoke the callback. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` where the callback will be invoked on. This value cannot be `null`. |
 | --- | --- |
-| `listener` | [Consumer](../java/util/function/Consumer.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>: The `https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#` that will receive the callbacks when entered or exited trusted presentation per the thresholds. This value cannot be `null`. |
+| `listener` | [Consumer](../java.util.function/Consumer.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>: The `https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#` that will receive the callbacks when entered or exited trusted presentation per the thresholds. This value cannot be `null`. |
 
 **See Also**
 
@@ -1130,11 +1130,11 @@ Registers a `https://developer.android.com/reference/kotlin/android/view/Surface
 
 | Parameters ||
 |---|---|
-| `hostInputTransferToken` | [InputTransferToken](../android/window/InputTransferToken.md): The host token to link the embedded. This is used to handle transferring touch gesture from host to embedded and for ANRs to ensure the host receives the ANR if any issues with touch on the embedded. This value cannot be `null`. |
-| `surfaceControl` | [SurfaceControl](../android/view/SurfaceControl.md): The SurfaceControl to register the InputChannel for. This value cannot be `null`. |
-| `looper` | [Looper](../android/os/Looper.md): The looper to use when invoking callbacks. This value cannot be `null`. |
+| `hostInputTransferToken` | [InputTransferToken](../android.window/InputTransferToken.md): The host token to link the embedded. This is used to handle transferring touch gesture from host to embedded and for ANRs to ensure the host receives the ANR if any issues with touch on the embedded. This value cannot be `null`. |
+| `surfaceControl` | [SurfaceControl](SurfaceControl.md): The SurfaceControl to register the InputChannel for. This value cannot be `null`. |
+| `looper` | [Looper](../android.os/Looper.md): The looper to use when invoking callbacks. This value cannot be `null`. |
 | --- | --- |
-| `receiver` | [SurfaceControlInputReceiver](../android/view/SurfaceControlInputReceiver.md): The SurfaceControlInputReceiver that will receive the input events. This value cannot be `null`. |
+| `receiver` | [SurfaceControlInputReceiver](SurfaceControlInputReceiver.md): The SurfaceControlInputReceiver that will receive the input events. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -1152,7 +1152,7 @@ Removes a listener, previously added with #addCrossWindowBlurEnabledListener
 
 | Parameters ||
 |---|---|
-| `listener` | [Consumer](../java/util/function/Consumer.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>: the listener to be removed. This value cannot be `null`. |
+| `listener` | [Consumer](../java.util.function/Consumer.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>: the listener to be removed. This value cannot be `null`. |
 
 **See Also**
 
@@ -1168,7 +1168,7 @@ Removes a listener, previously added with `https://developer.android.com/referen
 
 | Parameters ||
 |---|---|
-| `listener` | [IntConsumer](../java/util/function/IntConsumer.md): The listener to be removed. This value cannot be `null`. |
+| `listener` | [IntConsumer](../java.util.function/IntConsumer.md): The listener to be removed. This value cannot be `null`. |
 
 ### removeScreenRecordingCallback
 
@@ -1183,7 +1183,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `callback` | [Consumer](../java/util/function/Consumer.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>: The callback to remove. This value cannot be `null`. |
+| `callback` | [Consumer](../java.util.function/Consumer.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>: The callback to remove. This value cannot be `null`. |
 
 **See Also**
 
@@ -1201,7 +1201,7 @@ Special variation of `https://developer.android.com/reference/kotlin/android/vie
 
 | Parameters ||
 |---|---|
-| `view` | [View](../android/view/View.md)!: The view to be removed. |
+| `view` | [View](View.md)!: The view to be removed. |
 
 ### requestEngagementControlState
 
@@ -1265,8 +1265,8 @@ The call can fail for the following reasons:
 
 | Parameters ||
 |---|---|
-| `transferFromToken` | [InputTransferToken](../android/window/InputTransferToken.md): the InputTransferToken for the currently active gesture. This value cannot be `null`. |
-| `transferToToken` | [InputTransferToken](../android/window/InputTransferToken.md): the InputTransferToken to transfer the gesture to. This value cannot be `null`. |
+| `transferFromToken` | [InputTransferToken](../android.window/InputTransferToken.md): the InputTransferToken for the currently active gesture. This value cannot be `null`. |
+| `transferToToken` | [InputTransferToken](../android.window/InputTransferToken.md): the InputTransferToken to transfer the gesture to. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -1289,7 +1289,7 @@ Unregisters a callback for display engagement mode changes.
 
 | Parameters ||
 |---|---|
-| `callback` | [Consumer](../java/util/function/Consumer.md)\< [WindowManager.DisplayEngagementModeState](../android/view/WindowManager.DisplayEngagementModeState.md)!\>: The callback to unregister. This value cannot be `null`. |
+| `callback` | [Consumer](../java.util.function/Consumer.md)\< [WindowManager.DisplayEngagementModeState](../android/view/WindowManager.DisplayEngagementModeState.md)!\>: The callback to unregister. This value cannot be `null`. |
 
 ### unregisterSurfaceControlInputReceiver
 
@@ -1305,7 +1305,7 @@ Must be called on the same `https://developer.android.com/reference/kotlin/andro
 
 | Parameters ||
 |---|---|
-| `surfaceControl` | [SurfaceControl](../android/view/SurfaceControl.md): The SurfaceControl to remove and unregister the input channel for. This value cannot be `null`. |
+| `surfaceControl` | [SurfaceControl](SurfaceControl.md): The SurfaceControl to remove and unregister the input channel for. This value cannot be `null`. |
 
 ### unregisterTrustedPresentationListener
 
@@ -1319,7 +1319,7 @@ Removes a presentation listener associated with a window. If the listener was no
 
 | Parameters ||
 |---|---|
-| `listener` | [Consumer](../java/util/function/Consumer.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>: This value cannot be `null`. |
+| `listener` | [Consumer](../java.util.function/Consumer.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>: This value cannot be `null`. |
 
 **See Also**
 

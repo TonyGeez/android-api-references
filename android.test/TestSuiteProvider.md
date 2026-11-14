@@ -5,16 +5,16 @@ Deprecated in [API level 24](https://developer.android.com/guide/topics/manifest
 
 # TestSuiteProvider
 
-Kotlin| [Java](../android/test/TestSuiteProvider.md) 
+Kotlin| [Java](TestSuiteProvider.md) 
 | --- | --- |
 
 ```
 interface TestSuiteProvider
 ```
 
-| [android.test.TestSuiteProvider](../android/test/TestSuiteProvider.md) |
+| [android.test.TestSuiteProvider](TestSuiteProvider.md) |
 
-| Known Direct Subclasses [InstrumentationTestRunner](../android/test/InstrumentationTestRunner.md) |--------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------| | [InstrumentationTestRunner](../android/test/InstrumentationTestRunner.md) | An [Instrumentation](../android/app/Instrumentation.md) that runs various types of junit. | |
+| Known Direct Subclasses [InstrumentationTestRunner](InstrumentationTestRunner.md) |--------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------| | [InstrumentationTestRunner](InstrumentationTestRunner.md) | An [Instrumentation](../android.app/Instrumentation.md) that runs various types of junit. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 | **This interface was deprecated in API level 24.**
@@ -27,7 +27,7 @@ Implementors will know how to get a test suite.
 
 | Public methods ||
 |--------------------|-------------------------------------------------------------------------------------------------------------------------|
-| abstractTestSuite! | [getTestSuite](../android/test/TestSuiteProvider.md))`()` <br /> |
+| abstractTestSuite! | [getTestSuite](TestSuiteProvider.md))`()` <br /> |
 
 ## Public methods
 

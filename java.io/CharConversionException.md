@@ -11,10 +11,10 @@ open class CharConversionException : IOException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
-| | | ↳ | [java.io.IOException](../java/io/IOException.md) ||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) |||
+| | | ↳ | [java.io.IOException](IOException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.io.CharConversionException](../java/io/CharConversionException.md) |
+| | | | ↳ | [java.io.CharConversionException](CharConversionException.md) |
 
 Base class for character conversion exceptions.
 
@@ -22,8 +22,8 @@ Base class for character conversion exceptions.
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [CharConversionException](../java/io/CharConversionException.md))`()` This provides no detailed message. |
-| [CharConversionException](../java/io/CharConversionException.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` This provides a detailed message. |
+| [CharConversionException](CharConversionException.md))`()` This provides no detailed message. |
+| [CharConversionException](CharConversionException.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` This provides a detailed message. |
 
 ## Public constructors
 

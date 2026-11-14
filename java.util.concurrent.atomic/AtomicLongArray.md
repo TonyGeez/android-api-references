@@ -8,7 +8,7 @@ open class AtomicLongArray : Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.util.concurrent.atomic.AtomicLongArray](../java/util/concurrent/atomic/AtomicLongArray.md) |
+| ↳ | [java.util.concurrent.atomic.AtomicLongArray](AtomicLongArray.md) |
 
 A `long` array in which elements may be updated atomically. See the `https://developer.android.com/reference/kotlin/java/lang/invoke/VarHandle.html#` specification for descriptions of the properties of atomic accesses.
 
@@ -117,7 +117,7 @@ Atomically updates (with memory effects as specified by `https://developer.andro
 |---|---|
 | `i` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index |
 | `x` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the update value |
-| `accumulatorFunction` | [LongBinaryOperator](../java/util/function/LongBinaryOperator.md)!: a side-effect-free function of two arguments |
+| `accumulatorFunction` | [LongBinaryOperator](../java.util.function/LongBinaryOperator.md)!: a side-effect-free function of two arguments |
 | --- | --- |
 
 | Return ||
@@ -320,7 +320,7 @@ Atomically updates (with memory effects as specified by `https://developer.andro
 |---|---|
 | `i` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index |
 | `x` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the update value |
-| `accumulatorFunction` | [LongBinaryOperator](../java/util/function/LongBinaryOperator.md)!: a side-effect-free function of two arguments |
+| `accumulatorFunction` | [LongBinaryOperator](../java.util.function/LongBinaryOperator.md)!: a side-effect-free function of two arguments |
 | --- | --- |
 
 | Return ||
@@ -427,7 +427,7 @@ Atomically updates (with memory effects as specified by `https://developer.andro
 | Parameters ||
 |---|---|
 | `i` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index |
-| `updateFunction` | [LongUnaryOperator](../java/util/function/LongUnaryOperator.md)!: a side-effect-free function |
+| `updateFunction` | [LongUnaryOperator](../java.util.function/LongUnaryOperator.md)!: a side-effect-free function |
 
 | Return ||
 |---|---|
@@ -623,7 +623,7 @@ Atomically updates (with memory effects as specified by `https://developer.andro
 | Parameters ||
 |---|---|
 | `i` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the index |
-| `updateFunction` | [LongUnaryOperator](../java/util/function/LongUnaryOperator.md)!: a side-effect-free function |
+| `updateFunction` | [LongUnaryOperator](../java.util.function/LongUnaryOperator.md)!: a side-effect-free function |
 
 | Return ||
 |---|---|

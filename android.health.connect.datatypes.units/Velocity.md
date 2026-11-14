@@ -4,7 +4,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # Velocity
 
-Kotlin| [Java](../android/health/connect/datatypes/units/Velocity.md) 
+Kotlin| [Java](Velocity.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class Velocity : Comparable<Velocity!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.health.connect.datatypes.units.Velocity](../android/health/connect/datatypes/units/Velocity.md) |
+| ↳ | [android.health.connect.datatypes.units.Velocity](Velocity.md) |
 
 Represents a unit of speed. Supported units: metersPerSecond
 
@@ -21,13 +21,13 @@ Represents a unit of speed. Supported units: metersPerSecond
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](../android/health/connect/datatypes/units/Velocity.md))`(`other:` ` [Velocity](../android/health/connect/datatypes/units/Velocity.md)`)` Compares this object with the specified object for order. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/health/connect/datatypes/units/Velocity.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| static [Velocity](../android/health/connect/datatypes/units/Velocity.md) | [fromMetersPerSecond](../android/health/connect/datatypes/units/Velocity.md))`(`value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Creates a Velocity object with the specified value in meters per second. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](Velocity.md))`(`other:` ` [Velocity](Velocity.md)`)` Compares this object with the specified object for order. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](Velocity.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| static [Velocity](Velocity.md) | [fromMetersPerSecond](Velocity.md))`(`value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Creates a Velocity object with the specified value in meters per second. |
 | --- | --- |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getInMetersPerSecond](../android/health/connect/datatypes/units/Velocity.md))`()` Returns velocity in meters per second |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/health/connect/datatypes/units/Velocity.md))`()` Returns a hash code value for the object. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/health/connect/datatypes/units/Velocity.md))`()` <br /> |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getInMetersPerSecond](Velocity.md))`()` Returns velocity in meters per second |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](Velocity.md))`()` Returns a hash code value for the object. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](Velocity.md))`()` <br /> |
 | --- | --- |
 
 ## Public methods
@@ -45,7 +45,7 @@ Compares this object with the specified object for order. Returns a negative int
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `o` | the object to be compared. |
-| `other` | [Velocity](../android/health/connect/datatypes/units/Velocity.md):the object to be compared. This value cannot be`null`. |
+| `other` | [Velocity](Velocity.md):the object to be compared. This value cannot be`null`. |
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
@@ -91,7 +91,7 @@ Creates a Velocity object with the specified value in meters per second.
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [Velocity](../android/health/connect/datatypes/units/Velocity.md) | This value cannot be`null`. |
+| [Velocity](Velocity.md) | This value cannot be`null`. |
 
 ### getInMetersPerSecond
 

@@ -4,7 +4,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 
 # ListPopupWindow
 
-Kotlin| [Java](../android/widget/ListPopupWindow.md) 
+Kotlin| [Java](ListPopupWindow.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class ListPopupWindow
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.widget.ListPopupWindow](../android/widget/ListPopupWindow.md) |
+| ↳ | [android.widget.ListPopupWindow](ListPopupWindow.md) |
 
 A ListPopupWindow anchors itself to a host view and displays a list of choices.
 
@@ -23,96 +23,96 @@ ListPopupWindow contains a number of tricky behaviors surrounding positioning, s
 
 | XML attributes ||
 |------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------|
-| [`android:dropDownHorizontalOffset`](../android/widget/ListPopupWindow.md) | Amount of pixels by which the drop down should be offset horizontally. |
-| [`android:dropDownVerticalOffset`](../android/widget/ListPopupWindow.md) | Amount of pixels by which the drop down should be offset vertically. |
+| [`android:dropDownHorizontalOffset`](ListPopupWindow.md) | Amount of pixels by which the drop down should be offset horizontally. |
+| [`android:dropDownVerticalOffset`](ListPopupWindow.md) | Amount of pixels by which the drop down should be offset vertically. |
 
 | Constants ||
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INPUT_METHOD_FROM_FOCUSABLE](../android/widget/ListPopupWindow.md) Mode for [setInputMethodMode(int)](../android/widget/ListPopupWindow.md)): the requirements for the input method should be based on the focusability of the popup. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INPUT_METHOD_NEEDED](../android/widget/ListPopupWindow.md) Mode for [setInputMethodMode(int)](../android/widget/ListPopupWindow.md)): this popup always needs to work with an input method, regardless of whether it is focusable. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INPUT_METHOD_NOT_NEEDED](../android/widget/ListPopupWindow.md) Mode for [setInputMethodMode(int)](../android/widget/ListPopupWindow.md)): this popup never needs to work with an input method, regardless of whether it is focusable. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INPUT_METHOD_FROM_FOCUSABLE](ListPopupWindow.md) Mode for [setInputMethodMode(int)](ListPopupWindow.md)): the requirements for the input method should be based on the focusability of the popup. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INPUT_METHOD_NEEDED](ListPopupWindow.md) Mode for [setInputMethodMode(int)](ListPopupWindow.md)): this popup always needs to work with an input method, regardless of whether it is focusable. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INPUT_METHOD_NOT_NEEDED](ListPopupWindow.md) Mode for [setInputMethodMode(int)](ListPopupWindow.md)): this popup never needs to work with an input method, regardless of whether it is focusable. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MATCH_PARENT](../android/widget/ListPopupWindow.md) Alias for [ViewGroup.LayoutParams.MATCH_PARENT](../android/view/ViewGroup.LayoutParams.md). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [POSITION_PROMPT_ABOVE](../android/widget/ListPopupWindow.md) The provided prompt view should appear above list content. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [POSITION_PROMPT_BELOW](../android/widget/ListPopupWindow.md) The provided prompt view should appear below list content. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MATCH_PARENT](ListPopupWindow.md) Alias for [ViewGroup.LayoutParams.MATCH_PARENT](../android/view/ViewGroup.LayoutParams.md). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [POSITION_PROMPT_ABOVE](ListPopupWindow.md) The provided prompt view should appear above list content. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [POSITION_PROMPT_BELOW](ListPopupWindow.md) The provided prompt view should appear below list content. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WRAP_CONTENT](../android/widget/ListPopupWindow.md) Alias for [ViewGroup.LayoutParams.WRAP_CONTENT](../android/view/ViewGroup.LayoutParams.md). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WRAP_CONTENT](ListPopupWindow.md) Alias for [ViewGroup.LayoutParams.WRAP_CONTENT](../android/view/ViewGroup.LayoutParams.md). |
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ListPopupWindow](../android/widget/ListPopupWindow.md))`(`context:` ` [Context](../android/content/Context.md)`)` Create a new, empty popup window capable of displaying items from a ListAdapter. |
-| [ListPopupWindow](../android/widget/ListPopupWindow.md))`(`context:` ` [Context](../android/content/Context.md)`, `attrs:` ` [AttributeSet](../android/util/AttributeSet.md)?`)` Create a new, empty popup window capable of displaying items from a ListAdapter. |
-| [ListPopupWindow](../android/widget/ListPopupWindow.md))`(`context:` ` [Context](../android/content/Context.md)`, `attrs:` ` [AttributeSet](../android/util/AttributeSet.md)?`, `defStyleAttr:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a new, empty popup window capable of displaying items from a ListAdapter. |
-| [ListPopupWindow](../android/widget/ListPopupWindow.md))`(`context:` ` [Context](../android/content/Context.md)`, `attrs:` ` [AttributeSet](../android/util/AttributeSet.md)?`, `defStyleAttr:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `defStyleRes:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a new, empty popup window capable of displaying items from a ListAdapter. |
+| [ListPopupWindow](ListPopupWindow.md))`(`context:` ` [Context](../android.content/Context.md)`)` Create a new, empty popup window capable of displaying items from a ListAdapter. |
+| [ListPopupWindow](ListPopupWindow.md))`(`context:` ` [Context](../android.content/Context.md)`, `attrs:` ` [AttributeSet](../android.util/AttributeSet.md)?`)` Create a new, empty popup window capable of displaying items from a ListAdapter. |
+| [ListPopupWindow](ListPopupWindow.md))`(`context:` ` [Context](../android.content/Context.md)`, `attrs:` ` [AttributeSet](../android.util/AttributeSet.md)?`, `defStyleAttr:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a new, empty popup window capable of displaying items from a ListAdapter. |
+| [ListPopupWindow](ListPopupWindow.md))`(`context:` ` [Context](../android.content/Context.md)`, `attrs:` ` [AttributeSet](../android.util/AttributeSet.md)?`, `defStyleAttr:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `defStyleRes:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Create a new, empty popup window capable of displaying items from a ListAdapter. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearListSelection](../android/widget/ListPopupWindow.md))`()` Clear any current list selection. |
-| open [View.OnTouchListener](../android/view/View.OnTouchListener.md)! | [createDragToOpenListener](../android/widget/ListPopupWindow.md))`(`src:` ` [View](../android/view/View.md)!`)` Returns an [OnTouchListener](../android/view/View.OnTouchListener.md) that can be added to the source view to implement drag-to-open behavior. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dismiss](../android/widget/ListPopupWindow.md))`()` Dismiss the popup window. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearListSelection](ListPopupWindow.md))`()` Clear any current list selection. |
+| open [View.OnTouchListener](../android/view/View.OnTouchListener.md)! | [createDragToOpenListener](ListPopupWindow.md))`(`src:` ` [View](../android.view/View.md)!`)` Returns an [OnTouchListener](../android/view/View.OnTouchListener.md) that can be added to the source view to implement drag-to-open behavior. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dismiss](ListPopupWindow.md))`()` Dismiss the popup window. |
 | --- | --- |
-| open [View](../android/view/View.md)? | [getAnchorView](../android/widget/ListPopupWindow.md))`()` Returns the view that will be used to anchor this popup. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAnimationStyle](../android/widget/ListPopupWindow.md))`()` Returns the animation style that will be used when the popup window is shown or dismissed. |
-| open [Drawable](../android/graphics/drawable/Drawable.md)? | [getBackground](../android/widget/ListPopupWindow.md))`()` <br /> |
+| open [View](../android.view/View.md)? | [getAnchorView](ListPopupWindow.md))`()` Returns the view that will be used to anchor this popup. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getAnimationStyle](ListPopupWindow.md))`()` Returns the animation style that will be used when the popup window is shown or dismissed. |
+| open [Drawable](../android.graphics.drawable/Drawable.md)? | [getBackground](ListPopupWindow.md))`()` <br /> |
 | --- | --- |
-| open [Rect](../android/graphics/Rect.md)? | [getEpicenterBounds](../android/widget/ListPopupWindow.md))`()` Returns bounds which are used as a popup's epicenter of the enter and exit transitions. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHeight](../android/widget/ListPopupWindow.md))`()` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHorizontalOffset](../android/widget/ListPopupWindow.md))`()` <br /> |
+| open [Rect](../android.graphics/Rect.md)? | [getEpicenterBounds](ListPopupWindow.md))`()` Returns bounds which are used as a popup's epicenter of the enter and exit transitions. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHeight](ListPopupWindow.md))`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHorizontalOffset](ListPopupWindow.md))`()` <br /> |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInputMethodMode](../android/widget/ListPopupWindow.md))`()` Return the current value in [setInputMethodMode(int)](../android/widget/ListPopupWindow.md)). |
-| open [ListView](../android/widget/ListView.md)? | [getListView](../android/widget/ListPopupWindow.md))`()` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPromptPosition](../android/widget/ListPopupWindow.md))`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInputMethodMode](ListPopupWindow.md))`()` Return the current value in [setInputMethodMode(int)](ListPopupWindow.md)). |
+| open [ListView](ListView.md)? | [getListView](ListPopupWindow.md))`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPromptPosition](ListPopupWindow.md))`()` <br /> |
 | --- | --- |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? | [getSelectedItem](../android/widget/ListPopupWindow.md))`()` <br /> |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getSelectedItemId](../android/widget/ListPopupWindow.md))`()` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSelectedItemPosition](../android/widget/ListPopupWindow.md))`()` <br /> |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)? | [getSelectedItem](ListPopupWindow.md))`()` <br /> |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getSelectedItemId](ListPopupWindow.md))`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSelectedItemPosition](ListPopupWindow.md))`()` <br /> |
 | --- | --- |
-| open [View](../android/view/View.md)? | [getSelectedView](../android/widget/ListPopupWindow.md))`()` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSoftInputMode](../android/widget/ListPopupWindow.md))`()` Returns the current value in [setSoftInputMode(int)](../android/widget/ListPopupWindow.md)). |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getVerticalOffset](../android/widget/ListPopupWindow.md))`()` <br /> |
+| open [View](../android.view/View.md)? | [getSelectedView](ListPopupWindow.md))`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSoftInputMode](ListPopupWindow.md))`()` Returns the current value in [setSoftInputMode(int)](ListPopupWindow.md)). |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getVerticalOffset](ListPopupWindow.md))`()` <br /> |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWidth](../android/widget/ListPopupWindow.md))`()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isInputMethodNotNeeded](../android/widget/ListPopupWindow.md))`()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isModal](../android/widget/ListPopupWindow.md))`()` Returns whether the popup window will be modal when shown. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWidth](ListPopupWindow.md))`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isInputMethodNotNeeded](ListPopupWindow.md))`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isModal](ListPopupWindow.md))`()` Returns whether the popup window will be modal when shown. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isShowing](../android/widget/ListPopupWindow.md))`()` <br /> |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onKeyDown](../android/widget/ListPopupWindow.md))`(`keyCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `event:` ` [KeyEvent](../android/view/KeyEvent.md)`)` Filter key down events. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onKeyPreIme](../android/widget/ListPopupWindow.md))`(`keyCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `event:` ` [KeyEvent](../android/view/KeyEvent.md)`)` Filter pre-IME key events. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isShowing](ListPopupWindow.md))`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onKeyDown](ListPopupWindow.md))`(`keyCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `event:` ` [KeyEvent](../android.view/KeyEvent.md)`)` Filter key down events. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onKeyPreIme](ListPopupWindow.md))`(`keyCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `event:` ` [KeyEvent](../android.view/KeyEvent.md)`)` Filter pre-IME key events. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onKeyUp](../android/widget/ListPopupWindow.md))`(`keyCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `event:` ` [KeyEvent](../android/view/KeyEvent.md)`)` Filter key up events. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [performItemClick](../android/widget/ListPopupWindow.md))`(`position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Perform an item click operation on the specified list adapter position. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [postShow](../android/widget/ListPopupWindow.md))`()` Post a [show()](../android/widget/ListPopupWindow.md))call to the UI thread. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onKeyUp](ListPopupWindow.md))`(`keyCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `event:` ` [KeyEvent](../android.view/KeyEvent.md)`)` Filter key up events. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [performItemClick](ListPopupWindow.md))`(`position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Perform an item click operation on the specified list adapter position. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [postShow](ListPopupWindow.md))`()` Post a [show()](ListPopupWindow.md))call to the UI thread. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAdapter](../android/widget/ListPopupWindow.md))`(`adapter:` ` [ListAdapter](../android/widget/ListAdapter.md)?`)` Sets the adapter that provides the data and the views to represent the data in this popup window. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAnchorView](../android/widget/ListPopupWindow.md))`(`anchor:` ` [View](../android/view/View.md)?`)` Sets the popup's anchor view. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAnimationStyle](../android/widget/ListPopupWindow.md))`(`animationStyle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set an animation style to use when the popup window is shown or dismissed. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAdapter](ListPopupWindow.md))`(`adapter:` ` [ListAdapter](ListAdapter.md)?`)` Sets the adapter that provides the data and the views to represent the data in this popup window. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAnchorView](ListPopupWindow.md))`(`anchor:` ` [View](../android.view/View.md)?`)` Sets the popup's anchor view. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAnimationStyle](ListPopupWindow.md))`(`animationStyle:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set an animation style to use when the popup window is shown or dismissed. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setBackgroundDrawable](../android/widget/ListPopupWindow.md))`(`d:` ` [Drawable](../android/graphics/drawable/Drawable.md)?`)` Sets a drawable to be the background for the popup window. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setContentWidth](../android/widget/ListPopupWindow.md))`(`width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the width of the popup window by the size of its content. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDropDownGravity](../android/widget/ListPopupWindow.md))`(`gravity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the gravity of the dropdown list. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setBackgroundDrawable](ListPopupWindow.md))`(`d:` ` [Drawable](../android.graphics.drawable/Drawable.md)?`)` Sets a drawable to be the background for the popup window. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setContentWidth](ListPopupWindow.md))`(`width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the width of the popup window by the size of its content. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDropDownGravity](ListPopupWindow.md))`(`gravity:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the gravity of the dropdown list. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEpicenterBounds](../android/widget/ListPopupWindow.md))`(`bounds:` ` [Rect](../android/graphics/Rect.md)?`)` Specifies the anchor-relative bounds of the popup's transition epicenter. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setHeight](../android/widget/ListPopupWindow.md))`(`height:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the height of the popup window in pixels. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setHorizontalOffset](../android/widget/ListPopupWindow.md))`(`offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the horizontal offset of this popup from its anchor view in pixels. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEpicenterBounds](ListPopupWindow.md))`(`bounds:` ` [Rect](../android.graphics/Rect.md)?`)` Specifies the anchor-relative bounds of the popup's transition epicenter. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setHeight](ListPopupWindow.md))`(`height:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the height of the popup window in pixels. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setHorizontalOffset](ListPopupWindow.md))`(`offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the horizontal offset of this popup from its anchor view in pixels. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInputMethodMode](../android/widget/ListPopupWindow.md))`(`mode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Control how the popup operates with an input method: one of [INPUT_METHOD_FROM_FOCUSABLE](../android/widget/ListPopupWindow.md), [INPUT_METHOD_NEEDED](../android/widget/ListPopupWindow.md), or [INPUT_METHOD_NOT_NEEDED](../android/widget/ListPopupWindow.md). |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setListSelector](../android/widget/ListPopupWindow.md))`(`selector:` ` [Drawable](../android/graphics/drawable/Drawable.md)!`)` Sets a drawable to use as the list item selector. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setModal](../android/widget/ListPopupWindow.md))`(`modal:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Set whether this window should be modal when shown. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setInputMethodMode](ListPopupWindow.md))`(`mode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Control how the popup operates with an input method: one of [INPUT_METHOD_FROM_FOCUSABLE](ListPopupWindow.md), [INPUT_METHOD_NEEDED](ListPopupWindow.md), or [INPUT_METHOD_NOT_NEEDED](ListPopupWindow.md). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setListSelector](ListPopupWindow.md))`(`selector:` ` [Drawable](../android.graphics.drawable/Drawable.md)!`)` Sets a drawable to use as the list item selector. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setModal](ListPopupWindow.md))`(`modal:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Set whether this window should be modal when shown. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOnDismissListener](../android/widget/ListPopupWindow.md))`(`listener:` ` [PopupWindow.OnDismissListener](../android/widget/PopupWindow.OnDismissListener.md)?`)` Set a listener to receive a callback when the popup is dismissed. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOnItemClickListener](../android/widget/ListPopupWindow.md))`(`clickListener:` ` [AdapterView.OnItemClickListener](../android/widget/AdapterView.OnItemClickListener.md)?`)` Sets a listener to receive events when a list item is clicked. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOnItemSelectedListener](../android/widget/ListPopupWindow.md))`(`selectedListener:` ` [AdapterView.OnItemSelectedListener](../android/widget/AdapterView.OnItemSelectedListener.md)?`)` Sets a listener to receive events when a list item is selected. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOnDismissListener](ListPopupWindow.md))`(`listener:` ` [PopupWindow.OnDismissListener](../android/widget/PopupWindow.OnDismissListener.md)?`)` Set a listener to receive a callback when the popup is dismissed. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOnItemClickListener](ListPopupWindow.md))`(`clickListener:` ` [AdapterView.OnItemClickListener](../android/widget/AdapterView.OnItemClickListener.md)?`)` Sets a listener to receive events when a list item is clicked. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOnItemSelectedListener](ListPopupWindow.md))`(`selectedListener:` ` [AdapterView.OnItemSelectedListener](../android/widget/AdapterView.OnItemSelectedListener.md)?`)` Sets a listener to receive events when a list item is selected. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPromptPosition](../android/widget/ListPopupWindow.md))`(`position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set where the optional prompt view should appear. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPromptView](../android/widget/ListPopupWindow.md))`(`prompt:` ` [View](../android/view/View.md)?`)` Set a view to act as a user prompt for this popup window. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSelection](../android/widget/ListPopupWindow.md))`(`position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the selected position of the list. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPromptPosition](ListPopupWindow.md))`(`position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set where the optional prompt view should appear. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPromptView](ListPopupWindow.md))`(`prompt:` ` [View](../android.view/View.md)?`)` Set a view to act as a user prompt for this popup window. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSelection](ListPopupWindow.md))`(`position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the selected position of the list. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSoftInputMode](../android/widget/ListPopupWindow.md))`(`mode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the operating mode for the soft input area. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setVerticalOffset](../android/widget/ListPopupWindow.md))`(`offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the vertical offset of this popup from its anchor view in pixels. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setWidth](../android/widget/ListPopupWindow.md))`(`width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the width of the popup window in pixels. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSoftInputMode](ListPopupWindow.md))`(`mode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the operating mode for the soft input area. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setVerticalOffset](ListPopupWindow.md))`(`offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the vertical offset of this popup from its anchor view in pixels. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setWidth](ListPopupWindow.md))`(`width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the width of the popup window in pixels. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setWindowLayoutType](../android/widget/ListPopupWindow.md))`(`layoutType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the layout type for this popup window. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [show](../android/widget/ListPopupWindow.md))`()` Show the popup list. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setWindowLayoutType](ListPopupWindow.md))`(`layoutType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the layout type for this popup window. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [show](ListPopupWindow.md))`()` Show the popup list. |
 
 ## XML attributes
 
@@ -144,7 +144,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 static val INPUT_METHOD_FROM_FOCUSABLE: Int
 ```
 
-Mode for [setInputMethodMode(int)](../android/widget/ListPopupWindow.md)): the requirements for the input method should be based on the focusability of the popup. That is if it is focusable than it needs to work with the input method, else it doesn't. 
+Mode for [setInputMethodMode(int)](ListPopupWindow.md)): the requirements for the input method should be based on the focusability of the popup. That is if it is focusable than it needs to work with the input method, else it doesn't. 
 
  Value: 0
 
@@ -156,7 +156,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 static val INPUT_METHOD_NEEDED: Int
 ```
 
-Mode for [setInputMethodMode(int)](../android/widget/ListPopupWindow.md)): this popup always needs to work with an input method, regardless of whether it is focusable. This means that it will always be displayed so that the user can also operate the input method while it is shown. 
+Mode for [setInputMethodMode(int)](ListPopupWindow.md)): this popup always needs to work with an input method, regardless of whether it is focusable. This means that it will always be displayed so that the user can also operate the input method while it is shown. 
 
  Value: 1
 
@@ -168,7 +168,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 static val INPUT_METHOD_NOT_NEEDED: Int
 ```
 
-Mode for [setInputMethodMode(int)](../android/widget/ListPopupWindow.md)): this popup never needs to work with an input method, regardless of whether it is focusable. This means that it will always be displayed to use as much space on the screen as needed, regardless of whether this covers the input method. 
+Mode for [setInputMethodMode(int)](ListPopupWindow.md)): this popup never needs to work with an input method, regardless of whether it is focusable. This means that it will always be displayed to use as much space on the screen as needed, regardless of whether this covers the input method. 
 
  Value: 2
 
@@ -198,9 +198,9 @@ The provided prompt view should appear above list content.
 
 **See Also**
 
-- [#setPromptPosition(int)](../android/widget/ListPopupWindow.md))
+- [#setPromptPosition(int)](ListPopupWindow.md))
 - <https://developer.android.com/reference/kotlin/android/widget/ListPopupWindow#getPromptPosition()>
-- [#setPromptView(View)](../android/widget/ListPopupWindow.md)) 
+- [#setPromptView(View)](ListPopupWindow.md)) 
 
 ### POSITION_PROMPT_BELOW
 
@@ -216,9 +216,9 @@ The provided prompt view should appear below list content.
 
 **See Also**
 
-- [#setPromptPosition(int)](../android/widget/ListPopupWindow.md))
+- [#setPromptPosition(int)](ListPopupWindow.md))
 - <https://developer.android.com/reference/kotlin/android/widget/ListPopupWindow#getPromptPosition()>
-- [#setPromptView(View)](../android/widget/ListPopupWindow.md)) 
+- [#setPromptView(View)](ListPopupWindow.md)) 
 
 ### WRAP_CONTENT
 
@@ -242,11 +242,11 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 ListPopupWindow(context: Context)
 ```
 
-Create a new, empty popup window capable of displaying items from a ListAdapter. Backgrounds should be set using [setBackgroundDrawable(android.graphics.drawable.Drawable)](../android/widget/ListPopupWindow.md)).
+Create a new, empty popup window capable of displaying items from a ListAdapter. Backgrounds should be set using [setBackgroundDrawable(android.graphics.drawable.Drawable)](ListPopupWindow.md)).
 
 | Parameters ||
 |-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](../android/content/Context.md):Context used for contained views. This value cannot be`null`. |
+| `context` | [Context](../android.content/Context.md):Context used for contained views. This value cannot be`null`. |
 
 ### ListPopupWindow
 
@@ -258,12 +258,12 @@ ListPopupWindow(
     attrs: AttributeSet?)
 ```
 
-Create a new, empty popup window capable of displaying items from a ListAdapter. Backgrounds should be set using [setBackgroundDrawable(android.graphics.drawable.Drawable)](../android/widget/ListPopupWindow.md)).
+Create a new, empty popup window capable of displaying items from a ListAdapter. Backgrounds should be set using [setBackgroundDrawable(android.graphics.drawable.Drawable)](ListPopupWindow.md)).
 
 | Parameters ||
 |-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](../android/content/Context.md):Context used for contained views. This value cannot be`null`. |
-| `attrs` | [AttributeSet](../android/util/AttributeSet.md)?:Attributes from inflating parent views used to style the popup. This value may be`null`. |
+| `context` | [Context](../android.content/Context.md):Context used for contained views. This value cannot be`null`. |
+| `attrs` | [AttributeSet](../android.util/AttributeSet.md)?:Attributes from inflating parent views used to style the popup. This value may be`null`. |
 
 ### ListPopupWindow
 
@@ -276,12 +276,12 @@ ListPopupWindow(
     defStyleAttr: Int)
 ```
 
-Create a new, empty popup window capable of displaying items from a ListAdapter. Backgrounds should be set using [setBackgroundDrawable(android.graphics.drawable.Drawable)](../android/widget/ListPopupWindow.md)).
+Create a new, empty popup window capable of displaying items from a ListAdapter. Backgrounds should be set using [setBackgroundDrawable(android.graphics.drawable.Drawable)](ListPopupWindow.md)).
 
 | Parameters ||
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](../android/content/Context.md):Context used for contained views. This value cannot be`null`. |
-| `attrs` | [AttributeSet](../android/util/AttributeSet.md)?:Attributes from inflating parent views used to style the popup. This value may be`null`. |
+| `context` | [Context](../android.content/Context.md):Context used for contained views. This value cannot be`null`. |
+| `attrs` | [AttributeSet](../android.util/AttributeSet.md)?:Attributes from inflating parent views used to style the popup. This value may be`null`. |
 | `defStyleAttr` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Default style attribute to use for popup content. |
 | --- | --- |
 
@@ -297,12 +297,12 @@ ListPopupWindow(
     defStyleRes: Int)
 ```
 
-Create a new, empty popup window capable of displaying items from a ListAdapter. Backgrounds should be set using [setBackgroundDrawable(android.graphics.drawable.Drawable)](../android/widget/ListPopupWindow.md)).
+Create a new, empty popup window capable of displaying items from a ListAdapter. Backgrounds should be set using [setBackgroundDrawable(android.graphics.drawable.Drawable)](ListPopupWindow.md)).
 
 | Parameters ||
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](../android/content/Context.md):Context used for contained views. This value cannot be`null`. |
-| `attrs` | [AttributeSet](../android/util/AttributeSet.md)?:Attributes from inflating parent views used to style the popup. This value may be`null`. |
+| `context` | [Context](../android.content/Context.md):Context used for contained views. This value cannot be`null`. |
+| `attrs` | [AttributeSet](../android.util/AttributeSet.md)?:Attributes from inflating parent views used to style the popup. This value may be`null`. |
 | `defStyleAttr` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Style attribute to read for default styling of popup content. |
 | --- | --- |
 | `defStyleRes` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Style resource ID to use for default styling of popup content. |
@@ -317,7 +317,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 open fun clearListSelection(): Unit
 ```
 
-Clear any current list selection. Only valid when [isShowing()](../android/widget/ListPopupWindow.md))==`true`. 
+Clear any current list selection. Only valid when [isShowing()](ListPopupWindow.md))==`true`. 
 
 ### createDragToOpenListener
 
@@ -327,7 +327,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 open fun createDragToOpenListener(src: View!): View.OnTouchListener!
 ```
 
-Returns an [OnTouchListener](../android/view/View.OnTouchListener.md) that can be added to the source view to implement drag-to-open behavior. Generally, the source view should be the same view that was passed to [setAnchorView](../android/widget/ListPopupWindow.md)).
+Returns an [OnTouchListener](../android/view/View.OnTouchListener.md) that can be added to the source view to implement drag-to-open behavior. Generally, the source view should be the same view that was passed to [setAnchorView](ListPopupWindow.md)).
 
 When the listener is set on a view, touching that view and dragging outside of its bounds will open the popup window. Lifting will select the currently touched list item.
 
@@ -343,7 +343,7 @@ ListPopupWindow myPopup = new ListPopupWindow(context);
 
 | Parameters ||
 |-------|--------------------------------------------------------------------------------------------------------------------------------------|
-| `src` | [View](../android/view/View.md)!:the view on which the resulting listener will be set |
+| `src` | [View](../android.view/View.md)!:the view on which the resulting listener will be set |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
@@ -371,7 +371,7 @@ Returns the view that will be used to anchor this popup.
 
 | Return ||
 |---------------------------------------------------------------------------------|--------------------------------------------------|
-| [View](../android/view/View.md)? | The popup's anchor view This value may be`null`. |
+| [View](../android.view/View.md)? | The popup's anchor view This value may be`null`. |
 
 ### getAnimationStyle
 
@@ -397,7 +397,7 @@ open fun getBackground(): Drawable?
 
 | Return ||
 |------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------|
-| [Drawable](../android/graphics/drawable/Drawable.md)? | The background drawable for the popup window. This value may be`null`. |
+| [Drawable](../android.graphics.drawable/Drawable.md)? | The background drawable for the popup window. This value may be`null`. |
 
 ### getEpicenterBounds
 
@@ -411,11 +411,11 @@ Returns bounds which are used as a popup's epicenter of the enter and exit trans
 
 | Return ||
 |-------------------------------------------------------------------------------------|----------------------------------------------------|
-| [Rect](../android/graphics/Rect.md)? | bounds relative to anchor view, or`null`if not set |
+| [Rect](../android.graphics/Rect.md)? | bounds relative to anchor view, or`null`if not set |
 
 **See Also**
 
-- [#setEpicenterBounds(Rect)](../android/widget/ListPopupWindow.md)) 
+- [#setEpicenterBounds(Rect)](ListPopupWindow.md)) 
 
 ### getHeight
 
@@ -449,10 +449,10 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 open fun getInputMethodMode(): Int
 ```
 
-Return the current value in [setInputMethodMode(int)](../android/widget/ListPopupWindow.md)). 
+Return the current value in [setInputMethodMode(int)](ListPopupWindow.md)). 
 **See Also**
 
-- [#setInputMethodMode(int)](../android/widget/ListPopupWindow.md)) 
+- [#setInputMethodMode(int)](ListPopupWindow.md)) 
 
 ### getListView
 
@@ -464,7 +464,7 @@ open fun getListView(): ListView?
 
 | Return ||
 |-------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [ListView](../android/widget/ListView.md)? | The [ListView](../android/widget/ListView.md) displayed within the popup window. Only valid when [isShowing()](../android/widget/ListPopupWindow.md))==`true`. This value may be`null`. |
+| [ListView](ListView.md)? | The [ListView](ListView.md) displayed within the popup window. Only valid when [isShowing()](ListPopupWindow.md))==`true`. This value may be`null`. |
 
 ### getPromptPosition
 
@@ -480,8 +480,8 @@ open fun getPromptPosition(): Int
 
 **See Also**
 
-- [#POSITION_PROMPT_ABOVE](../android/widget/ListPopupWindow.md)
-- [#POSITION_PROMPT_BELOW](../android/widget/ListPopupWindow.md) 
+- [#POSITION_PROMPT_ABOVE](ListPopupWindow.md)
+- [#POSITION_PROMPT_BELOW](ListPopupWindow.md) 
 
 ### getSelectedItem
 
@@ -505,11 +505,11 @@ open fun getSelectedItemId(): Long
 
 | Return ||
 |------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | The ID of the currently selected item or [ListView.INVALID_ROW_ID](../android/widget/AdapterView.md) if [isShowing()](../android/widget/ListPopupWindow.md))==`false`. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | The ID of the currently selected item or [ListView.INVALID_ROW_ID](AdapterView.md) if [isShowing()](ListPopupWindow.md))==`false`. |
 
 **See Also**
 
-- [android.widget.ListView#getSelectedItemId()](../android/widget/AdapterView.md)) 
+- [android.widget.ListView#getSelectedItemId()](AdapterView.md)) 
 
 ### getSelectedItemPosition
 
@@ -521,11 +521,11 @@ open fun getSelectedItemPosition(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The position of the currently selected item or [ListView.INVALID_POSITION](../android/widget/AdapterView.md) if [isShowing()](../android/widget/ListPopupWindow.md))==`false`. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The position of the currently selected item or [ListView.INVALID_POSITION](AdapterView.md) if [isShowing()](ListPopupWindow.md))==`false`. |
 
 **See Also**
 
-- [android.widget.ListView#getSelectedItemPosition()](../android/widget/AdapterView.md)) 
+- [android.widget.ListView#getSelectedItemPosition()](AdapterView.md)) 
 
 ### getSelectedView
 
@@ -537,11 +537,11 @@ open fun getSelectedView(): View?
 
 | Return ||
 |---------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [View](../android/view/View.md)? | The View for the currently selected item or null if [isShowing()](../android/widget/ListPopupWindow.md))==`false`. |
+| [View](../android.view/View.md)? | The View for the currently selected item or null if [isShowing()](ListPopupWindow.md))==`false`. |
 
 **See Also**
 
-- [android.widget.ListView#getSelectedView()](../android/widget/AbsListView.md)) 
+- [android.widget.ListView#getSelectedView()](AbsListView.md)) 
 
 ### getSoftInputMode
 
@@ -551,10 +551,10 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 open fun getSoftInputMode(): Int
 ```
 
-Returns the current value in [setSoftInputMode(int)](../android/widget/ListPopupWindow.md)). 
+Returns the current value in [setSoftInputMode(int)](ListPopupWindow.md)). 
 **See Also**
 
-- [#setSoftInputMode(int)](../android/widget/ListPopupWindow.md))
+- [#setSoftInputMode(int)](ListPopupWindow.md))
 - [android.view.WindowManager.LayoutParams#softInputMode](../android/view/WindowManager.LayoutParams.md) 
 
 ### getVerticalOffset
@@ -635,7 +635,7 @@ Filter key down events. By forwarding key down events to this function, views us
 | Parameters ||
 |-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `keyCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):keyCode param passed to the host view's onKeyDown |
-| `event` | [KeyEvent](../android/view/KeyEvent.md):event param passed to the host view's onKeyDown This value cannot be`null`. |
+| `event` | [KeyEvent](../android.view/KeyEvent.md):event param passed to the host view's onKeyDown This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------|
@@ -643,8 +643,8 @@ Filter key down events. By forwarding key down events to this function, views us
 
 **See Also**
 
-- [#setModal(boolean)](../android/widget/ListPopupWindow.md))
-- [#onKeyUp(int, KeyEvent)](../android/widget/ListPopupWindow.md)) 
+- [#setModal(boolean)](ListPopupWindow.md))
+- [#onKeyUp(int, KeyEvent)](ListPopupWindow.md)) 
 
 ### onKeyPreIme
 
@@ -657,12 +657,12 @@ open fun onKeyPreIme(
 ): Boolean
 ```
 
-Filter pre-IME key events. By forwarding [View.onKeyPreIme(int, KeyEvent)](../android/view/View.md))events to this function, views using ListPopupWindow can have it dismiss the popup when the back key is pressed.
+Filter pre-IME key events. By forwarding [View.onKeyPreIme(int, KeyEvent)](../android.view/View.md))events to this function, views using ListPopupWindow can have it dismiss the popup when the back key is pressed.
 
 | Parameters ||
 |-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `keyCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):keyCode param passed to the host view's onKeyPreIme |
-| `event` | [KeyEvent](../android/view/KeyEvent.md):event param passed to the host view's onKeyPreIme This value cannot be`null`. |
+| `event` | [KeyEvent](../android.view/KeyEvent.md):event param passed to the host view's onKeyPreIme This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------|
@@ -670,7 +670,7 @@ Filter pre-IME key events. By forwarding [View.onKeyPreIme(int, KeyEvent)](../an
 
 **See Also**
 
-- [#setModal(boolean)](../android/widget/ListPopupWindow.md)) 
+- [#setModal(boolean)](ListPopupWindow.md)) 
 
 ### onKeyUp
 
@@ -688,7 +688,7 @@ Filter key up events. By forwarding key up events to this function, views using 
 | Parameters ||
 |-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `keyCode` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):keyCode param passed to the host view's onKeyUp |
-| `event` | [KeyEvent](../android/view/KeyEvent.md):event param passed to the host view's onKeyUp This value cannot be`null`. |
+| `event` | [KeyEvent](../android.view/KeyEvent.md):event param passed to the host view's onKeyUp This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------|
@@ -696,8 +696,8 @@ Filter key up events. By forwarding key up events to this function, views using 
 
 **See Also**
 
-- [#setModal(boolean)](../android/widget/ListPopupWindow.md))
-- [#onKeyDown(int, KeyEvent)](../android/widget/ListPopupWindow.md)) 
+- [#setModal(boolean)](ListPopupWindow.md))
+- [#onKeyDown(int, KeyEvent)](ListPopupWindow.md)) 
 
 ### performItemClick
 
@@ -725,7 +725,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 open fun postShow(): Unit
 ```
 
-Post a [show()](../android/widget/ListPopupWindow.md))call to the UI thread. 
+Post a [show()](ListPopupWindow.md))call to the UI thread. 
 
 ### setAdapter
 
@@ -739,7 +739,7 @@ Sets the adapter that provides the data and the views to represent the data in t
 
 | Parameters ||
 |-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `adapter` | [ListAdapter](../android/widget/ListAdapter.md)?:The adapter to use to create this window's content. This value may be`null`. |
+| `adapter` | [ListAdapter](ListAdapter.md)?:The adapter to use to create this window's content. This value may be`null`. |
 
 ### setAnchorView
 
@@ -753,7 +753,7 @@ Sets the popup's anchor view. This popup will always be positioned relative to t
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------|
-| `anchor` | [View](../android/view/View.md)?:The view to use as an anchor. This value may be`null`. |
+| `anchor` | [View](../android.view/View.md)?:The view to use as an anchor. This value may be`null`. |
 
 ### setAnimationStyle
 
@@ -781,7 +781,7 @@ Sets a drawable to be the background for the popup window.
 
 | Parameters ||
 |-----|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `d` | [Drawable](../android/graphics/drawable/Drawable.md)?:A drawable to set as the background. This value may be`null`. |
+| `d` | [Drawable](../android.graphics.drawable/Drawable.md)?:A drawable to set as the background. This value may be`null`. |
 
 ### setContentWidth
 
@@ -823,7 +823,7 @@ Specifies the anchor-relative bounds of the popup's transition epicenter.
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| `bounds` | [Rect](../android/graphics/Rect.md)?:anchor-relative bounds, or`null`to use default epicenter |
+| `bounds` | [Rect](../android.graphics/Rect.md)?:anchor-relative bounds, or`null`to use default epicenter |
 
 **See Also**
 
@@ -837,11 +837,11 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 open fun setHeight(height: Int): Unit
 ```
 
-Sets the height of the popup window in pixels. Can also be [MATCH_PARENT](../android/widget/ListPopupWindow.md).
+Sets the height of the popup window in pixels. Can also be [MATCH_PARENT](ListPopupWindow.md).
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `height` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Height of the popup window must be a positive value, [MATCH_PARENT](../android/widget/ListPopupWindow.md), or [WRAP_CONTENT](../android/widget/ListPopupWindow.md). |
+| `height` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Height of the popup window must be a positive value, [MATCH_PARENT](ListPopupWindow.md), or [WRAP_CONTENT](ListPopupWindow.md). |
 
 | Exceptions ||
 |--------------------------------------|------------------------------------|
@@ -869,9 +869,9 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 open fun setInputMethodMode(mode: Int): Unit
 ```
 
-Control how the popup operates with an input method: one of [INPUT_METHOD_FROM_FOCUSABLE](../android/widget/ListPopupWindow.md), [INPUT_METHOD_NEEDED](../android/widget/ListPopupWindow.md), or [INPUT_METHOD_NOT_NEEDED](../android/widget/ListPopupWindow.md).
+Control how the popup operates with an input method: one of [INPUT_METHOD_FROM_FOCUSABLE](ListPopupWindow.md), [INPUT_METHOD_NEEDED](ListPopupWindow.md), or [INPUT_METHOD_NOT_NEEDED](ListPopupWindow.md).
 
-If the popup is showing, calling this method will take effect only the next time the popup is shown or through a manual call to the [show()](../android/widget/ListPopupWindow.md))method. 
+If the popup is showing, calling this method will take effect only the next time the popup is shown or through a manual call to the [show()](ListPopupWindow.md))method. 
 **See Also**
 
 - <https://developer.android.com/reference/kotlin/android/widget/ListPopupWindow#getInputMethodMode()>
@@ -889,7 +889,7 @@ Sets a drawable to use as the list item selector.
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| `selector` | [Drawable](../android/graphics/drawable/Drawable.md)!:List selector drawable to use in the popup. |
+| `selector` | [Drawable](../android.graphics.drawable/Drawable.md)!:List selector drawable to use in the popup. |
 
 ### setModal
 
@@ -937,7 +937,7 @@ Sets a listener to receive events when a list item is clicked.
 
 **See Also**
 
-- [android.widget.ListView#setOnItemClickListener(android.widget.AdapterView.OnItemClickListener)](../android/widget/AdapterView.md)) 
+- [android.widget.ListView#setOnItemClickListener(android.widget.AdapterView.OnItemClickListener)](AdapterView.md)) 
 
 ### setOnItemSelectedListener
 
@@ -955,7 +955,7 @@ Sets a listener to receive events when a list item is selected.
 
 **See Also**
 
-- [android.widget.ListView#setOnItemSelectedListener(OnItemSelectedListener)](../android/widget/AdapterView.md)) 
+- [android.widget.ListView#setOnItemSelectedListener(OnItemSelectedListener)](AdapterView.md)) 
 
 ### setPromptPosition
 
@@ -965,7 +965,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 open fun setPromptPosition(position: Int): Unit
 ```
 
-Set where the optional prompt view should appear. The default is [POSITION_PROMPT_ABOVE](../android/widget/ListPopupWindow.md).
+Set where the optional prompt view should appear. The default is [POSITION_PROMPT_ABOVE](ListPopupWindow.md).
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -973,8 +973,8 @@ Set where the optional prompt view should appear. The default is [POSITION_PROMP
 
 **See Also**
 
-- [#POSITION_PROMPT_ABOVE](../android/widget/ListPopupWindow.md)
-- [#POSITION_PROMPT_BELOW](../android/widget/ListPopupWindow.md) 
+- [#POSITION_PROMPT_ABOVE](ListPopupWindow.md)
+- [#POSITION_PROMPT_BELOW](ListPopupWindow.md) 
 
 ### setPromptView
 
@@ -984,11 +984,11 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 open fun setPromptView(prompt: View?): Unit
 ```
 
-Set a view to act as a user prompt for this popup window. Where the prompt view will appear is controlled by [setPromptPosition(int)](../android/widget/ListPopupWindow.md)).
+Set a view to act as a user prompt for this popup window. Where the prompt view will appear is controlled by [setPromptPosition(int)](ListPopupWindow.md)).
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| `prompt` | [View](../android/view/View.md)?:View to use as an informational prompt. This value may be`null`. |
+| `prompt` | [View](../android.view/View.md)?:View to use as an informational prompt. This value may be`null`. |
 
 ### setSelection
 
@@ -998,7 +998,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 open fun setSelection(position: Int): Unit
 ```
 
-Set the selected position of the list. Only valid when [isShowing()](../android/widget/ListPopupWindow.md))==`true`.
+Set the selected position of the list. Only valid when [isShowing()](ListPopupWindow.md))==`true`.
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------|
@@ -1045,7 +1045,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 open fun setWidth(width: Int): Unit
 ```
 
-Sets the width of the popup window in pixels. Can also be [MATCH_PARENT](../android/widget/ListPopupWindow.md) or [WRAP_CONTENT](../android/widget/ListPopupWindow.md).
+Sets the width of the popup window in pixels. Can also be [MATCH_PARENT](ListPopupWindow.md) or [WRAP_CONTENT](ListPopupWindow.md).
 
 | Parameters ||
 |---------|-------------------------------------------------------------------------------------------------------|

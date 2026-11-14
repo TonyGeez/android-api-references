@@ -8,16 +8,16 @@ class InputMethodManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.inputmethod.InputMethodManager](../android/view/inputmethod/InputMethodManager.md) |
+| ↳ | [android.view.inputmethod.InputMethodManager](InputMethodManager.md) |
 
 Central system API to the overall input method framework (IMF) architecture, which arbitrates interaction between applications and the current input method.
 
 Topics covered here:
 
-1. [Architecture Overview](../android/view/inputmethod/InputMethodManager.md)
-2. [Applications](../android/view/inputmethod/InputMethodManager.md)
-3. [Input Methods](../android/view/inputmethod/InputMethodManager.md)
-4. [Security](../android/view/inputmethod/InputMethodManager.md)
+1. [Architecture Overview](InputMethodManager.md)
+2. [Applications](InputMethodManager.md)
+3. [Input Methods](InputMethodManager.md)
+4. [Security](InputMethodManager.md)
 
 ### Architecture Overview
 
@@ -95,17 +95,17 @@ Requires the `https://developer.android.com/reference/kotlin/android/content/pm/
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#dispatchKeyEventFromInputMethod(android.view.View,%20android.view.KeyEvent)(targetView: https://developer.android.com/reference/kotlin/android/view/View.html#?, event: https://developer.android.com/reference/kotlin/android/view/KeyEvent.html#)` Provides the default implementation of `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection#sendKeyEvent(android.view.KeyEvent)`, which is expected to dispatch an keyboard event sent from the IME to an appropriate event target depending on the given `https://developer.android.com/reference/kotlin/android/view/View.html#` and the current focus state. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#displayCompletions(android.view.View,%20kotlin.Array)(view: https://developer.android.com/reference/kotlin/android/view/View.html#!, completions: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/android/view/inputmethod/CompletionInfo!>!)` <br /> |
 | --- | --- |
-| [InputMethodInfo](../android/view/inputmethod/InputMethodInfo.md)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#getCurrentInputMethodInfo()()` Returns the `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo` of the currently selected input method (for the process's user). |
-| [InputMethodSubtype](../android/view/inputmethod/InputMethodSubtype.md)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#getCurrentInputMethodSubtype()()` Returns the current input method subtype. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [InputMethodInfo](../android/view/inputmethod/InputMethodInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#getEnabledInputMethodList()()` Returns the list of enabled input methods. |
+| [InputMethodInfo](InputMethodInfo.md)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#getCurrentInputMethodInfo()()` Returns the `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo` of the currently selected input method (for the process's user). |
+| [InputMethodSubtype](InputMethodSubtype.md)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#getCurrentInputMethodSubtype()()` Returns the current input method subtype. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [InputMethodInfo](InputMethodInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#getEnabledInputMethodList()()` Returns the list of enabled input methods. |
 | --- | --- |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [InputMethodSubtype](../android/view/inputmethod/InputMethodSubtype.md)!\> | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#getEnabledInputMethodSubtypeList(android.view.inputmethod.InputMethodInfo,%20kotlin.Boolean)(imi: https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo?, allowsImplicitlyEnabledSubtypes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Returns a list of enabled input method subtypes for the specified input method info. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [InputMethodSubtype](InputMethodSubtype.md)!\> | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#getEnabledInputMethodSubtypeList(android.view.inputmethod.InputMethodInfo,%20kotlin.Boolean)(imi: https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo?, allowsImplicitlyEnabledSubtypes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Returns a list of enabled input method subtypes for the specified input method info. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#getImeHideAnimationDurationOverrideMillis(android.view.View)(view: https://developer.android.com/reference/kotlin/android/view/View.html#)` Returns the IME hide animation duration override for a given view tree in milliseconds. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#getImeShowAnimationDurationOverrideMillis(android.view.View)(view: https://developer.android.com/reference/kotlin/android/view/View.html#)` Returns the IME show animation duration override for a given view tree in milliseconds. |
 | --- | --- |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [InputMethodInfo](../android/view/inputmethod/InputMethodInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#getInputMethodList()()` Returns the list of installed input methods. |
-| [InputMethodSubtype](../android/view/inputmethod/InputMethodSubtype.md)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#getLastInputMethodSubtype()()` Returns the last used `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSubtype` in system history. |
-| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [InputMethodInfo](../android/view/inputmethod/InputMethodInfo.md)!, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [InputMethodSubtype](../android/view/inputmethod/InputMethodSubtype.md)!\>!\>! | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#getShortcutInputMethodsAndSubtypes()()` Returns a map of all shortcut input method info and their subtypes. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [InputMethodInfo](InputMethodInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#getInputMethodList()()` Returns the list of installed input methods. |
+| [InputMethodSubtype](InputMethodSubtype.md)? | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#getLastInputMethodSubtype()()` Returns the last used `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSubtype` in system history. |
+| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [InputMethodInfo](InputMethodInfo.md)!, [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [InputMethodSubtype](InputMethodSubtype.md)!\>!\>! | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#getShortcutInputMethodsAndSubtypes()()` Returns a map of all shortcut input method info and their subtypes. |
 | --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#hideSoftInputFromInputMethod(android.os.IBinder,%20kotlin.Int)(token: https://developer.android.com/reference/kotlin/android/os/IBinder.html#!, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Close/hide the input method's soft input area, so the user no longer sees it or can interact with it. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#hideSoftInputFromWindow(android.os.IBinder,%20kotlin.Int)(windowToken: https://developer.android.com/reference/kotlin/android/os/IBinder.html#!, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Request to hide the soft input window from the context of the window that is currently accepting input. |
@@ -306,7 +306,7 @@ Note: If delegator and delegate are in different application packages, use `http
 
 | Parameters ||
 |---|---|
-| `delegateView` | [View](../android/view/View.md): delegate view capable of receiving input via `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection` This value cannot be `null`. |
+| `delegateView` | [View](../android.view/View.md): delegate view capable of receiving input via `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection` This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -337,7 +337,7 @@ Note: If delegator and delegate are in the same application package, use `https:
 
 | Parameters ||
 |---|---|
-| `delegateView` | [View](../android/view/View.md): delegate view capable of receiving input via `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection` This value cannot be `null`. |
+| `delegateView` | [View](../android.view/View.md): delegate view capable of receiving input via `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection` This value cannot be `null`. |
 | `delegatorPackageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): package name of the delegator that handled initial stylus stroke. This value cannot be `null`. |
 
 | Return ||
@@ -372,12 +372,12 @@ Note: If delegator and delegate are in the same application package, use `https:
 
 | Parameters ||
 |---|---|
-| `delegateView` | [View](../android/view/View.md): delegate view capable of receiving input via `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection` This value cannot be `null`. |
+| `delegateView` | [View](../android.view/View.md): delegate view capable of receiving input via `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection` This value cannot be `null`. |
 | `delegatorPackageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): package name of the delegator that handled initial stylus stroke. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#HANDWRITING_DELEGATE_FLAG_HOME_DELEGATOR_ALLOWED:kotlin.Int` or `0` Value is either `0` or - `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#HANDWRITING_DELEGATE_FLAG_HOME_DELEGATOR_ALLOWED:kotlin.Int` |
 | --- | --- |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): The executor to run the callback on. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `callback` | [Consumer](../java/util/function/Consumer.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>: `true` would be received if delegation was accepted. The caller should hold a reference to the callback. The framework only holds a weak reference. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor to run the callback on. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `callback` | [Consumer](../java.util.function/Consumer.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>: `true` would be received if delegation was accepted. The caller should hold a reference to the callback. The framework only holds a weak reference. This value cannot be `null`. |
 
 **See Also**
 
@@ -404,11 +404,11 @@ Otherwise, if the delegator view previously started delegation using `https://de
 
 | Parameters ||
 |---|---|
-| `delegateView` | [View](../android/view/View.md): delegate view capable of receiving input via `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection` on which `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#startStylusHandwriting(android.view.View)` will be called. This value cannot be `null`. |
+| `delegateView` | [View](../android.view/View.md): delegate view capable of receiving input via `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputConnection` on which `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#startStylusHandwriting(android.view.View)` will be called. This value cannot be `null`. |
 | `delegatorPackageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): package name of the delegator that handled initial stylus stroke. This value cannot be `null`. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): The executor to run the callback on. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor to run the callback on. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | --- | --- |
-| `callback` | [Consumer](../java/util/function/Consumer.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>: Consumer callback that provides `true` if view belongs to allowed delegate package declared in `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#prepareStylusHandwritingDelegation(android.view.View,%20kotlin.String)` and handwriting session can start. Note: The caller should hold a reference to the callback. The framework only holds a weak reference. This value cannot be `null`. |
+| `callback` | [Consumer](../java.util.function/Consumer.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>: Consumer callback that provides `true` if view belongs to allowed delegate package declared in `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#prepareStylusHandwritingDelegation(android.view.View,%20kotlin.String)` and handwriting session can start. Note: The caller should hold a reference to the callback. The framework only holds a weak reference. This value cannot be `null`. |
 
 **See Also**
 
@@ -433,8 +433,8 @@ CAUTION: This method is provided only for the situation where `https://developer
 
 | Parameters ||
 |---|---|
-| `targetView` | [View](../android/view/View.md)?: the default target view. If `null` is specified, then this method tries to find a good event target based on the current focus state. |
-| `event` | [KeyEvent](../android/view/KeyEvent.md): the key event to be dispatched. This value cannot be `null`. |
+| `targetView` | [View](../android.view/View.md)?: the default target view. If `null` is specified, then this method tries to find a good event target based on the current focus state. |
+| `event` | [KeyEvent](../android.view/KeyEvent.md): the key event to be dispatched. This value cannot be `null`. |
 
 ### displayCompletions
 
@@ -506,7 +506,7 @@ On multi user environment, this API returns a result for the calling process use
 
 | Parameters ||
 |---|---|
-| `imi` | [InputMethodInfo](../android/view/inputmethod/InputMethodInfo.md)?: The `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo` whose subtypes list will be returned. If `null`, returns enabled subtypes for the currently selected `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo`. |
+| `imi` | [InputMethodInfo](InputMethodInfo.md)?: The `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo` whose subtypes list will be returned. If `null`, returns enabled subtypes for the currently selected `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodInfo`. |
 | `allowsImplicitlyEnabledSubtypes` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): A boolean flag to allow to return the implicitly enabled subtypes. If an input method info doesn't have enabled subtypes, the framework will implicitly enable subtypes according to the current system language. |
 
 | Return ||
@@ -525,7 +525,7 @@ Returns the IME hide animation duration override for a given view tree in millis
 
 | Parameters ||
 |---|---|
-| `view` | [View](../android/view/View.md): the view to query the view tree of. This value cannot be `null`. |
+| `view` | [View](../android.view/View.md): the view to query the view tree of. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -547,7 +547,7 @@ Returns the IME show animation duration override for a given view tree in millis
 
 | Parameters ||
 |---|---|
-| `view` | [View](../android/view/View.md): the view to query the view tree of. This value cannot be `null`. |
+| `view` | [View](../android.view/View.md): the view to query the view tree of. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -615,7 +615,7 @@ Close/hide the input method's soft input area, so the user no longer sees it or 
 
 | Parameters ||
 |---|---|
-| `token` | [IBinder](../android/os/IBinder.md)!: Supplies the identifying token given to an input method when it was started, which allows it to perform this operation on itself. |
+| `token` | [IBinder](../android.os/IBinder.md)!: Supplies the identifying token given to an input method when it was started, which allows it to perform this operation on itself. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#HIDE_IMPLICIT_ONLY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#HIDE_NOT_ALWAYS:kotlin.Int` |
 
 ### hideSoftInputFromWindow
@@ -633,7 +633,7 @@ Request to hide the soft input window from the context of the window that is cur
 
 | Parameters ||
 |---|---|
-| `windowToken` | [IBinder](../android/os/IBinder.md)!: The token of the window that is making the request, as returned by `https://developer.android.com/reference/kotlin/android/view/View.html#getWindowToken()`. |
+| `windowToken` | [IBinder](../android.os/IBinder.md)!: The token of the window that is making the request, as returned by `https://developer.android.com/reference/kotlin/android/view/View.html#getWindowToken()`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#HIDE_IMPLICIT_ONLY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#HIDE_NOT_ALWAYS:kotlin.Int` |
 
 | Return ||
@@ -661,9 +661,9 @@ Request to hide the soft input window from the context of the window that is cur
 
 | Parameters ||
 |---|---|
-| `windowToken` | [IBinder](../android/os/IBinder.md)!: The token of the window that is making the request, as returned by `https://developer.android.com/reference/kotlin/android/view/View.html#getWindowToken()`. |
+| `windowToken` | [IBinder](../android.os/IBinder.md)!: The token of the window that is making the request, as returned by `https://developer.android.com/reference/kotlin/android/view/View.html#getWindowToken()`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#HIDE_IMPLICIT_ONLY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#HIDE_NOT_ALWAYS:kotlin.Int` |
-| `resultReceiver` | [ResultReceiver](../android/os/ResultReceiver.md)!: If non-null, this will be called by the IME when it has processed your request to tell you what it has done. The result code you receive may be either `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#RESULT_UNCHANGED_SHOWN:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#RESULT_UNCHANGED_HIDDEN:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#RESULT_SHOWN:kotlin.Int`, or `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#RESULT_HIDDEN:kotlin.Int`. |
+| `resultReceiver` | [ResultReceiver](../android.os/ResultReceiver.md)!: If non-null, this will be called by the IME when it has processed your request to tell you what it has done. The result code you receive may be either `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#RESULT_UNCHANGED_SHOWN:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#RESULT_UNCHANGED_HIDDEN:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#RESULT_SHOWN:kotlin.Int`, or `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#RESULT_HIDDEN:kotlin.Int`. |
 | --- | --- |
 
 | Return ||
@@ -697,7 +697,7 @@ Unlike `https://developer.android.com/reference/kotlin/android/view/inputmethod/
 
 | Parameters ||
 |---|---|
-| `view` | [View](../android/view/View.md): The view whose text has changed. This value cannot be `null`. |
+| `view` | [View](../android.view/View.md): The view whose text has changed. This value cannot be `null`. |
 
 **See Also**
 
@@ -803,7 +803,7 @@ Note: If an actual `Editor` capable of `https://developer.android.com/reference/
 
 | Parameters ||
 |---|---|
-| `delegatorView` | [View](../android/view/View.md): the view that receives initial stylus stroke and delegates it to the actual editor. Its window must `https://developer.android.com/reference/kotlin/android/view/View.html#hasWindowFocus()`. This value cannot be `null`. |
+| `delegatorView` | [View](../android.view/View.md): the view that receives initial stylus stroke and delegates it to the actual editor. Its window must `https://developer.android.com/reference/kotlin/android/view/View.html#hasWindowFocus()`. This value cannot be `null`. |
 
 **See Also**
 
@@ -828,7 +828,7 @@ Note: If delegator and delegate are in same package use `https://developer.andro
 
 | Parameters ||
 |---|---|
-| `delegatorView` | [View](../android/view/View.md): the view that receives initial stylus stroke and delegates it to the actual editor. Its window must `https://developer.android.com/reference/kotlin/android/view/View.html#hasWindowFocus()`. This value cannot be `null`. |
+| `delegatorView` | [View](../android.view/View.md): the view that receives initial stylus stroke and delegates it to the actual editor. Its window must `https://developer.android.com/reference/kotlin/android/view/View.html#hasWindowFocus()`. This value cannot be `null`. |
 | `delegatePackageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): package name that contains actual `Editor` which should start stylus handwriting session by calling #acceptStylusHandwritingDelegation. This value cannot be `null`. |
 
 **See Also**
@@ -848,7 +848,7 @@ If the input method is currently connected to the given view, restart it with it
 
 | Parameters ||
 |---|---|
-| `view` | [View](../android/view/View.md)!: The view whose text has changed. |
+| `view` | [View](../android.view/View.md)!: The view whose text has changed. |
 
 ### sendAppPrivateCommand
 
@@ -866,9 +866,9 @@ Call `https://developer.android.com/reference/kotlin/android/view/inputmethod/In
 
 | Parameters ||
 |---|---|
-| `view` | [View](../android/view/View.md)!: Optional View that is sending the command, or null if you want to send the command regardless of the view that is attached to the input method. |
+| `view` | [View](../android.view/View.md)!: Optional View that is sending the command, or null if you want to send the command regardless of the view that is attached to the input method. |
 | `action` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: Name of the command to be performed. This *must* be a scoped name, i.e. prefixed with a package name you own, so that different developers will not create conflicting commands. |
-| `data` | [Bundle](../android/os/Bundle.md)!: Any data to include with the command. |
+| `data` | [Bundle](../android.os/Bundle.md)!: Any data to include with the command. |
 | --- | --- |
 
 ### setAdditionalInputMethodSubtypes
@@ -894,7 +894,7 @@ CAVEAT: In API Level 23 and prior, the system may do nothing if an empty `https:
 | Parameters ||
 |---|---|
 | `imiId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): Id of InputMethodInfo which additional input method subtypes will be added to. If the imiId is `null`, system would do nothing for this operation. |
-| `subtypes` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [InputMethodSubtype](../android/view/inputmethod/InputMethodSubtype.md)!\>: subtypes will be added as additional subtypes of the current input method. If the subtypes is `null`, system would do nothing for this operation. |
+| `subtypes` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [InputMethodSubtype](InputMethodSubtype.md)!\>: subtypes will be added as additional subtypes of the current input method. If the subtypes is `null`, system would do nothing for this operation. |
 
 ### setCurrentInputMethodSubtype
 
@@ -912,7 +912,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `subtype` | [InputMethodSubtype](../android/view/inputmethod/InputMethodSubtype.md)!: A new input method subtype to switch. |
+| `subtype` | [InputMethodSubtype](InputMethodSubtype.md)!: A new input method subtype to switch. |
 
 | Return ||
 |---|---|
@@ -974,7 +974,7 @@ When set, this value is used as the requested duration for the animation of the 
 
 | Parameters ||
 |---|---|
-| `view` | [View](../android/view/View.md): the view whose tree the duration override is to be applied to. This value cannot be `null`. |
+| `view` | [View](../android.view/View.md): the view whose tree the duration override is to be applied to. This value cannot be `null`. |
 | `durationMillis` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the non-negative duration override in milliseconds being set, or `-1` to clear the duration override. |
 
 | Exceptions ||
@@ -1002,7 +1002,7 @@ When set, this value is used as the requested duration for the animation of the 
 
 | Parameters ||
 |---|---|
-| `view` | [View](../android/view/View.md): the view whose tree the duration override is to be applied to. This value cannot be `null`. |
+| `view` | [View](../android.view/View.md): the view whose tree the duration override is to be applied to. This value cannot be `null`. |
 | `durationMillis` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the non-negative duration override in milliseconds being set, or `-1` to clear the duration override. |
 
 | Exceptions ||
@@ -1029,7 +1029,7 @@ On Android `https://developer.android.com/reference/kotlin/android/os/Build.VERS
 
 | Parameters ||
 |---|---|
-| `token` | [IBinder](../android/os/IBinder.md)!: Supplies the identifying token given to an input method when it was started, which allows it to perform this operation on itself. |
+| `token` | [IBinder](../android.os/IBinder.md)!: Supplies the identifying token given to an input method when it was started, which allows it to perform this operation on itself. |
 | `id` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The unique identifier for the new input method to be switched to. |
 
 | Exceptions ||
@@ -1057,9 +1057,9 @@ On Android `https://developer.android.com/reference/kotlin/android/os/Build.VERS
 
 | Parameters ||
 |---|---|
-| `token` | [IBinder](../android/os/IBinder.md): Supplies the identifying token given to an input method when it was started, which allows it to perform this operation on itself. This value cannot be `null`. |
+| `token` | [IBinder](../android.os/IBinder.md): Supplies the identifying token given to an input method when it was started, which allows it to perform this operation on itself. This value cannot be `null`. |
 | `id` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The unique identifier for the new input method to be switched to. |
-| `subtype` | [InputMethodSubtype](../android/view/inputmethod/InputMethodSubtype.md)!: The new subtype of the new input method to be switched to. |
+| `subtype` | [InputMethodSubtype](InputMethodSubtype.md)!: The new subtype of the new input method to be switched to. |
 | --- | --- |
 
 | Exceptions ||
@@ -1083,7 +1083,7 @@ Note that the system determines the most appropriate next input method and subty
 
 | Parameters ||
 |---|---|
-| `imeToken` | [IBinder](../android/os/IBinder.md)!: Supplies the identifying token given to an input method when it was started, which allows it to perform this operation on itself. |
+| `imeToken` | [IBinder](../android.os/IBinder.md)!: Supplies the identifying token given to an input method when it was started, which allows it to perform this operation on itself. |
 
 ### showInputMethodAndSubtypeEnabler
 
@@ -1126,7 +1126,7 @@ Explicitly request that the current input method's soft input area be shown to t
 
 | Parameters ||
 |---|---|
-| `view` | [View](../android/view/View.md)!: The currently focused view, which would like to receive soft keyboard input. Note that this view is only considered focused here if both it itself has `https://developer.android.com/reference/kotlin/android/view/View.html#isFocused()`, and its containing window has `https://developer.android.com/reference/kotlin/android/view/View.html#hasWindowFocus()`. Otherwise the call fails and returns `false`. |
+| `view` | [View](../android.view/View.md)!: The currently focused view, which would like to receive soft keyboard input. Note that this view is only considered focused here if both it itself has `https://developer.android.com/reference/kotlin/android/view/View.html#isFocused()`, and its containing window has `https://developer.android.com/reference/kotlin/android/view/View.html#hasWindowFocus()`. Otherwise the call fails and returns `false`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#SHOW_IMPLICIT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#SHOW_FORCED:kotlin.Int` |
 
 | Return ||
@@ -1154,9 +1154,9 @@ Explicitly request that the current input method's soft input area be shown to t
 
 | Parameters ||
 |---|---|
-| `view` | [View](../android/view/View.md)!: The currently focused view, which would like to receive soft keyboard input. Note that this view is only considered focused here if both it itself has `https://developer.android.com/reference/kotlin/android/view/View.html#isFocused()`, and its containing window has `https://developer.android.com/reference/kotlin/android/view/View.html#hasWindowFocus()`. Otherwise the call fails and returns `false`. |
+| `view` | [View](../android.view/View.md)!: The currently focused view, which would like to receive soft keyboard input. Note that this view is only considered focused here if both it itself has `https://developer.android.com/reference/kotlin/android/view/View.html#isFocused()`, and its containing window has `https://developer.android.com/reference/kotlin/android/view/View.html#hasWindowFocus()`. Otherwise the call fails and returns `false`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#SHOW_IMPLICIT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#SHOW_FORCED:kotlin.Int` |
-| `resultReceiver` | [ResultReceiver](../android/os/ResultReceiver.md)!: If non-null, this will be called by the IME when it has processed your request to tell you what it has done. The result code you receive may be either `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#RESULT_UNCHANGED_SHOWN:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#RESULT_UNCHANGED_HIDDEN:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#RESULT_SHOWN:kotlin.Int`, or `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#RESULT_HIDDEN:kotlin.Int`. |
+| `resultReceiver` | [ResultReceiver](../android.os/ResultReceiver.md)!: If non-null, this will be called by the IME when it has processed your request to tell you what it has done. The result code you receive may be either `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#RESULT_UNCHANGED_SHOWN:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#RESULT_UNCHANGED_HIDDEN:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#RESULT_SHOWN:kotlin.Int`, or `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#RESULT_HIDDEN:kotlin.Int`. |
 | --- | --- |
 
 | Return ||
@@ -1181,7 +1181,7 @@ Show the input method's soft input area, so the user sees the input method windo
 
 | Parameters ||
 |---|---|
-| `token` | [IBinder](../android/os/IBinder.md)!: Supplies the identifying token given to an input method when it was started, which allows it to perform this operation on itself. |
+| `token` | [IBinder](../android.os/IBinder.md)!: Supplies the identifying token given to an input method when it was started, which allows it to perform this operation on itself. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#SHOW_IMPLICIT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#SHOW_FORCED:kotlin.Int` |
 
 ### showStatusIcon
@@ -1218,11 +1218,11 @@ The {code cursorAnchorInfo} may be used by the IME to improve the handwriting re
 
 | Parameters ||
 |---|---|
-| `view` | [View](../android/view/View.md): the view receiving stylus events. This value cannot be `null`. |
-| `cursorAnchorInfo` | [CursorAnchorInfo](../android/view/inputmethod/CursorAnchorInfo.md)?: positional information about the view receiving stylus events. This value may be `null`. |
-| `callbackExecutor` | [Executor](../java/util/concurrent/Executor.md): the executor to run the callback on. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `view` | [View](../android.view/View.md): the view receiving stylus events. This value cannot be `null`. |
+| `cursorAnchorInfo` | [CursorAnchorInfo](CursorAnchorInfo.md)?: positional information about the view receiving stylus events. This value may be `null`. |
+| `callbackExecutor` | [Executor](../java.util.concurrent/Executor.md): the executor to run the callback on. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | --- | --- |
-| `callback` | [ConnectionlessHandwritingCallback](../android/view/inputmethod/ConnectionlessHandwritingCallback.md): the callback to receive the result. This value cannot be `null`. |
+| `callback` | [ConnectionlessHandwritingCallback](ConnectionlessHandwritingCallback.md): the callback to receive the result. This value cannot be `null`. |
 
 ### startConnectionlessStylusHandwritingForDelegation
 
@@ -1246,12 +1246,12 @@ The delegate view must belong to `delegatePackageName` for the delegation to suc
 
 | Parameters ||
 |---|---|
-| `delegatorView` | [View](../android/view/View.md): the view receiving stylus events. This value cannot be `null`. |
-| `cursorAnchorInfo` | [CursorAnchorInfo](../android/view/inputmethod/CursorAnchorInfo.md)?: positional information about the view receiving stylus events. This value may be `null`. |
+| `delegatorView` | [View](../android.view/View.md): the view receiving stylus events. This value cannot be `null`. |
+| `cursorAnchorInfo` | [CursorAnchorInfo](CursorAnchorInfo.md)?: positional information about the view receiving stylus events. This value may be `null`. |
 | `delegatePackageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): name of the package containing the delegate view which will accept the delegation. This value cannot be `null`. |
 | --- | --- |
-| `callbackExecutor` | [Executor](../java/util/concurrent/Executor.md): the executor to run the callback on. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `callback` | [ConnectionlessHandwritingCallback](../android/view/inputmethod/ConnectionlessHandwritingCallback.md): the callback to receive the result. This value cannot be `null`. |
+| `callbackExecutor` | [Executor](../java.util.concurrent/Executor.md): the executor to run the callback on. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `callback` | [ConnectionlessHandwritingCallback](ConnectionlessHandwritingCallback.md): the callback to receive the result. This value cannot be `null`. |
 
 ### startConnectionlessStylusHandwritingForDelegation
 
@@ -1274,11 +1274,11 @@ The delegate view must belong to the same package as the delegator view for the 
 
 | Parameters ||
 |---|---|
-| `delegatorView` | [View](../android/view/View.md): the view receiving stylus events. This value cannot be `null`. |
-| `cursorAnchorInfo` | [CursorAnchorInfo](../android/view/inputmethod/CursorAnchorInfo.md)?: positional information about the view receiving stylus events. This value may be `null`. |
-| `callbackExecutor` | [Executor](../java/util/concurrent/Executor.md): the executor to run the callback on. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `delegatorView` | [View](../android.view/View.md): the view receiving stylus events. This value cannot be `null`. |
+| `cursorAnchorInfo` | [CursorAnchorInfo](CursorAnchorInfo.md)?: positional information about the view receiving stylus events. This value may be `null`. |
+| `callbackExecutor` | [Executor](../java.util.concurrent/Executor.md): the executor to run the callback on. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | --- | --- |
-| `callback` | [ConnectionlessHandwritingCallback](../android/view/inputmethod/ConnectionlessHandwritingCallback.md): the callback to receive the result. This value cannot be `null`. |
+| `callback` | [ConnectionlessHandwritingCallback](ConnectionlessHandwritingCallback.md): the callback to receive the result. This value cannot be `null`. |
 
 ### startStylusHandwriting
 
@@ -1292,7 +1292,7 @@ Start stylus handwriting session. If supported by the current input method, a st
 
 | Parameters ||
 |---|---|
-| `view` | [View](../android/view/View.md): the View for which stylus handwriting is requested. It and `https://developer.android.com/reference/kotlin/android/view/View.html#hasWindowFocus()` must be `https://developer.android.com/reference/kotlin/android/view/View.html#hasFocus()`. This value cannot be `null`. |
+| `view` | [View](../android.view/View.md): the View for which stylus handwriting is requested. It and `https://developer.android.com/reference/kotlin/android/view/View.html#hasWindowFocus()` must be `https://developer.android.com/reference/kotlin/android/view/View.html#hasFocus()`. This value cannot be `null`. |
 
 **See Also**
 
@@ -1313,7 +1313,7 @@ Force switch to the last used input method and subtype. If the last input method
 
 | Parameters ||
 |---|---|
-| `imeToken` | [IBinder](../android/os/IBinder.md)!: Supplies the identifying token given to an input method when it was started, which allows it to perform this operation on itself. |
+| `imeToken` | [IBinder](../android.os/IBinder.md)!: Supplies the identifying token given to an input method when it was started, which allows it to perform this operation on itself. |
 
 | Return ||
 |---|---|
@@ -1337,7 +1337,7 @@ Force switch to the next input method and subtype. If there is no IME enabled ex
 
 | Parameters ||
 |---|---|
-| `imeToken` | [IBinder](../android/os/IBinder.md)!: Supplies the identifying token given to an input method when it was started, which allows it to perform this operation on itself. |
+| `imeToken` | [IBinder](../android.os/IBinder.md)!: Supplies the identifying token given to an input method when it was started, which allows it to perform this operation on itself. |
 | `onlyCurrentIme` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): if true, the framework will find the next subtype which belongs to the current IME |
 
 | Return ||
@@ -1384,7 +1384,7 @@ This method toggles the input method window display. If the input window is alre
 
 | Parameters ||
 |---|---|
-| `windowToken` | [IBinder](../android/os/IBinder.md)!: The token of the window that is making the request, as returned by `https://developer.android.com/reference/kotlin/android/view/View.html#getWindowToken()`. |
+| `windowToken` | [IBinder](../android.os/IBinder.md)!: The token of the window that is making the request, as returned by `https://developer.android.com/reference/kotlin/android/view/View.html#getWindowToken()`. |
 | `showFlags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#SHOW_IMPLICIT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#SHOW_FORCED:kotlin.Int` |
 | `hideFlags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#HIDE_IMPLICIT_ONLY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#HIDE_NOT_ALWAYS:kotlin.Int` |
 | --- | --- |
@@ -1466,7 +1466,7 @@ Notify the event when the user tapped or clicked the text view.
 
 | Parameters ||
 |---|---|
-| `view` | [View](../android/view/View.md)!: `https://developer.android.com/reference/kotlin/android/view/View.html#` which is being clicked. |
+| `view` | [View](../android.view/View.md)!: `https://developer.android.com/reference/kotlin/android/view/View.html#` which is being clicked. |
 
 **See Also**
 

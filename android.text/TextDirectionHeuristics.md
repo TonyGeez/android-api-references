@@ -4,7 +4,7 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 
 # TextDirectionHeuristics
 
-Kotlin| [Java](../android/text/TextDirectionHeuristics.md) 
+Kotlin| [Java](TextDirectionHeuristics.md) 
 | --- | --- |
 
 ```
@@ -13,9 +13,9 @@ open class TextDirectionHeuristics
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.text.TextDirectionHeuristics](../android/text/TextDirectionHeuristics.md) |
+| ↳ | [android.text.TextDirectionHeuristics](TextDirectionHeuristics.md) |
 
-Some objects that implement [TextDirectionHeuristic](../android/text/TextDirectionHeuristic.md). Use these with the android.text.BidiFormatter#unicodeWrap methods in [BidiFormatter](../android/text/BidiFormatter.md). Also notice that these direction heuristics correspond to the same types of constants provided in the [android.view.View](../android/view/View.md) class for [setTextDirection()](../android/view/View.md)), such as [android.view.View#TEXT_DIRECTION_RTL](../android/view/View.md).
+Some objects that implement [TextDirectionHeuristic](TextDirectionHeuristic.md). Use these with the android.text.BidiFormatter#unicodeWrap methods in [BidiFormatter](BidiFormatter.md). Also notice that these direction heuristics correspond to the same types of constants provided in the [android.view.View](../android.view/View.md) class for [setTextDirection()](../android.view/View.md)), such as [android.view.View#TEXT_DIRECTION_RTL](../android.view/View.md).
 
 To support versions lower than [android.os.Build.VERSION_CODES#JELLY_BEAN_MR2](../android/os/Build.VERSION_CODES.md), you can use the support library's androidx.core.text.TextDirectionHeuristicsCompat class.
 
@@ -23,17 +23,17 @@ To support versions lower than [android.os.Build.VERSION_CODES#JELLY_BEAN_MR2](.
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [TextDirectionHeuristics](../android/text/TextDirectionHeuristics.md))`()` <br /> |
+| [TextDirectionHeuristics](TextDirectionHeuristics.md))`()` <br /> |
 
 | Properties ||
 |---------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [TextDirectionHeuristic](../android/text/TextDirectionHeuristic.md)! | [ANYRTL_LTR](../android/text/TextDirectionHeuristics.md) If the text contains any strong right to left non-format character, determines that the direction is right to left, falling back to left to right if it finds none. |
-| static [TextDirectionHeuristic](../android/text/TextDirectionHeuristic.md)! | [FIRSTSTRONG_LTR](../android/text/TextDirectionHeuristics.md) Determines the direction based on the first strong directional character, including bidi format chars, falling back to left to right if it finds none. |
-| static [TextDirectionHeuristic](../android/text/TextDirectionHeuristic.md)! | [FIRSTSTRONG_RTL](../android/text/TextDirectionHeuristics.md) Determines the direction based on the first strong directional character, including bidi format chars, falling back to right to left if it finds none. |
+| static [TextDirectionHeuristic](TextDirectionHeuristic.md)! | [ANYRTL_LTR](TextDirectionHeuristics.md) If the text contains any strong right to left non-format character, determines that the direction is right to left, falling back to left to right if it finds none. |
+| static [TextDirectionHeuristic](TextDirectionHeuristic.md)! | [FIRSTSTRONG_LTR](TextDirectionHeuristics.md) Determines the direction based on the first strong directional character, including bidi format chars, falling back to left to right if it finds none. |
+| static [TextDirectionHeuristic](TextDirectionHeuristic.md)! | [FIRSTSTRONG_RTL](TextDirectionHeuristics.md) Determines the direction based on the first strong directional character, including bidi format chars, falling back to right to left if it finds none. |
 | --- | --- |
-| static [TextDirectionHeuristic](../android/text/TextDirectionHeuristic.md)! | [LOCALE](../android/text/TextDirectionHeuristics.md) Force the paragraph direction to the Locale direction. |
-| static [TextDirectionHeuristic](../android/text/TextDirectionHeuristic.md)! | [LTR](../android/text/TextDirectionHeuristics.md) Always decides that the direction is left to right. |
-| static [TextDirectionHeuristic](../android/text/TextDirectionHeuristic.md)! | [RTL](../android/text/TextDirectionHeuristics.md) Always decides that the direction is right to left. |
+| static [TextDirectionHeuristic](TextDirectionHeuristic.md)! | [LOCALE](TextDirectionHeuristics.md) Force the paragraph direction to the Locale direction. |
+| static [TextDirectionHeuristic](TextDirectionHeuristic.md)! | [LTR](TextDirectionHeuristics.md) Always decides that the direction is left to right. |
+| static [TextDirectionHeuristic](TextDirectionHeuristic.md)! | [RTL](TextDirectionHeuristics.md) Always decides that the direction is right to left. |
 | --- | --- |
 
 ## Public constructors

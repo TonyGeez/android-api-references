@@ -8,7 +8,7 @@ open class SAXSource : Source
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.xml.transform.sax.SAXSource](../javax/xml/transform/sax/SAXSource.md) |
+| ↳ | [javax.xml.transform.sax.SAXSource](SAXSource.md) |
 
 Acts as an holder for SAX-style Source.
 
@@ -28,15 +28,15 @@ Note that XSLT requires namespace support. Attempting to transform an input sour
 
 | Public methods ||
 |---|---|
-| open [InputSource](../org/xml/sax/InputSource.md)! | `https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXSource#getInputSource()()` Get the SAX InputSource to be used for the Source. |
+| open [InputSource](../org.xml.sax/InputSource.md)! | `https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXSource#getInputSource()()` Get the SAX InputSource to be used for the Source. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXSource#getSystemId()()` Get the base ID (URI or system ID) from where URIs will be resolved. |
-| open [XMLReader](../org/xml/sax/XMLReader.md)! | `https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXSource#getXMLReader()()` Get the XMLReader to be used for the Source. |
+| open [XMLReader](../org.xml.sax/XMLReader.md)! | `https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXSource#getXMLReader()()` Get the XMLReader to be used for the Source. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXSource#setInputSource(org.xml.sax.InputSource)(inputSource: https://developer.android.com/reference/kotlin/org/xml/sax/InputSource.html#!)` Set the SAX InputSource to be used for the Source. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXSource#setSystemId(kotlin.String)(systemId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Set the system identifier for this Source. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXSource#setXMLReader(org.xml.sax.XMLReader)(reader: https://developer.android.com/reference/kotlin/org/xml/sax/XMLReader.html#!)` Set the XMLReader to be used for the Source. |
 | --- | --- |
-| open static [InputSource](../org/xml/sax/InputSource.md)! | `https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXSource#sourceToInputSource(javax.xml.transform.Source)(source: https://developer.android.com/reference/kotlin/javax/xml/transform/Source.html#!)` Attempt to obtain a SAX InputSource object from a Source object. |
+| open static [InputSource](../org.xml.sax/InputSource.md)! | `https://developer.android.com/reference/kotlin/javax/xml/transform/sax/SAXSource#sourceToInputSource(javax.xml.transform.Source)(source: https://developer.android.com/reference/kotlin/javax/xml/transform/Source.html#!)` Attempt to obtain a SAX InputSource object from a Source object. |
 
 ## Constants
 
@@ -79,7 +79,7 @@ Create a `SAXSource`, using a SAX `InputSource`. The `https://developer.android.
 
 | Parameters ||
 |---|---|
-| `inputSource` | [InputSource](../org/xml/sax/InputSource.md)!: An input source reference that must be non-null and that will be passed to the parse method of the reader. |
+| `inputSource` | [InputSource](../org.xml.sax/InputSource.md)!: An input source reference that must be non-null and that will be passed to the parse method of the reader. |
 
 ### SAXSource
 
@@ -95,8 +95,8 @@ Create a `SAXSource`, using an `https://developer.android.com/reference/kotlin/o
 
 | Parameters ||
 |---|---|
-| `reader` | [XMLReader](../org/xml/sax/XMLReader.md)!: An XMLReader to be used for the parse. |
-| `inputSource` | [InputSource](../org/xml/sax/InputSource.md)!: A SAX input source reference that must be non-null and that will be passed to the reader parse method. |
+| `reader` | [XMLReader](../org.xml.sax/XMLReader.md)!: An XMLReader to be used for the parse. |
+| `inputSource` | [InputSource](../org.xml.sax/InputSource.md)!: A SAX input source reference that must be non-null and that will be passed to the reader parse method. |
 
 ## Public methods
 
@@ -154,7 +154,7 @@ Set the SAX InputSource to be used for the Source.
 
 | Parameters ||
 |---|---|
-| `inputSource` | [InputSource](../org/xml/sax/InputSource.md)!: A valid InputSource reference. |
+| `inputSource` | [InputSource](../org.xml.sax/InputSource.md)!: A valid InputSource reference. |
 
 ### setSystemId
 
@@ -184,7 +184,7 @@ Set the XMLReader to be used for the Source.
 
 | Parameters ||
 |---|---|
-| `reader` | [XMLReader](../org/xml/sax/XMLReader.md)!: A valid XMLReader or XMLFilter reference. |
+| `reader` | [XMLReader](../org.xml.sax/XMLReader.md)!: A valid XMLReader or XMLFilter reference. |
 
 ### sourceToInputSource
 
@@ -198,7 +198,7 @@ Attempt to obtain a SAX InputSource object from a Source object.
 
 | Parameters ||
 |---|---|
-| `source` | [Source](../javax/xml/transform/Source.md)!: Must be a non-null Source reference. |
+| `source` | [Source](../javax.xml.transform/Source.md)!: Must be a non-null Source reference. |
 
 | Return ||
 |---|---|

@@ -8,15 +8,15 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface Executor
 ```
 
-| [java.util.concurrent.Executor](../java/util/concurrent/Executor.md) |
+| [java.util.concurrent.Executor](Executor.md) |
 
-| Known Direct Subclasses [ExecutorService](../java/util/concurrent/ExecutorService.md) |--------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [ExecutorService](../java/util/concurrent/ExecutorService.md) | An [Executor](../java/util/concurrent/Executor.md) that provides methods to manage termination and methods that can produce a [Future](../java/util/concurrent/Future.md) for tracking progress of one or more asynchronous tasks. | |
+| Known Direct Subclasses [ExecutorService](ExecutorService.md) |--------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [ExecutorService](ExecutorService.md) | An [Executor](Executor.md) that provides methods to manage termination and methods that can produce a [Future](Future.md) for tracking progress of one or more asynchronous tasks. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [AbstractExecutorService](../java/util/concurrent/AbstractExecutorService.md), [ForkJoinPool](../java/util/concurrent/ForkJoinPool.md), [ScheduledExecutorService](../java/util/concurrent/ScheduledExecutorService.md), [ScheduledThreadPoolExecutor](../java/util/concurrent/ScheduledThreadPoolExecutor.md), [ScheduledThreadPoolExecutor](../java/util/concurrent/ScheduledThreadPoolExecutor.md), [ThreadPoolExecutor](../java/util/concurrent/ThreadPoolExecutor.md) |--------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [AbstractExecutorService](../java/util/concurrent/AbstractExecutorService.md) | Provides default implementations of [ExecutorService](../java/util/concurrent/ExecutorService.md) execution methods. | | [ForkJoinPool](../java/util/concurrent/ForkJoinPool.md) | An [ExecutorService](../java/util/concurrent/ExecutorService.md) for running [ForkJoinTask](../java/util/concurrent/ForkJoinTask.md) s. | | [ScheduledExecutorService](../java/util/concurrent/ScheduledExecutorService.md) | An [ExecutorService](../java/util/concurrent/ExecutorService.md) that can schedule commands to run after a given delay, or to execute periodically. | | [ScheduledThreadPoolExecutor](../java/util/concurrent/ScheduledThreadPoolExecutor.md) | A [ThreadPoolExecutor](../java/util/concurrent/ThreadPoolExecutor.md) that can additionally schedule commands to run after a given delay, or to execute periodically. | | [ScheduledThreadPoolExecutor](../java/util/concurrent/ScheduledThreadPoolExecutor.md) | A [ThreadPoolExecutor](../java/util/concurrent/ThreadPoolExecutor.md) that can additionally schedule commands to run after a given delay, or to execute periodically. | | [ThreadPoolExecutor](../java/util/concurrent/ThreadPoolExecutor.md) | An [ExecutorService](../java/util/concurrent/ExecutorService.md) that executes each submitted task using one of possibly several pooled threads, normally configured using [Executors](../java/util/concurrent/Executors.md) factory methods. | |
+| Known Indirect Subclasses [AbstractExecutorService](AbstractExecutorService.md), [ForkJoinPool](ForkJoinPool.md), [ScheduledExecutorService](ScheduledExecutorService.md), [ScheduledThreadPoolExecutor](ScheduledThreadPoolExecutor.md), [ScheduledThreadPoolExecutor](ScheduledThreadPoolExecutor.md), [ThreadPoolExecutor](ThreadPoolExecutor.md) |--------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [AbstractExecutorService](AbstractExecutorService.md) | Provides default implementations of [ExecutorService](ExecutorService.md) execution methods. | | [ForkJoinPool](ForkJoinPool.md) | An [ExecutorService](ExecutorService.md) for running [ForkJoinTask](ForkJoinTask.md) s. | | [ScheduledExecutorService](ScheduledExecutorService.md) | An [ExecutorService](ExecutorService.md) that can schedule commands to run after a given delay, or to execute periodically. | | [ScheduledThreadPoolExecutor](ScheduledThreadPoolExecutor.md) | A [ThreadPoolExecutor](ThreadPoolExecutor.md) that can additionally schedule commands to run after a given delay, or to execute periodically. | | [ScheduledThreadPoolExecutor](ScheduledThreadPoolExecutor.md) | A [ThreadPoolExecutor](ThreadPoolExecutor.md) that can additionally schedule commands to run after a given delay, or to execute periodically. | | [ThreadPoolExecutor](ThreadPoolExecutor.md) | An [ExecutorService](ExecutorService.md) that executes each submitted task using one of possibly several pooled threads, normally configured using [Executors](Executors.md) factory methods. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-An object that executes submitted [Runnable](../java/lang/Runnable.md) tasks. This interface provides a way of decoupling task submission from the mechanics of how each task will be run, including details of thread use, scheduling, etc. An`Executor`is normally used instead of explicitly creating threads. For example, rather than invoking`new Thread(new RunnableTask()).start()`for each of a set of tasks, you might use: 
+An object that executes submitted [Runnable](../java.lang/Runnable.md) tasks. This interface provides a way of decoupling task submission from the mechanics of how each task will be run, including details of thread use, scheduling, etc. An`Executor`is normally used instead of explicitly creating threads. For example, rather than invoking`new Thread(new RunnableTask()).start()`for each of a set of tasks, you might use: 
 
 ```kotlin
 <code>Executor executor = anExecutor();
@@ -74,17 +74,17 @@ Many`Executor`implementations impose some sort of limitation on how and when tas
     }
   }</code>
 ```
-The`Executor`implementations provided in this package implement [ExecutorService](../java/util/concurrent/ExecutorService.md), which is a more extensive interface. The [ThreadPoolExecutor](../java/util/concurrent/ThreadPoolExecutor.md) class provides an extensible thread pool implementation. The [Executors](../java/util/concurrent/Executors.md) class provides convenient factory methods for these Executors.
+The`Executor`implementations provided in this package implement [ExecutorService](ExecutorService.md), which is a more extensive interface. The [ThreadPoolExecutor](ThreadPoolExecutor.md) class provides an extensible thread pool implementation. The [Executors](Executors.md) class provides convenient factory methods for these Executors.
 
 <br />
 
-Memory consistency effects: Actions in a thread prior to submitting a`Runnable`object to an`Executor` [*happen-before*](../java/util/concurrent/_package.md) its execution begins, perhaps in another thread.
+Memory consistency effects: Actions in a thread prior to submitting a`Runnable`object to an`Executor` [*happen-before*](_package.md) its execution begins, perhaps in another thread.
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [execute](../java/util/concurrent/Executor.md))`(`command:` ` [Runnable](../java/lang/Runnable.md)!`)` Executes the given command at some time in the future. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [execute](Executor.md))`(`command:` ` [Runnable](../java.lang/Runnable.md)!`)` Executes the given command at some time in the future. |
 
 ## Public methods
 
@@ -100,7 +100,7 @@ Executes the given command at some time in the future. The command may execute i
 
 | Parameters ||
 |-----------|--------------------------------------------------------------------------------------------------------|
-| `command` | [Runnable](../java/lang/Runnable.md)!:the runnable task |
+| `command` | [Runnable](../java.lang/Runnable.md)!:the runnable task |
 
 | Exceptions ||
 |---------------------------------------------------|-----------------------------------------------|

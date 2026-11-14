@@ -4,7 +4,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 
 # UwbAddress
 
-Kotlin| [Java](../android/ranging/uwb/UwbAddress.md) 
+Kotlin| [Java](UwbAddress.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class UwbAddress : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.ranging.uwb.UwbAddress](../android/ranging/uwb/UwbAddress.md) |
+| ↳ | [android.ranging.uwb.UwbAddress](UwbAddress.md) |
 
 A class representing a UWB address
 
@@ -21,29 +21,29 @@ A class representing a UWB address
 
 | Constants ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXTENDED_ADDRESS_BYTE_LENGTH](../android/ranging/uwb/UwbAddress.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SHORT_ADDRESS_BYTE_LENGTH](../android/ranging/uwb/UwbAddress.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXTENDED_ADDRESS_BYTE_LENGTH](UwbAddress.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SHORT_ADDRESS_BYTE_LENGTH](UwbAddress.md) <br /> |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android.os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android.os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android.os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [UwbAddress](../android/ranging/uwb/UwbAddress.md) | [createRandomShortAddress](../android/ranging/uwb/UwbAddress.md))`()` Generates a new random 2 bytes [UwbAddress](../android/ranging/uwb/UwbAddress.md). |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/ranging/uwb/UwbAddress.md))`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/ranging/uwb/UwbAddress.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| static [UwbAddress](UwbAddress.md) | [createRandomShortAddress](UwbAddress.md))`()` Generates a new random 2 bytes [UwbAddress](UwbAddress.md). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](UwbAddress.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](UwbAddress.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | --- | --- |
-| static [UwbAddress](../android/ranging/uwb/UwbAddress.md) | [fromBytes](../android/ranging/uwb/UwbAddress.md))`(`address:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`)` Create a [android.uwb.UwbAddress](../android/ranging/uwb/UwbAddress.md) from a byte array. |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [getAddressBytes](../android/ranging/uwb/UwbAddress.md))`()` Get the address as a byte array |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/ranging/uwb/UwbAddress.md))`()` <br /> |
+| static [UwbAddress](UwbAddress.md) | [fromBytes](UwbAddress.md))`(`address:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`)` Create a [android.uwb.UwbAddress](UwbAddress.md) from a byte array. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [getAddressBytes](UwbAddress.md))`()` Get the address as a byte array |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](UwbAddress.md))`()` <br /> |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/ranging/uwb/UwbAddress.md))`()` Returns a string representation of the object. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/ranging/uwb/UwbAddress.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](UwbAddress.md))`()` Returns a string representation of the object. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](UwbAddress.md))`(`dest:` ` [Parcel](../android.os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [UwbAddress](../android/ranging/uwb/UwbAddress.md)!\> | [CREATOR](../android/ranging/uwb/UwbAddress.md) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [UwbAddress](UwbAddress.md)!\> | [CREATOR](UwbAddress.md) <br /> |
 
 ## Constants
 
@@ -77,11 +77,11 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 static fun createRandomShortAddress(): UwbAddress
 ```
 
-Generates a new random 2 bytes [UwbAddress](../android/ranging/uwb/UwbAddress.md).
+Generates a new random 2 bytes [UwbAddress](UwbAddress.md).
 
 | Return ||
 |----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| [UwbAddress](../android/ranging/uwb/UwbAddress.md) | a new randomly generated [UwbAddress](../android/ranging/uwb/UwbAddress.md). This value cannot be`null`. |
+| [UwbAddress](UwbAddress.md) | a new randomly generated [UwbAddress](UwbAddress.md). This value cannot be`null`. |
 
 ### describeContents
 
@@ -93,7 +93,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) |
 
 ### equals
 
@@ -131,21 +131,21 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 static fun fromBytes(address: ByteArray): UwbAddress
 ```
 
-Create a [android.uwb.UwbAddress](../android/ranging/uwb/UwbAddress.md) from a byte array.
+Create a [android.uwb.UwbAddress](UwbAddress.md) from a byte array.
 
-If the provided array is [SHORT_ADDRESS_BYTE_LENGTH](../android/ranging/uwb/UwbAddress.md) bytes, a short address is created. If the provided array is [EXTENDED_ADDRESS_BYTE_LENGTH](../android/ranging/uwb/UwbAddress.md) bytes, then an extended address is created.
+If the provided array is [SHORT_ADDRESS_BYTE_LENGTH](UwbAddress.md) bytes, a short address is created. If the provided array is [EXTENDED_ADDRESS_BYTE_LENGTH](UwbAddress.md) bytes, then an extended address is created.
 
 | Parameters ||
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `address` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html):a byte array to convert to a [android.uwb.UwbAddress](../android/ranging/uwb/UwbAddress.md) This value cannot be`null`. |
+| `address` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html):a byte array to convert to a [android.uwb.UwbAddress](UwbAddress.md) This value cannot be`null`. |
 
 | Return ||
 |----------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [UwbAddress](../android/ranging/uwb/UwbAddress.md) | a [android.uwb.UwbAddress](../android/ranging/uwb/UwbAddress.md) created from the input byte array This value cannot be`null`. |
+| [UwbAddress](UwbAddress.md) | a [android.uwb.UwbAddress](UwbAddress.md) created from the input byte array This value cannot be`null`. |
 
 | Exceptions ||
 |--------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.IllegalArgumentException` | when the length is not one of [SHORT_ADDRESS_BYTE_LENGTH](../android/ranging/uwb/UwbAddress.md) or [EXTENDED_ADDRESS_BYTE_LENGTH](../android/ranging/uwb/UwbAddress.md) bytes |
+| `java.lang.IllegalArgumentException` | when the length is not one of [SHORT_ADDRESS_BYTE_LENGTH](UwbAddress.md) or [EXTENDED_ADDRESS_BYTE_LENGTH](UwbAddress.md) bytes |
 
 ### getAddressBytes
 
@@ -159,7 +159,7 @@ Get the address as a byte array
 
 | Return ||
 |-----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | the byte representation of this [android.uwb.UwbAddress](../android/ranging/uwb/UwbAddress.md) This value cannot be`null`. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | the byte representation of this [android.uwb.UwbAddress](UwbAddress.md) This value cannot be`null`. |
 
 ### hashCode
 
@@ -202,8 +202,8 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](../android/os/Parcel.md):This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android.os/Parcel.md):This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

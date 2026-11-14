@@ -13,7 +13,7 @@ interface OnItemClickListener
 
 | [android.widget.AdapterView.OnItemClickListener](../android/widget/AdapterView.OnItemClickListener.md) |
 
-| Known Direct Subclasses [CharacterPickerDialog](../android/text/method/CharacterPickerDialog.md), [PreferenceScreen](../android/preference/PreferenceScreen.md) |-------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [CharacterPickerDialog](../android/text/method/CharacterPickerDialog.md) | Dialog for choosing accented characters related to a base character. | | [PreferenceScreen](../android/preference/PreferenceScreen.md) | Represents a top-level [Preference](../android/preference/Preference.md) that is the root of a Preference hierarchy. | |
+| Known Direct Subclasses [CharacterPickerDialog](../android.text.method/CharacterPickerDialog.md), [PreferenceScreen](../android.preference/PreferenceScreen.md) |-------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [CharacterPickerDialog](../android.text.method/CharacterPickerDialog.md) | Dialog for choosing accented characters related to a base character. | | [PreferenceScreen](../android.preference/PreferenceScreen.md) | Represents a top-level [Preference](../android.preference/Preference.md) that is the root of a Preference hierarchy. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Interface definition for a callback to be invoked when an item in this AdapterView has been clicked.
@@ -22,7 +22,7 @@ Interface definition for a callback to be invoked when an item in this AdapterVi
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onItemClick](../android/widget/AdapterView.OnItemClickListener.md))`(`parent:` ` [AdapterView](../android/widget/AdapterView.md)<*>!`, `view:` ` [View](../android/view/View.md)!`, `position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `id:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Callback method to be invoked when an item in this AdapterView has been clicked. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onItemClick](../android/widget/AdapterView.OnItemClickListener.md))`(`parent:` ` [AdapterView](AdapterView.md)<*>!`, `view:` ` [View](../android.view/View.md)!`, `position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `id:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Callback method to be invoked when an item in this AdapterView has been clicked. |
 
 ## Public methods
 
@@ -45,8 +45,8 @@ Implementers can call getItemAtPosition(position) if they need to access the dat
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `parent` | [AdapterView](../android/widget/AdapterView.md)\<\*\>!:The AdapterView where the click happened. |
-| `view` | [View](../android/view/View.md)!:The view within the AdapterView that was clicked (this will be a view provided by the adapter) |
+| `parent` | [AdapterView](AdapterView.md)\<\*\>!:The AdapterView where the click happened. |
+| `view` | [View](../android.view/View.md)!:The view within the AdapterView that was clicked (this will be a view provided by the adapter) |
 | `position` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The position of the view in the adapter. |
 | --- | --- |
 | `id` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The row id of the item that was clicked. |

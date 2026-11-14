@@ -4,7 +4,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 
 # TrainingExamplesOutput
 
-Kotlin| [Java](../android/adservices/ondevicepersonalization/TrainingExamplesOutput.md) 
+Kotlin| [Java](TrainingExamplesOutput.md) 
 | --- | --- |
 
 ```
@@ -13,21 +13,21 @@ class TrainingExamplesOutput
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.adservices.ondevicepersonalization.TrainingExamplesOutput](../android/adservices/ondevicepersonalization/TrainingExamplesOutput.md) |
+| ↳ | [android.adservices.ondevicepersonalization.TrainingExamplesOutput](TrainingExamplesOutput.md) |
 
-The output data of [IsolatedWorker.onTrainingExamples](../android/adservices/ondevicepersonalization/IsolatedWorker.md))
+The output data of [IsolatedWorker.onTrainingExamples](IsolatedWorker.md))
 
 ## Summary
 
 | Nested classes ||
 |---|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](../android/adservices/ondevicepersonalization/TrainingExamplesOutput.Builder.md) A builder for [TrainingExamplesOutput](../android/adservices/ondevicepersonalization/TrainingExamplesOutput.md) |
+| | [Builder](../android/adservices/ondevicepersonalization/TrainingExamplesOutput.Builder.md) A builder for [TrainingExamplesOutput](TrainingExamplesOutput.md) |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/adservices/ondevicepersonalization/TrainingExamplesOutput.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [TrainingExampleRecord](../android/adservices/ondevicepersonalization/TrainingExampleRecord.md)!\> | [getTrainingExampleRecords](../android/adservices/ondevicepersonalization/TrainingExamplesOutput.md))`()` The list of training example byte arrays. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/adservices/ondevicepersonalization/TrainingExamplesOutput.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](TrainingExamplesOutput.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [TrainingExampleRecord](TrainingExampleRecord.md)!\> | [getTrainingExampleRecords](TrainingExamplesOutput.md))`()` The list of training example byte arrays. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](TrainingExamplesOutput.md))`()` <br /> |
 | --- | --- |
 
 ## Public methods
@@ -73,7 +73,7 @@ The list of training example byte arrays. The format is a binary serialized [ten
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [TrainingExampleRecord](../android/adservices/ondevicepersonalization/TrainingExampleRecord.md)!> | This value cannot be`null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [TrainingExampleRecord](TrainingExampleRecord.md)!> | This value cannot be`null`. |
 
 ### hashCode
 

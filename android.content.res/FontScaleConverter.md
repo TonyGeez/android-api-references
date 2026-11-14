@@ -6,7 +6,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 interface FontScaleConverter
 ```
 
-| [android.content.res.FontScaleConverter](../android/content/res/FontScaleConverter.md) |
+| [android.content.res.FontScaleConverter](FontScaleConverter.md) |
 
 A converter for non-linear font scaling. Converts font sizes given in "sp" dimensions to a "dp" dimension according to a non-linear curve.
 
@@ -20,7 +20,7 @@ The thinking here is that large fonts are already big enough to read, but we sti
 |---|---|
 | abstract [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/content/res/FontScaleConverter#convertDpToSp(kotlin.Float)(dp: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Converts a dimension in "dp" back to "sp". |
 | abstract [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/content/res/FontScaleConverter#convertSpToDp(kotlin.Float)(sp: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Converts a dimension in "sp" to "dp". |
-| open static [FontScaleConverter](../android/content/res/FontScaleConverter.md)? | `https://developer.android.com/reference/kotlin/android/content/res/FontScaleConverter#forScale(kotlin.Float)(fontScale: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Finds a matching FontScaleConverter for the given fontScale factor. |
+| open static [FontScaleConverter](FontScaleConverter.md)? | `https://developer.android.com/reference/kotlin/android/content/res/FontScaleConverter#forScale(kotlin.Float)(fontScale: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Finds a matching FontScaleConverter for the given fontScale factor. |
 | --- | --- |
 | open static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/content/res/FontScaleConverter#isNonLinearFontScalingActive(kotlin.Float)(fontScale: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Returns true if non-linear font scaling curves would be in effect for the given scale, false if the scaling would follow a linear curve or for no scaling. |
 

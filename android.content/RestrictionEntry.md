@@ -4,7 +4,7 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 
 # RestrictionEntry
 
-Kotlin| [Java](../android/content/RestrictionEntry.md) 
+Kotlin| [Java](RestrictionEntry.md) 
 | --- | --- |
 
 ```
@@ -13,88 +13,88 @@ open class RestrictionEntry : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.content.RestrictionEntry](../android/content/RestrictionEntry.md) |
+| ↳ | [android.content.RestrictionEntry](RestrictionEntry.md) |
 
 Applications can expose restrictions for a restricted user on a multiuser device. The administrator can configure these restrictions that will then be applied to the restricted user. Each RestrictionsEntry is one configurable restriction.
 
 <br />
 
-Any application that chooses to expose such restrictions does so by implementing a receiver that handles the [Intent.ACTION_GET_RESTRICTION_ENTRIES](../android/content/Intent.md) action. The receiver then returns a result bundle that contains an entry called "restrictions", whose value is an ArrayList.
+Any application that chooses to expose such restrictions does so by implementing a receiver that handles the [Intent.ACTION_GET_RESTRICTION_ENTRIES](Intent.md) action. The receiver then returns a result bundle that contains an entry called "restrictions", whose value is an ArrayList.
 
 ## Summary
 
 | Constants ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_BOOLEAN](../android/content/RestrictionEntry.md) Restriction of type "bool". |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_BUNDLE](../android/content/RestrictionEntry.md) Restriction of type "bundle". |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_BUNDLE_ARRAY](../android/content/RestrictionEntry.md) Restriction of type "bundle_array". |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_BOOLEAN](RestrictionEntry.md) Restriction of type "bool". |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_BUNDLE](RestrictionEntry.md) Restriction of type "bundle". |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_BUNDLE_ARRAY](RestrictionEntry.md) Restriction of type "bundle_array". |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_CHOICE](../android/content/RestrictionEntry.md) Restriction of type "choice". |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_INTEGER](../android/content/RestrictionEntry.md) Restriction of type "integer". |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_MULTI_SELECT](../android/content/RestrictionEntry.md) Restriction of type "multi-select". |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_CHOICE](RestrictionEntry.md) Restriction of type "choice". |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_INTEGER](RestrictionEntry.md) Restriction of type "integer". |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_MULTI_SELECT](RestrictionEntry.md) Restriction of type "multi-select". |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_NULL](../android/content/RestrictionEntry.md) Hidden restriction type. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_STRING](../android/content/RestrictionEntry.md) Restriction of type "string". |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_NULL](RestrictionEntry.md) Hidden restriction type. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TYPE_STRING](RestrictionEntry.md) Restriction of type "string". |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android.os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android.os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android.os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [RestrictionEntry](../android/content/RestrictionEntry.md))`(`in:` ` [Parcel](../android/os/Parcel.md)!`)` <br /> |
-| [RestrictionEntry](../android/content/RestrictionEntry.md))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructor for specifying the type and key, with no initial value; |
-| [RestrictionEntry](../android/content/RestrictionEntry.md))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `selectedState:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Constructor for [TYPE_BOOLEAN](../android/content/RestrictionEntry.md) type. |
-| [RestrictionEntry](../android/content/RestrictionEntry.md))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `selectedInt:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructor for [TYPE_INTEGER](../android/content/RestrictionEntry.md) type. |
-| [RestrictionEntry](../android/content/RestrictionEntry.md))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `selectedString:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructor for [TYPE_CHOICE](../android/content/RestrictionEntry.md) type. |
-| [RestrictionEntry](../android/content/RestrictionEntry.md))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `selectedStrings:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Constructor for [TYPE_MULTI_SELECT](../android/content/RestrictionEntry.md) type. |
+| [RestrictionEntry](RestrictionEntry.md))`(`in:` ` [Parcel](../android.os/Parcel.md)!`)` <br /> |
+| [RestrictionEntry](RestrictionEntry.md))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructor for specifying the type and key, with no initial value; |
+| [RestrictionEntry](RestrictionEntry.md))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `selectedState:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Constructor for [TYPE_BOOLEAN](RestrictionEntry.md) type. |
+| [RestrictionEntry](RestrictionEntry.md))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `selectedInt:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructor for [TYPE_INTEGER](RestrictionEntry.md) type. |
+| [RestrictionEntry](RestrictionEntry.md))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `selectedString:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructor for [TYPE_CHOICE](RestrictionEntry.md) type. |
+| [RestrictionEntry](RestrictionEntry.md))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `selectedStrings:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Constructor for [TYPE_MULTI_SELECT](RestrictionEntry.md) type. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [RestrictionEntry](../android/content/RestrictionEntry.md)! | [createBundleArrayEntry](../android/content/RestrictionEntry.md))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `restrictionEntries:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [RestrictionEntry](../android/content/RestrictionEntry.md)!>!`)` Creates an entry of type [TYPE_BUNDLE_ARRAY](../android/content/RestrictionEntry.md). |
-| openstatic [RestrictionEntry](../android/content/RestrictionEntry.md)! | [createBundleEntry](../android/content/RestrictionEntry.md))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `restrictionEntries:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [RestrictionEntry](../android/content/RestrictionEntry.md)!>!`)` Creates an entry of type [TYPE_BUNDLE](../android/content/RestrictionEntry.md). |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/content/RestrictionEntry.md))`()` <br /> |
+| openstatic [RestrictionEntry](RestrictionEntry.md)! | [createBundleArrayEntry](RestrictionEntry.md))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `restrictionEntries:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [RestrictionEntry](RestrictionEntry.md)!>!`)` Creates an entry of type [TYPE_BUNDLE_ARRAY](RestrictionEntry.md). |
+| openstatic [RestrictionEntry](RestrictionEntry.md)! | [createBundleEntry](RestrictionEntry.md))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `restrictionEntries:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [RestrictionEntry](RestrictionEntry.md)!>!`)` Creates an entry of type [TYPE_BUNDLE](RestrictionEntry.md). |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](RestrictionEntry.md))`()` <br /> |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/content/RestrictionEntry.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getAllSelectedStrings](../android/content/RestrictionEntry.md))`()` Returns the list of currently selected values. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getChoiceEntries](../android/content/RestrictionEntry.md))`()` Returns the list of strings, set earlier, that will be presented as choices to the user. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](RestrictionEntry.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getAllSelectedStrings](RestrictionEntry.md))`()` Returns the list of currently selected values. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getChoiceEntries](RestrictionEntry.md))`()` Returns the list of strings, set earlier, that will be presented as choices to the user. |
 | --- | --- |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getChoiceValues](../android/content/RestrictionEntry.md))`()` Returns the list of possible string values set earlier. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDescription](../android/content/RestrictionEntry.md))`()` Returns the provided user-visible description of the entry, if any. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIntValue](../android/content/RestrictionEntry.md))`()` Returns the value of the entry as an integer when the type is [TYPE_INTEGER](../android/content/RestrictionEntry.md). |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getChoiceValues](RestrictionEntry.md))`()` Returns the list of possible string values set earlier. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDescription](RestrictionEntry.md))`()` Returns the provided user-visible description of the entry, if any. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIntValue](RestrictionEntry.md))`()` Returns the value of the entry as an integer when the type is [TYPE_INTEGER](RestrictionEntry.md). |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getKey](../android/content/RestrictionEntry.md))`()` This is the unique key for the restriction entry. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [RestrictionEntry](../android/content/RestrictionEntry.md)!\>! | [getRestrictions](../android/content/RestrictionEntry.md))`()` Returns array of possible restriction entries that this entry may contain. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getSelectedState](../android/content/RestrictionEntry.md))`()` Returns the current selected state for an entry of type [TYPE_BOOLEAN](../android/content/RestrictionEntry.md). |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getKey](RestrictionEntry.md))`()` This is the unique key for the restriction entry. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [RestrictionEntry](RestrictionEntry.md)!\>! | [getRestrictions](RestrictionEntry.md))`()` Returns array of possible restriction entries that this entry may contain. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getSelectedState](RestrictionEntry.md))`()` Returns the current selected state for an entry of type [TYPE_BOOLEAN](RestrictionEntry.md). |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSelectedString](../android/content/RestrictionEntry.md))`()` Returns the currently selected string value. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getTitle](../android/content/RestrictionEntry.md))`()` Returns the user-visible title for the entry, if any. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getType](../android/content/RestrictionEntry.md))`()` Returns the type for this restriction. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSelectedString](RestrictionEntry.md))`()` Returns the currently selected string value. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getTitle](RestrictionEntry.md))`()` Returns the user-visible title for the entry, if any. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getType](RestrictionEntry.md))`()` Returns the type for this restriction. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/content/RestrictionEntry.md))`()` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAllSelectedStrings](../android/content/RestrictionEntry.md))`(`allSelectedStrings:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Sets the current list of selected values for an entry of type [TYPE_MULTI_SELECT](../android/content/RestrictionEntry.md). |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setChoiceEntries](../android/content/RestrictionEntry.md))`(`context:` ` [Context](../android/content/Context.md)!`, `stringArrayResId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets a list of strings that will be presented as choices to the user. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](RestrictionEntry.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAllSelectedStrings](RestrictionEntry.md))`(`allSelectedStrings:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Sets the current list of selected values for an entry of type [TYPE_MULTI_SELECT](RestrictionEntry.md). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setChoiceEntries](RestrictionEntry.md))`(`context:` ` [Context](Context.md)!`, `stringArrayResId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets a list of strings that will be presented as choices to the user. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setChoiceEntries](../android/content/RestrictionEntry.md))`(`choiceEntries:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Sets a list of strings that will be presented as choices to the user. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setChoiceValues](../android/content/RestrictionEntry.md))`(`context:` ` [Context](../android/content/Context.md)!`, `stringArrayResId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets a list of string values that can be selected by the user, similar to[setChoiceValues(java.lang.String[])](https://developer.android.com/reference/kotlin/android/content/RestrictionEntry#setChoiceValues(kotlin.Array)). |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setChoiceValues](../android/content/RestrictionEntry.md))`(`choiceValues:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Sets a list of string values that can be selected by the user. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setChoiceEntries](RestrictionEntry.md))`(`choiceEntries:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Sets a list of strings that will be presented as choices to the user. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setChoiceValues](RestrictionEntry.md))`(`context:` ` [Context](Context.md)!`, `stringArrayResId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets a list of string values that can be selected by the user, similar to[setChoiceValues(java.lang.String[])](https://developer.android.com/reference/kotlin/android/content/RestrictionEntry#setChoiceValues(kotlin.Array)). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setChoiceValues](RestrictionEntry.md))`(`choiceValues:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Sets a list of string values that can be selected by the user. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDescription](../android/content/RestrictionEntry.md))`(`description:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the user-visible description of the entry, as a possible sub-text for the title. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setIntValue](../android/content/RestrictionEntry.md))`(`value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the integer value of the entry when the type is [TYPE_INTEGER](../android/content/RestrictionEntry.md). |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRestrictions](../android/content/RestrictionEntry.md))`(`restrictions:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [RestrictionEntry](../android/content/RestrictionEntry.md)!>!`)` Sets an array of possible restriction entries, that this entry may contain. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDescription](RestrictionEntry.md))`(`description:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the user-visible description of the entry, as a possible sub-text for the title. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setIntValue](RestrictionEntry.md))`(`value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the integer value of the entry when the type is [TYPE_INTEGER](RestrictionEntry.md). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRestrictions](RestrictionEntry.md))`(`restrictions:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [RestrictionEntry](RestrictionEntry.md)!>!`)` Sets an array of possible restriction entries, that this entry may contain. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSelectedState](../android/content/RestrictionEntry.md))`(`state:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets the current selected state for an entry of type [TYPE_BOOLEAN](../android/content/RestrictionEntry.md). |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSelectedString](../android/content/RestrictionEntry.md))`(`selectedString:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the string value to use as the selected value for this restriction. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTitle](../android/content/RestrictionEntry.md))`(`title:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the user-visible title for the entry. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSelectedState](RestrictionEntry.md))`(`state:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets the current selected state for an entry of type [TYPE_BOOLEAN](RestrictionEntry.md). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSelectedString](RestrictionEntry.md))`(`selectedString:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the string value to use as the selected value for this restriction. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTitle](RestrictionEntry.md))`(`title:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the user-visible title for the entry. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setType](../android/content/RestrictionEntry.md))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the type for this restriction. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/content/RestrictionEntry.md))`()` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/content/RestrictionEntry.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setType](RestrictionEntry.md))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the type for this restriction. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](RestrictionEntry.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](RestrictionEntry.md))`(`dest:` ` [Parcel](../android.os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
 
 | Properties ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [RestrictionEntry](../android/content/RestrictionEntry.md)!\> | [CREATOR](../android/content/RestrictionEntry.md) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [RestrictionEntry](RestrictionEntry.md)!\> | [CREATOR](RestrictionEntry.md) <br /> |
 
 ## Constants
 
@@ -118,7 +118,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 static val TYPE_BUNDLE: Int
 ```
 
-Restriction of type "bundle". Use this for storing [bundles](../android/os/Bundle.md) of restrictions 
+Restriction of type "bundle". Use this for storing [bundles](../android.os/Bundle.md) of restrictions 
 
  Value: 7
 
@@ -130,7 +130,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 static val TYPE_BUNDLE_ARRAY: Int
 ```
 
-Restriction of type "bundle_array". Use this for storing arrays of [bundles](../android/os/Bundle.md) of restrictions 
+Restriction of type "bundle_array". Use this for storing arrays of [bundles](../android.os/Bundle.md) of restrictions 
 
  Value: 8
 
@@ -154,7 +154,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 static val TYPE_INTEGER: Int
 ```
 
-Restriction of type "integer". Use this for storing an integer value. The range of values is from [Integer.MIN_VALUE](../java/lang/Integer.md) to [Integer.MAX_VALUE](../java/lang/Integer.md). 
+Restriction of type "integer". Use this for storing an integer value. The range of values is from [Integer.MIN_VALUE](../java.lang/Integer.md) to [Integer.MAX_VALUE](../java.lang/Integer.md). 
 
  Value: 5
 
@@ -166,7 +166,7 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 static val TYPE_MULTI_SELECT: Int
 ```
 
-Restriction of type "multi-select". Use this for presenting a multi-select list where more than one entry can be selected, such as for choosing specific titles to allowlist. Call[setChoiceEntries(java.lang.String[])](https://developer.android.com/reference/kotlin/android/content/RestrictionEntry#setChoiceEntries(kotlin.Array))and[setChoiceValues(java.lang.String[])](https://developer.android.com/reference/kotlin/android/content/RestrictionEntry#setChoiceValues(kotlin.Array))to set the localized list entries to present to the user and the corresponding values, respectively. Use [getAllSelectedStrings()](../android/content/RestrictionEntry.md))and[setAllSelectedStrings(java.lang.String[])](https://developer.android.com/reference/kotlin/android/content/RestrictionEntry#setAllSelectedStrings(kotlin.Array))to manipulate the selections. 
+Restriction of type "multi-select". Use this for presenting a multi-select list where more than one entry can be selected, such as for choosing specific titles to allowlist. Call[setChoiceEntries(java.lang.String[])](https://developer.android.com/reference/kotlin/android/content/RestrictionEntry#setChoiceEntries(kotlin.Array))and[setChoiceValues(java.lang.String[])](https://developer.android.com/reference/kotlin/android/content/RestrictionEntry#setChoiceValues(kotlin.Array))to set the localized list entries to present to the user and the corresponding values, respectively. Use [getAllSelectedStrings()](RestrictionEntry.md))and[setAllSelectedStrings(java.lang.String[])](https://developer.android.com/reference/kotlin/android/content/RestrictionEntry#setAllSelectedStrings(kotlin.Array))to manipulate the selections. 
 
  Value: 4
 
@@ -196,8 +196,8 @@ Restriction of type "string". Use this for storing a string value.
 
 **See Also**
 
-- [#setSelectedString](../android/content/RestrictionEntry.md))
-- [#getSelectedString](../android/content/RestrictionEntry.md))
+- [#setSelectedString](RestrictionEntry.md))
+- [#getSelectedString](RestrictionEntry.md))
 
 ## Public constructors
 
@@ -236,7 +236,7 @@ RestrictionEntry(
     selectedState: Boolean)
 ```
 
-Constructor for [TYPE_BOOLEAN](../android/content/RestrictionEntry.md) type.
+Constructor for [TYPE_BOOLEAN](RestrictionEntry.md) type.
 
 | Parameters ||
 |-----------------|--------------------------------------------------------------------------------------------------------------------------------|
@@ -253,7 +253,7 @@ RestrictionEntry(
     selectedInt: Int)
 ```
 
-Constructor for [TYPE_INTEGER](../android/content/RestrictionEntry.md) type.
+Constructor for [TYPE_INTEGER](RestrictionEntry.md) type.
 
 | Parameters ||
 |---------------|-----------------------------------------------------------------------------------------------------------------------|
@@ -270,7 +270,7 @@ RestrictionEntry(
     selectedString: String!)
 ```
 
-Constructor for [TYPE_CHOICE](../android/content/RestrictionEntry.md) type.
+Constructor for [TYPE_CHOICE](RestrictionEntry.md) type.
 
 | Parameters ||
 |------------------|-----------------------------------------------------------------------------------------------------------------------|
@@ -287,7 +287,7 @@ RestrictionEntry(
     selectedStrings: Array<String!>!)
 ```
 
-Constructor for [TYPE_MULTI_SELECT](../android/content/RestrictionEntry.md) type.
+Constructor for [TYPE_MULTI_SELECT](RestrictionEntry.md) type.
 
 | Parameters ||
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -307,16 +307,16 @@ open static fun createBundleArrayEntry(
 ): RestrictionEntry!
 ```
 
-Creates an entry of type [TYPE_BUNDLE_ARRAY](../android/content/RestrictionEntry.md).
+Creates an entry of type [TYPE_BUNDLE_ARRAY](RestrictionEntry.md).
 
 | Parameters ||
 |----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `key` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the unique key for this restriction |
-| `restrictionEntries` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [RestrictionEntry](../android/content/RestrictionEntry.md)!\>!:array of nested restriction entries. The array may only contain elements of type [bundle](../android/content/RestrictionEntry.md). |
+| `restrictionEntries` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [RestrictionEntry](RestrictionEntry.md)!\>!:array of nested restriction entries. The array may only contain elements of type [bundle](RestrictionEntry.md). |
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------|-------------------------------|
-| [RestrictionEntry](../android/content/RestrictionEntry.md)! | the newly created restriction |
+| [RestrictionEntry](RestrictionEntry.md)! | the newly created restriction |
 
 ### createBundleEntry
 
@@ -329,16 +329,16 @@ open static fun createBundleEntry(
 ): RestrictionEntry!
 ```
 
-Creates an entry of type [TYPE_BUNDLE](../android/content/RestrictionEntry.md).
+Creates an entry of type [TYPE_BUNDLE](RestrictionEntry.md).
 
 | Parameters ||
 |----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `key` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the unique key for this restriction |
-| `restrictionEntries` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [RestrictionEntry](../android/content/RestrictionEntry.md)!\>!:array of nested restriction entries. |
+| `restrictionEntries` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [RestrictionEntry](RestrictionEntry.md)!\>!:array of nested restriction entries. |
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------|-------------------------------|
-| [RestrictionEntry](../android/content/RestrictionEntry.md)! | the newly created restriction |
+| [RestrictionEntry](RestrictionEntry.md)! | the newly created restriction |
 
 ### describeContents
 
@@ -350,7 +350,7 @@ open fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) |
 
 ### equals
 
@@ -393,7 +393,7 @@ Returns the list of currently selected values.
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>! | the list of current selections, if type is [TYPE_MULTI_SELECT](../android/content/RestrictionEntry.md), null otherwise. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>! | the list of current selections, if type is [TYPE_MULTI_SELECT](RestrictionEntry.md), null otherwise. |
 
 ### getChoiceEntries
 
@@ -445,7 +445,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 open fun getIntValue(): Int
 ```
 
-Returns the value of the entry as an integer when the type is [TYPE_INTEGER](../android/content/RestrictionEntry.md).
+Returns the value of the entry as an integer when the type is [TYPE_INTEGER](RestrictionEntry.md).
 
 | Return ||
 |----------------------------------------------------------------------------|---------------------------------|
@@ -483,7 +483,7 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 open fun getSelectedState(): Boolean
 ```
 
-Returns the current selected state for an entry of type [TYPE_BOOLEAN](../android/content/RestrictionEntry.md).
+Returns the current selected state for an entry of type [TYPE_BOOLEAN](RestrictionEntry.md).
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------|
@@ -551,7 +551,7 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 open fun setAllSelectedStrings(allSelectedStrings: Array<String!>!): Unit
 ```
 
-Sets the current list of selected values for an entry of type [TYPE_MULTI_SELECT](../android/content/RestrictionEntry.md). These values will be persisted by the system for later use by the application.
+Sets the current list of selected values for an entry of type [TYPE_MULTI_SELECT](RestrictionEntry.md). These values will be persisted by the system for later use by the application.
 
 | Parameters ||
 |----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -572,7 +572,7 @@ Sets a list of strings that will be presented as choices to the user. This is si
 
 | Parameters ||
 |--------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](../android/content/Context.md)!:the application context, used for retrieving the resources. |
+| `context` | [Context](Context.md)!:the application context, used for retrieving the resources. |
 | `stringArrayResId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the resource id of a string array containing the possible entries. |
 
 ### setChoiceEntries
@@ -583,7 +583,7 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 open fun setChoiceEntries(choiceEntries: Array<String!>!): Unit
 ```
 
-Sets a list of strings that will be presented as choices to the user. When the user selects one or more of these choices, the corresponding value from the possible values are stored as the selected strings. The size of this array must match the size of the array set in[setChoiceValues(java.lang.String[])](https://developer.android.com/reference/kotlin/android/content/RestrictionEntry#setChoiceValues(kotlin.Array)). This method is not relevant for types other than [TYPE_CHOICE](../android/content/RestrictionEntry.md), and [TYPE_MULTI_SELECT](../android/content/RestrictionEntry.md).
+Sets a list of strings that will be presented as choices to the user. When the user selects one or more of these choices, the corresponding value from the possible values are stored as the selected strings. The size of this array must match the size of the array set in[setChoiceValues(java.lang.String[])](https://developer.android.com/reference/kotlin/android/content/RestrictionEntry#setChoiceValues(kotlin.Array)). This method is not relevant for types other than [TYPE_CHOICE](RestrictionEntry.md), and [TYPE_MULTI_SELECT](RestrictionEntry.md).
 
 | Parameters ||
 |-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -608,7 +608,7 @@ Sets a list of string values that can be selected by the user, similar to[setCho
 
 | Parameters ||
 |--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](../android/content/Context.md)!:the application context for retrieving the resources. |
+| `context` | [Context](Context.md)!:the application context for retrieving the resources. |
 | `stringArrayResId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the resource id for a string array containing the possible values. |
 
 **See Also**
@@ -623,7 +623,7 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 open fun setChoiceValues(choiceValues: Array<String!>!): Unit
 ```
 
-Sets a list of string values that can be selected by the user. If no user-visible entries are set by a call to[setChoiceEntries(java.lang.String[])](https://developer.android.com/reference/kotlin/android/content/RestrictionEntry#setChoiceEntries(kotlin.Array)), these values will be the ones shown to the user. Values will be chosen from this list as the user's selection and the selected values can be retrieved by a call to [getAllSelectedStrings()](../android/content/RestrictionEntry.md)), or [getSelectedString()](../android/content/RestrictionEntry.md)), depending on whether it is a multi-select type or choice type. This method is not relevant for types other than [TYPE_CHOICE](../android/content/RestrictionEntry.md), and [TYPE_MULTI_SELECT](../android/content/RestrictionEntry.md).
+Sets a list of string values that can be selected by the user. If no user-visible entries are set by a call to[setChoiceEntries(java.lang.String[])](https://developer.android.com/reference/kotlin/android/content/RestrictionEntry#setChoiceEntries(kotlin.Array)), these values will be the ones shown to the user. Values will be chosen from this list as the user's selection and the selected values can be retrieved by a call to [getAllSelectedStrings()](RestrictionEntry.md)), or [getSelectedString()](RestrictionEntry.md)), depending on whether it is a multi-select type or choice type. This method is not relevant for types other than [TYPE_CHOICE](RestrictionEntry.md), and [TYPE_MULTI_SELECT](RestrictionEntry.md).
 
 | Parameters ||
 |----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -656,7 +656,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 open fun setIntValue(value: Int): Unit
 ```
 
-Sets the integer value of the entry when the type is [TYPE_INTEGER](../android/content/RestrictionEntry.md).
+Sets the integer value of the entry when the type is [TYPE_INTEGER](RestrictionEntry.md).
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------|
@@ -672,7 +672,7 @@ open fun setRestrictions(restrictions: Array<RestrictionEntry!>!): Unit
 
 Sets an array of possible restriction entries, that this entry may contain.
 
-This method is only relevant for types [TYPE_BUNDLE](../android/content/RestrictionEntry.md) and [TYPE_BUNDLE_ARRAY](../android/content/RestrictionEntry.md) 
+This method is only relevant for types [TYPE_BUNDLE](RestrictionEntry.md) and [TYPE_BUNDLE_ARRAY](RestrictionEntry.md) 
 
 ### setSelectedState
 
@@ -682,7 +682,7 @@ Added in [API level 18](https://developer.android.com/guide/topics/manifest/uses
 open fun setSelectedState(state: Boolean): Unit
 ```
 
-Sets the current selected state for an entry of type [TYPE_BOOLEAN](../android/content/RestrictionEntry.md). This value will be persisted by the system for later use by the application.
+Sets the current selected state for an entry of type [TYPE_BOOLEAN](RestrictionEntry.md). This value will be persisted by the system for later use by the application.
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------|
@@ -755,8 +755,8 @@ open fun writeToParcel(
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](../android/os/Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android.os/Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

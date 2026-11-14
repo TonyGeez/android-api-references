@@ -9,11 +9,11 @@ open class AppInteractionException : Exception
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||
-| | | ↳ | [android.app.AppInteractionException](../android/app/AppInteractionException.md) |
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) ||
+| | | ↳ | [android.app.AppInteractionException](AppInteractionException.md) |
 | --- | --- | --- | --- |
 
-Known Direct Subclasses [AppInteractionDeniedException](../android/app/AppInteractionDeniedException.md) [AppInteractionDeniedException](../android/app/AppInteractionDeniedException.md) Exception thrown when an app interaction is denied.
+Known Direct Subclasses [AppInteractionDeniedException](AppInteractionDeniedException.md) [AppInteractionDeniedException](AppInteractionDeniedException.md) Exception thrown when an app interaction is denied.
 
 Exception thrown when an app interaction operation fails.
 
@@ -21,7 +21,7 @@ Exception thrown when an app interaction operation fails.
 
 | Public methods ||
 |---|---|
-| open [Bundle](../android/os/Bundle.md) | `https://developer.android.com/reference/kotlin/android/app/AppInteractionException#getExtras()()` Returns the additional metadata for this exception. |
+| open [Bundle](../android.os/Bundle.md) | `https://developer.android.com/reference/kotlin/android/app/AppInteractionException#getExtras()()` Returns the additional metadata for this exception. |
 
 ## Public methods
 

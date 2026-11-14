@@ -8,7 +8,7 @@ class SizeF : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.util.SizeF](../android/util/SizeF.md) |
+| ↳ | [android.util.SizeF](SizeF.md) |
 
 Immutable class for describing width and height dimensions in some arbitrary unit.
 
@@ -40,14 +40,14 @@ Flag for use with `https://developer.android.com/reference/kotlin/android/os/Par
 | --- | --- |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/util/SizeF#getWidth()()` Get the width of the size (as an arbitrary unit). |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/util/SizeF#hashCode()()` Returns a hash code value for the object. |
-| static [SizeF](../android/util/SizeF.md)! | `https://developer.android.com/reference/kotlin/android/util/SizeF#parseSizeF(kotlin.String)(string: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Parses the specified string as a size value. |
+| static [SizeF](SizeF.md)! | `https://developer.android.com/reference/kotlin/android/util/SizeF#parseSizeF(kotlin.String)(string: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Parses the specified string as a size value. |
 | --- | --- |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/util/SizeF#toString()()` Return the size represented as a string with the format `"WxH"` |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/util/SizeF#writeToParcel(android.os.Parcel,%20kotlin.Int)(out: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Write this size to the specified parcel. |
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [SizeF](../android/util/SizeF.md)!\> | `https://developer.android.com/reference/kotlin/android/util/SizeF#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [SizeF](SizeF.md)!\> | `https://developer.android.com/reference/kotlin/android/util/SizeF#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public constructors
 
@@ -227,7 +227,7 @@ Write this size to the specified parcel. To restore a size from a parcel, use th
 |---|---|
 | `dest` | The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
-| `out` | [Parcel](../android/os/Parcel.md): The parcel to write the point's coordinates into. This value cannot be `null`. |
+| `out` | [Parcel](../android.os/Parcel.md): The parcel to write the point's coordinates into. This value cannot be `null`. |
 | --- | --- |
 
 ## Properties

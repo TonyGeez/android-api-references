@@ -18,13 +18,13 @@ interface OnPreferenceClickListener
 |
 | Use the [AndroidX](https://developer.android.com/jetpack/androidx.html) [Preference Library](../androidx/preference/_package.md) for consistent behavior across all devices. For more information on using the AndroidX Preference Library see [Settings](https://developer.android.com/guide/topics/ui/settings.html).
 
-Interface definition for a callback to be invoked when a [Preference](../android/preference/Preference.md) is clicked.
+Interface definition for a callback to be invoked when a [Preference](Preference.md) is clicked.
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onPreferenceClick](../android/preference/Preference.OnPreferenceClickListener.md))`(`preference:` ` [Preference](../android/preference/Preference.md)!`)` Called when a Preference has been clicked. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onPreferenceClick](../android/preference/Preference.OnPreferenceClickListener.md))`(`preference:` ` [Preference](Preference.md)!`)` Called when a Preference has been clicked. |
 
 ## Public methods
 
@@ -42,7 +42,7 @@ Called when a Preference has been clicked.
 
 | Parameters ||
 |--------------|------------------------------------------------------------------------------------------------------------------------------|
-| `preference` | [Preference](../android/preference/Preference.md)!:The Preference that was clicked. |
+| `preference` | [Preference](Preference.md)!:The Preference that was clicked. |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------|

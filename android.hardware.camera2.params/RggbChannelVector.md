@@ -4,7 +4,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 
 # RggbChannelVector
 
-Kotlin| [Java](../android/hardware/camera2/params/RggbChannelVector.md) 
+Kotlin| [Java](RggbChannelVector.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class RggbChannelVector
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.hardware.camera2.params.RggbChannelVector](../android/hardware/camera2/params/RggbChannelVector.md) |
+| ↳ | [android.hardware.camera2.params.RggbChannelVector](RggbChannelVector.md) |
 
 Immutable class to store a 4-element vector of floats indexable by a bayer RAW 2x2 pixel block.
 
@@ -21,30 +21,30 @@ Immutable class to store a 4-element vector of floats indexable by a bayer RAW 2
 
 | Constants ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BLUE](../android/hardware/camera2/params/RggbChannelVector.md) Blue color channel in a bayer Raw pattern. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [COUNT](../android/hardware/camera2/params/RggbChannelVector.md) The number of color channels in this vector. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GREEN_EVEN](../android/hardware/camera2/params/RggbChannelVector.md) Green color channel in a bayer Raw pattern used by the even rows. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BLUE](RggbChannelVector.md) Blue color channel in a bayer Raw pattern. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [COUNT](RggbChannelVector.md) The number of color channels in this vector. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GREEN_EVEN](RggbChannelVector.md) Green color channel in a bayer Raw pattern used by the even rows. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GREEN_ODD](../android/hardware/camera2/params/RggbChannelVector.md) Green color channel in a bayer Raw pattern used by the odd rows. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RED](../android/hardware/camera2/params/RggbChannelVector.md) Red color channel in a bayer Raw pattern. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GREEN_ODD](RggbChannelVector.md) Green color channel in a bayer Raw pattern used by the odd rows. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RED](RggbChannelVector.md) Red color channel in a bayer Raw pattern. |
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [RggbChannelVector](../android/hardware/camera2/params/RggbChannelVector.md))`(`red:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `greenEven:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `greenOdd:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `blue:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Create a new [RggbChannelVector](../android/hardware/camera2/params/RggbChannelVector.md) from an RGGB 2x2 pixel. |
+| [RggbChannelVector](RggbChannelVector.md))`(`red:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `greenEven:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `greenOdd:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `blue:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Create a new [RggbChannelVector](RggbChannelVector.md) from an RGGB 2x2 pixel. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [copyTo](../android/hardware/camera2/params/RggbChannelVector.md))`(`destination:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Copy the vector into the destination in the order`[R, Geven, Godd, B]`. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/hardware/camera2/params/RggbChannelVector.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Check if this [RggbChannelVector](../android/hardware/camera2/params/RggbChannelVector.md) is equal to another [RggbChannelVector](../android/hardware/camera2/params/RggbChannelVector.md). |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getBlue](../android/hardware/camera2/params/RggbChannelVector.md))`()` Get the blue component. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [copyTo](RggbChannelVector.md))`(`destination:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`, `offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Copy the vector into the destination in the order`[R, Geven, Godd, B]`. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](RggbChannelVector.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Check if this [RggbChannelVector](RggbChannelVector.md) is equal to another [RggbChannelVector](RggbChannelVector.md). |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getBlue](RggbChannelVector.md))`()` Get the blue component. |
 | --- | --- |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getComponent](../android/hardware/camera2/params/RggbChannelVector.md))`(`colorChannel:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get the component by the color channel index. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getGreenEven](../android/hardware/camera2/params/RggbChannelVector.md))`()` Get the green (even rows) component. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getGreenOdd](../android/hardware/camera2/params/RggbChannelVector.md))`()` Get the green (odd rows) component. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getComponent](RggbChannelVector.md))`(`colorChannel:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get the component by the color channel index. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getGreenEven](RggbChannelVector.md))`()` Get the green (even rows) component. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getGreenOdd](RggbChannelVector.md))`()` Get the green (odd rows) component. |
 | --- | --- |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getRed](../android/hardware/camera2/params/RggbChannelVector.md))`()` Get the red component. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/hardware/camera2/params/RggbChannelVector.md))`()` Returns a hash code value for the object. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/hardware/camera2/params/RggbChannelVector.md))`()` Return the RggbChannelVector as a string representation. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getRed](RggbChannelVector.md))`()` Get the red component. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](RggbChannelVector.md))`()` Returns a hash code value for the object. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](RggbChannelVector.md))`()` Return the RggbChannelVector as a string representation. |
 | --- | --- |
 
 ## Constants
@@ -123,7 +123,7 @@ RggbChannelVector(
     blue: Float)
 ```
 
-Create a new [RggbChannelVector](../android/hardware/camera2/params/RggbChannelVector.md) from an RGGB 2x2 pixel.
+Create a new [RggbChannelVector](RggbChannelVector.md) from an RGGB 2x2 pixel.
 
 All pixel values are considered normalized within`[0.0f, 1.0f]`(i.e.`1.0f`could be linearized to`255`if converting to a non-floating point pixel representation).
 
@@ -174,7 +174,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 fun equals(other: Any?): Boolean
 ```
 
-Check if this [RggbChannelVector](../android/hardware/camera2/params/RggbChannelVector.md) is equal to another [RggbChannelVector](../android/hardware/camera2/params/RggbChannelVector.md).
+Check if this [RggbChannelVector](RggbChannelVector.md) is equal to another [RggbChannelVector](RggbChannelVector.md).
 
 Two vectors are only equal if and only if each of the respective elements is equal.
 
@@ -210,11 +210,11 @@ fun getComponent(colorChannel: Int): Float
 
 Get the component by the color channel index.
 
-`colorChannel`must be one of [RED](../android/hardware/camera2/params/RggbChannelVector.md), [GREEN_EVEN](../android/hardware/camera2/params/RggbChannelVector.md), [GREEN_ODD](../android/hardware/camera2/params/RggbChannelVector.md), [BLUE](../android/hardware/camera2/params/RggbChannelVector.md).
+`colorChannel`must be one of [RED](RggbChannelVector.md), [GREEN_EVEN](RggbChannelVector.md), [GREEN_ODD](RggbChannelVector.md), [BLUE](RggbChannelVector.md).
 
 | Parameters ||
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `colorChannel` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):greater or equal to`0`and less than [COUNT](../android/hardware/camera2/params/RggbChannelVector.md) |
+| `colorChannel` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):greater or equal to`0`and less than [COUNT](RggbChannelVector.md) |
 
 | Return ||
 |--------------------------------------------------------------------------------|--------------------------------------------------|
@@ -274,13 +274,13 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 fun hashCode(): Int
 ```
 
-Returns a hash code value for the object. This method is supported for the benefit of hash tables such as those provided by [java.util.HashMap](../java/util/HashMap.md).
+Returns a hash code value for the object. This method is supported for the benefit of hash tables such as those provided by [java.util.HashMap](../java.util/HashMap.md).
 
 The general contract of`hashCode`is:
 
 - Whenever it is invoked on the same object more than once during an execution of a Java application, the`hashCode`method must consistently return the same integer, provided no information used in`equals`comparisons on the object is modified. This integer need not remain consistent from one execution of an application to another execution of the same application.
-- If two objects are equal according to the [equals](../java/lang/Object.md))method, then calling the`hashCode`method on each of the two objects must produce the same integer result.
-- It is*not* required that if two objects are unequal according to the [equals](../java/lang/Object.md))method, then calling the`hashCode`method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
+- If two objects are equal according to the [equals](../java.lang/Object.md))method, then calling the`hashCode`method on each of the two objects must produce the same integer result.
+- It is*not* required that if two objects are unequal according to the [equals](../java.lang/Object.md))method, then calling the`hashCode`method on each of the two objects must produce distinct integer results. However, the programmer should be aware that producing distinct integer results for unequal objects may improve the performance of hash tables.
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------|
@@ -300,4 +300,4 @@ Return the RggbChannelVector as a string representation.
 
 | Return ||
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | string representation of [RggbChannelVector](../android/hardware/camera2/params/RggbChannelVector.md) |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | string representation of [RggbChannelVector](RggbChannelVector.md) |

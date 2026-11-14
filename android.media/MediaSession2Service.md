@@ -9,11 +9,11 @@ abstract class MediaSession2Service : Service
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](../android/content/Context.md) ||||
-| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) |||
-| | | ↳ | [android.app.Service](../android/app/Service.md) ||
+| ↳ | [android.content.Context](../android.content/Context.md) ||||
+| | ↳ | [android.content.ContextWrapper](../android.content/ContextWrapper.md) |||
+| | | ↳ | [android.app.Service](../android.app/Service.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.media.MediaSession2Service](../android/media/MediaSession2Service.md) |
+| | | | ↳ | [android.media.MediaSession2Service](MediaSession2Service.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 37.**
@@ -1058,12 +1058,12 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | Public methods ||
 |---|---|
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaSession2Service#addSession(android.media.MediaSession2)(session: https://developer.android.com/reference/kotlin/android/media/MediaSession2)` Adds a session to this service. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MediaSession2](../android/media/MediaSession2.md)!\> | `https://developer.android.com/reference/kotlin/android/media/MediaSession2Service#getSessions()()` Gets the list of `https://developer.android.com/reference/kotlin/android/media/MediaSession2`s that you've added to this service. |
-| open [IBinder](../android/os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/media/MediaSession2Service#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Return the communication channel to the service. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MediaSession2](MediaSession2.md)!\> | `https://developer.android.com/reference/kotlin/android/media/MediaSession2Service#getSessions()()` Gets the list of `https://developer.android.com/reference/kotlin/android/media/MediaSession2`s that you've added to this service. |
+| open [IBinder](../android.os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/media/MediaSession2Service#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Return the communication channel to the service. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaSession2Service#onCreate()()` Called by the system when the service is first created. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaSession2Service#onDestroy()()` Called by the system to notify that it is no longer used and is being removed. |
-| abstract [MediaSession2](../android/media/MediaSession2.md)? | `https://developer.android.com/reference/kotlin/android/media/MediaSession2Service#onGetSession(android.media.MediaSession2.ControllerInfo)(controllerInfo: https://developer.android.com/reference/kotlin/android/media/MediaSession2.ControllerInfo)` Called when a `https://developer.android.com/reference/kotlin/android/media/MediaController2` is created with the this service's `https://developer.android.com/reference/kotlin/android/media/Session2Token`. |
+| abstract [MediaSession2](MediaSession2.md)? | `https://developer.android.com/reference/kotlin/android/media/MediaSession2Service#onGetSession(android.media.MediaSession2.ControllerInfo)(controllerInfo: https://developer.android.com/reference/kotlin/android/media/MediaSession2.ControllerInfo)` Called when a `https://developer.android.com/reference/kotlin/android/media/MediaController2` is created with the this service's `https://developer.android.com/reference/kotlin/android/media/Session2Token`. |
 | --- | --- |
 | abstract [MediaSession2Service.MediaNotification](../android/media/MediaSession2Service.MediaNotification.md)? | `https://developer.android.com/reference/kotlin/android/media/MediaSession2Service#onUpdateNotification(android.media.MediaSession2)(session: https://developer.android.com/reference/kotlin/android/media/MediaSession2)` Called to update the media notification when the playback state changes. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaSession2Service#removeSession(android.media.MediaSession2)(session: https://developer.android.com/reference/kotlin/android/media/MediaSession2)` Removes a session from this service. |
@@ -2791,7 +2791,7 @@ Added session will be removed automatically when it's closed, or removed when `h
 
 | Parameters ||
 |---|---|
-| `session` | [MediaSession2](../android/media/MediaSession2.md): a session to be added. This value cannot be `null`. |
+| `session` | [MediaSession2](MediaSession2.md): a session to be added. This value cannot be `null`. |
 
 **See Also**
 
@@ -2830,7 +2830,7 @@ If you override this method you *must* call through to the superclass implementa
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md): This value cannot be `null`. |
+| `intent` | [Intent](../android.content/Intent.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -2913,7 +2913,7 @@ Apps must request the `https://developer.android.com/reference/kotlin/android/Ma
 
 | Parameters ||
 |---|---|
-| `session` | [MediaSession2](../android/media/MediaSession2.md): the session for which an updated media notification is required. This value cannot be `null`. |
+| `session` | [MediaSession2](MediaSession2.md): the session for which an updated media notification is required. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -2933,7 +2933,7 @@ Removes a session from this service.
 
 | Parameters ||
 |---|---|
-| `session` | [MediaSession2](../android/media/MediaSession2.md): a session to be removed. This value cannot be `null`. |
+| `session` | [MediaSession2](MediaSession2.md): a session to be removed. This value cannot be `null`. |
 
 **See Also**
 

@@ -8,7 +8,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface Connection : AutoCloseable, Wrapper
 ```
 
-| [java.sql.Connection](../java/sql/Connection.md) |
+| [java.sql.Connection](Connection.md) |
 
 A connection (session) with a specific database. SQL statements are executed and results are returned within the context of a connection.
 
@@ -33,81 +33,81 @@ java.util.Map map = con.getTypeMap();
 
 | Constants ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSACTION_NONE](../java/sql/Connection.md) A constant indicating that transactions are not supported. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSACTION_READ_COMMITTED](../java/sql/Connection.md) A constant indicating that dirty reads are prevented; non-repeatable reads and phantom reads can occur. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSACTION_READ_UNCOMMITTED](../java/sql/Connection.md) A constant indicating that dirty reads, non-repeatable reads and phantom reads can occur. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSACTION_NONE](Connection.md) A constant indicating that transactions are not supported. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSACTION_READ_COMMITTED](Connection.md) A constant indicating that dirty reads are prevented; non-repeatable reads and phantom reads can occur. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSACTION_READ_UNCOMMITTED](Connection.md) A constant indicating that dirty reads, non-repeatable reads and phantom reads can occur. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSACTION_REPEATABLE_READ](../java/sql/Connection.md) A constant indicating that dirty reads and non-repeatable reads are prevented; phantom reads can occur. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSACTION_SERIALIZABLE](../java/sql/Connection.md) A constant indicating that dirty reads, non-repeatable reads and phantom reads are prevented. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSACTION_REPEATABLE_READ](Connection.md) A constant indicating that dirty reads and non-repeatable reads are prevented; phantom reads can occur. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRANSACTION_SERIALIZABLE](Connection.md) A constant indicating that dirty reads, non-repeatable reads and phantom reads are prevented. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearWarnings](../java/sql/Connection.md))`()` Clears all warnings reported for this`Connection`object. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../java/sql/Connection.md))`()` Releases this`Connection`object's database and JDBC resources immediately instead of waiting for them to be automatically released. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [commit](../java/sql/Connection.md))`()` Makes all changes made since the previous commit/rollback permanent and releases any database locks currently held by this`Connection`object. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearWarnings](Connection.md))`()` Clears all warnings reported for this`Connection`object. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](Connection.md))`()` Releases this`Connection`object's database and JDBC resources immediately instead of waiting for them to be automatically released. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [commit](Connection.md))`()` Makes all changes made since the previous commit/rollback permanent and releases any database locks currently held by this`Connection`object. |
 | --- | --- |
-| abstract [Array](../java/sql/Array.md)! | [createArrayOf](../java/sql/Connection.md))`(`typeName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `elements:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`)` Factory method for creating Array objects. |
-| abstract [Blob](../java/sql/Blob.md)! | [createBlob](../java/sql/Connection.md))`()` Constructs an object that implements the`Blob`interface. |
-| abstract [Clob](../java/sql/Clob.md)! | [createClob](../java/sql/Connection.md))`()` Constructs an object that implements the`Clob`interface. |
+| abstract [Array](Array.md)! | [createArrayOf](Connection.md))`(`typeName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `elements:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`)` Factory method for creating Array objects. |
+| abstract [Blob](Blob.md)! | [createBlob](Connection.md))`()` Constructs an object that implements the`Blob`interface. |
+| abstract [Clob](Clob.md)! | [createClob](Connection.md))`()` Constructs an object that implements the`Clob`interface. |
 | --- | --- |
-| abstract [NClob](../java/sql/NClob.md)! | [createNClob](../java/sql/Connection.md))`()` Constructs an object that implements the`NClob`interface. |
-| abstract [SQLXML](../java/sql/SQLXML.md)! | [createSQLXML](../java/sql/Connection.md))`()` Constructs an object that implements the`SQLXML`interface. |
-| abstract [Statement](../java/sql/Statement.md)! | [createStatement](../java/sql/Connection.md))`()` Creates a`Statement`object for sending SQL statements to the database. |
+| abstract [NClob](NClob.md)! | [createNClob](Connection.md))`()` Constructs an object that implements the`NClob`interface. |
+| abstract [SQLXML](SQLXML.md)! | [createSQLXML](Connection.md))`()` Constructs an object that implements the`SQLXML`interface. |
+| abstract [Statement](Statement.md)! | [createStatement](Connection.md))`()` Creates a`Statement`object for sending SQL statements to the database. |
 | --- | --- |
-| abstract [Statement](../java/sql/Statement.md)! | [createStatement](../java/sql/Connection.md))`(`resultSetType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `resultSetConcurrency:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a`Statement`object that will generate`ResultSet`objects with the given type and concurrency. |
-| abstract [Statement](../java/sql/Statement.md)! | [createStatement](../java/sql/Connection.md))`(`resultSetType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `resultSetConcurrency:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `resultSetHoldability:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a`Statement`object that will generate`ResultSet`objects with the given type, concurrency, and holdability. |
-| abstract [Struct](../java/sql/Struct.md)! | [createStruct](../java/sql/Connection.md))`(`typeName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `attributes:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`)` Factory method for creating Struct objects. |
+| abstract [Statement](Statement.md)! | [createStatement](Connection.md))`(`resultSetType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `resultSetConcurrency:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a`Statement`object that will generate`ResultSet`objects with the given type and concurrency. |
+| abstract [Statement](Statement.md)! | [createStatement](Connection.md))`(`resultSetType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `resultSetConcurrency:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `resultSetHoldability:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a`Statement`object that will generate`ResultSet`objects with the given type, concurrency, and holdability. |
+| abstract [Struct](Struct.md)! | [createStruct](Connection.md))`(`typeName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `attributes:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!>!`)` Factory method for creating Struct objects. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getAutoCommit](../java/sql/Connection.md))`()` Retrieves the current auto-commit mode for this`Connection`object. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getCatalog](../java/sql/Connection.md))`()` Retrieves this`Connection`object's current catalog name. |
-| abstract [Properties](../java/util/Properties.md)! | [getClientInfo](../java/sql/Connection.md))`()` Returns a list containing the name and current value of each client info property supported by the driver. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getAutoCommit](Connection.md))`()` Retrieves the current auto-commit mode for this`Connection`object. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getCatalog](Connection.md))`()` Retrieves this`Connection`object's current catalog name. |
+| abstract [Properties](../java.util/Properties.md)! | [getClientInfo](Connection.md))`()` Returns a list containing the name and current value of each client info property supported by the driver. |
 | --- | --- |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getClientInfo](../java/sql/Connection.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the value of the client info property specified by name. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHoldability](../java/sql/Connection.md))`()` Retrieves the current holdability of`ResultSet`objects created using this`Connection`object. |
-| abstract [DatabaseMetaData](../java/sql/DatabaseMetaData.md)! | [getMetaData](../java/sql/Connection.md))`()` Retrieves a`DatabaseMetaData`object that contains metadata about the database to which this`Connection`object represents a connection. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getClientInfo](Connection.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the value of the client info property specified by name. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHoldability](Connection.md))`()` Retrieves the current holdability of`ResultSet`objects created using this`Connection`object. |
+| abstract [DatabaseMetaData](DatabaseMetaData.md)! | [getMetaData](Connection.md))`()` Retrieves a`DatabaseMetaData`object that contains metadata about the database to which this`Connection`object represents a connection. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTransactionIsolation](../java/sql/Connection.md))`()` Retrieves this`Connection`object's current transaction isolation level. |
-| abstract [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Class](../java/lang/Class.md)\<\*\>!\>! | [getTypeMap](../java/sql/Connection.md))`()` Retrieves the`Map`object associated with this`Connection`object. |
-| abstract [SQLWarning](../java/sql/SQLWarning.md)! | [getWarnings](../java/sql/Connection.md))`()` Retrieves the first warning reported by calls on this`Connection`object. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTransactionIsolation](Connection.md))`()` Retrieves this`Connection`object's current transaction isolation level. |
+| abstract [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Class](../java.lang/Class.md)\<\*\>!\>! | [getTypeMap](Connection.md))`()` Retrieves the`Map`object associated with this`Connection`object. |
+| abstract [SQLWarning](SQLWarning.md)! | [getWarnings](Connection.md))`()` Retrieves the first warning reported by calls on this`Connection`object. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isClosed](../java/sql/Connection.md))`()` Retrieves whether this`Connection`object has been closed. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isReadOnly](../java/sql/Connection.md))`()` Retrieves whether this`Connection`object is in read-only mode. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isValid](../java/sql/Connection.md))`(`timeout:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns true if the connection has not been closed and is still valid. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isClosed](Connection.md))`()` Retrieves whether this`Connection`object has been closed. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isReadOnly](Connection.md))`()` Retrieves whether this`Connection`object is in read-only mode. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isValid](Connection.md))`(`timeout:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns true if the connection has not been closed and is still valid. |
 | --- | --- |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [nativeSQL](../java/sql/Connection.md))`(`sql:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Converts the given SQL statement into the system's native SQL grammar. |
-| abstract [CallableStatement](../java/sql/CallableStatement.md)! | [prepareCall](../java/sql/Connection.md))`(`sql:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a`CallableStatement`object for calling database stored procedures. |
-| abstract [CallableStatement](../java/sql/CallableStatement.md)! | [prepareCall](../java/sql/Connection.md))`(`sql:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `resultSetType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `resultSetConcurrency:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a`CallableStatement`object that will generate`ResultSet`objects with the given type and concurrency. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [nativeSQL](Connection.md))`(`sql:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Converts the given SQL statement into the system's native SQL grammar. |
+| abstract [CallableStatement](CallableStatement.md)! | [prepareCall](Connection.md))`(`sql:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a`CallableStatement`object for calling database stored procedures. |
+| abstract [CallableStatement](CallableStatement.md)! | [prepareCall](Connection.md))`(`sql:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `resultSetType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `resultSetConcurrency:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a`CallableStatement`object that will generate`ResultSet`objects with the given type and concurrency. |
 | --- | --- |
-| abstract [CallableStatement](../java/sql/CallableStatement.md)! | [prepareCall](../java/sql/Connection.md))`(`sql:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `resultSetType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `resultSetConcurrency:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `resultSetHoldability:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a`CallableStatement`object that will generate`ResultSet`objects with the given type and concurrency. |
-| abstract [PreparedStatement](../java/sql/PreparedStatement.md)! | [prepareStatement](../java/sql/Connection.md))`(`sql:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a`PreparedStatement`object for sending parameterized SQL statements to the database. |
-| abstract [PreparedStatement](../java/sql/PreparedStatement.md)! | [prepareStatement](../java/sql/Connection.md))`(`sql:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `autoGeneratedKeys:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a default`PreparedStatement`object that has the capability to retrieve auto-generated keys. |
+| abstract [CallableStatement](CallableStatement.md)! | [prepareCall](Connection.md))`(`sql:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `resultSetType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `resultSetConcurrency:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `resultSetHoldability:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a`CallableStatement`object that will generate`ResultSet`objects with the given type and concurrency. |
+| abstract [PreparedStatement](PreparedStatement.md)! | [prepareStatement](Connection.md))`(`sql:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a`PreparedStatement`object for sending parameterized SQL statements to the database. |
+| abstract [PreparedStatement](PreparedStatement.md)! | [prepareStatement](Connection.md))`(`sql:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `autoGeneratedKeys:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a default`PreparedStatement`object that has the capability to retrieve auto-generated keys. |
 | --- | --- |
-| abstract [PreparedStatement](../java/sql/PreparedStatement.md)! | [prepareStatement](../java/sql/Connection.md))`(`sql:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `resultSetType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `resultSetConcurrency:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a`PreparedStatement`object that will generate`ResultSet`objects with the given type and concurrency. |
-| abstract [PreparedStatement](../java/sql/PreparedStatement.md)! | [prepareStatement](../java/sql/Connection.md))`(`sql:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `resultSetType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `resultSetConcurrency:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `resultSetHoldability:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a`PreparedStatement`object that will generate`ResultSet`objects with the given type, concurrency, and holdability. |
-| abstract [PreparedStatement](../java/sql/PreparedStatement.md)! | [prepareStatement](../java/sql/Connection.md))`(`sql:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `columnIndexes:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` Creates a default`PreparedStatement`object capable of returning the auto-generated keys designated by the given array. |
+| abstract [PreparedStatement](PreparedStatement.md)! | [prepareStatement](Connection.md))`(`sql:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `resultSetType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `resultSetConcurrency:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a`PreparedStatement`object that will generate`ResultSet`objects with the given type and concurrency. |
+| abstract [PreparedStatement](PreparedStatement.md)! | [prepareStatement](Connection.md))`(`sql:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `resultSetType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `resultSetConcurrency:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `resultSetHoldability:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a`PreparedStatement`object that will generate`ResultSet`objects with the given type, concurrency, and holdability. |
+| abstract [PreparedStatement](PreparedStatement.md)! | [prepareStatement](Connection.md))`(`sql:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `columnIndexes:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` Creates a default`PreparedStatement`object capable of returning the auto-generated keys designated by the given array. |
 | --- | --- |
-| abstract [PreparedStatement](../java/sql/PreparedStatement.md)! | [prepareStatement](../java/sql/Connection.md))`(`sql:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `columnNames:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Creates a default`PreparedStatement`object capable of returning the auto-generated keys designated by the given array. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [releaseSavepoint](../java/sql/Connection.md))`(`savepoint:` ` [Savepoint](../java/sql/Savepoint.md)!`)` Removes the specified`Savepoint`and subsequent`Savepoint`objects from the current transaction. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [rollback](../java/sql/Connection.md))`()` Undoes all changes made in the current transaction and releases any database locks currently held by this`Connection`object. |
+| abstract [PreparedStatement](PreparedStatement.md)! | [prepareStatement](Connection.md))`(`sql:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `columnNames:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Creates a default`PreparedStatement`object capable of returning the auto-generated keys designated by the given array. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [releaseSavepoint](Connection.md))`(`savepoint:` ` [Savepoint](Savepoint.md)!`)` Removes the specified`Savepoint`and subsequent`Savepoint`objects from the current transaction. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [rollback](Connection.md))`()` Undoes all changes made in the current transaction and releases any database locks currently held by this`Connection`object. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [rollback](../java/sql/Connection.md))`(`savepoint:` ` [Savepoint](../java/sql/Savepoint.md)!`)` Undoes all changes made after the given`Savepoint`object was set. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAutoCommit](../java/sql/Connection.md))`(`autoCommit:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets this connection's auto-commit mode to the given state. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCatalog](../java/sql/Connection.md))`(`catalog:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the given catalog name in order to select a subspace of this`Connection`object's database in which to work. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [rollback](Connection.md))`(`savepoint:` ` [Savepoint](Savepoint.md)!`)` Undoes all changes made after the given`Savepoint`object was set. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAutoCommit](Connection.md))`(`autoCommit:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Sets this connection's auto-commit mode to the given state. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setCatalog](Connection.md))`(`catalog:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the given catalog name in order to select a subspace of this`Connection`object's database in which to work. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setClientInfo](../java/sql/Connection.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the value of the client info property specified by name to the value specified by value. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setClientInfo](../java/sql/Connection.md))`(`properties:` ` [Properties](../java/util/Properties.md)!`)` Sets the value of the connection's client info properties. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setHoldability](../java/sql/Connection.md))`(`holdability:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Changes the default holdability of`ResultSet`objects created using this`Connection`object to the given holdability. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setClientInfo](Connection.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Sets the value of the client info property specified by name to the value specified by value. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setClientInfo](Connection.md))`(`properties:` ` [Properties](../java.util/Properties.md)!`)` Sets the value of the connection's client info properties. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setHoldability](Connection.md))`(`holdability:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Changes the default holdability of`ResultSet`objects created using this`Connection`object to the given holdability. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setReadOnly](../java/sql/Connection.md))`(`readOnly:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Puts this connection in read-only mode as a hint to the driver to enable database optimizations. |
-| abstract [Savepoint](../java/sql/Savepoint.md)! | [setSavepoint](../java/sql/Connection.md))`()` Creates an unnamed savepoint in the current transaction and returns the new`Savepoint`object that represents it. |
-| abstract [Savepoint](../java/sql/Savepoint.md)! | [setSavepoint](../java/sql/Connection.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a savepoint with the given name in the current transaction and returns the new`Savepoint`object that represents it. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setReadOnly](Connection.md))`(`readOnly:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Puts this connection in read-only mode as a hint to the driver to enable database optimizations. |
+| abstract [Savepoint](Savepoint.md)! | [setSavepoint](Connection.md))`()` Creates an unnamed savepoint in the current transaction and returns the new`Savepoint`object that represents it. |
+| abstract [Savepoint](Savepoint.md)! | [setSavepoint](Connection.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a savepoint with the given name in the current transaction and returns the new`Savepoint`object that represents it. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTransactionIsolation](../java/sql/Connection.md))`(`level:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Attempts to change the transaction isolation level for this`Connection`object to the one given. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTypeMap](../java/sql/Connection.md))`(`map:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [Class](../java/lang/Class.md)<*>!>!`)` Installs the given`TypeMap`object as the type map for this`Connection`object. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTransactionIsolation](Connection.md))`(`level:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Attempts to change the transaction isolation level for this`Connection`object to the one given. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTypeMap](Connection.md))`(`map:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [Class](../java.lang/Class.md)<*>!>!`)` Installs the given`TypeMap`object as the type map for this`Connection`object. |
 
 | Inherited functions ||
 |---|---|
-| From class [Wrapper](../java/sql/Wrapper.md) |------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isWrapperFor](../java/sql/Wrapper.md))`(`iface:` ` [Class](../java/lang/Class.md)<*>!`)` <br /> Returns true if this either implements the interface argument or is directly or indirectly a wrapper for an object that does. Returns false otherwise. If this implements the interface then return true, else if this is a wrapper then return the result of recursively calling`isWrapperFor`on the wrapped object. If this does not implement the interface and is not a wrapper, return false. This method should be implemented as a low-cost operation compared to`unwrap`so that callers can use this method to avoid expensive`unwrap`calls that may fail. If this method returns true then calling`unwrap`with the same argument should succeed. <br /> | | T | [unwrap](../java/sql/Wrapper.md))`(`iface:` ` [Class](../java/lang/Class.md)<T>!`)` <br /> Returns an object that implements the given interface to allow access to non-standard methods, or standard methods not exposed by the proxy. If the receiver implements the interface then the result is the receiver or a proxy for the receiver. If the receiver is a wrapper and the wrapped object implements the interface then the result is the wrapped object or a proxy for the wrapped object. Otherwise return the the result of calling`unwrap`recursively on the wrapped object or a proxy for that result. If the receiver is not a wrapper and does not implement the interface, then an`SQLException`is thrown. <br /> | ||
+| From class [Wrapper](Wrapper.md) |------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isWrapperFor](Wrapper.md))`(`iface:` ` [Class](../java.lang/Class.md)<*>!`)` <br /> Returns true if this either implements the interface argument or is directly or indirectly a wrapper for an object that does. Returns false otherwise. If this implements the interface then return true, else if this is a wrapper then return the result of recursively calling`isWrapperFor`on the wrapped object. If this does not implement the interface and is not a wrapper, return false. This method should be implemented as a low-cost operation compared to`unwrap`so that callers can use this method to avoid expensive`unwrap`calls that may fail. If this method returns true then calling`unwrap`with the same argument should succeed. <br /> | | T | [unwrap](Wrapper.md))`(`iface:` ` [Class](../java.lang/Class.md)<T>!`)` <br /> Returns an object that implements the given interface to allow access to non-standard methods, or standard methods not exposed by the proxy. If the receiver implements the interface then the result is the receiver or a proxy for the receiver. If the receiver is a wrapper and the wrapped object implements the interface then the result is the wrapped object or a proxy for the wrapped object. Otherwise return the the result of calling`unwrap`recursively on the wrapped object or a proxy for that result. If the receiver is not a wrapper and does not implement the interface, then an`SQLException`is thrown. <br /> | ||
 
 ## Constants
 
@@ -224,7 +224,7 @@ Makes all changes made since the previous commit/rollback permanent and releases
 
 **See Also**
 
-- [#setAutoCommit](../java/sql/Connection.md)) 
+- [#setAutoCommit](Connection.md)) 
 
 ### createArrayOf
 
@@ -250,7 +250,7 @@ Factory method for creating Array objects.
 
 | Return ||
 |-------------------------------------------------------------------------|--------------------------------------------------------------|
-| [Array](../java/sql/Array.md)! | an Array object whose elements map to the specified SQL type |
+| [Array](Array.md)! | an Array object whose elements map to the specified SQL type |
 
 | Exceptions ||
 |--------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -269,7 +269,7 @@ Constructs an object that implements the`Blob`interface. The object returned ini
 
 | Return ||
 |-----------------------------------------------------------------------|----------------------------------------------|
-| [Blob](../java/sql/Blob.md)! | An object that implements the`Blob`interface |
+| [Blob](Blob.md)! | An object that implements the`Blob`interface |
 
 | Exceptions ||
 |--------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -288,7 +288,7 @@ Constructs an object that implements the`Clob`interface. The object returned ini
 
 | Return ||
 |-----------------------------------------------------------------------|----------------------------------------------|
-| [Clob](../java/sql/Clob.md)! | An object that implements the`Clob`interface |
+| [Clob](Clob.md)! | An object that implements the`Clob`interface |
 
 | Exceptions ||
 |--------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -307,7 +307,7 @@ Constructs an object that implements the`NClob`interface. The object returned in
 
 | Return ||
 |-------------------------------------------------------------------------|-----------------------------------------------|
-| [NClob](../java/sql/NClob.md)! | An object that implements the`NClob`interface |
+| [NClob](NClob.md)! | An object that implements the`NClob`interface |
 
 | Exceptions ||
 |--------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -326,7 +326,7 @@ Constructs an object that implements the`SQLXML`interface. The object returned i
 
 | Return ||
 |---------------------------------------------------------------------------|------------------------------------------------|
-| [SQLXML](../java/sql/SQLXML.md)! | An object that implements the`SQLXML`interface |
+| [SQLXML](SQLXML.md)! | An object that implements the`SQLXML`interface |
 
 | Exceptions ||
 |--------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -343,11 +343,11 @@ abstract fun createStatement(): Statement!
 
 Creates a`Statement`object for sending SQL statements to the database. SQL statements without parameters are normally executed using`Statement`objects. If the same SQL statement is executed many times, it may be more efficient to use a`PreparedStatement`object.
 
-Result sets created using the returned`Statement`object will by default be type`TYPE_FORWARD_ONLY`and have a concurrency level of`CONCUR_READ_ONLY`. The holdability of the created result sets can be determined by calling [getHoldability](../java/sql/Connection.md)).
+Result sets created using the returned`Statement`object will by default be type`TYPE_FORWARD_ONLY`and have a concurrency level of`CONCUR_READ_ONLY`. The holdability of the created result sets can be determined by calling [getHoldability](Connection.md)).
 
 | Return ||
 |---------------------------------------------------------------------------------|--------------------------------|
-| [Statement](../java/sql/Statement.md)! | a new default`Statement`object |
+| [Statement](Statement.md)! | a new default`Statement`object |
 
 | Exceptions ||
 |-------------------------|-----------------------------------------------------------------------------------|
@@ -364,7 +364,7 @@ abstract fun createStatement(
 ): Statement!
 ```
 
-Creates a`Statement`object that will generate`ResultSet`objects with the given type and concurrency. This method is the same as the`createStatement`method above, but it allows the default result set type and concurrency to be overridden. The holdability of the created result sets can be determined by calling [getHoldability](../java/sql/Connection.md)).
+Creates a`Statement`object that will generate`ResultSet`objects with the given type and concurrency. This method is the same as the`createStatement`method above, but it allows the default result set type and concurrency to be overridden. The holdability of the created result sets can be determined by calling [getHoldability](Connection.md)).
 
 | Parameters ||
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -373,7 +373,7 @@ Creates a`Statement`object that will generate`ResultSet`objects with the given t
 
 | Return ||
 |---------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| [Statement](../java/sql/Statement.md)! | a new`Statement`object that will generate`ResultSet`objects with the given type and concurrency |
+| [Statement](Statement.md)! | a new`Statement`object that will generate`ResultSet`objects with the given type and concurrency |
 
 | Exceptions ||
 |--------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -403,7 +403,7 @@ Creates a`Statement`object that will generate`ResultSet`objects with the given t
 
 | Return ||
 |---------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| [Statement](../java/sql/Statement.md)! | a new`Statement`object that will generate`ResultSet`objects with the given type, concurrency, and holdability |
+| [Statement](Statement.md)! | a new`Statement`object that will generate`ResultSet`objects with the given type, concurrency, and holdability |
 
 | Exceptions ||
 |--------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -412,7 +412,7 @@ Creates a`Statement`object that will generate`ResultSet`objects with the given t
 
 **See Also**
 
-- [java.sql.ResultSet](../java/sql/ResultSet.md) 
+- [java.sql.ResultSet](ResultSet.md) 
 
 ### createStruct
 
@@ -434,7 +434,7 @@ Factory method for creating Struct objects.
 
 | Return ||
 |---------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
-| [Struct](../java/sql/Struct.md)! | a Struct object that maps to the given SQL type and is populated with the given attributes |
+| [Struct](Struct.md)! | a Struct object that maps to the given SQL type and is populated with the given attributes |
 
 | Exceptions ||
 |--------------------------------------------|--------------------------------------------------------------------------------------------------|
@@ -461,7 +461,7 @@ Retrieves the current auto-commit mode for this`Connection`object.
 
 **See Also**
 
-- [#setAutoCommit](../java/sql/Connection.md)) 
+- [#setAutoCommit](Connection.md)) 
 
 ### getCatalog
 
@@ -483,7 +483,7 @@ Retrieves this`Connection`object's current catalog name.
 
 **See Also**
 
-- [#setCatalog](../java/sql/Connection.md)) 
+- [#setCatalog](Connection.md)) 
 
 ### getClientInfo
 
@@ -499,7 +499,7 @@ Returns a list containing the name and current value of each client info propert
 
 | Return ||
 |------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| [Properties](../java/util/Properties.md)! | A`Properties`object that contains the name and current value of each of the client info properties supported by the driver. <br /> |
+| [Properties](../java.util/Properties.md)! | A`Properties`object that contains the name and current value of each of the client info properties supported by the driver. <br /> |
 
 | Exceptions ||
 |-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -533,7 +533,7 @@ Applications may use the`DatabaseMetaData.getClientInfoProperties`method to dete
 
 **See Also**
 
-- [java.sql.DatabaseMetaData#getClientInfoProperties](../java/sql/DatabaseMetaData.md)) 
+- [java.sql.DatabaseMetaData#getClientInfoProperties](DatabaseMetaData.md)) 
 
 ### getHoldability
 
@@ -555,9 +555,9 @@ Retrieves the current holdability of`ResultSet`objects created using this`Connec
 
 **See Also**
 
-- [#setHoldability](../java/sql/Connection.md))
-- [java.sql.DatabaseMetaData#getResultSetHoldability](../java/sql/DatabaseMetaData.md))
-- [java.sql.ResultSet](../java/sql/ResultSet.md) 
+- [#setHoldability](Connection.md))
+- [java.sql.DatabaseMetaData#getResultSetHoldability](DatabaseMetaData.md))
+- [java.sql.ResultSet](ResultSet.md) 
 
 ### getMetaData
 
@@ -571,7 +571,7 @@ Retrieves a`DatabaseMetaData`object that contains metadata about the database to
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|------------------------------------------------------|
-| [DatabaseMetaData](../java/sql/DatabaseMetaData.md)! | a`DatabaseMetaData`object for this`Connection`object |
+| [DatabaseMetaData](DatabaseMetaData.md)! | a`DatabaseMetaData`object for this`Connection`object |
 
 | Exceptions ||
 |-------------------------|-----------------------------------------------------------------------------------|
@@ -597,7 +597,7 @@ Retrieves this`Connection`object's current transaction isolation level.
 
 **See Also**
 
-- [#setTransactionIsolation](../java/sql/Connection.md)) 
+- [#setTransactionIsolation](Connection.md)) 
 
 ### getTypeMap
 
@@ -622,7 +622,7 @@ Map<String,Class<?>> myMap = con.getTypeMap();
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [Class](../java/lang/Class.md)<*>!>! | the`java.util.Map`object associated with this`Connection`object |
+| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [Class](../java.lang/Class.md)<*>!>! | the`java.util.Map`object associated with this`Connection`object |
 
 | Exceptions ||
 |--------------------------------------------|-----------------------------------------------------------------------------------|
@@ -631,7 +631,7 @@ Map<String,Class<?>> myMap = con.getTypeMap();
 
 **See Also**
 
-- [#setTypeMap](../java/sql/Connection.md)) 
+- [#setTypeMap](Connection.md)) 
 
 ### getWarnings
 
@@ -649,7 +649,7 @@ This method may not be called on a closed connection; doing so will cause an`SQL
 
 | Return ||
 |-----------------------------------------------------------------------------------|-------------------------------------------------------|
-| [SQLWarning](../java/sql/SQLWarning.md)! | the first`SQLWarning`object or`null`if there are none |
+| [SQLWarning](SQLWarning.md)! | the first`SQLWarning`object or`null`if there are none |
 
 | Exceptions ||
 |-------------------------|-----------------------------------------------------------------------------------|
@@ -657,7 +657,7 @@ This method may not be called on a closed connection; doing so will cause an`SQL
 
 **See Also**
 
-- [java.sql.SQLWarning](../java/sql/SQLWarning.md) 
+- [java.sql.SQLWarning](SQLWarning.md) 
 
 ### isClosed
 
@@ -723,7 +723,7 @@ The query submitted by the driver to validate the connection shall be executed i
 
 **See Also**
 
-- [java.sql.DatabaseMetaData#getClientInfoProperties](../java/sql/DatabaseMetaData.md)) 
+- [java.sql.DatabaseMetaData#getClientInfoProperties](DatabaseMetaData.md)) 
 
 ### nativeSQL
 
@@ -759,7 +759,7 @@ Creates a`CallableStatement`object for calling database stored procedures. The`C
 
 **Note:** This method is optimized for handling stored procedure call statements. Some drivers may send the call statement to the database when the method`prepareCall`is done; others may wait until the`CallableStatement`object is executed. This has no direct effect on users; however, it does affect which method throws certain SQLExceptions.
 
-Result sets created using the returned`CallableStatement`object will by default be type`TYPE_FORWARD_ONLY`and have a concurrency level of`CONCUR_READ_ONLY`. The holdability of the created result sets can be determined by calling [getHoldability](../java/sql/Connection.md)).
+Result sets created using the returned`CallableStatement`object will by default be type`TYPE_FORWARD_ONLY`and have a concurrency level of`CONCUR_READ_ONLY`. The holdability of the created result sets can be determined by calling [getHoldability](Connection.md)).
 
 | Parameters ||
 |-------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -767,7 +767,7 @@ Result sets created using the returned`CallableStatement`object will by default 
 
 | Return ||
 |-------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
-| [CallableStatement](../java/sql/CallableStatement.md)! | a new default`CallableStatement`object containing the pre-compiled SQL statement |
+| [CallableStatement](CallableStatement.md)! | a new default`CallableStatement`object containing the pre-compiled SQL statement |
 
 | Exceptions ||
 |-------------------------|-----------------------------------------------------------------------------------|
@@ -785,7 +785,7 @@ abstract fun prepareCall(
 ): CallableStatement!
 ```
 
-Creates a`CallableStatement`object that will generate`ResultSet`objects with the given type and concurrency. This method is the same as the`prepareCall`method above, but it allows the default result set type and concurrency to be overridden. The holdability of the created result sets can be determined by calling [getHoldability](../java/sql/Connection.md)).
+Creates a`CallableStatement`object that will generate`ResultSet`objects with the given type and concurrency. This method is the same as the`prepareCall`method above, but it allows the default result set type and concurrency to be overridden. The holdability of the created result sets can be determined by calling [getHoldability](Connection.md)).
 
 | Parameters ||
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -796,7 +796,7 @@ Creates a`CallableStatement`object that will generate`ResultSet`objects with the
 
 | Return ||
 |-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| [CallableStatement](../java/sql/CallableStatement.md)! | a new`CallableStatement`object containing the pre-compiled SQL statement that will produce`ResultSet`objects with the given type and concurrency |
+| [CallableStatement](CallableStatement.md)! | a new`CallableStatement`object containing the pre-compiled SQL statement that will produce`ResultSet`objects with the given type and concurrency |
 
 | Exceptions ||
 |--------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -828,7 +828,7 @@ Creates a`CallableStatement`object that will generate`ResultSet`objects with the
 
 | Return ||
 |-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [CallableStatement](../java/sql/CallableStatement.md)! | a new`CallableStatement`object, containing the pre-compiled SQL statement, that will generate`ResultSet`objects with the given type, concurrency, and holdability |
+| [CallableStatement](CallableStatement.md)! | a new`CallableStatement`object, containing the pre-compiled SQL statement, that will generate`ResultSet`objects with the given type, concurrency, and holdability |
 
 | Exceptions ||
 |--------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -837,7 +837,7 @@ Creates a`CallableStatement`object that will generate`ResultSet`objects with the
 
 **See Also**
 
-- [java.sql.ResultSet](../java/sql/ResultSet.md) 
+- [java.sql.ResultSet](ResultSet.md) 
 
 ### prepareStatement
 
@@ -853,7 +853,7 @@ A SQL statement with or without IN parameters can be pre-compiled and stored in 
 
 **Note:** This method is optimized for handling parametric SQL statements that benefit from precompilation. If the driver supports precompilation, the method`prepareStatement`will send the statement to the database for precompilation. Some drivers may not support precompilation. In this case, the statement may not be sent to the database until the`PreparedStatement`object is executed. This has no direct effect on users; however, it does affect which methods throw certain`SQLException`objects.
 
-Result sets created using the returned`PreparedStatement`object will by default be type`TYPE_FORWARD_ONLY`and have a concurrency level of`CONCUR_READ_ONLY`. The holdability of the created result sets can be determined by calling [getHoldability](../java/sql/Connection.md)).
+Result sets created using the returned`PreparedStatement`object will by default be type`TYPE_FORWARD_ONLY`and have a concurrency level of`CONCUR_READ_ONLY`. The holdability of the created result sets can be determined by calling [getHoldability](Connection.md)).
 
 | Parameters ||
 |-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -861,7 +861,7 @@ Result sets created using the returned`PreparedStatement`object will by default 
 
 | Return ||
 |-------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
-| [PreparedStatement](../java/sql/PreparedStatement.md)! | a new default`PreparedStatement`object containing the pre-compiled SQL statement |
+| [PreparedStatement](PreparedStatement.md)! | a new default`PreparedStatement`object containing the pre-compiled SQL statement |
 
 | Exceptions ||
 |-------------------------|-----------------------------------------------------------------------------------|
@@ -882,7 +882,7 @@ Creates a default`PreparedStatement`object that has the capability to retrieve a
 
 **Note:** This method is optimized for handling parametric SQL statements that benefit from precompilation. If the driver supports precompilation, the method`prepareStatement`will send the statement to the database for precompilation. Some drivers may not support precompilation. In this case, the statement may not be sent to the database until the`PreparedStatement`object is executed. This has no direct effect on users; however, it does affect which methods throw certain SQLExceptions.
 
-Result sets created using the returned`PreparedStatement`object will by default be type`TYPE_FORWARD_ONLY`and have a concurrency level of`CONCUR_READ_ONLY`. The holdability of the created result sets can be determined by calling [getHoldability](../java/sql/Connection.md)).
+Result sets created using the returned`PreparedStatement`object will by default be type`TYPE_FORWARD_ONLY`and have a concurrency level of`CONCUR_READ_ONLY`. The holdability of the created result sets can be determined by calling [getHoldability](Connection.md)).
 
 | Parameters ||
 |---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -891,7 +891,7 @@ Result sets created using the returned`PreparedStatement`object will by default 
 
 | Return ||
 |-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| [PreparedStatement](../java/sql/PreparedStatement.md)! | a new`PreparedStatement`object, containing the pre-compiled SQL statement, that will have the capability of returning auto-generated keys |
+| [PreparedStatement](PreparedStatement.md)! | a new`PreparedStatement`object, containing the pre-compiled SQL statement, that will have the capability of returning auto-generated keys |
 
 | Exceptions ||
 |--------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -910,7 +910,7 @@ abstract fun prepareStatement(
 ): PreparedStatement!
 ```
 
-Creates a`PreparedStatement`object that will generate`ResultSet`objects with the given type and concurrency. This method is the same as the`prepareStatement`method above, but it allows the default result set type and concurrency to be overridden. The holdability of the created result sets can be determined by calling [getHoldability](../java/sql/Connection.md)).
+Creates a`PreparedStatement`object that will generate`ResultSet`objects with the given type and concurrency. This method is the same as the`prepareStatement`method above, but it allows the default result set type and concurrency to be overridden. The holdability of the created result sets can be determined by calling [getHoldability](Connection.md)).
 
 | Parameters ||
 |------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -921,7 +921,7 @@ Creates a`PreparedStatement`object that will generate`ResultSet`objects with the
 
 | Return ||
 |-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| [PreparedStatement](../java/sql/PreparedStatement.md)! | a new PreparedStatement object containing the pre-compiled SQL statement that will produce`ResultSet`objects with the given type and concurrency |
+| [PreparedStatement](PreparedStatement.md)! | a new PreparedStatement object containing the pre-compiled SQL statement that will produce`ResultSet`objects with the given type and concurrency |
 
 | Exceptions ||
 |--------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -955,7 +955,7 @@ This method is the same as the`prepareStatement`method above, but it allows the 
 
 | Return ||
 |-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [PreparedStatement](../java/sql/PreparedStatement.md)! | a new`PreparedStatement`object, containing the pre-compiled SQL statement, that will generate`ResultSet`objects with the given type, concurrency, and holdability |
+| [PreparedStatement](PreparedStatement.md)! | a new`PreparedStatement`object, containing the pre-compiled SQL statement, that will generate`ResultSet`objects with the given type, concurrency, and holdability |
 
 | Exceptions ||
 |--------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -964,7 +964,7 @@ This method is the same as the`prepareStatement`method above, but it allows the 
 
 **See Also**
 
-- [java.sql.ResultSet](../java/sql/ResultSet.md) 
+- [java.sql.ResultSet](ResultSet.md) 
 
 ### prepareStatement
 
@@ -983,7 +983,7 @@ An SQL statement with or without IN parameters can be pre-compiled and stored in
 
 **Note:** This method is optimized for handling parametric SQL statements that benefit from precompilation. If the driver supports precompilation, the method`prepareStatement`will send the statement to the database for precompilation. Some drivers may not support precompilation. In this case, the statement may not be sent to the database until the`PreparedStatement`object is executed. This has no direct effect on users; however, it does affect which methods throw certain SQLExceptions.
 
-Result sets created using the returned`PreparedStatement`object will by default be type`TYPE_FORWARD_ONLY`and have a concurrency level of`CONCUR_READ_ONLY`. The holdability of the created result sets can be determined by calling [getHoldability](../java/sql/Connection.md)).
+Result sets created using the returned`PreparedStatement`object will by default be type`TYPE_FORWARD_ONLY`and have a concurrency level of`CONCUR_READ_ONLY`. The holdability of the created result sets can be determined by calling [getHoldability](Connection.md)).
 
 | Parameters ||
 |-----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -992,7 +992,7 @@ Result sets created using the returned`PreparedStatement`object will by default 
 
 | Return ||
 |-------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [PreparedStatement](../java/sql/PreparedStatement.md)! | a new`PreparedStatement`object, containing the pre-compiled statement, that is capable of returning the auto-generated keys designated by the given array of column indexes |
+| [PreparedStatement](PreparedStatement.md)! | a new`PreparedStatement`object, containing the pre-compiled statement, that is capable of returning the auto-generated keys designated by the given array of column indexes |
 
 | Exceptions ||
 |--------------------------------------------|-----------------------------------------------------------------------------------|
@@ -1016,7 +1016,7 @@ An SQL statement with or without IN parameters can be pre-compiled and stored in
 
 **Note:** This method is optimized for handling parametric SQL statements that benefit from precompilation. If the driver supports precompilation, the method`prepareStatement`will send the statement to the database for precompilation. Some drivers may not support precompilation. In this case, the statement may not be sent to the database until the`PreparedStatement`object is executed. This has no direct effect on users; however, it does affect which methods throw certain SQLExceptions.
 
-Result sets created using the returned`PreparedStatement`object will by default be type`TYPE_FORWARD_ONLY`and have a concurrency level of`CONCUR_READ_ONLY`. The holdability of the created result sets can be determined by calling [getHoldability](../java/sql/Connection.md)).
+Result sets created using the returned`PreparedStatement`object will by default be type`TYPE_FORWARD_ONLY`and have a concurrency level of`CONCUR_READ_ONLY`. The holdability of the created result sets can be determined by calling [getHoldability](Connection.md)).
 
 | Parameters ||
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1025,7 +1025,7 @@ Result sets created using the returned`PreparedStatement`object will by default 
 
 | Return ||
 |-------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [PreparedStatement](../java/sql/PreparedStatement.md)! | a new`PreparedStatement`object, containing the pre-compiled statement, that is capable of returning the auto-generated keys designated by the given array of column names |
+| [PreparedStatement](PreparedStatement.md)! | a new`PreparedStatement`object, containing the pre-compiled statement, that is capable of returning the auto-generated keys designated by the given array of column names |
 
 | Exceptions ||
 |--------------------------------------------|-----------------------------------------------------------------------------------|
@@ -1044,7 +1044,7 @@ Removes the specified`Savepoint`and subsequent`Savepoint`objects from the curren
 
 | Parameters ||
 |-------------|--------------------------------------------------------------------------------------------------------------------|
-| `savepoint` | [Savepoint](../java/sql/Savepoint.md)!:the`Savepoint`object to be removed |
+| `savepoint` | [Savepoint](Savepoint.md)!:the`Savepoint`object to be removed |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1067,7 +1067,7 @@ Undoes all changes made in the current transaction and releases any database loc
 
 **See Also**
 
-- [#setAutoCommit](../java/sql/Connection.md)) 
+- [#setAutoCommit](Connection.md)) 
 
 ### rollback
 
@@ -1083,7 +1083,7 @@ This method should be used only when auto-commit has been disabled.
 
 | Parameters ||
 |-------------|----------------------------------------------------------------------------------------------------------------------|
-| `savepoint` | [Savepoint](../java/sql/Savepoint.md)!:the`Savepoint`object to roll back to |
+| `savepoint` | [Savepoint](Savepoint.md)!:the`Savepoint`object to roll back to |
 
 | Exceptions ||
 |--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1092,7 +1092,7 @@ This method should be used only when auto-commit has been disabled.
 
 **See Also**
 
-- [java.sql.Savepoint](../java/sql/Savepoint.md) 
+- [java.sql.Savepoint](Savepoint.md) 
 
 ### setAutoCommit
 
@@ -1122,7 +1122,7 @@ The commit occurs when the statement completes. The time when the statement comp
 
 **See Also**
 
-- [#getAutoCommit](../java/sql/Connection.md)) 
+- [#getAutoCommit](Connection.md)) 
 
 ### setCatalog
 
@@ -1148,7 +1148,7 @@ Calling`setCatalog`has no effect on previously created or prepared`Statement`obj
 
 **See Also**
 
-- [#getCatalog](../java/sql/Connection.md)) 
+- [#getCatalog](Connection.md)) 
 
 ### setClientInfo
 
@@ -1206,7 +1206,7 @@ If an error occurs in setting any of the client info properties, a`SQLClientInfo
 
 | Parameters ||
 |--------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| `properties` | [Properties](../java/util/Properties.md)!:the list of client info properties to set <br /> |
+| `properties` | [Properties](../java.util/Properties.md)!:the list of client info properties to set <br /> |
 
 | Exceptions ||
 |-----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1214,7 +1214,7 @@ If an error occurs in setting any of the client info properties, a`SQLClientInfo
 
 **See Also**
 
-- [java.sql.Connection#setClientInfo(String, String)](../java/sql/Connection.md)) 
+- [java.sql.Connection#setClientInfo(String, String)](Connection.md)) 
 
 ### setHoldability
 
@@ -1224,7 +1224,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun setHoldability(holdability: Int): Unit
 ```
 
-Changes the default holdability of`ResultSet`objects created using this`Connection`object to the given holdability. The default holdability of`ResultSet`objects can be be determined by invoking [DatabaseMetaData.getResultSetHoldability](../java/sql/DatabaseMetaData.md)).
+Changes the default holdability of`ResultSet`objects created using this`Connection`object to the given holdability. The default holdability of`ResultSet`objects can be be determined by invoking [DatabaseMetaData.getResultSetHoldability](DatabaseMetaData.md)).
 
 | Parameters ||
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1237,9 +1237,9 @@ Changes the default holdability of`ResultSet`objects created using this`Connecti
 
 **See Also**
 
-- [#getHoldability](../java/sql/Connection.md))
-- [java.sql.DatabaseMetaData#getResultSetHoldability](../java/sql/DatabaseMetaData.md))
-- [java.sql.ResultSet](../java/sql/ResultSet.md) 
+- [#getHoldability](Connection.md))
+- [java.sql.DatabaseMetaData#getResultSetHoldability](DatabaseMetaData.md))
+- [java.sql.ResultSet](ResultSet.md) 
 
 ### setReadOnly
 
@@ -1275,7 +1275,7 @@ if setSavepoint is invoked outside of an active transaction, a transaction will 
 
 | Return ||
 |---------------------------------------------------------------------------------|--------------------------|
-| [Savepoint](../java/sql/Savepoint.md)! | the new`Savepoint`object |
+| [Savepoint](Savepoint.md)! | the new`Savepoint`object |
 
 | Exceptions ||
 |--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1284,7 +1284,7 @@ if setSavepoint is invoked outside of an active transaction, a transaction will 
 
 **See Also**
 
-- [java.sql.Savepoint](../java/sql/Savepoint.md) 
+- [java.sql.Savepoint](Savepoint.md) 
 
 ### setSavepoint
 
@@ -1304,7 +1304,7 @@ if setSavepoint is invoked outside of an active transaction, a transaction will 
 
 | Return ||
 |---------------------------------------------------------------------------------|--------------------------|
-| [Savepoint](../java/sql/Savepoint.md)! | the new`Savepoint`object |
+| [Savepoint](Savepoint.md)! | the new`Savepoint`object |
 
 | Exceptions ||
 |--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1313,7 +1313,7 @@ if setSavepoint is invoked outside of an active transaction, a transaction will 
 
 **See Also**
 
-- [java.sql.Savepoint](../java/sql/Savepoint.md) 
+- [java.sql.Savepoint](Savepoint.md) 
 
 ### setTransactionIsolation
 
@@ -1337,8 +1337,8 @@ Attempts to change the transaction isolation level for this`Connection`object to
 
 **See Also**
 
-- [java.sql.DatabaseMetaData#supportsTransactionIsolationLevel](../java/sql/DatabaseMetaData.md))
-- [#getTransactionIsolation](../java/sql/Connection.md)) 
+- [java.sql.DatabaseMetaData#supportsTransactionIsolationLevel](DatabaseMetaData.md))
+- [#getTransactionIsolation](Connection.md)) 
 
 ### setTypeMap
 
@@ -1363,7 +1363,7 @@ Map myMap<String,Class<?>> = new HashMap<String,Class<?>>();
 
 | Parameters ||
 |-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `map` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Class](../java/lang/Class.md)\<\*\>!\>!:the`java.util.Map`object to install as the replacement for this`Connection`object's default type map |
+| `map` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Class](../java.lang/Class.md)\<\*\>!\>!:the`java.util.Map`object to install as the replacement for this`Connection`object's default type map |
 
 | Exceptions ||
 |--------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
@@ -1372,4 +1372,4 @@ Map myMap<String,Class<?>> = new HashMap<String,Class<?>>();
 
 **See Also**
 
-- [#getTypeMap](../java/sql/Connection.md))
+- [#getTypeMap](Connection.md))

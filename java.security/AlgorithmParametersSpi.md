@@ -10,7 +10,7 @@ abstract class AlgorithmParametersSpi
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.AlgorithmParametersSpi](../java/security/AlgorithmParametersSpi.md) |
+| ↳ | [java.security.AlgorithmParametersSpi](AlgorithmParametersSpi.md) |
 
 This class defines the*Service Provider Interface* (**SPI** ) for the`AlgorithmParameters`class, which is used to manage algorithm parameters.
 
@@ -20,19 +20,19 @@ All the abstract methods in this class must be implemented by each cryptographic
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [AlgorithmParametersSpi](../java/security/AlgorithmParametersSpi.md))`()` <br /> |
+| [AlgorithmParametersSpi](AlgorithmParametersSpi.md))`()` <br /> |
 
 | Protected methods ||
 |--------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [engineGetEncoded](../java/security/AlgorithmParametersSpi.md))`()` Returns the parameters in their primary encoding format. |
-| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [engineGetEncoded](../java/security/AlgorithmParametersSpi.md))`(`format:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the parameters encoded in the specified format. |
-| abstractT | [engineGetParameterSpec](../java/security/AlgorithmParametersSpi.md))`(`paramSpec:` ` [Class](../java/lang/Class.md)<T>!`)` Returns a (transparent) specification of this parameters object. |
+| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [engineGetEncoded](AlgorithmParametersSpi.md))`()` Returns the parameters in their primary encoding format. |
+| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [engineGetEncoded](AlgorithmParametersSpi.md))`(`format:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the parameters encoded in the specified format. |
+| abstractT | [engineGetParameterSpec](AlgorithmParametersSpi.md))`(`paramSpec:` ` [Class](../java.lang/Class.md)<T>!`)` Returns a (transparent) specification of this parameters object. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](../java/security/AlgorithmParametersSpi.md))`(`params:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Imports the specified parameters and decodes them according to the primary decoding format for parameters. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](../java/security/AlgorithmParametersSpi.md))`(`params:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `format:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Imports the parameters from`params`and decodes them according to the specified decoding format. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](../java/security/AlgorithmParametersSpi.md))`(`paramSpec:` ` [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)!`)` Initializes this parameters object using the parameters specified in`paramSpec`. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](AlgorithmParametersSpi.md))`(`params:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Imports the specified parameters and decodes them according to the primary decoding format for parameters. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](AlgorithmParametersSpi.md))`(`params:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `format:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Imports the parameters from`params`and decodes them according to the specified decoding format. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](AlgorithmParametersSpi.md))`(`paramSpec:` ` [AlgorithmParameterSpec](../java.security.spec/AlgorithmParameterSpec.md)!`)` Initializes this parameters object using the parameters specified in`paramSpec`. |
 | --- | --- |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [engineToString](../java/security/AlgorithmParametersSpi.md))`()` Returns a formatted string describing the parameters. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [engineToString](AlgorithmParametersSpi.md))`()` Returns a formatted string describing the parameters. |
 
 ## Public constructors
 
@@ -99,7 +99,7 @@ Returns a (transparent) specification of this parameters object.`paramSpec`ident
 | Parameters ||
 |-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `<T>` | the type of the parameter specification to be returned |
-| `paramSpec` | [Class](../java/lang/Class.md)\<T\>!:the specification class in which the parameters should be returned. |
+| `paramSpec` | [Class](../java.lang/Class.md)\<T\>!:the specification class in which the parameters should be returned. |
 
 | Return ||
 |---|------------------------------|
@@ -161,7 +161,7 @@ Initializes this parameters object using the parameters specified in`paramSpec`.
 
 | Parameters ||
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| `paramSpec` | [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)!:the parameter specification. |
+| `paramSpec` | [AlgorithmParameterSpec](../java.security.spec/AlgorithmParameterSpec.md)!:the parameter specification. |
 
 | Exceptions ||
 |----------------------------------------------------|--------------------------------------------------------------------------------------------------------|

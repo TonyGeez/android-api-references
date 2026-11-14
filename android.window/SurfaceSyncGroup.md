@@ -4,7 +4,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # SurfaceSyncGroup
 
-Kotlin| [Java](../android/window/SurfaceSyncGroup.md) 
+Kotlin| [Java](SurfaceSyncGroup.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class SurfaceSyncGroup
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.window.SurfaceSyncGroup](../android/window/SurfaceSyncGroup.md) |
+| ↳ | [android.window.SurfaceSyncGroup](SurfaceSyncGroup.md) |
 
 A way for data to be gathered so multiple surfaces can be synced. This is intended to be used with AttachedSurfaceControl, SurfaceView, and SurfaceControlViewHost. This allows different parts of the system to synchronize different surfaces themselves without having to manage timing of different rendering threads. This will also allow synchronization of surfaces across multiple processes. The caller can add SurfaceControlViewHosts from another process to the SurfaceSyncGroup in a different process and this clas will ensure all the surfaces are ready before applying everything together. see the [SurfaceSyncGroup documentation](https://android.googlesource.com/platform/frameworks/base/+/master/core/java/android/window/SurfaceSyncGroup.md)
 
@@ -23,15 +23,15 @@ A way for data to be gathered so multiple surfaces can be synced. This is intend
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SurfaceSyncGroup](../android/window/SurfaceSyncGroup.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Starts a sync and will automatically apply the final, merged transaction. |
+| [SurfaceSyncGroup](SurfaceSyncGroup.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Starts a sync and will automatically apply the final, merged transaction. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [add](../android/window/SurfaceSyncGroup.md))`(`attachedSurfaceControl:` ` [AttachedSurfaceControl](../android/view/AttachedSurfaceControl.md)?`, `runnable:` ` [Runnable](../java/lang/Runnable.md)?`)` Add an AttachedSurfaceControl to the SurfaceSyncGroup. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [add](../android/window/SurfaceSyncGroup.md))`(`surfacePackage:` ` [SurfaceControlViewHost.SurfacePackage](../android/view/SurfaceControlViewHost.SurfacePackage.md)`, `runnable:` ` [Runnable](../java/lang/Runnable.md)?`)` Add a SurfaceControlViewHost. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addTransaction](../android/window/SurfaceSyncGroup.md))`(`transaction:` ` [SurfaceControl.Transaction](../android/view/SurfaceControl.Transaction.md)`)` Add a Transaction to this SurfaceSyncGroup. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [add](SurfaceSyncGroup.md))`(`attachedSurfaceControl:` ` [AttachedSurfaceControl](../android.view/AttachedSurfaceControl.md)?`, `runnable:` ` [Runnable](../java.lang/Runnable.md)?`)` Add an AttachedSurfaceControl to the SurfaceSyncGroup. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [add](SurfaceSyncGroup.md))`(`surfacePackage:` ` [SurfaceControlViewHost.SurfacePackage](../android/view/SurfaceControlViewHost.SurfacePackage.md)`, `runnable:` ` [Runnable](../java.lang/Runnable.md)?`)` Add a SurfaceControlViewHost. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addTransaction](SurfaceSyncGroup.md))`(`transaction:` ` [SurfaceControl.Transaction](../android/view/SurfaceControl.Transaction.md)`)` Add a Transaction to this SurfaceSyncGroup. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [markSyncReady](../android/window/SurfaceSyncGroup.md))`()` Mark the SurfaceSyncGroup as ready to complete. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [markSyncReady](SurfaceSyncGroup.md))`()` Mark the SurfaceSyncGroup as ready to complete. |
 
 ## Public constructors
 
@@ -63,12 +63,12 @@ fun add(
 ```
 
 Add an AttachedSurfaceControl to the SurfaceSyncGroup. The AttachedSurfaceControl will pause rendering to ensure the runnable can be invoked and that the sync picks up the frame that contains the changes. 
-This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android/os/Looper.md))of your app.
+This method must be called on the thread that originally created this UI element. This is typically the [main thread](../android.os/Looper.md))of your app.
 
 | Parameters ||
 |--------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `attachedSurfaceControl` | [AttachedSurfaceControl](../android/view/AttachedSurfaceControl.md)?:The AttachedSurfaceControl that will be add to this SurfaceSyncGroup. This value may be`null`. |
-| `runnable` | [Runnable](../java/lang/Runnable.md)?:This is run on the same thread that the call was made on, but after the rendering is paused and before continuing to render the next frame. This method will not return until the execution of the runnable completes. This can be used to make changes to the AttachedSurfaceControl, ensuring that the changes are included in the sync. This value may be`null`. |
+| `attachedSurfaceControl` | [AttachedSurfaceControl](../android.view/AttachedSurfaceControl.md)?:The AttachedSurfaceControl that will be add to this SurfaceSyncGroup. This value may be`null`. |
+| `runnable` | [Runnable](../java.lang/Runnable.md)?:This is run on the same thread that the call was made on, but after the rendering is paused and before continuing to render the next frame. This method will not return until the execution of the runnable completes. This can be used to make changes to the AttachedSurfaceControl, ensuring that the changes are included in the sync. This value may be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
@@ -90,7 +90,7 @@ Add a SurfaceControlViewHost.SurfacePackage to the SurfaceSyncGroup. This will g
 | Parameters ||
 |------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `surfacePackage` | [SurfaceControlViewHost.SurfacePackage](../android/view/SurfaceControlViewHost.SurfacePackage.md):The SurfacePackage that will be added to this SurfaceSyncGroup. This value cannot be`null`. |
-| `runnable` | [Runnable](../java/lang/Runnable.md)?:This is run on the same thread that the call was made on, but after the rendering is paused and before continuing to render the next frame. This method will not return until the execution of the runnable completes. This can be used to make changes to the SurfaceControlViewHost, ensuring that the changes are included in the sync. This value may be`null`. |
+| `runnable` | [Runnable](../java.lang/Runnable.md)?:This is run on the same thread that the call was made on, but after the rendering is paused and before continuing to render the next frame. This method will not return until the execution of the runnable completes. This can be used to make changes to the SurfaceControlViewHost, ensuring that the changes are included in the sync. This value may be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|

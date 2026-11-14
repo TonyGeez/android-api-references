@@ -8,7 +8,7 @@ abstract class CookieManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.webkit.CookieManager](../android/webkit/CookieManager.md) |
+| ↳ | [android.webkit.CookieManager](CookieManager.md) |
 
 Manages the cookies used by an application's `https://developer.android.com/reference/kotlin/android/webkit/WebView` instances.
 
@@ -28,7 +28,7 @@ CookieManager represents cookies as strings in the same format as the HTTP `Cook
 | --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/CookieManager#flush()()` Ensures all cookies currently accessible through the getCookie API are written to persistent storage. |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/webkit/CookieManager#getCookie(kotlin.String)(url: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Gets all the cookies for the given URL. |
-| open static [CookieManager](../android/webkit/CookieManager.md)! | `https://developer.android.com/reference/kotlin/android/webkit/CookieManager#getInstance()()` Gets the singleton CookieManager instance. |
+| open static [CookieManager](CookieManager.md)! | `https://developer.android.com/reference/kotlin/android/webkit/CookieManager#getInstance()()` Gets the singleton CookieManager instance. |
 | --- | --- |
 | abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/CookieManager#hasCookies()()` Gets whether there are stored cookies. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/webkit/CookieManager#removeAllCookie()()` Removes all cookies. |
@@ -89,7 +89,7 @@ Gets whether the `https://developer.android.com/reference/kotlin/android/webkit/
 
 | Parameters ||
 |---|---|
-| `webview` | [WebView](../android/webkit/WebView.md)!: the `https://developer.android.com/reference/kotlin/android/webkit/WebView` instance to get the cookie policy for |
+| `webview` | [WebView](WebView.md)!: the `https://developer.android.com/reference/kotlin/android/webkit/WebView` instance to get the cookie policy for |
 
 | Return ||
 |---|---|
@@ -194,7 +194,7 @@ This method is asynchronous. If a `https://developer.android.com/reference/kotli
 
 | Parameters ||
 |---|---|
-| `callback` | [ValueCallback](../android/webkit/ValueCallback.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>?: a callback which is executed when the cookies have been removed. This value may be `null`. |
+| `callback` | [ValueCallback](ValueCallback.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>?: a callback which is executed when the cookies have been removed. This value may be `null`. |
 
 ### removeExpiredCookie
 
@@ -236,7 +236,7 @@ This method is asynchronous. If a `https://developer.android.com/reference/kotli
 
 | Parameters ||
 |---|---|
-| `callback` | [ValueCallback](../android/webkit/ValueCallback.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>?: a callback which is executed when the session cookies have been removed. This value may be `null`. |
+| `callback` | [ValueCallback](ValueCallback.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>?: a callback which is executed when the session cookies have been removed. This value may be `null`. |
 
 ### setAcceptCookie
 
@@ -290,7 +290,7 @@ Apps that target `https://developer.android.com/reference/kotlin/android/os/Buil
 
 | Parameters ||
 |---|---|
-| `webview` | [WebView](../android/webkit/WebView.md)!: the `https://developer.android.com/reference/kotlin/android/webkit/WebView` instance to set the cookie policy on |
+| `webview` | [WebView](WebView.md)!: the `https://developer.android.com/reference/kotlin/android/webkit/WebView` instance to set the cookie policy on |
 | `accept` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): whether the `https://developer.android.com/reference/kotlin/android/webkit/WebView` instance should accept third party cookies |
 
 ### setCookie
@@ -345,7 +345,7 @@ This method is asynchronous. If a `https://developer.android.com/reference/kotli
 |---|---|
 | `url` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the URL for which the cookie is to be set |
 | `value` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the cookie as a string, using the format of the 'Set-Cookie' HTTP response header |
-| `callback` | [ValueCallback](../android/webkit/ValueCallback.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>?: a callback to be executed when the cookie has been set. This value may be `null`. |
+| `callback` | [ValueCallback](ValueCallback.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>?: a callback to be executed when the cookie has been set. This value may be `null`. |
 | --- | --- |
 
 ## Protected methods

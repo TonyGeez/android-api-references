@@ -10,7 +10,7 @@ class DatatypeConstants
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.xml.datatype.DatatypeConstants](../javax/xml/datatype/DatatypeConstants.md) |
+| ↳ | [javax.xml.datatype.DatatypeConstants](DatatypeConstants.md) |
 
 Utility class to contain basic Datatype values as constants.
 
@@ -18,60 +18,60 @@ Utility class to contain basic Datatype values as constants.
 
 | Nested classes ||
 |---|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Field](../javax/xml/datatype/DatatypeConstants.Field.md) Type-safe enum class that represents six fields of the [Duration](../javax/xml/datatype/Duration.md) class. |
+| | [Field](../javax/xml/datatype/DatatypeConstants.Field.md) Type-safe enum class that represents six fields of the [Duration](Duration.md) class. |
 
 | Constants ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [APRIL](../javax/xml/datatype/DatatypeConstants.md) Value for fourth month of year. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AUGUST](../javax/xml/datatype/DatatypeConstants.md) Value for eighth month of year. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DECEMBER](../javax/xml/datatype/DatatypeConstants.md) Value for twelve month of year. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [APRIL](DatatypeConstants.md) Value for fourth month of year. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AUGUST](DatatypeConstants.md) Value for eighth month of year. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DECEMBER](DatatypeConstants.md) Value for twelve month of year. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EQUAL](../javax/xml/datatype/DatatypeConstants.md) Comparison result. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FEBRUARY](../javax/xml/datatype/DatatypeConstants.md) Value for second month of year. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FIELD_UNDEFINED](../javax/xml/datatype/DatatypeConstants.md) Designation that an "int" field is not set. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EQUAL](DatatypeConstants.md) Comparison result. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FEBRUARY](DatatypeConstants.md) Value for second month of year. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FIELD_UNDEFINED](DatatypeConstants.md) Designation that an "int" field is not set. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GREATER](../javax/xml/datatype/DatatypeConstants.md) Comparison result. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INDETERMINATE](../javax/xml/datatype/DatatypeConstants.md) Comparison result. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [JANUARY](../javax/xml/datatype/DatatypeConstants.md) Value for first month of year. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GREATER](DatatypeConstants.md) Comparison result. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INDETERMINATE](DatatypeConstants.md) Comparison result. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [JANUARY](DatatypeConstants.md) Value for first month of year. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [JULY](../javax/xml/datatype/DatatypeConstants.md) Value for seventh month of year. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [JUNE](../javax/xml/datatype/DatatypeConstants.md) Value for sixth month of year. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LESSER](../javax/xml/datatype/DatatypeConstants.md) Comparison result. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [JULY](DatatypeConstants.md) Value for seventh month of year. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [JUNE](DatatypeConstants.md) Value for sixth month of year. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LESSER](DatatypeConstants.md) Comparison result. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MARCH](../javax/xml/datatype/DatatypeConstants.md) Value for third month of year. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAX_TIMEZONE_OFFSET](../javax/xml/datatype/DatatypeConstants.md) W3C XML Schema max timezone offset is -14:00. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAY](../javax/xml/datatype/DatatypeConstants.md) Value for fifth month of year. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MARCH](DatatypeConstants.md) Value for third month of year. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAX_TIMEZONE_OFFSET](DatatypeConstants.md) W3C XML Schema max timezone offset is -14:00. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAY](DatatypeConstants.md) Value for fifth month of year. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIN_TIMEZONE_OFFSET](../javax/xml/datatype/DatatypeConstants.md) W3C XML Schema min timezone offset is +14:00. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NOVEMBER](../javax/xml/datatype/DatatypeConstants.md) Value for eleven month of year. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OCTOBER](../javax/xml/datatype/DatatypeConstants.md) Value for tenth month of year. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIN_TIMEZONE_OFFSET](DatatypeConstants.md) W3C XML Schema min timezone offset is +14:00. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NOVEMBER](DatatypeConstants.md) Value for eleven month of year. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OCTOBER](DatatypeConstants.md) Value for tenth month of year. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SEPTEMBER](../javax/xml/datatype/DatatypeConstants.md) Value for ninth month of year. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SEPTEMBER](DatatypeConstants.md) Value for ninth month of year. |
 
 | Properties ||
 |-----------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [QName](../javax/xml/namespace/QName.md)! | [DATE](../javax/xml/datatype/DatatypeConstants.md) Fully qualified name for W3C XML Schema 1. |
-| static [QName](../javax/xml/namespace/QName.md)! | [DATETIME](../javax/xml/datatype/DatatypeConstants.md) Fully qualified name for W3C XML Schema 1. |
-| static [DatatypeConstants.Field](../javax/xml/datatype/DatatypeConstants.Field.md)! | [DAYS](../javax/xml/datatype/DatatypeConstants.md) A constant that represents the days field. |
+| static [QName](../javax.xml.namespace/QName.md)! | [DATE](DatatypeConstants.md) Fully qualified name for W3C XML Schema 1. |
+| static [QName](../javax.xml.namespace/QName.md)! | [DATETIME](DatatypeConstants.md) Fully qualified name for W3C XML Schema 1. |
+| static [DatatypeConstants.Field](../javax/xml/datatype/DatatypeConstants.Field.md)! | [DAYS](DatatypeConstants.md) A constant that represents the days field. |
 | --- | --- |
-| static [QName](../javax/xml/namespace/QName.md)! | [DURATION](../javax/xml/datatype/DatatypeConstants.md) Fully qualified name for W3C XML Schema datatype`duration`. |
-| static [QName](../javax/xml/namespace/QName.md)! | [DURATION_DAYTIME](../javax/xml/datatype/DatatypeConstants.md) Fully qualified name for XQuery 1. |
-| static [QName](../javax/xml/namespace/QName.md)! | [DURATION_YEARMONTH](../javax/xml/datatype/DatatypeConstants.md) Fully qualified name for XQuery 1. |
+| static [QName](../javax.xml.namespace/QName.md)! | [DURATION](DatatypeConstants.md) Fully qualified name for W3C XML Schema datatype`duration`. |
+| static [QName](../javax.xml.namespace/QName.md)! | [DURATION_DAYTIME](DatatypeConstants.md) Fully qualified name for XQuery 1. |
+| static [QName](../javax.xml.namespace/QName.md)! | [DURATION_YEARMONTH](DatatypeConstants.md) Fully qualified name for XQuery 1. |
 | --- | --- |
-| static [QName](../javax/xml/namespace/QName.md)! | [GDAY](../javax/xml/datatype/DatatypeConstants.md) Fully qualified name for W3C XML Schema 1. |
-| static [QName](../javax/xml/namespace/QName.md)! | [GMONTH](../javax/xml/datatype/DatatypeConstants.md) Fully qualified name for W3C XML Schema 1. |
-| static [QName](../javax/xml/namespace/QName.md)! | [GMONTHDAY](../javax/xml/datatype/DatatypeConstants.md) Fully qualified name for W3C XML Schema 1. |
+| static [QName](../javax.xml.namespace/QName.md)! | [GDAY](DatatypeConstants.md) Fully qualified name for W3C XML Schema 1. |
+| static [QName](../javax.xml.namespace/QName.md)! | [GMONTH](DatatypeConstants.md) Fully qualified name for W3C XML Schema 1. |
+| static [QName](../javax.xml.namespace/QName.md)! | [GMONTHDAY](DatatypeConstants.md) Fully qualified name for W3C XML Schema 1. |
 | --- | --- |
-| static [QName](../javax/xml/namespace/QName.md)! | [GYEAR](../javax/xml/datatype/DatatypeConstants.md) Fully qualified name for W3C XML Schema 1. |
-| static [QName](../javax/xml/namespace/QName.md)! | [GYEARMONTH](../javax/xml/datatype/DatatypeConstants.md) Fully qualified name for W3C XML Schema 1. |
-| static [DatatypeConstants.Field](../javax/xml/datatype/DatatypeConstants.Field.md)! | [HOURS](../javax/xml/datatype/DatatypeConstants.md) A constant that represents the hours field. |
+| static [QName](../javax.xml.namespace/QName.md)! | [GYEAR](DatatypeConstants.md) Fully qualified name for W3C XML Schema 1. |
+| static [QName](../javax.xml.namespace/QName.md)! | [GYEARMONTH](DatatypeConstants.md) Fully qualified name for W3C XML Schema 1. |
+| static [DatatypeConstants.Field](../javax/xml/datatype/DatatypeConstants.Field.md)! | [HOURS](DatatypeConstants.md) A constant that represents the hours field. |
 | --- | --- |
-| static [DatatypeConstants.Field](../javax/xml/datatype/DatatypeConstants.Field.md)! | [MINUTES](../javax/xml/datatype/DatatypeConstants.md) A constant that represents the minutes field. |
-| static [DatatypeConstants.Field](../javax/xml/datatype/DatatypeConstants.Field.md)! | [MONTHS](../javax/xml/datatype/DatatypeConstants.md) A constant that represents the months field. |
-| static [DatatypeConstants.Field](../javax/xml/datatype/DatatypeConstants.Field.md)! | [SECONDS](../javax/xml/datatype/DatatypeConstants.md) A constant that represents the seconds field. |
+| static [DatatypeConstants.Field](../javax/xml/datatype/DatatypeConstants.Field.md)! | [MINUTES](DatatypeConstants.md) A constant that represents the minutes field. |
+| static [DatatypeConstants.Field](../javax/xml/datatype/DatatypeConstants.Field.md)! | [MONTHS](DatatypeConstants.md) A constant that represents the months field. |
+| static [DatatypeConstants.Field](../javax/xml/datatype/DatatypeConstants.Field.md)! | [SECONDS](DatatypeConstants.md) A constant that represents the seconds field. |
 | --- | --- |
-| static [QName](../javax/xml/namespace/QName.md)! | [TIME](../javax/xml/datatype/DatatypeConstants.md) Fully qualified name for W3C XML Schema 1. |
-| static [DatatypeConstants.Field](../javax/xml/datatype/DatatypeConstants.Field.md)! | [YEARS](../javax/xml/datatype/DatatypeConstants.md) A constant that represents the years field. |
+| static [QName](../javax.xml.namespace/QName.md)! | [TIME](DatatypeConstants.md) Fully qualified name for W3C XML Schema 1. |
+| static [DatatypeConstants.Field](../javax/xml/datatype/DatatypeConstants.Field.md)! | [YEARS](DatatypeConstants.md) A constant that represents the years field. |
 
 ## Constants
 

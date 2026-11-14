@@ -4,7 +4,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 
 # PrinterDiscoverySession
 
-Kotlin| [Java](../android/printservice/PrinterDiscoverySession.md) 
+Kotlin| [Java](PrinterDiscoverySession.md) 
 | --- | --- |
 
 ```
@@ -13,17 +13,17 @@ abstract class PrinterDiscoverySession
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.printservice.PrinterDiscoverySession](../android/printservice/PrinterDiscoverySession.md) |
+| ↳ | [android.printservice.PrinterDiscoverySession](PrinterDiscoverySession.md) |
 
 This class encapsulates the interaction between a print service and the system during printer discovery. During printer discovery you are responsible for adding discovered printers, removing previously added printers that disappeared, and updating already added printers.
 
-During the lifetime of this session you may be asked to start and stop performing printer discovery multiple times. You will receive a call to [android.printservice.PrinterDiscoverySession#onStartPrinterDiscovery(java.util.List)](../android/printservice/PrinterDiscoverySession.md))to start printer discovery and a call to [PrinterDiscoverySession.onStopPrinterDiscovery()](../android/printservice/PrinterDiscoverySession.md))to stop printer discovery. When the system is no longer interested in printers discovered by this session you will receive a call to [onDestroy()](../android/printservice/PrinterDiscoverySession.md))at which point the system will no longer call into the session and all the session methods will do nothing.
+During the lifetime of this session you may be asked to start and stop performing printer discovery multiple times. You will receive a call to [android.printservice.PrinterDiscoverySession#onStartPrinterDiscovery(java.util.List)](PrinterDiscoverySession.md))to start printer discovery and a call to [PrinterDiscoverySession.onStopPrinterDiscovery()](PrinterDiscoverySession.md))to stop printer discovery. When the system is no longer interested in printers discovered by this session you will receive a call to [onDestroy()](PrinterDiscoverySession.md))at which point the system will no longer call into the session and all the session methods will do nothing.
 
-Discovered printers are added by invoking [android.printservice.PrinterDiscoverySession#addPrinters(java.util.List)](../android/printservice/PrinterDiscoverySession.md)). Added printers that disappeared are removed by invoking [PrinterDiscoverySession.removePrinters(List)](../android/printservice/PrinterDiscoverySession.md)). Added printers whose properties or capabilities changed are updated through a call to [PrinterDiscoverySession.addPrinters(List)](../android/printservice/PrinterDiscoverySession.md)). The printers added in this session can be acquired via [getPrinters()](../android/printservice/PrinterDiscoverySession.md))where the returned printers will be an up-to-date snapshot of the printers that you reported during the session. Printers are**not**persisted across sessions.
+Discovered printers are added by invoking [android.printservice.PrinterDiscoverySession#addPrinters(java.util.List)](PrinterDiscoverySession.md)). Added printers that disappeared are removed by invoking [PrinterDiscoverySession.removePrinters(List)](PrinterDiscoverySession.md)). Added printers whose properties or capabilities changed are updated through a call to [PrinterDiscoverySession.addPrinters(List)](PrinterDiscoverySession.md)). The printers added in this session can be acquired via [getPrinters()](PrinterDiscoverySession.md))where the returned printers will be an up-to-date snapshot of the printers that you reported during the session. Printers are**not**persisted across sessions.
 
-The system will make a call to [onValidatePrinters(java.util.List)](../android/printservice/PrinterDiscoverySession.md))if you need to update some printers. It is possible that you add a printer without specifying its capabilities. This enables you to avoid querying all discovered printers for their capabilities, rather querying the capabilities of a printer only if necessary. For example, the system will request that you update a printer if it gets selected by the user. When validating printers you do not need to provide the printers' capabilities but may do so.
+The system will make a call to [onValidatePrinters(java.util.List)](PrinterDiscoverySession.md))if you need to update some printers. It is possible that you add a printer without specifying its capabilities. This enables you to avoid querying all discovered printers for their capabilities, rather querying the capabilities of a printer only if necessary. For example, the system will request that you update a printer if it gets selected by the user. When validating printers you do not need to provide the printers' capabilities but may do so.
 
-If the system is interested in being constantly updated for the state of a printer you will receive a call to [onStartPrinterStateTracking(android.print.PrinterId)](../android/printservice/PrinterDiscoverySession.md))after which you will have to do a best effort to keep the system updated for changes in the printer state and capabilities. You also**must** update the printer capabilities if you did not provide them when adding it, or the printer will be ignored. When the system is no longer interested in getting updates for a printer you will receive a call to [onStopPrinterStateTracking(android.print.PrinterId)](../android/printservice/PrinterDiscoverySession.md)).
+If the system is interested in being constantly updated for the state of a printer you will receive a call to [onStartPrinterStateTracking(android.print.PrinterId)](PrinterDiscoverySession.md))after which you will have to do a best effort to keep the system updated for changes in the printer state and capabilities. You also**must** update the printer capabilities if you did not provide them when adding it, or the printer will be ignored. When the system is no longer interested in getting updates for a printer you will receive a call to [onStopPrinterStateTracking(android.print.PrinterId)](PrinterDiscoverySession.md)).
 
 **Note:**All callbacks in this class are executed on the main application thread. You also have to invoke any method of this class on the main application thread.
 
@@ -31,27 +31,27 @@ If the system is interested in being constantly updated for the state of a print
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [PrinterDiscoverySession](../android/printservice/PrinterDiscoverySession.md))`()` Constructor. |
+| [PrinterDiscoverySession](PrinterDiscoverySession.md))`()` Constructor. |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addPrinters](../android/printservice/PrinterDiscoverySession.md))`(`printers:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [PrinterInfo](../android/print/PrinterInfo.md)!>`)` Adds discovered printers. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PrinterInfo](../android/print/PrinterInfo.md)!\> | [getPrinters](../android/printservice/PrinterDiscoverySession.md))`()` Gets the printers reported in this session. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PrinterId](../android/print/PrinterId.md)!\> | [getTrackedPrinters](../android/printservice/PrinterDiscoverySession.md))`()` Gets the printers that should be tracked. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addPrinters](PrinterDiscoverySession.md))`(`printers:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [PrinterInfo](../android.print/PrinterInfo.md)!>`)` Adds discovered printers. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PrinterInfo](../android.print/PrinterInfo.md)!\> | [getPrinters](PrinterDiscoverySession.md))`()` Gets the printers reported in this session. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PrinterId](../android.print/PrinterId.md)!\> | [getTrackedPrinters](PrinterDiscoverySession.md))`()` Gets the printers that should be tracked. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDestroyed](../android/printservice/PrinterDiscoverySession.md))`()` Gets whether the session is destroyed. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPrinterDiscoveryStarted](../android/printservice/PrinterDiscoverySession.md))`()` Gets whether printer discovery is started. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDestroy](../android/printservice/PrinterDiscoverySession.md))`()` Notifies you that the session is destroyed. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDestroyed](PrinterDiscoverySession.md))`()` Gets whether the session is destroyed. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPrinterDiscoveryStarted](PrinterDiscoverySession.md))`()` Gets whether printer discovery is started. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDestroy](PrinterDiscoverySession.md))`()` Notifies you that the session is destroyed. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onRequestCustomPrinterIcon](../android/printservice/PrinterDiscoverySession.md))`(`printerId:` ` [PrinterId](../android/print/PrinterId.md)`, `cancellationSignal:` ` [CancellationSignal](../android/os/CancellationSignal.md)`, `callback:` ` [CustomPrinterIconCallback](../android/printservice/CustomPrinterIconCallback.md)`)` Called by the system to request the custom icon for a printer. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStartPrinterDiscovery](../android/printservice/PrinterDiscoverySession.md))`(`priorityList:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [PrinterId](../android/print/PrinterId.md)!>`)` Callback asking you to start printer discovery. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStartPrinterStateTracking](../android/printservice/PrinterDiscoverySession.md))`(`printerId:` ` [PrinterId](../android/print/PrinterId.md)`)` Callback asking you to start tracking the state of a printer. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onRequestCustomPrinterIcon](PrinterDiscoverySession.md))`(`printerId:` ` [PrinterId](../android.print/PrinterId.md)`, `cancellationSignal:` ` [CancellationSignal](../android.os/CancellationSignal.md)`, `callback:` ` [CustomPrinterIconCallback](CustomPrinterIconCallback.md)`)` Called by the system to request the custom icon for a printer. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStartPrinterDiscovery](PrinterDiscoverySession.md))`(`priorityList:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [PrinterId](../android.print/PrinterId.md)!>`)` Callback asking you to start printer discovery. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStartPrinterStateTracking](PrinterDiscoverySession.md))`(`printerId:` ` [PrinterId](../android.print/PrinterId.md)`)` Callback asking you to start tracking the state of a printer. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStopPrinterDiscovery](../android/printservice/PrinterDiscoverySession.md))`()` Callback notifying you that you should stop printer discovery. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStopPrinterStateTracking](../android/printservice/PrinterDiscoverySession.md))`(`printerId:` ` [PrinterId](../android/print/PrinterId.md)`)` Callback asking you to stop tracking the state of a printer. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onValidatePrinters](../android/printservice/PrinterDiscoverySession.md))`(`printerIds:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [PrinterId](../android/print/PrinterId.md)!>`)` Callback asking you to validate that the given printers are valid, that is they exist. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStopPrinterDiscovery](PrinterDiscoverySession.md))`()` Callback notifying you that you should stop printer discovery. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStopPrinterStateTracking](PrinterDiscoverySession.md))`(`printerId:` ` [PrinterId](../android.print/PrinterId.md)`)` Callback asking you to stop tracking the state of a printer. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onValidatePrinters](PrinterDiscoverySession.md))`(`printerIds:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [PrinterId](../android.print/PrinterId.md)!>`)` Callback asking you to validate that the given printers are valid, that is they exist. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removePrinters](../android/printservice/PrinterDiscoverySession.md))`(`printerIds:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [PrinterId](../android/print/PrinterId.md)!>`)` Removes added printers. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removePrinters](PrinterDiscoverySession.md))`(`printerIds:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [PrinterId](../android.print/PrinterId.md)!>`)` Removes added printers. |
 
 ## Public constructors
 
@@ -77,15 +77,15 @@ fun addPrinters(printers: MutableList<PrinterInfo!>): Unit
 
 Adds discovered printers. Adding an already added printer updates it. Removed printers can be added again. You can call this method multiple times during the life of this session. Duplicates will be ignored.
 
-**Note:** Calls to this method after the session is destroyed, that is after the [onDestroy()](../android/printservice/PrinterDiscoverySession.md))callback, will be ignored.
+**Note:** Calls to this method after the session is destroyed, that is after the [onDestroy()](PrinterDiscoverySession.md))callback, will be ignored.
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `printers` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PrinterInfo](../android/print/PrinterInfo.md)!\>:The printers to add. This value cannot be`null`. |
+| `printers` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PrinterInfo](../android.print/PrinterInfo.md)!\>:The printers to add. This value cannot be`null`. |
 
 **See Also**
 
-- [#removePrinters(List)](../android/printservice/PrinterDiscoverySession.md))
+- [#removePrinters(List)](PrinterDiscoverySession.md))
 - <https://developer.android.com/reference/kotlin/android/printservice/PrinterDiscoverySession#getPrinters()>
 - <https://developer.android.com/reference/kotlin/android/printservice/PrinterDiscoverySession#isDestroyed()> 
 
@@ -99,16 +99,16 @@ fun getPrinters(): MutableList<PrinterInfo!>
 
 Gets the printers reported in this session. For example, if you add two printers and remove one of them, the returned list will contain only the printer that was added but not removed.
 
-**Note:** Calls to this method after the session is destroyed, that is after the [onDestroy()](../android/printservice/PrinterDiscoverySession.md))callback, will be ignored.
+**Note:** Calls to this method after the session is destroyed, that is after the [onDestroy()](PrinterDiscoverySession.md))callback, will be ignored.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [PrinterInfo](../android/print/PrinterInfo.md)!> | The printers. This value cannot be`null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [PrinterInfo](../android.print/PrinterInfo.md)!> | The printers. This value cannot be`null`. |
 
 **See Also**
 
-- [#addPrinters(List)](../android/printservice/PrinterDiscoverySession.md))
-- [#removePrinters(List)](../android/printservice/PrinterDiscoverySession.md))
+- [#addPrinters(List)](PrinterDiscoverySession.md))
+- [#removePrinters(List)](PrinterDiscoverySession.md))
 - <https://developer.android.com/reference/kotlin/android/printservice/PrinterDiscoverySession#isDestroyed()> 
 
 ### getTrackedPrinters
@@ -119,18 +119,18 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 fun getTrackedPrinters(): MutableList<PrinterId!>
 ```
 
-Gets the printers that should be tracked. These are printers that are important to the user and for which you received a call to [onStartPrinterStateTracking(android.print.PrinterId)](../android/printservice/PrinterDiscoverySession.md))asking you to observer their state and reporting it to the system via [addPrinters(java.util.List)](../android/printservice/PrinterDiscoverySession.md)). You will receive a call to [onStopPrinterStateTracking(android.print.PrinterId)](../android/printservice/PrinterDiscoverySession.md))if you should stop tracking a printer.
+Gets the printers that should be tracked. These are printers that are important to the user and for which you received a call to [onStartPrinterStateTracking(android.print.PrinterId)](PrinterDiscoverySession.md))asking you to observer their state and reporting it to the system via [addPrinters(java.util.List)](PrinterDiscoverySession.md)). You will receive a call to [onStopPrinterStateTracking(android.print.PrinterId)](PrinterDiscoverySession.md))if you should stop tracking a printer.
 
-**Note:** Calls to this method after the session is destroyed, that is after the [onDestroy()](../android/printservice/PrinterDiscoverySession.md))callback, will be ignored.
+**Note:** Calls to this method after the session is destroyed, that is after the [onDestroy()](PrinterDiscoverySession.md))callback, will be ignored.
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [PrinterId](../android/print/PrinterId.md)!> | The printers. This value cannot be`null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [PrinterId](../android.print/PrinterId.md)!> | The printers. This value cannot be`null`. |
 
 **See Also**
 
-- [#onStartPrinterStateTracking(PrinterId)](../android/printservice/PrinterDiscoverySession.md))
-- [#onStopPrinterStateTracking(PrinterId)](../android/printservice/PrinterDiscoverySession.md))
+- [#onStartPrinterStateTracking(PrinterId)](PrinterDiscoverySession.md))
+- [#onStopPrinterStateTracking(PrinterId)](PrinterDiscoverySession.md))
 - <https://developer.android.com/reference/kotlin/android/printservice/PrinterDiscoverySession#isDestroyed()> 
 
 ### isDestroyed
@@ -167,7 +167,7 @@ Gets whether printer discovery is started.
 
 **See Also**
 
-- [#onStartPrinterDiscovery(List)](../android/printservice/PrinterDiscoverySession.md))
+- [#onStartPrinterDiscovery(List)](PrinterDiscoverySession.md))
 - <https://developer.android.com/reference/kotlin/android/printservice/PrinterDiscoverySession#onStopPrinterDiscovery()> 
 
 ### onDestroy
@@ -178,7 +178,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 abstract fun onDestroy(): Unit
 ```
 
-Notifies you that the session is destroyed. After this callback is invoked any calls to the methods of this class will be ignored, [isDestroyed()](../android/printservice/PrinterDiscoverySession.md))will return true and you will also no longer receive callbacks. 
+Notifies you that the session is destroyed. After this callback is invoked any calls to the methods of this class will be ignored, [isDestroyed()](PrinterDiscoverySession.md))will return true and you will also no longer receive callbacks. 
 **See Also**
 
 - <https://developer.android.com/reference/kotlin/android/printservice/PrinterDiscoverySession#isDestroyed()> 
@@ -195,13 +195,13 @@ open fun onRequestCustomPrinterIcon(
 ): Unit
 ```
 
-Called by the system to request the custom icon for a printer. Once the icon is available the print services uses [CustomPrinterIconCallback.onCustomPrinterIconLoaded](../android/printservice/CustomPrinterIconCallback.md))to send the icon to the system.
+Called by the system to request the custom icon for a printer. Once the icon is available the print services uses [CustomPrinterIconCallback.onCustomPrinterIconLoaded](CustomPrinterIconCallback.md))to send the icon to the system.
 
 | Parameters ||
 |----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `printerId` | [PrinterId](../android/print/PrinterId.md):The printer to icon belongs to. This value cannot be`null`. |
-| `cancellationSignal` | [CancellationSignal](../android/os/CancellationSignal.md):Signal used to cancel the request. This value cannot be`null`. |
-| `callback` | [CustomPrinterIconCallback](../android/printservice/CustomPrinterIconCallback.md):Callback for returning the icon to the system. This value cannot be`null`. |
+| `printerId` | [PrinterId](../android.print/PrinterId.md):The printer to icon belongs to. This value cannot be`null`. |
+| `cancellationSignal` | [CancellationSignal](../android.os/CancellationSignal.md):Signal used to cancel the request. This value cannot be`null`. |
+| `callback` | [CustomPrinterIconCallback](CustomPrinterIconCallback.md):Callback for returning the icon to the system. This value cannot be`null`. |
 | --- | --- |
 
 **See Also**
@@ -216,21 +216,21 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 abstract fun onStartPrinterDiscovery(priorityList: MutableList<PrinterId!>): Unit
 ```
 
-Callback asking you to start printer discovery. Discovered printers should be added via calling [addPrinters(java.util.List)](../android/printservice/PrinterDiscoverySession.md)). Added printers that disappeared should be removed via calling [removePrinters(java.util.List)](../android/printservice/PrinterDiscoverySession.md)). Added printers whose properties or capabilities changed should be updated via calling [addPrinters(java.util.List)](../android/printservice/PrinterDiscoverySession.md)). You will receive a call to [onStopPrinterDiscovery()](../android/printservice/PrinterDiscoverySession.md))when you should stop printer discovery.
+Callback asking you to start printer discovery. Discovered printers should be added via calling [addPrinters(java.util.List)](PrinterDiscoverySession.md)). Added printers that disappeared should be removed via calling [removePrinters(java.util.List)](PrinterDiscoverySession.md)). Added printers whose properties or capabilities changed should be updated via calling [addPrinters(java.util.List)](PrinterDiscoverySession.md)). You will receive a call to [onStopPrinterDiscovery()](PrinterDiscoverySession.md))when you should stop printer discovery.
 
-During the lifetime of this session all printers that are known to your print service have to be added. The system does not retain any printers across sessions. However, if you were asked to start and then stop performing printer discovery in this session, then a subsequent discovering should not re-discover already discovered printers. You can get the printers reported during this session by calling [getPrinters()](../android/printservice/PrinterDiscoverySession.md)).
+During the lifetime of this session all printers that are known to your print service have to be added. The system does not retain any printers across sessions. However, if you were asked to start and then stop performing printer discovery in this session, then a subsequent discovering should not re-discover already discovered printers. You can get the printers reported during this session by calling [getPrinters()](PrinterDiscoverySession.md)).
 
-**Note:** You are also given a list of printers whose availability has to be checked first. For example, these printers could be the user's favorite ones, therefore they have to be verified first. You do**not need** to provide the capabilities of the printers, rather verify whether they exist similarly to [onValidatePrinters(java.util.List)](../android/printservice/PrinterDiscoverySession.md)).
+**Note:** You are also given a list of printers whose availability has to be checked first. For example, these printers could be the user's favorite ones, therefore they have to be verified first. You do**not need** to provide the capabilities of the printers, rather verify whether they exist similarly to [onValidatePrinters(java.util.List)](PrinterDiscoverySession.md)).
 
 | Parameters ||
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `priorityList` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PrinterId](../android/print/PrinterId.md)!\>:The list of printers to validate first. Never null. |
+| `priorityList` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PrinterId](../android.print/PrinterId.md)!\>:The list of printers to validate first. Never null. |
 
 **See Also**
 
 - <https://developer.android.com/reference/kotlin/android/printservice/PrinterDiscoverySession#onStopPrinterDiscovery()>
-- [#addPrinters(List)](../android/printservice/PrinterDiscoverySession.md))
-- [#removePrinters(List)](../android/printservice/PrinterDiscoverySession.md))
+- [#addPrinters(List)](PrinterDiscoverySession.md))
+- [#removePrinters(List)](PrinterDiscoverySession.md))
 - <https://developer.android.com/reference/kotlin/android/printservice/PrinterDiscoverySession#isPrinterDiscoveryStarted()> 
 
 ### onStartPrinterStateTracking
@@ -241,7 +241,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 abstract fun onStartPrinterStateTracking(printerId: PrinterId): Unit
 ```
 
-Callback asking you to start tracking the state of a printer. Tracking the state means that you should do a best effort to observe the state of this printer and notify the system if that state changes via calling [addPrinters(java.util.List)](../android/printservice/PrinterDiscoverySession.md)).
+Callback asking you to start tracking the state of a printer. Tracking the state means that you should do a best effort to observe the state of this printer and notify the system if that state changes via calling [addPrinters(java.util.List)](PrinterDiscoverySession.md)).
 
 **Note:** A printer can be initially added without its capabilities to avoid polling printers that the user will not select. However, after this method is called you are expected to update the printer**including**its capabilities. Otherwise, the printer will be ignored.
 
@@ -251,11 +251,11 @@ A scenario when you may be requested to track a printer's state is if the user s
 
 | Parameters ||
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `printerId` | [PrinterId](../android/print/PrinterId.md):The printer to start tracking. This value cannot be`null`. |
+| `printerId` | [PrinterId](../android.print/PrinterId.md):The printer to start tracking. This value cannot be`null`. |
 
 **See Also**
 
-- [#onStopPrinterStateTracking(PrinterId)](../android/printservice/PrinterDiscoverySession.md))
+- [#onStopPrinterStateTracking(PrinterId)](PrinterDiscoverySession.md))
 - [android.print.PrinterInfo.Builder#setCapabilities(PrinterCapabilitiesInfo)](../android/print/PrinterInfo.Builder.md)) 
 
 ### onStopPrinterDiscovery
@@ -269,7 +269,7 @@ abstract fun onStopPrinterDiscovery(): Unit
 Callback notifying you that you should stop printer discovery. 
 **See Also**
 
-- [#onStartPrinterDiscovery(List)](../android/printservice/PrinterDiscoverySession.md))
+- [#onStartPrinterDiscovery(List)](PrinterDiscoverySession.md))
 - <https://developer.android.com/reference/kotlin/android/printservice/PrinterDiscoverySession#isPrinterDiscoveryStarted()> 
 
 ### onStopPrinterStateTracking
@@ -280,15 +280,15 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 abstract fun onStopPrinterStateTracking(printerId: PrinterId): Unit
 ```
 
-Callback asking you to stop tracking the state of a printer. The passed in printer id is the one for which you received a call to [onStartPrinterStateTracking(android.print.PrinterId)](../android/printservice/PrinterDiscoverySession.md)).
+Callback asking you to stop tracking the state of a printer. The passed in printer id is the one for which you received a call to [onStartPrinterStateTracking(android.print.PrinterId)](PrinterDiscoverySession.md)).
 
 | Parameters ||
 |-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| `printerId` | [PrinterId](../android/print/PrinterId.md):The printer to stop tracking. This value cannot be`null`. |
+| `printerId` | [PrinterId](../android.print/PrinterId.md):The printer to stop tracking. This value cannot be`null`. |
 
 **See Also**
 
-- [#onStartPrinterStateTracking(PrinterId)](../android/printservice/PrinterDiscoverySession.md)) 
+- [#onStartPrinterStateTracking(PrinterId)](PrinterDiscoverySession.md)) 
 
 ### onValidatePrinters
 
@@ -298,7 +298,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 abstract fun onValidatePrinters(printerIds: MutableList<PrinterId!>): Unit
 ```
 
-Callback asking you to validate that the given printers are valid, that is they exist. You are responsible for checking whether these printers exist and for the ones that do exist notify the system via calling [addPrinters(java.util.List)](../android/printservice/PrinterDiscoverySession.md)).
+Callback asking you to validate that the given printers are valid, that is they exist. You are responsible for checking whether these printers exist and for the ones that do exist notify the system via calling [addPrinters(java.util.List)](PrinterDiscoverySession.md)).
 
 **Note:** You are**not required**to provide the printer capabilities when updating the printers that do exist.
 
@@ -306,7 +306,7 @@ Callback asking you to validate that the given printers are valid, that is they 
 
 | Parameters ||
 |--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `printerIds` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PrinterId](../android/print/PrinterId.md)!\>:The printers to validate. This value cannot be`null`. |
+| `printerIds` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PrinterId](../android.print/PrinterId.md)!\>:The printers to validate. This value cannot be`null`. |
 
 **See Also**
 
@@ -322,14 +322,14 @@ fun removePrinters(printerIds: MutableList<PrinterId!>): Unit
 
 Removes added printers. Removing an already removed or never added printer has no effect. Removed printers can be added again. You can call this method multiple times during the lifetime of this session.
 
-**Note:** Calls to this method after the session is destroyed, that is after the [onDestroy()](../android/printservice/PrinterDiscoverySession.md))callback, will be ignored.
+**Note:** Calls to this method after the session is destroyed, that is after the [onDestroy()](PrinterDiscoverySession.md))callback, will be ignored.
 
 | Parameters ||
 |--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `printerIds` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PrinterId](../android/print/PrinterId.md)!\>:The ids of the removed printers. This value cannot be`null`. |
+| `printerIds` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PrinterId](../android.print/PrinterId.md)!\>:The ids of the removed printers. This value cannot be`null`. |
 
 **See Also**
 
-- [#addPrinters(List)](../android/printservice/PrinterDiscoverySession.md))
+- [#addPrinters(List)](PrinterDiscoverySession.md))
 - <https://developer.android.com/reference/kotlin/android/printservice/PrinterDiscoverySession#getPrinters()>
 - <https://developer.android.com/reference/kotlin/android/printservice/PrinterDiscoverySession#isDestroyed()>

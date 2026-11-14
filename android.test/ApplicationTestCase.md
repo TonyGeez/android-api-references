@@ -3,7 +3,7 @@ Deprecated in [API level 24](https://developer.android.com/guide/topics/manifest
 
 # ApplicationTestCase
 
-Kotlin | [Java](../android/test/ApplicationTestCase.md)
+Kotlin | [Java](ApplicationTestCase.md)
 | --- | --- |
 
 ```
@@ -12,8 +12,8 @@ abstract class ApplicationTestCase<T : Application!> : AndroidTestCase
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.test.AndroidTestCase](../android/test/AndroidTestCase.md) ||
-| | ↳ | [android.test.ApplicationTestCase](../android/test/ApplicationTestCase.md) |
+| ↳ | [android.test.AndroidTestCase](AndroidTestCase.md) ||
+| | ↳ | [android.test.ApplicationTestCase](ApplicationTestCase.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 24.**
@@ -40,7 +40,7 @@ If simply run your tests as-is, your Application will be injected with a fully-f
 | Public methods ||
 |---|---|
 | open T | `https://developer.android.com/reference/kotlin/android/test/ApplicationTestCase#getApplication()()` <br /> |
-| open [Context](../android/content/Context.md)! | `https://developer.android.com/reference/kotlin/android/test/ApplicationTestCase#getSystemContext()()` Return a real (not mocked or instrumented) system Context that can be used when generating Mock or other Context objects for your Application under test. |
+| open [Context](../android.content/Context.md)! | `https://developer.android.com/reference/kotlin/android/test/ApplicationTestCase#getSystemContext()()` Return a real (not mocked or instrumented) system Context that can be used when generating Mock or other Context objects for your Application under test. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/test/ApplicationTestCase#testApplicationTestCaseSetUpProperly()()` This test simply confirms that the Application class can be instantiated properly. |
 | --- | --- |
 

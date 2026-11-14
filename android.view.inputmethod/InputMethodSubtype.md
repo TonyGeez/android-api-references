@@ -4,7 +4,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 
 # InputMethodSubtype
 
-Kotlin| [Java](../android/view/inputmethod/InputMethodSubtype.md) 
+Kotlin| [Java](InputMethodSubtype.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class InputMethodSubtype : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.inputmethod.InputMethodSubtype](../android/view/inputmethod/InputMethodSubtype.md) |
+| ↳ | [android.view.inputmethod.InputMethodSubtype](InputMethodSubtype.md) |
 
 This class is used to specify meta information of a subtype contained in an input method editor (IME). Subtype can describe locale (e.g. en_US, fr_FR...) and mode (e.g. voice, keyboard...), and is used for IME switch and settings. The input method subtype allows the system to bring up the specified subtype of the designated IME directly.
 
@@ -27,64 +27,64 @@ It should be defined in an XML resource file of the input method with the`<subty
 
 | XML attributes ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
-| [`android:icon`](../android/view/inputmethod/InputMethodSubtype.md) | The icon of the subtype. |
-| [`android:imeSubtypeExtraValue`](../android/view/inputmethod/InputMethodSubtype.md) | The extra value of the subtype. |
-| [`android:imeSubtypeLocale`](../android/view/inputmethod/InputMethodSubtype.md) | The locale of the subtype. |
+| [`android:icon`](InputMethodSubtype.md) | The icon of the subtype. |
+| [`android:imeSubtypeExtraValue`](InputMethodSubtype.md) | The extra value of the subtype. |
+| [`android:imeSubtypeLocale`](InputMethodSubtype.md) | The locale of the subtype. |
 | --- | --- |
-| [`android:imeSubtypeMode`](../android/view/inputmethod/InputMethodSubtype.md) | The mode of the subtype. |
-| [`android:isAsciiCapable`](../android/view/inputmethod/InputMethodSubtype.md) | Set to true if this subtype is ASCII capable. |
-| [`android:isAuxiliary`](../android/view/inputmethod/InputMethodSubtype.md) | Set true if the subtype is auxiliary. |
+| [`android:imeSubtypeMode`](InputMethodSubtype.md) | The mode of the subtype. |
+| [`android:isAsciiCapable`](InputMethodSubtype.md) | Set to true if this subtype is ASCII capable. |
+| [`android:isAuxiliary`](InputMethodSubtype.md) | Set true if the subtype is auxiliary. |
 | --- | --- |
-| [`android:label`](../android/view/inputmethod/InputMethodSubtype.md) | The name of the subtype. |
-| [`android:languageTag`](../android/view/inputmethod/InputMethodSubtype.md) | The BCP-47 Language Tag of the subtype. |
-| [`android:overridesImplicitlyEnabledSubtype`](../android/view/inputmethod/InputMethodSubtype.md) | Set true when this subtype should be selected by default if no other subtypes are selected explicitly. |
+| [`android:label`](InputMethodSubtype.md) | The name of the subtype. |
+| [`android:languageTag`](InputMethodSubtype.md) | The BCP-47 Language Tag of the subtype. |
+| [`android:overridesImplicitlyEnabledSubtype`](InputMethodSubtype.md) | Set true when this subtype should be selected by default if no other subtypes are selected explicitly. |
 | --- | --- |
-| [`android:subtypeId`](../android/view/inputmethod/InputMethodSubtype.md) | The unique id for the subtype. |
+| [`android:subtypeId`](InputMethodSubtype.md) | The unique id for the subtype. |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android.os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android.os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android.os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [InputMethodSubtype](../android/view/inputmethod/InputMethodSubtype.md))`(`nameId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `iconId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `locale:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `mode:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `extraValue:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `isAuxiliary:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `overridesImplicitlyEnabledSubtype:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Constructor with no subtype ID specified. |
-| [InputMethodSubtype](../android/view/inputmethod/InputMethodSubtype.md))`(`nameId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `iconId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `locale:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `mode:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `extraValue:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `isAuxiliary:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `overridesImplicitlyEnabledSubtype:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructor. |
+| [InputMethodSubtype](InputMethodSubtype.md))`(`nameId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `iconId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `locale:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `mode:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `extraValue:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `isAuxiliary:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `overridesImplicitlyEnabledSubtype:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Constructor with no subtype ID specified. |
+| [InputMethodSubtype](InputMethodSubtype.md))`(`nameId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `iconId:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `locale:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `mode:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `extraValue:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `isAuxiliary:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `overridesImplicitlyEnabledSubtype:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructor. |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsExtraValueKey](../android/view/inputmethod/InputMethodSubtype.md))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` The string of ExtraValue in subtype should be defined as follows: example: key0,key1=value1,key2,key3,key4=value4 |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/view/inputmethod/InputMethodSubtype.md))`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/view/inputmethod/InputMethodSubtype.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsExtraValueKey](InputMethodSubtype.md))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` The string of ExtraValue in subtype should be defined as follows: example: key0,key1=value1,key2,key3,key4=value4 |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](InputMethodSubtype.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](InputMethodSubtype.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
 | --- | --- |
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | [getDisplayName](../android/view/inputmethod/InputMethodSubtype.md))`(`context:` ` [Context](../android/content/Context.md)!`, `packageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `appInfo:` ` [ApplicationInfo](../android/content/pm/ApplicationInfo.md)!`)` Returns a display name for this subtype. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getExtraValue](../android/view/inputmethod/InputMethodSubtype.md))`()` <br /> |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getExtraValueOf](../android/view/inputmethod/InputMethodSubtype.md))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` The string of ExtraValue in subtype should be defined as follows: example: key0,key1=value1,key2,key3,key4=value4 |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | [getDisplayName](InputMethodSubtype.md))`(`context:` ` [Context](../android.content/Context.md)!`, `packageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `appInfo:` ` [ApplicationInfo](../android.content.pm/ApplicationInfo.md)!`)` Returns a display name for this subtype. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getExtraValue](InputMethodSubtype.md))`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getExtraValueOf](InputMethodSubtype.md))`(`key:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` The string of ExtraValue in subtype should be defined as follows: example: key0,key1=value1,key2,key3,key4=value4 |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIconResId](../android/view/inputmethod/InputMethodSubtype.md))`()` <br /> |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getLanguageTag](../android/view/inputmethod/InputMethodSubtype.md))`()` <br /> |
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | [getLayoutDisplayName](../android/view/inputmethod/InputMethodSubtype.md))`(`context:` ` [Context](../android/content/Context.md)`, `imeAppInfo:` ` [ApplicationInfo](../android/content/pm/ApplicationInfo.md)`)` Returns the layout display name. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIconResId](InputMethodSubtype.md))`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getLanguageTag](InputMethodSubtype.md))`()` <br /> |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | [getLayoutDisplayName](InputMethodSubtype.md))`(`context:` ` [Context](../android.content/Context.md)`, `imeAppInfo:` ` [ApplicationInfo](../android.content.pm/ApplicationInfo.md)`)` Returns the layout display name. |
 | --- | --- |
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | [getLayoutLabelNonLocalized](../android/view/inputmethod/InputMethodSubtype.md))`()` Returns the non-localized layout label. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLayoutLabelResource](../android/view/inputmethod/InputMethodSubtype.md))`()` Returns the layout label string resource identifier. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getLocale](../android/view/inputmethod/InputMethodSubtype.md))`()` <br /> |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | [getLayoutLabelNonLocalized](InputMethodSubtype.md))`()` Returns the non-localized layout label. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLayoutLabelResource](InputMethodSubtype.md))`()` Returns the layout label string resource identifier. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getLocale](InputMethodSubtype.md))`()` <br /> |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getMode](../android/view/inputmethod/InputMethodSubtype.md))`()` <br /> |
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | [getNameOverride](../android/view/inputmethod/InputMethodSubtype.md))`()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getNameResId](../android/view/inputmethod/InputMethodSubtype.md))`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getMode](InputMethodSubtype.md))`()` <br /> |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | [getNameOverride](InputMethodSubtype.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getNameResId](InputMethodSubtype.md))`()` <br /> |
 | --- | --- |
-| [ULocale](../android/icu/util/ULocale.md)? | [getPhysicalKeyboardHintLanguageTag](../android/view/inputmethod/InputMethodSubtype.md))`()` Returns the physical keyboard BCP-47 language tag. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getPhysicalKeyboardHintLayoutType](../android/view/inputmethod/InputMethodSubtype.md))`()` Returns the physical keyboard layout type string. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/view/inputmethod/InputMethodSubtype.md))`()` <br /> |
+| [ULocale](../android.icu.util/ULocale.md)? | [getPhysicalKeyboardHintLanguageTag](InputMethodSubtype.md))`()` Returns the physical keyboard BCP-47 language tag. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getPhysicalKeyboardHintLayoutType](InputMethodSubtype.md))`()` Returns the physical keyboard layout type string. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](InputMethodSubtype.md))`()` <br /> |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAsciiCapable](../android/view/inputmethod/InputMethodSubtype.md))`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAuxiliary](../android/view/inputmethod/InputMethodSubtype.md))`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [overridesImplicitlyEnabledSubtype](../android/view/inputmethod/InputMethodSubtype.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAsciiCapable](InputMethodSubtype.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAuxiliary](InputMethodSubtype.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [overridesImplicitlyEnabledSubtype](InputMethodSubtype.md))`()` <br /> |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/view/inputmethod/InputMethodSubtype.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `parcelableFlags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](InputMethodSubtype.md))`(`dest:` ` [Parcel](../android.os/Parcel.md)`, `parcelableFlags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [InputMethodSubtype](../android/view/inputmethod/InputMethodSubtype.md)!\> | [CREATOR](../android/view/inputmethod/InputMethodSubtype.md) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [InputMethodSubtype](InputMethodSubtype.md)!\> | [CREATOR](InputMethodSubtype.md) <br /> |
 
 ## XML attributes
 
@@ -120,7 +120,7 @@ May be a string value, using '\\\\;' to escape characters such as '\\\\n' or '\\
 ```
 android:imeSubtypeMode
 ```
-The mode of the subtype. This string can be a mode (for example, voice and keyboard) and this string will be passed to the IME when the framework calls the IME with the subtype. [android.view.inputmethod.InputMethodSubtype#getLocale()](../android/view/inputmethod/InputMethodSubtype.md))returns the value specified in this attribute.
+The mode of the subtype. This string can be a mode (for example, voice and keyboard) and this string will be passed to the IME when the framework calls the IME with the subtype. [android.view.inputmethod.InputMethodSubtype#getLocale()](InputMethodSubtype.md))returns the value specified in this attribute.
 
 May be a string value, using '\\\\;' to escape characters such as '\\\\n' or '\\\\uxxxx' for a unicode character; 
 
@@ -199,7 +199,7 @@ InputMethodSubtype(
     overridesImplicitlyEnabledSubtype: Boolean)
 ```
 
-**Deprecated:** *use [InputMethodSubtypeBuilder](../android/view/inputmethod/InputMethodSubtype.InputMethodSubtypeBuilder.md) instead. Arguments for this constructor have the same meanings as [InputMethodSubtype.InputMethodSubtype(int, int, String, String, String, boolean,](../android/view/inputmethod/InputMethodSubtype.md))except "id".*
+**Deprecated:** *use [InputMethodSubtypeBuilder](../android/view/inputmethod/InputMethodSubtype.InputMethodSubtypeBuilder.md) instead. Arguments for this constructor have the same meanings as [InputMethodSubtype.InputMethodSubtype(int, int, String, String, String, boolean,](InputMethodSubtype.md))except "id".*
 
 Constructor with no subtype ID specified. 
 
@@ -225,13 +225,13 @@ Constructor.
 
 | Parameters ||
 |-------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `nameId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Resource ID of the subtype name string. The string resource may have exactly one %s in it. If there is, the %s part will be replaced with the locale's display name by the formatter. Please refer to [getDisplayName](../android/view/inputmethod/InputMethodSubtype.md))for details. |
+| `nameId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Resource ID of the subtype name string. The string resource may have exactly one %s in it. If there is, the %s part will be replaced with the locale's display name by the formatter. Please refer to [getDisplayName](InputMethodSubtype.md))for details. |
 | `iconId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Resource ID of the subtype icon drawable. |
 | `locale` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The locale supported by the subtype |
 | --- | --- |
 | `mode` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The mode supported by the subtype |
-| `extraValue` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The extra value of the subtype. This string is free-form, but the API supplies tools to deal with a key-value comma-separated list; see [containsExtraValueKey](../android/view/inputmethod/InputMethodSubtype.md))and [getExtraValueOf](../android/view/inputmethod/InputMethodSubtype.md)). |
-| `isAuxiliary` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):true when this subtype is auxiliary, false otherwise. An auxiliary subtype will not be shown in the list of enabled IMEs for choosing the current IME in the Settings even when this subtype is enabled. Please note that this subtype will still be shown in the list of IMEs in the IME switcher to allow the user to tentatively switch to this subtype while an IME is shown. The framework will never switch the current IME to this subtype by [android.view.inputmethod.InputMethodManager#switchToLastInputMethod](../android/view/inputmethod/InputMethodManager.md)). The intent of having this flag is to allow for IMEs that are invoked in a one-shot way as auxiliary input mode, and return to the previous IME once it is finished (e.g. voice input). |
+| `extraValue` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The extra value of the subtype. This string is free-form, but the API supplies tools to deal with a key-value comma-separated list; see [containsExtraValueKey](InputMethodSubtype.md))and [getExtraValueOf](InputMethodSubtype.md)). |
+| `isAuxiliary` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):true when this subtype is auxiliary, false otherwise. An auxiliary subtype will not be shown in the list of enabled IMEs for choosing the current IME in the Settings even when this subtype is enabled. Please note that this subtype will still be shown in the list of IMEs in the IME switcher to allow the user to tentatively switch to this subtype while an IME is shown. The framework will never switch the current IME to this subtype by [android.view.inputmethod.InputMethodManager#switchToLastInputMethod](InputMethodManager.md)). The intent of having this flag is to allow for IMEs that are invoked in a one-shot way as auxiliary input mode, and return to the previous IME once it is finished (e.g. voice input). |
 | --- | --- |
 | `overridesImplicitlyEnabledSubtype` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):true when this subtype should be enabled by default if no other subtypes in the IME are enabled explicitly. Note that a subtype with this parameter being true will not be shown in the list of subtypes in each IME's subtype enabler. Having an "automatic" subtype is an example use of this flag. |
 | `id` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The unique ID for the subtype. The input method framework keeps track of enabled subtypes by ID. When the IME package gets upgraded, enabled IDs will stay enabled even if other attributes are different. If the ID is unspecified or 0, Arrays.hashCode(new Object\[\] {locale, mode, extraValue, isAuxiliary, overridesImplicitlyEnabledSubtype, isAsciiCapable}) will be used instead. |
@@ -266,7 +266,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) |
 
 ### equals
 
@@ -317,9 +317,9 @@ If`subtypeNameResId`is not specified (== 0) the framework returns the display na
 
 | Parameters ||
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](../android/content/Context.md)!: [Context](../android/content/Context.md) will be used for getting [Locale](../java/util/Locale.md) and [android.content.pm.PackageManager](../android/content/pm/PackageManager.md). |
+| `context` | [Context](../android.content/Context.md)!: [Context](../android.content/Context.md) will be used for getting [Locale](../java.util/Locale.md) and [android.content.pm.PackageManager](../android.content.pm/PackageManager.md). |
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The package name of the input method. |
-| `appInfo` | [ApplicationInfo](../android/content/pm/ApplicationInfo.md)!:The [ApplicationInfo](../android/content/pm/ApplicationInfo.md) of the input method. |
+| `appInfo` | [ApplicationInfo](../android.content.pm/ApplicationInfo.md)!:The [ApplicationInfo](../android.content.pm/ApplicationInfo.md) of the input method. |
 | --- | --- |
 
 | Return ||
@@ -382,7 +382,7 @@ fun getLanguageTag(): String
 
 **See Also**
 
-- [java.util.Locale#forLanguageTag(String)](../java/util/Locale.md)) 
+- [java.util.Locale#forLanguageTag(String)](../java.util/Locale.md)) 
 
 ### getLayoutDisplayName
 
@@ -403,8 +403,8 @@ If`layoutLabelResource`is zero, the framework returns the non-localized layout l
 
 | Parameters ||
 |--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](../android/content/Context.md):The context used for getting the [PackageManager](../android/content/pm/PackageManager.md). This value cannot be`null`. |
-| `imeAppInfo` | [ApplicationInfo](../android/content/pm/ApplicationInfo.md):The [ApplicationInfo](../android/content/pm/ApplicationInfo.md) of the input method. This value cannot be`null`. |
+| `context` | [Context](../android.content/Context.md):The context used for getting the [PackageManager](../android.content.pm/PackageManager.md). This value cannot be`null`. |
+| `imeAppInfo` | [ApplicationInfo](../android.content.pm/ApplicationInfo.md):The [ApplicationInfo](../android.content.pm/ApplicationInfo.md) of the input method. This value cannot be`null`. |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|------------------------------------------------------|
@@ -443,7 +443,7 @@ Deprecated in [API level 24](https://developer.android.com/guide/topics/manifest
 fun getLocale(): String
 ```
 
-**Deprecated:** *Use [getLanguageTag()](../android/view/inputmethod/InputMethodSubtype.md))instead.*
+**Deprecated:** *Use [getLanguageTag()](InputMethodSubtype.md))instead.*
 
 | Return ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
@@ -497,7 +497,7 @@ Returns the physical keyboard BCP-47 language tag.
 
 | Return ||
 |-------------------------------------------------------------------------------------------|--------------------------|
-| [ULocale](../android/icu/util/ULocale.md)? | This value may be`null`. |
+| [ULocale](../android.icu.util/ULocale.md)? | This value may be`null`. |
 
 **See Also**
 
@@ -555,7 +555,7 @@ fun isAuxiliary(): Boolean
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | true if this subtype is auxiliary, false otherwise. An auxiliary subtype will not be shown in the list of enabled IMEs for choosing the current IME in the Settings even when this subtype is enabled. Please note that this subtype will still be shown in the list of IMEs in the IME switcher to allow the user to tentatively switch to this subtype while an IME is shown. The framework will never switch the current IME to this subtype by [android.view.inputmethod.InputMethodManager#switchToLastInputMethod](../android/view/inputmethod/InputMethodManager.md)). The intent of having this flag is to allow for IMEs that are invoked in a one-shot way as auxiliary input mode, and return to the previous IME once it is finished (e.g. voice input). |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | true if this subtype is auxiliary, false otherwise. An auxiliary subtype will not be shown in the list of enabled IMEs for choosing the current IME in the Settings even when this subtype is enabled. Please note that this subtype will still be shown in the list of IMEs in the IME switcher to allow the user to tentatively switch to this subtype while an IME is shown. The framework will never switch the current IME to this subtype by [android.view.inputmethod.InputMethodManager#switchToLastInputMethod](InputMethodManager.md)). The intent of having this flag is to allow for IMEs that are invoked in a one-shot way as auxiliary input mode, and return to the previous IME once it is finished (e.g. voice input). |
 
 ### overridesImplicitlyEnabledSubtype
 
@@ -582,8 +582,8 @@ fun writeToParcel(
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](../android/os/Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android.os/Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
+| `flags` | Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

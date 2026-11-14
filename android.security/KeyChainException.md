@@ -4,7 +4,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 
 # KeyChainException
 
-Kotlin | [Java](../android/security/KeyChainException.md) 
+Kotlin | [Java](KeyChainException.md) 
 | --- | --- |
 
 ```
@@ -14,20 +14,20 @@ open class KeyChainException : Exception
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||
-| | | ↳ | [android.security.KeyChainException](../android/security/KeyChainException.md) |
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) ||
+| | | ↳ | [android.security.KeyChainException](KeyChainException.md) |
 | --- | --- | --- | --- |
 
-Thrown on problems accessing the [KeyChain](../android/security/KeyChain.md).
+Thrown on problems accessing the [KeyChain](KeyChain.md).
 
 ## Summary
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [KeyChainException](../android/security/KeyChainException.md))`()` Constructs a new `KeyChainException` that includes the current stack trace. |
-| [KeyChainException](../android/security/KeyChainException.md))`(`detailMessage:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a new `KeyChainException` with the current stack trace and the specified detail message. |
-| [KeyChainException](../android/security/KeyChainException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a new `KeyChainException` with the current stack trace, the specified detail message and the specified cause. |
-| [KeyChainException](../android/security/KeyChainException.md))`(`cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a new `KeyChainException` with the current stack trace and the specified cause. |
+| [KeyChainException](KeyChainException.md))`()` Constructs a new `KeyChainException` that includes the current stack trace. |
+| [KeyChainException](KeyChainException.md))`(`detailMessage:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a new `KeyChainException` with the current stack trace and the specified detail message. |
+| [KeyChainException](KeyChainException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a new `KeyChainException` with the current stack trace, the specified detail message and the specified cause. |
+| [KeyChainException](KeyChainException.md))`(`cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a new `KeyChainException` with the current stack trace and the specified cause. |
 
 ## Public constructors
 

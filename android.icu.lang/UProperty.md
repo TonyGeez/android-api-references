@@ -4,14 +4,14 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # UProperty
 
-Kotlin| [Java](../android/icu/lang/UProperty.md) 
+Kotlin| [Java](UProperty.md) 
 | --- | --- |
 
 ```
 interface UProperty
 ```
 
-| [android.icu.lang.UProperty](../android/icu/lang/UProperty.md) |
+| [android.icu.lang.UProperty](UProperty.md) |
 
 Selection constants for Unicode properties.
 
@@ -31,167 +31,167 @@ Important: If ICU is built with UCD files from Unicode versions below 3.2, then 
 
 | Constants ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AGE](../android/icu/lang/UProperty.md) String property Age. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ALPHABETIC](../android/icu/lang/UProperty.md) Binary property Alphabetic. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ASCII_HEX_DIGIT](../android/icu/lang/UProperty.md) Binary property ASCII_Hex_Digit (0-9 A-F a-f). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [AGE](UProperty.md) String property Age. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ALPHABETIC](UProperty.md) Binary property Alphabetic. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ASCII_HEX_DIGIT](UProperty.md) Binary property ASCII_Hex_Digit (0-9 A-F a-f). |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BASIC_EMOJI](../android/icu/lang/UProperty.md) Binary property of strings Basic_Emoji. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BIDI_CLASS](../android/icu/lang/UProperty.md) Enumerated property Bidi_Class. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BIDI_CONTROL](../android/icu/lang/UProperty.md) Binary property Bidi_Control. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BASIC_EMOJI](UProperty.md) Binary property of strings Basic_Emoji. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BIDI_CLASS](UProperty.md) Enumerated property Bidi_Class. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BIDI_CONTROL](UProperty.md) Binary property Bidi_Control. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BIDI_MIRRORED](../android/icu/lang/UProperty.md) Binary property Bidi_Mirrored. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BIDI_MIRRORING_GLYPH](../android/icu/lang/UProperty.md) String property Bidi_Mirroring_Glyph. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BIDI_PAIRED_BRACKET](../android/icu/lang/UProperty.md) String property Bidi_Paired_Bracket (new in Unicode 6.3). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BIDI_MIRRORED](UProperty.md) Binary property Bidi_Mirrored. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BIDI_MIRRORING_GLYPH](UProperty.md) String property Bidi_Mirroring_Glyph. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BIDI_PAIRED_BRACKET](UProperty.md) String property Bidi_Paired_Bracket (new in Unicode 6.3). |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BIDI_PAIRED_BRACKET_TYPE](../android/icu/lang/UProperty.md) Enumerated property Bidi_Paired_Bracket_Type (new in Unicode 6.3). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BINARY_START](../android/icu/lang/UProperty.md) First constant for binary Unicode properties. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BLOCK](../android/icu/lang/UProperty.md) Enumerated property Block. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BIDI_PAIRED_BRACKET_TYPE](UProperty.md) Enumerated property Bidi_Paired_Bracket_Type (new in Unicode 6.3). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BINARY_START](UProperty.md) First constant for binary Unicode properties. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BLOCK](UProperty.md) Enumerated property Block. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CANONICAL_COMBINING_CLASS](../android/icu/lang/UProperty.md) Enumerated property Canonical_Combining_Class. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CASED](../android/icu/lang/UProperty.md) Binary property Cased. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CASE_FOLDING](../android/icu/lang/UProperty.md) String property Case_Folding. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CANONICAL_COMBINING_CLASS](UProperty.md) Enumerated property Canonical_Combining_Class. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CASED](UProperty.md) Binary property Cased. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CASE_FOLDING](UProperty.md) String property Case_Folding. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CASE_IGNORABLE](../android/icu/lang/UProperty.md) Binary property Case_Ignorable. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CASE_SENSITIVE](../android/icu/lang/UProperty.md) Binary property Case_Sensitive. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CHANGES_WHEN_CASEFOLDED](../android/icu/lang/UProperty.md) Binary property Changes_When_Casefolded. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CASE_IGNORABLE](UProperty.md) Binary property Case_Ignorable. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CASE_SENSITIVE](UProperty.md) Binary property Case_Sensitive. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CHANGES_WHEN_CASEFOLDED](UProperty.md) Binary property Changes_When_Casefolded. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CHANGES_WHEN_CASEMAPPED](../android/icu/lang/UProperty.md) Binary property Changes_When_Casemapped. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CHANGES_WHEN_LOWERCASED](../android/icu/lang/UProperty.md) Binary property Changes_When_Lowercased. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CHANGES_WHEN_NFKC_CASEFOLDED](../android/icu/lang/UProperty.md) Binary property Changes_When_NFKC_Casefolded. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CHANGES_WHEN_CASEMAPPED](UProperty.md) Binary property Changes_When_Casemapped. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CHANGES_WHEN_LOWERCASED](UProperty.md) Binary property Changes_When_Lowercased. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CHANGES_WHEN_NFKC_CASEFOLDED](UProperty.md) Binary property Changes_When_NFKC_Casefolded. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CHANGES_WHEN_TITLECASED](../android/icu/lang/UProperty.md) Binary property Changes_When_Titlecased. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CHANGES_WHEN_UPPERCASED](../android/icu/lang/UProperty.md) Binary property Changes_When_Uppercased. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DASH](../android/icu/lang/UProperty.md) Binary property Dash. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CHANGES_WHEN_TITLECASED](UProperty.md) Binary property Changes_When_Titlecased. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CHANGES_WHEN_UPPERCASED](UProperty.md) Binary property Changes_When_Uppercased. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DASH](UProperty.md) Binary property Dash. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DECOMPOSITION_TYPE](../android/icu/lang/UProperty.md) Enumerated property Decomposition_Type. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEFAULT_IGNORABLE_CODE_POINT](../android/icu/lang/UProperty.md) Binary property Default_Ignorable_Code_Point (new). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEPRECATED](../android/icu/lang/UProperty.md) Binary property Deprecated (new). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DECOMPOSITION_TYPE](UProperty.md) Enumerated property Decomposition_Type. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEFAULT_IGNORABLE_CODE_POINT](UProperty.md) Binary property Default_Ignorable_Code_Point (new). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEPRECATED](UProperty.md) Binary property Deprecated (new). |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DIACRITIC](../android/icu/lang/UProperty.md) Binary property Diacritic. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DOUBLE_START](../android/icu/lang/UProperty.md) First constant for double Unicode properties. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EAST_ASIAN_WIDTH](../android/icu/lang/UProperty.md) Enumerated property East_Asian_Width. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DIACRITIC](UProperty.md) Binary property Diacritic. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DOUBLE_START](UProperty.md) First constant for double Unicode properties. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EAST_ASIAN_WIDTH](UProperty.md) Enumerated property East_Asian_Width. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EMOJI](../android/icu/lang/UProperty.md) Binary property Emoji. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EMOJI_COMPONENT](../android/icu/lang/UProperty.md) Binary property Emoji_Component. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EMOJI_KEYCAP_SEQUENCE](../android/icu/lang/UProperty.md) Binary property of strings Emoji_Keycap_Sequence. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EMOJI](UProperty.md) Binary property Emoji. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EMOJI_COMPONENT](UProperty.md) Binary property Emoji_Component. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EMOJI_KEYCAP_SEQUENCE](UProperty.md) Binary property of strings Emoji_Keycap_Sequence. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EMOJI_MODIFIER](../android/icu/lang/UProperty.md) Binary property Emoji_Modifier. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EMOJI_MODIFIER_BASE](../android/icu/lang/UProperty.md) Binary property Emoji_Modifier_Base. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EMOJI_PRESENTATION](../android/icu/lang/UProperty.md) Binary property Emoji_Presentation. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EMOJI_MODIFIER](UProperty.md) Binary property Emoji_Modifier. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EMOJI_MODIFIER_BASE](UProperty.md) Binary property Emoji_Modifier_Base. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EMOJI_PRESENTATION](UProperty.md) Binary property Emoji_Presentation. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXTENDED_PICTOGRAPHIC](../android/icu/lang/UProperty.md) Binary property Extended_Pictographic. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXTENDER](../android/icu/lang/UProperty.md) Binary property Extender. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FULL_COMPOSITION_EXCLUSION](../android/icu/lang/UProperty.md) Binary property Full_Composition_Exclusion. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXTENDED_PICTOGRAPHIC](UProperty.md) Binary property Extended_Pictographic. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXTENDER](UProperty.md) Binary property Extender. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FULL_COMPOSITION_EXCLUSION](UProperty.md) Binary property Full_Composition_Exclusion. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GENERAL_CATEGORY](../android/icu/lang/UProperty.md) Enumerated property General_Category. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GENERAL_CATEGORY_MASK](../android/icu/lang/UProperty.md) Bitmask property General_Category_Mask. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GRAPHEME_BASE](../android/icu/lang/UProperty.md) Binary property Grapheme_Base (new). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GENERAL_CATEGORY](UProperty.md) Enumerated property General_Category. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GENERAL_CATEGORY_MASK](UProperty.md) Bitmask property General_Category_Mask. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GRAPHEME_BASE](UProperty.md) Binary property Grapheme_Base (new). |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GRAPHEME_CLUSTER_BREAK](../android/icu/lang/UProperty.md) Enumerated property Grapheme_Cluster_Break (new in Unicode 4.1). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GRAPHEME_EXTEND](../android/icu/lang/UProperty.md) Binary property Grapheme_Extend (new). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GRAPHEME_LINK](../android/icu/lang/UProperty.md) Binary property Grapheme_Link (new). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GRAPHEME_CLUSTER_BREAK](UProperty.md) Enumerated property Grapheme_Cluster_Break (new in Unicode 4.1). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GRAPHEME_EXTEND](UProperty.md) Binary property Grapheme_Extend (new). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [GRAPHEME_LINK](UProperty.md) Binary property Grapheme_Link (new). |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HANGUL_SYLLABLE_TYPE](../android/icu/lang/UProperty.md) Enumerated property Hangul_Syllable_Type, new in Unicode 4. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HEX_DIGIT](../android/icu/lang/UProperty.md) Binary property Hex_Digit. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HYPHEN](../android/icu/lang/UProperty.md) Binary property Hyphen. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HANGUL_SYLLABLE_TYPE](UProperty.md) Enumerated property Hangul_Syllable_Type, new in Unicode 4. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HEX_DIGIT](UProperty.md) Binary property Hex_Digit. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HYPHEN](UProperty.md) Binary property Hyphen. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IDEOGRAPHIC](../android/icu/lang/UProperty.md) Binary property Ideographic. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IDS_BINARY_OPERATOR](../android/icu/lang/UProperty.md) Binary property IDS_Binary_Operator (new). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IDS_TRINARY_OPERATOR](../android/icu/lang/UProperty.md) Binary property IDS_Trinary_Operator (new). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IDEOGRAPHIC](UProperty.md) Binary property Ideographic. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IDS_BINARY_OPERATOR](UProperty.md) Binary property IDS_Binary_Operator (new). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IDS_TRINARY_OPERATOR](UProperty.md) Binary property IDS_Trinary_Operator (new). |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IDS_UNARY_OPERATOR](../android/icu/lang/UProperty.md) Binary property IDS_Unary_Operator. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ID_COMPAT_MATH_CONTINUE](../android/icu/lang/UProperty.md) Binary property ID_Compat_Math_Continue. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ID_COMPAT_MATH_START](../android/icu/lang/UProperty.md) Binary property ID_Compat_Math_Start. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [IDS_UNARY_OPERATOR](UProperty.md) Binary property IDS_Unary_Operator. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ID_COMPAT_MATH_CONTINUE](UProperty.md) Binary property ID_Compat_Math_Continue. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ID_COMPAT_MATH_START](UProperty.md) Binary property ID_Compat_Math_Start. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ID_CONTINUE](../android/icu/lang/UProperty.md) Binary property ID_Continue. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ID_START](../android/icu/lang/UProperty.md) Binary property ID_Start. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INDIC_POSITIONAL_CATEGORY](../android/icu/lang/UProperty.md) Enumerated property Indic_Positional_Category. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ID_CONTINUE](UProperty.md) Binary property ID_Continue. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ID_START](UProperty.md) Binary property ID_Start. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INDIC_POSITIONAL_CATEGORY](UProperty.md) Enumerated property Indic_Positional_Category. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INDIC_SYLLABIC_CATEGORY](../android/icu/lang/UProperty.md) Enumerated property Indic_Syllabic_Category. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INT_START](../android/icu/lang/UProperty.md) First constant for enumerated/integer Unicode properties. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [JOINING_GROUP](../android/icu/lang/UProperty.md) Enumerated property Joining_Group. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INDIC_SYLLABIC_CATEGORY](UProperty.md) Enumerated property Indic_Syllabic_Category. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [INT_START](UProperty.md) First constant for enumerated/integer Unicode properties. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [JOINING_GROUP](UProperty.md) Enumerated property Joining_Group. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [JOINING_TYPE](../android/icu/lang/UProperty.md) Enumerated property Joining_Type. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [JOIN_CONTROL](../android/icu/lang/UProperty.md) Binary property Join_Control. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LEAD_CANONICAL_COMBINING_CLASS](../android/icu/lang/UProperty.md) Enumerated property Lead_Canonical_Combining_Class. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [JOINING_TYPE](UProperty.md) Enumerated property Joining_Type. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [JOIN_CONTROL](UProperty.md) Binary property Join_Control. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LEAD_CANONICAL_COMBINING_CLASS](UProperty.md) Enumerated property Lead_Canonical_Combining_Class. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LINE_BREAK](../android/icu/lang/UProperty.md) Enumerated property Line_Break. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOGICAL_ORDER_EXCEPTION](../android/icu/lang/UProperty.md) Binary property Logical_Order_Exception (new). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOWERCASE](../android/icu/lang/UProperty.md) Binary property Lowercase. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LINE_BREAK](UProperty.md) Enumerated property Line_Break. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOGICAL_ORDER_EXCEPTION](UProperty.md) Binary property Logical_Order_Exception (new). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOWERCASE](UProperty.md) Binary property Lowercase. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOWERCASE_MAPPING](../android/icu/lang/UProperty.md) String property Lowercase_Mapping. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MASK_START](../android/icu/lang/UProperty.md) First constant for bit-mask Unicode properties. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MATH](../android/icu/lang/UProperty.md) Binary property Math. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [LOWERCASE_MAPPING](UProperty.md) String property Lowercase_Mapping. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MASK_START](UProperty.md) First constant for bit-mask Unicode properties. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MATH](UProperty.md) Binary property Math. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NAME](../android/icu/lang/UProperty.md) String property Name. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NFC_INERT](../android/icu/lang/UProperty.md) Binary property NFC_Inert. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NFC_QUICK_CHECK](../android/icu/lang/UProperty.md) Enumerated property NFC_Quick_Check. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NAME](UProperty.md) String property Name. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NFC_INERT](UProperty.md) Binary property NFC_Inert. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NFC_QUICK_CHECK](UProperty.md) Enumerated property NFC_Quick_Check. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NFD_INERT](../android/icu/lang/UProperty.md) Binary property NFD_Inert. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NFD_QUICK_CHECK](../android/icu/lang/UProperty.md) Enumerated property NFD_Quick_Check. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NFKC_INERT](../android/icu/lang/UProperty.md) Binary property NFKC_Inert. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NFD_INERT](UProperty.md) Binary property NFD_Inert. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NFD_QUICK_CHECK](UProperty.md) Enumerated property NFD_Quick_Check. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NFKC_INERT](UProperty.md) Binary property NFKC_Inert. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NFKC_QUICK_CHECK](../android/icu/lang/UProperty.md) Enumerated property NFKC_Quick_Check. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NFKD_INERT](../android/icu/lang/UProperty.md) Binary property NFKD_Inert. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NFKD_QUICK_CHECK](../android/icu/lang/UProperty.md) Enumerated property NFKD_Quick_Check. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NFKC_QUICK_CHECK](UProperty.md) Enumerated property NFKC_Quick_Check. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NFKD_INERT](UProperty.md) Binary property NFKD_Inert. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NFKD_QUICK_CHECK](UProperty.md) Enumerated property NFKD_Quick_Check. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NONCHARACTER_CODE_POINT](../android/icu/lang/UProperty.md) Binary property Noncharacter_Code_Point. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NUMERIC_TYPE](../android/icu/lang/UProperty.md) Enumerated property Numeric_Type. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NUMERIC_VALUE](../android/icu/lang/UProperty.md) Double property Numeric_Value. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NONCHARACTER_CODE_POINT](UProperty.md) Binary property Noncharacter_Code_Point. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NUMERIC_TYPE](UProperty.md) Enumerated property Numeric_Type. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [NUMERIC_VALUE](UProperty.md) Double property Numeric_Value. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OTHER_PROPERTY_START](../android/icu/lang/UProperty.md) First constant for Unicode properties with unusual value types. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PATTERN_SYNTAX](../android/icu/lang/UProperty.md) Binary property Pattern_Syntax (new in Unicode 4.1). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PATTERN_WHITE_SPACE](../android/icu/lang/UProperty.md) Binary property Pattern_White_Space (new in Unicode 4.1). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [OTHER_PROPERTY_START](UProperty.md) First constant for Unicode properties with unusual value types. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PATTERN_SYNTAX](UProperty.md) Binary property Pattern_Syntax (new in Unicode 4.1). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PATTERN_WHITE_SPACE](UProperty.md) Binary property Pattern_White_Space (new in Unicode 4.1). |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [POSIX_ALNUM](../android/icu/lang/UProperty.md) Binary property alnum (a C/POSIX character class). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [POSIX_BLANK](../android/icu/lang/UProperty.md) Binary property blank (a C/POSIX character class). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [POSIX_GRAPH](../android/icu/lang/UProperty.md) Binary property graph (a C/POSIX character class). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [POSIX_ALNUM](UProperty.md) Binary property alnum (a C/POSIX character class). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [POSIX_BLANK](UProperty.md) Binary property blank (a C/POSIX character class). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [POSIX_GRAPH](UProperty.md) Binary property graph (a C/POSIX character class). |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [POSIX_PRINT](../android/icu/lang/UProperty.md) Binary property print (a C/POSIX character class). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [POSIX_XDIGIT](../android/icu/lang/UProperty.md) Binary property xdigit (a C/POSIX character class). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PREPENDED_CONCATENATION_MARK](../android/icu/lang/UProperty.md) Binary property Prepended_Concatenation_Mark. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [POSIX_PRINT](UProperty.md) Binary property print (a C/POSIX character class). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [POSIX_XDIGIT](UProperty.md) Binary property xdigit (a C/POSIX character class). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PREPENDED_CONCATENATION_MARK](UProperty.md) Binary property Prepended_Concatenation_Mark. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUOTATION_MARK](../android/icu/lang/UProperty.md) Binary property Quotation_Mark. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RADICAL](../android/icu/lang/UProperty.md) Binary property Radical (new). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REGIONAL_INDICATOR](../android/icu/lang/UProperty.md) Binary property Regional_Indicator. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUOTATION_MARK](UProperty.md) Binary property Quotation_Mark. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RADICAL](UProperty.md) Binary property Radical (new). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REGIONAL_INDICATOR](UProperty.md) Binary property Regional_Indicator. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RGI_EMOJI](../android/icu/lang/UProperty.md) Binary property of strings RGI_Emoji. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RGI_EMOJI_FLAG_SEQUENCE](../android/icu/lang/UProperty.md) Binary property of strings RGI_Emoji_Flag_Sequence. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RGI_EMOJI_MODIFIER_SEQUENCE](../android/icu/lang/UProperty.md) Binary property of strings RGI_Emoji_Modifier_Sequence. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RGI_EMOJI](UProperty.md) Binary property of strings RGI_Emoji. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RGI_EMOJI_FLAG_SEQUENCE](UProperty.md) Binary property of strings RGI_Emoji_Flag_Sequence. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RGI_EMOJI_MODIFIER_SEQUENCE](UProperty.md) Binary property of strings RGI_Emoji_Modifier_Sequence. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RGI_EMOJI_TAG_SEQUENCE](../android/icu/lang/UProperty.md) Binary property of strings RGI_Emoji_Tag_Sequence. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RGI_EMOJI_ZWJ_SEQUENCE](../android/icu/lang/UProperty.md) Binary property of strings RGI_Emoji_ZWJ_Sequence. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SCRIPT](../android/icu/lang/UProperty.md) Enumerated property Script. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RGI_EMOJI_TAG_SEQUENCE](UProperty.md) Binary property of strings RGI_Emoji_Tag_Sequence. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [RGI_EMOJI_ZWJ_SEQUENCE](UProperty.md) Binary property of strings RGI_Emoji_ZWJ_Sequence. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SCRIPT](UProperty.md) Enumerated property Script. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SCRIPT_EXTENSIONS](../android/icu/lang/UProperty.md) Miscellaneous property Script_Extensions (new in Unicode 6.0). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SEGMENT_STARTER](../android/icu/lang/UProperty.md) Binary Property Segment_Starter. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SENTENCE_BREAK](../android/icu/lang/UProperty.md) Enumerated property Sentence_Break (new in Unicode 4.1). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SCRIPT_EXTENSIONS](UProperty.md) Miscellaneous property Script_Extensions (new in Unicode 6.0). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SEGMENT_STARTER](UProperty.md) Binary Property Segment_Starter. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SENTENCE_BREAK](UProperty.md) Enumerated property Sentence_Break (new in Unicode 4.1). |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIMPLE_CASE_FOLDING](../android/icu/lang/UProperty.md) String property Simple_Case_Folding. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIMPLE_LOWERCASE_MAPPING](../android/icu/lang/UProperty.md) String property Simple_Lowercase_Mapping. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIMPLE_TITLECASE_MAPPING](../android/icu/lang/UProperty.md) String property Simple_Titlecase_Mapping. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIMPLE_CASE_FOLDING](UProperty.md) String property Simple_Case_Folding. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIMPLE_LOWERCASE_MAPPING](UProperty.md) String property Simple_Lowercase_Mapping. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIMPLE_TITLECASE_MAPPING](UProperty.md) String property Simple_Titlecase_Mapping. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIMPLE_UPPERCASE_MAPPING](../android/icu/lang/UProperty.md) String property Simple_Uppercase_Mapping. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOFT_DOTTED](../android/icu/lang/UProperty.md) Binary property Soft_Dotted (new). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STRING_START](../android/icu/lang/UProperty.md) First constant for string Unicode properties. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIMPLE_UPPERCASE_MAPPING](UProperty.md) String property Simple_Uppercase_Mapping. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SOFT_DOTTED](UProperty.md) Binary property Soft_Dotted (new). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STRING_START](UProperty.md) First constant for string Unicode properties. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [S_TERM](../android/icu/lang/UProperty.md) Binary property STerm (new in Unicode 4.0.1). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TERMINAL_PUNCTUATION](../android/icu/lang/UProperty.md) Binary property Terminal_Punctuation. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TITLECASE_MAPPING](../android/icu/lang/UProperty.md) String property Titlecase_Mapping. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [S_TERM](UProperty.md) Binary property STerm (new in Unicode 4.0.1). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TERMINAL_PUNCTUATION](UProperty.md) Binary property Terminal_Punctuation. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TITLECASE_MAPPING](UProperty.md) String property Titlecase_Mapping. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRAIL_CANONICAL_COMBINING_CLASS](../android/icu/lang/UProperty.md) Enumerated property Trail_Canonical_Combining_Class. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNIFIED_IDEOGRAPH](../android/icu/lang/UProperty.md) Binary property Unified_Ideograph (new). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UPPERCASE](../android/icu/lang/UProperty.md) Binary property Uppercase. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TRAIL_CANONICAL_COMBINING_CLASS](UProperty.md) Enumerated property Trail_Canonical_Combining_Class. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNIFIED_IDEOGRAPH](UProperty.md) Binary property Unified_Ideograph (new). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UPPERCASE](UProperty.md) Binary property Uppercase. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UPPERCASE_MAPPING](../android/icu/lang/UProperty.md) String property Uppercase_Mapping. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VARIATION_SELECTOR](../android/icu/lang/UProperty.md) Binary property Variation_Selector (new in Unicode 4.0.1). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VERTICAL_ORIENTATION](../android/icu/lang/UProperty.md) Enumerated property Vertical_Orientation. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UPPERCASE_MAPPING](UProperty.md) String property Uppercase_Mapping. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VARIATION_SELECTOR](UProperty.md) Binary property Variation_Selector (new in Unicode 4.0.1). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [VERTICAL_ORIENTATION](UProperty.md) Enumerated property Vertical_Orientation. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WHITE_SPACE](../android/icu/lang/UProperty.md) Binary property White_Space. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WORD_BREAK](../android/icu/lang/UProperty.md) Enumerated property Word_Break (new in Unicode 4.1). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [XID_CONTINUE](../android/icu/lang/UProperty.md) Binary property XID_Continue. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WHITE_SPACE](UProperty.md) Binary property White_Space. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WORD_BREAK](UProperty.md) Enumerated property Word_Break (new in Unicode 4.1). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [XID_CONTINUE](UProperty.md) Binary property XID_Continue. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [XID_START](../android/icu/lang/UProperty.md) Binary property XID_Start. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [XID_START](UProperty.md) Binary property XID_Start. |
 
 ## Constants
 
@@ -1117,7 +1117,7 @@ Binary property NFC_Inert. ICU-specific property for characters that are inert u
 
 **See Also**
 
-- [#NFD_INERT](../android/icu/lang/UProperty.md) 
+- [#NFD_INERT](UProperty.md) 
 
 ### NFC_QUICK_CHECK
 
@@ -1169,7 +1169,7 @@ Binary property NFKC_Inert. ICU-specific property for characters that are inert 
 
 **See Also**
 
-- [#NFD_INERT](../android/icu/lang/UProperty.md) 
+- [#NFD_INERT](UProperty.md) 
 
 ### NFKC_QUICK_CHECK
 
@@ -1197,7 +1197,7 @@ Binary property NFKD_Inert. ICU-specific property for characters that are inert 
 
 **See Also**
 
-- [#NFD_INERT](../android/icu/lang/UProperty.md) 
+- [#NFD_INERT](UProperty.md) 
 
 ### NFKD_QUICK_CHECK
 

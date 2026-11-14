@@ -4,7 +4,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 
 # SSLSessionCache
 
-Kotlin| [Java](../android/net/SSLSessionCache.md) 
+Kotlin| [Java](SSLSessionCache.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class SSLSessionCache
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.SSLSessionCache](../android/net/SSLSessionCache.md) |
+| ↳ | [android.net.SSLSessionCache](SSLSessionCache.md) |
 
 File-based cache of established SSL sessions. When re-establishing a connection to the same server, using an SSL session cache can save some time, power, and bandwidth by skipping directly to an encrypted stream. This is a persistent cache which can span executions of the application.
 
@@ -21,8 +21,8 @@ File-based cache of established SSL sessions. When re-establishing a connection 
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SSLSessionCache](../android/net/SSLSessionCache.md))`(`context:` ` [Context](../android/content/Context.md)!`)` Create a session cache at the default location for this app. |
-| [SSLSessionCache](../android/net/SSLSessionCache.md))`(`dir:` ` [File](../java/io/File.md)!`)` Create a session cache using the specified directory. |
+| [SSLSessionCache](SSLSessionCache.md))`(`context:` ` [Context](../android.content/Context.md)!`)` Create a session cache at the default location for this app. |
+| [SSLSessionCache](SSLSessionCache.md))`(`dir:` ` [File](../java.io/File.md)!`)` Create a session cache using the specified directory. |
 
 ## Public constructors
 
@@ -38,7 +38,7 @@ Create a session cache at the default location for this app. Multiple instances 
 
 | Parameters ||
 |-----------|--------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](../android/content/Context.md)!:for the application |
+| `context` | [Context](../android.content/Context.md)!:for the application |
 
 ### SSLSessionCache
 
@@ -52,7 +52,7 @@ Create a session cache using the specified directory. Individual session entries
 
 | Parameters ||
 |-------|-----------------------------------------------------------------------------------------------------------------------------|
-| `dir` | [File](../java/io/File.md)!:to store session files in (created if necessary) |
+| `dir` | [File](../java.io/File.md)!:to store session files in (created if necessary) |
 
 | Exceptions ||
 |-----------------------|------------------------------|

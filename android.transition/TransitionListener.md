@@ -13,7 +13,7 @@ interface TransitionListener
 
 | [android.transition.Transition.TransitionListener](../android/transition/Transition.TransitionListener.md) |
 
-| Known Direct Subclasses [TransitionListenerAdapter](../android/transition/TransitionListenerAdapter.md) |--------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------| | [TransitionListenerAdapter](../android/transition/TransitionListenerAdapter.md) | This adapter class provides empty implementations of the methods from . | |
+| Known Direct Subclasses [TransitionListenerAdapter](TransitionListenerAdapter.md) |--------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------| | [TransitionListenerAdapter](TransitionListenerAdapter.md) | This adapter class provides empty implementations of the methods from . | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 A transition listener receives notifications from a transition. Notifications indicate transition lifecycle events.
@@ -22,12 +22,12 @@ A transition listener receives notifications from a transition. Notifications in
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTransitionCancel](../android/transition/Transition.TransitionListener.md))`(`transition:` ` [Transition](../android/transition/Transition.md)!`)` Notification about the cancellation of the transition. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTransitionEnd](../android/transition/Transition.TransitionListener.md))`(`transition:` ` [Transition](../android/transition/Transition.md)!`)` Notification about the end of the transition. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTransitionPause](../android/transition/Transition.TransitionListener.md))`(`transition:` ` [Transition](../android/transition/Transition.md)!`)` Notification when a transition is paused. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTransitionCancel](../android/transition/Transition.TransitionListener.md))`(`transition:` ` [Transition](Transition.md)!`)` Notification about the cancellation of the transition. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTransitionEnd](../android/transition/Transition.TransitionListener.md))`(`transition:` ` [Transition](Transition.md)!`)` Notification about the end of the transition. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTransitionPause](../android/transition/Transition.TransitionListener.md))`(`transition:` ` [Transition](Transition.md)!`)` Notification when a transition is paused. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTransitionResume](../android/transition/Transition.TransitionListener.md))`(`transition:` ` [Transition](../android/transition/Transition.md)!`)` Notification when a transition is resumed. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTransitionStart](../android/transition/Transition.TransitionListener.md))`(`transition:` ` [Transition](../android/transition/Transition.md)!`)` Notification about the start of the transition. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTransitionResume](../android/transition/Transition.TransitionListener.md))`(`transition:` ` [Transition](Transition.md)!`)` Notification when a transition is resumed. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTransitionStart](../android/transition/Transition.TransitionListener.md))`(`transition:` ` [Transition](Transition.md)!`)` Notification about the start of the transition. |
 
 ## Public methods
 
@@ -39,11 +39,11 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 abstract fun onTransitionCancel(transition: Transition!): Unit
 ```
 
-Notification about the cancellation of the transition. Note that cancel may be called by a parent [TransitionSet](../android/transition/TransitionSet.md) on a child transition which has not yet started. This allows the child transition to restore state on target objects which was set at [createAnimator()](../android/transition/Transition.md))time.
+Notification about the cancellation of the transition. Note that cancel may be called by a parent [TransitionSet](TransitionSet.md) on a child transition which has not yet started. This allows the child transition to restore state on target objects which was set at [createAnimator()](Transition.md))time.
 
 | Parameters ||
 |--------------|--------------------------------------------------------------------------------------------------------------------------------|
-| `transition` | [Transition](../android/transition/Transition.md)!:The transition which was canceled. |
+| `transition` | [Transition](Transition.md)!:The transition which was canceled. |
 
 ### onTransitionEnd
 
@@ -57,7 +57,7 @@ Notification about the end of the transition. Canceled transitions will always n
 
 | Parameters ||
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| `transition` | [Transition](../android/transition/Transition.md)!:The transition which reached its end. |
+| `transition` | [Transition](Transition.md)!:The transition which reached its end. |
 
 ### onTransitionPause
 
@@ -67,11 +67,11 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 abstract fun onTransitionPause(transition: Transition!): Unit
 ```
 
-Notification when a transition is paused. Note that createAnimator() may be called by a parent [TransitionSet](../android/transition/TransitionSet.md) on a child transition which has not yet started. This allows the child transition to restore state on target objects which was set at [createAnimator()](../android/transition/Transition.md))time.
+Notification when a transition is paused. Note that createAnimator() may be called by a parent [TransitionSet](TransitionSet.md) on a child transition which has not yet started. This allows the child transition to restore state on target objects which was set at [createAnimator()](Transition.md))time.
 
 | Parameters ||
 |--------------|------------------------------------------------------------------------------------------------------------------------------|
-| `transition` | [Transition](../android/transition/Transition.md)!:The transition which was paused. |
+| `transition` | [Transition](Transition.md)!:The transition which was paused. |
 
 ### onTransitionResume
 
@@ -81,11 +81,11 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 abstract fun onTransitionResume(transition: Transition!): Unit
 ```
 
-Notification when a transition is resumed. Note that resume() may be called by a parent [TransitionSet](../android/transition/TransitionSet.md) on a child transition which has not yet started. This allows the child transition to restore state which may have changed in an earlier call to [onTransitionPause(android.transition.Transition)](../android/transition/Transition.TransitionListener.md)).
+Notification when a transition is resumed. Note that resume() may be called by a parent [TransitionSet](TransitionSet.md) on a child transition which has not yet started. This allows the child transition to restore state which may have changed in an earlier call to [onTransitionPause(android.transition.Transition)](../android/transition/Transition.TransitionListener.md)).
 
 | Parameters ||
 |--------------|-------------------------------------------------------------------------------------------------------------------------------|
-| `transition` | [Transition](../android/transition/Transition.md)!:The transition which was resumed. |
+| `transition` | [Transition](Transition.md)!:The transition which was resumed. |
 
 ### onTransitionStart
 
@@ -99,4 +99,4 @@ Notification about the start of the transition.
 
 | Parameters ||
 |--------------|---------------------------------------------------------------------------------------------------------------------|
-| `transition` | [Transition](../android/transition/Transition.md)!:The started transition. |
+| `transition` | [Transition](Transition.md)!:The started transition. |

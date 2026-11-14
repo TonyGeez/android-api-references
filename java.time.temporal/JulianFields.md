@@ -10,21 +10,21 @@ class JulianFields
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.time.temporal.JulianFields](../java/time/temporal/JulianFields.md) |
+| ↳ | [java.time.temporal.JulianFields](JulianFields.md) |
 
 A set of date fields that provide access to Julian Days.
 
 The Julian Day is a standard way of expressing date and time commonly used in the scientific community. It is expressed as a decimal number of whole days where days start at midday. This class represents variations on Julian Days that count whole days from midnight.
 
-The fields are implemented relative to [EPOCH_DAY](../java/time/temporal/ChronoField.md). The fields are supported, and can be queried and set if`EPOCH_DAY`is available. The fields work with all chronologies.
+The fields are implemented relative to [EPOCH_DAY](ChronoField.md). The fields are supported, and can be queried and set if`EPOCH_DAY`is available. The fields work with all chronologies.
 
 ## Summary
 
 | Properties ||
 |---------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [TemporalField](../java/time/temporal/TemporalField.md)! | [JULIAN_DAY](../java/time/temporal/JulianFields.md) Julian Day field. |
-| static [TemporalField](../java/time/temporal/TemporalField.md)! | [MODIFIED_JULIAN_DAY](../java/time/temporal/JulianFields.md) Modified Julian Day field. |
-| static [TemporalField](../java/time/temporal/TemporalField.md)! | [RATA_DIE](../java/time/temporal/JulianFields.md) Rata Die field. |
+| static [TemporalField](TemporalField.md)! | [JULIAN_DAY](JulianFields.md) Julian Day field. |
+| static [TemporalField](TemporalField.md)! | [MODIFIED_JULIAN_DAY](JulianFields.md) Modified Julian Day field. |
+| static [TemporalField](TemporalField.md)! | [RATA_DIE](JulianFields.md) Rata Die field. |
 | --- | --- |
 
 ## Properties
@@ -41,9 +41,9 @@ Julian Day field.
 
 This is an integer-based version of the Julian Day Number. Julian Day is a well-known system that represents the count of whole days since day 0, which is defined to be January 1, 4713 BCE in the Julian calendar, and -4713-11-24 Gregorian. The field has "JulianDay" as 'name', and 'DAYS' as 'baseUnit'. The field always refers to the local date-time, ignoring the offset or zone.
 
-For date-times, 'JULIAN_DAY.getFrom()' assumes the same value from midnight until just before the next midnight. When 'JULIAN_DAY.adjustInto()' is applied to a date-time, the time of day portion remains unaltered. 'JULIAN_DAY.adjustInto()' and 'JULIAN_DAY.getFrom()' only apply to`Temporal`objects that can be converted into [ChronoField.EPOCH_DAY](../java/time/temporal/ChronoField.md). An [UnsupportedTemporalTypeException](../java/time/temporal/UnsupportedTemporalTypeException.md) is thrown for any other type of object.
+For date-times, 'JULIAN_DAY.getFrom()' assumes the same value from midnight until just before the next midnight. When 'JULIAN_DAY.adjustInto()' is applied to a date-time, the time of day portion remains unaltered. 'JULIAN_DAY.adjustInto()' and 'JULIAN_DAY.getFrom()' only apply to`Temporal`objects that can be converted into [ChronoField.EPOCH_DAY](ChronoField.md). An [UnsupportedTemporalTypeException](UnsupportedTemporalTypeException.md) is thrown for any other type of object.
 
-In the resolving phase of parsing, a date can be created from a Julian Day field. In [strict mode](../java/time/format/ResolverStyle.md) and [smart mode](../java/time/format/ResolverStyle.md) the Julian Day value is validated against the range of valid values. In [lenient mode](../java/time/format/ResolverStyle.md) no validation occurs.
+In the resolving phase of parsing, a date can be created from a Julian Day field. In [strict mode](../java.time.format/ResolverStyle.md) and [smart mode](../java.time.format/ResolverStyle.md) the Julian Day value is validated against the range of valid values. In [lenient mode](../java.time.format/ResolverStyle.md) no validation occurs.
 
 #### Astronomical and Scientific Notes
 
@@ -77,11 +77,11 @@ Modified Julian Day field.
 
 This is an integer-based version of the Modified Julian Day Number. Modified Julian Day (MJD) is a well-known system that counts days continuously. It is defined relative to astronomical Julian Day as`MJD = JD - 2400000.5`. Each Modified Julian Day runs from midnight to midnight. The field always refers to the local date-time, ignoring the offset or zone.
 
-For date-times, 'MODIFIED_JULIAN_DAY.getFrom()' assumes the same value from midnight until just before the next midnight. When 'MODIFIED_JULIAN_DAY.adjustInto()' is applied to a date-time, the time of day portion remains unaltered. 'MODIFIED_JULIAN_DAY.adjustInto()' and 'MODIFIED_JULIAN_DAY.getFrom()' only apply to`Temporal`objects that can be converted into [ChronoField.EPOCH_DAY](../java/time/temporal/ChronoField.md). An [UnsupportedTemporalTypeException](../java/time/temporal/UnsupportedTemporalTypeException.md) is thrown for any other type of object.
+For date-times, 'MODIFIED_JULIAN_DAY.getFrom()' assumes the same value from midnight until just before the next midnight. When 'MODIFIED_JULIAN_DAY.adjustInto()' is applied to a date-time, the time of day portion remains unaltered. 'MODIFIED_JULIAN_DAY.adjustInto()' and 'MODIFIED_JULIAN_DAY.getFrom()' only apply to`Temporal`objects that can be converted into [ChronoField.EPOCH_DAY](ChronoField.md). An [UnsupportedTemporalTypeException](UnsupportedTemporalTypeException.md) is thrown for any other type of object.
 
 This implementation is an integer version of MJD with the decimal part rounded to floor.
 
-In the resolving phase of parsing, a date can be created from a Modified Julian Day field. In [strict mode](../java/time/format/ResolverStyle.md) and [smart mode](../java/time/format/ResolverStyle.md) the Modified Julian Day value is validated against the range of valid values. In [lenient mode](../java/time/format/ResolverStyle.md) no validation occurs.
+In the resolving phase of parsing, a date can be created from a Modified Julian Day field. In [strict mode](../java.time.format/ResolverStyle.md) and [smart mode](../java.time.format/ResolverStyle.md) the Modified Julian Day value is validated against the range of valid values. In [lenient mode](../java.time.format/ResolverStyle.md) no validation occurs.
 
 #### Astronomical and Scientific Notes
 
@@ -110,6 +110,6 @@ Rata Die field.
 
 Rata Die counts whole days continuously starting day 1 at midnight at the beginning of 0001-01-01 (ISO). The field always refers to the local date-time, ignoring the offset or zone.
 
-For date-times, 'RATA_DIE.getFrom()' assumes the same value from midnight until just before the next midnight. When 'RATA_DIE.adjustInto()' is applied to a date-time, the time of day portion remains unaltered. 'RATA_DIE.adjustInto()' and 'RATA_DIE.getFrom()' only apply to`Temporal`objects that can be converted into [ChronoField.EPOCH_DAY](../java/time/temporal/ChronoField.md). An [UnsupportedTemporalTypeException](../java/time/temporal/UnsupportedTemporalTypeException.md) is thrown for any other type of object.
+For date-times, 'RATA_DIE.getFrom()' assumes the same value from midnight until just before the next midnight. When 'RATA_DIE.adjustInto()' is applied to a date-time, the time of day portion remains unaltered. 'RATA_DIE.adjustInto()' and 'RATA_DIE.getFrom()' only apply to`Temporal`objects that can be converted into [ChronoField.EPOCH_DAY](ChronoField.md). An [UnsupportedTemporalTypeException](UnsupportedTemporalTypeException.md) is thrown for any other type of object.
 
-In the resolving phase of parsing, a date can be created from a Rata Die field. In [strict mode](../java/time/format/ResolverStyle.md) and [smart mode](../java/time/format/ResolverStyle.md) the Rata Die value is validated against the range of valid values. In [lenient mode](../java/time/format/ResolverStyle.md) no validation occurs.
+In the resolving phase of parsing, a date can be created from a Rata Die field. In [strict mode](../java.time.format/ResolverStyle.md) and [smart mode](../java.time.format/ResolverStyle.md) the Rata Die value is validated against the range of valid values. In [lenient mode](../java.time.format/ResolverStyle.md) no validation occurs.

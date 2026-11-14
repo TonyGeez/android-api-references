@@ -14,7 +14,7 @@ interface OnBackStackChangedListener
 
 | [android.app.FragmentManager.OnBackStackChangedListener](../android/app/FragmentManager.OnBackStackChangedListener.md) |
 
-| Known Direct Subclasses [FragmentBreadCrumbs](../android/app/FragmentBreadCrumbs.md) |-------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------| | [FragmentBreadCrumbs](../android/app/FragmentBreadCrumbs.md) | Helper class for showing "bread crumbs" representing the fragment stack in an activity. | |
+| Known Direct Subclasses [FragmentBreadCrumbs](FragmentBreadCrumbs.md) |-------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------| | [FragmentBreadCrumbs](FragmentBreadCrumbs.md) | Helper class for showing "bread crumbs" representing the fragment stack in an activity. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 | **This interface was deprecated in API level 28.**

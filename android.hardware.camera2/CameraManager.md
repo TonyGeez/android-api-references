@@ -4,7 +4,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 
 # CameraManager
 
-Kotlin | [Java](../android/hardware/camera2/CameraManager.md) 
+Kotlin | [Java](CameraManager.md) 
 | --- | --- |
 
 ```
@@ -13,11 +13,11 @@ class CameraManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.hardware.camera2.CameraManager](../android/hardware/camera2/CameraManager.md) |
+| ↳ | [android.hardware.camera2.CameraManager](CameraManager.md) |
 
-A system service manager for detecting, characterizing, and connecting to [CameraDevices](../android/hardware/camera2/CameraDevice.md).
+A system service manager for detecting, characterizing, and connecting to [CameraDevices](CameraDevice.md).
 
-For more details about communicating with camera devices, read the Camera developer guide or the [camera2](../android/hardware/camera2/_package.md) package documentation.
+For more details about communicating with camera devices, read the Camera developer guide or the [camera2](_package.md) package documentation.
 
 ## Summary
 
@@ -28,29 +28,29 @@ For more details about communicating with camera devices, read the Camera develo
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [CameraCharacteristics](../android/hardware/camera2/CameraCharacteristics.md) | [getCameraCharacteristics](../android/hardware/camera2/CameraManager.md))`(`cameraId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Query the capabilities of a camera device. |
-| [CameraDevice.CameraDeviceSetup](../android/hardware/camera2/CameraDevice.CameraDeviceSetup.md) | [getCameraDeviceSetup](../android/hardware/camera2/CameraManager.md))`(`cameraId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns a [CameraDevice.CameraDeviceSetup](../android/hardware/camera2/CameraDevice.CameraDeviceSetup.md) object for the given `cameraId`, which provides limited access to CameraDevice setup and query functionality without requiring an #openCamera call. |
-| [CameraExtensionCharacteristics](../android/hardware/camera2/CameraExtensionCharacteristics.md) | [getCameraExtensionCharacteristics](../android/hardware/camera2/CameraManager.md))`(`cameraId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Query the camera extension capabilities of a camera device. |
+| [CameraCharacteristics](CameraCharacteristics.md) | [getCameraCharacteristics](CameraManager.md))`(`cameraId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Query the capabilities of a camera device. |
+| [CameraDevice.CameraDeviceSetup](../android/hardware/camera2/CameraDevice.CameraDeviceSetup.md) | [getCameraDeviceSetup](CameraManager.md))`(`cameraId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns a [CameraDevice.CameraDeviceSetup](../android/hardware/camera2/CameraDevice.CameraDeviceSetup.md) object for the given `cameraId`, which provides limited access to CameraDevice setup and query functionality without requiring an #openCamera call. |
+| [CameraExtensionCharacteristics](CameraExtensionCharacteristics.md) | [getCameraExtensionCharacteristics](CameraManager.md))`(`cameraId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Query the camera extension capabilities of a camera device. |
 | --- | --- |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getCameraIdList](../android/hardware/camera2/CameraManager.md))`()` Return the list of currently connected camera devices by identifier, including cameras that may be in use by other camera API clients. |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!\> | [getConcurrentCameraIds](../android/hardware/camera2/CameraManager.md))`()` Return the set of combinations of currently connected camera device identifiers, which support configuring camera device sessions concurrently. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTorchStrengthLevel](../android/hardware/camera2/CameraManager.md))`(`cameraId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns the brightness level of the flash unit associated with the cameraId. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getCameraIdList](CameraManager.md))`()` Return the list of currently connected camera devices by identifier, including cameras that may be in use by other camera API clients. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!\> | [getConcurrentCameraIds](CameraManager.md))`()` Return the set of combinations of currently connected camera device identifiers, which support configuring camera device sessions concurrently. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTorchStrengthLevel](CameraManager.md))`(`cameraId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns the brightness level of the flash unit associated with the cameraId. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isCameraDeviceSetupSupported](../android/hardware/camera2/CameraManager.md))`(`cameraId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Checks a Camera Device's characteristics to ensure that a [CameraDevice.CameraDeviceSetup](../android/hardware/camera2/CameraDevice.CameraDeviceSetup.md) instance can be constructed for a given `cameraId`. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isConcurrentSessionConfigurationSupported](../android/hardware/camera2/CameraManager.md))`(`cameraIdAndSessionConfig:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [SessionConfiguration](../android/hardware/camera2/params/SessionConfiguration.md)!>`)` Checks whether the provided set of camera devices and their corresponding [SessionConfiguration](../android/hardware/camera2/params/SessionConfiguration.md) can be configured concurrently. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [openCamera](../android/hardware/camera2/CameraManager.md))`(`cameraId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `callback:` ` [CameraDevice.StateCallback](../android/hardware/camera2/CameraDevice.StateCallback.md)`, `handler:` ` [Handler](../android/os/Handler.md)?`)` Open a connection to a camera with the given ID. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isCameraDeviceSetupSupported](CameraManager.md))`(`cameraId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Checks a Camera Device's characteristics to ensure that a [CameraDevice.CameraDeviceSetup](../android/hardware/camera2/CameraDevice.CameraDeviceSetup.md) instance can be constructed for a given `cameraId`. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isConcurrentSessionConfigurationSupported](CameraManager.md))`(`cameraIdAndSessionConfig:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [SessionConfiguration](../android.hardware.camera2.params/SessionConfiguration.md)!>`)` Checks whether the provided set of camera devices and their corresponding [SessionConfiguration](../android.hardware.camera2.params/SessionConfiguration.md) can be configured concurrently. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [openCamera](CameraManager.md))`(`cameraId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `callback:` ` [CameraDevice.StateCallback](../android/hardware/camera2/CameraDevice.StateCallback.md)`, `handler:` ` [Handler](../android.os/Handler.md)?`)` Open a connection to a camera with the given ID. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [openCamera](../android/hardware/camera2/CameraManager.md))`(`cameraId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `executor:` ` [Executor](../java/util/concurrent/Executor.md)`, `callback:` ` [CameraDevice.StateCallback](../android/hardware/camera2/CameraDevice.StateCallback.md)`)` Open a connection to a camera with the given ID. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerAvailabilityCallback](../android/hardware/camera2/CameraManager.md))`(`callback:` ` [CameraManager.AvailabilityCallback](../android/hardware/camera2/CameraManager.AvailabilityCallback.md)`, `handler:` ` [Handler](../android/os/Handler.md)?`)` Register a callback to be notified about camera device availability. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerAvailabilityCallback](../android/hardware/camera2/CameraManager.md))`(`executor:` ` [Executor](../java/util/concurrent/Executor.md)`, `callback:` ` [CameraManager.AvailabilityCallback](../android/hardware/camera2/CameraManager.AvailabilityCallback.md)`)` Register a callback to be notified about camera device availability. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [openCamera](CameraManager.md))`(`cameraId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `executor:` ` [Executor](../java.util.concurrent/Executor.md)`, `callback:` ` [CameraDevice.StateCallback](../android/hardware/camera2/CameraDevice.StateCallback.md)`)` Open a connection to a camera with the given ID. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerAvailabilityCallback](CameraManager.md))`(`callback:` ` [CameraManager.AvailabilityCallback](../android/hardware/camera2/CameraManager.AvailabilityCallback.md)`, `handler:` ` [Handler](../android.os/Handler.md)?`)` Register a callback to be notified about camera device availability. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerAvailabilityCallback](CameraManager.md))`(`executor:` ` [Executor](../java.util.concurrent/Executor.md)`, `callback:` ` [CameraManager.AvailabilityCallback](../android/hardware/camera2/CameraManager.AvailabilityCallback.md)`)` Register a callback to be notified about camera device availability. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerTorchCallback](../android/hardware/camera2/CameraManager.md))`(`callback:` ` [CameraManager.TorchCallback](../android/hardware/camera2/CameraManager.TorchCallback.md)`, `handler:` ` [Handler](../android/os/Handler.md)?`)` Register a callback to be notified about torch mode status. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerTorchCallback](../android/hardware/camera2/CameraManager.md))`(`executor:` ` [Executor](../java/util/concurrent/Executor.md)`, `callback:` ` [CameraManager.TorchCallback](../android/hardware/camera2/CameraManager.TorchCallback.md)`)` Register a callback to be notified about torch mode status. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTorchMode](../android/hardware/camera2/CameraManager.md))`(`cameraId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `enabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Set the flash unit's torch mode of the camera of the given ID without opening the camera device. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerTorchCallback](CameraManager.md))`(`callback:` ` [CameraManager.TorchCallback](../android/hardware/camera2/CameraManager.TorchCallback.md)`, `handler:` ` [Handler](../android.os/Handler.md)?`)` Register a callback to be notified about torch mode status. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [registerTorchCallback](CameraManager.md))`(`executor:` ` [Executor](../java.util.concurrent/Executor.md)`, `callback:` ` [CameraManager.TorchCallback](../android/hardware/camera2/CameraManager.TorchCallback.md)`)` Register a callback to be notified about torch mode status. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setTorchMode](CameraManager.md))`(`cameraId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `enabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Set the flash unit's torch mode of the camera of the given ID without opening the camera device. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [turnOnTorchWithStrengthLevel](../android/hardware/camera2/CameraManager.md))`(`cameraId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `torchStrength:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the brightness level of the flashlight associated with the given cameraId in torch mode. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterAvailabilityCallback](../android/hardware/camera2/CameraManager.md))`(`callback:` ` [CameraManager.AvailabilityCallback](../android/hardware/camera2/CameraManager.AvailabilityCallback.md)`)` Remove a previously-added callback; the callback will no longer receive connection and disconnection callbacks. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterTorchCallback](../android/hardware/camera2/CameraManager.md))`(`callback:` ` [CameraManager.TorchCallback](../android/hardware/camera2/CameraManager.TorchCallback.md)`)` Remove a previously-added callback; the callback will no longer receive torch mode status callbacks. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [turnOnTorchWithStrengthLevel](CameraManager.md))`(`cameraId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `torchStrength:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Set the brightness level of the flashlight associated with the given cameraId in torch mode. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterAvailabilityCallback](CameraManager.md))`(`callback:` ` [CameraManager.AvailabilityCallback](../android/hardware/camera2/CameraManager.AvailabilityCallback.md)`)` Remove a previously-added callback; the callback will no longer receive connection and disconnection callbacks. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unregisterTorchCallback](CameraManager.md))`(`callback:` ` [CameraManager.TorchCallback](../android/hardware/camera2/CameraManager.TorchCallback.md)`)` Remove a previously-added callback; the callback will no longer receive torch mode status callbacks. |
 | --- | --- |
 
 ## Public methods
@@ -67,7 +67,7 @@ Query the capabilities of a camera device. These capabilities are immutable for 
 
 From API level 29, this function can also be used to query the capabilities of physical cameras that can only be used as part of logical multi-camera. These cameras cannot be opened directly via #openCamera
 
-Also starting with API level 29, while most basic camera information is still available even without the CAMERA permission, some values are not available to apps that do not hold that permission. The keys not available are listed by [CameraCharacteristics.getKeysNeedingPermission](../android/hardware/camera2/CameraCharacteristics.md)).
+Also starting with API level 29, while most basic camera information is still available even without the CAMERA permission, some values are not available to apps that do not hold that permission. The keys not available are listed by [CameraCharacteristics.getKeysNeedingPermission](CameraCharacteristics.md)).
 
 | Parameters ||
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -75,7 +75,7 @@ Also starting with API level 29, while most basic camera information is still av
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| [CameraCharacteristics](../android/hardware/camera2/CameraCharacteristics.md) | The properties of the given camera This value cannot be `null`. |
+| [CameraCharacteristics](CameraCharacteristics.md) | The properties of the given camera This value cannot be `null`. |
 
 | Exceptions ||
 |--------------------------------------------------|---------------------------------------------------------|
@@ -84,8 +84,8 @@ Also starting with API level 29, while most basic camera information is still av
 
 **See Also**
 
-- [#getCameraIdList](../android/hardware/camera2/CameraManager.md))
-- [android.app.admin.DevicePolicyManager#setCameraDisabled](../android/app/admin/DevicePolicyManager.md)) 
+- [#getCameraIdList](CameraManager.md))
+- [android.app.admin.DevicePolicyManager#setCameraDisabled](../android.app.admin/DevicePolicyManager.md)) 
 
 ### getCameraDeviceSetup
 
@@ -95,13 +95,13 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun getCameraDeviceSetup(cameraId: String): CameraDevice.CameraDeviceSetup
 ```
 
-Returns a [CameraDevice.CameraDeviceSetup](../android/hardware/camera2/CameraDevice.CameraDeviceSetup.md) object for the given `cameraId`, which provides limited access to CameraDevice setup and query functionality without requiring an #openCamera call. The [CameraDevice](../android/hardware/camera2/CameraDevice.md) can later be obtained either by calling #openCamera, or [CameraDevice.CameraDeviceSetup.openCamera](../android/hardware/camera2/CameraDevice.CameraDeviceSetup.md)).
+Returns a [CameraDevice.CameraDeviceSetup](../android/hardware/camera2/CameraDevice.CameraDeviceSetup.md) object for the given `cameraId`, which provides limited access to CameraDevice setup and query functionality without requiring an #openCamera call. The [CameraDevice](CameraDevice.md) can later be obtained either by calling #openCamera, or [CameraDevice.CameraDeviceSetup.openCamera](../android/hardware/camera2/CameraDevice.CameraDeviceSetup.md)).
 
-Support for [CameraDevice.CameraDeviceSetup](../android/hardware/camera2/CameraDevice.CameraDeviceSetup.md) for a given `cameraId` must be checked with [isCameraDeviceSetupSupported](../android/hardware/camera2/CameraManager.md)). If `isCameraDeviceSetupSupported` returns `false` for a `cameraId`, this method will throw an [UnsupportedOperationException](../java/lang/UnsupportedOperationException.md)
+Support for [CameraDevice.CameraDeviceSetup](../android/hardware/camera2/CameraDevice.CameraDeviceSetup.md) for a given `cameraId` must be checked with [isCameraDeviceSetupSupported](CameraManager.md)). If `isCameraDeviceSetupSupported` returns `false` for a `cameraId`, this method will throw an [UnsupportedOperationException](../java.lang/UnsupportedOperationException.md)
 
 | Parameters ||
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `cameraId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The unique identifier of the camera device for which [CameraDevice.CameraDeviceSetup](../android/hardware/camera2/CameraDevice.CameraDeviceSetup.md) object must be constructed. This identifier must be present in [getCameraIdList()](../android/hardware/camera2/CameraManager.md)) This value cannot be `null`. |
+| `cameraId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The unique identifier of the camera device for which [CameraDevice.CameraDeviceSetup](../android/hardware/camera2/CameraDevice.CameraDeviceSetup.md) object must be constructed. This identifier must be present in [getCameraIdList()](CameraManager.md)) This value cannot be `null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -109,9 +109,9 @@ Support for [CameraDevice.CameraDeviceSetup](../android/hardware/camera2/CameraD
 
 | Exceptions ||
 |--------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.IllegalArgumentException` | If `cameraId` is null, or if `cameraId` does not match any device in [getCameraIdList()](../android/hardware/camera2/CameraManager.md)). |
+| `java.lang.IllegalArgumentException` | If `cameraId` is null, or if `cameraId` does not match any device in [getCameraIdList()](CameraManager.md)). |
 | `android.hardware.camera2.CameraAccessException` | if the camera device is not accessible |
-| `java.lang.UnsupportedOperationException` | if [CameraDevice.CameraDeviceSetup](../android/hardware/camera2/CameraDevice.CameraDeviceSetup.md) instance cannot be constructed for the given `cameraId`, i.e. [isCameraDeviceSetupSupported](../android/hardware/camera2/CameraManager.md)) returns false. |
+| `java.lang.UnsupportedOperationException` | if [CameraDevice.CameraDeviceSetup](../android/hardware/camera2/CameraDevice.CameraDeviceSetup.md) instance cannot be constructed for the given `cameraId`, i.e. [isCameraDeviceSetupSupported](CameraManager.md)) returns false. |
 | --- | --- |
 
 **See Also**
@@ -135,7 +135,7 @@ Query the camera extension capabilities of a camera device.
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| [CameraExtensionCharacteristics](../android/hardware/camera2/CameraExtensionCharacteristics.md) | The properties of the given camera This value cannot be `null`. |
+| [CameraExtensionCharacteristics](CameraExtensionCharacteristics.md) | The properties of the given camera This value cannot be `null`. |
 
 | Exceptions ||
 |--------------------------------------------------|---------------------------------------------------------|
@@ -144,9 +144,9 @@ Query the camera extension capabilities of a camera device.
 
 **See Also**
 
-- [android.hardware.camera2.CameraExtensionCharacteristics](../android/hardware/camera2/CameraExtensionCharacteristics.md)
-- [android.hardware.camera2.CameraDevice#createExtensionSession(ExtensionSessionConfiguration)](../android/hardware/camera2/CameraDevice.md))
-- [android.hardware.camera2.CameraExtensionSession](../android/hardware/camera2/CameraExtensionSession.md) 
+- [android.hardware.camera2.CameraExtensionCharacteristics](CameraExtensionCharacteristics.md)
+- [android.hardware.camera2.CameraDevice#createExtensionSession(ExtensionSessionConfiguration)](CameraDevice.md))
+- [android.hardware.camera2.CameraExtensionSession](CameraExtensionSession.md) 
 
 ### getCameraIdList
 
@@ -180,18 +180,18 @@ The devices in these combinations can be concurrently configured by the same cli
 
 For concurrent operation, in chronological order :
 
-- Applications must first close any open cameras that have sessions configured, using [CameraDevice.close](../android/hardware/camera2/CameraDevice.md)).
+- Applications must first close any open cameras that have sessions configured, using [CameraDevice.close](CameraDevice.md)).
 - All camera devices intended to be operated concurrently, must be opened using #openCamera, before configuring sessions on any of the camera devices.
 
 <br />
 
-Each device in a combination, is guaranteed to support stream combinations which may be obtained by querying [getCameraCharacteristics](../android/hardware/camera2/CameraManager.md)) for the key [android.hardware.camera2.CameraCharacteristics#SCALER_MANDATORY_CONCURRENT_STREAM_COMBINATIONS](../android/hardware/camera2/CameraCharacteristics.md).
+Each device in a combination, is guaranteed to support stream combinations which may be obtained by querying [getCameraCharacteristics](CameraManager.md)) for the key [android.hardware.camera2.CameraCharacteristics#SCALER_MANDATORY_CONCURRENT_STREAM_COMBINATIONS](CameraCharacteristics.md).
 
-For concurrent operation, if a camera device has a non null zoom ratio range as specified by [android.hardware.camera2.CameraCharacteristics#CONTROL_ZOOM_RATIO_RANGE](../android/hardware/camera2/CameraCharacteristics.md), its complete zoom ratio range may not apply. Applications can use [android.hardware.camera2.CaptureRequest#CONTROL_ZOOM_RATIO](../android/hardware/camera2/CaptureRequest.md) \>=1 and \<= [android.hardware.camera2.CameraCharacteristics#SCALER_AVAILABLE_MAX_DIGITAL_ZOOM](../android/hardware/camera2/CameraCharacteristics.md) during concurrent operation.
+For concurrent operation, if a camera device has a non null zoom ratio range as specified by [android.hardware.camera2.CameraCharacteristics#CONTROL_ZOOM_RATIO_RANGE](CameraCharacteristics.md), its complete zoom ratio range may not apply. Applications can use [android.hardware.camera2.CaptureRequest#CONTROL_ZOOM_RATIO](CaptureRequest.md) \>=1 and \<= [android.hardware.camera2.CameraCharacteristics#SCALER_AVAILABLE_MAX_DIGITAL_ZOOM](CameraCharacteristics.md) during concurrent operation.
 
 The set of combinations may include camera devices that may be in use by other camera API clients.
 
-Concurrent camera extension sessions [CameraExtensionSession](../android/hardware/camera2/CameraExtensionSession.md) are not currently supported.
+Concurrent camera extension sessions [CameraExtensionSession](CameraExtensionSession.md) are not currently supported.
 
 The set of combinations doesn't contain physical cameras that can only be used as part of a logical multi-camera device.
 
@@ -221,7 +221,7 @@ Returns the brightness level of the flash unit associated with the cameraId.
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The brightness level of the flash unit associated with cameraId. When the torch is turned OFF, the strength level will reset to a default level [android.hardware.camera2.CameraCharacteristics#FLASH_INFO_STRENGTH_DEFAULT_LEVEL](../android/hardware/camera2/CameraCharacteristics.md). In this case the return value will be [android.hardware.camera2.CameraCharacteristics#FLASH_INFO_STRENGTH_DEFAULT_LEVEL](../android/hardware/camera2/CameraCharacteristics.md) rather than 0. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The brightness level of the flash unit associated with cameraId. When the torch is turned OFF, the strength level will reset to a default level [android.hardware.camera2.CameraCharacteristics#FLASH_INFO_STRENGTH_DEFAULT_LEVEL](CameraCharacteristics.md). In this case the return value will be [android.hardware.camera2.CameraCharacteristics#FLASH_INFO_STRENGTH_DEFAULT_LEVEL](CameraCharacteristics.md) rather than 0. |
 
 | Exceptions ||
 |--------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -236,13 +236,13 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun isCameraDeviceSetupSupported(cameraId: String): Boolean
 ```
 
-Checks a Camera Device's characteristics to ensure that a [CameraDevice.CameraDeviceSetup](../android/hardware/camera2/CameraDevice.CameraDeviceSetup.md) instance can be constructed for a given `cameraId`. If this method returns false for a `cameraId`, calling [getCameraDeviceSetup](../android/hardware/camera2/CameraManager.md)) for that `cameraId` will throw an [UnsupportedOperationException](../java/lang/UnsupportedOperationException.md).
+Checks a Camera Device's characteristics to ensure that a [CameraDevice.CameraDeviceSetup](../android/hardware/camera2/CameraDevice.CameraDeviceSetup.md) instance can be constructed for a given `cameraId`. If this method returns false for a `cameraId`, calling [getCameraDeviceSetup](CameraManager.md)) for that `cameraId` will throw an [UnsupportedOperationException](../java.lang/UnsupportedOperationException.md).
 
-[CameraDevice.CameraDeviceSetup](../android/hardware/camera2/CameraDevice.CameraDeviceSetup.md) is supported for all devices that report [CameraCharacteristics.INFO_SESSION_CONFIGURATION_QUERY_VERSION](../android/hardware/camera2/CameraCharacteristics.md) \> [android.os.Build.VERSION_CODES#UPSIDE_DOWN_CAKE](../android/os/Build.VERSION_CODES.md)
+[CameraDevice.CameraDeviceSetup](../android/hardware/camera2/CameraDevice.CameraDeviceSetup.md) is supported for all devices that report [CameraCharacteristics.INFO_SESSION_CONFIGURATION_QUERY_VERSION](CameraCharacteristics.md) \> [android.os.Build.VERSION_CODES#UPSIDE_DOWN_CAKE](../android/os/Build.VERSION_CODES.md)
 
 | Parameters ||
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `cameraId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The unique identifier of the camera device for which [CameraDevice.CameraDeviceSetup](../android/hardware/camera2/CameraDevice.CameraDeviceSetup.md) support is being queried. This identifier must be present in [getCameraIdList()](../android/hardware/camera2/CameraManager.md)). This value cannot be `null`. |
+| `cameraId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The unique identifier of the camera device for which [CameraDevice.CameraDeviceSetup](../android/hardware/camera2/CameraDevice.CameraDeviceSetup.md) support is being queried. This identifier must be present in [getCameraIdList()](CameraManager.md)). This value cannot be `null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -250,14 +250,14 @@ Checks a Camera Device's characteristics to ensure that a [CameraDevice.CameraDe
 
 | Exceptions ||
 |--------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.IllegalArgumentException` | If `cameraId` is null, or if `cameraId` does not match any device in [getCameraIdList()](../android/hardware/camera2/CameraManager.md)). |
+| `java.lang.IllegalArgumentException` | If `cameraId` is null, or if `cameraId` does not match any device in [getCameraIdList()](CameraManager.md)). |
 | `android.hardware.camera2.CameraAccessException` | if the camera device is not accessible |
 
 **See Also**
 
-- [android.hardware.camera2.CameraCharacteristics#INFO_SESSION_CONFIGURATION_QUERY_VERSION](../android/hardware/camera2/CameraCharacteristics.md)
+- [android.hardware.camera2.CameraCharacteristics#INFO_SESSION_CONFIGURATION_QUERY_VERSION](CameraCharacteristics.md)
 - [android.hardware.camera2.CameraDevice.CameraDeviceSetup](../android/hardware/camera2/CameraDevice.CameraDeviceSetup.md)
-- [#getCameraDeviceSetup(String)](../android/hardware/camera2/CameraManager.md))
+- [#getCameraDeviceSetup(String)](CameraManager.md))
 - <https://developer.android.com/reference/kotlin/android/hardware/camera2/CameraManager#getCameraIdList()> 
 
 ### isConcurrentSessionConfigurationSupported
@@ -268,25 +268,25 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 fun isConcurrentSessionConfigurationSupported(cameraIdAndSessionConfig: MutableMap<String!, SessionConfiguration!>): Boolean
 ```
 
-Checks whether the provided set of camera devices and their corresponding [SessionConfiguration](../android/hardware/camera2/params/SessionConfiguration.md) can be configured concurrently.
+Checks whether the provided set of camera devices and their corresponding [SessionConfiguration](../android.hardware.camera2.params/SessionConfiguration.md) can be configured concurrently.
 
-This method performs a runtime check of the given [SessionConfiguration](../android/hardware/camera2/params/SessionConfiguration.md) and camera id combinations. The result confirms whether or not the passed session configurations can be successfully used to create camera capture sessions concurrently, on the given camera devices using [CameraDevice.createCaptureSession(SessionConfiguration)](../android/hardware/camera2/CameraDevice.md)).
+This method performs a runtime check of the given [SessionConfiguration](../android.hardware.camera2.params/SessionConfiguration.md) and camera id combinations. The result confirms whether or not the passed session configurations can be successfully used to create camera capture sessions concurrently, on the given camera devices using [CameraDevice.createCaptureSession(SessionConfiguration)](CameraDevice.md)).
 
 The method can be called at any point before, during and after active capture sessions. It will not impact normal camera behavior in any way and must complete significantly faster than creating a regular or constrained capture session.
 
-Although this method is faster than creating a new capture session, it is not intended to be used for exploring the entire space of supported concurrent stream combinations. The available mandatory concurrent stream combinations may be obtained by querying [getCameraCharacteristics](../android/hardware/camera2/CameraManager.md)) for the key [android.hardware.camera2.CameraCharacteristics#SCALER_MANDATORY_CONCURRENT_STREAM_COMBINATIONS](../android/hardware/camera2/CameraCharacteristics.md).
+Although this method is faster than creating a new capture session, it is not intended to be used for exploring the entire space of supported concurrent stream combinations. The available mandatory concurrent stream combinations may be obtained by querying [getCameraCharacteristics](CameraManager.md)) for the key [android.hardware.camera2.CameraCharacteristics#SCALER_MANDATORY_CONCURRENT_STREAM_COMBINATIONS](CameraCharacteristics.md).
 
-Note that session parameters will be ignored and calls to [SessionConfiguration.setSessionParameters](../android/hardware/camera2/params/SessionConfiguration.md)) are not required.
+Note that session parameters will be ignored and calls to [SessionConfiguration.setSessionParameters](../android.hardware.camera2.params/SessionConfiguration.md)) are not required.
 
 Requires [android.Manifest.permission#CAMERA](../android/Manifest.permission.md)
 
 | Parameters ||
 |----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `cameraIdAndSessionConfig` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [SessionConfiguration](../android/hardware/camera2/params/SessionConfiguration.md)!\>: This value cannot be `null`. |
+| `cameraIdAndSessionConfig` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [SessionConfiguration](../android.hardware.camera2.params/SessionConfiguration.md)!\>: This value cannot be `null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `true` if the given combination of session configurations and corresponding camera ids are concurrently supported by the camera sub-system, `false` otherwise OR if the set of camera devices provided is not a subset of those returned by [getConcurrentCameraIds](../android/hardware/camera2/CameraManager.md)). |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `true` if the given combination of session configurations and corresponding camera ids are concurrently supported by the camera sub-system, `false` otherwise OR if the set of camera devices provided is not a subset of those returned by [getConcurrentCameraIds](CameraManager.md)). |
 
 | Exceptions ||
 |--------------------------------------------------|--------------------------------------------------------------|
@@ -306,17 +306,17 @@ fun openCamera(
 
 Open a connection to a camera with the given ID.
 
-Use [getCameraIdList](../android/hardware/camera2/CameraManager.md)) to get the list of available camera devices. Note that even if an id is listed, open may fail if the device is disconnected between the calls to [getCameraIdList](../android/hardware/camera2/CameraManager.md)) and #openCamera, or if a higher-priority camera API client begins using the camera device.
+Use [getCameraIdList](CameraManager.md)) to get the list of available camera devices. Note that even if an id is listed, open may fail if the device is disconnected between the calls to [getCameraIdList](CameraManager.md)) and #openCamera, or if a higher-priority camera API client begins using the camera device.
 
-As of API level 23, devices for which the [AvailabilityCallback.onCameraUnavailable(String)](../android/hardware/camera2/CameraManager.AvailabilityCallback.md)) callback has been called due to the device being in use by a lower-priority, background camera API client can still potentially be opened by calling this method when the calling camera API client has a higher priority than the current camera API client using this device. In general, if the top, foreground activity is running within your application process, your process will be given the highest priority when accessing the camera, and this method will succeed even if the camera device is in use by another camera API client. Any lower-priority application that loses control of the camera in this way will receive an [android.hardware.camera2.CameraDevice.StateCallback#onDisconnected](../android/hardware/camera2/CameraDevice.StateCallback.md)) callback. Opening the same camera ID twice in the same application will similarly cause the [android.hardware.camera2.CameraDevice.StateCallback#onDisconnected](../android/hardware/camera2/CameraDevice.StateCallback.md)) callback being fired for the [CameraDevice](../android/hardware/camera2/CameraDevice.md) from the first open call and all ongoing tasks being dropped.
+As of API level 23, devices for which the [AvailabilityCallback.onCameraUnavailable(String)](../android/hardware/camera2/CameraManager.AvailabilityCallback.md)) callback has been called due to the device being in use by a lower-priority, background camera API client can still potentially be opened by calling this method when the calling camera API client has a higher priority than the current camera API client using this device. In general, if the top, foreground activity is running within your application process, your process will be given the highest priority when accessing the camera, and this method will succeed even if the camera device is in use by another camera API client. Any lower-priority application that loses control of the camera in this way will receive an [android.hardware.camera2.CameraDevice.StateCallback#onDisconnected](../android/hardware/camera2/CameraDevice.StateCallback.md)) callback. Opening the same camera ID twice in the same application will similarly cause the [android.hardware.camera2.CameraDevice.StateCallback#onDisconnected](../android/hardware/camera2/CameraDevice.StateCallback.md)) callback being fired for the [CameraDevice](CameraDevice.md) from the first open call and all ongoing tasks being dropped.
 
-Once the camera is successfully opened, [CameraDevice.StateCallback.onOpened](../android/hardware/camera2/CameraDevice.StateCallback.md)) will be invoked with the newly opened [CameraDevice](../android/hardware/camera2/CameraDevice.md). The camera device can then be set up for operation by calling android.hardware.camera2.CameraDevice#createCaptureSession and android.hardware.camera2.CameraDevice#createCaptureRequest
+Once the camera is successfully opened, [CameraDevice.StateCallback.onOpened](../android/hardware/camera2/CameraDevice.StateCallback.md)) will be invoked with the newly opened [CameraDevice](CameraDevice.md). The camera device can then be set up for operation by calling android.hardware.camera2.CameraDevice#createCaptureSession and android.hardware.camera2.CameraDevice#createCaptureRequest
 
-Before API level 30, when the application tries to open multiple [CameraDevice](../android/hardware/camera2/CameraDevice.md) of different IDs and the device does not support opening such combination, either the #openCamera will fail and throw a [CameraAccessException](../android/hardware/camera2/CameraAccessException.md) or one or more of already opened [CameraDevice](../android/hardware/camera2/CameraDevice.md) will be disconnected and receive [android.hardware.camera2.CameraDevice.StateCallback#onDisconnected](../android/hardware/camera2/CameraDevice.StateCallback.md)) callback. Which behavior will happen depends on the device implementation and can vary on different devices. Starting in API level 30, if the device does not support the combination of cameras being opened, it is guaranteed the #openCamera call will fail and none of existing [CameraDevice](../android/hardware/camera2/CameraDevice.md) will be disconnected.
+Before API level 30, when the application tries to open multiple [CameraDevice](CameraDevice.md) of different IDs and the device does not support opening such combination, either the #openCamera will fail and throw a [CameraAccessException](CameraAccessException.md) or one or more of already opened [CameraDevice](CameraDevice.md) will be disconnected and receive [android.hardware.camera2.CameraDevice.StateCallback#onDisconnected](../android/hardware/camera2/CameraDevice.StateCallback.md)) callback. Which behavior will happen depends on the device implementation and can vary on different devices. Starting in API level 30, if the device does not support the combination of cameras being opened, it is guaranteed the #openCamera call will fail and none of existing [CameraDevice](CameraDevice.md) will be disconnected.
 
-If the camera becomes disconnected during initialization after this function call returns, [CameraDevice.StateCallback.onDisconnected](../android/hardware/camera2/CameraDevice.StateCallback.md)) with a [CameraDevice](../android/hardware/camera2/CameraDevice.md) in the disconnected state (and [CameraDevice.StateCallback.onOpened](../android/hardware/camera2/CameraDevice.StateCallback.md)) will be skipped).
+If the camera becomes disconnected during initialization after this function call returns, [CameraDevice.StateCallback.onDisconnected](../android/hardware/camera2/CameraDevice.StateCallback.md)) with a [CameraDevice](CameraDevice.md) in the disconnected state (and [CameraDevice.StateCallback.onOpened](../android/hardware/camera2/CameraDevice.StateCallback.md)) will be skipped).
 
-If opening the camera device fails, then the device callback's [onError](../android/hardware/camera2/CameraDevice.StateCallback.md)) method will be called, and subsequent calls on the camera device will throw a [CameraAccessException](../android/hardware/camera2/CameraAccessException.md).
+If opening the camera device fails, then the device callback's [onError](../android/hardware/camera2/CameraDevice.StateCallback.md)) method will be called, and subsequent calls on the camera device will throw a [CameraAccessException](CameraAccessException.md).
 
 Requires [android.Manifest.permission#CAMERA](../android/Manifest.permission.md)
 
@@ -324,20 +324,20 @@ Requires [android.Manifest.permission#CAMERA](../android/Manifest.permission.md)
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `cameraId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The unique identifier of the camera device to open This value cannot be `null`. |
 | `callback` | [CameraDevice.StateCallback](../android/hardware/camera2/CameraDevice.StateCallback.md): The callback which is invoked once the camera is opened This value cannot be `null`. |
-| `handler` | [Handler](../android/os/Handler.md)?: The handler on which the callback should be invoked, or `null` to use the current thread's [looper](../android/os/Looper.md). |
+| `handler` | [Handler](../android.os/Handler.md)?: The handler on which the callback should be invoked, or `null` to use the current thread's [looper](../android.os/Looper.md). |
 | --- | --- |
 
 | Exceptions ||
 |--------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `android.hardware.camera2.CameraAccessException` | if the camera is disabled by device policy, has been disconnected, is being used by a higher-priority camera API client, or the device has reached its maximal resource and cannot open this camera device. |
-| `java.lang.IllegalArgumentException` | if cameraId or the callback was null, or the cameraId does not match any currently or previously available camera device returned by [getCameraIdList](../android/hardware/camera2/CameraManager.md)). |
+| `java.lang.IllegalArgumentException` | if cameraId or the callback was null, or the cameraId does not match any currently or previously available camera device returned by [getCameraIdList](CameraManager.md)). |
 | `java.lang.SecurityException` | if the application does not have permission to access the camera |
 | --- | --- |
 
 **See Also**
 
-- [#getCameraIdList](../android/hardware/camera2/CameraManager.md))
-- [android.app.admin.DevicePolicyManager#setCameraDisabled](../android/app/admin/DevicePolicyManager.md)) 
+- [#getCameraIdList](CameraManager.md))
+- [android.app.admin.DevicePolicyManager#setCameraDisabled](../android.app.admin/DevicePolicyManager.md)) 
 
 ### openCamera
 
@@ -353,7 +353,7 @@ fun openCamera(
 
 Open a connection to a camera with the given ID.
 
-The behavior of this method matches that of [openCamera(java.lang.String,android.hardware.camera2.CameraDevice.StateCallback,android.os.Handler)](../android/hardware/camera2/CameraManager.md)), except that it uses [java.util.concurrent.Executor](../java/util/concurrent/Executor.md) as an argument instead of [android.os.Handler](../android/os/Handler.md).
+The behavior of this method matches that of [openCamera(java.lang.String,android.hardware.camera2.CameraDevice.StateCallback,android.os.Handler)](CameraManager.md)), except that it uses [java.util.concurrent.Executor](../java.util.concurrent/Executor.md) as an argument instead of [android.os.Handler](../android.os/Handler.md).
 
 Do note that typically callbacks are expected to be dispatched by the executor in a single thread. If the executor uses two or more threads to dispatch callbacks, then clients must ensure correct synchronization and must also be able to handle potentially different ordering of the incoming callbacks.
 
@@ -362,7 +362,7 @@ Requires [android.Manifest.permission#CAMERA](../android/Manifest.permission.md)
 | Parameters ||
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `cameraId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The unique identifier of the camera device to open This value cannot be `null`. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): The executor which will be used when invoking the callback. This value cannot be `null`. Callback and listener events are dispatched through this [Executor](../java/util/concurrent/Executor.md), providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use [Context.getMainExecutor()](../android/content/Context.md)). Otherwise, provide an [Executor](../java/util/concurrent/Executor.md) that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor which will be used when invoking the callback. This value cannot be `null`. Callback and listener events are dispatched through this [Executor](../java.util.concurrent/Executor.md), providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use [Context.getMainExecutor()](../android.content/Context.md)). Otherwise, provide an [Executor](../java.util.concurrent/Executor.md) that dispatches to an appropriate thread. |
 | `callback` | [CameraDevice.StateCallback](../android/hardware/camera2/CameraDevice.StateCallback.md): The callback which is invoked once the camera is opened This value cannot be `null`. |
 | --- | --- |
 
@@ -375,8 +375,8 @@ Requires [android.Manifest.permission#CAMERA](../android/Manifest.permission.md)
 
 **See Also**
 
-- [#getCameraIdList](../android/hardware/camera2/CameraManager.md))
-- [android.app.admin.DevicePolicyManager#setCameraDisabled](../android/app/admin/DevicePolicyManager.md)) 
+- [#getCameraIdList](CameraManager.md))
+- [android.app.admin.DevicePolicyManager#setCameraDisabled](../android.app.admin/DevicePolicyManager.md)) 
 
 ### registerAvailabilityCallback
 
@@ -402,7 +402,7 @@ Since this callback will be registered with the camera service, remember to unre
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `callback` | [CameraManager.AvailabilityCallback](../android/hardware/camera2/CameraManager.AvailabilityCallback.md): the new callback to send camera availability notices to This value cannot be `null`. |
-| `handler` | [Handler](../android/os/Handler.md)?: The handler on which the callback should be invoked, or `null` to use the current thread's [looper](../android/os/Looper.md). |
+| `handler` | [Handler](../android.os/Handler.md)?: The handler on which the callback should be invoked, or `null` to use the current thread's [looper](../android.os/Looper.md). |
 
 | Exceptions ||
 |--------------------------------------|----------------------------------------------------------------|
@@ -421,7 +421,7 @@ fun registerAvailabilityCallback(
 
 Register a callback to be notified about camera device availability.
 
-The behavior of this method matches that of [registerAvailabilityCallback(android.hardware.camera2.CameraManager.AvailabilityCallback,android.os.Handler)](../android/hardware/camera2/CameraManager.md)), except that it uses [java.util.concurrent.Executor](../java/util/concurrent/Executor.md) as an argument instead of [android.os.Handler](../android/os/Handler.md).
+The behavior of this method matches that of [registerAvailabilityCallback(android.hardware.camera2.CameraManager.AvailabilityCallback,android.os.Handler)](CameraManager.md)), except that it uses [java.util.concurrent.Executor](../java.util.concurrent/Executor.md) as an argument instead of [android.os.Handler](../android.os/Handler.md).
 
 Note: If the order between some availability callbacks matters, the implementation of the executor should handle those callbacks in the same thread to maintain the callbacks' order. Some examples are:
 
@@ -430,7 +430,7 @@ Note: If the order between some availability callbacks matters, the implementati
 
 | Parameters ||
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): The executor which will be used to invoke the callback. This value cannot be `null`. Callback and listener events are dispatched through this [Executor](../java/util/concurrent/Executor.md), providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use [Context.getMainExecutor()](../android/content/Context.md)). Otherwise, provide an [Executor](../java/util/concurrent/Executor.md) that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor which will be used to invoke the callback. This value cannot be `null`. Callback and listener events are dispatched through this [Executor](../java.util.concurrent/Executor.md), providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use [Context.getMainExecutor()](../android.content/Context.md)). Otherwise, provide an [Executor](../java.util.concurrent/Executor.md) that dispatches to an appropriate thread. |
 | `callback` | [CameraManager.AvailabilityCallback](../android/hardware/camera2/CameraManager.AvailabilityCallback.md): the new callback to send camera availability notices to This value cannot be `null`. |
 
 | Exceptions ||
@@ -459,7 +459,7 @@ Since this callback will be registered with the camera service, remember to unre
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `callback` | [CameraManager.TorchCallback](../android/hardware/camera2/CameraManager.TorchCallback.md): The new callback to send torch mode status to This value cannot be `null`. |
-| `handler` | [Handler](../android/os/Handler.md)?: The handler on which the callback should be invoked, or `null` to use the current thread's [looper](../android/os/Looper.md). |
+| `handler` | [Handler](../android.os/Handler.md)?: The handler on which the callback should be invoked, or `null` to use the current thread's [looper](../android.os/Looper.md). |
 
 | Exceptions ||
 |--------------------------------------|----------------------------------------------------------------|
@@ -478,11 +478,11 @@ fun registerTorchCallback(
 
 Register a callback to be notified about torch mode status.
 
-The behavior of this method matches that of [registerTorchCallback(android.hardware.camera2.CameraManager.TorchCallback,android.os.Handler)](../android/hardware/camera2/CameraManager.md)), except that it uses [java.util.concurrent.Executor](../java/util/concurrent/Executor.md) as an argument instead of [android.os.Handler](../android/os/Handler.md).
+The behavior of this method matches that of [registerTorchCallback(android.hardware.camera2.CameraManager.TorchCallback,android.os.Handler)](CameraManager.md)), except that it uses [java.util.concurrent.Executor](../java.util.concurrent/Executor.md) as an argument instead of [android.os.Handler](../android.os/Handler.md).
 
 | Parameters ||
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): The executor which will be used to invoke the callback This value cannot be `null`. Callback and listener events are dispatched through this [Executor](../java/util/concurrent/Executor.md), providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use [Context.getMainExecutor()](../android/content/Context.md)). Otherwise, provide an [Executor](../java/util/concurrent/Executor.md) that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor which will be used to invoke the callback This value cannot be `null`. Callback and listener events are dispatched through this [Executor](../java.util.concurrent/Executor.md), providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use [Context.getMainExecutor()](../android.content/Context.md)). Otherwise, provide an [Executor](../java.util.concurrent/Executor.md) that dispatches to an appropriate thread. |
 | `callback` | [CameraManager.TorchCallback](../android/hardware/camera2/CameraManager.TorchCallback.md): The new callback to send torch mode status to This value cannot be `null`. |
 
 | Exceptions ||
@@ -502,9 +502,9 @@ fun setTorchMode(
 
 Set the flash unit's torch mode of the camera of the given ID without opening the camera device.
 
-Use [getCameraIdList](../android/hardware/camera2/CameraManager.md)) to get the list of available camera devices and use [getCameraCharacteristics](../android/hardware/camera2/CameraManager.md)) to check whether the camera device has a flash unit. Note that even if a camera device has a flash unit, turning on the torch mode may fail if the camera device or other camera resources needed to turn on the torch mode are in use.
+Use [getCameraIdList](CameraManager.md)) to get the list of available camera devices and use [getCameraCharacteristics](CameraManager.md)) to check whether the camera device has a flash unit. Note that even if a camera device has a flash unit, turning on the torch mode may fail if the camera device or other camera resources needed to turn on the torch mode are in use.
 
-If [setTorchMode](../android/hardware/camera2/CameraManager.md)) is called to turn on or off the torch mode successfully, [CameraManager.TorchCallback.onTorchModeChanged](../android/hardware/camera2/CameraManager.TorchCallback.md)) will be invoked. However, even if turning on the torch mode is successful, the application does not have the exclusive ownership of the flash unit or the camera device. The torch mode will be turned off and becomes unavailable when the camera device that the flash unit belongs to becomes unavailable or when other camera resources to keep the torch on become unavailable ( [CameraManager.TorchCallback.onTorchModeUnavailable](../android/hardware/camera2/CameraManager.TorchCallback.md)) will be invoked). Also, other applications are free to call [setTorchMode](../android/hardware/camera2/CameraManager.md)) to turn off the torch mode ( [CameraManager.TorchCallback.onTorchModeChanged](../android/hardware/camera2/CameraManager.TorchCallback.md)) will be invoked). If the latest application that turned on the torch mode exits, the torch mode will be turned off.
+If [setTorchMode](CameraManager.md)) is called to turn on or off the torch mode successfully, [CameraManager.TorchCallback.onTorchModeChanged](../android/hardware/camera2/CameraManager.TorchCallback.md)) will be invoked. However, even if turning on the torch mode is successful, the application does not have the exclusive ownership of the flash unit or the camera device. The torch mode will be turned off and becomes unavailable when the camera device that the flash unit belongs to becomes unavailable or when other camera resources to keep the torch on become unavailable ( [CameraManager.TorchCallback.onTorchModeUnavailable](../android/hardware/camera2/CameraManager.TorchCallback.md)) will be invoked). Also, other applications are free to call [setTorchMode](CameraManager.md)) to turn off the torch mode ( [CameraManager.TorchCallback.onTorchModeChanged](../android/hardware/camera2/CameraManager.TorchCallback.md)) will be invoked). If the latest application that turned on the torch mode exits, the torch mode will be turned off.
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -513,7 +513,7 @@ If [setTorchMode](../android/hardware/camera2/CameraManager.md)) is called to tu
 
 | Exceptions ||
 |--------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `android.hardware.camera2.CameraAccessException` | if it failed to access the flash unit. [CameraAccessException.CAMERA_IN_USE](../android/hardware/camera2/CameraAccessException.md) will be thrown if the camera device is in use. [CameraAccessException.MAX_CAMERAS_IN_USE](../android/hardware/camera2/CameraAccessException.md) will be thrown if other camera resources needed to turn on the torch mode are in use. [CameraAccessException.CAMERA_DISCONNECTED](../android/hardware/camera2/CameraAccessException.md) will be thrown if camera service is not available. |
+| `android.hardware.camera2.CameraAccessException` | if it failed to access the flash unit. [CameraAccessException.CAMERA_IN_USE](CameraAccessException.md) will be thrown if the camera device is in use. [CameraAccessException.MAX_CAMERAS_IN_USE](CameraAccessException.md) will be thrown if other camera resources needed to turn on the torch mode are in use. [CameraAccessException.CAMERA_DISCONNECTED](CameraAccessException.md) will be thrown if camera service is not available. |
 | `java.lang.IllegalArgumentException` | if cameraId was null, cameraId doesn't match any currently or previously available camera device, or the camera device doesn't have a flash unit. |
 
 ### turnOnTorchWithStrengthLevel
@@ -529,23 +529,23 @@ fun turnOnTorchWithStrengthLevel(
 
 Set the brightness level of the flashlight associated with the given cameraId in torch mode. If the torch is OFF and torchStrength is \>= 1, torch will turn ON with the strength level specified in torchStrength.
 
-Use [android.hardware.camera2.CameraCharacteristics#FLASH_INFO_STRENGTH_MAXIMUM_LEVEL](../android/hardware/camera2/CameraCharacteristics.md) to check whether the camera device supports flash unit strength control or not. If this value is greater than 1, applications can call this API to control the flashlight brightness level.
+Use [android.hardware.camera2.CameraCharacteristics#FLASH_INFO_STRENGTH_MAXIMUM_LEVEL](CameraCharacteristics.md) to check whether the camera device supports flash unit strength control or not. If this value is greater than 1, applications can call this API to control the flashlight brightness level.
 
-If [turnOnTorchWithStrengthLevel](../android/hardware/camera2/CameraManager.md)) is called to change the brightness level of the flash unit [CameraManager.TorchCallback.onTorchStrengthLevelChanged](../android/hardware/camera2/CameraManager.TorchCallback.md)) will be invoked. If the new desired strength level is same as previously set level, then this callback will not be invoked. If the torch is OFF and [turnOnTorchWithStrengthLevel](../android/hardware/camera2/CameraManager.md)) is called with level \>= 1, the torch will be turned ON with that brightness level. In this case [CameraManager.TorchCallback.onTorchModeChanged](../android/hardware/camera2/CameraManager.TorchCallback.md)) will also be invoked.
+If [turnOnTorchWithStrengthLevel](CameraManager.md)) is called to change the brightness level of the flash unit [CameraManager.TorchCallback.onTorchStrengthLevelChanged](../android/hardware/camera2/CameraManager.TorchCallback.md)) will be invoked. If the new desired strength level is same as previously set level, then this callback will not be invoked. If the torch is OFF and [turnOnTorchWithStrengthLevel](CameraManager.md)) is called with level \>= 1, the torch will be turned ON with that brightness level. In this case [CameraManager.TorchCallback.onTorchModeChanged](../android/hardware/camera2/CameraManager.TorchCallback.md)) will also be invoked.
 
-When the torch is turned OFF via [setTorchMode](../android/hardware/camera2/CameraManager.md)), the flashlight brightness level will reset to default value [android.hardware.camera2.CameraCharacteristics#FLASH_INFO_STRENGTH_DEFAULT_LEVEL](../android/hardware/camera2/CameraCharacteristics.md) In this case the [CameraManager.TorchCallback.onTorchStrengthLevelChanged](../android/hardware/camera2/CameraManager.TorchCallback.md)) will not be invoked.
+When the torch is turned OFF via [setTorchMode](CameraManager.md)), the flashlight brightness level will reset to default value [android.hardware.camera2.CameraCharacteristics#FLASH_INFO_STRENGTH_DEFAULT_LEVEL](CameraCharacteristics.md) In this case the [CameraManager.TorchCallback.onTorchStrengthLevelChanged](../android/hardware/camera2/CameraManager.TorchCallback.md)) will not be invoked.
 
-If torch is enabled via [setTorchMode](../android/hardware/camera2/CameraManager.md)) after calling [turnOnTorchWithStrengthLevel](../android/hardware/camera2/CameraManager.md)) with level N then the flash unit will have the brightness level N. Since multiple applications are free to call [setTorchMode](../android/hardware/camera2/CameraManager.md)), when the latest application that turned ON the torch mode exits, the torch mode will be turned OFF and in this case the brightness level will reset to default level.
+If torch is enabled via [setTorchMode](CameraManager.md)) after calling [turnOnTorchWithStrengthLevel](CameraManager.md)) with level N then the flash unit will have the brightness level N. Since multiple applications are free to call [setTorchMode](CameraManager.md)), when the latest application that turned ON the torch mode exits, the torch mode will be turned OFF and in this case the brightness level will reset to default level.
 
 | Parameters ||
 |-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `cameraId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The unique identifier of the camera device that the flash unit belongs to. This value cannot be `null`. |
-| `torchStrength` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The desired brightness level to be set for the flash unit in the range 1 to [android.hardware.camera2.CameraCharacteristics#FLASH_INFO_STRENGTH_MAXIMUM_LEVEL](../android/hardware/camera2/CameraCharacteristics.md). |
+| `torchStrength` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The desired brightness level to be set for the flash unit in the range 1 to [android.hardware.camera2.CameraCharacteristics#FLASH_INFO_STRENGTH_MAXIMUM_LEVEL](CameraCharacteristics.md). |
 
 | Exceptions ||
 |--------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `android.hardware.camera2.CameraAccessException` | if it failed to access the flash unit. [CameraAccessException.CAMERA_IN_USE](../android/hardware/camera2/CameraAccessException.md) will be thrown if the camera device is in use. [CameraAccessException.MAX_CAMERAS_IN_USE](../android/hardware/camera2/CameraAccessException.md) will be thrown if other camera resources needed to turn on the torch mode are in use. [CameraAccessException.CAMERA_DISCONNECTED](../android/hardware/camera2/CameraAccessException.md) will be thrown if camera service is not available. |
-| `java.lang.IllegalArgumentException` | if cameraId was null, cameraId doesn't match any currently or previously available camera device, the camera device doesn't have a flash unit or if torchStrength is not within the range i.e. is greater than the maximum level [android.hardware.camera2.CameraCharacteristics#FLASH_INFO_STRENGTH_MAXIMUM_LEVEL](../android/hardware/camera2/CameraCharacteristics.md) or \<= 0. |
+| `android.hardware.camera2.CameraAccessException` | if it failed to access the flash unit. [CameraAccessException.CAMERA_IN_USE](CameraAccessException.md) will be thrown if the camera device is in use. [CameraAccessException.MAX_CAMERAS_IN_USE](CameraAccessException.md) will be thrown if other camera resources needed to turn on the torch mode are in use. [CameraAccessException.CAMERA_DISCONNECTED](CameraAccessException.md) will be thrown if camera service is not available. |
+| `java.lang.IllegalArgumentException` | if cameraId was null, cameraId doesn't match any currently or previously available camera device, the camera device doesn't have a flash unit or if torchStrength is not within the range i.e. is greater than the maximum level [android.hardware.camera2.CameraCharacteristics#FLASH_INFO_STRENGTH_MAXIMUM_LEVEL](CameraCharacteristics.md) or \<= 0. |
 
 ### unregisterAvailabilityCallback
 

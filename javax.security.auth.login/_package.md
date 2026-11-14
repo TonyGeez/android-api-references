@@ -4,5 +4,5 @@
 
 ## Exceptions
 
-| [LoginException](../javax/security/auth/login/LoginException.md) | This is the basic login exception. |
+| [LoginException](LoginException.md) | This is the basic login exception. |
 | --- | --- |

@@ -4,7 +4,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 
 # PathInterpolator
 
-Kotlin| [Java](../android/view/animation/PathInterpolator.md) 
+Kotlin| [Java](PathInterpolator.md) 
 | --- | --- |
 
 ```
@@ -13,8 +13,8 @@ open class PathInterpolator : BaseInterpolator
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.view.animation.BaseInterpolator](../android/view/animation/BaseInterpolator.md) ||
-| | ↳ | [android.view.animation.PathInterpolator](../android/view/animation/PathInterpolator.md) |
+| ↳ | [android.view.animation.BaseInterpolator](BaseInterpolator.md) ||
+| | ↳ | [android.view.animation.PathInterpolator](PathInterpolator.md) |
 
 An interpolator that can traverse a Path that extends from`Point``(0, 0)`to`(1, 1)`. The x coordinate along the`Path`is the input value and the output is the y coordinate of the line at that point. This means that the Path must conform to a function`y = f(x)`.
 
@@ -36,14 +36,14 @@ Path path = new Path();
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [PathInterpolator](../android/view/animation/PathInterpolator.md))`(`context:` ` [Context](../android/content/Context.md)!`, `attrs:` ` [AttributeSet](../android/util/AttributeSet.md)!`)` <br /> |
-| [PathInterpolator](../android/view/animation/PathInterpolator.md))`(`path:` ` [Path](../android/graphics/Path.md)`)` Create an interpolator for an arbitrary`Path`. |
-| [PathInterpolator](../android/view/animation/PathInterpolator.md))`(`controlX:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `controlY:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Create an interpolator for a quadratic Bezier curve. |
-| [PathInterpolator](../android/view/animation/PathInterpolator.md))`(`controlX1:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `controlY1:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `controlX2:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `controlY2:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Create an interpolator for a cubic Bezier curve. |
+| [PathInterpolator](PathInterpolator.md))`(`context:` ` [Context](../android.content/Context.md)!`, `attrs:` ` [AttributeSet](../android.util/AttributeSet.md)!`)` <br /> |
+| [PathInterpolator](PathInterpolator.md))`(`path:` ` [Path](../android.graphics/Path.md)`)` Create an interpolator for an arbitrary`Path`. |
+| [PathInterpolator](PathInterpolator.md))`(`controlX:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `controlY:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Create an interpolator for a quadratic Bezier curve. |
+| [PathInterpolator](PathInterpolator.md))`(`controlX1:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `controlY1:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `controlX2:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `controlY2:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Create an interpolator for a cubic Bezier curve. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getInterpolation](../android/view/animation/PathInterpolator.md))`(`t:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Using the line in the Path in this interpolator that can be described as`y = f(x)`, finds the y coordinate of the line given`t`as the x coordinate. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getInterpolation](PathInterpolator.md))`(`t:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Using the line in the Path in this interpolator that can be described as`y = f(x)`, finds the y coordinate of the line given`t`as the x coordinate. |
 
 ## Public constructors
 
@@ -69,7 +69,7 @@ Create an interpolator for an arbitrary`Path`. The`Path`must begin at`(0, 0)`and
 
 | Parameters ||
 |--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `path` | [Path](../android/graphics/Path.md):The`Path`to use to make the line representing the interpolator. This value cannot be`null`. |
+| `path` | [Path](../android.graphics/Path.md):The`Path`to use to make the line representing the interpolator. This value cannot be`null`. |
 
 ### PathInterpolator
 
@@ -133,4 +133,4 @@ Using the line in the Path in this interpolator that can be described as`y = f(x
 
 **See Also**
 
-- [android.view.animation.Interpolator#getInterpolation(float)](../android/animation/TimeInterpolator.md))
+- [android.view.animation.Interpolator#getInterpolation(float)](../android.animation/TimeInterpolator.md))

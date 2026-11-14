@@ -11,21 +11,21 @@ open class StringIndexOutOfBoundsException : IndexOutOfBoundsException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
-| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) |||
+| | ↳ | [java.lang.Exception](Exception.md) ||||
+| | | ↳ | [java.lang.RuntimeException](RuntimeException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.IndexOutOfBoundsException](../java/lang/IndexOutOfBoundsException.md) ||
-| | | | | ↳ | [java.lang.StringIndexOutOfBoundsException](../java/lang/StringIndexOutOfBoundsException.md) |
+| | | | ↳ | [java.lang.IndexOutOfBoundsException](IndexOutOfBoundsException.md) ||
+| | | | | ↳ | [java.lang.StringIndexOutOfBoundsException](StringIndexOutOfBoundsException.md) |
 
-Thrown by`String`methods to indicate that an index is either negative or greater than the size of the string. For some methods such as the [charAt](../java/lang/String.md))method, this exception also is thrown when the index is equal to the size of the string.
+Thrown by`String`methods to indicate that an index is either negative or greater than the size of the string. For some methods such as the [charAt](String.md))method, this exception also is thrown when the index is equal to the size of the string.
 
 ## Summary
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [StringIndexOutOfBoundsException](../java/lang/StringIndexOutOfBoundsException.md))`()` Constructs a`StringIndexOutOfBoundsException`with no detail message. |
-| [StringIndexOutOfBoundsException](../java/lang/StringIndexOutOfBoundsException.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a new`StringIndexOutOfBoundsException`class with an argument indicating the illegal index. |
-| [StringIndexOutOfBoundsException](../java/lang/StringIndexOutOfBoundsException.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a`StringIndexOutOfBoundsException`with the specified detail message. |
+| [StringIndexOutOfBoundsException](StringIndexOutOfBoundsException.md))`()` Constructs a`StringIndexOutOfBoundsException`with no detail message. |
+| [StringIndexOutOfBoundsException](StringIndexOutOfBoundsException.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a new`StringIndexOutOfBoundsException`class with an argument indicating the illegal index. |
+| [StringIndexOutOfBoundsException](StringIndexOutOfBoundsException.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a`StringIndexOutOfBoundsException`with the specified detail message. |
 
 ## Public constructors
 

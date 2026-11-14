@@ -4,7 +4,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 
 # SigningInfoException
 
-Kotlin| [Java](../android/content/pm/SigningInfoException.md) 
+Kotlin| [Java](SigningInfoException.md) 
 | --- | --- |
 
 ```
@@ -14,8 +14,8 @@ open class SigningInfoException : Exception
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||
-| | | ↳ | [android.content.pm.SigningInfoException](../android/content/pm/SigningInfoException.md) |
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) ||
+| | | ↳ | [android.content.pm.SigningInfoException](SigningInfoException.md) |
 | --- | --- | --- | --- |
 
 Indicates an error when verifying the [app signing](https://source.android.com/docs/security/features/apksigning) information.
@@ -24,7 +24,7 @@ Indicates an error when verifying the [app signing](https://source.android.com/d
 
 | Public methods ||
 |--------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCode](../android/content/pm/SigningInfoException.md))`()` Returns a code representing the cause, in one of the installation parse return codes in [PackageManager](../android/content/pm/PackageManager.md). |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getCode](SigningInfoException.md))`()` Returns a code representing the cause, in one of the installation parse return codes in [PackageManager](PackageManager.md). |
 
 ## Public methods
 
@@ -36,4 +36,4 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 open fun getCode(): Int
 ```
 
-Returns a code representing the cause, in one of the installation parse return codes in [PackageManager](../android/content/pm/PackageManager.md).
+Returns a code representing the cause, in one of the installation parse return codes in [PackageManager](PackageManager.md).

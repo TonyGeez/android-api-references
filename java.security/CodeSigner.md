@@ -10,7 +10,7 @@ class CodeSigner : Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.CodeSigner](../java/security/CodeSigner.md) |
+| ↳ | [java.security.CodeSigner](CodeSigner.md) |
 
 This class encapsulates information about a code signer. It is immutable.
 
@@ -18,16 +18,16 @@ This class encapsulates information about a code signer. It is immutable.
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [CodeSigner](../java/security/CodeSigner.md))`(`signerCertPath:` ` [CertPath](../java/security/cert/CertPath.md)!`, `timestamp:` ` [Timestamp](../java/security/Timestamp.md)!`)` Constructs a CodeSigner object. |
+| [CodeSigner](CodeSigner.md))`(`signerCertPath:` ` [CertPath](../java.security.cert/CertPath.md)!`, `timestamp:` ` [Timestamp](Timestamp.md)!`)` Constructs a CodeSigner object. |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/security/CodeSigner.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Tests for equality between the specified object and this code signer. |
-| [CertPath](../java/security/cert/CertPath.md)! | [getSignerCertPath](../java/security/CodeSigner.md))`()` Returns the signer's certificate path. |
-| [Timestamp](../java/security/Timestamp.md)! | [getTimestamp](../java/security/CodeSigner.md))`()` Returns the signature timestamp. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](CodeSigner.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Tests for equality between the specified object and this code signer. |
+| [CertPath](../java.security.cert/CertPath.md)! | [getSignerCertPath](CodeSigner.md))`()` Returns the signer's certificate path. |
+| [Timestamp](Timestamp.md)! | [getTimestamp](CodeSigner.md))`()` Returns the signature timestamp. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/security/CodeSigner.md))`()` Returns the hash code value for this code signer. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/security/CodeSigner.md))`()` Returns a string describing this code signer. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](CodeSigner.md))`()` Returns the hash code value for this code signer. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](CodeSigner.md))`()` Returns a string describing this code signer. |
 
 ## Public constructors
 
@@ -45,8 +45,8 @@ Constructs a CodeSigner object.
 
 | Parameters ||
 |------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `signerCertPath` | [CertPath](../java/security/cert/CertPath.md)!:The signer's certificate path. It must not be`null`. |
-| `timestamp` | [Timestamp](../java/security/Timestamp.md)!:A signature timestamp. If`null`then no timestamp was generated for the signature. |
+| `signerCertPath` | [CertPath](../java.security.cert/CertPath.md)!:The signer's certificate path. It must not be`null`. |
+| `timestamp` | [Timestamp](Timestamp.md)!:A signature timestamp. If`null`then no timestamp was generated for the signature. |
 
 | Exceptions ||
 |----------------------------------|-----------------------------|
@@ -84,7 +84,7 @@ Returns the signer's certificate path.
 
 | Return ||
 |-----------------------------------------------------------------------------------------|---------------------|
-| [CertPath](../java/security/cert/CertPath.md)! | A certificate path. |
+| [CertPath](../java.security.cert/CertPath.md)! | A certificate path. |
 
 ### getTimestamp
 
@@ -98,7 +98,7 @@ Returns the signature timestamp.
 
 | Return ||
 |--------------------------------------------------------------------------------------|-------------------------------------------|
-| [Timestamp](../java/security/Timestamp.md)! | The timestamp or`null`if none is present. |
+| [Timestamp](Timestamp.md)! | The timestamp or`null`if none is present. |
 
 ### hashCode
 

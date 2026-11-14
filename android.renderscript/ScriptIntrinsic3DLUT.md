@@ -5,7 +5,7 @@ Deprecated in [API level 31](https://developer.android.com/guide/topics/manifest
 
 # ScriptIntrinsic3DLUT
 
-Kotlin| [Java](../android/renderscript/ScriptIntrinsic3DLUT.md) 
+Kotlin| [Java](ScriptIntrinsic3DLUT.md) 
 | --- | --- |
 
 ```
@@ -14,11 +14,11 @@ class ScriptIntrinsic3DLUT : ScriptIntrinsic
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.renderscript.BaseObj](../android/renderscript/BaseObj.md) ||||
-| | ↳ | [android.renderscript.Script](../android/renderscript/Script.md) |||
-| | | ↳ | [android.renderscript.ScriptIntrinsic](../android/renderscript/ScriptIntrinsic.md) ||
+| ↳ | [android.renderscript.BaseObj](BaseObj.md) ||||
+| | ↳ | [android.renderscript.Script](Script.md) |||
+| | | ↳ | [android.renderscript.ScriptIntrinsic](ScriptIntrinsic.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.renderscript.ScriptIntrinsic3DLUT](../android/renderscript/ScriptIntrinsic3DLUT.md) |
+| | | | ↳ | [android.renderscript.ScriptIntrinsic3DLUT](ScriptIntrinsic3DLUT.md) |
 
 | **This class was deprecated in API level 31.**
 |
@@ -30,12 +30,12 @@ Intrinsic for converting RGB to RGBA by using a 3D lookup table. The incoming r,
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [ScriptIntrinsic3DLUT](../android/renderscript/ScriptIntrinsic3DLUT.md)! | [create](../android/renderscript/ScriptIntrinsic3DLUT.md))`(`rs:` ` [RenderScript](../android/renderscript/RenderScript.md)!`, `e:` ` [Element](../android/renderscript/Element.md)!`)` Supported elements types are [Element.U8_4](../android/renderscript/Element.md))The defaults tables are identity. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](../android/renderscript/ScriptIntrinsic3DLUT.md))`(`ain:` ` [Allocation](../android/renderscript/Allocation.md)!`, `aout:` ` [Allocation](../android/renderscript/Allocation.md)!`)` Invoke the kernel and apply the lookup to each cell of ain and copy to aout. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](../android/renderscript/ScriptIntrinsic3DLUT.md))`(`ain:` ` [Allocation](../android/renderscript/Allocation.md)!`, `aout:` ` [Allocation](../android/renderscript/Allocation.md)!`, `opt:` ` [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!`)` Invoke the kernel and apply the lookup to each cell of ain and copy to aout. |
+| static [ScriptIntrinsic3DLUT](ScriptIntrinsic3DLUT.md)! | [create](ScriptIntrinsic3DLUT.md))`(`rs:` ` [RenderScript](RenderScript.md)!`, `e:` ` [Element](Element.md)!`)` Supported elements types are [Element.U8_4](Element.md))The defaults tables are identity. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](ScriptIntrinsic3DLUT.md))`(`ain:` ` [Allocation](Allocation.md)!`, `aout:` ` [Allocation](Allocation.md)!`)` Invoke the kernel and apply the lookup to each cell of ain and copy to aout. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [forEach](ScriptIntrinsic3DLUT.md))`(`ain:` ` [Allocation](Allocation.md)!`, `aout:` ` [Allocation](Allocation.md)!`, `opt:` ` [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!`)` Invoke the kernel and apply the lookup to each cell of ain and copy to aout. |
 | --- | --- |
-| [Script.KernelID](../android/renderscript/Script.KernelID.md)! | [getKernelID](../android/renderscript/ScriptIntrinsic3DLUT.md))`()` Get a KernelID for this intrinsic kernel. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLUT](../android/renderscript/ScriptIntrinsic3DLUT.md))`(`lut:` ` [Allocation](../android/renderscript/Allocation.md)!`)` Sets the [android.renderscript.Allocation](../android/renderscript/Allocation.md) to be used as the lookup table. |
+| [Script.KernelID](../android/renderscript/Script.KernelID.md)! | [getKernelID](ScriptIntrinsic3DLUT.md))`()` Get a KernelID for this intrinsic kernel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLUT](ScriptIntrinsic3DLUT.md))`(`lut:` ` [Allocation](Allocation.md)!`)` Sets the [android.renderscript.Allocation](Allocation.md) to be used as the lookup table. |
 
 ## Public methods
 
@@ -52,16 +52,16 @@ static fun create(
 
 **Deprecated:** *Deprecated in Java.*
 
-Supported elements types are [Element.U8_4](../android/renderscript/Element.md))The defaults tables are identity.
+Supported elements types are [Element.U8_4](Element.md))The defaults tables are identity.
 
 | Parameters ||
 |------|------------------------------------------------------------------------------------------------------------------------------|
-| `rs` | [RenderScript](../android/renderscript/RenderScript.md)!:The RenderScript context |
-| `e` | [Element](../android/renderscript/Element.md)!:Element type for intputs and outputs |
+| `rs` | [RenderScript](RenderScript.md)!:The RenderScript context |
+| `e` | [Element](Element.md)!:Element type for intputs and outputs |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------|----------------------|
-| [ScriptIntrinsic3DLUT](../android/renderscript/ScriptIntrinsic3DLUT.md)! | ScriptIntrinsic3DLUT |
+| [ScriptIntrinsic3DLUT](ScriptIntrinsic3DLUT.md)! | ScriptIntrinsic3DLUT |
 
 ### forEach
 
@@ -80,8 +80,8 @@ Invoke the kernel and apply the lookup to each cell of ain and copy to aout.
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------------------|
-| `ain` | [Allocation](../android/renderscript/Allocation.md)!:Input allocation |
-| `aout` | [Allocation](../android/renderscript/Allocation.md)!:Output allocation |
+| `ain` | [Allocation](Allocation.md)!:Input allocation |
+| `aout` | [Allocation](Allocation.md)!:Output allocation |
 
 ### forEach
 
@@ -102,8 +102,8 @@ Invoke the kernel and apply the lookup to each cell of ain and copy to aout.
 
 | Parameters ||
 |--------|---------------------------------------------------------------------------------------------------------------------------------------------|
-| `ain` | [Allocation](../android/renderscript/Allocation.md)!:Input allocation |
-| `aout` | [Allocation](../android/renderscript/Allocation.md)!:Output allocation |
+| `ain` | [Allocation](Allocation.md)!:Input allocation |
+| `aout` | [Allocation](Allocation.md)!:Output allocation |
 | `opt` | [Script.LaunchOptions](../android/renderscript/Script.LaunchOptions.md)!:Launch options for kernel |
 | --- | --- |
 
@@ -133,4 +133,4 @@ fun setLUT(lut: Allocation!): Unit
 
 **Deprecated:** *Deprecated in Java.*
 
-Sets the [android.renderscript.Allocation](../android/renderscript/Allocation.md) to be used as the lookup table. The lookup table must use the same [android.renderscript.Element](../android/renderscript/Element.md) as the intrinsic.
+Sets the [android.renderscript.Allocation](Allocation.md) to be used as the lookup table. The lookup table must use the same [android.renderscript.Element](Element.md) as the intrinsic.

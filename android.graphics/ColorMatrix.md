@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # ColorMatrix
 
-Kotlin| [Java](../android/graphics/ColorMatrix.md) 
+Kotlin| [Java](ColorMatrix.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class ColorMatrix
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.graphics.ColorMatrix](../android/graphics/ColorMatrix.md) |
+| ↳ | [android.graphics.ColorMatrix](ColorMatrix.md) |
 
 4x5 matrix for transforming the color and alpha components of a Bitmap. The matrix can be passed as single array, and is treated as follows: 
 
@@ -50,29 +50,29 @@ The sample ColorMatrix below inverts incoming colors by scaling each channel by`
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ColorMatrix](../android/graphics/ColorMatrix.md))`()` Create a new colormatrix initialized to identity (as if reset() had been called). |
-| [ColorMatrix](../android/graphics/ColorMatrix.md))`(`src:` ` [ColorMatrix](../android/graphics/ColorMatrix.md)!`)` Create a new colormatrix initialized with the specified colormatrix. |
-| [ColorMatrix](../android/graphics/ColorMatrix.md))`(`src:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`)` Create a new colormatrix initialized with the specified array of values. |
+| [ColorMatrix](ColorMatrix.md))`()` Create a new colormatrix initialized to identity (as if reset() had been called). |
+| [ColorMatrix](ColorMatrix.md))`(`src:` ` [ColorMatrix](ColorMatrix.md)!`)` Create a new colormatrix initialized with the specified colormatrix. |
+| [ColorMatrix](ColorMatrix.md))`(`src:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`)` Create a new colormatrix initialized with the specified array of values. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/graphics/ColorMatrix.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
-| [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)! | [getArray](../android/graphics/ColorMatrix.md))`()` Return the array of floats representing this colormatrix. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [postConcat](../android/graphics/ColorMatrix.md))`(`postmatrix:` ` [ColorMatrix](../android/graphics/ColorMatrix.md)!`)` Concat this colormatrix with the specified postmatrix. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](ColorMatrix.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
+| [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)! | [getArray](ColorMatrix.md))`()` Return the array of floats representing this colormatrix. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [postConcat](ColorMatrix.md))`(`postmatrix:` ` [ColorMatrix](ColorMatrix.md)!`)` Concat this colormatrix with the specified postmatrix. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [preConcat](../android/graphics/ColorMatrix.md))`(`prematrix:` ` [ColorMatrix](../android/graphics/ColorMatrix.md)!`)` Concat this colormatrix with the specified prematrix. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](../android/graphics/ColorMatrix.md))`()` Set this colormatrix to identity: ```kotlin [ 1 0 0 0 0 - red vector 0 1 0 0 0 - green vector 0 0 1 0 0 - blue vector 0 0 0 1 0 ] - alpha vector ``` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [set](../android/graphics/ColorMatrix.md))`(`src:` ` [ColorMatrix](../android/graphics/ColorMatrix.md)!`)` Assign the src colormatrix into this matrix, copying all of its values. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [preConcat](ColorMatrix.md))`(`prematrix:` ` [ColorMatrix](ColorMatrix.md)!`)` Concat this colormatrix with the specified prematrix. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](ColorMatrix.md))`()` Set this colormatrix to identity: ```kotlin [ 1 0 0 0 0 - red vector 0 1 0 0 0 - green vector 0 0 1 0 0 - blue vector 0 0 0 1 0 ] - alpha vector ``` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [set](ColorMatrix.md))`(`src:` ` [ColorMatrix](ColorMatrix.md)!`)` Assign the src colormatrix into this matrix, copying all of its values. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [set](../android/graphics/ColorMatrix.md))`(`src:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`)` Assign the array of floats into this matrix, copying all of its values. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setConcat](../android/graphics/ColorMatrix.md))`(`matA:` ` [ColorMatrix](../android/graphics/ColorMatrix.md)!`, `matB:` ` [ColorMatrix](../android/graphics/ColorMatrix.md)!`)` Set this colormatrix to the concatenation of the two specified colormatrices, such that the resulting colormatrix has the same effect as applying matB and then applying matA. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRGB2YUV](../android/graphics/ColorMatrix.md))`()` Set the matrix to convert RGB to YUV |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [set](ColorMatrix.md))`(`src:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)!`)` Assign the array of floats into this matrix, copying all of its values. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setConcat](ColorMatrix.md))`(`matA:` ` [ColorMatrix](ColorMatrix.md)!`, `matB:` ` [ColorMatrix](ColorMatrix.md)!`)` Set this colormatrix to the concatenation of the two specified colormatrices, such that the resulting colormatrix has the same effect as applying matB and then applying matA. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRGB2YUV](ColorMatrix.md))`()` Set the matrix to convert RGB to YUV |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRotate](../android/graphics/ColorMatrix.md))`(`axis:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `degrees:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Set the rotation on a color axis by the specified values. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSaturation](../android/graphics/ColorMatrix.md))`(`sat:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Set the matrix to affect the saturation of colors. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setScale](../android/graphics/ColorMatrix.md))`(`rScale:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `gScale:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `bScale:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `aScale:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Set this colormatrix to scale by the specified values. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRotate](ColorMatrix.md))`(`axis:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `degrees:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Set the rotation on a color axis by the specified values. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setSaturation](ColorMatrix.md))`(`sat:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Set the matrix to affect the saturation of colors. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setScale](ColorMatrix.md))`(`rScale:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `gScale:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `bScale:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `aScale:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Set this colormatrix to scale by the specified values. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setYUV2RGB](../android/graphics/ColorMatrix.md))`()` Set the matrix to convert from YUV to RGB |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setYUV2RGB](ColorMatrix.md))`()` Set the matrix to convert from YUV to RGB |
 
 ## Public constructors
 

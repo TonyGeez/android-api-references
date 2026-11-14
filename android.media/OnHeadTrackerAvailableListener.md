@@ -19,7 +19,7 @@ Interface to be notified of changes to the availability of a head tracker on the
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onHeadTrackerAvailableChanged](../android/media/Spatializer.OnHeadTrackerAvailableListener.md))`(`spatializer:` ` [Spatializer](../android/media/Spatializer.md)`, `available:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Called when the availability of the head tracker changed. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onHeadTrackerAvailableChanged](../android/media/Spatializer.OnHeadTrackerAvailableListener.md))`(`spatializer:` ` [Spatializer](Spatializer.md)`, `available:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Called when the availability of the head tracker changed. |
 
 ## Public methods
 
@@ -38,5 +38,5 @@ Called when the availability of the head tracker changed.
 
 | Parameters ||
 |---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `spatializer` | [Spatializer](../android/media/Spatializer.md):the`Spatializer`instance for which the head tracker availability was updated This value cannot be`null`. |
+| `spatializer` | [Spatializer](Spatializer.md):the`Spatializer`instance for which the head tracker availability was updated This value cannot be`null`. |
 | `available` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):true if the audio device that would output audio processed by the`Spatializer`has a head tracker associated with it, false otherwise. |

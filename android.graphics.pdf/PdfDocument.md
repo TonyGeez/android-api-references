@@ -2,7 +2,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 
 # PdfDocument
 
-Kotlin | [Java](../android/graphics/pdf/PdfDocument.md)
+Kotlin | [Java](PdfDocument.md)
 | --- | --- |
 
 ```
@@ -11,9 +11,9 @@ open class PdfDocument
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.graphics.pdf.PdfDocument](../android/graphics/pdf/PdfDocument.md) |
+| ↳ | [android.graphics.pdf.PdfDocument](PdfDocument.md) |
 
-| Known Direct Subclasses [PrintedPdfDocument](../android/print/pdf/PrintedPdfDocument.md) |---|---| | [PrintedPdfDocument](../android/print/pdf/PrintedPdfDocument.md) | This class is a helper for creating a PDF file for given print attributes. | |
+| Known Direct Subclasses [PrintedPdfDocument](../android.print.pdf/PrintedPdfDocument.md) |---|---| | [PrintedPdfDocument](../android.print.pdf/PrintedPdfDocument.md) | This class is a helper for creating a PDF file for given print attributes. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 This class enables generating a PDF document from native Android content. You create a new document and then for every page you want to add you start a page, write content to the page, and finish the page. After you are done with all pages, you write the document to an output stream and close the document. After a document is closed you should not use it anymore. Note that pages are created one by one, i.e. you can have only a single page to which you are writing at any given time. This class is not thread safe.
@@ -169,7 +169,7 @@ Writes the document to an output stream. You can call this method multiple times
 
 | Parameters ||
 |---|---|
-| `out` | [OutputStream](../java/io/OutputStream.md)!: The output stream. Cannot be null. |
+| `out` | [OutputStream](../java.io/OutputStream.md)!: The output stream. Cannot be null. |
 
 | Exceptions ||
 |---|---|

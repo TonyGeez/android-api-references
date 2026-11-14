@@ -8,10 +8,10 @@ abstract class Executable : AccessibleObject, GenericDeclaration, Member
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.lang.reflect.AccessibleObject](../java/lang/reflect/AccessibleObject.md) ||
-| | ↳ | [java.lang.reflect.Executable](../java/lang/reflect/Executable.md) |
+| ↳ | [java.lang.reflect.AccessibleObject](AccessibleObject.md) ||
+| | ↳ | [java.lang.reflect.Executable](Executable.md) |
 
-| Known Direct Subclasses [Constructor](../java/lang/reflect/Constructor.md), [Method](../java/lang/reflect/Method.md) |---|---| | [Constructor](../java/lang/reflect/Constructor.md) | `Constructor` provides information about, and access to, a single constructor for a class. | | [Method](../java/lang/reflect/Method.md) | A `Method` provides information about, and access to, a single method on a class or interface. | |
+| Known Direct Subclasses [Constructor](Constructor.md), [Method](Method.md) |---|---| | [Constructor](Constructor.md) | `Constructor` provides information about, and access to, a single constructor for a class. | | [Method](Method.md) | A `Method` provides information about, and access to, a single method on a class or interface. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 A shared superclass for the common functionality of `https://developer.android.com/reference/kotlin/java/lang/reflect/Method` and `https://developer.android.com/reference/kotlin/java/lang/reflect/Constructor`.
@@ -28,20 +28,20 @@ A shared superclass for the common functionality of `https://developer.android.c
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>! | `https://developer.android.com/reference/kotlin/java/lang/reflect/Executable#getAnnotationsByType(java.lang.Class)(annotationClass: https://developer.android.com/reference/kotlin/java/lang/Class.html#<T>)` Returns annotations that are *associated* with this element. |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Annotation](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-annotation/index.html)!\> | `https://developer.android.com/reference/kotlin/java/lang/reflect/Executable#getDeclaredAnnotations()()` Returns annotations that are *directly present* on this element. |
 | --- | --- |
-| abstract [Class](../java/lang/Class.md)\<\*\> | `https://developer.android.com/reference/kotlin/java/lang/reflect/Executable#getDeclaringClass()()` Returns the `Class` object representing the class or interface that declares the executable represented by this object. |
-| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Class](../java/lang/Class.md)\<\*\>!\> | `https://developer.android.com/reference/kotlin/java/lang/reflect/Executable#getExceptionTypes()()` Returns an array of `Class` objects that represent the types of exceptions declared to be thrown by the underlying executable represented by this object. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Type](../java/lang/reflect/Type.md)!\> | `https://developer.android.com/reference/kotlin/java/lang/reflect/Executable#getGenericExceptionTypes()()` Returns an array of `Type` objects that represent the exceptions declared to be thrown by this executable object. |
+| abstract [Class](../java.lang/Class.md)\<\*\> | `https://developer.android.com/reference/kotlin/java/lang/reflect/Executable#getDeclaringClass()()` Returns the `Class` object representing the class or interface that declares the executable represented by this object. |
+| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Class](../java.lang/Class.md)\<\*\>!\> | `https://developer.android.com/reference/kotlin/java/lang/reflect/Executable#getExceptionTypes()()` Returns an array of `Class` objects that represent the types of exceptions declared to be thrown by the underlying executable represented by this object. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Type](Type.md)!\> | `https://developer.android.com/reference/kotlin/java/lang/reflect/Executable#getGenericExceptionTypes()()` Returns an array of `Type` objects that represent the exceptions declared to be thrown by this executable object. |
 | --- | --- |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Type](../java/lang/reflect/Type.md)!\> | `https://developer.android.com/reference/kotlin/java/lang/reflect/Executable#getGenericParameterTypes()()` Returns an array of `Type` objects that represent the formal parameter types, in declaration order, of the executable represented by this object. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/reflect/Executable#getModifiers()()` Returns the Java language [modifiers](../java/lang/reflect/Modifier.md) for the executable represented by this object. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Type](Type.md)!\> | `https://developer.android.com/reference/kotlin/java/lang/reflect/Executable#getGenericParameterTypes()()` Returns an array of `Type` objects that represent the formal parameter types, in declaration order, of the executable represented by this object. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/reflect/Executable#getModifiers()()` Returns the Java language [modifiers](Modifier.md) for the executable represented by this object. |
 | abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/java/lang/reflect/Executable#getName()()` Returns the name of the executable represented by this object. |
 | --- | --- |
 | abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Annotation](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-annotation/index.html)!\>!\> | `https://developer.android.com/reference/kotlin/java/lang/reflect/Executable#getParameterAnnotations()()` Returns an array of arrays of `Annotation`s that represent the annotations on the formal parameters, in declaration order, of the `Executable` represented by this object. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/reflect/Executable#getParameterCount()()` Returns the number of formal parameters (whether explicitly declared or implicitly declared or neither) for the executable represented by this object. |
-| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Class](../java/lang/Class.md)\<\*\>!\> | `https://developer.android.com/reference/kotlin/java/lang/reflect/Executable#getParameterTypes()()` Returns an array of `Class` objects that represent the formal parameter types, in declaration order, of the executable represented by this object. |
+| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Class](../java.lang/Class.md)\<\*\>!\> | `https://developer.android.com/reference/kotlin/java/lang/reflect/Executable#getParameterTypes()()` Returns an array of `Class` objects that represent the formal parameter types, in declaration order, of the executable represented by this object. |
 | --- | --- |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Parameter](../java/lang/reflect/Parameter.md)!\> | `https://developer.android.com/reference/kotlin/java/lang/reflect/Executable#getParameters()()` Returns an array of `Parameter` objects that represent all the parameters to the underlying executable represented by this object. |
-| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [TypeVariable](../java/lang/reflect/TypeVariable.md)\<\*\>!\> | `https://developer.android.com/reference/kotlin/java/lang/reflect/Executable#getTypeParameters()()` Returns an array of `TypeVariable` objects that represent the type variables declared by the generic declaration represented by this `GenericDeclaration` object, in declaration order. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Parameter](Parameter.md)!\> | `https://developer.android.com/reference/kotlin/java/lang/reflect/Executable#getParameters()()` Returns an array of `Parameter` objects that represent all the parameters to the underlying executable represented by this object. |
+| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [TypeVariable](TypeVariable.md)\<\*\>!\> | `https://developer.android.com/reference/kotlin/java/lang/reflect/Executable#getTypeParameters()()` Returns an array of `TypeVariable` objects that represent the type variables declared by the generic declaration represented by this `GenericDeclaration` object, in declaration order. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/reflect/Executable#isAnnotationPresent(java.lang.Class)(annotationType: https://developer.android.com/reference/kotlin/java/lang/Class.html#<out https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-annotation/index.html!>)` Returns true if an annotation for the specified type is *present* on this element, else false. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/lang/reflect/Executable#isSynthetic()()` Returns `true` if this executable is a synthetic construct; returns `false` otherwise. |
@@ -68,7 +68,7 @@ Returns this element's annotation for the specified type if such an annotation i
 | Parameters ||
 |---|---|
 | `<T>` | the type of the annotation to query for and return if present |
-| `annotationClass` | [Class](../java/lang/Class.md)\<T\>: the Class object corresponding to the annotation type |
+| `annotationClass` | [Class](../java.lang/Class.md)\<T\>: the Class object corresponding to the annotation type |
 
 | Return ||
 |---|---|
@@ -91,7 +91,7 @@ Returns annotations that are *associated* with this element. If there are no ann
 | Parameters ||
 |---|---|
 | `<T>` | the type of the annotation to query for and return if present |
-| `annotationClass` | [Class](../java/lang/Class.md)\<T\>: the Class object corresponding to the annotation type |
+| `annotationClass` | [Class](../java.lang/Class.md)\<T\>: the Class object corresponding to the annotation type |
 
 | Return ||
 |---|---|
@@ -199,7 +199,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 abstract fun getModifiers(): Int
 ```
 
-Returns the Java language [modifiers](../java/lang/reflect/Modifier.md) for the executable represented by this object.
+Returns the Java language [modifiers](Modifier.md) for the executable represented by this object.
 
 | Return ||
 |---|---|

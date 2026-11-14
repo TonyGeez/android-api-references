@@ -8,7 +8,7 @@ open class SystemHealthManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.os.health.SystemHealthManager](../android/os/health/SystemHealthManager.md) |
+| ↳ | [android.os.health.SystemHealthManager](SystemHealthManager.md) |
 
 Provides access to data about how various system resources are used by applications.
 
@@ -17,20 +17,20 @@ Provides access to data about how various system resources are used by applicati
 | Public methods ||
 |---|---|
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/os/health/SystemHealthManager#getCpuHeadroom(android.os.CpuHeadroomParams)(params: https://developer.android.com/reference/kotlin/android/os/CpuHeadroomParams.html#?)` Provides an estimate of available CPU capacity headroom of the device. |
-| open [Pair](../android/util/Pair.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!, [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | `https://developer.android.com/reference/kotlin/android/os/health/SystemHealthManager#getCpuHeadroomCalculationWindowRange()()` Gets the range of the calculation window size for CPU headroom. |
+| open [Pair](../android.util/Pair.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!, [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | `https://developer.android.com/reference/kotlin/android/os/health/SystemHealthManager#getCpuHeadroomCalculationWindowRange()()` Gets the range of the calculation window size for CPU headroom. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/os/health/SystemHealthManager#getCpuHeadroomMinIntervalMillis()()` Gets minimum polling interval for calling `https://developer.android.com/reference/kotlin/android/os/health/SystemHealthManager#getCpuHeadroom(android.os.CpuHeadroomParams)` in milliseconds. |
 | --- | --- |
 | open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/os/health/SystemHealthManager#getGpuHeadroom(android.os.GpuHeadroomParams)(params: https://developer.android.com/reference/kotlin/android/os/GpuHeadroomParams.html#?)` Provides an estimate of available GPU capacity headroom of the device. |
-| open [Pair](../android/util/Pair.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!, [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | `https://developer.android.com/reference/kotlin/android/os/health/SystemHealthManager#getGpuHeadroomCalculationWindowRange()()` Gets the range of the calculation window size for GPU headroom. |
+| open [Pair](../android.util/Pair.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!, [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\> | `https://developer.android.com/reference/kotlin/android/os/health/SystemHealthManager#getGpuHeadroomCalculationWindowRange()()` Gets the range of the calculation window size for GPU headroom. |
 | open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/os/health/SystemHealthManager#getGpuHeadroomMinIntervalMillis()()` Gets minimum polling interval for calling `https://developer.android.com/reference/kotlin/android/os/health/SystemHealthManager#getGpuHeadroom(android.os.GpuHeadroomParams)` in milliseconds. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/health/SystemHealthManager#getMaxCpuHeadroomTidsSize()()` Gets the maximum number of TIDs this device supports for getting CPU headroom. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/health/SystemHealthManager#getPowerMonitorReadings(kotlin.collections.MutableList,%20java.util.concurrent.Executor,%20android.os.OutcomeReceiver)(powerMonitors: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/os/PowerMonitor.html#!>, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#?, onResult: https://developer.android.com/reference/kotlin/android/os/OutcomeReceiver.html#<https://developer.android.com/reference/kotlin/android/os/PowerMonitorReadings.html#!, https://developer.android.com/reference/kotlin/java/lang/RuntimeException.html#!>)` Asynchronously retrieves the accumulated power consumption reported by the specified power monitors. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/health/SystemHealthManager#getSupportedPowerMonitors(java.util.concurrent.Executor,%20java.util.function.Consumer)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#?, onResult: https://developer.android.com/reference/kotlin/java/util/function/Consumer.html#<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/os/PowerMonitor.html#!>!>)` Asynchronously retrieves a list of supported `https://developer.android.com/reference/kotlin/android/os/PowerMonitor.html#`'s, which include raw ODPM (on-device power rail monitor) rails and modeled energy consumers. |
 | --- | --- |
-| open [HealthStats](../android/os/health/HealthStats.md)! | `https://developer.android.com/reference/kotlin/android/os/health/SystemHealthManager#takeMyUidSnapshot()()` Return a `https://developer.android.com/reference/kotlin/android/os/health/HealthStats` object containing a snapshot of system health metrics for the application calling this API. |
-| open [HealthStats](../android/os/health/HealthStats.md)! | `https://developer.android.com/reference/kotlin/android/os/health/SystemHealthManager#takeUidSnapshot(kotlin.Int)(uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a `https://developer.android.com/reference/kotlin/android/os/health/HealthStats` object containing a snapshot of system health metrics for the given uid (user-id, which in usually corresponds to application). |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [HealthStats](../android/os/health/HealthStats.md)!\>! | `https://developer.android.com/reference/kotlin/android/os/health/SystemHealthManager#takeUidSnapshots(kotlin.IntArray)(uids: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html!)` Return a `https://developer.android.com/reference/kotlin/android/os/health/HealthStats` object containing a snapshot of system health metrics for the given uids (user-id, which in usually corresponds to application). |
+| open [HealthStats](HealthStats.md)! | `https://developer.android.com/reference/kotlin/android/os/health/SystemHealthManager#takeMyUidSnapshot()()` Return a `https://developer.android.com/reference/kotlin/android/os/health/HealthStats` object containing a snapshot of system health metrics for the application calling this API. |
+| open [HealthStats](HealthStats.md)! | `https://developer.android.com/reference/kotlin/android/os/health/SystemHealthManager#takeUidSnapshot(kotlin.Int)(uid: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Return a `https://developer.android.com/reference/kotlin/android/os/health/HealthStats` object containing a snapshot of system health metrics for the given uid (user-id, which in usually corresponds to application). |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [HealthStats](HealthStats.md)!\>! | `https://developer.android.com/reference/kotlin/android/os/health/SystemHealthManager#takeUidSnapshots(kotlin.IntArray)(uids: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html!)` Return a `https://developer.android.com/reference/kotlin/android/os/health/HealthStats` object containing a snapshot of system health metrics for the given uids (user-id, which in usually corresponds to application). |
 | --- | --- |
 
 ## Public methods
@@ -51,7 +51,7 @@ If the params are valid, each call will perform at least one synchronous binder 
 
 | Parameters ||
 |---|---|
-| `params` | [CpuHeadroomParams](../android/os/CpuHeadroomParams.md)?: params to customize the CPU headroom calculation, or null to use default. |
+| `params` | [CpuHeadroomParams](../android.os/CpuHeadroomParams.md)?: params to customize the CPU headroom calculation, or null to use default. |
 
 | Return ||
 |---|---|
@@ -117,7 +117,7 @@ If the params are valid, each call will perform at least one synchronous binder 
 
 | Parameters ||
 |---|---|
-| `params` | [GpuHeadroomParams](../android/os/GpuHeadroomParams.md)?: params to customize the GPU headroom calculation, or null to use default. |
+| `params` | [GpuHeadroomParams](../android.os/GpuHeadroomParams.md)?: params to customize the GPU headroom calculation, or null to use default. |
 
 | Return ||
 |---|---|
@@ -200,9 +200,9 @@ Asynchronously retrieves the accumulated power consumption reported by the speci
 
 | Parameters ||
 |---|---|
-| `powerMonitors` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PowerMonitor](../android/os/PowerMonitor.md)!\>: power monitors to be retrieved. This value cannot be `null`. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md)?: optional Executor to deliver the callbacks. If not supplied, the callback may be invoked on an arbitrary thread. This value may be `null`. |
-| `onResult` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [PowerMonitorReadings](../android/os/PowerMonitorReadings.md)!, [RuntimeException](../java/lang/RuntimeException.md)!\>: callback for the result. This value cannot be `null`. |
+| `powerMonitors` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PowerMonitor](../android.os/PowerMonitor.md)!\>: power monitors to be retrieved. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md)?: optional Executor to deliver the callbacks. If not supplied, the callback may be invoked on an arbitrary thread. This value may be `null`. |
+| `onResult` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [PowerMonitorReadings](../android.os/PowerMonitorReadings.md)!, [RuntimeException](../java.lang/RuntimeException.md)!\>: callback for the result. This value cannot be `null`. |
 | --- | --- |
 
 ### getSupportedPowerMonitors
@@ -220,8 +220,8 @@ Asynchronously retrieves a list of supported `https://developer.android.com/refe
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java/util/concurrent/Executor.md)?: optional Handler to deliver the callback. If not supplied, the callback may be invoked on an arbitrary thread. This value may be `null`. |
-| `onResult` | [Consumer](../java/util/function/Consumer.md)\< [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PowerMonitor](../android/os/PowerMonitor.md)!\>!\>: callback for the result. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md)?: optional Handler to deliver the callback. If not supplied, the callback may be invoked on an arbitrary thread. This value may be `null`. |
+| `onResult` | [Consumer](../java.util.function/Consumer.md)\< [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PowerMonitor](../android.os/PowerMonitor.md)!\>!\>: callback for the result. This value cannot be `null`. |
 
 ### takeMyUidSnapshot
 

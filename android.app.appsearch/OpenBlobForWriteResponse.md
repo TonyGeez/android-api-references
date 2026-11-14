@@ -9,7 +9,7 @@ class OpenBlobForWriteResponse : Closeable, Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.appsearch.OpenBlobForWriteResponse](../android/app/appsearch/OpenBlobForWriteResponse.md) |
+| ↳ | [android.app.appsearch.OpenBlobForWriteResponse](OpenBlobForWriteResponse.md) |
 
 The response to provide batch operation results of `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSession#openBlobForWrite(kotlin.collections.MutableSet,%20java.util.concurrent.Executor,%20java.util.function.Consumer)`.
 
@@ -31,13 +31,13 @@ The returned `https://developer.android.com/reference/kotlin/android/os/ParcelFi
 |---|---|
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/OpenBlobForWriteResponse#close()()` Closes this stream and releases any system resources associated with it. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/OpenBlobForWriteResponse#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [AppSearchBatchResult](../android/app/appsearch/AppSearchBatchResult.md)\< [AppSearchBlobHandle](../android/app/appsearch/AppSearchBlobHandle.md)!, [ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/OpenBlobForWriteResponse#getResult()()` Returns the `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBatchResult` object containing the results of the write blob for write operation for each `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBlobHandle`. |
+| [AppSearchBatchResult](AppSearchBatchResult.md)\< [AppSearchBlobHandle](AppSearchBlobHandle.md)!, [ParcelFileDescriptor](../android.os/ParcelFileDescriptor.md)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/OpenBlobForWriteResponse#getResult()()` Returns the `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBatchResult` object containing the results of the write blob for write operation for each `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchBlobHandle`. |
 | --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/appsearch/OpenBlobForWriteResponse#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [OpenBlobForWriteResponse](../android/app/appsearch/OpenBlobForWriteResponse.md)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/OpenBlobForWriteResponse#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [OpenBlobForWriteResponse](OpenBlobForWriteResponse.md)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/OpenBlobForWriteResponse#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public constructors
 
@@ -54,7 +54,7 @@ Creates a `https://developer.android.com/reference/kotlin/android/app/appsearch/
 
 | Parameters ||
 |---|---|
-| `result` | [AppSearchBatchResult](../android/app/appsearch/AppSearchBatchResult.md)\< [AppSearchBlobHandle](../android/app/appsearch/AppSearchBlobHandle.md)!, [ParcelFileDescriptor](../android/os/ParcelFileDescriptor.md)!\>: This value cannot be `null`. |
+| `result` | [AppSearchBatchResult](AppSearchBatchResult.md)\< [AppSearchBlobHandle](AppSearchBlobHandle.md)!, [ParcelFileDescriptor](../android.os/ParcelFileDescriptor.md)!\>: This value cannot be `null`. |
 
 ## Public methods
 
@@ -119,7 +119,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

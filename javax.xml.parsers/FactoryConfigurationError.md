@@ -11,8 +11,8 @@ open class FactoryConfigurationError : Error
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
-| | ↳ | [java.lang.Error](../java/lang/Error.md) ||
-| | | ↳ | [javax.xml.parsers.FactoryConfigurationError](../javax/xml/parsers/FactoryConfigurationError.md) |
+| | ↳ | [java.lang.Error](../java.lang/Error.md) ||
+| | | ↳ | [javax.xml.parsers.FactoryConfigurationError](FactoryConfigurationError.md) |
 | --- | --- | --- | --- |
 
 Thrown when a problem with configuration with the Parser Factories exists. This error will typically be thrown when the class of a parser factory specified in the system properties cannot be found or instantiated.
@@ -21,18 +21,18 @@ Thrown when a problem with configuration with the Parser Factories exists. This 
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [FactoryConfigurationError](../javax/xml/parsers/FactoryConfigurationError.md))`()` Create a new`FactoryConfigurationError`with no detail message. |
-| [FactoryConfigurationError](../javax/xml/parsers/FactoryConfigurationError.md))`(`e:` ` [Exception](../java/lang/Exception.md)!`)` Create a new`FactoryConfigurationError`with a given`Exception`base cause of the error. |
-| [FactoryConfigurationError](../javax/xml/parsers/FactoryConfigurationError.md))`(`e:` ` [Exception](../java/lang/Exception.md)!`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Create a new`FactoryConfigurationError`with the given`Exception`base cause and detail message. |
-| [FactoryConfigurationError](../javax/xml/parsers/FactoryConfigurationError.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Create a new`FactoryConfigurationError`with the`String `specified as an error message. |
+| [FactoryConfigurationError](FactoryConfigurationError.md))`()` Create a new`FactoryConfigurationError`with no detail message. |
+| [FactoryConfigurationError](FactoryConfigurationError.md))`(`e:` ` [Exception](../java.lang/Exception.md)!`)` Create a new`FactoryConfigurationError`with a given`Exception`base cause of the error. |
+| [FactoryConfigurationError](FactoryConfigurationError.md))`(`e:` ` [Exception](../java.lang/Exception.md)!`, `msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Create a new`FactoryConfigurationError`with the given`Exception`base cause and detail message. |
+| [FactoryConfigurationError](FactoryConfigurationError.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Create a new`FactoryConfigurationError`with the`String `specified as an error message. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Exception](../java/lang/Exception.md)! | [getException](../javax/xml/parsers/FactoryConfigurationError.md))`()` Return the actual exception (if any) that caused this exception to be raised. |
+| open [Exception](../java.lang/Exception.md)! | [getException](FactoryConfigurationError.md))`()` Return the actual exception (if any) that caused this exception to be raised. |
 
 | Properties ||
 |---------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [message](../javax/xml/parsers/FactoryConfigurationError.md) Return the message (if any) for this error . |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [message](FactoryConfigurationError.md) Return the message (if any) for this error . |
 
 ## Public constructors
 
@@ -58,7 +58,7 @@ Create a new`FactoryConfigurationError`with a given`Exception`base cause of the 
 
 | Parameters ||
 |-----|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `e` | [Exception](../java/lang/Exception.md)!:The exception to be encapsulated in a FactoryConfigurationError. |
+| `e` | [Exception](../java.lang/Exception.md)!:The exception to be encapsulated in a FactoryConfigurationError. |
 
 ### FactoryConfigurationError
 
@@ -74,7 +74,7 @@ Create a new`FactoryConfigurationError`with the given`Exception`base cause and d
 
 | Parameters ||
 |-------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `e` | [Exception](../java/lang/Exception.md)!:The exception to be encapsulated in a FactoryConfigurationError |
+| `e` | [Exception](../java.lang/Exception.md)!:The exception to be encapsulated in a FactoryConfigurationError |
 | `msg` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The detail message. |
 
 ### FactoryConfigurationError
@@ -105,7 +105,7 @@ Return the actual exception (if any) that caused this exception to be raised.
 
 | Return ||
 |----------------------------------------------------------------------------------------|-------------------------------------------------------|
-| [Exception](../java/lang/Exception.md)! | The encapsulated exception, or null if there is none. |
+| [Exception](../java.lang/Exception.md)! | The encapsulated exception, or null if there is none. |
 
 ## Properties
 

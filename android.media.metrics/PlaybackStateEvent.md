@@ -4,7 +4,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # PlaybackStateEvent
 
-Kotlin| [Java](../android/media/metrics/PlaybackStateEvent.md) 
+Kotlin| [Java](PlaybackStateEvent.md) 
 | --- | --- |
 
 ```
@@ -13,8 +13,8 @@ class PlaybackStateEvent : Event, Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.media.metrics.Event](../android/media/metrics/Event.md) ||
-| | ↳ | [android.media.metrics.PlaybackStateEvent](../android/media/metrics/PlaybackStateEvent.md) |
+| ↳ | [android.media.metrics.Event](Event.md) ||
+| | ↳ | [android.media.metrics.PlaybackStateEvent](PlaybackStateEvent.md) |
 
 Playback state event.
 
@@ -22,50 +22,50 @@ Playback state event.
 
 | Nested classes ||
 |---|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](../android/media/metrics/PlaybackStateEvent.Builder.md) A builder for [PlaybackStateEvent](../android/media/metrics/PlaybackStateEvent.md) |
+| | [Builder](../android/media/metrics/PlaybackStateEvent.Builder.md) A builder for [PlaybackStateEvent](PlaybackStateEvent.md) |
 
 | Constants ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_ABANDONED](../android/media/metrics/PlaybackStateEvent.md) Playback is abandoned before reaching the end of the media. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_BUFFERING](../android/media/metrics/PlaybackStateEvent.md) Playback is buffering to resume active playback. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_ENDED](../android/media/metrics/PlaybackStateEvent.md) Playback has reached the end of the media. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_ABANDONED](PlaybackStateEvent.md) Playback is abandoned before reaching the end of the media. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_BUFFERING](PlaybackStateEvent.md) Playback is buffering to resume active playback. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_ENDED](PlaybackStateEvent.md) Playback has reached the end of the media. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_FAILED](../android/media/metrics/PlaybackStateEvent.md) Playback is stopped due a fatal error and can be retried. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_INTERRUPTED_BY_AD](../android/media/metrics/PlaybackStateEvent.md) Playback is interrupted by an ad. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_JOINING_BACKGROUND](../android/media/metrics/PlaybackStateEvent.md) Playback is buffering in the background for initial playback start |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_FAILED](PlaybackStateEvent.md) Playback is stopped due a fatal error and can be retried. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_INTERRUPTED_BY_AD](PlaybackStateEvent.md) Playback is interrupted by an ad. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_JOINING_BACKGROUND](PlaybackStateEvent.md) Playback is buffering in the background for initial playback start |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_JOINING_FOREGROUND](../android/media/metrics/PlaybackStateEvent.md) Playback is buffering in the foreground for initial playback start |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_NOT_STARTED](../android/media/metrics/PlaybackStateEvent.md) Playback has not started (initial state) |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_PAUSED](../android/media/metrics/PlaybackStateEvent.md) Playback is paused but ready to play |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_JOINING_FOREGROUND](PlaybackStateEvent.md) Playback is buffering in the foreground for initial playback start |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_NOT_STARTED](PlaybackStateEvent.md) Playback has not started (initial state) |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_PAUSED](PlaybackStateEvent.md) Playback is paused but ready to play |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_PAUSED_BUFFERING](../android/media/metrics/PlaybackStateEvent.md) Playback is buffering while paused. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_PLAYING](../android/media/metrics/PlaybackStateEvent.md) Playback is actively playing |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_SEEKING](../android/media/metrics/PlaybackStateEvent.md) Playback is handling a seek. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_PAUSED_BUFFERING](PlaybackStateEvent.md) Playback is buffering while paused. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_PLAYING](PlaybackStateEvent.md) Playback is actively playing |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_SEEKING](PlaybackStateEvent.md) Playback is handling a seek. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_STOPPED](../android/media/metrics/PlaybackStateEvent.md) Playback is stopped and can be restarted. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_SUPPRESSED](../android/media/metrics/PlaybackStateEvent.md) Playback is suppressed (e.g. due to audio focus loss). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_SUPPRESSED_BUFFERING](../android/media/metrics/PlaybackStateEvent.md) Playback is suppressed (e.g. due to audio focus loss) while buffering to resume a playback. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_STOPPED](PlaybackStateEvent.md) Playback is stopped and can be restarted. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_SUPPRESSED](PlaybackStateEvent.md) Playback is suppressed (e.g. due to audio focus loss). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [STATE_SUPPRESSED_BUFFERING](PlaybackStateEvent.md) Playback is suppressed (e.g. due to audio focus loss) while buffering to resume a playback. |
 | --- | --- |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android.os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android.os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android.os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/media/metrics/PlaybackStateEvent.md))`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/media/metrics/PlaybackStateEvent.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [Bundle](../android/os/Bundle.md) | [getMetricsBundle](../android/media/metrics/PlaybackStateEvent.md))`()` Gets metrics-related information that is not supported by dedicated methods. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](PlaybackStateEvent.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](PlaybackStateEvent.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [Bundle](../android.os/Bundle.md) | [getMetricsBundle](PlaybackStateEvent.md))`()` Gets metrics-related information that is not supported by dedicated methods. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getState](../android/media/metrics/PlaybackStateEvent.md))`()` Gets playback state. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTimeSinceCreatedMillis](../android/media/metrics/PlaybackStateEvent.md))`()` Gets time since the corresponding playback session is created in millisecond. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/media/metrics/PlaybackStateEvent.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getState](PlaybackStateEvent.md))`()` Gets playback state. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTimeSinceCreatedMillis](PlaybackStateEvent.md))`()` Gets time since the corresponding playback session is created in millisecond. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](PlaybackStateEvent.md))`()` <br /> |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/media/metrics/PlaybackStateEvent.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](PlaybackStateEvent.md))`(`dest:` ` [Parcel](../android.os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [PlaybackStateEvent](../android/media/metrics/PlaybackStateEvent.md)!\> | [CREATOR](../android/media/metrics/PlaybackStateEvent.md) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [PlaybackStateEvent](PlaybackStateEvent.md)!\> | [CREATOR](PlaybackStateEvent.md) <br /> |
 
 ## Constants
 
@@ -261,7 +261,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) |
 
 ### equals
 
@@ -306,7 +306,7 @@ It is intended to be used for backwards compatibility by the metrics infrastruct
 
 | Return ||
 |----------------------------------------------------------------------------------|-----------------------------|
-| [Bundle](../android/os/Bundle.md) | This value cannot be`null`. |
+| [Bundle](../android.os/Bundle.md) | This value cannot be`null`. |
 
 ### getState
 
@@ -320,7 +320,7 @@ Gets playback state.
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.media.metrics.PlaybackStateEvent#STATE_NOT_STARTED](../android/media/metrics/PlaybackStateEvent.md), [android.media.metrics.PlaybackStateEvent#STATE_JOINING_BACKGROUND](../android/media/metrics/PlaybackStateEvent.md), [android.media.metrics.PlaybackStateEvent#STATE_JOINING_FOREGROUND](../android/media/metrics/PlaybackStateEvent.md), [android.media.metrics.PlaybackStateEvent#STATE_PLAYING](../android/media/metrics/PlaybackStateEvent.md), [android.media.metrics.PlaybackStateEvent#STATE_PAUSED](../android/media/metrics/PlaybackStateEvent.md), [android.media.metrics.PlaybackStateEvent#STATE_SEEKING](../android/media/metrics/PlaybackStateEvent.md), [android.media.metrics.PlaybackStateEvent#STATE_BUFFERING](../android/media/metrics/PlaybackStateEvent.md), [android.media.metrics.PlaybackStateEvent#STATE_PAUSED_BUFFERING](../android/media/metrics/PlaybackStateEvent.md), [android.media.metrics.PlaybackStateEvent#STATE_SUPPRESSED](../android/media/metrics/PlaybackStateEvent.md), [android.media.metrics.PlaybackStateEvent#STATE_SUPPRESSED_BUFFERING](../android/media/metrics/PlaybackStateEvent.md), [android.media.metrics.PlaybackStateEvent#STATE_ENDED](../android/media/metrics/PlaybackStateEvent.md), [android.media.metrics.PlaybackStateEvent#STATE_STOPPED](../android/media/metrics/PlaybackStateEvent.md), [android.media.metrics.PlaybackStateEvent#STATE_FAILED](../android/media/metrics/PlaybackStateEvent.md), [android.media.metrics.PlaybackStateEvent#STATE_INTERRUPTED_BY_AD](../android/media/metrics/PlaybackStateEvent.md), or [android.media.metrics.PlaybackStateEvent#STATE_ABANDONED](../android/media/metrics/PlaybackStateEvent.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.media.metrics.PlaybackStateEvent#STATE_NOT_STARTED](PlaybackStateEvent.md), [android.media.metrics.PlaybackStateEvent#STATE_JOINING_BACKGROUND](PlaybackStateEvent.md), [android.media.metrics.PlaybackStateEvent#STATE_JOINING_FOREGROUND](PlaybackStateEvent.md), [android.media.metrics.PlaybackStateEvent#STATE_PLAYING](PlaybackStateEvent.md), [android.media.metrics.PlaybackStateEvent#STATE_PAUSED](PlaybackStateEvent.md), [android.media.metrics.PlaybackStateEvent#STATE_SEEKING](PlaybackStateEvent.md), [android.media.metrics.PlaybackStateEvent#STATE_BUFFERING](PlaybackStateEvent.md), [android.media.metrics.PlaybackStateEvent#STATE_PAUSED_BUFFERING](PlaybackStateEvent.md), [android.media.metrics.PlaybackStateEvent#STATE_SUPPRESSED](PlaybackStateEvent.md), [android.media.metrics.PlaybackStateEvent#STATE_SUPPRESSED_BUFFERING](PlaybackStateEvent.md), [android.media.metrics.PlaybackStateEvent#STATE_ENDED](PlaybackStateEvent.md), [android.media.metrics.PlaybackStateEvent#STATE_STOPPED](PlaybackStateEvent.md), [android.media.metrics.PlaybackStateEvent#STATE_FAILED](PlaybackStateEvent.md), [android.media.metrics.PlaybackStateEvent#STATE_INTERRUPTED_BY_AD](PlaybackStateEvent.md), or [android.media.metrics.PlaybackStateEvent#STATE_ABANDONED](PlaybackStateEvent.md) |
 
 ### getTimeSinceCreatedMillis
 
@@ -338,8 +338,8 @@ Gets time since the corresponding playback session is created in millisecond.
 
 **See Also**
 
-- [android.media.metrics.LogSessionId](../android/media/metrics/LogSessionId.md)
-- [android.media.metrics.PlaybackSession](../android/media/metrics/PlaybackSession.md) 
+- [android.media.metrics.LogSessionId](LogSessionId.md)
+- [android.media.metrics.PlaybackSession](PlaybackSession.md) 
 
 ### hashCode
 
@@ -368,8 +368,8 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](../android/os/Parcel.md):This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android.os/Parcel.md):This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

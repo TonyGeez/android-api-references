@@ -4,7 +4,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 
 # ArcMotion
 
-Kotlin| [Java](../android/transition/ArcMotion.md) 
+Kotlin| [Java](ArcMotion.md) 
 | --- | --- |
 
 ```
@@ -13,12 +13,12 @@ open class ArcMotion : PathMotion
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.transition.PathMotion](../android/transition/PathMotion.md) ||
-| | ↳ | [android.transition.ArcMotion](../android/transition/ArcMotion.md) |
+| ↳ | [android.transition.PathMotion](PathMotion.md) ||
+| | ↳ | [android.transition.ArcMotion](ArcMotion.md) |
 
 A PathMotion that generates a curved path along an arc on an imaginary circle containing the two points. If the horizontal distance between the points is less than the vertical distance, then the circle's center point will be horizontally aligned with the end point. If the vertical distance is less than the horizontal distance then the circle's center point will be vertically aligned with the end point.
 
-When the two points are near horizontal or vertical, the curve of the motion will be small as the center of the circle will be far from both points. To force curvature of the path, [setMinimumHorizontalAngle(float)](../android/transition/ArcMotion.md))and [setMinimumVerticalAngle(float)](../android/transition/ArcMotion.md))may be used to set the minimum angle of the arc between two points.
+When the two points are near horizontal or vertical, the curve of the motion will be small as the center of the circle will be far from both points. To force curvature of the path, [setMinimumHorizontalAngle(float)](ArcMotion.md))and [setMinimumVerticalAngle(float)](ArcMotion.md))may be used to set the minimum angle of the arc between two points.
 
 This may be used in XML as an element inside a transition. 
 
@@ -34,20 +34,20 @@ This may be used in XML as an element inside a transition.
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ArcMotion](../android/transition/ArcMotion.md))`()` <br /> |
-| [ArcMotion](../android/transition/ArcMotion.md))`(`context:` ` [Context](../android/content/Context.md)!`, `attrs:` ` [AttributeSet](../android/util/AttributeSet.md)!`)` <br /> |
+| [ArcMotion](ArcMotion.md))`()` <br /> |
+| [ArcMotion](ArcMotion.md))`(`context:` ` [Context](../android.content/Context.md)!`, `attrs:` ` [AttributeSet](../android.util/AttributeSet.md)!`)` <br /> |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getMaximumAngle](../android/transition/ArcMotion.md))`()` Returns the maximum arc along the circle between two points. |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getMinimumHorizontalAngle](../android/transition/ArcMotion.md))`()` Returns the minimum arc along the circle between two points aligned near horizontally. |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getMinimumVerticalAngle](../android/transition/ArcMotion.md))`()` Returns the minimum arc along the circle between two points aligned near vertically. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getMaximumAngle](ArcMotion.md))`()` Returns the maximum arc along the circle between two points. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getMinimumHorizontalAngle](ArcMotion.md))`()` Returns the minimum arc along the circle between two points aligned near horizontally. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getMinimumVerticalAngle](ArcMotion.md))`()` Returns the minimum arc along the circle between two points aligned near vertically. |
 | --- | --- |
-| open [Path](../android/graphics/Path.md)! | [getPath](../android/transition/ArcMotion.md))`(`startX:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `startY:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `endX:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `endY:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMaximumAngle](../android/transition/ArcMotion.md))`(`angleInDegrees:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the maximum arc along the circle between two points. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMinimumHorizontalAngle](../android/transition/ArcMotion.md))`(`angleInDegrees:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the minimum arc along the circle between two points aligned near horizontally. |
+| open [Path](../android.graphics/Path.md)! | [getPath](ArcMotion.md))`(`startX:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `startY:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `endX:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `endY:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMaximumAngle](ArcMotion.md))`(`angleInDegrees:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the maximum arc along the circle between two points. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMinimumHorizontalAngle](ArcMotion.md))`(`angleInDegrees:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the minimum arc along the circle between two points aligned near horizontally. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMinimumVerticalAngle](../android/transition/ArcMotion.md))`(`angleInDegrees:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the minimum arc along the circle between two points aligned near vertically. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setMinimumVerticalAngle](ArcMotion.md))`(`angleInDegrees:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Sets the minimum arc along the circle between two points aligned near vertically. |
 
 ## Public constructors
 
@@ -142,7 +142,7 @@ open fun getPath(
 
 | Return ||
 |-------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Path](../android/graphics/Path.md)! | A Path along which the points should be interpolated. The returned Path must start at point`(startX, startY)`, typically using [android.graphics.Path#moveTo(float, float)](../android/graphics/Path.md))and end at`(endX, endY)`. |
+| [Path](../android.graphics/Path.md)! | A Path along which the points should be interpolated. The returned Path must start at point`(startX, startY)`, typically using [android.graphics.Path#moveTo(float, float)](../android.graphics/Path.md))and end at`(endX, endY)`. |
 
 ### setMaximumAngle
 

@@ -8,21 +8,21 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 @FunctionalInterface interface DoublePredicate
 ```
 
-| [java.util.function.DoublePredicate](../java/util/function/DoublePredicate.md) |
+| [java.util.function.DoublePredicate](DoublePredicate.md) |
 
-Represents a predicate (boolean-valued function) of one`double`-valued argument. This is the`double`-consuming primitive type specialization of [Predicate](../java/util/function/Predicate.md).
+Represents a predicate (boolean-valued function) of one`double`-valued argument. This is the`double`-consuming primitive type specialization of [Predicate](Predicate.md).
 
-This is a [functional interface](../java/util/function/_package.md) whose functional method is [test(double)](../java/util/function/DoublePredicate.md)).
+This is a [functional interface](_package.md) whose functional method is [test(double)](DoublePredicate.md)).
 
 ## Summary
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [DoublePredicate](../java/util/function/DoublePredicate.md)! | [and](../java/util/function/DoublePredicate.md))`(`other:` ` [DoublePredicate](../java/util/function/DoublePredicate.md)!`)` Returns a composed predicate that represents a short-circuiting logical AND of this predicate and another. |
-| open [DoublePredicate](../java/util/function/DoublePredicate.md)! | [negate](../java/util/function/DoublePredicate.md))`()` Returns a predicate that represents the logical negation of this predicate. |
-| open [DoublePredicate](../java/util/function/DoublePredicate.md)! | [or](../java/util/function/DoublePredicate.md))`(`other:` ` [DoublePredicate](../java/util/function/DoublePredicate.md)!`)` Returns a composed predicate that represents a short-circuiting logical OR of this predicate and another. |
+| open [DoublePredicate](DoublePredicate.md)! | [and](DoublePredicate.md))`(`other:` ` [DoublePredicate](DoublePredicate.md)!`)` Returns a composed predicate that represents a short-circuiting logical AND of this predicate and another. |
+| open [DoublePredicate](DoublePredicate.md)! | [negate](DoublePredicate.md))`()` Returns a predicate that represents the logical negation of this predicate. |
+| open [DoublePredicate](DoublePredicate.md)! | [or](DoublePredicate.md))`(`other:` ` [DoublePredicate](DoublePredicate.md)!`)` Returns a composed predicate that represents a short-circuiting logical OR of this predicate and another. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [test](../java/util/function/DoublePredicate.md))`(`value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Evaluates this predicate on the given argument. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [test](DoublePredicate.md))`(`value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Evaluates this predicate on the given argument. |
 
 ## Public methods
 
@@ -40,11 +40,11 @@ Any exceptions thrown during evaluation of either predicate are relayed to the c
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `other` | [DoublePredicate](../java/util/function/DoublePredicate.md)!:a predicate that will be logically-ANDed with this predicate |
+| `other` | [DoublePredicate](DoublePredicate.md)!:a predicate that will be logically-ANDed with this predicate |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| [DoublePredicate](../java/util/function/DoublePredicate.md)! | a composed predicate that represents the short-circuiting logical AND of this predicate and the`other`predicate |
+| [DoublePredicate](DoublePredicate.md)! | a composed predicate that represents the short-circuiting logical AND of this predicate and the`other`predicate |
 
 | Exceptions ||
 |----------------------------------|------------------|
@@ -62,7 +62,7 @@ Returns a predicate that represents the logical negation of this predicate.
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| [DoublePredicate](../java/util/function/DoublePredicate.md)! | a predicate that represents the logical negation of this predicate |
+| [DoublePredicate](DoublePredicate.md)! | a predicate that represents the logical negation of this predicate |
 
 ### or
 
@@ -78,11 +78,11 @@ Any exceptions thrown during evaluation of either predicate are relayed to the c
 
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `other` | [DoublePredicate](../java/util/function/DoublePredicate.md)!:a predicate that will be logically-ORed with this predicate |
+| `other` | [DoublePredicate](DoublePredicate.md)!:a predicate that will be logically-ORed with this predicate |
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| [DoublePredicate](../java/util/function/DoublePredicate.md)! | a composed predicate that represents the short-circuiting logical OR of this predicate and the`other`predicate |
+| [DoublePredicate](DoublePredicate.md)! | a composed predicate that represents the short-circuiting logical OR of this predicate and the`other`predicate |
 
 | Exceptions ||
 |----------------------------------|------------------|

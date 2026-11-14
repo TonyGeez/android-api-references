@@ -4,7 +4,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 
 # AudioFocusRequest
 
-Kotlin| [Java](../android/media/AudioFocusRequest.md) 
+Kotlin| [Java](AudioFocusRequest.md) 
 | --- | --- |
 
 ```
@@ -13,9 +13,9 @@ class AudioFocusRequest
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.AudioFocusRequest](../android/media/AudioFocusRequest.md) |
+| ↳ | [android.media.AudioFocusRequest](AudioFocusRequest.md) |
 
-A class to encapsulate information about an audio focus request. An`AudioFocusRequest`instance is built by [Builder](../android/media/AudioFocusRequest.Builder.md), and is used to request and abandon audio focus, respectively with [AudioManager.requestAudioFocus(AudioFocusRequest)](../android/media/AudioManager.md))and [AudioManager.abandonAudioFocusRequest(AudioFocusRequest)](../android/media/AudioManager.md)).
+A class to encapsulate information about an audio focus request. An`AudioFocusRequest`instance is built by [Builder](../android/media/AudioFocusRequest.Builder.md), and is used to request and abandon audio focus, respectively with [AudioManager.requestAudioFocus(AudioFocusRequest)](AudioManager.md))and [AudioManager.abandonAudioFocusRequest(AudioFocusRequest)](AudioManager.md)).
 
 ### What is audio focus?
 
@@ -31,33 +31,33 @@ Note: applications should not play anything until granted focus.
 
 There are four focus request types. A successful focus request with each will yield different behaviors by the system and the other application that previously held audio focus.
 
-- [AudioManager.AUDIOFOCUS_GAIN](../android/media/AudioManager.md) expresses the fact that your application is now the sole source of audio that the user is listening to. The duration of the audio playback is unknown, and is possibly very long: after the user finishes interacting with your application, (s)he doesn't expect another audio stream to resume. Examples of uses of this focus gain are for music playback, for a game or a video player.
-- [AudioManager.AUDIOFOCUS_GAIN_TRANSIENT](../android/media/AudioManager.md) is for a situation when you know your application is temporarily grabbing focus from the current owner, but the user expects playback to go back to where it was once your application no longer requires audio focus. An example is for playing an alarm, or during a VoIP call. The playback is known to be finite: the alarm will time-out or be dismissed, the VoIP call has a beginning and an end. When any of those events ends, and if the user was listening to music when it started, the user expects music to resume, but didn't wish to listen to both at the same time.
-- [AudioManager.AUDIOFOCUS_GAIN_TRANSIENT_MAY_DUCK](../android/media/AudioManager.md): this focus request type is similar to`AUDIOFOCUS_GAIN_TRANSIENT`for the temporary aspect of the focus request, but it also expresses the fact during the time you own focus, you allow another application to keep playing at a reduced volume, "ducked". Examples are when playing driving directions or notifications, it's ok for music to keep playing, but not loud enough that it would prevent the directions to be hard to understand. A typical attenuation by the "ducked" application is a factor of 0.2f (or -14dB), that can for instance be applied with`MediaPlayer.setVolume(0.2f)`when using this class for playback.
-- [AudioManager.AUDIOFOCUS_GAIN_TRANSIENT_EXCLUSIVE](../android/media/AudioManager.md) is also for a temporary request, but also expresses that your application expects the device to not play anything else. This is typically used if you are doing audio recording or speech recognition, and don't want for examples notifications to be played by the system during that time.
+- [AudioManager.AUDIOFOCUS_GAIN](AudioManager.md) expresses the fact that your application is now the sole source of audio that the user is listening to. The duration of the audio playback is unknown, and is possibly very long: after the user finishes interacting with your application, (s)he doesn't expect another audio stream to resume. Examples of uses of this focus gain are for music playback, for a game or a video player.
+- [AudioManager.AUDIOFOCUS_GAIN_TRANSIENT](AudioManager.md) is for a situation when you know your application is temporarily grabbing focus from the current owner, but the user expects playback to go back to where it was once your application no longer requires audio focus. An example is for playing an alarm, or during a VoIP call. The playback is known to be finite: the alarm will time-out or be dismissed, the VoIP call has a beginning and an end. When any of those events ends, and if the user was listening to music when it started, the user expects music to resume, but didn't wish to listen to both at the same time.
+- [AudioManager.AUDIOFOCUS_GAIN_TRANSIENT_MAY_DUCK](AudioManager.md): this focus request type is similar to`AUDIOFOCUS_GAIN_TRANSIENT`for the temporary aspect of the focus request, but it also expresses the fact during the time you own focus, you allow another application to keep playing at a reduced volume, "ducked". Examples are when playing driving directions or notifications, it's ok for music to keep playing, but not loud enough that it would prevent the directions to be hard to understand. A typical attenuation by the "ducked" application is a factor of 0.2f (or -14dB), that can for instance be applied with`MediaPlayer.setVolume(0.2f)`when using this class for playback.
+- [AudioManager.AUDIOFOCUS_GAIN_TRANSIENT_EXCLUSIVE](AudioManager.md) is also for a temporary request, but also expresses that your application expects the device to not play anything else. This is typically used if you are doing audio recording or speech recognition, and don't want for examples notifications to be played by the system during that time.
 
 An`AudioFocusRequest`instance always contains one of the four types of requests explained above. It is passed when building an`AudioFocusRequest`instance with its builder in the [Builder](../android/media/AudioFocusRequest.Builder.md) constructor [AudioFocusRequest.Builder.Builder(int)](../android/media/AudioFocusRequest.Builder.md)), or with [AudioFocusRequest.Builder.setFocusGain(int)](../android/media/AudioFocusRequest.Builder.md))after copying an existing instance with [AudioFocusRequest.Builder.Builder(AudioFocusRequest)](../android/media/AudioFocusRequest.Builder.md)).
-**Note:** If an app targets Android 15 (API level 35) or higher, it cannot request audio focus unless it's the top app or running a foreground service. This requirement is similar to the [requirements for audio playback](../media/media3/session/background-playback.md). If an app requests audio focus when it does not meet these requirements, the method returns [AudioManager.AUDIOFOCUS_REQUEST_FAILED](../android/media/AudioManager.md).
+**Note:** If an app targets Android 15 (API level 35) or higher, it cannot request audio focus unless it's the top app or running a foreground service. This requirement is similar to the [requirements for audio playback](../media/media3/session/background-playback.md). If an app requests audio focus when it does not meet these requirements, the method returns [AudioManager.AUDIOFOCUS_REQUEST_FAILED](AudioManager.md).
 
 ### Qualifying your focus request
 
 #### Use case requiring a focus request
 
-Any focus request is qualified by the [AudioAttributes](../android/media/AudioAttributes.md)(see [Builder.setAudioAttributes(AudioAttributes)](../android/media/AudioFocusRequest.Builder.md))) that describe the audio use case that will follow the request (once it's successful or granted). It is recommended to use the same`AudioAttributes`for the request as the attributes you are using for audio/media playback. 
-If no attributes are set, default attributes of [AudioAttributes.USAGE_MEDIA](../android/media/AudioAttributes.md) are used.
+Any focus request is qualified by the [AudioAttributes](AudioAttributes.md)(see [Builder.setAudioAttributes(AudioAttributes)](../android/media/AudioFocusRequest.Builder.md))) that describe the audio use case that will follow the request (once it's successful or granted). It is recommended to use the same`AudioAttributes`for the request as the attributes you are using for audio/media playback. 
+If no attributes are set, default attributes of [AudioAttributes.USAGE_MEDIA](AudioAttributes.md) are used.
 
 #### Delayed focus
 
 Audio focus can be "locked" by the system for a number of reasons: during a phone call, when the car to which the device is connected plays an emergency message... To support these situations, the application can request to be notified when its request is fulfilled, by flagging its request as accepting delayed focus, with [Builder.setAcceptsDelayedFocusGain(boolean)](../android/media/AudioFocusRequest.Builder.md)). 
-If focus is requested while being locked by the system, [AudioManager.requestAudioFocus(AudioFocusRequest)](../android/media/AudioManager.md))will return [AudioManager.AUDIOFOCUS_REQUEST_DELAYED](../android/media/AudioManager.md). When focus isn't locked anymore, the focus listener set with [Builder.setOnAudioFocusChangeListener(OnAudioFocusChangeListener)](../android/media/AudioFocusRequest.Builder.md))or with [Builder.setOnAudioFocusChangeListener(OnAudioFocusChangeListener, Handler)](../android/media/AudioFocusRequest.Builder.md))will be called to notify the application it now owns audio focus.
+If focus is requested while being locked by the system, [AudioManager.requestAudioFocus(AudioFocusRequest)](AudioManager.md))will return [AudioManager.AUDIOFOCUS_REQUEST_DELAYED](AudioManager.md). When focus isn't locked anymore, the focus listener set with [Builder.setOnAudioFocusChangeListener(OnAudioFocusChangeListener)](../android/media/AudioFocusRequest.Builder.md))or with [Builder.setOnAudioFocusChangeListener(OnAudioFocusChangeListener, Handler)](../android/media/AudioFocusRequest.Builder.md))will be called to notify the application it now owns audio focus.
 
 #### Pausing vs ducking
 
-When an application requested audio focus with [AudioManager.AUDIOFOCUS_GAIN_TRANSIENT_MAY_DUCK](../android/media/AudioManager.md), the system will duck the current focus owner.
+When an application requested audio focus with [AudioManager.AUDIOFOCUS_GAIN_TRANSIENT_MAY_DUCK](AudioManager.md), the system will duck the current focus owner.
 
-Note: this behavior is**new for Android O** , whereas applications targeting SDK level up to API 25 had to implement the ducking themselves when they received a focus loss of [AudioManager.AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK](../android/media/AudioManager.md).
+Note: this behavior is**new for Android O** , whereas applications targeting SDK level up to API 25 had to implement the ducking themselves when they received a focus loss of [AudioManager.AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK](AudioManager.md).
 
-But ducking is not always the behavior expected by the user. A typical example is when the device plays driving directions while the user is listening to an audio book or podcast, and expects the audio playback to pause, instead of duck, as it is hard to understand a navigation prompt and spoken content at the same time. Therefore the system will not automatically duck when it detects it would be ducking spoken content: such content is detected when the`AudioAttributes`of the player are qualified by [AudioAttributes.CONTENT_TYPE_SPEECH](../android/media/AudioAttributes.md). Refer for instance to [AudioAttributes.Builder.setContentType(int)](../android/media/AudioAttributes.Builder.md))and [MediaPlayer.setAudioAttributes(AudioAttributes)](../android/media/MediaPlayer.md))if you are writing a media playback application for audio book, podcasts... Since the system will not automatically duck applications that play speech, it calls their focus listener instead to notify them of [AudioManager.AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK](../android/media/AudioManager.md), so they can pause instead. Note that this behavior is independent of the use of`AudioFocusRequest`, but tied to the use of`AudioAttributes`.
+But ducking is not always the behavior expected by the user. A typical example is when the device plays driving directions while the user is listening to an audio book or podcast, and expects the audio playback to pause, instead of duck, as it is hard to understand a navigation prompt and spoken content at the same time. Therefore the system will not automatically duck when it detects it would be ducking spoken content: such content is detected when the`AudioAttributes`of the player are qualified by [AudioAttributes.CONTENT_TYPE_SPEECH](AudioAttributes.md). Refer for instance to [AudioAttributes.Builder.setContentType(int)](../android/media/AudioAttributes.Builder.md))and [MediaPlayer.setAudioAttributes(AudioAttributes)](MediaPlayer.md))if you are writing a media playback application for audio book, podcasts... Since the system will not automatically duck applications that play speech, it calls their focus listener instead to notify them of [AudioManager.AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK](AudioManager.md), so they can pause instead. Note that this behavior is independent of the use of`AudioFocusRequest`, but tied to the use of`AudioAttributes`.
 
 If your application requires pausing instead of ducking for any other reason than playing speech, you can also declare so with [Builder.setWillPauseWhenDucked(boolean)](../android/media/AudioFocusRequest.Builder.md)), which will cause the system to call your focus listener instead of automatically ducking.
 
@@ -149,15 +149,15 @@ The example below covers the following steps to be found in any application that
 
 | Nested classes ||
 |---|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](../android/media/AudioFocusRequest.Builder.md) Builder class for [AudioFocusRequest](../android/media/AudioFocusRequest.md) objects. |
+| | [Builder](../android/media/AudioFocusRequest.Builder.md) Builder class for [AudioFocusRequest](AudioFocusRequest.md) objects. |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [acceptsDelayedFocusGain](../android/media/AudioFocusRequest.md))`()` Returns whether the application that would use this`AudioFocusRequest`supports a focus gain granted after a temporary request failure. |
-| [AudioAttributes](../android/media/AudioAttributes.md) | [getAudioAttributes](../android/media/AudioFocusRequest.md))`()` Returns the [AudioAttributes](../android/media/AudioAttributes.md) set for this`AudioFocusRequest`, or the default attributes if none were set. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFocusGain](../android/media/AudioFocusRequest.md))`()` Returns the type of audio focus request configured for this`AudioFocusRequest`. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [acceptsDelayedFocusGain](AudioFocusRequest.md))`()` Returns whether the application that would use this`AudioFocusRequest`supports a focus gain granted after a temporary request failure. |
+| [AudioAttributes](AudioAttributes.md) | [getAudioAttributes](AudioFocusRequest.md))`()` Returns the [AudioAttributes](AudioAttributes.md) set for this`AudioFocusRequest`, or the default attributes if none were set. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getFocusGain](AudioFocusRequest.md))`()` Returns the type of audio focus request configured for this`AudioFocusRequest`. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [willPauseWhenDucked](../android/media/AudioFocusRequest.md))`()` Returns whether the application that would use this`AudioFocusRequest`would pause when it is requested to duck. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [willPauseWhenDucked](AudioFocusRequest.md))`()` Returns whether the application that would use this`AudioFocusRequest`would pause when it is requested to duck. |
 
 ## Public methods
 
@@ -183,11 +183,11 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 fun getAudioAttributes(): AudioAttributes
 ```
 
-Returns the [AudioAttributes](../android/media/AudioAttributes.md) set for this`AudioFocusRequest`, or the default attributes if none were set.
+Returns the [AudioAttributes](AudioAttributes.md) set for this`AudioFocusRequest`, or the default attributes if none were set.
 
 | Return ||
 |-------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
-| [AudioAttributes](../android/media/AudioAttributes.md) | non-null [AudioAttributes](../android/media/AudioAttributes.md). |
+| [AudioAttributes](AudioAttributes.md) | non-null [AudioAttributes](AudioAttributes.md). |
 
 ### getFocusGain
 
@@ -201,7 +201,7 @@ Returns the type of audio focus request configured for this`AudioFocusRequest`.
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | one of [AudioManager.AUDIOFOCUS_GAIN](../android/media/AudioManager.md), [AudioManager.AUDIOFOCUS_GAIN_TRANSIENT](../android/media/AudioManager.md), [AudioManager.AUDIOFOCUS_GAIN_TRANSIENT_MAY_DUCK](../android/media/AudioManager.md), and [AudioManager.AUDIOFOCUS_GAIN_TRANSIENT_EXCLUSIVE](../android/media/AudioManager.md). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | one of [AudioManager.AUDIOFOCUS_GAIN](AudioManager.md), [AudioManager.AUDIOFOCUS_GAIN_TRANSIENT](AudioManager.md), [AudioManager.AUDIOFOCUS_GAIN_TRANSIENT_MAY_DUCK](AudioManager.md), and [AudioManager.AUDIOFOCUS_GAIN_TRANSIENT_EXCLUSIVE](AudioManager.md). |
 
 ### willPauseWhenDucked
 

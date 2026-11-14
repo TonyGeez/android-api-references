@@ -18,13 +18,13 @@ interface OnBufferAvailableListener
 |
 | Deprecated in Java.
 
-Interface to handle notification when new buffers are available via [USAGE_IO_INPUT](../android/renderscript/Allocation.md). An application will receive one notification when a buffer is available. Additional buffers will not trigger new notifications until a buffer is processed.
+Interface to handle notification when new buffers are available via [USAGE_IO_INPUT](Allocation.md). An application will receive one notification when a buffer is available. Additional buffers will not trigger new notifications until a buffer is processed.
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onBufferAvailable](../android/renderscript/Allocation.OnBufferAvailableListener.md))`(`a:` ` [Allocation](../android/renderscript/Allocation.md)!`)` <br /> |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onBufferAvailable](../android/renderscript/Allocation.OnBufferAvailableListener.md))`(`a:` ` [Allocation](Allocation.md)!`)` <br /> |
 
 ## Public methods
 

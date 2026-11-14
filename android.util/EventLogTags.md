@@ -5,7 +5,7 @@ Deprecated in [API level 9](https://developer.android.com/guide/topics/manifest/
 
 # EventLogTags
 
-Kotlin| [Java](../android/util/EventLogTags.md) 
+Kotlin| [Java](EventLogTags.md) 
 | --- | --- |
 
 ```
@@ -14,11 +14,11 @@ open class EventLogTags
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.util.EventLogTags](../android/util/EventLogTags.md) |
+| ↳ | [android.util.EventLogTags](EventLogTags.md) |
 
 | **This class was deprecated in API level 9.**
 |
-| This class is no longer functional. Use [android.util.EventLog](../android/util/EventLog.md) instead.
+| This class is no longer functional. Use [android.util.EventLog](EventLog.md) instead.
 
 ## Summary
 
@@ -28,13 +28,13 @@ open class EventLogTags
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [EventLogTags](../android/util/EventLogTags.md))`()` <br /> |
-| [EventLogTags](../android/util/EventLogTags.md))`(`input:` ` [BufferedReader](../java/io/BufferedReader.md)!`)` <br /> |
+| [EventLogTags](EventLogTags.md))`()` <br /> |
+| [EventLogTags](EventLogTags.md))`(`input:` ` [BufferedReader](../java.io/BufferedReader.md)!`)` <br /> |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [EventLogTags.Description](../android/util/EventLogTags.Description.md)! | [get](../android/util/EventLogTags.md))`(`tag:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| open [EventLogTags.Description](../android/util/EventLogTags.Description.md)! | [get](../android/util/EventLogTags.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| open [EventLogTags.Description](../android/util/EventLogTags.Description.md)! | [get](EventLogTags.md))`(`tag:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [EventLogTags.Description](../android/util/EventLogTags.Description.md)! | [get](EventLogTags.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
 
 ## Public constructors
 

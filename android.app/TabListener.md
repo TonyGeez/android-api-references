@@ -24,9 +24,9 @@ Callback interface invoked when a tab is focused, unfocused, added, or removed.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTabReselected](../android/app/ActionBar.TabListener.md))`(`tab:` ` [ActionBar.Tab](../android/app/ActionBar.Tab.md)!`, `ft:` ` [FragmentTransaction](../android/app/FragmentTransaction.md)!`)` Called when a tab that is already selected is chosen again by the user. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTabSelected](../android/app/ActionBar.TabListener.md))`(`tab:` ` [ActionBar.Tab](../android/app/ActionBar.Tab.md)!`, `ft:` ` [FragmentTransaction](../android/app/FragmentTransaction.md)!`)` Called when a tab enters the selected state. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTabUnselected](../android/app/ActionBar.TabListener.md))`(`tab:` ` [ActionBar.Tab](../android/app/ActionBar.Tab.md)!`, `ft:` ` [FragmentTransaction](../android/app/FragmentTransaction.md)!`)` Called when a tab exits the selected state. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTabReselected](../android/app/ActionBar.TabListener.md))`(`tab:` ` [ActionBar.Tab](../android/app/ActionBar.Tab.md)!`, `ft:` ` [FragmentTransaction](FragmentTransaction.md)!`)` Called when a tab that is already selected is chosen again by the user. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTabSelected](../android/app/ActionBar.TabListener.md))`(`tab:` ` [ActionBar.Tab](../android/app/ActionBar.Tab.md)!`, `ft:` ` [FragmentTransaction](FragmentTransaction.md)!`)` Called when a tab enters the selected state. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTabUnselected](../android/app/ActionBar.TabListener.md))`(`tab:` ` [ActionBar.Tab](../android/app/ActionBar.Tab.md)!`, `ft:` ` [FragmentTransaction](FragmentTransaction.md)!`)` Called when a tab exits the selected state. |
 | --- | --- |
 
 ## Public methods
@@ -49,7 +49,7 @@ Called when a tab that is already selected is chosen again by the user. Some app
 | Parameters ||
 |-------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `tab` | [ActionBar.Tab](../android/app/ActionBar.Tab.md)!:The tab that was reselected. |
-| `ft` | [FragmentTransaction](../android/app/FragmentTransaction.md)!:A [FragmentTransaction](../android/app/FragmentTransaction.md) for queuing fragment operations to execute once this method returns. This FragmentTransaction does not support being added to the back stack. |
+| `ft` | [FragmentTransaction](FragmentTransaction.md)!:A [FragmentTransaction](FragmentTransaction.md) for queuing fragment operations to execute once this method returns. This FragmentTransaction does not support being added to the back stack. |
 
 ### onTabSelected
 
@@ -69,7 +69,7 @@ Called when a tab enters the selected state.
 | Parameters ||
 |-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `tab` | [ActionBar.Tab](../android/app/ActionBar.Tab.md)!:The tab that was selected |
-| `ft` | [FragmentTransaction](../android/app/FragmentTransaction.md)!:A [FragmentTransaction](../android/app/FragmentTransaction.md) for queuing fragment operations to execute during a tab switch. The previous tab's unselect and this tab's select will be executed in a single transaction. This FragmentTransaction does not support being added to the back stack. |
+| `ft` | [FragmentTransaction](FragmentTransaction.md)!:A [FragmentTransaction](FragmentTransaction.md) for queuing fragment operations to execute during a tab switch. The previous tab's unselect and this tab's select will be executed in a single transaction. This FragmentTransaction does not support being added to the back stack. |
 
 ### onTabUnselected
 
@@ -89,4 +89,4 @@ Called when a tab exits the selected state.
 | Parameters ||
 |-------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `tab` | [ActionBar.Tab](../android/app/ActionBar.Tab.md)!:The tab that was unselected |
-| `ft` | [FragmentTransaction](../android/app/FragmentTransaction.md)!:A [FragmentTransaction](../android/app/FragmentTransaction.md) for queuing fragment operations to execute during a tab switch. This tab's unselect and the newly selected tab's select will be executed in a single transaction. This FragmentTransaction does not support being added to the back stack. |
+| `ft` | [FragmentTransaction](FragmentTransaction.md)!:A [FragmentTransaction](FragmentTransaction.md) for queuing fragment operations to execute during a tab switch. This tab's unselect and the newly selected tab's select will be executed in a single transaction. This FragmentTransaction does not support being added to the back stack. |

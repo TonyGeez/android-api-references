@@ -4,7 +4,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 
 # SpellCheckerSession
 
-Kotlin| [Java](../android/view/textservice/SpellCheckerSession.md) 
+Kotlin| [Java](SpellCheckerSession.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class SpellCheckerSession
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.textservice.SpellCheckerSession](../android/view/textservice/SpellCheckerSession.md) |
+| ↳ | [android.view.textservice.SpellCheckerSession](SpellCheckerSession.md) |
 
 The SpellCheckerSession interface provides the per client functionality of SpellCheckerService.
 
@@ -21,19 +21,19 @@ The SpellCheckerSession interface provides the per client functionality of Spell
 
 <br />
 
-In most cases, applications that are using the standard [android.widget.TextView](../android/widget/TextView.md) or its subclasses will have little they need to do to work well with spell checker services. The main things you need to be aware of are:
+In most cases, applications that are using the standard [android.widget.TextView](../android.widget/TextView.md) or its subclasses will have little they need to do to work well with spell checker services. The main things you need to be aware of are:
 
 - Properly set the [android.R.attr#inputType](../android/R.attr.md) in your editable text views, so that the spell checker will have enough context to help the user in editing text in them.
 
-For the rare people amongst us writing client applications that use the spell checker service directly, you will need to use [getSuggestions(android.view.textservice.TextInfo,int)](../android/view/textservice/SpellCheckerSession.md))or[getSuggestions(android.view.textservice.TextInfo[],int,boolean)](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSession#getSuggestions(kotlin.Array,%20kotlin.Int,%20kotlin.Boolean))for obtaining results from the spell checker service by yourself.
+For the rare people amongst us writing client applications that use the spell checker service directly, you will need to use [getSuggestions(android.view.textservice.TextInfo,int)](SpellCheckerSession.md))or[getSuggestions(android.view.textservice.TextInfo[],int,boolean)](https://developer.android.com/reference/kotlin/android/view/textservice/SpellCheckerSession#getSuggestions(kotlin.Array,%20kotlin.Int,%20kotlin.Boolean))for obtaining results from the spell checker service by yourself.
 
 ### Security
 
-There are a lot of security issues associated with spell checkers, since they could monitor all the text being sent to them through, for instance, [android.widget.TextView](../android/widget/TextView.md). The Android spell checker framework also allows arbitrary third party spell checkers, so care must be taken to restrict their selection and interactions.
+There are a lot of security issues associated with spell checkers, since they could monitor all the text being sent to them through, for instance, [android.widget.TextView](../android.widget/TextView.md). The Android spell checker framework also allows arbitrary third party spell checkers, so care must be taken to restrict their selection and interactions.
 
 Here are some key points about the security architecture behind the spell checker framework:
 
-- Only the system is allowed to directly access a spell checker framework's [android.service.textservice.SpellCheckerService](../android/service/textservice/SpellCheckerService.md) interface, via the [android.Manifest.permission#BIND_TEXT_SERVICE](../android/Manifest.permission.md) permission. This is enforced in the system by not binding to a spell checker service that does not require this permission.
+- Only the system is allowed to directly access a spell checker framework's [android.service.textservice.SpellCheckerService](../android.service.textservice/SpellCheckerService.md) interface, via the [android.Manifest.permission#BIND_TEXT_SERVICE](../android/Manifest.permission.md) permission. This is enforced in the system by not binding to a spell checker service that does not require this permission.
 - The user must explicitly enable a new spell checker in settings before they can be enabled, to confirm with the system that they know about it and want to make it available for use.
 
 ## Summary
@@ -41,27 +41,27 @@ Here are some key points about the security architecture behind the spell checke
 | Nested classes ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | abstract | [SpellCheckerSessionListener](../android/view/textservice/SpellCheckerSession.SpellCheckerSessionListener.md) Callback for getting results from text services |
-| open | [SpellCheckerSessionParams](../android/view/textservice/SpellCheckerSession.SpellCheckerSessionParams.md) Parameters used to create a [SpellCheckerSession](../android/view/textservice/SpellCheckerSession.md). |
+| open | [SpellCheckerSessionParams](../android/view/textservice/SpellCheckerSession.SpellCheckerSessionParams.md) Parameters used to create a [SpellCheckerSession](SpellCheckerSession.md). |
 
 | Constants ||
 |----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SERVICE_META_DATA](../android/view/textservice/SpellCheckerSession.md) Name under which a SpellChecker service component publishes information about itself. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SERVICE_META_DATA](SpellCheckerSession.md) Name under which a SpellChecker service component publishes information about itself. |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [cancel](../android/view/textservice/SpellCheckerSession.md))`()` Cancel pending and running spell check tasks |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../android/view/textservice/SpellCheckerSession.md))`()` Finish this session and allow TextServicesManagerService to disconnect the bound spell checker. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getSentenceSuggestions](../android/view/textservice/SpellCheckerSession.md))`(`textInfos:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [TextInfo](../android/view/textservice/TextInfo.md)!>!`, `suggestionsLimit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get suggestions from the specified sentences |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [cancel](SpellCheckerSession.md))`()` Cancel pending and running spell check tasks |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](SpellCheckerSession.md))`()` Finish this session and allow TextServicesManagerService to disconnect the bound spell checker. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getSentenceSuggestions](SpellCheckerSession.md))`(`textInfos:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [TextInfo](TextInfo.md)!>!`, `suggestionsLimit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get suggestions from the specified sentences |
 | --- | --- |
-| open [SpellCheckerInfo](../android/view/textservice/SpellCheckerInfo.md)! | [getSpellChecker](../android/view/textservice/SpellCheckerSession.md))`()` Get the spell checker service info this spell checker session has. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getSuggestions](../android/view/textservice/SpellCheckerSession.md))`(`textInfo:` ` [TextInfo](../android/view/textservice/TextInfo.md)!`, `suggestionsLimit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get candidate strings for a substring of the specified text. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getSuggestions](../android/view/textservice/SpellCheckerSession.md))`(`textInfos:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [TextInfo](../android/view/textservice/TextInfo.md)!>!`, `suggestionsLimit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `sequentialWords:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` A batch process of getSuggestions |
+| open [SpellCheckerInfo](SpellCheckerInfo.md)! | [getSpellChecker](SpellCheckerSession.md))`()` Get the spell checker service info this spell checker session has. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getSuggestions](SpellCheckerSession.md))`(`textInfo:` ` [TextInfo](TextInfo.md)!`, `suggestionsLimit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get candidate strings for a substring of the specified text. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getSuggestions](SpellCheckerSession.md))`(`textInfos:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [TextInfo](TextInfo.md)!>!`, `suggestionsLimit:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `sequentialWords:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` A batch process of getSuggestions |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSessionDisconnected](../android/view/textservice/SpellCheckerSession.md))`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSessionDisconnected](SpellCheckerSession.md))`()` <br /> |
 
 | Protected methods ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](../android/view/textservice/SpellCheckerSession.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](SpellCheckerSession.md))`()` <br /> |
 
 ## Constants
 
@@ -114,7 +114,7 @@ Get suggestions from the specified sentences
 
 | Parameters ||
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `textInfos` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [TextInfo](../android/view/textservice/TextInfo.md)!\>!:an array of text metadata for a spell checker |
+| `textInfos` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [TextInfo](TextInfo.md)!\>!:an array of text metadata for a spell checker |
 | `suggestionsLimit` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the maximum number of suggestions that will be returned |
 
 ### getSpellChecker
@@ -129,7 +129,7 @@ Get the spell checker service info this spell checker session has.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------|--------------------------------------------|
-| [SpellCheckerInfo](../android/view/textservice/SpellCheckerInfo.md)! | SpellCheckerInfo for the specified locale. |
+| [SpellCheckerInfo](SpellCheckerInfo.md)! | SpellCheckerInfo for the specified locale. |
 
 ### getSuggestions
 
@@ -149,7 +149,7 @@ Get candidate strings for a substring of the specified text.
 
 | Parameters ||
 |--------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| `textInfo` | [TextInfo](../android/view/textservice/TextInfo.md)!:text metadata for a spell checker |
+| `textInfo` | [TextInfo](TextInfo.md)!:text metadata for a spell checker |
 | `suggestionsLimit` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the maximum number of suggestions that will be returned |
 
 ### getSuggestions
@@ -171,7 +171,7 @@ A batch process of getSuggestions
 
 | Parameters ||
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `textInfos` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [TextInfo](../android/view/textservice/TextInfo.md)!\>!:an array of text metadata for a spell checker |
+| `textInfos` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [TextInfo](TextInfo.md)!\>!:an array of text metadata for a spell checker |
 | `suggestionsLimit` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the maximum number of suggestions that will be returned |
 | `sequentialWords` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html):true if textInfos can be treated as sequential words. |
 | --- | --- |

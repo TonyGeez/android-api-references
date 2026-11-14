@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # LocalSocketAddress
 
-Kotlin | [Java](../android/net/LocalSocketAddress.md) 
+Kotlin | [Java](LocalSocketAddress.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class LocalSocketAddress
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.LocalSocketAddress](../android/net/LocalSocketAddress.md) |
+| ↳ | [android.net.LocalSocketAddress](LocalSocketAddress.md) |
 
 A UNIX-domain (AF_LOCAL) socket address. For use with android.net.LocalSocket and android.net.LocalServerSocket. On the Android system, these names refer to names in the Linux abstract (non-filesystem) UNIX domain namespace.
 
@@ -25,13 +25,13 @@ A UNIX-domain (AF_LOCAL) socket address. For use with android.net.LocalSocket an
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [LocalSocketAddress](../android/net/LocalSocketAddress.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates an instance with a given name in the [Namespace.ABSTRACT](../android/net/LocalSocketAddress.Namespace.md) namespace |
-| [LocalSocketAddress](../android/net/LocalSocketAddress.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `namespace:` ` [LocalSocketAddress.Namespace](../android/net/LocalSocketAddress.Namespace.md)!`)` Creates an instance with a given name. |
+| [LocalSocketAddress](LocalSocketAddress.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates an instance with a given name in the [Namespace.ABSTRACT](../android/net/LocalSocketAddress.Namespace.md) namespace |
+| [LocalSocketAddress](LocalSocketAddress.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `namespace:` ` [LocalSocketAddress.Namespace](../android/net/LocalSocketAddress.Namespace.md)!`)` Creates an instance with a given name. |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](../android/net/LocalSocketAddress.md))`()` Retrieves the string name of this address |
-| open [LocalSocketAddress.Namespace](../android/net/LocalSocketAddress.Namespace.md)! | [getNamespace](../android/net/LocalSocketAddress.md))`()` Returns the namespace used by this address. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](LocalSocketAddress.md))`()` Retrieves the string name of this address |
+| open [LocalSocketAddress.Namespace](../android/net/LocalSocketAddress.Namespace.md)! | [getNamespace](LocalSocketAddress.md))`()` Returns the namespace used by this address. |
 
 ## Public constructors
 

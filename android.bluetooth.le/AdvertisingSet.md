@@ -4,7 +4,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 
 # AdvertisingSet
 
-Kotlin | [Java](../android/bluetooth/le/AdvertisingSet.md) 
+Kotlin | [Java](AdvertisingSet.md) 
 | --- | --- |
 
 ```
@@ -13,25 +13,25 @@ class AdvertisingSet
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.bluetooth.le.AdvertisingSet](../android/bluetooth/le/AdvertisingSet.md) |
+| ↳ | [android.bluetooth.le.AdvertisingSet](AdvertisingSet.md) |
 
 This class provides a way to control single Bluetooth LE advertising instance.
 
-To get an instance of [AdvertisingSet](../android/bluetooth/le/AdvertisingSet.md), call the android.bluetooth.le.BluetoothLeAdvertiser#startAdvertisingSet method.
+To get an instance of [AdvertisingSet](AdvertisingSet.md), call the android.bluetooth.le.BluetoothLeAdvertiser#startAdvertisingSet method.
 
 ## Summary
 
 | Public methods ||
 |------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [enableAdvertising](../android/bluetooth/le/AdvertisingSet.md))`(`enable:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `duration:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `maxExtendedAdvertisingEvents:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Enables Advertising. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAdvertisingData](../android/bluetooth/le/AdvertisingSet.md))`(`advertiseData:` ` [AdvertiseData](../android/bluetooth/le/AdvertiseData.md)!`)` Set/update data being Advertised. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAdvertisingParameters](../android/bluetooth/le/AdvertisingSet.md))`(`parameters:` ` [AdvertisingSetParameters](../android/bluetooth/le/AdvertisingSetParameters.md)!`)` Update advertising parameters associated with this AdvertisingSet. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [enableAdvertising](AdvertisingSet.md))`(`enable:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `duration:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `maxExtendedAdvertisingEvents:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Enables Advertising. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAdvertisingData](AdvertisingSet.md))`(`advertiseData:` ` [AdvertiseData](AdvertiseData.md)!`)` Set/update data being Advertised. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setAdvertisingParameters](AdvertisingSet.md))`(`parameters:` ` [AdvertisingSetParameters](AdvertisingSetParameters.md)!`)` Update advertising parameters associated with this AdvertisingSet. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPeriodicAdvertisingData](../android/bluetooth/le/AdvertisingSet.md))`(`periodicData:` ` [AdvertiseData](../android/bluetooth/le/AdvertiseData.md)!`)` Used to set periodic advertising data, must be called after setPeriodicAdvertisingParameters, or after advertising was started with periodic advertising data set. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPeriodicAdvertisingEnabled](../android/bluetooth/le/AdvertisingSet.md))`(`enable:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Used to enable/disable periodic advertising. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPeriodicAdvertisingParameters](../android/bluetooth/le/AdvertisingSet.md))`(`parameters:` ` [PeriodicAdvertisingParameters](../android/bluetooth/le/PeriodicAdvertisingParameters.md)!`)` Update periodic advertising parameters associated with this set. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPeriodicAdvertisingData](AdvertisingSet.md))`(`periodicData:` ` [AdvertiseData](AdvertiseData.md)!`)` Used to set periodic advertising data, must be called after setPeriodicAdvertisingParameters, or after advertising was started with periodic advertising data set. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPeriodicAdvertisingEnabled](AdvertisingSet.md))`(`enable:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Used to enable/disable periodic advertising. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPeriodicAdvertisingParameters](AdvertisingSet.md))`(`parameters:` ` [PeriodicAdvertisingParameters](PeriodicAdvertisingParameters.md)!`)` Update periodic advertising parameters associated with this set. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setScanResponseData](../android/bluetooth/le/AdvertisingSet.md))`(`scanResponse:` ` [AdvertiseData](../android/bluetooth/le/AdvertiseData.md)!`)` Set/update scan response data. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setScanResponseData](AdvertisingSet.md))`(`scanResponse:` ` [AdvertiseData](AdvertiseData.md)!`)` Set/update scan response data. |
 
 ## Public methods
 
@@ -76,7 +76,7 @@ Requires [android.Manifest.permission#BLUETOOTH_ADVERTISE](../android/Manifest.p
 
 | Parameters ||
 |-----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `advertiseData` | [AdvertiseData](../android/bluetooth/le/AdvertiseData.md)!: Advertisement data to be broadcasted. Size must not exceed [android.bluetooth.BluetoothAdapter#getLeMaximumAdvertisingDataLength](../android/bluetooth/BluetoothAdapter.md)). If the advertisement is connectable, three bytes will be added for flags. If the update takes place when the advertising set is enabled, the data can be maximum 251 bytes long. |
+| `advertiseData` | [AdvertiseData](AdvertiseData.md)!: Advertisement data to be broadcasted. Size must not exceed [android.bluetooth.BluetoothAdapter#getLeMaximumAdvertisingDataLength](../android.bluetooth/BluetoothAdapter.md)). If the advertisement is connectable, three bytes will be added for flags. If the update takes place when the advertising set is enabled, the data can be maximum 251 bytes long. |
 
 ### setAdvertisingParameters
 
@@ -94,7 +94,7 @@ For apps targeting [Build.VERSION_CODES.S](../android/os/Build.VERSION_CODES.md)
 
 | Parameters ||
 |--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `parameters` | [AdvertisingSetParameters](../android/bluetooth/le/AdvertisingSetParameters.md)!: advertising set parameters. |
+| `parameters` | [AdvertisingSetParameters](AdvertisingSetParameters.md)!: advertising set parameters. |
 
 ### setPeriodicAdvertisingData
 
@@ -111,7 +111,7 @@ Requires [android.Manifest.permission#BLUETOOTH_ADVERTISE](../android/Manifest.p
 
 | Parameters ||
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `periodicData` | [AdvertiseData](../android/bluetooth/le/AdvertiseData.md)!: Periodic advertising data. Size must not exceed [android.bluetooth.BluetoothAdapter#getLeMaximumAdvertisingDataLength](../android/bluetooth/BluetoothAdapter.md)). If the update takes place when the periodic advertising is enabled for this set, the data can be maximum 251 bytes long. |
+| `periodicData` | [AdvertiseData](AdvertiseData.md)!: Periodic advertising data. Size must not exceed [android.bluetooth.BluetoothAdapter#getLeMaximumAdvertisingDataLength](../android.bluetooth/BluetoothAdapter.md)). If the update takes place when the periodic advertising is enabled for this set, the data can be maximum 251 bytes long. |
 
 ### setPeriodicAdvertisingEnabled
 
@@ -158,4 +158,4 @@ Requires [android.Manifest.permission#BLUETOOTH_ADVERTISE](../android/Manifest.p
 
 | Parameters ||
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `scanResponse` | [AdvertiseData](../android/bluetooth/le/AdvertiseData.md)!: Scan response associated with the advertisement data. Size must not exceed [BluetoothAdapter.getLeMaximumAdvertisingDataLength](../android/bluetooth/BluetoothAdapter.md)). If the update takes place when the advertising set is enabled, the data can be maximum 251 bytes long. |
+| `scanResponse` | [AdvertiseData](AdvertiseData.md)!: Scan response associated with the advertisement data. Size must not exceed [BluetoothAdapter.getLeMaximumAdvertisingDataLength](../android.bluetooth/BluetoothAdapter.md)). If the update takes place when the advertising set is enabled, the data can be maximum 251 bytes long. |

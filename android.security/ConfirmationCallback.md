@@ -4,7 +4,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 
 # ConfirmationCallback
 
-Kotlin| [Java](../android/security/ConfirmationCallback.md) 
+Kotlin| [Java](ConfirmationCallback.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ abstract class ConfirmationCallback
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.security.ConfirmationCallback](../android/security/ConfirmationCallback.md) |
+| ↳ | [android.security.ConfirmationCallback](ConfirmationCallback.md) |
 
 Callback class used when signaling that a prompt is no longer being presented.
 
@@ -21,15 +21,15 @@ Callback class used when signaling that a prompt is no longer being presented.
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ConfirmationCallback](../android/security/ConfirmationCallback.md))`()` <br /> |
+| [ConfirmationCallback](ConfirmationCallback.md))`()` <br /> |
 
 | Public methods ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onCanceled](../android/security/ConfirmationCallback.md))`()` Called when the requested prompt was dismissed by the application. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onConfirmed](../android/security/ConfirmationCallback.md))`(`dataThatWasConfirmed:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`)` Called when the requested prompt was accepted by the user. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDismissed](../android/security/ConfirmationCallback.md))`()` Called when the requested prompt was dismissed (not accepted) by the user. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onCanceled](ConfirmationCallback.md))`()` Called when the requested prompt was dismissed by the application. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onConfirmed](ConfirmationCallback.md))`(`dataThatWasConfirmed:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`)` Called when the requested prompt was accepted by the user. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDismissed](ConfirmationCallback.md))`()` Called when the requested prompt was dismissed (not accepted) by the user. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onError](../android/security/ConfirmationCallback.md))`(`e:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Called when the requested prompt was dismissed because of a low-level error. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onError](ConfirmationCallback.md))`(`e:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Called when the requested prompt was dismissed because of a low-level error. |
 
 ## Public constructors
 

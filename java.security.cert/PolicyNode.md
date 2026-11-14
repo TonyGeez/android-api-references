@@ -8,7 +8,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface PolicyNode
 ```
 
-| [java.security.cert.PolicyNode](../java/security/cert/PolicyNode.md) |
+| [java.security.cert.PolicyNode](PolicyNode.md) |
 
 An immutable valid policy tree node as defined by the PKIX certification path validation algorithm.
 
@@ -16,7 +16,7 @@ One of the outputs of the PKIX certification path validation algorithm is a vali
 
 Most applications will not need to examine the valid policy tree. They can achieve their policy processing goals by setting the policy-related parameters in`PKIXParameters`. However, the valid policy tree is available for more sophisticated applications, especially those that process policy qualifiers.
 
-[PKIXCertPathValidatorResult.getPolicyTree](../java/security/cert/PKIXCertPathValidatorResult.md))returns the root node of the valid policy tree. The tree can be traversed using the [getChildren](../java/security/cert/PolicyNode.md))and [getParent](../java/security/cert/PolicyNode.md))methods. Data about a particular node can be retrieved using other methods of`PolicyNode`.
+[PKIXCertPathValidatorResult.getPolicyTree](PKIXCertPathValidatorResult.md))returns the root node of the valid policy tree. The tree can be traversed using the [getChildren](PolicyNode.md))and [getParent](PolicyNode.md))methods. Data about a particular node can be retrieved using other methods of`PolicyNode`.
 
 **Concurrent Access**
 
@@ -26,15 +26,15 @@ All`PolicyNode`objects must be immutable and thread-safe. Multiple threads may c
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\< [PolicyNode](../java/security/cert/PolicyNode.md)!\>! | [getChildren](../java/security/cert/PolicyNode.md))`()` Returns an iterator over the children of this node. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDepth](../java/security/cert/PolicyNode.md))`()` Returns the depth of this node in the valid policy tree. |
-| abstract [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getExpectedPolicies](../java/security/cert/PolicyNode.md))`()` Returns the set of expected policies that would satisfy this node's valid policy in the next certificate to be processed. |
+| abstract [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)\< [PolicyNode](PolicyNode.md)!\>! | [getChildren](PolicyNode.md))`()` Returns an iterator over the children of this node. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDepth](PolicyNode.md))`()` Returns the depth of this node in the valid policy tree. |
+| abstract [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [getExpectedPolicies](PolicyNode.md))`()` Returns the set of expected policies that would satisfy this node's valid policy in the next certificate to be processed. |
 | --- | --- |
-| abstract [PolicyNode](../java/security/cert/PolicyNode.md)! | [getParent](../java/security/cert/PolicyNode.md))`()` Returns the parent of this node, or`null`if this is the root node. |
-| abstract [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<out [PolicyQualifierInfo](../java/security/cert/PolicyQualifierInfo.md)!\>! | [getPolicyQualifiers](../java/security/cert/PolicyNode.md))`()` Returns the set of policy qualifiers associated with the valid policy represented by this node. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getValidPolicy](../java/security/cert/PolicyNode.md))`()` Returns the valid policy represented by this node. |
+| abstract [PolicyNode](PolicyNode.md)! | [getParent](PolicyNode.md))`()` Returns the parent of this node, or`null`if this is the root node. |
+| abstract [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<out [PolicyQualifierInfo](PolicyQualifierInfo.md)!\>! | [getPolicyQualifiers](PolicyNode.md))`()` Returns the set of policy qualifiers associated with the valid policy represented by this node. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getValidPolicy](PolicyNode.md))`()` Returns the valid policy represented by this node. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isCritical](../java/security/cert/PolicyNode.md))`()` Returns the criticality indicator of the certificate policy extension in the most recently processed certificate. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isCritical](PolicyNode.md))`()` Returns the criticality indicator of the certificate policy extension in the most recently processed certificate. |
 
 ## Public methods
 
@@ -50,7 +50,7 @@ Returns an iterator over the children of this node. Any attempts to modify the c
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------|
-| [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)< [PolicyNode](../java/security/cert/PolicyNode.md)!>! | an iterator over the children of this node |
+| [MutableIterator](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-iterator/index.html)< [PolicyNode](PolicyNode.md)!>! | an iterator over the children of this node |
 
 ### getDepth
 
@@ -92,7 +92,7 @@ Returns the parent of this node, or`null`if this is the root node.
 
 | Return ||
 |----------------------------------------------------------------------------------------------|-----------------------------------------------------------|
-| [PolicyNode](../java/security/cert/PolicyNode.md)! | the parent of this node, or`null`if this is the root node |
+| [PolicyNode](PolicyNode.md)! | the parent of this node, or`null`if this is the root node |
 
 ### getPolicyQualifiers
 
@@ -106,7 +106,7 @@ Returns the set of policy qualifiers associated with the valid policy represente
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)<out` ` [PolicyQualifierInfo](../java/security/cert/PolicyQualifierInfo.md)!>! | an immutable`Set`of`PolicyQualifierInfo`s. For the root node, this is always an empty`Set`. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)<out` ` [PolicyQualifierInfo](PolicyQualifierInfo.md)!>! | an immutable`Set`of`PolicyQualifierInfo`s. For the root node, this is always an empty`Set`. |
 
 ### getValidPolicy
 

@@ -2,7 +2,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 
 # AppComponentFactory
 
-Kotlin | [Java](../android/app/AppComponentFactory.md)
+Kotlin | [Java](AppComponentFactory.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ open class AppComponentFactory
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.AppComponentFactory](../android/app/AppComponentFactory.md) |
+| ↳ | [android.app.AppComponentFactory](AppComponentFactory.md) |
 
 Interface used to control the instantiation of manifest elements.
 
@@ -23,13 +23,13 @@ Interface used to control the instantiation of manifest elements.
 
 | Public methods ||
 |---|---|
-| open [Activity](../android/app/Activity.md) | `https://developer.android.com/reference/kotlin/android/app/AppComponentFactory#instantiateActivity(java.lang.ClassLoader,%20kotlin.String,%20android.content.Intent)(cl: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#, className: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#?)` Allows application to override the creation of activities. |
-| open [Application](../android/app/Application.md) | `https://developer.android.com/reference/kotlin/android/app/AppComponentFactory#instantiateApplication(java.lang.ClassLoader,%20kotlin.String)(cl: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#, className: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Allows application to override the creation of the application object. |
-| open [ClassLoader](../java/lang/ClassLoader.md) | `https://developer.android.com/reference/kotlin/android/app/AppComponentFactory#instantiateClassLoader(java.lang.ClassLoader,%20android.content.pm.ApplicationInfo)(cl: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#, aInfo: https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#)` Selects the class loader which will be used by the platform to instantiate app components. |
+| open [Activity](Activity.md) | `https://developer.android.com/reference/kotlin/android/app/AppComponentFactory#instantiateActivity(java.lang.ClassLoader,%20kotlin.String,%20android.content.Intent)(cl: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#, className: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#?)` Allows application to override the creation of activities. |
+| open [Application](Application.md) | `https://developer.android.com/reference/kotlin/android/app/AppComponentFactory#instantiateApplication(java.lang.ClassLoader,%20kotlin.String)(cl: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#, className: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Allows application to override the creation of the application object. |
+| open [ClassLoader](../java.lang/ClassLoader.md) | `https://developer.android.com/reference/kotlin/android/app/AppComponentFactory#instantiateClassLoader(java.lang.ClassLoader,%20android.content.pm.ApplicationInfo)(cl: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#, aInfo: https://developer.android.com/reference/kotlin/android/content/pm/ApplicationInfo.html#)` Selects the class loader which will be used by the platform to instantiate app components. |
 | --- | --- |
-| open [ContentProvider](../android/content/ContentProvider.md) | `https://developer.android.com/reference/kotlin/android/app/AppComponentFactory#instantiateProvider(java.lang.ClassLoader,%20kotlin.String)(cl: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#, className: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Allows application to override the creation of providers. |
-| open [BroadcastReceiver](../android/content/BroadcastReceiver.md) | `https://developer.android.com/reference/kotlin/android/app/AppComponentFactory#instantiateReceiver(java.lang.ClassLoader,%20kotlin.String,%20android.content.Intent)(cl: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#, className: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#?)` Allows application to override the creation of receivers. |
-| open [Service](../android/app/Service.md) | `https://developer.android.com/reference/kotlin/android/app/AppComponentFactory#instantiateService(java.lang.ClassLoader,%20kotlin.String,%20android.content.Intent)(cl: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#, className: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#?)` Allows application to override the creation of services. |
+| open [ContentProvider](../android.content/ContentProvider.md) | `https://developer.android.com/reference/kotlin/android/app/AppComponentFactory#instantiateProvider(java.lang.ClassLoader,%20kotlin.String)(cl: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#, className: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Allows application to override the creation of providers. |
+| open [BroadcastReceiver](../android.content/BroadcastReceiver.md) | `https://developer.android.com/reference/kotlin/android/app/AppComponentFactory#instantiateReceiver(java.lang.ClassLoader,%20kotlin.String,%20android.content.Intent)(cl: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#, className: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#?)` Allows application to override the creation of receivers. |
+| open [Service](Service.md) | `https://developer.android.com/reference/kotlin/android/app/AppComponentFactory#instantiateService(java.lang.ClassLoader,%20kotlin.String,%20android.content.Intent)(cl: https://developer.android.com/reference/kotlin/java/lang/ClassLoader.html#, className: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#?)` Allows application to override the creation of services. |
 | --- | --- |
 
 ## Public constructors
@@ -60,9 +60,9 @@ This method is only intended to provide a hook for instantiation. It does not pr
 
 | Parameters ||
 |---|---|
-| `cl` | [ClassLoader](../java/lang/ClassLoader.md): The default classloader to use for instantiation. This value cannot be `null`. |
+| `cl` | [ClassLoader](../java.lang/ClassLoader.md): The default classloader to use for instantiation. This value cannot be `null`. |
 | `className` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The class to be instantiated. This value cannot be `null`. |
-| `intent` | [Intent](../android/content/Intent.md)?: Intent creating the class. This value may be `null`. |
+| `intent` | [Intent](../android.content/Intent.md)?: Intent creating the class. This value may be `null`. |
 | --- | --- |
 
 | Return ||
@@ -86,7 +86,7 @@ This method is only intended to provide a hook for instantiation. It does not pr
 
 | Parameters ||
 |---|---|
-| `cl` | [ClassLoader](../java/lang/ClassLoader.md): The default classloader to use for instantiation. This value cannot be `null`. |
+| `cl` | [ClassLoader](../java.lang/ClassLoader.md): The default classloader to use for instantiation. This value cannot be `null`. |
 | `className` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The class to be instantiated. This value cannot be `null`. |
 
 | Return ||
@@ -114,8 +114,8 @@ The default class loader `cl` is created by the platform and used to load the ap
 
 | Parameters ||
 |---|---|
-| `cl` | [ClassLoader](../java/lang/ClassLoader.md): The default class loader created by the platform. This value cannot be `null`. |
-| `aInfo` | [ApplicationInfo](../android/content/pm/ApplicationInfo.md): Information about the application being loaded. This value cannot be `null`. |
+| `cl` | [ClassLoader](../java.lang/ClassLoader.md): The default class loader created by the platform. This value cannot be `null`. |
+| `aInfo` | [ApplicationInfo](../android.content.pm/ApplicationInfo.md): Information about the application being loaded. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -138,7 +138,7 @@ This method is only intended to provide a hook for instantiation. It does not pr
 
 | Parameters ||
 |---|---|
-| `cl` | [ClassLoader](../java/lang/ClassLoader.md): The default classloader to use for instantiation. This value cannot be `null`. |
+| `cl` | [ClassLoader](../java.lang/ClassLoader.md): The default classloader to use for instantiation. This value cannot be `null`. |
 | `className` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The class to be instantiated. This value cannot be `null`. |
 
 | Return ||
@@ -161,9 +161,9 @@ Allows application to override the creation of receivers. This can be used to pe
 
 | Parameters ||
 |---|---|
-| `cl` | [ClassLoader](../java/lang/ClassLoader.md): The default classloader to use for instantiation. This value cannot be `null`. |
+| `cl` | [ClassLoader](../java.lang/ClassLoader.md): The default classloader to use for instantiation. This value cannot be `null`. |
 | `className` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The class to be instantiated. This value cannot be `null`. |
-| `intent` | [Intent](../android/content/Intent.md)?: Intent creating the class. This value may be `null`. |
+| `intent` | [Intent](../android.content/Intent.md)?: Intent creating the class. This value may be `null`. |
 | --- | --- |
 
 | Return ||
@@ -188,9 +188,9 @@ This method is only intended to provide a hook for instantiation. It does not pr
 
 | Parameters ||
 |---|---|
-| `cl` | [ClassLoader](../java/lang/ClassLoader.md): The default classloader to use for instantiation. This value cannot be `null`. |
+| `cl` | [ClassLoader](../java.lang/ClassLoader.md): The default classloader to use for instantiation. This value cannot be `null`. |
 | `className` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): The class to be instantiated. This value cannot be `null`. |
-| `intent` | [Intent](../android/content/Intent.md)?: Intent creating the class. This value may be `null`. |
+| `intent` | [Intent](../android.content/Intent.md)?: Intent creating the class. This value may be `null`. |
 | --- | --- |
 
 | Return ||

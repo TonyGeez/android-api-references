@@ -2,5 +2,5 @@
 
 ## Classes
 
-| [DeviceRadioState](../android/app/admin/policy/DeviceRadioState.md) | Controls for device radio settings. |
+| [DeviceRadioState](DeviceRadioState.md) | Controls for device radio settings. |
 | --- | --- |

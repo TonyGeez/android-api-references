@@ -8,7 +8,7 @@ class CollationKey : Comparable<CollationKey!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.icu.text.CollationKey](../android/icu/text/CollationKey.md) |
+| ↳ | [android.icu.text.CollationKey](CollationKey.md) |
 
 A `CollationKey` represents a `String` under the rules of a specific `Collator` object. Comparing two `CollationKey`s returns the relative order of the `String`s they represent.
 
@@ -62,11 +62,11 @@ This class is not subclassable
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/CollationKey#equals(android.icu.text.CollationKey)(target: https://developer.android.com/reference/kotlin/android/icu/text/CollationKey#!)` Compare this CollationKey and the argument target CollationKey for equality. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/CollationKey#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Compare this CollationKey and the specified Object for equality. |
 | --- | --- |
-| [CollationKey](../android/icu/text/CollationKey.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/CollationKey#getBound(kotlin.Int,%20kotlin.Int)(boundType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, noOfLevels: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Produces a bound for the sort order of a given collation key and a strength level. |
+| [CollationKey](CollationKey.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/CollationKey#getBound(kotlin.Int,%20kotlin.Int)(boundType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, noOfLevels: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Produces a bound for the sort order of a given collation key and a strength level. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/text/CollationKey#getSourceString()()` Return the source string that this CollationKey represents. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/icu/text/CollationKey#hashCode()()` Returns a hash code for this CollationKey. |
 | --- | --- |
-| [CollationKey](../android/icu/text/CollationKey.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/CollationKey#merge(android.icu.text.CollationKey)(source: https://developer.android.com/reference/kotlin/android/icu/text/CollationKey#!)` Merges this CollationKey with another. |
+| [CollationKey](CollationKey.md)! | `https://developer.android.com/reference/kotlin/android/icu/text/CollationKey#merge(android.icu.text.CollationKey)(source: https://developer.android.com/reference/kotlin/android/icu/text/CollationKey#!)` Merges this CollationKey with another. |
 | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | `https://developer.android.com/reference/kotlin/android/icu/text/CollationKey#toByteArray()()` Duplicates and returns the value of this CollationKey as a sequence of big-endian bytes terminated by a null. |
 
 ## Public constructors
@@ -138,7 +138,7 @@ See note in compareTo(CollationKey) for warnings of incorrect results
 
 | Parameters ||
 |---|---|
-| `target` | [CollationKey](../android/icu/text/CollationKey.md)!: the CollationKey to compare to. |
+| `target` | [CollationKey](CollationKey.md)!: the CollationKey to compare to. |
 
 | Return ||
 |---|---|
@@ -283,7 +283,7 @@ will be merged as
 
 | Parameters ||
 |---|---|
-| `source` | [CollationKey](../android/icu/text/CollationKey.md)!: CollationKey to merge with |
+| `source` | [CollationKey](CollationKey.md)!: CollationKey to merge with |
 
 | Return ||
 |---|---|

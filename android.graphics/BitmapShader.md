@@ -2,7 +2,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # BitmapShader
 
-Kotlin | [Java](../android/graphics/BitmapShader.md)
+Kotlin | [Java](BitmapShader.md)
 | --- | --- |
 
 ```
@@ -11,8 +11,8 @@ open class BitmapShader : Shader
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.graphics.Shader](../android/graphics/Shader.md) ||
-| | ↳ | [android.graphics.BitmapShader](../android/graphics/BitmapShader.md) |
+| ↳ | [android.graphics.Shader](Shader.md) ||
+| | ↳ | [android.graphics.BitmapShader](BitmapShader.md) |
 
 Shader used to draw a bitmap as a texture. The bitmap can be repeated or mirrored by setting the tiling mode.
 
@@ -115,7 +115,7 @@ Call this to create a new shader that will draw with a bitmap.
 
 | Parameters ||
 |---|---|
-| `bitmap` | [Bitmap](../android/graphics/Bitmap.md): The bitmap to use inside the shader. This value cannot be `null`. |
+| `bitmap` | [Bitmap](Bitmap.md): The bitmap to use inside the shader. This value cannot be `null`. |
 | `tileX` | [Shader.TileMode](../android/graphics/Shader.TileMode.md): The tiling mode for x to draw the bitmap in. This value cannot be `null`. |
 | `tileY` | [Shader.TileMode](../android/graphics/Shader.TileMode.md): The tiling mode for y to draw the bitmap in. This value cannot be `null`. |
 | --- | --- |
@@ -186,4 +186,4 @@ Draws the BitmapShader with a copy of the given gainmap instead of the gainmap o
 
 | Parameters ||
 |---|---|
-| `overrideGainmap` | [Gainmap](../android/graphics/Gainmap.md)?: The gainmap to draw instead, null to use any gainmap on the Bitmap |
+| `overrideGainmap` | [Gainmap](Gainmap.md)?: The gainmap to draw instead, null to use any gainmap on the Bitmap |

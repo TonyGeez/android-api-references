@@ -5,30 +5,30 @@ Deprecated in [API level 24](https://developer.android.com/guide/topics/manifest
 
 # FlakyTest
 
-Kotlin | [Java](../android/test/FlakyTest.md) 
+Kotlin | [Java](FlakyTest.md) 
 | --- | --- |
 
 ```
 @Target([AnnotationTarget.FUNCTION, AnnotationTarget.PROPERTY_GETTER, AnnotationTarget.PROPERTY_SETTER]) class FlakyTest
 ```
 
-| [android.test.FlakyTest](../android/test/FlakyTest.md) |
+| [android.test.FlakyTest](FlakyTest.md) |
 
 | **This annotation was deprecated in API level 24.**
 |
 | Use [FlakyTest](../android/support/test/filters/FlakyTest.md) instead. New tests should be written using the [Android Testing Support Library](https://developer.android.com/tools/testing-support-library/index.html).
 
-This annotation can be used on an [android.test.InstrumentationTestCase](../android/test/InstrumentationTestCase.md)'s test methods. When the annotation is present, the test method is re-executed if the test fails. The total number of executions is specified by the tolerance and defaults to 1.
+This annotation can be used on an [android.test.InstrumentationTestCase](InstrumentationTestCase.md)'s test methods. When the annotation is present, the test method is re-executed if the test fails. The total number of executions is specified by the tolerance and defaults to 1.
 
 ## Summary
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [FlakyTest](../android/test/FlakyTest.md))`(`tolerance:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` This annotation can be used on an [android.test.InstrumentationTestCase](../android/test/InstrumentationTestCase.md)'s test methods. |
+| [FlakyTest](FlakyTest.md))`(`tolerance:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` This annotation can be used on an [android.test.InstrumentationTestCase](InstrumentationTestCase.md)'s test methods. |
 
 | Properties ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [tolerance](../android/test/FlakyTest.md) Indicates how many times a test can run and fail before being reported as a failed test. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [tolerance](FlakyTest.md) Indicates how many times a test can run and fail before being reported as a failed test. |
 
 ## Public constructors
 
@@ -43,7 +43,7 @@ FlakyTest(tolerance: Int)
 
 **Deprecated:** *Use [FlakyTest](../android/support/test/filters/FlakyTest.md) instead. New tests should be written using the [Android Testing Support Library](https://developer.android.com/tools/testing-support-library/index.html).*
 
-This annotation can be used on an [android.test.InstrumentationTestCase](../android/test/InstrumentationTestCase.md)'s test methods. When the annotation is present, the test method is re-executed if the test fails. The total number of executions is specified by the tolerance and defaults to 1.
+This annotation can be used on an [android.test.InstrumentationTestCase](InstrumentationTestCase.md)'s test methods. When the annotation is present, the test method is re-executed if the test fails. The total number of executions is specified by the tolerance and defaults to 1.
 
 ## Properties
 

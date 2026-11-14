@@ -1,6 +1,6 @@
 # android.net.wifi.p2p
 
-Kotlin | [Java](../android/net/wifi/p2p/_package.md)
+Kotlin | [Java](_package.md)
 | --- | --- |
 
 ## Interfaces
@@ -28,21 +28,21 @@ Kotlin | [Java](../android/net/wifi/p2p/_package.md)
 
 ## Classes
 
-| [WifiP2pConfig](../android/net/wifi/p2p/WifiP2pConfig.md) | A class representing a Wi-Fi P2p configuration for setting up a connection |
+| [WifiP2pConfig](WifiP2pConfig.md) | A class representing a Wi-Fi P2p configuration for setting up a connection |
 | --- | --- |
-| [WifiP2pConnectionInfo](../android/net/wifi/p2p/WifiP2pConnectionInfo.md) | A class representing the connection capabilities of a Wi-Fi P2P link. |
-| [WifiP2pDevice](../android/net/wifi/p2p/WifiP2pDevice.md) | A class representing a Wi-Fi p2p device Note that the operations are not thread safe |
-| [WifiP2pDeviceList](../android/net/wifi/p2p/WifiP2pDeviceList.md) | A class representing a Wi-Fi P2p device list. |
+| [WifiP2pConnectionInfo](WifiP2pConnectionInfo.md) | A class representing the connection capabilities of a Wi-Fi P2P link. |
+| [WifiP2pDevice](WifiP2pDevice.md) | A class representing a Wi-Fi p2p device Note that the operations are not thread safe |
+| [WifiP2pDeviceList](WifiP2pDeviceList.md) | A class representing a Wi-Fi P2p device list. |
 | --- | --- |
-| [WifiP2pDirInfo](../android/net/wifi/p2p/WifiP2pDirInfo.md) | This object contains the Device Identity Resolution (DIR) Info to check if the device is a previously paired device. |
-| [WifiP2pDiscoveryConfig](../android/net/wifi/p2p/WifiP2pDiscoveryConfig.md) | A class representing a Wi-Fi P2P scan configuration for setting up discovery. |
-| [WifiP2pGroup](../android/net/wifi/p2p/WifiP2pGroup.md) | A class representing a Wi-Fi P2p group. |
+| [WifiP2pDirInfo](WifiP2pDirInfo.md) | This object contains the Device Identity Resolution (DIR) Info to check if the device is a previously paired device. |
+| [WifiP2pDiscoveryConfig](WifiP2pDiscoveryConfig.md) | A class representing a Wi-Fi P2P scan configuration for setting up discovery. |
+| [WifiP2pGroup](WifiP2pGroup.md) | A class representing a Wi-Fi P2p group. |
 | --- | --- |
-| [WifiP2pInfo](../android/net/wifi/p2p/WifiP2pInfo.md) | A class representing connection information about a Wi-Fi p2p group |
-| [WifiP2pManager](../android/net/wifi/p2p/WifiP2pManager.md) | This class provides the API for managing Wi-Fi peer-to-peer connectivity. |
-| [WifiP2pPairingBootstrappingConfig](../android/net/wifi/p2p/WifiP2pPairingBootstrappingConfig.md) | A class representing Wi-Fi Direct pairing bootstrapping configuration. |
+| [WifiP2pInfo](WifiP2pInfo.md) | A class representing connection information about a Wi-Fi p2p group |
+| [WifiP2pManager](WifiP2pManager.md) | This class provides the API for managing Wi-Fi peer-to-peer connectivity. |
+| [WifiP2pPairingBootstrappingConfig](WifiP2pPairingBootstrappingConfig.md) | A class representing Wi-Fi Direct pairing bootstrapping configuration. |
 | --- | --- |
-| [WifiP2pUsdBasedLocalServiceAdvertisementConfig](../android/net/wifi/p2p/WifiP2pUsdBasedLocalServiceAdvertisementConfig.md) | A class representing a Wi-Fi P2P USD based service advertisement configuration for advertising the services. |
-| [WifiP2pUsdBasedServiceDiscoveryConfig](../android/net/wifi/p2p/WifiP2pUsdBasedServiceDiscoveryConfig.md) | A class representing a Wi-Fi P2P USD based service discovery configuration for discovering the services. |
-| [WifiP2pWfdInfo](../android/net/wifi/p2p/WifiP2pWfdInfo.md) | A class representing Wifi Display information for a device. |
+| [WifiP2pUsdBasedLocalServiceAdvertisementConfig](WifiP2pUsdBasedLocalServiceAdvertisementConfig.md) | A class representing a Wi-Fi P2P USD based service advertisement configuration for advertising the services. |
+| [WifiP2pUsdBasedServiceDiscoveryConfig](WifiP2pUsdBasedServiceDiscoveryConfig.md) | A class representing a Wi-Fi P2P USD based service discovery configuration for discovering the services. |
+| [WifiP2pWfdInfo](WifiP2pWfdInfo.md) | A class representing Wifi Display information for a device. |
 | --- | --- |

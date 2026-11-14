@@ -4,7 +4,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # LocaleList
 
-Kotlin| [Java](../android/os/LocaleList.md) 
+Kotlin| [Java](LocaleList.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class LocaleList : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.os.LocaleList](../android/os/LocaleList.md) |
+| ↳ | [android.os.LocaleList](LocaleList.md) |
 
 LocaleList is an immutable list of Locales, typically used to keep an ordered list of user preferences for locales.
 
@@ -21,42 +21,42 @@ LocaleList is an immutable list of Locales, typically used to keep an ordered li
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](Parcelable.md) |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](Parcelable.md) <br /> Descriptor bit used with [describeContents()](Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](Parcelable.md) <br /> Flag for use with [writeToParcel](Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [LocaleList](../android/os/LocaleList.md))`(`vararg` `list:` ` [Locale](../java/util/Locale.md)!`)` Creates a new [LocaleList](../android/os/LocaleList.md). |
+| [LocaleList](LocaleList.md))`(`vararg` `list:` ` [Locale](../java.util/Locale.md)!`)` Creates a new [LocaleList](LocaleList.md). |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/os/LocaleList.md))`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/os/LocaleList.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| static [LocaleList](../android/os/LocaleList.md) | [forLanguageTags](../android/os/LocaleList.md))`(`list:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Generates a new LocaleList with the given language tags. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](LocaleList.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](LocaleList.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| static [LocaleList](LocaleList.md) | [forLanguageTags](LocaleList.md))`(`list:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Generates a new LocaleList with the given language tags. |
 | --- | --- |
-| [Locale](../java/util/Locale.md)! | [get](../android/os/LocaleList.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves the [Locale](../java/util/Locale.md) at the specified index. |
-| static [LocaleList](../android/os/LocaleList.md) | [getAdjustedDefault](../android/os/LocaleList.md))`()` Returns the default locale list, adjusted by moving the default locale to its first position. |
-| static [LocaleList](../android/os/LocaleList.md) | [getDefault](../android/os/LocaleList.md))`()` The result is guaranteed to include the default Locale returned by Locale. |
+| [Locale](../java.util/Locale.md)! | [get](LocaleList.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves the [Locale](../java.util/Locale.md) at the specified index. |
+| static [LocaleList](LocaleList.md) | [getAdjustedDefault](LocaleList.md))`()` Returns the default locale list, adjusted by moving the default locale to its first position. |
+| static [LocaleList](LocaleList.md) | [getDefault](LocaleList.md))`()` The result is guaranteed to include the default Locale returned by Locale. |
 | --- | --- |
-| static [LocaleList](../android/os/LocaleList.md) | [getEmptyLocaleList](../android/os/LocaleList.md))`()` Retrieve an empty instance of [LocaleList](../android/os/LocaleList.md). |
-| [Locale](../java/util/Locale.md)? | [getFirstMatch](../android/os/LocaleList.md))`(`supportedLocales:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Returns the first match in the locale list given an unordered array of supported locales in BCP 47 format. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/os/LocaleList.md))`()` <br /> |
+| static [LocaleList](LocaleList.md) | [getEmptyLocaleList](LocaleList.md))`()` Retrieve an empty instance of [LocaleList](LocaleList.md). |
+| [Locale](../java.util/Locale.md)? | [getFirstMatch](LocaleList.md))`(`supportedLocales:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Returns the first match in the locale list given an unordered array of supported locales in BCP 47 format. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](LocaleList.md))`()` <br /> |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [indexOf](../android/os/LocaleList.md))`(`locale:` ` [Locale](../java/util/Locale.md)!`)` Searches this [LocaleList](../android/os/LocaleList.md) for the specified [Locale](../java/util/Locale.md) and returns the index of the first occurrence. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](../android/os/LocaleList.md))`()` Returns whether the [LocaleList](../android/os/LocaleList.md) contains no [Locale](../java/util/Locale.md) items. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPseudoLocale](../android/os/LocaleList.md))`(`locale:` ` [ULocale](../android/icu/util/ULocale.md)?`)` Returns true if locale is a pseudo-locale, false otherwise. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [indexOf](LocaleList.md))`(`locale:` ` [Locale](../java.util/Locale.md)!`)` Searches this [LocaleList](LocaleList.md) for the specified [Locale](../java.util/Locale.md) and returns the index of the first occurrence. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](LocaleList.md))`()` Returns whether the [LocaleList](LocaleList.md) contains no [Locale](../java.util/Locale.md) items. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPseudoLocale](LocaleList.md))`(`locale:` ` [ULocale](../android.icu.util/ULocale.md)?`)` Returns true if locale is a pseudo-locale, false otherwise. |
 | --- | --- |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [matchesLanguageAndScript](../android/os/LocaleList.md))`(`supported:` ` [Locale](../java/util/Locale.md)`, `desired:` ` [Locale](../java/util/Locale.md)`)` Determine whether two locales are considered a match, even if they are not exactly equal. |
-| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDefault](../android/os/LocaleList.md))`(`locales:` ` [LocaleList](../android/os/LocaleList.md)`)` Also sets the default locale by calling Locale. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [size](../android/os/LocaleList.md))`()` Returns the number of [Locale](../java/util/Locale.md) items in this [LocaleList](../android/os/LocaleList.md). |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [matchesLanguageAndScript](LocaleList.md))`(`supported:` ` [Locale](../java.util/Locale.md)`, `desired:` ` [Locale](../java.util/Locale.md)`)` Determine whether two locales are considered a match, even if they are not exactly equal. |
+| static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDefault](LocaleList.md))`(`locales:` ` [LocaleList](LocaleList.md)`)` Also sets the default locale by calling Locale. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [size](LocaleList.md))`()` Returns the number of [Locale](../java.util/Locale.md) items in this [LocaleList](LocaleList.md). |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toLanguageTags](../android/os/LocaleList.md))`()` Retrieves a String representation of the language tags in this list. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/os/LocaleList.md))`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/os/LocaleList.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `parcelableFlags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toLanguageTags](LocaleList.md))`()` Retrieves a String representation of the language tags in this list. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](LocaleList.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](LocaleList.md))`(`dest:` ` [Parcel](Parcel.md)`, `parcelableFlags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
 
 | Properties ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [LocaleList](../android/os/LocaleList.md)!\> | [CREATOR](../android/os/LocaleList.md) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [LocaleList](LocaleList.md)!\> | [CREATOR](LocaleList.md) <br /> |
 
 ## Public constructors
 
@@ -68,13 +68,13 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 LocaleList(vararg list: Locale!)
 ```
 
-Creates a new [LocaleList](../android/os/LocaleList.md). If two or more same locales are passed, the repeated locales will be dropped.
+Creates a new [LocaleList](LocaleList.md). If two or more same locales are passed, the repeated locales will be dropped.
 
-For empty lists of [Locale](../java/util/Locale.md) items it is better to use [getEmptyLocaleList()](../android/os/LocaleList.md)), which returns a pre-constructed empty list.
+For empty lists of [Locale](../java.util/Locale.md) items it is better to use [getEmptyLocaleList()](LocaleList.md)), which returns a pre-constructed empty list.
 
 | Parameters ||
 |--------|--------------------------------------------------------------------------------------------------------------|
-| `list` | [Locale](../java/util/Locale.md)!:This value cannot be`null`. |
+| `list` | [Locale](../java.util/Locale.md)!:This value cannot be`null`. |
 
 | Exceptions ||
 |----------------------------------|---------------------------------------|
@@ -92,7 +92,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](Parcelable.md) |
 
 ### equals
 
@@ -135,11 +135,11 @@ Generates a new LocaleList with the given language tags.
 
 | Parameters ||
 |--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `list` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:The language tags to be included as a single [String](../java/lang/String.md) separated by commas. This value may be`null`. |
+| `list` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?:The language tags to be included as a single [String](../java.lang/String.md) separated by commas. This value may be`null`. |
 
 | Return ||
 |-------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [LocaleList](../android/os/LocaleList.md) | A new instance with the [Locale](../java/util/Locale.md) items identified by the given tags. This value cannot be`null`. |
+| [LocaleList](LocaleList.md) | A new instance with the [Locale](../java.util/Locale.md) items identified by the given tags. This value cannot be`null`. |
 
 ### get
 
@@ -149,7 +149,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 fun get(index: Int): Locale!
 ```
 
-Retrieves the [Locale](../java/util/Locale.md) at the specified index.
+Retrieves the [Locale](../java.util/Locale.md) at the specified index.
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------|
@@ -157,7 +157,7 @@ Retrieves the [Locale](../java/util/Locale.md) at the specified index.
 
 | Return ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
-| [Locale](../java/util/Locale.md)! | The [Locale](../java/util/Locale.md) in the given index. |
+| [Locale](../java.util/Locale.md)! | The [Locale](../java.util/Locale.md) in the given index. |
 
 ### getAdjustedDefault
 
@@ -171,7 +171,7 @@ Returns the default locale list, adjusted by moving the default locale to its fi
 
 | Return ||
 |-------------------------------------------------------------------------------------|-----------------------------|
-| [LocaleList](../android/os/LocaleList.md) | This value cannot be`null`. |
+| [LocaleList](LocaleList.md) | This value cannot be`null`. |
 
 ### getDefault
 
@@ -187,7 +187,7 @@ Note that the default LocaleList would change if Locale.setDefault() is called. 
 
 | Return ||
 |-------------------------------------------------------------------------------------|-----------------------------|
-| [LocaleList](../android/os/LocaleList.md) | This value cannot be`null`. |
+| [LocaleList](LocaleList.md) | This value cannot be`null`. |
 
 ### getEmptyLocaleList
 
@@ -197,11 +197,11 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static fun getEmptyLocaleList(): LocaleList
 ```
 
-Retrieve an empty instance of [LocaleList](../android/os/LocaleList.md).
+Retrieve an empty instance of [LocaleList](LocaleList.md).
 
 | Return ||
 |-------------------------------------------------------------------------------------|-----------------------------|
-| [LocaleList](../android/os/LocaleList.md) | This value cannot be`null`. |
+| [LocaleList](LocaleList.md) | This value cannot be`null`. |
 
 ### getFirstMatch
 
@@ -215,7 +215,7 @@ Returns the first match in the locale list given an unordered array of supported
 
 | Return ||
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Locale](../java/util/Locale.md)? | The first [Locale](../java/util/Locale.md) from this list that appears in the given array, or`null`if the [LocaleList](../android/os/LocaleList.md) is empty. |
+| [Locale](../java.util/Locale.md)? | The first [Locale](../java.util/Locale.md) from this list that appears in the given array, or`null`if the [LocaleList](LocaleList.md) is empty. |
 
 ### hashCode
 
@@ -237,15 +237,15 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 fun indexOf(locale: Locale!): Int
 ```
 
-Searches this [LocaleList](../android/os/LocaleList.md) for the specified [Locale](../java/util/Locale.md) and returns the index of the first occurrence.
+Searches this [LocaleList](LocaleList.md) for the specified [Locale](../java.util/Locale.md) and returns the index of the first occurrence.
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `locale` | [Locale](../java/util/Locale.md)!:The [Locale](../java/util/Locale.md) to search for. |
+| `locale` | [Locale](../java.util/Locale.md)!:The [Locale](../java.util/Locale.md) to search for. |
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The index of the first occurrence of the [Locale](../java/util/Locale.md) or`-1`if the item wasn't found. Value is -1 or greater |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The index of the first occurrence of the [Locale](../java.util/Locale.md) or`-1`if the item wasn't found. Value is -1 or greater |
 
 ### isEmpty
 
@@ -255,11 +255,11 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 fun isEmpty(): Boolean
 ```
 
-Returns whether the [LocaleList](../android/os/LocaleList.md) contains no [Locale](../java/util/Locale.md) items.
+Returns whether the [LocaleList](LocaleList.md) contains no [Locale](../java.util/Locale.md) items.
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `true`if this [LocaleList](../android/os/LocaleList.md) has no [Locale](../java/util/Locale.md) items,`false`otherwise. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `true`if this [LocaleList](LocaleList.md) has no [Locale](../java.util/Locale.md) items,`false`otherwise. |
 
 ### isPseudoLocale
 
@@ -273,7 +273,7 @@ Returns true if locale is a pseudo-locale, false otherwise.
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------------|
-| `locale` | [ULocale](../android/icu/util/ULocale.md)?:This value may be`null`. |
+| `locale` | [ULocale](../android.icu.util/ULocale.md)?:This value may be`null`. |
 
 ### matchesLanguageAndScript
 
@@ -290,8 +290,8 @@ Determine whether two locales are considered a match, even if they are not exact
 
 | Parameters ||
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `supported` | [Locale](../java/util/Locale.md):The supported [Locale](../java/util/Locale.md) to be compared. This value cannot be`null`. |
-| `desired` | [Locale](../java/util/Locale.md):The desired [Locale](../java/util/Locale.md) to be compared. This value cannot be`null`. |
+| `supported` | [Locale](../java.util/Locale.md):The supported [Locale](../java.util/Locale.md) to be compared. This value cannot be`null`. |
+| `desired` | [Locale](../java.util/Locale.md):The desired [Locale](../java.util/Locale.md) to be compared. This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------------|
@@ -309,7 +309,7 @@ Also sets the default locale by calling Locale.setDefault() with the first local
 
 | Parameters ||
 |-----------|-----------------------------------------------------------------------------------------------------------------|
-| `locales` | [LocaleList](../android/os/LocaleList.md):This value cannot be`null`. |
+| `locales` | [LocaleList](LocaleList.md):This value cannot be`null`. |
 
 | Exceptions ||
 |--------------------------------------|------------------------|
@@ -324,7 +324,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 fun size(): Int
 ```
 
-Returns the number of [Locale](../java/util/Locale.md) items in this [LocaleList](../android/os/LocaleList.md).
+Returns the number of [Locale](../java.util/Locale.md) items in this [LocaleList](LocaleList.md).
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------|
@@ -369,8 +369,8 @@ fun writeToParcel(
 
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](../android/os/Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
+| `flags` | Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

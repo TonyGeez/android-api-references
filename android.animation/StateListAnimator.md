@@ -4,7 +4,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 
 # StateListAnimator
 
-Kotlin| [Java](../android/animation/StateListAnimator.md) 
+Kotlin| [Java](StateListAnimator.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class StateListAnimator : Cloneable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.animation.StateListAnimator](../android/animation/StateListAnimator.md) |
+| ↳ | [android.animation.StateListAnimator](StateListAnimator.md) |
 
 Lets you define a number of Animators that will run on the attached View depending on the View's drawable state.
 
@@ -23,34 +23,34 @@ It can be defined in an XML file with the`<selector>`element. Each State Animato
 
 | XML attributes ||
 |---------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [`android:animation`](../android/animation/StateListAnimator.md) | Animation to use on each child. |
-| [`android:state_activated`](../android/animation/StateListAnimator.md) | State value for StateListDrawable , set when a view or its parent has been "activated" meaning the user has currently marked it as being of interest. |
-| [`android:state_active`](../android/animation/StateListAnimator.md) | State value for StateListDrawable , set when a view or drawable is considered "active" by its host. |
+| [`android:animation`](StateListAnimator.md) | Animation to use on each child. |
+| [`android:state_activated`](StateListAnimator.md) | State value for StateListDrawable , set when a view or its parent has been "activated" meaning the user has currently marked it as being of interest. |
+| [`android:state_active`](StateListAnimator.md) | State value for StateListDrawable , set when a view or drawable is considered "active" by its host. |
 | --- | --- |
-| [`android:state_checkable`](../android/animation/StateListAnimator.md) | State identifier indicating that the object may display a check mark. |
-| [`android:state_checked`](../android/animation/StateListAnimator.md) | State identifier indicating that the object is currently checked. |
-| [`android:state_enabled`](../android/animation/StateListAnimator.md) | State value for StateListDrawable , set when a view is enabled. |
+| [`android:state_checkable`](StateListAnimator.md) | State identifier indicating that the object may display a check mark. |
+| [`android:state_checked`](StateListAnimator.md) | State identifier indicating that the object is currently checked. |
+| [`android:state_enabled`](StateListAnimator.md) | State value for StateListDrawable , set when a view is enabled. |
 | --- | --- |
-| [`android:state_first`](../android/animation/StateListAnimator.md) | State value for StateListDrawable , set when a view or drawable is in the first position in an ordered set. |
-| [`android:state_focused`](../android/animation/StateListAnimator.md) | State value for StateListDrawable , set when a view has input focus. |
-| [`android:state_last`](../android/animation/StateListAnimator.md) | State value for StateListDrawable , set when a view or drawable is in the last position in an ordered set. |
+| [`android:state_first`](StateListAnimator.md) | State value for StateListDrawable , set when a view or drawable is in the first position in an ordered set. |
+| [`android:state_focused`](StateListAnimator.md) | State value for StateListDrawable , set when a view has input focus. |
+| [`android:state_last`](StateListAnimator.md) | State value for StateListDrawable , set when a view or drawable is in the last position in an ordered set. |
 | --- | --- |
-| [`android:state_middle`](../android/animation/StateListAnimator.md) | State value for StateListDrawable , set when a view or drawable is in the middle position in an ordered set. |
-| [`android:state_pressed`](../android/animation/StateListAnimator.md) | State value for StateListDrawable , set when the user is pressing down in a view. |
-| [`android:state_selected`](../android/animation/StateListAnimator.md) | State value for StateListDrawable , set when a view (or one of its parents) is currently selected. |
+| [`android:state_middle`](StateListAnimator.md) | State value for StateListDrawable , set when a view or drawable is in the middle position in an ordered set. |
+| [`android:state_pressed`](StateListAnimator.md) | State value for StateListDrawable , set when the user is pressing down in a view. |
+| [`android:state_selected`](StateListAnimator.md) | State value for StateListDrawable , set when a view (or one of its parents) is currently selected. |
 | --- | --- |
-| [`android:state_single`](../android/animation/StateListAnimator.md) | State value for StateListDrawable , set when a view or drawable is considered "single" by its host. |
-| [`android:state_window_focused`](../android/animation/StateListAnimator.md) | State value for StateListDrawable , set when a view's window has input focus. |
+| [`android:state_single`](StateListAnimator.md) | State value for StateListDrawable , set when a view or drawable is considered "single" by its host. |
+| [`android:state_window_focused`](StateListAnimator.md) | State value for StateListDrawable , set when a view's window has input focus. |
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------|---|
-| [StateListAnimator](../android/animation/StateListAnimator.md))`()` <br /> |
+| [StateListAnimator](StateListAnimator.md))`()` <br /> |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addState](../android/animation/StateListAnimator.md))`(`specs:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `animator:` ` [Animator](../android/animation/Animator.md)!`)` Associates the given animator with the provided drawable state specs so that it will be run when the View's drawable state matches the specs. |
-| open [StateListAnimator](../android/animation/StateListAnimator.md) | [clone](../android/animation/StateListAnimator.md))`()` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [jumpToCurrentState](../android/animation/StateListAnimator.md))`()` If there is an animation running for a recent state change, ends it. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addState](StateListAnimator.md))`(`specs:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`, `animator:` ` [Animator](Animator.md)!`)` Associates the given animator with the provided drawable state specs so that it will be run when the View's drawable state matches the specs. |
+| open [StateListAnimator](StateListAnimator.md) | [clone](StateListAnimator.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [jumpToCurrentState](StateListAnimator.md))`()` If there is an animation running for a recent state change, ends it. |
 | --- | --- |
 
 ## XML attributes
@@ -69,7 +69,7 @@ May be a reference to another resource, in the form "`@[+][`*package* `:]`*type*
 ```
 android:state_activated
 ```
-State value for [StateListDrawable](../android/graphics/drawable/StateListDrawable.md), set when a view or its parent has been "activated" meaning the user has currently marked it as being of interest. This is an alternative representation of state_checked for when the state should be propagated down the view hierarchy.
+State value for [StateListDrawable](../android.graphics.drawable/StateListDrawable.md), set when a view or its parent has been "activated" meaning the user has currently marked it as being of interest. This is an alternative representation of state_checked for when the state should be propagated down the view hierarchy.
 
 May be a boolean value, such as "`true`" or "`false`". 
 
@@ -78,7 +78,7 @@ May be a boolean value, such as "`true`" or "`false`".
 ```
 android:state_active
 ```
-State value for [StateListDrawable](../android/graphics/drawable/StateListDrawable.md), set when a view or drawable is considered "active" by its host. Actual usage may vary between views. Consult the host view documentation for details.
+State value for [StateListDrawable](../android.graphics.drawable/StateListDrawable.md), set when a view or drawable is considered "active" by its host. Actual usage may vary between views. Consult the host view documentation for details.
 
 May be a boolean value, such as "`true`" or "`false`". 
 
@@ -105,7 +105,7 @@ May be a boolean value, such as "`true`" or "`false`".
 ```
 android:state_enabled
 ```
-State value for [StateListDrawable](../android/graphics/drawable/StateListDrawable.md), set when a view is enabled.
+State value for [StateListDrawable](../android.graphics.drawable/StateListDrawable.md), set when a view is enabled.
 
 May be a boolean value, such as "`true`" or "`false`". 
 
@@ -114,7 +114,7 @@ May be a boolean value, such as "`true`" or "`false`".
 ```
 android:state_first
 ```
-State value for [StateListDrawable](../android/graphics/drawable/StateListDrawable.md), set when a view or drawable is in the first position in an ordered set. Actual usage may vary between views. Consult the host view documentation for details.
+State value for [StateListDrawable](../android.graphics.drawable/StateListDrawable.md), set when a view or drawable is in the first position in an ordered set. Actual usage may vary between views. Consult the host view documentation for details.
 
 May be a boolean value, such as "`true`" or "`false`". 
 
@@ -123,7 +123,7 @@ May be a boolean value, such as "`true`" or "`false`".
 ```
 android:state_focused
 ```
-State value for [StateListDrawable](../android/graphics/drawable/StateListDrawable.md), set when a view has input focus.
+State value for [StateListDrawable](../android.graphics.drawable/StateListDrawable.md), set when a view has input focus.
 
 May be a boolean value, such as "`true`" or "`false`". 
 
@@ -132,7 +132,7 @@ May be a boolean value, such as "`true`" or "`false`".
 ```
 android:state_last
 ```
-State value for [StateListDrawable](../android/graphics/drawable/StateListDrawable.md), set when a view or drawable is in the last position in an ordered set. Actual usage may vary between views. Consult the host view documentation for details.
+State value for [StateListDrawable](../android.graphics.drawable/StateListDrawable.md), set when a view or drawable is in the last position in an ordered set. Actual usage may vary between views. Consult the host view documentation for details.
 
 May be a boolean value, such as "`true`" or "`false`". 
 
@@ -141,7 +141,7 @@ May be a boolean value, such as "`true`" or "`false`".
 ```
 android:state_middle
 ```
-State value for [StateListDrawable](../android/graphics/drawable/StateListDrawable.md), set when a view or drawable is in the middle position in an ordered set. Actual usage may vary between views. Consult the host view documentation for details.
+State value for [StateListDrawable](../android.graphics.drawable/StateListDrawable.md), set when a view or drawable is in the middle position in an ordered set. Actual usage may vary between views. Consult the host view documentation for details.
 
 May be a boolean value, such as "`true`" or "`false`". 
 
@@ -150,7 +150,7 @@ May be a boolean value, such as "`true`" or "`false`".
 ```
 android:state_pressed
 ```
-State value for [StateListDrawable](../android/graphics/drawable/StateListDrawable.md), set when the user is pressing down in a view.
+State value for [StateListDrawable](../android.graphics.drawable/StateListDrawable.md), set when the user is pressing down in a view.
 
 May be a boolean value, such as "`true`" or "`false`". 
 
@@ -159,7 +159,7 @@ May be a boolean value, such as "`true`" or "`false`".
 ```
 android:state_selected
 ```
-State value for [StateListDrawable](../android/graphics/drawable/StateListDrawable.md), set when a view (or one of its parents) is currently selected.
+State value for [StateListDrawable](../android.graphics.drawable/StateListDrawable.md), set when a view (or one of its parents) is currently selected.
 
 May be a boolean value, such as "`true`" or "`false`". 
 
@@ -168,7 +168,7 @@ May be a boolean value, such as "`true`" or "`false`".
 ```
 android:state_single
 ```
-State value for [StateListDrawable](../android/graphics/drawable/StateListDrawable.md), set when a view or drawable is considered "single" by its host. Actual usage may vary between views. Consult the host view documentation for details.
+State value for [StateListDrawable](../android.graphics.drawable/StateListDrawable.md), set when a view or drawable is considered "single" by its host. Actual usage may vary between views. Consult the host view documentation for details.
 
 May be a boolean value, such as "`true`" or "`false`". 
 
@@ -177,7 +177,7 @@ May be a boolean value, such as "`true`" or "`false`".
 ```
 android:state_window_focused
 ```
-State value for [StateListDrawable](../android/graphics/drawable/StateListDrawable.md), set when a view's window has input focus.
+State value for [StateListDrawable](../android.graphics.drawable/StateListDrawable.md), set when a view's window has input focus.
 
 May be a boolean value, such as "`true`" or "`false`".
 
@@ -209,7 +209,7 @@ Associates the given animator with the provided drawable state specs so that it 
 | Parameters ||
 |------------|----------------------------------------------------------------------------------------------------------------------------------|
 | `specs` | [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!:The drawable state specs to match against |
-| `animator` | [Animator](../android/animation/Animator.md)!:The animator to run when the specs match |
+| `animator` | [Animator](Animator.md)!:The animator to run when the specs match |
 
 ### clone
 
@@ -221,7 +221,7 @@ open fun clone(): StateListAnimator
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------|---------------------------|
-| [StateListAnimator](../android/animation/StateListAnimator.md) | a clone of this instance. |
+| [StateListAnimator](StateListAnimator.md) | a clone of this instance. |
 
 | Exceptions ||
 |----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

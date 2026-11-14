@@ -4,7 +4,7 @@ Added in [API level 10](https://developer.android.com/guide/topics/manifest/uses
 
 # NfcV
 
-Kotlin| [Java](../android/nfc/tech/NfcV.md) 
+Kotlin| [Java](NfcV.md) 
 | --- | --- |
 
 ```
@@ -13,13 +13,13 @@ class NfcV : TagTechnology
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.nfc.tech.NfcV](../android/nfc/tech/NfcV.md) |
+| ↳ | [android.nfc.tech.NfcV](NfcV.md) |
 
-Provides access to NFC-V (ISO 15693) properties and I/O operations on a [Tag](../android/nfc/Tag.md).
+Provides access to NFC-V (ISO 15693) properties and I/O operations on a [Tag](../android.nfc/Tag.md).
 
-Acquire a [NfcV](../android/nfc/tech/NfcV.md) object using [get](../android/nfc/tech/NfcV.md)).
+Acquire a [NfcV](NfcV.md) object using [get](NfcV.md)).
 
-The primary NFC-V I/O operation is [transceive](../android/nfc/tech/NfcV.md)). Applications must implement their own protocol stack on top of [transceive](../android/nfc/tech/NfcV.md)).
+The primary NFC-V I/O operation is [transceive](NfcV.md)). Applications must implement their own protocol stack on top of [transceive](NfcV.md)).
 
 **Note:** Methods that perform I/O operations require the [android.Manifest.permission#NFC](../android/Manifest.permission.md) permission.
 
@@ -27,17 +27,17 @@ The primary NFC-V I/O operation is [transceive](../android/nfc/tech/NfcV.md)). A
 
 | Public methods ||
 |------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../android/nfc/tech/NfcV.md))`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [connect](../android/nfc/tech/NfcV.md))`()` <br /> |
-| static [NfcV](../android/nfc/tech/NfcV.md)! | [get](../android/nfc/tech/NfcV.md))`(`tag:` ` [Tag](../android/nfc/Tag.md)!`)` Get an instance of [NfcV](../android/nfc/tech/NfcV.md) for the given tag. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](NfcV.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [connect](NfcV.md))`()` <br /> |
+| static [NfcV](NfcV.md)! | [get](NfcV.md))`(`tag:` ` [Tag](../android.nfc/Tag.md)!`)` Get an instance of [NfcV](NfcV.md) for the given tag. |
 | --- | --- |
-| [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [getDsfId](../android/nfc/tech/NfcV.md))`()` Return the DSF ID bytes from tag discovery. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxTransceiveLength](../android/nfc/tech/NfcV.md))`()` Return the maximum number of bytes that can be sent with [transceive](../android/nfc/tech/NfcV.md)). |
-| [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [getResponseFlags](../android/nfc/tech/NfcV.md))`()` Return the Response Flag bytes from tag discovery. |
+| [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [getDsfId](NfcV.md))`()` Return the DSF ID bytes from tag discovery. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxTransceiveLength](NfcV.md))`()` Return the maximum number of bytes that can be sent with [transceive](NfcV.md)). |
+| [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [getResponseFlags](NfcV.md))`()` Return the Response Flag bytes from tag discovery. |
 | --- | --- |
-| [Tag](../android/nfc/Tag.md)! | [getTag](../android/nfc/tech/NfcV.md))`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isConnected](../android/nfc/tech/NfcV.md))`()` <br /> |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [transceive](../android/nfc/tech/NfcV.md))`(`data:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Send raw NFC-V commands to the tag and receive the response. |
+| [Tag](../android.nfc/Tag.md)! | [getTag](NfcV.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isConnected](NfcV.md))`()` <br /> |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [transceive](NfcV.md))`(`data:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Send raw NFC-V commands to the tag and receive the response. |
 | --- | --- |
 
 ## Public methods
@@ -80,19 +80,19 @@ Added in [API level 10](https://developer.android.com/guide/topics/manifest/uses
 static fun get(tag: Tag!): NfcV!
 ```
 
-Get an instance of [NfcV](../android/nfc/tech/NfcV.md) for the given tag.
+Get an instance of [NfcV](NfcV.md) for the given tag.
 
-Returns null if [NfcV](../android/nfc/tech/NfcV.md) was not enumerated in [Tag.getTechList](../android/nfc/Tag.md)). This indicates the tag does not support NFC-V.
+Returns null if [NfcV](NfcV.md) was not enumerated in [Tag.getTechList](../android.nfc/Tag.md)). This indicates the tag does not support NFC-V.
 
 Does not cause any RF activity and does not block.
 
 | Parameters ||
 |-------|------------------------------------------------------------------------------------------------------|
-| `tag` | [Tag](../android/nfc/Tag.md)!:an NFC-V compatible tag |
+| `tag` | [Tag](../android.nfc/Tag.md)!:an NFC-V compatible tag |
 
 | Return ||
 |--------------------------------------------------------------------------------|--------------|
-| [NfcV](../android/nfc/tech/NfcV.md)! | NFC-V object |
+| [NfcV](NfcV.md)! | NFC-V object |
 
 ### getDsfId
 
@@ -118,11 +118,11 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 fun getMaxTransceiveLength(): Int
 ```
 
-Return the maximum number of bytes that can be sent with [transceive](../android/nfc/tech/NfcV.md)).
+Return the maximum number of bytes that can be sent with [transceive](NfcV.md)).
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the maximum number of bytes that can be sent with [transceive](../android/nfc/tech/NfcV.md)). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the maximum number of bytes that can be sent with [transceive](NfcV.md)). |
 
 ### getResponseFlags
 
@@ -150,7 +150,7 @@ fun getTag(): Tag!
 
 | Return ||
 |------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Tag](../android/nfc/Tag.md)! | the [Tag](../android/nfc/Tag.md) backing this [TagTechnology](../android/nfc/tech/TagTechnology.md) object. |
+| [Tag](../android.nfc/Tag.md)! | the [Tag](../android.nfc/Tag.md) backing this [TagTechnology](TagTechnology.md) object. |
 
 ### isConnected
 
@@ -176,9 +176,9 @@ Send raw NFC-V commands to the tag and receive the response.
 
 Applications must not append the CRC to the payload, it will be automatically calculated. The application does provide FLAGS, CMD and PARAMETER bytes.
 
-Use [getMaxTransceiveLength](../android/nfc/tech/NfcV.md))to retrieve the maximum amount of bytes that can be sent with [transceive](../android/nfc/tech/NfcV.md)).
+Use [getMaxTransceiveLength](NfcV.md))to retrieve the maximum amount of bytes that can be sent with [transceive](NfcV.md)).
 
-This is an I/O operation and will block until complete. It must not be called from the main application thread. A blocked call will be canceled with [IOException](../java/io/IOException.md) if #close is called from another thread.
+This is an I/O operation and will block until complete. It must not be called from the main application thread. A blocked call will be canceled with [IOException](../java.io/IOException.md) if #close is called from another thread.
 
 Requires the [android.Manifest.permission#NFC](../android/Manifest.permission.md) permission.
 

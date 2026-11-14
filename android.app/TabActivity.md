@@ -9,13 +9,13 @@ open class TabActivity : ActivityGroup
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||||
 | --- | --- | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](../android/content/Context.md) ||||||
-| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) |||||
-| | | ↳ | [android.view.ContextThemeWrapper](../android/view/ContextThemeWrapper.md) ||||
+| ↳ | [android.content.Context](../android.content/Context.md) ||||||
+| | ↳ | [android.content.ContextWrapper](../android.content/ContextWrapper.md) |||||
+| | | ↳ | [android.view.ContextThemeWrapper](../android.view/ContextThemeWrapper.md) ||||
 | --- | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.app.Activity](../android/app/Activity.md) |||
-| | | | | ↳ | [android.app.ActivityGroup](../android/app/ActivityGroup.md) ||
-| | | | | | ↳ | [android.app.TabActivity](../android/app/TabActivity.md) |
+| | | | ↳ | [android.app.Activity](Activity.md) |||
+| | | | | ↳ | [android.app.ActivityGroup](ActivityGroup.md) ||
+| | | | | | ↳ | [android.app.TabActivity](TabActivity.md) |
 | --- | --- | --- | --- | --- | --- | --- |
 
 > [!CAUTION]
@@ -1062,8 +1062,8 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 
 | Public methods ||
 |---|---|
-| open [TabHost](../android/widget/TabHost.md)! | `https://developer.android.com/reference/kotlin/android/app/TabActivity#getTabHost()()` Returns the `https://developer.android.com/reference/kotlin/android/widget/TabHost.html#` the activity is using to host its tabs. |
-| open [TabWidget](../android/widget/TabWidget.md)! | `https://developer.android.com/reference/kotlin/android/app/TabActivity#getTabWidget()()` Returns the `https://developer.android.com/reference/kotlin/android/widget/TabWidget.html#` the activity is using to draw the actual tabs. |
+| open [TabHost](../android.widget/TabHost.md)! | `https://developer.android.com/reference/kotlin/android/app/TabActivity#getTabHost()()` Returns the `https://developer.android.com/reference/kotlin/android/widget/TabHost.html#` the activity is using to host its tabs. |
+| open [TabWidget](../android.widget/TabWidget.md)! | `https://developer.android.com/reference/kotlin/android/app/TabActivity#getTabWidget()()` Returns the `https://developer.android.com/reference/kotlin/android/widget/TabWidget.html#` the activity is using to draw the actual tabs. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/TabActivity#onContentChanged()()` Updates the screen state (current list and other views) when the content changes. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/TabActivity#setDefaultTab(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the default tab that is the first tab highlighted. |
@@ -5048,4 +5048,4 @@ If called, this method will occur after `https://developer.android.com/reference
 
 | Parameters ||
 |---|---|
-| `outState` | [Bundle](../android/os/Bundle.md): Bundle in which to place your saved state. This value cannot be `null`. |
+| `outState` | [Bundle](../android.os/Bundle.md): Bundle in which to place your saved state. This value cannot be `null`. |

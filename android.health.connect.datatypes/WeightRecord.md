@@ -9,9 +9,9 @@ class WeightRecord : InstantRecord
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.health.connect.datatypes.Record](../android/health/connect/datatypes/Record.md) |||
-| | ↳ | [android.health.connect.datatypes.InstantRecord](../android/health/connect/datatypes/InstantRecord.md) ||
-| | | ↳ | [android.health.connect.datatypes.WeightRecord](../android/health/connect/datatypes/WeightRecord.md) |
+| ↳ | [android.health.connect.datatypes.Record](Record.md) |||
+| | ↳ | [android.health.connect.datatypes.InstantRecord](InstantRecord.md) ||
+| | | ↳ | [android.health.connect.datatypes.WeightRecord](WeightRecord.md) |
 | --- | --- | --- | --- |
 
 Captures the user's weight.
@@ -29,7 +29,7 @@ Captures the user's weight.
 | Public methods ||
 |---|---|
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/WeightRecord#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [Mass](../android/health/connect/datatypes/units/Mass.md) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/WeightRecord#getWeight()()` <br /> |
+| [Mass](../android.health.connect.datatypes.units/Mass.md) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/WeightRecord#getWeight()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/WeightRecord#hashCode()()` Returns a hash code value for the object. |
 | --- | --- |
 
@@ -40,9 +40,9 @@ Captures the user's weight.
 
 | Properties ||
 |---|---|
-| static [AggregationType](../android/health/connect/datatypes/AggregationType.md)\< [Mass](../android/health/connect/datatypes/units/Mass.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/WeightRecord#WEIGHT_AVG:android.health.connect.datatypes.AggregationType` Metric identifier to get average weight using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
-| static [AggregationType](../android/health/connect/datatypes/AggregationType.md)\< [Mass](../android/health/connect/datatypes/units/Mass.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/WeightRecord#WEIGHT_MAX:android.health.connect.datatypes.AggregationType` Metric identifier to get maximum weight using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
-| static [AggregationType](../android/health/connect/datatypes/AggregationType.md)\< [Mass](../android/health/connect/datatypes/units/Mass.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/WeightRecord#WEIGHT_MIN:android.health.connect.datatypes.AggregationType` Metric identifier to get minimum weight using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
+| static [AggregationType](AggregationType.md)\< [Mass](../android.health.connect.datatypes.units/Mass.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/WeightRecord#WEIGHT_AVG:android.health.connect.datatypes.AggregationType` Metric identifier to get average weight using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
+| static [AggregationType](AggregationType.md)\< [Mass](../android.health.connect.datatypes.units/Mass.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/WeightRecord#WEIGHT_MAX:android.health.connect.datatypes.AggregationType` Metric identifier to get maximum weight using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
+| static [AggregationType](AggregationType.md)\< [Mass](../android.health.connect.datatypes.units/Mass.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/WeightRecord#WEIGHT_MIN:android.health.connect.datatypes.AggregationType` Metric identifier to get minimum weight using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
 | --- | --- |
 
 ## Public methods

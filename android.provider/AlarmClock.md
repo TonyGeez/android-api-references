@@ -8,7 +8,7 @@ class AlarmClock
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.provider.AlarmClock](../android/provider/AlarmClock.md) |
+| ↳ | [android.provider.AlarmClock](AlarmClock.md) |
 
 The AlarmClock provider contains an Intent action and extras that can be used to start an Activity to set a new alarm or timer in an alarm clock application. Applications that wish to receive the ACTION_SET_ALARM, ACTION_SET_TIMER, ACTION_DISMISS_ALARM, ACTION_DISMISS_TIMER, and ACTION_SNOOZE_ALARM Intents should create an activity to handle the Intent that requires the permission, com.android.alarm.permission.SET_ALARM. Applications that wish to create a new alarm or timer should use android.content.Context#startActivity so that the user has the option of choosing which alarm clock application to use. Android TV devices may not support the alarm intents.
 

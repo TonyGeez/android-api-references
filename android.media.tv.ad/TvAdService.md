@@ -8,11 +8,11 @@ abstract class TvAdService : Service
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](../android/content/Context.md) ||||
-| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) |||
-| | | ↳ | [android.app.Service](../android/app/Service.md) ||
+| ↳ | [android.content.Context](../android.content/Context.md) ||||
+| | ↳ | [android.content.ContextWrapper](../android.content/ContextWrapper.md) |||
+| | | ↳ | [android.app.Service](../android.app/Service.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.media.tv.ad.TvAdService](../android/media/tv/ad/TvAdService.md) |
+| | | | ↳ | [android.media.tv.ad.TvAdService](TvAdService.md) |
 
 The TvAdService class represents a TV client-side advertisement service.
 
@@ -1051,7 +1051,7 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | Public methods ||
 |---|---|
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/tv/ad/TvAdService#onAppLinkCommand(android.os.Bundle)(command: https://developer.android.com/reference/kotlin/android/os/Bundle.html#)` Called when app link command is received. |
-| [IBinder](../android/os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/media/tv/ad/TvAdService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#?)` Return the communication channel to the service. |
+| [IBinder](../android.os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/media/tv/ad/TvAdService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#?)` Return the communication channel to the service. |
 | abstract [TvAdService.Session](../android/media/tv/ad/TvAdService.Session.md)? | `https://developer.android.com/reference/kotlin/android/media/tv/ad/TvAdService#onCreateSession(kotlin.String,%20kotlin.String)(serviceId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns a concrete implementation of `https://developer.android.com/reference/kotlin/android/media/tv/ad/TvAdService.Session`. |
 | --- | --- |
 
@@ -2794,7 +2794,7 @@ Called when app link command is received.
 
 | Parameters ||
 |---|---|
-| `command` | [Bundle](../android/os/Bundle.md): This value cannot be `null`. |
+| `command` | [Bundle](../android.os/Bundle.md): This value cannot be `null`. |
 
 **See Also**
 
@@ -2814,7 +2814,7 @@ Return the communication channel to the service. May return null if clients can 
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md)?: This value may be `null`. |
+| `intent` | [Intent](../android.content/Intent.md)?: This value may be `null`. |
 
 | Return ||
 |---|---|

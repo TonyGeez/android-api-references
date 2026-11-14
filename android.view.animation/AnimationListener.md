@@ -19,9 +19,9 @@ An animation listener receives notifications from an animation. Notifications in
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAnimationEnd](../android/view/animation/Animation.AnimationListener.md))`(`animation:` ` [Animation](../android/view/animation/Animation.md)!`)` Notifies the end of the animation. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAnimationRepeat](../android/view/animation/Animation.AnimationListener.md))`(`animation:` ` [Animation](../android/view/animation/Animation.md)!`)` Notifies the repetition of the animation. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAnimationStart](../android/view/animation/Animation.AnimationListener.md))`(`animation:` ` [Animation](../android/view/animation/Animation.md)!`)` Notifies the start of the animation. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAnimationEnd](../android/view/animation/Animation.AnimationListener.md))`(`animation:` ` [Animation](Animation.md)!`)` Notifies the end of the animation. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAnimationRepeat](../android/view/animation/Animation.AnimationListener.md))`(`animation:` ` [Animation](Animation.md)!`)` Notifies the repetition of the animation. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAnimationStart](../android/view/animation/Animation.AnimationListener.md))`(`animation:` ` [Animation](Animation.md)!`)` Notifies the start of the animation. |
 | --- | --- |
 
 ## Public methods
@@ -38,7 +38,7 @@ Notifies the end of the animation. This callback is not invoked for animations w
 
 | Parameters ||
 |-------------|------------------------------------------------------------------------------------------------------------------------------------|
-| `animation` | [Animation](../android/view/animation/Animation.md)!:The animation which reached its end. |
+| `animation` | [Animation](Animation.md)!:The animation which reached its end. |
 
 ### onAnimationRepeat
 
@@ -52,7 +52,7 @@ Notifies the repetition of the animation.
 
 | Parameters ||
 |-------------|---------------------------------------------------------------------------------------------------------------------------------|
-| `animation` | [Animation](../android/view/animation/Animation.md)!:The animation which was repeated. |
+| `animation` | [Animation](Animation.md)!:The animation which was repeated. |
 
 ### onAnimationStart
 
@@ -66,4 +66,4 @@ Notifies the start of the animation.
 
 | Parameters ||
 |-------------|----------------------------------------------------------------------------------------------------------------------|
-| `animation` | [Animation](../android/view/animation/Animation.md)!:The started animation. |
+| `animation` | [Animation](Animation.md)!:The started animation. |

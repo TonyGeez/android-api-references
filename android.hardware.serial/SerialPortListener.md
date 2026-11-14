@@ -6,7 +6,7 @@ Added in [API level 37](https://developer.android.com/guide/topics/manifest/uses
 interface SerialPortListener
 ```
 
-| [android.hardware.serial.SerialPortListener](../android/hardware/serial/SerialPortListener.md) |
+| [android.hardware.serial.SerialPortListener](SerialPortListener.md) |
 
 Listener to monitor serial port connections and disconnections.
 
@@ -31,7 +31,7 @@ Called when a supported serial port is connected.
 
 | Parameters ||
 |---|---|
-| `port` | [SerialPort](../android/hardware/serial/SerialPort.md): This value cannot be `null`. |
+| `port` | [SerialPort](SerialPort.md): This value cannot be `null`. |
 
 ### onSerialPortDisconnected
 
@@ -45,4 +45,4 @@ Called when a supported serial port is disconnected.
 
 | Parameters ||
 |---|---|
-| `port` | [SerialPort](../android/hardware/serial/SerialPort.md): This value cannot be `null`. |
+| `port` | [SerialPort](SerialPort.md): This value cannot be `null`. |

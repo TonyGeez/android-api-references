@@ -2,7 +2,7 @@ Added in [API level 23](https://developer.android.com/guide/topics/manifest/uses
 
 # StatusHints
 
-Kotlin | [Java](../android/telecom/StatusHints.md)
+Kotlin | [Java](StatusHints.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class StatusHints : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.telecom.StatusHints](../android/telecom/StatusHints.md) |
+| ↳ | [android.telecom.StatusHints](StatusHints.md) |
 
 Contains status label and icon displayed in the in-call UI.
 
@@ -29,9 +29,9 @@ Contains status label and icon displayed in the in-call UI.
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/StatusHints#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/StatusHints#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [Bundle](../android/os/Bundle.md)! | `https://developer.android.com/reference/kotlin/android/telecom/StatusHints#getExtras()()` <br /> |
+| [Bundle](../android.os/Bundle.md)! | `https://developer.android.com/reference/kotlin/android/telecom/StatusHints#getExtras()()` <br /> |
 | --- | --- |
-| [Icon](../android/graphics/drawable/Icon.md)! | `https://developer.android.com/reference/kotlin/android/telecom/StatusHints#getIcon()()` <br /> |
+| [Icon](../android.graphics.drawable/Icon.md)! | `https://developer.android.com/reference/kotlin/android/telecom/StatusHints#getIcon()()` <br /> |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/telecom/StatusHints#getLabel()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/StatusHints#hashCode()()` Returns a hash code value for the object. |
 | --- | --- |
@@ -39,7 +39,7 @@ Contains status label and icon displayed in the in-call UI.
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [StatusHints](../android/telecom/StatusHints.md)!\> | `https://developer.android.com/reference/kotlin/android/telecom/StatusHints#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [StatusHints](StatusHints.md)!\> | `https://developer.android.com/reference/kotlin/android/telecom/StatusHints#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public constructors
 

@@ -2,7 +2,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 
 # SignalingDataRequest
 
-Kotlin | [Java](../android/media/tv/SignalingDataRequest.md)
+Kotlin | [Java](SignalingDataRequest.md)
 | --- | --- |
 
 ```
@@ -11,8 +11,8 @@ class SignalingDataRequest : BroadcastInfoRequest, Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.media.tv.BroadcastInfoRequest](../android/media/tv/BroadcastInfoRequest.md) ||
-| | ↳ | [android.media.tv.SignalingDataRequest](../android/media/tv/SignalingDataRequest.md) |
+| ↳ | [android.media.tv.BroadcastInfoRequest](BroadcastInfoRequest.md) ||
+| | ↳ | [android.media.tv.SignalingDataRequest](SignalingDataRequest.md) |
 
 Request to retrieve the Low-level Signalling Tables (LLS) and Service-layer Signalling (SLS) metadata.
 
@@ -87,7 +87,7 @@ For more details on each type of metadata that can be requested, refer to the AT
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [SignalingDataRequest](../android/media/tv/SignalingDataRequest.md)!\> | `https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataRequest#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [SignalingDataRequest](SignalingDataRequest.md)!\> | `https://developer.android.com/reference/kotlin/android/media/tv/SignalingDataRequest#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -547,7 +547,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

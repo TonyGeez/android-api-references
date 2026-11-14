@@ -2,7 +2,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # RenderEffect
 
-Kotlin | [Java](../android/graphics/RenderEffect.md)
+Kotlin | [Java](RenderEffect.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class RenderEffect
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.graphics.RenderEffect](../android/graphics/RenderEffect.md) |
+| ↳ | [android.graphics.RenderEffect](RenderEffect.md) |
 
 Intermediate rendering step used to render drawing commands with a corresponding visual effect. A `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#` can be configured on a `https://developer.android.com/reference/kotlin/android/graphics/RenderNode` through `https://developer.android.com/reference/kotlin/android/graphics/RenderNode#setRenderEffect(android.graphics.RenderEffect)` and will be applied when drawn through `https://developer.android.com/reference/kotlin/android/graphics/Canvas#drawRenderNode(android.graphics.RenderNode)`. Additionally a `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#` can be applied to a View's backing RenderNode through `https://developer.android.com/reference/kotlin/android/view/View.html#setRenderEffect(android.graphics.RenderEffect)`
 
@@ -19,21 +19,21 @@ Intermediate rendering step used to render drawing commands with a corresponding
 
 | Public methods ||
 |---|---|
-| static [RenderEffect](../android/graphics/RenderEffect.md) | `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#createBitmapEffect(android.graphics.Bitmap)(bitmap: https://developer.android.com/reference/kotlin/android/graphics/Bitmap)` Create a `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#` that renders the contents of the input `https://developer.android.com/reference/kotlin/android/graphics/Bitmap`. |
-| static [RenderEffect](../android/graphics/RenderEffect.md) | `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#createBitmapEffect(android.graphics.Bitmap,%20android.graphics.Rect,%20android.graphics.Rect)(bitmap: https://developer.android.com/reference/kotlin/android/graphics/Bitmap, src: https://developer.android.com/reference/kotlin/android/graphics/Rect?, dst: https://developer.android.com/reference/kotlin/android/graphics/Rect)` Create a `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#` that renders the contents of the input `https://developer.android.com/reference/kotlin/android/graphics/Bitmap`. |
-| static [RenderEffect](../android/graphics/RenderEffect.md) | `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#createBlendModeEffect(android.graphics.RenderEffect,%20android.graphics.RenderEffect,%20android.graphics.BlendMode)(dst: https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#, src: https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#, blendMode: https://developer.android.com/reference/kotlin/android/graphics/BlendMode)` Create a `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#` that is a composition of 2 other `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#` instances combined by the specified `https://developer.android.com/reference/kotlin/android/graphics/BlendMode` |
+| static [RenderEffect](RenderEffect.md) | `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#createBitmapEffect(android.graphics.Bitmap)(bitmap: https://developer.android.com/reference/kotlin/android/graphics/Bitmap)` Create a `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#` that renders the contents of the input `https://developer.android.com/reference/kotlin/android/graphics/Bitmap`. |
+| static [RenderEffect](RenderEffect.md) | `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#createBitmapEffect(android.graphics.Bitmap,%20android.graphics.Rect,%20android.graphics.Rect)(bitmap: https://developer.android.com/reference/kotlin/android/graphics/Bitmap, src: https://developer.android.com/reference/kotlin/android/graphics/Rect?, dst: https://developer.android.com/reference/kotlin/android/graphics/Rect)` Create a `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#` that renders the contents of the input `https://developer.android.com/reference/kotlin/android/graphics/Bitmap`. |
+| static [RenderEffect](RenderEffect.md) | `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#createBlendModeEffect(android.graphics.RenderEffect,%20android.graphics.RenderEffect,%20android.graphics.BlendMode)(dst: https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#, src: https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#, blendMode: https://developer.android.com/reference/kotlin/android/graphics/BlendMode)` Create a `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#` that is a composition of 2 other `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#` instances combined by the specified `https://developer.android.com/reference/kotlin/android/graphics/BlendMode` |
 | --- | --- |
-| static [RenderEffect](../android/graphics/RenderEffect.md) | `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#createBlurEffect(kotlin.Float,%20kotlin.Float,%20android.graphics.RenderEffect,%20android.graphics.Shader.TileMode)(radiusX: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, radiusY: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, inputEffect: https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#, edgeTreatment: https://developer.android.com/reference/kotlin/android/graphics/Shader.TileMode)` Create a `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#` that blurs the contents of the optional input RenderEffect with the specified radius along the x and y axis. |
-| static [RenderEffect](../android/graphics/RenderEffect.md) | `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#createBlurEffect(kotlin.Float,%20kotlin.Float,%20android.graphics.Shader.TileMode)(radiusX: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, radiusY: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, edgeTreatment: https://developer.android.com/reference/kotlin/android/graphics/Shader.TileMode)` Create a `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#` that blurs the contents of the `https://developer.android.com/reference/kotlin/android/graphics/RenderNode` that this RenderEffect is installed on with the specified radius along the x and y axis. |
-| static [RenderEffect](../android/graphics/RenderEffect.md) | `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#createChainEffect(android.graphics.RenderEffect,%20android.graphics.RenderEffect)(outer: https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#, inner: https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#)` Create a `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#` that composes 'inner' with 'outer', such that the results of 'inner' are treated as the source bitmap passed to 'outer', i. |
+| static [RenderEffect](RenderEffect.md) | `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#createBlurEffect(kotlin.Float,%20kotlin.Float,%20android.graphics.RenderEffect,%20android.graphics.Shader.TileMode)(radiusX: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, radiusY: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, inputEffect: https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#, edgeTreatment: https://developer.android.com/reference/kotlin/android/graphics/Shader.TileMode)` Create a `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#` that blurs the contents of the optional input RenderEffect with the specified radius along the x and y axis. |
+| static [RenderEffect](RenderEffect.md) | `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#createBlurEffect(kotlin.Float,%20kotlin.Float,%20android.graphics.Shader.TileMode)(radiusX: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, radiusY: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, edgeTreatment: https://developer.android.com/reference/kotlin/android/graphics/Shader.TileMode)` Create a `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#` that blurs the contents of the `https://developer.android.com/reference/kotlin/android/graphics/RenderNode` that this RenderEffect is installed on with the specified radius along the x and y axis. |
+| static [RenderEffect](RenderEffect.md) | `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#createChainEffect(android.graphics.RenderEffect,%20android.graphics.RenderEffect)(outer: https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#, inner: https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#)` Create a `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#` that composes 'inner' with 'outer', such that the results of 'inner' are treated as the source bitmap passed to 'outer', i. |
 | --- | --- |
-| static [RenderEffect](../android/graphics/RenderEffect.md) | `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#createColorFilterEffect(android.graphics.ColorFilter)(colorFilter: https://developer.android.com/reference/kotlin/android/graphics/ColorFilter)` Create a `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#` that applies the color filter to the contents of the `https://developer.android.com/reference/kotlin/android/graphics/RenderNode` that this RenderEffect is installed on |
-| static [RenderEffect](../android/graphics/RenderEffect.md) | `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#createColorFilterEffect(android.graphics.ColorFilter,%20android.graphics.RenderEffect)(colorFilter: https://developer.android.com/reference/kotlin/android/graphics/ColorFilter, renderEffect: https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#)` Create a `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#` that applies the color filter to the provided RenderEffect |
-| static [RenderEffect](../android/graphics/RenderEffect.md) | `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#createOffsetEffect(kotlin.Float,%20kotlin.Float)(offsetX: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, offsetY: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Create a `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#` instance that will offset the drawing content by the provided x and y offset. |
+| static [RenderEffect](RenderEffect.md) | `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#createColorFilterEffect(android.graphics.ColorFilter)(colorFilter: https://developer.android.com/reference/kotlin/android/graphics/ColorFilter)` Create a `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#` that applies the color filter to the contents of the `https://developer.android.com/reference/kotlin/android/graphics/RenderNode` that this RenderEffect is installed on |
+| static [RenderEffect](RenderEffect.md) | `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#createColorFilterEffect(android.graphics.ColorFilter,%20android.graphics.RenderEffect)(colorFilter: https://developer.android.com/reference/kotlin/android/graphics/ColorFilter, renderEffect: https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#)` Create a `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#` that applies the color filter to the provided RenderEffect |
+| static [RenderEffect](RenderEffect.md) | `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#createOffsetEffect(kotlin.Float,%20kotlin.Float)(offsetX: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, offsetY: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Create a `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#` instance that will offset the drawing content by the provided x and y offset. |
 | --- | --- |
-| static [RenderEffect](../android/graphics/RenderEffect.md) | `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#createOffsetEffect(kotlin.Float,%20kotlin.Float,%20android.graphics.RenderEffect)(offsetX: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, offsetY: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, input: https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#)` Create a `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#` instance with the provided x and y offset |
-| static [RenderEffect](../android/graphics/RenderEffect.md) | `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#createRuntimeShaderEffect(android.graphics.RuntimeShader,%20kotlin.String)(shader: https://developer.android.com/reference/kotlin/android/graphics/RuntimeShader, uniformShaderName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Create a `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#` that executes the provided `https://developer.android.com/reference/kotlin/android/graphics/RuntimeShader` and passes the contents of the `https://developer.android.com/reference/kotlin/android/graphics/RenderNode` that this RenderEffect is installed on as an input to the shader. |
-| static [RenderEffect](../android/graphics/RenderEffect.md) | `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#createShaderEffect(android.graphics.Shader)(shader: https://developer.android.com/reference/kotlin/android/graphics/Shader)` Create a `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#` that renders the contents of the input `https://developer.android.com/reference/kotlin/android/graphics/Shader`. |
+| static [RenderEffect](RenderEffect.md) | `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#createOffsetEffect(kotlin.Float,%20kotlin.Float,%20android.graphics.RenderEffect)(offsetX: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, offsetY: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html, input: https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#)` Create a `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#` instance with the provided x and y offset |
+| static [RenderEffect](RenderEffect.md) | `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#createRuntimeShaderEffect(android.graphics.RuntimeShader,%20kotlin.String)(shader: https://developer.android.com/reference/kotlin/android/graphics/RuntimeShader, uniformShaderName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Create a `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#` that executes the provided `https://developer.android.com/reference/kotlin/android/graphics/RuntimeShader` and passes the contents of the `https://developer.android.com/reference/kotlin/android/graphics/RenderNode` that this RenderEffect is installed on as an input to the shader. |
+| static [RenderEffect](RenderEffect.md) | `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#createShaderEffect(android.graphics.Shader)(shader: https://developer.android.com/reference/kotlin/android/graphics/Shader)` Create a `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#` that renders the contents of the input `https://developer.android.com/reference/kotlin/android/graphics/Shader`. |
 | --- | --- |
 
 ## Public methods
@@ -50,7 +50,7 @@ Create a `https://developer.android.com/reference/kotlin/android/graphics/Render
 
 | Parameters ||
 |---|---|
-| `bitmap` | [Bitmap](../android/graphics/Bitmap.md): The source bitmap to be rendered by the created `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#` This value cannot be `null`. |
+| `bitmap` | [Bitmap](Bitmap.md): The source bitmap to be rendered by the created `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#` This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -72,9 +72,9 @@ Create a `https://developer.android.com/reference/kotlin/android/graphics/Render
 
 | Parameters ||
 |---|---|
-| `bitmap` | [Bitmap](../android/graphics/Bitmap.md): The source bitmap to be rendered by the created `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#` This value cannot be `null`. |
-| `src` | [Rect](../android/graphics/Rect.md)?: Optional subset of the bitmap to be part of the rendered output. If null is provided, the entire bitmap bounds are used. |
-| `dst` | [Rect](../android/graphics/Rect.md): Bounds of the destination which the bitmap is translated and scaled to be drawn into within the bounds of the `https://developer.android.com/reference/kotlin/android/graphics/RenderNode` this RenderEffect is installed on. This value cannot be `null`. |
+| `bitmap` | [Bitmap](Bitmap.md): The source bitmap to be rendered by the created `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#` This value cannot be `null`. |
+| `src` | [Rect](Rect.md)?: Optional subset of the bitmap to be part of the rendered output. If null is provided, the entire bitmap bounds are used. |
+| `dst` | [Rect](Rect.md): Bounds of the destination which the bitmap is translated and scaled to be drawn into within the bounds of the `https://developer.android.com/reference/kotlin/android/graphics/RenderNode` this RenderEffect is installed on. This value cannot be `null`. |
 | --- | --- |
 
 | Return ||
@@ -97,9 +97,9 @@ Create a `https://developer.android.com/reference/kotlin/android/graphics/Render
 
 | Parameters ||
 |---|---|
-| `dst` | [RenderEffect](../android/graphics/RenderEffect.md): The Dst pixels used in blending. This value cannot be `null`. |
-| `src` | [RenderEffect](../android/graphics/RenderEffect.md): The Src pixels used in blending. This value cannot be `null`. |
-| `blendMode` | [BlendMode](../android/graphics/BlendMode.md): The `https://developer.android.com/reference/kotlin/android/graphics/BlendMode` to be used to combine colors from the two `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#`s. This value cannot be `null`. |
+| `dst` | [RenderEffect](RenderEffect.md): The Dst pixels used in blending. This value cannot be `null`. |
+| `src` | [RenderEffect](RenderEffect.md): The Src pixels used in blending. This value cannot be `null`. |
+| `blendMode` | [BlendMode](BlendMode.md): The `https://developer.android.com/reference/kotlin/android/graphics/BlendMode` to be used to combine colors from the two `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#`s. This value cannot be `null`. |
 | --- | --- |
 
 | Return ||
@@ -125,7 +125,7 @@ Create a `https://developer.android.com/reference/kotlin/android/graphics/Render
 |---|---|
 | `radiusX` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): Radius of blur along the X axis |
 | `radiusY` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): Radius of blur along the Y axis |
-| `inputEffect` | [RenderEffect](../android/graphics/RenderEffect.md): Input RenderEffect that provides the content to be blurred, can be null to indicate that the drawing commands on the RenderNode are to be blurred instead of the input RenderEffect |
+| `inputEffect` | [RenderEffect](RenderEffect.md): Input RenderEffect that provides the content to be blurred, can be null to indicate that the drawing commands on the RenderNode are to be blurred instead of the input RenderEffect |
 | --- | --- |
 | `edgeTreatment` | [Shader.TileMode](../android/graphics/Shader.TileMode.md): Policy for how to blur content near edges of the blur kernel. This value cannot be `null`. |
 
@@ -181,8 +181,8 @@ Consumers should favor explicit chaining of `https://developer.android.com/refer
 
 | Parameters ||
 |---|---|
-| `outer` | [RenderEffect](../android/graphics/RenderEffect.md): `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#` that consumes the output of `inner` as its input. This value cannot be `null`. |
-| `inner` | [RenderEffect](../android/graphics/RenderEffect.md): `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#` that is consumed as input by `outer` This value cannot be `null`. |
+| `outer` | [RenderEffect](RenderEffect.md): `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#` that consumes the output of `inner` as its input. This value cannot be `null`. |
+| `inner` | [RenderEffect](RenderEffect.md): `https://developer.android.com/reference/kotlin/android/graphics/RenderEffect#` that is consumed as input by `outer` This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -200,7 +200,7 @@ Create a `https://developer.android.com/reference/kotlin/android/graphics/Render
 
 | Parameters ||
 |---|---|
-| `colorFilter` | [ColorFilter](../android/graphics/ColorFilter.md): ColorFilter applied to the content in the input RenderEffect. This value cannot be `null`. |
+| `colorFilter` | [ColorFilter](ColorFilter.md): ColorFilter applied to the content in the input RenderEffect. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -221,8 +221,8 @@ Create a `https://developer.android.com/reference/kotlin/android/graphics/Render
 
 | Parameters ||
 |---|---|
-| `colorFilter` | [ColorFilter](../android/graphics/ColorFilter.md): ColorFilter applied to the content in the input RenderEffect. This value cannot be `null`. |
-| `renderEffect` | [RenderEffect](../android/graphics/RenderEffect.md): Source to be transformed by the specified `https://developer.android.com/reference/kotlin/android/graphics/ColorFilter` This value cannot be `null`. |
+| `colorFilter` | [ColorFilter](ColorFilter.md): ColorFilter applied to the content in the input RenderEffect. This value cannot be `null`. |
+| `renderEffect` | [RenderEffect](RenderEffect.md): Source to be transformed by the specified `https://developer.android.com/reference/kotlin/android/graphics/ColorFilter` This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -268,7 +268,7 @@ Create a `https://developer.android.com/reference/kotlin/android/graphics/Render
 |---|---|
 | `offsetX` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): offset along the x axis in pixels |
 | `offsetY` | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html): offset along the y axis in pixels |
-| `input` | [RenderEffect](../android/graphics/RenderEffect.md): target RenderEffect used to render in the offset coordinates. This value cannot be `null`. |
+| `input` | [RenderEffect](RenderEffect.md): target RenderEffect used to render in the offset coordinates. This value cannot be `null`. |
 | --- | --- |
 
 | Return ||
@@ -290,7 +290,7 @@ Create a `https://developer.android.com/reference/kotlin/android/graphics/Render
 
 | Parameters ||
 |---|---|
-| `shader` | [RuntimeShader](../android/graphics/RuntimeShader.md): the runtime shader that will bind the inputShaderName to the RenderEffect input. This value cannot be `null`. |
+| `shader` | [RuntimeShader](RuntimeShader.md): the runtime shader that will bind the inputShaderName to the RenderEffect input. This value cannot be `null`. |
 | `uniformShaderName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): the uniform name defined in the RuntimeShader's program to which the contents of the RenderNode will be bound. This value cannot be `null`. |
 
 | Return ||
@@ -309,7 +309,7 @@ Create a `https://developer.android.com/reference/kotlin/android/graphics/Render
 
 | Parameters ||
 |---|---|
-| `shader` | [Shader](../android/graphics/Shader.md): This value cannot be `null`. |
+| `shader` | [Shader](Shader.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|

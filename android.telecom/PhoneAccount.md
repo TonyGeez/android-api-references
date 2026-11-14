@@ -8,7 +8,7 @@ class PhoneAccount : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.telecom.PhoneAccount](../android/telecom/PhoneAccount.md) |
+| ↳ | [android.telecom.PhoneAccount](PhoneAccount.md) |
 
 Represents a distinct method to place or receive a phone call. Apps which can place calls and want those calls to be integrated into the dialer and in-call UI should build an instance of this class and register it with the system using `https://developer.android.com/reference/kotlin/android/telecom/TelecomManager`.
 
@@ -74,19 +74,19 @@ Represents a distinct method to place or receive a phone call. Apps which can pl
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | --- | --- |
-| [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md)! | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getAccountHandle()()` The unique identifier of this `PhoneAccount`. |
-| [Uri](../android/net/Uri.md)! | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getAddress()()` The address (e.g., a phone number) associated with this |
+| [PhoneAccountHandle](PhoneAccountHandle.md)! | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getAccountHandle()()` The unique identifier of this `PhoneAccount`. |
+| [Uri](../android.net/Uri.md)! | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getAddress()()` The address (e.g., a phone number) associated with this |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getCapabilities()()` The capabilities of this `PhoneAccount`. |
 | --- | --- |
-| [Bundle](../android/os/Bundle.md)! | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getExtras()()` The extras associated with this `PhoneAccount`. |
+| [Bundle](../android.os/Bundle.md)! | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getExtras()()` The extras associated with this `PhoneAccount`. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getHighlightColor()()` A highlight color to use in displaying information about this `PhoneAccount`. |
-| [Icon](../android/graphics/drawable/Icon.md)! | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getIcon()()` The icon to represent this `PhoneAccount`. |
+| [Icon](../android.graphics.drawable/Icon.md)! | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getIcon()()` The icon to represent this `PhoneAccount`. |
 | --- | --- |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getLabel()()` A short label describing a `PhoneAccount`. |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getShortDescription()()` A short paragraph describing this `PhoneAccount`. |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md)!\> | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getSimultaneousCallingRestriction()()` If a restriction is set (see `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#hasSimultaneousCallingRestriction()`), this method returns the Set of `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle`s that are allowed to support calls simultaneously with this `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#`. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [PhoneAccountHandle](PhoneAccountHandle.md)!\> | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getSimultaneousCallingRestriction()()` If a restriction is set (see `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#hasSimultaneousCallingRestriction()`), this method returns the Set of `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle`s that are allowed to support calls simultaneously with this `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#`. |
 | --- | --- |
-| [Uri](../android/net/Uri.md)! | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getSubscriptionAddress()()` The raw callback number used for this `PhoneAccount`, as distinct from `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getAddress()`. |
+| [Uri](../android.net/Uri.md)! | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getSubscriptionAddress()()` The raw callback number used for this `PhoneAccount`, as distinct from `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getAddress()`. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#getSupportedUriSchemes()()` The URI schemes supported by this `PhoneAccount`. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#hasCapabilities(kotlin.Int)(capability: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Determines if this `PhoneAccount` has a capabilities specified by the passed in bit mask. |
 | --- | --- |
@@ -102,7 +102,7 @@ Represents a distinct method to place or receive a phone call. Apps which can pl
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [PhoneAccount](../android/telecom/PhoneAccount.md)!\> | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [PhoneAccount](PhoneAccount.md)!\> | `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccount#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 

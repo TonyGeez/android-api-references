@@ -9,7 +9,7 @@ abstract class WritableIdentityCredential
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.security.identity.WritableIdentityCredential](../android/security/identity/WritableIdentityCredential.md) |
+| ↳ | [android.security.identity.WritableIdentityCredential](WritableIdentityCredential.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 37.2.**
@@ -24,7 +24,7 @@ Credentials cannot be updated or modified after creation; any changes require de
 
 | Public methods ||
 |---|---|
-| abstract [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [X509Certificate](../java/security/cert/X509Certificate.md)!\> | `https://developer.android.com/reference/kotlin/android/security/identity/WritableIdentityCredential#getCredentialKeyCertificateChain(kotlin.ByteArray)(challenge: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)` Generates and returns an X. |
+| abstract [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [X509Certificate](../java.security.cert/X509Certificate.md)!\> | `https://developer.android.com/reference/kotlin/android/security/identity/WritableIdentityCredential#getCredentialKeyCertificateChain(kotlin.ByteArray)(challenge: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)` Generates and returns an X. |
 | abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | `https://developer.android.com/reference/kotlin/android/security/identity/WritableIdentityCredential#personalize(android.security.identity.PersonalizationData)(personalizationData: https://developer.android.com/reference/kotlin/android/security/identity/PersonalizationData)` Stores all of the data in the credential, with the specified access control profiles. |
 
 ## Public methods
@@ -106,7 +106,7 @@ This data structure provides a guarantee to the issuer about the data which may 
 
 | Parameters ||
 |---|---|
-| `personalizationData` | [PersonalizationData](../android/security/identity/PersonalizationData.md): The data to provision, including access control profiles and data elements and their values, grouped into namespaces. This value cannot be `null`. |
+| `personalizationData` | [PersonalizationData](PersonalizationData.md): The data to provision, including access control profiles and data elements and their values, grouped into namespaces. This value cannot be `null`. |
 
 | Return ||
 |---|---|

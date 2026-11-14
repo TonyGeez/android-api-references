@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # SearchRecentSuggestions
 
-Kotlin| [Java](../android/provider/SearchRecentSuggestions.md) 
+Kotlin| [Java](SearchRecentSuggestions.md) 
 | --- | --- |
 
 ```
@@ -13,13 +13,13 @@ open class SearchRecentSuggestions
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.provider.SearchRecentSuggestions](../android/provider/SearchRecentSuggestions.md) |
+| ↳ | [android.provider.SearchRecentSuggestions](SearchRecentSuggestions.md) |
 
-This is a utility class providing access to [android.content.SearchRecentSuggestionsProvider](../android/content/SearchRecentSuggestionsProvider.md).
+This is a utility class providing access to [android.content.SearchRecentSuggestionsProvider](../android.content/SearchRecentSuggestionsProvider.md).
 
 Unlike some utility classes, this one must be instantiated and properly initialized, so that it can be configured to operate with the search suggestions provider that you have created.
 
-Typically, you will do this in your searchable activity, each time you receive an incoming [ACTION_SEARCH](../android/content/Intent.md) Intent. The code to record each incoming query is as follows: 
+Typically, you will do this in your searchable activity, each time you receive an incoming [ACTION_SEARCH](../android.content/Intent.md) Intent. The code to record each incoming query is as follows: 
 
 ```kotlin
 SearchSuggestions suggestions = new SearchSuggestions(this,
@@ -38,29 +38,29 @@ For a working example, see SearchSuggestionSampleProvider and SearchQueryResults
 
 | Constants ||
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUERIES_PROJECTION_DATE_INDEX](../android/provider/SearchRecentSuggestions.md) Index into the provided query projections. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUERIES_PROJECTION_DISPLAY1_INDEX](../android/provider/SearchRecentSuggestions.md) Index into the provided query projections. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUERIES_PROJECTION_DISPLAY2_INDEX](../android/provider/SearchRecentSuggestions.md) Index into the provided query projections. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUERIES_PROJECTION_DATE_INDEX](SearchRecentSuggestions.md) Index into the provided query projections. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUERIES_PROJECTION_DISPLAY1_INDEX](SearchRecentSuggestions.md) Index into the provided query projections. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUERIES_PROJECTION_DISPLAY2_INDEX](SearchRecentSuggestions.md) Index into the provided query projections. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUERIES_PROJECTION_QUERY_INDEX](../android/provider/SearchRecentSuggestions.md) Index into the provided query projections. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [QUERIES_PROJECTION_QUERY_INDEX](SearchRecentSuggestions.md) Index into the provided query projections. |
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SearchRecentSuggestions](../android/provider/SearchRecentSuggestions.md))`(`context:` ` [Context](../android/content/Context.md)!`, `authority:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `mode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Although provider utility classes are typically static, this one must be constructed because it needs to be initialized using the same values that you provided in your [android.content.SearchRecentSuggestionsProvider](../android/content/SearchRecentSuggestionsProvider.md). |
+| [SearchRecentSuggestions](SearchRecentSuggestions.md))`(`context:` ` [Context](../android.content/Context.md)!`, `authority:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `mode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Although provider utility classes are typically static, this one must be constructed because it needs to be initialized using the same values that you provided in your [android.content.SearchRecentSuggestionsProvider](../android.content/SearchRecentSuggestionsProvider.md). |
 
 | Public methods ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearHistory](../android/provider/SearchRecentSuggestions.md))`()` Completely delete the history. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [saveRecentQuery](../android/provider/SearchRecentSuggestions.md))`(`queryString:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `line2:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Add a query to the recent queries list. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearHistory](SearchRecentSuggestions.md))`()` Completely delete the history. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [saveRecentQuery](SearchRecentSuggestions.md))`(`queryString:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `line2:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Add a query to the recent queries list. |
 
 | Protected methods ||
 |----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [truncateHistory](../android/provider/SearchRecentSuggestions.md))`(`cr:` ` [ContentResolver](../android/content/ContentResolver.md)!`, `maxEntries:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Reduces the length of the history table, to prevent it from growing too large. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [truncateHistory](SearchRecentSuggestions.md))`(`cr:` ` [ContentResolver](../android.content/ContentResolver.md)!`, `maxEntries:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Reduces the length of the history table, to prevent it from growing too large. |
 
 | Properties ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [QUERIES_PROJECTION_1LINE](../android/provider/SearchRecentSuggestions.md) This is the database projection that can be used to view saved queries, when configured for one-line operation. |
-| static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [QUERIES_PROJECTION_2LINE](../android/provider/SearchRecentSuggestions.md) This is the database projection that can be used to view saved queries, when configured for two-line operation. |
+| static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [QUERIES_PROJECTION_1LINE](SearchRecentSuggestions.md) This is the database projection that can be used to view saved queries, when configured for one-line operation. |
+| static [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [QUERIES_PROJECTION_2LINE](SearchRecentSuggestions.md) This is the database projection that can be used to view saved queries, when configured for two-line operation. |
 
 ## Constants
 
@@ -125,7 +125,7 @@ SearchRecentSuggestions(
     mode: Int)
 ```
 
-Although provider utility classes are typically static, this one must be constructed because it needs to be initialized using the same values that you provided in your [android.content.SearchRecentSuggestionsProvider](../android/content/SearchRecentSuggestionsProvider.md).
+Although provider utility classes are typically static, this one must be constructed because it needs to be initialized using the same values that you provided in your [android.content.SearchRecentSuggestionsProvider](../android.content/SearchRecentSuggestionsProvider.md).
 
 | Parameters ||
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -134,8 +134,8 @@ Although provider utility classes are typically static, this one must be constru
 
 **See Also**
 
-- [android.content.SearchRecentSuggestionsProvider](../android/content/SearchRecentSuggestionsProvider.md)
-- [android.content.SearchRecentSuggestionsProvider#setupSuggestions](../android/content/SearchRecentSuggestionsProvider.md))
+- [android.content.SearchRecentSuggestionsProvider](../android.content/SearchRecentSuggestionsProvider.md)
+- [android.content.SearchRecentSuggestionsProvider#setupSuggestions](../android.content/SearchRecentSuggestionsProvider.md))
 
 ## Public methods
 
@@ -165,7 +165,7 @@ Add a query to the recent queries list. Returns immediately, performing the save
 | Parameters ||
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `queryString` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The string as typed by the user. This string will be displayed as the suggestion, and if the user clicks on the suggestion, this string will be sent to your searchable activity (as a new search query). |
-| `line2` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:If you have configured your recent suggestions provider with [android.content.SearchRecentSuggestionsProvider#DATABASE_MODE_2LINES](../android/content/SearchRecentSuggestionsProvider.md), you can pass a second line of text here. It will be shown in a smaller font, below the primary suggestion. When typing, matches in either line of text will be displayed in the list. If you did not configure two-line mode, or if a given suggestion does not have any additional text to display, you can pass null here. |
+| `line2` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:If you have configured your recent suggestions provider with [android.content.SearchRecentSuggestionsProvider#DATABASE_MODE_2LINES](../android.content/SearchRecentSuggestionsProvider.md), you can pass a second line of text here. It will be shown in a smaller font, below the primary suggestion. When typing, matches in either line of text will be displayed in the list. If you did not configure two-line mode, or if a given suggestion does not have any additional text to display, you can pass null here. |
 
 ## Protected methods
 
@@ -184,7 +184,7 @@ Reduces the length of the history table, to prevent it from growing too large.
 
 | Parameters ||
 |--------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| `cr` | [ContentResolver](../android/content/ContentResolver.md)!:Convenience copy of the content resolver. |
+| `cr` | [ContentResolver](../android.content/ContentResolver.md)!:Convenience copy of the content resolver. |
 | `maxEntries` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Max entries to leave in the table. 0 means remove all entries. |
 
 ## Properties

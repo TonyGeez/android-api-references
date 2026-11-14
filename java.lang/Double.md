@@ -11,7 +11,7 @@ class Double : Number, Comparable<Double!>
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
 | ↳ | [kotlin.Number](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-number/index.html) ||
-| | ↳ | [java.lang.Double](../java/lang/Double.md) |
+| | ↳ | [java.lang.Double](Double.md) |
 
 The`Double`class wraps a value of the primitive type`double`in an object. An object of type`Double`contains a single field whose type is`double`.
 
@@ -19,9 +19,9 @@ In addition, this class provides several methods for converting a`double`to a`St
 
 ## Floating-point Equality, Equivalence, and Comparison
 
-IEEE 754 floating-point values include finite nonzero values, signed zeros (`+0.0`and`-0.0`), signed infinities [positive infinity](../java/lang/Double.md) and [negative infinity](../java/lang/Double.md)), and [NaN](../java/lang/Double.md)(not-a-number).
+IEEE 754 floating-point values include finite nonzero values, signed zeros (`+0.0`and`-0.0`), signed infinities [positive infinity](Double.md) and [negative infinity](Double.md)), and [NaN](Double.md)(not-a-number).
 
-An*equivalence relation* on a set of values is a boolean relation on pairs of values that is reflexive, symmetric, and transitive. For more discussion of equivalence relations and object equality, see the [Object.equals](../java/lang/Object.md))specification. An equivalence relation partitions the values it operates over into sets called*equivalence classes* . All the members of the equivalence class are equal to each other under the relation. An equivalence class may contain only a single member. At least for some purposes, all the members of an equivalence class are substitutable for each other. In particular, in a numeric expression equivalent values can be*substituted*for one another without changing the result of the expression, meaning changing the equivalence class of the result of the expression.
+An*equivalence relation* on a set of values is a boolean relation on pairs of values that is reflexive, symmetric, and transitive. For more discussion of equivalence relations and object equality, see the [Object.equals](Object.md))specification. An equivalence relation partitions the values it operates over into sets called*equivalence classes* . All the members of the equivalence class are equal to each other under the relation. An equivalence class may contain only a single member. At least for some purposes, all the members of an equivalence class are substitutable for each other. In particular, in a numeric expression equivalent values can be*substituted*for one another without changing the result of the expression, meaning changing the equivalence class of the result of the expression.
 
 Notably, the built-in`==`operation on floating-point values is*not* an equivalence relation. Despite not defining an equivalence relation, the semantics of the IEEE 754`==`operator were deliberately designed to meet other needs of numerical computation. There are two exceptions where the properties of an equivalence relation are not satisfied by`==`on floating-point values:
 
@@ -30,81 +30,81 @@ Notably, the built-in`==`operation on floating-point values is*not* an equivalen
 
 For ordered comparisons using the built-in comparison operators (`<`,`<=`, etc.), NaN values have another anomalous situation: a NaN is neither less than, nor greater than, nor equal to any value, including itself. This means the*trichotomy of comparison* does*not*hold.
 
-To provide the appropriate semantics for`equals`and`compareTo`methods, those methods cannot simply be wrappers around`==`or ordered comparison operations. Instead, [equals](../java/lang/Double.md))defines NaN arguments to be equal to each other and defines`+0.0`to*not* be equal to`-0.0`, restoring reflexivity. For comparisons, [compareTo](../java/lang/Double.md))defines a total order where`-0.0`is less than`+0.0`and where a NaN is equal to itself and considered greater than positive infinity.
+To provide the appropriate semantics for`equals`and`compareTo`methods, those methods cannot simply be wrappers around`==`or ordered comparison operations. Instead, [equals](Double.md))defines NaN arguments to be equal to each other and defines`+0.0`to*not* be equal to`-0.0`, restoring reflexivity. For comparisons, [compareTo](Double.md))defines a total order where`-0.0`is less than`+0.0`and where a NaN is equal to itself and considered greater than positive infinity.
 
-The operational semantics of`equals`and`compareTo`are expressed in terms of [bit-wise converting](../java/lang/Double.md))the floating-point values to integral values.
+The operational semantics of`equals`and`compareTo`are expressed in terms of [bit-wise converting](Double.md))the floating-point values to integral values.
 
-The*natural ordering* implemented by [compareTo](../java/lang/Double.md))is [consistent with equals](../java/lang/Comparable.md). That is, two objects are reported as equal by`equals`if and only if`compareTo`on those objects returns zero.
+The*natural ordering* implemented by [compareTo](Double.md))is [consistent with equals](Comparable.md). That is, two objects are reported as equal by`equals`if and only if`compareTo`on those objects returns zero.
 
-The adjusted behaviors defined for`equals`and`compareTo`allow instances of wrapper classes to work properly with conventional data structures. For example, defining NaN values to be`equals`to one another allows NaN to be used as an element of a [HashSet](../java/util/HashSet.md) or as the key of a [HashMap](../java/util/HashMap.md). Similarly, defining`compareTo`as a total ordering, including`+0.0`,`-0.0`, and NaN, allows instances of wrapper classes to be used as elements of a [SortedSet](../java/util/SortedSet.md) or as keys of a [SortedMap](../java/util/SortedMap.md).
+The adjusted behaviors defined for`equals`and`compareTo`allow instances of wrapper classes to work properly with conventional data structures. For example, defining NaN values to be`equals`to one another allows NaN to be used as an element of a [HashSet](../java.util/HashSet.md) or as the key of a [HashMap](../java.util/HashMap.md). Similarly, defining`compareTo`as a total ordering, including`+0.0`,`-0.0`, and NaN, allows instances of wrapper classes to be used as elements of a [SortedSet](../java.util/SortedSet.md) or as keys of a [SortedMap](../java.util/SortedMap.md).
 
 ## Summary
 
 | Constants ||
 |----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BYTES](../java/lang/Double.md) The number of bytes used to represent a`double`value. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAX_EXPONENT](../java/lang/Double.md) Maximum exponent a finite`double`variable may have. |
-| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [MAX_VALUE](../java/lang/Double.md) A constant holding the largest positive finite value of type`double`, (2-2-52)·21023. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BYTES](Double.md) The number of bytes used to represent a`double`value. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAX_EXPONENT](Double.md) Maximum exponent a finite`double`variable may have. |
+| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [MAX_VALUE](Double.md) A constant holding the largest positive finite value of type`double`, (2-2-52)·21023. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIN_EXPONENT](../java/lang/Double.md) Minimum exponent a normalized`double`variable may have. |
-| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [MIN_NORMAL](../java/lang/Double.md) A constant holding the smallest positive normal value of type`double`, 2-1022. |
-| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [MIN_VALUE](../java/lang/Double.md) A constant holding the smallest positive nonzero value of type`double`, 2-1074. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MIN_EXPONENT](Double.md) Minimum exponent a normalized`double`variable may have. |
+| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [MIN_NORMAL](Double.md) A constant holding the smallest positive normal value of type`double`, 2-1022. |
+| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [MIN_VALUE](Double.md) A constant holding the smallest positive nonzero value of type`double`, 2-1074. |
 | --- | --- |
-| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [NEGATIVE_INFINITY](../java/lang/Double.md) A constant holding the negative infinity of type`double`. |
-| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [NaN](../java/lang/Double.md) A constant holding a Not-a-Number (NaN) value of type`double`. |
-| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [POSITIVE_INFINITY](../java/lang/Double.md) A constant holding the positive infinity of type`double`. |
+| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [NEGATIVE_INFINITY](Double.md) A constant holding the negative infinity of type`double`. |
+| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [NaN](Double.md) A constant holding a Not-a-Number (NaN) value of type`double`. |
+| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [POSITIVE_INFINITY](Double.md) A constant holding the positive infinity of type`double`. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PRECISION](../java/lang/Double.md) The number of bits in the significand of a`double`value. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIZE](../java/lang/Double.md) The number of bits used to represent a`double`value. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PRECISION](Double.md) The number of bits in the significand of a`double`value. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SIZE](Double.md) The number of bits used to represent a`double`value. |
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Double](../java/lang/Double.md))`(`value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Constructs a newly allocated`Double`object that represents the primitive`double`argument. |
-| [Double](../java/lang/Double.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Constructs a newly allocated`Double`object that represents the floating-point value of type`double`represented by the string. |
+| [Double](Double.md))`(`value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Constructs a newly allocated`Double`object that represents the primitive`double`argument. |
+| [Double](Double.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Constructs a newly allocated`Double`object that represents the floating-point value of type`double`represented by the string. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compare](../java/lang/Double.md))`(`d1:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `d2:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Compares the two specified`double`values. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](../java/lang/Double.md))`(`other:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Compares two`Double`objects numerically. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [doubleToLongBits](../java/lang/Double.md))`(`value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Returns a representation of the specified floating-point value according to the IEEE 754 floating-point "double format" bit layout. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compare](Double.md))`(`d1:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `d2:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Compares the two specified`double`values. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](Double.md))`(`other:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Compares two`Double`objects numerically. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [doubleToLongBits](Double.md))`(`value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Returns a representation of the specified floating-point value according to the IEEE 754 floating-point "double format" bit layout. |
 | --- | --- |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [doubleToRawLongBits](../java/lang/Double.md))`(`value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Returns a representation of the specified floating-point value according to the IEEE 754 floating-point "double format" bit layout, preserving Not-a-Number (NaN) values. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/lang/Double.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this object against the specified object. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/lang/Double.md))`()` Returns a hash code for this`Double`object. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [doubleToRawLongBits](Double.md))`(`value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Returns a representation of the specified floating-point value according to the IEEE 754 floating-point "double format" bit layout, preserving Not-a-Number (NaN) values. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](Double.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this object against the specified object. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](Double.md))`()` Returns a hash code for this`Double`object. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/lang/Double.md))`(`value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Returns a hash code for a`double`value; compatible with`Double.hashCode()`. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFinite](../java/lang/Double.md))`(`d:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Returns`true`if the argument is a finite floating-point value; returns`false`otherwise (for NaN and infinity arguments). |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isInfinite](../java/lang/Double.md))`()` Returns`true`if this`Double`value is infinitely large in magnitude,`false`otherwise. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](Double.md))`(`value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Returns a hash code for a`double`value; compatible with`Double.hashCode()`. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFinite](Double.md))`(`d:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Returns`true`if the argument is a finite floating-point value; returns`false`otherwise (for NaN and infinity arguments). |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isInfinite](Double.md))`()` Returns`true`if this`Double`value is infinitely large in magnitude,`false`otherwise. |
 | --- | --- |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isInfinite](../java/lang/Double.md))`(`v:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Returns`true`if the specified number is infinitely large in magnitude,`false`otherwise. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isNaN](../java/lang/Double.md))`()` Returns`true`if this`Double`value is a Not-a-Number (NaN),`false`otherwise. |
-| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isNaN](../java/lang/Double.md))`(`v:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Returns`true`if the specified number is a Not-a-Number (NaN) value,`false`otherwise. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isInfinite](Double.md))`(`v:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Returns`true`if the specified number is infinitely large in magnitude,`false`otherwise. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isNaN](Double.md))`()` Returns`true`if this`Double`value is a Not-a-Number (NaN),`false`otherwise. |
+| static [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isNaN](Double.md))`(`v:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Returns`true`if the specified number is a Not-a-Number (NaN) value,`false`otherwise. |
 | --- | --- |
-| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [longBitsToDouble](../java/lang/Double.md))`(`bits:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the`double`value corresponding to a given bit representation. |
-| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [max](../java/lang/Double.md))`(`a:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `b:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Returns the greater of two`double`values as if by calling [Math.max](../java/lang/Math.md)). |
-| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [min](../java/lang/Double.md))`(`a:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `b:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Returns the smaller of two`double`values as if by calling [Math.min](../java/lang/Math.md)). |
+| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [longBitsToDouble](Double.md))`(`bits:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Returns the`double`value corresponding to a given bit representation. |
+| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [max](Double.md))`(`a:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `b:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Returns the greater of two`double`values as if by calling [Math.max](Math.md)). |
+| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [min](Double.md))`(`a:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `b:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Returns the smaller of two`double`values as if by calling [Math.min](Math.md)). |
 | --- | --- |
-| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [parseDouble](../java/lang/Double.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns a new`double`initialized to the value represented by the specified`String`, as performed by the`valueOf`method of class`Double`. |
-| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [sum](../java/lang/Double.md))`(`a:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `b:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Adds two`double`values together as per the + operator. |
-| [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [toByte](../java/lang/Double.md))`()` Returns the value of this`Double`as a`byte`after a narrowing primitive conversion. |
+| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [parseDouble](Double.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns a new`double`initialized to the value represented by the specified`String`, as performed by the`valueOf`method of class`Double`. |
+| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [sum](Double.md))`(`a:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `b:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Adds two`double`values together as per the + operator. |
+| [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | [toByte](Double.md))`()` Returns the value of this`Double`as a`byte`after a narrowing primitive conversion. |
 | --- | --- |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [toDouble](../java/lang/Double.md))`()` Returns the`double`value of this`Double`object. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [toFloat](../java/lang/Double.md))`()` Returns the value of this`Double`as a`float`after a narrowing primitive conversion. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toHexString](../java/lang/Double.md))`(`d:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Returns a hexadecimal string representation of the`double`argument. |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [toDouble](Double.md))`()` Returns the`double`value of this`Double`object. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [toFloat](Double.md))`()` Returns the value of this`Double`as a`float`after a narrowing primitive conversion. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toHexString](Double.md))`(`d:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Returns a hexadecimal string representation of the`double`argument. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [toInt](../java/lang/Double.md))`()` Returns the value of this`Double`as an`int`after a narrowing primitive conversion. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toLong](../java/lang/Double.md))`()` Returns the value of this`Double`as a`long`after a narrowing primitive conversion. |
-| [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [toShort](../java/lang/Double.md))`()` Returns the value of this`Double`as a`short`after a narrowing primitive conversion. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [toInt](Double.md))`()` Returns the value of this`Double`as an`int`after a narrowing primitive conversion. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toLong](Double.md))`()` Returns the value of this`Double`as a`long`after a narrowing primitive conversion. |
+| [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [toShort](Double.md))`()` Returns the value of this`Double`as a`short`after a narrowing primitive conversion. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/lang/Double.md))`()` Returns a string representation of this`Double`object. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/lang/Double.md))`(`d:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Returns a string representation of the`double`argument. |
-| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [valueOf](../java/lang/Double.md))`(`d:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Returns a`Double`instance representing the specified`double`value. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](Double.md))`()` Returns a string representation of this`Double`object. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](Double.md))`(`d:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Returns a string representation of the`double`argument. |
+| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [valueOf](Double.md))`(`d:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Returns a`Double`instance representing the specified`double`value. |
 | --- | --- |
-| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [valueOf](../java/lang/Double.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns a object holding the value represented by the argument string . |
+| static [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [valueOf](Double.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`)` Returns a object holding the value represented by the argument string . |
 
 | Properties ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Class](../java/lang/Class.md)\< [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)!\>! | [TYPE](../java/lang/Double.md) The`Class`instance representing the primitive type`double`. |
+| static [Class](Class.md)\< [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)!\>! | [TYPE](Double.md) The`Class`instance representing the primitive type`double`. |
 
 ## Constants
 
@@ -250,7 +250,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 Double(value: Double)
 ```
 
-**Deprecated:** *It is rarely appropriate to use this constructor. The static factory [valueOf(double)](../java/lang/Double.md))is generally a better choice, as it is likely to yield significantly better space and time performance.*
+**Deprecated:** *It is rarely appropriate to use this constructor. The static factory [valueOf(double)](Double.md))is generally a better choice, as it is likely to yield significantly better space and time performance.*
 
 Constructs a newly allocated`Double`object that represents the primitive`double`argument.
 
@@ -266,7 +266,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 Double(s: String)
 ```
 
-**Deprecated:** *It is rarely appropriate to use this constructor. Use [parseDouble(java.lang.String)](../java/lang/Double.md))to convert a string to a`double`primitive, or use [valueOf(java.lang.String)](../java/lang/Double.md))to convert a string to a`Double`object.*
+**Deprecated:** *It is rarely appropriate to use this constructor. Use [parseDouble(java.lang.String)](Double.md))to convert a string to a`double`primitive, or use [valueOf(java.lang.String)](Double.md))to convert a string to a`Double`object.*
 
 Constructs a newly allocated`Double`object that represents the floating-point value of type`double`represented by the string. The string is converted to a`double`value as if by the`valueOf`method.
 
@@ -322,7 +322,7 @@ Compares two`Double`objects numerically. This method imposes a total order on`Do
 - A NaN is*unordered* with respect to other values and unequal to itself under the comparison operators. This method chooses to define`Double.NaN`to be equal to itself and greater than all other`double`values (including`Double.POSITIVE_INFINITY`).
 - Positive zero and negative zero compare equal numerically, but are distinct and distinguishable values. This method chooses to define positive zero (`+0.0d`), to be greater than negative zero (`-0.0d`).
 
-This ensures that the*natural ordering* of`Double`objects imposed by this method is*consistent with equals* ; see [this discussion](../java/lang/Double.md) for details of floating-point comparison and ordering.
+This ensures that the*natural ordering* of`Double`objects imposed by this method is*consistent with equals* ; see [this discussion](Double.md) for details of floating-point comparison and ordering.
 
 <br />
 
@@ -358,7 +358,7 @@ If the argument is negative infinity, the result is`0xfff0000000000000L`.
 
 If the argument is NaN, the result is`0x7ff8000000000000L`.
 
-In all cases, the result is a`long`integer that, when given to the [longBitsToDouble(long)](../java/lang/Double.md))method, will produce a floating-point value the same as the argument to`doubleToLongBits`(except all NaN values are collapsed to a single "canonical" NaN value).
+In all cases, the result is a`long`integer that, when given to the [longBitsToDouble(long)](Double.md))method, will produce a floating-point value the same as the argument to`doubleToLongBits`(except all NaN values are collapsed to a single "canonical" NaN value).
 
 | Parameters ||
 |---------|----------------------------------------------------------------------------------------------------------------------------|
@@ -386,7 +386,7 @@ If the argument is negative infinity, the result is`0xfff0000000000000L`.
 
 If the argument is NaN, the result is the`long`integer representing the actual NaN value. Unlike the`doubleToLongBits`method,`doubleToRawLongBits`does not collapse all the bit patterns encoding a NaN to a single "canonical" NaN value.
 
-In all cases, the result is a`long`integer that, when given to the [longBitsToDouble(long)](../java/lang/Double.md))method, will produce a floating-point value the same as the argument to`doubleToRawLongBits`.
+In all cases, the result is a`long`integer that, when given to the [longBitsToDouble(long)](Double.md))method, will produce a floating-point value the same as the argument to`doubleToRawLongBits`.
 
 | Parameters ||
 |---------|----------------------------------------------------------------------------------------------------------------------------|
@@ -404,7 +404,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun equals(other: Any?): Boolean
 ```
 
-Compares this object against the specified object. The result is`true`if and only if the argument is not`null`and is a`Double`object that represents a`double`that has the same value as the`double`represented by this object. For this purpose, two`double`values are considered to be the same if and only if the method [doubleToLongBits(double)](../java/lang/Double.md))returns the identical`long`value when applied to each.
+Compares this object against the specified object. The result is`true`if and only if the argument is not`null`and is a`Double`object that represents a`double`that has the same value as the`double`represented by this object. For this purpose, two`double`values are considered to be the same if and only if the method [doubleToLongBits(double)](Double.md))returns the identical`long`value when applied to each.
 
 | Parameters ||
 |-------|---------------------------------------------|
@@ -416,7 +416,7 @@ Compares this object against the specified object. The result is`true`if and onl
 
 **See Also**
 
-- [java.lang.Double#doubleToLongBits(double)](../java/lang/Double.md)) 
+- [java.lang.Double#doubleToLongBits(double)](Double.md)) 
 
 ### hashCode
 
@@ -426,7 +426,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun hashCode(): Int
 ```
 
-Returns a hash code for this`Double`object. The result is the exclusive OR of the two halves of the`long`integer bit representation, exactly as produced by the method [doubleToLongBits(double)](../java/lang/Double.md)), of the primitive`double`value represented by this`Double`object. That is, the hash code is the value of the expression:`(int)(v^(v>>>32))`where`v`is defined by:`long v = Double.doubleToLongBits(this.doubleValue());`
+Returns a hash code for this`Double`object. The result is the exclusive OR of the two halves of the`long`integer bit representation, exactly as produced by the method [doubleToLongBits(double)](Double.md)), of the primitive`double`value represented by this`Double`object. That is, the hash code is the value of the expression:`(int)(v^(v>>>32))`where`v`is defined by:`long v = Double.doubleToLongBits(this.doubleValue());`
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------|
@@ -581,7 +581,7 @@ static fun max(
 ): Double
 ```
 
-Returns the greater of two`double`values as if by calling [Math.max](../java/lang/Math.md)).
+Returns the greater of two`double`values as if by calling [Math.max](Math.md)).
 
 | Parameters ||
 |-----|-----------------------------------------------------------------------------------------------------|
@@ -594,7 +594,7 @@ Returns the greater of two`double`values as if by calling [Math.max](../java/lan
 
 **See Also**
 
-- [java.util.function.BinaryOperator](../java/util/function/BinaryOperator.md) 
+- [java.util.function.BinaryOperator](../java.util.function/BinaryOperator.md) 
 
 ### min
 
@@ -607,7 +607,7 @@ static fun min(
 ): Double
 ```
 
-Returns the smaller of two`double`values as if by calling [Math.min](../java/lang/Math.md)).
+Returns the smaller of two`double`values as if by calling [Math.min](Math.md)).
 
 | Parameters ||
 |-----|-----------------------------------------------------------------------------------------------------|
@@ -620,7 +620,7 @@ Returns the smaller of two`double`values as if by calling [Math.min](../java/lan
 
 **See Also**
 
-- [java.util.function.BinaryOperator](../java/util/function/BinaryOperator.md) 
+- [java.util.function.BinaryOperator](../java.util.function/BinaryOperator.md) 
 
 ### parseDouble
 
@@ -647,7 +647,7 @@ Returns a new`double`initialized to the value represented by the specified`Strin
 
 **See Also**
 
-- [java.lang.Double#valueOf(String)](../java/lang/Double.md)) 
+- [java.lang.Double#valueOf(String)](Double.md)) 
 
 ### sum
 
@@ -673,7 +673,7 @@ Adds two`double`values together as per the + operator.
 
 **See Also**
 
-- [java.util.function.BinaryOperator](../java/util/function/BinaryOperator.md) 
+- [java.util.function.BinaryOperator](../java.util.function/BinaryOperator.md) 
 
 ### toByte
 
@@ -731,7 +731,7 @@ Returns a hexadecimal string representation of the`double`argument. All characte
 - Otherwise, the result is a string that represents the sign and magnitude of the argument. If the sign is negative, the first character of the result is '`-`' (`'\u005Cu002D'`); if the sign is positive, no sign character appears in the result. As for the magnitude*m* :
  - If*m* is infinity, it is represented by the string`"Infinity"`; thus, positive infinity produces the result`"Infinity"`and negative infinity produces the result`"-Infinity"`.
  - If*m* is zero, it is represented by the string`"0x0.0p0"`; thus, negative zero produces the result`"-0x0.0p0"`and positive zero produces the result`"0x0.0p0"`.
- - If*m* is a`double`value with a normalized representation, substrings are used to represent the significand and exponent fields. The significand is represented by the characters`"0x1."`followed by a lowercase hexadecimal representation of the rest of the significand as a fraction. Trailing zeros in the hexadecimal representation are removed unless all the digits are zero, in which case a single zero is used. Next, the exponent is represented by`"p"`followed by a decimal string of the unbiased exponent as if produced by a call to [Integer.toString](../java/lang/Integer.md))on the exponent value.
+ - If*m* is a`double`value with a normalized representation, substrings are used to represent the significand and exponent fields. The significand is represented by the characters`"0x1."`followed by a lowercase hexadecimal representation of the rest of the significand as a fraction. Trailing zeros in the hexadecimal representation are removed unless all the digits are zero, in which case a single zero is used. Next, the exponent is represented by`"p"`followed by a decimal string of the unbiased exponent as if produced by a call to [Integer.toString](Integer.md))on the exponent value.
  - If*m* is a`double`value with a subnormal representation, the significand is represented by the characters`"0x0."`followed by a hexadecimal representation of the rest of the significand as a fraction. Trailing zeros in the hexadecimal representation are removed. Next, the exponent is represented by`"p-1022"`. Note that there must be at least one nonzero digit in a subnormal significand.
 
 | Floating-point Value | Hexadecimal String |
@@ -819,7 +819,7 @@ Returns a string representation of this`Double`object. The primitive`double`valu
 
 **See Also**
 
-- [java.lang.Double#toString(double)](../java/lang/Double.md)) 
+- [java.lang.Double#toString(double)](Double.md)) 
 
 ### toString
 
@@ -836,13 +836,13 @@ Returns a string representation of the`double`argument. All characters mentioned
  - If*m* is infinity, it is represented by the characters`"Infinity"`; thus, positive infinity produces the result`"Infinity"`and negative infinity produces the result`"-Infinity"`.
  - If*m* is zero, it is represented by the characters`"0.0"`; thus, negative zero produces the result`"-0.0"`and positive zero produces the result`"0.0"`.
  - If*m* is greater than or equal to 10-3 but less than 107, then it is represented as the integer part of*m* , in decimal form with no leading zeroes, followed by '`.`' (`'\u005Cu002E'`), followed by one or more decimal digits representing the fractional part of*m*.
- - If*m* is less than 10-3 or greater than or equal to 107, then it is represented in so-called "computerized scientific notation." Let*n* be the unique integer such that 10*n* ≤*m* \< 10*n* +1; then let*a* be the mathematically exact quotient of*m* and 10*n* so that 1 ≤*a* \< 10. The magnitude is then represented as the integer part of*a* , as a single decimal digit, followed by '`.`' (`'\u005Cu002E'`), followed by decimal digits representing the fractional part of*a* , followed by the letter '`E`' (`'\u005Cu0045'`), followed by a representation of*n* as a decimal integer, as produced by the method [Integer.toString(int)](../java/lang/Integer.md)).
+ - If*m* is less than 10-3 or greater than or equal to 107, then it is represented in so-called "computerized scientific notation." Let*n* be the unique integer such that 10*n* ≤*m* \< 10*n* +1; then let*a* be the mathematically exact quotient of*m* and 10*n* so that 1 ≤*a* \< 10. The magnitude is then represented as the integer part of*a* , as a single decimal digit, followed by '`.`' (`'\u005Cu002E'`), followed by decimal digits representing the fractional part of*a* , followed by the letter '`E`' (`'\u005Cu0045'`), followed by a representation of*n* as a decimal integer, as produced by the method [Integer.toString(int)](Integer.md)).
 
 How many digits must be printed for the fractional part of*m* or*a* ? There must be at least one digit to represent the fractional part, and beyond that as many, but only as many, more digits as are needed to uniquely distinguish the argument value from adjacent values of type`double`. That is, suppose that*x* is the exact mathematical value represented by the decimal representation produced by this method for a finite nonzero argument*d* . Then*d* must be the`double`value nearest to*x* ; or if two`double`values are equally close to*x* , then*d* must be one of them and the least significant bit of the significand of*d* must be`0`.
 
 <br />
 
-To create localized string representations of a floating-point value, use subclasses of [java.text.NumberFormat](../java/text/NumberFormat.md).
+To create localized string representations of a floating-point value, use subclasses of [java.text.NumberFormat](../java.text/NumberFormat.md).
 
 | Parameters ||
 |-----|--------------------------------------------------------------------------------------------------------------|
@@ -860,7 +860,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static fun valueOf(d: Double): Double
 ```
 
-Returns a`Double`instance representing the specified`double`value. If a new`Double`instance is not required, this method should generally be used in preference to the constructor [Double(double)](../java/lang/Double.md)), as this method is likely to yield significantly better space and time performance by caching frequently requested values.
+Returns a`Double`instance representing the specified`double`value. If a new`Double`instance is not required, this method should generally be used in preference to the constructor [Double(double)](Double.md)), as this method is likely to yield significantly better space and time performance by caching frequently requested values.
 
 | Parameters ||
 |-----|--------------------------------------------------------------------------------------------------|
@@ -882,7 +882,7 @@ Returns a object holding the value represented by the argument string .
 
 If`s`is`null`, then a`NullPointerException`is thrown.
 
-Leading and trailing whitespace characters in`s`are ignored. Whitespace is removed as if by the [java.lang.String#trim](../java/lang/String.md))method; that is, both ASCII space and control characters are removed. The rest of`s`should constitute a*FloatValue*as described by the lexical syntax rules:
+Leading and trailing whitespace characters in`s`are ignored. Whitespace is removed as if by the [java.lang.String#trim](String.md))method; that is, both ASCII space and control characters are removed. The rest of`s`should constitute a*FloatValue*as described by the lexical syntax rules:
 
 *FloatValue:*
 : *Signopt* `NaN`
@@ -906,7 +906,7 @@ Leading and trailing whitespace characters in`s`are ignored. Whitespace is remov
 *BinaryExponentIndicator:*
 : `p`
 : `P`
-where*Sign* ,*FloatingPointLiteral* ,*HexNumeral* ,*HexDigits* ,*SignedInteger* and*FloatTypeSuffix* are as defined in the lexical structure sections of The Java Language Specification, except that underscores are not accepted between digits. If`s`does not have the form of a*FloatValue* , then a`NumberFormatException`is thrown. Otherwise,`s`is regarded as representing an exact decimal value in the usual "computerized scientific notation" or as an exact hexadecimal value; this exact numerical value is then conceptually converted to an "infinitely precise" binary value that is then rounded to type`double`by the usual round-to-nearest rule of IEEE 754 floating-point arithmetic, which includes preserving the sign of a zero value. Note that the round-to-nearest rule also implies overflow and underflow behaviour; if the exact value of`s`is large enough in magnitude (greater than or equal to ([MAX_VALUE](../java/lang/Double.md)+ [ulp(MAX_VALUE)](../java/lang/Math.md))/2), rounding to`double`will result in an infinity and if the exact value of`s`is small enough in magnitude (less than or equal to [MIN_VALUE](../java/lang/Double.md)/2), rounding to float will result in a zero. Finally, after rounding a`Double`object representing this`double`value is returned.
+where*Sign* ,*FloatingPointLiteral* ,*HexNumeral* ,*HexDigits* ,*SignedInteger* and*FloatTypeSuffix* are as defined in the lexical structure sections of The Java Language Specification, except that underscores are not accepted between digits. If`s`does not have the form of a*FloatValue* , then a`NumberFormatException`is thrown. Otherwise,`s`is regarded as representing an exact decimal value in the usual "computerized scientific notation" or as an exact hexadecimal value; this exact numerical value is then conceptually converted to an "infinitely precise" binary value that is then rounded to type`double`by the usual round-to-nearest rule of IEEE 754 floating-point arithmetic, which includes preserving the sign of a zero value. Note that the round-to-nearest rule also implies overflow and underflow behaviour; if the exact value of`s`is large enough in magnitude (greater than or equal to ([MAX_VALUE](Double.md)+ [ulp(MAX_VALUE)](Math.md))/2), rounding to`double`will result in an infinity and if the exact value of`s`is small enough in magnitude (less than or equal to [MIN_VALUE](Double.md)/2), rounding to float will result in a zero. Finally, after rounding a`Double`object representing this`double`value is returned.
 
 To interpret localized string representations of a floating-point value, use subclasses of .
 

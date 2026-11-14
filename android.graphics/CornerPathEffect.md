@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # CornerPathEffect
 
-Kotlin| [Java](../android/graphics/CornerPathEffect.md) 
+Kotlin| [Java](CornerPathEffect.md) 
 | --- | --- |
 
 ```
@@ -13,18 +13,18 @@ open class CornerPathEffect : PathEffect
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.graphics.PathEffect](../android/graphics/PathEffect.md) ||
-| | ↳ | [android.graphics.CornerPathEffect](../android/graphics/CornerPathEffect.md) |
+| ↳ | [android.graphics.PathEffect](PathEffect.md) ||
+| | ↳ | [android.graphics.CornerPathEffect](CornerPathEffect.md) |
 
 ## Summary
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [CornerPathEffect](../android/graphics/CornerPathEffect.md))`(`radius:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Transforms geometries that are drawn (either STROKE or FILL styles) by replacing any sharp angles between line segments into rounded angles of the specified radius. |
+| [CornerPathEffect](CornerPathEffect.md))`(`radius:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Transforms geometries that are drawn (either STROKE or FILL styles) by replacing any sharp angles between line segments into rounded angles of the specified radius. |
 
 | Inherited functions ||
 |---|---|
-| From class [PathEffect](../android/graphics/PathEffect.md) |------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](../android/graphics/PathEffect.md))`()` <br /> | ||
+| From class [PathEffect](PathEffect.md) |------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------| | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](PathEffect.md))`()` <br /> | ||
 
 ## Public constructors
 

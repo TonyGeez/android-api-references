@@ -22,9 +22,9 @@ The listener that is used to notify when a double-tap or a confirmed single-tap 
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onDoubleTap](../android/view/GestureDetector.OnDoubleTapListener.md))`(`e:` ` [MotionEvent](../android/view/MotionEvent.md)`)` Notified when a double-tap occurs. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onDoubleTapEvent](../android/view/GestureDetector.OnDoubleTapListener.md))`(`e:` ` [MotionEvent](../android/view/MotionEvent.md)`)` Notified when an event within a double-tap gesture occurs, including the down, move, and up events. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onSingleTapConfirmed](../android/view/GestureDetector.OnDoubleTapListener.md))`(`e:` ` [MotionEvent](../android/view/MotionEvent.md)`)` Notified when a single-tap occurs. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onDoubleTap](../android/view/GestureDetector.OnDoubleTapListener.md))`(`e:` ` [MotionEvent](MotionEvent.md)`)` Notified when a double-tap occurs. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onDoubleTapEvent](../android/view/GestureDetector.OnDoubleTapListener.md))`(`e:` ` [MotionEvent](MotionEvent.md)`)` Notified when an event within a double-tap gesture occurs, including the down, move, and up events. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onSingleTapConfirmed](../android/view/GestureDetector.OnDoubleTapListener.md))`(`e:` ` [MotionEvent](MotionEvent.md)`)` Notified when a single-tap occurs. |
 | --- | --- |
 
 ## Public methods
@@ -41,7 +41,7 @@ Notified when a double-tap occurs. Triggered on the down event of second tap.
 
 | Parameters ||
 |-----|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `e` | [MotionEvent](../android/view/MotionEvent.md):The down motion event of the first tap of the double-tap. This value cannot be`null`. |
+| `e` | [MotionEvent](MotionEvent.md):The down motion event of the first tap of the double-tap. This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------------------------|
@@ -59,7 +59,7 @@ Notified when an event within a double-tap gesture occurs, including the down, m
 
 | Parameters ||
 |-----|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `e` | [MotionEvent](../android/view/MotionEvent.md):The motion event that occurred during the double-tap gesture. This value cannot be`null`. |
+| `e` | [MotionEvent](MotionEvent.md):The motion event that occurred during the double-tap gesture. This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------------------------|
@@ -79,7 +79,7 @@ Unlike [OnGestureListener.onSingleTapUp(MotionEvent)](../android/view/GestureDet
 
 | Parameters ||
 |-----|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `e` | [MotionEvent](../android/view/MotionEvent.md):The down motion event of the single-tap. This value cannot be`null`. |
+| `e` | [MotionEvent](MotionEvent.md):The down motion event of the single-tap. This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------------------------|

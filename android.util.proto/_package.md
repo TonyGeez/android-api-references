@@ -2,10 +2,10 @@
 
 # android.util.proto
 
-Kotlin| [Java](../android/util/proto/_package.md)
+Kotlin| [Java](_package.md)
 | --- | --- |
 
 ## Classes
 
-| [ProtoOutputStream](../android/util/proto/ProtoOutputStream.md) | Class to write to a protobuf stream. |
+| [ProtoOutputStream](ProtoOutputStream.md) | Class to write to a protobuf stream. |
 | --- | --- |

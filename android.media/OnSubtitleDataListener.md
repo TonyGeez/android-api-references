@@ -13,13 +13,13 @@ interface OnSubtitleDataListener
 
 | [android.media.MediaPlayer.OnSubtitleDataListener](../android/media/MediaPlayer.OnSubtitleDataListener.md) |
 
-Interface definition of a callback to be invoked when a player subtitle track has new subtitle data available. See the [MediaPlayer.setOnSubtitleDataListener(OnSubtitleDataListener, Handler)](../android/media/MediaPlayer.md))method for the description of which track will report data through this listener.
+Interface definition of a callback to be invoked when a player subtitle track has new subtitle data available. See the [MediaPlayer.setOnSubtitleDataListener(OnSubtitleDataListener, Handler)](MediaPlayer.md))method for the description of which track will report data through this listener.
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSubtitleData](../android/media/MediaPlayer.OnSubtitleDataListener.md))`(`mp:` ` [MediaPlayer](../android/media/MediaPlayer.md)`, `data:` ` [SubtitleData](../android/media/SubtitleData.md)`)` Method called when new subtitle data is available |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onSubtitleData](../android/media/MediaPlayer.OnSubtitleDataListener.md))`(`mp:` ` [MediaPlayer](MediaPlayer.md)`, `data:` ` [SubtitleData](SubtitleData.md)`)` Method called when new subtitle data is available |
 
 ## Public methods
 
@@ -38,5 +38,5 @@ Method called when new subtitle data is available
 
 | Parameters ||
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `mp` | [MediaPlayer](../android/media/MediaPlayer.md):the player that reports the new subtitle data This value cannot be`null`. |
-| `data` | [SubtitleData](../android/media/SubtitleData.md):the subtitle data This value cannot be`null`. |
+| `mp` | [MediaPlayer](MediaPlayer.md):the player that reports the new subtitle data This value cannot be`null`. |
+| `data` | [SubtitleData](SubtitleData.md):the subtitle data This value cannot be`null`. |

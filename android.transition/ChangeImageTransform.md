@@ -2,7 +2,7 @@ Added in [API level 21](https://developer.android.com/guide/topics/manifest/uses
 
 # ChangeImageTransform
 
-Kotlin | [Java](../android/transition/ChangeImageTransform.md)
+Kotlin | [Java](ChangeImageTransform.md)
 | --- | --- |
 
 ```
@@ -11,8 +11,8 @@ open class ChangeImageTransform : Transition
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.transition.Transition](../android/transition/Transition.md) ||
-| | ↳ | [android.transition.ChangeImageTransform](../android/transition/ChangeImageTransform.md) |
+| ↳ | [android.transition.Transition](Transition.md) ||
+| | ↳ | [android.transition.ChangeImageTransform](ChangeImageTransform.md) |
 
 This Transition captures an ImageView's matrix before and after the scene change and animates it during the transition.
 
@@ -33,7 +33,7 @@ In combination with ChangeBounds, ChangeImageTransform allows ImageViews that ch
 |---|---|
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/transition/ChangeImageTransform#captureEndValues(android.transition.TransitionValues)(transitionValues: https://developer.android.com/reference/kotlin/android/transition/TransitionValues!)` Captures the values in the end scene for the properties that this transition monitors. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/transition/ChangeImageTransform#captureStartValues(android.transition.TransitionValues)(transitionValues: https://developer.android.com/reference/kotlin/android/transition/TransitionValues!)` Captures the values in the start scene for the properties that this transition monitors. |
-| open [Animator](../android/animation/Animator.md)? | `https://developer.android.com/reference/kotlin/android/transition/ChangeImageTransform#createAnimator(android.view.ViewGroup,%20android.transition.TransitionValues,%20android.transition.TransitionValues)(sceneRoot: https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#, startValues: https://developer.android.com/reference/kotlin/android/transition/TransitionValues?, endValues: https://developer.android.com/reference/kotlin/android/transition/TransitionValues?)` Creates an Animator for ImageViews moving, changing dimensions, and/or changing `https://developer.android.com/reference/kotlin/android/widget/ImageView.ScaleType.html#`. |
+| open [Animator](../android.animation/Animator.md)? | `https://developer.android.com/reference/kotlin/android/transition/ChangeImageTransform#createAnimator(android.view.ViewGroup,%20android.transition.TransitionValues,%20android.transition.TransitionValues)(sceneRoot: https://developer.android.com/reference/kotlin/android/view/ViewGroup.html#, startValues: https://developer.android.com/reference/kotlin/android/transition/TransitionValues?, endValues: https://developer.android.com/reference/kotlin/android/transition/TransitionValues?)` Creates an Animator for ImageViews moving, changing dimensions, and/or changing `https://developer.android.com/reference/kotlin/android/widget/ImageView.ScaleType.html#`. |
 | --- | --- |
 | open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/transition/ChangeImageTransform#getTransitionProperties()()` Returns the set of property names used stored in the `https://developer.android.com/reference/kotlin/android/transition/TransitionValues` object passed into `https://developer.android.com/reference/kotlin/android/transition/Transition#captureStartValues(android.transition.TransitionValues)` that this transition cares about for the purposes of canceling overlapping animations. |
 
@@ -77,7 +77,7 @@ Subclasses must implement this method. The method should only be called by the t
 
 | Parameters ||
 |---|---|
-| `transitionValues` | [TransitionValues](../android/transition/TransitionValues.md)!: The holder for any values that the Transition wishes to store. Values are stored in the `values` field of this TransitionValues object and are keyed from a String value. For example, to store a view's rotation value, a transition might call `transitionValues.values.put("appname:transitionname:rotation", view.getRotation())`. The target view will already be stored in the transitionValues structure when this method is called. |
+| `transitionValues` | [TransitionValues](TransitionValues.md)!: The holder for any values that the Transition wishes to store. Values are stored in the `values` field of this TransitionValues object and are keyed from a String value. For example, to store a view's rotation value, a transition might call `transitionValues.values.put("appname:transitionname:rotation", view.getRotation())`. The target view will already be stored in the transitionValues structure when this method is called. |
 
 ### captureStartValues
 
@@ -93,7 +93,7 @@ Subclasses must implement this method. The method should only be called by the t
 
 | Parameters ||
 |---|---|
-| `transitionValues` | [TransitionValues](../android/transition/TransitionValues.md)!: The holder for any values that the Transition wishes to store. Values are stored in the `values` field of this TransitionValues object and are keyed from a String value. For example, to store a view's rotation value, a transition might call `transitionValues.values.put("appname:transitionname:rotation", view.getRotation())`. The target view will already be stored in the transitionValues structure when this method is called. |
+| `transitionValues` | [TransitionValues](TransitionValues.md)!: The holder for any values that the Transition wishes to store. Values are stored in the `values` field of this TransitionValues object and are keyed from a String value. For example, to store a view's rotation value, a transition might call `transitionValues.values.put("appname:transitionname:rotation", view.getRotation())`. The target view will already be stored in the transitionValues structure when this method is called. |
 
 ### createAnimator
 
@@ -111,9 +111,9 @@ Creates an Animator for ImageViews moving, changing dimensions, and/or changing 
 
 | Parameters ||
 |---|---|
-| `sceneRoot` | [ViewGroup](../android/view/ViewGroup.md): The root of the transition hierarchy. This value cannot be `null`. |
-| `startValues` | [TransitionValues](../android/transition/TransitionValues.md)?: The values for a specific target in the start scene. This value may be `null`. |
-| `endValues` | [TransitionValues](../android/transition/TransitionValues.md)?: The values for the target in the end scene. This value may be `null`. |
+| `sceneRoot` | [ViewGroup](../android.view/ViewGroup.md): The root of the transition hierarchy. This value cannot be `null`. |
+| `startValues` | [TransitionValues](TransitionValues.md)?: The values for a specific target in the start scene. This value may be `null`. |
+| `endValues` | [TransitionValues](TransitionValues.md)?: The values for the target in the end scene. This value may be `null`. |
 | --- | --- |
 
 | Return ||

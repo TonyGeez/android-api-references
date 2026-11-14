@@ -44,7 +44,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `cellIdentity` | [CellIdentity](../android/telephony/CellIdentity.md): the CellIdentity, which must include the globally unique identifier for the cell (for example, all components of the CGI or ECGI). This value cannot be `null`. |
+| `cellIdentity` | [CellIdentity](CellIdentity.md): the CellIdentity, which must include the globally unique identifier for the cell (for example, all components of the CGI or ECGI). This value cannot be `null`. |
 | `chosenPlmn` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): a 5 or 6 digit alphanumeric PLMN (MCC|MNC) among those broadcast by the cell that was chosen for the failed registration attempt. This value cannot be `null`. |
 | `domain` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): DOMAIN_CS, DOMAIN_PS or both in case of a combined procedure. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/telephony/NetworkRegistrationInfo#DOMAIN_UNKNOWN:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/NetworkRegistrationInfo#DOMAIN_CS:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/NetworkRegistrationInfo#DOMAIN_PS:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/telephony/NetworkRegistrationInfo#DOMAIN_CS_PS:kotlin.Int` |
 | --- | --- |

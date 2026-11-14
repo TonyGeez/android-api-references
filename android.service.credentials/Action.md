@@ -2,7 +2,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # Action
 
-Kotlin | [Java](../android/service/credentials/Action.md)
+Kotlin | [Java](Action.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class Action : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.service.credentials.Action](../android/service/credentials/Action.md) |
+| ↳ | [android.service.credentials.Action](Action.md) |
 
 An action defined by the provider that intents into the provider's app for specific user actions.
 
@@ -30,13 +30,13 @@ If user selects this action entry, the corresponding `https://developer.android.
 | Public methods ||
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/credentials/Action#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [Slice](../android/app/slice/Slice.md) | `https://developer.android.com/reference/kotlin/android/service/credentials/Action#getSlice()()` Returns a `Slice` object containing the display content to be displayed on the UI. |
+| [Slice](../android.app.slice/Slice.md) | `https://developer.android.com/reference/kotlin/android/service/credentials/Action#getSlice()()` Returns a `Slice` object containing the display content to be displayed on the UI. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/credentials/Action#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 | --- | --- |
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [Action](../android/service/credentials/Action.md)!\> | `https://developer.android.com/reference/kotlin/android/service/credentials/Action#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [Action](Action.md)!\> | `https://developer.android.com/reference/kotlin/android/service/credentials/Action#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public constructors
 
@@ -56,7 +56,7 @@ See details on usage of `Action` for various actionable entries in `https://deve
 
 | Parameters ||
 |---|---|
-| `slice` | [Slice](../android/app/slice/Slice.md): the slice containing the metadata to be shown on the UI, must be constructed through the androidx.credentials.provider Jetpack library; If constructed manually, the `slice` object must contain the non-null properties of the androidx.credentials.provider.Action class populated as slice items against specific hints as used in the class's `toSlice` method, since the Android System uses this library to parse the `slice` and extract the required attributes |
+| `slice` | [Slice](../android.app.slice/Slice.md): the slice containing the metadata to be shown on the UI, must be constructed through the androidx.credentials.provider Jetpack library; If constructed manually, the `slice` object must contain the non-null properties of the androidx.credentials.provider.Action class populated as slice items against specific hints as used in the class's `toSlice` method, since the Android System uses this library to parse the `slice` and extract the required attributes |
 
 ## Public methods
 
@@ -103,7 +103,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

@@ -4,7 +4,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # ExerciseSegmentType
 
-Kotlin| [Java](../android/health/connect/datatypes/ExerciseSegmentType.md) 
+Kotlin| [Java](ExerciseSegmentType.md) 
 | --- | --- |
 
 ```
@@ -13,104 +13,104 @@ class ExerciseSegmentType
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.health.connect.datatypes.ExerciseSegmentType](../android/health/connect/datatypes/ExerciseSegmentType.md) |
+| ↳ | [android.health.connect.datatypes.ExerciseSegmentType](ExerciseSegmentType.md) |
 
-Identifier for exercise types, as returned by [ExerciseSegment.getSegmentType()](../android/health/connect/datatypes/ExerciseSegment.md)).
+Identifier for exercise types, as returned by [ExerciseSegment.getSegmentType()](ExerciseSegment.md)).
 
 ## Summary
 
 | Constants ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_ARM_CURL](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for arm curls. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_BACK_EXTENSION](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for back extensions. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_BALL_SLAM](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for ball slams. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_ARM_CURL](ExerciseSegmentType.md) Use this type for arm curls. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_BACK_EXTENSION](ExerciseSegmentType.md) Use this type for back extensions. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_BALL_SLAM](ExerciseSegmentType.md) Use this type for ball slams. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_BARBELL_SHOULDER_PRESS](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for barbel shoulder press. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_BENCH_PRESS](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for bench presses. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_BENCH_SIT_UP](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for bench sit up. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_BARBELL_SHOULDER_PRESS](ExerciseSegmentType.md) Use this type for barbel shoulder press. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_BENCH_PRESS](ExerciseSegmentType.md) Use this type for bench presses. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_BENCH_SIT_UP](ExerciseSegmentType.md) Use this type for bench sit up. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_BIKING](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for biking. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_BIKING_STATIONARY](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for stationary biking. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_BURPEE](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for burpees. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_BIKING](ExerciseSegmentType.md) Use this type for biking. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_BIKING_STATIONARY](ExerciseSegmentType.md) Use this type for stationary biking. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_BURPEE](ExerciseSegmentType.md) Use this type for burpees. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_CRUNCH](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for crunches. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_DEADLIFT](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for deadlifts. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_DOUBLE_ARM_TRICEPS_EXTENSION](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for double arms triceps extensions. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_CRUNCH](ExerciseSegmentType.md) Use this type for crunches. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_DEADLIFT](ExerciseSegmentType.md) Use this type for deadlifts. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_DOUBLE_ARM_TRICEPS_EXTENSION](ExerciseSegmentType.md) Use this type for double arms triceps extensions. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_DUMBBELL_CURL_LEFT_ARM](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for left arm dumbbell curl. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_DUMBBELL_CURL_RIGHT_ARM](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for right arm dumbbell curl. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_DUMBBELL_FRONT_RAISE](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for right arm dumbbell front raise. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_DUMBBELL_CURL_LEFT_ARM](ExerciseSegmentType.md) Use this type for left arm dumbbell curl. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_DUMBBELL_CURL_RIGHT_ARM](ExerciseSegmentType.md) Use this type for right arm dumbbell curl. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_DUMBBELL_FRONT_RAISE](ExerciseSegmentType.md) Use this type for right arm dumbbell front raise. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_DUMBBELL_LATERAL_RAISE](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for dumbbell lateral raises. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_DUMBBELL_ROW](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for dumbbells rows. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_DUMBBELL_TRICEPS_EXTENSION_LEFT_ARM](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for left arm triceps extensions. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_DUMBBELL_LATERAL_RAISE](ExerciseSegmentType.md) Use this type for dumbbell lateral raises. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_DUMBBELL_ROW](ExerciseSegmentType.md) Use this type for dumbbells rows. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_DUMBBELL_TRICEPS_EXTENSION_LEFT_ARM](ExerciseSegmentType.md) Use this type for left arm triceps extensions. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_DUMBBELL_TRICEPS_EXTENSION_RIGHT_ARM](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for right arm triceps extensions. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_DUMBBELL_TRICEPS_EXTENSION_TWO_ARM](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for two arms triceps extensions. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_ELLIPTICAL](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for elliptical workout. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_DUMBBELL_TRICEPS_EXTENSION_RIGHT_ARM](ExerciseSegmentType.md) Use this type for right arm triceps extensions. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_DUMBBELL_TRICEPS_EXTENSION_TWO_ARM](ExerciseSegmentType.md) Use this type for two arms triceps extensions. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_ELLIPTICAL](ExerciseSegmentType.md) Use this type for elliptical workout. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_FORWARD_TWIST](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for forward twists. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_FRONT_RAISE](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for front raises. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_HIGH_INTENSITY_INTERVAL_TRAINING](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for high intensity training. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_FORWARD_TWIST](ExerciseSegmentType.md) Use this type for forward twists. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_FRONT_RAISE](ExerciseSegmentType.md) Use this type for front raises. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_HIGH_INTENSITY_INTERVAL_TRAINING](ExerciseSegmentType.md) Use this type for high intensity training. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_HIP_THRUST](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for hip thrusts. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_HULA_HOOP](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for hula-hoops. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_JUMPING_JACK](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for jumping jacks. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_HIP_THRUST](ExerciseSegmentType.md) Use this type for hip thrusts. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_HULA_HOOP](ExerciseSegmentType.md) Use this type for hula-hoops. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_JUMPING_JACK](ExerciseSegmentType.md) Use this type for jumping jacks. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_JUMP_ROPE](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for jump rope. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_KETTLEBELL_SWING](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for kettlebell swings. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_LATERAL_RAISE](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for lateral raises. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_JUMP_ROPE](ExerciseSegmentType.md) Use this type for jump rope. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_KETTLEBELL_SWING](ExerciseSegmentType.md) Use this type for kettlebell swings. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_LATERAL_RAISE](ExerciseSegmentType.md) Use this type for lateral raises. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_LAT_PULL_DOWN](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for lat pull-downs. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_LEG_CURL](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for leg curls. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_LEG_EXTENSION](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for leg extensions. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_LAT_PULL_DOWN](ExerciseSegmentType.md) Use this type for lat pull-downs. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_LEG_CURL](ExerciseSegmentType.md) Use this type for leg curls. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_LEG_EXTENSION](ExerciseSegmentType.md) Use this type for leg extensions. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_LEG_PRESS](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for leg presses. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_LEG_RAISE](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for leg raises. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_LUNGE](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for lunges. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_LEG_PRESS](ExerciseSegmentType.md) Use this type for leg presses. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_LEG_RAISE](ExerciseSegmentType.md) Use this type for leg raises. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_LUNGE](ExerciseSegmentType.md) Use this type for lunges. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_MOUNTAIN_CLIMBER](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for mountain climber. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_OTHER_WORKOUT](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for other workout. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_PAUSE](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for the pause. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_MOUNTAIN_CLIMBER](ExerciseSegmentType.md) Use this type for mountain climber. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_OTHER_WORKOUT](ExerciseSegmentType.md) Use this type for other workout. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_PAUSE](ExerciseSegmentType.md) Use this type for the pause. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_PILATES](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for pilates. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_PLANK](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for plank. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_PULL_UP](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for pull-ups. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_PILATES](ExerciseSegmentType.md) Use this type for pilates. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_PLANK](ExerciseSegmentType.md) Use this type for plank. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_PULL_UP](ExerciseSegmentType.md) Use this type for pull-ups. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_PUNCH](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for punches. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_REST](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for the rest. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_ROWING_MACHINE](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for rowing machine workout. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_PUNCH](ExerciseSegmentType.md) Use this type for punches. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_REST](ExerciseSegmentType.md) Use this type for the rest. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_ROWING_MACHINE](ExerciseSegmentType.md) Use this type for rowing machine workout. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_RUNNING](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for running. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_RUNNING_TREADMILL](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for treadmill running. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_SHOULDER_PRESS](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for shoulder press. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_RUNNING](ExerciseSegmentType.md) Use this type for running. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_RUNNING_TREADMILL](ExerciseSegmentType.md) Use this type for treadmill running. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_SHOULDER_PRESS](ExerciseSegmentType.md) Use this type for shoulder press. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_SINGLE_ARM_TRICEPS_EXTENSION](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for single arm triceps extension. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_SIT_UP](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for sit-ups. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_SQUAT](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for squats. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_SINGLE_ARM_TRICEPS_EXTENSION](ExerciseSegmentType.md) Use this type for single arm triceps extension. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_SIT_UP](ExerciseSegmentType.md) Use this type for sit-ups. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_SQUAT](ExerciseSegmentType.md) Use this type for squats. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_STAIR_CLIMBING](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for stair climbing. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_STAIR_CLIMBING_MACHINE](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for stair climbing machine. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_STRETCHING](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for stretching. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_STAIR_CLIMBING](ExerciseSegmentType.md) Use this type for stair climbing. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_STAIR_CLIMBING_MACHINE](ExerciseSegmentType.md) Use this type for stair climbing machine. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_STRETCHING](ExerciseSegmentType.md) Use this type for stretching. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_SWIMMING_BACKSTROKE](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for backstroke swimming. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_SWIMMING_BREASTSTROKE](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for breaststroke swimming. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_SWIMMING_BUTTERFLY](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for butterfly swimming. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_SWIMMING_BACKSTROKE](ExerciseSegmentType.md) Use this type for backstroke swimming. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_SWIMMING_BREASTSTROKE](ExerciseSegmentType.md) Use this type for breaststroke swimming. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_SWIMMING_BUTTERFLY](ExerciseSegmentType.md) Use this type for butterfly swimming. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_SWIMMING_FREESTYLE](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for freestyle swimming. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_SWIMMING_MIXED](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for mixed swimming. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_SWIMMING_OPEN_WATER](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for swimming in open water. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_SWIMMING_FREESTYLE](ExerciseSegmentType.md) Use this type for freestyle swimming. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_SWIMMING_MIXED](ExerciseSegmentType.md) Use this type for mixed swimming. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_SWIMMING_OPEN_WATER](ExerciseSegmentType.md) Use this type for swimming in open water. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_SWIMMING_OTHER](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type if other swimming styles are not suitable. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_SWIMMING_POOL](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for swimming in the pool. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_UNKNOWN](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type if the type of the exercise segment is not known. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_SWIMMING_OTHER](ExerciseSegmentType.md) Use this type if other swimming styles are not suitable. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_SWIMMING_POOL](ExerciseSegmentType.md) Use this type for swimming in the pool. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_UNKNOWN](ExerciseSegmentType.md) Use this type if the type of the exercise segment is not known. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_UPPER_TWIST](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for upper twists. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_WALKING](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for walking. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_WEIGHTLIFTING](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for weightlifting. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_UPPER_TWIST](ExerciseSegmentType.md) Use this type for upper twists. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_WALKING](ExerciseSegmentType.md) Use this type for walking. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_WEIGHTLIFTING](ExerciseSegmentType.md) Use this type for weightlifting. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_WHEELCHAIR](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for wheelchair. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_YOGA](../android/health/connect/datatypes/ExerciseSegmentType.md) Use this type for yoga. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_WHEELCHAIR](ExerciseSegmentType.md) Use this type for wheelchair. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SEGMENT_TYPE_YOGA](ExerciseSegmentType.md) Use this type for yoga. |
 
 ## Constants
 

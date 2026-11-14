@@ -4,7 +4,7 @@ Added in [API level 27](https://developer.android.com/guide/topics/manifest/uses
 
 # WallpaperColors
 
-Kotlin| [Java](../android/app/WallpaperColors.md) 
+Kotlin| [Java](WallpaperColors.md) 
 | --- | --- |
 
 ```
@@ -13,49 +13,49 @@ class WallpaperColors : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.WallpaperColors](../android/app/WallpaperColors.md) |
+| ↳ | [android.app.WallpaperColors](WallpaperColors.md) |
 
 Provides information about the colors of a wallpaper.
 
-Exposes the 3 most visually representative colors of a wallpaper. Can be either [WallpaperColors.getPrimaryColor()](../android/app/WallpaperColors.md)), [WallpaperColors.getSecondaryColor()](../android/app/WallpaperColors.md))or [WallpaperColors.getTertiaryColor()](../android/app/WallpaperColors.md)).
+Exposes the 3 most visually representative colors of a wallpaper. Can be either [WallpaperColors.getPrimaryColor()](WallpaperColors.md)), [WallpaperColors.getSecondaryColor()](WallpaperColors.md))or [WallpaperColors.getTertiaryColor()](WallpaperColors.md)).
 
 ## Summary
 
 | Constants ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HINT_SUPPORTS_DARK_TEXT](../android/app/WallpaperColors.md) Specifies that dark text is preferred over the current wallpaper for best presentation. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HINT_SUPPORTS_DARK_THEME](../android/app/WallpaperColors.md) Specifies that dark theme is preferred over the current wallpaper for best presentation. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HINT_SUPPORTS_DARK_TEXT](WallpaperColors.md) Specifies that dark text is preferred over the current wallpaper for best presentation. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HINT_SUPPORTS_DARK_THEME](WallpaperColors.md) Specifies that dark theme is preferred over the current wallpaper for best presentation. |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android.os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android.os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android.os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [WallpaperColors](../android/app/WallpaperColors.md))`(`primaryColor:` ` [Color](../android/graphics/Color.md)`, `secondaryColor:` ` [Color](../android/graphics/Color.md)?`, `tertiaryColor:` ` [Color](../android/graphics/Color.md)?`)` Constructs a new object from three colors. |
-| [WallpaperColors](../android/app/WallpaperColors.md))`(`primaryColor:` ` [Color](../android/graphics/Color.md)`, `secondaryColor:` ` [Color](../android/graphics/Color.md)?`, `tertiaryColor:` ` [Color](../android/graphics/Color.md)?`, `colorHints:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a new object from three colors, where hints can be specified. |
-| [WallpaperColors](../android/app/WallpaperColors.md))`(`parcel:` ` [Parcel](../android/os/Parcel.md)!`)` <br /> |
+| [WallpaperColors](WallpaperColors.md))`(`primaryColor:` ` [Color](../android.graphics/Color.md)`, `secondaryColor:` ` [Color](../android.graphics/Color.md)?`, `tertiaryColor:` ` [Color](../android.graphics/Color.md)?`)` Constructs a new object from three colors. |
+| [WallpaperColors](WallpaperColors.md))`(`primaryColor:` ` [Color](../android.graphics/Color.md)`, `secondaryColor:` ` [Color](../android.graphics/Color.md)?`, `tertiaryColor:` ` [Color](../android.graphics/Color.md)?`, `colorHints:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a new object from three colors, where hints can be specified. |
+| [WallpaperColors](WallpaperColors.md))`(`parcel:` ` [Parcel](../android.os/Parcel.md)!`)` <br /> |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/app/WallpaperColors.md))`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/app/WallpaperColors.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| static [WallpaperColors](../android/app/WallpaperColors.md)! | [fromBitmap](../android/app/WallpaperColors.md))`(`bitmap:` ` [Bitmap](../android/graphics/Bitmap.md)`)` Constructs [WallpaperColors](../android/app/WallpaperColors.md) from a bitmap. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](WallpaperColors.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](WallpaperColors.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| static [WallpaperColors](WallpaperColors.md)! | [fromBitmap](WallpaperColors.md))`(`bitmap:` ` [Bitmap](../android.graphics/Bitmap.md)`)` Constructs [WallpaperColors](WallpaperColors.md) from a bitmap. |
 | --- | --- |
-| static [WallpaperColors](../android/app/WallpaperColors.md)! | [fromDrawable](../android/app/WallpaperColors.md))`(`drawable:` ` [Drawable](../android/graphics/drawable/Drawable.md)!`)` Constructs [WallpaperColors](../android/app/WallpaperColors.md) from a drawable. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getColorHints](../android/app/WallpaperColors.md))`()` Returns the color hints for this instance. |
-| [Color](../android/graphics/Color.md) | [getPrimaryColor](../android/app/WallpaperColors.md))`()` Gets the most visually representative color of the wallpaper. |
+| static [WallpaperColors](WallpaperColors.md)! | [fromDrawable](WallpaperColors.md))`(`drawable:` ` [Drawable](../android.graphics.drawable/Drawable.md)!`)` Constructs [WallpaperColors](WallpaperColors.md) from a drawable. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getColorHints](WallpaperColors.md))`()` Returns the color hints for this instance. |
+| [Color](../android.graphics/Color.md) | [getPrimaryColor](WallpaperColors.md))`()` Gets the most visually representative color of the wallpaper. |
 | --- | --- |
-| [Color](../android/graphics/Color.md)? | [getSecondaryColor](../android/app/WallpaperColors.md))`()` Gets the second most preeminent color of the wallpaper. |
-| [Color](../android/graphics/Color.md)? | [getTertiaryColor](../android/app/WallpaperColors.md))`()` Gets the third most preeminent color of the wallpaper. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/app/WallpaperColors.md))`()` <br /> |
+| [Color](../android.graphics/Color.md)? | [getSecondaryColor](WallpaperColors.md))`()` Gets the second most preeminent color of the wallpaper. |
+| [Color](../android.graphics/Color.md)? | [getTertiaryColor](WallpaperColors.md))`()` Gets the third most preeminent color of the wallpaper. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](WallpaperColors.md))`()` <br /> |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/app/WallpaperColors.md))`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/app/WallpaperColors.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](WallpaperColors.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](WallpaperColors.md))`(`dest:` ` [Parcel](../android.os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [WallpaperColors](../android/app/WallpaperColors.md)!\> | [CREATOR](../android/app/WallpaperColors.md) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [WallpaperColors](WallpaperColors.md)!\> | [CREATOR](WallpaperColors.md) <br /> |
 
 ## Constants
 
@@ -104,15 +104,15 @@ Constructs a new object from three colors.
 
 | Parameters ||
 |------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| `primaryColor` | [Color](../android/graphics/Color.md):Primary color. This value cannot be`null`. |
-| `secondaryColor` | [Color](../android/graphics/Color.md)?:Secondary color. This value may be`null`. |
-| `tertiaryColor` | [Color](../android/graphics/Color.md)?:Tertiary color. This value may be`null`. |
+| `primaryColor` | [Color](../android.graphics/Color.md):Primary color. This value cannot be`null`. |
+| `secondaryColor` | [Color](../android.graphics/Color.md)?:Secondary color. This value may be`null`. |
+| `tertiaryColor` | [Color](../android.graphics/Color.md)?:Tertiary color. This value may be`null`. |
 | --- | --- |
 
 **See Also**
 
-- [android.app.WallpaperColors#fromBitmap(Bitmap)](../android/app/WallpaperColors.md))
-- [android.app.WallpaperColors#fromDrawable(Drawable)](../android/app/WallpaperColors.md)) 
+- [android.app.WallpaperColors#fromBitmap(Bitmap)](WallpaperColors.md))
+- [android.app.WallpaperColors#fromDrawable(Drawable)](WallpaperColors.md)) 
 
 ### WallpaperColors
 
@@ -130,16 +130,16 @@ Constructs a new object from three colors, where hints can be specified.
 
 | Parameters ||
 |------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `primaryColor` | [Color](../android/graphics/Color.md):Primary color. This value cannot be`null`. |
-| `secondaryColor` | [Color](../android/graphics/Color.md)?:Secondary color. This value may be`null`. |
-| `tertiaryColor` | [Color](../android/graphics/Color.md)?:Tertiary color. This value may be`null`. |
+| `primaryColor` | [Color](../android.graphics/Color.md):Primary color. This value cannot be`null`. |
+| `secondaryColor` | [Color](../android.graphics/Color.md)?:Secondary color. This value may be`null`. |
+| `tertiaryColor` | [Color](../android.graphics/Color.md)?:Tertiary color. This value may be`null`. |
 | --- | --- |
-| `colorHints` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):A combination of color hints. Value is either`0`or a combination of [android.app.WallpaperColors#HINT_SUPPORTS_DARK_TEXT](../android/app/WallpaperColors.md), and [android.app.WallpaperColors#HINT_SUPPORTS_DARK_THEME](../android/app/WallpaperColors.md) |
+| `colorHints` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):A combination of color hints. Value is either`0`or a combination of [android.app.WallpaperColors#HINT_SUPPORTS_DARK_TEXT](WallpaperColors.md), and [android.app.WallpaperColors#HINT_SUPPORTS_DARK_THEME](WallpaperColors.md) |
 
 **See Also**
 
-- [android.app.WallpaperColors#fromBitmap(Bitmap)](../android/app/WallpaperColors.md))
-- [android.app.WallpaperColors#fromDrawable(Drawable)](../android/app/WallpaperColors.md)) 
+- [android.app.WallpaperColors#fromBitmap(Bitmap)](WallpaperColors.md))
+- [android.app.WallpaperColors#fromDrawable(Drawable)](WallpaperColors.md)) 
 
 ### WallpaperColors
 
@@ -161,7 +161,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) |
 
 ### equals
 
@@ -200,13 +200,13 @@ Added in [API level 27](https://developer.android.com/guide/topics/manifest/uses
 static fun fromBitmap(bitmap: Bitmap): WallpaperColors!
 ```
 
-Constructs [WallpaperColors](../android/app/WallpaperColors.md) from a bitmap.
+Constructs [WallpaperColors](WallpaperColors.md) from a bitmap.
 
 Main colors will be extracted from the bitmap.
 
 | Parameters ||
 |----------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| `bitmap` | [Bitmap](../android/graphics/Bitmap.md):Source where to extract from. This value cannot be`null`. |
+| `bitmap` | [Bitmap](../android.graphics/Bitmap.md):Source where to extract from. This value cannot be`null`. |
 
 ### fromDrawable
 
@@ -216,13 +216,13 @@ Added in [API level 27](https://developer.android.com/guide/topics/manifest/uses
 static fun fromDrawable(drawable: Drawable!): WallpaperColors!
 ```
 
-Constructs [WallpaperColors](../android/app/WallpaperColors.md) from a drawable.
+Constructs [WallpaperColors](WallpaperColors.md) from a drawable.
 
 Main colors will be extracted from the drawable.
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------------|
-| `drawable` | [Drawable](../android/graphics/drawable/Drawable.md)!:Source where to extract from. |
+| `drawable` | [Drawable](../android.graphics.drawable/Drawable.md)!:Source where to extract from. |
 
 ### getColorHints
 
@@ -236,7 +236,7 @@ Returns the color hints for this instance.
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The color hints. Value is either`0`or a combination of [android.app.WallpaperColors#HINT_SUPPORTS_DARK_TEXT](../android/app/WallpaperColors.md), and [android.app.WallpaperColors#HINT_SUPPORTS_DARK_THEME](../android/app/WallpaperColors.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The color hints. Value is either`0`or a combination of [android.app.WallpaperColors#HINT_SUPPORTS_DARK_TEXT](WallpaperColors.md), and [android.app.WallpaperColors#HINT_SUPPORTS_DARK_THEME](WallpaperColors.md) |
 
 ### getPrimaryColor
 
@@ -250,7 +250,7 @@ Gets the most visually representative color of the wallpaper. "Visually represen
 
 | Return ||
 |--------------------------------------------------------------------------------------|--------------------------------------|
-| [Color](../android/graphics/Color.md) | A color. This value cannot be`null`. |
+| [Color](../android.graphics/Color.md) | A color. This value cannot be`null`. |
 
 ### getSecondaryColor
 
@@ -264,7 +264,7 @@ Gets the second most preeminent color of the wallpaper. Can be null.
 
 | Return ||
 |---------------------------------------------------------------------------------------|-----------------------|
-| [Color](../android/graphics/Color.md)? | A color, may be null. |
+| [Color](../android.graphics/Color.md)? | A color, may be null. |
 
 ### getTertiaryColor
 
@@ -278,7 +278,7 @@ Gets the third most preeminent color of the wallpaper. Can be null.
 
 | Return ||
 |---------------------------------------------------------------------------------------|-----------------------|
-| [Color](../android/graphics/Color.md)? | A color, may be null. |
+| [Color](../android.graphics/Color.md)? | A color, may be null. |
 
 ### hashCode
 
@@ -317,8 +317,8 @@ fun writeToParcel(
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](../android/os/Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android.os/Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # UnderlineSpan
 
-Kotlin| [Java](../android/text/style/UnderlineSpan.md) 
+Kotlin| [Java](UnderlineSpan.md) 
 | --- | --- |
 
 ```
@@ -13,8 +13,8 @@ open class UnderlineSpan : CharacterStyle, ParcelableSpan, UpdateAppearance
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.text.style.CharacterStyle](../android/text/style/CharacterStyle.md) ||
-| | ↳ | [android.text.style.UnderlineSpan](../android/text/style/UnderlineSpan.md) |
+| ↳ | [android.text.style.CharacterStyle](CharacterStyle.md) ||
+| | ↳ | [android.text.style.UnderlineSpan](UnderlineSpan.md) |
 
 A span that underlines the text it's attached to.
 
@@ -30,21 +30,21 @@ Underlined text.
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [UnderlineSpan](../android/text/style/UnderlineSpan.md))`()` Creates an [UnderlineSpan](../android/text/style/UnderlineSpan.md). |
-| [UnderlineSpan](../android/text/style/UnderlineSpan.md))`(`src:` ` [Parcel](../android/os/Parcel.md)`)` Creates an [UnderlineSpan](../android/text/style/UnderlineSpan.md) from a parcel. |
+| [UnderlineSpan](UnderlineSpan.md))`()` Creates an [UnderlineSpan](UnderlineSpan.md). |
+| [UnderlineSpan](UnderlineSpan.md))`(`src:` ` [Parcel](../android.os/Parcel.md)`)` Creates an [UnderlineSpan](UnderlineSpan.md) from a parcel. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/text/style/UnderlineSpan.md))`()` <br /> |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSpanTypeId](../android/text/style/UnderlineSpan.md))`()` <br /> |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/text/style/UnderlineSpan.md))`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](UnderlineSpan.md))`()` <br /> |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSpanTypeId](UnderlineSpan.md))`()` <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](UnderlineSpan.md))`()` <br /> |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateDrawState](../android/text/style/UnderlineSpan.md))`(`ds:` ` [TextPaint](../android/text/TextPaint.md)`)` <br /> |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/text/style/UnderlineSpan.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [updateDrawState](UnderlineSpan.md))`(`ds:` ` [TextPaint](../android.text/TextPaint.md)`)` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](UnderlineSpan.md))`(`dest:` ` [Parcel](../android.os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Inherited functions ||
 |---|---|
-| From class [CharacterStyle](../android/text/style/CharacterStyle.md) |-----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [CharacterStyle](../android/text/style/CharacterStyle.md)! | [getUnderlying](../android/text/style/CharacterStyle.md))`()` <br /> Returns "this" for most CharacterStyles, but for CharacterStyles that were generated by [wrap](../android/text/style/CharacterStyle.md)), returns the underlying CharacterStyle. <br /> | | [CharacterStyle](../android/text/style/CharacterStyle.md)! | [wrap](../android/text/style/CharacterStyle.md))`(`cs:` ` [CharacterStyle](../android/text/style/CharacterStyle.md)!`)` <br /> A given CharacterStyle can only applied to a single region of a given Spanned. If you need to attach the same CharacterStyle to multiple regions, you can use this method to wrap it with a new object that will have the same effect but be a distinct object so that it can also be attached without conflict. <br /> | ||
+| From class [CharacterStyle](CharacterStyle.md) |-----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [CharacterStyle](CharacterStyle.md)! | [getUnderlying](CharacterStyle.md))`()` <br /> Returns "this" for most CharacterStyles, but for CharacterStyles that were generated by [wrap](CharacterStyle.md)), returns the underlying CharacterStyle. <br /> | | [CharacterStyle](CharacterStyle.md)! | [wrap](CharacterStyle.md))`(`cs:` ` [CharacterStyle](CharacterStyle.md)!`)` <br /> A given CharacterStyle can only applied to a single region of a given Spanned. If you need to attach the same CharacterStyle to multiple regions, you can use this method to wrap it with a new object that will have the same effect but be a distinct object so that it can also be attached without conflict. <br /> | ||
 
 ## Public constructors
 
@@ -56,7 +56,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 UnderlineSpan()
 ```
 
-Creates an [UnderlineSpan](../android/text/style/UnderlineSpan.md). 
+Creates an [UnderlineSpan](UnderlineSpan.md). 
 
 ### UnderlineSpan
 
@@ -66,11 +66,11 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 UnderlineSpan(src: Parcel)
 ```
 
-Creates an [UnderlineSpan](../android/text/style/UnderlineSpan.md) from a parcel.
+Creates an [UnderlineSpan](UnderlineSpan.md) from a parcel.
 
 | Parameters ||
 |-------|--------------------------------------------------------------------------------------------------------------|
-| `src` | [Parcel](../android/os/Parcel.md):This value cannot be`null`. |
+| `src` | [Parcel](../android.os/Parcel.md):This value cannot be`null`. |
 
 ## Public methods
 
@@ -84,7 +84,7 @@ open fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) |
 
 ### getSpanTypeId
 
@@ -116,7 +116,7 @@ open fun updateDrawState(ds: TextPaint): Unit
 
 | Parameters ||
 |------|----------------------------------------------------------------------------------------------------------------------|
-| `ds` | [TextPaint](../android/text/TextPaint.md):This value cannot be`null`. |
+| `ds` | [TextPaint](../android.text/TextPaint.md):This value cannot be`null`. |
 
 ### writeToParcel
 
@@ -133,5 +133,5 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](../android/os/Parcel.md):This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android.os/Parcel.md):This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |

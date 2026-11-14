@@ -8,11 +8,11 @@ abstract class AccessibilityService : Service
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](../android/content/Context.md) ||||
-| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) |||
-| | | ↳ | [android.app.Service](../android/app/Service.md) ||
+| ↳ | [android.content.Context](../android.content/Context.md) ||||
+| | ↳ | [android.content.ContextWrapper](../android.content/ContextWrapper.md) |||
+| | | ↳ | [android.app.Service](../android.app/Service.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.accessibilityservice.AccessibilityService](../android/accessibilityservice/AccessibilityService.md) |
+| | | | ↳ | [android.accessibilityservice.AccessibilityService](AccessibilityService.md) |
 
 Accessibility services should only be used to assist users with disabilities in using Android devices and apps. They run in the background and receive callbacks by the system when `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent.html#`s are fired. Such events denote some state transition in the user interface, for example, the focus has changed, a button has been clicked, etc. Such a service can optionally request the capability for querying the content of the active window. Development of an accessibility service requires extending this class and implementing its abstract methods.
 
@@ -1280,40 +1280,40 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#clearCache()()` Clears the cache. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#clearCachedSubtree(android.view.accessibility.AccessibilityNodeInfo)(node: https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.html#)` Invalidates `node` and its subtree in the cache. |
-| open [Context](../android/content/Context.md) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#createDisplayContext(android.view.Display)(display: https://developer.android.com/reference/kotlin/android/view/Display.html#)` Returns a new `Context` object from the current context but with resources adjusted to match the metrics of `display`. |
-| open [Context](../android/content/Context.md) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#createWindowContext(android.view.Display,%20kotlin.Int,%20android.os.Bundle)(display: https://developer.android.com/reference/kotlin/android/view/Display.html#, type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, options: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Creates a `Context` for a non-`https://developer.android.com/reference/kotlin/android/app/Activity.html#` window on the given `https://developer.android.com/reference/kotlin/android/view/Display.html#`. |
+| open [Context](../android.content/Context.md) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#createDisplayContext(android.view.Display)(display: https://developer.android.com/reference/kotlin/android/view/Display.html#)` Returns a new `Context` object from the current context but with resources adjusted to match the metrics of `display`. |
+| open [Context](../android.content/Context.md) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#createWindowContext(android.view.Display,%20kotlin.Int,%20android.os.Bundle)(display: https://developer.android.com/reference/kotlin/android/view/Display.html#, type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, options: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Creates a `Context` for a non-`https://developer.android.com/reference/kotlin/android/app/Activity.html#` window on the given `https://developer.android.com/reference/kotlin/android/view/Display.html#`. |
 | --- | --- |
-| open [Context](../android/content/Context.md) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#createWindowContext(kotlin.Int,%20android.os.Bundle)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, options: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Creates a Context for a non-activity window. |
+| open [Context](../android.content/Context.md) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#createWindowContext(kotlin.Int,%20android.os.Bundle)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, options: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Creates a Context for a non-activity window. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#disableSelf()()` Disables the service. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#dispatchGesture(android.accessibilityservice.GestureDescription,%20android.accessibilityservice.AccessibilityService.GestureResultCallback,%20android.os.Handler)(gesture: https://developer.android.com/reference/kotlin/android/accessibilityservice/GestureDescription, callback: https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService.GestureResultCallback?, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#?)` Dispatch a gesture to the touch screen. |
 | --- | --- |
-| open [AccessibilityNodeInfo](../android/view/accessibility/AccessibilityNodeInfo.md)! | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#findFocus(kotlin.Int)(focus: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Find the view that has the specified focus type. |
-| [AccessibilityButtonController](../android/accessibilityservice/AccessibilityButtonController.md) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#getAccessibilityButtonController()()` Returns the controller for the accessibility button within the system's navigation area. |
-| [AccessibilityButtonController](../android/accessibilityservice/AccessibilityButtonController.md) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#getAccessibilityButtonController(kotlin.Int)(displayId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the controller of specified logical display for the accessibility button within the system's navigation area. |
+| open [AccessibilityNodeInfo](../android.view.accessibility/AccessibilityNodeInfo.md)! | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#findFocus(kotlin.Int)(focus: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Find the view that has the specified focus type. |
+| [AccessibilityButtonController](AccessibilityButtonController.md) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#getAccessibilityButtonController()()` Returns the controller for the accessibility button within the system's navigation area. |
+| [AccessibilityButtonController](AccessibilityButtonController.md) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#getAccessibilityButtonController(kotlin.Int)(displayId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the controller of specified logical display for the accessibility button within the system's navigation area. |
 | --- | --- |
-| [BrailleDisplayController](../android/accessibilityservice/BrailleDisplayController.md) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#getBrailleDisplayController()()` Returns the `https://developer.android.com/reference/kotlin/android/accessibilityservice/BrailleDisplayController` which may be used to communicate with refreshable Braille displays that provide USB or Bluetooth Braille display HID support. |
-| [FingerprintGestureController](../android/accessibilityservice/FingerprintGestureController.md) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#getFingerprintGestureController()()` Get the controller for fingerprint gestures. |
-| [InputMethod](../android/accessibilityservice/InputMethod.md)? | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#getInputMethod()()` Returns the InputMethod instance after the system calls `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#onCreateInputMethod()`, which may be used to input text or get editable text selection change notifications. |
+| [BrailleDisplayController](BrailleDisplayController.md) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#getBrailleDisplayController()()` Returns the `https://developer.android.com/reference/kotlin/android/accessibilityservice/BrailleDisplayController` which may be used to communicate with refreshable Braille displays that provide USB or Bluetooth Braille display HID support. |
+| [FingerprintGestureController](FingerprintGestureController.md) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#getFingerprintGestureController()()` Get the controller for fingerprint gestures. |
+| [InputMethod](InputMethod.md)? | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#getInputMethod()()` Returns the InputMethod instance after the system calls `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#onCreateInputMethod()`, which may be used to input text or get editable text selection change notifications. |
 | --- | --- |
 | [AccessibilityService.MagnificationController](../android/accessibilityservice/AccessibilityService.MagnificationController.md) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#getMagnificationController()()` Returns the magnification controller, which may be used to query and modify the state of display magnification. |
-| open [AccessibilityNodeInfo](../android/view/accessibility/AccessibilityNodeInfo.md)! | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#getRootInActiveWindow()()` Gets the root node in the currently active window if this service can retrieve window content. |
-| open [AccessibilityNodeInfo](../android/view/accessibility/AccessibilityNodeInfo.md)? | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#getRootInActiveWindow(kotlin.Int)(prefetchingStrategy: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the root node in the currently active window if this service can retrieve window content. |
+| open [AccessibilityNodeInfo](../android.view.accessibility/AccessibilityNodeInfo.md)! | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#getRootInActiveWindow()()` Gets the root node in the currently active window if this service can retrieve window content. |
+| open [AccessibilityNodeInfo](../android.view.accessibility/AccessibilityNodeInfo.md)? | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#getRootInActiveWindow(kotlin.Int)(prefetchingStrategy: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Gets the root node in the currently active window if this service can retrieve window content. |
 | --- | --- |
-| [AccessibilityServiceInfo](../android/accessibilityservice/AccessibilityServiceInfo.md)! | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#getServiceInfo()()` Gets the an `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo` describing this `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#`. |
+| [AccessibilityServiceInfo](AccessibilityServiceInfo.md)! | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#getServiceInfo()()` Gets the an `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityServiceInfo` describing this `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#`. |
 | [AccessibilityService.SoftKeyboardController](../android/accessibilityservice/AccessibilityService.SoftKeyboardController.md) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#getSoftKeyboardController()()` Returns the soft keyboard controller, which may be used to query and modify the soft keyboard show mode. |
 | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AccessibilityNodeInfo.AccessibilityAction](../android/view/accessibility/AccessibilityNodeInfo.AccessibilityAction.md)!\> | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#getSystemActions()()` Returns a list of system actions available in the system right now. |
 | --- | --- |
 | open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#getSystemService(kotlin.String)(name: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Return the handle to a system-level service by name. |
-| [TouchInteractionController](../android/accessibilityservice/TouchInteractionController.md) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#getTouchInteractionController(kotlin.Int)(displayId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the touch interaction controller for the specified logical display, which may be used to detect gestures and otherwise control touch interactions. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AccessibilityWindowInfo](../android/view/accessibility/AccessibilityWindowInfo.md)!\>! | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#getWindows()()` Gets the windows on the screen of the default display. |
+| [TouchInteractionController](TouchInteractionController.md) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#getTouchInteractionController(kotlin.Int)(displayId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the touch interaction controller for the specified logical display, which may be used to detect gestures and otherwise control touch interactions. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AccessibilityWindowInfo](../android.view.accessibility/AccessibilityWindowInfo.md)!\>! | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#getWindows()()` Gets the windows on the screen of the default display. |
 | --- | --- |
-| [SparseArray](../android/util/SparseArray.md)\< [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AccessibilityWindowInfo](../android/view/accessibility/AccessibilityWindowInfo.md)!\>!\> | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#getWindowsOnAllDisplays()()` Gets the windows on the screen of all displays. |
+| [SparseArray](../android.util/SparseArray.md)\< [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [AccessibilityWindowInfo](../android.view.accessibility/AccessibilityWindowInfo.md)!\>!\> | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#getWindowsOnAllDisplays()()` Gets the windows on the screen of all displays. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#isCacheEnabled()()` Returns `true` if the cache is enabled. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#isNodeInCache(android.view.accessibility.AccessibilityNodeInfo)(node: https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityNodeInfo.html#)` Checks if `node` is in the cache. |
 | --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#onAccessibilityEvent(android.view.accessibility.AccessibilityEvent)(event: https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent.html#!)` Callback for `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityEvent.html#`s. |
-| [IBinder](../android/os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Implement to return the implementation of the internal accessibility service interface. |
-| open [InputMethod](../android/accessibilityservice/InputMethod.md) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#onCreateInputMethod()()` The default implementation returns our default `https://developer.android.com/reference/kotlin/android/accessibilityservice/InputMethod`. |
+| [IBinder](../android.os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Implement to return the implementation of the internal accessibility service interface. |
+| open [InputMethod](InputMethod.md) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#onCreateInputMethod()()` The default implementation returns our default `https://developer.android.com/reference/kotlin/android/accessibilityservice/InputMethod`. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#onGesture(android.accessibilityservice.AccessibilityGestureEvent)(gestureEvent: https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityGestureEvent)` Called by the system when the user performs a specific gesture on the specific touch screen. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService#onInterrupt()()` Callback for interrupting the accessibility feedback. |
@@ -4047,7 +4047,7 @@ If the specified overlay has already been attached to the specified display this
 | Parameters ||
 |---|---|
 | `displayId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the display to which the SurfaceControl should be attached. |
-| `sc` | [SurfaceControl](../android/view/SurfaceControl.md): the SurfaceControl containing the overlay content. This value cannot be `null`. |
+| `sc` | [SurfaceControl](../android.view/SurfaceControl.md): the SurfaceControl containing the overlay content. This value cannot be `null`. |
 
 ### attachAccessibilityOverlayToWindow
 
@@ -4071,7 +4071,7 @@ If the specified overlay has already been attached to the specified window this 
 | Parameters ||
 |---|---|
 | `accessibilityWindowId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The window id, from `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo.html#getId()`. |
-| `sc` | [SurfaceControl](../android/view/SurfaceControl.md): the SurfaceControl containing the overlay content. This value cannot be `null`. |
+| `sc` | [SurfaceControl](../android.view/SurfaceControl.md): the SurfaceControl containing the overlay content. This value cannot be `null`. |
 
 ### clearCache
 
@@ -4099,7 +4099,7 @@ Invalidates `node` and its subtree in the cache.
 
 | Parameters ||
 |---|---|
-| `node` | [AccessibilityNodeInfo](../android/view/accessibility/AccessibilityNodeInfo.md): the node to invalidate. This value cannot be `null`. |
+| `node` | [AccessibilityNodeInfo](../android.view.accessibility/AccessibilityNodeInfo.md): the node to invalidate. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -4123,7 +4123,7 @@ To obtain an instance of `https://developer.android.com/reference/kotlin/android
 
 | Parameters ||
 |---|---|
-| `display` | [Display](../android/view/Display.md): The display to which the current context's resources are adjusted. This value cannot be `null`. |
+| `display` | [Display](../android.view/Display.md): The display to which the current context's resources are adjusted. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -4147,9 +4147,9 @@ Similar to `https://developer.android.com/reference/kotlin/android/content/Conte
 
 | Parameters ||
 |---|---|
-| `display` | [Display](../android/view/Display.md): This value cannot be `null`. |
+| `display` | [Display](../android.view/Display.md): This value cannot be `null`. |
 | `type` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Value is one of the following: - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_BASE_APPLICATION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_APPLICATION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_APPLICATION_STARTING:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_DRAWN_APPLICATION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_APPLICATION_PANEL:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_APPLICATION_MEDIA:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_APPLICATION_SUB_PANEL:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_APPLICATION_ATTACHED_DIALOG:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_STATUS_BAR:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_SEARCH_BAR:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_PHONE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_SYSTEM_ALERT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_TOAST:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_SYSTEM_OVERLAY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_PRIORITY_PHONE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_SYSTEM_DIALOG:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_KEYGUARD_DIALOG:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_SYSTEM_ERROR:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_INPUT_METHOD:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_INPUT_METHOD_DIALOG:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_WALLPAPER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_PRIVATE_PRESENTATION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_ACCESSIBILITY_OVERLAY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_APPLICATION_OVERLAY:kotlin.Int` |
-| `options` | [Bundle](../android/os/Bundle.md)?: This value may be `null`. |
+| `options` | [Bundle](../android.os/Bundle.md)?: This value may be `null`. |
 | --- | --- |
 
 | Return ||
@@ -4231,7 +4231,7 @@ Note that using `https://developer.android.com/reference/kotlin/android/app/Appl
 | Parameters ||
 |---|---|
 | `type` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Value is one of the following: - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_BASE_APPLICATION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_APPLICATION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_APPLICATION_STARTING:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_DRAWN_APPLICATION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_APPLICATION_PANEL:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_APPLICATION_MEDIA:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_APPLICATION_SUB_PANEL:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_APPLICATION_ATTACHED_DIALOG:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_STATUS_BAR:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_SEARCH_BAR:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_PHONE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_SYSTEM_ALERT:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_TOAST:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_SYSTEM_OVERLAY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_PRIORITY_PHONE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_SYSTEM_DIALOG:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_KEYGUARD_DIALOG:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_SYSTEM_ERROR:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_INPUT_METHOD:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_INPUT_METHOD_DIALOG:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_WALLPAPER:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_PRIVATE_PRESENTATION:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_ACCESSIBILITY_OVERLAY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/view/WindowManager.LayoutParams.html#TYPE_APPLICATION_OVERLAY:kotlin.Int` |
-| `options` | [Bundle](../android/os/Bundle.md)?: This value may be `null`. |
+| `options` | [Bundle](../android.os/Bundle.md)?: This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -4285,9 +4285,9 @@ Since many apps do not appropriately support `https://developer.android.com/refe
 
 | Parameters ||
 |---|---|
-| `gesture` | [GestureDescription](../android/accessibilityservice/GestureDescription.md): The gesture to dispatch. This value cannot be `null`. |
+| `gesture` | [GestureDescription](GestureDescription.md): The gesture to dispatch. This value cannot be `null`. |
 | `callback` | [AccessibilityService.GestureResultCallback](../android/accessibilityservice/AccessibilityService.GestureResultCallback.md)?: The object to call back when the status of the gesture is known. If `null`, no status is reported. |
-| `handler` | [Handler](../android/os/Handler.md)?: The handler on which to call back the `callback` object. If `null`, the object is called back on the service's main thread. |
+| `handler` | [Handler](../android.os/Handler.md)?: The handler on which to call back the `callback` object. If `null`, the object is called back on the service's main thread. |
 | --- | --- |
 
 | Return ||
@@ -4691,7 +4691,7 @@ Checks if `node` is in the cache.
 
 | Parameters ||
 |---|---|
-| `node` | [AccessibilityNodeInfo](../android/view/accessibility/AccessibilityNodeInfo.md): the node to check. This value cannot be `null`. |
+| `node` | [AccessibilityNodeInfo](../android.view.accessibility/AccessibilityNodeInfo.md): the node to check. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -4709,7 +4709,7 @@ Callback for `https://developer.android.com/reference/kotlin/android/view/access
 
 | Parameters ||
 |---|---|
-| `event` | [AccessibilityEvent](../android/view/accessibility/AccessibilityEvent.md)!: The new event. This event is owned by the caller and cannot be used after this method returns. Services wishing to use the event after this method returns should make a copy. |
+| `event` | [AccessibilityEvent](../android.view.accessibility/AccessibilityEvent.md)!: The new event. This event is owned by the caller and cannot be used after this method returns. Services wishing to use the event after this method returns should make a copy. |
 
 ### onBind
 
@@ -4723,7 +4723,7 @@ Implement to return the implementation of the internal accessibility service int
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
+| `intent` | [Intent](../android.content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
 
 | Return ||
 |---|---|
@@ -4759,7 +4759,7 @@ Called by the system when the user performs a specific gesture on the specific t
 
 | Parameters ||
 |---|---|
-| `gestureEvent` | [AccessibilityGestureEvent](../android/accessibilityservice/AccessibilityGestureEvent.md): The information of gesture. This value cannot be `null`. |
+| `gestureEvent` | [AccessibilityGestureEvent](AccessibilityGestureEvent.md): The information of gesture. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -4791,7 +4791,7 @@ Prefer `https://developer.android.com/reference/kotlin/android/accessibilityserv
 
 | Parameters ||
 |---|---|
-| `event` | [MotionEvent](../android/view/MotionEvent.md): The event to be processed. This value cannot be `null`. |
+| `event` | [MotionEvent](../android.view/MotionEvent.md): The event to be processed. This value cannot be `null`. |
 
 ### onSystemActionsChanged
 
@@ -4913,7 +4913,7 @@ When `https://developer.android.com/reference/kotlin/android/accessibilityservic
 | Parameters ||
 |---|---|
 | `displayId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The display on which to set this region. |
-| `region` | [Region](../android/graphics/Region.md): the region of the screen. This value cannot be `null`. |
+| `region` | [Region](../android.graphics/Region.md): the region of the screen. This value cannot be `null`. |
 
 ### setServiceInfo
 
@@ -4929,7 +4929,7 @@ Note: You can call this method any time but the info will be picked up after the
 
 | Parameters ||
 |---|---|
-| `info` | [AccessibilityServiceInfo](../android/accessibilityservice/AccessibilityServiceInfo.md)!: The info. |
+| `info` | [AccessibilityServiceInfo](AccessibilityServiceInfo.md)!: The info. |
 
 ### setTouchExplorationPassthroughRegion
 
@@ -4947,7 +4947,7 @@ When `https://developer.android.com/reference/kotlin/android/accessibilityservic
 | Parameters ||
 |---|---|
 | `displayId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The display on which to set this region. |
-| `region` | [Region](../android/graphics/Region.md): the region of the screen . This value cannot be `null`. |
+| `region` | [Region](../android.graphics/Region.md): the region of the screen . This value cannot be `null`. |
 
 ### takeScreenshot
 
@@ -4968,7 +4968,7 @@ Takes a screenshot of the specified display and returns it via an `https://devel
 | Parameters ||
 |---|---|
 | `displayId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The logic display id, must be `https://developer.android.com/reference/kotlin/android/view/Display.html#DEFAULT_DISPLAY:kotlin.Int` for default display. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): Executor on which to run the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): Executor on which to run the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [AccessibilityService.TakeScreenshotCallback](../android/accessibilityservice/AccessibilityService.TakeScreenshotCallback.md): The callback invoked when taking screenshot has succeeded or failed. See `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService.TakeScreenshotCallback` for details. This value cannot be `null`. |
 | --- | --- |
 
@@ -4997,7 +4997,7 @@ Both this method and `https://developer.android.com/reference/kotlin/android/acc
 | Parameters ||
 |---|---|
 | `accessibilityWindowId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The window id, from `https://developer.android.com/reference/kotlin/android/view/accessibility/AccessibilityWindowInfo.html#getId()`. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): Executor on which to run the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): Executor on which to run the callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `callback` | [AccessibilityService.TakeScreenshotCallback](../android/accessibilityservice/AccessibilityService.TakeScreenshotCallback.md): The callback invoked when taking screenshot has succeeded or failed. See `https://developer.android.com/reference/kotlin/android/accessibilityservice/AccessibilityService.TakeScreenshotCallback` for details. This value cannot be `null`. |
 | --- | --- |
 
@@ -5065,7 +5065,7 @@ Callback that allows an accessibility service to observe the key events before t
 
 | Parameters ||
 |---|---|
-| `event` | [KeyEvent](../android/view/KeyEvent.md)!: The event to be processed. This event is owned by the caller and cannot be used after this method returns. Services wishing to use the event after this method returns should make a copy. |
+| `event` | [KeyEvent](../android.view/KeyEvent.md)!: The event to be processed. This event is owned by the caller and cannot be used after this method returns. Services wishing to use the event after this method returns should make a copy. |
 
 | Return ||
 |---|---|

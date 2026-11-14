@@ -8,9 +8,9 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface X509TrustManager : TrustManager
 ```
 
-| [javax.net.ssl.X509TrustManager](../javax/net/ssl/X509TrustManager.md) |
+| [javax.net.ssl.X509TrustManager](X509TrustManager.md) |
 
-| Known Direct Subclasses [X509ExtendedTrustManager](../javax/net/ssl/X509ExtendedTrustManager.md) |-------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------| | [X509ExtendedTrustManager](../javax/net/ssl/X509ExtendedTrustManager.md) | Extensions to the`X509TrustManager`interface to support SSL/TLS connection sensitive trust management. | |
+| Known Direct Subclasses [X509ExtendedTrustManager](X509ExtendedTrustManager.md) |-------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------| | [X509ExtendedTrustManager](X509ExtendedTrustManager.md) | Extensions to the`X509TrustManager`interface to support SSL/TLS connection sensitive trust management. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 Instance of this interface manage which X509 certificates may be used to authenticate the remote side of a secure socket. Decisions may be based on trusted certificate authorities, certificate revocation lists, online status checking or other means.
@@ -19,9 +19,9 @@ Instance of this interface manage which X509 certificates may be used to authent
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkClientTrusted](../javax/net/ssl/X509TrustManager.md))`(`chain:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [X509Certificate](../java/security/cert/X509Certificate.md)!>!`, `authType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Given the partial or complete certificate chain provided by the peer, build a certificate path to a trusted root and return if it can be validated and is trusted for client SSL authentication based on the authentication type. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkServerTrusted](../javax/net/ssl/X509TrustManager.md))`(`chain:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [X509Certificate](../java/security/cert/X509Certificate.md)!>!`, `authType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Given the partial or complete certificate chain provided by the peer, build a certificate path to a trusted root and return if it can be validated and is trusted for server SSL authentication based on the authentication type. |
-| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [X509Certificate](../java/security/cert/X509Certificate.md)!\>! | [getAcceptedIssuers](../javax/net/ssl/X509TrustManager.md))`()` Return an array of certificate authority certificates which are trusted for authenticating peers. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkClientTrusted](X509TrustManager.md))`(`chain:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [X509Certificate](../java.security.cert/X509Certificate.md)!>!`, `authType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Given the partial or complete certificate chain provided by the peer, build a certificate path to a trusted root and return if it can be validated and is trusted for client SSL authentication based on the authentication type. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [checkServerTrusted](X509TrustManager.md))`(`chain:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [X509Certificate](../java.security.cert/X509Certificate.md)!>!`, `authType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Given the partial or complete certificate chain provided by the peer, build a certificate path to a trusted root and return if it can be validated and is trusted for server SSL authentication based on the authentication type. |
+| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [X509Certificate](../java.security.cert/X509Certificate.md)!\>! | [getAcceptedIssuers](X509TrustManager.md))`()` Return an array of certificate authority certificates which are trusted for authenticating peers. |
 | --- | --- |
 
 ## Public methods
@@ -43,7 +43,7 @@ The authentication type is determined by the actual certificate used. For instan
 
 | Parameters ||
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `chain` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [X509Certificate](../java/security/cert/X509Certificate.md)!\>!:the peer certificate chain |
+| `chain` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [X509Certificate](../java.security.cert/X509Certificate.md)!\>!:the peer certificate chain |
 | `authType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the authentication type based on the client certificate |
 
 | Exceptions ||
@@ -68,7 +68,7 @@ The authentication type is the key exchange algorithm portion of the cipher suit
 
 | Parameters ||
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `chain` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [X509Certificate](../java/security/cert/X509Certificate.md)!\>!:the peer certificate chain |
+| `chain` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [X509Certificate](../java.security.cert/X509Certificate.md)!\>!:the peer certificate chain |
 | `authType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the key exchange algorithm used |
 
 | Exceptions ||
@@ -88,4 +88,4 @@ Return an array of certificate authority certificates which are trusted for auth
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [X509Certificate](../java/security/cert/X509Certificate.md)!>! | a non-null (possibly empty) array of acceptable CA issuer certificates. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [X509Certificate](../java.security.cert/X509Certificate.md)!>! | a non-null (possibly empty) array of acceptable CA issuer certificates. |

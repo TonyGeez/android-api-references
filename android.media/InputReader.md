@@ -16,7 +16,7 @@ interface InputReader
 | Known Direct Subclasses [MediaParser.SeekableInputReader](../android/media/MediaParser.SeekableInputReader.md) |---------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------| | [MediaParser.SeekableInputReader](../android/media/MediaParser.SeekableInputReader.md) | [InputReader](../android/media/MediaParser.InputReader.md) that allows setting the read position. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
-Provides input data to [MediaParser](../android/media/MediaParser.md).
+Provides input data to [MediaParser](MediaParser.md).
 
 ## Summary
 

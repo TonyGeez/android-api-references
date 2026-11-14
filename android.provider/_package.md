@@ -2,7 +2,7 @@
 
 ## Interfaces
 
-| [BaseColumns](../android/provider/BaseColumns.md) | <br /> |
+| [BaseColumns](BaseColumns.md) | <br /> |
 | --- | --- |
 | [AttendeesColumns](../android/provider/CalendarContract.AttendeesColumns.md) | Columns from the Attendees table that other tables join into themselves. |
 | [CalendarAlertsColumns](../android/provider/CalendarContract.CalendarAlertsColumns.md) | <br /> |
@@ -58,7 +58,7 @@
 | --- | --- |
 | [DownloadColumns](../android/provider/MediaStore.DownloadColumns.md) | Download metadata columns. |
 | [MediaColumns](../android/provider/MediaStore.MediaColumns.md) | Common media metadata columns. |
-| [OpenableColumns](../android/provider/OpenableColumns.md) | These are standard columns for openable URIs. |
+| [OpenableColumns](OpenableColumns.md) | These are standard columns for openable URIs. |
 | --- | --- |
 | [Columns](../android/provider/SyncStateContract.Columns.md) | <br /> |
 | [BaseMmsColumns](../android/provider/Telephony.BaseMmsColumns.md) | Base columns for tables that contain MMSs. |
@@ -69,38 +69,38 @@
 
 ## Classes
 
-| [AlarmClock](../android/provider/AlarmClock.md) | The AlarmClock provider contains an Intent action and extras that can be used to start an Activity to set a new alarm or timer in an alarm clock application. |
+| [AlarmClock](AlarmClock.md) | The AlarmClock provider contains an Intent action and extras that can be used to start an Activity to set a new alarm or timer in an alarm clock application. |
 | --- | --- |
-| [BlockedNumberContract](../android/provider/BlockedNumberContract.md) | The contract between the blockednumber provider and applications. |
-| [Browser](../android/provider/Browser.md) | <br /> |
-| [CalendarContract](../android/provider/CalendarContract.md) | The contract between the calendar provider and applications. |
+| [BlockedNumberContract](BlockedNumberContract.md) | The contract between the blockednumber provider and applications. |
+| [Browser](Browser.md) | <br /> |
+| [CalendarContract](CalendarContract.md) | The contract between the calendar provider and applications. |
 | --- | --- |
-| [CallLog](../android/provider/CallLog.md) | The CallLog provider contains information about placed and received calls. |
-| [CloudMediaProvider](../android/provider/CloudMediaProvider.md) | Base class for a cloud media provider. |
-| [CloudMediaProviderContract](../android/provider/CloudMediaProviderContract.md) | Defines the contract between a cloud media provider and the OS. |
+| [CallLog](CallLog.md) | The CallLog provider contains information about placed and received calls. |
+| [CloudMediaProvider](CloudMediaProvider.md) | Base class for a cloud media provider. |
+| [CloudMediaProviderContract](CloudMediaProviderContract.md) | Defines the contract between a cloud media provider and the OS. |
 | --- | --- |
-| [Contacts](../android/provider/Contacts.md) | The Contacts provider stores all information about contacts. |
-| [ContactsContract](../android/provider/ContactsContract.md) | The contract between the contacts provider and applications. |
+| [Contacts](Contacts.md) | The Contacts provider stores all information about contacts. |
+| [ContactsContract](ContactsContract.md) | The contract between the contacts provider and applications. |
 | [ContactsPickerSessionContract](../android/provider/ContactsPickerSessionContract.md) | The contract between the Contacts Picker session provider and client applications. |
 | --- | --- |
-| [DocumentsContract](../android/provider/DocumentsContract.md) | Defines the contract between a documents provider and the platform. |
-| [DocumentsProvider](../android/provider/DocumentsProvider.md) | Base class for a document provider. |
-| [E2eeContactKeysManager](../android/provider/E2eeContactKeysManager.md) | E2eeContactKeysManager provides access to the provider of end-to-end encryption contact keys. |
+| [DocumentsContract](DocumentsContract.md) | Defines the contract between a documents provider and the platform. |
+| [DocumentsProvider](DocumentsProvider.md) | Base class for a document provider. |
+| [E2eeContactKeysManager](E2eeContactKeysManager.md) | E2eeContactKeysManager provides access to the provider of end-to-end encryption contact keys. |
 | --- | --- |
-| [FontRequest](../android/provider/FontRequest.md) | Information about a font request that may be sent to a Font Provider. |
-| [FontsContract](../android/provider/FontsContract.md) | Utility class to deal with Font ContentProviders. |
-| [LiveFolders](../android/provider/LiveFolders.md) | A LiveFolder is a special folder whose content is provided by a `https://developer.android.com/reference/kotlin/android/content/ContentProvider.html#`. |
+| [FontRequest](FontRequest.md) | Information about a font request that may be sent to a Font Provider. |
+| [FontsContract](FontsContract.md) | Utility class to deal with Font ContentProviders. |
+| [LiveFolders](LiveFolders.md) | A LiveFolder is a special folder whose content is provided by a `https://developer.android.com/reference/kotlin/android/content/ContentProvider.html#`. |
 | --- | --- |
-| [MediaStore](../android/provider/MediaStore.md) | The contract between the media provider and applications. |
-| [PeopleContract](../android/provider/PeopleContract.md) | Defines the contract between client applications, People Directory applications (such as VoIP and messaging services), and the system's People Provider. |
-| [SearchRecentSuggestions](../android/provider/SearchRecentSuggestions.md) | This is a utility class providing access to `https://developer.android.com/reference/kotlin/android/content/SearchRecentSuggestionsProvider.html#`. |
+| [MediaStore](MediaStore.md) | The contract between the media provider and applications. |
+| [PeopleContract](PeopleContract.md) | Defines the contract between client applications, People Directory applications (such as VoIP and messaging services), and the system's People Provider. |
+| [SearchRecentSuggestions](SearchRecentSuggestions.md) | This is a utility class providing access to `https://developer.android.com/reference/kotlin/android/content/SearchRecentSuggestionsProvider.html#`. |
 | --- | --- |
-| [Settings](../android/provider/Settings.md) | The Settings provider contains global system-level device preferences. |
-| [SettingsSlicesContract](../android/provider/SettingsSlicesContract.md) | Provides a contract for platform-supported Settings `https://developer.android.com/reference/kotlin/android/app/slice/Slice.html#`. |
-| [SimPhonebookContract](../android/provider/SimPhonebookContract.md) | The contract between the provider of contact records on the device's SIM cards and applications. |
+| [Settings](Settings.md) | The Settings provider contains global system-level device preferences. |
+| [SettingsSlicesContract](SettingsSlicesContract.md) | Provides a contract for platform-supported Settings `https://developer.android.com/reference/kotlin/android/app/slice/Slice.html#`. |
+| [SimPhonebookContract](SimPhonebookContract.md) | The contract between the provider of contact records on the device's SIM cards and applications. |
 | --- | --- |
-| [SyncStateContract](../android/provider/SyncStateContract.md) | The ContentProvider contract for associating data with ana data array account. |
-| [Telephony](../android/provider/Telephony.md) | The Telephony provider contains data related to phone operation, specifically SMS and MMS messages, access to the APN list, including the MMSC to use, and the service state. |
-| [UserDictionary](../android/provider/UserDictionary.md) | A provider of user defined words for input methods to use for predictive text input. |
+| [SyncStateContract](SyncStateContract.md) | The ContentProvider contract for associating data with ana data array account. |
+| [Telephony](Telephony.md) | The Telephony provider contains data related to phone operation, specifically SMS and MMS messages, access to the APN list, including the MMSC to use, and the service state. |
+| [UserDictionary](UserDictionary.md) | A provider of user defined words for input methods to use for predictive text input. |
 | --- | --- |
-| [VoicemailContract](../android/provider/VoicemailContract.md) | The contract between the voicemail provider and applications. |
+| [VoicemailContract](VoicemailContract.md) | The contract between the voicemail provider and applications. |

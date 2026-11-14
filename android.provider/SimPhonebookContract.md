@@ -4,7 +4,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # SimPhonebookContract
 
-Kotlin| [Java](../android/provider/SimPhonebookContract.md) 
+Kotlin| [Java](SimPhonebookContract.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class SimPhonebookContract
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.provider.SimPhonebookContract](../android/provider/SimPhonebookContract.md) |
+| ↳ | [android.provider.SimPhonebookContract](SimPhonebookContract.md) |
 
 The contract between the provider of contact records on the device's SIM cards and applications. Contains definitions of the supported URIs and columns.
 
@@ -32,11 +32,11 @@ Querying this provider requires [android.Manifest.permission#READ_CONTACTS](../a
 
 | Constants ||
 |----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [AUTHORITY](../android/provider/SimPhonebookContract.md) The authority for the SIM phonebook provider. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [AUTHORITY](SimPhonebookContract.md) The authority for the SIM phonebook provider. |
 
 | Properties ||
 |-----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Uri](../android/net/Uri.md) | [AUTHORITY_URI](../android/provider/SimPhonebookContract.md) The content:// style uri to the authority for the SIM phonebook provider. |
+| static [Uri](../android.net/Uri.md) | [AUTHORITY_URI](SimPhonebookContract.md) The content:// style uri to the authority for the SIM phonebook provider. |
 
 ## Constants
 

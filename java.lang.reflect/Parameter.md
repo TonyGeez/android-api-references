@@ -10,7 +10,7 @@ class Parameter : AnnotatedElement
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.lang.reflect.Parameter](../java/lang/reflect/Parameter.md) |
+| ↳ | [java.lang.reflect.Parameter](Parameter.md) |
 
 Information about method parameters. A`Parameter`provides information about method parameters, including its name and modifiers. It also provides an alternate means of obtaining attributes for the parameter.
 
@@ -18,34 +18,34 @@ Information about method parameters. A`Parameter`provides information about meth
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/lang/reflect/Parameter.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares based on the executable and the index. |
-| T? | [getAnnotation](../java/lang/reflect/Parameter.md))`(`annotationClass:` ` [Class](../java/lang/Class.md)<T>`)` Returns this element's annotation for the specified type if such an annotation is*present*, else null. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Annotation](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-annotation/index.html)!\> | [getAnnotations](../java/lang/reflect/Parameter.md))`()` Returns annotations that are*present*on this element. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](Parameter.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares based on the executable and the index. |
+| T? | [getAnnotation](Parameter.md))`(`annotationClass:` ` [Class](../java.lang/Class.md)<T>`)` Returns this element's annotation for the specified type if such an annotation is*present*, else null. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Annotation](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-annotation/index.html)!\> | [getAnnotations](Parameter.md))`()` Returns annotations that are*present*on this element. |
 | --- | --- |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>! | [getAnnotationsByType](../java/lang/reflect/Parameter.md))`(`annotationClass:` ` [Class](../java/lang/Class.md)<T>`)` Returns annotations that are*associated*with this element. |
-| T? | [getDeclaredAnnotation](../java/lang/reflect/Parameter.md))`(`annotationClass:` ` [Class](../java/lang/Class.md)<T>`)` <br /> |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Annotation](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-annotation/index.html)!\> | [getDeclaredAnnotations](../java/lang/reflect/Parameter.md))`()` Returns annotations that are*directly present*on this element. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>! | [getAnnotationsByType](Parameter.md))`(`annotationClass:` ` [Class](../java.lang/Class.md)<T>`)` Returns annotations that are*associated*with this element. |
+| T? | [getDeclaredAnnotation](Parameter.md))`(`annotationClass:` ` [Class](../java.lang/Class.md)<T>`)` <br /> |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Annotation](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-annotation/index.html)!\> | [getDeclaredAnnotations](Parameter.md))`()` Returns annotations that are*directly present*on this element. |
 | --- | --- |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>! | [getDeclaredAnnotationsByType](../java/lang/reflect/Parameter.md))`(`annotationClass:` ` [Class](../java/lang/Class.md)<T>`)` <br /> |
-| [Executable](../java/lang/reflect/Executable.md) | [getDeclaringExecutable](../java/lang/reflect/Parameter.md))`()` Return the`Executable`which declares this parameter. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getModifiers](../java/lang/reflect/Parameter.md))`()` Get the modifier flags for this the parameter represented by this`Parameter`object. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>! | [getDeclaredAnnotationsByType](Parameter.md))`(`annotationClass:` ` [Class](../java.lang/Class.md)<T>`)` <br /> |
+| [Executable](Executable.md) | [getDeclaringExecutable](Parameter.md))`()` Return the`Executable`which declares this parameter. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getModifiers](Parameter.md))`()` Get the modifier flags for this the parameter represented by this`Parameter`object. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getName](../java/lang/reflect/Parameter.md))`()` Returns the name of the parameter. |
-| [Type](../java/lang/reflect/Type.md) | [getParameterizedType](../java/lang/reflect/Parameter.md))`()` Returns a`Type`object that identifies the parameterized type for the parameter represented by this`Parameter`object. |
-| [Class](../java/lang/Class.md)\<\*\> | [getType](../java/lang/reflect/Parameter.md))`()` Returns a`Class`object that identifies the declared type for the parameter represented by this`Parameter`object. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getName](Parameter.md))`()` Returns the name of the parameter. |
+| [Type](Type.md) | [getParameterizedType](Parameter.md))`()` Returns a`Type`object that identifies the parameterized type for the parameter represented by this`Parameter`object. |
+| [Class](../java.lang/Class.md)\<\*\> | [getType](Parameter.md))`()` Returns a`Class`object that identifies the declared type for the parameter represented by this`Parameter`object. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/lang/reflect/Parameter.md))`()` Returns a hash code based on the executable's hash code and the index. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isImplicit](../java/lang/reflect/Parameter.md))`()` Returns`true`if this parameter is implicitly declared in source code; returns`false`otherwise. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isNamePresent](../java/lang/reflect/Parameter.md))`()` Returns true if the parameter has a name; returns false otherwise. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](Parameter.md))`()` Returns a hash code based on the executable's hash code and the index. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isImplicit](Parameter.md))`()` Returns`true`if this parameter is implicitly declared in source code; returns`false`otherwise. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isNamePresent](Parameter.md))`()` Returns true if the parameter has a name; returns false otherwise. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSynthetic](../java/lang/reflect/Parameter.md))`()` Returns`true`if this parameter is neither implicitly nor explicitly declared in source code; returns`false`otherwise. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isVarArgs](../java/lang/reflect/Parameter.md))`()` Returns`true`if this parameter represents a variable argument list; returns`false`otherwise. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/lang/reflect/Parameter.md))`()` Returns a string describing this parameter. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSynthetic](Parameter.md))`()` Returns`true`if this parameter is neither implicitly nor explicitly declared in source code; returns`false`otherwise. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isVarArgs](Parameter.md))`()` Returns`true`if this parameter represents a variable argument list; returns`false`otherwise. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](Parameter.md))`()` Returns a string describing this parameter. |
 | --- | --- |
 
 | Inherited functions ||
 |---|---|
-| From class [AnnotatedElement](../java/lang/reflect/AnnotatedElement.md) |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAnnotationPresent](../java/lang/reflect/AnnotatedElement.md))`(`annotationClass:` ` [Class](../java/lang/Class.md)<out` ` [Annotation](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-annotation/index.html)!>`)` <br /> Returns true if an annotation for the specified type is*present*on this element, else false. This method is designed primarily for convenient access to marker annotations. The truth value returned by this method is equivalent to:`getAnnotation(annotationClass) != null` The body of the default method is specified to be the code above. <br /> | ||
+| From class [AnnotatedElement](AnnotatedElement.md) |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAnnotationPresent](AnnotatedElement.md))`(`annotationClass:` ` [Class](../java.lang/Class.md)<out` ` [Annotation](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-annotation/index.html)!>`)` <br /> Returns true if an annotation for the specified type is*present*on this element, else false. This method is designed primarily for convenient access to marker annotations. The truth value returned by this method is equivalent to:`getAnnotation(annotationClass) != null` The body of the default method is specified to be the code above. <br /> | ||
 
 ## Public methods
 
@@ -80,7 +80,7 @@ Returns this element's annotation for the specified type if such an annotation i
 | Parameters ||
 |-------------------|------------------------------------------------------------------------------------------------------------------------------------------|
 | `<T>` | the type of the annotation to query for and return if present |
-| `annotationClass` | [Class](../java/lang/Class.md)\<T\>:the Class object corresponding to the annotation type |
+| `annotationClass` | [Class](../java.lang/Class.md)\<T\>:the Class object corresponding to the annotation type |
 
 | Return ||
 |----|---------------------------------------------------------------------------------------------------|
@@ -112,12 +112,12 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 fun <T : Annotation!> getAnnotationsByType(annotationClass: Class<T>): Array<T>!
 ```
 
-Returns annotations that are*associated* with this element. If there are no annotations*associated* with this element, the return value is an array of length 0. The difference between this method and [getAnnotation(java.lang.Class)](../java/lang/reflect/AnnotatedElement.md))is that this method detects if its argument is a*repeatable annotation type*(JLS 9.6), and if so, attempts to find one or more annotations of that type by "looking through" a container annotation. The caller of this method is free to modify the returned array; it will have no effect on the arrays returned to other callers.
+Returns annotations that are*associated* with this element. If there are no annotations*associated* with this element, the return value is an array of length 0. The difference between this method and [getAnnotation(java.lang.Class)](AnnotatedElement.md))is that this method detects if its argument is a*repeatable annotation type*(JLS 9.6), and if so, attempts to find one or more annotations of that type by "looking through" a container annotation. The caller of this method is free to modify the returned array; it will have no effect on the arrays returned to other callers.
 
 | Parameters ||
 |-------------------|------------------------------------------------------------------------------------------------------------------------------------------|
 | `<T>` | the type of the annotation to query for and return if present |
-| `annotationClass` | [Class](../java/lang/Class.md)\<T\>:the Class object corresponding to the annotation type |
+| `annotationClass` | [Class](../java.lang/Class.md)\<T\>:the Class object corresponding to the annotation type |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
@@ -138,7 +138,7 @@ fun <T : Annotation!> getDeclaredAnnotation(annotationClass: Class<T>): T?
 | Parameters ||
 |-------------------|------------------------------------------------------------------------------------------------------------------------------------------|
 | `<T>` | the type of the annotation to query for and return if directly present |
-| `annotationClass` | [Class](../java/lang/Class.md)\<T\>:the Class object corresponding to the annotation type |
+| `annotationClass` | [Class](../java.lang/Class.md)\<T\>:the Class object corresponding to the annotation type |
 
 | Return ||
 |----|------------------------------------------------------------------------------------------------------------|
@@ -173,7 +173,7 @@ fun <T : Annotation!> getDeclaredAnnotationsByType(annotationClass: Class<T>)
 | Parameters ||
 |-------------------|------------------------------------------------------------------------------------------------------------------------------------------|
 | `<T>` | the type of the annotation to query for and return if directly or indirectly present |
-| `annotationClass` | [Class](../java/lang/Class.md)\<T\>:the Class object corresponding to the annotation type |
+| `annotationClass` | [Class](../java.lang/Class.md)\<T\>:the Class object corresponding to the annotation type |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -195,7 +195,7 @@ Return the`Executable`which declares this parameter.
 
 | Return ||
 |-------------------------------------------------------------------------------------------|------------------------------------------|
-| [Executable](../java/lang/reflect/Executable.md) | The`Executable`declaring this parameter. |
+| [Executable](Executable.md) | The`Executable`declaring this parameter. |
 
 ### getModifiers
 
@@ -219,7 +219,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 fun getName(): String
 ```
 
-Returns the name of the parameter. If the parameter's name is [present](../java/lang/reflect/Parameter.md)), then this method returns the name provided by the class file. Otherwise, this method synthesizes a name of the form argN, where N is the index of the parameter in the descriptor of the method which declares the parameter.
+Returns the name of the parameter. If the parameter's name is [present](Parameter.md)), then this method returns the name provided by the class file. Otherwise, this method synthesizes a name of the form argN, where N is the index of the parameter in the descriptor of the method which declares the parameter.
 
 | Return ||
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
@@ -237,7 +237,7 @@ Returns a`Type`object that identifies the parameterized type for the parameter r
 
 | Return ||
 |-------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
-| [Type](../java/lang/reflect/Type.md) | a`Type`object identifying the parameterized type of the parameter represented by this object |
+| [Type](Type.md) | a`Type`object identifying the parameterized type of the parameter represented by this object |
 
 ### getType
 
@@ -251,7 +251,7 @@ Returns a`Class`object that identifies the declared type for the parameter repre
 
 | Return ||
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
-| [Class](../java/lang/Class.md)<*> | a`Class`object identifying the declared type of the parameter represented by this object |
+| [Class](../java.lang/Class.md)<*> | a`Class`object identifying the declared type of the parameter represented by this object |
 
 ### hashCode
 

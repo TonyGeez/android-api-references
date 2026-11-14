@@ -10,7 +10,7 @@ class ApplicationRuntime
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [dalvik.system.ApplicationRuntime](../dalvik/system/ApplicationRuntime.md) |
+| ↳ | [dalvik.system.ApplicationRuntime](ApplicationRuntime.md) |
 
 Provides APIs to retrieve the information about the application loaded in the current runtime.
 
@@ -18,7 +18,7 @@ Provides APIs to retrieve the information about the application loaded in the cu
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [DexFile.OptimizationInfo](../dalvik/system/DexFile.OptimizationInfo.md) | [getBaseApkOptimizationInfo](../dalvik/system/ApplicationRuntime.md))`()` Returns the optimization status of the base APK loaded in this process. |
+| static [DexFile.OptimizationInfo](../dalvik/system/DexFile.OptimizationInfo.md) | [getBaseApkOptimizationInfo](ApplicationRuntime.md))`()` Returns the optimization status of the base APK loaded in this process. |
 
 ## Public methods
 

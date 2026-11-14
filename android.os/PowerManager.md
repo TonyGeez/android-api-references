@@ -8,7 +8,7 @@ class PowerManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.os.PowerManager](../android/os/PowerManager.md) |
+| ↳ | [android.os.PowerManager](PowerManager.md) |
 
 This class lets you query and request control of aspects of the device's power state.
 
@@ -70,7 +70,7 @@ This class lets you query and request control of aspects of the device's power s
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/PowerManager#addThermalStatusListener(android.os.PowerManager.OnThermalStatusChangedListener)(listener: https://developer.android.com/reference/kotlin/android/os/PowerManager.OnThermalStatusChangedListener)` This function adds a listener for thermal status change, listener callback will be enqueued tasks on the main thread |
 | --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/PowerManager#addThermalStatusListener(java.util.concurrent.Executor,%20android.os.PowerManager.OnThermalStatusChangedListener)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, listener: https://developer.android.com/reference/kotlin/android/os/PowerManager.OnThermalStatusChangedListener)` This function adds a listener for thermal status change. |
-| [Duration](../java/time/Duration.md)? | `https://developer.android.com/reference/kotlin/android/os/PowerManager#getBatteryDischargePrediction()()` Returns the current battery life remaining estimate. |
+| [Duration](../java.time/Duration.md)? | `https://developer.android.com/reference/kotlin/android/os/PowerManager#getBatteryDischargePrediction()()` Returns the current battery life remaining estimate. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/PowerManager#getCurrentThermalStatus()()` This function returns the current thermal status of the device. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/PowerManager#getLocationPowerSaveMode()()` Returns how location features should behave when battery saver is on. |
@@ -553,7 +553,7 @@ This function adds a listener for thermal headroom change.
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` to handle listener callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` to handle listener callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `listener` | [PowerManager.OnThermalHeadroomChangedListener](../android/os/PowerManager.OnThermalHeadroomChangedListener.md): listener to be added. This value cannot be `null`. |
 
 ### addThermalStatusListener
@@ -585,7 +585,7 @@ This function adds a listener for thermal status change.
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` to handle listener callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` to handle listener callback. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `listener` | [PowerManager.OnThermalStatusChangedListener](../android/os/PowerManager.OnThermalStatusChangedListener.md): listener to be added. This value cannot be `null`. |
 
 ### getBatteryDischargePrediction

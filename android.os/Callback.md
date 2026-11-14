@@ -19,7 +19,7 @@ Callback interface you can use when instantiating a Handler to avoid having to i
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [handleMessage](../android/os/Handler.Callback.md))`(`msg:` ` [Message](../android/os/Message.md)`)` <br /> |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [handleMessage](../android/os/Handler.Callback.md))`(`msg:` ` [Message](Message.md)`)` <br /> |
 
 ## Public methods
 
@@ -33,7 +33,7 @@ abstract fun handleMessage(msg: Message): Boolean
 
 | Parameters ||
 |-------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `msg` | [Message](../android/os/Message.md):A [Message](../android/os/Message.md) object This value cannot be`null`. |
+| `msg` | [Message](Message.md):A [Message](Message.md) object This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------------------------------|

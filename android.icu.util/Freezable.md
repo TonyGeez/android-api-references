@@ -4,19 +4,19 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # Freezable
 
-Kotlin| [Java](../android/icu/util/Freezable.md) 
+Kotlin| [Java](Freezable.md) 
 | --- | --- |
 
 ```
 interface Freezable<T : Any!> : Cloneable
 ```
 
-| [android.icu.util.Freezable](../android/icu/util/Freezable.md) |
+| [android.icu.util.Freezable](Freezable.md) |
 
-| Known Direct Subclasses [Collator](../android/icu/text/Collator.md), [DateIntervalInfo](../android/icu/text/DateIntervalInfo.md), [DateTimePatternGenerator](../android/icu/text/DateTimePatternGenerator.md), [MessagePattern](../android/icu/text/MessagePattern.md), [TimeZone](../android/icu/util/TimeZone.md), [TimeZoneFormat](../android/icu/text/TimeZoneFormat.md), [UnicodeSet](../android/icu/text/UnicodeSet.md) |----------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------| | [Collator](../android/icu/text/Collator.md) | **\[icu enhancement\]** ICU's replacement for [java.text.Collator](../java/text/Collator.md). | | [DateIntervalInfo](../android/icu/text/DateIntervalInfo.md) | DateIntervalInfo is a public class for encapsulating localizable date time interval patterns. | | [DateTimePatternGenerator](../android/icu/text/DateTimePatternGenerator.md) | This class provides flexible generation of date format patterns, like "yy-MM-dd". | | [MessagePattern](../android/icu/text/MessagePattern.md) | Parses and represents ICU MessageFormat patterns. | | [TimeZone](../android/icu/util/TimeZone.md) | **\[icu enhancement\]** ICU's replacement for [java.util.TimeZone](../java/util/TimeZone.md). | | [TimeZoneFormat](../android/icu/text/TimeZoneFormat.md) | `TimeZoneFormat`supports time zone display name formatting and parsing. | | [UnicodeSet](../android/icu/text/UnicodeSet.md) | A mutable set of Unicode characters and multicharacter strings. | |
+| Known Direct Subclasses [Collator](../android.icu.text/Collator.md), [DateIntervalInfo](../android.icu.text/DateIntervalInfo.md), [DateTimePatternGenerator](../android.icu.text/DateTimePatternGenerator.md), [MessagePattern](../android.icu.text/MessagePattern.md), [TimeZone](TimeZone.md), [TimeZoneFormat](../android.icu.text/TimeZoneFormat.md), [UnicodeSet](../android.icu.text/UnicodeSet.md) |----------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------| | [Collator](../android.icu.text/Collator.md) | **\[icu enhancement\]** ICU's replacement for [java.text.Collator](../java.text/Collator.md). | | [DateIntervalInfo](../android.icu.text/DateIntervalInfo.md) | DateIntervalInfo is a public class for encapsulating localizable date time interval patterns. | | [DateTimePatternGenerator](../android.icu.text/DateTimePatternGenerator.md) | This class provides flexible generation of date format patterns, like "yy-MM-dd". | | [MessagePattern](../android.icu.text/MessagePattern.md) | Parses and represents ICU MessageFormat patterns. | | [TimeZone](TimeZone.md) | **\[icu enhancement\]** ICU's replacement for [java.util.TimeZone](../java.util/TimeZone.md). | | [TimeZoneFormat](../android.icu.text/TimeZoneFormat.md) | `TimeZoneFormat`supports time zone display name formatting and parsing. | | [UnicodeSet](../android.icu.text/UnicodeSet.md) | A mutable set of Unicode characters and multicharacter strings. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [RuleBasedCollator](../android/icu/text/RuleBasedCollator.md) |--------------------------------------------------------------------------------------------------------------|-------------------------------------------------------| | [RuleBasedCollator](../android/icu/text/RuleBasedCollator.md) | RuleBasedCollator is a concrete subclass of Collator. | |
+| Known Indirect Subclasses [RuleBasedCollator](../android.icu.text/RuleBasedCollator.md) |--------------------------------------------------------------------------------------------------------------|-------------------------------------------------------| | [RuleBasedCollator](../android.icu.text/RuleBasedCollator.md) | RuleBasedCollator is a concrete subclass of Collator. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 Provides a flexible mechanism for controlling access, without requiring that a class be immutable. Once frozen, an object can never be unfrozen, so it is thread-safe from that point onward. Once the object has been frozen, it must guarantee that no changes can be made to it. Any attempt to alter it must raise an UnsupportedOperationException exception. This means that when the object returns internal objects, or if anyone has references to those internal objects, that those internal objects must either be immutable, or must also raise exceptions if any attempt to modify them is made. Of course, the object can return clones of internal objects, since those are safe.
@@ -212,9 +212,9 @@ zone_to_country = Collections.unmodifiableMap(new HashMap(zone_to_country));
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstractT | [cloneAsThawed](../android/icu/util/Freezable.md))`()` Provides for the clone operation. |
-| abstractT | [freeze](../android/icu/util/Freezable.md))`()` Freezes the object. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFrozen](../android/icu/util/Freezable.md))`()` Determines whether the object has been frozen or not. |
+| abstractT | [cloneAsThawed](Freezable.md))`()` Provides for the clone operation. |
+| abstractT | [freeze](Freezable.md))`()` Freezes the object. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFrozen](Freezable.md))`()` Determines whether the object has been frozen or not. |
 | --- | --- |
 
 ## Public methods

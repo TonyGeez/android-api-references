@@ -19,7 +19,7 @@ interface PeopleColumns
 
 | **This interface was deprecated in API level 5.**
 |
-| see [android.provider.ContactsContract](../android/provider/ContactsContract.md)
+| see [android.provider.ContactsContract](ContactsContract.md)
 
 Columns from the People table that other tables join into themselves.
 
@@ -51,7 +51,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val CUSTOM_RINGTONE: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)*
 
 A custom ringtone associated with a person. Not always present.
 
@@ -67,7 +67,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val DISPLAY_NAME: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)*
 
 The display name. If name is not null name, else if number is not null number, else if email is not null email.
 
@@ -83,7 +83,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val LAST_TIME_CONTACTED: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)*
 
 The last time a person was contacted.
 
@@ -99,7 +99,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val NAME: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)*
 
 The person's name.
 
@@ -115,7 +115,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val NOTES: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)*
 
 Notes about the person.
 
@@ -132,7 +132,7 @@ Deprecated in [API level 5](https://developer.android.com/guide/topics/manifest/
 static val PHONETIC_NAME: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)*
 
 Phonetic equivalent of the person's name, in a locale-dependent character set (e.g. hiragana for Japanese). Used for pronunciation and/or collation in some languages.
 
@@ -148,7 +148,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val PHOTO_VERSION: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)*
 
 The server version of the photo
 
@@ -164,7 +164,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val SEND_TO_VOICEMAIL: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)*
 
 Whether the person should always be sent to voicemail. Not always present.
 
@@ -180,7 +180,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val STARRED: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)*
 
 Is the contact starred?
 
@@ -196,7 +196,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val TIMES_CONTACTED: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)*
 
 The number of times a person has been contacted
 

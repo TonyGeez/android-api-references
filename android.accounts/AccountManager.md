@@ -2,7 +2,7 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 
 # AccountManager
 
-Kotlin | [Java](../android/accounts/AccountManager.md)
+Kotlin | [Java](AccountManager.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ open class AccountManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.accounts.AccountManager](../android/accounts/AccountManager.md) |
+| ↳ | [android.accounts.AccountManager](AccountManager.md) |
 
 This class provides access to a centralized registry of the user's online accounts. The user enters credentials (username and password) once per account, granting applications access to online resources with "one-click" approval.
 
@@ -96,7 +96,7 @@ Requests which may block, including `https://developer.android.com/reference/kot
 
 | Public methods ||
 |---|---|
-| open [AccountManagerFuture](../android/accounts/AccountManagerFuture.md)\< [Bundle](../android/os/Bundle.md)!\>! | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#addAccount(kotlin.String,%20kotlin.String,%20kotlin.Array,%20android.os.Bundle,%20android.app.Activity,%20android.accounts.AccountManagerCallback,%20android.os.Handler)(accountType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, authTokenType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, requiredFeatures: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!, addAccountOptions: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!, activity: https://developer.android.com/reference/kotlin/android/app/Activity.html#!, callback: https://developer.android.com/reference/kotlin/android/accounts/AccountManagerCallback<https://developer.android.com/reference/kotlin/android/os/Bundle.html#!>!, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#!)` Asks the user to add an account of a specified type. |
+| open [AccountManagerFuture](AccountManagerFuture.md)\< [Bundle](../android.os/Bundle.md)!\>! | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#addAccount(kotlin.String,%20kotlin.String,%20kotlin.Array,%20android.os.Bundle,%20android.app.Activity,%20android.accounts.AccountManagerCallback,%20android.os.Handler)(accountType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, authTokenType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, requiredFeatures: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!, addAccountOptions: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!, activity: https://developer.android.com/reference/kotlin/android/app/Activity.html#!, callback: https://developer.android.com/reference/kotlin/android/accounts/AccountManagerCallback<https://developer.android.com/reference/kotlin/android/os/Bundle.html#!>!, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#!)` Asks the user to add an account of a specified type. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#addAccountExplicitly(android.accounts.Account,%20kotlin.String,%20android.os.Bundle)(account: https://developer.android.com/reference/kotlin/android/accounts/Account!, password: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, userdata: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Adds an account directly to the AccountManager. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#addAccountExplicitly(android.accounts.Account,%20kotlin.String,%20android.os.Bundle,%20kotlin.collections.MutableMap)(account: https://developer.android.com/reference/kotlin/android/accounts/Account!, password: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, extras: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!, visibility: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html!>!)` Adds an account directly to the AccountManager. |
 | --- | --- |
@@ -105,56 +105,56 @@ Requests which may block, including `https://developer.android.com/reference/kot
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#blockingGetAuthToken(android.accounts.Account,%20kotlin.String,%20kotlin.Boolean)(account: https://developer.android.com/reference/kotlin/android/accounts/Account!, authTokenType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, notifyAuthFailure: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` This convenience helper synchronously gets an auth token with `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#getAuthToken(android.accounts.Account,%20kotlin.String,%20kotlin.Boolean,%20android.accounts.AccountManagerCallback,%20android.os.Handler)`. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#clearPassword(android.accounts.Account)(account: https://developer.android.com/reference/kotlin/android/accounts/Account!)` Forgets a saved password. |
-| open [AccountManagerFuture](../android/accounts/AccountManagerFuture.md)\< [Bundle](../android/os/Bundle.md)!\>! | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#confirmCredentials(android.accounts.Account,%20android.os.Bundle,%20android.app.Activity,%20android.accounts.AccountManagerCallback,%20android.os.Handler)(account: https://developer.android.com/reference/kotlin/android/accounts/Account!, options: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!, activity: https://developer.android.com/reference/kotlin/android/app/Activity.html#!, callback: https://developer.android.com/reference/kotlin/android/accounts/AccountManagerCallback<https://developer.android.com/reference/kotlin/android/os/Bundle.html#!>!, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#!)` Confirms that the user knows the password for an account to make extra sure they are the owner of the account. |
-| open [AccountManagerFuture](../android/accounts/AccountManagerFuture.md)\< [Bundle](../android/os/Bundle.md)!\>! | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#editProperties(kotlin.String,%20android.app.Activity,%20android.accounts.AccountManagerCallback,%20android.os.Handler)(accountType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, activity: https://developer.android.com/reference/kotlin/android/app/Activity.html#!, callback: https://developer.android.com/reference/kotlin/android/accounts/AccountManagerCallback<https://developer.android.com/reference/kotlin/android/os/Bundle.html#!>!, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#!)` Offers the user an opportunity to change an authenticator's settings. |
+| open [AccountManagerFuture](AccountManagerFuture.md)\< [Bundle](../android.os/Bundle.md)!\>! | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#confirmCredentials(android.accounts.Account,%20android.os.Bundle,%20android.app.Activity,%20android.accounts.AccountManagerCallback,%20android.os.Handler)(account: https://developer.android.com/reference/kotlin/android/accounts/Account!, options: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!, activity: https://developer.android.com/reference/kotlin/android/app/Activity.html#!, callback: https://developer.android.com/reference/kotlin/android/accounts/AccountManagerCallback<https://developer.android.com/reference/kotlin/android/os/Bundle.html#!>!, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#!)` Confirms that the user knows the password for an account to make extra sure they are the owner of the account. |
+| open [AccountManagerFuture](AccountManagerFuture.md)\< [Bundle](../android.os/Bundle.md)!\>! | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#editProperties(kotlin.String,%20android.app.Activity,%20android.accounts.AccountManagerCallback,%20android.os.Handler)(accountType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, activity: https://developer.android.com/reference/kotlin/android/app/Activity.html#!, callback: https://developer.android.com/reference/kotlin/android/accounts/AccountManagerCallback<https://developer.android.com/reference/kotlin/android/os/Bundle.html#!>!, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#!)` Offers the user an opportunity to change an authenticator's settings. |
 | --- | --- |
-| open [AccountManagerFuture](../android/accounts/AccountManagerFuture.md)\< [Bundle](../android/os/Bundle.md)!\>! | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#finishSession(android.os.Bundle,%20android.app.Activity,%20android.accounts.AccountManagerCallback,%20android.os.Handler)(sessionBundle: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!, activity: https://developer.android.com/reference/kotlin/android/app/Activity.html#!, callback: https://developer.android.com/reference/kotlin/android/accounts/AccountManagerCallback<https://developer.android.com/reference/kotlin/android/os/Bundle.html#!>!, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#!)` Finishes the session started by `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#startAddAccountSession(kotlin.String,%20kotlin.String,%20kotlin.Array,%20android.os.Bundle,%20android.app.Activity,%20android.accounts.AccountManagerCallback,%20android.os.Handler)` or `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#startUpdateCredentialsSession(android.accounts.Account,%20kotlin.String,%20android.os.Bundle,%20android.app.Activity,%20android.accounts.AccountManagerCallback,%20android.os.Handler)`. |
-| open static [AccountManager](../android/accounts/AccountManager.md)! | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#get(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!)` Gets an AccountManager instance associated with a Context. |
+| open [AccountManagerFuture](AccountManagerFuture.md)\< [Bundle](../android.os/Bundle.md)!\>! | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#finishSession(android.os.Bundle,%20android.app.Activity,%20android.accounts.AccountManagerCallback,%20android.os.Handler)(sessionBundle: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!, activity: https://developer.android.com/reference/kotlin/android/app/Activity.html#!, callback: https://developer.android.com/reference/kotlin/android/accounts/AccountManagerCallback<https://developer.android.com/reference/kotlin/android/os/Bundle.html#!>!, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#!)` Finishes the session started by `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#startAddAccountSession(kotlin.String,%20kotlin.String,%20kotlin.Array,%20android.os.Bundle,%20android.app.Activity,%20android.accounts.AccountManagerCallback,%20android.os.Handler)` or `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#startUpdateCredentialsSession(android.accounts.Account,%20kotlin.String,%20android.os.Bundle,%20android.app.Activity,%20android.accounts.AccountManagerCallback,%20android.os.Handler)`. |
+| open static [AccountManager](AccountManager.md)! | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#get(android.content.Context)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#!)` Gets an AccountManager instance associated with a Context. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#getAccountVisibility(android.accounts.Account,%20kotlin.String)(account: https://developer.android.com/reference/kotlin/android/accounts/Account!, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Get visibility of certain account for given application. |
 | --- | --- |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Account](../android/accounts/Account.md)!\> | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#getAccounts()()` Lists all accounts visible to the caller regardless of type. |
-| open [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [Account](../android/accounts/Account.md)!, [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#getAccountsAndVisibilityForPackage(kotlin.String,%20kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, accountType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Gets all accounts of given type and their visibility for specific package. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Account](../android/accounts/Account.md)!\> | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#getAccountsByType(kotlin.String)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Lists all accounts of particular type visible to the caller. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Account](Account.md)!\> | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#getAccounts()()` Lists all accounts visible to the caller regardless of type. |
+| open [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [Account](Account.md)!, [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#getAccountsAndVisibilityForPackage(kotlin.String,%20kotlin.String)(packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, accountType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Gets all accounts of given type and their visibility for specific package. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Account](Account.md)!\> | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#getAccountsByType(kotlin.String)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Lists all accounts of particular type visible to the caller. |
 | --- | --- |
-| open [AccountManagerFuture](../android/accounts/AccountManagerFuture.md)\< [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Account](../android/accounts/Account.md)!\>!\>! | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#getAccountsByTypeAndFeatures(kotlin.String,%20kotlin.Array,%20android.accounts.AccountManagerCallback,%20android.os.Handler)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, features: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!, callback: https://developer.android.com/reference/kotlin/android/accounts/AccountManagerCallback<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/android/accounts/Account!>!>!, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#!)` Lists all accounts of a type which have certain features. |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Account](../android/accounts/Account.md)!\> | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#getAccountsByTypeForPackage(kotlin.String,%20kotlin.String)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the accounts visible to the specified package in an environment where some apps are not authorized to view all accounts. |
-| open [AccountManagerFuture](../android/accounts/AccountManagerFuture.md)\< [Bundle](../android/os/Bundle.md)!\>! | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#getAuthToken(android.accounts.Account,%20kotlin.String,%20android.os.Bundle,%20android.app.Activity,%20android.accounts.AccountManagerCallback,%20android.os.Handler)(account: https://developer.android.com/reference/kotlin/android/accounts/Account!, authTokenType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, options: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!, activity: https://developer.android.com/reference/kotlin/android/app/Activity.html#!, callback: https://developer.android.com/reference/kotlin/android/accounts/AccountManagerCallback<https://developer.android.com/reference/kotlin/android/os/Bundle.html#!>!, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#!)` Gets an auth token of the specified type for a particular account, prompting the user for credentials if necessary. |
+| open [AccountManagerFuture](AccountManagerFuture.md)\< [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Account](Account.md)!\>!\>! | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#getAccountsByTypeAndFeatures(kotlin.String,%20kotlin.Array,%20android.accounts.AccountManagerCallback,%20android.os.Handler)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, features: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!, callback: https://developer.android.com/reference/kotlin/android/accounts/AccountManagerCallback<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://developer.android.com/reference/kotlin/android/accounts/Account!>!>!, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#!)` Lists all accounts of a type which have certain features. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Account](Account.md)!\> | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#getAccountsByTypeForPackage(kotlin.String,%20kotlin.String)(type: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the accounts visible to the specified package in an environment where some apps are not authorized to view all accounts. |
+| open [AccountManagerFuture](AccountManagerFuture.md)\< [Bundle](../android.os/Bundle.md)!\>! | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#getAuthToken(android.accounts.Account,%20kotlin.String,%20android.os.Bundle,%20android.app.Activity,%20android.accounts.AccountManagerCallback,%20android.os.Handler)(account: https://developer.android.com/reference/kotlin/android/accounts/Account!, authTokenType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, options: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!, activity: https://developer.android.com/reference/kotlin/android/app/Activity.html#!, callback: https://developer.android.com/reference/kotlin/android/accounts/AccountManagerCallback<https://developer.android.com/reference/kotlin/android/os/Bundle.html#!>!, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#!)` Gets an auth token of the specified type for a particular account, prompting the user for credentials if necessary. |
 | --- | --- |
-| open [AccountManagerFuture](../android/accounts/AccountManagerFuture.md)\< [Bundle](../android/os/Bundle.md)!\>! | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#getAuthToken(android.accounts.Account,%20kotlin.String,%20android.os.Bundle,%20kotlin.Boolean,%20android.accounts.AccountManagerCallback,%20android.os.Handler)(account: https://developer.android.com/reference/kotlin/android/accounts/Account!, authTokenType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, options: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!, notifyAuthFailure: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, callback: https://developer.android.com/reference/kotlin/android/accounts/AccountManagerCallback<https://developer.android.com/reference/kotlin/android/os/Bundle.html#!>!, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#!)` Gets an auth token of the specified type for a particular account, optionally raising a notification if the user must enter credentials. |
-| open [AccountManagerFuture](../android/accounts/AccountManagerFuture.md)\< [Bundle](../android/os/Bundle.md)!\>! | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#getAuthToken(android.accounts.Account,%20kotlin.String,%20kotlin.Boolean,%20android.accounts.AccountManagerCallback,%20android.os.Handler)(account: https://developer.android.com/reference/kotlin/android/accounts/Account!, authTokenType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, notifyAuthFailure: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, callback: https://developer.android.com/reference/kotlin/android/accounts/AccountManagerCallback<https://developer.android.com/reference/kotlin/android/os/Bundle.html#!>!, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#!)` Gets an auth token of the specified type for a particular account, optionally raising a notification if the user must enter credentials. |
-| open [AccountManagerFuture](../android/accounts/AccountManagerFuture.md)\< [Bundle](../android/os/Bundle.md)!\>! | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#getAuthTokenByFeatures(kotlin.String,%20kotlin.String,%20kotlin.Array,%20android.app.Activity,%20android.os.Bundle,%20android.os.Bundle,%20android.accounts.AccountManagerCallback,%20android.os.Handler)(accountType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, authTokenType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, features: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!, activity: https://developer.android.com/reference/kotlin/android/app/Activity.html#!, addAccountOptions: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!, getAuthTokenOptions: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!, callback: https://developer.android.com/reference/kotlin/android/accounts/AccountManagerCallback<https://developer.android.com/reference/kotlin/android/os/Bundle.html#!>!, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#!)` This convenience helper combines the functionality of `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#getAccountsByTypeAndFeatures(kotlin.String,%20kotlin.Array,%20android.accounts.AccountManagerCallback,%20android.os.Handler)`, #getAuthToken, and `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#addAccount(kotlin.String,%20kotlin.String,%20kotlin.Array,%20android.os.Bundle,%20android.app.Activity,%20android.accounts.AccountManagerCallback,%20android.os.Handler)`. |
+| open [AccountManagerFuture](AccountManagerFuture.md)\< [Bundle](../android.os/Bundle.md)!\>! | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#getAuthToken(android.accounts.Account,%20kotlin.String,%20android.os.Bundle,%20kotlin.Boolean,%20android.accounts.AccountManagerCallback,%20android.os.Handler)(account: https://developer.android.com/reference/kotlin/android/accounts/Account!, authTokenType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, options: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!, notifyAuthFailure: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, callback: https://developer.android.com/reference/kotlin/android/accounts/AccountManagerCallback<https://developer.android.com/reference/kotlin/android/os/Bundle.html#!>!, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#!)` Gets an auth token of the specified type for a particular account, optionally raising a notification if the user must enter credentials. |
+| open [AccountManagerFuture](AccountManagerFuture.md)\< [Bundle](../android.os/Bundle.md)!\>! | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#getAuthToken(android.accounts.Account,%20kotlin.String,%20kotlin.Boolean,%20android.accounts.AccountManagerCallback,%20android.os.Handler)(account: https://developer.android.com/reference/kotlin/android/accounts/Account!, authTokenType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, notifyAuthFailure: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, callback: https://developer.android.com/reference/kotlin/android/accounts/AccountManagerCallback<https://developer.android.com/reference/kotlin/android/os/Bundle.html#!>!, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#!)` Gets an auth token of the specified type for a particular account, optionally raising a notification if the user must enter credentials. |
+| open [AccountManagerFuture](AccountManagerFuture.md)\< [Bundle](../android.os/Bundle.md)!\>! | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#getAuthTokenByFeatures(kotlin.String,%20kotlin.String,%20kotlin.Array,%20android.app.Activity,%20android.os.Bundle,%20android.os.Bundle,%20android.accounts.AccountManagerCallback,%20android.os.Handler)(accountType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, authTokenType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, features: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!, activity: https://developer.android.com/reference/kotlin/android/app/Activity.html#!, addAccountOptions: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!, getAuthTokenOptions: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!, callback: https://developer.android.com/reference/kotlin/android/accounts/AccountManagerCallback<https://developer.android.com/reference/kotlin/android/os/Bundle.html#!>!, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#!)` This convenience helper combines the functionality of `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#getAccountsByTypeAndFeatures(kotlin.String,%20kotlin.Array,%20android.accounts.AccountManagerCallback,%20android.os.Handler)`, #getAuthToken, and `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#addAccount(kotlin.String,%20kotlin.String,%20kotlin.Array,%20android.os.Bundle,%20android.app.Activity,%20android.accounts.AccountManagerCallback,%20android.os.Handler)`. |
 | --- | --- |
-| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [AuthenticatorDescription](../android/accounts/AuthenticatorDescription.md)!\>! | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#getAuthenticatorTypes()()` Lists the currently registered authenticators. |
+| open [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [AuthenticatorDescription](AuthenticatorDescription.md)!\>! | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#getAuthenticatorTypes()()` Lists the currently registered authenticators. |
 | open [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#getPackagesAndVisibilityForAccount(android.accounts.Account)(account: https://developer.android.com/reference/kotlin/android/accounts/Account!)` Returns package names and visibility which were explicitly set for given account. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#getPassword(android.accounts.Account)(account: https://developer.android.com/reference/kotlin/android/accounts/Account!)` Gets the saved password associated with the account. |
 | --- | --- |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#getPreviousName(android.accounts.Account)(account: https://developer.android.com/reference/kotlin/android/accounts/Account!)` Gets the previous name associated with the account or `null`, if none. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#getUserData(android.accounts.Account,%20kotlin.String)(account: https://developer.android.com/reference/kotlin/android/accounts/Account!, key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Gets the user data named by "key" associated with the account. |
-| open [AccountManagerFuture](../android/accounts/AccountManagerFuture.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#hasFeatures(android.accounts.Account,%20kotlin.Array,%20android.accounts.AccountManagerCallback,%20android.os.Handler)(account: https://developer.android.com/reference/kotlin/android/accounts/Account!, features: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!, callback: https://developer.android.com/reference/kotlin/android/accounts/AccountManagerCallback<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html!>!, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#!)` Finds out whether a particular account has all the specified features. |
+| open [AccountManagerFuture](AccountManagerFuture.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#hasFeatures(android.accounts.Account,%20kotlin.Array,%20android.accounts.AccountManagerCallback,%20android.os.Handler)(account: https://developer.android.com/reference/kotlin/android/accounts/Account!, features: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!, callback: https://developer.android.com/reference/kotlin/android/accounts/AccountManagerCallback<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html!>!, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#!)` Finds out whether a particular account has all the specified features. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#invalidateAuthToken(kotlin.String,%20kotlin.String)(accountType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, authToken: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Removes an auth token from the AccountManager's cache. |
-| open [AccountManagerFuture](../android/accounts/AccountManagerFuture.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#isCredentialsUpdateSuggested(android.accounts.Account,%20kotlin.String,%20android.accounts.AccountManagerCallback,%20android.os.Handler)(account: https://developer.android.com/reference/kotlin/android/accounts/Account!, statusToken: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, callback: https://developer.android.com/reference/kotlin/android/accounts/AccountManagerCallback<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html!>!, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#!)` Checks whether `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#updateCredentials(android.accounts.Account,%20kotlin.String,%20android.os.Bundle,%20android.app.Activity,%20android.accounts.AccountManagerCallback,%20android.os.Handler)` or `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#startUpdateCredentialsSession(android.accounts.Account,%20kotlin.String,%20android.os.Bundle,%20android.app.Activity,%20android.accounts.AccountManagerCallback,%20android.os.Handler)` should be called with respect to the specified account. |
-| open static [Intent](../android/content/Intent.md)! | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#newChooseAccountIntent(android.accounts.Account,%20java.util.ArrayList,%20kotlin.Array,%20kotlin.Boolean,%20kotlin.String,%20kotlin.String,%20kotlin.Array,%20android.os.Bundle)(selectedAccount: https://developer.android.com/reference/kotlin/android/accounts/Account!, allowableAccounts: https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://developer.android.com/reference/kotlin/android/accounts/Account!>!, allowableAccountTypes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!, alwaysPromptForAccount: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, descriptionOverrideText: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, addAccountAuthTokenType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, addAccountRequiredFeatures: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!, addAccountOptions: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Deprecated in favor of `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#newChooseAccountIntent(android.accounts.Account,%20kotlin.collections.MutableList,%20kotlin.Array,%20kotlin.String,%20kotlin.String,%20kotlin.Array,%20android.os.Bundle)`. |
+| open [AccountManagerFuture](AccountManagerFuture.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#isCredentialsUpdateSuggested(android.accounts.Account,%20kotlin.String,%20android.accounts.AccountManagerCallback,%20android.os.Handler)(account: https://developer.android.com/reference/kotlin/android/accounts/Account!, statusToken: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, callback: https://developer.android.com/reference/kotlin/android/accounts/AccountManagerCallback<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html!>!, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#!)` Checks whether `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#updateCredentials(android.accounts.Account,%20kotlin.String,%20android.os.Bundle,%20android.app.Activity,%20android.accounts.AccountManagerCallback,%20android.os.Handler)` or `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#startUpdateCredentialsSession(android.accounts.Account,%20kotlin.String,%20android.os.Bundle,%20android.app.Activity,%20android.accounts.AccountManagerCallback,%20android.os.Handler)` should be called with respect to the specified account. |
+| open static [Intent](../android.content/Intent.md)! | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#newChooseAccountIntent(android.accounts.Account,%20java.util.ArrayList,%20kotlin.Array,%20kotlin.Boolean,%20kotlin.String,%20kotlin.String,%20kotlin.Array,%20android.os.Bundle)(selectedAccount: https://developer.android.com/reference/kotlin/android/accounts/Account!, allowableAccounts: https://developer.android.com/reference/kotlin/java/util/ArrayList.html#<https://developer.android.com/reference/kotlin/android/accounts/Account!>!, allowableAccountTypes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!, alwaysPromptForAccount: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html, descriptionOverrideText: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, addAccountAuthTokenType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, addAccountRequiredFeatures: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!, addAccountOptions: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Deprecated in favor of `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#newChooseAccountIntent(android.accounts.Account,%20kotlin.collections.MutableList,%20kotlin.Array,%20kotlin.String,%20kotlin.String,%20kotlin.Array,%20android.os.Bundle)`. |
 | --- | --- |
-| open static [Intent](../android/content/Intent.md)! | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#newChooseAccountIntent(android.accounts.Account,%20kotlin.collections.MutableList,%20kotlin.Array,%20kotlin.String,%20kotlin.String,%20kotlin.Array,%20android.os.Bundle)(selectedAccount: https://developer.android.com/reference/kotlin/android/accounts/Account!, allowableAccounts: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/accounts/Account!>!, allowableAccountTypes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!, descriptionOverrideText: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, addAccountAuthTokenType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, addAccountRequiredFeatures: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!, addAccountOptions: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Returns an intent to an `https://developer.android.com/reference/kotlin/android/app/Activity.html#` that prompts the user to choose from a list of accounts. |
+| open static [Intent](../android.content/Intent.md)! | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#newChooseAccountIntent(android.accounts.Account,%20kotlin.collections.MutableList,%20kotlin.Array,%20kotlin.String,%20kotlin.String,%20kotlin.Array,%20android.os.Bundle)(selectedAccount: https://developer.android.com/reference/kotlin/android/accounts/Account!, allowableAccounts: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/accounts/Account!>!, allowableAccountTypes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!, descriptionOverrideText: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, addAccountAuthTokenType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, addAccountRequiredFeatures: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!, addAccountOptions: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!)` Returns an intent to an `https://developer.android.com/reference/kotlin/android/app/Activity.html#` that prompts the user to choose from a list of accounts. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#notifyAccountAuthenticated(android.accounts.Account)(account: https://developer.android.com/reference/kotlin/android/accounts/Account!)` Notifies the system that the account has just been authenticated. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#peekAuthToken(android.accounts.Account,%20kotlin.String)(account: https://developer.android.com/reference/kotlin/android/accounts/Account!, authTokenType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Gets an auth token from the AccountManager's cache. |
 | --- | --- |
-| open [AccountManagerFuture](../android/accounts/AccountManagerFuture.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#removeAccount(android.accounts.Account,%20android.accounts.AccountManagerCallback,%20android.os.Handler)(account: https://developer.android.com/reference/kotlin/android/accounts/Account!, callback: https://developer.android.com/reference/kotlin/android/accounts/AccountManagerCallback<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html!>!, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#!)` Removes an account from the AccountManager. |
-| open [AccountManagerFuture](../android/accounts/AccountManagerFuture.md)\< [Bundle](../android/os/Bundle.md)!\>! | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#removeAccount(android.accounts.Account,%20android.app.Activity,%20android.accounts.AccountManagerCallback,%20android.os.Handler)(account: https://developer.android.com/reference/kotlin/android/accounts/Account!, activity: https://developer.android.com/reference/kotlin/android/app/Activity.html#!, callback: https://developer.android.com/reference/kotlin/android/accounts/AccountManagerCallback<https://developer.android.com/reference/kotlin/android/os/Bundle.html#!>!, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#!)` Removes an account from the AccountManager. |
+| open [AccountManagerFuture](AccountManagerFuture.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>! | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#removeAccount(android.accounts.Account,%20android.accounts.AccountManagerCallback,%20android.os.Handler)(account: https://developer.android.com/reference/kotlin/android/accounts/Account!, callback: https://developer.android.com/reference/kotlin/android/accounts/AccountManagerCallback<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html!>!, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#!)` Removes an account from the AccountManager. |
+| open [AccountManagerFuture](AccountManagerFuture.md)\< [Bundle](../android.os/Bundle.md)!\>! | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#removeAccount(android.accounts.Account,%20android.app.Activity,%20android.accounts.AccountManagerCallback,%20android.os.Handler)(account: https://developer.android.com/reference/kotlin/android/accounts/Account!, activity: https://developer.android.com/reference/kotlin/android/app/Activity.html#!, callback: https://developer.android.com/reference/kotlin/android/accounts/AccountManagerCallback<https://developer.android.com/reference/kotlin/android/os/Bundle.html#!>!, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#!)` Removes an account from the AccountManager. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#removeAccountExplicitly(android.accounts.Account)(account: https://developer.android.com/reference/kotlin/android/accounts/Account!)` Removes an account directly. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#removeOnAccountsUpdatedListener(android.accounts.OnAccountsUpdateListener)(listener: https://developer.android.com/reference/kotlin/android/accounts/OnAccountsUpdateListener!)` Removes an `https://developer.android.com/reference/kotlin/android/accounts/OnAccountsUpdateListener` previously registered with #addOnAccountsUpdatedListener. |
-| open [AccountManagerFuture](../android/accounts/AccountManagerFuture.md)\< [Account](../android/accounts/Account.md)!\>! | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#renameAccount(android.accounts.Account,%20kotlin.String,%20android.accounts.AccountManagerCallback,%20android.os.Handler)(account: https://developer.android.com/reference/kotlin/android/accounts/Account!, newName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, callback: https://developer.android.com/reference/kotlin/android/accounts/AccountManagerCallback<https://developer.android.com/reference/kotlin/android/accounts/Account!>!, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#!)` Rename the specified `https://developer.android.com/reference/kotlin/android/accounts/Account`. |
+| open [AccountManagerFuture](AccountManagerFuture.md)\< [Account](Account.md)!\>! | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#renameAccount(android.accounts.Account,%20kotlin.String,%20android.accounts.AccountManagerCallback,%20android.os.Handler)(account: https://developer.android.com/reference/kotlin/android/accounts/Account!, newName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, callback: https://developer.android.com/reference/kotlin/android/accounts/AccountManagerCallback<https://developer.android.com/reference/kotlin/android/accounts/Account!>!, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#!)` Rename the specified `https://developer.android.com/reference/kotlin/android/accounts/Account`. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#setAccountVisibility(android.accounts.Account,%20kotlin.String,%20kotlin.Int)(account: https://developer.android.com/reference/kotlin/android/accounts/Account!, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, visibility: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Set visibility value of given account to certain package. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#setAuthToken(android.accounts.Account,%20kotlin.String,%20kotlin.String)(account: https://developer.android.com/reference/kotlin/android/accounts/Account!, authTokenType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, authToken: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Adds an auth token to the AccountManager cache for an account. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#setPassword(android.accounts.Account,%20kotlin.String)(account: https://developer.android.com/reference/kotlin/android/accounts/Account!, password: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Sets or forgets a saved password. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#setUserData(android.accounts.Account,%20kotlin.String,%20kotlin.String)(account: https://developer.android.com/reference/kotlin/android/accounts/Account!, key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, value: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Sets one userdata key for an account. |
 | --- | --- |
-| open [AccountManagerFuture](../android/accounts/AccountManagerFuture.md)\< [Bundle](../android/os/Bundle.md)!\>! | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#startAddAccountSession(kotlin.String,%20kotlin.String,%20kotlin.Array,%20android.os.Bundle,%20android.app.Activity,%20android.accounts.AccountManagerCallback,%20android.os.Handler)(accountType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, authTokenType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, requiredFeatures: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!, options: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!, activity: https://developer.android.com/reference/kotlin/android/app/Activity.html#!, callback: https://developer.android.com/reference/kotlin/android/accounts/AccountManagerCallback<https://developer.android.com/reference/kotlin/android/os/Bundle.html#!>!, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#!)` Asks the user to authenticate with an account of a specified type. |
-| open [AccountManagerFuture](../android/accounts/AccountManagerFuture.md)\< [Bundle](../android/os/Bundle.md)!\>! | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#startUpdateCredentialsSession(android.accounts.Account,%20kotlin.String,%20android.os.Bundle,%20android.app.Activity,%20android.accounts.AccountManagerCallback,%20android.os.Handler)(account: https://developer.android.com/reference/kotlin/android/accounts/Account!, authTokenType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, options: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!, activity: https://developer.android.com/reference/kotlin/android/app/Activity.html#!, callback: https://developer.android.com/reference/kotlin/android/accounts/AccountManagerCallback<https://developer.android.com/reference/kotlin/android/os/Bundle.html#!>!, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#!)` Asks the user to enter a new password for the account but not updating the saved credentials for the account until `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#finishSession(android.os.Bundle,%20android.app.Activity,%20android.accounts.AccountManagerCallback,%20android.os.Handler)` is called. |
-| open [AccountManagerFuture](../android/accounts/AccountManagerFuture.md)\< [Bundle](../android/os/Bundle.md)!\>! | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#updateCredentials(android.accounts.Account,%20kotlin.String,%20android.os.Bundle,%20android.app.Activity,%20android.accounts.AccountManagerCallback,%20android.os.Handler)(account: https://developer.android.com/reference/kotlin/android/accounts/Account!, authTokenType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, options: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!, activity: https://developer.android.com/reference/kotlin/android/app/Activity.html#!, callback: https://developer.android.com/reference/kotlin/android/accounts/AccountManagerCallback<https://developer.android.com/reference/kotlin/android/os/Bundle.html#!>!, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#!)` Asks the user to enter a new password for an account, updating the saved credentials for the account. |
+| open [AccountManagerFuture](AccountManagerFuture.md)\< [Bundle](../android.os/Bundle.md)!\>! | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#startAddAccountSession(kotlin.String,%20kotlin.String,%20kotlin.Array,%20android.os.Bundle,%20android.app.Activity,%20android.accounts.AccountManagerCallback,%20android.os.Handler)(accountType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, authTokenType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, requiredFeatures: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html<https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!>!, options: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!, activity: https://developer.android.com/reference/kotlin/android/app/Activity.html#!, callback: https://developer.android.com/reference/kotlin/android/accounts/AccountManagerCallback<https://developer.android.com/reference/kotlin/android/os/Bundle.html#!>!, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#!)` Asks the user to authenticate with an account of a specified type. |
+| open [AccountManagerFuture](AccountManagerFuture.md)\< [Bundle](../android.os/Bundle.md)!\>! | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#startUpdateCredentialsSession(android.accounts.Account,%20kotlin.String,%20android.os.Bundle,%20android.app.Activity,%20android.accounts.AccountManagerCallback,%20android.os.Handler)(account: https://developer.android.com/reference/kotlin/android/accounts/Account!, authTokenType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, options: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!, activity: https://developer.android.com/reference/kotlin/android/app/Activity.html#!, callback: https://developer.android.com/reference/kotlin/android/accounts/AccountManagerCallback<https://developer.android.com/reference/kotlin/android/os/Bundle.html#!>!, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#!)` Asks the user to enter a new password for the account but not updating the saved credentials for the account until `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#finishSession(android.os.Bundle,%20android.app.Activity,%20android.accounts.AccountManagerCallback,%20android.os.Handler)` is called. |
+| open [AccountManagerFuture](AccountManagerFuture.md)\< [Bundle](../android.os/Bundle.md)!\>! | `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#updateCredentials(android.accounts.Account,%20kotlin.String,%20android.os.Bundle,%20android.app.Activity,%20android.accounts.AccountManagerCallback,%20android.os.Handler)(account: https://developer.android.com/reference/kotlin/android/accounts/Account!, authTokenType: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, options: https://developer.android.com/reference/kotlin/android/os/Bundle.html#!, activity: https://developer.android.com/reference/kotlin/android/app/Activity.html#!, callback: https://developer.android.com/reference/kotlin/android/accounts/AccountManagerCallback<https://developer.android.com/reference/kotlin/android/os/Bundle.html#!>!, handler: https://developer.android.com/reference/kotlin/android/os/Handler.html#!)` Asks the user to enter a new password for an account, updating the saved credentials for the account. |
 | --- | --- |
 
 ## Constants
@@ -661,11 +661,11 @@ Requires android.Manifest.permission.MANAGE_ACCOUNTS
 | `authTokenType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The type of auth token (see #getAuthToken) this account will need to be able to generate, null for none |
 | `requiredFeatures` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!: The features (see `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#hasFeatures(android.accounts.Account,%20kotlin.Array,%20android.accounts.AccountManagerCallback,%20android.os.Handler)`) this account must have, null for none |
 | --- | --- |
-| `addAccountOptions` | [Bundle](../android/os/Bundle.md)!: Authenticator-specific options for the request, may be null or empty |
-| `activity` | [Activity](../android/app/Activity.md)!: The `https://developer.android.com/reference/kotlin/android/app/Activity.html#` context to use for launching a new authenticator-defined sub-Activity to prompt the user to create an account; used only to call startActivity(); if null, the prompt will not be launched directly, but the necessary `https://developer.android.com/reference/kotlin/android/content/Intent.html#` will be returned to the caller instead |
-| `callback` | [AccountManagerCallback](../android/accounts/AccountManagerCallback.md)\< [Bundle](../android/os/Bundle.md)!\>!: Callback to invoke when the request completes, null for no callback |
+| `addAccountOptions` | [Bundle](../android.os/Bundle.md)!: Authenticator-specific options for the request, may be null or empty |
+| `activity` | [Activity](../android.app/Activity.md)!: The `https://developer.android.com/reference/kotlin/android/app/Activity.html#` context to use for launching a new authenticator-defined sub-Activity to prompt the user to create an account; used only to call startActivity(); if null, the prompt will not be launched directly, but the necessary `https://developer.android.com/reference/kotlin/android/content/Intent.html#` will be returned to the caller instead |
+| `callback` | [AccountManagerCallback](AccountManagerCallback.md)\< [Bundle](../android.os/Bundle.md)!\>!: Callback to invoke when the request completes, null for no callback |
 | --- | --- |
-| `handler` | [Handler](../android/os/Handler.md)!: `https://developer.android.com/reference/kotlin/android/os/Handler.html#` identifying the callback thread, null for the main thread |
+| `handler` | [Handler](../android.os/Handler.md)!: `https://developer.android.com/reference/kotlin/android/os/Handler.html#` identifying the callback thread, null for the main thread |
 
 | Return ||
 |---|---|
@@ -696,9 +696,9 @@ Requires android.Manifest.permission.AUTHENTICATE_ACCOUNTS
 
 | Parameters ||
 |---|---|
-| `account` | [Account](../android/accounts/Account.md)!: The `https://developer.android.com/reference/kotlin/android/accounts/Account` to add |
+| `account` | [Account](Account.md)!: The `https://developer.android.com/reference/kotlin/android/accounts/Account` to add |
 | `password` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The password to associate with the account, null for none |
-| `userdata` | [Bundle](../android/os/Bundle.md)!: String values to use for the account's userdata, null for none |
+| `userdata` | [Bundle](../android.os/Bundle.md)!: String values to use for the account's userdata, null for none |
 | --- | --- |
 
 | Return ||
@@ -730,9 +730,9 @@ This method requires the caller to have a signature match with the authenticator
 
 | Parameters ||
 |---|---|
-| `account` | [Account](../android/accounts/Account.md)!: The `https://developer.android.com/reference/kotlin/android/accounts/Account` to add |
+| `account` | [Account](Account.md)!: The `https://developer.android.com/reference/kotlin/android/accounts/Account` to add |
 | `password` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The password to associate with the account, null for none |
-| `extras` | [Bundle](../android/os/Bundle.md)!: String values to use for the account's userdata, null for none |
+| `extras` | [Bundle](../android.os/Bundle.md)!: String values to use for the account's userdata, null for none |
 | --- | --- |
 | `visibility` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>!: Map from packageName to visibility values which will be set before account is added. See `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#getAccountVisibility(android.accounts.Account,%20kotlin.String)` for possible values. Declaring [package visibility](../training/basics/intents/package-visibility.md) needs for package names in the map is needed, if the caller is targeting API level 34 and above. |
 
@@ -779,8 +779,8 @@ It is safe to call this method from the main thread.
 
 | Parameters ||
 |---|---|
-| `listener` | [OnAccountsUpdateListener](../android/accounts/OnAccountsUpdateListener.md)!: The listener to send notifications to |
-| `handler` | [Handler](../android/os/Handler.md)!: `https://developer.android.com/reference/kotlin/android/os/Handler.html#` identifying the thread to use for notifications, null for the main thread |
+| `listener` | [OnAccountsUpdateListener](OnAccountsUpdateListener.md)!: The listener to send notifications to |
+| `handler` | [Handler](../android.os/Handler.md)!: `https://developer.android.com/reference/kotlin/android/os/Handler.html#` identifying the thread to use for notifications, null for the main thread |
 | `updateImmediately` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): If true, the listener will be invoked (on the handler thread) right away with the current account list |
 | --- | --- |
 | `accountTypes` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!: If set, only changes to accounts of given types will be reported. |
@@ -811,7 +811,7 @@ Requires android.Manifest.permission.USE_CREDENTIALS
 
 | Parameters ||
 |---|---|
-| `account` | [Account](../android/accounts/Account.md)!: The account to fetch an auth token for |
+| `account` | [Account](Account.md)!: The account to fetch an auth token for |
 | `authTokenType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The auth token type, see #getAuthToken |
 | `notifyAuthFailure` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): If true, display a notification and return null if authentication fails; if false, prompt and wait for the user to re-enter correct credentials before returning |
 | --- | --- |
@@ -846,7 +846,7 @@ Requires android.Manifest.permission.MANAGE_ACCOUNTS
 
 | Parameters ||
 |---|---|
-| `account` | [Account](../android/accounts/Account.md)!: The account whose password to clear |
+| `account` | [Account](Account.md)!: The account whose password to clear |
 
 ### confirmCredentials
 
@@ -873,12 +873,12 @@ Requires android.Manifest.permission.MANAGE_ACCOUNTS
 
 | Parameters ||
 |---|---|
-| `account` | [Account](../android/accounts/Account.md)!: The account to confirm password knowledge for |
-| `options` | [Bundle](../android/os/Bundle.md)!: Authenticator-specific options for the request; if the `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#KEY_PASSWORD:kotlin.String` string field is present, the authenticator may use it directly rather than prompting the user; may be null or empty |
-| `activity` | [Activity](../android/app/Activity.md)!: The `https://developer.android.com/reference/kotlin/android/app/Activity.html#` context to use for launching a new authenticator-defined sub-Activity to prompt the user to enter a password; used only to call startActivity(); if null, the prompt will not be launched directly, but the necessary `https://developer.android.com/reference/kotlin/android/content/Intent.html#` will be returned to the caller instead |
+| `account` | [Account](Account.md)!: The account to confirm password knowledge for |
+| `options` | [Bundle](../android.os/Bundle.md)!: Authenticator-specific options for the request; if the `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#KEY_PASSWORD:kotlin.String` string field is present, the authenticator may use it directly rather than prompting the user; may be null or empty |
+| `activity` | [Activity](../android.app/Activity.md)!: The `https://developer.android.com/reference/kotlin/android/app/Activity.html#` context to use for launching a new authenticator-defined sub-Activity to prompt the user to enter a password; used only to call startActivity(); if null, the prompt will not be launched directly, but the necessary `https://developer.android.com/reference/kotlin/android/content/Intent.html#` will be returned to the caller instead |
 | --- | --- |
-| `callback` | [AccountManagerCallback](../android/accounts/AccountManagerCallback.md)\< [Bundle](../android/os/Bundle.md)!\>!: Callback to invoke when the request completes, null for no callback |
-| `handler` | [Handler](../android/os/Handler.md)!: `https://developer.android.com/reference/kotlin/android/os/Handler.html#` identifying the callback thread, null for the main thread |
+| `callback` | [AccountManagerCallback](AccountManagerCallback.md)\< [Bundle](../android.os/Bundle.md)!\>!: Callback to invoke when the request completes, null for no callback |
+| `handler` | [Handler](../android.os/Handler.md)!: `https://developer.android.com/reference/kotlin/android/os/Handler.html#` identifying the callback thread, null for the main thread |
 
 | Return ||
 |---|---|
@@ -909,10 +909,10 @@ Requires android.Manifest.permission.MANAGE_ACCOUNTS
 | Parameters ||
 |---|---|
 | `accountType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The account type associated with the authenticator to adjust |
-| `activity` | [Activity](../android/app/Activity.md)!: The `https://developer.android.com/reference/kotlin/android/app/Activity.html#` context to use for launching a new authenticator-defined sub-Activity to adjust authenticator settings; used only to call startActivity(); if null, the settings dialog will not be launched directly, but the necessary `https://developer.android.com/reference/kotlin/android/content/Intent.html#` will be returned to the caller instead |
-| `callback` | [AccountManagerCallback](../android/accounts/AccountManagerCallback.md)\< [Bundle](../android/os/Bundle.md)!\>!: Callback to invoke when the request completes, null for no callback |
+| `activity` | [Activity](../android.app/Activity.md)!: The `https://developer.android.com/reference/kotlin/android/app/Activity.html#` context to use for launching a new authenticator-defined sub-Activity to adjust authenticator settings; used only to call startActivity(); if null, the settings dialog will not be launched directly, but the necessary `https://developer.android.com/reference/kotlin/android/content/Intent.html#` will be returned to the caller instead |
+| `callback` | [AccountManagerCallback](AccountManagerCallback.md)\< [Bundle](../android.os/Bundle.md)!\>!: Callback to invoke when the request completes, null for no callback |
 | --- | --- |
-| `handler` | [Handler](../android/os/Handler.md)!: `https://developer.android.com/reference/kotlin/android/os/Handler.html#` identifying the callback thread, null for the main thread |
+| `handler` | [Handler](../android.os/Handler.md)!: `https://developer.android.com/reference/kotlin/android/os/Handler.html#` identifying the callback thread, null for the main thread |
 
 | Return ||
 |---|---|
@@ -937,11 +937,11 @@ This method may be called from any thread, but the returned `https://developer.a
 
 | Parameters ||
 |---|---|
-| `sessionBundle` | [Bundle](../android/os/Bundle.md)!: a `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` created by `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#startAddAccountSession(kotlin.String,%20kotlin.String,%20kotlin.Array,%20android.os.Bundle,%20android.app.Activity,%20android.accounts.AccountManagerCallback,%20android.os.Handler)` or `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#startUpdateCredentialsSession(android.accounts.Account,%20kotlin.String,%20android.os.Bundle,%20android.app.Activity,%20android.accounts.AccountManagerCallback,%20android.os.Handler)` |
-| `activity` | [Activity](../android/app/Activity.md)!: The `https://developer.android.com/reference/kotlin/android/app/Activity.html#` context to use for launching a new authenticator-defined sub-Activity to prompt the user to create an account or reauthenticate existing account; used only to call startActivity(); if null, the prompt will not be launched directly, but the necessary `https://developer.android.com/reference/kotlin/android/content/Intent.html#` will be returned to the caller instead |
-| `callback` | [AccountManagerCallback](../android/accounts/AccountManagerCallback.md)\< [Bundle](../android/os/Bundle.md)!\>!: Callback to invoke when the request completes, null for no callback |
+| `sessionBundle` | [Bundle](../android.os/Bundle.md)!: a `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` created by `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#startAddAccountSession(kotlin.String,%20kotlin.String,%20kotlin.Array,%20android.os.Bundle,%20android.app.Activity,%20android.accounts.AccountManagerCallback,%20android.os.Handler)` or `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#startUpdateCredentialsSession(android.accounts.Account,%20kotlin.String,%20android.os.Bundle,%20android.app.Activity,%20android.accounts.AccountManagerCallback,%20android.os.Handler)` |
+| `activity` | [Activity](../android.app/Activity.md)!: The `https://developer.android.com/reference/kotlin/android/app/Activity.html#` context to use for launching a new authenticator-defined sub-Activity to prompt the user to create an account or reauthenticate existing account; used only to call startActivity(); if null, the prompt will not be launched directly, but the necessary `https://developer.android.com/reference/kotlin/android/content/Intent.html#` will be returned to the caller instead |
+| `callback` | [AccountManagerCallback](AccountManagerCallback.md)\< [Bundle](../android.os/Bundle.md)!\>!: Callback to invoke when the request completes, null for no callback |
 | --- | --- |
-| `handler` | [Handler](../android/os/Handler.md)!: `https://developer.android.com/reference/kotlin/android/os/Handler.html#` identifying the callback thread, null for the main thread |
+| `handler` | [Handler](../android.os/Handler.md)!: `https://developer.android.com/reference/kotlin/android/os/Handler.html#` identifying the callback thread, null for the main thread |
 
 | Return ||
 |---|---|
@@ -967,7 +967,7 @@ No permission is required to call this method.
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md)!: The `https://developer.android.com/reference/kotlin/android/content/Context.html#` to use when necessary |
+| `context` | [Context](../android.content/Context.md)!: The `https://developer.android.com/reference/kotlin/android/content/Context.html#` to use when necessary |
 
 | Return ||
 |---|---|
@@ -997,7 +997,7 @@ This method requires the caller to have a signature match with the authenticator
 
 | Parameters ||
 |---|---|
-| `account` | [Account](../android/accounts/Account.md)!: `https://developer.android.com/reference/kotlin/android/accounts/Account` to get visibility |
+| `account` | [Account](Account.md)!: `https://developer.android.com/reference/kotlin/android/accounts/Account` to get visibility |
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: Package name of the application to get account visibility |
 
 | Return ||
@@ -1121,9 +1121,9 @@ Caller targeting API level below `https://developer.android.com/reference/kotlin
 |---|---|
 | `type` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The type of accounts to return, must not be null |
 | `features` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!: An array of the account features to require, may be null or empty \* |
-| `callback` | [AccountManagerCallback](../android/accounts/AccountManagerCallback.md)\< [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Account](../android/accounts/Account.md)!\>!\>!: Callback to invoke when the request completes, null for no callback |
+| `callback` | [AccountManagerCallback](AccountManagerCallback.md)\< [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Account](Account.md)!\>!\>!: Callback to invoke when the request completes, null for no callback |
 | --- | --- |
-| `handler` | [Handler](../android/os/Handler.md)!: `https://developer.android.com/reference/kotlin/android/os/Handler.html#` identifying the callback thread, null for the main thread |
+| `handler` | [Handler](../android.os/Handler.md)!: `https://developer.android.com/reference/kotlin/android/os/Handler.html#` identifying the callback thread, null for the main thread |
 
 | Return ||
 |---|---|
@@ -1179,13 +1179,13 @@ Requires android.Manifest.permission.USE_CREDENTIALS
 
 | Parameters ||
 |---|---|
-| `account` | [Account](../android/accounts/Account.md)!: The account to fetch an auth token for |
+| `account` | [Account](Account.md)!: The account to fetch an auth token for |
 | `authTokenType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The auth token type, an authenticator-dependent string token, must not be null |
-| `options` | [Bundle](../android/os/Bundle.md)!: Authenticator-specific options for the request, may be null or empty |
+| `options` | [Bundle](../android.os/Bundle.md)!: Authenticator-specific options for the request, may be null or empty |
 | --- | --- |
-| `activity` | [Activity](../android/app/Activity.md)!: The `https://developer.android.com/reference/kotlin/android/app/Activity.html#` context to use for launching a new authenticator-defined sub-Activity to prompt the user for a password if necessary; used only to call startActivity(); must not be null. |
-| `callback` | [AccountManagerCallback](../android/accounts/AccountManagerCallback.md)\< [Bundle](../android/os/Bundle.md)!\>!: Callback to invoke when the request completes, null for no callback |
-| `handler` | [Handler](../android/os/Handler.md)!: `https://developer.android.com/reference/kotlin/android/os/Handler.html#` identifying the callback thread, null for the main thread |
+| `activity` | [Activity](../android.app/Activity.md)!: The `https://developer.android.com/reference/kotlin/android/app/Activity.html#` context to use for launching a new authenticator-defined sub-Activity to prompt the user for a password if necessary; used only to call startActivity(); must not be null. |
+| `callback` | [AccountManagerCallback](AccountManagerCallback.md)\< [Bundle](../android.os/Bundle.md)!\>!: Callback to invoke when the request completes, null for no callback |
+| `handler` | [Handler](../android.os/Handler.md)!: `https://developer.android.com/reference/kotlin/android/os/Handler.html#` identifying the callback thread, null for the main thread |
 | --- | --- |
 
 | Return ||
@@ -1224,13 +1224,13 @@ Requires android.Manifest.permission.USE_CREDENTIALS
 
 | Parameters ||
 |---|---|
-| `account` | [Account](../android/accounts/Account.md)!: The account to fetch an auth token for |
+| `account` | [Account](Account.md)!: The account to fetch an auth token for |
 | `authTokenType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The auth token type, an authenticator-dependent string token, must not be null |
-| `options` | [Bundle](../android/os/Bundle.md)!: Authenticator-specific options for the request, may be null or empty |
+| `options` | [Bundle](../android.os/Bundle.md)!: Authenticator-specific options for the request, may be null or empty |
 | --- | --- |
 | `notifyAuthFailure` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): True to add a notification to prompt the user for a password if necessary, false to leave that to the caller |
-| `callback` | [AccountManagerCallback](../android/accounts/AccountManagerCallback.md)\< [Bundle](../android/os/Bundle.md)!\>!: Callback to invoke when the request completes, null for no callback |
-| `handler` | [Handler](../android/os/Handler.md)!: `https://developer.android.com/reference/kotlin/android/os/Handler.html#` identifying the callback thread, null for the main thread |
+| `callback` | [AccountManagerCallback](AccountManagerCallback.md)\< [Bundle](../android.os/Bundle.md)!\>!: Callback to invoke when the request completes, null for no callback |
+| `handler` | [Handler](../android.os/Handler.md)!: `https://developer.android.com/reference/kotlin/android/os/Handler.html#` identifying the callback thread, null for the main thread |
 | --- | --- |
 
 | Return ||
@@ -1269,12 +1269,12 @@ Requires android.Manifest.permission.USE_CREDENTIALS
 
 | Parameters ||
 |---|---|
-| `account` | [Account](../android/accounts/Account.md)!: The account to fetch an auth token for |
+| `account` | [Account](Account.md)!: The account to fetch an auth token for |
 | `authTokenType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The auth token type, an authenticator-dependent string token, must not be null |
 | `notifyAuthFailure` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): True to add a notification to prompt the user for a password if necessary, false to leave that to the caller |
 | --- | --- |
-| `callback` | [AccountManagerCallback](../android/accounts/AccountManagerCallback.md)\< [Bundle](../android/os/Bundle.md)!\>!: Callback to invoke when the request completes, null for no callback |
-| `handler` | [Handler](../android/os/Handler.md)!: `https://developer.android.com/reference/kotlin/android/os/Handler.html#` identifying the callback thread, null for the main thread |
+| `callback` | [AccountManagerCallback](AccountManagerCallback.md)\< [Bundle](../android.os/Bundle.md)!\>!: Callback to invoke when the request completes, null for no callback |
+| `handler` | [Handler](../android.os/Handler.md)!: `https://developer.android.com/reference/kotlin/android/os/Handler.html#` identifying the callback thread, null for the main thread |
 
 | Return ||
 |---|---|
@@ -1312,12 +1312,12 @@ Requires android.Manifest.permission.MANAGE_ACCOUNTS
 | `authTokenType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The desired auth token type (see #getAuthToken), must not be null |
 | `features` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!: Required features for the account (see `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#getAccountsByTypeAndFeatures(kotlin.String,%20kotlin.Array,%20android.accounts.AccountManagerCallback,%20android.os.Handler)`), may be null or empty |
 | --- | --- |
-| `activity` | [Activity](../android/app/Activity.md)!: The `https://developer.android.com/reference/kotlin/android/app/Activity.html#` context to use for launching new sub-Activities to prompt to add an account, select an account, and/or enter a password, as necessary; used only to call startActivity(); should not be null |
-| `addAccountOptions` | [Bundle](../android/os/Bundle.md)!: Authenticator-specific options to use for adding new accounts; may be null or empty |
-| `getAuthTokenOptions` | [Bundle](../android/os/Bundle.md)!: Authenticator-specific options to use for getting auth tokens; may be null or empty |
+| `activity` | [Activity](../android.app/Activity.md)!: The `https://developer.android.com/reference/kotlin/android/app/Activity.html#` context to use for launching new sub-Activities to prompt to add an account, select an account, and/or enter a password, as necessary; used only to call startActivity(); should not be null |
+| `addAccountOptions` | [Bundle](../android.os/Bundle.md)!: Authenticator-specific options to use for adding new accounts; may be null or empty |
+| `getAuthTokenOptions` | [Bundle](../android.os/Bundle.md)!: Authenticator-specific options to use for getting auth tokens; may be null or empty |
 | --- | --- |
-| `callback` | [AccountManagerCallback](../android/accounts/AccountManagerCallback.md)\< [Bundle](../android/os/Bundle.md)!\>!: Callback to invoke when the request completes, null for no callback |
-| `handler` | [Handler](../android/os/Handler.md)!: `https://developer.android.com/reference/kotlin/android/os/Handler.html#` identifying the callback thread, null for the main thread |
+| `callback` | [AccountManagerCallback](AccountManagerCallback.md)\< [Bundle](../android.os/Bundle.md)!\>!: Callback to invoke when the request completes, null for no callback |
+| `handler` | [Handler](../android.os/Handler.md)!: `https://developer.android.com/reference/kotlin/android/os/Handler.html#` identifying the callback thread, null for the main thread |
 
 | Return ||
 |---|---|
@@ -1357,7 +1357,7 @@ This method requires the caller to have a signature match with the authenticator
 
 | Parameters ||
 |---|---|
-| `account` | [Account](../android/accounts/Account.md)!: The account for which visibility data should be returned |
+| `account` | [Account](Account.md)!: The account for which visibility data should be returned |
 
 | Return ||
 |---|---|
@@ -1382,7 +1382,7 @@ Requires android.Manifest.permission.AUTHENTICATE_ACCOUNTS
 
 | Parameters ||
 |---|---|
-| `account` | [Account](../android/accounts/Account.md)!: The account to query for a password. Must not be `null`. |
+| `account` | [Account](Account.md)!: The account to query for a password. Must not be `null`. |
 
 | Return ||
 |---|---|
@@ -1402,7 +1402,7 @@ It is safe to call this method from the main thread.
 
 | Parameters ||
 |---|---|
-| `account` | [Account](../android/accounts/Account.md)!: The account to query for a previous name. |
+| `account` | [Account](Account.md)!: The account to query for a previous name. |
 
 | Return ||
 |---|---|
@@ -1430,7 +1430,7 @@ Requires android.Manifest.permission.AUTHENTICATE_ACCOUNTS
 
 | Parameters ||
 |---|---|
-| `account` | [Account](../android/accounts/Account.md)!: The account to query for user data |
+| `account` | [Account](Account.md)!: The account to query for user data |
 
 | Return ||
 |---|---|
@@ -1457,11 +1457,11 @@ If caller target API level is below `https://developer.android.com/reference/kot
 
 | Parameters ||
 |---|---|
-| `account` | [Account](../android/accounts/Account.md)!: The `https://developer.android.com/reference/kotlin/android/accounts/Account` to test |
+| `account` | [Account](Account.md)!: The `https://developer.android.com/reference/kotlin/android/accounts/Account` to test |
 | `features` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!: An array of the account features to check |
-| `callback` | [AccountManagerCallback](../android/accounts/AccountManagerCallback.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>!: Callback to invoke when the request completes, null for no callback |
+| `callback` | [AccountManagerCallback](AccountManagerCallback.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>!: Callback to invoke when the request completes, null for no callback |
 | --- | --- |
-| `handler` | [Handler](../android/os/Handler.md)!: `https://developer.android.com/reference/kotlin/android/os/Handler.html#` identifying the callback thread, null for the main thread |
+| `handler` | [Handler](../android.os/Handler.md)!: `https://developer.android.com/reference/kotlin/android/os/Handler.html#` identifying the callback thread, null for the main thread |
 
 | Return ||
 |---|---|
@@ -1509,11 +1509,11 @@ This method may be called from any thread, but the returned `https://developer.a
 
 | Parameters ||
 |---|---|
-| `account` | [Account](../android/accounts/Account.md)!: The `https://developer.android.com/reference/kotlin/android/accounts/Account` to be checked whether `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#updateCredentials(android.accounts.Account,%20kotlin.String,%20android.os.Bundle,%20android.app.Activity,%20android.accounts.AccountManagerCallback,%20android.os.Handler)` or `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#startUpdateCredentialsSession(android.accounts.Account,%20kotlin.String,%20android.os.Bundle,%20android.app.Activity,%20android.accounts.AccountManagerCallback,%20android.os.Handler)` should be called |
+| `account` | [Account](Account.md)!: The `https://developer.android.com/reference/kotlin/android/accounts/Account` to be checked whether `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#updateCredentials(android.accounts.Account,%20kotlin.String,%20android.os.Bundle,%20android.app.Activity,%20android.accounts.AccountManagerCallback,%20android.os.Handler)` or `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#startUpdateCredentialsSession(android.accounts.Account,%20kotlin.String,%20android.os.Bundle,%20android.app.Activity,%20android.accounts.AccountManagerCallback,%20android.os.Handler)` should be called |
 | `statusToken` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: a String of token to check account staus |
-| `callback` | [AccountManagerCallback](../android/accounts/AccountManagerCallback.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>!: Callback to invoke when the request completes, null for no callback |
+| `callback` | [AccountManagerCallback](AccountManagerCallback.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>!: Callback to invoke when the request completes, null for no callback |
 | --- | --- |
-| `handler` | [Handler](../android/os/Handler.md)!: `https://developer.android.com/reference/kotlin/android/os/Handler.html#` identifying the callback thread, null for the main thread |
+| `handler` | [Handler](../android.os/Handler.md)!: `https://developer.android.com/reference/kotlin/android/os/Handler.html#` identifying the callback thread, null for the main thread |
 
 | Return ||
 |---|---|
@@ -1552,8 +1552,8 @@ newChooseAccountIntent(null, null, new String[]{"com.google"}, false, null,
 
 | Parameters ||
 |---|---|
-| `selectedAccount` | [Account](../android/accounts/Account.md)!: if specified, indicates that the `https://developer.android.com/reference/kotlin/android/accounts/Account` is the currently selected one, according to the caller's definition of selected. |
-| `allowableAccounts` | [ArrayList](../java/util/ArrayList.md)\< [Account](../android/accounts/Account.md)!\>!: an optional `https://developer.android.com/reference/kotlin/java/util/List.html#` of accounts that are allowed to be shown. If not specified then this field will not limit the displayed accounts. |
+| `selectedAccount` | [Account](Account.md)!: if specified, indicates that the `https://developer.android.com/reference/kotlin/android/accounts/Account` is the currently selected one, according to the caller's definition of selected. |
+| `allowableAccounts` | [ArrayList](../java.util/ArrayList.md)\< [Account](Account.md)!\>!: an optional `https://developer.android.com/reference/kotlin/java/util/List.html#` of accounts that are allowed to be shown. If not specified then this field will not limit the displayed accounts. |
 | `allowableAccountTypes` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!: an optional string array of account types. These are used both to filter the shown accounts and to filter the list of account types that are shown when adding an account. If not specified then this field will not limit the displayed account types when adding an account. |
 | --- | --- |
 | `alwaysPromptForAccount` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): boolean that is ignored. |
@@ -1561,7 +1561,7 @@ newChooseAccountIntent(null, null, new String[]{"com.google"}, false, null,
 | `addAccountAuthTokenType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: this string is passed as the `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#addAccount(kotlin.String,%20kotlin.String,%20kotlin.Array,%20android.os.Bundle,%20android.app.Activity,%20android.accounts.AccountManagerCallback,%20android.os.Handler)` authTokenType parameter |
 | --- | --- |
 | `addAccountRequiredFeatures` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!: this string array is passed as the `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#addAccount(kotlin.String,%20kotlin.String,%20kotlin.Array,%20android.os.Bundle,%20android.app.Activity,%20android.accounts.AccountManagerCallback,%20android.os.Handler)` requiredFeatures parameter |
-| `addAccountOptions` | [Bundle](../android/os/Bundle.md)!: This `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` is passed as the `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#addAccount(kotlin.String,%20kotlin.String,%20kotlin.Array,%20android.os.Bundle,%20android.app.Activity,%20android.accounts.AccountManagerCallback,%20android.os.Handler)` options parameter |
+| `addAccountOptions` | [Bundle](../android.os/Bundle.md)!: This `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` is passed as the `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#addAccount(kotlin.String,%20kotlin.String,%20kotlin.Array,%20android.os.Bundle,%20android.app.Activity,%20android.accounts.AccountManagerCallback,%20android.os.Handler)` options parameter |
 
 | Return ||
 |---|---|
@@ -1596,15 +1596,15 @@ newChooseAccountIntent(null, null, new String[]{"com.google"}, null, null, null,
 
 | Parameters ||
 |---|---|
-| `selectedAccount` | [Account](../android/accounts/Account.md)!: if specified, indicates that the `https://developer.android.com/reference/kotlin/android/accounts/Account` is the currently selected one, according to the caller's definition of selected. |
-| `allowableAccounts` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Account](../android/accounts/Account.md)!\>!: an optional `https://developer.android.com/reference/kotlin/java/util/List.html#` of accounts that are allowed to be shown. If not specified then this field will not limit the displayed accounts. |
+| `selectedAccount` | [Account](Account.md)!: if specified, indicates that the `https://developer.android.com/reference/kotlin/android/accounts/Account` is the currently selected one, according to the caller's definition of selected. |
+| `allowableAccounts` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Account](Account.md)!\>!: an optional `https://developer.android.com/reference/kotlin/java/util/List.html#` of accounts that are allowed to be shown. If not specified then this field will not limit the displayed accounts. |
 | `allowableAccountTypes` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!: an optional string array of account types. These are used both to filter the shown accounts and to filter the list of account types that are shown when adding an account. If not specified then this field will not limit the displayed account types when adding an account. |
 | --- | --- |
 | `descriptionOverrideText` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: if non-null this string is used as the description in the accounts chooser screen rather than the default |
 | `addAccountAuthTokenType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: this string is passed as the `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#addAccount(kotlin.String,%20kotlin.String,%20kotlin.Array,%20android.os.Bundle,%20android.app.Activity,%20android.accounts.AccountManagerCallback,%20android.os.Handler)` authTokenType parameter |
 | `addAccountRequiredFeatures` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!: this string array is passed as the `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#addAccount(kotlin.String,%20kotlin.String,%20kotlin.Array,%20android.os.Bundle,%20android.app.Activity,%20android.accounts.AccountManagerCallback,%20android.os.Handler)` requiredFeatures parameter |
 | --- | --- |
-| `addAccountOptions` | [Bundle](../android/os/Bundle.md)!: This `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` is passed as the `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#addAccount(kotlin.String,%20kotlin.String,%20kotlin.Array,%20android.os.Bundle,%20android.app.Activity,%20android.accounts.AccountManagerCallback,%20android.os.Handler)` options parameter |
+| `addAccountOptions` | [Bundle](../android.os/Bundle.md)!: This `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` is passed as the `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#addAccount(kotlin.String,%20kotlin.String,%20kotlin.Array,%20android.os.Bundle,%20android.app.Activity,%20android.accounts.AccountManagerCallback,%20android.os.Handler)` options parameter |
 
 | Return ||
 |---|---|
@@ -1627,7 +1627,7 @@ Requires android.Manifest.permission.AUTHENTICATE_ACCOUNTS
 
 | Parameters ||
 |---|---|
-| `account` | [Account](../android/accounts/Account.md)!: The `https://developer.android.com/reference/kotlin/android/accounts/Account` to be updated. |
+| `account` | [Account](Account.md)!: The `https://developer.android.com/reference/kotlin/android/accounts/Account` to be updated. |
 
 | Return ||
 |---|---|
@@ -1655,7 +1655,7 @@ Requires android.Manifest.permission.AUTHENTICATE_ACCOUNTS
 
 | Parameters ||
 |---|---|
-| `account` | [Account](../android/accounts/Account.md)!: The account for which an auth token is to be fetched. Cannot be `null`. |
+| `account` | [Account](Account.md)!: The account for which an auth token is to be fetched. Cannot be `null`. |
 | `authTokenType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The type of auth token to fetch. Cannot be `null`. |
 
 | Return ||
@@ -1688,9 +1688,9 @@ Requires android.Manifest.permission.MANAGE_ACCOUNTS
 
 | Parameters ||
 |---|---|
-| `account` | [Account](../android/accounts/Account.md)!: The `https://developer.android.com/reference/kotlin/android/accounts/Account` to remove |
-| `callback` | [AccountManagerCallback](../android/accounts/AccountManagerCallback.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>!: Callback to invoke when the request completes, null for no callback |
-| `handler` | [Handler](../android/os/Handler.md)!: `https://developer.android.com/reference/kotlin/android/os/Handler.html#` identifying the callback thread, null for the main thread |
+| `account` | [Account](Account.md)!: The `https://developer.android.com/reference/kotlin/android/accounts/Account` to remove |
+| `callback` | [AccountManagerCallback](AccountManagerCallback.md)\< [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)!\>!: Callback to invoke when the request completes, null for no callback |
+| `handler` | [Handler](../android.os/Handler.md)!: `https://developer.android.com/reference/kotlin/android/os/Handler.html#` identifying the callback thread, null for the main thread |
 | --- | --- |
 
 | Return ||
@@ -1720,11 +1720,11 @@ This method requires the caller to have a signature match with the authenticator
 
 | Parameters ||
 |---|---|
-| `account` | [Account](../android/accounts/Account.md)!: The `https://developer.android.com/reference/kotlin/android/accounts/Account` to remove |
-| `activity` | [Activity](../android/app/Activity.md)!: The `https://developer.android.com/reference/kotlin/android/app/Activity.html#` context to use for launching a new authenticator-defined sub-Activity to prompt the user to delete an account; used only to call startActivity(); if null, the prompt will not be launched directly, but the `https://developer.android.com/reference/kotlin/android/content/Intent.html#` may be returned to the caller instead |
-| `callback` | [AccountManagerCallback](../android/accounts/AccountManagerCallback.md)\< [Bundle](../android/os/Bundle.md)!\>!: Callback to invoke when the request completes, null for no callback |
+| `account` | [Account](Account.md)!: The `https://developer.android.com/reference/kotlin/android/accounts/Account` to remove |
+| `activity` | [Activity](../android.app/Activity.md)!: The `https://developer.android.com/reference/kotlin/android/app/Activity.html#` context to use for launching a new authenticator-defined sub-Activity to prompt the user to delete an account; used only to call startActivity(); if null, the prompt will not be launched directly, but the `https://developer.android.com/reference/kotlin/android/content/Intent.html#` may be returned to the caller instead |
+| `callback` | [AccountManagerCallback](AccountManagerCallback.md)\< [Bundle](../android.os/Bundle.md)!\>!: Callback to invoke when the request completes, null for no callback |
 | --- | --- |
-| `handler` | [Handler](../android/os/Handler.md)!: `https://developer.android.com/reference/kotlin/android/os/Handler.html#` identifying the callback thread, null for the main thread |
+| `handler` | [Handler](../android.os/Handler.md)!: `https://developer.android.com/reference/kotlin/android/os/Handler.html#` identifying the callback thread, null for the main thread |
 
 | Return ||
 |---|---|
@@ -1749,7 +1749,7 @@ Requires android.Manifest.permission.AUTHENTICATE_ACCOUNTS
 
 | Parameters ||
 |---|---|
-| `account` | [Account](../android/accounts/Account.md)!: The `https://developer.android.com/reference/kotlin/android/accounts/Account` to delete. |
+| `account` | [Account](Account.md)!: The `https://developer.android.com/reference/kotlin/android/accounts/Account` to delete. |
 
 | Return ||
 |---|---|
@@ -1771,7 +1771,7 @@ No permission is required to call this method.
 
 | Parameters ||
 |---|---|
-| `listener` | [OnAccountsUpdateListener](../android/accounts/OnAccountsUpdateListener.md)!: The previously added listener to remove |
+| `listener` | [OnAccountsUpdateListener](OnAccountsUpdateListener.md)!: The previously added listener to remove |
 
 | Exceptions ||
 |---|---|
@@ -1802,11 +1802,11 @@ Requires android.Manifest.permission.AUTHENTICATE_ACCOUNTS
 
 | Parameters ||
 |---|---|
-| `account` | [Account](../android/accounts/Account.md)!: The `https://developer.android.com/reference/kotlin/android/accounts/Account` to rename |
+| `account` | [Account](Account.md)!: The `https://developer.android.com/reference/kotlin/android/accounts/Account` to rename |
 | `newName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: String name to be associated with the account. |
-| `callback` | [AccountManagerCallback](../android/accounts/AccountManagerCallback.md)\< [Account](../android/accounts/Account.md)!\>!: Callback to invoke when the request completes, null for no callback |
+| `callback` | [AccountManagerCallback](AccountManagerCallback.md)\< [Account](Account.md)!\>!: Callback to invoke when the request completes, null for no callback |
 | --- | --- |
-| `handler` | [Handler](../android/os/Handler.md)!: `https://developer.android.com/reference/kotlin/android/os/Handler.html#` identifying the callback thread, null for the main thread |
+| `handler` | [Handler](../android.os/Handler.md)!: `https://developer.android.com/reference/kotlin/android/os/Handler.html#` identifying the callback thread, null for the main thread |
 
 | Return ||
 |---|---|
@@ -1838,7 +1838,7 @@ This method requires the caller to have a signature match with the authenticator
 
 | Parameters ||
 |---|---|
-| `account` | [Account](../android/accounts/Account.md)!: `https://developer.android.com/reference/kotlin/android/accounts/Account` to update visibility |
+| `account` | [Account](Account.md)!: `https://developer.android.com/reference/kotlin/android/accounts/Account` to update visibility |
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: Package name of the application to modify account visibility. Declaring [package visibility](../training/basics/intents/package-visibility.md) needs for it is needed, if the caller is targeting API level 34 and above. |
 | `visibility` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): New visibility value. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#VISIBILITY_UNDEFINED:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#VISIBILITY_VISIBLE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#VISIBILITY_USER_MANAGED_VISIBLE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#VISIBILITY_NOT_VISIBLE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#VISIBILITY_USER_MANAGED_NOT_VISIBLE:kotlin.Int` |
 | --- | --- |
@@ -1870,7 +1870,7 @@ Requires android.Manifest.permission.AUTHENTICATE_ACCOUNTS
 
 | Parameters ||
 |---|---|
-| `account` | [Account](../android/accounts/Account.md)!: The account to set an auth token for |
+| `account` | [Account](Account.md)!: The account to set an auth token for |
 | `authTokenType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The type of the auth token, see {#getAuthToken} |
 | `authToken` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The auth token to add to the cache |
 | --- | --- |
@@ -1899,7 +1899,7 @@ Requires android.Manifest.permission.AUTHENTICATE_ACCOUNTS
 
 | Parameters ||
 |---|---|
-| `account` | [Account](../android/accounts/Account.md)!: The account whose password is to be set. Cannot be `null`. |
+| `account` | [Account](Account.md)!: The account whose password is to be set. Cannot be `null`. |
 | `password` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The password to set, null to clear the password |
 
 ### setUserData
@@ -1925,7 +1925,7 @@ Requires android.Manifest.permission.AUTHENTICATE_ACCOUNTS
 
 | Parameters ||
 |---|---|
-| `account` | [Account](../android/accounts/Account.md)!: Account whose user data is to be set. Must not be `null`. |
+| `account` | [Account](Account.md)!: Account whose user data is to be set. Must not be `null`. |
 | `key` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: String user data key to set. Must not be null |
 | `value` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: String value to set, `null` to clear this user data key |
 | --- | --- |
@@ -1958,11 +1958,11 @@ This method may be called from any thread, but the returned `https://developer.a
 | `authTokenType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The type of auth token (see #getAuthToken) this account will need to be able to generate, null for none |
 | `requiredFeatures` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!: The features (see `https://developer.android.com/reference/kotlin/android/accounts/AccountManager#hasFeatures(android.accounts.Account,%20kotlin.Array,%20android.accounts.AccountManagerCallback,%20android.os.Handler)`) this account must have, null for none |
 | --- | --- |
-| `options` | [Bundle](../android/os/Bundle.md)!: Authenticator-specific options for the request, may be null or empty |
-| `activity` | [Activity](../android/app/Activity.md)!: The `https://developer.android.com/reference/kotlin/android/app/Activity.html#` context to use for launching a new authenticator-defined sub-Activity to prompt the user to create an account; used only to call startActivity(); if null, the prompt will not be launched directly, but the necessary `https://developer.android.com/reference/kotlin/android/content/Intent.html#` will be returned to the caller instead |
-| `callback` | [AccountManagerCallback](../android/accounts/AccountManagerCallback.md)\< [Bundle](../android/os/Bundle.md)!\>!: Callback to invoke when the request completes, null for no callback |
+| `options` | [Bundle](../android.os/Bundle.md)!: Authenticator-specific options for the request, may be null or empty |
+| `activity` | [Activity](../android.app/Activity.md)!: The `https://developer.android.com/reference/kotlin/android/app/Activity.html#` context to use for launching a new authenticator-defined sub-Activity to prompt the user to create an account; used only to call startActivity(); if null, the prompt will not be launched directly, but the necessary `https://developer.android.com/reference/kotlin/android/content/Intent.html#` will be returned to the caller instead |
+| `callback` | [AccountManagerCallback](AccountManagerCallback.md)\< [Bundle](../android.os/Bundle.md)!\>!: Callback to invoke when the request completes, null for no callback |
 | --- | --- |
-| `handler` | [Handler](../android/os/Handler.md)!: `https://developer.android.com/reference/kotlin/android/os/Handler.html#` identifying the callback thread, null for the main thread |
+| `handler` | [Handler](../android.os/Handler.md)!: `https://developer.android.com/reference/kotlin/android/os/Handler.html#` identifying the callback thread, null for the main thread |
 
 | Return ||
 |---|---|
@@ -1995,13 +1995,13 @@ This method may be called from any thread, but the returned `https://developer.a
 
 | Parameters ||
 |---|---|
-| `account` | [Account](../android/accounts/Account.md)!: The account to update credentials for |
+| `account` | [Account](Account.md)!: The account to update credentials for |
 | `authTokenType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The credentials entered must allow an auth token of this type to be created (but no actual auth token is returned); may be null |
-| `options` | [Bundle](../android/os/Bundle.md)!: Authenticator-specific options for the request; may be null or empty |
+| `options` | [Bundle](../android.os/Bundle.md)!: Authenticator-specific options for the request; may be null or empty |
 | --- | --- |
-| `activity` | [Activity](../android/app/Activity.md)!: The `https://developer.android.com/reference/kotlin/android/app/Activity.html#` context to use for launching a new authenticator-defined sub-Activity to prompt the user to enter a password; used only to call startActivity(); if null, the prompt will not be launched directly, but the necessary `https://developer.android.com/reference/kotlin/android/content/Intent.html#` will be returned to the caller instead |
-| `callback` | [AccountManagerCallback](../android/accounts/AccountManagerCallback.md)\< [Bundle](../android/os/Bundle.md)!\>!: Callback to invoke when the request completes, null for no callback |
-| `handler` | [Handler](../android/os/Handler.md)!: `https://developer.android.com/reference/kotlin/android/os/Handler.html#` identifying the callback thread, null for the main thread |
+| `activity` | [Activity](../android.app/Activity.md)!: The `https://developer.android.com/reference/kotlin/android/app/Activity.html#` context to use for launching a new authenticator-defined sub-Activity to prompt the user to enter a password; used only to call startActivity(); if null, the prompt will not be launched directly, but the necessary `https://developer.android.com/reference/kotlin/android/content/Intent.html#` will be returned to the caller instead |
+| `callback` | [AccountManagerCallback](AccountManagerCallback.md)\< [Bundle](../android.os/Bundle.md)!\>!: Callback to invoke when the request completes, null for no callback |
+| `handler` | [Handler](../android.os/Handler.md)!: `https://developer.android.com/reference/kotlin/android/os/Handler.html#` identifying the callback thread, null for the main thread |
 | --- | --- |
 
 | Return ||
@@ -2036,13 +2036,13 @@ Requires android.Manifest.permission.MANAGE_ACCOUNTS
 
 | Parameters ||
 |---|---|
-| `account` | [Account](../android/accounts/Account.md)!: The account to update credentials for |
+| `account` | [Account](Account.md)!: The account to update credentials for |
 | `authTokenType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: The credentials entered must allow an auth token of this type to be created (but no actual auth token is returned); may be null |
-| `options` | [Bundle](../android/os/Bundle.md)!: Authenticator-specific options for the request; may be null or empty |
+| `options` | [Bundle](../android.os/Bundle.md)!: Authenticator-specific options for the request; may be null or empty |
 | --- | --- |
-| `activity` | [Activity](../android/app/Activity.md)!: The `https://developer.android.com/reference/kotlin/android/app/Activity.html#` context to use for launching a new authenticator-defined sub-Activity to prompt the user to enter a password; used only to call startActivity(); if null, the prompt will not be launched directly, but the necessary `https://developer.android.com/reference/kotlin/android/content/Intent.html#` will be returned to the caller instead |
-| `callback` | [AccountManagerCallback](../android/accounts/AccountManagerCallback.md)\< [Bundle](../android/os/Bundle.md)!\>!: Callback to invoke when the request completes, null for no callback |
-| `handler` | [Handler](../android/os/Handler.md)!: `https://developer.android.com/reference/kotlin/android/os/Handler.html#` identifying the callback thread, null for the main thread |
+| `activity` | [Activity](../android.app/Activity.md)!: The `https://developer.android.com/reference/kotlin/android/app/Activity.html#` context to use for launching a new authenticator-defined sub-Activity to prompt the user to enter a password; used only to call startActivity(); if null, the prompt will not be launched directly, but the necessary `https://developer.android.com/reference/kotlin/android/content/Intent.html#` will be returned to the caller instead |
+| `callback` | [AccountManagerCallback](AccountManagerCallback.md)\< [Bundle](../android.os/Bundle.md)!\>!: Callback to invoke when the request completes, null for no callback |
+| `handler` | [Handler](../android.os/Handler.md)!: `https://developer.android.com/reference/kotlin/android/os/Handler.html#` identifying the callback thread, null for the main thread |
 | --- | --- |
 
 | Return ||

@@ -9,7 +9,7 @@ open class AccessControlProfileId
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.security.identity.AccessControlProfileId](../android/security/identity/AccessControlProfileId.md) |
+| ↳ | [android.security.identity.AccessControlProfileId](AccessControlProfileId.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 37.2.**

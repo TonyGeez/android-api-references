@@ -10,7 +10,7 @@ abstract class KeyStoreSpi
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.KeyStoreSpi](../java/security/KeyStoreSpi.md) |
+| ↳ | [java.security.KeyStoreSpi](KeyStoreSpi.md) |
 
 This class defines the*Service Provider Interface* (**SPI** ) for the`KeyStore`class. All the abstract methods in this class must be implemented by each cryptographic service provider who wishes to supply the implementation of a keystore for a particular keystore type.
 
@@ -18,39 +18,39 @@ This class defines the*Service Provider Interface* (**SPI** ) for the`KeyStore`c
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------|---|
-| [KeyStoreSpi](../java/security/KeyStoreSpi.md))`()` <br /> |
+| [KeyStoreSpi](KeyStoreSpi.md))`()` <br /> |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Enumeration](../java/util/Enumeration.md)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [engineAliases](../java/security/KeyStoreSpi.md))`()` Lists all the alias names of this keystore. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [engineContainsAlias](../java/security/KeyStoreSpi.md))`(`alias:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Checks if the given alias exists in this keystore. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineDeleteEntry](../java/security/KeyStoreSpi.md))`(`alias:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Deletes the entry identified by the given alias from this keystore. |
+| abstract [Enumeration](../java.util/Enumeration.md)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [engineAliases](KeyStoreSpi.md))`()` Lists all the alias names of this keystore. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [engineContainsAlias](KeyStoreSpi.md))`(`alias:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Checks if the given alias exists in this keystore. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineDeleteEntry](KeyStoreSpi.md))`(`alias:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Deletes the entry identified by the given alias from this keystore. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [engineEntryInstanceOf](../java/security/KeyStoreSpi.md))`(`alias:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `entryClass:` ` [Class](../java/lang/Class.md)<out` ` [KeyStore.Entry](../java/security/KeyStore.Entry.md)!>!`)` Determines if the keystore`Entry`for the specified`alias`is an instance or subclass of the specified`entryClass`. |
-| abstract [Certificate](../java/security/cert/Certificate.md)! | [engineGetCertificate](../java/security/KeyStoreSpi.md))`(`alias:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the certificate associated with the given alias. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [engineGetCertificateAlias](../java/security/KeyStoreSpi.md))`(`cert:` ` [Certificate](../java/security/cert/Certificate.md)!`)` Returns the (alias) name of the first keystore entry whose certificate matches the given certificate. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [engineEntryInstanceOf](KeyStoreSpi.md))`(`alias:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `entryClass:` ` [Class](../java.lang/Class.md)<out` ` [KeyStore.Entry](../java/security/KeyStore.Entry.md)!>!`)` Determines if the keystore`Entry`for the specified`alias`is an instance or subclass of the specified`entryClass`. |
+| abstract [Certificate](../java.security.cert/Certificate.md)! | [engineGetCertificate](KeyStoreSpi.md))`(`alias:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the certificate associated with the given alias. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [engineGetCertificateAlias](KeyStoreSpi.md))`(`cert:` ` [Certificate](../java.security.cert/Certificate.md)!`)` Returns the (alias) name of the first keystore entry whose certificate matches the given certificate. |
 | --- | --- |
-| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Certificate](../java/security/cert/Certificate.md)!\>! | [engineGetCertificateChain](../java/security/KeyStoreSpi.md))`(`alias:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the certificate chain associated with the given alias. |
-| abstract [Date](../java/util/Date.md)! | [engineGetCreationDate](../java/security/KeyStoreSpi.md))`(`alias:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the creation date of the entry identified by the given alias. |
-| open [KeyStore.Entry](../java/security/KeyStore.Entry.md)! | [engineGetEntry](../java/security/KeyStoreSpi.md))`(`alias:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `protParam:` ` [KeyStore.ProtectionParameter](../java/security/KeyStore.ProtectionParameter.md)!`)` Gets a`KeyStore.Entry`for the specified alias with the specified protection parameter. |
+| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Certificate](../java.security.cert/Certificate.md)!\>! | [engineGetCertificateChain](KeyStoreSpi.md))`(`alias:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the certificate chain associated with the given alias. |
+| abstract [Date](../java.util/Date.md)! | [engineGetCreationDate](KeyStoreSpi.md))`(`alias:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns the creation date of the entry identified by the given alias. |
+| open [KeyStore.Entry](../java/security/KeyStore.Entry.md)! | [engineGetEntry](KeyStoreSpi.md))`(`alias:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `protParam:` ` [KeyStore.ProtectionParameter](../java/security/KeyStore.ProtectionParameter.md)!`)` Gets a`KeyStore.Entry`for the specified alias with the specified protection parameter. |
 | --- | --- |
-| abstract [Key](../java/security/Key.md)! | [engineGetKey](../java/security/KeyStoreSpi.md))`(`alias:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `password:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`)` Returns the key associated with the given alias, using the given password to recover it. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [engineIsCertificateEntry](../java/security/KeyStoreSpi.md))`(`alias:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns true if the entry identified by the given alias was created by a call to`setCertificateEntry`, or created by a call to`setEntry`with a`TrustedCertificateEntry`. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [engineIsKeyEntry](../java/security/KeyStoreSpi.md))`(`alias:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns true if the entry identified by the given alias was created by a call to`setKeyEntry`, or created by a call to`setEntry`with a`PrivateKeyEntry`or a`SecretKeyEntry`. |
+| abstract [Key](Key.md)! | [engineGetKey](KeyStoreSpi.md))`(`alias:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `password:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`)` Returns the key associated with the given alias, using the given password to recover it. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [engineIsCertificateEntry](KeyStoreSpi.md))`(`alias:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns true if the entry identified by the given alias was created by a call to`setCertificateEntry`, or created by a call to`setEntry`with a`TrustedCertificateEntry`. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [engineIsKeyEntry](KeyStoreSpi.md))`(`alias:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Returns true if the entry identified by the given alias was created by a call to`setKeyEntry`, or created by a call to`setEntry`with a`PrivateKeyEntry`or a`SecretKeyEntry`. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineLoad](../java/security/KeyStoreSpi.md))`(`stream:` ` [InputStream](../java/io/InputStream.md)!`, `password:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`)` Loads the keystore from the given input stream. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineLoad](../java/security/KeyStoreSpi.md))`(`param:` ` [KeyStore.LoadStoreParameter](../java/security/KeyStore.LoadStoreParameter.md)!`)` Loads the keystore using the given`KeyStore.LoadStoreParameter`. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [engineProbe](../java/security/KeyStoreSpi.md))`(`stream:` ` [InputStream](../java/io/InputStream.md)!`)` Probes the specified input stream to determine whether it contains a keystore that is supported by this implementation, or not. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineLoad](KeyStoreSpi.md))`(`stream:` ` [InputStream](../java.io/InputStream.md)!`, `password:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`)` Loads the keystore from the given input stream. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineLoad](KeyStoreSpi.md))`(`param:` ` [KeyStore.LoadStoreParameter](../java/security/KeyStore.LoadStoreParameter.md)!`)` Loads the keystore using the given`KeyStore.LoadStoreParameter`. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [engineProbe](KeyStoreSpi.md))`(`stream:` ` [InputStream](../java.io/InputStream.md)!`)` Probes the specified input stream to determine whether it contains a keystore that is supported by this implementation, or not. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineSetCertificateEntry](../java/security/KeyStoreSpi.md))`(`alias:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cert:` ` [Certificate](../java/security/cert/Certificate.md)!`)` Assigns the given certificate to the given alias. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineSetEntry](../java/security/KeyStoreSpi.md))`(`alias:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `entry:` ` [KeyStore.Entry](../java/security/KeyStore.Entry.md)!`, `protParam:` ` [KeyStore.ProtectionParameter](../java/security/KeyStore.ProtectionParameter.md)!`)` Saves a`KeyStore.Entry`under the specified alias. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineSetKeyEntry](../java/security/KeyStoreSpi.md))`(`alias:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `key:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `chain:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Certificate](../java/security/cert/Certificate.md)!>!`)` Assigns the given key (that has already been protected) to the given alias. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineSetCertificateEntry](KeyStoreSpi.md))`(`alias:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cert:` ` [Certificate](../java.security.cert/Certificate.md)!`)` Assigns the given certificate to the given alias. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineSetEntry](KeyStoreSpi.md))`(`alias:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `entry:` ` [KeyStore.Entry](../java/security/KeyStore.Entry.md)!`, `protParam:` ` [KeyStore.ProtectionParameter](../java/security/KeyStore.ProtectionParameter.md)!`)` Saves a`KeyStore.Entry`under the specified alias. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineSetKeyEntry](KeyStoreSpi.md))`(`alias:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `key:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `chain:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Certificate](../java.security.cert/Certificate.md)!>!`)` Assigns the given key (that has already been protected) to the given alias. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineSetKeyEntry](../java/security/KeyStoreSpi.md))`(`alias:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `key:` ` [Key](../java/security/Key.md)!`, `password:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `chain:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Certificate](../java/security/cert/Certificate.md)!>!`)` Assigns the given key to the given alias, protecting it with the given password. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [engineSize](../java/security/KeyStoreSpi.md))`()` Retrieves the number of entries in this keystore. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineStore](../java/security/KeyStoreSpi.md))`(`stream:` ` [OutputStream](../java/io/OutputStream.md)!`, `password:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`)` Stores this keystore to the given output stream, and protects its integrity with the given password. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineSetKeyEntry](KeyStoreSpi.md))`(`alias:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `key:` ` [Key](Key.md)!`, `password:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `chain:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Certificate](../java.security.cert/Certificate.md)!>!`)` Assigns the given key to the given alias, protecting it with the given password. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [engineSize](KeyStoreSpi.md))`()` Retrieves the number of entries in this keystore. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineStore](KeyStoreSpi.md))`(`stream:` ` [OutputStream](../java.io/OutputStream.md)!`, `password:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`)` Stores this keystore to the given output stream, and protects its integrity with the given password. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineStore](../java/security/KeyStoreSpi.md))`(`param:` ` [KeyStore.LoadStoreParameter](../java/security/KeyStore.LoadStoreParameter.md)!`)` Stores this keystore using the given`KeyStore.LoadStoreParmeter`. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineStore](KeyStoreSpi.md))`(`param:` ` [KeyStore.LoadStoreParameter](../java/security/KeyStore.LoadStoreParameter.md)!`)` Stores this keystore using the given`KeyStore.LoadStoreParmeter`. |
 
 ## Public constructors
 
@@ -76,7 +76,7 @@ Lists all the alias names of this keystore.
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|
-| [Enumeration](../java/util/Enumeration.md)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>! | enumeration of the alias names |
+| [Enumeration](../java.util/Enumeration.md)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>! | enumeration of the alias names |
 
 ### engineContainsAlias
 
@@ -130,7 +130,7 @@ Determines if the keystore`Entry`for the specified`alias`is an instance or subcl
 | Parameters ||
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `alias` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the alias name |
-| `entryClass` | [Class](../java/lang/Class.md)\<out [KeyStore.Entry](../java/security/KeyStore.Entry.md)!\>!:the entry class |
+| `entryClass` | [Class](../java.lang/Class.md)\<out [KeyStore.Entry](../java/security/KeyStore.Entry.md)!\>!:the entry class |
 
 | Return ||
 |------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
@@ -156,7 +156,7 @@ If the given alias name identifies an entry created by a call to`setKeyEntry`, o
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-| [Certificate](../java/security/cert/Certificate.md)! | the certificate, or null if the given alias does not exist or does not contain a certificate. |
+| [Certificate](../java.security.cert/Certificate.md)! | the certificate, or null if the given alias does not exist or does not contain a certificate. |
 
 ### engineGetCertificateAlias
 
@@ -174,7 +174,7 @@ If the entry being considered was created by a call to`setKeyEntry`, or created 
 
 | Parameters ||
 |--------|------------------------------------------------------------------------------------------------------------------------------|
-| `cert` | [Certificate](../java/security/cert/Certificate.md)!:the certificate to match with. |
+| `cert` | [Certificate](../java.security.cert/Certificate.md)!:the certificate to match with. |
 
 | Return ||
 |-----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
@@ -196,7 +196,7 @@ Returns the certificate chain associated with the given alias. The certificate c
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Certificate](../java/security/cert/Certificate.md)!>! | the certificate chain (ordered with the user's certificate first and the root certificate authority last), or null if the given alias does not exist or does not contain a certificate chain |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Certificate](../java.security.cert/Certificate.md)!>! | the certificate chain (ordered with the user's certificate first and the root certificate authority last), or null if the given alias does not exist or does not contain a certificate chain |
 
 ### engineGetCreationDate
 
@@ -214,7 +214,7 @@ Returns the creation date of the entry identified by the given alias.
 
 | Return ||
 |------------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| [Date](../java/util/Date.md)! | the creation date of this entry, or null if the given alias does not exist |
+| [Date](../java.util/Date.md)! | the creation date of this entry, or null if the given alias does not exist |
 
 ### engineGetEntry
 
@@ -266,7 +266,7 @@ Returns the key associated with the given alias, using the given password to rec
 
 | Return ||
 |--------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
-| [Key](../java/security/Key.md)! | the requested key, or null if the given alias does not exist or does not identify a key-related entry. |
+| [Key](Key.md)! | the requested key, or null if the given alias does not exist or does not identify a key-related entry. |
 
 | Exceptions ||
 |-------------------------------------------|---------------------------------------------------------------------|
@@ -326,12 +326,12 @@ A password may be given to unlock the keystore (e.g. the keystore resides on a h
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `stream` | [InputStream](../java/io/InputStream.md)!:the input stream from which the keystore is loaded, or`null` |
+| `stream` | [InputStream](../java.io/InputStream.md)!:the input stream from which the keystore is loaded, or`null` |
 | `password` | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!:the password used to check the integrity of the keystore, the password used to unlock the keystore, or`null` |
 
 | Exceptions ||
 |-------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.io.IOException` | if there is an I/O or format problem with the keystore data, if a password is required but not given, or if the given password was incorrect. If the error is due to a wrong password, the [cause](../java/lang/Throwable.md))of the`IOException`should be an`UnrecoverableKeyException` |
+| `java.io.IOException` | if there is an I/O or format problem with the keystore data, if a password is required but not given, or if the given password was incorrect. If the error is due to a wrong password, the [cause](../java.lang/Throwable.md))of the`IOException`should be an`UnrecoverableKeyException` |
 | `java.security.NoSuchAlgorithmException` | if the algorithm used to check the integrity of the keystore cannot be found |
 | `java.security.cert.CertificateException` | if any of the certificates in the keystore could not be loaded |
 | --- | --- |
@@ -355,7 +355,7 @@ Note that if this KeyStore has already been loaded, it is reinitialized and load
 | Exceptions ||
 |-------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `java.lang.IllegalArgumentException` | if the given`KeyStore.LoadStoreParameter`input is not recognized |
-| `java.io.IOException` | if there is an I/O or format problem with the keystore data. If the error is due to an incorrect`ProtectionParameter`(e.g. wrong password) the [cause](../java/lang/Throwable.md))of the`IOException`should be an`UnrecoverableKeyException` |
+| `java.io.IOException` | if there is an I/O or format problem with the keystore data. If the error is due to an incorrect`ProtectionParameter`(e.g. wrong password) the [cause](../java.lang/Throwable.md))of the`IOException`should be an`UnrecoverableKeyException` |
 | `java.security.NoSuchAlgorithmException` | if the algorithm used to check the integrity of the keystore cannot be found |
 | --- | --- |
 | `java.security.cert.CertificateException` | if any of the certificates in the keystore could not be loaded |
@@ -372,7 +372,7 @@ Probes the specified input stream to determine whether it contains a keystore th
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------|
-| `stream` | [InputStream](../java/io/InputStream.md)!:the keystore data to be probed |
+| `stream` | [InputStream](../java.io/InputStream.md)!:the keystore data to be probed |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------|
@@ -401,7 +401,7 @@ If the given alias identifies an existing entry created by a call to`setCertific
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------|
 | `alias` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the alias name |
-| `cert` | [Certificate](../java/security/cert/Certificate.md)!:the certificate |
+| `cert` | [Certificate](../java.security.cert/Certificate.md)!:the certificate |
 
 | Exceptions ||
 |-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -456,7 +456,7 @@ If the given alias already exists, the keystore information associated with it i
 |---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `alias` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the alias name |
 | `key` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:the key (in protected format) to be associated with the alias |
-| `chain` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Certificate](../java/security/cert/Certificate.md)!\>!:the certificate chain for the corresponding public key (only useful if the protected key is of type`java.security.PrivateKey`). |
+| `chain` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Certificate](../java.security.cert/Certificate.md)!\>!:the certificate chain for the corresponding public key (only useful if the protected key is of type`java.security.PrivateKey`). |
 | --- | --- |
 
 | Exceptions ||
@@ -485,10 +485,10 @@ If the given alias already exists, the keystore information associated with it i
 | Parameters ||
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `alias` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the alias name |
-| `key` | [Key](../java/security/Key.md)!:the key to be associated with the alias |
+| `key` | [Key](Key.md)!:the key to be associated with the alias |
 | `password` | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!:the password to protect the key |
 | --- | --- |
-| `chain` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Certificate](../java/security/cert/Certificate.md)!\>!:the certificate chain for the corresponding public key (only required if the given key is of type`java.security.PrivateKey`). |
+| `chain` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Certificate](../java.security.cert/Certificate.md)!\>!:the certificate chain for the corresponding public key (only required if the given key is of type`java.security.PrivateKey`). |
 
 | Exceptions ||
 |-----------------------------------|-------------------------------------------------------------------------------------|
@@ -523,7 +523,7 @@ Stores this keystore to the given output stream, and protects its integrity with
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| `stream` | [OutputStream](../java/io/OutputStream.md)!:the output stream to which this keystore is written. |
+| `stream` | [OutputStream](../java.io/OutputStream.md)!:the output stream to which this keystore is written. |
 | `password` | [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!:the password to generate the keystore integrity check |
 
 | Exceptions ||

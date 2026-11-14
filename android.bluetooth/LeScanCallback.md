@@ -19,7 +19,7 @@ Callback interface used to deliver LE scan results.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onLeScan](../android/bluetooth/BluetoothAdapter.LeScanCallback.md))`(`device:` ` [BluetoothDevice](../android/bluetooth/BluetoothDevice.md)!`, `rssi:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `scanRecord:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Callback reporting an LE device found during a device scan initiated by the android. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onLeScan](../android/bluetooth/BluetoothAdapter.LeScanCallback.md))`(`device:` ` [BluetoothDevice](BluetoothDevice.md)!`, `rssi:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `scanRecord:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Callback reporting an LE device found during a device scan initiated by the android. |
 
 ## Public methods
 
@@ -39,7 +39,7 @@ Callback reporting an LE device found during a device scan initiated by the andr
 
 | Parameters ||
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `device` | [BluetoothDevice](../android/bluetooth/BluetoothDevice.md)!:Identifies the remote device |
+| `device` | [BluetoothDevice](BluetoothDevice.md)!:Identifies the remote device |
 | `rssi` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The RSSI value for the remote device as reported by the Bluetooth hardware. 0 if no RSSI value is available. |
 | `scanRecord` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:The content of the advertisement record offered by the remote device. |
 | --- | --- |

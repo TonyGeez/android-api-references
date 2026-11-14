@@ -10,7 +10,7 @@ open class DSAParameterSpec : AlgorithmParameterSpec, DSAParams
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.spec.DSAParameterSpec](../java/security/spec/DSAParameterSpec.md) |
+| ↳ | [java.security.spec.DSAParameterSpec](DSAParameterSpec.md) |
 
 This class specifies the set of parameters used with the DSA algorithm.
 
@@ -18,13 +18,13 @@ This class specifies the set of parameters used with the DSA algorithm.
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [DSAParameterSpec](../java/security/spec/DSAParameterSpec.md))`(`p:` ` [BigInteger](../java/math/BigInteger.md)!`, `q:` ` [BigInteger](../java/math/BigInteger.md)!`, `g:` ` [BigInteger](../java/math/BigInteger.md)!`)` Creates a new DSAParameterSpec with the specified parameter values. |
+| [DSAParameterSpec](DSAParameterSpec.md))`(`p:` ` [BigInteger](../java.math/BigInteger.md)!`, `q:` ` [BigInteger](../java.math/BigInteger.md)!`, `g:` ` [BigInteger](../java.math/BigInteger.md)!`)` Creates a new DSAParameterSpec with the specified parameter values. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| open [BigInteger](../java/math/BigInteger.md)! | [getG](../java/security/spec/DSAParameterSpec.md))`()` Returns the base`g`. |
-| open [BigInteger](../java/math/BigInteger.md)! | [getP](../java/security/spec/DSAParameterSpec.md))`()` Returns the prime`p`. |
-| open [BigInteger](../java/math/BigInteger.md)! | [getQ](../java/security/spec/DSAParameterSpec.md))`()` Returns the sub-prime`q`. |
+| open [BigInteger](../java.math/BigInteger.md)! | [getG](DSAParameterSpec.md))`()` Returns the base`g`. |
+| open [BigInteger](../java.math/BigInteger.md)! | [getP](DSAParameterSpec.md))`()` Returns the prime`p`. |
+| open [BigInteger](../java.math/BigInteger.md)! | [getQ](DSAParameterSpec.md))`()` Returns the sub-prime`q`. |
 | --- | --- |
 
 ## Public constructors
@@ -44,9 +44,9 @@ Creates a new DSAParameterSpec with the specified parameter values.
 
 | Parameters ||
 |-----|---------------------------------------------------------------------------------------------------------|
-| `p` | [BigInteger](../java/math/BigInteger.md)!:the prime. |
-| `q` | [BigInteger](../java/math/BigInteger.md)!:the sub-prime. |
-| `g` | [BigInteger](../java/math/BigInteger.md)!:the base. |
+| `p` | [BigInteger](../java.math/BigInteger.md)!:the prime. |
+| `q` | [BigInteger](../java.math/BigInteger.md)!:the sub-prime. |
+| `g` | [BigInteger](../java.math/BigInteger.md)!:the base. |
 | --- | --- |
 
 ## Public methods
@@ -63,7 +63,7 @@ Returns the base`g`.
 
 | Return ||
 |------------------------------------------------------------------------------------------|--------------|
-| [BigInteger](../java/math/BigInteger.md)! | the base`g`. |
+| [BigInteger](../java.math/BigInteger.md)! | the base`g`. |
 
 ### getP
 
@@ -77,7 +77,7 @@ Returns the prime`p`.
 
 | Return ||
 |------------------------------------------------------------------------------------------|---------------|
-| [BigInteger](../java/math/BigInteger.md)! | the prime`p`. |
+| [BigInteger](../java.math/BigInteger.md)! | the prime`p`. |
 
 ### getQ
 
@@ -91,4 +91,4 @@ Returns the sub-prime`q`.
 
 | Return ||
 |------------------------------------------------------------------------------------------|-------------------|
-| [BigInteger](../java/math/BigInteger.md)! | the sub-prime`q`. |
+| [BigInteger](../java.math/BigInteger.md)! | the sub-prime`q`. |

@@ -2,10 +2,10 @@
 
 # android.location.provider
 
-Kotlin| [Java](../android/location/provider/_package.md)
+Kotlin| [Java](_package.md)
 | --- | --- |
 
 ## Classes
 
-| [ProviderProperties](../android/location/provider/ProviderProperties.md) | Location provider properties. |
+| [ProviderProperties](ProviderProperties.md) | Location provider properties. |
 | --- | --- |

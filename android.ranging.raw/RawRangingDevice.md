@@ -8,7 +8,7 @@ class RawRangingDevice : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.ranging.raw.RawRangingDevice](../android/ranging/raw/RawRangingDevice.md) |
+| ↳ | [android.ranging.raw.RawRangingDevice](RawRangingDevice.md) |
 
 Represents a device participating in ranging operations. This class supports multiple ranging technologies, including UWB, BLE CS, BLE RSSI and Wi-Fi NAN-RTT. The configuration for each technology is provided through corresponding parameter objects.
 
@@ -32,16 +32,16 @@ Represents a device participating in ranging operations. This class supports mul
 | Public methods ||
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/raw/RawRangingDevice#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [BleRssiRangingParams](../android/ranging/ble/rssi/BleRssiRangingParams.md)? | `https://developer.android.com/reference/kotlin/android/ranging/raw/RawRangingDevice#getBleRssiRangingParams()()` Returns the BLE rssi ranging parameters, if applicable. |
-| [BleCsRangingParams](../android/ranging/ble/cs/BleCsRangingParams.md)? | `https://developer.android.com/reference/kotlin/android/ranging/raw/RawRangingDevice#getCsRangingParams()()` Returns the CS ranging parameters, if applicable. |
+| [BleRssiRangingParams](../android.ranging.ble.rssi/BleRssiRangingParams.md)? | `https://developer.android.com/reference/kotlin/android/ranging/raw/RawRangingDevice#getBleRssiRangingParams()()` Returns the BLE rssi ranging parameters, if applicable. |
+| [BleCsRangingParams](../android.ranging.ble.cs/BleCsRangingParams.md)? | `https://developer.android.com/reference/kotlin/android/ranging/raw/RawRangingDevice#getCsRangingParams()()` Returns the CS ranging parameters, if applicable. |
 | --- | --- |
 | [DlTdoaRangingParams](../android/ranging/uwb/DlTdoaRangingParams.md)? | `https://developer.android.com/reference/kotlin/android/ranging/raw/RawRangingDevice#getDlTdoaRangingParams()()` Returns the DL-TDOA ranging parameters, if applicable. |
-| [RangingDevice](../android/ranging/RangingDevice.md) | `https://developer.android.com/reference/kotlin/android/ranging/raw/RawRangingDevice#getRangingDevice()()` Returns the `https://developer.android.com/reference/kotlin/android/ranging/RangingDevice.html#` associated with this instance. |
-| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!, [Duration](../java/time/Duration.md)!\> | `https://developer.android.com/reference/kotlin/android/ranging/raw/RawRangingDevice#getRangingIntervalValues()()` Returns a map of ranging technologies to their corresponding ranging interval durations for available ranging technologies parameters. |
+| [RangingDevice](../android.ranging/RangingDevice.md) | `https://developer.android.com/reference/kotlin/android/ranging/raw/RawRangingDevice#getRangingDevice()()` Returns the `https://developer.android.com/reference/kotlin/android/ranging/RangingDevice.html#` associated with this instance. |
+| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!, [Duration](../java.time/Duration.md)!\> | `https://developer.android.com/reference/kotlin/android/ranging/raw/RawRangingDevice#getRangingIntervalValues()()` Returns a map of ranging technologies to their corresponding ranging interval durations for available ranging technologies parameters. |
 | --- | --- |
-| [RttRangingParams](../android/ranging/wifi/rtt/RttRangingParams.md)? | `https://developer.android.com/reference/kotlin/android/ranging/raw/RawRangingDevice#getRttRangingParams()()` Returns the RTT ranging parameters, if applicable. |
-| [RttStationRangingParams](../android/ranging/wifi/rtt/RttStationRangingParams.md)? | `https://developer.android.com/reference/kotlin/android/ranging/raw/RawRangingDevice#getRttStationRangingParams()()` Returns the Wi-Fi STA-AP ranging parameters, if applicable. |
-| [UwbRangingParams](../android/ranging/uwb/UwbRangingParams.md)? | `https://developer.android.com/reference/kotlin/android/ranging/raw/RawRangingDevice#getUwbRangingParams()()` Returns the UWB ranging parameters, if applicable. |
+| [RttRangingParams](../android.ranging.wifi.rtt/RttRangingParams.md)? | `https://developer.android.com/reference/kotlin/android/ranging/raw/RawRangingDevice#getRttRangingParams()()` Returns the RTT ranging parameters, if applicable. |
+| [RttStationRangingParams](../android.ranging.wifi.rtt/RttStationRangingParams.md)? | `https://developer.android.com/reference/kotlin/android/ranging/raw/RawRangingDevice#getRttStationRangingParams()()` Returns the Wi-Fi STA-AP ranging parameters, if applicable. |
+| [UwbRangingParams](../android.ranging.uwb/UwbRangingParams.md)? | `https://developer.android.com/reference/kotlin/android/ranging/raw/RawRangingDevice#getUwbRangingParams()()` Returns the UWB ranging parameters, if applicable. |
 | --- | --- |
 | [WifiPdRangingParams](../android/ranging/wifi/pd/WifiPdRangingParams.md)? | `https://developer.android.com/reference/kotlin/android/ranging/raw/RawRangingDevice#getWifiPdRangingParams()()` Returns the Wi-Fi PD ranging parameters, if applicable. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/ranging/raw/RawRangingDevice#toString()()` Returns a string representation of the object. |
@@ -50,7 +50,7 @@ Represents a device participating in ranging operations. This class supports mul
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [RawRangingDevice](../android/ranging/raw/RawRangingDevice.md)!\> | `https://developer.android.com/reference/kotlin/android/ranging/raw/RawRangingDevice#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [RawRangingDevice](RawRangingDevice.md)!\> | `https://developer.android.com/reference/kotlin/android/ranging/raw/RawRangingDevice#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -287,7 +287,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

@@ -10,11 +10,11 @@ class ValueRange : Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.time.temporal.ValueRange](../java/time/temporal/ValueRange.md) |
+| ↳ | [java.time.temporal.ValueRange](ValueRange.md) |
 
 The range of valid values for a date-time field.
 
-All [TemporalField](../java/time/temporal/TemporalField.md) instances have a valid range of values. For example, the ISO day-of-month runs from 1 to somewhere between 28 and 31. This class captures that valid range.
+All [TemporalField](TemporalField.md) instances have a valid range of values. For example, the ISO day-of-month runs from 1 to somewhere between 28 and 31. This class captures that valid range.
 
 It is important to be aware of the limitations of this class. Only the minimum and maximum values are provided. It is possible for there to be invalid values within the outer range. For example, a weird field may have valid values of 1, 2, 4, 6, 7, thus have a range of '1 - 7', despite that fact that values 3 and 5 are invalid.
 
@@ -24,27 +24,27 @@ Instances of this class are not tied to a specific field.
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [checkValidIntValue](../java/time/temporal/ValueRange.md))`(`value:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `field:` ` [TemporalField](../java/time/temporal/TemporalField.md)!`)` Checks that the specified value is valid and fits in an`int`. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [checkValidValue](../java/time/temporal/ValueRange.md))`(`value:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `field:` ` [TemporalField](../java/time/temporal/TemporalField.md)!`)` Checks that the specified value is valid. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/time/temporal/ValueRange.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Checks if this range is equal to another range. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [checkValidIntValue](ValueRange.md))`(`value:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `field:` ` [TemporalField](TemporalField.md)!`)` Checks that the specified value is valid and fits in an`int`. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [checkValidValue](ValueRange.md))`(`value:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `field:` ` [TemporalField](TemporalField.md)!`)` Checks that the specified value is valid. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](ValueRange.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Checks if this range is equal to another range. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getLargestMinimum](../java/time/temporal/ValueRange.md))`()` Gets the largest possible minimum value that the field can take. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getMaximum](../java/time/temporal/ValueRange.md))`()` Gets the maximum value that the field can take. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getMinimum](../java/time/temporal/ValueRange.md))`()` Gets the minimum value that the field can take. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getLargestMinimum](ValueRange.md))`()` Gets the largest possible minimum value that the field can take. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getMaximum](ValueRange.md))`()` Gets the maximum value that the field can take. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getMinimum](ValueRange.md))`()` Gets the minimum value that the field can take. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getSmallestMaximum](../java/time/temporal/ValueRange.md))`()` Gets the smallest possible maximum value that the field can take. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/time/temporal/ValueRange.md))`()` A hash code for this range. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFixed](../java/time/temporal/ValueRange.md))`()` Is the value range fixed and fully known. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getSmallestMaximum](ValueRange.md))`()` Gets the smallest possible maximum value that the field can take. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](ValueRange.md))`()` A hash code for this range. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFixed](ValueRange.md))`()` Is the value range fixed and fully known. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isIntValue](../java/time/temporal/ValueRange.md))`()` Checks if all values in the range fit in an`int`. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isValidIntValue](../java/time/temporal/ValueRange.md))`(`value:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Checks if the value is within the valid range and that all values in the range fit in an`int`. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isValidValue](../java/time/temporal/ValueRange.md))`(`value:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Checks if the value is within the valid range. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isIntValue](ValueRange.md))`()` Checks if all values in the range fit in an`int`. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isValidIntValue](ValueRange.md))`(`value:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Checks if the value is within the valid range and that all values in the range fit in an`int`. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isValidValue](ValueRange.md))`(`value:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Checks if the value is within the valid range. |
 | --- | --- |
-| static [ValueRange](../java/time/temporal/ValueRange.md)! | [of](../java/time/temporal/ValueRange.md))`(`min:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `max:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Obtains a fixed value range. |
-| static [ValueRange](../java/time/temporal/ValueRange.md)! | [of](../java/time/temporal/ValueRange.md))`(`min:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `maxSmallest:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `maxLargest:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Obtains a variable value range. |
-| static [ValueRange](../java/time/temporal/ValueRange.md)! | [of](../java/time/temporal/ValueRange.md))`(`minSmallest:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `minLargest:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `maxSmallest:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `maxLargest:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Obtains a fully variable value range. |
+| static [ValueRange](ValueRange.md)! | [of](ValueRange.md))`(`min:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `max:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Obtains a fixed value range. |
+| static [ValueRange](ValueRange.md)! | [of](ValueRange.md))`(`min:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `maxSmallest:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `maxLargest:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Obtains a variable value range. |
+| static [ValueRange](ValueRange.md)! | [of](ValueRange.md))`(`minSmallest:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `minLargest:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `maxSmallest:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `maxLargest:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Obtains a fully variable value range. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/time/temporal/ValueRange.md))`()` Outputs this range as a`String`. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](ValueRange.md))`()` Outputs this range as a`String`. |
 
 ## Public methods
 
@@ -66,7 +66,7 @@ This validates that the value is within the valid range of values and that all v
 | Parameters ||
 |---------|----------------------------------------------------------------------------------------------------------------------------------------|
 | `value` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the value to check |
-| `field` | [TemporalField](../java/time/temporal/TemporalField.md)!:the field being checked, may be null |
+| `field` | [TemporalField](TemporalField.md)!:the field being checked, may be null |
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------|
@@ -74,7 +74,7 @@ This validates that the value is within the valid range of values and that all v
 
 **See Also**
 
-- [#isValidIntValue(long)](../java/time/temporal/ValueRange.md)) 
+- [#isValidIntValue(long)](ValueRange.md)) 
 
 ### checkValidValue
 
@@ -94,7 +94,7 @@ This validates that the value is within the valid range of values. The field is 
 | Parameters ||
 |---------|----------------------------------------------------------------------------------------------------------------------------------------|
 | `value` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the value to check |
-| `field` | [TemporalField](../java/time/temporal/TemporalField.md)!:the field being checked, may be null |
+| `field` | [TemporalField](TemporalField.md)!:the field being checked, may be null |
 
 | Return ||
 |------------------------------------------------------------------------------|------------------------------|
@@ -102,7 +102,7 @@ This validates that the value is within the valid range of values. The field is 
 
 **See Also**
 
-- [#isValidValue(long)](../java/time/temporal/ValueRange.md)) 
+- [#isValidValue(long)](ValueRange.md)) 
 
 ### equals
 
@@ -232,7 +232,7 @@ This checks that all valid values are within the bounds of an`int`.
 
 For example, the ISO month-of-year has values from 1 to 12, which fits in an`int`. By comparison, ISO nano-of-day runs from 1 to 86,400,000,000,000 which does not fit in an`int`.
 
-This implementation uses [getMinimum()](../java/time/temporal/ValueRange.md))and [getMaximum()](../java/time/temporal/ValueRange.md)).
+This implementation uses [getMinimum()](ValueRange.md))and [getMaximum()](ValueRange.md)).
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------------------------------------|
@@ -248,7 +248,7 @@ fun isValidIntValue(value: Long): Boolean
 
 Checks if the value is within the valid range and that all values in the range fit in an`int`.
 
-This method combines [isIntValue()](../java/time/temporal/ValueRange.md))and [isValidValue(long)](../java/time/temporal/ValueRange.md)).
+This method combines [isIntValue()](ValueRange.md))and [isValidValue(long)](ValueRange.md)).
 
 | Parameters ||
 |---------|-------------------------------------------------------------------------------------------------|
@@ -300,7 +300,7 @@ This factory obtains a range where the minimum and maximum values are fixed. For
 
 | Return ||
 |----------------------------------------------------------------------------------------------|---------------------------------------|
-| [ValueRange](../java/time/temporal/ValueRange.md)! | the ValueRange for min, max, not null |
+| [ValueRange](ValueRange.md)! | the ValueRange for min, max, not null |
 
 | Exceptions ||
 |--------------------------------------|--------------------------------------------|
@@ -331,7 +331,7 @@ This factory obtains a range where the minimum value is fixed and the maximum va
 
 | Return ||
 |----------------------------------------------------------------------------------------------|-------------------------------------------------------------|
-| [ValueRange](../java/time/temporal/ValueRange.md)! | the ValueRange for min, smallest max, largest max, not null |
+| [ValueRange](ValueRange.md)! | the ValueRange for min, smallest max, largest max, not null |
 
 | Exceptions ||
 |--------------------------------------|------------------------------------------------------------------------------------------------------------------|
@@ -364,7 +364,7 @@ This factory obtains a range where both the minimum and maximum value may vary.
 
 | Return ||
 |----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| [ValueRange](../java/time/temporal/ValueRange.md)! | the ValueRange for smallest min, largest min, smallest max, largest max, not null |
+| [ValueRange](ValueRange.md)! | the ValueRange for smallest min, largest min, smallest max, largest max, not null |
 
 | Exceptions ||
 |--------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

@@ -4,7 +4,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # InsertRecordsResponse
 
-Kotlin| [Java](../android/health/connect/InsertRecordsResponse.md) 
+Kotlin| [Java](InsertRecordsResponse.md) 
 | --- | --- |
 
 ```
@@ -13,15 +13,15 @@ open class InsertRecordsResponse
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.health.connect.InsertRecordsResponse](../android/health/connect/InsertRecordsResponse.md) |
+| ↳ | [android.health.connect.InsertRecordsResponse](InsertRecordsResponse.md) |
 
-Response for [HealthConnectManager.insertRecords](../android/health/connect/HealthConnectManager.md)). The response contains records in same order as records in [HealthConnectManager.insertRecords](../android/health/connect/HealthConnectManager.md))
+Response for [HealthConnectManager.insertRecords](HealthConnectManager.md)). The response contains records in same order as records in [HealthConnectManager.insertRecords](HealthConnectManager.md))
 
 ## Summary
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Record](../android/health/connect/datatypes/Record.md)!\> | [getRecords](../android/health/connect/InsertRecordsResponse.md))`()` <br /> |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Record](../android.health.connect.datatypes/Record.md)!\> | [getRecords](InsertRecordsResponse.md))`()` <br /> |
 
 ## Public methods
 
@@ -35,4 +35,4 @@ open fun getRecords(): MutableList<Record!>
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Record](../android/health/connect/datatypes/Record.md)!> | This value cannot be`null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Record](../android.health.connect.datatypes/Record.md)!> | This value cannot be`null`. |

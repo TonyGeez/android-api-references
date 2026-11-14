@@ -10,64 +10,64 @@ open class XMLFilterImpl : ContentHandler, DTDHandler, EntityResolver, ErrorHa
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [org.xml.sax.helpers.XMLFilterImpl](../org/xml/sax/helpers/XMLFilterImpl.md) |
+| ↳ | [org.xml.sax.helpers.XMLFilterImpl](XMLFilterImpl.md) |
 
 Base class for deriving an XML filter.*This module, both source code and documentation, is in the Public Domain, and comes with**NO WARRANTY**.* See<http://www.saxproject.org>for further information.
 
-This class is designed to sit between an [XMLReader](../org/xml/sax/XMLReader.md) and the client application's event handlers. By default, it does nothing but pass requests up to the reader and events on to the handlers unmodified, but subclasses can override specific methods to modify the event stream or the configuration requests as they pass through.
+This class is designed to sit between an [XMLReader](../org.xml.sax/XMLReader.md) and the client application's event handlers. By default, it does nothing but pass requests up to the reader and events on to the handlers unmodified, but subclasses can override specific methods to modify the event stream or the configuration requests as they pass through.
 
 ## Summary
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [XMLFilterImpl](../org/xml/sax/helpers/XMLFilterImpl.md))`()` Construct an empty XML filter, with no parent. |
-| [XMLFilterImpl](../org/xml/sax/helpers/XMLFilterImpl.md))`(`parent:` ` [XMLReader](../org/xml/sax/XMLReader.md)!`)` Construct an XML filter with the specified parent. |
+| [XMLFilterImpl](XMLFilterImpl.md))`()` Construct an empty XML filter, with no parent. |
+| [XMLFilterImpl](XMLFilterImpl.md))`(`parent:` ` [XMLReader](../org.xml.sax/XMLReader.md)!`)` Construct an XML filter with the specified parent. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [characters](../org/xml/sax/helpers/XMLFilterImpl.md))`(`ch:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Filter a character data event. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [endDocument](../org/xml/sax/helpers/XMLFilterImpl.md))`()` Filter an end document event. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [endElement](../org/xml/sax/helpers/XMLFilterImpl.md))`(`uri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `localName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `qName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Filter an end element event. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [characters](XMLFilterImpl.md))`(`ch:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Filter a character data event. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [endDocument](XMLFilterImpl.md))`()` Filter an end document event. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [endElement](XMLFilterImpl.md))`(`uri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `localName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `qName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Filter an end element event. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [endPrefixMapping](../org/xml/sax/helpers/XMLFilterImpl.md))`(`prefix:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Filter an end Namespace prefix mapping event. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [error](../org/xml/sax/helpers/XMLFilterImpl.md))`(`e:` ` [SAXParseException](../org/xml/sax/SAXParseException.md)!`)` Filter an error event. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [fatalError](../org/xml/sax/helpers/XMLFilterImpl.md))`(`e:` ` [SAXParseException](../org/xml/sax/SAXParseException.md)!`)` Filter a fatal error event. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [endPrefixMapping](XMLFilterImpl.md))`(`prefix:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Filter an end Namespace prefix mapping event. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [error](XMLFilterImpl.md))`(`e:` ` [SAXParseException](../org.xml.sax/SAXParseException.md)!`)` Filter an error event. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [fatalError](XMLFilterImpl.md))`(`e:` ` [SAXParseException](../org.xml.sax/SAXParseException.md)!`)` Filter a fatal error event. |
 | --- | --- |
-| open [ContentHandler](../org/xml/sax/ContentHandler.md)! | [getContentHandler](../org/xml/sax/helpers/XMLFilterImpl.md))`()` Get the content event handler. |
-| open [DTDHandler](../org/xml/sax/DTDHandler.md)! | [getDTDHandler](../org/xml/sax/helpers/XMLFilterImpl.md))`()` Get the current DTD event handler. |
-| open [EntityResolver](../org/xml/sax/EntityResolver.md)! | [getEntityResolver](../org/xml/sax/helpers/XMLFilterImpl.md))`()` Get the current entity resolver. |
+| open [ContentHandler](../org.xml.sax/ContentHandler.md)! | [getContentHandler](XMLFilterImpl.md))`()` Get the content event handler. |
+| open [DTDHandler](../org.xml.sax/DTDHandler.md)! | [getDTDHandler](XMLFilterImpl.md))`()` Get the current DTD event handler. |
+| open [EntityResolver](../org.xml.sax/EntityResolver.md)! | [getEntityResolver](XMLFilterImpl.md))`()` Get the current entity resolver. |
 | --- | --- |
-| open [ErrorHandler](../org/xml/sax/ErrorHandler.md)! | [getErrorHandler](../org/xml/sax/helpers/XMLFilterImpl.md))`()` Get the current error event handler. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getFeature](../org/xml/sax/helpers/XMLFilterImpl.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Look up the value of a feature. |
-| open [XMLReader](../org/xml/sax/XMLReader.md)! | [getParent](../org/xml/sax/helpers/XMLFilterImpl.md))`()` Get the parent reader. |
+| open [ErrorHandler](../org.xml.sax/ErrorHandler.md)! | [getErrorHandler](XMLFilterImpl.md))`()` Get the current error event handler. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getFeature](XMLFilterImpl.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Look up the value of a feature. |
+| open [XMLReader](../org.xml.sax/XMLReader.md)! | [getParent](XMLFilterImpl.md))`()` Get the parent reader. |
 | --- | --- |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getProperty](../org/xml/sax/helpers/XMLFilterImpl.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Look up the value of a property. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [ignorableWhitespace](../org/xml/sax/helpers/XMLFilterImpl.md))`(`ch:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Filter an ignorable whitespace event. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [notationDecl](../org/xml/sax/helpers/XMLFilterImpl.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `publicId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Filter a notation declaration event. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getProperty](XMLFilterImpl.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Look up the value of a property. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [ignorableWhitespace](XMLFilterImpl.md))`(`ch:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Filter an ignorable whitespace event. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [notationDecl](XMLFilterImpl.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `publicId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Filter a notation declaration event. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parse](../org/xml/sax/helpers/XMLFilterImpl.md))`(`systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Parse a document. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parse](../org/xml/sax/helpers/XMLFilterImpl.md))`(`input:` ` [InputSource](../org/xml/sax/InputSource.md)!`)` Parse a document. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [processingInstruction](../org/xml/sax/helpers/XMLFilterImpl.md))`(`target:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `data:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Filter a processing instruction event. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parse](XMLFilterImpl.md))`(`systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Parse a document. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [parse](XMLFilterImpl.md))`(`input:` ` [InputSource](../org.xml.sax/InputSource.md)!`)` Parse a document. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [processingInstruction](XMLFilterImpl.md))`(`target:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `data:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Filter a processing instruction event. |
 | --- | --- |
-| open [InputSource](../org/xml/sax/InputSource.md)! | [resolveEntity](../org/xml/sax/helpers/XMLFilterImpl.md))`(`publicId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Filter an external entity resolution. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setContentHandler](../org/xml/sax/helpers/XMLFilterImpl.md))`(`handler:` ` [ContentHandler](../org/xml/sax/ContentHandler.md)!`)` Set the content event handler. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDTDHandler](../org/xml/sax/helpers/XMLFilterImpl.md))`(`handler:` ` [DTDHandler](../org/xml/sax/DTDHandler.md)!`)` Set the DTD event handler. |
+| open [InputSource](../org.xml.sax/InputSource.md)! | [resolveEntity](XMLFilterImpl.md))`(`publicId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Filter an external entity resolution. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setContentHandler](XMLFilterImpl.md))`(`handler:` ` [ContentHandler](../org.xml.sax/ContentHandler.md)!`)` Set the content event handler. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDTDHandler](XMLFilterImpl.md))`(`handler:` ` [DTDHandler](../org.xml.sax/DTDHandler.md)!`)` Set the DTD event handler. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDocumentLocator](../org/xml/sax/helpers/XMLFilterImpl.md))`(`locator:` ` [Locator](../org/xml/sax/Locator.md)!`)` Filter a new document locator event. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEntityResolver](../org/xml/sax/helpers/XMLFilterImpl.md))`(`resolver:` ` [EntityResolver](../org/xml/sax/EntityResolver.md)!`)` Set the entity resolver. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setErrorHandler](../org/xml/sax/helpers/XMLFilterImpl.md))`(`handler:` ` [ErrorHandler](../org/xml/sax/ErrorHandler.md)!`)` Set the error event handler. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDocumentLocator](XMLFilterImpl.md))`(`locator:` ` [Locator](../org.xml.sax/Locator.md)!`)` Filter a new document locator event. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEntityResolver](XMLFilterImpl.md))`(`resolver:` ` [EntityResolver](../org.xml.sax/EntityResolver.md)!`)` Set the entity resolver. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setErrorHandler](XMLFilterImpl.md))`(`handler:` ` [ErrorHandler](../org.xml.sax/ErrorHandler.md)!`)` Set the error event handler. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFeature](../org/xml/sax/helpers/XMLFilterImpl.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Set the value of a feature. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setParent](../org/xml/sax/helpers/XMLFilterImpl.md))`(`parent:` ` [XMLReader](../org/xml/sax/XMLReader.md)!`)` Set the parent reader. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setProperty](../org/xml/sax/helpers/XMLFilterImpl.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Set the value of a property. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFeature](XMLFilterImpl.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Set the value of a feature. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setParent](XMLFilterImpl.md))`(`parent:` ` [XMLReader](../org.xml.sax/XMLReader.md)!`)` Set the parent reader. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setProperty](XMLFilterImpl.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Set the value of a property. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [skippedEntity](../org/xml/sax/helpers/XMLFilterImpl.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Filter a skipped entity event. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startDocument](../org/xml/sax/helpers/XMLFilterImpl.md))`()` Filter a start document event. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startElement](../org/xml/sax/helpers/XMLFilterImpl.md))`(`uri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `localName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `qName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `atts:` ` [Attributes](../org/xml/sax/Attributes.md)!`)` Filter a start element event. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [skippedEntity](XMLFilterImpl.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Filter a skipped entity event. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startDocument](XMLFilterImpl.md))`()` Filter a start document event. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startElement](XMLFilterImpl.md))`(`uri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `localName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `qName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `atts:` ` [Attributes](../org.xml.sax/Attributes.md)!`)` Filter a start element event. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startPrefixMapping](../org/xml/sax/helpers/XMLFilterImpl.md))`(`prefix:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `uri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Filter a start Namespace prefix mapping event. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unparsedEntityDecl](../org/xml/sax/helpers/XMLFilterImpl.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `publicId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `notationName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Filter an unparsed entity declaration event. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [warning](../org/xml/sax/helpers/XMLFilterImpl.md))`(`e:` ` [SAXParseException](../org/xml/sax/SAXParseException.md)!`)` Filter a warning event. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startPrefixMapping](XMLFilterImpl.md))`(`prefix:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `uri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Filter a start Namespace prefix mapping event. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unparsedEntityDecl](XMLFilterImpl.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `publicId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `notationName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Filter an unparsed entity declaration event. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [warning](XMLFilterImpl.md))`(`e:` ` [SAXParseException](../org.xml.sax/SAXParseException.md)!`)` Filter a warning event. |
 | --- | --- |
 
 ## Public constructors
@@ -82,12 +82,12 @@ XMLFilterImpl()
 
 Construct an empty XML filter, with no parent.
 
-This filter will have no parent: you must assign a parent before you start a parse or do any configuration with setFeature or setProperty, unless you use this as a pure event consumer rather than as an [XMLReader](../org/xml/sax/XMLReader.md). 
+This filter will have no parent: you must assign a parent before you start a parse or do any configuration with setFeature or setProperty, unless you use this as a pure event consumer rather than as an [XMLReader](../org.xml.sax/XMLReader.md). 
 **See Also**
 
-- [org.xml.sax.XMLReader#setFeature](../org/xml/sax/XMLReader.md))
-- [org.xml.sax.XMLReader#setProperty](../org/xml/sax/XMLReader.md))
-- [#setParent](../org/xml/sax/helpers/XMLFilterImpl.md)) 
+- [org.xml.sax.XMLReader#setFeature](../org.xml.sax/XMLReader.md))
+- [org.xml.sax.XMLReader#setProperty](../org.xml.sax/XMLReader.md))
+- [#setParent](XMLFilterImpl.md)) 
 
 ### XMLFilterImpl
 
@@ -101,12 +101,12 @@ Construct an XML filter with the specified parent.
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| `parent` | [XMLReader](../org/xml/sax/XMLReader.md)!:the XML reader from which this filter receives its events. |
+| `parent` | [XMLReader](../org.xml.sax/XMLReader.md)!:the XML reader from which this filter receives its events. |
 
 **See Also**
 
-- [#setParent](../org/xml/sax/helpers/XMLFilterImpl.md))
-- [#getParent](../org/xml/sax/helpers/XMLFilterImpl.md))
+- [#setParent](XMLFilterImpl.md))
+- [#getParent](XMLFilterImpl.md))
 
 ## Public methods
 
@@ -209,7 +209,7 @@ Filter an error event.
 | Parameters ||
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | `exception` | The error information encapsulated in a SAX parse exception. |
-| `e` | [SAXParseException](../org/xml/sax/SAXParseException.md)!:The error as an exception. |
+| `e` | [SAXParseException](../org.xml.sax/SAXParseException.md)!:The error as an exception. |
 
 | Exceptions ||
 |----------------------------|------------------------------------------------------|
@@ -228,7 +228,7 @@ Filter a fatal error event.
 | Parameters ||
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | `exception` | The error information encapsulated in a SAX parse exception. |
-| `e` | [SAXParseException](../org/xml/sax/SAXParseException.md)!:The error as an exception. |
+| `e` | [SAXParseException](../org.xml.sax/SAXParseException.md)!:The error as an exception. |
 
 | Exceptions ||
 |----------------------------|------------------------------------------------------|
@@ -246,7 +246,7 @@ Get the content event handler.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------|-------------------------------------------------------|
-| [ContentHandler](../org/xml/sax/ContentHandler.md)! | The current content handler, or null if none was set. |
+| [ContentHandler](../org.xml.sax/ContentHandler.md)! | The current content handler, or null if none was set. |
 
 ### getDTDHandler
 
@@ -260,7 +260,7 @@ Get the current DTD event handler.
 
 | Return ||
 |--------------------------------------------------------------------------------------------|---------------------------------------------------|
-| [DTDHandler](../org/xml/sax/DTDHandler.md)! | The current DTD handler, or null if none was set. |
+| [DTDHandler](../org.xml.sax/DTDHandler.md)! | The current DTD handler, or null if none was set. |
 
 ### getEntityResolver
 
@@ -274,7 +274,7 @@ Get the current entity resolver.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------|-------------------------------------------------------|
-| [EntityResolver](../org/xml/sax/EntityResolver.md)! | The current entity resolver, or null if none was set. |
+| [EntityResolver](../org.xml.sax/EntityResolver.md)! | The current entity resolver, or null if none was set. |
 
 ### getErrorHandler
 
@@ -288,7 +288,7 @@ Get the current error event handler.
 
 | Return ||
 |------------------------------------------------------------------------------------------------|-----------------------------------------------------|
-| [ErrorHandler](../org/xml/sax/ErrorHandler.md)! | The current error handler, or null if none was set. |
+| [ErrorHandler](../org.xml.sax/ErrorHandler.md)! | The current error handler, or null if none was set. |
 
 ### getFeature
 
@@ -327,11 +327,11 @@ Get the parent reader.
 
 | Return ||
 |------------------------------------------------------------------------------------------|------------------------------------------------|
-| [XMLReader](../org/xml/sax/XMLReader.md)! | The parent XML reader, or null if none is set. |
+| [XMLReader](../org.xml.sax/XMLReader.md)! | The parent XML reader, or null if none is set. |
 
 **See Also**
 
-- [#setParent](../org/xml/sax/helpers/XMLFilterImpl.md)) 
+- [#setParent](XMLFilterImpl.md)) 
 
 ### getProperty
 
@@ -438,7 +438,7 @@ Parse a document.
 
 | Parameters ||
 |---------|----------------------------------------------------------------------------------------------------------------------------------------|
-| `input` | [InputSource](../org/xml/sax/InputSource.md)!:The input source for the document entity. |
+| `input` | [InputSource](../org.xml.sax/InputSource.md)!:The input source for the document entity. |
 
 | Exceptions ||
 |----------------------------|---------------------------------------------------------------------------------------------------------------|
@@ -488,7 +488,7 @@ Filter an external entity resolution.
 
 | Return ||
 |----------------------------------------------------------------------------------------------|--------------------------------------------|
-| [InputSource](../org/xml/sax/InputSource.md)! | A new InputSource or null for the default. |
+| [InputSource](../org.xml.sax/InputSource.md)! | A new InputSource or null for the default. |
 
 | Exceptions ||
 |----------------------------|------------------------------------------------------------------------------------|
@@ -507,7 +507,7 @@ Set the content event handler.
 
 | Parameters ||
 |-----------|----------------------------------------------------------------------------------------------------------------------------|
-| `handler` | [ContentHandler](../org/xml/sax/ContentHandler.md)!:the new content handler |
+| `handler` | [ContentHandler](../org.xml.sax/ContentHandler.md)!:the new content handler |
 
 ### setDTDHandler
 
@@ -521,7 +521,7 @@ Set the DTD event handler.
 
 | Parameters ||
 |-----------|----------------------------------------------------------------------------------------------------------------|
-| `handler` | [DTDHandler](../org/xml/sax/DTDHandler.md)!:the new DTD handler |
+| `handler` | [DTDHandler](../org.xml.sax/DTDHandler.md)!:the new DTD handler |
 
 ### setDocumentLocator
 
@@ -535,7 +535,7 @@ Filter a new document locator event.
 
 | Parameters ||
 |-----------|------------------------------------------------------------------------------------------------------------|
-| `locator` | [Locator](../org/xml/sax/Locator.md)!:The document locator. |
+| `locator` | [Locator](../org.xml.sax/Locator.md)!:The document locator. |
 
 ### setEntityResolver
 
@@ -549,7 +549,7 @@ Set the entity resolver.
 
 | Parameters ||
 |------------|-----------------------------------------------------------------------------------------------------------------------------|
-| `resolver` | [EntityResolver](../org/xml/sax/EntityResolver.md)!:The new entity resolver. |
+| `resolver` | [EntityResolver](../org.xml.sax/EntityResolver.md)!:The new entity resolver. |
 
 ### setErrorHandler
 
@@ -563,7 +563,7 @@ Set the error event handler.
 
 | Parameters ||
 |-----------|----------------------------------------------------------------------------------------------------------------------|
-| `handler` | [ErrorHandler](../org/xml/sax/ErrorHandler.md)!:the new error handler |
+| `handler` | [ErrorHandler](../org.xml.sax/ErrorHandler.md)!:the new error handler |
 
 ### setFeature
 
@@ -600,17 +600,17 @@ open fun setParent(parent: XMLReader!): Unit
 
 Set the parent reader.
 
-This is the [XMLReader](../org/xml/sax/XMLReader.md) from which this filter will obtain its events and to which it will pass its configuration requests. The parent may itself be another filter.
+This is the [XMLReader](../org.xml.sax/XMLReader.md) from which this filter will obtain its events and to which it will pass its configuration requests. The parent may itself be another filter.
 
 If there is no parent reader set, any attempt to parse or to set or get a feature or property will fail.
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------|
-| `parent` | [XMLReader](../org/xml/sax/XMLReader.md)!:The parent XML reader. |
+| `parent` | [XMLReader](../org.xml.sax/XMLReader.md)!:The parent XML reader. |
 
 **See Also**
 
-- [#getParent](../org/xml/sax/helpers/XMLFilterImpl.md)) 
+- [#getParent](XMLFilterImpl.md)) 
 
 ### setProperty
 
@@ -692,7 +692,7 @@ Filter a start element event.
 | `localName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The element's local name, or the empty string. |
 | `qName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The element's qualified (prefixed) name, or the empty string. |
 | --- | --- |
-| `atts` | [Attributes](../org/xml/sax/Attributes.md)!:The element's attributes. |
+| `atts` | [Attributes](../org.xml.sax/Attributes.md)!:The element's attributes. |
 
 | Exceptions ||
 |----------------------------|--------------------------------------------------------|
@@ -762,7 +762,7 @@ Filter a warning event.
 | Parameters ||
 |-------------|---------------------------------------------------------------------------------------------------------------------------------------|
 | `exception` | The warning information encapsulated in a SAX parse exception. |
-| `e` | [SAXParseException](../org/xml/sax/SAXParseException.md)!:The warning as an exception. |
+| `e` | [SAXParseException](../org.xml.sax/SAXParseException.md)!:The warning as an exception. |
 
 | Exceptions ||
 |----------------------------|------------------------------------------------------|

@@ -10,9 +10,9 @@ open class InetAddress : Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.net.InetAddress](../java/net/InetAddress.md) |
+| ↳ | [java.net.InetAddress](InetAddress.md) |
 
-| Known Direct Subclasses [Inet4Address](../java/net/Inet4Address.md), [Inet6Address](../java/net/Inet6Address.md) |--------------------------------------------------------------------------------------|----------------------------------------------------------------------| | [Inet4Address](../java/net/Inet4Address.md) | This class represents an Internet Protocol version 4 (IPv4) address. | | [Inet6Address](../java/net/Inet6Address.md) | This class represents an Internet Protocol version 6 (IPv6) address. | |
+| Known Direct Subclasses [Inet4Address](Inet4Address.md), [Inet6Address](Inet6Address.md) |--------------------------------------------------------------------------------------|----------------------------------------------------------------------| | [Inet4Address](Inet4Address.md) | This class represents an Internet Protocol version 4 (IPv4) address. | | [Inet6Address](Inet6Address.md) | This class represents an Internet Protocol version 6 (IPv6) address. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 This class represents an Internet Protocol (IP) address.
@@ -38,7 +38,7 @@ An IP address is either a 32-bit or 128-bit unsigned number used by IP, a lower-
 
 The textual representation of an IP address is address family specific.
 
-For IPv4 address format, please refer to [Inet4Address#format](../java/net/Inet4Address.md); For IPv6 address format, please refer to [Inet6Address#format](../java/net/Inet6Address.md).
+For IPv4 address format, please refer to [Inet4Address#format](Inet4Address.md); For IPv6 address format, please refer to [Inet6Address#format](Inet6Address.md).
 
 There is a [couple of System Properties](../java/net/doc-files/net-properties.md) affecting how IPv4 and IPv6 addresses are used.
 
@@ -72,39 +72,39 @@ Two Java security properties control the TTL values used for positive and negati
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/net/InetAddress.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this object against the specified object. |
-| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getAddress](../java/net/InetAddress.md))`()` Returns the raw IP address of this`InetAddress`object. |
-| openstatic [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [InetAddress](../java/net/InetAddress.md)!\>! | [getAllByName](../java/net/InetAddress.md))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Given the name of a host, returns an array of its IP addresses, based on the configured name service on the system. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](InetAddress.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this object against the specified object. |
+| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getAddress](InetAddress.md))`()` Returns the raw IP address of this`InetAddress`object. |
+| openstatic [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [InetAddress](InetAddress.md)!\>! | [getAllByName](InetAddress.md))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Given the name of a host, returns an array of its IP addresses, based on the configured name service on the system. |
 | --- | --- |
-| openstatic [InetAddress](../java/net/InetAddress.md) | [getByAddress](../java/net/InetAddress.md))`(`addr:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Returns an`InetAddress`object given the raw IP address . |
-| openstatic [InetAddress](../java/net/InetAddress.md) | [getByAddress](../java/net/InetAddress.md))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `addr:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Creates an InetAddress based on the provided host name and IP address. |
-| openstatic [InetAddress](../java/net/InetAddress.md) | [getByName](../java/net/InetAddress.md))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Determines the IP address of a host, given the host's name. |
+| openstatic [InetAddress](InetAddress.md) | [getByAddress](InetAddress.md))`(`addr:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Returns an`InetAddress`object given the raw IP address . |
+| openstatic [InetAddress](InetAddress.md) | [getByAddress](InetAddress.md))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `addr:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Creates an InetAddress based on the provided host name and IP address. |
+| openstatic [InetAddress](InetAddress.md) | [getByName](InetAddress.md))`(`host:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` Determines the IP address of a host, given the host's name. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getCanonicalHostName](../java/net/InetAddress.md))`()` Gets the fully qualified domain name for this IP address. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getHostAddress](../java/net/InetAddress.md))`()` Returns the IP address string in textual presentation. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getHostName](../java/net/InetAddress.md))`()` Gets the host name for this IP address. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getCanonicalHostName](InetAddress.md))`()` Gets the fully qualified domain name for this IP address. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [getHostAddress](InetAddress.md))`()` Returns the IP address string in textual presentation. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getHostName](InetAddress.md))`()` Gets the host name for this IP address. |
 | --- | --- |
-| openstatic [InetAddress](../java/net/InetAddress.md) | [getLocalHost](../java/net/InetAddress.md))`()` Returns the address of the local host. |
-| openstatic [InetAddress](../java/net/InetAddress.md) | [getLoopbackAddress](../java/net/InetAddress.md))`()` Returns the loopback address. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/net/InetAddress.md))`()` Returns a hashcode for this IP address. |
+| openstatic [InetAddress](InetAddress.md) | [getLocalHost](InetAddress.md))`()` Returns the address of the local host. |
+| openstatic [InetAddress](InetAddress.md) | [getLoopbackAddress](InetAddress.md))`()` Returns the loopback address. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](InetAddress.md))`()` Returns a hashcode for this IP address. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAnyLocalAddress](../java/net/InetAddress.md))`()` Utility routine to check if the InetAddress in a wildcard address. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLinkLocalAddress](../java/net/InetAddress.md))`()` Utility routine to check if the InetAddress is an link local address. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLoopbackAddress](../java/net/InetAddress.md))`()` Utility routine to check if the InetAddress is a loopback address. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isAnyLocalAddress](InetAddress.md))`()` Utility routine to check if the InetAddress in a wildcard address. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLinkLocalAddress](InetAddress.md))`()` Utility routine to check if the InetAddress is an link local address. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLoopbackAddress](InetAddress.md))`()` Utility routine to check if the InetAddress is a loopback address. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMCGlobal](../java/net/InetAddress.md))`()` Utility routine to check if the multicast address has global scope. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMCLinkLocal](../java/net/InetAddress.md))`()` Utility routine to check if the multicast address has link scope. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMCNodeLocal](../java/net/InetAddress.md))`()` Utility routine to check if the multicast address has node scope. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMCGlobal](InetAddress.md))`()` Utility routine to check if the multicast address has global scope. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMCLinkLocal](InetAddress.md))`()` Utility routine to check if the multicast address has link scope. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMCNodeLocal](InetAddress.md))`()` Utility routine to check if the multicast address has node scope. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMCOrgLocal](../java/net/InetAddress.md))`()` Utility routine to check if the multicast address has organization scope. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMCSiteLocal](../java/net/InetAddress.md))`()` Utility routine to check if the multicast address has site scope. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMulticastAddress](../java/net/InetAddress.md))`()` Utility routine to check if the InetAddress is an IP multicast address. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMCOrgLocal](InetAddress.md))`()` Utility routine to check if the multicast address has organization scope. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMCSiteLocal](InetAddress.md))`()` Utility routine to check if the multicast address has site scope. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMulticastAddress](InetAddress.md))`()` Utility routine to check if the InetAddress is an IP multicast address. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isReachable](../java/net/InetAddress.md))`(`timeout:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Test whether that address is reachable. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isReachable](../java/net/InetAddress.md))`(`netif:` ` [NetworkInterface](../java/net/NetworkInterface.md)?`, `ttl:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `timeout:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Test whether that address is reachable. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSiteLocalAddress](../java/net/InetAddress.md))`()` Utility routine to check if the InetAddress is a site local address. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isReachable](InetAddress.md))`(`timeout:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Test whether that address is reachable. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isReachable](InetAddress.md))`(`netif:` ` [NetworkInterface](NetworkInterface.md)?`, `ttl:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `timeout:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Test whether that address is reachable. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSiteLocalAddress](InetAddress.md))`()` Utility routine to check if the InetAddress is a site local address. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/net/InetAddress.md))`()` Converts this IP address to a`String`. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](InetAddress.md))`()` Converts this IP address to a`String`. |
 
 ## Public methods
 
@@ -130,7 +130,7 @@ Two instances of`InetAddress`represent the same IP address if the length of the 
 
 **See Also**
 
-- [java.net.InetAddress#getAddress()](../java/net/InetAddress.md)) 
+- [java.net.InetAddress#getAddress()](InetAddress.md)) 
 
 ### getAddress
 
@@ -158,7 +158,7 @@ Given the name of a host, returns an array of its IP addresses, based on the con
 
 The host name can either be a machine name, such as "`java.sun.com`", or a textual representation of its IP address. If a literal IP address is supplied, only the validity of the address format is checked.
 
-For`host`specified in*literal IPv6 address* , either the form defined in RFC 2732 or the literal IPv6 address format defined in RFC 2373 is accepted. A literal IPv6 address may also be qualified by appending a scoped zone identifier or scope_id. The syntax and usage of scope_ids is described [here](../java/net/Inet6Address.md).
+For`host`specified in*literal IPv6 address* , either the form defined in RFC 2732 or the literal IPv6 address format defined in RFC 2373 is accepted. A literal IPv6 address may also be qualified by appending a scoped zone identifier or scope_id. The syntax and usage of scope_ids is described [here](Inet6Address.md).
 
 If the host is`null`then an`InetAddress`representing an address of the loopback interface is returned. See [RFC 3330](http://www.ietf.org/rfc/rfc3330.txt) section 2 and [RFC 2373](http://www.ietf.org/rfc/rfc2373.txt) section 2.5.3.
 
@@ -170,7 +170,7 @@ If there is a security manager and`host`is not null and`host.length() `is not eq
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [InetAddress](../java/net/InetAddress.md)!>! | an array of all the IP addresses for a given host name. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [InetAddress](InetAddress.md)!>! | an array of all the IP addresses for a given host name. |
 
 | Exceptions ||
 |---------------------------------|---------------------------------------------------------------------------------------------------------|
@@ -199,7 +199,7 @@ IPv4 address byte array must be 4 bytes long and IPv6 byte array must be 16 byte
 
 | Return ||
 |-------------------------------------------------------------------------------------|--------------------------------------------------------|
-| [InetAddress](../java/net/InetAddress.md) | an InetAddress object created from the raw IP address. |
+| [InetAddress](InetAddress.md) | an InetAddress object created from the raw IP address. |
 
 | Exceptions ||
 |---------------------------------|------------------------------------|
@@ -233,7 +233,7 @@ IPv4 address byte array must be 4 bytes long and IPv6 byte array must be 16 byte
 
 | Return ||
 |-------------------------------------------------------------------------------------|--------------------------------------------------------|
-| [InetAddress](../java/net/InetAddress.md) | an InetAddress object created from the raw IP address. |
+| [InetAddress](InetAddress.md) | an InetAddress object created from the raw IP address. |
 
 | Exceptions ||
 |---------------------------------|------------------------------------|
@@ -251,7 +251,7 @@ Determines the IP address of a host, given the host's name.
 
 The host name can either be a machine name, such as "`java.sun.com`", or a textual representation of its IP address. If a literal IP address is supplied, only the validity of the address format is checked.
 
-For`host`specified in literal IPv6 address, either the form defined in RFC 2732 or the literal IPv6 address format defined in RFC 2373 is accepted. IPv6 scoped addresses are also supported. See [here](../java/net/Inet6Address.md) for a description of IPv6 scoped addresses.
+For`host`specified in literal IPv6 address, either the form defined in RFC 2732 or the literal IPv6 address format defined in RFC 2373 is accepted. IPv6 scoped addresses are also supported. See [here](Inet6Address.md) for a description of IPv6 scoped addresses.
 
 If the host is`null`then an`InetAddress`representing an address of the loopback interface is returned. See [RFC 3330](http://www.ietf.org/rfc/rfc3330.txt) section 2 and [RFC 2373](http://www.ietf.org/rfc/rfc2373.txt) section 2.5.3.
 
@@ -261,7 +261,7 @@ If the host is`null`then an`InetAddress`representing an address of the loopback 
 
 | Return ||
 |-------------------------------------------------------------------------------------|----------------------------------------|
-| [InetAddress](../java/net/InetAddress.md) | an IP address for the given host name. |
+| [InetAddress](InetAddress.md) | an IP address for the given host name. |
 
 | Exceptions ||
 |---------------------------------|---------------------------------------------------------------------------------------------------------|
@@ -310,7 +310,7 @@ open fun getHostName(): String
 
 Gets the host name for this IP address.
 
-If this InetAddress was created with a host name, this host name will be remembered and returned; otherwise, a reverse name lookup will be performed and the result will be returned based on the system configured name lookup service. If a lookup of the name service is required, call [getCanonicalHostName](../java/net/InetAddress.md)).
+If this InetAddress was created with a host name, this host name will be remembered and returned; otherwise, a reverse name lookup will be performed and the result will be returned based on the system configured name lookup service. If a lookup of the name service is required, call [getCanonicalHostName](InetAddress.md)).
 
 If there is a security manager, its`checkConnect`method is first called with the hostname and`-1`as its arguments to see if the operation is allowed. If the operation is not allowed, it will return the textual representation of the IP address.
 
@@ -320,7 +320,7 @@ If there is a security manager, its`checkConnect`method is first called with the
 
 **See Also**
 
-- [java.net.InetAddress#getCanonicalHostName](../java/net/InetAddress.md)) 
+- [java.net.InetAddress#getCanonicalHostName](InetAddress.md)) 
 
 ### getLocalHost
 
@@ -338,7 +338,7 @@ If there is a security manager, its`checkConnect`method is called with the local
 
 | Return ||
 |-------------------------------------------------------------------------------------|--------------------------------|
-| [InetAddress](../java/net/InetAddress.md) | the address of the local host. |
+| [InetAddress](InetAddress.md) | the address of the local host. |
 
 | Exceptions ||
 |---------------------------------|---------------------------------------------------------------|
@@ -346,7 +346,7 @@ If there is a security manager, its`checkConnect`method is called with the local
 
 **See Also**
 
-- [java.net.InetAddress#getByName(java.lang.String)](../java/net/InetAddress.md)) 
+- [java.net.InetAddress#getByName(java.lang.String)](InetAddress.md)) 
 
 ### getLoopbackAddress
 
@@ -362,7 +362,7 @@ The InetAddress returned will represent the IPv4 loopback address, 127.0.0.1, or
 
 | Return ||
 |-------------------------------------------------------------------------------------|------------------------------------|
-| [InetAddress](../java/net/InetAddress.md) | the InetAddress loopback instance. |
+| [InetAddress](InetAddress.md) | the InetAddress loopback instance. |
 
 ### hashCode
 
@@ -553,7 +553,7 @@ The timeout value, in milliseconds, indicates the maximum amount of time the try
 
 | Parameters ||
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `netif` | [NetworkInterface](../java/net/NetworkInterface.md)?:the NetworkInterface through which the test will be done, or null for any interface |
+| `netif` | [NetworkInterface](NetworkInterface.md)?:the NetworkInterface through which the test will be done, or null for any interface |
 | `ttl` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the maximum numbers of hops to try or 0 for the default |
 | `timeout` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the time, in milliseconds, before the call aborts |
 | --- | --- |

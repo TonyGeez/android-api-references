@@ -6,9 +6,9 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface CharSequence
 ```
 
-| [java.lang.CharSequence](../java/lang/CharSequence.md) |
+| [java.lang.CharSequence](CharSequence.md) |
 
-A `CharSequence` is a readable sequence of `char` values. This interface provides uniform, read-only access to many different kinds of `char` sequences. A `char` value represents a character in the *Basic Multilingual Plane (BMP)* or a surrogate. Refer to [Unicode Character Representation](../java/lang/Character.md) for details.
+A `CharSequence` is a readable sequence of `char` values. This interface provides uniform, read-only access to many different kinds of `char` sequences. A `char` value represents a character in the *Basic Multilingual Plane (BMP)* or a surrogate. Refer to [Unicode Character Representation](Character.md) for details.
 
 This interface does not refine the general contracts of the `https://developer.android.com/reference/kotlin/java/lang/Object#equals(kotlin.Any)` and `https://developer.android.com/reference/kotlin/java/lang/Object#hashCode()` methods. The result of testing two objects that implement `CharSequence` for equality is therefore, in general, undefined. Each object may be implemented by a different class, and there is no guarantee that each class will be capable of testing its instances for equality with those of the other. It is therefore inappropriate to use arbitrary `CharSequence` instances as elements in a set or as keys in a map.
 
@@ -17,8 +17,8 @@ This interface does not refine the general contracts of the `https://developer.a
 | Public methods ||
 |---|---|
 | abstract [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | `https://developer.android.com/reference/kotlin/java/lang/CharSequence#charAt(kotlin.Int)(index: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Returns the `char` value at the specified index. |
-| open [IntStream](../java/util/stream/IntStream.md) | `https://developer.android.com/reference/kotlin/java/lang/CharSequence#chars()()` Returns a stream of `int` zero-extending the `char` values from this sequence. |
-| open [IntStream](../java/util/stream/IntStream.md) | `https://developer.android.com/reference/kotlin/java/lang/CharSequence#codePoints()()` Returns a stream of code point values from this sequence. |
+| open [IntStream](../java.util.stream/IntStream.md) | `https://developer.android.com/reference/kotlin/java/lang/CharSequence#chars()()` Returns a stream of `int` zero-extending the `char` values from this sequence. |
+| open [IntStream](../java.util.stream/IntStream.md) | `https://developer.android.com/reference/kotlin/java/lang/CharSequence#codePoints()()` Returns a stream of code point values from this sequence. |
 | --- | --- |
 | open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/lang/CharSequence#compare(kotlin.CharSequence,%20kotlin.CharSequence)(cs1: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html, cs2: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)` Compares two `CharSequence` instances lexicographically. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/lang/CharSequence#getChars(kotlin.Int,%20kotlin.Int,%20kotlin.CharArray,%20kotlin.Int)(srcBegin: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, srcEnd: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, dst: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html, dstBegin: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Copies characters from this sequence into the given destination array. |
@@ -63,7 +63,7 @@ open fun chars(): IntStream
 
 Returns a stream of `int` zero-extending the `char` values from this sequence. Any char which maps to a [surrogate code point](https://developer.android.com//reference/java/lang/Character.html#unicode) is passed through uninterpreted.
 
-The stream binds to this sequence when the terminal stream operation commences (specifically, for mutable sequences the spliterator for the stream is [*late-binding*](../java/util/Spliterator.md)). If the sequence is modified during that operation then the result is undefined.
+The stream binds to this sequence when the terminal stream operation commences (specifically, for mutable sequences the spliterator for the stream is [*late-binding*](../java.util/Spliterator.md)). If the sequence is modified during that operation then the result is undefined.
 
 | Return ||
 |---|---|
@@ -77,9 +77,9 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 open fun codePoints(): IntStream
 ```
 
-Returns a stream of code point values from this sequence. Any surrogate pairs encountered in the sequence are combined as if by [Character.toCodePoint](../java/lang/Character.md)) and the result is passed to the stream. Any other code units, including ordinary BMP characters, unpaired surrogates, and undefined code units, are zero-extended to `int` values which are then passed to the stream.
+Returns a stream of code point values from this sequence. Any surrogate pairs encountered in the sequence are combined as if by [Character.toCodePoint](Character.md)) and the result is passed to the stream. Any other code units, including ordinary BMP characters, unpaired surrogates, and undefined code units, are zero-extended to `int` values which are then passed to the stream.
 
-The stream binds to this sequence when the terminal stream operation commences (specifically, for mutable sequences the spliterator for the stream is [*late-binding*](../java/util/Spliterator.md)). If the sequence is modified during that operation then the result is undefined.
+The stream binds to this sequence when the terminal stream operation commences (specifically, for mutable sequences the spliterator for the stream is [*late-binding*](../java.util/Spliterator.md)). If the sequence is modified during that operation then the result is undefined.
 
 | Return ||
 |---|---|

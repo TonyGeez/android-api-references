@@ -10,43 +10,43 @@ class NetworkInterface
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.net.NetworkInterface](../java/net/NetworkInterface.md) |
+| ↳ | [java.net.NetworkInterface](NetworkInterface.md) |
 
 This class represents a Network Interface made up of a name, and a list of IP addresses assigned to this interface. It is used to identify the local interface on which a multicast group is joined. Interfaces are normally known by names such as "le0".
 
-Note that information about [NetworkInterface](../java/net/NetworkInterface.md) s may be restricted. For example, non-system apps will only have access to information about [NetworkInterface](../java/net/NetworkInterface.md) s that are associated with an [InetAddress](../java/net/InetAddress.md).
+Note that information about [NetworkInterface](NetworkInterface.md) s may be restricted. For example, non-system apps will only have access to information about [NetworkInterface](NetworkInterface.md) s that are associated with an [InetAddress](InetAddress.md).
 
 ## Summary
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/net/NetworkInterface.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this object against the specified object. |
-| static [NetworkInterface](../java/net/NetworkInterface.md)! | [getByIndex](../java/net/NetworkInterface.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get a network interface given its index. |
-| static [NetworkInterface](../java/net/NetworkInterface.md)! | [getByInetAddress](../java/net/NetworkInterface.md))`(`addr:` ` [InetAddress](../java/net/InetAddress.md)!`)` Convenience method to search for a network interface that has the specified Internet Protocol (IP) address bound to it. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](NetworkInterface.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this object against the specified object. |
+| static [NetworkInterface](NetworkInterface.md)! | [getByIndex](NetworkInterface.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get a network interface given its index. |
+| static [NetworkInterface](NetworkInterface.md)! | [getByInetAddress](NetworkInterface.md))`(`addr:` ` [InetAddress](InetAddress.md)!`)` Convenience method to search for a network interface that has the specified Internet Protocol (IP) address bound to it. |
 | --- | --- |
-| static [NetworkInterface](../java/net/NetworkInterface.md)! | [getByName](../java/net/NetworkInterface.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Searches for the network interface with the specified name. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayName](../java/net/NetworkInterface.md))`()` Get the display name of this network interface. |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getHardwareAddress](../java/net/NetworkInterface.md))`()` Returns the hardware address (usually MAC) of the interface if it has one and if it can be accessed given the current privileges. |
+| static [NetworkInterface](NetworkInterface.md)! | [getByName](NetworkInterface.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Searches for the network interface with the specified name. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDisplayName](NetworkInterface.md))`()` Get the display name of this network interface. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getHardwareAddress](NetworkInterface.md))`()` Returns the hardware address (usually MAC) of the interface if it has one and if it can be accessed given the current privileges. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIndex](../java/net/NetworkInterface.md))`()` Returns the index of this network interface. |
-| [Enumeration](../java/util/Enumeration.md)\< [InetAddress](../java/net/InetAddress.md)!\>! | [getInetAddresses](../java/net/NetworkInterface.md))`()` Convenience method to return an Enumeration with all or a subset of the InetAddresses bound to this network interface. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [InterfaceAddress](../java/net/InterfaceAddress.md)!\>! | [getInterfaceAddresses](../java/net/NetworkInterface.md))`()` Get a List of all or a subset of the`InterfaceAddresses`of this network interface. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIndex](NetworkInterface.md))`()` Returns the index of this network interface. |
+| [Enumeration](../java.util/Enumeration.md)\< [InetAddress](InetAddress.md)!\>! | [getInetAddresses](NetworkInterface.md))`()` Convenience method to return an Enumeration with all or a subset of the InetAddresses bound to this network interface. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [InterfaceAddress](InterfaceAddress.md)!\>! | [getInterfaceAddresses](NetworkInterface.md))`()` Get a List of all or a subset of the`InterfaceAddresses`of this network interface. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMTU](../java/net/NetworkInterface.md))`()` Returns the Maximum Transmission Unit (MTU) of this interface. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](../java/net/NetworkInterface.md))`()` Get the name of this network interface. |
-| static [Enumeration](../java/util/Enumeration.md)\< [NetworkInterface](../java/net/NetworkInterface.md)!\>! | [getNetworkInterfaces](../java/net/NetworkInterface.md))`()` Returns all the interfaces on this machine. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMTU](NetworkInterface.md))`()` Returns the Maximum Transmission Unit (MTU) of this interface. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](NetworkInterface.md))`()` Get the name of this network interface. |
+| static [Enumeration](../java.util/Enumeration.md)\< [NetworkInterface](NetworkInterface.md)!\>! | [getNetworkInterfaces](NetworkInterface.md))`()` Returns all the interfaces on this machine. |
 | --- | --- |
-| [NetworkInterface](../java/net/NetworkInterface.md)! | [getParent](../java/net/NetworkInterface.md))`()` Returns the parent NetworkInterface of this interface if this is a subinterface, or`null`if it is a physical (non virtual) interface or has no parent. |
-| [Enumeration](../java/util/Enumeration.md)\< [NetworkInterface](../java/net/NetworkInterface.md)!\>! | [getSubInterfaces](../java/net/NetworkInterface.md))`()` Get an Enumeration with all the subinterfaces (also known as virtual interfaces) attached to this network interface. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/net/NetworkInterface.md))`()` <br /> |
+| [NetworkInterface](NetworkInterface.md)! | [getParent](NetworkInterface.md))`()` Returns the parent NetworkInterface of this interface if this is a subinterface, or`null`if it is a physical (non virtual) interface or has no parent. |
+| [Enumeration](../java.util/Enumeration.md)\< [NetworkInterface](NetworkInterface.md)!\>! | [getSubInterfaces](NetworkInterface.md))`()` Get an Enumeration with all the subinterfaces (also known as virtual interfaces) attached to this network interface. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](NetworkInterface.md))`()` <br /> |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLoopback](../java/net/NetworkInterface.md))`()` Returns whether a network interface is a loopback interface. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPointToPoint](../java/net/NetworkInterface.md))`()` Returns whether a network interface is a point to point interface. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isUp](../java/net/NetworkInterface.md))`()` Returns whether a network interface is up and running. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLoopback](NetworkInterface.md))`()` Returns whether a network interface is a loopback interface. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPointToPoint](NetworkInterface.md))`()` Returns whether a network interface is a point to point interface. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isUp](NetworkInterface.md))`()` Returns whether a network interface is up and running. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isVirtual](../java/net/NetworkInterface.md))`()` Returns whether this interface is a virtual interface (also called subinterface). |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsMulticast](../java/net/NetworkInterface.md))`()` Returns whether a network interface supports multicasting or not. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/net/NetworkInterface.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isVirtual](NetworkInterface.md))`()` Returns whether this interface is a virtual interface (also called subinterface). |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsMulticast](NetworkInterface.md))`()` Returns whether a network interface supports multicasting or not. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](NetworkInterface.md))`()` <br /> |
 | --- | --- |
 
 ## Public methods
@@ -73,7 +73,7 @@ Two instances of`NetworkInterface`represent the same NetworkInterface if both na
 
 **See Also**
 
-- [java.net.InetAddress#getAddress()](../java/net/InetAddress.md)) 
+- [java.net.InetAddress#getAddress()](InetAddress.md)) 
 
 ### getByIndex
 
@@ -91,7 +91,7 @@ Get a network interface given its index.
 
 | Return ||
 |------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [NetworkInterface](../java/net/NetworkInterface.md)! | the NetworkInterface obtained from its index, or`null`if an interface with the specified index does not exist or [can't be accessed](../java/net/NetworkInterface.md). |
+| [NetworkInterface](NetworkInterface.md)! | the NetworkInterface obtained from its index, or`null`if an interface with the specified index does not exist or [can't be accessed](NetworkInterface.md). |
 
 | Exceptions ||
 |--------------------------------------|-------------------------------|
@@ -116,11 +116,11 @@ If the specified IP address is bound to multiple network interfaces it is not de
 
 | Parameters ||
 |--------|---------------------------------------------------------------------------------------------------------------------|
-| `addr` | [InetAddress](../java/net/InetAddress.md)!:The`InetAddress`to search with. |
+| `addr` | [InetAddress](InetAddress.md)!:The`InetAddress`to search with. |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
-| [NetworkInterface](../java/net/NetworkInterface.md)! | A`NetworkInterface`or`null`if there is no network interface with the specified IP address. |
+| [NetworkInterface](NetworkInterface.md)! | A`NetworkInterface`or`null`if there is no network interface with the specified IP address. |
 
 | Exceptions ||
 |----------------------------------|------------------------------------|
@@ -143,7 +143,7 @@ Searches for the network interface with the specified name.
 
 | Return ||
 |------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [NetworkInterface](../java/net/NetworkInterface.md)! | A`NetworkInterface`with the specified name, or`null`if the network interface with the specified name does not exist or [can't be accessed](../java/net/NetworkInterface.md). |
+| [NetworkInterface](NetworkInterface.md)! | A`NetworkInterface`with the specified name, or`null`if the network interface with the specified name does not exist or [can't be accessed](NetworkInterface.md). |
 
 | Exceptions ||
 |----------------------------------|---------------------------------|
@@ -172,7 +172,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 fun getHardwareAddress(): ByteArray!
 ```
 
-Returns the hardware address (usually MAC) of the interface if it has one and if it can be accessed given the current privileges. If a security manager is set, then the caller must have the permission [NetPermission](../java/net/NetPermission.md)("getNetworkInformation").
+Returns the hardware address (usually MAC) of the interface if it has one and if it can be accessed given the current privileges. If a security manager is set, then the caller must have the permission [NetPermission](NetPermission.md)("getNetworkInformation").
 
 | Return ||
 |------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -198,7 +198,7 @@ Returns the index of this network interface. The index is an integer greater or 
 
 **See Also**
 
-- [#getByIndex(int)](../java/net/NetworkInterface.md)) 
+- [#getByIndex(int)](NetworkInterface.md)) 
 
 ### getInetAddresses
 
@@ -210,11 +210,11 @@ fun getInetAddresses(): Enumeration<InetAddress!>!
 
 Convenience method to return an Enumeration with all or a subset of the InetAddresses bound to this network interface.
 
-If there is a security manager, its`checkConnect`method is called for each InetAddress. Only InetAddresses where the`checkConnect`doesn't throw a SecurityException will be returned in the Enumeration. However, if the caller has the [NetPermission](../java/net/NetPermission.md)("getNetworkInformation") permission, then all InetAddresses are returned.
+If there is a security manager, its`checkConnect`method is called for each InetAddress. Only InetAddresses where the`checkConnect`doesn't throw a SecurityException will be returned in the Enumeration. However, if the caller has the [NetPermission](NetPermission.md)("getNetworkInformation") permission, then all InetAddresses are returned.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| [Enumeration](../java/util/Enumeration.md)< [InetAddress](../java/net/InetAddress.md)!>! | an Enumeration object with all or a subset of the InetAddresses bound to this network interface |
+| [Enumeration](../java.util/Enumeration.md)< [InetAddress](InetAddress.md)!>! | an Enumeration object with all or a subset of the InetAddresses bound to this network interface |
 
 ### getInterfaceAddresses
 
@@ -230,7 +230,7 @@ If there is a security manager, its`checkConnect`method is called with the InetA
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [InterfaceAddress](../java/net/InterfaceAddress.md)!>! | a`List`object with all or a subset of the InterfaceAddresss of this network interface |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [InterfaceAddress](InterfaceAddress.md)!>! | a`List`object with all or a subset of the InterfaceAddresss of this network interface |
 
 ### getMTU
 
@@ -274,13 +274,13 @@ static fun getNetworkInterfaces(): Enumeration<NetworkInterface!>!
 
 Returns all the interfaces on this machine. The`Enumeration`contains at least one element, possibly representing a loopback interface that only supports communication between entities on this machine. NOTE: can use getNetworkInterfaces()+getInetAddresses() to obtain all IP addresses for this node
 
-For non-system apps, this method will only return information for [NetworkInterface](../java/net/NetworkInterface.md) s associated with an [InetAddress](../java/net/InetAddress.md).
+For non-system apps, this method will only return information for [NetworkInterface](NetworkInterface.md) s associated with an [InetAddress](InetAddress.md).
 
 ANDROID NOTE: On Android versions before S (API level 31), this method may throw a NullPointerException if called in an environment where there is a virtual interface without a parent interface present.
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Enumeration](../java/util/Enumeration.md)< [NetworkInterface](../java/net/NetworkInterface.md)!>! | an Enumeration of NetworkInterfaces found on this machine that [are accessible](../java/net/NetworkInterface.md). |
+| [Enumeration](../java.util/Enumeration.md)< [NetworkInterface](NetworkInterface.md)!>! | an Enumeration of NetworkInterfaces found on this machine that [are accessible](NetworkInterface.md). |
 
 | Exceptions ||
 |----------------------------|-------------------------|
@@ -298,7 +298,7 @@ Returns the parent NetworkInterface of this interface if this is a subinterface,
 
 | Return ||
 |------------------------------------------------------------------------------------------------|-----------------------------------------------------|
-| [NetworkInterface](../java/net/NetworkInterface.md)! | The`NetworkInterface`this interface is attached to. |
+| [NetworkInterface](NetworkInterface.md)! | The`NetworkInterface`this interface is attached to. |
 
 ### getSubInterfaces
 
@@ -314,7 +314,7 @@ For instance eth0:1 will be a subinterface to eth0.
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
-| [Enumeration](../java/util/Enumeration.md)< [NetworkInterface](../java/net/NetworkInterface.md)!>! | an Enumeration object with all of the subinterfaces of this network interface |
+| [Enumeration](../java.util/Enumeration.md)< [NetworkInterface](NetworkInterface.md)!>! | an Enumeration object with all of the subinterfaces of this network interface |
 
 ### hashCode
 

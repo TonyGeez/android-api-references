@@ -8,7 +8,7 @@ class OsConstants
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.system.OsConstants](../android/system/OsConstants.md) |
+| ↳ | [android.system.OsConstants](OsConstants.md) |
 
 Constants and helper functions for use with `https://developer.android.com/reference/kotlin/android/system/Os`.
 

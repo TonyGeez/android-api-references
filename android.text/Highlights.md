@@ -4,7 +4,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # Highlights
 
-Kotlin| [Java](../android/text/Highlights.md) 
+Kotlin| [Java](Highlights.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class Highlights
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.text.Highlights](../android/text/Highlights.md) |
+| ↳ | [android.text.Highlights](Highlights.md) |
 
 A class that represents of the highlight of the text.
 
@@ -25,9 +25,9 @@ A class that represents of the highlight of the text.
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Paint](../android/graphics/Paint.md) | [getPaint](../android/text/Highlights.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a paint used for the i-th highlight. |
-| open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | [getRanges](../android/text/Highlights.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns ranges of the i-th highlight. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSize](../android/text/Highlights.md))`()` Returns the number of highlight. |
+| open [Paint](../android.graphics/Paint.md) | [getPaint](Highlights.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a paint used for the i-th highlight. |
+| open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html) | [getRanges](Highlights.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns ranges of the i-th highlight. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSize](Highlights.md))`()` Returns the number of highlight. |
 | --- | --- |
 
 ## Public methods
@@ -44,11 +44,11 @@ Returns a paint used for the i-th highlight.
 
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):an index of the highlight. Must be between 0 and [getSize()](../android/text/Highlights.md)) |
+| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):an index of the highlight. Must be between 0 and [getSize()](Highlights.md)) |
 
 | Return ||
 |--------------------------------------------------------------------------------------|------------------|
-| [Paint](../android/graphics/Paint.md) | the paint object |
+| [Paint](../android.graphics/Paint.md) | the paint object |
 
 **See Also**
 
@@ -67,7 +67,7 @@ Returns ranges of the i-th highlight. Ranges are represented of flattened inclus
 
 | Parameters ||
 |---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):an index of the highlight. Must be between 0 and [getSize()](../android/text/Highlights.md)) |
+| `index` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):an index of the highlight. Must be between 0 and [getSize()](Highlights.md)) |
 
 | Return ||
 |---------------------------------------------------------------------------------------|-----------------------|

@@ -5,7 +5,7 @@ Also in [Ad Services Extensions 4](https://developer.android.com/sdkExtensions)
 
 # AdServicesException
 
-Kotlin| [Java](../android/adservices/exceptions/AdServicesException.md) 
+Kotlin| [Java](AdServicesException.md) 
 | --- | --- |
 
 ```
@@ -15,8 +15,8 @@ open class AdServicesException : Exception
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||
-| | | ↳ | [android.adservices.exceptions.AdServicesException](../android/adservices/exceptions/AdServicesException.md) |
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) ||
+| | | ↳ | [android.adservices.exceptions.AdServicesException](AdServicesException.md) |
 | --- | --- | --- | --- |
 
 Exception thrown by AdServices.
@@ -25,8 +25,8 @@ Exception thrown by AdServices.
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [AdServicesException](../android/adservices/exceptions/AdServicesException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` <br /> |
-| [AdServicesException](../android/adservices/exceptions/AdServicesException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `e:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?`)` <br /> |
+| [AdServicesException](AdServicesException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`)` <br /> |
+| [AdServicesException](AdServicesException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?`, `e:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)?`)` <br /> |
 
 ## Public constructors
 

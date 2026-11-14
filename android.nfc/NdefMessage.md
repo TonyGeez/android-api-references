@@ -4,7 +4,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 
 # NdefMessage
 
-Kotlin| [Java](../android/nfc/NdefMessage.md) 
+Kotlin| [Java](NdefMessage.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class NdefMessage : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.nfc.NdefMessage](../android/nfc/NdefMessage.md) |
+| ↳ | [android.nfc.NdefMessage](NdefMessage.md) |
 
 Represents an immutable NDEF Message.
 
@@ -23,40 +23,40 @@ NDEF defines messages and records. An NDEF Record contains typed data, such as M
 
 When an Android device receives an NDEF Message (for example by reading an NFC tag) it processes it through a dispatch mechanism to determine an activity to launch. The type of the*first*record in the message has special importance for message dispatch, so design this record carefully.
 
-Use[NdefMessage(byte[])](https://developer.android.com/reference/kotlin/android/nfc/NdefMessage#NdefMessage(kotlin.ByteArray))to construct an NDEF Message from binary data, or[NdefMessage(android.nfc.NdefRecord[])](https://developer.android.com/reference/kotlin/android/nfc/NdefMessage#NdefMessage(kotlin.Array))to construct from one or more [NdefRecord](../android/nfc/NdefRecord.md) s.
+Use[NdefMessage(byte[])](https://developer.android.com/reference/kotlin/android/nfc/NdefMessage#NdefMessage(kotlin.ByteArray))to construct an NDEF Message from binary data, or[NdefMessage(android.nfc.NdefRecord[])](https://developer.android.com/reference/kotlin/android/nfc/NdefMessage#NdefMessage(kotlin.Array))to construct from one or more [NdefRecord](NdefRecord.md) s.
 
-[NdefMessage](../android/nfc/NdefMessage.md) and [NdefRecord](../android/nfc/NdefRecord.md) implementations are always available, even on Android devices that do not have NFC hardware.
+[NdefMessage](NdefMessage.md) and [NdefRecord](NdefRecord.md) implementations are always available, even on Android devices that do not have NFC hardware.
 
-[NdefRecord](../android/nfc/NdefRecord.md) s are intended to be immutable (and thread-safe), however they may contain mutable fields. So take care not to modify mutable fields passed into constructors, or modify mutable fields obtained by getter methods, unless such modification is explicitly marked as safe.
+[NdefRecord](NdefRecord.md) s are intended to be immutable (and thread-safe), however they may contain mutable fields. So take care not to modify mutable fields passed into constructors, or modify mutable fields obtained by getter methods, unless such modification is explicitly marked as safe.
 
 ## Summary
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android.os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android.os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android.os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [NdefMessage](../android/nfc/NdefMessage.md))`(`record:` ` [NdefRecord](../android/nfc/NdefRecord.md)!`, `vararg` `records:` ` [NdefRecord](../android/nfc/NdefRecord.md)!`)` Construct an NDEF Message from one or more NDEF Records. |
-| [NdefMessage](../android/nfc/NdefMessage.md))`(`records:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [NdefRecord](../android/nfc/NdefRecord.md)!>!`)` Construct an NDEF Message from one or more NDEF Records. |
-| [NdefMessage](../android/nfc/NdefMessage.md))`(`data:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Construct an NDEF Message by parsing raw bytes. |
+| [NdefMessage](NdefMessage.md))`(`record:` ` [NdefRecord](NdefRecord.md)!`, `vararg` `records:` ` [NdefRecord](NdefRecord.md)!`)` Construct an NDEF Message from one or more NDEF Records. |
+| [NdefMessage](NdefMessage.md))`(`records:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [NdefRecord](NdefRecord.md)!>!`)` Construct an NDEF Message from one or more NDEF Records. |
+| [NdefMessage](NdefMessage.md))`(`data:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Construct an NDEF Message by parsing raw bytes. |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/nfc/NdefMessage.md))`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/nfc/NdefMessage.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Returns true if the specified NDEF Message contains identical NDEF Records. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getByteArrayLength](../android/nfc/NdefMessage.md))`()` Return the length of this NDEF Message if it is written to a byte array with [toByteArray](../android/nfc/NdefMessage.md)). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](NdefMessage.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](NdefMessage.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Returns true if the specified NDEF Message contains identical NDEF Records. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getByteArrayLength](NdefMessage.md))`()` Return the length of this NDEF Message if it is written to a byte array with [toByteArray](NdefMessage.md)). |
 | --- | --- |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [NdefRecord](../android/nfc/NdefRecord.md)!\>! | [getRecords](../android/nfc/NdefMessage.md))`()` Get the NDEF Records inside this NDEF Message. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/nfc/NdefMessage.md))`()` <br /> |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [toByteArray](../android/nfc/NdefMessage.md))`()` Return this NDEF Message as raw bytes. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [NdefRecord](NdefRecord.md)!\>! | [getRecords](NdefMessage.md))`()` Get the NDEF Records inside this NDEF Message. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](NdefMessage.md))`()` <br /> |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [toByteArray](NdefMessage.md))`()` Return this NDEF Message as raw bytes. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/nfc/NdefMessage.md))`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/nfc/NdefMessage.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](NdefMessage.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](NdefMessage.md))`(`dest:` ` [Parcel](../android.os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [NdefMessage](../android/nfc/NdefMessage.md)!\> | [CREATOR](../android/nfc/NdefMessage.md) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [NdefMessage](NdefMessage.md)!\> | [CREATOR](NdefMessage.md) <br /> |
 
 ## Public constructors
 
@@ -74,8 +74,8 @@ Construct an NDEF Message from one or more NDEF Records.
 
 | Parameters ||
 |-----------|--------------------------------------------------------------------------------------------------------------------|
-| `record` | [NdefRecord](../android/nfc/NdefRecord.md)!:first record (mandatory) |
-| `records` | [NdefRecord](../android/nfc/NdefRecord.md)!:additional records (optional) |
+| `record` | [NdefRecord](NdefRecord.md)!:first record (mandatory) |
+| `records` | [NdefRecord](NdefRecord.md)!:additional records (optional) |
 
 ### NdefMessage
 
@@ -89,7 +89,7 @@ Construct an NDEF Message from one or more NDEF Records.
 
 | Parameters ||
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `records` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [NdefRecord](../android/nfc/NdefRecord.md)!\>!:one or more records |
+| `records` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [NdefRecord](NdefRecord.md)!\>!:one or more records |
 
 ### NdefMessage
 
@@ -103,11 +103,11 @@ Construct an NDEF Message by parsing raw bytes.
 
 Strict validation of the NDEF binary structure is performed: there must be at least one record, every record flag must be correct, and the total length of the message must match the length of the input data.
 
-This parser can handle chunked records, and converts them into logical [NdefRecord](../android/nfc/NdefRecord.md) s within the message.
+This parser can handle chunked records, and converts them into logical [NdefRecord](NdefRecord.md) s within the message.
 
 Once the input data has been parsed to one or more logical records, basic validation of the tnf, type, id, and payload fields of each record is performed, as per the documentation on on[NdefRecord.NdefRecord(short, byte[], byte[], byte[])](https://developer.android.com/reference/kotlin/android/nfc/NdefRecord#NdefRecord(kotlin.Short,%20kotlin.ByteArray,%20kotlin.ByteArray,%20kotlin.ByteArray))
 
-If either strict validation of the binary format fails, or basic validation during record construction fails, a [FormatException](../android/nfc/FormatException.md) is thrown
+If either strict validation of the binary format fails, or basic validation during record construction fails, a [FormatException](FormatException.md) is thrown
 
 Deep inspection of the type, id and payload fields of each record is not performed, so it is possible to parse input that has a valid binary format and confirms to the basic validation requirements of[NdefRecord.NdefRecord(short, byte[], byte[], byte[])](https://developer.android.com/reference/kotlin/android/nfc/NdefRecord#NdefRecord(kotlin.Short,%20kotlin.ByteArray,%20kotlin.ByteArray,%20kotlin.ByteArray)), but fails more strict requirements as specified by the NFC Forum.
 
@@ -133,7 +133,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) |
 
 ### equals
 
@@ -161,17 +161,17 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 fun getByteArrayLength(): Int
 ```
 
-Return the length of this NDEF Message if it is written to a byte array with [toByteArray](../android/nfc/NdefMessage.md)).
+Return the length of this NDEF Message if it is written to a byte array with [toByteArray](NdefMessage.md)).
 
-An NDEF Message can be formatted to bytes in different ways depending on chunking, SR, and ID flags, so the length returned by this method may not be equal to the length of the original byte array used to construct this NDEF Message. However it will always be equal to the length of the byte array produced by [toByteArray](../android/nfc/NdefMessage.md)).
+An NDEF Message can be formatted to bytes in different ways depending on chunking, SR, and ID flags, so the length returned by this method may not be equal to the length of the original byte array used to construct this NDEF Message. However it will always be equal to the length of the byte array produced by [toByteArray](NdefMessage.md)).
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | length of this NDEF Message when written to bytes with [toByteArray](../android/nfc/NdefMessage.md)) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | length of this NDEF Message when written to bytes with [toByteArray](NdefMessage.md)) |
 
 **See Also**
 
-- [#toByteArray](../android/nfc/NdefMessage.md)) 
+- [#toByteArray](NdefMessage.md)) 
 
 ### getRecords
 
@@ -183,7 +183,7 @@ fun getRecords(): Array<NdefRecord!>!
 
 Get the NDEF Records inside this NDEF Message.
 
-An [NdefMessage](../android/nfc/NdefMessage.md) always has one or more NDEF Records: so the following code to retrieve the first record is always safe (no need to check for null or array length \>= 1): 
+An [NdefMessage](NdefMessage.md) always has one or more NDEF Records: so the following code to retrieve the first record is always safe (no need to check for null or array length \>= 1): 
 
 ```kotlin
 NdefRecord firstRecord = ndefMessage.getRecords()[0];
@@ -192,7 +192,7 @@ NdefRecord firstRecord = ndefMessage.getRecords()[0];
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [NdefRecord](../android/nfc/NdefRecord.md)!>! | array of one or more NDEF records. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [NdefRecord](NdefRecord.md)!>! | array of one or more NDEF records. |
 
 ### hashCode
 
@@ -253,8 +253,8 @@ fun writeToParcel(
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](../android/os/Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android.os/Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

@@ -10,9 +10,9 @@ open class CertPathTrustManagerParameters : ManagerFactoryParameters
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.net.ssl.CertPathTrustManagerParameters](../javax/net/ssl/CertPathTrustManagerParameters.md) |
+| ↳ | [javax.net.ssl.CertPathTrustManagerParameters](CertPathTrustManagerParameters.md) |
 
-A wrapper for CertPathParameters. This class is used to pass validation settings to CertPath based [TrustManager](../javax/net/ssl/TrustManager.md) s using the [TrustManagerFactory.init()](../javax/net/ssl/TrustManagerFactory.md))method.
+A wrapper for CertPathParameters. This class is used to pass validation settings to CertPath based [TrustManager](TrustManager.md) s using the [TrustManagerFactory.init()](TrustManagerFactory.md))method.
 
 Instances of this class are immutable.
 
@@ -20,11 +20,11 @@ Instances of this class are immutable.
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [CertPathTrustManagerParameters](../javax/net/ssl/CertPathTrustManagerParameters.md))`(`parameters:` ` [CertPathParameters](../java/security/cert/CertPathParameters.md)!`)` Construct new CertPathTrustManagerParameters from the specified parameters. |
+| [CertPathTrustManagerParameters](CertPathTrustManagerParameters.md))`(`parameters:` ` [CertPathParameters](../java.security.cert/CertPathParameters.md)!`)` Construct new CertPathTrustManagerParameters from the specified parameters. |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [CertPathParameters](../java/security/cert/CertPathParameters.md)! | [getParameters](../javax/net/ssl/CertPathTrustManagerParameters.md))`()` Return a clone of the CertPathParameters encapsulated by this class. |
+| open [CertPathParameters](../java.security.cert/CertPathParameters.md)! | [getParameters](CertPathTrustManagerParameters.md))`()` Return a clone of the CertPathParameters encapsulated by this class. |
 
 ## Public constructors
 
@@ -40,7 +40,7 @@ Construct new CertPathTrustManagerParameters from the specified parameters. The 
 
 | Parameters ||
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| `parameters` | [CertPathParameters](../java/security/cert/CertPathParameters.md)!:the CertPathParameters to be used |
+| `parameters` | [CertPathParameters](../java.security.cert/CertPathParameters.md)!:the CertPathParameters to be used |
 
 | Exceptions ||
 |----------------------------------|-----------------------|
@@ -60,4 +60,4 @@ Return a clone of the CertPathParameters encapsulated by this class.
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
-| [CertPathParameters](../java/security/cert/CertPathParameters.md)! | a clone of the CertPathParameters encapsulated by this class. |
+| [CertPathParameters](../java.security.cert/CertPathParameters.md)! | a clone of the CertPathParameters encapsulated by this class. |

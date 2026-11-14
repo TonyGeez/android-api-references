@@ -11,10 +11,10 @@ open class ShortBufferException : GeneralSecurityException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
-| | | ↳ | [java.security.GeneralSecurityException](../java/security/GeneralSecurityException.md) ||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) |||
+| | | ↳ | [java.security.GeneralSecurityException](../java.security/GeneralSecurityException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [javax.crypto.ShortBufferException](../javax/crypto/ShortBufferException.md) |
+| | | | ↳ | [javax.crypto.ShortBufferException](ShortBufferException.md) |
 
 This exception is thrown when an output buffer provided by the user is too short to hold the operation result.
 
@@ -22,8 +22,8 @@ This exception is thrown when an output buffer provided by the user is too short
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ShortBufferException](../javax/crypto/ShortBufferException.md))`()` Constructs a ShortBufferException with no detail message. |
-| [ShortBufferException](../javax/crypto/ShortBufferException.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a ShortBufferException with the specified detail message. |
+| [ShortBufferException](ShortBufferException.md))`()` Constructs a ShortBufferException with no detail message. |
+| [ShortBufferException](ShortBufferException.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a ShortBufferException with the specified detail message. |
 
 ## Public constructors
 

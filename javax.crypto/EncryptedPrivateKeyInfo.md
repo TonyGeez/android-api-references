@@ -10,7 +10,7 @@ open class EncryptedPrivateKeyInfo
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.crypto.EncryptedPrivateKeyInfo](../javax/crypto/EncryptedPrivateKeyInfo.md) |
+| ↳ | [javax.crypto.EncryptedPrivateKeyInfo](EncryptedPrivateKeyInfo.md) |
 
 This class implements the`EncryptedPrivateKeyInfo`type as defined in PKCS #8.
 
@@ -31,22 +31,22 @@ EncryptedPrivateKeyInfo ::=  SEQUENCE {
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [EncryptedPrivateKeyInfo](../javax/crypto/EncryptedPrivateKeyInfo.md))`(`encoded:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Constructs (i.e., parses) an |
-| [EncryptedPrivateKeyInfo](../javax/crypto/EncryptedPrivateKeyInfo.md))`(`algName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `encryptedData:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Constructs an`EncryptedPrivateKeyInfo`from the encryption algorithm name and the encrypted data. |
-| [EncryptedPrivateKeyInfo](../javax/crypto/EncryptedPrivateKeyInfo.md))`(`algParams:` ` [AlgorithmParameters](../java/security/AlgorithmParameters.md)!`, `encryptedData:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Constructs an`EncryptedPrivateKeyInfo`from the encryption algorithm parameters and the encrypted data. |
+| [EncryptedPrivateKeyInfo](EncryptedPrivateKeyInfo.md))`(`encoded:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Constructs (i.e., parses) an |
+| [EncryptedPrivateKeyInfo](EncryptedPrivateKeyInfo.md))`(`algName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `encryptedData:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Constructs an`EncryptedPrivateKeyInfo`from the encryption algorithm name and the encrypted data. |
+| [EncryptedPrivateKeyInfo](EncryptedPrivateKeyInfo.md))`(`algParams:` ` [AlgorithmParameters](../java.security/AlgorithmParameters.md)!`, `encryptedData:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`)` Constructs an`EncryptedPrivateKeyInfo`from the encryption algorithm parameters and the encrypted data. |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAlgName](../javax/crypto/EncryptedPrivateKeyInfo.md))`()` Returns the encryption algorithm. |
-| open [AlgorithmParameters](../java/security/AlgorithmParameters.md)! | [getAlgParameters](../javax/crypto/EncryptedPrivateKeyInfo.md))`()` Returns the algorithm parameters used by the encryption algorithm. |
-| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getEncoded](../javax/crypto/EncryptedPrivateKeyInfo.md))`()` Returns the ASN. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getAlgName](EncryptedPrivateKeyInfo.md))`()` Returns the encryption algorithm. |
+| open [AlgorithmParameters](../java.security/AlgorithmParameters.md)! | [getAlgParameters](EncryptedPrivateKeyInfo.md))`()` Returns the algorithm parameters used by the encryption algorithm. |
+| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getEncoded](EncryptedPrivateKeyInfo.md))`()` Returns the ASN. |
 | --- | --- |
-| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getEncryptedData](../javax/crypto/EncryptedPrivateKeyInfo.md))`()` Returns the encrypted data. |
-| open [PKCS8EncodedKeySpec](../java/security/spec/PKCS8EncodedKeySpec.md)! | [getKeySpec](../javax/crypto/EncryptedPrivateKeyInfo.md))`(`decryptKey:` ` [Key](../java/security/Key.md)!`)` Extract the enclosed PKCS8EncodedKeySpec object from the encrypted data and return it. |
-| open [PKCS8EncodedKeySpec](../java/security/spec/PKCS8EncodedKeySpec.md)! | [getKeySpec](../javax/crypto/EncryptedPrivateKeyInfo.md))`(`decryptKey:` ` [Key](../java/security/Key.md)!`, `providerName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Extract the enclosed PKCS8EncodedKeySpec object from the encrypted data and return it. |
+| open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getEncryptedData](EncryptedPrivateKeyInfo.md))`()` Returns the encrypted data. |
+| open [PKCS8EncodedKeySpec](../java.security.spec/PKCS8EncodedKeySpec.md)! | [getKeySpec](EncryptedPrivateKeyInfo.md))`(`decryptKey:` ` [Key](../java.security/Key.md)!`)` Extract the enclosed PKCS8EncodedKeySpec object from the encrypted data and return it. |
+| open [PKCS8EncodedKeySpec](../java.security.spec/PKCS8EncodedKeySpec.md)! | [getKeySpec](EncryptedPrivateKeyInfo.md))`(`decryptKey:` ` [Key](../java.security/Key.md)!`, `providerName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Extract the enclosed PKCS8EncodedKeySpec object from the encrypted data and return it. |
 | --- | --- |
-| open [PKCS8EncodedKeySpec](../java/security/spec/PKCS8EncodedKeySpec.md)! | [getKeySpec](../javax/crypto/EncryptedPrivateKeyInfo.md))`(`decryptKey:` ` [Key](../java/security/Key.md)!`, `provider:` ` [Provider](../java/security/Provider.md)!`)` Extract the enclosed PKCS8EncodedKeySpec object from the encrypted data and return it. |
-| open [PKCS8EncodedKeySpec](../java/security/spec/PKCS8EncodedKeySpec.md)! | [getKeySpec](../javax/crypto/EncryptedPrivateKeyInfo.md))`(`cipher:` ` [Cipher](../javax/crypto/Cipher.md)!`)` Extract the enclosed PKCS8EncodedKeySpec object from the encrypted data and return it. |
+| open [PKCS8EncodedKeySpec](../java.security.spec/PKCS8EncodedKeySpec.md)! | [getKeySpec](EncryptedPrivateKeyInfo.md))`(`decryptKey:` ` [Key](../java.security/Key.md)!`, `provider:` ` [Provider](../java.security/Provider.md)!`)` Extract the enclosed PKCS8EncodedKeySpec object from the encrypted data and return it. |
+| open [PKCS8EncodedKeySpec](../java.security.spec/PKCS8EncodedKeySpec.md)! | [getKeySpec](EncryptedPrivateKeyInfo.md))`(`cipher:` ` [Cipher](Cipher.md)!`)` Extract the enclosed PKCS8EncodedKeySpec object from the encrypted data and return it. |
 
 ## Public constructors
 
@@ -109,7 +109,7 @@ Constructs an`EncryptedPrivateKeyInfo`from the encryption algorithm parameters a
 
 | Parameters ||
 |-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `algParams` | [AlgorithmParameters](../java/security/AlgorithmParameters.md)!:the algorithm parameters for the encryption algorithm.`algParams.getEncoded()`should return the ASN.1 encoded bytes of the`parameters`field of the`AlgorithmIdentifer`component of the`EncryptedPrivateKeyInfo`type. |
+| `algParams` | [AlgorithmParameters](../java.security/AlgorithmParameters.md)!:the algorithm parameters for the encryption algorithm.`algParams.getEncoded()`should return the ASN.1 encoded bytes of the`parameters`field of the`AlgorithmIdentifer`component of the`EncryptedPrivateKeyInfo`type. |
 | `encryptedData` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!:encrypted data. The contents of`encrypedData`are copied to protect against subsequent modification when constructing this object. |
 
 | Exceptions ||
@@ -149,7 +149,7 @@ Returns the algorithm parameters used by the encryption algorithm.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------|---------------------------|
-| [AlgorithmParameters](../java/security/AlgorithmParameters.md)! | the algorithm parameters. |
+| [AlgorithmParameters](../java.security/AlgorithmParameters.md)! | the algorithm parameters. |
 
 ### getEncoded
 
@@ -195,11 +195,11 @@ Extract the enclosed PKCS8EncodedKeySpec object from the encrypted data and retu
 
 | Parameters ||
 |--------------|----------------------------------------------------------------------------------------------------------------------------|
-| `decryptKey` | [Key](../java/security/Key.md)!:key used for decrypting the encrypted data. |
+| `decryptKey` | [Key](../java.security/Key.md)!:key used for decrypting the encrypted data. |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------|---------------------------------|
-| [PKCS8EncodedKeySpec](../java/security/spec/PKCS8EncodedKeySpec.md)! | the PKCS8EncodedKeySpec object. |
+| [PKCS8EncodedKeySpec](../java.security.spec/PKCS8EncodedKeySpec.md)! | the PKCS8EncodedKeySpec object. |
 
 | Exceptions ||
 |------------------------------------------|------------------------------------------------------------------------------------------------------------------|
@@ -223,12 +223,12 @@ Extract the enclosed PKCS8EncodedKeySpec object from the encrypted data and retu
 
 | Parameters ||
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| `decryptKey` | [Key](../java/security/Key.md)!:key used for decrypting the encrypted data. |
+| `decryptKey` | [Key](../java.security/Key.md)!:key used for decrypting the encrypted data. |
 | `providerName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the name of provider whose Cipher implementation will be used. |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------|---------------------------------|
-| [PKCS8EncodedKeySpec](../java/security/spec/PKCS8EncodedKeySpec.md)! | the PKCS8EncodedKeySpec object. |
+| [PKCS8EncodedKeySpec](../java.security.spec/PKCS8EncodedKeySpec.md)! | the PKCS8EncodedKeySpec object. |
 
 | Exceptions ||
 |------------------------------------------|------------------------------------------------------------------------------------------------------------------|
@@ -253,12 +253,12 @@ Extract the enclosed PKCS8EncodedKeySpec object from the encrypted data and retu
 
 | Parameters ||
 |--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `decryptKey` | [Key](../java/security/Key.md)!:key used for decrypting the encrypted data. |
-| `provider` | [Provider](../java/security/Provider.md)!:the name of provider whose Cipher implementation will be used. |
+| `decryptKey` | [Key](../java.security/Key.md)!:key used for decrypting the encrypted data. |
+| `provider` | [Provider](../java.security/Provider.md)!:the name of provider whose Cipher implementation will be used. |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------|---------------------------------|
-| [PKCS8EncodedKeySpec](../java/security/spec/PKCS8EncodedKeySpec.md)! | the PKCS8EncodedKeySpec object. |
+| [PKCS8EncodedKeySpec](../java.security.spec/PKCS8EncodedKeySpec.md)! | the PKCS8EncodedKeySpec object. |
 
 | Exceptions ||
 |------------------------------------------|------------------------------------------------------------------------------------------------------------------|
@@ -280,11 +280,11 @@ Note: In order to successfully retrieve the enclosed PKCS8EncodedKeySpec object,
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `cipher` | [Cipher](../javax/crypto/Cipher.md)!:the initialized cipher object which will be used for decrypting the encrypted data. |
+| `cipher` | [Cipher](Cipher.md)!:the initialized cipher object which will be used for decrypting the encrypted data. |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------|---------------------------------|
-| [PKCS8EncodedKeySpec](../java/security/spec/PKCS8EncodedKeySpec.md)! | the PKCS8EncodedKeySpec object. |
+| [PKCS8EncodedKeySpec](../java.security.spec/PKCS8EncodedKeySpec.md)! | the PKCS8EncodedKeySpec object. |
 
 | Exceptions ||
 |----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|

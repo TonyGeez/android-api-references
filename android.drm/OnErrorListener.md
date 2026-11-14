@@ -24,7 +24,7 @@ Interface definition for a callback that receives information about DRM framewor
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onError](../android/drm/DrmManagerClient.OnErrorListener.md))`(`client:` ` [DrmManagerClient](../android/drm/DrmManagerClient.md)!`, `event:` ` [DrmErrorEvent](../android/drm/DrmErrorEvent.md)!`)` Called when the DRM framework sends error information. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onError](../android/drm/DrmManagerClient.OnErrorListener.md))`(`client:` ` [DrmManagerClient](DrmManagerClient.md)!`, `event:` ` [DrmErrorEvent](DrmErrorEvent.md)!`)` Called when the DRM framework sends error information. |
 
 ## Public methods
 
@@ -45,5 +45,5 @@ Called when the DRM framework sends error information.
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `client` | [DrmManagerClient](../android/drm/DrmManagerClient.md)!:The`DrmManagerClient`instance. |
-| `event` | [DrmErrorEvent](../android/drm/DrmErrorEvent.md)!:The [DrmErrorEvent](../android/drm/DrmErrorEvent.md) instance that wraps the error type and message. |
+| `client` | [DrmManagerClient](DrmManagerClient.md)!:The`DrmManagerClient`instance. |
+| `event` | [DrmErrorEvent](DrmErrorEvent.md)!:The [DrmErrorEvent](DrmErrorEvent.md) instance that wraps the error type and message. |

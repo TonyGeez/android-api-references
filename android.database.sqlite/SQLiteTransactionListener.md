@@ -4,14 +4,14 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 
 # SQLiteTransactionListener
 
-Kotlin | [Java](../android/database/sqlite/SQLiteTransactionListener.md) 
+Kotlin | [Java](SQLiteTransactionListener.md) 
 | --- | --- |
 
 ```
 interface SQLiteTransactionListener
 ```
 
-| [android.database.sqlite.SQLiteTransactionListener](../android/database/sqlite/SQLiteTransactionListener.md) |
+| [android.database.sqlite.SQLiteTransactionListener](SQLiteTransactionListener.md) |
 
 A listener for transaction events.
 
@@ -19,9 +19,9 @@ A listener for transaction events.
 
 | Public methods ||
 |---------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onBegin](../android/database/sqlite/SQLiteTransactionListener.md))`()` Called immediately after the transaction begins. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onCommit](../android/database/sqlite/SQLiteTransactionListener.md))`()` Called immediately before commiting the transaction. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onRollback](../android/database/sqlite/SQLiteTransactionListener.md))`()` Called if the transaction is about to be rolled back. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onBegin](SQLiteTransactionListener.md))`()` Called immediately after the transaction begins. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onCommit](SQLiteTransactionListener.md))`()` Called immediately before commiting the transaction. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onRollback](SQLiteTransactionListener.md))`()` Called if the transaction is about to be rolled back. |
 | --- | --- |
 
 ## Public methods

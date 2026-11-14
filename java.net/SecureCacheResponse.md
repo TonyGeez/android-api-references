@@ -10,8 +10,8 @@ abstract class SecureCacheResponse : CacheResponse
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.net.CacheResponse](../java/net/CacheResponse.md) ||
-| | ↳ | [java.net.SecureCacheResponse](../java/net/SecureCacheResponse.md) |
+| ↳ | [java.net.CacheResponse](CacheResponse.md) ||
+| | ↳ | [java.net.SecureCacheResponse](SecureCacheResponse.md) |
 
 Represents a cache response originally retrieved through secure means, such as TLS.
 
@@ -19,20 +19,20 @@ Represents a cache response originally retrieved through secure means, such as T
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SecureCacheResponse](../java/net/SecureCacheResponse.md))`()` <br /> |
+| [SecureCacheResponse](SecureCacheResponse.md))`()` <br /> |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getCipherSuite](../java/net/SecureCacheResponse.md))`()` Returns the cipher suite in use on the original connection that retrieved the network resource. |
-| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Certificate](../java/security/cert/Certificate.md)!\>! | [getLocalCertificateChain](../java/net/SecureCacheResponse.md))`()` Returns the certificate chain that were sent to the server during handshaking of the original connection that retrieved the network resource. |
-| abstract [Principal](../java/security/Principal.md)! | [getLocalPrincipal](../java/net/SecureCacheResponse.md))`()` Returns the principal that was sent to the server during handshaking in the original connection that retrieved the network resource. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getCipherSuite](SecureCacheResponse.md))`()` Returns the cipher suite in use on the original connection that retrieved the network resource. |
+| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Certificate](../java.security.cert/Certificate.md)!\>! | [getLocalCertificateChain](SecureCacheResponse.md))`()` Returns the certificate chain that were sent to the server during handshaking of the original connection that retrieved the network resource. |
+| abstract [Principal](../java.security/Principal.md)! | [getLocalPrincipal](SecureCacheResponse.md))`()` Returns the principal that was sent to the server during handshaking in the original connection that retrieved the network resource. |
 | --- | --- |
-| abstract [Principal](../java/security/Principal.md)! | [getPeerPrincipal](../java/net/SecureCacheResponse.md))`()` Returns the server's principal which was established as part of defining the session during the original connection that retrieved the network resource. |
-| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Certificate](../java/security/cert/Certificate.md)!\>! | [getServerCertificateChain](../java/net/SecureCacheResponse.md))`()` Returns the server's certificate chain, which was established as part of defining the session in the original connection that retrieved the network resource, from cache. |
+| abstract [Principal](../java.security/Principal.md)! | [getPeerPrincipal](SecureCacheResponse.md))`()` Returns the server's principal which was established as part of defining the session during the original connection that retrieved the network resource. |
+| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Certificate](../java.security.cert/Certificate.md)!\>! | [getServerCertificateChain](SecureCacheResponse.md))`()` Returns the server's certificate chain, which was established as part of defining the session in the original connection that retrieved the network resource, from cache. |
 
 | Inherited functions ||
 |---|---|
-| From class [CacheResponse](../java/net/CacheResponse.md) |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------| | [InputStream](../java/io/InputStream.md)! | [getBody](../java/net/CacheResponse.md))`()` <br /> Returns the response body as an InputStream. <br /> | | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!>! | [getHeaders](../java/net/CacheResponse.md))`()` <br /> Returns the response headers as a Map. <br /> | ||
+| From class [CacheResponse](CacheResponse.md) |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------| | [InputStream](../java.io/InputStream.md)! | [getBody](CacheResponse.md))`()` <br /> Returns the response body as an InputStream. <br /> | | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!>! | [getHeaders](CacheResponse.md))`()` <br /> Returns the response headers as a Map. <br /> | ||
 
 ## Public constructors
 
@@ -72,7 +72,7 @@ Returns the certificate chain that were sent to the server during handshaking of
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Certificate](../java/security/cert/Certificate.md)!>! | an immutable List of Certificate representing the certificate chain that was sent to the server. If no certificate chain was sent, null will be returned. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Certificate](../java.security.cert/Certificate.md)!>! | an immutable List of Certificate representing the certificate chain that was sent to the server. If no certificate chain was sent, null will be returned. |
 
 **See Also**
 
@@ -90,7 +90,7 @@ Returns the principal that was sent to the server during handshaking in the orig
 
 | Return ||
 |--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Principal](../java/security/Principal.md)! | the principal sent to the server. Returns an X500Principal of the end-entity certificate for X509-based cipher suites, and KerberosPrincipal for Kerberos cipher suites. If no principal was sent, then null is returned. |
+| [Principal](../java.security/Principal.md)! | the principal sent to the server. Returns an X500Principal of the end-entity certificate for X509-based cipher suites, and KerberosPrincipal for Kerberos cipher suites. If no principal was sent, then null is returned. |
 
 **See Also**
 
@@ -109,7 +109,7 @@ Returns the server's principal which was established as part of defining the ses
 
 | Return ||
 |--------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Principal](../java/security/Principal.md)! | the server's principal. Returns an X500Principal of the end-entity certiticate for X509-based cipher suites, and KerberosPrincipal for Kerberos cipher suites. |
+| [Principal](../java.security/Principal.md)! | the server's principal. Returns an X500Principal of the end-entity certiticate for X509-based cipher suites, and KerberosPrincipal for Kerberos cipher suites. |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------|
@@ -132,7 +132,7 @@ Returns the server's certificate chain, which was established as part of definin
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Certificate](../java/security/cert/Certificate.md)!>! | an immutable List of Certificate representing the server's certificate chain. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Certificate](../java.security.cert/Certificate.md)!>! | an immutable List of Certificate representing the server's certificate chain. |
 
 | Exceptions ||
 |--------------------------------------------|------------------------------|

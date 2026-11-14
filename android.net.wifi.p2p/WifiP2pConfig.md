@@ -8,7 +8,7 @@ open class WifiP2pConfig : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.wifi.p2p.WifiP2pConfig](../android/net/wifi/p2p/WifiP2pConfig.md) |
+| ↳ | [android.net.wifi.p2p.WifiP2pConfig](WifiP2pConfig.md) |
 
 A class representing a Wi-Fi P2p configuration for setting up a connection
 
@@ -58,7 +58,7 @@ A class representing a Wi-Fi P2p configuration for setting up a connection
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig#getNetworkId()()` Get the network ID of this P2P configuration. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig#getNetworkName()()` Get the network name of this P2P configuration, or null if unset. |
 | --- | --- |
-| open [WifiP2pPairingBootstrappingConfig](../android/net/wifi/p2p/WifiP2pPairingBootstrappingConfig.md)? | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig#getPairingBootstrappingConfig()()` Get the pairing bootstrapping configuration , or null if unset. |
+| open [WifiP2pPairingBootstrappingConfig](WifiP2pPairingBootstrappingConfig.md)? | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig#getPairingBootstrappingConfig()()` Get the pairing bootstrapping configuration , or null if unset. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig#getPairingDiscoveryChannelFrequencyMhz()()` Get the discovery channel frequency in MHz for pairing, or 0 if unset. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig#getPassphrase()()` Get the passphrase of this P2P configuration, or null if unset. |
 | --- | --- |
@@ -71,11 +71,11 @@ A class representing a Wi-Fi P2p configuration for setting up a connection
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [WifiP2pConfig](../android/net/wifi/p2p/WifiP2pConfig.md)!\> | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig#CREATOR:android.os.Parcelable.Creator` Implement the Parcelable interface |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [WifiP2pConfig](WifiP2pConfig.md)!\> | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig#CREATOR:android.os.Parcelable.Creator` Implement the Parcelable interface |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig#deviceAddress:kotlin.String` The device MAC address uniquely identifies a Wi-Fi p2p device |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig#groupOwnerIntent:kotlin.Int` This is an integer value between `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig#GROUP_OWNER_INTENT_MIN:kotlin.Int` and `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig#GROUP_OWNER_INTENT_MAX:kotlin.Int` where `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig#GROUP_OWNER_INTENT_MIN:kotlin.Int` indicates the least inclination to be a group owner and `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig#GROUP_OWNER_INTENT_MAX:kotlin.Int` indicates the highest inclination to be a group owner. |
 | --- | --- |
-| [WpsInfo](../android/net/wifi/WpsInfo.md)! | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig#wps:android.net.wifi.WpsInfo` Wi-Fi Protected Setup information |
+| [WpsInfo](../android.net.wifi/WpsInfo.md)! | `https://developer.android.com/reference/kotlin/android/net/wifi/p2p/WifiP2pConfig#wps:android.net.wifi.WpsInfo` Wi-Fi Protected Setup information |
 
 ## Constants
 
@@ -462,7 +462,7 @@ Implement the Parcelable interface
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

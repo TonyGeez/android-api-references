@@ -8,11 +8,11 @@ abstract class SpellCheckerService : Service
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](../android/content/Context.md) ||||
-| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) |||
-| | | ↳ | [android.app.Service](../android/app/Service.md) ||
+| ↳ | [android.content.Context](../android.content/Context.md) ||||
+| | ↳ | [android.content.ContextWrapper](../android.content/ContextWrapper.md) |||
+| | | ↳ | [android.app.Service](../android.app/Service.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.service.textservice.SpellCheckerService](../android/service/textservice/SpellCheckerService.md) |
+| | | | ↳ | [android.service.textservice.SpellCheckerService](SpellCheckerService.md) |
 
 SpellCheckerService provides an abstract base class for a spell checker. This class combines a service to the system with the spell checker service interface that spell checker must implement.
 
@@ -1058,7 +1058,7 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | Public methods ||
 |---|---|
 | abstract [SpellCheckerService.Session](../android/service/textservice/SpellCheckerService.Session.md)! | `https://developer.android.com/reference/kotlin/android/service/textservice/SpellCheckerService#createSession()()` Factory method to create a spell checker session impl |
-| [IBinder](../android/os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/service/textservice/SpellCheckerService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Implement to return the implementation of the internal spell checker service interface. |
+| [IBinder](../android.os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/service/textservice/SpellCheckerService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Implement to return the implementation of the internal spell checker service interface. |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/app/Service.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/app/Service.html#attachBaseContext(android.content.Context)(newBase: https://developer.android.com/reference/kotlin/android/content/Context.html#!)`
 
@@ -2799,7 +2799,7 @@ Implement to return the implementation of the internal spell checker service int
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
+| `intent` | [Intent](../android.content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
 
 | Return ||
 |---|---|

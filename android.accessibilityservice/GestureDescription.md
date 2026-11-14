@@ -4,7 +4,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # GestureDescription
 
-Kotlin| [Java](../android/accessibilityservice/GestureDescription.md) 
+Kotlin| [Java](GestureDescription.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class GestureDescription
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.accessibilityservice.GestureDescription](../android/accessibilityservice/GestureDescription.md) |
+| ↳ | [android.accessibilityservice.GestureDescription](GestureDescription.md) |
 
 Accessibility services with the [android.R.styleable#AccessibilityService_canPerformGestures](../android/R.styleable.md) property can dispatch gestures. This class describes those gestures. Gestures are made up of one or more strokes. Gestures are immutable once built and will be dispatched to the specified display.
 
@@ -28,12 +28,12 @@ Spatial dimensions throughout are in screen pixels. Time is measured in millisec
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDisplayId](../android/accessibilityservice/GestureDescription.md))`()` Returns the ID of the display this gesture is sent on, for use with [android.hardware.display.DisplayManager#getDisplay(int)](../android/hardware/display/DisplayManager.md)). |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getMaxGestureDuration](../android/accessibilityservice/GestureDescription.md))`()` Get the upper limit on a gesture's duration. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxStrokeCount](../android/accessibilityservice/GestureDescription.md))`()` Get the upper limit for the number of strokes a gesture may contain. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDisplayId](GestureDescription.md))`()` Returns the ID of the display this gesture is sent on, for use with [android.hardware.display.DisplayManager#getDisplay(int)](../android.hardware.display/DisplayManager.md)). |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getMaxGestureDuration](GestureDescription.md))`()` Get the upper limit on a gesture's duration. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxStrokeCount](GestureDescription.md))`()` Get the upper limit for the number of strokes a gesture may contain. |
 | --- | --- |
-| [GestureDescription.StrokeDescription](../android/accessibilityservice/GestureDescription.StrokeDescription.md)! | [getStroke](../android/accessibilityservice/GestureDescription.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Read a stroke from the gesture |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStrokeCount](../android/accessibilityservice/GestureDescription.md))`()` Get the number of stroke in the gesture. |
+| [GestureDescription.StrokeDescription](../android/accessibilityservice/GestureDescription.StrokeDescription.md)! | [getStroke](GestureDescription.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Read a stroke from the gesture |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStrokeCount](GestureDescription.md))`()` Get the number of stroke in the gesture. |
 
 ## Public methods
 
@@ -45,7 +45,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 fun getDisplayId(): Int
 ```
 
-Returns the ID of the display this gesture is sent on, for use with [android.hardware.display.DisplayManager#getDisplay(int)](../android/hardware/display/DisplayManager.md)).
+Returns the ID of the display this gesture is sent on, for use with [android.hardware.display.DisplayManager#getDisplay(int)](../android.hardware.display/DisplayManager.md)).
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------|

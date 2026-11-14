@@ -10,12 +10,12 @@ abstract class Format : Cloneable, Serializable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.text.Format](../java/text/Format.md) |
+| ↳ | [java.text.Format](Format.md) |
 
-| Known Direct Subclasses [DateFormat](../java/text/DateFormat.md), [MessageFormat](../java/text/MessageFormat.md), [NumberFormat](../java/text/NumberFormat.md), [SelectFormat](../android/icu/text/SelectFormat.md), [UFormat](../android/icu/text/UFormat.md) |----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [DateFormat](../java/text/DateFormat.md) | `DateFormat`is an abstract class for date/time formatting subclasses which formats and parses dates or time in a language-independent manner. | | [MessageFormat](../java/text/MessageFormat.md) | provides a means to produce concatenated messages in a language-neutral way. | | [NumberFormat](../java/text/NumberFormat.md) | `NumberFormat`is the abstract base class for all number formats. | | [SelectFormat](../android/icu/text/SelectFormat.md) | `SelectFormat`supports the creation of internationalized messages by selecting phrases based on keywords. | | [UFormat](../android/icu/text/UFormat.md) | An abstract class that extends [java.text.Format](../java/text/Format.md) to provide additional ICU protocol, specifically, the getLocale() API. | |
+| Known Direct Subclasses [DateFormat](DateFormat.md), [MessageFormat](MessageFormat.md), [NumberFormat](NumberFormat.md), [SelectFormat](../android.icu.text/SelectFormat.md), [UFormat](../android.icu.text/UFormat.md) |----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [DateFormat](DateFormat.md) | `DateFormat`is an abstract class for date/time formatting subclasses which formats and parses dates or time in a language-independent manner. | | [MessageFormat](MessageFormat.md) | provides a means to produce concatenated messages in a language-neutral way. | | [NumberFormat](NumberFormat.md) | `NumberFormat`is the abstract base class for all number formats. | | [SelectFormat](../android.icu.text/SelectFormat.md) | `SelectFormat`supports the creation of internationalized messages by selecting phrases based on keywords. | | [UFormat](../android.icu.text/UFormat.md) | An abstract class that extends [java.text.Format](Format.md) to provide additional ICU protocol, specifically, the getLocale() API. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [ChoiceFormat](../java/text/ChoiceFormat.md), [CompactDecimalFormat](../android/icu/text/CompactDecimalFormat.md), [DateFormat](../android/icu/text/DateFormat.md), [DateIntervalFormat](../android/icu/text/DateIntervalFormat.md), [DecimalFormat](../java/text/DecimalFormat.md), [DecimalFormat](../android/icu/text/DecimalFormat.md), [MeasureFormat](../android/icu/text/MeasureFormat.md), [MessageFormat](../android/icu/text/MessageFormat.md), [NumberFormat](../android/icu/text/NumberFormat.md), [PluralFormat](../android/icu/text/PluralFormat.md), [SimpleDateFormat](../java/text/SimpleDateFormat.md), [SimpleDateFormat](../android/icu/text/SimpleDateFormat.md), and 1 others. |--------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------| | [ChoiceFormat](../java/text/ChoiceFormat.md) | A`ChoiceFormat`allows you to attach a format to a range of numbers. | | [CompactDecimalFormat](../android/icu/text/CompactDecimalFormat.md) | Formats numbers in compact (abbreviated) notation, like "1. | | [DateFormat](../android/icu/text/DateFormat.md) | **\[icu enhancement\]** ICU's replacement for [java.text.DateFormat](../java/text/DateFormat.md). | | [DateIntervalFormat](../android/icu/text/DateIntervalFormat.md) | DateIntervalFormat is a class for formatting and parsing date intervals in a language-independent manner. | | [DecimalFormat](../java/text/DecimalFormat.md) | is a concrete subclass of`NumberFormat`that formats decimal numbers. | | [DecimalFormat](../android/icu/text/DecimalFormat.md) | **\[icu enhancement\]** ICU's replacement for [java.text.DecimalFormat](../java/text/DecimalFormat.md). | | [MeasureFormat](../android/icu/text/MeasureFormat.md) | A formatter for Measure objects. | | [MessageFormat](../android/icu/text/MessageFormat.md) | **\[icu enhancement\]** ICU's replacement for [java.text.MessageFormat](../java/text/MessageFormat.md). | | [NumberFormat](../android/icu/text/NumberFormat.md) | **\[icu enhancement\]** ICU's replacement for [java.text.NumberFormat](../java/text/NumberFormat.md). | | [PluralFormat](../android/icu/text/PluralFormat.md) | `PluralFormat`supports the creation of internationalized messages with plural inflection. | | [SimpleDateFormat](../java/text/SimpleDateFormat.md) | is a concrete class for formatting and parsing dates in a locale-sensitive manner. | | [SimpleDateFormat](../android/icu/text/SimpleDateFormat.md) | **\[icu enhancement\]** ICU's replacement for [java.text.SimpleDateFormat](../java/text/SimpleDateFormat.md). | | [TimeZoneFormat](../android/icu/text/TimeZoneFormat.md) | `TimeZoneFormat`supports time zone display name formatting and parsing. | |
+| Known Indirect Subclasses [ChoiceFormat](ChoiceFormat.md), [CompactDecimalFormat](../android.icu.text/CompactDecimalFormat.md), [DateFormat](../android.icu.text/DateFormat.md), [DateIntervalFormat](../android.icu.text/DateIntervalFormat.md), [DecimalFormat](DecimalFormat.md), [DecimalFormat](../android.icu.text/DecimalFormat.md), [MeasureFormat](../android.icu.text/MeasureFormat.md), [MessageFormat](../android.icu.text/MessageFormat.md), [NumberFormat](../android.icu.text/NumberFormat.md), [PluralFormat](../android.icu.text/PluralFormat.md), [SimpleDateFormat](SimpleDateFormat.md), [SimpleDateFormat](../android.icu.text/SimpleDateFormat.md), and 1 others. |--------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------| | [ChoiceFormat](ChoiceFormat.md) | A`ChoiceFormat`allows you to attach a format to a range of numbers. | | [CompactDecimalFormat](../android.icu.text/CompactDecimalFormat.md) | Formats numbers in compact (abbreviated) notation, like "1. | | [DateFormat](../android.icu.text/DateFormat.md) | **\[icu enhancement\]** ICU's replacement for [java.text.DateFormat](DateFormat.md). | | [DateIntervalFormat](../android.icu.text/DateIntervalFormat.md) | DateIntervalFormat is a class for formatting and parsing date intervals in a language-independent manner. | | [DecimalFormat](DecimalFormat.md) | is a concrete subclass of`NumberFormat`that formats decimal numbers. | | [DecimalFormat](../android.icu.text/DecimalFormat.md) | **\[icu enhancement\]** ICU's replacement for [java.text.DecimalFormat](DecimalFormat.md). | | [MeasureFormat](../android.icu.text/MeasureFormat.md) | A formatter for Measure objects. | | [MessageFormat](../android.icu.text/MessageFormat.md) | **\[icu enhancement\]** ICU's replacement for [java.text.MessageFormat](MessageFormat.md). | | [NumberFormat](../android.icu.text/NumberFormat.md) | **\[icu enhancement\]** ICU's replacement for [java.text.NumberFormat](NumberFormat.md). | | [PluralFormat](../android.icu.text/PluralFormat.md) | `PluralFormat`supports the creation of internationalized messages with plural inflection. | | [SimpleDateFormat](SimpleDateFormat.md) | is a concrete class for formatting and parsing dates in a locale-sensitive manner. | | [SimpleDateFormat](../android.icu.text/SimpleDateFormat.md) | **\[icu enhancement\]** ICU's replacement for [java.text.SimpleDateFormat](SimpleDateFormat.md). | | [TimeZoneFormat](../android.icu.text/TimeZoneFormat.md) | `TimeZoneFormat`supports time zone display name formatting and parsing. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 `Format`is an abstract base class for formatting locale-sensitive information such as dates, messages, and numbers.
@@ -50,7 +50,7 @@ public static Locale[] getAvailableLocales()
   
 ```
 
-And finally subclasses may define a set of constants to identify the various fields in the formatted output. These constants are used to create a FieldPosition object which identifies what information is contained in the field and its position in the formatted result. These constants should be named*item*`_FIELD`where*item*identifies the field. For examples of these constants, see`ERA_FIELD`and its friends in [DateFormat](../java/text/DateFormat.md).
+And finally subclasses may define a set of constants to identify the various fields in the formatted output. These constants are used to create a FieldPosition object which identifies what information is contained in the field and its position in the formatted result. These constants should be named*item*`_FIELD`where*item*identifies the field. For examples of these constants, see`ERA_FIELD`and its friends in [DateFormat](DateFormat.md).
 
 ### Synchronization
 
@@ -64,17 +64,17 @@ Formats are generally not synchronized. It is recommended to create separate for
 
 | Protected constructors ||
 |----------------------------------------------------------------------------------------------------------|---|
-| [Format](../java/text/Format.md))`()` Sole constructor. |
+| [Format](Format.md))`()` Sole constructor. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](../java/text/Format.md))`()` Creates and returns a copy of this object. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](../java/text/Format.md))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Formats an object to produce a string. |
-| abstract [StringBuffer](../java/lang/StringBuffer.md)! | [format](../java/text/Format.md))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `toAppendTo:` ` [StringBuffer](../java/lang/StringBuffer.md)!`, `pos:` ` [FieldPosition](../java/text/FieldPosition.md)!`)` Formats an object and appends the resulting text to a given string buffer. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](Format.md))`()` Creates and returns a copy of this object. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [format](Format.md))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Formats an object to produce a string. |
+| abstract [StringBuffer](../java.lang/StringBuffer.md)! | [format](Format.md))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`, `toAppendTo:` ` [StringBuffer](../java.lang/StringBuffer.md)!`, `pos:` ` [FieldPosition](FieldPosition.md)!`)` Formats an object and appends the resulting text to a given string buffer. |
 | --- | --- |
-| open [AttributedCharacterIterator](../java/text/AttributedCharacterIterator.md)! | [formatToCharacterIterator](../java/text/Format.md))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Formats an Object producing an`AttributedCharacterIterator`. |
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [parseObject](../java/text/Format.md))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Parses text from the beginning of the given string to produce an object. |
-| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [parseObject](../java/text/Format.md))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `pos:` ` [ParsePosition](../java/text/ParsePosition.md)!`)` Parses text from a string to produce an object. |
+| open [AttributedCharacterIterator](AttributedCharacterIterator.md)! | [formatToCharacterIterator](Format.md))`(`obj:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Formats an Object producing an`AttributedCharacterIterator`. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [parseObject](Format.md))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Parses text from the beginning of the given string to produce an object. |
+| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [parseObject](Format.md))`(`source:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `pos:` ` [ParsePosition](ParsePosition.md)!`)` Parses text from a string to produce an object. |
 | --- | --- |
 
 ## Protected constructors
@@ -117,7 +117,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun format(obj: Any!): String!
 ```
 
-Formats an object to produce a string. This is equivalent to [format](../java/text/Format.md))`(obj, new StringBuffer(), new FieldPosition(0)).toString();`
+Formats an object to produce a string. This is equivalent to [format](Format.md))`(obj, new StringBuffer(), new FieldPosition(0)).toString();`
 
 | Parameters ||
 |-------|--------------------------------------------------------------------------------------------------|
@@ -148,13 +148,13 @@ Formats an object and appends the resulting text to a given string buffer. If th
 | Parameters ||
 |--------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
 | `obj` | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!:The object to format |
-| `toAppendTo` | [StringBuffer](../java/lang/StringBuffer.md)!:where the text is to be appended |
-| `pos` | [FieldPosition](../java/text/FieldPosition.md)!:A`FieldPosition`identifying a field in the formatted text |
+| `toAppendTo` | [StringBuffer](../java.lang/StringBuffer.md)!:where the text is to be appended |
+| `pos` | [FieldPosition](FieldPosition.md)!:A`FieldPosition`identifying a field in the formatted text |
 | --- | --- |
 
 | Return ||
 |----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-| [StringBuffer](../java/lang/StringBuffer.md)! | the string buffer passed in as`toAppendTo`, with formatted text appended |
+| [StringBuffer](../java.lang/StringBuffer.md)! | the string buffer passed in as`toAppendTo`, with formatted text appended |
 
 | Exceptions ||
 |--------------------------------------|----------------------------------------------|
@@ -181,7 +181,7 @@ The default implementation creates an`AttributedCharacterIterator`with no attrib
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
-| [AttributedCharacterIterator](../java/text/AttributedCharacterIterator.md)! | AttributedCharacterIterator describing the formatted value. |
+| [AttributedCharacterIterator](AttributedCharacterIterator.md)! | AttributedCharacterIterator describing the formatted value. |
 
 | Exceptions ||
 |--------------------------------------|-------------------------------------------------|
@@ -229,7 +229,7 @@ The method attempts to parse text starting at the index given by`pos`. If parsin
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `source` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:A`String`, part of which should be parsed. |
-| `pos` | [ParsePosition](../java/text/ParsePosition.md)!:A`ParsePosition`object with index and error index information as described above. |
+| `pos` | [ParsePosition](ParsePosition.md)!:A`ParsePosition`object with index and error index information as described above. |
 
 | Return ||
 |-----------------------------------------------------------------------------|-------------------------------------------------------------------|

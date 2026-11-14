@@ -8,7 +8,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface DatabaseMetaData : Wrapper
 ```
 
-| [java.sql.DatabaseMetaData](../java/sql/DatabaseMetaData.md) |
+| [java.sql.DatabaseMetaData](DatabaseMetaData.md) |
 
 Comprehensive information about the database as a whole.
 
@@ -26,323 +26,323 @@ Some`DatabaseMetaData`methods take arguments that are String patterns. These arg
 
 | Constants ||
 |--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [attributeNoNulls](../java/sql/DatabaseMetaData.md) Indicates that`NULL`values might not be allowed. |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [attributeNullable](../java/sql/DatabaseMetaData.md) Indicates that`NULL`values are definitely allowed. |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [attributeNullableUnknown](../java/sql/DatabaseMetaData.md) Indicates that whether`NULL`values are allowed is not known. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [attributeNoNulls](DatabaseMetaData.md) Indicates that`NULL`values might not be allowed. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [attributeNullable](DatabaseMetaData.md) Indicates that`NULL`values are definitely allowed. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [attributeNullableUnknown](DatabaseMetaData.md) Indicates that whether`NULL`values are allowed is not known. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [bestRowNotPseudo](../java/sql/DatabaseMetaData.md) Indicates that the best row identifier is NOT a pseudo column. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [bestRowPseudo](../java/sql/DatabaseMetaData.md) Indicates that the best row identifier is a pseudo column. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [bestRowSession](../java/sql/DatabaseMetaData.md) Indicates that the scope of the best row identifier is the remainder of the current session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [bestRowNotPseudo](DatabaseMetaData.md) Indicates that the best row identifier is NOT a pseudo column. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [bestRowPseudo](DatabaseMetaData.md) Indicates that the best row identifier is a pseudo column. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [bestRowSession](DatabaseMetaData.md) Indicates that the scope of the best row identifier is the remainder of the current session. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [bestRowTemporary](../java/sql/DatabaseMetaData.md) Indicates that the scope of the best row identifier is very temporary, lasting only while the row is being used. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [bestRowTransaction](../java/sql/DatabaseMetaData.md) Indicates that the scope of the best row identifier is the remainder of the current transaction. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [bestRowUnknown](../java/sql/DatabaseMetaData.md) Indicates that the best row identifier may or may not be a pseudo column. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [bestRowTemporary](DatabaseMetaData.md) Indicates that the scope of the best row identifier is very temporary, lasting only while the row is being used. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [bestRowTransaction](DatabaseMetaData.md) Indicates that the scope of the best row identifier is the remainder of the current transaction. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [bestRowUnknown](DatabaseMetaData.md) Indicates that the best row identifier may or may not be a pseudo column. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [columnNoNulls](../java/sql/DatabaseMetaData.md) Indicates that the column might not allow`NULL`values. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [columnNullable](../java/sql/DatabaseMetaData.md) Indicates that the column definitely allows`NULL`values. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [columnNullableUnknown](../java/sql/DatabaseMetaData.md) Indicates that the nullability of columns is unknown. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [columnNoNulls](DatabaseMetaData.md) Indicates that the column might not allow`NULL`values. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [columnNullable](DatabaseMetaData.md) Indicates that the column definitely allows`NULL`values. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [columnNullableUnknown](DatabaseMetaData.md) Indicates that the nullability of columns is unknown. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [functionColumnIn](../java/sql/DatabaseMetaData.md) Indicates that the parameter or column is an IN parameter. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [functionColumnInOut](../java/sql/DatabaseMetaData.md) Indicates that the parameter or column is an INOUT parameter. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [functionColumnOut](../java/sql/DatabaseMetaData.md) Indicates that the parameter or column is an OUT parameter. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [functionColumnIn](DatabaseMetaData.md) Indicates that the parameter or column is an IN parameter. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [functionColumnInOut](DatabaseMetaData.md) Indicates that the parameter or column is an INOUT parameter. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [functionColumnOut](DatabaseMetaData.md) Indicates that the parameter or column is an OUT parameter. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [functionColumnResult](../java/sql/DatabaseMetaData.md) Indicates that the parameter or column is a column in a result set. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [functionColumnUnknown](../java/sql/DatabaseMetaData.md) Indicates that type of the parameter or column is unknown. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [functionNoNulls](../java/sql/DatabaseMetaData.md) Indicates that`NULL`values are not allowed. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [functionColumnResult](DatabaseMetaData.md) Indicates that the parameter or column is a column in a result set. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [functionColumnUnknown](DatabaseMetaData.md) Indicates that type of the parameter or column is unknown. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [functionNoNulls](DatabaseMetaData.md) Indicates that`NULL`values are not allowed. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [functionNoTable](../java/sql/DatabaseMetaData.md) Indicates that the function does not return a table. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [functionNullable](../java/sql/DatabaseMetaData.md) Indicates that`NULL`values are allowed. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [functionNullableUnknown](../java/sql/DatabaseMetaData.md) Indicates that whether`NULL`values are allowed is unknown. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [functionNoTable](DatabaseMetaData.md) Indicates that the function does not return a table. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [functionNullable](DatabaseMetaData.md) Indicates that`NULL`values are allowed. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [functionNullableUnknown](DatabaseMetaData.md) Indicates that whether`NULL`values are allowed is unknown. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [functionResultUnknown](../java/sql/DatabaseMetaData.md) Indicates that it is not known whether the function returns a result or a table. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [functionReturn](../java/sql/DatabaseMetaData.md) Indicates that the parameter or column is a return value. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [functionReturnsTable](../java/sql/DatabaseMetaData.md) Indicates that the function returns a table. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [functionResultUnknown](DatabaseMetaData.md) Indicates that it is not known whether the function returns a result or a table. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [functionReturn](DatabaseMetaData.md) Indicates that the parameter or column is a return value. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [functionReturnsTable](DatabaseMetaData.md) Indicates that the function returns a table. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [importedKeyCascade](../java/sql/DatabaseMetaData.md) For the column`UPDATE_RULE`, indicates that when the primary key is updated, the foreign key (imported key) is changed to agree with it. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [importedKeyInitiallyDeferred](../java/sql/DatabaseMetaData.md) Indicates deferrability. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [importedKeyInitiallyImmediate](../java/sql/DatabaseMetaData.md) Indicates deferrability. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [importedKeyCascade](DatabaseMetaData.md) For the column`UPDATE_RULE`, indicates that when the primary key is updated, the foreign key (imported key) is changed to agree with it. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [importedKeyInitiallyDeferred](DatabaseMetaData.md) Indicates deferrability. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [importedKeyInitiallyImmediate](DatabaseMetaData.md) Indicates deferrability. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [importedKeyNoAction](../java/sql/DatabaseMetaData.md) For the columns`UPDATE_RULE`and`DELETE_RULE`, indicates that if the primary key has been imported, it cannot be updated or deleted. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [importedKeyNotDeferrable](../java/sql/DatabaseMetaData.md) Indicates deferrability. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [importedKeyRestrict](../java/sql/DatabaseMetaData.md) For the column`UPDATE_RULE`, indicates that a primary key may not be updated if it has been imported by another table as a foreign key. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [importedKeyNoAction](DatabaseMetaData.md) For the columns`UPDATE_RULE`and`DELETE_RULE`, indicates that if the primary key has been imported, it cannot be updated or deleted. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [importedKeyNotDeferrable](DatabaseMetaData.md) Indicates deferrability. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [importedKeyRestrict](DatabaseMetaData.md) For the column`UPDATE_RULE`, indicates that a primary key may not be updated if it has been imported by another table as a foreign key. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [importedKeySetDefault](../java/sql/DatabaseMetaData.md) For the columns`UPDATE_RULE`and`DELETE_RULE`, indicates that if the primary key is updated or deleted, the foreign key (imported key) is set to the default value. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [importedKeySetNull](../java/sql/DatabaseMetaData.md) For the columns`UPDATE_RULE`and`DELETE_RULE`, indicates that when the primary key is updated or deleted, the foreign key (imported key) is changed to`NULL`. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [procedureColumnIn](../java/sql/DatabaseMetaData.md) Indicates that the column stores IN parameters. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [importedKeySetDefault](DatabaseMetaData.md) For the columns`UPDATE_RULE`and`DELETE_RULE`, indicates that if the primary key is updated or deleted, the foreign key (imported key) is set to the default value. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [importedKeySetNull](DatabaseMetaData.md) For the columns`UPDATE_RULE`and`DELETE_RULE`, indicates that when the primary key is updated or deleted, the foreign key (imported key) is changed to`NULL`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [procedureColumnIn](DatabaseMetaData.md) Indicates that the column stores IN parameters. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [procedureColumnInOut](../java/sql/DatabaseMetaData.md) Indicates that the column stores INOUT parameters. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [procedureColumnOut](../java/sql/DatabaseMetaData.md) Indicates that the column stores OUT parameters. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [procedureColumnResult](../java/sql/DatabaseMetaData.md) Indicates that the column stores results. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [procedureColumnInOut](DatabaseMetaData.md) Indicates that the column stores INOUT parameters. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [procedureColumnOut](DatabaseMetaData.md) Indicates that the column stores OUT parameters. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [procedureColumnResult](DatabaseMetaData.md) Indicates that the column stores results. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [procedureColumnReturn](../java/sql/DatabaseMetaData.md) Indicates that the column stores return values. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [procedureColumnUnknown](../java/sql/DatabaseMetaData.md) Indicates that type of the column is unknown. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [procedureNoNulls](../java/sql/DatabaseMetaData.md) Indicates that`NULL`values are not allowed. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [procedureColumnReturn](DatabaseMetaData.md) Indicates that the column stores return values. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [procedureColumnUnknown](DatabaseMetaData.md) Indicates that type of the column is unknown. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [procedureNoNulls](DatabaseMetaData.md) Indicates that`NULL`values are not allowed. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [procedureNoResult](../java/sql/DatabaseMetaData.md) Indicates that the procedure does not return a result. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [procedureNullable](../java/sql/DatabaseMetaData.md) Indicates that`NULL`values are allowed. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [procedureNullableUnknown](../java/sql/DatabaseMetaData.md) Indicates that whether`NULL`values are allowed is unknown. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [procedureNoResult](DatabaseMetaData.md) Indicates that the procedure does not return a result. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [procedureNullable](DatabaseMetaData.md) Indicates that`NULL`values are allowed. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [procedureNullableUnknown](DatabaseMetaData.md) Indicates that whether`NULL`values are allowed is unknown. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [procedureResultUnknown](../java/sql/DatabaseMetaData.md) Indicates that it is not known whether the procedure returns a result. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [procedureReturnsResult](../java/sql/DatabaseMetaData.md) Indicates that the procedure returns a result. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [sqlStateSQL](../java/sql/DatabaseMetaData.md) A possible return value for the method`DatabaseMetaData.getSQLStateType`which is used to indicate whether the value returned by the method`SQLException.getSQLState`is an SQLSTATE value. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [procedureResultUnknown](DatabaseMetaData.md) Indicates that it is not known whether the procedure returns a result. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [procedureReturnsResult](DatabaseMetaData.md) Indicates that the procedure returns a result. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [sqlStateSQL](DatabaseMetaData.md) A possible return value for the method`DatabaseMetaData.getSQLStateType`which is used to indicate whether the value returned by the method`SQLException.getSQLState`is an SQLSTATE value. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [sqlStateSQL99](../java/sql/DatabaseMetaData.md) A possible return value for the method`DatabaseMetaData.getSQLStateType`which is used to indicate whether the value returned by the method`SQLException.getSQLState`is an SQL99 SQLSTATE value. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [sqlStateXOpen](../java/sql/DatabaseMetaData.md) A possible return value for the method`DatabaseMetaData.getSQLStateType`which is used to indicate whether the value returned by the method`SQLException.getSQLState`is an X/Open (now know as Open Group) SQL CLI SQLSTATE value. |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [tableIndexClustered](../java/sql/DatabaseMetaData.md) Indicates that this table index is a clustered index. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [sqlStateSQL99](DatabaseMetaData.md) A possible return value for the method`DatabaseMetaData.getSQLStateType`which is used to indicate whether the value returned by the method`SQLException.getSQLState`is an SQL99 SQLSTATE value. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [sqlStateXOpen](DatabaseMetaData.md) A possible return value for the method`DatabaseMetaData.getSQLStateType`which is used to indicate whether the value returned by the method`SQLException.getSQLState`is an X/Open (now know as Open Group) SQL CLI SQLSTATE value. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [tableIndexClustered](DatabaseMetaData.md) Indicates that this table index is a clustered index. |
 | --- | --- |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [tableIndexHashed](../java/sql/DatabaseMetaData.md) Indicates that this table index is a hashed index. |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [tableIndexOther](../java/sql/DatabaseMetaData.md) Indicates that this table index is not a clustered index, a hashed index, or table statistics; it is something other than these. |
-| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [tableIndexStatistic](../java/sql/DatabaseMetaData.md) Indicates that this column contains table statistics that are returned in conjunction with a table's index descriptions. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [tableIndexHashed](DatabaseMetaData.md) Indicates that this table index is a hashed index. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [tableIndexOther](DatabaseMetaData.md) Indicates that this table index is not a clustered index, a hashed index, or table statistics; it is something other than these. |
+| static [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | [tableIndexStatistic](DatabaseMetaData.md) Indicates that this column contains table statistics that are returned in conjunction with a table's index descriptions. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [typeNoNulls](../java/sql/DatabaseMetaData.md) Indicates that a`NULL`value is NOT allowed for this data type. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [typeNullable](../java/sql/DatabaseMetaData.md) Indicates that a`NULL`value is allowed for this data type. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [typeNullableUnknown](../java/sql/DatabaseMetaData.md) Indicates that it is not known whether a`NULL`value is allowed for this data type. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [typeNoNulls](DatabaseMetaData.md) Indicates that a`NULL`value is NOT allowed for this data type. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [typeNullable](DatabaseMetaData.md) Indicates that a`NULL`value is allowed for this data type. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [typeNullableUnknown](DatabaseMetaData.md) Indicates that it is not known whether a`NULL`value is allowed for this data type. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [typePredBasic](../java/sql/DatabaseMetaData.md) Indicates that the data type can be only be used in`WHERE`search clauses that do not use`LIKE`predicates. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [typePredChar](../java/sql/DatabaseMetaData.md) Indicates that the data type can be only be used in`WHERE`search clauses that use`LIKE`predicates. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [typePredNone](../java/sql/DatabaseMetaData.md) Indicates that`WHERE`search clauses are not supported for this type. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [typePredBasic](DatabaseMetaData.md) Indicates that the data type can be only be used in`WHERE`search clauses that do not use`LIKE`predicates. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [typePredChar](DatabaseMetaData.md) Indicates that the data type can be only be used in`WHERE`search clauses that use`LIKE`predicates. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [typePredNone](DatabaseMetaData.md) Indicates that`WHERE`search clauses are not supported for this type. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [typeSearchable](../java/sql/DatabaseMetaData.md) Indicates that all`WHERE`search clauses can be based on this type. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [versionColumnNotPseudo](../java/sql/DatabaseMetaData.md) Indicates that this version column is NOT a pseudo column. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [versionColumnPseudo](../java/sql/DatabaseMetaData.md) Indicates that this version column is a pseudo column. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [typeSearchable](DatabaseMetaData.md) Indicates that all`WHERE`search clauses can be based on this type. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [versionColumnNotPseudo](DatabaseMetaData.md) Indicates that this version column is NOT a pseudo column. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [versionColumnPseudo](DatabaseMetaData.md) Indicates that this version column is a pseudo column. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [versionColumnUnknown](../java/sql/DatabaseMetaData.md) Indicates that this version column may or may not be a pseudo column. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [versionColumnUnknown](DatabaseMetaData.md) Indicates that this version column may or may not be a pseudo column. |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [allProceduresAreCallable](../java/sql/DatabaseMetaData.md))`()` Retrieves whether the current user can call all the procedures returned by the method`getProcedures`. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [allTablesAreSelectable](../java/sql/DatabaseMetaData.md))`()` Retrieves whether the current user can use all the tables returned by the method`getTables`in a`SELECT`statement. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [autoCommitFailureClosesAllResultSets](../java/sql/DatabaseMetaData.md))`()` Retrieves whether a`SQLException`while autoCommit is`true`inidcates that all open ResultSets are closed, even ones that are holdable. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [allProceduresAreCallable](DatabaseMetaData.md))`()` Retrieves whether the current user can call all the procedures returned by the method`getProcedures`. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [allTablesAreSelectable](DatabaseMetaData.md))`()` Retrieves whether the current user can use all the tables returned by the method`getTables`in a`SELECT`statement. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [autoCommitFailureClosesAllResultSets](DatabaseMetaData.md))`()` Retrieves whether a`SQLException`while autoCommit is`true`inidcates that all open ResultSets are closed, even ones that are holdable. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [dataDefinitionCausesTransactionCommit](../java/sql/DatabaseMetaData.md))`()` Retrieves whether a data definition statement within a transaction forces the transaction to commit. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [dataDefinitionIgnoredInTransactions](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database ignores a data definition statement within a transaction. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [deletesAreDetected](../java/sql/DatabaseMetaData.md))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves whether or not a visible row delete can be detected by calling the method`ResultSet.rowDeleted`. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [dataDefinitionCausesTransactionCommit](DatabaseMetaData.md))`()` Retrieves whether a data definition statement within a transaction forces the transaction to commit. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [dataDefinitionIgnoredInTransactions](DatabaseMetaData.md))`()` Retrieves whether this database ignores a data definition statement within a transaction. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [deletesAreDetected](DatabaseMetaData.md))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves whether or not a visible row delete can be detected by calling the method`ResultSet.rowDeleted`. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [doesMaxRowSizeIncludeBlobs](../java/sql/DatabaseMetaData.md))`()` Retrieves whether the return value for the method`getMaxRowSize`includes the SQL data types`LONGVARCHAR`and`LONGVARBINARY`. |
-| abstract [ResultSet](../java/sql/ResultSet.md)! | [getAttributes](../java/sql/DatabaseMetaData.md))`(`catalog:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `schemaPattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `typeNamePattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `attributeNamePattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Retrieves a description of the given attribute of the given type for a user-defined type (UDT) that is available in the given schema and catalog. |
-| abstract [ResultSet](../java/sql/ResultSet.md)! | [getBestRowIdentifier](../java/sql/DatabaseMetaData.md))`(`catalog:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `schema:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `table:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `scope:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `nullable:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Retrieves a description of a table's optimal set of columns that uniquely identifies a row. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [doesMaxRowSizeIncludeBlobs](DatabaseMetaData.md))`()` Retrieves whether the return value for the method`getMaxRowSize`includes the SQL data types`LONGVARCHAR`and`LONGVARBINARY`. |
+| abstract [ResultSet](ResultSet.md)! | [getAttributes](DatabaseMetaData.md))`(`catalog:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `schemaPattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `typeNamePattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `attributeNamePattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Retrieves a description of the given attribute of the given type for a user-defined type (UDT) that is available in the given schema and catalog. |
+| abstract [ResultSet](ResultSet.md)! | [getBestRowIdentifier](DatabaseMetaData.md))`(`catalog:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `schema:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `table:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `scope:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `nullable:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Retrieves a description of a table's optimal set of columns that uniquely identifies a row. |
 | --- | --- |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getCatalogSeparator](../java/sql/DatabaseMetaData.md))`()` Retrieves the`String`that this database uses as the separator between a catalog and table name. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getCatalogTerm](../java/sql/DatabaseMetaData.md))`()` Retrieves the database vendor's preferred term for "catalog". |
-| abstract [ResultSet](../java/sql/ResultSet.md)! | [getCatalogs](../java/sql/DatabaseMetaData.md))`()` Retrieves the catalog names available in this database. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getCatalogSeparator](DatabaseMetaData.md))`()` Retrieves the`String`that this database uses as the separator between a catalog and table name. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getCatalogTerm](DatabaseMetaData.md))`()` Retrieves the database vendor's preferred term for "catalog". |
+| abstract [ResultSet](ResultSet.md)! | [getCatalogs](DatabaseMetaData.md))`()` Retrieves the catalog names available in this database. |
 | --- | --- |
-| abstract [ResultSet](../java/sql/ResultSet.md)! | [getClientInfoProperties](../java/sql/DatabaseMetaData.md))`()` Retrieves a list of the client info properties that the driver supports. |
-| abstract [ResultSet](../java/sql/ResultSet.md)! | [getColumnPrivileges](../java/sql/DatabaseMetaData.md))`(`catalog:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `schema:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `table:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `columnNamePattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Retrieves a description of the access rights for a table's columns. |
-| abstract [ResultSet](../java/sql/ResultSet.md)! | [getColumns](../java/sql/DatabaseMetaData.md))`(`catalog:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `schemaPattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `tableNamePattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `columnNamePattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Retrieves a description of table columns available in the specified catalog. |
+| abstract [ResultSet](ResultSet.md)! | [getClientInfoProperties](DatabaseMetaData.md))`()` Retrieves a list of the client info properties that the driver supports. |
+| abstract [ResultSet](ResultSet.md)! | [getColumnPrivileges](DatabaseMetaData.md))`(`catalog:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `schema:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `table:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `columnNamePattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Retrieves a description of the access rights for a table's columns. |
+| abstract [ResultSet](ResultSet.md)! | [getColumns](DatabaseMetaData.md))`(`catalog:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `schemaPattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `tableNamePattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `columnNamePattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Retrieves a description of table columns available in the specified catalog. |
 | --- | --- |
-| abstract [Connection](../java/sql/Connection.md)! | [getConnection](../java/sql/DatabaseMetaData.md))`()` Retrieves the connection that produced this metadata object. |
-| abstract [ResultSet](../java/sql/ResultSet.md)! | [getCrossReference](../java/sql/DatabaseMetaData.md))`(`parentCatalog:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `parentSchema:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `parentTable:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `foreignCatalog:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `foreignSchema:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `foreignTable:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Retrieves a description of the foreign key columns in the given foreign key table that reference the primary key or the columns representing a unique constraint of the parent table (could be the same or a different table). |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDatabaseMajorVersion](../java/sql/DatabaseMetaData.md))`()` Retrieves the major version number of the underlying database. |
+| abstract [Connection](Connection.md)! | [getConnection](DatabaseMetaData.md))`()` Retrieves the connection that produced this metadata object. |
+| abstract [ResultSet](ResultSet.md)! | [getCrossReference](DatabaseMetaData.md))`(`parentCatalog:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `parentSchema:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `parentTable:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `foreignCatalog:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `foreignSchema:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `foreignTable:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Retrieves a description of the foreign key columns in the given foreign key table that reference the primary key or the columns representing a unique constraint of the parent table (could be the same or a different table). |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDatabaseMajorVersion](DatabaseMetaData.md))`()` Retrieves the major version number of the underlying database. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDatabaseMinorVersion](../java/sql/DatabaseMetaData.md))`()` Retrieves the minor version number of the underlying database. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDatabaseProductName](../java/sql/DatabaseMetaData.md))`()` Retrieves the name of this database product. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDatabaseProductVersion](../java/sql/DatabaseMetaData.md))`()` Retrieves the version number of this database product. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDatabaseMinorVersion](DatabaseMetaData.md))`()` Retrieves the minor version number of the underlying database. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDatabaseProductName](DatabaseMetaData.md))`()` Retrieves the name of this database product. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDatabaseProductVersion](DatabaseMetaData.md))`()` Retrieves the version number of this database product. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDefaultTransactionIsolation](../java/sql/DatabaseMetaData.md))`()` Retrieves this database's default transaction isolation level. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDriverMajorVersion](../java/sql/DatabaseMetaData.md))`()` Retrieves this JDBC driver's major version number. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDriverMinorVersion](../java/sql/DatabaseMetaData.md))`()` Retrieves this JDBC driver's minor version number. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDefaultTransactionIsolation](DatabaseMetaData.md))`()` Retrieves this database's default transaction isolation level. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDriverMajorVersion](DatabaseMetaData.md))`()` Retrieves this JDBC driver's major version number. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDriverMinorVersion](DatabaseMetaData.md))`()` Retrieves this JDBC driver's minor version number. |
 | --- | --- |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDriverName](../java/sql/DatabaseMetaData.md))`()` Retrieves the name of this JDBC driver. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDriverVersion](../java/sql/DatabaseMetaData.md))`()` Retrieves the version number of this JDBC driver as a`String`. |
-| abstract [ResultSet](../java/sql/ResultSet.md)! | [getExportedKeys](../java/sql/DatabaseMetaData.md))`(`catalog:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `schema:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `table:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Retrieves a description of the foreign key columns that reference the given table's primary key columns (the foreign keys exported by a table). |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDriverName](DatabaseMetaData.md))`()` Retrieves the name of this JDBC driver. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getDriverVersion](DatabaseMetaData.md))`()` Retrieves the version number of this JDBC driver as a`String`. |
+| abstract [ResultSet](ResultSet.md)! | [getExportedKeys](DatabaseMetaData.md))`(`catalog:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `schema:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `table:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Retrieves a description of the foreign key columns that reference the given table's primary key columns (the foreign keys exported by a table). |
 | --- | --- |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getExtraNameCharacters](../java/sql/DatabaseMetaData.md))`()` Retrieves all the "extra" characters that can be used in unquoted identifier names (those beyond a-z, A-Z, 0-9 and _). |
-| abstract [ResultSet](../java/sql/ResultSet.md)! | [getFunctionColumns](../java/sql/DatabaseMetaData.md))`(`catalog:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `schemaPattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `functionNamePattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `columnNamePattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Retrieves a description of the given catalog's system or user function parameters and return type. |
-| abstract [ResultSet](../java/sql/ResultSet.md)! | [getFunctions](../java/sql/DatabaseMetaData.md))`(`catalog:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `schemaPattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `functionNamePattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Retrieves a description of the system and user functions available in the given catalog. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getExtraNameCharacters](DatabaseMetaData.md))`()` Retrieves all the "extra" characters that can be used in unquoted identifier names (those beyond a-z, A-Z, 0-9 and _). |
+| abstract [ResultSet](ResultSet.md)! | [getFunctionColumns](DatabaseMetaData.md))`(`catalog:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `schemaPattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `functionNamePattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `columnNamePattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Retrieves a description of the given catalog's system or user function parameters and return type. |
+| abstract [ResultSet](ResultSet.md)! | [getFunctions](DatabaseMetaData.md))`(`catalog:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `schemaPattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `functionNamePattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Retrieves a description of the system and user functions available in the given catalog. |
 | --- | --- |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getIdentifierQuoteString](../java/sql/DatabaseMetaData.md))`()` Retrieves the string used to quote SQL identifiers. |
-| abstract [ResultSet](../java/sql/ResultSet.md)! | [getImportedKeys](../java/sql/DatabaseMetaData.md))`(`catalog:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `schema:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `table:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Retrieves a description of the primary key columns that are referenced by the given table's foreign key columns (the primary keys imported by a table). |
-| abstract [ResultSet](../java/sql/ResultSet.md)! | [getIndexInfo](../java/sql/DatabaseMetaData.md))`(`catalog:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `schema:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `table:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `unique:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `approximate:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Retrieves a description of the given table's indices and statistics. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getIdentifierQuoteString](DatabaseMetaData.md))`()` Retrieves the string used to quote SQL identifiers. |
+| abstract [ResultSet](ResultSet.md)! | [getImportedKeys](DatabaseMetaData.md))`(`catalog:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `schema:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `table:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Retrieves a description of the primary key columns that are referenced by the given table's foreign key columns (the primary keys imported by a table). |
+| abstract [ResultSet](ResultSet.md)! | [getIndexInfo](DatabaseMetaData.md))`(`catalog:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `schema:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `table:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `unique:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`, `approximate:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Retrieves a description of the given table's indices and statistics. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getJDBCMajorVersion](../java/sql/DatabaseMetaData.md))`()` Retrieves the major JDBC version number for this driver. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getJDBCMinorVersion](../java/sql/DatabaseMetaData.md))`()` Retrieves the minor JDBC version number for this driver. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxBinaryLiteralLength](../java/sql/DatabaseMetaData.md))`()` Retrieves the maximum number of hex characters this database allows in an inline binary literal. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getJDBCMajorVersion](DatabaseMetaData.md))`()` Retrieves the major JDBC version number for this driver. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getJDBCMinorVersion](DatabaseMetaData.md))`()` Retrieves the minor JDBC version number for this driver. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxBinaryLiteralLength](DatabaseMetaData.md))`()` Retrieves the maximum number of hex characters this database allows in an inline binary literal. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxCatalogNameLength](../java/sql/DatabaseMetaData.md))`()` Retrieves the maximum number of characters that this database allows in a catalog name. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxCharLiteralLength](../java/sql/DatabaseMetaData.md))`()` Retrieves the maximum number of characters this database allows for a character literal. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxColumnNameLength](../java/sql/DatabaseMetaData.md))`()` Retrieves the maximum number of characters this database allows for a column name. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxCatalogNameLength](DatabaseMetaData.md))`()` Retrieves the maximum number of characters that this database allows in a catalog name. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxCharLiteralLength](DatabaseMetaData.md))`()` Retrieves the maximum number of characters this database allows for a character literal. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxColumnNameLength](DatabaseMetaData.md))`()` Retrieves the maximum number of characters this database allows for a column name. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxColumnsInGroupBy](../java/sql/DatabaseMetaData.md))`()` Retrieves the maximum number of columns this database allows in a`GROUP BY`clause. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxColumnsInIndex](../java/sql/DatabaseMetaData.md))`()` Retrieves the maximum number of columns this database allows in an index. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxColumnsInOrderBy](../java/sql/DatabaseMetaData.md))`()` Retrieves the maximum number of columns this database allows in an`ORDER BY`clause. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxColumnsInGroupBy](DatabaseMetaData.md))`()` Retrieves the maximum number of columns this database allows in a`GROUP BY`clause. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxColumnsInIndex](DatabaseMetaData.md))`()` Retrieves the maximum number of columns this database allows in an index. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxColumnsInOrderBy](DatabaseMetaData.md))`()` Retrieves the maximum number of columns this database allows in an`ORDER BY`clause. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxColumnsInSelect](../java/sql/DatabaseMetaData.md))`()` Retrieves the maximum number of columns this database allows in a`SELECT`list. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxColumnsInTable](../java/sql/DatabaseMetaData.md))`()` Retrieves the maximum number of columns this database allows in a table. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxConnections](../java/sql/DatabaseMetaData.md))`()` Retrieves the maximum number of concurrent connections to this database that are possible. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxColumnsInSelect](DatabaseMetaData.md))`()` Retrieves the maximum number of columns this database allows in a`SELECT`list. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxColumnsInTable](DatabaseMetaData.md))`()` Retrieves the maximum number of columns this database allows in a table. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxConnections](DatabaseMetaData.md))`()` Retrieves the maximum number of concurrent connections to this database that are possible. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxCursorNameLength](../java/sql/DatabaseMetaData.md))`()` Retrieves the maximum number of characters that this database allows in a cursor name. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxIndexLength](../java/sql/DatabaseMetaData.md))`()` Retrieves the maximum number of bytes this database allows for an index, including all of the parts of the index. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxProcedureNameLength](../java/sql/DatabaseMetaData.md))`()` Retrieves the maximum number of characters that this database allows in a procedure name. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxCursorNameLength](DatabaseMetaData.md))`()` Retrieves the maximum number of characters that this database allows in a cursor name. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxIndexLength](DatabaseMetaData.md))`()` Retrieves the maximum number of bytes this database allows for an index, including all of the parts of the index. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxProcedureNameLength](DatabaseMetaData.md))`()` Retrieves the maximum number of characters that this database allows in a procedure name. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxRowSize](../java/sql/DatabaseMetaData.md))`()` Retrieves the maximum number of bytes this database allows in a single row. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxSchemaNameLength](../java/sql/DatabaseMetaData.md))`()` Retrieves the maximum number of characters that this database allows in a schema name. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxStatementLength](../java/sql/DatabaseMetaData.md))`()` Retrieves the maximum number of characters this database allows in an SQL statement. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxRowSize](DatabaseMetaData.md))`()` Retrieves the maximum number of bytes this database allows in a single row. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxSchemaNameLength](DatabaseMetaData.md))`()` Retrieves the maximum number of characters that this database allows in a schema name. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxStatementLength](DatabaseMetaData.md))`()` Retrieves the maximum number of characters this database allows in an SQL statement. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxStatements](../java/sql/DatabaseMetaData.md))`()` Retrieves the maximum number of active statements to this database that can be open at the same time. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxTableNameLength](../java/sql/DatabaseMetaData.md))`()` Retrieves the maximum number of characters this database allows in a table name. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxTablesInSelect](../java/sql/DatabaseMetaData.md))`()` Retrieves the maximum number of tables this database allows in a`SELECT`statement. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxStatements](DatabaseMetaData.md))`()` Retrieves the maximum number of active statements to this database that can be open at the same time. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxTableNameLength](DatabaseMetaData.md))`()` Retrieves the maximum number of characters this database allows in a table name. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxTablesInSelect](DatabaseMetaData.md))`()` Retrieves the maximum number of tables this database allows in a`SELECT`statement. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxUserNameLength](../java/sql/DatabaseMetaData.md))`()` Retrieves the maximum number of characters this database allows in a user name. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getNumericFunctions](../java/sql/DatabaseMetaData.md))`()` Retrieves a comma-separated list of math functions available with this database. |
-| abstract [ResultSet](../java/sql/ResultSet.md)! | [getPrimaryKeys](../java/sql/DatabaseMetaData.md))`(`catalog:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `schema:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `table:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Retrieves a description of the given table's primary key columns. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxUserNameLength](DatabaseMetaData.md))`()` Retrieves the maximum number of characters this database allows in a user name. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getNumericFunctions](DatabaseMetaData.md))`()` Retrieves a comma-separated list of math functions available with this database. |
+| abstract [ResultSet](ResultSet.md)! | [getPrimaryKeys](DatabaseMetaData.md))`(`catalog:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `schema:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `table:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Retrieves a description of the given table's primary key columns. |
 | --- | --- |
-| abstract [ResultSet](../java/sql/ResultSet.md)! | [getProcedureColumns](../java/sql/DatabaseMetaData.md))`(`catalog:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `schemaPattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `procedureNamePattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `columnNamePattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Retrieves a description of the given catalog's stored procedure parameter and result columns. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getProcedureTerm](../java/sql/DatabaseMetaData.md))`()` Retrieves the database vendor's preferred term for "procedure". |
-| abstract [ResultSet](../java/sql/ResultSet.md)! | [getProcedures](../java/sql/DatabaseMetaData.md))`(`catalog:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `schemaPattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `procedureNamePattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Retrieves a description of the stored procedures available in the given catalog. |
+| abstract [ResultSet](ResultSet.md)! | [getProcedureColumns](DatabaseMetaData.md))`(`catalog:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `schemaPattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `procedureNamePattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `columnNamePattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Retrieves a description of the given catalog's stored procedure parameter and result columns. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getProcedureTerm](DatabaseMetaData.md))`()` Retrieves the database vendor's preferred term for "procedure". |
+| abstract [ResultSet](ResultSet.md)! | [getProcedures](DatabaseMetaData.md))`(`catalog:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `schemaPattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `procedureNamePattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Retrieves a description of the stored procedures available in the given catalog. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getResultSetHoldability](../java/sql/DatabaseMetaData.md))`()` Retrieves this database's default holdability for`ResultSet`objects. |
-| abstract [RowIdLifetime](../java/sql/RowIdLifetime.md)! | [getRowIdLifetime](../java/sql/DatabaseMetaData.md))`()` Indicates whether or not this data source supports the SQL`ROWID`type, and if so the lifetime for which a`RowId`object remains valid. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSQLKeywords](../java/sql/DatabaseMetaData.md))`()` Retrieves a comma-separated list of all of this database's SQL keywords that are NOT also SQL:2003 keywords. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getResultSetHoldability](DatabaseMetaData.md))`()` Retrieves this database's default holdability for`ResultSet`objects. |
+| abstract [RowIdLifetime](RowIdLifetime.md)! | [getRowIdLifetime](DatabaseMetaData.md))`()` Indicates whether or not this data source supports the SQL`ROWID`type, and if so the lifetime for which a`RowId`object remains valid. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSQLKeywords](DatabaseMetaData.md))`()` Retrieves a comma-separated list of all of this database's SQL keywords that are NOT also SQL:2003 keywords. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSQLStateType](../java/sql/DatabaseMetaData.md))`()` Indicates whether the SQLSTATE returned by`SQLException.getSQLState`is X/Open (now known as Open Group) SQL CLI or SQL:2003. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSchemaTerm](../java/sql/DatabaseMetaData.md))`()` Retrieves the database vendor's preferred term for "schema". |
-| abstract [ResultSet](../java/sql/ResultSet.md)! | [getSchemas](../java/sql/DatabaseMetaData.md))`()` Retrieves the schema names available in this database. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSQLStateType](DatabaseMetaData.md))`()` Indicates whether the SQLSTATE returned by`SQLException.getSQLState`is X/Open (now known as Open Group) SQL CLI or SQL:2003. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSchemaTerm](DatabaseMetaData.md))`()` Retrieves the database vendor's preferred term for "schema". |
+| abstract [ResultSet](ResultSet.md)! | [getSchemas](DatabaseMetaData.md))`()` Retrieves the schema names available in this database. |
 | --- | --- |
-| abstract [ResultSet](../java/sql/ResultSet.md)! | [getSchemas](../java/sql/DatabaseMetaData.md))`(`catalog:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `schemaPattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Retrieves the schema names available in this database. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSearchStringEscape](../java/sql/DatabaseMetaData.md))`()` Retrieves the string that can be used to escape wildcard characters. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getStringFunctions](../java/sql/DatabaseMetaData.md))`()` Retrieves a comma-separated list of string functions available with this database. |
+| abstract [ResultSet](ResultSet.md)! | [getSchemas](DatabaseMetaData.md))`(`catalog:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `schemaPattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Retrieves the schema names available in this database. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSearchStringEscape](DatabaseMetaData.md))`()` Retrieves the string that can be used to escape wildcard characters. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getStringFunctions](DatabaseMetaData.md))`()` Retrieves a comma-separated list of string functions available with this database. |
 | --- | --- |
-| abstract [ResultSet](../java/sql/ResultSet.md)! | [getSuperTables](../java/sql/DatabaseMetaData.md))`(`catalog:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `schemaPattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `tableNamePattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Retrieves a description of the table hierarchies defined in a particular schema in this database. |
-| abstract [ResultSet](../java/sql/ResultSet.md)! | [getSuperTypes](../java/sql/DatabaseMetaData.md))`(`catalog:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `schemaPattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `typeNamePattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Retrieves a description of the user-defined type (UDT) hierarchies defined in a particular schema in this database. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSystemFunctions](../java/sql/DatabaseMetaData.md))`()` Retrieves a comma-separated list of system functions available with this database. |
+| abstract [ResultSet](ResultSet.md)! | [getSuperTables](DatabaseMetaData.md))`(`catalog:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `schemaPattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `tableNamePattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Retrieves a description of the table hierarchies defined in a particular schema in this database. |
+| abstract [ResultSet](ResultSet.md)! | [getSuperTypes](DatabaseMetaData.md))`(`catalog:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `schemaPattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `typeNamePattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Retrieves a description of the user-defined type (UDT) hierarchies defined in a particular schema in this database. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSystemFunctions](DatabaseMetaData.md))`()` Retrieves a comma-separated list of system functions available with this database. |
 | --- | --- |
-| abstract [ResultSet](../java/sql/ResultSet.md)! | [getTablePrivileges](../java/sql/DatabaseMetaData.md))`(`catalog:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `schemaPattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `tableNamePattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Retrieves a description of the access rights for each table available in a catalog. |
-| abstract [ResultSet](../java/sql/ResultSet.md)! | [getTableTypes](../java/sql/DatabaseMetaData.md))`()` Retrieves the table types available in this database. |
-| abstract [ResultSet](../java/sql/ResultSet.md)! | [getTables](../java/sql/DatabaseMetaData.md))`(`catalog:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `schemaPattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `tableNamePattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `types:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Retrieves a description of the tables available in the given catalog. |
+| abstract [ResultSet](ResultSet.md)! | [getTablePrivileges](DatabaseMetaData.md))`(`catalog:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `schemaPattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `tableNamePattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Retrieves a description of the access rights for each table available in a catalog. |
+| abstract [ResultSet](ResultSet.md)! | [getTableTypes](DatabaseMetaData.md))`()` Retrieves the table types available in this database. |
+| abstract [ResultSet](ResultSet.md)! | [getTables](DatabaseMetaData.md))`(`catalog:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `schemaPattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `tableNamePattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `types:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>!`)` Retrieves a description of the tables available in the given catalog. |
 | --- | --- |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getTimeDateFunctions](../java/sql/DatabaseMetaData.md))`()` Retrieves a comma-separated list of the time and date functions available with this database. |
-| abstract [ResultSet](../java/sql/ResultSet.md)! | [getTypeInfo](../java/sql/DatabaseMetaData.md))`()` Retrieves a description of all the data types supported by this database. |
-| abstract [ResultSet](../java/sql/ResultSet.md)! | [getUDTs](../java/sql/DatabaseMetaData.md))`(`catalog:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `schemaPattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `typeNamePattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `types:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` Retrieves a description of the user-defined types (UDTs) defined in a particular schema. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getTimeDateFunctions](DatabaseMetaData.md))`()` Retrieves a comma-separated list of the time and date functions available with this database. |
+| abstract [ResultSet](ResultSet.md)! | [getTypeInfo](DatabaseMetaData.md))`()` Retrieves a description of all the data types supported by this database. |
+| abstract [ResultSet](ResultSet.md)! | [getUDTs](DatabaseMetaData.md))`(`catalog:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `schemaPattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `typeNamePattern:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `types:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` Retrieves a description of the user-defined types (UDTs) defined in a particular schema. |
 | --- | --- |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getURL](../java/sql/DatabaseMetaData.md))`()` Retrieves the URL for this DBMS. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getUserName](../java/sql/DatabaseMetaData.md))`()` Retrieves the user name as known to this database. |
-| abstract [ResultSet](../java/sql/ResultSet.md)! | [getVersionColumns](../java/sql/DatabaseMetaData.md))`(`catalog:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `schema:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `table:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Retrieves a description of a table's columns that are automatically updated when any value in a row is updated. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getURL](DatabaseMetaData.md))`()` Retrieves the URL for this DBMS. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getUserName](DatabaseMetaData.md))`()` Retrieves the user name as known to this database. |
+| abstract [ResultSet](ResultSet.md)! | [getVersionColumns](DatabaseMetaData.md))`(`catalog:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `schema:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `table:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Retrieves a description of a table's columns that are automatically updated when any value in a row is updated. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [insertsAreDetected](../java/sql/DatabaseMetaData.md))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves whether or not a visible row insert can be detected by calling the method`ResultSet.rowInserted`. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isCatalogAtStart](../java/sql/DatabaseMetaData.md))`()` Retrieves whether a catalog appears at the start of a fully qualified table name. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isReadOnly](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database is in read-only mode. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [insertsAreDetected](DatabaseMetaData.md))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves whether or not a visible row insert can be detected by calling the method`ResultSet.rowInserted`. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isCatalogAtStart](DatabaseMetaData.md))`()` Retrieves whether a catalog appears at the start of a fully qualified table name. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isReadOnly](DatabaseMetaData.md))`()` Retrieves whether this database is in read-only mode. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [locatorsUpdateCopy](../java/sql/DatabaseMetaData.md))`()` Indicates whether updates made to a LOB are made on a copy or directly to the LOB. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [nullPlusNonNullIsNull](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database supports concatenations between`NULL`and non-`NULL`values being`NULL`. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [nullsAreSortedAtEnd](../java/sql/DatabaseMetaData.md))`()` Retrieves whether`NULL`values are sorted at the end regardless of sort order. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [locatorsUpdateCopy](DatabaseMetaData.md))`()` Indicates whether updates made to a LOB are made on a copy or directly to the LOB. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [nullPlusNonNullIsNull](DatabaseMetaData.md))`()` Retrieves whether this database supports concatenations between`NULL`and non-`NULL`values being`NULL`. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [nullsAreSortedAtEnd](DatabaseMetaData.md))`()` Retrieves whether`NULL`values are sorted at the end regardless of sort order. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [nullsAreSortedAtStart](../java/sql/DatabaseMetaData.md))`()` Retrieves whether`NULL`values are sorted at the start regardless of sort order. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [nullsAreSortedHigh](../java/sql/DatabaseMetaData.md))`()` Retrieves whether`NULL`values are sorted high. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [nullsAreSortedLow](../java/sql/DatabaseMetaData.md))`()` Retrieves whether`NULL`values are sorted low. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [nullsAreSortedAtStart](DatabaseMetaData.md))`()` Retrieves whether`NULL`values are sorted at the start regardless of sort order. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [nullsAreSortedHigh](DatabaseMetaData.md))`()` Retrieves whether`NULL`values are sorted high. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [nullsAreSortedLow](DatabaseMetaData.md))`()` Retrieves whether`NULL`values are sorted low. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [othersDeletesAreVisible](../java/sql/DatabaseMetaData.md))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves whether deletes made by others are visible. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [othersInsertsAreVisible](../java/sql/DatabaseMetaData.md))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves whether inserts made by others are visible. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [othersUpdatesAreVisible](../java/sql/DatabaseMetaData.md))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves whether updates made by others are visible. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [othersDeletesAreVisible](DatabaseMetaData.md))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves whether deletes made by others are visible. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [othersInsertsAreVisible](DatabaseMetaData.md))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves whether inserts made by others are visible. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [othersUpdatesAreVisible](DatabaseMetaData.md))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves whether updates made by others are visible. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [ownDeletesAreVisible](../java/sql/DatabaseMetaData.md))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves whether a result set's own deletes are visible. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [ownInsertsAreVisible](../java/sql/DatabaseMetaData.md))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves whether a result set's own inserts are visible. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [ownUpdatesAreVisible](../java/sql/DatabaseMetaData.md))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves whether for the given type of`ResultSet`object, the result set's own updates are visible. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [ownDeletesAreVisible](DatabaseMetaData.md))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves whether a result set's own deletes are visible. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [ownInsertsAreVisible](DatabaseMetaData.md))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves whether a result set's own inserts are visible. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [ownUpdatesAreVisible](DatabaseMetaData.md))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves whether for the given type of`ResultSet`object, the result set's own updates are visible. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [storesLowerCaseIdentifiers](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database treats mixed case unquoted SQL identifiers as case insensitive and stores them in lower case. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [storesLowerCaseQuotedIdentifiers](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database treats mixed case quoted SQL identifiers as case insensitive and stores them in lower case. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [storesMixedCaseIdentifiers](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database treats mixed case unquoted SQL identifiers as case insensitive and stores them in mixed case. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [storesLowerCaseIdentifiers](DatabaseMetaData.md))`()` Retrieves whether this database treats mixed case unquoted SQL identifiers as case insensitive and stores them in lower case. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [storesLowerCaseQuotedIdentifiers](DatabaseMetaData.md))`()` Retrieves whether this database treats mixed case quoted SQL identifiers as case insensitive and stores them in lower case. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [storesMixedCaseIdentifiers](DatabaseMetaData.md))`()` Retrieves whether this database treats mixed case unquoted SQL identifiers as case insensitive and stores them in mixed case. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [storesMixedCaseQuotedIdentifiers](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database treats mixed case quoted SQL identifiers as case insensitive and stores them in mixed case. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [storesUpperCaseIdentifiers](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database treats mixed case unquoted SQL identifiers as case insensitive and stores them in upper case. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [storesUpperCaseQuotedIdentifiers](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database treats mixed case quoted SQL identifiers as case insensitive and stores them in upper case. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [storesMixedCaseQuotedIdentifiers](DatabaseMetaData.md))`()` Retrieves whether this database treats mixed case quoted SQL identifiers as case insensitive and stores them in mixed case. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [storesUpperCaseIdentifiers](DatabaseMetaData.md))`()` Retrieves whether this database treats mixed case unquoted SQL identifiers as case insensitive and stores them in upper case. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [storesUpperCaseQuotedIdentifiers](DatabaseMetaData.md))`()` Retrieves whether this database treats mixed case quoted SQL identifiers as case insensitive and stores them in upper case. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsANSI92EntryLevelSQL](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database supports the ANSI92 entry level SQL grammar. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsANSI92FullSQL](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database supports the ANSI92 full SQL grammar supported. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsANSI92IntermediateSQL](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database supports the ANSI92 intermediate SQL grammar supported. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsANSI92EntryLevelSQL](DatabaseMetaData.md))`()` Retrieves whether this database supports the ANSI92 entry level SQL grammar. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsANSI92FullSQL](DatabaseMetaData.md))`()` Retrieves whether this database supports the ANSI92 full SQL grammar supported. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsANSI92IntermediateSQL](DatabaseMetaData.md))`()` Retrieves whether this database supports the ANSI92 intermediate SQL grammar supported. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsAlterTableWithAddColumn](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database supports`ALTER TABLE`with add column. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsAlterTableWithDropColumn](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database supports`ALTER TABLE`with drop column. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsBatchUpdates](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database supports batch updates. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsAlterTableWithAddColumn](DatabaseMetaData.md))`()` Retrieves whether this database supports`ALTER TABLE`with add column. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsAlterTableWithDropColumn](DatabaseMetaData.md))`()` Retrieves whether this database supports`ALTER TABLE`with drop column. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsBatchUpdates](DatabaseMetaData.md))`()` Retrieves whether this database supports batch updates. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsCatalogsInDataManipulation](../java/sql/DatabaseMetaData.md))`()` Retrieves whether a catalog name can be used in a data manipulation statement. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsCatalogsInIndexDefinitions](../java/sql/DatabaseMetaData.md))`()` Retrieves whether a catalog name can be used in an index definition statement. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsCatalogsInPrivilegeDefinitions](../java/sql/DatabaseMetaData.md))`()` Retrieves whether a catalog name can be used in a privilege definition statement. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsCatalogsInDataManipulation](DatabaseMetaData.md))`()` Retrieves whether a catalog name can be used in a data manipulation statement. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsCatalogsInIndexDefinitions](DatabaseMetaData.md))`()` Retrieves whether a catalog name can be used in an index definition statement. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsCatalogsInPrivilegeDefinitions](DatabaseMetaData.md))`()` Retrieves whether a catalog name can be used in a privilege definition statement. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsCatalogsInProcedureCalls](../java/sql/DatabaseMetaData.md))`()` Retrieves whether a catalog name can be used in a procedure call statement. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsCatalogsInTableDefinitions](../java/sql/DatabaseMetaData.md))`()` Retrieves whether a catalog name can be used in a table definition statement. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsColumnAliasing](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database supports column aliasing. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsCatalogsInProcedureCalls](DatabaseMetaData.md))`()` Retrieves whether a catalog name can be used in a procedure call statement. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsCatalogsInTableDefinitions](DatabaseMetaData.md))`()` Retrieves whether a catalog name can be used in a table definition statement. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsColumnAliasing](DatabaseMetaData.md))`()` Retrieves whether this database supports column aliasing. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsConvert](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database supports the JDBC scalar function`CONVERT`for the conversion of one JDBC type to another. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsConvert](../java/sql/DatabaseMetaData.md))`(`fromType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `toType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves whether this database supports the JDBC scalar function`CONVERT`for conversions between the JDBC types*fromType* and*toType*. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsCoreSQLGrammar](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database supports the ODBC Core SQL grammar. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsConvert](DatabaseMetaData.md))`()` Retrieves whether this database supports the JDBC scalar function`CONVERT`for the conversion of one JDBC type to another. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsConvert](DatabaseMetaData.md))`(`fromType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `toType:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves whether this database supports the JDBC scalar function`CONVERT`for conversions between the JDBC types*fromType* and*toType*. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsCoreSQLGrammar](DatabaseMetaData.md))`()` Retrieves whether this database supports the ODBC Core SQL grammar. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsCorrelatedSubqueries](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database supports correlated subqueries. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsDataDefinitionAndDataManipulationTransactions](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database supports both data definition and data manipulation statements within a transaction. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsDataManipulationTransactionsOnly](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database supports only data manipulation statements within a transaction. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsCorrelatedSubqueries](DatabaseMetaData.md))`()` Retrieves whether this database supports correlated subqueries. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsDataDefinitionAndDataManipulationTransactions](DatabaseMetaData.md))`()` Retrieves whether this database supports both data definition and data manipulation statements within a transaction. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsDataManipulationTransactionsOnly](DatabaseMetaData.md))`()` Retrieves whether this database supports only data manipulation statements within a transaction. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsDifferentTableCorrelationNames](../java/sql/DatabaseMetaData.md))`()` Retrieves whether, when table correlation names are supported, they are restricted to being different from the names of the tables. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsExpressionsInOrderBy](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database supports expressions in`ORDER BY`lists. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsExtendedSQLGrammar](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database supports the ODBC Extended SQL grammar. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsDifferentTableCorrelationNames](DatabaseMetaData.md))`()` Retrieves whether, when table correlation names are supported, they are restricted to being different from the names of the tables. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsExpressionsInOrderBy](DatabaseMetaData.md))`()` Retrieves whether this database supports expressions in`ORDER BY`lists. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsExtendedSQLGrammar](DatabaseMetaData.md))`()` Retrieves whether this database supports the ODBC Extended SQL grammar. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsFullOuterJoins](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database supports full nested outer joins. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsGetGeneratedKeys](../java/sql/DatabaseMetaData.md))`()` Retrieves whether auto-generated keys can be retrieved after a statement has been executed |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsGroupBy](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database supports some form of`GROUP BY`clause. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsFullOuterJoins](DatabaseMetaData.md))`()` Retrieves whether this database supports full nested outer joins. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsGetGeneratedKeys](DatabaseMetaData.md))`()` Retrieves whether auto-generated keys can be retrieved after a statement has been executed |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsGroupBy](DatabaseMetaData.md))`()` Retrieves whether this database supports some form of`GROUP BY`clause. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsGroupByBeyondSelect](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database supports using columns not included in the`SELECT`statement in a`GROUP BY`clause provided that all of the columns in the`SELECT`statement are included in the`GROUP BY`clause. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsGroupByUnrelated](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database supports using a column that is not in the`SELECT`statement in a`GROUP BY`clause. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsIntegrityEnhancementFacility](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database supports the SQL Integrity Enhancement Facility. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsGroupByBeyondSelect](DatabaseMetaData.md))`()` Retrieves whether this database supports using columns not included in the`SELECT`statement in a`GROUP BY`clause provided that all of the columns in the`SELECT`statement are included in the`GROUP BY`clause. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsGroupByUnrelated](DatabaseMetaData.md))`()` Retrieves whether this database supports using a column that is not in the`SELECT`statement in a`GROUP BY`clause. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsIntegrityEnhancementFacility](DatabaseMetaData.md))`()` Retrieves whether this database supports the SQL Integrity Enhancement Facility. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsLikeEscapeClause](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database supports specifying a`LIKE`escape clause. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsLimitedOuterJoins](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database provides limited support for outer joins. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsMinimumSQLGrammar](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database supports the ODBC Minimum SQL grammar. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsLikeEscapeClause](DatabaseMetaData.md))`()` Retrieves whether this database supports specifying a`LIKE`escape clause. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsLimitedOuterJoins](DatabaseMetaData.md))`()` Retrieves whether this database provides limited support for outer joins. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsMinimumSQLGrammar](DatabaseMetaData.md))`()` Retrieves whether this database supports the ODBC Minimum SQL grammar. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsMixedCaseIdentifiers](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database treats mixed case unquoted SQL identifiers as case sensitive and as a result stores them in mixed case. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsMixedCaseQuotedIdentifiers](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database treats mixed case quoted SQL identifiers as case sensitive and as a result stores them in mixed case. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsMultipleOpenResults](../java/sql/DatabaseMetaData.md))`()` Retrieves whether it is possible to have multiple`ResultSet`objects returned from a`CallableStatement`object simultaneously. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsMixedCaseIdentifiers](DatabaseMetaData.md))`()` Retrieves whether this database treats mixed case unquoted SQL identifiers as case sensitive and as a result stores them in mixed case. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsMixedCaseQuotedIdentifiers](DatabaseMetaData.md))`()` Retrieves whether this database treats mixed case quoted SQL identifiers as case sensitive and as a result stores them in mixed case. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsMultipleOpenResults](DatabaseMetaData.md))`()` Retrieves whether it is possible to have multiple`ResultSet`objects returned from a`CallableStatement`object simultaneously. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsMultipleResultSets](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database supports getting multiple`ResultSet`objects from a single call to the method`execute`. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsMultipleTransactions](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database allows having multiple transactions open at once (on different connections). |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsNamedParameters](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database supports named parameters to callable statements. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsMultipleResultSets](DatabaseMetaData.md))`()` Retrieves whether this database supports getting multiple`ResultSet`objects from a single call to the method`execute`. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsMultipleTransactions](DatabaseMetaData.md))`()` Retrieves whether this database allows having multiple transactions open at once (on different connections). |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsNamedParameters](DatabaseMetaData.md))`()` Retrieves whether this database supports named parameters to callable statements. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsNonNullableColumns](../java/sql/DatabaseMetaData.md))`()` Retrieves whether columns in this database may be defined as non-nullable. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsOpenCursorsAcrossCommit](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database supports keeping cursors open across commits. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsOpenCursorsAcrossRollback](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database supports keeping cursors open across rollbacks. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsNonNullableColumns](DatabaseMetaData.md))`()` Retrieves whether columns in this database may be defined as non-nullable. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsOpenCursorsAcrossCommit](DatabaseMetaData.md))`()` Retrieves whether this database supports keeping cursors open across commits. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsOpenCursorsAcrossRollback](DatabaseMetaData.md))`()` Retrieves whether this database supports keeping cursors open across rollbacks. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsOpenStatementsAcrossCommit](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database supports keeping statements open across commits. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsOpenStatementsAcrossRollback](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database supports keeping statements open across rollbacks. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsOrderByUnrelated](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database supports using a column that is not in the`SELECT`statement in an`ORDER BY`clause. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsOpenStatementsAcrossCommit](DatabaseMetaData.md))`()` Retrieves whether this database supports keeping statements open across commits. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsOpenStatementsAcrossRollback](DatabaseMetaData.md))`()` Retrieves whether this database supports keeping statements open across rollbacks. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsOrderByUnrelated](DatabaseMetaData.md))`()` Retrieves whether this database supports using a column that is not in the`SELECT`statement in an`ORDER BY`clause. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsOuterJoins](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database supports some form of outer join. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsPositionedDelete](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database supports positioned`DELETE`statements. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsPositionedUpdate](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database supports positioned`UPDATE`statements. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsOuterJoins](DatabaseMetaData.md))`()` Retrieves whether this database supports some form of outer join. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsPositionedDelete](DatabaseMetaData.md))`()` Retrieves whether this database supports positioned`DELETE`statements. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsPositionedUpdate](DatabaseMetaData.md))`()` Retrieves whether this database supports positioned`UPDATE`statements. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsResultSetConcurrency](../java/sql/DatabaseMetaData.md))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `concurrency:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves whether this database supports the given concurrency type in combination with the given result set type. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsResultSetHoldability](../java/sql/DatabaseMetaData.md))`(`holdability:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves whether this database supports the given result set holdability. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsResultSetType](../java/sql/DatabaseMetaData.md))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves whether this database supports the given result set type. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsResultSetConcurrency](DatabaseMetaData.md))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `concurrency:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves whether this database supports the given concurrency type in combination with the given result set type. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsResultSetHoldability](DatabaseMetaData.md))`(`holdability:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves whether this database supports the given result set holdability. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsResultSetType](DatabaseMetaData.md))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves whether this database supports the given result set type. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsSavepoints](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database supports savepoints. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsSchemasInDataManipulation](../java/sql/DatabaseMetaData.md))`()` Retrieves whether a schema name can be used in a data manipulation statement. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsSchemasInIndexDefinitions](../java/sql/DatabaseMetaData.md))`()` Retrieves whether a schema name can be used in an index definition statement. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsSavepoints](DatabaseMetaData.md))`()` Retrieves whether this database supports savepoints. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsSchemasInDataManipulation](DatabaseMetaData.md))`()` Retrieves whether a schema name can be used in a data manipulation statement. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsSchemasInIndexDefinitions](DatabaseMetaData.md))`()` Retrieves whether a schema name can be used in an index definition statement. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsSchemasInPrivilegeDefinitions](../java/sql/DatabaseMetaData.md))`()` Retrieves whether a schema name can be used in a privilege definition statement. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsSchemasInProcedureCalls](../java/sql/DatabaseMetaData.md))`()` Retrieves whether a schema name can be used in a procedure call statement. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsSchemasInTableDefinitions](../java/sql/DatabaseMetaData.md))`()` Retrieves whether a schema name can be used in a table definition statement. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsSchemasInPrivilegeDefinitions](DatabaseMetaData.md))`()` Retrieves whether a schema name can be used in a privilege definition statement. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsSchemasInProcedureCalls](DatabaseMetaData.md))`()` Retrieves whether a schema name can be used in a procedure call statement. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsSchemasInTableDefinitions](DatabaseMetaData.md))`()` Retrieves whether a schema name can be used in a table definition statement. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsSelectForUpdate](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database supports`SELECT FOR UPDATE`statements. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsStatementPooling](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database supports statement pooling. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsStoredFunctionsUsingCallSyntax](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database supports invoking user-defined or vendor functions using the stored procedure escape syntax. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsSelectForUpdate](DatabaseMetaData.md))`()` Retrieves whether this database supports`SELECT FOR UPDATE`statements. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsStatementPooling](DatabaseMetaData.md))`()` Retrieves whether this database supports statement pooling. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsStoredFunctionsUsingCallSyntax](DatabaseMetaData.md))`()` Retrieves whether this database supports invoking user-defined or vendor functions using the stored procedure escape syntax. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsStoredProcedures](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database supports stored procedure calls that use the stored procedure escape syntax. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsSubqueriesInComparisons](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database supports subqueries in comparison expressions. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsSubqueriesInExists](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database supports subqueries in`EXISTS`expressions. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsStoredProcedures](DatabaseMetaData.md))`()` Retrieves whether this database supports stored procedure calls that use the stored procedure escape syntax. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsSubqueriesInComparisons](DatabaseMetaData.md))`()` Retrieves whether this database supports subqueries in comparison expressions. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsSubqueriesInExists](DatabaseMetaData.md))`()` Retrieves whether this database supports subqueries in`EXISTS`expressions. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsSubqueriesInIns](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database supports subqueries in`IN`expressions. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsSubqueriesInQuantifieds](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database supports subqueries in quantified expressions. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsTableCorrelationNames](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database supports table correlation names. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsSubqueriesInIns](DatabaseMetaData.md))`()` Retrieves whether this database supports subqueries in`IN`expressions. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsSubqueriesInQuantifieds](DatabaseMetaData.md))`()` Retrieves whether this database supports subqueries in quantified expressions. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsTableCorrelationNames](DatabaseMetaData.md))`()` Retrieves whether this database supports table correlation names. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsTransactionIsolationLevel](../java/sql/DatabaseMetaData.md))`(`level:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves whether this database supports the given transaction isolation level. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsTransactions](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database supports transactions. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsUnion](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database supports SQL`UNION`. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsTransactionIsolationLevel](DatabaseMetaData.md))`(`level:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves whether this database supports the given transaction isolation level. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsTransactions](DatabaseMetaData.md))`()` Retrieves whether this database supports transactions. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsUnion](DatabaseMetaData.md))`()` Retrieves whether this database supports SQL`UNION`. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsUnionAll](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database supports SQL`UNION ALL`. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [updatesAreDetected](../java/sql/DatabaseMetaData.md))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves whether or not a visible row update can be detected by calling the method`ResultSet.rowUpdated`. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [usesLocalFilePerTable](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database uses a file for each table. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsUnionAll](DatabaseMetaData.md))`()` Retrieves whether this database supports SQL`UNION ALL`. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [updatesAreDetected](DatabaseMetaData.md))`(`type:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Retrieves whether or not a visible row update can be detected by calling the method`ResultSet.rowUpdated`. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [usesLocalFilePerTable](DatabaseMetaData.md))`()` Retrieves whether this database uses a file for each table. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [usesLocalFiles](../java/sql/DatabaseMetaData.md))`()` Retrieves whether this database stores tables in a local file. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [usesLocalFiles](DatabaseMetaData.md))`()` Retrieves whether this database stores tables in a local file. |
 
 | Inherited functions ||
 |---|---|
-| From class [Wrapper](../java/sql/Wrapper.md) |------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isWrapperFor](../java/sql/Wrapper.md))`(`iface:` ` [Class](../java/lang/Class.md)<*>!`)` <br /> Returns true if this either implements the interface argument or is directly or indirectly a wrapper for an object that does. Returns false otherwise. If this implements the interface then return true, else if this is a wrapper then return the result of recursively calling`isWrapperFor`on the wrapped object. If this does not implement the interface and is not a wrapper, return false. This method should be implemented as a low-cost operation compared to`unwrap`so that callers can use this method to avoid expensive`unwrap`calls that may fail. If this method returns true then calling`unwrap`with the same argument should succeed. <br /> | | T | [unwrap](../java/sql/Wrapper.md))`(`iface:` ` [Class](../java/lang/Class.md)<T>!`)` <br /> Returns an object that implements the given interface to allow access to non-standard methods, or standard methods not exposed by the proxy. If the receiver implements the interface then the result is the receiver or a proxy for the receiver. If the receiver is a wrapper and the wrapped object implements the interface then the result is the wrapped object or a proxy for the wrapped object. Otherwise return the the result of calling`unwrap`recursively on the wrapped object or a proxy for that result. If the receiver is not a wrapper and does not implement the interface, then an`SQLException`is thrown. <br /> | ||
+| From class [Wrapper](Wrapper.md) |------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isWrapperFor](Wrapper.md))`(`iface:` ` [Class](../java.lang/Class.md)<*>!`)` <br /> Returns true if this either implements the interface argument or is directly or indirectly a wrapper for an object that does. Returns false otherwise. If this implements the interface then return true, else if this is a wrapper then return the result of recursively calling`isWrapperFor`on the wrapped object. If this does not implement the interface and is not a wrapper, return false. This method should be implemented as a low-cost operation compared to`unwrap`so that callers can use this method to avoid expensive`unwrap`calls that may fail. If this method returns true then calling`unwrap`with the same argument should succeed. <br /> | | T | [unwrap](Wrapper.md))`(`iface:` ` [Class](../java.lang/Class.md)<T>!`)` <br /> Returns an object that implements the given interface to allow access to non-standard methods, or standard methods not exposed by the proxy. If the receiver implements the interface then the result is the receiver or a proxy for the receiver. If the receiver is a wrapper and the wrapped object implements the interface then the result is the wrapped object or a proxy for the wrapped object. Otherwise return the the result of calling`unwrap`recursively on the wrapped object or a proxy for that result. If the receiver is not a wrapper and does not implement the interface, then an`SQLException`is thrown. <br /> | ||
 
 ## Constants
 
@@ -1389,7 +1389,7 @@ The`ResultSet`object that is returned has the following columns:
 
 | Return ||
 |---------------------------------------------------------------------------------|------------------------------------------------------------------|
-| [ResultSet](../java/sql/ResultSet.md)! | a`ResultSet`object in which each row is an attribute description |
+| [ResultSet](ResultSet.md)! | a`ResultSet`object in which each row is an attribute description |
 
 | Exceptions ||
 |-------------------------|-----------------------------------|
@@ -1397,7 +1397,7 @@ The`ResultSet`object that is returned has the following columns:
 
 **See Also**
 
-- [#getSearchStringEscape](../java/sql/DatabaseMetaData.md)) 
+- [#getSearchStringEscape](DatabaseMetaData.md)) 
 
 ### getBestRowIdentifier
 
@@ -1445,7 +1445,7 @@ The COLUMN_SIZE column represents the specified column size for the given column
 
 | Return ||
 |---------------------------------------------------------------------------------|-----------------------------------------------|
-| [ResultSet](../java/sql/ResultSet.md)! | `ResultSet`- each row is a column description |
+| [ResultSet](ResultSet.md)! | `ResultSet`- each row is a column description |
 
 | Exceptions ||
 |-------------------------|-----------------------------------|
@@ -1503,7 +1503,7 @@ The catalog column is:
 
 | Return ||
 |---------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| [ResultSet](../java/sql/ResultSet.md)! | a`ResultSet`object in which each row has a single`String`column that is a catalog name |
+| [ResultSet](ResultSet.md)! | a`ResultSet`object in which each row has a single`String`column that is a catalog name |
 
 | Exceptions ||
 |-------------------------|-----------------------------------|
@@ -1532,7 +1532,7 @@ The`ResultSet`is sorted by the NAME column
 
 | Return ||
 |---------------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| [ResultSet](../java/sql/ResultSet.md)! | A`ResultSet`object; each row is a supported client info property <br /> |
+| [ResultSet](ResultSet.md)! | A`ResultSet`object; each row is a supported client info property <br /> |
 
 | Exceptions ||
 |-------------------------|------------------------------------------|
@@ -1576,7 +1576,7 @@ Each privilige description has the following columns:
 
 | Return ||
 |---------------------------------------------------------------------------------|---------------------------------------------------------|
-| [ResultSet](../java/sql/ResultSet.md)! | `ResultSet`- each row is a column privilege description |
+| [ResultSet](ResultSet.md)! | `ResultSet`- each row is a column privilege description |
 
 | Exceptions ||
 |-------------------------|-----------------------------------|
@@ -1584,7 +1584,7 @@ Each privilige description has the following columns:
 
 **See Also**
 
-- [#getSearchStringEscape](../java/sql/DatabaseMetaData.md)) 
+- [#getSearchStringEscape](DatabaseMetaData.md)) 
 
 ### getColumns
 
@@ -1654,7 +1654,7 @@ The COLUMN_SIZE column specifies the column size for the given column. For numer
 
 | Return ||
 |---------------------------------------------------------------------------------|-----------------------------------------------|
-| [ResultSet](../java/sql/ResultSet.md)! | `ResultSet`- each row is a column description |
+| [ResultSet](ResultSet.md)! | `ResultSet`- each row is a column description |
 
 | Exceptions ||
 |-------------------------|-----------------------------------|
@@ -1662,7 +1662,7 @@ The COLUMN_SIZE column specifies the column size for the given column. For numer
 
 **See Also**
 
-- [#getSearchStringEscape](../java/sql/DatabaseMetaData.md)) 
+- [#getSearchStringEscape](DatabaseMetaData.md)) 
 
 ### getConnection
 
@@ -1678,7 +1678,7 @@ Retrieves the connection that produced this metadata object.
 
 | Return ||
 |-----------------------------------------------------------------------------------|---------------------------------------------------|
-| [Connection](../java/sql/Connection.md)! | the connection that produced this metadata object |
+| [Connection](Connection.md)! | the connection that produced this metadata object |
 
 | Exceptions ||
 |-------------------------|-----------------------------------|
@@ -1744,7 +1744,7 @@ Each foreign key column description has the following columns:
 
 | Return ||
 |---------------------------------------------------------------------------------|-----------------------------------------------------------|
-| [ResultSet](../java/sql/ResultSet.md)! | `ResultSet`- each row is a foreign key column description |
+| [ResultSet](ResultSet.md)! | `ResultSet`- each row is a foreign key column description |
 
 | Exceptions ||
 |-------------------------|-----------------------------------|
@@ -1752,7 +1752,7 @@ Each foreign key column description has the following columns:
 
 **See Also**
 
-- [#getImportedKeys](../java/sql/DatabaseMetaData.md)) 
+- [#getImportedKeys](DatabaseMetaData.md)) 
 
 ### getDatabaseMajorVersion
 
@@ -1846,7 +1846,7 @@ Retrieves this database's default transaction isolation level. The possible valu
 
 **See Also**
 
-- [java.sql.Connection](../java/sql/Connection.md) 
+- [java.sql.Connection](Connection.md) 
 
 ### getDriverMajorVersion
 
@@ -1965,7 +1965,7 @@ Each foreign key column description has the following columns:
 
 | Return ||
 |---------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-| [ResultSet](../java/sql/ResultSet.md)! | a`ResultSet`object in which each row is a foreign key column description |
+| [ResultSet](ResultSet.md)! | a`ResultSet`object in which each row is a foreign key column description |
 
 | Exceptions ||
 |-------------------------|-----------------------------------|
@@ -1973,7 +1973,7 @@ Each foreign key column description has the following columns:
 
 **See Also**
 
-- [#getImportedKeys](../java/sql/DatabaseMetaData.md)) 
+- [#getImportedKeys](DatabaseMetaData.md)) 
 
 ### getExtraNameCharacters
 
@@ -2054,7 +2054,7 @@ The PRECISION column represents the specified column size for the given paramete
 
 | Return ||
 |---------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
-| [ResultSet](../java/sql/ResultSet.md)! | `ResultSet`- each row describes a user function parameter, column or return type |
+| [ResultSet](ResultSet.md)! | `ResultSet`- each row describes a user function parameter, column or return type |
 
 | Exceptions ||
 |-------------------------|-----------------------------------|
@@ -2062,7 +2062,7 @@ The PRECISION column represents the specified column size for the given paramete
 
 **See Also**
 
-- [#getSearchStringEscape](../java/sql/DatabaseMetaData.md)) 
+- [#getSearchStringEscape](DatabaseMetaData.md)) 
 
 ### getFunctions
 
@@ -2103,7 +2103,7 @@ A user may not have permission to execute any of the functions that are returned
 
 | Return ||
 |---------------------------------------------------------------------------------|-------------------------------------------------|
-| [ResultSet](../java/sql/ResultSet.md)! | `ResultSet`- each row is a function description |
+| [ResultSet](ResultSet.md)! | `ResultSet`- each row is a function description |
 
 | Exceptions ||
 |-------------------------|-----------------------------------|
@@ -2111,7 +2111,7 @@ A user may not have permission to execute any of the functions that are returned
 
 **See Also**
 
-- [#getSearchStringEscape](../java/sql/DatabaseMetaData.md)) 
+- [#getSearchStringEscape](DatabaseMetaData.md)) 
 
 ### getIdentifierQuoteString
 
@@ -2184,7 +2184,7 @@ Each primary key column description has the following columns:
 
 | Return ||
 |---------------------------------------------------------------------------------|-----------------------------------------------------------|
-| [ResultSet](../java/sql/ResultSet.md)! | `ResultSet`- each row is a primary key column description |
+| [ResultSet](ResultSet.md)! | `ResultSet`- each row is a primary key column description |
 
 | Exceptions ||
 |-------------------------|-----------------------------------|
@@ -2192,7 +2192,7 @@ Each primary key column description has the following columns:
 
 **See Also**
 
-- [#getExportedKeys](../java/sql/DatabaseMetaData.md)) 
+- [#getExportedKeys](DatabaseMetaData.md)) 
 
 ### getIndexInfo
 
@@ -2241,7 +2241,7 @@ Each index column description has the following columns:
 
 | Return ||
 |---------------------------------------------------------------------------------|------------------------------------------------------|
-| [ResultSet](../java/sql/ResultSet.md)! | `ResultSet`- each row is an index column description |
+| [ResultSet](ResultSet.md)! | `ResultSet`- each row is an index column description |
 
 | Exceptions ||
 |-------------------------|-----------------------------------|
@@ -2693,7 +2693,7 @@ Each primary key column description has the following columns:
 
 | Return ||
 |---------------------------------------------------------------------------------|-----------------------------------------------------------|
-| [ResultSet](../java/sql/ResultSet.md)! | `ResultSet`- each row is a primary key column description |
+| [ResultSet](ResultSet.md)! | `ResultSet`- each row is a primary key column description |
 
 | Exceptions ||
 |-------------------------|-----------------------------------|
@@ -2768,7 +2768,7 @@ The PRECISION column represents the specified column size for the given column. 
 
 | Return ||
 |---------------------------------------------------------------------------------|------------------------------------------------------------------------|
-| [ResultSet](../java/sql/ResultSet.md)! | `ResultSet`- each row describes a stored procedure parameter or column |
+| [ResultSet](ResultSet.md)! | `ResultSet`- each row describes a stored procedure parameter or column |
 
 | Exceptions ||
 |-------------------------|-----------------------------------|
@@ -2776,7 +2776,7 @@ The PRECISION column represents the specified column size for the given column. 
 
 **See Also**
 
-- [#getSearchStringEscape](../java/sql/DatabaseMetaData.md)) 
+- [#getSearchStringEscape](DatabaseMetaData.md)) 
 
 ### getProcedureTerm
 
@@ -2838,7 +2838,7 @@ A user may not have permissions to execute any of the procedures that are return
 
 | Return ||
 |---------------------------------------------------------------------------------|--------------------------------------------------|
-| [ResultSet](../java/sql/ResultSet.md)! | `ResultSet`- each row is a procedure description |
+| [ResultSet](ResultSet.md)! | `ResultSet`- each row is a procedure description |
 
 | Exceptions ||
 |-------------------------|-----------------------------------|
@@ -2846,7 +2846,7 @@ A user may not have permissions to execute any of the procedures that are return
 
 **See Also**
 
-- [#getSearchStringEscape](../java/sql/DatabaseMetaData.md)) 
+- [#getSearchStringEscape](DatabaseMetaData.md)) 
 
 ### getResultSetHoldability
 
@@ -2893,7 +2893,7 @@ can be used. Valid Forever means valid across all Sessions, and valid for a Sess
 
 | Return ||
 |-----------------------------------------------------------------------------------------|------------------------------------------------|
-| [RowIdLifetime](../java/sql/RowIdLifetime.md)! | the status indicating the lifetime of a`RowId` |
+| [RowIdLifetime](RowIdLifetime.md)! | the status indicating the lifetime of a`RowId` |
 
 | Exceptions ||
 |-------------------------|-----------------------------------|
@@ -2970,7 +2970,7 @@ The schema columns are:
 
 | Return ||
 |---------------------------------------------------------------------------------|--------------------------------------------------------------|
-| [ResultSet](../java/sql/ResultSet.md)! | a`ResultSet`object in which each row is a schema description |
+| [ResultSet](ResultSet.md)! | a`ResultSet`object in which each row is a schema description |
 
 | Exceptions ||
 |-------------------------|-----------------------------------|
@@ -3001,7 +3001,7 @@ The schema columns are:
 
 | Return ||
 |---------------------------------------------------------------------------------|--------------------------------------------------------------|
-| [ResultSet](../java/sql/ResultSet.md)! | a`ResultSet`object in which each row is a schema description |
+| [ResultSet](ResultSet.md)! | a`ResultSet`object in which each row is a schema description |
 
 | Exceptions ||
 |-------------------------|-----------------------------------|
@@ -3009,7 +3009,7 @@ The schema columns are:
 
 **See Also**
 
-- [#getSearchStringEscape](../java/sql/DatabaseMetaData.md)) 
+- [#getSearchStringEscape](DatabaseMetaData.md)) 
 
 ### getSearchStringEscape
 
@@ -3083,7 +3083,7 @@ Each type description has the following columns:
 
 | Return ||
 |---------------------------------------------------------------------------------|------------------------------------------------------------|
-| [ResultSet](../java/sql/ResultSet.md)! | a`ResultSet`object in which each row is a type description |
+| [ResultSet](ResultSet.md)! | a`ResultSet`object in which each row is a type description |
 
 | Exceptions ||
 |-------------------------|-----------------------------------|
@@ -3091,7 +3091,7 @@ Each type description has the following columns:
 
 **See Also**
 
-- [#getSearchStringEscape](../java/sql/DatabaseMetaData.md)) 
+- [#getSearchStringEscape](DatabaseMetaData.md)) 
 
 ### getSuperTypes
 
@@ -3129,7 +3129,7 @@ If a UDT does not have a direct super type, it is not listed here. A row of the`
 
 | Return ||
 |---------------------------------------------------------------------------------|------------------------------------------------------------------------------|
-| [ResultSet](../java/sql/ResultSet.md)! | a`ResultSet`object in which a row gives information about the designated UDT |
+| [ResultSet](ResultSet.md)! | a`ResultSet`object in which a row gives information about the designated UDT |
 
 | Exceptions ||
 |-------------------------|-----------------------------------|
@@ -3137,7 +3137,7 @@ If a UDT does not have a direct super type, it is not listed here. A row of the`
 
 **See Also**
 
-- [#getSearchStringEscape](../java/sql/DatabaseMetaData.md)) 
+- [#getSearchStringEscape](DatabaseMetaData.md)) 
 
 ### getSystemFunctions
 
@@ -3192,7 +3192,7 @@ Each privilige description has the following columns:
 
 | Return ||
 |---------------------------------------------------------------------------------|--------------------------------------------------------|
-| [ResultSet](../java/sql/ResultSet.md)! | `ResultSet`- each row is a table privilege description |
+| [ResultSet](ResultSet.md)! | `ResultSet`- each row is a table privilege description |
 
 | Exceptions ||
 |-------------------------|-----------------------------------|
@@ -3200,7 +3200,7 @@ Each privilige description has the following columns:
 
 **See Also**
 
-- [#getSearchStringEscape](../java/sql/DatabaseMetaData.md)) 
+- [#getSearchStringEscape](DatabaseMetaData.md)) 
 
 ### getTableTypes
 
@@ -3218,7 +3218,7 @@ The table type is:
 
 | Return ||
 |---------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
-| [ResultSet](../java/sql/ResultSet.md)! | a`ResultSet`object in which each row has a single`String`column that is a table type |
+| [ResultSet](ResultSet.md)! | a`ResultSet`object in which each row has a single`String`column that is a table type |
 
 | Exceptions ||
 |-------------------------|-----------------------------------|
@@ -3260,11 +3260,11 @@ Each table description has the following columns:
 | `schemaPattern` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:a schema name pattern; must match the schema name as it is stored in the database; "" retrieves those without a schema;`null`means that the schema name should not be used to narrow the search |
 | `tableNamePattern` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:a table name pattern; must match the table name as it is stored in the database |
 | --- | --- |
-| `types` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!:a list of table types, which must be from the list of table types returned from [getTableTypes](../java/sql/DatabaseMetaData.md)),to include;`null`returns all types |
+| `types` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>!:a list of table types, which must be from the list of table types returned from [getTableTypes](DatabaseMetaData.md)),to include;`null`returns all types |
 
 | Return ||
 |---------------------------------------------------------------------------------|----------------------------------------------|
-| [ResultSet](../java/sql/ResultSet.md)! | `ResultSet`- each row is a table description |
+| [ResultSet](ResultSet.md)! | `ResultSet`- each row is a table description |
 
 | Exceptions ||
 |-------------------------|-----------------------------------|
@@ -3272,7 +3272,7 @@ Each table description has the following columns:
 
 **See Also**
 
-- [#getSearchStringEscape](../java/sql/DatabaseMetaData.md)) 
+- [#getSearchStringEscape](DatabaseMetaData.md)) 
 
 ### getTimeDateFunctions
 
@@ -3338,7 +3338,7 @@ The PRECISION column represents the maximum column size that the server supports
 
 | Return ||
 |---------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| [ResultSet](../java/sql/ResultSet.md)! | a`ResultSet`object in which each row is an SQL type description |
+| [ResultSet](ResultSet.md)! | a`ResultSet`object in which each row is an SQL type description |
 
 | Exceptions ||
 |-------------------------|-----------------------------------|
@@ -3383,7 +3383,7 @@ Each type description has the following columns:
 
 | Return ||
 |---------------------------------------------------------------------------------|-----------------------------------------------------|
-| [ResultSet](../java/sql/ResultSet.md)! | `ResultSet`object in which each row describes a UDT |
+| [ResultSet](ResultSet.md)! | `ResultSet`object in which each row describes a UDT |
 
 | Exceptions ||
 |-------------------------|-----------------------------------|
@@ -3391,7 +3391,7 @@ Each type description has the following columns:
 
 **See Also**
 
-- [#getSearchStringEscape](../java/sql/DatabaseMetaData.md)) 
+- [#getSearchStringEscape](DatabaseMetaData.md)) 
 
 ### getURL
 
@@ -3468,7 +3468,7 @@ The COLUMN_SIZE column represents the specified column size for the given column
 
 | Return ||
 |---------------------------------------------------------------------------------|--------------------------------------------------------------|
-| [ResultSet](../java/sql/ResultSet.md)! | a`ResultSet`object in which each row is a column description |
+| [ResultSet](ResultSet.md)! | a`ResultSet`object in which each row is a column description |
 
 | Exceptions ||
 |-------------------------|-----------------------------------|
@@ -4144,7 +4144,7 @@ Retrieves whether this database supports the JDBC scalar function`CONVERT`for co
 
 **See Also**
 
-- [java.sql.Types](../java/sql/Types.md) 
+- [java.sql.Types](Types.md) 
 
 ### supportsCoreSQLGrammar
 
@@ -4732,7 +4732,7 @@ Retrieves whether this database supports the given concurrency type in combinati
 
 **See Also**
 
-- [java.sql.Connection](../java/sql/Connection.md) 
+- [java.sql.Connection](Connection.md) 
 
 ### supportsResultSetHoldability
 
@@ -4758,7 +4758,7 @@ Retrieves whether this database supports the given result set holdability.
 
 **See Also**
 
-- [java.sql.Connection](../java/sql/Connection.md) 
+- [java.sql.Connection](Connection.md) 
 
 ### supportsResultSetType
 
@@ -4784,7 +4784,7 @@ Retrieves whether this database supports the given result set type.
 
 **See Also**
 
-- [java.sql.Connection](../java/sql/Connection.md) 
+- [java.sql.Connection](Connection.md) 
 
 ### supportsSavepoints
 
@@ -5080,7 +5080,7 @@ Retrieves whether this database supports the given transaction isolation level.
 
 **See Also**
 
-- [java.sql.Connection](../java/sql/Connection.md) 
+- [java.sql.Connection](Connection.md) 
 
 ### supportsTransactions
 

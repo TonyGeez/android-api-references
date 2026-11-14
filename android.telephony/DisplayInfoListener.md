@@ -19,7 +19,7 @@ Interface for display info listener.
 
 | Public methods ||
 |---------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDisplayInfoChanged](../android/telephony/TelephonyCallback.DisplayInfoListener.md))`(`telephonyDisplayInfo:` ` [TelephonyDisplayInfo](../android/telephony/TelephonyDisplayInfo.md)`)` Callback invoked when the display info has changed on the registered subscription. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDisplayInfoChanged](../android/telephony/TelephonyCallback.DisplayInfoListener.md))`(`telephonyDisplayInfo:` ` [TelephonyDisplayInfo](TelephonyDisplayInfo.md)`)` Callback invoked when the display info has changed on the registered subscription. |
 
 ## Public methods
 
@@ -33,8 +33,8 @@ abstract fun onDisplayInfoChanged(telephonyDisplayInfo: TelephonyDisplayInfo): 
 
 Callback invoked when the display info has changed on the registered subscription.
 
-The [TelephonyDisplayInfo](../android/telephony/TelephonyDisplayInfo.md) contains status information shown to the user based on carrier policy.
+The [TelephonyDisplayInfo](TelephonyDisplayInfo.md) contains status information shown to the user based on carrier policy.
 
 | Parameters ||
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `telephonyDisplayInfo` | [TelephonyDisplayInfo](../android/telephony/TelephonyDisplayInfo.md): The display information. This value cannot be `null`. |
+| `telephonyDisplayInfo` | [TelephonyDisplayInfo](TelephonyDisplayInfo.md): The display information. This value cannot be `null`. |

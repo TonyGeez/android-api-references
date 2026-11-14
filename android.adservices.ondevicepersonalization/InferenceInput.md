@@ -4,7 +4,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 
 # InferenceInput
 
-Kotlin| [Java](../android/adservices/ondevicepersonalization/InferenceInput.md) 
+Kotlin| [Java](InferenceInput.md) 
 | --- | --- |
 
 ```
@@ -13,28 +13,28 @@ class InferenceInput
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.adservices.ondevicepersonalization.InferenceInput](../android/adservices/ondevicepersonalization/InferenceInput.md) |
+| ↳ | [android.adservices.ondevicepersonalization.InferenceInput](InferenceInput.md) |
 
-Contains all the information needed for a run of model inference. The input of [android.adservices.ondevicepersonalization.ModelManager#run](../android/adservices/ondevicepersonalization/ModelManager.md)).
+Contains all the information needed for a run of model inference. The input of [android.adservices.ondevicepersonalization.ModelManager#run](ModelManager.md)).
 
 ## Summary
 
 | Nested classes ||
 |---|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](../android/adservices/ondevicepersonalization/InferenceInput.Builder.md) A builder for [InferenceInput](../android/adservices/ondevicepersonalization/InferenceInput.md) |
+| | [Builder](../android/adservices/ondevicepersonalization/InferenceInput.Builder.md) A builder for [InferenceInput](InferenceInput.md) |
 | | [Params](../android/adservices/ondevicepersonalization/InferenceInput.Params.md) <br /> |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/adservices/ondevicepersonalization/InferenceInput.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBatchSize](../android/adservices/ondevicepersonalization/InferenceInput.md))`()` The number of input examples. |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [getData](../android/adservices/ondevicepersonalization/InferenceInput.md))`()` A byte array that holds input data. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](InferenceInput.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBatchSize](InferenceInput.md))`()` The number of input examples. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [getData](InferenceInput.md))`()` A byte array that holds input data. |
 | --- | --- |
-| [InferenceOutput](../android/adservices/ondevicepersonalization/InferenceOutput.md) | [getExpectedOutputStructure](../android/adservices/ondevicepersonalization/InferenceInput.md))`()` The empty InferenceOutput representing the expected output structure. |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\> | [getInputData](../android/adservices/ondevicepersonalization/InferenceInput.md))`()` Note: use [InferenceInput.getData()](../android/adservices/ondevicepersonalization/InferenceInput.md))instead. |
-| [InferenceInput.Params](../android/adservices/ondevicepersonalization/InferenceInput.Params.md) | [getParams](../android/adservices/ondevicepersonalization/InferenceInput.md))`()` The configuration that controls runtime interpreter behavior. |
+| [InferenceOutput](InferenceOutput.md) | [getExpectedOutputStructure](InferenceInput.md))`()` The empty InferenceOutput representing the expected output structure. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\> | [getInputData](InferenceInput.md))`()` Note: use [InferenceInput.getData()](InferenceInput.md))instead. |
+| [InferenceInput.Params](../android/adservices/ondevicepersonalization/InferenceInput.Params.md) | [getParams](InferenceInput.md))`()` The configuration that controls runtime interpreter behavior. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/adservices/ondevicepersonalization/InferenceInput.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](InferenceInput.md))`()` <br /> |
 
 ## Public methods
 
@@ -125,7 +125,7 @@ If a model produce string tensors:
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [InferenceOutput](../android/adservices/ondevicepersonalization/InferenceOutput.md) | This value cannot be`null`. |
+| [InferenceOutput](InferenceOutput.md) | This value cannot be`null`. |
 
 ### getInputData
 
@@ -135,7 +135,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun getInputData(): Array<Any!>
 ```
 
-Note: use [InferenceInput.getData()](../android/adservices/ondevicepersonalization/InferenceInput.md))instead.
+Note: use [InferenceInput.getData()](InferenceInput.md))instead.
 
 An array of input data. The inputs should be in the same order as inputs of the model.
 

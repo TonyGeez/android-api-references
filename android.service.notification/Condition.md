@@ -2,7 +2,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # Condition
 
-Kotlin | [Java](../android/service/notification/Condition.md)
+Kotlin | [Java](Condition.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class Condition : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.service.notification.Condition](../android/service/notification/Condition.md) |
+| ↳ | [android.service.notification.Condition](Condition.md) |
 
 The current condition of an `https://developer.android.com/reference/kotlin/android/app/AutomaticZenRule.html#`, provided by the app that owns the rule. Used to tell the system to enter Do Not Disturb mode and request that the system exit Do Not Disturb mode.
 
@@ -48,7 +48,7 @@ The current condition of an `https://developer.android.com/reference/kotlin/andr
 
 | Public methods ||
 |---|---|
-| [Condition](../android/service/notification/Condition.md)! | `https://developer.android.com/reference/kotlin/android/service/notification/Condition#copy()()` <br /> |
+| [Condition](Condition.md)! | `https://developer.android.com/reference/kotlin/android/service/notification/Condition#copy()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/Condition#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/Condition#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
 | --- | --- |
@@ -64,11 +64,11 @@ The current condition of an `https://developer.android.com/reference/kotlin/andr
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [Condition](../android/service/notification/Condition.md)!\> | `https://developer.android.com/reference/kotlin/android/service/notification/Condition#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [Condition](Condition.md)!\> | `https://developer.android.com/reference/kotlin/android/service/notification/Condition#CREATOR:android.os.Parcelable.Creator` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/Condition#flags:kotlin.Int` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/Condition#icon:kotlin.Int` <br /> |
 | --- | --- |
-| [Uri](../android/net/Uri.md)! | `https://developer.android.com/reference/kotlin/android/service/notification/Condition#id:android.net.Uri` The URI representing the rule being updated. |
+| [Uri](../android.net/Uri.md)! | `https://developer.android.com/reference/kotlin/android/service/notification/Condition#id:android.net.Uri` The URI representing the rule being updated. |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/service/notification/Condition#line1:kotlin.String` <br /> |
 | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/android/service/notification/Condition#line2:kotlin.String` <br /> |
 | --- | --- |
@@ -218,7 +218,7 @@ An object representing the current state of a `https://developer.android.com/ref
 
 | Parameters ||
 |---|---|
-| `id` | [Uri](../android/net/Uri.md)!: the `https://developer.android.com/reference/kotlin/android/app/AutomaticZenRule.html#getConditionId()` of the zen rule |
+| `id` | [Uri](../android.net/Uri.md)!: the `https://developer.android.com/reference/kotlin/android/app/AutomaticZenRule.html#getConditionId()` of the zen rule |
 | `summary` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: a user visible description of the rule state |
 | `state` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): whether the mode should be activated or deactivated |
 | --- | --- |
@@ -239,7 +239,7 @@ An object representing the current state of a `https://developer.android.com/ref
 
 | Parameters ||
 |---|---|
-| `id` | [Uri](../android/net/Uri.md)?: the `https://developer.android.com/reference/kotlin/android/app/AutomaticZenRule.html#getConditionId()` of the zen rule. This value may be `null`. |
+| `id` | [Uri](../android.net/Uri.md)?: the `https://developer.android.com/reference/kotlin/android/app/AutomaticZenRule.html#getConditionId()` of the zen rule. This value may be `null`. |
 | `summary` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: a user visible description of the rule state. This value may be `null`. |
 | `state` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): whether the mode should be activated or deactivated. Value is one of the following: - `https://developer.android.com/reference/kotlin/android/service/notification/Condition#STATE_FALSE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/service/notification/Condition#STATE_TRUE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/service/notification/Condition#STATE_UNKNOWN:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/service/notification/Condition#STATE_ERROR:kotlin.Int` |
 | --- | --- |
@@ -280,7 +280,7 @@ An object representing the current state of a `https://developer.android.com/ref
 
 | Parameters ||
 |---|---|
-| `id` | [Uri](../android/net/Uri.md)?: the `https://developer.android.com/reference/kotlin/android/app/AutomaticZenRule.html#getConditionId()` of the zen rule. This value may be `null`. |
+| `id` | [Uri](../android.net/Uri.md)?: the `https://developer.android.com/reference/kotlin/android/app/AutomaticZenRule.html#getConditionId()` of the zen rule. This value may be `null`. |
 | `summary` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: a user visible description of the rule state. This value may be `null`. |
 | `line1` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: a user-visible description of when the rule will end. This value may be `null`. |
 | --- | --- |
@@ -436,7 +436,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

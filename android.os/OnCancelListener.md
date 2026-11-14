@@ -19,7 +19,7 @@ Listens for cancellation.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onCancel](../android/os/CancellationSignal.OnCancelListener.md))`()` Called when [CancellationSignal.cancel](../android/os/CancellationSignal.md))is invoked. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onCancel](../android/os/CancellationSignal.OnCancelListener.md))`()` Called when [CancellationSignal.cancel](CancellationSignal.md))is invoked. |
 
 ## Public methods
 
@@ -31,4 +31,4 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 abstract fun onCancel(): Unit
 ```
 
-Called when [CancellationSignal.cancel](../android/os/CancellationSignal.md))is invoked.
+Called when [CancellationSignal.cancel](CancellationSignal.md))is invoked.

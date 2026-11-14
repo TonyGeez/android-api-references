@@ -19,7 +19,7 @@ Interface for callback invocation when Bonjour service discovery response is rec
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDnsSdServiceAvailable](../android/net/wifi/p2p/WifiP2pManager.DnsSdServiceResponseListener.md))`(`instanceName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `registrationType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `srcDevice:` ` [WifiP2pDevice](../android/net/wifi/p2p/WifiP2pDevice.md)!`)` The requested Bonjour service response is available. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDnsSdServiceAvailable](../android/net/wifi/p2p/WifiP2pManager.DnsSdServiceResponseListener.md))`(`instanceName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `registrationType:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `srcDevice:` ` [WifiP2pDevice](WifiP2pDevice.md)!`)` The requested Bonjour service response is available. |
 
 ## Public methods
 
@@ -43,5 +43,5 @@ This function is invoked when the device with the specified Bonjour registration
 |--------------------|--------------------------------------------------------------------------------------------------------------------|
 | `instanceName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:instance name. e.g) "MyPrinter". |
 | `registrationType` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: e.g) "_ipp._tcp.local." |
-| `srcDevice` | [WifiP2pDevice](../android/net/wifi/p2p/WifiP2pDevice.md)!:source device. |
+| `srcDevice` | [WifiP2pDevice](WifiP2pDevice.md)!:source device. |
 | --- | --- |

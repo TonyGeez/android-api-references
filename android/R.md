@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # R
 
-Kotlin| [Java](./R.md) 
+Kotlin| [Java](R.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class R
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.R](./R.md) |
+| ↳ | [android.R](R.md) |
 
 ## Summary
 
@@ -51,7 +51,7 @@ class R
 
 | Public constructors ||
 |------------------------------------------------------------------------------|---|
-| [R](./R.md))`()` <br /> |
+| [R](R.md))`()` <br /> |
 
 ## Public constructors
 

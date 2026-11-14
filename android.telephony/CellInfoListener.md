@@ -34,4 +34,4 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `cellInfo` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [CellInfo](../android/telephony/CellInfo.md)!\>: is the list of currently visible cells. This value cannot be `null`. |
+| `cellInfo` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [CellInfo](CellInfo.md)!\>: is the list of currently visible cells. This value cannot be `null`. |

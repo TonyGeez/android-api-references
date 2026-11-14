@@ -18,13 +18,13 @@ interface OnLoadCanceledListener<D : Any!>
 |
 | Use androidx.loader.content.Loader.OnLoadCanceledListener
 
-Interface that is implemented to discover when a Loader has been canceled before it finished loading its data. You do not normally need to implement this yourself; it is used in the implementation of [android.app.LoaderManager](../android/app/LoaderManager.md) to find out when a Loader it is managing has been canceled so that it can schedule the next Loader. This interface should only be used if a Loader is not being used in conjunction with LoaderManager.
+Interface that is implemented to discover when a Loader has been canceled before it finished loading its data. You do not normally need to implement this yourself; it is used in the implementation of [android.app.LoaderManager](../android.app/LoaderManager.md) to find out when a Loader it is managing has been canceled so that it can schedule the next Loader. This interface should only be used if a Loader is not being used in conjunction with LoaderManager.
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onLoadCanceled](../android/content/Loader.OnLoadCanceledListener.md))`(`loader:` ` [Loader](../android/content/Loader.md)<D>!`)` Called on the thread that created the Loader when the load is canceled. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onLoadCanceled](../android/content/Loader.OnLoadCanceledListener.md))`(`loader:` ` [Loader](Loader.md)<D>!`)` Called on the thread that created the Loader when the load is canceled. |
 
 ## Public methods
 
@@ -42,4 +42,4 @@ Called on the thread that created the Loader when the load is canceled.
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------|
-| `loader` | [Loader](../android/content/Loader.md)\<D\>!:the loader that canceled the load |
+| `loader` | [Loader](Loader.md)\<D\>!:the loader that canceled the load |

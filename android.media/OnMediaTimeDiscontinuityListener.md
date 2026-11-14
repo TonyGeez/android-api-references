@@ -23,7 +23,7 @@ Discontinuities are encountered in the following cases:
 - when the playback state changes
 - when the player is reset
 
-See the [MediaPlayer.setOnMediaTimeDiscontinuityListener(OnMediaTimeDiscontinuityListener, Handler)](../android/media/MediaPlayer.md))method to set a listener for these events.
+See the [MediaPlayer.setOnMediaTimeDiscontinuityListener(OnMediaTimeDiscontinuityListener, Handler)](MediaPlayer.md))method to set a listener for these events.
 
 <br />
 
@@ -31,7 +31,7 @@ See the [MediaPlayer.setOnMediaTimeDiscontinuityListener(OnMediaTimeDiscontinuit
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onMediaTimeDiscontinuity](../android/media/MediaPlayer.OnMediaTimeDiscontinuityListener.md))`(`mp:` ` [MediaPlayer](../android/media/MediaPlayer.md)`, `mts:` ` [MediaTimestamp](../android/media/MediaTimestamp.md)`)` Called to indicate a time discontinuity has occured. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onMediaTimeDiscontinuity](../android/media/MediaPlayer.OnMediaTimeDiscontinuityListener.md))`(`mp:` ` [MediaPlayer](MediaPlayer.md)`, `mts:` ` [MediaTimestamp](MediaTimestamp.md)`)` Called to indicate a time discontinuity has occured. |
 
 ## Public methods
 
@@ -50,5 +50,5 @@ Called to indicate a time discontinuity has occured.
 
 | Parameters ||
 |-------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `mp` | [MediaPlayer](../android/media/MediaPlayer.md):the MediaPlayer for which the discontinuity has occured. This value cannot be`null`. |
-| `mts` | [MediaTimestamp](../android/media/MediaTimestamp.md):the timestamp that correlates media time, system time and clock rate, or [MediaTimestamp.TIMESTAMP_UNKNOWN](../android/media/MediaTimestamp.md) in an error case. This value cannot be`null`. |
+| `mp` | [MediaPlayer](MediaPlayer.md):the MediaPlayer for which the discontinuity has occured. This value cannot be`null`. |
+| `mts` | [MediaTimestamp](MediaTimestamp.md):the timestamp that correlates media time, system time and clock rate, or [MediaTimestamp.TIMESTAMP_UNKNOWN](MediaTimestamp.md) in an error case. This value cannot be`null`. |

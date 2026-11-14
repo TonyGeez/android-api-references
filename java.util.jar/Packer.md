@@ -10,7 +10,7 @@ interface Packer
 
 | [java.util.jar.Pack200.Packer](../java/util/jar/Pack200.Packer.md) |
 
-The packer engine applies various transformations to the input JAR file, making the pack stream highly compressible by a compressor such as gzip or zip. An instance of the engine can be obtained using [newPacker](../java/util/jar/Pack200.md)). The high degree of compression is achieved by using a number of techniques described in the JSR 200 specification. Some of the techniques are sorting, re-ordering and co-location of the constant pool.
+The packer engine applies various transformations to the input JAR file, making the pack stream highly compressible by a compressor such as gzip or zip. An instance of the engine can be obtained using [newPacker](Pack200.md)). The high degree of compression is achieved by using a number of techniques described in the JSR 200 specification. Some of the techniques are sorting, re-ordering and co-location of the constant pool.
 
 The pack engine is initialized to an initial state as described by their properties below. The initial state can be manipulated by getting the engine properties (using [properties](../java/util/jar/Pack200.Packer.md))) and storing the modified properties on the map. The resource files will be passed through with no changes at all. The class files will not contain identical bytes, since the unpacker is free to change minor class file features such as constant pool order. However, the class files will be semantically identical, as specified in The Java™ Virtual Machine Specification.
 
@@ -22,7 +22,7 @@ Note that packing and unpacking a JAR will in general alter the bytewise content
 
 In order to maintain backward compatibility, the pack file's version is set to accommodate the class files present in the input JAR file. In other words, the pack file version will be the latest, if the class files are the latest and conversely the pack file version will be the oldest if the class file versions are also the oldest. For intermediate class file versions the corresponding pack file version will be used. For example: If the input JAR-files are solely comprised of 1.5 (or lesser) class files, a 1.5 compatible pack file is produced. This will also be the case for archives that have no class files. If the input JAR-files contains a 1.6 class file, then the pack file version will be set to 1.6.
 
-Note: Unless otherwise noted, passing a null argument to a constructor or method in this class will cause a [NullPointerException](../java/lang/NullPointerException.md) to be thrown.
+Note: Unless otherwise noted, passing a null argument to a constructor or method in this class will cause a [NullPointerException](../java.lang/NullPointerException.md) to be thrown.
 
 <br />
 
@@ -58,12 +58,12 @@ Note: Unless otherwise noted, passing a null argument to a constructor or method
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addPropertyChangeListener](../java/util/jar/Pack200.Packer.md))`(`listener:` ` [PropertyChangeListener](../java/beans/PropertyChangeListener.md)!`)` Registers a listener for PropertyChange events on the properties map. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [pack](../java/util/jar/Pack200.Packer.md))`(`in:` ` [JarFile](../java/util/jar/JarFile.md)!`, `out:` ` [OutputStream](../java/io/OutputStream.md)!`)` Takes a JarFile and converts it into a Pack200 archive. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [pack](../java/util/jar/Pack200.Packer.md))`(`in:` ` [JarInputStream](../java/util/jar/JarInputStream.md)!`, `out:` ` [OutputStream](../java/io/OutputStream.md)!`)` Takes a JarInputStream and converts it into a Pack200 archive. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [addPropertyChangeListener](../java/util/jar/Pack200.Packer.md))`(`listener:` ` [PropertyChangeListener](../java.beans/PropertyChangeListener.md)!`)` Registers a listener for PropertyChange events on the properties map. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [pack](../java/util/jar/Pack200.Packer.md))`(`in:` ` [JarFile](JarFile.md)!`, `out:` ` [OutputStream](../java.io/OutputStream.md)!`)` Takes a JarFile and converts it into a Pack200 archive. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [pack](../java/util/jar/Pack200.Packer.md))`(`in:` ` [JarInputStream](JarInputStream.md)!`, `out:` ` [OutputStream](../java.io/OutputStream.md)!`)` Takes a JarInputStream and converts it into a Pack200 archive. |
 | --- | --- |
-| abstract [SortedMap](../java/util/SortedMap.md)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [properties](../java/util/jar/Pack200.Packer.md))`()` Get the set of this engine's properties. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removePropertyChangeListener](../java/util/jar/Pack200.Packer.md))`(`listener:` ` [PropertyChangeListener](../java/beans/PropertyChangeListener.md)!`)` Remove a listener for PropertyChange events, added by the [addPropertyChangeListener](../java/util/jar/Pack200.Packer.md)). |
+| abstract [SortedMap](../java.util/SortedMap.md)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>! | [properties](../java/util/jar/Pack200.Packer.md))`()` Get the set of this engine's properties. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removePropertyChangeListener](../java/util/jar/Pack200.Packer.md))`(`listener:` ` [PropertyChangeListener](../java.beans/PropertyChangeListener.md)!`)` Remove a listener for PropertyChange events, added by the [addPropertyChangeListener](../java/util/jar/Pack200.Packer.md)). |
 
 ## Constants
 
@@ -466,7 +466,7 @@ The default implementation of this method does nothing and has no side-effects.
 
 | Parameters ||
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `listener` | [PropertyChangeListener](../java/beans/PropertyChangeListener.md)!:An object to be invoked when a property is changed. |
+| `listener` | [PropertyChangeListener](../java.beans/PropertyChangeListener.md)!:An object to be invoked when a property is changed. |
 
 **See Also**
 
@@ -490,8 +490,8 @@ Closes its input but not its output. (Pack200 archives are appendable.)
 
 | Parameters ||
 |-------|------------------------------------------------------------------------------------------------------------|
-| `in` | [JarFile](../java/util/jar/JarFile.md)!:a JarFile |
-| `out` | [OutputStream](../java/io/OutputStream.md)!:an OutputStream |
+| `in` | [JarFile](JarFile.md)!:a JarFile |
+| `out` | [OutputStream](../java.io/OutputStream.md)!:an OutputStream |
 
 | Exceptions ||
 |-----------------------|-----------------------------|
@@ -516,8 +516,8 @@ The modification time and deflation hint attributes are not available, for the J
 
 | Parameters ||
 |-------|-----------------------------------------------------------------------------------------------------------------|
-| `in` | [JarInputStream](../java/util/jar/JarInputStream.md)!:a JarInputStream |
-| `out` | [OutputStream](../java/io/OutputStream.md)!:an OutputStream |
+| `in` | [JarInputStream](JarInputStream.md)!:a JarInputStream |
+| `out` | [OutputStream](../java.io/OutputStream.md)!:an OutputStream |
 
 **See Also**
 
@@ -544,11 +544,11 @@ Implementation specific properties are prefixed with a package name associated w
 
 Unknown properties may be ignored or rejected with an unspecified error, and invalid entries may cause an unspecified error to be thrown.
 
-The returned map implements all optional [SortedMap](../java/util/SortedMap.md) operations
+The returned map implements all optional [SortedMap](../java.util/SortedMap.md) operations
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|
-| [SortedMap](../java/util/SortedMap.md)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>! | A sorted association of property key strings to property values. |
+| [SortedMap](../java.util/SortedMap.md)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!,` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>! | A sorted association of property key strings to property values. |
 
 ### removePropertyChangeListener
 
@@ -569,7 +569,7 @@ The default implementation of this method does nothing and has no side-effects.
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `listener` | [PropertyChangeListener](../java/beans/PropertyChangeListener.md)!:The PropertyChange listener to be removed. |
+| `listener` | [PropertyChangeListener](../java.beans/PropertyChangeListener.md)!:The PropertyChange listener to be removed. |
 
 **See Also**
 

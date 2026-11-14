@@ -2,7 +2,7 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 
 # Effect
 
-Kotlin | [Java](../android/media/effect/Effect.md)
+Kotlin | [Java](Effect.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ abstract class Effect
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.effect.Effect](../android/media/effect/Effect.md) |
+| ↳ | [android.media.effect.Effect](Effect.md) |
 
 Effects are high-performance transformations that can be applied to image frames. These are passed in the form of OpenGL ES 2.0 texture names. Typical frames could be images loaded from disk, or frames from the camera or other video streams.
 
@@ -137,4 +137,4 @@ Set an effect listener. Some effects may report state changes back to the host, 
 
 | Parameters ||
 |---|---|
-| `listener` | [EffectUpdateListener](../android/media/effect/EffectUpdateListener.md)!: The listener to receive update callbacks on. |
+| `listener` | [EffectUpdateListener](EffectUpdateListener.md)!: The listener to receive update callbacks on. |

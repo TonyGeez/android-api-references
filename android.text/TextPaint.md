@@ -8,8 +8,8 @@ open class TextPaint : Paint
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.graphics.Paint](../android/graphics/Paint.md) ||
-| | ↳ | [android.text.TextPaint](../android/text/TextPaint.md) |
+| ↳ | [android.graphics.Paint](../android.graphics/Paint.md) ||
+| | ↳ | [android.text.TextPaint](TextPaint.md) |
 
 TextPaint is an extension of Paint that leaves room for some extra data used during text measuring and drawing.
 

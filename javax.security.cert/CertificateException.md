@@ -11,11 +11,11 @@ open class CertificateException : Exception
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||
-| | | ↳ | [javax.security.cert.CertificateException](../javax/security/cert/CertificateException.md) |
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) ||
+| | | ↳ | [javax.security.cert.CertificateException](CertificateException.md) |
 | --- | --- | --- | --- |
 
-| Known Direct Subclasses [CertificateEncodingException](../javax/security/cert/CertificateEncodingException.md), [CertificateExpiredException](../javax/security/cert/CertificateExpiredException.md), [CertificateNotYetValidException](../javax/security/cert/CertificateNotYetValidException.md), [CertificateParsingException](../javax/security/cert/CertificateParsingException.md) |---------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------| | [CertificateEncodingException](../javax/security/cert/CertificateEncodingException.md) | Certificate Encoding Exception. | | [CertificateExpiredException](../javax/security/cert/CertificateExpiredException.md) | Certificate Expired Exception. | | [CertificateNotYetValidException](../javax/security/cert/CertificateNotYetValidException.md) | Certificate is not yet valid exception. | | [CertificateParsingException](../javax/security/cert/CertificateParsingException.md) | Certificate Parsing Exception. | |
+| Known Direct Subclasses [CertificateEncodingException](CertificateEncodingException.md), [CertificateExpiredException](CertificateExpiredException.md), [CertificateNotYetValidException](CertificateNotYetValidException.md), [CertificateParsingException](CertificateParsingException.md) |---------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------| | [CertificateEncodingException](CertificateEncodingException.md) | Certificate Encoding Exception. | | [CertificateExpiredException](CertificateExpiredException.md) | Certificate Expired Exception. | | [CertificateNotYetValidException](CertificateNotYetValidException.md) | Certificate is not yet valid exception. | | [CertificateParsingException](CertificateParsingException.md) | Certificate Parsing Exception. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 This exception indicates one of a variety of certificate problems.
@@ -26,8 +26,8 @@ This exception indicates one of a variety of certificate problems.
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [CertificateException](../javax/security/cert/CertificateException.md))`()` Constructs a certificate exception with no detail message. |
-| [CertificateException](../javax/security/cert/CertificateException.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a certificate exception with the given detail message. |
+| [CertificateException](CertificateException.md))`()` Constructs a certificate exception with no detail message. |
+| [CertificateException](CertificateException.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a certificate exception with the given detail message. |
 
 ## Public constructors
 

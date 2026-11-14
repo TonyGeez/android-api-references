@@ -6,7 +6,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 interface InputMethod
 ```
 
-| [android.view.inputmethod.InputMethod](../android/view/inputmethod/InputMethod.md) |
+| [android.view.inputmethod.InputMethod](InputMethod.md) |
 
 Known Direct Subclasses [AbstractInputMethodService.AbstractInputMethodImpl](../android/inputmethodservice/AbstractInputMethodService.AbstractInputMethodImpl.md) [AbstractInputMethodService.AbstractInputMethodImpl](../android/inputmethodservice/AbstractInputMethodService.AbstractInputMethodImpl.md) Base class for derived classes to implement their `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethod#` interface.
 Known Indirect Subclasses [InputMethodService.InputMethodImpl](../android/inputmethodservice/InputMethodService.InputMethodImpl.md) [InputMethodService.InputMethodImpl](../android/inputmethodservice/InputMethodService.InputMethodImpl.md) Concrete implementation of `https://developer.android.com/reference/kotlin/android/inputmethodservice/AbstractInputMethodService.AbstractInputMethodImpl.html#` that provides all of the standard behavior for an input method.
@@ -134,7 +134,7 @@ This method must be called from the main thread of your app.
 
 | Parameters ||
 |---|---|
-| `binding` | [InputBinding](../android/view/inputmethod/InputBinding.md)!: Information about the application window that is binding to the input method. |
+| `binding` | [InputBinding](InputBinding.md)!: Information about the application window that is binding to the input method. |
 
 **See Also**
 
@@ -154,7 +154,7 @@ This method must be called from the main thread of your app.
 
 | Parameters ||
 |---|---|
-| `subtype` | [InputMethodSubtype](../android/view/inputmethod/InputMethodSubtype.md)!: New subtype of the notified input method |
+| `subtype` | [InputMethodSubtype](InputMethodSubtype.md)!: New subtype of the notified input method |
 
 ### createSession
 
@@ -188,7 +188,7 @@ This method must be called from the main thread of your app.
 | Parameters ||
 |---|---|
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Provides additional information about the hide request. Currently always 0. |
-| `resultReceiver` | [ResultReceiver](../android/os/ResultReceiver.md)!: The client requesting the show may wish to be told the impact of their request, which should be supplied here. The result code should be `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#RESULT_UNCHANGED_SHOWN:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#RESULT_UNCHANGED_HIDDEN:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#RESULT_SHOWN:kotlin.Int`, or `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#RESULT_HIDDEN:kotlin.Int`. |
+| `resultReceiver` | [ResultReceiver](../android.os/ResultReceiver.md)!: The client requesting the show may wish to be told the impact of their request, which should be supplied here. The result code should be `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#RESULT_UNCHANGED_SHOWN:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#RESULT_UNCHANGED_HIDDEN:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#RESULT_SHOWN:kotlin.Int`, or `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#RESULT_HIDDEN:kotlin.Int`. |
 
 ### restartInput
 
@@ -208,8 +208,8 @@ This method must be called from the main thread of your app.
 
 | Parameters ||
 |---|---|
-| `inputConnection` | [InputConnection](../android/view/inputmethod/InputConnection.md)!: Optional specific input connection for communicating with the text box; if null, you should use the generic bound input connection. |
-| `editorInfo` | [EditorInfo](../android/view/inputmethod/EditorInfo.md)!: The attribute of the text box (typically, a EditText) that requests input. |
+| `inputConnection` | [InputConnection](InputConnection.md)!: Optional specific input connection for communicating with the text box; if null, you should use the generic bound input connection. |
+| `editorInfo` | [EditorInfo](EditorInfo.md)!: The attribute of the text box (typically, a EditText) that requests input. |
 
 **See Also**
 
@@ -228,7 +228,7 @@ This method must be called from the main thread of your app.
 
 | Parameters ||
 |---|---|
-| `session` | [InputMethodSession](../android/view/inputmethod/InputMethodSession.md)!: The `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSession` previously provided through SessionCallback.sessionCreated() that is to be revoked. |
+| `session` | [InputMethodSession](InputMethodSession.md)!: The `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSession` previously provided through SessionCallback.sessionCreated() that is to be revoked. |
 
 ### setSessionEnabled
 
@@ -246,7 +246,7 @@ This method must be called from the main thread of your app.
 
 | Parameters ||
 |---|---|
-| `session` | [InputMethodSession](../android/view/inputmethod/InputMethodSession.md)!: The `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSession` previously provided through SessionCallback.sessionCreated() that is to be changed. |
+| `session` | [InputMethodSession](InputMethodSession.md)!: The `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodSession` previously provided through SessionCallback.sessionCreated() that is to be changed. |
 
 ### showSoftInput
 
@@ -264,7 +264,7 @@ This method must be called from the main thread of your app.
 
 | Parameters ||
 |---|---|
-| `resultReceiver` | [ResultReceiver](../android/os/ResultReceiver.md)!: The client requesting the show may wish to be told the impact of their request, which should be supplied here. The result code should be `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#RESULT_UNCHANGED_SHOWN:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#RESULT_UNCHANGED_HIDDEN:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#RESULT_SHOWN:kotlin.Int`, or `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#RESULT_HIDDEN:kotlin.Int`. |
+| `resultReceiver` | [ResultReceiver](../android.os/ResultReceiver.md)!: The client requesting the show may wish to be told the impact of their request, which should be supplied here. The result code should be `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#RESULT_UNCHANGED_SHOWN:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#RESULT_UNCHANGED_HIDDEN:kotlin.Int`, `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#RESULT_SHOWN:kotlin.Int`, or `https://developer.android.com/reference/kotlin/android/view/inputmethod/InputMethodManager#RESULT_HIDDEN:kotlin.Int`. |
 
 ### startInput
 
@@ -282,8 +282,8 @@ This method must be called from the main thread of your app.
 
 | Parameters ||
 |---|---|
-| `inputConnection` | [InputConnection](../android/view/inputmethod/InputConnection.md)!: Optional specific input connection for communicating with the text box; if null, you should use the generic bound input connection. |
-| `editorInfo` | [EditorInfo](../android/view/inputmethod/EditorInfo.md)!: Information about the text box (typically, an EditText) that requests input. |
+| `inputConnection` | [InputConnection](InputConnection.md)!: Optional specific input connection for communicating with the text box; if null, you should use the generic bound input connection. |
+| `editorInfo` | [EditorInfo](EditorInfo.md)!: Information about the text box (typically, an EditText) that requests input. |
 
 **See Also**
 

@@ -34,7 +34,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 abstract fun onInputDeviceAdded(deviceId: Int): Unit
 ```
 
-Called whenever an input device has been added to the system. Use [getInputDevice(int)](../android/hardware/input/InputManager.md))to get more information about the device.
+Called whenever an input device has been added to the system. Use [getInputDevice(int)](InputManager.md))to get more information about the device.
 
 | Parameters ||
 |------------|-----------------------------------------------------------------------------------------------------------------------|
@@ -48,7 +48,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 abstract fun onInputDeviceChanged(deviceId: Int): Unit
 ```
 
-Called whenever the properties of an input device have changed since they were last queried. Use [InputManager.getInputDevice](../android/hardware/input/InputManager.md))to get a fresh [InputDevice](../android/view/InputDevice.md) object with the new properties.
+Called whenever the properties of an input device have changed since they were last queried. Use [InputManager.getInputDevice](InputManager.md))to get a fresh [InputDevice](../android.view/InputDevice.md) object with the new properties.
 
 | Parameters ||
 |------------|---------------------------------------------------------------------------------------------------------------------|

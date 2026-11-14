@@ -8,9 +8,9 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 interface ChronoPeriod : TemporalAmount
 ```
 
-| [java.time.chrono.ChronoPeriod](../java/time/chrono/ChronoPeriod.md) |
+| [java.time.chrono.ChronoPeriod](ChronoPeriod.md) |
 
-| Known Direct Subclasses [Period](../java/time/Period.md) |---------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------| | [Period](../java/time/Period.md) | A date-based amount of time in the ISO-8601 calendar system, such as '2 years, 3 months and 4 days'. | |
+| Known Direct Subclasses [Period](../java.time/Period.md) |---------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------| | [Period](../java.time/Period.md) | A date-based amount of time in the ISO-8601 calendar system, such as '2 years, 3 months and 4 days'. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 A date-based amount of time, such as '3 years, 4 months and 5 days' in an arbitrary chronology, intended for advanced globalization use cases.
@@ -23,23 +23,23 @@ The period is modeled as a directed amount of time, meaning that individual part
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Temporal](../java/time/temporal/Temporal.md)! | [addTo](../java/time/chrono/ChronoPeriod.md))`(`temporal:` ` [Temporal](../java/time/temporal/Temporal.md)!`)` Adds this period to the specified temporal object. |
-| openstatic [ChronoPeriod](../java/time/chrono/ChronoPeriod.md)! | [between](../java/time/chrono/ChronoPeriod.md))`(`startDateInclusive:` ` [ChronoLocalDate](../java/time/chrono/ChronoLocalDate.md)!`, `endDateExclusive:` ` [ChronoLocalDate](../java/time/chrono/ChronoLocalDate.md)!`)` Obtains a`ChronoPeriod`consisting of amount of time between two dates. |
-| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [get](../java/time/chrono/ChronoPeriod.md))`(`unit:` ` [TemporalUnit](../java/time/temporal/TemporalUnit.md)!`)` Gets the value of the requested unit. |
+| abstract [Temporal](../java.time.temporal/Temporal.md)! | [addTo](ChronoPeriod.md))`(`temporal:` ` [Temporal](../java.time.temporal/Temporal.md)!`)` Adds this period to the specified temporal object. |
+| openstatic [ChronoPeriod](ChronoPeriod.md)! | [between](ChronoPeriod.md))`(`startDateInclusive:` ` [ChronoLocalDate](ChronoLocalDate.md)!`, `endDateExclusive:` ` [ChronoLocalDate](ChronoLocalDate.md)!`)` Obtains a`ChronoPeriod`consisting of amount of time between two dates. |
+| abstract [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [get](ChronoPeriod.md))`(`unit:` ` [TemporalUnit](../java.time.temporal/TemporalUnit.md)!`)` Gets the value of the requested unit. |
 | --- | --- |
-| abstract [Chronology](../java/time/chrono/Chronology.md)! | [getChronology](../java/time/chrono/ChronoPeriod.md))`()` Gets the chronology that defines the meaning of the supported units. |
-| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [TemporalUnit](../java/time/temporal/TemporalUnit.md)!\>! | [getUnits](../java/time/chrono/ChronoPeriod.md))`()` Gets the set of units supported by this period. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isNegative](../java/time/chrono/ChronoPeriod.md))`()` Checks if any of the supported units of this period are negative. |
+| abstract [Chronology](Chronology.md)! | [getChronology](ChronoPeriod.md))`()` Gets the chronology that defines the meaning of the supported units. |
+| abstract [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [TemporalUnit](../java.time.temporal/TemporalUnit.md)!\>! | [getUnits](ChronoPeriod.md))`()` Gets the set of units supported by this period. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isNegative](ChronoPeriod.md))`()` Checks if any of the supported units of this period are negative. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isZero](../java/time/chrono/ChronoPeriod.md))`()` Checks if all the supported units of this period are zero. |
-| abstract [ChronoPeriod](../java/time/chrono/ChronoPeriod.md)! | [minus](../java/time/chrono/ChronoPeriod.md))`(`amountToSubtract:` ` [TemporalAmount](../java/time/temporal/TemporalAmount.md)!`)` Returns a copy of this period with the specified period subtracted. |
-| abstract [ChronoPeriod](../java/time/chrono/ChronoPeriod.md)! | [multipliedBy](../java/time/chrono/ChronoPeriod.md))`(`scalar:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a new instance with each amount in this period in this period multiplied by the specified scalar. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isZero](ChronoPeriod.md))`()` Checks if all the supported units of this period are zero. |
+| abstract [ChronoPeriod](ChronoPeriod.md)! | [minus](ChronoPeriod.md))`(`amountToSubtract:` ` [TemporalAmount](../java.time.temporal/TemporalAmount.md)!`)` Returns a copy of this period with the specified period subtracted. |
+| abstract [ChronoPeriod](ChronoPeriod.md)! | [multipliedBy](ChronoPeriod.md))`(`scalar:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a new instance with each amount in this period in this period multiplied by the specified scalar. |
 | --- | --- |
-| open [ChronoPeriod](../java/time/chrono/ChronoPeriod.md)! | [negated](../java/time/chrono/ChronoPeriod.md))`()` Returns a new instance with each amount in this period negated. |
-| abstract [ChronoPeriod](../java/time/chrono/ChronoPeriod.md)! | [normalized](../java/time/chrono/ChronoPeriod.md))`()` Returns a copy of this period with the amounts of each unit normalized. |
-| abstract [ChronoPeriod](../java/time/chrono/ChronoPeriod.md)! | [plus](../java/time/chrono/ChronoPeriod.md))`(`amountToAdd:` ` [TemporalAmount](../java/time/temporal/TemporalAmount.md)!`)` Returns a copy of this period with the specified period added. |
+| open [ChronoPeriod](ChronoPeriod.md)! | [negated](ChronoPeriod.md))`()` Returns a new instance with each amount in this period negated. |
+| abstract [ChronoPeriod](ChronoPeriod.md)! | [normalized](ChronoPeriod.md))`()` Returns a copy of this period with the amounts of each unit normalized. |
+| abstract [ChronoPeriod](ChronoPeriod.md)! | [plus](ChronoPeriod.md))`(`amountToAdd:` ` [TemporalAmount](../java.time.temporal/TemporalAmount.md)!`)` Returns a copy of this period with the specified period added. |
 | --- | --- |
-| abstract [Temporal](../java/time/temporal/Temporal.md)! | [subtractFrom](../java/time/chrono/ChronoPeriod.md))`(`temporal:` ` [Temporal](../java/time/temporal/Temporal.md)!`)` Subtracts this period from the specified temporal object. |
+| abstract [Temporal](../java.time.temporal/Temporal.md)! | [subtractFrom](ChronoPeriod.md))`(`temporal:` ` [Temporal](../java.time.temporal/Temporal.md)!`)` Subtracts this period from the specified temporal object. |
 
 ## Public methods
 
@@ -55,7 +55,7 @@ Adds this period to the specified temporal object.
 
 This returns a temporal object of the same observable type as the input with this period added.
 
-In most cases, it is clearer to reverse the calling pattern by using [Temporal.plus(TemporalAmount)](../java/time/temporal/Temporal.md)). 
+In most cases, it is clearer to reverse the calling pattern by using [Temporal.plus(TemporalAmount)](../java.time.temporal/Temporal.md)). 
 
 ```kotlin
 // these two lines are equivalent, but the second approach is recommended
@@ -70,11 +70,11 @@ This instance is immutable and unaffected by this method call.
 
 | Parameters ||
 |------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| `temporal` | [Temporal](../java/time/temporal/Temporal.md)!:the temporal object to adjust, not null |
+| `temporal` | [Temporal](../java.time.temporal/Temporal.md)!:the temporal object to adjust, not null |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|---------------------------------------------------------------|
-| [Temporal](../java/time/temporal/Temporal.md)! | an object of the same type with the adjustment made, not null |
+| [Temporal](../java.time.temporal/Temporal.md)! | an object of the same type with the adjustment made, not null |
 
 | Exceptions ||
 |---------------------------------|----------------------------|
@@ -94,7 +94,7 @@ open static fun between(
 
 Obtains a`ChronoPeriod`consisting of amount of time between two dates.
 
-The start date is included, but the end date is not. The period is calculated using [ChronoLocalDate.until(ChronoLocalDate)](../java/time/chrono/ChronoLocalDate.md)). As such, the calculation is chronology specific.
+The start date is included, but the end date is not. The period is calculated using [ChronoLocalDate.until(ChronoLocalDate)](ChronoLocalDate.md)). As such, the calculation is chronology specific.
 
 The chronology of the first date is used. The chronology of the second date is ignored, with the date being converted to the target chronology system before the calculation starts.
 
@@ -102,16 +102,16 @@ The result of this method can be a negative period if the end is before the star
 
 | Parameters ||
 |----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `startDateInclusive` | [ChronoLocalDate](../java/time/chrono/ChronoLocalDate.md)!:the start date, inclusive, specifying the chronology of the calculation, not null |
-| `endDateExclusive` | [ChronoLocalDate](../java/time/chrono/ChronoLocalDate.md)!:the end date, exclusive, in any chronology, not null |
+| `startDateInclusive` | [ChronoLocalDate](ChronoLocalDate.md)!:the start date, inclusive, specifying the chronology of the calculation, not null |
+| `endDateExclusive` | [ChronoLocalDate](ChronoLocalDate.md)!:the end date, exclusive, in any chronology, not null |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| [ChronoPeriod](../java/time/chrono/ChronoPeriod.md)! | the period between this date and the end date, not null |
+| [ChronoPeriod](ChronoPeriod.md)! | the period between this date and the end date, not null |
 
 **See Also**
 
-- [java.time.chrono.ChronoLocalDate#until(ChronoLocalDate)](../java/time/chrono/ChronoLocalDate.md)) 
+- [java.time.chrono.ChronoLocalDate#until(ChronoLocalDate)](ChronoLocalDate.md)) 
 
 ### get
 
@@ -123,11 +123,11 @@ abstract fun get(unit: TemporalUnit!): Long
 
 Gets the value of the requested unit.
 
-The supported units are chronology specific. They will typically be [YEARS](../java/time/temporal/ChronoUnit.md), [MONTHS](../java/time/temporal/ChronoUnit.md) and [DAYS](../java/time/temporal/ChronoUnit.md). Requesting an unsupported unit will throw an exception.
+The supported units are chronology specific. They will typically be [YEARS](../java.time.temporal/ChronoUnit.md), [MONTHS](../java.time.temporal/ChronoUnit.md) and [DAYS](../java.time.temporal/ChronoUnit.md). Requesting an unsupported unit will throw an exception.
 
 | Parameters ||
 |--------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `unit` | [TemporalUnit](../java/time/temporal/TemporalUnit.md)!:the`TemporalUnit`for which to return the value |
+| `unit` | [TemporalUnit](../java.time.temporal/TemporalUnit.md)!:the`TemporalUnit`for which to return the value |
 
 | Return ||
 |------------------------------------------------------------------------------|----------------------------|
@@ -152,7 +152,7 @@ The period is defined by the chronology. It controls the supported units and res
 
 | Return ||
 |-------------------------------------------------------------------------------------------|----------------------------------------------|
-| [Chronology](../java/time/chrono/Chronology.md)! | the chronology defining the period, not null |
+| [Chronology](Chronology.md)! | the chronology defining the period, not null |
 
 ### getUnits
 
@@ -164,13 +164,13 @@ abstract fun getUnits(): MutableList<TemporalUnit!>!
 
 Gets the set of units supported by this period.
 
-The supported units are chronology specific. They will typically be [YEARS](../java/time/temporal/ChronoUnit.md), [MONTHS](../java/time/temporal/ChronoUnit.md) and [DAYS](../java/time/temporal/ChronoUnit.md). They are returned in order from largest to smallest.
+The supported units are chronology specific. They will typically be [YEARS](../java.time.temporal/ChronoUnit.md), [MONTHS](../java.time.temporal/ChronoUnit.md) and [DAYS](../java.time.temporal/ChronoUnit.md). They are returned in order from largest to smallest.
 
-This set can be used in conjunction with [get(java.time.temporal.TemporalUnit)](../java/time/chrono/ChronoPeriod.md))to access the entire state of the period.
+This set can be used in conjunction with [get(java.time.temporal.TemporalUnit)](ChronoPeriod.md))to access the entire state of the period.
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [TemporalUnit](../java/time/temporal/TemporalUnit.md)!>! | a list containing the supported units, not null |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [TemporalUnit](../java.time.temporal/TemporalUnit.md)!>! | a list containing the supported units, not null |
 
 ### isNegative
 
@@ -216,11 +216,11 @@ This instance is immutable and unaffected by this method call.
 
 | Parameters ||
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| `amountToSubtract` | [TemporalAmount](../java/time/temporal/TemporalAmount.md)!:the period to subtract, not null |
+| `amountToSubtract` | [TemporalAmount](../java.time.temporal/TemporalAmount.md)!:the period to subtract, not null |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| [ChronoPeriod](../java/time/chrono/ChronoPeriod.md)! | a`ChronoPeriod`based on this period with the requested period subtracted, not null |
+| [ChronoPeriod](ChronoPeriod.md)! | a`ChronoPeriod`based on this period with the requested period subtracted, not null |
 
 | Exceptions ||
 |---------------------------------|----------------------------|
@@ -244,7 +244,7 @@ This returns a period with each supported unit individually multiplied. For exam
 
 | Return ||
 |------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
-| [ChronoPeriod](../java/time/chrono/ChronoPeriod.md)! | a`ChronoPeriod`based on this period with the amounts multiplied by the scalar, not null |
+| [ChronoPeriod](ChronoPeriod.md)! | a`ChronoPeriod`based on this period with the amounts multiplied by the scalar, not null |
 
 | Exceptions ||
 |---------------------------------|----------------------------|
@@ -264,7 +264,7 @@ This returns a period with each supported unit individually negated. For example
 
 | Return ||
 |------------------------------------------------------------------------------------------------|------------------------------------------------------------------------|
-| [ChronoPeriod](../java/time/chrono/ChronoPeriod.md)! | a`ChronoPeriod`based on this period with the amounts negated, not null |
+| [ChronoPeriod](ChronoPeriod.md)! | a`ChronoPeriod`based on this period with the amounts negated, not null |
 
 | Exceptions ||
 |---------------------------------|--------------------------------------------------------------------------------------------------|
@@ -286,7 +286,7 @@ This instance is immutable and unaffected by this method call.
 
 | Return ||
 |------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| [ChronoPeriod](../java/time/chrono/ChronoPeriod.md)! | a`ChronoPeriod`based on this period with the amounts of each unit normalized, not null |
+| [ChronoPeriod](ChronoPeriod.md)! | a`ChronoPeriod`based on this period with the amounts of each unit normalized, not null |
 
 | Exceptions ||
 |---------------------------------|----------------------------|
@@ -308,11 +308,11 @@ This instance is immutable and unaffected by this method call.
 
 | Parameters ||
 |---------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| `amountToAdd` | [TemporalAmount](../java/time/temporal/TemporalAmount.md)!:the period to add, not null |
+| `amountToAdd` | [TemporalAmount](../java.time.temporal/TemporalAmount.md)!:the period to add, not null |
 
 | Return ||
 |------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
-| [ChronoPeriod](../java/time/chrono/ChronoPeriod.md)! | a`ChronoPeriod`based on this period with the requested period added, not null |
+| [ChronoPeriod](ChronoPeriod.md)! | a`ChronoPeriod`based on this period with the requested period added, not null |
 
 | Exceptions ||
 |---------------------------------|----------------------------|
@@ -330,7 +330,7 @@ Subtracts this period from the specified temporal object.
 
 This returns a temporal object of the same observable type as the input with this period subtracted.
 
-In most cases, it is clearer to reverse the calling pattern by using [Temporal.minus(TemporalAmount)](../java/time/temporal/Temporal.md)). 
+In most cases, it is clearer to reverse the calling pattern by using [Temporal.minus(TemporalAmount)](../java.time.temporal/Temporal.md)). 
 
 ```kotlin
 // these two lines are equivalent, but the second approach is recommended
@@ -345,11 +345,11 @@ This instance is immutable and unaffected by this method call.
 
 | Parameters ||
 |------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| `temporal` | [Temporal](../java/time/temporal/Temporal.md)!:the temporal object to adjust, not null |
+| `temporal` | [Temporal](../java.time.temporal/Temporal.md)!:the temporal object to adjust, not null |
 
 | Return ||
 |-----------------------------------------------------------------------------------------------|---------------------------------------------------------------|
-| [Temporal](../java/time/temporal/Temporal.md)! | an object of the same type with the adjustment made, not null |
+| [Temporal](../java.time.temporal/Temporal.md)! | an object of the same type with the adjustment made, not null |
 
 | Exceptions ||
 |---------------------------------|----------------------------|

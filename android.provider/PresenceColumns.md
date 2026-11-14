@@ -19,7 +19,7 @@ interface PresenceColumns
 
 | **This interface was deprecated in API level 5.**
 |
-| see [android.provider.ContactsContract](../android/provider/ContactsContract.md)
+| see [android.provider.ContactsContract](ContactsContract.md)
 
 The IM presence columns with some contacts specific columns mixed in.
 
@@ -106,7 +106,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val IM_ACCOUNT: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)*
 
 The IM account for the local user that the presence data came from.
 
@@ -122,7 +122,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val IM_HANDLE: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)*
 
 The IM handle the presence item is for. The handle is scoped to the [IM_PROTOCOL](../android/provider/Contacts.PresenceColumns.md).
 
@@ -138,7 +138,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val IM_PROTOCOL: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)*
 
 The IM service the presence is coming from. Formatted using either [Contacts.ContactMethods.encodePredefinedImProtocol](../android/provider/Contacts.ContactMethods.md))or [Contacts.ContactMethods.encodeCustomImProtocol](../android/provider/Contacts.ContactMethods.md)).
 

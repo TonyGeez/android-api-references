@@ -4,7 +4,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # RoundedCorner
 
-Kotlin| [Java](../android/view/RoundedCorner.md) 
+Kotlin| [Java](RoundedCorner.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class RoundedCorner : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.RoundedCorner](../android/view/RoundedCorner.md) |
+| ↳ | [android.view.RoundedCorner](RoundedCorner.md) |
 
 Represents a rounded corner of the display.
 
@@ -21,42 +21,42 @@ Represents a rounded corner of the display.
 
 Note: The rounded corner formed by the radius and the center is an approximation.
 
-[RoundedCorner](../android/view/RoundedCorner.md) is immutable.
+[RoundedCorner](RoundedCorner.md) is immutable.
 
 ## Summary
 
 | Constants ||
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [POSITION_BOTTOM_LEFT](../android/view/RoundedCorner.md) The rounded corner is at the bottom-left of the screen. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [POSITION_BOTTOM_RIGHT](../android/view/RoundedCorner.md) The rounded corner is at the bottom-right of the screen. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [POSITION_TOP_LEFT](../android/view/RoundedCorner.md) The rounded corner is at the top-left of the screen. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [POSITION_BOTTOM_LEFT](RoundedCorner.md) The rounded corner is at the bottom-left of the screen. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [POSITION_BOTTOM_RIGHT](RoundedCorner.md) The rounded corner is at the bottom-right of the screen. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [POSITION_TOP_LEFT](RoundedCorner.md) The rounded corner is at the top-left of the screen. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [POSITION_TOP_RIGHT](../android/view/RoundedCorner.md) The rounded corner is at the top-right of the screen. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [POSITION_TOP_RIGHT](RoundedCorner.md) The rounded corner is at the top-right of the screen. |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android.os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android.os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android.os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [RoundedCorner](../android/view/RoundedCorner.md))`(`position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `radius:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `centerX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `centerY:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a [RoundedCorner](../android/view/RoundedCorner.md). |
+| [RoundedCorner](RoundedCorner.md))`(`position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `radius:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `centerX:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `centerY:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a [RoundedCorner](RoundedCorner.md). |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/view/RoundedCorner.md))`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/view/RoundedCorner.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
-| [Point](../android/graphics/Point.md) | [getCenter](../android/view/RoundedCorner.md))`()` Returns the circle center of a quarter circle approximation of this [RoundedCorner](../android/view/RoundedCorner.md). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](RoundedCorner.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](RoundedCorner.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` <br /> |
+| [Point](../android.graphics/Point.md) | [getCenter](RoundedCorner.md))`()` Returns the circle center of a quarter circle approximation of this [RoundedCorner](RoundedCorner.md). |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPosition](../android/view/RoundedCorner.md))`()` Get the position of this [RoundedCorner](../android/view/RoundedCorner.md). |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRadius](../android/view/RoundedCorner.md))`()` Returns the radius of a quarter circle approximation of this [RoundedCorner](../android/view/RoundedCorner.md). |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/view/RoundedCorner.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPosition](RoundedCorner.md))`()` Get the position of this [RoundedCorner](RoundedCorner.md). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRadius](RoundedCorner.md))`()` Returns the radius of a quarter circle approximation of this [RoundedCorner](RoundedCorner.md). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](RoundedCorner.md))`()` <br /> |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/view/RoundedCorner.md))`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/view/RoundedCorner.md))`(`out:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](RoundedCorner.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](RoundedCorner.md))`(`out:` ` [Parcel](../android.os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 
 | Properties ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [RoundedCorner](../android/view/RoundedCorner.md)!\> | [CREATOR](../android/view/RoundedCorner.md) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [RoundedCorner](RoundedCorner.md)!\> | [CREATOR](RoundedCorner.md) <br /> |
 
 ## Constants
 
@@ -122,13 +122,13 @@ RoundedCorner(
     centerY: Int)
 ```
 
-Creates a [RoundedCorner](../android/view/RoundedCorner.md).
+Creates a [RoundedCorner](RoundedCorner.md).
 
-Note that this is only useful for tests. For production code, developers should always use a [RoundedCorner](../android/view/RoundedCorner.md) obtained from the system via [WindowInsets.getRoundedCorner](../android/view/WindowInsets.md))or [Display.getRoundedCorner](../android/view/Display.md)).
+Note that this is only useful for tests. For production code, developers should always use a [RoundedCorner](RoundedCorner.md) obtained from the system via [WindowInsets.getRoundedCorner](WindowInsets.md))or [Display.getRoundedCorner](Display.md)).
 
 | Parameters ||
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `position` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the position of the rounded corner. Value is [android.view.RoundedCorner#POSITION_TOP_LEFT](../android/view/RoundedCorner.md), [android.view.RoundedCorner#POSITION_TOP_RIGHT](../android/view/RoundedCorner.md), [android.view.RoundedCorner#POSITION_BOTTOM_RIGHT](../android/view/RoundedCorner.md), or [android.view.RoundedCorner#POSITION_BOTTOM_LEFT](../android/view/RoundedCorner.md) |
+| `position` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the position of the rounded corner. Value is [android.view.RoundedCorner#POSITION_TOP_LEFT](RoundedCorner.md), [android.view.RoundedCorner#POSITION_TOP_RIGHT](RoundedCorner.md), [android.view.RoundedCorner#POSITION_BOTTOM_RIGHT](RoundedCorner.md), or [android.view.RoundedCorner#POSITION_BOTTOM_LEFT](RoundedCorner.md) |
 | `radius` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the radius of the rounded corner. |
 | `centerX` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the x of center point of the rounded corner. |
 | --- | --- |
@@ -146,7 +146,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) |
 
 ### equals
 
@@ -172,11 +172,11 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 fun getCenter(): Point
 ```
 
-Returns the circle center of a quarter circle approximation of this [RoundedCorner](../android/view/RoundedCorner.md).
+Returns the circle center of a quarter circle approximation of this [RoundedCorner](RoundedCorner.md).
 
 | Return ||
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Point](../android/graphics/Point.md) | the center point of this [RoundedCorner](../android/view/RoundedCorner.md) in the application's coordinate. This value cannot be`null`. |
+| [Point](../android.graphics/Point.md) | the center point of this [RoundedCorner](RoundedCorner.md) in the application's coordinate. This value cannot be`null`. |
 
 ### getPosition
 
@@ -186,18 +186,18 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 fun getPosition(): Int
 ```
 
-Get the position of this [RoundedCorner](../android/view/RoundedCorner.md).
+Get the position of this [RoundedCorner](RoundedCorner.md).
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.view.RoundedCorner#POSITION_TOP_LEFT](../android/view/RoundedCorner.md), [android.view.RoundedCorner#POSITION_TOP_RIGHT](../android/view/RoundedCorner.md), [android.view.RoundedCorner#POSITION_BOTTOM_RIGHT](../android/view/RoundedCorner.md), or [android.view.RoundedCorner#POSITION_BOTTOM_LEFT](../android/view/RoundedCorner.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.view.RoundedCorner#POSITION_TOP_LEFT](RoundedCorner.md), [android.view.RoundedCorner#POSITION_TOP_RIGHT](RoundedCorner.md), [android.view.RoundedCorner#POSITION_BOTTOM_RIGHT](RoundedCorner.md), or [android.view.RoundedCorner#POSITION_BOTTOM_LEFT](RoundedCorner.md) |
 
 **See Also**
 
-- [#POSITION_TOP_LEFT](../android/view/RoundedCorner.md)
-- [#POSITION_TOP_RIGHT](../android/view/RoundedCorner.md)
-- [#POSITION_BOTTOM_RIGHT](../android/view/RoundedCorner.md)
-- [#POSITION_BOTTOM_LEFT](../android/view/RoundedCorner.md) 
+- [#POSITION_TOP_LEFT](RoundedCorner.md)
+- [#POSITION_TOP_RIGHT](RoundedCorner.md)
+- [#POSITION_BOTTOM_RIGHT](RoundedCorner.md)
+- [#POSITION_BOTTOM_LEFT](RoundedCorner.md) 
 
 ### getRadius
 
@@ -207,11 +207,11 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 fun getRadius(): Int
 ```
 
-Returns the radius of a quarter circle approximation of this [RoundedCorner](../android/view/RoundedCorner.md).
+Returns the radius of a quarter circle approximation of this [RoundedCorner](RoundedCorner.md).
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the rounded corner radius of this [RoundedCorner](../android/view/RoundedCorner.md). Returns 0 if there is no rounded corner. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the rounded corner radius of this [RoundedCorner](RoundedCorner.md). Returns 0 if there is no rounded corner. |
 
 ### hashCode
 
@@ -253,8 +253,8 @@ Flatten this object in to a Parcel.
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `dest` | The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
-| `out` | [Parcel](../android/os/Parcel.md):This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `out` | [Parcel](../android.os/Parcel.md):This value cannot be`null`. |
 | --- | --- |
 
 ## Properties

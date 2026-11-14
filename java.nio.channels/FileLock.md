@@ -10,19 +10,19 @@ abstract class FileLock : AutoCloseable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.nio.channels.FileLock](../java/nio/channels/FileLock.md) |
+| ↳ | [java.nio.channels.FileLock](FileLock.md) |
 
 A token representing a lock on a region of a file.
 
-A file-lock object is created each time a lock is acquired on a file via one of the [lock](../java/nio/channels/FileChannel.md))or [tryLock](../java/nio/channels/FileChannel.md))methods of the [FileChannel](../java/nio/channels/FileChannel.md) class, or the [lock](../java/nio/channels/AsynchronousFileChannel.md))or [tryLock](../java/nio/channels/AsynchronousFileChannel.md))methods of the [AsynchronousFileChannel](../java/nio/channels/AsynchronousFileChannel.md) class.
+A file-lock object is created each time a lock is acquired on a file via one of the [lock](FileChannel.md))or [tryLock](FileChannel.md))methods of the [FileChannel](FileChannel.md) class, or the [lock](AsynchronousFileChannel.md))or [tryLock](AsynchronousFileChannel.md))methods of the [AsynchronousFileChannel](AsynchronousFileChannel.md) class.
 
-A file-lock object is initially valid. It remains valid until the lock is released by invoking the [release](../java/nio/channels/FileLock.md))method, by closing the channel that was used to acquire it, or by the termination of the Java virtual machine, whichever comes first. The validity of a lock may be tested by invoking its [isValid](../java/nio/channels/FileLock.md))method.
+A file-lock object is initially valid. It remains valid until the lock is released by invoking the [release](FileLock.md))method, by closing the channel that was used to acquire it, or by the termination of the Java virtual machine, whichever comes first. The validity of a lock may be tested by invoking its [isValid](FileLock.md))method.
 
 A file lock is either*exclusive* or*shared*. A shared lock prevents other concurrently-running programs from acquiring an overlapping exclusive lock, but does allow them to acquire overlapping shared locks. An exclusive lock prevents other programs from acquiring an overlapping lock of either type. Once it is released, a lock has no further effect on the locks that may be acquired by other programs.
 
-Whether a lock is exclusive or shared may be determined by invoking its [isShared](../java/nio/channels/FileLock.md))method. Some platforms do not support shared locks, in which case a request for a shared lock is automatically converted into a request for an exclusive lock.
+Whether a lock is exclusive or shared may be determined by invoking its [isShared](FileLock.md))method. Some platforms do not support shared locks, in which case a request for a shared lock is automatically converted into a request for an exclusive lock.
 
-The locks held on a particular file by a single Java virtual machine do not overlap. The [overlaps](../java/nio/channels/FileLock.md))method may be used to test whether a candidate lock range overlaps an existing lock.
+The locks held on a particular file by a single Java virtual machine do not overlap. The [overlaps](FileLock.md))method may be used to test whether a candidate lock range overlaps an existing lock.
 
 A file-lock object records the file channel upon whose file the lock is held, the type and validity of the lock, and the position and size of the locked region. Only the validity of a lock is subject to change over time; all other aspects of a lock's state are immutable.
 
@@ -36,7 +36,7 @@ This file-locking API is intended to map directly to the native locking facility
 
 Whether or not a lock actually prevents another program from accessing the content of the locked region is system-dependent and therefore unspecified. The native file-locking facilities of some systems are merely*advisory* , meaning that programs must cooperatively observe a known locking protocol in order to guarantee data integrity. On other systems native file locks are*mandatory*, meaning that if one program locks a region of a file then other programs are actually prevented from accessing that region in a way that would violate the lock. On yet other systems, whether native file locks are advisory or mandatory is configurable on a per-file basis. To ensure consistent and correct behavior across platforms, it is strongly recommended that the locks provided by this API be used as if they were advisory locks.
 
-On some systems, acquiring a mandatory lock on a region of a file prevents that region from being [*mapped into memory*](../java/nio/channels/FileChannel.md)), and vice versa. Programs that combine locking and mapping should be prepared for this combination to fail.
+On some systems, acquiring a mandatory lock on a region of a file prevents that region from being [*mapped into memory*](FileChannel.md)), and vice versa. Programs that combine locking and mapping should be prepared for this combination to fail.
 
 On some systems, closing a channel releases all locks held by the Java virtual machine on the underlying file regardless of whether the locks were acquired via that channel or via another channel open on the same file. It is strongly recommended that, within a program, a unique channel be used to acquire all locks on any given file.
 
@@ -46,24 +46,24 @@ Some network filesystems permit file locking to be used with memory-mapped files
 
 | Protected constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [FileLock](../java/nio/channels/FileLock.md))`(`channel:` ` [AsynchronousFileChannel](../java/nio/channels/AsynchronousFileChannel.md)!`, `position:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `size:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `shared:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Initializes a new instance of this class. |
-| [FileLock](../java/nio/channels/FileLock.md))`(`channel:` ` [FileChannel](../java/nio/channels/FileChannel.md)!`, `position:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `size:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `shared:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Initializes a new instance of this class. |
+| [FileLock](FileLock.md))`(`channel:` ` [AsynchronousFileChannel](AsynchronousFileChannel.md)!`, `position:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `size:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `shared:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Initializes a new instance of this class. |
+| [FileLock](FileLock.md))`(`channel:` ` [FileChannel](FileChannel.md)!`, `position:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `size:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `shared:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Initializes a new instance of this class. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Channel](../java/nio/channels/Channel.md)! | [acquiredBy](../java/nio/channels/FileLock.md))`()` Returns the channel upon whose file this lock was acquired. |
-| [FileChannel](../java/nio/channels/FileChannel.md)! | [channel](../java/nio/channels/FileLock.md))`()` Returns the file channel upon whose file this lock was acquired. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../java/nio/channels/FileLock.md))`()` This method invokes the [release](../java/nio/channels/FileLock.md))method. |
+| open [Channel](Channel.md)! | [acquiredBy](FileLock.md))`()` Returns the channel upon whose file this lock was acquired. |
+| [FileChannel](FileChannel.md)! | [channel](FileLock.md))`()` Returns the file channel upon whose file this lock was acquired. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](FileLock.md))`()` This method invokes the [release](FileLock.md))method. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isShared](../java/nio/channels/FileLock.md))`()` Tells whether this lock is shared. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isValid](../java/nio/channels/FileLock.md))`()` Tells whether or not this lock is valid. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [overlaps](../java/nio/channels/FileLock.md))`(`position:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `size:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Tells whether or not this lock overlaps the given lock range. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isShared](FileLock.md))`()` Tells whether this lock is shared. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isValid](FileLock.md))`()` Tells whether or not this lock is valid. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [overlaps](FileLock.md))`(`position:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `size:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Tells whether or not this lock overlaps the given lock range. |
 | --- | --- |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [position](../java/nio/channels/FileLock.md))`()` Returns the position within the file of the first byte of the locked region. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [release](../java/nio/channels/FileLock.md))`()` Releases this lock. |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [size](../java/nio/channels/FileLock.md))`()` Returns the size of the locked region in bytes. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [position](FileLock.md))`()` Returns the position within the file of the first byte of the locked region. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [release](FileLock.md))`()` Releases this lock. |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [size](FileLock.md))`()` Returns the size of the locked region in bytes. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/nio/channels/FileLock.md))`()` Returns a string describing the range, type, and validity of this lock. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](FileLock.md))`()` Returns a string describing the range, type, and validity of this lock. |
 
 ## Protected constructors
 
@@ -83,7 +83,7 @@ Initializes a new instance of this class.
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `channel` | [AsynchronousFileChannel](../java/nio/channels/AsynchronousFileChannel.md)!:The channel upon whose file this lock is held |
+| `channel` | [AsynchronousFileChannel](AsynchronousFileChannel.md)!:The channel upon whose file this lock is held |
 | `position` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The position within the file at which the locked region starts; must be non-negative |
 | `size` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The size of the locked region; must be non-negative, and the sum`position`+`size`must be non-negative |
 | --- | --- |
@@ -109,7 +109,7 @@ Initializes a new instance of this class.
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `channel` | [FileChannel](../java/nio/channels/FileChannel.md)!:The file channel upon whose file this lock is held |
+| `channel` | [FileChannel](FileChannel.md)!:The file channel upon whose file this lock is held |
 | `position` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The position within the file at which the locked region starts; must be non-negative |
 | `size` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The size of the locked region; must be non-negative, and the sum`position`+`size`must be non-negative |
 | --- | --- |
@@ -133,7 +133,7 @@ Returns the channel upon whose file this lock was acquired.
 
 | Return ||
 |--------------------------------------------------------------------------------------|-----------------------------------------------------|
-| [Channel](../java/nio/channels/Channel.md)! | The channel upon whose file this lock was acquired. |
+| [Channel](Channel.md)! | The channel upon whose file this lock was acquired. |
 
 ### channel
 
@@ -145,11 +145,11 @@ fun channel(): FileChannel!
 
 Returns the file channel upon whose file this lock was acquired.
 
-This method has been superseded by the [acquiredBy](../java/nio/channels/FileLock.md))method.
+This method has been superseded by the [acquiredBy](FileLock.md))method.
 
 | Return ||
 |----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| [FileChannel](../java/nio/channels/FileChannel.md)! | The file channel, or`null`if the file lock was not acquired by a file channel. |
+| [FileChannel](FileChannel.md)! | The file channel, or`null`if the file lock was not acquired by a file channel. |
 
 ### close
 
@@ -159,7 +159,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 fun close(): Unit
 ```
 
-This method invokes the [release](../java/nio/channels/FileLock.md))method. It was added to the class so that it could be used in conjunction with the automatic resource management block construct.
+This method invokes the [release](FileLock.md))method. It was added to the class so that it could be used in conjunction with the automatic resource management block construct.
 
 | Exceptions ||
 |-----------------------|-----------------------------------|

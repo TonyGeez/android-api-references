@@ -11,10 +11,10 @@ open class NoSuchMethodException : ReflectiveOperationException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
-| | | ↳ | [java.lang.ReflectiveOperationException](../java/lang/ReflectiveOperationException.md) ||
+| | ↳ | [java.lang.Exception](Exception.md) |||
+| | | ↳ | [java.lang.ReflectiveOperationException](ReflectiveOperationException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.NoSuchMethodException](../java/lang/NoSuchMethodException.md) |
+| | | | ↳ | [java.lang.NoSuchMethodException](NoSuchMethodException.md) |
 
 Thrown when a particular method cannot be found.
 
@@ -22,8 +22,8 @@ Thrown when a particular method cannot be found.
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [NoSuchMethodException](../java/lang/NoSuchMethodException.md))`()` Constructs a`NoSuchMethodException`without a detail message. |
-| [NoSuchMethodException](../java/lang/NoSuchMethodException.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a`NoSuchMethodException`with a detail message. |
+| [NoSuchMethodException](NoSuchMethodException.md))`()` Constructs a`NoSuchMethodException`without a detail message. |
+| [NoSuchMethodException](NoSuchMethodException.md))`(`s:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a`NoSuchMethodException`with a detail message. |
 
 ## Public constructors
 

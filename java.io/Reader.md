@@ -8,12 +8,12 @@ abstract class Reader : Closeable, Readable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.io.Reader](../java/io/Reader.md) |
+| ↳ | [java.io.Reader](Reader.md) |
 
-| Known Direct Subclasses [BufferedReader](../java/io/BufferedReader.md), [CharArrayReader](../java/io/CharArrayReader.md), [FilterReader](../java/io/FilterReader.md), [InputStreamReader](../java/io/InputStreamReader.md), [PipedReader](../java/io/PipedReader.md), [StringReader](../java/io/StringReader.md) |---|---| | [BufferedReader](../java/io/BufferedReader.md) | Reads text from a character-input stream, buffering characters so as to provide for the efficient reading of characters, arrays, and lines. | | [CharArrayReader](../java/io/CharArrayReader.md) | This class implements a character buffer that can be used as a character-input stream. | | [FilterReader](../java/io/FilterReader.md) | Abstract class for reading filtered character streams. | | [InputStreamReader](../java/io/InputStreamReader.md) | An InputStreamReader is a bridge from byte streams to character streams: It reads bytes and decodes them into characters using a specified `https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#`. | | [PipedReader](../java/io/PipedReader.md) | Piped character-input streams. | | [StringReader](../java/io/StringReader.md) | A character stream whose source is a string. | |
+| Known Direct Subclasses [BufferedReader](BufferedReader.md), [CharArrayReader](CharArrayReader.md), [FilterReader](FilterReader.md), [InputStreamReader](InputStreamReader.md), [PipedReader](PipedReader.md), [StringReader](StringReader.md) |---|---| | [BufferedReader](BufferedReader.md) | Reads text from a character-input stream, buffering characters so as to provide for the efficient reading of characters, arrays, and lines. | | [CharArrayReader](CharArrayReader.md) | This class implements a character buffer that can be used as a character-input stream. | | [FilterReader](FilterReader.md) | Abstract class for reading filtered character streams. | | [InputStreamReader](InputStreamReader.md) | An InputStreamReader is a bridge from byte streams to character streams: It reads bytes and decodes them into characters using a specified `https://developer.android.com/reference/kotlin/java/nio/charset/Charset.html#`. | | [PipedReader](PipedReader.md) | Piped character-input streams. | | [StringReader](StringReader.md) | A character stream whose source is a string. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [FileReader](../java/io/FileReader.md), [LineNumberReader](../java/io/LineNumberReader.md), [PushbackReader](../java/io/PushbackReader.md) |---|---| | [FileReader](../java/io/FileReader.md) | Reads text from character files using a default buffer size. | | [LineNumberReader](../java/io/LineNumberReader.md) | A buffered character-input stream that keeps track of line numbers. | | [PushbackReader](../java/io/PushbackReader.md) | A character-stream reader that allows characters to be pushed back into the stream. | |
+| Known Indirect Subclasses [FileReader](FileReader.md), [LineNumberReader](LineNumberReader.md), [PushbackReader](PushbackReader.md) |---|---| | [FileReader](FileReader.md) | Reads text from character files using a default buffer size. | | [LineNumberReader](LineNumberReader.md) | A buffered character-input stream that keeps track of line numbers. | | [PushbackReader](PushbackReader.md) | A character-stream reader that allows characters to be pushed back into the stream. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Abstract class for reading character streams. The only methods that a subclass must implement are read(char\[\], int, int) and close(). Most subclasses, however, will override some of the methods defined here in order to provide higher efficiency, additional functionality, or both.
@@ -31,7 +31,7 @@ Abstract class for reading character streams. The only methods that a subclass m
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/Reader#mark(kotlin.Int)(readAheadLimit: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Marks the present position in the stream. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/io/Reader#markSupported()()` Tells whether this stream supports the mark() operation. |
 | --- | --- |
-| open static [Reader](../java/io/Reader.md)! | `https://developer.android.com/reference/kotlin/java/io/Reader#nullReader()()` Returns a new `Reader` that reads no characters. |
+| open static [Reader](Reader.md)! | `https://developer.android.com/reference/kotlin/java/io/Reader#nullReader()()` Returns a new `Reader` that reads no characters. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/io/Reader#read()()` Reads a single character. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/io/Reader#read(kotlin.CharArray)(cbuf: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html!)` Reads characters into an array. |
 | --- | --- |
@@ -228,7 +228,7 @@ Attempts to read characters into the specified character buffer. The buffer is u
 | Parameters ||
 |---|---|
 | `cb` | the buffer to read characters into |
-| `target` | [CharBuffer](../java/nio/CharBuffer.md)!: the buffer to read characters into |
+| `target` | [CharBuffer](../java.nio/CharBuffer.md)!: the buffer to read characters into |
 
 | Return ||
 |---|---|
@@ -312,7 +312,7 @@ If an I/O error occurs reading from the reader or writing to the writer, then it
 
 | Parameters ||
 |---|---|
-| `out` | [Writer](../java/io/Writer.md)!: the writer, non-null |
+| `out` | [Writer](Writer.md)!: the writer, non-null |
 
 | Return ||
 |---|---|

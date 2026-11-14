@@ -10,54 +10,54 @@ open class DefaultHandler : ContentHandler, DTDHandler, EntityResolver, ErrorH
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [org.xml.sax.helpers.DefaultHandler](../org/xml/sax/helpers/DefaultHandler.md) |
+| ↳ | [org.xml.sax.helpers.DefaultHandler](DefaultHandler.md) |
 
-| Known Direct Subclasses [DefaultHandler2](../org/xml/sax/ext/DefaultHandler2.md) |---------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [DefaultHandler2](../org/xml/sax/ext/DefaultHandler2.md) | This class extends the SAX2 base handler class to support the SAX2 [LexicalHandler](../org/xml/sax/ext/LexicalHandler.md), [DeclHandler](../org/xml/sax/ext/DeclHandler.md), and [EntityResolver2](../org/xml/sax/ext/EntityResolver2.md) extensions. | |
+| Known Direct Subclasses [DefaultHandler2](../org.xml.sax.ext/DefaultHandler2.md) |---------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [DefaultHandler2](../org.xml.sax.ext/DefaultHandler2.md) | This class extends the SAX2 base handler class to support the SAX2 [LexicalHandler](../org.xml.sax.ext/LexicalHandler.md), [DeclHandler](../org.xml.sax.ext/DeclHandler.md), and [EntityResolver2](../org.xml.sax.ext/EntityResolver2.md) extensions. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 Default base class for SAX2 event handlers.*This module, both source code and documentation, is in the Public Domain, and comes with**NO WARRANTY**.* See<http://www.saxproject.org>for further information.
 
 This class is available as a convenience base class for SAX2 applications: it provides default implementations for all of the callbacks in the four core SAX2 handler classes:
 
-- [EntityResolver](../org/xml/sax/EntityResolver.md)
-- [DTDHandler](../org/xml/sax/DTDHandler.md)
-- [ContentHandler](../org/xml/sax/ContentHandler.md)
-- [ErrorHandler](../org/xml/sax/ErrorHandler.md)
+- [EntityResolver](../org.xml.sax/EntityResolver.md)
+- [DTDHandler](../org.xml.sax/DTDHandler.md)
+- [ContentHandler](../org.xml.sax/ContentHandler.md)
+- [ErrorHandler](../org.xml.sax/ErrorHandler.md)
 
 Application writers can extend this class when they need to implement only part of an interface; parser writers can instantiate this class to provide default handlers when the application has not supplied its own.
 
-This class replaces the deprecated SAX1 [HandlerBase](../org/xml/sax/HandlerBase.md) class.
+This class replaces the deprecated SAX1 [HandlerBase](../org.xml.sax/HandlerBase.md) class.
 
 ## Summary
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------|---|
-| [DefaultHandler](../org/xml/sax/helpers/DefaultHandler.md))`()` <br /> |
+| [DefaultHandler](DefaultHandler.md))`()` <br /> |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [characters](../org/xml/sax/helpers/DefaultHandler.md))`(`ch:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Receive notification of character data inside an element. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [endDocument](../org/xml/sax/helpers/DefaultHandler.md))`()` Receive notification of the end of the document. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [endElement](../org/xml/sax/helpers/DefaultHandler.md))`(`uri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `localName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `qName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Receive notification of the end of an element. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [characters](DefaultHandler.md))`(`ch:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Receive notification of character data inside an element. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [endDocument](DefaultHandler.md))`()` Receive notification of the end of the document. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [endElement](DefaultHandler.md))`(`uri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `localName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `qName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Receive notification of the end of an element. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [endPrefixMapping](../org/xml/sax/helpers/DefaultHandler.md))`(`prefix:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Receive notification of the end of a Namespace mapping. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [error](../org/xml/sax/helpers/DefaultHandler.md))`(`e:` ` [SAXParseException](../org/xml/sax/SAXParseException.md)!`)` Receive notification of a recoverable parser error. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [fatalError](../org/xml/sax/helpers/DefaultHandler.md))`(`e:` ` [SAXParseException](../org/xml/sax/SAXParseException.md)!`)` Report a fatal XML parsing error. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [endPrefixMapping](DefaultHandler.md))`(`prefix:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Receive notification of the end of a Namespace mapping. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [error](DefaultHandler.md))`(`e:` ` [SAXParseException](../org.xml.sax/SAXParseException.md)!`)` Receive notification of a recoverable parser error. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [fatalError](DefaultHandler.md))`(`e:` ` [SAXParseException](../org.xml.sax/SAXParseException.md)!`)` Report a fatal XML parsing error. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [ignorableWhitespace](../org/xml/sax/helpers/DefaultHandler.md))`(`ch:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Receive notification of ignorable whitespace in element content. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [notationDecl](../org/xml/sax/helpers/DefaultHandler.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `publicId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Receive notification of a notation declaration. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [processingInstruction](../org/xml/sax/helpers/DefaultHandler.md))`(`target:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `data:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Receive notification of a processing instruction. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [ignorableWhitespace](DefaultHandler.md))`(`ch:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Receive notification of ignorable whitespace in element content. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [notationDecl](DefaultHandler.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `publicId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Receive notification of a notation declaration. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [processingInstruction](DefaultHandler.md))`(`target:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `data:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Receive notification of a processing instruction. |
 | --- | --- |
-| open [InputSource](../org/xml/sax/InputSource.md)! | [resolveEntity](../org/xml/sax/helpers/DefaultHandler.md))`(`publicId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Resolve an external entity. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDocumentLocator](../org/xml/sax/helpers/DefaultHandler.md))`(`locator:` ` [Locator](../org/xml/sax/Locator.md)!`)` Receive a Locator object for document events. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [skippedEntity](../org/xml/sax/helpers/DefaultHandler.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Receive notification of a skipped entity. |
+| open [InputSource](../org.xml.sax/InputSource.md)! | [resolveEntity](DefaultHandler.md))`(`publicId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Resolve an external entity. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setDocumentLocator](DefaultHandler.md))`(`locator:` ` [Locator](../org.xml.sax/Locator.md)!`)` Receive a Locator object for document events. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [skippedEntity](DefaultHandler.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Receive notification of a skipped entity. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startDocument](../org/xml/sax/helpers/DefaultHandler.md))`()` Receive notification of the beginning of the document. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startElement](../org/xml/sax/helpers/DefaultHandler.md))`(`uri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `localName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `qName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `attributes:` ` [Attributes](../org/xml/sax/Attributes.md)!`)` Receive notification of the start of an element. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startPrefixMapping](../org/xml/sax/helpers/DefaultHandler.md))`(`prefix:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `uri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Receive notification of the start of a Namespace mapping. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startDocument](DefaultHandler.md))`()` Receive notification of the beginning of the document. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startElement](DefaultHandler.md))`(`uri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `localName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `qName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `attributes:` ` [Attributes](../org.xml.sax/Attributes.md)!`)` Receive notification of the start of an element. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [startPrefixMapping](DefaultHandler.md))`(`prefix:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `uri:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Receive notification of the start of a Namespace mapping. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unparsedEntityDecl](../org/xml/sax/helpers/DefaultHandler.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `publicId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `notationName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Receive notification of an unparsed entity declaration. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [warning](../org/xml/sax/helpers/DefaultHandler.md))`(`e:` ` [SAXParseException](../org/xml/sax/SAXParseException.md)!`)` Receive notification of a parser warning. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unparsedEntityDecl](DefaultHandler.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `publicId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `systemId:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `notationName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Receive notification of an unparsed entity declaration. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [warning](DefaultHandler.md))`(`e:` ` [SAXParseException](../org.xml.sax/SAXParseException.md)!`)` Receive notification of a parser warning. |
 
 ## Public constructors
 
@@ -101,7 +101,7 @@ By default, do nothing. Application writers may override this method to take spe
 
 **See Also**
 
-- [org.xml.sax.ContentHandler#characters](../org/xml/sax/ContentHandler.md)) 
+- [org.xml.sax.ContentHandler#characters](../org.xml.sax/ContentHandler.md)) 
 
 ### endDocument
 
@@ -122,7 +122,7 @@ By default, do nothing. Application writers may override this method in a subcla
 
 **See Also**
 
-- [org.xml.sax.ContentHandler#endDocument](../org/xml/sax/ContentHandler.md)) 
+- [org.xml.sax.ContentHandler#endDocument](../org.xml.sax/ContentHandler.md)) 
 
 ### endElement
 
@@ -154,7 +154,7 @@ By default, do nothing. Application writers may override this method in a subcla
 
 **See Also**
 
-- [org.xml.sax.ContentHandler#endElement](../org/xml/sax/ContentHandler.md)) 
+- [org.xml.sax.ContentHandler#endElement](../org.xml.sax/ContentHandler.md)) 
 
 ### endPrefixMapping
 
@@ -179,7 +179,7 @@ By default, do nothing. Application writers may override this method in a subcla
 
 **See Also**
 
-- [org.xml.sax.ContentHandler#endPrefixMapping](../org/xml/sax/ContentHandler.md)) 
+- [org.xml.sax.ContentHandler#endPrefixMapping](../org.xml.sax/ContentHandler.md)) 
 
 ### error
 
@@ -196,7 +196,7 @@ The default implementation does nothing. Application writers may override this m
 | Parameters ||
 |-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `exception` | The error information encapsulated in a SAX parse exception. |
-| `e` | [SAXParseException](../org/xml/sax/SAXParseException.md)!:The warning information encoded as an exception. |
+| `e` | [SAXParseException](../org.xml.sax/SAXParseException.md)!:The warning information encoded as an exception. |
 
 | Exceptions ||
 |----------------------------|---------------------------------------------------------|
@@ -204,8 +204,8 @@ The default implementation does nothing. Application writers may override this m
 
 **See Also**
 
-- [org.xml.sax.ErrorHandler#warning](../org/xml/sax/ErrorHandler.md))
-- [org.xml.sax.SAXParseException](../org/xml/sax/SAXParseException.md) 
+- [org.xml.sax.ErrorHandler#warning](../org.xml.sax/ErrorHandler.md))
+- [org.xml.sax.SAXParseException](../org.xml.sax/SAXParseException.md) 
 
 ### fatalError
 
@@ -222,7 +222,7 @@ The default implementation throws a SAXParseException. Application writers may o
 | Parameters ||
 |-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `exception` | The error information encapsulated in a SAX parse exception. |
-| `e` | [SAXParseException](../org/xml/sax/SAXParseException.md)!:The error information encoded as an exception. |
+| `e` | [SAXParseException](../org.xml.sax/SAXParseException.md)!:The error information encoded as an exception. |
 
 | Exceptions ||
 |----------------------------|---------------------------------------------------------|
@@ -230,8 +230,8 @@ The default implementation throws a SAXParseException. Application writers may o
 
 **See Also**
 
-- [org.xml.sax.ErrorHandler#fatalError](../org/xml/sax/ErrorHandler.md))
-- [org.xml.sax.SAXParseException](../org/xml/sax/SAXParseException.md) 
+- [org.xml.sax.ErrorHandler#fatalError](../org.xml.sax/ErrorHandler.md))
+- [org.xml.sax.SAXParseException](../org.xml.sax/SAXParseException.md) 
 
 ### ignorableWhitespace
 
@@ -263,7 +263,7 @@ By default, do nothing. Application writers may override this method to take spe
 
 **See Also**
 
-- [org.xml.sax.ContentHandler#ignorableWhitespace](../org/xml/sax/ContentHandler.md)) 
+- [org.xml.sax.ContentHandler#ignorableWhitespace](../org.xml.sax/ContentHandler.md)) 
 
 ### notationDecl
 
@@ -294,7 +294,7 @@ By default, do nothing. Application writers may override this method in a subcla
 
 **See Also**
 
-- [org.xml.sax.DTDHandler#notationDecl](../org/xml/sax/DTDHandler.md)) 
+- [org.xml.sax.DTDHandler#notationDecl](../org.xml.sax/DTDHandler.md)) 
 
 ### processingInstruction
 
@@ -323,7 +323,7 @@ By default, do nothing. Application writers may override this method in a subcla
 
 **See Also**
 
-- [org.xml.sax.ContentHandler#processingInstruction](../org/xml/sax/ContentHandler.md)) 
+- [org.xml.sax.ContentHandler#processingInstruction](../org.xml.sax/ContentHandler.md)) 
 
 ### resolveEntity
 
@@ -347,7 +347,7 @@ Always return null, so that the parser will use the system identifier provided i
 
 | Return ||
 |----------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| [InputSource](../org/xml/sax/InputSource.md)! | The new input source, or null to require the default behaviour. |
+| [InputSource](../org.xml.sax/InputSource.md)! | The new input source, or null to require the default behaviour. |
 
 | Exceptions ||
 |----------------------------|---------------------------------------------------------|
@@ -356,7 +356,7 @@ Always return null, so that the parser will use the system identifier provided i
 
 **See Also**
 
-- [org.xml.sax.EntityResolver#resolveEntity](../org/xml/sax/EntityResolver.md)) 
+- [org.xml.sax.EntityResolver#resolveEntity](../org.xml.sax/EntityResolver.md)) 
 
 ### setDocumentLocator
 
@@ -372,12 +372,12 @@ By default, do nothing. Application writers may override this method in a subcla
 
 | Parameters ||
 |-----------|-----------------------------------------------------------------------------------------------------------------------------|
-| `locator` | [Locator](../org/xml/sax/Locator.md)!:A locator for all SAX document events. |
+| `locator` | [Locator](../org.xml.sax/Locator.md)!:A locator for all SAX document events. |
 
 **See Also**
 
-- [org.xml.sax.ContentHandler#setDocumentLocator](../org/xml/sax/ContentHandler.md))
-- [org.xml.sax.Locator](../org/xml/sax/Locator.md) 
+- [org.xml.sax.ContentHandler#setDocumentLocator](../org.xml.sax/ContentHandler.md))
+- [org.xml.sax.Locator](../org.xml.sax/Locator.md) 
 
 ### skippedEntity
 
@@ -402,7 +402,7 @@ By default, do nothing. Application writers may override this method in a subcla
 
 **See Also**
 
-- [org.xml.sax.ContentHandler#processingInstruction](../org/xml/sax/ContentHandler.md)) 
+- [org.xml.sax.ContentHandler#processingInstruction](../org.xml.sax/ContentHandler.md)) 
 
 ### startDocument
 
@@ -423,7 +423,7 @@ By default, do nothing. Application writers may override this method in a subcla
 
 **See Also**
 
-- [org.xml.sax.ContentHandler#startDocument](../org/xml/sax/ContentHandler.md)) 
+- [org.xml.sax.ContentHandler#startDocument](../org.xml.sax/ContentHandler.md)) 
 
 ### startElement
 
@@ -449,7 +449,7 @@ By default, do nothing. Application writers may override this method in a subcla
 | `qName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:The qualified name (with prefix), or the empty string if qualified names are not available. |
 | --- | --- |
 | `atts` | the attributes attached to the element. If there are no attributes, it shall be an empty Attributes object. The value of this object after startElement returns is undefined |
-| `attributes` | [Attributes](../org/xml/sax/Attributes.md)!:The attributes attached to the element. If there are no attributes, it shall be an empty Attributes object. |
+| `attributes` | [Attributes](../org.xml.sax/Attributes.md)!:The attributes attached to the element. If there are no attributes, it shall be an empty Attributes object. |
 
 | Exceptions ||
 |----------------------------|---------------------------------------------------------|
@@ -458,7 +458,7 @@ By default, do nothing. Application writers may override this method in a subcla
 
 **See Also**
 
-- [org.xml.sax.ContentHandler#startElement](../org/xml/sax/ContentHandler.md)) 
+- [org.xml.sax.ContentHandler#startElement](../org.xml.sax/ContentHandler.md)) 
 
 ### startPrefixMapping
 
@@ -487,7 +487,7 @@ By default, do nothing. Application writers may override this method in a subcla
 
 **See Also**
 
-- [org.xml.sax.ContentHandler#startPrefixMapping](../org/xml/sax/ContentHandler.md)) 
+- [org.xml.sax.ContentHandler#startPrefixMapping](../org.xml.sax/ContentHandler.md)) 
 
 ### unparsedEntityDecl
 
@@ -520,7 +520,7 @@ By default, do nothing. Application writers may override this method in a subcla
 
 **See Also**
 
-- [org.xml.sax.DTDHandler#unparsedEntityDecl](../org/xml/sax/DTDHandler.md)) 
+- [org.xml.sax.DTDHandler#unparsedEntityDecl](../org.xml.sax/DTDHandler.md)) 
 
 ### warning
 
@@ -537,7 +537,7 @@ The default implementation does nothing. Application writers may override this m
 | Parameters ||
 |-------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `exception` | The warning information encapsulated in a SAX parse exception. |
-| `e` | [SAXParseException](../org/xml/sax/SAXParseException.md)!:The warning information encoded as an exception. |
+| `e` | [SAXParseException](../org.xml.sax/SAXParseException.md)!:The warning information encoded as an exception. |
 
 | Exceptions ||
 |----------------------------|---------------------------------------------------------|
@@ -545,5 +545,5 @@ The default implementation does nothing. Application writers may override this m
 
 **See Also**
 
-- [org.xml.sax.ErrorHandler#warning](../org/xml/sax/ErrorHandler.md))
-- [org.xml.sax.SAXParseException](../org/xml/sax/SAXParseException.md)
+- [org.xml.sax.ErrorHandler#warning](../org.xml.sax/ErrorHandler.md))
+- [org.xml.sax.SAXParseException](../org.xml.sax/SAXParseException.md)

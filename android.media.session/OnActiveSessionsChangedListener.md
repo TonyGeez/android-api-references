@@ -19,7 +19,7 @@ Listens for changes to the list of active sessions. This can be added using #add
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onActiveSessionsChanged](../android/media/session/MediaSessionManager.OnActiveSessionsChangedListener.md))`(`controllers:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [MediaController](../android/media/session/MediaController.md)!>?`)` <br /> |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onActiveSessionsChanged](../android/media/session/MediaSessionManager.OnActiveSessionsChangedListener.md))`(`controllers:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [MediaController](MediaController.md)!>?`)` <br /> |
 
 ## Public methods
 
@@ -33,4 +33,4 @@ abstract fun onActiveSessionsChanged(controllers: MutableList<MediaController!>
 
 | Parameters ||
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `controllers` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MediaController](../android/media/session/MediaController.md)!\>?:This value may be`null`. |
+| `controllers` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [MediaController](MediaController.md)!\>?:This value may be`null`. |

@@ -4,7 +4,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # Volume
 
-Kotlin| [Java](../android/health/connect/datatypes/units/Volume.md) 
+Kotlin| [Java](Volume.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class Volume : Comparable<Volume!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.health.connect.datatypes.units.Volume](../android/health/connect/datatypes/units/Volume.md) |
+| ↳ | [android.health.connect.datatypes.units.Volume](Volume.md) |
 
 Represents a unit of volume. Supported units: liters
 
@@ -21,13 +21,13 @@ Represents a unit of volume. Supported units: liters
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](../android/health/connect/datatypes/units/Volume.md))`(`other:` ` [Volume](../android/health/connect/datatypes/units/Volume.md)`)` Compares this object with the specified object for order. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/health/connect/datatypes/units/Volume.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| static [Volume](../android/health/connect/datatypes/units/Volume.md) | [fromLiters](../android/health/connect/datatypes/units/Volume.md))`(`value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Creates a Volume object with the specified value in liters. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [compareTo](Volume.md))`(`other:` ` [Volume](Volume.md)`)` Compares this object with the specified object for order. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](Volume.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| static [Volume](Volume.md) | [fromLiters](Volume.md))`(`value:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`)` Creates a Volume object with the specified value in liters. |
 | --- | --- |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getInLiters](../android/health/connect/datatypes/units/Volume.md))`()` Returns volume in liters |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/health/connect/datatypes/units/Volume.md))`()` Returns a hash code value for the object. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/health/connect/datatypes/units/Volume.md))`()` <br /> |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [getInLiters](Volume.md))`()` Returns volume in liters |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](Volume.md))`()` Returns a hash code value for the object. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](Volume.md))`()` <br /> |
 | --- | --- |
 
 ## Public methods
@@ -45,7 +45,7 @@ Compares this object with the specified object for order. Returns a negative int
 | Parameters ||
 |---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `o` | the object to be compared. |
-| `other` | [Volume](../android/health/connect/datatypes/units/Volume.md):the object to be compared. This value cannot be`null`. |
+| `other` | [Volume](Volume.md):the object to be compared. This value cannot be`null`. |
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
@@ -91,7 +91,7 @@ Creates a Volume object with the specified value in liters.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------|-----------------------------|
-| [Volume](../android/health/connect/datatypes/units/Volume.md) | This value cannot be`null`. |
+| [Volume](Volume.md) | This value cannot be`null`. |
 
 ### getInLiters
 

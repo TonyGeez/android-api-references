@@ -8,7 +8,7 @@ class SerialPort
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.hardware.serial.SerialPort](../android/hardware/serial/SerialPort.md) |
+| ↳ | [android.hardware.serial.SerialPort](SerialPort.md) |
 
 A class representing a Serial port.
 
@@ -182,9 +182,9 @@ Exceptions passed to `receiver` may be
 |---|---|
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): open flags that define read/write mode and other options. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/hardware/serial/SerialPort#OPEN_FLAG_READ_ONLY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/hardware/serial/SerialPort#OPEN_FLAG_WRITE_ONLY:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/hardware/serial/SerialPort#OPEN_FLAG_READ_WRITE:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/hardware/serial/SerialPort#OPEN_FLAG_NONBLOCK:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/hardware/serial/SerialPort#OPEN_FLAG_DATA_SYNC:kotlin.Int` - `https://developer.android.com/reference/kotlin/android/hardware/serial/SerialPort#OPEN_FLAG_SYNC:kotlin.Int` |
 | `exclusive` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): whether to request exclusive access to the port, preventing other processes from opening it. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): the executor used to run receiver. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): the executor used to run receiver. This value cannot be `null`. |
 | --- | --- |
-| `receiver` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [SerialPortResponse](../android/hardware/serial/SerialPortResponse.md)!, [Exception](../java/lang/Exception.md)!\>: the outcome receiver. This value cannot be `null`. |
+| `receiver` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [SerialPortResponse](../android/hardware/serial/SerialPortResponse.md)!, [Exception](../java.lang/Exception.md)!\>: the outcome receiver. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|

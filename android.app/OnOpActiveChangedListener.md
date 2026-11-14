@@ -65,7 +65,7 @@ open fun onOpActiveChanged(
 
 Similar to #onOpActiveChanged(java.lang.String,int,java.lang.String,java.lang.String,boolean,int,int), but also includes the virtual device id of the op is now active or inactive.
 
-Implement this method if callbacks are required on all devices. If not implemented explicitly, the default implementation will notify for op state changes on the default device [Context.DEVICE_ID_DEFAULT](../android/content/Context.md) only.
+Implement this method if callbacks are required on all devices. If not implemented explicitly, the default implementation will notify for op state changes on the default device [Context.DEVICE_ID_DEFAULT](../android.content/Context.md) only.
 
 If implemented, #onOpActiveChanged(java.lang.String,int,java.lang.String,java.lang.String,boolean,int,int) will not be called automatically.
 

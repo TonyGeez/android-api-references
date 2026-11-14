@@ -10,13 +10,13 @@ class TemporalAdjusters
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.time.temporal.TemporalAdjusters](../java/time/temporal/TemporalAdjusters.md) |
+| ↳ | [java.time.temporal.TemporalAdjusters](TemporalAdjusters.md) |
 
 Common and useful TemporalAdjusters.
 
 Adjusters are a key tool for modifying temporal objects. They exist to externalize the process of adjustment, permitting different approaches, as per the strategy design pattern. Examples might be an adjuster that sets the date avoiding weekends, or one that sets the date to the last day of the month.
 
-There are two equivalent ways of using a`TemporalAdjuster`. The first is to invoke the method on the interface directly. The second is to use [Temporal.with(TemporalAdjuster)](../java/time/temporal/Temporal.md)): 
+There are two equivalent ways of using a`TemporalAdjuster`. The first is to invoke the method on the interface directly. The second is to use [Temporal.with(TemporalAdjuster)](Temporal.md)): 
 
 ```kotlin
 // these two lines are equivalent, but the second approach is recommended
@@ -39,24 +39,24 @@ This class contains a standard set of adjusters, available as static methods. Th
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [TemporalAdjuster](../java/time/temporal/TemporalAdjuster.md)! | [dayOfWeekInMonth](../java/time/temporal/TemporalAdjusters.md))`(`ordinal:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dayOfWeek:` ` [DayOfWeek](../java/time/DayOfWeek.md)!`)` Returns the day-of-week in month adjuster, which returns a new date with the ordinal day-of-week based on the month. |
-| static [TemporalAdjuster](../java/time/temporal/TemporalAdjuster.md)! | [firstDayOfMonth](../java/time/temporal/TemporalAdjusters.md))`()` Returns the "first day of month" adjuster, which returns a new date set to the first day of the current month. |
-| static [TemporalAdjuster](../java/time/temporal/TemporalAdjuster.md)! | [firstDayOfNextMonth](../java/time/temporal/TemporalAdjusters.md))`()` Returns the "first day of next month" adjuster, which returns a new date set to the first day of the next month. |
+| static [TemporalAdjuster](TemporalAdjuster.md)! | [dayOfWeekInMonth](TemporalAdjusters.md))`(`ordinal:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dayOfWeek:` ` [DayOfWeek](../java.time/DayOfWeek.md)!`)` Returns the day-of-week in month adjuster, which returns a new date with the ordinal day-of-week based on the month. |
+| static [TemporalAdjuster](TemporalAdjuster.md)! | [firstDayOfMonth](TemporalAdjusters.md))`()` Returns the "first day of month" adjuster, which returns a new date set to the first day of the current month. |
+| static [TemporalAdjuster](TemporalAdjuster.md)! | [firstDayOfNextMonth](TemporalAdjusters.md))`()` Returns the "first day of next month" adjuster, which returns a new date set to the first day of the next month. |
 | --- | --- |
-| static [TemporalAdjuster](../java/time/temporal/TemporalAdjuster.md)! | [firstDayOfNextYear](../java/time/temporal/TemporalAdjusters.md))`()` Returns the "first day of next year" adjuster, which returns a new date set to the first day of the next year. |
-| static [TemporalAdjuster](../java/time/temporal/TemporalAdjuster.md)! | [firstDayOfYear](../java/time/temporal/TemporalAdjusters.md))`()` Returns the "first day of year" adjuster, which returns a new date set to the first day of the current year. |
-| static [TemporalAdjuster](../java/time/temporal/TemporalAdjuster.md)! | [firstInMonth](../java/time/temporal/TemporalAdjusters.md))`(`dayOfWeek:` ` [DayOfWeek](../java/time/DayOfWeek.md)!`)` Returns the first in month adjuster, which returns a new date in the same month with the first matching day-of-week. |
+| static [TemporalAdjuster](TemporalAdjuster.md)! | [firstDayOfNextYear](TemporalAdjusters.md))`()` Returns the "first day of next year" adjuster, which returns a new date set to the first day of the next year. |
+| static [TemporalAdjuster](TemporalAdjuster.md)! | [firstDayOfYear](TemporalAdjusters.md))`()` Returns the "first day of year" adjuster, which returns a new date set to the first day of the current year. |
+| static [TemporalAdjuster](TemporalAdjuster.md)! | [firstInMonth](TemporalAdjusters.md))`(`dayOfWeek:` ` [DayOfWeek](../java.time/DayOfWeek.md)!`)` Returns the first in month adjuster, which returns a new date in the same month with the first matching day-of-week. |
 | --- | --- |
-| static [TemporalAdjuster](../java/time/temporal/TemporalAdjuster.md)! | [lastDayOfMonth](../java/time/temporal/TemporalAdjusters.md))`()` Returns the "last day of month" adjuster, which returns a new date set to the last day of the current month. |
-| static [TemporalAdjuster](../java/time/temporal/TemporalAdjuster.md)! | [lastDayOfYear](../java/time/temporal/TemporalAdjusters.md))`()` Returns the "last day of year" adjuster, which returns a new date set to the last day of the current year. |
-| static [TemporalAdjuster](../java/time/temporal/TemporalAdjuster.md)! | [lastInMonth](../java/time/temporal/TemporalAdjusters.md))`(`dayOfWeek:` ` [DayOfWeek](../java/time/DayOfWeek.md)!`)` Returns the last in month adjuster, which returns a new date in the same month with the last matching day-of-week. |
+| static [TemporalAdjuster](TemporalAdjuster.md)! | [lastDayOfMonth](TemporalAdjusters.md))`()` Returns the "last day of month" adjuster, which returns a new date set to the last day of the current month. |
+| static [TemporalAdjuster](TemporalAdjuster.md)! | [lastDayOfYear](TemporalAdjusters.md))`()` Returns the "last day of year" adjuster, which returns a new date set to the last day of the current year. |
+| static [TemporalAdjuster](TemporalAdjuster.md)! | [lastInMonth](TemporalAdjusters.md))`(`dayOfWeek:` ` [DayOfWeek](../java.time/DayOfWeek.md)!`)` Returns the last in month adjuster, which returns a new date in the same month with the last matching day-of-week. |
 | --- | --- |
-| static [TemporalAdjuster](../java/time/temporal/TemporalAdjuster.md)! | [next](../java/time/temporal/TemporalAdjusters.md))`(`dayOfWeek:` ` [DayOfWeek](../java/time/DayOfWeek.md)!`)` Returns the next day-of-week adjuster, which adjusts the date to the first occurrence of the specified day-of-week after the date being adjusted. |
-| static [TemporalAdjuster](../java/time/temporal/TemporalAdjuster.md)! | [nextOrSame](../java/time/temporal/TemporalAdjusters.md))`(`dayOfWeek:` ` [DayOfWeek](../java/time/DayOfWeek.md)!`)` Returns the next-or-same day-of-week adjuster, which adjusts the date to the first occurrence of the specified day-of-week after the date being adjusted unless it is already on that day in which case the same object is returned. |
-| static [TemporalAdjuster](../java/time/temporal/TemporalAdjuster.md)! | [ofDateAdjuster](../java/time/temporal/TemporalAdjusters.md))`(`dateBasedAdjuster:` ` [UnaryOperator](../java/util/function/UnaryOperator.md)< [LocalDate](../java/time/LocalDate.md)!>!`)` Obtains a`TemporalAdjuster`that wraps a date adjuster. |
+| static [TemporalAdjuster](TemporalAdjuster.md)! | [next](TemporalAdjusters.md))`(`dayOfWeek:` ` [DayOfWeek](../java.time/DayOfWeek.md)!`)` Returns the next day-of-week adjuster, which adjusts the date to the first occurrence of the specified day-of-week after the date being adjusted. |
+| static [TemporalAdjuster](TemporalAdjuster.md)! | [nextOrSame](TemporalAdjusters.md))`(`dayOfWeek:` ` [DayOfWeek](../java.time/DayOfWeek.md)!`)` Returns the next-or-same day-of-week adjuster, which adjusts the date to the first occurrence of the specified day-of-week after the date being adjusted unless it is already on that day in which case the same object is returned. |
+| static [TemporalAdjuster](TemporalAdjuster.md)! | [ofDateAdjuster](TemporalAdjusters.md))`(`dateBasedAdjuster:` ` [UnaryOperator](../java.util.function/UnaryOperator.md)< [LocalDate](../java.time/LocalDate.md)!>!`)` Obtains a`TemporalAdjuster`that wraps a date adjuster. |
 | --- | --- |
-| static [TemporalAdjuster](../java/time/temporal/TemporalAdjuster.md)! | [previous](../java/time/temporal/TemporalAdjusters.md))`(`dayOfWeek:` ` [DayOfWeek](../java/time/DayOfWeek.md)!`)` Returns the previous day-of-week adjuster, which adjusts the date to the first occurrence of the specified day-of-week before the date being adjusted. |
-| static [TemporalAdjuster](../java/time/temporal/TemporalAdjuster.md)! | [previousOrSame](../java/time/temporal/TemporalAdjusters.md))`(`dayOfWeek:` ` [DayOfWeek](../java/time/DayOfWeek.md)!`)` Returns the previous-or-same day-of-week adjuster, which adjusts the date to the first occurrence of the specified day-of-week before the date being adjusted unless it is already on that day in which case the same object is returned. |
+| static [TemporalAdjuster](TemporalAdjuster.md)! | [previous](TemporalAdjusters.md))`(`dayOfWeek:` ` [DayOfWeek](../java.time/DayOfWeek.md)!`)` Returns the previous day-of-week adjuster, which adjusts the date to the first occurrence of the specified day-of-week before the date being adjusted. |
+| static [TemporalAdjuster](TemporalAdjuster.md)! | [previousOrSame](TemporalAdjusters.md))`(`dayOfWeek:` ` [DayOfWeek](../java.time/DayOfWeek.md)!`)` Returns the previous-or-same day-of-week adjuster, which adjusts the date to the first occurrence of the specified day-of-week before the date being adjusted unless it is already on that day in which case the same object is returned. |
 
 ## Public methods
 
@@ -91,11 +91,11 @@ The behavior is suitable for use with most calendar systems. It uses the`DAY_OF_
 | Parameters ||
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------|
 | `ordinal` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the week within the month, unbounded but typically from -5 to 5 |
-| `dayOfWeek` | [DayOfWeek](../java/time/DayOfWeek.md)!:the day-of-week, not null |
+| `dayOfWeek` | [DayOfWeek](../java.time/DayOfWeek.md)!:the day-of-week, not null |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------|---------------------------------------------|
-| [TemporalAdjuster](../java/time/temporal/TemporalAdjuster.md)! | the day-of-week in month adjuster, not null |
+| [TemporalAdjuster](TemporalAdjuster.md)! | the day-of-week in month adjuster, not null |
 
 ### firstDayOfMonth
 
@@ -120,7 +120,7 @@ temporal.with(DAY_OF_MONTH, 1);
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------|-------------------------------------------|
-| [TemporalAdjuster](../java/time/temporal/TemporalAdjuster.md)! | the first day-of-month adjuster, not null |
+| [TemporalAdjuster](TemporalAdjuster.md)! | the first day-of-month adjuster, not null |
 
 ### firstDayOfNextMonth
 
@@ -145,7 +145,7 @@ temporal.with(DAY_OF_MONTH, 1).plus(1, MONTHS);
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------|------------------------------------------------|
-| [TemporalAdjuster](../java/time/temporal/TemporalAdjuster.md)! | the first day of next month adjuster, not null |
+| [TemporalAdjuster](TemporalAdjuster.md)! | the first day of next month adjuster, not null |
 
 ### firstDayOfNextYear
 
@@ -169,7 +169,7 @@ temporal.with(DAY_OF_YEAR, 1).plus(1, YEARS);
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------|------------------------------------------------|
-| [TemporalAdjuster](../java/time/temporal/TemporalAdjuster.md)! | the first day of next month adjuster, not null |
+| [TemporalAdjuster](TemporalAdjuster.md)! | the first day of next month adjuster, not null |
 
 ### firstDayOfYear
 
@@ -194,7 +194,7 @@ temporal.with(DAY_OF_YEAR, 1);
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------|------------------------------------------|
-| [TemporalAdjuster](../java/time/temporal/TemporalAdjuster.md)! | the first day-of-year adjuster, not null |
+| [TemporalAdjuster](TemporalAdjuster.md)! | the first day-of-year adjuster, not null |
 
 ### firstInMonth
 
@@ -214,11 +214,11 @@ The behavior is suitable for use with most calendar systems. It uses the`DAY_OF_
 
 | Parameters ||
 |-------------|------------------------------------------------------------------------------------------------------------------|
-| `dayOfWeek` | [DayOfWeek](../java/time/DayOfWeek.md)!:the day-of-week, not null |
+| `dayOfWeek` | [DayOfWeek](../java.time/DayOfWeek.md)!:the day-of-week, not null |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------|---------------------------------------|
-| [TemporalAdjuster](../java/time/temporal/TemporalAdjuster.md)! | the first in month adjuster, not null |
+| [TemporalAdjuster](TemporalAdjuster.md)! | the first in month adjuster, not null |
 
 ### lastDayOfMonth
 
@@ -246,7 +246,7 @@ long lastDay = temporal.range(DAY_OF_MONTH).getMaximum();
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------|------------------------------------------|
-| [TemporalAdjuster](../java/time/temporal/TemporalAdjuster.md)! | the last day-of-month adjuster, not null |
+| [TemporalAdjuster](TemporalAdjuster.md)! | the last day-of-month adjuster, not null |
 
 ### lastDayOfYear
 
@@ -272,7 +272,7 @@ long lastDay = temporal.range(DAY_OF_YEAR).getMaximum();
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------|-----------------------------------------|
-| [TemporalAdjuster](../java/time/temporal/TemporalAdjuster.md)! | the last day-of-year adjuster, not null |
+| [TemporalAdjuster](TemporalAdjuster.md)! | the last day-of-year adjuster, not null |
 
 ### lastInMonth
 
@@ -292,11 +292,11 @@ The behavior is suitable for use with most calendar systems. It uses the`DAY_OF_
 
 | Parameters ||
 |-------------|------------------------------------------------------------------------------------------------------------------|
-| `dayOfWeek` | [DayOfWeek](../java/time/DayOfWeek.md)!:the day-of-week, not null |
+| `dayOfWeek` | [DayOfWeek](../java.time/DayOfWeek.md)!:the day-of-week, not null |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------|---------------------------------------|
-| [TemporalAdjuster](../java/time/temporal/TemporalAdjuster.md)! | the first in month adjuster, not null |
+| [TemporalAdjuster](TemporalAdjuster.md)! | the first in month adjuster, not null |
 
 ### next
 
@@ -317,11 +317,11 @@ The behavior is suitable for use with most calendar systems. It uses the`DAY_OF_
 
 | Parameters ||
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------|
-| `dayOfWeek` | [DayOfWeek](../java/time/DayOfWeek.md)!:the day-of-week to move the date to, not null |
+| `dayOfWeek` | [DayOfWeek](../java.time/DayOfWeek.md)!:the day-of-week to move the date to, not null |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------|-----------------------------------------|
-| [TemporalAdjuster](../java/time/temporal/TemporalAdjuster.md)! | the next day-of-week adjuster, not null |
+| [TemporalAdjuster](TemporalAdjuster.md)! | the next day-of-week adjuster, not null |
 
 ### nextOrSame
 
@@ -342,11 +342,11 @@ The behavior is suitable for use with most calendar systems. It uses the`DAY_OF_
 
 | Parameters ||
 |-------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dayOfWeek` | [DayOfWeek](../java/time/DayOfWeek.md)!:the day-of-week to check for or move the date to, not null |
+| `dayOfWeek` | [DayOfWeek](../java.time/DayOfWeek.md)!:the day-of-week to check for or move the date to, not null |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------|-------------------------------------------------|
-| [TemporalAdjuster](../java/time/temporal/TemporalAdjuster.md)! | the next-or-same day-of-week adjuster, not null |
+| [TemporalAdjuster](TemporalAdjuster.md)! | the next-or-same day-of-week adjuster, not null |
 
 ### ofDateAdjuster
 
@@ -370,11 +370,11 @@ In general, user-written adjusters should be static constants:
 
 | Parameters ||
 |---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dateBasedAdjuster` | [UnaryOperator](../java/util/function/UnaryOperator.md)\< [LocalDate](../java/time/LocalDate.md)!\>!:the date-based adjuster, not null |
+| `dateBasedAdjuster` | [UnaryOperator](../java.util.function/UnaryOperator.md)\< [LocalDate](../java.time/LocalDate.md)!\>!:the date-based adjuster, not null |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
-| [TemporalAdjuster](../java/time/temporal/TemporalAdjuster.md)! | the temporal adjuster wrapping on the date adjuster, not null |
+| [TemporalAdjuster](TemporalAdjuster.md)! | the temporal adjuster wrapping on the date adjuster, not null |
 
 ### previous
 
@@ -395,11 +395,11 @@ The behavior is suitable for use with most calendar systems. It uses the`DAY_OF_
 
 | Parameters ||
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------|
-| `dayOfWeek` | [DayOfWeek](../java/time/DayOfWeek.md)!:the day-of-week to move the date to, not null |
+| `dayOfWeek` | [DayOfWeek](../java.time/DayOfWeek.md)!:the day-of-week to move the date to, not null |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------|---------------------------------------------|
-| [TemporalAdjuster](../java/time/temporal/TemporalAdjuster.md)! | the previous day-of-week adjuster, not null |
+| [TemporalAdjuster](TemporalAdjuster.md)! | the previous day-of-week adjuster, not null |
 
 ### previousOrSame
 
@@ -420,8 +420,8 @@ The behavior is suitable for use with most calendar systems. It uses the`DAY_OF_
 
 | Parameters ||
 |-------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dayOfWeek` | [DayOfWeek](../java/time/DayOfWeek.md)!:the day-of-week to check for or move the date to, not null |
+| `dayOfWeek` | [DayOfWeek](../java.time/DayOfWeek.md)!:the day-of-week to check for or move the date to, not null |
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------|-----------------------------------------------------|
-| [TemporalAdjuster](../java/time/temporal/TemporalAdjuster.md)! | the previous-or-same day-of-week adjuster, not null |
+| [TemporalAdjuster](TemporalAdjuster.md)! | the previous-or-same day-of-week adjuster, not null |

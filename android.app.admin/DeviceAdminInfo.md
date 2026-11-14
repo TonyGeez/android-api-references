@@ -4,7 +4,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 
 # DeviceAdminInfo
 
-Kotlin| [Java](../android/app/admin/DeviceAdminInfo.md) 
+Kotlin| [Java](DeviceAdminInfo.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class DeviceAdminInfo : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.admin.DeviceAdminInfo](../android/app/admin/DeviceAdminInfo.md) |
+| ↳ | [android.app.admin.DeviceAdminInfo](DeviceAdminInfo.md) |
 
 This class is used to specify meta information of a device administrator component.
 
@@ -21,58 +21,58 @@ This class is used to specify meta information of a device administrator compone
 
 | Constants ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HEADLESS_DEVICE_OWNER_MODE_AFFILIATED](../android/app/admin/DeviceAdminInfo.md) Value for [getHeadlessDeviceOwnerMode](../android/app/admin/DeviceAdminInfo.md))which indicates that this DPC should be provisioned into "affiliated" mode when on a Headless System User Mode device. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HEADLESS_DEVICE_OWNER_MODE_SINGLE_USER](../android/app/admin/DeviceAdminInfo.md) Value for [getHeadlessDeviceOwnerMode](../android/app/admin/DeviceAdminInfo.md))which indicates that this DPC should be provisioned into the first secondary user when on a Headless System User Mode device. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HEADLESS_DEVICE_OWNER_MODE_UNSUPPORTED](../android/app/admin/DeviceAdminInfo.md) Value for [getHeadlessDeviceOwnerMode](../android/app/admin/DeviceAdminInfo.md))which indicates that this DPC should not be provisioned into Device Owner mode on a Headless System User Mode device. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HEADLESS_DEVICE_OWNER_MODE_AFFILIATED](DeviceAdminInfo.md) Value for [getHeadlessDeviceOwnerMode](DeviceAdminInfo.md))which indicates that this DPC should be provisioned into "affiliated" mode when on a Headless System User Mode device. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HEADLESS_DEVICE_OWNER_MODE_SINGLE_USER](DeviceAdminInfo.md) Value for [getHeadlessDeviceOwnerMode](DeviceAdminInfo.md))which indicates that this DPC should be provisioned into the first secondary user when on a Headless System User Mode device. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HEADLESS_DEVICE_OWNER_MODE_UNSUPPORTED](DeviceAdminInfo.md) Value for [getHeadlessDeviceOwnerMode](DeviceAdminInfo.md))which indicates that this DPC should not be provisioned into Device Owner mode on a Headless System User Mode device. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USES_ENCRYPTED_STORAGE](../android/app/admin/DeviceAdminInfo.md) A type of policy that this device admin can use: require encryption of stored data. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USES_POLICY_DISABLE_CAMERA](../android/app/admin/DeviceAdminInfo.md) A type of policy that this device admin can use: disables use of all device cameras. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USES_POLICY_DISABLE_KEYGUARD_FEATURES](../android/app/admin/DeviceAdminInfo.md) A type of policy that this device admin can use: disables use of keyguard features. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USES_ENCRYPTED_STORAGE](DeviceAdminInfo.md) A type of policy that this device admin can use: require encryption of stored data. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USES_POLICY_DISABLE_CAMERA](DeviceAdminInfo.md) A type of policy that this device admin can use: disables use of all device cameras. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USES_POLICY_DISABLE_KEYGUARD_FEATURES](DeviceAdminInfo.md) A type of policy that this device admin can use: disables use of keyguard features. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USES_POLICY_EXPIRE_PASSWORD](../android/app/admin/DeviceAdminInfo.md) A type of policy that this device admin can use: force the user to change their password after an administrator-defined time limit. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USES_POLICY_FORCE_LOCK](../android/app/admin/DeviceAdminInfo.md) A type of policy that this device admin can use: able to force the device to lock viaandroid. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USES_POLICY_LIMIT_PASSWORD](../android/app/admin/DeviceAdminInfo.md) A type of policy that this device admin can use: limit the passwords that the user can select, via [DevicePolicyManager.setPasswordQuality](../android/app/admin/DevicePolicyManager.md))and [DevicePolicyManager.setPasswordMinimumLength](../android/app/admin/DevicePolicyManager.md)). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USES_POLICY_EXPIRE_PASSWORD](DeviceAdminInfo.md) A type of policy that this device admin can use: force the user to change their password after an administrator-defined time limit. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USES_POLICY_FORCE_LOCK](DeviceAdminInfo.md) A type of policy that this device admin can use: able to force the device to lock viaandroid. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USES_POLICY_LIMIT_PASSWORD](DeviceAdminInfo.md) A type of policy that this device admin can use: limit the passwords that the user can select, via [DevicePolicyManager.setPasswordQuality](DevicePolicyManager.md))and [DevicePolicyManager.setPasswordMinimumLength](DevicePolicyManager.md)). |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USES_POLICY_RESET_PASSWORD](../android/app/admin/DeviceAdminInfo.md) A type of policy that this device admin can use: able to reset the user's password via [DevicePolicyManager.resetPassword](../android/app/admin/DevicePolicyManager.md)). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USES_POLICY_WATCH_LOGIN](../android/app/admin/DeviceAdminInfo.md) A type of policy that this device admin can use: able to watch login attempts from the user, via [DeviceAdminReceiver.ACTION_PASSWORD_FAILED](../android/app/admin/DeviceAdminReceiver.md), [DeviceAdminReceiver.ACTION_PASSWORD_SUCCEEDED](../android/app/admin/DeviceAdminReceiver.md), and [DevicePolicyManager.getCurrentFailedPasswordAttempts](../android/app/admin/DevicePolicyManager.md)). |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USES_POLICY_WIPE_DATA](../android/app/admin/DeviceAdminInfo.md) A type of policy that this device admin can use: able to factory reset the device, erasing all of the user's data, via android. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USES_POLICY_RESET_PASSWORD](DeviceAdminInfo.md) A type of policy that this device admin can use: able to reset the user's password via [DevicePolicyManager.resetPassword](DevicePolicyManager.md)). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USES_POLICY_WATCH_LOGIN](DeviceAdminInfo.md) A type of policy that this device admin can use: able to watch login attempts from the user, via [DeviceAdminReceiver.ACTION_PASSWORD_FAILED](DeviceAdminReceiver.md), [DeviceAdminReceiver.ACTION_PASSWORD_SUCCEEDED](DeviceAdminReceiver.md), and [DevicePolicyManager.getCurrentFailedPasswordAttempts](DevicePolicyManager.md)). |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [USES_POLICY_WIPE_DATA](DeviceAdminInfo.md) A type of policy that this device admin can use: able to factory reset the device, erasing all of the user's data, via android. |
 | --- | --- |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android.os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android.os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android.os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [DeviceAdminInfo](../android/app/admin/DeviceAdminInfo.md))`(`context:` ` [Context](../android/content/Context.md)!`, `resolveInfo:` ` [ResolveInfo](../android/content/pm/ResolveInfo.md)!`)` Constructor. |
+| [DeviceAdminInfo](DeviceAdminInfo.md))`(`context:` ` [Context](../android.content/Context.md)!`, `resolveInfo:` ` [ResolveInfo](../android.content.pm/ResolveInfo.md)!`)` Constructor. |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/app/admin/DeviceAdminInfo.md))`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dump](../android/app/admin/DeviceAdminInfo.md))`(`pw:` ` [Printer](../android/util/Printer.md)!`, `prefix:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
-| [ActivityInfo](../android/content/pm/ActivityInfo.md)! | [getActivityInfo](../android/app/admin/DeviceAdminInfo.md))`()` Return the raw information about the receiver implementing this device admin. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](DeviceAdminInfo.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [dump](DeviceAdminInfo.md))`(`pw:` ` [Printer](../android.util/Printer.md)!`, `prefix:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| [ActivityInfo](../android.content.pm/ActivityInfo.md)! | [getActivityInfo](DeviceAdminInfo.md))`()` Return the raw information about the receiver implementing this device admin. |
 | --- | --- |
-| [ComponentName](../android/content/ComponentName.md) | [getComponent](../android/app/admin/DeviceAdminInfo.md))`()` Return the component of the receiver that implements this device admin. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHeadlessDeviceOwnerMode](../android/app/admin/DeviceAdminInfo.md))`()` Returns the mode this DeviceAdmin wishes to use if provisioned as a Device Owner on a headless system user mode device. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPackageName](../android/app/admin/DeviceAdminInfo.md))`()` Return the . |
+| [ComponentName](../android.content/ComponentName.md) | [getComponent](DeviceAdminInfo.md))`()` Return the component of the receiver that implements this device admin. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHeadlessDeviceOwnerMode](DeviceAdminInfo.md))`()` Returns the mode this DeviceAdmin wishes to use if provisioned as a Device Owner on a headless system user mode device. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getPackageName](DeviceAdminInfo.md))`()` Return the . |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getReceiverName](../android/app/admin/DeviceAdminInfo.md))`()` Return the class name of the receiver component that implements this device admin. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getTagForPolicy](../android/app/admin/DeviceAdminInfo.md))`(`policyIdent:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the XML tag name for the given policy identifier. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isVisible](../android/app/admin/DeviceAdminInfo.md))`()` Returns whether this device admin would like to be visible to the user, even when it is not enabled. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getReceiverName](DeviceAdminInfo.md))`()` Return the class name of the receiver component that implements this device admin. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getTagForPolicy](DeviceAdminInfo.md))`(`policyIdent:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the XML tag name for the given policy identifier. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isVisible](DeviceAdminInfo.md))`()` Returns whether this device admin would like to be visible to the user, even when it is not enabled. |
 | --- | --- |
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [loadDescription](../android/app/admin/DeviceAdminInfo.md))`(`pm:` ` [PackageManager](../android/content/pm/PackageManager.md)!`)` Load user-visible description associated with this device admin. |
-| [Drawable](../android/graphics/drawable/Drawable.md)! | [loadIcon](../android/app/admin/DeviceAdminInfo.md))`(`pm:` ` [PackageManager](../android/content/pm/PackageManager.md)!`)` Load the user-displayed icon for this device admin. |
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [loadLabel](../android/app/admin/DeviceAdminInfo.md))`(`pm:` ` [PackageManager](../android/content/pm/PackageManager.md)!`)` Load the user-displayed label for this device admin. |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [loadDescription](DeviceAdminInfo.md))`(`pm:` ` [PackageManager](../android.content.pm/PackageManager.md)!`)` Load user-visible description associated with this device admin. |
+| [Drawable](../android.graphics.drawable/Drawable.md)! | [loadIcon](DeviceAdminInfo.md))`(`pm:` ` [PackageManager](../android.content.pm/PackageManager.md)!`)` Load the user-displayed icon for this device admin. |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | [loadLabel](DeviceAdminInfo.md))`(`pm:` ` [PackageManager](../android.content.pm/PackageManager.md)!`)` Load the user-displayed label for this device admin. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsTransferOwnership](../android/app/admin/DeviceAdminInfo.md))`()` Return true if this administrator can be a target in an ownership transfer. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/app/admin/DeviceAdminInfo.md))`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [usesPolicy](../android/app/admin/DeviceAdminInfo.md))`(`policyIdent:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return true if the device admin has requested that it be able to use the given policy control. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [supportsTransferOwnership](DeviceAdminInfo.md))`()` Return true if this administrator can be a target in an ownership transfer. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](DeviceAdminInfo.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [usesPolicy](DeviceAdminInfo.md))`(`policyIdent:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return true if the device admin has requested that it be able to use the given policy control. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/app/admin/DeviceAdminInfo.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Used to package this object into a [Parcel](../android/os/Parcel.md). |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](DeviceAdminInfo.md))`(`dest:` ` [Parcel](../android.os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Used to package this object into a [Parcel](../android.os/Parcel.md). |
 
 | Properties ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [DeviceAdminInfo](../android/app/admin/DeviceAdminInfo.md)!\> | [CREATOR](../android/app/admin/DeviceAdminInfo.md) Used to make this class parcelable. |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [DeviceAdminInfo](DeviceAdminInfo.md)!\> | [CREATOR](DeviceAdminInfo.md) Used to make this class parcelable. |
 
 ## Constants
 
@@ -84,7 +84,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val HEADLESS_DEVICE_OWNER_MODE_AFFILIATED: Int
 ```
 
-Value for [getHeadlessDeviceOwnerMode](../android/app/admin/DeviceAdminInfo.md))which indicates that this DPC should be provisioned into "affiliated" mode when on a Headless System User Mode device.
+Value for [getHeadlessDeviceOwnerMode](DeviceAdminInfo.md))which indicates that this DPC should be provisioned into "affiliated" mode when on a Headless System User Mode device.
 
 This mode adds a Profile Owner to all users other than the user the Device Owner is on.
 
@@ -100,7 +100,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 static val HEADLESS_DEVICE_OWNER_MODE_SINGLE_USER: Int
 ```
 
-Value for [getHeadlessDeviceOwnerMode](../android/app/admin/DeviceAdminInfo.md))which indicates that this DPC should be provisioned into the first secondary user when on a Headless System User Mode device.
+Value for [getHeadlessDeviceOwnerMode](DeviceAdminInfo.md))which indicates that this DPC should be provisioned into the first secondary user when on a Headless System User Mode device.
 
 This mode only allows a single secondary user on the device blocking the creation of additional secondary users.
 
@@ -116,7 +116,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 static val HEADLESS_DEVICE_OWNER_MODE_UNSUPPORTED: Int
 ```
 
-Value for [getHeadlessDeviceOwnerMode](../android/app/admin/DeviceAdminInfo.md))which indicates that this DPC should not be provisioned into Device Owner mode on a Headless System User Mode device. 
+Value for [getHeadlessDeviceOwnerMode](DeviceAdminInfo.md))which indicates that this DPC should not be provisioned into Device Owner mode on a Headless System User Mode device. 
 
  Value: 0
 
@@ -184,7 +184,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 static val USES_POLICY_FORCE_LOCK: Int
 ```
 
-A type of policy that this device admin can use: able to force the device to lock viaandroid.app.admin.DevicePolicyManager#lockNow or limit the maximum lock timeout for the device via [DevicePolicyManager.setMaximumTimeToLock](../android/app/admin/DevicePolicyManager.md)).
+A type of policy that this device admin can use: able to force the device to lock viaandroid.app.admin.DevicePolicyManager#lockNow or limit the maximum lock timeout for the device via [DevicePolicyManager.setMaximumTimeToLock](DevicePolicyManager.md)).
 
 To control this policy, the device admin must have a "force-lock" tag in the "uses-policies" section of its meta-data. 
 
@@ -198,7 +198,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 static val USES_POLICY_LIMIT_PASSWORD: Int
 ```
 
-A type of policy that this device admin can use: limit the passwords that the user can select, via [DevicePolicyManager.setPasswordQuality](../android/app/admin/DevicePolicyManager.md))and [DevicePolicyManager.setPasswordMinimumLength](../android/app/admin/DevicePolicyManager.md)).
+A type of policy that this device admin can use: limit the passwords that the user can select, via [DevicePolicyManager.setPasswordQuality](DevicePolicyManager.md))and [DevicePolicyManager.setPasswordMinimumLength](DevicePolicyManager.md)).
 
 To control this policy, the device admin must be a device owner or profile owner, and must have a "limit-password" tag in the "uses-policies" section of its meta-data. If used by a device owner, the policy only affects the primary user and its profiles, but not any secondary users on the device. 
 
@@ -212,7 +212,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 static val USES_POLICY_RESET_PASSWORD: Int
 ```
 
-A type of policy that this device admin can use: able to reset the user's password via [DevicePolicyManager.resetPassword](../android/app/admin/DevicePolicyManager.md)).
+A type of policy that this device admin can use: able to reset the user's password via [DevicePolicyManager.resetPassword](DevicePolicyManager.md)).
 
 To control this policy, the device admin must have a "reset-password" tag in the "uses-policies" section of its meta-data. 
 
@@ -226,7 +226,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 static val USES_POLICY_WATCH_LOGIN: Int
 ```
 
-A type of policy that this device admin can use: able to watch login attempts from the user, via [DeviceAdminReceiver.ACTION_PASSWORD_FAILED](../android/app/admin/DeviceAdminReceiver.md), [DeviceAdminReceiver.ACTION_PASSWORD_SUCCEEDED](../android/app/admin/DeviceAdminReceiver.md), and [DevicePolicyManager.getCurrentFailedPasswordAttempts](../android/app/admin/DevicePolicyManager.md)).
+A type of policy that this device admin can use: able to watch login attempts from the user, via [DeviceAdminReceiver.ACTION_PASSWORD_FAILED](DeviceAdminReceiver.md), [DeviceAdminReceiver.ACTION_PASSWORD_SUCCEEDED](DeviceAdminReceiver.md), and [DevicePolicyManager.getCurrentFailedPasswordAttempts](DevicePolicyManager.md)).
 
 To control this policy, the device admin must have a "watch-login" tag in the "uses-policies" section of its meta-data. 
 
@@ -262,8 +262,8 @@ Constructor.
 
 | Parameters ||
 |---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](../android/content/Context.md)!:The Context in which we are parsing the device admin. |
-| `resolveInfo` | [ResolveInfo](../android/content/pm/ResolveInfo.md)!:The ResolveInfo returned from the package manager about this device admin's component. |
+| `context` | [Context](../android.content/Context.md)!:The Context in which we are parsing the device admin. |
+| `resolveInfo` | [ResolveInfo](../android.content.pm/ResolveInfo.md)!:The ResolveInfo returned from the package manager about this device admin's component. |
 
 ## Public methods
 
@@ -277,7 +277,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) |
 
 ### dump
 
@@ -312,7 +312,7 @@ Return the component of the receiver that implements this device admin.
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------|-----------------------------|
-| [ComponentName](../android/content/ComponentName.md) | This value cannot be`null`. |
+| [ComponentName](../android.content/ComponentName.md) | This value cannot be`null`. |
 
 ### getHeadlessDeviceOwnerMode
 
@@ -326,7 +326,7 @@ Returns the mode this DeviceAdmin wishes to use if provisioned as a Device Owner
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.app.admin.DeviceAdminInfo#HEADLESS_DEVICE_OWNER_MODE_UNSUPPORTED](../android/app/admin/DeviceAdminInfo.md), [android.app.admin.DeviceAdminInfo#HEADLESS_DEVICE_OWNER_MODE_AFFILIATED](../android/app/admin/DeviceAdminInfo.md), or [android.app.admin.DeviceAdminInfo#HEADLESS_DEVICE_OWNER_MODE_SINGLE_USER](../android/app/admin/DeviceAdminInfo.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.app.admin.DeviceAdminInfo#HEADLESS_DEVICE_OWNER_MODE_UNSUPPORTED](DeviceAdminInfo.md), [android.app.admin.DeviceAdminInfo#HEADLESS_DEVICE_OWNER_MODE_AFFILIATED](DeviceAdminInfo.md), or [android.app.admin.DeviceAdminInfo#HEADLESS_DEVICE_OWNER_MODE_SINGLE_USER](DeviceAdminInfo.md) |
 
 ### getPackageName
 
@@ -356,7 +356,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 fun getTagForPolicy(policyIdent: Int): String!
 ```
 
-Return the XML tag name for the given policy identifier. Valid identifiers are as per [usesPolicy(int)](../android/app/admin/DeviceAdminInfo.md)). If the given identifier is not known, null is returned. 
+Return the XML tag name for the given policy identifier. Valid identifiers are as per [usesPolicy(int)](DeviceAdminInfo.md)). If the given identifier is not known, null is returned. 
 
 ### isVisible
 
@@ -380,7 +380,7 @@ Load user-visible description associated with this device admin.
 
 | Parameters ||
 |------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `pm` | [PackageManager](../android/content/pm/PackageManager.md)!:Supply a PackageManager used to load the device admin's resources. |
+| `pm` | [PackageManager](../android.content.pm/PackageManager.md)!:Supply a PackageManager used to load the device admin's resources. |
 
 ### loadIcon
 
@@ -394,7 +394,7 @@ Load the user-displayed icon for this device admin.
 
 | Parameters ||
 |------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `pm` | [PackageManager](../android/content/pm/PackageManager.md)!:Supply a PackageManager used to load the device admin's resources. |
+| `pm` | [PackageManager](../android.content.pm/PackageManager.md)!:Supply a PackageManager used to load the device admin's resources. |
 
 ### loadLabel
 
@@ -408,7 +408,7 @@ Load the user-displayed label for this device admin.
 
 | Parameters ||
 |------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `pm` | [PackageManager](../android/content/pm/PackageManager.md)!:Supply a PackageManager used to load the device admin's resources. |
+| `pm` | [PackageManager](../android.content.pm/PackageManager.md)!:Supply a PackageManager used to load the device admin's resources. |
 
 ### supportsTransferOwnership
 
@@ -440,7 +440,7 @@ Added in [API level 8](https://developer.android.com/guide/topics/manifest/uses-
 fun usesPolicy(policyIdent: Int): Boolean
 ```
 
-Return true if the device admin has requested that it be able to use the given policy control. The possible policy identifier inputs are: [USES_POLICY_LIMIT_PASSWORD](../android/app/admin/DeviceAdminInfo.md), [USES_POLICY_WATCH_LOGIN](../android/app/admin/DeviceAdminInfo.md), [USES_POLICY_RESET_PASSWORD](../android/app/admin/DeviceAdminInfo.md), [USES_POLICY_FORCE_LOCK](../android/app/admin/DeviceAdminInfo.md), [USES_POLICY_WIPE_DATA](../android/app/admin/DeviceAdminInfo.md), [USES_POLICY_EXPIRE_PASSWORD](../android/app/admin/DeviceAdminInfo.md), [USES_ENCRYPTED_STORAGE](../android/app/admin/DeviceAdminInfo.md), [USES_POLICY_DISABLE_CAMERA](../android/app/admin/DeviceAdminInfo.md). 
+Return true if the device admin has requested that it be able to use the given policy control. The possible policy identifier inputs are: [USES_POLICY_LIMIT_PASSWORD](DeviceAdminInfo.md), [USES_POLICY_WATCH_LOGIN](DeviceAdminInfo.md), [USES_POLICY_RESET_PASSWORD](DeviceAdminInfo.md), [USES_POLICY_FORCE_LOCK](DeviceAdminInfo.md), [USES_POLICY_WIPE_DATA](DeviceAdminInfo.md), [USES_POLICY_EXPIRE_PASSWORD](DeviceAdminInfo.md), [USES_ENCRYPTED_STORAGE](DeviceAdminInfo.md), [USES_POLICY_DISABLE_CAMERA](DeviceAdminInfo.md). 
 
 ### writeToParcel
 
@@ -453,11 +453,11 @@ fun writeToParcel(
 ): Unit
 ```
 
-Used to package this object into a [Parcel](../android/os/Parcel.md).
+Used to package this object into a [Parcel](../android.os/Parcel.md).
 
 | Parameters ||
 |---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](../android/os/Parcel.md):The [Parcel](../android/os/Parcel.md) to be written. |
+| `dest` | [Parcel](../android.os/Parcel.md):The [Parcel](../android.os/Parcel.md) to be written. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The flags used for parceling. |
 
 ## Properties

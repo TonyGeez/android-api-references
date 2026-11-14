@@ -4,7 +4,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 
 # ResourceBusyException
 
-Kotlin| [Java](../android/media/ResourceBusyException.md) 
+Kotlin| [Java](ResourceBusyException.md) 
 | --- | --- |
 
 ```
@@ -14,10 +14,10 @@ class ResourceBusyException : MediaDrmException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
-| | | ↳ | [android.media.MediaDrmException](../android/media/MediaDrmException.md) ||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) |||
+| | | ↳ | [android.media.MediaDrmException](MediaDrmException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.media.ResourceBusyException](../android/media/ResourceBusyException.md) |
+| | | | ↳ | [android.media.ResourceBusyException](ResourceBusyException.md) |
 
 Exception thrown when an operation on a MediaDrm object is attempted and hardware resources are not available, due to being in use.
 
@@ -25,11 +25,11 @@ Exception thrown when an operation on a MediaDrm object is attempted and hardwar
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ResourceBusyException](../android/media/ResourceBusyException.md))`(`detailMessage:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| [ResourceBusyException](ResourceBusyException.md))`(`detailMessage:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
 
 | Inherited functions ||
 |---|---|
-| From class [MediaDrmException](../android/media/MediaDrmException.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getErrorContext](../android/media/MediaDrmException.md))`()` <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOemError](../android/media/MediaDrmException.md))`()` <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getVendorError](../android/media/MediaDrmException.md))`()` <br /> | ||
+| From class [MediaDrmException](MediaDrmException.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getErrorContext](MediaDrmException.md))`()` <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOemError](MediaDrmException.md))`()` <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getVendorError](MediaDrmException.md))`()` <br /> | ||
 
 ## Public constructors
 

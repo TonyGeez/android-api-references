@@ -15,7 +15,7 @@ interface AccessibilityServicesStateChangeListener
 
 Listener for changes to the state of accessibility services.
 
-This refers to changes to [AccessibilityServiceInfo](../android/accessibilityservice/AccessibilityServiceInfo.md), including:
+This refers to changes to [AccessibilityServiceInfo](../android.accessibilityservice/AccessibilityServiceInfo.md), including:
 
 - Whenever a service is enabled or disabled, or its info has been set or removed.
 - Whenever a metadata attribute of any running service's info changes.
@@ -24,7 +24,7 @@ This refers to changes to [AccessibilityServiceInfo](../android/accessibilityser
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAccessibilityServicesStateChanged](../android/view/accessibility/AccessibilityManager.AccessibilityServicesStateChangeListener.md))`(`manager:` ` [AccessibilityManager](../android/view/accessibility/AccessibilityManager.md)`)` Called when the state of accessibility services changes. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onAccessibilityServicesStateChanged](../android/view/accessibility/AccessibilityManager.AccessibilityServicesStateChangeListener.md))`(`manager:` ` [AccessibilityManager](AccessibilityManager.md)`)` Called when the state of accessibility services changes. |
 
 ## Public methods
 
@@ -40,4 +40,4 @@ Called when the state of accessibility services changes.
 
 | Parameters ||
 |-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `manager` | [AccessibilityManager](../android/view/accessibility/AccessibilityManager.md):The manager that is calling back This value cannot be`null`. |
+| `manager` | [AccessibilityManager](AccessibilityManager.md):The manager that is calling back This value cannot be`null`. |

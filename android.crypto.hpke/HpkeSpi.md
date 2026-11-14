@@ -4,14 +4,14 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 
 # HpkeSpi
 
-Kotlin| [Java](../android/crypto/hpke/HpkeSpi.md) 
+Kotlin| [Java](HpkeSpi.md) 
 | --- | --- |
 
 ```
 interface HpkeSpi
 ```
 
-| [android.crypto.hpke.HpkeSpi](../android/crypto/hpke/HpkeSpi.md) |
+| [android.crypto.hpke.HpkeSpi](HpkeSpi.md) |
 
 Service Provider Interface for HPKE client API classes to communicate with implementations of HPKE as described in RFC 9180.
 
@@ -21,15 +21,15 @@ There are no standard Java Cryptography Architecture names or interface classes 
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [engineExport](../android/crypto/hpke/HpkeSpi.md))`(`length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `context:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?`)` Exports secret key material from this SPI as described in RFC 9180. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInitRecipient](../android/crypto/hpke/HpkeSpi.md))`(`encapsulated:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`, `recipientKey:` ` [PrivateKey](../java/security/PrivateKey.md)`, `info:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?`, `senderKey:` ` [PublicKey](../java/security/PublicKey.md)?`, `psk:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?`, `psk_id:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?`)` Initialises an HPKE SPI in one of the recipient modes described in RFC 9180. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInitSender](../android/crypto/hpke/HpkeSpi.md))`(`recipientKey:` ` [PublicKey](../java/security/PublicKey.md)`, `info:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?`, `senderKey:` ` [PrivateKey](../java/security/PrivateKey.md)?`, `psk:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?`, `psk_id:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?`)` Initialises an HPKE SPI in one of the sender modes described in RFC 9180. |
+| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [engineExport](HpkeSpi.md))`(`length:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `context:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?`)` Exports secret key material from this SPI as described in RFC 9180. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInitRecipient](HpkeSpi.md))`(`encapsulated:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`, `recipientKey:` ` [PrivateKey](../java.security/PrivateKey.md)`, `info:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?`, `senderKey:` ` [PublicKey](../java.security/PublicKey.md)?`, `psk:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?`, `psk_id:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?`)` Initialises an HPKE SPI in one of the recipient modes described in RFC 9180. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInitSender](HpkeSpi.md))`(`recipientKey:` ` [PublicKey](../java.security/PublicKey.md)`, `info:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?`, `senderKey:` ` [PrivateKey](../java.security/PrivateKey.md)?`, `psk:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?`, `psk_id:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?`)` Initialises an HPKE SPI in one of the sender modes described in RFC 9180. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInitSenderWithSeed](../android/crypto/hpke/HpkeSpi.md))`(`recipientKey:` ` [PublicKey](../java/security/PublicKey.md)`, `info:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?`, `senderKey:` ` [PrivateKey](../java/security/PrivateKey.md)?`, `psk:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?`, `psk_id:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?`, `sKe:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`)` Initialises an HPKE SPI in one of the sender modes described in RFC 9180 with a predefined random seed to allow testing against known test vectors. |
-| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [engineOpen](../android/crypto/hpke/HpkeSpi.md))`(`ciphertext:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`, `aad:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?`)` Opens a message, using the internal key schedule maintained by an HPKE recipient SPI. |
-| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [engineSeal](../android/crypto/hpke/HpkeSpi.md))`(`plaintext:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`, `aad:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?`)` Seals a message, using the internal key schedule maintained by an HPKE sender SPI. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInitSenderWithSeed](HpkeSpi.md))`(`recipientKey:` ` [PublicKey](../java.security/PublicKey.md)`, `info:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?`, `senderKey:` ` [PrivateKey](../java.security/PrivateKey.md)?`, `psk:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?`, `psk_id:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?`, `sKe:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`)` Initialises an HPKE SPI in one of the sender modes described in RFC 9180 with a predefined random seed to allow testing against known test vectors. |
+| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [engineOpen](HpkeSpi.md))`(`ciphertext:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`, `aad:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?`)` Opens a message, using the internal key schedule maintained by an HPKE recipient SPI. |
+| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [engineSeal](HpkeSpi.md))`(`plaintext:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)`, `aad:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?`)` Seals a message, using the internal key schedule maintained by an HPKE sender SPI. |
 | --- | --- |
-| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [getEncapsulated](../android/crypto/hpke/HpkeSpi.md))`()` Returns the encapsulated key material for an HPKE sender. |
+| abstract [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | [getEncapsulated](HpkeSpi.md))`()` Returns the encapsulated key material for an HPKE sender. |
 
 ## Public methods
 
@@ -87,15 +87,15 @@ If neither is supplied then no sender authentication will be used (MODE_BASE).
 
 Note that only base mode is currently supported on Android.
 
-Public and private keys must be supplied in a format that can be used by the implementation. An instance of the`"XDH"` [java.security.KeyFactory](../java/security/KeyFactory.md) can be used to translate`KeySpecs`or keys from another [java.security.Provider](../java/security/Provider.md)
+Public and private keys must be supplied in a format that can be used by the implementation. An instance of the`"XDH"` [java.security.KeyFactory](../java.security/KeyFactory.md) can be used to translate`KeySpecs`or keys from another [java.security.Provider](../java.security/Provider.md)
 
 | Parameters ||
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `encapsulated` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html):encapsulated ephemeral key from a sender This value cannot be`null`. |
-| `recipientKey` | [PrivateKey](../java/security/PrivateKey.md):private key of the recipient This value cannot be`null`. |
+| `recipientKey` | [PrivateKey](../java.security/PrivateKey.md):private key of the recipient This value cannot be`null`. |
 | `info` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?:application-supplied information, may be null or empty |
 | --- | --- |
-| `senderKey` | [PublicKey](../java/security/PublicKey.md)?:public key of sender, for asymmetric auth modes only, else null |
+| `senderKey` | [PublicKey](../java.security/PublicKey.md)?:public key of sender, for asymmetric auth modes only, else null |
 | `psk` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?:pre-shared key, for PSK auth modes only, else null |
 | `psk_id` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?:pre-shared key ID, for PSK auth modes only, else null |
 | --- | --- |
@@ -133,13 +133,13 @@ If neither is supplied then no sender authentication will be used (MODE_BASE).
 
 Note that only base mode is currently supported on Android.
 
-Public and private keys must be supplied in a format that can be used by the implementation. An instance of the`"XDH"` [java.security.KeyFactory](../java/security/KeyFactory.md) can be used to translate`KeySpecs`or keys from another [java.security.Provider](../java/security/Provider.md)
+Public and private keys must be supplied in a format that can be used by the implementation. An instance of the`"XDH"` [java.security.KeyFactory](../java.security/KeyFactory.md) can be used to translate`KeySpecs`or keys from another [java.security.Provider](../java.security/Provider.md)
 
 | Parameters ||
 |----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `recipientKey` | [PublicKey](../java/security/PublicKey.md):public key of the recipient This value cannot be`null`. |
+| `recipientKey` | [PublicKey](../java.security/PublicKey.md):public key of the recipient This value cannot be`null`. |
 | `info` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?:application-supplied information, may be null or empty |
-| `senderKey` | [PrivateKey](../java/security/PrivateKey.md)?:private key of the sender, for symmetric auth modes only, else null |
+| `senderKey` | [PrivateKey](../java.security/PrivateKey.md)?:private key of the sender, for symmetric auth modes only, else null |
 | --- | --- |
 | `psk` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?:pre-shared key, for PSK auth modes only, else null |
 | `psk_id` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?:pre-shared key ID, for PSK auth modes only, else null |
@@ -180,13 +180,13 @@ If neither is supplied then no sender authentication will be used (MODE_BASE).
 
 Note that only base mode is currently supported on Android.
 
-Public and private keys must be supplied in a format that can be used by the implementation. An instance of the`"XDH"` [java.security.KeyFactory](../java/security/KeyFactory.md) can be used to translate`KeySpecs`or keys from another [java.security.Provider](../java/security/Provider.md)
+Public and private keys must be supplied in a format that can be used by the implementation. An instance of the`"XDH"` [java.security.KeyFactory](../java.security/KeyFactory.md) can be used to translate`KeySpecs`or keys from another [java.security.Provider](../java.security/Provider.md)
 
 | Parameters ||
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `recipientKey` | [PublicKey](../java/security/PublicKey.md):public key of the recipient This value cannot be`null`. |
+| `recipientKey` | [PublicKey](../java.security/PublicKey.md):public key of the recipient This value cannot be`null`. |
 | `info` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?:application-supplied information, may be null or empty |
-| `senderKey` | [PrivateKey](../java/security/PrivateKey.md)?:private key of the sender, for symmetric auth modes only, else null |
+| `senderKey` | [PrivateKey](../java.security/PrivateKey.md)?:private key of the sender, for symmetric auth modes only, else null |
 | --- | --- |
 | `psk` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?:pre-shared key, for PSK auth modes only, else null |
 | `psk_id` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?:pre-shared key ID, for PSK auth modes only, else null |

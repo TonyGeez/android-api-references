@@ -4,7 +4,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 
 # UniversalTimeScale
 
-Kotlin| [Java](../android/icu/util/UniversalTimeScale.md) 
+Kotlin| [Java](UniversalTimeScale.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class UniversalTimeScale
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.icu.util.UniversalTimeScale](../android/icu/util/UniversalTimeScale.md) |
+| ↳ | [android.icu.util.UniversalTimeScale](UniversalTimeScale.md) |
 
 There are quite a few different conventions for binary datetime, depending on different platforms and protocols. Some of these have severe drawbacks. For example, people using Unix time (seconds since Jan 1, 1970, usually in a 32-bit integer) think that they are safe until near the year 2038. But cases can and do arise where arithmetic manipulations causes serious problems. Consider the computation of the average of two datetimes, for example: if one calculates them with`averageTime = (time1 + time2)/2`, there will be overflow even with dates beginning in 2004. Moreover, even if these problems don't occur, there is the issue of conversion back and forth between different systems.
 
@@ -29,43 +29,43 @@ For more details and background, see the [Universal Time Scale](https://unicode-
 
 | Constants ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DB2_TIME](../android/icu/util/UniversalTimeScale.md) Used in DB2. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DOTNET_DATE_TIME](../android/icu/util/UniversalTimeScale.md) Used in the . |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EPOCH_OFFSET_PLUS_1_VALUE](../android/icu/util/UniversalTimeScale.md) The constant used to select the epoch plus one value for a time scale. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DB2_TIME](UniversalTimeScale.md) Used in DB2. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DOTNET_DATE_TIME](UniversalTimeScale.md) Used in the . |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EPOCH_OFFSET_PLUS_1_VALUE](UniversalTimeScale.md) The constant used to select the epoch plus one value for a time scale. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EPOCH_OFFSET_VALUE](../android/icu/util/UniversalTimeScale.md) The constant used to select the epoch offset value for a time scale. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXCEL_TIME](../android/icu/util/UniversalTimeScale.md) Used in Excel. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FROM_MAX_VALUE](../android/icu/util/UniversalTimeScale.md) The constant used to select the maximum from value for a time scale. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EPOCH_OFFSET_VALUE](UniversalTimeScale.md) The constant used to select the epoch offset value for a time scale. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXCEL_TIME](UniversalTimeScale.md) Used in Excel. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FROM_MAX_VALUE](UniversalTimeScale.md) The constant used to select the maximum from value for a time scale. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FROM_MIN_VALUE](../android/icu/util/UniversalTimeScale.md) The constant used to select the minimum from value for a time scale. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ICU4C_TIME](../android/icu/util/UniversalTimeScale.md) Used in the ICU4C. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [JAVA_TIME](../android/icu/util/UniversalTimeScale.md) Used in the JDK. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [FROM_MIN_VALUE](UniversalTimeScale.md) The constant used to select the minimum from value for a time scale. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [ICU4C_TIME](UniversalTimeScale.md) Used in the ICU4C. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [JAVA_TIME](UniversalTimeScale.md) Used in the JDK. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAC_OLD_TIME](../android/icu/util/UniversalTimeScale.md) Used in older Macintosh systems. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAC_TIME](../android/icu/util/UniversalTimeScale.md) Used in the JDK. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAX_SCALE](../android/icu/util/UniversalTimeScale.md) This is the first unused time scale value. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAC_OLD_TIME](UniversalTimeScale.md) Used in older Macintosh systems. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAC_TIME](UniversalTimeScale.md) Used in the JDK. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MAX_SCALE](UniversalTimeScale.md) This is the first unused time scale value. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TO_MAX_VALUE](../android/icu/util/UniversalTimeScale.md) The constant used to select the maximum to value for a time scale. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TO_MIN_VALUE](../android/icu/util/UniversalTimeScale.md) The constant used to select the minimum to value for a time scale. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNITS_VALUE](../android/icu/util/UniversalTimeScale.md) The constant used to select the units value for a time scale. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TO_MAX_VALUE](UniversalTimeScale.md) The constant used to select the maximum to value for a time scale. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [TO_MIN_VALUE](UniversalTimeScale.md) The constant used to select the minimum to value for a time scale. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNITS_VALUE](UniversalTimeScale.md) The constant used to select the units value for a time scale. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNIX_MICROSECONDS_TIME](../android/icu/util/UniversalTimeScale.md) Data is a`long`. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNIX_TIME](../android/icu/util/UniversalTimeScale.md) Used in Unix systems. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WINDOWS_FILE_TIME](../android/icu/util/UniversalTimeScale.md) Used in Windows for file times. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNIX_MICROSECONDS_TIME](UniversalTimeScale.md) Data is a`long`. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [UNIX_TIME](UniversalTimeScale.md) Used in Unix systems. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [WINDOWS_FILE_TIME](UniversalTimeScale.md) Used in Windows for file times. |
 | --- | --- |
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [BigDecimal](../android/icu/math/BigDecimal.md)! | [bigDecimalFrom](../android/icu/util/UniversalTimeScale.md))`(`otherTime:` ` [BigDecimal](../android/icu/math/BigDecimal.md)!`, `timeScale:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Convert a`BigDecimal`datetime from the given time scale to the universal time scale. |
-| static [BigDecimal](../android/icu/math/BigDecimal.md)! | [bigDecimalFrom](../android/icu/util/UniversalTimeScale.md))`(`otherTime:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `timeScale:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Convert a`double`datetime from the given time scale to the universal time scale. |
-| static [BigDecimal](../android/icu/math/BigDecimal.md)! | [bigDecimalFrom](../android/icu/util/UniversalTimeScale.md))`(`otherTime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `timeScale:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Convert a`long`datetime from the given time scale to the universal time scale. |
+| static [BigDecimal](../android.icu.math/BigDecimal.md)! | [bigDecimalFrom](UniversalTimeScale.md))`(`otherTime:` ` [BigDecimal](../android.icu.math/BigDecimal.md)!`, `timeScale:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Convert a`BigDecimal`datetime from the given time scale to the universal time scale. |
+| static [BigDecimal](../android.icu.math/BigDecimal.md)! | [bigDecimalFrom](UniversalTimeScale.md))`(`otherTime:` ` [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)`, `timeScale:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Convert a`double`datetime from the given time scale to the universal time scale. |
+| static [BigDecimal](../android.icu.math/BigDecimal.md)! | [bigDecimalFrom](UniversalTimeScale.md))`(`otherTime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `timeScale:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Convert a`long`datetime from the given time scale to the universal time scale. |
 | --- | --- |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [from](../android/icu/util/UniversalTimeScale.md))`(`otherTime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `timeScale:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Convert a`long`datetime from the given time scale to the universal time scale. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTimeScaleValue](../android/icu/util/UniversalTimeScale.md))`(`scale:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get a value associated with a particular time scale. |
-| static [BigDecimal](../android/icu/math/BigDecimal.md)! | [toBigDecimal](../android/icu/util/UniversalTimeScale.md))`(`universalTime:` ` [BigDecimal](../android/icu/math/BigDecimal.md)!`, `timeScale:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Convert a datetime from the universal time scale to a`BigDecimal`in the given time scale. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [from](UniversalTimeScale.md))`(`otherTime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `timeScale:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Convert a`long`datetime from the given time scale to the universal time scale. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getTimeScaleValue](UniversalTimeScale.md))`(`scale:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `value:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get a value associated with a particular time scale. |
+| static [BigDecimal](../android.icu.math/BigDecimal.md)! | [toBigDecimal](UniversalTimeScale.md))`(`universalTime:` ` [BigDecimal](../android.icu.math/BigDecimal.md)!`, `timeScale:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Convert a datetime from the universal time scale to a`BigDecimal`in the given time scale. |
 | --- | --- |
-| static [BigDecimal](../android/icu/math/BigDecimal.md)! | [toBigDecimal](../android/icu/util/UniversalTimeScale.md))`(`universalTime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `timeScale:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Convert a datetime from the universal time scale to a`BigDecimal`in the given time scale. |
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toLong](../android/icu/util/UniversalTimeScale.md))`(`universalTime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `timeScale:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Convert a datetime from the universal time scale stored as a`BigDecimal`to a`long`in the given time scale. |
+| static [BigDecimal](../android.icu.math/BigDecimal.md)! | [toBigDecimal](UniversalTimeScale.md))`(`universalTime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `timeScale:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Convert a datetime from the universal time scale to a`BigDecimal`in the given time scale. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [toLong](UniversalTimeScale.md))`(`universalTime:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `timeScale:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Convert a datetime from the universal time scale stored as a`BigDecimal`to a`long`in the given time scale. |
 
 ## Constants
 
@@ -107,7 +107,7 @@ The constant used to select the epoch plus one value for a time scale. NOTE: Thi
 
 **See Also**
 
-- [#getTimeScaleValue](../android/icu/util/UniversalTimeScale.md)) 
+- [#getTimeScaleValue](UniversalTimeScale.md)) 
 
 ### EPOCH_OFFSET_VALUE
 
@@ -123,7 +123,7 @@ The constant used to select the epoch offset value for a time scale.
 
 **See Also**
 
-- [#getTimeScaleValue](../android/icu/util/UniversalTimeScale.md)) 
+- [#getTimeScaleValue](UniversalTimeScale.md)) 
 
 ### EXCEL_TIME
 
@@ -151,7 +151,7 @@ The constant used to select the maximum from value for a time scale.
 
 **See Also**
 
-- [#getTimeScaleValue](../android/icu/util/UniversalTimeScale.md)) 
+- [#getTimeScaleValue](UniversalTimeScale.md)) 
 
 ### FROM_MIN_VALUE
 
@@ -167,7 +167,7 @@ The constant used to select the minimum from value for a time scale.
 
 **See Also**
 
-- [#getTimeScaleValue](../android/icu/util/UniversalTimeScale.md)) 
+- [#getTimeScaleValue](UniversalTimeScale.md)) 
 
 ### ICU4C_TIME
 
@@ -246,7 +246,7 @@ The constant used to select the maximum to value for a time scale.
 
 **See Also**
 
-- [#getTimeScaleValue](../android/icu/util/UniversalTimeScale.md)) 
+- [#getTimeScaleValue](UniversalTimeScale.md)) 
 
 ### TO_MIN_VALUE
 
@@ -262,7 +262,7 @@ The constant used to select the minimum to value for a time scale.
 
 **See Also**
 
-- [#getTimeScaleValue](../android/icu/util/UniversalTimeScale.md)) 
+- [#getTimeScaleValue](UniversalTimeScale.md)) 
 
 ### UNITS_VALUE
 
@@ -329,12 +329,12 @@ Convert a`BigDecimal`datetime from the given time scale to the universal time sc
 
 | Parameters ||
 |-------------|-------------------------------------------------------------------------------------------------------------------------|
-| `otherTime` | [BigDecimal](../android/icu/math/BigDecimal.md)!:The`BigDecimal`datetime |
+| `otherTime` | [BigDecimal](../android.icu.math/BigDecimal.md)!:The`BigDecimal`datetime |
 | `timeScale` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The time scale to convert from |
 
 | Return ||
 |-------------------------------------------------------------------------------------------------|----------------------------------------------------|
-| [BigDecimal](../android/icu/math/BigDecimal.md)! | The datetime converted to the universal time scale |
+| [BigDecimal](../android.icu.math/BigDecimal.md)! | The datetime converted to the universal time scale |
 
 ### bigDecimalFrom
 
@@ -356,7 +356,7 @@ Convert a`double`datetime from the given time scale to the universal time scale.
 
 | Return ||
 |-------------------------------------------------------------------------------------------------|----------------------------------------------------|
-| [BigDecimal](../android/icu/math/BigDecimal.md)! | The datetime converted to the universal time scale |
+| [BigDecimal](../android.icu.math/BigDecimal.md)! | The datetime converted to the universal time scale |
 
 ### bigDecimalFrom
 
@@ -378,7 +378,7 @@ Convert a`long`datetime from the given time scale to the universal time scale. A
 
 | Return ||
 |-------------------------------------------------------------------------------------------------|----------------------------------------------------|
-| [BigDecimal](../android/icu/math/BigDecimal.md)! | The datetime converted to the universal time scale |
+| [BigDecimal](../android.icu.math/BigDecimal.md)! | The datetime converted to the universal time scale |
 
 ### from
 
@@ -439,12 +439,12 @@ Convert a datetime from the universal time scale to a`BigDecimal`in the given ti
 
 | Parameters ||
 |-----------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| `universalTime` | [BigDecimal](../android/icu/math/BigDecimal.md)!:The datetime in the universal time scale |
+| `universalTime` | [BigDecimal](../android.icu.math/BigDecimal.md)!:The datetime in the universal time scale |
 | `timeScale` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The time scale to convert to |
 
 | Return ||
 |-------------------------------------------------------------------------------------------------|------------------------------------------------|
-| [BigDecimal](../android/icu/math/BigDecimal.md)! | The datetime converted to the given time scale |
+| [BigDecimal](../android.icu.math/BigDecimal.md)! | The datetime converted to the given time scale |
 
 ### toBigDecimal
 
@@ -466,7 +466,7 @@ Convert a datetime from the universal time scale to a`BigDecimal`in the given ti
 
 | Return ||
 |-------------------------------------------------------------------------------------------------|------------------------------------------------|
-| [BigDecimal](../android/icu/math/BigDecimal.md)! | The datetime converted to the given time scale |
+| [BigDecimal](../android.icu.math/BigDecimal.md)! | The datetime converted to the given time scale |
 
 ### toLong
 

@@ -17,7 +17,7 @@ A listener interface to send optional app-specific hints when creating a `https:
 
 | Public methods ||
 |---|---|
-| abstract [Bundle](../android/os/Bundle.md)? | `https://developer.android.com/reference/kotlin/android/media/MediaRouter2.OnGetControllerHintsListener#onGetControllerHints(android.media.MediaRoute2Info)(route: https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info)` Called when the `https://developer.android.com/reference/kotlin/android/media/MediaRouter2` or the system is about to request a media route provider service to create a controller with the given route. |
+| abstract [Bundle](../android.os/Bundle.md)? | `https://developer.android.com/reference/kotlin/android/media/MediaRouter2.OnGetControllerHintsListener#onGetControllerHints(android.media.MediaRoute2Info)(route: https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info)` Called when the `https://developer.android.com/reference/kotlin/android/media/MediaRouter2` or the system is about to request a media route provider service to create a controller with the given route. |
 
 ## Public methods
 
@@ -35,7 +35,7 @@ Since controller creation can be requested by the `https://developer.android.com
 
 | Parameters ||
 |---|---|
-| `route` | [MediaRoute2Info](../android/media/MediaRoute2Info.md): the route to create a controller with. This value cannot be `null`. |
+| `route` | [MediaRoute2Info](MediaRoute2Info.md): the route to create a controller with. This value cannot be `null`. |
 
 | Return ||
 |---|---|

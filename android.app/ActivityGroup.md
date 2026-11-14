@@ -9,14 +9,14 @@ open class ActivityGroup : Activity
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](../android/content/Context.md) |||||
-| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) ||||
-| | | ↳ | [android.view.ContextThemeWrapper](../android/view/ContextThemeWrapper.md) |||
+| ↳ | [android.content.Context](../android.content/Context.md) |||||
+| | ↳ | [android.content.ContextWrapper](../android.content/ContextWrapper.md) ||||
+| | | ↳ | [android.view.ContextThemeWrapper](../android.view/ContextThemeWrapper.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.app.Activity](../android/app/Activity.md) ||
-| | | | | ↳ | [android.app.ActivityGroup](../android/app/ActivityGroup.md) |
+| | | | ↳ | [android.app.Activity](Activity.md) ||
+| | | | | ↳ | [android.app.ActivityGroup](ActivityGroup.md) |
 
-Known Direct Subclasses [TabActivity](../android/app/TabActivity.md) [TabActivity](../android/app/TabActivity.md) For apps developing against `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#HONEYCOMB:kotlin.Int` or later, tabs are typically presented in the UI using the new `https://developer.android.com/reference/kotlin/android/app/ActionBar#newTab()` and related APIs for placing tabs within their action bar area.
+Known Direct Subclasses [TabActivity](TabActivity.md) [TabActivity](TabActivity.md) For apps developing against `https://developer.android.com/reference/kotlin/android/os/Build.VERSION_CODES.html#HONEYCOMB:kotlin.Int` or later, tabs are typically presented in the UI using the new `https://developer.android.com/reference/kotlin/android/app/ActionBar#newTab()` and related APIs for placing tabs within their action bar area.
 
 > [!CAUTION]
 > **This class was deprecated in API level 13.**
@@ -1063,8 +1063,8 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 
 | Public methods ||
 |---|---|
-| open [Activity](../android/app/Activity.md)! | `https://developer.android.com/reference/kotlin/android/app/ActivityGroup#getCurrentActivity()()` <br /> |
-| [LocalActivityManager](../android/app/LocalActivityManager.md)! | `https://developer.android.com/reference/kotlin/android/app/ActivityGroup#getLocalActivityManager()()` <br /> |
+| open [Activity](Activity.md)! | `https://developer.android.com/reference/kotlin/android/app/ActivityGroup#getCurrentActivity()()` <br /> |
+| [LocalActivityManager](LocalActivityManager.md)! | `https://developer.android.com/reference/kotlin/android/app/ActivityGroup#getLocalActivityManager()()` <br /> |
 
 | Protected methods ||
 |---|---|
@@ -4872,7 +4872,7 @@ If you override this method you *must* call through to the superclass implementa
 
 | Parameters ||
 |---|---|
-| `savedInstanceState` | [Bundle](../android/os/Bundle.md)?: If the activity is being re-initialized after previously being shut down then this Bundle contains the data it most recently supplied in #onSaveInstanceState. ***Note: Otherwise it is null.*** |
+| `savedInstanceState` | [Bundle](../android.os/Bundle.md)?: If the activity is being re-initialized after previously being shut down then this Bundle contains the data it most recently supplied in #onSaveInstanceState. ***Note: Otherwise it is null.*** |
 
 ### onDestroy
 
@@ -4956,7 +4956,7 @@ If called, this method will occur after `https://developer.android.com/reference
 
 | Parameters ||
 |---|---|
-| `outState` | [Bundle](../android/os/Bundle.md): Bundle in which to place your saved state. This value cannot be `null`. |
+| `outState` | [Bundle](../android.os/Bundle.md): Bundle in which to place your saved state. This value cannot be `null`. |
 
 ### onStop
 

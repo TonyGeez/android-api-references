@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # MetaKeyKeyListener
 
-Kotlin| [Java](../android/text/method/MetaKeyKeyListener.md) 
+Kotlin| [Java](MetaKeyKeyListener.md) 
 | --- | --- |
 
 ```
@@ -13,12 +13,12 @@ abstract class MetaKeyKeyListener
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.text.method.MetaKeyKeyListener](../android/text/method/MetaKeyKeyListener.md) |
+| ↳ | [android.text.method.MetaKeyKeyListener](MetaKeyKeyListener.md) |
 
-| Known Direct Subclasses [BaseKeyListener](../android/text/method/BaseKeyListener.md) |-------------------------------------------------------------------------------------------------------|----------------------------------------| | [BaseKeyListener](../android/text/method/BaseKeyListener.md) | Abstract base class for key listeners. | |
+| Known Direct Subclasses [BaseKeyListener](BaseKeyListener.md) |-------------------------------------------------------------------------------------------------------|----------------------------------------| | [BaseKeyListener](BaseKeyListener.md) | Abstract base class for key listeners. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
-| Known Indirect Subclasses [DateKeyListener](../android/text/method/DateKeyListener.md), [DateTimeKeyListener](../android/text/method/DateTimeKeyListener.md), [DialerKeyListener](../android/text/method/DialerKeyListener.md), [DigitsKeyListener](../android/text/method/DigitsKeyListener.md), [MultiTapKeyListener](../android/text/method/MultiTapKeyListener.md), [NumberKeyListener](../android/text/method/NumberKeyListener.md), [QwertyKeyListener](../android/text/method/QwertyKeyListener.md), [TextKeyListener](../android/text/method/TextKeyListener.md), [TimeKeyListener](../android/text/method/TimeKeyListener.md) |---------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------| | [DateKeyListener](../android/text/method/DateKeyListener.md) | For entering dates in a text field. | | [DateTimeKeyListener](../android/text/method/DateTimeKeyListener.md) | For entering dates and times in the same text field. | | [DialerKeyListener](../android/text/method/DialerKeyListener.md) | For dialing-only text entry | | [DigitsKeyListener](../android/text/method/DigitsKeyListener.md) | For digits-only text entry | | [MultiTapKeyListener](../android/text/method/MultiTapKeyListener.md) | This is the standard key listener for alphabetic input on 12-key keyboards. | | [NumberKeyListener](../android/text/method/NumberKeyListener.md) | For numeric text entry | | [QwertyKeyListener](../android/text/method/QwertyKeyListener.md) | This is the standard key listener for alphabetic input on qwerty keyboards. | | [TextKeyListener](../android/text/method/TextKeyListener.md) | This is the key listener for typing normal text. | | [TimeKeyListener](../android/text/method/TimeKeyListener.md) | For entering times in a text field. | |
+| Known Indirect Subclasses [DateKeyListener](DateKeyListener.md), [DateTimeKeyListener](DateTimeKeyListener.md), [DialerKeyListener](DialerKeyListener.md), [DigitsKeyListener](DigitsKeyListener.md), [MultiTapKeyListener](MultiTapKeyListener.md), [NumberKeyListener](NumberKeyListener.md), [QwertyKeyListener](QwertyKeyListener.md), [TextKeyListener](TextKeyListener.md), [TimeKeyListener](TimeKeyListener.md) |---------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------| | [DateKeyListener](DateKeyListener.md) | For entering dates in a text field. | | [DateTimeKeyListener](DateTimeKeyListener.md) | For entering dates and times in the same text field. | | [DialerKeyListener](DialerKeyListener.md) | For dialing-only text entry | | [DigitsKeyListener](DigitsKeyListener.md) | For digits-only text entry | | [MultiTapKeyListener](MultiTapKeyListener.md) | This is the standard key listener for alphabetic input on 12-key keyboards. | | [NumberKeyListener](NumberKeyListener.md) | For numeric text entry | | [QwertyKeyListener](QwertyKeyListener.md) | This is the standard key listener for alphabetic input on qwerty keyboards. | | [TextKeyListener](TextKeyListener.md) | This is the key listener for typing normal text. | | [TimeKeyListener](TimeKeyListener.md) | For entering times in a text field. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 This base class encapsulates the behavior for tracking the state of meta keys such as SHIFT, ALT and SYM as well as the pseudo-meta state of selecting text.
@@ -27,12 +27,12 @@ Key listeners that care about meta state should inherit from this class; you sho
 
 This class provides two mechanisms for tracking meta state that can be used together or independently.
 
-- Methods such as [handleKeyDown(long,int,android.view.KeyEvent)](../android/text/method/MetaKeyKeyListener.md))and [getMetaState(long)](../android/text/method/MetaKeyKeyListener.md))operate on a meta key state bit mask.
-- Methods such as [onKeyDown(android.view.View,android.text.Editable,int,android.view.KeyEvent)](../android/text/method/MetaKeyKeyListener.md))and [getMetaState(java.lang.CharSequence,int)](../android/text/method/MetaKeyKeyListener.md))operate on meta key state flags stored as spans in an [Editable](../android/text/Editable.md) text buffer. The spans only describe the current meta key state of the text editor; they do not carry any positional information.
+- Methods such as [handleKeyDown(long,int,android.view.KeyEvent)](MetaKeyKeyListener.md))and [getMetaState(long)](MetaKeyKeyListener.md))operate on a meta key state bit mask.
+- Methods such as [onKeyDown(android.view.View,android.text.Editable,int,android.view.KeyEvent)](MetaKeyKeyListener.md))and [getMetaState(java.lang.CharSequence,int)](MetaKeyKeyListener.md))operate on meta key state flags stored as spans in an [Editable](../android.text/Editable.md) text buffer. The spans only describe the current meta key state of the text editor; they do not carry any positional information.
 
-The behavior of this class varies according to the keyboard capabilities described by the [KeyCharacterMap](../android/view/KeyCharacterMap.md) of the keyboard device such as the [key modifier behavior](../android/view/KeyCharacterMap.md)).
+The behavior of this class varies according to the keyboard capabilities described by the [KeyCharacterMap](../android.view/KeyCharacterMap.md) of the keyboard device such as the [key modifier behavior](../android.view/KeyCharacterMap.md)).
 
-[MetaKeyKeyListener](../android/text/method/MetaKeyKeyListener.md) implements chorded and toggled key modifiers. When key modifiers are toggled into a latched or locked state, the state of the modifier is stored in the [Editable](../android/text/Editable.md) text buffer or in a meta state integer managed by the client. These latched or locked modifiers should be considered to be held**in addition to** those that the keyboard already reported as being pressed in [KeyEvent.getMetaState()](../android/view/KeyEvent.md)). In other words, the [MetaKeyKeyListener](../android/text/method/MetaKeyKeyListener.md) augments the meta state provided by the keyboard; it does not replace it. This distinction is important to ensure that meta keys not handled by [MetaKeyKeyListener](../android/text/method/MetaKeyKeyListener.md) such as [KeyEvent.KEYCODE_CAPS_LOCK](../android/view/KeyEvent.md) or [KeyEvent.KEYCODE_NUM_LOCK](../android/view/KeyEvent.md) are taken into consideration.
+[MetaKeyKeyListener](MetaKeyKeyListener.md) implements chorded and toggled key modifiers. When key modifiers are toggled into a latched or locked state, the state of the modifier is stored in the [Editable](../android.text/Editable.md) text buffer or in a meta state integer managed by the client. These latched or locked modifiers should be considered to be held**in addition to** those that the keyboard already reported as being pressed in [KeyEvent.getMetaState()](../android.view/KeyEvent.md)). In other words, the [MetaKeyKeyListener](MetaKeyKeyListener.md) augments the meta state provided by the keyboard; it does not replace it. This distinction is important to ensure that meta keys not handled by [MetaKeyKeyListener](MetaKeyKeyListener.md) such as [KeyEvent.KEYCODE_CAPS_LOCK](../android.view/KeyEvent.md) or [KeyEvent.KEYCODE_NUM_LOCK](../android.view/KeyEvent.md) are taken into consideration.
 
 To ensure correct meta key behavior, the following pattern should be used when mapping key codes to characters:
 ` private char getUnicodeChar(TextKeyListener listener, KeyEvent event, Editable textBuffer) { // Use the combined meta states from the event and the key listener. int metaState = event.getMetaState() | listener.getMetaState(textBuffer); return event.getUnicodeChar(metaState); } `
@@ -42,50 +42,50 @@ To ensure correct meta key behavior, the following pattern should be used when m
 
 | Constants ||
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [META_ALT_LOCKED](../android/text/method/MetaKeyKeyListener.md) Flag that indicates that the ALT key is locked. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [META_ALT_ON](../android/text/method/MetaKeyKeyListener.md) Flag that indicates that the ALT key is on. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [META_CAP_LOCKED](../android/text/method/MetaKeyKeyListener.md) Flag that indicates that the SHIFT key is locked in CAPS mode. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [META_ALT_LOCKED](MetaKeyKeyListener.md) Flag that indicates that the ALT key is locked. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [META_ALT_ON](MetaKeyKeyListener.md) Flag that indicates that the ALT key is on. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [META_CAP_LOCKED](MetaKeyKeyListener.md) Flag that indicates that the SHIFT key is locked in CAPS mode. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [META_SHIFT_ON](../android/text/method/MetaKeyKeyListener.md) Flag that indicates that the SHIFT key is on. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [META_SYM_LOCKED](../android/text/method/MetaKeyKeyListener.md) Flag that indicates that the SYM key is locked. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [META_SYM_ON](../android/text/method/MetaKeyKeyListener.md) Flag that indicates that the SYM key is on. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [META_SHIFT_ON](MetaKeyKeyListener.md) Flag that indicates that the SHIFT key is on. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [META_SYM_LOCKED](MetaKeyKeyListener.md) Flag that indicates that the SYM key is locked. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [META_SYM_ON](MetaKeyKeyListener.md) Flag that indicates that the SYM key is on. |
 | --- | --- |
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [MetaKeyKeyListener](../android/text/method/MetaKeyKeyListener.md))`()` <br /> |
+| [MetaKeyKeyListener](MetaKeyKeyListener.md))`()` <br /> |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [adjustMetaAfterKeypress](../android/text/method/MetaKeyKeyListener.md))`(`content:` ` [Spannable](../android/text/Spannable.md)!`)` Call this method after you handle a keypress so that the meta state will be reset to unshifted (if it is not still down) or primed to be reset to unshifted (once it is released). |
-| openstatic [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [adjustMetaAfterKeypress](../android/text/method/MetaKeyKeyListener.md))`(`state:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Call this method after you handle a keypress so that the meta state will be reset to unshifted (if it is not still down) or primed to be reset to unshifted (once it is released). |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearMetaKeyState](../android/text/method/MetaKeyKeyListener.md))`(`view:` ` [View](../android/view/View.md)!`, `content:` ` [Editable](../android/text/Editable.md)!`, `states:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [adjustMetaAfterKeypress](MetaKeyKeyListener.md))`(`content:` ` [Spannable](../android.text/Spannable.md)!`)` Call this method after you handle a keypress so that the meta state will be reset to unshifted (if it is not still down) or primed to be reset to unshifted (once it is released). |
+| openstatic [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [adjustMetaAfterKeypress](MetaKeyKeyListener.md))`(`state:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Call this method after you handle a keypress so that the meta state will be reset to unshifted (if it is not still down) or primed to be reset to unshifted (once it is released). |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearMetaKeyState](MetaKeyKeyListener.md))`(`view:` ` [View](../android.view/View.md)!`, `content:` ` [Editable](../android.text/Editable.md)!`, `states:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
-| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [clearMetaKeyState](../android/text/method/MetaKeyKeyListener.md))`(`state:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `which:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Clears the state of the specified meta key if it is locked. |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearMetaKeyState](../android/text/method/MetaKeyKeyListener.md))`(`content:` ` [Editable](../android/text/Editable.md)!`, `states:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMetaState](../android/text/method/MetaKeyKeyListener.md))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Gets the state of the meta keys. |
+| open [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [clearMetaKeyState](MetaKeyKeyListener.md))`(`state:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `which:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Clears the state of the specified meta key if it is locked. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearMetaKeyState](MetaKeyKeyListener.md))`(`content:` ` [Editable](../android.text/Editable.md)!`, `states:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMetaState](MetaKeyKeyListener.md))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Gets the state of the meta keys. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMetaState](../android/text/method/MetaKeyKeyListener.md))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `event:` ` [KeyEvent](../android/view/KeyEvent.md)!`)` Gets the state of the meta keys for a specific key event. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMetaState](../android/text/method/MetaKeyKeyListener.md))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `meta:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the state of a particular meta key. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMetaState](../android/text/method/MetaKeyKeyListener.md))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `meta:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `event:` ` [KeyEvent](../android/view/KeyEvent.md)!`)` Gets the state of a particular meta key to use with a particular key event. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMetaState](MetaKeyKeyListener.md))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `event:` ` [KeyEvent](../android.view/KeyEvent.md)!`)` Gets the state of the meta keys for a specific key event. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMetaState](MetaKeyKeyListener.md))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `meta:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the state of a particular meta key. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMetaState](MetaKeyKeyListener.md))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `meta:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `event:` ` [KeyEvent](../android.view/KeyEvent.md)!`)` Gets the state of a particular meta key to use with a particular key event. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMetaState](../android/text/method/MetaKeyKeyListener.md))`(`state:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Gets the state of the meta keys. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMetaState](../android/text/method/MetaKeyKeyListener.md))`(`state:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `meta:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the state of a particular meta key. |
-| openstatic [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [handleKeyDown](../android/text/method/MetaKeyKeyListener.md))`(`state:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `keyCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `event:` ` [KeyEvent](../android/view/KeyEvent.md)!`)` Handles presses of the meta keys. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMetaState](MetaKeyKeyListener.md))`(`state:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Gets the state of the meta keys. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMetaState](MetaKeyKeyListener.md))`(`state:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `meta:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the state of a particular meta key. |
+| openstatic [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [handleKeyDown](MetaKeyKeyListener.md))`(`state:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `keyCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `event:` ` [KeyEvent](../android.view/KeyEvent.md)!`)` Handles presses of the meta keys. |
 | --- | --- |
-| openstatic [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [handleKeyUp](../android/text/method/MetaKeyKeyListener.md))`(`state:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `keyCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `event:` ` [KeyEvent](../android/view/KeyEvent.md)!`)` Handles release of the meta keys. |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMetaTracker](../android/text/method/MetaKeyKeyListener.md))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `what:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Returns true if this object is one that this class would use to keep track of any meta state in the specified text. |
-| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSelectingMetaTracker](../android/text/method/MetaKeyKeyListener.md))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `what:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Returns true if this object is one that this class would use to keep track of the selecting meta state in the specified text. |
+| openstatic [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [handleKeyUp](MetaKeyKeyListener.md))`(`state:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `keyCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `event:` ` [KeyEvent](../android.view/KeyEvent.md)!`)` Handles release of the meta keys. |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isMetaTracker](MetaKeyKeyListener.md))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `what:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Returns true if this object is one that this class would use to keep track of any meta state in the specified text. |
+| openstatic [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSelectingMetaTracker](MetaKeyKeyListener.md))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `what:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Returns true if this object is one that this class would use to keep track of the selecting meta state in the specified text. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onKeyDown](../android/text/method/MetaKeyKeyListener.md))`(`view:` ` [View](../android/view/View.md)!`, `content:` ` [Editable](../android/text/Editable.md)!`, `keyCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `event:` ` [KeyEvent](../android/view/KeyEvent.md)!`)` Handles presses of the meta keys. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onKeyUp](../android/text/method/MetaKeyKeyListener.md))`(`view:` ` [View](../android/view/View.md)!`, `content:` ` [Editable](../android/text/Editable.md)!`, `keyCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `event:` ` [KeyEvent](../android/view/KeyEvent.md)!`)` Handles release of the meta keys. |
-| openstatic [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [resetLockedMeta](../android/text/method/MetaKeyKeyListener.md))`(`state:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Call this if you are a method that ignores the locked meta state (arrow keys, for example) and you handle a key. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onKeyDown](MetaKeyKeyListener.md))`(`view:` ` [View](../android.view/View.md)!`, `content:` ` [Editable](../android.text/Editable.md)!`, `keyCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `event:` ` [KeyEvent](../android.view/KeyEvent.md)!`)` Handles presses of the meta keys. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onKeyUp](MetaKeyKeyListener.md))`(`view:` ` [View](../android.view/View.md)!`, `content:` ` [Editable](../android.text/Editable.md)!`, `keyCode:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `event:` ` [KeyEvent](../android.view/KeyEvent.md)!`)` Handles release of the meta keys. |
+| openstatic [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [resetLockedMeta](MetaKeyKeyListener.md))`(`state:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Call this if you are a method that ignores the locked meta state (arrow keys, for example) and you handle a key. |
 | --- | --- |
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resetMetaState](../android/text/method/MetaKeyKeyListener.md))`(`text:` ` [Spannable](../android/text/Spannable.md)!`)` Resets all meta state to inactive. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resetMetaState](MetaKeyKeyListener.md))`(`text:` ` [Spannable](../android.text/Spannable.md)!`)` Resets all meta state to inactive. |
 
 | Protected methods ||
 |----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resetLockedMeta](../android/text/method/MetaKeyKeyListener.md))`(`content:` ` [Spannable](../android/text/Spannable.md)!`)` Call this if you are a method that ignores the locked meta state (arrow keys, for example) and you handle a key. |
+| openstatic [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [resetLockedMeta](MetaKeyKeyListener.md))`(`content:` ` [Spannable](../android.text/Spannable.md)!`)` Call this if you are a method that ignores the locked meta state (arrow keys, for example) and you handle a key. |
 
 ## Constants
 
@@ -109,7 +109,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val META_ALT_ON: Int
 ```
 
-Flag that indicates that the ALT key is on. Value equals [KeyEvent.META_ALT_ON](../android/view/KeyEvent.md). 
+Flag that indicates that the ALT key is on. Value equals [KeyEvent.META_ALT_ON](../android.view/KeyEvent.md). 
 
  Value: 2
 
@@ -133,7 +133,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val META_SHIFT_ON: Int
 ```
 
-Flag that indicates that the SHIFT key is on. Value equals [KeyEvent.META_SHIFT_ON](../android/view/KeyEvent.md). 
+Flag that indicates that the SHIFT key is on. Value equals [KeyEvent.META_SHIFT_ON](../android.view/KeyEvent.md). 
 
  Value: 1
 
@@ -157,7 +157,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val META_SYM_ON: Int
 ```
 
-Flag that indicates that the SYM key is on. Value equals [KeyEvent.META_SYM_ON](../android/view/KeyEvent.md). 
+Flag that indicates that the SYM key is on. Value equals [KeyEvent.META_SYM_ON](../android.view/KeyEvent.md). 
 
  Value: 4
 
@@ -219,7 +219,7 @@ Clears the state of the specified meta key if it is locked.
 | Parameters ||
 |---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `state` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the meta key state |
-| `which` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):meta keys to clear, may be a combination of [META_SHIFT_ON](../android/text/method/MetaKeyKeyListener.md), [META_ALT_ON](../android/text/method/MetaKeyKeyListener.md) or [META_SYM_ON](../android/text/method/MetaKeyKeyListener.md). |
+| `which` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):meta keys to clear, may be a combination of [META_SHIFT_ON](MetaKeyKeyListener.md), [META_ALT_ON](MetaKeyKeyListener.md) or [META_SYM_ON](MetaKeyKeyListener.md). |
 
 ### clearMetaKeyState
 
@@ -266,7 +266,7 @@ Gets the state of the meta keys for a specific key event. For input devices that
 | Parameters ||
 |---------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `text` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!:the buffer in which the meta key would have been pressed. |
-| `event` | [KeyEvent](../android/view/KeyEvent.md)!:the event for which to evaluate the meta state. |
+| `event` | [KeyEvent](../android.view/KeyEvent.md)!:the event for which to evaluate the meta state. |
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------|
@@ -312,7 +312,7 @@ Gets the state of a particular meta key to use with a particular key event. If t
 |---------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `meta` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):META_SHIFT_ON, META_ALT_ON, META_SYM_ON |
 | `text` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!:the buffer in which the meta key would have been pressed. |
-| `event` | [KeyEvent](../android/view/KeyEvent.md)!:the event for which to evaluate the meta state. |
+| `event` | [KeyEvent](../android.view/KeyEvent.md)!:the event for which to evaluate the meta state. |
 | --- | --- |
 
 | Return ||

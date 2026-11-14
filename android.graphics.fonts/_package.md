@@ -2,15 +2,15 @@
 
 # android.graphics.fonts
 
-Kotlin| [Java](../android/graphics/fonts/_package.md)
+Kotlin| [Java](_package.md)
 | --- | --- |
 
 ## Classes
 
-| [Font](../android/graphics/fonts/Font.md) | A font class can be used for creating FontFamily. |
+| [Font](Font.md) | A font class can be used for creating FontFamily. |
 | --- | --- |
-| [FontFamily](../android/graphics/fonts/FontFamily.md) | A font family class can be used for creating Typeface. |
-| [FontStyle](../android/graphics/fonts/FontStyle.md) | A font style object. |
-| [FontVariationAxis](../android/graphics/fonts/FontVariationAxis.md) | Class that holds information about single font variation axis. |
+| [FontFamily](FontFamily.md) | A font family class can be used for creating Typeface. |
+| [FontStyle](FontStyle.md) | A font style object. |
+| [FontVariationAxis](FontVariationAxis.md) | Class that holds information about single font variation axis. |
 | --- | --- |
-| [SystemFonts](../android/graphics/fonts/SystemFonts.md) | Provides the system font configurations. |
+| [SystemFonts](SystemFonts.md) | Provides the system font configurations. |

@@ -1,6 +1,6 @@
 # Hpke
 
-Kotlin | [Java](../android/crypto/hpke/Hpke.md)
+Kotlin | [Java](Hpke.md)
 | --- | --- |
 
 ```
@@ -9,7 +9,7 @@ open class Hpke
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.crypto.hpke.Hpke](../android/crypto/hpke/Hpke.md) |
+| ↳ | [android.crypto.hpke.Hpke](Hpke.md) |
 
 Provides access to implementations of HPKE hybrid cryptography as per RFC 9180.
 
@@ -21,11 +21,11 @@ HPKE suites are composed of a key encapsulation mechanism (KEM), a key derivatio
 
 | Public methods ||
 |---|---|
-| open static [Hpke](../android/crypto/hpke/Hpke.md) | `https://developer.android.com/reference/kotlin/android/crypto/hpke/Hpke#getInstance(kotlin.String)(suiteName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns an Hpke instance configured for the requested HPKE suite, using the highest priority `https://developer.android.com/reference/kotlin/java/security/Provider.html#` which implements it. |
-| open static [Hpke](../android/crypto/hpke/Hpke.md) | `https://developer.android.com/reference/kotlin/android/crypto/hpke/Hpke#getInstance(kotlin.String,%20kotlin.String)(suiteName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, providerName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns an Hpke instance configured for the requested HPKE suite, using the requested `https://developer.android.com/reference/kotlin/java/security/Provider.html#` by name. |
-| open static [Hpke](../android/crypto/hpke/Hpke.md) | `https://developer.android.com/reference/kotlin/android/crypto/hpke/Hpke#getInstance(kotlin.String,%20java.security.Provider)(suiteName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, provider: https://developer.android.com/reference/kotlin/java/security/Provider.html#)` Returns an Hpke instance configured for the requested HPKE suite, using the requested `https://developer.android.com/reference/kotlin/java/security/Provider.html#`. |
+| open static [Hpke](Hpke.md) | `https://developer.android.com/reference/kotlin/android/crypto/hpke/Hpke#getInstance(kotlin.String)(suiteName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns an Hpke instance configured for the requested HPKE suite, using the highest priority `https://developer.android.com/reference/kotlin/java/security/Provider.html#` which implements it. |
+| open static [Hpke](Hpke.md) | `https://developer.android.com/reference/kotlin/android/crypto/hpke/Hpke#getInstance(kotlin.String,%20kotlin.String)(suiteName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, providerName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Returns an Hpke instance configured for the requested HPKE suite, using the requested `https://developer.android.com/reference/kotlin/java/security/Provider.html#` by name. |
+| open static [Hpke](Hpke.md) | `https://developer.android.com/reference/kotlin/android/crypto/hpke/Hpke#getInstance(kotlin.String,%20java.security.Provider)(suiteName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, provider: https://developer.android.com/reference/kotlin/java/security/Provider.html#)` Returns an Hpke instance configured for the requested HPKE suite, using the requested `https://developer.android.com/reference/kotlin/java/security/Provider.html#`. |
 | --- | --- |
-| open [Provider](../java/security/Provider.md) | `https://developer.android.com/reference/kotlin/android/crypto/hpke/Hpke#getProvider()()` Returns the `https://developer.android.com/reference/kotlin/java/security/Provider.html#` being used by this Hpke instance. |
+| open [Provider](../java.security/Provider.md) | `https://developer.android.com/reference/kotlin/android/crypto/hpke/Hpke#getProvider()()` Returns the `https://developer.android.com/reference/kotlin/java/security/Provider.html#` being used by this Hpke instance. |
 | open static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | `https://developer.android.com/reference/kotlin/android/crypto/hpke/Hpke#getSuiteName(android.crypto.hpke.KemParameterSpec,%20android.crypto.hpke.KdfParameterSpec,%20android.crypto.hpke.AeadParameterSpec)(kem: https://developer.android.com/reference/kotlin/android/crypto/hpke/KemParameterSpec, kdf: https://developer.android.com/reference/kotlin/android/crypto/hpke/KdfParameterSpec, aead: https://developer.android.com/reference/kotlin/android/crypto/hpke/AeadParameterSpec)` Generates a full HPKE suite name from the named parameter specifications of its components, which have names reflecting their usage in RFC 9180. |
 | open [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html) | `https://developer.android.com/reference/kotlin/android/crypto/hpke/Hpke#open(java.security.PrivateKey,%20kotlin.ByteArray,%20android.crypto.hpke.Message,%20kotlin.ByteArray)(recipientKey: https://developer.android.com/reference/kotlin/java/security/PrivateKey.html#, info: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html?, message: https://developer.android.com/reference/kotlin/android/crypto/hpke/Message, aad: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html?)` One shot API to open a single ciphertext using BASE mode (no authentication). |
 | --- | --- |
@@ -96,7 +96,7 @@ Returns an Hpke instance configured for the requested HPKE suite, using the requ
 | Parameters ||
 |---|---|
 | `suiteName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): the HPKE suite to use. This value cannot be `null`. |
-| `provider` | [Provider](../java/security/Provider.md): the provider to use. This value cannot be `null`. |
+| `provider` | [Provider](../java.security/Provider.md): the provider to use. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -137,8 +137,8 @@ HPKE suites are composed of a key encapsulation mechanism (KEM), a key derivatio
 
 | Parameters ||
 |---|---|
-| `kem` | [KemParameterSpec](../android/crypto/hpke/KemParameterSpec.md): the key encapsulation mechanism to use. This value cannot be `null`. |
-| `kdf` | [KdfParameterSpec](../android/crypto/hpke/KdfParameterSpec.md): the key derivation function to use. This value cannot be `null`. |
+| `kem` | [KemParameterSpec](KemParameterSpec.md): the key encapsulation mechanism to use. This value cannot be `null`. |
+| `kdf` | [KdfParameterSpec](KdfParameterSpec.md): the key derivation function to use. This value cannot be `null`. |
 | `aead` | [AeadParameterSpec](../android/crypto/hpke/AeadParameterSpec.md): the AEAD cipher to use. This value cannot be `null`. |
 | --- | --- |
 
@@ -167,7 +167,7 @@ One shot API to open a single ciphertext using BASE mode (no authentication).
 
 | Parameters ||
 |---|---|
-| `recipientKey` | [PrivateKey](../java/security/PrivateKey.md): private key of the recipient. This value cannot be `null`. |
+| `recipientKey` | [PrivateKey](../java.security/PrivateKey.md): private key of the recipient. This value cannot be `null`. |
 | `info` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?: application-supplied information, may be null or empty |
 | `message` | [Message](../android/crypto/hpke/Message.md): the Message to open. This value cannot be `null`. |
 | --- | --- |
@@ -199,7 +199,7 @@ One shot API to seal a single message using BASE mode (no authentication).
 
 | Parameters ||
 |---|---|
-| `recipientKey` | [PublicKey](../java/security/PublicKey.md): public key of the recipient. This value cannot be `null`. |
+| `recipientKey` | [PublicKey](../java.security/PublicKey.md): public key of the recipient. This value cannot be `null`. |
 | `info` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)?: additional application-supplied information, may be null or empty |
 | `plaintext` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html): the message to send. This value cannot be `null`. |
 | --- | --- |

@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # FaceDetector
 
-Kotlin| [Java](../android/media/FaceDetector.md) 
+Kotlin| [Java](FaceDetector.md) 
 | --- | --- |
 
 ```
@@ -13,9 +13,9 @@ open class FaceDetector
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.FaceDetector](../android/media/FaceDetector.md) |
+| ↳ | [android.media.FaceDetector](FaceDetector.md) |
 
-Identifies the faces of people in a [android.graphics.Bitmap](../android/graphics/Bitmap.md) graphic object.
+Identifies the faces of people in a [android.graphics.Bitmap](../android.graphics/Bitmap.md) graphic object.
 
 ## Summary
 
@@ -25,15 +25,15 @@ Identifies the faces of people in a [android.graphics.Bitmap](../android/graphic
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [FaceDetector](../android/media/FaceDetector.md))`(`width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `height:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `maxFaces:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a FaceDetector, configured with the size of the images to be analysed and the maximum number of faces that can be detected. |
+| [FaceDetector](FaceDetector.md))`(`width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `height:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `maxFaces:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a FaceDetector, configured with the size of the images to be analysed and the maximum number of faces that can be detected. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [findFaces](../android/media/FaceDetector.md))`(`bitmap:` ` [Bitmap](../android/graphics/Bitmap.md)!`, `faces:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [FaceDetector.Face](../android/media/FaceDetector.Face.md)!>!`)` Finds all the faces found in a given [android.graphics.Bitmap](../android/graphics/Bitmap.md). |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [findFaces](FaceDetector.md))`(`bitmap:` ` [Bitmap](../android.graphics/Bitmap.md)!`, `faces:` ` [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [FaceDetector.Face](../android/media/FaceDetector.Face.md)!>!`)` Finds all the faces found in a given [android.graphics.Bitmap](../android.graphics/Bitmap.md). |
 
 | Protected methods ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](../android/media/FaceDetector.md))`()` <br /> |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [finalize](FaceDetector.md))`()` <br /> |
 
 ## Public constructors
 
@@ -70,11 +70,11 @@ open fun findFaces(
 ): Int
 ```
 
-Finds all the faces found in a given [android.graphics.Bitmap](../android/graphics/Bitmap.md). The supplied array is populated with [FaceDetector.Face](../android/media/FaceDetector.Face.md) s for each face found. The bitmap must be in 565 format (for now).
+Finds all the faces found in a given [android.graphics.Bitmap](../android.graphics/Bitmap.md). The supplied array is populated with [FaceDetector.Face](../android/media/FaceDetector.Face.md) s for each face found. The bitmap must be in 565 format (for now).
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `bitmap` | [Bitmap](../android/graphics/Bitmap.md)!:the [android.graphics.Bitmap](../android/graphics/Bitmap.md) graphic to be analyzed |
+| `bitmap` | [Bitmap](../android.graphics/Bitmap.md)!:the [android.graphics.Bitmap](../android.graphics/Bitmap.md) graphic to be analyzed |
 | `faces` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [FaceDetector.Face](../android/media/FaceDetector.Face.md)!\>!:an array in which to place all found [FaceDetector.Face](../android/media/FaceDetector.Face.md) s. The array must be sized equal to the maxFaces value set at initialization |
 
 | Return ||

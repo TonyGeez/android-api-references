@@ -8,11 +8,11 @@ abstract class MediaRoute2ProviderService : Service
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](../android/content/Context.md) ||||
-| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) |||
-| | | ↳ | [android.app.Service](../android/app/Service.md) ||
+| ↳ | [android.content.Context](../android.content/Context.md) ||||
+| | ↳ | [android.content.ContextWrapper](../android.content/ContextWrapper.md) |||
+| | | ↳ | [android.app.Service](../android.app/Service.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.media.MediaRoute2ProviderService](../android/media/MediaRoute2ProviderService.md) |
+| | | | ↳ | [android.media.MediaRoute2ProviderService](MediaRoute2ProviderService.md) |
 
 Base class for media route provider services.
 
@@ -1060,8 +1060,8 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 
 | Public methods ||
 |---|---|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [RoutingSessionInfo](../android/media/RoutingSessionInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/media/MediaRoute2ProviderService#getAllSessionInfo()()` Gets the list of `https://developer.android.com/reference/kotlin/android/media/RoutingSessionInfo` that the provider service maintains. |
-| [RoutingSessionInfo](../android/media/RoutingSessionInfo.md)? | `https://developer.android.com/reference/kotlin/android/media/MediaRoute2ProviderService#getSessionInfo(kotlin.String)(sessionId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Gets information of the session with the given id. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [RoutingSessionInfo](RoutingSessionInfo.md)!\> | `https://developer.android.com/reference/kotlin/android/media/MediaRoute2ProviderService#getAllSessionInfo()()` Gets the list of `https://developer.android.com/reference/kotlin/android/media/RoutingSessionInfo` that the provider service maintains. |
+| [RoutingSessionInfo](RoutingSessionInfo.md)? | `https://developer.android.com/reference/kotlin/android/media/MediaRoute2ProviderService#getSessionInfo(kotlin.String)(sessionId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Gets information of the session with the given id. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaRoute2ProviderService#notifyRequestFailed(kotlin.Long,%20kotlin.Int)(requestId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, reason: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Notifies to the client that the request has failed. |
 | --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaRoute2ProviderService#notifyRoutes(kotlin.collections.MutableCollection)(routes: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html<https://developer.android.com/reference/kotlin/android/media/MediaRoute2Info!>)` Updates routes of the provider and notifies the system media router service. |
@@ -1069,7 +1069,7 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaRoute2ProviderService#notifySessionReleased(kotlin.String)(sessionId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Notifies that the session is released. |
 | --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaRoute2ProviderService#notifySessionUpdated(android.media.RoutingSessionInfo)(sessionInfo: https://developer.android.com/reference/kotlin/android/media/RoutingSessionInfo)` Notifies the existing session is updated. |
-| open [IBinder](../android/os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/media/MediaRoute2ProviderService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` If overriding this method, call through to the super method for any unknown actions. |
+| open [IBinder](../android.os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/media/MediaRoute2ProviderService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` If overriding this method, call through to the super method for any unknown actions. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaRoute2ProviderService#onCreateSession(kotlin.Long,%20kotlin.String,%20kotlin.String,%20android.os.Bundle)(requestId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, packageName: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, routeId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, sessionHints: https://developer.android.com/reference/kotlin/android/os/Bundle.html#?)` Called when the service receives a request to create a session. |
 | --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/media/MediaRoute2ProviderService#onDeselectRoute(kotlin.Long,%20kotlin.String,%20kotlin.String)(requestId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html, sessionId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html, routeId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)` Called when a client requests deselecting a route from the session. |
@@ -2958,7 +2958,7 @@ Updates routes of the provider and notifies the system media router service.
 
 | Parameters ||
 |---|---|
-| `routes` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [MediaRoute2Info](../android/media/MediaRoute2Info.md)!\>: This value cannot be `null`. |
+| `routes` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [MediaRoute2Info](MediaRoute2Info.md)!\>: This value cannot be `null`. |
 
 ### notifySessionCreated
 
@@ -2978,7 +2978,7 @@ If this session is created without any creation request, use `https://developer.
 | Parameters ||
 |---|---|
 | `requestId` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html): the ID of the previous request to create this session provided in `https://developer.android.com/reference/kotlin/android/media/MediaRoute2ProviderService#onCreateSession(kotlin.Long,%20kotlin.String,%20kotlin.String,%20android.os.Bundle)`. Can be `https://developer.android.com/reference/kotlin/android/media/MediaRoute2ProviderService#REQUEST_ID_NONE:kotlin.Long` if this session is created without any request. |
-| `sessionInfo` | [RoutingSessionInfo](../android/media/RoutingSessionInfo.md): information of the new session. The `https://developer.android.com/reference/kotlin/android/media/RoutingSessionInfo#getId()` of the session must be unique. This value cannot be `null`. |
+| `sessionInfo` | [RoutingSessionInfo](RoutingSessionInfo.md): information of the new session. The `https://developer.android.com/reference/kotlin/android/media/RoutingSessionInfo#getId()` of the session must be unique. This value cannot be `null`. |
 
 **See Also**
 
@@ -3015,7 +3015,7 @@ Notifies the existing session is updated. For example, when `https://developer.a
 
 | Parameters ||
 |---|---|
-| `sessionInfo` | [RoutingSessionInfo](../android/media/RoutingSessionInfo.md): This value cannot be `null`. |
+| `sessionInfo` | [RoutingSessionInfo](RoutingSessionInfo.md): This value cannot be `null`. |
 
 ### onBind
 
@@ -3035,7 +3035,7 @@ If you override this method you *must* call through to the superclass implementa
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md): This value cannot be `null`. |
+| `intent` | [Intent](../android.content/Intent.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -3068,7 +3068,7 @@ If you can't create the session or want to reject the request, call `https://dev
 | `packageName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): the package name of the application that selected the route. This value cannot be `null`. |
 | `routeId` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): the ID of the route initially being connected. This value cannot be `null`. |
 | --- | --- |
-| `sessionHints` | [Bundle](../android/os/Bundle.md)?: an optional bundle of app-specific arguments sent by `https://developer.android.com/reference/kotlin/android/media/MediaRouter2`, or null if none. The contents of this bundle may affect the result of session creation. |
+| `sessionHints` | [Bundle](../android.os/Bundle.md)?: an optional bundle of app-specific arguments sent by `https://developer.android.com/reference/kotlin/android/media/MediaRouter2`, or null if none. The contents of this bundle may affect the result of session creation. |
 
 **See Also**
 
@@ -3113,7 +3113,7 @@ The provider should examine `https://developer.android.com/reference/kotlin/andr
 
 | Parameters ||
 |---|---|
-| `preference` | [RouteDiscoveryPreference](../android/media/RouteDiscoveryPreference.md): the new discovery preference. This value cannot be `null`. |
+| `preference` | [RouteDiscoveryPreference](RouteDiscoveryPreference.md): the new discovery preference. This value cannot be `null`. |
 
 ### onDiscoveryPreferenceChanged
 
@@ -3132,8 +3132,8 @@ This is similar to `https://developer.android.com/reference/kotlin/android/media
 
 | Parameters ||
 |---|---|
-| `compositePreference` | [RouteDiscoveryPreference](../android/media/RouteDiscoveryPreference.md): A composite object aggregating the route preferences for all apps with registered `https://developer.android.com/reference/kotlin/android/media/MediaRouter2.RouteCallback`. This value cannot be `null`. |
-| `perAppPreferences` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [RouteDiscoveryPreference](../android/media/RouteDiscoveryPreference.md)!\>: A mapping of app package name to the `https://developer.android.com/reference/kotlin/android/media/RouteDiscoveryPreference` just for that app. This map will only be populated if the caller holds the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MEDIA_CONTENT_CONTROL:kotlin.String` permission. This value cannot be `null`. |
+| `compositePreference` | [RouteDiscoveryPreference](RouteDiscoveryPreference.md): A composite object aggregating the route preferences for all apps with registered `https://developer.android.com/reference/kotlin/android/media/MediaRouter2.RouteCallback`. This value cannot be `null`. |
+| `perAppPreferences` | [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [RouteDiscoveryPreference](RouteDiscoveryPreference.md)!\>: A mapping of app package name to the `https://developer.android.com/reference/kotlin/android/media/RouteDiscoveryPreference` just for that app. This map will only be populated if the caller holds the `https://developer.android.com/reference/kotlin/android/Manifest.permission.html#MEDIA_CONTENT_CONTROL:kotlin.String` permission. This value cannot be `null`. |
 
 ### onReleaseSession
 

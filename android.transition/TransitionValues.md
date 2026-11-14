@@ -4,7 +4,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 
 # TransitionValues
 
-Kotlin| [Java](../android/transition/TransitionValues.md) 
+Kotlin| [Java](TransitionValues.md) 
 | --- | --- |
 
 ```
@@ -13,30 +13,30 @@ open class TransitionValues
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.transition.TransitionValues](../android/transition/TransitionValues.md) |
+| ↳ | [android.transition.TransitionValues](TransitionValues.md) |
 
 Data structure which holds cached values for the transition. The view field is the target which all of the values pertain to. The values field is a map which holds information for fields according to names selected by the transitions. These names should be unique to avoid clobbering values stored by other transitions, such as the convention project:transition_name:property_name. For example, the platform might store a property "alpha" in a transition "Fader" as "android:fader:alpha".
 
-These values are cached during the [Transition.captureStartValues(TransitionValues)](../android/transition/Transition.md))capture} phases of a scene change, once when the start values are captured and again when the end values are captured. These start/end values are then passed into the transitions via the for [Transition.createAnimator(ViewGroup, TransitionValues, TransitionValues)](../android/transition/Transition.md))method.
+These values are cached during the [Transition.captureStartValues(TransitionValues)](Transition.md))capture} phases of a scene change, once when the start values are captured and again when the end values are captured. These start/end values are then passed into the transitions via the for [Transition.createAnimator(ViewGroup, TransitionValues, TransitionValues)](Transition.md))method.
 
 ## Summary
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [TransitionValues](../android/transition/TransitionValues.md))`()` <br /> |
-| [TransitionValues](../android/transition/TransitionValues.md))`(`view:` ` [View](../android/view/View.md)`)` <br /> |
+| [TransitionValues](TransitionValues.md))`()` <br /> |
+| [TransitionValues](TransitionValues.md))`(`view:` ` [View](../android.view/View.md)`)` <br /> |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/transition/TransitionValues.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/transition/TransitionValues.md))`()` <br /> |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/transition/TransitionValues.md))`()` <br /> |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](TransitionValues.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](TransitionValues.md))`()` <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](TransitionValues.md))`()` <br /> |
 | --- | --- |
 
 | Properties ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\> | [values](../android/transition/TransitionValues.md) The set of values tracked by transitions for this scene |
-| [View](../android/view/View.md) | [view](../android/transition/TransitionValues.md) The View with these values |
+| [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!, [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!\> | [values](TransitionValues.md) The set of values tracked by transitions for this scene |
+| [View](../android.view/View.md) | [view](TransitionValues.md) The View with these values |
 
 ## Public constructors
 
@@ -48,7 +48,7 @@ Added in [API level 19](https://developer.android.com/guide/topics/manifest/uses
 TransitionValues()
 ```
 
-**Deprecated:** *Use [TransitionValues(android.view.View)](../android/transition/TransitionValues.md))instead* 
+**Deprecated:** *Use [TransitionValues(android.view.View)](TransitionValues.md))instead* 
 
 ### TransitionValues
 
@@ -60,7 +60,7 @@ TransitionValues(view: View)
 
 | Parameters ||
 |--------|------------------------------------------------------------------------------------------------------------|
-| `view` | [View](../android/view/View.md):This value cannot be`null`. |
+| `view` | [View](../android.view/View.md):This value cannot be`null`. |
 
 ## Public methods
 

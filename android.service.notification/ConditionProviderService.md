@@ -9,11 +9,11 @@ abstract class ConditionProviderService : Service
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](../android/content/Context.md) ||||
-| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) |||
-| | | ↳ | [android.app.Service](../android/app/Service.md) ||
+| ↳ | [android.content.Context](../android.content/Context.md) ||||
+| | ↳ | [android.content.ContextWrapper](../android.content/ContextWrapper.md) |||
+| | | ↳ | [android.app.Service](../android.app/Service.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.service.notification.ConditionProviderService](../android/service/notification/ConditionProviderService.md) |
+| | | | ↳ | [android.service.notification.ConditionProviderService](ConditionProviderService.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 29.**
@@ -1080,7 +1080,7 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 |---|---|
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/ConditionProviderService#notifyCondition(android.service.notification.Condition)(condition: https://developer.android.com/reference/kotlin/android/service/notification/Condition!)` Informs the notification manager that the state of a Condition has changed. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/ConditionProviderService#notifyConditions(android.service.notification.Condition)(vararg conditions: https://developer.android.com/reference/kotlin/android/service/notification/Condition!)` Informs the notification manager that the state of one or more Conditions has changed. |
-| open [IBinder](../android/os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/service/notification/ConditionProviderService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
+| open [IBinder](../android.os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/service/notification/ConditionProviderService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
 | --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/ConditionProviderService#onConnected()()` Called when this service is connected. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/service/notification/ConditionProviderService#onRequestConditions(kotlin.Int)(relevance: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` <br /> |
@@ -2878,7 +2878,7 @@ Informs the notification manager that the state of a Condition has changed. Use 
 
 | Parameters ||
 |---|---|
-| `condition` | [Condition](../android/service/notification/Condition.md)!: the condition that has changed. |
+| `condition` | [Condition](Condition.md)!: the condition that has changed. |
 
 ### notifyConditions
 
@@ -2894,7 +2894,7 @@ Informs the notification manager that the state of one or more Conditions has ch
 
 | Parameters ||
 |---|---|
-| `conditions` | [Condition](../android/service/notification/Condition.md)!: the changed conditions. |
+| `conditions` | [Condition](Condition.md)!: the changed conditions. |
 
 ### onBind
 
@@ -2912,7 +2912,7 @@ Return the communication channel to the service. May return null if clients can 
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
+| `intent` | [Intent](../android.content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
 
 | Return ||
 |---|---|
@@ -2954,7 +2954,7 @@ Called by the system when there is a new `https://developer.android.com/referenc
 
 | Parameters ||
 |---|---|
-| `conditionId` | [Uri](../android/net/Uri.md)!: the Uri describing the criteria of the condition. |
+| `conditionId` | [Uri](../android.net/Uri.md)!: the Uri describing the criteria of the condition. |
 
 ### onUnsubscribe
 
@@ -2970,7 +2970,7 @@ Called by the system when a `https://developer.android.com/reference/kotlin/andr
 
 | Parameters ||
 |---|---|
-| `conditionId` | [Uri](../android/net/Uri.md)!: the Uri describing the criteria of the deleted condition. |
+| `conditionId` | [Uri](../android.net/Uri.md)!: the Uri describing the criteria of the deleted condition. |
 
 ### requestRebind
 

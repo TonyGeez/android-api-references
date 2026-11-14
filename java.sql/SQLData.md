@@ -8,7 +8,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface SQLData
 ```
 
-| [java.sql.SQLData](../java/sql/SQLData.md) |
+| [java.sql.SQLData](SQLData.md) |
 
 The interface used for the custom mapping of an SQL user-defined type (UDT) to a class in the Java programming language. The class object for a class implementing the`SQLData`interface will be entered in the appropriate`Connection`object's type map along with the SQL name of the UDT for which it is a custom mapping.
 
@@ -22,9 +22,9 @@ An application programmer will not normally call`SQLData`methods directly, and t
 
 | Public methods ||
 |-------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSQLTypeName](../java/sql/SQLData.md))`()` Returns the fully-qualified name of the SQL user-defined type that this object represents. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [readSQL](../java/sql/SQLData.md))`(`stream:` ` [SQLInput](../java/sql/SQLInput.md)!`, `typeName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Populates this object with data read from the database. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeSQL](../java/sql/SQLData.md))`(`stream:` ` [SQLOutput](../java/sql/SQLOutput.md)!`)` Writes this object to the given SQL data stream, converting it back to its SQL value in the data source. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getSQLTypeName](SQLData.md))`()` Returns the fully-qualified name of the SQL user-defined type that this object represents. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [readSQL](SQLData.md))`(`stream:` ` [SQLInput](SQLInput.md)!`, `typeName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Populates this object with data read from the database. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeSQL](SQLData.md))`(`stream:` ` [SQLOutput](SQLOutput.md)!`)` Writes this object to the given SQL data stream, converting it back to its SQL value in the data source. |
 | --- | --- |
 
 ## Public methods
@@ -70,7 +70,7 @@ The JDBC driver initializes the input stream with a type map before calling this
 
 | Parameters ||
 |------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `stream` | [SQLInput](../java/sql/SQLInput.md)!:the`SQLInput`object from which to read the data for the value that is being custom mapped |
+| `stream` | [SQLInput](SQLInput.md)!:the`SQLInput`object from which to read the data for the value that is being custom mapped |
 | `typeName` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the SQL type name of the value on the data stream |
 
 | Exceptions ||
@@ -80,7 +80,7 @@ The JDBC driver initializes the input stream with a type map before calling this
 
 **See Also**
 
-- [java.sql.SQLInput](../java/sql/SQLInput.md) 
+- [java.sql.SQLInput](SQLInput.md) 
 
 ### writeSQL
 
@@ -95,7 +95,7 @@ It must write each of the attributes of the SQL type to the given output stream.
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `stream` | [SQLOutput](../java/sql/SQLOutput.md)!:the`SQLOutput`object to which to write the data for the value that was custom mapped |
+| `stream` | [SQLOutput](SQLOutput.md)!:the`SQLOutput`object to which to write the data for the value that was custom mapped |
 
 | Exceptions ||
 |--------------------------------------------|-------------------------------------------------|
@@ -104,4 +104,4 @@ It must write each of the attributes of the SQL type to the given output stream.
 
 **See Also**
 
-- [java.sql.SQLOutput](../java/sql/SQLOutput.md)
+- [java.sql.SQLOutput](SQLOutput.md)

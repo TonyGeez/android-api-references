@@ -4,7 +4,7 @@ Added in [API level 16](https://developer.android.com/guide/topics/manifest/uses
 
 # OperationCanceledException
 
-Kotlin| [Java](../android/os/OperationCanceledException.md) 
+Kotlin| [Java](OperationCanceledException.md) 
 | --- | --- |
 
 ```
@@ -14,10 +14,10 @@ open class OperationCanceledException : RuntimeException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
-| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) ||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) |||
+| | | ↳ | [java.lang.RuntimeException](../java.lang/RuntimeException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.os.OperationCanceledException](../android/os/OperationCanceledException.md) |
+| | | | ↳ | [android.os.OperationCanceledException](OperationCanceledException.md) |
 
 An exception type that is thrown when an operation in progress is canceled.
 
@@ -25,8 +25,8 @@ An exception type that is thrown when an operation in progress is canceled.
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [OperationCanceledException](../android/os/OperationCanceledException.md))`()` <br /> |
-| [OperationCanceledException](../android/os/OperationCanceledException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
+| [OperationCanceledException](OperationCanceledException.md))`()` <br /> |
+| [OperationCanceledException](OperationCanceledException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> |
 
 ## Public constructors
 

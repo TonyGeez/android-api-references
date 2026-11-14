@@ -8,7 +8,7 @@ open class TetheringManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.TetheringManager](../android/net/TetheringManager.md) |
+| ↳ | [android.net.TetheringManager](TetheringManager.md) |
 
 This class provides the APIs to control the tethering service.
 
@@ -305,7 +305,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): the executor on which callback will be invoked. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): the executor on which callback will be invoked. This value cannot be `null`. |
 | `callback` | [TetheringManager.TetheringEventCallback](../android/net/TetheringManager.TetheringEventCallback.md): the callback to be called when tethering has change events. This value cannot be `null`. |
 
 ### startTethering
@@ -325,7 +325,7 @@ Starts tethering and runs tether provisioning for the given type if needed. If p
 | Parameters ||
 |---|---|
 | `request` | [TetheringManager.TetheringRequest](../android/net/TetheringManager.TetheringRequest.md): a `https://developer.android.com/reference/kotlin/android/net/TetheringManager.TetheringRequest` which can specify the preferred configuration. This value cannot be `null`. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` to specify the thread upon which the callback of TetheringRequest will be invoked. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` to specify the thread upon which the callback of TetheringRequest will be invoked. This value cannot be `null`. |
 | `callback` | [TetheringManager.StartTetheringCallback](../android/net/TetheringManager.StartTetheringCallback.md): A callback that will be called to indicate the success status of the tethering start request. This value cannot be `null`. |
 | --- | --- |
 
@@ -346,7 +346,7 @@ Stops tethering for the given request. Operation will fail with `https://develop
 | Parameters ||
 |---|---|
 | `request` | [TetheringManager.TetheringRequest](../android/net/TetheringManager.TetheringRequest.md): This value cannot be `null`. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): This value cannot be `null`. |
 | `callback` | [TetheringManager.StopTetheringCallback](../android/net/TetheringManager.StopTetheringCallback.md): This value cannot be `null`. |
 | --- | --- |
 

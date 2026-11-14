@@ -4,7 +4,7 @@ Added in [API level 3](https://developer.android.com/guide/topics/manifest/uses-
 
 # Formatter
 
-Kotlin| [Java](../android/text/format/Formatter.md) 
+Kotlin| [Java](Formatter.md) 
 | --- | --- |
 
 ```
@@ -13,21 +13,21 @@ class Formatter
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.text.format.Formatter](../android/text/format/Formatter.md) |
+| ↳ | [android.text.format.Formatter](Formatter.md) |
 
-Utility class to aid in formatting common values that are not covered by the [java.util.Formatter](../java/util/Formatter.md) class in [java.util](../java/util/_package.md)
+Utility class to aid in formatting common values that are not covered by the [java.util.Formatter](../java.util/Formatter.md) class in [java.util](../java.util/_package.md)
 
 ## Summary
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------|---|
-| [Formatter](../android/text/format/Formatter.md))`()` <br /> |
+| [Formatter](Formatter.md))`()` <br /> |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [formatFileSize](../android/text/format/Formatter.md))`(`context:` ` [Context](../android/content/Context.md)?`, `sizeBytes:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Formats a content size to be in the form of bytes, kilobytes, megabytes, etc. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [formatIpAddress](../android/text/format/Formatter.md))`(`ipv4Address:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a string in the canonical IPv4 format ###. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [formatShortFileSize](../android/text/format/Formatter.md))`(`context:` ` [Context](../android/content/Context.md)?`, `sizeBytes:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Like [formatFileSize](../android/text/format/Formatter.md)), but trying to generate shorter numbers (showing fewer digits of precision). |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [formatFileSize](Formatter.md))`(`context:` ` [Context](../android.content/Context.md)?`, `sizeBytes:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Formats a content size to be in the form of bytes, kilobytes, megabytes, etc. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [formatIpAddress](Formatter.md))`(`ipv4Address:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a string in the canonical IPv4 format ###. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [formatShortFileSize](Formatter.md))`(`context:` ` [Context](../android.content/Context.md)?`, `sizeBytes:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Like [formatFileSize](Formatter.md)), but trying to generate shorter numbers (showing fewer digits of precision). |
 | --- | --- |
 
 ## Public constructors
@@ -61,7 +61,7 @@ If the context has a right-to-left locale, the returned string is wrapped in bid
 
 | Parameters ||
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](../android/content/Context.md)?:Context to use to load the localized units This value may be`null`. |
+| `context` | [Context](../android.content/Context.md)?:Context to use to load the localized units This value may be`null`. |
 | `sizeBytes` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):size value to be formatted, in bytes |
 
 | Return ||
@@ -77,7 +77,7 @@ Deprecated in [API level 15](https://developer.android.com/guide/topics/manifest
 static fun formatIpAddress(ipv4Address: Int): String!
 ```
 
-**Deprecated:** *Use [java.net.InetAddress#getHostAddress()](../java/net/InetAddress.md)), which supports both IPv4 and IPv6 addresses. This method does not support IPv6 addresses.*
+**Deprecated:** *Use [java.net.InetAddress#getHostAddress()](../java.net/InetAddress.md)), which supports both IPv4 and IPv6 addresses. This method does not support IPv6 addresses.*
 
 Returns a string in the canonical IPv4 format ###.###.###.### from a packed integer containing the IP address. The IPv4 address is expected to be in little-endian format (LSB first). That is, 0x01020304 will return "4.3.2.1". 
 
@@ -92,8 +92,8 @@ static fun formatShortFileSize(
 ): String!
 ```
 
-Like [formatFileSize](../android/text/format/Formatter.md)), but trying to generate shorter numbers (showing fewer digits of precision).
+Like [formatFileSize](Formatter.md)), but trying to generate shorter numbers (showing fewer digits of precision).
 
 | Parameters ||
 |-----------|-------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](../android/content/Context.md)?:This value may be`null`. |
+| `context` | [Context](../android.content/Context.md)?:This value may be`null`. |

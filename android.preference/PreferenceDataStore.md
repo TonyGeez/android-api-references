@@ -3,14 +3,14 @@ Deprecated in [API level 29](https://developer.android.com/guide/topics/manifest
 
 # PreferenceDataStore
 
-Kotlin | [Java](../android/preference/PreferenceDataStore.md)
+Kotlin | [Java](PreferenceDataStore.md)
 | --- | --- |
 
 ```
 interface PreferenceDataStore
 ```
 
-| [android.preference.PreferenceDataStore](../android/preference/PreferenceDataStore.md) |
+| [android.preference.PreferenceDataStore](PreferenceDataStore.md) |
 
 | **This interface was deprecated in API level 29.**
 |

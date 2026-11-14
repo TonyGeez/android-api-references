@@ -34,4 +34,4 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `imsReasonInfo` | [ImsReasonInfo](../android/telephony/ims/ImsReasonInfo.md): `https://developer.android.com/reference/kotlin/android/telephony/ims/ImsReasonInfo` contains details on why IMS call failed. This value cannot be `null`. |
+| `imsReasonInfo` | [ImsReasonInfo](../android.telephony.ims/ImsReasonInfo.md): `https://developer.android.com/reference/kotlin/android/telephony/ims/ImsReasonInfo` contains details on why IMS call failed. This value cannot be `null`. |

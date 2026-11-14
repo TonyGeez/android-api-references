@@ -4,7 +4,7 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 
 # ContentCaptureManager
 
-Kotlin| [Java](../android/view/contentcapture/ContentCaptureManager.md) 
+Kotlin| [Java](ContentCaptureManager.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class ContentCaptureManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.contentcapture.ContentCaptureManager](../android/view/contentcapture/ContentCaptureManager.md) |
+| ↳ | [android.view.contentcapture.ContentCaptureManager](ContentCaptureManager.md) |
 
 Provides additional ways for apps to integrate with the content capture subsystem.
 
@@ -22,7 +22,7 @@ Content capture provides real-time, continuous capture of application activity, 
 Content capture was designed with two major concerns in mind: privacy and performance.
 
 - **Privacy:** the intelligence service is a trusted component provided that is provided by the device manufacturer and that cannot be changed by the user (although the user can globaly disable content capture using the Android Settings app). This service can only use the data for in-device machine learning, which is enforced both by process isolation and [CDD requirements](https://source.android.com/compatibility/cdd).
-- **Performance:** content capture is highly optimized to minimize its impact in the app jankiness and overall device system health. For example, its only enabled on apps (or even specific activities from an app) that were explicitly allowlisted by the intelligence service, and it buffers the events so they are sent in a batch to the service (see [isContentCaptureEnabled()](../android/view/contentcapture/ContentCaptureManager.md))for other cases when its disabled).
+- **Performance:** content capture is highly optimized to minimize its impact in the app jankiness and overall device system health. For example, its only enabled on apps (or even specific activities from an app) that were explicitly allowlisted by the intelligence service, and it buffers the events so they are sent in a batch to the service (see [isContentCaptureEnabled()](ContentCaptureManager.md))for other cases when its disabled).
 
 In fact, before using this manager, the app developer should check if it's available. Example: 
 
@@ -37,12 +37,12 @@ In fact, before using this manager, the app developer should check if it's avail
 
 App developers usually don't need to explicitly interact with content capture, except when the app:
 
-- Can define a contextual [android.content.LocusId](../android/content/LocusId.md) to identify unique state (such as a conversation between 2 chat users).
+- Can define a contextual [android.content.LocusId](../android.content/LocusId.md) to identify unique state (such as a conversation between 2 chat users).
 - Can have multiple view hierarchies with different contextual meaning (for example, a browser app with multiple tabs, each representing a different URL).
 - Contains custom views (that extend View directly and are not provided by the standard Android SDK.
 - Contains views that provide their own virtual hierarchy (like a web browser that render the HTML elements using a Canvas).
 
-The main integration point with content capture is the [ContentCaptureSession](../android/view/contentcapture/ContentCaptureSession.md). A "main" session is automatically created by the Android System when content capture is enabled for the activity and its used by the standard Android views to notify the content capture service of events such as views being added, views been removed, and text changed by user input. The session could have a [ContentCaptureContext](../android/view/contentcapture/ContentCaptureContext.md) to provide more contextual info about it, such as the locus associated with the view hierarchy (see [android.content.LocusId](../android/content/LocusId.md) for more info about locus). By default, the main session doesn't have a`ContentCaptureContext`, but you can change it after its created. Example: 
+The main integration point with content capture is the [ContentCaptureSession](ContentCaptureSession.md). A "main" session is automatically created by the Android System when content capture is enabled for the activity and its used by the standard Android views to notify the content capture service of events such as views being added, views been removed, and text changed by user input. The session could have a [ContentCaptureContext](ContentCaptureContext.md) to provide more contextual info about it, such as the locus associated with the view hierarchy (see [android.content.LocusId](../android.content/LocusId.md) for more info about locus). By default, the main session doesn't have a`ContentCaptureContext`, but you can change it after its created. Example: 
 
 ```kotlin
 <code>
@@ -83,11 +83,11 @@ If your activity contains view hierarchies with a different contextual meaning, 
   </code>
 ```
 
-If your activity has custom views (i.e., views that extend [View](../android/view/View.md) directly and provide just one logical view, not a virtual tree hiearchy) and it provides content that's relevant for content capture (as of [Android Q](../android/os/Build.VERSION_CODES.md), the only relevant content is text), then your view implementation should:
+If your activity has custom views (i.e., views that extend [View](../android.view/View.md) directly and provide just one logical view, not a virtual tree hiearchy) and it provides content that's relevant for content capture (as of [Android Q](../android/os/Build.VERSION_CODES.md), the only relevant content is text), then your view implementation should:
 
 - Set it as important for content capture.
-- Fill [ViewStructure](../android/view/ViewStructure.md) used for content capture.
-- Notify the [ContentCaptureSession](../android/view/contentcapture/ContentCaptureSession.md) when the text is changed by user input.
+- Fill [ViewStructure](../android.view/ViewStructure.md) used for content capture.
+- Notify the [ContentCaptureSession](ContentCaptureSession.md) when the text is changed by user input.
 
 Here's an example of the relevant methods for an`EditText`-like view: 
 
@@ -124,26 +124,26 @@ Here's an example of the relevant methods for an`EditText`-like view:
   </code>
 ```
 
-If your view provides its own virtual hierarchy (for example, if it's a browser that draws the HTML using [Canvas](../android/graphics/Canvas.md) or native libraries in a different render process), then the view is also responsible to notify the session when the virtual elements appear and disappear - see [View.onProvideContentCaptureStructure(ViewStructure, int)](../android/view/View.md))for more info.
+If your view provides its own virtual hierarchy (for example, if it's a browser that draws the HTML using [Canvas](../android.graphics/Canvas.md) or native libraries in a different render process), then the view is also responsible to notify the session when the virtual elements appear and disappear - see [View.onProvideContentCaptureStructure(ViewStructure, int)](../android.view/View.md))for more info.
 
 ## Summary
 
 | Constants ||
 |----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DATA_SHARE_ERROR_CONCURRENT_REQUEST](../android/view/contentcapture/ContentCaptureManager.md) Request has been rejected, because a concurrent data share sessions is in progress. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DATA_SHARE_ERROR_TIMEOUT_INTERRUPTED](../android/view/contentcapture/ContentCaptureManager.md) Request has been interrupted because of data share session timeout. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DATA_SHARE_ERROR_UNKNOWN](../android/view/contentcapture/ContentCaptureManager.md) Error happened during the data sharing session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DATA_SHARE_ERROR_CONCURRENT_REQUEST](ContentCaptureManager.md) Request has been rejected, because a concurrent data share sessions is in progress. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DATA_SHARE_ERROR_TIMEOUT_INTERRUPTED](ContentCaptureManager.md) Request has been interrupted because of data share session timeout. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DATA_SHARE_ERROR_UNKNOWN](ContentCaptureManager.md) Error happened during the data sharing session. |
 | --- | --- |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [ContentCaptureCondition](../android/view/contentcapture/ContentCaptureCondition.md)!\>? | [getContentCaptureConditions](../android/view/contentcapture/ContentCaptureManager.md))`()` Gets the list of conditions for when content capture should be allowed. |
-| [ComponentName](../android/content/ComponentName.md)? | [getServiceComponentName](../android/view/contentcapture/ContentCaptureManager.md))`()` Returns the component name of the system service that is consuming the captured events for the current user. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isContentCaptureEnabled](../android/view/contentcapture/ContentCaptureManager.md))`()` Checks whether content capture is enabled for this activity. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [ContentCaptureCondition](ContentCaptureCondition.md)!\>? | [getContentCaptureConditions](ContentCaptureManager.md))`()` Gets the list of conditions for when content capture should be allowed. |
+| [ComponentName](../android.content/ComponentName.md)? | [getServiceComponentName](ContentCaptureManager.md))`()` Returns the component name of the system service that is consuming the captured events for the current user. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isContentCaptureEnabled](ContentCaptureManager.md))`()` Checks whether content capture is enabled for this activity. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeData](../android/view/contentcapture/ContentCaptureManager.md))`(`request:` ` [DataRemovalRequest](../android/view/contentcapture/DataRemovalRequest.md)`)` Called by the app to request the content capture service to remove content capture data associated with some context. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setContentCaptureEnabled](../android/view/contentcapture/ContentCaptureManager.md))`(`enabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Called by apps to explicitly enable or disable content capture. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [shareData](../android/view/contentcapture/ContentCaptureManager.md))`(`request:` ` [DataShareRequest](../android/view/contentcapture/DataShareRequest.md)`, `executor:` ` [Executor](../java/util/concurrent/Executor.md)`, `dataShareWriteAdapter:` ` [DataShareWriteAdapter](../android/view/contentcapture/DataShareWriteAdapter.md)`)` Called by the app to request data sharing via writing to a file. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [removeData](ContentCaptureManager.md))`(`request:` ` [DataRemovalRequest](DataRemovalRequest.md)`)` Called by the app to request the content capture service to remove content capture data associated with some context. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setContentCaptureEnabled](ContentCaptureManager.md))`(`enabled:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Called by apps to explicitly enable or disable content capture. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [shareData](ContentCaptureManager.md))`(`request:` ` [DataShareRequest](DataShareRequest.md)`, `executor:` ` [Executor](../java.util.concurrent/Executor.md)`, `dataShareWriteAdapter:` ` [DataShareWriteAdapter](DataShareWriteAdapter.md)`)` Called by the app to request data sharing via writing to a file. |
 | --- | --- |
 
 ## Constants
@@ -200,7 +200,7 @@ This method is typically used by web browsers so they don't generate unnecessary
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [ContentCaptureCondition](../android/view/contentcapture/ContentCaptureCondition.md)!>? | list of conditions, or`null`if the service didn't set any restriction (in which case content capture events should always be generated). If the list is empty, then it should not generate any event at all. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [ContentCaptureCondition](ContentCaptureCondition.md)!>? | list of conditions, or`null`if the service didn't set any restriction (in which case content capture events should always be generated). If the list is empty, then it should not generate any event at all. |
 
 ### getServiceComponentName
 
@@ -214,7 +214,7 @@ Returns the component name of the system service that is consuming the captured 
 
 | Return ||
 |------------------------------------------------------------------------------------------------------|--------------------------|
-| [ComponentName](../android/content/ComponentName.md)? | This value may be`null`. |
+| [ComponentName](../android.content/ComponentName.md)? | This value may be`null`. |
 
 | Exceptions ||
 |------------------------------|---------------------------------------------|
@@ -232,7 +232,7 @@ Checks whether content capture is enabled for this activity.
 
 There are many reasons it could be disabled, such as:
 
-- App itself disabled content capture through [setContentCaptureEnabled(boolean)](../android/view/contentcapture/ContentCaptureManager.md)).
+- App itself disabled content capture through [setContentCaptureEnabled(boolean)](ContentCaptureManager.md)).
 - Intelligence service did not allowlist content capture for this activity's package.
 - Intelligence service did not allowlist content capture for this specific activity.
 - Intelligence service disabled content capture globally.
@@ -252,7 +252,7 @@ Called by the app to request the content capture service to remove content captu
 
 | Parameters ||
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `request` | [DataRemovalRequest](../android/view/contentcapture/DataRemovalRequest.md):object specifying what user data should be removed. This value cannot be`null`. |
+| `request` | [DataRemovalRequest](DataRemovalRequest.md):object specifying what user data should be removed. This value cannot be`null`. |
 
 ### setContentCaptureEnabled
 
@@ -264,7 +264,7 @@ fun setContentCaptureEnabled(enabled: Boolean): Unit
 
 Called by apps to explicitly enable or disable content capture.
 
-**Note:** this call is not persisted accross reboots, so apps should typically call it on [android.app.Activity#onCreate(android.os.Bundle, android.os.PersistableBundle)](../android/app/Activity.md)). 
+**Note:** this call is not persisted accross reboots, so apps should typically call it on [android.app.Activity#onCreate(android.os.Bundle, android.os.PersistableBundle)](../android.app/Activity.md)). 
 
 ### shareData
 
@@ -286,7 +286,7 @@ Note: using this API doesn't guarantee the app staying alive and is "best-effort
 
 | Parameters ||
 |-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `request` | [DataShareRequest](../android/view/contentcapture/DataShareRequest.md):object specifying details of the data being shared. This value cannot be`null`. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md):This value cannot be`null`. Callback and listener events are dispatched through this [Executor](../java/util/concurrent/Executor.md), providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use [Context.getMainExecutor()](../android/content/Context.md)). Otherwise, provide an [Executor](../java/util/concurrent/Executor.md) that dispatches to an appropriate thread. |
-| `dataShareWriteAdapter` | [DataShareWriteAdapter](../android/view/contentcapture/DataShareWriteAdapter.md):This value cannot be`null`. |
+| `request` | [DataShareRequest](DataShareRequest.md):object specifying details of the data being shared. This value cannot be`null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md):This value cannot be`null`. Callback and listener events are dispatched through this [Executor](../java.util.concurrent/Executor.md), providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use [Context.getMainExecutor()](../android.content/Context.md)). Otherwise, provide an [Executor](../java.util.concurrent/Executor.md) that dispatches to an appropriate thread. |
+| `dataShareWriteAdapter` | [DataShareWriteAdapter](DataShareWriteAdapter.md):This value cannot be`null`. |
 | --- | --- |

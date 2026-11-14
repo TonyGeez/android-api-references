@@ -8,9 +8,9 @@ open class DatagramSocket : Closeable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.net.DatagramSocket](../java/net/DatagramSocket.md) |
+| ↳ | [java.net.DatagramSocket](DatagramSocket.md) |
 
-| Known Direct Subclasses [MulticastSocket](../java/net/MulticastSocket.md) |---|---| | [MulticastSocket](../java/net/MulticastSocket.md) | The multicast datagram socket class is useful for sending and receiving IP multicast packets. | |
+| Known Direct Subclasses [MulticastSocket](MulticastSocket.md) |---|---| | [MulticastSocket](MulticastSocket.md) | The multicast datagram socket class is useful for sending and receiving IP multicast packets. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 This class represents a socket for sending and receiving datagram packets.
@@ -44,17 +44,17 @@ Example: `DatagramSocket s = new DatagramSocket(null); s.bind(new InetSocketAddr
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/net/DatagramSocket#disconnect()()` Disconnects the socket. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/net/DatagramSocket#getBroadcast()()` Tests if SO_BROADCAST is enabled. |
 | --- | --- |
-| open [DatagramChannel](../java/nio/channels/DatagramChannel.md)! | `https://developer.android.com/reference/kotlin/java/net/DatagramSocket#getChannel()()` Returns the unique `https://developer.android.com/reference/kotlin/java/nio/channels/DatagramChannel.html#` object associated with this datagram socket, if any. |
-| open [InetAddress](../java/net/InetAddress.md)! | `https://developer.android.com/reference/kotlin/java/net/DatagramSocket#getInetAddress()()` Returns the address to which this socket is connected. |
-| open [InetAddress](../java/net/InetAddress.md)! | `https://developer.android.com/reference/kotlin/java/net/DatagramSocket#getLocalAddress()()` Gets the local address to which the socket is bound. |
+| open [DatagramChannel](../java.nio.channels/DatagramChannel.md)! | `https://developer.android.com/reference/kotlin/java/net/DatagramSocket#getChannel()()` Returns the unique `https://developer.android.com/reference/kotlin/java/nio/channels/DatagramChannel.html#` object associated with this datagram socket, if any. |
+| open [InetAddress](InetAddress.md)! | `https://developer.android.com/reference/kotlin/java/net/DatagramSocket#getInetAddress()()` Returns the address to which this socket is connected. |
+| open [InetAddress](InetAddress.md)! | `https://developer.android.com/reference/kotlin/java/net/DatagramSocket#getLocalAddress()()` Gets the local address to which the socket is bound. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/DatagramSocket#getLocalPort()()` Returns the port number on the local host to which this socket is bound. |
-| open [SocketAddress](../java/net/SocketAddress.md)! | `https://developer.android.com/reference/kotlin/java/net/DatagramSocket#getLocalSocketAddress()()` Returns the address of the endpoint this socket is bound to. |
+| open [SocketAddress](SocketAddress.md)! | `https://developer.android.com/reference/kotlin/java/net/DatagramSocket#getLocalSocketAddress()()` Returns the address of the endpoint this socket is bound to. |
 | open T | `https://developer.android.com/reference/kotlin/java/net/DatagramSocket#getOption(java.net.SocketOption)(name: https://developer.android.com/reference/kotlin/java/net/SocketOption<T>!)` Returns the value of a socket option. |
 | --- | --- |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/DatagramSocket#getPort()()` Returns the port number to which this socket is connected. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/DatagramSocket#getReceiveBufferSize()()` Get value of the SO_RCVBUF option for this `DatagramSocket`, that is the buffer size used by the platform for input on this `DatagramSocket`. |
-| open [SocketAddress](../java/net/SocketAddress.md)! | `https://developer.android.com/reference/kotlin/java/net/DatagramSocket#getRemoteSocketAddress()()` Returns the address of the endpoint this socket is connected to, or `null` if it is unconnected. |
+| open [SocketAddress](SocketAddress.md)! | `https://developer.android.com/reference/kotlin/java/net/DatagramSocket#getRemoteSocketAddress()()` Returns the address of the endpoint this socket is connected to, or `null` if it is unconnected. |
 | --- | --- |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/java/net/DatagramSocket#getReuseAddress()()` Tests if SO_REUSEADDR is enabled. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/net/DatagramSocket#getSendBufferSize()()` Get value of the SO_SNDBUF option for this `DatagramSocket`, that is the buffer size used by the platform for output on this `DatagramSocket`. |
@@ -70,7 +70,7 @@ Example: `DatagramSocket s = new DatagramSocket(null); s.bind(new InetSocketAddr
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/net/DatagramSocket#setBroadcast(kotlin.Boolean)(on: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Enable/disable SO_BROADCAST. |
 | open static [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/net/DatagramSocket#setDatagramSocketImplFactory(java.net.DatagramSocketImplFactory)(fac: https://developer.android.com/reference/kotlin/java/net/DatagramSocketImplFactory!)` Sets the datagram socket implementation factory for the application. |
-| open [DatagramSocket](../java/net/DatagramSocket.md)! | `https://developer.android.com/reference/kotlin/java/net/DatagramSocket#setOption(java.net.SocketOption,%20java.net.DatagramSocket.setOption.T)(name: https://developer.android.com/reference/kotlin/java/net/SocketOption<T>!, value: T)` Sets the value of a socket option. |
+| open [DatagramSocket](DatagramSocket.md)! | `https://developer.android.com/reference/kotlin/java/net/DatagramSocket#setOption(java.net.SocketOption,%20java.net.DatagramSocket.setOption.T)(name: https://developer.android.com/reference/kotlin/java/net/SocketOption<T>!, value: T)` Sets the value of a socket option. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/net/DatagramSocket#setReceiveBufferSize(kotlin.Int)(size: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets the SO_RCVBUF option to the specified value for this `DatagramSocket`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/net/DatagramSocket#setReuseAddress(kotlin.Boolean)(on: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Enable/disable the SO_REUSEADDR socket option. |
@@ -78,7 +78,7 @@ Example: `DatagramSocket s = new DatagramSocket(null); s.bind(new InetSocketAddr
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/net/DatagramSocket#setSoTimeout(kotlin.Int)(timeout: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Enable/disable SO_TIMEOUT with the specified timeout, in milliseconds. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/net/DatagramSocket#setTrafficClass(kotlin.Int)(tc: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Sets traffic class or type-of-service octet in the IP datagram header for datagrams sent from this DatagramSocket. |
-| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [SocketOption](../java/net/SocketOption.md)\<\*\>!\>! | `https://developer.android.com/reference/kotlin/java/net/DatagramSocket#supportedOptions()()` Returns a set of the socket options supported by this socket. |
+| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [SocketOption](SocketOption.md)\<\*\>!\>! | `https://developer.android.com/reference/kotlin/java/net/DatagramSocket#supportedOptions()()` Returns a set of the socket options supported by this socket. |
 | --- | --- |
 
 ## Public constructors
@@ -146,7 +146,7 @@ If there is a security manager, its `checkListen` method is first called with th
 | Parameters ||
 |---|---|
 | `port` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): local port to use |
-| `laddr` | [InetAddress](../java/net/InetAddress.md)!: local address to bind |
+| `laddr` | [InetAddress](InetAddress.md)!: local address to bind |
 
 | Exceptions ||
 |---|---|
@@ -173,7 +173,7 @@ If there is a security manager, its `checkListen` method is first called with th
 
 | Parameters ||
 |---|---|
-| `bindaddr` | [SocketAddress](../java/net/SocketAddress.md)!: local socket address to bind, or `null` for an unbound socket. |
+| `bindaddr` | [SocketAddress](SocketAddress.md)!: local socket address to bind, or `null` for an unbound socket. |
 
 | Exceptions ||
 |---|---|
@@ -198,7 +198,7 @@ Creates an unbound datagram socket with the specified DatagramSocketImpl.
 
 | Parameters ||
 |---|---|
-| `impl` | [DatagramSocketImpl](../java/net/DatagramSocketImpl.md)!: an instance of a **DatagramSocketImpl** the subclass wishes to use on the DatagramSocket. |
+| `impl` | [DatagramSocketImpl](DatagramSocketImpl.md)!: an instance of a **DatagramSocketImpl** the subclass wishes to use on the DatagramSocket. |
 
 ## Public methods
 
@@ -216,7 +216,7 @@ If the address is `null`, then the system will pick up an ephemeral port and a v
 
 | Parameters ||
 |---|---|
-| `addr` | [SocketAddress](../java/net/SocketAddress.md)!: The address and port to bind to. |
+| `addr` | [SocketAddress](SocketAddress.md)!: The address and port to bind to. |
 
 | Exceptions ||
 |---|---|
@@ -265,7 +265,7 @@ When a socket is connected, `https://developer.android.com/reference/kotlin/java
 
 | Parameters ||
 |---|---|
-| `address` | [InetAddress](../java/net/InetAddress.md)!: the remote address for the socket |
+| `address` | [InetAddress](InetAddress.md)!: the remote address for the socket |
 | `port` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the remote port for the socket. |
 
 | Exceptions ||
@@ -291,7 +291,7 @@ If given an `https://developer.android.com/reference/kotlin/java/net/InetSocketA
 
 | Parameters ||
 |---|---|
-| `addr` | [SocketAddress](../java/net/SocketAddress.md)!: The remote address. |
+| `addr` | [SocketAddress](SocketAddress.md)!: The remote address. |
 
 | Exceptions ||
 |---|---|
@@ -430,7 +430,7 @@ Returns the value of a socket option.
 | Parameters ||
 |---|---|
 | `<T>` | The type of the socket option value |
-| `name` | [SocketOption](../java/net/SocketOption.md)\<T\>!: The socket option |
+| `name` | [SocketOption](SocketOption.md)\<T\>!: The socket option |
 
 | Return ||
 |---|---|
@@ -656,7 +656,7 @@ If there is a security manager, a packet cannot be received if the security mana
 
 | Parameters ||
 |---|---|
-| `p` | [DatagramPacket](../java/net/DatagramPacket.md)!: the `DatagramPacket` into which to place the incoming data. |
+| `p` | [DatagramPacket](DatagramPacket.md)!: the `DatagramPacket` into which to place the incoming data. |
 
 | Exceptions ||
 |---|---|
@@ -685,7 +685,7 @@ If there is a security manager, and the socket is not currently connected to a r
 
 | Parameters ||
 |---|---|
-| `p` | [DatagramPacket](../java/net/DatagramPacket.md)!: the `DatagramPacket` to be sent. |
+| `p` | [DatagramPacket](DatagramPacket.md)!: the `DatagramPacket` to be sent. |
 
 | Exceptions ||
 |---|---|
@@ -743,7 +743,7 @@ If there is a security manager, this method first calls the security manager's `
 
 | Parameters ||
 |---|---|
-| `fac` | [DatagramSocketImplFactory](../java/net/DatagramSocketImplFactory.md)!: the desired factory. |
+| `fac` | [DatagramSocketImplFactory](DatagramSocketImplFactory.md)!: the desired factory. |
 
 | Exceptions ||
 |---|---|
@@ -773,7 +773,7 @@ Sets the value of a socket option.
 | Parameters ||
 |---|---|
 | `<T>` | The type of the socket option value |
-| `name` | [SocketOption](../java/net/SocketOption.md)\<T\>!: The socket option |
+| `name` | [SocketOption](SocketOption.md)\<T\>!: The socket option |
 | `value` | T: The value of the socket option. A value of `null` may be valid for some options. |
 | --- | --- |
 

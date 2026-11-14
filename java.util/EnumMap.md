@@ -10,18 +10,18 @@ open class EnumMap<K : Enum<K>!, V : Any!> : AbstractMap<K, V>, Cloneable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.util.AbstractMap](../java/util/AbstractMap.md)\<K, V\> ||
-| | ↳ | [java.util.EnumMap](../java/util/EnumMap.md) |
+| ↳ | [java.util.AbstractMap](AbstractMap.md)\<K, V\> ||
+| | ↳ | [java.util.EnumMap](EnumMap.md) |
 
-A specialized [Map](../java/util/Map.md) implementation for use with enum type keys. All of the keys in an enum map must come from a single enum type that is specified, explicitly or implicitly, when the map is created. Enum maps are represented internally as arrays. This representation is extremely compact and efficient.
+A specialized [Map](Map.md) implementation for use with enum type keys. All of the keys in an enum map must come from a single enum type that is specified, explicitly or implicitly, when the map is created. Enum maps are represented internally as arrays. This representation is extremely compact and efficient.
 
 Enum maps are maintained in the*natural order*of their keys (the order in which the enum constants are declared). This is reflected in the iterators returned by the collections views (#keySet(), #entrySet(), and #values()).
 
-Iterators returned by the collection views are*weakly consistent* : they will never throw [ConcurrentModificationException](../java/util/ConcurrentModificationException.md) and they may or may not show the effects of any modifications to the map that occur while the iteration is in progress.
+Iterators returned by the collection views are*weakly consistent* : they will never throw [ConcurrentModificationException](ConcurrentModificationException.md) and they may or may not show the effects of any modifications to the map that occur while the iteration is in progress.
 
-Null keys are not permitted. Attempts to insert a null key will throw [NullPointerException](../java/lang/NullPointerException.md). Attempts to test for the presence of a null key or to remove one will, however, function properly. Null values are permitted.
+Null keys are not permitted. Attempts to insert a null key will throw [NullPointerException](../java.lang/NullPointerException.md). Attempts to test for the presence of a null key or to remove one will, however, function properly. Null values are permitted.
 
-Like most collection implementations`EnumMap`is not synchronized. If multiple threads access an enum map concurrently, and at least one of the threads modifies the map, it should be synchronized externally. This is typically accomplished by synchronizing on some object that naturally encapsulates the enum map. If no such object exists, the map should be "wrapped" using the [Collections.synchronizedMap](../java/util/Collections.md))method. This is best done at creation time, to prevent accidental unsynchronized access: 
+Like most collection implementations`EnumMap`is not synchronized. If multiple threads access an enum map concurrently, and at least one of the threads modifies the map, it should be synchronized externally. This is typically accomplished by synchronizing on some object that naturally encapsulates the enum map. If no such object exists, the map should be "wrapped" using the [Collections.synchronizedMap](Collections.md))method. This is best done at creation time, to prevent accidental unsynchronized access: 
 
 ```kotlin
 Map<EnumKey, V> m
@@ -29,7 +29,7 @@ Map<EnumKey, V> m
   
 ```
 
-Implementation note: All basic operations execute in constant time. They are likely (though not guaranteed) to be faster than their [HashMap](../java/util/HashMap.md) counterparts.
+Implementation note: All basic operations execute in constant time. They are likely (though not guaranteed) to be faster than their [HashMap](HashMap.md) counterparts.
 
 This class is a member of the [Java Collections Framework](https://developer.android.com//reference/java/util/package-summary.html#CollectionsFramework).
 
@@ -37,37 +37,37 @@ This class is a member of the [Java Collections Framework](https://developer.and
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [EnumMap](../java/util/EnumMap.md))`(`keyType:` ` [Class](../java/lang/Class.md)<K>!`)` Creates an empty enum map with the specified key type. |
-| [EnumMap](../java/util/EnumMap.md))`(`m:` ` [EnumMap](../java/util/EnumMap.md)<K,` `out` `V>!`)` Creates an enum map with the same key type as the specified enum map, initially containing the same mappings (if any). |
-| [EnumMap](../java/util/EnumMap.md))`(`m:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)<K,` `out` `V>!`)` Creates an enum map initialized from the specified map. |
+| [EnumMap](EnumMap.md))`(`keyType:` ` [Class](../java.lang/Class.md)<K>!`)` Creates an empty enum map with the specified key type. |
+| [EnumMap](EnumMap.md))`(`m:` ` [EnumMap](EnumMap.md)<K,` `out` `V>!`)` Creates an enum map with the same key type as the specified enum map, initially containing the same mappings (if any). |
+| [EnumMap](EnumMap.md))`(`m:` ` [MutableMap](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/index.html)<K,` `out` `V>!`)` Creates an enum map initialized from the specified map. |
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](../java/util/EnumMap.md))`()` Removes all mappings from this map. |
-| open [EnumMap](../java/util/EnumMap.md)\<K,V\> | [clone](../java/util/EnumMap.md))`()` Returns a shallow copy of this enum map. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsKey](../java/util/EnumMap.md))`(`key:` `K?`)` Returns`true`if this map contains a mapping for the specified key. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clear](EnumMap.md))`()` Removes all mappings from this map. |
+| open [EnumMap](EnumMap.md)\<K,V\> | [clone](EnumMap.md))`()` Returns a shallow copy of this enum map. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsKey](EnumMap.md))`(`key:` `K?`)` Returns`true`if this map contains a mapping for the specified key. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsValue](../java/util/EnumMap.md))`(`value:` `V?`)` Returns`true`if this map maps one or more keys to the specified value. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/util/EnumMap.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares the specified object with this map for equality. |
-| openV? | [get](../java/util/EnumMap.md))`(`key:` `K?`)` Returns the value to which the specified key is mapped, or`null`if this map contains no mapping for the key. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [containsValue](EnumMap.md))`(`value:` `V?`)` Returns`true`if this map maps one or more keys to the specified value. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](EnumMap.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares the specified object with this map for equality. |
+| openV? | [get](EnumMap.md))`(`key:` `K?`)` Returns the value to which the specified key is mapped, or`null`if this map contains no mapping for the key. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/util/EnumMap.md))`()` Returns the hash code value for this map. |
-| openV? | [put](../java/util/EnumMap.md))`(`key:` `K`, `value:` `V`)` Associates the specified value with the specified key in this map. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [putAll](../java/util/EnumMap.md))`(`from:` ` [Map](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html)<out` `K,` `V>`)` Copies all of the mappings from the specified map to this map. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](EnumMap.md))`()` Returns the hash code value for this map. |
+| openV? | [put](EnumMap.md))`(`key:` `K`, `value:` `V`)` Associates the specified value with the specified key in this map. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [putAll](EnumMap.md))`(`from:` ` [Map](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-map/index.html)<out` `K,` `V>`)` Copies all of the mappings from the specified map to this map. |
 | --- | --- |
-| openV? | [remove](../java/util/EnumMap.md))`(`key:` `K?`)` Removes the mapping for this key from this map if present. |
+| openV? | [remove](EnumMap.md))`(`key:` `K?`)` Removes the mapping for this key from this map if present. |
 
 | Inherited functions ||
 |---|---|
-| From class [AbstractMap](../java/util/AbstractMap.md) |------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](../java/util/AbstractMap.md))`()` <br /> Returns`true`if this map contains no key-value mappings. <br /> | | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/util/AbstractMap.md))`()` <br /> Returns a string representation of this map. The string representation consists of a list of key-value mappings in the order returned by the map's`entrySet`view's iterator, enclosed in braces (`"{}"`). Adjacent mappings are separated by the characters`", "`(comma and space). Each key-value mapping is rendered as the key followed by an equals sign (`"="`) followed by the associated value. Keys and values are converted to strings as by [String.valueOf(Object)](../java/lang/String.md)). <br /> | ||
+| From class [AbstractMap](AbstractMap.md) |------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEmpty](AbstractMap.md))`()` <br /> Returns`true`if this map contains no key-value mappings. <br /> | | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](AbstractMap.md))`()` <br /> Returns a string representation of this map. The string representation consists of a list of key-value mappings in the order returned by the map's`entrySet`view's iterator, enclosed in braces (`"{}"`). Adjacent mappings are separated by the characters`", "`(comma and space). Each key-value mapping is rendered as the key followed by an equals sign (`"="`) followed by the associated value. Keys and values are converted to strings as by [String.valueOf(Object)](../java.lang/String.md)). <br /> | ||
 
 | Properties ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K,V\>\> | [entries](../java/util/EnumMap.md) Returns a [Set](../java/util/Set.md) view of the mappings contained in this map. |
-| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<K\> | [keys](../java/util/EnumMap.md) Returns a [Set](../java/util/Set.md) view of the keys contained in this map. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [size](../java/util/EnumMap.md) Returns the number of key-value mappings in this map. |
+| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [MutableEntry](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-map/-mutable-entry/index.html)\<K,V\>\> | [entries](EnumMap.md) Returns a [Set](Set.md) view of the mappings contained in this map. |
+| open [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\<K\> | [keys](EnumMap.md) Returns a [Set](Set.md) view of the keys contained in this map. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [size](EnumMap.md) Returns the number of key-value mappings in this map. |
 | --- | --- |
-| open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<V\> | [values](../java/util/EnumMap.md) Returns a [Collection](../java/util/Collection.md) view of the values contained in this map. |
+| open [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\<V\> | [values](EnumMap.md) Returns a [Collection](Collection.md) view of the values contained in this map. |
 
 ## Public constructors
 
@@ -83,7 +83,7 @@ Creates an empty enum map with the specified key type.
 
 | Parameters ||
 |-----------|----------------------------------------------------------------------------------------------------------------------------------------|
-| `keyType` | [Class](../java/lang/Class.md)\<K\>!:the class object of the key type for this enum map |
+| `keyType` | [Class](../java.lang/Class.md)\<K\>!:the class object of the key type for this enum map |
 
 | Exceptions ||
 |----------------------------------|--------------------|
@@ -101,7 +101,7 @@ Creates an enum map with the same key type as the specified enum map, initially 
 
 | Parameters ||
 |-----|---------------------------------------------------------------------------------------------------------------------------------------------|
-| `m` | [EnumMap](../java/util/EnumMap.md)\<K,outV\>!:the enum map from which to initialize this enum map |
+| `m` | [EnumMap](EnumMap.md)\<K,outV\>!:the enum map from which to initialize this enum map |
 
 | Exceptions ||
 |----------------------------------|--------------|
@@ -115,7 +115,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 EnumMap(m: MutableMap<K, out V>!)
 ```
 
-Creates an enum map initialized from the specified map. If the specified map is an`EnumMap`instance, this constructor behaves identically to [EnumMap(java.util.EnumMap)](../java/util/EnumMap.md)). Otherwise, the specified map must contain at least one mapping (in order to determine the new enum map's key type).
+Creates an enum map initialized from the specified map. If the specified map is an`EnumMap`instance, this constructor behaves identically to [EnumMap(java.util.EnumMap)](EnumMap.md)). Otherwise, the specified map must contain at least one mapping (in order to determine the new enum map's key type).
 
 | Parameters ||
 |-----|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -154,7 +154,7 @@ Returns a shallow copy of this enum map. The values themselves are not cloned.
 
 | Return ||
 |--------------------------------------------------------------------------------------|---------------------------------|
-| [EnumMap](../java/util/EnumMap.md)<K,` `V> | a shallow copy of this enum map |
+| [EnumMap](EnumMap.md)<K,` `V> | a shallow copy of this enum map |
 
 | Exceptions ||
 |----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -214,7 +214,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun equals(other: Any?): Boolean
 ```
 
-Compares the specified object with this map for equality. Returns`true`if the given object is also a map and the two maps represent the same mappings, as specified in the [java.util.Map#equals(java.lang.Object)](../java/util/EnumMap.md) contract.
+Compares the specified object with this map for equality. Returns`true`if the given object is also a map and the two maps represent the same mappings, as specified in the [java.util.Map#equals(java.lang.Object)](EnumMap.md) contract.
 
 | Parameters ||
 |-------|------------------------------------------------------|
@@ -353,7 +353,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open val entries: MutableSet<MutableEntry<K, V>>
 ```
 
-Returns a [Set](../java/util/Set.md) view of the mappings contained in this map. The returned set obeys the general contract outlined in [Map.keySet()](../java/util/Map.md)). The set's iterator will return the mappings in the order their keys appear in map, which is their natural order (the order in which the enum constants are declared).
+Returns a [Set](Set.md) view of the mappings contained in this map. The returned set obeys the general contract outlined in [Map.keySet()](Map.md)). The set's iterator will return the mappings in the order their keys appear in map, which is their natural order (the order in which the enum constants are declared).
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------|
@@ -367,7 +367,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open val keys: MutableSet<K>
 ```
 
-Returns a [Set](../java/util/Set.md) view of the keys contained in this map. The returned set obeys the general contract outlined in [Map.keySet()](../java/util/Map.md)). The set's iterator will return the keys in their natural order (the order in which the enum constants are declared).
+Returns a [Set](Set.md) view of the keys contained in this map. The returned set obeys the general contract outlined in [Map.keySet()](Map.md)). The set's iterator will return the keys in their natural order (the order in which the enum constants are declared).
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------|---------------------------------------------------|
@@ -395,7 +395,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open val values: MutableCollection<V>
 ```
 
-Returns a [Collection](../java/util/Collection.md) view of the values contained in this map. The returned collection obeys the general contract outlined in [Map.values()](../java/util/Map.md)). The collection's iterator will return the values in the order their corresponding keys appear in map, which is their natural order (the order in which the enum constants are declared).
+Returns a [Collection](Collection.md) view of the values contained in this map. The returned collection obeys the general contract outlined in [Map.values()](Map.md)). The collection's iterator will return the values in the order their corresponding keys appear in map, which is their natural order (the order in which the enum constants are declared).
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------|

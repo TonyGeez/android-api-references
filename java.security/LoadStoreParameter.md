@@ -10,10 +10,10 @@ interface LoadStoreParameter
 
 | [java.security.KeyStore.LoadStoreParameter](../java/security/KeyStore.LoadStoreParameter.md) |
 
-| Known Direct Subclasses [DomainLoadStoreParameter](../java/security/DomainLoadStoreParameter.md) |-------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------| | [DomainLoadStoreParameter](../java/security/DomainLoadStoreParameter.md) | Configuration data that specifies the keystores in a keystore domain. | |
+| Known Direct Subclasses [DomainLoadStoreParameter](DomainLoadStoreParameter.md) |-------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------| | [DomainLoadStoreParameter](DomainLoadStoreParameter.md) | Configuration data that specifies the keystores in a keystore domain. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
-A marker interface for`KeyStore` [load](../java/security/KeyStore.md))and [store](../java/security/KeyStore.md))parameters.
+A marker interface for`KeyStore` [load](KeyStore.md))and [store](KeyStore.md))parameters.
 
 ## Summary
 

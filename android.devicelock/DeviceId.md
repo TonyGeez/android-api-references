@@ -4,7 +4,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # DeviceId
 
-Kotlin| [Java](../android/devicelock/DeviceId.md) 
+Kotlin| [Java](DeviceId.md) 
 | --- | --- |
 
 ```
@@ -13,23 +13,23 @@ class DeviceId
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.devicelock.DeviceId](../android/devicelock/DeviceId.md) |
+| ↳ | [android.devicelock.DeviceId](DeviceId.md) |
 
-The response returned from [DeviceLockManager.getDeviceId](../android/devicelock/DeviceLockManager.md))on success. A DeviceId represents a stable identifier (i.e. an identifier that is preserved after a factory reset). At this moment, the only supported identifiers are IMEI, MEID and the Device Serial Number.
+The response returned from [DeviceLockManager.getDeviceId](DeviceLockManager.md))on success. A DeviceId represents a stable identifier (i.e. an identifier that is preserved after a factory reset). At this moment, the only supported identifiers are IMEI, MEID and the Device Serial Number.
 
 ## Summary
 
 | Constants ||
 |----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEVICE_ID_TYPE_IMEI](../android/devicelock/DeviceId.md) The device id is an IMEI |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEVICE_ID_TYPE_MEID](../android/devicelock/DeviceId.md) The device id is a MEID |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEVICE_ID_TYPE_SERIAL_NUMBER](../android/devicelock/DeviceId.md) The device id is a serial number |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEVICE_ID_TYPE_IMEI](DeviceId.md) The device id is an IMEI |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEVICE_ID_TYPE_MEID](DeviceId.md) The device id is a MEID |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DEVICE_ID_TYPE_SERIAL_NUMBER](DeviceId.md) The device id is a serial number |
 | --- | --- |
 
 | Public methods ||
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getId](../android/devicelock/DeviceId.md))`()` <br /> |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getType](../android/devicelock/DeviceId.md))`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getId](DeviceId.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getType](DeviceId.md))`()` <br /> |
 
 ## Constants
 
@@ -93,4 +93,4 @@ fun getType(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.devicelock.DeviceId#DEVICE_ID_TYPE_IMEI](../android/devicelock/DeviceId.md), [android.devicelock.DeviceId#DEVICE_ID_TYPE_MEID](../android/devicelock/DeviceId.md), or [android.devicelock.DeviceId#DEVICE_ID_TYPE_SERIAL_NUMBER](../android/devicelock/DeviceId.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.devicelock.DeviceId#DEVICE_ID_TYPE_IMEI](DeviceId.md), [android.devicelock.DeviceId#DEVICE_ID_TYPE_MEID](DeviceId.md), or [android.devicelock.DeviceId#DEVICE_ID_TYPE_SERIAL_NUMBER](DeviceId.md) |

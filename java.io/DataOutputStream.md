@@ -8,9 +8,9 @@ open class DataOutputStream : FilterOutputStream, DataOutput
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [java.io.OutputStream](../java/io/OutputStream.md) |||
-| | ↳ | [java.io.FilterOutputStream](../java/io/FilterOutputStream.md) ||
-| | | ↳ | [java.io.DataOutputStream](../java/io/DataOutputStream.md) |
+| ↳ | [java.io.OutputStream](OutputStream.md) |||
+| | ↳ | [java.io.FilterOutputStream](FilterOutputStream.md) ||
+| | | ↳ | [java.io.DataOutputStream](DataOutputStream.md) |
 | --- | --- | --- | --- |
 
 A data output stream lets an application write primitive Java data types to an output stream in a portable way. An application can then use a data input stream to read the data back in.
@@ -41,7 +41,7 @@ A data output stream lets an application write primitive Java data types to an o
 | --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/DataOutputStream#writeLong(kotlin.Long)(v: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Writes a `long` to the underlying output stream as eight bytes, high byte first. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/DataOutputStream#writeShort(kotlin.Int)(v: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Writes a `short` to the underlying output stream as two bytes, high byte first. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/DataOutputStream#writeUTF(kotlin.String)(str: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Writes a string to the underlying output stream using [modified UTF-8](../java/io/DataInput.md) encoding in a machine-independent manner. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/java/io/DataOutputStream#writeUTF(kotlin.String)(str: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Writes a string to the underlying output stream using [modified UTF-8](DataInput.md) encoding in a machine-independent manner. |
 | --- | --- |
 
 | Inherited functions ||
@@ -71,7 +71,7 @@ Creates a new data output stream to write data to the specified underlying outpu
 
 | Parameters ||
 |---|---|
-| `out` | [OutputStream](../java/io/OutputStream.md)!: the underlying output stream, to be saved for later use. |
+| `out` | [OutputStream](OutputStream.md)!: the underlying output stream, to be saved for later use. |
 
 **See Also**
 
@@ -402,7 +402,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 fun writeUTF(str: String!): Unit
 ```
 
-Writes a string to the underlying output stream using [modified UTF-8](../java/io/DataInput.md) encoding in a machine-independent manner.
+Writes a string to the underlying output stream using [modified UTF-8](DataInput.md) encoding in a machine-independent manner.
 
 First, two bytes are written to the output stream as if by the `writeShort` method giving the number of bytes to follow. This value is the number of bytes actually written out, not the length of the string. Following the length, each character of the string is output, in sequence, using the modified UTF-8 encoding for the character. If no exception is thrown, the counter `written` is incremented by the total number of bytes written to the output stream. This will be at least two plus the length of `str`, and at most two plus thrice the length of `str`.
 

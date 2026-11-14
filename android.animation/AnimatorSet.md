@@ -2,7 +2,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 
 # AnimatorSet
 
-Kotlin | [Java](../android/animation/AnimatorSet.md)
+Kotlin | [Java](AnimatorSet.md)
 | --- | --- |
 
 ```
@@ -11,8 +11,8 @@ class AnimatorSet : Animator
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.animation.Animator](../android/animation/Animator.md) ||
-| | ↳ | [android.animation.AnimatorSet](../android/animation/AnimatorSet.md) |
+| ↳ | [android.animation.Animator](Animator.md) ||
+| | ↳ | [android.animation.AnimatorSet](AnimatorSet.md) |
 
 This class plays a set of `https://developer.android.com/reference/kotlin/android/animation/Animator` objects in the specified order. Animations can be set up to play together, in sequence, or after a specified delay.
 
@@ -41,14 +41,14 @@ It is possible to set up a `AnimatorSet` with circular dependencies between its 
 | Public methods ||
 |---|---|
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#cancel()()` Cancels the animation. |
-| [AnimatorSet](../android/animation/AnimatorSet.md) | `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#clone()()` Creates and returns a copy of this object. |
+| [AnimatorSet](AnimatorSet.md) | `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#clone()()` Creates and returns a copy of this object. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#end()()` Ends the animation. |
 | --- | --- |
-| [ArrayList](../java/util/ArrayList.md)\< [Animator](../android/animation/Animator.md)!\>! | `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#getChildAnimations()()` Returns the current list of child Animator objects controlled by this AnimatorSet. |
+| [ArrayList](../java.util/ArrayList.md)\< [Animator](Animator.md)!\>! | `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#getChildAnimations()()` Returns the current list of child Animator objects controlled by this AnimatorSet. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#getCurrentPlayTime()()` Returns the milliseconds elapsed since the start of the animation. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#getDuration()()` Gets the length of each of the child animations of this AnimatorSet. |
 | --- | --- |
-| [TimeInterpolator](../android/animation/TimeInterpolator.md)! | `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#getInterpolator()()` Returns the timing interpolator that this animation uses. |
+| [TimeInterpolator](TimeInterpolator.md)! | `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#getInterpolator()()` Returns the timing interpolator that this animation uses. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#getStartDelay()()` The amount of time, in milliseconds, to delay starting the animation after `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#start()` is called. |
 | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#getTotalDuration()()` Gets the total duration of the animation, accounting for animation sequences, start delay, and repeating. |
 | --- | --- |
@@ -66,7 +66,7 @@ It is possible to set up a `AnimatorSet` with circular dependencies between its 
 | --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#reverse()()` Plays the AnimatorSet in reverse. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#setCurrentPlayTime(kotlin.Long)(playTime: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Sets the position of the animation to the specified point in time. |
-| [AnimatorSet](../android/animation/AnimatorSet.md)! | `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#setDuration(kotlin.Long)(duration: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Sets the length of each of the current child animations of this AnimatorSet. |
+| [AnimatorSet](AnimatorSet.md)! | `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#setDuration(kotlin.Long)(duration: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` Sets the length of each of the current child animations of this AnimatorSet. |
 | --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#setInterpolator(android.animation.TimeInterpolator)(interpolator: https://developer.android.com/reference/kotlin/android/animation/TimeInterpolator!)` Sets the TimeInterpolator for all current `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#getChildAnimations()` of this AnimatorSet. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#setStartDelay(kotlin.Long)(startDelay: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)` The amount of time, in milliseconds, to delay starting the animation after `https://developer.android.com/reference/kotlin/android/animation/AnimatorSet#start()` is called. |
@@ -299,7 +299,7 @@ Note that `play()` is the only way to tell the `Builder` the animation upon whic
 
 | Parameters ||
 |---|---|
-| `anim` | [Animator](../android/animation/Animator.md)!: The animation that is the dependency used in later calls to the methods in the returned `Builder` object. A null parameter will result in a null `Builder` return value. |
+| `anim` | [Animator](Animator.md)!: The animation that is the dependency used in later calls to the methods in the returned `Builder` object. A null parameter will result in a null `Builder` return value. |
 
 | Return ||
 |---|---|
@@ -317,7 +317,7 @@ Sets up this AnimatorSet to play each of the supplied animations when the previo
 
 | Parameters ||
 |---|---|
-| `items` | [Animator](../android/animation/Animator.md)!: The animations that will be started one after another. |
+| `items` | [Animator](Animator.md)!: The animations that will be started one after another. |
 
 ### playSequentially
 
@@ -331,7 +331,7 @@ Sets up this AnimatorSet to play each of the supplied animations when the previo
 
 | Parameters ||
 |---|---|
-| `items` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Animator](../android/animation/Animator.md)!\>!: The animations that will be started one after another. |
+| `items` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Animator](Animator.md)!\>!: The animations that will be started one after another. |
 
 ### playTogether
 
@@ -345,7 +345,7 @@ Sets up this AnimatorSet to play all of the supplied animations at the same time
 
 | Parameters ||
 |---|---|
-| `items` | [Animator](../android/animation/Animator.md)!: The animations that will be started simultaneously. |
+| `items` | [Animator](Animator.md)!: The animations that will be started simultaneously. |
 
 ### playTogether
 
@@ -359,7 +359,7 @@ Sets up this AnimatorSet to play all of the supplied animations at the same time
 
 | Parameters ||
 |---|---|
-| `items` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Animator](../android/animation/Animator.md)!\>!: The animations that will be started simultaneously. |
+| `items` | [MutableCollection](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-collection/index.html)\< [Animator](Animator.md)!\>!: The animations that will be started simultaneously. |
 
 ### resume
 
@@ -424,7 +424,7 @@ Sets the TimeInterpolator for all current `https://developer.android.com/referen
 | Parameters ||
 |---|---|
 | `value` | the interpolator to be used by this animation |
-| `interpolator` | [TimeInterpolator](../android/animation/TimeInterpolator.md)!: the interpolator to be used by each child animation of this AnimatorSet |
+| `interpolator` | [TimeInterpolator](TimeInterpolator.md)!: the interpolator to be used by each child animation of this AnimatorSet |
 
 ### setStartDelay
 

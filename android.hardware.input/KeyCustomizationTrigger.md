@@ -8,8 +8,8 @@ class KeyCustomizationTrigger : CustomizationTrigger
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.hardware.input.CustomizationTrigger](../android/hardware/input/CustomizationTrigger.md) ||
-| | ↳ | [android.hardware.input.KeyCustomizationTrigger](../android/hardware/input/KeyCustomizationTrigger.md) |
+| ↳ | [android.hardware.input.CustomizationTrigger](CustomizationTrigger.md) ||
+| | ↳ | [android.hardware.input.KeyCustomizationTrigger](KeyCustomizationTrigger.md) |
 
 Represents a trigger based on a physical key press on a peripheral.
 

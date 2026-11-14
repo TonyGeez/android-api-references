@@ -5,7 +5,7 @@ Deprecated in [API level 5](https://developer.android.com/guide/topics/manifest/
 
 # Contacts
 
-Kotlin| [Java](../android/provider/Contacts.md) 
+Kotlin| [Java](Contacts.md) 
 | --- | --- |
 
 ```
@@ -14,11 +14,11 @@ open class Contacts
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.provider.Contacts](../android/provider/Contacts.md) |
+| ↳ | [android.provider.Contacts](Contacts.md) |
 
 | **This class was deprecated in API level 5.**
 |
-| The APIs have been superseded by [ContactsContract](../android/provider/ContactsContract.md). The newer APIs allow access multiple accounts and support aggregation of similar contacts. These APIs continue to work but will only return data for the first Google account created, which matches the original behavior.
+| The APIs have been superseded by [ContactsContract](ContactsContract.md). The newer APIs allow access multiple accounts and support aggregation of similar contacts. These APIs continue to work but will only return data for the first Google account created, which matches the original behavior.
 
 The Contacts provider stores all information about contacts.
 
@@ -35,7 +35,7 @@ The Contacts provider stores all information about contacts.
 | | [Groups](../android/provider/Contacts.Groups.md) This table contains the groups for an account. |
 | --- | --- |
 | abstract | [GroupsColumns](../android/provider/Contacts.GroupsColumns.md) Columns from the groups table. |
-| | [Intents](../android/provider/Contacts.Intents.md) Contains helper classes used to create or manage [Intents](../android/content/Intent.md) that involve contacts. |
+| | [Intents](../android/provider/Contacts.Intents.md) Contains helper classes used to create or manage [Intents](../android.content/Intent.md) that involve contacts. |
 | abstract | [OrganizationColumns](../android/provider/Contacts.OrganizationColumns.md) Columns from the Organizations table that other columns join into themselves. |
 | --- | --- |
 | | [Organizations](../android/provider/Contacts.Organizations.md) A sub directory of a single person that contains all of their Phones. |
@@ -54,18 +54,18 @@ The Contacts provider stores all information about contacts.
 
 | Constants ||
 |----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [AUTHORITY](../android/provider/Contacts.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [KIND_EMAIL](../android/provider/Contacts.md) Signifies an email address row that is stored in the ContactMethods table |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [KIND_IM](../android/provider/Contacts.md) Signifies an IM address row that is stored in the ContactMethods table |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [AUTHORITY](Contacts.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [KIND_EMAIL](Contacts.md) Signifies an email address row that is stored in the ContactMethods table |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [KIND_IM](Contacts.md) Signifies an IM address row that is stored in the ContactMethods table |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [KIND_ORGANIZATION](../android/provider/Contacts.md) Signifies an Organization row that is stored in the Organizations table |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [KIND_PHONE](../android/provider/Contacts.md) Signifies a Phone row that is stored in the Phones table |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [KIND_POSTAL](../android/provider/Contacts.md) Signifies a postal address row that is stored in the ContactMethods table |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [KIND_ORGANIZATION](Contacts.md) Signifies an Organization row that is stored in the Organizations table |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [KIND_PHONE](Contacts.md) Signifies a Phone row that is stored in the Phones table |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [KIND_POSTAL](Contacts.md) Signifies a postal address row that is stored in the ContactMethods table |
 | --- | --- |
 
 | Properties ||
 |------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Uri](../android/net/Uri.md)! | [CONTENT_URI](../android/provider/Contacts.md) The content:// style URL for this provider |
+| static [Uri](../android.net/Uri.md)! | [CONTENT_URI](Contacts.md) The content:// style URL for this provider |
 
 ## Constants
 
@@ -77,7 +77,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val AUTHORITY: String
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)* 
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)* 
 
  Value: "contacts"
 
@@ -89,7 +89,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val KIND_EMAIL: Int
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)*
 
 Signifies an email address row that is stored in the ContactMethods table 
 
@@ -103,7 +103,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val KIND_IM: Int
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)*
 
 Signifies an IM address row that is stored in the ContactMethods table 
 
@@ -117,7 +117,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val KIND_ORGANIZATION: Int
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)*
 
 Signifies an Organization row that is stored in the Organizations table 
 
@@ -131,7 +131,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val KIND_PHONE: Int
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)*
 
 Signifies a Phone row that is stored in the Phones table 
 
@@ -145,7 +145,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val KIND_POSTAL: Int
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)*
 
 Signifies a postal address row that is stored in the ContactMethods table 
 
@@ -161,6 +161,6 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 static val CONTENT_URI: Uri!
 ```
 
-**Deprecated:** *see [android.provider.ContactsContract](../android/provider/ContactsContract.md)*
+**Deprecated:** *see [android.provider.ContactsContract](ContactsContract.md)*
 
 The content:// style URL for this provider

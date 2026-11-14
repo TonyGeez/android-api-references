@@ -3,7 +3,7 @@ Also in [Ad Services Extensions 10](https://developer.android.com/sdkExtensions)
 
 # GetAdSelectionDataRequest
 
-Kotlin | [Java](../android/adservices/adselection/GetAdSelectionDataRequest.md)
+Kotlin | [Java](GetAdSelectionDataRequest.md)
 | --- | --- |
 
 ```
@@ -12,7 +12,7 @@ class GetAdSelectionDataRequest
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.adservices.adselection.GetAdSelectionDataRequest](../android/adservices/adselection/GetAdSelectionDataRequest.md) |
+| ↳ | [android.adservices.adselection.GetAdSelectionDataRequest](GetAdSelectionDataRequest.md) |
 
 Represents a request containing the information to get ad selection data.
 
@@ -26,9 +26,9 @@ Instances of this class are created by SDKs to be provided as arguments to the `
 
 | Public methods ||
 |---|---|
-| [Uri](../android/net/Uri.md)? | `https://developer.android.com/reference/kotlin/android/adservices/adselection/GetAdSelectionDataRequest#getCoordinatorOriginUri()()` <br /> |
-| [AdTechIdentifier](../android/adservices/common/AdTechIdentifier.md)? | `https://developer.android.com/reference/kotlin/android/adservices/adselection/GetAdSelectionDataRequest#getSeller()()` <br /> |
-| [SellerConfiguration](../android/adservices/adselection/SellerConfiguration.md)? | `https://developer.android.com/reference/kotlin/android/adservices/adselection/GetAdSelectionDataRequest#getSellerConfiguration()()` Returns the seller ad tech's requested payload configuration, set by the calling SDK, to optimize the payload. |
+| [Uri](../android.net/Uri.md)? | `https://developer.android.com/reference/kotlin/android/adservices/adselection/GetAdSelectionDataRequest#getCoordinatorOriginUri()()` <br /> |
+| [AdTechIdentifier](../android.adservices.common/AdTechIdentifier.md)? | `https://developer.android.com/reference/kotlin/android/adservices/adselection/GetAdSelectionDataRequest#getSeller()()` <br /> |
+| [SellerConfiguration](SellerConfiguration.md)? | `https://developer.android.com/reference/kotlin/android/adservices/adselection/GetAdSelectionDataRequest#getSellerConfiguration()()` Returns the seller ad tech's requested payload configuration, set by the calling SDK, to optimize the payload. |
 | --- | --- |
 
 ## Public methods

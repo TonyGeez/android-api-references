@@ -4,7 +4,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 
 # DisplayCutout
 
-Kotlin| [Java](../android/view/DisplayCutout.md) 
+Kotlin| [Java](DisplayCutout.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class DisplayCutout
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.DisplayCutout](../android/view/DisplayCutout.md) |
+| ↳ | [android.view.DisplayCutout](DisplayCutout.md) |
 
 Represents the area of the display that is not functional for displaying content.
 
@@ -27,30 +27,30 @@ Represents the area of the display that is not functional for displaying content
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [DisplayCutout](../android/view/DisplayCutout.md))`(`safeInsets:` ` [Insets](../android/graphics/Insets.md)`, `boundLeft:` ` [Rect](../android/graphics/Rect.md)?`, `boundTop:` ` [Rect](../android/graphics/Rect.md)?`, `boundRight:` ` [Rect](../android/graphics/Rect.md)?`, `boundBottom:` ` [Rect](../android/graphics/Rect.md)?`)` Creates a DisplayCutout instance. |
-| [DisplayCutout](../android/view/DisplayCutout.md))`(`safeInsets:` ` [Insets](../android/graphics/Insets.md)`, `boundLeft:` ` [Rect](../android/graphics/Rect.md)?`, `boundTop:` ` [Rect](../android/graphics/Rect.md)?`, `boundRight:` ` [Rect](../android/graphics/Rect.md)?`, `boundBottom:` ` [Rect](../android/graphics/Rect.md)?`, `waterfallInsets:` ` [Insets](../android/graphics/Insets.md)`)` Creates a DisplayCutout instance. |
-| [DisplayCutout](../android/view/DisplayCutout.md))`(`safeInsets:` ` [Rect](../android/graphics/Rect.md)?`, `boundingRects:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Rect](../android/graphics/Rect.md)!>?`)` Creates a DisplayCutout instance. |
+| [DisplayCutout](DisplayCutout.md))`(`safeInsets:` ` [Insets](../android.graphics/Insets.md)`, `boundLeft:` ` [Rect](../android.graphics/Rect.md)?`, `boundTop:` ` [Rect](../android.graphics/Rect.md)?`, `boundRight:` ` [Rect](../android.graphics/Rect.md)?`, `boundBottom:` ` [Rect](../android.graphics/Rect.md)?`)` Creates a DisplayCutout instance. |
+| [DisplayCutout](DisplayCutout.md))`(`safeInsets:` ` [Insets](../android.graphics/Insets.md)`, `boundLeft:` ` [Rect](../android.graphics/Rect.md)?`, `boundTop:` ` [Rect](../android.graphics/Rect.md)?`, `boundRight:` ` [Rect](../android.graphics/Rect.md)?`, `boundBottom:` ` [Rect](../android.graphics/Rect.md)?`, `waterfallInsets:` ` [Insets](../android.graphics/Insets.md)`)` Creates a DisplayCutout instance. |
+| [DisplayCutout](DisplayCutout.md))`(`safeInsets:` ` [Rect](../android.graphics/Rect.md)?`, `boundingRects:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Rect](../android.graphics/Rect.md)!>?`)` Creates a DisplayCutout instance. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/view/DisplayCutout.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [Rect](../android/graphics/Rect.md) | [getBoundingRectBottom](../android/view/DisplayCutout.md))`()` Returns a bounding rectangle for a non-functional area on the display which is located on the bottom of the screen. |
-| [Rect](../android/graphics/Rect.md) | [getBoundingRectLeft](../android/view/DisplayCutout.md))`()` Returns a bounding rectangle for a non-functional area on the display which is located on the left of the screen. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](DisplayCutout.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [Rect](../android.graphics/Rect.md) | [getBoundingRectBottom](DisplayCutout.md))`()` Returns a bounding rectangle for a non-functional area on the display which is located on the bottom of the screen. |
+| [Rect](../android.graphics/Rect.md) | [getBoundingRectLeft](DisplayCutout.md))`()` Returns a bounding rectangle for a non-functional area on the display which is located on the left of the screen. |
 | --- | --- |
-| [Rect](../android/graphics/Rect.md) | [getBoundingRectRight](../android/view/DisplayCutout.md))`()` Returns a bounding rectangle for a non-functional area on the display which is located on the right of the screen. |
-| [Rect](../android/graphics/Rect.md) | [getBoundingRectTop](../android/view/DisplayCutout.md))`()` Returns a bounding rectangle for a non-functional area on the display which is located on the top of the screen. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Rect](../android/graphics/Rect.md)!\> | [getBoundingRects](../android/view/DisplayCutout.md))`()` Returns a list of`Rect`s, each of which is the bounding rectangle for a non-functional area on the display. |
+| [Rect](../android.graphics/Rect.md) | [getBoundingRectRight](DisplayCutout.md))`()` Returns a bounding rectangle for a non-functional area on the display which is located on the right of the screen. |
+| [Rect](../android.graphics/Rect.md) | [getBoundingRectTop](DisplayCutout.md))`()` Returns a bounding rectangle for a non-functional area on the display which is located on the top of the screen. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Rect](../android.graphics/Rect.md)!\> | [getBoundingRects](DisplayCutout.md))`()` Returns a list of`Rect`s, each of which is the bounding rectangle for a non-functional area on the display. |
 | --- | --- |
-| [Path](../android/graphics/Path.md)? | [getCutoutPath](../android/view/DisplayCutout.md))`()` Returns a [Path](../android/graphics/Path.md) that contains the cutout paths of all sides on the display. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSafeInsetBottom](../android/view/DisplayCutout.md))`()` Returns the inset from the bottom which avoids the display cutout in pixels. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSafeInsetLeft](../android/view/DisplayCutout.md))`()` Returns the inset from the left which avoids the display cutout in pixels. |
+| [Path](../android.graphics/Path.md)? | [getCutoutPath](DisplayCutout.md))`()` Returns a [Path](../android.graphics/Path.md) that contains the cutout paths of all sides on the display. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSafeInsetBottom](DisplayCutout.md))`()` Returns the inset from the bottom which avoids the display cutout in pixels. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSafeInsetLeft](DisplayCutout.md))`()` Returns the inset from the left which avoids the display cutout in pixels. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSafeInsetRight](../android/view/DisplayCutout.md))`()` Returns the inset from the right which avoids the display cutout in pixels. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSafeInsetTop](../android/view/DisplayCutout.md))`()` Returns the inset from the top which avoids the display cutout in pixels. |
-| [Insets](../android/graphics/Insets.md) | [getWaterfallInsets](../android/view/DisplayCutout.md))`()` Returns the insets representing the curved areas of a waterfall display. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSafeInsetRight](DisplayCutout.md))`()` Returns the inset from the right which avoids the display cutout in pixels. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSafeInsetTop](DisplayCutout.md))`()` Returns the inset from the top which avoids the display cutout in pixels. |
+| [Insets](../android.graphics/Insets.md) | [getWaterfallInsets](DisplayCutout.md))`()` Returns the insets representing the curved areas of a waterfall display. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/view/DisplayCutout.md))`()` <br /> |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/view/DisplayCutout.md))`()` <br /> |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](DisplayCutout.md))`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](DisplayCutout.md))`()` <br /> |
 
 ## Public constructors
 
@@ -69,16 +69,16 @@ DisplayCutout(
 
 Creates a DisplayCutout instance.
 
-Note that this is only useful for tests. For production code, developers should always use a [DisplayCutout](../android/view/DisplayCutout.md) obtained from the system.
+Note that this is only useful for tests. For production code, developers should always use a [DisplayCutout](DisplayCutout.md) obtained from the system.
 
 | Parameters ||
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `safeInsets` | [Insets](../android/graphics/Insets.md):the insets from each edge which avoid the display cutout as returned by [getSafeInsetTop()](../android/view/DisplayCutout.md))etc. This value cannot be`null`. |
-| `boundLeft` | [Rect](../android/graphics/Rect.md)?:the left bounding rect of the display cutout in pixels. If null is passed, it's treated as an empty rectangle (0,0)-(0,0). |
-| `boundTop` | [Rect](../android/graphics/Rect.md)?:the top bounding rect of the display cutout in pixels. If null is passed, it's treated as an empty rectangle (0,0)-(0,0). |
+| `safeInsets` | [Insets](../android.graphics/Insets.md):the insets from each edge which avoid the display cutout as returned by [getSafeInsetTop()](DisplayCutout.md))etc. This value cannot be`null`. |
+| `boundLeft` | [Rect](../android.graphics/Rect.md)?:the left bounding rect of the display cutout in pixels. If null is passed, it's treated as an empty rectangle (0,0)-(0,0). |
+| `boundTop` | [Rect](../android.graphics/Rect.md)?:the top bounding rect of the display cutout in pixels. If null is passed, it's treated as an empty rectangle (0,0)-(0,0). |
 | --- | --- |
-| `boundRight` | [Rect](../android/graphics/Rect.md)?:the right bounding rect of the display cutout in pixels. If null is passed, it's treated as an empty rectangle (0,0)-(0,0). |
-| `boundBottom` | [Rect](../android/graphics/Rect.md)?:the bottom bounding rect of the display cutout in pixels. If null is passed, it's treated as an empty rectangle (0,0)-(0,0). |
+| `boundRight` | [Rect](../android.graphics/Rect.md)?:the right bounding rect of the display cutout in pixels. If null is passed, it's treated as an empty rectangle (0,0)-(0,0). |
+| `boundBottom` | [Rect](../android.graphics/Rect.md)?:the bottom bounding rect of the display cutout in pixels. If null is passed, it's treated as an empty rectangle (0,0)-(0,0). |
 
 ### DisplayCutout
 
@@ -96,17 +96,17 @@ DisplayCutout(
 
 Creates a DisplayCutout instance.
 
-Note that this is only useful for tests. For production code, developers should always use a [DisplayCutout](../android/view/DisplayCutout.md) obtained from the system.
+Note that this is only useful for tests. For production code, developers should always use a [DisplayCutout](DisplayCutout.md) obtained from the system.
 
 | Parameters ||
 |-------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `safeInsets` | [Insets](../android/graphics/Insets.md):the insets from each edge which avoid the display cutout as returned by [getSafeInsetTop()](../android/view/DisplayCutout.md))etc. This value cannot be`null`. |
-| `boundLeft` | [Rect](../android/graphics/Rect.md)?:the left bounding rect of the display cutout in pixels. If null is passed, it's treated as an empty rectangle (0,0)-(0,0). |
-| `boundTop` | [Rect](../android/graphics/Rect.md)?:the top bounding rect of the display cutout in pixels. If null is passed, it's treated as an empty rectangle (0,0)-(0,0). |
+| `safeInsets` | [Insets](../android.graphics/Insets.md):the insets from each edge which avoid the display cutout as returned by [getSafeInsetTop()](DisplayCutout.md))etc. This value cannot be`null`. |
+| `boundLeft` | [Rect](../android.graphics/Rect.md)?:the left bounding rect of the display cutout in pixels. If null is passed, it's treated as an empty rectangle (0,0)-(0,0). |
+| `boundTop` | [Rect](../android.graphics/Rect.md)?:the top bounding rect of the display cutout in pixels. If null is passed, it's treated as an empty rectangle (0,0)-(0,0). |
 | --- | --- |
-| `boundRight` | [Rect](../android/graphics/Rect.md)?:the right bounding rect of the display cutout in pixels. If null is passed, it's treated as an empty rectangle (0,0)-(0,0). |
-| `boundBottom` | [Rect](../android/graphics/Rect.md)?:the bottom bounding rect of the display cutout in pixels. If null is passed, it's treated as an empty rectangle (0,0)-(0,0). |
-| `waterfallInsets` | [Insets](../android/graphics/Insets.md):the insets for the curved areas in waterfall display. This value cannot be`null`. |
+| `boundRight` | [Rect](../android.graphics/Rect.md)?:the right bounding rect of the display cutout in pixels. If null is passed, it's treated as an empty rectangle (0,0)-(0,0). |
+| `boundBottom` | [Rect](../android.graphics/Rect.md)?:the bottom bounding rect of the display cutout in pixels. If null is passed, it's treated as an empty rectangle (0,0)-(0,0). |
+| `waterfallInsets` | [Insets](../android.graphics/Insets.md):the insets for the curved areas in waterfall display. This value cannot be`null`. |
 | --- | --- |
 
 ### DisplayCutout
@@ -119,16 +119,16 @@ DisplayCutout(
     boundingRects: MutableList<Rect!>?)
 ```
 
-**Deprecated:** *Use [DisplayCutout.DisplayCutout(Insets, Rect, Rect, Rect, Rect)](../android/view/DisplayCutout.md))instead.*
+**Deprecated:** *Use [DisplayCutout.DisplayCutout(Insets, Rect, Rect, Rect, Rect)](DisplayCutout.md))instead.*
 
 Creates a DisplayCutout instance.
 
-Note that this is only useful for tests. For production code, developers should always use a [DisplayCutout](../android/view/DisplayCutout.md) obtained from the system.
+Note that this is only useful for tests. For production code, developers should always use a [DisplayCutout](DisplayCutout.md) obtained from the system.
 
 | Parameters ||
 |-----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `safeInsets` | [Rect](../android/graphics/Rect.md)?:the insets from each edge which avoid the display cutout as returned by [getSafeInsetTop()](../android/view/DisplayCutout.md))etc. This value may be`null`. |
-| `boundingRects` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Rect](../android/graphics/Rect.md)!\>?:the bounding rects of the display cutouts as returned by [getBoundingRects()](../android/view/DisplayCutout.md))()}. This value may be`null`. |
+| `safeInsets` | [Rect](../android.graphics/Rect.md)?:the insets from each edge which avoid the display cutout as returned by [getSafeInsetTop()](DisplayCutout.md))etc. This value may be`null`. |
+| `boundingRects` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Rect](../android.graphics/Rect.md)!\>?:the bounding rects of the display cutouts as returned by [getBoundingRects()](DisplayCutout.md))()}. This value may be`null`. |
 
 ## Public methods
 
@@ -173,7 +173,7 @@ Returns a bounding rectangle for a non-functional area on the display which is l
 
 | Return ||
 |------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| [Rect](../android/graphics/Rect.md) | bounding rectangle in pixels. In case of no bounding rectangle, an empty rectangle is returned. This value cannot be`null`. |
+| [Rect](../android.graphics/Rect.md) | bounding rectangle in pixels. In case of no bounding rectangle, an empty rectangle is returned. This value cannot be`null`. |
 
 ### getBoundingRectLeft
 
@@ -187,7 +187,7 @@ Returns a bounding rectangle for a non-functional area on the display which is l
 
 | Return ||
 |------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| [Rect](../android/graphics/Rect.md) | bounding rectangle in pixels. In case of no bounding rectangle, an empty rectangle is returned. This value cannot be`null`. |
+| [Rect](../android.graphics/Rect.md) | bounding rectangle in pixels. In case of no bounding rectangle, an empty rectangle is returned. This value cannot be`null`. |
 
 ### getBoundingRectRight
 
@@ -201,7 +201,7 @@ Returns a bounding rectangle for a non-functional area on the display which is l
 
 | Return ||
 |------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| [Rect](../android/graphics/Rect.md) | bounding rectangle in pixels. In case of no bounding rectangle, an empty rectangle is returned. This value cannot be`null`. |
+| [Rect](../android.graphics/Rect.md) | bounding rectangle in pixels. In case of no bounding rectangle, an empty rectangle is returned. This value cannot be`null`. |
 
 ### getBoundingRectTop
 
@@ -215,7 +215,7 @@ Returns a bounding rectangle for a non-functional area on the display which is l
 
 | Return ||
 |------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| [Rect](../android/graphics/Rect.md) | bounding rectangle in pixels. In case of no bounding rectangle, an empty rectangle is returned. This value cannot be`null`. |
+| [Rect](../android.graphics/Rect.md) | bounding rectangle in pixels. In case of no bounding rectangle, an empty rectangle is returned. This value cannot be`null`. |
 
 ### getBoundingRects
 
@@ -231,7 +231,7 @@ Note that there is no bounding rectangle for waterfall cutout since it just repr
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Rect](../android/graphics/Rect.md)!> | a list of bounding`Rect`s, one for each display cutout area. No empty Rect is returned. This value cannot be`null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Rect](../android.graphics/Rect.md)!> | a list of bounding`Rect`s, one for each display cutout area. No empty Rect is returned. This value cannot be`null`. |
 
 ### getCutoutPath
 
@@ -241,11 +241,11 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 fun getCutoutPath(): Path?
 ```
 
-Returns a [Path](../android/graphics/Path.md) that contains the cutout paths of all sides on the display. To get a cutout path for one specific side, apps can intersect the [Path](../android/graphics/Path.md) with the [Rect](../android/graphics/Rect.md) obtained from [getBoundingRectLeft()](../android/view/DisplayCutout.md)), [getBoundingRectTop()](../android/view/DisplayCutout.md)), [getBoundingRectRight()](../android/view/DisplayCutout.md))or [getBoundingRectBottom()](../android/view/DisplayCutout.md)).
+Returns a [Path](../android.graphics/Path.md) that contains the cutout paths of all sides on the display. To get a cutout path for one specific side, apps can intersect the [Path](../android.graphics/Path.md) with the [Rect](../android.graphics/Rect.md) obtained from [getBoundingRectLeft()](DisplayCutout.md)), [getBoundingRectTop()](DisplayCutout.md)), [getBoundingRectRight()](DisplayCutout.md))or [getBoundingRectBottom()](DisplayCutout.md)).
 
 | Return ||
 |-------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Path](../android/graphics/Path.md)? | a [Path](../android/graphics/Path.md) contains all the cutout paths based on display coordinate. Returns null if there is no cutout on the display. |
+| [Path](../android.graphics/Path.md)? | a [Path](../android.graphics/Path.md) contains all the cutout paths based on display coordinate. Returns null if there is no cutout on the display. |
 
 ### getSafeInsetBottom
 
@@ -311,7 +311,7 @@ Returns the insets representing the curved areas of a waterfall display. A water
 
 | Return ||
 |----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Insets](../android/graphics/Insets.md) | the insets for the curved areas of a waterfall display in pixels or`Insets.NONE`if there are no curved areas or they don't overlap with the window. This value cannot be`null`. |
+| [Insets](../android.graphics/Insets.md) | the insets for the curved areas of a waterfall display in pixels or`Insets.NONE`if there are no curved areas or they don't overlap with the window. This value cannot be`null`. |
 
 ### hashCode
 

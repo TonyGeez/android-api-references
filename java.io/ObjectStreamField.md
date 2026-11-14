@@ -8,7 +8,7 @@ open class ObjectStreamField : Comparable<Any!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.io.ObjectStreamField](../java/io/ObjectStreamField.md) |
+| ↳ | [java.io.ObjectStreamField](ObjectStreamField.md) |
 
 A description of a Serializable field from a Serializable class. An array of ObjectStreamFields is used to declare the Serializable fields of a class.
 
@@ -25,7 +25,7 @@ A description of a Serializable field from a Serializable class. An array of Obj
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/io/ObjectStreamField#getName()()` Get the name of this field. |
 | open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/java/io/ObjectStreamField#getOffset()()` Offset of field within instance data. |
 | --- | --- |
-| open [Class](../java/lang/Class.md)\<\*\>! | `https://developer.android.com/reference/kotlin/java/io/ObjectStreamField#getType()()` Get the type of the field. |
+| open [Class](../java.lang/Class.md)\<\*\>! | `https://developer.android.com/reference/kotlin/java/io/ObjectStreamField#getType()()` Get the type of the field. |
 | open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | `https://developer.android.com/reference/kotlin/java/io/ObjectStreamField#getTypeCode()()` Returns character encoding of field type. |
 | open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | `https://developer.android.com/reference/kotlin/java/io/ObjectStreamField#getTypeString()()` Return the JVM type signature. |
 | --- | --- |
@@ -55,7 +55,7 @@ Create a Serializable field with the specified type. This field should be docume
 | Parameters ||
 |---|---|
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: the name of the serializable field |
-| `type` | [Class](../java/lang/Class.md)\<\*\>!: the `Class` object of the serializable field |
+| `type` | [Class](../java.lang/Class.md)\<\*\>!: the `Class` object of the serializable field |
 
 ### ObjectStreamField
 
@@ -73,7 +73,7 @@ Creates an ObjectStreamField representing a serializable field with the given na
 | Parameters ||
 |---|---|
 | `name` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!: field name |
-| `type` | [Class](../java/lang/Class.md)\<\*\>!: field type |
+| `type` | [Class](../java.lang/Class.md)\<\*\>!: field type |
 | `unshared` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): if false, write/read field values in the same manner as writeObject/readObject; if true, write/read in the same manner as writeUnshared/readUnshared |
 | --- | --- |
 

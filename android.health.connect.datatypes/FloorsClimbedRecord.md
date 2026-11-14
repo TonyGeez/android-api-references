@@ -9,9 +9,9 @@ class FloorsClimbedRecord : IntervalRecord
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.health.connect.datatypes.Record](../android/health/connect/datatypes/Record.md) |||
-| | ↳ | [android.health.connect.datatypes.IntervalRecord](../android/health/connect/datatypes/IntervalRecord.md) ||
-| | | ↳ | [android.health.connect.datatypes.FloorsClimbedRecord](../android/health/connect/datatypes/FloorsClimbedRecord.md) |
+| ↳ | [android.health.connect.datatypes.Record](Record.md) |||
+| | ↳ | [android.health.connect.datatypes.IntervalRecord](IntervalRecord.md) ||
+| | | ↳ | [android.health.connect.datatypes.FloorsClimbedRecord](FloorsClimbedRecord.md) |
 | --- | --- | --- | --- |
 
 Captures the number of floors climbed by the user between the start and end time.
@@ -40,7 +40,7 @@ Captures the number of floors climbed by the user between the start and end time
 
 | Properties ||
 |---|---|
-| static [AggregationType](../android/health/connect/datatypes/AggregationType.md)\< [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/FloorsClimbedRecord#FLOORS_CLIMBED_TOTAL:android.health.connect.datatypes.AggregationType` Metric identifier to get total floors climbed using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
+| static [AggregationType](AggregationType.md)\< [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/FloorsClimbedRecord#FLOORS_CLIMBED_TOTAL:android.health.connect.datatypes.AggregationType` Metric identifier to get total floors climbed using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
 
 ## Public methods
 

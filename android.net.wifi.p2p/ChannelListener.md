@@ -31,4 +31,4 @@ Added in [API level 14](https://developer.android.com/guide/topics/manifest/uses
 abstract fun onChannelDisconnected(): Unit
 ```
 
-The channel to the framework has been disconnected. Application could try re-initializing using [initialize](../android/net/wifi/p2p/WifiP2pManager.md))
+The channel to the framework has been disconnected. Application could try re-initializing using [initialize](WifiP2pManager.md))

@@ -11,11 +11,11 @@ open class InvalidParameterException : IllegalArgumentException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
-| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) |||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) ||||
+| | | ↳ | [java.lang.RuntimeException](../java.lang/RuntimeException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.lang.IllegalArgumentException](../java/lang/IllegalArgumentException.md) ||
-| | | | | ↳ | [java.security.InvalidParameterException](../java/security/InvalidParameterException.md) |
+| | | | ↳ | [java.lang.IllegalArgumentException](../java.lang/IllegalArgumentException.md) ||
+| | | | | ↳ | [java.security.InvalidParameterException](InvalidParameterException.md) |
 
 This exception, designed for use by the JCA/JCE engine classes, is thrown when an invalid parameter is passed to a method.
 
@@ -23,8 +23,8 @@ This exception, designed for use by the JCA/JCE engine classes, is thrown when a
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [InvalidParameterException](../java/security/InvalidParameterException.md))`()` Constructs an InvalidParameterException with no detail message. |
-| [InvalidParameterException](../java/security/InvalidParameterException.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an InvalidParameterException with the specified detail message. |
+| [InvalidParameterException](InvalidParameterException.md))`()` Constructs an InvalidParameterException with no detail message. |
+| [InvalidParameterException](InvalidParameterException.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs an InvalidParameterException with the specified detail message. |
 
 ## Public constructors
 

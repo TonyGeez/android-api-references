@@ -24,7 +24,7 @@ Interface definition for a callback that receives information about DRM processi
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onEvent](../android/drm/DrmManagerClient.OnEventListener.md))`(`client:` ` [DrmManagerClient](../android/drm/DrmManagerClient.md)!`, `event:` ` [DrmEvent](../android/drm/DrmEvent.md)!`)` Called when the DRM framework sends information about a DRM processing request. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onEvent](../android/drm/DrmManagerClient.OnEventListener.md))`(`client:` ` [DrmManagerClient](DrmManagerClient.md)!`, `event:` ` [DrmEvent](DrmEvent.md)!`)` Called when the DRM framework sends information about a DRM processing request. |
 
 ## Public methods
 
@@ -46,5 +46,5 @@ Called when the DRM framework sends information about a DRM processing request.
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `client` | [DrmManagerClient](../android/drm/DrmManagerClient.md)!:The`DrmManagerClient`instance. |
-| `event` | [DrmEvent](../android/drm/DrmEvent.md)!:The [DrmEvent](../android/drm/DrmEvent.md) instance that wraps the information being conveyed, such as the information type and message. |
+| `client` | [DrmManagerClient](DrmManagerClient.md)!:The`DrmManagerClient`instance. |
+| `event` | [DrmEvent](DrmEvent.md)!:The [DrmEvent](DrmEvent.md) instance that wraps the information being conveyed, such as the information type and message. |

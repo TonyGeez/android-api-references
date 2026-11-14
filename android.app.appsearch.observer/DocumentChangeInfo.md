@@ -5,7 +5,7 @@ Also in [T Extensions 3](https://developer.android.com/sdkExtensions)
 
 # DocumentChangeInfo
 
-Kotlin| [Java](../android/app/appsearch/observer/DocumentChangeInfo.md) 
+Kotlin| [Java](DocumentChangeInfo.md) 
 | --- | --- |
 
 ```
@@ -14,36 +14,36 @@ class DocumentChangeInfo
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.appsearch.observer.DocumentChangeInfo](../android/app/appsearch/observer/DocumentChangeInfo.md) |
+| ↳ | [android.app.appsearch.observer.DocumentChangeInfo](DocumentChangeInfo.md) |
 
-Contains information about an individual change detected by an [ObserverCallback](../android/app/appsearch/observer/ObserverCallback.md).
+Contains information about an individual change detected by an [ObserverCallback](ObserverCallback.md).
 
 This class reports information about document changes, that is, when documents were added, updated or removed.
 
-Changes are grouped by package, database, schema type and namespace. Each unique combination of these items will generate a unique [DocumentChangeInfo](../android/app/appsearch/observer/DocumentChangeInfo.md).
+Changes are grouped by package, database, schema type and namespace. Each unique combination of these items will generate a unique [DocumentChangeInfo](DocumentChangeInfo.md).
 
-Notifications are only sent for documents whose schema type matches an observer's schema filters (as determined by [ObserverSpec.getFilterSchemas](../android/app/appsearch/observer/ObserverSpec.md))).
+Notifications are only sent for documents whose schema type matches an observer's schema filters (as determined by [ObserverSpec.getFilterSchemas](ObserverSpec.md))).
 
-Note that document changes that happen during schema migration from calling [android.app.appsearch.AppSearchSession#setSchema](../android/app/appsearch/AppSearchSession.md))are not reported via this class. Such changes are reported through [SchemaChangeInfo](../android/app/appsearch/observer/SchemaChangeInfo.md).
+Note that document changes that happen during schema migration from calling [android.app.appsearch.AppSearchSession#setSchema](../android.app.appsearch/AppSearchSession.md))are not reported via this class. Such changes are reported through [SchemaChangeInfo](SchemaChangeInfo.md).
 
 ## Summary
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [DocumentChangeInfo](../android/app/appsearch/observer/DocumentChangeInfo.md))`(`packageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `database:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `namespace:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `schemaName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `changedDocumentIds:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>`)` Constructs a new [DocumentChangeInfo](../android/app/appsearch/observer/DocumentChangeInfo.md). |
+| [DocumentChangeInfo](DocumentChangeInfo.md))`(`packageName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `database:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `namespace:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `schemaName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)`, `changedDocumentIds:` ` [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!>`)` Constructs a new [DocumentChangeInfo](DocumentChangeInfo.md). |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/app/appsearch/observer/DocumentChangeInfo.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getChangedDocumentIds](../android/app/appsearch/observer/DocumentChangeInfo.md))`()` Returns the set of document IDs that have been changed as part of this notification. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getDatabaseName](../android/app/appsearch/observer/DocumentChangeInfo.md))`()` Returns the database in which the documents that was changed reside. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](DocumentChangeInfo.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\> | [getChangedDocumentIds](DocumentChangeInfo.md))`()` Returns the set of document IDs that have been changed as part of this notification. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getDatabaseName](DocumentChangeInfo.md))`()` Returns the database in which the documents that was changed reside. |
 | --- | --- |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getNamespace](../android/app/appsearch/observer/DocumentChangeInfo.md))`()` Returns the namespace of the documents that changed. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getPackageName](../android/app/appsearch/observer/DocumentChangeInfo.md))`()` Returns the package name of the app which owns the documents that changed. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getSchemaName](../android/app/appsearch/observer/DocumentChangeInfo.md))`()` Returns the name of the schema type that contains the changed documents. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getNamespace](DocumentChangeInfo.md))`()` Returns the namespace of the documents that changed. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getPackageName](DocumentChangeInfo.md))`()` Returns the package name of the app which owns the documents that changed. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getSchemaName](DocumentChangeInfo.md))`()` Returns the name of the schema type that contains the changed documents. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/app/appsearch/observer/DocumentChangeInfo.md))`()` <br /> |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/app/appsearch/observer/DocumentChangeInfo.md))`()` Returns a string representation of the object. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](DocumentChangeInfo.md))`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](DocumentChangeInfo.md))`()` Returns a string representation of the object. |
 
 ## Public constructors
 
@@ -61,7 +61,7 @@ DocumentChangeInfo(
     changedDocumentIds: MutableSet<String!>)
 ```
 
-Constructs a new [DocumentChangeInfo](../android/app/appsearch/observer/DocumentChangeInfo.md).
+Constructs a new [DocumentChangeInfo](DocumentChangeInfo.md).
 
 | Parameters ||
 |----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

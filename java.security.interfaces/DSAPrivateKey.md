@@ -8,7 +8,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface DSAPrivateKey : DSAKey, PrivateKey
 ```
 
-| [java.security.interfaces.DSAPrivateKey](../java/security/interfaces/DSAPrivateKey.md) |
+| [java.security.interfaces.DSAPrivateKey](DSAPrivateKey.md) |
 
 The standard interface to a DSA private key. DSA (Digital Signature Algorithm) is defined in NIST's FIPS-186.
 
@@ -16,15 +16,15 @@ The standard interface to a DSA private key. DSA (Digital Signature Algorithm) i
 
 | Constants ||
 |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [serialVersionUID](../java/security/interfaces/DSAPrivateKey.md) The class fingerprint that is set to indicate serialization compatibility with a previous version of the class. |
+| static [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [serialVersionUID](DSAPrivateKey.md) The class fingerprint that is set to indicate serialization compatibility with a previous version of the class. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [BigInteger](../java/math/BigInteger.md)! | [getX](../java/security/interfaces/DSAPrivateKey.md))`()` Returns the value of the private key,`x`. |
+| abstract [BigInteger](../java.math/BigInteger.md)! | [getX](DSAPrivateKey.md))`()` Returns the value of the private key,`x`. |
 
 | Inherited functions ||
 |---|---|
-| From class [DSAKey](../java/security/interfaces/DSAKey.md) |-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [DSAParams](../java/security/interfaces/DSAParams.md)! | [getParams](../java/security/interfaces/DSAKey.md))`()` <br /> Returns the DSA-specific key parameters. These parameters are never secret. <br /> | ||
+| From class [DSAKey](DSAKey.md) |-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [DSAParams](DSAParams.md)! | [getParams](DSAKey.md))`()` <br /> Returns the DSA-specific key parameters. These parameters are never secret. <br /> | ||
 
 ## Constants
 
@@ -57,4 +57,4 @@ Returns the value of the private key,`x`.
 
 | Return ||
 |------------------------------------------------------------------------------------------|-----------------------------------|
-| [BigInteger](../java/math/BigInteger.md)! | the value of the private key,`x`. |
+| [BigInteger](../java.math/BigInteger.md)! | the value of the private key,`x`. |

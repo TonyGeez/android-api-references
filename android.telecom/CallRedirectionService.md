@@ -8,11 +8,11 @@ abstract class CallRedirectionService : Service
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](../android/content/Context.md) ||||
-| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) |||
-| | | ↳ | [android.app.Service](../android/app/Service.md) ||
+| ↳ | [android.content.Context](../android.content/Context.md) ||||
+| | ↳ | [android.content.ContextWrapper](../android.content/ContextWrapper.md) |||
+| | | ↳ | [android.app.Service](../android.app/Service.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.telecom.CallRedirectionService](../android/telecom/CallRedirectionService.md) |
+| | | | ↳ | [android.telecom.CallRedirectionService](CallRedirectionService.md) |
 
 This service can be implemented to interact between Telecom and its implementor for making outgoing call with optional redirection/cancellation purposes.
 
@@ -1048,7 +1048,7 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | Public methods ||
 |---|---|
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/CallRedirectionService#cancelCall()()` The implemented `https://developer.android.com/reference/kotlin/android/telecom/CallRedirectionService#` calls this method to response a request received via `https://developer.android.com/reference/kotlin/android/telecom/CallRedirectionService#onPlaceCall(android.net.Uri,%20android.telecom.PhoneAccountHandle,%20kotlin.Boolean)` to inform Telecom that an outgoing call should be canceled entirely. |
-| [IBinder](../android/os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/telecom/CallRedirectionService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Return the communication channel to the service. |
+| [IBinder](../android.os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/telecom/CallRedirectionService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#)` Return the communication channel to the service. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/CallRedirectionService#onPlaceCall(android.net.Uri,%20android.net.Uri,%20android.telecom.PhoneAccountHandle,%20kotlin.Boolean)(handle: https://developer.android.com/reference/kotlin/android/net/Uri.html#, originalHandle: https://developer.android.com/reference/kotlin/android/net/Uri.html#, initialPhoneAccount: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle, allowInteractiveResponse: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Telecom calls this method once upon binding to a `https://developer.android.com/reference/kotlin/android/telecom/CallRedirectionService#` to inform it of a new outgoing call which is being placed. |
 | --- | --- |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telecom/CallRedirectionService#onPlaceCall(android.net.Uri,%20android.telecom.PhoneAccountHandle,%20kotlin.Boolean)(handle: https://developer.android.com/reference/kotlin/android/net/Uri.html#, initialPhoneAccount: https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle, allowInteractiveResponse: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)` Telecom calls this method once upon binding to a `https://developer.android.com/reference/kotlin/android/telecom/CallRedirectionService#` to inform it of a new outgoing call which is being placed. |
@@ -2797,7 +2797,7 @@ Return the communication channel to the service. May return null if clients can 
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md): This value cannot be `null`. |
+| `intent` | [Intent](../android.content/Intent.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -2826,9 +2826,9 @@ This method is same as `https://developer.android.com/reference/kotlin/android/t
 
 | Parameters ||
 |---|---|
-| `handle` | [Uri](../android/net/Uri.md): the phone number dialed by the user, represented in E.164 format. This value cannot be `null`. |
-| `originalHandle` | [Uri](../android/net/Uri.md): the phone number dialed by the user in the original format it was dialed (i.e. not E.164 format). This is helpful for numbers in some regions where formatting to E.164 can cause the loss of suffix digits that the service needs to know about. This value cannot be `null`. |
-| `initialPhoneAccount` | [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md): the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle` on which the call will be placed. This value cannot be `null`. |
+| `handle` | [Uri](../android.net/Uri.md): the phone number dialed by the user, represented in E.164 format. This value cannot be `null`. |
+| `originalHandle` | [Uri](../android.net/Uri.md): the phone number dialed by the user in the original format it was dialed (i.e. not E.164 format). This is helpful for numbers in some regions where formatting to E.164 can cause the loss of suffix digits that the service needs to know about. This value cannot be `null`. |
+| `initialPhoneAccount` | [PhoneAccountHandle](PhoneAccountHandle.md): the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle` on which the call will be placed. This value cannot be `null`. |
 | --- | --- |
 | `allowInteractiveResponse` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): a boolean to tell if the implemented `https://developer.android.com/reference/kotlin/android/telecom/CallRedirectionService#` should allow interactive responses with users. Will be `false` if, for example the device is in car mode and the user would not be able to interact with their device. |
 
@@ -2852,8 +2852,8 @@ The implemented `https://developer.android.com/reference/kotlin/android/telecom/
 
 | Parameters ||
 |---|---|
-| `handle` | [Uri](../android/net/Uri.md): the phone number dialed by the user, represented in E.164 format if possible. This value cannot be `null`. |
-| `initialPhoneAccount` | [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md): the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle` on which the call will be placed. This value cannot be `null`. |
+| `handle` | [Uri](../android.net/Uri.md): the phone number dialed by the user, represented in E.164 format if possible. This value cannot be `null`. |
+| `initialPhoneAccount` | [PhoneAccountHandle](PhoneAccountHandle.md): the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle` on which the call will be placed. This value cannot be `null`. |
 | `allowInteractiveResponse` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): a boolean to tell if the implemented `https://developer.android.com/reference/kotlin/android/telecom/CallRedirectionService#` should allow interactive responses with users. Will be `false` if, for example the device is in car mode and the user would not be able to interact with their device. |
 | --- | --- |
 
@@ -2879,7 +2879,7 @@ Called when all clients have disconnected from a particular interface published 
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md): This value cannot be `null`. |
+| `intent` | [Intent](../android.content/Intent.md): This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -2907,8 +2907,8 @@ Note: The `targetPhoneAccount` can only be used to place a call via a `https://d
 
 | Parameters ||
 |---|---|
-| `alternateUri` | [Uri](../android/net/Uri.md): the alternate number to place the call to and to show to the user. This value cannot be `null`. |
-| `targetPhoneAccount` | [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md): the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle` to use when placing the call. This value cannot be `null`. |
+| `alternateUri` | [Uri](../android.net/Uri.md): the alternate number to place the call to and to show to the user. This value cannot be `null`. |
+| `targetPhoneAccount` | [PhoneAccountHandle](PhoneAccountHandle.md): the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle` to use when placing the call. This value cannot be `null`. |
 | `confirmFirst` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): Telecom will ask users to confirm the redirection via a yes/no dialog if the confirmFirst is true, and if the redirection request of this response was sent with a true flag of allowInteractiveResponse via `https://developer.android.com/reference/kotlin/android/telecom/CallRedirectionService#onPlaceCall(android.net.Uri,%20android.telecom.PhoneAccountHandle,%20kotlin.Boolean)` |
 | --- | --- |
 
@@ -2944,7 +2944,7 @@ This can only be called from implemented `https://developer.android.com/referenc
 
 | Parameters ||
 |---|---|
-| `gatewayUri` | [Uri](../android/net/Uri.md): the gateway uri for call redirection. This value cannot be `null`. |
-| `targetPhoneAccount` | [PhoneAccountHandle](../android/telecom/PhoneAccountHandle.md): the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle` to use when placing the call. This value cannot be `null`. |
+| `gatewayUri` | [Uri](../android.net/Uri.md): the gateway uri for call redirection. This value cannot be `null`. |
+| `targetPhoneAccount` | [PhoneAccountHandle](PhoneAccountHandle.md): the `https://developer.android.com/reference/kotlin/android/telecom/PhoneAccountHandle` to use when placing the call. This value cannot be `null`. |
 | `confirmFirst` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): Telecom will ask users to confirm the redirection via a yes/no dialog if the confirmFirst is true, and if the redirection request of this response was sent with a true flag of allowInteractiveResponse via `https://developer.android.com/reference/kotlin/android/telecom/CallRedirectionService#onPlaceCall(android.net.Uri,%20android.telecom.PhoneAccountHandle,%20kotlin.Boolean)` |
 | --- | --- |

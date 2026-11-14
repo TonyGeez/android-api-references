@@ -4,7 +4,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 
 # AudioMetadata
 
-Kotlin| [Java](../android/media/AudioMetadata.md) 
+Kotlin| [Java](AudioMetadata.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class AudioMetadata
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.AudioMetadata](../android/media/AudioMetadata.md) |
+| ↳ | [android.media.AudioMetadata](AudioMetadata.md) |
 
 AudioMetadata class is used to manage typed key-value pairs for configuration and capability requests within the Audio Framework.
 
@@ -26,7 +26,7 @@ AudioMetadata class is used to manage typed key-value pairs for configuration an
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [AudioMetadataMap](../android/media/AudioMetadataMap.md) | [createMap](../android/media/AudioMetadata.md))`()` Creates a [AudioMetadataMap](../android/media/AudioMetadataMap.md) suitable for adding keys. |
+| static [AudioMetadataMap](AudioMetadataMap.md) | [createMap](AudioMetadata.md))`()` Creates a [AudioMetadataMap](AudioMetadataMap.md) suitable for adding keys. |
 
 ## Public methods
 
@@ -38,8 +38,8 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 static fun createMap(): AudioMetadataMap
 ```
 
-Creates a [AudioMetadataMap](../android/media/AudioMetadataMap.md) suitable for adding keys.
+Creates a [AudioMetadataMap](AudioMetadataMap.md) suitable for adding keys.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| [AudioMetadataMap](../android/media/AudioMetadataMap.md) | an empty [AudioMetadataMap](../android/media/AudioMetadataMap.md) instance. This value cannot be`null`. |
+| [AudioMetadataMap](AudioMetadataMap.md) | an empty [AudioMetadataMap](AudioMetadataMap.md) instance. This value cannot be`null`. |

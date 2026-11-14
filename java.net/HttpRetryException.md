@@ -11,10 +11,10 @@ open class HttpRetryException : IOException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
-| | | ↳ | [java.io.IOException](../java/io/IOException.md) ||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) |||
+| | | ↳ | [java.io.IOException](../java.io/IOException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.net.HttpRetryException](../java/net/HttpRetryException.md) |
+| | | | ↳ | [java.net.HttpRetryException](HttpRetryException.md) |
 
 Thrown to indicate that a HTTP request needs to be retried but cannot be retried automatically, due to streaming mode being enabled.
 
@@ -22,14 +22,14 @@ Thrown to indicate that a HTTP request needs to be retried but cannot be retried
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [HttpRetryException](../java/net/HttpRetryException.md))`(`detail:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `code:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a new `HttpRetryException` from the specified response code and exception detail message |
-| [HttpRetryException](../java/net/HttpRetryException.md))`(`detail:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `code:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `location:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a new `HttpRetryException` with detail message responseCode and the contents of the Location response header field. |
+| [HttpRetryException](HttpRetryException.md))`(`detail:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `code:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs a new `HttpRetryException` from the specified response code and exception detail message |
+| [HttpRetryException](HttpRetryException.md))`(`detail:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `code:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `location:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a new `HttpRetryException` with detail message responseCode and the contents of the Location response header field. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getLocation](../java/net/HttpRetryException.md))`()` Returns the value of the Location header field if the error resulted from redirection. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getReason](../java/net/HttpRetryException.md))`()` Returns a string explaining why the http request could not be retried. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [responseCode](../java/net/HttpRetryException.md))`()` Returns the http response code |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getLocation](HttpRetryException.md))`()` Returns the value of the Location header field if the error resulted from redirection. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getReason](HttpRetryException.md))`()` Returns a string explaining why the http request could not be retried. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [responseCode](HttpRetryException.md))`()` Returns the http response code |
 | --- | --- |
 
 ## Public constructors

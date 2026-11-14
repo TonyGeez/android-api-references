@@ -4,7 +4,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # Layout
 
-Kotlin | [Java](../android/text/Layout.md) 
+Kotlin | [Java](Layout.md) 
 | --- | --- |
 
 ```
@@ -13,14 +13,14 @@ abstract class Layout
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.text.Layout](../android/text/Layout.md) |
+| ↳ | [android.text.Layout](Layout.md) |
 
-| Known Direct Subclasses [BoringLayout](../android/text/BoringLayout.md), [DynamicLayout](../android/text/DynamicLayout.md), [StaticLayout](../android/text/StaticLayout.md) |--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------| | [BoringLayout](../android/text/BoringLayout.md) | A BoringLayout is a very simple Layout implementation for text that fits on a single line and is all left-to-right characters. | | [DynamicLayout](../android/text/DynamicLayout.md) | DynamicLayout is a text layout that updates itself as the text is edited. | | [StaticLayout](../android/text/StaticLayout.md) | StaticLayout is a Layout for text that will not be edited after it is laid out. | |
+| Known Direct Subclasses [BoringLayout](BoringLayout.md), [DynamicLayout](DynamicLayout.md), [StaticLayout](StaticLayout.md) |--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------| | [BoringLayout](BoringLayout.md) | A BoringLayout is a very simple Layout implementation for text that fits on a single line and is all left-to-right characters. | | [DynamicLayout](DynamicLayout.md) | DynamicLayout is a text layout that updates itself as the text is edited. | | [StaticLayout](StaticLayout.md) | StaticLayout is a Layout for text that will not be edited after it is laid out. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 A base class that manages text layout in visual elements on the screen.
 
-For text that will be edited, use a [DynamicLayout](../android/text/DynamicLayout.md), which will be updated as the text changes. For text that will not change, use a [StaticLayout](../android/text/StaticLayout.md).
+For text that will be edited, use a [DynamicLayout](DynamicLayout.md), which will be updated as the text changes. For text that will not change, use a [StaticLayout](StaticLayout.md).
 
 ## Summary
 
@@ -34,137 +34,137 @@ For text that will be edited, use a [DynamicLayout](../android/text/DynamicLayou
 
 | Constants ||
 |---------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BREAK_STRATEGY_BALANCED](../android/text/Layout.md) Value for break strategy indicating balanced line breaking. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BREAK_STRATEGY_HIGH_QUALITY](../android/text/Layout.md) Value for break strategy indicating high quality line breaking, including automatic hyphenation and doing whole-paragraph optimization of line breaks. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BREAK_STRATEGY_SIMPLE](../android/text/Layout.md) Value for break strategy indicating simple line breaking. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BREAK_STRATEGY_BALANCED](Layout.md) Value for break strategy indicating balanced line breaking. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BREAK_STRATEGY_HIGH_QUALITY](Layout.md) Value for break strategy indicating high quality line breaking, including automatic hyphenation and doing whole-paragraph optimization of line breaks. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [BREAK_STRATEGY_SIMPLE](Layout.md) Value for break strategy indicating simple line breaking. |
 | --- | --- |
-| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [DEFAULT_LINESPACING_ADDITION](../android/text/Layout.md) <br /> |
-| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [DEFAULT_LINESPACING_MULTIPLIER](../android/text/Layout.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DIR_LEFT_TO_RIGHT](../android/text/Layout.md) <br /> |
+| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [DEFAULT_LINESPACING_ADDITION](Layout.md) <br /> |
+| static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [DEFAULT_LINESPACING_MULTIPLIER](Layout.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DIR_LEFT_TO_RIGHT](Layout.md) <br /> |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DIR_RIGHT_TO_LEFT](../android/text/Layout.md) <br /> |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HYPHENATION_FREQUENCY_FULL](../android/text/Layout.md) Value for hyphenation frequency indicating the full amount of automatic hyphenation, typical in typography. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HYPHENATION_FREQUENCY_FULL_FAST](../android/text/Layout.md) Value for hyphenation frequency indicating the full amount of automatic hyphenation with using faster algorithm. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DIR_RIGHT_TO_LEFT](Layout.md) <br /> |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HYPHENATION_FREQUENCY_FULL](Layout.md) Value for hyphenation frequency indicating the full amount of automatic hyphenation, typical in typography. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HYPHENATION_FREQUENCY_FULL_FAST](Layout.md) Value for hyphenation frequency indicating the full amount of automatic hyphenation with using faster algorithm. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HYPHENATION_FREQUENCY_NONE](../android/text/Layout.md) Value for hyphenation frequency indicating no automatic hyphenation. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HYPHENATION_FREQUENCY_NORMAL](../android/text/Layout.md) Value for hyphenation frequency indicating a light amount of automatic hyphenation, which is a conservative default. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HYPHENATION_FREQUENCY_NORMAL_FAST](../android/text/Layout.md) Value for hyphenation frequency indicating a light amount of automatic hyphenation with using faster algorithm. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HYPHENATION_FREQUENCY_NONE](Layout.md) Value for hyphenation frequency indicating no automatic hyphenation. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HYPHENATION_FREQUENCY_NORMAL](Layout.md) Value for hyphenation frequency indicating a light amount of automatic hyphenation, which is a conservative default. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [HYPHENATION_FREQUENCY_NORMAL_FAST](Layout.md) Value for hyphenation frequency indicating a light amount of automatic hyphenation with using faster algorithm. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [JUSTIFICATION_MODE_INTER_CHARACTER](../android/text/Layout.md) Value for justification mode indicating the text is justified by stretching letter spacing. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [JUSTIFICATION_MODE_INTER_WORD](../android/text/Layout.md) Value for justification mode indicating the text is justified by stretching word spacing. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [JUSTIFICATION_MODE_NONE](../android/text/Layout.md) Value for justification mode indicating no justification. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [JUSTIFICATION_MODE_INTER_CHARACTER](Layout.md) Value for justification mode indicating the text is justified by stretching letter spacing. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [JUSTIFICATION_MODE_INTER_WORD](Layout.md) Value for justification mode indicating the text is justified by stretching word spacing. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [JUSTIFICATION_MODE_NONE](Layout.md) Value for justification mode indicating no justification. |
 | --- | --- |
 
 | Protected constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Layout](../android/text/Layout.md))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `paint:` ` [TextPaint](../android/text/TextPaint.md)!`, `width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `align:` ` [Layout.Alignment](../android/text/Layout.Alignment.md)!`, `spacingMult:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `spacingAdd:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Subclasses of Layout use this constructor to set the display text, width, and other standard properties. |
+| [Layout](Layout.md))`(`text:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `paint:` ` [TextPaint](TextPaint.md)!`, `width:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `align:` ` [Layout.Alignment](../android/text/Layout.Alignment.md)!`, `spacingMult:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `spacingAdd:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Subclasses of Layout use this constructor to set the display text, width, and other standard properties. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [RectF](../android/graphics/RectF.md) | [computeDrawingBoundingBox](../android/text/Layout.md))`()` Get an actual bounding box that draws text content. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [draw](../android/text/Layout.md))`(`c:` ` [Canvas](../android/graphics/Canvas.md)!`)` Draw this Layout on the specified Canvas. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [draw](../android/text/Layout.md))`(`canvas:` ` [Canvas](../android/graphics/Canvas.md)!`, `selectionHighlight:` ` [Path](../android/graphics/Path.md)!`, `selectionHighlightPaint:` ` [Paint](../android/graphics/Paint.md)!`, `cursorOffsetVertical:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Draw this Layout on the specified canvas, with the highlight path drawn between the background and the text. |
+| open [RectF](../android.graphics/RectF.md) | [computeDrawingBoundingBox](Layout.md))`()` Get an actual bounding box that draws text content. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [draw](Layout.md))`(`c:` ` [Canvas](../android.graphics/Canvas.md)!`)` Draw this Layout on the specified Canvas. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [draw](Layout.md))`(`canvas:` ` [Canvas](../android.graphics/Canvas.md)!`, `selectionHighlight:` ` [Path](../android.graphics/Path.md)!`, `selectionHighlightPaint:` ` [Paint](../android.graphics/Paint.md)!`, `cursorOffsetVertical:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Draw this Layout on the specified canvas, with the highlight path drawn between the background and the text. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [draw](../android/text/Layout.md))`(`canvas:` ` [Canvas](../android/graphics/Canvas.md)`, `highlightPaths:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Path](../android/graphics/Path.md)!>?`, `highlightPaints:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Paint](../android/graphics/Paint.md)!>?`, `selectionPath:` ` [Path](../android/graphics/Path.md)?`, `selectionPaint:` ` [Paint](../android/graphics/Paint.md)?`, `cursorOffsetVertical:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Draw this layout on the specified canvas. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [drawBackground](../android/text/Layout.md))`(`canvas:` ` [Canvas](../android/graphics/Canvas.md)`)` Draw background of this layout. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [drawText](../android/text/Layout.md))`(`canvas:` ` [Canvas](../android/graphics/Canvas.md)`)` Draw text part of this layout. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [draw](Layout.md))`(`canvas:` ` [Canvas](../android.graphics/Canvas.md)`, `highlightPaths:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Path](../android.graphics/Path.md)!>?`, `highlightPaints:` ` [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Paint](../android.graphics/Paint.md)!>?`, `selectionPath:` ` [Path](../android.graphics/Path.md)?`, `selectionPaint:` ` [Paint](../android.graphics/Paint.md)?`, `cursorOffsetVertical:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Draw this layout on the specified canvas. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [drawBackground](Layout.md))`(`canvas:` ` [Canvas](../android.graphics/Canvas.md)`)` Draw background of this layout. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [drawText](Layout.md))`(`canvas:` ` [Canvas](../android.graphics/Canvas.md)`)` Draw text part of this layout. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [fillCharacterBounds](../android/text/Layout.md))`(`start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `bounds:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)`, `boundsStart:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the characters' bounds in the given range. |
-| [Layout.Alignment](../android/text/Layout.Alignment.md) | [getAlignment](../android/text/Layout.md))`()` Returns the alignment used for creating this layout in pixels. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBottomPadding](../android/text/Layout.md))`()` Returns the number of extra pixels of descent padding in the bottom line of the Layout. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [fillCharacterBounds](Layout.md))`(`start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `bounds:` ` [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)`, `boundsStart:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the characters' bounds in the given range. |
+| [Layout.Alignment](../android/text/Layout.Alignment.md) | [getAlignment](Layout.md))`()` Returns the alignment used for creating this layout in pixels. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBottomPadding](Layout.md))`()` Returns the number of extra pixels of descent padding in the bottom line of the Layout. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBreakStrategy](../android/text/Layout.md))`()` Return the break strategy used for creating this layout. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getCursorPath](../android/text/Layout.md))`(`point:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dest:` ` [Path](../android/graphics/Path.md)!`, `editingBuffer:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Fills in the specified Path with a representation of a cursor at the specified offset. |
-| open static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getDesiredWidth](../android/text/Layout.md))`(`source:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `paint:` ` [TextPaint](../android/text/TextPaint.md)!`)` Return how wide a layout must be in order to display the specified text with one line per paragraph. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBreakStrategy](Layout.md))`()` Return the break strategy used for creating this layout. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getCursorPath](Layout.md))`(`point:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dest:` ` [Path](../android.graphics/Path.md)!`, `editingBuffer:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`)` Fills in the specified Path with a representation of a cursor at the specified offset. |
+| open static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getDesiredWidth](Layout.md))`(`source:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `paint:` ` [TextPaint](TextPaint.md)!`)` Return how wide a layout must be in order to display the specified text with one line per paragraph. |
 | --- | --- |
-| open static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getDesiredWidth](../android/text/Layout.md))`(`source:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `paint:` ` [TextPaint](../android/text/TextPaint.md)!`)` Return how wide a layout must be in order to display the specified text slice with one line per paragraph. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEllipsisCount](../android/text/Layout.md))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the number of characters to be ellipsized away, or 0 if no ellipsis is to take place. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEllipsisStart](../android/text/Layout.md))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the offset of the first character to be ellipsized away, relative to the start of the line. |
+| open static [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getDesiredWidth](Layout.md))`(`source:` ` [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!`, `start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `paint:` ` [TextPaint](TextPaint.md)!`)` Return how wide a layout must be in order to display the specified text slice with one line per paragraph. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEllipsisCount](Layout.md))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the number of characters to be ellipsized away, or 0 if no ellipsis is to take place. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEllipsisStart](Layout.md))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the offset of the first character to be ellipsized away, relative to the start of the line. |
 | --- | --- |
-| [TextUtils.TruncateAt](../android/text/TextUtils.TruncateAt.md)? | [getEllipsize](../android/text/Layout.md))`()` Return the ellipsize option used for creating this layout. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEllipsizedWidth](../android/text/Layout.md))`()` Return the width to which this layout is ellipsized. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHeight](../android/text/Layout.md))`()` Return the total height of this layout. |
+| [TextUtils.TruncateAt](../android/text/TextUtils.TruncateAt.md)? | [getEllipsize](Layout.md))`()` Return the ellipsize option used for creating this layout. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEllipsizedWidth](Layout.md))`()` Return the width to which this layout is ellipsized. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHeight](Layout.md))`()` Return the total height of this layout. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHyphenationFrequency](../android/text/Layout.md))`()` Return the hyphenation frequency used for creating this layout. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getJustificationMode](../android/text/Layout.md))`()` Return the justification mode used for creating this layout. |
-| [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)? | [getLeftIndents](../android/text/Layout.md))`()` Return a copy of the left indents used for this layout. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getHyphenationFrequency](Layout.md))`()` Return the hyphenation frequency used for creating this layout. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getJustificationMode](Layout.md))`()` Return the justification mode used for creating this layout. |
+| [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)? | [getLeftIndents](Layout.md))`()` Return a copy of the left indents used for this layout. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLineAscent](../android/text/Layout.md))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get the ascent of the text on the specified line. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLineBaseline](../android/text/Layout.md))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the vertical position of the baseline of the specified line. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLineBottom](../android/text/Layout.md))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the vertical position of the bottom of the specified line. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLineAscent](Layout.md))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get the ascent of the text on the specified line. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLineBaseline](Layout.md))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the vertical position of the baseline of the specified line. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLineBottom](Layout.md))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the vertical position of the bottom of the specified line. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLineBottom](../android/text/Layout.md))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `includeLineSpacing:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Return the vertical position of the bottom of the specified line. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLineBounds](../android/text/Layout.md))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `bounds:` ` [Rect](../android/graphics/Rect.md)!`)` Return the baseline for the specified line (0...getLineCount() - 1) If bounds is not null, return the top, left, right, bottom extents of the specified line in it. |
-| open [LineBreakConfig](../android/graphics/text/LineBreakConfig.md) | [getLineBreakConfig](../android/text/Layout.md))`()` Gets the [LineBreakConfig](../android/graphics/text/LineBreakConfig.md) used for creating this layout. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLineBottom](Layout.md))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `includeLineSpacing:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Return the vertical position of the bottom of the specified line. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLineBounds](Layout.md))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `bounds:` ` [Rect](../android.graphics/Rect.md)!`)` Return the baseline for the specified line (0...getLineCount() - 1) If bounds is not null, return the top, left, right, bottom extents of the specified line in it. |
+| open [LineBreakConfig](../android.graphics.text/LineBreakConfig.md) | [getLineBreakConfig](Layout.md))`()` Gets the [LineBreakConfig](../android.graphics.text/LineBreakConfig.md) used for creating this layout. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getLineContainsTab](../android/text/Layout.md))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns whether the specified line contains one or more characters that need to be handled specially, like tabs. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLineCount](../android/text/Layout.md))`()` Return the number of lines of text in this layout. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLineDescent](../android/text/Layout.md))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the descent of the specified line(0...getLineCount() - 1). |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getLineContainsTab](Layout.md))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns whether the specified line contains one or more characters that need to be handled specially, like tabs. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLineCount](Layout.md))`()` Return the number of lines of text in this layout. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLineDescent](Layout.md))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the descent of the specified line(0...getLineCount() - 1). |
 | --- | --- |
-| abstract [Layout.Directions](../android/text/Layout.Directions.md)! | [getLineDirections](../android/text/Layout.md))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the directional run information for the specified line. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLineEnd](../android/text/Layout.md))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the text offset after the last character on the specified line. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLineForOffset](../android/text/Layout.md))`(`offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get the line number on which the specified text offset appears. |
+| abstract [Layout.Directions](../android/text/Layout.Directions.md)! | [getLineDirections](Layout.md))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the directional run information for the specified line. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLineEnd](Layout.md))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the text offset after the last character on the specified line. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLineForOffset](Layout.md))`(`offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get the line number on which the specified text offset appears. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLineForVertical](../android/text/Layout.md))`(`vertical:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get the line number corresponding to the specified vertical position. |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getLineLeft](../android/text/Layout.md))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get the leftmost position that should be exposed for horizontal scrolling on the specified line. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLineLetterSpacingUnitCount](../android/text/Layout.md))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `includeTrailingWhitespace:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Returns the number of letter spacing unit in the line. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLineForVertical](Layout.md))`(`vertical:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get the line number corresponding to the specified vertical position. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getLineLeft](Layout.md))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get the leftmost position that should be exposed for horizontal scrolling on the specified line. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLineLetterSpacingUnitCount](Layout.md))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `includeTrailingWhitespace:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Returns the number of letter spacing unit in the line. |
 | --- | --- |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getLineMax](../android/text/Layout.md))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the unsigned horizontal extent of the specified line, including leading margin indent, but excluding trailing whitespace. |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getLineRight](../android/text/Layout.md))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get the rightmost position that should be exposed for horizontal scrolling on the specified line. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getLineSpacingAmount](../android/text/Layout.md))`()` Returns the amount added to the line height. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getLineMax](Layout.md))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the unsigned horizontal extent of the specified line, including leading margin indent, but excluding trailing whitespace. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getLineRight](Layout.md))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get the rightmost position that should be exposed for horizontal scrolling on the specified line. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getLineSpacingAmount](Layout.md))`()` Returns the amount added to the line height. |
 | --- | --- |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getLineSpacingMultiplier](../android/text/Layout.md))`()` Returns the multiplier applied to the line height. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLineStart](../android/text/Layout.md))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the text offset of the beginning of the specified line ( 0...getLineCount()). |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLineTop](../android/text/Layout.md))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the vertical position of the top of the specified line (0...getLineCount()). |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getLineSpacingMultiplier](Layout.md))`()` Returns the multiplier applied to the line height. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLineStart](Layout.md))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the text offset of the beginning of the specified line ( 0...getLineCount()). |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLineTop](Layout.md))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the vertical position of the top of the specified line (0...getLineCount()). |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLineVisibleEnd](../android/text/Layout.md))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the text offset after the last visible character (so whitespace is not counted) on the specified line. |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getLineWidth](../android/text/Layout.md))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the unsigned horizontal extent of the specified line, including leading margin indent and trailing whitespace. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxLines](../android/text/Layout.md))`()` Return the maximum lines allowed used for creating this layout. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getLineVisibleEnd](Layout.md))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the text offset after the last visible character (so whitespace is not counted) on the specified line. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getLineWidth](Layout.md))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Gets the unsigned horizontal extent of the specified line, including leading margin indent and trailing whitespace. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getMaxLines](Layout.md))`()` Return the maximum lines allowed used for creating this layout. |
 | --- | --- |
-| open [Paint.FontMetrics](../android/graphics/Paint.FontMetrics.md)? | [getMinimumFontMetrics](../android/text/Layout.md))`()` Get the minimum font metrics used for line spacing. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOffsetForHorizontal](../android/text/Layout.md))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `horiz:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Get the character offset on the specified line whose position is closest to the specified horizontal position. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOffsetToLeftOf](../android/text/Layout.md))`(`offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| open [Paint.FontMetrics](../android/graphics/Paint.FontMetrics.md)? | [getMinimumFontMetrics](Layout.md))`()` Get the minimum font metrics used for line spacing. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOffsetForHorizontal](Layout.md))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `horiz:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`)` Get the character offset on the specified line whose position is closest to the specified horizontal position. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOffsetToLeftOf](Layout.md))`(`offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOffsetToRightOf](../android/text/Layout.md))`(`offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
-| [TextPaint](../android/text/TextPaint.md) | [getPaint](../android/text/Layout.md))`()` Return the paint used for creating this layout. |
-| [Layout.Alignment](../android/text/Layout.Alignment.md)! | [getParagraphAlignment](../android/text/Layout.md))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get the alignment of the specified paragraph, taking into account markup attached to it. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getOffsetToRightOf](Layout.md))`(`offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [TextPaint](TextPaint.md) | [getPaint](Layout.md))`()` Return the paint used for creating this layout. |
+| [Layout.Alignment](../android/text/Layout.Alignment.md)! | [getParagraphAlignment](Layout.md))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get the alignment of the specified paragraph, taking into account markup attached to it. |
 | --- | --- |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getParagraphDirection](../android/text/Layout.md))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the primary directionality of the paragraph containing the specified line, either 1 for left-to-right lines, or -1 for right-to-left lines (see [DIR_LEFT_TO_RIGHT](../android/text/Layout.md), [DIR_RIGHT_TO_LEFT](../android/text/Layout.md)). |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getParagraphLeft](../android/text/Layout.md))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get the left edge of the specified paragraph, inset by left margins. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getParagraphRight](../android/text/Layout.md))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get the right edge of the specified paragraph, inset by right margins. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getParagraphDirection](Layout.md))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the primary directionality of the paragraph containing the specified line, either 1 for left-to-right lines, or -1 for right-to-left lines (see [DIR_LEFT_TO_RIGHT](Layout.md), [DIR_RIGHT_TO_LEFT](Layout.md)). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getParagraphLeft](Layout.md))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get the left edge of the specified paragraph, inset by left margins. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getParagraphRight](Layout.md))`(`line:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get the right edge of the specified paragraph, inset by right margins. |
 | --- | --- |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getPrimaryHorizontal](../android/text/Layout.md))`(`offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get the primary horizontal position for the specified text offset. |
-| open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)? | [getRangeForRect](../android/text/Layout.md))`(`area:` ` [RectF](../android/graphics/RectF.md)`, `segmentFinder:` ` [SegmentFinder](../android/text/SegmentFinder.md)`, `inclusionStrategy:` ` [Layout.TextInclusionStrategy](../android/text/Layout.TextInclusionStrategy.md)`)` Finds the range of text which is inside the specified rectangle area. |
-| [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)? | [getRightIndents](../android/text/Layout.md))`()` Return a copy of the right indents used for this layout. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getPrimaryHorizontal](Layout.md))`(`offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get the primary horizontal position for the specified text offset. |
+| open [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)? | [getRangeForRect](Layout.md))`(`area:` ` [RectF](../android.graphics/RectF.md)`, `segmentFinder:` ` [SegmentFinder](SegmentFinder.md)`, `inclusionStrategy:` ` [Layout.TextInclusionStrategy](../android/text/Layout.TextInclusionStrategy.md)`)` Finds the range of text which is inside the specified rectangle area. |
+| [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)? | [getRightIndents](Layout.md))`()` Return a copy of the right indents used for this layout. |
 | --- | --- |
-| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getSecondaryHorizontal](../android/text/Layout.md))`(`offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get the secondary horizontal position for the specified text offset. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getSelectionPath](../android/text/Layout.md))`(`start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dest:` ` [Path](../android/graphics/Path.md)!`)` Fills in the specified Path with a representation of a highlight between the specified offsets. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getShiftDrawingOffsetForStartOverhang](../android/text/Layout.md))`()` Returns true if shifting drawing offset for start overhang. |
+| open [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getSecondaryHorizontal](Layout.md))`(`offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Get the secondary horizontal position for the specified text offset. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [getSelectionPath](Layout.md))`(`start:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `end:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dest:` ` [Path](../android.graphics/Path.md)!`)` Fills in the specified Path with a representation of a highlight between the specified offsets. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getShiftDrawingOffsetForStartOverhang](Layout.md))`()` Returns true if shifting drawing offset for start overhang. |
 | --- | --- |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getSpacingAdd](../android/text/Layout.md))`()` Returns the amount added to the line height. |
-| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getSpacingMultiplier](../android/text/Layout.md))`()` Returns the multiplier applied to the line height. |
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | [getText](../android/text/Layout.md))`()` Return the text used for creating this layout. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getSpacingAdd](Layout.md))`()` Returns the amount added to the line height. |
+| [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | [getSpacingMultiplier](Layout.md))`()` Returns the multiplier applied to the line height. |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | [getText](Layout.md))`()` Return the text used for creating this layout. |
 | --- | --- |
-| [TextDirectionHeuristic](../android/text/TextDirectionHeuristic.md) | [getTextDirectionHeuristic](../android/text/Layout.md))`()` Returns the text direction heuristic used for creating this layout. |
-| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTopPadding](../android/text/Layout.md))`()` Returns the (negative) number of extra pixels of ascent padding in the top line of the Layout. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getUseBoundsForWidth](../android/text/Layout.md))`()` Returns true if using bounding box as a width, false for using advance as a width. |
+| [TextDirectionHeuristic](TextDirectionHeuristic.md) | [getTextDirectionHeuristic](Layout.md))`()` Returns the text direction heuristic used for creating this layout. |
+| abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getTopPadding](Layout.md))`()` Returns the (negative) number of extra pixels of ascent padding in the top line of the Layout. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [getUseBoundsForWidth](Layout.md))`()` Returns true if using bounding box as a width, false for using advance as a width. |
 | --- | --- |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWidth](../android/text/Layout.md))`()` Return the width used for creating this layout in pixels. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [increaseWidthTo](../android/text/Layout.md))`(`wid:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Increase the width of this layout to the specified width. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFallbackLineSpacingEnabled](../android/text/Layout.md))`()` Return true if the fallback line space is enabled in this Layout. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getWidth](Layout.md))`()` Return the width used for creating this layout in pixels. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [increaseWidthTo](Layout.md))`(`wid:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Increase the width of this layout to the specified width. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFallbackLineSpacingEnabled](Layout.md))`()` Return true if the fallback line space is enabled in this Layout. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFontPaddingIncluded](../android/text/Layout.md))`()` Returns true if this layout is created with increased line height. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRtlCharAt](../android/text/Layout.md))`(`offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns true if the character at offset is right to left (RTL). |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isFontPaddingIncluded](Layout.md))`()` Returns true if this layout is created with increased line height. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isRtlCharAt](Layout.md))`(`offset:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns true if the character at offset is right to left (RTL). |
 
 | Protected methods ||
 |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSpanned](../android/text/Layout.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isSpanned](Layout.md))`()` <br /> |
 
 | Properties ||
 |---------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Layout.TextInclusionStrategy](../android/text/Layout.TextInclusionStrategy.md) | [INCLUSION_STRATEGY_ANY_OVERLAP](../android/text/Layout.md) Strategy which considers a text segment to be inside a rectangle area if the segment bounds intersect the rectangle. |
-| static [Layout.TextInclusionStrategy](../android/text/Layout.TextInclusionStrategy.md) | [INCLUSION_STRATEGY_CONTAINS_ALL](../android/text/Layout.md) Strategy which considers a text segment to be inside a rectangle area if the segment bounds are completely contained within the rectangle. |
-| static [Layout.TextInclusionStrategy](../android/text/Layout.TextInclusionStrategy.md) | [INCLUSION_STRATEGY_CONTAINS_CENTER](../android/text/Layout.md) Strategy which considers a text segment to be inside a rectangle area if the center of the segment bounds is inside the rectangle. |
+| static [Layout.TextInclusionStrategy](../android/text/Layout.TextInclusionStrategy.md) | [INCLUSION_STRATEGY_ANY_OVERLAP](Layout.md) Strategy which considers a text segment to be inside a rectangle area if the segment bounds intersect the rectangle. |
+| static [Layout.TextInclusionStrategy](../android/text/Layout.TextInclusionStrategy.md) | [INCLUSION_STRATEGY_CONTAINS_ALL](Layout.md) Strategy which considers a text segment to be inside a rectangle area if the segment bounds are completely contained within the rectangle. |
+| static [Layout.TextInclusionStrategy](../android/text/Layout.TextInclusionStrategy.md) | [INCLUSION_STRATEGY_CONTAINS_CENTER](Layout.md) Strategy which considers a text segment to be inside a rectangle area if the center of the segment bounds is inside the rectangle. |
 | --- | --- |
 
 ## Constants
@@ -362,7 +362,7 @@ Subclasses of Layout use this constructor to set the display text, width, and ot
 | Parameters ||
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `text` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!: the text to render |
-| `paint` | [TextPaint](../android/text/TextPaint.md)!: the default paint for the layout. Styles can override various attributes of the paint. |
+| `paint` | [TextPaint](TextPaint.md)!: the default paint for the layout. Styles can override various attributes of the paint. |
 | `width` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the wrapping width for the text. |
 | --- | --- |
 | `align` | [Layout.Alignment](../android/text/Layout.Alignment.md)!: whether to left, right, or center the text. Styles can override the alignment. |
@@ -380,11 +380,11 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 open fun computeDrawingBoundingBox(): RectF
 ```
 
-Get an actual bounding box that draws text content. Note that the [RectF.top](../android/graphics/RectF.md) and [RectF.bottom](../android/graphics/RectF.md) may be different from the [Layout.getLineTop(int)](../android/text/Layout.md)) of the first line and [Layout.getLineBottom(int)](../android/text/Layout.md)) of the last line. The line top and line bottom are calculated based on yMin/yMax or ascent/descent value of font file. On the other hand, the drawing bounding boxes are calculated based on actual glyphs used there.
+Get an actual bounding box that draws text content. Note that the [RectF.top](../android.graphics/RectF.md) and [RectF.bottom](../android.graphics/RectF.md) may be different from the [Layout.getLineTop(int)](Layout.md)) of the first line and [Layout.getLineBottom(int)](Layout.md)) of the last line. The line top and line bottom are calculated based on yMin/yMax or ascent/descent value of font file. On the other hand, the drawing bounding boxes are calculated based on actual glyphs used there.
 
 | Return ||
 |--------------------------------------------------------------------------------------|-------------------------------------------------|
-| [RectF](../android/graphics/RectF.md) | bounding rectangle This value cannot be `null`. |
+| [RectF](../android.graphics/RectF.md) | bounding rectangle This value cannot be `null`. |
 
 ### draw
 
@@ -397,7 +397,7 @@ open fun draw(c: Canvas!): Unit
 Draw this Layout on the specified Canvas. This API draws background first, then draws text on top of it. 
 **See Also**
 
-- [#draw(Canvas, List, List, Path, Paint, int)](../android/text/Layout.md)) 
+- [#draw(Canvas, List, List, Path, Paint, int)](Layout.md)) 
 
 ### draw
 
@@ -416,15 +416,15 @@ Draw this Layout on the specified canvas, with the highlight path drawn between 
 
 | Parameters ||
 |---------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `canvas` | [Canvas](../android/graphics/Canvas.md)!: the canvas |
-| `selectionHighlight` | [Path](../android/graphics/Path.md)!: the path of the selection highlight or cursor; can be null |
-| `selectionHighlightPaint` | [Paint](../android/graphics/Paint.md)!: the paint for the selection highlight |
+| `canvas` | [Canvas](../android.graphics/Canvas.md)!: the canvas |
+| `selectionHighlight` | [Path](../android.graphics/Path.md)!: the path of the selection highlight or cursor; can be null |
+| `selectionHighlightPaint` | [Paint](../android.graphics/Paint.md)!: the paint for the selection highlight |
 | --- | --- |
 | `cursorOffsetVertical` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the amount to temporarily translate the canvas while rendering the highlight |
 
 **See Also**
 
-- [#draw(Canvas, List, List, Path, Paint, int)](../android/text/Layout.md)) 
+- [#draw(Canvas, List, List, Path, Paint, int)](Layout.md)) 
 
 ### draw
 
@@ -445,19 +445,19 @@ Draw this layout on the specified canvas. This API draws background first, then 
 
 | Parameters ||
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `canvas` | [Canvas](../android/graphics/Canvas.md): the canvas This value cannot be `null`. |
-| `highlightPaths` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Path](../android/graphics/Path.md)!\>?: the path of the highlights. The highlightPaths and highlightPaints must have the same length and aligned in the same order. For example, the paint of the n-th of the highlightPaths should be stored at the n-th of highlightPaints. This value may be `null`. |
-| `highlightPaints` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Paint](../android/graphics/Paint.md)!\>?: the paints for the highlights. The highlightPaths and highlightPaints must have the same length and aligned in the same order. For example, the paint of the n-th of the highlightPaths should be stored at the n-th of highlightPaints. This value may be `null`. |
+| `canvas` | [Canvas](../android.graphics/Canvas.md): the canvas This value cannot be `null`. |
+| `highlightPaths` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Path](../android.graphics/Path.md)!\>?: the path of the highlights. The highlightPaths and highlightPaints must have the same length and aligned in the same order. For example, the paint of the n-th of the highlightPaths should be stored at the n-th of highlightPaints. This value may be `null`. |
+| `highlightPaints` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Paint](../android.graphics/Paint.md)!\>?: the paints for the highlights. The highlightPaths and highlightPaints must have the same length and aligned in the same order. For example, the paint of the n-th of the highlightPaths should be stored at the n-th of highlightPaints. This value may be `null`. |
 | --- | --- |
-| `selectionPath` | [Path](../android/graphics/Path.md)?: the selection or cursor path This value may be `null`. |
-| `selectionPaint` | [Paint](../android/graphics/Paint.md)?: the paint for the selection or cursor. This value may be `null`. |
+| `selectionPath` | [Path](../android.graphics/Path.md)?: the selection or cursor path This value may be `null`. |
+| `selectionPaint` | [Paint](../android.graphics/Paint.md)?: the paint for the selection or cursor. This value may be `null`. |
 | `cursorOffsetVertical` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): the amount to temporarily translate the canvas while rendering the highlight |
 | --- | --- |
 
 **See Also**
 
-- [#drawBackground(Canvas)](../android/text/Layout.md))
-- [#drawText(Canvas)](../android/text/Layout.md)) 
+- [#drawBackground(Canvas)](Layout.md))
+- [#drawText(Canvas)](Layout.md)) 
 
 ### drawBackground
 
@@ -467,16 +467,16 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 open fun drawBackground(canvas: Canvas): Unit
 ```
 
-Draw background of this layout. Different from [draw(android.graphics.Canvas,java.util.List,java.util.List,android.graphics.Path,android.graphics.Paint,int)](../android/text/Layout.md)) API, this API only draws background, not drawing text, highlights or selections. The background here is drawn by [LineBackgroundSpan](../android/text/style/LineBackgroundSpan.md) attached to the text.
+Draw background of this layout. Different from [draw(android.graphics.Canvas,java.util.List,java.util.List,android.graphics.Path,android.graphics.Paint,int)](Layout.md)) API, this API only draws background, not drawing text, highlights or selections. The background here is drawn by [LineBackgroundSpan](../android.text.style/LineBackgroundSpan.md) attached to the text.
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------------------------|
-| `canvas` | [Canvas](../android/graphics/Canvas.md): the canvas This value cannot be `null`. |
+| `canvas` | [Canvas](../android.graphics/Canvas.md): the canvas This value cannot be `null`. |
 
 **See Also**
 
-- [#draw(Canvas, List, List, Path, Paint, int)](../android/text/Layout.md))
-- [#drawText(Canvas)](../android/text/Layout.md)) 
+- [#draw(Canvas, List, List, Path, Paint, int)](Layout.md))
+- [#drawText(Canvas)](Layout.md)) 
 
 ### drawText
 
@@ -486,16 +486,16 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 open fun drawText(canvas: Canvas): Unit
 ```
 
-Draw text part of this layout. Different from [draw(android.graphics.Canvas,java.util.List,java.util.List,android.graphics.Path,android.graphics.Paint,int)](../android/text/Layout.md)) API, this API only draws text part, not drawing highlights, selections, or backgrounds.
+Draw text part of this layout. Different from [draw(android.graphics.Canvas,java.util.List,java.util.List,android.graphics.Path,android.graphics.Paint,int)](Layout.md)) API, this API only draws text part, not drawing highlights, selections, or backgrounds.
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------------------------|
-| `canvas` | [Canvas](../android/graphics/Canvas.md): the canvas This value cannot be `null`. |
+| `canvas` | [Canvas](../android.graphics/Canvas.md): the canvas This value cannot be `null`. |
 
 **See Also**
 
-- [#draw(Canvas, List, List, Path, Paint, int)](../android/text/Layout.md))
-- [#drawBackground(Canvas)](../android/text/Layout.md)) 
+- [#draw(Canvas, List, List, Path, Paint, int)](Layout.md))
+- [#drawBackground(Canvas)](Layout.md)) 
 
 ### fillCharacterBounds
 
@@ -565,7 +565,7 @@ Return the break strategy used for creating this layout.
 
 | Return ||
 |----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the break strategy used for creating this layout. Value is [android.graphics.text.LineBreaker#BREAK_STRATEGY_SIMPLE](../android/graphics/text/LineBreaker.md), [android.graphics.text.LineBreaker#BREAK_STRATEGY_HIGH_QUALITY](../android/graphics/text/LineBreaker.md), or [android.graphics.text.LineBreaker#BREAK_STRATEGY_BALANCED](../android/graphics/text/LineBreaker.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the break strategy used for creating this layout. Value is [android.graphics.text.LineBreaker#BREAK_STRATEGY_SIMPLE](../android.graphics.text/LineBreaker.md), [android.graphics.text.LineBreaker#BREAK_STRATEGY_HIGH_QUALITY](../android.graphics.text/LineBreaker.md), or [android.graphics.text.LineBreaker#BREAK_STRATEGY_BALANCED](../android.graphics.text/LineBreaker.md) |
 
 **See Also**
 
@@ -599,7 +599,7 @@ open static fun getDesiredWidth(
 
 Return how wide a layout must be in order to display the specified text with one line per paragraph.
 
-As of O, Uses [TextDirectionHeuristics.FIRSTSTRONG_LTR](../android/text/TextDirectionHeuristics.md) as the default text direction heuristics. In the earlier versions uses [TextDirectionHeuristics.LTR](../android/text/TextDirectionHeuristics.md) as the default. 
+As of O, Uses [TextDirectionHeuristics.FIRSTSTRONG_LTR](TextDirectionHeuristics.md) as the default text direction heuristics. In the earlier versions uses [TextDirectionHeuristics.LTR](TextDirectionHeuristics.md) as the default. 
 
 ### getDesiredWidth
 
@@ -616,7 +616,7 @@ open static fun getDesiredWidth(
 
 Return how wide a layout must be in order to display the specified text slice with one line per paragraph.
 
-As of O, Uses [TextDirectionHeuristics.FIRSTSTRONG_LTR](../android/text/TextDirectionHeuristics.md) as the default text direction heuristics. In the earlier versions uses [TextDirectionHeuristics.LTR](../android/text/TextDirectionHeuristics.md) as the default. 
+As of O, Uses [TextDirectionHeuristics.FIRSTSTRONG_LTR](TextDirectionHeuristics.md) as the default text direction heuristics. In the earlier versions uses [TextDirectionHeuristics.LTR](TextDirectionHeuristics.md) as the default. 
 
 ### getEllipsisCount
 
@@ -658,7 +658,7 @@ Return the ellipsize option used for creating this layout. May return null if no
 - [android.text.StaticLayout.Builder#setEllipsize(TextUtils.TruncateAt)](../android/text/StaticLayout.Builder.md))
 - [android.text.Layout.Builder#setEllipsizedWidth(int)](../android/text/Layout.Builder.md))
 - [android.text.StaticLayout.Builder#setEllipsizedWidth(int)](../android/text/StaticLayout.Builder.md))
-- [android.text.Layout#getEllipsizedWidth()](../android/text/Layout.md)) 
+- [android.text.Layout#getEllipsizedWidth()](Layout.md)) 
 
 ### getEllipsizedWidth
 
@@ -668,7 +668,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 open fun getEllipsizedWidth(): Int
 ```
 
-Return the width to which this layout is ellipsized. If no ellipsize is applied, the same amount of [getWidth](../android/text/Layout.md)) is returned.
+Return the width to which this layout is ellipsized. If no ellipsize is applied, the same amount of [getWidth](Layout.md)) is returned.
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------|
@@ -701,7 +701,7 @@ Return the hyphenation frequency used for creating this layout.
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the hyphenation frequency used for creating this layout. Value is [android.text.Layout#HYPHENATION_FREQUENCY_NORMAL](../android/text/Layout.md), [android.text.Layout#HYPHENATION_FREQUENCY_NORMAL_FAST](../android/text/Layout.md), [android.text.Layout#HYPHENATION_FREQUENCY_FULL](../android/text/Layout.md), [android.text.Layout#HYPHENATION_FREQUENCY_FULL_FAST](../android/text/Layout.md), or [android.text.Layout#HYPHENATION_FREQUENCY_NONE](../android/text/Layout.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the hyphenation frequency used for creating this layout. Value is [android.text.Layout#HYPHENATION_FREQUENCY_NORMAL](Layout.md), [android.text.Layout#HYPHENATION_FREQUENCY_NORMAL_FAST](Layout.md), [android.text.Layout#HYPHENATION_FREQUENCY_FULL](Layout.md), [android.text.Layout#HYPHENATION_FREQUENCY_FULL_FAST](Layout.md), or [android.text.Layout#HYPHENATION_FREQUENCY_NONE](Layout.md) |
 
 **See Also**
 
@@ -720,7 +720,7 @@ Return the justification mode used for creating this layout.
 
 | Return ||
 |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the justification mode used for creating this layout. Value is [android.graphics.text.LineBreaker#JUSTIFICATION_MODE_NONE](../android/graphics/text/LineBreaker.md), [android.graphics.text.LineBreaker#JUSTIFICATION_MODE_INTER_WORD](../android/graphics/text/LineBreaker.md), or [android.graphics.text.LineBreaker#JUSTIFICATION_MODE_INTER_CHARACTER](../android/graphics/text/LineBreaker.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the justification mode used for creating this layout. Value is [android.graphics.text.LineBreaker#JUSTIFICATION_MODE_NONE](../android.graphics.text/LineBreaker.md), [android.graphics.text.LineBreaker#JUSTIFICATION_MODE_INTER_WORD](../android.graphics.text/LineBreaker.md), or [android.graphics.text.LineBreaker#JUSTIFICATION_MODE_INTER_CHARACTER](../android.graphics.text/LineBreaker.md) |
 
 **See Also**
 
@@ -811,7 +811,7 @@ Return the baseline for the specified line (0...getLineCount() - 1) If bounds is
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------|
 | `line` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): which line to examine (0..getLineCount() - 1) |
-| `bounds` | [Rect](../android/graphics/Rect.md)!: Optional. If not null, it returns the extent of the line |
+| `bounds` | [Rect](../android.graphics/Rect.md)!: Optional. If not null, it returns the extent of the line |
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------|
@@ -825,11 +825,11 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 open fun getLineBreakConfig(): LineBreakConfig
 ```
 
-Gets the [LineBreakConfig](../android/graphics/text/LineBreakConfig.md) used for creating this layout. Do not modify the returned object.
+Gets the [LineBreakConfig](../android.graphics.text/LineBreakConfig.md) used for creating this layout. Do not modify the returned object.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| [LineBreakConfig](../android/graphics/text/LineBreakConfig.md) | The line break config used for creating this layout. This value cannot be `null`. |
+| [LineBreakConfig](../android.graphics.text/LineBreakConfig.md) | The line break config used for creating this layout. This value cannot be `null`. |
 
 ### getLineContainsTab
 
@@ -926,7 +926,7 @@ open fun getLineLetterSpacingUnitCount(
 
 Returns the number of letter spacing unit in the line.
 
-This API returns a number of letters that is a target of letter spacing. The letter spacing won't be added to the middle of the characters that are needed to be treated as a single, e.g., ligatured or conjunct form. Note that this value is different from the number of\] grapheme clusters that is calculated by [BreakIterator.getCharacterInstance(Locale)](../java/text/BreakIterator.md)). For example, if the "fi" is ligatured, the ligatured form is treated as single uni and letter spacing is not added, but it has two separate grapheme cluster.
+This API returns a number of letters that is a target of letter spacing. The letter spacing won't be added to the middle of the characters that are needed to be treated as a single, e.g., ligatured or conjunct form. Note that this value is different from the number of\] grapheme clusters that is calculated by [BreakIterator.getCharacterInstance(Locale)](../java.text/BreakIterator.md)). For example, if the "fi" is ligatured, the ligatured form is treated as single uni and letter spacing is not added, but it has two separate grapheme cluster.
 
 This value is used for calculating the letter spacing amount for the justification because the letter spacing is applied between clusters. For example, if extra `W` pixels needed to be filled by letter spacing, the amount of letter spacing to be applied is `W`/(letter spacing unit count - 1) px.
 
@@ -977,7 +977,7 @@ Returns the amount added to the line height.
 
 - [android.text.Layout.Builder#setLineSpacingAmount(float)](../android/text/Layout.Builder.md))
 - [android.text.StaticLayout.Builder#setLineSpacing(float, float)](../android/text/StaticLayout.Builder.md))
-- [android.text.Layout#getSpacingAdd()](../android/text/Layout.md)) 
+- [android.text.Layout#getSpacingAdd()](Layout.md)) 
 
 ### getLineSpacingMultiplier
 
@@ -997,7 +997,7 @@ Returns the multiplier applied to the line height.
 
 - [android.text.Layout.Builder#setLineSpacingMultiplier(float)](../android/text/Layout.Builder.md))
 - [android.text.StaticLayout.Builder#setLineSpacing(float, float)](../android/text/StaticLayout.Builder.md))
-- [android.text.Layout#getSpacingMultiplier()](../android/text/Layout.md)) 
+- [android.text.Layout#getSpacingMultiplier()](Layout.md)) 
 
 ### getLineStart
 
@@ -1047,7 +1047,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun getMaxLines(): Int
 ```
 
-Return the maximum lines allowed used for creating this layout. Note that this is not an actual line count of this layout. Use [getLineCount()](../android/text/Layout.md)) for getting the actual line count of this layout.
+Return the maximum lines allowed used for creating this layout. Note that this is not an actual line count of this layout. Use [getLineCount()](Layout.md)) for getting the actual line count of this layout.
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------|
@@ -1070,12 +1070,12 @@ Get the minimum font metrics used for line spacing.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Paint.FontMetrics](../android/graphics/Paint.FontMetrics.md)? | a minimum font metrics. `null` for using the value obtained by [Paint.getFontMetricsForLocale(Paint.FontMetrics)](../android/graphics/Paint.md)) |
+| [Paint.FontMetrics](../android/graphics/Paint.FontMetrics.md)? | a minimum font metrics. `null` for using the value obtained by [Paint.getFontMetricsForLocale(Paint.FontMetrics)](../android.graphics/Paint.md)) |
 
 **See Also**
 
-- [android.widget.TextView#setMinimumFontMetrics(Paint.FontMetrics)](../android/widget/TextView.md))
-- [android.widget.TextView#getMinimumFontMetrics()](../android/widget/TextView.md))
+- [android.widget.TextView#setMinimumFontMetrics(Paint.FontMetrics)](../android.widget/TextView.md))
+- [android.widget.TextView#getMinimumFontMetrics()](../android.widget/TextView.md))
 - [android.text.Layout.Builder#setMinimumFontMetrics(Paint.FontMetrics)](../android/text/Layout.Builder.md))
 - [android.text.StaticLayout.Builder#setMinimumFontMetrics(Paint.FontMetrics)](../android/text/StaticLayout.Builder.md))
 - [android.text.DynamicLayout.Builder#setMinimumFontMetrics(Paint.FontMetrics)](../android/text/DynamicLayout.Builder.md)) 
@@ -1121,7 +1121,7 @@ Return the paint used for creating this layout. Do not modify the returned paint
 
 | Return ||
 |------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
-| [TextPaint](../android/text/TextPaint.md) | the paint used for creating this layout. This value cannot be `null`. |
+| [TextPaint](TextPaint.md) | the paint used for creating this layout. This value cannot be `null`. |
 
 ### getParagraphAlignment
 
@@ -1141,7 +1141,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun getParagraphDirection(line: Int): Int
 ```
 
-Returns the primary directionality of the paragraph containing the specified line, either 1 for left-to-right lines, or -1 for right-to-left lines (see [DIR_LEFT_TO_RIGHT](../android/text/Layout.md), [DIR_RIGHT_TO_LEFT](../android/text/Layout.md)). 
+Returns the primary directionality of the paragraph containing the specified line, either 1 for left-to-right lines, or -1 for right-to-left lines (see [DIR_LEFT_TO_RIGHT](Layout.md), [DIR_RIGHT_TO_LEFT](Layout.md)). 
 
 ### getParagraphLeft
 
@@ -1193,8 +1193,8 @@ The returned range may also include text segments which are not inside the speci
 
 | Parameters ||
 |---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `area` | [RectF](../android/graphics/RectF.md): area for which the text range will be found This value cannot be `null`. |
-| `segmentFinder` | [SegmentFinder](../android/text/SegmentFinder.md): SegmentFinder for determining the ranges of text to be considered as a text segment This value cannot be `null`. |
+| `area` | [RectF](../android.graphics/RectF.md): area for which the text range will be found This value cannot be `null`. |
+| `segmentFinder` | [SegmentFinder](SegmentFinder.md): SegmentFinder for determining the ranges of text to be considered as a text segment This value cannot be `null`. |
 | `inclusionStrategy` | [Layout.TextInclusionStrategy](../android/text/Layout.TextInclusionStrategy.md): strategy for determining whether a text segment is inside the specified area This value cannot be `null`. |
 | --- | --- |
 
@@ -1262,8 +1262,8 @@ Returns true if shifting drawing offset for start overhang.
 
 **See Also**
 
-- [android.widget.TextView#setShiftDrawingOffsetForStartOverhang(boolean)](../android/widget/TextView.md))
-- [android.widget.TextView#getShiftDrawingOffsetForStartOverhang()](../android/widget/TextView.md))
+- [android.widget.TextView#setShiftDrawingOffsetForStartOverhang(boolean)](../android.widget/TextView.md))
+- [android.widget.TextView#getShiftDrawingOffsetForStartOverhang()](../android.widget/TextView.md))
 - [android.text.StaticLayout.Builder#setShiftDrawingOffsetForStartOverhang(boolean)](../android/text/StaticLayout.Builder.md))
 - [android.text.DynamicLayout.Builder#setShiftDrawingOffsetForStartOverhang(boolean)](../android/text/DynamicLayout.Builder.md)) 
 
@@ -1329,7 +1329,7 @@ Returns the text direction heuristic used for creating this layout.
 
 | Return ||
 |--------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
-| [TextDirectionHeuristic](../android/text/TextDirectionHeuristic.md) | the text direction heuristic used for creating this layout This value cannot be `null`. |
+| [TextDirectionHeuristic](TextDirectionHeuristic.md) | the text direction heuristic used for creating this layout This value cannot be `null`. |
 
 **See Also**
 
@@ -1362,8 +1362,8 @@ Returns true if using bounding box as a width, false for using advance as a widt
 
 **See Also**
 
-- [android.widget.TextView#setUseBoundsForWidth(boolean)](../android/widget/TextView.md))
-- [android.widget.TextView#getUseBoundsForWidth()](../android/widget/TextView.md))
+- [android.widget.TextView#setUseBoundsForWidth(boolean)](../android.widget/TextView.md))
+- [android.widget.TextView#getUseBoundsForWidth()](../android.widget/TextView.md))
 - [android.text.StaticLayout.Builder#setUseBoundsForWidth(boolean)](../android/text/StaticLayout.Builder.md))
 - [android.text.DynamicLayout.Builder#setUseBoundsForWidth(boolean)](../android/text/DynamicLayout.Builder.md)) 
 

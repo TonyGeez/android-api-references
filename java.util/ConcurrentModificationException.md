@@ -11,12 +11,12 @@ open class ConcurrentModificationException : RuntimeException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
-| | | ↳ | [java.lang.RuntimeException](../java/lang/RuntimeException.md) ||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) |||
+| | | ↳ | [java.lang.RuntimeException](../java.lang/RuntimeException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.util.ConcurrentModificationException](../java/util/ConcurrentModificationException.md) |
+| | | | ↳ | [java.util.ConcurrentModificationException](ConcurrentModificationException.md) |
 
-| Known Direct Subclasses [DirectoryIteratorException](../java/nio/file/DirectoryIteratorException.md) |-----------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------| | [DirectoryIteratorException](../java/nio/file/DirectoryIteratorException.md) | Runtime exception thrown if an I/O error is encountered when iterating over the entries in a directory. | |
+| Known Direct Subclasses [DirectoryIteratorException](../java.nio.file/DirectoryIteratorException.md) |-----------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------| | [DirectoryIteratorException](../java.nio.file/DirectoryIteratorException.md) | Runtime exception thrown if an I/O error is encountered when iterating over the entries in a directory. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 This exception may be thrown by methods that have detected concurrent modification of an object when such modification is not permissible.
@@ -31,10 +31,10 @@ Note that fail-fast behavior cannot be guaranteed as it is, generally speaking, 
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ConcurrentModificationException](../java/util/ConcurrentModificationException.md))`()` Constructs a ConcurrentModificationException with no detail message. |
-| [ConcurrentModificationException](../java/util/ConcurrentModificationException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a`ConcurrentModificationException`with the specified detail message. |
-| [ConcurrentModificationException](../java/util/ConcurrentModificationException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a new exception with the specified detail message and cause. |
-| [ConcurrentModificationException](../java/util/ConcurrentModificationException.md))`(`cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a new exception with the specified cause and a detail message of`(cause==null ? null : cause.toString())`(which typically contains the class and detail message of`cause`. |
+| [ConcurrentModificationException](ConcurrentModificationException.md))`()` Constructs a ConcurrentModificationException with no detail message. |
+| [ConcurrentModificationException](ConcurrentModificationException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Constructs a`ConcurrentModificationException`with the specified detail message. |
+| [ConcurrentModificationException](ConcurrentModificationException.md))`(`message:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a new exception with the specified detail message and cause. |
+| [ConcurrentModificationException](ConcurrentModificationException.md))`(`cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Constructs a new exception with the specified cause and a detail message of`(cause==null ? null : cause.toString())`(which typically contains the class and detail message of`cause`. |
 
 ## Public constructors
 
@@ -78,8 +78,8 @@ Note that the detail message associated with`cause`is*not*automatically incorpor
 
 | Parameters ||
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the detail message (which is saved for later retrieval by the [Throwable.getMessage()](../java/lang/Throwable.md))method). |
-| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!:the cause (which is saved for later retrieval by the [Throwable.getCause()](../java/lang/Throwable.md))method). (A`null`value is permitted, and indicates that the cause is nonexistent or unknown.) |
+| `message` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the detail message (which is saved for later retrieval by the [Throwable.getMessage()](../java.lang/Throwable.md))method). |
+| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!:the cause (which is saved for later retrieval by the [Throwable.getCause()](../java.lang/Throwable.md))method). (A`null`value is permitted, and indicates that the cause is nonexistent or unknown.) |
 
 ### ConcurrentModificationException
 
@@ -93,4 +93,4 @@ Constructs a new exception with the specified cause and a detail message of`(cau
 
 | Parameters ||
 |---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!:the cause (which is saved for later retrieval by the [Throwable.getCause()](../java/lang/Throwable.md))method). (A`null`value is permitted, and indicates that the cause is nonexistent or unknown.) |
+| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!:the cause (which is saved for later retrieval by the [Throwable.getCause()](../java.lang/Throwable.md))method). (A`null`value is permitted, and indicates that the cause is nonexistent or unknown.) |

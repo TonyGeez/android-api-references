@@ -4,7 +4,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # DrmInitData
 
-Kotlin| [Java](../android/media/DrmInitData.md) 
+Kotlin| [Java](DrmInitData.md) 
 | --- | --- |
 
 ```
@@ -13,9 +13,9 @@ abstract class DrmInitData
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.media.DrmInitData](../android/media/DrmInitData.md) |
+| ↳ | [android.media.DrmInitData](DrmInitData.md) |
 
-Encapsulates initialization data required by a [MediaDrm](../android/media/MediaDrm.md) instance.
+Encapsulates initialization data required by a [MediaDrm](MediaDrm.md) instance.
 
 ## Summary
 
@@ -25,9 +25,9 @@ Encapsulates initialization data required by a [MediaDrm](../android/media/Media
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [DrmInitData.SchemeInitData](../android/media/DrmInitData.SchemeInitData.md)! | [get](../android/media/DrmInitData.md))`(`schemeUuid:` ` [UUID](../java/util/UUID.md)!`)` Retrieves initialization data for a given DRM scheme, specified by its UUID. |
-| open [DrmInitData.SchemeInitData](../android/media/DrmInitData.SchemeInitData.md) | [getSchemeInitDataAt](../android/media/DrmInitData.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the [SchemeInitData](../android/media/DrmInitData.SchemeInitData.md) with the given`index`. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSchemeInitDataCount](../android/media/DrmInitData.md))`()` Returns the number of [SchemeInitData](../android/media/DrmInitData.SchemeInitData.md) elements available through [getSchemeInitDataAt](../android/media/DrmInitData.md)). |
+| abstract [DrmInitData.SchemeInitData](../android/media/DrmInitData.SchemeInitData.md)! | [get](DrmInitData.md))`(`schemeUuid:` ` [UUID](../java.util/UUID.md)!`)` Retrieves initialization data for a given DRM scheme, specified by its UUID. |
+| open [DrmInitData.SchemeInitData](../android/media/DrmInitData.SchemeInitData.md) | [getSchemeInitDataAt](DrmInitData.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the [SchemeInitData](../android/media/DrmInitData.SchemeInitData.md) with the given`index`. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSchemeInitDataCount](DrmInitData.md))`()` Returns the number of [SchemeInitData](../android/media/DrmInitData.SchemeInitData.md) elements available through [getSchemeInitDataAt](DrmInitData.md)). |
 | --- | --- |
 
 ## Public methods
@@ -41,13 +41,13 @@ Deprecated in [API level 30](https://developer.android.com/guide/topics/manifest
 abstract fun get(schemeUuid: UUID!): DrmInitData.SchemeInitData!
 ```
 
-**Deprecated:** *Use [getSchemeInitDataCount](../android/media/DrmInitData.md))and [getSchemeInitDataAt](../android/media/DrmInitData.md))instead.*
+**Deprecated:** *Use [getSchemeInitDataCount](DrmInitData.md))and [getSchemeInitDataAt](DrmInitData.md))instead.*
 
 Retrieves initialization data for a given DRM scheme, specified by its UUID.
 
 | Parameters ||
 |--------------|-----------------------------------------------------------------------------------------------------|
-| `schemeUuid` | [UUID](../java/util/UUID.md)!:The DRM scheme's UUID. |
+| `schemeUuid` | [UUID](../java.util/UUID.md)!:The DRM scheme's UUID. |
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
@@ -73,7 +73,7 @@ Returns the [SchemeInitData](../android/media/DrmInitData.SchemeInitData.md) wit
 
 | Exceptions ||
 |---------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `java.lang.IndexOutOfBoundsException` | If the given`index`is negative or greater than [getSchemeInitDataCount](../android/media/DrmInitData.md))`- 1`. |
+| `java.lang.IndexOutOfBoundsException` | If the given`index`is negative or greater than [getSchemeInitDataCount](DrmInitData.md))`- 1`. |
 
 ### getSchemeInitDataCount
 
@@ -83,4 +83,4 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 open fun getSchemeInitDataCount(): Int
 ```
 
-Returns the number of [SchemeInitData](../android/media/DrmInitData.SchemeInitData.md) elements available through [getSchemeInitDataAt](../android/media/DrmInitData.md)).
+Returns the number of [SchemeInitData](../android/media/DrmInitData.SchemeInitData.md) elements available through [getSchemeInitDataAt](DrmInitData.md)).

@@ -8,11 +8,11 @@ abstract class ContentSafetyAppService : Service
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](../android/content/Context.md) ||||
-| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) |||
-| | | ↳ | [android.app.Service](../android/app/Service.md) ||
+| ↳ | [android.content.Context](../android.content/Context.md) ||||
+| | ↳ | [android.content.ContextWrapper](../android.content/ContextWrapper.md) |||
+| | | ↳ | [android.app.Service](../android.app/Service.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.service.contentsafety.ContentSafetyAppService](../android/service/contentsafety/ContentSafetyAppService.md) |
+| | | | ↳ | [android.service.contentsafety.ContentSafetyAppService](ContentSafetyAppService.md) |
 
 Base class for a service that the `android.app.role.RoleManager.ROLE_CONTENT_SAFETY` role holder must implement.
 
@@ -1058,8 +1058,8 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 
 | Public methods ||
 |---|---|
-| [IBinder](../android/os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/service/contentsafety/ContentSafetyAppService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#?)` Return the communication channel to the service. |
-| abstract [ContentClassificationResult](../android/app/contentsafety/ContentClassificationResult.md) | `https://developer.android.com/reference/kotlin/android/service/contentsafety/ContentSafetyAppService#onClassifyContent(android.app.contentsafety.ClassifiableContent)(content: https://developer.android.com/reference/kotlin/android/app/contentsafety/ClassifiableContent.html#)` Called when content needs to be classified. |
+| [IBinder](../android.os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/service/contentsafety/ContentSafetyAppService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#?)` Return the communication channel to the service. |
+| abstract [ContentClassificationResult](../android.app.contentsafety/ContentClassificationResult.md) | `https://developer.android.com/reference/kotlin/android/service/contentsafety/ContentSafetyAppService#onClassifyContent(android.app.contentsafety.ClassifiableContent)(content: https://developer.android.com/reference/kotlin/android/app/contentsafety/ClassifiableContent.html#)` Called when content needs to be classified. |
 
 Inherited functions From class `https://developer.android.com/reference/kotlin/android/app/Service.html#` `https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html` `https://developer.android.com/reference/kotlin/android/app/Service.html#attachBaseContext(android.content.Context)(newBase: https://developer.android.com/reference/kotlin/android/content/Context.html#!)`
 
@@ -2790,7 +2790,7 @@ Return the communication channel to the service. May return null if clients can 
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md)?: This value may be `null`. |
+| `intent` | [Intent](../android.content/Intent.md)?: This value may be `null`. |
 
 | Return ||
 |---|---|
@@ -2810,7 +2810,7 @@ This is called on the main thread.
 
 | Parameters ||
 |---|---|
-| `content` | [ClassifiableContent](../android/app/contentsafety/ClassifiableContent.md): the content to be classified. This value cannot be `null`. |
+| `content` | [ClassifiableContent](../android.app.contentsafety/ClassifiableContent.md): the content to be classified. This value cannot be `null`. |
 
 | Return ||
 |---|---|

@@ -4,7 +4,7 @@ Added in [API level 25](https://developer.android.com/guide/topics/manifest/uses
 
 # ShortcutInfo
 
-Kotlin| [Java](../android/content/pm/ShortcutInfo.md) 
+Kotlin| [Java](ShortcutInfo.md) 
 | --- | --- |
 
 ```
@@ -13,82 +13,82 @@ class ShortcutInfo : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.content.pm.ShortcutInfo](../android/content/pm/ShortcutInfo.md) |
+| ↳ | [android.content.pm.ShortcutInfo](ShortcutInfo.md) |
 
-Represents a shortcut that can be published via [ShortcutManager](../android/content/pm/ShortcutManager.md).
+Represents a shortcut that can be published via [ShortcutManager](ShortcutManager.md).
 
 ## Summary
 
 | Nested classes ||
 |---|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](../android/content/pm/ShortcutInfo.Builder.md) Builder class for [ShortcutInfo](../android/content/pm/ShortcutInfo.md) objects. |
+| | [Builder](../android/content/pm/ShortcutInfo.Builder.md) Builder class for [ShortcutInfo](ShortcutInfo.md) objects. |
 
 | Constants ||
 |----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DISABLED_REASON_APP_CHANGED](../android/content/pm/ShortcutInfo.md) Shortcut has been disabled due to changes to the publisher app. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DISABLED_REASON_BACKUP_NOT_SUPPORTED](../android/content/pm/ShortcutInfo.md) Shortcut has not been restored because the publisher app does not support backup and restore. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DISABLED_REASON_BY_APP](../android/content/pm/ShortcutInfo.md) Shortcut has been disabled by the publisher app with the [ShortcutManager.disableShortcuts(List)](../android/content/pm/ShortcutManager.md))API. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DISABLED_REASON_APP_CHANGED](ShortcutInfo.md) Shortcut has been disabled due to changes to the publisher app. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DISABLED_REASON_BACKUP_NOT_SUPPORTED](ShortcutInfo.md) Shortcut has not been restored because the publisher app does not support backup and restore. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DISABLED_REASON_BY_APP](ShortcutInfo.md) Shortcut has been disabled by the publisher app with the [ShortcutManager.disableShortcuts(List)](ShortcutManager.md))API. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DISABLED_REASON_NOT_DISABLED](../android/content/pm/ShortcutInfo.md) Shortcut is not disabled. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DISABLED_REASON_OTHER_RESTORE_ISSUE](../android/content/pm/ShortcutInfo.md) Shortcut has not been restored for unknown reason. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DISABLED_REASON_SIGNATURE_MISMATCH](../android/content/pm/ShortcutInfo.md) Shortcut has not been restored because the publisher app's signature has changed. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DISABLED_REASON_NOT_DISABLED](ShortcutInfo.md) Shortcut is not disabled. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DISABLED_REASON_OTHER_RESTORE_ISSUE](ShortcutInfo.md) Shortcut has not been restored for unknown reason. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DISABLED_REASON_SIGNATURE_MISMATCH](ShortcutInfo.md) Shortcut has not been restored because the publisher app's signature has changed. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DISABLED_REASON_UNKNOWN](../android/content/pm/ShortcutInfo.md) Shortcut is disabled for an unknown reason. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DISABLED_REASON_VERSION_LOWER](../android/content/pm/ShortcutInfo.md) Shortcut has been restored from the previous device, but the publisher app on the current device is of a lower version. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SHORTCUT_CATEGORY_CONVERSATION](../android/content/pm/ShortcutInfo.md) Shortcut category for messaging related actions, such as chat. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DISABLED_REASON_UNKNOWN](ShortcutInfo.md) Shortcut is disabled for an unknown reason. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [DISABLED_REASON_VERSION_LOWER](ShortcutInfo.md) Shortcut has been restored from the previous device, but the publisher app on the current device is of a lower version. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [SHORTCUT_CATEGORY_CONVERSATION](ShortcutInfo.md) Shortcut category for messaging related actions, such as chat. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SURFACE_LAUNCHER](../android/content/pm/ShortcutInfo.md) Indicates system surfaces managed by a launcher app. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [SURFACE_LAUNCHER](ShortcutInfo.md) Indicates system surfaces managed by a launcher app. |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android.os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android.os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android.os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [ShortcutInfo](../android/content/pm/ShortcutInfo.md) | [createFromGenericDocument](../android/content/pm/ShortcutInfo.md))`(`context:` ` [Context](../android/content/Context.md)`, `document:` ` [GenericDocument](../android/app/appsearch/GenericDocument.md)`)` Convert a [GenericDocument](../android/app/appsearch/GenericDocument.md) into a ShortcutInfo. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/content/pm/ShortcutInfo.md))`()` <br /> |
-| [ComponentName](../android/content/ComponentName.md)? | [getActivity](../android/content/pm/ShortcutInfo.md))`()` Return the target activity. |
+| static [ShortcutInfo](ShortcutInfo.md) | [createFromGenericDocument](ShortcutInfo.md))`(`context:` ` [Context](../android.content/Context.md)`, `document:` ` [GenericDocument](../android.app.appsearch/GenericDocument.md)`)` Convert a [GenericDocument](../android.app.appsearch/GenericDocument.md) into a ShortcutInfo. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](ShortcutInfo.md))`()` <br /> |
+| [ComponentName](../android.content/ComponentName.md)? | [getActivity](ShortcutInfo.md))`()` Return the target activity. |
 | --- | --- |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Capability](../android/content/pm/Capability.md)!\> | [getCapabilities](../android/content/pm/ShortcutInfo.md))`()` Return a list of [Capability](../android/content/pm/Capability.md) associated with the shortcut. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [CapabilityParams](../android/content/pm/CapabilityParams.md)!\> | [getCapabilityParams](../android/content/pm/ShortcutInfo.md))`(`capability:` ` [Capability](../android/content/pm/Capability.md)`)` Returns the [CapabilityParams](../android/content/pm/CapabilityParams.md) in associated with given capability. |
-| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | [getCategories](../android/content/pm/ShortcutInfo.md))`()` Return the shortcut's categories. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [Capability](Capability.md)!\> | [getCapabilities](ShortcutInfo.md))`()` Return a list of [Capability](Capability.md) associated with the shortcut. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [CapabilityParams](CapabilityParams.md)!\> | [getCapabilityParams](ShortcutInfo.md))`(`capability:` ` [Capability](Capability.md)`)` Returns the [CapabilityParams](CapabilityParams.md) in associated with given capability. |
+| [MutableSet](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-set/index.html)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | [getCategories](ShortcutInfo.md))`()` Return the shortcut's categories. |
 | --- | --- |
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | [getDisabledMessage](../android/content/pm/ShortcutInfo.md))`()` Return the message that should be shown when the user attempts to start a shortcut that is disabled. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDisabledReason](../android/content/pm/ShortcutInfo.md))`()` Returns why a shortcut has been disabled. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getExcludedFromSurfaces](../android/content/pm/ShortcutInfo.md))`()` Returns a bitmask of all surfaces this shortcut is excluded from. |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | [getDisabledMessage](ShortcutInfo.md))`()` Return the message that should be shown when the user attempts to start a shortcut that is disabled. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getDisabledReason](ShortcutInfo.md))`()` Returns why a shortcut has been disabled. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getExcludedFromSurfaces](ShortcutInfo.md))`()` Returns a bitmask of all surfaces this shortcut is excluded from. |
 | --- | --- |
-| [PersistableBundle](../android/os/PersistableBundle.md)? | [getExtras](../android/content/pm/ShortcutInfo.md))`()` Extras that the app can set for any purpose. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getId](../android/content/pm/ShortcutInfo.md))`()` Returns the ID of a shortcut. |
-| [Intent](../android/content/Intent.md)? | [getIntent](../android/content/pm/ShortcutInfo.md))`()` Returns the intent that is executed when the user selects this shortcut. |
+| [PersistableBundle](../android.os/PersistableBundle.md)? | [getExtras](ShortcutInfo.md))`()` Extras that the app can set for any purpose. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getId](ShortcutInfo.md))`()` Returns the ID of a shortcut. |
+| [Intent](../android.content/Intent.md)? | [getIntent](ShortcutInfo.md))`()` Returns the intent that is executed when the user selects this shortcut. |
 | --- | --- |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Intent](../android/content/Intent.md)!\>? | [getIntents](../android/content/pm/ShortcutInfo.md))`()` Return the intent set with[Builder.setIntents(Intent[])](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo.Builder#setIntents(kotlin.Array)). |
-| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getLastChangedTimestamp](../android/content/pm/ShortcutInfo.md))`()` Last time when any of the fields was updated. |
-| [LocusId](../android/content/LocusId.md)? | [getLocusId](../android/content/pm/ShortcutInfo.md))`()` Gets the [LocusId](../android/content/LocusId.md) associated with this shortcut. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Intent](../android.content/Intent.md)!\>? | [getIntents](ShortcutInfo.md))`()` Return the intent set with[Builder.setIntents(Intent[])](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo.Builder#setIntents(kotlin.Array)). |
+| [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html) | [getLastChangedTimestamp](ShortcutInfo.md))`()` Last time when any of the fields was updated. |
+| [LocusId](../android.content/LocusId.md)? | [getLocusId](ShortcutInfo.md))`()` Gets the [LocusId](../android.content/LocusId.md) associated with this shortcut. |
 | --- | --- |
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | [getLongLabel](../android/content/pm/ShortcutInfo.md))`()` Return the long description of a shortcut. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getPackage](../android/content/pm/ShortcutInfo.md))`()` Return the package name of the publisher app. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRank](../android/content/pm/ShortcutInfo.md))`()` "Rank" of a shortcut, which is a non-negative, sequential value that's unique for each [getActivity](../android/content/pm/ShortcutInfo.md))for each of the two types of shortcuts (static and dynamic). |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | [getLongLabel](ShortcutInfo.md))`()` Return the long description of a shortcut. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getPackage](ShortcutInfo.md))`()` Return the package name of the publisher app. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getRank](ShortcutInfo.md))`()` "Rank" of a shortcut, which is a non-negative, sequential value that's unique for each [getActivity](ShortcutInfo.md))for each of the two types of shortcuts (static and dynamic). |
 | --- | --- |
-| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | [getShortLabel](../android/content/pm/ShortcutInfo.md))`()` Return the short description of a shortcut. |
-| [UserHandle](../android/os/UserHandle.md)! | [getUserHandle](../android/content/pm/ShortcutInfo.md))`()` [UserHandle](../android/os/UserHandle.md) on which the publisher created this shortcut. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasKeyFieldsOnly](../android/content/pm/ShortcutInfo.md))`()` Return whether a shortcut only contains "key" information only or not. |
+| [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)? | [getShortLabel](ShortcutInfo.md))`()` Return the short description of a shortcut. |
+| [UserHandle](../android.os/UserHandle.md)! | [getUserHandle](ShortcutInfo.md))`()` [UserHandle](../android.os/UserHandle.md) on which the publisher created this shortcut. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [hasKeyFieldsOnly](ShortcutInfo.md))`()` Return whether a shortcut only contains "key" information only or not. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isCached](../android/content/pm/ShortcutInfo.md))`()` Return whether a shortcut is cached. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDeclaredInManifest](../android/content/pm/ShortcutInfo.md))`()` Return whether a shortcut is static; that is, whether a shortcut is published from AndroidManifest. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDynamic](../android/content/pm/ShortcutInfo.md))`()` Return whether a shortcut is dynamic. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isCached](ShortcutInfo.md))`()` Return whether a shortcut is cached. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDeclaredInManifest](ShortcutInfo.md))`()` Return whether a shortcut is static; that is, whether a shortcut is published from AndroidManifest. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isDynamic](ShortcutInfo.md))`()` Return whether a shortcut is dynamic. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEnabled](../android/content/pm/ShortcutInfo.md))`()` Returns`false`if a shortcut is disabled with android. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isExcludedFromSurfaces](../android/content/pm/ShortcutInfo.md))`(`surface:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return true if the shortcut is excluded from specified surface. |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isImmutable](../android/content/pm/ShortcutInfo.md))`()` Return if a shortcut is immutable, in which case it cannot be modified with any of [ShortcutManager](../android/content/pm/ShortcutManager.md) APIs. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isEnabled](ShortcutInfo.md))`()` Returns`false`if a shortcut is disabled with android. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isExcludedFromSurfaces](ShortcutInfo.md))`(`surface:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return true if the shortcut is excluded from specified surface. |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isImmutable](ShortcutInfo.md))`()` Return if a shortcut is immutable, in which case it cannot be modified with any of [ShortcutManager](ShortcutManager.md) APIs. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPinned](../android/content/pm/ShortcutInfo.md))`()` Return whether a shortcut is pinned. |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/content/pm/ShortcutInfo.md))`()` Return a string representation, intended for logging. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/content/pm/ShortcutInfo.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isPinned](ShortcutInfo.md))`()` Return whether a shortcut is pinned. |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](ShortcutInfo.md))`()` Return a string representation, intended for logging. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](ShortcutInfo.md))`(`dest:` ` [Parcel](../android.os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 | --- | --- |
 
 | Properties ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ShortcutInfo](../android/content/pm/ShortcutInfo.md)!\> | [CREATOR](../android/content/pm/ShortcutInfo.md) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ShortcutInfo](ShortcutInfo.md)!\> | [CREATOR](ShortcutInfo.md) <br /> |
 
 ## Constants
 
@@ -124,7 +124,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 static val DISABLED_REASON_BY_APP: Int
 ```
 
-Shortcut has been disabled by the publisher app with the [ShortcutManager.disableShortcuts(List)](../android/content/pm/ShortcutManager.md))API. 
+Shortcut has been disabled by the publisher app with the [ShortcutManager.disableShortcuts(List)](ShortcutManager.md))API. 
 
  Value: 1
 
@@ -225,16 +225,16 @@ static fun createFromGenericDocument(
 ): ShortcutInfo
 ```
 
-Convert a [GenericDocument](../android/app/appsearch/GenericDocument.md) into a ShortcutInfo.
+Convert a [GenericDocument](../android.app.appsearch/GenericDocument.md) into a ShortcutInfo.
 
 | Parameters ||
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](../android/content/Context.md):Client context This value cannot be`null`. |
-| `document` | [GenericDocument](../android/app/appsearch/GenericDocument.md):An instance of [GenericDocument](../android/app/appsearch/GenericDocument.md) that represents the shortcut. This value cannot be`null`. |
+| `context` | [Context](../android.content/Context.md):Client context This value cannot be`null`. |
+| `document` | [GenericDocument](../android.app.appsearch/GenericDocument.md):An instance of [GenericDocument](../android.app.appsearch/GenericDocument.md) that represents the shortcut. This value cannot be`null`. |
 
 | Return ||
 |-------------------------------------------------------------------------------------------------|-----------------------------|
-| [ShortcutInfo](../android/content/pm/ShortcutInfo.md) | This value cannot be`null`. |
+| [ShortcutInfo](ShortcutInfo.md) | This value cannot be`null`. |
 
 ### describeContents
 
@@ -246,7 +246,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) |
 
 ### getActivity
 
@@ -262,7 +262,7 @@ This has nothing to do with the activity that this shortcut will launch. Launche
 
 | Return ||
 |------------------------------------------------------------------------------------------------------|--------------------------|
-| [ComponentName](../android/content/ComponentName.md)? | This value may be`null`. |
+| [ComponentName](../android.content/ComponentName.md)? | This value may be`null`. |
 
 **See Also**
 
@@ -276,11 +276,11 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 fun getCapabilities(): MutableList<Capability!>
 ```
 
-Return a list of [Capability](../android/content/pm/Capability.md) associated with the shortcut.
+Return a list of [Capability](Capability.md) associated with the shortcut.
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Capability](../android/content/pm/Capability.md)!> | This value cannot be`null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [Capability](Capability.md)!> | This value cannot be`null`. |
 
 ### getCapabilityParams
 
@@ -290,15 +290,15 @@ Added in [API level 33](https://developer.android.com/guide/topics/manifest/uses
 fun getCapabilityParams(capability: Capability): MutableList<CapabilityParams!>
 ```
 
-Returns the [CapabilityParams](../android/content/pm/CapabilityParams.md) in associated with given capability.
+Returns the [CapabilityParams](CapabilityParams.md) in associated with given capability.
 
 | Parameters ||
 |--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `capability` | [Capability](../android/content/pm/Capability.md): [Capability](../android/content/pm/Capability.md) associated with the shortcut. This value cannot be`null`. |
+| `capability` | [Capability](Capability.md): [Capability](Capability.md) associated with the shortcut. This value cannot be`null`. |
 
 | Return ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [CapabilityParams](../android/content/pm/CapabilityParams.md)!> | This value cannot be`null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [CapabilityParams](CapabilityParams.md)!> | This value cannot be`null`. |
 
 ### getCategories
 
@@ -348,7 +348,7 @@ Returns why a shortcut has been disabled.
 
 | Return ||
 |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.content.pm.ShortcutInfo#DISABLED_REASON_NOT_DISABLED](../android/content/pm/ShortcutInfo.md), [android.content.pm.ShortcutInfo#DISABLED_REASON_BY_APP](../android/content/pm/ShortcutInfo.md), [android.content.pm.ShortcutInfo#DISABLED_REASON_APP_CHANGED](../android/content/pm/ShortcutInfo.md), [android.content.pm.ShortcutInfo#DISABLED_REASON_UNKNOWN](../android/content/pm/ShortcutInfo.md), [android.content.pm.ShortcutInfo#DISABLED_REASON_VERSION_LOWER](../android/content/pm/ShortcutInfo.md), [android.content.pm.ShortcutInfo#DISABLED_REASON_BACKUP_NOT_SUPPORTED](../android/content/pm/ShortcutInfo.md), [android.content.pm.ShortcutInfo#DISABLED_REASON_SIGNATURE_MISMATCH](../android/content/pm/ShortcutInfo.md), or [android.content.pm.ShortcutInfo#DISABLED_REASON_OTHER_RESTORE_ISSUE](../android/content/pm/ShortcutInfo.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is [android.content.pm.ShortcutInfo#DISABLED_REASON_NOT_DISABLED](ShortcutInfo.md), [android.content.pm.ShortcutInfo#DISABLED_REASON_BY_APP](ShortcutInfo.md), [android.content.pm.ShortcutInfo#DISABLED_REASON_APP_CHANGED](ShortcutInfo.md), [android.content.pm.ShortcutInfo#DISABLED_REASON_UNKNOWN](ShortcutInfo.md), [android.content.pm.ShortcutInfo#DISABLED_REASON_VERSION_LOWER](ShortcutInfo.md), [android.content.pm.ShortcutInfo#DISABLED_REASON_BACKUP_NOT_SUPPORTED](ShortcutInfo.md), [android.content.pm.ShortcutInfo#DISABLED_REASON_SIGNATURE_MISMATCH](ShortcutInfo.md), or [android.content.pm.ShortcutInfo#DISABLED_REASON_OTHER_RESTORE_ISSUE](ShortcutInfo.md) |
 
 ### getExcludedFromSurfaces
 
@@ -362,7 +362,7 @@ Returns a bitmask of all surfaces this shortcut is excluded from.
 
 | Return ||
 |----------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is either`0`or [android.content.pm.ShortcutInfo#SURFACE_LAUNCHER](../android/content/pm/ShortcutInfo.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | Value is either`0`or [android.content.pm.ShortcutInfo#SURFACE_LAUNCHER](ShortcutInfo.md) |
 
 **See Also**
 
@@ -380,7 +380,7 @@ Extras that the app can set for any purpose.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------|--------------------------|
-| [PersistableBundle](../android/os/PersistableBundle.md)? | This value may be`null`. |
+| [PersistableBundle](../android.os/PersistableBundle.md)? | This value may be`null`. |
 
 **See Also**
 
@@ -396,7 +396,7 @@ fun getId(): String
 
 Returns the ID of a shortcut.
 
-Shortcut IDs are unique within each publisher app and must be stable across devices so that shortcuts will still be valid when restored on a different device. See [ShortcutManager](../android/content/pm/ShortcutManager.md) for details.
+Shortcut IDs are unique within each publisher app and must be stable across devices so that shortcuts will still be valid when restored on a different device. See [ShortcutManager](ShortcutManager.md) for details.
 
 | Return ||
 |----------------------------------------------------------------------------------|-----------------------------|
@@ -412,7 +412,7 @@ fun getIntent(): Intent?
 
 Returns the intent that is executed when the user selects this shortcut. If setIntents() was used, then return the last intent in the array.
 
-Launcher apps**cannot** see the intent. If a [ShortcutInfo](../android/content/pm/ShortcutInfo.md) is obtained via [LauncherApps](../android/content/pm/LauncherApps.md), then this method will always return null. Launchers can only start a shortcut intent with android.content.pm.LauncherApps#startShortcut. 
+Launcher apps**cannot** see the intent. If a [ShortcutInfo](ShortcutInfo.md) is obtained via [LauncherApps](LauncherApps.md), then this method will always return null. Launchers can only start a shortcut intent with android.content.pm.LauncherApps#startShortcut. 
 **See Also**
 
 - [android.content.pm.ShortcutInfo.Builder#setIntent(Intent)](../android/content/pm/ShortcutInfo.Builder.md)) 
@@ -427,7 +427,7 @@ fun getIntents(): Array<Intent!>?
 
 Return the intent set with[Builder.setIntents(Intent[])](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo.Builder#setIntents(kotlin.Array)).
 
-Launcher apps**cannot** see the intents. If a [ShortcutInfo](../android/content/pm/ShortcutInfo.md) is obtained via [LauncherApps](../android/content/pm/LauncherApps.md), then this method will always return null. Launchers can only start a shortcut intent with android.content.pm.LauncherApps#startShortcut. 
+Launcher apps**cannot** see the intents. If a [ShortcutInfo](ShortcutInfo.md) is obtained via [LauncherApps](LauncherApps.md), then this method will always return null. Launchers can only start a shortcut intent with android.content.pm.LauncherApps#startShortcut. 
 **See Also**
 
 - [android.content.pm.ShortcutInfo.Builder#setIntents(Intent[])](https://developer.android.com/reference/kotlin/android/content/pm/ShortcutInfo.Builder#setIntents(kotlin.Array)) 
@@ -450,13 +450,13 @@ Added in [API level 29](https://developer.android.com/guide/topics/manifest/uses
 fun getLocusId(): LocusId?
 ```
 
-Gets the [LocusId](../android/content/LocusId.md) associated with this shortcut.
+Gets the [LocusId](../android.content/LocusId.md) associated with this shortcut.
 
-Used by the device's intelligence services to correlate objects (such as [Notification](../android/app/Notification.md) and [ContentCaptureContext](../android/view/contentcapture/ContentCaptureContext.md)) that are correlated.
+Used by the device's intelligence services to correlate objects (such as [Notification](../android.app/Notification.md) and [ContentCaptureContext](../android.view.contentcapture/ContentCaptureContext.md)) that are correlated.
 
 | Return ||
 |------------------------------------------------------------------------------------------|--------------------------|
-| [LocusId](../android/content/LocusId.md)? | This value may be`null`. |
+| [LocusId](../android.content/LocusId.md)? | This value may be`null`. |
 
 ### getLongLabel
 
@@ -498,9 +498,9 @@ Added in [API level 25](https://developer.android.com/guide/topics/manifest/uses
 fun getRank(): Int
 ```
 
-"Rank" of a shortcut, which is a non-negative, sequential value that's unique for each [getActivity](../android/content/pm/ShortcutInfo.md))for each of the two types of shortcuts (static and dynamic).
+"Rank" of a shortcut, which is a non-negative, sequential value that's unique for each [getActivity](ShortcutInfo.md))for each of the two types of shortcuts (static and dynamic).
 
-*Floating shortcuts* , or shortcuts that are neither static nor dynamic, will all have rank 0, because they aren't sorted. See the [ShortcutManager](../android/content/pm/ShortcutManager.md)'s class javadoc for details. 
+*Floating shortcuts* , or shortcuts that are neither static nor dynamic, will all have rank 0, because they aren't sorted. See the [ShortcutManager](ShortcutManager.md)'s class javadoc for details. 
 **See Also**
 
 - [android.content.pm.ShortcutInfo.Builder#setRank(int)](../android/content/pm/ShortcutInfo.Builder.md)) 
@@ -531,7 +531,7 @@ Added in [API level 25](https://developer.android.com/guide/topics/manifest/uses
 fun getUserHandle(): UserHandle!
 ```
 
-[UserHandle](../android/os/UserHandle.md) on which the publisher created this shortcut. 
+[UserHandle](../android.os/UserHandle.md) on which the publisher created this shortcut. 
 
 ### hasKeyFieldsOnly
 
@@ -543,20 +543,20 @@ fun hasKeyFieldsOnly(): Boolean
 
 Return whether a shortcut only contains "key" information only or not. If true, only the following fields are available.
 
-- [getId()](../android/content/pm/ShortcutInfo.md))
-- [getPackage()](../android/content/pm/ShortcutInfo.md))
-- [getActivity()](../android/content/pm/ShortcutInfo.md))
-- [getLastChangedTimestamp()](../android/content/pm/ShortcutInfo.md))
-- [isDynamic()](../android/content/pm/ShortcutInfo.md))
-- [isPinned()](../android/content/pm/ShortcutInfo.md))
-- [isDeclaredInManifest()](../android/content/pm/ShortcutInfo.md))
-- [isImmutable()](../android/content/pm/ShortcutInfo.md))
-- [isEnabled()](../android/content/pm/ShortcutInfo.md))
-- [getUserHandle()](../android/content/pm/ShortcutInfo.md))
+- [getId()](ShortcutInfo.md))
+- [getPackage()](ShortcutInfo.md))
+- [getActivity()](ShortcutInfo.md))
+- [getLastChangedTimestamp()](ShortcutInfo.md))
+- [isDynamic()](ShortcutInfo.md))
+- [isPinned()](ShortcutInfo.md))
+- [isDeclaredInManifest()](ShortcutInfo.md))
+- [isImmutable()](ShortcutInfo.md))
+- [isEnabled()](ShortcutInfo.md))
+- [getUserHandle()](ShortcutInfo.md))
 
 <br />
 
-For performance reasons, shortcuts passed to [LauncherApps.Callback.onShortcutsChanged(String, List, UserHandle)](../android/content/pm/LauncherApps.Callback.md))as well as those returned from [LauncherApps.getShortcuts(ShortcutQuery, UserHandle)](../android/content/pm/LauncherApps.md))while using the [ShortcutQuery.FLAG_GET_KEY_FIELDS_ONLY](../android/content/pm/LauncherApps.ShortcutQuery.md) option contain only key information. 
+For performance reasons, shortcuts passed to [LauncherApps.Callback.onShortcutsChanged(String, List, UserHandle)](../android/content/pm/LauncherApps.Callback.md))as well as those returned from [LauncherApps.getShortcuts(ShortcutQuery, UserHandle)](LauncherApps.md))while using the [ShortcutQuery.FLAG_GET_KEY_FIELDS_ONLY](../android/content/pm/LauncherApps.ShortcutQuery.md) option contain only key information. 
 
 ### isCached
 
@@ -576,9 +576,9 @@ Added in [API level 25](https://developer.android.com/guide/topics/manifest/uses
 fun isDeclaredInManifest(): Boolean
 ```
 
-Return whether a shortcut is static; that is, whether a shortcut is published from AndroidManifest.xml. If`true`, the shortcut is also [isImmutable()](../android/content/pm/ShortcutInfo.md)).
+Return whether a shortcut is static; that is, whether a shortcut is published from AndroidManifest.xml. If`true`, the shortcut is also [isImmutable()](ShortcutInfo.md)).
 
-When an app is upgraded and a shortcut is no longer published from AndroidManifest.xml, this will be set to`false`. If the shortcut is not pinned, then it'll disappear. However, if it's pinned, it will still be visible, [isEnabled()](../android/content/pm/ShortcutInfo.md))will be`false`and [isImmutable()](../android/content/pm/ShortcutInfo.md))will be`true`. 
+When an app is upgraded and a shortcut is no longer published from AndroidManifest.xml, this will be set to`false`. If the shortcut is not pinned, then it'll disappear. However, if it's pinned, it will still be visible, [isEnabled()](ShortcutInfo.md))will be`false`and [isImmutable()](ShortcutInfo.md))will be`true`. 
 
 ### isDynamic
 
@@ -612,7 +612,7 @@ Return true if the shortcut is excluded from specified surface.
 
 | Parameters ||
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `surface` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is either`0`or [android.content.pm.ShortcutInfo#SURFACE_LAUNCHER](../android/content/pm/ShortcutInfo.md) |
+| `surface` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Value is either`0`or [android.content.pm.ShortcutInfo#SURFACE_LAUNCHER](ShortcutInfo.md) |
 
 ### isImmutable
 
@@ -622,11 +622,11 @@ Added in [API level 25](https://developer.android.com/guide/topics/manifest/uses
 fun isImmutable(): Boolean
 ```
 
-Return if a shortcut is immutable, in which case it cannot be modified with any of [ShortcutManager](../android/content/pm/ShortcutManager.md) APIs.
+Return if a shortcut is immutable, in which case it cannot be modified with any of [ShortcutManager](ShortcutManager.md) APIs.
 
-All static shortcuts are immutable. When a static shortcut is pinned and is then disabled because it doesn't appear in AndroidManifest.xml for a newer version of the app, [isDeclaredInManifest()](../android/content/pm/ShortcutInfo.md))returns`false`, but the shortcut is still immutable.
+All static shortcuts are immutable. When a static shortcut is pinned and is then disabled because it doesn't appear in AndroidManifest.xml for a newer version of the app, [isDeclaredInManifest()](ShortcutInfo.md))returns`false`, but the shortcut is still immutable.
 
-All shortcuts originally published via the [ShortcutManager](../android/content/pm/ShortcutManager.md) APIs are all mutable. 
+All shortcuts originally published via the [ShortcutManager](ShortcutManager.md) APIs are all mutable. 
 
 ### isPinned
 
@@ -665,8 +665,8 @@ fun writeToParcel(
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](../android/os/Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android.os/Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

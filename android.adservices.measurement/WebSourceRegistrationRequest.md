@@ -10,7 +10,7 @@ class WebSourceRegistrationRequest : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.adservices.measurement.WebSourceRegistrationRequest](../android/adservices/measurement/WebSourceRegistrationRequest.md) |
+| ↳ | [android.adservices.measurement.WebSourceRegistrationRequest](WebSourceRegistrationRequest.md) |
 
 > [!CAUTION]
 > **This class was deprecated in API level 37.**
@@ -33,21 +33,21 @@ Class to hold input to measurement source registration calls from web context.
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/measurement/WebSourceRegistrationRequest#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/measurement/WebSourceRegistrationRequest#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [Uri](../android/net/Uri.md)? | `https://developer.android.com/reference/kotlin/android/adservices/measurement/WebSourceRegistrationRequest#getAppDestination()()` Getter for the app destination. |
+| [Uri](../android.net/Uri.md)? | `https://developer.android.com/reference/kotlin/android/adservices/measurement/WebSourceRegistrationRequest#getAppDestination()()` Getter for the app destination. |
 | --- | --- |
-| [InputEvent](../android/view/InputEvent.md)? | `https://developer.android.com/reference/kotlin/android/adservices/measurement/WebSourceRegistrationRequest#getInputEvent()()` Getter for input event. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [WebSourceParams](../android/adservices/measurement/WebSourceParams.md)!\> | `https://developer.android.com/reference/kotlin/android/adservices/measurement/WebSourceRegistrationRequest#getSourceParams()()` Getter for source params. |
-| [Uri](../android/net/Uri.md) | `https://developer.android.com/reference/kotlin/android/adservices/measurement/WebSourceRegistrationRequest#getTopOriginUri()()` Getter for top origin Uri. |
+| [InputEvent](../android.view/InputEvent.md)? | `https://developer.android.com/reference/kotlin/android/adservices/measurement/WebSourceRegistrationRequest#getInputEvent()()` Getter for input event. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [WebSourceParams](WebSourceParams.md)!\> | `https://developer.android.com/reference/kotlin/android/adservices/measurement/WebSourceRegistrationRequest#getSourceParams()()` Getter for source params. |
+| [Uri](../android.net/Uri.md) | `https://developer.android.com/reference/kotlin/android/adservices/measurement/WebSourceRegistrationRequest#getTopOriginUri()()` Getter for top origin Uri. |
 | --- | --- |
-| [Uri](../android/net/Uri.md)? | `https://developer.android.com/reference/kotlin/android/adservices/measurement/WebSourceRegistrationRequest#getVerifiedDestination()()` Getter for verified destination. |
-| [Uri](../android/net/Uri.md)? | `https://developer.android.com/reference/kotlin/android/adservices/measurement/WebSourceRegistrationRequest#getWebDestination()()` Getter for web destination. |
+| [Uri](../android.net/Uri.md)? | `https://developer.android.com/reference/kotlin/android/adservices/measurement/WebSourceRegistrationRequest#getVerifiedDestination()()` Getter for verified destination. |
+| [Uri](../android.net/Uri.md)? | `https://developer.android.com/reference/kotlin/android/adservices/measurement/WebSourceRegistrationRequest#getWebDestination()()` Getter for web destination. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/measurement/WebSourceRegistrationRequest#hashCode()()` Returns a hash code value for the object. |
 | --- | --- |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/adservices/measurement/WebSourceRegistrationRequest#writeToParcel(android.os.Parcel,%20kotlin.Int)(out: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [WebSourceRegistrationRequest](../android/adservices/measurement/WebSourceRegistrationRequest.md)!\> | `https://developer.android.com/reference/kotlin/android/adservices/measurement/WebSourceRegistrationRequest#CREATOR:android.os.Parcelable.Creator` Creator for Paracelable (via reflection). |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [WebSourceRegistrationRequest](WebSourceRegistrationRequest.md)!\> | `https://developer.android.com/reference/kotlin/android/adservices/measurement/WebSourceRegistrationRequest#CREATOR:android.os.Parcelable.Creator` Creator for Paracelable (via reflection). |
 
 ## Public methods
 
@@ -250,7 +250,7 @@ Flatten this object in to a Parcel.
 |---|---|
 | `dest` | The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
-| `out` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
+| `out` | [Parcel](../android.os/Parcel.md): This value cannot be `null`. |
 | --- | --- |
 
 ## Properties

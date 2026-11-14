@@ -8,7 +8,7 @@ class PccSandboxManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.privatecompute.PccSandboxManager](../android/app/privatecompute/PccSandboxManager.md) |
+| ↳ | [android.app.privatecompute.PccSandboxManager](PccSandboxManager.md) |
 
 Manager for interacting with the Private Compute Core (PCC) sandbox.
 
@@ -43,9 +43,9 @@ These requests may be subject to rate limits or user consent defined by the OS. 
 
 | Parameters ||
 |---|---|
-| `request` | [EgressRequest](../android/app/privatecompute/EgressRequest.md)\<T\>: The base EgressRequest containing the payload and use-case. This value cannot be `null`. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): The Executor on which the callback should be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `callback` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\<T, [PccEgressException](../android/app/privatecompute/PccEgressException.md)!\>: The callback to receive the EgressResponse containing the status. This value cannot be `null`. |
+| `request` | [EgressRequest](EgressRequest.md)\<T\>: The base EgressRequest containing the payload and use-case. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The Executor on which the callback should be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `callback` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\<T, [PccEgressException](PccEgressException.md)!\>: The callback to receive the EgressResponse containing the status. This value cannot be `null`. |
 | --- | --- |
 
 | Exceptions ||
@@ -115,8 +115,8 @@ If the non-PCC process is already running, this ensures the migration service is
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): The executor on which the callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
-| `callback` | [OutcomeReceiver](../android/os/OutcomeReceiver.md)\< [MigrationRequestResult](../android/app/privatecompute/MigrationRequestResult.md)!, [MigrationException](../android/app/privatecompute/MigrationException.md)!\>: The callback to receive the result of the migration request. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor on which the callback will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `callback` | [OutcomeReceiver](../android.os/OutcomeReceiver.md)\< [MigrationRequestResult](MigrationRequestResult.md)!, [MigrationException](MigrationException.md)!\>: The callback to receive the result of the migration request. This value cannot be `null`. |
 
 ### writeToAuditLog
 
@@ -132,4 +132,4 @@ Nested Bundles are supported up to a depth of 100.
 
 | Parameters ||
 |---|---|
-| `data` | [PersistableBundle](../android/os/PersistableBundle.md): The data to write to the audit log. This value cannot be `null`. |
+| `data` | [PersistableBundle](../android.os/PersistableBundle.md): The data to write to the audit log. This value cannot be `null`. |

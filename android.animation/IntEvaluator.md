@@ -4,7 +4,7 @@ Added in [API level 11](https://developer.android.com/guide/topics/manifest/uses
 
 # IntEvaluator
 
-Kotlin| [Java](../android/animation/IntEvaluator.md) 
+Kotlin| [Java](IntEvaluator.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class IntEvaluator : TypeEvaluator<Int!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.animation.IntEvaluator](../android/animation/IntEvaluator.md) |
+| ↳ | [android.animation.IntEvaluator](IntEvaluator.md) |
 
 This evaluator can be used to perform type interpolation between`int`values.
 
@@ -21,11 +21,11 @@ This evaluator can be used to perform type interpolation between`int`values.
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------|---|
-| [IntEvaluator](../android/animation/IntEvaluator.md))`()` <br /> |
+| [IntEvaluator](IntEvaluator.md))`()` <br /> |
 
 | Public methods ||
 |---------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)! | [evaluate](../android/animation/IntEvaluator.md))`(`fraction:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `startValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!`, `endValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!`)` This function returns the result of linearly interpolating the start and end values, with`fraction`representing the proportion between the start and end values. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)! | [evaluate](IntEvaluator.md))`(`fraction:` ` [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)`, `startValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!`, `endValue:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!`)` This function returns the result of linearly interpolating the start and end values, with`fraction`representing the proportion between the start and end values. |
 
 ## Public constructors
 

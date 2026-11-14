@@ -9,9 +9,9 @@ class BasalMetabolicRateRecord : InstantRecord
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||
 | --- | --- | --- | --- |
-| ↳ | [android.health.connect.datatypes.Record](../android/health/connect/datatypes/Record.md) |||
-| | ↳ | [android.health.connect.datatypes.InstantRecord](../android/health/connect/datatypes/InstantRecord.md) ||
-| | | ↳ | [android.health.connect.datatypes.BasalMetabolicRateRecord](../android/health/connect/datatypes/BasalMetabolicRateRecord.md) |
+| ↳ | [android.health.connect.datatypes.Record](Record.md) |||
+| | ↳ | [android.health.connect.datatypes.InstantRecord](InstantRecord.md) ||
+| | | ↳ | [android.health.connect.datatypes.BasalMetabolicRateRecord](BasalMetabolicRateRecord.md) |
 | --- | --- | --- | --- |
 
 Captures the BMR of a user. Each record represents the energy a user would burn if at rest all day, based on their height and weight.
@@ -29,7 +29,7 @@ Captures the BMR of a user. Each record represents the energy a user would burn 
 | Public methods ||
 |---|---|
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BasalMetabolicRateRecord#equals(kotlin.Any)(other: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html?)` Indicates whether some other object is "equal to" this one. |
-| [Power](../android/health/connect/datatypes/units/Power.md) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BasalMetabolicRateRecord#getBasalMetabolicRate()()` <br /> |
+| [Power](../android.health.connect.datatypes.units/Power.md) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BasalMetabolicRateRecord#getBasalMetabolicRate()()` <br /> |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BasalMetabolicRateRecord#hashCode()()` Returns a hash code value for the object. |
 | --- | --- |
 
@@ -40,7 +40,7 @@ Captures the BMR of a user. Each record represents the energy a user would burn 
 
 | Properties ||
 |---|---|
-| static [AggregationType](../android/health/connect/datatypes/AggregationType.md)\< [Energy](../android/health/connect/datatypes/units/Energy.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BasalMetabolicRateRecord#BASAL_CALORIES_TOTAL:android.health.connect.datatypes.AggregationType` Metric identifier get total basal calories burnt using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
+| static [AggregationType](AggregationType.md)\< [Energy](../android.health.connect.datatypes.units/Energy.md)!\> | `https://developer.android.com/reference/kotlin/android/health/connect/datatypes/BasalMetabolicRateRecord#BASAL_CALORIES_TOTAL:android.health.connect.datatypes.AggregationType` Metric identifier get total basal calories burnt using aggregate APIs in `https://developer.android.com/reference/kotlin/android/health/connect/HealthConnectManager.html#` |
 
 ## Public methods
 

@@ -6,7 +6,7 @@ Added in [API level 37.2](https://developer.android.com/guide/topics/manifest/us
 interface ContentClassificationCallback
 ```
 
-| [android.app.contentsafety.ContentClassificationCallback](../android/app/contentsafety/ContentClassificationCallback.md) |
+| [android.app.contentsafety.ContentClassificationCallback](ContentClassificationCallback.md) |
 
 Callback for receiving content classification results.
 
@@ -30,4 +30,4 @@ Called when the content has been classified.
 
 | Parameters ||
 |---|---|
-| `result` | [ContentClassificationResult](../android/app/contentsafety/ContentClassificationResult.md): the result of the classification. This value cannot be `null`. |
+| `result` | [ContentClassificationResult](ContentClassificationResult.md): the result of the classification. This value cannot be `null`. |

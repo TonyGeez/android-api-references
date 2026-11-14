@@ -11,14 +11,14 @@ open class CertPathBuilderException : GeneralSecurityException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) ||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) |||
-| | | ↳ | [java.security.GeneralSecurityException](../java/security/GeneralSecurityException.md) ||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) |||
+| | | ↳ | [java.security.GeneralSecurityException](../java.security/GeneralSecurityException.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.security.cert.CertPathBuilderException](../java/security/cert/CertPathBuilderException.md) |
+| | | | ↳ | [java.security.cert.CertPathBuilderException](CertPathBuilderException.md) |
 
 An exception indicating one of a variety of problems encountered when building a certification path with a`CertPathBuilder`.
 
-A`CertPathBuilderException`provides support for wrapping exceptions. The [getCause](../java/lang/Throwable.md))method returns the throwable, if any, that caused this exception to be thrown.
+A`CertPathBuilderException`provides support for wrapping exceptions. The [getCause](../java.lang/Throwable.md))method returns the throwable, if any, that caused this exception to be thrown.
 
 **Concurrent Access**
 
@@ -28,10 +28,10 @@ Unless otherwise specified, the methods defined in this class are not thread-saf
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [CertPathBuilderException](../java/security/cert/CertPathBuilderException.md))`()` Creates a`CertPathBuilderException`with`null`as its detail message. |
-| [CertPathBuilderException](../java/security/cert/CertPathBuilderException.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a`CertPathBuilderException`with the given detail message. |
-| [CertPathBuilderException](../java/security/cert/CertPathBuilderException.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Creates a`CertPathBuilderException`with the specified detail message and cause. |
-| [CertPathBuilderException](../java/security/cert/CertPathBuilderException.md))`(`cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Creates a`CertPathBuilderException`that wraps the specified throwable. |
+| [CertPathBuilderException](CertPathBuilderException.md))`()` Creates a`CertPathBuilderException`with`null`as its detail message. |
+| [CertPathBuilderException](CertPathBuilderException.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a`CertPathBuilderException`with the given detail message. |
+| [CertPathBuilderException](CertPathBuilderException.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Creates a`CertPathBuilderException`with the specified detail message and cause. |
+| [CertPathBuilderException](CertPathBuilderException.md))`(`cause:` ` [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!`)` Creates a`CertPathBuilderException`that wraps the specified throwable. |
 
 ## Public constructors
 
@@ -74,7 +74,7 @@ Creates a`CertPathBuilderException`with the specified detail message and cause.
 | Parameters ||
 |---------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `msg` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!:the detail message |
-| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!:the cause (which is saved for later retrieval by the [getCause()](../java/lang/Throwable.md))method). (A`null`value is permitted, and indicates that the cause is nonexistent or unknown.) |
+| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!:the cause (which is saved for later retrieval by the [getCause()](../java.lang/Throwable.md))method). (A`null`value is permitted, and indicates that the cause is nonexistent or unknown.) |
 
 ### CertPathBuilderException
 
@@ -88,4 +88,4 @@ Creates a`CertPathBuilderException`that wraps the specified throwable. This allo
 
 | Parameters ||
 |---------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!:the cause (which is saved for later retrieval by the [getCause()](../java/lang/Throwable.md))method). (A`null`value is permitted, and indicates that the cause is nonexistent or unknown.) |
+| `cause` | [Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html)!:the cause (which is saved for later retrieval by the [getCause()](../java.lang/Throwable.md))method). (A`null`value is permitted, and indicates that the cause is nonexistent or unknown.) |

@@ -8,14 +8,14 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 interface Lock
 ```
 
-| [java.util.concurrent.locks.Lock](../java/util/concurrent/locks/Lock.md) |
+| [java.util.concurrent.locks.Lock](Lock.md) |
 
-| Known Direct Subclasses [ReentrantLock](../java/util/concurrent/locks/ReentrantLock.md), [ReentrantReadWriteLock.ReadLock](../java/util/concurrent/locks/ReentrantReadWriteLock.ReadLock.md), [ReentrantReadWriteLock.WriteLock](../java/util/concurrent/locks/ReentrantReadWriteLock.WriteLock.md) |------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [ReentrantLock](../java/util/concurrent/locks/ReentrantLock.md) | A reentrant mutual exclusion [Lock](../java/util/concurrent/locks/Lock.md) with the same basic behavior and semantics as the implicit monitor lock accessed using`synchronized`methods and statements, but with extended capabilities. | | [ReentrantReadWriteLock.ReadLock](../java/util/concurrent/locks/ReentrantReadWriteLock.ReadLock.md) | The lock returned by method [ReentrantReadWriteLock.readLock](../java/util/concurrent/locks/ReentrantReadWriteLock.md)). | | [ReentrantReadWriteLock.WriteLock](../java/util/concurrent/locks/ReentrantReadWriteLock.WriteLock.md) | The lock returned by method [ReentrantReadWriteLock.writeLock](../java/util/concurrent/locks/ReentrantReadWriteLock.md)). | |
+| Known Direct Subclasses [ReentrantLock](ReentrantLock.md), [ReentrantReadWriteLock.ReadLock](../java/util/concurrent/locks/ReentrantReadWriteLock.ReadLock.md), [ReentrantReadWriteLock.WriteLock](../java/util/concurrent/locks/ReentrantReadWriteLock.WriteLock.md) |------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [ReentrantLock](ReentrantLock.md) | A reentrant mutual exclusion [Lock](Lock.md) with the same basic behavior and semantics as the implicit monitor lock accessed using`synchronized`methods and statements, but with extended capabilities. | | [ReentrantReadWriteLock.ReadLock](../java/util/concurrent/locks/ReentrantReadWriteLock.ReadLock.md) | The lock returned by method [ReentrantReadWriteLock.readLock](ReentrantReadWriteLock.md)). | | [ReentrantReadWriteLock.WriteLock](../java/util/concurrent/locks/ReentrantReadWriteLock.WriteLock.md) | The lock returned by method [ReentrantReadWriteLock.writeLock](ReentrantReadWriteLock.md)). | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-`Lock`implementations provide more extensive locking operations than can be obtained using`synchronized`methods and statements. They allow more flexible structuring, may have quite different properties, and may support multiple associated [Condition](../java/util/concurrent/locks/Condition.md) objects.
+`Lock`implementations provide more extensive locking operations than can be obtained using`synchronized`methods and statements. They allow more flexible structuring, may have quite different properties, and may support multiple associated [Condition](Condition.md) objects.
 
-A lock is a tool for controlling access to a shared resource by multiple threads. Commonly, a lock provides exclusive access to a shared resource: only one thread at a time can acquire the lock and all access to the shared resource requires that the lock be acquired first. However, some locks may allow concurrent access to a shared resource, such as the read lock of a [ReadWriteLock](../java/util/concurrent/locks/ReadWriteLock.md).
+A lock is a tool for controlling access to a shared resource by multiple threads. Commonly, a lock provides exclusive access to a shared resource: only one thread at a time can acquire the lock and all access to the shared resource requires that the lock be acquired first. However, some locks may allow concurrent access to a shared resource, such as the read lock of a [ReadWriteLock](ReadWriteLock.md).
 
 The use of`synchronized`methods or statements provides access to the implicit monitor lock associated with every object, but forces all lock acquisition and release to occur in a block-structured way: when multiple locks are acquired they must be released in the opposite order, and all locks must be released in the same lexical scope in which they were acquired.
 
@@ -34,13 +34,13 @@ With this increased flexibility comes additional responsibility. The absence of 
 ```
 When locking and unlocking occur in different scopes, care must be taken to ensure that all code that is executed while the lock is held is protected by try-finally or try-catch to ensure that the lock is released when necessary.
 
-`Lock`implementations provide additional functionality over the use of`synchronized`methods and statements by providing a non-blocking attempt to acquire a lock ([tryLock()](../java/util/concurrent/locks/Lock.md))), an attempt to acquire the lock that can be interrupted ([lockInterruptibly](../java/util/concurrent/locks/Lock.md)), and an attempt to acquire the lock that can timeout ([tryLock(long,java.util.concurrent.TimeUnit)](../java/util/concurrent/locks/Lock.md))).
+`Lock`implementations provide additional functionality over the use of`synchronized`methods and statements by providing a non-blocking attempt to acquire a lock ([tryLock()](Lock.md))), an attempt to acquire the lock that can be interrupted ([lockInterruptibly](Lock.md)), and an attempt to acquire the lock that can timeout ([tryLock(long,java.util.concurrent.TimeUnit)](Lock.md))).
 
 A`Lock`class can also provide behavior and semantics that is quite different from that of the implicit monitor lock, such as guaranteed ordering, non-reentrant usage, or deadlock detection. If an implementation provides such specialized semantics then the implementation must document those semantics.
 
-Note that`Lock`instances are just normal objects and can themselves be used as the target in a`synchronized`statement. Acquiring the monitor lock of a`Lock`instance has no specified relationship with invoking any of the [lock](../java/util/concurrent/locks/Lock.md))methods of that instance. It is recommended that to avoid confusion you never use`Lock`instances in this way, except within their own implementation.
+Note that`Lock`instances are just normal objects and can themselves be used as the target in a`synchronized`statement. Acquiring the monitor lock of a`Lock`instance has no specified relationship with invoking any of the [lock](Lock.md))methods of that instance. It is recommended that to avoid confusion you never use`Lock`instances in this way, except within their own implementation.
 
-Except where noted, passing a`null`value for any parameter will result in a [NullPointerException](../java/lang/NullPointerException.md) being thrown.
+Except where noted, passing a`null`value for any parameter will result in a [NullPointerException](../java.lang/NullPointerException.md) being thrown.
 
 ## Memory Synchronization
 
@@ -61,13 +61,13 @@ As interruption generally implies cancellation, and checks for interruption are 
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [lock](../java/util/concurrent/locks/Lock.md))`()` Acquires the lock. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [lockInterruptibly](../java/util/concurrent/locks/Lock.md))`()` Acquires the lock unless the current thread is [interrupted](../java/lang/Thread.md)). |
-| abstract [Condition](../java/util/concurrent/locks/Condition.md)! | [newCondition](../java/util/concurrent/locks/Lock.md))`()` Returns a new [Condition](../java/util/concurrent/locks/Condition.md) instance that is bound to this`Lock`instance. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [lock](Lock.md))`()` Acquires the lock. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [lockInterruptibly](Lock.md))`()` Acquires the lock unless the current thread is [interrupted](../java.lang/Thread.md)). |
+| abstract [Condition](Condition.md)! | [newCondition](Lock.md))`()` Returns a new [Condition](Condition.md) instance that is bound to this`Lock`instance. |
 | --- | --- |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [tryLock](../java/util/concurrent/locks/Lock.md))`()` Acquires the lock only if it is free at the time of invocation. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [tryLock](../java/util/concurrent/locks/Lock.md))`(`time:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TimeUnit](../java/util/concurrent/TimeUnit.md)!`)` Acquires the lock if it is free within the given waiting time and the current thread has not been [interrupted](../java/lang/Thread.md)). |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unlock](../java/util/concurrent/locks/Lock.md))`()` Releases the lock. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [tryLock](Lock.md))`()` Acquires the lock only if it is free at the time of invocation. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [tryLock](Lock.md))`(`time:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `unit:` ` [TimeUnit](../java.util.concurrent/TimeUnit.md)!`)` Acquires the lock if it is free within the given waiting time and the current thread has not been [interrupted](../java.lang/Thread.md)). |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [unlock](Lock.md))`()` Releases the lock. |
 | --- | --- |
 
 ## Public methods
@@ -96,21 +96,21 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun lockInterruptibly(): Unit
 ```
 
-Acquires the lock unless the current thread is [interrupted](../java/lang/Thread.md)).
+Acquires the lock unless the current thread is [interrupted](../java.lang/Thread.md)).
 
 Acquires the lock if it is available and returns immediately.
 
 If the lock is not available then the current thread becomes disabled for thread scheduling purposes and lies dormant until one of two things happens:
 
 - The lock is acquired by the current thread; or
-- Some other thread [interrupts](../java/lang/Thread.md))the current thread, and interruption of lock acquisition is supported.
+- Some other thread [interrupts](../java.lang/Thread.md))the current thread, and interruption of lock acquisition is supported.
 
 If the current thread:
 
 - has its interrupted status set on entry to this method; or
-- is [interrupted](../java/lang/Thread.md))while acquiring the lock, and interruption of lock acquisition is supported,
+- is [interrupted](../java.lang/Thread.md))while acquiring the lock, and interruption of lock acquisition is supported,
 
-then [InterruptedException](../java/lang/InterruptedException.md) is thrown and the current thread's interrupted status is cleared.
+then [InterruptedException](../java.lang/InterruptedException.md) is thrown and the current thread's interrupted status is cleared.
 
 **Implementation Considerations**
 
@@ -132,17 +132,17 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 abstract fun newCondition(): Condition!
 ```
 
-Returns a new [Condition](../java/util/concurrent/locks/Condition.md) instance that is bound to this`Lock`instance.
+Returns a new [Condition](Condition.md) instance that is bound to this`Lock`instance.
 
-Before waiting on the condition the lock must be held by the current thread. A call to [Condition.await()](../java/util/concurrent/locks/Condition.md))will atomically release the lock before waiting and re-acquire the lock before the wait returns.
+Before waiting on the condition the lock must be held by the current thread. A call to [Condition.await()](Condition.md))will atomically release the lock before waiting and re-acquire the lock before the wait returns.
 
 **Implementation Considerations**
 
-The exact operation of the [Condition](../java/util/concurrent/locks/Condition.md) instance depends on the`Lock`implementation and must be documented by that implementation.
+The exact operation of the [Condition](Condition.md) instance depends on the`Lock`implementation and must be documented by that implementation.
 
 | Return ||
 |---------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
-| [Condition](../java/util/concurrent/locks/Condition.md)! | A new [Condition](../java/util/concurrent/locks/Condition.md) instance for this`Lock`instance |
+| [Condition](Condition.md)! | A new [Condition](Condition.md) instance for this`Lock`instance |
 
 | Exceptions ||
 |-------------------------------------------|---------------------------------------------------------|
@@ -191,12 +191,12 @@ abstract fun tryLock(
 ): Boolean
 ```
 
-Acquires the lock if it is free within the given waiting time and the current thread has not been [interrupted](../java/lang/Thread.md)).
+Acquires the lock if it is free within the given waiting time and the current thread has not been [interrupted](../java.lang/Thread.md)).
 
 If the lock is available this method returns immediately with the value`true`. If the lock is not available then the current thread becomes disabled for thread scheduling purposes and lies dormant until one of three things happens:
 
 - The lock is acquired by the current thread; or
-- Some other thread [interrupts](../java/lang/Thread.md))the current thread, and interruption of lock acquisition is supported; or
+- Some other thread [interrupts](../java.lang/Thread.md))the current thread, and interruption of lock acquisition is supported; or
 - The specified waiting time elapses
 
 If the lock is acquired then the value`true`is returned.
@@ -204,9 +204,9 @@ If the lock is acquired then the value`true`is returned.
 If the current thread:
 
 - has its interrupted status set on entry to this method; or
-- is [interrupted](../java/lang/Thread.md))while acquiring the lock, and interruption of lock acquisition is supported,
+- is [interrupted](../java.lang/Thread.md))while acquiring the lock, and interruption of lock acquisition is supported,
 
-then [InterruptedException](../java/lang/InterruptedException.md) is thrown and the current thread's interrupted status is cleared.
+then [InterruptedException](../java.lang/InterruptedException.md) is thrown and the current thread's interrupted status is cleared.
 
 If the specified waiting time elapses then the value`false`is returned. If the time is less than or equal to zero, the method will not wait at all.
 
@@ -221,7 +221,7 @@ A`Lock`implementation may be able to detect erroneous use of the lock, such as a
 | Parameters ||
 |--------|------------------------------------------------------------------------------------------------------------------------------------|
 | `time` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):the maximum time to wait for the lock |
-| `unit` | [TimeUnit](../java/util/concurrent/TimeUnit.md)!:the time unit of the`time`argument |
+| `unit` | [TimeUnit](../java.util.concurrent/TimeUnit.md)!:the time unit of the`time`argument |
 
 | Return ||
 |------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|

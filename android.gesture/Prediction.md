@@ -4,7 +4,7 @@ Added in [API level 4](https://developer.android.com/guide/topics/manifest/uses-
 
 # Prediction
 
-Kotlin| [Java](../android/gesture/Prediction.md) 
+Kotlin| [Java](Prediction.md) 
 | --- | --- |
 
 ```
@@ -13,18 +13,18 @@ open class Prediction
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.gesture.Prediction](../android/gesture/Prediction.md) |
+| ↳ | [android.gesture.Prediction](Prediction.md) |
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/gesture/Prediction.md))`()` <br /> |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](Prediction.md))`()` <br /> |
 
 | Properties ||
 |-----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [name](../android/gesture/Prediction.md) <br /> |
-| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [score](../android/gesture/Prediction.md) <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [name](Prediction.md) <br /> |
+| [Double](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html) | [score](Prediction.md) <br /> |
 
 ## Public methods
 

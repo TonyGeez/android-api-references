@@ -4,7 +4,7 @@ Added in [API level 31](https://developer.android.com/guide/topics/manifest/uses
 
 # ChildSessionConfiguration
 
-Kotlin | [Java](../android/net/ipsec/ike/ChildSessionConfiguration.md) 
+Kotlin | [Java](ChildSessionConfiguration.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class ChildSessionConfiguration
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.net.ipsec.ike.ChildSessionConfiguration](../android/net/ipsec/ike/ChildSessionConfiguration.md) |
+| ↳ | [android.net.ipsec.ike.ChildSessionConfiguration](ChildSessionConfiguration.md) |
 
 ChildSessionConfiguration represents the negotiated configuration for a Child Session.
 
@@ -23,12 +23,12 @@ Configurations include traffic selectors and internal network information.
 
 | Nested classes ||
 |---|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](../android/net/ipsec/ike/ChildSessionConfiguration.Builder.md) This class can be used to incrementally construct a [ChildSessionConfiguration](../android/net/ipsec/ike/ChildSessionConfiguration.md). |
+| | [Builder](../android/net/ipsec/ike/ChildSessionConfiguration.Builder.md) This class can be used to incrementally construct a [ChildSessionConfiguration](ChildSessionConfiguration.md). |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [IkeTrafficSelector](../android/net/ipsec/ike/IkeTrafficSelector.md)!\> | [getInboundTrafficSelectors](../android/net/ipsec/ike/ChildSessionConfiguration.md))`()` Returns the negotiated inbound traffic selectors. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [IkeTrafficSelector](../android/net/ipsec/ike/IkeTrafficSelector.md)!\> | [getOutboundTrafficSelectors](../android/net/ipsec/ike/ChildSessionConfiguration.md))`()` Returns the negotiated outbound traffic selectors. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [IkeTrafficSelector](IkeTrafficSelector.md)!\> | [getInboundTrafficSelectors](ChildSessionConfiguration.md))`()` Returns the negotiated inbound traffic selectors. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [IkeTrafficSelector](IkeTrafficSelector.md)!\> | [getOutboundTrafficSelectors](ChildSessionConfiguration.md))`()` Returns the negotiated outbound traffic selectors. |
 
 ## Public methods
 
@@ -48,7 +48,7 @@ The Android platform does not support port-based routing. Port ranges of traffic
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [IkeTrafficSelector](../android/net/ipsec/ike/IkeTrafficSelector.md)!> | the inbound traffic selectors. This value cannot be `null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [IkeTrafficSelector](IkeTrafficSelector.md)!> | the inbound traffic selectors. This value cannot be `null`. |
 
 ### getOutboundTrafficSelectors
 
@@ -66,4 +66,4 @@ The Android platform does not support port-based routing. Port ranges of traffic
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [IkeTrafficSelector](../android/net/ipsec/ike/IkeTrafficSelector.md)!> | the outbound traffic selectors. This value cannot be `null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [IkeTrafficSelector](IkeTrafficSelector.md)!> | the outbound traffic selectors. This value cannot be `null`. |

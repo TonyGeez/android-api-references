@@ -2,7 +2,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # KeyboardShortcutGroup
 
-Kotlin | [Java](../android/view/KeyboardShortcutGroup.md)
+Kotlin | [Java](KeyboardShortcutGroup.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class KeyboardShortcutGroup : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.view.KeyboardShortcutGroup](../android/view/KeyboardShortcutGroup.md) |
+| ↳ | [android.view.KeyboardShortcutGroup](KeyboardShortcutGroup.md) |
 
 A group of `https://developer.android.com/reference/kotlin/android/view/KeyboardShortcutInfo`.
 
@@ -30,14 +30,14 @@ A group of `https://developer.android.com/reference/kotlin/android/view/Keyboard
 |---|---|
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyboardShortcutGroup#addItem(android.view.KeyboardShortcutInfo)(item: https://developer.android.com/reference/kotlin/android/view/KeyboardShortcutInfo!)` Adds an item to the existing list. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyboardShortcutGroup#describeContents()()` Describe the kinds of special objects contained in this Parcelable instance's marshaled representation. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [KeyboardShortcutInfo](../android/view/KeyboardShortcutInfo.md)!\>! | `https://developer.android.com/reference/kotlin/android/view/KeyboardShortcutGroup#getItems()()` Returns the list of items included in this group. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [KeyboardShortcutInfo](KeyboardShortcutInfo.md)!\>! | `https://developer.android.com/reference/kotlin/android/view/KeyboardShortcutGroup#getItems()()` Returns the list of items included in this group. |
 | --- | --- |
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/view/KeyboardShortcutGroup#getLabel()()` Returns the label to be used to describe this group. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/view/KeyboardShortcutGroup#writeToParcel(android.os.Parcel,%20kotlin.Int)(dest: https://developer.android.com/reference/kotlin/android/os/Parcel.html#, flags: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` Flatten this object in to a Parcel. |
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [KeyboardShortcutGroup](../android/view/KeyboardShortcutGroup.md)!\> | `https://developer.android.com/reference/kotlin/android/view/KeyboardShortcutGroup#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [KeyboardShortcutGroup](KeyboardShortcutGroup.md)!\> | `https://developer.android.com/reference/kotlin/android/view/KeyboardShortcutGroup#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Public constructors
 
@@ -66,7 +66,7 @@ KeyboardShortcutGroup(
 | Parameters ||
 |---|---|
 | `label` | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)?: The title to be used for this group, or null if there is none. |
-| `items` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [KeyboardShortcutInfo](../android/view/KeyboardShortcutInfo.md)!\>: The set of items to be included. This value cannot be `null`. |
+| `items` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [KeyboardShortcutInfo](KeyboardShortcutInfo.md)!\>: The set of items to be included. This value cannot be `null`. |
 
 ## Public methods
 
@@ -82,7 +82,7 @@ Adds an item to the existing list.
 
 | Parameters ||
 |---|---|
-| `item` | [KeyboardShortcutInfo](../android/view/KeyboardShortcutInfo.md)!: The item to be added. |
+| `item` | [KeyboardShortcutInfo](KeyboardShortcutInfo.md)!: The item to be added. |
 
 ### describeContents
 
@@ -133,7 +133,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

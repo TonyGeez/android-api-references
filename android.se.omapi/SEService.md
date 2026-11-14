@@ -4,7 +4,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 
 # SEService
 
-Kotlin| [Java](../android/se/omapi/SEService.md) 
+Kotlin| [Java](SEService.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ class SEService
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.se.omapi.SEService](../android/se/omapi/SEService.md) |
+| ↳ | [android.se.omapi.SEService](SEService.md) |
 
 The SEService realises the communication to available Secure Elements on the device. This is the entry point of this API. It is used to connect to the infrastructure and get access to a list of Secure Element Readers.
 
@@ -25,23 +25,23 @@ The SEService realises the communication to available Secure Elements on the dev
 
 | Constants ||
 |----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_SECURE_ELEMENT_STATE_CHANGED](../android/se/omapi/SEService.md) Broadcast Action: Intent to notify if the secure element state is changed. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_READER_NAME](../android/se/omapi/SEService.md) Mandatory extra containing the reader name of the state changed secure element. |
-| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_READER_STATE](../android/se/omapi/SEService.md) Mandatory extra containing the connected state of the state changed secure element. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [ACTION_SECURE_ELEMENT_STATE_CHANGED](SEService.md) Broadcast Action: Intent to notify if the secure element state is changed. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_READER_NAME](SEService.md) Mandatory extra containing the reader name of the state changed secure element. |
+| static [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [EXTRA_READER_STATE](SEService.md) Mandatory extra containing the connected state of the state changed secure element. |
 | --- | --- |
 
 | Public constructors ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [SEService](../android/se/omapi/SEService.md))`(`context:` ` [Context](../android/content/Context.md)`, `executor:` ` [Executor](../java/util/concurrent/Executor.md)`, `listener:` ` [SEService.OnConnectedListener](../android/se/omapi/SEService.OnConnectedListener.md)`)` Establishes a new connection that can be used to connect to all the Secure Elements available in the system. |
+| [SEService](SEService.md))`(`context:` ` [Context](../android.content/Context.md)`, `executor:` ` [Executor](../java.util.concurrent/Executor.md)`, `listener:` ` [SEService.OnConnectedListener](../android/se/omapi/SEService.OnConnectedListener.md)`)` Establishes a new connection that can be used to connect to all the Secure Elements available in the system. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Reader](../android/se/omapi/Reader.md)!\> | [getReaders](../android/se/omapi/SEService.md))`()` Returns an array of available Secure Element readers. |
-| [Reader](../android/se/omapi/Reader.md) | [getUiccReader](../android/se/omapi/SEService.md))`(`slotNumber:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Obtain a UICC Reader instance with specific slot number from the SecureElementService |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getVersion](../android/se/omapi/SEService.md))`()` Returns the version of the OpenMobile API specification this implementation is based on. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Reader](Reader.md)!\> | [getReaders](SEService.md))`()` Returns an array of available Secure Element readers. |
+| [Reader](Reader.md) | [getUiccReader](SEService.md))`(`slotNumber:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Obtain a UICC Reader instance with specific slot number from the SecureElementService |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [getVersion](SEService.md))`()` Returns the version of the OpenMobile API specification this implementation is based on. |
 | --- | --- |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isConnected](../android/se/omapi/SEService.md))`()` Tells whether or not the service is connected. |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [shutdown](../android/se/omapi/SEService.md))`()` Releases all Secure Elements resources allocated by this SEService (including any binding to an underlying service). |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isConnected](SEService.md))`()` Tells whether or not the service is connected. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [shutdown](SEService.md))`()` Releases all Secure Elements resources allocated by this SEService (including any binding to an underlying service). |
 
 ## Constants
 
@@ -71,7 +71,7 @@ Mandatory extra containing the reader name of the state changed secure element.
 
 **See Also**
 
-- [android.se.omapi.Reader#getName()](../android/se/omapi/Reader.md)) 
+- [android.se.omapi.Reader#getName()](Reader.md)) 
 
 ### EXTRA_READER_STATE
 
@@ -103,9 +103,9 @@ The call-back object passed as a parameter will have its onConnected() method ca
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `context` | [Context](../android/content/Context.md):the context of the calling application. Cannot be`null`. |
+| `context` | [Context](../android.content/Context.md):the context of the calling application. Cannot be`null`. |
 | `listener` | [SEService.OnConnectedListener](../android/se/omapi/SEService.OnConnectedListener.md):a OnConnectedListener object. This value cannot be`null`. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md):an Executor which will be used when invoking the callback. This value cannot be`null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md):an Executor which will be used when invoking the callback. This value cannot be`null`. |
 | --- | --- |
 
 ## Public methods
@@ -122,7 +122,7 @@ Returns an array of available Secure Element readers. There must be no duplicate
 
 | Return ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Reader](../android/se/omapi/Reader.md)!> | An array of Readers. If there are no readers the returned array is of length 0. This value cannot be`null`. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [Reader](Reader.md)!> | An array of Readers. If there are no readers the returned array is of length 0. This value cannot be`null`. |
 
 ### getUiccReader
 
@@ -140,7 +140,7 @@ Obtain a UICC Reader instance with specific slot number from the SecureElementSe
 
 | Return ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| [Reader](../android/se/omapi/Reader.md) | A Reader object for this uicc slot. This value cannot be`null`. |
+| [Reader](Reader.md) | A Reader object for this uicc slot. This value cannot be`null`. |
 
 | Exceptions ||
 |--------------------------------------|------------------------------------------------------------------------|

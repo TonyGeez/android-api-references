@@ -4,7 +4,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # ExerciseSessionType
 
-Kotlin | [Java](../android/health/connect/datatypes/ExerciseSessionType.md) 
+Kotlin | [Java](ExerciseSessionType.md) 
 | --- | --- |
 
 ```
@@ -13,96 +13,96 @@ class ExerciseSessionType
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.health.connect.datatypes.ExerciseSessionType](../android/health/connect/datatypes/ExerciseSessionType.md) |
+| ↳ | [android.health.connect.datatypes.ExerciseSessionType](ExerciseSessionType.md) |
 
-Identifier for exercise types, as returned by [ExerciseSessionRecord.getExerciseType()](../android/health/connect/datatypes/ExerciseSessionRecord.md)).
+Identifier for exercise types, as returned by [ExerciseSessionRecord.getExerciseType()](ExerciseSessionRecord.md)).
 
 ## Summary
 
 | Constants ||
 |-----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_BADMINTON](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for the badminton playing session. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_BASEBALL](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for the baseball playing session. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_BASKETBALL](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for the basketball playing session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_BADMINTON](ExerciseSessionType.md) Use this type for the badminton playing session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_BASEBALL](ExerciseSessionType.md) Use this type for the baseball playing session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_BASKETBALL](ExerciseSessionType.md) Use this type for the basketball playing session. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_BIKING](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for riding a bicycle session. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_BIKING_STATIONARY](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for riding a stationary bicycle session. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_BOOT_CAMP](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for the boot camp session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_BIKING](ExerciseSessionType.md) Use this type for riding a bicycle session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_BIKING_STATIONARY](ExerciseSessionType.md) Use this type for riding a stationary bicycle session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_BOOT_CAMP](ExerciseSessionType.md) Use this type for the boot camp session. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_BOXING](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for boxing session. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_CALISTHENICS](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for calisthenics session. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_CRICKET](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for the cricket playing session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_BOXING](ExerciseSessionType.md) Use this type for boxing session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_CALISTHENICS](ExerciseSessionType.md) Use this type for calisthenics session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_CRICKET](ExerciseSessionType.md) Use this type for the cricket playing session. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_DANCING](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for the dancing session. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_ELLIPTICAL](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for elliptical workout. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_EXERCISE_CLASS](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for the exercise class session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_DANCING](ExerciseSessionType.md) Use this type for the dancing session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_ELLIPTICAL](ExerciseSessionType.md) Use this type for elliptical workout. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_EXERCISE_CLASS](ExerciseSessionType.md) Use this type for the exercise class session. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_FENCING](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for the fencing session. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_FOOTBALL_AMERICAN](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for the American football playing session. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_FOOTBALL_AUSTRALIAN](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for the Australian football playing session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_FENCING](ExerciseSessionType.md) Use this type for the fencing session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_FOOTBALL_AMERICAN](ExerciseSessionType.md) Use this type for the American football playing session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_FOOTBALL_AUSTRALIAN](ExerciseSessionType.md) Use this type for the Australian football playing session. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_FRISBEE_DISC](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for the frisbee disc playing session. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_GOLF](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for the golf playing session. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_GUIDED_BREATHING](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for the guided breathing session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_FRISBEE_DISC](ExerciseSessionType.md) Use this type for the frisbee disc playing session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_GOLF](ExerciseSessionType.md) Use this type for the golf playing session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_GUIDED_BREATHING](ExerciseSessionType.md) Use this type for the guided breathing session. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_GYMNASTICS](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for the gymnastics session. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_HANDBALL](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for the handball playing session. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_HIGH_INTENSITY_INTERVAL_TRAINING](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for the high intensity interval training session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_GYMNASTICS](ExerciseSessionType.md) Use this type for the gymnastics session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_HANDBALL](ExerciseSessionType.md) Use this type for the handball playing session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_HIGH_INTENSITY_INTERVAL_TRAINING](ExerciseSessionType.md) Use this type for the high intensity interval training session. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_HIKING](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for the hiking session. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_ICE_HOCKEY](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for the ice hockey playing session. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_ICE_SKATING](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for the ice skating session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_HIKING](ExerciseSessionType.md) Use this type for the hiking session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_ICE_HOCKEY](ExerciseSessionType.md) Use this type for the ice hockey playing session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_ICE_SKATING](ExerciseSessionType.md) Use this type for the ice skating session. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_MARTIAL_ARTS](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for the martial arts training session. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_OTHER_WORKOUT](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for the other workout session. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_PADDLING](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for the paddling session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_MARTIAL_ARTS](ExerciseSessionType.md) Use this type for the martial arts training session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_OTHER_WORKOUT](ExerciseSessionType.md) Use this type for the other workout session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_PADDLING](ExerciseSessionType.md) Use this type for the paddling session. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_PARAGLIDING](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for the paragliding session. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_PILATES](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for the pilates session. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_RACQUETBALL](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for the racquetball playing session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_PARAGLIDING](ExerciseSessionType.md) Use this type for the paragliding session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_PILATES](ExerciseSessionType.md) Use this type for the pilates session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_RACQUETBALL](ExerciseSessionType.md) Use this type for the racquetball playing session. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_ROCK_CLIMBING](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for the rock climbing session. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_ROLLER_HOCKEY](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for the roller hockey playing session. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_ROWING](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for the rowing session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_ROCK_CLIMBING](ExerciseSessionType.md) Use this type for the rock climbing session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_ROLLER_HOCKEY](ExerciseSessionType.md) Use this type for the roller hockey playing session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_ROWING](ExerciseSessionType.md) Use this type for the rowing session. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_ROWING_MACHINE](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for rowing machine. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_RUGBY](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for the rugby playing session. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_RUNNING](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for the running session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_ROWING_MACHINE](ExerciseSessionType.md) Use this type for rowing machine. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_RUGBY](ExerciseSessionType.md) Use this type for the rugby playing session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_RUNNING](ExerciseSessionType.md) Use this type for the running session. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_RUNNING_TREADMILL](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for the treadmill running session. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_SAILING](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for the sailing session. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_SCUBA_DIVING](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for the scuba diving session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_RUNNING_TREADMILL](ExerciseSessionType.md) Use this type for the treadmill running session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_SAILING](ExerciseSessionType.md) Use this type for the sailing session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_SCUBA_DIVING](ExerciseSessionType.md) Use this type for the scuba diving session. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_SKATING](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for the skating session. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_SKIING](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for the skiing session. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_SNOWBOARDING](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for the snowboarding session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_SKATING](ExerciseSessionType.md) Use this type for the skating session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_SKIING](ExerciseSessionType.md) Use this type for the skiing session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_SNOWBOARDING](ExerciseSessionType.md) Use this type for the snowboarding session. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_SNOWSHOEING](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for the snowshoeing session. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_SOCCER](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for the soccer playing session. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_SOFTBALL](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for the softball playing session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_SNOWSHOEING](ExerciseSessionType.md) Use this type for the snowshoeing session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_SOCCER](ExerciseSessionType.md) Use this type for the soccer playing session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_SOFTBALL](ExerciseSessionType.md) Use this type for the softball playing session. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_SQUASH](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for the squash playing session. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_STAIR_CLIMBING](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for the stair climbing session. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_STAIR_CLIMBING_MACHINE](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for the stair climbing machine session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_SQUASH](ExerciseSessionType.md) Use this type for the squash playing session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_STAIR_CLIMBING](ExerciseSessionType.md) Use this type for the stair climbing session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_STAIR_CLIMBING_MACHINE](ExerciseSessionType.md) Use this type for the stair climbing machine session. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_STRENGTH_TRAINING](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for the strength training session. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_STRETCHING](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for the stretching session. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_SURFING](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for the surfing session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_STRENGTH_TRAINING](ExerciseSessionType.md) Use this type for the strength training session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_STRETCHING](ExerciseSessionType.md) Use this type for the stretching session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_SURFING](ExerciseSessionType.md) Use this type for the surfing session. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_SWIMMING_OPEN_WATER](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for the swimming in the open water session. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_SWIMMING_POOL](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for the swimming in the pool session. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_TABLE_TENNIS](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for the table tennis playing session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_SWIMMING_OPEN_WATER](ExerciseSessionType.md) Use this type for the swimming in the open water session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_SWIMMING_POOL](ExerciseSessionType.md) Use this type for the swimming in the pool session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_TABLE_TENNIS](ExerciseSessionType.md) Use this type for the table tennis playing session. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_TENNIS](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for the tennis playing session. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_UNKNOWN](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type if the type of the exercise session is not known. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_VOLLEYBALL](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for the volleyball playing session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_TENNIS](ExerciseSessionType.md) Use this type for the tennis playing session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_UNKNOWN](ExerciseSessionType.md) Use this type if the type of the exercise session is not known. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_VOLLEYBALL](ExerciseSessionType.md) Use this type for the volleyball playing session. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_WALKING](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for the walking session. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_WATER_POLO](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for the water polo playing session. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_WEIGHTLIFTING](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for the weightlifting session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_WALKING](ExerciseSessionType.md) Use this type for the walking session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_WATER_POLO](ExerciseSessionType.md) Use this type for the water polo playing session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_WEIGHTLIFTING](ExerciseSessionType.md) Use this type for the weightlifting session. |
 | --- | --- |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_WHEELCHAIR](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for the wheelchair session. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_YOGA](../android/health/connect/datatypes/ExerciseSessionType.md) Use this type for the yoga session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_WHEELCHAIR](ExerciseSessionType.md) Use this type for the wheelchair session. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [EXERCISE_SESSION_TYPE_YOGA](ExerciseSessionType.md) Use this type for the yoga session. |
 
 ## Constants
 

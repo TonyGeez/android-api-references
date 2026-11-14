@@ -18,7 +18,7 @@ interface BackStackEntry
 |
 | Use the [Support Library](https://developer.android.com/tools/extras/support-library.html) androidx.fragment.app.FragmentManager.BackStackEntry
 
-Representation of an entry on the fragment back stack, as created with [FragmentTransaction.addToBackStack()](../android/app/FragmentTransaction.md)). Entries can later be retrieved with [FragmentManager.getBackStackEntryAt()](../android/app/FragmentManager.md)).
+Representation of an entry on the fragment back stack, as created with [FragmentTransaction.addToBackStack()](FragmentTransaction.md)). Entries can later be retrieved with [FragmentManager.getBackStackEntryAt()](FragmentManager.md)).
 
 Note that you should never hold on to a BackStackEntry object; the identifier as returned by [getId](../android/app/FragmentManager.BackStackEntry.md))is the only thing that will be persisted across activity instances.
 
@@ -32,7 +32,7 @@ Note that you should never hold on to a BackStackEntry object; the identifier as
 | --- | --- |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBreadCrumbTitleRes](../android/app/FragmentManager.BackStackEntry.md))`()` Return the full bread crumb title resource identifier for the entry, or 0 if it does not have one. |
 | abstract [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getId](../android/app/FragmentManager.BackStackEntry.md))`()` Return the unique identifier for the entry. |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](../android/app/FragmentManager.BackStackEntry.md))`()` Get the name that was supplied to [FragmentTransaction.addToBackStack(String)](../android/app/FragmentTransaction.md))when creating this entry. |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getName](../android/app/FragmentManager.BackStackEntry.md))`()` Get the name that was supplied to [FragmentTransaction.addToBackStack(String)](FragmentTransaction.md))when creating this entry. |
 | --- | --- |
 
 ## Public methods
@@ -108,4 +108,4 @@ abstract fun getName(): String!
 
 **Deprecated:** *Deprecated in Java.*
 
-Get the name that was supplied to [FragmentTransaction.addToBackStack(String)](../android/app/FragmentTransaction.md))when creating this entry.
+Get the name that was supplied to [FragmentTransaction.addToBackStack(String)](FragmentTransaction.md))when creating this entry.

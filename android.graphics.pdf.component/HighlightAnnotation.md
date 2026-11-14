@@ -3,7 +3,7 @@ Also in [S Extensions 18](https://developer.android.com/sdkExtensions)
 
 # HighlightAnnotation
 
-Kotlin | [Java](../android/graphics/pdf/component/HighlightAnnotation.md)
+Kotlin | [Java](HighlightAnnotation.md)
 | --- | --- |
 
 ```
@@ -12,8 +12,8 @@ class HighlightAnnotation : PdfAnnotation
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.graphics.pdf.component.PdfAnnotation](../android/graphics/pdf/component/PdfAnnotation.md) ||
-| | ↳ | [android.graphics.pdf.component.HighlightAnnotation](../android/graphics/pdf/component/HighlightAnnotation.md) |
+| ↳ | [android.graphics.pdf.component.PdfAnnotation](PdfAnnotation.md) ||
+| | ↳ | [android.graphics.pdf.component.HighlightAnnotation](HighlightAnnotation.md) |
 
 Represents a highlight annotation in a PDF document.
 
@@ -27,7 +27,7 @@ If the highlight color is not explicitly set using #setColor(android.graphics.Co
 
 | Public methods ||
 |---|---|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [RectF](../android/graphics/RectF.md)!\> | `https://developer.android.com/reference/kotlin/android/graphics/pdf/component/HighlightAnnotation#getBoundsList()()` Returns the bounding rectangles of the highlight annotation. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [RectF](../android.graphics/RectF.md)!\> | `https://developer.android.com/reference/kotlin/android/graphics/pdf/component/HighlightAnnotation#getBoundsList()()` Returns the bounding rectangles of the highlight annotation. |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/component/HighlightAnnotation#getColor()()` Returns the highlight color of the annotation. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/pdf/component/HighlightAnnotation#setBoundsList(kotlin.collections.MutableList)(boundsList: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html<https://developer.android.com/reference/kotlin/android/graphics/RectF.html#!>)` Sets the bounding rectangles of the highlight annotation. |
 | --- | --- |
@@ -54,7 +54,7 @@ The default highlight color is yellow
 
 | Parameters ||
 |---|---|
-| `boundsList` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [RectF](../android/graphics/RectF.md)!\>: The bounding rectangle of the annotation. This value cannot be `null`. |
+| `boundsList` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [RectF](../android.graphics/RectF.md)!\>: The bounding rectangle of the annotation. This value cannot be `null`. |
 
 ## Public methods
 
@@ -101,7 +101,7 @@ Sets the bounding rectangles of the highlight annotation. Each rect in the list 
 
 | Parameters ||
 |---|---|
-| `boundsList` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [RectF](../android/graphics/RectF.md)!\>: The new bounding rectangles. This value cannot be `null`. |
+| `boundsList` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [RectF](../android.graphics/RectF.md)!\>: The new bounding rectangles. This value cannot be `null`. |
 
 | Exceptions ||
 |---|---|

@@ -10,8 +10,8 @@ open class MemoryHandler : Handler
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [java.util.logging.Handler](../java/util/logging/Handler.md) ||
-| | ↳ | [java.util.logging.MemoryHandler](../java/util/logging/MemoryHandler.md) |
+| ↳ | [java.util.logging.Handler](Handler.md) ||
+| | ↳ | [java.util.logging.MemoryHandler](MemoryHandler.md) |
 
 Handler that buffers requests in a circular buffer in memory.
 
@@ -47,24 +47,24 @@ For a custom handler, e.g. com.foo.MyHandler, the properties would be:
 
 | Public constructors ||
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [MemoryHandler](../java/util/logging/MemoryHandler.md))`()` Create a MemoryHandler and configure it based on LogManager configuration properties. |
-| [MemoryHandler](../java/util/logging/MemoryHandler.md))`(`target:` ` [Handler](../java/util/logging/Handler.md)!`, `size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pushLevel:` ` [Level](../java/util/logging/Level.md)!`)` Create a MemoryHandler. |
+| [MemoryHandler](MemoryHandler.md))`()` Create a MemoryHandler and configure it based on LogManager configuration properties. |
+| [MemoryHandler](MemoryHandler.md))`(`target:` ` [Handler](Handler.md)!`, `size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `pushLevel:` ` [Level](Level.md)!`)` Create a MemoryHandler. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](../java/util/logging/MemoryHandler.md))`()` Close the Handler and free all associated resources. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [flush](../java/util/logging/MemoryHandler.md))`()` Causes a flush on the target Handler. |
-| open [Level](../java/util/logging/Level.md)! | [getPushLevel](../java/util/logging/MemoryHandler.md))`()` Get the pushLevel. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [close](MemoryHandler.md))`()` Close the Handler and free all associated resources. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [flush](MemoryHandler.md))`()` Causes a flush on the target Handler. |
+| open [Level](Level.md)! | [getPushLevel](MemoryHandler.md))`()` Get the pushLevel. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLoggable](../java/util/logging/MemoryHandler.md))`(`record:` ` [LogRecord](../java/util/logging/LogRecord.md)!`)` Check if this Handler would actually log a given LogRecord into its internal buffer. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [publish](../java/util/logging/MemoryHandler.md))`(`record:` ` [LogRecord](../java/util/logging/LogRecord.md)!`)` Store a LogRecord in an internal buffer. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [push](../java/util/logging/MemoryHandler.md))`()` Push any buffered output to the target Handler. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isLoggable](MemoryHandler.md))`(`record:` ` [LogRecord](LogRecord.md)!`)` Check if this Handler would actually log a given LogRecord into its internal buffer. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [publish](MemoryHandler.md))`(`record:` ` [LogRecord](LogRecord.md)!`)` Store a LogRecord in an internal buffer. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [push](MemoryHandler.md))`()` Push any buffered output to the target Handler. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPushLevel](../java/util/logging/MemoryHandler.md))`(`newLevel:` ` [Level](../java/util/logging/Level.md)!`)` Set the pushLevel. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setPushLevel](MemoryHandler.md))`(`newLevel:` ` [Level](Level.md)!`)` Set the pushLevel. |
 
 | Inherited functions ||
 |---|---|
-| From class [Handler](../java/util/logging/Handler.md) |------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getEncoding](../java/util/logging/Handler.md))`()` <br /> Return the character encoding for this Handler. <br /> | | [ErrorManager](../java/util/logging/ErrorManager.md)! | [getErrorManager](../java/util/logging/Handler.md))`()` <br /> Retrieves the ErrorManager for this Handler. <br /> | | [Filter](../java/util/logging/Filter.md)! | [getFilter](../java/util/logging/Handler.md))`()` <br /> Get the current Filter for this Handler. <br /> | | [Formatter](../java/util/logging/Formatter.md)! | [getFormatter](../java/util/logging/Handler.md))`()` <br /> Return the Formatter for this Handler. <br /> | | [Level](../java/util/logging/Level.md)! | [getLevel](../java/util/logging/Handler.md))`()` <br /> Get the log level specifying which messages will be logged by this Handler. Message levels lower than this level will be discarded. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reportError](../java/util/logging/Handler.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `ex:` ` [Exception](../java/lang/Exception.md)!`, `code:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> Protected convenience method to report an error to this Handler's ErrorManager. Note that this method retrieves and uses the ErrorManager without doing a security check. It can therefore be used in environments where the caller may be non-privileged. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEncoding](../java/util/logging/Handler.md))`(`encoding:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> Set the character encoding used by this Handler. The encoding should be set before any LogRecords are written to the Handler. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setErrorManager](../java/util/logging/Handler.md))`(`em:` ` [ErrorManager](../java/util/logging/ErrorManager.md)!`)` <br /> Define an ErrorManager for this Handler. The ErrorManager's "error" method will be invoked if any errors occur while using this Handler. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFilter](../java/util/logging/Handler.md))`(`newFilter:` ` [Filter](../java/util/logging/Filter.md)!`)` <br /> Set a Filter to control output on this Handler. For each call of publish the Handler will call this Filter (if it is non-null) to check if the LogRecord should be published or discarded. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFormatter](../java/util/logging/Handler.md))`(`newFormatter:` ` [Formatter](../java/util/logging/Formatter.md)!`)` <br /> Set a Formatter. This Formatter will be used to format LogRecords for this Handler. Some Handlers may not use Formatters, in which case the Formatter will be remembered, but not used. <br /> <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLevel](../java/util/logging/Handler.md))`(`newLevel:` ` [Level](../java/util/logging/Level.md)!`)` <br /> Set the log level specifying which message levels will be logged by this Handler. Message levels lower than this value will be discarded. The intention is to allow developers to turn on voluminous logging, but to limit the messages that are sent to certain Handlers. <br /> | ||
+| From class [Handler](Handler.md) |------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getEncoding](Handler.md))`()` <br /> Return the character encoding for this Handler. <br /> | | [ErrorManager](ErrorManager.md)! | [getErrorManager](Handler.md))`()` <br /> Retrieves the ErrorManager for this Handler. <br /> | | [Filter](Filter.md)! | [getFilter](Handler.md))`()` <br /> Get the current Filter for this Handler. <br /> | | [Formatter](Formatter.md)! | [getFormatter](Handler.md))`()` <br /> Return the Formatter for this Handler. <br /> | | [Level](Level.md)! | [getLevel](Handler.md))`()` <br /> Get the log level specifying which messages will be logged by this Handler. Message levels lower than this level will be discarded. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reportError](Handler.md))`(`msg:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `ex:` ` [Exception](../java.lang/Exception.md)!`, `code:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> Protected convenience method to report an error to this Handler's ErrorManager. Note that this method retrieves and uses the ErrorManager without doing a security check. It can therefore be used in environments where the caller may be non-privileged. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEncoding](Handler.md))`(`encoding:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` <br /> Set the character encoding used by this Handler. The encoding should be set before any LogRecords are written to the Handler. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setErrorManager](Handler.md))`(`em:` ` [ErrorManager](ErrorManager.md)!`)` <br /> Define an ErrorManager for this Handler. The ErrorManager's "error" method will be invoked if any errors occur while using this Handler. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFilter](Handler.md))`(`newFilter:` ` [Filter](Filter.md)!`)` <br /> Set a Filter to control output on this Handler. For each call of publish the Handler will call this Filter (if it is non-null) to check if the LogRecord should be published or discarded. <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setFormatter](Handler.md))`(`newFormatter:` ` [Formatter](Formatter.md)!`)` <br /> Set a Formatter. This Formatter will be used to format LogRecords for this Handler. Some Handlers may not use Formatters, in which case the Formatter will be remembered, but not used. <br /> <br /> | | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setLevel](Handler.md))`(`newLevel:` ` [Level](Level.md)!`)` <br /> Set the log level specifying which message levels will be logged by this Handler. Message levels lower than this value will be discarded. The intention is to allow developers to turn on voluminous logging, but to limit the messages that are sent to certain Handlers. <br /> | ||
 
 ## Public constructors
 
@@ -95,9 +95,9 @@ The MemoryHandler is configured based on LogManager properties (or their default
 
 | Parameters ||
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| `target` | [Handler](../java/util/logging/Handler.md)!:the Handler to which to publish output. |
+| `target` | [Handler](Handler.md)!:the Handler to which to publish output. |
 | `size` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the number of log records to buffer (must be greater than zero) |
-| `pushLevel` | [Level](../java/util/logging/Level.md)!:message level to push on |
+| `pushLevel` | [Level](Level.md)!:message level to push on |
 | --- | --- |
 
 | Exceptions ||
@@ -144,7 +144,7 @@ Get the pushLevel.
 
 | Return ||
 |----------------------------------------------------------------------------------|----------------------------|
-| [Level](../java/util/logging/Level.md)! | the value of the pushLevel |
+| [Level](Level.md)! | the value of the pushLevel |
 
 ### isLoggable
 
@@ -162,7 +162,7 @@ This method checks if the LogRecord has an appropriate level and whether it sati
 
 | Parameters ||
 |----------|------------------------------------------------------------------------------------------------------|
-| `record` | [LogRecord](../java/util/logging/LogRecord.md)!:a LogRecord |
+| `record` | [LogRecord](LogRecord.md)!:a LogRecord |
 
 | Return ||
 |------------------------------------------------------------------------------------|----------------------------------------|
@@ -182,7 +182,7 @@ If there is a Filter, its isLoggable method is called to check if the given log 
 
 | Parameters ||
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `record` | [LogRecord](../java/util/logging/LogRecord.md)!:description of the log event. A null record is silently ignored and is not published |
+| `record` | [LogRecord](LogRecord.md)!:description of the log event. A null record is silently ignored and is not published |
 
 ### push
 
@@ -208,7 +208,7 @@ Set the pushLevel. After a LogRecord is copied into our internal buffer, if its 
 
 | Parameters ||
 |------------|-----------------------------------------------------------------------------------------------------------------|
-| `newLevel` | [Level](../java/util/logging/Level.md)!:the new value of the pushLevel |
+| `newLevel` | [Level](Level.md)!:the new value of the pushLevel |
 
 | Exceptions ||
 |-------------------------------|--------------------------------------------------------------------------------------------|

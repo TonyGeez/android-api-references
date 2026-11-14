@@ -4,7 +4,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 
 # FormattedNumber
 
-Kotlin| [Java](../android/icu/number/FormattedNumber.md) 
+Kotlin| [Java](FormattedNumber.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class FormattedNumber : FormattedValue
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.icu.number.FormattedNumber](../android/icu/number/FormattedNumber.md) |
+| ↳ | [android.icu.number.FormattedNumber](FormattedNumber.md) |
 
 The result of a number formatting operation. This class allows the result to be exported in several data types, including a String, an AttributedCharacterIterator, and a BigDecimal. Instances of this class are immutable and thread-safe.
 
@@ -21,22 +21,22 @@ The result of a number formatting operation. This class allows the result to be 
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| openA | [appendTo](../android/icu/number/FormattedNumber.md))`(`appendable:` `A`)` Appends the formatted string to an Appendable. |
-| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [get](../android/icu/number/FormattedNumber.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the`char`value at the specified index. |
-| open [DisplayOptions.NounClass](../android/icu/text/DisplayOptions.NounClass.md)! | [getNounClass](../android/icu/number/FormattedNumber.md))`()` Gets the noun class of the formatted output. |
+| openA | [appendTo](FormattedNumber.md))`(`appendable:` `A`)` Appends the formatted string to an Appendable. |
+| open [Char](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char/index.html) | [get](FormattedNumber.md))`(`index:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns the`char`value at the specified index. |
+| open [DisplayOptions.NounClass](../android/icu/text/DisplayOptions.NounClass.md)! | [getNounClass](FormattedNumber.md))`()` Gets the noun class of the formatted output. |
 | --- | --- |
-| open [MeasureUnit](../android/icu/util/MeasureUnit.md)! | [getOutputUnit](../android/icu/number/FormattedNumber.md))`()` Gets the resolved output unit. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [nextPosition](../android/icu/number/FormattedNumber.md))`(`cfpos:` ` [ConstrainedFieldPosition](../android/icu/text/ConstrainedFieldPosition.md)!`)` Iterates over field positions in the FormattedValue. |
-| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | [subSequence](../android/icu/number/FormattedNumber.md))`(`startIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `endIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a`CharSequence`that is a subsequence of this sequence. |
+| open [MeasureUnit](../android.icu.util/MeasureUnit.md)! | [getOutputUnit](FormattedNumber.md))`()` Gets the resolved output unit. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [nextPosition](FormattedNumber.md))`(`cfpos:` ` [ConstrainedFieldPosition](../android.icu.text/ConstrainedFieldPosition.md)!`)` Iterates over field positions in the FormattedValue. |
+| open [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html) | [subSequence](FormattedNumber.md))`(`startIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `endIndex:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Returns a`CharSequence`that is a subsequence of this sequence. |
 | --- | --- |
-| open [BigDecimal](../java/math/BigDecimal.md)! | [toBigDecimal](../android/icu/number/FormattedNumber.md))`()` Export the formatted number as a BigDecimal. |
-| open [AttributedCharacterIterator](../java/text/AttributedCharacterIterator.md)! | [toCharacterIterator](../android/icu/number/FormattedNumber.md))`()` Exports the formatted number as an AttributedCharacterIterator. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/icu/number/FormattedNumber.md))`()` Returns a string representation of the object. |
+| open [BigDecimal](../java.math/BigDecimal.md)! | [toBigDecimal](FormattedNumber.md))`()` Export the formatted number as a BigDecimal. |
+| open [AttributedCharacterIterator](../java.text/AttributedCharacterIterator.md)! | [toCharacterIterator](FormattedNumber.md))`()` Exports the formatted number as an AttributedCharacterIterator. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](FormattedNumber.md))`()` Returns a string representation of the object. |
 | --- | --- |
 
 | Properties ||
 |--------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [length](../android/icu/number/FormattedNumber.md) Returns the length of this character sequence. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [length](FormattedNumber.md) Returns the length of this character sequence. |
 
 ## Public methods
 
@@ -50,7 +50,7 @@ open fun <A : Appendable!> appendTo(appendable: A): A
 
 Appends the formatted string to an Appendable.
 
-If an IOException occurs when appending to the Appendable, an unchecked [ICUUncheckedIOException](../android/icu/util/ICUUncheckedIOException.md) is thrown instead.
+If an IOException occurs when appending to the Appendable, an unchecked [ICUUncheckedIOException](../android.icu.util/ICUUncheckedIOException.md) is thrown instead.
 
 | Parameters ||
 |--------------|--------------------------------------------------------|
@@ -116,7 +116,7 @@ The output unit is dependent upon the localized preferences for the usage specif
 
 | Return ||
 |---------------------------------------------------------------------------------------------------|----------------|
-| [MeasureUnit](../android/icu/util/MeasureUnit.md)! | `MeasureUnit`. |
+| [MeasureUnit](../android.icu.util/MeasureUnit.md)! | `MeasureUnit`. |
 
 ### nextPosition
 
@@ -140,7 +140,7 @@ ConstrainedFieldPosition cfpos = new ConstrainedFieldPosition();
 
 | Parameters ||
 |---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `cfpos` | [ConstrainedFieldPosition](../android/icu/text/ConstrainedFieldPosition.md)!:The object used for iteration state. This can provide constraints to iterate over only one specific field; see [ConstrainedFieldPosition.constrainField](../android/icu/text/ConstrainedFieldPosition.md)). |
+| `cfpos` | [ConstrainedFieldPosition](../android.icu.text/ConstrainedFieldPosition.md)!:The object used for iteration state. This can provide constraints to iterate over only one specific field; see [ConstrainedFieldPosition.constrainField](../android.icu.text/ConstrainedFieldPosition.md)). |
 
 | Return ||
 |------------------------------------------------------------------------------------|-------------------------------------------------------------------|
@@ -184,11 +184,11 @@ Export the formatted number as a BigDecimal. This endpoint is useful for obtaini
 
 | Return ||
 |------------------------------------------------------------------------------------------|------------------------------------------------------|
-| [BigDecimal](../java/math/BigDecimal.md)! | A BigDecimal representation of the formatted number. |
+| [BigDecimal](../java.math/BigDecimal.md)! | A BigDecimal representation of the formatted number. |
 
 **See Also**
 
-- [android.icu.number.NumberFormatter](../android/icu/number/NumberFormatter.md) 
+- [android.icu.number.NumberFormatter](NumberFormatter.md) 
 
 ### toCharacterIterator
 
@@ -200,11 +200,11 @@ open fun toCharacterIterator(): AttributedCharacterIterator!
 
 Exports the formatted number as an AttributedCharacterIterator.
 
-Consider using [nextPosition](../android/icu/text/FormattedValue.md))if you are trying to get field information.
+Consider using [nextPosition](../android.icu.text/FormattedValue.md))if you are trying to get field information.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------|
-| [AttributedCharacterIterator](../java/text/AttributedCharacterIterator.md)! | An AttributedCharacterIterator containing full field information. |
+| [AttributedCharacterIterator](../java.text/AttributedCharacterIterator.md)! | An AttributedCharacterIterator containing full field information. |
 
 ### toString
 

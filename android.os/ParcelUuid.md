@@ -4,7 +4,7 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 
 # ParcelUuid
 
-Kotlin| [Java](../android/os/ParcelUuid.md) 
+Kotlin| [Java](ParcelUuid.md) 
 | --- | --- |
 
 ```
@@ -13,35 +13,35 @@ class ParcelUuid : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.os.ParcelUuid](../android/os/ParcelUuid.md) |
+| ↳ | [android.os.ParcelUuid](ParcelUuid.md) |
 
-This class is a Parcelable wrapper around [UUID](../java/util/UUID.md) which is an immutable representation of a 128-bit universally unique identifier.
+This class is a Parcelable wrapper around [UUID](../java.util/UUID.md) which is an immutable representation of a 128-bit universally unique identifier.
 
 ## Summary
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](Parcelable.md) |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](Parcelable.md) <br /> Descriptor bit used with [describeContents()](Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](Parcelable.md) <br /> Flag for use with [writeToParcel](Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [ParcelUuid](../android/os/ParcelUuid.md))`(`uuid:` ` [UUID](../java/util/UUID.md)!`)` Constructor creates a ParcelUuid instance from the given [UUID](../java/util/UUID.md). |
+| [ParcelUuid](ParcelUuid.md))`(`uuid:` ` [UUID](../java.util/UUID.md)!`)` Constructor creates a ParcelUuid instance from the given [UUID](../java.util/UUID.md). |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/os/ParcelUuid.md))`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/os/ParcelUuid.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this ParcelUuid to another object for equality. |
-| static [ParcelUuid](../android/os/ParcelUuid.md)! | [fromString](../android/os/ParcelUuid.md))`(`uuid:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a new ParcelUuid from a string representation of [UUID](../java/util/UUID.md). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](ParcelUuid.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](ParcelUuid.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Compares this ParcelUuid to another object for equality. |
+| static [ParcelUuid](ParcelUuid.md)! | [fromString](ParcelUuid.md))`(`uuid:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a new ParcelUuid from a string representation of [UUID](../java.util/UUID.md). |
 | --- | --- |
-| [UUID](../java/util/UUID.md)! | [getUuid](../android/os/ParcelUuid.md))`()` Get the [UUID](../java/util/UUID.md) represented by the ParcelUuid. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/os/ParcelUuid.md))`()` <br /> |
-| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../android/os/ParcelUuid.md))`()` Returns a string representation of the ParcelUuid For example: 0000110B-0000-1000-8000-00805F9B34FB will be the return value. |
+| [UUID](../java.util/UUID.md)! | [getUuid](ParcelUuid.md))`()` Get the [UUID](../java.util/UUID.md) represented by the ParcelUuid. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](ParcelUuid.md))`()` <br /> |
+| [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](ParcelUuid.md))`()` Returns a string representation of the ParcelUuid For example: 0000110B-0000-1000-8000-00805F9B34FB will be the return value. |
 | --- | --- |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/os/ParcelUuid.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](ParcelUuid.md))`(`dest:` ` [Parcel](Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 | Properties ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ParcelUuid](../android/os/ParcelUuid.md)!\> | [CREATOR](../android/os/ParcelUuid.md) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [ParcelUuid](ParcelUuid.md)!\> | [CREATOR](ParcelUuid.md) <br /> |
 
 ## Public constructors
 
@@ -53,11 +53,11 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 ParcelUuid(uuid: UUID!)
 ```
 
-Constructor creates a ParcelUuid instance from the given [UUID](../java/util/UUID.md).
+Constructor creates a ParcelUuid instance from the given [UUID](../java.util/UUID.md).
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------|
-| `uuid` | [UUID](../java/util/UUID.md)!:UUID |
+| `uuid` | [UUID](../java.util/UUID.md)!:UUID |
 
 ## Public methods
 
@@ -71,7 +71,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](Parcelable.md) |
 
 ### equals
 
@@ -100,7 +100,7 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 static fun fromString(uuid: String!): ParcelUuid!
 ```
 
-Creates a new ParcelUuid from a string representation of [UUID](../java/util/UUID.md).
+Creates a new ParcelUuid from a string representation of [UUID](../java.util/UUID.md).
 
 | Parameters ||
 |--------|-------------------------------------------------------------------------------------------------------------|
@@ -108,7 +108,7 @@ Creates a new ParcelUuid from a string representation of [UUID](../java/util/UUI
 
 | Return ||
 |--------------------------------------------------------------------------------------|------------------------|
-| [ParcelUuid](../android/os/ParcelUuid.md)! | a ParcelUuid instance. |
+| [ParcelUuid](ParcelUuid.md)! | a ParcelUuid instance. |
 
 | Exceptions ||
 |--------------------------------------|-------------------------------------|
@@ -123,11 +123,11 @@ Added in [API level 5](https://developer.android.com/guide/topics/manifest/uses-
 fun getUuid(): UUID!
 ```
 
-Get the [UUID](../java/util/UUID.md) represented by the ParcelUuid.
+Get the [UUID](../java.util/UUID.md) represented by the ParcelUuid.
 
 | Return ||
 |------------------------------------------------------------------------------|-----------------------------------|
-| [UUID](../java/util/UUID.md)! | UUID contained in the ParcelUuid. |
+| [UUID](../java.util/UUID.md)! | UUID contained in the ParcelUuid. |
 
 ### hashCode
 
@@ -168,8 +168,8 @@ fun writeToParcel(
 
 | Parameters ||
 |---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](../android/os/Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](Parcel.md):The Parcel in which the object should be written. This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

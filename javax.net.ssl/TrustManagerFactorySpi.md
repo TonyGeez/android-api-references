@@ -10,7 +10,7 @@ abstract class TrustManagerFactorySpi
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.net.ssl.TrustManagerFactorySpi](../javax/net/ssl/TrustManagerFactorySpi.md) |
+| ↳ | [javax.net.ssl.TrustManagerFactorySpi](TrustManagerFactorySpi.md) |
 
 This class defines the*Service Provider Interface* (**SPI** ) for the`TrustManagerFactory`class.
 
@@ -20,13 +20,13 @@ All the abstract methods in this class must be implemented by each cryptographic
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [TrustManagerFactorySpi](../javax/net/ssl/TrustManagerFactorySpi.md))`()` <br /> |
+| [TrustManagerFactorySpi](TrustManagerFactorySpi.md))`()` <br /> |
 
 | Protected methods ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [TrustManager](../javax/net/ssl/TrustManager.md)!\>! | [engineGetTrustManagers](../javax/net/ssl/TrustManagerFactorySpi.md))`()` Returns one trust manager for each type of trust material. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](../javax/net/ssl/TrustManagerFactorySpi.md))`(`ks:` ` [KeyStore](../java/security/KeyStore.md)!`)` Initializes this factory with a source of certificate authorities and related trust material. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](../javax/net/ssl/TrustManagerFactorySpi.md))`(`spec:` ` [ManagerFactoryParameters](../javax/net/ssl/ManagerFactoryParameters.md)!`)` Initializes this factory with a source of provider-specific key material. |
+| abstract [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [TrustManager](TrustManager.md)!\>! | [engineGetTrustManagers](TrustManagerFactorySpi.md))`()` Returns one trust manager for each type of trust material. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](TrustManagerFactorySpi.md))`(`ks:` ` [KeyStore](../java.security/KeyStore.md)!`)` Initializes this factory with a source of certificate authorities and related trust material. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](TrustManagerFactorySpi.md))`(`spec:` ` [ManagerFactoryParameters](ManagerFactoryParameters.md)!`)` Initializes this factory with a source of provider-specific key material. |
 | --- | --- |
 
 ## Public constructors
@@ -53,7 +53,7 @@ Returns one trust manager for each type of trust material.
 
 | Return ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------|
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [TrustManager](../javax/net/ssl/TrustManager.md)!>! | the trust managers |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)< [TrustManager](TrustManager.md)!>! | the trust managers |
 
 | Exceptions ||
 |-----------------------------------|------------------------------------|
@@ -71,7 +71,7 @@ Initializes this factory with a source of certificate authorities and related tr
 
 | Parameters ||
 |------|----------------------------------------------------------------------------------------------------------------|
-| `ks` | [KeyStore](../java/security/KeyStore.md)!:the key store or null |
+| `ks` | [KeyStore](../java.security/KeyStore.md)!:the key store or null |
 
 | Exceptions ||
 |-----------------------------------|-------------------------|
@@ -79,7 +79,7 @@ Initializes this factory with a source of certificate authorities and related tr
 
 **See Also**
 
-- [javax.net.ssl.TrustManagerFactory#init(KeyStore)](../javax/net/ssl/TrustManagerFactory.md)) 
+- [javax.net.ssl.TrustManagerFactory#init(KeyStore)](TrustManagerFactory.md)) 
 
 ### engineInit
 
@@ -95,7 +95,7 @@ In some cases, initialization parameters other than a keystore may be needed by 
 
 | Parameters ||
 |--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `spec` | [ManagerFactoryParameters](../javax/net/ssl/ManagerFactoryParameters.md)!:an implementation of a provider-specific parameter specification |
+| `spec` | [ManagerFactoryParameters](ManagerFactoryParameters.md)!:an implementation of a provider-specific parameter specification |
 
 | Exceptions ||
 |----------------------------------------------------|-----------------------------------------|
@@ -103,4 +103,4 @@ In some cases, initialization parameters other than a keystore may be needed by 
 
 **See Also**
 
-- [javax.net.ssl.TrustManagerFactory#init(ManagerFactoryParameters spec)](../javax/net/ssl/TrustManagerFactory.md))
+- [javax.net.ssl.TrustManagerFactory#init(ManagerFactoryParameters spec)](TrustManagerFactory.md))

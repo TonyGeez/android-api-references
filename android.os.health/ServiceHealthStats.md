@@ -4,7 +4,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 
 # ServiceHealthStats
 
-Kotlin| [Java](../android/os/health/ServiceHealthStats.md) 
+Kotlin| [Java](ServiceHealthStats.md) 
 | --- | --- |
 
 ```
@@ -13,16 +13,16 @@ class ServiceHealthStats
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.os.health.ServiceHealthStats](../android/os/health/ServiceHealthStats.md) |
+| ↳ | [android.os.health.ServiceHealthStats](ServiceHealthStats.md) |
 
-Keys for [HealthStats](../android/os/health/HealthStats.md) returned from [HealthStats.getStats(int)](../android/os/health/HealthStats.md))with the [PackageHealthStats.STATS_SERVICES](../android/os/health/PackageHealthStats.md) key.
+Keys for [HealthStats](HealthStats.md) returned from [HealthStats.getStats(int)](HealthStats.md))with the [PackageHealthStats.STATS_SERVICES](PackageHealthStats.md) key.
 
 ## Summary
 
 | Constants ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_LAUNCH_COUNT](../android/os/health/ServiceHealthStats.md) Key for a measurement of the total number of times this service was started due to calls to [startService()](../android/content/Context.md))or android. |
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_START_SERVICE_COUNT](../android/os/health/ServiceHealthStats.md) Key for a measurement of the number of times this service was started due to calls to [startService()](../android/content/Context.md)), including re-launches after crashes. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_LAUNCH_COUNT](ServiceHealthStats.md) Key for a measurement of the total number of times this service was started due to calls to [startService()](../android.content/Context.md))or android. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [MEASUREMENT_START_SERVICE_COUNT](ServiceHealthStats.md) Key for a measurement of the number of times this service was started due to calls to [startService()](../android.content/Context.md)), including re-launches after crashes. |
 
 ## Constants
 
@@ -34,7 +34,7 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val MEASUREMENT_LAUNCH_COUNT: Int
 ```
 
-Key for a measurement of the total number of times this service was started due to calls to [startService()](../android/content/Context.md))or android.content.Context#bindService including re-launches after crashes. 
+Key for a measurement of the total number of times this service was started due to calls to [startService()](../android.content/Context.md))or android.content.Context#bindService including re-launches after crashes. 
 
  Value: 50002
 
@@ -46,6 +46,6 @@ Added in [API level 24](https://developer.android.com/guide/topics/manifest/uses
 static val MEASUREMENT_START_SERVICE_COUNT: Int
 ```
 
-Key for a measurement of the number of times this service was started due to calls to [startService()](../android/content/Context.md)), including re-launches after crashes. 
+Key for a measurement of the number of times this service was started due to calls to [startService()](../android.content/Context.md)), including re-launches after crashes. 
 
  Value: 50001

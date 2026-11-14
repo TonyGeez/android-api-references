@@ -2,7 +2,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 
 # KeyguardManager
 
-Kotlin | [Java](../android/app/KeyguardManager.md)
+Kotlin | [Java](KeyguardManager.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ open class KeyguardManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.KeyguardManager](../android/app/KeyguardManager.md) |
+| ↳ | [android.app.KeyguardManager](KeyguardManager.md) |
 
 Class to manage and query the state of the lock screen (also known as Keyguard).
 
@@ -30,7 +30,7 @@ Class to manage and query the state of the lock screen (also known as Keyguard).
 |---|---|
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/KeyguardManager#addDeviceLockedStateListener(java.util.concurrent.Executor,%20android.app.KeyguardManager.DeviceLockedStateListener)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, listener: https://developer.android.com/reference/kotlin/android/app/KeyguardManager.DeviceLockedStateListener)` Registers a listener to execute when the device locked state changes. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/KeyguardManager#addKeyguardLockedStateListener(java.util.concurrent.Executor,%20android.app.KeyguardManager.KeyguardLockedStateListener)(executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, listener: https://developer.android.com/reference/kotlin/android/app/KeyguardManager.KeyguardLockedStateListener)` Registers a listener to execute when the keyguard locked state changes. |
-| open [Intent](../android/content/Intent.md)! | `https://developer.android.com/reference/kotlin/android/app/KeyguardManager#createConfirmDeviceCredentialIntent(kotlin.CharSequence,%20kotlin.CharSequence)(title: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, description: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Get an intent to prompt the user to confirm credentials (pin, pattern, password or biometrics if enrolled) for the current user of the device. |
+| open [Intent](../android.content/Intent.md)! | `https://developer.android.com/reference/kotlin/android/app/KeyguardManager#createConfirmDeviceCredentialIntent(kotlin.CharSequence,%20kotlin.CharSequence)(title: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!, description: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Get an intent to prompt the user to confirm credentials (pin, pattern, password or biometrics if enrolled) for the current user of the device. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/app/KeyguardManager#exitKeyguardSecurely(android.app.KeyguardManager.OnKeyguardExitResult)(callback: https://developer.android.com/reference/kotlin/android/app/KeyguardManager.OnKeyguardExitResult!)` Exit the keyguard securely. |
 | open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/app/KeyguardManager#inKeyguardRestrictedInputMode()()` Returns whether the lock screen is showing. |
@@ -64,7 +64,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): The `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` where the `listener` will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` where the `listener` will be invoked. This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `listener` | [KeyguardManager.DeviceLockedStateListener](../android/app/KeyguardManager.DeviceLockedStateListener.md): The listener to add to receive device locked state changes. This value cannot be `null`. |
 
 **See Also**
@@ -88,7 +88,7 @@ Requires `https://developer.android.com/reference/kotlin/android/Manifest.permis
 
 | Parameters ||
 |---|---|
-| `executor` | [Executor](../java/util/concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): This value cannot be `null`. Callback and listener events are dispatched through this `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#`, providing an easy way to control which thread is used. To dispatch events through the main thread of your application, you can use `https://developer.android.com/reference/kotlin/android/content/Context.html#getMainExecutor()`. Otherwise, provide an `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` that dispatches to an appropriate thread. |
 | `listener` | [KeyguardManager.KeyguardLockedStateListener](../android/app/KeyguardManager.KeyguardLockedStateListener.md): The listener to add to receive keyguard locked state changes. This value cannot be `null`. |
 
 **See Also**
@@ -342,5 +342,5 @@ If the value set for the `https://developer.android.com/reference/kotlin/android
 
 | Parameters ||
 |---|---|
-| `activity` | [Activity](../android/app/Activity.md): The activity requesting the dismissal. The activity must either be visible by using `https://developer.android.com/reference/kotlin/android/R.attr.html#showWhenLocked:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/app/Activity#setShowWhenLocked(kotlin.Boolean)`, or must be in a state in which it would be visible if Keyguard would not be hiding it. If that's not the case, the request will fail immediately and `https://developer.android.com/reference/kotlin/android/app/KeyguardManager.KeyguardDismissCallback#onDismissError()` will be invoked. This value cannot be `null`. |
+| `activity` | [Activity](Activity.md): The activity requesting the dismissal. The activity must either be visible by using `https://developer.android.com/reference/kotlin/android/R.attr.html#showWhenLocked:kotlin.Int` or `https://developer.android.com/reference/kotlin/android/app/Activity#setShowWhenLocked(kotlin.Boolean)`, or must be in a state in which it would be visible if Keyguard would not be hiding it. If that's not the case, the request will fail immediately and `https://developer.android.com/reference/kotlin/android/app/KeyguardManager.KeyguardDismissCallback#onDismissError()` will be invoked. This value cannot be `null`. |
 | `callback` | [KeyguardManager.KeyguardDismissCallback](../android/app/KeyguardManager.KeyguardDismissCallback.md)?: The callback to be called if the request to dismiss Keyguard was successful or `null` if the caller isn't interested in knowing the result. The callback will not be invoked if the activity was destroyed before the callback was received. |

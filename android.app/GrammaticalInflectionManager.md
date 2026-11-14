@@ -4,7 +4,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # GrammaticalInflectionManager
 
-Kotlin| [Java](../android/app/GrammaticalInflectionManager.md) 
+Kotlin| [Java](GrammaticalInflectionManager.md) 
 | --- | --- |
 
 ```
@@ -13,7 +13,7 @@ open class GrammaticalInflectionManager
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.GrammaticalInflectionManager](../android/app/GrammaticalInflectionManager.md) |
+| ↳ | [android.app.GrammaticalInflectionManager](GrammaticalInflectionManager.md) |
 
 This class allow applications to control granular grammatical inflection settings (such as per-app grammatical gender).
 
@@ -21,9 +21,9 @@ This class allow applications to control granular grammatical inflection setting
 
 | Public methods ||
 |----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getApplicationGrammaticalGender](../android/app/GrammaticalInflectionManager.md))`()` Returns the current grammatical gender for the calling app. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSystemGrammaticalGender](../android/app/GrammaticalInflectionManager.md))`()` Allows privileged preloaded applications to get the system grammatical gender when set. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRequestedApplicationGrammaticalGender](../android/app/GrammaticalInflectionManager.md))`(`grammaticalGender:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the current grammatical gender for the calling app (keyed by package name and user ID retrieved from the calling pid). |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getApplicationGrammaticalGender](GrammaticalInflectionManager.md))`()` Returns the current grammatical gender for the calling app. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getSystemGrammaticalGender](GrammaticalInflectionManager.md))`()` Allows privileged preloaded applications to get the system grammatical gender when set. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setRequestedApplicationGrammaticalGender](GrammaticalInflectionManager.md))`(`grammaticalGender:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the current grammatical gender for the calling app (keyed by package name and user ID retrieved from the calling pid). |
 | --- | --- |
 
 ## Public methods
@@ -36,15 +36,15 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 open fun getApplicationGrammaticalGender(): Int
 ```
 
-Returns the current grammatical gender for the calling app. A new value can be requested via [setRequestedApplicationGrammaticalGender(int)](../android/app/GrammaticalInflectionManager.md))and will be updated with a new configuration change. The method always returns the value received with the last received configuration change.
+Returns the current grammatical gender for the calling app. A new value can be requested via [setRequestedApplicationGrammaticalGender(int)](GrammaticalInflectionManager.md))and will be updated with a new configuration change. The method always returns the value received with the last received configuration change.
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the value of grammatical gender Value is [android.content.res.Configuration#GRAMMATICAL_GENDER_NOT_SPECIFIED](../android/content/res/Configuration.md), [android.content.res.Configuration#GRAMMATICAL_GENDER_NEUTRAL](../android/content/res/Configuration.md), [android.content.res.Configuration#GRAMMATICAL_GENDER_FEMININE](../android/content/res/Configuration.md), or [android.content.res.Configuration#GRAMMATICAL_GENDER_MASCULINE](../android/content/res/Configuration.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | the value of grammatical gender Value is [android.content.res.Configuration#GRAMMATICAL_GENDER_NOT_SPECIFIED](../android.content.res/Configuration.md), [android.content.res.Configuration#GRAMMATICAL_GENDER_NEUTRAL](../android.content.res/Configuration.md), [android.content.res.Configuration#GRAMMATICAL_GENDER_FEMININE](../android.content.res/Configuration.md), or [android.content.res.Configuration#GRAMMATICAL_GENDER_MASCULINE](../android.content.res/Configuration.md) |
 
 **See Also**
 
-- [android.content.res.Configuration#getGrammaticalGender](../android/content/res/Configuration.md)) 
+- [android.content.res.Configuration#getGrammaticalGender](../android.content.res/Configuration.md)) 
 
 ### getSystemGrammaticalGender
 
@@ -59,7 +59,7 @@ Requires android.Manifest.permission.READ_SYSTEM_GRAMMATICAL_GENDER
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The value of system grammatical gender only if the calling app has the permission, otherwise throwing an exception. Value is [android.content.res.Configuration#GRAMMATICAL_GENDER_NOT_SPECIFIED](../android/content/res/Configuration.md), [android.content.res.Configuration#GRAMMATICAL_GENDER_NEUTRAL](../android/content/res/Configuration.md), [android.content.res.Configuration#GRAMMATICAL_GENDER_FEMININE](../android/content/res/Configuration.md), or [android.content.res.Configuration#GRAMMATICAL_GENDER_MASCULINE](../android/content/res/Configuration.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | The value of system grammatical gender only if the calling app has the permission, otherwise throwing an exception. Value is [android.content.res.Configuration#GRAMMATICAL_GENDER_NOT_SPECIFIED](../android.content.res/Configuration.md), [android.content.res.Configuration#GRAMMATICAL_GENDER_NEUTRAL](../android.content.res/Configuration.md), [android.content.res.Configuration#GRAMMATICAL_GENDER_FEMININE](../android.content.res/Configuration.md), or [android.content.res.Configuration#GRAMMATICAL_GENDER_MASCULINE](../android.content.res/Configuration.md) |
 
 | Exceptions ||
 |-------------------------------|------------------------------------------------------|
@@ -67,7 +67,7 @@ Requires android.Manifest.permission.READ_SYSTEM_GRAMMATICAL_GENDER
 
 **See Also**
 
-- [android.content.res.Configuration#getGrammaticalGender](../android/content/res/Configuration.md)) 
+- [android.content.res.Configuration#getGrammaticalGender](../android.content.res/Configuration.md)) 
 
 ### setRequestedApplicationGrammaticalGender
 
@@ -83,8 +83,8 @@ Sets the current grammatical gender for the calling app (keyed by package name a
 
 | Parameters ||
 |---------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `grammaticalGender` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the terms of address the user preferred in an application. Value is [android.content.res.Configuration#GRAMMATICAL_GENDER_NOT_SPECIFIED](../android/content/res/Configuration.md), [android.content.res.Configuration#GRAMMATICAL_GENDER_NEUTRAL](../android/content/res/Configuration.md), [android.content.res.Configuration#GRAMMATICAL_GENDER_FEMININE](../android/content/res/Configuration.md), or [android.content.res.Configuration#GRAMMATICAL_GENDER_MASCULINE](../android/content/res/Configuration.md) |
+| `grammaticalGender` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the terms of address the user preferred in an application. Value is [android.content.res.Configuration#GRAMMATICAL_GENDER_NOT_SPECIFIED](../android.content.res/Configuration.md), [android.content.res.Configuration#GRAMMATICAL_GENDER_NEUTRAL](../android.content.res/Configuration.md), [android.content.res.Configuration#GRAMMATICAL_GENDER_FEMININE](../android.content.res/Configuration.md), or [android.content.res.Configuration#GRAMMATICAL_GENDER_MASCULINE](../android.content.res/Configuration.md) |
 
 **See Also**
 
-- [android.content.res.Configuration#getGrammaticalGender](../android/content/res/Configuration.md))
+- [android.content.res.Configuration#getGrammaticalGender](../android.content.res/Configuration.md))

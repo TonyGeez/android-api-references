@@ -8,11 +8,11 @@ abstract class HostApduService : Service
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](../android/content/Context.md) ||||
-| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) |||
-| | | ↳ | [android.app.Service](../android/app/Service.md) ||
+| ↳ | [android.content.Context](../android.content/Context.md) ||||
+| | ↳ | [android.content.ContextWrapper](../android.content/ContextWrapper.md) |||
+| | | ↳ | [android.app.Service](../android.app/Service.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.nfc.cardemulation.HostApduService](../android/nfc/cardemulation/HostApduService.md) |
+| | | | ↳ | [android.nfc.cardemulation.HostApduService](HostApduService.md) |
 
 HostApduService is a convenience `https://developer.android.com/reference/kotlin/android/app/Service.html#` class that can be extended to emulate an NFC card inside an Android service component.
 
@@ -1131,7 +1131,7 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 | Public methods ||
 |---|---|
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/HostApduService#notifyUnhandled()()` Calling this method allows the service to tell the OS that it won't be able to complete this transaction - for example, because it requires data connectivity that is not present at that moment. |
-| [IBinder](../android/os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/HostApduService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
+| [IBinder](../android.os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/HostApduService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/HostApduService#onDeactivated(kotlin.Int)(reason: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)` This method will be called in two possible scenarios: - The NFC link has been deactivated or lost - A different AID has been selected and was resolved to a different service component |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/nfc/cardemulation/HostApduService#onDestroy()()` Called by the system to notify a Service that it is no longer used and is being removed. |
@@ -2917,7 +2917,7 @@ Return the communication channel to the service. May return null if clients can 
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
+| `intent` | [Intent](../android.content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
 
 | Return ||
 |---|---|
@@ -2969,7 +2969,7 @@ This method is running on the main thread of your application. If you cannot ret
 | Parameters ||
 |---|---|
 | `commandApdu` | [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!: The APDU that was received from the remote device |
-| `extras` | [Bundle](../android/os/Bundle.md)!: A bundle containing extra data. May be null. |
+| `extras` | [Bundle](../android.os/Bundle.md)!: A bundle containing extra data. May be null. |
 
 | Return ||
 |---|---|
@@ -2987,7 +2987,7 @@ This method is called when polling frames have been received from a remote devic
 
 | Parameters ||
 |---|---|
-| `frames` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PollingFrame](../android/nfc/cardemulation/PollingFrame.md)!\>: A description of the polling frame. This value cannot be `null`. |
+| `frames` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PollingFrame](PollingFrame.md)!\>: A description of the polling frame. This value cannot be `null`. |
 
 ### sendResponseApdu
 

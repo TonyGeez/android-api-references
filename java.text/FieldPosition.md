@@ -10,7 +10,7 @@ open class FieldPosition
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.text.FieldPosition](../java/text/FieldPosition.md) |
+| ↳ | [java.text.FieldPosition](FieldPosition.md) |
 
 `FieldPosition`is a simple class used by`Format`and its subclasses to identify fields in formatted output. Fields can be identified in two ways:
 
@@ -29,23 +29,23 @@ If you are interested in the positions of all attributes in the formatted string
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [FieldPosition](../java/text/FieldPosition.md))`(`field:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a FieldPosition object for the given field. |
-| [FieldPosition](../java/text/FieldPosition.md))`(`attribute:` ` [Format.Field](../java/text/Format.Field.md)!`)` Creates a FieldPosition object for the given field constant. |
-| [FieldPosition](../java/text/FieldPosition.md))`(`attribute:` ` [Format.Field](../java/text/Format.Field.md)!`, `fieldID:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a`FieldPosition`object for the given field. |
+| [FieldPosition](FieldPosition.md))`(`field:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a FieldPosition object for the given field. |
+| [FieldPosition](FieldPosition.md))`(`attribute:` ` [Format.Field](../java/text/Format.Field.md)!`)` Creates a FieldPosition object for the given field constant. |
+| [FieldPosition](FieldPosition.md))`(`attribute:` ` [Format.Field](../java/text/Format.Field.md)!`, `fieldID:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a`FieldPosition`object for the given field. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../java/text/FieldPosition.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Overrides equals |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBeginIndex](../java/text/FieldPosition.md))`()` Retrieves the index of the first character in the requested field. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEndIndex](../java/text/FieldPosition.md))`()` Retrieves the index of the character following the last character in the requested field. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](FieldPosition.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Overrides equals |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getBeginIndex](FieldPosition.md))`()` Retrieves the index of the first character in the requested field. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getEndIndex](FieldPosition.md))`()` Retrieves the index of the character following the last character in the requested field. |
 | --- | --- |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getField](../java/text/FieldPosition.md))`()` Retrieves the field identifier. |
-| open [Format.Field](../java/text/Format.Field.md)! | [getFieldAttribute](../java/text/FieldPosition.md))`()` Returns the field identifier as an attribute constant from one of the`Field`subclasses. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../java/text/FieldPosition.md))`()` Returns a hash code for this FieldPosition. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getField](FieldPosition.md))`()` Retrieves the field identifier. |
+| open [Format.Field](../java/text/Format.Field.md)! | [getFieldAttribute](FieldPosition.md))`()` Returns the field identifier as an attribute constant from one of the`Field`subclasses. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](FieldPosition.md))`()` Returns a hash code for this FieldPosition. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setBeginIndex](../java/text/FieldPosition.md))`(`bi:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the begin index. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEndIndex](../java/text/FieldPosition.md))`(`ei:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the end index. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/text/FieldPosition.md))`()` Return a string representation of this FieldPosition. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setBeginIndex](FieldPosition.md))`(`bi:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the begin index. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setEndIndex](FieldPosition.md))`(`ei:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Sets the end index. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](FieldPosition.md))`()` Return a string representation of this FieldPosition. |
 | --- | --- |
 
 ## Public constructors
@@ -66,10 +66,10 @@ Creates a FieldPosition object for the given field. Fields are identified by con
 
 **See Also**
 
-- [java.text.NumberFormat#INTEGER_FIELD](../java/text/NumberFormat.md)
-- [java.text.NumberFormat#FRACTION_FIELD](../java/text/NumberFormat.md)
-- [java.text.DateFormat#YEAR_FIELD](../java/text/DateFormat.md)
-- [java.text.DateFormat#MONTH_FIELD](../java/text/DateFormat.md) 
+- [java.text.NumberFormat#INTEGER_FIELD](NumberFormat.md)
+- [java.text.NumberFormat#FRACTION_FIELD](NumberFormat.md)
+- [java.text.DateFormat#YEAR_FIELD](DateFormat.md)
+- [java.text.DateFormat#MONTH_FIELD](DateFormat.md) 
 
 ### FieldPosition
 

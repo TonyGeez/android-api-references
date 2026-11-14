@@ -8,7 +8,7 @@ Added in [API level 9](https://developer.android.com/guide/topics/manifest/uses-
 interface CookiePolicy
 ```
 
-| [java.net.CookiePolicy](../java/net/CookiePolicy.md) |
+| [java.net.CookiePolicy](CookiePolicy.md) |
 
 CookiePolicy implementations decide which cookies should be accepted and which should be rejected. Three pre-defined policy implementations are provided, namely ACCEPT_ALL, ACCEPT_NONE and ACCEPT_ORIGINAL_SERVER.
 
@@ -18,13 +18,13 @@ See RFC 2965 sec. 3.3 and 7 for more detail.
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [shouldAccept](../java/net/CookiePolicy.md))`(`uri:` ` [URI](../java/net/URI.md)!`, `cookie:` ` [HttpCookie](../java/net/HttpCookie.md)!`)` Will be called to see whether or not this cookie should be accepted. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [shouldAccept](CookiePolicy.md))`(`uri:` ` [URI](URI.md)!`, `cookie:` ` [HttpCookie](HttpCookie.md)!`)` Will be called to see whether or not this cookie should be accepted. |
 
 | Properties ||
 |-----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [CookiePolicy](../java/net/CookiePolicy.md)! | [ACCEPT_ALL](../java/net/CookiePolicy.md) One pre-defined policy which accepts all cookies. |
-| static [CookiePolicy](../java/net/CookiePolicy.md)! | [ACCEPT_NONE](../java/net/CookiePolicy.md) One pre-defined policy which accepts no cookies. |
-| static [CookiePolicy](../java/net/CookiePolicy.md)! | [ACCEPT_ORIGINAL_SERVER](../java/net/CookiePolicy.md) One pre-defined policy which only accepts cookies from original server. |
+| static [CookiePolicy](CookiePolicy.md)! | [ACCEPT_ALL](CookiePolicy.md) One pre-defined policy which accepts all cookies. |
+| static [CookiePolicy](CookiePolicy.md)! | [ACCEPT_NONE](CookiePolicy.md) One pre-defined policy which accepts no cookies. |
+| static [CookiePolicy](CookiePolicy.md)! | [ACCEPT_ORIGINAL_SERVER](CookiePolicy.md) One pre-defined policy which only accepts cookies from original server. |
 | --- | --- |
 
 ## Public methods
@@ -44,8 +44,8 @@ Will be called to see whether or not this cookie should be accepted.
 
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------|
-| `uri` | [URI](../java/net/URI.md)!: the URI to consult accept policy with |
-| `cookie` | [HttpCookie](../java/net/HttpCookie.md)!: the HttpCookie object in question |
+| `uri` | [URI](URI.md)!: the URI to consult accept policy with |
+| `cookie` | [HttpCookie](HttpCookie.md)!: the HttpCookie object in question |
 
 | Return ||
 |------------------------------------------------------------------------------------|--------------------------------------------------------------|

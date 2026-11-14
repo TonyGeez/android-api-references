@@ -8,7 +8,7 @@ class RemoveByDocumentIdRequest : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.appsearch.RemoveByDocumentIdRequest](../android/app/appsearch/RemoveByDocumentIdRequest.md) |
+| ↳ | [android.app.appsearch.RemoveByDocumentIdRequest](RemoveByDocumentIdRequest.md) |
 
 Encapsulates a request to remove documents by namespace and IDs from the `https://developer.android.com/reference/kotlin/android/app/appsearch/AppSearchSession` database.
 
@@ -32,7 +32,7 @@ Encapsulates a request to remove documents by namespace and IDs from the `https:
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [RemoveByDocumentIdRequest](../android/app/appsearch/RemoveByDocumentIdRequest.md)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/RemoveByDocumentIdRequest#CREATOR:android.os.Parcelable.Creator` Creator class for `https://developer.android.com/reference/kotlin/android/app/appsearch/RemoveByDocumentIdRequest#`. |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [RemoveByDocumentIdRequest](RemoveByDocumentIdRequest.md)!\> | `https://developer.android.com/reference/kotlin/android/app/appsearch/RemoveByDocumentIdRequest#CREATOR:android.os.Parcelable.Creator` Creator class for `https://developer.android.com/reference/kotlin/android/app/appsearch/RemoveByDocumentIdRequest#`. |
 
 ## Public methods
 
@@ -93,7 +93,7 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable.html#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
 
 ## Properties

@@ -13,7 +13,7 @@ interface OnClearApplicationUserDataListener
 
 | [android.app.admin.DevicePolicyManager.OnClearApplicationUserDataListener](../android/app/admin/DevicePolicyManager.OnClearApplicationUserDataListener.md) |
 
-Callback used in [clearApplicationUserData](../android/app/admin/DevicePolicyManager.md))to indicate that the clearing of an application's user data is done.
+Callback used in [clearApplicationUserData](DevicePolicyManager.md))to indicate that the clearing of an application's user data is done.
 
 ## Summary
 

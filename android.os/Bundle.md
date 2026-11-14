@@ -8,8 +8,8 @@ class Bundle : BaseBundle, Cloneable, Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [android.os.BaseBundle](../android/os/BaseBundle.md) ||
-| | ↳ | [android.os.Bundle](../android/os/Bundle.md) |
+| ↳ | [android.os.BaseBundle](BaseBundle.md) ||
+| | ↳ | [android.os.Bundle](Bundle.md) |
 
 A mapping from String keys to various `https://developer.android.com/reference/kotlin/android/os/Parcelable` values.
 
@@ -33,11 +33,11 @@ A mapping from String keys to various `https://developer.android.com/reference/k
 |---|---|
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Bundle#clear()()` Removes all elements from the mapping of this Bundle. |
 | [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | `https://developer.android.com/reference/kotlin/android/os/Bundle#clone()()` Clones the current Bundle. |
-| [Bundle](../android/os/Bundle.md)! | `https://developer.android.com/reference/kotlin/android/os/Bundle#deepCopy()()` Make a deep copy of the given bundle. |
+| [Bundle](Bundle.md)! | `https://developer.android.com/reference/kotlin/android/os/Bundle#deepCopy()()` Make a deep copy of the given bundle. |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/os/Bundle#describeContents()()` Report the nature of this Parcelable's contents |
-| [IBinder](../android/os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/os/Bundle#getBinder(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Returns the value associated with the given key, or null if no mapping of the desired type exists for the given key or a null value is explicitly associated with the key. |
-| [Bundle](../android/os/Bundle.md)? | `https://developer.android.com/reference/kotlin/android/os/Bundle#getBundle(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Returns the value associated with the given key, or null if no mapping of the desired type exists for the given key or a null value is explicitly associated with the key. |
+| [IBinder](IBinder.md)? | `https://developer.android.com/reference/kotlin/android/os/Bundle#getBinder(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Returns the value associated with the given key, or null if no mapping of the desired type exists for the given key or a null value is explicitly associated with the key. |
+| [Bundle](Bundle.md)? | `https://developer.android.com/reference/kotlin/android/os/Bundle#getBundle(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Returns the value associated with the given key, or null if no mapping of the desired type exists for the given key or a null value is explicitly associated with the key. |
 | --- | --- |
 | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html) | `https://developer.android.com/reference/kotlin/android/os/Bundle#getByte(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the value associated with the given key, or (byte) 0 if no mapping of the desired type exists for the given key. |
 | [Byte](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)! | `https://developer.android.com/reference/kotlin/android/os/Bundle#getByte(kotlin.String,%20kotlin.Byte)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, defaultValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html)` Returns the value associated with the given key, or defaultValue if no mapping of the desired type exists for the given key. |
@@ -51,35 +51,35 @@ A mapping from String keys to various `https://developer.android.com/reference/k
 | [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)! | `https://developer.android.com/reference/kotlin/android/os/Bundle#getCharSequence(kotlin.String,%20kotlin.CharSequence)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, defaultValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html!)` Returns the value associated with the given key, or defaultValue if no mapping of the desired type exists for the given key or if a null value is explicitly associatd with the given key. |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!\>? | `https://developer.android.com/reference/kotlin/android/os/Bundle#getCharSequenceArray(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Returns the value associated with the given key, or null if no mapping of the desired type exists for the given key or a null value is explicitly associated with the key. |
 | --- | --- |
-| [ArrayList](../java/util/ArrayList.md)\< [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!\>? | `https://developer.android.com/reference/kotlin/android/os/Bundle#getCharSequenceArrayList(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Returns the value associated with the given key, or null if no mapping of the desired type exists for the given key or a null value is explicitly associated with the key. |
-| [ClassLoader](../java/lang/ClassLoader.md)! | `https://developer.android.com/reference/kotlin/android/os/Bundle#getClassLoader()()` Return the ClassLoader currently associated with this Bundle. |
+| [ArrayList](../java.util/ArrayList.md)\< [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!\>? | `https://developer.android.com/reference/kotlin/android/os/Bundle#getCharSequenceArrayList(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Returns the value associated with the given key, or null if no mapping of the desired type exists for the given key or a null value is explicitly associated with the key. |
+| [ClassLoader](../java.lang/ClassLoader.md)! | `https://developer.android.com/reference/kotlin/android/os/Bundle#getClassLoader()()` Return the ClassLoader currently associated with this Bundle. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/os/Bundle#getFloat(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the value associated with the given key, or 0. |
 | --- | --- |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/os/Bundle#getFloat(kotlin.String,%20kotlin.Float)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, defaultValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html)` Returns the value associated with the given key, or defaultValue if no mapping of the desired type exists for the given key. |
 | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html)? | `https://developer.android.com/reference/kotlin/android/os/Bundle#getFloatArray(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Returns the value associated with the given key, or null if no mapping of the desired type exists for the given key or a null value is explicitly associated with the key. |
-| [ArrayList](../java/util/ArrayList.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>? | `https://developer.android.com/reference/kotlin/android/os/Bundle#getIntegerArrayList(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Returns the value associated with the given key, or null if no mapping of the desired type exists for the given key or a null value is explicitly associated with the key. |
+| [ArrayList](../java.util/ArrayList.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>? | `https://developer.android.com/reference/kotlin/android/os/Bundle#getIntegerArrayList(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Returns the value associated with the given key, or null if no mapping of the desired type exists for the given key or a null value is explicitly associated with the key. |
 | --- | --- |
 | T? | `https://developer.android.com/reference/kotlin/android/os/Bundle#getParcelable(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Returns the value associated with the given key, or `null` if no mapping of the desired type exists for the given key or a `null` value is explicitly associated with the key. |
 | T? | `https://developer.android.com/reference/kotlin/android/os/Bundle#getParcelable(kotlin.String,%20java.lang.Class)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, clazz: https://developer.android.com/reference/kotlin/java/lang/Class.html#<T>)` Returns the value associated with the given key or `null` if: - No mapping of the desired type exists for the given key. - A `null` value is explicitly associated with the key. - The object is not of type `clazz`. <br /> |
-| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Parcelable](../android/os/Parcelable.md)!\>? | `https://developer.android.com/reference/kotlin/android/os/Bundle#getParcelableArray(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Returns the value associated with the given key, or `null` if no mapping of the desired type exists for the given key or a null value is explicitly associated with the key. |
+| [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Parcelable](Parcelable.md)!\>? | `https://developer.android.com/reference/kotlin/android/os/Bundle#getParcelableArray(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Returns the value associated with the given key, or `null` if no mapping of the desired type exists for the given key or a null value is explicitly associated with the key. |
 | --- | --- |
 | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\<T\>? | `https://developer.android.com/reference/kotlin/android/os/Bundle#getParcelableArray(kotlin.String,%20java.lang.Class)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, clazz: https://developer.android.com/reference/kotlin/java/lang/Class.html#<T>)` Returns the value associated with the given key, or `null` if: - No mapping of the desired type exists for the given key. - A `null` value is explicitly associated with the key. - The object is not of type `clazz`. <br /> |
-| [ArrayList](../java/util/ArrayList.md)\<T\>? | `https://developer.android.com/reference/kotlin/android/os/Bundle#getParcelableArrayList(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Returns the value associated with the given key, or `null` if no mapping of the desired type exists for the given key or a `null` value is explicitly associated with the key. |
-| [ArrayList](../java/util/ArrayList.md)\<T\>? | `https://developer.android.com/reference/kotlin/android/os/Bundle#getParcelableArrayList(kotlin.String,%20java.lang.Class)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, clazz: https://developer.android.com/reference/kotlin/java/lang/Class.html#<out T>)` Returns the value associated with the given key, or `null` if: - No mapping of the desired type exists for the given key. - A `null` value is explicitly associated with the key. - The object is not of type `clazz`. <br /> |
+| [ArrayList](../java.util/ArrayList.md)\<T\>? | `https://developer.android.com/reference/kotlin/android/os/Bundle#getParcelableArrayList(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Returns the value associated with the given key, or `null` if no mapping of the desired type exists for the given key or a `null` value is explicitly associated with the key. |
+| [ArrayList](../java.util/ArrayList.md)\<T\>? | `https://developer.android.com/reference/kotlin/android/os/Bundle#getParcelableArrayList(kotlin.String,%20java.lang.Class)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, clazz: https://developer.android.com/reference/kotlin/java/lang/Class.html#<out T>)` Returns the value associated with the given key, or `null` if: - No mapping of the desired type exists for the given key. - A `null` value is explicitly associated with the key. - The object is not of type `clazz`. <br /> |
 | --- | --- |
-| [Serializable](../java/io/Serializable.md)? | `https://developer.android.com/reference/kotlin/android/os/Bundle#getSerializable(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Returns the value associated with the given key, or null if no mapping of the desired type exists for the given key or a null value is explicitly associated with the key. |
+| [Serializable](../java.io/Serializable.md)? | `https://developer.android.com/reference/kotlin/android/os/Bundle#getSerializable(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Returns the value associated with the given key, or null if no mapping of the desired type exists for the given key or a null value is explicitly associated with the key. |
 | T? | `https://developer.android.com/reference/kotlin/android/os/Bundle#getSerializable(kotlin.String,%20java.lang.Class)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, clazz: https://developer.android.com/reference/kotlin/java/lang/Class.html#<T>)` Returns the value associated with the given key, or `null` if: - No mapping of the desired type exists for the given key. - A `null` value is explicitly associated with the key. - The object is not of type `clazz`. <br /> |
 | [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | `https://developer.android.com/reference/kotlin/android/os/Bundle#getShort(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Returns the value associated with the given key, or (short) 0 if no mapping of the desired type exists for the given key. |
 | --- | --- |
 | [Short](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html) | `https://developer.android.com/reference/kotlin/android/os/Bundle#getShort(kotlin.String,%20kotlin.Short)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!, defaultValue: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html)` Returns the value associated with the given key, or defaultValue if no mapping of the desired type exists for the given key. |
 | [ShortArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short-array/index.html)? | `https://developer.android.com/reference/kotlin/android/os/Bundle#getShortArray(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Returns the value associated with the given key, or null if no mapping of the desired type exists for the given key or a null value is explicitly associated with the key. |
-| [Size](../android/util/Size.md)? | `https://developer.android.com/reference/kotlin/android/os/Bundle#getSize(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Returns the value associated with the given key, or null if no mapping of the desired type exists for the given key or a null value is explicitly associated with the key. |
+| [Size](../android.util/Size.md)? | `https://developer.android.com/reference/kotlin/android/os/Bundle#getSize(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Returns the value associated with the given key, or null if no mapping of the desired type exists for the given key or a null value is explicitly associated with the key. |
 | --- | --- |
-| [SizeF](../android/util/SizeF.md)? | `https://developer.android.com/reference/kotlin/android/os/Bundle#getSizeF(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Returns the value associated with the given key, or null if no mapping of the desired type exists for the given key or a null value is explicitly associated with the key. |
-| [SparseArray](../android/util/SparseArray.md)\<T\>? | `https://developer.android.com/reference/kotlin/android/os/Bundle#getSparseParcelableArray(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Returns the value associated with the given key, or null if no mapping of the desired type exists for the given key or a null value is explicitly associated with the key. |
-| [SparseArray](../android/util/SparseArray.md)\<T\>? | `https://developer.android.com/reference/kotlin/android/os/Bundle#getSparseParcelableArray(kotlin.String,%20java.lang.Class)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, clazz: https://developer.android.com/reference/kotlin/java/lang/Class.html#<out T>)` Returns the value associated with the given key, or `null` if: - No mapping of the desired type exists for the given key. - A `null` value is explicitly associated with the key. - The object is not of type `clazz`. <br /> |
+| [SizeF](../android.util/SizeF.md)? | `https://developer.android.com/reference/kotlin/android/os/Bundle#getSizeF(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Returns the value associated with the given key, or null if no mapping of the desired type exists for the given key or a null value is explicitly associated with the key. |
+| [SparseArray](../android.util/SparseArray.md)\<T\>? | `https://developer.android.com/reference/kotlin/android/os/Bundle#getSparseParcelableArray(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Returns the value associated with the given key, or null if no mapping of the desired type exists for the given key or a null value is explicitly associated with the key. |
+| [SparseArray](../android.util/SparseArray.md)\<T\>? | `https://developer.android.com/reference/kotlin/android/os/Bundle#getSparseParcelableArray(kotlin.String,%20java.lang.Class)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?, clazz: https://developer.android.com/reference/kotlin/java/lang/Class.html#<out T>)` Returns the value associated with the given key, or `null` if: - No mapping of the desired type exists for the given key. - A `null` value is explicitly associated with the key. - The object is not of type `clazz`. <br /> |
 | --- | --- |
-| [ArrayList](../java/util/ArrayList.md)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | `https://developer.android.com/reference/kotlin/android/os/Bundle#getStringArrayList(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Returns the value associated with the given key, or null if no mapping of the desired type exists for the given key or a null value is explicitly associated with the key. |
+| [ArrayList](../java.util/ArrayList.md)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>? | `https://developer.android.com/reference/kotlin/android/os/Bundle#getStringArrayList(kotlin.String)(key: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html?)` Returns the value associated with the given key, or null if no mapping of the desired type exists for the given key or a null value is explicitly associated with the key. |
 | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | `https://developer.android.com/reference/kotlin/android/os/Bundle#hasFileDescriptors()()` Reports whether the bundle contains any parcelled file descriptors. |
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/os/Bundle#putAll(android.os.Bundle)(bundle: https://developer.android.com/reference/kotlin/android/os/Bundle#!)` Inserts all mappings from the given Bundle into this Bundle. |
 | --- | --- |
@@ -126,8 +126,8 @@ A mapping from String keys to various `https://developer.android.com/reference/k
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [Bundle](../android/os/Bundle.md)!\> | `https://developer.android.com/reference/kotlin/android/os/Bundle#CREATOR:android.os.Parcelable.Creator` <br /> |
-| static [Bundle](../android/os/Bundle.md)! | `https://developer.android.com/reference/kotlin/android/os/Bundle#EMPTY:android.os.Bundle` An unmodifiable `Bundle` that is always `https://developer.android.com/reference/kotlin/android/os/BaseBundle#isEmpty()`. |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [Bundle](Bundle.md)!\> | `https://developer.android.com/reference/kotlin/android/os/Bundle#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Bundle](Bundle.md)! | `https://developer.android.com/reference/kotlin/android/os/Bundle#EMPTY:android.os.Bundle` An unmodifiable `Bundle` that is always `https://developer.android.com/reference/kotlin/android/os/BaseBundle#isEmpty()`. |
 
 ## Public constructors
 
@@ -151,7 +151,7 @@ Constructs a Bundle containing a copy of the mappings from the given Bundle. Doe
 
 | Parameters ||
 |---|---|
-| `b` | [Bundle](../android/os/Bundle.md)!: a Bundle to be copied. |
+| `b` | [Bundle](Bundle.md)!: a Bundle to be copied. |
 
 **See Also**
 
@@ -169,7 +169,7 @@ Constructs a Bundle containing a copy of the mappings from the given Persistable
 
 | Parameters ||
 |---|---|
-| `b` | [PersistableBundle](../android/os/PersistableBundle.md)!: a PersistableBundle to be copied. |
+| `b` | [PersistableBundle](PersistableBundle.md)!: a PersistableBundle to be copied. |
 
 ### Bundle
 
@@ -197,7 +197,7 @@ Constructs a new, empty Bundle that uses a specific ClassLoader for instantiatin
 
 | Parameters ||
 |---|---|
-| `loader` | [ClassLoader](../java/lang/ClassLoader.md)!: An explicit ClassLoader to use when instantiating objects inside of the Bundle. |
+| `loader` | [ClassLoader](../java.lang/ClassLoader.md)!: An explicit ClassLoader to use when instantiating objects inside of the Bundle. |
 
 ## Public methods
 
@@ -616,7 +616,7 @@ Returns the value associated with the given key or `null` if:
 | Parameters ||
 |---|---|
 | `key` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: a String, or `null` |
-| `clazz` | [Class](../java/lang/Class.md)\<T\>: The type of the object expected. This value cannot be `null`. |
+| `clazz` | [Class](../java.lang/Class.md)\<T\>: The type of the object expected. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -671,7 +671,7 @@ Returns the value associated with the given key, or `null` if:
 | Parameters ||
 |---|---|
 | `key` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: a String, or `null` |
-| `clazz` | [Class](../java/lang/Class.md)\<T\>: The type of the items inside the array. This is only verified when unparceling. This value cannot be `null`. |
+| `clazz` | [Class](../java.lang/Class.md)\<T\>: The type of the items inside the array. This is only verified when unparceling. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -726,7 +726,7 @@ Returns the value associated with the given key, or `null` if:
 | Parameters ||
 |---|---|
 | `key` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: a String, or `null` |
-| `clazz` | [Class](../java/lang/Class.md)\<out T\>: The type of the items inside the array list. This is only verified when unparceling. This value cannot be `null`. |
+| `clazz` | [Class](../java.lang/Class.md)\<out T\>: The type of the items inside the array list. This is only verified when unparceling. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -775,7 +775,7 @@ Returns the value associated with the given key, or `null` if:
 | Parameters ||
 |---|---|
 | `key` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: a String, or null |
-| `clazz` | [Class](../java/lang/Class.md)\<T\>: The expected class of the returned type. This value cannot be `null`. |
+| `clazz` | [Class](../java.lang/Class.md)\<T\>: The expected class of the returned type. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -920,7 +920,7 @@ Returns the value associated with the given key, or `null` if:
 | Parameters ||
 |---|---|
 | `key` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: a String, or null |
-| `clazz` | [Class](../java/lang/Class.md)\<out T\>: The type of the items inside the sparse array. This is only verified when unparceling. This value cannot be `null`. |
+| `clazz` | [Class](../java.lang/Class.md)\<out T\>: The type of the items inside the sparse array. This is only verified when unparceling. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -966,7 +966,7 @@ Inserts all mappings from the given Bundle into this Bundle.
 
 | Parameters ||
 |---|---|
-| `bundle` | [Bundle](../android/os/Bundle.md)!: a Bundle |
+| `bundle` | [Bundle](Bundle.md)!: a Bundle |
 
 ### putBinder
 
@@ -986,7 +986,7 @@ You should be very careful when using this function. In many places where Bundle
 | Parameters ||
 |---|---|
 | `key` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: a String, or null |
-| `value` | [IBinder](../android/os/IBinder.md)?: an IBinder object, or null |
+| `value` | [IBinder](IBinder.md)?: an IBinder object, or null |
 
 ### putBundle
 
@@ -1004,7 +1004,7 @@ Inserts a Bundle value into the mapping of this Bundle, replacing any existing v
 | Parameters ||
 |---|---|
 | `key` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: a String, or null |
-| `value` | [Bundle](../android/os/Bundle.md)?: a Bundle object, or null |
+| `value` | [Bundle](Bundle.md)?: a Bundle object, or null |
 
 ### putByte
 
@@ -1130,7 +1130,7 @@ Inserts an ArrayList value into the mapping of this Bundle, replacing any existi
 | Parameters ||
 |---|---|
 | `key` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: a String, or null |
-| `value` | [ArrayList](../java/util/ArrayList.md)\< [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!\>?: an ArrayList object, or null |
+| `value` | [ArrayList](../java.util/ArrayList.md)\< [CharSequence](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-sequence/index.html)!\>?: an ArrayList object, or null |
 
 ### putFloat
 
@@ -1184,7 +1184,7 @@ Inserts an ArrayList value into the mapping of this Bundle, replacing any existi
 | Parameters ||
 |---|---|
 | `key` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: a String, or null |
-| `value` | [ArrayList](../java/util/ArrayList.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>?: an ArrayList object, or null |
+| `value` | [ArrayList](../java.util/ArrayList.md)\< [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)!\>?: an ArrayList object, or null |
 
 ### putParcelable
 
@@ -1202,7 +1202,7 @@ Inserts a Parcelable value into the mapping of this Bundle, replacing any existi
 | Parameters ||
 |---|---|
 | `key` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: a String, or null |
-| `value` | [Parcelable](../android/os/Parcelable.md)?: a Parcelable object, or null |
+| `value` | [Parcelable](Parcelable.md)?: a Parcelable object, or null |
 
 ### putParcelableArray
 
@@ -1220,7 +1220,7 @@ Inserts an array of Parcelable values into the mapping of this Bundle, replacing
 | Parameters ||
 |---|---|
 | `key` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: a String, or null |
-| `value` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Parcelable](../android/os/Parcelable.md)!\>?: an array of Parcelable objects, or null |
+| `value` | [Array](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html)\< [Parcelable](Parcelable.md)!\>?: an array of Parcelable objects, or null |
 
 ### putParcelableArrayList
 
@@ -1238,7 +1238,7 @@ Inserts a List of Parcelable values into the mapping of this Bundle, replacing a
 | Parameters ||
 |---|---|
 | `key` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: a String, or null |
-| `value` | [ArrayList](../java/util/ArrayList.md)\<out [Parcelable](../android/os/Parcelable.md)!\>?: an ArrayList of Parcelable objects, or null |
+| `value` | [ArrayList](../java.util/ArrayList.md)\<out [Parcelable](Parcelable.md)!\>?: an ArrayList of Parcelable objects, or null |
 
 ### putSerializable
 
@@ -1256,7 +1256,7 @@ Inserts a Serializable value into the mapping of this Bundle, replacing any exis
 | Parameters ||
 |---|---|
 | `key` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: a String, or null |
-| `value` | [Serializable](../java/io/Serializable.md)?: a Serializable object, or null |
+| `value` | [Serializable](../java.io/Serializable.md)?: a Serializable object, or null |
 
 ### putShort
 
@@ -1310,7 +1310,7 @@ Inserts a Size value into the mapping of this Bundle, replacing any existing val
 | Parameters ||
 |---|---|
 | `key` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: a String, or null |
-| `value` | [Size](../android/util/Size.md)?: a Size object, or null |
+| `value` | [Size](../android.util/Size.md)?: a Size object, or null |
 
 ### putSizeF
 
@@ -1328,7 +1328,7 @@ Inserts a SizeF value into the mapping of this Bundle, replacing any existing va
 | Parameters ||
 |---|---|
 | `key` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: a String, or null |
-| `value` | [SizeF](../android/util/SizeF.md)?: a SizeF object, or null |
+| `value` | [SizeF](../android.util/SizeF.md)?: a SizeF object, or null |
 
 ### putSparseParcelableArray
 
@@ -1346,7 +1346,7 @@ Inserts a SparceArray of Parcelable values into the mapping of this Bundle, repl
 | Parameters ||
 |---|---|
 | `key` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: a String, or null |
-| `value` | [SparseArray](../android/util/SparseArray.md)\<out [Parcelable](../android/os/Parcelable.md)!\>?: a SparseArray of Parcelable objects, or null |
+| `value` | [SparseArray](../android.util/SparseArray.md)\<out [Parcelable](Parcelable.md)!\>?: a SparseArray of Parcelable objects, or null |
 
 ### putStringArrayList
 
@@ -1364,7 +1364,7 @@ Inserts an ArrayList value into the mapping of this Bundle, replacing any existi
 | Parameters ||
 |---|---|
 | `key` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)?: a String, or null |
-| `value` | [ArrayList](../java/util/ArrayList.md)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?: an ArrayList object, or null |
+| `value` | [ArrayList](../java.util/ArrayList.md)\< [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!\>?: an ArrayList object, or null |
 
 ### readFromParcel
 
@@ -1378,7 +1378,7 @@ Reads the Parcel contents into this Bundle, typically in order for it to be pass
 
 | Parameters ||
 |---|---|
-| `parcel` | [Parcel](../android/os/Parcel.md)!: The parcel to overwrite this bundle from. |
+| `parcel` | [Parcel](Parcel.md)!: The parcel to overwrite this bundle from. |
 
 ### remove
 
@@ -1406,7 +1406,7 @@ Changes the ClassLoader this Bundle uses when instantiating objects.
 
 | Parameters ||
 |---|---|
-| `loader` | [ClassLoader](../java/lang/ClassLoader.md)!: An explicit ClassLoader to use when instantiating objects inside of the Bundle. |
+| `loader` | [ClassLoader](../java.lang/ClassLoader.md)!: An explicit ClassLoader to use when instantiating objects inside of the Bundle. |
 
 ### toString
 
@@ -1439,7 +1439,7 @@ Writes the Bundle contents to a Parcel, typically in order for it to be passed t
 |---|---|
 | `dest` | The Parcel in which the object should be written. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. May be 0 or `https://developer.android.com/reference/kotlin/android/os/Parcelable#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int`. Value is either `0` or a combination of the following: - `https://developer.android.com/reference/kotlin/android/os/Parcelable#PARCELABLE_WRITE_RETURN_VALUE:kotlin.Int` |
-| `parcel` | [Parcel](../android/os/Parcel.md): The parcel to copy this bundle to. |
+| `parcel` | [Parcel](Parcel.md): The parcel to copy this bundle to. |
 | --- | --- |
 
 ## Properties

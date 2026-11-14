@@ -2,14 +2,14 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # CallEventCallback
 
-Kotlin | [Java](../android/telecom/CallEventCallback.md)
+Kotlin | [Java](CallEventCallback.md)
 | --- | --- |
 
 ```
 interface CallEventCallback
 ```
 
-| [android.telecom.CallEventCallback](../android/telecom/CallEventCallback.md) |
+| [android.telecom.CallEventCallback](CallEventCallback.md) |
 
 CallEventCallback relays call updates (that do not require any action) from the Telecom framework out to the application. This can include operations which the app must implement on a Call due to the presence of other calls on the device, requests relayed from a Bluetooth device, or from another calling surface.
 
@@ -40,7 +40,7 @@ Telecom is informing the client that the available `https://developer.android.co
 
 | Parameters ||
 |---|---|
-| `availableEndpoints` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [CallEndpoint](../android/telecom/CallEndpoint.md)!\>: The set of available `https://developer.android.com/reference/kotlin/android/telecom/CallEndpoint`s reported by Telecom. This value cannot be `null`. |
+| `availableEndpoints` | [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [CallEndpoint](CallEndpoint.md)!\>: The set of available `https://developer.android.com/reference/kotlin/android/telecom/CallEndpoint`s reported by Telecom. This value cannot be `null`. |
 
 ### onCallEndpointChanged
 
@@ -54,7 +54,7 @@ Telecom is informing the client the current `https://developer.android.com/refer
 
 | Parameters ||
 |---|---|
-| `newCallEndpoint` | [CallEndpoint](../android/telecom/CallEndpoint.md): The new `https://developer.android.com/reference/kotlin/android/telecom/CallEndpoint` through which call media flows (i.e. speaker, bluetooth, etc.). This value cannot be `null`. |
+| `newCallEndpoint` | [CallEndpoint](CallEndpoint.md): The new `https://developer.android.com/reference/kotlin/android/telecom/CallEndpoint` through which call media flows (i.e. speaker, bluetooth, etc.). This value cannot be `null`. |
 
 ### onCallStreamingFailed
 
@@ -86,7 +86,7 @@ Informs this `https://developer.android.com/reference/kotlin/android/telecom/Cal
 | Parameters ||
 |---|---|
 | `event` | [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html): a string event identifier agreed upon between a VoIP application and an `https://developer.android.com/reference/kotlin/android/telecom/InCallService` This value cannot be `null`. |
-| `extras` | [Bundle](../android/os/Bundle.md): a `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` containing information about the event, as agreed upon between a VoIP application and `https://developer.android.com/reference/kotlin/android/telecom/InCallService`. This value cannot be `null`. |
+| `extras` | [Bundle](../android.os/Bundle.md): a `https://developer.android.com/reference/kotlin/android/os/Bundle.html#` containing information about the event, as agreed upon between a VoIP application and `https://developer.android.com/reference/kotlin/android/telecom/InCallService`. This value cannot be `null`. |
 
 ### onMuteStateChanged
 

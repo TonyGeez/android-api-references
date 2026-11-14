@@ -19,7 +19,7 @@ Callback interface for receiving ranging session events.
 
 | Constants ||
 |----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REASON_LOCAL_REQUEST](../android/ranging/RangingSession.Callback.md) Indicates that the session was closed because [AutoCloseable.close()](../java/lang/AutoCloseable.md))or [RangingSession.stop()](../android/ranging/RangingSession.md))was called. |
+| static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REASON_LOCAL_REQUEST](../android/ranging/RangingSession.Callback.md) Indicates that the session was closed because [AutoCloseable.close()](../java.lang/AutoCloseable.md))or [RangingSession.stop()](RangingSession.md))was called. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REASON_NO_PEERS_FOUND](../android/ranging/RangingSession.Callback.md) Indicates that the session was closed because none of the specified peers were found. |
 | static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [REASON_REMOTE_REQUEST](../android/ranging/RangingSession.Callback.md) Indicates that the session was closed at the request of a remote peer. |
 | --- | --- |
@@ -34,9 +34,9 @@ Callback interface for receiving ranging session events.
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onOpenFailed](../android/ranging/RangingSession.Callback.md))`(`reason:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when the ranging session failed to open. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onOpened](../android/ranging/RangingSession.Callback.md))`()` Called when the ranging session opens successfully. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onResults](../android/ranging/RangingSession.Callback.md))`(`peer:` ` [RangingDevice](../android/ranging/RangingDevice.md)`, `data:` ` [RangingData](../android/ranging/RangingData.md)`)` Called when ranging data has been received from a peer. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStarted](../android/ranging/RangingSession.Callback.md))`(`peer:` ` [RangingDevice](../android/ranging/RangingDevice.md)`, `technology:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when ranging has started with a particular peer using a particular technology during an ongoing session. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStopped](../android/ranging/RangingSession.Callback.md))`(`peer:` ` [RangingDevice](../android/ranging/RangingDevice.md)`, `technology:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when ranging has stopped with a particular peer using a particular technology during an ongoing session. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onResults](../android/ranging/RangingSession.Callback.md))`(`peer:` ` [RangingDevice](RangingDevice.md)`, `data:` ` [RangingData](RangingData.md)`)` Called when ranging data has been received from a peer. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStarted](../android/ranging/RangingSession.Callback.md))`(`peer:` ` [RangingDevice](RangingDevice.md)`, `technology:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when ranging has started with a particular peer using a particular technology during an ongoing session. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onStopped](../android/ranging/RangingSession.Callback.md))`(`peer:` ` [RangingDevice](RangingDevice.md)`, `technology:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Called when ranging has stopped with a particular peer using a particular technology during an ongoing session. |
 | --- | --- |
 
 ## Constants
@@ -49,7 +49,7 @@ Added in [API level 36](https://developer.android.com/guide/topics/manifest/uses
 static val REASON_LOCAL_REQUEST: Int
 ```
 
-Indicates that the session was closed because [AutoCloseable.close()](../java/lang/AutoCloseable.md))or [RangingSession.stop()](../android/ranging/RangingSession.md))was called. 
+Indicates that the session was closed because [AutoCloseable.close()](../java.lang/AutoCloseable.md))or [RangingSession.stop()](RangingSession.md))was called. 
 
  Value: 1
 
@@ -168,8 +168,8 @@ Called when ranging data has been received from a peer.
 
 | Parameters ||
 |--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `peer` | [RangingDevice](../android/ranging/RangingDevice.md): [RangingDevice](../android/ranging/RangingDevice.md) the peer from which ranging data was received. This value cannot be`null`. |
-| `data` | [RangingData](../android/ranging/RangingData.md): [RangingData](../android/ranging/RangingData.md) the received. This value cannot be`null`. |
+| `peer` | [RangingDevice](RangingDevice.md): [RangingDevice](RangingDevice.md) the peer from which ranging data was received. This value cannot be`null`. |
+| `data` | [RangingData](RangingData.md): [RangingData](RangingData.md) the received. This value cannot be`null`. |
 
 ### onStarted
 
@@ -186,8 +186,8 @@ Called when ranging has started with a particular peer using a particular techno
 
 | Parameters ||
 |--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `peer` | [RangingDevice](../android/ranging/RangingDevice.md): [RangingDevice](../android/ranging/RangingDevice.md) the peer with which ranging has started. This value cannot be`null`. |
-| `technology` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):android.ranging.RangingManager.RangingTechnology the ranging technology that started. Value is [android.ranging.RangingManager#UWB](../android/ranging/RangingManager.md), [android.ranging.RangingManager#BLE_CS](../android/ranging/RangingManager.md), [android.ranging.RangingManager#WIFI_NAN_RTT](../android/ranging/RangingManager.md), [android.ranging.RangingManager#BLE_RSSI](../android/ranging/RangingManager.md), or [android.ranging.RangingManager#WIFI_STA_RTT](../android/ranging/RangingManager.md) |
+| `peer` | [RangingDevice](RangingDevice.md): [RangingDevice](RangingDevice.md) the peer with which ranging has started. This value cannot be`null`. |
+| `technology` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):android.ranging.RangingManager.RangingTechnology the ranging technology that started. Value is [android.ranging.RangingManager#UWB](RangingManager.md), [android.ranging.RangingManager#BLE_CS](RangingManager.md), [android.ranging.RangingManager#WIFI_NAN_RTT](RangingManager.md), [android.ranging.RangingManager#BLE_RSSI](RangingManager.md), or [android.ranging.RangingManager#WIFI_STA_RTT](RangingManager.md) |
 
 ### onStopped
 
@@ -204,5 +204,5 @@ Called when ranging has stopped with a particular peer using a particular techno
 
 | Parameters ||
 |--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `peer` | [RangingDevice](../android/ranging/RangingDevice.md): [RangingDevice](../android/ranging/RangingDevice.md) the peer with which ranging has stopped. This value cannot be`null`. |
-| `technology` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):android.ranging.RangingManager.RangingTechnology the ranging technology that stopped. Value is [android.ranging.RangingManager#UWB](../android/ranging/RangingManager.md), [android.ranging.RangingManager#BLE_CS](../android/ranging/RangingManager.md), [android.ranging.RangingManager#WIFI_NAN_RTT](../android/ranging/RangingManager.md), [android.ranging.RangingManager#BLE_RSSI](../android/ranging/RangingManager.md), or [android.ranging.RangingManager#WIFI_STA_RTT](../android/ranging/RangingManager.md) |
+| `peer` | [RangingDevice](RangingDevice.md): [RangingDevice](RangingDevice.md) the peer with which ranging has stopped. This value cannot be`null`. |
+| `technology` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):android.ranging.RangingManager.RangingTechnology the ranging technology that stopped. Value is [android.ranging.RangingManager#UWB](RangingManager.md), [android.ranging.RangingManager#BLE_CS](RangingManager.md), [android.ranging.RangingManager#WIFI_NAN_RTT](RangingManager.md), [android.ranging.RangingManager#BLE_RSSI](RangingManager.md), or [android.ranging.RangingManager#WIFI_STA_RTT](RangingManager.md) |

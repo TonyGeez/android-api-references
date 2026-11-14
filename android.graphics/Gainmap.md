@@ -2,7 +2,7 @@ Added in [API level 34](https://developer.android.com/guide/topics/manifest/uses
 
 # Gainmap
 
-Kotlin | [Java](../android/graphics/Gainmap.md)
+Kotlin | [Java](Gainmap.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ class Gainmap : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.graphics.Gainmap](../android/graphics/Gainmap.md) |
+| ↳ | [android.graphics.Gainmap](Gainmap.md) |
 
 Gainmap represents a mechanism for augmenting an SDR image to produce an HDR one with variable display adjustment capability. It is a combination of a set of metadata describing how to apply the gainmap, as well as either a 1 (such as `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.Config` or 3 (such as `https://developer.android.com/reference/kotlin/android/graphics/Bitmap.Config` with the alpha channel ignored) channel Bitmap that represents the gainmap data itself.
 
@@ -67,12 +67,12 @@ In the above math, log() is a natural logarithm and exp() is natural exponentiat
 | Public methods ||
 |---|---|
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Gainmap#describeContents()()` No special parcel contents. |
-| [ColorSpace](../android/graphics/ColorSpace.md)? | `https://developer.android.com/reference/kotlin/android/graphics/Gainmap#getAlternativeImagePrimaries()()` Gets the colorspace that the gainmap math should be applied in. |
+| [ColorSpace](ColorSpace.md)? | `https://developer.android.com/reference/kotlin/android/graphics/Gainmap#getAlternativeImagePrimaries()()` Gets the colorspace that the gainmap math should be applied in. |
 | [Float](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Gainmap#getDisplayRatioForFullHdr()()` Gets the hdr/sdr ratio at which point applying the gainmap results in an HDR rendition |
 | --- | --- |
 | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Gainmap#getEpsilonHdr()()` Gets the hdr epsilon. |
 | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Gainmap#getEpsilonSdr()()` Gets the sdr epsilon. |
-| [Bitmap](../android/graphics/Bitmap.md) | `https://developer.android.com/reference/kotlin/android/graphics/Gainmap#getGainmapContents()()` <br /> |
+| [Bitmap](Bitmap.md) | `https://developer.android.com/reference/kotlin/android/graphics/Gainmap#getGainmapContents()()` <br /> |
 | --- | --- |
 | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Gainmap#getGainmapDirection()()` Gets the direction that the gainmap math should be applied in. |
 | [FloatArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float-array/index.html) | `https://developer.android.com/reference/kotlin/android/graphics/Gainmap#getGamma()()` Gets the gainmap gamma. |
@@ -98,7 +98,7 @@ In the above math, log() is a natural logarithm and exp() is natural exponentiat
 
 | Properties ||
 |---|---|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [Gainmap](../android/graphics/Gainmap.md)!\> | `https://developer.android.com/reference/kotlin/android/graphics/Gainmap#CREATOR:android.os.Parcelable.Creator` <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [Gainmap](Gainmap.md)!\> | `https://developer.android.com/reference/kotlin/android/graphics/Gainmap#CREATOR:android.os.Parcelable.Creator` <br /> |
 
 ## Constants
 
@@ -152,7 +152,7 @@ It is strongly recommended that at least the ratio max and display ratio HDR are
 
 | Parameters ||
 |---|---|
-| `gainmapContents` | [Bitmap](../android/graphics/Bitmap.md): This value cannot be `null`. |
+| `gainmapContents` | [Bitmap](Bitmap.md): This value cannot be `null`. |
 
 ### Gainmap
 
@@ -168,8 +168,8 @@ Creates a new gainmap using the provided gainmap as the metadata source and the 
 
 | Parameters ||
 |---|---|
-| `gainmap` | [Gainmap](../android/graphics/Gainmap.md): This value cannot be `null`. |
-| `gainmapContents` | [Bitmap](../android/graphics/Bitmap.md): This value cannot be `null`. |
+| `gainmap` | [Gainmap](Gainmap.md): This value cannot be `null`. |
+| `gainmapContents` | [Bitmap](Bitmap.md): This value cannot be `null`. |
 
 ## Public methods
 
@@ -333,7 +333,7 @@ Sets the colorspace that the gainmap math should be applied in. Only the primari
 
 | Parameters ||
 |---|---|
-| `colorSpace` | [ColorSpace](../android/graphics/ColorSpace.md)?: This value may be `null`. |
+| `colorSpace` | [ColorSpace](ColorSpace.md)?: This value may be `null`. |
 
 ### setDisplayRatioForFullHdr
 
@@ -389,7 +389,7 @@ Sets the image data of the gainmap. This is the 1 or 3 channel enhancement layer
 
 | Parameters ||
 |---|---|
-| `bitmap` | [Bitmap](../android/graphics/Bitmap.md): The non-null bitmap to set as the gainmap's contents |
+| `bitmap` | [Bitmap](Bitmap.md): The non-null bitmap to set as the gainmap's contents |
 
 ### setGainmapDirection
 
@@ -476,7 +476,7 @@ Write the gainmap to the parcel.
 
 | Parameters ||
 |---|---|
-| `dest` | [Parcel](../android/os/Parcel.md): Parcel object to write the gainmap data into. This value cannot be `null`. |
+| `dest` | [Parcel](../android.os/Parcel.md): Parcel object to write the gainmap data into. This value cannot be `null`. |
 | `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): Additional flags about how the object should be written. |
 
 ## Properties

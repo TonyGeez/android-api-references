@@ -10,7 +10,7 @@ abstract class Transformer
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.xml.transform.Transformer](../javax/xml/transform/Transformer.md) |
+| ↳ | [javax.xml.transform.Transformer](Transformer.md) |
 
 An instance of this abstract class can transform a source tree into a result tree.
 
@@ -24,27 +24,27 @@ A`Transformer`may be used multiple times. Parameters and output properties are p
 
 | Protected constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Transformer](../javax/xml/transform/Transformer.md))`()` Default constructor is protected on purpose. |
+| [Transformer](Transformer.md))`()` Default constructor is protected on purpose. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearParameters](../javax/xml/transform/Transformer.md))`()` Clear all parameters set with setParameter. |
-| abstract [ErrorListener](../javax/xml/transform/ErrorListener.md)! | [getErrorListener](../javax/xml/transform/Transformer.md))`()` Get the error event handler in effect for the transformation. |
-| abstract [Properties](../java/util/Properties.md)! | [getOutputProperties](../javax/xml/transform/Transformer.md))`()` Get a copy of the output properties for the transformation. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearParameters](Transformer.md))`()` Clear all parameters set with setParameter. |
+| abstract [ErrorListener](ErrorListener.md)! | [getErrorListener](Transformer.md))`()` Get the error event handler in effect for the transformation. |
+| abstract [Properties](../java.util/Properties.md)! | [getOutputProperties](Transformer.md))`()` Get a copy of the output properties for the transformation. |
 | --- | --- |
-| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getOutputProperty](../javax/xml/transform/Transformer.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Get an output property that is in effect for the transformer. |
-| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getParameter](../javax/xml/transform/Transformer.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Get a parameter that was explicitly set with setParameter. |
-| abstract [URIResolver](../javax/xml/transform/URIResolver.md)! | [getURIResolver](../javax/xml/transform/Transformer.md))`()` Get an object that will be used to resolve URIs used in document(). |
+| abstract [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getOutputProperty](Transformer.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Get an output property that is in effect for the transformer. |
+| abstract [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)! | [getParameter](Transformer.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Get a parameter that was explicitly set with setParameter. |
+| abstract [URIResolver](URIResolver.md)! | [getURIResolver](Transformer.md))`()` Get an object that will be used to resolve URIs used in document(). |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](../javax/xml/transform/Transformer.md))`()` Reset this`Transformer`to its original configuration. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setErrorListener](../javax/xml/transform/Transformer.md))`(`listener:` ` [ErrorListener](../javax/xml/transform/ErrorListener.md)!`)` Set the error event listener in effect for the transformation. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOutputProperties](../javax/xml/transform/Transformer.md))`(`oformat:` ` [Properties](../java/util/Properties.md)!`)` Set the output properties for the transformation. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [reset](Transformer.md))`()` Reset this`Transformer`to its original configuration. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setErrorListener](Transformer.md))`(`listener:` ` [ErrorListener](ErrorListener.md)!`)` Set the error event listener in effect for the transformation. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOutputProperties](Transformer.md))`(`oformat:` ` [Properties](../java.util/Properties.md)!`)` Set the output properties for the transformation. |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOutputProperty](../javax/xml/transform/Transformer.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set an output property that will be in effect for the transformation. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setParameter](../javax/xml/transform/Transformer.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Add a parameter for the transformation. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setURIResolver](../javax/xml/transform/Transformer.md))`(`resolver:` ` [URIResolver](../javax/xml/transform/URIResolver.md)!`)` Set an object that will be used to resolve URIs used in document(). |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setOutputProperty](Transformer.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Set an output property that will be in effect for the transformation. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setParameter](Transformer.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `value:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)!`)` Add a parameter for the transformation. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [setURIResolver](Transformer.md))`(`resolver:` ` [URIResolver](URIResolver.md)!`)` Set an object that will be used to resolve URIs used in document(). |
 | --- | --- |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [transform](../javax/xml/transform/Transformer.md))`(`xmlSource:` ` [Source](../javax/xml/transform/Source.md)!`, `outputTarget:` ` [Result](../javax/xml/transform/Result.md)!`)` Transform the XML`Source`to a`Result`. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [transform](Transformer.md))`(`xmlSource:` ` [Source](Source.md)!`, `outputTarget:` ` [Result](Result.md)!`)` Transform the XML`Source`to a`Result`. |
 
 ## Protected constructors
 
@@ -82,7 +82,7 @@ Get the error event handler in effect for the transformation. Implementations mu
 
 | Return ||
 |----------------------------------------------------------------------------------------------------|--------------------------------------------------------|
-| [ErrorListener](../javax/xml/transform/ErrorListener.md)! | The current error handler, which should never be null. |
+| [ErrorListener](ErrorListener.md)! | The current error handler, which should never be null. |
 
 ### getOutputProperties
 
@@ -94,20 +94,20 @@ abstract fun getOutputProperties(): Properties!
 
 Get a copy of the output properties for the transformation.
 
-The properties returned should contain properties set by the user, and properties set by the stylesheet, and these properties are "defaulted" by default properties specified by [section 16 of the XSL Transformations (XSLT) W3C Recommendation](http://www.w3.org/TR/xslt#output). The properties that were specifically set by the user or the stylesheet should be in the base Properties list, while the XSLT default properties that were not specifically set should be the default Properties list. Thus, getOutputProperties().getProperty(String key) will obtain any property in that was set by [setOutputProperty](../javax/xml/transform/Transformer.md)), [setOutputProperties](../javax/xml/transform/Transformer.md)), in the stylesheet,*or* the default properties, while getOutputProperties().get(String key) will only retrieve properties that were explicitly set by [setOutputProperty](../javax/xml/transform/Transformer.md)), [setOutputProperties](../javax/xml/transform/Transformer.md)), or in the stylesheet.
+The properties returned should contain properties set by the user, and properties set by the stylesheet, and these properties are "defaulted" by default properties specified by [section 16 of the XSL Transformations (XSLT) W3C Recommendation](http://www.w3.org/TR/xslt#output). The properties that were specifically set by the user or the stylesheet should be in the base Properties list, while the XSLT default properties that were not specifically set should be the default Properties list. Thus, getOutputProperties().getProperty(String key) will obtain any property in that was set by [setOutputProperty](Transformer.md)), [setOutputProperties](Transformer.md)), in the stylesheet,*or* the default properties, while getOutputProperties().get(String key) will only retrieve properties that were explicitly set by [setOutputProperty](Transformer.md)), [setOutputProperties](Transformer.md)), or in the stylesheet.
 
 Note that mutation of the Properties object returned will not effect the properties that the transformer contains.
 
-If any of the argument keys are not recognized and are not namespace qualified, the property will be ignored and not returned. In other words the behavior is not orthogonal with [setOutputProperties](../javax/xml/transform/Transformer.md)).
+If any of the argument keys are not recognized and are not namespace qualified, the property will be ignored and not returned. In other words the behavior is not orthogonal with [setOutputProperties](Transformer.md)).
 
 | Return ||
 |------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|
-| [Properties](../java/util/Properties.md)! | A copy of the set of output properties in effect for the next transformation. |
+| [Properties](../java.util/Properties.md)! | A copy of the set of output properties in effect for the next transformation. |
 
 **See Also**
 
-- [javax.xml.transform.OutputKeys](../javax/xml/transform/OutputKeys.md)
-- [java.util.Properties](../java/util/Properties.md) 
+- [javax.xml.transform.OutputKeys](OutputKeys.md)
+- [java.util.Properties](../java.util/Properties.md) 
 
 ### getOutputProperty
 
@@ -133,7 +133,7 @@ Get an output property that is in effect for the transformer. The property speci
 
 **See Also**
 
-- [javax.xml.transform.OutputKeys](../javax/xml/transform/OutputKeys.md) 
+- [javax.xml.transform.OutputKeys](OutputKeys.md) 
 
 ### getParameter
 
@@ -167,7 +167,7 @@ Get an object that will be used to resolve URIs used in document().
 
 | Return ||
 |------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
-| [URIResolver](../javax/xml/transform/URIResolver.md)! | An object that implements the URIResolver interface, or null. |
+| [URIResolver](URIResolver.md)! | An object that implements the URIResolver interface, or null. |
 
 ### reset
 
@@ -179,9 +179,9 @@ open fun reset(): Unit
 
 Reset this`Transformer`to its original configuration.
 
-`Transformer`is reset to the same state as when it was created with [TransformerFactory.newTransformer()](../javax/xml/transform/TransformerFactory.md)), [TransformerFactory.newTransformer(Source source)](../javax/xml/transform/TransformerFactory.md))or [Templates.newTransformer()](../javax/xml/transform/Templates.md)).`reset()`is designed to allow the reuse of existing`Transformer`s thus saving resources associated with the creation of new`Transformer`s.
+`Transformer`is reset to the same state as when it was created with [TransformerFactory.newTransformer()](TransformerFactory.md)), [TransformerFactory.newTransformer(Source source)](TransformerFactory.md))or [Templates.newTransformer()](Templates.md)).`reset()`is designed to allow the reuse of existing`Transformer`s thus saving resources associated with the creation of new`Transformer`s.
 
-The reset`Transformer`is not guaranteed to have the same [URIResolver](../javax/xml/transform/URIResolver.md) or [ErrorListener](../javax/xml/transform/ErrorListener.md)`Object`s, e.g. [Object.equals(Object obj)](../java/lang/Object.md)). It is guaranteed to have a functionally equal`URIResolver`and`ErrorListener`. 
+The reset`Transformer`is not guaranteed to have the same [URIResolver](URIResolver.md) or [ErrorListener](ErrorListener.md)`Object`s, e.g. [Object.equals(Object obj)](../java.lang/Object.md)). It is guaranteed to have a functionally equal`URIResolver`and`ErrorListener`. 
 
 ### setErrorListener
 
@@ -195,7 +195,7 @@ Set the error event listener in effect for the transformation.
 
 | Parameters ||
 |------------|----------------------------------------------------------------------------------------------------------------------------|
-| `listener` | [ErrorListener](../javax/xml/transform/ErrorListener.md)!:The new error listener. |
+| `listener` | [ErrorListener](ErrorListener.md)!:The new error listener. |
 
 | Exceptions ||
 |--------------------------------------|----------------------|
@@ -220,12 +220,12 @@ An`IllegalArgumentException`is thrown if any of the argument keys are not recogn
 
 | Parameters ||
 |-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `oformat` | [Properties](../java/util/Properties.md)!:A set of output properties that will be used to override any of the same properties in affect for the transformation. |
+| `oformat` | [Properties](../java.util/Properties.md)!:A set of output properties that will be used to override any of the same properties in affect for the transformation. |
 
 **See Also**
 
-- [javax.xml.transform.OutputKeys](../javax/xml/transform/OutputKeys.md)
-- [java.util.Properties](../java/util/Properties.md) 
+- [javax.xml.transform.OutputKeys](OutputKeys.md)
+- [java.util.Properties](../java.util/Properties.md) 
 
 ### setOutputProperty
 
@@ -244,7 +244,7 @@ Pass a qualified property name as a two-part string, the namespace URI enclosed 
 
 For example, if a URI and local name were obtained from an element defined with \<xyz:foo xmlns:xyz="http://xyz.foo.com/yada/baz.html"/\>, then the qualified name would be "{http://xyz.foo.com/yada/baz.html}foo". Note that no prefix is used.
 
-The Properties object that was passed to [setOutputProperties](../javax/xml/transform/Transformer.md))won't be effected by calling this method.
+The Properties object that was passed to [setOutputProperties](Transformer.md))won't be effected by calling this method.
 
 | Parameters ||
 |---------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -257,7 +257,7 @@ The Properties object that was passed to [setOutputProperties](../javax/xml/tran
 
 **See Also**
 
-- [javax.xml.transform.OutputKeys](../javax/xml/transform/OutputKeys.md) 
+- [javax.xml.transform.OutputKeys](OutputKeys.md) 
 
 ### setParameter
 
@@ -299,7 +299,7 @@ If the resolver argument is null, the URIResolver value will be cleared and the 
 
 | Parameters ||
 |------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `resolver` | [URIResolver](../javax/xml/transform/URIResolver.md)!:An object that implements the URIResolver interface, or null. |
+| `resolver` | [URIResolver](URIResolver.md)!:An object that implements the URIResolver interface, or null. |
 
 ### transform
 
@@ -314,12 +314,12 @@ abstract fun transform(
 
 Transform the XML`Source`to a`Result`. Specific transformation behavior is determined by the settings of the`TransformerFactory`in effect when the`Transformer`was instantiated and any modifications made to the`Transformer`instance.
 
-An empty`Source`is represented as an empty document as constructed by [javax.xml.parsers.DocumentBuilder#newDocument()](../javax/xml/parsers/DocumentBuilder.md)). The result of transforming an empty`Source`depends on the transformation behavior; it is not always an empty`Result`.
+An empty`Source`is represented as an empty document as constructed by [javax.xml.parsers.DocumentBuilder#newDocument()](../javax.xml.parsers/DocumentBuilder.md)). The result of transforming an empty`Source`depends on the transformation behavior; it is not always an empty`Result`.
 
 | Parameters ||
 |----------------|---------------------------------------------------------------------------------------------------------------------------------|
-| `xmlSource` | [Source](../javax/xml/transform/Source.md)!:The XML input to transform. |
-| `outputTarget` | [Result](../javax/xml/transform/Result.md)!:The`Result`of transforming the`xmlSource`. |
+| `xmlSource` | [Source](Source.md)!:The XML input to transform. |
+| `outputTarget` | [Result](Result.md)!:The`Result`of transforming the`xmlSource`. |
 
 | Exceptions ||
 |--------------------------------------------|---------------------------------------------------------------------------|

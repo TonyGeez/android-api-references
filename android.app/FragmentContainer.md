@@ -5,7 +5,7 @@ Deprecated in [API level 28](https://developer.android.com/guide/topics/manifest
 
 # FragmentContainer
 
-Kotlin| [Java](../android/app/FragmentContainer.md) 
+Kotlin| [Java](FragmentContainer.md) 
 | --- | --- |
 
 ```
@@ -14,27 +14,27 @@ abstract class FragmentContainer
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.app.FragmentContainer](../android/app/FragmentContainer.md) |
+| ↳ | [android.app.FragmentContainer](FragmentContainer.md) |
 
-| Known Direct Subclasses [FragmentHostCallback](../android/app/FragmentHostCallback.md) |---------------------------------------------------------------------------------------------------------|--------------------------------------------| | [FragmentHostCallback](../android/app/FragmentHostCallback.md) | Integration points with the Fragment host. | |
+| Known Direct Subclasses [FragmentHostCallback](FragmentHostCallback.md) |---------------------------------------------------------------------------------------------------------|--------------------------------------------| | [FragmentHostCallback](FragmentHostCallback.md) | Integration points with the Fragment host. | |
 | --- | --- | --- | --- | --- | --- | --- |
 
 | **This class was deprecated in API level 28.**
 |
 | Use the [Support Library](https://developer.android.com/tools/extras/support-library.html) androidx.fragment.app.FragmentContainer.
 
-Callbacks to a [Fragment](../android/app/Fragment.md)'s container.
+Callbacks to a [Fragment](Fragment.md)'s container.
 
 ## Summary
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------|---|
-| [FragmentContainer](../android/app/FragmentContainer.md))`()` <br /> |
+| [FragmentContainer](FragmentContainer.md))`()` <br /> |
 
 | Public methods ||
 |--------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstractT? | [onFindViewById](../android/app/FragmentContainer.md))`(`id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the view with the given resource ID. |
-| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onHasView](../android/app/FragmentContainer.md))`()` Return`true`if the container holds any view. |
+| abstractT? | [onFindViewById](FragmentContainer.md))`(`id:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Return the view with the given resource ID. |
+| abstract [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [onHasView](FragmentContainer.md))`()` Return`true`if the container holds any view. |
 
 ## Public constructors
 

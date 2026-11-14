@@ -19,7 +19,7 @@ The listener used to indicate the user has finished selecting a date.
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDateSet](../android/app/DatePickerDialog.OnDateSetListener.md))`(`view:` ` [DatePicker](../android/widget/DatePicker.md)!`, `year:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `month:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dayOfMonth:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onDateSet](../android/app/DatePickerDialog.OnDateSetListener.md))`(`view:` ` [DatePicker](../android.widget/DatePicker.md)!`, `year:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `month:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `dayOfMonth:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` <br /> |
 
 ## Public methods
 
@@ -38,8 +38,8 @@ abstract fun onDateSet(
 
 | Parameters ||
 |--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `view` | [DatePicker](../android/widget/DatePicker.md)!:the picker associated with the dialog |
+| `view` | [DatePicker](../android.widget/DatePicker.md)!:the picker associated with the dialog |
 | `year` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the selected year |
-| `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the selected month (0-11 for compatibility with [Calendar.MONTH](../java/util/Calendar.md)) |
+| `month` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the selected month (0-11 for compatibility with [Calendar.MONTH](../java.util/Calendar.md)) |
 | --- | --- |
 | `dayOfMonth` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the selected day of the month (1-31, depending on month) |

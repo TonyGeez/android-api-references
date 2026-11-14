@@ -10,7 +10,7 @@ abstract class AlgorithmParameterGeneratorSpi
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.AlgorithmParameterGeneratorSpi](../java/security/AlgorithmParameterGeneratorSpi.md) |
+| ↳ | [java.security.AlgorithmParameterGeneratorSpi](AlgorithmParameterGeneratorSpi.md) |
 
 This class defines the*Service Provider Interface* (**SPI** ) for the`AlgorithmParameterGenerator`class, which is used to generate a set of parameters to be used with a certain algorithm.
 
@@ -22,13 +22,13 @@ In case the client does not explicitly initialize the AlgorithmParameterGenerato
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [AlgorithmParameterGeneratorSpi](../java/security/AlgorithmParameterGeneratorSpi.md))`()` <br /> |
+| [AlgorithmParameterGeneratorSpi](AlgorithmParameterGeneratorSpi.md))`()` <br /> |
 
 | Protected methods ||
 |------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [AlgorithmParameters](../java/security/AlgorithmParameters.md)! | [engineGenerateParameters](../java/security/AlgorithmParameterGeneratorSpi.md))`()` Generates the parameters. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](../java/security/AlgorithmParameterGeneratorSpi.md))`(`size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `random:` ` [SecureRandom](../java/security/SecureRandom.md)!`)` Initializes this parameter generator for a certain size and source of randomness. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](../java/security/AlgorithmParameterGeneratorSpi.md))`(`genParamSpec:` ` [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)!`, `random:` ` [SecureRandom](../java/security/SecureRandom.md)!`)` Initializes this parameter generator with a set of algorithm-specific parameter generation values. |
+| abstract [AlgorithmParameters](AlgorithmParameters.md)! | [engineGenerateParameters](AlgorithmParameterGeneratorSpi.md))`()` Generates the parameters. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](AlgorithmParameterGeneratorSpi.md))`(`size:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `random:` ` [SecureRandom](SecureRandom.md)!`)` Initializes this parameter generator for a certain size and source of randomness. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [engineInit](AlgorithmParameterGeneratorSpi.md))`(`genParamSpec:` ` [AlgorithmParameterSpec](../java.security.spec/AlgorithmParameterSpec.md)!`, `random:` ` [SecureRandom](SecureRandom.md)!`)` Initializes this parameter generator with a set of algorithm-specific parameter generation values. |
 | --- | --- |
 
 ## Public constructors
@@ -55,7 +55,7 @@ Generates the parameters.
 
 | Return ||
 |----------------------------------------------------------------------------------------------------------|-------------------------------------|
-| [AlgorithmParameters](../java/security/AlgorithmParameters.md)! | the new AlgorithmParameters object. |
+| [AlgorithmParameters](AlgorithmParameters.md)! | the new AlgorithmParameters object. |
 
 ### engineInit
 
@@ -73,7 +73,7 @@ Initializes this parameter generator for a certain size and source of randomness
 | Parameters ||
 |----------|----------------------------------------------------------------------------------------------------------------------|
 | `size` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):the size (number of bits). |
-| `random` | [SecureRandom](../java/security/SecureRandom.md)!:the source of randomness. |
+| `random` | [SecureRandom](SecureRandom.md)!:the source of randomness. |
 
 ### engineInit
 
@@ -90,8 +90,8 @@ Initializes this parameter generator with a set of algorithm-specific parameter 
 
 | Parameters ||
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `genParamSpec` | [AlgorithmParameterSpec](../java/security/spec/AlgorithmParameterSpec.md)!:the set of algorithm-specific parameter generation values. |
-| `random` | [SecureRandom](../java/security/SecureRandom.md)!:the source of randomness. |
+| `genParamSpec` | [AlgorithmParameterSpec](../java.security.spec/AlgorithmParameterSpec.md)!:the set of algorithm-specific parameter generation values. |
+| `random` | [SecureRandom](SecureRandom.md)!:the source of randomness. |
 
 | Exceptions ||
 |----------------------------------------------------|------------------------------------------------------------------------------------------|

@@ -4,25 +4,25 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 
 # VolumeAutomation
 
-Kotlin| [Java](../android/media/VolumeAutomation.md) 
+Kotlin| [Java](VolumeAutomation.md) 
 | --- | --- |
 
 ```
 interface VolumeAutomation
 ```
 
-| [android.media.VolumeAutomation](../android/media/VolumeAutomation.md) |
+| [android.media.VolumeAutomation](VolumeAutomation.md) |
 
-| Known Direct Subclasses [AudioTrack](../android/media/AudioTrack.md), [MediaPlayer](../android/media/MediaPlayer.md) |-----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------| | [AudioTrack](../android/media/AudioTrack.md) | The AudioTrack class manages and plays a single audio resource for Java applications. | | [MediaPlayer](../android/media/MediaPlayer.md) | MediaPlayer class can be used to control playback of audio/video files and streams. | |
+| Known Direct Subclasses [AudioTrack](AudioTrack.md), [MediaPlayer](MediaPlayer.md) |-----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------| | [AudioTrack](AudioTrack.md) | The AudioTrack class manages and plays a single audio resource for Java applications. | | [MediaPlayer](MediaPlayer.md) | MediaPlayer class can be used to control playback of audio/video files and streams. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
-`VolumeAutomation`defines an interface for automatic volume control of [AudioTrack](../android/media/AudioTrack.md) and [MediaPlayer](../android/media/MediaPlayer.md) objects.
+`VolumeAutomation`defines an interface for automatic volume control of [AudioTrack](AudioTrack.md) and [MediaPlayer](MediaPlayer.md) objects.
 
 ## Summary
 
 | Public methods ||
 |---------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [VolumeShaper](../android/media/VolumeShaper.md) | [createVolumeShaper](../android/media/VolumeAutomation.md))`(`configuration:` ` [VolumeShaper.Configuration](../android/media/VolumeShaper.Configuration.md)`)` Returns a [VolumeShaper](../android/media/VolumeShaper.md) object that can be used modify the volume envelope of the player or track. |
+| abstract [VolumeShaper](VolumeShaper.md) | [createVolumeShaper](VolumeAutomation.md))`(`configuration:` ` [VolumeShaper.Configuration](../android/media/VolumeShaper.Configuration.md)`)` Returns a [VolumeShaper](VolumeShaper.md) object that can be used modify the volume envelope of the player or track. |
 
 ## Public methods
 
@@ -34,7 +34,7 @@ Added in [API level 26](https://developer.android.com/guide/topics/manifest/uses
 abstract fun createVolumeShaper(configuration: VolumeShaper.Configuration): VolumeShaper
 ```
 
-Returns a [VolumeShaper](../android/media/VolumeShaper.md) object that can be used modify the volume envelope of the player or track.
+Returns a [VolumeShaper](VolumeShaper.md) object that can be used modify the volume envelope of the player or track.
 
 | Parameters ||
 |-----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -42,7 +42,7 @@ Returns a [VolumeShaper](../android/media/VolumeShaper.md) object that can be us
 
 | Return ||
 |-------------------------------------------------------------------------------------------|---------------------------------------------------|
-| [VolumeShaper](../android/media/VolumeShaper.md) | a`VolumeShaper`object This value cannot be`null`. |
+| [VolumeShaper](VolumeShaper.md) | a`VolumeShaper`object This value cannot be`null`. |
 
 | Exceptions ||
 |--------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|

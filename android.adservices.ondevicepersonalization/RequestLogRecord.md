@@ -4,7 +4,7 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 
 # RequestLogRecord
 
-Kotlin| [Java](../android/adservices/ondevicepersonalization/RequestLogRecord.md) 
+Kotlin| [Java](RequestLogRecord.md) 
 | --- | --- |
 
 ```
@@ -13,34 +13,34 @@ class RequestLogRecord : Parcelable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.adservices.ondevicepersonalization.RequestLogRecord](../android/adservices/ondevicepersonalization/RequestLogRecord.md) |
+| ↳ | [android.adservices.ondevicepersonalization.RequestLogRecord](RequestLogRecord.md) |
 
-Contains data that will be written to the REQUESTS table at the end of a call to [IsolatedWorker.onExecute(ExecuteInput, android.os.OutcomeReceiver)](../android/adservices/ondevicepersonalization/IsolatedWorker.md)). A single [RequestLogRecord](../android/adservices/ondevicepersonalization/RequestLogRecord.md) is appended to the REQUESTS table if it is present in the output of one of the methods in [IsolatedWorker](../android/adservices/ondevicepersonalization/IsolatedWorker.md). The contents of the REQUESTS table can be consumed by Federated Learning facilitated model training, or Federated Analytics facilitated cross-device statistical analysis.
+Contains data that will be written to the REQUESTS table at the end of a call to [IsolatedWorker.onExecute(ExecuteInput, android.os.OutcomeReceiver)](IsolatedWorker.md)). A single [RequestLogRecord](RequestLogRecord.md) is appended to the REQUESTS table if it is present in the output of one of the methods in [IsolatedWorker](IsolatedWorker.md). The contents of the REQUESTS table can be consumed by Federated Learning facilitated model training, or Federated Analytics facilitated cross-device statistical analysis.
 
 ## Summary
 
 | Nested classes ||
 |---|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| | [Builder](../android/adservices/ondevicepersonalization/RequestLogRecord.Builder.md) A builder for [RequestLogRecord](../android/adservices/ondevicepersonalization/RequestLogRecord.md) |
+| | [Builder](../android/adservices/ondevicepersonalization/RequestLogRecord.Builder.md) A builder for [RequestLogRecord](RequestLogRecord.md) |
 
 | Inherited constants ||
 |---|---|
-| From class [Parcelable](../android/os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android/os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android/os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
+| From class [Parcelable](../android.os/Parcelable.md) |----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) <br /> Descriptor bit used with [describeContents()](../android.os/Parcelable.md)): indicates that the Parcelable object's flattened representation includes a file descriptor. <br /> | | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md) <br /> Flag for use with [writeToParcel](../android.os/Parcelable.md)): the object being written is a return value, that is the result of a function such as "`Parcelable someFunction()`", "`void someFunction(out Parcelable)`", or "`void someFunction(inout Parcelable)`". Some implementations may want to release resources at this point. <br /> | ||
 
 | Public methods ||
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](../android/adservices/ondevicepersonalization/RequestLogRecord.md))`()` <br /> |
-| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](../android/adservices/ondevicepersonalization/RequestLogRecord.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ContentValues](../android/content/ContentValues.md)!\> | [getRows](../android/adservices/ondevicepersonalization/RequestLogRecord.md))`()` A List of rows, each containing a [ContentValues](../android/content/ContentValues.md). |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [describeContents](RequestLogRecord.md))`()` <br /> |
+| [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [equals](RequestLogRecord.md))`(`other:` ` [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html)?`)` Indicates whether some other object is "equal to" this one. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [ContentValues](../android.content/ContentValues.md)!\> | [getRows](RequestLogRecord.md))`()` A List of rows, each containing a [ContentValues](../android.content/ContentValues.md). |
 | --- | --- |
-| [Instant](../java/time/Instant.md) | [getTime](../android/adservices/ondevicepersonalization/RequestLogRecord.md))`()` Returns the timestamp of this record. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](../android/adservices/ondevicepersonalization/RequestLogRecord.md))`()` <br /> |
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](../android/adservices/ondevicepersonalization/RequestLogRecord.md))`(`dest:` ` [Parcel](../android/os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
+| [Instant](../java.time/Instant.md) | [getTime](RequestLogRecord.md))`()` Returns the timestamp of this record. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [hashCode](RequestLogRecord.md))`()` <br /> |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [writeToParcel](RequestLogRecord.md))`(`dest:` ` [Parcel](../android.os/Parcel.md)`, `flags:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Flatten this object in to a Parcel. |
 | --- | --- |
 
 | Properties ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [RequestLogRecord](../android/adservices/ondevicepersonalization/RequestLogRecord.md)!\> | [CREATOR](../android/adservices/ondevicepersonalization/RequestLogRecord.md) <br /> |
+| static [Parcelable.Creator](../android/os/Parcelable.Creator.md)\< [RequestLogRecord](RequestLogRecord.md)!\> | [CREATOR](RequestLogRecord.md) <br /> |
 
 ## Public methods
 
@@ -54,7 +54,7 @@ fun describeContents(): Int
 
 | Return ||
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android/os/Parcelable.md) |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | a bitmask indicating the set of special object types marshaled by this Parcelable object instance. Value is either`0`or [android.os.Parcelable#CONTENTS_FILE_DESCRIPTOR](../android.os/Parcelable.md) |
 
 ### equals
 
@@ -93,11 +93,11 @@ Added in [API level 35](https://developer.android.com/guide/topics/manifest/uses
 fun getRows(): MutableList<ContentValues!>
 ```
 
-A List of rows, each containing a [ContentValues](../android/content/ContentValues.md).
+A List of rows, each containing a [ContentValues](../android.content/ContentValues.md).
 
 | Return ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [ContentValues](../android/content/ContentValues.md)!> | This value cannot be`null`. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)< [ContentValues](../android.content/ContentValues.md)!> | This value cannot be`null`. |
 
 ### getTime
 
@@ -111,7 +111,7 @@ Returns the timestamp of this record.
 
 | Return ||
 |-----------------------------------------------------------------------------------|-----------------------------|
-| [Instant](../java/time/Instant.md) | This value cannot be`null`. |
+| [Instant](../java.time/Instant.md) | This value cannot be`null`. |
 
 ### hashCode
 
@@ -140,8 +140,8 @@ Flatten this object in to a Parcel.
 
 | Parameters ||
 |---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `dest` | [Parcel](../android/os/Parcel.md):This value cannot be`null`. |
-| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android/os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
+| `dest` | [Parcel](../android.os/Parcel.md):This value cannot be`null`. |
+| `flags` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):Additional flags about how the object should be written. May be 0 or [PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md). Value is either`0`or a combination of [android.os.Parcelable#PARCELABLE_WRITE_RETURN_VALUE](../android.os/Parcelable.md), and android.os.Parcelable.PARCELABLE_ELIDE_DUPLICATES |
 
 ## Properties
 

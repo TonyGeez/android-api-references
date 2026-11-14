@@ -10,7 +10,7 @@ open class AtomicStampedReference<V : Any!>
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.util.concurrent.atomic.AtomicStampedReference](../java/util/concurrent/atomic/AtomicStampedReference.md) |
+| ↳ | [java.util.concurrent.atomic.AtomicStampedReference](AtomicStampedReference.md) |
 
 An`AtomicStampedReference`maintains an object reference along with an integer "stamp", that can be updated atomically.
 
@@ -20,19 +20,19 @@ Implementation note: This implementation maintains stamped references by creatin
 
 | Public constructors ||
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [AtomicStampedReference](../java/util/concurrent/atomic/AtomicStampedReference.md))`(`initialRef:` `V`, `initialStamp:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a new`AtomicStampedReference`with the given initial values. |
+| [AtomicStampedReference](AtomicStampedReference.md))`(`initialRef:` `V`, `initialStamp:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates a new`AtomicStampedReference`with the given initial values. |
 
 | Public methods ||
 |----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [attemptStamp](../java/util/concurrent/atomic/AtomicStampedReference.md))`(`expectedReference:` `V`, `newStamp:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Atomically sets the value of the stamp to the given update value if the current reference is`==`to the expected reference. |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [compareAndSet](../java/util/concurrent/atomic/AtomicStampedReference.md))`(`expectedReference:` `V`, `newReference:` `V`, `expectedStamp:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `newStamp:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Atomically sets the value of both the reference and stamp to the given update values if the current reference is`==`to the expected reference and the current stamp is equal to the expected stamp. |
-| openV | [get](../java/util/concurrent/atomic/AtomicStampedReference.md))`(`stampHolder:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` Returns the current values of both the reference and the stamp. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [attemptStamp](AtomicStampedReference.md))`(`expectedReference:` `V`, `newStamp:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Atomically sets the value of the stamp to the given update value if the current reference is`==`to the expected reference. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [compareAndSet](AtomicStampedReference.md))`(`expectedReference:` `V`, `newReference:` `V`, `expectedStamp:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `newStamp:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Atomically sets the value of both the reference and stamp to the given update values if the current reference is`==`to the expected reference and the current stamp is equal to the expected stamp. |
+| openV | [get](AtomicStampedReference.md))`(`stampHolder:` ` [IntArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html)!`)` Returns the current values of both the reference and the stamp. |
 | --- | --- |
-| openV | [getReference](../java/util/concurrent/atomic/AtomicStampedReference.md))`()` Returns the current value of the reference. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStamp](../java/util/concurrent/atomic/AtomicStampedReference.md))`()` Returns the current value of the stamp. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [set](../java/util/concurrent/atomic/AtomicStampedReference.md))`(`newReference:` `V`, `newStamp:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Unconditionally sets the value of both the reference and stamp. |
+| openV | [getReference](AtomicStampedReference.md))`()` Returns the current value of the reference. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getStamp](AtomicStampedReference.md))`()` Returns the current value of the stamp. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [set](AtomicStampedReference.md))`(`newReference:` `V`, `newStamp:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Unconditionally sets the value of both the reference and stamp. |
 | --- | --- |
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [weakCompareAndSet](../java/util/concurrent/atomic/AtomicStampedReference.md))`(`expectedReference:` `V`, `newReference:` `V`, `expectedStamp:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `newStamp:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Atomically sets the value of both the reference and stamp to the given update values if the current reference is`==`to the expected reference and the current stamp is equal to the expected stamp. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [weakCompareAndSet](AtomicStampedReference.md))`(`expectedReference:` `V`, `newReference:` `V`, `expectedStamp:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `newStamp:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Atomically sets the value of both the reference and stamp to the given update values if the current reference is`==`to the expected reference and the current stamp is equal to the expected stamp. |
 
 ## Public constructors
 

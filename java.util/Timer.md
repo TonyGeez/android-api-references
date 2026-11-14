@@ -10,7 +10,7 @@ open class Timer
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.util.Timer](../java/util/Timer.md) |
+| ↳ | [java.util.Timer](Timer.md) |
 
 A facility for threads to schedule tasks for future execution in a background thread. Tasks may be scheduled for one-time execution, or for repeated execution at regular intervals.
 
@@ -34,23 +34,23 @@ Implementation note: All constructors start a timer thread.
 
 | Public constructors ||
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [Timer](../java/util/Timer.md))`()` Creates a new timer. |
-| [Timer](../java/util/Timer.md))`(`isDaemon:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Creates a new timer whose associated thread may be specified to [run as a daemon](../java/lang/Thread.md)). |
-| [Timer](../java/util/Timer.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a new timer whose associated thread has the specified name. |
-| [Timer](../java/util/Timer.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `isDaemon:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Creates a new timer whose associated thread has the specified name, and may be specified to [run as a daemon](../java/lang/Thread.md)). |
+| [Timer](Timer.md))`()` Creates a new timer. |
+| [Timer](Timer.md))`(`isDaemon:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Creates a new timer whose associated thread may be specified to [run as a daemon](../java.lang/Thread.md)). |
+| [Timer](Timer.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates a new timer whose associated thread has the specified name. |
+| [Timer](Timer.md))`(`name:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `isDaemon:` ` [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html)`)` Creates a new timer whose associated thread has the specified name, and may be specified to [run as a daemon](../java.lang/Thread.md)). |
 
 | Public methods ||
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [cancel](../java/util/Timer.md))`()` Terminates this timer, discarding any currently scheduled tasks. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [purge](../java/util/Timer.md))`()` Removes all cancelled tasks from this timer's task queue. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [schedule](../java/util/Timer.md))`(`task:` ` [TimerTask](../java/util/TimerTask.md)!`, `time:` ` [Date](../java/util/Date.md)!`)` Schedules the specified task for execution at the specified time. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [cancel](Timer.md))`()` Terminates this timer, discarding any currently scheduled tasks. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [purge](Timer.md))`()` Removes all cancelled tasks from this timer's task queue. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [schedule](Timer.md))`(`task:` ` [TimerTask](TimerTask.md)!`, `time:` ` [Date](Date.md)!`)` Schedules the specified task for execution at the specified time. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [schedule](../java/util/Timer.md))`(`task:` ` [TimerTask](../java/util/TimerTask.md)!`, `firstTime:` ` [Date](../java/util/Date.md)!`, `period:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Schedules the specified task for repeated*fixed-delay execution*, beginning at the specified time. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [schedule](../java/util/Timer.md))`(`task:` ` [TimerTask](../java/util/TimerTask.md)!`, `delay:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Schedules the specified task for execution after the specified delay. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [schedule](../java/util/Timer.md))`(`task:` ` [TimerTask](../java/util/TimerTask.md)!`, `delay:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `period:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Schedules the specified task for repeated*fixed-delay execution*, beginning after the specified delay. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [schedule](Timer.md))`(`task:` ` [TimerTask](TimerTask.md)!`, `firstTime:` ` [Date](Date.md)!`, `period:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Schedules the specified task for repeated*fixed-delay execution*, beginning at the specified time. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [schedule](Timer.md))`(`task:` ` [TimerTask](TimerTask.md)!`, `delay:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Schedules the specified task for execution after the specified delay. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [schedule](Timer.md))`(`task:` ` [TimerTask](TimerTask.md)!`, `delay:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `period:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Schedules the specified task for repeated*fixed-delay execution*, beginning after the specified delay. |
 | --- | --- |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [scheduleAtFixedRate](../java/util/Timer.md))`(`task:` ` [TimerTask](../java/util/TimerTask.md)!`, `firstTime:` ` [Date](../java/util/Date.md)!`, `period:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Schedules the specified task for repeated*fixed-rate execution*, beginning at the specified time. |
-| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [scheduleAtFixedRate](../java/util/Timer.md))`(`task:` ` [TimerTask](../java/util/TimerTask.md)!`, `delay:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `period:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Schedules the specified task for repeated*fixed-rate execution*, beginning after the specified delay. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [scheduleAtFixedRate](Timer.md))`(`task:` ` [TimerTask](TimerTask.md)!`, `firstTime:` ` [Date](Date.md)!`, `period:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Schedules the specified task for repeated*fixed-rate execution*, beginning at the specified time. |
+| open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [scheduleAtFixedRate](Timer.md))`(`task:` ` [TimerTask](TimerTask.md)!`, `delay:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`, `period:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Schedules the specified task for repeated*fixed-rate execution*, beginning after the specified delay. |
 
 ## Public constructors
 
@@ -62,7 +62,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 Timer()
 ```
 
-Creates a new timer. The associated thread does*not* [run as a daemon](../java/lang/Thread.md)). 
+Creates a new timer. The associated thread does*not* [run as a daemon](../java.lang/Thread.md)). 
 
 ### Timer
 
@@ -72,7 +72,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 Timer(isDaemon: Boolean)
 ```
 
-Creates a new timer whose associated thread may be specified to [run as a daemon](../java/lang/Thread.md)). A daemon thread is called for if the timer will be used to schedule repeating "maintenance activities", which must be performed as long as the application is running, but should not prolong the lifetime of the application.
+Creates a new timer whose associated thread may be specified to [run as a daemon](../java.lang/Thread.md)). A daemon thread is called for if the timer will be used to schedule repeating "maintenance activities", which must be performed as long as the application is running, but should not prolong the lifetime of the application.
 
 | Parameters ||
 |------------|------------------------------------------------------------------------------------------------------------------------------------------|
@@ -86,7 +86,7 @@ Added in [API level 1](https://developer.android.com/guide/topics/manifest/uses-
 Timer(name: String!)
 ```
 
-Creates a new timer whose associated thread has the specified name. The associated thread does*not* [run as a daemon](../java/lang/Thread.md)).
+Creates a new timer whose associated thread has the specified name. The associated thread does*not* [run as a daemon](../java.lang/Thread.md)).
 
 | Parameters ||
 |--------|---------------------------------------------------------------------------------------------------------------------|
@@ -106,7 +106,7 @@ Timer(
     isDaemon: Boolean)
 ```
 
-Creates a new timer whose associated thread has the specified name, and may be specified to [run as a daemon](../java/lang/Thread.md)).
+Creates a new timer whose associated thread has the specified name, and may be specified to [run as a daemon](../java.lang/Thread.md)).
 
 | Parameters ||
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------|
@@ -166,8 +166,8 @@ Schedules the specified task for execution at the specified time. If the time is
 
 | Parameters ||
 |--------|--------------------------------------------------------------------------------------------------------------|
-| `task` | [TimerTask](../java/util/TimerTask.md)!:task to be scheduled. |
-| `time` | [Date](../java/util/Date.md)!:time at which task is to be executed. |
+| `task` | [TimerTask](TimerTask.md)!:task to be scheduled. |
+| `time` | [Date](Date.md)!:time at which task is to be executed. |
 
 | Exceptions ||
 |--------------------------------------|----------------------------------------------------------------------------------------------|
@@ -196,8 +196,8 @@ Fixed-delay execution is appropriate for recurring activities that require "smoo
 
 | Parameters ||
 |-------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| `task` | [TimerTask](../java/util/TimerTask.md)!:task to be scheduled. |
-| `firstTime` | [Date](../java/util/Date.md)!:First time at which task is to be executed. |
+| `task` | [TimerTask](TimerTask.md)!:task to be scheduled. |
+| `firstTime` | [Date](Date.md)!:First time at which task is to be executed. |
 | `period` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):time in milliseconds between successive task executions. |
 | --- | --- |
 
@@ -223,7 +223,7 @@ Schedules the specified task for execution after the specified delay.
 
 | Parameters ||
 |---------|-----------------------------------------------------------------------------------------------------------------------------------|
-| `task` | [TimerTask](../java/util/TimerTask.md)!:task to be scheduled. |
+| `task` | [TimerTask](TimerTask.md)!:task to be scheduled. |
 | `delay` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):delay in milliseconds before task is to be executed. |
 
 | Exceptions ||
@@ -253,7 +253,7 @@ Fixed-delay execution is appropriate for recurring activities that require "smoo
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------------------------------|
-| `task` | [TimerTask](../java/util/TimerTask.md)!:task to be scheduled. |
+| `task` | [TimerTask](TimerTask.md)!:task to be scheduled. |
 | `delay` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):delay in milliseconds before task is to be executed. |
 | `period` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):time in milliseconds between successive task executions. |
 | --- | --- |
@@ -285,8 +285,8 @@ Fixed-rate execution is appropriate for recurring activities that are sensitive 
 
 | Parameters ||
 |-------------|---------------------------------------------------------------------------------------------------------------------------------------|
-| `task` | [TimerTask](../java/util/TimerTask.md)!:task to be scheduled. |
-| `firstTime` | [Date](../java/util/Date.md)!:First time at which task is to be executed. |
+| `task` | [TimerTask](TimerTask.md)!:task to be scheduled. |
+| `firstTime` | [Date](Date.md)!:First time at which task is to be executed. |
 | `period` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):time in milliseconds between successive task executions. |
 | --- | --- |
 
@@ -317,7 +317,7 @@ Fixed-rate execution is appropriate for recurring activities that are sensitive 
 
 | Parameters ||
 |----------|---------------------------------------------------------------------------------------------------------------------------------------|
-| `task` | [TimerTask](../java/util/TimerTask.md)!:task to be scheduled. |
+| `task` | [TimerTask](TimerTask.md)!:task to be scheduled. |
 | `delay` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):delay in milliseconds before task is to be executed. |
 | `period` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):time in milliseconds between successive task executions. |
 | --- | --- |

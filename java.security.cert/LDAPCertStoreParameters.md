@@ -10,11 +10,11 @@ open class LDAPCertStoreParameters : CertStoreParameters
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [java.security.cert.LDAPCertStoreParameters](../java/security/cert/LDAPCertStoreParameters.md) |
+| ↳ | [java.security.cert.LDAPCertStoreParameters](LDAPCertStoreParameters.md) |
 
 Parameters used as input for the LDAP`CertStore`algorithm.
 
-This class is used to provide necessary configuration parameters (server name and port number) to implementations of the LDAP`CertStore`algorithm. However, if you are retrieving certificates or CRLs from an ldap URI as specified by RFC 5280, use the [URICertStoreParameters](../java/security/cert/URICertStoreParameters.md) instead as the URI may contain additional information such as the distinguished name that will help the LDAP CertStore find the specific certificates and CRLs.
+This class is used to provide necessary configuration parameters (server name and port number) to implementations of the LDAP`CertStore`algorithm. However, if you are retrieving certificates or CRLs from an ldap URI as specified by RFC 5280, use the [URICertStoreParameters](URICertStoreParameters.md) instead as the URI may contain additional information such as the distinguished name that will help the LDAP CertStore find the specific certificates and CRLs.
 
 **Concurrent Access**
 
@@ -24,17 +24,17 @@ Unless otherwise specified, the methods defined in this class are not thread-saf
 
 | Public constructors ||
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [LDAPCertStoreParameters](../java/security/cert/LDAPCertStoreParameters.md))`()` Creates an instance of`LDAPCertStoreParameters`with the default parameter values (server name "localhost", port 389). |
-| [LDAPCertStoreParameters](../java/security/cert/LDAPCertStoreParameters.md))`(`serverName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates an instance of`LDAPCertStoreParameters`with the specified server name and a default port of 389. |
-| [LDAPCertStoreParameters](../java/security/cert/LDAPCertStoreParameters.md))`(`serverName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates an instance of`LDAPCertStoreParameters`with the specified parameter values. |
+| [LDAPCertStoreParameters](LDAPCertStoreParameters.md))`()` Creates an instance of`LDAPCertStoreParameters`with the default parameter values (server name "localhost", port 389). |
+| [LDAPCertStoreParameters](LDAPCertStoreParameters.md))`(`serverName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`)` Creates an instance of`LDAPCertStoreParameters`with the specified server name and a default port of 389. |
+| [LDAPCertStoreParameters](LDAPCertStoreParameters.md))`(`serverName:` ` [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)!`, `port:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Creates an instance of`LDAPCertStoreParameters`with the specified parameter values. |
 
 | Public methods ||
 |---------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](../java/security/cert/LDAPCertStoreParameters.md))`()` Returns a copy of this object. |
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPort](../java/security/cert/LDAPCertStoreParameters.md))`()` Returns the port number of the LDAP server. |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getServerName](../java/security/cert/LDAPCertStoreParameters.md))`()` Returns the DNS name of the LDAP server. |
+| open [Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) | [clone](LDAPCertStoreParameters.md))`()` Returns a copy of this object. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getPort](LDAPCertStoreParameters.md))`()` Returns the port number of the LDAP server. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)! | [getServerName](LDAPCertStoreParameters.md))`()` Returns the DNS name of the LDAP server. |
 | --- | --- |
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](../java/security/cert/LDAPCertStoreParameters.md))`()` Returns a formatted string describing the parameters. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) | [toString](LDAPCertStoreParameters.md))`()` Returns a formatted string describing the parameters. |
 
 ## Public constructors
 

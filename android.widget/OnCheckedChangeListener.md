@@ -36,5 +36,5 @@ Called when the checked state of a compound button has changed.
 
 | Parameters ||
 |---|---|
-| `buttonView` | [CompoundButton](../android/widget/CompoundButton.md): The compound button view whose state has changed. This value cannot be `null`. |
+| `buttonView` | [CompoundButton](CompoundButton.md): The compound button view whose state has changed. This value cannot be `null`. |
 | `isChecked` | [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html): The new checked state of buttonView. |

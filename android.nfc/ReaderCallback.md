@@ -15,13 +15,13 @@ interface ReaderCallback
 
 A callback to be invoked when the system finds a tag while the foreground activity is operating in reader mode.
 
-Register your`ReaderCallback`implementation with [android.nfc.NfcAdapter#enableReaderMode](../android/nfc/NfcAdapter.md))and disable it with [android.nfc.NfcAdapter#disableReaderMode](../android/nfc/NfcAdapter.md)).
+Register your`ReaderCallback`implementation with [android.nfc.NfcAdapter#enableReaderMode](NfcAdapter.md))and disable it with [android.nfc.NfcAdapter#disableReaderMode](NfcAdapter.md)).
 
 ## Summary
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTagDiscovered](../android/nfc/NfcAdapter.ReaderCallback.md))`(`tag:` ` [Tag](../android/nfc/Tag.md)!`)` <br /> |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onTagDiscovered](../android/nfc/NfcAdapter.ReaderCallback.md))`(`tag:` ` [Tag](Tag.md)!`)` <br /> |
 
 ## Public methods
 

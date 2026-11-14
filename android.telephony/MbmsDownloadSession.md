@@ -2,7 +2,7 @@ Added in [API level 28](https://developer.android.com/guide/topics/manifest/uses
 
 # MbmsDownloadSession
 
-Kotlin | [Java](../android/telephony/MbmsDownloadSession.md)
+Kotlin | [Java](MbmsDownloadSession.md)
 | --- | --- |
 
 ```
@@ -11,7 +11,7 @@ open class MbmsDownloadSession : AutoCloseable
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.telephony.MbmsDownloadSession](../android/telephony/MbmsDownloadSession.md) |
+| ↳ | [android.telephony.MbmsDownloadSession](MbmsDownloadSession.md) |
 
 This class provides functionality for file download over MBMS.
 
@@ -52,14 +52,14 @@ This class provides functionality for file download over MBMS.
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/MbmsDownloadSession#cancelDownload(android.telephony.mbms.DownloadRequest)(downloadRequest: https://developer.android.com/reference/kotlin/android/telephony/mbms/DownloadRequest)` Attempts to cancel the specified `https://developer.android.com/reference/kotlin/android/telephony/mbms/DownloadRequest`. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/MbmsDownloadSession#close()()` Terminates this instance. |
-| open static [MbmsDownloadSession](../android/telephony/MbmsDownloadSession.md)! | `https://developer.android.com/reference/kotlin/android/telephony/MbmsDownloadSession#create(android.content.Context,%20java.util.concurrent.Executor,%20android.telephony.mbms.MbmsDownloadSessionCallback)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsDownloadSessionCallback)` Create a new `https://developer.android.com/reference/kotlin/android/telephony/MbmsDownloadSession#` using the system default data subscription ID. |
+| open static [MbmsDownloadSession](MbmsDownloadSession.md)! | `https://developer.android.com/reference/kotlin/android/telephony/MbmsDownloadSession#create(android.content.Context,%20java.util.concurrent.Executor,%20android.telephony.mbms.MbmsDownloadSessionCallback)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, callback: https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsDownloadSessionCallback)` Create a new `https://developer.android.com/reference/kotlin/android/telephony/MbmsDownloadSession#` using the system default data subscription ID. |
 | --- | --- |
-| open static [MbmsDownloadSession](../android/telephony/MbmsDownloadSession.md)? | `https://developer.android.com/reference/kotlin/android/telephony/MbmsDownloadSession#create(android.content.Context,%20java.util.concurrent.Executor,%20kotlin.Int,%20android.telephony.mbms.MbmsDownloadSessionCallback)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, subscriptionId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, callback: https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsDownloadSessionCallback)` Create a new MbmsDownloadManager using the given subscription ID. |
+| open static [MbmsDownloadSession](MbmsDownloadSession.md)? | `https://developer.android.com/reference/kotlin/android/telephony/MbmsDownloadSession#create(android.content.Context,%20java.util.concurrent.Executor,%20kotlin.Int,%20android.telephony.mbms.MbmsDownloadSessionCallback)(context: https://developer.android.com/reference/kotlin/android/content/Context.html#, executor: https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#, subscriptionId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html, callback: https://developer.android.com/reference/kotlin/android/telephony/mbms/MbmsDownloadSessionCallback)` Create a new MbmsDownloadManager using the given subscription ID. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/MbmsDownloadSession#download(android.telephony.mbms.DownloadRequest)(request: https://developer.android.com/reference/kotlin/android/telephony/mbms/DownloadRequest)` Requests the download of a file or set of files that the carrier has indicated to be available. |
 | open static [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/MbmsDownloadSession#getMaximumServiceAnnouncementSize()()` Returns the maximum size of the service announcement descriptor that can be provided via `https://developer.android.com/reference/kotlin/android/telephony/MbmsDownloadSession#addServiceAnnouncement(kotlin.ByteArray)` |
 | --- | --- |
-| open [File](../java/io/File.md)? | `https://developer.android.com/reference/kotlin/android/telephony/MbmsDownloadSession#getTempFileRootDirectory()()` Retrieves the currently configured temp file root directory. |
-| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [DownloadRequest](../android/telephony/mbms/DownloadRequest.md)!\> | `https://developer.android.com/reference/kotlin/android/telephony/MbmsDownloadSession#listPendingDownloads()()` Returns a list of pending `https://developer.android.com/reference/kotlin/android/telephony/mbms/DownloadRequest`s that originated from this application. |
+| open [File](../java.io/File.md)? | `https://developer.android.com/reference/kotlin/android/telephony/MbmsDownloadSession#getTempFileRootDirectory()()` Retrieves the currently configured temp file root directory. |
+| open [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [DownloadRequest](../android.telephony.mbms/DownloadRequest.md)!\> | `https://developer.android.com/reference/kotlin/android/telephony/MbmsDownloadSession#listPendingDownloads()()` Returns a list of pending `https://developer.android.com/reference/kotlin/android/telephony/mbms/DownloadRequest`s that originated from this application. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/MbmsDownloadSession#removeProgressListener(android.telephony.mbms.DownloadRequest,%20android.telephony.mbms.DownloadProgressListener)(request: https://developer.android.com/reference/kotlin/android/telephony/mbms/DownloadRequest, listener: https://developer.android.com/reference/kotlin/android/telephony/mbms/DownloadProgressListener)` Un-register a listener previously registered via `https://developer.android.com/reference/kotlin/android/telephony/MbmsDownloadSession#addProgressListener(android.telephony.mbms.DownloadRequest,%20java.util.concurrent.Executor,%20android.telephony.mbms.DownloadProgressListener)`. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/telephony/MbmsDownloadSession#removeStatusListener(android.telephony.mbms.DownloadRequest,%20android.telephony.mbms.DownloadStatusListener)(request: https://developer.android.com/reference/kotlin/android/telephony/mbms/DownloadRequest, listener: https://developer.android.com/reference/kotlin/android/telephony/mbms/DownloadStatusListener)` Un-register a listener previously registered via `https://developer.android.com/reference/kotlin/android/telephony/MbmsDownloadSession#addStatusListener(android.telephony.mbms.DownloadRequest,%20java.util.concurrent.Executor,%20android.telephony.mbms.DownloadStatusListener)`. |
@@ -305,9 +305,9 @@ Registers a progress listener for a `https://developer.android.com/reference/kot
 
 | Parameters ||
 |---|---|
-| `request` | [DownloadRequest](../android/telephony/mbms/DownloadRequest.md): The `https://developer.android.com/reference/kotlin/android/telephony/mbms/DownloadRequest` that you want updates on. This value cannot be `null`. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): The `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` on which calls to `listener` should be executed. This value cannot be `null`. |
-| `listener` | [DownloadProgressListener](../android/telephony/mbms/DownloadProgressListener.md): The listener that should be called when the middleware has information to share on the progress of the download. This value cannot be `null`. |
+| `request` | [DownloadRequest](../android.telephony.mbms/DownloadRequest.md): The `https://developer.android.com/reference/kotlin/android/telephony/mbms/DownloadRequest` that you want updates on. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` on which calls to `listener` should be executed. This value cannot be `null`. |
+| `listener` | [DownloadProgressListener](../android.telephony.mbms/DownloadProgressListener.md): The listener that should be called when the middleware has information to share on the progress of the download. This value cannot be `null`. |
 | --- | --- |
 
 ### addServiceAnnouncement
@@ -340,9 +340,9 @@ Registers a download status listener for a `https://developer.android.com/refere
 
 | Parameters ||
 |---|---|
-| `request` | [DownloadRequest](../android/telephony/mbms/DownloadRequest.md): The `https://developer.android.com/reference/kotlin/android/telephony/mbms/DownloadRequest` that you want updates on. This value cannot be `null`. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): The `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` on which calls to `listener ` should be executed. This value cannot be `null`. |
-| `listener` | [DownloadStatusListener](../android/telephony/mbms/DownloadStatusListener.md): The listener that should be called when the middleware has information to share on the status download. This value cannot be `null`. |
+| `request` | [DownloadRequest](../android.telephony.mbms/DownloadRequest.md): The `https://developer.android.com/reference/kotlin/android/telephony/mbms/DownloadRequest` that you want updates on. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The `https://developer.android.com/reference/kotlin/java/util/concurrent/Executor.html#` on which calls to `listener ` should be executed. This value cannot be `null`. |
+| `listener` | [DownloadStatusListener](../android.telephony.mbms/DownloadStatusListener.md): The listener that should be called when the middleware has information to share on the status download. This value cannot be `null`. |
 | --- | --- |
 
 ### cancelDownload
@@ -357,7 +357,7 @@ Attempts to cancel the specified `https://developer.android.com/reference/kotlin
 
 | Parameters ||
 |---|---|
-| `downloadRequest` | [DownloadRequest](../android/telephony/mbms/DownloadRequest.md): The download request that you wish to cancel. This value cannot be `null`. |
+| `downloadRequest` | [DownloadRequest](../android.telephony.mbms/DownloadRequest.md): The download request that you wish to cancel. This value cannot be `null`. |
 
 ### close
 
@@ -389,9 +389,9 @@ Create a new `https://developer.android.com/reference/kotlin/android/telephony/M
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md): This value cannot be `null`. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): This value cannot be `null`. |
-| `callback` | [MbmsDownloadSessionCallback](../android/telephony/mbms/MbmsDownloadSessionCallback.md): This value cannot be `null`. |
+| `context` | [Context](../android.content/Context.md): This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): This value cannot be `null`. |
+| `callback` | [MbmsDownloadSessionCallback](../android.telephony.mbms/MbmsDownloadSessionCallback.md): This value cannot be `null`. |
 | --- | --- |
 
 ### create
@@ -411,11 +411,11 @@ Create a new MbmsDownloadManager using the given subscription ID. Note that this
 
 | Parameters ||
 |---|---|
-| `context` | [Context](../android/content/Context.md): The instance of `https://developer.android.com/reference/kotlin/android/content/Context.html#` to use. This value cannot be `null`. |
-| `executor` | [Executor](../java/util/concurrent/Executor.md): The executor on which you wish to execute callbacks. This value cannot be `null`. |
+| `context` | [Context](../android.content/Context.md): The instance of `https://developer.android.com/reference/kotlin/android/content/Context.html#` to use. This value cannot be `null`. |
+| `executor` | [Executor](../java.util.concurrent/Executor.md): The executor on which you wish to execute callbacks. This value cannot be `null`. |
 | `subscriptionId` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html): The data subscription ID to use |
 | --- | --- |
-| `callback` | [MbmsDownloadSessionCallback](../android/telephony/mbms/MbmsDownloadSessionCallback.md): A callback to get asynchronous error messages and file service updates. This value cannot be `null`. |
+| `callback` | [MbmsDownloadSessionCallback](../android.telephony.mbms/MbmsDownloadSessionCallback.md): A callback to get asynchronous error messages and file service updates. This value cannot be `null`. |
 
 | Return ||
 |---|---|
@@ -433,7 +433,7 @@ Requests the download of a file or set of files that the carrier has indicated t
 
 | Parameters ||
 |---|---|
-| `request` | [DownloadRequest](../android/telephony/mbms/DownloadRequest.md): The request that specifies what should be downloaded. This value cannot be `null`. |
+| `request` | [DownloadRequest](../android.telephony.mbms/DownloadRequest.md): The request that specifies what should be downloaded. This value cannot be `null`. |
 
 ### getMaximumServiceAnnouncementSize
 
@@ -492,8 +492,8 @@ Un-register a listener previously registered via `https://developer.android.com/
 
 | Parameters ||
 |---|---|
-| `request` | [DownloadRequest](../android/telephony/mbms/DownloadRequest.md): The `https://developer.android.com/reference/kotlin/android/telephony/mbms/DownloadRequest` provided during registration. This value cannot be `null`. |
-| `listener` | [DownloadProgressListener](../android/telephony/mbms/DownloadProgressListener.md): The listener provided during registration. This value cannot be `null`. |
+| `request` | [DownloadRequest](../android.telephony.mbms/DownloadRequest.md): The `https://developer.android.com/reference/kotlin/android/telephony/mbms/DownloadRequest` provided during registration. This value cannot be `null`. |
+| `listener` | [DownloadProgressListener](../android.telephony.mbms/DownloadProgressListener.md): The listener provided during registration. This value cannot be `null`. |
 
 ### removeStatusListener
 
@@ -510,8 +510,8 @@ Un-register a listener previously registered via `https://developer.android.com/
 
 | Parameters ||
 |---|---|
-| `request` | [DownloadRequest](../android/telephony/mbms/DownloadRequest.md): The `https://developer.android.com/reference/kotlin/android/telephony/mbms/DownloadRequest` provided during registration. This value cannot be `null`. |
-| `listener` | [DownloadStatusListener](../android/telephony/mbms/DownloadStatusListener.md): The listener provided during registration. This value cannot be `null`. |
+| `request` | [DownloadRequest](../android.telephony.mbms/DownloadRequest.md): The `https://developer.android.com/reference/kotlin/android/telephony/mbms/DownloadRequest` provided during registration. This value cannot be `null`. |
+| `listener` | [DownloadStatusListener](../android.telephony.mbms/DownloadStatusListener.md): The listener provided during registration. This value cannot be `null`. |
 
 ### requestDownloadState
 
@@ -528,8 +528,8 @@ Requests information about the state of a file pending download. The state will 
 
 | Parameters ||
 |---|---|
-| `downloadRequest` | [DownloadRequest](../android/telephony/mbms/DownloadRequest.md)!: The download request to query. |
-| `fileInfo` | [FileInfo](../android/telephony/mbms/FileInfo.md)!: The particular file within the request to get information on. |
+| `downloadRequest` | [DownloadRequest](../android.telephony.mbms/DownloadRequest.md)!: The download request to query. |
+| `fileInfo` | [FileInfo](../android.telephony.mbms/FileInfo.md)!: The particular file within the request to get information on. |
 
 ### requestUpdateFileServices
 
@@ -557,7 +557,7 @@ Resets the middleware's knowledge of previously-downloaded files in this downloa
 
 | Parameters ||
 |---|---|
-| `downloadRequest` | [DownloadRequest](../android/telephony/mbms/DownloadRequest.md)!: The request to re-download files for. |
+| `downloadRequest` | [DownloadRequest](../android.telephony.mbms/DownloadRequest.md)!: The request to re-download files for. |
 
 ### setTempFileRootDirectory
 
@@ -571,4 +571,4 @@ Sets the temp file root for downloads. All temp files created for the middleware
 
 | Parameters ||
 |---|---|
-| `tempFileRootDirectory` | [File](../java/io/File.md): A directory to place temp files in. This value cannot be `null`. |
+| `tempFileRootDirectory` | [File](../java.io/File.md): A directory to place temp files in. This value cannot be `null`. |

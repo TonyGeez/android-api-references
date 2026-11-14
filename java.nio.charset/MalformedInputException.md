@@ -11,11 +11,11 @@ open class MalformedInputException : CharacterCodingException
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||||||
 | --- | --- | --- | --- | --- | --- |
 | ↳ | [kotlin.Throwable](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-throwable/index.html) |||||
-| | ↳ | [java.lang.Exception](../java/lang/Exception.md) ||||
-| | | ↳ | [java.io.IOException](../java/io/IOException.md) |||
+| | ↳ | [java.lang.Exception](../java.lang/Exception.md) ||||
+| | | ↳ | [java.io.IOException](../java.io/IOException.md) |||
 | --- | --- | --- | --- | --- | --- |
-| | | | ↳ | [java.nio.charset.CharacterCodingException](../java/nio/charset/CharacterCodingException.md) ||
-| | | | | ↳ | [java.nio.charset.MalformedInputException](../java/nio/charset/MalformedInputException.md) |
+| | | | ↳ | [java.nio.charset.CharacterCodingException](CharacterCodingException.md) ||
+| | | | | ↳ | [java.nio.charset.MalformedInputException](MalformedInputException.md) |
 
 Checked exception thrown when an input byte sequence is not legal for given charset, or an input character sequence is not a legal sixteen-bit Unicode sequence.
 
@@ -23,15 +23,15 @@ Checked exception thrown when an input byte sequence is not legal for given char
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [MalformedInputException](../java/nio/charset/MalformedInputException.md))`(`inputLength:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs an`MalformedInputException`with the given length. |
+| [MalformedInputException](MalformedInputException.md))`(`inputLength:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructs an`MalformedInputException`with the given length. |
 
 | Public methods ||
 |--------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInputLength](../java/nio/charset/MalformedInputException.md))`()` Returns the length of the input. |
+| open [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getInputLength](MalformedInputException.md))`()` Returns the length of the input. |
 
 | Properties ||
 |---------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [message](../java/nio/charset/MalformedInputException.md) Returns the message. |
+| open [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)? | [message](MalformedInputException.md) Returns the message. |
 
 ## Public constructors
 

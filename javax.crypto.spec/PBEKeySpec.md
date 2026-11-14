@@ -10,7 +10,7 @@ open class PBEKeySpec : KeySpec
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [javax.crypto.spec.PBEKeySpec](../javax/crypto/spec/PBEKeySpec.md) |
+| ↳ | [javax.crypto.spec.PBEKeySpec](PBEKeySpec.md) |
 
 A user-chosen password that can be used with password-based encryption (*PBE*).
 
@@ -26,18 +26,18 @@ Also note that this class stores passwords as char arrays instead of`String`obje
 
 | Public constructors ||
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [PBEKeySpec](../javax/crypto/spec/PBEKeySpec.md))`(`password:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`)` Constructor that takes a password. |
-| [PBEKeySpec](../javax/crypto/spec/PBEKeySpec.md))`(`password:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `salt:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `iterationCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructor that takes a password, salt, iteration count for generating PBEKey of fixed-key-size PBE ciphers. |
-| [PBEKeySpec](../javax/crypto/spec/PBEKeySpec.md))`(`password:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `salt:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `iterationCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `keyLength:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructor that takes a password, salt, iteration count, and to-be-derived key length for generating PBEKey of variable-key-size PBE ciphers. |
+| [PBEKeySpec](PBEKeySpec.md))`(`password:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`)` Constructor that takes a password. |
+| [PBEKeySpec](PBEKeySpec.md))`(`password:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `salt:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `iterationCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructor that takes a password, salt, iteration count for generating PBEKey of fixed-key-size PBE ciphers. |
+| [PBEKeySpec](PBEKeySpec.md))`(`password:` ` [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)!`, `salt:` ` [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)!`, `iterationCount:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `keyLength:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`)` Constructor that takes a password, salt, iteration count, and to-be-derived key length for generating PBEKey of variable-key-size PBE ciphers. |
 
 | Public methods ||
 |------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearPassword](../javax/crypto/spec/PBEKeySpec.md))`()` Clears the internal copy of the password. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIterationCount](../javax/crypto/spec/PBEKeySpec.md))`()` Returns the iteration count or 0 if not specified. |
-| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getKeyLength](../javax/crypto/spec/PBEKeySpec.md))`()` Returns the to-be-derived key length or 0 if not specified. |
+| [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [clearPassword](PBEKeySpec.md))`()` Clears the internal copy of the password. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getIterationCount](PBEKeySpec.md))`()` Returns the iteration count or 0 if not specified. |
+| [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html) | [getKeyLength](PBEKeySpec.md))`()` Returns the to-be-derived key length or 0 if not specified. |
 | --- | --- |
-| [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)! | [getPassword](../javax/crypto/spec/PBEKeySpec.md))`()` Returns a copy of the password. |
-| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getSalt](../javax/crypto/spec/PBEKeySpec.md))`()` Returns a copy of the salt or null if not specified. |
+| [CharArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-char-array/index.html)! | [getPassword](PBEKeySpec.md))`()` Returns a copy of the password. |
+| [ByteArray](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html)! | [getSalt](PBEKeySpec.md))`()` Returns a copy of the salt or null if not specified. |
 
 ## Public constructors
 

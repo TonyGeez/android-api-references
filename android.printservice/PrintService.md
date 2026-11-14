@@ -8,11 +8,11 @@ abstract class PrintService : Service
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||||
 | --- | --- | --- | --- | --- |
-| ↳ | [android.content.Context](../android/content/Context.md) ||||
-| | ↳ | [android.content.ContextWrapper](../android/content/ContextWrapper.md) |||
-| | | ↳ | [android.app.Service](../android/app/Service.md) ||
+| ↳ | [android.content.Context](../android.content/Context.md) ||||
+| | ↳ | [android.content.ContextWrapper](../android.content/ContextWrapper.md) |||
+| | | ↳ | [android.app.Service](../android.app/Service.md) ||
 | --- | --- | --- | --- | --- |
-| | | | ↳ | [android.printservice.PrintService](../android/printservice/PrintService.md) |
+| | | | ↳ | [android.printservice.PrintService](PrintService.md) |
 
 This is the base class for implementing print services. A print service knows how to discover and interact one or more printers via one or more protocols.
 
@@ -1108,16 +1108,16 @@ Level for `https://developer.android.com/reference/kotlin/android/content/Compon
 
 | Public methods ||
 |---|---|
-| [PrinterId](../android/print/PrinterId.md) | `https://developer.android.com/reference/kotlin/android/printservice/PrintService#generatePrinterId(kotlin.String)(localId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Generates a global printer id given the printer's locally unique one. |
-| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PrintJob](../android/printservice/PrintJob.md)!\>! | `https://developer.android.com/reference/kotlin/android/printservice/PrintService#getActivePrintJobs()()` Gets the active print jobs for the printers managed by this service. |
-| [IBinder](../android/os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/printservice/PrintService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
+| [PrinterId](../android.print/PrinterId.md) | `https://developer.android.com/reference/kotlin/android/printservice/PrintService#generatePrinterId(kotlin.String)(localId: https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html!)` Generates a global printer id given the printer's locally unique one. |
+| [MutableList](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-mutable-list/index.html)\< [PrintJob](PrintJob.md)!\>! | `https://developer.android.com/reference/kotlin/android/printservice/PrintService#getActivePrintJobs()()` Gets the active print jobs for the printers managed by this service. |
+| [IBinder](../android.os/IBinder.md)? | `https://developer.android.com/reference/kotlin/android/printservice/PrintService#onBind(android.content.Intent)(intent: https://developer.android.com/reference/kotlin/android/content/Intent.html#!)` Return the communication channel to the service. |
 | --- | --- |
 
 | Protected methods ||
 |---|---|
 | [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/printservice/PrintService#attachBaseContext(android.content.Context)(base: https://developer.android.com/reference/kotlin/android/content/Context.html#!)` Set the base context for this ContextWrapper. |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/printservice/PrintService#onConnected()()` The system has connected to this service. |
-| abstract [PrinterDiscoverySession](../android/printservice/PrinterDiscoverySession.md)? | `https://developer.android.com/reference/kotlin/android/printservice/PrintService#onCreatePrinterDiscoverySession()()` Callback asking you to create a new `https://developer.android.com/reference/kotlin/android/printservice/PrinterDiscoverySession`. |
+| abstract [PrinterDiscoverySession](PrinterDiscoverySession.md)? | `https://developer.android.com/reference/kotlin/android/printservice/PrintService#onCreatePrinterDiscoverySession()()` Callback asking you to create a new `https://developer.android.com/reference/kotlin/android/printservice/PrinterDiscoverySession`. |
 | --- | --- |
 | open [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/printservice/PrintService#onDisconnected()()` The system has disconnected from this service. |
 | abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | `https://developer.android.com/reference/kotlin/android/printservice/PrintService#onPrintJobQueued(android.printservice.PrintJob)(printJob: https://developer.android.com/reference/kotlin/android/printservice/PrintJob!)` Called when there is a queued print job for one of the printers managed by this print service. |
@@ -2996,7 +2996,7 @@ Return the communication channel to the service. May return null if clients can 
 
 | Parameters ||
 |---|---|
-| `intent` | [Intent](../android/content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
+| `intent` | [Intent](../android.content/Intent.md)!: The Intent that was used to bind to this service, as given to android.content.Context#bindService. Note that any extras that were included with the Intent at that point will *not* be seen here. |
 
 | Return ||
 |---|---|
@@ -3016,7 +3016,7 @@ Set the base context for this ContextWrapper. All calls will then be delegated t
 
 | Parameters ||
 |---|---|
-| `base` | [Context](../android/content/Context.md)!: The new base context for this wrapper. |
+| `base` | [Context](../android.content/Context.md)!: The new base context for this wrapper. |
 
 ### onConnected
 
@@ -3068,7 +3068,7 @@ Called when there is a queued print job for one of the printers managed by this 
 
 | Parameters ||
 |---|---|
-| `printJob` | [PrintJob](../android/printservice/PrintJob.md)!: The new queued print job. |
+| `printJob` | [PrintJob](PrintJob.md)!: The new queued print job. |
 
 **See Also**
 
@@ -3087,7 +3087,7 @@ Called when cancellation of a print job is requested. The service should do best
 
 | Parameters ||
 |---|---|
-| `printJob` | [PrintJob](../android/printservice/PrintJob.md)!: The print job to cancel. |
+| `printJob` | [PrintJob](PrintJob.md)!: The print job to cancel. |
 
 **See Also**
 

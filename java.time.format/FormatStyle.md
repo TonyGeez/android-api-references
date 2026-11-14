@@ -10,24 +10,24 @@ class FormatStyle
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) |||
 | --- | --- | --- |
-| ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.time.format.FormatStyle](../java/time/format/FormatStyle.md)\> ||
-| | ↳ | [java.time.format.FormatStyle](../java/time/format/FormatStyle.md) |
+| ↳ | [kotlin.Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)\< [java.time.format.FormatStyle](FormatStyle.md)\> ||
+| | ↳ | [java.time.format.FormatStyle](FormatStyle.md) |
 
-| Known Direct Subclasses [FormatStyle.FULL](../java/time/format/FormatStyle.md), [FormatStyle.LONG](../java/time/format/FormatStyle.md), [FormatStyle.MEDIUM](../java/time/format/FormatStyle.md), [FormatStyle.SHORT](../java/time/format/FormatStyle.md) |---------------------------------------------------------------------------------------------------------------------|----------------------------------------| | [FormatStyle.FULL](../java/time/format/FormatStyle.md) | Full text style, with the most detail. | | [FormatStyle.LONG](../java/time/format/FormatStyle.md) | Long text style, with lots of detail. | | [FormatStyle.MEDIUM](../java/time/format/FormatStyle.md) | Medium text style, with some detail. | | [FormatStyle.SHORT](../java/time/format/FormatStyle.md) | Short text style, typically numeric. | |
+| Known Direct Subclasses [FormatStyle.FULL](FormatStyle.md), [FormatStyle.LONG](FormatStyle.md), [FormatStyle.MEDIUM](FormatStyle.md), [FormatStyle.SHORT](FormatStyle.md) |---------------------------------------------------------------------------------------------------------------------|----------------------------------------| | [FormatStyle.FULL](FormatStyle.md) | Full text style, with the most detail. | | [FormatStyle.LONG](FormatStyle.md) | Long text style, with lots of detail. | | [FormatStyle.MEDIUM](FormatStyle.md) | Medium text style, with some detail. | | [FormatStyle.SHORT](FormatStyle.md) | Short text style, typically numeric. | |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 
 Enumeration of the style of a localized date, time or date-time formatter.
 
-These styles are used when obtaining a date-time style from configuration. See [DateTimeFormatter](../java/time/format/DateTimeFormatter.md) and [DateTimeFormatterBuilder](../java/time/format/DateTimeFormatterBuilder.md) for usage.
+These styles are used when obtaining a date-time style from configuration. See [DateTimeFormatter](DateTimeFormatter.md) and [DateTimeFormatterBuilder](DateTimeFormatterBuilder.md) for usage.
 
 ## Summary
 
 | Enum values ||
 |----------------------------------------------------------------------------------------------------------------------------------------------|---|
-| [FULL](../java/time/format/FormatStyle.md) Full text style, with the most detail. |
-| [LONG](../java/time/format/FormatStyle.md) Long text style, with lots of detail. |
-| [MEDIUM](../java/time/format/FormatStyle.md) Medium text style, with some detail. |
-| [SHORT](../java/time/format/FormatStyle.md) Short text style, typically numeric. |
+| [FULL](FormatStyle.md) Full text style, with the most detail. |
+| [LONG](FormatStyle.md) Long text style, with lots of detail. |
+| [MEDIUM](FormatStyle.md) Medium text style, with some detail. |
+| [SHORT](FormatStyle.md) Short text style, typically numeric. |
 
 ## Enum values
 

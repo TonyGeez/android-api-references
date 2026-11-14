@@ -19,8 +19,8 @@ Interface definition for a callback to be invoked when an item in this view has 
 
 | Public methods ||
 |--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onItemSelected](../android/widget/AdapterView.OnItemSelectedListener.md))`(`parent:` ` [AdapterView](../android/widget/AdapterView.md)<*>!`, `view:` ` [View](../android/view/View.md)!`, `position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `id:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Callback method to be invoked when an item in this view has been selected. |
-| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onNothingSelected](../android/widget/AdapterView.OnItemSelectedListener.md))`(`parent:` ` [AdapterView](../android/widget/AdapterView.md)<*>!`)` Callback method to be invoked when the selection disappears from this view. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onItemSelected](../android/widget/AdapterView.OnItemSelectedListener.md))`(`parent:` ` [AdapterView](AdapterView.md)<*>!`, `view:` ` [View](../android.view/View.md)!`, `position:` ` [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html)`, `id:` ` [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html)`)` Callback method to be invoked when an item in this view has been selected. |
+| abstract [Unit](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html) | [onNothingSelected](../android/widget/AdapterView.OnItemSelectedListener.md))`(`parent:` ` [AdapterView](AdapterView.md)<*>!`)` Callback method to be invoked when the selection disappears from this view. |
 
 ## Public methods
 
@@ -42,8 +42,8 @@ Implementers can call getItemAtPosition(position) if they need to access the dat
 
 | Parameters ||
 |------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| `parent` | [AdapterView](../android/widget/AdapterView.md)\<\*\>!:The AdapterView where the selection happened |
-| `view` | [View](../android/view/View.md)!:The view within the AdapterView that was clicked |
+| `parent` | [AdapterView](AdapterView.md)\<\*\>!:The AdapterView where the selection happened |
+| `view` | [View](../android.view/View.md)!:The view within the AdapterView that was clicked |
 | `position` | [Int](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html):The position of the view in the adapter |
 | --- | --- |
 | `id` | [Long](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html):The row id of the item that is selected |
@@ -60,4 +60,4 @@ Callback method to be invoked when the selection disappears from this view. The 
 
 | Parameters ||
 |----------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| `parent` | [AdapterView](../android/widget/AdapterView.md)\<\*\>!:The AdapterView that now contains no selected item. |
+| `parent` | [AdapterView](AdapterView.md)\<\*\>!:The AdapterView that now contains no selected item. |

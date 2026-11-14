@@ -4,7 +4,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 
 # RcsUceAdapter
 
-Kotlin| [Java](../android/telephony/ims/RcsUceAdapter.md) 
+Kotlin| [Java](RcsUceAdapter.md) 
 | --- | --- |
 
 ```
@@ -13,16 +13,16 @@ open class RcsUceAdapter
 
 | [kotlin.Any](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html) ||
 | --- | --- |
-| ↳ | [android.telephony.ims.RcsUceAdapter](../android/telephony/ims/RcsUceAdapter.md) |
+| ↳ | [android.telephony.ims.RcsUceAdapter](RcsUceAdapter.md) |
 
 Manages RCS User Capability Exchange for the subscription specified. 
-Requires the [PackageManager#FEATURE_TELEPHONY_IMS](../android/content/pm/PackageManager.md) feature which can be detected using [PackageManager.hasSystemFeature(String)](../android/content/pm/PackageManager.md)).
+Requires the [PackageManager#FEATURE_TELEPHONY_IMS](../android.content.pm/PackageManager.md) feature which can be detected using [PackageManager.hasSystemFeature(String)](../android.content.pm/PackageManager.md)).
 
 ## Summary
 
 | Public methods ||
 |----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isUceSettingEnabled](../android/telephony/ims/RcsUceAdapter.md))`()` The setting for whether or not the user has opted in to the automatic refresh of the RCS capabilities associated with the contacts in the user's contact address book. |
+| open [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html) | [isUceSettingEnabled](RcsUceAdapter.md))`()` The setting for whether or not the user has opted in to the automatic refresh of the RCS capabilities associated with the contacts in the user's contact address book. |
 
 ## Public methods
 
@@ -34,7 +34,7 @@ Added in [API level 30](https://developer.android.com/guide/topics/manifest/uses
 open fun isUceSettingEnabled(): Boolean
 ```
 
-The setting for whether or not the user has opted in to the automatic refresh of the RCS capabilities associated with the contacts in the user's contact address book. By default, this setting is disabled and must be enabled after the user has seen the opt-in dialog shown by [ImsRcsManager.ACTION_SHOW_CAPABILITY_DISCOVERY_OPT_IN](../android/telephony/ims/ImsRcsManager.md).
+The setting for whether or not the user has opted in to the automatic refresh of the RCS capabilities associated with the contacts in the user's contact address book. By default, this setting is disabled and must be enabled after the user has seen the opt-in dialog shown by [ImsRcsManager.ACTION_SHOW_CAPABILITY_DISCOVERY_OPT_IN](ImsRcsManager.md).
 
 If this feature is enabled, the device will periodically share the phone numbers of all of the contacts in the user's address book with the carrier to refresh the RCS capabilities cache associated with those contacts as the local cache becomes stale.
 
@@ -49,5 +49,5 @@ Requires [android.Manifest.permission#READ_PHONE_STATE](../android/Manifest.perm
 
 | Exceptions ||
 |-------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `android.telephony.ims.ImsException` | if the subscription associated with this instance of [RcsUceAdapter](../android/telephony/ims/RcsUceAdapter.md) is valid, but the ImsService associated with the subscription is not available. This can happen if the ImsService has crashed, for example, or if the subscription becomes inactive. See [ImsException.getCode()](../android/telephony/ims/ImsException.md))for more information on the error codes. |
-| `java.lang.UnsupportedOperationException` | If the device does not have [PackageManager.FEATURE_TELEPHONY_IMS](../android/content/pm/PackageManager.md). |
+| `android.telephony.ims.ImsException` | if the subscription associated with this instance of [RcsUceAdapter](RcsUceAdapter.md) is valid, but the ImsService associated with the subscription is not available. This can happen if the ImsService has crashed, for example, or if the subscription becomes inactive. See [ImsException.getCode()](ImsException.md))for more information on the error codes. |
+| `java.lang.UnsupportedOperationException` | If the device does not have [PackageManager.FEATURE_TELEPHONY_IMS](../android.content.pm/PackageManager.md). |
